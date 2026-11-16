@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The group algebra $k[G]$ linearises a group: it is the $k$-algebra with $k$-basis the elements of $G$ and with multiplication the bilinear extension of the group law. It carries the group inside its unit group, it gives every representation of $G$ the structure of a module, and for a finite group over a field whose characteristic does not divide the order it decomposes into matrix algebras. This article develops the definition and the elementary structure, the regular representation, the augmentation ideal, the unit and zero-divisor theory, and the decomposition theory of finite groups, with the divisibility of the characteristic marking the boundary between the semisimple and the non-semisimple cases.
+The group algebra $k[G]$ linearises a group: it is the $k$-algebra with $k$-basis the elements of $G$ and with multiplication the bilinear extension of the group law. It carries the group inside its group of invertibles, it gives every representation of $G$ the structure of a module, and for a finite group over a field whose characteristic does not divide the order it decomposes into matrix algebras. This article develops the definition and the elementary structure, the regular representation, the augmentation ideal, the unit and zero-divisor theory, and the decomposition theory of finite groups, with the divisibility of the characteristic marking the boundary between the semisimple and the non-semisimple cases.
 
 The ground ring is a field $k$ and the group $G$ is written multiplicatively with identity $1_G$; the finite case is the main one, and the infinite case is mentioned only where it differs.
 
@@ -23,9 +23,9 @@ $$
 
 The elements of $G$ form a $k$-basis, so $\dim_k k[G] = |G|$ when $G$ is finite, and $k[G]$ is commutative if and only if $G$ is abelian.
 
-**Proposition (elementary structure).** $k[G]$ is an associative $k$-algebra with unit $1_G$; the map $g \mapsto g$ embeds $G$ as a subgroup of the unit group $k[G]^\times$; and $k^\times \subseteq k[G]^\times$ sits in the centre as the scalar multiples of $1_G$.
+**Proposition (elementary structure).** $k[G]$ is an associative $k$-algebra with unit $1_G$; the map $g \mapsto g$ embeds $G$ as a subgroup of the group of invertibles $k[G]^\times$; and $k^\times \subseteq k[G]^\times$ sits in the centre as the scalar multiples of $1_G$.
 
-*Proof.* Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the unit group, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$.
+*Proof.* Associativity of the product follows from associativity in $G$ and bilinearity, and the identity element is $1_G$ since $1_Gg = g1_G = g$. Each $g$ has inverse $g^{-1}$, so $G$ lies in the group of invertibles, and the scalars $\lambda 1_G$ commute with every basis element and are invertible when $\lambda \neq 0$.
 
 **Remark (the identification with convolution).** Writing an element as a function $a : G \to k$ of finite support, the product becomes the **convolution**
 
@@ -87,11 +87,11 @@ so the $g - 1_G$ generate $I(G)$; the quotient statement is the first isomorphis
 
 **Corollary.** If $G$ is a nontrivial finite group and $k$ has characteristic zero, then $I(G) \neq 0$ is a nontrivial ideal, so $k[G]$ is not simple; if in addition the characteristic does not divide $|G|$, then $k[G]$ is semisimple and $I(G)$ is a direct sum of matrix algebras.
 
-## Units and Zero Divisors
+## Invertibles and Zero Divisors
 
-**Proposition (units).** For any group $G$, the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$. The inclusion can be strict: for $k = \mathbb{R}$ and $G = \mathbb{Z}/2$ one has $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$, whose units are the pairs with both entries nonzero, and $(1,2)$ is a unit of $\mathbb{R}\times\mathbb{R}$ lying outside $\mathbb{R}^\times G$, which consists of the pairs $(\lambda,\lambda)$ and $(\lambda,-\lambda)$.
+**Proposition (the invertibles).** For any group $G$, the group $G$ and the scalars $k^\times$ lie in $k[G]^\times$, so $k^\times G \subseteq k[G]^\times$. The inclusion can be strict: for $k = \mathbb{R}$ and $G = \mathbb{Z}/2$ one has $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$, whose units are the pairs with both entries nonzero, and $(1,2)$ is invertible in $\mathbb{R}\times\mathbb{R}$ lying outside $\mathbb{R}^\times G$, which consists of the pairs $(\lambda,\lambda)$ and $(\lambda,-\lambda)$.
 
-*Proof.* The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the units are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is a unit outside that set.
+*Proof.* The first statement is the proposition on elementary structure. For the second, the isomorphism $\mathbb{R}[\mathbb{Z}/2] \cong \mathbb{R}\times\mathbb{R}$ sends $1_G$ to $(1,1)$ and $g$ to $(1,-1)$, so the invertibles are the pairs $(\lambda,\mu)$ with $\lambda\mu \neq 0$, while $\mathbb{R}^\times G$ consists of $\lambda(1,1)$ and $\lambda(1,-1)$; the pair $(1,2)$ is invertible outside that set.
 
 **Proposition (zero divisors).** Let $g \in G$ have finite order $m \geq 2$. Then
 
@@ -153,7 +153,7 @@ $$
 
 one for each conjugacy class $\chi$.
 
-*Proof.* An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in *Centre, Units, Zero Divisors and Division Algebras*.
+*Proof.* An element $\sum a_g g$ is central exactly when its coefficients are constant on conjugacy classes, as in *Centre, Invertibles, Zero Divisors and Division Algebras*.
 
 **Example (cyclic groups).** For $G = \mathbb{Z}/n$ generated by $g$, the group algebra is
 
@@ -181,7 +181,7 @@ of dimension $1+1+4 = 6 = |S_3|$; the centre is three-dimensional, matching the 
 
 ## Summary
 
-The group algebra $k[G]$ has $k$-basis $G$, multiplication extending the group law, dimension $|G|$ for finite $G$, unit $1_G$, and unit group containing $G$ and $k^\times$; it is commutative exactly when $G$ is abelian, and its product is convolution of finitely supported functions. The **left regular representation** identifies $k[G]$ with an algebra of endomorphisms and makes $k[G]$-modules the same thing as representations of $G$. The **augmentation map** $\pi\bigl(\sum a_g g\bigr) = \sum a_g$ has kernel the **augmentation ideal** $I(G)$, generated by the elements $g - 1_G$, with $k[G]/I(G) \cong k$ and $I/I^2 \cong G_{\mathrm{ab}}\otimes_\mathbb{Z} k$. A group element of finite order $m \geq 2$ gives the zero-divisor pair $(1_G-g)(1_G+g+\dots+g^{m-1}) = 0$, so the group algebra of a nontrivial finite group is never a domain. If $\operatorname{char} k \nmid |G|$, **Maschke's theorem** makes $k[G]$ semisimple and $k[G] \cong \prod_\rho M_{n_\rho}(D_\rho)$, over an algebraically closed field $k[G]\cong\prod_\rho M_{n_\rho}(k)$ with $\sum_\rho n_\rho^2 = |G|$; if the characteristic divides $|G|$ the algebra is not semisimple, as $\mathbb{F}_2[\mathbb{Z}/2] \cong \mathbb{F}_2[\varepsilon]/(\varepsilon^2)$ shows. The centre is spanned by the class sums and has dimension the number of conjugacy classes, and $k[\mathbb{Z}/n] \cong k[x]/(x^n-1)$.
+The group algebra $k[G]$ has $k$-basis $G$, multiplication extending the group law, dimension $|G|$ for finite $G$, unit $1_G$, and group of invertibles containing $G$ and $k^\times$; it is commutative exactly when $G$ is abelian, and its product is convolution of finitely supported functions. The **left regular representation** identifies $k[G]$ with an algebra of endomorphisms and makes $k[G]$-modules the same thing as representations of $G$. The **augmentation map** $\pi\bigl(\sum a_g g\bigr) = \sum a_g$ has kernel the **augmentation ideal** $I(G)$, generated by the elements $g - 1_G$, with $k[G]/I(G) \cong k$ and $I/I^2 \cong G_{\mathrm{ab}}\otimes_\mathbb{Z} k$. A group element of finite order $m \geq 2$ gives the zero-divisor pair $(1_G-g)(1_G+g+\dots+g^{m-1}) = 0$, so the group algebra of a nontrivial finite group is never a domain. If $\operatorname{char} k \nmid |G|$, **Maschke's theorem** makes $k[G]$ semisimple and $k[G] \cong \prod_\rho M_{n_\rho}(D_\rho)$, over an algebraically closed field $k[G]\cong\prod_\rho M_{n_\rho}(k)$ with $\sum_\rho n_\rho^2 = |G|$; if the characteristic divides $|G|$ the algebra is not semisimple, as $\mathbb{F}_2[\mathbb{Z}/2] \cong \mathbb{F}_2[\varepsilon]/(\varepsilon^2)$ shows. The centre is spanned by the class sums and has dimension the number of conjugacy classes, and $k[\mathbb{Z}/n] \cong k[x]/(x^n-1)$.
 
 ## Summary of Notation
 
@@ -206,4 +206,4 @@ The group algebra $k[G]$ has $k$-basis $G$, multiplication extending the group l
 - Jean-Pierre Serre, *Linear Representations of Finite Groups* (Springer, 1977), for the regular representation, the orthogonality relations and $\sum n_\rho^2 = |G|$.
 - I. Martin Isaacs, *Character Theory of Finite Groups* (Dover, 1994), for the class sums, the centre and the number of irreducible representations.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Wedderburn–Artin decomposition of a semisimple algebra.
-- Donald S. Passman, *The Algebraic Structure of Group Rings* (Wiley, 1977), for the augmentation ideal, the units and the infinite-group case.
+- Donald S. Passman, *The Algebraic Structure of Group Rings* (Wiley, 1977), for the augmentation ideal, the invertibles and the infinite-group case.

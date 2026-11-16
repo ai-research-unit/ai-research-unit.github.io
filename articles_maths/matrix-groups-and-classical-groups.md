@@ -17,7 +17,7 @@ Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; 
 
 ## Matrices, Determinants and the Two Linear Groups
 
-**Definition.** For a commutative ring $R$ the **general linear group** $GL_n(R)$ is the group of invertible $n \times n$ matrices over $R$, that is, the group of units of the ring $M_n(R)$. Its **special linear group** is $SL_n(R) = \{A \in GL_n(R) : \det A = 1\}$.
+**Definition.** For a commutative ring $R$ the **general linear group** $GL_n(R)$ is the group of invertible $n \times n$ matrices over $R$, that is, the group of invertibles of the ring $M_n(R)$. Its **special linear group** is $SL_n(R) = \{A \in GL_n(R) : \det A = 1\}$.
 
 Over a field the determinant classifies invertibility: $GL_n(K) = \{A \in M_n(K) : \det A \neq 0\}$, and $SL_n(K)$ is the kernel of the surjective homomorphism
 
@@ -25,7 +25,7 @@ $$
 \det : GL_n(K) \longrightarrow K^\times.
 $$
 
-Over a general ring the determinant still exists and is multiplicative, but $\det A$ need not be a unit, so $GL_n(R)$ is the set of matrices with $\det A \in R^\times$; the group is not determined by the determinant alone.
+Over a general ring the determinant still exists and is multiplicative, but $\det A$ need not be an invertible element, so $GL_n(R)$ is the set of matrices with $\det A \in R^\times$; the group is not determined by the determinant alone.
 
 **Remark (the determinant rules used below).** The determinant is multiplicative, $\det(AB) = \det A \det B$, invariant under transposition, $\det(A^T) = \det A$, and equivariant with respect to conjugation of the entries, $\det(\overline A) = \overline{\det A}$. These are the standard properties of the alternating multilinear function of the columns, and they are what converts a form-preserving condition into a condition on the determinant.
 
@@ -202,7 +202,7 @@ $$
 
 is a continuous surjective homomorphism with kernel $\{\pm 1\}$. Hence $SO(3) \cong \mathbb{H}^1/\{\pm 1\} \cong SU(2)/\{\pm I\} = PSU(2)$.
 
-**Proof.** If $x$ is pure and $u$ is a unit then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of units on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = \vec e_x, \vec e_y, \vec e_z$, so $u$ commutes with $\vec e_x, \vec e_y, \vec e_z$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
+**Proof.** If $x$ is pure and $u$ is invertible then $u x  u^{\natural}$ is pure, because $\overline{u x  u^{\natural}} = u x^{\natural}  u^{\natural} = -u x u^{\natural}$, conjugation reversing the scalar sign; the norms agree, $N(ux u^{\natural}) = N(u)N(x)N(u) = N(x)$, so $\varphi_u$ preserves the standard form of $\mathbb{R}^3$; and $\varphi$ is a homomorphism because the map is the conjugation action of the group of invertibles on the algebra, which is multiplicative in $u$. The image lies in $SO(3)$ rather than merely in $O(3)$: the map $u \mapsto \varphi_u$ is continuous and $\mathbb{H}^1 = S^3$ is connected, so the image lies in the identity component. If $u$ lies in the kernel then $ux = xu$ for all pure $x$, in particular for $x = \vec e_x, \vec e_y, \vec e_z$, so $u$ commutes with $\vec e_x, \vec e_y, \vec e_z$ and hence lies in the centre of $\mathbb{H}$, which is $\mathbb{R}$; with $N(u) = 1$ this gives $u = \pm 1$. Thus the kernel has order two and the image is a compact connected subgroup of dimension $3$; as $SO(3)$ is connected of dimension $3$, the image is open and closed and therefore all of $SO(3)$.
 
 **Corollary.** The homomorphism $\varphi$ is a two-to-one covering, the two preimages of a rotation being antipodal unit quaternions $u$ and $-u$; consequently $SO(3)$ is homeomorphic to the quotient of $S^3$ by the antipodal map, that is, to the real projective space $\mathbb{RP}^3$, and $\pi_x(SO(3)) \cong \mathbb{Z}/2\mathbb{Z}$.
 

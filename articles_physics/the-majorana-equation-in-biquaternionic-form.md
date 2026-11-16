@@ -20,7 +20,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 ## Frame and Notation
 
-**The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The units satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
+**The coordinates.** An element is written $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ and complex coefficients $Q_\mu$; the scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ (*Algebra and Element Conventions*). The invertibles satisfy $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and $e_t$ is the unit of the algebra.
 
 **The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i q'_t$ and $r'_t$ is a length, the time carried with the constant kept, $r'_t=c\,t'$; the metric coefficient of the seconds $t'$ is $g_{tt}=-c^{2}$ and the quadratic form in $r'_t$ is $\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The constant $c$ is carried in every display below, and none of them sets it to one.
 
@@ -37,7 +37,7 @@ a pure right multiplier that squares to the identity and splits the coefficient 
 
 The second is the identity the whole of §*Why the Mass Sits on the Right* rests on, and it is one line of associativity. It was checked on elements of each letter against a hundred random multipliers, with residual $0$.
 
-**The two conjugations.** The coefficient bar $\bar\cdot$ conjugates the four coefficients and fixes the units; it is an automorphism of the algebra and antilinear over $\mathbb{C}$. The star is the Hermitian conjugation, the anti-automorphism that conjugates the coefficients and reverses the vector part (*Product and Form Conventions*). Both are involutions of the underlying real vector space, and both are antilinear; the bar is the one that touches no unit, and it is the one the mass term uses.
+**The two conjugations.** The coefficient bar $\bar\cdot$ conjugates the four coefficients and fixes the invertibles; it is an automorphism of the algebra and antilinear over $\mathbb{C}$. The star is the Hermitian conjugation, the anti-automorphism that conjugates the coefficients and reverses the vector part (*Product and Form Conventions*). Both are involutions of the underlying real vector space, and both are antilinear; the bar is the one that touches no unit, and it is the one the mass term uses.
 
 **What the letters are not.** The letter is a name and not a quantity. It is read from one action on the element, not from a sign carried by the algebra; a grading would need a multiplicative functional, and the two families of multipliers overlap in the scalars, which have no side. No root, no projection and no nilpotent enters it, and none of them enters this article.
 
@@ -110,7 +110,7 @@ $$
 \tilde{Ξ}\longmapsto a\,\bar{\tilde{Ξ}}\,b ,
 \qquad a,b\in\{e_t,\vec e_x,\vec e_y,\vec e_z\} ,
 $$
-are the conjugations that exchange the two letters, because the bar exchanges them and the two multipliers are units. Of the sixteen such forms, ten are involutions, and each of the ten has a fixed space of four real dimensions. The map $\tilde{Ξ}\mapsto\bar{\tilde{Ξ}}\vec e_z$ of the mass term is one of the six that are not.
+are the conjugations that exchange the two letters, because the bar exchanges them and the two multipliers are invertible. Of the sixteen such forms, ten are involutions, and each of the ten has a fixed space of four real dimensions. The map $\tilde{Ξ}\mapsto\bar{\tilde{Ξ}}\vec e_z$ of the mass term is one of the six that are not.
 
 **The count.** An antilinear involution on an eight-real-dimensional algebra has eigenspaces of four real dimensions each, and this is structural rather than a coincidence of a basis: the map is antilinear, so $\mathcal{C}(i\tilde{Ξ})=-i\,\mathcal{C}(\tilde{Ξ})$, and multiplication by the central $i$ carries the $+1$ eigenspace onto the $-1$ eigenspace; the two therefore have equal dimension, and their sum is the whole space. The count is
 
@@ -184,7 +184,7 @@ The last two rows are the gaps the article leaves visible, and they are of diffe
 
 ## Open Questions
 
-- **A conjugation outside the sixteen.** The commutator was computed for the unit-conjugated forms and for the bar and the star. Whether a conjugation built from a general element, rather than from a unit, commutes with the equation and preserves a four-real fixed space is not settled here.
+- **A conjugation outside the sixteen.** The commutator was computed for the unit-conjugated forms and for the bar and the star. Whether a conjugation built from a general element, rather than from an invertible element, commutes with the equation and preserves a four-real fixed space is not settled here.
 - **The descent of that condition.** The conjugation of the companion articles carries an operator of its own, and whether that operator has an element-level expression in the frame of this article is the natural question the count leaves open.
 - **The sign of the mass on the two eigenspaces.** On the algebra the two eigenspaces of a conjugation are exchanged by $i$ and the equation does not distinguish them; the companions' reading gives them the two signs of the mass, and the translation between the two readings is not made here.
 - **The ELKO reading.** The literature's class of self-conjugate fields with the opposite eigenvalue is a statement about the operator of the companion articles, and the algebra's count of four real coefficients is compatible with it without selecting it.

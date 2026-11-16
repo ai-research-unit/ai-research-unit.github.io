@@ -62,7 +62,7 @@ c_0:\tilde{Ξ}\longmapsto\tilde{Ξ}\,\vec e_x,\qquad
 c_k:\tilde{Ξ}\longmapsto\vec e_\eta\,\tilde{Ξ}\,\vec e_y,\quad k=x,y,z .
 $$
 
-The four are real: the coefficient conjugation fixes each of them, because it fixes the units and negates only $i$, and none of the four carries an $i$. Two squares and six anticommutators are all that is used below,
+The four are real: the coefficient conjugation fixes each of them, because it fixes the invertibles and negates only $i$, and none of the four carries an $i$. Two squares and six anticommutators are all that is used below,
 
 $$
 c_0^{2}=-1,\qquad c_k^{2}=+1,\qquad \{c_\mu,c_\nu\}=0\quad(\mu\neq\nu),

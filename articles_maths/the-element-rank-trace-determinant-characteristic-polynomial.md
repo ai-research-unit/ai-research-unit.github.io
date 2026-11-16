@@ -14,7 +14,7 @@ $$
 \operatorname{rank}A=\dim\operatorname{im}A=n-\dim\ker A=\dim\operatorname{im}A^{\mathsf T}.
 $$
 
-The last equality is the statement that the row rank equals the column rank: the row space of $A$ is the column space of $A^{\mathsf T}$, and both have dimension equal to the size of the largest nonvanishing minor. The rank is an integer between $0$ and $n$, it is invariant under conjugation by a unit, and $\operatorname{rank}A=n$ is exactly invertibility.
+The last equality is the statement that the row rank equals the column rank: the row space of $A$ is the column space of $A^{\mathsf T}$, and both have dimension equal to the size of the largest nonvanishing minor. The rank is an integer between $0$ and $n$, it is invariant under conjugation by an invertible element, and $\operatorname{rank}A=n$ is exactly invertibility.
 
 **The rank is the number of nonzero singular values.** For every $A$ there are unitaries $U,V$ with $A=U\Sigma V^{*}$ and $\Sigma$ diagonal with entries $\sigma_1\ge\cdots\ge\sigma_n\ge0$. Then $\operatorname{rank}A$ is the number of nonzero $\sigma_k$, and
 

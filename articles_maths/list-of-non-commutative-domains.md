@@ -65,7 +65,7 @@ The free algebra is the standard non-Ore domain, and it is a domain all the same
 
 ## Domains That Are Division Rings
 
-A division ring is a domain in which every nonzero element is a unit; the class is listed in full in *List of Division Rings and Skew Fields*. The relation to the present list is that a division ring is the strongest domain, and it is the only case in which the left and right ideal structure is trivial.
+A division ring is a domain in which every nonzero element is invertible; the class is listed in full in *List of Division Rings and Skew Fields*. The relation to the present list is that a division ring is the strongest domain, and it is the only case in which the left and right ideal structure is trivial.
 
 | Division ring | Why it is a domain of this list | Introduced in |
 |---|---|---|

@@ -109,7 +109,7 @@ $$
 \mathrm{U}(M)=\{u \in E : u^{*}u=uu^{*}=\mathrm{id}\}.
 $$
 
-**Proposition.** $\mathrm{U}(M)$ is a subgroup of the group $E^{\times}=\operatorname{Aut}_A(M)$ of units, and it is contained in it: a unitary element is invertible with $u^{-1}=u^{*}$. It is the group of **isometries** of the pairing.
+**Proposition.** $\mathrm{U}(M)$ is a subgroup of the group $E^{\times}=\operatorname{Aut}_A(M)$ of invertibles, and it is contained in it: a unitary element is invertible with $u^{-1}=u^{*}$. It is the group of **isometries** of the pairing.
 
 *Proof.* If $u\in \mathrm{U}(M)$ then $u^{-1}=u^{*}$ explicitly, so $u\in E^{\times}$. Closure: if $u,v\in \mathrm{U}(M)$ then $(uv)^{*}(uv)=v^{*}u^{*}uv=v^{*}v=\mathrm{id}$ and similarly on the other side, so $uv\in \mathrm{U}(M)$; the identity is unitary; and $u^{-1}\in \mathrm{U}(M)$ because $(u^{*})^{*}=u$ and $u^{*}u=uu^{*}=\mathrm{id}$ read as $u^{*}(u^{*})^{*}=(u^{*})^{*}u^{*}=\mathrm{id}$.
 
@@ -121,7 +121,7 @@ $$
 \boxed{\;u \in \mathrm{U}(M) \iff \langle u(m),u(n)\rangle=\langle m,n\rangle \quad \text{for all } m,n \in M\;} .
 $$
 
-*Proof.* $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of units is two-sided, so $u\in \mathrm{U}(M)$.
+*Proof.* $\langle u(m),u(n)\rangle=\langle m,u^{*}u(n)\rangle$. If $u^{*}u=\mathrm{id}$ this is $\langle m,n\rangle$. Conversely, if the identity holds for all $m,n$, then $\langle m,u^{*}u(n)-n\rangle=0$ for all $m$, so $u^{*}u(n)=n$ by non-degeneracy in the first variable, that is $u^{*}u=\mathrm{id}$; a one-sided inverse in a group of invertibles is two-sided, so $u\in \mathrm{U}(M)$.
 
 Thus the unitary elements are exactly the automorphisms of $M$ that preserve the pairing, and $\mathrm{U}(M)$ is the **unitary group** of the pairing; in the classical cases it is the orthogonal group, the unitary group or the symplectic group, as the examples show.
 
@@ -171,7 +171,7 @@ and a change of basis conjugates both $[f]$ and $[f^{*}]$ by the same matrix, so
 
 *Proof.* $\langle f(m),n\rangle=[m]^{\mathsf{T}}[f]^{\mathsf{T}}\Phi[n]$ and $\langle m,f^{*}(n)\rangle=[m]^{\mathsf{T}}\Phi[f^{*}][n]$, so $\Phi[f^{*}]=[f]^{\mathsf{T}}\Phi$ and the formula follows; a change of basis replaces $[f]$ by $P^{-1}[f]P$ and $\Phi$ by $P^{\mathsf{T}}\Phi P$, and the two changes cancel in the formula.
 
-Multiplying the pairing by a unit $\lambda$ also leaves the involution unchanged, since $(\lambda\Phi)^{-1}[f]^{\mathsf{T}}(\lambda\Phi)=\Phi^{-1}[f]^{\mathsf{T}}\Phi$: only the class of the pairing up to scalars matters.
+Multiplying the pairing by an invertible element $\lambda$ also leaves the involution unchanged, since $(\lambda\Phi)^{-1}[f]^{\mathsf{T}}(\lambda\Phi)=\Phi^{-1}[f]^{\mathsf{T}}\Phi$: only the class of the pairing up to scalars matters.
 
 ### Different pairings give different involutions
 
@@ -195,7 +195,7 @@ The classification of the involutions a module's endomorphism ring can carry, an
 
 ## Summary
 
-A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the anti-self-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the unit group, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
+A non-degenerate reflexive $\sigma$-sesquilinear pairing on a left $A$-module $M$ induces the adjoint map $f\mapsto f^{*}$ on $E=\operatorname{End}_A(M)$, which is $R$-linear, additive, anti-multiplicative and of order two, hence an involution of the $R$-algebra $E$; on the regular module it is the involution $\sigma$ of the algebra, and on a free module with the standard pairing it is the transpose-entrywise map $\mathrm{J}(X)_{ij}=\sigma(X_{ji})$. The fixed part is the set of self-adjoint endomorphisms, the negative-fixed part the anti-self-adjoint ones, and when $2$ is invertible $E$ is their direct sum; the self-adjoint part is closed under the Jordan product $f\bullet g=\frac12(fg+gf)$, hence a special Jordan algebra. The unitary elements $u$ with $u^{*}u=uu^{*}=\mathrm{id}$ form a subgroup $\mathrm{U}(M)$ of the group of invertibles, equal to the group of isometries of the pairing, and they act on $E$ by unitary conjugation, preserving the involution and its symmetric part; in the classical cases $\mathrm{U}(M)$ is $O(n)$, $\mathrm{U}(n)$ or $Sp(2n)$. The involution is of the first kind when it fixes the centre and of the second kind otherwise, and equivalent pairings induce conjugate involutions, so the same ring can carry several inequivalent involutions.
 
 ## Summary of Notation
 

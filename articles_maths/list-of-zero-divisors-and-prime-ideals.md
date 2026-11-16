@@ -45,14 +45,14 @@ The theorem is that the two middle columns agree: for a Noetherian ring, the zer
 
 | Ring | The zero divisors | Their sum | The failure | Introduced in |
 |---|---|---|---|---|
-| $\mathbb{Z}/6\mathbb{Z}$ | $2, 3, 4$ | $2 + 3 = 5$, a unit | $Z(R)$ is not closed under addition | *Modular Arithmetic and the Ring of Residues* |
+| $\mathbb{Z}/6\mathbb{Z}$ | $2, 3, 4$ | $2 + 3 = 5$, an invertible element | $Z(R)$ is not closed under addition | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}$ | $0$ alone | $0 + 0 = 0$ | $Z(R) = (0)$ happens to be an ideal | *The Integers* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $0, 2$ | $2 + 2 = 0$ | $Z(R) = (2)$, an ideal by accident of the nilpotent | *Reduced Rings and the Nilradical* |
 | $k[x,y]/(x^2,xy)$ | $\mathrm{M} = (x,y)$, the union of $(x)$ and $(x,y)$ | $x + y$, again a zero divisor | $Z(R)$ is the maximal ideal, so the failure is absent | *Primary Decomposition* |
-| $\mathbb{R} \times \mathbb{R}$ | $(a,0)$ and $(0,b)$ | $(1,0) + (0,1) = (1,1)$, a unit | $Z(R)$ is not closed under addition | *Examples of Rings and Fields* |
-| $M_2(\mathbb{R})$ | the singular matrices | $E_{11} + (I - E_{11})$ is a unit | $Z(R)$ is not an ideal | *Matrix Algebras* |
+| $\mathbb{R} \times \mathbb{R}$ | $(a,0)$ and $(0,b)$ | $(1,0) + (0,1) = (1,1)$, an invertible element | $Z(R)$ is not closed under addition | *Examples of Rings and Fields* |
+| $M_2(\mathbb{R})$ | the singular matrices | $E_{11} + (I - E_{11})$ is invertible | $Z(R)$ is not an ideal | *Matrix Algebras* |
 
-The zero divisors form a union of primes and not an ideal, and the table records the two ways the failure shows: in $\mathbb{Z}/6\mathbb{Z}$ and in $\mathbb{R}\times\mathbb{R}$ the sum of two zero divisors is a unit, while in $k[x,y]/(x^2,xy)$ the sum stays a zero divisor because the whole set is the maximal ideal $(x,y)$, the union of the prime $(x)$ with the embedded prime $(x,y)$. The one case where the set is an ideal is the case where it is a single prime, the nilpotent maximal ideal of a local ring such as $\mathbb{Z}/4\mathbb{Z}$ or the dual numbers, and this is recorded in *List of Reduced, Local and Product Rings*.
+The zero divisors form a union of primes and not an ideal, and the table records the two ways the failure shows: in $\mathbb{Z}/6\mathbb{Z}$ and in $\mathbb{R}\times\mathbb{R}$ the sum of two zero divisors is invertible, while in $k[x,y]/(x^2,xy)$ the sum stays a zero divisor because the whole set is the maximal ideal $(x,y)$, the union of the prime $(x)$ with the embedded prime $(x,y)$. The one case where the set is an ideal is the case where it is a single prime, the nilpotent maximal ideal of a local ring such as $\mathbb{Z}/4\mathbb{Z}$ or the dual numbers, and this is recorded in *List of Reduced, Local and Product Rings*.
 
 ## The Idempotent-Generated Ideals and the Direct Summands
 
@@ -81,15 +81,15 @@ An idempotent $e$ satisfies $e(1-e) = 0$ and induces the direct sum decompositio
 | a general commutative ring | a union of primes, not necessarily finite | *Commutative Rings* |
 | a von Neumann regular ring | the union of the maximal ideals | *Von Neumann Regular Rings* |
 
-The eighth row is the row that ties this list to the idempotents: in a von Neumann regular ring every element is a unit times an idempotent, the maximal ideals are the associated primes, and the zero divisors are their union, so the ring realises the theorem in its sharpest form. The non-Noetherian case loses only the finiteness of the union.
+The eighth row is the row that ties this list to the idempotents: in a von Neumann regular ring every element is invertible times an idempotent, the maximal ideals are the associated primes, and the zero divisors are their union, so the ring realises the theorem in its sharpest form. The non-Noetherian case loses only the finiteness of the union.
 
 ## Warnings
 
 | Object | Why it has no zero divisors and no prime to record | Introduced in |
 |---|---|---|
-| a field $k$ | every nonzero element is a unit; the only prime is $(0)$ | *Fields* |
+| a field $k$ | every nonzero element is invertible; the only prime is $(0)$ | *Fields* |
 | $\mathbb{Z}/p\mathbb{Z}$ | a field; its associated prime is $(0)$ | *Modular Arithmetic and the Ring of Residues* |
-| $\mathbb{H}$ | a division ring; every nonzero element is a unit | *Quaternion Algebra* |
+| $\mathbb{H}$ | a division ring; every nonzero element is invertible | *Quaternion Algebra* |
 | $\mathbb{Z}$, $k[x]$, $\mathbb{Z}[i]$ | domains, so $Z(R) = \{0\}$ | *Integral Domains* |
 | the free algebra $R\langle x_1, \dots, x_n\rangle$ | a non-commutative domain; the annihilator is one-sided | *Tensor Powers and the Free Algebra* |
 | $M_2(\mathbb{R})$ | non-commutative: an element may have a left annihilator and no right annihilator | *Matrix Algebras* |
@@ -98,7 +98,7 @@ The last two rows are the reason the theorem is stated for a commutative ring: i
 
 ## Summary
 
-This article has listed the rings of the corpus with their zero divisors, their annihilators and their associated primes. The annihilator $\operatorname{Ann}(a)$ is computed for the residue rings, the quotient $k[x,y]/(x^2,y)$, the products and the domains; the associated primes are tabulated for the same objects, and the theorem $Z(R) = \bigcup \operatorname{Ass}(R)$ of *Primary Decomposition* is the statement they illustrate, holding for a finite union in the Noetherian case and for a possibly infinite one in general; the failure of the zero divisors to be an ideal is recorded at $\mathbb{Z}/6\mathbb{Z}$ and at $\mathbb{R}\times\mathbb{R}$, where the sum of two zero divisors is a unit; and the idempotent-generated ideals $Re$ are recorded as the direct summands $R = Re \oplus R(1-e)$, with the von Neumann regular rings as the case in which every ideal is generated by an idempotent and the domains and local rings as the case in which no nontrivial idempotent exists.
+This article has listed the rings of the corpus with their zero divisors, their annihilators and their associated primes. The annihilator $\operatorname{Ann}(a)$ is computed for the residue rings, the quotient $k[x,y]/(x^2,y)$, the products and the domains; the associated primes are tabulated for the same objects, and the theorem $Z(R) = \bigcup \operatorname{Ass}(R)$ of *Primary Decomposition* is the statement they illustrate, holding for a finite union in the Noetherian case and for a possibly infinite one in general; the failure of the zero divisors to be an ideal is recorded at $\mathbb{Z}/6\mathbb{Z}$ and at $\mathbb{R}\times\mathbb{R}$, where the sum of two zero divisors is invertible; and the idempotent-generated ideals $Re$ are recorded as the direct summands $R = Re \oplus R(1-e)$, with the von Neumann regular rings as the case in which every ideal is generated by an idempotent and the domains and local rings as the case in which no nontrivial idempotent exists.
 
 ## Summary of Notation
 

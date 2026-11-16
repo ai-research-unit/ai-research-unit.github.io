@@ -266,7 +266,7 @@ $$
 
 *Proof.* The $4\times4$ matrix is $B^{\mathsf T}\otimes A$. The trace of a Kronecker product is the product of the traces, and $\operatorname{Tr}A=2Q_t$, $\operatorname{Tr}B=2P_t$. The determinant of a Kronecker product is $\det(B^{\mathsf T})^2\det(A)^2=(\det B)^2(\det A)^2$, and the determinants are the norms.
 
-**The inverse.** If $A$ and $B$ are units, the inverse is $(L_AR_B)^{-1}=L_{A^{-1}}R_{B^{-1}}$. If one of them is singular, the rank is at most two and the operator is not invertible.
+**The inverse.** If $A$ and $B$ are invertible, the inverse is $(L_AR_B)^{-1}=L_{A^{-1}}R_{B^{-1}}$. If one of them is singular, the rank is at most two and the operator is not invertible.
 
 ### The Three Examples
 

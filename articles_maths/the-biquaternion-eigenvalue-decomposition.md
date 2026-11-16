@@ -119,7 +119,7 @@ $$
 \lambda_{\pm}=Q_{t}\pm iB=Q_{t}\pm B\omega .
 $$
 
-The **spectrum**, defined by invertibility as $\sigma(\tilde Q)=\{\lambda\in\mathbb{C}:\tilde Q-\lambda e_t\text{ is not a unit}\}$, is this root set; the equivalence of the two definitions is *The Spectrum*, §*The Spectral Criterion*.
+The **spectrum**, defined by invertibility as $\sigma(\tilde Q)=\{\lambda\in\mathbb{C}:\tilde Q-\lambda e_t\text{ is not invertible}\}$, is this root set; the equivalence of the two definitions is *The Spectrum*, §*The Spectral Criterion*.
 
 In the Clifford reading, the eigenvalues are **central elements of grades $0$ and $3$**: $Q_{t}$ is grade $0$, and $B\omega$ is the top grade. They are internal non-scalar eigenvalues in the sense of *The Eigenvalue Decomposition in a Clifford Algebra*, §*Internal and External Non-Scalar Eigenvalues*: the imaginary unit is the volume element of the algebra, not an external scalar. The discriminant is
 
@@ -225,7 +225,7 @@ $$
 \tilde Q=Q_{t}e_{t}+\vec\Upsilon, \qquad \vec\Upsilon^{2}=0.
 $$
 
-The element is a unit exactly when $Q_{t}\neq0$, since $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}$, and its minimal polynomial is $(X-Q_{t})^{2}$, which is not squarefree. By *The Eigenvalue Decomposition of an Element*, §*Existence and Uniqueness*, there is no eigenvalue decomposition. In the Clifford reading, $\vec Q$ is a null bivector: its Hodge dual $i\vec Q$ is a null vector, and the grade structure degenerates. The element is a single Jordan block in the matrix model, and its centraliser is
+The element is invertible exactly when $Q_{t}\neq0$, since $\langle\tilde Q\rangle_{\natural}=Q_{t}^{2}$, and its minimal polynomial is $(X-Q_{t})^{2}$, which is not squarefree. By *The Eigenvalue Decomposition of an Element*, §*Existence and Uniqueness*, there is no eigenvalue decomposition. In the Clifford reading, $\vec Q$ is a null bivector: its Hodge dual $i\vec Q$ is a null vector, and the grade structure degenerates. The element is a single Jordan block in the matrix model, and its centraliser is
 
 $$
 \{ae_{t}+b\vec\Upsilon:\ a,b\in\mathbb{C}\},

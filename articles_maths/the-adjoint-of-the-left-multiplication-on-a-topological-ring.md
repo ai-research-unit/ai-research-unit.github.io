@@ -81,7 +81,7 @@ so the left multiplication is unitary, $L_a^\dagger L_a = L_aL_a^\dagger = \math
 
 **Proof.** $a I\subseteq I$ for a left ideal, and $aI\subseteq I$ on both sides for a two-sided ideal; the annihilator statement is the transpose of the inclusion, and a form-preserving operator with its adjoint preserves the ideals by the two inclusions.
 
-**Theorem (the division case).** If $R$ is a division ring, every nonzero element is a unit, so every nonzero left multiplication is invertible with $L_a^{-1} = L_{a^{-1}}$ and the dictionary of *The Involution on Bounded Operators of a Ring* is complete: the self-adjoint left multiplications are exactly the left multiplications by the self-adjoint elements, the unitary ones exactly those by the unitary elements, and the involutive ones exactly those by the elements of order two.
+**Theorem (the division case).** If $R$ is a division ring, every nonzero element is invertible, so every nonzero left multiplication is invertible with $L_a^{-1} = L_{a^{-1}}$ and the dictionary of *The Involution on Bounded Operators of a Ring* is complete: the self-adjoint left multiplications are exactly the left multiplications by the self-adjoint elements, the unitary ones exactly those by the unitary elements, and the involutive ones exactly those by the elements of order two.
 
 **Proof.** A division ring has no nonzero nonunits, so $L_a$ for $a\ne0$ is invertible; the dictionary is the general theorem, with the kernel of the parametrisation trivial, and the three sets are the images of the three sets of elements.
 

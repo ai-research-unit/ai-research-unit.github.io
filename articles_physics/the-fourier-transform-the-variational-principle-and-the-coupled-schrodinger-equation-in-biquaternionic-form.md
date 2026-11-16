@@ -71,7 +71,7 @@ and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\ti
 
 **What the term-by-term structure forbids.** It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
 
-**The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by a unit, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
+**The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
 
 ## Legendre and the Two Invariant Slopes
 

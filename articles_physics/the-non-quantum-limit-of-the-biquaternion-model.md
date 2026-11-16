@@ -18,7 +18,7 @@ The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mat
 
 ## The Constant the Algebra Does Not Carry
 
-**No element carries a unit.** A dimension enters only where an element is identified with a quantity, so $\hbar$ is not a symbol the algebra can act on.
+**No element carries an invertible element.** A dimension enters only where an element is identified with a quantity, so $\hbar$ is not a symbol the algebra can act on.
 
 | where $\hbar$ appears | with the algebra's numbers | a limit on it does this |
 |---|---|---|

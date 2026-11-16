@@ -23,7 +23,7 @@ one complex number times a fixed exchange is the whole datum the pair costs.
 
 The predicates, the sectors and the strata are those of *Relations between the N Norm and Spectral Regularity and Degeneracy*, and they are defined
 again below so that the article stands alone. The carriers are *From the Spin to the Carriers and the Closures*. The levels themselves
-are *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors* and *Introduction to the Spin-One Anti-Hermitian
+are *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian
 Subspace*.
 
 Nothing below is a statement of physics. The elements are written $X,Y$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the
@@ -496,7 +496,7 @@ the norm and not $B^{2}$, so it moves elements between sectors.
 
 ## Further Reading
 
-- [Introduction to the Spin-Half Bispinors](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor
+- [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor
 spaces.
 - [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the plane and of
 the ideals, and the pairing of the two halves.

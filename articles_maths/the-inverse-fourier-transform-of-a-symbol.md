@@ -16,7 +16,7 @@ $$
 \mathcal{F}^{-1}[v](x)=(2\pi)^{-n}\int_{\mathbb{R}^n}e^{i\zeta\cdot x}\,v(\zeta)\,d\zeta .
 $$
 
-**The three regimes.** The reciprocal $\sigma^{-1}$ is defined at a frequency exactly when $\sigma(\zeta)$ is a unit, and there are three cases. If $\sigma$ is a unit everywhere and $\lVert L_{\sigma(\zeta)^{-1}}\rVert$ is bounded on $\mathbb{R}^n$, the reciprocal is a bounded multiplier and the solution obeys an $L^2$ bound with no constant in it beyond the sup of the multiplier. If $\sigma$ is a unit everywhere but the reciprocal grows polynomially, the multiplier is tempered and the solution exists in the space of tempered distributions, with a loss of smoothness read from the growth. If the symbol is not a unit somewhere, the reciprocal is defined off the zero set, is unbounded near it, and the product $\sigma^{-1}\mathcal{F}[f]$ is a division problem; that is the case this article is about, and its three themes — poles, growth, counting — live there.
+**The three regimes.** The reciprocal $\sigma^{-1}$ is defined at a frequency exactly when $\sigma(\zeta)$ is invertible, and there are three cases. If $\sigma$ is invertible everywhere and $\lVert L_{\sigma(\zeta)^{-1}}\rVert$ is bounded on $\mathbb{R}^n$, the reciprocal is a bounded multiplier and the solution obeys an $L^2$ bound with no constant in it beyond the sup of the multiplier. If $\sigma$ is invertible everywhere but the reciprocal grows polynomially, the multiplier is tempered and the solution exists in the space of tempered distributions, with a loss of smoothness read from the growth. If the symbol is not invertible somewhere, the reciprocal is defined off the zero set, is unbounded near it, and the product $\sigma^{-1}\mathcal{F}[f]$ is a division problem; that is the case this article is about, and its three themes — poles, growth, counting — live there.
 
 **The status of the five results.** The adjugate description of the reciprocal, and with it the order of the pole at a point of the zero set, is proved here from scratch; it is the article's own contribution and it is complete. The Plancherel identity is proved here for $A_{\mathbb{C}}$-valued functions by reduction to the scalar identity of *Real and Complex Analysis* of Rudin, which is quoted with its constant. The Paley–Wiener correspondence between the support of a function and the exponential type of its transform is proved in the direction that needs nothing but the integral, and in the converse direction under the translate estimate that belongs to the theorem itself; that estimate is quoted, and the reduction from the scalar case to the $A_{\mathbb{C}}$-valued case is proved here. The growth rate that a pole forces on the kernel is proved in one frequency variable; in $n\ge2$ it is labelled *programme*, because the zero set is then a hypersurface and there is no isolated pole to take a residue at. The stationary phase asymptotics are quoted from Hörmander with their hypotheses and applied in one model case; the degenerate case is left open. The argument principle is quoted from Ahlfors in the scalar form, and the section that uses it says plainly why it does not transfer.
 
@@ -26,7 +26,7 @@ $$
 
 ## The Multiplier and the Inverse Integral
 
-**Definition (the multiplier and its kernel).** Let $\Omega\subseteq\mathbb{R}^n$ be the open set on which $\sigma$ is a unit. The **reciprocal multiplier** is the $A_{\mathbb{C}}$-valued function $m_\sigma(\zeta)=\sigma(\zeta)^{-1}$ on $\Omega$, and the **kernel of the symbol** is its inverse transform,
+**Definition (the multiplier and its kernel).** Let $\Omega\subseteq\mathbb{R}^n$ be the open set on which $\sigma$ is invertible. The **reciprocal multiplier** is the $A_{\mathbb{C}}$-valued function $m_\sigma(\zeta)=\sigma(\zeta)^{-1}$ on $\Omega$, and the **kernel of the symbol** is its inverse transform,
 
 $$
 \kappa_\sigma=\mathcal{F}^{-1}\big[m_\sigma\big],
@@ -130,7 +130,7 @@ for any Hermitian inner product on $A_{\mathbb{C}}$ used to form the two norms.
 
 **Corollary (the unitary normalisation).** The operator $\mathcal{U}=(2\pi)^{-n/2}\mathcal{F}$ is an isometry of $L^2(\mathbb{R}^n;A_{\mathbb{C}})$ onto itself, and it extends from $L^1\cap L^2$ to the whole of $L^2$ by continuity. The constant $(2\pi)^{n/2}$ is exactly what the inversion formula carries, and it is the whole content of the phrase "unitary up to a constant".
 
-**Corollary (the stability bound, with the constants cancelled).** Suppose $\sigma$ is a unit everywhere and $M=\sup_{\zeta}\lVert L_{\sigma(\zeta)^{-1}}\rVert<\infty$, the norm on the right being the operator norm on $A_{\mathbb{C}}$. Then the solution of the transformed equation obeys
+**Corollary (the stability bound, with the constants cancelled).** Suppose $\sigma$ is invertible everywhere and $M=\sup_{\zeta}\lVert L_{\sigma(\zeta)^{-1}}\rVert<\infty$, the norm on the right being the operator norm on $A_{\mathbb{C}}$. Then the solution of the transformed equation obeys
 
 $$
 \lVert u\rVert_2\le M\,\lVert f\rVert_2 .
@@ -144,7 +144,7 @@ $$
 
 ### The element
 
-**Proposition (the reciprocal is an adjugate over a determinant).** Let $a\in A_{\mathbb{C}}$ be a unit. Then
+**Proposition (the reciprocal is an adjugate over a determinant).** Let $a\in A_{\mathbb{C}}$ be an invertible element. Then
 
 $$
 L_{a^{-1}}=(\det L_a)^{-1}\operatorname{adj}(L_a),
@@ -234,7 +234,7 @@ $$
 \frac{d}{d\zeta}\log\det L_{\sigma(\zeta)}=\operatorname{tr}\big(L_{\sigma(\zeta)^{-1}}\,L_{\sigma'(\zeta)}\big)
 $$
 
-at every point where $\sigma$ is a unit, so the logarithmic derivative of the determinant is a trace and the argument principle applies to $\det L_\sigma$ along a contour. It counts the zeros of the determinant, with multiplicity, inside the contour.
+at every point where $\sigma$ is invertible, so the logarithmic derivative of the determinant is a trace and the argument principle applies to $\det L_\sigma$ along a contour. It counts the zeros of the determinant, with multiplicity, inside the contour.
 
 **Proposition (the count on a generic complex line).** Let $\sigma$ have degree $m$ and let $\zeta=\zeta_0+\lambda v$ with $v\in\mathbb{C}^n$ be a complex line. Then the restriction of $\det L_\sigma$ to the line is a polynomial in $\lambda$ of degree at most $dm$, of degree exactly $dm$ for all $v$ outside a proper algebraic subset of $\mathbb{C}^n$, and it has $dm$ zeros counted with multiplicity.
 
@@ -297,7 +297,7 @@ Three sentences carry the article. **The pole order is a property of the point a
 | $\det L_a$ | The determinant of the regular representation, of degree $d$ in $a$ and $dm$ in $\zeta$ |
 | $Z(P)$ | The zero set of the symbol, the real trace of $\{\det L_\sigma=0\}$ |
 | $\mathcal{F},\mathcal{F}^{-1}$ | The transform $\int e^{-i\zeta\cdot x}u\,dx$ and its inverse, with the constant $(2\pi)^{-n}$ |
-| $m_\sigma$ | The reciprocal multiplier $\sigma^{-1}$, defined where $\sigma$ is a unit |
+| $m_\sigma$ | The reciprocal multiplier $\sigma^{-1}$, defined where $\sigma$ is invertible |
 | $\kappa_\sigma$ | The kernel of the symbol, $\mathcal{F}^{-1}[m_\sigma]$ |
 | $K_R$ | The closed ball $\{x:\lvert x\rvert\le R\}$ of radius $R$ |
 | $\tau(F)$ | The exponential type of an entire function $F$, the infimum of the admissible $R$ |
@@ -313,7 +313,7 @@ Three sentences carry the article. **The pole order is a property of the point a
 | $\lambda$ | The large parameter of the stationary phase asymptotics |
 | $\nu$ | A unit vector in $\mathbb{R}^n$, the direction of a contour shift |
 | $\Sigma$ | The complex zero hypersurface $\{\det L_\sigma=0\}$ near a smooth point |
-| $\Omega$ | The open set of frequencies at which $\sigma$ is a unit |
+| $\Omega$ | The open set of frequencies at which $\sigma$ is invertible |
 | $\xi$ | The real part of a complex frequency, and the real variable in the shifted contour |
 | $\varrho,\delta$ | The distance of a point $x_0$ from the origin and the radius of the ball about it |
 | $\gamma$ | A simple closed contour in $\mathbb{C}$ |

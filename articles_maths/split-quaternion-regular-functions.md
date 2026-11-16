@@ -16,7 +16,7 @@ $$
 \bar{\nabla} = e_t \partial/\partial q_t - \vec e_x \partial/\partial q_x - \vec e_y \partial/\partial q_y - \vec e_z \partial/\partial q_z .
 $$
 
-The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. The units satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_t$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
+The pair $(\nabla, \bar{\nabla})$ plays the role of $(\partial/\partial\bar A, \partial/\partial A)$ in one complex variable. The invertibles satisfy the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 2g_{\mu\nu} e_t$ with $g = \operatorname{diag}(1,1,-1,-1)$, so the cross terms cancel and
 
 $$
 \boxed{\;

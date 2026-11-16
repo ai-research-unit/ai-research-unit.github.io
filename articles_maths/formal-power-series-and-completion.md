@@ -68,9 +68,9 @@ $$
 
 is a bijection: a series is the same thing as a coherent sequence of its truncations. This is the structure that the next sections exploit.
 
-### Units
+### Invertibles
 
-**Proposition.** A formal power series $f \in R[[x_1,\ldots,x_n]]$ is a unit if and only if its constant term $f(0)$ is a unit of $R$.
+**Proposition.** A formal power series $f \in R[[x_1,\ldots,x_n]]$ is invertible if and only if its constant term $f(0)$ is invertible in $R$.
 
 *Proof.* If $f(0) = u \in R^{\times}$, write $f = u(1 - h)$ with $h \in \mathrm{M}$. Since $h^k \in \mathrm{M}^k$ and a series is determined by its truncations, the partial sums of the geometric series
 
@@ -78,9 +78,9 @@ $$
 f^{-1} = u^{-1}\bigl(1 + h + h^2 + h^3 + \cdots\bigr)
 $$
 
-are coherent modulo every $\mathrm{M}^k$ and so define an element of $R[[x_1,\ldots,x_n]]$, and multiplying that element by $1-h$ gives $1$; so $f$ is a unit. Conversely, if $f$ is a unit then $fh = 1$ for some $h$, and evaluating the constant terms gives $f(0)h(0) = 1$, so $f(0)$ is a unit.
+are coherent modulo every $\mathrm{M}^k$ and so define an element of $R[[x_1,\ldots,x_n]]$, and multiplying that element by $1-h$ gives $1$; so $f$ is invertible. Conversely, if $f$ is invertible then $fh = 1$ for some $h$, and evaluating the constant terms gives $f(0)h(0) = 1$, so $f(0)$ is invertible.
 
-**Example.** $1 + x$ is a unit in $R[[x]]$ with inverse $1 - x + x^2 - x^3 + \cdots$, the coefficients being $(-1)^k$. The series $x$ is not a unit; over a domain it is a non-zerodivisor, so not every non-unit of $R[[x]]$ is a zerodivisor.
+**Example.** $1 + x$ is invertible in $R[[x]]$ with inverse $1 - x + x^2 - x^3 + \cdots$, the coefficients being $(-1)^k$. The series $x$ is not invertible; over a domain it is a non-zerodivisor, so not every non-invertible of $R[[x]]$ is a zerodivisor.
 
 ### Substitution and Composition
 
@@ -206,9 +206,9 @@ $$
 f(a_n) = f(a_{n-1}) + h \frac{df}{dx}(a_{n-1}) + h^2 r
 $$
 
-for some $r \in A$; now $\frac{df}{dx}(a_{n-1}) \equiv \frac{df}{dx}(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $\frac{df}{dx}(a_{n-1})$ is a unit, and the choice of $h = -f(a_{n-1})\left(\frac{df}{dx}(a_{n-1})\right)^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(\frac{df}{dx}(a_0) + m)$ with $m \in I$, and $\frac{df}{dx}(a_0) + m$ is a unit, so $a = a'$.
+for some $r \in A$; now $\frac{df}{dx}(a_{n-1}) \equiv \frac{df}{dx}(a_0) \bmod I$ because $a_{n-1}\equiv a_0 \bmod I$, so $\frac{df}{dx}(a_{n-1})$ is invertible, and the choice of $h = -f(a_{n-1})\left(\frac{df}{dx}(a_{n-1})\right)^{-1}$ makes $f(a_n) = h^2 r \in I^{2^n}$. Uniqueness: if $f(a) = f(a') = 0$ with $a \equiv a' \equiv a_0 \bmod I$, then $0 = f(a) - f(a') = (a - a')(\frac{df}{dx}(a_0) + m)$ with $m \in I$, and $\frac{df}{dx}(a_0) + m$ is invertible, so $a = a'$.
 
-**Example.** In $R[[x]]$ the series $y = \sqrt{1 + x}$ is produced by Hensel's lemma applied to $f(t) = t^2 - (1+x)$ at $a_0 = 1$: the derivative $2t$ is a unit at $t = 1$ when $2$ is invertible, and the root is the binomial series $y = \sum_{k\geq0}\binom{1/2}{k}x^k = 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac{1}{16}x^3 - \cdots$. Over the $p$-adic integers $\mathbb{Z}_p$ with $p$ odd, applied to $f(t) = t^2 - u$ at a unit $a_0$ with $a_0^2 \equiv u \pmod{p}$, the derivative $2a_0$ is a unit and the lemma lifts the square root modulo $p$ to a square root in $\mathbb{Z}_p$; this is the classical instance of Hensel's lemma.
+**Example.** In $R[[x]]$ the series $y = \sqrt{1 + x}$ is produced by Hensel's lemma applied to $f(t) = t^2 - (1+x)$ at $a_0 = 1$: the derivative $2t$ is invertible at $t = 1$ when $2$ is invertible, and the root is the binomial series $y = \sum_{k\geq0}\binom{1/2}{k}x^k = 1 + \tfrac12 x - \tfrac18 x^2 + \tfrac{1}{16}x^3 - \cdots$. Over the $p$-adic integers $\mathbb{Z}_p$ with $p$ odd, applied to $f(t) = t^2 - u$ at an invertible element $a_0$ with $a_0^2 \equiv u \pmod{p}$, the derivative $2a_0$ is invertible and the lemma lifts the square root modulo $p$ to a square root in $\mathbb{Z}_p$; this is the classical instance of Hensel's lemma.
 
 ## Completion, the Symmetric Algebra and Taylor Expansion
 
@@ -252,7 +252,7 @@ $$
 R[x_1,\ldots,x_n]^{\wedge}_{\mathrm{M}} = \varprojlim_k R[x_1,\ldots,x_n]/\mathrm{M}^k \cong R[[x_1,\ldots,x_n]], \qquad \mathrm{M} = (x_1,\ldots,x_n),
 $$
 
-where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathrm{M}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathrm{M}$-adic filtration. A series is a unit exactly when its constant term is a unit, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathrm{M}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{sym}(M)$ into the product $\prod_k \operatorname{sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
+where completion takes the inverse limit of the quotient algebras $A/I^k$. The filtration is the order filtration, $\mathrm{M}^k$ is the set of series of order at least $k$, and the algebra is complete for the $\mathrm{M}$-adic filtration. A series is invertible exactly when its constant term is invertible, by the geometric series; substitution is defined for series with zero constant term. The formal inverse function theorem states that an $n$-tuple $F$ with $F(0) = 0$ and invertible Jacobian $J = (\partial F_i/\partial x_j)(0)$ has a unique two-sided compositional inverse, and it is proved by the Newton step $G \mapsto L(x - N(G))$, which gains one order on the $\mathrm{M}$-adic filtration. Completion converts the direct-sum symmetric algebra $\operatorname{sym}(M)$ into the product $\prod_k \operatorname{sym}^k(M)$, leaves the associated graded algebra unchanged, and in characteristic zero agrees with the Taylor expansion and with the completed divided-power algebra. In small characteristic the divided powers provide the correct substitute.
 
 ## Summary of Notation
 

@@ -66,7 +66,7 @@ A timelike momentum gives a positive state, a null one gives a pure state, and a
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | the sector, its basis, its blocks and its position among the six subspaces | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| the norm, the units, the zero-divisor cone and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the norm, the invertibles, the zero-divisor cone and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the four forms, their Gram matrices and their inertia on the sector | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the positive cone as an ordered set with its order unit | [Self-Adjoint Elements and the Positive Cone](../articles_maths/self-adjoint-elements-and-the-positive-cone.html) |
 | the states as positive functionals and their normalisation | [States and Positive Functionals on an Involutive Algebra](../articles_maths/states-and-positive-functionals-on-an-involutive-algebra.html) |
@@ -552,7 +552,7 @@ Two pure states at a right angle on the sphere are therefore at a Fubini–Study
 
 ## The Flow and the Centre
 
-**The state changes by conjugation, and the conjugation is by a unit of the algebra.** The action of the algebra on its own sector is
+**The state changes by conjugation, and the conjugation is by an invertible element of the algebra.** The action of the algebra on its own sector is
 
 $$
 \Gamma_{\tilde U}\bigl(\tilde X\bigr)=\tilde U\tilde X\tilde U^{*},
@@ -832,7 +832,7 @@ The normalised state of a momentum is the four-velocity over $c$, up to the fact
 
 **The bracket also supplies the uncertainty relation's left-hand side.** For two observables, the commutator is twice the cross product of their vector parts, so the commutator's size is the area of the parallelogram they span. The uncertainty relation's bound is therefore an area in the same three-space where the state is a ball, and the two structures — the state's geometry and the observables' non-commutation — are two uses of one cross product.
 
-**Boundary.** The identification of the area with a number of Planck cells requires the units, and the entry does not make it. The claim is the finiteness of the area and its value $\pi$ in the normalisation $\operatorname{Sc}(e_t)=1$. A quantisation argument that fixes $\hbar$ is outside this entry.
+**Boundary.** The identification of the area with a number of Planck cells requires the invertibles, and the entry does not make it. The claim is the finiteness of the area and its value $\pi$ in the normalisation $\operatorname{Sc}(e_t)=1$. A quantisation argument that fixes $\hbar$ is outside this entry.
 
 ### I.12.w — The Imaginary Unit Is Forced by the Centre
 
@@ -950,7 +950,7 @@ The normalised state of a momentum is the four-velocity over $c$, up to the fact
 
 **The geometry.** [The Fubini–Study Geometry and the Biquaternion Norm](the-fubini-study-geometry-and-the-biquaternion-norm.html) treats the metric, the Kähler form and the distances; the ball, the purity, the entropy and the fidelity are stated here.
 
-**The flow.** [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) proves the two normalisation theorems and the centrality of the unit.
+**The flow.** [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) proves the two normalisation theorems and the centrality of the unit.
 
 **The previous entry of the section.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) is the material sector read as spacetime, and its §*The Lorentz Action* is the action that the last section of this entry reads on the ball.
 

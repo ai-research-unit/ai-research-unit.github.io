@@ -36,7 +36,7 @@ In the coordinates $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two
 
 The decomposition is the algebraic member of the three polar decompositions of the algebra. The modulus–unit form, treated here, uses the bar, the positive square root and the unit torus, and chooses no coordinate on the torus. The rational-chart form puts the Cayley coordinate on each circle of the torus, and is developed in *Rational-Chart Polar Decomposition of Reduced Biquaternions*. The exponential form puts the Lie-algebra coordinate on the torus, and is developed in *Exponential Polar Decomposition of Reduced Biquaternions*.
 
-The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and the torus are described (§*The Group of Units and the Torus*), the two planes of the bar are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the algebra in the family is recorded (§*The Other Algebras*).
+The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of invertibles and the torus are described (§*The Group of Invertibles and the Torus*), the two planes of the bar are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the algebra in the family is recorded (§*The Other Algebras*).
 
 Every numerical value displayed below was recomputed in double precision.
 
@@ -78,7 +78,7 @@ $$
 q^2-q'^2=|Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2|^2=|\langle\breve Q\rangle_{\mathrm{ts}}|^2.
 $$
 
-For a unit the right side is positive, so $q>|q'|$, and $\breve Q\bar{\breve Q}$ lies in the positive cone
+For an invertible element the right side is positive, so $q>|q'|$, and $\breve Q\bar{\breve Q}$ lies in the positive cone
 
 $$
 P=\{\,x+jy:x>|y|\,\}.
@@ -189,25 +189,25 @@ The three sets coincide only in the complex algebra, where the norm is definite 
 
 ### The Count of the Parameters
 
-A unit carries four real parameters. The modulus carries two, the scales $\rho_+,\rho_-$, equivalently the radius $\rho>0$ and the boost $\theta_{\mathrm{rpd}}\in\mathbb{R}$. The unit factor carries two, the two circles of $T^2$. The counts add:
+An invertible element carries four real parameters. The modulus carries two, the scales $\rho_+,\rho_-$, equivalently the radius $\rho>0$ and the boost $\theta_{\mathrm{rpd}}\in\mathbb{R}$. The unit factor carries two, the two circles of $T^2$. The counts add:
 
 $$
 4=2+2.
 $$
 
-The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the group of units. The decomposition separates the non-compact directions from the compact ones, exactly as the complex decomposition separates the radius from the circle. What the two parameters of $u$ are parametrised by is a separate question, answered by a chart of the torus; the rational chart is the subject of *Rational-Chart Polar Decomposition of Reduced Biquaternions*, the exponential chart the subject of *Exponential Polar Decomposition of Reduced Biquaternions*, and this article chooses none.
+The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the group of invertibles. The decomposition separates the non-compact directions from the compact ones, exactly as the complex decomposition separates the radius from the circle. What the two parameters of $u$ are parametrised by is a separate question, answered by a chart of the torus; the rational chart is the subject of *Rational-Chart Polar Decomposition of Reduced Biquaternions*, the exponential chart the subject of *Exponential Polar Decomposition of Reduced Biquaternions*, and this article chooses none.
 
 ## Existence and Uniqueness
 
 **Theorem.** Every unit $\breve Q$ has exactly one modulus–unit polar decomposition $\breve Q=\breve r u$ with $\breve r\in P$ and $u\in T^2$.
 
-**Existence.** Put $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve r^{-1}\breve Q$. The element $\breve r$ is defined because $\breve Q\bar{\breve Q}\in P$ for a unit, and $u\bar u=1$ by the computation of §*The Unit Factor and the Torus*. Hence $\breve Q=\breve r u$ with the two factors in the required sets.
+**Existence.** Put $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve r^{-1}\breve Q$. The element $\breve r$ is defined because $\breve Q\bar{\breve Q}\in P$ for an invertible element, and $u\bar u=1$ by the computation of §*The Unit Factor and the Torus*. Hence $\breve Q=\breve r u$ with the two factors in the required sets.
 
 **Uniqueness.** Suppose $\breve r u=\breve r'u'$ with $\breve r,\breve r'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve r^2=\breve r'^2$, because $\bar{\breve r}=\breve r$, $\bar{\breve r}'=\breve r'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'^2+y'^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'^2-y'^2$ both equal $\sqrt{q^2-q'^2}$, so $x^2=x'^2$, $x=x'>0$, and then $y=y'$. Hence $\breve r=\breve r'$, and $u=\breve r^{-1}\breve Q=u'$.
 
 The pair $(\breve r,u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.
 
-**Corollary (the failure set).** The decomposition exists exactly on the units. It fails exactly on the zero divisors
+**Corollary (the failure set).** The decomposition exists exactly on the invertibles. It fails exactly on the zero divisors
 
 $$
 \boxed{\;
@@ -219,9 +219,9 @@ the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each
 
 *Proof.* The construction uses $\breve r\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.
 
-## The Group of Units and the Torus
+## The Group of Invertibles and the Torus
 
-### The Splitting of the Group of Units
+### The Splitting of the Group of Invertibles
 
 The map
 
@@ -244,9 +244,9 @@ $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{R}_{>0}\times\mathbb{R}\times T^2\cong\mathbb{R}^2\times T^2.
 $$
 
-**Corollary (the real dimension and the fundamental group).** The group of units is connected of real dimension four, with fundamental group $\mathbb{Z}^2$. It is not simply connected, and its universal cover is the algebra $\mathbb{B}_{\mathrm{red}}\cong\mathbb{R}^4$.
+**Corollary (the real dimension and the fundamental group).** The group of invertibles is connected of real dimension four, with fundamental group $\mathbb{Z}^2$. It is not simply connected, and its universal cover is the algebra $\mathbb{B}_{\mathrm{red}}\cong\mathbb{R}^4$.
 
-*Proof.* The cone is connected and simply connected, the torus is connected with fundamental group $\mathbb{Z}^2$, and the product has the product of the fundamental groups. The algebra is contractible and the exponential of *Exponential Polar Decomposition of Reduced Biquaternions* is a covering onto the units with kernel $\mathbb{Z}^2$.
+*Proof.* The cone is connected and simply connected, the torus is connected with fundamental group $\mathbb{Z}^2$, and the product has the product of the fundamental groups. The algebra is contractible and the exponential of *Exponential Polar Decomposition of Reduced Biquaternions* is a covering onto the invertibles with kernel $\mathbb{Z}^2$.
 
 ### The Maximal Compact Subgroup
 
@@ -265,7 +265,7 @@ H:[0,1]\times{\mathbb{B}_{\mathrm{red}}}^{\times}\longrightarrow{\mathbb{B}_{\ma
 \qquad H(t,\breve Q)=\bigl((1-t)\breve r+t\bigr)u
 $$
 
-is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in $T^2$ at $t=1$. The element $(1-t)\breve r+t$ lies in $P$ for every $t$, because $P$ is convex: its coordinates are $(1-t)x+t$ and $(1-t)y$, and $|(1-t)y|<(1-t)x+t$. The group of units therefore deformation retracts onto the torus. Since the group is already a product $P\times T^2$, the retraction is the projection onto the second factor followed by a linear contraction of the first.
+is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in $T^2$ at $t=1$. The element $(1-t)\breve r+t$ lies in $P$ for every $t$, because $P$ is convex: its coordinates are $(1-t)x+t$ and $(1-t)y$, and $|(1-t)y|<(1-t)x+t$. The group of invertibles therefore deformation retracts onto the torus. Since the group is already a product $P\times T^2$, the retraction is the projection onto the second factor followed by a linear contraction of the first.
 
 ### The Two Circles
 
@@ -334,11 +334,11 @@ $$
 \breve Q^n=\breve r^n u^n,
 $$
 
-and the $n$-th roots of a unit have modulus $\breve r^{1/n}$ and $n^2$ choices of the unit factor. In particular a generic unit has four square roots.
+and the $n$-th roots of an invertible element have modulus $\breve r^{1/n}$ and $n^2$ choices of the unit factor. In particular a generic unit has four square roots.
 
 *Proof.* The power is the repeated product. On the torus, an $n$-th root is a pair $(u_{+},u_{-})$ whose $n$-th powers are the two prescribed circular components of the target unit factor; each of the two complex equations has $n$ roots, and the choices are independent, giving $n^2$.
 
-The unit group in polar form is the product of the cone and the torus, and the product law multiplies the scales and the unit factors. The algebra is commutative, so the unit factor carries no rotor: the compact directions are the two scalar phases, and the split unit $j$ acts only through the relative scale $\rho_+/\rho_-=e^{2\theta_{\mathrm{rpd}}}$. This is the reason the polar word is a pair of complex polar words and not a richer object.
+The group of invertibles in polar form is the product of the cone and the torus, and the product law multiplies the scales and the unit factors. The algebra is commutative, so the unit factor carries no rotor: the compact directions are the two scalar phases, and the split unit $j$ acts only through the relative scale $\rho_+/\rho_-=e^{2\theta_{\mathrm{rpd}}}$. This is the reason the polar word is a pair of complex polar words and not a richer object.
 
 ## The Two Axes
 
@@ -453,7 +453,7 @@ with $M_{\breve r}$ symmetric positive definite and $M_u\in SO(4)$.
 
 ### The Matrix Polar Decomposition
 
-**Theorem.** For every unit $\breve Q$, the matrix $M_{\breve Q}$ has the polar decomposition
+**Theorem.** For every invertible $\breve Q$, the matrix $M_{\breve Q}$ has the polar decomposition
 
 $$
 \boxed{\;
@@ -593,9 +593,9 @@ $$
 \breve Q=\breve r u,\qquad \breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2},\qquad u\bar u=1,
 $$
 
-with $\rho_+=|Q_{+}|>0$ and $\rho_-=|Q_{-}|>0$. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in the cone $P=\{x+jy:x>|y|\}$, and the unit factor is $u=\breve r^{-1}\breve Q$ on the torus $T^2=\{u:u\bar u=1\}$. The pair is unique. The decomposition exists exactly on the units and fails exactly on the zero divisors, the union of the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, of real codimension two.
+with $\rho_+=|Q_{+}|>0$ and $\rho_-=|Q_{-}|>0$. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in the cone $P=\{x+jy:x>|y|\}$, and the unit factor is $u=\breve r^{-1}\breve Q$ on the torus $T^2=\{u:u\bar u=1\}$. The pair is unique. The decomposition exists exactly on the invertibles and fails exactly on the zero divisors, the union of the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, of real codimension two.
 
-The group of units splits as
+The group of invertibles splits as
 
 $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}\cong P\times T^2\cong\mathbb{R}^2\times T^2,
@@ -629,7 +629,7 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 | $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ | the modulus in radius and boost |
 | $u=\breve r^{-1}\breve Q$ | the unit factor |
 | $T^2=\{u:u\bar u=1\}$ | the unit torus |
-| ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong P\times T^2$ | the polar splitting of the group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong P\times T^2$ | the polar splitting of the group of invertibles |
 | $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$ | the fixed and anti-fixed planes of the bar |
 | $M_{\breve Q}$ | the real matrix of multiplication by $\breve Q$ |
 | $SO(4)$ | the special orthogonal group of $\mathbb{R}^4$ |
@@ -638,7 +638,7 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), for the reduced norm and the unit criterion.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two zero-divisor lines.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), for the structure of ${\mathbb{B}_{\mathrm{red}}}^{\times}$.
+- [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the structure of ${\mathbb{B}_{\mathrm{red}}}^{\times}$.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), for the bar and its fixed planes.
 - [Square Roots of a General Element in the Algebra of the Reduced Biquaternions](square-roots-of-a-general-element-in-the-algebra-of-the-reduced-biquaternions.html), for the four square roots.
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the complex member of the family.

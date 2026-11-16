@@ -12,7 +12,7 @@ It assumes *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb
 
 **Definition.** $\beta(X,Y)=\operatorname{tr}(XY)$ restricted to $\mathfrak{b}$, the upper triangular matrices including the diagonal of dimension $10$.
 
-**Proposition.** $\beta(E_{ij},X)=X_{ji}$ for every unit $E_{ij}$ and every $X$.
+**Proposition.** $\beta(E_{ij},X)=X_{ji}$ for every invertible $E_{ij}$ and every $X$.
 
 **Proof.** $\operatorname{tr}(E_{ij}X)=\sum_p(E_{ij}X)_{pp}$, and $(E_{ij}X)_{pp}=\delta_{pj}X_{ip}$, so the sum is $X_{ji}$.
 

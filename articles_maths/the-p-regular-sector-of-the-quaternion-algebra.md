@@ -60,16 +60,16 @@ is a strong deformation retraction of $\mathcal T$ onto the two-sheeted hyperbol
 
 *Proof.* The transitivity and the stabiliser of the proposition, with the connected component of the identity. The comparison of the two realisations, by the versors and by the boosts, is the subject of [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
 
-## The Intersection with the Group of Units
+## The Intersection with the Group of Invertibles
 
-**Theorem (the sector is a subset of the units).** $\{P\neq0\}\subset\mathbb{H}^{\times}$, and every element of the sector is invertible with
+**Theorem (the sector is a subset of the invertibles).** $\{P\neq0\}\subset\mathbb{H}^{\times}$, and every element of the sector is invertible with
 $$
 N(\tilde q)\geq\lvert P(\tilde q)\rvert>0 .
 $$
 
 *Proof.* $P(\tilde q)\neq0$ forces $\tilde q\neq0$, and every non-zero quaternion is invertible by the division property. For the inequality, $N=q_t^2+\lvert\vec q\rvert^2\geq\lvert q_t^2-\lvert\vec q\rvert^2\rvert=\lvert P\rvert$. Verified on random elements.
 
-**Remark (the intersection is the whole sector).** The intersection of the sector with the group of units is the sector itself, so the so-called intersection carries no information. What carries information is the shape of the P-partition inside the group: the group of units is the sector plus the punctured cone, and the cone is the boundary. **The regular sector does not select the units; the units are everything but the origin, and the sector is that same set with a cone removed.** The cone itself lies inside the units, as [The P-Degenerate Sector of the Quaternion Algebra](the-p-degenerate-sector-of-the-quaternion-algebra.html) proves.
+**Remark (the intersection is the whole sector).** The intersection of the sector with the group of invertibles is the sector itself, so the so-called intersection carries no information. What carries information is the shape of the P-partition inside the group: the group of invertibles is the sector plus the punctured cone, and the cone is the boundary. **The regular sector does not select the invertibles; the invertibles are everything but the origin, and the sector is that same set with a cone removed.** The cone itself lies inside the invertibles, as [The P-Degenerate Sector of the Quaternion Algebra](the-p-degenerate-sector-of-the-quaternion-algebra.html) proves.
 
 **Theorem (the intersection with the spectral strata).** The real axis minus the origin is contained in $\mathcal T^+$. The non-real quaternions meet both components. The origin is in neither.
 
@@ -93,7 +93,7 @@ $$
 
 *Proof.* The conjugation reverses the sign of $\vec q$ and fixes $q_t$, so it preserves $P$; the negation multiplies $P$ by the square of the scalar; an inner automorphism fixes $q_t$ and rotates $\vec q$, preserving its modulus, hence $P$. For the failure, take $\tilde u=\tfrac1{\sqrt2}(e_t+\vec e_x)$ and $\tilde q=e_t$: then $\tilde u\tilde q=\tilde u$ has $P=0$, so the timelike element is sent to the cone. Verified numerically.
 
-**Corollary (the compact part of the isometry group is inside the units).** The inner automorphisms of the algebra, that is the group of the versors modulo $\{\pm e_t\}$, act on the sector as rotations of the vector subspace and are the compact part of $O(1,3)$.
+**Corollary (the compact part of the isometry group is inside the invertibles).** The inner automorphisms of the algebra, that is the group of the versors modulo $\{\pm e_t\}$, act on the sector as rotations of the vector subspace and are the compact part of $O(1,3)$.
 
 *Proof.* The proposition and the identification of the inner automorphism group with $SO(3)$, which is [Quaternion Automorphisms and Derivations](quaternion-automorphisms-and-derivations.html). **The versors act on the sector by rotations around the scalar axis and by nothing else; the boosts are not inner, and this is the whole content of the Cartan decomposition of the group of the form.**
 
@@ -121,7 +121,7 @@ It has exactly two components: the timelike component, the union of the two conv
 
 Each component carries the hyperbolic reading of its sign: the positive sheet of $P=1$ is a model of $H^3$, the negative level $P=-1$ a model of $dS_3$, and the radial map $\tilde q\mapsto\tilde q/\sqrt{\lvert P\rvert}$ is a strong deformation retraction onto the level set of the sign.
 
-The isometry group is $O(1,3)$, transitive on each sheet with stabiliser $O(3)$ on the positive one; the sector is contained in the group of units with $N\geq\lvert P\rvert>0$; the real axis minus the origin is entirely timelike and the non-real stratum meets both components.
+The isometry group is $O(1,3)$, transitive on each sheet with stabiliser $O(3)$ on the positive one; the sector is contained in the group of invertibles with $N\geq\lvert P\rvert>0$; the real axis minus the origin is entirely timelike and the non-real stratum meets both components.
 
 The N-regular sector is the complement of a point, connected, contractible, with the compact group $O(4)$; the comparison isolates the difference between a definite cut and an indefinite one.
 

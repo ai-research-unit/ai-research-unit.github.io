@@ -85,7 +85,7 @@ $$
 \delta_{\mu\nu}=\frac{\mathrm{Sc}(e_\mu e_\nu)}{\mathrm{Sc}(e_\mu e_\mu)} ,
 $$
 
-because $\mathrm{Sc}(e_\mu e_\mu)=\varepsilon_\mu$ and $\varepsilon_\mu^2=1$. Nothing on the right is a convention: the scalar part of a product of units is computed from the multiplication. The identity metric is therefore not an axiom, an input or a simplification. It is the multiplication table, read once.
+because $\mathrm{Sc}(e_\mu e_\mu)=\varepsilon_\mu$ and $\varepsilon_\mu^2=1$. Nothing on the right is a convention: the scalar part of a product of invertibles is computed from the multiplication. The identity metric is therefore not an axiom, an input or a simplification. It is the multiplication table, read once.
 
 ### The order is inverted, and that is the gain
 

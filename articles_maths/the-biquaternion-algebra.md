@@ -120,7 +120,7 @@ The centre is therefore a proper subspace, and it is the scalar line: §*The Sca
 
 **Proof.** By the propositions above the multiplication is a $\mathbb{C}$-bilinear, associative, unital binary operation on the $\mathbb{C}$-vector space $\mathbb{B}$, which is the definition of an algebra over the commutative ring $\mathbb{C}$ in the broad sense of *Algebras: A General Introduction*; the two hypotheses the corpus adds to that sense, associativity and an identity, are the subjects of *Associative Algebras* and *Unital Algebras* and both hold. The dimension is four on the basis $e_t, \vec e_x, \vec e_y, \vec e_z$, and $\vec e_x \vec e_y \neq \vec e_y \vec e_x$.
 
-Every general statement about associative unital algebras is therefore available for $\mathbb{B}$: the two-sided ideals, the centre, the group of units and the opposite algebra. The rest of this article reads off the ones the multiplication alone decides.
+Every general statement about associative unital algebras is therefore available for $\mathbb{B}$: the two-sided ideals, the centre, the group of invertibles and the opposite algebra. The rest of this article reads off the ones the multiplication alone decides.
 
 ## The Multiplication as a Scalar Extension
 

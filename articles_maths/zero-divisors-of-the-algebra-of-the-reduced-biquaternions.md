@@ -14,7 +14,7 @@ $$
 $$
 so its vanishing set is the union of the two lines $Q_{+}=0$ and $Q_{-}=0$ and not an irreducible quadric cone. This is the geometric form of the fact that the algebra is a direct product of two fields: a product of two fields has zero divisors, and its zero divisors are the two factors.
 
-**The results.** The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$ is the group of units.
+**The results.** The zero divisors of the multiplication are the nonzero elements of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, and they are exactly the elements of vanishing reduced norm. The two lines are the two maximal ideals; they meet only at the origin; each is closed under multiplication; and the product of an element of one line with an element of the other is zero, so the whole of one line annihilates the whole of the other. The cone is homogeneous, and each of its two components is of real dimension two; the complement of the cone in $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$ is the group of invertibles.
 
 ## The Null Cone
 
@@ -88,7 +88,7 @@ so the cone together with $0$ is closed under multiplication, and the product of
 
 *Proof.* $\Pi_+^{2}=\Pi_+$, $\Pi_-^{2}=\Pi_-$ and $\Pi_+\Pi_-=0$ (*Reduced Biquaternion Space*); the products follow by bilinearity.
 
-**Remark (the cone is not an additive subgroup).** The set $\mathcal{N}\cup\{0\}$ is closed under multiplication but not under addition: $\Pi_++\Pi_-=1$, which is a unit and is not in the cone. The union of the two ideals is therefore a **union of ideals** and not an ideal, and the algebra has the two maximal ideals in place of a single maximal ideal.
+**Remark (the cone is not an additive subgroup).** The set $\mathcal{N}\cup\{0\}$ is closed under multiplication but not under addition: $\Pi_++\Pi_-=1$, which is invertible and is not in the cone. The union of the two ideals is therefore a **union of ideals** and not an ideal, and the algebra has the two maximal ideals in place of a single maximal ideal.
 
 ### The Maximal Ideals
 
@@ -110,17 +110,17 @@ and the annihilator of a nonzero element of one line is exactly the other line.
 
 *Proof.* The product vanishes by the previous theorem. If $\breve Q_{1}=Q_{1+}\Pi_+$ with $Q_{1+}\neq0$ and $\breve Q_{1}\breve Q_{2}=0$ for $\breve Q_{2}=Q_{2+}\Pi_++Q_{2-}\Pi_-$, then $\breve Q_{1}\breve Q_{2}=Q_{1+}Q_{2+}\Pi_+$ is zero only if $Q_{2+}=0$, that is $\breve Q_{2}\in\mathbb{C}\Pi_-$; the same on the other side. The annihilators are read again, with the two-sided annihilator of the structure, in *Annihilators of the Algebra of the Reduced Biquaternions*, below this article.
 
-## The Complement: the Units
+## The Complement: the Invertibles
 
-**The complement of the null cone in the nonzero elements is the group of units, and it is connected.**
+**The complement of the null cone in the nonzero elements is the group of invertibles, and it is connected.**
 
-**Theorem (the complement).** The complement of the cone is the group of units,
+**Theorem (the complement).** The complement of the cone is the group of invertibles,
 $$
 \boxed{\; {\mathbb{B}_{\mathrm{red}}}^{\times}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\}=\mathbb{B}_{\mathrm{red}}\setminus\bigl(\mathcal{N}\cup\{0\}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times} \;},
 $$
 and it is **connected**.
 
-*Proof.* The criterion and the isomorphism are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; an element is a unit iff $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ iff it is outside the cone and nonzero. The set $\{N\neq0\}$ is the complement of the union of two real two-planes, and in the idempotent coordinates it is the pair $(Q_{+},Q_{-})$ with $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0$, that is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, a product of two punctured complex planes; each punctured plane is connected and a product of connected sets is connected.
+*Proof.* The criterion and the isomorphism are *Norm and Invertibility in the Algebra of the Reduced Biquaternions*; an element is invertible iff $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ iff it is outside the cone and nonzero. The set $\{N\neq0\}$ is the complement of the union of two real two-planes, and in the idempotent coordinates it is the pair $(Q_{+},Q_{-})$ with $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0$ and $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0$, that is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, a product of two punctured complex planes; each punctured plane is connected and a product of connected sets is connected.
 
 **Remark (the algebra is not a division algebra).** The cone is not empty and not the origin; the two lines contain nonzero elements, so the algebra **has zero divisors**, is **not a field** and is **not a division algebra** (*Introduction to the Algebra of the Reduced Biquaternions*). The absence of division is read from the two lines and is the geometric content of the failure of the algebra to be simple.
 
@@ -132,7 +132,7 @@ $$
 $$
 the union of the two idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$ with the origin removed, each a complex line of real dimension two, each spanned over $\mathbb{R}$ by an idempotent and the imaginary multiple of an idempotent, and the two meeting only at the origin. The cone is **degenerate** and reducible: the reduced norm factors, $\langle \breve Q\rangle_{\mathrm{ts}}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown})=Q_{+}Q_{-}$, and the cone is the union of the two hyperplanes $Q_{+}=0$ and $Q_{-}=0$, not an irreducible quadric. The zero-divisor set is the **complex** null cone, the set where both $\mathrm{Re}N$ and $\mathrm{Im}N$ vanish; the real quadric $\{\mathrm{Re}N=0\}$ is larger and is not the zero-divisor set.
 
-Each line is closed under multiplication, $(Q_{+}\Pi_+)(Q_{+}'\Pi_+)=(Q_{+}Q_{+}')\Pi_+$ and $(Q_{-}\Pi_-)(Q_{-}'\Pi_-)=(Q_{-}Q_{-}')\Pi_-$, and the product of two elements of different lines vanishes, $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$; the two lines are the two **maximal ideals** of the algebra, they are the annihilators of each other, and the algebra is not a field and not a division algebra. The complement of the cone in the nonzero elements is the group of units,
+Each line is closed under multiplication, $(Q_{+}\Pi_+)(Q_{+}'\Pi_+)=(Q_{+}Q_{+}')\Pi_+$ and $(Q_{-}\Pi_-)(Q_{-}'\Pi_-)=(Q_{-}Q_{-}')\Pi_-$, and the product of two elements of different lines vanishes, $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$; the two lines are the two **maximal ideals** of the algebra, they are the annihilators of each other, and the algebra is not a field and not a division algebra. The complement of the cone in the nonzero elements is the group of invertibles,
 $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
@@ -149,11 +149,11 @@ and it is connected, the punctured complex planes being connected.
 | $\mathrm{Re}N=q_{\blacktriangle}^{2}-q'^{2}_{\blacktriangle}-q_{\blacktriangledown}^{2}+q'^{2}_{\blacktriangledown}$, $\mathrm{Im}N=2(q_{\blacktriangle}q'_{\blacktriangle}-q_{\blacktriangledown}q'_{\blacktriangledown})$ | the real and imaginary parts of the reduced norm |
 | $\mathbb{C}\Pi_+$, $\mathbb{C}\Pi_-$ | the two maximal ideals |
 | $(Q_{+}\Pi_+)(Q_{-}\Pi_-)=0$ | the mutual annihilation of the two lines |
-| ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}$ | the complement of the cone, the group of units |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}=\{\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}$ | the complement of the cone, the group of invertibles |
 
 ## Further Reading
 
-- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), above this article in this category, for the criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ and the group of units.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), above this article in this category, for the criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ and the group of invertibles.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the reduced norm, its multiplicativity and the complex quadrics of the four forms.
 - [Introduction to the Algebra of the Reduced Biquaternions](introduction-to-the-algebra-of-the-reduced-biquaternions.html), above this article, for the maximal ideals and the absence of division.
 - [Annihilators of the Algebra of the Reduced Biquaternions](annihilators-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the annihilator of an element and the two-sided annihilator of the structure.

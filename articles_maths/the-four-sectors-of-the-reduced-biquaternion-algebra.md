@@ -47,9 +47,9 @@ $$
 $$
 Q_+=0,\qquad Q_-=0,\qquad Q_+=Q_-.
 $$
-It is open and dense, connected, of complex dimension two and real dimension four. Its elements are units with distinct eigenvalues; each has a unique two-term spectral decomposition and the eigenbasis $(\Pi_+,\Pi_-)$.
+It is open and dense, connected, of complex dimension two and real dimension four. Its elements are invertible with distinct eigenvalues; each has a unique two-term spectral decomposition and the eigenbasis $(\Pi_+,\Pi_-)$.
 
-*Proof.* The complement is open. The three lines are closed of real codimension two and empty interior, so the complement is dense and connected, the complement of a closed subset of real codimension at least two in a connected manifold being connected. The complex dimension is two because the algebra has complex dimension two and the removed set has complex dimension one. The elements are units because both idempotent coordinates are nonzero, and the eigenvalues are distinct by the second condition. The spectral decomposition and the eigenbasis are those of *Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra*, §*The Spectral Criterion* and §*The Eigenspaces*.
+*Proof.* The complement is open. The three lines are closed of real codimension two and empty interior, so the complement is dense and connected, the complement of a closed subset of real codimension at least two in a connected manifold being connected. The complex dimension is two because the algebra has complex dimension two and the removed set has complex dimension one. The elements are invertible because both idempotent coordinates are nonzero, and the eigenvalues are distinct by the second condition. The spectral decomposition and the eigenbasis are those of *Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra*, §*The Spectral Criterion* and §*The Eigenspaces*.
 
 **Remark (generic but not closed under multiplication).** The complement of $\Sigma_{11}$ is a finite union of complex lines, so $\Sigma_{11}$ is the generic sector. It is not closed under multiplication: the factors $\tfrac32-\tfrac12 j$ and $\tfrac32+\tfrac12 j$ lie in $\Sigma_{11}$, and their product is the scalar $2$, which lies in $\Sigma_{10}$.
 
@@ -77,13 +77,13 @@ the union of the two full lines, which contains the origin $\Sigma_{00}$.
 $$
 \Sigma_{10}=\mathbb{C}^{\times}\cdot1=\{Q_\blacktriangle\neq0,\ Q_\blacktriangledown=0\},
 $$
-of complex dimension one and real dimension two, and it is connected. Its elements are units with the repeated eigenvalue $Q_\blacktriangle$; the minimal polynomial is $X-Q_\blacktriangle$; the spectral decomposition is the one-term writing $Q_\blacktriangle1$; the eigenspace is all of $\mathbb{B}_{\mathrm{red}}$; and every element is semisimple, not defective. Its closure is the full scalar line
+of complex dimension one and real dimension two, and it is connected. Its elements are invertible with the repeated eigenvalue $Q_\blacktriangle$; the minimal polynomial is $X-Q_\blacktriangle$; the spectral decomposition is the one-term writing $Q_\blacktriangle1$; the eigenspace is all of $\mathbb{B}_{\mathrm{red}}$; and every element is semisimple, not defective. Its closure is the full scalar line
 $$
 \overline{\Sigma_{10}}=\mathbb{C}\cdot1=\{Q_+=Q_-\},
 $$
 which contains the origin $\Sigma_{00}$.
 
-*Proof.* The conditions $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$. Conversely, a nonzero scalar has $Q_+=Q_-=Q_\blacktriangle\neq0$. The reduced norm is $Q_\blacktriangle^{2}\neq0$, so the element is a unit. The spectrum is the singleton $\{Q_\blacktriangle\}$, the characteristic polynomial is $(X-Q_\blacktriangle)^{2}$, and the minimal polynomial is $X-Q_\blacktriangle$, which is squarefree. The eigenspace is the whole algebra because $\breve Q=Q_\blacktriangle1$ acts as the scalar $Q_\blacktriangle$. The closure is the full line, the origin included.
+*Proof.* The conditions $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$. Conversely, a nonzero scalar has $Q_+=Q_-=Q_\blacktriangle\neq0$. The reduced norm is $Q_\blacktriangle^{2}\neq0$, so the element is invertible. The spectrum is the singleton $\{Q_\blacktriangle\}$, the characteristic polynomial is $(X-Q_\blacktriangle)^{2}$, and the minimal polynomial is $X-Q_\blacktriangle$, which is squarefree. The eigenspace is the whole algebra because $\breve Q=Q_\blacktriangle1$ acts as the scalar $Q_\blacktriangle$. The closure is the full line, the origin included.
 
 **Remark (no Jordan part).** In the biquaternion algebra $\Sigma_{10}$ splits into a scalar line and a Jordan part; here the repeated eigenvalue forces the element to be scalar, so the Jordan part is empty.
 
@@ -139,7 +139,7 @@ $$
 $$
 All four are nonempty.
 
-The generic sector $\Sigma_{11}$ is the complement of the three complex lines $Q_+=0$, $Q_-=0$ and $Q_+=Q_-$; it is open and dense, of complex dimension two, and consists of the units with distinct eigenvalues. The sector $\Sigma_{01}$ is the union of the two punctured hyperplanes $\mathbb{C}^{\times}\Pi_+$ and $\mathbb{C}^{\times}\Pi_-$, of complex dimension one, with two connected components; it consists of the zero divisors with distinct eigenvalues. The sector $\Sigma_{10}$ is the connected punctured scalar line $\mathbb{C}^{\times}\cdot1$, of complex dimension one; the sector $\Sigma_{00}$ is the origin.
+The generic sector $\Sigma_{11}$ is the complement of the three complex lines $Q_+=0$, $Q_-=0$ and $Q_+=Q_-$; it is open and dense, of complex dimension two, and consists of the invertibles with distinct eigenvalues. The sector $\Sigma_{01}$ is the union of the two punctured hyperplanes $\mathbb{C}^{\times}\Pi_+$ and $\mathbb{C}^{\times}\Pi_-$, of complex dimension one, with two connected components; it consists of the zero divisors with distinct eigenvalues. The sector $\Sigma_{10}$ is the connected punctured scalar line $\mathbb{C}^{\times}\cdot1$, of complex dimension one; the sector $\Sigma_{00}$ is the origin.
 
 The dimensions are $2,1,1,0$ over $\mathbb{C}$ and $4,2,2,0$ over $\mathbb{R}$. The closures are $\overline{\Sigma_{11}}=\mathbb{B}_{\mathrm{red}}$, $\overline{\Sigma_{01}}=\Sigma_{01}\cup\Sigma_{00}$, $\overline{\Sigma_{10}}=\Sigma_{10}\cup\Sigma_{00}$ and $\overline{\Sigma_{00}}=\Sigma_{00}$; the partition is a stratification.
 

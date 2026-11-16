@@ -62,7 +62,7 @@ $$
 \gamma=\frac{1}{\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}} .
 $$
 
-So the Galilean flow element is not a unit element, and its norm is the reciprocal square of the Lorentz factor rather than $-c^{2}$. The block's relativistic articles normalise the flow to $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the element they use is
+So the Galilean flow element is not invertible element, and its norm is the reciprocal square of the Lorentz factor rather than $-c^{2}$. The block's relativistic articles normalise the flow to $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$, and the element they use is
 
 $$
 \tilde V_{\Phi,\mathrm{rel}}=\gamma\,\tilde V_\Phi=i c\gamma\,e_t+\gamma\vec v .

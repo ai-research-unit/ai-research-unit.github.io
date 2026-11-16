@@ -10,7 +10,7 @@ $$
 
 **The predicates are the ones the partition entry named.** The norm $N$ asks whether the element has an invariant magnitude. The vector square $B^{2}$ asks whether its two eigenvalues are separated. On this stratum the first answer is yes and the second is no, and the two answers do not conflict: on the cone the second predicate fails by hypothesis, and the first then reduces to the single condition $Q_t\neq0$.
 
-**The first claim is that invertibility and spectral separation are independent.** An element here is a unit — it has an inverse, it generates a flow, it admits a logarithm and a polar decomposition — and it has no second eigenvalue. Everything the algebra does with units it still does here; what fails is the one operation that needs two distinct eigenvalues, namely the eigenbasis.
+**The first claim is that invertibility and spectral separation are independent.** An element here is invertible — it has an inverse, it generates a flow, it admits a logarithm and a polar decomposition — and it has no second eigenvalue. Everything the algebra does with units it still does here; what fails is the one operation that needs two distinct eigenvalues, namely the eigenbasis.
 
 **The second claim is that this stratum has two faces and the predicates cannot see the difference.** The scalar line $\tilde Q=Q_te_t$ is semisimple: the eigenvalue is repeated and the element is diagonalisable. The Jordan part $\tilde Q=Q_te_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ is defective: the eigenvalue is repeated and the element is a single Jordan block. Both satisfy $N\neq0$ and $B^{2}=0$. The split is by the minimal polynomial, and it is the one place in the arrangement where a sector's own interior matters more than its boundary.
 
@@ -36,7 +36,7 @@ $$
 | the two predicates, the independence of the cones and the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the Peirce corners, the corner rule and the off-diagonal nilpotents | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the modulus, the unit factor and the polar word on the whole N-regular part | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
-| the multiplicative norm, the unit group and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the multiplicative norm, the group of invertibles and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the rank of left and right multiplication, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the exponential and the logarithm in the degenerate regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | the exponential as a Fourier kernel, the root supplied by the element and the Hermitian norm of the flow | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html) |
@@ -55,7 +55,7 @@ $$
 \mathcal N=\{N=0\}.
 $$
 
-**Five descriptions coincide.** An element of the stratum is: a unit with $B^{2}=0$; an element with $B^{2}=0$ and a non-zero scalar part; a scalar times a unipotent, $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; a non-zero complex multiple of a unipotent element; and a unit whose two eigenvalues coincide at $Q_t$.
+**Five descriptions coincide.** An element of the stratum is: An invertible element with $B^{2}=0$; an element with $B^{2}=0$ and a non-zero scalar part; a scalar times a unipotent, $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; a non-zero complex multiple of a unipotent element; and an invertible element whose two eigenvalues coincide at $Q_t$.
 
 **The dimension drops by two from the open stratum.** The stratum has complex dimension three and real dimension six, against four and eight for $\Sigma_{11}$. It is Zariski-open inside the cone $\mathcal S$, it is connected, and it is a cone with its apex removed.
 
@@ -131,7 +131,7 @@ $$
 
 **The $1$ is a normalisation, not an eigenvalue.** It is the coefficient of $\vec\Upsilon$ in the sum $\tilde Q=Q_te+1\cdot\vec\Upsilon+0\cdot\vec X+Q_tf$, and it can be changed by rescaling the corner generator while the element stays fixed.
 
-**The form is gauge-invariant and the gauge is real.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by units of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
+**The form is gauge-invariant and the gauge is real.** The pair $(e,f)$ and the corner vector $\vec X$ are not functions of $\tilde Q$; the four products above are. Over forty random conjugations by invertibles of norm one, the transported Peirce form closed to $5.1\times10^{-14}$.
 
 ### The Powers, the Inverse and the Flow
 
@@ -178,7 +178,7 @@ B^{2}=0\ \Longrightarrow\ N=Q_t^{2},
 \text{so on }\mathcal S:\quad N\neq0\iff Q_t\neq0 .
 $$
 
-**Norm-regularity becomes a condition on the scalar part.** On the cone, invertibility is the survival of the scalar part and nothing else. That is why the stratum is described by two equations rather than by three: the element is a unit exactly when the scalar part is non-zero, and the scalar part is the eigenvalue.
+**Norm-regularity becomes a condition on the scalar part.** On the cone, invertibility is the survival of the scalar part and nothing else. That is why the stratum is described by two equations rather than by three: the element is invertible exactly when the scalar part is non-zero, and the scalar part is the eigenvalue.
 
 **The discriminant of the characteristic polynomial vanishes on the stratum and nowhere else on the cone.**
 
@@ -298,7 +298,7 @@ $$
 \tilde Q^{-1}=Q_t^{-1}e_t,
 $$
 
-so the line is closed under multiplication and inversion, and it is a subgroup of the unit group isomorphic to $\mathbb{C}^{\times}$. It is the only part of the stratum that is.
+so the line is closed under multiplication and inversion, and it is a subgroup of the group of invertibles isomorphic to $\mathbb{C}^{\times}$. It is the only part of the stratum that is.
 
 ### The Two-Term Writing Is Not Unique
 
@@ -458,7 +458,7 @@ $$
 
 ### The Two Annihilators
 
-**The element is a unit, so neither multiplication has a kernel as an operator on the algebra.**
+**The element is invertible, so neither multiplication has a kernel as an operator on the algebra.**
 
 $$
 \ker L_{\tilde Q}=\ker R_{\tilde Q}=\{0\},\qquad
@@ -565,7 +565,7 @@ $$
 \tilde Q_2\tilde Q=(1-2i)e_t+(1+i)\vec e_x+(1+i)\vec e_y+2\vec e_z,
 $$
 
-with $B^{2}(\tilde Q_2)=B^{2}(\tilde Q)=0$, $N(\tilde Q_2)=N(\tilde Q)=1$, and $B^{2}(\tilde Q_2\tilde Q)=4+4i$, $N=1$. Both factors are defective, their product is a unit with two distinct eigenvalues, and the norm is preserved throughout — the product never approaches the null cone.
+with $B^{2}(\tilde Q_2)=B^{2}(\tilde Q)=0$, $N(\tilde Q_2)=N(\tilde Q)=1$, and $B^{2}(\tilde Q_2\tilde Q)=4+4i$, $N=1$. Both factors are defective, their product is invertible with two distinct eigenvalues, and the norm is preserved throughout — the product never approaches the null cone.
 
 ### The Flow Stays and the Product Leaves
 
@@ -879,7 +879,7 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 ## Summary
 
 - $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$ is the spectral cone minus the null cone: connected, of complex dimension three and real dimension six, a cone with its apex removed, not simply connected.
-- Its elements are exactly the units with a repeated eigenvalue $Q_t$, and on the cone $N=Q_t^{2}$, $\Delta=-4B^{2}$.
+- Its elements are exactly the invertibles with a repeated eigenvalue $Q_t$, and on the cone $N=Q_t^{2}$, $\Delta=-4B^{2}$.
 - The stratum splits into the semisimple scalar line $\Sigma_{10}^{\mathrm{s}}$ and the defective Jordan part $\Sigma_{10}^{\mathrm{J}}$; the split is by the minimal polynomial and is invisible to the two predicates.
 - The scalar line is exactly the centre minus the origin: $L_{\tilde Q}=R_{\tilde Q}=Q_t\mathrm{id}$, the eigenspace is the whole algebra, and every two-term writing is non-unique.
 - On the Jordan part the centraliser is the dual numbers, its only idempotents are $0$ and $e_t$, and no non-trivial Peirce decomposition is attached to the element.
@@ -893,7 +893,7 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 
 ### What the Reader Should Retain
 
-**Invertibility and spectral separation are independent.** An element can be a unit, generate a flow, admit a polar word, and have no second eigenvalue. The eigenbasis is the one operation that needs two.
+**Invertibility and spectral separation are independent.** An element can be an invertible element, generate a flow, admit a polar word, and have no second eigenvalue. The eigenbasis is the one operation that needs two.
 
 **A sector is a pair of truth values and not one behaviour.** This stratum contains both the element that does nothing and the element that cannot be diagonalised, and the two predicates cannot tell them apart. Only the minimal polynomial can.
 
@@ -929,4 +929,4 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 
 **Mathematics.** [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) is the source; [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) owns the flag and the Jordan basis, and [The Spectrum](../articles_maths/the-spectrum.html) owns the discriminant and the repeated eigenvalue.
 
-**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word that survives here, together with the exponential and its degenerate boundary. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the boost rotor used in §*The Rest Frame Is the Vertex of the Mass Shell*. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word that survives here, together with the exponential and its degenerate boundary. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the boost rotor used in §*The Rest Frame Is the Vertex of the Mass Shell*. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.

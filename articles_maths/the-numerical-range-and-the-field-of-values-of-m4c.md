@@ -58,7 +58,7 @@ h_{W(A)}(\alpha)=\lambda_{\max}\bigl(\operatorname{Re}(e^{-i\alpha}A)\bigr),
 \operatorname{Re}M=\tfrac12(M+M^*) .
 $$
 
-**Proof.** For a unit $x$,
+**Proof.** For an invertible element $x$,
 
 $$
 \operatorname{Re}\bigl(e^{-i\alpha}x^*Ax\bigr)

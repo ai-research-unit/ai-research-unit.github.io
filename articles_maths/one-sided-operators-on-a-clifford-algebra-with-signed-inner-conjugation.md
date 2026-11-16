@@ -46,13 +46,13 @@ $$
 
 ## The Inverse Right Multiplication and the Pairing
 
-**Definition.** For a unit $x$ the **inverse right multiplication** is
+**Definition.** For an invertible element $x$ the **inverse right multiplication** is
 
 $$
 R_{x^{-1}}:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad R_{x^{-1}}(y)=y\,x^{-1}.
 $$
 
-It is the right one-sided operator $\mathrm P^{c}_x$ of *One-Sided Operators on a Clifford Algebra* with $c$ the inverse, which is an anti-automorphism of the unit group, $c(xz)=c(z)c(x)$; the operator is therefore available only on the units.
+It is the right one-sided operator $\mathrm P^{c}_x$ of *One-Sided Operators on a Clifford Algebra* with $c$ the inverse, which is an anti-automorphism of the group of invertibles, $c(xz)=c(z)c(x)$; the operator is therefore available only on the invertibles.
 
 **Proposition (composition, order preserved).** For units $x,z$ one has
 
@@ -155,7 +155,7 @@ The sign is visible only in the pairing and only on the quadratic space. For a v
 | $\varepsilon_x=(-1)^{k}$ | Parity sign of a homogeneous element, $\alpha(x)=\varepsilon_xx$ |
 | $L_x(y)=xy$ | Plain left multiplication |
 | $\Lambda^{\alpha}_x(y)=\alpha(x)y$ | Signed left multiplication, $\Lambda^{\alpha}_x=\varepsilon_xL_x=\alpha L_x\alpha$ |
-| $R_{x^{-1}}(y)=yx^{-1}$ | Inverse right multiplication, defined on the units |
+| $R_{x^{-1}}(y)=yx^{-1}$ | Inverse right multiplication, defined on the invertibles |
 | $\Lambda^{\alpha}_{xz}=\Lambda^{\alpha}_x\Lambda^{\alpha}_z$, $R_{x^{-1}}R_{z^{-1}}=R_{(xz)^{-1}}$ | Composition laws |
 | $\Lambda^{\alpha}_xR_{x^{-1}}=\mathrm{Ad}^{\alpha}_x$, $L_xR_{x^{-1}}=\mathrm{Ad}_x$ | The two pairings |
 | $\Lambda^{\alpha}_uR_{a^{-1}}=\rho_a$, $L_uR_{a^{-1}}=-\rho_a$ | The reflection and its negative on a vector $a$ |

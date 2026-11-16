@@ -88,7 +88,7 @@ The first row and the first column reproduce the basis, since $1$ is the identit
 
 ### The Rotation Matrix
 
-On the unit circle the component product becomes a rotation. A unit has the polar form $u = \cos\theta + i\sin\theta$, so its two components are $(u^0,u^1) = (\cos\theta,\sin\theta)$ and its matrix is
+On the unit circle the component product becomes a rotation. An invertible element has the polar form $u = \cos\theta + i\sin\theta$, so its two components are $(u^0,u^1) = (\cos\theta,\sin\theta)$ and its matrix is
 
 $$ \boxed{\;\mathsf{M}_2(u) = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix} = R_\theta\;},
 $$
@@ -168,7 +168,7 @@ $$
 
 Both restrictions are **positive definite**, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two signatures agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
 
-### The Unit Criterion in Coordinates
+### The Invertibility Criterion in Coordinates
 
 **Theorem.** A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then
 
@@ -177,7 +177,7 @@ $$
 
 **Proof.** The criterion and the formula are those of *Complex Norm and Invertibility*; in coordinates the inverse of the pair $(q,q')$ is $(q,-q')/(q^2+q'^2)$.
 
-**Example.** For $Q = (3,4)$ the norm is $\langle Q\rangle_{*} = 9+16 = 25$, so $Q$ is a unit and $Q^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.
+**Example.** For $Q = (3,4)$ the norm is $\langle Q\rangle_{*} = 9+16 = 25$, so $Q$ is invertible and $Q^{-1} = (3,-4)/25 = (0.12, -0.16)$. The product check $(3,4)(0.12,-0.16) = (0.36+0.64, -0.48+0.48) = (1,0) = 1$ is exact.
 
 ## Summary
 
@@ -198,7 +198,7 @@ The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive
 | $Q = \begin{pmatrix} Q_0 \\ Q_1 \end{pmatrix}$, $Q^{\mathsf{T}}$ | the column and the row |
 | $(QQ_1)_\mu = (q q_1-q' q'_1, q q'_1+q' q_1)$ | the product in components |
 | $\mathsf{M}_2(Q) = qI + q'J$ | the regular matrix acting on the column |
-| $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of a unit $u = \cos\theta + i\sin\theta$ |
+| $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of an invertible element $u = \cos\theta + i\sin\theta$ |
 | $\bar Q \leftrightarrow (q,-q')$ | conjugation in coordinates |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q_1=0$ and imaginary axis $Q_0=0$ |
 | $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |

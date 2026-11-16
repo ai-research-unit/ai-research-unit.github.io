@@ -51,7 +51,7 @@ $$
 
 **Proposition (unitaries exist only in the measure algebra).** The unitary group $\mathcal{U} = \{f : f^*\!*f = f*\!f^* = 1\}$ is nonempty if and only if $\mathcal{A}$ has an identity, that is if and only if $G$ is discrete; then the point masses are unitary, $\delta_x^* = \delta_{x^{-1}}$ and $\delta_x^*\!*\delta_x = \delta_e$, and every unitary $f$ satisfies $\|f\|_1\geq1$.
 
-**Proof.** A unitary element is invertible, so its existence forces a unit; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$.
+**Proof.** A unitary element is invertible, so its existence forces an invertible element; for a non-discrete group $\mathcal{A}$ has no identity and no invertible elements. For discrete $G$ the identity is $\delta_e$ and $\delta_x^*\!*\delta_x = \delta_{x^{-1}}*\delta_x = \delta_e$, so the point masses are unitary; a general unitary has $\|f\|_1\|f\|_1 = \|f^*\|_1\|f\|_1\geq\|f^*\!*f\|_1 = \|\delta_e\|_1 = 1$.
 
 **Theorem (the positive cone).** The set
 

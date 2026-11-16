@@ -149,7 +149,7 @@ $$
 $$
 a versor.
 
-*Proof.* The powers of $\mathrm{ad}_{\vec u}$ on $V$ satisfy $\mathrm{ad}_{\vec u}^3=-\mathrm{ad}_{\vec u}$, because $\vec u\times(\vec u\times(\vec u\times\vec v))=-\vec u\times\vec v$ for a unit $\vec u$; summing the series by the parity of the powers gives the display. In the algebra the powers of $t\vec u$ satisfy $(t\vec u)^2=-t^2e_t$ and the same parity argument gives $\cos t+\vec u\sin t$. Verified numerically against the series.
+*Proof.* The powers of $\mathrm{ad}_{\vec u}$ on $V$ satisfy $\mathrm{ad}_{\vec u}^3=-\mathrm{ad}_{\vec u}$, because $\vec u\times(\vec u\times(\vec u\times\vec v))=-\vec u\times\vec v$ for an invertible element $\vec u$; summing the series by the parity of the powers gives the display. In the algebra the powers of $t\vec u$ satisfy $(t\vec u)^2=-t^2e_t$ and the same parity argument gives $\cos t+\vec u\sin t$. Verified numerically against the series.
 
 **Proposition (the rotor).** For every versor $\tilde r=\cos\theta+\vec u\sin\theta$ with $\vec u$ a unit vector, the conjugation
 $$

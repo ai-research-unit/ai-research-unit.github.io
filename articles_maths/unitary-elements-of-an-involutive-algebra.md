@@ -2,11 +2,11 @@
 
 ## Introduction
 
-An involution of an algebra carries an element $u$ to its **adjoint** $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the **unitary elements**. They form a group under multiplication, they sit inside the group of units, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the **self-adjoint** elements, with $h^* = h$, and the **anti-Hermitian** elements, with $k^* = -k$ — and every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part.
+An involution of an algebra carries an element $u$ to its **adjoint** $u^* = \sigma(u)$, and the elements whose adjoint is their inverse, $u^*u = uu^* = 1$, are the **unitary elements**. They form a group under multiplication, they sit inside the group of invertibles, and they are the algebraic group that an involution produces: the solutions of the quadratic equation $u^*u = 1$. Two companion objects live beside them — the **self-adjoint** elements, with $h^* = h$, and the **anti-Hermitian** elements, with $k^* = -k$ — and every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part.
 
-This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the units, and the relation between a unitary and its self-adjoint part. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the anti-Hermitian part, its Lie algebra, the tangent space at the identity and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, in *Anti-symmetric Algebras*; the self-adjoint part and the symmetrised product are *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
+This article develops the unitary elements, the group they form as the fixed subgroup of an order-two automorphism of the invertibles, and the relation between a unitary and its self-adjoint part. The involution on the elements and the decomposition $A = A^+ \oplus A^-$ are *Involutive Algebras*; the anti-Hermitian part, its Lie algebra, the tangent space at the identity and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, in *Anti-symmetric Algebras*; the self-adjoint part and the symmetrised product are *The Self-Adjoint Part of an Algebra*, in *Symmetric Algebras*; and the forms, the adjoint involution that a form defines and the orthogonal and unitary groups of a form are Part II and *Hilbert Algebras*, which own them.
 
-Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are **self-adjoint** and the negated elements $A^- = \{k : k^* = -k\}$ are **anti-Hermitian**; the group of units is $A^\times$, and the group of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$.
+Throughout, $k$ is a field of characteristic not two, $A$ is a unital associative $k$-algebra, and $\sigma$ is an involution of $A$; the image of an element is written $u^* = \sigma(u)$, so that $(uv)^* = v^*u^*$ and $(u^*)^* = u$. The fixed elements $A^+ = \{h : h^* = h\}$ are **self-adjoint** and the negated elements $A^- = \{k : k^* = -k\}$ are **anti-Hermitian**; the group of invertibles is $A^\times$, and the group of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$.
 
 ## The Unitary Elements
 
@@ -20,9 +20,9 @@ $$
 
 The set of unitary elements is written $\mathrm{U}(A) = \mathrm{U}(A,\sigma)$, and an element of $\mathrm{U}(A)$ is also called a **unitary** of $(A,\sigma)$.
 
-**Proposition.** An element $u$ is unitary if and only if it is a unit and $u^* = u^{-1}$; every unitary is a unit, $1$ is unitary, and the two equations $u^*u = 1$ and $uu^* = 1$ are equivalent when $A$ is finite-dimensional.
+**Proposition.** An element $u$ is unitary if and only if it is invertible and $u^* = u^{-1}$; every unitary is invertible, $1$ is unitary, and the two equations $u^*u = 1$ and $uu^* = 1$ are equivalent when $A$ is finite-dimensional.
 
-*Proof.* If $u^*u = 1$ and $uu^* = 1$ then $u$ has the two-sided inverse $u^*$, so $u \in A^\times$ and $u^* = u^{-1}$. Conversely if $u$ is a unit with $u^* = u^{-1}$ then both products are $1$. The two equations are the two halves of invertibility, and in finite dimension a one-sided inverse of a linear map is two-sided, so either equation suffices.
+*Proof.* If $u^*u = 1$ and $uu^* = 1$ then $u$ has the two-sided inverse $u^*$, so $u \in A^\times$ and $u^* = u^{-1}$. Conversely if $u$ is invertible with $u^* = u^{-1}$ then both products are $1$. The two equations are the two halves of invertibility, and in finite dimension a one-sided inverse of a linear map is two-sided, so either equation suffices.
 
 ### The Group
 
@@ -32,7 +32,7 @@ $$
 \mathrm{J} : A^\times \longrightarrow A^\times, \qquad \mathrm{J}(g) = (g^*)^{-1} = \sigma(g)^{-1},
 $$
 
-is an automorphism of the group of units with $\mathrm{J}^2 = \mathrm{id}$, and
+is an automorphism of the group of invertibles with $\mathrm{J}^2 = \mathrm{id}$, and
 
 $$
 \boxed{\;\mathrm{U}(A) = \{g \in A^\times : \mathrm{J}(g) = g\}\;}
@@ -42,7 +42,7 @@ is its fixed subgroup.
 
 *Proof.* The involution $\sigma$ restricts to an anti-automorphism of $A^\times$ and the inversion is an anti-automorphism of $A^\times$, so their composite $\mathrm{J}$ is an automorphism; $\mathrm{J}^2(g) = \sigma(\sigma(g)^{-1})^{-1} = \bigl(\sigma(\sigma(g))^{-1}\bigr)^{-1} = \bigl(g^{-1}\bigr)^{-1} = g$, so $\mathrm{J}$ has order two. An element is fixed by $\mathrm{J}$ exactly when $(g^*)^{-1} = g$, that is $g^* = g^{-1}$, which is the unitary condition. A fixed subgroup of an order-two automorphism is a subgroup, so $\mathrm{U}(A)$ is a subgroup of $A^\times$, containing $1$, closed under products and inverses; the closure under products can also be checked directly, $(uv)^* = v^*u^* = v^{-1}u^{-1} = (uv)^{-1}$.
 
-**Corollary.** $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\mathrm{J})$ in the sense of *Involutive Groups*, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\mathrm{J})$ is the passage from the involutive algebra to its involutive group of units. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\mathrm{J}$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.
+**Corollary.** $\mathrm{U}(A,\sigma)$ is the fixed subgroup of the involutive group $(A^\times,\mathrm{J})$ in the sense of *Involutive Groups*, and the assignment $(A,\sigma)\mapsto(\mathrm{U}(A,\sigma),\mathrm{J})$ is the passage from the involutive algebra to its involutive group of invertibles. For the trivial involution $\sigma = \mathrm{id}$ the automorphism $\mathrm{J}$ is the inversion, and $\mathrm{U}(A,\mathrm{id})$ is the set of the elements $u$ with $u^2 = 1$, which is a subgroup of $A^\times$ exactly when those elements commute pairwise.
 
 ## The Self-Adjoint Elements of a Unitary
 
@@ -66,7 +66,7 @@ into a self-adjoint and an anti-Hermitian part, which is the decomposition $A = 
 
 ### The Trivial Involution
 
-Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $\mathrm{U}(A,\mathrm{id})$ is the set of the units $u$ with $u^2 = 1$, that is the involutions of the group of units, and the anti-Hermitian part $A^- = \{k : k = -k\}$ is zero in characteristic not two. The example is the degenerate one, and it shows that the unitary group measures the involution and not the algebra.
+Let $\sigma = \mathrm{id}_A$. Then $u^* = u$, the group $\mathrm{U}(A,\mathrm{id})$ is the set of the invertibles $u$ with $u^2 = 1$, that is the involutions of the group of invertibles, and the anti-Hermitian part $A^- = \{k : k = -k\}$ is zero in characteristic not two. The example is the degenerate one, and it shows that the unitary group measures the involution and not the algebra.
 
 ### The Transpose on a Matrix Algebra
 
@@ -84,7 +84,7 @@ $$
 U(B \times B_{\mathrm{opp}}) = \{(b, b^{-1}) : b \in B^\times\} \cong B^\times ,
 $$
 
-and the unitary group of the exchange involution is the group of units of $B$.
+and the unitary group of the exchange involution is the group of invertibles of $B$.
 
 ### The Conjugate Transpose
 
@@ -92,7 +92,7 @@ Let $A = M_n(\mathbb{C})$ with the $\varsigma$-semilinear conjugate transpose $X
 
 ## Summary
 
-For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the units with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of units of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **anti-Hermitian** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of units for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the anti-Hermitian part, its Lie algebra, the tangent space and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
+For an involution $\sigma$ of $A$, written $u^* = \sigma(u)$, the **unitary elements** are those with $u^*u = uu^* = 1$, equivalently the invertibles with $u^* = u^{-1}$. They form the subgroup $\mathrm{U}(A) \leq A^\times$, which is the fixed subgroup of the order-two automorphism $\mathrm{J}(g) = (g^*)^{-1}$ of $A^\times$; this is the passage from the involutive algebra to the involutive group of invertibles of *Involutive Groups*. The **self-adjoint** elements are the fixed elements $A^+ = H(A)$ and the **anti-Hermitian** elements the negated ones $A^- = K(A)$; every unitary decomposes as $u = \tfrac12(u+u^*) + \tfrac12(u-u^*)$ into a self-adjoint and an anti-Hermitian part. The examples are the orthogonal group for the transpose, the image of $G$ for the inversion of a group algebra, the group of invertibles for the exchange involution, and the unitary group for the conjugate transpose. The involution on the elements is *Involutive Algebras*, the self-adjoint part is *The Self-Adjoint Part of an Algebra*, the anti-Hermitian part, its Lie algebra, the tangent space and the Cayley transform are *The Anti-Hermitian Part of an Algebra*, and the forms and the linear groups belong to *Hilbert Algebras* and to Part II.
 
 ## Summary of Notation
 

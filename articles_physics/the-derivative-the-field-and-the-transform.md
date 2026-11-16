@@ -35,7 +35,7 @@ $$
 
 **The letters.** The variable is $\tilde R=\sum_\mu R_\mu e_\mu$ with $R_\mu=r_\mu+ir'_\mu$, and on a four-dimensional subspace the coefficients are real or purely imaginary and the derivative with respect to them is an ordinary real derivative. The field is $\tilde\Xi$, a biquaternion-valued function of $\tilde R$. The gradient is $\tilde\nabla$, its quaternion conjugate $\tilde\nabla^{\natural}$, and the d'Alembertian $\Box$. The fundamental solution is $G_{\mathrm{fn}}$, and the Cauchy kernel is the same object read as a kernel. The two semi-derivatives of the two-sided condition are $L$ and $R$, and the coefficient function of a solution is $\Sigma$. The sector subscripts are $\Phi$ for the anti-Hermitian, material half and $\Psi$ for the Hermitian, informational half; the subspace subscripts are $H$ for the quaternion and $iH$ for the anti-quaternion subspace. The conventions are *Operator and Calculus Conventions*, and this entry uses them and defines none of them.
 
-**Boundaries.** The algebra and its conjugations are *The Element, the Six Subspaces and the Two Ledgers*; the operators are *The Operators of the Algebra*; the cone is *The Zero Divisors and the Units* and *The Topology of the Zero-Divisor Cone*; the topology of the group of units is *The Unit Group, the Cone and the Orders*; the transform theory proper is the next section, *The Harmonic Analysis: The Transform as a Change of Description*. The physical reading of the two-sided derivative is the companion *The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe*, and the external programme it records is *The Algebrodynamical Programme*. No dynamics, no action principle and no quantum postulate appear.
+**Boundaries.** The algebra and its conjugations are *The Element, the Six Subspaces and the Two Ledgers*; the operators are *The Operators of the Algebra*; the cone is *The Zero Divisors and the Invertibles* and *The Topology of the Zero-Divisor Cone*; the topology of the group of invertibles is *The Group of Invertibles, the Cone and the Orders*; the transform theory proper is the next section, *The Harmonic Analysis: The Transform as a Change of Description*. The physical reading of the two-sided derivative is the companion *The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe*, and the external programme it records is *The Algebrodynamical Programme*. No dynamics, no action principle and no quantum postulate appear.
 
 ## The Source Table
 
@@ -48,7 +48,7 @@ $$
 | the Fueter operator and its conjugate, the factorisation of the Laplacian, the componentwise system, harmonicity and the mean value, the axial extension and the affine kernel, the Fueter–Sce theorem, the power series and the Fischer decomposition | [Fueter Theory for Biquaternions](../articles_maths/fueter-theory-for-biquaternions.html) |
 | the integral, its linearity and additivity, integration by parts, the divergence theorem, the Green formulas, the fundamental solution and the representation formula, the Cauchy integral formula, the mean value property, the maximum principle, Liouville, the identity theorem, the residue theorem | [Biquaternion Integration](../articles_maths/biquaternion-integration.html) |
 | the two questions, the six subspaces in one table, the restriction of $\Box$ as the operator of the norm, the elliptic and the hyperbolic type, the null sets | [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html) |
-| the group of units, the exponential and its closed form, the group law, the failure of surjectivity, the subgroups and the real forms, the $\mathrm{U}(2)$ decomposition, the Killing form, the enlarged carrier and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ | [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html) |
+| the group of invertibles, the exponential and its closed form, the group law, the failure of surjectivity, the subgroups and the real forms, the $\mathrm{U}(2)$ decomposition, the Killing form, the enlarged carrier and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ | [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html) |
 | the exponential, the logarithm with its branch lattice, the powers and roots, the trigonometric and hyperbolic functions, the relations to the neighbouring cases | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | the Bessel functions, the orthogonal polynomials, the hypergeometric function, the gamma and zeta functions, and the Cauchy, Poisson and Green kernels that arise from the analysis | [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html) |
 
@@ -322,7 +322,7 @@ for $\tilde R_0$ inside $\Omega$ and $\tilde u_{\mathrm n}$ the unit normal of t
 
 ## The Group and the Exponential
 
-**The group.** $\mathbb{B}^{\times}$ is the group of units, a real Lie group of dimension eight. Its exponential is defined by the series, computed in closed form in the elementary-functions article, and it is a local diffeomorphism at the identity: it maps a neighbourhood of zero in the Lie algebra onto a neighbourhood of $e_t$ in the group. The norm-one subgroup
+**The group.** $\mathbb{B}^{\times}$ is the group of invertibles, a real Lie group of dimension eight. Its exponential is defined by the series, computed in closed form in the elementary-functions article, and it is a local diffeomorphism at the identity: it maps a neighbourhood of zero in the Lie algebra onto a neighbourhood of $e_t$ in the group. The norm-one subgroup
 
 $$
 \mathbb{B}^{\times}_1=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\}
@@ -440,7 +440,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ### III.1.j — The Exponential Is the Flow
 
-**The object.** The exponential from the Lie algebra to the group of units, its closed form, and its failure to be surjective onto the norm-one group.
+**The object.** The exponential from the Lie algebra to the group of invertibles, its closed form, and its failure to be surjective onto the norm-one group.
 
 **The warrant.** The exponential is a local diffeomorphism at the identity, its closed form is computed case by case, its image contains a neighbourhood of the identity and generates the connected group, and the obstruction to surjectivity is a non-semi-simple element with the repeated eigenvalue $-1$.
 
@@ -496,7 +496,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The integral carries the source.** The fundamental solution of the gradient is $\tilde R^{\natural}/\|\tilde R\|^{4}$ with distributional gradient $2\pi^{2}\delta_0e_t$; the Cauchy formula holds on the quaternion subspace and its regular case is a boundary integral alone; the mean value property, the maximum principle, Liouville's theorem and a residue theorem follow. A free field has no volume term, so strength enters only through the failure of regularity.
 
-**The exponential is the transform.** The group of units is a Lie group of dimension eight, the norm-one group of dimension six, the unit quaternions of dimension three; the exponential is a local diffeomorphism and not surjective; the Killing form has signature $(3,3)$ with radical the centre. The two real directions of the trace-free part are the rotations and the boosts, and the group of the norm modulo its centre is the Lorentz group.
+**The exponential is the transform.** The group of invertibles is a Lie group of dimension eight, the norm-one group of dimension six, the unit quaternions of dimension three; the exponential is a local diffeomorphism and not surjective; the Killing form has signature $(3,3)$ with radical the centre. The two real directions of the trace-free part are the rotations and the boosts, and the group of the norm modulo its centre is the Lorentz group.
 
 **The elementary functions are the flows written out.** Every direct function lies in $\mathbb{C}[\tilde Q]$, with an oscillatory and a nilpotent regime; the identities of one variable survive and the addition formulas of two fail; the special functions that arise from the analysis are its kernels.
 
@@ -529,7 +529,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the shift | $c$ | $\mathsf D_\lambda=\mathsf D+c\gamma_5$, $c^{2}=-\lambda$ |
 | the pseudoscalar | $\gamma_5$ | the two-sided generator of the chirality |
 | the chiral halves | $\psi_\pm$ | the two minimal left ideals $S_\pm=\mathbb{B}\tilde\Pi_\pm$ |
-| the group of units | $\mathbb{B}^{\times}$ | real dimension $8$ |
+| the group of invertibles | $\mathbb{B}^{\times}$ | real dimension $8$ |
 | the norm-one group | $\mathbb{B}^{\times}_1$ | real dimension $6$, centre $\{\pm e_t\}$ |
 | the unit quaternions | $S^{3}$ | real dimension $3$, the maximal compact subgroup |
 | the $*$-unitary group | $\mathrm{U}(2)$ | $S^{3}\cdot\mathrm{U}(1)/\{\pm(1,1)\}$ |
@@ -556,7 +556,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The signatures.** [Remarkable Subspaces and the Analysis](../articles_maths/remarkable-subspaces-and-the-analysis.html) gives the restriction table and the ellipticity criterion; [The Two Sectors: Split and the Four Bridges](the-two-sectors-split-and-the-four-bridges.html) reads the sectors as the two halves of the physical world.
 
-**The group.** [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html) gives the exponential, the subgroups, the real forms and the Killing form; [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) is the topology of the same group; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) reads the norm-one group as the group of the interval.
+**The group.** [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html) gives the exponential, the subgroups, the real forms and the Killing form; [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) is the topology of the same group; [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) reads the norm-one group as the group of the interval.
 
 **The functions.** [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) computes the exponential, the logarithm with its lattice and the trigonometric functions; [Biquaternion Higher Special Functions](../articles_maths/biquaternion-higher-special-functions.html) collects the kernels and the functions defined by series.
 

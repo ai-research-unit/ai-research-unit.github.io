@@ -90,7 +90,7 @@ Beyond the linear categories the corpus meets the **toposes**, which behave like
 
 | Category | The structure it has | Introduced in |
 |---|---|---|
-| Monoidal category | a category with a product functor, a unit and coherence axioms | *Operads* |
+| Monoidal category | a category with a product functor, a unit object and coherence axioms | *Operads* |
 | Presheaf category $\widehat{\mathcal{C}}$ | functors $\mathcal{C}_{\mathrm{opp}} \to \mathbf{Set}$ | *Presheaves and Sheaves* |
 | Category of sheaves $\mathbf{Sh}(\mathcal{C},J)$ | presheaves satisfying the sheaf condition for a topology $J$ | *Sheaves on Sites* |
 | Grothendieck topos | a category equivalent to the sheaves on a site | *Topoi* |

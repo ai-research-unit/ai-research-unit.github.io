@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the units and the material time those of *Physics Units and Common Elements Conventions*. The action is the parent's $S_{\mathrm{c}}$, the slot-summed functional whose Euler–Lagrange equation the element companion calls E2, and the connection is the parent's anti-Hermitian writing $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real. The symbol rule is quoted in its derived form and not re-derived:
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The action is the parent's $S_{\mathrm{c}}$, the slot-summed functional whose Euler–Lagrange equation the element companion calls E2, and the connection is the parent's anti-Hermitian writing $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real. The symbol rule is quoted in its derived form and not re-derived:
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,

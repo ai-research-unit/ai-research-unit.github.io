@@ -6,7 +6,7 @@ This article belongs to the ten conventions articles of the mathematical corpus.
 
 **The article names, and it does not prove.** No dimension is stated here, no closure, no inclusion, no properness and no property of a family. A name is fixed once, so that the article which proves a property can write it once. Where a sentence below reads like a theorem, it is a rule for reading a glyph: it says what the symbol denotes, not what the object is.
 
-The order follows the dependence. The family letters come first, because the names of the sets and the subscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the units and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
+The order follows the dependence. The family letters come first, because the names of the sets and the subscripts of the matrices are built from them. The slots follow, because a name carrying a subscript is read through its slots. The names of the sets follow the slots; the invertibles and the frame follow the names; and the strata, the words and the adjoint signs close, because the operator articles read a family on a stratum with the words and the signs fixed last.
 
 **Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame and Metric Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index and Notation Conventions*. Every citation in this article is to one of these eight, except those that name *Operator Chirality on the Biquaternion Algebra*, which proves the properties of the label fixed in §*The Slots*.
 
@@ -126,7 +126,7 @@ The units of $\mathbb{B}$ are $e_t,\vec e_x,\vec e_y,\vec e_z$, in that order, t
 
 The units of the operator space are the matrix units $E_{ij}$ of *Special Element and Peirce Conventions*, §*The General Peirce Convention*, with $1$-based indices: the first index is the row and the second the column. The identity operator is $\mathrm{I}_4$, and the identity matrix of the $2\times2$ model is $\mathrm{I}_2$; the identity of the algebra stays $e_t$.
 
-**The two alphabets are not exchanged.** A direction index names a unit of the algebra, and a row-column pair names a unit of the operator space. The two are never interchanged: $L_{e_\mu}$ is an operator and $E_{\mu\mu}$ is a matrix unit, and neither glyph stands for the other. The identity of the algebra $e_t$ is never written $\mathrm{I}$, and the identity operator $\mathrm{I}_4$ is never written $e_t$.
+**The two alphabets are not exchanged.** A direction index names an invertible element of the algebra, and a row-column pair names an invertible element of the operator space. The two are never interchanged: $L_{e_\mu}$ is an operator and $E_{\mu\mu}$ is a matrix unit, and neither glyph stands for the other. The identity of the algebra $e_t$ is never written $\mathrm{I}$, and the identity operator $\mathrm{I}_4$ is never written $e_t$.
 
 ## The Matrix and Its Frame
 
@@ -239,7 +239,7 @@ The strata are labelled by two bits, the norm first and the square of the vector
 
 ## Further Reading
 
-- [Algebra and Element Conventions](algebra-and-element-conventions.html). The base, the units, the element and its coefficients, the remarkable subspaces and the conjugations.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html). The base, the invertibles, the element and its coefficients, the remarkable subspaces and the conjugations.
 - [Product and Form Conventions](product-and-form-conventions.html). The twelve products and their names, the four forms and their letters.
 - [Norm and Unitary Conventions](norm-and-unitary-conventions.html). The four algebraic norms, the qualified regular and degenerate, and the unitary convention.
 - [Special Element and Peirce Conventions](special-element-and-peirce-conventions.html). The root, the idempotent, the nilpotent and the matrix units.

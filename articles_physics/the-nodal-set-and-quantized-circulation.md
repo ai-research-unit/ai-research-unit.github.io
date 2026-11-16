@@ -7,7 +7,7 @@ action, so its curl vanishes wherever the action exists. The second is Stokes' t
 
 This article closes open question 2 of [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), which asks whether the winding of the action around a nodal line carries a topological charge, and whether that charge is an object of the algebra rather than of the phase. The answers are yes and yes, in the precise sense given below.
 
-**What the article establishes.** The circulation around a nodal line is $2\pi\hbar n/m$ for an integer $n$, independently of the loop's shape and radius, and the integer is the degree of the field's phase map. The charge is an object of the algebra because it is the winding of the field into the central unit circle, which is the compact direction of the algebra's group of units; the phase function is only a coordinate on that circle and the charge does not depend on it. The nodal set is where the polar decomposition fails, and that failure is the field's arrival on the zero-divisor set.
+**What the article establishes.** The circulation around a nodal line is $2\pi\hbar n/m$ for an integer $n$, independently of the loop's shape and radius, and the integer is the degree of the field's phase map. The charge is an object of the algebra because it is the winding of the field into the central unit circle, which is the compact direction of the algebra's group of invertibles; the phase function is only a coordinate on that circle and the charge does not depend on it. The nodal set is where the polar decomposition fails, and that failure is the field's arrival on the zero-divisor set.
 
 **What it does not establish.** It does not establish that a nodal solution of the Klein–Gordon equation exists for a given mass and a given winding, nor that any such solution is stable. Those are dynamical questions and this article is kinematical. It does not establish that the scalar field is a superfluid, and no thermodynamic statement is made. And it does not give the sign convention of the charge, which is a convention of the orientation of the loop and is stated once.
 
@@ -183,9 +183,9 @@ The winding enters in exactly one place, the centrifugal term $+n^{2}f/r^{2}$. I
 
 ## Why the Charge Is the Algebra's
 
-### The charge is a class in the unit group
+### The charge is a class in the group of invertibles
 
-**The winding is a class of the field's map into the algebra's group of units, not a property of a phase function.** On the complement of the nodal set the field is invertible, so it takes values in the group of units $\mathbb{B}^{\times}$, and on a link it gives a map from a circle into that group. The relevant homotopy group is the fundamental group of the unit group, and the part of the unit group that the central field explores is the central phase circle. Hence
+**The winding is a class of the field's map into the algebra's group of invertibles, not a property of a phase function.** On the complement of the nodal set the field is invertible, so it takes values in the group of invertibles $\mathbb{B}^{\times}$, and on a link it gives a map from a circle into that group. The relevant homotopy group is the fundamental group of the group of invertibles, and the part of the group of invertibles that the central field explores is the central phase circle. Hence
 
 $$
 \pi_{1}\bigl(\text{central unit circle}\bigr)=\mathbb{Z},
@@ -193,7 +193,7 @@ $$
 \text{charge}=\text{degree of the map}\in\mathbb{Z},
 $$
 
-and the integer is the same one that appears in the circulation. The statement is the algebra's because the circle is the algebra's own: it is the set $\{e^{i\theta_{\mathrm{phs}}}e_t\}$ inside the group of units, and the phase function is a coordinate on it.
+and the integer is the same one that appears in the circulation. The statement is the algebra's because the circle is the algebra's own: it is the set $\{e^{i\theta_{\mathrm{phs}}}e_t\}$ inside the group of invertibles, and the phase function is a coordinate on it.
 
 **This is the answer to open question 2 of the scalar polar form, in its second half.** The question asks whether the charge is an object of the algebra rather than of the phase. It is: the phase is a local coordinate that fails at the node and is multivalued around it, while the winding is a homotopy class of the field's values, which are elements of the algebra. Two different choices of the local phase — two different branches of the arctangent — give the same class, and that is exactly the statement that the class does not depend on the coordinate.
 
@@ -201,7 +201,7 @@ and the integer is the same one that appears in the circulation. The statement i
 
 **The polar decomposition fails exactly on the zero-divisor set, and that failure is what makes the node a node.** The corpus's polar decomposition writes an element as a scale times a unit element, $\tilde Q=\rho\tilde U$, and it fails precisely where $\langle\tilde Q\rangle_{\natural}=0$, which is the zero-divisor set. So the node of the field is not a second concept beside the cone: it is the intersection of the field's image with the cone, and the two descriptions agree event by event.
 
-There is a payoff that the phase description cannot give. The logarithm of an element exists exactly on the group of units and on no larger set, as [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html) records; and the logarithm's fibre is the set of all elements with the same exponential, which is the algebra's own statement of multivaluedness. The phase of the field is a branch of a logarithm, and the node is where the logarithm does not exist. The winding number is the obstruction to choosing a global branch, and it is an integer for the same reason that the logarithm's fibre is discrete.
+There is a payoff that the phase description cannot give. The logarithm of an element exists exactly on the group of invertibles and on no larger set, as [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html) records; and the logarithm's fibre is the set of all elements with the same exponential, which is the algebra's own statement of multivaluedness. The phase of the field is a branch of a logarithm, and the node is where the logarithm does not exist. The winding number is the obstruction to choosing a global branch, and it is an integer for the same reason that the logarithm's fibre is discrete.
 
 ### What the algebra does not supply
 
@@ -260,7 +260,7 @@ So $\tilde Q$ is a zero divisor, it is not the zero element, and the polar decom
 
 The scalar flow is irrotational because its velocity is the gradient of the action. The closure is exact wherever the action exists, and the action fails to exist exactly where the field's value arrives on the zero-divisor set: at the cone's apex for the central scalar field, and away from the apex for a field of general value, the example $\tilde Q=\frac{1}{2}(e_t+i\vec e_x)$ having norm $\frac{1}{4}-\frac{1}{4}=0$ and not being zero. The nodal set has codimension two, so in three dimensions it is a curve and a loop can link it.
 
-Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=2\pi\hbar n/m=2\pi c n/k_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of units and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
+Around a link the phase returns to itself up to $2\pi n$, and the circulation is $\kappa=2\pi\hbar n/m=2\pi c n/k_m$, independent of the loop's shape and radius and of the amplitude's profile. The check at radii $0.3$, $0.8$ and $2.0$ gave the same circulation to every digit for windings $1$, $2$ and $-1$, against $2\pi n$ to $2.6\times10^{-6}$, the residual being the chord error of the polygonal loop. The integer is the degree of the field's map from the link into the central unit circle, so the charge is a class in the algebra's group of invertibles and not a property of a phase function. That is the closure of open question 2 of the scalar polar form.
 
 At the node the velocity diverges as $1/r$ and the current does not: $\lvert\vec J_\Phi\rvert=A^{2}\hbar\lvert n\rvert r/m$, which vanishes there. The quantum potential diverges as $-\hbar^{2}/(2mr^{2})$ while the quantum energy density stays finite at $-A^{2}/2$, checked on a grid to nine digits. The vortex ansatz satisfies the transport equation identically, reduces the amplitude equation to one ordinary differential equation whose indicial balance $s(s-1)=n^{2}$ fixes the core's power, and leaves the existence of a globally regular solution open.
 
@@ -271,7 +271,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
-| $\mathbb{B}^{\times}$ | Group of units, the complement of the zero-divisor set |
+| $\mathbb{B}^{\times}$ | Group of invertibles, the complement of the zero-divisor set |
 | $e_t,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, with $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde\Xi$ | The scalar field, an element of $\mathbb{B}$ |

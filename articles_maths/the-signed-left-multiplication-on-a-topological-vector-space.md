@@ -45,7 +45,7 @@ $$
 
 The set of invertible signed left multiplications is a group under composition isomorphic to $E^{\times}$.
 
-**Proof.** If $a$ is invertible then $\Lambda^{\alpha}_{\alpha(a)^{-1}}\Lambda^{\alpha}_{a} = L_{\alpha(a)^{-1}\alpha(a)} = L_{1} = \mathrm{id}$ and likewise on the other side, using the composition law. Conversely, if $\Lambda^{\alpha}_{a}$ is invertible then $L_{a} = \Lambda^{\alpha}_{a}\alpha^{-1}$ is invertible as a composite of invertible maps, and a left multiplication $L_{a}$ is invertible exactly when $a$ is a unit, by the one-sided invertibility argument of the two-sided operator article; hence $a$ is invertible. The group statement is that $a \mapsto \Lambda^{\alpha}_{a}$ is a bijection onto the set of signed left multiplications with $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$, which is the twisted multiplication.
+**Proof.** If $a$ is invertible then $\Lambda^{\alpha}_{\alpha(a)^{-1}}\Lambda^{\alpha}_{a} = L_{\alpha(a)^{-1}\alpha(a)} = L_{1} = \mathrm{id}$ and likewise on the other side, using the composition law. Conversely, if $\Lambda^{\alpha}_{a}$ is invertible then $L_{a} = \Lambda^{\alpha}_{a}\alpha^{-1}$ is invertible as a composite of invertible maps, and a left multiplication $L_{a}$ is invertible exactly when $a$ is invertible, by the one-sided invertibility argument of the two-sided operator article; hence $a$ is invertible. The group statement is that $a \mapsto \Lambda^{\alpha}_{a}$ is a bijection onto the set of signed left multiplications with $\Lambda^{\alpha}_{a}\Lambda^{\alpha}_{b} = L_{a\alpha(b)}$, which is the twisted multiplication.
 
 ## The Fixed Elements
 

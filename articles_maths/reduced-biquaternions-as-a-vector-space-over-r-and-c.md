@@ -90,7 +90,7 @@ The real space carries a second square root of $-\mathrm{id}$ that is not the sc
 
 *Proof.* $S^{2}(\breve Q)=j(j\breve Q)=j^{2}\breve Q=\breve Q$. The operator is the restriction to the space of the left multiplication of *The Multiplication Operators of the Algebra of the Reduced Biquaternions*, below this article in this category, at the element $j$.
 
-The involution $S$ is **not** a conjugation in the sense of the four marks of the next article: it is the multiplication by a unit of the algebra and not an involution of the coefficient ring. The four conjugations — the bar, the tessarine sign, the star and the flat — are the subject of *The Two Involutions and the Group of Involutions*; here only their linear or antilinear character is used, and it is stated in §*Linear and Antilinear Maps*.
+The involution $S$ is **not** a conjugation in the sense of the four marks of the next article: it is the multiplication by an invertible element of the algebra and not an involution of the coefficient ring. The four conjugations — the bar, the tessarine sign, the star and the flat — are the subject of *The Two Involutions and the Group of Involutions*; here only their linear or antilinear character is used, and it is stated in §*Linear and Antilinear Maps*.
 
 ### The Realification and the Change of Scalars
 

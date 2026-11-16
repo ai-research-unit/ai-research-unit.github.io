@@ -76,7 +76,7 @@ The two normal forms are separated by the scalar part.
 | Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+N$, $N^2=0$ | yes | $e^{Q_t}(e_t+N)$ |
 | Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $N$, $N^2=0$ | no | $e_t+N$ |
 
-The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is a unit, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+tN$ is a line of units whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
+The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is invertible, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+tN$ is a line of invertibles whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
 
 The logarithm exists in the first row and fails in the second. In the invertible row,
 
@@ -84,7 +84,7 @@ $$
 \operatorname{Log}\tilde Q=\operatorname{Log}Q_t\,e_t+\frac{\vec Q}{Q_t},
 $$
 
-and in the nilpotent row the element has no logarithm at all, because it is not a unit. The exceptional point itself is therefore not a point of the image of the exponential when $Q_t=0$, and it is a point of the image, on a Jordan fibre, when $Q_t\neq0$.
+and in the nilpotent row the element has no logarithm at all, because it is not invertible. The exceptional point itself is therefore not a point of the image of the exponential when $Q_t=0$, and it is a point of the image, on a Jordan fibre, when $Q_t\neq0$.
 
 ### The Square-Root Splitting
 
@@ -133,7 +133,7 @@ The diabolic case is the scalar vertex of *The Eigenbasis of a Spectrally Regula
 - **The Jordan block is a one-way coupling.** The matrix $Q_tI_2+N$ has one eigenvector; the nilpotent $N$ maps the missing direction onto the surviving one. The reading is a mode that decays into another with no return, the algebraic skeleton of a unidirectional coupling.
 - **The square-root splitting is the measured signature.** A perturbation $\epsilon$ produces a frequency splitting $\propto\sqrt{\epsilon}$, and the two branches are the two sides of one square root. The reading is the standard interpolation of an exceptional-point sensor, and it is a statement about the family, not about the point alone.
 - **The nilpotent is not a particle.** $\vec Q$ with $\vec Q^2=0$ is the complex isotropic model of a lightlike direction, not a four-momentum, and not a real lightlike displacement either, since that has $Q_t\neq0$ and lies in $\Sigma_{01}$; the photon of the massless spectrum is a complex multiple of an idempotent, not a nilpotent. The nilpotent stratum of the cone is the other boundary stratum, and the two must not be identified.
-- **The unipotent line is a reversible motion with a zero-divisor velocity.** $\exp(tN)=e_t+tN$ is a unit for every finite $t$. The reading is that a reversible process can have a non-invertible infinitesimal generator in the limit, and the algebra keeps the two apart.
+- **The unipotent line is a reversible motion with a zero-divisor velocity.** $\exp(tN)=e_t+tN$ is invertible for every finite $t$. The reading is that a reversible process can have a non-invertible infinitesimal generator in the limit, and the algebra keeps the two apart.
 - **A repeated root is a pole of order two, and the transform is where pole order lives.** The resolvent of the normal form $Q_tI_2+N$ is $(z-Q_t)^{-1}I_2+(z-Q_t)^{-2}N$, while the diabolic normal form $Q_tI_2$ gives only the first term. Inverting the frequency transform,
 
 $$
@@ -158,7 +158,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - The scalar part separates a diabolic point ($\vec Q=0$, semisimple) from an exceptional point ($\vec Q\neq0$, a Jordan block).
 - At an exceptional point the two eigenvalues coalesce, the eigenprojections diverge, and the centraliser contains no nontrivial idempotent pair.
 - The invertible Jordan normal form is $Q_t e_t+N$ with $N^2=0$ and $Q_t\neq0$; the nilpotent normal form is $N$ with $N^2=0$ and $Q_t=0$.
-- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(N)=e_t+N$ is a unit although $N$ is a zero divisor.
+- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(N)=e_t+N$ is invertible although $N$ is a zero divisor.
 - A linear perturbation splits the eigenvalues as $\sqrt{\epsilon}$ for a generic direction; the law belongs to the family, not to the point.
 - No exceptional point exists for a real vector part or for a Hermitian element; the phenomenon needs complex coefficients.
 - A diabolic point is a degeneracy with a diagonalisable block, an exceptional point a degeneracy with a Jordan block; only the second lies in the Jordan regime.
@@ -183,6 +183,6 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - *Exponential Polar Decomposition of Biquaternions*, for the boundary of the word and the two strata of the cone.
 - [Nilpotents](../articles_maths/nilpotents.html), for the nilpotents and their square-zero property.
-- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the nilpotent stratum read physically and its distinction from the photon.
+- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the nilpotent stratum read physically and its distinction from the photon.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the probability calculus of a non-normal element.
 - [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html), for the resonance pole, which is not an exceptional point.

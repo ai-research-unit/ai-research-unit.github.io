@@ -164,7 +164,7 @@ $$
 
 so $(\lambda_1-\lambda_2)H(x,y)=0$ and $H(x,y)=0$. Normalising one eigenvector for each eigenvalue gives an orthonormal basis. If $\lambda_1=\lambda_2$, the discriminant vanishes, hence $\alpha=\delta$ and $\beta=0$, so $S=\alpha\mathrm{I}_2$ and every orthonormal basis is an eigenbasis. In both cases the matrix $W$ whose columns are the basis vectors is unitary and $W^{\dagger}SW=\Lambda$, that is $S=W\Lambda W^{\dagger}$.
 
-**The sign.** If $S$ is positive semidefinite and $x$ is a unit eigenvector for $\lambda$, then
+**The sign.** If $S$ is positive semidefinite and $x$ is invertible eigenvector for $\lambda$, then
 
 $$
 \lambda=H(Sx,x)\geq0.

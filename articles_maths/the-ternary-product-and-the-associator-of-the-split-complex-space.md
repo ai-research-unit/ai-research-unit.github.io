@@ -118,7 +118,7 @@ The formula separates the two slots: the pair of the first two slots enters as t
 
 **Proof.** The product of $A\bar B$ and $\bar C-C$ vanishes in a ring with zero divisors exactly when one of the two factors does. The second factor is $\bar C-C=-2c'j$, which is zero exactly when $C$ is real; the first is zero exactly when $A=0$ or $B=0$ or the two are complementary zero divisors.
 
-On a pair whose product $A\bar B$ is a unit the criterion is exactly the realness of the third slot, and that is the statement to keep: the associator measures the failure of the third slot to be real. The second alternative is the zero-divisor phenomenon of the ring and it has no counterpart over a field.
+On a pair whose product $A\bar B$ is invertible the criterion is exactly the realness of the third slot, and that is the statement to keep: the associator measures the failure of the third slot to be real. The second alternative is the zero-divisor phenomenon of the ring and it has no counterpart over a field.
 
 ### The Value
 
@@ -130,7 +130,7 @@ $$
 
 **Proof.** The first formula is the substitution of $\bar C-C$; the second is the multiplicativity of the norm, $N(j)=-1$ and $N(\bar B)=N(B)$.
 
-On a pair of units with a third slot off the real line the associator is a non-zero element of negative norm: it points in the spacelike direction, in the cone opposite to the cone of squares, and its size is $2\lvert c'\rvert\sqrt{\lvert N(A)N(B)\rvert}$. The value need not lie on the split imaginary line: with $A=j$, $B=1$, $C=j$ it is $-2$, a real number, because the factor $A\bar B=j$ turns the factor $j$ into $-1$. What is invariant is the norm, which is negative whenever the first two slots are units and the third is not real.
+On a pair of invertibles with a third slot off the real line the associator is a non-zero element of negative norm: it points in the spacelike direction, in the cone opposite to the cone of squares, and its size is $2\lvert c'\rvert\sqrt{\lvert N(A)N(B)\rvert}$. The value need not lie on the split imaginary line: with $A=j$, $B=1$, $C=j$ it is $-2$, a real number, because the factor $A\bar B=j$ turns the factor $j$ into $-1$. What is invariant is the norm, which is negative whenever the first two slots are invertible and the third is not real.
 
 ### The Confinement to the Sesquilinear Shape
 
@@ -152,7 +152,7 @@ Over $\mathbb{C}$ the same formulas hold with $i^2=-1$: the ternary product is $
 
 The ternary product $\{A,B,C\}=A\bar BC$ is componentwise in the idempotent coordinates, with the middle index crossed, $\{A,B,C\}_\pm=A_\pm B_\mp C_\pm$; it is symmetric in its outer slots, Hermitian-symmetric, contracts to the sesquilinear product in the third slot and to the plain product in the middle one, and its diagonal is $\{A,A,A\}=N(A)A$. It satisfies the Jordan triple identity, so $\mathbb{C}_{\mathrm{spl}}$ is an algebraic $J^{*}$-algebra over its involutive ring, and it is not a $JB^{*}$-algebra because the form is indefinite.
 
-The associator is $[A,B,C]=A\bar B(\bar C-C)$, a defect of the third slot alone; it vanishes exactly when the third slot is real or when $A\bar B=0$, and its value is $-2c'(A\bar B)j$ of norm $-4c'^2N(A)N(B)$, a spacelike element on a pair of units. It is confined to the sesquilinear shape, the plain product being associative. Over $\mathbb{C}$ the formulas are the same and the two components of the split case coincide into one; here the four products collapse to two and the associator collapses to the single factor $\bar C-C$.
+The associator is $[A,B,C]=A\bar B(\bar C-C)$, a defect of the third slot alone; it vanishes exactly when the third slot is real or when $A\bar B=0$, and its value is $-2c'(A\bar B)j$ of norm $-4c'^2N(A)N(B)$, a spacelike element on a pair of invertibles. It is confined to the sesquilinear shape, the plain product being associative. Over $\mathbb{C}$ the formulas are the same and the two components of the split case coincide into one; here the four products collapse to two and the associator collapses to the single factor $\bar C-C$.
 
 ## Summary of Notation
 

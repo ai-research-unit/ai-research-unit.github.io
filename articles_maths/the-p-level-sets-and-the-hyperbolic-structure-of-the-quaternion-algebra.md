@@ -66,13 +66,13 @@ and the right-hand side is at least $1$, with equality exactly when $\tilde p=\t
 $$
 \tilde h_{\vec n}(s)=\cosh s\,e_t+\sinh s\,\vec n
 $$
-lies on the positive sheet, is a unit of the algebra, is a one-parameter group under the plain product, and is the geodesic through $e_t$ in the direction $\vec n$.
+lies on the positive sheet, is invertible in the algebra, is a one-parameter group under the plain product, and is the geodesic through $e_t$ in the direction $\vec n$.
 
 *Proof.* $P=\cosh^2s-\sinh^2s=1$ and $N=\cosh^2s+\sinh^2s=\cosh2s$, so the curve lies on the sheet; $\tilde h_{\vec n}(s)\tilde h_{\vec n}(t)=\tilde h_{\vec n}(s+t)$ by the addition formulas and $\vec n^2=-e_t$; the velocity is $\sinh s\,e_t+\cosh s\,\vec n$, of constant $P$-norm $-1$, and the curve is the intersection of the sheet with the plane $\Pi_{\vec n}$. Verified exactly.
 
-**Theorem (the exponential does not reach the boosts).** The exponential of the algebra satisfies $\lvert\exp(\tilde x)\rvert=e^{x_t}$, so a unit is an exponential only if its exponent is purely vectorial; and a purely vectorial exponent gives a versor with real part $\cos\lvert\vec v\rvert\in[-1,1]$. Hence no element $\tilde h_{\vec n}(s)$ with $s>0$ is the exponential of any element of $\mathbb{H}$.
+**Theorem (the exponential does not reach the boosts).** The exponential of the algebra satisfies $\lvert\exp(\tilde x)\rvert=e^{x_t}$, so an invertible element is an exponential only if its exponent is purely vectorial; and a purely vectorial exponent gives a versor with real part $\cos\lvert\vec v\rvert\in[-1,1]$. Hence no element $\tilde h_{\vec n}(s)$ with $s>0$ is the exponential of any element of $\mathbb{H}$.
 
-*Proof.* $\exp(\tilde x)=e^{x_t}\bigl(\cos\lvert\vec v\rvert+\frac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert\bigr)$, whose modulus is $e^{x_t}$ and whose real part is $e^{x_t}\cos\lvert\vec v\rvert$. A unit has $x_t=0$, and then the real part is a cosine, at most one in absolute value; the boosts have real part $\cosh s>1$. Verified numerically on the four axes.
+*Proof.* $\exp(\tilde x)=e^{x_t}\bigl(\cos\lvert\vec v\rvert+\frac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert\bigr)$, whose modulus is $e^{x_t}$ and whose real part is $e^{x_t}\cos\lvert\vec v\rvert$. An invertible element has $x_t=0$, and then the real part is a cosine, at most one in absolute value; the boosts have real part $\cosh s>1$. Verified numerically on the four axes.
 
 **Corollary (the correct geodesic parametrisation).** The geodesics of the positive sheet are parametrised by the hyperbolic exponential,
 $$
@@ -99,7 +99,7 @@ that is by the same formula with the hyperbolic functions in place of the trigon
 
 ## The Comparison with the Krein Level Sets
 
-**Remark (the complex case).** In the biquaternion block the corresponding form is a Krein form, of indefinite signature on a complex space, and its level sets are the Krein hyperboloids; the isometry group is the Krein group, with its own Cartan decomposition, and the geodesics and the distance are read the same way. The difference is the presence of the isotropic directions: over $\mathbb{C}$ the level sets of a null value are not cones of units but zero-divisor sets, and the positive sheet is not a model of a hyperbolic space but of an indefinite one. The comparison is the subject of [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), and the groups are compared in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
+**Remark (the complex case).** In the biquaternion block the corresponding form is a Krein form, of indefinite signature on a complex space, and its level sets are the Krein hyperboloids; the isometry group is the Krein group, with its own Cartan decomposition, and the geodesics and the distance are read the same way. The difference is the presence of the isotropic directions: over $\mathbb{C}$ the level sets of a null value are not cones of invertibles but zero-divisor sets, and the positive sheet is not a model of a hyperbolic space but of an indefinite one. The comparison is the subject of [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), and the groups are compared in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
 
 ## A Worked Check
 

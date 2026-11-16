@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the Lie theory of the complex algebra $\mathbb{C}$. *Complex Algebra* defined the algebra, its single nontrivial involution and its two distinguished subspaces; *Complex Norm and Invertibility* identified the norm $\langle Q\rangle_{*} = Q\bar{Q}$ and the group of units $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$; and the companion articles on the elementary and polar structure computed the exponential and the polar form by power series. Here these are assembled into the standard theory of $\mathbb{C}$ as an abelian Lie algebra, of $\mathbb{C}^\times$ as a Lie group, and of the exponential map.
+This article develops the Lie theory of the complex algebra $\mathbb{C}$. *Complex Algebra* defined the algebra, its single nontrivial involution and its two distinguished subspaces; *Complex Norm and Invertibility* identified the norm $\langle Q\rangle_{*} = Q\bar{Q}$ and the group of invertibles $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$; and the companion articles on the elementary and polar structure computed the exponential and the polar form by power series. Here these are assembled into the standard theory of $\mathbb{C}$ as an abelian Lie algebra, of $\mathbb{C}^\times$ as a Lie group, and of the exponential map.
 
 The complex case is the degenerate base of the family and everything below is correspondingly simple. The algebra is commutative, so its commutator bracket vanishes identically, its Lie algebra is abelian, the Baker–Campbell–Hausdorff series terminates at the first term, the exponential is a homomorphism, and the exponential map is both surjective and locally bijective. The whole of the structure is the product of a line and a circle.
 
@@ -31,9 +31,9 @@ so $\mathbb{C}$ is an **abelian Lie algebra**.
 
 **The universal enveloping algebra.** Since the bracket vanishes, the universal enveloping algebra of $\mathbb{C}$ as a real Lie algebra is the symmetric algebra on the two-dimensional space $\mathbb{C}$, i.e. the polynomial algebra $\mathbb{R}[x,y]$ on two commuting variables. There is no non-commutativity to encode.
 
-## The Group of Units
+## The Group of Invertibles
 
-The **group of units** of $\mathbb{C}$ is the set of invertible elements,
+The **group of invertibles** of $\mathbb{C}$ is the set of invertible elements,
 
 $$
 \mathbb{C}^\times = \{Q \in \mathbb{C} : \langle Q\rangle_{*} \neq 0\} = \mathbb{C} \setminus \{0\},
@@ -43,7 +43,7 @@ a group under multiplication with identity $1$, abelian, and at the same time a 
 
 **Dimension, openness and density.** As a real manifold $\mathbb{C}^\times$ has dimension $2$; it is open in $\mathbb{C}$ (the preimage $N^{-1}((0,\infty))$ of an open set) and dense, its complement being the single point $\{0\}$, of real dimension $0$. It is connected and non-compact, and its centre is itself, since the group is abelian.
 
-**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the units are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $Q \mapsto Q^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian.
+**Lie algebra.** The Lie algebra of $\mathbb{C}^\times$ is $\mathbb{C}$ itself with the zero bracket, because the invertibles are an open subset of $\mathbb{C}$ so that the tangent space at the identity is the whole algebra. The inverse map $Q \mapsto Q^{-1}$ has differential $-\operatorname{id}$ at the identity, the infinitesimal reason an abelian bracket is antisymmetric; and the bracket is zero because the group is abelian.
 
 **The norm-one group.** Because $\langle\cdot\rangle_{*}$ is multiplicative and $\langle 1\rangle_{*} = 1$, the level set
 
@@ -87,7 +87,7 @@ where $\operatorname{Tr}(Q) = 2q$ is the algebra trace; and $d\exp_0 = \operator
 
 ## The Group Law
 
-The exponential is a **homomorphism** from the additive group of the Lie algebra to the multiplicative group of the units:
+The exponential is a **homomorphism** from the additive group of the Lie algebra to the multiplicative group of the invertibles:
 
 **Theorem.** For all $Q_1, Q_2 \in \mathbb{C}$,
 
@@ -131,7 +131,7 @@ $$
 Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}, \qquad u = \frac{Q}{\sqrt{\langle Q\rangle_{*}}} \in \mathrm{U}(1),
 $$
 
-with $r$ the modulus and $u$ the phase, and the decomposition is unique. Writing $u = \exp(i\theta)$ gives $Q = r\exp(i\theta)$. This is the splitting $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ of the group of units, developed in *Complex Norm and Invertibility*.
+with $r$ the modulus and $u$ the phase, and the decomposition is unique. Writing $u = \exp(i\theta)$ gives $Q = r\exp(i\theta)$. This is the splitting $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ of the group of invertibles, developed in *Complex Norm and Invertibility*.
 
 **Exponential parametrisation.** By surjectivity, every $Q \in \mathbb{C}^\times$ is $Q = \exp(Q_{\log})$ with $Q_{\log} = \ln r + i\theta$ and the ambiguity of the kernel. In the two factors the logarithm splits as
 
@@ -194,11 +194,11 @@ The fundamental group is computed in *Complex Topology*: $\pi_1(\mathbb{C}^\time
 
 ## Summary
 
-The commutator bracket of $\mathbb{C}$ vanishes identically, so $\mathbb{C} \cong \mathbb{R}^2$ is an abelian Lie algebra of real dimension $2$, with the universal enveloping algebra a polynomial algebra on two variables, and the group of units is the abelian Lie group $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ of real dimension $2$, open and dense, with Lie algebra $\mathbb{C}$.
+The commutator bracket of $\mathbb{C}$ vanishes identically, so $\mathbb{C} \cong \mathbb{R}^2$ is an abelian Lie algebra of real dimension $2$, with the universal enveloping algebra a polynomial algebra on two variables, and the group of invertibles is the abelian Lie group $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ of real dimension $2$, open and dense, with Lie algebra $\mathbb{C}$.
 
 The exponential $\exp(Q) = \sum Q^n/n!$ is entire, never zero, and a group homomorphism, $\exp(Q_1+Q_2) = \exp Q_1 \exp Q_2$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $\exp(q+i q') = \exp(q)(\cos q' + i\sin q')$, its norm is $\langle\exp Q\rangle_{*} = \exp(\operatorname{Tr} Q)$, it is surjective onto $\mathbb{C}^\times$ with the polar logarithm $\ln\sqrt{\langle Q\rangle_{*}} + i\arg Q$, and its kernel is the discrete lattice $2\pi i\,\mathbb{Z} \cong \mathbb{Z}$.
 
-Every nonzero complex number has the polar parametrisation $Q = r\exp(i\theta) = \exp(\ln r + i\theta)$ with $r \in \mathbb{R}_{>0}$ and $\theta \in \mathbb{R}$, the group of units splitting as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. The one-parameter subgroups are $t \mapsto \exp(tX)$, the one generated by $i$ is the circle $\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z} \cong SO(2)$, and $\mathrm{U}(1)$ is the maximal compact subgroup, onto which $\mathbb{C}^\times$ deformation retracts. The complex case is the abelian base of the family: the whole structure is the product of a line and a circle.
+Every nonzero complex number has the polar parametrisation $Q = r\exp(i\theta) = \exp(\ln r + i\theta)$ with $r \in \mathbb{R}_{>0}$ and $\theta \in \mathbb{R}$, the group of invertibles splitting as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$. The one-parameter subgroups are $t \mapsto \exp(tX)$, the one generated by $i$ is the circle $\mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z} \cong SO(2)$, and $\mathrm{U}(1)$ is the maximal compact subgroup, onto which $\mathbb{C}^\times$ deformation retracts. The complex case is the abelian base of the family: the whole structure is the product of a line and a circle.
 
 ## Summary of Notation
 
@@ -207,7 +207,7 @@ Every nonzero complex number has the polar parametrisation $Q = r\exp(i\theta) =
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q = q+i q'$ | a complex number, $q$ the real part, $q'$ the imaginary part |
 | $[Q_1,Q_2] = Q_1Q_2 - Q_2Q_1 = 0$ | the commutator bracket, identically zero |
-| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
+| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of invertibles |
 | $\exp(Q) = \sum_n Q^n/n!$ | the exponential, entire and a homomorphism |
 | $\exp(q+i q') = \exp(q)(\cos q' + i\sin q')$ | the Euler closed form |
 | $\langle\exp Q\rangle_{*} = \exp(\operatorname{Tr} Q) = \exp(2q)$ | the norm of an exponential |

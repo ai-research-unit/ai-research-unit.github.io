@@ -41,7 +41,7 @@ $$
 $$
 the same quantity as the additive volume, in accordance with the Tamagawa number $1$ of the multiplicative group.
 
-**Proof sketch.** The exact sequence $1 \to \mathbb{A}^1/K^\times \to \mathbb{A}^\times/K^\times \to \mathbb{R}_{>0} \to 1$, with the last map the norm, reduces the compactness of the middle to that of the first, which is the compactness of the norm-one subgroup; its volume is computed by the same fundamental domain as above, the multiplicative and additive measures agreeing on the units by the local relation $d^\times x = \frac{q_v}{q_v-1}\lvert x\rvert_v^{-1}d\mu_v$ of *p-adic Integration*.
+**Proof sketch.** The exact sequence $1 \to \mathbb{A}^1/K^\times \to \mathbb{A}^\times/K^\times \to \mathbb{R}_{>0} \to 1$, with the last map the norm, reduces the compactness of the middle to that of the first, which is the compactness of the norm-one subgroup; its volume is computed by the same fundamental domain as above, the multiplicative and additive measures agreeing on the invertibles by the local relation $d^\times x = \frac{q_v}{q_v-1}\lvert x\rvert_v^{-1}d\mu_v$ of *p-adic Integration*.
 
 ## Characters and Self-Duality
 

@@ -87,7 +87,7 @@ $$
 $$
 The norm is a group homomorphism $N_{L/k} : L^\times\to k^\times$.
 
-*Proof.* The map $\alpha\mapsto m_\alpha$ is a $k$-algebra homomorphism from $L$ to $\operatorname{End}_k(L)$, since $m_{\alpha+\lambda\beta} = m_\alpha+\lambda m_\beta$ and $m_{\alpha\beta} = m_\alpha m_\beta$; the trace is linear and the determinant multiplicative on the algebra of endomorphisms, which gives the first two statements. For $\lambda\in k$ the operator $m_\lambda$ is the scalar $\lambda$ on the $n$-dimensional space, with trace $n\lambda$ and determinant $\lambda^n$. Finally $N_{L/k}(\alpha)\neq0$ for $\alpha\neq0$ because $m_\alpha$ is invertible when $\alpha$ is, so the norm restricts to the unit groups and is multiplicative there.
+*Proof.* The map $\alpha\mapsto m_\alpha$ is a $k$-algebra homomorphism from $L$ to $\operatorname{End}_k(L)$, since $m_{\alpha+\lambda\beta} = m_\alpha+\lambda m_\beta$ and $m_{\alpha\beta} = m_\alpha m_\beta$; the trace is linear and the determinant multiplicative on the algebra of endomorphisms, which gives the first two statements. For $\lambda\in k$ the operator $m_\lambda$ is the scalar $\lambda$ on the $n$-dimensional space, with trace $n\lambda$ and determinant $\lambda^n$. Finally $N_{L/k}(\alpha)\neq0$ for $\alpha\neq0$ because $m_\alpha$ is invertible when $\alpha$ is, so the norm restricts to the groups of invertibles and is multiplicative there.
 
 **Theorem (the Galois description).** Let $L/k$ be Galois with group $G$. Then for all $\alpha\in L$
 $$
@@ -140,7 +140,7 @@ N_{L/k} : R_{L/k}\mathbb{G}_m\longrightarrow\mathbb{G}_m
 $$
 corresponding to the augmentation $\mathbb{Z}[G]\to\mathbb{Z}$ on the cocharacters, and its kernel is the **norm-one torus** $T^1 = \ker N_{L/k}$.
 
-*Proof.* The functor of points is $T(R) = (R\otimes_kL)^\times$; on a $k$-algebra $R$ this is the unit group of $R\otimes_kL$, whose character group is $\mathbb{Z}$ by the rank-one units and whose cocharacter group is the free abelian group on the idempotents of $L\otimes_kL$, identified with $\mathbb{Z}[G]$ by the Chinese remainder theorem. The norm is the determinant of multiplication on $R\otimes_kL$ and is the product of the permutation of the idempotents without fixed points, which is the augmentation; the kernel is the norm-one torus by definition. The dimension of a torus is the rank of its cocharacter lattice, here $n$.
+*Proof.* The functor of points is $T(R) = (R\otimes_kL)^\times$; on a $k$-algebra $R$ this is the group of invertibles of $R\otimes_kL$, whose character group is $\mathbb{Z}$ by the rank-one units and whose cocharacter group is the free abelian group on the idempotents of $L\otimes_kL$, identified with $\mathbb{Z}[G]$ by the Chinese remainder theorem. The norm is the determinant of multiplication on $R\otimes_kL$ and is the product of the permutation of the idempotents without fixed points, which is the augmentation; the kernel is the norm-one torus by definition. The dimension of a torus is the rank of its cocharacter lattice, here $n$.
 
 **Example ($\mathbb{C}/\mathbb{R}$ and the norm-one group).** For $L = \mathbb{C}$, $k = \mathbb{R}$ the norm torus is the anisotropic torus of dimension two whose $\mathbb{R}$-points are $\mathbb{C}^\times$, and the norm-one torus has $\mathbb{R}$-points the group $N^{-1}(1) = \{z : z\bar z = 1\}$. On $\mathbb{C}\cong\mathbb{R}^2$ the bilinear trace form is $\mathfrak{Q}(z,w) = 2\,\mathrm{Re}(zw)$, of signature $(1,1)$ in the basis $1,i$, while the associated Hermitian form $h(z,w) = \mathfrak{Q}(z,\bar w) = 2\,\mathrm{Re}(z\bar w)$ is positive definite; the Galois group acts by the conjugation, which preserves both forms. This torus is the formal model of the real structure on the multiplicative group; the restriction of the additive group is $\mathbb{G}_{a,\mathbb{R}}^2$ with the same trace form.
 
@@ -148,7 +148,7 @@ corresponding to the augmentation $\mathbb{Z}[G]\to\mathbb{Z}$ on the cocharacte
 $$
 \operatorname{Tr}(a+b\sqrt d) = 2a, \qquad N(a+b\sqrt d) = a^2-db^2 ,
 $$
-so the norm-one torus has the rational points $a^2-db^2 = 1$; the norm torus is the two-dimensional torus with rational points the units of the quadratic field, and the norm-one torus is its one-dimensional subtorus. The trace form is $\operatorname{diag}(2, 2d)$ in the basis $1,\sqrt d$, of signature $(2,0)$ for $d>0$ and $(1,1)$ for $d<0$.
+so the norm-one torus has the rational points $a^2-db^2 = 1$; the norm torus is the two-dimensional torus with rational points the invertibles of the quadratic field, and the norm-one torus is its one-dimensional subtorus. The trace form is $\operatorname{diag}(2, 2d)$ in the basis $1,\sqrt d$, of signature $(2,0)$ for $d>0$ and $(1,1)$ for $d<0$.
 
 ## Summary
 

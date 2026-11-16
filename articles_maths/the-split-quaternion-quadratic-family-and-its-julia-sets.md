@@ -60,7 +60,7 @@ $$
 
 ## The Symmetry
 
-**Proposition (equivariance, and the correct group).** For $\tilde u$ a unit of the algebra and $\operatorname{Ad}_{\tilde u}(\tilde q)=\tilde u\tilde q\tilde u^{-1}$,
+**Proposition (equivariance, and the correct group).** For $\tilde u$ an invertible element of the algebra and $\operatorname{Ad}_{\tilde u}(\tilde q)=\tilde u\tilde q\tilde u^{-1}$,
 
 $$
 \boxed{\;

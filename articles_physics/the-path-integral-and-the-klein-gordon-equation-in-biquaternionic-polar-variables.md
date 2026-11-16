@@ -63,7 +63,7 @@ and the Jacobian is the product of the radial factor over the points. Nothing el
 
 ## The Exponent
 
-**Two terms and no cross term.** The weight's bracket of §*Conventions* is a sum of a scale part, $(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}-k_m^{2}r^{2}$, and a phase part, $r^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and a unit, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.
+**Two terms and no cross term.** The weight's bracket of §*Conventions* is a sum of a scale part, $(\partial_{r'_t}r)^{2}-\lvert\nabla r\rvert^{2}-k_m^{2}r^{2}$, and a phase part, $r^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)$. The two are separate because a central field's word is a product of a real function and an invertible element, and the derivative of a product separates into the derivative of the modulus and the modulus times the derivative of the phase.
 
 **The phase enters through its derivatives and through nothing else.** No term of the exponent contains $\theta_{\mathrm{pha}}$. The angle is a cyclic coordinate at every point, and the gauge transformation of the coupled companion is the translation of that coordinate. In the free case the consequence is the article's main structural fact: **the phase is integrated over a circle at every point and its value nowhere appears**, so the phase integral sees only the gradient field.
 

@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the units and the material time those of *Physics Units and Common Elements Conventions*. The word is the polar parent's, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and on a central field it collapses to $r\,e^{i\theta_{\mathrm{pha}}}$. The connection is written anti-Hermitially, $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and the symbol rule is quoted in its derived form:
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word is the polar parent's, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and on a central field it collapses to $r\,e^{i\theta_{\mathrm{pha}}}$. The connection is written anti-Hermitially, $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and the symbol rule is quoted in its derived form:
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
@@ -49,7 +49,7 @@ $$
 
 which is the squared reading. **The chart is the chart of the squared equation and of nothing else**, and this is a statement about the functional's structure rather than about the word's parameters.
 
-**The corollary is that no choice of word changes it.** The word is a bijection from eight parameters to the units, so a substitution into the squared operator returns the squared operator. **A different chart of the same functional is still a chart of the same functional**, and the fork is not a fork about coordinates.
+**The corollary is that no choice of word changes it.** The word is a bijection from eight parameters to the invertibles, so a substitution into the squared operator returns the squared operator. **A different chart of the same functional is still a chart of the same functional**, and the fork is not a fork about coordinates.
 
 ## The Chart's Operator and the Two Readings
 

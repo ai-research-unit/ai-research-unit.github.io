@@ -17,7 +17,7 @@ The symbol $\mathbb{C}_{\mathrm{spl}}$ denotes the split complex numbers and $\m
 
 ## Multiplication by a Unit
 
-Let $A$ be one of the three algebras and let $u = a + \omega b$ be a unit. Left multiplication by $u$,
+Let $A$ be one of the three algebras and let $u = a + \omega b$ be an invertible element. Left multiplication by $u$,
 
 $$
 L_u(x + \omega y) = (a + \omega b)(x + \omega y) = (ax + \sigma by) + \omega\,(ay + bx),
@@ -31,7 +31,7 @@ M(u) = \begin{pmatrix} a & \sigma b \\ b & a \end{pmatrix},
 \det M(u) = a^2 - \sigma b^2 .
 $$
 
-The assignment $u \mapsto M(u)$ is an injective algebra homomorphism $A \to M_2(\mathbb{R})$, so multiplication by units realises the unit group $A^\times$ as a subgroup of $\mathrm{GL}_2(\mathbb{R})$.
+The assignment $u \mapsto M(u)$ is an injective algebra homomorphism $A \to M_2(\mathbb{R})$, so multiplication by invertibles realises the group of invertibles $A^\times$ as a subgroup of $\mathrm{GL}_2(\mathbb{R})$.
 
 **Definition.** The **norm** of $A$ is
 
@@ -60,7 +60,7 @@ So the three cases are the three signatures of a quadratic form in two variables
 
 ## The Elliptic Case: The Complex Numbers
 
-For $\sigma = -1$ the norm is positive definite, $\langle\cdot\rangle_{*} = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is a unit. The norm-one group is parametrised by the angle,
+For $\sigma = -1$ the norm is positive definite, $\langle\cdot\rangle_{*} = x^2 + y^2$, and it vanishes only at the origin; hence every nonzero complex number is invertible. The norm-one group is parametrised by the angle,
 
 $$
 u(\theta) = \cos\theta + i \sin\theta, \qquad \langle u(\theta)\rangle_{*} = \cos^2\theta + \sin^2\theta = 1,
@@ -173,15 +173,15 @@ $$
 
 is a rotation of $\operatorname{Im}\mathbb{H} \cong \mathbb{R}^3$, and $q \mapsto \rho_q$ is a surjective group homomorphism $S^3 \to SO(3)$ with kernel $\{\pm 1\}$; hence $SO(3) \cong S^3/\{\pm 1\}$.
 
-*Proof.* Multiplication by a unit preserves the norm $\langle p\rangle_{\natural} = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.
+*Proof.* Multiplication by an invertible element preserves the norm $\langle p\rangle_{\natural} = p\bar p$, so $\rho_q$ is norm-preserving; it fixes the real part, since it fixes the scalars, so it preserves $\operatorname{Im}\mathbb{H}$; and it is an isometry of a three-dimensional space, hence an orthogonal transformation. Its determinant is $+1$ because $q \mapsto \rho_q$ is continuous and $S^3$ is connected, the value at $q = 1$ being the identity. Surjectivity and the kernel are the standard facts of the quaternion representation of rotations.
 
-The three two-dimensional theories thus sit at the bottom of a hierarchy: the commutative cases are exactly the two-dimensional composition algebras, and passing to three dimensions forces one to give up commutativity and to use the quaternion algebra, whose unit group double-covers the rotation group.
+The three two-dimensional theories thus sit at the bottom of a hierarchy: the commutative cases are exactly the two-dimensional composition algebras, and passing to three dimensions forces one to give up commutativity and to use the quaternion algebra, whose group of invertibles double-covers the rotation group.
 
 **The commutative alternative in dimension four.** Giving up commutativity is not the only escape from the plane. A second escape keeps commutativity and gives up the definiteness of the norm instead, and the algebra that does it is the **reduced biquaternion** algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ of *List of Algebras by Dimension*. Double the plane algebra $\mathbb{C}$ by $\mathbb{C}$ with a commuting hyperbolic unit, $T = A + Bj$ with $j^2 = +1$ and $A,B \in \mathbb{C}$: the result is four-dimensional and commutative, split by the idempotents $\Pi_{1,2} = \tfrac12(1\pm j)$ and carrying their zero divisors, and its norm is the ring-valued determinant $A^2 - B^2$, multiplicative with values in $\mathbb{C}$ and vanishing on those idempotents. Both kinds of rotation of this article therefore live in it at once — the elliptic rotation of the complex factor and the hyperbolic rotation of the split factor — which is the algebraic content of the reading the engineering literature gives its polar form: an element of this algebra is a rotation and a Lorentz transformation in four-dimensional space, a fact its signal-processing treatment attaches to the special theory of relativity (Pei, Chang and Ding, *IEEE Trans. Signal Processing* **52** (2004) 2012–2022, §V). The three two-dimensional theories are accordingly the commutative cases with a **scalar** norm; the four-dimensional commutative algebra exists as soon as the norm is allowed to take its values in a ring.
 
 ## Summary
 
-The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by a unit $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $\langle u\rangle_{*} = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : \langle u\rangle_{*}=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{C}_{\mathrm{spl}}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{C}_{\mathrm{dln}}$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
+The three two-dimensional commutative unital real algebras are $\mathbb{C} = \mathbb{R}[\omega]/(\omega^2+1)$, $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[\omega]/(\omega^2-1)$ and $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\omega]/(\omega^2)$, and the sign of $\omega^2$ selects the geometry. Multiplication by an invertible element $u = a + \omega b$ is the linear map with matrix $\begin{pmatrix} a & \sigma b \\ b & a\end{pmatrix}$, of determinant $\langle u\rangle_{*} = a^2 - \sigma b^2$, and the **norm** is multiplicative; the **rotation group** $G_A = \{u : \langle u\rangle_{*}=1\}$ is therefore a group of norm-preserving transformations. For $\mathbb{C}$ the form is definite, $G_A \cong \mathrm{U}(1) \cong SO(2)$ with the elliptic matrix $\begin{pmatrix}\cos\theta & -\sin\theta \\ \sin\theta & \cos\theta\end{pmatrix}$, orbits circles and no fixed line. For $\mathbb{C}_{\mathrm{spl}}$ the form is indefinite of signature $(1,1)$, the identity component of $G_A$ is $\mathbb{R} \cong SO(1,1)_0$ with the hyperbolic matrix $\begin{pmatrix}\cosh t & \sinh t\\ \sinh t & \cosh t\end{pmatrix}$, orbits hyperbolas and the two null lines fixed. For $\mathbb{C}_{\mathrm{dln}}$ the form is degenerate, the identity component of $G_A$ is $\mathbb{R}$ with the transvection $\begin{pmatrix}1&0\\t&1\end{pmatrix}$, the parabolic rotation, orbits horizontal lines and the single null line fixed. A two-dimensional commutative unital real algebra is one of the three, by the sign of the discriminant of its defining quadratic, so the three kinds of rotation are exhaustive.
 
 Passing to dimension three is impossible in the commutative setting: there is no three-dimensional commutative real division algebra, and the Hurwitz theorem restricts positive-definite multiplicative norms to dimensions $1, 2, 4, 8$. The rotations of $\mathbb{R}^3$ are instead obtained from the non-commutative quaternions, acting by conjugation $\rho_q(p) = qpq^{-1}$ on the imaginary subspace, with $SO(3) \cong S^3/\{\pm 1\}$.
 

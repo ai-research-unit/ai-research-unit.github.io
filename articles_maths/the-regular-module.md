@@ -4,7 +4,7 @@
 
 The algebra acts on itself by left and right multiplication. This article reads that action as a module, identifies its submodules with the ideals, and states the structure of the algebra as a module over itself: simple as an algebra, of length two as a left module, with zero radical.
 
-The article assumes the Peirce frame of *Peirce Decompositions of the Biquaternion Algebra* and the count of the zero divisors of *Zero Divisors and Units*.
+The article assumes the Peirce frame of *Peirce Decompositions of the Biquaternion Algebra* and the count of the zero divisors of *Zero Divisors and Invertibles*.
 
 The distinction on which the article turns is the one between the two-sided and the one-sided reading. A two-sided ideal is a sub-bimodule, and the algebra has only the two trivial ones. A left ideal is a left submodule, and the algebra has many; the minimal ones are the spinor spaces of the next article.
 
@@ -31,7 +31,7 @@ The quotient $A/I$ is an algebra only when $I$ is two-sided; for a one-sided ide
 
 The simplicity is the absence of a third row. It makes the two ideals exchange the two roles: $0$ is the unique maximal two-sided ideal, since it is proper and the only ideal containing it is $\mathbb{B}$, and $\mathbb{B}$ is the unique minimal one, since it is nonzero and contains no nonzero proper ideal. Minimality is meant among nonzero ideals, so $0$ is not minimal.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every unit $\tilde Q_3 \in \mathbb{B}$ the conjugate $\tilde Q_3\tilde{Q}\tilde Q_3^{-1}$ lies in $I$, since $I$ is two-sided.
+**Proof.** Let $I \neq 0$ be a two-sided ideal. It is a $\mathbb{C}$-subspace, because multiplication by the central element $i$ is left multiplication by an element of $\mathbb{B}$. Fix $0 \neq \tilde{Q} = \sum_\mu Q_\mu e_\mu \in I$. For every invertible $\tilde Q_3 \in \mathbb{B}$ the conjugate $\tilde Q_3\tilde{Q}\tilde Q_3^{-1}$ lies in $I$, since $I$ is two-sided.
 
 Average the conjugates over the finite group $\{\pm e_t, \pm \vec e_x, \pm \vec e_y, \pm \vec e_z\}$. For $\mu = 1, 2, 3$, conjugation by $e_\mu$ fixes $e_t$ and $e_\mu$ and reverses the other two imaginary units, while conjugation by $e_t$ is the identity; in each case $e_\mu$ and $-e_\mu$ give the same conjugate, and the sum over the four representatives $e_t, \vec e_x, \vec e_y, \vec e_z$ is
 
@@ -85,7 +85,7 @@ $$
 \boxed{\;\mathbb{B}\mathbb{S} = \mathbb{S}\mathbb{B} = \mathbb{B} \qquad \text{for each of the remarkable subspaces } \mathbb{S}\;},
 $$
 
-because a left ideal containing a unit is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{B}_{\Psi}$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{B}_{\Phi}$, and $ie_t$ is in the anti-quaternion subspace.
+because a left ideal containing an invertible element is everything, and each of the remarkable subspaces contains a unit: $e_t$ is in the centre, in the quaternion subspace and in $\mathbb{B}_{\Psi}$, the element $\vec e_x$ is in the vector subspace and in $\mathbb{B}_{\Phi}$, and $ie_t$ is in the anti-quaternion subspace.
 
 **Theorem (the annihilators of the zero divisors).** Let $\tilde Q_1 \neq 0$ be a zero divisor of $\mathbb{B}$, so that $Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2 = 0$. Write $I_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_2\tilde Q_1 = 0$ and $J_{\tilde Q_1}$ for the set of $\tilde Q_2$ with $\tilde Q_1\tilde Q_2 = 0$. Then $I_{\tilde Q_1}$ is a minimal left ideal, $J_{\tilde Q_1}$ is a minimal right ideal, and each has real dimension $4$.
 

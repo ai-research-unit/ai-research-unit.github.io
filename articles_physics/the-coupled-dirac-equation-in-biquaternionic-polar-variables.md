@@ -10,7 +10,7 @@ $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the units and no constraint is lost or added. The parent states this and the article uses it.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.
 
 **The equation.** The coupled pair is
 
@@ -153,7 +153,7 @@ $$
 
 **The same translated hyperboloid as in the element form.** The radius is $k_m$ and the potential moves the centre. A constant potential therefore shifts every level and opens no gap, and the polar reason is the one-line reason of the element form: a shift of a variable cannot change a radius.
 
-**The velocity is a unit for every field.** $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ holds whatever the coupling, because the boost is a unit by construction and the density is a separate factor. The coupling does not enter that line at all, which is the chart's way of saying that the four-velocity is kinematical.
+**The velocity is invertible for every field.** $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ holds whatever the coupling, because the boost is invertible by construction and the density is a separate factor. The coupling does not enter that line at all, which is the chart's way of saying that the four-velocity is kinematical.
 
 **The strongest objection, and the answer.** The objection is that the chart has merely renamed: the covariant wavevector is defined as the canonical one plus the potential, so saying that "the boost is carried by the covariant wavevector" is a definition and not a result. The objection is correct as far as it goes, and the answer is the one the parent gives for the mass shell: what the proposition fixes is the *direction of the reading*. Read from the potential to the frame, the coupling changes the boost, hence the velocity; read from the frame to the potential, the velocity is what survives when the potential is removed. The chart states the identity, and the physical naming is the corpus's convention and not a consequence of the algebra.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The unit group of $M_n(\mathbb{R})$ has exactly two connected components, cut by the sign of the determinant, and the exponential does not reach all of the positive one: the matrix with both diagonal entries $-1$ and a $1$ above the diagonal has positive determinant and is not an exponential.**
+**The group of invertibles of $M_n(\mathbb{R})$ has exactly two connected components, cut by the sign of the determinant, and the exponential does not reach all of the positive one: the matrix with both diagonal entries $-1$ and a $1$ above the diagonal has positive determinant and is not an exponential.**
 
 The article proves that the determinant cuts $\mathrm{GL}_n(\mathbb{R})$ into exactly two components, that the polar decomposition joins every matrix of positive determinant to the identity, and that the exponential image is a proper part of that component. It proves the counterexample in full: the centraliser of the matrix is two-dimensional, the exponential of every element of that centraliser has a positive diagonal, and the matrix has a negative one. It replaces the false guess that the image is dense by the parity obstruction. It assumes *The Exponential of a Real Matrix and Its Image*, and defers the connectedness of $\mathrm{SO}(n)$ to *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
 
@@ -183,5 +183,5 @@ The determinant is a continuous surjection of $\mathrm{GL}_n(\mathbb{R})$ onto $
 - W. J. Culver, *On the existence and uniqueness of the real logarithm of a matrix*, Proceedings of the American Mathematical Society (1966), for the criterion of §*What the Image Is*.
 - [The Exponential of a Real Matrix and Its Image](the-exponential-of-a-real-matrix-and-its-image.html), for the series, the determinant identity and the local diffeomorphism.
 - [The Exponential of the Antisymmetric Part: One-Parameter Rotations](the-exponential-of-the-antisymmetric-part-one-parameter-rotations.html), for the connectedness of $\mathrm{SO}(n)$.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the unit group and the singular set.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the group of invertibles and the singular set.
 - [The Minimal Polynomial over $\mathbb{R}$ and the Real Jordan Form](the-minimal-polynomial-over-r-and-the-real-jordan-form.html), for the Jordan blocks at a negative eigenvalue.

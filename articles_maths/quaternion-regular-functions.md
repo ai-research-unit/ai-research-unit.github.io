@@ -22,7 +22,7 @@ $$
 
 with $e_t^{\natural} = e_t$ and $\vec e_k^{\natural} = -\vec e_k$; the bar conjugates the basis elements, not the derivatives.
 
-**Proposition.** The units satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_t$, and consequently
+**Proposition.** The invertibles satisfy the Clifford relation $e_\mu e_\nu^{\natural}+e_\nu e_\mu^{\natural} = 2\delta_{\mu\nu}e_t$, and consequently
 
 $$
 D\bar D = \bar D D = \Delta,

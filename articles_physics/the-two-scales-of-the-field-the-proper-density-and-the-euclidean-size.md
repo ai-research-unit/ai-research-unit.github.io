@@ -38,7 +38,7 @@ with $\theta_{\mathrm{rpd}}\ge0$ the **rapidity**. The half-angle in the exponen
 
 **The two names for the density.** The block's fluid articles write $\rho_{\mathrm{num}}=r^{2}$ and call it the **proper density**. The polar-variable articles write $n=r^{2}\cosh\theta_{\mathrm{rpd}}$ and call it the **density** [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html). This article shows that the first is the invariant length of the current over $c$ and the second its time component over $c$, and proposes no change of letters: **the two names stay, and the relation between them is the subject.**
 
-**Units.** The field $\tilde\Xi$ carries the amplitude's units, $r$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the units of a number density, and $j^{0}$ density times velocity. No numerical value in this article depends on the units, all statements being ratios or identities between quantities of the same dimension.
+**Units.** The field $\tilde\Xi$ carries the amplitude's units, $r$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the invertibles of a number density, and $j^{0}$ density times velocity. No numerical value in this article depends on the invertibles, all statements being ratios or identities between quantities of the same dimension.
 
 ## The Two Numbers
 

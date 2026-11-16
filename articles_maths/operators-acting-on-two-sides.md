@@ -57,7 +57,7 @@ $$
 
 **Proposition (injectivity in each slot).** For a fixed unit $\tilde Q_2$, the map $\tilde Q\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is injective; for a fixed unit $\tilde Q$, the map $\tilde Q_2\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is injective.
 
-*Proof.* $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$, and $\tilde Q_2$ is a unit, so $\tilde Q$ is recovered. The second statement is $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$ with $\tilde Q$ a unit.
+*Proof.* $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$, and $\tilde Q_2$ is invertible, so $\tilde Q$ is recovered. The second statement is $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$ with $\tilde Q$ an invertible element.
 
 **The zero operator.** $L_{\tilde Q}R_{\tilde Q_2}=0$ exactly when $\tilde Q=0$ or $\tilde Q_2=0$. If one parameter is zero the operator is zero. Conversely, if both are nonzero, choose entries $Q_{ab}\neq0$ and $P_{cd}\neq0$ in the $2\times2$ model and put $X=E_{bc}$; then $(QXP)_{ad}=Q_{ab}P_{cd}\neq0$.
 
@@ -75,7 +75,7 @@ $$
 
 **The dimension.** The parameter space has complex dimension eight. The generic orbit has dimension one, so the cone has complex dimension seven. The zero operator is the image of every pair with a zero parameter, and it is the vertex of the cone.
 
-**The normalisation.** A pair with $\tilde Q$ a unit can be put in the normal form $(\tilde Q,e_t)$ by the scaling $\lambda=\tilde Q^{-1}$, which gives the left multiplication; a pair with $\tilde Q_2$ a unit can be put in the form $(e_t,\tilde Q_2)$, which gives the right multiplication. The scaling is therefore the reason the cone has a complex seven-dimensional body and a complex four-dimensional boundary on each side.
+**The normalisation.** A pair with $\tilde Q$ an invertible element can be put in the normal form $(\tilde Q,e_t)$ by the scaling $\lambda=\tilde Q^{-1}$, which gives the left multiplication; a pair with $\tilde Q_2$ an invertible element can be put in the form $(e_t,\tilde Q_2)$, which gives the right multiplication. The scaling is therefore the reason the cone has a complex seven-dimensional body and a complex four-dimensional boundary on each side.
 
 ### $L_{\tilde Q}$ and $R_{\tilde Q}$ as Boundary Cases
 
@@ -101,19 +101,19 @@ $$
 
 **The powers.** By induction, $(L_{\tilde Q}R_{\tilde Q_2})^n=L_{\tilde Q^n}R_{\tilde Q_2^n}$ for every $n\geq1$.
 
-**The inverses.** $L_{\tilde Q}R_{\tilde Q_2}$ is invertible exactly when both parameters are units, and then
+**The inverses.** $L_{\tilde Q}R_{\tilde Q_2}$ is invertible exactly when both parameters are invertible, and then
 
 $$
 (L_{\tilde Q}R_{\tilde Q_2})^{-1}=L_{\tilde Q^{-1}}R_{\tilde Q_2^{-1}}.
 $$
 
-*Proof.* The inverse is verified by the composition law. Conversely, if the operator is invertible it is injective; a nonzero kernel of $\tilde Q$ or of $\tilde Q_2$ would give a nonzero kernel of the operator, so both are units.
+*Proof.* The inverse is verified by the composition law. Conversely, if the operator is invertible it is injective; a nonzero kernel of $\tilde Q$ or of $\tilde Q_2$ would give a nonzero kernel of the operator, so both are invertible.
 
 **The identity.** $L_{\tilde Q}R_{\tilde Q_2}=\mathrm{id}$ exactly when $\tilde Q\tilde Q_2=e_t$ and $\tilde Q$ is central. The proof is the evaluation at $e_t$ and then the commutation with every $X$; the central solutions are $\tilde Q=\lambda e_t$, $\tilde Q_2=\lambda^{-1}e_t$.
 
 ### Closed Under Multiplication, Not Under Addition
 
-**Proposition (closure under composition).** The set $\operatorname{End}_{LR}(\mathbb{B})=\{L_{\tilde Q}R_{\tilde Q_2}\}$ is closed under composition, by the composition law. It contains the identity $L_{e_t}R_{e_t}$ and is closed under inversion on the units.
+**Proposition (closure under composition).** The set $\operatorname{End}_{LR}(\mathbb{B})=\{L_{\tilde Q}R_{\tilde Q_2}\}$ is closed under composition, by the composition law. It contains the identity $L_{e_t}R_{e_t}$ and is closed under inversion wherever the element is invertible.
 
 **Proposition (not closed under addition).** The sum of two such operators need not be a two-sided operator. The simplest example is
 
@@ -286,7 +286,7 @@ The self-adjoint two-sided operators are therefore the scalar multiples of the d
 
 *Proof.* Write $A=\mathsf M_2(\tilde Q)\neq0$ and $B=\mathsf M_2(\tilde Q_2)$. Self-adjointness is $AXB=BXA$ for every $X\in M_2(\mathbb{C})$. On the matrix units $X=E_{ij}$ this reads $A_{ik}B_{lj}=B_{ik}A_{lj}$ for all $i,j,k,l$. Choose $(k_0,i_0)$ with $A_{k_0i_0}\neq0$ and put $\lambda=B_{k_0i_0}/A_{k_0i_0}$; taking $i=k_0$, $k=i_0$ gives $B_{lj}=\lambda A_{lj}$ for all $l,j$, so $B=\lambda A$ and $\tilde Q_2=\lambda\tilde Q$. Conversely, $\tilde Q_2=\lambda\tilde Q$ makes the two sides equal. The argument uses no inverse, so it covers the zero divisors.
 
-**The diagonal.** The operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint for every $\tilde Q$, including the zero divisors; it is the operator $X\mapsto\tilde QX\tilde Q$, and it is not an inner automorphism unless $\tilde Q$ is a unit.
+**The diagonal.** The operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint for every $\tilde Q$, including the zero divisors; it is the operator $X\mapsto\tilde QX\tilde Q$, and it is not an inner automorphism unless $\tilde Q$ is invertible.
 
 ### The Anti-Hermitian Pairs
 
@@ -317,9 +317,9 @@ $$
 \tilde Q_2\tilde Q=\pm e_t .
 $$
 
-Equivalently, $\tilde Q$ is a unit and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$.
+Equivalently, $\tilde Q$ is invertible and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$.
 
-*Proof.* If $L_{\tilde Q}R_{\tilde Q_2}$ preserves the form it is injective, because the form is non-degenerate, so both parameters are units. An invertible isometry has inverse its adjoint, so $L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_2}R_{\tilde Q}=\mathrm{id}$. By the composition law the composite is $L_{\tilde Q\tilde Q_2}R_{\tilde Q\tilde Q_2}$, and $L_{\tilde A}R_{\tilde A}=\mathrm{id}$ exactly when $\tilde A$ is central with $\tilde A^2=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q\tilde Q_2=\pm e_t$, and for units this is $\tilde Q_2\tilde Q=\pm e_t$ and $\tilde Q_2=\pm\tilde Q^{-1}$. Conversely, $\tilde Q_2=\pm\tilde Q^{-1}$ makes $L_{\tilde Q}R_{\tilde Q_2}=\pm\mathrm{Ad}_{\tilde Q}$, and the inner automorphism and its negative preserve the form.
+*Proof.* If $L_{\tilde Q}R_{\tilde Q_2}$ preserves the form it is injective, because the form is non-degenerate, so both parameters are invertible. An invertible isometry has inverse its adjoint, so $L_{\tilde Q}R_{\tilde Q_2}L_{\tilde Q_2}R_{\tilde Q}=\mathrm{id}$. By the composition law the composite is $L_{\tilde Q\tilde Q_2}R_{\tilde Q\tilde Q_2}$, and $L_{\tilde A}R_{\tilde A}=\mathrm{id}$ exactly when $\tilde A$ is central with $\tilde A^2=e_t$, that is $\tilde A=\pm e_t$. Hence $\tilde Q\tilde Q_2=\pm e_t$, and for invertibles this is $\tilde Q_2\tilde Q=\pm e_t$ and $\tilde Q_2=\pm\tilde Q^{-1}$. Conversely, $\tilde Q_2=\pm\tilde Q^{-1}$ makes $L_{\tilde Q}R_{\tilde Q_2}=\pm\mathrm{Ad}_{\tilde Q}$, and the inner automorphism and its negative preserve the form.
 
 **The group.** The isometries of the family are the two cosets
 
@@ -328,7 +328,7 @@ L_{\tilde Q}R_{\tilde Q^{-1}}=\mathrm{Ad}_{\tilde Q},\qquad
 L_{\tilde Q}R_{-\tilde Q^{-1}}=-\mathrm{Ad}_{\tilde Q},
 $$
 
-with $\tilde Q$ a unit. The inner automorphism depends on $\tilde Q$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is
+with $\tilde Q$ an invertible element. The inner automorphism depends on $\tilde Q$ only through its class in $\mathbb{B}^{\times}/\mathbb{C}^{\times}$, so the group is
 
 $$
 \{\pm\mathrm{Ad}_{\tilde Q}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\},
@@ -350,7 +350,7 @@ $$
 \tilde Q\tilde Q_2=e_t .
 $$
 
-Then $\tilde Q_2=\tilde Q^{-1}$ and $L_{\tilde Q}R_{\tilde Q_2}=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra for every unit $\tilde Q$.
+Then $\tilde Q_2=\tilde Q^{-1}$ and $L_{\tilde Q}R_{\tilde Q_2}=\mathrm{Ad}_{\tilde Q}$, an automorphism of the algebra for every invertible $\tilde Q$.
 
 *Proof.* Multiplicativity reads
 
@@ -371,7 +371,7 @@ $$
 
 for all $X,Y$. The scalar is the central product of the parameters, not a norm. The genuine multiplicative case is $\mu=1$.
 
-**Multiplicative and isometric.** A nonzero operator that is both multiplicative and an isometry is an inner automorphism $\mathrm{Ad}_{\tilde Q}$ with $\tilde Q$ a unit, without the minus: the isometry criterion allows $\tilde Q_2\tilde Q=-e_t$, and the multiplicative criterion excludes it.
+**Multiplicative and isometric.** A nonzero operator that is both multiplicative and an isometry is an inner automorphism $\mathrm{Ad}_{\tilde Q}$ with $\tilde Q$ an invertible element, without the minus: the isometry criterion allows $\tilde Q_2\tilde Q=-e_t$, and the multiplicative criterion excludes it.
 
 ### The Absence of a Pin Group
 
@@ -405,7 +405,7 @@ $$
 
 The three criteria hold at once: the parameters are proportional with $\lambda=-1$, so the operator is self-adjoint; $\tilde Q_2\tilde Q=(-\vec e_x)\vec e_x=e_t$, so it preserves the form; and $\tilde Q_2=\tilde Q^{-1}$, so it is multiplicative. It is the least degenerate two-sided operator after the identity.
 
-**A self-adjoint operator with a null parameter.** For $\tilde Q=e_t+i\vec e_z$, a zero divisor with $\tilde Q^2=2\tilde Q$, the diagonal operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint by the criterion with $\lambda=1$, although the parameter is not a unit. Self-adjointness is a condition on the pair, not on invertibility; the form-preserving criterion, by contrast, forces both parameters to be units.
+**A self-adjoint operator with a null parameter.** For $\tilde Q=e_t+i\vec e_z$, a zero divisor with $\tilde Q^2=2\tilde Q$, the diagonal operator $L_{\tilde Q}R_{\tilde Q}$ is self-adjoint by the criterion with $\lambda=1$, although the parameter is not invertible. Self-adjointness is a condition on the pair, not on invertibility; the form-preserving criterion, by contrast, forces both parameters to be units.
 
 **A diagonal operator multiplicative up to sign.** For the pure unit $\vec e_x$, the product of the parameters is $\vec e_x^2=-e_t$, central, so the partial law applies with the scalar $-1$:
 

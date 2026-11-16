@@ -14,7 +14,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
-The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Units*; the roots of $+1$ are *Idempotents*; the minimal ideals the nilpotents generate are *The Polarized Module of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Invertibles*; the roots of $+1$ are *Idempotents*; the minimal ideals the nilpotents generate are *The Polarized Module of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -134,13 +134,13 @@ $$
 
 The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. This is the criterion of §*The Criterion*: an element has vanishing square exactly when it is pure with isotropic vector part, $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.
 
-The nonzero roots of $0$ are **not units**. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and a unit is never a zero divisor. The roots of the three central values and their invertibility are read value by value in *Idempotents* and *Square Roots of an Element*.
+The nonzero roots of $0$ are **not units**. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and an invertible element is never a zero divisor. The roots of the three central values and their invertibility are read value by value in *Idempotents* and *Square Roots of an Element*.
 
 ## The Nilpotents
 
 **The nilpotents of the plain algebra are exactly the nonzero pure elements with isotropic vector part, $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace; every nilpotent has index two.**
 
-The **nilpotents** of the biquaternion algebra are the nonzero elements whose square vanishes. The class is small and rigid. A nilpotent has vanishing scalar part, so it is a pure biquaternion; its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind, its own two-sided annihilating partner. The nilpotents are exactly the pure family of the zero divisors of *Zero Divisors and Units*.
+The **nilpotents** of the biquaternion algebra are the nonzero elements whose square vanishes. The class is small and rigid. A nilpotent has vanishing scalar part, so it is a pure biquaternion; its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind, its own two-sided annihilating partner. The nilpotents are exactly the pure family of the zero divisors of *Zero Divisors and Invertibles*.
 
 ### The Definition
 
@@ -296,7 +296,7 @@ Since a nilpotent is pure, its scalar part vanishes, and the vanishing of the sc
 | $\mathbb{B}_{\Psi}$, the Hermitian subspace | none |
 | $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | none |
 
-The entries are forced: the centre, the quaternion subspace and the anti-quaternion subspace consist of units and $0$ and carry no zero divisor; in the two Hermitian subspaces the square of an element is $2a_0\tilde Q$ and the Hermitian part of a nilpotent is $0$, so a Hermitian nilpotent vanishes. The vector subspace is thus the only remarkable subspace with a nonzero nilpotent, and every nonzero nilpotent lies in it. The vector subspace is not a subalgebra, but it is exactly the union of the scalar multiples of the nilpotents together with the origin, as the criterion shows.
+The entries are forced: the centre, the quaternion subspace and the anti-quaternion subspace consist of invertibles and $0$ and carry no zero divisor; in the two Hermitian subspaces the square of an element is $2a_0\tilde Q$ and the Hermitian part of a nilpotent is $0$, so a Hermitian nilpotent vanishes. The vector subspace is thus the only remarkable subspace with a nonzero nilpotent, and every nonzero nilpotent lies in it. The vector subspace is not a subalgebra, but it is exactly the union of the scalar multiples of the nilpotents together with the origin, as the criterion shows.
 
 ## Summary
 

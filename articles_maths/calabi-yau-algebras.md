@@ -82,7 +82,7 @@ $$
 
 nondegenerate in the sense that $\langle a,a'\rangle = 0$ for all $a$ implies $a' = 0$.
 
-**Theorem (Van den Bergh, standard).** Let $A$ be a homologically smooth, proper, graded $k$-algebra with finite-dimensional graded pieces. Then $A$ is $d$-CY if and only if $A$ carries a Calabi–Yau trace of degree $d$; the trace is unique up to multiplication by a unit of $k$ when it exists.
+**Theorem (Van den Bergh, standard).** Let $A$ be a homologically smooth, proper, graded $k$-algebra with finite-dimensional graded pieces. Then $A$ is $d$-CY if and only if $A$ carries a Calabi–Yau trace of degree $d$; the trace is unique up to multiplication by an invertible element of $k$ when it exists.
 
 **Remark.** The trace formulation makes the analogy with the classical situation explicit and shows why the notion is a *duality*: the pairing $\langle a,b\rangle = \operatorname{tr}(ab)$ is the algebraic substitute for an integration pairing on a manifold, and the vanishing on commutators is the algebraic substitute for the statement that an integral of an exact form vanishes. The geometric integration theory, the Hodge theory and the de Rham complex of a manifold belong to Part II; the algebraic pairing above is defined entirely in terms of the multiplication of $A$ and the linear functional $\operatorname{tr}$.
 

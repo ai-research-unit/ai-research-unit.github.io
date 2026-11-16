@@ -219,7 +219,7 @@ The length and the ordinary rank are independent: a product of full rank has len
 | $N=n^{2}$ | the dimension of the algebra |
 | $L_{E_{\mu}}R_{E_{\nu}}$ | the orthonormal basis of products |
 | $c(M)$ | the coefficient array of $M$, of size $N\times N$ |
-| $[A]$ | the coordinate column of $A$ in the units |
+| $[A]$ | the coordinate column of $A$ in the invertibles |
 | $\ell(M)$ | the length, the least number of products |
 | $\mathcal{C}_{r}$ | the set of operators of length at most $r$ |
 | $2rn^{2}-r^{2}$ | the complex dimension of $\mathcal{C}_{r}$ |

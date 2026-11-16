@@ -310,7 +310,7 @@ in agreement with the imaginary-time route. The two computations are independent
 
 ## The Polar Word at the Horizon
 
-The boost is a unit for every finite rapidity, so its polar word has scale one and no phase:
+The boost is invertible for every finite rapidity, so its polar word has scale one and no phase:
 
 $$
 \tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -343,9 +343,9 @@ $$
 
 the proper acceleration. This is the statement of the preceding section read on the word: the surface gravity is the rate of the rapidity, and at the horizon the rate is the redshifted one, $\kappa$. The temperature is the period of the imaginary rapidity: the continuation $\theta_{\mathrm{rpd}}\mapsto\theta_{\mathrm{rpd}}+2\pi i$ closes the thermal circle, and the proper-time period is $\beta=2\pi/\kappa$. In the polar language, the thermal circle is the compactification of the imaginary rapidity of the boost factor, and the horizon is where the real part of that rapidity diverges.
 
-**The reading.** The horizon is the boundary of the polar chart, not a point of the algebra. The boost is a unit at every finite rapidity; the limit that reaches the horizon is a null idempotent, and the physical frame there is lightlike. The word supplies three things and no more: the two-term splitting that makes the collapse visible, the identification of the rapidity rate with the proper acceleration, and the period $2\pi$ of the imaginary angle that fixes the temperature. It does not supply the horizon geometry, the two-point function, or the thermal interpretation; those are the preceding sections' inputs.
+**The reading.** The horizon is the boundary of the polar chart, not a point of the algebra. The boost is invertible at every finite rapidity; the limit that reaches the horizon is a null idempotent, and the physical frame there is lightlike. The word supplies three things and no more: the two-term splitting that makes the collapse visible, the identification of the rapidity rate with the proper acceleration, and the period $2\pi$ of the imaginary angle that fixes the temperature. It does not supply the horizon geometry, the two-point function, or the thermal interpretation; those are the preceding sections' inputs.
 
-**The boundary.** Do not read the limit as a Lorentz transformation. $\tilde\Pi_+$ is not a unit and does not act as a frame change; it is the boundary value of a family of frames none of which is lightlike. The divergence is in the chart, not in the algebra: every finite-rapidity rotor is a regular Hermitian unit. This is the distinction the massless-limit article draws between a value of the word and a boundary value of its family.
+**The boundary.** Do not read the limit as a Lorentz transformation. $\tilde\Pi_+$ is not invertible and does not act as a frame change; it is the boundary value of a family of frames none of which is lightlike. The divergence is in the chart, not in the algebra: every finite-rapidity rotor is a regular Hermitian unit. This is the distinction the massless-limit article draws between a value of the word and a boundary value of its family.
 
 ## What the Biquaternion Framework Adds, and What It Transcribes
 
@@ -355,7 +355,7 @@ the proper acceleration. This is the statement of the preceding section read on 
 - *The horizon is the zero-divisor cone.* The Rindler horizon of the accelerated observer is the null cone of the material sector, the zero-divisor set of the algebra. The wedge is a connected region on which the biquaternion norm has one sign; the horizon is where it changes.
 - *The thermal circle lies along the material time.* The KMS analyticity is a continuation in the $i r'_t$ direction, i.e. the complexification of the Rindler time, and the flow that acts is an inner automorphism by rotors in $\mathbb{B}_{\Psi}$. The material sector supplies the time in which the state is thermal; the informational sector supplies the operator that generates the flow.
 - *The boost is two-sided.* The generator acts on $\mathbb{B}_{\Phi}$ through the rotor anticommutator $G_1\tilde R_\Phi+\tilde R_\Phi G_1$, not through the commutator. This is the curved-spacetime companion's caution, and the Unruh flow is a case where it is load-bearing: the commutator generates a rotation in the plane orthogonal to the boost (it vanishes on the boost plane itself) and does not produce the boost.
-- *The horizon is the boundary of the polar chart.* The boost rotor is a unit at every finite rapidity; the renormalised word collapses to a null idempotent as the rapidity diverges, and the surface gravity is the rate of the divergence. The algebra contains the boundary value, not the horizon geometry.
+- *The horizon is the boundary of the polar chart.* The boost rotor is invertible at every finite rapidity; the renormalised word collapses to a null idempotent as the rapidity diverges, and the surface gravity is the rate of the divergence. The algebra contains the boundary value, not the horizon geometry.
 
 **What it only transcribes.**
 

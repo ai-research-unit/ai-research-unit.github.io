@@ -45,9 +45,9 @@ so each signed one-sided multiplication is the unsigned one composed with the gr
 
 *Proof.* Linearity is that of $\alpha$ and of the multiplication; the factorisation is $\alpha = \Gamma$ on the underlying vector space and the commutation of the grading with the left multiplication, $\Gamma(ax) = \alpha(a\alpha(x))\cdot$ — computed in the graded case as $\varepsilon_a\varepsilon_x = \varepsilon_{ax}$, so that $\Gamma L_a = L_a\Gamma$ on the homogeneous elements. The vanishing uses $L^\alpha_a(1) = a$ when $\alpha(1) = 1$.
 
-**Proposition (bijectivity).** The signed left multiplication is bijective if and only if $a$ is a unit and the grade involution is bijective; in particular it is bijective for every unit $a$ in a graded algebra with an automorphism $\alpha$.
+**Proposition (bijectivity).** The signed left multiplication is bijective if and only if $a$ is invertible and the grade involution is bijective; in particular it is bijective for every invertible $a$ in a graded algebra with an automorphism $\alpha$.
 
-*Proof.* The composite of the bijection $\Gamma$ with the left multiplication $L_a$, which is bijective exactly for a unit $a$ in a unital algebra.
+*Proof.* The composite of the bijection $\Gamma$ with the left multiplication $L_a$, which is bijective exactly for an invertible element $a$ in a unital algebra.
 
 ## The Composition Law
 

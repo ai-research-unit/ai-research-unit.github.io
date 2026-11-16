@@ -37,9 +37,9 @@ $$
 
 **An eigenvalue is a scalar for which a left ideal is proper, and the criterion turns that into one equation.**
 
-$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not a unit}\iff(\lambda-Q_t)^2+B^2=0 .$$
+$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not invertible}\iff(\lambda-Q_t)^2+B^2=0 .$$
 
-**The proof uses no matrix.** If $\tilde Q-\lambda e_t$ is a unit, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,
+**The proof uses no matrix.** If $\tilde Q-\lambda e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,
 
 $$
 (\tilde Q-\lambda e_t)(\tilde Q-\lambda e_t)^{\natural}=\bigl((\lambda-Q_t)^2+B^2\bigr)e_t ,
@@ -234,7 +234,7 @@ $$
 (e\mathbb{B}e')(e\mathbb{B}e')=e\mathbb{B}(e'e)\mathbb{B}e'=0 .
 $$
 
-**For a unit the additive split has a multiplicative form.**
+**For an invertible element the additive split has a multiplicative form.**
 
 $$
 \tilde Q=\tilde Q_s\tilde U,\qquad \tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon,\qquad \tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon .
@@ -301,7 +301,7 @@ and the exponential of every element of the cone lies in the unit half $\Sigma_{
 **Similar elements have the same spectrum, and off the cone the converse holds.**
 
 $$
-\tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{a unit})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
+\tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{an invertible element})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
 $$
 
 and off the cone the class is determined by the unordered pair $\{\lambda_+,\lambda_-\}$. On the cone the spectrum is the singleton $\{Q_t\}$ and carries no information beyond the scalar part: exactly two classes share it, the central class and the Jordan class.
@@ -577,7 +577,7 @@ so a linear perturbation of the parameter produces a square-root response, becau
 ## Summary
 
 - The spectrum is $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, and the discriminant of the characteristic polynomial is $-4B^2$.
-- An eigenvalue is a scalar for which $\tilde Q-\lambda e_t$ is not a unit; the criterion needs no module and no matrix.
+- An eigenvalue is a scalar for which $\tilde Q-\lambda e_t$ is not invertible; the criterion needs no module and no matrix.
 - $B^2\neq0$ is equivalent to distinct eigenvalues, semisimplicity and diagonalisability; $B^2=0$ is the spectral-degenerate cone.
 - The characteristic polynomial has two coefficients and the minimal polynomial separates the four types; two pairs of types share a characteristic polynomial.
 - Off the cone the root $\vec Z=-i\vec Q/B$ exists, the spectral idempotents are the Lagrange idempotents, and each eigenspace is a right ideal of complex dimension two.
@@ -617,4 +617,4 @@ so a linear perturbation of the parameter produces a square-root response, becau
 
 **In this category.** *The Modules: What the Algebra Acts On* supplies the right ideals that are the eigenspaces and the two spinor spaces that are the columns. *The Four Forms and the Four Norms* supplies the norm whose vanishing is the cone $\Sigma_{01}$ and the positivity the cone lacks. *The H Norm* and *The N Norm* carry the two conditions that the sector table keeps apart.
 
-**The sources of this entry.** [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html) is the diabolic–exceptional table and the square-root law. [Four-Vectors and the Interval](four-vectors-and-the-interval.html) is the Doppler pair and the warning that two eigenvalues are not two particles. [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) is the independence of the cone from invertibility. [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html) treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.
+**The sources of this entry.** [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html) is the diabolic–exceptional table and the square-root law. [Four-Vectors and the Interval](four-vectors-and-the-interval.html) is the Doppler pair and the warning that two eigenvalues are not two particles. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) is the independence of the cone from invertibility. [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html) treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.

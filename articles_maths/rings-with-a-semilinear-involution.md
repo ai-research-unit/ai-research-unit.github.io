@@ -67,7 +67,7 @@ The semilinear case is not the linear one with a decoration: four identities tha
 
 **(a) The trivial twist.** $\varsigma = \mathrm{id}$ gives the ordinary involutions of *Involutive Rings*: the transpose, the conjugate transpose, the group-ring inversion. Every statement above specialises to the known one.
 
-**(b) The transpose twisted by a symmetric unit.** On $A = M_n(R)$ let $\varsigma(X) = GXG^{-1}$ be the inner automorphism of a unit $G$ with $G^{\mathrm t} = G$. The transpose $T(X) = X^{\mathrm t}$ satisfies
+**(b) The transpose twisted by a symmetric unit.** On $A = M_n(R)$ let $\varsigma(X) = GXG^{-1}$ be the inner automorphism of an invertible element $G$ with $G^{\mathrm t} = G$. The transpose $T(X) = X^{\mathrm t}$ satisfies
 
 $$
 T\varsigma(X) = G^{-\mathrm t}X^{\mathrm t}G^{\mathrm t} = G^{-1}X^{\mathrm t}G = \varsigma^{-1}T(X),
@@ -99,7 +99,7 @@ The naive identities fail for a nontrivial twist: $\sigma$ commutes with $\varsi
 | $\sigma^2 = \mathrm{id}$, $\sigma\varsigma\sigma^{-1} = \varsigma^{-1}$ | Dihedral relations; $\langle\varsigma,\sigma\rangle$ dihedral |
 | $A^\sigma$ | Fixed set of $\sigma$; additive subgroup, not stable under $\varsigma$ in general |
 | $\sigma\varsigma^2 = \varsigma^{-2}\sigma$ | $\sigma$ centralises $\varsigma^2$ iff $\varsigma^4 = \mathrm{id}$ |
-| $G^{\mathrm t} = G$ | Condition on a unit making the transpose semilinear for the inner twist |
+| $G^{\mathrm t} = G$ | Condition on an invertible element making the transpose semilinear for the inner twist |
 
 ## Further Reading
 

@@ -148,7 +148,7 @@ When they hold, $L_x\circ L_y=L_{xy}$ if $K_1=\mathrm{id}$ and $L_x\circ L_y=L_{
 
 *Proof.* $x\star 1=K_1(x)K_2(1)=K_1(x)$, since $\varsigma(1)=1$; this is $x$ for every $x$ if and only if $K_1=\mathrm{id}$.
 
-**Corollary (the units, in the two slots).** $1$ is a left unit for the two settings whose second slot is trivial and a right unit for the two whose first slot is trivial, so exactly one of the four has a two-sided unit. These are the four unit entries of the property table of *The Four General Products and Their Relations over the Biquaternion Algebra* and of its §*Identities and Units*, where a left unit is called a left identity, and the reason for them is the two slots.
+**Corollary (the units, in the two slots).** $1$ is a left unit for the two settings whose second slot is trivial and a right unit for the two whose first slot is trivial, so exactly one of the four has a two-sided unit. These are the four unit entries of the property table of *The Four General Products and Their Relations over the Biquaternion Algebra* and of its §*Identities and Invertibles*, where a left unit is called a left identity, and the reason for them is the two slots.
 
 **Theorem (associativity needs both slots trivial, in $\mathbb{B}$).** In $\mathbb{B}$ the product $\star_{K_1K_2}$ is associative if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$.
 
@@ -217,7 +217,7 @@ $$
 | $\sigma$ | $\mathrm{id}$ | $\bar{\tilde Q_4}$ | $\tilde Q\mapsto\tilde Q_4\tilde Q\bar{\tilde Q_4}$ | $\tilde Q_4\bar{\tilde Q_4}$, scalar part the Krein norm |
 | $\sigma$ | $\alpha$ | $\tilde Q_4^{\ast}$ | the Hermitian pair, $\tilde Q\mapsto\tilde Q_4\tilde Q\tilde Q_4^{\ast}$ | $\tilde Q_4\tilde Q_4^{\ast}$, Hermitian |
 
-**Example (the four forms at one unit).** For $\tilde Q_4=(1+i)e_t+\vec e_x$, a unit with $\langle\tilde Q_4\rangle_{\natural}=1+2i$, the four operators evaluated at $e_t$ give
+**Example (the four forms at one unit).** For $\tilde Q_4=(1+i)e_t+\vec e_x$, an invertible element with $\langle\tilde Q_4\rangle_{\natural}=1+2i$, the four operators evaluated at $e_t$ give
 
 $$
 \tilde Q_4^{2}=(-1+2i)e_t+2(1+i)\vec e_x,\quad
@@ -268,7 +268,7 @@ The products do not supply 1, and they supply the *repertoire* of 2 without choo
 
 ### The Four Operators of $\vec e_x$
 
-Fix the element $\tilde Q_4=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
+Fix the element $\tilde Q_4=\vec e_x$, an invertible element with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:
 
 $$
 \begin{aligned}
@@ -336,7 +336,7 @@ with determinant of the restriction $+1$ and $-1$. The two insertions that read 
 
 *Proof.* $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute.
 
-**Theorem (the determinant table).** For a unit $\tilde Q_4$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then
+**Theorem (the determinant table).** For an invertible element $\tilde Q_4$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then
 
 | $\tilde Q_4$ | none | sign | star | both |
 |---|---|---|---|---|

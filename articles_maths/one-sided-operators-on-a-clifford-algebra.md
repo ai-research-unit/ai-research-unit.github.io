@@ -21,7 +21,7 @@ $$
 \Lambda^{\mathrm{J}}_x(y)=\mathrm{J}(x)\,y, \qquad \qquad \mathrm P^{c}_x(y)=y\,c(x).
 $$
 
-With $\mathrm{J}=\mathrm{id}$ this gives the left multiplication $L_x=\Lambda_{\mathrm{id},x}$, and with $\mathrm{J}=\alpha$ the signed left multiplication $L_{\alpha(x)}=\Lambda^{\alpha}_x$. With $c=r$ it gives the reversion-twisted right multiplication $R_{x^{r}}=\mathrm P^{r}_x$, and with $c=\bar\cdot$ the conjugation-twisted one $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$. The plain right multiplication $R_x$ is $\mathrm P_{\mathrm{id},x}$, and the identity is an automorphism and not an anti-automorphism, which is the source of the exception in the composition law below. The inverse variants are defined on the units.
+With $\mathrm{J}=\mathrm{id}$ this gives the left multiplication $L_x=\Lambda_{\mathrm{id},x}$, and with $\mathrm{J}=\alpha$ the signed left multiplication $L_{\alpha(x)}=\Lambda^{\alpha}_x$. With $c=r$ it gives the reversion-twisted right multiplication $R_{x^{r}}=\mathrm P^{r}_x$, and with $c=\bar\cdot$ the conjugation-twisted one $R_{x^{\natural}}=\mathrm P^{\bar\cdot}_x$. The plain right multiplication $R_x$ is $\mathrm P_{\mathrm{id},x}$, and the identity is an automorphism and not an anti-automorphism, which is the source of the exception in the composition law below. The inverse variants are defined on the invertibles.
 
 ### The Composition Laws
 

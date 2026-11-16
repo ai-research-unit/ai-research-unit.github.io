@@ -121,7 +121,7 @@ $$
 
 **Remark.** The derived operation is the reason the category is not empty and not artificial: every algebra with a conjugate-linear involution carries one, and the algebras of the corpus — the complex matrices with the conjugate transpose, the group algebra with $f \mapsto f^{*}$, the biquaternion algebra with the star — each carry one. The operator theory of the derived operation, its left and right multiplications and its two-sided operator, is the operator theory of this category.
 
-**Proposition (the units of the derived operation).** Let $A$ be a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $\star$ be the derived operation.
+**Proposition (the invertibles of the derived operation).** Let $A$ be a unital associative $R$-algebra with a $\varsigma$-semilinear involution $*$, and let $\star$ be the derived operation.
 
 (i) The unit $1$ of $A$ is a right $\star$-unit: $x \star 1 = x\,1^{*} = x$ for every $x$.
 (ii) $A$ has a left $\star$-unit if and only if $* = \mathrm{id}$, and then $1$ is a two-sided unit and $\star$ is the original product.

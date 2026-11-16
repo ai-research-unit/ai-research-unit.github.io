@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This is the second article of the Integers system in Part V, and it occupies the **applications slot** of that system. The system is the ring $\mathbb{Z}$ of *The Integers*, and the object of study is its arithmetic modulo a fixed positive integer: the congruence relation, the quotient ring $\mathbb{Z}/n\mathbb{Z}$, the group of units, and the classical theorems of Euler, Fermat and Wilson together with the solution of linear and quadratic congruences. Where the algebra slot of the system studied $\mathbb{Z}$ as an initial ring, a Euclidean domain and a unique factorisation domain, this article studies the quotients of $\mathbb{Z}$ and the arithmetic that they carry.
+This is the second article of the Integers system in Part V, and it occupies the **applications slot** of that system. The system is the ring $\mathbb{Z}$ of *The Integers*, and the object of study is its arithmetic modulo a fixed positive integer: the congruence relation, the quotient ring $\mathbb{Z}/n\mathbb{Z}$, the group of invertibles, and the classical theorems of Euler, Fermat and Wilson together with the solution of linear and quadratic congruences. Where the algebra slot of the system studied $\mathbb{Z}$ as an initial ring, a Euclidean domain and a unique factorisation domain, this article studies the quotients of $\mathbb{Z}$ and the arithmetic that they carry.
 
 The system $\mathbb{Z}$ has no geometry and no analysis, and its applications are correspondingly arithmetic: the congruences are the whole of its applied content, and they are the origin of the finite rings and finite groups that occur throughout the corpus. The general theory of quotient rings, ideals and the first isomorphism theorem is from *Rings*, and the divisibility and factorisation theory of $\mathbb{Z}$ is from *The Integers* and *Unique Factorisation Domains*; the group-theoretic background, including the structure of finite abelian groups and the notion of a cyclic group, is from *Groups*. The quadratic reciprocity law is stated with a reference to the standard literature, and the analytic estimate of the distribution of the primes is not used.
 
-Throughout, $n$ is a positive integer, $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{Z}_n$ is the ring of residues modulo $n$, and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is the field with $p$ elements for $p$ prime; the class of $a$ is written $\bar a$ or $a \bmod n$, and $a \equiv b \pmod n$ means that $n$ divides $a - b$. The group of units of $\mathbb{Z}/n\mathbb{Z}$ is written $(\mathbb{Z}/n\mathbb{Z})^\times$, $\varphi$ is the Euler function, $\operatorname{ord}_n(a)$ is the multiplicative order of $a$ modulo $n$, and $\left(\frac{a}{p}\right)$ is the Legendre symbol. The base is the commutative ring with identity throughout, and the specific rings here are finite and commutative.
+Throughout, $n$ is a positive integer, $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{Z}_n$ is the ring of residues modulo $n$, and $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ is the field with $p$ elements for $p$ prime; the class of $a$ is written $\bar a$ or $a \bmod n$, and $a \equiv b \pmod n$ means that $n$ divides $a - b$. The group of invertibles of $\mathbb{Z}/n\mathbb{Z}$ is written $(\mathbb{Z}/n\mathbb{Z})^\times$, $\varphi$ is the Euler function, $\operatorname{ord}_n(a)$ is the multiplicative order of $a$ modulo $n$, and $\left(\frac{a}{p}\right)$ is the Legendre symbol. The base is the commutative ring with identity throughout, and the specific rings here are finite and commutative.
 
 ## Congruences
 
@@ -37,13 +37,13 @@ $$
 
 **Proof.** Surjectivity and the kernel are immediate from the division algorithm of *The Integers*, which shows that every class has a representative in $\{0, 1, \dots, n-1\}$. The universal property is the first isomorphism theorem of *Rings*.
 
-**Example.** The ring $\mathbb{Z}/12\mathbb{Z}$ has twelve elements; the classes $\bar 0, \bar 3, \bar 4, \bar 6, \bar 8, \bar 9$ are zero divisors, and $\bar 1, \bar 5, \bar 7, \overline{11}$ are units. The sum of two classes is computed by adding representatives and reducing, the product likewise.
+**Example.** The ring $\mathbb{Z}/12\mathbb{Z}$ has twelve elements; the classes $\bar 0, \bar 3, \bar 4, \bar 6, \bar 8, \bar 9$ are zero divisors, and $\bar 1, \bar 5, \bar 7, \overline{11}$ are invertible. The sum of two classes is computed by adding representatives and reducing, the product likewise.
 
 ### Arithmetic Modulo Small Numbers
 
-**Theorem.** In $\mathbb{Z}/n\mathbb{Z}$, an element $\bar a$ is a unit if and only if $\gcd(a, n) = 1$; it is a zero divisor if and only if $1 < \gcd(a,n) < n$, and it is nilpotent if and only if every prime dividing $n$ divides $a$.
+**Theorem.** In $\mathbb{Z}/n\mathbb{Z}$, an element $\bar a$ is invertible if and only if $\gcd(a, n) = 1$; it is a zero divisor if and only if $1 < \gcd(a,n) < n$, and it is nilpotent if and only if every prime dividing $n$ divides $a$.
 
-**Proof.** If $\gcd(a,n) = 1$, Bézout gives $ua + vn = 1$, hence $\bar u \bar a = \bar 1$. Conversely if $\bar a \bar u = \bar 1$ then $n \mid (au - 1)$, so any common divisor of $a$ and $n$ divides $1$. For the zero divisor statement, if $d = \gcd(a,n)$ with $1 < d < n$, then $\bar a \cdot \overline{n/d} = \overline{0}$ with $\overline{n/d} \neq \bar 0$; conversely a zero divisor is not a unit, so $\gcd(a,n) > 1$, and it is not $n$ unless $\bar a = \bar 0$. The nilpotency statement follows by writing $n$ as a product of prime powers.
+**Proof.** If $\gcd(a,n) = 1$, Bézout gives $ua + vn = 1$, hence $\bar u \bar a = \bar 1$. Conversely if $\bar a \bar u = \bar 1$ then $n \mid (au - 1)$, so any common divisor of $a$ and $n$ divides $1$. For the zero divisor statement, if $d = \gcd(a,n)$ with $1 < d < n$, then $\bar a \cdot \overline{n/d} = \overline{0}$ with $\overline{n/d} \neq \bar 0$; conversely a zero divisor is not invertible, so $\gcd(a,n) > 1$, and it is not $n$ unless $\bar a = \bar 0$. The nilpotency statement follows by writing $n$ as a product of prime powers.
 
 **Corollary.** For $n \geq 2$ the ring $\mathbb{Z}/n\mathbb{Z}$ is a field if and only if $n$ is prime, and it is an integral domain if and only if $n$ is prime; for $n$ composite it has zero divisors and is neither. In particular $\mathbb{F}_p$ is the field with $p$ elements, and every finite field of prime order arises this way.
 
@@ -66,7 +66,7 @@ $$
 
 **Proof.** The kernel of $\psi$ is the set of classes divisible by both $m$ and $n$, that is, by $mn$ since $m$ and $n$ are coprime; so $\psi$ is injective. The two rings have the same finite cardinality $mn$, so $\psi$ is bijective. The general case is induction.
 
-**Corollary.** The group of units satisfies
+**Corollary.** The group of invertibles satisfies
 
 $$
 (\mathbb{Z}/mn\mathbb{Z})^\times \cong (\mathbb{Z}/m\mathbb{Z})^\times \times (\mathbb{Z}/n\mathbb{Z})^\times
@@ -74,15 +74,15 @@ $$
 
 for coprime $m, n$, and the Euler function is multiplicative: $\varphi(mn) = \varphi(m)\varphi(n)$.
 
-**Proof.** The isomorphism is the restriction of $\psi$ to units, since an element of a product of rings is a unit exactly when each component is; the multiplicativity of $\varphi$ is then the multiplicativity of the cardinality.
+**Proof.** The isomorphism is the restriction of $\psi$ to units, since an element of a product of rings is invertible exactly when each component is; the multiplicativity of $\varphi$ is then the multiplicativity of the cardinality.
 
-**Example.** $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, and the class of $5$ corresponds to $(1, 2)$; the units of $\mathbb{Z}/6\mathbb{Z}$ are $\bar 1$ and $\bar 5$, corresponding to the pairs $(1,1)$ and $(1,2)$, which are exactly the elements of the product of the unit groups $\{1\} \subseteq \mathbb{Z}/2\mathbb{Z}$ and $\{1,2\} \subseteq \mathbb{Z}/3\mathbb{Z}$. The computation shows that the isomorphism of rings does not preserve the additive generator: the class $\bar 1$ corresponds to $(1,1)$, not to $(1,0)$.
+**Example.** $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$, and the class of $5$ corresponds to $(1, 2)$; the invertibles of $\mathbb{Z}/6\mathbb{Z}$ are $\bar 1$ and $\bar 5$, corresponding to the pairs $(1,1)$ and $(1,2)$, which are exactly the elements of the product of the groups of invertibles $\{1\} \subseteq \mathbb{Z}/2\mathbb{Z}$ and $\{1,2\} \subseteq \mathbb{Z}/3\mathbb{Z}$. The computation shows that the isomorphism of rings does not preserve the additive generator: the class $\bar 1$ corresponds to $(1,1)$, not to $(1,0)$.
 
 ### The Additive and Multiplicative Structure
 
-**Theorem.** $(\mathbb{Z}/n\mathbb{Z}, +)$ is a cyclic group of order $n$, generated by $\bar 1$; it is isomorphic to the group $\mathbb{Z}/n\mathbb{Z}$ of the notation. $(\mathbb{Z}/n\mathbb{Z}, \cdot)$ is a commutative monoid with identity and zero, and its group of units has order $\varphi(n)$.
+**Theorem.** $(\mathbb{Z}/n\mathbb{Z}, +)$ is a cyclic group of order $n$, generated by $\bar 1$; it is isomorphic to the group $\mathbb{Z}/n\mathbb{Z}$ of the notation. $(\mathbb{Z}/n\mathbb{Z}, \cdot)$ is a commutative monoid with identity and zero, and its group of invertibles has order $\varphi(n)$.
 
-**Proof.** The classes $\bar 0, \bar 1, \dots, \overline{n-1}$ are the multiples of $\bar 1$; the order statements are then immediate. The units are counted by the preceding section.
+**Proof.** The classes $\bar 0, \bar 1, \dots, \overline{n-1}$ are the multiples of $\bar 1$; the order statements are then immediate. The invertibles are counted by the preceding section.
 
 **Theorem.** Let $n = p_1^{k_1}\cdots p_r^{k_r}$ be the prime factorisation of $n$. Then
 
@@ -94,11 +94,11 @@ and $\varphi(n) = n \prod_{i=1}^{r}\left(1 - \frac{1}{p_i}\right) = \prod_i p_i^
 
 **Proof.** The decomposition is the Chinese remainder theorem applied to the prime powers; the formula for $\varphi$ is the multiplicativity together with $\varphi(p^k) = p^{k-1}(p-1)$, obtained by counting the integers in $\{1, \dots, p^k\}$ not divisible by $p$.
 
-**Theorem.** The group of units of $\mathbb{Z}/p^k\mathbb{Z}$ is cyclic for odd $p$; for $p = 2$ it is trivial for $k = 1$, of order $2$ for $k = 2$, and isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2^{k-2}\mathbb{Z}$ for $k \geq 3$.
+**Theorem.** The group of invertibles of $\mathbb{Z}/p^k\mathbb{Z}$ is cyclic for odd $p$; for $p = 2$ it is trivial for $k = 1$, of order $2$ for $k = 2$, and isomorphic to $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2^{k-2}\mathbb{Z}$ for $k \geq 3$.
 
 **Proof.** The result for odd $p$ is the existence of a primitive root modulo $p^k$: the group is cyclic of order $p^{k-1}(p-1)$, generated by a primitive root modulo $p$ lifted by Hensel's lemma. The powers of $2$ are the exceptional case, and the stated structure is the standard one; the argument is in *Groups* and in the references.
 
-## The Group of Units
+## The Group of Invertibles
 
 ### Euler's Function
 
@@ -121,7 +121,7 @@ and it is the Dirichlet series coefficient determined by $\sum_{n \geq 1} \varph
 $$ \boxed{\;a^{\varphi(n)} \equiv 1 \pmod n \;}.
 $$
 
-**Proof.** Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\varphi(n)} \prod_{u\in U} u$; cancelling the product, which is a unit, gives $\bar a^{\varphi(n)} = \bar 1$.
+**Proof.** Multiplication by $\bar a$ permutes the group $(\mathbb{Z}/n\mathbb{Z})^\times$, so $\prod_{u \in U} u = \prod_{u\in U} \bar a u = \bar a^{\varphi(n)} \prod_{u\in U} u$; cancelling the product, which is invertible, gives $\bar a^{\varphi(n)} = \bar 1$.
 
 **Theorem (Fermat's little theorem).** If $p$ is prime then for every integer $a$,
 
@@ -137,7 +137,7 @@ and if $p \nmid a$ then $a^{p-1} \equiv 1 \pmod p$.
 
 **Proof.** In $\mathbb{F}_p$ the nonzero elements pair off into inverse pairs except for the self-inverse elements $\pm 1$, since the solutions of $m^2 = 1$ are $m = \pm 1$ in a field; multiplying all nonzero classes gives $\bar 1 \cdot (-\bar 1)$ times $\bar 1$ for each inverse pair, hence $-1$.
 
-**Corollary.** The order $\operatorname{ord}_n(a)$ of a unit $a$ modulo $n$ divides $\varphi(n)$, and $a$ is a **primitive root** modulo $n$ exactly when its order is $\varphi(n)$. For $p$ prime the group $\mathbb{F}_p^\times$ is cyclic of order $p-1$.
+**Corollary.** The order $\operatorname{ord}_n(a)$ of an invertible element $a$ modulo $n$ divides $\varphi(n)$, and $a$ is a **primitive root** modulo $n$ exactly when its order is $\varphi(n)$. For $p$ prime the group $\mathbb{F}_p^\times$ is cyclic of order $p-1$.
 
 **Proof.** Lagrange's theorem in the finite group $(\mathbb{Z}/n\mathbb{Z})^\times$ gives the divisibility; cyclicity of $\mathbb{F}_p^\times$ is the case $k = 1$ of the structure theorem above.
 
@@ -155,7 +155,7 @@ where $m_0 = u(b/d)$ for a Bézout coefficient $u$ with $ua + vn = d$.
 
 **Proof.** The congruence is $n \mid (am - b)$, so $d \mid b$ is necessary. If $d \mid b$, divide by $d$: the congruence $a'm \equiv b' \pmod{n'}$ with $a' = a/d$, $n' = n/d$ has $\gcd(a',n')=1$, so $m \equiv u b' \pmod{n'}$ by Bézout, and this class has exactly $d$ lifts modulo $n$.
 
-**Corollary.** The congruence is solvable for every $b$ exactly when $a$ is a unit modulo $n$; in that case the solution is unique modulo $n$ and is $m \equiv a^{-1}b$.
+**Corollary.** The congruence is solvable for every $b$ exactly when $a$ is invertible modulo $n$; in that case the solution is unique modulo $n$ and is $m \equiv a^{-1}b$.
 
 ### Quadratic Residues
 
@@ -246,9 +246,9 @@ and since $2k \geq k+1$, the congruence modulo $p^{k+1}$ is $f(r_k) + t p^k \fra
 
 ## Summary
 
-Congruence modulo $n$ is the equivalence relation $a \equiv b \pmod n \iff n \mid (a-b)$, compatible with addition and multiplication, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with identity whose elements are the classes $\bar 0, \dots, \overline{n-1}$; it is a field exactly when $n$ is prime, in which case it is $\mathbb{F}_p$. An element is a unit exactly when it is coprime to $n$, a zero divisor exactly when its gcd with $n$ is proper nontrivial, and the units form a group of order $\varphi(n)$. The Chinese remainder theorem identifies $\mathbb{Z}/mn\mathbb{Z}$ with $\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ for coprime $m, n$, whence the multiplicativity of $\varphi$ and the decomposition of the rings and unit groups into their prime-power parts; $\varphi(n) = n\prod(1 - 1/p_i)$ and $\sum_{d\mid n}\varphi(d) = n$.
+Congruence modulo $n$ is the equivalence relation $a \equiv b \pmod n \iff n \mid (a-b)$, compatible with addition and multiplication, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is a commutative ring with identity whose elements are the classes $\bar 0, \dots, \overline{n-1}$; it is a field exactly when $n$ is prime, in which case it is $\mathbb{F}_p$. An element is invertible exactly when it is coprime to $n$, a zero divisor exactly when its gcd with $n$ is proper nontrivial, and the invertibles form a group of order $\varphi(n)$. The Chinese remainder theorem identifies $\mathbb{Z}/mn\mathbb{Z}$ with $\mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ for coprime $m, n$, whence the multiplicativity of $\varphi$ and the decomposition of the rings and groups of invertibles into their prime-power parts; $\varphi(n) = n\prod(1 - 1/p_i)$ and $\sum_{d\mid n}\varphi(d) = n$.
 
-Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for units, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of a unit divides $\varphi(n)$, the group of units modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $am \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $m^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
+Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for invertibles, Fermat's little theorem is its prime case $a^{p-1} \equiv 1 \pmod p$, and Wilson's theorem states $(p-1)! \equiv -1 \pmod p$. The order of an invertible element divides $\varphi(n)$, the group of invertibles modulo an odd prime power is cyclic, and the multiplicative group of a finite prime field is cyclic. The linear congruence $am \equiv b \pmod n$ is solvable exactly when $\gcd(a,n)$ divides $b$, with that many solutions, and the quadratic congruence $m^2 \equiv a \pmod p$ is governed by the Legendre symbol, Euler's criterion and the law of quadratic reciprocity. The arithmetic of the integers modulo $n$ is thus the whole applied content of the system $\mathbb{Z}$: it is the source of the finite rings and finite abelian groups of the corpus, and it is where the divisibility theory of the system becomes an effective calculus.
 
 ## Summary of Notation
 
@@ -258,8 +258,8 @@ Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for units, Fermat's lit
 | $\bar a$, $a \bmod n$ | Residue class of $a$ modulo $n$ |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{Z}_n$ | Ring of residues modulo $n$ |
 | $\mathbb{F}_p$ | Field $\mathbb{Z}/p\mathbb{Z}$, $p$ prime |
-| $(\mathbb{Z}/n\mathbb{Z})^\times$ | Group of units modulo $n$ |
-| $\varphi(n)$ | Euler function, order of the unit group |
+| $(\mathbb{Z}/n\mathbb{Z})^\times$ | Group of invertibles modulo $n$ |
+| $\varphi(n)$ | Euler function, order of the group of invertibles |
 | $\operatorname{ord}_n(a)$ | Multiplicative order of $a$ modulo $n$ |
 | $\left(\frac{a}{p}\right)$ | Legendre symbol |
 | $\pi$ | Canonical map $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ |
@@ -267,7 +267,7 @@ Euler's theorem states $a^{\varphi(n)} \equiv 1 \pmod n$ for units, Fermat's lit
 
 ## Further Reading
 
-- Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (Fleischer, 1801; English translation, Springer, 1986), for congruences, the group of units and quadratic reciprocity.
+- Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (Fleischer, 1801; English translation, Springer, 1986), for congruences, the group of invertibles and quadratic reciprocity.
 - G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers* (Oxford University Press, 6th ed. 2008), for Euler's and Fermat's theorems, Wilson's theorem and the elementary theory of residues.
 - Kenneth Ireland and Michael Rosen, *A Classical Introduction to Modern Number Theory* (Springer, 2nd ed. 1990), for the structure of $(\mathbb{Z}/n\mathbb{Z})^\times$, primitive roots and quadratic reciprocity.
 - Ivan Niven, Herbert S. Zuckerman and Hugh L. Montgomery, *An Introduction to the Theory of Numbers* (Wiley, 5th ed. 1991), for congruences, the Chinese remainder theorem and the solution of congruences.

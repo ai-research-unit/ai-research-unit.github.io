@@ -8,7 +8,7 @@ $$
 y\ \longmapsto\ x\,y\,x^{\dagger},\qquad x^{\dagger}=\sigma\bigl(\alpha(x^{r})\bigr),
 $$
 
-the **Hermitian pair** of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*. It is the one member that needs an involution $\sigma$ of the base ring, and the one member that is defined on the whole algebra rather than on the unit group.
+the **Hermitian pair** of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*. It is the one member that needs an involution $\sigma$ of the base ring, and the one member that is defined on the whole algebra rather than on the group of invertibles.
 
 This article treats the member that combines the two inputs,
 

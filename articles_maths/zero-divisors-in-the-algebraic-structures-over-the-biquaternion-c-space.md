@@ -26,15 +26,15 @@ the **generic norm** of *The Four Forms and the Four Algebraic Norms over the Bi
 
 **Definition.** A subset of $\mathbb{B}$ is a **complex cone** when it contains $\lambda\tilde Q_2$ for every $\tilde Q_2$ it contains and every $\lambda\in\mathbb{C}$. Its **apex** is the origin.
 
-### The Cone Is the Complement of the Group of Units
+### The Cone Is the Complement of the Group of Invertibles
 
-The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the units, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
+The elements of $\mathbb{B}$ fall into three classes. The invertible elements of the plain product, the invertibles, are exactly those of non-vanishing norm, $\mathbb{B}^{\times}=\{\tilde Q_2:\mathrm{Norm}(\tilde Q_2)\neq0\}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*); the origin is never a zero divisor; and the remaining elements are the zero divisors of the four general products. Hence
 
 $$
 \mathbb{B}=\{0\}\cup\mathbb{B}^{\times}\cup\bigl(\mathcal{N}\setminus\{0\}\bigr) .
 $$
 
-So an element is a unit exactly when it lies off the cone, and a zero divisor exactly when it lies on the cone and not at the apex. The cone is the complement of the group of units, and the zero-divisor set together with the origin is that complement read as the cone.
+So an element is invertible exactly when it lies off the cone, and a zero divisor exactly when it lies on the cone and not at the apex. The cone is the complement of the group of invertibles, and the zero-divisor set together with the origin is that complement read as the cone.
 
 **Remark (the criterion is the singularity of the multiplication operator).** The defining equation is one with a witness, $\tilde Q_1\tilde Q_2=0$ with $\tilde Q_2\neq0$, so the zero divisors of the plain product are exactly the elements whose left multiplication $L_{\tilde Q_1}:\tilde Q_2\mapsto\tilde Q_1\tilde Q_2$ has a nonzero kernel, that kernel being the left annihilator (*Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). Finite dimension makes the kernel criterion and the invertibility criterion coincide, and the operator carries the norm of the element in its determinant: $L(\tilde Q_1)=\mathrm I_2\otimes\mathsf M_2(\tilde Q_1)$ with $\det\mathsf M_2(\tilde Q_1)=\mathrm{Norm}(\tilde Q_1)$ (*$M_2(\mathbb{C})$ Pauli Representation*), hence
 
@@ -56,7 +56,7 @@ The twelve structures are read one by one below; each names the product, its zer
 
 *Proof.* Every row of the table of §*Results* contains the cone: the four general rows equal it, the rows of $\tilde Q_1\bullet\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ contain it by their second clause, and the remaining six rows are the whole punctured space.
 
-Two consequences follow. First, because the cone lies in every set, an element of vanishing norm admits an annihilating factor in all twelve products, and the cone is the largest subset on which the twelve agree; the converse fails, since the derived sets are strictly larger. Second, the ring-theoretic picture breaks on the derived structures: the unit $\vec e_x$, whose norm is $1$, is a zero divisor of $\tilde Q_1\bullet\tilde Q_2$ and of $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x \vec e_y+\vec e_y \vec e_x)=0$ for the Jordan product and $\vec e_x\star \vec e_y=0$ for the symmetric quaternionic sesquilinear product, and it is invertible in the algebra. A zero divisor need not be a non-unit unless the product has a two-sided unit.
+Two consequences follow. First, because the cone lies in every set, an element of vanishing norm admits an annihilating factor in all twelve products, and the cone is the largest subset on which the twelve agree; the converse fails, since the derived sets are strictly larger. Second, the ring-theoretic picture breaks on the derived structures: the unit $\vec e_x$, whose norm is $1$, is a zero divisor of $\tilde Q_1\bullet\tilde Q_2$ and of $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, because $\vec e_x\bullet \vec e_y=\tfrac12(\vec e_x \vec e_y+\vec e_y \vec e_x)=0$ for the Jordan product and $\vec e_x\star \vec e_y=0$ for the symmetric quaternionic sesquilinear product, and it is invertible in the algebra. A zero divisor need not be a non-invertible unless the product has a two-sided unit.
 
 ### $\tilde Q_1\tilde Q_2$, the general plain algebra
 
@@ -76,7 +76,7 @@ and its scalar is the norm $\mathrm{Norm}(\tilde Q_1)=Q_{1t}^{2}+Q_{1x}^{2}+Q_{1
 
 **The zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$.** The cone is the vanishing set of the norm, $\mathcal{N}=\{\tilde Q_1:Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}=0\}$, one complex quadric in the four coordinates, of complex dimension three. On $\mathcal{N}$ the product $\tilde Q_1\tilde Q_1^{\natural}$ vanishes with $\tilde Q_1^{\natural}\neq0$, so every nonzero element of the cone is a zero divisor; off $\mathcal{N}$ the norm is nonzero and $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$ is a two-sided inverse.
 
-The units are the elements off the cone, $\mathbb{B}^{\times}=\{\tilde Q_1:\mathrm{Norm}(\tilde Q_1)\neq0\}$, and this is the one structure of the twelve whose invertible elements form a genuine group, with the two-sided unit $e_t$ and the two-sided inverse $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$; the complement of the zero-divisor set is that group together with the origin, $\mathbb{B}\setminus(\mathcal{N}\setminus\{0\})=\mathbb{B}^{\times}\cup\{0\}$.
+The invertibles are the elements off the cone, $\mathbb{B}^{\times}=\{\tilde Q_1:\mathrm{Norm}(\tilde Q_1)\neq0\}$, and this is the one structure of the twelve whose invertible elements form a genuine group, with the two-sided unit $e_t$ and the two-sided inverse $\tilde Q_1^{-1}=\tilde Q_1^{\natural}/\mathrm{Norm}(\tilde Q_1)$; the complement of the zero-divisor set is that group together with the origin, $\mathbb{B}\setminus(\mathcal{N}\setminus\{0\})=\mathbb{B}^{\times}\cup\{0\}$.
 
 ### $\tilde Q_1\tilde Q_2^{*}$, the general plain sesqualgebra
 
@@ -138,7 +138,7 @@ Read the Jordan product from the quaternion table, $\tilde Q_1\circ\tilde Q_2=Q_
 
 The plane $Q_{1t}=0$ of the pure elements is a second family beside the cone.
 
-The unit $e_t$ is two-sided, as for $\tilde Q_1\tilde Q_2$, and the invertible elements are again the elements of non-vanishing norm; but the product is not associative, so they form no group, and the complement of the zero-divisor set, $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, is not the invertible set: the pure element $\vec e_x$ is a zero divisor and invertible at once, $\vec e_x\bullet(-\vec e_x)=e_t$, the failure of *zero divisor if and only if non-unit*.
+The unit $e_t$ is two-sided, as for $\tilde Q_1\tilde Q_2$, and the invertible elements are again the elements of non-vanishing norm; but the product is not associative, so they form no group, and the complement of the zero-divisor set, $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, is not the invertible set: the pure element $\vec e_x$ is a zero divisor and invertible at once, $\vec e_x\bullet(-\vec e_x)=e_t$, the failure of *zero divisor if and only if non-invertible*.
 
 ### $\tilde Q_1\bullet_{*}\tilde Q_2$, the symmetric plain sesqualgebra
 
@@ -152,7 +152,7 @@ The norm is the form at the two equal arguments, $\langle\tilde Q_1\rangle_{*}=\
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** The value is the central read of the form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})e_t$. The norm $\langle\cdot\rangle_{*}$ is definite and does not decide; the equation $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=0$ is one complex linear equation in the conjugated components of $\tilde Q_2$, and its solutions fill a complex hyperplane.
 
-There is no unit, the values lying in the centre, so there is no group of units and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
+There is no unit, the values lying in the centre, so there is no group of invertibles and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
 
 ### $\tilde Q_1\bullet_{\natural}\tilde Q_2$, the symmetric quaternionic algebra
 
@@ -166,7 +166,7 @@ The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde Q_1)=\mat
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** The value is the central read of the form, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)e_t$; check on $\tilde Q_1=\tilde Q_2=\vec e_x$: $\tilde Q_1^{\natural}\tilde Q_1=e_t$, of scalar $1=0+1$. The form is nondegenerate, its matrix being the identity in the four coordinates, so for $\tilde Q_1\neq0$ the equation $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=0$ is one complex linear equation in the four components of $\tilde Q_2$ and its solutions fill a complex hyperplane of nonzero vectors.
 
-There is no unit — the values lie in the centre and $e_t$ acts as $\langle e_t,\tilde Q_2\rangle_{\natural}e_t=Q_{2t}e_t$, not as an identity — so there is no group of units and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
+There is no unit — the values lie in the centre and $e_t$ acts as $\langle e_t,\tilde Q_2\rangle_{\natural}e_t=Q_{2t}e_t$, not as an identity — so there is no group of invertibles and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
 
 ### $\tilde Q_1\bullet_{\natural*}\tilde Q_2$, the symmetric quaternionic sesqualgebra
 
@@ -186,7 +186,7 @@ $$
 
 By §*The Symmetric Plain Algebra (spa)* the criterion is read on $\tilde Q_1^{\natural}$: the quaternion conjugation leaves $Q_{1t}$ unchanged and $\mathrm{Norm}(\tilde Q_1^{\natural})=\mathrm{Norm}(\tilde Q_1)$, so the condition is $Q_{1t}=0$ or $Q_{1t}^{2}+Q_{1x}^{2}+Q_{1y}^{2}+Q_{1z}^{2}=0$, (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
-There is no unit, both symmetrised terms conjugating a factor, so $e_t$ acts as $\tilde Q_2^{*}$ on one side and $\tilde Q_2^{\natural}$ on the other; the complement of the enlarged zero-divisor set is $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, which is no group of units.
+There is no unit, both symmetrised terms conjugating a factor, so $e_t$ acts as $\tilde Q_2^{*}$ on one side and $\tilde Q_2^{\natural}$ on the other; the complement of the enlarged zero-divisor set is $\{Q_{1t}\neq0,\ \mathrm{Norm}(\tilde Q_1)\neq0\}\cup\{0\}$, which is no group of invertibles.
 
 ### $\tilde Q_1\wedge\tilde Q_2$, the antisymmetric plain algebra
 
@@ -194,7 +194,7 @@ The product is the commutator $\tfrac12(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** Every nonzero element is annihilated by itself.
 
-There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set — the whole punctured space — is the origin alone.
+There is no unit, the values lying in the vector subspace, so there is no group of invertibles and the complement of the zero-divisor set — the whole punctured space — is the origin alone.
 
 ### $\tilde Q_1\wedge_{*}\tilde Q_2$, the antisymmetric plain sesqualgebra
 
@@ -202,7 +202,7 @@ The product is $\tfrac12(\tilde Q_1\tilde Q_2^{*}-\overline{\tilde Q_2\tilde Q_1
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** Off the cone, $\mathrm{Norm}(\tilde Q_1)\neq0$ and $\tilde Q_2=(\tilde Q_1^{-1})^{*}$ gives $\tilde Q_1\tilde Q_2^{*}=e_t$, whose vector part is zero; on the cone, $\tilde Q_2=\tilde Q_1^{\natural}$ gives $\tilde Q_1\tilde Q_2^{*}=0$. Every nonzero element is a zero divisor.
 
-There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
+There is no unit, the values lying in the vector subspace, so there is no group of invertibles and the complement of the zero-divisor set is the origin alone.
 
 ### $\tilde Q_1\wedge_{\natural}\tilde Q_2$, the antisymmetric quaternionic algebra
 
@@ -210,7 +210,7 @@ The product is the commutator $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2-\tilde Q
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** Every nonzero element is annihilated by itself.
 
-There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
+There is no unit, the values lying in the vector subspace, so there is no group of invertibles and the complement of the zero-divisor set is the origin alone.
 
 ### $\tilde Q_1\wedge_{\natural*}\tilde Q_2$, the antisymmetric quaternionic sesqualgebra
 
@@ -218,7 +218,7 @@ The product is $\tfrac12(\tilde Q_1^{\natural}\tilde Q_2^{*}-\overline{\tilde Q_
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** If $\vec Q_1\neq0$, take $\tilde Q_2=\overline{\tilde Q_1}$: its vector part $\overline{\vec Q_1}$ is parallel to $\vec Q_1$, and a cross product of parallel vectors vanishes. If $\vec Q_1=0$ the element is central and the product vanishes for every $\tilde Q_2$. Every nonzero element is a zero divisor.
 
-There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
+There is no unit, the values lying in the vector subspace, so there is no group of invertibles and the complement of the zero-divisor set is the origin alone.
 
 ## Results
 
@@ -301,7 +301,7 @@ On the remarkable subspaces the four null sets are cut to two shapes (*Remarkabl
 
 **The cone as a topological space.** The full cone is contractible, its apex is its only singular point, and its link, the intersection with the unit sphere $S^{7}_{E}$, is a closed connected real five-manifold. The link is $S^{2}\times S^{3}$; equivalently it is an $S^{1}$-bundle over $\mathbb{P}^{1}\times\mathbb{P}^{1}\cong S^{2}\times S^{2}$, with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; the projectivised cone is the **Segre quadric**, whose two rulings are the two families of chiral null planes (*The Topology of the Zero-Divisor Cone*). On a Lorentzian slice the cone cuts the three-dimensional null cone, whose link is the disjoint union $S^{2}\sqcup S^{2}$, one sphere per nappe (*The Topology of the Zero-Divisor Cone*). The one cone carries two links, the complex one $S^{2}\times S^{3}$ and the real one $S^{2}\sqcup S^{2}$.
 
-**The cone is the complement of the unit group.** The units are exactly the elements off the cone, and the group they form is $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2(\mathbb{B}^{\times})=0$ and $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, covered two-to-one by the centre and the determinant-one group (*The Biquaternion Unit Group as a Topological Group*). The cone and the unit group are complementarily read in homotopy: the link has $\pi_2\cong\mathbb{Z}$, and the unit group has $\pi_2=0$.
+**The cone is the complement of the group of invertibles.** The invertibles are exactly the elements off the cone, and the group they form is $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2(\mathbb{B}^{\times})=0$ and $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, covered two-to-one by the centre and the determinant-one group (*The Biquaternion Group of Invertibles as a Topological Group*). The cone and the group of invertibles are complementarily read in homotopy: the link has $\pi_2\cong\mathbb{Z}$, and the group of invertibles has $\pi_2=0$.
 
 **The cone's isotropic lines are its Peirce lines.** A **doubly null line** is an isotropic line that lies in the norm cone as well, and the doubly null lines are exactly the **Peirce lines** $\mathbb{C}(e_t\pm i\vec u)$ spanned by the rank-one Hermitian idempotents; each generates a minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension four (*The Kr-Degenerate Sector*, *Peirce Decompositions of the Biquaternion Algebra*). The maximal totally isotropic subspaces are the objects of the Witt index, and the maximal one is not confined to the cone: the complex line $\mathbb{C}(e_t+\vec e_x)$ is totally isotropic but has nonzero norm and is not a zero divisor.
 
@@ -311,7 +311,7 @@ These five statements are not about the twelve products. They are about the one 
 
 ## The One-Sided Inverse Equations
 
-Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not a unit* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
+Only the plain product has a two-sided unit, so the classical equivalence *zero divisor if and only if not an invertible element* is available for it alone, and there it is exact: for a nonzero $\tilde Q_1$ the statements *$\tilde Q_1$ is a zero divisor of the plain product*, *$\mathrm{Norm}(\tilde Q_1)=0$* and *$\tilde Q_1$ is not invertible* are equivalent (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*). The substitute for the other three products is the one-sided inverse criterion.
 
 **Theorem (the inverse equations).** Let $\star$ be one of the four general products and let $\tilde Q_1\neq0$. Then $\tilde Q_1$ is a zero divisor of $\star$ exactly when neither of the two equations
 
@@ -332,17 +332,17 @@ The solutions are written with the inverse $\tilde Q_1^{-1}=\tilde Q_1^{\natural
 | $\tilde Q_1\tilde Q_2^{*}$ | $(\tilde Q_1^{-1})^{*}$ | $(\tilde Q_1^{-1})^{*}$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $(\tilde Q_1^{-1})^{\natural*}$ | $(\tilde Q_1^{-1})^{\natural*}$ |
 
-This criterion uses the fixed element $e_t$, invariant under both conjugations, and makes no appeal to a unit of the product; it reads the same in the four products, and it says that the zero divisors are exactly the elements that cannot be inverted on either side.
+This criterion uses the fixed element $e_t$, invariant under both conjugations, and makes no appeal to an invertible element of the product; it reads the same in the four products, and it says that the zero divisors are exactly the elements that cannot be inverted on either side.
 
 ## Summary
 
 A zero divisor is defined by an equation that names a product, so the twelve products of the biquaternion algebra define twelve zero-divisor sets. For the four general products the sets coincide: for each of them, and for a nonzero element, being a left zero divisor, being a right zero divisor and lying on the cone are the same condition, the cone being the vanishing set of the norm $\mathrm{Norm}(\tilde Q_2)=\sum_\mu Q_{2,\mu}^{2}=\mathrm{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
-The common set is the zero-divisor set $\mathcal{N}\setminus\{0\}$, a complex cone with apex at the origin, smooth away from the apex, of complex dimension three and real dimension six, whose nonzero members are the rank-one elements of the matrix model and whose left ideals are the minimal left ideals. Its complement is the group of units together with the origin, and it splits by the scalar part into the pure family of the nilpotents, of real dimension four, and the non-pure family of the complex multiples of the nontrivial idempotents, which fills the cone in real dimension six.
+The common set is the zero-divisor set $\mathcal{N}\setminus\{0\}$, a complex cone with apex at the origin, smooth away from the apex, of complex dimension three and real dimension six, whose nonzero members are the rank-one elements of the matrix model and whose left ideals are the minimal left ideals. Its complement is the group of invertibles together with the origin, and it splits by the scalar part into the pure family of the nilpotents, of real dimension four, and the non-pure family of the complex multiples of the nontrivial idempotents, which fills the cone in real dimension six.
 
-The annihilators of a fixed element of the cone, two complex planes per product, are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets are *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The cone is the zero-divisor set of the four general products alone: the four antisymmetric structures and the two scalar-valued symmetric structures $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$ have the whole punctured space, and $\tilde Q_1\bullet\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ have $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is contained in all twelve sets and is the largest subset on which they agree. What a product does not change is the detection of the units: an element off the cone is invertible, and the one-sided inverse equations replace the classical equivalence for the three products that have no two-sided unit.
+The annihilators of a fixed element of the cone, two complex planes per product, are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets are *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The cone is the zero-divisor set of the four general products alone: the four antisymmetric structures and the two scalar-valued symmetric structures $\tilde Q_1\bullet_{*}\tilde Q_2$ and $\tilde Q_1\bullet_{\natural}\tilde Q_2$ have the whole punctured space, and $\tilde Q_1\bullet\tilde Q_2$ and $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ have $(\{Q_{2t}=0\}\cup\mathcal{N})\setminus\{0\}$. The cone is contained in all twelve sets and is the largest subset on which they agree. What a product does not change is the detection of the invertibles: an element off the cone is invertible, and the one-sided inverse equations replace the classical equivalence for the three products that have no two-sided unit.
 
-Beyond the grid the same set is one of four null sets. The bilinear form $\langle\cdot,\cdot\rangle$ has a complex cone of real dimension six different from $\mathcal{N}$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ has the origin alone, and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ has the Krein cone of real dimension seven; on the remarkable subspaces the cone drops from real dimension six to four on the vector subspace and to three on the quaternion subspace and on the sectors, carried at every stage by the indefinite forms. As a topological space the cone is contractible with the apex as its only singular point, its link over $S^{7}_{E}$ is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_y\cong\mathbb{Z}$ against the link $S^{2}\sqcup S^{2}$ of its Lorentzian slice, and its projectivisation is the Segre quadric. Its complement is the unit group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$; its isotropic lines are the Peirce lines, the doubly null lines, and the cone meets the Krein null set in their union; its level-set companion is the real hyperboloid of the Hermitian form. These statements name no product, and they are the content of §*The Cone in the Wider Mathematics*.
+Beyond the grid the same set is one of four null sets. The bilinear form $\langle\cdot,\cdot\rangle$ has a complex cone of real dimension six different from $\mathcal{N}$, the Hermitian form $\langle\cdot,\cdot\rangle_{*}$ has the origin alone, and the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ has the Krein cone of real dimension seven; on the remarkable subspaces the cone drops from real dimension six to four on the vector subspace and to three on the quaternion subspace and on the sectors, carried at every stage by the indefinite forms. As a topological space the cone is contractible with the apex as its only singular point, its link over $S^{7}_{E}$ is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_y\cong\mathbb{Z}$ against the link $S^{2}\sqcup S^{2}$ of its Lorentzian slice, and its projectivisation is the Segre quadric. Its complement is the group of invertibles $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$; its isotropic lines are the Peirce lines, the doubly null lines, and the cone meets the Krein null set in their union; its level-set companion is the real hyperboloid of the Hermitian form. These statements name no product, and they are the content of §*The Cone in the Wider Mathematics*.
 
 ## Summary of Notation
 
@@ -381,5 +381,5 @@ Beyond the grid the same set is one of four null sets. The bilinear form $\langl
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the minimal left ideals of the rank-one elements.
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the cone as a topological space, the Segre quadric, its two rulings, the projectivised cone and the Lorentzian slice.
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) and [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the four null sets cut by the remarkable subspaces, the Krein cone and the real hyperboloids whose boundary the cone is.
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the units as the complement of the cone, the covering and the homotopy groups.
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the invertibles as the complement of the cone, the covering and the homotopy groups.
 - [The Kr-Degenerate Sector](the-kr-degenerate-sector.html), for the Peirce lines, the minimal ideals and the doubly null lines in which the cone meets the Krein null set.

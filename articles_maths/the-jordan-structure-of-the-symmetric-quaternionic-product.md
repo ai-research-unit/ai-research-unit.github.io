@@ -108,7 +108,7 @@ $$
 
 **Remark (the failed rule is the failed identity).** The third inclusion is the one that violates the standard Peirce rule $\mathbb{B}_{0}\bullet\mathbb{B}_{0}\subset\mathbb{B}_{0}$, and it is exactly the failure of the Jordan identity: an algebra whose Peirce spaces multiply as prescribed satisfies the identity, and the defect computed above is the measure of the deviation. The two facts are one fact, and the closed form $N(\tilde Q_1)(\vec Q_1,\vec Q_2)e_t$ is the deviation read on the pair $(\mathbb{B}_0,\mathbb{B}_0)$.
 
-**Remark (the collapse of the Peirce theory).** A decomposition into two spaces with the second one mapping into the first is not a Peirce decomposition in the sense of the classical theory: the Peirce spaces are supposed to be orthogonal idempotent pieces, and here $\mathbb{B}_0$ is not closed under multiplication. The theory of [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html) therefore does not apply to this product, and the reason is the absence of a unit rather than a defect of the algebra.
+**Remark (the collapse of the Peirce theory).** A decomposition into two spaces with the second one mapping into the first is not a Peirce decomposition in the sense of the classical theory: the Peirce spaces are supposed to be orthogonal idempotent pieces, and here $\mathbb{B}_0$ is not closed under multiplication. The theory of [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html) therefore does not apply to this product, and the reason is the absence of an invertible element rather than a defect of the algebra.
 
 ## The Operators
 

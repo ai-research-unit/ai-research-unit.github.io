@@ -71,7 +71,7 @@ for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{re
 | $\langle\cdot\rangle_{*}$ | $\langle \breve Q\rangle_{*}=1$, that is $q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}-q_{\blacktriangledown}^{2}-{q'_{\blacktriangledown}}^{2}=1$ | a one-sheeted hyperboloid of signature $(2,2)$ |
 | $\langle\cdot\rangle_{\mathrm{ts}*}$ | $\langle \breve Q\rangle_{\mathrm{ts}*}=1$, that is $q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}=1$ | the Euclidean sphere $S^{3}$ |
 
-**Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the $*$-unitary convention; the level set of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\mathrm{ts}}$ is the non-compact hyperboloid of the units, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
+**Theorem (the unit sets).** The level sets are the unit sets of the four products relative to their norms, by the $*$-unitary convention; the level set of $\langle\cdot\rangle_{\mathrm{ts}*}$ is the compact sphere $S^{3}$, that of $\langle\cdot\rangle_{\mathrm{ts}}$ is the non-compact hyperboloid of the invertibles, and the level sets of $\langle\cdot\rangle$ and $\langle\cdot\rangle_{*}$ are the complex quadric and the indefinite hyperboloid.
 
 *Proof.* Each level set is the norm-one set of its form, as *Norm and Unitary Conventions*, §*The Unitary Convention*, records; the shapes are those of *The Forms of the Algebra of the Reduced Biquaternions*, and the compactness of the sphere is the positive definiteness of $\langle\cdot\rangle_{\mathrm{ts}*}$.
 
@@ -79,11 +79,11 @@ for $F=B,N,H,K$; hence each involution is an isometry of $\mathbb{B}_{\mathrm{re
 
 **The four products induce one and the same topology, the Euclidean one, and differ only in the metrical quantity.**
 
-**Theorem.** For each of the four products the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ by a unit $\breve Q$ is a homeomorphism, and the topology attached to the product is the Euclidean topology; hence the four products share the topology of *Topology in the Space of Reduced Biquaternions*.
+**Theorem.** For each of the four products the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ by an invertible element $\breve Q$ is a homeomorphism, and the topology attached to the product is the Euclidean topology; hence the four products share the topology of *Topology in the Space of Reduced Biquaternions*.
 
 *Proof.* The topology of a finite-dimensional real vector space is unique, and each product is continuous for it; a continuous bijection with continuous inverse is a homeomorphism, the inverse being the multiplication by $\breve Q^{-1}$. The metrical quantities differ, as the table records, but the open sets do not.
 
-**Corollary (the topology does not see the product).** A topological property of the space — compactness, connectedness, the openness of the unit group, the closedness of the zero-divisor set — is the same for all four products; only the metric-like quantity, and with it the notion of length and of angle, is attached to the product. The four products share the topology and the four conjugations, and they are separated by their forms and their metrics.
+**Corollary (the topology does not see the product).** A topological property of the space — compactness, connectedness, the openness of the group of invertibles, the closedness of the zero-divisor set — is the same for all four products; only the metric-like quantity, and with it the notion of length and of angle, is attached to the product. The four products share the topology and the four conjugations, and they are separated by their forms and their metrics.
 
 *Proof.* The listed properties depend only on the topology, which is common; the metric-like quantities are attached each to its form, and they differ by the failures of §*The Degenerate and Indefinite Quantities*.
 
@@ -113,7 +113,7 @@ Only $\langle\cdot\rangle_{\mathrm{ts}*}$ gives a metric, the Euclidean one, pos
 ## Further Reading
 
 - [Topology in the Space of Reduced Biquaternions](topology-in-the-space-of-reduced-biquaternions.html), for the norm and the topology.
-- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the Euclidean metric and the unit group.
+- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the Euclidean metric and the group of invertibles.
 - [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-algebra-of-the-reduced-biquaternions.html), for the four forms and their isotropic sets.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the zero-divisor set.
 - [Reduced Biquaternion Analysis](reduced-biquaternion-analysis.html), for the analysis built on the Euclidean metric.

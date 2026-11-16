@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential map is the bridge between the group and the Lie algebra *Symmetric and Antisymmetric Decomposition of the Four General Products*. This article reads the Lie-group structure: the exponential and its parametrisation of the group, the cases of the exponential, the group law, the failure of surjectivity, and the real forms and subgroups the group carries.
+The group of invertibles $\mathbb{B}^\times$ is a real Lie group, and its exponential map is the bridge between the group and the Lie algebra *Symmetric and Antisymmetric Decomposition of the Four General Products*. This article reads the Lie-group structure: the exponential and its parametrisation of the group, the cases of the exponential, the group law, the failure of surjectivity, and the real forms and subgroups the group carries.
 
-The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Unit Group as a Topological Group*.
+The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Group of Invertibles as a Topological Group*.
 
 ## The Unit Quaternions and Their Complexification
 
@@ -40,7 +40,7 @@ $S^3$ is the maximal compact subgroup of $\mathbb{B}^\times_1$, with Lie algebra
 
 ## The $*$-Unitary Subgroup and the Defining Module
 
-The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Pauli Representation*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_t$, and they form a compact subgroup of the group of units,
+The algebra acts on the defining module $\mathbb{C}^2$ by the defining representation, in which a biquaternion acts as its $2\times2$ matrix $\mathsf{M}_2(\tilde{Q})$ (*$M_2(\mathbb{C})$ Pauli Representation*). The elements that preserve the standard Hermitian form of $\mathbb{C}^2$ are exactly those with $\tilde{Q}^{*}\tilde{Q}=e_t$, and they form a compact subgroup of the group of invertibles,
 $$
 \mathrm{U}(2)=\{\tilde{Q}\in\mathbb{B}^{\times}:\tilde{Q}^{*}\tilde{Q}=e_t\},
 $$
@@ -130,7 +130,7 @@ the source's rule, which is the statement of *Adjoint Pair of $L$ and $R$ Operat
 
 ## Surjectivity and Its Failure for the Subgroups
 
-The exponential of the full unit group is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
+The exponential of the full group of invertibles is surjective (*Biquaternion Elementary Functions*, §*The Logarithm*), but the two distinguished subgroups behave differently.
 
 **The compact subgroup: surjective.** Every unit quaternion is $\cos\theta\, e_t + \sin\theta\,\vec u = \exp(\theta\vec u)$, so $\exp : \mathrm{K} \to S^3$ is surjective; this is the general fact that a connected compact Lie group has a surjective exponential map.
 
@@ -146,7 +146,7 @@ Its scalar part is $Q_t = -1$ and its vector part has $B = 0$, so the element is
 
 ---
 
-The group of units is an open subset of $\mathbb{B}$, hence a smooth real manifold of dimension $8$, but its topology is far from that of a general open set in $\mathbb{R}^8$: it has the homotopy type of a compact group. The polar decomposition exhibits the maximal compact subgroup as a strong deformation retract, and with it determines the homotopy groups and the universal cover. Everything in this part is a statement about $\mathbb{B}^\times$ as a topological group; the topology of the ambient space is in *Topology in the Space of Biquaternions* and that of the null cone in *The Topology of the Zero-Divisor Cone*.
+The group of invertibles is an open subset of $\mathbb{B}$, hence a smooth real manifold of dimension $8$, but its topology is far from that of a general open set in $\mathbb{R}^8$: it has the homotopy type of a compact group. The polar decomposition exhibits the maximal compact subgroup as a strong deformation retract, and with it determines the homotopy groups and the universal cover. Everything in this part is a statement about $\mathbb{B}^\times$ as a topological group; the topology of the ambient space is in *Topology in the Space of Biquaternions* and that of the null cone in *The Topology of the Zero-Divisor Cone*.
 
 ## The Correspondence with the Lie Algebra
 
@@ -178,11 +178,11 @@ because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$
 
 **The two real directions.** The exponential line of $\vec e_x$ is the circle $\exp(t\vec e_x)=\cos t\,e_t+\sin t\,\vec e_x$, and that of $i\vec e_x$ is the hyperbola $\exp(t\,i\vec e_x)=\cosh t\,e_t+\sinh t\,\vec e_x$ (§*The Exponential in the Two Real Directions* of *Biquaternion Elementary Functions*). The first is periodic and lies in the unit quaternions, the second is unbounded and lies in the Hermitian subspace. The two are the compact and the non-compact one-parameter subgroups in their simplest form.
 
-**The subgroup lies in a centraliser.** Every $\exp(t\tilde X)$ commutes with $\tilde X$, so the image of $\varphi_{\tilde X}$ is contained in the group of units of the centraliser $C(\tilde X)=\{\tilde Y:\tilde Y\tilde X=\tilde X\tilde Y\}$ (*The Centraliser*, §*The Commutant*). For a non-scalar $\tilde X$ that centraliser has complex dimension two, so the one-parameter subgroup is a real curve in a commutative surface.
+**The subgroup lies in a centraliser.** Every $\exp(t\tilde X)$ commutes with $\tilde X$, so the image of $\varphi_{\tilde X}$ is contained in the group of invertibles of the centraliser $C(\tilde X)=\{\tilde Y:\tilde Y\tilde X=\tilde X\tilde Y\}$ (*The Centraliser*, §*The Commutant*). For a non-scalar $\tilde X$ that centraliser has complex dimension two, so the one-parameter subgroup is a real curve in a commutative surface.
 
 ## The Killing Form
 
-**The Killing form of the unit group is the real part of the trace form on the trace-free part; its radical is the centre, and its signature is $(3,3)$.**
+**The Killing form of the group of invertibles is the real part of the trace form on the trace-free part; its radical is the centre, and its signature is $(3,3)$.**
 
 The Lie algebra of $\mathbb{B}^\times$ is $\mathbb{B}$ with the bracket $[\tilde X,\tilde Y]=\tilde X\tilde Y-\tilde Y\tilde X$ (§*The Correspondence with the Lie Algebra*). Its **Killing form** is
 
@@ -276,7 +276,7 @@ $$
 K\bigl([\tilde X,\tilde Y],\tilde Z\bigr)+K\bigl(\tilde Y,[\tilde X,\tilde Z]\bigr)=0,
 $$
 
-so $\kappa(\tilde Q\tilde X\tilde Q^{-1},\tilde Q\tilde Y\tilde Q^{-1})=\kappa(\tilde X,\tilde Y)$ for every unit $\tilde Q$. It is therefore a function of the conjugation class alone.
+so $\kappa(\tilde Q\tilde X\tilde Q^{-1},\tilde Q\tilde Y\tilde Q^{-1})=\kappa(\tilde X,\tilde Y)$ for every invertible $\tilde Q$. It is therefore a function of the conjugation class alone.
 
 **Relation to the plain form.** The plain bilinear form $P(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* has realification of signature $(4,4)$. The Killing form is its real part with the rank-one piece carried by the centre removed,
 
@@ -288,7 +288,7 @@ and the subtraction is the orthogonal projection onto $\mathrm{B}_0$: the $P$-or
 
 ## Summary
 
-The group of units $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{B}_{H}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_t\}$. The complexification adds four real dimensions, and the norm-one condition removes two rather than one, so the net gain is three; the trace is free on the level set and the determinant is the constraint.
+The group of invertibles $\mathbb{B}^\times$ is a real Lie group of real dimension $8$, and the exponential map is its link with the Lie algebra: it is a local diffeomorphism at the identity, but it is not surjective onto the group. The unit quaternions $S^3=\{\tilde q\in\mathbb{B}_{H}:\langle\tilde q\rangle_{\natural}=1\}$ form a compact connected simply connected subgroup of real dimension $3$, whose complexification is the norm-one group $\mathbb{B}^\times_1$ of real dimension $6$ and centre $\{\pm e_t\}$. The complexification adds four real dimensions, and the norm-one condition removes two rather than one, so the net gain is three; the trace is free on the level set and the determinant is the constraint.
 
 The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternions $S^3$ and the centre $\mathbb{C}^\times e_t$; the maximal compact subgroup of $\mathbb{B}^\times_1$ is $S^3$, and the quotient by the centre $\mathbb{B}^\times_1/\{\pm e_t\}$ is a Lie group of real dimension $6$. Over the reals these are the real forms of the group, and the correspondence with the Lie algebra attaches each subgroup to its subalgebra: $S^3$ to $\mathrm{K}$, $\mathbb{B}^\times_1$ to $\mathrm{B}_0$, and $\mathbb{C}^\times e_t$ to the centre.
 
@@ -302,7 +302,7 @@ The larger $*$-unitary groups are reached by enlarging the carrier and not the a
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{B}^\times$ | Group of units; real Lie group of real dimension $8$ |
+| $\mathbb{B}^\times$ | Group of invertibles; real Lie group of real dimension $8$ |
 | $\exp$ | Exponential map; closed form in *Biquaternion Elementary Functions* |
 | $S^3=\{\tilde q\in\mathbb{B}_{H}:\langle\tilde q\rangle_{\natural}=1\}$ | Unit quaternions; compact subgroup of real dimension $3$ |
 | $\mathbb{B}^\times_1=\{N=1\}$ | Norm-one group; complexification of $S^3$; real dimension $6$ |

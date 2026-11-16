@@ -124,7 +124,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 
 ### Monoidal and Enriched Structure
 
-**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
+**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit object, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
 
 **Theorem.** Let $\mathcal{C}$ be a monoidal model category.
 

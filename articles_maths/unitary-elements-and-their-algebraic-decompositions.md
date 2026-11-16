@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **unitary element** of an algebra with involution is an element $u$ with $u^*u=uu^*=1$, equivalently a unit with $u^*=u^{-1}$. The unitary elements form a group, and their eigenvalue decomposition is the algebraic form of the spectral decomposition of a unitary matrix: a writing $u=\sum_i\lambda_i e_i$ in which the eigenprojectors $e_i$ are Hermitian and the eigenvalues $\lambda_i$ have modulus one. This article determines exactly when that writing exists in a bare algebra and what survives when it does not.
+A **unitary element** of an algebra with involution is an element $u$ with $u^*u=uu^*=1$, equivalently an invertible element with $u^*=u^{-1}$. The unitary elements form a group, and their eigenvalue decomposition is the algebraic form of the spectral decomposition of a unitary matrix: a writing $u=\sum_i\lambda_i e_i$ in which the eigenprojectors $e_i$ are Hermitian and the eigenvalues $\lambda_i$ have modulus one. This article determines exactly when that writing exists in a bare algebra and what survives when it does not.
 
 The main result is a permutation law. If $u=\sum_i\lambda_i e_i$ is an eigenvalue decomposition and $u$ is unitary, then the involution sends the projector of $\lambda_i$ to the projector of $\varsigma(\lambda_i)^{-1}$, and the eigenvalues are paired by inversion and conjugation. The permutation is the identity exactly when every eigenvalue is **unimodular**, $\lambda_i\varsigma(\lambda_i)=1$; then, and only then, all the eigenprojectors are Hermitian and the spectral writing has the familiar form. The law is the unitary counterpart of the self-adjoint law of *The Eigenvalue Decomposition of a Self-Adjoint Element*: for a self-adjoint element the involution fixes the eigenvalue, and for a unitary element it inverts and conjugates it. In the first kind, where $\varsigma=\mathrm{id}$, unimodularity degenerates to $\lambda^2=1$, so the unit-circle statement is a second-kind statement; the transpose rotation and the group algebra of a cyclic group are the counterexamples that show the difference. Without separability the eigenvalue decomposition may fail altogether: the dual numbers carry a unitary $1+\varepsilon$ whose minimal polynomial is $(x-1)^2$, a unipotent unitary with no eigenvalue decomposition.
 
@@ -22,19 +22,19 @@ The unitary elements are $\mathrm{U}(A)=\{u:u^*u=uu^*=1\}$, and an element is **
 
 **Definition.** An element $u\in A$ is **unitary** when $u^*u=uu^*=1$; it is **normal** when $uu^*=u^*u$.
 
-**Proposition.** An element $u$ is unitary if and only if $u$ is a unit and $u^*=u^{-1}$. Every unitary element is normal. A normal unit need not be unitary.
+**Proposition.** An element $u$ is unitary if and only if $u$ is invertible and $u^*=u^{-1}$. Every unitary element is normal. A normal unit need not be unitary.
 
-*Proof.* If $u^*u=uu^*=1$, then $u$ has the two-sided inverse $u^*$, so $u$ is a unit and $u^*=u^{-1}$. Conversely, if $u$ is a unit and $u^*=u^{-1}$, both products are $1$. A unitary element is normal because $uu^*=1=u^*u$. For the last statement, the scalar $2\cdot1$ in a field of characteristic not two is a normal unit with $(2\cdot1)(2\cdot1)^*=4\cdot1\neq1$.
+*Proof.* If $u^*u=uu^*=1$, then $u$ has the two-sided inverse $u^*$, so $u$ is invertible and $u^*=u^{-1}$. Conversely, if $u$ is invertible and $u^*=u^{-1}$, both products are $1$. A unitary element is normal because $uu^*=1=u^*u$. For the last statement, the scalar $2\cdot1$ in a field of characteristic not two is a normal unit with $(2\cdot1)(2\cdot1)^*=4\cdot1\neq1$.
 
 ### The spectrum is nonzero
 
-**Proposition.** Let $u$ be a unit with an eigenvalue decomposition $u=\sum_i\lambda_i e_i$. Then every $\lambda_i$ is nonzero, and
+**Proposition.** Let $u$ be an invertible element with an eigenvalue decomposition $u=\sum_i\lambda_i e_i$. Then every $\lambda_i$ is nonzero, and
 
 $$
 u^{-1}=\sum_i\lambda_i^{-1}e_i .
 $$
 
-*Proof.* If $\lambda_i=0$, then $ue_i=0$ with $e_i\neq0$, so $u$ is a zero divisor, contradicting that $u$ is a unit; a unit is not a zero divisor. The inverse is the displayed sum, because the product with $u$ is $\sum_i e_i=1$ by the orthogonality of the idempotents.
+*Proof.* If $\lambda_i=0$, then $ue_i=0$ with $e_i\neq0$, so $u$ is a zero divisor, contradicting that $u$ is invertible; an invertible element is not a zero divisor. The inverse is the displayed sum, because the product with $u$ is $\sum_i e_i=1$ by the orthogonality of the idempotents.
 
 **Corollary.** For a unitary $u$ with an eigenvalue decomposition, $u^*=u^{-1}=\sum_i\lambda_i^{-1}e_i$.
 
@@ -150,7 +150,7 @@ $$
 u=\sum_{i=1}^{r}\lambda_i\varepsilon_i(1+n_i),
 $$
 
-with the $\varepsilon_i$ the generalized eigenprojectors, $n_i$ nilpotent, $n_i\varepsilon_i=\varepsilon_in_i=n_i$, the $\varepsilon_i$ orthogonal and summing to $1$, and the $\lambda_i$ distinct; the nilpotent part has been rescaled by $\lambda_i^{-1}$, which is legitimate because $u$ is a unit. The element $1+n_i$ is the unipotent part of the $i$-th block.
+with the $\varepsilon_i$ the generalized eigenprojectors, $n_i$ nilpotent, $n_i\varepsilon_i=\varepsilon_in_i=n_i$, the $\varepsilon_i$ orthogonal and summing to $1$, and the $\lambda_i$ distinct; the nilpotent part has been rescaled by $\lambda_i^{-1}$, which is legitimate because $u$ is invertible. The element $1+n_i$ is the unipotent part of the $i$-th block.
 
 **Proposition.** Suppose that $u=\sum_i\lambda_i\varepsilon_i(1+n_i)$ is a generalized eigen decomposition with the $\varepsilon_i$ Hermitian and the $\lambda_i$ unimodular. Then $u$ is unitary if and only if the unipotent parts satisfy
 
@@ -298,7 +298,7 @@ Both are Hermitian, both eigenvalues are unimodular, and the decomposition group
 
 ### The exchange involution
 
-Let $A=B\times B_{\mathrm{opp}}$ with the exchange involution $(b,c)^*=(c,b)$, and let $b\in B$ be a unit with an eigenvalue decomposition $b=\sum_i\lambda_i e_i$. The element $u=(b,b^{-1})$ is unitary, and
+Let $A=B\times B_{\mathrm{opp}}$ with the exchange involution $(b,c)^*=(c,b)$, and let $b\in B$ be an invertible element with an eigenvalue decomposition $b=\sum_i\lambda_i e_i$. The element $u=(b,b^{-1})$ is unitary, and
 
 $$
 u=\sum_i\lambda_i(e_i,0)+\sum_i\lambda_i^{-1}(0,e_i).
@@ -308,7 +308,7 @@ The idempotents $(e_i,0)$ and $(0,e_i)$ are exchanged by the involution, and the
 
 ## Summary
 
-A unitary element $u$ is a unit with $u^*=u^{-1}$, and it is normal. If $u$ has an eigenvalue decomposition $u=\sum_i\lambda_i e_i$, the involution permutes the eigenprojectors by an involution $\pi$ of the index set and acts on the eigenvalues by $\lambda_{\pi(i)}^{-1}=\varsigma(\lambda_i)$: the eigenvalue is inverted and conjugated. The permutation is the identity exactly when every eigenvalue is unimodular, $\lambda_i\varsigma(\lambda_i)=1$; then all the eigenprojectors are Hermitian, the writing is the algebraic spectral decomposition, and conversely a Hermitian-projector writing with unimodular eigenvalues is unitary. In the first kind unimodularity is $\lambda^2=1$, so the Hermitian-projector unitaries are the involutions; in the second kind it is the algebraic unit circle, and the conjugate transpose is the model. The orbit idempotents $g_J=\sum_{i\in J}e_i$ decompose $u$ into unitary blocks: scalar blocks on the fixed eigenvalues and inverse-conjugate pairs on the two-element orbits. When the minimal polynomial is not separable the eigenvalue decomposition fails; the dual numbers carry the unipotent unitary $1+\varepsilon$ with minimal polynomial $(x-1)^2$, and its generalized decomposition is $1+\varepsilon$ with the single generalized eigenprojector $1$. The eigenvalue decomposition is *The Eigenvalue Decomposition of an Element*; the Jordan–Chevalley theory is *Nilpotent Elements and the Jordan–Chevalley Decomposition*; the unitary group and the anti-Hermitian Lie algebra are *Unitary Elements of an Involutive Algebra*; the involution and the two kinds are *Involutive Algebras*; the self-adjoint analogue is *The Eigenvalue Decomposition of a Self-Adjoint Element*; and the positive definite case is Part II and *Hilbert Algebras*.
+A unitary element $u$ is invertible with $u^*=u^{-1}$, and it is normal. If $u$ has an eigenvalue decomposition $u=\sum_i\lambda_i e_i$, the involution permutes the eigenprojectors by an involution $\pi$ of the index set and acts on the eigenvalues by $\lambda_{\pi(i)}^{-1}=\varsigma(\lambda_i)$: the eigenvalue is inverted and conjugated. The permutation is the identity exactly when every eigenvalue is unimodular, $\lambda_i\varsigma(\lambda_i)=1$; then all the eigenprojectors are Hermitian, the writing is the algebraic spectral decomposition, and conversely a Hermitian-projector writing with unimodular eigenvalues is unitary. In the first kind unimodularity is $\lambda^2=1$, so the Hermitian-projector unitaries are the involutions; in the second kind it is the algebraic unit circle, and the conjugate transpose is the model. The orbit idempotents $g_J=\sum_{i\in J}e_i$ decompose $u$ into unitary blocks: scalar blocks on the fixed eigenvalues and inverse-conjugate pairs on the two-element orbits. When the minimal polynomial is not separable the eigenvalue decomposition fails; the dual numbers carry the unipotent unitary $1+\varepsilon$ with minimal polynomial $(x-1)^2$, and its generalized decomposition is $1+\varepsilon$ with the single generalized eigenprojector $1$. The eigenvalue decomposition is *The Eigenvalue Decomposition of an Element*; the Jordan–Chevalley theory is *Nilpotent Elements and the Jordan–Chevalley Decomposition*; the unitary group and the anti-Hermitian Lie algebra are *Unitary Elements of an Involutive Algebra*; the involution and the two kinds are *Involutive Algebras*; the self-adjoint analogue is *The Eigenvalue Decomposition of a Self-Adjoint Element*; and the positive definite case is Part II and *Hilbert Algebras*.
 
 ## Summary of Notation
 

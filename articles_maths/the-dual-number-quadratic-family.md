@@ -22,7 +22,7 @@ The article is the $\mathbb{C}_{\mathrm{dln}}$ instance of the quadratic family.
 
 ### The Coordinates
 
-**Definition.** The **dual numbers** are $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is a unit exactly when $x \neq 0$. The **norm** is $\langle z\rangle = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
+**Definition.** The **dual numbers** are $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]$ with $\varepsilon^2 = 0$; a general element is $z = x+\varepsilon y$ with $x, y \in \mathbb{R}$, its **real part** is $x$, its **infinitesimal part** is $y$, and $x+\varepsilon y$ is invertible exactly when $x \neq 0$. The **norm** is $\langle z\rangle = z\bar z = x^2$, where $\bar z = x-\varepsilon y$.
 
 **Theorem (the triangular form).** With $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$,
 
@@ -41,12 +41,12 @@ Hence $f_c$ is a **skew product**: the projection $\pi(x+\varepsilon y) = x$ to 
 **Theorem (the critical locus is the ideal).** The derivative of $f_c$ is the multiplication by $2z$, and
 
 $$
-\boxed{\; 2z = 2x + 2\varepsilon y \ \text{ is a unit} \iff x \neq 0 \;}.
+\boxed{\; 2z = 2x + 2\varepsilon y \ \text{ is invertible} \iff x \neq 0 \;}.
 $$
 
 So the **critical locus** of $f_c$ is the set $\{x = 0\} = \mathbb{R}\varepsilon$, the ideal of the nilpotents, a whole line and not a point.
 
-**Proof.** The units of $\mathbb{C}_{\mathrm{dln}}$ are exactly the elements with nonzero real part, by the invertibility criterion $z\bar z = x^2 \neq 0$ of *Dual-Numbers Norm and Invertibility*.
+**Proof.** The invertibles of $\mathbb{C}_{\mathrm{dln}}$ are exactly the elements with nonzero real part, by the invertibility criterion $z\bar z = x^2 \neq 0$ of *Dual-Numbers Norm and Invertibility*.
 
 **Theorem (the collapse of the critical set).** Every critical point has the same image:
 
@@ -98,7 +98,7 @@ so the connectedness locus is the real interval in $\gamma$ with the fibre eithe
 
 ## Summary
 
-The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$ it is $f_c(z) = (x^2+\gamma)+\varepsilon(2xy+\delta)$, so the real part is the real quadratic map $x \mapsto x^2+\gamma$ and the infinitesimal part is the affine map $y \mapsto 2xy+\delta$, whose coefficient is the derivative of the real map. The derivative of $f_c$ is the multiplication by $2z$, a unit exactly off the ideal $\mathbb{R}\varepsilon$; the critical locus is therefore the whole ideal of the nilpotents, and every critical point has the image $c$, so the critical value is the single parameter $c$. The norm is $\langle z\rangle = x^2$, so the escape is the escape of the real part; the connectedness locus projects onto the real Mandelbrot interval $[-2,\tfrac14]$, and its fibre over $\gamma$ is $\mathbb{R}$ when the derivative cocycle is summable and the single point $0$ when it is not. The hyperbolic parameters give the whole line; the Chebyshev parameter $-2$ and the parabolic parameter $\tfrac14$ give the single point, and at those parameters a nonzero $\delta$ escapes. The algebra, the norm and the units are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the real quadratic family that the base dynamics repeats is that of *The Mandelbrot Set and the Quadratic Family*; and the infinitesimal coordinate, the derivative cocycle, is the subject of *The Infinitesimal Dynamics of the Dual Numbers*.
+The dual-number quadratic family $f_c(z) = z^2+c$ is triangular: with $z = x+\varepsilon y$ and $c = \gamma+\varepsilon\delta$ it is $f_c(z) = (x^2+\gamma)+\varepsilon(2xy+\delta)$, so the real part is the real quadratic map $x \mapsto x^2+\gamma$ and the infinitesimal part is the affine map $y \mapsto 2xy+\delta$, whose coefficient is the derivative of the real map. The derivative of $f_c$ is the multiplication by $2z$, an invertible element exactly off the ideal $\mathbb{R}\varepsilon$; the critical locus is therefore the whole ideal of the nilpotents, and every critical point has the image $c$, so the critical value is the single parameter $c$. The norm is $\langle z\rangle = x^2$, so the escape is the escape of the real part; the connectedness locus projects onto the real Mandelbrot interval $[-2,\tfrac14]$, and its fibre over $\gamma$ is $\mathbb{R}$ when the derivative cocycle is summable and the single point $0$ when it is not. The hyperbolic parameters give the whole line; the Chebyshev parameter $-2$ and the parabolic parameter $\tfrac14$ give the single point, and at those parameters a nonzero $\delta$ escapes. The algebra, the norm and the invertibles are those of *Dual-Numbers Algebra* and *Dual-Numbers Norm and Invertibility*; the real quadratic family that the base dynamics repeats is that of *The Mandelbrot Set and the Quadratic Family*; and the infinitesimal coordinate, the derivative cocycle, is the subject of *The Infinitesimal Dynamics of the Dual Numbers*.
 
 ## Summary of Notation
 

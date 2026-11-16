@@ -3,17 +3,17 @@
 
 ## Introduction
 
-A **reflection** of an object carrying a grade involution is an involutive signed two-sided operator: an element acts on $x$ by sending it to $u\,\alpha(x)\,u^{-1}$, and the operator so obtained is an involution exactly when $u\alpha(u)$ is central. The elements of the object are therefore matched with the reflections that invert them, and the match — the **correspondence between the elements and the reflections** — is a bijection up to the units inducing the grade involution when the grade involution is not inner, and loses injectivity in the degenerate cases. This article treats the reflections of a topological ring as signed two-sided operators: it fixes the reflection attached to a unit, computes when it is an involution and what it fixes, states the correspondence with the carrying elements together with its kernel, and works out the degenerate cases — the inner grade involution and the commutative ring — where the correspondence collapses, with the topological gain that the reflections are continuous, the fixed subrings are closed and the correspondence is a homeomorphism onto its image up to the kernel.
+A **reflection** of an object carrying a grade involution is an involutive signed two-sided operator: an element acts on $x$ by sending it to $u\,\alpha(x)\,u^{-1}$, and the operator so obtained is an involution exactly when $u\alpha(u)$ is central. The elements of the object are therefore matched with the reflections that invert them, and the match — the **correspondence between the elements and the reflections** — is a bijection up to the invertibles inducing the grade involution when the grade involution is not inner, and loses injectivity in the degenerate cases. This article treats the reflections of a topological ring as signed two-sided operators: it fixes the reflection attached to an invertible element, computes when it is an involution and what it fixes, states the correspondence with the carrying elements together with its kernel, and works out the degenerate cases — the inner grade involution and the commutative ring — where the correspondence collapses, with the topological gain that the reflections are continuous, the fixed subrings are closed and the correspondence is a homeomorphism onto its image up to the kernel.
 
 The article assumes the signed two-sided operator, its composition law, the signed two-sided group and the signed conjugations from *The Signed Two-Sided Operator on a Topological Ring*; the correspondence between the reflections and the elements acting by an involution, and its failure, from *Reflections as Signed Two-Sided Operators on a Ring*; the same correspondence on a group, treated in parallel, from *Reflections as Signed Two-Sided Operators on a Topological Group*; the grade involution, its fixed and anti-Hermitian parts and the geometric reading from *The Grade Involution* and *The Signed Two-Sided Operator on a Ring*; the operator layer, the inner automorphisms $c_u$, the homeomorphisms and the closed fixed sets from *Operators on a Topological Ring*; and the continuous grade involution, the closedness of the fixed set and the relation to the anti-automorphic involution from *Involutive Topological Rings and Fields*. The adjoints of the reflections are *The Signed Adjoint of the Reflection on a Topological Ring*, later in this category, and are not used here. No measure, no norm and no form occurs.
 
-Throughout, $R$ is a topological ring, unital and Hausdorff, with grade involution $\alpha$, assumed continuous, group of units $R^\times$, centre $Z(R)$ and inner automorphisms $c_u(x) = uxu^{-1}$; the signed conjugation carried by a unit $u$ is
+Throughout, $R$ is a topological ring, unital and Hausdorff, with grade involution $\alpha$, assumed continuous, group of invertibles $R^\times$, centre $Z(R)$ and inner automorphisms $c_u(x) = uxu^{-1}$; the signed conjugation carried by an invertible element $u$ is
 
 $$
 \rho_u = \Sigma^\alpha_{u,u^{-1}} : R \longrightarrow R, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} ,
 $$
 
-and the set of **carrying units** is $I_\alpha(R) = \{ u \in R^\times : u\alpha(u) \in Z(R) \}$, the units whose signed conjugation is an involution.
+and the set of **carrying units** is $I_\alpha(R) = \{ u \in R^\times : u\alpha(u) \in Z(R) \}$, the invertibles whose signed conjugation is an involution.
 
 ## Reflections
 
@@ -55,7 +55,7 @@ $$
 \boxed{\;I_\alpha(R) \longrightarrow \{\text{reflections of } R\}, \qquad u \longmapsto \rho_u\;} ,
 $$
 
-is surjective by definition, and its kernel is the set of units inducing the grade involution,
+is surjective by definition, and its kernel is the set of invertibles inducing the grade involution,
 
 $$
 \{ u \in R^\times : \rho_u = \mathrm{id} \} = \{ u \in R^\times : c_u = \alpha \} ,
@@ -65,7 +65,7 @@ which is trivial when $\alpha$ is not inner. Hence the reflections of $R$ are in
 
 **Proof.** $\rho_u = \mathrm{id}$ is $u\alpha(x)u^{-1} = x$ for all $x$, that is $c_u = \alpha$, by the computation of the kernel of the two-sided map in *The Signed Two-Sided Operator on a Topological Ring*. When $\alpha$ is not inner, $c_u = \alpha$ for no unit $u$, so the kernel is trivial; when $\alpha = c_z$ is inner, $c_u = c_z$ exactly when $u z^{-1}$ is central, so the kernel is the coset $z\,(Z(R)\cap R^\times)$.
 
-**Corollary (the reflection attached to a unit).** Assigning to a unit $u$ with $u\alpha(u)$ central the reflection $\rho_u$ is the map that carries the element $u$ to the operator inverting the elements $x$ with $u\alpha(x)u^{-1} = -x$; the reflection is uniquely determined by the coset $u\{a : c_a = \alpha\}$, and the assignment is injective exactly when the grade involution is not inner.
+**Corollary (the reflection attached to an invertible element).** Assigning to an invertible element $u$ with $u\alpha(u)$ central the reflection $\rho_u$ is the map that carries the element $u$ to the operator inverting the elements $x$ with $u\alpha(x)u^{-1} = -x$; the reflection is uniquely determined by the coset $u\{a : c_a = \alpha\}$, and the assignment is injective exactly when the grade involution is not inner.
 
 **Proof.** Immediate from the theorem; the inversion condition is $\rho_u(x) = -x$, which is $u\alpha(x)u^{-1} = -x$.
 
@@ -89,13 +89,13 @@ $$
 \rho_u(x) = u z x z^{-1}u^{-1} = (uz)x(uz)^{-1} = c_{uz}(x) ,
 $$
 
-the reflections coincide with the inner automorphisms that are involutions, and the correspondence $u \mapsto \rho_u$ has kernel the central units, so it loses injectivity already on the level of the units. In particular when the ring is commutative with $\alpha$ inner, and hence $\alpha = \mathrm{id}$, every reflection is the identity and the reflection group is trivial.
+the reflections coincide with the inner automorphisms that are involutions, and the correspondence $u \mapsto \rho_u$ has kernel the central units, so it loses injectivity already on the level of the invertibles. In particular when the ring is commutative with $\alpha$ inner, and hence $\alpha = \mathrm{id}$, every reflection is the identity and the reflection group is trivial.
 
 **Proof.** For $\alpha = c_z$, $\rho_u = c_u c_z = c_{uz}$, so the reflections are the inner automorphisms $c_{uz}$ that are involutions, that is those with $(uz)^2$ central; the kernel is $\{u : c_u = c_z\} = z(Z(R)\cap R^\times)$. A commutative ring has every inner automorphism trivial, so $\alpha = \mathrm{id}$ and $\rho_u = \mathrm{id}$ for all $u$, and the reflection group is trivial.
 
-**Theorem (the commutative ring).** If $R$ is commutative then for every unit $u$ one has $\rho_u = \alpha$, independently of $u$; the reflection group is the two-element group $\{\mathrm{id}, \alpha\}$ when $\alpha \neq \mathrm{id}$ and is trivial when $\alpha = \mathrm{id}$, and the correspondence is maximally degenerate: every carrying unit gives the same reflection $\alpha$.
+**Theorem (the commutative ring).** If $R$ is commutative then for every invertible $u$ one has $\rho_u = \alpha$, independently of $u$; the reflection group is the two-element group $\{\mathrm{id}, \alpha\}$ when $\alpha \neq \mathrm{id}$ and is trivial when $\alpha = \mathrm{id}$, and the correspondence is maximally degenerate: every carrying unit gives the same reflection $\alpha$.
 
-**Proof.** In a commutative ring $u\alpha(x)u^{-1} = \alpha(x)$, so $\rho_u = \alpha$ for all units $u$; the involution condition $u\alpha(u)$ central is automatic because the ring is commutative, so every unit is a carrying unit, and all are mapped to the same operator. The reflection group is generated by $\alpha$, which has order two when nontrivial and is the identity otherwise.
+**Proof.** In a commutative ring $u\alpha(x)u^{-1} = \alpha(x)$, so $\rho_u = \alpha$ for all units $u$; the involution condition $u\alpha(u)$ central is automatic because the ring is commutative, so every invertible element is a carrying unit, and all are mapped to the same operator. The reflection group is generated by $\alpha$, which has order two when nontrivial and is the identity otherwise.
 
 **Theorem (the failure of injectivity and the cosets).** The correspondence $u \mapsto \rho_u$ fails to be injective exactly when the grade involution is inner; in that case the kernel is the coset $z(Z(R)\cap R^\times)$, and the reflections are the cosets of the central units in the carrying units. If $\alpha$ is not inner, the reflections are in bijection with the carrying units and two distinct carrying units give distinct reflections, except in the commutative case, where all give the same reflection.
 
@@ -121,15 +121,15 @@ the reflections coincide with the inner automorphisms that are involutions, and 
 
 **Example (the Clifford algebra of a quadratic space).** In the Clifford algebra $Cl(V, \mathfrak{Q})$ with the grade involution, the reflection carried by a vector $v$ with $\mathfrak{Q}(v)\neq 0$ is $\rho_v(x) = v\alpha(x)v^{-1}$, and $v\alpha(v) = -\mathfrak{Q}(v)$ is central, so $\rho_v$ is an involution; its fixed set is the hyperplane of $x$ with $vx = xv$, and the correspondence with the vectors is the geometric correspondence between the elements of $V$ and the reflections of the quadratic space.
 
-**Example (the matrix ring with the transpose).** On $M_n(k)$ with the grade involution $\alpha(A) = A^{\top}$, the reflection carried by a unit $U$ is $\rho_\mathrm{U}(A) = U A^{\top}U^{-1}$; it is an involution when $UA^{\top}$... precisely when $U\alpha(U) = U U^{\top}$ is central; the symmetric matrices $U = U^{\top}$ with $U^2$ central give the reflections, and the correspondence fails when $UU^{\top}$ is not central.
+**Example (the matrix ring with the transpose).** On $M_n(k)$ with the grade involution $\alpha(A) = A^{\top}$, the reflection carried by an invertible element $U$ is $\rho_\mathrm{U}(A) = U A^{\top}U^{-1}$; it is an involution when $UA^{\top}$... precisely when $U\alpha(U) = U U^{\top}$ is central; the symmetric matrices $U = U^{\top}$ with $U^2$ central give the reflections, and the correspondence fails when $UU^{\top}$ is not central.
 
 **Example (an inner grade involution).** On $M_n(k)\times M_n(k)$ with $\alpha(A,B) = (B,A)$, the grade involution is inner exactly when the two factors are conjugated by an invertible element; in that case every reflection is an inner automorphism by the inner theorem, so the signed reflection is not new, and the article's degenerate case is realised.
 
 ## Summary
 
-A reflection of a topological ring with a continuous grade involution $\alpha$ is a signed conjugation $\rho_u(x) = u\alpha(x)u^{-1}$ with $u\alpha(u)$ central; it is a continuous involutive automorphism, a homeomorphism, and its fixed set is the closed subring $\{x : \alpha(x) = u^{-1}xu\}$. The reflections correspond to the carrying units $I_\alpha(R) = \{u : u\alpha(u) \in Z(R)\}$ modulo the units inducing the grade involution, $\{u : c_u = \alpha\}$, so the correspondence is a bijection with the carrying units when $\alpha$ is not inner and a bijection with the cosets of the central units when $\alpha$ is inner; the assignment is continuous for the pointwise topology and a homeomorphism onto its image up to the kernel.
+A reflection of a topological ring with a continuous grade involution $\alpha$ is a signed conjugation $\rho_u(x) = u\alpha(x)u^{-1}$ with $u\alpha(u)$ central; it is a continuous involutive automorphism, a homeomorphism, and its fixed set is the closed subring $\{x : \alpha(x) = u^{-1}xu\}$. The reflections correspond to the carrying units $I_\alpha(R) = \{u : u\alpha(u) \in Z(R)\}$ modulo the invertibles inducing the grade involution, $\{u : c_u = \alpha\}$, so the correspondence is a bijection with the carrying units when $\alpha$ is not inner and a bijection with the cosets of the central units when $\alpha$ is inner; the assignment is continuous for the pointwise topology and a homeomorphism onto its image up to the kernel.
 
-The correspondence fails in the degenerate cases. When the grade involution is inner, $\alpha = c_z$, every reflection is the inner automorphism $c_{uz}$ and the kernel is the coset of the central units, so injectivity is lost on the level of the units; when the ring is commutative every unit gives the same reflection $\alpha$ and the reflection group is $\{\mathrm{id}, \alpha\}$, the maximal degeneration. When $\alpha$ is not inner and the ring is noncommutative the correspondence is injective but not onto the involutive automorphisms, since only the signed conjugations are reflections in this sense; the adjoints of the reflections and the anti-automorphic involution are the neighbouring articles.
+The correspondence fails in the degenerate cases. When the grade involution is inner, $\alpha = c_z$, every reflection is the inner automorphism $c_{uz}$ and the kernel is the coset of the central units, so injectivity is lost on the level of the invertibles; when the ring is commutative every unit gives the same reflection $\alpha$ and the reflection group is $\{\mathrm{id}, \alpha\}$, the maximal degeneration. When $\alpha$ is not inner and the ring is noncommutative the correspondence is injective but not onto the involutive automorphisms, since only the signed conjugations are reflections in this sense; the adjoints of the reflections and the anti-automorphic involution are the neighbouring articles.
 
 ## Summary of Notation
 

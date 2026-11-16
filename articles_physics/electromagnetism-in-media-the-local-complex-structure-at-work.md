@@ -390,7 +390,7 @@ The right product appears as well, and it is a different operator. The divergenc
 $$
 \mathcal{D}_{\vec{\alpha}}g:=Dg+g\,\vec{\alpha},
 $$
-a derived notation of this article — the right product written with one letter — naming no new object. It is not a conjugation of $D$: the coefficient sits between the field and the units that $D$ multiplies by. That operator has a complete theory of its own, and the section *The Operator $\mathcal{D}_{\vec{\alpha}}$* below states it.
+a derived notation of this article — the right product written with one letter — naming no new object. It is not a conjugation of $D$: the coefficient sits between the field and the invertibles that $D$ multiplies by. That operator has a complete theory of its own, and the section *The Operator $\mathcal{D}_{\vec{\alpha}}$* below states it.
 
 **A scalar-product identity.** The divergence equations enter the reduction through scalar products, which have to be exchanged for products. For real vectors $\vec p,\vec q$ the products $\vec p\vec q$ and $\vec q\vec p$ have a common scalar part and opposite vector parts, so
 

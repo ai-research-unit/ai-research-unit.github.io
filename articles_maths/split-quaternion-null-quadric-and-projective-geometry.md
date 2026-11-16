@@ -5,7 +5,7 @@
 
 The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ carries a non-degenerate quadratic form of signature $(2,2)$, the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$. Its zero set, the **null cone**, is the zero-divisor set together with the origin, and its projectivisation is a smooth quadric surface in $\mathbb{P}^3$. This article describes the null cone, the two families of isotropic lines, the rank-one description of its nonzero points, the Segre embedding of the quadric, the doubly ruled description of the quadric, and the relations to the projective geometry of the biquaternions and to the Lorentzian geometry of the vector subspace.
 
-The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the units, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
+The article owns the projective and quadric structure of the algebra. It relies on *Split-Quaternion Norm and Invertibility* for the form and the invertibles, on *Split-Quaternion Zero Divisors* for the null structure, on *Split-Quaternion Topology* for the link and the rulings as topological objects, and on *Split-Quaternion Geometry* for the geometric reading. The split-quaternion norm and its polarisation are developed in *Split-Quaternion Norm and Invertibility* and are used here only geometrically. No physics is invoked.
 
 ## The Null Cone
 
@@ -17,7 +17,7 @@ $$
 
 the union of the origin and the zero divisors.
 
-**Theorem.** The null cone is a real cone of dimension $3$, singular only at its vertex $0$; away from the origin it is a smooth three-manifold, and it is the boundary between the two components $\{N>0\}$ and $\{N<0\}$ of the group of units. Its projectivisation $\mathbb{P}(\mathcal{N}) \subset \mathbb{P}^3$ is a smooth quadric surface.
+**Theorem.** The null cone is a real cone of dimension $3$, singular only at its vertex $0$; away from the origin it is a smooth three-manifold, and it is the boundary between the two components $\{N>0\}$ and $\{N<0\}$ of the group of invertibles. Its projectivisation $\mathbb{P}(\mathcal{N}) \subset \mathbb{P}^3$ is a smooth quadric surface.
 
 **Proof.** The form has signature $(2,2)$, so it is indefinite and non-degenerate; the cone is the zero set of a non-degenerate quadratic form, hence a cone of dimension $3$ with smooth part the complement of the vertex. The gradient $2GX$ vanishes only at the origin, so the projective quadric is smooth.
 
@@ -105,7 +105,7 @@ The split-quaternion quadric is a real form of the complex quadric of $M_2(\math
 
 The same form determines two geometries, and the two-dimensional isotropic structure above is the common source.
 
-**The projective geometry on the algebra.** The isometry group of $\langle\cdot\rangle_{\natural}$ is $O(2,2)$, of dimension $6$; its action on $\mathbb{P}^3$ preserves the quadric $\mathcal{Q}$ and permutes its two rulings, with the identity component $\mathrm{SO}^{+}(2,2)$ preserving each ruling. The group of units acts through $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1) \subset SO(2,2)$, the algebra automorphisms of *Split-Quaternion Automorphisms and Derivations*, which is the subgroup fixing the projective point $\mathbb{P}(S)$ of the scalar line and the plane at infinity.
+**The projective geometry on the algebra.** The isometry group of $\langle\cdot\rangle_{\natural}$ is $O(2,2)$, of dimension $6$; its action on $\mathbb{P}^3$ preserves the quadric $\mathcal{Q}$ and permutes its two rulings, with the identity component $\mathrm{SO}^{+}(2,2)$ preserving each ruling. The group of invertibles acts through $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1) \subset SO(2,2)$, the algebra automorphisms of *Split-Quaternion Automorphisms and Derivations*, which is the subgroup fixing the projective point $\mathbb{P}(S)$ of the scalar line and the plane at infinity.
 
 **The Lorentzian geometry on the vector subspace.** The restricted form $\langle\cdot\rangle_{\natural}|_V = q_x^2-q_y^2-q_z^2$ of signature $(2,1)$ has null cone $q_x^2 = q_y^2 + q_z^2 = \mathcal{N}\cap V$; its isometry group is $O(2,1)$, and its projectivisation is the conic $\mathbb{P}(\mathcal{N}\cap V) \subset \mathbb{P}^2$, the absolute of the hyperbolic plane. This is the Lorentzian geometry of the vector subspace developed in *Split-Quaternion Geometry* and *Split-Quaternions and Hyperbolic Geometry*: the two isotropic lines of the conic are the two points at infinity of the hyperbolic plane, and the Lorentzian geometry of Part II of the corpus is exactly the geometry of this conic.
 

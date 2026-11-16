@@ -71,9 +71,9 @@ $$
 \operatorname{cong}_g : E \to E, \qquad \operatorname{cong}_g(f)=g^{*}fg .
 $$
 
-**Proposition.** For every $g$ the congruence preserves self-adjointness: if $f^{*}=f$ then $(g^{*}fg)^{*}=g^{*}fg$. If $g$ is unitary, the congruence is the inner automorphism $f \mapsto g^{-1}fg$ and is an algebra automorphism; for general $g$ it is additive and $R$-linear, it satisfies $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{hg}$, and it is invertible exactly when $g$ is a unit.
+**Proposition.** For every $g$ the congruence preserves self-adjointness: if $f^{*}=f$ then $(g^{*}fg)^{*}=g^{*}fg$. If $g$ is unitary, the congruence is the inner automorphism $f \mapsto g^{-1}fg$ and is an algebra automorphism; for general $g$ it is additive and $R$-linear, it satisfies $\operatorname{cong}_g\circ\operatorname{cong}_h=\operatorname{cong}_{hg}$, and it is invertible exactly when $g$ is invertible.
 
-*Proof.* $(g^{*}fg)^{*}=g^{*}f^{*}(g^{*})^{*}=g^{*}fg$. For unitary $g$, $g^{*}=g^{-1}$ and $g^{*}fg=g^{-1}fg$, which is conjugation and preserves products; for general $g$, $\operatorname{cong}_g(fh)=g^{*}fhg$ while $\operatorname{cong}_g(f)\operatorname{cong}_g(h)=g^{*}fgg^{*}hg$, equal only when $gg^{*}$ is central. The composition is $\operatorname{cong}_g(\operatorname{cong}_h(f))=g^{*}h^{*}fhg=(hg)^{*}f(hg)=\operatorname{cong}_{hg}(f)$; when $g$ is a unit, $\operatorname{cong}_{g^{-1}}$ is a two-sided inverse.
+*Proof.* $(g^{*}fg)^{*}=g^{*}f^{*}(g^{*})^{*}=g^{*}fg$. For unitary $g$, $g^{*}=g^{-1}$ and $g^{*}fg=g^{-1}fg$, which is conjugation and preserves products; for general $g$, $\operatorname{cong}_g(fh)=g^{*}fhg$ while $\operatorname{cong}_g(f)\operatorname{cong}_g(h)=g^{*}fgg^{*}hg$, equal only when $gg^{*}$ is central. The composition is $\operatorname{cong}_g(\operatorname{cong}_h(f))=g^{*}h^{*}fhg=(hg)^{*}f(hg)=\operatorname{cong}_{hg}(f)$; when $g$ is invertible, $\operatorname{cong}_{g^{-1}}$ is a two-sided inverse.
 
 Congruences are the general "change of pairing" operation on operators: replacing the pairing by an equivalent one conjugates the involution, and composing the new involution with the old gives a congruence, as the last section shows.
 
@@ -131,9 +131,9 @@ Moreover $f$ is self-adjoint if and only if $f=f^{*}$, and $f$ is anti-self-adjo
 
 ### The $*$-congruence and equivalence
 
-**Proposition.** The map $f \mapsto g^{*}fg$ is additive and $R$-linear; if $g$ is a unit then the map is invertible with inverse $h \mapsto (g^{*})^{-1}h\,g^{-1}$, and it carries the involutive algebra structure $(E,{}^{*})$ to the involutive algebra structure with involution $f \mapsto g^{-1}f^{*}g$.
+**Proposition.** The map $f \mapsto g^{*}fg$ is additive and $R$-linear; if $g$ is invertible then the map is invertible with inverse $h \mapsto (g^{*})^{-1}h\,g^{-1}$, and it carries the involutive algebra structure $(E,{}^{*})$ to the involutive algebra structure with involution $f \mapsto g^{-1}f^{*}g$.
 
-*Proof.* Additivity and $R$-linearity are clear. For invertibility, $g^{*}f g=h$ with $g$ a unit is solved by $f=(g^{*})^{-1}hg^{-1}$; and $(g^{*}fg)^{*}=g^{*}f^{*}g$, so the transformed involution is $f\mapsto g^{-1}f^{*}g$ on the transformed element.
+*Proof.* Additivity and $R$-linearity are clear. For invertibility, $g^{*}f g=h$ with $g$ an invertible element is solved by $f=(g^{*})^{-1}hg^{-1}$; and $(g^{*}fg)^{*}=g^{*}f^{*}g$, so the transformed involution is $f\mapsto g^{-1}f^{*}g$ on the transformed element.
 
 This is how a module with two pairings carries two involutions on one ring, as *The Involution on the Endomorphism Ring of a Module* notes.
 
@@ -151,7 +151,7 @@ This is how a module with two pairings carries two involutions on one ring, as *
 
 ## Summary
 
-On a module with a non-degenerate reflexive pairing, the endomorphism ring is an involutive $R$-algebra $(E,{}^{*})$, and its elements are classified by the involution: self-adjoint, anti-self-adjoint, and unitary. Every operator decomposes uniquely as $f=\operatorname{Re}f+\operatorname{Im}f$ with the two parts self-adjoint and anti-self-adjoint; the self-adjoint part is closed under the Jordan product and the square but under the ordinary product only when the factors commute; the products $f^{*}f$ and $ff^{*}$ are always self-adjoint, and a congruence $f \mapsto g^{*}fg$ preserves self-adjointness while being multiplicative only for unitary $g$. The unitary operators are the isometries of the pairing and form a subgroup $\mathrm{U}(M)$ of the unit group, acting by unitary conjugation $f \mapsto ufu^{-1}$ and preserving the involutive algebra structure; the unitary orbit and the congruence orbit are the two natural equivalence relations on the self-adjoint operators, and their classification needs the spectrum, which belongs to Part II. Nothing here uses a norm, a positivity or a topology; the classes are defined by the involution alone, and the operator identities are the ones available over a general coefficient ring.
+On a module with a non-degenerate reflexive pairing, the endomorphism ring is an involutive $R$-algebra $(E,{}^{*})$, and its elements are classified by the involution: self-adjoint, anti-self-adjoint, and unitary. Every operator decomposes uniquely as $f=\operatorname{Re}f+\operatorname{Im}f$ with the two parts self-adjoint and anti-self-adjoint; the self-adjoint part is closed under the Jordan product and the square but under the ordinary product only when the factors commute; the products $f^{*}f$ and $ff^{*}$ are always self-adjoint, and a congruence $f \mapsto g^{*}fg$ preserves self-adjointness while being multiplicative only for unitary $g$. The unitary operators are the isometries of the pairing and form a subgroup $\mathrm{U}(M)$ of the group of invertibles, acting by unitary conjugation $f \mapsto ufu^{-1}$ and preserving the involutive algebra structure; the unitary orbit and the congruence orbit are the two natural equivalence relations on the self-adjoint operators, and their classification needs the spectrum, which belongs to Part II. Nothing here uses a norm, a positivity or a topology; the classes are defined by the involution alone, and the operator identities are the ones available over a general coefficient ring.
 
 ## Summary of Notation
 

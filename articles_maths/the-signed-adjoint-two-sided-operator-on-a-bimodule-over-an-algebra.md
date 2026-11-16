@@ -113,7 +113,7 @@ Hence the unitary signed two-sided operators generate a group of isometries of t
 
 ### Reflections
 
-**Corollary.** For a unit $u$ the reflection $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ has a reflection as its adjoint,
+**Corollary.** For an invertible element $u$ the reflection $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ has a reflection as its adjoint,
 
 $$
 \boxed{\;(r_u)^{*}=\mathcal{T}^{\alpha}_{\beta(u),\,\beta(u)^{-1}}=r_{\beta(u)}\;},

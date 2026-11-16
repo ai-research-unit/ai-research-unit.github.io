@@ -40,9 +40,9 @@ $$
 $$
 defined when $\breve Q_{H}$ is invertible. The function is **differentiable** at $\breve Q$ when the quotient tends to a limit $f'(\breve Q)\in\mathbb{B}_{\mathrm{red}}$ as $\breve Q_{H}\to0$ through the invertible increments.
 
-**Theorem (the obstacle).** The increments range over the unit group, which is open and dense but not all of the space; the increments that are excluded are the zero divisors, and the division by them is impossible. The quotient is therefore defined on a dense subset of the increments and not on all of them.
+**Theorem (the obstacle).** The increments range over the group of invertibles, which is open and dense but not all of the space; the increments that are excluded are the zero divisors, and the division by them is impossible. The quotient is therefore defined on a dense subset of the increments and not on all of them.
 
-*Proof.* The invertible increments are the units of *The Group of Units of the Algebra of the Reduced Biquaternions*, whose complement is the zero-divisor set of *Zero Divisors of the Algebra of the Reduced Biquaternions*, closed with empty interior; an increment in the complement, being without inverse, cannot divide.
+*Proof.* The invertible increments are the invertibles of *The Group of Invertibles of the Algebra of the Reduced Biquaternions*, whose complement is the zero-divisor set of *Zero Divisors of the Algebra of the Reduced Biquaternions*, closed with empty interior; an increment in the complement, being without inverse, cannot divide.
 
 **Theorem (the polynomials are differentiable).** Every polynomial in $\breve Q$ with reduced biquaternion coefficients is differentiable at every point, with derivative the formal derivative: if $P(X)=\sum_{n}c_{n}X^{n}$ then
 $$
@@ -151,7 +151,7 @@ Reduced biquaternion analysis works on a domain of the Euclidean space with metr
 
 ## Further Reading
 
-- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric and the unit group.
+- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric and the group of invertibles.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), for the two coordinate projections.
 - [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations.html), for the metric of each product.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the products and the norms used throughout.

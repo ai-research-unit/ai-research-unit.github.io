@@ -5,13 +5,13 @@
 
 This article is the last rung of the non-commutative chain of *Rings and Fields*, directly above *Ore Domains and Division Rings of Fractions*. It is also the article in which the two chains are compared: the commutative chain ends at the fields, the non-commutative chain ends at the division rings, and the difference between the two ends is exactly the commutativity hypothesis that the chain has been shedding since *Rings*. Throughout, $D$ denotes a ring with $1 \neq 0$ **not assumed commutative**; the corpus default, the commutative ring, is not the base here, and every statement that requires commutativity says so.
 
-A **division ring** is a ring with $1 \neq 0$ in which every nonzero element is a unit, and a **skew field** is another name for the same object. The article gives the elementary theory — that a division ring has no zero divisors, that its centre is a field, and that it is finite-dimensional or infinite-dimensional over that centre — and proves **Wedderburn's little theorem**, that every finite division ring is a field. The two kinds of example are the quaternions, finite-dimensional over their centre, and the first Weyl field of *Ore Domains and Division Rings of Fractions*, above, infinite-dimensional over its centre. The article stops here: the theory of simple and semisimple rings, of the Jacobson radical and of the Wedderburn–Artin structure theorem belongs to *Simple and Semisimple Modules*, in a later category of this Part, and is not stated in this chain.
+A **division ring** is a ring with $1 \neq 0$ in which every nonzero element is invertible, and a **skew field** is another name for the same object. The article gives the elementary theory — that a division ring has no zero divisors, that its centre is a field, and that it is finite-dimensional or infinite-dimensional over that centre — and proves **Wedderburn's little theorem**, that every finite division ring is a field. The two kinds of example are the quaternions, finite-dimensional over their centre, and the first Weyl field of *Ore Domains and Division Rings of Fractions*, above, infinite-dimensional over its centre. The article stops here: the theory of simple and semisimple rings, of the Jacobson radical and of the Wedderburn–Artin structure theorem belongs to *Simple and Semisimple Modules*, in a later category of this Part, and is not stated in this chain.
 
 ---
 
 ## Division Rings
 
-**Definition.** A **division ring** is a ring $D$ with $1 \neq 0$ in which every nonzero element is a unit: $D^{\times} = D \setminus \{0\}$. A commutative division ring is a **field**, and the older name for a division ring is a **skew field**.
+**Definition.** A **division ring** is a ring $D$ with $1 \neq 0$ in which every nonzero element is invertible: $D^{\times} = D \setminus \{0\}$. A commutative division ring is a **field**, and the older name for a division ring is a **skew field**.
 
 **Proposition.** A division ring is a domain, hence is prime, hence is semiprime, and it has no nonzero nilpotent element and no nonzero nilpotent ideal.
 
@@ -39,7 +39,7 @@ $$
 z^{-1}d = z^{-1}dzz^{-1} = z^{-1}zdz^{-1} = dz^{-1} ,
 $$
 
-using $dz = zd$. Hence every nonzero element of $Z(D)$ is a unit of $Z(D)$, and $Z(D)$ is a field.
+using $dz = zd$. Hence every nonzero element of $Z(D)$ is invertible in $Z(D)$, and $Z(D)$ is a field.
 
 **Definition.** $D$ is **finite-dimensional over its centre** if there are finitely many elements $d_1, \ldots, d_n \in D$ such that every element of $D$ is a $Z(D)$-linear combination $z_1d_1 + \cdots + z_nd_n$ with $z_i \in Z(D)$; the least such $n$ is the **dimension** of $D$ over its centre. Otherwise $D$ is **infinite-dimensional over its centre**.
 
@@ -75,7 +75,7 @@ On the other hand $\Phi_n(q) = \prod (q - \omega)$, the product being over the p
 
 **Theorem.** The quaternions $\mathbb{H}$ form a division ring that is not a field, and $\mathbb{H}$ is four-dimensional over its centre $\mathbb{R}$.
 
-**Proof.** By *Non-Commutative Domains*, above, where $\mathbb{H}$ is defined as the real algebra with basis $1, i, j, k$ and $i^2 = j^2 = k^2 = ijk = -1$, every nonzero element is a unit, so $\mathbb{H}$ is a division ring; and $ij = k \neq -k = ji$, so $\mathbb{H}$ is not commutative. The centre contains $\mathbb{R} = \mathbb{R} \cdot 1$; conversely, if $q = a + bi + cj + dk$ is central, then $qi = iq$ gives, comparing coefficients, $b = c = d = 0$, so $q \in \mathbb{R}$. Hence $Z(\mathbb{H}) = \mathbb{R}$ and the basis $1, i, j, k$, four elements, generates $\mathbb{H}$ over $\mathbb{R}$, so the dimension over the centre is four.
+**Proof.** By *Non-Commutative Domains*, above, where $\mathbb{H}$ is defined as the real algebra with basis $1, i, j, k$ and $i^2 = j^2 = k^2 = ijk = -1$, every nonzero element is invertible, so $\mathbb{H}$ is a division ring; and $ij = k \neq -k = ji$, so $\mathbb{H}$ is not commutative. The centre contains $\mathbb{R} = \mathbb{R} \cdot 1$; conversely, if $q = a + bi + cj + dk$ is central, then $qi = iq$ gives, comparing coefficients, $b = c = d = 0$, so $q \in \mathbb{R}$. Hence $Z(\mathbb{H}) = \mathbb{R}$ and the basis $1, i, j, k$, four elements, generates $\mathbb{H}$ over $\mathbb{R}$, so the dimension over the centre is four.
 
 **Remark.** The computation of the centre is the standard one: a central element must commute with each of $i, j, k$, and each of those conditions kills two of the three imaginary coefficients. The quaternion ring is the standard example of a division ring finite-dimensional over its centre, and its centre is the field $\mathbb{R}$.
 
@@ -124,7 +124,7 @@ characteristic zero.
 
 ### Finite Subgroups of the Multiplicative Group
 
-**Example.** The multiplicative group of a division ring does not share the arithmetic of the multiplicative group of a field. In $\mathbb{H}$ the eight elements $\pm 1, \pm i, \pm j, \pm k$ form a subgroup isomorphic to the quaternion group $Q_8$, which is finite, non-abelian and non-cyclic, whereas every finite subgroup of the multiplicative group of a field is cyclic, by the standard theorem of *Finite Fields*, above. Wedderburn's little theorem constrains the ring and not the group: the subring generated by these eight elements is the ring of Lipschitz quaternions $\mathbb{Z}[i, j, k]$, which is infinite and of characteristic zero, so the theorem does not apply to it, and its element $2$ is not a unit.
+**Example.** The multiplicative group of a division ring does not share the arithmetic of the multiplicative group of a field. In $\mathbb{H}$ the eight elements $\pm 1, \pm i, \pm j, \pm k$ form a subgroup isomorphic to the quaternion group $Q_8$, which is finite, non-abelian and non-cyclic, whereas every finite subgroup of the multiplicative group of a field is cyclic, by the standard theorem of *Finite Fields*, above. Wedderburn's little theorem constrains the ring and not the group: the subring generated by these eight elements is the ring of Lipschitz quaternions $\mathbb{Z}[i, j, k]$, which is infinite and of characteristic zero, so the theorem does not apply to it, and its element $2$ is not invertible.
 
 **Remark.** In characteristic $p > 0$ the two theories come closer: a finite subgroup $G$ of $D^{\times}$ there generates a subring that is finite, since its elements are finite sums of products of elements of $G$ with coefficients in $\mathbb{F}_p$, and a finite subring without zero divisors is a field by the proposition above together with Wedderburn's little theorem. No such reduction is available in characteristic zero, and the quaternion group inside $\mathbb{H}$ is the witness.
 
@@ -161,7 +161,7 @@ The implications are strict: $\mathbb{Z}$ is an Ore domain and not a division ri
 
 ## Summary
 
-A division ring, or skew field, is a ring with $1 \neq 0$ in which every nonzero element is a unit; a commutative division ring is a field, so the class of fields is the intersection of the two chains of the category. A division ring is a domain, hence prime and semiprime, and a finite domain is a division ring. The centre of a division ring is a field, and a division ring is either finite-dimensional or infinite-dimensional over its centre, in the elementary sense of a finite generating list of central multiples; Wedderburn's little theorem states that a finite division ring is a field, so finite skew fields and finite fields are the same class, and its proof is the class equation of the multiplicative group together with the divisibility of the cyclotomic polynomial values. The two examples are the quaternions, four-dimensional over the centre $\mathbb{R}$ and not commutative, and the first Weyl field, infinite-dimensional over the centre $k$ and not commutative; the two are distinguished by the dimension over the centre. The multiplicative group of a division ring is not the multiplicative group of a field: the quaternion group sits inside $\mathbb{H}^{\times}$, while in characteristic zero the subring it generates is infinite and Wedderburn's little theorem does not reach it. The chain stops at the division rings: simple and semisimple modules, the Jacobson radical and the Wedderburn–Artin theorem belong to the module theory of a later category of this Part.
+A division ring, or skew field, is a ring with $1 \neq 0$ in which every nonzero element is invertible; a commutative division ring is a field, so the class of fields is the intersection of the two chains of the category. A division ring is a domain, hence prime and semiprime, and a finite domain is a division ring. The centre of a division ring is a field, and a division ring is either finite-dimensional or infinite-dimensional over its centre, in the elementary sense of a finite generating list of central multiples; Wedderburn's little theorem states that a finite division ring is a field, so finite skew fields and finite fields are the same class, and its proof is the class equation of the multiplicative group together with the divisibility of the cyclotomic polynomial values. The two examples are the quaternions, four-dimensional over the centre $\mathbb{R}$ and not commutative, and the first Weyl field, infinite-dimensional over the centre $k$ and not commutative; the two are distinguished by the dimension over the centre. The multiplicative group of a division ring is not the multiplicative group of a field: the quaternion group sits inside $\mathbb{H}^{\times}$, while in characteristic zero the subring it generates is infinite and Wedderburn's little theorem does not reach it. The chain stops at the division rings: simple and semisimple modules, the Jacobson radical and the Wedderburn–Artin theorem belong to the module theory of a later category of this Part.
 
 ## Summary of Notation
 
@@ -170,7 +170,7 @@ A division ring, or skew field, is a ring with $1 \neq 0$ in which every nonzero
 | $D$ | A ring with $1 \neq 0$, not assumed commutative; the base of this article |
 | division ring, skew field | A ring with $1 \neq 0$ in which $D^{\times} = D \setminus \{0\}$ |
 | field | A commutative division ring |
-| $D^{\times}$ | The group of units, equal to $D \setminus \{0\}$ |
+| $D^{\times}$ | The group of invertibles, equal to $D \setminus \{0\}$ |
 | $Z(D)$ | The centre of $D$, a field |
 | $Z(\mathbb{H}) = \mathbb{R}$, $Z(D_1(k)) = k$ | The centres of the two standard examples |
 | finite-dimensional over the centre | There is a finite list of elements whose central multiples exhaust $D$ |
@@ -181,7 +181,7 @@ A division ring, or skew field, is a ring with $1 \neq 0$ in which every nonzero
 | $\Phi_n$ | The $n$-th cyclotomic polynomial, used in the proof of Wedderburn's little theorem |
 | $M_n(D)$, $M_2(F)$ | The matrix ring over a division ring, prime and not a domain for $n \geq 2$ |
 | $\mathbb{Z}$, $k \times k$ | The witnesses of the strictness of the chain of classes |
-| $Q_8 \subseteq \mathbb{H}^{\times}$ | The quaternion group, a finite non-abelian subgroup of the units of a division ring |
+| $Q_8 \subseteq \mathbb{H}^{\times}$ | The quaternion group, a finite non-abelian subgroup of the invertibles of a division ring |
 
 ## Further Reading
 

@@ -16,7 +16,7 @@ These are the closed subgroups of the general linear groups defined by polynomia
 | Group | Real dimension | Its structure | Introduced in |
 |---|---|---|---|
 | $GL_n(\mathbb{R})$ | $n^2$ | not connected, not compact; the open set $\det \neq 0$ | *Lie Groups* |
-| $GL_n(\mathbb{C})$ | $2n^2$ | connected, not compact; the group of units of $M_n(\mathbb{C})$ | *Lie Groups* |
+| $GL_n(\mathbb{C})$ | $2n^2$ | connected, not compact; the group of invertibles of $M_n(\mathbb{C})$ | *Lie Groups* |
 | $SL_n(\mathbb{R})$ | $n^2 - 1$ | connected, not compact; the kernel of the determinant | *Lie Groups* |
 | $SL_n(\mathbb{C})$ | $2n^2 - 2$ | connected and simply connected | *Lie Groups* |
 | $O(n)$ | $n(n-1)/2$ | compact, two components; identity component $SO(n)$ | *Lie Groups* |
@@ -28,7 +28,7 @@ These are the closed subgroups of the general linear groups defined by polynomia
 | $S^1 = \mathrm{U}(1) = SO(2)$ | $1$ | compact connected abelian; $\pi_1 = \mathbb{Z}$ | *Lie Groups* |
 | $S^3 = SU(2) = Sp(1)$ | $3$ | compact, connected and simply connected; the unit quaternions | *Lie Groups* |
 | $\operatorname{Spin}(n)$, $n \geq 3$ | $n(n-1)/2$ | compact, connected and simply connected; the double cover of $SO(n)$ | *Lie Groups*; *List of Clifford Algebras and Spin Groups* |
-| $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $8$ | the units of the biquaternion algebra, a real Lie group | *Lie Groups*; *The Biquaternion Algebra* |
+| $\mathbb{B}^\times \cong GL_2(\mathbb{C})$ | $8$ | the invertibles of the biquaternion algebra, a real Lie group | *Lie Groups*; *The Biquaternion Algebra* |
 
 ## The Abelian, Nilpotent and Semidirect Examples
 

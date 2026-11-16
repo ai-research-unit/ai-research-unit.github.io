@@ -351,7 +351,7 @@ $$
 
 The unsigned operator is the identity on $\mathbb{C}\{e_t,\vec e_x\}$ and the quarter turn $\vec e_y\mapsto\vec e_z$, $\vec e_z\mapsto-\vec e_y$ on $\mathbb{C}\{\vec e_y,\vec e_z\}$; the signed operator interchanges the two roles. The difference is twice the vector part, $2\vec Q_6=2\vec e_x$.
 
-**Corollary (the sign costs multiplicativity).** The unsigned inner conjugation is an algebra automorphism for every unit. The signed inner conjugation with a parameter in $V$ is **anti**-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_2)$. Both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.
+**Corollary (the sign costs multiplicativity).** The unsigned inner conjugation is an algebra automorphism for every invertible element. The signed inner conjugation with a parameter in $V$ is **anti**-multiplicative, $\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1\tilde Q_2)=-\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_1)\mathrm{Ad}^{\alpha}_{\tilde Q_6}(\tilde Q_2)$. Both statements were verified on one hundred pairs. This is the concrete cost of the insertion, and it is the reason the signed operators of the corpus are read for their own laws and not as automorphisms.
 
 **Remark (two places for the sign, and the norm records it).** The corpus writes $\mathrm{Ad}^{\alpha}$ with the sign on the left factor, and it writes the graded two-sided operator $L_{\tilde Q_6}R_{\tilde Q_6^{\natural}}$ with the sign on the right. The two are exchanged by the inverse and by the norm:
 

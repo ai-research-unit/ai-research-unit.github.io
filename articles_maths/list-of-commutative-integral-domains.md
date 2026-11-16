@@ -11,12 +11,12 @@ The article introduces nothing and proves nothing. It records examples and non-e
 
 ## What a Domain Adds
 
-An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors: $ab = 0$ forces $a = 0$ or $b = 0$. Equivalently, every nonzero element is cancellable. The definition and its consequences are in *Rings*, §12, and the first examples are $\mathbb{Z}$ and every field; a field is a domain because a nonzero element is a unit, so it can never be a zero divisor.
+An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors: $ab = 0$ forces $a = 0$ or $b = 0$. Equivalently, every nonzero element is cancellable. The definition and its consequences are in *Rings*, §12, and the first examples are $\mathbb{Z}$ and every field; a field is a domain because a nonzero element is invertible, so it can never be a zero divisor.
 
 | Object | Why it is a domain | Introduced in |
 |---|---|---|
 | $\mathbb{Z}$ | the cancellation law of the integers | *The Integers* |
-| every field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$ | a nonzero element is a unit, hence not a zero divisor | *Fields* |
+| every field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$ | a nonzero element is invertible, hence not a zero divisor | *Fields* |
 | $\mathbb{Z}[x]$, $k[x_1, \dots, x_n]$ | a product of nonzero polynomials is nonzero over a domain | *Polynomial Rings and Rational Functions* |
 | $k[[x]]$ | a product of series with nonzero leading term has nonzero leading term | *Examples of Rings and Fields* |
 | any subring of a domain | inherited from the larger ring | *Rings*, §3 |
@@ -36,7 +36,7 @@ The ladder strengthens the divisibility theory step by step. Each row names the 
 | unique factorisation domain | unique factorisation into irreducibles | $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x_1, \dots, x_n]$, $k[[x]]$ | *Unique Factorisation Domains* |
 | principal ideal domain | every ideal is principal | $\mathbb{Z}$, $\mathbb{Z}[i]$, $k[x]$, $\mathbb{Z}_p$ | *Principal Ideal Domains* |
 | Euclidean domain | a Euclidean degree with division with remainder | $\mathbb{Z}$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $k[x]$ | *Euclidean Domains* |
-| field | every nonzero element is a unit | $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$, $k(x)$, $k((t))$ | *Fields* |
+| field | every nonzero element is invertible | $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$, $k(x)$, $k((t))$ | *Fields* |
 
 The step from a domain to a unique factorisation domain branches: the unique factorisation domains and the Bézout domains are incomparable strengthenings of the GCD domains, and their intersection is the principal ideal domains. The witnesses at the strict steps are collected next.
 
@@ -44,11 +44,11 @@ The step from a domain to a unique factorisation domain branches: the unique fac
 
 | Domain | Strongest rung reached | The failure it records | Introduced in |
 |---|---|---|---|
-| $\mathbb{Z}$ | Euclidean domain | not a field: $2$ is not a unit | *The Integers* |
+| $\mathbb{Z}$ | Euclidean domain | not a field: $2$ is not invertible | *The Integers* |
 | $\mathbb{Z}[i]$ | Euclidean domain | not a field: $2 = (1+i)(1-i)$ | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{2}]$ | Euclidean domain | not a field | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{-2}]$ | Euclidean domain | not a field | *Examples of Rings and Fields* |
-| $k[x]$ | Euclidean domain | not a field: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
+| $k[x]$ | Euclidean domain | not a field: $x$ is not invertible | *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}[(1+\sqrt{-19})/2]$ | principal ideal domain | not Euclidean | *Euclidean Domains* |
 | $\mathbb{Z}_p$ | principal ideal domain | not a field | *Absolute Values, Valuations and Completions* |
 | $\mathbb{Z}_{(p)}$ | principal ideal domain | not a field | *Localization and the Fraction Field* |
@@ -60,7 +60,7 @@ The step from a domain to a unique factorisation domain branches: the unique fac
 | $\mathbb{Z}[\sqrt{-5}]$ | integral domain | not a unique factorisation domain | *Examples of Rings and Fields* |
 | $\mathcal{O}_K$ | integral domain | not a unique factorisation domain in general; Dedekind | *Algebraic Number Theory* |
 | $k[x_1, x_2, \ldots]$ in infinitely many variables | integral domain | not Noetherian | *Examples of Rings and Fields* |
-| $\mathbb{R}[x]$, $\mathbb{Q}[x]$, $\mathbb{F}_p[x]$ | Euclidean domain | not a field: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
+| $\mathbb{R}[x]$, $\mathbb{Q}[x]$, $\mathbb{F}_p[x]$ | Euclidean domain | not a field: $x$ is not invertible | *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}[\varkappa_{\mathrm{crd},n}]$ | integral domain | Dedekind, not principal in general | *Cyclotomic Fields* |
 
 ## The Failure of Unique Factorisation

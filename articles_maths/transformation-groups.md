@@ -183,7 +183,7 @@ The principle in one sentence: a transformation group is determined by what it i
 
 ## Summary
 
-A transformation of a set $X$ is a function $X \to X$, and the invertible transformations form the symmetric group $\operatorname{sym}(X)$ under composition. A structure on $X$ selects a subgroup $\operatorname{Aut}(X) \leq \operatorname{sym}(X)$ of automorphisms, and $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ is the group of units of the endomorphism monoid. Adding structure shrinks the group.
+A transformation of a set $X$ is a function $X \to X$, and the invertible transformations form the symmetric group $\operatorname{sym}(X)$ under composition. A structure on $X$ selects a subgroup $\operatorname{Aut}(X) \leq \operatorname{sym}(X)$ of automorphisms, and $\operatorname{Aut}(X) = \operatorname{End}(X)^\times$ is the group of invertibles of the endomorphism monoid. Adding structure shrinks the group.
 
 An action of a group $G$ on $X$ is a function $G \times X \to X$ with $e \cdot x = x$ and $(ab)\cdot x = a \cdot (b \cdot x)$, equivalently a homomorphism $\rho : G \to \operatorname{sym}(X)$, the permutation representation. The action is faithful when $\rho$ is injective; in general the image is $G/\ker\rho$, so every action is a faithful action of a quotient. The orbits partition $X$, the stabilisers are subgroups, and every transitive $G$-set is isomorphic to a coset space $G/H$ with $H$ a point stabiliser.
 

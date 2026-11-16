@@ -69,7 +69,7 @@ The fourth sector is empty, so the partition has three members.
 
 ## The Sector $\Sigma_{11}$: Reduced-Norm-Regular, Spectrally Regular
 
-**Description.** $\Sigma_{11}$ consists of the units whose two halves are both non-scalar and whose half-spectra are disjoint. It is the complement of the set where one half is scalar or the two spectra meet.
+**Description.** $\Sigma_{11}$ consists of the invertibles whose two halves are both non-scalar and whose half-spectra are disjoint. It is the complement of the set where one half is scalar or the two spectra meet.
 
 **Theorem (dimension and topology).** $\Sigma_{11}$ is open and dense in $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{R}^8$, has real dimension $8$, and its complement $S$ is closed of real dimension $6$. Hence $\Sigma_{11}$ has full measure and is the generic sector.
 
@@ -87,11 +87,11 @@ The first two sets are linear subspaces of dimension $5$. The third contains a $
 
 **Proposition (not product closed).** The product of two elements of $\Sigma_{11}$ need not lie in $\Sigma_{11}$.
 
-*Proof.* Take $Q_+=\vec e_x$ and $Q_-=2\vec e_z$, an element of $\Sigma_{11}$. Its square has halves $\vec e_x^2=-1$ and $(2\vec e_z)^2=-4$, both non-zero real scalars. It is a unit with a repeated root, hence lies in $\Sigma_{10}$.
+*Proof.* Take $Q_+=\vec e_x$ and $Q_-=2\vec e_z$, an element of $\Sigma_{11}$. Its square has halves $\vec e_x^2=-1$ and $(2\vec e_z)^2=-4$, both non-zero real scalars. It is invertible with a repeated root, hence lies in $\Sigma_{10}$.
 
 ## The Sector $\Sigma_{10}$: Reduced-Norm-Regular, Spectrally Degenerate
 
-**Description.** $\Sigma_{10}$ consists of the units with a repeated root. The repetition has two causes: one half is scalar, or the two non-scalar half-spectra meet.
+**Description.** $\Sigma_{10}$ consists of the invertibles with a repeated root. The repetition has two causes: one half is scalar, or the two non-scalar half-spectra meet.
 
 **Definition (the three pieces).** Put
 
@@ -163,7 +163,7 @@ The decomposition of $\Sigma_{10}$ into the scalar pieces and the meeting locus 
 
 ## Summary
 
-Two predicates cut the algebra into four sectors. Spectral regularity and reduced-norm regularity are not independent: $\Sigma_{01}$ is empty, because a vanishing reduced norm forces one half to be zero, and a zero half is a repeated root at zero. The three non-empty sectors are $\Sigma_{11}$, the units with two non-scalar halves and disjoint spectra; $\Sigma_{10}$, the units with a scalar half or meeting spectra; and $\Sigma_{00}$, the zero divisors and the origin.
+Two predicates cut the algebra into four sectors. Spectral regularity and reduced-norm regularity are not independent: $\Sigma_{01}$ is empty, because a vanishing reduced norm forces one half to be zero, and a zero half is a repeated root at zero. The three non-empty sectors are $\Sigma_{11}$, the invertibles with two non-scalar halves and disjoint spectra; $\Sigma_{10}$, the invertibles with a scalar half or meeting spectra; and $\Sigma_{00}$, the zero divisors and the origin.
 
 The dimensions are $8$, $6$ and $4$. $\Sigma_{11}$ is open and dense; $\Sigma_{10}$ has empty interior and closure $S$; $\Sigma_{00}$ is closed, the union of two $4$-planes. Every element is semisimple, so there is no defective stratum: the repeated roots are repetitions of eigenvalues, not Jordan blocks. The biquaternion algebra has a Jordan part and nilpotents; the product of two division algebras removes both.
 

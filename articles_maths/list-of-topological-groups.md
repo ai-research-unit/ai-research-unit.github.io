@@ -76,7 +76,7 @@ The $p$-adic Lie groups carry the manifold topology of a non-archimedean field, 
 | $GL_n(\mathbb{Z}_p)$, $SL_n(\mathbb{Z}_p)$ | the subspace topology of $M_n(\mathbb{Z}_p)$; compact and totally disconnected | *$p$-adic Lie Groups*; *The General Linear Group* |
 | the congruence subgroups $\Gamma_k = 1 + p^kM_n(\mathbb{Z}_p)$ | a basis of open neighbourhoods of the identity; each is a normal pro-$p$ subgroup | *$p$-adic Lie Groups* |
 | the adeles $\mathbb{A}_K$ | the restricted product of the completions $K_v$ with respect to the valuation rings $\mathcal{O}_v$; locally compact, with the adelic topology | *Adeles and Ideles* |
-| the ideles $\mathbb{I}_K = \mathbb{A}_K^\times$ | the topology of the adele ring restricted to the units, which is **not** the subspace topology | *Adeles and Ideles* |
+| the ideles $\mathbb{I}_K = \mathbb{A}_K^\times$ | the topology of the adele ring restricted to the invertibles, which is **not** the subspace topology | *Adeles and Ideles* |
 | the adelic group $G(\mathbb{A}_K)$ | the restricted product of the groups $G(K_v)$ over the places, locally compact | *Adeles and Ideles* |
 | $K \subseteq \mathbb{A}_K$, discrete | the image of $K$ is discrete and cocompact in the trace-zero part | *Adeles and Ideles* |
 | the loop group $LG = C^\infty(S^1,G)$ | the Fréchet manifold topology; not locally compact | *Loop Groups* |

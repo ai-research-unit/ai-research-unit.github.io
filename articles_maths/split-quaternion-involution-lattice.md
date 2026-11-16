@@ -70,7 +70,7 @@ The table is symmetric, which is the commutativity of $G$; the off-diagonal entr
 
 ### Permutation of the Involutions
 
-Since $G$ is abelian, conjugation inside $G$ fixes each element, so the three involutions are permuted trivially by the group itself. The full automorphism group $\operatorname{Aut}(G) \cong S_3$ acts on the set $\{{}^{\natural}, \alpha, \rho\}$ by the six permutations of the three elements, but only the identity permutation is induced by conjugation within $G$; the other permutations arise, when they do, from conjugation by a unit of the algebra, that is from the inner automorphism group $\operatorname{Isom}^{+}$, and the outer automorphisms of the algebra $M_2(\mathbb{R})$ are not realised as such. The relevant structure here is therefore the fixed-space lattice of $G$ and not a nontrivial action on $G$.
+Since $G$ is abelian, conjugation inside $G$ fixes each element, so the three involutions are permuted trivially by the group itself. The full automorphism group $\operatorname{Aut}(G) \cong S_3$ acts on the set $\{{}^{\natural}, \alpha, \rho\}$ by the six permutations of the three elements, but only the identity permutation is induced by conjugation within $G$; the other permutations arise, when they do, from conjugation by an invertible element of the algebra, that is from the inner automorphism group $\operatorname{Isom}^{+}$, and the outer automorphisms of the algebra $M_2(\mathbb{R})$ are not realised as such. The relevant structure here is therefore the fixed-space lattice of $G$ and not a nontrivial action on $G$.
 
 ## The Lattice of Fixed Spaces
 

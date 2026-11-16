@@ -17,7 +17,7 @@ $$
 $$
 W(t,\omega)=\cos(2\pi\omega t)-\rho\,\sin(2\pi\omega t),
 $$
-and $W(t,\omega)$ is a **unit**, with $\langle W\rangle_{\mathrm{ts}*}=W\bar W=1$ and inverse $W^{-1}=\bar W=\cos(2\pi\omega t)+\rho\sin(2\pi\omega t)$; its multiplicative norm is $\langle W\rangle_{\mathrm{ts}}=1$ when $\rho=\pm ij$ and $\langle W\rangle_{\mathrm{ts}}=e^{-4\pi i\omega t}$ when $\rho=i$.
+and $W(t,\omega)$ is of norm one, with $\langle W\rangle_{\mathrm{ts}*}=W\bar W=1$ and inverse $W^{-1}=\bar W=\cos(2\pi\omega t)+\rho\sin(2\pi\omega t)$; its multiplicative norm is $\langle W\rangle_{\mathrm{ts}}=1$ when $\rho=\pm ij$ and $\langle W\rangle_{\mathrm{ts}}=e^{-4\pi i\omega t}$ when $\rho=i$.
 
 *Proof.* An element $\rho=Q_{+}\Pi_++Q_{-}\Pi_-$ has $\rho^{2}=Q_{+}^{2}\Pi_++Q_{-}^{2}\Pi_-$, so $\rho^{2}=-1$ exactly when $Q_{+}^{2}=Q_{-}^{2}=-1$; the kernel has the closed form because $\rho^{2}=-1$ makes the exponential series the two trigonometric series; and $W\bar W=K(W)=\cos^{2}+\sin^{2}=1$, because $\rho\bar\rho=1$ and $\rho+\bar\rho=0$ for the two roots, so the inverse is $\bar W$; the multiplicative norm is $\langle W\rangle_{\mathrm{ts}}=W W_{\mathrm{ts}}$, which is $1$ for $\rho=\pm ij$ and $e^{-4\pi i\omega t}$ for $\rho=i$, the tessarine sign fixing $i$.
 
@@ -25,7 +25,7 @@ and $W(t,\omega)$ is a **unit**, with $\langle W\rangle_{\mathrm{ts}*}=W\bar W=1
 $$
 W(t,\omega)=e^{-2\pi w_{1}\omega t}\Pi_++e^{-2\pi w_{2}\omega t}\Pi_-,
 $$
-so it is the same complex kernel in the two coordinates when $\rho=\pm i$ and the mutually conjugate kernels when $\rho=\pm ij$; it is a unit in either case.
+so it is the same complex kernel in the two coordinates when $\rho=\pm i$ and the mutually conjugate kernels when $\rho=\pm ij$; it is invertible in either case.
 
 *Proof.* The exponential acts coefficientwise and the coordinates of $\rho$ are $w_{1},w_{2}$; for $\rho=i$ both are $i$, and for $\rho=ij$ they are $i$ and $-i$.
 
@@ -112,9 +112,9 @@ the characteristic set of the operator; a regular function of compact support is
 
 **The Euclidean norm is not multiplicative.** $\langle fh\rangle_{\mathrm{ts}*}\neq K(f)K(h)$ in general, so the energy identity does not hold for the Euclidean norm; the Plancherel identity holds because it is the sum of the two coordinate identities, not because the norm is multiplicative.
 
-**The transformed values need not be units.** A sum of units is generally not a unit, the zero divisors being the union of two complex lines, so the transform of a signal of units can have zero-divisor values; only the transform as a linear operator is invertible, not its pointwise values.
+**The transformed values need not be invertible.** A sum of invertibles is generally not an invertible element, the zero divisors being the union of two complex lines, so the transform of a signal of invertibles can have zero-divisor values; only the transform as a linear operator is invertible, not its pointwise values.
 
-*Proof.* The failure of the division is the definition of a zero divisor; the defect $\langle fh\rangle_{\mathrm{ts}*}-K(f)K(h)$ is the cross term described in *Topology and Metric for Each of the Operations*; and the possibility of a zero-divisor sum follows because the units are not closed under addition, though the unit set is open and dense.
+*Proof.* The failure of the division is the definition of a zero divisor; the defect $\langle fh\rangle_{\mathrm{ts}*}-K(f)K(h)$ is the cross term described in *Topology and Metric for Each of the Operations*; and the possibility of a zero-divisor sum follows because the invertibles are not closed under addition, though the unit set is open and dense.
 
 ## The Transform of a Measure and the Bochner Theorem
 
@@ -148,7 +148,7 @@ in the sense that the sum lies in the closed positive cone of the pairing, for e
 
 ## Summary
 
-The continuous Fourier transform of a reduced biquaternion signal is defined by the kernel $W(t,\omega)=\exp(-2\pi\rho\omega t)$ with $\rho$ a root of minus one, the roots being exactly $\pm i$ and $\pm ij$; the kernel has the closed form $\cos(2\pi\omega t)-\rho\sin(2\pi\omega t)$, is a unit with $\langle W\rangle_{\mathrm{ts}*}=1$, and is the ordinary complex kernel in each idempotent coordinate. The transform pair, the continuity and decay, the inversion and the Plancherel identity hold, the last being the sum of the two coordinate identities, and the transform factorizes into exactly two complex transforms. The convolution theorem holds for integrable signals, and the transform of a product is the convolution of the transforms. The derivative becomes multiplication by $2\pi\rho\omega$; the Euclidean Laplacian becomes the negative of the sum of the squared frequency variables; and the Cauchy–Riemann operator becomes the pair of its two symbols, so the Fourier transform of a regular function is supported in the union of the two characteristic two-planes, a regular function of compact support being zero. The vanishing-norm issue is the failure of deconvolution at the zero-divisor frequencies, and the discrete transform is the periodisation of the continuous one under the Poisson summation in each coordinate. The transform of a finite positive measure is positive definite and the Bochner theorem holds coordinatewise, with the Hermitian pairing of the two factors, unlike the biquaternion case where the definiteness fails. Against the split biquaternion case, where the transform is the pair of the quaternion transforms and the non-commutativity survives in the kernel product, the reduced biquaternion transform is the purely commutative pair of the complex transforms.
+The continuous Fourier transform of a reduced biquaternion signal is defined by the kernel $W(t,\omega)=\exp(-2\pi\rho\omega t)$ with $\rho$ a root of minus one, the roots being exactly $\pm i$ and $\pm ij$; the kernel has the closed form $\cos(2\pi\omega t)-\rho\sin(2\pi\omega t)$, is invertible with $\langle W\rangle_{\mathrm{ts}*}=1$, and is the ordinary complex kernel in each idempotent coordinate. The transform pair, the continuity and decay, the inversion and the Plancherel identity hold, the last being the sum of the two coordinate identities, and the transform factorizes into exactly two complex transforms. The convolution theorem holds for integrable signals, and the transform of a product is the convolution of the transforms. The derivative becomes multiplication by $2\pi\rho\omega$; the Euclidean Laplacian becomes the negative of the sum of the squared frequency variables; and the Cauchy–Riemann operator becomes the pair of its two symbols, so the Fourier transform of a regular function is supported in the union of the two characteristic two-planes, a regular function of compact support being zero. The vanishing-norm issue is the failure of deconvolution at the zero-divisor frequencies, and the discrete transform is the periodisation of the continuous one under the Poisson summation in each coordinate. The transform of a finite positive measure is positive definite and the Bochner theorem holds coordinatewise, with the Hermitian pairing of the two factors, unlike the biquaternion case where the definiteness fails. Against the split biquaternion case, where the transform is the pair of the quaternion transforms and the non-commutativity survives in the kernel product, the reduced biquaternion transform is the purely commutative pair of the complex transforms.
 
 ## Summary of Notation
 

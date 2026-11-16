@@ -11,7 +11,7 @@ $$
 
 with the limit $\Rho\to0$ understood as the identity plus $\tilde X$. One formula contains the rotation family and the boost family: when $\Rho$ is real the formula is a rotation, and when $\Rho$ is imaginary it is a boost.
 
-The article then states something that is often asserted wrongly. The exponential of the traceless algebra is **not** onto the unit-norm group. It misses one conjugacy class, the class of $-e_t$ plus a nonzero nilpotent, and the missing class is exactly what produces the "$\pi$ rotation" of the double cover at the level of the algebra. The exponential of the **full eight-dimensional algebra** is onto the group of units, by a different and classical theorem, and the difference between the two statements is the central direction.
+The article then states something that is often asserted wrongly. The exponential of the traceless algebra is **not** onto the unit-norm group. It misses one conjugacy class, the class of $-e_t$ plus a nonzero nilpotent, and the missing class is exactly what produces the "$\pi$ rotation" of the double cover at the level of the algebra. The exponential of the **full eight-dimensional algebra** is onto the group of invertibles, by a different and classical theorem, and the difference between the two statements is the central direction.
 
 The article assumes *The Group of Unit-Norm Biquaternions* for the group and its dimension, *The Six Generators and Their Commutators* for the algebra, and *The Two Casimirs of the Lorentz Algebra* for the labels. It feeds *A Frame Is a Boost Times a Rotation: The Cartan Word* and *The Principal Series and the Complementary Series*.
 
@@ -258,7 +258,7 @@ Cartan coordinates are not exponential coordinates: the product of two exponenti
 
 ## Summary
 
-The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{\operatorname{tr}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of units, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
+The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{\operatorname{tr}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
 
 ## Summary of Notation
 
@@ -266,7 +266,7 @@ The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=
 |---|---|
 | $\tilde X$ | a traceless element of the algebra |
 | $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})=-\det\tilde X$ | the complex modulus of the generator |
-| $\hat{\tilde X}$ | a unit generator, $\hat X^{2}=\pm e_t$ |
+| $\hat{\tilde X}$ | an invertible element generator, $\hat X^{2}=\pm e_t$ |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | rapidity and rotation angle, twice the arguments |
 | $\mathfrak{k}$, $\mathfrak{p}$ | rotations and boosts |
 | $\tilde N$ | a nilpotent, $\tilde N^{2}=0$, $\tilde N\neq0$ |

@@ -4,13 +4,13 @@
 
 This article defines the split-complex higher special functions: the Gamma and Beta functions, the error function, the Airy functions, the Bessel functions, the hypergeometric function, and the Lambert $W$ function. Each function is defined once, its basic properties are recorded, and the relations among them are stated.
 
-The article stands on *Split-Complex Elementary Functions*, which owns the exponential, the logarithm, the split-complex powers and the hyperbolic functions, and which states the Idempotent Principle. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*: the eigenvalues
+The article stands on *Split-Complex Elementary Functions*, which owns the exponential, the logarithm, the split-complex powers and the hyperbolic functions, and which states the Idempotent Principle. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of invertibles are those of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*: the eigenvalues
 
 $$
 \lambda_+=q+q'=Q_+, \qquad \lambda_-=q-q'=Q_-,
 $$
 
-the eigenprojections $\Pi_\pm=\tfrac12(1\pm j)$, the decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, and the polynomial calculus $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ of §*Powers, Polynomial Calculus, and the Group of Units*. That article owns these results, and they are used here without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent.
+the eigenprojections $\Pi_\pm=\tfrac12(1\pm j)$, the decomposition $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, and the polynomial calculus $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ of §*Powers, Polynomial Calculus, and the Group of Invertibles*. That article owns these results, and they are used here without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent.
 
 This article owns the higher special functions. Each is the componentwise extension of a real special function: the value is the pair of ordinary real values at $\lambda_+$ and $\lambda_-$, written in the idempotent basis. The extension is a theorem for power series and a definition for integrals, inverses and other real formulas (§*The Extension Principle*). The domain is the set of elements whose two eigenvalues lie in the domain of the real formula used; on its boundary the function is undefined, and the boundary is a union of eigenvalue conditions rather than a single curve.
 

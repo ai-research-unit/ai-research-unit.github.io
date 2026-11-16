@@ -168,7 +168,7 @@ The eigenbasis diagonalises the scale and the rotation at once, and it is the sa
 
 *Proof.* $b=r\sin\theta$ and $r>0$, so $b\neq0$ is $\sin\theta\neq0$; this is $\theta\notin\pi\mathbb{Z}$, which is $u=e^{i\theta}\neq\pm1$. The eigenvalues $e^{\pm i\theta}$ coincide exactly when $e^{2i\theta}=1$, that is, at $\theta\in\pi\mathbb{Z}$.
 
-**Remark (the two real points of the unit circle).** The polar form shows that the spectral degeneration of a unit is exactly its coincidence with one of the two real units $\pm1$. The doubly regular points of the unit circle are the other points, on which $\theta$ is not a multiple of $\pi$ and the two eigenvalues $e^{\pm i\theta}$ are distinct. *Relations between the Modulus and Spectral Regularity and Degeneracy* develops this comparison.
+**Remark (the two real points of the unit circle).** The polar form shows that the spectral degeneration of an invertible element is exactly its coincidence with one of the two real units $\pm1$. The doubly regular points of the unit circle are the other points, on which $\theta$ is not a multiple of $\pi$ and the two eigenvalues $e^{\pm i\theta}$ are distinct. *Relations between the Modulus and Spectral Regularity and Degeneracy* develops this comparison.
 
 ## Summary
 
@@ -184,7 +184,7 @@ They are the two minimal idempotents of $A_{\mathbb{C}}$, they satisfy $e_+^2=e_
 
 On the real axis the two eigenvalues coalesce at $t$. The operator is $tI$, every vector is an eigenvector, every basis is an eigenbasis, and the two-term writing has equal coefficients; the choice of splitting is not unique. The canonical decomposition is the one-term $z=t\cdot1$, and the spectral projector is $I$.
 
-The matrix $A=tI+bJ$ is normal, $A^{\mathsf{T}}A=|z|^2I$, and, for $z\neq0$, $A/|z|$ is a rotation. The polar decomposition $z=ru$ reads $A=rR_\theta$ with $r=|z|$ and $u=e^{i\theta}$, and in the eigenbasis both factors are diagonal, with entries $re^{\pm i\theta}$ and $e^{\pm i\theta}$. The spectral condition is $\theta\notin\pi\mathbb{Z}$, equivalently $u\neq\pm1$: a unit is spectrally degenerate exactly when it is real.
+The matrix $A=tI+bJ$ is normal, $A^{\mathsf{T}}A=|z|^2I$, and, for $z\neq0$, $A/|z|$ is a rotation. The polar decomposition $z=ru$ reads $A=rR_\theta$ with $r=|z|$ and $u=e^{i\theta}$, and in the eigenbasis both factors are diagonal, with entries $re^{\pm i\theta}$ and $e^{\pm i\theta}$. The spectral condition is $\theta\notin\pi\mathbb{Z}$, equivalently $u\neq\pm1$: An invertible element is spectrally degenerate exactly when it is real.
 
 ## Summary of Notation
 

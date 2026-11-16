@@ -5,9 +5,9 @@
 
 This article develops the Lie theory of the split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$. The algebra article defined $\mathbb{C}_{\mathrm{spl}}$ with basis $1$, $j$, $j^2 = +1$; the norm article identified the units ${\mathbb{C}_{\mathrm{spl}}}^\times$ with the elements of nonzero norm $\langle Q\rangle_{*} = q^2-q'^2$; and the idempotent article supplied the decomposition $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$. Here these are assembled into the standard theory of ${\mathbb{C}_{\mathrm{spl}}}^\times$ as a Lie group, of $\mathbb{C}_{\mathrm{spl}}$ as its abelian Lie algebra, and of the exponential map. It is the two-dimensional counterpart of the Lie theory of the higher members of the family, and every statement is a special case of the elementary Lie theory of $\mathbb{R}^\times$ and its square.
 
-The one point that governs everything below is that $\mathbb{C}_{\mathrm{spl}}$ is **commutative**. Its commutator bracket vanishes, so it is an abelian Lie algebra; the exponential of a sum is the product of the exponentials; and the exponential map is a local diffeomorphism everywhere but is injective, unlike the matrix case. The price is a small unit group: ${\mathbb{C}_{\mathrm{spl}}}^\times$ has **four components** rather than being connected, and the exponential reaches only the identity component. The article states this geometry exactly.
+The one point that governs everything below is that $\mathbb{C}_{\mathrm{spl}}$ is **commutative**. Its commutator bracket vanishes, so it is an abelian Lie algebra; the exponential of a sum is the product of the exponentials; and the exponential map is a local diffeomorphism everywhere but is injective, unlike the matrix case. The price is a small group of invertibles: ${\mathbb{C}_{\mathrm{spl}}}^\times$ has **four components** rather than being connected, and the exponential reaches only the identity component. The article states this geometry exactly.
 
-The article owns the abelian Lie algebra structure of $\mathbb{C}_{\mathrm{spl}}$, the exponential and its closed forms in the two bases, the group of units and its exponential parametrisation, the four components, the non-compact hyperbolic subgroup, the one-parameter subgroups of the geometry slot, and the comparison with $\mathbb{C}$. It assumes the norm and invertibility theory of *Norm and Invertibility in the General Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the exponential parametrisation of the units; the hyperbolic one-parameter group is the subject of *Hyperbolic Rotations*, and the automorphisms and derivations are treated in *Split-Complex Automorphisms and Derivations*.
+The article owns the abelian Lie algebra structure of $\mathbb{C}_{\mathrm{spl}}$, the exponential and its closed forms in the two bases, the group of invertibles and its exponential parametrisation, the four components, the non-compact hyperbolic subgroup, the one-parameter subgroups of the geometry slot, and the comparison with $\mathbb{C}$. It assumes the norm and invertibility theory of *Norm and Invertibility in the General Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the exponential parametrisation of the invertibles; the hyperbolic one-parameter group is the subject of *Hyperbolic Rotations*, and the automorphisms and derivations are treated in *Split-Complex Automorphisms and Derivations*.
 
 ## The Algebra as an Abelian Lie Algebra
 
@@ -61,9 +61,9 @@ $$
 
 So $\exp(\mathbb{C}_{\mathrm{spl}})$ lies in the component of positive norm, and in particular $\exp$ never produces a zero divisor. This is the elementary statement, in the group, that $\exp$ takes values in ${\mathbb{C}_{\mathrm{spl}}}^\times$ with $\langle Q\rangle_{*}>0$.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Definition.** The **group of units** of $\mathbb{C}_{\mathrm{spl}}$ is ${\mathbb{C}_{\mathrm{spl}}}^\times = \{Q \in \mathbb{C}_{\mathrm{spl}} : \langle Q\rangle_{*}\neq 0\}$, with the multiplication of the algebra.
+**Definition.** The **group of invertibles** of $\mathbb{C}_{\mathrm{spl}}$ is ${\mathbb{C}_{\mathrm{spl}}}^\times = \{Q \in \mathbb{C}_{\mathrm{spl}} : \langle Q\rangle_{*}\neq 0\}$, with the multiplication of the algebra.
 
 **Theorem.** The idempotent-coordinate map is an isomorphism of groups
 
@@ -73,7 +73,7 @@ $$
 
 and consequently ${\mathbb{C}_{\mathrm{spl}}}^\times$ is an abelian real Lie group of dimension $2$, non-compact, with four connected components.
 
-**Proof.** In the idempotent basis multiplication is componentwise, $(QB)_\pm = Q_\pm B_\pm$, and $Q$ is a unit iff $Q_+ Q_- = \langle Q\rangle_{*} \neq 0$ iff both $Q_+ \neq 0$ and $Q_- \neq 0$. The map to $\mathbb{R}^\times \times \mathbb{R}^\times$ is therefore a group isomorphism onto its image, which is all of $\mathbb{R}^\times\times\mathbb{R}^\times$. Each factor $\mathbb{R}^\times$ is a one-dimensional Lie group with two components, so the product has dimension $2$ and $2\times 2 = 4$ components; it is non-compact because $\mathbb{R}^\times$ is.
+**Proof.** In the idempotent basis multiplication is componentwise, $(QB)_\pm = Q_\pm B_\pm$, and $Q$ is invertible iff $Q_+ Q_- = \langle Q\rangle_{*} \neq 0$ iff both $Q_+ \neq 0$ and $Q_- \neq 0$. The map to $\mathbb{R}^\times \times \mathbb{R}^\times$ is therefore a group isomorphism onto its image, which is all of $\mathbb{R}^\times\times\mathbb{R}^\times$. Each factor $\mathbb{R}^\times$ is a one-dimensional Lie group with two components, so the product has dimension $2$ and $2\times 2 = 4$ components; it is non-compact because $\mathbb{R}^\times$ is.
 
 **Corollary (component count).** The four components are the products of the two signs of the idempotent coordinates,
 
@@ -107,9 +107,9 @@ $$
 
 **Corollary (the exponential is injective, and not surjective).** If $\exp(Q) = 1$ then $\exp(Q_+) = \exp(Q_-) = 1$, and since the real exponential is injective this gives $Q_+ = Q_- = 0$, so $Q = 0$: the kernel of $\exp$ is trivial. The image is the identity component only, so $\exp$ is not surjective onto ${\mathbb{C}_{\mathrm{spl}}}^\times$ and misses the three components of negative $Q_+$ or negative $Q_-$.
 
-**Remark (the group law).** Because the algebra is abelian, the exponential satisfies $\exp(Q)\exp(B) = \exp(Q+B)$ for all $Q, B$, with no correction term; equivalently $\exp$ is a group isomorphism $(\mathbb{C}_{\mathrm{spl}}, +) \to (({\mathbb{C}_{\mathrm{spl}}}^\times)_0, \cdot)$. The identity component is therefore an exponential group, and the whole unit group is its product with the finite group $(\mathbb{Z}/2)^2$ of components, ${\mathbb{C}_{\mathrm{spl}}}^\times \cong ({\mathbb{C}_{\mathrm{spl}}}^\times)_0 \times (\mathbb{Z}/2)^2$.
+**Remark (the group law).** Because the algebra is abelian, the exponential satisfies $\exp(Q)\exp(B) = \exp(Q+B)$ for all $Q, B$, with no correction term; equivalently $\exp$ is a group isomorphism $(\mathbb{C}_{\mathrm{spl}}, +) \to (({\mathbb{C}_{\mathrm{spl}}}^\times)_0, \cdot)$. The identity component is therefore an exponential group, and the whole group of invertibles is its product with the finite group $(\mathbb{Z}/2)^2$ of components, ${\mathbb{C}_{\mathrm{spl}}}^\times \cong ({\mathbb{C}_{\mathrm{spl}}}^\times)_0 \times (\mathbb{Z}/2)^2$.
 
-**Remark (the Lie correspondence).** Since $\exp : \mathbb{C}_{\mathrm{spl}}\to({\mathbb{C}_{\mathrm{spl}}}^\times)_0$ is a diffeomorphism and a group isomorphism, the Lie functor recovers the algebra. The Lie algebra of the unit group is $\operatorname{Lie}({\mathbb{C}_{\mathrm{spl}}}^\times) = \mathbb{C}_{\mathrm{spl}}$ with the zero bracket, and $\exp$ is the exponential map of the Lie group. This is the two-dimensional quantity that the algebra contributes to the Lie picture, in place of the vanishing derivation space of *Split-Complex Automorphisms and Derivations*.
+**Remark (the Lie correspondence).** Since $\exp : \mathbb{C}_{\mathrm{spl}}\to({\mathbb{C}_{\mathrm{spl}}}^\times)_0$ is a diffeomorphism and a group isomorphism, the Lie functor recovers the algebra. The Lie algebra of the group of invertibles is $\operatorname{Lie}({\mathbb{C}_{\mathrm{spl}}}^\times) = \mathbb{C}_{\mathrm{spl}}$ with the zero bracket, and $\exp$ is the exponential map of the Lie group. This is the two-dimensional quantity that the algebra contributes to the Lie picture, in place of the vanishing derivation space of *Split-Complex Automorphisms and Derivations*.
 
 ## The Exponential Parametrisation
 
@@ -119,7 +119,7 @@ $$
 {\mathbb{C}_{\mathrm{spl}}}^{(\pm 1)} = \{u : \lvert \langle u\rangle_{*}\rvert = 1\} = {\mathbb{C}_{\mathrm{spl}}}^{(1)} \cup (-{\mathbb{C}_{\mathrm{spl}}}^{(1)}), \qquad {\mathbb{C}_{\mathrm{spl}}}^{(1)} = \{u : \langle u\rangle_{*} = 1\}.
 $$
 
-**Theorem (exponential parametrisation of the units).** Every unit factors uniquely as
+**Theorem (exponential parametrisation of the invertibles).** Every unit factors uniquely as
 
 $$
 Q = \rho\, u, \qquad \rho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \lvert \langle u\rangle_{*}\rvert = 1,
@@ -137,7 +137,7 @@ $$
 Q = \pm\, \sqrt{\langle Q\rangle_{*}}\; \exp(j\theta) \ (\langle Q\rangle_{*} > 0), \qquad Q = \pm\, \sqrt{-\langle Q\rangle_{*}}\; j\, \exp(j\theta) \ (\langle Q\rangle_{*} < 0).
 $$
 
-**Proof.** Set $\rho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$, which is positive for a unit, and $u = Q/\rho$, so that $\langle u\rangle_{*} = \langle Q\rangle_{*}/\rho^2 = \pm 1$, giving $\lvert \langle u\rangle_{*}\rvert = 1$ and the uniqueness of the factorisation. If $\langle Q\rangle_{*} > 0$ then $\langle u\rangle_{*} = 1$, and $\lvert q\rvert > \lvert q'\rvert$; on the branch $q > 0$ write $q/\rho = \cosh\theta$, $q'/\rho = \sinh\theta$ for the unique $\theta\in\mathbb{R}$ with $\operatorname{sgn}\theta = \operatorname{sgn} q'$, and then $u = \cosh\theta + j\sinh\theta = \exp(j\theta)$; the branch $q<0$ gives the sign $-$. If $\langle Q\rangle_{*} < 0$ then $\langle u\rangle_{*} = -1$ and $\lvert q'\rvert > \lvert q\rvert$; write $q'/\rho = \pm\cosh\theta$, $q/\rho = \sinh\theta$, giving $u = \sinh\theta + j\cosh\theta = j \exp(j\theta)$ up to the sign. The four cases are exactly the four components.
+**Proof.** Set $\rho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$, which is positive for an invertible element, and $u = Q/\rho$, so that $\langle u\rangle_{*} = \langle Q\rangle_{*}/\rho^2 = \pm 1$, giving $\lvert \langle u\rangle_{*}\rvert = 1$ and the uniqueness of the factorisation. If $\langle Q\rangle_{*} > 0$ then $\langle u\rangle_{*} = 1$, and $\lvert q\rvert > \lvert q'\rvert$; on the branch $q > 0$ write $q/\rho = \cosh\theta$, $q'/\rho = \sinh\theta$ for the unique $\theta\in\mathbb{R}$ with $\operatorname{sgn}\theta = \operatorname{sgn} q'$, and then $u = \cosh\theta + j\sinh\theta = \exp(j\theta)$; the branch $q<0$ gives the sign $-$. If $\langle Q\rangle_{*} < 0$ then $\langle u\rangle_{*} = -1$ and $\lvert q'\rvert > \lvert q\rvert$; write $q'/\rho = \pm\cosh\theta$, $q/\rho = \sinh\theta$, giving $u = \sinh\theta + j\cosh\theta = j \exp(j\theta)$ up to the sign. The four cases are exactly the four components.
 
 **Remark (two regimes).** The polar parametrisation has two regimes, hyperbolic-rotation-like on the components $\langle Q\rangle_{*} > 0$ and hyperbolic-translation-like on the components $\langle Q\rangle_{*} < 0$; the modulus is $\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and the angle is $\operatorname{artanh}(q'/q)$ in the first regime and $\operatorname{arcoth}$-like in the second. The present article records only the group factorisation ${\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}\times {\mathbb{C}_{\mathrm{spl}}}^{(\pm 1)}$ that the parametrisation supplies.
 
@@ -159,13 +159,13 @@ with two connected components ${\mathbb{C}_{\mathrm{spl}}}_0^{(1)} = \{\exp(jt)\
 
 **Proof.** $\langle Q\rangle_{*} = 1$ is the hyperbola $q^2 - q'^2 = 1$ with the two branches $q = \pm\sqrt{1+q'^2} > 0$ or $< 0$; the branch $q>0$ is parametrised bijectively by $q' = \sinh t$, $q = \cosh t$, and equals $\{\exp(jt)\}$ by the closed form of the exponential. The branch $q<0$ is its negative. The parametrisation $t\mapsto \exp(jt)$ is a group isomorphism onto the first branch because $\exp(jt)\exp(js) = \exp(j(t+s))$, and $\mathbb{R}$ is non-compact and contractible.
 
-**Corollary (the decomposition of the unit group).** Combining the component count with the hyperbolic subgroup,
+**Corollary (the decomposition of the group of invertibles).** Combining the component count with the hyperbolic subgroup,
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^\times \;\cong\; \mathbb{R}_{>0}\times\mathbb{R}_{>0}\times(\mathbb{Z}/2)^2 \;\cong\; ({\mathbb{C}_{\mathrm{spl}}}^\times)_0 \times (\mathbb{Z}/2)^2,
 $$
 
-with $({\mathbb{C}_{\mathrm{spl}}}^\times)_0 \cong \mathbb{R}^2$ the identity component. The unit group is non-compact, has four components, each simply connected, so $\pi_0({\mathbb{C}_{\mathrm{spl}}}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1({\mathbb{C}_{\mathrm{spl}}}^\times) = 0$.
+with $({\mathbb{C}_{\mathrm{spl}}}^\times)_0 \cong \mathbb{R}^2$ the identity component. The group of invertibles is non-compact, has four components, each simply connected, so $\pi_0({\mathbb{C}_{\mathrm{spl}}}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1({\mathbb{C}_{\mathrm{spl}}}^\times) = 0$.
 
 ## One-Parameter Subgroups and the Geometry Slot
 
@@ -195,9 +195,9 @@ the group of **hyperbolic rotations** of the split-complex plane, which preserve
 
 ## Summary
 
-The split-complex algebra is the abelian real Lie algebra of dimension $2$: its commutator bracket vanishes, and in the idempotent basis it is the direct sum of the two one-dimensional abelian Lie algebras $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$. The exponential has the closed forms $\exp(Q_+\Pi_+ + Q_-\Pi_-) = \exp(Q_+)\Pi_+ + \exp(Q_-)\Pi_-$ and $\exp(q+jq') = \exp(q)(\cosh q' + j\sinh q')$, has positive norm $\langle \exp Q\rangle_{*} = \exp(2q) > 0$, is injective, and is a diffeomorphism of $\mathbb{C}_{\mathrm{spl}}$ onto the identity component $({\mathbb{C}_{\mathrm{spl}}}^\times)_0 = \{q > \lvert q'\rvert\}$ of the unit group, with an explicit inverse. It is a group isomorphism $(\mathbb{C}_{\mathrm{spl}}, +)\to(({\mathbb{C}_{\mathrm{spl}}}^\times)_0,\cdot)$.
+The split-complex algebra is the abelian real Lie algebra of dimension $2$: its commutator bracket vanishes, and in the idempotent basis it is the direct sum of the two one-dimensional abelian Lie algebras $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$. The exponential has the closed forms $\exp(Q_+\Pi_+ + Q_-\Pi_-) = \exp(Q_+)\Pi_+ + \exp(Q_-)\Pi_-$ and $\exp(q+jq') = \exp(q)(\cosh q' + j\sinh q')$, has positive norm $\langle \exp Q\rangle_{*} = \exp(2q) > 0$, is injective, and is a diffeomorphism of $\mathbb{C}_{\mathrm{spl}}$ onto the identity component $({\mathbb{C}_{\mathrm{spl}}}^\times)_0 = \{q > \lvert q'\rvert\}$ of the group of invertibles, with an explicit inverse. It is a group isomorphism $(\mathbb{C}_{\mathrm{spl}}, +)\to(({\mathbb{C}_{\mathrm{spl}}}^\times)_0,\cdot)$.
 
-The group of units is ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$, a non-compact abelian Lie group of dimension $2$ with four components, given by the four sign choices of the idempotent coordinates; each component is contractible, so $\pi_0({\mathbb{C}_{\mathrm{spl}}}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1({\mathbb{C}_{\mathrm{spl}}}^\times) = 0$. The polar parametrisation writes every unit as $Q = \rho u$ with modulus $\rho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and direction $u$ of unit modulus, in two regimes according to the sign of the norm. The unit-norm group is ${\mathbb{C}_{\mathrm{spl}}}^{(1)}\cong\mathbb{Z}/2\times\mathbb{R}$, with non-compact hyperbolic subgroup $\{\exp(jt)\}\cong(\mathbb{R},+)$, the group of hyperbolic rotations of the geometry slot and the group $SO^+(1,1)$; every one-parameter subgroup is an exponential $\exp(tw)$ of a line in the Lie algebra. The comparison with $\mathbb{C}$ isolates the indefinite sign and the four components.
+The group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$, a non-compact abelian Lie group of dimension $2$ with four components, given by the four sign choices of the idempotent coordinates; each component is contractible, so $\pi_0({\mathbb{C}_{\mathrm{spl}}}^\times) = (\mathbb{Z}/2)^2$ and $\pi_1({\mathbb{C}_{\mathrm{spl}}}^\times) = 0$. The polar parametrisation writes every unit as $Q = \rho u$ with modulus $\rho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and direction $u$ of unit modulus, in two regimes according to the sign of the norm. The unit-norm group is ${\mathbb{C}_{\mathrm{spl}}}^{(1)}\cong\mathbb{Z}/2\times\mathbb{R}$, with non-compact hyperbolic subgroup $\{\exp(jt)\}\cong(\mathbb{R},+)$, the group of hyperbolic rotations of the geometry slot and the group $SO^+(1,1)$; every one-parameter subgroup is an exponential $\exp(tw)$ of a line in the Lie algebra. The comparison with $\mathbb{C}$ isolates the indefinite sign and the four components.
 
 ## Summary of Notation
 
@@ -210,7 +210,7 @@ The group of units is ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents, basis of the abelian decomposition |
 | $Q_\pm = q\pm q'$ | Idempotent coordinates |
 | $\exp(Q)$ | Exponential; $= \exp(Q_+)\Pi_+ + \exp(Q_-)\Pi_-$ |
-| ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq 0\}$ | Group of units, $(\mathbb{R}^\times)^2$-shaped |
+| ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq 0\}$ | Group of invertibles, $(\mathbb{R}^\times)^2$-shaped |
 | $({\mathbb{C}_{\mathrm{spl}}}^\times)_0 = \{q>\lvert q'\rvert\}$ | Identity component, image of $\exp$ |
 | ${\mathbb{C}_{\mathrm{spl}}}^{(1)} = \{\langle Q\rangle_{*} = 1\}$ | Unit-norm group $\cong\mathbb{Z}/2\times\mathbb{R}$ |
 | ${\mathbb{C}_{\mathrm{spl}}}_0^{(1)} = \{\exp(jt)\}$ | Hyperbolic subgroup $\cong(\mathbb{R},+)$ |
@@ -225,5 +225,5 @@ The group of units is ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, Graduate Texts in Mathematics 222, 2nd ed. 2015), for the exponential map, one-parameter subgroups and the Lie correspondence.
 - Wulf Rossmann, *Lie Groups: An Introduction Through Linear Groups* (Oxford University Press, 2002), for the abelian case and the topology of matrix Lie groups.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic rotation group of the split complex plane.
-- Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the exponential in a finite-dimensional real algebra and the group of units.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex algebra and its unit group.
+- Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the exponential in a finite-dimensional real algebra and the group of invertibles.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex algebra and its group of invertibles.

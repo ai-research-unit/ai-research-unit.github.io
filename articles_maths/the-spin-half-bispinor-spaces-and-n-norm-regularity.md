@@ -8,7 +8,7 @@ On the plane the norm vanishes identically. Not at one point, not on a line: at 
 
 The bispinor read repairs the situation, and the repair is exact. The algebra is the direct sum of the two spinor spaces, each of them null, and the norm of a sum is twice the polar pairing of its two components. So the norm is not lost on the bispinor space: it becomes a pairing between the two halves. An element is norm-regular exactly when its two components pair nontrivially, and no element of a single spinor space is norm-regular at all.
 
-The companion article is *The Spin-Half Bispinors and Spectral Regularity*, where the second predicate is computed and the answer is the opposite: the plane is spectrally regular away from the origin. The two predicates are independent, and this pair of articles is where the independence is sharpest. The spaces themselves are *Introduction to the Spin-Half Bispinors*. The norm and the predicate are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*.
+The companion article is *The Spin-Half Bispinors and Spectral Regularity*, where the second predicate is computed and the answer is the opposite: the plane is spectrally regular away from the origin. The two predicates are independent, and this pair of articles is where the independence is sharpest. The spaces themselves are *Introduction to the Spin-Half Bispinors Spaces*. The norm and the predicate are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
 Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex. A unit real axis is written $\vec u_{\mathrm r}$, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
 
@@ -167,7 +167,7 @@ The norm of the idempotent is zero, and by multiplicativity the norm vanishes on
 
 ## Further Reading
 
-- [Introduction to the Spin-Half Bispinors](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
+- [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
 - [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the other predicate on the same spaces
 - [Primitive Idempotents and Minimal Left Ideals](primitive-idempotents-and-minimal-left-ideals.html), for the idempotents as the generators of the ideals
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity and its zero locus

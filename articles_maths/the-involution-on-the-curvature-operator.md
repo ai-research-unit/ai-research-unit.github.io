@@ -64,7 +64,7 @@ $$
 \boxed{\;\mathcal{R}^{*} = \mathcal{R}, \qquad \langle\mathcal{R}(\omega),\eta\rangle = \langle\omega,\mathcal{R}(\eta)\rangle \quad (\omega,\eta\in\Lambda^2T_pM)\;},
 $$
 
-so it is diagonalisable with real eigenvalues and an orthonormal eigenbasis of the bivectors; the eigenvalues are the **principal curvatures** of the curvature operator, and the sectional curvature of a unit bivector is the quadratic form
+so it is diagonalisable with real eigenvalues and an orthonormal eigenbasis of the bivectors; the eigenvalues are the **principal curvatures** of the curvature operator, and the sectional curvature of an invertible element bivector is the quadratic form
 
 $$
 K(\omega) = \langle\mathcal{R}(\omega), \omega\rangle .

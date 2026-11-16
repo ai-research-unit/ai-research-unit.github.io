@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is a finite-dimensional real algebra, and its representation theory is governed by a single structural fact: it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two copies of the quaternion division algebra. This makes it a **semisimple** but **not simple** algebra, with exactly two isomorphism classes of simple modules, in contrast to the biquaternion algebra $\mathbb{B}$, which is simple. This article records the representations of the algebra and of its group of units, the form of Schur's lemma, the intertwiners, the real and split complex forms, the tensor products, and the comparison with the biquaternion case. The structural facts about the algebra are assumed from *Split-Biquaternion Algebra*, and the ideals and the splitting from *Split-Biquaternion Ideals and Peirce Decomposition*.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is a finite-dimensional real algebra, and its representation theory is governed by a single structural fact: it is isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ of two copies of the quaternion division algebra. This makes it a **semisimple** but **not simple** algebra, with exactly two isomorphism classes of simple modules, in contrast to the biquaternion algebra $\mathbb{B}$, which is simple. This article records the representations of the algebra and of its group of invertibles, the form of Schur's lemma, the intertwiners, the real and split complex forms, the tensor products, and the comparison with the biquaternion case. The structural facts about the algebra are assumed from *Split-Biquaternion Algebra*, and the ideals and the splitting from *Split-Biquaternion Ideals and Peirce Decomposition*.
 
 The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, the Jacobson radical, Schur's lemma — is used as standard, and the module theory is that of the companion articles on modules and on algebras.
 
@@ -80,25 +80,25 @@ The regular representation corresponds to $(a,b) = (1,1)$. The endomorphism ring
 
 Because the centre is $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, a real representation is irreducible precisely when $(a,b) = (1,0)$ or $(0,1)$: irreducibility over $\mathbb{R}$ of a module for a product algebra means triviality on one factor. There is no representation irreducible over $\mathbb{C}_{\mathrm{spl}}$ that is not already one of the two simple modules.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Theorem.** The group of units of $\mathbb{B}_{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
+**Theorem.** The group of invertibles of $\mathbb{B}_{\mathrm{spl}}$ is the direct product $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$ under the isomorphism $\varphi$:
 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \left\{ (\tilde{Q}_+, \tilde{Q}_-) : \tilde{Q}_+ \neq 0, \tilde{Q}_- \neq 0 \right\} , \qquad {\mathbb{B}_{\mathrm{spl}}}^{\times} = \mathbb{H}^{\times} \times \mathbb{H}^{\times} .
 $$
 
-**Proof.** An element is a unit in a product ring exactly when both components are units, and the units of the division algebra $\mathbb{H}$ are its nonzero elements.
+**Proof.** An element is invertible in a product ring exactly when both components are invertible, and the invertibles of the division algebra $\mathbb{H}$ are its nonzero elements.
 
-The unit group is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that
+The group of invertibles is a real Lie group of dimension $8$, connected because it is the square of the connected group $\mathbb{H}^{\times}$. By the polar form of the nonzero quaternions, $\mathbb{H}^{\times} \cong \mathbb{R}_{>0} \times S^3$, so that
 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3 ,
 $$
 
-a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion unit group, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $\mathrm{U}(2)$.
+a group whose compact part is $S^3 \times S^3 \cong \mathrm{Spin}(4)$. This is the group acting on the algebra in the rotation theory developed in *Split-Biquaternion Rotations and the Lorentz Group*, and it contrasts with the biquaternion group of invertibles, which is $GL(2,\mathbb{C}) \cong (SL(2,\mathbb{C}) \times \mathbb{C}^{\times})/\{\pm 1\}$, with compact part $\mathrm{U}(2)$.
 
-The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{C}_{\mathrm{spl}}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the units. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
+The **norm-one group** — the elements whose split-biquaternion norm is the identity of $\mathbb{C}_{\mathrm{spl}}$ — is the kernel of $\langle\cdot\rangle_{\natural}$ restricted to the invertibles. Since $\langle\tilde{Q}\rangle_{\natural} = N_+ N_-$ in components $N_\pm = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = 1$ is the pair of equations $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so the norm-one group is
 
 $$
 \left\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \right\} = S^3 \times S^3 \cong \mathrm{Spin}(4) .
@@ -114,7 +114,7 @@ $$
 \;}.
 $$
 
-Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(a) = a^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the unit group are therefore indexed by a pair of a character exponent and a spin for each factor, with
+Each copy of $\mathbb{H}^{\times}$ is the product of the abelian factor $\mathbb{R}_{>0}$ and the compact factor $SU(2)$, so its irreducible finite-dimensional continuous representations are the tensor products $\chi \otimes \sigma$ of a continuous character $\chi(a) = a^{\lambda}$ of $\mathbb{R}_{>0}$, $\lambda \in \mathbb{C}$, and an irreducible representation $\sigma = \mathrm{sym}^{n}(\mathbb{C}^2)$ of $SU(2)$ of spin $n/2$. The irreducible finite-dimensional continuous representations of the group of invertibles are therefore indexed by a pair of a character exponent and a spin for each factor, with
 
 $$
 \rho = \left(\chi_{\lambda_1} \otimes \mathrm{sym}^{n_1}(\mathbb{C}^2)\right) \boxtimes \left(\chi_{\lambda_2} \otimes \mathrm{sym}^{n_2}(\mathbb{C}^2)\right) .
@@ -126,7 +126,7 @@ $$
 \rho_{(n_1,n_2)} = \mathrm{sym}^{n_1}(\mathbb{C}^2) \boxtimes \mathrm{sym}^{n_2}(\mathbb{C}^2) , \qquad \dim_{\mathbb{C}} = (n_1+1)(n_2+1) .
 $$
 
-The two positive rays are also the reason the unit group is non-compact and its representations need not be $*$-unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.
+The two positive rays are also the reason the group of invertibles is non-compact and its representations need not be $*$-unitary; the whole classification is that of the Lie group $(\mathbb{R}_{>0} \times SU(2))^2$, whose compact part is $SU(2) \times SU(2)$.
 
 ## The Defining Representation
 
@@ -144,11 +144,11 @@ $$
 
 is bilinear rather than linear in $\tilde{Q}$: on a sum $\tilde{Q} = \tilde{Q}_1 + \tilde{Q}_2$ the two sides $(\tilde{Q}_1+\tilde{Q}_2)_+ \otimes (\tilde{Q}_1+\tilde{Q}_2)_-$ and $\tilde{Q}_{1+} \otimes \tilde{Q}_{1-} + \tilde{Q}_{2+} \otimes \tilde{Q}_{2-}$ differ, since the assignment uses both components at once. Such a map therefore does not factor through the algebra and does not define a module structure. Consequently there is no decomposition of $S_\pm \otimes_{\mathbb{R}} S_\pm$ into simple modules, and no multiplicity statement of the form $S_+ \otimes_{\mathbb{R}} S_- \cong 4\,S_-$; the tensor-product decomposition that the biquaternion case reads off from the tensor square of its single simple module has no counterpart on the algebra side here.
 
-The tensor products that are defined are those of the unit-group representations: the irreducible finite-dimensional representations $\rho_{(n_1,n_2)}$ form the tensor products of representations of the two $SU(2)$ factors, and their tensor product is computed factor by factor by the Clebsch–Gordan rule of $SU(2)$. The product of $\rho_{(n_1,n_2)}$ and $\rho_{(m_1,m_2)}$ is the direct sum of the $\rho_{(k_1,k_2)}$ with $|n_1-m_1| \leq k_1 \leq n_1+m_1$ and $|n_2-m_2| \leq k_2 \leq n_2+m_2$, the steps being two and each pair appearing once. This is the Clebsch–Gordan rule applied independently to two factors, in place of the single $SU(2)$ rule of the biquaternion case.
+The tensor products that are defined are those of the representation of the group of invertibles: the irreducible finite-dimensional representations $\rho_{(n_1,n_2)}$ form the tensor products of representations of the two $SU(2)$ factors, and their tensor product is computed factor by factor by the Clebsch–Gordan rule of $SU(2)$. The product of $\rho_{(n_1,n_2)}$ and $\rho_{(m_1,m_2)}$ is the direct sum of the $\rho_{(k_1,k_2)}$ with $|n_1-m_1| \leq k_1 \leq n_1+m_1$ and $|n_2-m_2| \leq k_2 \leq n_2+m_2$, the steps being two and each pair appearing once. This is the Clebsch–Gordan rule applied independently to two factors, in place of the single $SU(2)$ rule of the biquaternion case.
 
 ## The Relation to the Representation Theory of the Biquaternions
 
-The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its unit group is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and unit group $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage
+The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, with a single simple module $\mathbb{C}^2$, division ring $\mathbb{C}$, and regular representation of dimension $4$ over $\mathbb{C}$; its group of invertibles is essentially $SL(2,\mathbb{C})$, whose finite-dimensional representations are the symmetric powers $\mathrm{sym}^n(\mathbb{C}^2)$. The split biquaternion algebra is the product $\mathbb{H} \oplus \mathbb{H}$, with two simple modules, division ring $\mathbb{H}$, regular representation of dimension $8$ over $\mathbb{R}$, and group of invertibles $\mathbb{H}^{\times} \times \mathbb{H}^{\times}$. The correspondence is by the idempotent decomposition: each biquaternion representation is transported to a pair of quaternionic representations through the Peirce decomposition, and the passage
 
 $$
 \mathbb{B} \longleftrightarrow \mathbb{H} \oplus \mathbb{H} , \qquad \mathbb{C} \longleftrightarrow \mathbb{H}
@@ -158,7 +158,7 @@ is the replacement of the simple algebra $M_2(\mathbb{C})$ by the product of two
 
 ## Summary
 
-The split biquaternion algebra is a free $\mathbb{C}_{\mathrm{spl}}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_{1,2}$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{C}_{\mathrm{spl}}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of units is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the unit group are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the unit group, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
+The split biquaternion algebra is a free $\mathbb{C}_{\mathrm{spl}}$-module of rank $4$ and a real algebra of dimension $8$, isomorphic to the product $\mathbb{H} \oplus \mathbb{H}$ by the Peirce decomposition along its central idempotents $\tilde\Pi_{1,2}$. Its module category is the product of two copies of the category of $\mathbb{H}$-modules, so it is semisimple with zero radical, has composition length two over itself, and possesses exactly two simple left modules $S_\pm$, each of real dimension $4$ and isomorphic to $\mathbb{H}$. The two minimal ideals, viewed as $\mathbb{C}_{\mathrm{spl}}$-modules, are projective but not free. Schur's lemma gives intertwiners $\operatorname{Hom}(S_+,S_-) = 0$ and division ring $\operatorname{End}(S_\pm) \cong \mathbb{H}$, in place of the field $\mathbb{C}$ of the biquaternion case, and the algebra is not simple, its two minimal two-sided ideals being the spans of the simple modules. A real representation is classified by a pair of multiplicities $(a,b)$, irreducible only for $(1,0)$ and $(0,1)$, and the regular representation is $(1,1)$. The group of invertibles is $\mathbb{H}^{\times} \times \mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$, and the norm-one group is $S^3 \times S^3 \cong \mathrm{Spin}(4)$; finite-dimensional representations of the group of invertibles are the exterior tensor products of representations of the two copies of $\mathbb{R}_{>0} \times SU(2)$, indexed by a character exponent and a spin for each factor. The defining representation is the four-dimensional action on a simple module, and no faithful irreducible representation exists. The tensor product of two left modules is not naturally a left module, since the only candidate action is bilinear in the algebra element and fails to factor through it, so the tensor products belong to the group of invertibles, where they follow the Clebsch–Gordan rule factor by factor on the two $SU(2)$'s. The whole theory is the biquaternion theory with the simple algebra $M_2(\mathbb{C})$ replaced by the product of two division algebras.
 
 ## Summary of Notation
 
@@ -172,9 +172,9 @@ The split biquaternion algebra is a free $\mathbb{C}_{\mathrm{spl}}$-module of r
 | $M = a S_+ \oplus b S_-$ | Classification of real representations by multiplicities |
 | $\operatorname{End}_{\mathbb{B}_{\mathrm{spl}}}(S_\pm) \cong \mathbb{H}$ | Division ring of the simple module |
 | $\mathbb{H}\tilde\Pi_{1,2}$ | Minimal two-sided ideals, projective but not free as $\mathbb{C}_{\mathrm{spl}}$-modules |
-| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of units |
+| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times} \times \mathbb{H}^{\times}$ | Group of invertibles |
 | $\{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = 1 \} = S^3 \times S^3$ | Norm-one group |
-| $\rho_{(n_1,n_2)}$ | Irreducible unit-group representation, spin $(n_1/2, n_2/2)$ |
+| $\rho_{(n_1,n_2)}$ | Irreducible representation of the group of invertibles, spin $(n_1/2, n_2/2)$ |
 | $S_+ \otimes_{\mathbb{R}} S_-$ | Tensor product of simple modules; not a module here |
 
 ## Further Reading

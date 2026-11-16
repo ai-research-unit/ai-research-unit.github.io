@@ -5,7 +5,7 @@
 
 This article treats the analysis of functions of a split-quaternion variable. It records the metric and topological structure, defines limits and continuity, explains why the naive derivative fails, presents the differential operators of the system and identifies their type, treats power series, and describes the singularities caused by the zero divisors.
 
-The split-quaternion algebra, its split-quaternion norm and its idempotents are assumed from *Split-Quaternion Algebra*; the units and the zero divisors from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the metric and the geometry of the forms from *Split-Quaternion Geometry*. The analytic theory of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional hyperbolic case that of *Split-Complex Integration*; the differential operators of the definite (Clifford) case are those of *Clifford Analysis*, *Dirac Differential Operators* and *Regularity and the Cauchy–Riemann Operator*. Nothing physical is invoked.
+The split-quaternion algebra, its split-quaternion norm and its idempotents are assumed from *Split-Quaternion Algebra*; the invertibles and the zero divisors from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the metric and the geometry of the forms from *Split-Quaternion Geometry*. The analytic theory of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional hyperbolic case that of *Split-Complex Integration*; the differential operators of the definite (Clifford) case are those of *Clifford Analysis*, *Dirac Differential Operators* and *Regularity and the Cauchy–Riemann Operator*. Nothing physical is invoked.
 
 ## The Metric Structure
 
@@ -29,9 +29,9 @@ The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{
 
 **Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q_1 \tilde q_2|^2 \leq 2\,|\tilde q_1|^2|\tilde q_2|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_{1t}q_{2t} - B(\vec q_1,\vec q_2)$ and the vector part $q_{1t}\vec q_2 + q_{2t}\vec q_1 + \tfrac12[\vec q_1,\vec q_2]$; equality is attained at $\tilde q_1 = \tilde q_2 = 1 + \vec e_y$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
 
-**Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $\mathrm{U}$ and the level sets of the split-quaternion norm are closed subsets.
+**Corollary (Open and Closed Sets).** The group of invertibles is open, the zero divisor set is closed, and the group of invertibles is a topological group in the Euclidean topology. The norm-one group $\mathrm{U}$ and the level sets of the split-quaternion norm are closed subsets.
 
-**Proof.** The units are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{\tilde q \neq 0, \langle\tilde q\rangle_{\natural}=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $\langle\cdot\rangle_{\natural}$ is continuous.
+**Proof.** The invertibles are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{\tilde q \neq 0, \langle\tilde q\rangle_{\natural}=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $\langle\cdot\rangle_{\natural}$ is continuous.
 
 **Corollary (No Multiplicative Norm).** There is no norm on the algebra satisfying $|\tilde q_1 \tilde q_2| = |\tilde q_1||\tilde q_2|$ for all $\tilde q_1,\tilde q_2$.
 
@@ -41,7 +41,7 @@ The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{
 
 **Definition.** A function $f : \mathbb{H}_{\mathrm{spl}} \to \mathbb{H}_{\mathrm{spl}}$ has **limit** $L$ at $\tilde q_1$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(\tilde q)-L| < \varepsilon$ whenever $0 < |\tilde q - \tilde q_1| < \delta$; and $f$ is **continuous** at $\tilde q_1$ when the limit there is $f(\tilde q_1)$.
 
-**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q_1,\tilde q_2) \mapsto \tilde q_1+\tilde q_2$, $(\tilde q_1,\tilde q_2)\mapsto \tilde q_1 \tilde q_2$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{spl}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of units.
+**Theorem (Continuity of the Algebraic Operations).** The maps $(\tilde q_1,\tilde q_2) \mapsto \tilde q_1+\tilde q_2$, $(\tilde q_1,\tilde q_2)\mapsto \tilde q_1 \tilde q_2$, $\tilde q \mapsto \lambda \tilde q$, $\tilde q\mapsto \tilde{q}^{\natural}$, $\tilde q \mapsto \operatorname{Sc}(\tilde q)$ and $\tilde q \mapsto \operatorname{Vec}(\tilde q)$ are continuous on $\mathbb{H}_{\mathrm{spl}}$, and $\tilde q \mapsto \tilde q^{-1}$ is continuous on the open set of invertibles.
 
 **Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|\tilde q_1 \tilde q_2 - q_{1t}q_{2t}| \leq |\tilde q_1-q_{1t}||\tilde q_2| + |q_{1t}||\tilde q_2-q_{2t}|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $\tilde q^{-1}-\tilde q_1^{-1} = \tilde q^{-1}(\tilde q_1-\tilde q)\tilde q_1^{-1}$ and $\tilde q \mapsto \tilde q^{-1}$ is bounded near $\tilde q_1$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $\langle\tilde q\rangle_{\natural}$.
 
@@ -71,7 +71,7 @@ for every invertible $h$, and the quotient depends on $h$ unless $\tilde q$ is c
 
 **Corollary (The Obstruction Is the Non-Commutativity, Not the Zero Divisors).** The failure displayed is due to the non-commutativity of the algebra; the zero divisors add a second obstruction, because the difference quotient requires $h$ invertible and the invertible elements do not contain a neighbourhood of every point of the interior of the zero divisor set.
 
-**Proof.** The first statement is the computation; the second is the definition of the zero divisor set and the openness of the units.
+**Proof.** The first statement is the computation; the second is the definition of the zero divisor set and the openness of the invertibles.
 
 **Conclusion.** The naive derivative is not the right notion on this algebra. The replacement is the operator calculus of the next section, in the tradition of Clifford analysis, together with the coordinatewise calculus of the Peirce coordinates.
 
@@ -127,7 +127,7 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 ## Singularities
 
-**Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $\tilde q = q_t + \vec q$ with $\vec q \in V$, then
+**Theorem (The Inverse and Its Singular Set).** The function $\tilde q \mapsto \tilde q^{-1}$ is defined and continuous on the open set of invertibles and has no extension to the null cone. In coordinates, if $\tilde q = q_t + \vec q$ with $\vec q \in V$, then
 
 $$
 \boxed{\;

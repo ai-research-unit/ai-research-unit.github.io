@@ -35,7 +35,7 @@ The following table collects the results at a glance.
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
 | Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
-The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *Square Roots of an Element*; the roots of $0$ and the nilpotents, which are *Nilpotents*; the structure of the zero-divisor set, which is *Zero Divisors and Units*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
+The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *Square Roots of an Element*; the roots of $0$ and the nilpotents, which are *Nilpotents*; the structure of the zero-divisor set, which is *Zero Divisors and Invertibles*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -256,13 +256,13 @@ $$
 (i\vec e_x)(i\vec e_y)=i^{2}\vec e_x\vec e_y=-\vec e_z
 $$
 
-is a unit and not a root of $+1$. Hence the roots form no group.
+is invertible and not a root of $+1$. Hence the roots form no group.
 
-**Proof.** $(i\vec e_x)^{2}=(i\vec e_y)^{2}=e_t$, because $i^{2}=-1$ and $\vec e_x^{2}=\vec e_y^{2}=-e_t$; their product is $-\vec e_z$, whose square is $\vec e_z^{2}=-e_t\neq e_t$, and which is a unit with inverse $\vec e_z$.
+**Proof.** $(i\vec e_x)^{2}=(i\vec e_y)^{2}=e_t$, because $i^{2}=-1$ and $\vec e_x^{2}=\vec e_y^{2}=-e_t$; their product is $-\vec e_z$, whose square is $\vec e_z^{2}=-e_t\neq e_t$, and which is invertible with inverse $\vec e_z$.
 
-**Proposition (the roots are units).** Every root of $+1$ is a unit, with $\tilde{Ζ}^{-1}=\tilde{Ζ}$, and no root is a zero divisor.
+**Proposition (the roots are invertible).** Every root of $+1$ is invertible, with $\tilde{Ζ}^{-1}=\tilde{Ζ}$, and no root is a zero divisor.
 
-**Proof.** $\tilde{Ζ}^2=e_t$ reads $\tilde{Ζ}\tilde{Ζ}=e_t$, so $\tilde{Ζ}$ is invertible with inverse $\tilde{Ζ}$. A unit is not a zero divisor.
+**Proof.** $\tilde{Ζ}^2=e_t$ reads $\tilde{Ζ}\tilde{Ζ}=e_t$, so $\tilde{Ζ}$ is invertible with inverse $\tilde{Ζ}$. An invertible element is not a zero divisor.
 
 **Proposition (purity and the common element).** Every root except the trivial ones is pure, and the only element common to the roots of $+1$ and the idempotents is $e_t$.
 
@@ -547,7 +547,7 @@ The idempotents fall into the three following families.
 | Non-trivial Hermitian idempotents | $\tfrac12(e_t\pm i\vec u)$, with $\vec u^2=-e_t$ | two | two-parameter family | $\mathbb{B}_{\Psi}$ | yes |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$, with $\vec\zeta\neq0$ and the two real conditions | four | four-parameter family | none of the four four-dimensional subspaces | no |
 
-Since $i\vec u$ is Hermitian for a real vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{B}_{\Psi}$. They are the idempotents attached to the Hermitian elements of the algebra. A Hermitian idempotent satisfies $\tilde\Pi^{*}=\tilde\Pi$, and two idempotents are orthogonal when their product vanishes. For the non-Hermitian root the vector part $\tfrac12(\vec\zeta+i\vec\zeta')$ carries both a nonzero real part $\vec\zeta$ and a nonzero imaginary part $\vec\zeta'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being a unit.
+Since $i\vec u$ is Hermitian for a real vector $\vec u$ with $\vec u^2=-e_t$, these are the non-trivial Hermitian idempotents, and they lie in the Hermitian subspace $\mathbb{B}_{\Psi}$. They are the idempotents attached to the Hermitian elements of the algebra. A Hermitian idempotent satisfies $\tilde\Pi^{*}=\tilde\Pi$, and two idempotents are orthogonal when their product vanishes. For the non-Hermitian root the vector part $\tfrac12(\vec\zeta+i\vec\zeta')$ carries both a nonzero real part $\vec\zeta$ and a nonzero imaginary part $\vec\zeta'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. The halving map is a bijection, so the trivial roots give the two isolated trivial idempotents, the purely imaginary roots give the two-real-parameter family of non-trivial Hermitian idempotents, and the non-Hermitian roots give the four-real-parameter family of non-Hermitian idempotents. Every non-trivial idempotent is a zero divisor, as §*Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, while the trivial idempotents $0$ and $e_t$ are outside it, $e_t$ being an invertible element.
 
 ### Idempotents and the Zero Divisors
 
@@ -633,7 +633,7 @@ $$
 |---|---|
 | Roots of $+1$ | $\pm e_t$; $\pm i\vec u$ over real $\vec u$ with $\vec u^2=-e_t$; $\vec\zeta+i\vec\zeta'$ with $\vec\zeta\neq0$ and the two real conditions |
 | Roots of $-1$ | $\pm i$; $\pm\vec u$ over real $\vec u$ with $\vec u^2=-e_t$; $-\vec\zeta'+i\vec\zeta$ |
-| Root set | not closed under multiplication: $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is a unit but not a root of $+1$, hence not a group |
+| Root set | not closed under multiplication: $(i\vec e_x)(i\vec e_y)=-\vec e_z$ is invertible but not a root of $+1$, hence not a group |
 | Idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$; $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$ with the same conditions |
 | Hermitian idempotents | $0,e_t$; $\tfrac12(e_t\pm i\vec u)$, the star fixing them; two isolated and a two-parameter family |
 | Non-Hermitian idempotents | $\tfrac12(e_t+\vec\zeta+i\vec\zeta')$, a four-parameter family |
@@ -648,7 +648,7 @@ The roots of $+1$ in $\mathbb{B}$ are, by the vector–scalar split and the prod
 2. **Purely imaginary roots:** $\tilde{Ζ}=\pm i\vec u$, where $\vec u$ is real with $\vec u^2=-e_t$, a two-real-parameter family.
 3. **Non-Hermitian roots:** $\tilde{Ζ}=\vec\zeta+i\vec\zeta'$ with $\vec\zeta\neq0$ and the two real conditions $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=-1$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, a four-real-parameter family.
 
-All roots except the trivial ones are pure. Every root of $+1$ is a unit, with $\tilde{Ζ}^{-1}=\tilde{Ζ}$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde{Ζ}\mapsto i\tilde{Ζ}$, a bijection that turns the three families into the two central scalars $\pm i$, the family of pure real roots $\pm\vec u$, and the family $-\vec\zeta'+i\vec\zeta$; the mechanism needs a central scalar of square $-1$ and is not universal.
+All roots except the trivial ones are pure. Every root of $+1$ is invertible, with $\tilde{Ζ}^{-1}=\tilde{Ζ}$. The roots of $-1$ are read off the roots of $+1$ by the central imaginary, $\tilde{Ζ}\mapsto i\tilde{Ζ}$, a bijection that turns the three families into the two central scalars $\pm i$, the family of pure real roots $\pm\vec u$, and the family $-\vec\zeta'+i\vec\zeta$; the mechanism needs a central scalar of square $-1$ and is not universal.
 
 The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\Pi=\tfrac12(e_t\pm\tilde{Ζ})$ with $\tilde{Ζ}$ a root of $+1$. Each root carries the two idempotents $\tilde\Pi_{+}(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ and $\tilde\Pi_{-}(\tilde{Ζ})=\tfrac12(e_t-\tilde{Ζ})=e_t-\tilde\Pi_{+}(\tilde{Ζ})$, a complete orthogonal pair: their sum is $e_t$, their product is $0$, their difference is the root, and multiplication by the root acts by $+1$ on $\tilde\Pi_{+}$ and $-1$ on $\tilde\Pi_{-}$, so that the pair splits the algebra into the $+1$ and $-1$ spaces of that multiplication. The **halving map** $H(\tilde{Ζ})=\tfrac12(e_t+\tilde{Ζ})$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $H^{-1}(\tilde\Pi)=2\tilde\Pi-e_t$, and the class $\{\tilde{Ζ},-\tilde{Ζ}\}$ gives the complementary pair $\{\tilde\Pi_{+},\tilde\Pi_{-}\}$. The three families of roots give the trivial idempotents, the non-trivial Hermitian idempotents in $\mathbb{B}_{\Psi}$ (a two-real-parameter family), and the non-Hermitian idempotents, lying in none of the four four-dimensional subspaces (a four-real-parameter family). The standard pair $\tilde\Pi_{+}=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_{-}=\tfrac12(e_t-i\vec e_z)$ is orthogonal, sums to $e_t$, is primitive. An idempotent and its complement split the algebra, $\mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_t-\tilde\Pi)\mathbb{B}$, the algebraic form of a projector and its complementary projector. Every non-trivial idempotent is a zero divisor, and every non-pure zero divisor is the complex multiple $2Q_t\tilde\Pi$ of a non-trivial idempotent, developed in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*.
 

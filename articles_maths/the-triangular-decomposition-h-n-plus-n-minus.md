@@ -4,7 +4,7 @@
 
 **The algebra splits as a vector space into the diagonal, the strictly upper triangular part and the strictly lower triangular part, with dimensions $n$, $n(n-1)/2$ and $n(n-1)/2$, and the three summands are the weight-zero and the two signs of the root spaces.**
 
-The article proves the decomposition and the dimension count, the nilpotency of $n_+$ with index exactly $n$, and the bracket relations that make $\mathfrak{b}=\mathfrak{h}\oplus n_+$ a solvable subalgebra with $[\mathfrak{b},\mathfrak{b}]=n_+$. It shows that the sum is not a Lie algebra decomposition, since $[n_+,n_-]$ is strictly larger than $\mathfrak{h}$ and contains the units of gap at least two, and it records the comparison with the involution split: $\mathfrak{b}$ has the dimension of $\operatorname{Sym}_n$ and is not that half. It reads the decomposition as the infinitesimal form of the $LDU$ factorisation. It assumes *The Fine Decomposition against the Diagonal* for the grading and *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* for the contrast. It defers the radical and the Killing form to *The Killing Form, Its Radical and the Triangular Case* and the quotient structure to *The Antisymmetric Part inside $UT_n$: the Radical as the Commutator*.
+The article proves the decomposition and the dimension count, the nilpotency of $n_+$ with index exactly $n$, and the bracket relations that make $\mathfrak{b}=\mathfrak{h}\oplus n_+$ a solvable subalgebra with $[\mathfrak{b},\mathfrak{b}]=n_+$. It shows that the sum is not a Lie algebra decomposition, since $[n_+,n_-]$ is strictly larger than $\mathfrak{h}$ and contains the invertibles of gap at least two, and it records the comparison with the involution split: $\mathfrak{b}$ has the dimension of $\operatorname{Sym}_n$ and is not that half. It reads the decomposition as the infinitesimal form of the $LDU$ factorisation. It assumes *The Fine Decomposition against the Diagonal* for the grading and *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* for the contrast. It defers the radical and the Killing form to *The Killing Form, Its Radical and the Triangular Case* and the quotient structure to *The Antisymmetric Part inside $UT_n$: the Radical as the Commutator*.
 
 ## The Three Summands
 
@@ -66,7 +66,7 @@ $$
 [n_+,n_+]=\operatorname{span}\{E_{ij}: j-i\ge2\},\qquad \dim=\frac{(n-1)(n-2)}{2},
 $$
 
-which vanishes exactly at $n\le2$. The values $0,1,3,6$ at $n=2,3,4,5$ were verified by bracketing the units and taking the rank.
+which vanishes exactly at $n\le2$. The values $0,1,3,6$ at $n=2,3,4,5$ were verified by bracketing the invertibles and taking the rank.
 
 **The bracket of the two summands is not confined to the diagonal.** For units,
 
@@ -74,7 +74,7 @@ $$
 [E_{ij},E_{kl}]=\delta_{jk}E_{il}-\delta_{li}E_{kj},
 $$
 
-and with $i<j$ and $k>l$ the first term can produce a unit $E_{il}$ of any position, so $[n_+,n_-]$ contains $\mathfrak{h}$ and much of $n_+$ as well. The computed dimensions at $n=3,4$ are $6$ and $13$, against $n=3$ and $n=4$ for the diagonal, so the bracket is far from being the diagonal alone. The triangular decomposition is a decomposition of the vector space, not of the Lie algebra.
+and with $i<j$ and $k>l$ the first term can produce an invertible element $E_{il}$ of any position, so $[n_+,n_-]$ contains $\mathfrak{h}$ and much of $n_+$ as well. The computed dimensions at $n=3,4$ are $6$ and $13$, against $n=3$ and $n=4$ for the diagonal, so the bracket is far from being the diagonal alone. The triangular decomposition is a decomposition of the vector space, not of the Lie algebra.
 
 ## The Borel Subalgebra
 
@@ -140,7 +140,7 @@ So the two nilpotent summands are abelian, each of dimension $1$, and their brac
 
 ## Summary
 
-The algebra is the direct sum of the diagonal, of dimension $n$, and the two strictly triangular summands, of dimension $n(n-1)/2$ each, which are the weight-zero and the two signs of the root spaces. Each nilpotent summand is a nilpotent Lie algebra of index exactly $n$, with derived algebra spanned by the units of gap at least two, of dimension $(n-1)(n-2)/2$, vanishing only at $n\le2$. The sum $\mathfrak{b}=\mathfrak{h}\oplus n_+$ is solvable of dimension $n(n+1)/2$, equal to $[\mathfrak{b},\mathfrak{b}]=n_+$ being its derived algebra and to the dimension of the symmetric half. The bracket $[n_+,n_-]$ is strictly larger than the diagonal, of dimension $13$ at $n=4$, so the decomposition is not a Lie algebra decomposition. The group-level form is the $LDU$ factorisation, valid on the open cell where the leading principal minors do not vanish.
+The algebra is the direct sum of the diagonal, of dimension $n$, and the two strictly triangular summands, of dimension $n(n-1)/2$ each, which are the weight-zero and the two signs of the root spaces. Each nilpotent summand is a nilpotent Lie algebra of index exactly $n$, with derived algebra spanned by the invertibles of gap at least two, of dimension $(n-1)(n-2)/2$, vanishing only at $n\le2$. The sum $\mathfrak{b}=\mathfrak{h}\oplus n_+$ is solvable of dimension $n(n+1)/2$, equal to $[\mathfrak{b},\mathfrak{b}]=n_+$ being its derived algebra and to the dimension of the symmetric half. The bracket $[n_+,n_-]$ is strictly larger than the diagonal, of dimension $13$ at $n=4$, so the decomposition is not a Lie algebra decomposition. The group-level form is the $LDU$ factorisation, valid on the open cell where the leading principal minors do not vanish.
 
 ## Summary of Notation
 

@@ -19,7 +19,7 @@ $$
 \boxed{\;\sup_{g \in Q} \|\pi(g)\zeta - \zeta\| < \varepsilon\;} .
 $$
 
-The representation $\pi$ **almost has invariant vectors** if for every compact $Q$ and every $\varepsilon > 0$ there is a unit $(Q,\varepsilon)$-invariant vector. The trivial representation $1_G$ is **weakly contained** in $\pi$, written $1_G \prec \pi$, if the matrix coefficients of $1_G$ are limits of matrix coefficients of $\pi$ uniformly on compacta; equivalently, if $\pi$ almost has invariant vectors.
+The representation $\pi$ **almost has invariant vectors** if for every compact $Q$ and every $\varepsilon > 0$ there is invertible $(Q,\varepsilon)$-invariant vector. The trivial representation $1_G$ is **weakly contained** in $\pi$, written $1_G \prec \pi$, if the matrix coefficients of $1_G$ are limits of matrix coefficients of $\pi$ uniformly on compacta; equivalently, if $\pi$ almost has invariant vectors.
 
 **Definition (Kazhdan).** A locally compact group $G$ has **property (T)** if there is a compact subset $Q \subseteq G$ and a number $\varepsilon > 0$ such that every unitary representation of $G$ with a $(Q,\varepsilon)$-invariant vector has a nonzero invariant vector. The pair $(Q, \varepsilon)$ is then a **Kazhdan pair**.
 

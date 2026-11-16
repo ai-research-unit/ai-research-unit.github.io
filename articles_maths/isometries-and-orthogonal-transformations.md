@@ -47,7 +47,7 @@ It is a subgroup of the general linear group $GL(V)$: the identity preserves $q$
 
 **Proof.** For $S \in \operatorname{O}(V, \mathfrak{Q})$ the conjugate $TST^{-1}$ preserves $q'$, since $q'(TST^{-1}v') = \mathfrak{Q}(ST^{-1}v') = \mathfrak{Q}(T^{-1}v') = q'(v')$, using $q' \circ T = q$; the assignment is a group homomorphism with inverse given by conjugation by $T^{-1}$.
 
-**Remark (the ring case).** Over a commutative ring the same definitions make sense, and $\operatorname{O}(V, B)$ is the subgroup of $GL(V)$ preserving $B$, where $GL(V)$ consists of the endomorphisms whose determinant is a unit. If the module is not free, the isometry group is not a matrix group. The proofs above use only bijectivity, not invertibility of a determinant, so they carry over unchanged.
+**Remark (the ring case).** Over a commutative ring the same definitions make sense, and $\operatorname{O}(V, B)$ is the subgroup of $GL(V)$ preserving $B$, where $GL(V)$ consists of the endomorphisms whose determinant is invertible. If the module is not free, the isometry group is not a matrix group. The proofs above use only bijectivity, not invertibility of a determinant, so they carry over unchanged.
 
 ### Similarities
 
@@ -193,7 +193,7 @@ $$
 
 provided the determinant assumes the value $-1$ on $\operatorname{O}(V, \mathfrak{Q})$; this holds whenever there is a hyperplane reflection, in particular for $n \geq 1$. The determinant map is not surjective onto $\{+1,-1\}$ over a general commutative ring, where $(\det T)^2 = 1$ may have more than two solutions.
 
-**Proof.** Two isometries have the same determinant if and only if one is the other composed with an element of $\operatorname{SO}(V, \mathfrak{Q})$, so the quotient embeds in the group of units of $F$ cut out by $d^2 = 1$; over a field of characteristic not $2$ this group is $\{+1, -1\}$. The reflection $\tau_v$ has determinant $-1$, so the image is all of $\{+1,-1\}$.
+**Proof.** Two isometries have the same determinant if and only if one is the other composed with an element of $\operatorname{SO}(V, \mathfrak{Q})$, so the quotient embeds in the group of invertibles of $F$ cut out by $d^2 = 1$; over a field of characteristic not $2$ this group is $\{+1, -1\}$. The reflection $\tau_v$ has determinant $-1$, so the image is all of $\{+1,-1\}$.
 
 ### The Parity of the Number of Reflections
 

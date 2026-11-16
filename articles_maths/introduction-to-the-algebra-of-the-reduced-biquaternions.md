@@ -88,13 +88,13 @@ The proposition is the reason every question about the algebra splits into two q
 
 **The unit is $1$, it is two-sided and unique, and an element is invertible exactly when its reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ is nonzero, with the inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$.**
 
-*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is a unit then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{+},Q_{-})$ is $(Q_{+}^{-1},Q_{-}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$.
+*Proof.* The unit is $1=1+0j$, and $1\,\breve Q=\breve Q\,1=\breve Q$. Uniqueness: if $e$ is invertible then $e=e1=1$. The criterion $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ and the inverse are *The Four Products, Their Forms and Their Algebraic Norms*, §*The Multiplicative Norm*, and the full treatment is *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, below this article. In the idempotent coordinates the inverse of $(Q_{+},Q_{-})$ is $(Q_{+}^{-1},Q_{-}^{-1})$, which exists exactly when both coordinates are nonzero, that is when $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$.
 
 ### The Absence of Division
 
 **The algebra is not a field and not a division algebra: it has zero divisors, and the invertible elements form a proper subset of the nonzero elements.**
 
-*Proof.* The idempotents are orthogonal and nonzero, $\Pi_+\Pi_-=0$, so $\Pi_+$ and $\Pi_-$ are zero divisors (*Reduced Biquaternion Space*); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of units is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$.
+*Proof.* The idempotents are orthogonal and nonzero, $\Pi_+\Pi_-=0$, so $\Pi_+$ and $\Pi_-$ are zero divisors (*Reduced Biquaternion Space*); the element $(1,0)$ annihilates $(0,1)$ in the idempotent coordinates, and both are nonzero. An element whose one idempotent coordinate vanishes is a nonzero zero divisor, so the group of invertibles is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$.
 
 The zero divisors, their two families and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, below this article; their annihilators are *Annihilators of the Algebra of the Reduced Biquaternions*. The **absence of division** is stated here because it bears on every statement of an inverse: an element must be tested against $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$ before it is inverted.
 
@@ -119,7 +119,7 @@ The block of the general plain algebra is the thirteen articles below, in the or
 | article | content |
 |---|---|
 | *Introduction to the Algebra* (this article) | the definition, the data and the plan |
-| *Norm and Invertibility in the Algebra* | the algebraic norm, the invertibility criterion and the group of units |
+| *Norm and Invertibility in the Algebra* | the algebraic norm, the invertibility criterion and the group of invertibles |
 | *Zero Divisors of the Algebra* | the null cone and its structure |
 | *Annihilators of the Algebra* | the annihilators of an element and the two-sided annihilator of the structure |
 | *Square Roots of One and the Idempotents* | the roots of $1$, the idempotents and the projections they carry |
@@ -127,7 +127,7 @@ The block of the general plain algebra is the thirteen articles below, in the or
 | *Square Roots of a General Element* | the square roots of a general element |
 | *The Specificities of the Algebra* | the specificities of the algebra |
 | *Ideals and Peirce Decomposition* | the ideals and the Peirce decomposition |
-| *The Group of Units of the Algebra* | the structure of the group of units |
+| *The Group of Invertibles of the Algebra* | the structure of the group of invertibles |
 | *The Forms of the Algebra* | the forms of the algebra |
 | *The Multiplication Operators of the Algebra* | the left and the right multiplication maps |
 | *The Algebra in the $2\times2$ Matrix Element Representation* | the $2\times2$ matrix model |

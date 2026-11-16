@@ -12,9 +12,9 @@ $$
 
 a polynomial in the frequency $\zeta\in\mathbb{R}^n$ with values in the complexified algebra. The article proves that the transform of $P(D)u$ is the left multiplication of the transform of $u$ by $\sigma_P$, and then reads four things off that identity: when the equation is solvable at a frequency, what the obstruction is when it is not, how the obstruction is measured by a determinant, and where the obstruction can occur.
 
-**Why the coefficients in an algebra and not in a field.** For $A=\mathbb{C}$ the symbol is a polynomial and the equation $a\,x=b$ is solvable whenever $a\ne0$; the whole of the classical theory is the study of the zero set. For a non-commutative $A$, and still more for an $A$ with zero divisors, the element $a$ can fail to be a unit while being non-zero, and the failure is then not always a point: it is a set, and the set has a shape. The shape depends on the algebra and not on the operator, and the theorem that separates the shapes is the second result of this article. This article fixes the general statement, for an arbitrary finite-dimensional real algebra; the articles of the harmonic-analysis ladder compute the shapes for the particular algebras they treat.
+**Why the coefficients in an algebra and not in a field.** For $A=\mathbb{C}$ the symbol is a polynomial and the equation $a\,x=b$ is solvable whenever $a\ne0$; the whole of the classical theory is the study of the zero set. For a non-commutative $A$, and still more for an $A$ with zero divisors, the element $a$ can fail to be an invertible element while being non-zero, and the failure is then not always a point: it is a set, and the set has a shape. The shape depends on the algebra and not on the operator, and the theorem that separates the shapes is the second result of this article. This article fixes the general statement, for an arbitrary finite-dimensional real algebra; the articles of the harmonic-analysis ladder compute the shapes for the particular algebras they treat.
 
-**Boundaries.** The article is about the forward transform and the pointwise algebra at one frequency. It does not carry out the inverse transform, which is *The Fourier Operator*, it does not treat the global solvability of $P(D)u=f$ on $\mathbb{R}^n$, which requires the parametrix construction and belongs to *The Fundamental Solution Operator*, and it does not place the transform in a topological space of test functions, which is *Distributions and Fundamental Solutions*. The coefficients are constant; the variable-coefficient case is stated only to say what fails, in §*What the Transform Does Not Do*. The symbol of an operator over a field, and the law by which symbols compose, are *Differential Operators*; this article takes that law as given and adds the two things the scalar case does not have, a coefficient that does not commute and a symbol that need not be a unit.
+**Boundaries.** The article is about the forward transform and the pointwise algebra at one frequency. It does not carry out the inverse transform, which is *The Fourier Operator*, it does not treat the global solvability of $P(D)u=f$ on $\mathbb{R}^n$, which requires the parametrix construction and belongs to *The Fundamental Solution Operator*, and it does not place the transform in a topological space of test functions, which is *Distributions and Fundamental Solutions*. The coefficients are constant; the variable-coefficient case is stated only to say what fails, in §*What the Transform Does Not Do*. The symbol of an operator over a field, and the law by which symbols compose, are *Differential Operators*; this article takes that law as given and adds the two things the scalar case does not have, a coefficient that does not commute and a symbol that need not be an invertible element.
 
 **Assumptions and notation.** The algebra $A$ is finite-dimensional, associative, real, with unit $1$. The functions are $A_{\mathbb{C}}$-valued, $u:\mathbb{R}^n\to A_{\mathbb{C}}$, taken smooth and of compact support where a transform is written; the transform of a general function is read in the sense of *Distributions and Fundamental Solutions*. The frequency is $\zeta\in\mathbb{R}^n$, the same letter *Differential Operators* uses for the variable of the symbol, and $\zeta^\alpha=\zeta_1^{\alpha_1}\cdots\zeta_n^{\alpha_n}$.
 
@@ -46,7 +46,7 @@ acting on $A_{\mathbb{C}}$-valued functions by $(P(D)u)(x)=\sum a_\alpha\,\parti
 
 Its **order** is the largest $|\alpha|$ with $a_\alpha\ne0$, and its **principal part** is the sum of those terms. The operator is read by its action, so two expressions define the same operator exactly when their coefficients agree, coefficient by coefficient and in the same order.
 
-**Remark (the scalar case is the case $A=\mathbb{R}$ or $\mathbb{C}$).** Everything in this article reduces to the classical statements when $A$ is a field, and the reader may keep that case in view: the symbol is a polynomial, $L_a$ is multiplication by a number, and the only non-unit is $0$. **The general case is separated from it by one fact only, that a non-zero element of $A$ need not be a unit.**
+**Remark (the scalar case is the case $A=\mathbb{R}$ or $\mathbb{C}$).** Everything in this article reduces to the classical statements when $A$ is a field, and the reader may keep that case in view: the symbol is a polynomial, $L_a$ is multiplication by a number, and the only non-invertible is $0$. **The general case is separated from it by one fact only, that a non-zero element of $A$ need not be an invertible element.**
 
 ## The Symbol
 
@@ -121,8 +121,8 @@ $$
 **The reading of the theorem.** A differential operator of order $m$ is, under the transform, the multiplication by one element. Three consequences follow at once, and they are the three that the rest of the article develops.
 
 - The operator is **diagonalized at each frequency**: it acts on the value of $\mathcal{F}[u]$ at $\zeta$ alone, and different frequencies do not mix. This is the sense in which the transform turns the equation into an algebraic one; it is not that the operator becomes a number, but that it becomes a multiplication, and a multiplication acts pointwise.
-- The operator is **invertible at the frequency $\zeta$ exactly when the element $\sigma_P(\zeta)$ is a unit**, and then the inverse is the multiplication by $\sigma_P(\zeta)^{-1}$. Nothing else is needed: no boundary condition, no parametrix, no topology.
-- The **failure** of invertibility at $\zeta$ is the failure of one element of a finite-dimensional algebra to be a unit. It is therefore a question of linear algebra, and it is decided by a determinant.
+- The operator is **invertible at the frequency $\zeta$ exactly when the element $\sigma_P(\zeta)$ is invertible**, and then the inverse is the multiplication by $\sigma_P(\zeta)^{-1}$. Nothing else is needed: no boundary condition, no parametrix, no topology.
+- The **failure** of invertibility at $\zeta$ is the failure of one element of a finite-dimensional algebra to be an invertible element. It is therefore a question of linear algebra, and it is decided by a determinant.
 
 **Remark (the theorem is exactly an equivalence).** The correspondence $P\mapsto\sigma_P$ is one to one, and so is the correspondence between constant-coefficient operators and $A_{\mathbb{C}}$-valued polynomials. **The transform is therefore an isomorphism of algebras between the constant-coefficient operators under composition and the polynomials under multiplication**, and a representation of the one is a representation of the other. This is the precise content of the word "algebraic" in the title of the family of studies this article belongs to.
 
@@ -141,12 +141,12 @@ This is the equation of left multiplication by an element of a finite-dimensiona
 1. $L_a$ is injective.
 2. $L_a$ is surjective.
 3. $L_a$ is invertible.
-4. $a$ is a unit of $A$.
+4. $a$ is invertible in $A$.
 5. $\det L_a\ne0$.
 
 If they hold, the equation $ax=b$ has the unique solution $x=a^{-1}b$ for every $b$. If they fail, the equation is solvable exactly for those $b$ lying in the left ideal $Aa$, and the solution is determined only up to the left annihilator of $a$.
 
-*Proof.* The space $A$ is finite-dimensional, so by rank–nullity an endomorphism of it is injective exactly when it is surjective; this gives 1 $\Leftrightarrow$ 2 $\Leftrightarrow$ 3. If $L_a$ is surjective there is an $x$ with $L_a(x)=ax=1$. Then $a(xa-1)=(ax)a-a=a-a=0$, so $xa-1$ lies in $\ker L_a$, which is $\{0\}$ because $L_a$ is injective; hence $xa=1$ as well, and $a$ is a unit. Conversely a unit has the inverse $L_{a^{-1}}$. This gives 3 $\Leftrightarrow$ 4. A square matrix is invertible exactly when its determinant is non-zero, which gives 3 $\Leftrightarrow$ 5. The last sentence is the definition of the image and of the kernel: $ax=b$ has a solution exactly when $b\in Aa$, and two solutions differ by an element of $\ker L_a$.
+*Proof.* The space $A$ is finite-dimensional, so by rank–nullity an endomorphism of it is injective exactly when it is surjective; this gives 1 $\Leftrightarrow$ 2 $\Leftrightarrow$ 3. If $L_a$ is surjective there is an $x$ with $L_a(x)=ax=1$. Then $a(xa-1)=(ax)a-a=a-a=0$, so $xa-1$ lies in $\ker L_a$, which is $\{0\}$ because $L_a$ is injective; hence $xa=1$ as well, and $a$ is invertible. Conversely an invertible element has the inverse $L_{a^{-1}}$. This gives 3 $\Leftrightarrow$ 4. A square matrix is invertible exactly when its determinant is non-zero, which gives 3 $\Leftrightarrow$ 5. The last sentence is the definition of the image and of the kernel: $ax=b$ has a solution exactly when $b\in Aa$, and two solutions differ by an element of $\ker L_a$.
 
 **Definition.** The **left annihilator** of $a$ is $\operatorname{Ann}_L(a)=\{x\in A:ax=0\}=\ker L_a$, and the **cokernel** of $L_a$ is $\operatorname{coker}L_a=A/Aa$. Both are left $A$-modules.
 
@@ -160,7 +160,7 @@ $$
 
 **Remark (what the corollary says, and what it does not).** The two spaces have the same dimension and they are not the same space: $\operatorname{Ann}_L(a)\subseteq A$ is a subspace of the algebra, and $\operatorname{coker}L_a$ is a quotient of it. **The equality of dimensions is a numerical coincidence of the regular representation, and it fails for a symbol that takes values in a proper subalgebra or in a module.** For the regular representation it is exact and it is the reason a single number, the rank, reports both the freedom in the solution and the number of conditions on the data.
 
-**Remark (the equation is not yet solved on $\mathbb{R}^n$).** The theorem is a statement at one frequency. To pass from it to the equation on $\mathbb{R}^n$ one must solve at every $\zeta$ at once, divide by $\sigma_P(\zeta)$ as a function of $\zeta$, and control the growth of the quotient; that is the construction of a fundamental solution, and it belongs to *The Fundamental Solution Operator*. **What the pointwise statement contributes is the location of the obstruction, and it contributes it exactly**: the obstruction sits at the frequencies where $\sigma_P$ is not a unit, and nowhere else.
+**Remark (the equation is not yet solved on $\mathbb{R}^n$).** The theorem is a statement at one frequency. To pass from it to the equation on $\mathbb{R}^n$ one must solve at every $\zeta$ at once, divide by $\sigma_P(\zeta)$ as a function of $\zeta$, and control the growth of the quotient; that is the construction of a fundamental solution, and it belongs to *The Fundamental Solution Operator*. **What the pointwise statement contributes is the location of the obstruction, and it contributes it exactly**: the obstruction sits at the frequencies where $\sigma_P$ is not invertible, and nowhere else.
 
 ## The Determinant of the Regular Representation
 
@@ -172,15 +172,15 @@ $$
 \det L_{ab}=\det L_a\,\det L_b ,\qquad \det L_1=1 ,
 $$
 
-and $\det L_a\ne0$ exactly when $a$ is a unit.
+and $\det L_a\ne0$ exactly when $a$ is invertible.
 
 *Proof.* The first is $L_{ab}=L_aL_b$ and the multiplicativity of the determinant; the second is $L_1=\mathrm{id}$; the third is the theorem of §*Solvability at One Frequency*.
 
-**The determinant is a multiplicative functional, and that is its role.** It converts the question "is this element a unit" into the question "does this polynomial vanish", and it converts the multiplicative structure of $A$ into the multiplicative structure of the scalars. Nothing else in the article uses more about $A$ than this proposition.
+**The determinant is a multiplicative functional, and that is its role.** It converts the question "is this element an invertible element" into the question "does this polynomial vanish", and it converts the multiplicative structure of $A$ into the multiplicative structure of the scalars. Nothing else in the article uses more about $A$ than this proposition.
 
 **Four algebras, four mechanisms.** The determinant takes a different form in each of the four kinds of algebra, and the table is worth reading by column.
 
-| $A$ | $d$ | $\det L_a$ | the non-units |
+| $A$ | $d$ | $\det L_a$ | the non-invertibles |
 |---|---|---|---|
 | $\mathbb{C}$ over $\mathbb{R}$ | $2$ | $\lvert a\rvert^2$ | the point $0$ |
 | $\mathbb{H}$ | $4$ | $N(a)^2$ | the point $0$ |
@@ -209,7 +209,7 @@ $$
 **Definition.** The **zero set** of the symbol is
 
 $$
-Z(P)=\{\zeta\in\mathbb{C}^n:\sigma_P(\zeta)\text{ is not a unit of }A_{\mathbb{C}}\} ,
+Z(P)=\{\zeta\in\mathbb{C}^n:\sigma_P(\zeta)\text{ is not invertible of }A_{\mathbb{C}}\} ,
 $$
 
 where $\sigma_P$ is extended from $\mathbb{R}^n$ to $\mathbb{C}^n$ by the same polynomial, and the **real zero set** is $Z(P)\cap\mathbb{R}^n$. By the corollary of §*The Determinant of the Regular Representation* it is the zero set of the single polynomial $\det L_{\sigma_P}$:
@@ -224,8 +224,8 @@ $$
 
 **The three shapes of a zero set.** The determinant is one polynomial, and the set where it vanishes can have three different shapes. The shape is determined by the algebra and by the symbol, and the three cases are what the rest of the theory has to keep apart.
 
-- **A point, or nothing.** When $A$ is a division algebra, every non-zero element is a unit, so the only candidate is $\zeta=0$, and if the operator carries an invertible constant term the zero set is empty. This is the case of $\mathbb{C}$ and of $\mathbb{H}$, and it is the classical well-posed case.
-- **A hypersurface.** When $A$ is a matrix algebra or a split algebra, the non-units form the zero set of an indefinite form: the cone of singular matrices, or the isotropic cone of the form. This is the case of $M_2(\mathbb{R})$ and of the split algebras.
+- **A point, or nothing.** When $A$ is a division algebra, every non-zero element is invertible, so the only candidate is $\zeta=0$, and if the operator carries an invertible constant term the zero set is empty. This is the case of $\mathbb{C}$ and of $\mathbb{H}$, and it is the classical well-posed case.
+- **A hypersurface.** When $A$ is a matrix algebra or a split algebra, the non-invertibles form the zero set of an indefinite form: the cone of singular matrices, or the isotropic cone of the form. This is the case of $M_2(\mathbb{R})$ and of the split algebras.
 - **A linear subspace.** When $A$ has a nilpotent radical, the determinant depends on fewer coordinates than $A$ has, and its zero set contains whole directions: the symbol is singular for every value of those coordinates.
 
 **Example (the singular cone, computed).** Let $A=M_2(\mathbb{R})$ with the basis $E_{11},E_{12},E_{21},E_{22}$ of the matrix units, and let $P(D)=\sum_{i,j}E_{ij}\partial_{ij}$ be read on $\mathbb{R}^4$ with the frequency $\zeta=(\zeta_{11},\zeta_{12},\zeta_{21},\zeta_{22})$. Then
@@ -266,7 +266,7 @@ $$
 
 **Proposition (the image is a left ideal, and it is proper exactly on the zero set).** $A\sigma_P(\zeta)$ is a left ideal of $A$, it equals $A$ exactly when $\zeta\notin Z(P)$, and at a zero it is a proper left ideal whose dimension is $r(\zeta)$.
 
-*Proof.* The image is $Aa$, and $b(ax)=(ba)x$ shows that it is a left ideal. If $\zeta\notin Z(P)$ then $a$ is a unit and $Aa=A$; otherwise $Aa$ is proper and its dimension is $r(\zeta)$ by rank–nullity.
+*Proof.* The image is $Aa$, and $b(ax)=(ba)x$ shows that it is a left ideal. If $\zeta\notin Z(P)$ then $a$ is invertible and $Aa=A$; otherwise $Aa$ is proper and its dimension is $r(\zeta)$ by rank–nullity.
 
 **Remark (what "proper left ideal" adds).** For $A=\mathbb{C}$ the only proper left ideal is $0$, so at a zero the image collapses and every non-zero datum is unobtainable. **For a non-simple $A$ the image at a zero is a non-trivial ideal: some data remain obtainable, and the equation remains partly solvable.** That is the sense in which a zero divisor is milder than a zero, and it is the reason the zero set of a symbol over a non-simple algebra has to be described stratum by stratum, one stratum for each rank, rather than as a single obstacle.
 
@@ -280,7 +280,7 @@ $$
 
 **Corollary (the degree of the obstruction).** The zero set is the zero set of a polynomial of degree $dm$ in $n$ variables. Over $\mathbb{C}$ its dimension is at least $n-1$ when it is non-empty and proper, by the principal ideal theorem; it is a cone when $\sigma_P$ is homogeneous of degree $m$. The real zero set can be smaller, and in the third shape of §*The Zero Set* it is smaller by exactly one dimension.
 
-*Proof.* The determinant is a single polynomial; if it is not a unit, its zero set in $\mathbb{C}^n$ has dimension at least $n-1$. If $\sigma_P$ is homogeneous then so is $\det L_{\sigma_P}$, and a homogeneous polynomial vanishes on the cone through each of its zeros.
+*Proof.* The determinant is a single polynomial; if it is not invertible, its zero set in $\mathbb{C}^n$ has dimension at least $n-1$. If $\sigma_P$ is homogeneous then so is $\det L_{\sigma_P}$, and a homogeneous polynomial vanishes on the cone through each of its zeros.
 
 **Remark (homogeneity is the exception, not the rule).** **An operator of order $m$ with a non-zero coefficient of order $0$ has a symbol that is not homogeneous, and its zero set is then a level set and not a cone.** The constant term shifts the level, and — for a symbol whose quadratic part is degenerate — it can split one level set into several components. The degree $dm$ therefore records the order and not the shape: two operators of the same order have determinants of the same degree and zero sets of different shape.
 
@@ -310,9 +310,9 @@ $$
 
 ## Summary
 
-The transform of a constant-coefficient operator with coefficients in a finite-dimensional algebra is the left multiplication by the symbol: $\mathcal{F}[P(D)u]=L_{\sigma_P(\zeta)}\mathcal{F}[u]$. The equation at each frequency is therefore $a\,x=b$ with $a=\sigma_P(\zeta)$, and it is solvable for every $b$ exactly when $a$ is a unit, which is exactly when $\det L_a\ne0$. The kernel of $L_a$ is the freedom in the solution, the cokernel is the constraint on the data, and the two have the same dimension, $d-\operatorname{rank}L_a$, by rank–nullity. The zero set of the symbol is the zero set of the single polynomial $\det L_{\sigma_P}$, of degree $dm$; it is a point or empty, a hypersurface, or a linear subspace, according to the algebra: a division algebra, a matrix or split algebra, an algebra with a nilpotent radical.
+The transform of a constant-coefficient operator with coefficients in a finite-dimensional algebra is the left multiplication by the symbol: $\mathcal{F}[P(D)u]=L_{\sigma_P(\zeta)}\mathcal{F}[u]$. The equation at each frequency is therefore $a\,x=b$ with $a=\sigma_P(\zeta)$, and it is solvable for every $b$ exactly when $a$ is invertible, which is exactly when $\det L_a\ne0$. The kernel of $L_a$ is the freedom in the solution, the cokernel is the constraint on the data, and the two have the same dimension, $d-\operatorname{rank}L_a$, by rank–nullity. The zero set of the symbol is the zero set of the single polynomial $\det L_{\sigma_P}$, of degree $dm$; it is a point or empty, a hypersurface, or a linear subspace, according to the algebra: a division algebra, a matrix or split algebra, an algebra with a nilpotent radical.
 
-Three sentences carry the article. **The transform replaces a derivative by an element.** **The element is a unit or it is not, and a determinant decides.** **The set where it is not a unit is the only obstruction the transform reports, and it is a set with a shape.**
+Three sentences carry the article. **The transform replaces a derivative by an element.** **The element is invertible or it is not, and a determinant decides.** **The set where it is not invertible is the only obstruction the transform reports, and it is a set with a shape.**
 
 ## Summary of Notation
 
@@ -329,7 +329,7 @@ Three sentences carry the article. **The transform replaces a derivative by an e
 | $P(D)$ | A constant-coefficient differential operator $\sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ with $a_\alpha\in A$ |
 | $\sigma_P(\zeta)$ | The symbol $\sum a_\alpha(i\zeta)^\alpha$; an $A_{\mathbb{C}}$-valued polynomial of degree $m$ |
 | $m$ | The order of $P$, and the degree of $\sigma_P$ |
-| $Z(P)$ | The zero set $\{\zeta:\sigma_P(\zeta)$ is not a unit$\}=\{\zeta:\det L_{\sigma_P(\zeta)}=0\}$ |
+| $Z(P)$ | The zero set $\{\zeta:\sigma_P(\zeta)$ is not invertible$\}=\{\zeta:\det L_{\sigma_P(\zeta)}=0\}$ |
 | $r(\zeta)$ | The rank of $L_{\sigma_P(\zeta)}$ at the frequency $\zeta$ |
 | $M_r(\mathbb{R})$ | The algebra of real $r\times r$ matrices, of dimension $r^2$; the matrix algebra used for the examples |
 | $N$ | The norm of a division algebra, $N(a)=a\bar a$; the reduced determinant in the matrix case |
@@ -346,4 +346,4 @@ Three sentences carry the article. **The transform replaces a derivative by an e
 - M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra* (Addison-Wesley, 1969), for the ideals, the quotients and the rank–nullity arguments used in §*The Kernel and the Cokernel*.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the classification of the real algebras by their quadratic forms, which is what decides the shape of the zero set.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the structure of a finite-dimensional algebra, its radical, its simple factors and its reduced norm.
-- T. Y. Lam, *A First Course in Noncommutative Rings* (2nd ed., Springer, 2001), for the units, the zero divisors and the one-sided ideals of a finite-dimensional algebra.
+- T. Y. Lam, *A First Course in Noncommutative Rings* (2nd ed., Springer, 2001), for the invertibles, the zero divisors and the one-sided ideals of a finite-dimensional algebra.

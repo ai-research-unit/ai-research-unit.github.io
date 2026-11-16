@@ -29,7 +29,7 @@ $$
 \frac{\partial F}{\partial t}(x,t) = -H(x,t)\nu(x,t),
 $$
 
-where $\nu$ is a unit normal field and $H = \operatorname{tr}\mathrm{II}$ is the mean curvature with respect to $\nu$; the flow is **inward** for a convex surface when $\nu$ is the outward normal.
+where $\nu$ is invertible normal field and $H = \operatorname{tr}\mathrm{II}$ is the mean curvature with respect to $\nu$; the flow is **inward** for a convex surface when $\nu$ is the outward normal.
 
 **Theorem (first variation and the gradient-flow property).** The mean curvature flow is the $L^2$-gradient flow of the area functional: for a variation $F(\cdot,t)$ with variational field $V = \partial/\partial t\,F$, the first variation of the area is
 

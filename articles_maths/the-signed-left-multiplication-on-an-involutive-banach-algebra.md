@@ -11,9 +11,9 @@ $$
 
 It is the signed two-sided operator with right parameter $1$, $\ell_a = \mathcal{T}_{a,1}$, and it is the model of a graded module action: a graded algebra acts on itself through $\ell_a$, and a graded module is acted on by the same operator with the argument in the module. The twist changes the action in one place, the argument, and it moves the operator into the coset $L(A)\alpha$ of the ordinary left multiplications: the product of a signed left multiplication with an unsigned one is signed, the product of two signed ones is unsigned, and the group that the two families generate together is a semidirect product of the left multiplications with the two-element group $\{\mathrm{id},\alpha\}$. This article treats the signed left multiplication on an involutive Banach algebra: it fixes the operator, proves its continuity and its bounds, computes the composition laws, identifies the fixed elements, relates the family to the unsigned left multiplications, and records the degenerate cases.
 
-The article assumes the signed two-sided operator, its decomposition, its table and its inverse from *The Signed Two-Sided Operator on a Banach Algebra*; the Banach algebra, its norm, the unit group and the centre from *Topological Algebras and Banach Algebras*; the bounded operators, the operator norm and the one-sided multiplications from *Operators on a Banach Algebra*; the grade involution and the grading from *Involutive Topological Algebras*; and the abstract signed left multiplication from *The Signed Left Multiplication on an Algebra*. The anti-automorphism involution $\sigma$ is the structure of the `- * Theory` group of this category and is not used here; the graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*, later still.
+The article assumes the signed two-sided operator, its decomposition, its table and its inverse from *The Signed Two-Sided Operator on a Banach Algebra*; the Banach algebra, its norm, the group of invertibles and the centre from *Topological Algebras and Banach Algebras*; the bounded operators, the operator norm and the one-sided multiplications from *Operators on a Banach Algebra*; the grade involution and the grading from *Involutive Topological Algebras*; and the abstract signed left multiplication from *The Signed Left Multiplication on an Algebra*. The anti-automorphism involution $\sigma$ is the structure of the `- * Theory` group of this category and is not used here; the graded module action is *The Graded Action on a Module over an Involutive Banach Algebra*, and the adjoint is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*, later still.
 
-Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, centre $Z(A)$ and unit group $A^\times$; $\alpha$ is a continuous involutive automorphism, the **grade involution**, with $\alpha^2 = \mathrm{id}$ and $\lVert\alpha\rVert < +\infty$; $L_a(x) = ax$ and $R_b(x) = xb$ are the unsigned one-sided multiplications; the **signed left multiplication** is $\ell_a = L_a\alpha = \mathcal{T}_{a,1}$, $\ell_a(x) = a\alpha(x)$; the **signed right multiplication** is $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$, $\varrho_b(x) = \alpha(x)b$; and $A = A^+\oplus A^-$ is the grading.
+Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$, centre $Z(A)$ and group of invertibles $A^\times$; $\alpha$ is a continuous involutive automorphism, the **grade involution**, with $\alpha^2 = \mathrm{id}$ and $\lVert\alpha\rVert < +\infty$; $L_a(x) = ax$ and $R_b(x) = xb$ are the unsigned one-sided multiplications; the **signed left multiplication** is $\ell_a = L_a\alpha = \mathcal{T}_{a,1}$, $\ell_a(x) = a\alpha(x)$; the **signed right multiplication** is $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$, $\varrho_b(x) = \alpha(x)b$; and $A = A^+\oplus A^-$ is the grading.
 
 ## Definition and Decomposition
 
@@ -78,18 +78,18 @@ so the generated group is the semidirect product $L(A^\times)\rtimes\{\mathrm{id
 **Proposition (the fixed set).** For $a \in A$ the fixed set of the signed left multiplication is
 
 $$
-A^{\ell_a} = \{x \in A : a\,\alpha(x) = x\} ; \qquad \text{for a unit } a, \quad A^{\ell_a} = \{x : \alpha(x) = a^{-1}x\} .
+A^{\ell_a} = \{x \in A : a\,\alpha(x) = x\} ; \qquad \text{for an invertible element } a, \quad A^{\ell_a} = \{x : \alpha(x) = a^{-1}x\} .
 $$
 
 It is closed, being the equalizer of the continuous maps $\ell_a$ and $\mathrm{id}$, and it contains $0$.
 
-**Proof.** The fixed equation is $a\alpha(x) = x$; for a unit $a$ it is equivalent to $\alpha(x) = a^{-1}x$. The set is the equalizer of two continuous maps into a Hausdorff space, hence closed, and it contains $0$ because $\ell_a$ is additive.
+**Proof.** The fixed equation is $a\alpha(x) = x$; for an invertible element $a$ it is equivalent to $\alpha(x) = a^{-1}x$. The set is the equalizer of two continuous maps into a Hausdorff space, hence closed, and it contains $0$ because $\ell_a$ is additive.
 
 **Corollary (the fixed subring of the grade involution).** The signed left multiplication $\ell_1 = \alpha$ has fixed set the fixed subalgebra $A^\alpha$ of the grade involution; the unsigned left multiplication $L_1 = \mathrm{id}$ fixes all of $A$; and $A^\alpha \subseteq A^{\ell_a}$ exactly when $a$ fixes $A^\alpha$ pointwise.
 
 **Proof.** $\ell_1 = \alpha$ has fixed set $\{x : \alpha(x) = x\} = A^\alpha$; an element $x \in A^\alpha$ satisfies $a\alpha(x) = ax$, which equals $x$ for every such $x$ exactly when $a$ fixes $A^\alpha$ pointwise.
 
-**Remark (the fixed set as an eigenspace).** When $\alpha$ is the grade involution of a splitting of $A$ and $a$ is a unit, the fixed set is an affine eigenspace of the composite automorphism $c_a\alpha$, that is $A^{\ell_a} = A^{c_{a^{-1}}\alpha}$; it is a subspace when $a$ is fixed by $\alpha$, and otherwise it is a coset of the intersection of the two fixed spaces, which is the boundary of the present article.
+**Remark (the fixed set as an eigenspace).** When $\alpha$ is the grade involution of a splitting of $A$ and $a$ is invertible, the fixed set is an affine eigenspace of the composite automorphism $c_a\alpha$, that is $A^{\ell_a} = A^{c_{a^{-1}}\alpha}$; it is a subspace when $a$ is fixed by $\alpha$, and otherwise it is a coset of the intersection of the two fixed spaces, which is the boundary of the present article.
 
 ## The Relation to the Unsigned Left Multiplication
 
@@ -99,11 +99,11 @@ $$
 \ell_a = L_a\circ\alpha , \qquad \varrho_b = \alpha\circ R_b ,
 $$
 
-so the signed family is the coset $L(A)\alpha$ and the unsigned family is the subgroup $L(A)$ of the bounded operators. A signed and an unsigned left multiplication agree on $a$ and $u$ exactly when $\alpha$ is the identity on the range of $L_a$; for a unit this forces $\alpha = \mathrm{id}$.
+so the signed family is the coset $L(A)\alpha$ and the unsigned family is the subgroup $L(A)$ of the bounded operators. A signed and an unsigned left multiplication agree on $a$ and $u$ exactly when $\alpha$ is the identity on the range of $L_a$; for an invertible element this forces $\alpha = \mathrm{id}$.
 
-**Proof.** The factorisations are the proposition above; $\ell_a = L_a$ means $a\alpha(x) = ax$ for all $x$, that is $a(\alpha(x)-x) = 0$, and for a unit $a$ this is $\alpha = \mathrm{id}$.
+**Proof.** The factorisations are the proposition above; $\ell_a = L_a$ means $a\alpha(x) = ax$ for all $x$, that is $a(\alpha(x)-x) = 0$, and for an invertible element $a$ this is $\alpha = \mathrm{id}$.
 
-**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$. Then every signed left multiplication is an unsigned two-sided operator,
+**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by an invertible element $z$. Then every signed left multiplication is an unsigned two-sided operator,
 
 $$
 \boxed{\;\ell_a = L_{az}R_{\,z^{-1}} , \qquad \varrho_b = L_{z}R_{\,z^{-1}b}\;} ,
@@ -140,7 +140,7 @@ On an involutive Banach algebra — a Banach algebra $A$ with a continuous grade
 | $\varrho_b = \alpha R_b = \mathcal{T}_{1,b}$ | Signed right multiplication, $\varrho_b(x)=\alpha(x)b$ |
 | $\ell_aL_b=\ell_{a\alpha(b)}$, $L_a\ell_b=\ell_{ab}$ | Mixed laws |
 | $\ell_a\ell_b=L_{a\alpha(b)}$, $\ell_a\varrho_b=L_{a}R_{\alpha(b)}$ | Signed products are unsigned |
-| $\ell_u^{-1}=\ell_{\alpha(u)^{-1}}$ | Inverse, for $u$ a unit |
+| $\ell_u^{-1}=\ell_{\alpha(u)^{-1}}$ | Inverse, for $u$ an invertible element |
 | $A^{\ell_a}=\{x:a\alpha(x)=x\}$ | Fixed set, closed |
 | $\alpha L_u\alpha=L_{\alpha(u)}$ | Normalisation; group $L(A^\times)\rtimes\{\mathrm{id},\alpha\}$ |
 | $\alpha=c_z\Rightarrow\ell_a=L_{az}R_{z^{-1}}$ | Degeneracy when $\alpha$ is inner |

@@ -8,7 +8,7 @@ $$
 \mathcal{N}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}=0\},
 $$
 
-the **null cone**. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its factorisation into a spinor and a co-spinor, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is *The N-Regular Sector*, the group of units.
+the **null cone**. It contains the origin at its apex and the zero divisors at its punctured points. This article studies the sector as a set: its characterisation, its three strata, its geometry and link, its factorisation into a spinor and a co-spinor, its matrix picture, its multiplicative structure, the degeneration of the polar decomposition on it, and the way the spectral condition sits inside it. Its partner is *The N-Regular Sector*, the group of invertibles.
 
 The cone is split by the scalar part into two strata, the **pure** stratum of nilpotents and the **non-pure** stratum of complex multiples of idempotents. On the cone this split coincides exactly with the spectral split: the pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular sector $\Sigma_{01}$. That coincidence is special to the cone and is the main structural link between the norm partition and the spectral partition.
 
@@ -342,9 +342,9 @@ $$
 \langle\tilde Q_2\tilde Q\tilde Q_2^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}=0,
 $$
 
-so the cone is invariant under conjugation by the units. The similarity classes inside it are the pure stratum and the idempotent multiples, as in §*The Three Strata*.
+so the cone is invariant under conjugation by the invertibles. The similarity classes inside it are the pure stratum and the idempotent multiples, as in §*The Three Strata*.
 
-**Remark (the product with a unit).** A product of a null element and a unit is null by multiplicativity, and it can be zero or non-zero. In the matrix picture, multiplying a rank-one matrix by an invertible matrix on either side keeps the rank one; the result is zero exactly when the images and kernels align.
+**Remark (the product with a unit).** A product of a null element and an invertible element is null by multiplicativity, and it can be zero or non-zero. In the matrix picture, multiplying a rank-one matrix by an invertible matrix on either side keeps the rank one; the result is zero exactly when the images and kernels align.
 
 ## The Polar Decomposition on the Cone
 
@@ -427,7 +427,7 @@ The two sectors are complementary, and the comparison is the content of the norm
 | spectrum | $0$ is an eigenvalue | $\lambda_\pm\neq0$ |
 | boundary | the boundary of the sector | $\partial\mathbb{B}^{\times}=\mathcal{N}$ |
 
-**Theorem (the boundary).** The cone is the boundary of the group of units, and it has empty interior:
+**Theorem (the boundary).** The cone is the boundary of the group of invertibles, and it has empty interior:
 
 $$
 \partial\mathbb{B}^{\times}=\mathcal{N},\qquad
@@ -448,7 +448,7 @@ The cone is a semigroup ideal, not a group. It contains no inverse, and the pola
 
 The spectral condition does not refine the cone into four sectors: it meets only two of them, and on the cone the algebraic split and the spectral split coincide. The pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the norm-degenerate, spectrally regular sector $\Sigma_{01}$. The detailed study of those sectors is *The N-Degenerate, Spectrally Degenerate Sector* and *The N-Degenerate, Spectrally Regular Sector*.
 
-The cone is the boundary of the group of units. The two articles together carry the norm partition: this one the zero half, *The N-Regular Sector* the invertible half.
+The cone is the boundary of the group of invertibles. The two articles together carry the norm partition: this one the zero half, *The N-Regular Sector* the invertible half.
 
 ## Summary
 
@@ -462,7 +462,7 @@ The cone splits into the origin, the pure stratum of nilpotents of index two, an
 
 On the cone the algebraic split by $Q_t$ and the spectral split by $B^2$ coincide: the pure stratum, with the origin adjoined, is the doubly degenerate sector $\Sigma_{00}$, and the non-pure stratum is the sector $\Sigma_{01}$. The cone meets neither $\Sigma_{11}$ nor $\Sigma_{10}$. The norm is the product of the eigenvalues, and the cone is exactly the set on which at least one eigenvalue vanishes.
 
-The polar decomposition survives on the cone in degenerate form: the Hermitian factor has rank one and the isometry factor is a partial isometry. The cone is the boundary of the group of units, and the two articles together carry the norm partition.
+The polar decomposition survives on the cone in degenerate form: the Hermitian factor has rank one and the isometry factor is a partial isometry. The cone is the boundary of the group of invertibles, and the two articles together carry the norm partition.
 
 ## Summary of Notation
 
@@ -496,7 +496,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 ## Further Reading
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the criterion, the zero divisors and the two strata
-- [The N-Regular Sector](the-n-regular-sector.html), for the partner article and the group of units
+- [The N-Regular Sector](the-n-regular-sector.html), for the partner article and the group of invertibles
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two factors and the Hermitian factor on the cone
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the non-pure stratum as a sector
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the pure stratum as a sector
@@ -506,6 +506,6 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the mixed units and the Peirce coordinates
 - [Nilpotents](nilpotents.html), for the pure stratum
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the rank-one matrices and the determinant
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the complement of the cone
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401--416.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

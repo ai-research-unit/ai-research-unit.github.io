@@ -22,7 +22,7 @@ The modules over the algebra are [The Category of Modules over the Quaternion Al
 
 **Theorem (the left ideals).** The only left ideals of $\mathbb{H}$ are $0$ and $\mathbb{H}$.
 
-*Proof.* Let $S$ be a non-zero left ideal and let $\tilde x\in S$ be non-zero. The element is a unit, by the division property, so $e_t=\tilde x^{-1}\tilde x\in S$ and then $\mathbb{H}=\mathbb{H}e_t\subseteq S$. Verified on the coefficient basis.
+*Proof.* Let $S$ be a non-zero left ideal and let $\tilde x\in S$ be non-zero. The element is invertible, by the division property, so $e_t=\tilde x^{-1}\tilde x\in S$ and then $\mathbb{H}=\mathbb{H}e_t\subseteq S$. Verified on the coefficient basis.
 
 **Corollary (no carrier).** $\mathbb{H}$ has no carrier: the only simple submodule of the regular module is the module itself, and it has no proper simple submodule.
 
@@ -30,13 +30,13 @@ The modules over the algebra are [The Category of Modules over the Quaternion Al
 
 **Remark (the carrier is the whole algebra).** The reader who insists that a carrier is a left ideal that is minimal among the non-zero ones will say that $\mathbb{H}$ carries the space $\mathbb{H}$ itself, and he will be right in a sense that costs the whole construction: the spinor is then the element, the algebra acts on it faithfully and irreducibly, and the "spinor space" is four-dimensional and is the algebra. What is lost is the properness, and with the properness the whole of the Peirce calculus: there is no corner, no off-diagonal space and no pair of conjugate carriers.
 
-## The Chirality Projector Is a Unit
+## The Chirality Projector Is Invertible
 
-**Proposition (the projector of the complexified block is, over $\mathbb{R}$, an automorphism).** Let $\tilde u$ be a unit vector and $\tilde e_+=\tfrac12(e_t+\vec u)$ the chirality projector of the biquaternion block. Over $\mathbb{R}$ the element $\tilde e_+$ is a unit, of norm $\tfrac12$, and the left multiplication $L_{\tilde e_+}$ is an isomorphism of $\mathbb{H}$.
+**Proposition (the projector of the complexified block is, over $\mathbb{R}$, an automorphism).** Let $\tilde u$ be a unit vector and $\tilde e_+=\tfrac12(e_t+\vec u)$ the chirality projector of the biquaternion block. Over $\mathbb{R}$ the element $\tilde e_+$ is invertible, of norm $\tfrac12$, and the left multiplication $L_{\tilde e_+}$ is an isomorphism of $\mathbb{H}$.
 
-*Proof.* $N(\tilde e_+)=\tfrac14(1+1)=\tfrac12\neq0$, so $\tilde e_+$ is a unit and its left multiplication is invertible with inverse $L_{\tilde e_+^{-1}}$. So the map that cuts a chirality in the complexified block is, over $\mathbb{R}$, an automorphism of the module, with no kernel and no cokernel. Verified numerically: the inverse is $1-\vec u$, of norm two.
+*Proof.* $N(\tilde e_+)=\tfrac14(1+1)=\tfrac12\neq0$, so $\tilde e_+$ is invertible and its left multiplication is invertible with inverse $L_{\tilde e_+^{-1}}$. So the map that cuts a chirality in the complexified block is, over $\mathbb{R}$, an automorphism of the module, with no kernel and no cokernel. Verified numerically: the inverse is $1-\vec u$, of norm two.
 
-**Remark (what the failure means).** The chirality projector fails over $\mathbb{R}$ for the same reason the idempotent fails: an idempotent is a projector, and a unit is not a projector. **The two notions coincide only after complexification, where $\tfrac12(1+\vec u)$ satisfies $\tilde e_+^2=\tilde e_+$ because $\vec u^2=-e_t$ is combined with the complex scalar; over $\mathbb{R}$ the same formula is a unit.**
+**Remark (what the failure means).** The chirality projector fails over $\mathbb{R}$ for the same reason the idempotent fails: an idempotent is a projector, and an invertible element is a projector only when it is the identity. **The two notions coincide only after complexification, where $\tfrac12(1+\vec u)$ satisfies $\tilde e_+^2=\tilde e_+$ because $\vec u^2=-e_t$ is combined with the complex scalar; over $\mathbb{R}$ the same formula is invertible.**
 
 ## The Carrier the Matrix Model Lends
 
@@ -96,13 +96,13 @@ which satisfies $j^2=-\mathrm{id}$ and commutes with the action of $\mathbb{H}$:
 
 ## A Worked Check
 
-**Example (the projectors and their norms).** Take $\vec u=\vec e_z$, so that $\tilde e_\pm=\tfrac12(e_t\pm\vec e_z)$. Then $N(\tilde e_+)=\tfrac14(1+1)=\tfrac12$, the inverse is $1-\tilde e_z$ of norm two, and the product $L_{\tilde e_+}L_{1-\vec e_z}$ is the identity; the same holds for $\tilde e_-$. Both are units, both are non-idempotent over $\mathbb{R}$, and neither has a kernel. Verified numerically on the basis.
+**Example (the projectors and their norms).** Take $\vec u=\vec e_z$, so that $\tilde e_\pm=\tfrac12(e_t\pm\vec e_z)$. Then $N(\tilde e_+)=\tfrac14(1+1)=\tfrac12$, the inverse is $1-\tilde e_z$ of norm two, and the product $L_{\tilde e_+}L_{1-\vec e_z}$ is the identity; the same holds for $\tilde e_-$. Both are invertible, both are non-idempotent over $\mathbb{R}$, and neither has a kernel. Verified numerically on the basis.
 
 **Example (the exchange of the two carriers).** In the model the two idempotents become the two coordinate projectors, so $S_+(\vec e_z)$ is the first coordinate line and $S_-(\vec e_z)$ the second. The map $j$ sends the first basis vector to the second, $j(e_1)=Je_1=e_2$, and the second to the negative of the first, so it exchanges the two carriers and acts on the pair as the matrix $J$. The two lines are therefore conjugate under the quaternionic structure, and the quaternionic line they span is the module. Verified on the standard pair and on the pair attached to a rotated root.
 
 ## The Weyl Reading
 
-**Remark (the reading).** A Weyl spinor is an element of one of the two carriers, that is a spinor of definite chirality; the chirality projectors are the two idempotents $\tilde e_\pm$. Over $\mathbb{R}$ the projectors are units, so the left multiplications that should cut the two chiralities are automorphisms of the module: they do not cut anything, and the two "chiralities" of the algebra are the same module seen twice. **There is no Weyl spinor of the quaternion algebra, and the reason is that the chirality projector is a unit of the algebra.**
+**Remark (the reading).** A Weyl spinor is an element of one of the two carriers, that is a spinor of definite chirality; the chirality projectors are the two idempotents $\tilde e_\pm$. Over $\mathbb{R}$ the projectors are invertible, so the left multiplications that should cut the two chiralities are automorphisms of the module: they do not cut anything, and the two "chiralities" of the algebra are the same module seen twice. **There is no Weyl spinor of the quaternion algebra, and the reason is that the chirality projector is invertible in the algebra.**
 
 ## The Majorana Reading
 
@@ -122,13 +122,13 @@ A carrier is a minimal left ideal, hence a simple submodule of the regular modul
 
 $\mathbb{H}$ has none: its only left ideals are $0$ and the algebra, the regular module is simple, and the only carrier is the algebra itself, which has no proper part.
 
-The chirality projector $\tfrac12(e_t+\vec u)$ of the complexified block is a unit over $\mathbb{R}$, of norm $\tfrac12$, so it is an automorphism of the module and cuts nothing.
+The chirality projector $\tfrac12(e_t+\vec u)$ of the complexified block is invertible over $\mathbb{R}$, of norm $\tfrac12$, so it is an automorphism of the module and cuts nothing.
 
 The matrix model lends the algebra the carrier $\mathbb{C}^2$, a minimal left ideal of $M_2(\mathbb{C})$ and a simple module of real dimension four, which is the regular module; the spinor is a column and the quaternionic structure $j(\psi)=J\bar\psi$ satisfies $j^2=-1$ and commutes with the action up to the conjugation.
 
 The two carriers $S_\pm(\vec u)$ of the biquaternion block are the two coordinate lines; the quaternionic structure exchanges them, no single one descends, and their sum is the quaternionic line that survives.
 
-The Weyl reading fails because the chirality projector is a unit, and the Majorana reading fails because the anti-linear structure of the module is symplectic; the quaternionic column is the analogue of a conjugate pair of Weyl spinors.
+The Weyl reading fails because the chirality projector is invertible, and the Majorana reading fails because the anti-linear structure of the module is symplectic; the quaternionic column is the analogue of a conjugate pair of Weyl spinors.
 
 ## Summary of Notation
 

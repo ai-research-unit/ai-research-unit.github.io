@@ -5,9 +5,9 @@
 
 This article describes the group of linear transformations of the split complex plane that preserve the split norm, and its realisation by the algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It is the split complex counterpart of *Rotations and Reflections in the Complex Plane*, written in parallel: there the unit circle acts by multiplication and its group is identified with the compact rotation group $SO(2)$, whereas here the unit hyperbola acts by multiplication and its identity component is identified with $SO(1,1)$, a group isomorphic to the additive line. The transformations are the **hyperbolic rotations**, and they are treated here only as a group of linear transformations of a plane, with no physical interpretation invoked.
 
-The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of units are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}_{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
+The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of invertibles are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}_{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
 
-Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of signature $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}_{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
+Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of signature $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the group of invertibles $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}_{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
 
 ## The Form and Its Isometries
 
@@ -87,9 +87,9 @@ The two families are the rotations and the reflections. They are disjoint, since
 
 ## The Unit Hyperbola and Its Branches
 
-### The Units and the Norm-One Group
+### The Invertibles and the Norm-One Group
 
-By *Norm and Invertibility in the General Split-Complex Algebra*, an element $Q \in \mathbb{C}_{\mathrm{spl}}$ is a unit exactly when $\langle Q\rangle_{*} \neq 0$, with $Q^{-1} = \bar Q/\langle Q\rangle_{*}$, and the norm is a surjective group homomorphism $N : {\mathbb{C}_{\mathrm{spl}}}^\times \to \mathbb{R}^\times$ with kernel the norm-one group $\mathcal{H} = \{u : \langle u\rangle_{*} = 1\}$. So ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, and $\langle\cdot\rangle_{*}$ presents it as an extension of $\mathbb{R}^\times$ by $\mathcal{H}$; the unit group, its four components and its exponential parametrisation are treated in *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Exponential and Lie Group Structure*.
+By *Norm and Invertibility in the General Split-Complex Algebra*, an element $Q \in \mathbb{C}_{\mathrm{spl}}$ is invertible exactly when $\langle Q\rangle_{*} \neq 0$, with $Q^{-1} = \bar Q/\langle Q\rangle_{*}$, and the norm is a surjective group homomorphism $N : {\mathbb{C}_{\mathrm{spl}}}^\times \to \mathbb{R}^\times$ with kernel the norm-one group $\mathcal{H} = \{u : \langle u\rangle_{*} = 1\}$. So ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, and $\langle\cdot\rangle_{*}$ presents it as an extension of $\mathbb{R}^\times$ by $\mathcal{H}$; the group of invertibles, its four components and its exponential parametrisation are treated in *Norm and Invertibility in the General Split-Complex Algebra* and *Split-Complex Exponential and Lie Group Structure*.
 
 ### The Unit Hyperbola
 
@@ -113,7 +113,7 @@ The parameter $\theta_{\mathrm{hpa}}$ is the **hyperbolic angle** of the unit $u
 
 ### Components and Polar Decomposition
 
-**Theorem.** The unit group has exactly four connected components, and
+**Theorem.** The group of invertibles has exactly four connected components, and
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2
@@ -125,9 +125,9 @@ $$
 Q = \rho\,\big(\sigma_+ \Pi_+ + \sigma_- \Pi_-\big)\exp(\theta_{\mathrm{hpa}} j).
 $$
 
-**Proof.** The map $Q \mapsto (Q_+, Q_-)$ is a ring isomorphism $\mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of unit groups, and $(Q^{-1})_\pm = Q_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence ${\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Q_+, Q_-)$ the identity component is $Q_+ > 0$, $Q_- > 0$, and the norm there is positive; transporting back through $\exp(\theta_{\mathrm{hpa}} j)$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Q_+ \rvert, \lvert Q_- \rvert$, written as the geometric mean $\rho$ and the ratio $\exp(2\theta_{\mathrm{hpa}})$, and the two signs $\sigma_\pm$.
+**Proof.** The map $Q \mapsto (Q_+, Q_-)$ is a ring isomorphism $\mathbb{C}_{\mathrm{spl}} \to \mathbb{R} \times \mathbb{R}$, hence restricts to an isomorphism of groups of invertibles, and $(Q^{-1})_\pm = Q_\pm^{-1}$. Each factor $\mathbb{R}^\times$ is $\mathbb{R}_{>0} \times \{\pm1\}$ through $t \mapsto (|t|, t/|t|)$. Hence ${\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}^2 \times (\mathbb{Z}/2)^2$, which has four components and is isomorphic to $\mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2)^2$ because $\mathbb{R}_{>0}^2 \cong \mathbb{R}_{>0} \times \mathbb{R}_{>0}$ and $\mathbb{R}_{>0} \cong \mathbb{R}$ by the logarithm. In the coordinates $(Q_+, Q_-)$ the identity component is $Q_+ > 0$, $Q_- > 0$, and the norm there is positive; transporting back through $\exp(\theta_{\mathrm{hpa}} j)$ gives the stated form. The factors of the isomorphism are the two moduli $\lvert Q_+ \rvert, \lvert Q_- \rvert$, written as the geometric mean $\rho$ and the ratio $\exp(2\theta_{\mathrm{hpa}})$, and the two signs $\sigma_\pm$.
 
-For non-zero $Q$, the factorisation $Q = \rho u$ with $\rho > 0$ and $\langle u\rangle_{*} = \pm 1$ is the **polar decomposition** of a split complex number, the analogue of $Q = \sqrt{\langle Q\rangle_{*}}\,u$ in the complex case, with the circle replaced by the union of the two hyperbolas $N = 1$ and $N = -1$. The unit group is not compact, because the branch $\mathcal{H}^+$ is a hyperbola, and it is abelian, as the multiplicative group of a commutative ring must be.
+For non-zero $Q$, the factorisation $Q = \rho u$ with $\rho > 0$ and $\langle u\rangle_{*} = \pm 1$ is the **polar decomposition** of a split complex number, the analogue of $Q = \sqrt{\langle Q\rangle_{*}}\,u$ in the complex case, with the circle replaced by the union of the two hyperbolas $N = 1$ and $N = -1$. The group of invertibles is not compact, because the branch $\mathcal{H}^+$ is a hyperbola, and it is abelian, as the multiplicative group of a commutative ring must be.
 
 ### The Branches as Orbits
 
@@ -137,7 +137,7 @@ For non-zero $Q$, the factorisation $Q = \rho u$ with $\rho > 0$ and $\langle u\
 
 ## Hyperbolic Rotations
 
-### Multiplication by a Norm-One Unit
+### Multiplication by a Norm-One Element
 
 **Definition.** For $u \in \mathcal{H}$ the **hyperbolic rotation** determined by $u$ is
 
@@ -365,7 +365,7 @@ $$
 
 and the second identity is $S_BS_uS_B^{-1} = S_BS_uS_B = R_{B\bar u}S_B = S_{B^2\bar u}$, because $S_B$ is an involution. Write $B = \epsilon \exp(\theta_{\mathrm{hpa}} j)$; then $B^2 = \exp(2\theta_{\mathrm{hpa}} j) \in \mathcal{H}^+$ has both idempotent coordinates positive, and $\bar u$ has the two idempotent coordinates of $u$ in the opposite order, so $B^2u$ and $B^2\bar u$ lie in the branch of $u$. Given $u, v \in \mathcal{H}^+$, the element $B = \sqrt{v/u}$ lies in $\mathcal{H}^+$ and satisfies $B^2u = v$, so the first identity conjugates $S_u$ to $S_v$; in particular each such $S_u$ is conjugate to $S_1$. The same argument inside $\mathcal{H}^-$ conjugates every $S_u$ there to $S_{-1}$. Since conjugation always preserves the branch of the parameter, the two sets are distinct, and they are the two conjugacy classes.
 
-In $O(2)$, where every unit is a square, the reflections form a single conjugacy class; here the two branches of $\mathcal{H}$ separate them, exactly as the two branches separate $SO(1,1)$ from $-SO(1,1)$.
+In $O(2)$, where every invertible element is a square, the reflections form a single conjugacy class; here the two branches of $\mathcal{H}$ separate them, exactly as the two branches separate $SO(1,1)$ from $-SO(1,1)$.
 
 ## The Orthogonal Group $O(1,1)$
 
@@ -420,9 +420,9 @@ So the rotation subgroup is normal and its complement is a single coset, the ext
 
 **Proposition.** The null cone $\{\langle Q\rangle_{*} = 0\}$ is the union of the two lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$; its non-zero elements are exactly the zero divisors of $\mathbb{C}_{\mathrm{spl}}$, and $\Pi_+$ and $\Pi_-$ are the primitive idempotents.
 
-**Proof.** $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when $Q_+ = 0$ or $Q_- = 0$; these are the lines spanned by $\Pi_-$ and $\Pi_+$ respectively. An element $B$ is a zero divisor exactly when it is not a unit, that is, when $\langle B\rangle_{*} = 0$, by the unit criterion.
+**Proof.** $\langle Q\rangle_{*} = Q_+Q_-$, which vanishes exactly when $Q_+ = 0$ or $Q_- = 0$; these are the lines spanned by $\Pi_-$ and $\Pi_+$ respectively. An element $B$ is a zero divisor exactly when it is not invertible, that is, when $\langle B\rangle_{*} = 0$, by the unit criterion.
 
-The cone is therefore at once the zero-divisor set, the complement of the unit group, the obstruction to the Cauchy integral formula. It is the locus common to the algebra, the analysis and the group theory of the plane.
+The cone is therefore at once the zero-divisor set, the complement of the group of invertibles, the obstruction to the Cauchy integral formula. It is the locus common to the algebra, the analysis and the group theory of the plane.
 
 ### The Sectors and the Action
 
@@ -446,7 +446,7 @@ The norm-one hyperbola $q^2 - q'^2 = 1$ has the two null lines as asymptotes; it
 
 ## Comparison with the Complex Case
 
-The two theories are the positive-definite and indefinite cases of the same construction: the unit group of the norm acting on the plane by multiplication.
+The two theories are the positive-definite and indefinite cases of the same construction: the group of invertibles of the norm acting on the plane by multiplication.
 
 | Property | Complex | Split complex |
 |---|---|---|
@@ -463,11 +463,11 @@ The two theories are the positive-definite and indefinite cases of the same cons
 | Orthogonal group | $O(2) \cong \mathrm{U}(1) \rtimes \mathbb{Z}/2$, two components | $O(1,1) \cong SO(1,1) \rtimes \mathbb{Z}/2$, four components |
 | Trace of a rotation matrix | $2\cos\theta \in [-2,2]$ | $2\cosh\theta_{\mathrm{hpa}} \geq 2$ |
 
-The complex rotation group is compact and the angle is periodic, so a rotation is described by a point of a circle; the split rotation group is a line and the angle is a real parameter. In both cases multiplication by a unit, rather than conjugation by it, is the natural action of a commutative algebra on itself, and in both cases the reflections are the anti-linear isometries $Q \mapsto u\bar Q$; what differs is the shape of the unit set, and hence the topology and the type of the group. One further contrast belongs here: an isometry of the Euclidean plane is a translation composed with a linear isometry, whereas the indefinite form admits no translation at all, since $\langle Q+b\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ gives $2g(Q,b) + \langle b\rangle_{*} = 0$ for all $Q$, hence $g(Q,b) = 0$ for all $Q$ and $b = 0$ by non-degeneracy of $g$. The isometry group of $\langle\cdot,\cdot\rangle_{*}$ is therefore the linear group $O(1,1)$ itself.
+The complex rotation group is compact and the angle is periodic, so a rotation is described by a point of a circle; the split rotation group is a line and the angle is a real parameter. In both cases multiplication by an invertible element, rather than conjugation by it, is the natural action of a commutative algebra on itself, and in both cases the reflections are the anti-linear isometries $Q \mapsto u\bar Q$; what differs is the shape of the unit set, and hence the topology and the type of the group. One further contrast belongs here: an isometry of the Euclidean plane is a translation composed with a linear isometry, whereas the indefinite form admits no translation at all, since $\langle Q+b\rangle_{*} = \langle Q\rangle_{*}$ for all $Q$ gives $2g(Q,b) + \langle b\rangle_{*} = 0$ for all $Q$, hence $g(Q,b) = 0$ for all $Q$ and $b = 0$ by non-degeneracy of $g$. The isometry group of $\langle\cdot,\cdot\rangle_{*}$ is therefore the linear group $O(1,1)$ itself.
 
 ## Summary
 
-The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of signature $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **unit group** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
+The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of signature $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **group of invertibles** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
 
 The **unit hyperbola** $\mathcal{H} = \{\langle Q\rangle_{*} = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = \exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Q) = uQ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Q_+, Q_-) \mapsto (\exp(\theta_{\mathrm{hpa}})Q_+, \exp(-\theta_{\mathrm{hpa}})Q_-)$, a squeeze that preserves the product $Q_+Q_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\theta_{\mathrm{hpa}}$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathrm{SO}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
 
@@ -486,14 +486,14 @@ The **reflection** $S_u(Q) = u\bar Q$ has determinant $-1$, is an involution, fi
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |
 | $Q = Q_+\Pi_+ + Q_-\Pi_-$, $Q_+ = q+q'$, $Q_- = q-q'$ | Idempotent decomposition and coordinates |
-| ${\mathbb{C}_{\mathrm{spl}}}^\times$, $\mathbb{R}^\times$ | Unit groups of $\mathbb{C}_{\mathrm{spl}}$ and of $\mathbb{R}$; $\mathbb{R}_{>0}$ the positive reals |
+| ${\mathbb{C}_{\mathrm{spl}}}^\times$, $\mathbb{R}^\times$ | Groups of invertibles of $\mathbb{C}_{\mathrm{spl}}$ and of $\mathbb{R}$; $\mathbb{R}_{>0}$ the positive reals |
 | $\mathbb{Z}/2\mathbb{Z}$, $\rtimes$ | The two-element group, and the semidirect product |
 | $O(1,1)$ | Orthogonal group of $\langle\cdot,\cdot\rangle_{*}$ |
 | $SO(1,1)$, $SO^+(1,1)$ | Determinant-one subgroup and its identity component |
 | $\mathcal{H} = \{\langle Q\rangle_{*} = 1\}$, $\mathcal{H}^\pm$ | Unit hyperbola and its two branches |
 | $\theta_{\mathrm{hpa}}$ | Hyperbolic angle (the rapidity), defined on all of $\mathcal{H}$ |
-| $\epsilon = \pm 1$ | Branch sign of a unit, $u = \epsilon\, \exp(\theta_{\mathrm{hpa}} j)$; a second unit's sign is written $\eta$ |
-| $\sigma_\pm = \operatorname{sgn} Q_\pm$ | Signs of the idempotent coordinates of a unit |
+| $\epsilon = \pm 1$ | Branch sign of an invertible element, $u = \epsilon\, \exp(\theta_{\mathrm{hpa}} j)$; a second unit's sign is written $\eta$ |
+| $\sigma_\pm = \operatorname{sgn} Q_\pm$ | Signs of the idempotent coordinates of an invertible element |
 | $\exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$ | Split exponential of an angle |
 | $R_u(Q) = uQ$ | Hyperbolic rotation determined by $u$ |
 | $M_{\mathrm{hpa},\theta} = \begin{pmatrix}\cosh\theta_{\mathrm{hpa}} & \sinh\theta_{\mathrm{hpa}}\\ \sinh\theta_{\mathrm{hpa}} & \cosh\theta_{\mathrm{hpa}}\end{pmatrix}$ | Matrix of $R_{\exp(\theta_{\mathrm{hpa}} j)}$ |

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This article introduces the theory of groups, the algebraic structures that formalize the notion of **symmetry**. A group is a set equipped with a single binary operation that is associative, has an identity element, and in which every element is invertible. Groups describe the symmetries of geometric figures, the permutations of a finite set, the invertible linear transformations of a vector space, and the units of a ring or algebra.
+This article introduces the theory of groups, the algebraic structures that formalize the notion of **symmetry**. A group is a set equipped with a single binary operation that is associative, has an identity element, and in which every element is invertible. Groups describe the symmetries of geometric figures, the permutations of a finite set, the invertible linear transformations of a vector space, and the invertibles of a ring or algebra.
 
-The treatment is introductory and purely mathematical. We assume familiarity with sets, functions, and the basic theory of rings and algebras from *Rings: A General Introduction* and *Algebras: A General Introduction*. Rings carry two operations and algebras add a product; a group carries one. Every ring $(R, +, \cdot)$ contains the additive group $(R, +)$ and the group of units $(R^\times, \cdot)$, and every unital associative algebra $A$ has a group of units $A^\times$.
+The treatment is introductory and purely mathematical. We assume familiarity with sets, functions, and the basic theory of rings and algebras from *Rings: A General Introduction* and *Algebras: A General Introduction*. Rings carry two operations and algebras add a product; a group carries one. Every ring $(R, +, \cdot)$ contains the additive group $(R, +)$ and the group of invertibles $(R^\times, \cdot)$, and every unital associative algebra $A$ has a group of invertibles $A^\times$.
 
 We begin with the definition and elementary properties of groups, then develop the fundamental constructions: subgroups, homomorphisms, cosets, quotient groups, and group actions. We then study the standard classes of groups (cyclic, symmetric, alternating, dihedral, matrix, and quaternion group) and the two structure theorems that organize the theory, the Sylow theorems for finite groups and the classification of finitely generated abelian groups.
 
@@ -30,7 +30,7 @@ called **multiplication** or **composition**, satisfying the following axioms.
 
 A group is **abelian** (or **commutative**) if $a b = b a$ for all $a, b \in G$; in that case the operation is often written additively as $a + b$, with identity $0$ and inverse $-a$. The **order** of a group, written $|G|$, is the cardinality of its underlying set, and $G$ is **finite** if $|G|$ is finite.
 
-**Examples.** The additive groups $(\mathbb{Z}, +)$ and $(\mathbb{Z}/n\mathbb{Z}, +)$, the latter of order $n$, are abelian; $\mathbb{Z} \setminus \{0\}$ is not a group under multiplication, since only $\pm 1$ are invertible in $\mathbb{Z}$. The **symmetric group** $S_n$ of bijections of $\{1, \ldots, n\}$ has order $n!$ and is nonabelian for $n \geq 3$, and the **general linear group** $GL_n(F)$ of invertible matrices over a field $F$ is a group. For any ring $R$, the units $R^\times$ form a group.
+**Examples.** The additive groups $(\mathbb{Z}, +)$ and $(\mathbb{Z}/n\mathbb{Z}, +)$, the latter of order $n$, are abelian; $\mathbb{Z} \setminus \{0\}$ is not a group under multiplication, since only $\pm 1$ are invertible in $\mathbb{Z}$. The **symmetric group** $S_n$ of bijections of $\{1, \ldots, n\}$ has order $n!$ and is nonabelian for $n \geq 3$, and the **general linear group** $GL_n(F)$ of invertible matrices over a field $F$ is a group. For any ring $R$, the invertibles $R^\times$ form a group.
 
 ## 2. Elementary Properties
 
@@ -406,7 +406,7 @@ The cyclic groups of prime order are the abelian simple groups. The Sylow theore
 
 ## 22. Groups in the Wider Corpus
 
-The **group of units** $R^\times$ of a ring is a group under multiplication, recovering $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$, the multiplicative groups $F^\times$ of fields, and $M_n(F)^\times = GL_n(F)$.
+The **group of invertibles** $R^\times$ of a ring is a group under multiplication, recovering $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$, the multiplicative groups $F^\times$ of fields, and $M_n(F)^\times = GL_n(F)$.
 
 ---
 
@@ -416,7 +416,7 @@ A group is a set with a single associative binary operation, an identity element
 
 The article then develops the structural theory. The centre, the commutator subgroup and the abelianization measure how far a group is from abelian. Group actions, with their orbits and stabilizers, give the orbit–stabilizer theorem; the conjugation action gives the conjugacy classes and the class equation, from which the theory of $p$-groups follows. The Sylow theorems describe the subgroups of prime-power order of a finite group, and the cyclic, symmetric and alternating, and dihedral groups are the worked families.
 
-The article closes with the constructions and the classification results: direct and semidirect products, the structure theorem for finitely generated abelian groups, free groups and presentations, and the matrix groups together with the quaternion group $Q_8$. The section on group classes gathers the standard examples in a table, and the final section places the group of units of a ring, and the groups of the wider corpus, in this setting.
+The article closes with the constructions and the classification results: direct and semidirect products, the structure theorem for finitely generated abelian groups, free groups and presentations, and the matrix groups together with the quaternion group $Q_8$. The section on group classes gathers the standard examples in a table, and the final section places the group of invertibles of a ring, and the groups of the wider corpus, in this setting.
 
 ## Further Reading
 

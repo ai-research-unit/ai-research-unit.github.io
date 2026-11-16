@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The units of the endomorphism algebra act on it by conjugation, $X \mapsto aXa^{-1}$, and this **adjoint action** is the module-level form of the signed inner conjugation; on a graded module over the graded algebra $E = E_0\oplus E_1$ it is compatible with the gradings when the conjugating element is homogeneous, and the compatibility is the statement that conjugation by an even element preserves the two parts of the module while conjugation by an odd element preserves them up to the parity. This article records the adjoint action, its compatibility with the grading, its form on a graded module, and the sign rule, which belongs to the graded category and is deferred.
+The invertibles of the endomorphism algebra act on it by conjugation, $X \mapsto aXa^{-1}$, and this **adjoint action** is the module-level form of the signed inner conjugation; on a graded module over the graded algebra $E = E_0\oplus E_1$ it is compatible with the gradings when the conjugating element is homogeneous, and the compatibility is the statement that conjugation by an even element preserves the two parts of the module while conjugation by an odd element preserves them up to the parity. This article records the adjoint action, its compatibility with the grading, its form on a graded module, and the sign rule, which belongs to the graded category and is deferred.
 
 *Involutions of a Graded Linear Space* supplies the grading of $E$ and the parity of endomorphisms; *The Graded Action on a Module over a Linear Space* supplies the graded module and the compatible action; *The Signed Two-Sided Operator on a Linear Space* supplies the signed inner conjugation $\mathrm{Ad}_a\circ\alpha$, of which the adjoint action is the case $\alpha=\mathrm{id}$. *Superalgebras and Graded Structures* owns the sign rule of the graded commutator, named here and not used.
 
@@ -36,11 +36,11 @@ $$
 
 **Proof.** The identity is the equivalent form of the compatibility; the parity statement is the same computation as for the algebra.
 
-**Remark (the deferred sign rule).** The adjoint action itself carries no sign; the bracket $[X,Y]=XY-YX$ is the infinitesimal form of the adjoint action of the unit group on $E$, and the **graded** bracket $[X,Y]=XY-(-1)^{|X||Y|}YX$, with the sign governed by the parities, belongs to *Superalgebras and Graded Structures*. It is named here because the graded operator articles refer to it, and it is not defined or used.
+**Remark (the deferred sign rule).** The adjoint action itself carries no sign; the bracket $[X,Y]=XY-YX$ is the infinitesimal form of the adjoint action of the group of invertibles on $E$, and the **graded** bracket $[X,Y]=XY-(-1)^{|X||Y|}YX$, with the sign governed by the parities, belongs to *Superalgebras and Graded Structures*. It is named here because the graded operator articles refer to it, and it is not defined or used.
 
 ## Summary
 
-The units of $E = \operatorname{End}_F(V)$ act on $E$ and on a graded $E$-module $M$ by the adjoint action $\mathrm{Ad}_a(X)=aXa^{-1}$, a homomorphism $E^{\times}\to\operatorname{Aut}(E)$ with kernel the centre, which is the case $\alpha=\mathrm{id}$ of the signed inner conjugation. The adjoint action commutes with the grade involution, and hence preserves the graded parts, exactly when $a^{-1}\alpha(a)$ is central, which holds for every homogeneous $a$; conjugation by a homogeneous element therefore preserves parity. On the graded module the adjoint action satisfies the compatibility identity $\beta(a\cdot m)=(-1)^i a\cdot\beta(m)$ for $a$ of parity $i$. The graded commutator and its sign rule are *Superalgebras and Graded Structures*.
+The invertibles of $E = \operatorname{End}_F(V)$ act on $E$ and on a graded $E$-module $M$ by the adjoint action $\mathrm{Ad}_a(X)=aXa^{-1}$, a homomorphism $E^{\times}\to\operatorname{Aut}(E)$ with kernel the centre, which is the case $\alpha=\mathrm{id}$ of the signed inner conjugation. The adjoint action commutes with the grade involution, and hence preserves the graded parts, exactly when $a^{-1}\alpha(a)$ is central, which holds for every homogeneous $a$; conjugation by a homogeneous element therefore preserves parity. On the graded module the adjoint action satisfies the compatibility identity $\beta(a\cdot m)=(-1)^i a\cdot\beta(m)$ for $a$ of parity $i$. The graded commutator and its sign rule are *Superalgebras and Graded Structures*.
 
 ## Summary of Notation
 

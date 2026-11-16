@@ -225,7 +225,7 @@ The first member is the **fundamental doublet**: the representation $\tau^{\frac
 
 On the fundamental doublet the Bhabha equation is the Dirac equation. At that member the carrier is the algebra itself, so the field is an element of $\mathbb{B}$ and the equation is written on the element; no carrier is introduced beside it.
 
-**The two values.** The subscript of an element is its chirality, and it takes two values and no more: an element is written $\tilde{Ξ}_{L}$ or $\tilde{Ξ}_{R}$, the $L$ value and the $R$ value, and only the zero element carries both. The subscript belongs to the element and not to the field alone: a unit and a general element carry it as well.
+**The two values.** The subscript of an element is its chirality, and it takes two values and no more: an element is written $\tilde{Ξ}_{L}$ or $\tilde{Ξ}_{R}$, the $L$ value and the $R$ value, and only the zero element carries both. The subscript belongs to the element and not to the field alone: An invertible element and a general element carry it as well.
 
 **The equation.** On the element $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ the equation is the pair
 

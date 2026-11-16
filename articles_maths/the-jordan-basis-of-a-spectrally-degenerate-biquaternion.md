@@ -99,9 +99,9 @@ $$
 \Sigma_{00}=\mathcal S\cap\mathcal N=\{Q_t=0\},
 $$
 
-and on the sector the three conditions "$\det\tilde Q\neq0$", "$Q_t\neq0$" and "$\tilde Q$ is a unit with repeated eigenvalue" are equivalent.
+and on the sector the three conditions "$\det\tilde Q\neq0$", "$Q_t\neq0$" and "$\tilde Q$ is invertible with repeated eigenvalue" are equivalent.
 
-*Proof.* By the theorem, $\det\tilde Q=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of *Zero Divisors and Units*, which identifies $\det\tilde Q\neq0$ with invertibility. ∎
+*Proof.* By the theorem, $\det\tilde Q=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of *Zero Divisors and Invertibles*, which identifies $\det\tilde Q\neq0$ with invertibility. ∎
 
 **Corollary (both kinds of element).** The sector contains units and zero divisors. Its unit half is $\Sigma_{10}$; its zero-divisor half is $\Sigma_{00}\setminus\{0\}$, the nilpotent stratum. Hence spectral degeneracy is not a form of non-invertibility: every element of $\Sigma_{10}$ is invertible, with inverse
 
@@ -135,7 +135,7 @@ the **scalar**, **nilpotent** and **unipotent** strata. The union $\mathcal S^{\
 | **nilpotent** | $\vec Q\neq0$, $Q_t=0$ | $\vec Q$, with $\vec Q^2=0$ | $X^2$ | $2$ | $\mathbb{C}[\vec Q]$ | $0$ |
 | **unipotent** | $\vec Q\neq0$, $Q_t\neq0$ | $Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon=\vec Q/Q_t$ | $(X-Q_t)^2$ | $4$ | $\mathbb{C}[\vec Q]$ | $Q_t^2$ |
 
-*Proof.* The scalar stratum is immediate: the element is central, with the stated minimal polynomial, and left multiplication is $Q_t\,\mathrm{id}$, of rank $4$, or zero at the origin. On the other two strata $\vec Q^2=0$ and $\vec Q\neq0$, so $\tilde Q-Q_te_t$ is non-zero with square zero; the minimal polynomial is $(X-Q_t)^2$ and the centraliser is that of $\vec Q$, the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, of complex dimension two. On the nilpotent stratum the element is a non-zero square-zero element, not a unit, and its minimal polynomial is $X^2$; on the unipotent stratum $u=e_t+\vec\Upsilon$ is unipotent, so $\tilde Q=Q_tu$ is a unit with inverse $Q_t^{-1}(e_t-\vec\Upsilon)$. Left multiplication by a non-zero square-zero element has image contained in its kernel, and both spaces have complex dimension two, so the rank is two; on the units the rank is four. ∎
+*Proof.* The scalar stratum is immediate: the element is central, with the stated minimal polynomial, and left multiplication is $Q_t\,\mathrm{id}$, of rank $4$, or zero at the origin. On the other two strata $\vec Q^2=0$ and $\vec Q\neq0$, so $\tilde Q-Q_te_t$ is non-zero with square zero; the minimal polynomial is $(X-Q_t)^2$ and the centraliser is that of $\vec Q$, the dual numbers $\mathbb{C}[\vec Q]=\{ae_t+b\vec Q\}$, of complex dimension two. On the nilpotent stratum the element is a non-zero square-zero element, not an invertible element, and its minimal polynomial is $X^2$; on the unipotent stratum $u=e_t+\vec\Upsilon$ is unipotent, so $\tilde Q=Q_tu$ is invertible with inverse $Q_t^{-1}(e_t-\vec\Upsilon)$. Left multiplication by a non-zero square-zero element has image contained in its kernel, and both spaces have complex dimension two, so the rank is two; on the invertibles the rank is four. ∎
 
 **Corollary (the spectral behaviour).** The spectral data are collected in the table.
 
@@ -207,7 +207,7 @@ Under $\mathsf{M}_2$ of *$M_2(\mathbb{C})$ Pauli Representation* the sector beco
 
 **Proposition (diagonalisability).** An element of the sector is diagonalisable exactly when it lies on the scalar line. Off that line the minimal polynomial is $(X-Q_t)^2$, of degree two, while the characteristic polynomial has the same two roots; the matrix is a single Jordan block.
 
-**Remark (not a determinantal variety).** The null cone is the determinantal variety of rank at most one, so the rank is a complete invariant of it. The spectral-degenerate sector is not of that kind: it contains matrices of rank two (the units of $\Sigma_{10}$), of rank one (the nilpotents) and of rank zero (the origin). Its defining equation is the discriminant, not a rank condition, and its strata are distinguished by the minimal polynomial and the scalar part rather than by the rank alone.
+**Remark (not a determinantal variety).** The null cone is the determinantal variety of rank at most one, so the rank is a complete invariant of it. The spectral-degenerate sector is not of that kind: it contains matrices of rank two (the invertibles of $\Sigma_{10}$), of rank one (the nilpotents) and of rank zero (the origin). Its defining equation is the discriminant, not a rank condition, and its strata are distinguished by the minimal polynomial and the scalar part rather than by the rank alone.
 
 ## The Frame on the Sector
 
@@ -663,8 +663,8 @@ The four sectors are collected in the table.
 - **A flag survives, and a complement is chosen.** The canonical objects are the line $\mathbb{C}\vec Q$, the plane $\vec Q^{\perp}$, the kernel–image space $\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}$, and the two flags they form. A complement of the line inside the kernel is not canonical; an adapted frame supplies one.
 - **A Jordan basis replaces the eigenbasis.** An adapted frame supplies two idempotents and two generators, and the quadruple $\mathcal{J}(\tilde Q)$ is determined by the frame. In it the left and the right actions are each two Jordan blocks $J_2(Q_t)$, with different pairings, and every biquaternion has a unique expansion.
 - **The truncated exponential survives.** On the sector the exponential is polynomial, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, and it maps the whole sector into its unit half $\Sigma_{10}$.
-- **The determinant is the square of the eigenvalue.** On the sector $\det\tilde Q=Q_t^2$, so the determinant restricted to the sector is the partition by the scalar part, and the sector is split into a unit half and a zero-divisor half by one complex number.
-- **Spectral degeneracy is not non-invertibility.** $\Sigma_{10}$ consists of units; the scalar line is semisimple; only the Jordan part is defective. The sector is the discriminant locus, not the zero-divisor set and not the set of non-diagonalisable elements.
+- **The determinant is the square of the eigenvalue.** On the sector $\det\tilde Q=Q_t^2$, so the determinant restricted to the sector is the partition by the scalar part, and the sector is split into an invertible element half and a zero-divisor half by one complex number.
+- **Spectral degeneracy is not non-invertibility.** $\Sigma_{10}$ consists of invertibles; the scalar line is semisimple; only the Jordan part is defective. The sector is the discriminant locus, not the zero-divisor set and not the set of non-diagonalisable elements.
 - **The sector is not a subalgebra.** It is a cone closed under scalars and, on its unit half, under inversion; it is closed under neither addition nor multiplication, and the exponential of a nilpotent is a unipotent outside the zero-divisor half.
 
 ## The Two Sector Articles as Specialisations
@@ -706,7 +706,7 @@ Here $\lambda_\pm=Q_t\pm iB$ are the two eigenvalues, $J_2(Q_t)=\begin{pmatrix}Q
 
 The spectrally degenerate sector is the set $\mathcal S=\{B^2=0\}$ on which the two eigenvalues of a biquaternion coincide. It is a complex cone of complex dimension three and real dimension six, the product of the scalar line and the isotropic cone of the vector subspace, singular exactly along the scalar line and smooth off it. It is connected, closed, of empty interior, and it is the boundary of the sector on which the eigenbasis exists; it is also the domain of the Jordan basis.
 
-The determinant restricted to the sector is the square of the scalar part, $\det\tilde Q=Q_t^2$. This one identity splits the sector into the unit half $\Sigma_{10}=\{Q_t\neq0\}$ and the zero-divisor half $\Sigma_{00}=\{Q_t=0\}$, and it shows that spectral degeneracy and degeneracy of the product are independent: the unipotent stratum consists of units with a repeated eigenvalue, while the idempotent $\tfrac12(e_t+i\vec u)$ is a zero divisor with distinct eigenvalues.
+The determinant restricted to the sector is the square of the scalar part, $\det\tilde Q=Q_t^2$. This one identity splits the sector into the unit half $\Sigma_{10}=\{Q_t\neq0\}$ and the zero-divisor half $\Sigma_{00}=\{Q_t=0\}$, and it shows that spectral degeneracy and degeneracy of the product are independent: the unipotent stratum consists of invertibles with a repeated eigenvalue, while the idempotent $\tfrac12(e_t+i\vec u)$ is a zero divisor with distinct eigenvalues.
 
 The sector has three strata. The scalar line is central and semisimple; the nilpotent stratum is the single similarity class of $J_2(0)$; the unipotent stratum is, for each scalar part, the single similarity class of $J_2(Q_t)$. On the two defective strata the minimal polynomial is $(X-Q_t)^2$, the eigenspace has dimension two, and there is no spectral decomposition and no eigenbasis. An adapted frame supplies a pair of idempotents and a pair of generators, and the quadruple $\mathcal{J}(\tilde Q)$ is a Jordan basis: the left and the right actions are each two blocks $J_2(Q_t)$, with different pairings, the four vectors are the matrix units of the coordinate model, and every biquaternion has a unique expansion. The exponential truncates, and the sector is closed under neither addition nor multiplication.
 

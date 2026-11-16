@@ -17,7 +17,7 @@ Throughout, $G$ is a topological group, Hausdorff when a closedness statement is
 
 **Proof.** The composite of two continuous maps is continuous, and composition is associative with identity $\mathrm{id}$; a continuous map with a continuous inverse is by definition a homeomorphism, and a homeomorphism is continuous and invertible in the monoid.
 
-The passage from the monoid to its group of units is the first structural statement of the operator layer: an operator is **invertible** exactly when it is a homeomorphism, which is the topological form of the algebraic statement that a bijective operator is a permutation.
+The passage from the monoid to its group of invertibles is the first structural statement of the operator layer: an operator is **invertible** exactly when it is a homeomorphism, which is the topological form of the algebraic statement that a bijective operator is a permutation.
 
 **Definition.** A **continuous automorphism** of $G$ is a group automorphism that is continuous; the continuous automorphisms form a subgroup $\operatorname{Aut}_c(G)$ of $\operatorname{Aut}(G)$ and a subgroup of $\operatorname{Homeo}(G)$. The **inner automorphisms** $\operatorname{Ad}_g(x) = gxg^{-1}$ form a normal subgroup $\operatorname{Inn}(G) \subseteq \operatorname{Aut}_c(G)$.
 
@@ -109,7 +109,7 @@ A continuous operator on a topological group is a continuous self-map, the inver
 |---|---|
 | $G$, $e$, $\iota$ | a topological group, its identity, and the inversion $\iota(g) = g^{-1}$ |
 | $\operatorname{Map}_c(G)$ | the monoid of continuous self-maps of $G$ |
-| $\operatorname{Homeo}(G)$ | the group of homeomorphisms of $G$, the units of $\operatorname{Map}_c(G)$ |
+| $\operatorname{Homeo}(G)$ | the group of homeomorphisms of $G$, the invertibles of $\operatorname{Map}_c(G)$ |
 | $\operatorname{Aut}(G)$, $\operatorname{Aut}_c(G)$ | all automorphisms, and the continuous ones |
 | $\operatorname{Inn}(G)$, $\operatorname{Ad}_g$ | the inner automorphisms and $\operatorname{Ad}_g(x) = gxg^{-1}$ |
 | $L_a$, $R_b$ | left translation $x \mapsto ax$ and right translation $x \mapsto xb$, both homeomorphisms |

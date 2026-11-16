@@ -134,7 +134,7 @@ The two idempotent lines are isotropic for the Hermitian form and for the split 
 
 ### The Isotropic Lines
 
-A line is **isotropic** for $H$ when the form vanishes on its square. The two idempotent lines are isotropic, and they are the only ones: $H(Q,Q)=q^2-q'^2$ vanishes exactly when $q^2=q'^2$, which is $Q\in\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ (*Zero Divisors of the Split-Complex Algebra*). The isotropic set is therefore a pair of lines and not a point, and it is exactly the set of non-units with the origin adjoined.
+A line is **isotropic** for $H$ when the form vanishes on its square. The two idempotent lines are isotropic, and they are the only ones: $H(Q,Q)=q^2-q'^2$ vanishes exactly when $q^2=q'^2$, which is $Q\in\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ (*Zero Divisors of the Split-Complex Algebra*). The isotropic set is therefore a pair of lines and not a point, and it is exactly the set of non-invertibles with the origin adjoined.
 
 The lines are also the two Peirce components, so the isotropic set is the union of the two minimal ideals. This coincidence is special to dimension two: in a higher-dimensional algebra the null set is larger than the union of the minimal ideals.
 

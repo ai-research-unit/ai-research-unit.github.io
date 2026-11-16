@@ -152,7 +152,7 @@ An involution of a module acts on its endomorphisms by conjugation, an algebra a
 
 ## Further Reading
 
-- Serge Lang, *Algebra* (Springer, revised 3rd ed. 2002), for the algebra of endomorphisms, the conjugation by a unit and the eigenspace decomposition of an involution.
+- Serge Lang, *Algebra* (Springer, revised 3rd ed. 2002), for the algebra of endomorphisms, the conjugation by an invertible element and the eigenspace decomposition of an involution.
 - Saunders Mac Lane and Garrett Birkhoff, *Algebra* (Macmillan, 1967; 3rd ed. Chelsea, 1988), for the structure of the commutant and the decomposition of an operator under an inner automorphism of order two.
 - Nicolas Bourbaki, *Algebra I* (Springer, 1998), for bilinear forms, the adjoint anti-automorphism and the self-adjoint and anti-self-adjoint operators.
 - Paul M. Cohn, *Algebra*, Vol. 2, 2nd ed. (Wiley, 1989), for the adjoint with respect to a form, the sesquilinear case and the unitary operators.

@@ -123,13 +123,13 @@ and it is an involution of the algebra exactly when $a+\alpha(a)$ is central.
 
 ### The Relation to the Two-Sided Operator
 
-**Theorem.** In the enveloping algebra $\mathrm{U}(\mathrm{G})$ the signed two-sided operator with the pair of a unit $u$ and its inverse $u^{-1}$ is the signed conjugation,
+**Theorem.** In the enveloping algebra $\mathrm{U}(\mathrm{G})$ the signed two-sided operator with the pair of an invertible element $u$ and its inverse $u^{-1}$ is the signed conjugation,
 
 $$
 \boxed{\;\Sigma^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1} = \rho_u(x)\;} ,
 $$
 
-and on the Lie algebra the restriction of this operator to $\mathrm{G}$ is the signed conjugation by $\exp a$ when $u = \exp a$. Hence the pair of a unit and its inverse is the carrying pair of a reflection, and the reflections of the next article are the signed two-sided operators whose carrying pair is inverse.
+and on the Lie algebra the restriction of this operator to $\mathrm{G}$ is the signed conjugation by $\exp a$ when $u = \exp a$. Hence the pair of an invertible element and its inverse is the carrying pair of a reflection, and the reflections of the next article are the signed two-sided operators whose carrying pair is inverse.
 
 *Proof.* In the enveloping algebra the signed two-sided operator is $\Sigma^{\alpha}_{u,v}(x) = u\alpha(x)v$, and with $v = u^{-1}$ it is $u\alpha(x)u^{-1} = \rho_u$; the group element $\exp a$ acts on $\mathrm{G}$ through the adjoint representation $\operatorname{Ad}_{\exp a} = \exp(\operatorname{ad}_a)$, so the restriction to the algebra is the signed conjugation. The infinitesimal form of the family at $u = e$ is the signed left multiplication, computed in the next article.
 

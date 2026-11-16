@@ -112,19 +112,19 @@ The two-sided space is therefore the image of the **enveloping algebra** $A \oti
 
 ### The Invertible Two-Sided Operators
 
-**Theorem.** Let $A$ be finite-dimensional over $k$. The two-sided operator $L_{a}R_{b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
+**Theorem.** Let $A$ be finite-dimensional over $k$. The two-sided operator $L_{a}R_{b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are invertible in $A$, and then
 
 $$
 \boxed{\;L_{a}R_{b}^{-1} = L_{a^{-1}}R_{\, b^{-1}}\;} .
 $$
 
-*Proof.* If $a$ and $b$ are units, the composition rule gives $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}} = L_{1}R_{1}$ and $L_{a^{-1}}R_{b^{-1}}L_{a}R_{b} = L_{1}R_{1}$. Conversely suppose $L_{a}R_{b} = L(a)R(b)$ invertible; then $L(a)$ is surjective and $R(b)$ is injective. Since $A$ is finite-dimensional, $R(b)$ is bijective, so there is $c$ with $R(b)(c) = cb = 1$, and an element with a one-sided inverse in a finite-dimensional algebra is a unit; hence $b$ is a unit. Then $L(a) = L_{a}R_{b}R(b)^{-1}$ is invertible, so $a$ is a unit as well.
+*Proof.* If $a$ and $b$ are invertible, the composition rule gives $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}} = L_{1}R_{1}$ and $L_{a^{-1}}R_{b^{-1}}L_{a}R_{b} = L_{1}R_{1}$. Conversely suppose $L_{a}R_{b} = L(a)R(b)$ invertible; then $L(a)$ is surjective and $R(b)$ is injective. Since $A$ is finite-dimensional, $R(b)$ is bijective, so there is $c$ with $R(b)(c) = cb = 1$, and an element with a one-sided inverse in a finite-dimensional algebra is invertible; hence $b$ is invertible. Then $L(a) = L_{a}R_{b}R(b)^{-1}$ is invertible, so $a$ is invertible as well.
 
-**Corollary.** For a unit $u$ the two-sided operator $L_{u}R_{u^{-1}}$ is the **inner automorphism** $\iota_u(x) = uxu^{-1}$ of *Automorphisms and Derivations of Algebras*, and the map $u \mapsto L_{u}R_{u^{-1}}$ has kernel $Z(A)^\times$. Hence the inner automorphisms are exactly the two-sided operators whose two elements are inverse to one another, and they form the quotient $A^\times/Z(A)^\times$ of the unit group.
+**Corollary.** For an invertible element $u$ the two-sided operator $L_{u}R_{u^{-1}}$ is the **inner automorphism** $\iota_u(x) = uxu^{-1}$ of *Automorphisms and Derivations of Algebras*, and the map $u \mapsto L_{u}R_{u^{-1}}$ has kernel $Z(A)^\times$. Hence the inner automorphisms are exactly the two-sided operators whose two elements are inverse to one another, and they form the quotient $A^\times/Z(A)^\times$ of the group of invertibles.
 
-*Proof.* The identity $L_{u}R_{u^{-1}}(x) = uxu^{-1} = \iota_u(x)$ is the definition, and $\iota_u$ is an algebra automorphism by the cited article. The two-sided operator $L_{u}R_{u^{-1}}$ is the identity operator exactly when $ux = xu$ for every $x$, that is when $u$ is central; with $u$ a unit this is $u \in Z(A)^\times$.
+*Proof.* The identity $L_{u}R_{u^{-1}}(x) = uxu^{-1} = \iota_u(x)$ is the definition, and $\iota_u$ is an algebra automorphism by the cited article. The two-sided operator $L_{u}R_{u^{-1}}$ is the identity operator exactly when $ux = xu$ for every $x$, that is when $u$ is central; with $u$ an invertible element this is $u \in Z(A)^\times$.
 
-**Remark.** The invertible two-sided operators form the group $A^\times \times A^\times$ under $(u,v) \mapsto L_{u}R_{v}$, with composition $L_{u}R_{v}L_{u'}R_{v'} = L_{uu'}R_{v'v}$; it acts on $A$ by $(u,v) \cdot x = u x v$, and it contains the inner automorphisms as the subgroup of pairs with $v = u^{-1}$. This is the operator reading of the group of units.
+**Remark.** The invertible two-sided operators form the group $A^\times \times A^\times$ under $(u,v) \mapsto L_{u}R_{v}$, with composition $L_{u}R_{v}L_{u'}R_{v'} = L_{uu'}R_{v'v}$; it acts on $A$ by $(u,v) \cdot x = u x v$, and it contains the inner automorphisms as the subgroup of pairs with $v = u^{-1}$. This is the operator reading of the group of invertibles.
 
 ## The Associator
 
@@ -222,7 +222,7 @@ The degenerate two-sided operator is the operator form of the two-sided zero div
 
 ## Summary
 
-The two-sided operator is the operator $L_{a}R_{b}(x) = axb$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $L_{1}R_{a} = R(a)$, $L_{a}R_{1} = L(a)$ and $L_{a}R_{b}(1) = ab$. In an associative algebra it has the two equal factorisations $L_{a}R_{b} = L(a)R(b) = R(b)L(a)$, and the two-sided operators compose by $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, so that $a \otimes b \mapsto L_{a}R_{b}$ is a $k$-algebra homomorphism $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ onto the two-sided space. A two-sided operator is invertible exactly when both its elements are units, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$, and $L_{u}R_{u^{-1}}$ is the inner automorphism $\iota_u$; the inner automorphisms are thus the invertible two-sided operators with inverse factors.
+The two-sided operator is the operator $L_{a}R_{b}(x) = axb$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $L_{1}R_{a} = R(a)$, $L_{a}R_{1} = L(a)$ and $L_{a}R_{b}(1) = ab$. In an associative algebra it has the two equal factorisations $L_{a}R_{b} = L(a)R(b) = R(b)L(a)$, and the two-sided operators compose by $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{db}$, so that $a \otimes b \mapsto L_{a}R_{b}$ is a $k$-algebra homomorphism $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$ onto the two-sided space. A two-sided operator is invertible exactly when both its elements are invertible, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$, and $L_{u}R_{u^{-1}}$ is the inner automorphism $\iota_u$; the inner automorphisms are thus the invertible two-sided operators with inverse factors.
 
 Associativity is exactly the vanishing of the associator $(a,x,b) = (ax)b - a(xb)$, and the associator is the negative of the commutator of the one-sided multiplications,
 
@@ -246,7 +246,7 @@ so the left and the right multiplications commute for all pairs precisely when t
 | $T^{\otimes}$ | the map $A \otimes_k A_{\mathrm{opp}} \to \operatorname{End}_k(A)$, $a \otimes b \mapsto L_{a}R_{b}$ |
 | $(a,x,b) = (ax)b - a(xb)$ | the associator |
 | $A_{a,b}$ | the operator $x \mapsto (a,x,b)$ |
-| $\iota_u(x) = uxu^{-1}$ | the inner automorphism by a unit $u$, equal to $L_{u}R_{u^{-1}}$ |
+| $\iota_u(x) = uxu^{-1}$ | the inner automorphism by an invertible element $u$, equal to $L_{u}R_{u^{-1}}$ |
 | $A_{\mathrm{opp}}$ | the opposite algebra |
 
 ## Further Reading

@@ -38,12 +38,12 @@ $$
 
 ### Invertibility
 
-**Theorem.** $T_a$ is invertible if and only if $a$ is a unit of $\mathcal{A}$, that is, if and only if $a(1)\ne0$, and then
+**Theorem.** $T_a$ is invertible if and only if $a$ is invertible in $\mathcal{A}$, that is, if and only if $a(1)\ne0$, and then
 $$
 T_a^{-1}=\alpha L_{a^{-1}}=T_{\alpha(a^{-1})}.
 $$
 
-**Proof.** $\alpha$ is invertible and $L_a$ is invertible exactly for $a$ a unit; the inverse of the composite $L_a\alpha$ is $\alpha^{-1}L_a^{-1}=\alpha L_{a^{-1}}$, and $\alpha L_{a^{-1}}=L_{\alpha(a^{-1})}\alpha=T_{\alpha(a^{-1})}$.
+**Proof.** $\alpha$ is invertible and $L_a$ is invertible exactly for $a$ an invertible element; the inverse of the composite $L_a\alpha$ is $\alpha^{-1}L_a^{-1}=\alpha L_{a^{-1}}$, and $\alpha L_{a^{-1}}=L_{\alpha(a^{-1})}\alpha=T_{\alpha(a^{-1})}$.
 
 ## The Adjoint and the Conditions
 
@@ -61,7 +61,7 @@ One has $T_a^*T_a=\alpha\,\mathrm{Sd}_aL_a\,\alpha$ and $T_aT_a^*=L_a\mathrm{Sd}
 
 **Proof.** $\alpha^*=\alpha$ and $L_c^*=\mathrm{Sd}_c$ give $(L_a\alpha)^*=\alpha L_a^*=\alpha\mathrm{Sd}_a$. The explicit formula is the definition of $\mathrm{Sd}_a$ multiplied by $\lambda$. The two products are computed from the first display; the product $L_a\mathrm{Sd}_aL_{\alpha(a)}$ is not equal to $L_{\alpha(a)}\mathrm{Sd}_aL_a$ in general.
 
-**Corollary (comparison with the ring formula).** In the noncommutative ring of the earlier article the adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)=\sigma\alpha(a)$; here the adjoint is the transposed multiplication $\mathrm{Sd}_a$ composed with the grade involution, and it is not a signed left multiplication unless $\alpha(a)$ is a unit. The discrepancy is the commutativity of the algebra together with the failure of the two structures (involution on the elements, adjoint on the operators) to coincide except in the degenerate augmentation form.
+**Corollary (comparison with the ring formula).** In the noncommutative ring of the earlier article the adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)=\sigma\alpha(a)$; here the adjoint is the transposed multiplication $\mathrm{Sd}_a$ composed with the grade involution, and it is not a signed left multiplication unless $\alpha(a)$ is invertible. The discrepancy is the commutativity of the algebra together with the failure of the two structures (involution on the elements, adjoint on the operators) to coincide except in the degenerate augmentation form.
 
 ### Self-adjointness, isometry and unitarity
 
@@ -91,7 +91,7 @@ The signed left multiplication fails to be a genuinely signed operator over the 
 
 ## Summary
 
-For $a$ in the algebra of arithmetic functions the signed left multiplication is $T_a(f)=a*\alpha(f)=L_a\alpha=\alpha L_{\alpha(a)}$, with $\alpha T_a=L_{\alpha(a)}$ and $T_a\alpha=L_a$; the twisted product $a\star b=a*\alpha(b)$ is associative, $\alpha$ is an isomorphism $(\mathcal{A},\star)\to(\mathcal{A},*)$, and $T_aT_b=L_{a*\alpha(b)}$, so products of signed left multiplications are unsigned and the family is not commutative. The operator is invertible exactly for $a$ a unit, with $T_a^{-1}=\alpha L_{a^{-1}}$; its adjoint for the coefficient form is $(T_a)^*=\alpha\mathrm{Sd}_a$, with $(T_a)^*g(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$; it is self-adjoint exactly for $a=\gamma\varepsilon$ with $\gamma$ real, unitary exactly for $a=\gamma\varepsilon$ with $|\gamma|=1$, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$ with $|\gamma|=1$. The operator is injective for every nonzero $a$ because the algebra is an integral domain, and the signed adjoint formula of the noncommutative ring theory fails.
+For $a$ in the algebra of arithmetic functions the signed left multiplication is $T_a(f)=a*\alpha(f)=L_a\alpha=\alpha L_{\alpha(a)}$, with $\alpha T_a=L_{\alpha(a)}$ and $T_a\alpha=L_a$; the twisted product $a\star b=a*\alpha(b)$ is associative, $\alpha$ is an isomorphism $(\mathcal{A},\star)\to(\mathcal{A},*)$, and $T_aT_b=L_{a*\alpha(b)}$, so products of signed left multiplications are unsigned and the family is not commutative. The operator is invertible exactly for $a$ an invertible element, with $T_a^{-1}=\alpha L_{a^{-1}}$; its adjoint for the coefficient form is $(T_a)^*=\alpha\mathrm{Sd}_a$, with $(T_a)^*g(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$; it is self-adjoint exactly for $a=\gamma\varepsilon$ with $\gamma$ real, unitary exactly for $a=\gamma\varepsilon$ with $|\gamma|=1$, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$ with $|\gamma|=1$. The operator is injective for every nonzero $a$ because the algebra is an integral domain, and the signed adjoint formula of the noncommutative ring theory fails.
 
 ## Summary of Notation
 
@@ -101,7 +101,7 @@ For $a$ in the algebra of arithmetic functions the signed left multiplication is
 | $T_a=L_a\alpha=\alpha L_{\alpha(a)}$ | The two readings |
 | $a\star b=a*\alpha(b)$ | The twisted product |
 | $T_aT_b=L_{a\star b}$ | Product law |
-| $T_a^{-1}=\alpha L_{a^{-1}}$ | Inverse for a unit |
+| $T_a^{-1}=\alpha L_{a^{-1}}$ | Inverse for an invertible element |
 | $(T_a)^*=\alpha\mathrm{Sd}_a$ | The signed adjoint |
 | $(T_a)^*g(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$ | Explicit adjoint |
 | $T_a$ self-adjoint $\iff$ $a=\gamma\varepsilon$, $\gamma$ real | Self-adjointness |

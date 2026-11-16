@@ -35,7 +35,7 @@ The absence of an order in $K$ is irrelevant here: the derivation is defined by 
 
 **Proposition (formal existence and uniqueness).** Let $A \in M_n(K[[x]])$ and let $y_0 \in K^n$. Then the equation $y' = Ay$ has a unique solution $y = \sum_{m \geq 0} y_m x^m$ in $K[[x]]^n$ with $y(0) = y_0$.
 
-**Proof.** Comparing coefficients of $x^{m-1}$ in $y' = Ay$ gives $(m+1)y_{m+1} = \sum_{j=0}^{m} A_{m-j} y_j$, where $A = \sum_j A_j x^j$; the coefficient $m+1$ is a unit in $K$ because $K$ has characteristic $0$, so the recurrence determines $y_{m+1}$ uniquely from $y_0, \dots, y_m$.
+**Proof.** Comparing coefficients of $x^{m-1}$ in $y' = Ay$ gives $(m+1)y_{m+1} = \sum_{j=0}^{m} A_{m-j} y_j$, where $A = \sum_j A_j x^j$; the coefficient $m+1$ is invertible in $K$ because $K$ has characteristic $0$, so the recurrence determines $y_{m+1}$ uniquely from $y_0, \dots, y_m$.
 
 The proposition is pure algebra and uses only characteristic $0$; what it does not assert is that the formal solution converges. The following example shows that convergence is a genuine restriction.
 
@@ -87,7 +87,7 @@ the ring of Laurent series that converge on some annulus with outer radius $1$ a
 
 **Theorem (Lazard).** The Robba ring $\mathcal{R}$ is a Bézout domain: every finitely generated ideal of $\mathcal{R}$ is principal. Consequently every finitely generated torsion-free module over $\mathcal{R}$ is free, and every finitely generated module over $\mathcal{R}$ is a direct sum of a free module and a torsion module.
 
-**Proof sketch.** The proof is by a sequence of reductions from the ring $\mathcal{R}_r$ to the ring of Laurent series, using the Weierstrass preparation theorem on the annulus: a nonzero element of $\mathcal{R}_r$ is, after multiplication by a unit and a power of $x$, a distinguished polynomial in a suitable variable, and the division by it is controlled by the preparation theorem. The Bézout property of the union then follows from the corresponding property at each radius. The structural consequences are the standard consequences of the Bézout property for a doma.
+**Proof sketch.** The proof is by a sequence of reductions from the ring $\mathcal{R}_r$ to the ring of Laurent series, using the Weierstrass preparation theorem on the annulus: a nonzero element of $\mathcal{R}_r$ is, after multiplication by an invertible element and a power of $x$, a distinguished polynomial in a suitable variable, and the division by it is controlled by the preparation theorem. The Bézout property of the union then follows from the corresponding property at each radius. The structural consequences are the standard consequences of the Bézout property for a doma.
 
 The Bézout property is what makes the Robba ring the correct analogue of a principal ideal domain and allows the structure theory of differential modules over it to be developed as in the classical theory of differential equations over $\mathbb{C}(x)$.
 

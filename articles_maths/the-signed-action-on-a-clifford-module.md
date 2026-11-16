@@ -30,7 +30,7 @@ $$
 
 **Definition.** For an algebra automorphism $\mathrm{J}$ of $\mathrm{Cl}(V,\mathfrak{Q})$ and a module $S$, the **twist** $S^{\mathrm{J}}$ is the module with the action $x\cdot_{\mathrm{J}}s = \mathrm{J}(x)\cdot s$.
 
-**Proposition (the criterion for isomorphism).** The twist $S^{\mathrm{J}}$ is isomorphic to $S$ for every module $S$ if $\mathrm{J}$ is inner, that is $\mathrm{J} = \mathrm{Ad}_u$ for a unit $u$; the isomorphism is the operator of $u$ on $S$. If $\mathrm{J}$ is not inner, there are modules for which $S^{\mathrm{J}}$ is not isomorphic to $S$; and if $\mathrm{J}$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.
+**Proposition (the criterion for isomorphism).** The twist $S^{\mathrm{J}}$ is isomorphic to $S$ for every module $S$ if $\mathrm{J}$ is inner, that is $\mathrm{J} = \mathrm{Ad}_u$ for an invertible element $u$; the isomorphism is the operator of $u$ on $S$. If $\mathrm{J}$ is not inner, there are modules for which $S^{\mathrm{J}}$ is not isomorphic to $S$; and if $\mathrm{J}$ fixes the isomorphism classes of the simple modules, it acts on the set of those classes.
 
 **Proof.** If $\mathrm{J}(x) = uxu^{-1}$ then $\mathrm{J}(x)\cdot s = u\cdot(x\cdot(u^{-1}\cdot s))$, so the operator of $u^{-1}$ intertwines the two actions. The converse and the outer case are the standard module theory of an automorphism.
 
@@ -40,7 +40,7 @@ $$
 
 ### The Even Dimension
 
-**Theorem.** Let $\dim V = n$ be **even**, and let $\omega = e_1\cdots e_n$ be the volume element. Then $\omega$ is even, it is a unit with $\omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_i) \in F^{\times}$, and it implements the grade involution:
+**Theorem.** Let $\dim V = n$ be **even**, and let $\omega = e_1\cdots e_n$ be the volume element. Then $\omega$ is even, it is invertible with $\omega^{2} = (-1)^{n(n-1)/2}\prod_{i}q(e_i) \in F^{\times}$, and it implements the grade involution:
 
 $$
 \boxed{\;\alpha(x) = \omega\,x\,\omega^{-1} \qquad \text{for every } x \in \mathrm{Cl}(V,\mathfrak{Q})\;}.

@@ -34,7 +34,7 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third factor a Hermitian positive boost and the fourth a real rotor. The parent proves the word is a bijection onto the units of $\mathbb{B}$ and that the flow preserves the units, so the chart is total on the generic field.
+with $r>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third factor a Hermitian positive boost and the fourth a real rotor. The parent proves the word is a bijection onto the invertibles of $\mathbb{B}$ and that the flow preserves the invertibles, so the chart is total on the generic field.
 
 **The four factors are ordered differently, and the difference is the whole of this section.** The table is the article's premise.
 
@@ -151,7 +151,7 @@ $$
 
 The determinant is the Jacobian of the map from initial to final position, so $r^{2}$ is the density of the ray congruence and the amplitude measures its focusing. Where the congruence crosses itself the determinant vanishes, the amplitude diverges, and the approximation has left its region.
 
-**Why the scale may be taken real and positive.** The parent's word has $r>0$ by construction, as the square root of the quaternionic norm's modulus, so the choice is not a gauge imposed here: a complex amplitude would leave the word's domain, and the parent's word is a bijection onto the units only with $r>0$.
+**Why the scale may be taken real and positive.** The parent's word has $r>0$ by construction, as the square root of the quaternionic norm's modulus, so the choice is not a gauge imposed here: a complex amplitude would leave the word's domain, and the parent's word is a bijection onto the invertibles only with $r>0$.
 
 ## Order Two: the Quantum Potential and the Size of the Error
 

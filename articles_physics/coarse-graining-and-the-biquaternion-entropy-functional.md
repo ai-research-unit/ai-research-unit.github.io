@@ -88,7 +88,7 @@ so that purity and idempotency are the same condition, and the biquaternion norm
 
 ### Existence of the Logarithm
 
-The entropy functional is built from the algebra's logarithm. The logarithm of a biquaternion is defined as the inverse of the exponential, and the companion article *Biquaternion Elementary Functions* establishes the relevant fact: the logarithm exists exactly on the group of units,
+The entropy functional is built from the algebra's logarithm. The logarithm of a biquaternion is defined as the inverse of the exponential, and the companion article *Biquaternion Elementary Functions* establishes the relevant fact: the logarithm exists exactly on the group of invertibles,
 
 $$
 \mathbb{B}^\times = \left\{\tilde{Q} \in \mathbb{B} : \langle\tilde{Q}\rangle_{\natural} \neq 0\right\},
@@ -102,7 +102,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t \neq 0 \qquad (|\vec r| < 1),
 $$
 
-so it is a unit and its logarithm exists. A **pure** state has $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = 0$: it is $N$-degenerate, a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
+so it is invertible and its logarithm exists. A **pure** state has $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = 0$: it is $N$-degenerate, a zero divisor, the logarithm does not exist there, and the entropy is defined on the boundary by continuity. The locus where the entropy functional is analytically singular is exactly the locus of purity, and that coincidence is the geometric content of the whole subject.
 
 ### Definition from the Spectral Decomposition
 
@@ -403,7 +403,7 @@ $$
 \qquad \lambda_\pm = \tfrac{1}{2}\left(1\pm|\vec r|\right)\;},
 $$
 
-with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of units, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.
+with $0 \le \mathcal{S} \le \log 2$. It is computed from the algebra's logarithm, which exists exactly on the group of invertibles, that is, on the interior of the Bloch ball: the pure states are the zero divisors, and the entropy is singular there and vanishes there.
 
 The functional depends on the state only through its biquaternion norm. With $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$,
 

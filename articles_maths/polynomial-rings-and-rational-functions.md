@@ -50,7 +50,7 @@ $$
 
 ### Contents and Gauss's Lemma
 
-**Definition.** For $R$ a unique factorisation domain and $f \in R[x]$ the **content** $\operatorname{cont}(f)$ is the greatest common divisor of the coefficients, and $f$ is **primitive** if its content is a unit.
+**Definition.** For $R$ a unique factorisation domain and $f \in R[x]$ the **content** $\operatorname{cont}(f)$ is the greatest common divisor of the coefficients, and $f$ is **primitive** if its content is invertible.
 
 **Theorem (Gauss).** Let $R$ be a unique factorisation domain and let $K$ be its fraction field.
 
@@ -58,7 +58,7 @@ $$
 
 **(b)** $f \in R[x]$ is irreducible in $R[x]$ and primitive if and only if it is irreducible in $K[x]$; consequently $R[x]$ is a unique factorisation domain, and so is $R[x_1,\ldots,x_n]$.
 
-**Proof sketch.** (a) If $p$ is a prime dividing all coefficients of $fg$, then reducing modulo $p$ gives $\bar f\bar g = 0$ in $(R/pR)[x]$, a domain, so $p$ divides all coefficients of $f$ or all of $g$. (b) If $f = gh$ in $K[x]$, clearing denominators and extracting contents writes $f$ as a product of primitive polynomials in $R[x]$ up to a unit, and (a) controls the contents; the rest is the lifting of a factorisation from $K[x]$ to $R[x]$.
+**Proof sketch.** (a) If $p$ is a prime dividing all coefficients of $fg$, then reducing modulo $p$ gives $\bar f\bar g = 0$ in $(R/pR)[x]$, a domain, so $p$ divides all coefficients of $f$ or all of $g$. (b) If $f = gh$ in $K[x]$, clearing denominators and extracting contents writes $f$ as a product of primitive polynomials in $R[x]$ up to an invertible element, and (a) controls the contents; the rest is the lifting of a factorisation from $K[x]$ to $R[x]$.
 
 **Example.** $2x^2+2 = 2(x^2+1)$ in $\mathbb{Z}[x]$: the content is $2$, and $x^2+1$ is primitive and irreducible in $\mathbb{Q}[x]$, so $2x^2+2$ factors in $\mathbb{Z}[x]$ only through its content, as Gauss's lemma asserts. The polynomials $x^2-2$ and $x^2-4x+2$ are irreducible in $\mathbb{Z}[x]$ and in $\mathbb{Q}[x]$ alike; the **rational root theorem** is the special case of (b) at degree $2$ and $3$, and in general it states that a rational root of a primitive polynomial is a quotient of a divisor of the constant term by a divisor of the leading coefficient.
 

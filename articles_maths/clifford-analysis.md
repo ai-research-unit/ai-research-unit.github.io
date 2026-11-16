@@ -51,13 +51,13 @@ $$
 \boxed{\;D\bar D = \bar DD = \Delta = \partial^2/\partial x_t^2+\sum_{i=1}^{m}\partial^2/\partial x_i^2\;}
 $$
 
-hold, and $D$ is elliptic: its principal symbol $\sigma(\zeta) = \zeta_t+\sum_{i=1}^{m}e_i\zeta_i$ is a unit of $A$ for every $\zeta = (\zeta_t,\dots,\zeta_m)\neq0$, with
+hold, and $D$ is elliptic: its principal symbol $\sigma(\zeta) = \zeta_t+\sum_{i=1}^{m}e_i\zeta_i$ is invertible in $A$ for every $\zeta = (\zeta_t,\dots,\zeta_m)\neq0$, with
 
 $$
 \sigma(\zeta)^{-1} = \frac{\bar\sigma(\zeta)}{|\zeta|^2}, \qquad \bar\sigma(\zeta) = \zeta_t-\sum_{i=1}^{m}e_i\zeta_i .
 $$
 
-*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $(\partial/\partial x_t)^2-\sum_{i,j}e_ie_j\partial^2/\partial x_i\partial x_j$, the diagonal terms contribute $\sum_i\partial^2/\partial x_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\zeta)\bar\sigma(\zeta) = \zeta_t^2-\sum_{i,j}e_ie_j\zeta_i\zeta_j = \zeta_t^2+\sum_i\zeta_i^2 = |\zeta|^2$, a positive real number, which is a unit of $A$; the same computation in the other order gives the same product, so $\sigma(\zeta)$ is invertible.
+*Proof.* The computation is the one of *Regularity and the Cauchy–Riemann Operator*: expanding $D\bar D$ gives $(\partial/\partial x_t)^2-\sum_{i,j}e_ie_j\partial^2/\partial x_i\partial x_j$, the diagonal terms contribute $\sum_i\partial^2/\partial x_i^2$ since $e_i^2=-1$, and the off-diagonal terms cancel pairwise by $e_ie_j=-e_je_i$. The symbol computation is identical: $\sigma(\zeta)\bar\sigma(\zeta) = \zeta_t^2-\sum_{i,j}e_ie_j\zeta_i\zeta_j = \zeta_t^2+\sum_i\zeta_i^2 = |\zeta|^2$, a positive real number, which is invertible in $A$; the same computation in the other order gives the same product, so $\sigma(\zeta)$ is invertible.
 
 The factorisation is the reason the Clifford case is the favourable one: the second-order operator that governs the theory is the ordinary Laplacian of the ambient space, so the harmonic tools of classical analysis apply to the components. The ellipticity is the reason the integral representation of the next section exists with a kernel of homogeneity $1-(m+1)$.
 
@@ -481,7 +481,7 @@ $$
 
 and the sum of the dimensions of the pieces equals $\dim\mathcal{S}\cdot\binom{m+k}{k}$, the dimension of $\mathcal{P}_k$. The explicit basis for a given $m$ is system-specific.
 
-*Proof.* Multiplication by $x^{\natural}$ is injective on polynomials, because $x^{\natural}$ is a unit of $A$ at every point where $x_t\neq0$ and a polynomial identity is determined by its values on a nonempty open set; hence each summand has dimension $\dim\mathcal{M}_{k-j}$ and the direct sum counts dimensions: $\dim\mathcal{P}_k=\sum_{i=0}^{k}\dim\mathcal{M}_i$. Subtracting the same identity with $k$ replaced by $k-1$ gives the recursion.
+*Proof.* Multiplication by $x^{\natural}$ is injective on polynomials, because $x^{\natural}$ is invertible in $A$ at every point where $x_t\neq0$ and a polynomial identity is determined by its values on a nonempty open set; hence each summand has dimension $\dim\mathcal{M}_{k-j}$ and the direct sum counts dimensions: $\dim\mathcal{P}_k=\sum_{i=0}^{k}\dim\mathcal{M}_i$. Subtracting the same identity with $k$ replaced by $k-1$ gives the recursion.
 
 **Example (the monogenic pieces in low dimension).** For $m=1$ and $\mathcal{S}=\mathbb{C}$, the monogenic polynomials of degree $d$ are the multiples of $z^d$, and the Fischer decomposition is the assertion that every homogeneous polynomial of degree $k$ in $z,\bar z$ has a unique expansion $\sum_{j=0}^{k}c_j\bar z^{\,j}z^{k-j}$ with $c_j\in\mathbb{C}$; this is the elementary identity $\mathcal{P}_k=\bigoplus_j\bar z^{\,j}\mathbb{C}z^{k-j}$. For $m\ge2$ the monogenic piece is larger, and the formula above computes its dimension from $\dim\mathcal{S}$; the classical tables of spherical monogenics give the explicit bases. The example shows the two features that the Clifford case adds to the complex one: several inequivalent monogenic polynomials of the same degree, and a dependence of the count on the value module.
 

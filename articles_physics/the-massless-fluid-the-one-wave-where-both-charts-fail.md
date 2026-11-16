@@ -4,7 +4,7 @@
 
 **This article separates two statements about mass that are easy to run together, and the earlier version of this article ran them together.** The first is about a fluid that exists. The second is about what is left when the fluid's own variables have gone to zero or to infinity. **They are not the same statement, and the difference is not a matter of emphasis: in the first the fluid equations hold everywhere, and in the second there is no fluid at all.**
 
-**At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=r^{2}$; the four-velocity is a unit at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
+**At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=r^{2}$; the four-velocity is invertible at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
 
 **At zero mass, on the label cone, the fluid description stops.** The word has no value, the logarithm does not exist, the generator diverges, the inverse does not exist, and the density, the quantum potential and the stress are either zero or divergent there. **What remains is a direction, an intensity and the sign of the energy**: a null current, not a fluid. **Calling that object a fluid at zero density is a manner of speaking, and the earlier version of this article used it as though the cone were an inhabited state of the fluid.**
 
@@ -138,7 +138,7 @@ $$
 
 **which contains no mass at all.** At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
 
-**The velocity defect is the fastest divergence in the block.** Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $m=1$, $-0.083$ at $m=0.5$ and $-0.333$ at $m=0.25$, a factor four for each halving. **So the velocity is a unit only at a mode, and its departure from the unit is the quantity that fails first.**
+**The velocity defect is the fastest divergence in the block.** Since $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ and $Q_{\mathrm{qnt}}\propto1/m$, the defect grows as $1/m^{2}$: $-0.021$ at $m=1$, $-0.083$ at $m=0.5$ and $-0.333$ at $m=0.25$, a factor four for each halving. **So the velocity is invertible only at a mode, and its departure from the unit is the quantity that fails first.**
 
 ### What the Approach Does, Said in Fluid Words
 
@@ -423,7 +423,7 @@ using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_
 
 **Claim.** The scalar symbol $\mathcal N(\tilde K_\Phi)=k_t'^{2}-\lvert\vec k_\Phi\rvert^{2}-k_m^{2}$ vanishes on the label cone exactly when $k_m=0$, and equals $-k_m^{2}$ there otherwise.
 
-*Proof.* On the cone $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}$, so $\mathcal N=-k_m^{2}$. **A central element $-k_m^{2}e_t$ is a unit whenever $k_m\neq0$**, its inverse being $(-1/k_m^{2})e_t$, so $L$ has rank eight; and at $k_m=0$ the symbol is the zero element and $L$ has rank zero. **This is why the scalar rung loses the whole operator and the first-order rung only half of it.**
+*Proof.* On the cone $k_t'^{2}=\lvert\vec k_\Phi\rvert^{2}$, so $\mathcal N=-k_m^{2}$. **A central element $-k_m^{2}e_t$ is invertible whenever $k_m\neq0$**, its inverse being $(-1/k_m^{2})e_t$, so $L$ has rank eight; and at $k_m=0$ the symbol is the zero element and $L$ has rank zero. **This is why the scalar rung loses the whole operator and the first-order rung only half of it.**
 
 ### The Numerical Checks
 
@@ -444,7 +444,7 @@ using $e_t\vec u=\vec u$, $\vec u e_t=\vec u$ and $i^{2}\vec u^{2}=(-1)(-e_t)=e_
 
 **The two integrals.** [The Two Integrals: the Action and the Transform Confronted Rung by Rung](../articles_internal/the-two-integrals-the-action-and-the-transform-confronted-rung-by-rung.html) states the two cones and the mass between them, and this article proves the containment its last paragraph asserts. [The Massless Regime](the-massless-regime.html) takes the limit at infinite rapidity; [The Domain of the Fluid Reading](the-domain-of-the-fluid-reading.html) states the chart's domain and its codimension.
 
-**The cone.** [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) and [The Massless Regime](the-massless-regime.html) describe what lives on it; [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) proves multiplicativity; [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) is the algebraic statement of the rank drop.
+**The cone.** [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) and [The Massless Regime](the-massless-regime.html) describe what lives on it; [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) proves multiplicativity; [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) is the algebraic statement of the rank drop.
 
 **The two numbers.** [The Two Scales of the Field](../articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.html) proves that the pair is continuous at the corner and that the size is the current's time component.
 

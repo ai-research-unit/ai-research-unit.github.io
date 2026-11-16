@@ -4,7 +4,7 @@
 
 **The claim of this article is that the object of the relativistic quantum theory of this corpus is a fluid, and that the fluid is not a model laid over the theory but the algebra's own factorisation of one element.** The object is one element $\tilde\Xi$ of $\mathbb{B}$ at each event. Its polar word writes that element as four factors. Each factor is a variable a fluid is described by: a density, a velocity, a spin direction and an action. The word consumes every real datum of the element, so the reading adds no field and loses no datum.
 
-Three statements follow, and the article takes them in order. **The reading is exact where it exists**, because the word is a bijection on the units of the algebra. **The reading has a domain**, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. **The reading has a price, and the price is that domain**: every statement of this block is a statement about the $N$-regular field.
+Three statements follow, and the article takes them in order. **The reading is exact where it exists**, because the word is a bijection on the invertibles of the algebra. **The reading has a domain**, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. **The reading has a price, and the price is that domain**: every statement of this block is a statement about the $N$-regular field.
 
 What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this block is none of them.
 
@@ -54,7 +54,7 @@ $$
 
 Both are the subjects of their own articles ([the Klein–Gordon equation in biquaternionic form](the-klein-gordon-equation-in-biquaternionic-form.html), [the Dirac equation in biquaternionic form](the-dirac-equation-in-biquaternionic-form.html)), and this article reads neither derivation.
 
-**"Relativistic" is a property of the algebra and not an add-on.** A Lorentz transformation is a unit acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
+**"Relativistic" is a property of the algebra and not an add-on.** A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
 **"Quantum" in this block is quantum-mechanical and not quantized.** The constant $\hbar$ enters twice: through the wave number $k_m=mc/\hbar$, and through the phase, which carries the action in units of $\hbar$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
 
@@ -122,7 +122,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 
 ## The Domain: N-Regularity
 
-**The word is a parametrisation of the units of the algebra, so it exists exactly on the units.** The quaternionic norm is the determinant, and the units are the elements of nonzero norm,
+**The word is a parametrisation of the invertibles of the algebra, so it exists exactly on the invertibles.** The quaternionic norm is the determinant, and the invertibles are the elements of nonzero norm,
 
 $$
 \boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular}.\;}
@@ -130,7 +130,7 @@ $$
 
 The complement is the zero-divisor cone, a complex hypersurface: two real conditions, of real codimension two and of measure zero. There is no third case and no extension of the word to $N=0$.
 
-**The domain is a condition at each event, not an invariant of the flow.** $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ a unit packet of width $2$ and $k_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by a unit, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
+**The domain is a condition at each event, not an invariant of the flow.** $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$ and $k_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by an invertible element, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
 
 **For the scalar field the cone is the nodal set.** On the centre $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so $N=0$ iff $\Xi_t=0$. The word fails exactly where the wave has a node, and what fails there is the differentiability of the action, not the density, which vanishes with it.
 
@@ -175,7 +175,7 @@ the construction is [The Local Thermal State of a Fluid](the-local-thermal-state
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the field is one element with eight real data and no hidden structure. That the word is a bijection between the $N$-regular elements and the eight parameters, so the fluid's variables are a re-coordinatisation. That the four factors are of four algebraic types and that each is read by a different bilinear. That the current reads the scale and the boost and the spin reads the scale and the rotor, with the phase in neither. That the word exists exactly on the units, and that the cone is the nodal set in the scalar case and strictly larger in the spinor case. That the two-factor decomposition survives on the cone.
+**Established.** That the field is one element with eight real data and no hidden structure. That the word is a bijection between the $N$-regular elements and the eight parameters, so the fluid's variables are a re-coordinatisation. That the four factors are of four algebraic types and that each is read by a different bilinear. That the current reads the scale and the boost and the spin reads the scale and the rotor, with the phase in neither. That the word exists exactly on the invertibles, and that the cone is the nodal set in the scalar case and strictly larger in the spinor case. That the two-factor decomposition survives on the cone.
 
 **Interpretation.** That this reading deserves the name of a fluid. The count and the types make it a canonical re-coordinatisation; they do not by themselves make the variables a fluid's. The physical identification — scale as density, boost as velocity, rotor as spin, phase gradient as momentum — is the programme's step, and it is taken here once and used throughout the block. It is supported by the limits: in the non-relativistic limit the pair becomes the Madelung system, and in the tensor formulation of the spinor case the same variables appear under other names.
 
@@ -189,7 +189,7 @@ The count closes. The scale is one real number, the angle one, the boost a rapid
 
 The four factors are of four algebraic types: real central, central imaginary, Hermitian positive and real unitary. The current reads the scale and the boost. The spin reads the scale and the rotor. The phase is read by neither, only by the argument of the quaternionic norm. The separation of motion from internal rotation is therefore a property of the algebra and not a postulate about matter.
 
-The domain is the set of units, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
+The domain is the set of invertibles, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
 
 The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid mechanics, eight of them with no element of the algebra;
 the scalar ladder, which is the first-order pair below the Klein–Gordon fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor

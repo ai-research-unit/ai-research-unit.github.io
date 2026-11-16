@@ -153,7 +153,7 @@ $$
 S=\sum_{x,y}\mathrm{Sc}\bigl[\tilde{Ξ}_{R}^*(x)\,\tilde F(x,y)\,\tilde{Ξ}_{R}(y)\bigr],
 $$
 
-under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}_{R}$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_\mu$ are its coordinates, and the four coordinate directions are the units.
+under the same three hypotheses, translation invariance, locality, and hermiticity of the operator the kernel generates; here $\tilde{Ξ}_{R}$ is the $R$ part of the field, the chirality subscript of *Matrix Representations Conventions*, and no $L$ part is present. The kernel is an element of $\mathbb{B}$: the four $F_\mu$ are its coordinates, and the four coordinate directions are the invertibles.
 
 **General form, all regularizations.** No regularized chiral fermion theory can simultaneously have the correct global symmetry, unequal numbers of $L$ and $R$ Weyl species, the correct chiral anomaly, and an action bilinear in the Weyl fields. The Standard Model therefore cannot be put on a lattice without violating one of these conditions, and a chirally invariant regularization makes the chiral anomaly vanish, which is wrong.
 

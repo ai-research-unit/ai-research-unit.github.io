@@ -10,7 +10,7 @@ $$
 \tilde\zeta^2=0.
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_t$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\zeta^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being an invertible element. The roots of $+e_t$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Quaternion Algebra*, above this article in this category; the roots of the general quadratic $\tilde\zeta^2=\tilde q$ are *Square Roots of a General Element in the Quaternion Algebra*, below this article in this category.
 
 **The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_t^2-|\vec q|^2]e_t+2q_t\vec q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_t[q_t^2-3|\vec q|^2]e_t+[3q_t^2-|\vec q|^2]\vec q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
 
@@ -80,7 +80,7 @@ The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $
 
 ### The Roots of Zero and the Nilpotents
 
-The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The roots of $0$ here are the origin alone, so the nilpotents are none. A nonzero root of $0$ would be a square-zero element, hence a zero divisor annihilating itself; the algebra has no zero divisor, so no such element exists. The behaviour is the opposite of the roots of $+e_t$, which are units of the algebra (*Square Roots of One and the Idempotents of the Quaternion Algebra*), and it is the degenerate case of the general root problem at the central value $0$ (*Square Roots of a General Element in the Quaternion Algebra*).
+The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The roots of $0$ here are the origin alone, so the nilpotents are none. A nonzero root of $0$ would be a square-zero element, hence a zero divisor annihilating itself; the algebra has no zero divisor, so no such element exists. The behaviour is the opposite of the roots of $+e_t$, which are invertible in the algebra (*Square Roots of One and the Idempotents of the Quaternion Algebra*), and it is the degenerate case of the general root problem at the central value $0$ (*Square Roots of a General Element in the Quaternion Algebra*).
 
 ## The Nilpotents
 
@@ -124,7 +124,7 @@ Over the complexified block the same computation passes through the complex bili
 
 **Theorem (no higher index).** For the algebra, $\tilde q^k=0$ for some $k\geq1$ if and only if $\tilde q=0$; equivalently, a vanishing power vanishes at the first step.
 
-*Proof.* If $\tilde q\neq0$ it is a unit, with inverse $\tilde q^{-1}$. Multiplying $\tilde q^k=0$ on the left by $\tilde q^{-1}$ gives $\tilde q^{k-1}=0$, and iterating gives $\tilde q=0$, a contradiction. So no nonzero element has a vanishing power, of index two or of any higher index.
+*Proof.* If $\tilde q\neq0$ it is invertible, with inverse $\tilde q^{-1}$. Multiplying $\tilde q^k=0$ on the left by $\tilde q^{-1}$ gives $\tilde q^{k-1}=0$, and iterating gives $\tilde q=0$, a contradiction. So no nonzero element has a vanishing power, of index two or of any higher index.
 
 The direct computation of the cube agrees, and it is worth recording because it mirrors the complexified expansion:
 
@@ -183,7 +183,7 @@ The equation $\tilde q^2=0$ is the third of the three central power equations $\
 
 The square of the algebra is the square, and the criterion is $\tilde q^2=0$ if and only if $q_t=0$ and $\vec q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_t^2-|\vec q|^2$ and the vector coefficient $2q_t\vec q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
 
-The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\zeta_t=0$ and the pure branch gives $\vec\zeta=0$, both returning the origin. This is the opposite of the roots of $+e_t$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
+The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\zeta_t=0$ and the pure branch gives $\vec\zeta=0$, both returning the origin. This is the opposite of the roots of $+e_t$, which are invertible; a nonzero root of $0$ would be a nilpotent and a zero divisor.
 
 The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\vec q|^2e_t$ and a nonzero scalar the positive square $s^2e_t$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the Quaternion Algebra*.
 

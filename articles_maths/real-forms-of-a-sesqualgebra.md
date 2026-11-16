@@ -157,7 +157,7 @@ $$
 \alpha=\bar{\cdot}, \qquad \alpha(z\,e_\nu)=\varsigma(z)\,e_\nu,
 $$
 
-is a $\varsigma$-semilinear automorphism of order two: it conjugates the coefficients and fixes the units, so it multiplies on products. Its fixed set is the quaternion part,
+is a $\varsigma$-semilinear automorphism of order two: it conjugates the coefficients and fixes the invertibles, so it multiplies on products. Its fixed set is the quaternion part,
 
 $$
 \mathbb{B}^{\bar{\cdot}} = \mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z \cong \mathbb{H},

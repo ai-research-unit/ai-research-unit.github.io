@@ -10,7 +10,7 @@ $$
 \tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-with $r>0$, $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the units and no constraint is lost or added.
+with $r>0$, $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
 
 **The word is not the free article's word, and the difference is the article's first point.** The free Proca field is real, its word has two factors and four parameters, and it splits into two branches according to the sign of the Minkowski square. The coupled field is complex, its square is not a sign, the branch split has nothing to split, and the word that replaces it has four factors and eight parameters. The two factors the free word had to drop — the central phase and the rotor — return with the charge, and §*The Word* proves that in the algebra rather than asserting it.
 
@@ -122,7 +122,7 @@ $$
 
 and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance, and it is a statement about the angle and not about the field.
 
-**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is a unit whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the gauge group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
+**The finite statement and its one caveat.** For a finite shift the translated angle may leave the interval $(-\pi/2,\pi/2]$, and then the word's first factor is no longer in the chart's normal form: $e^{i(\vartheta+\vartheta_{\mathrm{gau}})}$ with the sum outside the range is invertible whose real part is negative, and the chart's phase factor is the one with positive real part. The excess is absorbed by the other factors, and the chart is therefore not closed under the gauge group as a chart, although the field is. The article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates.
 
 **The contrast with the element form.** In the element form the gauge transformation multiplies the field by a central unit and that is that. In the chart the same operation is the motion of one coordinate, and the coordinate is the argument of the norm. The two statements are the same statement, and the second is the reason the operation is called a phase transformation.
 
@@ -137,7 +137,7 @@ $$
 +\text{(the frame's derivative terms)} ,
 $$
 
-that is: the second-order operator becomes the first-order brackets contracted with the units as the field's own frame sees them, $\tilde A^{-1}e_\mu^{\natural}\tilde A$. The identity is exact and it is the chart's version of the element form's statement that the covariant derivatives are central: the units are conjugated by the field, the derivatives are not.
+that is: the second-order operator becomes the first-order brackets contracted with the units as the field's own frame sees them, $\tilde A^{-1}e_\mu^{\natural}\tilde A$. The identity is exact and it is the chart's version of the element form's statement that the covariant derivatives are central: the invertibles are conjugated by the field, the derivatives are not.
 
 **What the frame conjugation does.** The four units conjugated by $\tilde A$ are the field's own tetrad. The contraction is therefore a contraction with a *field-dependent* frame, and that is the chart's real content: the equation is the free one written in the field's frame, with the connection shifted. The free article's two displays — one real equation for the modulus and one traceless equation for the frame — are the two halves of that contraction, and the coupling shifts both.
 

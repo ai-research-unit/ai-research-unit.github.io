@@ -25,19 +25,19 @@ The algebra carries **four general products** — one to each of the four choice
 
 **The four general products**, one to each choice of the two slots.
 
-**The general plain bilinear product**, the multiplication of the algebra, associative, with $e_t$ a unit on both sides:
+**The general plain bilinear product**, the multiplication of the algebra, associative, with $e_t$ an invertible element on both sides:
 
 $$
 \tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2 .
 $$
 
-**The general plain sesquilinear product**, the second factor read through ${}^{*}$, not associative, with $e_t$ a unit on the right only:
+**The general plain sesquilinear product**, the second factor read through ${}^{*}$, not associative, with $e_t$ an invertible element on the right only:
 
 $$
 \tilde Q_1\tilde Q_2^{*}=\bigl[Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})\bigr]-Q_{1t}\overline{\vec Q_2}+\overline{Q_{2t}}\vec Q_1-\vec Q_1\times\overline{\vec Q_2} .
 $$
 
-**The general quaternionic bilinear product**, the first factor read through ${}^{\natural}$, not associative, with $e_t$ a unit on the left only:
+**The general quaternionic bilinear product**, the first factor read through ${}^{\natural}$, not associative, with $e_t$ an invertible element on the left only:
 
 $$
 \tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2 .

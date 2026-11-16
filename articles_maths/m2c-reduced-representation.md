@@ -110,7 +110,7 @@ with no others. So the regular module is **completely reducible**: it is the dir
 
 | $\breve Q$ | $\ker L_{\breve Q}$ | $\operatorname{im}L_{\breve Q}$ | $\operatorname{rank}$ |
 |---|---|---|---|
-| a unit, $Q_{+}\neq0$ and $Q_{-}\neq0$ | $0$ | $\mathbb{B}_{\mathrm{red}}$ | $2$ |
+| an invertible element, $Q_{+}\neq0$ and $Q_{-}\neq0$ | $0$ | $\mathbb{B}_{\mathrm{red}}$ | $2$ |
 | on $\mathbb{C}\Pi_{+}$, $\breve Q\neq0$ | $\mathbb{C}\Pi_{-}$ | $\mathbb{C}\Pi_{+}$ | $1$ |
 | on $\mathbb{C}\Pi_{-}$, $\breve Q\neq0$ | $\mathbb{C}\Pi_{+}$ | $\mathbb{C}\Pi_{-}$ | $1$ |
 | $0$ | $\mathbb{B}_{\mathrm{red}}$ | $0$ | $0$ |
@@ -123,7 +123,7 @@ L_{\breve Q}R_{\breve P}(\breve X)=\breve Q\breve X\breve P=\breve Q\breve P\,\b
 $$
 so the pair collapses to the product, as in every commutative category of the block. The operators article computes the fibre of that collapse and the length; here the only fact needed is that the envelope $\mathbb{B}_{\mathrm{red}}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{red}}$ acts through the multiplication, with a two-dimensional image.
 
-**The automorphisms and the derivations.** The algebra has no nonzero derivation, and its $\mathbb{C}$-algebra automorphisms are the identity and the tessarine sign; both facts are proved in *The Multiplication Operators of the Algebra of the Reduced Biquaternions*, and they read in the model as follows. An automorphism of the image that is inner in $M_{2}(\mathbb{C})$ is a conjugation by a unit of the image, and the image is commutative, so every such conjugation is the identity; the tessarine sign is therefore **outer** in the algebra and is realised by the conjugation with $J=\operatorname{diag}(1,-1)$, which is not in the image.
+**The automorphisms and the derivations.** The algebra has no nonzero derivation, and its $\mathbb{C}$-algebra automorphisms are the identity and the tessarine sign; both facts are proved in *The Multiplication Operators of the Algebra of the Reduced Biquaternions*, and they read in the model as follows. An automorphism of the image that is inner in $M_{2}(\mathbb{C})$ is a conjugation by an invertible element of the image, and the image is commutative, so every such conjugation is the identity; the tessarine sign is therefore **outer** in the algebra and is realised by the conjugation with $J=\operatorname{diag}(1,-1)$, which is not in the image.
 
 ## The Product
 
@@ -223,11 +223,11 @@ which is the union of two complex lines, each of real dimension two. In the basi
 
 **The rank ladder.** The rank of the matrix takes the three values
 $$
-\operatorname{rank}\mathsf M(\breve Q)=\begin{cases}2&\text{on the units},\\ 1&\text{on the zero divisors},\\ 0&\text{at }0,\end{cases}
+\operatorname{rank}\mathsf M(\breve Q)=\begin{cases}2&\text{on the invertibles},\\ 1&\text{on the zero divisors},\\ 0&\text{at }0,\end{cases}
 $$
 and the realification doubles each value, so the real matrix has rank $4$, $2$ or $0$. The determinant is a complex number, so its vanishing is a condition of real codimension two and the singular set has real dimension two, against the real dimension four of the carrier.
 
-**The sign is lost.** Over $\mathbb{R}$ the determinant of the realification is $|Q_{+}|^{2}|Q_{-}|^{2}\ge0$, so the real model cannot distinguish the two branches, and the sign of the complex determinant is invisible in it. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ in the frame, and the real determinant sees the two moduli and not the two arguments: the information it drops is the two circles of the torus.
+**The sign is lost.** Over $\mathbb{R}$ the determinant of the realification is $|Q_{+}|^{2}|Q_{-}|^{2}\ge0$, so the real model cannot distinguish the two branches, and the sign of the complex determinant is invisible in it. The group of invertibles is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ in the frame, and the real determinant sees the two moduli and not the two arguments: the information it drops is the two circles of the torus.
 
 ## The Spectral Projectors
 
@@ -277,16 +277,16 @@ of rank one and kernel the other idempotent line. So the singular members of the
 $$
 \operatorname{adj}\mathsf M(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&-Q_{\blacktriangledown}\\ -Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}=\mathsf M(\breve Q_{\mathrm{ts}}),
 $$
-where $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$ is the tessarine conjugate. Hence, on the units,
+where $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}$ is the tessarine conjugate. Hence, on the invertibles,
 $$
 \mathsf M(\breve Q)^{-1}=\frac{\mathsf M(\breve Q_{\mathrm{ts}})}{\langle\breve Q\rangle_{\mathrm{ts}}}=\mathsf M\!\left(\frac{\breve Q_{\mathrm{ts}}}{\langle\breve Q\rangle_{\mathrm{ts}}}\right)=\mathsf M\bigl(\breve Q^{-1}\bigr).
 $$
 
 *Proof.* The adjugate of $\begin{pmatrix}a&b\\ b&a\end{pmatrix}$ is $\begin{pmatrix}a&-b\\ -b&a\end{pmatrix}$, which is the image of the element with the sign of the second coordinate reversed; the inverse is the adjugate divided by the determinant, and the quotient of the two displays is the inverse in the algebra, $Q_{+}^{-1}\Pi_{+}+Q_{-}^{-1}\Pi_{-}$.
 
-**The reading.** The formula is the algebraic formula $\breve Q^{-1}=\breve Q_{\mathrm{ts}}/\langle\breve Q\rangle_{\mathrm{ts}}$ and it holds at every unit. In the idempotent basis it is $\operatorname{diag}(Q_{+}^{-1},Q_{-}^{-1})$ and the adjugate there is $\operatorname{diag}(Q_{-},Q_{+})$, the **swap** of the two entries: the conjugate exchanges the two idempotent coordinates, $\overline{Q}_{+}=Q_{-}$ and $\overline{Q}_{-}=Q_{+}$, which is the matrix form of the fact that the tessarine sign exchanges $\Pi_{+}$ and $\Pi_{-}$.
+**The reading.** The formula is the algebraic formula $\breve Q^{-1}=\breve Q_{\mathrm{ts}}/\langle\breve Q\rangle_{\mathrm{ts}}$ and it holds at every invertible element. In the idempotent basis it is $\operatorname{diag}(Q_{+}^{-1},Q_{-}^{-1})$ and the adjugate there is $\operatorname{diag}(Q_{-},Q_{+})$, the **swap** of the two entries: the conjugate exchanges the two idempotent coordinates, $\overline{Q}_{+}=Q_{-}$ and $\overline{Q}_{-}=Q_{+}$, which is the matrix form of the fact that the tessarine sign exchanges $\Pi_{+}$ and $\Pi_{-}$.
 
-**The unit criterion.** The matrix is invertible exactly when $Q_{+}\neq0$ and $Q_{-}\neq0$, that is on the complement of the two planes of the determinant; in the coordinates $(1,j)$ the criterion is $Q_{\blacktriangle}\neq\pm Q_{\blacktriangledown}$. The group of units is therefore
+**The unit criterion.** The matrix is invertible exactly when $Q_{+}\neq0$ and $Q_{-}\neq0$, that is on the complement of the two planes of the determinant; in the coordinates $(1,j)$ the criterion is $Q_{\blacktriangle}\neq\pm Q_{\blacktriangledown}$. The group of invertibles is therefore
 $$
 \mathsf M\bigl({\mathbb{B}_{\mathrm{red}}}^{\times}\bigr)\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
@@ -304,7 +304,7 @@ The **transpose is the identity on the image**, because every matrix of the imag
 $$
 J\,\mathsf M(\breve Q)\,J=\mathsf M(\breve Q_{\mathrm{ts}}),\qquad S\,\mathsf M(\breve Q)\,S=\mathsf M(\breve Q),
 $$
-so the $J$-conjugation realises the conjugate and the $S$-conjugation is trivial, the second because $S=\mathsf M(j)$ is a unit of the image and the image is commutative. The ambient therefore contains one involution that acts on the algebra as its conjugate and one that acts trivially, and the trivial one belongs to the algebra while the nontrivial one does not: precisely the reverse of the dual-number category, where the swap realised the conjugate and the diagonal was the convention exchange.
+so the $J$-conjugation realises the conjugate and the $S$-conjugation is trivial, the second because $S=\mathsf M(j)$ is invertible in the image and the image is commutative. The ambient therefore contains one involution that acts on the algebra as its conjugate and one that acts trivially, and the trivial one belongs to the algebra while the nontrivial one does not: precisely the reverse of the dual-number category, where the swap realised the conjugate and the diagonal was the convention exchange.
 
 **Three conformalities, and only one of them is exact.** For the **indefinite** form $J=\operatorname{diag}(1,-1)$ the model is conformal at **every** element, with the determinant as the factor:
 $$
@@ -367,7 +367,7 @@ So the four forms are the four slots of a table of two binary choices, the conju
 | the ideal $\mathbb{B}_{\mathrm{red}}\Pi_{-}$ | $Q_{+}=0$ | $\operatorname{diag}(0,\cdot)$ in the frame | $2$ |
 | the plane $\mathbb{R}\{1,j\}$ | $q_{1}=q_{3}=0$ | real matrices of the image | $2$ |
 | the plane $\mathbb{R}\{1,ij\}$ | $q_{1}=q_{2}=0$ | $\begin{pmatrix}a&b\\ b&a\end{pmatrix}$ with $a,b$ real | $2$ |
-| the units | $Q_{+}Q_{-}\neq0$ | $\det\neq0$ | open, dense |
+| the invertibles | $Q_{+}Q_{-}\neq0$ | $\det\neq0$ | open, dense |
 | the zero divisors | $Q_{+}Q_{-}=0$, not $0$ | rank $1$ | $2$, two planes |
 | the idempotents | $Q_{\pm}\in\{0,1\}$ | $0$, $\mathrm I_{2}$, $\operatorname{diag}(1,0)$, $\operatorname{diag}(0,1)$ | four points |
 | the nilpotents | $Q_{+}=Q_{-}=0$ | $0$ | one point |
@@ -396,7 +396,7 @@ $$
 $$
 which is a scalar operator only when the two moduli agree, and which is the operator behind the modulus–unit polar decomposition. The two are two slots of the table of the four products filled on both sides, and the second is the one that produces a cone of operators: its image is the quadrant $(|Q_{+}|^{2},|Q_{-}|^{2})$, of real dimension two.
 
-**The units and the four sectors.** The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ in the frame, of four contractible components distinguished by the signs of the two idempotent coordinates, and it retracts onto $T^{2}$; the four sectors of *The Four Sectors of the Reduced Biquaternion Algebra* are the four sign patterns, read in the frame as the four quadrants of $\mathbb{R}^{2}$ and in the model as the four diagonal forms with positive or negative real entries. This is the difference from the split-complex category, where the four sectors were four quadrants of a plane: here each sector is a product of two half-planes of a complex line.
+**The invertibles and the four sectors.** The group of invertibles is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ in the frame, of four contractible components distinguished by the signs of the two idempotent coordinates, and it retracts onto $T^{2}$; the four sectors of *The Four Sectors of the Reduced Biquaternion Algebra* are the four sign patterns, read in the frame as the four quadrants of $\mathbb{R}^{2}$ and in the model as the four diagonal forms with positive or negative real entries. This is the difference from the split-complex category, where the four sectors were four quadrants of a plane: here each sector is a product of two half-planes of a complex line.
 
 ## Summary
 
@@ -409,7 +409,7 @@ which is a scalar operator only when the two moduli agree, and which is the oper
 7. Every element is diagonalisable by the same frame, the eigendecomposition is the Peirce decomposition, and Lagrange's formula degenerates on the scalar line although the projectors themselves exist there: the failure is of the formula and not of the object.
 8. The adjugate is the model of the tessarine conjugate, the inverse is $\mathsf M(\breve Q_{\mathrm{ts}}/\langle\breve Q\rangle_{\mathrm{ts}})$, and the three operations separate because the transpose is the identity on the image while the bar and the star are conjugate-linear; the model is conformal for the indefinite form $J$ at every element, and for the adjoint exactly on the hypersurface $\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=0$.
 9. The four algebraic norms are the four slots of two binary choices, the multiplicative one is the determinant, and the positive definite one is the Frobenius form $\tfrac12\operatorname{tr}(\mathsf M^{\dagger}\mathsf M)$, which defines the coordinatewise order and the positive quadrant of the frame.
-10. The distinguished subspaces are the scalar line, the $j$-line, the two ideals, the three fixed planes of the involutions and the union of two planes of the zero divisors; the units form $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ with four contractible components, the idempotents are four points and the nilpotents one.
+10. The distinguished subspaces are the scalar line, the $j$-line, the two ideals, the three fixed planes of the involutions and the union of two planes of the zero divisors; the invertibles form $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ with four contractible components, the idempotents are four points and the nilpotents one.
 
 ## Summary of Notation
 

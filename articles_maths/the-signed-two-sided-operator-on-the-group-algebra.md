@@ -5,7 +5,7 @@
 
 The two-sided operator of the group algebra multiplies a factor on each side of its argument, $x\mapsto axb$ with the product of the algebra; when the group algebra carries a **grade involution** $\alpha$ — an involutive automorphism — the argument can be twisted before the multiplication, and the operator $x\mapsto a\,\alpha(x)\,b$ is the **signed two-sided operator**. The twist changes the operator in one place only, and that change turns the unsigned two-sided operators into a coset of an enlarged group, makes the product of two signed two-sided operators unsigned, and produces the reflections of the category as the signed two-sided operators whose two factors are inverse to each other. On the group algebra every object is an operator on a Banach space, so the twist is measured by a norm, the two-sided operator is bounded, and the whole construction lies inside the Banach algebra of bounded operators.
 
-The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the algebra $L^1(G)$, its product and its norm from *The Convolution Algebra $L^1(G)$*; the convolution operators $L_a, R_b$, their norms and their composition laws from *Convolution on a Group* and *The Group Algebra as an Algebra of Operators*; the general two-sided operator, its composition table, its inverses and the inner case from *The Two-Sided Operator on an Algebra*, *The Signed Two-Sided Operator on an Algebra* and *The Signed Two-Sided Operator on a Banach Algebra* (Topology on Algebras); the involutive automorphism $\alpha$ and the grading it defines from *Involutive Topological Algebras* and *The Grading of an Algebra*; the signed two-sided operator, its reflections and their degenerate cases on a group from *The Signed Two-Sided Operator on a Topological Group* and *Reflections as Signed Two-Sided Operators on a Topological Group*; and the bounded operators, the operator norm and the unit group from *Operator Algebras* and *Topological Algebras and Banach Algebras*. The one-sided signed operators are *The Signed Left Multiplication on the Group Algebra*, and the reflections as two-sided operators are *Reflections as Signed Two-Sided Operators on the Group Algebra*, immediately following; the adjoint is the `- * Operator Theory` group of this category, and the measure algebra is *The Involution on the Measure Algebra*, later. The involution on the elements of $L^1(G)$ is the structure of the `- * Theory` group and is kept apart from the grade involution $\alpha$; no adjoint and no Fourier theory occurs.
+The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the algebra $L^1(G)$, its product and its norm from *The Convolution Algebra $L^1(G)$*; the convolution operators $L_a, R_b$, their norms and their composition laws from *Convolution on a Group* and *The Group Algebra as an Algebra of Operators*; the general two-sided operator, its composition table, its inverses and the inner case from *The Two-Sided Operator on an Algebra*, *The Signed Two-Sided Operator on an Algebra* and *The Signed Two-Sided Operator on a Banach Algebra* (Topology on Algebras); the involutive automorphism $\alpha$ and the grading it defines from *Involutive Topological Algebras* and *The Grading of an Algebra*; the signed two-sided operator, its reflections and their degenerate cases on a group from *The Signed Two-Sided Operator on a Topological Group* and *Reflections as Signed Two-Sided Operators on a Topological Group*; and the bounded operators, the operator norm and the group of invertibles from *Operator Algebras* and *Topological Algebras and Banach Algebras*. The one-sided signed operators are *The Signed Left Multiplication on the Group Algebra*, and the reflections as two-sided operators are *Reflections as Signed Two-Sided Operators on the Group Algebra*, immediately following; the adjoint is the `- * Operator Theory` group of this category, and the measure algebra is *The Involution on the Measure Algebra*, later. The involution on the elements of $L^1(G)$ is the structure of the `- * Theory` group and is kept apart from the grade involution $\alpha$; no adjoint and no Fourier theory occurs.
 
 Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and identity $e$, and $\mathcal{A} = L^1(G)$ is its group algebra with convolution $f*g$ and norm $\|f\|_1$; $\alpha$ is a **grade involution**: a continuous involutive automorphism of the Banach algebra $\mathcal{A}$, so that $\alpha(f*g) = \alpha(f)*\alpha(g)$, $\alpha^2 = \mathrm{id}$ and
 
@@ -79,7 +79,7 @@ Hence a signed two-sided operator followed or preceded by an unsigned one is sig
 
 **Corollary (the coset and the group).** The signed two-sided operators are the coset $\Sigma^\alpha(\mathcal{A},\mathcal{A}) = T(\mathcal{A},\mathcal{A})\,\mathrm{A}$ of the unsigned two-sided operators by composition with $\mathrm{A}$ on the right. The invertible unsigned two-sided operators form, when the algebra has units, the group $G_0 = \{L_{a}R_{b} : a, b \in \mathcal{A}^\times\}$, and the union $G_0\cup G_0\mathrm{A}$ is a subgroup of $B(\mathcal{A})^\times$ of index at most two over $G_0$, generated by $G_0$ and $\mathrm{A}$.
 
-**Proof.** The coset description is the decomposition; $L_{a}R_{b}$ is invertible exactly when $a, b$ are units, and then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$, because $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}}(f) = a*(a^{-1}*f*b^{-1})*b = f$. The multiplication table gives closure of the union and the parity, and $\mathrm{A}^{-1} = \mathrm{A}$ gives closure under inversion.
+**Proof.** The coset description is the decomposition; $L_{a}R_{b}$ is invertible exactly when $a, b$ are invertible, and then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$, because $L_{a}R_{b}L_{a^{-1}}R_{b^{-1}}(f) = a*(a^{-1}*f*b^{-1})*b = f$. The multiplication table gives closure of the union and the parity, and $\mathrm{A}^{-1} = \mathrm{A}$ gives closure under inversion.
 
 **Proposition (the inverse).** The signed two-sided operator $\mathcal{T}_{a,b}$ is invertible exactly when $a, b \in \mathcal{A}^\times$, and then
 
@@ -89,9 +89,9 @@ $$
 
 hence the invertible signed two-sided operators are stable under inversion but not under composition.
 
-**Proof.** $\mathcal{T}_{a,b} = L_{a}R_{b}\mathrm{A}$ is invertible exactly when $L_{a}R_{b}$ is, that is exactly when $a, b$ are units. For the formula, $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a*\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})*b} = L_{a*a^{-1}}R_{\,b^{-1}*b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$; the other order gives the same.
+**Proof.** $\mathcal{T}_{a,b} = L_{a}R_{b}\mathrm{A}$ is invertible exactly when $L_{a}R_{b}$ is, that is exactly when $a, b$ are invertible. For the formula, $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a*\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})*b} = L_{a*a^{-1}}R_{\,b^{-1}*b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$; the other order gives the same.
 
-**Remark (the non-unital case).** For a non-discrete group the group algebra has no identity, and its unit group may be empty; the unit-group statements above are then read in the unitisation $\mathcal{A}^\sharp = \mathcal{A}\oplus\mathbb{C}$ (equivalently, in the multiplier algebra), which is the standard device of *Topological Algebras and Banach Algebras*. Every identity of this article holds in $\mathcal{A}$ for elements $a, b$ that are units of $\mathcal{A}$, and it extends to the unitisation without change; the measure algebra of the group, whose point masses are units in every case, is *The Involution on the Measure Algebra*, later in this category, and supplies a unital algebra in which the reflection theory is never vacuous.
+**Remark (the non-unital case).** For a non-discrete group the group algebra has no identity, and its group of invertibles may be empty; the unit-group statements above are then read in the unitisation $\mathcal{A}^\sharp = \mathcal{A}\oplus\mathbb{C}$ (equivalently, in the multiplier algebra), which is the standard device of *Topological Algebras and Banach Algebras*. Every identity of this article holds in $\mathcal{A}$ for elements $a, b$ that are invertible in $\mathcal{A}$, and it extends to the unitisation without change; the measure algebra of the group, whose point masses are invertible in every case, is *The Involution on the Measure Algebra*, later in this category, and supplies a unital algebra in which the reflection theory is never vacuous.
 
 ## The Relation to the Unsigned Two-Sided Operator
 
@@ -105,7 +105,7 @@ so the two families are related by composition with a fixed operator of order tw
 
 **Proof.** The first identity is the decomposition; the second is the first composed with $\mathrm{A}$ and $\mathrm{A}^2 = \mathrm{id}$.
 
-**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha$ is inner on a unital group algebra, $\alpha = c_z$ with $c_z(f) = z*f*z^{-1}$ for a unit $z$. Then every signed two-sided operator is unsigned,
+**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha$ is inner on a unital group algebra, $\alpha = c_z$ with $c_z(f) = z*f*z^{-1}$ for an invertible element $z$. Then every signed two-sided operator is unsigned,
 
 $$
 \alpha = c_z \quad\Longrightarrow\quad \mathcal{T}_{a,b} = L_{a*z}R_{\,z^{-1}*b} ,
@@ -125,13 +125,13 @@ and the signed family carries no information beyond $\alpha$ and the unsigned fa
 
 ## The Reflections it Realises
 
-**Definition.** A **reflector** of the group algebra with respect to $\alpha$ is a unit $u \in \mathcal{A}^\times$ with $u*\alpha(u) \in Z(\mathcal{A})$, the centre; the **reflection** determined by $u$ is the signed conjugation
+**Definition.** A **reflector** of the group algebra with respect to $\alpha$ is invertible $u \in \mathcal{A}^\times$ with $u*\alpha(u) \in Z(\mathcal{A})$, the centre; the **reflection** determined by $u$ is the signed conjugation
 
 $$
 \rho_u = \mathcal{T}_{u,u^{-1}}, \qquad \rho_u(f) = u*\alpha(f)*u^{-1} .
 $$
 
-**Theorem (the square and the involution condition).** For every unit $u$ the reflection is bounded, invertible and an algebra automorphism of $\mathcal{A}$, and
+**Theorem (the square and the involution condition).** For every invertible $u$ the reflection is bounded, invertible and an algebra automorphism of $\mathcal{A}$, and
 
 $$
 \boxed{\;\rho_u^2 = c_{u*\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,
@@ -147,7 +147,7 @@ with $c_t(f) = t*f*t^{-1}$. Hence $\rho_u$ is an involutive automorphism, $\rho_
 
 ## The Group Instance
 
-**Example (the discrete group and the group automorphism).** Let $G$ be discrete and $\alpha = \alpha_\mathrm{J}$ induced by a continuous involutive automorphism $\mathrm{J}$ of $G$; the group algebra $\ell^1(G)$ is unital and $\delta_h$ is a unit for every $h$. Then
+**Example (the discrete group and the group automorphism).** Let $G$ be discrete and $\alpha = \alpha_\mathrm{J}$ induced by a continuous involutive automorphism $\mathrm{J}$ of $G$; the group algebra $\ell^1(G)$ is unital and $\delta_h$ is invertible for every $h$. Then
 
 $$
 \rho_{\delta_h}(\delta_g) = \delta_h*\delta_{\mathrm{J}(g)}*\delta_{h^{-1}} = \delta_{h\mathrm{J}(g)h^{-1}} , \qquad \delta_h*\alpha(\delta_h) = \delta_{h\mathrm{J}(h)} ,
@@ -186,4 +186,4 @@ On the group algebra $\mathcal{A} = L^1(G)$ with a continuous involutive automor
 - Charles E. Rickart, *General Theory of Banach Algebras* (Van Nostrand, 1960), for the bounded automorphisms of a Banach algebra and the closed fixed subalgebras.
 - Theodore W. Palmer, *Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I* (Cambridge University Press, 1994), for graded Banach algebras, automorphisms of order two and the two-sided operators they define.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the two-sided operator, its inverse and the reflections it generates.
-- Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis I* (Springer, second edition, 1979), for convolution on a group algebra and the unit group of $L^1(G)$.
+- Edwin Hewitt and Kenneth A. Ross, *Abstract Harmonic Analysis I* (Springer, second edition, 1979), for convolution on a group algebra and the group of invertibles of $L^1(G)$.

@@ -147,6 +147,6 @@ A Hermitian form on the rank-one module over the biquaternion algebra is a Hermi
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the Hermitian elements and the real form.
 - [Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint](positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the positive cone in which the signature lives.
 - [The Unitary Slice and the Compact Real Form with Hermitian Adjoint](the-unitary-slice-and-the-compact-real-form-with-hermitian-adjoint.html), for the automorphism group of the unit form.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its isotropy and the group of units.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its isotropy and the group of invertibles.
 - [Biquaternion Versors and the Orthogonal Group](biquaternion-versors-and-the-orthogonal-group.html), for the automorphism group of the norm and the contrast with the slice.
 - [Mixed Inner Conjugation and Hermitian Adjoint](mixed-inner-conjugation-and-hermitian-adjoint.html), for the four two-sided operators and the signed congruence.

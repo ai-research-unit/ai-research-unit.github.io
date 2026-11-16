@@ -33,7 +33,7 @@ where $u\sim\lambda u$ for $\lambda\in F^{\times}$, is a bijection. Every reflec
 
 **Proposition (the failure for an isotropic vector).** Let $u\in V$ with $\mathfrak{Q}(u)=0$ and $u\ne0$. Then $u$ is not invertible in $\mathrm{Cl}(V,\mathfrak{Q})$ and the expression $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u$ is not defined; there is no signed two-sided operator $T^{\alpha}_{u,u^{-1}}$, and the reflection in the hyperplane orthogonal to $u$ does not exist as a motion: a hyperplane containing an isotropic vector is not the fixed space of a reflection of the non-degenerate form.
 
-**Proof.** The vector$u$ has $u^2=\mathfrak{Q}(u)=0$, so $u$ is a zero divisor and not a unit, and $T^{\alpha}_{u,u^{-1}}$ is not defined. The hyperplane $u^{\perp}$ is degenerate, and an orthogonal involution fixing it has its $(-1)$-eigenspace a line $\langle w\rangle$ with $B(u,w)=0$ and $w$ nonsingular, in which case the reflection is $\rho_w$, not $\rho_u$; the correspondence attaches a reflection to a nonsingular normal vector and there is none normal to a hyperplane containing an isotropic vector in the intended way. In an indefinite form the isotropic vectors are exactly the obstructions to the naive formula, and the motions they produce are the transvections, treated below.
+**Proof.** The vector$u$ has $u^2=\mathfrak{Q}(u)=0$, so $u$ is a zero divisor and not an invertible element, and $T^{\alpha}_{u,u^{-1}}$ is not defined. The hyperplane $u^{\perp}$ is degenerate, and an orthogonal involution fixing it has its $(-1)$-eigenspace a line $\langle w\rangle$ with $B(u,w)=0$ and $w$ nonsingular, in which case the reflection is $\rho_w$, not $\rho_u$; the correspondence attaches a reflection to a nonsingular normal vector and there is none normal to a hyperplane containing an isotropic vector in the intended way. In an indefinite form the isotropic vectors are exactly the obstructions to the naive formula, and the motions they produce are the transvections, treated below.
 
 ## The Degenerate Case
 
@@ -82,7 +82,7 @@ For a **non-degenerate** form, the reflections of the quadratic space are exactl
 | $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u$ | Reflection attached to a nonsingular vector $u$ |
 | $T^{\alpha}_{u,u^{-1}}=\rho_u$ | Realisation by the signed two-sided operator |
 | $[u]\mapsto\rho_u$ | Bijection nonsingular vectors $/$ scalars $\to$ reflections, $q$ non-degenerate |
-| $\mathfrak{Q}(u)=0$ | Isotropic vector; no reflection, $u$ not a unit |
+| $\mathfrak{Q}(u)=0$ | Isotropic vector; no reflection, $u$ not an invertible element |
 | $\operatorname{rad}(q)=\{r : \langle r,\cdot\rangle=0\}$ | Radical; nonzero for a degenerate form |
 | $t(v)=v+\phi(r)u_0$ | Transvection by the radical; an isometry not realised |
 | $O(V,\mathfrak{Q})$, $F^{\times}$ | Orthogonal group; degenerate line case $O=F^{\times}$ |

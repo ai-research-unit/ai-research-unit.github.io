@@ -30,7 +30,7 @@ The two-sided operators are the products of a left and a right multiplication, $
 
 *Proof.* The law is associative, the identity is as displayed, and $(\tilde q_3,\tilde q_4)\mapsto L_{\tilde q_3}R_{\tilde q_4}$ is multiplicative by the law. The map is **not** injective: $L_{\lambda\tilde q_3}R_{\lambda^{-1}\tilde q_4}=L_{\tilde q_3}R_{\tilde q_4}$ for every real $\lambda\neq0$, because the real scalar is central. The kernel is read from the agreement criterion at $(\tilde q_5,\tilde q_6)=(e_t,e_t)$, namely $\tilde q_3=\lambda e_t$ and $\tilde q_4=\lambda^{-1}e_t$, which is the displayed group; so $\mathcal T$ is a quotient of $\mathbb{H}\times\mathbb{H}_{\mathrm{opp}}$ and not the product itself.
 
-**Corollary (the units).** $L_{\tilde q_3}R_{\tilde q_4}$ is invertible exactly when $\tilde q_3\neq0$ and $\tilde q_4\neq0$, with inverse $L_{\tilde q_3^{-1}}R_{\tilde q_4^{-1}}$.
+**Corollary (the invertibles).** $L_{\tilde q_3}R_{\tilde q_4}$ is invertible exactly when $\tilde q_3\neq0$ and $\tilde q_4\neq0$, with inverse $L_{\tilde q_3^{-1}}R_{\tilde q_4^{-1}}$.
 
 *Proof.* In the product monoid an element $(\tilde q_3,\tilde q_4)$ is invertible exactly when both factors are, and the inverse is $(\tilde q_3^{-1},\tilde q_4^{-1})$; in the operator monoid the inverse is $L_{\tilde q_3^{-1}}R_{\tilde q_4^{-1}}$.
 
@@ -52,7 +52,7 @@ $$ \boxed{\; L_{\tilde q_3}R_{\tilde q_4}^{\sim}=L_{\tilde q_4}R_{\tilde q_3} \;
 
 *Proof.* For $T=L_{\tilde q_3}R_{\tilde q_4}$ invertible, preservation of the form is equivalent to $T^{\sim}T=\mathrm{id}$; if $\tilde q_3=0$ or $\tilde q_4=0$ then $T=0$, which preserves the form only if the form were zero. Now by the composition law $T^{\sim}T=L_{\tilde q_4}R_{\tilde q_3}L_{\tilde q_3}R_{\tilde q_4}=L_{\tilde q_4\tilde q_3}R_{\tilde q_4\tilde q_3}$, and $L_{\tilde q_5}R_{\tilde q_6}=\mathrm{id}$ exactly when $\tilde q_5\tilde q\tilde q_6=\tilde q$ for all $\tilde q$; at $\tilde q=e_t$ this gives $\tilde q_5\tilde q_6=e_t$, so $\tilde q_6=\tilde q_5^{-1}$, and substituting gives $\tilde q_5\tilde q\tilde q_5^{-1}=\tilde q$ for all $\tilde q$, that is $\tilde q_5$ central. Hence $\tilde q_5=\tilde q_4\tilde q_3$ is central with $\tilde q_5^2=e_t$; a central element with $\tilde q_5^2=e_t$ is $\pm e_t$, so $\tilde q_4\tilde q_3=\pm e_t$. Conversely $\tilde q_4\tilde q_3=\pm e_t$ makes $\tilde q_4=\pm\tilde q_3^{-1}$, and then $T(\tilde q)=\tilde q_3\tilde q(\pm\tilde q_3^{-1})=\pm\tilde q_3\tilde q\tilde q_3^{-1}$, which preserves the form.
 
-**Corollary.** The form-preserving two-sided operators are the operators $\pm\operatorname{Ad}_{\tilde q_3}$, where $\operatorname{Ad}_{\tilde q_3}(\tilde q)=\tilde q_3\tilde q\tilde q_3^{-1}$ is the inner automorphism by a unit; on the parameter the criterion reads $\tilde q_4=\pm\tilde q_3^{-1}$.
+**Corollary.** The form-preserving two-sided operators are the operators $\pm\operatorname{Ad}_{\tilde q_3}$, where $\operatorname{Ad}_{\tilde q_3}(\tilde q)=\tilde q_3\tilde q\tilde q_3^{-1}$ is the inner automorphism by an invertible element; on the parameter the criterion reads $\tilde q_4=\pm\tilde q_3^{-1}$.
 
 **Corollary.** The sign $+$ operators form the group $\operatorname{Ad}(\mathbb{H}^{\times})\cong\mathbb{H}^{\times}/\mathbb{R}^{\times}$ of inner automorphisms, and the sign $-$ operators are the negatives of these; the transpose on the form-preserving family is the inverse, $\operatorname{Ad}_{\tilde q_3}^{\sim}=\operatorname{Ad}_{\tilde q_3}^{-1}=\operatorname{Ad}_{\tilde q_3^{-1}}$.
 
@@ -90,4 +90,4 @@ The two-sided operators $L_{\tilde q_3}R_{\tilde q_4}(\tilde q)=\tilde q_3\tilde
 
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the two-sided operators and their composition.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the inner automorphisms of a central simple algebra and the Skolem–Noether theorem.
-- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for the unit group of a division ring and its centre.
+- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2nd ed. 2001), for the group of invertibles of a division ring and its centre.

@@ -4,7 +4,7 @@
 
 This article defines the elementary functions of a split-complex variable: the exponential, the logarithm, the powers and roots, and the trigonometric and hyperbolic functions. The hyperbolic pair is the intrinsic family of the algebra, and the circular pair is included for comparison with the complex and reduced biquaternion cases. Each function is defined once, its basic properties are recorded, and its value is read on the two eigenvalues.
 
-The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*; they are collected in §*The Eigenvalue Data* and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of units are those of *Norm and Invertibility in the General Split-Complex Algebra*; the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*.
+The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Invertibles*; they are collected in §*The Eigenvalue Data* and used without proof. The idempotent coordinates and the eigenvalues are the same two numbers; this article writes $\lambda_\pm$ whenever the number is read as a value at an idempotent. The algebra, its basis and its conjugation are those of *Split-Complex Algebra*; the norm and the group of invertibles are those of *Norm and Invertibility in the General Split-Complex Algebra*; the idempotents are those of *Square Roots of One and the Idempotents of the Split-Complex Algebra*.
 
 **Plan.** The spectral setting is recalled first, with the two regimes and the Idempotent Principle (§*The Spectral Setting*). The exponential and the logarithm follow, with their kernels, images and fibres (§*The Exponential*, §*The Logarithm*); the powers and roots follow from the logarithm (§*Powers and Roots*); the trigonometric and hyperbolic functions and their inverses follow (§*The Trigonometric and Hyperbolic Functions*); the relations to the real and complex cases close the theory (§*Relations to the Neighbouring Cases*). The results are collected in tables in §*Summary*, including the comparison with the reduced biquaternion and biquaternion cases.
 
@@ -16,7 +16,7 @@ Every numerical value displayed below was recomputed in double precision.
 
 ### The Eigenvalue Data
 
-The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Units*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
+The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*The Spectrum and the Characteristic Polynomial*, §*The Eigenprojections* and §*Powers, Polynomial Calculus, and the Group of Invertibles*. The definitions, the decomposition and their proofs are there; this article uses them and does not repeat them. The table collects the results in the form used below.
 
 | Quantity | Value |
 |---|---|
@@ -27,7 +27,7 @@ The spectral data are those of *Eigenvalue Decomposition and Eigenbasis of a Spl
 | Characteristic polynomial | $p_Q(X)=(X-\lambda_+)(X-\lambda_-)$ |
 | Distinctness | $\lambda_+\neq\lambda_-$ exactly when $q'\neq0$ |
 | Norm | $\langle Q\rangle_{*}=q^2-q'^2=\lambda_+\lambda_-$ |
-| Unit criterion | $Q$ is a unit exactly when $\lambda_+\lambda_-\neq0$ |
+| Unit criterion | $Q$ is invertible exactly when $\lambda_+\lambda_-\neq0$ |
 | Polynomial calculus | $f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$ for every polynomial $f$ |
 | Lattice | trivial, $\ker\exp=\{0\}$: the exponential is injective |
 
@@ -35,7 +35,7 @@ The idempotent coordinates and the eigenvalues are the same two numbers; this ar
 
 ### The Regimes
 
-The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the units and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Degenerate Regimes*.
+The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the characteristic polynomial; the distinct regime splits into the invertibles and the zero divisors. The table gives what each regime changes for the functions below; the spectral data of each regime are those of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Degenerate Regimes*.
 
 | Regime | Condition | Consequence for the functions |
 |---|---|---|
@@ -43,7 +43,7 @@ The algebra has two spectral regimes, read from the discriminant $4q'^2$ of the 
 | Zero divisor | $q'\neq0$, $\langle Q\rangle_{*}=0$ | $\exp$ does not reach it, so $\log$ is undefined; a trigonometric or hyperbolic value may be a zero divisor |
 | Scalar | $q'=0$ | one eigenvalue; the two-term spectral form is a non-unique refinement |
 
-The algebra is reduced: the only nilpotent is $0$ (*The Specificities of the Split-Complex Algebra*). There is therefore no nilpotent regime. The distinct regime splits into the units and the zero divisors according to whether the norm vanishes, and the scalar regime is the only spectral degeneration. In the scalar regime the eigenvalue decomposition has one term, and the two-term writing is a non-unique refinement; the functions below are unaffected, because their spectral form is continuous in $\lambda_\pm$.
+The algebra is reduced: the only nilpotent is $0$ (*The Specificities of the Split-Complex Algebra*). There is therefore no nilpotent regime. The distinct regime splits into the invertibles and the zero divisors according to whether the norm vanishes, and the scalar regime is the only spectral degeneration. In the scalar regime the eigenvalue decomposition has one term, and the two-term writing is a non-unique refinement; the functions below are unaffected, because their spectral form is continuous in $\lambda_\pm$.
 
 ### The Idempotent Principle
 
@@ -57,7 +57,7 @@ $$
 
 For a function defined by an integral, an inverse or another real formula, the same display is the definition of its split-complex extension: the formula is applied to the two eigenvalues, and the value is defined exactly when the real formula is defined at both $\lambda_\pm$.
 
-**Proof.** *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*, gives $Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ for every $n\geq0$, with $\Pi_\pm$ orthogonal idempotents and $\Pi_++\Pi_-=1$. Summing termwise,
+**Proof.** *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Invertibles*, gives $Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-$ for every $n\geq0$, with $\Pi_\pm$ orthogonal idempotents and $\Pi_++\Pi_-=1$. Summing termwise,
 
 $$
 \sum_{n\geq0}c_nQ^n
@@ -296,7 +296,7 @@ $$
 \frac{d}{dQ}\log Q=\frac{1}{\lambda_+}\Pi_++\frac{1}{\lambda_-}\Pi_-=\frac{1}{Q}.
 $$
 
-The last equality is the inverse formula of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Units*. Both eigenvalues are positive on the future cone, so no exceptional point occurs inside the domain.
+The last equality is the inverse formula of *Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number*, §*Powers, Polynomial Calculus, and the Group of Invertibles*. Both eigenvalues are positive on the future cone, so no exceptional point occurs inside the domain.
 
 ### Summary of the Logarithm
 
@@ -458,7 +458,7 @@ $$
 \operatorname{csch}Q=\frac{1}{\sinh Q}.
 $$
 
-They are defined wherever the denominator is a unit. The eigenvalues of $\cosh Q$ are $\cosh\lambda_\pm\geq1$, so $\cosh Q$ is a unit for every $Q$ and $\tanh$ is defined on all of $\mathbb{C}_{\mathrm{spl}}$. The eigenvalues of $\sin Q$, $\cos Q$ and $\sinh Q$ can vanish on the sets of the table, and there the corresponding quotient is undefined; for $\coth$ this is the null cone. On the intrinsic hyperbolic pair the coefficient forms are
+They are defined wherever the denominator is invertible. The eigenvalues of $\cosh Q$ are $\cosh\lambda_\pm\geq1$, so $\cosh Q$ is invertible for every $Q$ and $\tanh$ is defined on all of $\mathbb{C}_{\mathrm{spl}}$. The eigenvalues of $\sin Q$, $\cos Q$ and $\sinh Q$ can vanish on the sets of the table, and there the corresponding quotient is undefined; for $\coth$ this is the null cone. On the intrinsic hyperbolic pair the coefficient forms are
 
 $$
 \tanh Q=\frac{\tanh q+j\tanh q'}{1+j\tanh q\tanh q'},\qquad
@@ -564,7 +564,7 @@ The table compares the elementary functions across the three algebras; in the bi
 | Logarithm domain | $q>\lvert q'\rvert$ | $\lambda_1\lambda_2\neq0$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 | Logarithm | $\log\lambda_+\Pi_++\log\lambda_-\Pi_-$ | $\log\lambda_1\Pi_++\log\lambda_2\Pi_-$ | $\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-$, $\mu_\pm=\operatorname{Log}\lambda_\pm+2\pi i k_\pm$; Jordan formula if $B=0$ |
 | Powers | $Q^P=\lambda_+^P\Pi_++\lambda_-^P\Pi_-$, $P\in\mathbb{R}$, single-valued | $\breve Q^s=\lambda_1^s\Pi_++\lambda_2^s\Pi_-$, multivalued for non-integer $s$ | $\tilde Q^\alpha=\exp(\alpha\operatorname{Log}\tilde Q)$, multivalued; continuous families on the scalar axis |
-| Square roots | $4$, $2$, $1$ or $0$, by the signs of $\lambda_\pm$ | $4$ for a unit, $2$ for a zero divisor, $1$ for $0$ | $4$ for a generic unit, $2$ for a zero divisor or a Jordan unit, none for a nonzero nilpotent, a continuous family in the scalar case |
+| Square roots | $4$, $2$, $1$ or $0$, by the signs of $\lambda_\pm$ | $4$ for an invertible element, $2$ for a zero divisor, $1$ for $0$ | $4$ for a generic unit, $2$ for a zero divisor or a Jordan unit, none for a nonzero nilpotent, a continuous family in the scalar case |
 | Trigonometric | $\sin q\cos q'+j\cos q\sin q'$ | $\sin Q_{\blacktriangle}\cos Q_{\blacktriangledown}+j\cos Q_{\blacktriangle}\sin Q_{\blacktriangledown}$ | $\sin Q_t\cosh B\,e_t+\cos Q_t\sinh B\,\vec U$ |
 | Hyperbolic | $\sinh q\cosh q'+j\cosh q\sinh q'$ | $\sinh Q_{\blacktriangle}\cosh Q_{\blacktriangledown}+j\cosh Q_{\blacktriangle}\sinh Q_{\blacktriangledown}$ | $\sinh Q_t\cos B\,e_t+\cosh Q_t\sin B\,\vec U$ |
 

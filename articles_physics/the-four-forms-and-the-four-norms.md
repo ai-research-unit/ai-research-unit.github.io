@@ -32,7 +32,7 @@ with $\varepsilon=(1,-1,-1,-1)$.
 | the twelve operations and their scalar parts, the symmetrisation that keeps a form and the antisymmetrisation that kills it, the distinction over $\mathbb{C}$ and the coincidence over $\mathbb{R}$ | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) |
 | the four general products whose scalar parts the four forms are, the identities among the four scalar parts, the trace convention | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the restriction of the four forms and the four norms to the six remarkable subspaces, the signatures, the definiteness on each | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| the $\natural$-regular and $\natural$-degenerate partition, the unit group, the null cone, the criterion of invertibility | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the $\natural$-regular and $\natural$-degenerate partition, the group of invertibles, the null cone, the criterion of invertibility | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the Krein partition, the two sectors of the Krein norm, the indefinite geometry | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | the algebraic norm of a form and its distinction from the topological norm | [The Norm Defined by a Form](../articles_maths/the-norm-defined-by-a-form.html) |
 | the one topological norm of the space and its square root | [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html) |
@@ -231,23 +231,23 @@ so the two bilinear forms are conjugate copies and one group serves both. A Herm
 
 **Each letter cuts the algebra in two by the vanishing of its norm.**
 
-| letter | degenerate set | $\dim_{\mathbb R}$ | contains a unit | equals the non-units |
+| letter | degenerate set | $\dim_{\mathbb R}$ | contains a unit | equals the non-invertibles |
 | --- | --- | --- | --- | --- |
 | $P$ | the complex cone $\{P=0\}$ | $6$ | yes | no |
 | $N$ | $\mathcal N$, the origin together with the zero divisors | $6$ | no | **yes** |
 | $H$ | $\{0\}$ | $0$ | no | no |
 | $\mathrm{Kr}$ | $\mathcal K$, the Krein cone | $7$ | yes | no |
 
-**Only the $N$ cut is the invertibility partition.** The witness is one element: $e_t+\vec e_x$ is a unit with $P=\mathrm{Kr}=0$ and $N=2$, so the plain and the Krein norms vanish on an invertible element; $H$ is a sum of four non-negative terms and vanishes only at the origin.
+**Only the $N$ cut is the invertibility partition.** The witness is one element: $e_t+\vec e_x$ is invertible with $P=\mathrm{Kr}=0$ and $N=2$, so the plain and the Krein norms vanish on an invertible element; $H$ is a sum of four non-negative terms and vanishes only at the origin.
 
 **The four degenerate sets are pairwise distinct, and four elements witness it.**
 
 | element | $P$ | $N$ | $\mathrm{Kr}$ | what it is |
 | --- | --- | --- | --- | --- |
-| $e_t+\vec e_x$ | $0$ | $2$ | $0$ | a unit |
+| $e_t+\vec e_x$ | $0$ | $2$ | $0$ | an invertible element |
 | $e_t+i\vec e_x$ | $2$ | $0$ | $0$ | a zero divisor |
 | $\vec e_x+i\vec e_y$ | $0$ | $0$ | $-2$ | a zero divisor |
-| $\sqrt2\,e_t+\vec e_x+i\vec e_y$ | $2$ | $2$ | $0$ | a unit |
+| $\sqrt2\,e_t+\vec e_x+i\vec e_y$ | $2$ | $2$ | $0$ | an invertible element |
 
 **The words without a letter are different words.** *Regular* alone is **spectrally regular**, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, and *degenerate* alone is **spectrally degenerate**, $B^{2}=0$. The letter is never omitted when the four norms are meant, because the spectral condition and the norm condition are independent: the entry before this one is about the first, and this one is about the second.
 
@@ -308,7 +308,7 @@ $$
 
 **Read:** the quaternionic norm is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, and it is the determinant of the $2\times2$ image.
 
-**Multiplicativity is a law of composition, and it has one immediate consequence.** The causal type of a composite is the product of the causal types; the units, the zero divisors and the null set are each closed under multiplication; and the level set $N=1$ is a group.
+**Multiplicativity is a law of composition, and it has one immediate consequence.** The causal type of a composite is the product of the causal types; the invertibles, the zero divisors and the null set are each closed under multiplication; and the level set $N=1$ is a group.
 
 **The physical reading is that this is the only measure that survives a product.** A theory that composes operations and asks for an invariant has exactly one candidate, and the candidate is the determinant. The other three measures are destroyed by composition: the weight of a product is not the product of the weights, and the plain norm of a product is not the product of the plain norms.
 
@@ -347,9 +347,9 @@ $$
 
 the Minkowski pairing of the two four-vectors multiplied by $i$, with the relative sign of time and space inside the bracket. The same two elements paired by $N$ give the Euclidean pairing, $i(r'_t h_t+(\vec v,\vec s))$; the difference of the two is the sign of the spatial term, and that sign is the first slot.
 
-**The sharpest warrant for the word *flag* is one comparison.** $P(e_t+\vec e_x)=0$ on a unit, and $P(e_t+i\vec e_x)=2$ on a zero divisor. A function that vanishes on an invertible element and does not vanish on a non-invertible one decides no invertibility, so it cannot be the metric of a theory of reversible operations.
+**The sharpest warrant for the word *flag* is one comparison.** $P(e_t+\vec e_x)=0$ on an invertible element, and $P(e_t+i\vec e_x)=2$ on a zero divisor. A function that vanishes on an invertible element and does not vanish on a non-invertible one decides no invertibility, so it cannot be the metric of a theory of reversible operations.
 
-**The boundary.** The complex cone $\{P=0\}$ is not the light cone and not the zero-divisor cone. It is a six-dimensional complex quadric that cuts across the units and the non-units alike, and no physical set is its image.
+**The boundary.** The complex cone $\{P=0\}$ is not the light cone and not the zero-divisor cone. It is a six-dimensional complex quadric that cuts across the invertibles and the non-invertibles alike, and no physical set is its image.
 
 ### I.7.e — The Volume: the Signed Content and the Krein Cone
 
@@ -430,7 +430,7 @@ $$
 
 **So the mass shell is one of the two symmetric functions of the spectrum and not a third object.** A level set of $N$ is a level set of the product of the two eigenvalues, and the mass is the value of that product on the sector.
 
-**The reading also fixes what the other three measures cannot do.** The rank agrees with $N$ about the cone and says nothing about the value; the weight says nothing about the cone; the plain and Krein norms vanish on units and so say nothing about either.
+**The reading also fixes what the other three measures cannot do.** The rank agrees with $N$ about the cone and says nothing about the value; the weight says nothing about the cone; the plain and Krein norms vanish on the invertibles and so say nothing about either.
 
 **The boundary.** The mass shell is a level set of a form on a sector. The entry derives no mass spectrum, no mass ratio and no quantisation of the level sets.
 
@@ -474,7 +474,7 @@ $$
 
 **Read:** the four norms have four different zero sets, of dimensions $6$, $6$, $0$ and $7$.
 
-**Only the quaternionic one is the set of the non-units, and the others vanish on units.**
+**Only the quaternionic one is the set of the non-invertibles, and the others vanish on the invertibles.**
 
 $$
 \{N=0\}=\{0\}\cup\mathcal Z,\qquad
@@ -529,7 +529,7 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 
 **The entry states no dynamics, no mass value, no gauge group and no state space.** The mass shell is a level set; the charge is a label of a compact group; the interval is a metric and not an equation of motion; the volume is a signed content and not a field.
 
-**The four partitions are four cuts and not one.** A degenerate biquaternion is not the same object as a zero divisor for any letter; only $N$'s cut coincides with the non-units, and only off the origin.
+**The four partitions are four cuts and not one.** A degenerate biquaternion is not the same object as a zero divisor for any letter; only $N$'s cut coincides with the non-invertibles, and only off the origin.
 
 ## Summary
 
@@ -544,7 +544,7 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 - The interval is a signature and not a letter: it is $P$, of signature $(1,3)$, on the real quaternions and $N$, of signature $(3,1)$, on the material sector, because $\sum_\mu Q_\mu^{2}$ takes a minus from an imaginary coordinate while $P$ takes it from the sign matrix.
 - Central multiplication exchanges the two sectors and reverses both bilinear norms, $P(i\tilde Q)=-P(\tilde Q)$ and $N(i\tilde Q)=-N(\tilde Q)$, while leaving both real measures unchanged.
 - The isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $\mathrm U(4)$ and $\mathrm U(1,3)$, of real dimensions $12$, $12$, $16$ and $16$; the quaternion conjugation lies in all four.
-- Only the quaternionic cut is the invertibility partition; the plain and Krein norms vanish on units, the Hermitian norm only at the origin, and the four degenerate sets are pairwise distinct.
+- Only the quaternionic cut is the invertibility partition; the plain and Krein norms vanish on the invertibles, the Hermitian norm only at the origin, and the four degenerate sets are pairwise distinct.
 - On real coefficients the four collapse to two, $P=\mathrm{Kr}$ and $N=H$, so a real computation cannot tell the plain pairing from the Krein volume, nor the quaternionic norm from the Hermitian one.
 - The four norms are the measures of one element; they are not the four readings of one element — norm, rank, charge and scale — and only the norm is the mass.
 - The imaginary part of a sesquilinear form is an alternating form: it is non-degenerate on the two complex subspaces, of ranks $2$ and $6$, and it vanishes on the four real-type ones, because there the Hermitian form is real-valued.
@@ -564,8 +564,8 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 | $O_4(\mathbb{C})$, $\mathrm U(4)$, $\mathrm U(1,3)$ | the isometry groups, of real dimensions $12$, $16$ and $16$ |
 | $\omega(\tilde X,\tilde Y)$ | the alternating companion, $\operatorname{Im}H$, of ranks $2$ and $6$ on the complex subspaces and $0$ on the four real-type ones |
 | the complex cone, $\mathcal N$, $\mathcal K$ | the null sets of $P$, of $N$ and of $\mathrm{Kr}$; that of $H$ is $\{0\}$ |
-| $P$-regular, $N$-regular, $H$-regular, $\mathrm{Kr}$-regular | $\Phi(\tilde Q)\neq0$ for the four letters; only $N$-regular is the unit group |
-| $\Phi$-degenerate | $\Phi(\tilde Q)=0$; only the $N$ set is the non-unit set |
+| $P$-regular, $N$-regular, $H$-regular, $\mathrm{Kr}$-regular | $\Phi(\tilde Q)\neq0$ for the four letters; only $N$-regular is the group of invertibles |
+| $\Phi$-degenerate | $\Phi(\tilde Q)=0$; only the $N$ set is the non-invertible set |
 | $\lVert\tilde Q\rVert$ | the topological norm, $\bigl(H(\tilde Q)\bigr)^{1/2}$ |
 | $\mathcal Z$ | the zero divisors; $\{N=0\}=\{0\}\cup\mathcal Z$ |
 
@@ -575,4 +575,4 @@ and the two are different objects: the null set of $N$ on the algebra is six-dim
 
 **In this category.** *The Four Products: Composition, Probability, Causality and Gauge* supplies the products whose scalar parts the four forms are, and the two dials that index them. *The Spectrum and the Two Modes* supplies the two invariants of an element, the trace and the norm, and the pair whose product is the interval. *The Two Sectors: Split and the Four Bridges* supplies the cross-sector pairing and the restriction table.
 
-**The sources of this entry.** [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) is the mathematical treatment of the same four labels, with the change of scalars and the four readings of one element. [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html) is the indefinite geometry at large. [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) is the weight read as a probability. [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) is the invertibility cut. [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) is the cone as a physical boundary.
+**The sources of this entry.** [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) is the mathematical treatment of the same four labels, with the change of scalars and the four readings of one element. [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html) is the indefinite geometry at large. [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) is the weight read as a probability. [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) is the invertibility cut. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) is the cone as a physical boundary.

@@ -22,7 +22,7 @@ with two ordinary quaternions as coordinates. The algebra is semisimple and **no
 $$
 \mathsf M(\tilde Q)=\begin{pmatrix}\tilde Q_{+}&0\\ 0&\tilde Q_{-}\end{pmatrix}\in M_{2}(\mathbb{H}),
 $$
-a faithful image of real dimension eight inside the sixteen of $M_{2}(\mathbb{H})$. The matrix is diagonal because $j$ is a unit of the algebra and not a nilpotent and not a distinct conjugate: multiplying by $j$ permutes nothing, it only flips the sign of the second coordinate, so the two off-diagonal blocks of the multiplication table vanish identically.
+a faithful image of real dimension eight inside the sixteen of $M_{2}(\mathbb{H})$. The matrix is diagonal because $j$ is invertible in the algebra and not a nilpotent and not a distinct conjugate: multiplying by $j$ permutes nothing, it only flips the sign of the second coordinate, so the two off-diagonal blocks of the multiplication table vanish identically.
 
 **What the model shows.** The block diagonal form is the semisimplicity made visible: the algebra is a product, the module is a direct sum, and every computation separates into two independent quaternionic computations. The determinant is the product of the two reduced norms, $N(\tilde Q_{+})N(\tilde Q_{-})$, a nonnegative real, and it vanishes exactly on the zero divisors, which are the elements with one vanishing block. The trace is a **quaternion** and not a real, it is not central, and only its scalar part is an invariant. The spectrum is a pair of quaternions and not a family of scalars, and the block diagonalisation is the spectral theorem. And the four fixed subspaces of the conjugations are **block conditions**: equal blocks, conjugate blocks, and their negatives.
 
@@ -85,7 +85,7 @@ b=0,\qquad c=0 .
 $$
 The test is **linear** and it is stricter than any determinantal condition: the model is a subspace of codimension eight, and there is no question of a rank condition because the image never leaves the diagonal. This is the only category of the block in which even the span of the family falls short of the ambient, and the reason is that the algebra is not simple.
 
-**The centraliser.** The matrices of $M_{2}(\mathbb{H})$ commuting with every diagonal matrix are the diagonal matrices, because the blocks are division rings and a nonzero off-diagonal entry would have to annihilate a unit. So
+**The centraliser.** The matrices of $M_{2}(\mathbb{H})$ commuting with every diagonal matrix are the diagonal matrices, because the blocks are division rings and a nonzero off-diagonal entry would have to annihilate an invertible element. So
 $$
 \mathsf M(\mathbb{B}_{\mathrm{spl}})'=\mathsf M(\mathbb{B}_{\mathrm{spl}}),\qquad \mathsf M(\mathbb{B}_{\mathrm{spl}})''=\mathsf M(\mathbb{B}_{\mathrm{spl}}),
 $$
@@ -230,13 +230,13 @@ each block contributing $0$ or $1$ because each block is a division ring, and th
 $$
 \operatorname{rank}_{\mathbb{R}}\mathsf L_{\tilde Q}\in\{0,4,8\}.
 $$
-The three values are attained: $0$ at the zero element, $4$ on the union of the two punctured ideals, and $8$ on the units. This ladder of three separated values, with no intermediate rank, is the parametrisation of the singular set of the category: a quaternion is invertible unless it is zero, so a block is either full or empty.
+The three values are attained: $0$ at the zero element, $4$ on the union of the two punctured ideals, and $8$ on the invertibles. This ladder of three separated values, with no intermediate rank, is the parametrisation of the singular set of the category: a quaternion is invertible unless it is zero, so a block is either full or empty.
 
-**The unit group.** The determinant is nonzero exactly when both blocks are nonzero, so
+**The group of invertibles.** The determinant is nonzero exactly when both blocks are nonzero, so
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times}\cong\mathbb{H}^{\times}\times\mathbb{H}^{\times}\cong\bigl(SU(2)\times\mathbb{R}_{>0}\bigr)^{2},
 $$
-of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the unit group is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.
+of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the group of invertibles is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.
 
 ## The Spectral Projectors
 
@@ -362,7 +362,7 @@ whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}
 | anti-Hermitian $\mathbb{B}_{\Phi}$ | $\tilde Q^{\flat}=\tilde Q$ | $\tilde Q_{-}=-\tilde Q_{+}^{\natural}$ | $\mathrm{diag}(u,-u^{\natural})$ | $4$ |
 | the centre | $[\tilde Q,\cdot]=0$ | both blocks central, $\tilde Q_{\pm}\in\mathbb{R}$ | $\mathrm{diag}(a,b)$, $a,b\in\mathbb{R}$ | $2$ |
 | the zero divisors | one block zero | $\tilde Q_{+}=0$ or $\tilde Q_{-}=0$ | rank $4$ | $4$, two components |
-| the units | both blocks nonzero | $\tilde Q_{\pm}\neq0$ | rank $8$ | open, dense |
+| the invertibles | both blocks nonzero | $\tilde Q_{\pm}\neq0$ | rank $8$ | open, dense |
 | the idempotents | each block in $\{0,1\}$ | four combinations | $0$, $1$, $\tilde E_{11}$, $\tilde E_{22}$ | four points |
 | the nilpotents | none but zero | both blocks zero | $0$ | one point |
 

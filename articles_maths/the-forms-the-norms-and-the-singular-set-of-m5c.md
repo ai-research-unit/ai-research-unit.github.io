@@ -56,9 +56,9 @@ It is not additive: $\det(A+B)\ne\det A+\det B$ in general.
 
 **Proof.** Each of the $5!$ terms in the Leibniz formula contains exactly one entry from each of the five rows and columns, so the degree is $5$; the multiplicativity is the standard theorem of determinants; the identity has determinant $1$. For the failure of additivity, take $A=B=I$: $\det(2I)=32\ne2=\det I+\det I$.
 
-**Corollary.** The determinant is a **multiplicative form** of degree $5$: it is a polynomial that converts the algebra product into the product of scalars. The zero set is the set of non-units.
+**Corollary.** The determinant is a **multiplicative form** of degree $5$: it is a polynomial that converts the algebra product into the product of scalars. The zero set is the set of non-invertibles.
 
-**Proof.** $\det(AB)=\det A\det B$ and $\det A\ne0$ iff $A$ is invertible; the zero set is the complement of the unit group.
+**Proof.** $\det(AB)=\det A\det B$ and $\det A\ne0$ iff $A$ is invertible; the zero set is the complement of the group of invertibles.
 
 ### The Norm of a Matrix
 
@@ -215,7 +215,7 @@ and complex codimension $(5-r)^2$. The exact rank-$r$ stratum $M_5^{(r)}\setminu
 
 **Proof.** $\langle A,A\rangle_F=0$ implies $A=0$; $\Sigma$ contains nonzero matrices (the nilpotents), so it is not the null set.
 
-**Corollary.** The determinant zero set and the isotropic cone of the trace pairing are different hypersurfaces. The first is the set of non-units; the second is the set of matrices with $\operatorname{tr}(A^2)=0$.
+**Corollary.** The determinant zero set and the isotropic cone of the trace pairing are different hypersurfaces. The first is the set of non-invertibles; the second is the set of matrices with $\operatorname{tr}(A^2)=0$.
 
 **Proof.** The determinant vanishes on every singular matrix; $\operatorname{tr}(A^2)$ vanishes on the nilpotents and on many other matrices; the two equations are different.
 

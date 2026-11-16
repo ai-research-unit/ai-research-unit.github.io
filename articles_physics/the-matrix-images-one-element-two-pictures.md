@@ -191,7 +191,7 @@ $$
 J=i\vec e_x,\qquad J^{2}=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ ,
 $$
 
-and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be a unit, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{12}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.
+and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be an invertible element, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{12}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.
 
 **The boundary.** The statement is structural: it says which kind of action can couple the two copies, and it says that the coupling element must be off the cone. It does not give the coupling a value, and it does not produce a mass spectrum. The magnitude of the mass is an input, and the algebra is scale-free.
 
@@ -235,7 +235,7 @@ $$
 
 **One zero set, three meanings.** The determinant vanishes on the light cone, on the boundary of the state space, and on the set of pure states, and these are three descriptions of one locus in three slices. Purity is affine in the determinant on the trace-one slice.
 
-**The image makes invertibility a determinant.** A unit is an element with $N\neq0$, so in the matrix image a unit is a matrix with non-zero determinant. The algebraic criterion of the previous entry and the matrix criterion are the same criterion, and the zero-divisor cone is the determinant's vanishing set.
+**The image makes invertibility a determinant.** an invertible element is an element with $N\neq0$, so in the matrix image an invertible element is a matrix with non-zero determinant. The algebraic criterion of the previous entry and the matrix criterion are the same criterion, and the zero-divisor cone is the determinant's vanishing set.
 
 **The boundary.** These are three restrictions of one function to three real slices, not three quantities. A statement about the determinant must say which slice it is on, or it will read an interval as a probability weight.
 
@@ -349,7 +349,7 @@ $$
 - Additive quantities double, multiplicative ones square, the spectrum repeats, and the minimal polynomial is unchanged. The element has two eigenmodes, not four.
 - The determinant is the norm at size two and its square at size four; only the zero sets agree, and the zero set is the light cone, the state-space boundary and the set of pure states in three slices.
 - The $2\times2$ image is the qubit and it has one side. The second side appears only when the element acts on a carrier.
-- Left multiplication preserves the copy index, so a mass term is a right multiplication, and the element that carries it must be a unit because the mass is a bijection.
+- Left multiplication preserves the copy index, so a mass term is a right multiplication, and the element that carries it must be an invertible element because the mass is a bijection.
 - The factor $i$ in the Pauli correspondence separates the anti-Hermitian generators from the Hermitian observables.
 - A boost stores half its rapidity in the element and the whole of it in the congruence; that factor is the double cover.
 - The central phase is the fibre of the ray map and it acts trivially in the two-sided operator, so it is not an observable.

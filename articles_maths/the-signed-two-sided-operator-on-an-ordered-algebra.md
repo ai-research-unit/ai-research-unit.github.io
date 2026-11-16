@@ -29,7 +29,7 @@ The ordered algebra, the left and right multiplications and their positivity are
 
 ## The Grade Involution and the Grading
 
-**Definition.** A **grade involution** of an algebra $A$ is an algebra automorphism $\alpha$ with $\alpha^2 = \mathrm{id}$. It is **inner** when $\alpha(x) = uxu^{-1}$ for a unit $u$, and **positive** when it preserves the cone, $\alpha(A_+)\subseteq A_+$.
+**Definition.** A **grade involution** of an algebra $A$ is an algebra automorphism $\alpha$ with $\alpha^2 = \mathrm{id}$. It is **inner** when $\alpha(x) = uxu^{-1}$ for an invertible element $u$, and **positive** when it preserves the cone, $\alpha(A_+)\subseteq A_+$.
 
 **Proposition (the grading).** A grade involution decomposes $A$ as
 

@@ -29,9 +29,9 @@ The monomials $1, x, x^2, \dots$ form a $k$-basis, so $k[x]$ is infinite-dimensi
 
 *Proof.* The coefficient of $x^{d_f + d_g}$ in $fg$ is the product of the leading coefficients of $f$ and $g$, which is nonzero in a field; all higher coefficients vanish. Hence the leading coefficient of $fg$ does not vanish and the degree is the sum. A product of nonzero polynomials is then nonzero, so there are no zero divisors.
 
-**Corollary (units).** The units of $k[x]$ are exactly the nonzero constants, $k[x]^\times = k^\times$.
+**Corollary (units).** The invertibles of $k[x]$ are exactly the nonzero constants, $k[x]^\times = k^\times$.
 
-*Proof.* If $fg = 1$ then $\deg f + \deg g = 0$, so $f$ and $g$ are constants; conversely every nonzero constant is a unit.
+*Proof.* If $fg = 1$ then $\deg f + \deg g = 0$, so $f$ and $g$ are constants; conversely every nonzero constant is invertible.
 
 ## The Universal Property
 
@@ -81,9 +81,9 @@ The bound fails over a ring with zero divisors, and this failure is precisely wh
 
 ## Ideals and Quotients
 
-**Theorem ($k[x]$ is a principal ideal domain).** Every ideal $I$ of $k[x]$ is $(f)$ for some polynomial $f$, unique up to multiplication by a unit if $I \neq 0$.
+**Theorem ($k[x]$ is a principal ideal domain).** Every ideal $I$ of $k[x]$ is $(f)$ for some polynomial $f$, unique up to multiplication by an invertible element if $I \neq 0$.
 
-*Proof.* If $I \neq 0$, choose $f \in I$ of least degree; for any $g \in I$ the division algorithm gives $g = qf + r$ with $\deg r < \deg f$, and $r = g - qf \in I$, so $r = 0$ by minimality of $\deg f$. Hence $I = (f)$. Uniqueness up to units follows from $(f) = (g)$ implying $f$ and $g$ divide each other, hence are scalar multiples.
+*Proof.* If $I \neq 0$, choose $f \in I$ of least degree; for any $g \in I$ the division algorithm gives $g = qf + r$ with $\deg r < \deg f$, and $r = g - qf \in I$, so $r = 0$ by minimality of $\deg f$. Hence $I = (f)$. Uniqueness up to invertibles follows from $(f) = (g)$ implying $f$ and $g$ divide each other, hence are scalar multiples.
 
 **Corollary (maximal ideals and fields).** For $f \neq 0$ the following are equivalent: $(f)$ is maximal; $(f)$ is prime; $f$ is irreducible. In that case $k[x]/(f)$ is a field, of degree $\dim_k k[x]/(f) = \deg f$ over $k$.
 
@@ -127,7 +127,7 @@ $$
 
 **Theorem (Hilbert basis theorem, standard).** If $k$ is a field, then every ideal of $k[x_1,\dots,x_n]$ is finitely generated; the algebra is therefore Noetherian.
 
-**Remark (loss of principality).** For $n \geq 2$ the algebra $k[x_1,\dots,x_n]$ is not a principal ideal domain. The ideal $(x_1, x_2)$ of $k[x_1,x_2]$ is not principal: if it were $(p)$ for a single $p$, then $p$ would divide both $x_1$ and $x_2$; since $x_1$ and $x_2$ are irreducible and not associates, $p$ would be a unit, and then $(p) = k[x_1,x_2] \neq (x_1,x_2)$. The ideal $(x_1,x_2)$ is maximal, with quotient $k$, and it is the common vanishing locus of the two coordinate functions at the origin.
+**Remark (loss of principality).** For $n \geq 2$ the algebra $k[x_1,\dots,x_n]$ is not a principal ideal domain. The ideal $(x_1, x_2)$ of $k[x_1,x_2]$ is not principal: if it were $(p)$ for a single $p$, then $p$ would divide both $x_1$ and $x_2$; since $x_1$ and $x_2$ are irreducible and not associates, $p$ would be an invertible element, and then $(p) = k[x_1,x_2] \neq (x_1,x_2)$. The ideal $(x_1,x_2)$ is maximal, with quotient $k$, and it is the common vanishing locus of the two coordinate functions at the origin.
 
 **Theorem (Nullstellensatz, standard).** If $k$ is algebraically closed, the maximal ideals of $k[x_1,\dots,x_n]$ are exactly the ideals $(x_1-a_1,\dots,x_n-a_n)$ for points $(a_1,\dots,a_n) \in k^n$, and for any ideal $I$ the radical of $I$ is the set of polynomials vanishing on the common zero set of $I$.
 

@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Throughout this article $\tilde Q$ lies in the **N-regular sector**, so $N\neq0$ and $\tilde Q$ is a unit. The **Hermitian pair** of the biquaternion algebra, also called the **bilinear two-sided operator**, is the operator
+Throughout this article $\tilde Q$ lies in the **N-regular sector**, so $N\neq0$ and $\tilde Q$ is invertible. The **Hermitian pair** of the biquaternion algebra, also called the **bilinear two-sided operator**, is the operator
 
 $$
 \mathrm{Sd}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*},
 $$
 
-the two-sided operator — the default two-sided operator of the corpus — whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.
+the two-sided operator — the default two-sided operator of the corpus — whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of invertibles it is that action composed with a dilation.
 
 **What the norm decides, and what the vector form decides.** The norm decides everything global, and the vector form $B^{2}$ decides only the Jordan type. On the whole N-regular sector the operator is invertible, of rank four, with the whole algebra as image and the central circle $U(1)$ as kernel. The wall $B^{2}=0$ changes the spectrum from the four products $\lambda_i\bar\lambda_j$ of two distinct eigenvalues to a single repeated eigenvalue, and on the Jordan part of the wall it changes the Jordan type from semisimple to one block of size three and one of size one. That is the whole difference, and it is the reason the wall is a part of this article.
 
@@ -95,7 +95,7 @@ $$
 
 The preservation of the two sectors is the structural reason the action splits into two formulas, one per sector, and the reason a two-sided operator cannot mix the Hermitian and the anti-Hermitian parts.
 
-**Corollary (the scaling of the norm).** For every unit $\tilde Q$ and every $\tilde X$,
+**Corollary (the scaling of the norm).** For every invertible $\tilde Q$ and every $\tilde X$,
 
 $$
 \boxed{\;\langle\mathrm{Sd}_{\tilde Q}(\tilde X)\rangle_{\natural}=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{2}\langle\tilde X\rangle_{\natural}\;}.
@@ -627,9 +627,9 @@ $$
 $$
 The two-sided operator is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Exponential on the N-Regular Sector*.
 
-The image of the two-sided operator on the group of units is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the two-sided operator survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
+The image of the two-sided operator on the group of invertibles is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the two-sided operator survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
 
-The phase is the one factor that the two-sided operator does not see. It is visible to the norm, to the determinant and to the module, which is why the polar word carries it; it is invisible to the vector action, which is why the two-sided operator is a representation whose image is the conformal Lorentz group and not the full group of units.
+The phase is the one factor that the two-sided operator does not see. It is visible to the norm, to the determinant and to the module, which is why the polar word carries it; it is invisible to the vector action, which is why the two-sided operator is a representation whose image is the conformal Lorentz group and not the full group of invertibles.
 
 On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{Sd}_{e_t+\vec\Upsilon}$. The nilpotent part $\mathsf N=\mathrm{Sd}_{e_t+\vec\Upsilon}-I=A+B+AB$, with $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, satisfies $\mathsf N^{2}=2AB$, $\mathsf N^{3}=0$, $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^{2}=1$: one Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$. The fixed subspace is two-dimensional, spanned by the spacelike vector $\vec A$ and the null vector $e_t+i\vec c$ with $\vec c=\vec A\times\vec B/a^{2}$. The two spinor slots coalesce into the Jordan chain.
 

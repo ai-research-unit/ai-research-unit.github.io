@@ -211,7 +211,7 @@ Over a field, every matrix is equivalent by row and column operations to $\opera
 
 ### Invertibility
 
-Let $A$ be an $n \times n$ matrix over a commutative ring $R$. If $AB=I$ for some $B$, then taking determinants gives $\det A \cdot \det B=1$, so $\det A$ is a unit of $R$; conversely, if $\det A$ is a unit then the adjugate matrix $A_{\mathrm{adg}}$ satisfies $A\,A_{\mathrm{adg}}=\det(A)I$, so $A$ is invertible with $A^{-1}=(\det A)^{-1}A_{\mathrm{adg}}$. Hence
+Let $A$ be an $n \times n$ matrix over a commutative ring $R$. If $AB=I$ for some $B$, then taking determinants gives $\det A \cdot \det B=1$, so $\det A$ is invertible in $R$; conversely, if $\det A$ is invertible then the adjugate matrix $A_{\mathrm{adg}}$ satisfies $A\,A_{\mathrm{adg}}=\det(A)I$, so $A$ is invertible with $A^{-1}=(\det A)^{-1}A_{\mathrm{adg}}$. Hence
 
 $$
 A \in \operatorname{GL}_n(R) \iff \det A \in R^{\times},
@@ -221,9 +221,9 @@ the determinant being the multilinear alternating function fixed by the treatmen
 
 ### The Failure of Rank–Nullity
 
-Over a ring, Gaussian elimination fails at the step that divides by a pivot: a nonzero non-unit cannot be used to clear a column, and the best available reduction is by elementary row and column operations, which over a principal ideal domain produce the Smith normal form. Rank–nullity is recovered only after passing to the fraction field: a submodule need not be a direct summand, so the basis-extension proof does not carry over, and what remains true for a map of finitely generated modules over a domain is that the **rational rank**, obtained by tensoring with the fraction field $K=\operatorname{Frac}(R)$, is additive on short exact sequences. The numerical identity therefore survives with the rational rank in place of the dimension, but it no longer determines the kernel or the image up to isomorphism, since the rank cannot see torsion. What replaces the rank of a matrix over a principal ideal domain is the Smith normal form, whose nonzero diagonal entries number the rank and whose remaining diagonal entries carry the torsion; this is the content of the modules-over-a-PID article, and it is the form in which rank is invoked for integer matrices and lattices later in the category.
+Over a ring, Gaussian elimination fails at the step that divides by a pivot: a nonzero non-invertible cannot be used to clear a column, and the best available reduction is by elementary row and column operations, which over a principal ideal domain produce the Smith normal form. Rank–nullity is recovered only after passing to the fraction field: a submodule need not be a direct summand, so the basis-extension proof does not carry over, and what remains true for a map of finitely generated modules over a domain is that the **rational rank**, obtained by tensoring with the fraction field $K=\operatorname{Frac}(R)$, is additive on short exact sequences. The numerical identity therefore survives with the rational rank in place of the dimension, but it no longer determines the kernel or the image up to isomorphism, since the rank cannot see torsion. What replaces the rank of a matrix over a principal ideal domain is the Smith normal form, whose nonzero diagonal entries number the rank and whose remaining diagonal entries carry the torsion; this is the content of the modules-over-a-PID article, and it is the form in which rank is invoked for integer matrices and lattices later in the category.
 
-**Example.** Over $R=\mathbb{Z}$ the matrix $A=(2)$ is not invertible, since $2$ is not a unit, and the map $\mathbb{Z}\to\mathbb{Z}$, $x \mapsto 2x$, has kernel $0$ and image $2\mathbb{Z}$ of rational rank $1$, so for this map the rational rank is additive, $1=0+1$. The failure lies elsewhere. The rank cannot see the torsion of the cokernel $\mathbb{Z}/2\mathbb{Z}$, which has rank $0$ although the module is nonzero, and the minimal number of generators is not additive: in the presentation $0 \to \mathbb{Z} \xrightarrow{\cdot 2} \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0$ the kernel $2\mathbb{Z}$ and the cokernel $\mathbb{Z}/2\mathbb{Z}$ each need one generator, while the middle term needs one as well, so no additivity of generator counts can hold. Over the field $\mathbb{Q}$ the same matrix becomes invertible and the cokernel disappears; the difference is exactly the torsion, invisible over a field.
+**Example.** Over $R=\mathbb{Z}$ the matrix $A=(2)$ is not invertible, since $2$ is not invertible, and the map $\mathbb{Z}\to\mathbb{Z}$, $x \mapsto 2x$, has kernel $0$ and image $2\mathbb{Z}$ of rational rank $1$, so for this map the rational rank is additive, $1=0+1$. The failure lies elsewhere. The rank cannot see the torsion of the cokernel $\mathbb{Z}/2\mathbb{Z}$, which has rank $0$ although the module is nonzero, and the minimal number of generators is not additive: in the presentation $0 \to \mathbb{Z} \xrightarrow{\cdot 2} \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0$ the kernel $2\mathbb{Z}$ and the cokernel $\mathbb{Z}/2\mathbb{Z}$ each need one generator, while the middle term needs one as well, so no additivity of generator counts can hold. Over the field $\mathbb{Q}$ the same matrix becomes invertible and the cokernel disappears; the difference is exactly the torsion, invisible over a field.
 
 ## The Trace and the Determinant of a Matrix
 
@@ -278,7 +278,7 @@ A linear system $Ax=b$ is consistent exactly when $\operatorname{rk}A=\operatorn
 | $\delta_{ij}$ | Kronecker delta |
 | $[A\mid b]$ | augmented matrix |
 | $\operatorname{tr}$, $\det$ | trace and determinant |
-| $R^{\times}$ | unit group of a ring $R$ |
+| $R^{\times}$ | group of invertibles of a ring $R$ |
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
 
 

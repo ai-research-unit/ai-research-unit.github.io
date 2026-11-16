@@ -128,7 +128,7 @@ $$
 \vec v = -\frac{\operatorname{Vec}u}{1+\operatorname{Sc}u},
 $$
 
-valid for every unit $u\neq-1$. The two orderings of the inverse coincide in any associative algebra: the factors $1+u$ and $1-u$ are polynomials in $u$, hence commute, so $(1+u)^{-1}(1-u)=(1-u)(1+u)^{-1}$.
+valid for every invertible $u\neq-1$. The two orderings of the inverse coincide in any associative algebra: the factors $1+u$ and $1-u$ are polynomials in $u$, hence commute, so $(1+u)^{-1}(1-u)=(1-u)(1+u)^{-1}$.
 
 For a quaternion $\tilde q$ of modulus $r$ the unit factor is $\tilde u_{\mathrm r}=\tilde q/r$, and the coordinate is
 
@@ -156,7 +156,7 @@ $$
 
 and the common denominator is equal, so $\vec v_1=\vec v_2$.
 
-**Surjectivity.** This is the proposition of §*The Inverse*: for every unit $u\neq-1$ the pure quaternion $\vec v=(1-u)(1+u)^{-1}$ satisfies $u(\vec v)=u$.
+**Surjectivity.** This is the proposition of §*The Inverse*: for every invertible $u\neq-1$ the pure quaternion $\vec v=(1-u)(1+u)^{-1}$ satisfies $u(\vec v)=u$.
 
 The chart is therefore one-to-one, and its image is the sphere with the single point $-1$ removed.
 

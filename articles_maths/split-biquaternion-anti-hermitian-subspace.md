@@ -138,13 +138,13 @@ $$
 
 The signatures of the Hermitian form on the two sectors are complementary, $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$; the map $j$ of the correspondence above exchanges the two.
 
-### Units, Zero Divisors and Nilpotents
+### Invertibles, Zero Divisors and Nilpotents
 
-**Theorem.** For $\tilde{Q} \in \mathbb{B}_{\Phi}$ the following are equivalent: $\tilde{Q}$ is a unit; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. Hence $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent.
+**Theorem.** For $\tilde{Q} \in \mathbb{B}_{\Phi}$ the following are equivalent: $\tilde{Q}$ is invertible; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. Hence $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent.
 
-**Proof.** The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\vec q|^2$ and $r_0\vec q = 0$, forcing $\tilde{Q} = 0$.
+**Proof.** The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is invertible, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\vec q|^2$ and $r_0\vec q = 0$, forcing $\tilde{Q} = 0$.
 
-As on $\mathbb{B}_{\Psi}$, the isotropic cone of the Hermitian form consists of units, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{B}_{\mathrm{spl}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of *Split-Biquaternion Zero Divisors*.
+As on $\mathbb{B}_{\Psi}$, the isotropic cone of the Hermitian form consists of invertibles, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{B}_{\mathrm{spl}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of *Split-Biquaternion Zero Divisors*.
 
 ### The Roots of Minus One
 

@@ -166,7 +166,7 @@ $$
 \langle\tilde q,\tilde q\rangle = \tilde q \tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2,
 $$
 
-which lies in the centre $S$ and is multiplicative, $(\tilde q_1 \tilde q_2)((\tilde q_1 \tilde q_2))^{\natural} = (\tilde q_1\tilde q_1^{\natural})(\tilde q_2 \tilde q_2^{\natural})$, because $\tilde q_1\tilde q_1^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $\langle\tilde q,\tilde q\rangle = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in *Split-Quaternion Zero Divisors*. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of units — is in *Split-Quaternion Norm and Invertibility*.
+which lies in the centre $S$ and is multiplicative, $(\tilde q_1 \tilde q_2)((\tilde q_1 \tilde q_2))^{\natural} = (\tilde q_1\tilde q_1^{\natural})(\tilde q_2 \tilde q_2^{\natural})$, because $\tilde q_1\tilde q_1^{\natural}$ is central. The equation $\tilde q\tilde{q}^{\natural} = 0$, equivalently $\langle\tilde q,\tilde q\rangle = 0$, is the algebraic condition that decides the zero divisors, and the elements on which it holds are studied in *Split-Quaternion Zero Divisors*. No length, no sign and no orthogonal or orthonormal decomposition is read from the inner product in this article; the metrical reading — the signature of the pairings, their isotropy, the resulting classification of the elements and the group of invertibles — is in *Split-Quaternion Norm and Invertibility*.
 
 ## The Idempotents and the Split-Complex Subspaces
 
@@ -243,7 +243,7 @@ so $\vec v \vec e_x - \vec e_x \vec v = -2q_y \vec e_z + 2q_z \vec e_y = 0$, giv
 
 **Theorem (Simplicity).** The split-quaternion algebra is **simple**: it has no two-sided ideal other than $0$ and the algebra itself.
 
-**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is a unit, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{spl}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and
+**Proof.** Let $I \neq 0$ be a two-sided ideal and let $0 \neq \tilde q \in I$. If $\tilde q \tilde{q}^{\natural} \neq 0$ then $\tilde q$ is invertible, by the invertibility criterion of *Split-Quaternion Norm and Invertibility*, so $I = \mathbb{H}_{\mathrm{spl}}$. If $\tilde q \tilde{q}^{\natural} = 0$, then for every real $\lambda$ the element $\tilde q + \lambda$ lies in $I$ and
 
 $$
 (\tilde q + \lambda)\overline{(\tilde q + \lambda)} = \tilde q \tilde{q}^{\natural} + 2\lambda \operatorname{Sc}(\tilde q) + \lambda^2 = \lambda\big(2\operatorname{Sc}(\tilde q) + \lambda\big),
@@ -305,7 +305,7 @@ The eight-dimensional relative of the corpus is treated later in Part V, under S
 
 The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$ is the four-dimensional real algebra with basis $1, \vec e_x, \vec e_y, \vec e_z$, the products $\vec e_x^2 = -e_t$, $\vec e_y^2 = \vec e_z^2 = +e_t$, the anticommutation $\vec e_x \vec e_y = -\vec e_y \vec e_x$ and $\vec e_z = \vec e_x \vec e_y$. It is associative, non-commutative and simple, with centre $\mathbb{R}$, and it is not a division algebra: $1 + \vec e_y$ and $1 - \vec e_y$ are nonzero and multiply to zero.
 
-The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\tilde{q}^{\natural}$ is the Clifford conjugation. The diagonal product $\tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of units and the action of the group on $V$ are treated in *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
+The algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$, and its conjugation $\tilde{q}^{\natural}$ is the Clifford conjugation. The diagonal product $\tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ takes both signs and vanishes exactly on the zero divisors; its metrical reading, the associated group of invertibles and the action of the group on $V$ are treated in *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Rotations and the Lorentz Group*.
 
 The conjugation $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is an involutive anti-automorphism whose fixed-point subspaces are the scalar line $S$ and the vector space $V$. The principal involution and the reversal commute and cut the algebra into the scalar line, the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are non-central, sum to $1$, multiply to zero, and split the algebra as a direct sum of two minimal left ideals, and not as an algebra. The split-complex subalgebras $\operatorname{span}\{1,\vec e_y\}$ and $\operatorname{span}\{1,\vec e_z\}$ are copies of $\mathbb{C}_{\mathrm{spl}}$ and carry the zero divisors of the algebra.
 

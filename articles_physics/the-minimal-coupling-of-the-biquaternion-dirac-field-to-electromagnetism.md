@@ -52,7 +52,7 @@ $$
 \tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R} .
 $$
 
-The subscript names one of two components and no more. It belongs to the element and not to the equation: a general element, a product, a unit and a field all carry it. The two components are exactly two, and only the zero element carries both values. The value is read from the chirality basis operator of the declared frame (*Special Element Conventions*, §*The Chirality Convention*); the article writes the value and never computes it.
+The subscript names one of two components and no more. It belongs to the element and not to the equation: a general element, a product, an invertible element and a field all carry it. The two components are exactly two, and only the zero element carries both values. The value is read from the chirality basis operator of the declared frame (*Special Element Conventions*, §*The Chirality Convention*); the article writes the value and never computes it.
 
 Three facts about the letters are used below. The first two are the convention's own statement, and the third follows from the first.
 

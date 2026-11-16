@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An invariant of a ring that is computable, additive under direct sums, and sensitive to the failure of projective modules to be free is supplied by the theory of the finitely generated projective modules over the ring. $K_0(R)$ is the Grothendieck group of their isomorphism classes under direct sum: it records the stable isomorphism classification of projective modules, measures by its torsion the difference between projective and free, and receives the determinant and the rank as homomorphisms to the units and to $\mathbb{Z}$. Adding the automorphism groups of the projective modules and their elementary subgroups gives $K_1(R)$, whose quotient by the image of $K_1$ of the matrix rings is the Whitehead group and whose relation to the special linear group is the Whitehead lemma. The two functors $K_0$ and $K_1$ are the elementary part of the algebraic K-theory of a ring.
+An invariant of a ring that is computable, additive under direct sums, and sensitive to the failure of projective modules to be free is supplied by the theory of the finitely generated projective modules over the ring. $K_0(R)$ is the Grothendieck group of their isomorphism classes under direct sum: it records the stable isomorphism classification of projective modules, measures by its torsion the difference between projective and free, and receives the determinant and the rank as homomorphisms to the invertibles and to $\mathbb{Z}$. Adding the automorphism groups of the projective modules and their elementary subgroups gives $K_1(R)$, whose quotient by the image of $K_1$ of the matrix rings is the Whitehead group and whose relation to the special linear group is the Whitehead lemma. The two functors $K_0$ and $K_1$ are the elementary part of the algebraic K-theory of a ring.
 
 This article develops the Grothendieck group $K_0$ of a ring, its presentation by generators and relations, the split exact sequences of $K_0$ of a product and of a quotient, $K_1$ through the Whitehead lemma and the elementary group, the determinant and rank maps, the Mayer–Vietoris and localisation sequences for $K_0$ and $K_1$, the behaviour of both functors under change of ring and under localisation, and the computation for fields, principal ideal domains, local rings and finite-dimensional algebras. It follows *Projective and Injective Modules*, *The Special Linear Group and the Determinant*, *Localization and Completion of Modules* and *Extension of Scalars*, and it uses the derived-category language of *Derived Categories* only in the definition of the higher functors, which are not developed here.
 
@@ -37,7 +37,7 @@ for all finitely generated projective $P,Q$. Equivalently, $K_0(R)$ is the Groth
 
 ### The Rank Map
 
-**Definition.** A ring $R$ is **connected** if its only idempotents are $0$ and $1$. For a connected commutative ring $R$ and a finitely generated projective $P$, the rank $\operatorname{rk}(P)$ is the locally constant integer defined by the rank of the free modules $P_{\mathrm{P}}$ over the local rings $R_{\mathrm{P}}$; algebraically, it is the trace of the identity endomorphism of $P$, a unit of $R$ compared to the free module, and it is constant because $R$ is connected.
+**Definition.** A ring $R$ is **connected** if its only idempotents are $0$ and $1$. For a connected commutative ring $R$ and a finitely generated projective $P$, the rank $\operatorname{rk}(P)$ is the locally constant integer defined by the rank of the free modules $P_{\mathrm{P}}$ over the local rings $R_{\mathrm{P}}$; algebraically, it is the trace of the identity endomorphism of $P$, an invertible element of $R$ compared to the free module, and it is constant because $R$ is connected.
 
 **Proposition.** For a connected commutative ring $R$ the rank defines a homomorphism $\operatorname{rk}:K_0(R)\to\mathbb{Z}$, $\operatorname{rk}([P])=\operatorname{rk}P$, and $\operatorname{rk}(1)=1$. For a field $R$ it is an isomorphism.
 
@@ -99,7 +99,7 @@ where $SL(R)=\bigcup_nSL_n(R)$ and $SK_1(R)=SL(R)/E(R)$ is the **special Whitehe
 
 **Example.** For a Euclidean domain $R$ — in particular for $\mathbb{Z}$ and for $k[x]$ with $k$ a field — the Euclidean algorithm reduces any matrix in $SL_n(R)$ to the identity by elementary row operations, so $E(R)=SL(R)$, $SK_1(R)=1$, and $K_1(R)\cong R^{\times}$: the determinant is an isomorphism. Hence $K_1(\mathbb{Z})\cong\{\pm1\}$ and $K_1(k[x])\cong k^{\times}$ for a field $k$.
 
-**Example.** For a division ring $D$ every invertible matrix over $D$ is a product of elementary matrices and a **monomial** matrix, that is a permutation of an invertible diagonal matrix, a theorem of Dieudonné; the monomial matrices in turn have abelianisation $D^{\times}/[D^{\times},D^{\times}]$, since the permutation part contributes only the sign and the elementary relations absorb it. Hence $K_1(D)\cong D^{\times}/[D^{\times},D^{\times}]$, the abelianisation of the multiplicative group, the **Dieudonné determinant** giving the identification. For a commutative field this is $F^{\times}$, recovering the previous example. For a commutative local ring $R$ the same reduction gives $K_1(R)\cong R^{\times}$: an invertible matrix over a local ring is a product of elementary matrices and of a matrix that is a permutation of a diagonal matrix, and the determinant identifies $GL(R)/E(R)$ with the group of units.
+**Example.** For a division ring $D$ every invertible matrix over $D$ is a product of elementary matrices and a **monomial** matrix, that is a permutation of an invertible diagonal matrix, a theorem of Dieudonné; the monomial matrices in turn have abelianisation $D^{\times}/[D^{\times},D^{\times}]$, since the permutation part contributes only the sign and the elementary relations absorb it. Hence $K_1(D)\cong D^{\times}/[D^{\times},D^{\times}]$, the abelianisation of the multiplicative group, the **Dieudonné determinant** giving the identification. For a commutative field this is $F^{\times}$, recovering the previous example. For a commutative local ring $R$ the same reduction gives $K_1(R)\cong R^{\times}$: an invertible matrix over a local ring is a product of elementary matrices and of a matrix that is a permutation of a diagonal matrix, and the determinant identifies $GL(R)/E(R)$ with the group of invertibles.
 
 ### $K_1$ under Products and Quotients
 
@@ -113,7 +113,7 @@ $$
 \boxed{\;K_1(R)\to K_1(S)\oplus K_1(R/I)\to K_1(T)\xrightarrow{\ \partial\ }K_0(R)\to K_0(S)\oplus K_0(R/I)\to K_0(T)\;}.
 $$
 
-If instead $I$ is a nilpotent ideal of $R$, then the reduction $R\to R/I$ induces an isomorphism $K_0(R)\cong K_0(R/I)$ and a surjection $K_1(R)\to K_1(R/I)$ whose kernel is the image of the group of units of $R$ congruent to $1$ modulo $I$ under the natural map.
+If instead $I$ is a nilpotent ideal of $R$, then the reduction $R\to R/I$ induces an isomorphism $K_0(R)\cong K_0(R/I)$ and a surjection $K_1(R)\to K_1(R/I)$ whose kernel is the image of the group of invertibles of $R$ congruent to $1$ modulo $I$ under the natural map.
 
 *Proof.* For the nilpotent case, an invertible matrix over $R/I$ lifts entrywise to a matrix over $R$, and its invertibility lifts because an inverse can be constructed by the geometric series $\sum_{k\ge0}(1-A)^k$ when $1-A$ is divisible by a nilpotent; this gives the surjectivity on $K_1$, and the kernel is computed by the units congruent to $1$ modulo $I$. A finitely generated projective over $R/I$ lifts to one over $R$ by the same idempotent-lifting, giving the isomorphism on $K_0$. The Mayer–Vietoris sequence is obtained by applying the Grothendieck-group construction to the cartesian square of categories of finitely generated projective modules; the connecting map $\partial$ is built from the idempotent that measures the failure of a projective module over $T$ to glue to one over $R$.
 
@@ -179,9 +179,9 @@ $$
 
 **Definition.** For a group $G$ the **Whitehead group** $Wh(G)$ is the quotient of $K_1(\mathbb{Z}[G])$ by the subgroup generated by the images of $GL_1(\mathbb{Z}[G])=\pm G$ under the inclusion; it is the cokernel of the natural map $\pm G\to K_1(\mathbb{Z}[G])$.
 
-**Proposition.** $Wh(G)$ is a quotient of $K_1(\mathbb{Z}[G])$, is generated by the classes of the units of $\mathbb{Z}[G]$ together with the elementary classes, and vanishes for $G$ trivial, for $G$ free, and for $G$ a free abelian group by the theorem of Bass–Heller–Swan. It is the invariant whose vanishing is the obstruction to the uniqueness of a simple homotopy type; the topological formulation of that statement requires the topology of Part II and is not used here.
+**Proposition.** $Wh(G)$ is a quotient of $K_1(\mathbb{Z}[G])$, is generated by the classes of the invertibles of $\mathbb{Z}[G]$ together with the elementary classes, and vanishes for $G$ trivial, for $G$ free, and for $G$ a free abelian group by the theorem of Bass–Heller–Swan. It is the invariant whose vanishing is the obstruction to the uniqueness of a simple homotopy type; the topological formulation of that statement requires the topology of Part II and is not used here.
 
-*Proof.* The quotient is by definition a quotient of $K_1(\mathbb{Z}[G])$. For $G$ free abelian, $\mathbb{Z}[G]$ is a Laurent polynomial ring and the Bass–Heller–Swan theorem gives $K_1$ as the direct sum of the units and the elementary part, so the quotient by $\pm G$ is zero; the reference is the standard one.
+*Proof.* The quotient is by definition a quotient of $K_1(\mathbb{Z}[G])$. For $G$ free abelian, $\mathbb{Z}[G]$ is a Laurent polynomial ring and the Bass–Heller–Swan theorem gives $K_1$ as the direct sum of the invertibles and the elementary part, so the quotient by $\pm G$ is zero; the reference is the standard one.
 
 ## The Higher Functors, Named Only
 
@@ -215,7 +215,7 @@ This article has treated the K-theory of a **discrete ring**, through finitely g
 | $e_{ij}(\lambda)$ | elementary matrix $\operatorname{id}+\lambda E_{ij}$ |
 | $K_n(R)$, $n\ge2$ | higher algebraic K-groups, named only |
 | $\mathbb{Z}[G]$ | integral group ring of a group $G$ |
-| $R^{\times}$ | group of units of $R$ |
+| $R^{\times}$ | group of invertibles of $R$ |
 | $M_n(R)$ | ring of $n\times n$ matrices over $R$ |
 
 

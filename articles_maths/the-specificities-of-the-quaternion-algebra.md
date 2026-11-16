@@ -31,9 +31,9 @@ The three properties that isolate the block are:
 
 ## The Centre
 
-**Theorem.** The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}e_t$, and the centre of the group of units is $\mathbb{R}^{\times}e_t$.
+**Theorem.** The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}e_t$, and the centre of the group of invertibles is $\mathbb{R}^{\times}e_t$.
 
-*Proof.* Commuting with $\vec e_x$ and with $\vec e_y$ forces the vector part to vanish; the scalars commute. For the units, an element commuting with every quaternion lies in the centre, and a non-zero scalar is a unit.
+*Proof.* Commuting with $\vec e_x$ and with $\vec e_y$ forces the vector part to vanish; the scalars commute. For the units, an element commuting with every quaternion lies in the centre, and a non-zero scalar is invertible.
 
 The centrality of the scalar line is what makes $\langle\tilde q\rangle_{\natural}$ a scalar and what makes the polar split of the units a direct product; both readings are in *Norm and Invertibility in the Quaternion Algebra*, above this article in this category.
 

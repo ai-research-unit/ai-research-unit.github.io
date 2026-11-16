@@ -43,9 +43,9 @@ $$
 \;}.
 $$
 
-**Proof.** The Skolem–Noether theorem for a central simple algebra applies: every automorphism is inner, which gives the surjectivity and the identification of the automorphism group with the quotient. The kernel of $g \mapsto \operatorname{Ad}_g$ is the set of units $g$ with $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. the units of the centre, $\mathbb{R}^\times$. The last isomorphism is the adjoint action on $V$ of *Split-Quaternion Rotations and the Lorentz Group*, which identifies $\mathrm{PGL}_2(\mathbb{R})$ with $SO(2,1)$.
+**Proof.** The Skolem–Noether theorem for a central simple algebra applies: every automorphism is inner, which gives the surjectivity and the identification of the automorphism group with the quotient. The kernel of $g \mapsto \operatorname{Ad}_g$ is the set of invertibles $g$ with $g\tilde q = \tilde q g$ for all $\tilde q$, i.e. the invertibles of the centre, $\mathbb{R}^\times$. The last isomorphism is the adjoint action on $V$ of *Split-Quaternion Rotations and the Lorentz Group*, which identifies $\mathrm{PGL}_2(\mathbb{R})$ with $SO(2,1)$.
 
-**Dimension and components.** Since the unit group has real dimension $4$ and the centre $\mathbb{R}^\times$ has dimension $1$, the group has real dimension $3$. The sign of the split-quaternion norm splits the unit group into the two components $\{N>0\}$ and $\{N<0\}$, and since $\langle \lambda g\rangle_{\natural} = \lambda^2 \langle g\rangle_{\natural}$ the quotient keeps the sign of the split-quaternion norm, so $\mathrm{Aut}(\mathbb{H}_{\mathrm{spl}}) \cong PGL_2(\mathbb{R})$ has **two components**, matching the two components of $SO(2,1)$. The identity component is
+**Dimension and components.** Since the group of invertibles has real dimension $4$ and the centre $\mathbb{R}^\times$ has dimension $1$, the group has real dimension $3$. The sign of the split-quaternion norm splits the group of invertibles into the two components $\{N>0\}$ and $\{N<0\}$, and since $\langle \lambda g\rangle_{\natural} = \lambda^2 \langle g\rangle_{\natural}$ the quotient keeps the sign of the split-quaternion norm, so $\mathrm{Aut}(\mathbb{H}_{\mathrm{spl}}) \cong PGL_2(\mathbb{R})$ has **two components**, matching the two components of $SO(2,1)$. The identity component is
 
 $$
 \boxed{\;
@@ -55,7 +55,7 @@ $$
 
 which is also the image of the norm-one group $U = \{N = 1\}$ under $g \mapsto \operatorname{Ad}_g$.
 
-**Invariants.** Every automorphism preserves the split-quaternion norm, $\langle\sigma(\tilde q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$, because $\operatorname{Ad}_g$ is inner and $\langle\cdot\rangle_{\natural}$ is multiplicative; hence it preserves the group of units, the zero-divisor set, the rank-one idempotents and the subspaces defined by $\langle\cdot\rangle_{\natural}$. It also preserves the centre pointwise.
+**Invariants.** Every automorphism preserves the split-quaternion norm, $\langle\sigma(\tilde q)\rangle_{\natural} = \langle\tilde q\rangle_{\natural}$, because $\operatorname{Ad}_g$ is inner and $\langle\cdot\rangle_{\natural}$ is multiplicative; hence it preserves the group of invertibles, the zero-divisor set, the rank-one idempotents and the subspaces defined by $\langle\cdot\rangle_{\natural}$. It also preserves the centre pointwise.
 
 **Example.** For $g = \vec e_z$, with $\vec e_z^{-1} = \vec e_z$ (since $\langle \vec e_z\rangle_{\natural} = -1$ and $\vec e_z^{\natural} = -\vec e_z$, so $\vec e_z^{-1} = -\vec e_z/(-1) = \vec e_z$), the inner automorphism acts on the vector subspace by $\operatorname{Ad}_{\vec e_z}(\vec e_x) = -\vec e_x$, $\operatorname{Ad}_{\vec e_z}(\vec e_y) = -\vec e_y$, $\operatorname{Ad}_{\vec e_z}(\vec e_z) = \vec e_z$, the matrix $\operatorname{diag}(-1,-1,1)$ in the basis $\vec e_x,\vec e_y,\vec e_z$. This transformation is in $SO(2,1)$ but not in its identity component: it fixes the spacelike direction $\vec e_z$ and reverses the sheet of the timelike hyperboloid.
 
@@ -155,7 +155,7 @@ Every derivation is inner, so $\mathrm{Der}(\mathbb{H}_{\mathrm{spl}}) = \mathrm
 | $Z(\mathbb{H}_{\mathrm{spl}}) = S = \mathbb{R}\cdot 1$ | the centre, one-dimensional over $\mathbb{R}$ | *Split-Quaternion Scalar and Vector Subspaces* |
 | $\mathrm{Aut}(\mathbb{H}_{\mathrm{spl}})$ | the algebra automorphisms, $\cong \mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ | this article |
 | $\mathrm{Inn}(\mathbb{H}_{\mathrm{spl}})$, $\mathrm{Out}(\mathbb{H}_{\mathrm{spl}})$ | inner and outer automorphism groups; $\mathrm{Out} = 1$ | this article |
-| $\operatorname{Ad}_g(\tilde q) = g\tilde q g^{-1}$ | the inner automorphism by a unit $g$ | this article |
+| $\operatorname{Ad}_g(\tilde q) = g\tilde q g^{-1}$ | the inner automorphism by an invertible element $g$ | this article |
 | $\mathrm{Der}(\mathbb{H}_{\mathrm{spl}})$ | the derivations, $\cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | this article |
 | $\mathrm{ad}_a(\tilde q) = [a,\tilde q]$ | the inner derivation by $a$ | this article |
 | $V, \mathrm{SL}_2(\mathbb{R})$ | the vector subspace and the traceless matrices | *Split-Quaternion Scalar and Vector Subspaces* |

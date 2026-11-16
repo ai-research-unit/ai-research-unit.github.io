@@ -141,7 +141,7 @@ The next article defines the **adjoint** of a homomorphism with respect to a pai
 
 **(d) Matrix algebras with the conjugate transpose.** Let $A=M_n(\mathbb{C})$ with $\sigma(X)=\overline{X}^{\mathrm{T}}$. Then $\sigma$ is an involution of $A$ and of $A_{\mathrm{opp}}$; the induced involution on the endomorphism ring of the regular module is the conjugate transpose, and the unitary group of the algebra, defined in the involutive-algebra theory, is the classical unitary group $\mathrm{U}(n)$.
 
-**(e) The biquaternions.** For $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the involution $\sigma$ obtained from conjugation on $\mathbb{C}$ and on $\mathbb{H}$, the induced involution on $\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}_{\mathrm{opp}}$ is $\sigma$, and the unitary elements of $\mathbb{B}$ are the units fixed by the corresponding adjoint of the regular module.
+**(e) The biquaternions.** For $A=\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with the involution $\sigma$ obtained from conjugation on $\mathbb{C}$ and on $\mathbb{H}$, the induced involution on $\operatorname{End}_{\mathbb{B}}(\mathbb{B})\cong\mathbb{B}_{\mathrm{opp}}$ is $\sigma$, and the unitary elements of $\mathbb{B}$ are the invertibles fixed by the corresponding adjoint of the regular module.
 
 ## Summary
 

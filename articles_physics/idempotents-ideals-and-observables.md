@@ -301,7 +301,7 @@ $$
 
 **The boundary.** The four corners are four complex lines of the algebra and not four numbers of a particular state. The names population and coherence belong to the reading of one element in one basis, and a change of root mixes them.
 
-### I.3.h — The Corner Algebra Is Degenerate, and That Is Why a Chirality Has No Unit
+### I.3.h — The Corner Algebra Is Degenerate, and That Is Why a Chirality Has No Invertible
 
 **Read:** inside one ideal the product collapses to a scalar.
 
@@ -309,7 +309,7 @@ $$
 a\tilde\Pi\cdot b\tilde\Pi=\lambda(b)\,a\tilde\Pi,\qquad \lambda(\tilde Q)=Q_t-iQ_z .
 $$
 
-**So the ideal is not a subalgebra and has no unit of its own.** The unit of the algebra does not lie in either ideal; the closest thing is the idempotent, which is a unit only for the elements already in the ideal's own corner. Composing two elements of one chirality does not produce a third element of that chirality in any general way: it produces a multiple of the first, with the multiple fixed by the second.
+**So the ideal is not a subalgebra and has no invertible element of its own.** The unit of the algebra does not lie in either ideal; the closest thing is the idempotent, which is invertible only for the elements already in the ideal's own corner. Composing two elements of one chirality does not produce a third element of that chirality in any general way: it produces a multiple of the first, with the multiple fixed by the second.
 
 **The functional $\lambda$ is the trace-like object of the cut and it is not multiplicative.** $\lambda(\vec e_x\vec e_y)=-i$ while $\lambda(\vec e_x)\lambda(\vec e_y)=0$. The failure is not an accident of the choice of axis: a multiplicative functional onto $\mathbb{C}$ would have a nontrivial two-sided ideal as its kernel, and the algebra has none.
 

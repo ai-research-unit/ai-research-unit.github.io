@@ -29,7 +29,7 @@ $$
 
 is the restriction of the algebra action to the group, that is, the pin representation on the Hermitian module $I$.
 
-*Proof.* If $y=b\pi$ then $ay=(ab)\pi\in I$; the action is associative and restricts to the units. The Hermitian form on $I$ is the restriction of the module form, and the self-adjointness axiom holds because it holds on the whole algebra.
+*Proof.* If $y=b\pi$ then $ay=(ab)\pi\in I$; the action is associative and restricts to the invertibles. The Hermitian form on $I$ is the restriction of the module form, and the self-adjointness axiom holds because it holds on the whole algebra.
 
 **Proposition (faithfulness on the ideal).** If $\mathrm{Cl}(V,\mathfrak{Q})$ is simple and $I\neq0$ the action on $I$ has trivial kernel, and if $\mathrm{Cl}(V,\mathfrak{Q})\cong A'\times A'$ with $I$ the minimal ideal of the first factor, the kernel is $\mathrm{Pin}(V,\mathfrak{Q})\cap(\{1\}\times A')$.
 
@@ -79,7 +79,7 @@ and on the unitary slice, $\mathfrak{Q}(u)=-1$, both reduce to $\rho_u(v)\psi$; 
 
 *Proof.* The first identity is the previous proposition with $x=u$ and the vector formula $\mathrm{Sd}^{\alpha}_u=-\mathfrak{Q}(u)\rho_u$; the second is the corollary of the pin-representation article.
 
-**Remark (the defect off the slice).** Off the slice the third factor of the operator is the adjoint, and the two-sided operator is not the conjugation by a unit: the element $x$ satisfies $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$, which is the identity only when $xx^{\dagger}=1$, that is on the slice. So the ideal conjugation by a general element realises the Hermitian pair but not by a unitary operator, and that is the precise sense in which the Hermitian formulation needs the slice to produce unitarily the geometric operators.
+**Remark (the defect off the slice).** Off the slice the third factor of the operator is the adjoint, and the two-sided operator is not the conjugation by an invertible element: the element $x$ satisfies $\rho(x)\rho(x)^{*}=\rho(xx^{\dagger})$, which is the identity only when $xx^{\dagger}=1$, that is on the slice. So the ideal conjugation by a general element realises the Hermitian pair but not by a unitary operator, and that is the precise sense in which the Hermitian formulation needs the slice to produce unitarily the geometric operators.
 
 ## Worked Cases
 

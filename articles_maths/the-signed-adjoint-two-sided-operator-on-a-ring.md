@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **signed two-sided operator** is the two-sided operator $\mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b$ built from a left multiplication, a right multiplication and a grade involution $\alpha$ of a ring with an involution $\sigma$; it is the two-sided companion of the signed left multiplication and the algebraic home of the reflections and of the conjugation by a unit. Its **signed adjoint** with respect to the twisted pairing $\{x,y\} = \tau(x\sigma(y))$ is again a signed two-sided operator, $\mathcal{T}_{a,b}^{*_\sigma} = \mathcal{T}_{\delta(a),\delta(b)}$ with $\delta = \sigma\alpha$, and the two-sided operator is **unitary**, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b} = \mathcal{T}_{a,b}\mathcal{T}_{a,b}^{*_\sigma} = \mathrm{id}$, exactly under the two conditions $\delta(a)\alpha(a) = 1$ and $\alpha(b)\delta(b) = 1$; in the case of a reflection, $b = \alpha(a)^{-1}$, these reduce to the unitarity of $a$ and of $\alpha(a)$.
+The **signed two-sided operator** is the two-sided operator $\mathcal{T}_{a,b}(x) = a\,\alpha(x)\,b$ built from a left multiplication, a right multiplication and a grade involution $\alpha$ of a ring with an involution $\sigma$; it is the two-sided companion of the signed left multiplication and the algebraic home of the reflections and of the conjugation by an invertible element. Its **signed adjoint** with respect to the twisted pairing $\{x,y\} = \tau(x\sigma(y))$ is again a signed two-sided operator, $\mathcal{T}_{a,b}^{*_\sigma} = \mathcal{T}_{\delta(a),\delta(b)}$ with $\delta = \sigma\alpha$, and the two-sided operator is **unitary**, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b} = \mathcal{T}_{a,b}\mathcal{T}_{a,b}^{*_\sigma} = \mathrm{id}$, exactly under the two conditions $\delta(a)\alpha(a) = 1$ and $\alpha(b)\delta(b) = 1$; in the case of a reflection, $b = \alpha(a)^{-1}$, these reduce to the unitarity of $a$ and of $\alpha(a)$.
 
 This article computes the signed adjoint, the inverse and the composition of the two-sided operators, derives the unitarity condition $u^{*}u = uu^{*} = 1$ it defines, and prepares the reflection of *The Signed Adjoint of the Reflection on a Ring*. It assumes *The Signed Two-Sided Operator on a Ring* for the operator, *Involutions of the Endomorphism Ring* for the pairings and the adjoint, and *The Adjoint of the Left Multiplication on a Ring* for the one-sided case. Throughout, $A$ is a ring with $1 \neq 0$ and an involution $\sigma$, $\tau$ is a $\sigma$-invariant trace, $\alpha$ is a grade involution commuting with $\sigma$, $\delta = \sigma\alpha$, the twisted pairing is $\{x,y\} = \tau(x\sigma(y))$, and $\mathcal{T}_{a,b}(x) = a\alpha(x)b$.
 
@@ -19,7 +19,7 @@ The signed adjoint of a two-sided operator is the two-sided operator of the two 
 
 **Proof.** $\{\mathcal{T}_{a,b}x,y\} = \tau(a\alpha(x)b\,\sigma(y)) = \tau(\sigma(y)a\alpha(x)b)$; cyclically $= \tau(\alpha(x)b\sigma(y)a)$, and using $\tau\circ\alpha = \tau$ with $\alpha^2 = \mathrm{id}$ this is $\tau(x\,\alpha(b\sigma(y)a)) = \tau(x\,\alpha(b)\alpha(\sigma(y))\alpha(a)) = \tau(x\,\alpha(b)\sigma(\alpha(y))\alpha(a))$, the last step by the commutation of $\alpha$ and $\sigma$. On the other side, $\{x,\mathcal{T}_{\delta(a),\delta(b)}y\} = \tau(x\,\sigma(\delta(a)\alpha(y)\delta(b))) = \tau(x\,\sigma(\delta(b))\,\sigma(\alpha(y))\,\sigma(\delta(a)))$; since $\sigma\delta = \sigma\sigma\alpha = \alpha$, one has $\sigma(\delta(a)) = \alpha(a)$ and $\sigma(\delta(b)) = \alpha(b)$, so this is $\tau(x\,\alpha(b)\sigma(\alpha(y))\alpha(a))$, matching the first expression term by term. Hence $\mathcal{T}_{a,b}^{*_\sigma} = \mathcal{T}_{\delta(a),\delta(b)}$, and the order-two property is $\delta^2 = \mathrm{id}$.
 
-**Proposition (inverse and composition).** The two-sided operator $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, with
+**Proposition (inverse and composition).** The two-sided operator $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are invertible, with
 
 $$
 \mathcal{T}_{a,b}^{-1} = \mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} ,
@@ -51,7 +51,7 @@ For the two-sided operator with $b = \alpha(a)^{-1}$ these are the two condition
 
 **Proof.** By the theorem and the composition formula, $\mathcal{T}_{a,b}^{*_\sigma}\mathcal{T}_{a,b} = \mathcal{T}_{\delta(a),\delta(b)}\circ \mathcal{T}_{a,b} = L_{\delta(a)\alpha(a)}R_{\alpha(b)\delta(b)}$, which is the identity exactly when both coefficients are $1$ and both are central, that is under the two conditions. For $b = \alpha(a)^{-1}$ one has $\alpha(b) = a^{-1}$ and $\delta(b) = \delta(\alpha(a)^{-1}) = \delta(\alpha(a))^{-1} = \sigma(\alpha(\alpha(a)))^{-1} = \sigma(a)^{-1}$, so $\alpha(b)\delta(b) = a^{-1}\sigma(a)^{-1} = (\sigma(a)a)^{-1}$, giving $\sigma(a)a = 1$; the first condition is the same statement for $\alpha(a)$.
 
-**Corollary (the unitary elements).** The **unitary elements** of $A$ with respect to $\sigma$ are the units $u$ with
+**Corollary (the unitary elements).** The **unitary elements** of $A$ with respect to $\sigma$ are the invertibles $u$ with
 
 $$
 \boxed{\;u^{*_\sigma}u = uu^{*_\sigma} = 1, \qquad u^{*_\sigma} = \delta(u) = \sigma(\alpha(u))\;} ;

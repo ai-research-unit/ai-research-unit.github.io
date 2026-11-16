@@ -10,7 +10,7 @@ the quadratic form of signature $(1,3)$ that the trace form of the plain product
 $$
 \mathbb{H}=\{P>0\}\uplus\{P=0\}\uplus\{P<0\},
 $$
-the timelike, the null and the spacelike; the three are non-empty, of real dimensions four, three and four, and the middle one is not the set of the non-units: every null element is invertible. The two other norms of the algebra cut it differently: the quaternion norm $N$ separates the origin alone, and the spectral data of the spectrally regular locus separate the real axis. The three cuts are independent, and the article states each of them and the exact sense in which they differ.
+the timelike, the null and the spacelike; the three are non-empty, of real dimensions four, three and four, and the middle one is not the set of the non-invertibles: every null element is invertible. The two other norms of the algebra cut it differently: the quaternion norm $N$ separates the origin alone, and the spectral data of the spectrally regular locus separate the real axis. The three cuts are independent, and the article states each of them and the exact sense in which they differ.
 
 The algebra is that of [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), and the form is the one of [Quaternion Metrics](quaternion-metrics.html), where it appears as the member $g=e_t$ of the one-parameter family $\mathrm{Sc}(g\tilde xg\tilde x)$. The sectors it cuts are the subject of the four following articles.
 
@@ -38,7 +38,7 @@ $$
 
 *Proof.* Each norm is a quadratic form. The two squares in the display are the statement. Verified on general elements.
 
-**Remark (what the invariances are not).** The P-partition is invariant under the real scalars and under the conjugation, since $P(\tilde q^{\natural})=P(\tilde q)$, and it is *not* invariant under the group of units: the versor $\tilde u$ sends $e_t$ to a unit of $P$-norm $1$, but a general unit sends the real line to a two-plane, and the timelike element $e_t+\tfrac12\vec e_x$ is sent by a suitable versor to an element of the spacelike class. **The cut is preserved by the scalars and the conjugation and by nothing else in the group, and this is the reason the isometry group of $P$, and not the group of units, is the group of the partition.** The isometries are read in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
+**Remark (what the invariances are not).** The P-partition is invariant under the real scalars and under the conjugation, since $P(\tilde q^{\natural})=P(\tilde q)$, and it is *not* invariant under the group of invertibles: the versor $\tilde u$ sends $e_t$ to a unit of $P$-norm $1$, but a general unit sends the real line to a two-plane, and the timelike element $e_t+\tfrac12\vec e_x$ is sent by a suitable versor to an element of the spacelike class. **The cut is preserved by the scalars and the conjugation and by nothing else in the group, and this is the reason the isometry group of $P$, and not the group of invertibles, is the group of the partition.** The isometries are read in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
 
 ## The Partition
 
@@ -60,18 +60,18 @@ the **timelike**, the **null** and the **spacelike** class.
 $$
 \mathbb{H}=\mathbb{H}^{\times}\uplus\{0\},
 $$
-the units and the origin. The two partitions are as different as two partitions of the same set can be: one has three classes of dimensions four, three and four, the other has one class of dimension four and one point. **The P-partition is the partition of an indefinite form; the N-partition is the partition of a definite one, and a definite form has only two signs, one of which is attained at the origin alone.**
+the invertibles and the origin. The two partitions are as different as two partitions of the same set can be: one has three classes of dimensions four, three and four, the other has one class of dimension four and one point. **The P-partition is the partition of an indefinite form; the N-partition is the partition of a definite one, and a definite form has only two signs, one of which is attained at the origin alone.**
 
 ## The Three Classes Compared with the N-Partition
 
-**Theorem (the null class is not the non-unit class).** Every element of $\mathcal N$ is invertible, and
+**Theorem (the null class is not the non-invertible class).** Every element of $\mathcal N$ is invertible, and
 $$
 N(\tilde q)=2q_t^2>0\ \ \text{on }\mathcal N\setminus\{0\}.
 $$
 
 *Proof.* On the cone $q_t^2=\lvert\vec q\rvert^2$, so $N=q_t^2+\lvert\vec q\rvert^2=2q_t^2$, which is positive unless $q_t=0$, and $q_t=0$ on the cone forces $\vec q=0$. So no non-zero null element is a zero divisor, and $\{0\}$ is the only non-invertible element of the algebra. Verified on the parametrised cone.
 
-**Corollary (the three classes meet the units in the same way).** Each of the three classes is contained in $\mathbb{H}^{\times}$ after the removal of the origin of $\mathcal N$, so the P-partition cuts the group of units into three pieces and the N-partition cuts it into one.
+**Corollary (the three classes meet the invertibles in the same way).** Each of the three classes is contained in $\mathbb{H}^{\times}$ after the removal of the origin of $\mathcal N$, so the P-partition cuts the group of invertibles into three pieces and the N-partition cuts it into one.
 
 *Proof.* $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ and the three classes are contained in $\mathbb{H}$, with only $\mathcal N$ meeting the origin. Verified on the parametrisations.
 
@@ -103,7 +103,7 @@ $$
 
 **Remark (the shape of the level sets).** The level sets are read in the basis: $\{P=c\}$ is the hyperboloid $q_t^2-\lvert\vec q\rvert^2=c$, two-sheeted for $c>0$ and one-sheeted for $c<0$, with the cone at $c=0$. Each is a smooth three-dimensional submanifold off the cone, and the three classes are the three regions they bound. The hyperbolic metrics they carry are the subject of [The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra](the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html).
 
-**Remark (what the example shows).** The class of an element is not a class of the element up to the multiplication by units, it is a class of the element as a vector of the metric space; and the hyperbolic planes $\Pi_{\vec n}$ are the charts in which the classification is read by the two coordinates alone.
+**Remark (what the example shows).** The class of an element is not a class of the element up to the multiplication by invertibles, it is a class of the element as a vector of the metric space; and the hyperbolic planes $\Pi_{\vec n}$ are the charts in which the classification is read by the two coordinates alone.
 
 ## The Third Cut and the Spectral Strata
 
@@ -123,13 +123,13 @@ The plain algebraic norm is $P(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-\lvert\ve
 
 Its sign partitions the algebra into the timelike class $\{P>0\}$, the null class $\{P=0\}$ and the spacelike class $\{P<0\}$, of real dimensions four, three and four; the first and the third are open, the second is a cone.
 
-The null class is not the non-unit class: every null element is invertible and has $N=2q_t^2>0$. The quaternion norm partitions the algebra as the units and the origin, and the two partitions are as different as a definite cut and an indefinite one.
+The null class is not the non-invertible class: every null element is invertible and has $N=2q_t^2>0$. The quaternion norm partitions the algebra as the invertibles and the origin, and the two partitions are as different as a definite cut and an indefinite one.
 
 On the real line $P=\lambda^2\geq0$; on the vector subspace $P=-\lvert\vec q\rvert^2\leq0$; on a plane through the axis $P=\lambda^2-\mu^2$ of signature $(1,1)$ with the cone cut into the two lines $\mathbb{R}(e_t\pm\vec n)$; on the unit sphere $P=2q_t^2-1$, so the null class is a pair of circles.
 
 The spectral strata of the three sectors are a third cut, by the discriminant and the spectrum, and the three cuts are independent: each spectral stratum meets each P-class in a non-empty set.
 
-A worked line crosses the cone twice, at $s=-2\pm\sqrt3$, and two normalised null elements multiply to $e_t$: the null set is a cone of units and not a set of zero divisors.
+A worked line crosses the cone twice, at $s=-2\pm\sqrt3$, and two normalised null elements multiply to $e_t$: the null set is a cone of invertibles and not a set of zero divisors.
 
 ## Summary of Notation
 

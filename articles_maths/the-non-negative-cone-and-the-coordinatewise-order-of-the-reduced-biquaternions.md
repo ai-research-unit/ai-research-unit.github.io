@@ -183,11 +183,11 @@ The **forward cone** of the split-complex algebra, the image of its squaring map
 
 ## Worked Examples
 
-**A non-negative element whose square leaves the cone.** For $\breve Q=1+2i$ the coordinates are $(1,2,0,0)$, so $\breve Q\succeq0$; the square is $(1+2i)^{2}=-3+4i$, whose coordinates $(-3,4,0,0)$ are not all non-negative. The element is a unit, $\langle \breve Q\rangle_{\mathrm{ts}}=1^{2}-(2i)^{2}=1+4=5\neq0$, so the failure is not caused by a zero divisor: the cone is not multiplicative even on its units.
+**A non-negative element whose square leaves the cone.** For $\breve Q=1+2i$ the coordinates are $(1,2,0,0)$, so $\breve Q\succeq0$; the square is $(1+2i)^{2}=-3+4i$, whose coordinates $(-3,4,0,0)$ are not all non-negative. The element is invertible, $\langle \breve Q\rangle_{\mathrm{ts}}=1^{2}-(2i)^{2}=1+4=5\neq0$, so the failure is not caused by a zero divisor: the cone is not multiplicative even on its units.
 
 **The two idempotents.** For $\Pi_+=\tfrac12(1+j)$ the coordinates are $\bigl(\tfrac12,0,\tfrac12,0\bigr)$, all non-negative, and $\Pi_+\succeq0$; it is a zero divisor, $\Pi_+\Pi_-=0$, and it lies on the boundary of the cone. For $\Pi_-=\tfrac12(1-j)$ the coordinates are $\bigl(\tfrac12,0,-\tfrac12,0\bigr)$, and the fourth is negative, so $\Pi_-\not\succeq0$ although $\Pi_-$ is the reflection of $\Pi_+$ under the tessarine sign.
 
-**A strictly positive zero divisor.** For $\breve Q=(1+i)(1+j)=1+i+j+ij$ the coordinates are $(1,1,1,1)$, all strictly positive, so $\breve Q$ is an interior point of the cone; the idempotent coordinates are $Q_{+}=2(1+i)$ and $Q_{-}=0$, so $\langle \breve Q\rangle_{\mathrm{ts}}=0$ and $\breve Q$ is a zero divisor. The example shows that the interior of the cone is not the set of the units.
+**A strictly positive zero divisor.** For $\breve Q=(1+i)(1+j)=1+i+j+ij$ the coordinates are $(1,1,1,1)$, all strictly positive, so $\breve Q$ is an interior point of the cone; the idempotent coordinates are $Q_{+}=2(1+i)$ and $Q_{-}=0$, so $\langle \breve Q\rangle_{\mathrm{ts}}=0$ and $\breve Q$ is a zero divisor. The example shows that the interior of the cone is not the set of the invertibles.
 
 **The cone-preserving elements.** For $h=1+j$ the coordinates are $(1,0,1,0)$, so $h\in\mathcal{O}$ and $h$ preserves the cone: $h\cdot i=1\cdot i+j\cdot i=i+ij$, of coordinates $(0,1,0,1)$, non-negative, as the theorem predicts. For $h=i$ the coordinates are $(0,1,0,0)$, so $h\in\mathcal{C}_{+}\setminus\mathcal{O}$, and $h\cdot i=-1$ leaves the cone; the element is non-negative but not positivity-preserving.
 

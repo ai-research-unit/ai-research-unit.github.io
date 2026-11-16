@@ -85,7 +85,7 @@ the first the reduced trace and the second the reduced norm of $\mathbb{H}\oplus
 
 **Proof.** In each component, with $\vec Q_\pm$ the vector part and $\vec Q_\pm^2 = -|\vec Q_\pm|^2e_t$, one has $\tilde{Q}_\pm^2 = 2q_t^\pm\tilde{Q}_\pm - (|\vec Q_\pm|^2 + (q_t^\pm)^2)e_t = 2q_t^\pm\tilde{Q}_\pm - |\tilde{Q}_\pm|^2e_t$.
 
-**Corollary.** If $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}_{\mathrm{spl}}$, that is if both $|\tilde{Q}_\pm|^2 \neq 0$, then $\tilde{Q}^{-1} = (T(\tilde{Q})e_t - \tilde{Q})D(\tilde{Q})^{-1} = \tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$, recovering the inverse formula on the complement of the zero divisor locus.
+**Corollary.** If $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}}$, that is if both $|\tilde{Q}_\pm|^2 \neq 0$, then $\tilde{Q}^{-1} = (T(\tilde{Q})e_t - \tilde{Q})D(\tilde{Q})^{-1} = \tilde{Q}^{\natural}\langle\tilde{Q}\rangle_{\natural}^{-1}$, recovering the inverse formula on the complement of the zero divisor locus.
 
 **Proposition.** The functionals satisfy
 
@@ -170,7 +170,7 @@ $$
 
 so the eigenvalues of $L_{\exp\tilde{Q}}$ are $\exp(q_t^\pm)(\cos|\vec Q_\pm| \pm i\sin|\vec Q_\pm|) = \exp(q_t^\pm \pm i|\vec Q_\pm|)$, as expected from the spectrum.
 
-**Non-injectivity and the logarithm.** $\exp$ is not injective: for every imaginary unit $\vec u \in \mathbb{H}$ and every integer $n$, $\exp(2\pi n\vec u) = 1$, hence $\exp(\tilde{Q} + 2\pi n(\vec u_+,\vec u_-)) = \exp(\tilde{Q})$ for the central-pair element $2\pi n(\vec u_+,\vec u_-)$. A **logarithm** of $\tilde{Q}$ is any $\tilde Q_{\log}$ with $\exp(\tilde Q_{\log}) = \tilde{Q}$; since every nonzero quaternion has a logarithm, every element of the group of units has one in each half, so $\exp$ maps onto the units, and a branch must be chosen in each half. No continuous logarithm exists on the whole group of units of $\mathbb{H}$, and hence none on that of $\mathbb{B}_{\mathrm{spl}}$, for the same reason as in the complex and biquaternion cases.
+**Non-injectivity and the logarithm.** $\exp$ is not injective: for every imaginary unit $\vec u \in \mathbb{H}$ and every integer $n$, $\exp(2\pi n\vec u) = 1$, hence $\exp(\tilde{Q} + 2\pi n(\vec u_+,\vec u_-)) = \exp(\tilde{Q})$ for the central-pair element $2\pi n(\vec u_+,\vec u_-)$. A **logarithm** of $\tilde{Q}$ is any $\tilde Q_{\log}$ with $\exp(\tilde Q_{\log}) = \tilde{Q}$; since every nonzero quaternion has a logarithm, every element of the group of invertibles has one in each half, so $\exp$ maps onto the invertibles, and a branch must be chosen in each half. No continuous logarithm exists on the whole group of invertibles of $\mathbb{H}$, and hence none on that of $\mathbb{B}_{\mathrm{spl}}$, for the same reason as in the complex and biquaternion cases.
 
 ## The Relation to the Biquaternion Case
 

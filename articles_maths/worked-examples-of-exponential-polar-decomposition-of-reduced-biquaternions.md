@@ -79,7 +79,7 @@ C_+C_-=\rho^2e^{2i\theta_{\mathrm{pha}}}
 \frac{C_+}{C_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}.
 $$
 
-An element is a unit exactly when $C_+C_-\neq0$.
+An element is invertible exactly when $C_+C_-\neq0$.
 
 ### The Reconstruction
 
@@ -501,7 +501,7 @@ The two scales are $\rho e^{\theta_{\mathrm{rpd}}}=2+\delta$ and $\rho e^{-\thet
 | $0.01$ | $0.1417744688$ | $2.651652454$ | $2.01$ | $0.01$ |
 | $0.001$ | $0.0447325385$ | $3.800701167$ | $2.001$ | $0.001$ |
 
-As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger scale tends to $2$; the factor tends to $1+j$. The polar decomposition exists on the unit group and stops exactly at $C_+C_-=0$.
+As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger scale tends to $2$; the factor tends to $1+j$. The polar decomposition exists on the group of invertibles and stops exactly at $C_+C_-=0$.
 
 ## Summary
 
@@ -533,7 +533,7 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 
 ### What the Cases Show
 
-- The two complex components determine the polar data. In every unit the four numbers $\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are read from $C_+$ and $C_-$ by the formulas of §*The Two Complex Components*, and $\lvert C_+\rvert$ and $\lvert C_-\rvert$ are the two scales.
+- The two complex components determine the polar data. In every invertible the four numbers $\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are read from $C_+$ and $C_-$ by the formulas of §*The Two Complex Components*, and $\lvert C_+\rvert$ and $\lvert C_-\rvert$ are the two scales.
 - The central rows have $Q_{\blacktriangledown}=0$, hence $C_+=C_-$. The elements $1+i$, $i$ and $-1$ have $\theta_{\mathrm{rpd}}=0$ and lie on the torus; the two components coincide and the phases add.
 - The elements $i$ and $ij$ are the two pure phases, with $\theta_{\mathrm{pha}}=\pi/2$ and $\theta_{\mathrm{phb}}=\pi/2$ respectively. Both have $\rho=1$ and $\theta_{\mathrm{rpd}}=0$; the difference is the phase, not the modulus.
 - The elements $j$ and $-1$ lie on the boundary of the principal diamond. The first has $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=-\pi/2$; the second is the corner $(\pi,0)$. The polar data are still unique there, because the boundary is taken half-open.

@@ -78,7 +78,7 @@ has $\Sigma_r$ of complex dimension $r(2n-r)$; the open stratum $\Sigma_{n-1}$ i
 
 ## The Groups
 
-**The unit group is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$ and real dimension $2n^{2}$.** It is connected, and $\det:GL_n(\mathbb{C})\to\mathbb{C}^{\times}$ is a surjective homomorphism whose kernel is $SL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.
+**The group of invertibles is $GL_n(\mathbb{C})$, of complex dimension $n^{2}$ and real dimension $2n^{2}$.** It is connected, and $\det:GL_n(\mathbb{C})\to\mathbb{C}^{\times}$ is a surjective homomorphism whose kernel is $SL_n(\mathbb{C})$, of complex dimension $n^{2}-1$.
 
 **The projective group is $PGL_n(\mathbb{C})=GL_n(\mathbb{C})/\mathbb{C}^{\times}I$, of complex dimension $n^{2}-1$.** It acts on $M_n(\mathbb{C})$ by conjugation, $A\mapsto SAS^{-1}$, and the kernel of the action is exactly the scalars. The conjugation action preserves the trace, the determinant, the characteristic polynomial and the rank, and its orbits are the Jordan types.
 
@@ -116,7 +116,7 @@ are the two idempotents of the biquaternion frame. The general construction of *
 
 ## Summary
 
-The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with centre $\mathbb{C}I$, unit group $GL_n(\mathbb{C})$, projective group $PGL_n(\mathbb{C})$ of dimension $n^{2}-1$, and involution $A^{*}=\bar A^{\mathsf T}$ whose trace form is positive definite. Its singular set is $\{\det=0\}$, of real codimension $2$, and it has no null cone. For $n=2$ it is the biquaternion algebra as a complex algebra; the biquaternion N-norm is a second, indefinite form and is not the trace form.
+The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with centre $\mathbb{C}I$, group of invertibles $GL_n(\mathbb{C})$, projective group $PGL_n(\mathbb{C})$ of dimension $n^{2}-1$, and involution $A^{*}=\bar A^{\mathsf T}$ whose trace form is positive definite. Its singular set is $\{\det=0\}$, of real codimension $2$, and it has no null cone. For $n=2$ it is the biquaternion algebra as a complex algebra; the biquaternion N-norm is a second, indefinite form and is not the trace form.
 
 ## Summary of Notation
 
@@ -130,7 +130,7 @@ The algebra $M_n(\mathbb{C})$ is central simple of real dimension $2n^{2}$, with
 | $\langle A,B\rangle=\operatorname{tr}(A^{*}B)$ | the positive definite trace form |
 | $\langle A\rangle_*^{1/2}$ | the Frobenius norm |
 | $\mathfrak{u}(n)$, $\mathfrak{su}(n)$ | the anti-Hermitian and traceless anti-Hermitian algebras, of dimensions $n^{2}$ and $n^{2}-1$ |
-| $GL_n(\mathbb{C})$, $SL_n(\mathbb{C})$, $PGL_n(\mathbb{C})$ | the unit group, its determinant-one subgroup and the projective group |
+| $GL_n(\mathbb{C})$, $SL_n(\mathbb{C})$, $PGL_n(\mathbb{C})$ | the group of invertibles, its determinant-one subgroup and the projective group |
 | $\Sigma=\{\det=0\}$ | the singular set, of real codimension $2$ |
 | $B$ | the Borel subgroup of upper triangular matrices |
 

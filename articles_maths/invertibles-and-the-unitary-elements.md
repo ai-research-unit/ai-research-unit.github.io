@@ -1,12 +1,12 @@
-# __Units and the Unitary Elements__
+# __Invertibles and the Unitary Elements__
 
 ## Introduction
 
-A unit is an element with a two-sided inverse, and the invertible elements of an algebra form a group under the product. In an algebra with an involution a second kind of unit singles itself out: one whose inverse is its conjugate. These are the **unitary elements**, the algebraic counterpart of the elements that preserve a sesquilinear structure, and they are the group whose Lie algebra is carried by the anti-Hermitian elements.
+An invertible element is an element with a two-sided inverse, and the invertible elements of an algebra form a group under the product. In an algebra with an involution a second kind of unit singles itself out: one whose inverse is its conjugate. These are the **unitary elements**, the algebraic counterpart of the elements that preserve a sesquilinear structure, and they are the group whose Lie algebra is carried by the anti-Hermitian elements.
 
-Throughout, $A$ is an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, so that $*$ is additive, $*^{2} = \mathrm{id}$, anti-multiplicative $(xy)^{*} = y^{*}x^{*}$, and $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$. The derived operation $x \star y = xy^{*}$ of *Sesqualgebras* makes $(A,\star)$ a sesqualgebra, and it is that structure which the unitary elements respect. The group of the units is written $A^{\times}$, and the Hermitian and the anti-Hermitian elements $H(A)$ and $S(A)$ are those of *Hermitian and Anti-Hermitian Elements*. Associativity is assumed from the start here, where *Sesqualgebras* did not assume it, because the group structure of the units and the multiplicativity of the inner maps both need it.
+Throughout, $A$ is an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, so that $*$ is additive, $*^{2} = \mathrm{id}$, anti-multiplicative $(xy)^{*} = y^{*}x^{*}$, and $(\lambda x)^{*} = \varsigma(\lambda)x^{*}$. The derived operation $x \star y = xy^{*}$ of *Sesqualgebras* makes $(A,\star)$ a sesqualgebra, and it is that structure which the unitary elements respect. The group of the invertibles is written $A^{\times}$, and the Hermitian and the anti-Hermitian elements $H(A)$ and $S(A)$ are those of *Hermitian and Anti-Hermitian Elements*. Associativity is assumed from the start here, where *Sesqualgebras* did not assume it, because the group structure of the invertibles and the multiplicativity of the inner maps both need it.
 
-What is added here: the unit and its Hermitian property, the definition of the unitary elements and their identification with the units whose inverse is the conjugate, the group structure, the stability under the involution and the inverse, the Hermitian unitary elements, the inner $*$-automorphisms that the unitaries induce, and the worked cases $M_n(\mathbb{C})$, $\mathbb{H}$, the commutative algebras and $\mathbb{B}$.
+What is added here: the unit and its Hermitian property, the definition of the unitary elements and their identification with the invertibles whose inverse is the conjugate, the group structure, the stability under the involution and the inverse, the Hermitian unitary elements, the inner $*$-automorphisms that the unitaries induce, and the worked cases $M_n(\mathbb{C})$, $\mathbb{H}$, the commutative algebras and $\mathbb{B}$.
 
 ## The Unit
 
@@ -18,7 +18,7 @@ What is added here: the unit and its Hermitian property, the definition of the u
 
 **Remark.** The unit is fixed by the involution, and the proof needs only the unit axiom, the anti-multiplicativity and $*^{2} = \mathrm{id}$. An idempotent is not fixed in the same way: in $R \times R$ with the involution that exchanges the two factors the element $(1,0)$ is a central idempotent, and its conjugate is $(0,1)$, so it is not Hermitian. What singles the unit out is that it is the unit.
 
-**Remark.** The unit belongs to the underlying algebra, and it is not in general a unit of the derived operation. By *Sesqualgebras* the element $1$ is always a right $\star$-unit, $x \star 1 = x1^{*} = x$, while a left $\star$-unit exists only when $* = \mathrm{id}$, and then $\star$ is the original product. The unit is therefore the unit of the algebra, and the sesquilinear structure is what the unitary elements preserve rather than what supplies the unit.
+**Remark.** The unit belongs to the underlying algebra, and it is not in general an invertible element of the derived operation. By *Sesqualgebras* the element $1$ is always a right $\star$-unit, $x \star 1 = x1^{*} = x$, while a left $\star$-unit exists only when $* = \mathrm{id}$, and then $\star$ is the original product. The unit is therefore the unit of the algebra, and the sesquilinear structure is what the unitary elements preserve rather than what supplies the unit.
 
 ## The Unitary Elements
 
@@ -32,7 +32,7 @@ $$
 
 The set of the unitary elements is written $\mathrm{U}(A)$.
 
-**Proposition.** An element is unitary if and only if it is a unit with $u^{*} = u^{-1}$. Equivalently $\mathrm{U}(A) = \{ u \in A^{\times} : u^{-1} = u^{*} \}$, and in particular $\mathrm{U}(A) \subseteq A^{\times}$.
+**Proposition.** An element is unitary if and only if it is invertible with $u^{*} = u^{-1}$. Equivalently $\mathrm{U}(A) = \{ u \in A^{\times} : u^{-1} = u^{*} \}$, and in particular $\mathrm{U}(A) \subseteq A^{\times}$.
 
 **Proof.** If $u u^{*} = u^{*}u = 1$ then $u$ is invertible with two-sided inverse $u^{*}$, so $u \in A^{\times}$ and $u^{-1} = u^{*}$. Conversely if $u \in A^{\times}$ and $u^{-1} = u^{*}$ then $uu^{*} = uu^{-1} = 1$ and $u^{*}u = u^{-1}u = 1$.
 
@@ -42,7 +42,7 @@ The set of the unitary elements is written $\mathrm{U}(A)$.
 
 **Theorem.** $\mathrm{U}(A)$ is a group under the product, it is a subgroup of $A^{\times}$, and it contains $1$.
 
-**Proof.** The element $1$ is unitary because $1^{*} = 1$ and $11 = 1$. For $u, v \in \mathrm{U}(A)$ the product $uv$ is a unit with $(uv)^{-1} = v^{-1}u^{-1} = v^{*}u^{*} = (uv)^{*}$, so $uv$ is unitary by the proposition, and the product in $\mathrm{U}(A)$ is the product of $A$, which is associative. For $u \in \mathrm{U}(A)$ the inverse $u^{-1} = u^{*}$ satisfies $(u^{-1})^{-1} = u = (u^{-1})^{*}$, since $(u^{*})^{*} = u$, so $u^{-1} \in \mathrm{U}(A)$. Hence $\mathrm{U}(A)$ is closed under the product and the inverse and contains $1$, and it is a subgroup of $A^{\times}$.
+**Proof.** The element $1$ is unitary because $1^{*} = 1$ and $11 = 1$. For $u, v \in \mathrm{U}(A)$ the product $uv$ is invertible with $(uv)^{-1} = v^{-1}u^{-1} = v^{*}u^{*} = (uv)^{*}$, so $uv$ is unitary by the proposition, and the product in $\mathrm{U}(A)$ is the product of $A$, which is associative. For $u \in \mathrm{U}(A)$ the inverse $u^{-1} = u^{*}$ satisfies $(u^{-1})^{-1} = u = (u^{-1})^{*}$, since $(u^{*})^{*} = u$, so $u^{-1} \in \mathrm{U}(A)$. Hence $\mathrm{U}(A)$ is closed under the product and the inverse and contains $1$, and it is a subgroup of $A^{\times}$.
 
 **Remark.** The proof uses the involution twice, once to exchange the two halves of the condition and once for the inverse, and both uses are instances of $(uv)^{*} = v^{*}u^{*}$ and $*^{2} = \mathrm{id}$. In a commutative algebra the condition collapses to the single equation $uu^{*} = 1$.
 
@@ -120,7 +120,7 @@ $$
 
 This map is multiplicative and its determinant is $\nu(q)$, so it carries the unit quaternions onto the unitary matrices of determinant $1$, that is onto $\mathrm{SU}(2)$.
 
-**Remark.** The two cases differ in what the units are. The algebra $\mathbb{H}$ is a division algebra, so every nonzero element is a unit, and every unit is a real multiple of a unitary element: for $q \neq 0$ one has $\nu(q) \neq 0$, and $q = \sqrt{\nu(q)}\,u$ with $u = q/\sqrt{\nu(q)}$ unitary. In $M_n(\mathbb{C})$ this fails, since an element equal to $\lambda u$ with $u$ unitary satisfies $(\lambda u)(\lambda u)^{*} = \lambda \varsigma(\lambda) I$, a multiple of the identity, and the diagonal matrix with entries $2$ and $1$ is not of that form.
+**Remark.** The two cases differ in what the invertibles are. The algebra $\mathbb{H}$ is a division algebra, so every nonzero element is invertible, and every invertible element is a real multiple of a unitary element: for $q \neq 0$ one has $\nu(q) \neq 0$, and $q = \sqrt{\nu(q)}\,u$ with $u = q/\sqrt{\nu(q)}$ unitary. In $M_n(\mathbb{C})$ this fails, since an element equal to $\lambda u$ with $u$ unitary satisfies $(\lambda u)(\lambda u)^{*} = \lambda \varsigma(\lambda) I$, a multiple of the identity, and the diagonal matrix with entries $2$ and $1$ is not of that form.
 
 ### The Commutative Case
 
@@ -134,11 +134,11 @@ This map is multiplicative and its determinant is $\nu(q)$, so it carries the un
 
 **Proof.** The first statement is the definition read in $\mathbb{B}$. For the second, the identification carries $\mathbb{B}$ onto $M_2(\mathbb{C})$ as algebras with involution, the Hermitian conjugation being the composite of the quaternion conjugation and the conjugation of the coefficients, and this composite corresponds to the conjugate transpose of the matrix; the unitary elements are then the unitary $2 \times 2$ matrices.
 
-**Remark.** The algebra $\mathbb{B}$ has zero divisors, so $\mathrm{U}(\mathbb{B})$ is a proper part of the units: the element $2$ is invertible with inverse $\tfrac12$, and it is not unitary since $2 \cdot 2^{*} = 4$. The difference from the previous case is the difference between a division algebra and a full matrix algebra of size two over $\mathbb{C}$, which is what the identification with $M_2(\mathbb{C})$ makes visible.
+**Remark.** The algebra $\mathbb{B}$ has zero divisors, so $\mathrm{U}(\mathbb{B})$ is a proper part of the invertibles: the element $2$ is invertible with inverse $\tfrac12$, and it is not unitary since $2 \cdot 2^{*} = 4$. The difference from the previous case is the difference between a division algebra and a full matrix algebra of size two over $\mathbb{C}$, which is what the identification with $M_2(\mathbb{C})$ makes visible.
 
 ## Summary
 
-In an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, the unit is Hermitian, $1^{*} = 1$, and it is a unit of the derived operation only as a right unit, since a left $\star$-unit exists exactly when $* = \mathrm{id}$. The unitary elements $\mathrm{U}(A) = \{u : uu^{*} = u^{*}u = 1\}$ are exactly the units with $u^{*} = u^{-1}$, they form a group under the product containing $1$, and they are stable under the involution and the inverse, the involution restricting to the inversion, an involutive anti-automorphism of $\mathrm{U}(A)$ that is an automorphism exactly when $\mathrm{U}(A)$ is abelian. The Hermitian unitary elements are the elements with $u^{2} = 1$ and $u = u^{*}$, and every unitary $u$ induces the inner $*$-automorphism $x \mapsto uxu^{*}$, which preserves the Hermitian and the anti-Hermitian elements and restricts to an automorphism of the group $\mathrm{U}(A)$. The worked cases are the unitary group $\mathrm{U}(n)$ of $M_n(\mathbb{C})$ with the conjugate transpose, the unit quaternions of $\mathbb{H}$ with the quaternion conjugation, the elements with $uu^{*} = 1$ in a commutative algebra, which for $\mathbb{C}$ are those with $u\bar u = 1$, and the group $\mathrm{U}(2)$ of the biquaternion algebra with the Hermitian conjugation.
+In an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear involution $*$, the unit is Hermitian, $1^{*} = 1$, and it is invertible in the derived operation only as a right unit, since a left $\star$-unit exists exactly when $* = \mathrm{id}$. The unitary elements $\mathrm{U}(A) = \{u : uu^{*} = u^{*}u = 1\}$ are exactly the invertibles with $u^{*} = u^{-1}$, they form a group under the product containing $1$, and they are stable under the involution and the inverse, the involution restricting to the inversion, an involutive anti-automorphism of $\mathrm{U}(A)$ that is an automorphism exactly when $\mathrm{U}(A)$ is abelian. The Hermitian unitary elements are the elements with $u^{2} = 1$ and $u = u^{*}$, and every unitary $u$ induces the inner $*$-automorphism $x \mapsto uxu^{*}$, which preserves the Hermitian and the anti-Hermitian elements and restricts to an automorphism of the group $\mathrm{U}(A)$. The worked cases are the unitary group $\mathrm{U}(n)$ of $M_n(\mathbb{C})$ with the conjugate transpose, the unit quaternions of $\mathbb{H}$ with the quaternion conjugation, the elements with $uu^{*} = 1$ in a commutative algebra, which for $\mathbb{C}$ are those with $u\bar u = 1$, and the group $\mathrm{U}(2)$ of the biquaternion algebra with the Hermitian conjugation.
 
 ## Summary of Notation
 
@@ -146,7 +146,7 @@ In an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear invol
 |---|---|
 | $1^{*} = 1$ | the unit is Hermitian |
 | $\mathrm{U}(A) = \{u : uu^{*} = u^{*}u = 1\}$ | the unitary elements |
-| $\mathrm{U}(A) = \{u \in A^{\times} : u^{-1} = u^{*}\}$ | the unitaries among the units |
+| $\mathrm{U}(A) = \{u \in A^{\times} : u^{-1} = u^{*}\}$ | the unitaries among the invertibles |
 | $u^{*} = u^{-1}$ on $\mathrm{U}(A)$ | the involution restricts to the inversion |
 | $\mathrm{U}(A) \cap H(A) = \{u : u^{2} = 1, u = u^{*}\}$ | the Hermitian unitary elements |
 | $\alpha_u(x) = uxu^{*}$ | the inner $*$-automorphism induced by a unitary $u$ |
@@ -155,7 +155,7 @@ In an associative $R$-algebra with a unit $1$ and a $\varsigma$-semilinear invol
 
 ## Further Reading
 
-- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the units, the Hermitian elements and the unitary elements of a ring with involution.
+- I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the invertibles, the Hermitian elements and the unitary elements of a ring with involution.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society Colloquium Publications 44, 1998), for the unitary groups and the involutions that define them.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society, 1968), for the Hermitian and the unitary elements that generate the Jordan and the Lie structures of an algebra with involution.
-- Richard S. Pierce, *Associative Algebras* (Graduate Texts in Mathematics 88, Springer, 1982), for the group of units and the inner automorphisms of an associative algebra.
+- Richard S. Pierce, *Associative Algebras* (Graduate Texts in Mathematics 88, Springer, 1982), for the group of invertibles and the inner automorphisms of an associative algebra.

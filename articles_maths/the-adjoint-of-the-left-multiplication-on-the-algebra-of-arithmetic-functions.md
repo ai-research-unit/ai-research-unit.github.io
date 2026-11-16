@@ -44,7 +44,7 @@ The operator is an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which h
 
 **Proof.** Test the identity on $\delta_1$: $\mathrm{Sd}_a\delta_1=\overline{a(1)}\delta_1$ while $L_{a^*}\delta_1=a^*=\overline a$, so equality forces $a=\gamma\delta_1$, and then both sides are $\overline\gamma\,\mathrm{id}$; the self-adjointness and unitarity computations are the same test applied to $\mathrm{Sd}_a=L_a$ and to the two products. This is the standard computation of the adjoint of a convolution operator, in *Convolution Operators*.
 
-**Corollary (the Dirichlet inverse).** $L_a$ is invertible exactly when $a$ is a unit of $\mathcal{A}$, and then $L_a^{-1}=L_{a^{-1}}$; the adjoint of the inverse is $\mathrm{Sd}_{a^{-1}}$, and the operator is normal, $L_aL_a^*=L_a^*L_a$, exactly when $\mathrm{Sd}_a$ commutes with $L_a$, which happens for all $a$ in the degenerate rank-one case.
+**Corollary (the Dirichlet inverse).** $L_a$ is invertible exactly when $a$ is invertible in $\mathcal{A}$, and then $L_a^{-1}=L_{a^{-1}}$; the adjoint of the inverse is $\mathrm{Sd}_{a^{-1}}$, and the operator is normal, $L_aL_a^*=L_a^*L_a$, exactly when $\mathrm{Sd}_a$ commutes with $L_a$, which happens for all $a$ in the degenerate rank-one case.
 
 ## Worked Examples
 
@@ -62,7 +62,7 @@ The adjoint fails to be a multiplication in four degenerate configurations. Firs
 
 ## Summary
 
-For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a*f$ has adjoint the transposed multiplication $\mathrm{Sd}_a=L_a^*$ with $(\mathrm{Sd}_ag)(k)=\sum_m\overline{a(m)}g(mk)$; it is a multiplication only for $a=\gamma\varepsilon$, and $L_a^*=L_{a^*}$ exactly for the scalar multiples of the identity, so the involution on the elements and the adjoint on the operators are different structures. The operator is self-adjoint exactly for the real scalars, unitary exactly for the unitary scalars, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$; it is invertible exactly for the units with $L_a^{-1}=L_{a^{-1}}$. The degenerate cases are the non-normality of the general $L_a$, the rank-one augmentation form, the unboundedness of $L_a$ without a weight and the weighted adjoint.
+For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a*f$ has adjoint the transposed multiplication $\mathrm{Sd}_a=L_a^*$ with $(\mathrm{Sd}_ag)(k)=\sum_m\overline{a(m)}g(mk)$; it is a multiplication only for $a=\gamma\varepsilon$, and $L_a^*=L_{a^*}$ exactly for the scalar multiples of the identity, so the involution on the elements and the adjoint on the operators are different structures. The operator is self-adjoint exactly for the real scalars, unitary exactly for the unitary scalars, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$; it is invertible exactly for the invertibles with $L_a^{-1}=L_{a^{-1}}$. The degenerate cases are the non-normality of the general $L_a$, the rank-one augmentation form, the unboundedness of $L_a$ without a weight and the weighted adjoint.
 
 ## Summary of Notation
 
@@ -75,7 +75,7 @@ For $a$ in the algebra of arithmetic functions the left multiplication $L_a(f)=a
 | $L_a^*=L_a\iff a=\gamma\varepsilon$, $\gamma\in\mathbb{R}$ | Self-adjointness |
 | $L_a^*L_a=\mathrm{id}\iff a=\gamma\varepsilon$, $|\gamma|=1$ | Unitarity |
 | $\mathrm{Sd}_aL_a=\mathrm{id}$ | Isometry condition |
-| $L_a^{-1}=L_{a^{-1}}$ | Inverse for a unit |
+| $L_a^{-1}=L_{a^{-1}}$ | Inverse for an invertible element |
 | $\mathcal{A}(\sigma)$ | Weighted space |
 
 ## Further Reading

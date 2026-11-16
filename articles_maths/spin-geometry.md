@@ -59,7 +59,7 @@ a complex vector bundle of rank $2^{\lfloor n/2\rfloor}$; for $n$ even the split
 $$
 c(v) : \mathcal{S}_x \longrightarrow \mathcal{S}_x , \qquad c(v)^2 = -g(v,v)\operatorname{id},
 $$
-is defined by the Clifford action of $v$ on the spin module, and it is a bundle map because the action of $\operatorname{Spin}(n)$ on $\Delta_n$ intertwines the Clifford multiplication, the group being a subgroup of the units of the Clifford algebra.
+is defined by the Clifford action of $v$ on the spin module, and it is a bundle map because the action of $\operatorname{Spin}(n)$ on $\Delta_n$ intertwines the Clifford multiplication, the group being a subgroup of the invertibles of the Clifford algebra.
 
 **Proposition.** For $n$ even the Clifford multiplication exchanges the two halves, $c(v) : \mathcal{S}^\pm \to \mathcal{S}^\mp$, and for $n$ odd there is no such splitting over the algebra; the spinor bundle is a Clifford module bundle and, when the complex dimension permits, its endomorphism bundle is the Clifford bundle, $\operatorname{End}(\mathcal{S}) \cong \mathrm{Cl}(TM)\otimes\mathbb{C}$ for $n$ even, resulting in the irreducibility of the spin module.
 

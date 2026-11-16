@@ -37,7 +37,7 @@ the maximum existing because the coefficients tend to $0$ and the absolute value
 
 **Theorem.** The Tate algebra $K\langle X_1, \dots, X_n\rangle$ is a commutative $K$-Banach algebra with unit $1$, the Gauss norm is a multiplicative norm, and its unit ball is the subring $\mathcal{O}\langle X_1, \dots, X_n\rangle$ of series with coefficients in $\mathcal{O}$.
 
-**Proof.** The coefficient space is the direct sum $\bigoplus_\alpha K$ together with the sup norm, and it is complete because a Cauchy sequence of coefficient families with the sup norm is Cauchy coefficientwise and the limit family still tends to $0$: given $\varepsilon$, all but finitely many coefficients of each element of the sequence beyond some index are $\leq \varepsilon$, and a diagonal argument gives the same for the limit. Multiplicativity of the Gauss norm is the ultrametric maximum principle applied to the convolution coefficients: the maximum of the absolute values of the convolution is the product of the two maxima, because a term achieving the maximum is unique up to units in the leading coefficients of the factors and all other terms have strictly smaller absolute value. The unit ball is closed under multiplication by multiplicativity of the norm and under addition because the norm is non-Archimedean, and it is a subring.
+**Proof.** The coefficient space is the direct sum $\bigoplus_\alpha K$ together with the sup norm, and it is complete because a Cauchy sequence of coefficient families with the sup norm is Cauchy coefficientwise and the limit family still tends to $0$: given $\varepsilon$, all but finitely many coefficients of each element of the sequence beyond some index are $\leq \varepsilon$, and a diagonal argument gives the same for the limit. Multiplicativity of the Gauss norm is the ultrametric maximum principle applied to the convolution coefficients: the maximum of the absolute values of the convolution is the product of the two maxima, because a term achieving the maximum is unique up to invertibles in the leading coefficients of the factors and all other terms have strictly smaller absolute value. The unit ball is closed under multiplication by multiplicativity of the norm and under addition because the norm is non-Archimedean, and it is a subring.
 
 **Remark.** The multiplicativity of the Gauss norm is a genuinely non-Archimedean phenomenon. For the Archimedean analogue the norm would be the $L^\infty$ norm on the disc, and it would not be multiplicative on the ring of convergent series.
 
@@ -75,7 +75,7 @@ where $\operatorname{Sp} A$ is the set of maximal ideals of $A$, identified with
 
 ### The Weierstrass Theorems
 
-**Definition.** Let $f = \sum_{i \geq 0} f_i(X_1, \dots, X_{n-1}) X_n^i \in K\langle X_1, \dots, X_n\rangle$. Then $f$ is **distinguished of order $d$ in $X_n$** if $f_d$ is a unit of $K\langle X_1, \dots, X_{n-1}\rangle$ and
+**Definition.** Let $f = \sum_{i \geq 0} f_i(X_1, \dots, X_{n-1}) X_n^i \in K\langle X_1, \dots, X_n\rangle$. Then $f$ is **distinguished of order $d$ in $X_n$** if $f_d$ is invertible in $K\langle X_1, \dots, X_{n-1}\rangle$ and
 
 $$
 \lvert f_d \rvert > \lvert f_i \rvert \quad \text{for all } i \neq d .
@@ -89,7 +89,7 @@ $$
 
 and $\lVert q \rVert_G \leq \lVert f \rVert_G^{-1}\lVert g \rVert_G$.
 
-**Proof.** Divide the expansions of $f$ and $g$ as series in $X_n$ with coefficients in $K\langle X_1, \dots, X_{n-1}\rangle$; the division algorithm over the coefficient ring terminates in the limit because the coefficients of $f$ beyond the $d$-th are dominated by $f_d$, which is a unit; convergence follows from the norm estimate displayed, and uniqueness follows because a nonzero remainder of degree $< d$ cannot be a multiple of $f$, the leading coefficient of $f$ being a unit.
+**Proof.** Divide the expansions of $f$ and $g$ as series in $X_n$ with coefficients in $K\langle X_1, \dots, X_{n-1}\rangle$; the division algorithm over the coefficient ring terminates in the limit because the coefficients of $f$ beyond the $d$-th are dominated by $f_d$, which is invertible; convergence follows from the norm estimate displayed, and uniqueness follows because a nonzero remainder of degree $< d$ cannot be a multiple of $f$, the leading coefficient of $f$ being an invertible element.
 
 **Theorem (Weierstrass preparation).** Let $f \in K\langle X_1, \dots, X_n\rangle$ be distinguished of order $d$ in $X_n$. Then $f$ has a unique factorisation
 
@@ -97,9 +97,9 @@ $$
 f = u \cdot g
 $$
 
-with $u \in K\langle X_1, \dots, X_n\rangle^\times$ a unit and $g \in K\langle X_1, \dots, X_{n-1}\rangle[X_n]$ a monic polynomial of degree $d$ whose non-leading coefficients have Gauss norm strictly less than $1$.
+with $u \in K\langle X_1, \dots, X_n\rangle^\times$ an invertible element and $g \in K\langle X_1, \dots, X_{n-1}\rangle[X_n]$ a monic polynomial of degree $d$ whose non-leading coefficients have Gauss norm strictly less than $1$.
 
-**Proof.** Apply Weierstrass division to $g = X_n^d$ and to $f$; the remainder is a polynomial $g$ of degree $d$ with leading coefficient $1$, and the quotient $u$ is a unit because its residue modulo the maximal ideal is the invertible constant $f_d \bmod \mathrm{M}$; this is the standard argument of the preparation theorem.
+**Proof.** Apply Weierstrass division to $g = X_n^d$ and to $f$; the remainder is a polynomial $g$ of degree $d$ with leading coefficient $1$, and the quotient $u$ is invertible because its residue modulo the maximal ideal is the invertible constant $f_d \bmod \mathrm{M}$; this is the standard argument of the preparation theorem.
 
 **Corollary.** $K\langle X_1, \dots, X_n\rangle$ is a Noetherian unique factorisation domain, and every ideal is closed.
 
@@ -115,7 +115,7 @@ $$
 
 and the supremum is attained.
 
-**Proof.** It suffices to treat the case $\lVert f \rVert_G = 1$, since scaling $f$ by a scalar scales both sides. Then $f \in \mathcal{O}\langle X\rangle$, some coefficient of $f$ is a unit, and the reduction $\bar f \in k[X_1, \dots, X_n]$ is a nonzero polynomial over the residue field $k$, which is infinite because $K$ is algebraically closed. Choose $\bar x = (\bar x_1, \dots, \bar x_n) \in k^n$ with $\bar f(\bar x) \neq 0$, possible since a nonzero polynomial over an infinite field does not vanish identically; lift each $\bar x_i$ to $x_i \in \mathcal{O}$, and let $x = (x_i)$. Evaluation at $x$ reduces the coefficients modulo $\mathrm{M}$, so $\lvert f(x) \rvert = \lvert \bar f(\bar x) \rvert = 1 = \lVert f \rVert_G$. On the other hand $\lvert f(x) \rvert \leq \lVert f \rVert_G$ for every $x$ of the polydisc, by the multiplicativity of the Gauss norm and the inequality $\lvert x_i \rvert \leq 1$. Hence the supremum equals the Gauss norm and is attained.
+**Proof.** It suffices to treat the case $\lVert f \rVert_G = 1$, since scaling $f$ by a scalar scales both sides. Then $f \in \mathcal{O}\langle X\rangle$, some coefficient of $f$ is invertible, and the reduction $\bar f \in k[X_1, \dots, X_n]$ is a nonzero polynomial over the residue field $k$, which is infinite because $K$ is algebraically closed. Choose $\bar x = (\bar x_1, \dots, \bar x_n) \in k^n$ with $\bar f(\bar x) \neq 0$, possible since a nonzero polynomial over an infinite field does not vanish identically; lift each $\bar x_i$ to $x_i \in \mathcal{O}$, and let $x = (x_i)$. Evaluation at $x$ reduces the coefficients modulo $\mathrm{M}$, so $\lvert f(x) \rvert = \lvert \bar f(\bar x) \rvert = 1 = \lVert f \rVert_G$. On the other hand $\lvert f(x) \rvert \leq \lVert f \rVert_G$ for every $x$ of the polydisc, by the multiplicativity of the Gauss norm and the inequality $\lvert x_i \rvert \leq 1$. Hence the supremum equals the Gauss norm and is attained.
 
 **Corollary.** For a reduced affinoid algebra $A$ the spectral seminorm is a norm, and for each presentation the residue norm is a submultiplicative Banach norm on $A$ satisfying $\lVert f\rVert \geq \lvert f\rvert_{\mathrm{sup}}$ for every $f$. The spectrum $\operatorname{Sp} A$ is a compact Hausdorff space.
 

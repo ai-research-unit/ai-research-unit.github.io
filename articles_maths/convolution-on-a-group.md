@@ -27,7 +27,7 @@ $$
 
 and it is commutative exactly when $G$ is abelian. The algebra $\mathcal{A}$ is unital exactly when $G$ is discrete, the unit being the point mass $\delta_e$; in general $\mathcal{A}$ has no identity.
 
-**Proof.** Associativity is Fubini together with the associativity of the group product and the left invariance of $dx$; submultiplicativity is Fubini and $\|f\|_1\|g\|_1$; commutativity is the identity $f*g = g*f$ read through the substitution $x \mapsto x^{-1}$ and fails as soon as two elements do not commute; a unit $u$ would satisfy $u*f = f$ for all $f \in L^1(G)$, forcing $u$ to be the point mass at $e$, which is integrable exactly when $G$ is discrete. The full development is *The Convolution Algebra $L^1(G)$*; the article reads the same product as an operation between functions.
+**Proof.** Associativity is Fubini together with the associativity of the group product and the left invariance of $dx$; submultiplicativity is Fubini and $\|f\|_1\|g\|_1$; commutativity is the identity $f*g = g*f$ read through the substitution $x \mapsto x^{-1}$ and fails as soon as two elements do not commute; an invertible element $u$ would satisfy $u*f = f$ for all $f \in L^1(G)$, forcing $u$ to be the point mass at $e$, which is integrable exactly when $G$ is discrete. The full development is *The Convolution Algebra $L^1(G)$*; the article reads the same product as an operation between functions.
 
 **Remark (the operator reading).** The associativity displayed above is what makes the left and the right multiplications by a fixed element into operators, and the submultiplicativity is what makes them bounded; the two readings are taken in the next section.
 

@@ -164,5 +164,5 @@ The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the ce
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, its multiplicativity and its zero locus
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Regular Sector](the-n-regular-sector.html), for the open set on which the norm does not vanish
-- [Centre, Units, Zero Divisors and Division Algebras](centre-units-zero-divisors-and-division-algebras.html), for the centre as a division algebra inside the algebra
+- [Centre, Invertibles, Zero Divisors and Division Algebras](centre-invertibles-zero-divisors-and-division-algebras.html), for the centre as a division algebra inside the algebra
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

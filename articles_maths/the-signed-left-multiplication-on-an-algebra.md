@@ -62,9 +62,9 @@ $$
 \Lambda(a) = L(a) \qquad \Longleftrightarrow \qquad a\,\alpha(x) = a\,x \ \text{ for all } x \qquad \Longleftrightarrow \qquad a\,A^- = 0,
 $$
 
-where $A^- = \{x : \alpha(x) = -x\}$ is the negated part of the decomposition $A = A^+ \oplus A^-$ of *The Signed Two-Sided Operator on an Algebra*. In particular, if $\alpha = \mathrm{id}$, or if $A^- = 0$, then $\Lambda(a) = L(a)$ for every $a$; and if $a$ is a unit and $A^- \neq 0$, then $\Lambda(a) \neq L(a)$.
+where $A^- = \{x : \alpha(x) = -x\}$ is the negated part of the decomposition $A = A^+ \oplus A^-$ of *The Signed Two-Sided Operator on an Algebra*. In particular, if $\alpha = \mathrm{id}$, or if $A^- = 0$, then $\Lambda(a) = L(a)$ for every $a$; and if $a$ is invertible and $A^- \neq 0$, then $\Lambda(a) \neq L(a)$.
 
-*Proof.* Subtract the two operators: $\Lambda(a) - L(a)$ sends $x$ to $a(\alpha(x) - x)$, and $\alpha(x) - x$ lies in $A^-$ and runs over $A^-$ as $x$ does, so the operator vanishes exactly when $a$ annihilates $A^-$. If $\alpha = \mathrm{id}$ then $A^- = 0$ and the condition is vacuous. If $a$ is a unit and $aA^- = 0$, then $A^- = a^{-1}aA^- = 0$, so a unit satisfies the condition only in the degenerate case.
+*Proof.* Subtract the two operators: $\Lambda(a) - L(a)$ sends $x$ to $a(\alpha(x) - x)$, and $\alpha(x) - x$ lies in $A^-$ and runs over $A^-$ as $x$ does, so the operator vanishes exactly when $a$ annihilates $A^-$. If $\alpha = \mathrm{id}$ then $A^- = 0$ and the condition is vacuous. If $a$ is invertible and $aA^- = 0$, then $A^- = a^{-1}aA^- = 0$, so an invertible element satisfies the condition only in the degenerate case.
 
 The proposition is the precise sense in which the signed left multiplication is a new operator: it differs from the unsigned one exactly on the odd part of the algebra, and it differs at all only when there is an odd part and the element is a zero divisor along it. For the elements that annihilate $A^-$ — in particular for the elements of $A^-$ themselves when $A^-$ squares to zero — the signed and the unsigned operators coincide.
 
@@ -88,15 +88,15 @@ The corollary is the sign rule of the grading in operator form: the even left mu
 
 ### The Invertible Signed Left Multiplications
 
-**Proposition.** Let $A$ be finite-dimensional. The signed left multiplication $\Lambda(a)$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ is a unit, and then
+**Proposition.** Let $A$ be finite-dimensional. The signed left multiplication $\Lambda(a)$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ is invertible, and then
 
 $$
 \boxed{\;\Lambda(a)^{-1} = \Lambda\bigl(\alpha(a^{-1})\bigr) = \Lambda\bigl(\alpha(a)^{-1}\bigr)\;}.
 $$
 
-*Proof.* The form $\Lambda(a) = L(a)\alpha$ is the composite of the invertible operator $\alpha$ and the left multiplication $L(a)$, so it is invertible exactly when $L(a)$ is, which by the injectivity of $L$ and finite dimension is exactly when $a$ is a unit. For the inverse, use the identity $\Lambda(a)\Lambda(c) = L(a\alpha(c))$: with $c = \alpha(a^{-1})$ one gets $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = 1$, so $\Lambda(a)\Lambda(\alpha(a^{-1})) = L(1) = \mathrm{id}$; the same computation in the other order gives the two-sided inverse. The second form uses $\alpha(a^{-1}) = \alpha(a)^{-1}$.
+*Proof.* The form $\Lambda(a) = L(a)\alpha$ is the composite of the invertible operator $\alpha$ and the left multiplication $L(a)$, so it is invertible exactly when $L(a)$ is, which by the injectivity of $L$ and finite dimension is exactly when $a$ is invertible. For the inverse, use the identity $\Lambda(a)\Lambda(c) = L(a\alpha(c))$: with $c = \alpha(a^{-1})$ one gets $a\alpha(c) = a\alpha(\alpha(a^{-1})) = aa^{-1} = 1$, so $\Lambda(a)\Lambda(\alpha(a^{-1})) = L(1) = \mathrm{id}$; the same computation in the other order gives the two-sided inverse. The second form uses $\alpha(a^{-1}) = \alpha(a)^{-1}$.
 
-**Corollary.** The units of $A$ act on $A$ by the operators $\Lambda(a)$, $a \in A^\times$, and the assignment $a \mapsto \Lambda(a)$ is an injective map from the unit group into the general linear group of the twist $\alpha$; the composite $\Lambda(a) = L(a)\alpha$ is the left multiplication twisted by the involution.
+**Corollary.** The invertibles of $A$ act on $A$ by the operators $\Lambda(a)$, $a \in A^\times$, and the assignment $a \mapsto \Lambda(a)$ is an injective map from the group of invertibles into the general linear group of the twist $\alpha$; the composite $\Lambda(a) = L(a)\alpha$ is the left multiplication twisted by the involution.
 
 ## The Fixed Elements
 
@@ -124,7 +124,7 @@ $$
 $$
 \operatorname{Fix}\Lambda(a) = \alpha\bigl(\operatorname{Fix}\Lambda(\alpha(a))\bigr),
 $$
-$\Lambda(a)$ has a nonzero fixed point exactly when $1 - \Lambda(\alpha(a))$ fails to be injective, and $\Lambda(a)$ acts as the identity on its fixed subspace. The **unsigned** left multiplication is the wrong comparison: for a unit $a$ with $\alpha(a) \neq a$ the two fixed spaces need not have the same dimension — on $M_2(k)$ with $\alpha$ the conjugation by $\mathrm{diag}(1,-1)$ and $a$ the swap matrix, $\operatorname{Fix}\Lambda(a) = 0$ while $\operatorname{Fix}L(\alpha(a)) = \operatorname{Fix}L(a)$ is two-dimensional.
+$\Lambda(a)$ has a nonzero fixed point exactly when $1 - \Lambda(\alpha(a))$ fails to be injective, and $\Lambda(a)$ acts as the identity on its fixed subspace. The **unsigned** left multiplication is the wrong comparison: for an invertible element $a$ with $\alpha(a) \neq a$ the two fixed spaces need not have the same dimension — on $M_2(k)$ with $\alpha$ the conjugation by $\mathrm{diag}(1,-1)$ and $a$ the swap matrix, $\operatorname{Fix}\Lambda(a) = 0$ while $\operatorname{Fix}L(\alpha(a)) = \operatorname{Fix}L(a)$ is two-dimensional.
 
 ### The Fixed Elements of the Family
 
@@ -192,7 +192,7 @@ If $\alpha = \mathrm{id}$, then $\Lambda(a) = L(a)$ for every $a$, the signed le
 
 ### A Group Algebra with a Parity
 
-Let $A = k[G]$ with the parity $\chi$ of *The Signed Two-Sided Operator on an Algebra*. Then $\Lambda(g)$ sends the group element $x_h$ to $\chi(h)\,x_{gh}$, the left translation dressed by the parity of the element acted on and not of the acting one: $\Lambda(g)(x) = g\,\alpha(x)$, so the sign is $\chi$ of the argument. Since $g$ is a unit, the comparison $\Lambda(g) = L(g)$ forces the odd part to vanish, so for a nontrivial parity no group element has the signed left multiplication equal to the unsigned one, and the two coincide for every $g$ exactly when $\chi$ is trivial.
+Let $A = k[G]$ with the parity $\chi$ of *The Signed Two-Sided Operator on an Algebra*. Then $\Lambda(g)$ sends the group element $x_h$ to $\chi(h)\,x_{gh}$, the left translation dressed by the parity of the element acted on and not of the acting one: $\Lambda(g)(x) = g\,\alpha(x)$, so the sign is $\chi$ of the argument. Since $g$ is invertible, the comparison $\Lambda(g) = L(g)$ forces the odd part to vanish, so for a nontrivial parity no group element has the signed left multiplication equal to the unsigned one, and the two coincide for every $g$ exactly when $\chi$ is trivial.
 
 ### The Exterior Algebra
 
@@ -200,7 +200,7 @@ Let $A = \Lambda(V)$ with the degree grading. For an odd element $a$, the operat
 
 ## Summary
 
-The signed left multiplication is the operator $\Lambda(a)(x) = a\alpha(x)$ on $A$, $k$-linear in $x$ and in $a$, with $\Lambda(1) = \alpha$, $\Lambda(a)(1) = a$, and the two readings $\Lambda(a) = L(a)\alpha = \alpha L(\alpha(a))$ of the unsigned left multiplication; the map $a \mapsto \Lambda(a)$ is injective and its image has dimension $n$, and $\Lambda(a)$ is invertible exactly when $a$ is a unit, with inverse $\Lambda(\alpha(a^{-1}))$. Its product with the left multiplications is $\Lambda(a)L(b) = \Lambda(a\alpha(b))$ and $L(a)\Lambda(b) = \Lambda(ab)$, whence $[L(b),\Lambda(a)] = \Lambda(ba - a\alpha(b))$, which is $\Lambda([b,a])$ for even $b$ and $\Lambda(ba + ab)$ for odd $b$.
+The signed left multiplication is the operator $\Lambda(a)(x) = a\alpha(x)$ on $A$, $k$-linear in $x$ and in $a$, with $\Lambda(1) = \alpha$, $\Lambda(a)(1) = a$, and the two readings $\Lambda(a) = L(a)\alpha = \alpha L(\alpha(a))$ of the unsigned left multiplication; the map $a \mapsto \Lambda(a)$ is injective and its image has dimension $n$, and $\Lambda(a)$ is invertible exactly when $a$ is invertible, with inverse $\Lambda(\alpha(a^{-1}))$. Its product with the left multiplications is $\Lambda(a)L(b) = \Lambda(a\alpha(b))$ and $L(a)\Lambda(b) = \Lambda(ab)$, whence $[L(b),\Lambda(a)] = \Lambda(ba - a\alpha(b))$, which is $\Lambda([b,a])$ for even $b$ and $\Lambda(ba + ab)$ for odd $b$.
 
 The signed left multiplication differs from the unsigned one exactly by the operator $x \mapsto a(\alpha(x) - x)$, so $\Lambda(a) = L(a)$ exactly when $a$ annihilates the negated part $A^-$; its fixed points are the solutions of $a\alpha(x) = x$, which the involution $\alpha$ carries onto the fixed points of the signed left multiplication $\Lambda(\alpha(a))$; the operator $\Lambda(1)$ is $\alpha$, so its fixed set is the plus part $A^+$, while the elements fixed by the whole family are only $0$. Every signed two-sided operator is a signed left multiplication followed by a right multiplication, $\mathcal{T}_{a,b} = \Lambda(a)R(\alpha(b))$, and the failure of the right multiplications to commute with the signed left ones is the difference of two signed two-sided operators, which is the sign rule of the grading in operator form. The corresponding adjoint operations are the subject of *The Signed Adjoint of the Left Multiplication on an Algebra* of the group `- * Operator Theory`; the unsigned left and right multiplications are *Left and Right Multiplication*, and the twist is that of *The Signed Two-Sided Operator on an Algebra*.
 

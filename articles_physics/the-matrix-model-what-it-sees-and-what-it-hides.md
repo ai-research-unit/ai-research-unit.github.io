@@ -117,7 +117,7 @@ and the determinant of the matrix is the square of the modulus. This is the reas
 
 ### The Singular Values as the Two Scales
 
-The singular values of $\mathsf{M}_2(\tilde Q)$ are the square roots of the eigenvalues of $\mathsf{M}_2\mathsf{M}_2^{\dagger}$. On the unit group, with $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ times a rotation, the two singular values are
+The singular values of $\mathsf{M}_2(\tilde Q)$ are the square roots of the eigenvalues of $\mathsf{M}_2\mathsf{M}_2^{\dagger}$. On the group of invertibles, with $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ times a rotation, the two singular values are
 
 $$
 s_{\pm}=e^{\pm\theta_{\mathrm{rpd}}/2},
@@ -169,7 +169,7 @@ $$
 (\operatorname{tr}M)^{2}=4\det M,\qquad \det M\neq0 .
 $$
 
-On the unit group the repeated eigenvalue is $\pm1$: the wall elements are the unipotent ones, and the model shows them as matrices similar to a Jordan block with eigenvalue $1$ or $-1$. *The Rest Frame and the Exceptional Point* reads that stratum physically, and *The Four Kinds of Frame Transformation* places it among the four kinds.
+On the group of invertibles the repeated eigenvalue is $\pm1$: the wall elements are the unipotent ones, and the model shows them as matrices similar to a Jordan block with eigenvalue $1$ or $-1$. *The Rest Frame and the Exceptional Point* reads that stratum physically, and *The Four Kinds of Frame Transformation* places it among the four kinds.
 
 ### One Image Each
 
@@ -207,7 +207,7 @@ Two consequences follow, and both are used later.
 
 ### What the Model Does Show Completely
 
-It would be wrong to end on the losses. The map is an isomorphism of associative algebras, so it shows the multiplication, the inverses, the group, the unit group, the spectrum, the eigenlines and the involutions once those are translated. Nothing about the algebra is lost. What is lost is what a *scalar* reading of the image can recover: the trace and the determinant see two numbers out of the eight real data of an element, and the singular values and the spectrum see four more. The remaining two are the relative angle of the two axes, which no scalar of the matrix can carry, and that is the subject of *The Spectrum Does Not Determine the Frame*.
+It would be wrong to end on the losses. The map is an isomorphism of associative algebras, so it shows the multiplication, the inverses, the group, the group of invertibles, the spectrum, the eigenlines and the involutions once those are translated. Nothing about the algebra is lost. What is lost is what a *scalar* reading of the image can recover: the trace and the determinant see two numbers out of the eight real data of an element, and the singular values and the spectrum see four more. The remaining two are the relative angle of the two axes, which no scalar of the matrix can carry, and that is the subject of *The Spectrum Does Not Determine the Frame*.
 
 ## Summary
 

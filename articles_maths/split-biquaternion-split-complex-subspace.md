@@ -59,7 +59,7 @@ The subspace therefore has two descriptions: it is the fixed space of quaternion
 
 **Proof.** For two central elements, $(Q_{1t} e_t)(Q_{2t} e_t) = (Q_{1t} Q_{2t}) e_t$, which lies in the subspace; commutativity is the commutativity of $\mathbb{C}_{\mathrm{spl}}$; and the displayed map is a bijective ring homomorphism because $e_t$ is the unit.
 
-The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_1$ and $\tilde\Pi_2$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of units is the four open quadrants of the plane, not the punctured plane.
+The subspace is a **subalgebra**, and it is one of the two subalgebras among the four distinguished subspaces, the other being the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. It is the only **commutative** one. Unlike the biquaternion centre, however, it is **not a field**: the split complex algebra is not a division algebra, having the zero divisors $\tilde\Pi_1$ and $\tilde\Pi_2$. As a real algebra it is $\mathbb{R} \oplus \mathbb{R}$ through the idempotent basis, and its group of invertibles is the four open quadrants of the plane, not the punctured plane.
 
 ### Ideals
 
@@ -91,17 +91,17 @@ $$
 
 Two features are worth isolating. First, $\langle\cdot\rangle_{\natural}$ takes **split complex** values on the subspace: writing $Q_t = q_t + j q'_t$, one has $Q_t^2 = (q_t^2 + q'^2_0) + 2 j q_t q'_t$, real on the lines $q'_t = 0$ and $q_t = 0$ separately but not in general. Second, the real restriction in the basis $e_t, j$ has the matrix $\operatorname{diag}(1, 1)$ on the real part and $2 q_t q'_t$ on the split-imaginary part, so the associated quadratic form is **not** definite: this is the form $\langle\cdot\rangle_{\natural}$ restricted to the two-dimensional centre, and its isotropic lines are the light lines $Q_t = a \tilde\Pi_{1,2}$.
 
-### Units and Zero Divisors
+### Invertibles and Zero Divisors
 
 **Theorem.** For $\tilde{Q} = Q_t e_t$, the following are equivalent:
 
-1. $\tilde{Q}$ is a unit of $\mathbb{B}_{\mathrm{spl}}$;
-2. $\langle\tilde{Q}\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}_{\mathrm{spl}}$;
-3. $Q_t$ is a unit of $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$.
+1. $\tilde{Q}$ is invertible in $\mathbb{B}_{\mathrm{spl}}$;
+2. $\langle\tilde{Q}\rangle_{\natural} = Q_t^2$ is invertible in $\mathbb{C}_{\mathrm{spl}}$;
+3. $Q_t$ is invertible in $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$.
 
 The inverse is $\tilde{Q}^{-1} = Q_t^{-1} e_t = \dfrac{\bar{Q_t}}{Q_t \bar{Q_t}} e_t = \dfrac{q_t - j q'_t}{q_t^2 - q'^2_0} e_t$.
 
-**Proof.** $\langle Q_t e_t\rangle_{\natural} = Q_t^2$ is a unit of $\mathbb{C}_{\mathrm{spl}}$ exactly when $Q_t$ is, since $\mathbb{C}_{\mathrm{spl}}$ is commutative; a split complex number is a unit precisely when its real form norm $q_t^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{C}_{\mathrm{spl}}$.
+**Proof.** $\langle Q_t e_t\rangle_{\natural} = Q_t^2$ is invertible in $\mathbb{C}_{\mathrm{spl}}$ exactly when $Q_t$ is, since $\mathbb{C}_{\mathrm{spl}}$ is commutative; a split complex number is invertible precisely when its real form norm $q_t^2 - q'^2_0$ is nonzero. The inverse formula is the standard inverse in $\mathbb{C}_{\mathrm{spl}}$.
 
 **Corollary.** The zero divisors of the split complex subspace are exactly the nonzero elements of the two **light lines**
 
@@ -189,11 +189,11 @@ and the twice differentiable functions that are harmonic in the split complex se
 
 ## The Geometry of the Split Complex Subspace
 
-As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_t^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $Q_t\mapsto \exp(\theta j)Q_t$ of $\mathbb{C}_{\mathrm{spl}}$, the identity component of the group of units of $\mathbb{C}_{\mathrm{spl}}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the split form $q_t^2 - q'^2_0$ of signature $(1,1)$, so the centre is an indefinite slice of the ambient algebra carrying the same null lines as the split complex plane.
+As the fixed space of quaternion conjugation, the centre is the axis of that involution of the algebra, and geometrically it is the invariant plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the split complex plane: the two null lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$ are the zero divisors, the level set of unit norm is the pair of hyperbolas $q_t^2 - q'^2_0 = 1$, and the motions it carries are the hyperbolic rotations $Q_t\mapsto \exp(\theta j)Q_t$ of $\mathbb{C}_{\mathrm{spl}}$, the identity component of the group of invertibles of $\mathbb{C}_{\mathrm{spl}}$ up to sign. The Euclidean form restricts to the ordinary Euclidean metric of the plane, while the Hermitian scalar form restricts to the split form $q_t^2 - q'^2_0$ of signature $(1,1)$, so the centre is an indefinite slice of the ambient algebra carrying the same null lines as the split complex plane.
 
 ## Summary
 
-The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The units are the elements with $Q_t$ a unit of $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
+The split complex subspace $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of quaternion conjugation, the set of elements $\tilde{Q} = Q_t e_t$ with vanishing vector part; it is a real vector space of dimension $2$ with basis $e_t, j$. It coincides with the centre of the algebra, is a commutative subalgebra isomorphic to the split complex algebra $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$, and is one of the two subalgebras among the four distinguished subspaces. It is **not** a field: the split-biquaternion norm restricts to $N = Q_t^2$, which is split-complex-valued and degenerates on the two light lines $\mathbb{R} \tilde\Pi_{1,2}$, and these are exactly the zero divisors of the subspace, each annihilating the other. The invertibles are the elements with $Q_t$ invertible in $\mathbb{C}_{\mathrm{spl}}$, that is $Q_t = q_t + j q'_t$ with $q_t^2 \neq q'^2_0$, and the inverse is $Q_t^{-1} e_t = (q_t - j q'_t)/(q_t^2 - q'^2_0)\, e_t$. All four idempotents $0, \tilde\Pi_1, \tilde\Pi_2, 1$ of the algebra lie in the subspace, unlike the biquaternion case, where the nontrivial idempotents are noncentral. Of the four involutions, quaternion conjugation fixes the subspace pointwise, split complex and Hermitian conjugations act by $j \mapsto -j$ and swap the two light lines, and anti-Hermitian conjugation is the negative of that. The subspace meets the vector subspace only at the origin and meets both the quaternion and Hermitian subspaces in $\mathbb{R}$, the anti-Hermitian subspace in $j\mathbb{R}$, so it is the direct sum of the two coordinate blocks $\mathbb{R}$ and $j\mathbb{R}$.
 
 ## Summary of Notation
 

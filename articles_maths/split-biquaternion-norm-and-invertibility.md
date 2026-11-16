@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the four forms and the four norms of the layer — the plain, the quaternionic, the Hermitian and the Krein — to establish the criterion for invertibility, and to describe the group of units. The split-biquaternion norm is the quaternionic norm of the layer, and it is the one that decides invertibility.
+This article studies the split-biquaternion norm of the algebra and the invertibility of its elements. It follows the article on split biquaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the four forms and the four norms of the layer — the plain, the quaternionic, the Hermitian and the Krein — to establish the criterion for invertibility, and to describe the group of invertibles. The split-biquaternion norm is the quaternionic norm of the layer, and it is the one that decides invertibility.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is assumed from the article on split complex algebra, together with its idempotents $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.
 
@@ -121,7 +121,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \tfrac{1}{2}\left(\tilde Q_1 \tilde Q_2^{\natural} + \tilde Q_2 \tilde Q_1^{\natural}\right), \qquad \langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}.
 $$
 
-**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle_{\natural} = e_t$ is a unit of $\mathbb{C}_{\mathrm{spl}}$.
+**Proof.** Bilinearity is that of the polarisation of a quadratic form, symmetry is its defining property, and $\langle e_\mu, e_\nu\rangle_{\natural} = \delta_{\mu\nu}$ is immediate from the coordinate formula. Non-degeneracy follows because $\langle e_\mu, e_\mu\rangle_{\natural} = e_t$ is invertible in $\mathbb{C}_{\mathrm{spl}}$.
 
 **Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is the honest $\mathbb{C}_{\mathrm{spl}}$-valued bilinear form and not a trace form.
 
@@ -235,7 +235,7 @@ The four forms are one pattern, $\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\math
 | Hermitian | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{*}$ | $\sum_\mu Q_\mu\bar Q_\mu$ |
 | Krein | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{\natural*}$ | $Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ |
 
-The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being a unit of $\mathbb{C}_{\mathrm{spl}}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
+The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
 
 ## The Euclidean Norm
 
@@ -299,7 +299,7 @@ $$
 \tilde Q_2 = \tilde Q_1^{\natural} \, \langle\tilde Q_1\rangle_{\natural}^{-1}.
 $$
 
-This is legitimate because $\langle\tilde Q_1\rangle_{\natural}$ is a unit of $\mathbb{C}_{\mathrm{spl}}$: mere non-vanishing would not suffice, since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
+This is legitimate because $\langle\tilde Q_1\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}}$: mere non-vanishing would not suffice, since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors. Then
 
 $$
 \tilde Q_1 \bullet \tilde Q_2 = \langle\tilde Q_1\rangle_{\natural} \langle\tilde Q_1\rangle_{\natural}^{-1} = e_t,
@@ -335,7 +335,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q}_+\rangle_{\natural} \tilde\Pi_1 + \langle\tilde{Q}_-\rangle_{\natural} \tilde\Pi_2.
 $$
 
-Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is a unit of $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
+Since $\langle\tilde{Q}_\pm\rangle_{\natural}$ are non-negative real numbers, $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ if and only if both of its components are nonzero:
 
 $$
 \langle\tilde{Q}_+\rangle_{\natural} \neq 0 \quad \text{and} \quad \langle\tilde{Q}_-\rangle_{\natural} \neq 0.
@@ -361,7 +361,7 @@ $$
 
 requires $\langle\tilde{Q}\rangle_{\natural}$ to be invertible in $\mathbb{C}_{\mathrm{spl}}$, not merely nonzero: since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, when $\tilde{Q}$ is a zero divisor the value $\langle\tilde{Q}\rangle_{\natural}$ is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$ and $\langle\tilde{Q}\rangle_{\natural}^{-1}$ does not exist.
 
-In the idempotent basis the inverse of a unit of $\mathbb{C}_{\mathrm{spl}}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
+In the idempotent basis the inverse of an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is computed componentwise. Writing $\langle\tilde{Q}\rangle_{\natural} = N_+ \tilde\Pi_1 + N_- \tilde\Pi_2$ with $N_\pm = \langle\tilde{Q}_\pm\rangle_{\natural} \in \mathbb{R}$,
 
 $$
 \langle\tilde{Q}\rangle_{\natural}^{-1} = \frac{\tilde\Pi_1}{N_+} + \frac{\tilde\Pi_2}{N_-} = \frac{\langle\tilde{Q}\rangle_{\natural}^*}{\Delta(\tilde{Q})},
@@ -397,13 +397,13 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = (1 + j)^2 + 2^2 + (1 - j)^2 + 0^2 = (2 + 2j) + 4 + (2 - 2j) = 8.
 $$
 
-Since $8 \in {\mathbb{C}_{\mathrm{spl}}}^\times$, the element is a unit, and
+Since $8 \in {\mathbb{C}_{\mathrm{spl}}}^\times$, the element is invertible, and
 
 $$
 \tilde{Q} \tilde{Q}^{\natural} = 8 e_t, \qquad \tilde{Q}^{-1} = \tfrac{1}{8} \tilde{Q}^{\natural} = \tfrac{1}{8}\big(1 - 2 \vec e_x - \vec e_y\big) + \tfrac{j}{8}\big(1 + \vec e_y\big).
 $$
 
-The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-unit of $\mathbb{C}_{\mathrm{spl}}$ and so does not lie in ${\mathbb{C}_{\mathrm{spl}}}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
+The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. For $\tilde\Pi_1$ one has $\langle\tilde\Pi_1\rangle_{\natural} = \tilde\Pi_1 \neq 0$, yet $\tilde\Pi_1$ is a zero divisor, because $\tilde\Pi_1$ is a nonzero non-invertible of $\mathbb{C}_{\mathrm{spl}}$ and so does not lie in ${\mathbb{C}_{\mathrm{spl}}}^\times$. In the idempotent basis $\langle\tilde{Q}_+\rangle_{\natural} = \langle\tilde{Q}_-\rangle_{\natural} = 8$, so $\langle\tilde{Q}\rangle_{\natural} = 8\tilde\Pi_1 + 8\tilde\Pi_2 = 8$, matching the direct computation.
 
 ### Corollaries
 
@@ -413,11 +413,11 @@ The criterion is not the naive one $\langle\tilde{Q}\rangle_{\natural} \neq 0$. 
 
 **Corollary.** The product of two invertible elements is invertible, with $(\tilde Q_1 \tilde Q_2)^{-1} = \tilde Q_2^{-1} \tilde Q_1^{-1}$.
 
-## The Group of Units
+## The Group of Invertibles
 
 ### Definition
 
-The **group of units** of $\mathbb{B}_{\mathrm{spl}}$ is the set of invertible elements:
+The **group of invertibles** of $\mathbb{B}_{\mathrm{spl}}$ is the set of invertible elements:
 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^\times = \{\tilde{Q} \in \mathbb{B}_{\mathrm{spl}} : \langle\tilde{Q}\rangle_{\natural} \in {\mathbb{C}_{\mathrm{spl}}}^\times\}
@@ -428,7 +428,7 @@ It is a group under multiplication, with identity $e_t$.
 
 ### Structure
 
-**Theorem.** The group of units is isomorphic to the direct product of two copies of the quaternion unit group:
+**Theorem.** The group of invertibles is isomorphic to the direct product of two copies of the quaternion group of invertibles:
 
 $$
 \boxed{\;
@@ -438,23 +438,23 @@ $$
 
 where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero quaternions.
 
-**Proof.** In the idempotent basis, an element is invertible if and only if both idempotent components are nonzero. The multiplication is componentwise, so the group of units is the direct product of the groups of units of the two components. Each component is a copy of $\mathbb{H}$, and its group of units is $\mathbb{H}^\times$.
+**Proof.** In the idempotent basis, an element is invertible if and only if both idempotent components are nonzero. The multiplication is componentwise, so the group of invertibles is the direct product of the groups of invertibles of the two components. Each component is a copy of $\mathbb{H}$, and its group of invertibles is $\mathbb{H}^\times$.
 
 ### Basic Properties
 
-**Openness.** The group of units is an open subset of $\mathbb{B}_{\mathrm{spl}}$ in the Euclidean topology. Indeed, the invertibility condition is that both idempotent components are nonzero, which is an open condition.
+**Openness.** The group of invertibles is an open subset of $\mathbb{B}_{\mathrm{spl}}$ in the Euclidean topology. Indeed, the invertibility condition is that both idempotent components are nonzero, which is an open condition.
 
-**Non-compactness.** The group of units is not compact, because it contains the real line $\{a e_t : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.
+**Non-compactness.** The group of invertibles is not compact, because it contains the real line $\{a e_t : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.
 
-**Connected components.** The group of units is connected. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and $\mathbb{H} \setminus \{0\} \cong S^3 \times (0, \infty)$ is connected; the group of units is therefore homeomorphic to $(\mathbb{H} \setminus \{0\}) \times (\mathbb{H} \setminus \{0\})$, with a single component. (The group ${\mathbb{C}_{\mathrm{spl}}}^\times$ of split complex scalars, by contrast, does have four components.)
+**Connected components.** The group of invertibles is connected. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and $\mathbb{H} \setminus \{0\} \cong S^3 \times (0, \infty)$ is connected; the group of invertibles is therefore homeomorphic to $(\mathbb{H} \setminus \{0\}) \times (\mathbb{H} \setminus \{0\})$, with a single component. (The group ${\mathbb{C}_{\mathrm{spl}}}^\times$ of split complex scalars, by contrast, does have four components.)
 
-**Centre.** The centre of ${\mathbb{B}_{\mathrm{spl}}}^\times$ is the group of invertible split complex scalars, which is the group of units of $\mathbb{C}_{\mathrm{spl}}$:
+**Centre.** The centre of ${\mathbb{B}_{\mathrm{spl}}}^\times$ is the group of invertible split complex scalars, which is the group of invertibles of $\mathbb{C}_{\mathrm{spl}}$:
 
 $$
 Z({\mathbb{B}_{\mathrm{spl}}}^\times) = {\mathbb{C}_{\mathrm{spl}}}^\times = \{Q_t \in \mathbb{C}_{\mathrm{spl}} : Q_t \neq 0\}.
 $$
 
-The group of units of $\mathbb{C}_{\mathrm{spl}}$ has four connected components, corresponding to the four sign combinations of the real and split parts.
+The group of invertibles of $\mathbb{C}_{\mathrm{spl}}$ has four connected components, corresponding to the four sign combinations of the real and split parts.
 
 ## The Three-Way Classification
 
@@ -577,7 +577,7 @@ $$
 
 This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
 
-The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. The group of units ${\mathbb{B}_{\mathrm{spl}}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
+The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. The group of invertibles ${\mathbb{B}_{\mathrm{spl}}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
 
 The algebra $\mathbb{B}_{\mathrm{spl}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{C}_{\mathrm{spl}}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
 
@@ -605,7 +605,7 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
 | $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
-| ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of units |
+| ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of invertibles |
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
 | $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |

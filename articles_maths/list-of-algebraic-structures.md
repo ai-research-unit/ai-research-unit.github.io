@@ -45,7 +45,7 @@ A **ring** is an abelian group carrying a second operation, a multiplication tha
 
 ## The Scalar-Action Rungs
 
-A **module** is an abelian group on which a ring acts by scalars, and a **vector space** is the case of a field of scalars, where every module is free and every space has a basis. An **algebra** adds a bilinear product of the space with itself. The corpus's broad sense of *algebra* assumes neither associativity, nor commutativity, nor a unit; the qualifiers are earned separately.
+A **module** is an abelian group on which a ring acts by scalars, and a **vector space** is the case of a field of scalars, where every module is free and every space has a basis. An **algebra** adds a bilinear product of the space with itself. The corpus's broad sense of *algebra* assumes neither associativity, nor commutativity, nor an invertible element; the qualifiers are earned separately.
 
 | Structure | The property it has | Introduced in |
 |---|---|---|
@@ -56,7 +56,7 @@ A **module** is an abelian group on which a ring acts by scalars, and a **vector
 | Unital algebra | an algebra with an identity for its product | *Algebras* |
 | Commutative algebra | an associative algebra with $xy = yx$ | *Commutative Algebras* |
 | Ideals and quotients of an algebra | the two-sided ideals of an algebra and the quotient algebras they define | *Ideals and Quotients of Algebras* |
-| Centre, units and zero divisors | the centre $Z(A)$, the group of units $A^\times$ and the zero divisors of an algebra | *Centre, Units, Zero Divisors and Division Algebras* |
+| Centre, units and zero divisors | the centre $Z(A)$, the group of invertibles $A^\times$ and the zero divisors of an algebra | *Centre, Invertibles, Zero Divisors and Division Algebras* |
 
 ## The Non-Associative Rungs
 
@@ -118,7 +118,7 @@ The article denotes its objects by name; the symbols that appear in the tables a
 | $S_n$ | the symmetric group on $n$ letters |
 | $M_2(\mathbb{R})$ | the ring of $2 \times 2$ real matrices |
 | $N_5$ | the pentagon lattice, the non-distributive modular lattice |
-| $Z(A)$, $A^\times$ | the centre and the group of units of an algebra $A$ |
+| $Z(A)$, $A^\times$ | the centre and the group of invertibles of an algebra $A$ |
 | $1 \neq 0$ | the nontriviality convention fixed for every ring and algebra |
 
 ## Further Reading

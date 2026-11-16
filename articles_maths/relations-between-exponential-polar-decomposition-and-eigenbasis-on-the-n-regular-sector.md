@@ -84,7 +84,7 @@ The factors are the scale $r$, the phase $\omega=e^{i\theta_{\mathrm{pha}}}$, th
 The spectral decomposition exists in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$, and in the scalar case $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, including the zero element. The polar decomposition exists on all units. The two domains overlap but neither contains the other:
 
 * a **zero divisor** with $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has two distinct eigenvalues and a two-term spectral decomposition, but no polar word;
-* a **Jordan element** with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is a unit and has a polar word.
+* a **Jordan element** with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is invertible and has a polar word.
 
 The table records the regimes of *The Spectrum*, §*The Two Cases*, with the polar status added; the zero element is separated from the scalar regime.
 
@@ -94,8 +94,8 @@ The table records the regimes of *The Spectrum*, §*The Two Cases*, with the pol
 | Zero divisor | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | two distinct, one zero | yes | no: boundary of the domain |
 | Scalar | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t\neq0$ | one repeated nonzero | one-term, $\tilde Q=Q_t e_t$ | yes, with $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ |
 | Jordan | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | one repeated nonzero | no two-term decomposition | yes |
-| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | one eigenvalue $0$ | no | no: not a unit |
-| Zero | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$ | the eigenvalue $0$ | one-term, $\tilde Q=0$ | no: not a unit |
+| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | one eigenvalue $0$ | no | no: not an invertible element |
+| Zero | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$ | the eigenvalue $0$ | one-term, $\tilde Q=0$ | no: not an invertible element |
 
 The inclusion of domains is therefore not a chain: the zero divisors and the zero element are spectral but not polar, the Jordan elements are polar but not spectral, and only the distinct and nonzero scalar cases belong to both.
 
@@ -543,8 +543,8 @@ The spectral regimes and the polar status fit together as follows.
 | Zero divisor | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_\pm$ distinct, one zero; rank one | none: boundary of the polar domain |
 | Scalar | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t\neq0$ | $\lambda_\pm=Q_t$; one-term decomposition | $r=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, $\theta_{\mathrm{pha}}$ from the branch; axes undefined |
 | Jordan | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t\neq0$ | $\lambda_\pm=Q_t$; no two-term decomposition | exists; $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ and axes from the Cartan decomposition |
-| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_\pm=0$; no decomposition | none: not a unit |
-| Zero | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$ | $\lambda_\pm=0$; the zero element | none: not a unit |
+| Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_\pm=0$; no decomposition | none: not an invertible element |
+| Zero | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$ | $\lambda_\pm=0$; the zero element | none: not an invertible element |
 
 ### The Zero-Divisor Regime
 
@@ -573,7 +573,7 @@ $$
 \Bigl(\frac{\vec Q}{Q_t}\Bigr)^2=0.
 $$
 
-The matrix model is a Jordan block with the repeated eigenvalue $Q_t$, and there is no two-term idempotent decomposition: the eigenprojection is not defined. The element is nevertheless a unit, and it has a polar word. Its unit factor is unipotent,
+The matrix model is a Jordan block with the repeated eigenvalue $Q_t$, and there is no two-term idempotent decomposition: the eigenprojection is not defined. The element is nevertheless an invertible element, and it has a polar word. Its unit factor is unipotent,
 
 $$
 \tilde U=e_t+\frac{\vec Q}{Q_t},
@@ -689,7 +689,7 @@ This is the precise sense in which the Jordan reading and the polar reading are 
 
 The exponential of $\mathbb{B}$ is not injective. Its kernel is the set of exponents that exponentiate to the identity; by *Biquaternion Elementary Functions*, §*The Exponential*, it consists of the diagonalisable elements whose eigenvalues lie in $2\pi i\mathbb{Z}$, and it is not a subgroup. In spectral terms:
 
-* in the distinct case, the logarithms of a unit are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_++n\tilde\Pi_-)$, a copy of $\mathbb{Z}^2$;
+* in the distinct case, the logarithms of an invertible element are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_++n\tilde\Pi_-)$, a copy of $\mathbb{Z}^2$;
 * in the scalar case, the logarithms are the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$ of the whole kernel by the scalar logarithm, because every kernel element may be added;
 * in the Jordan case, the logarithm is discrete, one point for each choice of the scalar logarithm;
 * on the zero-divisor and nilpotent boundary there is no logarithm.

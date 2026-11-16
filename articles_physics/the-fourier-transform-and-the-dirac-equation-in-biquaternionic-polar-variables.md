@@ -14,7 +14,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the units and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The transform is the one of *Derivatives, Fields and Transforms*, with kernel $\exp(-2\pi\rho\omega r_t'/c)$ and root $\rho=i$ in the corpus, and the symbol rule
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The transform is the one of *Derivatives, Fields and Transforms*, with kernel $\exp(-2\pi\rho\omega r_t'/c)$ and root $\rho=i$ in the corpus, and the symbol rule
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
@@ -66,7 +66,7 @@ so multiplying by a phase moves the support by the phase gradient and changes no
 
 ## The Word Is a Product, the Transform Is a Convolution
 
-**The word is one product of four functions of the position.** The scale, the central phase, the boost and the rotor are each element-valued, and two of them are units. The field is their product and not their sum, and the polar reading depends on that: the four brackets of the parent's logarithmic derivative come from differentiating a product.
+**The word is one product of four functions of the position.** The scale, the central phase, the boost and the rotor are each element-valued, and two of them are invertible. The field is their product and not their sum, and the polar reading depends on that: the four brackets of the parent's logarithmic derivative come from differentiating a product.
 
 **The transform does not respect a product.** For two fields $f$ and $g$,
 

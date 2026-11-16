@@ -4,7 +4,7 @@
 
 The underlying complex vector space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, obtained by reading each slot of a pair as it stands or through a conjugation. This article reads the first of them alone: the **general plain bilinear product** $\tilde Q_1\tilde Q_2$, in which neither slot is conjugated. The rule is the multiplication of the algebra and nothing else, and it is the one product of the four that makes $\mathbb{B}$ an associative algebra with unit over $\mathbb{C}$.
 
-The article is organised along the product and not along the family: the coordinate rule and the scalar–vector form, the laws it keeps and the one it loses, the units, the image and the diagonal, the two halves and the four composites they generate, the trace form read against the halves, and the row of the product in the comparison of the four.
+The article is organised along the product and not along the family: the coordinate rule and the scalar–vector form, the laws it keeps and the one it loses, the invertibles, the image and the diagonal, the two halves and the four composites they generate, the trace form read against the halves, and the row of the product in the comparison of the four.
 
 The coordinate basis is $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $e_t$ the identity, $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically, so that $\vec e_y\vec e_x=-\vec e_z$. An element is $\tilde Q=Q_te_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, the scalar part is $\langle\tilde Q\rangle_{*}=Q_t$, and $\mathrm{Sc}$ and $\mathrm{Vec}$ are the two projections. The three conjugations are the coefficientwise $\overline{\tilde Q}$, the quaternion involution ${}^{\natural}$ fixing $e_t$ and negating the $\vec e_k$, and the Hermitian ${}^{*}={}^{\natural}\circ\overline{\phantom{x}}$. The pairings are the complex bilinear dot product $(\vec Q_1,\vec Q_2)=\sum_k Q_{1k}Q_{2k}$ and the complex bilinear cross product $\vec Q_1\times\vec Q_2$.
 
@@ -45,7 +45,7 @@ $$
 +\bigl(Q_{1t}Q_{2z}+Q_{1x}Q_{2y}-Q_{1y}Q_{2x}+Q_{1z}Q_{2t}\bigr)\vec e_z .
 $$
 
-*Proof.* The four products of units are $e_te_\mu=e_\mu e_t=e_\mu$, $\vec e_x\vec e_x=\vec e_y\vec e_y=\vec e_z\vec e_z=-e_t$, and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ with the reversed products negated. Collecting the coefficients of each unit gives the display. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.
+*Proof.* The four products of invertibles are $e_te_\mu=e_\mu e_t=e_\mu$, $\vec e_x\vec e_x=\vec e_y\vec e_y=\vec e_z\vec e_z=-e_t$, and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ with the reversed products negated. Collecting the coefficients of each unit gives the display. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.
 
 The rule is linear in the four coordinates of $\tilde Q_1$ and linear in the four coordinates of $\tilde Q_2$. The sixteen structure constants $c_{\mu\nu}{}^{\lambda}$, defined by $e_\mu e_\nu=\sum_\lambda c_{\mu\nu}{}^{\lambda}e_\lambda$, are integers, and they are the structure constants of the real quaternion algebra read on the complexification.
 

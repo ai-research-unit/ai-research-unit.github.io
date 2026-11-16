@@ -27,7 +27,7 @@ $$
 
 **Proof.** Immediate from the kernel statement.
 
-**Remark.** The representation is the discrete form of the adjoint representation of a Lie group; here it is a homomorphism of abstract groups, and no differentiability is involved. The linearisation of the representation, in which the group algebra is acted on by the inner automorphisms of the algebra induced by the units of $G$, is *Group Algebras* together with the representation theory of the later parts.
+**Remark.** The representation is the discrete form of the adjoint representation of a Lie group; here it is a homomorphism of abstract groups, and no differentiability is involved. The linearisation of the representation, in which the group algebra is acted on by the inner automorphisms of the algebra induced by the invertibles of $G$, is *Group Algebras* together with the representation theory of the later parts.
 
 ## Inner and Outer Automorphisms
 

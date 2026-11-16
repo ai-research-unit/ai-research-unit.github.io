@@ -53,7 +53,7 @@ Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}
 
 **Proof.** The norm is continuous and multiplicative; its image has index at most two because the norm of the quadratic extension has cokernel of order at most two by Hilbert's theorem 90 and the structure of the local norm group. The norm-one group is closed and bounded, hence compact because $F$ is locally compact; the parametrisation $x/\sigma(x)$ is Hilbert's theorem 90 for the cyclic extension of degree two.
 
-**Corollary (the involution on the uniformiser).** In the ramified case the involution sends the uniformiser to $\sigma(\pi) = \epsilon\pi$ with $\epsilon$ a unit satisfying $N(\epsilon) = \epsilon\sigma(\epsilon) = 1$, and the norm of the uniformiser is $N(\pi) = \epsilon\pi^2$, a uniformiser of $F^\sigma$; in the unramified case one may choose the uniformiser in $F^\sigma$, and then $N(\pi) = \pi^2$ is a unit of $F^\sigma$.
+**Corollary (the involution on the uniformiser).** In the ramified case the involution sends the uniformiser to $\sigma(\pi) = \epsilon\pi$ with $\epsilon$ an invertible element satisfying $N(\epsilon) = \epsilon\sigma(\epsilon) = 1$, and the norm of the uniformiser is $N(\pi) = \epsilon\pi^2$, a uniformiser of $F^\sigma$; in the unramified case one may choose the uniformiser in $F^\sigma$, and then $N(\pi) = \pi^2$ is invertible in $F^\sigma$.
 
 **Proof.** If $\sigma(\pi) = \epsilon\pi$ then applying $\sigma$ gives $\pi = \sigma(\epsilon)\sigma(\pi) = \sigma(\epsilon)\epsilon\pi$, so $\epsilon\sigma(\epsilon) = 1$ and $\epsilon$ is a norm-one unit. Hence $N(\pi) = \pi\sigma(\pi) = \epsilon\pi^2$, and $v(N(\pi)) = 2$ with $\pi^2$ a uniformiser of $F^\sigma$ in the ramified case, so $N(\pi)$ is a uniformiser. In the unramified case the uniformiser of $F^\sigma$ is also a uniformiser of $F$ because $e = 1$, and choosing it in $F^\sigma$ gives $\sigma(\pi) = \pi$ and $N(\pi) = \pi^2$, a unit of $F^\sigma$.
 
@@ -65,9 +65,9 @@ Throughout, $F$ is a local field with valuation $v$, valuation ring $\mathcal{O}
 
 1. $(\mathbb{C}, \text{conjugation})$, with fixed field $\mathbb{R}$;
 2. $(F, \sigma)$ where $F/F_0$ is an unramified quadratic extension of local fields of characteristic zero, $\sigma$ the nontrivial automorphism, fixed field $F_0$, residue involution the Frobenius $x\mapsto x^{p^{f/2}}$; the family is parametrised by the quadratic unramified extensions of the local fields;
-3. $(F, \sigma)$ where $F/F_0$ is a ramified quadratic extension of local fields, fixed field $F_0$, residue involution the identity; in characteristic zero these are the extensions $F_0(\sqrt{\pi_0 u})$ with $\pi_0$ a uniformiser and $u$ a unit;
+3. $(F, \sigma)$ where $F/F_0$ is a ramified quadratic extension of local fields, fixed field $F_0$, residue involution the identity; in characteristic zero these are the extensions $F_0(\sqrt{\pi_0 u})$ with $\pi_0$ a uniformiser and $u$ an invertible element;
 
-together with the identity involution on every local field. The quadratic unramified extensions of a given local field are classified by the square classes of the residue field, and the ramified ones by the square classes of $F_0$ modulo the units.
+together with the identity involution on every local field. The quadratic unramified extensions of a given local field are classified by the square classes of the residue field, and the ramified ones by the square classes of $F_0$ modulo the invertibles.
 
 **Proof.** The case analysis is the classification theorem for the isometric involutions; the parametrisation of the quadratic extensions of a local field by square classes is local class field theory, quoted from *Local Fields*, which also gives the existence of the extensions in each class. The archimedean case is the corollary above.
 

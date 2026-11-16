@@ -1,8 +1,8 @@
-# __The Unit Group, the Cone and the Orders__
+# __The Group of Invertibles, the Cone and the Orders__
 
 ## Introduction
 
-The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of units** $\mathbb{B}^{\times}$, the **$N$-regular set**; their complement is the **$N$-degenerate set**, the **zero-divisor cone** $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of units becomes finite.
+The multiplication of the biquaternion algebra is defined on the whole algebra, but it is a group operation only on the invertible elements. Those elements form the **group of invertibles** $\mathbb{B}^{\times}$, the **$N$-regular set**; their complement is the **$N$-degenerate set**, the **zero-divisor cone** $\mathcal{N}$. The pair is the algebraic form of a distinction physics uses everywhere: the operations that can be undone and the operations that cannot. The cone is also the set on which a multiplication loses rank, and the orders are the discrete subsets of the real slice on which the group of invertibles becomes finite.
 
 The article reads three objects and their topology: the group, its boundary and the orders. Its thesis is that invertibility is the algebraic form of reversibility, that the cone is the wall at which a multiplication stops being reversible, and that the orders are the discrete skeletons on which the continuous group is replaced by a finite one. It proves nothing; the theorems are in the mathematics articles of the source table.
 
@@ -10,12 +10,12 @@ The article reads three objects and their topology: the group, its boundary and 
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| The invertibility criterion, the partition of the algebra and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| The group of units, the determinant sequence, the centre and the matrix model | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
+| The invertibility criterion, the partition of the algebra and the inverse formula | [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Invertibles](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| The group of invertibles, the determinant sequence, the centre and the matrix model | [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html) |
 | The compact real form, the polar retraction, the homotopy groups and the universal cover | [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html) |
 | The zero-divisor cone: closedness, dimension, smoothness, contractibility and link | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
-| The Lipschitz and Hurwitz orders, their unit groups, the complex order and the McKay correspondence | [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html) |
-| The norm on the remarkable subspaces and the distribution of the units | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| The Lipschitz and Hurwitz orders, their groups of invertibles, the complex order and the McKay correspondence | [Quaternion Orders and Finite Groups of Invertibles](../articles_maths/quaternion-orders-and-finite-groups-of-invertibles.html) |
+| The norm on the remarkable subspaces and the distribution of the invertibles | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The parity-matched lattice and the kernel of the exponential | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 
 ## The Partition and the Wall
@@ -26,7 +26,7 @@ The norm that decides invertibility is the general quaternionic bilinear algebra
 $$
 \langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},
 $$
-An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is then
+An element is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and its inverse is then
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}} .
 $$
@@ -38,25 +38,25 @@ $$
 \qquad
 \mathcal{N}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\}\;},
 $$
-and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The three classes are the units, the nonzero points of the cone and the origin.
+and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The three classes are the invertibles, the nonzero points of the cone and the origin.
 
 | condition on $\langle\tilde Q\rangle_{\natural}$ | condition on $\tilde Q$ | class |
 | --- | --- | --- |
-| $\neq0$ | automatically $\neq0$ | $N$-regular; a unit, an element of $\mathbb{B}^{\times}$ |
-| $=0$ | $\tilde Q=0$ | $N$-degenerate; the origin, neither a unit nor a zero divisor |
+| $\neq0$ | automatically $\neq0$ | $N$-regular; an invertible element, an element of $\mathbb{B}^{\times}$ |
+| $=0$ | $\tilde Q=0$ | $N$-degenerate; the origin, neither an invertible element nor a zero divisor |
 | $=0$ | $\tilde Q\neq0$ | $N$-degenerate; a zero divisor, a point of $\mathcal{N}\setminus\{0\}$ |
 
 ### The Reversible Operation
 
-**The unit is a reversible operation.** Multiplication by a unit is a bijection of the algebra, and its inverse is multiplication by the inverse. The norm is the scale of the operation; the norm-one slice $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ is its shape. A general unit is a complex scale times a norm-one element, the factorisation being two-to-one on the central line. Read on a map, a unit is a process with no loss: every output has exactly one input, and the map can be run backwards.
+**The unit is a reversible operation.** Multiplication by an invertible element is a bijection of the algebra, and its inverse is multiplication by the inverse. The norm is the scale of the operation; the norm-one slice $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ is its shape. A general unit is a complex scale times a norm-one element, the factorisation being two-to-one on the central line. Read on a map, an invertible element is a process with no loss: every output has exactly one input, and the map can be run backwards.
 
 **The zero divisor is an operation that forgets.** A nonzero $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}=0$ has a nonzero annihilator: there is a nonzero $\tilde Q_2$ with $\tilde Q\tilde Q_2=0$ or $\tilde Q_2\tilde Q=0$. In the matrix model its image has rank one, so it kills a direction and cannot be inverted. The cone is therefore the **wall of reversibility**: on one side the multiplication is a bijection, on the other it has a kernel.
 
-**The apex is no operation.** The origin is the only element that is neither a unit nor a zero divisor. It is the zero map, which is not a process: it has no inverse, and it is excluded from the zero-divisor set by the convention that both factors of a zero product are nonzero. The apex is the one point of the wall that is not a wall.
+**The apex is no operation.** The origin is the only element that is neither an invertible element nor a zero divisor. It is the zero map, which is not a process: it has no inverse, and it is excluded from the zero-divisor set by the convention that both factors of a zero product are nonzero. The apex is the one point of the wall that is not a wall.
 
 | object | algebraic condition | operation | interpretation |
 | --- | --- | --- | --- |
-| a unit | $\langle\tilde Q\rangle_{\natural}\neq0$ | a bijection | reversible |
+| an invertible element | $\langle\tilde Q\rangle_{\natural}\neq0$ | a bijection | reversible |
 | a zero divisor | $\langle\tilde Q\rangle_{\natural}=0$, $\tilde Q\neq0$ | rank one | forgets a direction |
 | the origin | $\tilde Q=0$ | the zero map | no operation |
 
@@ -70,27 +70,27 @@ and the zero-divisor set is the punctured cone $\mathcal{N}\setminus\{0\}$. The 
 
 ### The Pairings and the Wall
 
-The partition into units and cone is the domain of the **word**, not of every polar description. The four-factor word exists exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, so its domain is the group of units. The three pairings have smaller construction domains, and none of them is the wall itself:
+The partition into the invertibles and cone is the domain of the **word**, not of every polar description. The four-factor word exists exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, so its domain is the group of invertibles. The three pairings have smaller construction domains, and none of them is the wall itself:
 
 | pairing | construction needs | witness of failure |
 | --- | --- | --- |
-| quaternion | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\tilde q_r\neq0$ | $i\vec e_x+i\vec e_y$: a unit with $\tilde q_r=0$ |
-| Hamilton | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | $e_t+\vec e_x+i\vec e_y$: a unit with a null vector part |
+| quaternion | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\tilde q_r\neq0$ | $i\vec e_x+i\vec e_y$: An invertible element with $\tilde q_r=0$ |
+| Hamilton | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | $e_t+\vec e_x+i\vec e_y$: An invertible element with a null vector part |
 | Cartan | $\langle\tilde Q\rangle_{\natural}\neq0$; generalized: every element | $e_t+i\vec e_x$: a zero divisor |
 
 The Cartan construction is the widest, and the generalized Cartan form extends it to the cone with a positive factor and a partial isometry. Every element is $\tilde H_\Psi_{\mathrm{pos}}\tilde U_{\mathrm{p}}$ with $\tilde H_\Psi_{\mathrm{pos}}\ge0$ and $\tilde U_{\mathrm{p}}\tilde U_{\mathrm{p}}^{*}\tilde U_{\mathrm{p}}=\tilde U_{\mathrm{p}}$. The word fails on the cone because the modulus vanishes; the physical image is a lightlike four-vector, which has no rest frame. The amplitude–phase split does not fail there.
 
-**The boundary of the interpretation.** A unit is not "a reversible process" and a zero divisor is not "an irreversible process" without a dynamics; the partition is algebraic. What the domains add is the converse caution: invertibility is necessary for the word and for all three classical pairings, and it is not sufficient for the two smaller ones. A statement about units need not transport to a pairing.
+**The boundary of the interpretation.** an invertible element is not "a reversible process" and a zero divisor is not "an irreversible process" without a dynamics; the partition is algebraic. What the domains add is the converse caution: invertibility is necessary for the word and for all three classical pairings, and it is not sufficient for the two smaller ones. A statement about units need not transport to a pairing.
 
 ### Divisibility
 
-The partition has a divisibility form. In the multiplicative monoid, $a$ divides $b$ when $b=ac$ for some $c$. A unit divides every element, because $b=u\,(u^{-1}b)$; conversely an element that divides every element divides $e_t$, hence is a unit. A nonzero element is a zero divisor exactly when it divides $0$ with a nonzero cofactor. The partition therefore reads
+The partition has a divisibility form. In the multiplicative monoid, $a$ divides $b$ when $b=ac$ for some $c$. An invertible element divides every element, because $b=u\,(u^{-1}b)$; conversely an element that divides every element divides $e_t$, hence is invertible. A nonzero element is a zero divisor exactly when it divides $0$ with a nonzero cofactor. The partition therefore reads
 $$
 \text{units}=\{\text{divisors of every element}\},
 \qquad
 \mathcal{N}\setminus\{0\}=\{\text{divisors of }0\},
 $$
-and the apex is the element that divides only $0$ and is divided by everything. **The order structure is the divisibility preorder.** The units are its top equivalence class; the nonzero cone is the set of divisors of $0$ with a nonzero cofactor, and it splits into many divisibility classes.
+and the apex is the element that divides only $0$ and is divided by everything. **The order structure is the divisibility preorder.** The invertibles are its top equivalence class; the nonzero cone is the set of divisors of $0$ with a nonzero cofactor, and it splits into many divisibility classes.
 
 **The boundary of the interpretation.** Divisibility is a preorder, not a total order, and it carries no cost. A physical resource theory would need a monotone and a composition law; the algebra supplies the preorder only.
 
@@ -102,11 +102,11 @@ $$
 L_{\tilde Q_1}\circ L_{\tilde Q_2}=L_{\tilde Q_1\tilde Q_2},
 $$
 
-so the left multiplications form a **monoid** under composition, with identity $L_{\mathrm{axf},e_t}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-units are the zero divisors together with zero.
+so the left multiplications form a **monoid** under composition, with identity $L_{\mathrm{axf},e_t}$. The monoid is the element monoid seen through the regular representation, and it carries the same partition: its units are exactly the off-cone elements, and its non-invertibles are the zero divisors together with zero.
 
-A unit is a **reversible process**: the map is a bijection, and it can be run backwards. A zero divisor is a **process that forgets**: its map has a nonzero kernel, the annihilator, and the kernel is the direction it loses. The cone is the boundary between the two.
+An invertible element is a **reversible process**: the map is a bijection, and it can be run backwards. A zero divisor is a **process that forgets**: its map has a nonzero kernel, the annihilator, and the kernel is the direction it loses. The cone is the boundary between the two.
 
-**The shape of a resource theory.** Read as a resource theory, the split is between free and costly operations: the units are the free, reversible operations, and the non-units are the operations that consume a resource. The states carry the algebraic invariant, the norm; the entropy functional is the informational reading, and the monoid is the setting for Landauer-type accounting. The reading is the shape and not the theory. The algebra supplies a preorder and a composition, not a complete set of monotones, and no resource theory in the strict sense is constructed. The physical content is in *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Coarse-Graining and the Biquaternion Entropy Functional*.
+**The shape of a resource theory.** Read as a resource theory, the split is between free and costly operations: the invertibles are the free, reversible operations, and the non-invertibles are the operations that consume a resource. The states carry the algebraic invariant, the norm; the entropy functional is the informational reading, and the monoid is the setting for Landauer-type accounting. The reading is the shape and not the theory. The algebra supplies a preorder and a composition, not a complete set of monotones, and no resource theory in the strict sense is constructed. The physical content is in *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Coarse-Graining and the Biquaternion Entropy Functional*.
 
 **The cone as a horizon.** The cone has three readings at once: its cut by the material sector is the light cone, its cut by the informational sector is the boundary of the state space, and in the whole algebra it is the locus of the non-invertible acting maps. Read as one object, it is where a process loses information: a map on the cone has a kernel, and what enters the kernel does not leave. The horizon reading is the identification of the three loci, and it is an interpretation. The algebra supplies the common set, not the thermodynamics; the area law, the temperature and the second law belong to *Black Hole Thermodynamics in Biquaternionic Form* and to the KMS articles. The cone is a horizon in the sense of a boundary at which the map stops being reversible, not in the sense of a metric horizon with a temperature.
 
@@ -174,7 +174,7 @@ the proper orthochronous Lorentz group. A norm-one unit is therefore a **spin fr
 
 **The universal cover unwraps the phase.** The universal cover, which is homotopy equivalent to $\mathbb{R}\times S^{3}$, replaces the loop direction by a real line. The phase circle is the image of that line under the universal covering. A clock read on the cover has no intrinsic period, while a clock read on the group is periodic. The third homotopy group, $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, is generated by the unit quaternions and is the winding of the compact factor.
 
-**The fibre of the logarithm is a lattice coset.** The periodicity of the group is also the ambiguity of its logarithm. For a unit with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ inside the diagonal part, with $\vec U=\vec Q/B$ the pure unit element (*Biquaternion Elementary Functions*, §*The Eigenvalue Formula*), and that lattice is not the fundamental group. The group $\pi_1$ is generated by a loop that links the cone, while the kernel is the fibre of the exponential over the identity. A loop is a map out of $S^1$. A kernel element is a period of the exponential. The two share the compact phase and answer different questions.
+**The fibre of the logarithm is a lattice coset.** The periodicity of the group is also the ambiguity of its logarithm. For an invertible element with $B\neq0$ the logarithms differ by the parity-matched lattice $\pi i m\,e_t+\pi n\,\vec U$ inside the diagonal part, with $\vec U=\vec Q/B$ the pure unit element (*Biquaternion Elementary Functions*, §*The Eigenvalue Formula*), and that lattice is not the fundamental group. The group $\pi_1$ is generated by a loop that links the cone, while the kernel is the fibre of the exponential over the identity. A loop is a map out of $S^1$. A kernel element is a period of the exponential. The two share the compact phase and answer different questions.
 
 **The boundary of the interpretation.** The winding is a property of the group, not a quantisation of a physical charge. The algebra does not say that the phase is compact in nature, nor that the winding is observed. It supplies the homotopy class, and a gauge theory or a field configuration would have to supply the rest.
 
@@ -232,25 +232,25 @@ $$
 $$
 The Hurwitz order contains the Lipschitz order with index two and is maximal; the Lipschitz order is not maximal.
 
-### The Finite Unit Groups
+### The Finite Groups of Invertibles
 
-The unit groups are
+The groups of invertibles are
 $$
 \boxed{\;\mathcal{L}^{\times}\cong Q_8,
 \qquad
 (\mathcal{L}_{\mathrm{H}})^{\times}\cong 2T\;},
 $$
-the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{B}_{H}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the unit group. The twenty-four units give twelve distinct rotations $\tilde Q_1\mapsto v\tilde Q_1v^{*}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
+the quaternion group of order eight and the binary tetrahedral group of order twenty-four. The unit-group index is three, although the lattice index is two. The finite subgroups of the unit sphere $Sp(1)=S^{3}$ are the cyclic groups, the binary dihedral groups and the binary polyhedral groups $2T$, $2O$, $2I$ of orders $24$, $48$ and $120$. The twenty-four Hurwitz units are the vertices of the regular $24$-cell in $\mathbb{B}_{H}\cong\mathbb{R}^{4}$; its symmetry group is the Weyl group $F_4$ of order $1152$, containing $B_4$ of order $384$, and both are strictly larger than the group of invertibles. The twenty-four units give twelve distinct rotations $\tilde Q_1\mapsto v\tilde Q_1v^{*}$ of the real slice, with $2T/\{\pm e_t\}\cong A_4$. The five families of finite subgroups are the five simply laced Dynkin types, the McKay correspondence.
 
-**The order is the discrete skeleton.** An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its unit group is the set of lattice operations that are reversible inside the lattice. The quaternion units are the rotations by $\pi$ of the lattice, and the binary groups are their lifts; read against the continuous groups, the orders are what survives when the frame is restricted to integral elements. Interpreted physically, the order is the discrete skeleton of the material sector, and the finite unit group is its discrete symmetry. Read on a lattice, the orders are the arithmetic counterpart of a lattice gauge theory and of a quantum simulation of the framework; the real slice is the Euclidean lattice and its imaginary translate the thermal direction, so the arithmetic of the orders is also the arithmetic of the thermal circle. The algebra supplies the arithmetic, not the gauge field or the temperature.
+**The order is the discrete skeleton.** An order is a lattice subring of the real sector: a discrete set of sites closed under addition and multiplication, the algebraic form of a lattice. Its group of invertibles is the set of lattice operations that are reversible inside the lattice. The quaternion units are the rotations by $\pi$ of the lattice, and the binary groups are their lifts; read against the continuous groups, the orders are what survives when the frame is restricted to integral elements. Interpreted physically, the order is the discrete skeleton of the material sector, and the finite group of invertibles is its discrete symmetry. Read on a lattice, the orders are the arithmetic counterpart of a lattice gauge theory and of a quantum simulation of the framework; the real slice is the Euclidean lattice and its imaginary translate the thermal direction, so the arithmetic of the orders is also the arithmetic of the thermal circle. The algebra supplies the arithmetic, not the gauge field or the temperature.
 
-**The finite unit group has no phase.** A finite subgroup of $S^{3}$ is discrete and lies in the real slice; it carries no continuous phase. The phase of the framework comes from the centre $\mathbb{C}^{\times}e_t$, not from the units. Interpreted physically, a finite symmetry has no clock, and a continuous phase is a central, not a discrete, object.
+**The finite group of invertibles has no phase.** A finite subgroup of $S^{3}$ is discrete and lies in the real slice; it carries no continuous phase. The phase of the framework comes from the centre $\mathbb{C}^{\times}e_t$, not from the invertibles. Interpreted physically, a finite symmetry has no clock, and a continuous phase is a central, not a discrete, object.
 
 **The Hurwitz units are the tetrahedral half of the Clifford lift.** The binary octahedral group $2O$ of order $48$ is the lift to the unit sphere of the one-qubit Clifford group, whose projective image is the octahedral rotation group of order $24$; the Hurwitz group $2T$ of order $24$ is its index-two tetrahedral half. Interpreted physically, the $24$-basis operator is not the Clifford group: it is the even half of it, and the identification of the Hurwitz units with the single-qubit Clifford group is wrong by the index two.
 
-**The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the unit group has $24$ elements; its conjugation action on the real slice gives twelve rotations. Interpreted physically, the symmetry of the lattice is not the unit group; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
+**The figure is larger than the group.** The $24$-cell has $1152$ symmetries, while the group of invertibles has $24$ elements; its conjugation action on the real slice gives twelve rotations. Interpreted physically, the symmetry of the lattice is not the group of invertibles; the figure can have more symmetries than the operations the units supply. The distinction is the one between a crystal's point group and the rotations of its lattice.
 
-**The complex order sees the light cone.** The integral biquaternions $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}_{\mathrm{H}}$ have an infinite unit group. A pure null element with Gaussian-integer coefficients, for instance
+**The complex order sees the light cone.** The integral biquaternions $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal{L}_{\mathrm{H}}$ have an infinite group of invertibles. A pure null element with Gaussian-integer coefficients, for instance
 $$
 P=\vec e_x+i\vec e_y,
 \qquad
@@ -264,40 +264,40 @@ $$
 \qquad
 n\in\mathbb{Z}.
 $$
-Interpreted physically, the real orders have finite unit groups because the real sector is definite and has no null direction; the complex order contains the null direction and its unit group is infinite. The finite unit groups are the symmetries of the massive, non-null sector; the infinite family is the algebraic trace of the light cone.
+Interpreted physically, the real orders have finite groups of invertibles because the real sector is definite and has no null direction; the complex order contains the null direction and its group of invertibles is infinite. The finite groups of invertibles are the symmetries of the massive, non-null sector; the infinite family is the algebraic trace of the light cone.
 
 **The McKay classification is the ADE classification.** Through the McKay correspondence the finite subgroups of $S^{3}$ are the simply laced Dynkin types $A^{(1)}$, $D^{(1)}$, $E_6^{(1)}$, $E_7^{(1)}$, $E_8^{(1)}$, and the Kleinian singularities $\mathbb{C}^{2}/\Gamma$ are their orbifolds. Interpreted physically, the discrete symmetries of the framework are classified by the simply laced affine Dynkin diagrams rather than by a list of groups. The interpretation is a classification; it exhibits no orbifold of the algebra and no action of the finite groups on the fields.
 
-**The boundary of the order interpretations.** The orders are arithmetic. They supply no lattice spacing, no dynamics and no spectrum; a physical lattice would require a scale and an action, and the algebra supplies neither. The identification of the infinite unit family with a translation is an algebraic analogy: $e_t+kP$ is a unit of the complex order and is not an element of the material sector, so it is not a spacetime translation.
+**The boundary of the order interpretations.** The orders are arithmetic. They supply no lattice spacing, no dynamics and no spectrum; a physical lattice would require a scale and an action, and the algebra supplies neither. The identification of the infinite unit family with a translation is an algebraic analogy: $e_t+kP$ is invertible in the complex order and is not an element of the material sector, so it is not a spacetime translation.
 
 ## Limits
 
-The topology of the unit group is not the dynamics of a physical system. The group is open, connected and homotopy equivalent to $S^{1}\times S^{3}$; the cone is closed, contractible and of codimension two; the orders are discrete subrings of the real slice. Each statement is a statement about the algebra, and each physical interpretation requires a sector, a scale and a law.
+The topology of the group of invertibles is not the dynamics of a physical system. The group is open, connected and homotopy equivalent to $S^{1}\times S^{3}$; the cone is closed, contractible and of codimension two; the orders are discrete subrings of the real slice. Each statement is a statement about the algebra, and each physical interpretation requires a sector, a scale and a law.
 
-The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken. Read on the acting maps, the same partition is a monoid of processes: the units are the reversible maps, the zero divisors are the maps with a kernel, and the cone is where a process loses information. Which of the product, its reverse and the bracket is the physical composition is open.
+The group and the cone are one partition read twice. The group is the reversible region and the cone is its wall; on the informational sector the cone meets the positive cone in the cone over the pure states. The two interpretations are not unified by the algebra, and the article does not claim that they are. The cone is a light cone only after the material sector is cut out; it is a state boundary only after the trace-one slice is taken. Read on the acting maps, the same partition is a monoid of processes: the invertibles are the reversible maps, the zero divisors are the maps with a kernel, and the cone is where a process loses information. Which of the product, its reverse and the bracket is the physical composition is open.
 
-The orders are arithmetic, not dynamics. The finite unit groups are discrete symmetries, but the algebra does not say which of them a physical configuration realises, and the lattice spacing is external. The infinite unit group of the integral biquaternions is the algebraic trace of the null direction, not a derivation of a translation.
+The orders are arithmetic, not dynamics. The finite groups of invertibles are discrete symmetries, but the algebra does not say which of them a physical configuration realises, and the lattice spacing is external. The infinite group of invertibles of the integral biquaternions is the algebraic trace of the null direction, not a derivation of a translation.
 
 ## Summary
 
-The algebra is the disjoint union of its group of units $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. A unit is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the units are the divisors of every element and the nonzero cone is the set of divisors of zero.
+The algebra is the disjoint union of its group of invertibles $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ and its zero-divisor cone $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$; the zero-divisor set is the punctured cone. An invertible element is a reversible operation, a zero divisor is a rank-one operation that forgets a direction, and the origin is the one element that is neither. On the informational sector the cone meets the positive cone in the cone over the pure states; its trace-one slice is the Bloch sphere. In the divisibility preorder, the invertibles are the divisors of every element and the nonzero cone is the set of divisors of zero.
 
 The group is open, dense, connected and of real dimension eight, with $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ and $\mathbb{B}^{\times}_{1}\cong SL_2(\mathbb{C})$; the polar decomposition retracts it onto $\mathrm{U}(2)$, and $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1\cong\mathbb{Z}$, $\pi_2=0$, $\pi_3\cong\mathbb{Z}$ and universal cover homotopy equivalent to $\mathbb{R}\times S^{3}$. The norm-one slice modulo the central sign is the frame space $SO^{+}(1,3)$. The cone is contractible, smooth off its apex, and its link is an $S^{1}$-bundle over $S^{2}\times S^{2}$ with $\pi_1=0$ and $\pi_2\cong\mathbb{Z}$; the apex is a genuine singularity.
 
-The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite unit group of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a monoid of processes, a frame space and a discrete symmetry, each with its boundary.
+The orders are the Lipschitz and Hurwitz lattices, with groups of invertibles $Q_8$ and $2T$, the finite subgroups of $S^{3}$, the $24$-cell, the McKay correspondence and the infinite group of invertibles of the integral biquaternions. They are the discrete skeleton of the real sector. The algebra supplies the structures; the physical interpretations are reversible operations, a wall of reversibility, a state boundary, a monoid of processes, a frame space and a discrete symmetry, each with its boundary.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of units; the complement of the cone |
+| $\mathbb{B}^{\times}=\{\langle\tilde Q\rangle_{\natural}\neq0\}$ | the group of invertibles; the complement of the cone |
 | $\mathcal{N}=\{\langle\tilde Q\rangle_{\natural}=0\}$ | the zero-divisor cone; the wall of reversibility |
 | $\langle\tilde Q\rangle_{\natural}$ | the general quaternionic algebraic norm; the invertibility criterion |
 | $\mathbb{B}^{\times}_{1}=\{\langle\tilde Q\rangle_{\natural}=1\}$ | the norm-one group; the spin frame slice |
 | $\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ | the $*$-unitary group; maximal compact subgroup, $\cong U(2)$ |
 | $L=\mathcal{N}\cap S^{7}_{E}$ | the link of the cone; $L\cong S^{2}\times S^{3}$, an $S^{1}$-bundle over $S^{2}\times S^{2}$ |
 | $\mathcal{L}$, $\mathcal{L}_{\mathrm{H}}$ | the Lipschitz and Hurwitz orders |
-| $Q_8$, $2T$ | the unit groups of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |
+| $Q_8$, $2T$ | the groups of invertibles of $\mathcal{L}$ and $\mathcal{L}_{\mathrm{H}}$ |
 | $24$-cell | the regular polytope with the Hurwitz units as vertices |
 | $B_4$, $F_4$ | the Weyl groups of orders $384$ and $1152$ |
 | $P=\vec e_x+i\vec e_y$ | the integral null element, $P^{2}=0$ |
@@ -305,11 +305,11 @@ The orders are the Lipschitz and Hurwitz lattices, with unit groups $Q_8$ and $2
 
 ## Further Reading
 
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Units](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the partition.
-- [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence and the matrix model.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra, §The Group of Invertibles](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the partition.
+- [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the determinant sequence and the matrix model.
 - [The Unitary Group of the Biquaternion Algebra](../articles_maths/the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction and the homotopy groups.
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the link and the contractibility.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and the kernel of the exponential.
-- [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the lattices, the finite unit groups and the complex order.
+- [Quaternion Orders and Finite Groups of Invertibles](../articles_maths/quaternion-orders-and-finite-groups-of-invertibles.html), for the lattices, the finite groups of invertibles and the complex order.
 - [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), §*The Domain*, for the three construction domains and the witnesses in one table.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the Lipschitz and Hurwitz orders and the $24$-basis operator.

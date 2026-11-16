@@ -95,17 +95,17 @@ whose roots $0$ and $2t$ are distinct because $t\neq0$. Hence $S=t^2\neq0$, so $
 
 **Example.** For $q=1+\vec e_y$ we have $t=1$, $S=1$, $e=(1+\vec e_y)/2$ and $f=(1-\vec e_y)/2$. The spectrum is $\{0,2\}$, and $q$ is a zero divisor with an eigenbasis. The zero-divisor cone is therefore not contained in the spectral cone, and a zero divisor need not be defective.
 
-## Units on the Spectral Cone
+## Invertibles on the Spectral Cone
 
-**Theorem (units and defect on the spectral cone).** Let $S=0$. Then $q$ is a unit exactly when $t\neq0$. If $t\neq0$ and $\vec v\neq0$, then $q$ is defective: its minimal polynomial is $(\lambda-t)^2$, its characteristic polynomial is $(\lambda-t)^4$, its eigenspace has dimension $2$, and its Jordan type is $(2,2)$. If $t\neq0$ and $\vec v=0$, then $q=t$ is scalar and semisimple, with minimal polynomial $\lambda-t$ and Jordan type $(1,1,1,1)$.
+**Theorem (invertibles and defect on the spectral cone).** Let $S=0$. Then $q$ is invertible exactly when $t\neq0$. If $t\neq0$ and $\vec v\neq0$, then $q$ is defective: its minimal polynomial is $(\lambda-t)^2$, its characteristic polynomial is $(\lambda-t)^4$, its eigenspace has dimension $2$, and its Jordan type is $(2,2)$. If $t\neq0$ and $\vec v=0$, then $q=t$ is scalar and semisimple, with minimal polynomial $\lambda-t$ and Jordan type $(1,1,1,1)$.
 
-*Proof.* On $\mathcal C$ the norm is $t^2-S=t^2$, so $q$ is a unit exactly when $t\neq0$. The claims about the minimal polynomial, the characteristic polynomial, the eigenspace and the Jordan type are the spectral polynomial theorem of *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*. The scalar case is immediate from $L_t=t\,\mathrm{id}$.
+*Proof.* On $\mathcal C$ the norm is $t^2-S=t^2$, so $q$ is invertible exactly when $t\neq0$. The claims about the minimal polynomial, the characteristic polynomial, the eigenspace and the Jordan type are the spectral polynomial theorem of *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*. The scalar case is immediate from $L_t=t\,\mathrm{id}$.
 
-**Corollary (defective units).** A unit on the spectral cone is defective exactly when its vector part is non-zero. The scalar units are semisimple.
+**Corollary (defective units).** an invertible element on the spectral cone is defective exactly when its vector part is non-zero. The scalar units are semisimple.
 
 *Proof.* The scalar units are the elements $q=t$ with $t\neq0$, and $L_t=t\,\mathrm{id}$ is semisimple. Every other unit on the spectral cone has $\vec v\neq0$ and is defective by the theorem.
 
-The spectral cone therefore contains both units and non-units, and its unit part contains both semisimple and defective elements. The element $1+\vec e_x+\vec e_y$ is a defective unit on $\mathcal C$; the element $\vec e_x+\vec e_y$ is a nilpotent on $\mathcal C$.
+The spectral cone therefore contains both units and non-invertibles, and its unit part contains both semisimple and defective elements. The element $1+\vec e_x+\vec e_y$ is a defective unit on $\mathcal C$; the element $\vec e_x+\vec e_y$ is a nilpotent on $\mathcal C$.
 
 ## The Chain of Invariants
 
@@ -145,7 +145,7 @@ The rows are distinct, so the minimal polynomial separates six strata. The count
 
 The norm $t^2-S$ and the spectral form $S$ are independent: $1+\vec e_y$ has norm $0$ and $S=1$, $1+\vec e_x+\vec e_y$ has norm $1$ and $S=0$, and their gradients are independent at $1+\vec e_y$. Their zero sets are $\mathcal Z$ and $\mathcal C$; their intersection is the nilpotent cone $\{t=0,S=0\}$, not the origin. The cones are distinct, neither contains the other, and they are tangent along the non-zero nilpotents.
 
-On $\mathcal Z$ with $t\neq0$, the element is semisimple and spectrally regular, with eigenvalues $0$ and $2t$ and $q=2t e$, where $e=q/(2t)$ is an idempotent. On $\mathcal C$, an element is a unit exactly when $t\neq0$; a unit is defective exactly when $\vec v\neq0$, and the scalar units are semisimple.
+On $\mathcal Z$ with $t\neq0$, the element is semisimple and spectrally regular, with eigenvalues $0$ and $2t$ and $q=2t e$, where $e=q/(2t)$ is an idempotent. On $\mathcal C$, an element is invertible exactly when $t\neq0$; an invertible element is defective exactly when $\vec v\neq0$, and the scalar units are semisimple.
 
 The norm, the characteristic polynomial and the minimal polynomial form a strict chain of two, four and six types: the norm separates units from zero divisors, the characteristic polynomial separates the four sectors, and the minimal polynomial separates the six strata.
 

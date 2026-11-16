@@ -157,7 +157,7 @@ The measure constructed here is the local factor of the adelic measure. Over the
 
 The additive group of $\mathbb{Q}_p$ is locally compact and carries a Haar measure, unique up to a positive scalar and fixed here by $\mu(\mathbb{Z}_p) = 1$; the measure of a ball is $\mu(a+p^n\mathbb{Z}_p) = p^{-n}$, the measure scales as $\int f(ax)d\mu = \lvert a \rvert_p^{-1}\int f\,d\mu$, and the measure of the unit circle is $1 - p^{-1}$. The integral of a continuous function on $\mathbb{Z}_p$ is the limit of the Riemann sums $p^{-n}\sum_{x<p^n} f(x)$, and this functional is the Volkenborn integral. Its values on the monomials are the Bernoulli numbers and its values on the binomial polynomials are $(-1)^n/(n+1)$; the two computations are consistent through the Stirling-number expansion of the monomials, and the integral is linear but not multiplicative.
 
-The continuous dual of the space of continuous functions is the space of $p$-adic distributions, identified with the bounded sequences by evaluation on the binomial basis, and the Amice transform identifies the distributions with the power series of bounded coefficients and the measures with $\mathbb{Z}_p[[T]]$. The convolution of measures makes the last ring the Iwasawa algebra, a complete local ring in which the $p$-adic $L$-functions of the arithmetic theory are the analytic objects. The multiplicative Haar measure $d^\times x = \frac{p}{p-1}\lvert x \rvert_p^{-1}d\mu(x)$, normalised by $\mu^\times(\mathbb{Z}_p^\times) = 1$, gives each set $p^n\mathbb{Z}_p^\times$ measure $1$ and each principal-unit group $1+p^n\mathbb{Z}_p$ measure $p^{-n}$; its integral against $\mathbf{1}_{\mathbb{Z}_p}\lvert x \rvert^s$ is the local Euler factor $(1-p^{-s})^{-1}$, the prototype of the local computations of the adelic theory.
+The continuous dual of the space of continuous functions is the space of $p$-adic distributions, identified with the bounded sequences by evaluation on the binomial basis, and the Amice transform identifies the distributions with the power series of bounded coefficients and the measures with $\mathbb{Z}_p[[T]]$. The convolution of measures makes the last ring the Iwasawa algebra, a complete local ring in which the $p$-adic $L$-functions of the arithmetic theory are the analytic objects. The multiplicative Haar measure $d^\times x = \frac{p}{p-1}\lvert x \rvert_p^{-1}d\mu(x)$, normalised by $\mu^\times(\mathbb{Z}_p^\times) = 1$, gives each set $p^n\mathbb{Z}_p^\times$ measure $1$ and each principal-group of invertibles $1+p^n\mathbb{Z}_p$ measure $p^{-n}$; its integral against $\mathbf{1}_{\mathbb{Z}_p}\lvert x \rvert^s$ is the local Euler factor $(1-p^{-s})^{-1}$, the prototype of the local computations of the adelic theory.
 
 ## Summary of Notation
 
@@ -173,7 +173,7 @@ The continuous dual of the space of continuous functions is the space of $p$-adi
 | $d^\times x = \frac{p}{p-1}\frac{d\mu(x)}{\lvert x \rvert_p}$ | Multiplicative Haar measure on $\mathbb{Q}_p^\times$ |
 | $\mu^\times$ | Multiplicative measure, $\mu^\times(\mathbb{Z}_p^\times) = 1$ |
 | $p^n\mathbb{Z}_p^\times$ | Sphere of radius $p^{-n}$, of multiplicative measure $1$ |
-| $1 + p^n\mathbb{Z}_p$ | Principal-unit group, $\mu^\times(1+p^n\mathbb{Z}_p) = p^{-n}$ |
+| $1 + p^n\mathbb{Z}_p$ | Principal-group of invertibles, $\mu^\times(1+p^n\mathbb{Z}_p) = p^{-n}$ |
 | $B_n$ | Bernoulli numbers, $\int_{\mathbb{Z}_p} x^n d\mu = B_n$ |
 | $\binom{x}{n}$ | Binomial polynomial, $\int_{\mathbb{Z}_p}\binom{x}{n}d\mu = (-1)^n/(n+1)$ |
 | $\mathbf{1}_A$ | Indicator function of a set |

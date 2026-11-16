@@ -25,11 +25,11 @@ An element $x \in R$ is **nilpotent** if $x^n = 0$ for some $n \geq 1$, and the 
 
 **Example.** A nonzero nilpotent is a zero divisor: if $x^n = 0$ with $n$ the least such exponent, then $x \cdot x^{n-1} = 0$ with $x^{n-1} \neq 0$ and $x \neq 0$. The converse fails: in $\mathbb{Z}/6\mathbb{Z}$ the class of $2$ is a zero divisor, since $2 \cdot 3 = 0$, but it is not nilpotent, since $2^k$ is $2$ or $4$ for every $k \geq 1$.
 
-### Nilpotents and Units
+### Nilpotents and Invertibles
 
-Nilpotent elements do not change the unit group, and this is the technical reason the nilradical is invisible to much of the arithmetic.
+Nilpotent elements do not change the group of invertibles, and this is the technical reason the nilradical is invisible to much of the arithmetic.
 
-**Proposition.** Let $u \in R$ be a unit and let $x \in R$ be nilpotent. Then $u + x$ is a unit. In particular, if $x^n = 0$ then $1 - x$ is a unit with
+**Proposition.** Let $u \in R$ be an invertible element and let $x \in R$ be nilpotent. Then $u + x$ is invertible. In particular, if $x^n = 0$ then $1 - x$ is invertible with
 
 $$
 \boxed{\;(1-x)^{-1} = 1 + x + x^2 + \cdots + x^{n-1}\;} .
@@ -37,11 +37,11 @@ $$
 
 **Proof.** The displayed identity follows from $(1-x)(1 + x + \cdots + x^{n-1}) = 1 - x^n = 1$; the sum is finite and so needs no convergence. In general $u + x = u\,(1 + u^{-1}x)$, and $u^{-1}x$ is nilpotent since $(u^{-1}x)^n = u^{-n}x^n$.
 
-**Corollary.** Let $\pi : R \to R/\operatorname{nil}(R)$ be the quotient map. Then an element $u \in R$ is a unit if and only if $\pi(u)$ is a unit. In particular $\pi$ induces a surjection $R^{\times} \to (R/\operatorname{nil}(R))^{\times}$.
+**Corollary.** Let $\pi : R \to R/\operatorname{nil}(R)$ be the quotient map. Then an element $u \in R$ is invertible if and only if $\pi(u)$ is invertible. In particular $\pi$ induces a surjection $R^{\times} \to (R/\operatorname{nil}(R))^{\times}$.
 
-**Proof.** A homomorphism carries units to units. Conversely if $\pi(u) = u + \operatorname{nil}(R)$ is a unit, choose $v + \operatorname{nil}(R)$ with $uv + \operatorname{nil}(R) = 1 + \operatorname{nil}(R)$; then $uv = 1 - x$ for some nilpotent $x$, so $uv$ is a unit by the proposition, and therefore so is $u$.
+**Proof.** A homomorphism carries units to units. Conversely if $\pi(u) = u + \operatorname{nil}(R)$ is invertible, choose $v + \operatorname{nil}(R)$ with $uv + \operatorname{nil}(R) = 1 + \operatorname{nil}(R)$; then $uv = 1 - x$ for some nilpotent $x$, so $uv$ is invertible by the proposition, and therefore so is $u$.
 
-**Example.** In $\mathbb{Z}/4\mathbb{Z}$, with nilradical $(2)$, the class of $1 + 2 = 3$ is a unit because the class of $1$ is; indeed $3 \cdot 3 = 9 \equiv 1$. The four elements of $k[x]/(x^2)$ of the form $a + bx$ with $a \neq 0$ are units, by the proposition applied to $a(1 + a^{-1}bx)$.
+**Example.** In $\mathbb{Z}/4\mathbb{Z}$, with nilradical $(2)$, the class of $1 + 2 = 3$ is invertible because the class of $1$ is; indeed $3 \cdot 3 = 9 \equiv 1$. The four elements of $k[x]/(x^2)$ of the form $a + bx$ with $a \neq 0$ are invertible, by the proposition applied to $a(1 + a^{-1}bx)$.
 
 ### Nilpotents and Idempotents
 
@@ -51,11 +51,11 @@ Nilpotents and idempotents are at opposite ends of the spectrum of a ring: a nil
 
 **(a)** $1 - e$ is idempotent, and $e(1-e) = 0$.
 
-**(b)** $e$ is a unit if and only if $e = 1$.
+**(b)** $e$ is invertible if and only if $e = 1$.
 
 **(c)** The only nilpotent idempotent is $0$.
 
-**Proof.** (a) $(1-e)^2 = 1 - 2e + e^2 = 1 - 2e + e = 1 - e$, and $e(1-e) = e - e^2 = 0$. (b) If $e$ is a unit then $e = e^2$ gives $1 = e^{-1}e = e^{-1}e^2 = e$ after multiplying by $e^{-1}$; the converse is clear. (c) If $e^2 = e$ and $e^n = 0$ with $n \geq 1$, then $e = e^n = 0$.
+**Proof.** (a) $(1-e)^2 = 1 - 2e + e^2 = 1 - 2e + e = 1 - e$, and $e(1-e) = e - e^2 = 0$. (b) If $e$ is invertible then $e = e^2$ gives $1 = e^{-1}e = e^{-1}e^2 = e$ after multiplying by $e^{-1}$; the converse is clear. (c) If $e^2 = e$ and $e^n = 0$ with $n \geq 1$, then $e = e^n = 0$.
 
 Idempotents are the vocabulary of *Rings*, §The Multiplicative Vocabulary, and their use in product decompositions belongs to *Localization and the Fraction Field*, below this article in this category.
 
@@ -197,7 +197,7 @@ is a ring homomorphism whose kernel is $\operatorname{nil}(R)$. Consequently $R$
 
 ## Summary
 
-The nilpotent elements of a commutative ring form an ideal, the nilradical $\operatorname{nil}(R) = \sqrt{(0)}$, because the binomial theorem makes the sum of two nilpotents nilpotent; without commutativity this closure fails and the non-commutative rung is defined by ideals instead. Nilpotents do not affect the unit group: $u + x$ is a unit whenever $u$ is a unit and $x$ is nilpotent, and an element is a unit if and only if its class modulo the nilradical is. A ring is reduced when its nilradical vanishes, equivalently when the intersection of its prime ideals is zero, by Krull's theorem of *Commutative Rings*, and its reduced quotients are exactly its quotients by radical ideals, the largest of them being $R/\operatorname{nil}(R)$. Reducedness sits strictly between the general commutative ring and the domain: $\mathbb{Z}/4\mathbb{Z}$ is not reduced, while $\mathbb{Z} \times \mathbb{Z}$ and $\mathbb{Z}/6\mathbb{Z}$ are reduced and not domains.
+The nilpotent elements of a commutative ring form an ideal, the nilradical $\operatorname{nil}(R) = \sqrt{(0)}$, because the binomial theorem makes the sum of two nilpotents nilpotent; without commutativity this closure fails and the non-commutative rung is defined by ideals instead. Nilpotents do not affect the group of invertibles: $u + x$ is invertible whenever $u$ is invertible and $x$ is nilpotent, and an element is invertible if and only if its class modulo the nilradical is. A ring is reduced when its nilradical vanishes, equivalently when the intersection of its prime ideals is zero, by Krull's theorem of *Commutative Rings*, and its reduced quotients are exactly its quotients by radical ideals, the largest of them being $R/\operatorname{nil}(R)$. Reducedness sits strictly between the general commutative ring and the domain: $\mathbb{Z}/4\mathbb{Z}$ is not reduced, while $\mathbb{Z} \times \mathbb{Z}$ and $\mathbb{Z}/6\mathbb{Z}$ are reduced and not domains.
 
 The prime ideals separate the elements of a reduced ring: the product of the quotient maps $R \to R/\mathrm{P}$ has kernel $\operatorname{nil}(R)$, so a reduced ring embeds into a product of domains and is a subdirect product of the domains $R/\mathrm{P}$, one for each prime $\mathrm{P}$. A finite reduced ring is a product of finitely many fields.
 
@@ -210,7 +210,7 @@ The prime ideals separate the elements of a reduced ring: the product of the quo
 | $\operatorname{nil}(R)$ | Nilradical, the ideal of nilpotent elements |
 | $\sqrt{I}$ | Radical of $I$; $\operatorname{nil}(R) = \sqrt{(0)}$ |
 | $R_{\mathrm{red}}$ | Reduced quotient $R/\operatorname{nil}(R)$ |
-| $R^{\times}$ | Group of units |
+| $R^{\times}$ | Group of invertibles |
 | $R$ reduced | $\operatorname{nil}(R) = (0)$ |
 | $\mathrm{P}$ | Prime ideal |
 | $\operatorname{Spec} R$ | Prime spectrum, the poset of prime ideals |

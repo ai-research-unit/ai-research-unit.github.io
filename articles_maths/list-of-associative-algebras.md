@@ -68,7 +68,7 @@ The matrix algebra is the model by which the associative theory is tested, and e
 | $M_n(D)$ over a division ring $D$ | associative, simple and Artinian; the general simple finite-dimensional algebra | *Simple and Semisimple Modules* |
 | The trace form $\langle A,B\rangle = \operatorname{Tr}(AB)$ | symmetric, associative and non-degenerate on $M_n(k)$ | *Matrix Algebras* |
 
-The matrix algebra is the worked case of almost every statement of the associative theory: the centre, the ideals, the units and the tensor product formula are all computed there first. Its place as the model is recorded in *Matrix Algebras*, and the matrix rings are gathered in *List of Matrix Rings*.
+The matrix algebra is the worked case of almost every statement of the associative theory: the centre, the ideals, the invertibles and the tensor product formula are all computed there first. Its place as the model is recorded in *Matrix Algebras*, and the matrix rings are gathered in *List of Matrix Rings*.
 
 ## The Universal Enveloping Algebra of a Lie Algebra
 

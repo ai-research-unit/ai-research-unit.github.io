@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The reduced biquaternion algebra is a real four-dimensional vector space, and its **Euclidean topology** is the standard topology of $\mathbb{R}^{4}$ read on the coordinates. This article fixes the norm that produces it, states that the topology it defines is the **only** one compatible with the vector-space structure, records the metric, and records how the topology interacts with the algebra: the four general products are continuous, the three conjugations are isometries, the unit group is open and the zero-divisor set is closed. Of the four algebraic norms only the general tessarine sesquilinear one, $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$, is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the other three are complex-valued or indefinite and give at best a degenerate quantity. The multiplication has zero divisors and is not a division algebra, and the zero-divisor set is exactly the closed set where the unit group ends.
+The reduced biquaternion algebra is a real four-dimensional vector space, and its **Euclidean topology** is the standard topology of $\mathbb{R}^{4}$ read on the coordinates. This article fixes the norm that produces it, states that the topology it defines is the **only** one compatible with the vector-space structure, records the metric, and records how the topology interacts with the algebra: the four general products are continuous, the three conjugations are isometries, the group of invertibles is open and the zero-divisor set is closed. Of the four algebraic norms only the general tessarine sesquilinear one, $\langle \breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$, is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the other three are complex-valued or indefinite and give at best a degenerate quantity. The multiplication has zero divisors and is not a division algebra, and the zero-divisor set is exactly the closed set where the group of invertibles ends.
 
 ## The Euclidean Norm
 
@@ -70,15 +70,15 @@ so each is an isometry of $\mathbb{B}_{\mathrm{red}}$ onto itself, and the three
 
 *Proof.* $\langle \breve Q\rangle_{\mathrm{ts}*}=Q_{\blacktriangle}\bar Q_{\blacktriangle}+Q_{\blacktriangledown}\bar Q_{\blacktriangledown}$; the bar replaces $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ by their conjugates, leaving the two moduli; the tessarine sign negates $Q_{\blacktriangledown}$, leaving the two moduli; the star is their composite, so it too preserves them. The metric is $\lVert \breve Q-\breve Q_{2}\rVert$, and each involution is linear or antilinear and preserves the norm, hence the metric; the Klein group is *The Two Involutions and the Group of Involutions*.
 
-**Corollary (the unit group is open and the zero divisors closed).** The unit group ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the unit group is dense.
+**Corollary (the group of invertibles is open and the zero divisors closed).** The group of invertibles ${\mathbb{B}_{\mathrm{red}}}^{\times}$ is open, and its complement, the zero-divisor set, is closed; the zero-divisor set has empty interior, so the group of invertibles is dense.
 
-*Proof.* The zero-divisor set is $\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$, the union of two real planes through the origin, which is closed as the vanishing set of the continuous functions $Q_{+}$ and $Q_{-}$; a plane has empty interior, and a finite union of sets of empty interior has empty interior, so the unit group is dense. The openness is the complement of a closed set.
+*Proof.* The zero-divisor set is $\{\langle \breve Q\rangle_{\mathrm{ts}}=0\}=\{Q_{+}=0\}\cup\{Q_{-}=0\}$, the union of two real planes through the origin, which is closed as the vanishing set of the continuous functions $Q_{+}$ and $Q_{-}$; a plane has empty interior, and a finite union of sets of empty interior has empty interior, so the group of invertibles is dense. The openness is the complement of a closed set.
 
 ## The Relation to the Four Products
 
 **Each product is continuous and induces the same topology, the Euclidean one.**
 
-**Theorem.** For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}_{\mathrm{red}}$ onto itself when $\breve Q$ is a unit, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.
+**Theorem.** For each of the four products $\circ$, the operation $\breve Q_{2}\mapsto \breve Q\circ \breve Q_{2}$ is a homeomorphism of $\mathbb{B}_{\mathrm{red}}$ onto itself when $\breve Q$ is invertible, and the topology attached to the product is the Euclidean topology; the four products give one and the same topology.
 
 *Proof.* A continuous bijection of $\mathbb{R}^{4}$ whose inverse is the multiplication by $\breve Q^{-1}$, also continuous, is a homeomorphism; and the topology is the unique vector-space topology, so all four agree. The differences between the four are in the metric-like quantities they carry, not in the topology, as *Topology and Metric for Each of the Operations* records.
 
@@ -88,7 +88,7 @@ so each is an isometry of $\mathbb{B}_{\mathrm{red}}$ onto itself, and the three
 
 ## Summary
 
-The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{4}$ through the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$, and only the form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so only $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ gives a topological norm. All norms are equivalent, so the topology is unique, metrisable, complete and locally compact; the space is contractible and its one-point compactification is $S^{4}$. The four products are continuous, the three conjugations are isometries forming a Klein four-group, and the unit group is open and dense while the zero-divisor set is closed with empty interior. Each of the four products is continuous and induces the same Euclidean topology; the differences between the products lie in the metric-like quantities, not in the topology. The multiplication **has zero divisors** and is **not a division algebra**, and the zero-divisor set is exactly the boundary of the unit group.
+The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{4}$ through the norm $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}=\sqrt{q_{\blacktriangle}^{2}+{q'_{\blacktriangle}}^{2}+q_{\blacktriangledown}^{2}+{q'_{\blacktriangledown}}^{2}}$, and only the form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so only $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ gives a topological norm. All norms are equivalent, so the topology is unique, metrisable, complete and locally compact; the space is contractible and its one-point compactification is $S^{4}$. The four products are continuous, the three conjugations are isometries forming a Klein four-group, and the group of invertibles is open and dense while the zero-divisor set is closed with empty interior. Each of the four products is continuous and induces the same Euclidean topology; the differences between the products lie in the metric-like quantities, not in the topology. The multiplication **has zero divisors** and is **not a division algebra**, and the zero-divisor set is exactly the boundary of the group of invertibles.
 
 ## Summary of Notation
 
@@ -97,7 +97,7 @@ The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{
 | $\lVert \breve Q\rVert=\sqrt{\langle \breve Q\rangle_{\mathrm{ts}*}}$ | the Euclidean norm, from the positive definite form $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$ |
 | $d(\breve Q_{1},\breve Q_{2})=\lVert \breve Q_{1}-\breve Q_{2}\rVert$ | the metric |
 | $B(\breve Q,r)$ | the open ball of centre $\breve Q$ and radius $r$ |
-| ${\mathbb{B}_{\mathrm{red}}}^{\times}$ | the unit group, open and dense |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}$ | the group of invertibles, open and dense |
 | $\{Q_{+}=0\}\cup\{Q_{-}=0\}$ | the zero-divisor set, closed with empty interior |
 
 ## Further Reading
@@ -105,6 +105,6 @@ The reduced biquaternion algebra carries the Euclidean topology of $\mathbb{R}^{
 - [The Forms of the Algebra of the Reduced Biquaternions](the-forms-of-the-algebra-of-the-reduced-biquaternions.html), for the definiteness of $\langle\cdot,\cdot\rangle_{\mathrm{ts}*}$.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the four products and the norms.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two lines.
-- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric, the unit sphere and the unit group as a topological group.
+- [The Euclidean Topology of the Reduced Biquaternion Algebra](the-euclidean-topology-of-the-reduced-biquaternion-algebra.html), for the metric, the unit sphere and the group of invertibles as a topological group.
 - [Topology and Metric for Each of the Operations](topology-and-metric-for-each-of-the-operations.html), for the metric of each product.
 - [Topology in the Space of Biquaternions](topology-in-the-space-of-biquaternions.html), for the non-commutative companion.

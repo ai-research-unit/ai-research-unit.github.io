@@ -133,7 +133,7 @@ $$
 
 Hence $i(s_2-s_1) = i(s_1-s_2)$, that is $s_1 = s_2$.
 
-**Surjectivity.** This is the proposition of §*The Inverse*: for every unit $u \neq -1$, the real number $s = i(u-1)/(u+1)$ satisfies $u(s) = u$.
+**Surjectivity.** This is the proposition of §*The Inverse*: for every invertible $u \neq -1$, the real number $s = i(u-1)/(u+1)$ satisfies $u(s) = u$.
 
 The chart is therefore one-to-one, and its image is the circle with the single point $-1$ removed.
 

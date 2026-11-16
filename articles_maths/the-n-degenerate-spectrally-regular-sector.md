@@ -78,7 +78,7 @@ a smooth affine quadric of complex dimension $2$. Deleting the two roots $\pm e_
 
 **Remark (a cone with the apex removed).** The sector is stable under every non-zero complex scalar and under no zero scalar: $0\cdot\tilde Q=0$ lies in $\Sigma_{00}$. It is a cone with its apex deleted, and the apex belongs to its closure.
 
-**Remark (homogeneity).** The sector is a single orbit of $\mathbb{C}^\times\times\mathbb{B}^\times$ acting by scaling and inner automorphisms, because the unit group acts transitively on the non-trivial idempotents. Nothing in the sector is distinguished from anything else except by the value of $c$.
+**Remark (homogeneity).** The sector is a single orbit of $\mathbb{C}^\times\times\mathbb{B}^\times$ acting by scaling and inner automorphisms, because the group of invertibles acts transitively on the non-trivial idempotents. Nothing in the sector is distinguished from anything else except by the value of $c$.
 
 ## The Elements
 
@@ -335,7 +335,7 @@ $$
 
 and they are proportional only if $Q_t=0$ or $\vec Q=0$. On $\Sigma_{01}$ one has $Q_t\neq0$ and $\vec Q\neq0$, so the gradients are independent and the intersection $\mathcal{N}\cap\mathcal S$ is nowhere dense in $\mathcal{N}$ there. The tangency of the two cones is a phenomenon of the boundary $\Sigma_{00}$, where both gradients become $2(0,\vec Q)$.
 
-**Independence witness.** Every element of the sector is **$\natural$-degenerate** and a **non-unit**, with **distinct eigenvalues**: $\langle\tilde Q\rangle_{\natural}=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is
+**Independence witness.** Every element of the sector is **$\natural$-degenerate** and a **non-invertible**, with **distinct eigenvalues**: $\langle\tilde Q\rangle_{\natural}=0$, so it is a zero divisor of the plain product, while $B^2=-Q_t^2\neq0$, so its two eigenvalues $0$ and $2Q_t$ are separated. The standard example is
 
 $$
 \tilde Q=e_t+i\vec e_x,\qquad N=0,\qquad B^2=-1,\qquad \tilde Q^2=2\tilde Q,
@@ -352,7 +352,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 | **$\natural$-regular, spectrally degenerate** $\Sigma_{10}$ | $\langle\tilde Q\rangle_{\natural}\neq0$, $B^2=0$ | units with a repeated eigenvalue, plus the scalar line minus $0$ | $\{Q_t\}$ | fails off the scalar line, one term on it | stays in $\mathbb{B}^\times$; can land in $\Sigma_{11}$ |
 | **doubly degenerate** $\Sigma_{00}$ | $\langle\tilde Q\rangle_{\natural}=0$, $B^2=0$ | non-zero nilpotents of index two, plus the origin | $\{0\}$ | fails off the origin | $0$ or $\Sigma_{01}$ |
 
-**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is a unit with none. Neither cone contains the other, and these are the sectors that show it.
+**The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is a zero divisor with a full eigenbasis, $\Sigma_{10}$ is invertible with none. Neither cone contains the other, and these are the sectors that show it.
 
 **Position among the four sectors.** Sector $01$ is the **idempotent stratum** of the null cone: the elements $c\tilde\Pi$ with $c\neq0$ and $\tilde\Pi$ a non-trivial idempotent. It is the only sector on which the norm vanishes while the spectrum stays separated, so it is one of the two independence witnesses. The finer split inside $\Sigma_{10}$ and $\Sigma_{00}$ is by the minimal polynomial, not by the two predicates; it is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 
@@ -360,7 +360,7 @@ with spectral idempotents $\tilde\Pi_\pm=(e_t\pm i\vec e_x)/2$, spectrum $\{2,0\
 
 **Eigenbasis.** It exists. The spectral idempotents are $e_+=\tilde Q/(2Q_t)$ and $e_-=e_t-e_+$, and they are unique. The normalised Peirce eigenbasis is unique with the normalisation fixed. The Peirce decomposition relative to $\tilde Q$ is the only one.
 
-**The flow.** The root $\vec U=\vec Q/B$ exists and is pure, and $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$, with $W$ the Fourier kernel of *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*. This holds even though $\langle\tilde Q\rangle_{\natural}=0$ and the element is a zero divisor. The exponential is a unit, like every exponential. The Hermitian norm, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
+**The flow.** The root $\vec U=\vec Q/B$ exists and is pure, and $e^{\theta\tilde Q}=e^{\theta Q_t}W(-\theta,B/2\pi)$, with $W$ the Fourier kernel of *Biquaternion Continuous Harmonic Analysis*, §*The Fourier Kernel*. This holds even though $\langle\tilde Q\rangle_{\natural}=0$ and the element is a zero divisor. The exponential is invertible, like every exponential. The Hermitian norm, $\langle\tilde X\rangle_*=\operatorname{Sc}(\tilde X\tilde X^*)$, is
 
 $$
 \langle e^{\theta\tilde Q}\rangle_*

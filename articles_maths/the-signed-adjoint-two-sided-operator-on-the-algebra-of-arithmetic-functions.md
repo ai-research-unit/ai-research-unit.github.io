@@ -63,9 +63,9 @@ Thus the balanced signed adjoint two-sided operator with $c=\varepsilon$ is the 
 $$
 \mathcal{T}^{\alpha\dagger}_{a,b}=\mathrm{Sd}_{\alpha(a*b)}\alpha
 $$
-is a **one-sided** signed operator, not a two-sided operator, and it cannot be written as $S^\alpha_{c,d}$ for any $c,d$ unless $c$ is a unit. The discrepancy is the commutativity of the algebra, which collapses the two sides into the product $a*b$ and leaves only the transposed multiplication.
+is a **one-sided** signed operator, not a two-sided operator, and it cannot be written as $S^\alpha_{c,d}$ for any $c,d$ unless $c$ is invertible. The discrepancy is the commutativity of the algebra, which collapses the two sides into the product $a*b$ and leaves only the transposed multiplication.
 
-**Proof.** The noncommutative formula is the computation of the adjoint of a two-sided product; in the commutative case the two-sided factors through the product and the adjoint is a single transposed multiplication, which is a left multiplication only for the units. This is the same obstruction as in *The Signed Two-Sided Operator on the Algebra of Arithmetic Functions*.
+**Proof.** The noncommutative formula is the computation of the adjoint of a two-sided product; in the commutative case the two-sided factors through the product and the adjoint is a single transposed multiplication, which is a left multiplication only for the invertibles. This is the same obstruction as in *The Signed Two-Sided Operator on the Algebra of Arithmetic Functions*.
 
 ## Worked Examples
 

@@ -1,12 +1,12 @@
-# __The Quaternion Unit Group as a Topological Group__
+# __The Quaternion Group of Invertibles as a Topological Group__
 
 ## Introduction
 
-The quaternions form a division algebra, so the units of the quaternion product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.
+The quaternions form a division algebra, so the invertibles of the quaternion product are exactly the nonzero elements and the punctured space is the group of invertibles. The space is the article before it; the discrete subgroups of the sphere are the article after it.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Proposition (the units are the nonzero elements).** The group of units of the quaternion product is
+**Proposition (the invertibles are the nonzero elements).** The group of invertibles of the quaternion product is
 
 $$
 \boxed{\;\mathbb{H}^\times=\mathrm{GL}_1(\mathbb{H})=\{\tilde q:\tilde q\neq0\}\;}
@@ -22,7 +22,7 @@ of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^
 
 ## The Decomposition with the Sphere
 
-**Theorem (the units are a product).** The map
+**Theorem (the invertibles are a product).** The map
 
 $$ \boxed{\; \mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
 \tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr) \;} ,$$
@@ -31,7 +31,7 @@ is an isomorphism of topological groups, the second factor being the group of un
 
 *Proof.* The map is well defined and continuous; the inverse is $(t,\tilde u)\mapsto t\tilde u$, continuous, and satisfies $\lvert t\tilde u\rvert=t$ because $\lvert\tilde u\rvert=1$; multiplicativity of the norm gives $\lvert\tilde q_1\tilde q_2\rvert=\lvert\tilde q_1\rvert\lvert\tilde q_2\rvert$, so the map is a group homomorphism, and its kernel and image are as displayed.
 
-**Corollary (the units are connected and their topology is the sphere's).** The group $\mathbb{H}^\times$ is connected, path-connected and not compact; it is homotopy equivalent to $S^3$, so it is simply connected, $\pi_1(\mathbb{H}^\times)=0$ and $\pi_3(\mathbb{H}^\times)\cong\mathbb{Z}$.
+**Corollary (the invertibles are connected and their topology is the sphere's).** The group $\mathbb{H}^\times$ is connected, path-connected and not compact; it is homotopy equivalent to $S^3$, so it is simply connected, $\pi_1(\mathbb{H}^\times)=0$ and $\pi_3(\mathbb{H}^\times)\cong\mathbb{Z}$.
 
 *Proof.* The product $\mathbb{R}_{>0}\times S^3$ is connected and path-connected because both factors are; the factor $\mathbb{R}_{>0}$ admits the retraction $t\mapsto1$ and is contractible, so the product deformation retracts onto $S^3$; the fundamental group of $S^3$ is trivial and its third homotopy group is infinite cyclic, and these are homotopy invariants. The group is not compact because $\mathbb{R}_{>0}$ is unbounded.
 
@@ -57,21 +57,21 @@ $$
 
 converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\vec v)=\cos\lvert\vec v\rvert+\dfrac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\vec q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.
 
-*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=\exp(q_t)\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_te_t+\vec v$, $\exp(\tilde q)=\exp(q_t)\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\vec u\sin\lvert\vec v\rvert$ with $\vec u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\vec u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_t$, so the unit part of the image misses exactly $-e_t$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_t$.
+*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=\exp(q_t)\neq0$, so the values are invertible; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_te_t+\vec v$, $\exp(\tilde q)=\exp(q_t)\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\vec u\sin\lvert\vec v\rvert$ with $\vec u=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\vec u\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_t$, so the unit part of the image misses exactly $-e_t$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_t$.
 
-**Corollary (the exponential generates the unit group).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
+**Corollary (the exponential generates the group of invertibles).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
 
 *Proof.* The surjectivity onto $\mathbb{H}^\times$ is the theorem; the unit statement is the restriction to the pure part, allowing the value $\lvert\vec v\rvert=\pi$ for $-e_t$; the local statement is the inverse function theorem applied on the band, where the differential at the origin is the identity.
 
 ## Summary
 
-The group of units of the quaternion algebra is the punctured space $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, open, dense, of real dimension four, with centre $\mathbb{R}^\times e_t$. It is a topological group, and the map $\tilde q\mapsto(\lvert\tilde q\rvert,\tilde q/\lvert\tilde q\rvert)$ is an isomorphism onto $\mathbb{R}_{>0}\times S^3$; consequently it is connected, simply connected, homotopy equivalent to $S^3$ and not compact. The unit quaternions $Sp(1)=S^3$ form the compact maximal subgroup, of dimension three, with centre $\{\pm e_t\}$ and quotient the rotation group. The exponential is surjective onto the units, is a unit quaternion on the pure part, and is a homeomorphism from the band of pure norm less than $\pi$ onto the units with the negative scalar ray removed.
+The group of invertibles of the quaternion algebra is the punctured space $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, open, dense, of real dimension four, with centre $\mathbb{R}^\times e_t$. It is a topological group, and the map $\tilde q\mapsto(\lvert\tilde q\rvert,\tilde q/\lvert\tilde q\rvert)$ is an isomorphism onto $\mathbb{R}_{>0}\times S^3$; consequently it is connected, simply connected, homotopy equivalent to $S^3$ and not compact. The unit quaternions $Sp(1)=S^3$ form the compact maximal subgroup, of dimension three, with centre $\{\pm e_t\}$ and quotient the rotation group. The exponential is surjective onto the invertibles, is a unit quaternion on the pure part, and is a homeomorphism from the band of pure norm less than $\pi$ onto the invertibles with the negative scalar ray removed.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$ | the group of units |
+| $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$ | the group of invertibles |
 | $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition |
 | $Sp(1)=S^3=\{N=1\}$ | the compact maximal subgroup |
 | $\{\pm e_t\}$, $Sp(1)/\{\pm e_t\}$ | the centre and the rotation quotient |
@@ -83,5 +83,5 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 
 - [Introduction to Topology on the Quaternions](introduction-to-topology-on-the-quaternions.html), for the space and the three objects
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the inverse formula
-- [Quaternion Orders and Finite Groups of Units](quaternion-orders-and-finite-groups-of-units.html), for the discrete subgroups of $S^3$
+- [Quaternion Orders and Finite Groups of Invertibles](quaternion-orders-and-finite-groups-of-invertibles.html), for the discrete subgroups of $S^3$
 - [Quaternion Exponential and Lie Group Structure](quaternion-exponential-and-lie-group-structure.html), for the logarithm and the Lie structure

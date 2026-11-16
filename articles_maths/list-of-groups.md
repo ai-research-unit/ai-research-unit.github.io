@@ -50,8 +50,8 @@ The **general linear group** $GL_n(F)$ is the group of invertible $n \times n$ m
 | $PGL_n(F)$ | the quotient of $GL_n(F)$ by its scalar matrices | *The General Linear Group* |
 | $PSL_n(F)$ | the quotient of $SL_n(F)$ by its scalar matrices, simple for the large cases | *Finite Simple Groups of Lie Type* |
 | $\operatorname{Aff}(V) = V \rtimes GL(V)$ | the affine group, the translations extended by the linear group | *Affine Spaces and Translations* |
-| $R^\times$ | the group of units of a ring | *Groups*, §1 |
-| $M_n(k)^\times$ | the units of a matrix algebra, equal to $GL_n(k)$ | *Matrix Algebras* |
+| $R^\times$ | the group of invertibles of a ring | *Groups*, §1 |
+| $M_n(k)^\times$ | the invertibles of a matrix algebra, equal to $GL_n(k)$ | *Matrix Algebras* |
 | Warning: $O(V,\mathfrak{Q})$, $\mathrm{U}(V,h)$, $Sp(V,\omega)$, $\operatorname{Spin}$, $\operatorname{Pin}$ | not group-layer objects: each is defined by a form and a distance, so it belongs to Part II | *The General Linear Group*; *Finite Groups and Symmetry* |
 
 ## Free, Presented and Infinite Groups
@@ -107,7 +107,7 @@ Several groups are attached to objects rather than presented: the ideal class gr
 | Brauer group $\operatorname{Br}(F)$ | the abelian group of central simple algebras over $F$ up to Morita equivalence | *Central Simple Algebras and the Brauer Group* |
 | $E(K)$ | the group law on an elliptic curve; abelian, finitely generated over a number field by Mordell–Weil | *Elliptic Curves* |
 | $K_0(R)$, $K_1(R)$ | the Grothendieck group of projective modules and the determinant group | *K-Theory of Rings* |
-| $\mathcal{O}_K^\times$ | the unit group of a ring of integers, finitely generated abelian by Dirichlet's theorem | *Algebraic Number Theory* |
+| $\mathcal{O}_K^\times$ | the group of invertibles of a ring of integers, finitely generated abelian by Dirichlet's theorem | *Algebraic Number Theory* |
 | Galois group $\operatorname{gal}(L/K)$ | the automorphisms of $L$ fixing $K$; of order $[L:K]$ when the extension is finite and Galois | *Galois Theory* |
 | Absolute Galois group $G_K$ | the Galois group of a separable closure, profinite | *Profinite Groups and the Krull Topology* |
 | Profinite group | an inverse limit of finite groups, compact and totally disconnected | *Profinite Groups and the Krull Topology* |
@@ -116,7 +116,7 @@ Several groups are attached to objects rather than presented: the ideal class gr
 
 ## Summary
 
-The list gathers the groups of the corpus. The cyclic, abelian and dihedral groups include $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$, the finite and infinite abelian groups, $\mathbb{Z}_p$, $D_n$ and $Q_8$, with the groups of order $p^2$ and $pq$. The symmetric and alternating groups are $S_n$ and $A_n$, the latter simple for $n \geq 5$. The matrix and classical groups are $GL_n$, $SL_n$, $PGL_n$, $PSL_n$, $\operatorname{Aff}(V)$ and the unit groups, and the classical groups that preserve a form are deferred to Part II. The free, presented and infinite groups are the free groups, the presented groups, the free, amalgamated and HNN constructions, the modular group, the Baumslag–Solitar group, the braid groups, the Coxeter groups and the Thompson groups. The solvable and nilpotent groups lead to the finite simple groups — cyclic of prime order, alternating, of Lie type and sporadic, up to the Monster. The arithmetic, geometric and $K$-theoretic groups are the ideal class group, the Brauer group, the group law of an elliptic curve, the $K$-groups, the unit group of a ring of integers, the Galois groups and the profinite groups. Each non-example — $(\mathbb{Z}\setminus\{0\},\cdot)$, $S_n$ for $n\geq3$, $A_4$, the free abelian group of rank at least two, $S_5$, $BS(2,3)$ and the Galois group of a non-Galois extension — names the property that fails.
+The list gathers the groups of the corpus. The cyclic, abelian and dihedral groups include $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$, the finite and infinite abelian groups, $\mathbb{Z}_p$, $D_n$ and $Q_8$, with the groups of order $p^2$ and $pq$. The symmetric and alternating groups are $S_n$ and $A_n$, the latter simple for $n \geq 5$. The matrix and classical groups are $GL_n$, $SL_n$, $PGL_n$, $PSL_n$, $\operatorname{Aff}(V)$ and the groups of invertibles, and the classical groups that preserve a form are deferred to Part II. The free, presented and infinite groups are the free groups, the presented groups, the free, amalgamated and HNN constructions, the modular group, the Baumslag–Solitar group, the braid groups, the Coxeter groups and the Thompson groups. The solvable and nilpotent groups lead to the finite simple groups — cyclic of prime order, alternating, of Lie type and sporadic, up to the Monster. The arithmetic, geometric and $K$-theoretic groups are the ideal class group, the Brauer group, the group law of an elliptic curve, the $K$-groups, the group of invertibles of a ring of integers, the Galois groups and the profinite groups. Each non-example — $(\mathbb{Z}\setminus\{0\},\cdot)$, $S_n$ for $n\geq3$, $A_4$, the free abelian group of rank at least two, $S_5$, $BS(2,3)$ and the Galois group of a non-Galois extension — names the property that fails.
 
 ## Summary of Notation
 
@@ -131,7 +131,7 @@ The article denotes its objects by name; the symbols appearing in the tables are
 | $B_n$, $P_n$ | braid and pure braid groups |
 | $GL_n$, $SL_n$, $PGL_n$, $PSL_n$ | general and special linear groups, projective versions |
 | $\operatorname{Aff}(V)$ | affine group $V \rtimes GL(V)$ |
-| $R^\times$ | group of units |
+| $R^\times$ | group of invertibles |
 | $\operatorname{Cl}(K)$, $\operatorname{Br}(F)$, $E(K)$, $K_0$, $K_1$ | class group, Brauer group, elliptic-curve group, K-groups |
 | $\operatorname{gal}(L/K)$, $G_K$ | Galois group and absolute Galois group |
 | $Z(G)$, $[G,G]$, $G_{\mathrm{ab}}$ | centre, derived subgroup, abelianisation |

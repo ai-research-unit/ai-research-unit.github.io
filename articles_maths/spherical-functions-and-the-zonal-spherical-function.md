@@ -51,7 +51,7 @@ is a bijection between the bounded spherical functions and the characters of the
 
 ## The Zonal Spherical Function
 
-**Definition.** Let $\pi\in\operatorname{Irr}(G,K)$ and let $\zeta\in\mathcal{H}_\pi^K$ be a unit $K$-fixed vector. The **zonal spherical function** of $\pi$ is
+**Definition.** Let $\pi\in\operatorname{Irr}(G,K)$ and let $\zeta\in\mathcal{H}_\pi^K$ be an invertible element $K$-fixed vector. The **zonal spherical function** of $\pi$ is
 
 $$
 \omega_\pi(x) = \langle\pi(x)\zeta,\zeta\rangle .

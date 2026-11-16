@@ -23,9 +23,9 @@ The element $\mathrm{res}(x)$ is the **residue** of $x$; the operator $\mathrm{r
 
 **Proof.** The quotient map of a ring onto a quotient by an ideal is a surjective ring homomorphism with that ideal as kernel; the uniqueness is the universal property of the quotient.
 
-**Proposition (the valuation ring and the residue field as domain and image).** The valuation ring is the domain of the residue map, $\mathrm{res}$ is defined exactly on $\mathcal{O}$, and the residue field is its image, $k = \mathrm{res}(\mathcal{O})$. An element $x$ is a unit of $\mathcal{O}$ exactly when $\mathrm{res}(x) \neq 0$; the non-units are exactly the elements of $\mathrm{M}$.
+**Proposition (the valuation ring and the residue field as domain and image).** The valuation ring is the domain of the residue map, $\mathrm{res}$ is defined exactly on $\mathcal{O}$, and the residue field is its image, $k = \mathrm{res}(\mathcal{O})$. An element $x$ is invertible in $\mathcal{O}$ exactly when $\mathrm{res}(x) \neq 0$; the non-invertibles are exactly the elements of $\mathrm{M}$.
 
-**Proof.** By definition $\mathrm{res}$ has domain $\mathcal{O}$ and image $\mathcal{O}/\mathrm{M} = k$. An element of a local ring is a unit exactly when its image in the residue field is nonzero; here the local ring is $\mathcal{O}$ with maximal ideal $\mathrm{M}$.
+**Proof.** By definition $\mathrm{res}$ has domain $\mathcal{O}$ and image $\mathcal{O}/\mathrm{M} = k$. An element of a local ring is invertible exactly when its image in the residue field is nonzero; here the local ring is $\mathcal{O}$ with maximal ideal $\mathrm{M}$.
 
 **Proposition (the residue map is continuous).** Give $\mathcal{O}$ the subspace topology of the metric topology of $F$ and $k$ the discrete topology. Then $\mathrm{res}$ is continuous, open and closed, its fibres are the cosets of $\mathrm{M}$, which are open and closed, and it is a quotient map.
 
@@ -41,9 +41,9 @@ The element $\mathrm{res}(x)$ is the **residue** of $x$; the operator $\mathrm{r
 
 **Proof.** The image of an ideal under a surjective homomorphism is an ideal; the computation of $\mathrm{res}(I)$ is the definition, and the vanishing is the statement that every element of $I$ reduces to zero.
 
-**Proposition (the residue is a morphism of the valued structure).** The residue map is compatible with the valuation in the sense that $\mathrm{res}(x) = 0$ exactly when $v(x) > 0$, and $\mathrm{res}(x)$ is a unit of $k$ exactly when $v(x) = 0$. Two elements of the same value have, in general, no relation between their residues: the residue forgets the value and keeps only the leading term, and elements $x, y \in \mathcal{O}$ satisfy $\mathrm{res}(x) = \mathrm{res}(y)$ exactly when $x - y \in \mathrm{M}$, that is when $v(x - y) > 0$. As a map of topological rings it is a continuous surjective homomorphism from the valuation ring onto the discrete residue field.
+**Proposition (the residue is a morphism of the valued structure).** The residue map is compatible with the valuation in the sense that $\mathrm{res}(x) = 0$ exactly when $v(x) > 0$, and $\mathrm{res}(x)$ is invertible in $k$ exactly when $v(x) = 0$. Two elements of the same value have, in general, no relation between their residues: the residue forgets the value and keeps only the leading term, and elements $x, y \in \mathcal{O}$ satisfy $\mathrm{res}(x) = \mathrm{res}(y)$ exactly when $x - y \in \mathrm{M}$, that is when $v(x - y) > 0$. As a map of topological rings it is a continuous surjective homomorphism from the valuation ring onto the discrete residue field.
 
-**Proof.** $\mathrm{res}(x) = 0$ means $x \in \mathrm{M}$, which is $v(x) > 0$; $\mathrm{res}(x)$ is a unit of the field $k$ exactly when it is nonzero, which is $v(x) = 0$. For the relation between the residues, $\mathrm{res}(x) = \mathrm{res}(y)$ is $x - y \in \mathrm{M}$ by the definition of the quotient, which is $v(x - y) > 0$. The homomorphism statement is additivity and multiplicativity together with the continuity of the previous proposition.
+**Proof.** $\mathrm{res}(x) = 0$ means $x \in \mathrm{M}$, which is $v(x) > 0$; $\mathrm{res}(x)$ is invertible in the field $k$ exactly when it is nonzero, which is $v(x) = 0$. For the relation between the residues, $\mathrm{res}(x) = \mathrm{res}(y)$ is $x - y \in \mathrm{M}$ by the definition of the quotient, which is $v(x - y) > 0$. The homomorphism statement is additivity and multiplicativity together with the continuity of the previous proposition.
 
 ## The Residue Operator and the Completion
 
@@ -63,15 +63,15 @@ is an isomorphism; hence the residue map of the completion has the same residue 
 
 ## The Multiplicative Residue
 
-**Proposition (the residue is multiplicative on the units).** The restriction $\mathrm{res} : \mathcal{O}^\times \to k^\times$ is a surjective group homomorphism with kernel the **principal units** $U^1 = 1 + \mathrm{M}$, so that
+**Proposition (the residue is multiplicative on the invertibles).** The restriction $\mathrm{res} : \mathcal{O}^\times \to k^\times$ is a surjective group homomorphism with kernel the **principal units** $U^1 = 1 + \mathrm{M}$, so that
 
 $$
 \boxed{\;\mathcal{O}^\times / (1 + \mathrm{M}) \cong k^\times\;} .
 $$
 
-**Proof.** A unit of $\mathcal{O}$ has nonzero residue and a nonzero residue has a unit preimage, because reduction is surjective and the units of a local ring are the elements of nonzero residue; the kernel is the set of units congruent to $1$ modulo $\mathrm{M}$, namely $1 + \mathrm{M}$. The first isomorphism theorem for groups gives the isomorphism.
+**Proof.** A unit of $\mathcal{O}$ has nonzero residue and a nonzero residue has a unit preimage, because reduction is surjective and the invertibles of a local ring are the elements of nonzero residue; the kernel is the set of invertibles congruent to $1$ modulo $\mathrm{M}$, namely $1 + \mathrm{M}$. The first isomorphism theorem for groups gives the isomorphism.
 
-**Corollary (the two parts of the residue operator).** The residue map splits the study of $\mathcal{O}$ into an additive part, in which it is the quotient by the maximal ideal, and a multiplicative part, in which it exhibits $k^\times$ as the quotient of the units by the principal units. The filtration $U^n = 1 + \mathrm{M}^n$ of the principal units and its quotients $U^n/U^{n+1} \cong k^+$ are the structure of the multiplicative group of a local field and belong to *Local Fields*.
+**Corollary (the two parts of the residue operator).** The residue map splits the study of $\mathcal{O}$ into an additive part, in which it is the quotient by the maximal ideal, and a multiplicative part, in which it exhibits $k^\times$ as the quotient of the invertibles by the principal units. The filtration $U^n = 1 + \mathrm{M}^n$ of the principal units and its quotients $U^n/U^{n+1} \cong k^+$ are the structure of the multiplicative group of a local field and belong to *Local Fields*.
 
 **Proof.** The additive part is the definition; the multiplicative part is the proposition. The filtration statement is the standard computation of *Local Fields*, named and not used.
 
@@ -85,9 +85,9 @@ $$
 
 ## Summary
 
-The residue operator of a valued field is the quotient map $\mathrm{res} : \mathcal{O} \to k = \mathcal{O}/\mathrm{M}$ sending an element of the valuation ring to its class modulo the maximal ideal. It is a surjective ring homomorphism with kernel $\mathrm{M}$, its domain is the valuation ring and its image is the residue field, and with the discrete topology on $k$ it is continuous, open and closed with the cosets of $\mathrm{M}$ as fibres; it is the unique homomorphism from $\mathcal{O}$ onto $k$ with kernel $\mathrm{M}$. An element of $\mathcal{O}$ is a unit exactly when its residue is nonzero, and the residue carries an ideal $I$ to the ideal $(I+\mathrm{M})/\mathrm{M}$, vanishing exactly on the ideals contained in $\mathrm{M}$.
+The residue operator of a valued field is the quotient map $\mathrm{res} : \mathcal{O} \to k = \mathcal{O}/\mathrm{M}$ sending an element of the valuation ring to its class modulo the maximal ideal. It is a surjective ring homomorphism with kernel $\mathrm{M}$, its domain is the valuation ring and its image is the residue field, and with the discrete topology on $k$ it is continuous, open and closed with the cosets of $\mathrm{M}$ as fibres; it is the unique homomorphism from $\mathcal{O}$ onto $k$ with kernel $\mathrm{M}$. An element of $\mathcal{O}$ is invertible exactly when its residue is nonzero, and the residue carries an ideal $I$ to the ideal $(I+\mathrm{M})/\mathrm{M}$, vanishing exactly on the ideals contained in $\mathrm{M}$.
 
-The residue operator commutes with completion: the completion of a non-Archimedean valued field has the same residue field, $\mathcal{O}/\mathrm{M} \cong \widehat{\mathcal{O}}/\widehat{\mathrm{M}}$, and the residue of the completion restricts along $\iota$ to the residue of the field, so no new residue appears and a lift of a residue element may be taken in the field when the field is Henselian. On the units the residue is a surjective homomorphism $\mathcal{O}^\times \to k^\times$ with kernel the principal units $1 + \mathrm{M}$, giving $\mathcal{O}^\times/(1+\mathrm{M}) \cong k^\times$; the additive part is the quotient by $\mathrm{M}$ and the multiplicative part is the quotient by the principal units, and the higher filtration is the structure theory of a local field.
+The residue operator commutes with completion: the completion of a non-Archimedean valued field has the same residue field, $\mathcal{O}/\mathrm{M} \cong \widehat{\mathcal{O}}/\widehat{\mathrm{M}}$, and the residue of the completion restricts along $\iota$ to the residue of the field, so no new residue appears and a lift of a residue element may be taken in the field when the field is Henselian. On the invertibles the residue is a surjective homomorphism $\mathcal{O}^\times \to k^\times$ with kernel the principal units $1 + \mathrm{M}$, giving $\mathcal{O}^\times/(1+\mathrm{M}) \cong k^\times$; the additive part is the quotient by $\mathrm{M}$ and the multiplicative part is the quotient by the principal units, and the higher filtration is the structure theory of a local field.
 
 ## Summary of Notation
 
@@ -98,7 +98,7 @@ The residue operator commutes with completion: the completion of a non-Archimede
 | $\mathrm{res} : \mathcal{O} \to k$ | The residue operator, $x \mapsto x + \mathrm{M}$ |
 | $\bar x$ | The residue $\mathrm{res}(x)$ of $x$ |
 | $\Gamma = \lvert F^\times \rvert$ | The value group |
-| $\mathcal{O}^\times$, $U^1 = 1+\mathrm{M}$ | The units of $\mathcal{O}$ and the principal units |
+| $\mathcal{O}^\times$, $U^1 = 1+\mathrm{M}$ | The invertibles of $\mathcal{O}$ and the principal units |
 | $\mathcal{O}^\times/U^1 \cong k^\times$ | The multiplicative residue |
 | $\widehat{F}$, $\widehat{\mathcal{O}}$, $\widehat{\mathrm{M}}$ | The completion and its valuation ring and maximal ideal |
 | $\mathrm{res}_{\widehat{F}}\circ\iota = \mathrm{res}_F$ | Residue commutes with completion |

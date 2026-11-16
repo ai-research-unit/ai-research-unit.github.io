@@ -12,7 +12,7 @@ $$
 
 That identification is the result of the article. It also proves that the apex is a genuine singular point: if $0$ were a manifold point of $\mathcal{N}$, its link would be a $5$-sphere, and $\pi_2(S^{2}\times S^{3})\cong\mathbb{Z}\neq0$.
 
-Nothing below is read from the four forms as forms. The cone is selected by the failure of invertibility alone, and the only metric input is the Euclidean norm of the underlying real space (*Topology in the Space of Biquaternions*). The algebraic norm and its multiplicativity are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero-divisor criterion and the two strata are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the ambient Euclidean structure, the sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; and the complement, with its group structure, is *The Biquaternion Unit Group as a Topological Group*.
+Nothing below is read from the four forms as forms. The cone is selected by the failure of invertibility alone, and the only metric input is the Euclidean norm of the underlying real space (*Topology in the Space of Biquaternions*). The algebraic norm and its multiplicativity are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero-divisor criterion and the two strata are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the ambient Euclidean structure, the sphere and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*; and the complement, with its group structure, is *The Biquaternion Group of Invertibles as a Topological Group*.
 
 ## The Null Cone and Its Link
 
@@ -25,7 +25,7 @@ $$
 
 The set $\mathcal Z$ is the **zero-divisor set**; adding the apex gives the **null cone** $\mathcal{N}$.
 
-**Proposition (quoted).** $\mathcal{N}$ is closed, of empty interior and of real dimension $6$; it is a complex cone; and $\mathbb{B}^{\times}=\mathbb{B}\setminus\mathcal{N}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Units*, §*The Zero Divisors*).
+**Proposition (quoted).** $\mathcal{N}$ is closed, of empty interior and of real dimension $6$; it is a complex cone; and $\mathbb{B}^{\times}=\mathbb{B}\setminus\mathcal{N}$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Group of Invertibles*, §*The Zero Divisors*).
 
 **Definition (link).** The **link** of the cone is
 
@@ -41,7 +41,7 @@ $$
 
 *Proof.* $N$ is a nondegenerate quadratic form in four variables, hence irreducible over $\mathbb{C}$, and its gradient $2(Q_t,Q_x,Q_y,Q_z)$ vanishes only at $0$. The singular locus of $\{N=0\}$ is therefore $\{0\}$, and the punctured cone is smooth of complex dimension $3$.
 
-**Remark (the word singular).** The word *singular* is used in two senses. Geometrically, a singular point of $\mathcal{N}$ is a point where the hypersurface fails to be a manifold, and the apex is the only one. Algebraically, the cone is the set of non-units, and it is sometimes called the *singular cone* for that reason. The apex is both; every other point of the cone is a non-unit but a smooth point.
+**Remark (the word singular).** The word *singular* is used in two senses. Geometrically, a singular point of $\mathcal{N}$ is a point where the hypersurface fails to be a manifold, and the apex is the only one. Algebraically, the cone is the set of non-invertibles, and it is sometimes called the *singular cone* for that reason. The apex is both; every other point of the cone is a non-invertible but a smooth point.
 
 ## The Link Is $S^{2}\times S^{3}$
 
@@ -142,7 +142,7 @@ the sphere of **real roots of $-1$**; it is compact, connected and simply connec
 
 ## Summary
 
-- The **null cone** $\mathcal{N}=\{N=0\}$ is closed, of empty interior, of real dimension $6$, and its complement is the group of units $\mathbb{B}^{\times}$; the **zero-divisor set** is $\mathcal Z=\mathcal{N}\setminus\{0\}$.
+- The **null cone** $\mathcal{N}=\{N=0\}$ is closed, of empty interior, of real dimension $6$, and its complement is the group of invertibles $\mathbb{B}^{\times}$; the **zero-divisor set** is $\mathcal Z=\mathcal{N}\setminus\{0\}$.
 - The apex is the only singular point of $\mathcal{N}$; the punctured cone $\mathcal Z$ is a smooth complex $3$-manifold.
 - $\mathcal{N}$ is the cone on its **link** $L=\mathcal{N}\cap S^{7}_{E}$, hence contractible; the interesting topology is that of $L$.
 - The link is $L\cong S^{2}\times S^{3}\cong V_{2}(\mathbb{R}^{4})$, a closed connected $5$-manifold with $\pi_1=0$, $\pi_2\cong\mathbb{Z}$ and $\pi_3\cong\mathbb{Z}\oplus\mathbb{Z}$; it is not $S^{5}$, so the apex is genuinely singular.
@@ -166,7 +166,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 | $P=\{Q_t=0\}\cong\mathbb{C}^{3}$ | Pure subspace |
 | $P_+$, $P_-$ | The definite $3$-planes in $P$; unit spheres $S^{2}$ each |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Lorentzian slices, signatures $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
-| $\mathbb{B}^{\times}$ | Group of units; complement of $\mathcal{N}$ |
+| $\mathbb{B}^{\times}$ | Group of invertibles; complement of $\mathcal{N}$ |
 
 ## Further Reading
 
@@ -174,7 +174,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure and the contractibility of the algebra
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the algebraic norm and its multiplicativity
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the strata
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the complement of the cone and its group structure
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the complement of the cone and its group structure
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the signatures of the Lorentzian slices
 - [Quaternion Geometry](quaternion-geometry.html), for the Hopf fibration and the homogeneous sphere $S^{2}$
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for $V_{2}(\mathbb{R}^{4})$ and the unit tangent bundle of $S^{3}$

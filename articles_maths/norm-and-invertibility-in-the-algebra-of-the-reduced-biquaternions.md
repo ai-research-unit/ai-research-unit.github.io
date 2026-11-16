@@ -10,11 +10,11 @@ complex-valued and indefinite, and it is **not multiplicative**. The invertibili
 $$
 \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown}),
 $$
-which is the determinant of the multiplication, the reduced norm of the algebra and the algebraic norm of the general tessarine bilinear product; an element is invertible exactly when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, with the group of units the complement of the two punctured idempotent lines.
+which is the determinant of the multiplication, the reduced norm of the algebra and the algebraic norm of the general tessarine bilinear product; an element is invertible exactly when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, with the group of invertibles the complement of the two punctured idempotent lines.
 
 The distinction is the subject of the article. The word *norm* is used in the corpus for the diagonal of a scalar-part form (*Norm and Unitary Conventions*, §*The Norm Convention*), and the multiplication carries exactly one such diagonal, the plain bilinear algebraic norm $\langle\cdot\rangle$; but $\langle\cdot\rangle$ is **not** the invertibility criterion of the multiplication, and the criterion is carried by another form. The article records the algebraic norm of the multiplication and, separately, the criterion, and it states the **absence** of a criterion from the algebraic norm rather than a criterion that does not exist — the pattern of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* of the biquaternion category.
 
-**The results.** The multiplication carries one algebraic norm, the diagonal of its scalar-part form, $\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$, complex-valued, indefinite of real signature $(2,2)$, of Gram matrix $\operatorname{diag}(1,-1,1,-1)$ on the real basis and $\operatorname{diag}(1,1)$ on the complex basis, with the complex quadric as its vanishing set. It is **not multiplicative**: $\langle \breve Q_{1}\breve Q_{2}\rangle\neq \langle \breve Q_{1}\rangle\langle \breve Q_{2}\rangle$ in general, the pair $\breve Q_{1}=\Pi_+$, $\breve Q_{2}=\Pi_-$ separating the two sides, $\langle \Pi_+\Pi_-\rangle=\langle 0\rangle=0$ against $\langle \Pi_+\rangle\langle \Pi_-\rangle=\tfrac14$. It does **not** decide invertibility: $\langle \breve Q\rangle=0$ does not force $\breve Q$ non-invertible and $\langle \breve Q\rangle\neq0$ does not force $\breve Q$ invertible. The criterion is the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which **is** multiplicative, $\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\langle \breve Q_{2}\rangle_{\mathrm{ts}}$, vanishes exactly on the zero divisors, and gives the group of units as the complement of the two punctured idempotent lines. Each section states its result first and then proves it.
+**The results.** The multiplication carries one algebraic norm, the diagonal of its scalar-part form, $\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$, complex-valued, indefinite of real signature $(2,2)$, of Gram matrix $\operatorname{diag}(1,-1,1,-1)$ on the real basis and $\operatorname{diag}(1,1)$ on the complex basis, with the complex quadric as its vanishing set. It is **not multiplicative**: $\langle \breve Q_{1}\breve Q_{2}\rangle\neq \langle \breve Q_{1}\rangle\langle \breve Q_{2}\rangle$ in general, the pair $\breve Q_{1}=\Pi_+$, $\breve Q_{2}=\Pi_-$ separating the two sides, $\langle \Pi_+\Pi_-\rangle=\langle 0\rangle=0$ against $\langle \Pi_+\rangle\langle \Pi_-\rangle=\tfrac14$. It does **not** decide invertibility: $\langle \breve Q\rangle=0$ does not force $\breve Q$ non-invertible and $\langle \breve Q\rangle\neq0$ does not force $\breve Q$ invertible. The criterion is the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, which **is** multiplicative, $\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\langle \breve Q_{2}\rangle_{\mathrm{ts}}$, vanishes exactly on the zero divisors, and gives the group of invertibles as the complement of the two punctured idempotent lines. Each section states its result first and then proves it.
 
 ## The Algebraic Norm of the Multiplication
 
@@ -59,15 +59,15 @@ $$
 
 ## The Algebra Is Associative and Unital
 
-**The multiplication is associative and unital, with the two-sided unit $1$ and a genuine group of units, a proper subset of the nonzero elements because the product has zero divisors.**
+**The multiplication is associative and unital, with the two-sided unit $1$ and a genuine group of invertibles, a proper subset of the nonzero elements because the product has zero divisors.**
 
-The unit of the multiplication is $1$, two-sided and unique, and the product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of units** of the multiplication, a genuine group (*Introduction to the Algebra of the Reduced Biquaternions*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*).
+The unit of the multiplication is $1$, two-sided and unique, and the product is associative, so the inverse of an element is unique when it exists and the invertible elements form the **group of invertibles** of the multiplication, a genuine group (*Introduction to the Algebra of the Reduced Biquaternions*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*).
 
-The multiplication has zero divisors: $\Pi_+\Pi_-=0$ with $\Pi_+,\Pi_-$ nonzero. The algebra is therefore not a division algebra, and the group of units is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$. The zero divisors, their two lines and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, and they are cited here, not read.
+The multiplication has zero divisors: $\Pi_+\Pi_-=0$ with $\Pi_+,\Pi_-$ nonzero. The algebra is therefore not a division algebra, and the group of invertibles is a proper subset of $\mathbb{B}_{\mathrm{red}}\setminus\{0\}$. The zero divisors, their two lines and their geometry are *Zero Divisors of the Algebra of the Reduced Biquaternions*, and they are cited here, not read.
 
 ## The Reduced Norm and the Invertibility Criterion
 
-**The invertibility of the multiplication is decided by the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, the determinant of the multiplication and the algebraic norm of the general tessarine bilinear product; an element is a unit exactly when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$.**
+**The invertibility of the multiplication is decided by the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$, the determinant of the multiplication and the algebraic norm of the general tessarine bilinear product; an element is invertible exactly when $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$.**
 
 **Theorem (the criterion).** For $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$,
 $$
@@ -89,19 +89,19 @@ and it is the determinant of the multiplication in the idempotent coordinates.
 
 **Remark (two forms, two roles).** The reduced norm $\langle\cdot\rangle_{\mathrm{ts}}$ is the algebraic norm of the **general tessarine bilinear product** and the criterion of the **multiplication**; the two roles coincide because the determinant of the multiplication is the product of the two idempotent coordinates, which is the diagonal of the tessarine bilinear form. The multiplication's own algebraic norm $\langle\cdot\rangle$ and the criterion $\langle\cdot\rangle_{\mathrm{ts}}$ are different quadratic forms on the same space, and the next section states the failure of $\langle\cdot,\cdot\rangle$ on both counts.
 
-## The Group of Units
+## The Group of Invertibles
 
-**The group of units of the multiplication is the complement of the two punctured idempotent lines, $\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{Q_{+}\neq0\text{ and }Q_{-}\neq0\}$, and it is the set on which the reduced norm is nonzero.**
+**The group of invertibles of the multiplication is the complement of the two punctured idempotent lines, $\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}=\{Q_{+}\neq0\text{ and }Q_{-}\neq0\}$, and it is the set on which the reduced norm is nonzero.**
 
-**Theorem (the group of units).** The group of units is
+**Theorem (the group of invertibles).** The group of invertibles is
 $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}=\bigl\{\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}:Q_{\blacktriangle}+Q_{\blacktriangledown}\neq0\ \text{and}\ Q_{\blacktriangle}-Q_{\blacktriangledown}\neq0\bigr\}=\bigl\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\bigr\},
 $$
 and it is isomorphic to $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ by the component map $\varphi$.
 
-*Proof.* The criterion is the theorem above; the component map sends $\breve Q$ to $(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the product to the componentwise product, so it restricts to an isomorphism of the unit group onto the pairs of nonzero complex numbers. The group is **abelian**, and its identity is $1$.
+*Proof.* The criterion is the theorem above; the component map sends $\breve Q$ to $(Q_{\blacktriangle}+Q_{\blacktriangledown},Q_{\blacktriangle}-Q_{\blacktriangledown})$ and the product to the componentwise product, so it restricts to an isomorphism of the group of invertibles onto the pairs of nonzero complex numbers. The group is **abelian**, and its identity is $1$.
 
-The unit group is a proper subset of the nonzero elements, and its complement — the zero divisors and $0$ — is the union of the two idempotent lines. Its structure as a real Lie group, its components and its exponential are *The Group of Units of the Algebra of the Reduced Biquaternions*, below this article in this category; the forms that measure its elements are *The Forms of the Algebra of the Reduced Biquaternions*.
+The group of invertibles is a proper subset of the nonzero elements, and its complement — the zero divisors and $0$ — is the union of the two idempotent lines. Its structure as a real Lie group, its components and its exponential are *The Group of Invertibles of the Algebra of the Reduced Biquaternions*, below this article in this category; the forms that measure its elements are *The Forms of the Algebra of the Reduced Biquaternions*.
 
 ## The Absence of a Criterion from the Algebraic Norm
 
@@ -115,11 +115,11 @@ $$
 \langle \breve Q\rangle\neq0\ \not\Longrightarrow\ \breve Q\ \text{invertible}.
 $$
 
-*Proof.* For the first implication, the element $\breve Q=1+ij$, of coordinates $Q_{\blacktriangle}=1$ and $Q_{\blacktriangledown}=i$, has $\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}=1+i^{2}=0$, and it is a unit: $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=1-i^{2}=2\neq0$, with inverse $\breve Q^{-1}=\tfrac12(1-ij)$, since $(1+ij)(1-ij)=1-(ij)^{2}=2$. So a unit has vanishing algebraic norm. For the second implication, the element $\breve Q=1+j$ has $\langle \breve Q\rangle=1^{2}+1^{2}=2\neq0$, and it is a zero divisor, $(1+j)(1-j)=1-j^{2}=0$, hence non-invertible while its algebraic norm does not vanish.
+*Proof.* For the first implication, the element $\breve Q=1+ij$, of coordinates $Q_{\blacktriangle}=1$ and $Q_{\blacktriangledown}=i$, has $\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}=1+i^{2}=0$, and it is invertible: $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=1-i^{2}=2\neq0$, with inverse $\breve Q^{-1}=\tfrac12(1-ij)$, since $(1+ij)(1-ij)=1-(ij)^{2}=2$. So an invertible element has vanishing algebraic norm. For the second implication, the element $\breve Q=1+j$ has $\langle \breve Q\rangle=1^{2}+1^{2}=2\neq0$, and it is a zero divisor, $(1+j)(1-j)=1-j^{2}=0$, hence non-invertible while its algebraic norm does not vanish.
 
 **Remark (the two witnesses).** The two witnesses are the two halves of the failure. The element $\breve Q=1+ij$ is invertible with vanishing algebraic norm, so the algebraic norm is not necessary for invertibility; the element $\breve Q=1+j$ is non-invertible with non-vanishing algebraic norm, so it is not sufficient either. The vanishing set of $\langle\cdot\rangle$ is the complex quadric and the zero-divisor set is the union of the two idempotent lines; the two curves meet only at the origin, and that is the geometric form of the absence.
 
-**Remark (what replaces the criterion).** The multiplication is not left without an invertibility theory: it is associative and unital, the criterion is the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, every element of the group of units has an inverse, and the zero divisors are characterised in *Zero Divisors of the Algebra of the Reduced Biquaternions*. What the article records is that this theory is **not** read from the algebraic norm of the multiplication, which is the one algebraic norm the multiplication carries; the criterion is carried by a different quadratic form, the reduced norm $\langle\cdot\rangle_{\mathrm{ts}}$.
+**Remark (what replaces the criterion).** The multiplication is not left without an invertibility theory: it is associative and unital, the criterion is the reduced norm $\langle \breve Q\rangle_{\mathrm{ts}}\neq0$, every element of the group of invertibles has an inverse, and the zero divisors are characterised in *Zero Divisors of the Algebra of the Reduced Biquaternions*. What the article records is that this theory is **not** read from the algebraic norm of the multiplication, which is the one algebraic norm the multiplication carries; the criterion is carried by a different quadratic form, the reduced norm $\langle\cdot\rangle_{\mathrm{ts}}$.
 
 ## Summary
 
@@ -129,11 +129,11 @@ $$
 $$
 complex-valued, of Gram matrix $\operatorname{diag}(1,1)$ on the complex basis and $\operatorname{diag}(1,-1,1,-1)$ on the real basis, real signature $(2,2)$, with the complex quadric as its vanishing set; it is **not multiplicative**, the pair $\breve Q_{1}=\Pi_+$, $\breve Q_{2}=\Pi_-$ separating the two sides, $\langle \Pi_+\Pi_-\rangle=0$ against $\langle \Pi_+\rangle\langle \Pi_-\rangle=\tfrac14$, and it **does not decide invertibility**, the unit $\breve Q=1+ij$ having $\langle \breve Q\rangle=0$ and the zero divisor $\breve Q=1+j$ having $\langle \breve Q\rangle=2$. The article records the absence.
 
-The multiplication is associative and unital, with the two-sided unit $1$ and a genuine group of units, and it has zero divisors, $\Pi_+\Pi_-=0$. Its invertibility is decided by the **reduced norm**
+The multiplication is associative and unital, with the two-sided unit $1$ and a genuine group of invertibles, and it has zero divisors, $\Pi_+\Pi_-=0$. Its invertibility is decided by the **reduced norm**
 $$
 \langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=(Q_{\blacktriangle}+Q_{\blacktriangledown})(Q_{\blacktriangle}-Q_{\blacktriangledown}),
 $$
-which is multiplicative, $\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\langle \breve Q_{2}\rangle_{\mathrm{ts}}$, which is the determinant of the multiplication and the algebraic norm of the general tessarine bilinear product, and which vanishes exactly on the zero divisors; the group of units is the complement of the two punctured idempotent lines,
+which is multiplicative, $\langle \breve Q_{1}\breve Q_{2}\rangle_{\mathrm{ts}}=\langle \breve Q_{1}\rangle_{\mathrm{ts}}\langle \breve Q_{2}\rangle_{\mathrm{ts}}$, which is the determinant of the multiplication and the algebraic norm of the general tessarine bilinear product, and which vanishes exactly on the zero divisors; the group of invertibles is the complement of the two punctured idempotent lines,
 $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}=\{\breve Q:\langle \breve Q\rangle_{\mathrm{ts}}\neq0\}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times},
 $$
@@ -146,8 +146,8 @@ with inverse $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\black
 | $\langle \breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$ | the algebraic norm of the multiplication, complex, not multiplicative |
 | $\langle \breve Q_{1},\breve Q_{2}\rangle=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | the general plain bilinear form |
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm, the invertibility criterion, multiplicative |
-| $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse of a unit |
-| ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the group of units |
+| $\breve Q^{-1}=\langle \breve Q\rangle_{\mathrm{ts}}^{-1}(Q_{\blacktriangle}-jQ_{\blacktriangledown})$ | the inverse of an invertible element |
+| ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ | the group of invertibles |
 | $\{B=0\}$ | the complex quadric, the vanishing set of the algebraic norm |
 | $\{N=0\}$ | the two idempotent lines, the zero divisors |
 | $\breve Q=1+ij$ (unit, $\langle \breve Q\rangle=0$), $\breve Q=1+j$ (zero divisor, $\langle \breve Q\rangle=2$) | the two witnesses of the failure of the algebraic norm |

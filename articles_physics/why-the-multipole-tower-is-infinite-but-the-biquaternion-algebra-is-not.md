@@ -17,7 +17,7 @@ The article is structural and classical, and it stays inside the non-relativisti
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series and the quadrupole as a symmetric traceless tensor.
 - Companion article *The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form*, for the oscillating tower of a deformed body.
 
-The algebra, the units and the sectors are those of *Algebra and Element Conventions*, and none is restated here. $D^{(l)}$ denotes the irreducible complex representation of the rotation group of dimension $2l+1$, in the convention in which the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+The algebra, the invertibles and the sectors are those of *Algebra and Element Conventions*, and none is restated here. $D^{(l)}$ denotes the irreducible complex representation of the rotation group of dimension $2l+1$, in the convention in which the monopole is $D^{(0)}$, the dipole and every spatial vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Two Facts
 

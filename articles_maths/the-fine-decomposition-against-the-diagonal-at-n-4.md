@@ -6,7 +6,7 @@
 
 The article defines the three pieces, proves the direct sum and the count $6+4+6=16$, identifies the diagonal as a Cartan subalgebra with its twelve weights, and makes precise the sense in which this decomposition is called "fine": it is the split by the position of the indices, not the split by root spaces, and the two sixes that occur in it are different subspaces.
 
-It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$* for the halves and *The Matrix Algebra $M_4(\mathbb{C})$* for the units. The root-space reading is *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$*; the case $n=2$ is *The Fine Decomposition against the Diagonal at $n=2$*; the abstract notion is *Cartan Subalgebras and the Root Decomposition*.
+It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$* for the halves and *The Matrix Algebra $M_4(\mathbb{C})$* for the invertibles. The root-space reading is *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$*; the case $n=2$ is *The Fine Decomposition against the Diagonal at $n=2$*; the abstract notion is *Cartan Subalgebras and the Root Decomposition*.
 
 ## The Three Pieces
 
@@ -24,7 +24,7 @@ $$
 M_4(\mathbb{C})=\mathfrak{n}_-\oplus\mathfrak{h}\oplus\mathfrak{n}_+ .
 $$
 
-**Proof.** Each matrix unit belongs to exactly one of the three sets, according to whether its row index exceeds, equals or is less than its column index; the $16$ units are therefore split into groups of $6$, $4$ and $6$, and the sum is direct because the three sets of units are disjoint.
+**Proof.** Each matrix unit belongs to exactly one of the three sets, according to whether its row index exceeds, equals or is less than its column index; the $16$ units are therefore split into groups of $6$, $4$ and $6$, and the sum is direct because the three sets of invertibles are disjoint.
 
 **The count.** $6+4+6=16$, and the two sixes are $\binom{4}{2}$ each, the number of unordered pairs of distinct indices.
 

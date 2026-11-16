@@ -787,7 +787,7 @@ $$
 \tilde u_{\mathrm r}=-e_t.
 $$
 
-The boost is the identity, with $\theta_{\mathrm{rpd}}=0$. The rotor is the central element $-e_t$, which is $\exp(\pi\vec u_{\mathrm r})$ for every unit axis; in the range $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle is $\theta_{\mathrm{axr}}=2\pi$ and the axis is undefined.
+The boost is the identity, with $\theta_{\mathrm{rpd}}=0$. The rotor is the central element $-e_t$, which is $\exp(\pi\vec u_{\mathrm r})$ for every invertible element axis; in the range $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle is $\theta_{\mathrm{axr}}=2\pi$ and the axis is undefined.
 
 #### The Logarithm
 

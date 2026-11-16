@@ -6,7 +6,7 @@ The Hermitian form $H(A,C)=A\bar C$ is indefinite, and everything in this articl
 
 The claim is that the indefiniteness is not a defect to be repaired but the structure itself. It is what makes the ring a partial order, what makes two idempotent lines isotropic, and what makes the unitary group of rank one non-compact; all three are one property, seen three times. The comparison with the complex field, where the form is definite, gives the contrast at each step.
 
-The form is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*; the isotropic lines are *The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space*; the level sets are *The Level Sets of the Split Norm and the Hyperbolic Structure*; the group of units is *Norm and Invertibility in the General Split-Complex Algebra*.
+The form is *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*; the isotropic lines are *The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space*; the level sets are *The Level Sets of the Split Norm and the Hyperbolic Structure*; the group of invertibles is *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ## The Cone of $H$-Positivity
 
@@ -44,11 +44,11 @@ Each component is closed, convex, closed under addition and under multiplication
 
 ### The Interior and the Boundary
 
-**Theorem.** The interior of the cone is the set of units of positive norm, and its boundary is the set of zero divisors with the origin adjoined.
+**Theorem.** The interior of the cone is the set of invertibles of positive norm, and its boundary is the set of zero divisors with the origin adjoined.
 
 **Proof.** An element is interior to $\mathcal{C}$ when $N(Q)>0$, and $N(Q)\neq0$ is the criterion of invertibility. The boundary is the set where $N(Q)=0$, which is the union of the two null lines; those lines are the union of the two families $\mathbb{R}^\times\Pi_\pm$ of zero divisors and the origin (*Zero Divisors of the Split-Complex Algebra*).
 
-So the cone is a picture of the ring's classification: the two open regions inside it are the timelike units, its boundary is the singular set, and its exterior is the set of the elements of negative norm, which are units too, on the spacelike side. The group of units is therefore the interior together with the exterior, and the cone alone is not it. The double cone is not the set of units and its complement is not the set of zero divisors; the boundary is.
+So the cone is a picture of the ring's classification: the two open regions inside it are the timelike units, its boundary is the singular set, and its exterior is the set of the elements of negative norm, which are invertible too, on the spacelike side. The group of invertibles is therefore the interior together with the exterior, and the cone alone is not it. The double cone is not the set of invertibles and its complement is not the set of zero divisors; the boundary is.
 
 ## The Vanishing on the Idempotent Lines
 
@@ -166,7 +166,7 @@ The double cone alone does not give an order: it is not convex, since the sum of
 
 **Proof.** The coordinates multiply, $A_\pm C_\pm\ge0$, and an element with both coordinates non-negative is in $\mathcal{C}_+$.
 
-The order is compatible with the multiplication on the positive cone, which is the statement that the cone is closed under multiplication. It is not compatible with the whole ring: the product of two elements of negative norm has positive norm, so the sign of the order is not multiplicative on the units.
+The order is compatible with the multiplication on the positive cone, which is the statement that the cone is closed under multiplication. It is not compatible with the whole ring: the product of two elements of negative norm has positive norm, so the sign of the order is not multiplicative on the invertibles.
 
 ## The Unitary Group
 
@@ -212,7 +212,7 @@ Over $\mathbb{C}$ no non-zero vector is isotropic, and no line is totally isotro
 
 ## Summary
 
-The Hermitian form $H(A,C)=A\bar C$ is indefinite of signature $(1,1)$, and the set where it is non-negative is the double cone $a^2\ge b^2$, with two components, the interior of units and the boundary of zero divisors. The form vanishes on both idempotent lines, which are therefore totally isotropic; the adjoint axiom holds and positivity fails, so the algebra is a $\ast$-algebra with a Hermitian form and not a Hilbert algebra.
+The Hermitian form $H(A,C)=A\bar C$ is indefinite of signature $(1,1)$, and the set where it is non-negative is the double cone $a^2\ge b^2$, with two components, the interior of invertibles and the boundary of zero divisors. The form vanishes on both idempotent lines, which are therefore totally isotropic; the adjoint axiom holds and positivity fails, so the algebra is a $\ast$-algebra with a Hermitian form and not a Hilbert algebra.
 
 Indefiniteness reverses the two inequalities. On one component of the cone, $g(A,C)\ge\sqrt{N(A)N(C)}$ and $\sqrt{N(A+C)}\ge\sqrt{N(A)}+\sqrt{N(C)}$, with equality on the rays and failure across components. The forward cone defines a partial order, the product of the two orders of the idempotent coordinates, not total because the two idempotents are incomparable, and compatible with the multiplication on the positive cone.
 

@@ -12,7 +12,7 @@ and the embedding is multiplicative. This article is the complex model of the qu
 
 **Why the complex field is unavoidable.** There is no faithful $2\times2$ real model. A faithful real representation of degree two would embed a four-dimensional algebra into a four-dimensional algebra and hence be an isomorphism, and $M_2(\mathbb{R})$ has zero divisors while $\mathbb{H}$ does not. So the quaternion category is the first in Part VI where the model needs a larger scalar field, and the price is that the model is an embedding and not an isomorphism: the image has real dimension four inside the eight real dimensions of $M_2(\mathbb{C})$.
 
-**What the embedding costs and what it buys.** It costs surjectivity, and with it the free ride of the split-quaternion category, where every matrix statement was a statement about the algebra. Here the image is a proper subspace, so each statement below has to be checked to stay inside it: multiplicativity, the adjugate, the inverse and the two-sided structure all do, and the spectral projectors do not — they are images of the complexified algebra and are named as such in §*The Spectral Projectors*. It buys three things the split case does not have. The determinant is positive definite, so there is no null cone and every nonzero element is a unit. The projectors are Hermitian, so the spectral theorem applies to the complexification and the eigenlines are orthogonal. And the eigenvalues are always a conjugate pair, so every element is diagonalisable over $\mathbb{C}$ and never defective.
+**What the embedding costs and what it buys.** It costs surjectivity, and with it the free ride of the split-quaternion category, where every matrix statement was a statement about the algebra. Here the image is a proper subspace, so each statement below has to be checked to stay inside it: multiplicativity, the adjugate, the inverse and the two-sided structure all do, and the spectral projectors do not — they are images of the complexified algebra and are named as such in §*The Spectral Projectors*. It buys three things the split case does not have. The determinant is positive definite, so there is no null cone and every nonzero element is invertible. The projectors are Hermitian, so the spectral theorem applies to the complexification and the eigenlines are orthogonal. And the eigenvalues are always a conjugate pair, so every element is diagonalisable over $\mathbb{C}$ and never defective.
 
 **One contrast to keep in view.** In the split-quaternion algebra an idempotent exists over $\mathbb{R}$, because a pure vector can have square $+e_t$. In the quaternion algebra no pure vector has square $+e_t$, so the algebra has no nontrivial idempotent at all; the idempotents appear only in the complexified algebra, and they are the images of $\tfrac12(e_t\pm iu)$ with $u$ a pure unit quaternion, whose square is $+e_t$ because the extra scalar $i$ is available. This single difference governs the spectral section.
 
@@ -174,7 +174,7 @@ $$
 
 **The matrix units.** The algebra is a division algebra, so it has no nontrivial idempotent and therefore no system of matrix units: the Peirce decomposition of the split-quaternion category has no counterpart here. What replaces it is the pair of idempotents of the complexified algebra, $\tfrac12(e_t\pm iu)$, of the next-but-one section; they are not elements of $\mathbb{H}$.
 
-**The two products that differ.** In the split-quaternion category the model is an isomorphism, so $\mathsf{M}_2(\tilde q\tilde p)$ and $\mathsf{M}_2(\tilde p\tilde q)$ are two matrices with the same spectrum, and everything about them is read off the spectrum. Here the same is true and stronger: the two products are conjugate to each other, because $\tilde p\tilde q=\tilde q^{-1}(\tilde q\tilde p)\tilde q$ for a unit $\tilde q$, so they have the same trace and the same determinant identically and not merely numerically.
+**The two products that differ.** In the split-quaternion category the model is an isomorphism, so $\mathsf{M}_2(\tilde q\tilde p)$ and $\mathsf{M}_2(\tilde p\tilde q)$ are two matrices with the same spectrum, and everything about them is read off the spectrum. Here the same is true and stronger: the two products are conjugate to each other, because $\tilde p\tilde q=\tilde q^{-1}(\tilde q\tilde p)\tilde q$ for an invertible element $\tilde q$, so they have the same trace and the same determinant identically and not merely numerically.
 
 ## The Trace
 
@@ -194,7 +194,7 @@ $$
 
 spanned by the three images of $\vec e_x,\vec e_y,\vec e_z$, which are anti-Hermitian. So the traceless part of the image is a three-dimensional real space of anti-Hermitian matrices, and the scalar part is recovered as $\tfrac12\operatorname{tr}$.
 
-**The trace is real and it is not a criterion.** The trace of a matrix in the image is real, whatever the element, because the two diagonal entries are conjugate. It is blind to the three vector coordinates, so it separates the elements by $q_t$ alone: $e_t+2\vec e_x$ and $e_t-3\vec e_y$ have the same trace and different norms. Its role is to split the image into the scalar line and the traceless part, and the second is the Lie algebra of the unit group.
+**The trace is real and it is not a criterion.** The trace of a matrix in the image is real, whatever the element, because the two diagonal entries are conjugate. It is blind to the three vector coordinates, so it separates the elements by $q_t$ alone: $e_t+2\vec e_x$ and $e_t-3\vec e_y$ have the same trace and different norms. Its role is to split the image into the scalar line and the traceless part, and the second is the Lie algebra of the group of invertibles.
 
 **The trace form.** The bilinear form $\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$ restricted to the image has the Gram matrix
 
@@ -227,7 +227,7 @@ There is no null cone, no isotropic line and no zero divisor. The rank of the ma
 | $\det\neq0$ | units | $4$ | every nonzero element |
 | $\tilde q=0$ | the origin | $0$ | the zero matrix |
 
-**The unit criterion.** An element is a unit exactly when its matrix is invertible, which here is exactly when it is nonzero; the group of units is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, and its image is $\mathsf{M}_2(\mathbb{H})\setminus\{0\}$. The determinant is multiplicative, so the units of norm one form the subgroup of matrices of determinant one inside the image, which is the group $SU(2)$ of the section on the norms.
+**The unit criterion.** An element is invertible exactly when its matrix is invertible, which here is exactly when it is nonzero; the group of invertibles is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, and its image is $\mathsf{M}_2(\mathbb{H})\setminus\{0\}$. The determinant is multiplicative, so the invertibles of norm one form the subgroup of matrices of determinant one inside the image, which is the group $SU(2)$ of the section on the norms.
 
 **What the determinant hides.** A definite determinant cannot show the difference between the quaternion algebra and the matrix algebra in the way the indefinite one did, because on a definite form all nonzero vectors look alike. The structures that the split case read off the null cone — the minimal left ideals, the rulings, the projective geometry — have no counterpart here; what replaces them is the spectral decomposition, which the split case could not make uniform precisely because its discriminant changes sign.
 
@@ -330,10 +330,10 @@ the cone on the special unitary group. The polar decomposition of a quaternion i
 | form | definition | Gram matrix on the four units | signature | invariant under |
 |---|---|---|---|---|
 | determinant form | $N=\det\mathsf{M}_2(\tilde q)$ | $I_4$ | $(4,0)$ | the product |
-| trace form | $\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$ | $\operatorname{diag}(2,-2,-2,-2)$ | $(1,3)$ | conjugation by units |
+| trace form | $\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$ | $\operatorname{diag}(2,-2,-2,-2)$ | $(1,3)$ | conjugation by invertibles |
 | Frobenius form | $\langle A,B\rangle_F=\operatorname{tr}(A^{\dagger}B)$ | $2I_4$ | $(4,0)$ | the unitary group, not the product |
 
-**The determinant form is Euclidean.** Its Gram matrix is the identity in the basis of the four units, so it is the ordinary Euclidean form of $\mathbb{R}^{4}$ under the coordinates $(q_t,q_x,q_y,q_z)$, and its group of isometries is $O(4)$. Multiplicativity then says that the model embeds the units into $O(4)$ up to scale, which is the double cover $SU(2)\to SO(3)$ operating on the pure part.
+**The determinant form is Euclidean.** Its Gram matrix is the identity in the basis of the four units, so it is the ordinary Euclidean form of $\mathbb{R}^{4}$ under the coordinates $(q_t,q_x,q_y,q_z)$, and its group of isometries is $O(4)$. Multiplicativity then says that the model embeds the invertibles into $O(4)$ up to scale, which is the double cover $SU(2)\to SO(3)$ operating on the pure part.
 
 **The trace form is Minkowski.** Its Gram matrix is $\operatorname{diag}(2,-2,-2,-2)$, of signature $(1,3)$, and it is invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$. It is the form of the Minkowski space of signature $(1,3)$ that the quaternion algebra acts on by Lorentz transformations, and it is **not** the determinant form.
 
@@ -394,7 +394,7 @@ so the Hermitian part is the scalar part, of dimension one, and the anti-Hermiti
 2. There is no faithful real model of degree two, and the least real degree is four; the image has real dimension four inside eight.
 3. Left and right multiplication stay inside the image and are two commuting copies of the algebra in $M_4(\mathbb{R})$, related by $R_{\tilde q}=C L_{\tilde q^{*}}C$ with $C$ the conjugate transpose, intersecting in the scalars.
 4. The trace is $2q_t$ and the traceless part is the three-dimensional space of anti-Hermitian matrices.
-5. The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is a unit and the rank is two or zero.
+5. The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is invertible and the rank is two or zero.
 6. The discriminant is $-4\lVert\vec v\rVert^{2}$, so the eigenvalues are the conjugate pair $q_t\pm i\lVert\vec v\rVert$ and every non-scalar element is diagonalisable.
 7. The spectral projectors are $\tfrac12(I_2\mp i\mathsf{M}_2(u))$, Hermitian, rank one, orthogonal, they are the images of the idempotents $\tfrac12(e_t\mp iu)$ of the complexified algebra, and $P_\pm$ belongs to $\lambda_\pm$.
 8. The adjugate is the conjugate transpose, every element of the image is conformal normal, and $\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{>0}\cdot SU(2)$.
@@ -416,7 +416,7 @@ so the Hermitian part is the scalar part, of dimension one, and the anti-Hermiti
 | $C$ | the conjugate transpose $A\mapsto A^{\dagger}$ | this article |
 | $u$ | the pure unit $\vec v/\lVert\vec v\rVert$ | this article |
 | $P_\pm$ | the Hermitian projectors $\tfrac12(I_2\mp i\mathsf{M}_2(u))$, of $\lambda_\pm$ | this article |
-| $SU(2)$ | the units of norm one, that is $\mathsf{M}_2(\mathbb{H})\cap SL_2(\mathbb{C})$ | *Quaternion Exponential and Lie Group Structure* |
+| $SU(2)$ | the invertibles of norm one, that is $\mathsf{M}_2(\mathbb{H})\cap SL_2(\mathbb{C})$ | *Quaternion Exponential and Lie Group Structure* |
 | $\varsigma$ | the anti-linear involution $A\mapsto J\overline{A}J^{-1}$ defining the real form | this article |
 
 ## Further Reading

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The sheaf of operators $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$ of a sheaf $\mathcal{F}$ was introduced in *Operators on a Sheaf*, together with the ring $\operatorname{End}(\mathcal{F})=\Gamma(X,\mathcal{E}nd(\mathcal{F}))$ of global operators and the comparison of the stalks of the sheaf with the endomorphism ring of the stalk. This article takes the sheaf of operators itself as the object of study, rather than the ring of its global sections: it develops the sections of $\mathcal{E}nd(\mathcal{F})$ over the open sets, the sheaf of units, which is the automorphism sheaf, and the **local structure** of $\mathcal{E}nd(\mathcal{F})$, that is, its description on a cover by open sets over which $\mathcal{F}$ is trivial and the resulting matrix model. The two articles divide the material cleanly: *Operators on a Sheaf* owns the ring and the stalks, and the present article owns the sections and the local structure.
+The sheaf of operators $\mathcal{E}nd(\mathcal{F})=\mathcal{H}om(\mathcal{F},\mathcal{F})$ of a sheaf $\mathcal{F}$ was introduced in *Operators on a Sheaf*, together with the ring $\operatorname{End}(\mathcal{F})=\Gamma(X,\mathcal{E}nd(\mathcal{F}))$ of global operators and the comparison of the stalks of the sheaf with the endomorphism ring of the stalk. This article takes the sheaf of operators itself as the object of study, rather than the ring of its global sections: it develops the sections of $\mathcal{E}nd(\mathcal{F})$ over the open sets, the sheaf of invertibles, which is the automorphism sheaf, and the **local structure** of $\mathcal{E}nd(\mathcal{F})$, that is, its description on a cover by open sets over which $\mathcal{F}$ is trivial and the resulting matrix model. The two articles divide the material cleanly: *Operators on a Sheaf* owns the ring and the stalks, and the present article owns the sections and the local structure.
 
 The local structure is the content of the article. If $\mathcal{F}$ is locally free of finite rank $r$, then over a trivializing open set the operators are the $r\times r$ matrices of local functions, the sheaf of operators is locally the matrix algebra $M_r(\mathcal{O}_X)$, and the automorphism sheaf is locally the general linear group $\mathrm{GL}_r(\mathcal{O}_X)$; the sheaf of operators is therefore a twisted form of a matrix algebra, its centre is the structure sheaf, its two-sided ideals are pulled back from the centre, and it carries a trace and a determinant, the trace being the invariant of an operator that does not depend on the trivialization. If $\mathcal{F}$ is not locally free the local model is the endomorphism ring of the stalk, which need not be a matrix ring, and the support of the operator sheaf is the support of the sheaf.
 
@@ -33,9 +33,9 @@ and $\mathcal{E}nd$ is a functor on the groupoid of sheaves and isomorphisms.
 
 **Remark (the operator sheaf of a subsheaf).** A monomorphism $\mathcal{F}\to\mathcal{G}$ induces a restriction $\mathcal{E}nd(\mathcal{G})\to\mathcal{E}nd(\mathcal{F})$ on the operators that preserve $\mathcal{F}$, but not every operator on $\mathcal{F}$ extends; $\mathcal{E}nd$ is not a functor on all morphisms, and the failure of the extension of operators is the restriction phenomenon of *The Restriction and Extension Operators*.
 
-## The Sheaf of Units and the Automorphisms
+## The Sheaf of Invertibles and the Automorphisms
 
-**Definition.** The **sheaf of units** of the operator sheaf is the sheaf of groups
+**Definition.** The **sheaf of invertibles** of the operator sheaf is the sheaf of groups
 
 $$
 \mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times},\qquad \Gamma(\Omega,\mathcal{G}L(\mathcal{F}))=\operatorname{Aut}(\mathcal{F}|_\Omega),
@@ -43,13 +43,13 @@ $$
 
 the subsheaf of the locally invertible operators; it is also written $\mathcal{A}ut(\mathcal{F})$ and called the **automorphism sheaf**. Its global sections form the group $\operatorname{Aut}(\mathcal{F})=\mathcal{G}L(\mathcal{F})(X)$ of *Operators on a Sheaf*.
 
-**Proposition (units sectionwise).** An operator $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ is a unit of the ring $\operatorname{End}(\mathcal{F}|_\Omega)$ if and only if its germ $T_x$ is a unit of $\operatorname{End}(\mathcal{F}_x)$ for every $x\in \Omega$; the property of being invertible is local, and $\mathcal{G}L(\mathcal{F})$ is a subsheaf of $\mathcal{E}nd(\mathcal{F})$.
+**Proposition (invertibility sectionwise).** An operator $T\in\operatorname{End}(\mathcal{F}|_\Omega)$ is invertible in the ring $\operatorname{End}(\mathcal{F}|_\Omega)$ if and only if its germ $T_x$ is invertible in $\operatorname{End}(\mathcal{F}_x)$ for every $x\in \Omega$; the property of being invertible is local, and $\mathcal{G}L(\mathcal{F})$ is a subsheaf of $\mathcal{E}nd(\mathcal{F})$.
 
 *Proof.* If $T$ has a two-sided inverse $S$ on $\Omega$ then the germs invert one another, so the condition is necessary. Conversely if every germ is invertible then the germs of the inverse operator are defined locally and agree on overlaps, so they glue to an inverse of $T$ over $\Omega$ by the sheaf property of $\mathcal{E}nd(\mathcal{F})$. The gluing of the inverses uses the uniqueness of an inverse in a ring.
 
 **Proposition (the matrices of automorphisms).** If $\mathcal{F}$ is locally free of finite rank $r$, then on a trivializing open set $\Omega$ there is an isomorphism $\mathcal{G}L(\mathcal{F})|_\Omega\cong\mathrm{GL}_r(\mathcal{O}_X)|_\Omega$, the sheaf of $r\times r$ matrices with invertible determinant, and $\mathcal{G}L(\mathcal{F})$ is a twisted form of the general linear group, with twisting cocycle the Čech 1-cocycle of the trivialization in $\mathrm{GL}_r(\mathcal{O}_X)$.
 
-*Proof.* Choose a trivialization $\mathcal{F}|_\Omega\cong\mathcal{O}_\Omega^r$; conjugation by it identifies the operators on $\mathcal{F}|_\Omega$ with the matrices, by the bifunctoriality above, and the units with the invertible matrices. On the overlaps two trivializations differ by an element of $\mathrm{GL}_r(\mathcal{O}_{\Omega\cap V})$, giving the transition cocycle; the cocycle condition on the triple overlaps is the associativity of the transition isomorphisms, and it is the Čech cocycle of *Čech Cohomology*.
+*Proof.* Choose a trivialization $\mathcal{F}|_\Omega\cong\mathcal{O}_\Omega^r$; conjugation by it identifies the operators on $\mathcal{F}|_\Omega$ with the matrices, by the bifunctoriality above, and the invertibles with the invertible matrices. On the overlaps two trivializations differ by an element of $\mathrm{GL}_r(\mathcal{O}_{\Omega\cap V})$, giving the transition cocycle; the cocycle condition on the triple overlaps is the associativity of the transition isomorphisms, and it is the Čech cocycle of *Čech Cohomology*.
 
 **Remark (the classification by the cocycle).** Two trivializations of a locally free $\mathcal{F}$ over a cover give two matrix descriptions of the same operator; the two cocycles differ by a coboundary, and conversely two cocycles differing by a coboundary define isomorphic sheaves, by gluing the local free sheaves along the coboundary. This is the descent of the local models in the sense of *Descent Theory*, and the Čech computation belongs to *Čech Cohomology*.
 
@@ -71,7 +71,7 @@ the subsheaf of the locally invertible operators; it is also written $\mathcal{A
 
 *Proof.* On a trivialization the matrix trace is invariant under conjugation, $\operatorname{tr}(PTP^{-1})=\operatorname{tr}(T)$, so the local traces agree on overlaps and glue; the identities are those of the matrix trace, and the last statement is the elementary computation with the reduced trace.
 
-**Proposition (the determinant).** For a locally free $\mathcal{F}$ of rank $r$ the determinant of a local operator is well defined on the units,
+**Proposition (the determinant).** For a locally free $\mathcal{F}$ of rank $r$ the determinant of a local operator is well defined on the invertibles,
 
 $$
 \det:\mathcal{G}L(\mathcal{F})\longrightarrow\mathcal{O}_X^{\times},
@@ -115,11 +115,11 @@ For a locally free $\mathcal{F}$ of rank one the operator sheaf is $\mathcal{E}n
 
 ### The Locally Free Sheaf of Rank Two
 
-For a locally free $\mathcal{F}$ of rank two the operator sheaf is locally free of rank four and locally $\mathsf{M}_2(\mathcal{O}_X)$; on a trivializing cover an operator is a two-by-two matrix of local functions, its trace is a function and its determinant is defined on the units. The sheaf $\mathcal{E}nd(\mathcal{F})$ is an Azumaya algebra of degree two when $X$ is a scheme, and over the complex numbers the reduction modulo the trace gives the traceless part, a locally free sheaf of rank three; the traceless operators are the local structure of the Lie algebra $\mathfrak{sl}_2$ attached to the rank-two bundle.
+For a locally free $\mathcal{F}$ of rank two the operator sheaf is locally free of rank four and locally $\mathsf{M}_2(\mathcal{O}_X)$; on a trivializing cover an operator is a two-by-two matrix of local functions, its trace is a function and its determinant is defined on the invertibles. The sheaf $\mathcal{E}nd(\mathcal{F})$ is an Azumaya algebra of degree two when $X$ is a scheme, and over the complex numbers the reduction modulo the trace gives the traceless part, a locally free sheaf of rank three; the traceless operators are the local structure of the Lie algebra $\mathfrak{sl}_2$ attached to the rank-two bundle.
 
 ## Summary
 
-The sections of the operator sheaf over an open set are the operators on the restriction, and they glue on covers; the sheaf hom is a bifunctor, so the operator sheaf is a functor on isomorphisms by conjugation. The units of the operator sheaf form the automorphism sheaf, whose sections are the invertible operators on the restriction; invertibility is a local condition, and for a locally free sheaf the automorphism sheaf is a twisted form of the general linear group, with the twisting given by the Čech cocycle of a trivializing cover.
+The sections of the operator sheaf over an open set are the operators on the restriction, and they glue on covers; the sheaf hom is a bifunctor, so the operator sheaf is a functor on isomorphisms by conjugation. The invertibles of the operator sheaf form the automorphism sheaf, whose sections are the invertible operators on the restriction; invertibility is a local condition, and for a locally free sheaf the automorphism sheaf is a twisted form of the general linear group, with the twisting given by the Čech cocycle of a trivializing cover.
 
 For a locally free sheaf of finite rank $r$ the local structure is the matrix algebra: the operator sheaf is locally free of rank $r^2$, locally isomorphic to $M_r(\mathcal{O}_X)$, isomorphic to $\mathcal{F}\otimes\mathcal{F}^{\vee}$, with centre $\mathcal{O}_X$ and with two-sided ideals pulled back from the centre. It carries a trace, invariant under conjugation and giving a morphism to the structure sheaf, and a determinant on its units; over a scheme it is an Azumaya algebra. Off the locally free locus the local model is the endomorphism ring of the stalk, coherent when the sheaf is, with support the support of the sheaf; the matrix model holds exactly where the stalk is free of constant finite rank.
 
@@ -130,7 +130,7 @@ For a locally free sheaf of finite rank $r$ the local structure is the matrix al
 | $\Gamma(\Omega,\mathcal{E}nd(\mathcal{F}))=\operatorname{End}(\mathcal{F}\rvert_\Omega)$ | sections of the operator sheaf are the operators on the restriction |
 | $\mathcal{H}om(-,-)$ | bifunctor, contravariant in the source and covariant in the target |
 | $\mathcal{E}nd(\varphi)(T)=\varphi T\varphi^{-1}$ | functoriality on isomorphisms by conjugation |
-| $\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times}$ | sheaf of units, the automorphism sheaf $\mathcal{A}ut(\mathcal{F})$ |
+| $\mathcal{G}L(\mathcal{F})=\mathcal{E}nd(\mathcal{F})^{\times}$ | sheaf of invertibles, the automorphism sheaf $\mathcal{A}ut(\mathcal{F})$ |
 | $\mathrm{GL}_r(\mathcal{O}_X)$ | local model of the automorphism sheaf for a rank-$r$ locally free sheaf |
 | $M_r(\mathcal{O}_X)$ | local model of the operator sheaf; locally free of rank $r^2$ |
 | $\mathcal{E}nd(\mathcal{F})\cong\mathcal{F}\otimes\mathcal{F}^{\vee}$ | operator sheaf of a locally free sheaf |
@@ -146,5 +146,5 @@ For a locally free sheaf of finite rank $r$ the local structure is the matrix al
 - Alexander Grothendieck and Jean Dieudonné, *Éléments de géométrie algébrique I* (Publications Mathématiques de l'IHÉS 4, 1960), for the sheaves of algebras, their local structure and the ideals of a matrix algebra over a sheaf of rings.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for Azumaya algebras, their trace and their classification by Čech cocycles.
 - Glen E. Bredon, *Sheaf Theory* (Springer, second edition, 1997), for the sheaf hom, its sections and the support of a sheaf of algebras.
-- Saunders Mac Lane and Ieke Moerdijk, *Sheaves in Geometry and Logic* (Springer, 1992), for the internal hom and the group of units of a sheaf of rings.
+- Saunders Mac Lane and Ieke Moerdijk, *Sheaves in Geometry and Logic* (Springer, 1992), for the internal hom and the group of invertibles of a sheaf of rings.
 - Gunter Tamme, *Introduction to Étale Cohomology* (Springer, 1994), for the descent of the matrix model and the Azumaya algebras over a scheme.

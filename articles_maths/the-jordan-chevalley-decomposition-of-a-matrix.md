@@ -177,9 +177,9 @@ with the identity $I_2$ on the superdiagonal. The semisimple part is the block d
 
 ## The Multiplicative Version
 
-### Units and unipotents
+### Invertibles and unipotents
 
-A matrix $U$ is **unipotent** when $U=I+N$ with $N$ nilpotent; equivalently, when $U$ is a unit and $U-I$ is nilpotent. The eigenvalues of a unipotent matrix are all $1$.
+A matrix $U$ is **unipotent** when $U=I+N$ with $N$ nilpotent; equivalently, when $U$ is invertible and $U-I$ is nilpotent. The eigenvalues of a unipotent matrix are all $1$.
 
 **Theorem.** Let $A$ be invertible. Then there are unique matrices $A_s,A_u$ with
 

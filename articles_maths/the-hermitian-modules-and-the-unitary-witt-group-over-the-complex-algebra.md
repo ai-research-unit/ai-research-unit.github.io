@@ -58,7 +58,7 @@ The field property that makes every module free is *The Specificities of the Com
 
 **Proposition (the realification).** The real form $\operatorname{Re}h$ on $\mathbb{R}^{2(n+m+r)}$ has signature $(2n,2m)$ and rank $2(n+m)$.
 
-*Proof.* A complex line on which $h$ is positive is a real plane on which $\operatorname{Re}h$ is positive definite, since $h(x,x)=|x|^{2}h(u,u)$ for a unit $u$ on the line; a line on which $h$ is negative contributes a negative plane; and a null line contributes a null plane.
+*Proof.* A complex line on which $h$ is positive is a real plane on which $\operatorname{Re}h$ is positive definite, since $h(x,x)=|x|^{2}h(u,u)$ for an invertible element $u$ on the line; a line on which $h$ is negative contributes a negative plane; and a null line contributes a null plane.
 
 **Remark (the doubling).** The complex inertia is read on the realification as an even signature in each entry. That is the sense in which the classification of the Hermitian forms over the algebra is the classification of the real symmetric forms of even signature, and it is why the complex case has no phenomenon the real case lacks: the invariants are the same two, and one of them is doubled.
 

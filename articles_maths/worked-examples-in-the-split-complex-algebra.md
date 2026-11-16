@@ -94,11 +94,11 @@ $$
 (\lambda \Pi_+)(\mu \Pi_-) = \lambda\mu\, \Pi_+\Pi_- = 0,
 $$
 
-so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and the annihilator of $\lambda \Pi_+$ is the line $\mathbb{R}\Pi_-$, as established in *Zero Divisors of the Split-Complex Algebra*. There is no pair of zero divisors with $a b = 0$ in which one factor is a unit; the criterion is that each factor lies on one of the two null lines.
+so the whole family of examples is $\{\lambda \Pi_+\}\times\{\mu \Pi_-\}$; and the annihilator of $\lambda \Pi_+$ is the line $\mathbb{R}\Pi_-$, as established in *Zero Divisors of the Split-Complex Algebra*. There is no pair of zero divisors with $a b = 0$ in which one factor is invertible; the criterion is that each factor lies on one of the two null lines.
 
 ## Worked Hyperbolic and Parabolic Elements
 
-An element of $\mathbb{C}_{\mathrm{spl}}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is a unit with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is a unit with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Norm and Invertibility in the General Split-Complex Algebra*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the unit group.
+An element of $\mathbb{C}_{\mathrm{spl}}$ is classified by the signs of its two idempotent coordinates: a **hyperbolic** element is invertible with $Q_+Q_- > 0$, the coordinates having the same sign; an **elliptic** element is invertible with $Q_+Q_- < 0$, the coordinates having opposite signs; a **parabolic** element is a non-zero element with $Q_+Q_- = 0$, that is, a zero divisor. The product $Q_+Q_-$ is the algebraic reading of the quadratic form of *Norm and Invertibility in the General Split-Complex Algebra*, and its sign is preserved under multiplication; the names are the hyperbolic, elliptic and parabolic classes of the group of invertibles.
 
 **Hyperbolic example.** Let $Q = \tfrac54 + \tfrac34 j$. Its coordinates are
 
@@ -147,7 +147,7 @@ Explicit zero-divisor pairs were given, $Q_1 = 1+j = 2\Pi_+$ and $Q_2 = 2-2j = 4
 | $Q_\pm = q\pm q'$ | Idempotent coordinates, $Q = Q_+\Pi_+ + Q_-\Pi_-$ |
 | $\mathbb{R}\Pi_+, \mathbb{R}\Pi_-$ | Minimal ideals / null lines |
 | $Q_+Q_-$ | Product of the idempotent coordinates; its sign classes the unit |
-| ${\mathbb{C}_{\mathrm{spl}}}^\times$ | Group of units, the elements with both coordinates nonzero |
+| ${\mathbb{C}_{\mathrm{spl}}}^\times$ | Group of invertibles, the elements with both coordinates nonzero |
 | hyperbolic, elliptic, parabolic | Unit with $Q_+Q_- > 0$, unit with $Q_+Q_- < 0$, zero divisor with $Q_+Q_- = 0$ |
 
 ## Further Reading

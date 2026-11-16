@@ -50,15 +50,15 @@ $$
 
 where $\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}}$ has the reversed product.
 
-**Corollary (units).** $L_{a}R_{b}$ is a bijection if and only if $a$ and $b$ are units; then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$.
+**Corollary (units).** $L_{a}R_{b}$ is a bijection if and only if $a$ and $b$ are invertible; then $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$.
 
-**Proof.** If $a, b$ are units the inverse is the composition law applied twice. Conversely, if $L_aR_b$ is injective then $R_b$ is injective, and if it is surjective then $L_a$ is surjective; in a finite-dimensional algebra an injective right multiplication has $b$ a unit, and a surjective left multiplication has $a$ a unit, a one-sided inverse there being two-sided.
+**Proof.** If $a, b$ are invertible the inverse is the composition law applied twice. Conversely, if $L_aR_b$ is injective then $R_b$ is injective, and if it is surjective then $L_a$ is surjective; in a finite-dimensional algebra an injective right multiplication has $b$ an invertible element, and a surjective left multiplication has $a$ an invertible element, a one-sided inverse there being two-sided.
 
 ### The Kernel and the Value at the Unit
 
 **Proposition.** $L_{a}R_{b}(1) = ab$; in particular the two-sided operator that is the identity map must have $ab = 1$, and the pairs that actually give the identity are determined below.
 
-**Proposition (the indeterminacy).** Let $a, b, a', b'$ be units. Then $L_{a}R_{b} = L_{a'}R_{b'}$ if and only if there is a unit $c$ in the centre $Z(\mathrm{Cl}(V,\mathfrak{Q}))$ with
+**Proposition (the indeterminacy).** Let $a, b, a', b'$ be units. Then $L_{a}R_{b} = L_{a'}R_{b'}$ if and only if there is invertible $c$ in the centre $Z(\mathrm{Cl}(V,\mathfrak{Q}))$ with
 
 $$
 a' = a\,c, \qquad b' = c^{-1} b .
@@ -72,19 +72,19 @@ $$
 
 so $c\,y = y\,c$ for every $y$, and $c$ is central. Conversely if $c$ is central then $a'yb' = acyc^{-1}b = ayb$.
 
-**Corollary (the kernel).** The two-sided operators that act as the identity are exactly the pairs $(c, c^{-1})$ with $c$ a unit of the centre,
+**Corollary (the kernel).** The two-sided operators that act as the identity are exactly the pairs $(c, c^{-1})$ with $c$ an invertible element of the centre,
 
 $$
 \boxed{\;\ker\bigl((a,b) \mapsto L_{a}R_{b}\bigr) = \{\, (c, c^{-1}) : c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times} \,\}\;}.
 $$
 
-In even dimension the centre is $F$, so the kernel is the scalars $F^{\times}$; in odd dimension the centre is $F \oplus F\omega$ with $\omega$ the volume element, so the kernel is $F^{\times} \cup F^{\times}\omega$ in the diagonal of the unit group.
+In even dimension the centre is $F$, so the kernel is the scalars $F^{\times}$; in odd dimension the centre is $F \oplus F\omega$ with $\omega$ the volume element, so the kernel is $F^{\times} \cup F^{\times}\omega$ in the diagonal of the group of invertibles.
 
 ## The Versor Action on the Quadratic Space
 
 ### The Twisted Conjugation
 
-**Definition.** Let $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be a unit. The **twisted conjugation** by $x$ is
+**Definition.** Let $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be an invertible element. The **twisted conjugation** by $x$ is
 
 $$
 \chi_x : \mathrm{Cl}(V,\mathfrak{Q}) \longrightarrow \mathrm{Cl}(V,\mathfrak{Q}), \qquad \chi_x(y) = x\,y\,\alpha(x)^{-1},
@@ -154,7 +154,7 @@ the half-turn of the plane spanned by $e_1, e_2$. The value at the unit is $R R^
 
 ### A Central Indeterminacy
 
-In $\mathrm{Cl}_{0,3}$ the volume element $\omega = e_1e_2e_3$ is central and odd with $\omega^{2} = 1$, so $\omega$ is a unit of the centre and
+In $\mathrm{Cl}_{0,3}$ the volume element $\omega = e_1e_2e_3$ is central and odd with $\omega^{2} = 1$, so $\omega$ is invertible in the centre and
 
 $$
 L_{\omega a}R_{\omega^{-1} b} = L_{a}R_{ b}
@@ -174,7 +174,7 @@ Let $x = 1 + e_1e_2e_3 = 1 + \omega$ in $\mathrm{Cl}_{0,3}$. Then $x^{2} = 1 + 2
 
 ## Summary
 
-The **two-sided operator** $L_{a}R_{b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{ db}$ with the left factors in the written order and the right factors reversed, and the two-sided operators form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are units, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. It remembers the product $ab$ and the value $L_{a}R_{b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
+The **two-sided operator** $L_{a}R_{b}(y) = a\,y\,b$ is the general two-parameter two-sided operator on a Clifford algebra, the composite $L_aR_b$ of a left and a right multiplication. It is $F$-linear, its composition law is $L_{a}R_{b}L_{c}R_{d} = L_{ac}R_{ db}$ with the left factors in the written order and the right factors reversed, and the two-sided operators form a monoid isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})_{\mathrm{opp}} \times \mathrm{Cl}(V,\mathfrak{Q})$. It is invertible exactly when $a$ and $b$ are invertible, with $L_{a}R_{b}^{-1} = L_{a^{-1}}R_{b^{-1}}$. It remembers the product $ab$ and the value $L_{a}R_{b}(1) = ab$; two pairs give the same operator exactly when they differ by a central unit, $a' = ac$ and $b' = c^{-1}b$ with $c \in Z(\mathrm{Cl}(V,\mathfrak{Q}))^{\times}$, so the kernel of the parametrisation is the diagonal of the central units.
 
 Restricted to the quadratic space, the two-sided operator of a versor is the inner conjugation, and the correct action on $V$ is the **twisted conjugation** $\chi_x(y) = x\,y\,\alpha(x)^{-1}$, the two-sided operator by $(x, \alpha(x)^{-1})$; the two differ by the parity sign, $\chi_x = \varepsilon_x L_{x}R_{x^{-1}}$, so they agree on the even part of the Clifford group and are negatives on the odd part. The twisted conjugation of a versor is an isometry of $V$, a vector gives the reflection $\rho_u = \chi_u$, and an even versor gives a rotation; the map $x \mapsto \chi_x\big|_V$ is the homomorphism $\Gamma(V,\mathfrak{Q}) \to O(V,\mathfrak{Q})$ on which the pin and spin groups are built. The article owns the two-parameter product and the versor action alone; the general operator family is *The Family of Two-Sided Operators on a Clifford Algebra*, and the groups are *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 

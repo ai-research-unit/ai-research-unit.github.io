@@ -168,7 +168,7 @@ $$
 
 with the **norm** $\langle q+i q'\rangle_{*} = q^2 + q'^2 = (q+i q')(q-i q')$.
 
-**Proposition.** $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of units is $\{\pm 1, \pm i\}$; and the norm is multiplicative.
+**Proposition.** $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of invertibles is $\{\pm 1, \pm i\}$; and the norm is multiplicative.
 
 **Proof.** Closure under the ring operations is immediate from the addition and multiplication formulas for $\mathbb{C}$, and the norm is the restriction of $Q \mapsto Q\bar Q$, which is multiplicative and vanishes only at $0$; hence there are no zero divisors. Every quotient lies in $\mathbb{Q}(i)$, since
 
@@ -176,7 +176,7 @@ $$
 \frac{q_1+i q'_1}{q_2+i q'_2} = \frac{(q_1+i q'_1)(q_2-i q'_2)}{q_2^2+(q'_2)^2} \in \mathbb{Q}(i) \quad (q_2+i q'_2 \neq 0),
 $$
 
-so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is a unit if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
+so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is invertible if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.
 
 ### Euclidean Structure
 

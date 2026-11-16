@@ -27,7 +27,7 @@ $$
 \tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 $$
 
-with $\natural$ on the units and never on the connection's coefficients, which are scalars. Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$ for the slot's coefficient, so that the covariant derivative is $\partial_\mu+c_\mu$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.
+with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$ for the slot's coefficient, so that the covariant derivative is $\partial_\mu+c_\mu$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.
 
 **The action and the weight.** The variational companion's matter action,
 

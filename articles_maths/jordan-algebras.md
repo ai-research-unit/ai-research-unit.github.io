@@ -96,7 +96,7 @@ $$
 x \bullet y = xy + yx
 $$
 
-when no division by $2$ is used, or $x \bullet y = \tfrac{1}{2}(xy + yx)$ when $2$ is invertible; the two products differ by the invertible scalar $2$, so they define isomorphic Jordan algebras whenever $2$ is a unit. This product is commutative, and the example below shows it satisfies the Jordan identity.
+when no division by $2$ is used, or $x \bullet y = \tfrac{1}{2}(xy + yx)$ when $2$ is invertible; the two products differ by the invertible scalar $2$, so they define isomorphic Jordan algebras whenever $2$ is invertible. This product is commutative, and the example below shows it satisfies the Jordan identity.
 
 **Theorem.** For every associative algebra $A$, the symmetrised algebra $A^+$ is a Jordan algebra.
 

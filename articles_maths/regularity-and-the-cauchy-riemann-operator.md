@@ -37,7 +37,7 @@ $$
 \sigma = \sum_\alpha B_\alpha \zeta_\alpha = \zeta_t + \sum_{k \geq 1} B_k\zeta_k
 $$
 
-satisfies $\sigma(\zeta_t - \sum_{k\geq1}B_k\zeta_k) = |\zeta|^2 = (\zeta_t - \sum_{k\geq1}B_k\zeta_k)\sigma$, where $|\zeta|^2 = \sum_\alpha \zeta_\alpha^2 > 0$. Hence $\sigma$ is a unit of $A$, with
+satisfies $\sigma(\zeta_t - \sum_{k\geq1}B_k\zeta_k) = |\zeta|^2 = (\zeta_t - \sum_{k\geq1}B_k\zeta_k)\sigma$, where $|\zeta|^2 = \sum_\alpha \zeta_\alpha^2 > 0$. Hence $\sigma$ is invertible in $A$, with
 
 $$
 \sigma^{-1} = \frac{\zeta_t - \sum_{k\geq1}B_k\zeta_k}{|\zeta|^2},
@@ -51,7 +51,7 @@ $$
 \Bigl(\zeta_t + \sum_k B_k\zeta_k\Bigr)\Bigl(\zeta_t - \sum_j B_j\zeta_j\Bigr) = \zeta_t^2 - \sum_{j,k}B_jB_k\zeta_j\zeta_k = \zeta_t^2 + \sum_k\zeta_k^2 = |\zeta|^2,
 $$
 
-using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\zeta_t$ is a real scalar and $B_k\zeta_t = \zeta_t B_k$. The same computation in the other order gives the same result. Since $|\zeta|^2$ is a nonzero real number, it is a unit of $A$, and the displayed expression is the inverse.
+using $B_k^2 = -1$ and $B_jB_k = -B_kB_j$; the two factors commute because $\zeta_t$ is a real scalar and $B_k\zeta_t = \zeta_t B_k$. The same computation in the other order gives the same result. Since $|\zeta|^2$ is a nonzero real number, it is invertible in $A$, and the displayed expression is the inverse.
 
 **Corollary.** The symbol $\sigma_D$ is invertible for every nonzero covector, so $D$ is a first-order elliptic operator with constant coefficients on $\mathbb{R}^m$; in particular the Laplace-type operators $D\bar D$ and $\bar D D$ are the Laplacian.
 
@@ -281,7 +281,7 @@ which is the general form of the Cauchy integral formula stated in *Hypercomplex
 
 **Proposition (equivalence of operators).** Let $u \in A^\times$ be a constant unit and let $D' = uD$, that is, $D'f = u\,(Df)$. Then $f$ is $D'$-regular if and only if $f$ is $D$-regular. More generally, if $D' = D + $ (a zeroth-order term) then the regular functions need not coincide, and the zeroth-order term changes the class.
 
-*Proof.* If $u$ is a unit then $u(Df) = 0$ if and only if $Df = 0$. The second statement is immediate from an example: adding a constant multiple of the identity changes $Df = 0$ into a first-order system with a potential term.
+*Proof.* If $u$ is invertible then $u(Df) = 0$ if and only if $Df = 0$. The second statement is immediate from an example: adding a constant multiple of the identity changes $Df = 0$ into a first-order system with a potential term.
 
 **Proposition (characterisation of the operator by its kernel, locally).** Two first-order operators with the same leading-order symbol and the same kernel on a connected domain differ by a zeroth-order term whose action on the kernel vanishes. In particular a constant-coefficient operator is determined by its leading symbol up to a zeroth-order perturbation, and among operators with the same symbol, the elliptic ones all have kernels containing the constants.
 
@@ -293,7 +293,7 @@ The classification of admissible operators up to this equivalence, and the deter
 
 ## Summary
 
-The **generalised Cauchy–Riemann operator** $D = \partial/\partial x_t + \sum_k B_k\partial/\partial x_k$ has principal symbol equal to left multiplication by $\sigma(\zeta) = \zeta_t + \sum_k B_k\zeta_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is a unit for every nonzero $\zeta$, with inverse $(\zeta_t - \sum_k B_k\zeta_k)/|\zeta|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
+The **generalised Cauchy–Riemann operator** $D = \partial/\partial x_t + \sum_k B_k\partial/\partial x_k$ has principal symbol equal to left multiplication by $\sigma(\zeta) = \zeta_t + \sum_k B_k\zeta_k$. When the coefficients satisfy the Clifford relations $B_jB_k + B_kB_j = -2\delta_{jk}$ with $B_k^2 = -1$, this element is invertible for every nonzero $\zeta$, with inverse $(\zeta_t - \sum_k B_k\zeta_k)/|\zeta|^2$; hence $D$ is elliptic, and the equation $Df = 0$ is the generalised Cauchy–Riemann system, a first-order system of $m$ equations in $m$ unknown components with constant coefficients, reducing to the classical Cauchy–Riemann equations when $A = \mathbb{C}$.
 
 Left regularity $Df = 0$ and right regularity $fD = 0$ are distinct for non-commutative $A$ and are exchanged by an involutive anti-automorphism $\rho$ with $\rho(B_\alpha) = B_\alpha^{\natural}$: $f$ is left $D$-regular if and only if $\rho \circ f$ is right $\bar D$-regular. Ellipticity gives the Weyl lemma, hence smoothness and real-analyticity of regular functions, the identity theorem and unique continuation, and the inclusion $\ker D \subseteq \ker\Delta$, so that regular functions are harmonic componentwise; the kernel is infinite-dimensional; and the components inherit the maximum principle, the mean value property and Liouville's theorem. These consequences need the relations $B_k^2 = -1$: for the degenerate systems $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, whose symbols vanish on the real space, the regular functions are $f_+(\zeta_-)\pi_1 + f_-(\zeta_+)\pi_2$ and $u(x_1) + \varepsilon v(x_t,x_1)$ with $\partial/\partial x_t v = -u'$, their components satisfy the wave and transport equations rather than Laplace's equation, and Liouville, the maximum principle and the mean value property all fail, the first two defeated by $\exp(-(x_t-jx_1)^2)$ on $\mathbb{C}_{\mathrm{spl}}$ and by $1 + \varepsilon \exp(-x_1^2)$ on $\mathbb{C}_{\mathrm{dln}}$.
 

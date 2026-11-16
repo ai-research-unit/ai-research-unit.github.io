@@ -79,7 +79,7 @@ $$
 p_{\tilde Q}(X)=(X-Q_t)^2+B^2=(X-\lambda_+)(X-\lambda_-),
 $$
 
-with discriminant $-4B^2$. The element is a unit exactly when $Q_t^2+B^2\neq0$.
+with discriminant $-4B^2$. The element is invertible exactly when $Q_t^2+B^2\neq0$.
 
 ### The Eigenprojections
 
@@ -1106,7 +1106,7 @@ $$
 \ker L_{\tilde N}=\{\tilde Q_2:\tilde N\tilde Q_2=0\},
 $$
 
-of dimension two. A two-dimensional eigenspace does not span the four-dimensional algebra, so there is no eigenbasis. The element is unipotent: it is a unit, with inverse
+of dimension two. A two-dimensional eigenspace does not span the four-dimensional algebra, so there is no eigenbasis. The element is unipotent: it is invertible, with inverse
 
 $$
 \tilde Q^{-1}=e_t-\tilde N
@@ -1205,7 +1205,7 @@ $$
 \lambda_-=1-\frac{i}{2}-iB\approx 1.6248105338-1.3002425902\,i.
 $$
 
-Their product is $1$. The element is a unit.
+Their product is $1$. The element is invertible.
 
 **Eigenprojections.** With $\vec{Ζ}=-i\vec Q/B$,
 
@@ -1406,7 +1406,7 @@ $$
 \tilde Q=(1+i)e_t+\tilde N.
 $$
 
-The only eigenvalue is $1+i$, the minimal polynomial is $(X-(1+i))^2$, and the eigenspace is $\ker L_{\tilde N}$, of dimension two. There is no eigenbasis. The element is a unit, with inverse
+The only eigenvalue is $1+i$, the minimal polynomial is $(X-(1+i))^2$, and the eigenspace is $\ker L_{\tilde N}$, of dimension two. There is no eigenbasis. The element is invertible, with inverse
 
 $$
 \tilde Q^{-1}=\frac{1-i}{2}e_t+\frac{i}{2}\vec e_x-\frac12\vec e_y.

@@ -84,7 +84,7 @@ $$
 
 *Proof.* Apply $*$ to $TT^{-1}=\mathrm{id}$ and to $T^{-1}T=\mathrm{id}$, using anti-multiplicativity and $\mathrm{id}^{*}=\mathrm{id}$: $(T^{-1})^{*}T^{*}=\mathrm{id}=T^{*}(T^{-1})^{*}$, so $(T^{-1})^{*}$ is the two-sided inverse of $T^{*}$.
 
-**Corollary (the involution and the unit group).** The involution $*$ restricts to an anti-automorphism of order two of the unit group $E^{\times}$, and the composite
+**Corollary (the involution and the group of invertibles).** The involution $*$ restricts to an anti-automorphism of order two of the group of invertibles $E^{\times}$, and the composite
 
 $$
 \mathrm{J} : E^{\times} \to E^{\times}, \qquad \mathrm{J}(T)=(T^{*})^{-1},
@@ -154,7 +154,7 @@ The proposition is the reason the element involution and the operator involution
 
 ## Summary
 
-A nondegenerate symmetric pairing $\langle x,y\rangle=\tau(xy)$ on a finite-dimensional algebra $A$ gives every operator $T \in E=\operatorname{End}_k(A)$ an adjoint $T^{*}$ by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$, and the assignment $T\mapsto T^{*}$ is a $k$-linear anti-automorphism of $E$ of order two: the **involution of the operator algebra**, which makes $(E,*)$ an involutive algebra. Its fixed part $E^{+}$ is the self-adjoint operators and its negated part $E^{-}$ the anti-self-adjoint operators; the Jordan and Lie structures of the two parts are *The Self-Adjoint Part of an Algebra* and *The Anti-Hermitian Part of an Algebra*, and the involution restricts to an anti-automorphism of the unit group with the automorphism $\mathrm{J}(T)=(T^{*})^{-1}$. An involution $\sigma$ of the elements with $\tau\sigma=\tau$ produces the twisted pairing $\{x,y\}=\tau(x\sigma(y))$, a second nondegenerate pairing, and the two operator involutions differ by the conjugation $c_{\sigma}(T)=\sigma T\sigma$: $T^{*_\sigma}=\sigma T^{*}\sigma$. The involution of the elements and the adjoint of the operators are therefore two structures married by the pairing but not equal, and the agreement on a representation is proved rather than assumed. The adjoints of the one-sided, signed and graded operators are the following articles of the group, and the norm, the positivity and the Hilbert-space adjoint are Part II.
+A nondegenerate symmetric pairing $\langle x,y\rangle=\tau(xy)$ on a finite-dimensional algebra $A$ gives every operator $T \in E=\operatorname{End}_k(A)$ an adjoint $T^{*}$ by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$, and the assignment $T\mapsto T^{*}$ is a $k$-linear anti-automorphism of $E$ of order two: the **involution of the operator algebra**, which makes $(E,*)$ an involutive algebra. Its fixed part $E^{+}$ is the self-adjoint operators and its negated part $E^{-}$ the anti-self-adjoint operators; the Jordan and Lie structures of the two parts are *The Self-Adjoint Part of an Algebra* and *The Anti-Hermitian Part of an Algebra*, and the involution restricts to an anti-automorphism of the group of invertibles with the automorphism $\mathrm{J}(T)=(T^{*})^{-1}$. An involution $\sigma$ of the elements with $\tau\sigma=\tau$ produces the twisted pairing $\{x,y\}=\tau(x\sigma(y))$, a second nondegenerate pairing, and the two operator involutions differ by the conjugation $c_{\sigma}(T)=\sigma T\sigma$: $T^{*_\sigma}=\sigma T^{*}\sigma$. The involution of the elements and the adjoint of the operators are therefore two structures married by the pairing but not equal, and the agreement on a representation is proved rather than assumed. The adjoints of the one-sided, signed and graded operators are the following articles of the group, and the norm, the positivity and the Hilbert-space adjoint are Part II.
 
 ## Summary of Notation
 
@@ -165,7 +165,7 @@ A nondegenerate symmetric pairing $\langle x,y\rangle=\tau(xy)$ on a finite-dime
 | $E=\operatorname{End}_k(A)$ | the algebra of operators of $A$ |
 | $T^{*}$ | the adjoint of $T$, defined by $\langle Tx,y\rangle=\langle x,T^{*}y\rangle$ |
 | $(TS)^{*}=S^{*}T^{*}$, $(T^{*})^{*}=T$ | the involution of the operator algebra |
-| $\mathrm{J}(T)=(T^{*})^{-1}$ | the order-two automorphism of the unit group $E^{\times}$ |
+| $\mathrm{J}(T)=(T^{*})^{-1}$ | the order-two automorphism of the group of invertibles $E^{\times}$ |
 | $E^{+}$, $E^{-}$ | the self-adjoint and the anti-self-adjoint operators |
 | $\sigma$, $\sigma(x)$ | an involution of the elements and its image |
 | $\{x,y\}=\tau(x\sigma(y))$ | the $\sigma$-twisted pairing |

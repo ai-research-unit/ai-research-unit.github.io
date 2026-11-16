@@ -297,7 +297,7 @@ $$
 \sum_\mu \bigl(\partial G^+/\partial x_\mu\bigr)\tau_\mu = \Bigl(\sum_\mu \tau_\mu^{\natural}\,\partial \bar G/\partial x_\mu\Bigr)^{\natural},
 $$
 
-with $\tau_\mu^{\natural}$ the units of the conjugate frame. The order matters — $\sum_\mu(\partial G^+/\partial x_\mu)\tau_\mu\neq\sum_\mu\tau_\mu(\partial G^+/\partial x_\mu)$ — and the display above fixes it without needing a mark of its own. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
+with $\tau_\mu^{\natural}$ the invertibles of the conjugate frame. The order matters — $\sum_\mu(\partial G^+/\partial x_\mu)\tau_\mu\neq\sum_\mu\tau_\mu(\partial G^+/\partial x_\mu)$ — and the display above fixes it without needing a mark of its own. The complex vector $\vec g = \vec d + i\vec h$ has the compact form
 
 $$
 \vec g = i(\vec\kappa\cdot\vec v^*)\vec v - \frac{i}{2}\vec\kappa(\vec v^*)^2,

@@ -69,7 +69,7 @@ p_{\breve Q}(X)=X^2-2Q_{\blacktriangle}X+(Q_{\blacktriangle}^2-Q_{\blacktriangle
 =(X-\lambda_+)(X-\lambda_-),
 $$
 
-with discriminant $4Q_{\blacktriangledown}^2$. The element is a unit exactly when $\lambda_+\lambda_-\neq0$.
+with discriminant $4Q_{\blacktriangledown}^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.
 
 ### The Eigenprojections
 
@@ -199,7 +199,7 @@ $$
 f(\breve Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-.
 $$
 
-When $\breve Q$ is a unit,
+When $\breve Q$ is invertible,
 
 $$
 \breve Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-.
@@ -816,7 +816,7 @@ and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spin
 - Case 1 is the generic element. Its two eigenvalues are distinct complex numbers, and the eigenbasis is the fixed pair $(\Pi_+,\Pi_-)$. The matrix is symmetric in the complex sense, and its two eigenvalues are the diagonal entries of the diagonal form.
 - Cases 2, 3 and 7 are the scalar regime. The two eigenvalues coincide, every complex basis is an eigenbasis, and the idempotent pair is a choice. The spectral data carry only the common scalar.
 - Cases 4 and 5 are the two pure phases. Their eigenvalues are $(\pm i)$ and $(\pm1)$, and both are square roots of $\pm1$, with squares $-1$ and $+1$. The eigenbasis separates the two signs.
-- Case 6 is the hyperbolic line. Its eigenvalues are $2$ and $\tfrac12$, reciprocal to each other, and the element is the exponential of $j\ln2$. The product of the eigenvalues is $1$, so the element is a unit of reduced norm one.
+- Case 6 is the hyperbolic line. Its eigenvalues are $2$ and $\tfrac12$, reciprocal to each other, and the element is the exponential of $j\ln2$. The product of the eigenvalues is $1$, so the element is invertible in reduced norm one.
 - Case 8 is the zero divisor. The eigenvalues are distinct, the eigenbasis exists, and one eigenvalue is zero. This is the case in which the eigenbasis exists while the polar word of the companion article does not. The element is the projection $2\Pi_+$ onto the first spinor space, with kernel the second.
 - The eigenbasis depends only on $j$, not on $\breve Q$, in every non-scalar case. The element enters only through the two eigenvalues.
 

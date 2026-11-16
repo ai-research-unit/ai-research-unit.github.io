@@ -24,7 +24,7 @@ $$
 
 **The H-pair is not the N-word.** The two-factor decomposition is defined everywhere and its second factor is a partial isometry. The four-factor word $r\exp(i\theta)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists only off the null cone, where the second factor is $*$-unitary and the amplitude is positive definite. The refinement is the subject of the next entry. Here the general pair is the object, and the four factors are quoted only where a result needs them.
 
-**The strongest objection is that the H-norm is the Euclidean norm on $\mathbb{C}^{4}$ and therefore carries no physics.** The objection is correct about the formula and wrong about the consequence. The norm is Euclidean, and that is exactly why it is the amplitude: a probability amplitude is an element of a Hilbert space, its norm is the square root of a sum of squared moduli, and the group that preserves that norm is the unitary group and nothing larger. The physical content of $H$ is not the mass. It is the size of the state, and the reason the polar decomposition exists on the whole algebra rather than on the units.
+**The strongest objection is that the H-norm is the Euclidean norm on $\mathbb{C}^{4}$ and therefore carries no physics.** The objection is correct about the formula and wrong about the consequence. The norm is Euclidean, and that is exactly why it is the amplitude: a probability amplitude is an element of a Hilbert space, its norm is the square root of a sum of squared moduli, and the group that preserves that norm is the unitary group and nothing larger. The physical content of $H$ is not the mass. It is the size of the state, and the reason the polar decomposition exists on the whole algebra rather than on the invertibles.
 
 **A second objection is that a decomposition that forgets the phase and the rotation cannot be physical, because those are the interesting parts.** The answer is that the two factors are not ranked. The amplitude answers what the element is and the frame answers how it is turned, and a theory needs both. What the decomposition proves is that the two questions have separate answers, and that the answer to the first is a positive element of the informational sector while the answer to the second is an element of the compact group.
 
@@ -118,7 +118,7 @@ $$
 | $(1+i)e_t$ | $\sqrt2\,e_t$ | $(1+i)e_t/\sqrt2$ | $2$ | $1$ |
 | $0$ | $0$ | $0$ | $0$ | $0$ |
 
-**Two lines of the table carry the distinction that the entry turns on.** The first and the fifth have the same amplitude $\sqrt2 e_t$ and different frames: a rotor and a phase. An amplitude cannot tell them apart, because both are units for $H$. The third and the fourth have rank-one frames and half the H-norm of a frame: they sit on the cone, and their frames are not units at all.
+**Two lines of the table carry the distinction that the entry turns on.** The first and the fifth have the same amplitude $\sqrt2 e_t$ and different frames: a rotor and a phase. An amplitude cannot tell them apart, because both are invertible for $H$. The third and the fourth have rank-one frames and half the H-norm of a frame: they sit on the cone, and their frames are not units at all.
 
 **The amplitude of the second element is worth reading once.** $\tilde Q=e_t+\vec e_x+i\vec e_y$ has $H=3$ and $N=1$, and its amplitude is $\sqrt2 e_t+i(\vec e_y+\vec e_z)/\sqrt2$, which is Hermitian, of H-norm $3$, and whose vector part has length $\sqrt2$. The two norms of the amplitude are $3$ and $1$, the same two numbers as those of the element. The frame is the rotor $(e_t+\vec e_x)/\sqrt2$, exactly the frame of the first element: the phase of the element went into the amplitude's vector part and the rotation stayed in the frame.
 
@@ -217,7 +217,7 @@ and at $\epsilon=0$ the element is $\tfrac{1}{\sqrt2}(e_t+i\vec u)$, with $\tild
 
 **The origin is worse.** At $\tilde Q=0$ both factors vanish, while along $\tilde Q=\epsilon e_t$ the amplitude is $\epsilon e_t$ and the frame is $e_t$. The frame jumps from $e_t$ to $0$, which is the collapse of the rank from two to zero in one step.
 
-**The half-norm of the frame on the cone is a physical number and not a curiosity.** A minimal projection has H-norm $\tfrac12$, so an element on the cone has a frame whose norm is half of the norm of a unit. The missing half is the second rank, and it is the same half that appears in the purity of a pure state.
+**The half-norm of the frame on the cone is a physical number and not a curiosity.** A minimal projection has H-norm $\tfrac12$, so an element on the cone has a frame whose norm is half of the norm of an invertible element. The missing half is the second rank, and it is the same half that appears in the purity of a pure state.
 
 ## The Operator-to-State Map
 

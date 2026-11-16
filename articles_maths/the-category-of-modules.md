@@ -64,7 +64,7 @@ $$
 
 so a finite-dimensional module is a direct sum of $k$ copies of $S$. The module category of $\mathbb{B}$ is thus the category of finite-dimensional complex vector spaces carrying that action; what the biquaternion structure adds over the bare complex field is exactly the action through $S$, and nothing else.
 
-**A caution on tensor products.** For a non-commutative algebra the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module: the two actions compete on the shared algebra, and only a diagonal action survives. The tensor-product ring structure therefore belongs to the group-theoretic side, where the representations are those of the group of units; the module classification above uses direct sums only.
+**A caution on tensor products.** For a non-commutative algebra the tensor product of two left $\mathbb{B}$-modules is not naturally a left $\mathbb{B}$-module: the two actions compete on the shared algebra, and only a diagonal action survives. The tensor-product ring structure therefore belongs to the group-theoretic side, where the representations are those of the group of invertibles; the module classification above uses direct sums only.
 
 ## Projectivity and the Parity of Freeness
 
@@ -136,7 +136,7 @@ Every statement that can be made about $\mathbb{B}$-modules is a statement about
 
 The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.
 
-Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *Zero Divisors and Units*, and for every nonzero $s\in S$ the annihilator
+Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *Zero Divisors and Invertibles*, and for every nonzero $s\in S$ the annihilator
 
 $$
 \operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}
@@ -148,7 +148,7 @@ The remedy is to test against non-zero-divisors. An element $a$ of a ring $A$ is
 
 **Proposition.** Every module over a semisimple ring is torsion-free. In particular $\operatorname{Mod}(\mathbb{B})$ contains no torsion.
 
-*Proof.* In a semisimple ring every regular element is a unit: if $a$ is regular then $Aa$ is a nonzero left ideal and has a complement $I$ with $A=Aa\oplus I$, and regularity forces $I=0$, since $0\neq b\in I$ would give $ab\in Aa\cap I=0$ with $b\neq0$; so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse. If $a$ is regular and $am=0$ then $m=a^{-1}am=0$, so no annihilator contains a regular element.
+*Proof.* In a semisimple ring every regular element is invertible: if $a$ is regular then $Aa$ is a nonzero left ideal and has a complement $I$ with $A=Aa\oplus I$, and regularity forces $I=0$, since $0\neq b\in I$ would give $ab\in Aa\cap I=0$ with $b\neq0$; so $Aa=A$ and $a$ has a right inverse, and symmetrically a left inverse. If $a$ is regular and $am=0$ then $m=a^{-1}am=0$, so no annihilator contains a regular element.
 
 Torsion therefore classifies nothing over $\mathbb{B}$: the structure theory is the direct-sum decomposition of §*The Category of Left Modules* and the parity of §*Projectivity and the Parity of Freeness*, not a torsion submodule. The same vanishing holds over the division algebra $\mathbb{H}$, so the invariant that governs modules over a principal ideal domain has no analogue in either system.
 
@@ -212,7 +212,7 @@ The parameter space deserves a caution. In the Wedderburn–Artin decomposition 
 
 ## The Projective Line and the Möbius Action
 
-**The middle layer of the lattice is the projective line of the defining module, the units act on it by left multiplication, and in a chart the action is the Möbius action of $PGL_2(\mathbb{C})$.**
+**The middle layer of the lattice is the projective line of the defining module, the invertibles act on it by left multiplication, and in a chart the action is the Möbius action of $PGL_2(\mathbb{C})$.**
 
 **The parametrisation.** Let $S\cong\mathbb{C}^2$ be the defining module and $\mathbb{P}(S)$ its projective line. A rank-one idempotent determines two lines, its kernel and its image, and the left and the right families are indexed by different ones of them, so the convention has to keep them apart. Write $\tilde\Pi=w\lambda$ with $\lambda w=e_t$; the rows of $\tilde\Pi$ are multiples of $\lambda$, so
 
@@ -242,7 +242,7 @@ $$
 \tilde Q\cdot L=L\,\tilde Q^{-1}.
 $$
 
-Right multiplication by a unit is an automorphism of the left module $\mathbb{B}$, so it carries minimal left ideals to minimal left ideals. On the parameter it is the natural action on lines: for $L=\mathbb{B}\tilde\Pi$ with $\ker\tilde\Pi=\ell$ one has $L\tilde Q^{-1}=\mathbb{B}(\tilde\Pi\tilde Q^{-1})$ and $\ker(\tilde\Pi\tilde Q^{-1})=\tilde Q\ell$. Left multiplication cannot serve as the action, because $\tilde Q\,\mathbb{B}\tilde\Pi=\mathbb{B}\tilde\Pi$ for every unit $\tilde Q$: it fixes every left ideal setwise, and the parametrisation would be trivial. In the model the action is that of the matrix $P=\mathsf M_2(\tilde Q)$ on the lines of $\mathbb{C}^2$,
+Right multiplication by an invertible element is an automorphism of the left module $\mathbb{B}$, so it carries minimal left ideals to minimal left ideals. On the parameter it is the natural action on lines: for $L=\mathbb{B}\tilde\Pi$ with $\ker\tilde\Pi=\ell$ one has $L\tilde Q^{-1}=\mathbb{B}(\tilde\Pi\tilde Q^{-1})$ and $\ker(\tilde\Pi\tilde Q^{-1})=\tilde Q\ell$. Left multiplication cannot serve as the action, because $\tilde Q\,\mathbb{B}\tilde\Pi=\mathbb{B}\tilde\Pi$ for every invertible $\tilde Q$: it fixes every left ideal setwise, and the parametrisation would be trivial. In the model the action is that of the matrix $P=\mathsf M_2(\tilde Q)$ on the lines of $\mathbb{C}^2$,
 
 $$
 \tilde Q\cdot[\zeta]=[P\zeta].
@@ -274,7 +274,7 @@ $$
 
 a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 
-**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart above, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of a unit with that of its image, $\sigma\circ\varphi_{\tilde Q}=\varphi_{\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
+**The real structure.** Coefficient conjugation $\sigma$ acts on the lattice by the antiholomorphic involution, $t\mapsto-1/\bar t$ in the chart above, with no fixed point; no minimal left ideal is therefore stable under it, and the real structure preserves the subfamily $\mathbb{P}^1(\mathbb{R})$, on which it acts as the antipodal map. Since $\sigma$ is $\mathbb{C}$-antilinear, it intertwines the action of an invertible element with that of its image, $\sigma\circ\varphi_{\tilde Q}=\varphi_{\sigma(\tilde Q)}\circ\sigma$; the two actions are not the same action, and the real structure pairs the orbit of a line under $\mathbb{B}^\times$ with the orbit of its conjugate.
 
 ## Summary
 

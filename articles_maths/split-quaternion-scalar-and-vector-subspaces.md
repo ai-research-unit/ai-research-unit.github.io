@@ -87,7 +87,7 @@ $$
 \langle q_t\rangle_{\natural} = q_t^2 \geq 0,
 $$
 
-a positive-definite form of rank $1$; it vanishes only at $q_t = 0$, so every nonzero scalar is a unit and $S$ contains no zero divisor.
+a positive-definite form of rank $1$; it vanishes only at $q_t = 0$, so every nonzero scalar is invertible and $S$ contains no zero divisor.
 
 **On the vector subspace.** For $\vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ the restriction is
 
@@ -117,7 +117,7 @@ The lightlike class is exactly the null cone, the spacelike class is its outside
 
 **The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}_{\mathrm{spl}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
 
-The restriction to $V$, of signature $(2,1)$, and not a definite form, is the root of the geometry of the category: the unit group of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group* and *Split-Quaternion Geometry*.
+The restriction to $V$, of signature $(2,1)$, and not a definite form, is the root of the geometry of the category: the group of invertibles of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group* and *Split-Quaternion Geometry*.
 
 ## The Lie Algebra of the Vector Subspace
 
@@ -174,21 +174,21 @@ The scalar–vector decomposition is the coarsest of the decompositions of the a
 
 ## Examples
 
-**Example (a scalar element).** For $\tilde q = 5$ the scalar part is $5$ and the vector part is $0$; the split-quaternion norm is $\langle 5\rangle_{\natural} = 25$, and the element is a unit with inverse $1/5$.
+**Example (a scalar element).** For $\tilde q = 5$ the scalar part is $5$ and the vector part is $0$; the split-quaternion norm is $\langle 5\rangle_{\natural} = 25$, and the element is invertible with inverse $1/5$.
 
-**Example (a timelike vector).** For $\vec q = 2\vec e_x$, the split-quaternion norm is $N = 4 > 0$, and the element is a unit with $\vec q^2 = -4$.
+**Example (a timelike vector).** For $\vec q = 2\vec e_x$, the split-quaternion norm is $N = 4 > 0$, and the element is invertible with $\vec q^2 = -4$.
 
-**Example (a lightlike vector).** For $\vec q = \vec e_x + \vec e_z$, the split-quaternion norm is $N = 1 - 1 = 0$ and $\vec q^2 = 0$: the vector is a nilpotent. It is a zero divisor and not a unit.
+**Example (a lightlike vector).** For $\vec q = \vec e_x + \vec e_z$, the split-quaternion norm is $N = 1 - 1 = 0$ and $\vec q^2 = 0$: the vector is a nilpotent. It is a zero divisor and not an invertible element.
 
-**Example (a spacelike vector).** For $\vec q = \vec e_y + \vec e_z$, the split-quaternion norm is $N = -1 - 1 = -2 < 0$ and $\vec q^2 = -\langle \vec q\rangle_{\natural} = 2$. The element is a unit of negative norm.
+**Example (a spacelike vector).** For $\vec q = \vec e_y + \vec e_z$, the split-quaternion norm is $N = -1 - 1 = -2 < 0$ and $\vec q^2 = -\langle \vec q\rangle_{\natural} = 2$. The element is invertible in negative norm.
 
-**Example (a generic element).** For $\tilde q = 3 - \vec e_x + 2\vec e_y$, the scalar part is $3 \in S$ and the vector part is $-\vec e_x + 2\vec e_y \in V$, with $\langle\tilde q\rangle_{\natural} = 9 + 1 - 4 = 6$ and $\tilde q$ a unit.
+**Example (a generic element).** For $\tilde q = 3 - \vec e_x + 2\vec e_y$, the scalar part is $3 \in S$ and the vector part is $-\vec e_x + 2\vec e_y \in V$, with $\langle\tilde q\rangle_{\natural} = 9 + 1 - 4 = 6$ and $\tilde q$ an invertible element.
 
 ## Summary
 
 The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}_{\mathrm{spl}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$.
 
-The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ on $S$, positive definite, and to the Minkowski form $\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The unit group acts on $V$ preserving the restricted form, which is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
+The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ on $S$, positive definite, and to the Minkowski form $\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The group of invertibles acts on $V$ preserving the restricted form, which is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 

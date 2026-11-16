@@ -30,7 +30,7 @@ $$
 \Pi_{\pm}=\tfrac12(1\pm j).
 $$
 
-The trivial idempotents are Hermitian, fixed by the conjugation; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent of the algebra is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two real equations $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, each with two solutions, hence four roots. Each root carries the two idempotents $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=1-\Pi_{+}(Ζ)$, a complete orthogonal pair whose difference is the root; the class $\{Ζ,-Ζ\}$ gives the same unordered pair. The roots of $+1$ form the four-element group $\{\pm1,\pm j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is a unit of the plain product.
+The trivial idempotents are Hermitian, fixed by the conjugation; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent of the algebra is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two real equations $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, each with two solutions, hence four roots. Each root carries the two idempotents $\Pi_{+}(Ζ)=\tfrac12(1+Ζ)$ and $\Pi_{-}(Ζ)=\tfrac12(1-Ζ)=1-\Pi_{+}(Ζ)$, a complete orthogonal pair whose difference is the root; the class $\{Ζ,-Ζ\}$ gives the same unordered pair. The roots of $+1$ form the four-element group $\{\pm1,\pm j\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is invertible in the plain product.
 
 The following table collects the results at a glance.
 
@@ -173,7 +173,7 @@ $$
 \mathcal{R}_{+1}=\{1,-1,j,-j\}
 $$
 
-is a subgroup of the group of units of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.
+is a subgroup of the group of invertibles of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
 **Proof.** The product of two roots is a root, because $(Ζ B)^{2}=Ζ^{2}B^{2}=1$; the unit is $1$; and each element is its own inverse, $Ζ^{2}=1$. The group is abelian of order four with every non-identity element of order two, hence $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
@@ -198,7 +198,7 @@ The status of the roots is collected in the table.
 | Norm | $\langle\pm1\rangle_{*}=1$, $\langle\pm j\rangle_{*}=-1$ |
 | Position | the real roots on the real line, the imaginary roots on the split imaginary line |
 
-No root of $+1$ is a zero divisor, because every root is a unit; the real roots $\pm1$ lie on the real axis, on the unit hyperbola $\langle Q\rangle_{*}=1$, and the imaginary roots $\pm j$ lie on the split imaginary axis, on the hyperbola $\langle Q\rangle_{*}=-1$; none lies on the null cone. The shell of the plain algebraic norm at $1$ is exactly this four-element set (*Norm and Invertibility in the Split-Complex Algebra*).
+No root of $+1$ is a zero divisor, because every root is invertible; the real roots $\pm1$ lie on the real axis, on the unit hyperbola $\langle Q\rangle_{*}=1$, and the imaginary roots $\pm j$ lie on the split imaginary axis, on the hyperbola $\langle Q\rangle_{*}=-1$; none lies on the null cone. The shell of the plain algebraic norm at $1$ is exactly this four-element set (*Norm and Invertibility in the Split-Complex Algebra*).
 
 ## The Idempotents
 

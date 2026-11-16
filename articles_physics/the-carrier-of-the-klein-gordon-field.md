@@ -128,8 +128,8 @@ The centre carries a continuous phase, so the charge survives the restriction; t
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the equation, the four-copy theorem and the conjugate pair.
 - [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html), for the carrier of a spin-one-half field and the minimal left ideal.
 - [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the carrier of a spin-one field and the material sector.
-- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the classification of the three carriers and their relation to the sectors.
+- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the classification of the three carriers and their relation to the sectors.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the coupling prescription and the two writings of the coupled equation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the collapse of the polar word on a central field.
 - [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for the module category that fixes the carrier.
-- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the algebra, the units and the conjugations.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the algebra, the invertibles and the conjugations.

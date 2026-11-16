@@ -123,7 +123,7 @@ with $J_1=e_1\wedge e_2+e_3\wedge e_4$ self-dual and $J_2=e_1\wedge e_2-e_3\wedg
 
 **Proof.** The left multiplications form a three-dimensional Lie algebra isomorphic to $\mathfrak{sl}_2$, the right ones another, and they commute.
 
-**The reality of the spectrum in the biquaternion language.** The left multiplication by a unit biquaternion of the form $e^{u}$ with $u$ imaginary has eigenvalues $e^{\pm i\theta}$, each twice, which is the statement that the two planes rotate by the same angle.
+**The reality of the spectrum in the biquaternion language.** The left multiplication by an invertible element biquaternion of the form $e^{u}$ with $u$ imaginary has eigenvalues $e^{\pm i\theta}$, each twice, which is the statement that the two planes rotate by the same angle.
 
 **Proof.** The eigenvalues of the left matrix are those of the multiplication operator, computed from the $2\times2$ image.
 

@@ -90,7 +90,7 @@ $$
 f = \sqrt2\,v_0 ,
 $$
 
-with the shift symmetry $\vartheta_{\mathrm{fld}}\to\vartheta_{\mathrm{fld}}+\text{const}$ realised nonlinearly. The angle $\theta_{\mathrm{gld}}$ is real because the field and the decay constant are both real with $f>0$, and it is dimensionless because the two have the same dimension. The constant $f$ is the order parameter in the units fixed by the kinetic term — it does not appear in the canonical kinetic energy, only in the nonlinear field and in the current — and the dynamics of the radial sector is relegated to the dimensionless coefficients of the omitted higher-derivative terms. This is the abelian nonlinear sigma model with target $\mathbb{S}^1$: the field is a phase, the target is a circle, and the shift is its isometry.
+with the shift symmetry $\vartheta_{\mathrm{fld}}\to\vartheta_{\mathrm{fld}}+\text{const}$ realised nonlinearly. The angle $\theta_{\mathrm{gld}}$ is real because the field and the decay constant are both real with $f>0$, and it is dimensionless because the two have the same dimension. The constant $f$ is the order parameter in the invertibles fixed by the kinetic term — it does not appear in the canonical kinetic energy, only in the nonlinear field and in the current — and the dynamics of the radial sector is relegated to the dimensionless coefficients of the omitted higher-derivative terms. This is the abelian nonlinear sigma model with target $\mathbb{S}^1$: the field is a phase, the target is a circle, and the shift is its isometry.
 
 The two facts to retain are that the nonlinear field is the exponential of the broken direction,
 

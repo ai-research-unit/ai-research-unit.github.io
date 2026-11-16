@@ -34,7 +34,7 @@ and $\operatorname{tr}E_{kl}=\delta_{kl}$.
 
 ## The Simple Nilpotents
 
-**The superdiagonal units are nilpotent of index two, and every unit is a product of consecutive ones.** Put
+**The superdiagonal units are nilpotent of index two, and every invertible element is a product of consecutive ones.** Put
 
 $$
 N_k=E_{k,k+1},\qquad k=1,\dots,n-1.
@@ -112,7 +112,7 @@ $$
 E_{kl}=E_{k,k+1}\cdots E_{l-1,l},
 $$
 
-so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the units is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.
+so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the invertibles is the coboundary of the $0$-cochain $t$, and a coboundary has no freedom beyond the cochain modulo constants.
 
 **The idempotents do not depend on the gauge.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units, never on the diagonal. In particular the projectors $P_k$ and the spectral decomposition $H=\sum_k\omega_kP_k$ are gauge invariant. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
 
@@ -237,7 +237,7 @@ An adapted frame $(v_1,\dots,v_n)$ gives the matrix units $E_{kl}=v_k\ell_l$, wi
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for matrix units, Peirce corners and the coordinate algebra of a frame.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for bases, dual bases and the matrix of a linear map.
 - [Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-mnc.html), for the root that fixes the flag.
-- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the corners that the units span.
+- [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the corners that the invertibles span.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for the pair $\vec\Upsilon_{+-},\vec\Upsilon_{-+}$ that is $N_1,N_1^{\mathsf T}$ at $n=2$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_3(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m3c.html), the case $n=3$.

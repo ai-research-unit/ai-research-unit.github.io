@@ -139,7 +139,7 @@ $$
 \;},
 $$
 
-so that the **symbol** of the operator is the frequency vector $\zeta \in V$; the symbol is invertible exactly when $\zeta$ is a unit, that is exactly when $\langle \zeta\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
+so that the **symbol** of the operator is the frequency vector $\zeta \in V$; the symbol is invertible exactly when $\zeta$ is invertible, that is exactly when $\langle \zeta\rangle_{\natural} \neq 0$, and it degenerates on the null cone, the zero divisor set. The singular set of the symbol is the characteristic variety of the operator, in agreement with *Split-Quaternion Analysis*, §*The Differential Operators*.
 
 **Proof.** Integration by parts in each coordinate gives $\widehat{\partial/\partial q_i f} = -2\pi\mathrm{i}\zeta_i\mathcal F f$, and the generators multiply the scalar-valued transform centrally; the identification of the invertible frequencies with $N \neq 0$ is the invertibility criterion of *Split-Quaternion Norm and Invertibility*.
 
@@ -167,7 +167,7 @@ a distribution whose singular support is exactly the null cone. The vanishing de
 
 **Theorem (The Symbol and the Singular Frequencies).** The symbol of the vector operator at frequency $\zeta$ is the frequency $\zeta$ itself, and the symbol is invertible exactly when $\langle \zeta\rangle_{\natural} \neq 0$; the singular frequencies are the null cone, which is the zero divisor set of the algebra.
 
-**Proof.** The operator has constant coefficients, so its symbol is the frequency vector, and the symbol is invertible exactly when the frequency is a unit, that is when $\langle \zeta\rangle_{\natural} \neq 0$ by the invertibility criterion; the set $\{N = 0\}$ is the null cone, the zero divisor set.
+**Proof.** The operator has constant coefficients, so its symbol is the frequency vector, and the symbol is invertible exactly when the frequency is invertible, that is when $\langle \zeta\rangle_{\natural} \neq 0$ by the invertibility criterion; the set $\{N = 0\}$ is the null cone, the zero divisor set.
 
 The degeneracy of the harmonic analysis on the null cone is therefore read in the algebra alone, as the non-invertibility of the frequency: the vanishing of the determinant of the symbol is the vanishing of the split-quaternion norm, and no further object is needed to locate it.
 

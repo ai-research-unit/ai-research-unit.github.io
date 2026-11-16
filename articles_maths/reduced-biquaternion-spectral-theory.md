@@ -8,7 +8,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 
 ## The Spectrum of an Element
 
-**Definition.** The **spectrum** of $\breve Q$ is the set of complex $\lambda$ for which $\lambda L_{1}-L_{\breve Q}$ is not invertible, $L_{\breve Q}$ being the operator of left multiplication on the complex two-dimensional space $\mathbb{B}_{\mathrm{red}}$ with basis $1,j$. The element is **regular** as an element of the algebra when it is a unit, and **singular** otherwise.
+**Definition.** The **spectrum** of $\breve Q$ is the set of complex $\lambda$ for which $\lambda L_{1}-L_{\breve Q}$ is not invertible, $L_{\breve Q}$ being the operator of left multiplication on the complex two-dimensional space $\mathbb{B}_{\mathrm{red}}$ with basis $1,j$. The element is **regular** as an element of the algebra when it is invertible, and **singular** otherwise.
 
 **Theorem (the spectrum is the coordinate pair).** The characteristic polynomial of $L_{\breve Q}$ is
 $$
@@ -74,11 +74,11 @@ the second expression being the companion formula in the basis $1,j$.
 
 ## Similarity and the Classification
 
-**Definition.** Two elements are **similar**, written $\breve Q_{1}\sim \breve Q_{2}$, when $P\breve Q_{1}P^{-1}=\breve Q_{2}$ for some unit $P$.
+**Definition.** Two elements are **similar**, written $\breve Q_{1}\sim \breve Q_{2}$, when $P\breve Q_{1}P^{-1}=\breve Q_{2}$ for some invertible $P$.
 
 **Theorem (the classification).** $\breve Q_{1}\sim \breve Q_{2}$ if and only if $Q_{1+}=Q_{2+}$ and $Q_{1-}=Q_{2-}$, that is if and only if the two elements have the same ordered pair of idempotent coordinates; the reduced trace and the reduced determinant alone fix only the unordered pair. The similarity classes are therefore the ordered pairs $(Q_{+},Q_{-})\in\mathbb{C}^{2}$, and there is no Jordan pathology: every element is diagonal, and the only nilpotent element is $0$.
 
-*Proof.* A unit $P$ has coordinates $(p,q)$ with $p,q\neq0$ and conjugates $\breve Q_{1}$ to $(pQ_{1+}p^{-1},qQ_{1-}q^{-1})=(Q_{1+},Q_{1-})$, so similarity does not change the coordinates; conversely, if the coordinates agree, the identity is a conjugating unit. No permutation of the two coordinates is induced by a unit, since the unit group acts diagonally, so the pair is ordered. Finally $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$, which vanishes for some $n$ exactly when $Q_{+}=Q_{-}=0$.
+*Proof.* an invertible element $P$ has coordinates $(p,q)$ with $p,q\neq0$ and conjugates $\breve Q_{1}$ to $(pQ_{1+}p^{-1},qQ_{1-}q^{-1})=(Q_{1+},Q_{1-})$, so similarity does not change the coordinates; conversely, if the coordinates agree, the identity is a conjugating unit. No permutation of the two coordinates is induced by an invertible element, since the group of invertibles acts diagonally, so the pair is ordered. Finally $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$, which vanishes for some $n$ exactly when $Q_{+}=Q_{-}=0$.
 
 **Corollary (the commutant).** The centraliser of a non-scalar element $\breve Q$, that is the set of $\breve Q_{2}$ with $\breve Q \breve Q_{2}=\breve Q_{2}\breve Q$, is the whole algebra, since the algebra is commutative; and the automorphisms of the algebra act on the coordinates by the permutations and the coordinatewise conjugations rather than by an inner action.
 
@@ -135,11 +135,11 @@ computed from the two coordinates alone, and there is no nilpotent block.
 $$
 \exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-,
 $$
-it maps the algebra into the unit group, and the reduced determinant is $\det(\exp \breve Q)=e^{Q_{+}+Q_{-}}=e^{\operatorname{tr}(\breve Q)}$. The exponential is never zero, so every element of the image is a unit; it is not injective, its kernel being the elements with $Q_{+},Q_{-}\in2\pi i\mathbb{Z}$.
+it maps the algebra into the group of invertibles, and the reduced determinant is $\det(\exp \breve Q)=e^{Q_{+}+Q_{-}}=e^{\operatorname{tr}(\breve Q)}$. The exponential is never zero, so every element of the image is invertible; it is not injective, its kernel being the elements with $Q_{+},Q_{-}\in2\pi i\mathbb{Z}$.
 
 *Proof.* The exponential of a diagonal operator is diagonal with the exponentials of the entries, and the coordinates are the characters, so $\exp(\breve Q)$ has coordinates $e^{Q_{+}},e^{Q_{-}}$; the determinant is the product, $e^{Q_{+}}e^{Q_{-}}=e^{Q_{+}+Q_{-}}$; the kernel is the preimage of $1$, that is $e^{Q_{+}}=e^{Q_{-}}=1$.
 
-**Theorem (the logarithm).** An element $\breve Q$ has a logarithm, that is a solution of $\exp \breve Q_{2}=\breve Q$, if and only if it is a unit, and then
+**Theorem (the logarithm).** An element $\breve Q$ has a logarithm, that is a solution of $\exp \breve Q_{2}=\breve Q$, if and only if it is invertible, and then
 $$
 \log \breve Q=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-
 $$
@@ -153,7 +153,7 @@ The biquaternion algebra $\mathbb{B}=M_{2}(\mathbb{C})$ is simple, with a single
 
 ## Summary
 
-The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\{Q_{+},Q_{-}\}$, the pair of its idempotent coordinates, which are the eigenvalues of left multiplication in the basis $1,j$ with matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$. Left and right eigenvalues coincide, because the algebra is commutative, and the intrinsic spectrum over $\mathbb{C}$ is the operator spectrum; there is no quaternionic or S-spectrum. The reduced trace $\operatorname{tr}(\breve Q)=2Q_{\blacktriangle}=Q_{+}+Q_{-}$ is additive and the reduced determinant $\det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative and vanishes exactly on the zero-divisor set, and Cayley–Hamilton reads $\breve Q^{2}-\operatorname{tr}(\breve Q)\breve Q+\det(\breve Q)1=0$, the minimal polynomial having degree at most two. Similarity changes neither coordinate, so the classes are the ordered pairs $(Q_{+},Q_{-})$; the eigenspaces are the two idempotent lines when $Q_{+}\neq Q_{-}$ and the whole algebra when $\breve Q$ is a scalar; the resolvent is $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$, analytic off the two points and satisfying the resolvent identity; and the spectral radius is $\max(|Q_{+}|,|Q_{-}|)$, equal to the operator norm of left multiplication and vanishing only at $0$, there being no non-zero nilpotent. The exponential is $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$, its determinant is $e^{\operatorname{tr}(\breve Q)}$, and the logarithm exists exactly on the units for a branch choice in each coordinate. Against the biquaternion and split biquaternion theories the finite complex spectrum, the field-valued trace and determinant and the diagonal model replace the S-spectrum, the quaternionic trace and norm functionals and the conjugate-class structure, the whole theory being the pair of the complex one-variable spectral theories of the two coordinates.
+The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\{Q_{+},Q_{-}\}$, the pair of its idempotent coordinates, which are the eigenvalues of left multiplication in the basis $1,j$ with matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$. Left and right eigenvalues coincide, because the algebra is commutative, and the intrinsic spectrum over $\mathbb{C}$ is the operator spectrum; there is no quaternionic or S-spectrum. The reduced trace $\operatorname{tr}(\breve Q)=2Q_{\blacktriangle}=Q_{+}+Q_{-}$ is additive and the reduced determinant $\det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative and vanishes exactly on the zero-divisor set, and Cayley–Hamilton reads $\breve Q^{2}-\operatorname{tr}(\breve Q)\breve Q+\det(\breve Q)1=0$, the minimal polynomial having degree at most two. Similarity changes neither coordinate, so the classes are the ordered pairs $(Q_{+},Q_{-})$; the eigenspaces are the two idempotent lines when $Q_{+}\neq Q_{-}$ and the whole algebra when $\breve Q$ is a scalar; the resolvent is $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$, analytic off the two points and satisfying the resolvent identity; and the spectral radius is $\max(|Q_{+}|,|Q_{-}|)$, equal to the operator norm of left multiplication and vanishing only at $0$, there being no non-zero nilpotent. The exponential is $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$, its determinant is $e^{\operatorname{tr}(\breve Q)}$, and the logarithm exists exactly on the invertibles for a branch choice in each coordinate. Against the biquaternion and split biquaternion theories the finite complex spectrum, the field-valued trace and determinant and the diagonal model replace the S-spectrum, the quaternionic trace and norm functionals and the conjugate-class structure, the whole theory being the pair of the complex one-variable spectral theories of the two coordinates.
 
 ## Summary of Notation
 
@@ -168,7 +168,7 @@ The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\
 | $R(\lambda,\breve Q)=(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$ | Resolvent |
 | $\rho(\breve Q)=\max(\lvert Q_{+}\rvert,\lvert Q_{-}\rvert)$ | Spectral radius |
 | $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$ | Exponential |
-| $\log \breve Q=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$ | Logarithm on the units |
+| $\log \breve Q=\log Q_{+}\,\Pi_++\log Q_{-}\,\Pi_-$ | Logarithm on the invertibles |
 
 ## Further Reading
 

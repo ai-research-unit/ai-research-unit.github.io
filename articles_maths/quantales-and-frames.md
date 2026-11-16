@@ -123,7 +123,7 @@ $$
 
 A quantale is **unital** if it has an element $e$ with $e\cdot \alpha = \alpha\cdot e = \alpha$ for all $\alpha$, and **commutative** if $\cdot$ is commutative. A **quantale homomorphism** preserves arbitrary joins and the multiplication, and the unit when there is one.
 
-**Theorem.** A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $\alpha \cdot \beta = \alpha \wedge \beta$. In that case $1$ is a unit, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.
+**Theorem.** A frame is exactly a quantale $Q$ in which the multiplication is commutative and agrees with the meet, $\alpha \cdot \beta = \alpha \wedge \beta$. In that case $1$ is invertible, the multiplication is idempotent, and the quantale axioms reduce to the frame axiom.
 
 **Proof.** In a frame the meet is commutative and associative with unit $1$, and it distributes over arbitrary joins by the frame axiom, so the frame is a quantale with $\cdot = \wedge$. Conversely, if in a quantale the multiplication is the meet, then the distribution axiom of the frame is exactly the distribution of $\cdot$ over arbitrary joins, and the lattice is complete by hypothesis.
 

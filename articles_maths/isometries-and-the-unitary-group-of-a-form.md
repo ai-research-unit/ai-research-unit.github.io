@@ -12,7 +12,7 @@ The group is the stabiliser of the form under congruence (*Congruence and the St
 
 **Definition.** An operator $T$ is an **isometry** of $h$ when $h(Tx,Ty) = h(x,y)$ for all $x, y \in A$. The isometries form the **isometry set** $\operatorname{Iso}(A,h)$, and the **unitary group** $\mathrm{U}(A,h)$ is the group of the invertible isometries.
 
-**Proposition.** The isometry set is a monoid under composition, and the unitary group is its group of units.
+**Proposition.** The isometry set is a monoid under composition, and the unitary group is its group of invertibles.
 
 **Proof.** The identity is an isometry, the composite of two isometries is an isometry, and $\mathrm{U}(A,h)$ is by definition the set of the isometries invertible in the monoid. The group law is the composition, the inverse of an isometry is an isometry because $h(T^{-1}x, T^{-1}y) = h(TT^{-1}x, TT^{-1}y) = h(x,y)$ applying the isometry to the pair $(T^{-1}x, T^{-1}y)$.
 
@@ -83,7 +83,7 @@ On $\mathbb{B}$ with the dagger of *Hermitian Algebras*, the unitary slice $U = 
 
 ## Summary
 
-- An **isometry** of $h$ is an operator with $h(Tx,Ty) = h(x,y)$; the isometries form a monoid and the **unitary group** $\mathrm{U}(A,h)$ is its group of units.
+- An **isometry** of $h$ is an operator with $h(Tx,Ty) = h(x,y)$; the isometries form a monoid and the **unitary group** $\mathrm{U}(A,h)$ is its group of invertibles.
 - For a nonsingular form and an operator with an adjoint, $T$ is an isometry exactly when $T^{*}T = 1$.
 - Over a field and in finite dimension with $h$ non-degenerate every isometry is invertible, so the equation alone defines the group; over a general ring the injectivity does not give the surjectivity and the two notions separate.
 - On the group the adjoint is the inverse, $T^{-1} = T^{*}$, so the involution of the operators is the group inverse; the determinant obeys $\det(T)\varsigma(\det(T)) = 1$.

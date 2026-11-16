@@ -2,7 +2,7 @@
 
 ## Introduction
 
-$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.
+$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its group of invertibles is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.
 
 This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of *The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$* and the coordinates of *The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$* are built.
 
@@ -42,9 +42,9 @@ $$
 
 **Proof.** Multiply the two sums and apply the rule; the only surviving terms have matching inner indices.
 
-### The Unit Group
+### The Group of Invertibles
 
-**Definition.** $GL_6(\mathbb{C})=\{A\in M_6(\mathbb{C}):\det A\neq0\}$ is the unit group, and $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times I_6$ is the projective linear group.
+**Definition.** $GL_6(\mathbb{C})=\{A\in M_6(\mathbb{C}):\det A\neq0\}$ is the group of invertibles, and $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times I_6$ is the projective linear group.
 
 **Proposition.** $GL_6(\mathbb{C})$ is a complex Lie group of dimension $36$, and $PGL_6(\mathbb{C})$ is a complex Lie group of dimension $35$.
 
@@ -104,7 +104,7 @@ $$
 E_{ki}AE_{jl}=A_{ij}E_{kl}\in J,
 $$
 
-because $J$ is a two-sided ideal. Since $A_{ij}\neq0$, every matrix unit $E_{kl}$ lies in $J$, and the units span $M_6$. So $J=M_6$.
+because $J$ is a two-sided ideal. Since $A_{ij}\neq0$, every matrix unit $E_{kl}$ lies in $J$, and the invertibles span $M_6$. So $J=M_6$.
 
 **Corollary (the left ideals).** The six spaces
 

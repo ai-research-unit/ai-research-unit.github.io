@@ -39,7 +39,7 @@ $$
 | the fundamental symmetry $J={}^{\natural}$ and the bridge to the definite form | [The Fundamental Symmetry of the Form](../articles_maths/the-fundamental-symmetry-of-the-form.html) |
 | the level sets, the complex hyperbolic ball, the real hyperbolic slice and the boundary | [The Krein Level Sets and the Hyperbolic Structure](../articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.html) |
 | the isometry group $\mathrm{U}(1,3)$, its boosts, its Cartan decomposition and its action | [The Krein Isometry Group and Its Cartan Decomposition](../articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.html) |
-| the multiplicative norm, the unit group and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the multiplicative norm, the group of invertibles and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the rank of the one-sided multiplications, the two-sided operator and the polar decomposition | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the four products and their relations, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the minimal Hermitian idempotents, the Peirce lines and their normal form | [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
@@ -68,7 +68,7 @@ $$
 ### The Null Set
 
 - $\mathcal K=\{\mathrm{Kr}=0\}=\mathbb{C}^{\times}\cdot(e_t+S^{5})$, of real dimension seven, smooth off the origin, homotopy equivalent to $S^{1}\times S^{5}$.
-- Every non-zero null element has $Q_t\neq0$; the null set meets the unit group and the zero-divisor set, and its own origin is neither.
+- Every non-zero null element has $Q_t\neq0$; the null set meets the group of invertibles and the zero-divisor set, and its own origin is neither.
 - The isometry group $\mathrm{U}(1,3)$ acts transitively on $\mathcal K\setminus\{0\}$, so no continuous invariant survives inside the wall except the value, which is constant there.
 - The null set splits into the doubly null set $\mathcal K_{\mathrm d}=\mathcal K\cap\mathcal N=\mathbb{C}^{\times}\cdot(e_t+iS^{2})$, of real dimension four, and the isotropic units $\mathcal K_{\mathrm u}$, its open dense complement of real dimension seven.
 - The doubly null set off the origin is exactly the union of the Peirce lines $\mathbb{C}(e_t+i\vec u)$, and every point of it is spectrally regular, with $B^{2}=-Q_t^{2}\neq0$.
@@ -89,8 +89,8 @@ $$
 ### The Operators
 
 - The rank of left multiplication follows the algebraic norm: four on the units, two on the zero divisors off the origin, zero at the origin.
-- The two-sided operator $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is invertible on the units and of rank one on the null cone off the origin.
-- The polar decomposition exists exactly on the units, and the K norm imposes no further restriction; the K adjoint exists everywhere, because the form is non-degenerate.
+- The two-sided operator $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ is invertible on the invertibles and of rank one on the null cone off the origin.
+- The polar decomposition exists exactly on the invertibles, and the K norm imposes no further restriction; the K adjoint exists everywhere, because the form is non-degenerate.
 - The level sets of the value are single orbits of $\mathrm{U}(1,3)$: of type $\mathrm{U}(1,3)/\mathrm{U}(3)$ for a positive value and $\mathrm{U}(1,3)/\mathrm{U}(1,2)$ for a negative one, both of real dimension seven.
 
 ## The Fourth Norm
@@ -152,7 +152,7 @@ $$
 
 **No algebra multiplication preserves the value, and this is the structural difference from the other three norms.** The Hermitian norm is invariant under both-sided $*$-unitary multiplication. The quaternionic norm is multiplicative, so it is preserved by a multiplication exactly when the factor has norm one. The K norm is preserved by no multiplication except that of a scalar of modulus one: a left factor of norm one such as $\vec e_x$ sends $e_t+2\vec e_x$, of value $-3$, to $\vec e_x-2e_t$, of value $3$. The value is a property of the element in the frame, not a property the element carries through a product.
 
-**The word *regular* in this section is metric and not ring-theoretic.** A ring-regular element is a non-zero-divisor. A K-regular element is one of non-zero value. The two readings differ: $e_t+\vec e_x$ is K-degenerate and a unit, while $\vec e_x+i\vec e_y$ is ring-degenerate and K-regular. The only implication between them runs one way, and it is the theorem of §*The Two Partitions*.
+**The word *regular* in this section is metric and not ring-theoretic.** A ring-regular element is a non-zero-divisor. A K-regular element is one of non-zero value. The two readings differ: $e_t+\vec e_x$ is K-degenerate and an invertible element, while $\vec e_x+i\vec e_y$ is ring-degenerate and K-regular. The only implication between them runs one way, and it is the theorem of §*The Two Partitions*.
 
 ## The Wall
 
@@ -225,7 +225,7 @@ $$
 | the algebraic null cone | $N=0$ | $6$ | no | yes, off the origin |
 | their intersection | $\mathrm{Kr}=0$ and $N=0$ | $4$ | no | yes, off the origin |
 
-**The two witnesses are the shortest proof that neither set contains the other.** The element $e_t+\vec e_x$ is null and a unit, with $N=2$. The element $\vec e_x+i\vec e_y$ is a zero divisor and not null, with value $-2$. The intersection is not empty: it is the doubly null set.
+**The two witnesses are the shortest proof that neither set contains the other.** The element $e_t+\vec e_x$ is null and an invertible element, with $N=2$. The element $\vec e_x+i\vec e_y$ is a zero divisor and not null, with value $-2$. The intersection is not empty: it is the doubly null set.
 
 **The null set splits into two strata, and the split is the trace of the algebraic partition.**
 
@@ -245,7 +245,7 @@ $$
 \tilde\Pi_{\vec u}^{2}=\tilde\Pi_{\vec u}.
 $$
 
-**The two strata are separated by the algebraic norm and by nothing else.** On $\mathcal K_{\mathrm u}$ the algebraic norm takes every non-zero complex value, so the stratum is a cone of units. On $\mathcal K_{\mathrm d}$ it vanishes identically, so the punctured stratum is a set of zero divisors. The K value is zero on both, which is the precise sense in which the metric partition cannot see the difference.
+**The two strata are separated by the algebraic norm and by nothing else.** On $\mathcal K_{\mathrm u}$ the algebraic norm takes every non-zero complex value, so the stratum is a cone of invertibles. On $\mathcal K_{\mathrm d}$ it vanishes identically, so the punctured stratum is a set of zero divisors. The K value is zero on both, which is the precise sense in which the metric partition cannot see the difference.
 
 **The doubly null stratum is entirely spectrally regular off the origin, and this is the sharpest single fact about it.** On $\mathcal K_{\mathrm d}$ the two equations give $Q_t^{2}+B^{2}=0$ with $Q_t\neq0$, hence
 
@@ -277,7 +277,7 @@ $$
 
 ## The Two Partitions
 
-**The algebra carries two partitions, and the entry's job is to say how they meet.** The metric partition is by the sign of the K norm. The algebraic partition is by invertibility: the unit group, the origin, and the zero-divisor cone. The pair of numbers $(\mathrm{Kr},N)$ records both, and the table gives one witness per cell.
+**The algebra carries two partitions, and the entry's job is to say how they meet.** The metric partition is by the sign of the K norm. The algebraic partition is by invertibility: the group of invertibles, the origin, and the zero-divisor cone. The pair of numbers $(\mathrm{Kr},N)$ records both, and the table gives one witness per cell.
 
 | $\mathrm{Kr}$ | unit | zero divisor |
 | --- | --- | --- |
@@ -285,11 +285,11 @@ $$
 | negative | $e_t+2\vec e_x$, pair $(-3,5)$ | $\vec e_x+i\vec e_y$, pair $(-2,0)$ |
 | null | $e_t+\vec e_x$, pair $(0,2)$ | $e_t+i\vec e_x$, pair $(0,0)$ |
 
-**The origin sits outside the table.** It has the pair $(0,0)$ and is neither a unit nor a zero divisor, so it is the one point that the algebraic partition separates from everything else and the one point at which the metric partition is degenerate without being informative.
+**The origin sits outside the table.** It has the pair $(0,0)$ and is neither an invertible element nor a zero divisor, so it is the one point that the algebraic partition separates from everything else and the one point at which the metric partition is degenerate without being informative.
 
 **The comparison is one-sided, and the one implication is a theorem.**
 
-**Theorem (positive implies unit).** If $\mathrm{Kr}(\tilde Q)>0$ then $\tilde Q$ has an inverse.
+**Theorem (positive implies invertible).** If $\mathrm{Kr}(\tilde Q)>0$ then $\tilde Q$ has an inverse.
 
 *Proof.* Positivity gives $|Q_t|>\lVert\vec Q\rVert$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor then $Q_t^{2}=-B^{2}$, so
 
@@ -297,7 +297,7 @@ $$
 |Q_t|^{2}=\Bigl|\sum_kQ_k^{2}\Bigr|\le\sum_k|Q_k|^{2}=\lVert\vec Q\rVert^{2},
 $$
 
-against positivity. A non-zero element that is not a zero divisor is a unit.
+against positivity. A non-zero element that is not a zero divisor is invertible.
 
 **The same inequality run in the other direction says where the zero divisors live.**
 
@@ -305,7 +305,7 @@ against positivity. A non-zero element that is not a zero divisor is a unit.
 
 *Proof.* The zero divisors are the non-zero elements with $N=0$, which is the inequality just proved. Equality needs $|Q_t|^{2}=\lVert\vec Q\rVert^{2}$ as well, hence both conditions, hence $\mathcal K_{\mathrm d}$.
 
-**The three converses fail, and each failure has a witness of one line.** A negative unit is $e_t+2\vec e_x$. A negative zero divisor is $\vec e_x+i\vec e_y$. A null unit is $e_t+\vec e_x$. So the unit group meets all three strata, and the zero-divisor set meets two of them.
+**The three converses fail, and each failure has a witness of one line.** A negative unit is $e_t+2\vec e_x$. A negative zero divisor is $\vec e_x+i\vec e_y$. A null unit is $e_t+\vec e_x$. So the group of invertibles meets all three strata, and the zero-divisor set meets two of them.
 
 **Inversion preserves the sign and rescales the value.**
 
@@ -394,8 +394,8 @@ $$
 | --- | --- | --- | --- | --- |
 | the centre $\mathbb{B}_{C}$ | $2$ | $(2,0)$ | none | — |
 | the vector subspace $\mathbb{B}_{V}$ | $6$ | $(0,6)$ | none | — |
-| the quaternion subspace $\mathbb{B}_{H}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is a unit |
-| the anti-quaternion subspace $\mathbb{B}_{iH}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is a unit |
+| the quaternion subspace $\mathbb{B}_{H}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is invertible |
+| the anti-quaternion subspace $\mathbb{B}_{iH}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is invertible |
 | the informational sector $\mathbb{B}_{\Psi}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is a zero divisor |
 | the material sector $\mathbb{B}_{\Phi}$ | $4$ | $(1,3)$ | a cone of dimension $3$ | every one is a zero divisor |
 
@@ -411,7 +411,7 @@ N=q_t^{2}+\lVert\vec q\rVert^{2},
 \mathrm{Kr}=q_t^{2}-\lVert\vec q\rVert^{2}.
 $$
 
-**A null element has $q_t^{2}=\lVert\vec q\rVert^{2}$, hence $N=2q_t^{2}\neq0$ off the origin, and it is a unit.** The same computation on the anti-quaternion subspace, where all four coefficients are purely imaginary, gives $\mathrm{Kr}=q_t^{2}-\lVert\vec q\rVert^{2}$ and $N=-(q_t^{2}+\lVert\vec q\rVert^{2})$, which is also non-zero off the origin.
+**A null element has $q_t^{2}=\lVert\vec q\rVert^{2}$, hence $N=2q_t^{2}\neq0$ off the origin, and it is invertible.** The same computation on the anti-quaternion subspace, where all four coefficients are purely imaginary, gives $\mathrm{Kr}=q_t^{2}-\lVert\vec q\rVert^{2}$ and $N=-(q_t^{2}+\lVert\vec q\rVert^{2})$, which is also non-zero off the origin.
 
 **On the informational sector the scalar part is real and the vector part purely imaginary.** A null element has $a_0^{2}=\lVert\vec a\rVert^{2}$, which is exactly the vanishing of $N=a_0^{2}-\lVert\vec a\rVert^{2}$, so every non-zero null element is a zero divisor. The material sector is the same statement multiplied by $i$, with the signs of both norms reversed.
 
@@ -425,12 +425,12 @@ $$
 
 | operator | follows | behaviour on the K strata |
 | --- | --- | --- |
-| left multiplication $L_{\tilde Q}$ | $N$ | rank $4$ on every unit, rank $2$ on every zero divisor off the origin, rank $0$ at the origin |
-| the two-sided operator $\mathrm{Sd}_{\tilde Q}$ | $N$ | invertible on the units, of rank $1$ on the null cone off the origin, zero at the origin |
+| left multiplication $L_{\tilde Q}$ | $N$ | rank $4$ on every invertible element, rank $2$ on every zero divisor off the origin, rank $0$ at the origin |
+| the two-sided operator $\mathrm{Sd}_{\tilde Q}$ | $N$ | invertible on the invertibles, of rank $1$ on the null cone off the origin, zero at the origin |
 | the polar decomposition | $N$ | exists on the units, fails on the cone |
 | the K adjoint | the form | exists everywhere, because the form is non-degenerate |
 
-**The rank of left multiplication is the sharpest of the four.** It is four on the whole unit group, which includes the positive region, the negative units and the null units; it is two on the whole zero-divisor cone, which includes the negative zero divisors and the doubly null stratum. So the rank does not follow the sign of the value: $e_t+\vec e_x$, of value zero, has rank four, while $\vec e_x+i\vec e_y$, of value $-2$, has rank two.
+**The rank of left multiplication is the sharpest of the four.** It is four on the whole group of invertibles, which includes the positive region, the negative units and the null units; it is two on the whole zero-divisor cone, which includes the negative zero divisors and the doubly null stratum. So the rank does not follow the sign of the value: $e_t+\vec e_x$, of value zero, has rank four, while $\vec e_x+i\vec e_y$, of value $-2$, has rank two.
 
 **The two-sided operator is the one that sees the algebraic cone, and it sees it as a rank drop.**
 
@@ -446,7 +446,7 @@ $$
 
 **The singular set of the map $X\mapsto\tilde QX\tilde Q^{*}$ is therefore the algebraic null cone, on which it loses three-quarters of its rank, and that set is not the K null set.** A negative zero divisor is a singular case for the operator and a regular case for the value; a null unit is the reverse. The two failures are different, and the entry keeps them apart.
 
-**The polar decomposition exists exactly on the unit group, so the K norm adds no condition.** The modulus requires $\Rho^{2}=N(\tilde Q)$ with $\Rho\neq0$, which is the algebraic condition and nothing more. On the positive region the decomposition therefore exists throughout, and on the negative region it exists exactly off the zero divisors.
+**The polar decomposition exists exactly on the group of invertibles, so the K norm adds no condition.** The modulus requires $\Rho^{2}=N(\tilde Q)$ with $\Rho\neq0$, which is the algebraic condition and nothing more. On the positive region the decomposition therefore exists throughout, and on the negative region it exists exactly off the zero divisors.
 
 **The K adjoint is defined everywhere, and it is where the form enters the operator theory.**
 
@@ -486,15 +486,15 @@ $$
 
 **The boundary.** No Hilbert space is constructed here, no inner product is completed, and no dynamics is supplied. The statement is that the algebra contains one indefinite form with the right inertia and one definite form with the right positivity, and that the two are one object read through the parity. Whether a physical state space is built on them is a separate question.
 
-### I.11.c — Positive Implies Unit: a Timelike Element Is Never Massless
+### I.11.c — Positive Implies Invertible: a Timelike Element Is Never Massless
 
-**Read:** the theorem that a positive element is a unit, its corollary that a zero divisor has non-positive value, and the three witnesses that the converses fail.
+**Read:** the theorem that a positive element is invertible, its corollary that a zero divisor has non-positive value, and the three witnesses that the converses fail.
 
 **The one implication of the partition has a physical form: an element with a positive metric weight is invertible.** Nothing with a positive value is a zero divisor, so nothing with a positive value collapses. The collapse cone lies entirely in the closed negative half-space, and it touches the wall only on the Peirce lines.
 
-**The reading is that the interior of the light cone is safe.** A four-momentum inside the cone has a positive squared interval and is a unit of the algebra; a four-momentum on the cone is a zero divisor on the material chart; a four-momentum outside the cone is spacelike and has no mass shell. The passage from *unit* to *zero divisor* happens at the wall, and the wall is where the mass vanishes.
+**The reading is that the interior of the light cone is safe.** A four-momentum inside the cone has a positive squared interval and is invertible in the algebra; a four-momentum on the cone is a zero divisor on the material chart; a four-momentum outside the cone is spacelike and has no mass shell. The passage from *unit* to *zero divisor* happens at the wall, and the wall is where the mass vanishes.
 
-**The implication is one way, and the failure of the converse is the interesting part.** A unit can be negative, and it can be null. So invertibility is strictly weaker than positivity, and the algebra contains units of every signature. The reading is that reversibility is not the same property as being inside the cone: a spacelike element is perfectly invertible and a lightlike element can be invertible too.
+**The implication is one way, and the failure of the converse is the interesting part.** an invertible element can be negative, and it can be null. So invertibility is strictly weaker than positivity, and the algebra contains units of every signature. The reading is that reversibility is not the same property as being inside the cone: a spacelike element is perfectly invertible and a lightlike element can be invertible too.
 
 **The boundary.** The theorem is about the plain product and the K norm, and its physical reading uses the material chart. On that chart the implication is nearly trivial, because the value is minus the algebraic norm and positivity is the timelike condition. In the full algebra the implication is not trivial, because the two conditions are independent there, and that is where the theorem earns its place.
 
@@ -624,7 +624,7 @@ $$
 
 **No gauge field is supplied.** The group $\mathrm{U}(1,3)$ is the isometry group of the form on the coefficient space. It is not promoted to a local symmetry, no connection is chosen, and no field strength is computed. The word *gauge* in I.11.k names an invariance and not a theory.
 
-**No scale is fixed.** The norm is homogeneous of degree two, so every non-zero element has a one-parameter family of rescalings that stay on its level set. Nothing in the form selects a unit, and the choice of a level set on which to normalise an element is a separate act. The physical readings use the mass shell, and the mass shell is a chart-dependent choice of level.
+**No scale is fixed.** The norm is homogeneous of degree two, so every non-zero element has a one-parameter family of rescalings that stay on its level set. Nothing in the form selects an invertible element, and the choice of a level set on which to normalise an element is a separate act. The physical readings use the mass shell, and the mass shell is a chart-dependent choice of level.
 
 **No topology is supplied beyond the homotopy type.** The two regions retract onto a circle and a five-sphere, the wall onto a circle times a five-sphere, and that is the whole of the topology claimed. There is no index, no characteristic class and no invariant that distinguishes two elements of one level set.
 
@@ -651,7 +651,7 @@ $$
 | the doubly null set | $\mathcal K_{\mathrm d}=\mathbb{C}^{\times}\cdot(e_t+iS^{2})$, dimension $4$, the union of the Peirce lines $\mathbb{C}(e_t+i\vec u)$ |
 | the doubly null element | $\tilde\Pi_{\vec u}=\tfrac12(e_t+i\vec u)$, an idempotent; spectrally regular, $B^{2}=-Q_t^{2}\neq0$ |
 | the isotropic units | $\mathcal K_{\mathrm u}$, dimension $7$, open and dense in $\mathcal K$; $N$ takes every non-zero value there |
-| positive implies unit | no positive element is a zero divisor; every zero divisor has $\mathrm{Kr}\le0$, with equality on $\mathcal K_{\mathrm d}$ |
+| positive implies invertible | no positive element is a zero divisor; every zero divisor has $\mathrm{Kr}\le0$, with equality on $\mathcal K_{\mathrm d}$ |
 | the converses | fail: $e_t+2\vec e_x$ negative unit, $e_t+\vec e_x$ null unit, $\vec e_x+i\vec e_y$ negative zero divisor |
 | inversion | $\mathrm{Kr}(\tilde Q^{-1})=\mathrm{Kr}(\tilde Q)/\lvert N(\tilde Q)\rvert^{2}$; the sign is preserved, the value rescaled |
 | the independence | $e_t$ and $\vec e_x$ have $N=1$ and values $1,-1$; $c(e_t+\vec e_x)$ has value $0$ and any $2c^{2}$ |
@@ -662,8 +662,8 @@ $$
 | the six restrictions | $(2,0)$ on the centre, $(0,6)$ on the vector subspace, $(1,3)$ on each of the four remaining subspaces |
 | the sector identities | $\mathrm{Kr}=-N$ on $\mathbb{B}_{\Phi}$, $\mathrm{Kr}=+N$ on $\mathbb{B}_{\Psi}$; null is massless on both and only there |
 | the state slice | $\mathrm{Kr}=\tfrac14(1-\lvert\vec r\rvert^{2})=N$; positive mixed, null pure, negative not a state |
-| the operators | $L_{\tilde Q}$ of rank $4$ on the units and $2$ on the zero divisors; $\mathrm{Sd}_{\tilde Q}$ invertible on the units and of rank $1$ on the null cone |
-| the adjoint | the K adjoint $T^{\dagger}=JT^{*}J$ exists everywhere; the polar decomposition exists exactly on the units |
+| the operators | $L_{\tilde Q}$ of rank $4$ on the invertibles and $2$ on the zero divisors; $\mathrm{Sd}_{\tilde Q}$ invertible on the invertibles and of rank $1$ on the null cone |
+| the adjoint | the K adjoint $T^{\dagger}=JT^{*}J$ exists everywhere; the polar decomposition exists exactly on the invertibles |
 | the level sets | $\{\mathrm{Kr}=c\}$ is $\mathrm{U}(1,3)/\mathrm{U}(3)$ for $c>0$ and $\mathrm{U}(1,3)/\mathrm{U}(1,2)$ for $c<0$, both of dimension $7$ |
 | the geometry | the positive family is the complex hyperbolic ball, its boundary the wall, the level sets the Bergman spheres |
 | the readings | weight, signature, light cone, mass, mixedness, gauge frame, and the price of an indefinite state space |

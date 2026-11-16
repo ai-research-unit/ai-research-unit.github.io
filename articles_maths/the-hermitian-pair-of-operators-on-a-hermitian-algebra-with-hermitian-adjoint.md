@@ -11,7 +11,7 @@ $$
 
 and it is the member that needs an involution of the base: the **dagger** $x^{\dagger} = \sigma(\alpha(x^{r}))$ is defined only when the base ring $A$ carries an involution $\sigma$, and it is introduced in *Hermitian Algebras*.
 
-The trade between this member and the four others is exact. The four intrinsic members dress $x$ between a left factor and a right factor that are either an inverse or an intrinsic anti-involution of the algebra; the Hermitian pair dresses it between $x$ and the dagger of $x$. Since the dagger is defined on **every** element, $\mathrm{Sd}_x$ is defined for every $x$, invertible or not, and $x \mapsto \mathrm{Sd}_x$ is then a homomorphism of the multiplicative monoid of the algebra rather than of its group of units. In exchange the base and the coefficients enter: the operator is $A$-linear in its argument, it is $\sigma$-semilinear in its parameter up to a norm, and on the **unitary slice** $x^{\dagger}x = 1$ the dagger is the inverse, so the Hermitian pair there is the inner conjugation of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the two theories meet.
+The trade between this member and the four others is exact. The four intrinsic members dress $x$ between a left factor and a right factor that are either an inverse or an intrinsic anti-involution of the algebra; the Hermitian pair dresses it between $x$ and the dagger of $x$. Since the dagger is defined on **every** element, $\mathrm{Sd}_x$ is defined for every $x$, invertible or not, and $x \mapsto \mathrm{Sd}_x$ is then a homomorphism of the multiplicative monoid of the algebra rather than of its group of invertibles. In exchange the base and the coefficients enter: the operator is $A$-linear in its argument, it is $\sigma$-semilinear in its parameter up to a norm, and on the **unitary slice** $x^{\dagger}x = 1$ the dagger is the inverse, so the Hermitian pair there is the inner conjugation of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* and the two theories meet.
 
 This article treats the operator itself: its domain, its linearity in the argument and in the parameter, its multiplicativity, its parity, its value at the unit, its form on the Clifford group, the elements on which it preserves the quadratic space, and two worked cases. The forms it is built from belong to *Hermitian Forms on a Hermitian Algebra with Hermitian Adjoint*; the form that makes the algebra a Hilbert space is *The Blade Form and the Hermitian Structure with Hermitian Adjoint*; the slice on which the dagger is the inverse is *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*; the adjoint of the one-sided action on a Clifford module is *The Adjoint of the One-Sided Action with Hermitian Adjoint*; and the biquaternion case, where the Hermitian pair $Q\,x\,Q^{\dagger}$ reproduces the Lorentz action, is *The Hermitian Pair in the Biquaternion Algebra with Hermitian Adjoint*.
 
@@ -45,7 +45,7 @@ the two composites agreeing by associativity, and the right factor $x^{\dagger}$
 | conjugation Hermitian pair | $x\,y\,x^{\natural}$ | $x^{\natural}$ | every $x$ |
 | Hermitian pair | $x\,y\,x^{\dagger}$ | $x^{\dagger}$ | every $x$, needs $\sigma$ |
 
-The two inverse members are defined only on the group of units. The reversion and conjugation Hermitian pairs are defined on the whole algebra and need nothing of the base beyond the algebra itself. The Hermitian pair is defined on the whole algebra like the last two, and is the only one of the five that needs the base to carry an involution.
+The two inverse members are defined only on the group of invertibles. The reversion and conjugation Hermitian pairs are defined on the whole algebra and need nothing of the base beyond the algebra itself. The Hermitian pair is defined on the whole algebra like the last two, and is the only one of the five that needs the base to carry an involution.
 
 ### Linearity: the Argument is Linear, the Parameter is Semilinear
 
@@ -165,7 +165,7 @@ $$
 U = \{\, x \in \mathrm{Cl}(V,\mathfrak{Q}) : x^{\dagger}x = 1 \,\}.
 $$
 
-**Proposition.** $U$ is a subgroup of the group of units. It contains $1$; if $x \in U$ then $x$ is invertible with $x^{-1} = x^{\dagger}$, and $x^{\dagger} \in U$; if $x, y \in U$ then
+**Proposition.** $U$ is a subgroup of the group of invertibles. It contains $1$; if $x \in U$ then $x$ is invertible with $x^{-1} = x^{\dagger}$, and $x^{\dagger} \in U$; if $x, y \in U$ then
 
 $$
 (xy)^{\dagger}(xy) = y^{\dagger}x^{\dagger}x\,y = y^{\dagger}y = 1 .

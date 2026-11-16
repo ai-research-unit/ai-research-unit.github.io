@@ -6,7 +6,7 @@ This article reads the **annihilators** of the multiplication. For an element $\
 $$
 \operatorname{Ann}(\breve Q_{1})=\{\breve Q_{2}:\breve Q_{1}\breve Q_{2}=0\},
 $$
-the set of elements the multiplication by $\breve Q_{1}$ kills. The result is a **dichotomy**: the annihilator of a **unit** is $\{0\}$, and the annihilator of a **zero divisor** is a whole idempotent line,
+the set of elements the multiplication by $\breve Q_{1}$ kills. The result is a **dichotomy**: the annihilator of an **invertible** is $\{0\}$, and the annihilator of a **zero divisor** is a whole idempotent line,
 $$
 \operatorname{Ann}(Q_{+}\Pi_+)=\mathbb{C}\Pi_-,\qquad \operatorname{Ann}(Q_{-}\Pi_-)=\mathbb{C}\Pi_+\qquad(Q_{+},Q_{-}\neq0),
 $$
@@ -14,7 +14,7 @@ the **other** line, of real dimension two. The annihilator of $0$ is the whole a
 
 The article also reads the **two-sided annihilator of the structure**, the set of elements that annihilate the algebra, and records that it is $\{0\}$ because the algebra is unital. The two results are different: the annihilators of the elements are the two lines, and the annihilator of the algebra is trivial.
 
-**The results.** The left and the right annihilators of an element coincide, since the multiplication is commutative, and they are an ideal. The annihilator of a unit is $\{0\}$; the annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the whole algebra is $\{0\}$. The map $\breve Q\mapsto\operatorname{Ann}(\breve Q)$ takes the units and $0$ to the two trivial ideals and the two lines to each other, so the set of annihilators of the elements is the set of the four ideals of the algebra.
+**The results.** The left and the right annihilators of an element coincide, since the multiplication is commutative, and they are an ideal. The annihilator of an invertible element is $\{0\}$; the annihilator of a nonzero element of one idempotent line is the other idempotent line, a complex line of real dimension two; the annihilator of $0$ is the whole algebra; and the annihilator of the whole algebra is $\{0\}$. The map $\breve Q\mapsto\operatorname{Ann}(\breve Q)$ takes the invertibles and $0$ to the two trivial ideals and the two lines to each other, so the set of annihilators of the elements is the set of the four ideals of the algebra.
 
 ## The Annihilator of an Element
 
@@ -32,13 +32,13 @@ is the **annihilator** of $\breve Q_{1}$. Since the multiplication is commutativ
 
 *Proof.* If $\breve Q_{1}\breve Q_{2}=0$ and $\breve Q_{1}\breve Q_{3}=0$ then $\breve Q_{1}(\breve Q_{2}+\breve Q_{3})=0$; if $\breve Q_{1}\breve Q_{2}=0$ and $\breve Q_{3}$ is any element then $\breve Q_{1}(\breve Q_{3}\breve Q_{2})=(\breve Q_{1}\breve Q_{3})\breve Q_{2}=(\breve Q_{3}\breve Q_{1})\breve Q_{2}=\breve Q_{3}(\breve Q_{1}\breve Q_{2})=0$, using the associativity and the commutativity. Hence $\operatorname{Ann}(\breve Q_{1})$ is closed under addition and under multiplication by an arbitrary element, that is an ideal.
 
-### The Annihilator of a Unit
+### The Annihilator of an Invertible
 
-**The annihilator of a unit is $\{0\}$.**
+**The annihilator of an invertible element is $\{0\}$.**
 
 **Theorem.** If $\langle \breve Q_{1}\rangle_{\mathrm{ts}}\neq0$ then $\operatorname{Ann}(\breve Q_{1})=\{0\}$.
 
-*Proof.* If $\breve Q_{1}\breve Q_{2}=0$ then multiplying by $\breve Q_{1}^{-1}$ gives $\breve Q_{2}=\breve Q_{1}^{-1}(\breve Q_{1}\breve Q_{2})=0$, and the inverse exists by *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. So no nonzero element is annihilated by a unit.
+*Proof.* If $\breve Q_{1}\breve Q_{2}=0$ then multiplying by $\breve Q_{1}^{-1}$ gives $\breve Q_{2}=\breve Q_{1}^{-1}(\breve Q_{1}\breve Q_{2})=0$, and the inverse exists by *Norm and Invertibility in the Algebra of the Reduced Biquaternions*. So no nonzero element is annihilated by an invertible element.
 
 ### The Annihilator of a Zero Divisor
 
@@ -97,7 +97,7 @@ $$
 
 *Proof.* The table is read from the three theorems above. The ideals of the algebra are the four displayed (*Zero Divisors of the Algebra of the Reduced Biquaternions*, §*The Maximal Ideals*). The two lines are incomparable and both contain $\{0\}$ and are contained in $\mathbb{B}_{\mathrm{red}}$.
 
-**Corollary (the annihilator of the annihilator).** $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of a unit is $\mathbb{B}_{\mathrm{red}}$, that of $Q_{+}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{-}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.
+**Corollary (the annihilator of the annihilator).** $\operatorname{Ann}(\operatorname{Ann}(\breve Q))=\breve Q$ in the sense of ideals: the double annihilator of an invertible element is $\mathbb{B}_{\mathrm{red}}$, that of $Q_{+}\Pi_+$ is $\mathbb{C}\Pi_+$, that of $Q_{-}\Pi_-$ is $\mathbb{C}\Pi_-$, and that of $0$ is $\{0\}$.
 
 *Proof.* $\operatorname{Ann}(\mathbb{B}_{\mathrm{red}})=\{0\}$ and $\operatorname{Ann}(\{0\})=\mathbb{B}_{\mathrm{red}}$ by the definition; and $\operatorname{Ann}(\mathbb{C}\Pi_-)=\mathbb{C}\Pi_+$ and $\operatorname{Ann}(\mathbb{C}\Pi_+)=\mathbb{C}\Pi_-$ are the corollary above. Reading the table twice reproduces the two lines.
 
@@ -129,6 +129,6 @@ because the algebra is unital; and the three readings of the phrase — the anni
 ## Further Reading
 
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), above this article in this category, for the two lines and the maximal ideals.
-- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), above this article, for the criterion of invertibility and the group of units.
+- [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), above this article, for the criterion of invertibility and the group of invertibles.
 - [Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions](square-roots-of-one-and-the-idempotents-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the idempotents and the projectors.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article in this category, for the ideals the idempotents carry.

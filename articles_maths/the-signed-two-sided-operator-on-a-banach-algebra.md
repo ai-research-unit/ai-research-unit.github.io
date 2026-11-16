@@ -11,7 +11,7 @@ $$
 
 is the **signed two-sided operator**. The twist changes the operator in one place only, the argument, and that single change turns the unsigned two-sided operators into a coset of an enlarged group: a signed two-sided operator is the unsigned two-sided operator composed with $\alpha$, the product of two signed two-sided operators is unsigned, and the union of the signed and the unsigned invertible two-sided operators is the group that the reflection operators generate. On a Banach algebra the twist is measured by a norm, because $\alpha$ is continuous, and the signed two-sided operator is bounded with norm at most $\lVert a\rVert\lVert b\rVert\lVert\alpha\rVert$; the whole construction takes place inside the Banach algebra $B(A)$ of bounded operators.
 
-This article assumes the Banach algebra, its submultiplicative norm, the unit group and the spectrum from *Topological Algebras and Banach Algebras*; the bounded operators, the operator norm and the one-sided multiplications from *Operators on a Banach Algebra*; the unsigned two-sided operator, its composition and its group from *The Two-Sided Operator on an Algebra* read on the Banach algebra; the involutive automorphism, the symmetric and anti-Hermitian parts and the grading from *Involutive Topological Algebras* and *The Signed Two-Sided Operator on an Algebra*; and the completeness and closed subalgebras of the operator algebra from *The Operator Algebra of a Banach Space*. The **involution** in the sense of an anti-automorphism $\sigma$ is the structure of the `- * Theory` group of this category and is kept apart from the grade involution $\alpha$ used here; every adjoint and every form is later still. No measure and no Fourier theory occurs.
+This article assumes the Banach algebra, its submultiplicative norm, the group of invertibles and the spectrum from *Topological Algebras and Banach Algebras*; the bounded operators, the operator norm and the one-sided multiplications from *Operators on a Banach Algebra*; the unsigned two-sided operator, its composition and its group from *The Two-Sided Operator on an Algebra* read on the Banach algebra; the involutive automorphism, the symmetric and anti-Hermitian parts and the grading from *Involutive Topological Algebras* and *The Signed Two-Sided Operator on an Algebra*; and the completeness and closed subalgebras of the operator algebra from *The Operator Algebra of a Banach Space*. The **involution** in the sense of an anti-automorphism $\sigma$ is the structure of the `- * Theory` group of this category and is kept apart from the grade involution $\alpha$ used here; every adjoint and every form is later still. No measure and no Fourier theory occurs.
 
 Throughout, $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$; $A$ is a unital Banach algebra over $\mathbb{K}$ with submultiplicative norm $\lVert\cdot\rVert$; $\alpha$ is a **continuous involutive automorphism** of $A$, so that $\alpha(ab) = \alpha(a)\alpha(b)$, $\alpha(1) = 1$, $\alpha^2 = \mathrm{id}$ and
 
@@ -69,7 +69,7 @@ $$
 
 Hence the invertible signed two-sided operators are stable under inversion but not under composition.
 
-**Proof.** $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ is a product of invertible operators exactly when $L_{a}R_{b}$ is invertible, that is exactly when $a,b$ are units. For the formula, $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})b} = L_{aa^{-1}}R_{\,b^{-1}b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$; the other composition gives the same, so the two-sided inverse is as displayed.
+**Proof.** $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ is a product of invertible operators exactly when $L_{a}R_{b}$ is invertible, that is exactly when $a,b$ are invertible. For the formula, $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})b} = L_{aa^{-1}}R_{\,b^{-1}b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$; the other composition gives the same, so the two-sided inverse is as displayed.
 
 ## The Relation to the Unsigned Two-Sided Operator
 
@@ -83,7 +83,7 @@ so the two families are related by composition with a fixed operator of order tw
 
 **Proof.** The first identity is the decomposition, and the second follows by composing with $\alpha$ and using $\alpha^2 = \mathrm{id}$. The equality case is the definition.
 
-**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by a unit $z$, $\alpha(x) = zxz^{-1}$. Then every signed two-sided operator is an unsigned two-sided operator,
+**Theorem (degeneracy, the inner grade involution).** Suppose $\alpha = c_z$ is the inner automorphism by an invertible element $z$, $\alpha(x) = zxz^{-1}$. Then every signed two-sided operator is an unsigned two-sided operator,
 
 $$
 \alpha = c_z \quad\Longrightarrow\quad \mathcal{T}_{a,b} = L_{az}R_{\,z^{-1}b} ,
@@ -97,9 +97,9 @@ and conversely if every signed two-sided operator is unsigned then $\alpha$ is i
 
 ## The Reflections it Realises
 
-**Definition.** A **reflector** is a unit $u \in A^\times$ with $u\,\alpha(u) \in Z(A)$, the centre; the **reflection** determined by $u$ is the signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$.
+**Definition.** A **reflector** is invertible $u \in A^\times$ with $u\,\alpha(u) \in Z(A)$, the centre; the **reflection** determined by $u$ is the signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$.
 
-**Theorem (the square and the involution case).** For every unit $u$ the reflection is bounded, invertible, an algebra automorphism, and
+**Theorem (the square and the involution case).** For every invertible $u$ the reflection is bounded, invertible, an algebra automorphism, and
 
 $$
 \boxed{\;\rho_u^2 = c_{u\alpha(u)} , \qquad \rho_u = c_u\,\alpha = \alpha\,c_{\alpha(u)}\;} ,

@@ -19,7 +19,7 @@ $$
 \boxed{\;I_\lambda=aJ_1+bJ_2+cJ_3 , \qquad \Omega_\lambda = a\omega_1+b\omega_2+c\omega_3\;} .
 $$
 
-**Proposition.** For every unit $\lambda$ the endomorphism $I_\lambda$ is a complex structure compatible with $g$, $\Omega_\lambda$ is its fundamental form, $I_\lambda$ is parallel for the Levi-Civita connection, hence integrable, and $\Omega_\lambda$ is closed and Kähler for $g$; the assignment $\lambda\mapsto I_\lambda$ descends to a diffeomorphism from the sphere of unit imaginary quaternions modulo $\pm1$ onto a two-sphere of complex structures.
+**Proposition.** For every invertible $\lambda$ the endomorphism $I_\lambda$ is a complex structure compatible with $g$, $\Omega_\lambda$ is its fundamental form, $I_\lambda$ is parallel for the Levi-Civita connection, hence integrable, and $\Omega_\lambda$ is closed and Kähler for $g$; the assignment $\lambda\mapsto I_\lambda$ descends to a diffeomorphism from the sphere of unit imaginary quaternions modulo $\pm1$ onto a two-sphere of complex structures.
 
 **Proof.** $I_\lambda^2=(a^2+b^2+c^2)(-\mathrm{id})=-\mathrm{id}$ by the quaternionic relations, and $I_\lambda$ is an isometry because each $J_i$ is; the compatibility of $\Omega_\lambda$ and its identification as the fundamental form are the bilinearity of $g$; the parallelness is the parallelness of the $J_i$, which is equivalent to the closedness of the $\omega_i$, and Novikov's theorem gives the integrability; the last statement is the bijectivity of the parametrisation modulo the sign.
 

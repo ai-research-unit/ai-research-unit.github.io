@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the principal $\mathfrak{sl}_2$ and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the unit group $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.
+The algebra $M_5(\mathbb{C})$ is the algebra of complex $5\times5$ matrices with the ordinary product. It is the model on which every structure of this category is read: the root $H$, the Lagrange idempotents, the Peirce lines, the frame, the principal $\mathfrak{sl}_2$ and the adjoint action are all structures on this one algebra. This article fixes the algebra itself: the matrix units and their product rule, the trace and the determinant, the centre, the simplicity, the real dimension $50$, the group of invertibles $GL_5(\mathbb{C})$, the projective group $PGL_5(\mathbb{C})$ of complex dimension $24$, and the reading of the algebra as the complexification of the real Lie algebra $\mathfrak{u}(5)$.
 
 The article uses **no form and no topology**. The conjugate transpose appears only to exhibit the real form $\mathfrak{u}(5)$ and the Hermitian and anti-Hermitian parts; the positive definite trace form, the Frobenius norm and the $*$-unitary group as a metric object are *The Involution and the Hermitian Structure of $M_5(\mathbb{C})$*. The determinant is used as a polynomial and as the criterion of invertibility, not as a volume. The root and the idempotents are later articles; the algebra is their common ground.
 
@@ -117,7 +117,7 @@ $$
 
 **Proof.** The multiplicativity is the standard theorem of determinants; the homogeneity follows from the five factors in each product, and $\det I=1$ from the identity permutation. The inverse is given by the adjugate, $A^{-1}=(\det A)^{-1}\operatorname{adj}A$, when $\det A\ne0$; if $\det A=0$, the columns are linearly dependent and $A$ is not invertible.
 
-**Corollary.** The **special linear group** $SL_5(\mathbb{C})=\{A:\det A=1\}$ is a subgroup of $GL_5(\mathbb{C})$, and $GL_5(\mathbb{C})=\{A:\det A\ne0\}$ is the group of units of the algebra.
+**Corollary.** The **special linear group** $SL_5(\mathbb{C})=\{A:\det A=1\}$ is a subgroup of $GL_5(\mathbb{C})$, and $GL_5(\mathbb{C})=\{A:\det A\ne0\}$ is the group of invertibles of the algebra.
 
 ## The Centre and Simplicity
 
@@ -157,11 +157,11 @@ Hence $J$ contains every matrix unit, and therefore $J=M_5(\mathbb{C})$.
 
 **Remark.** **The simplicity is a two-sided statement.** The algebra has many one-sided ideals: the minimal left ideals are the spaces $M_5P$ for rank-one idempotents $P$, of dimension $5$, and the minimal right ideals are the spaces $PM_5$. The two-sided ideals are only $0$ and the whole algebra. The one-sided ideals are the modules of *The Modules and the Minimal Left Ideals of $M_5(\mathbb{C})$*.
 
-## The Unit Group and the Projective Group
+## The Group of Invertibles and the Projective Group
 
-### The Unit Group
+### The Group of Invertibles
 
-**Theorem.** The group of units of $M_5(\mathbb{C})$ is
+**Theorem.** The group of invertibles of $M_5(\mathbb{C})$ is
 
 $$
 GL_5(\mathbb{C})=\{A\in M_5(\mathbb{C}):\det A\ne0\}.
@@ -303,7 +303,7 @@ $$
 \boxed{\ M_5(\mathbb{C})\text{ is central simple of degree }5,\ \dim_{\mathbb{C}}=25,\ \dim_{\mathbb{R}}=50,\ Z(M_5)=\mathbb{C}I.\ }
 $$
 
-The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the determinant is multiplicative and detects invertibility. The unit group is $GL_5(\mathbb{C})$, of complex dimension $25$; the special linear group $SL_5(\mathbb{C})$ has dimension $24$; the projective group $PGL_5(\mathbb{C})$ has complex dimension $24$ and real dimension $48$. The conjugate transpose exhibits the real form $\mathfrak{u}(5)$, of real dimension $25$, and $\mathfrak{su}(5)$, of real dimension $24$; the complexification of $\mathfrak{u}(5)$ is the whole algebra.
+The trace is linear, cyclic and nondegenerate as a complex bilinear pairing; the determinant is multiplicative and detects invertibility. The group of invertibles is $GL_5(\mathbb{C})$, of complex dimension $25$; the special linear group $SL_5(\mathbb{C})$ has dimension $24$; the projective group $PGL_5(\mathbb{C})$ has complex dimension $24$ and real dimension $48$. The conjugate transpose exhibits the real form $\mathfrak{u}(5)$, of real dimension $25$, and $\mathfrak{su}(5)$, of real dimension $24$; the complexification of $\mathfrak{u}(5)$ is the whole algebra.
 
 | Object | Complex dimension | Real dimension |
 |---|---|---|

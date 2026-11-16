@@ -19,7 +19,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | unique factorisation | a Bézout domain, hence a GCD domain | $\overline{\mathbb{Z}}$ | *Bézout Domains* |
 | every ideal principal | a unique factorisation domain | $\mathbb{Z}[x]$ | *Polynomial Rings and Rational Functions* |
 | a Euclidean degree | a principal ideal domain | $\mathbb{Z}[(1+\sqrt{-19})/2]$ | *Euclidean Domains* |
-| every nonzero element a unit | a Euclidean domain | $\mathbb{Z}$ | *The Integers* |
+| every nonzero element an invertible element | a Euclidean domain | $\mathbb{Z}$ | *The Integers* |
 
 Each row is justified below, and the two boundaries of the non-commutative ladder are treated in a section of their own.
 
@@ -36,7 +36,7 @@ Thus $\mathbb{Z}[x]$ is simultaneously the exact object at the boundary of the B
 
 ## The Boundary at Commutativity
 
-The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is a unit, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $\vec e_x \vec e_y = -\vec e_y \vec e_x$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in *List of Structures from Rings to Division Rings*, and the division-ring property itself in *Division Rings*.
+The strongest structure that is not commutative is a division ring: it has no zero divisors, every nonzero element is invertible, and only the commutative law is absent. The exact object is $\mathbb{H}$, the real quaternions, in which $\vec e_x \vec e_y = -\vec e_y \vec e_x$. The matrix ring $M_2(\mathbb{R})$ is also non-commutative, but it is a weaker witness, since it has zero divisors; the quaternions show that commutativity can fail at the very top of the ladder. The non-commutative side of this boundary is developed in *List of Structures from Rings to Division Rings*, and the division-ring property itself in *Division Rings*.
 
 ## The Boundary at Reducedness
 
@@ -60,7 +60,7 @@ The strongest structure that is not Euclidean is a principal ideal domain. A Euc
 
 ## The Boundary at the Field Property
 
-The strongest structure that is not a field is a Euclidean domain, since every field is a Euclidean domain and the loss of "every nonzero element is a unit" is the only failure. The exact object is $\mathbb{Z}$: it has a Euclidean degree, namely the absolute value, and the element $2$ is neither zero nor a unit. The Gaussian integers $\mathbb{Z}[i]$, Euclidean for the norm $a^2 + b^2$, and the polynomial ring $k[x]$ are the other standard witnesses, and they show that the boundary can be crossed while every ideal remains principal. The fields that lie beyond the boundary are listed in *List of Fields*.
+The strongest structure that is not a field is a Euclidean domain, since every field is a Euclidean domain and the loss of "every nonzero element is invertible" is the only failure. The exact object is $\mathbb{Z}$: it has a Euclidean degree, namely the absolute value, and the element $2$ is neither zero nor an invertible element. The Gaussian integers $\mathbb{Z}[i]$, Euclidean for the norm $a^2 + b^2$, and the polynomial ring $k[x]$ are the other standard witnesses, and they show that the boundary can be crossed while every ideal remains principal. The fields that lie beyond the boundary are listed in *List of Fields*.
 
 ## The Same Boundaries in Finite Form
 
@@ -82,7 +82,7 @@ The same method applies to the non-commutative ladder of *List of Structures fro
 | The property | The strongest structure that lacks it | The exact object at the boundary | Introduced in |
 |---|---|---|---|
 | the Ore condition | a non-commutative domain that is not Ore | the free algebra $R\langle x_1, \dots, x_n\rangle$ | *Tensor Powers and the Free Algebra* |
-| every nonzero element a unit, without commutativity | an Ore domain that is not a division ring | the Weyl algebra $A_1(k)$ | *Quotients of the Tensor Algebra* |
+| every nonzero element an invertible element, without commutativity | an Ore domain that is not a division ring | the Weyl algebra $A_1(k)$ | *Quotients of the Tensor Algebra* |
 
 The free algebra is the strongest domain at which the passage to a division ring of fractions fails, and the Weyl algebra is the strongest domain at which it succeeds without the domain itself being a division ring. Both are recorded in *Ore Domains and Division Rings of Fractions*.
 

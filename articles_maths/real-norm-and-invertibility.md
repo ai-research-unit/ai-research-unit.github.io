@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the norm of the real algebra and the invertibility of its elements. It follows the basic algebra article *Real Algebra*, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, to describe the group of units and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $q > 0$, $q = 0$, $q < 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.
+This article studies the norm of the real algebra and the invertibility of its elements. It follows the basic algebra article *Real Algebra*, which defined $\mathbb{R}$ as the complete ordered field and as the one-dimensional real algebra carrying its single trivial involution. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, to describe the group of invertibles and its split into a positive scale and a two-element sign group, and to record the sign trichotomy $q > 0$, $q = 0$, $q < 0$. The real algebra is the one-dimensional member of the tensor family and the base case of the norm series; it collects the facts that the other members generalise, almost all of them by losing the definiteness that holds here.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $e_t = 1$, a general element is $q = q e_t$ with $q \in \mathbb{R}$, the sole involution is the identity $\operatorname{id}$, and the norm is
 
@@ -41,7 +41,7 @@ $$
 
 **Proof.** By definition $\langle q_1 q_2\rangle = (q_1 q_2)^2$, and commutativity and associativity of the real product give $(q_1 q_2)^2 = q_1 q_2 q_1 q_2 = q_1^2 q_2^2 = \langle q_1\rangle\langle q_2\rangle$.
 
-**Corollary.** If $\langle q_1\rangle \neq 0$ and $\langle q_2\rangle \neq 0$ then $\langle q_1 q_2\rangle \neq 0$. Equivalently, the product of two units is a unit.
+**Corollary.** If $\langle q_1\rangle \neq 0$ and $\langle q_2\rangle \neq 0$ then $\langle q_1 q_2\rangle \neq 0$. Equivalently, the product of two units is invertible.
 
 The multiplicativity is the formal identity $q_1^2 q_2^2 = (q_1 q_2)^2$ of any commutative ring, and it is used below to prove the invertibility criterion in one line, exactly as in the complex case. It is also the source of the scale-and-sign decomposition: the norm is the squared scale.
 
@@ -98,7 +98,7 @@ It is a genuine norm on the real vector space $\mathbb{R} \cong \mathbb{R}^1$: p
 
 The two forms are related as follows.
 
-- The **norm** $\langle q\rangle = q^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the scale (the modulus).
+- The **norm** $\langle q\rangle = q^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of invertibles, and the scale (the modulus).
 - The **Hermitian form** $q^2$ is the same expression. It controls the topological structure: the Euclidean norm, the metric topology of $\mathbb{R}$, and completeness.
 
 The **inner product** on $\mathbb{R}$ as a real vector space is
@@ -159,7 +159,7 @@ q_1^{-1} = \frac{q_1}{q_1^2} = \frac{-\tfrac{3}{4}}{\tfrac{9}{16}} = -\tfrac{4}{
 q_2^{-1} = \frac{q_2}{q_2^2} = \frac{\tfrac{7}{2}}{\tfrac{49}{4}} = \tfrac{2}{7},
 $$
 
-with the exact verifications $q_1\,q_1^{-1} = 1$ and $q_2\,q_2^{-1} = 1$; the element $0$ has $\langle 0\rangle = 0$ and is the only non-unit.
+with the exact verifications $q_1\,q_1^{-1} = 1$ and $q_2\,q_2^{-1} = 1$; the element $0$ has $\langle 0\rangle = 0$ and is the only non-invertible.
 
 | element | $\langle\cdot\rangle$ | unit? | inverse |
 |---|---|---|---|
@@ -167,11 +167,11 @@ with the exact verifications $q_1\,q_1^{-1} = 1$ and $q_2\,q_2^{-1} = 1$; the el
 | $q_2 = \tfrac{7}{2}$ | $\tfrac{49}{4}$ | yes | $\tfrac{2}{7}$ |
 | $0$ | $0$ | no | — |
 
-## The Group of Units
+## The Group of Invertibles
 
 ### Definition
 
-The **group of units** of $\mathbb{R}$ is the set of invertible elements:
+The **group of invertibles** of $\mathbb{R}$ is the set of invertible elements:
 
 $$
 \mathbb{R}^\times = \{ q \in \mathbb{R} : \langle q\rangle \neq 0 \} = \mathbb{R} \setminus \{0\}.
@@ -186,9 +186,9 @@ It is a group under multiplication with identity $e_t = 1$.
 - **Disconnected, two components.** $\mathbb{R}^\times = \mathbb{R}_{>0} \cup \mathbb{R}_{<0}$ is the disjoint union of the positive and negative rays, so it has **two** connected components. This is the first structural difference from the complex case, where $\mathbb{C}^\times$ is connected; the two components of $\mathbb{R}^\times$ are the two elements of the sign group, dilated by the positive scale.
 - **Non-compact.** $\mathbb{R}^\times$ is unbounded, hence not compact.
 - **Infinite.** $\mathbb{R}^\times$ is uncountable and contains the infinite cyclic group of powers of any element other than $\pm1$.
-- **Dimension.** As a topological group the units are one-dimensional, the positive ray contributing the one dimension and the sign group the zero-dimensional factor; the Lie structure of the group is the analytic content of *Real Exponential and Lie Group Structure*.
+- **Dimension.** As a topological group the invertibles are one-dimensional, the positive ray contributing the one dimension and the sign group the zero-dimensional factor; the Lie structure of the group is the analytic content of *Real Exponential and Lie Group Structure*.
 
-The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.
+The group of invertibles is the base case of the family: below it lies only the non-invertible $0$, and every nonzero element is invertible because the algebra is a field.
 
 ### The Split into Positive Scale and the Sign Group
 
@@ -201,7 +201,7 @@ where $\operatorname{sgn} q = q/|q| \in \{\pm1\}$ for $q \neq 0$, is an isomorph
 
 **Proof.** The map is well defined because $|q| > 0$ for $q \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \{\pm1\}$. It is a group homomorphism: $|q_1 q_2| = |q_1||q_2|$ and $\operatorname{sgn}(q_1 q_2) = \operatorname{sgn}q_1\,\operatorname{sgn}q_2$, since each is positive exactly when the two factors have the same sign. Its inverse is $(r, \sigma) \mapsto r\sigma$, continuous in the product topology, so the map is a homeomorphism.
 
-The two factors are the **scale** $r = |q| \in \mathbb{R}_{>0}$, a positive real, and the **sign** $\sigma = \operatorname{sgn}q \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $q = |q|\operatorname{sgn}q$, the splitting of the unit group that the norm supplies. In the complex case the second factor is the circle $\mathrm{U}(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the unit group is disconnected.
+The two factors are the **scale** $r = |q| \in \mathbb{R}_{>0}$, a positive real, and the **sign** $\sigma = \operatorname{sgn}q \in \{\pm1\}$. The group $\{\pm1\}$ is the two-element cyclic group, denoted $O(1)$ below when it is regarded as the orthogonal group of the line. The product form of this isomorphism is $q = |q|\operatorname{sgn}q$, the splitting of the group of invertibles that the norm supplies. In the complex case the second factor is the circle $\mathrm{U}(1)$, a one-dimensional compact group, and it is connected; here it is a two-point discrete group, and the group of invertibles is disconnected.
 
 ### The Inverse Map
 
@@ -215,15 +215,15 @@ because $\sigma^{-1} = \sigma$ for $\sigma = \pm1$. Inversion therefore inverts 
 
 ## The Three-Way Classification
 
-An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.
+An element of a finite-dimensional real algebra of the tensor family is of one of three kinds: An invertible element, a zero divisor, or zero. The classes are read off from the norm.
 
 **Definition.** Let $q \in \mathbb{R}$. Then exactly one of the following holds:
 
-- $\langle q\rangle > 0$: $q$ is a **unit**, i.e. an invertible element;
+- $\langle q\rangle > 0$: $q$ is an **invertible element**;
 - $\langle q\rangle = 0$ and $q \neq 0$: $q$ is a **zero divisor**;
 - $q = 0$: $q$ is **zero**.
 
-**Theorem (the classification of $\mathbb{R}$).** The zero-divisor class is empty, so every nonzero real number is a unit and the classification has only two non-empty classes.
+**Theorem (the classification of $\mathbb{R}$).** The zero-divisor class is empty, so every nonzero real number is invertible and the classification has only two non-empty classes.
 
 **Proof.** $\langle q\rangle = q^2 = 0$ forces $q = 0$ because the square of a real number is non-negative, so the only element of vanishing norm is $0$.
 
@@ -290,20 +290,20 @@ The real case is the bottom of the definite column, and the complex case adds th
 
 The definite cases of the family, and the real case for contrast, are:
 
-| algebra | norm | definite? | zero divisors | group of units |
+| algebra | norm | definite? | zero divisors | group of invertibles |
 |---|---|---|---|---|
 | $\mathbb{R}$ | $q^2$, real | yes | none | $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ |
 | $\mathbb{C}$ | $u^2+v^2$, real | yes | none | $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ |
 
-The norm is real and definite in $\mathbb{R}$ and $\mathbb{C}$, and both are division algebras. The unit group is compact modulo the non-compact scale in $\mathbb{R}$ and $\mathbb{C}$. The real algebra sits at the bottom of the definite column: the complex case replaces the sign group $O(1)$ by the circle $\mathrm{U}(1)$ and thereby connects the two components of the unit group into one.
+The norm is real and definite in $\mathbb{R}$ and $\mathbb{C}$, and both are division algebras. The group of invertibles is compact modulo the non-compact scale in $\mathbb{R}$ and $\mathbb{C}$. The real algebra sits at the bottom of the definite column: the complex case replaces the sign group $O(1)$ by the circle $\mathrm{U}(1)$ and thereby connects the two components of the group of invertibles into one.
 
 ## Summary
 
 The norm of a real number is $\langle q\rangle = q^2$, real, positive-definite and multiplicative, $\langle q_1 q_2\rangle = \langle q_1\rangle\langle q_2\rangle$; it vanishes only at the origin. The Hermitian form is the same expression, so the norm and the Hermitian form coincide, and the Euclidean norm $|q| = \sqrt{\langle q\rangle}$ is a genuine norm that is multiplicative. This is the degeneracy of the one-dimensional case.
 
-A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $q^{-1} = q/\langle q\rangle = 1/q$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of units together with zero.
+A real number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $q^{-1} = q/\langle q\rangle = 1/q$. The zero-divisor class is empty, so $\mathbb{R}$ is a division algebra by the Frobenius theorem, and the single distinguished subspace, the whole field, consists entirely of invertibles together with zero.
 
-The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $q = |q|\operatorname{sgn}q$. The norm is definite on the whole algebra, and the sign trichotomy $q > 0$, $q = 0$, $q < 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.
+The group of invertibles is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, open, dense, disconnected and non-compact, and it splits as $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}$ into a positive scale and a sign, $q = |q|\operatorname{sgn}q$. The norm is definite on the whole algebra, and the sign trichotomy $q > 0$, $q = 0$, $q < 0$ refines the three-way classification; the only element of vanishing norm is the origin, which is why the real algebra is the definite base case of the family.
 
 ## Summary of Notation
 
@@ -316,7 +316,7 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, o
 | $\lvert q\rvert = \sqrt{\langle q\rangle} = \sqrt{q^2}$ | the modulus, the Euclidean norm |
 | $\langle q_1, q_2 \rangle = q_1 q_2$ | the real inner product, $\langle q_1, q_1 \rangle = \langle q_1\rangle$ |
 | $\operatorname{sgn} q = q/\lvert q\rvert$ | the sign of a nonzero $q$, an element of $\{\pm1\}$ |
-| $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units |
+| $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of invertibles |
 | $\mathbb{R}_{>0}, \mathbb{R}_{<0}$ | the positive and negative rays, the two components of $\mathbb{R}^\times$ |
 | $\{\pm1\} \cong O(1)$ | the sign group, the two-element cyclic group |
 | $q = \lvert q\rvert\operatorname{sgn}q$ | the sign decomposition, $r = \lvert q\rvert \in \mathbb{R}_{>0}$, $\sigma = \operatorname{sgn}q$ |
@@ -326,7 +326,7 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, abelian, o
 ## Further Reading
 
 - Edmund Landau, *Grundlagen der Analysis* (Akademische Verlagsgesellschaft, 1930), for the ordered-field axioms and the uniqueness of $\mathbb{R}$.
-- Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for inverses, the group of units and the Frobenius theorem.
+- Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for inverses, the group of invertibles and the Frobenius theorem.
 - Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for norms and invertibility in finite-dimensional algebras.
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd edition (McGraw-Hill, 1976), for the absolute value, the modulus and the metric structure of the line.
 - Serge Lang, *Algebra*, 3rd edition (Addison–Wesley, 1993), for ordered fields, the sign of an element and the positive cone.

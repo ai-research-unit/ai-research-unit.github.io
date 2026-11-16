@@ -63,7 +63,7 @@ $$
 
 *Proof.* The complement of the real axis is the two open half-planes; each is open and homeomorphic to $\mathbb{R}^2$. The real axis is closed with empty interior, so its complement is open and dense. The two half-planes are separated by the real axis, so they are the two components.
 
-**Proposition (the properties of its elements).** Every element of $\Sigma_{11}$ is a unit, has two distinct eigenvalues, and has a distinguished complex eigenbasis, the pair $(1,-i),(1,i)$.
+**Proposition (the properties of its elements).** Every element of $\Sigma_{11}$ is invertible, has two distinct eigenvalues, and has a distinguished complex eigenbasis, the pair $(1,-i),(1,i)$.
 
 *Proof.* $M\neq0$ gives invertibility, and $B\neq0$ gives distinct eigenvalues. The eigenbasis is that of *Eigenvalue Decomposition and Eigenbasis of a Complex Number*.
 
@@ -73,7 +73,7 @@ $$
 
 *Proof.* The set is the real axis with the origin removed. In the subspace topology of $\mathbb{R}$ it is open, and in $\mathbb{C}$ every neighbourhood of a point of $\Sigma_{10}$ meets $\Sigma_{11}$, so it is not open in the plane. It is the intersection of the closed real axis with the open set $\mathbb{C}\setminus\{0\}$, hence locally closed. Its dimension is one because it is an open subset of the line.
 
-**Proposition (the properties of its elements).** Every element of $\Sigma_{10}$ is a unit and is real. Its spectrum is the singleton $\{t\}$, its minimal polynomial is $X-t$, and every basis of the complexified plane is an eigenbasis.
+**Proposition (the properties of its elements).** Every element of $\Sigma_{10}$ is invertible and is real. Its spectrum is the singleton $\{t\}$, its minimal polynomial is $X-t$, and every basis of the complexified plane is an eigenbasis.
 
 *Proof.* $M\neq0$ gives invertibility, and $B=0$ gives $b=0$, so $z=t\neq0$. The regular matrix is $tI$, so the spectrum is $\{t\}$, the minimal polynomial is $X-t$, and every vector is an eigenvector.
 
@@ -81,9 +81,9 @@ $$
 
 ## The Doubly Degenerate Sector
 
-**Proposition (the description).** $\Sigma_{00}=\{0\}$ is a single point. It has real dimension $0$ and is closed. Its element is the only non-unit of the algebra, the only modulus-degenerate element, and the only element at which both predicates fail.
+**Proposition (the description).** $\Sigma_{00}=\{0\}$ is a single point. It has real dimension $0$ and is closed. Its element is the only non-invertible of the algebra, the only modulus-degenerate element, and the only element at which both predicates fail.
 
-*Proof.* $M=0$ forces $z=0$; $B(0)=0$; every non-zero element has $M>0$ and is a unit.
+*Proof.* $M=0$ forces $z=0$; $B(0)=0$; every non-zero element has $M>0$ and is invertible.
 
 **Proposition (the spectral data at the origin).** The regular matrix is the zero matrix, the spectrum is $\{0\}$, the minimal polynomial is $X$, and every basis of the complexified plane is an eigenbasis.
 
@@ -151,7 +151,7 @@ and each difference of consecutive closures is the union of the lower sectors. T
 
 The two predicates $M\neq0$ and $B\neq0$ cut the complex algebra into four sectors. Three are non-empty: $\Sigma_{11}=\mathbb{C}\setminus\mathbb{R}$, the doubly regular sector; $\Sigma_{10}=\mathbb{R}^\times$, the modulus-regular and spectrally degenerate sector; and $\Sigma_{00}=\{0\}$, the doubly degenerate sector. The fourth, $\Sigma_{01}$, is empty, because $M=0$ forces $z=0$ and $B(0)=0$.
 
-The doubly regular sector is the complement of the real axis, open and dense, with two connected components, the upper and lower half-planes. Every element is a unit with two distinct eigenvalues and the distinguished eigenbasis $(1,-i),(1,i)$. The sector $\Sigma_{10}$ is the punctured real axis, two open rays; every element is a real unit, its spectrum is a singleton, its minimal polynomial is $X-t$, and every basis is an eigenbasis. The sector $\Sigma_{00}$ is the origin, the only non-unit, the only modulus-degenerate element and the only point at which both predicates fail.
+The doubly regular sector is the complement of the real axis, open and dense, with two connected components, the upper and lower half-planes. Every element is invertible with two distinct eigenvalues and the distinguished eigenbasis $(1,-i),(1,i)$. The sector $\Sigma_{10}$ is the punctured real axis, two open rays; every element is a real unit, its spectrum is a singleton, its minimal polynomial is $X-t$, and every basis is an eigenbasis. The sector $\Sigma_{00}$ is the origin, the only non-invertible, the only modulus-degenerate element and the only point at which both predicates fail.
 
 The closures are $\overline{\Sigma_{11}}=\mathbb{C}$, $\overline{\Sigma_{10}}=\mathbb{R}$ and $\overline{\Sigma_{00}}=\{0\}$, and they are ordered by inclusion; the partition is a stratification of dimensions $2$, $1$ and $0$. There is no defective stratum: every element is semisimple, and the spectral-degenerate set, the real axis, consists of scalar semisimple elements. The absence of nilpotent and unipotent strata is the field property of $\mathbb{C}$, and it is the structural difference between this three-sector case and the four-sector biquaternion case.
 
@@ -174,7 +174,7 @@ The closures are $\overline{\Sigma_{11}}=\mathbb{C}$, $\overline{\Sigma_{10}}=\m
 - [Spectral Regularity and Degeneracy in the Complex Algebra](spectral-regularity-and-degeneracy-in-the-complex-algebra.html), for the spectral criterion, the discriminant and semisimplicity.
 - [Eigenvalue Decomposition and Eigenbasis of a Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-complex-number.html), for the eigenbasis and the spectral idempotents of the first sector.
 - [Relations between the Modulus and Spectral Regularity and Degeneracy](relations-between-the-modulus-and-spectral-regularity-and-degeneracy.html), for the nesting of the two predicates and the comparison of the invariants.
-- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, the units and the three-way classification.
+- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, the invertibles and the three-way classification.
 - [Complex Algebra](complex-algebra.html), for the algebra and the real and imaginary subspaces.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the analogue of $\Sigma_{11}$ in the biquaternion algebra.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the analogue of $\Sigma_{10}$ and its unipotent stratum.

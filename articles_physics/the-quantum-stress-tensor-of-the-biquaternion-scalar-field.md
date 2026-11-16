@@ -142,7 +142,7 @@ w_{\mathrm{fl}}=\tfrac12\left[\left(\frac{\partial\lVert\tilde\Xi\rVert}{\partia
 +\frac{\rho_{\mathrm{num}}}{2\hbar^{2}}\left(\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}\right)+\tfrac12k_m^{2}\rho_{\mathrm{num}} .
 $$
 
-The momentum term of the flux is $\rho_{\mathrm{num}}E\vec p/\hbar^{2}$, which is the momentum density $\rho_{\mathrm{num}}\vec p/\hbar^{2}$ carried at the energy $E$: the flux of a relativistic flow is the momentum density times the energy per momentum, and $E$ is that ratio up to the units. The amplitude-gradient term is the one with no classical counterpart, and the next two sections read it.
+The momentum term of the flux is $\rho_{\mathrm{num}}E\vec p/\hbar^{2}$, which is the momentum density $\rho_{\mathrm{num}}\vec p/\hbar^{2}$ carried at the energy $E$: the flux of a relativistic flow is the momentum density times the energy per momentum, and $E$ is that ratio up to the invertibles. The amplitude-gradient term is the one with no classical counterpart, and the next two sections read it.
 
 ### The mass shell inside the energy density
 

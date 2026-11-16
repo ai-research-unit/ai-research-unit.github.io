@@ -129,7 +129,7 @@ The zero divisors are distributed over the distinguished subspaces as follows. T
 
 | Subspace | Zero divisors | Description |
 |---|---|---|
-| $S = \mathbb{R}\cdot 1$ | none | every nonzero scalar is a unit |
+| $S = \mathbb{R}\cdot 1$ | none | every nonzero scalar is invertible |
 | $V$ | the nonzero vectors with $q_x^2 = q_y^2 + q_z^2$ | the level set $N = 0$, a two-dimensional cone, every nonzero point of which is nilpotent |
 | $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ | the nonzero multiples of $1 \pm \vec e_y$ | two zero-divisor lines |
 | $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$ | the nonzero multiples of $1 \pm \vec e_z$ | two zero-divisor lines |
@@ -144,7 +144,7 @@ The table is completed by the following observations.
 
 **The splitting.** The zero divisor set is the union of the planes of the two families of *The Two Families*. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a further two-dimensional set of points of the zero divisor set lying outside that subcone.
 
-**Measure.** That the zero divisor set is closed, that it has measure zero in $\mathbb{R}^4$, and that the units are open and dense are topological and measure-theoretic statements and belong to *Split-Quaternion Topology*; what is used here is only that the zero divisor set is the vanishing set of the single polynomial $N$.
+**Measure.** That the zero divisor set is closed, that it has measure zero in $\mathbb{R}^4$, and that the invertibles are open and dense are topological and measure-theoretic statements and belong to *Split-Quaternion Topology*; what is used here is only that the zero divisor set is the vanishing set of the single polynomial $N$.
 
 ## Summary
 

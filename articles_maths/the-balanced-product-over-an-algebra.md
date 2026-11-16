@@ -105,7 +105,7 @@ Three special cases are used constantly.
 - Taking $B=R$ and $C=A$ gives $M\otimes_A N$ a right $A$-module structure, and taking $B=A$, $C=R$ gives a left $A$-module structure; when $B=C=R$, both hold and $M\otimes_A N$ is an $R$-bimodule.
 - Taking $B=C=R$ with $R$ commutative gives an $R$-module structure, which is the structure of §Forced Centrality.
 
-### The regular bimodule as a unit
+### The regular bimodule as an invertible element
 
 **Theorem.** Let $M$ be a right $A$-module and $N$ a left $A$-module. Then there are natural isomorphisms of abelian groups
 
@@ -117,7 +117,7 @@ the first induced by $a\otimes n \mapsto an$ and the second by $m\otimes a \maps
 
 *Proof.* The map $A\times N\to N$, $(a,n)\mapsto an$, is $A$-balanced, so it induces $a\otimes n\mapsto an$; the map $N\to A\otimes_A N$, $n\mapsto 1_A\otimes n$, is a group homomorphism, and the two are inverse because $a\otimes n=(a1_A)\otimes n=a(1_A\otimes n)$ by the inverse relation $a\otimes n=1_A\otimes an$ read backwards. The bimodule statements are checked directly from the actions.
 
-Thus ${}_A A_A$ is a unit for the balanced product, exactly as $R$ is a unit for the tensor product over a commutative ring.
+Thus ${}_A A_A$ is invertible for the balanced product, exactly as $R$ is invertible for the tensor product over a commutative ring.
 
 ### Associativity
 
@@ -231,9 +231,9 @@ Dually, for a right $A$-module $M$, a left $A$-module $N$ and an abelian group $
 
 **(a) Over a commutative ring.** If $A=R$ is commutative, every left module is a right module by $mr=rm$, the balanced relation $mr\otimes n=m\otimes rn$ is the bilinearity relation, and $M\otimes_R N$ is the ordinary tensor product of *Modules* §13, with its universal property for bilinear maps. The balanced product of this article is the noncommutative generalisation, and over a field it is the tensor product of vector spaces, with $\dim_F(M\otimes_F N)=(\dim_F M)(\dim_F N)$.
 
-**(b) The regular module as a unit.** For every right $A$-module $M$ and left $A$-module $N$ one has $M\otimes_A A\cong M$ and $A\otimes_A N\cong N$, by §Bimodules and the Tensor Product.
+**(b) The regular module as an invertible element.** For every right $A$-module $M$ and left $A$-module $N$ one has $M\otimes_A A\cong M$ and $A\otimes_A N\cong N$, by §Bimodules and the Tensor Product.
 
-**(c) Matrix algebras.** Let $A=M_n(F)$, let $S=F^n$ be the defining module and let ${}_A A_A$ be the regular bimodule. The regular bimodule is a unit, so $M_n(F)\otimes_{M_n(F)}N\cong N$ for every left $A$-module $N$. In the other direction, $S$ is an $(M_n(F),F)$-bimodule, and for an $F$-vector space $V$ the balanced product is
+**(c) Matrix algebras.** Let $A=M_n(F)$, let $S=F^n$ be the defining module and let ${}_A A_A$ be the regular bimodule. The regular bimodule is invertible, so $M_n(F)\otimes_{M_n(F)}N\cong N$ for every left $A$-module $N$. In the other direction, $S$ is an $(M_n(F),F)$-bimodule, and for an $F$-vector space $V$ the balanced product is
 
 $$
 S\otimes_F V \cong S^{\oplus\dim_F V},
@@ -241,7 +241,7 @@ $$
 
 a left $M_n(F)$-module whose underlying $F$-vector space is the column space $V^n$ on which a matrix of $M_n(F)$ acts by matrix multiplication on the $n$ columns; its dimension is $\dim_F(S\otimes_F V)=n\dim_F V=(\dim_F S)(\dim_F V)$. This is the balanced product rendering the Morita equivalence of $M_n(F)$ with $F$: the functor $S\otimes_F-$ carries $\operatorname{Mod}(F)$ to $\operatorname{Mod}(M_n(F))$, and it is an equivalence by *Morita Equivalence*.
 
-**(d) The biquaternion algebra.** For $\mathbb{B}\cong M_2(\mathbb{C})$ over $\mathbb{C}$ and its defining module $S=\mathbb{C}^2$, the balanced product gives $\mathbb{B}\otimes_\mathbb{B}S\cong S$ and $\mathbb{B}\otimes_\mathbb{B}\mathbb{B}\cong\mathbb{B}$, the second exhibiting the regular bimodule as a unit. The general $\mathbb{B}$-balanced product of two of the modules is an abelian group unless one factor carries an outer algebra action, which is the content of the centrality proposition above.
+**(d) The biquaternion algebra.** For $\mathbb{B}\cong M_2(\mathbb{C})$ over $\mathbb{C}$ and its defining module $S=\mathbb{C}^2$, the balanced product gives $\mathbb{B}\otimes_\mathbb{B}S\cong S$ and $\mathbb{B}\otimes_\mathbb{B}\mathbb{B}\cong\mathbb{B}$, the second exhibiting the regular bimodule as an invertible element. The general $\mathbb{B}$-balanced product of two of the modules is an abelian group unless one factor carries an outer algebra action, which is the content of the centrality proposition above.
 
 **(e) Group algebras and induction.** Let $H \leq G$ be finite groups and let $F$ be a field. The group algebra $F[G]$ is an $(F[G],F[H])$-bimodule, the right action being multiplication within $F[H]$ and the left action multiplication in $F[G]$. For a left $F[H]$-module $V$,
 
@@ -255,7 +255,7 @@ is a left $F[G]$-module by §Bimodules and the Tensor Product, the **induced mod
 
 ## Summary
 
-For a right $A$-module $M$ and a left $A$-module $N$ the balanced product $M\otimes_A N$ is the abelian group generated by symbols $m\otimes n$ subject to additivity in each variable and the balanced relation $ma\otimes n=m\otimes an$; it is characterised by the universal property that $\operatorname{Hom}_{\mathbb{Z}}(M\otimes_A N,P)\cong\operatorname{Bal}_A(M,N;P)$ for $A$-balanced maps. Every element is a finite sum $\sum_i m_i\otimes n_i$. If $M$ is a $(B,A)$-bimodule and $N$ an $(A,C)$-bimodule then $M\otimes_A N$ is a $(B,C)$-bimodule, and in particular the regular bimodule ${}_A A_A$ is a unit, with $M\otimes_A A\cong M$ and $A\otimes_A N\cong N$. The product is associative across chains of bimodules and right exact in each variable; left exactness fails and is measured by $\operatorname{Tor}^A_\bullet$.
+For a right $A$-module $M$ and a left $A$-module $N$ the balanced product $M\otimes_A N$ is the abelian group generated by symbols $m\otimes n$ subject to additivity in each variable and the balanced relation $ma\otimes n=m\otimes an$; it is characterised by the universal property that $\operatorname{Hom}_{\mathbb{Z}}(M\otimes_A N,P)\cong\operatorname{Bal}_A(M,N;P)$ for $A$-balanced maps. Every element is a finite sum $\sum_i m_i\otimes n_i$. If $M$ is a $(B,A)$-bimodule and $N$ an $(A,C)$-bimodule then $M\otimes_A N$ is a $(B,C)$-bimodule, and in particular the regular bimodule ${}_A A_A$ is invertible, with $M\otimes_A A\cong M$ and $A\otimes_A N\cong N$. The product is associative across chains of bimodules and right exact in each variable; left exactness fails and is measured by $\operatorname{Tor}^A_\bullet$.
 
 Centrality is forced by the balanced relation. The left action of $A$ on $M\otimes_A N$ through the first factor is always defined when $M$ is an $(A,A)$-bimodule, whereas the action through the second factor, $m\otimes n\mapsto m\otimes an$, is defined if and only if $a$ is central. The two actions agree on a central element whenever it acts on the bimodules from the left and from the right in the same way, as holds for the regular bimodules and for every symmetric bimodule; for the regular bimodules they coincide on all of $A$ exactly when $A$ is commutative, and for a general bimodule the agreement can fail. Positively, the base ring $R$ is central, so $M\otimes_A N$ is always an $R$-module with $r(m\otimes n)=(mr)\otimes n=m\otimes(rn)$. The product is the left adjoint of a hom functor, $\operatorname{Hom}_B(M\otimes_A N,P)\cong\operatorname{Hom}_A(N,\operatorname{Hom}_B(M,P))$, and by the Eilenberg–Watts theorem it is the universal right exact functor commuting with direct sums. The standard examples are the commutative tensor product as the special case $A=R$, the unit isomorphisms for the regular bimodule, the matrix-algebra computations underlying Morita equivalence, and induction of group representations as $F[G]\otimes_{F[H]}V$.
 

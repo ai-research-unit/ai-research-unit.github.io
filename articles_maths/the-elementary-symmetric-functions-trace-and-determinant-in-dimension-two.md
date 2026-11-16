@@ -117,7 +117,7 @@ with $\operatorname{adj}A=(\operatorname{tr}A)I-A$.
 
 The trace and the determinant are the elementary symmetric functions $e_1$ and $e_2$ of the two eigenvalues, in coordinates $a+d$ and $ad-bc$. They generate the ring of symmetric polynomials in two variables and the ring of conjugation-invariant polynomials on the algebra, freely, so the quotient by conjugation is the plane. Newton's identities give $p_k=e_1p_{k-1}-e_2p_{k-2}$ with $p_0=2$, hence $\operatorname{tr}(A^{2})=(\operatorname{tr}A)^{2}-2\det A$ and $\operatorname{tr}(A^{3})=(\operatorname{tr}A)^{3}-3(\operatorname{tr}A)(\det A)$, and the pair is recovered from $(p_1,p_2)$ by $e_2=\tfrac12(p_1^{2}-p_2)$.
 
-The Jacobian of the pair is $\bigl(\operatorname{tr}H,\operatorname{tr}(\operatorname{adj}A\,H)\bigr)$, of rank $2$ off the scalar matrices and of rank $1$ on them. The trace is additive and the determinant multiplicative, and the log-determinant is the primitive of the trace on the unit group.
+The Jacobian of the pair is $\bigl(\operatorname{tr}H,\operatorname{tr}(\operatorname{adj}A\,H)\bigr)$, of rank $2$ off the scalar matrices and of rank $1$ on them. The trace is additive and the determinant multiplicative, and the log-determinant is the primitive of the trace on the group of invertibles.
 
 | Power sum | Value at order two |
 |---|---|

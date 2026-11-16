@@ -34,7 +34,7 @@ $$
 \partial_v : k_2 \longrightarrow k_1(\kappa_v), \qquad \partial_v(\{f,g\}) = (-1)^{v(f)v(g)} u_f^{-v(g)} u_g^{v(f)},
 $$
 
-where $f = u_f\pi^{v(f)}$ and $g = u_g\pi^{v(g)}$ are the decompositions into a power of the uniformiser and a unit, and $k_1(\kappa) = \kappa^\times/\kappa^{\times 2}$. That article proves that $\partial_v$ annihilates the defining relations of the symbols, so that it descends to a homomorphism on $k_2$.
+where $f = u_f\pi^{v(f)}$ and $g = u_g\pi^{v(g)}$ are the decompositions into a power of the uniformiser and an invertible element, and $k_1(\kappa) = \kappa^\times/\kappa^{\times 2}$. That article proves that $\partial_v$ annihilates the defining relations of the symbols, so that it descends to a homomorphism on $k_2$.
 
 At a finite place $n$ of $F(t)$ the uniformiser is $n$ and the decomposition is $f = n^{v_n(f)}u_f$ with $u_f = f/n^{v_n(f)}$, so the entry of a symbol is the class of
 

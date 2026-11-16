@@ -67,7 +67,7 @@ $$
 
 ## The Unit Circle
 
-**Definition.** The **unit circle** is $\mathrm{U}(1)=\{z:M(z)=1\}=\{t+bi:t^2+b^2=1\}$. Every point of it is modulus-regular and a unit, with inverse $\bar z$.
+**Definition.** The **unit circle** is $\mathrm{U}(1)=\{z:M(z)=1\}=\{t+bi:t^2+b^2=1\}$. Every point of it is modulus-regular and an invertible element, with inverse $\bar z$.
 
 **Theorem (the intersection with the real axis).** The unit circle meets the real axis exactly at $z=1$ and $z=-1$. There $M=1$ and $B=0$: the two points are modulus-regular and spectrally degenerate, not doubly regular. The doubly regular points of the circle are the complement $\mathrm{U}(1)\setminus\{1,-1\}$, the two open arcs $b>0$ and $b<0$.
 
@@ -79,7 +79,7 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 
 ## The Origin and the Empty Sector
 
-**Theorem (the vanishing locus of the modulus).** For $z\in\mathbb{C}$, $M(z)=0$ exactly when $z=0$. There is no non-zero modulus-degenerate element, every non-zero complex number is a unit, and the zero-divisor class is empty.
+**Theorem (the vanishing locus of the modulus).** For $z\in\mathbb{C}$, $M(z)=0$ exactly when $z=0$. There is no non-zero modulus-degenerate element, every non-zero complex number is invertible, and the zero-divisor class is empty.
 
 *Proof.* $t^2+b^2=0$ forces $t=b=0$. The inverse of $z\neq0$ is $\bar z/M(z)$. If $ab=0$ with $a,b\neq0$, multiplicativity gives $M(a)M(b)=0$, hence $M(a)=0$ or $M(b)=0$, hence $a=0$ or $b=0$, a contradiction.
 
@@ -91,7 +91,7 @@ The phrase *the unit circle meets the real axis at $\pm1$* might suggest that th
 
 *Proof.* $M=0$ forces $z=0$, and $B(0)=0$.
 
-**Remark (three-way classification).** An element is a unit, a zero divisor, or zero. The zero-divisor class is empty, so the classification has two non-empty classes, the units and the origin. The modulus makes the classification; the spectral invariant plays no part in it. The detail is *Complex Norm and Invertibility*, §*The Three-Way Classification*.
+**Remark (three-way classification).** An element is invertible, a zero divisor, or zero. The zero-divisor class is empty, so the classification has two non-empty classes, the invertibles and the origin. The modulus makes the classification; the spectral invariant plays no part in it. The detail is *Complex Norm and Invertibility*, §*The Three-Way Classification*.
 
 ## The Chain of Invariants
 
@@ -136,7 +136,7 @@ The complex algebra carries the modulus squared $M=t^2+b^2$ and the square of th
 
 As functions, $M$ and $B$ are independent: $1+i$ and $2+i$ have the same $B$ and different $M$, while $1$ and $i$ have the same $M$ and different $B$. As vanishing conditions they are nested: $B\neq0$ implies $M\neq0$, and the implication is strict at every non-zero real number. The four logical combinations are three non-empty cases and the empty case $M=0$, $B\neq0$.
 
-The unit circle meets the real axis at $\pm1$. These points are modulus-regular and spectrally degenerate, not doubly regular; the doubly regular points of the circle are the two open arcs between them. The origin is the only doubly degenerate point, and there is no non-zero modulus-degenerate element, so every non-zero complex number is a unit and the zero-divisor class is empty.
+The unit circle meets the real axis at $\pm1$. These points are modulus-regular and spectrally degenerate, not doubly regular; the doubly regular points of the circle are the two open arcs between them. The origin is the only doubly degenerate point, and there is no non-zero modulus-degenerate element, so every non-zero complex number is invertible and the zero-divisor class is empty.
 
 The characteristic polynomial $X^2-2tX+M$ separates the three sectors; the minimal polynomial adds no sector. The spectral data determine $z$ only up to the sign of $b$, so $z$ and $\bar z$ are spectrally indistinguishable. Among the algebras of the corpus the complex case is the smallest definite case with three sectors: $\mathbb{R}$ has two, $\mathbb{H}$ has three, and the split and biquaternion algebras have four because their norms are indefinite or complex.
 

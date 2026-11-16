@@ -9,7 +9,7 @@ The base is a field $K$ of characteristic not two, $A$ a finite-dimensional grad
 
 ## The Adjoint of a Reflection
 
-**Theorem.** Let $a$ be a unit with $a\,\alpha(a)=1$. Then the signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint:
+**Theorem.** Let $a$ be an invertible element with $a\,\alpha(a)=1$. Then the signed reflection $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint:
 
 $$
 \boxed{\;(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{a,a^{-1}}\;} .
@@ -27,7 +27,7 @@ Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1}
 
 ## The Self-Adjointness Criterion
 
-**Theorem.** Let $a$ be a unit, and put $c=a\,\alpha(a)$. Then $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $c$ is central. In particular every reflection ($c=1$) is self-adjoint, and the self-adjointness of a signed two-sided operator of reflection shape is exactly the centrality of its normalising element.
+**Theorem.** Let $a$ be an invertible element, and put $c=a\,\alpha(a)$. Then $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $c$ is central. In particular every reflection ($c=1$) is self-adjoint, and the self-adjointness of a signed two-sided operator of reflection shape is exactly the centrality of its normalising element.
 
 **Proof.** By the adjoint formula, $(\Sigma^{\alpha}_{a,a^{-1}})^{\dagger}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped two-sided operator $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed Two-Sided Operators on a Graded Algebra*, two reflection-shaped signed two-sided operators with the same shape coincide if and only if the corresponding elements differ by a central unit; here $b^{-1}a=\alpha(a)a=c$ must be central. Conversely, if $c$ is central then $b^{-1}a=c$ is central and the two-sided operators coincide.
 
@@ -35,13 +35,13 @@ Since $\alpha$ is an automorphism and $\alpha(a)=a^{-1}$, one has $\alpha(a^{-1}
 
 ## Failure in the Degenerate Case
 
-**Definition.** The reflection-shaped two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ is **degenerate** when $c=a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not a unit, so that $a^{-1}$ does not exist and the two-sided operator is not defined.
+**Definition.** The reflection-shaped two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ is **degenerate** when $c=a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not invertible, so that $a^{-1}$ does not exist and the two-sided operator is not defined.
 
-**Theorem (failure of self-adjointness).** There exist graded algebras with a balanced α-compatible form and a unit $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint; concretely, in $A=\mathrm{End}_K(V)$ with the grade involution $\alpha(X)=JXJ^{-1}$, $J=\operatorname{diag}(1,-1)$, the trace form $\beta(X,Y)=\operatorname{tr}(XY)$ and the unit $a=\operatorname{diag}(1,2)$ one has $\alpha(a)=a$, hence $c=a\alpha(a)=\operatorname{diag}(1,4)$ non-central, and the conjugation $\Sigma^{\alpha}_{a,a^{-1}}(X)=aXa^{-1}$ has adjoint $\Sigma^{\alpha}_{a^{-1},a}(X)=a^{-1}Xa\neq aXa^{-1}$.
+**Theorem (failure of self-adjointness).** There exist graded algebras with a balanced α-compatible form and an invertible element $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint; concretely, in $A=\mathrm{End}_K(V)$ with the grade involution $\alpha(X)=JXJ^{-1}$, $J=\operatorname{diag}(1,-1)$, the trace form $\beta(X,Y)=\operatorname{tr}(XY)$ and the unit $a=\operatorname{diag}(1,2)$ one has $\alpha(a)=a$, hence $c=a\alpha(a)=\operatorname{diag}(1,4)$ non-central, and the conjugation $\Sigma^{\alpha}_{a,a^{-1}}(X)=aXa^{-1}$ has adjoint $\Sigma^{\alpha}_{a^{-1},a}(X)=a^{-1}Xa\neq aXa^{-1}$.
 
 **Proof.** The element $a=\operatorname{diag}(1,2)$ commutes with $J$, so $\alpha(a)=a$ and $c=\operatorname{diag}(1,4)$, which is not a scalar and therefore not central in $\mathsf{M}_2(K)$; by the criterion the two-sided operator is not self-adjoint. The adjoint is computed by the general formula as $\Sigma^{\alpha}_{a^{-1},a}$, and $a^{-1}Xa\neq aXa^{-1}$ for example at $X=\begin{pmatrix}0&1\\0&0\end{pmatrix}$.
 
-**Corollary (the totally degenerate case).** When $a$ is not a unit the reflection-shaped two-sided operator does not exist; the related operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$ and satisfies $\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a)a}$, which is the zero operator when $a\alpha(a)=0$; in the exterior algebra an odd vector $v$ gives $\Sigma^{\alpha}_{v,v}=0$, a square-zero operator that is not a reflection, and the self-adjointness question for the reflection does not arise because the reflection is not defined.
+**Corollary (the totally degenerate case).** When $a$ is not invertible the reflection-shaped two-sided operator does not exist; the related operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$ and satisfies $\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a)a}$, which is the zero operator when $a\alpha(a)=0$; in the exterior algebra an odd vector $v$ gives $\Sigma^{\alpha}_{v,v}=0$, a square-zero operator that is not a reflection, and the self-adjointness question for the reflection does not arise because the reflection is not defined.
 
 ## The Eigenspace Decomposition
 
@@ -60,7 +60,7 @@ For the non-reflection unit $a=\operatorname{diag}(1,2)$ the two-sided operator 
 
 ## Summary
 
-A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; hence **every reflection is self-adjoint** with respect to a balanced α-compatible form. More generally $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint exactly when $a\,\alpha(a)$ is central, the centrality being the relaxed form of the reflection normalisation; the **degenerate** case in which $a\alpha(a)$ is not central produces a reflection-shaped two-sided operator that is not self-adjoint, with the explicit example the conjugation by $\operatorname{diag}(1,2)$ in $\mathsf{M}_2(K)$ for the trace form, and the **totally degenerate** case in which $a$ is not a unit produces no reflection at all, the related operator $\Sigma^{\alpha}_{a,a}$ being square-zero when $a\alpha(a)=0$, as for an odd vector in the exterior algebra. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, with the fixed part $\alpha(x)=a^{-1}xa$; for the grade involution it is the even-odd decomposition. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
+A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; hence **every reflection is self-adjoint** with respect to a balanced α-compatible form. More generally $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint exactly when $a\,\alpha(a)$ is central, the centrality being the relaxed form of the reflection normalisation; the **degenerate** case in which $a\alpha(a)$ is not central produces a reflection-shaped two-sided operator that is not self-adjoint, with the explicit example the conjugation by $\operatorname{diag}(1,2)$ in $\mathsf{M}_2(K)$ for the trace form, and the **totally degenerate** case in which $a$ is not invertible produces no reflection at all, the related operator $\Sigma^{\alpha}_{a,a}$ being square-zero when $a\alpha(a)=0$, as for an odd vector in the exterior algebra. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, with the fixed part $\alpha(x)=a^{-1}xa$; for the grade involution it is the even-odd decomposition. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
 
 ## Summary of Notation
 

@@ -91,7 +91,7 @@ A=\mathsf M_2(\tilde Q).
 $$
 Its image is the four-dimensional subalgebra $\mathbb{B}_L$. The composition law is $L(\tilde Q)L(\tilde Q_3)=L(\tilde Q\tilde Q_3)$, and the map $\tilde Q\mapsto L(\tilde Q)$ is injective. The rank is $2\operatorname{rank}A$, the trace is $2\operatorname{Tr}A=4Q_t$, and the determinant is $(\det A)^2=\langle\tilde Q\rangle_{\natural}^2$. The four basis matrices $L_{\mathrm{pau},e_\mu}$ are the images of the four units, and they are the four matrices of the Pauli Representation article.
 
-**The four left matrices.** Each is the image of a unit under the left matrix map, in the canonical frame,
+**The four left matrices.** Each is the image of an invertible element under the left matrix map, in the canonical frame,
 $$
 L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -109,7 +109,7 @@ B=\mathsf M_2(\tilde Q_2),
 $$
 a block matrix whose four blocks are scalar multiples of $\mathrm I_2$. Its image is the four-dimensional subalgebra $\mathbb{B}_R$. The composition law is anti-multiplicative, $R(\tilde Q_2)R(\tilde Q_4)=R(\tilde Q_4\tilde Q_2)$, and the map $\tilde Q_2\mapsto R(\tilde Q_2)$ is injective. The rank is $2\operatorname{rank}B$, the trace is $2\operatorname{Tr}B=4P_t$, and the determinant is $(\det B)^2=\langle\tilde Q_2\rangle_{\natural}^2$. The four basis matrices $R_{\mathrm{pau},e_\mu}$ are the images of the four units.
 
-**The four right matrices.** Each is the image of a unit under the right matrix map,
+**The four right matrices.** Each is the image of an invertible element under the right matrix map,
 $$
 R_{\mathrm{pau},e_t}=\mathsf{M}_{4R}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 R_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -255,7 +255,7 @@ $$
 $$
 *Proof.* In the Pauli evaluation $L_{\tilde Q}R_{\tilde Q_2}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$. The trace of a Kronecker product is the product of the traces, $\operatorname{Tr}\mathsf M_2(\tilde Q_2)^{\mathsf T}=2P_t$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$; the determinant is $\det(\mathsf M_2(\tilde Q_2))^{2}\det(\mathsf M_2(\tilde Q))^{2}$, and $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The inverse is the inverse of each factor.
 
-**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
+**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ and $0$ for the other fifteen. The basis consists of invertibles, but its span does not: for example
 $$
 L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=\mathrm I_4+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_x}=
 \begin{pmatrix}
@@ -366,12 +366,12 @@ $$
 $$
 so the operator is nonzero. The zero operator is the image of every pair with a zero parameter, and it is the vertex of the cone.
 
-**The two slots.** With the other parameter a unit, the map is injective in each slot:
+**The two slots.** With the other parameter an invertible element, the map is injective in each slot:
 $$
 L_{\tilde Q}R_{\mathrm{pau},e_t}=L(\tilde Q),\qquad
 L_{\mathrm{pau},e_t}R_{\tilde Q_2}=R(\tilde Q_2).
 $$
-The first is the left copy, the second the right copy, and both parametrisations are injective. More generally, $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$; if $\tilde Q_2$ is a unit, $\tilde Q$ is recovered from this value, and if $\tilde Q$ is a unit, $\tilde Q_2$ is recovered.
+The first is the left copy, the second the right copy, and both parametrisations are injective. More generally, $L_{\tilde Q}R_{\tilde Q_2}(e_t)=\tilde Q\tilde Q_2$; if $\tilde Q_2$ is invertible, $\tilde Q$ is recovered from this value, and if $\tilde Q$ is invertible, $\tilde Q_2$ is recovered.
 
 **The fibres.** For a nonzero product the fibre of the factorisation map is exactly one scaling orbit:
 $$
@@ -474,7 +474,7 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 $$
 \operatorname{rank}M=\operatorname{rank}\mathsf M_2(\tilde Q)\cdot\operatorname{rank}\mathsf M_2(\tilde Q_2)\in\{0,1,2,4\}.
 $$
-In particular $\operatorname{rank}M=4$ exactly when both parameters are units, and no product has rank three.
+In particular $\operatorname{rank}M=4$ exactly when both parameters are invertible, and no product has rank three.
 
 *Proof.* In the Pauli evaluation $L_{\tilde Q}R_{\tilde Q_2}=\mathsf M_2(\tilde Q_2)^{\mathsf T}\otimes\mathsf M_2(\tilde Q)$. The rank of a Kronecker product is the product of the ranks, and the rank of $\mathsf M_2(\tilde Q)$ is $2$ when $\langle\tilde Q\rangle_{\natural}\neq0$, $1$ when $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, and $0$ when $\tilde Q=0$.
 
@@ -578,7 +578,7 @@ The worked case §*$E_{11}$ as a Worked Case*, above, is therefore typical, and 
 
 **Two controls.** The identity has length one, because $\mathrm I_4=L(e_t)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}$ is a single product; and $\ell(E_{11})=1$, which matches the worked case. The value one is the minimum, so the sixteen units lie on the cone of products, and in the Peirce frame the coordinate axes are as close to that cone as four independent directions can be.
 
-**The other frame.** In the coefficient basis the same sixteen arrays have length four, not one. The arrays name different operators, and §*The Change of Frame Is a Congruence* is the reason both counts are right. There the products are signed permutations and the units are maximally long; here the products are monomial too, and every unit is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.
+**The other frame.** In the coefficient basis the same sixteen arrays have length four, not one. The arrays name different operators, and §*The Change of Frame Is a Congruence* is the reason both counts are right. There the products are signed permutations and the invertibles are maximally long; here the products are monomial too, and every invertible element is a product. A monomial display therefore decides nothing about the length: only the position of the coordinate axes relative to the cone does.
 
 ## The Plain Adjoint and the Types
 
@@ -628,7 +628,7 @@ exactly when
 $$
 \tilde Q_2\tilde Q=\pm e_t .
 $$
-Then $\tilde Q$ is a unit and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ is the inner automorphism. The isometry group is
+Then $\tilde Q$ is invertible and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde Q X\tilde Q^{-1}$ is the inner automorphism. The isometry group is
 $$
 \{\pm\mathrm{Ad}_{\tilde Q}\}\cong(\mathbb{B}^{\times}/\mathbb{C}^{\times})\times\{\pm1\},
 $$
@@ -713,7 +713,7 @@ $$
 \gamma_3=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
 \gamma_5=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}.
 $$
-Each is a unit multiple of one basis operator of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
+Each is an invertible multiple of one basis operator of the sixteen, and each is a single two-sided operator. In the Pauli evaluation,
 $$
 \gamma_0=\sigma_1\otimes\mathrm I_2,\qquad
 \gamma_k=i\,\sigma_2\otimes\sigma_k,\qquad
@@ -759,7 +759,7 @@ $$
 $$
 is a single product of coefficient rank one, supported on several basis operators. If $\delta$ is not a coordinate axis, $\gamma_0$ is not a basis operator either. The basis operator table of §*The Sixteen Products of the Frame* is the table of the reference pair.
 
-**Conjugacy.** For a unit $\tilde u$ and $U=L(\tilde u)R(\tilde u^{-1})$,
+**Conjugacy.** For an invertible element $\tilde u$ and $U=L(\tilde u)R(\tilde u^{-1})$,
 $$
 U\,L_{\tilde Q}R_{\tilde Q_2}\,U^{-1}=L_{\tilde u\tilde Q\tilde u^{-1}}R_{\tilde u\tilde Q_2\tilde u^{-1}}.
 $$
@@ -782,7 +782,7 @@ $$
 
 ### The sixteen products of the frame
 
-**The table.** In the reference frame the products of the five are the sixteen basis operators up to units.
+**The table.** In the reference frame the products of the five are the sixteen basis operators up to invertibles.
 
 | Grade | Product | Basis operator | Coefficient |
 |---|---|---|---|

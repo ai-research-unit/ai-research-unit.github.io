@@ -31,11 +31,11 @@ An element $c$ with the first two properties is a **common divisor** of $a$ and 
 
 **(c)** If $u \in R^{\times}$ then $\gcd(ua, b) \sim \gcd(a,b)$, and $a \mid b$ if and only if $\gcd(a,b) \sim a$.
 
-**Proof.** (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in *Integral Domains*. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by a unit permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates.
+**Proof.** (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in *Integral Domains*. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by an invertible element permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates.
 
 **Definition.** An integral domain $R$ is a **GCD domain** if every pair of elements of $R$, not both zero, has a greatest common divisor in $R$.
 
-**Definition.** Two elements $a, b \in R$, not both zero, are **coprime** if their only common divisors are units; when $\gcd(a,b)$ exists this says $\gcd(a,b) \sim 1$.
+**Definition.** Two elements $a, b \in R$, not both zero, are **coprime** if their only common divisors are invertible; when $\gcd(a,b)$ exists this says $\gcd(a,b) \sim 1$.
 
 ### Divisibility Properties of the gcd
 
@@ -45,7 +45,7 @@ $$
 \boxed{\;\gcd(ca, cb) \sim c \cdot \gcd(a,b)\;} .
 $$
 
-**Proof.** Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is a unit and $e \sim cd$.
+**Proof.** Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is invertible and $e \sim cd$.
 
 **Corollary.** Let $d = \gcd(a,b)$ with $a, b$ not both zero, and write $a = da'$, $b = db'$. Then $a'$ and $b'$ have no common divisor outside $R^{\times}$; that is, $\gcd(a',b') \sim 1$. Moreover, if $\gcd(a', b) \sim 1$ and $\gcd(a', c) \sim 1$, then $\gcd(a', bc) \sim 1$.
 
@@ -105,7 +105,7 @@ $$
 
 **Proposition.** Every unique factorisation domain is a GCD domain.
 
-**Proof.** In a unique factorisation domain every nonzero non-unit is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are *Unique Factorisation Domains*, below this article in this category.
+**Proof.** In a unique factorisation domain every nonzero non-invertible is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are *Unique Factorisation Domains*, below this article in this category.
 
 That article also supplies the standard example that is a unique factorisation domain without being either a Bézout domain or a principal ideal domain, namely $\mathbb{Z}[x]$.
 
@@ -173,9 +173,9 @@ $$
 
 So the Bézout combination is $2 = 240 \cdot (-9) + 46 \cdot 47$, and the identity is verified by expanding $47 \cdot 46 - 9 \cdot 240 = 2162 - 2160 = 2$.
 
-**Corollary.** Let $a, b \in R$ be nonzero. If there exist $x, y$ with $ax + by = 1$, then every common divisor of $a$ and $b$ is a unit, so $1$ is a greatest common divisor of $a$ and $b$. Conversely, if $\gcd(a,b) = d$ is a Bézout combination $d = ax + by$ and $d$ is a unit, then $a(xd^{-1}) + b(yd^{-1}) = 1$.
+**Corollary.** Let $a, b \in R$ be nonzero. If there exist $x, y$ with $ax + by = 1$, then every common divisor of $a$ and $b$ is invertible, so $1$ is a greatest common divisor of $a$ and $b$. Conversely, if $\gcd(a,b) = d$ is a Bézout combination $d = ax + by$ and $d$ is invertible, then $a(xd^{-1}) + b(yd^{-1}) = 1$.
 
-**Proof.** A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is a unit. Conversely, multiply the identity by $d^{-1}$.
+**Proof.** A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is invertible. Conversely, multiply the identity by $d^{-1}$.
 
 ---
 
@@ -187,7 +187,7 @@ The rung is strict: a domain need not have greatest common divisors.
 
 - The elements $2$ and $1 + \sqrt{-5}$ both divide $6$, since $6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$, and both divide $2(1+\sqrt{-5})$.
 - Neither divides the other: $2 \nmid 1+\sqrt{-5}$, and $1+\sqrt{-5} \nmid 2$ since $N(1+\sqrt{-5}) = 6$ does not divide $N(2) = 4$.
-- The elements of $R$ of norm dividing $36 = N(6)$ are the associates of $1, 2, 3, 6$, of $1 \pm \sqrt{-5}$, of $2 \pm \sqrt{-5}$ and of $4 \pm 2\sqrt{-5}$: a norm $a^2 + 5b^2$ dividing $36$ leaves $b = 0$ with $a \in \{\pm 1, \pm 2, \pm 3, \pm 6\}$, $b = \pm 1$ with $a \in \{\pm 1, \pm 2\}$, and $b = \pm 2$ with $a = \pm 4$. Among these, the divisors of $6$ up to units are $1, 2, 3, 6, 1+\sqrt{-5}, 1-\sqrt{-5}$: the elements $4 \pm 2\sqrt{-5}$ and $2 \pm \sqrt{-5}$ do not divide $6$, since $6/(4+2\sqrt{-5}) = (2-\sqrt{-5})/3 \notin R$ and $6/(2+\sqrt{-5}) = (4-2\sqrt{-5})/3 \notin R$.
+- The elements of $R$ of norm dividing $36 = N(6)$ are the associates of $1, 2, 3, 6$, of $1 \pm \sqrt{-5}$, of $2 \pm \sqrt{-5}$ and of $4 \pm 2\sqrt{-5}$: a norm $a^2 + 5b^2$ dividing $36$ leaves $b = 0$ with $a \in \{\pm 1, \pm 2, \pm 3, \pm 6\}$, $b = \pm 1$ with $a \in \{\pm 1, \pm 2\}$, and $b = \pm 2$ with $a = \pm 4$. Among these, the divisors of $6$ up to invertibles are $1, 2, 3, 6, 1+\sqrt{-5}, 1-\sqrt{-5}$: the elements $4 \pm 2\sqrt{-5}$ and $2 \pm \sqrt{-5}$ do not divide $6$, since $6/(4+2\sqrt{-5}) = (2-\sqrt{-5})/3 \notin R$ and $6/(2+\sqrt{-5}) = (4-2\sqrt{-5})/3 \notin R$.
 - A greatest common divisor $d$ of $6$ and $2(1+\sqrt{-5})$ would divide $6$ and be divisible by both $2$ and $1+\sqrt{-5}$. From the list, the divisors of $6$ divisible by $2$ are the associates of $2$ and of $6$; of these only $6$ is divisible by $1+\sqrt{-5}$, since $2/(1+\sqrt{-5}) = (1-\sqrt{-5})/3 \notin R$. Hence $d$ would be an associate of $6$.
 - But $6$ does not divide $2(1+\sqrt{-5})$, since $N(6) = 36$ does not divide $N(2(1+\sqrt{-5})) = 24$.
 
@@ -208,7 +208,7 @@ The rung is strengthened in two incomparable directions. Every unique factorisat
 | Symbol | Meaning |
 |---|---|
 | $R$ | Integral domain |
-| $R^{\times}$ | Group of units |
+| $R^{\times}$ | Group of invertibles |
 | $a \mid b$ | $a$ divides $b$ |
 | $a \sim b$ | Associates, $a = ub$ with $u \in R^{\times}$ |
 | $(a)$, $(a, b)$ | Principal ideal generated by $a$; ideal generated by $a$ and $b$ |

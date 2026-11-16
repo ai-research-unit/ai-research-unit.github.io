@@ -104,7 +104,7 @@ Each entry is Hermitian and squares to $e_t\otimes e_t$, so each has spectrum $\
 
 ### The product relations
 
-Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x_2\otimes y_2) = (xx_2)\otimes(yy_2)$ and the products of the units — gives
+Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x_2\otimes y_2) = (xx_2)\otimes(yy_2)$ and the products of the invertibles — gives
 
 |  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
 |---|---|---|---|---|

@@ -215,6 +215,6 @@ The exponential maps $\operatorname{Sym}_n$ onto $\operatorname{Sym}_n^{>0}$ bij
 
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the cone, its geometry and the matrix logarithm.
 - Roger A. Horn and Charles R. Johnson, *Topics in Matrix Analysis* (Cambridge, 1991), for the functional calculus and the identity $\det\mathrm{e}^{A}=\mathrm{e}^{\operatorname{tr}A}$.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace, the determinant and the two components of the unit group.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace, the determinant and the two components of the group of invertibles.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for the symmetric half and its dimension.
 - [The Polar Decomposition from the Two Halves and the Sign of the Determinant](the-polar-decomposition-from-the-two-halves-and-the-sign-of-the-determinant.html), for the uniqueness of the splitting used here.

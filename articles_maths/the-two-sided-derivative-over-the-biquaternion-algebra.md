@@ -153,7 +153,7 @@ The four forms say one thing. The first is the algebraic one, the second the met
 | Rank | $\operatorname{rank}\mathsf D\Sigma\le1$ | this article |
 | Determinant | $\det\mathsf D\Sigma=0$ | this article |
 | Norm | $N(\nabla\Sigma)=0$ | *Norm and Unitary Conventions* |
-| Cone | $\nabla\Sigma$ lies on the zero-divisor cone | *Zero Divisors and Units in the Biquaternion Algebra*; *The Topology of the Zero-Divisor Cone* |
+| Cone | $\nabla\Sigma$ lies on the zero-divisor cone | *Zero Divisors and Invertibles in the Biquaternion Algebra*; *The Topology of the Zero-Divisor Cone* |
 
 The equivalence of the second and third forms is the identity $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$, verified here on 100 random biquaternions with a largest residual of $1.3\times10^{-15}$.
 
@@ -367,7 +367,7 @@ The eikonal is scale covariant componentwise, conformally invariant without a we
 - [Biquaternion Regular Functions](biquaternion-regular-functions.html), for the definition of regularity, single-plane holomorphy and the shifted operator.
 - [Fueter Theory for Biquaternions](fueter-theory-for-biquaternions.html), for the Fueter construction, the axial extension and the slice approach.
 - [The First-Order Root of the Biquaternion D'Alembertian](the-first-order-root-of-the-biquaternion-d-alembertian.html), for the symbol of $\tilde\nabla$, the Clifford relation and the enveloping operator algebra.
-- [Zero Divisors and Units in the Biquaternion Algebra](zero-divisors-and-units.html), for the criterion $N=0$ and the two families of the cone.
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles.html), for the criterion $N=0$ and the two families of the cone.
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the cone as a topological object and its Lorentzian slices.
 - [Remarkable Subspaces and the Analysis](remarkable-subspaces-and-the-analysis.html), for the restriction of the operator to each real form and the elliptic and hyperbolic cases.
 - [The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe](../articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html), the companion article, for the reading of the two-sided condition as a field equation.

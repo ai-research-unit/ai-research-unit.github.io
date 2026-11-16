@@ -207,7 +207,7 @@ e^{-\tilde{Ξ}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\longrightarr
 \qquad \tilde{Ξ}\to\infty,
 $$
 
-a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as a unit.
+a Hermitian idempotent on the zero-divisor cone. The horizon is therefore the boundary of the polar chart, not a value of the word: no finite Lorentz transformation is null, and the limit is a null element. The frame at the horizon is lightlike, and the transformation that would carry a static frame to it does not exist as an invertible element.
 
 **The rate and the measure.** The boundary datum has two pieces. The **rate** is the surface gravity: the rapidity grows along the orbit at the proper rate $a$, its redshifted value at the horizon is $\kappa$, and the imaginary rapidity is periodic with period $2\pi$, so the corresponding proper-time period is
 

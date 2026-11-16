@@ -29,7 +29,7 @@ where $n$ is the degree of $A$ over $F$ in the sense of *Central Simple Algebras
 
 ## Comparing Two Involutions
 
-**Theorem (inner reduction).** Let $\sigma$ and $\tau$ be two involutions of $A$, and suppose that $\sigma$ and $\tau$ have the same restriction to $F$, so that $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$. Then $\sigma\tau^{-1}$ is inner: there is a unit $u \in A^\times$ with
+**Theorem (inner reduction).** Let $\sigma$ and $\tau$ be two involutions of $A$, and suppose that $\sigma$ and $\tau$ have the same restriction to $F$, so that $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$. Then $\sigma\tau^{-1}$ is inner: there is invertible $u \in A^\times$ with
 
 $$
 \boxed{\;\sigma(a) = u\,\tau(a)\,u^{-1} \quad \text{for all } a \in A\;} .
@@ -37,7 +37,7 @@ $$
 
 **Proof.** The composite $\sigma\tau^{-1}$ is an $F$-linear automorphism of $A$, and every automorphism of a central simple algebra is inner by the Skolem–Noether theorem, which is proved in *Central Simple Algebras and the Brauer Group*; write it as conjugation by $u$.
 
-**Proposition (when the conjugate is an involution).** For a unit $u$ the map $\sigma = \operatorname{inn}_u\circ\tau$ is an involution if and only if $\tau(u)u$ is central,
+**Proposition (when the conjugate is an involution).** For an invertible element $u$ the map $\sigma = \operatorname{inn}_u\circ\tau$ is an involution if and only if $\tau(u)u$ is central,
 
 $$
 \boxed{\;\sigma^2 = \mathrm{id} \iff \tau(u)\,u \in F\;} .
@@ -45,7 +45,7 @@ $$
 
 Under this condition $\sigma$ is of the same kind as $\tau$; it is of the **same type** as $\tau$ when $\tau(u)u$ is a square in $F$ and of the **opposite type** when it is not, in the first-kind case.
 
-**Proof.** $\operatorname{inn}_u\tau$ is additive and $F$-linear, and its square is $\operatorname{inn}_u\tau\operatorname{inn}_u\tau = \operatorname{inn}_{u\tau(u)}\tau^2 = \operatorname{inn}_{u\tau(u)}$, which is the identity exactly when $u\tau(u)$ is central, i.e. $\tau(u)u \in F$ by the centrality of scalars. For the type, conjugation by $u$ leaves the dimension of the symmetric part unchanged, and the change is read off from the symmetry of $u$ relative to $\tau$: a unit fixed up to the scalar $\tau(u)u$ contributes a symmetric or an antisymmetry according as that scalar is a square, which exchanges the two dimensions of the matrix case.
+**Proof.** $\operatorname{inn}_u\tau$ is additive and $F$-linear, and its square is $\operatorname{inn}_u\tau\operatorname{inn}_u\tau = \operatorname{inn}_{u\tau(u)}\tau^2 = \operatorname{inn}_{u\tau(u)}$, which is the identity exactly when $u\tau(u)$ is central, i.e. $\tau(u)u \in F$ by the centrality of scalars. For the type, conjugation by $u$ leaves the dimension of the symmetric part unchanged, and the change is read off from the symmetry of $u$ relative to $\tau$: An invertible element fixed up to the scalar $\tau(u)u$ contributes a symmetric or an antisymmetry according as that scalar is a square, which exchanges the two dimensions of the matrix case.
 
 **Corollary (the classification reduces to units).** Two first-kind involutions of $A$ differ by an inner automorphism, and the comparison is governed by the class of $\tau(u)u$ in $F^\times/F^{\times2}$, where $u$ is the unit with $\sigma = \operatorname{inn}_u\circ\tau$; this class is the elementary invariant of the pair, and it decides whether the two involutions have the same type or opposite type. The finer invariants, the discriminant and the Clifford invariant, are the forms of Part II.
 
@@ -57,7 +57,7 @@ Under this condition $\sigma$ is of the same kind as $\tau$; it is of the **same
 
 **(c) The complex matrix algebra.** For $A = M_n(\mathbb{C})$ over $\mathbb{C}$ with the conjugate transpose, the involution is of the second kind, its fixed field is $\mathbb{R}$, and the pair is the descent of $M_n(\mathbb{C})$ to the real form $M_n(\mathbb{R})$ or to the quaternionic form according to the symmetry of the Hermitian form involved; the classification of the second-kind involutions is the classification of the Hermitian forms over $\mathbb{C}$ with the conjugation.
 
-**(d) The degree-two case.** For a degree-two central simple algebra every first-kind involution is either the conjugation of a quaternion algebra, of orthogonal type, or the composite of it with the symplectic matrix involution after splitting, of symplectic type; the two occur on the same algebra and the passage between them is conjugation by a unit with $\tau(u)u$ a non-square.
+**(d) The degree-two case.** For a degree-two central simple algebra every first-kind involution is either the conjugation of a quaternion algebra, of orthogonal type, or the composite of it with the symplectic matrix involution after splitting, of symplectic type; the two occur on the same algebra and the passage between them is conjugation by an invertible element with $\tau(u)u$ a non-square.
 
 ## Summary
 

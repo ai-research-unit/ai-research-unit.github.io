@@ -99,7 +99,7 @@ $$
 
 **Proof sketch.** A bundle $E\to X$ has a module of sections $\Gamma(E)$ which is finitely generated and projective because $E$ is a direct summand of a trivial bundle, and every finitely generated projective module arises this way; the two constructions are inverse up to natural isomorphism.
 
-**Remark.** The higher algebraic $K$-groups $K_n(R)$ are defined by the $+$-construction or by Quillen's $Q$-construction, and $K_1(R)=GL(R)_{\mathrm{ab}}=GL(R)/E(R)$ classifies the units modulo elementary matrices. The **fundamental theorem** of algebraic $K$-theory, $K_n(R[t,t^{-1}])\cong K_{n-1}(R)\oplus K_n(R)$, is the algebraic form of Bott periodicity: the Laurent polynomial ring adds a circle, and the suspension shifts the degree by one. The comparison with the topological theory is the content of the Chern character of the next sections and of the index theorem itself.
+**Remark.** The higher algebraic $K$-groups $K_n(R)$ are defined by the $+$-construction or by Quillen's $Q$-construction, and $K_1(R)=GL(R)_{\mathrm{ab}}=GL(R)/E(R)$ classifies the invertibles modulo elementary matrices. The **fundamental theorem** of algebraic $K$-theory, $K_n(R[t,t^{-1}])\cong K_{n-1}(R)\oplus K_n(R)$, is the algebraic form of Bott periodicity: the Laurent polynomial ring adds a circle, and the suspension shifts the degree by one. The comparison with the topological theory is the content of the Chern character of the next sections and of the index theorem itself.
 
 ## Elliptic Operators, Symbols and the Analytic Index
 

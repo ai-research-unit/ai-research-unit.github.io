@@ -21,7 +21,7 @@ This article studies the eigenvalue problem of $\breve Q$ and the one condition 
 
 ## The Eigenvalue Problem in Idempotent Coordinates
 
-**Definition (eigenvalue).** A complex scalar $\lambda$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\lambda 1$ is not a unit of $\mathbb{B}_{\mathrm{red}}$. The set of eigenvalues is the **spectrum** $\sigma(\breve Q)$.
+**Definition (eigenvalue).** A complex scalar $\lambda$ is an **eigenvalue** of $\breve Q$ if $\breve Q-\lambda 1$ is not invertible of $\mathbb{B}_{\mathrm{red}}$. The set of eigenvalues is the **spectrum** $\sigma(\breve Q)$.
 
 **Definition (eigenvector and eigenspace).** A nonzero $v\in\mathbb{B}_{\mathrm{red}}$ is an **eigenvector** for $\lambda$ if $\breve Qv=\lambda v$. The **eigenspace** is
 $$
@@ -38,7 +38,7 @@ $$
 $$
 \breve Q-\lambda 1=(Q_+-\lambda)\Pi_+ +(Q_--\lambda)\Pi_-.
 $$
-By the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, an element is a unit exactly when both idempotent coordinates are nonzero. Hence $\breve Q-\lambda 1$ is not a unit exactly when one coordinate vanishes, that is when $\lambda=Q_+$ or $\lambda=Q_-$.
+By the criterion of *Norm and Invertibility in the Algebra of the Reduced Biquaternions*, an element is invertible exactly when both idempotent coordinates are nonzero. Hence $\breve Q-\lambda 1$ is not invertible exactly when one coordinate vanishes, that is when $\lambda=Q_+$ or $\lambda=Q_-$.
 
 **Corollary (the characteristic polynomial).** In the basis $(\Pi_+,\Pi_-)$ the left multiplication $L_{\breve Q}$ has matrix $\operatorname{diag}(Q_+,Q_-)$, so
 $$
@@ -165,7 +165,7 @@ In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}
 
 ## Summary
 
-The reduced biquaternion algebra is $\mathbb{C}\oplus\mathbb{C}$, with element $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$. The eigenvalue problem is the pair of coordinates: $\sigma(\breve Q)=\{Q_+,Q_-\}$, because $\breve Q-\lambda1$ is a unit exactly when both $Q_+-\lambda$ and $Q_--\lambda$ are nonzero. The characteristic polynomial is $(X-Q_+)(X-Q_-)$, of discriminant $4Q_\blacktriangledown^2$; the minimal polynomial is its squarefree part, $(X-Q_+)(X-Q_-)$ when $Q_+\neq Q_-$ and $X-Q_+$ when $Q_+=Q_-$. In both cases it is squarefree, so every element is semisimple and there are no defective elements.
+The reduced biquaternion algebra is $\mathbb{C}\oplus\mathbb{C}$, with element $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$. The eigenvalue problem is the pair of coordinates: $\sigma(\breve Q)=\{Q_+,Q_-\}$, because $\breve Q-\lambda1$ is invertible exactly when both $Q_+-\lambda$ and $Q_--\lambda$ are nonzero. The characteristic polynomial is $(X-Q_+)(X-Q_-)$, of discriminant $4Q_\blacktriangledown^2$; the minimal polynomial is its squarefree part, $(X-Q_+)(X-Q_-)$ when $Q_+\neq Q_-$ and $X-Q_+$ when $Q_+=Q_-$. In both cases it is squarefree, so every element is semisimple and there are no defective elements.
 
 The criterion is $Q_+\neq Q_-$, equivalently $Q_\blacktriangledown\neq0$, equivalently a non-scalar element. Then the eigenspaces are the idempotent lines $\mathbb{C}\Pi_+$ and $\mathbb{C}\Pi_-$, each of complex dimension one, and the spectral decomposition is $\breve Q=Q_+\Pi_+ +Q_-\Pi_-$, unique because $\Pi_\pm$ are the only nontrivial idempotents. The spectrally degenerate set is the scalar line $\mathbb{C}\cdot1=\{Q_\blacktriangledown=0\}=\{Q_+=Q_-\}$; on it the spectrum is $\{Q_\blacktriangle\}$, the minimal polynomial is linear, the eigenspace is the whole algebra, and the spectral decomposition is $Q_\blacktriangle1$.
 

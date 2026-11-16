@@ -23,7 +23,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | $\mathbb{B}_{\mathrm{spl}}$ | $\langle u\rangle_{\natural} \in {\mathbb{C}_{\mathrm{spl}}}^{\times}$ | yes | two maximal ideals | *Split-Biquaternion Algebra* |
 | $\mathbb{B}$ | $\langle\tilde{Q}\rangle_{\natural} \neq 0$ | yes | only $0$ and $\mathbb{B}$; simple, not division | *The Biquaternion Algebra* |
 
-The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is a unit; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ and the dual numbers $\mathbb{C}_{\mathrm{dln}}$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
+The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero element is invertible; the biquaternions $\mathbb{B}$ and the split-biquaternions $\mathbb{B}_{\mathrm{spl}}$ are the two eight-dimensional relatives that acquire zero divisors, and the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ and the dual numbers $\mathbb{C}_{\mathrm{dln}}$ are the two-dimensional commutative rings with a degenerate or indefinite norm.
 
 ## Residue Rings, Finite Rings and Products
 
@@ -33,7 +33,7 @@ The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero el
 | $\mathbb{F}_p$ | $\mathbb{F}_p^{\times}$, cyclic of order $p-1$ | none | only $0$ and $\mathbb{F}_p$; field | *Finite Fields* |
 | $\mathbb{F}_q$, $q = p^n$ | cyclic of order $q-1$ | none | only $0$ and $\mathbb{F}_q$; field | *Finite Fields* |
 | $\mathbb{F}_2^n$ | the elements with all coordinates $1$ | yes for $n \geq 2$ | a product of copies of $\mathbb{F}_2$ | *Examples of Rings and Fields* |
-| $R \times S$ | the pairs $(u, v)$ of units | $(1, 0)(0, 1) = 0$ | a product of the ideals of the factors | *Examples of Rings and Fields* |
+| $R \times S$ | the pairs $(u, v)$ of invertibles | $(1, 0)(0, 1) = 0$ | a product of the ideals of the factors | *Examples of Rings and Fields* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $\{1, 3\}$ | $2$ is nilpotent, $2^2 = 0$, so the ring is not reduced | local with maximal ideal $(2)$; Artinian | *Reduced Rings and the Nilradical* |
 | $\mathbb{Z}/6\mathbb{Z}$ | $\{1, 5\}$ | $2 \cdot 3 = 0$, neither factor zero | the product $\mathbb{F}_2 \times \mathbb{F}_3$; finite, Artinian | *Modular Arithmetic and the Ring of Residues* |
 | the zero ring $\{0\}$ | $1 = 0$ | — | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
@@ -59,14 +59,14 @@ A finite ring has nonzero characteristic, and a ring of characteristic $0$ conta
 
 | Ring | Units | Zero divisors | Ideals and chain conditions | Introduced in |
 |---|---|---|---|---|
-| $R[x]$ | the units of $R$ | none when $R$ is a domain | principal when $R$ is a field; Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
-| $R[x_1, \dots, x_n]$ | the units of $R$ | none when $R$ is a domain | finitely generated ideals, Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
+| $R[x]$ | the invertibles of $R$ | none when $R$ is a domain | principal when $R$ is a field; Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
+| $R[x_1, \dots, x_n]$ | the invertibles of $R$ | none when $R$ is a domain | finitely generated ideals, Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
 | $R[[x]]$ | the series with unit constant term | none when $R$ is a domain | local when $R$ is a field | *Formal Power Series and Completion* |
 | $k(x)$ | every nonzero rational function | none | only $0$ and $k(x)$; field | *Fields*, §19 |
 | $k((t))$ | the Laurent series with nonzero leading term | none | the valuation ring $k[[t]]$; field | *Absolute Values, Valuations and Completions* |
 | $k[[x]]$ | the series with nonzero constant term | none when $k$ is a field | local with maximal ideal $(x)$ | *Examples of Rings and Fields* |
 | $k[x, x^{-1}]$ | the monomials $c x^m$, $c \neq 0$ | none | principal; the group ring $k[\mathbb{Z}]$ | *Group Algebras* |
-| $\mathbb{Z}_p$ | the units of $\mathbb{Z}_p$, $\lvert x \rvert_p = 1$ | none | local with maximal ideal $(p)$ | *Absolute Values, Valuations and Completions* |
+| $\mathbb{Z}_p$ | the invertibles of $\mathbb{Z}_p$, $\lvert x \rvert_p = 1$ | none | local with maximal ideal $(p)$ | *Absolute Values, Valuations and Completions* |
 | $\mathbb{Z}_{(p)}$ | the fractions with numerator prime to $p$ | none | local with maximal ideal $p\mathbb{Z}_{(p)}$ | *Localization and the Fraction Field* |
 | $\mathbb{Z}[i]$ | $\pm 1, \pm i$ | none | Euclidean, hence every ideal principal | *Examples of Rings and Fields* |
 | $\mathbb{Z}[\sqrt{2}]$ | $\pm(1+\sqrt{2})^m$ | none | Euclidean, hence every ideal principal | *Examples of Rings and Fields* |
@@ -82,14 +82,14 @@ The list separates the rings in which factorisation is governed by a Euclidean a
 
 | Ring | Units | Zero divisors | Ideals and chain conditions | Introduced in |
 |---|---|---|---|---|
-| $M_n(R)$, $n \geq 2$ | the matrices whose determinant is a unit of $R$ | yes, already for $n = 2$ | only $0$ and $M_n(k)$ when $k$ is a field; simple | *Matrix Algebras* |
+| $M_n(R)$, $n \geq 2$ | the matrices whose determinant is invertible in $R$ | yes, already for $n = 2$ | only $0$ and $M_n(k)$ when $k$ is a field; simple | *Matrix Algebras* |
 | $M_n(D)$, $D$ a division ring | the invertible matrices $\mathrm{GL}_n(D)$ | yes | only $0$ and $M_n(D)$; simple | *Matrix Algebras* |
 | $k[G]$, $G$ finite | contains $k^\times G$ | yes as soon as $\lvert G \rvert \geq 2$ | governed by the representations of $G$ | *Group Algebras* |
 | $k[G]$, $G$ infinite | contains $k^\times G$ | yes unless $k[G]$ is a domain | not Artinian, Noetherian only for special $G$ | *Group Algebras* |
 | $k[G]$ for $G$ torsion-free and $k$ a domain | contains $k^\times G$ | none | — | *Non-Commutative Domains* |
 | $A_1(k) = k\langle x, y\rangle/(yx - xy - 1)$ | the nonzero constants $k^{\times}$ | none | a domain; the ideal structure is one-sided | *Quotients of the Tensor Algebra* |
-| $R\langle x_1, \dots, x_n\rangle$ | the units of $R$ | none | a domain when $R$ is; the one-sided ideals differ | *Tensor Powers and the Free Algebra* |
-| $T(V)$, the tensor algebra | the units of $R$ when $V$ is free of rank $\geq 1$ | none when $R$ is a domain and $V$ is free | $\mathbb{Z}$-graded, with the universal property of the free algebra | *Tensor Powers and the Free Algebra* |
+| $R\langle x_1, \dots, x_n\rangle$ | the invertibles of $R$ | none | a domain when $R$ is; the one-sided ideals differ | *Tensor Powers and the Free Algebra* |
+| $T(V)$, the tensor algebra | the invertibles of $R$ when $V$ is free of rank $\geq 1$ | none when $R$ is a domain and $V$ is free | $\mathbb{Z}$-graded, with the universal property of the free algebra | *Tensor Powers and the Free Algebra* |
 | $\Lambda(M)$, the exterior algebra | — | — | associative and unital, graded-commutative, generated by $M$ | *The Exterior Algebra* |
 | $\mathbb{C}\ell(V, \mathfrak{Q})$, the Clifford algebra | — | — | associative and unital, parity-graded, with $v^2 = \mathfrak{Q}(v)$ | *Clifford Algebras* |
 | $\operatorname{End}_A(M)$, the endomorphism ring | the automorphisms $\operatorname{Aut}_A(M)$ | — | generally non-commutative; $M_n(R) = \operatorname{End}_R(R^n)$ | *Automorphisms of Modules over an Algebra* |

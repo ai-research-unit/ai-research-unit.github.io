@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The unit group $GL_4(\mathbb{C})$ is a real Lie group of dimension $32$. Its **Cartan involution** is
+The group of invertibles $GL_4(\mathbb{C})$ is a real Lie group of dimension $32$. Its **Cartan involution** is
 
 $$
 \mathrm{J}(g)=(g^{*})^{-1},

@@ -196,7 +196,7 @@ $$
 r m = 0.
 $$
 
-If $R$ is an integral domain, the set of torsion elements of $M$ is a submodule, called the **torsion submodule** of $M$. Over a general commutative ring this can fail: if $r m = 0$ and $s n = 0$ with $r, s \neq 0$, then $r s (m + n) = 0$, but $r s$ may itself be $0$, in which case $m + n$ need not be torsion. For example, in $\mathbb{Z}/6\mathbb{Z}$ viewed as a module over itself, $2$ and $3$ are torsion, since $3 \cdot 2 = 0$ and $2 \cdot 3 = 0$, but $2 + 3 = 5$ is not, since $5$ is a unit.
+If $R$ is an integral domain, the set of torsion elements of $M$ is a submodule, called the **torsion submodule** of $M$. Over a general commutative ring this can fail: if $r m = 0$ and $s n = 0$ with $r, s \neq 0$, then $r s (m + n) = 0$, but $r s$ may itself be $0$, in which case $m + n$ need not be torsion. For example, in $\mathbb{Z}/6\mathbb{Z}$ viewed as a module over itself, $2$ and $3$ are torsion, since $3 \cdot 2 = 0$ and $2 \cdot 3 = 0$, but $2 + 3 = 5$ is not, since $5$ is invertible.
 
 A module is **torsion-free** if its only torsion element is $0$.
 

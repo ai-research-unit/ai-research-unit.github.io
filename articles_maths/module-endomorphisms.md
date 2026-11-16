@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An endomorphism of a module is an operator on the module that commutes with the action of the algebra. This article reads the endomorphisms in the operator layer opened by *Left and Right Multiplication of a Module*: it describes the endomorphism ring as the commutant of the action, the action of that ring back on the module, its group of units, and the density theorem, which measures how large the image of the algebra is inside the ring of operators over the division ring of a simple module.
+An endomorphism of a module is an operator on the module that commutes with the action of the algebra. This article reads the endomorphisms in the operator layer opened by *Left and Right Multiplication of a Module*: it describes the endomorphism ring as the commutant of the action, the action of that ring back on the module, its group of invertibles, and the density theorem, which measures how large the image of the algebra is inside the ring of operators over the division ring of a simple module.
 
 The article assumes the object of *Modules over an Algebra* and the elementary theory of the endomorphisms of a module, including Schur's lemma and the statement of the density theorem, which belong to *Automorphisms of Modules over an Algebra*; what is added here is the operator reading, not a second definition. The endomorphism ring as an algebra in its own right, with its centre and its matrix structure, is *The Endomorphism Algebra of a Module*, and the involutive layer is the `* Theory` and `* Operator Theory` groups of this category. The article stays inside Part I: no distance, norm, form or limit occurs, and the density theorem is stated in the finite algebraic form — every finite set of prescribed values is realised — without the finite topology that Part II owns.
 
@@ -57,7 +57,7 @@ which carries $\operatorname{Aut}_A(M)$ onto $\operatorname{Aut}_A(N)$.
 
 Hence the endomorphism ring is an invariant of the isomorphism class of $M$, and nothing in the construction uses a basis.
 
-## The Endomorphism Ring and Its Units
+## The Endomorphism Ring and Its Invertibles
 
 ### Ring structure
 
@@ -69,9 +69,9 @@ The endomorphism ring is the centralizer of the action, and a centralizer inheri
 
 The ring need not be commutative. It is commutative exactly when every pair of endomorphisms commutes, which fails as soon as the module has two independent summands: if $M=N\oplus N'$ with both summands nonzero, the projections $p_N$ and $p_{N'}$ commute but the inclusions and projections mix, and $\operatorname{End}_A(M)$ contains the matrix-like maps of the next article.
 
-### Units
+### Invertibles
 
-The units of the endomorphism ring are exactly the invertible endomorphisms, and they carry the name of automorphisms.
+The invertibles of the endomorphism ring are exactly the invertible endomorphisms, and they carry the name of automorphisms.
 
 **Proposition.** For a left $A$-module $M$,
 
@@ -83,7 +83,7 @@ and $\operatorname{Aut}_A(M)$ is a group under composition acting faithfully on 
 
 *Proof.* A two-sided inverse of $f$ is in particular a set-theoretic inverse, so an invertible endomorphism is bijective; conversely a bijective $A$-linear map has an $A$-linear inverse. The group axioms are inherited from $\operatorname{End}_A(M)$, and the action is faithful because the identity is the only map fixing every element.
 
-The group $\operatorname{Aut}_A(M)$ is the group of units of the ring, and it is small when the module is small: for a simple module it is the unit group of a division ring, by Schur's lemma, as *Automorphisms of Modules over an Algebra* records. An element of $\operatorname{End}_A(M)$ that is only injective or only surjective need not be a unit; the two-sided inverse is the requirement.
+The group $\operatorname{Aut}_A(M)$ is the group of invertibles of the ring, and it is small when the module is small: for a simple module it is the group of invertibles of a division ring, by Schur's lemma, as *Automorphisms of Modules over an Algebra* records. An element of $\operatorname{End}_A(M)$ that is only injective or only surjective need not be an invertible element; the two-sided inverse is the requirement.
 
 ### Idempotents and summands
 
@@ -147,7 +147,7 @@ This is the operator form of the semisimple structure theorem, and it is the rea
 
 **(d) A division algebra.** If $D$ is a division ring acting on itself, $\operatorname{End}_D(D)\cong D_{\mathrm{opp}}$ and $\operatorname{Aut}_D(D)\cong D^{\times}$; the module is simple and its endomorphism ring is a division ring, as Schur's lemma requires.
 
-**(e) The quaternions.** For $A=\mathbb{H}$ and $M=\mathbb{H}$, the $\mathbb{H}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{H}}(\mathbb{H})\cong\mathbb{H}_{\mathrm{opp}}\cong\mathbb{H}$, and the automorphism group is the sphere of units of $\mathbb{H}$; a merely $\mathbb{R}$-linear map such as a left multiplication by a non-real quaternion is not among them.
+**(e) The quaternions.** For $A=\mathbb{H}$ and $M=\mathbb{H}$, the $\mathbb{H}$-linear endomorphisms are the right multiplications, $\operatorname{End}_{\mathbb{H}}(\mathbb{H})\cong\mathbb{H}_{\mathrm{opp}}\cong\mathbb{H}$, and the automorphism group is the sphere of norm-one quaternions; a merely $\mathbb{R}$-linear map such as a left multiplication by a non-real quaternion is not among them.
 
 ## Summary
 

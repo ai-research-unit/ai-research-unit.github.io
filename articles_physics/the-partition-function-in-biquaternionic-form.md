@@ -211,7 +211,7 @@ This is a genuine modification, but it is **not forced** by the framework: obser
 
 ## The Norm's Logarithm as a Chemical Potential
 
-The thermal weight is a scale: $\exp(-\beta H)$ is a Boltzmann factor times a boost, and in the scalar sector its logarithm is a free energy. Read on the biquaternion norm, the same logarithm has a chemical-potential form. The norm is multiplicative and definite on a unit, so a state of unit norm carries weight one and a general state carries a weight whose modulus is a power of $\lvert N\rvert$; the quantity $\log\lvert N\rvert$ is therefore a **potential**, and the total
+The thermal weight is a scale: $\exp(-\beta H)$ is a Boltzmann factor times a boost, and in the scalar sector its logarithm is a free energy. Read on the biquaternion norm, the same logarithm has a chemical-potential form. The norm is multiplicative and definite on an invertible element, so a state of unit norm carries weight one and a general state carries a weight whose modulus is a power of $\lvert N\rvert$; the quantity $\log\lvert N\rvert$ is therefore a **potential**, and the total
 
 $$
 \mu_{\mathrm{tot}}=\log\lvert N\rvert+V ,

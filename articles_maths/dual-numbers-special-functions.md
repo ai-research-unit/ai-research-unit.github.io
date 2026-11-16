@@ -123,7 +123,7 @@ The dual logarithm is defined on the set of dual numbers with positive real part
 
 ### The Dual Argument
 
-There is no dual analogue of the argument of a complex number, because the dual algebra has no compact group of units. The group of units is the set of dual numbers with non-zero real part, which is not compact. So there is no argument function with values in a compact group: the dual algebra admits no phase, and the dual logarithm of a unit is a real multiple of $\varepsilon$, with no angular part.
+There is no dual analogue of the argument of a complex number, because the dual algebra has no compact group of invertibles. The group of invertibles is the set of dual numbers with non-zero real part, which is not compact. So there is no argument function with values in a compact group: the dual algebra admits no phase, and the dual logarithm of an invertible element is a real multiple of $\varepsilon$, with no angular part.
 
 ## The Dual Power Function
 

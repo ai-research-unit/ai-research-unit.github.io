@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the principal $\mathfrak{sl}_2$ and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the unit group $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
+The **matrix algebra** $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices under the product. It is the ambient algebra of this category: the root, the idempotents, the Peirce corners, the frame, the principal $\mathfrak{sl}_2$ and the chiralities are all structures on it. This article fixes the algebra itself: the matrix units, the trace, the determinant, the centre, the simplicity, the real dimension, the group of invertibles $GL_4(\mathbb{C})$ and the projective group $PGL_4(\mathbb{C})$.
 
 Throughout, $M_4=M_4(\mathbb{C})=\operatorname{End}(\mathbb{C}^4)$, $I$ is the identity, and $A^*=\bar A^{\mathsf T}$ is the conjugate transpose. No positive definite form, no norm and no topology are used; the positive definite trace form and the topology are *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$* and *The Topology of $M_4(\mathbb{C})$*. The element, its coordinates and the trace are *The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$*.
 
-The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its unit group is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
+The algebra is **central simple** of complex dimension $16$ and real dimension $32$. It has centre $\mathbb{C}I$, no proper two-sided ideal, and many zero divisors. Its group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$; its projective group is $PGL_4(\mathbb{C})$, of complex dimension $15$. The group $PGL_4$ is the group of frames modulo overall scale, and it is the group that acts on the root and on the gauge in the articles that follow.
 
 **The full algebra and the regular model.** The $M_4(\mathbb{C})_{\mathbb{B}_L}$ articles study the four-dimensional subalgebra of $M_4(\mathbb{C})$ that is the image of the left regular representation of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$. That image is not the full algebra: it is a copy of $M_2(\mathbb{C})$ inside $M_4(\mathbb{C})$, of complex dimension $4$, and its trace and determinant are the biquaternion trace and norm. The present article and the rest of this category treat the full sixteen-dimensional algebra. The distinction is stated precisely in §*The Full Algebra and the Regular Model*. A construction of the algebra from the two-sided operators on a smaller matrix algebra is §*A Construction from the Two-Sided Operators*; it is one route to the algebra, not a definition.
 
@@ -166,7 +166,7 @@ $$
 E_{ik}AE_{lj}=A_{kl}E_{ij}
 $$
 
-by the product rule. The left-hand side lies in $\mathcal{I}$ because $\mathcal{I}$ is two-sided, so $E_{ij}\in\mathcal{I}$ for every $i,j$. The units span $M_4$, hence $\mathcal{I}=M_4$.
+by the product rule. The left-hand side lies in $\mathcal{I}$ because $\mathcal{I}$ is two-sided, so $E_{ij}\in\mathcal{I}$ for every $i,j$. The invertibles span $M_4$, hence $\mathcal{I}=M_4$.
 
 **Corollary.** The algebra is **central simple** over $\mathbb{C}$. It is not a direct sum of two nonzero algebras, and it has no proper two-sided ideal.
 
@@ -194,7 +194,7 @@ is the zero locus of the determinant, a complex hypersurface of complex dimensio
 
 ## The Groups
 
-**The unit group.** The **general linear group**
+**The group of invertibles.** The **general linear group**
 
 $$
 GL_4(\mathbb{C})=\{A:\det A\ne0\}
@@ -341,7 +341,7 @@ because the images of the matrix-unit basis of the tensor product are the matrix
 
 ## Summary
 
-The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The unit group is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and anti-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
+The algebra $M_4(\mathbb{C})$ is the algebra of $4\times4$ complex matrices, of complex dimension $16$ and real dimension $32$, with basis the sixteen matrix units $E_{ij}$, product $E_{ij}E_{kl}=\delta_{jk}E_{il}$ and unit $I$. Its trace is the sum of the diagonal entries, its determinant is the usual multiplicative polynomial of degree four, and the two are invariant under conjugation. The centre is $\mathbb{C}I$ and the algebra is central simple: its only two-sided ideals are $0$ and the algebra. The group of invertibles is $GL_4(\mathbb{C})$, of complex dimension $16$, with determinant epimorphism onto $\mathbb{C}^\times$ and kernel $SL_4(\mathbb{C})$ of dimension $15$; the projective group $PGL_4(\mathbb{C})$ has dimension $15$ and acts by conjugation, with kernel the scalars. The real structure is the conjugate transpose, with Hermitian and anti-Hermitian parts of real dimension $16$ each, and the $*$-unitary groups $U(4)$ and $SU(4)$. The $M_4(\mathbb{C})_{\mathbb{B}_L}$ model is a four-dimensional subalgebra of the full sixteen-dimensional algebra; the two have different traces and determinants and must not be identified. A second construction gives the algebra as $M_2(\mathbb{C})\otimes M_2(\mathbb{C})_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(M_2(\mathbb{C}))$, hence as $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$; in the coefficient basis its basis is not the matrix-unit basis, and every matrix unit is a sum of four of its elements.
 
 $$
 \boxed{\ \dim_\mathbb{C}M_4(\mathbb{C})=16,\quad \dim_\mathbb{R}=32,\quad Z(M_4)=\mathbb{C}I,\quad \dim_\mathbb{C}PGL_4=15,\quad \dim_\mathbb{C}SL_4=15.\ }
@@ -370,7 +370,7 @@ $$
 | $\operatorname{tr}$, $\det$ | the trace and the determinant |
 | $A^*=\bar A^{\mathsf T}$ | the conjugate transpose |
 | $Z(M_4)$ | the centre, $\mathbb{C}I$ |
-| $GL_4$, $SL_4$, $PGL_4$ | the unit group, the determinant-one subgroup, the projective group |
+| $GL_4$, $SL_4$, $PGL_4$ | the group of invertibles, the determinant-one subgroup, the projective group |
 | $\mathfrak{u}(4)$, $\mathfrak{su}(4)$ | the anti-Hermitian algebra and its traceless part |
 | $\operatorname{Herm}_4$ | the Hermitian matrices |
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ |

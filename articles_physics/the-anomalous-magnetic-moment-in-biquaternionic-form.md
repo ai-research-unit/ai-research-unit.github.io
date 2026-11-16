@@ -93,7 +93,7 @@ The magnetic coupling to an external field is a rotation-type structure, and its
 
 ## The Reduction of a Numerator
 
-**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the units, and the correspondence between the two readings is stated in the closing section.
+**Why operators here.** The algebraic work behind the loop computation is the reduction of the numerator, and it is a statement about the operators that act on the state rather than about the elements. This section therefore writes them as basis operators, $L_aR_b$ with $L_aR_b\,X=aXb$, and the basis operator of the direction $\mu$ as $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$, $\nu(t)=x$, $\nu(\eta)=y$. It is the one section of the article that does, and the reason is that the operators are its subject; in the algebra's own objects the same four sums are read off the products of the invertibles, and the correspondence between the two readings is stated in the closing section.
 
 **The closure.** The generator of the pair is half the operator of the pair,
 $$S_{\mu\nu}=\tfrac{i}{2}\big(iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\big)\big(iL_{e_\nu}R_{\vec e_{\nu(\nu)}}\big),$$

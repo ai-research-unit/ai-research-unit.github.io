@@ -33,9 +33,9 @@ $$
 
 ## The Matrices in the Axis-Free Frame
 
-**Theorem.** In the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ each $L_a$ and each $R_a$ for a unit $a$ is a signed permutation matrix of determinant one, hence an orthogonal matrix in $SO(4)$.
+**Theorem.** In the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ each $L_a$ and each $R_a$ for an invertible element $a$ is a signed permutation matrix of determinant one, hence an orthogonal matrix in $SO(4)$.
 
-**Proof.** Multiplication by a unit permutes the four basis elements up to signs, since the units form a group with $\vec e_k^{2}=-e_t$; a signed permutation has determinant $\pm1$, and the computation gives $+1$ for the four generators.
+**Proof.** Multiplication by an invertible element permutes the four basis elements up to signs, since the units form a group with $\vec e_k^{2}=-e_t$; a signed permutation has determinant $\pm1$, and the computation gives $+1$ for the four generators.
 
 **Corollary.** The four left matrices and the four right matrices are eight of the sixteen two-sided matrices $T_{\mu\nu}$, and each is a signed permutation.
 

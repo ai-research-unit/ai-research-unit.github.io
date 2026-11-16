@@ -171,5 +171,5 @@ Every invertible real matrix is uniquely $A=QP$ with $Q$ orthogonal and $P$ symm
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the polar decomposition, its uniqueness and the singular value decomposition.
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the cone and the square root.
 - [The Exponential of the Symmetric Part: Stretches and the Positive Cone](the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html), for the cone, the logarithm and the stretch factor $\exp(S)$.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the determinant and the two components of the unit group.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the determinant and the two components of the group of invertibles.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for the symmetric and antisymmetric halves.

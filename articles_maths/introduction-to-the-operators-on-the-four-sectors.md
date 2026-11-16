@@ -16,15 +16,15 @@ R_{\tilde Q}(\tilde X)=\tilde X\tilde Q,\qquad
 \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}.
 $$
 
-All three are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, read as a complex vector space of dimension four. The left multiplication is injective exactly when $\tilde Q$ is a unit: if $\tilde Q\tilde X=0$, then $\tilde X=\tilde Q^{-1}\tilde Q\tilde X=0$. For a zero divisor it has a non-trivial right annihilator, and the same argument on the other side gives the left annihilator. The two-sided operator is the composite
+All three are $\mathbb{C}$-linear endomorphisms of $\mathbb{B}$, read as a complex vector space of dimension four. The left multiplication is injective exactly when $\tilde Q$ is invertible: if $\tilde Q\tilde X=0$, then $\tilde X=\tilde Q^{-1}\tilde Q\tilde X=0$. For a zero divisor it has a non-trivial right annihilator, and the same argument on the other side gives the left annihilator. The two-sided operator is the composite
 
 $$
 \mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},
 $$
 
-and it is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$.
+and it is invertible exactly when $\tilde Q$ is invertible, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$.
 
-The kernel of the two-sided operator is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. It contains the right annihilator $\ker L_{\tilde Q}$ and the left annihilator $\ker R_{\tilde Q^{*}}$, and it is strictly larger than either outside the unit group.
+The kernel of the two-sided operator is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. It contains the right annihilator $\ker L_{\tilde Q}$ and the left annihilator $\ker R_{\tilde Q^{*}}$, and it is strictly larger than either outside the group of invertibles.
 
 ## Multiplicativity
 
@@ -40,7 +40,7 @@ $$
 
 The order is the only difference between the three laws: the left multiplication is a representation of the multiplicative monoid, the right multiplication is an anti-representation, and the two-sided operator is a representation again because the two reversals cancel.
 
-**Corollary.** The map $\tilde Q\mapsto L_{\tilde Q}$ is a faithful representation of $\mathbb{B}$ on itself, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is a representation that kills the central circle on the unit group. On the units, $\tilde Q\mapsto L_{\tilde Q}$ is injective, with image $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ of real dimension eight, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ has image the conformal group $CO^{+}(1,3)$, of real dimension seven, with kernel the central circle $U(1)$.
+**Corollary.** The map $\tilde Q\mapsto L_{\tilde Q}$ is a faithful representation of $\mathbb{B}$ on itself, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is a representation that kills the central circle on the group of invertibles. On the invertibles, $\tilde Q\mapsto L_{\tilde Q}$ is injective, with image $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ of real dimension eight, and $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ has image the conformal group $CO^{+}(1,3)$, of real dimension seven, with kernel the central circle $U(1)$.
 
 ## The Doubling Rule
 
@@ -78,7 +78,7 @@ $$
 \Sigma_{00}=\{N=0,\ B^{2}=0\},
 $$
 
-the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is a unit and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; the scalar line $\vec\Upsilon=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Upsilon\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$, with $\tilde\Pi_\pm$ the canonical Hermitian idempotents and $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$.
+the first index recording $N\neq0$ and the second $B^{2}\neq0$. On $\Sigma_{11}$ the element is invertible and $\lambda_\pm=Q_t\pm iB$ are the eigenvalues of $\tilde Q$, with $B$ a root of $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On $\Sigma_{01}$ the element is $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. On $\Sigma_{10}$ it is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$; the scalar line $\vec\Upsilon=0$ is written $\Sigma_{10}^{\mathrm{s}}$, the Jordan part $\vec\Upsilon\neq0$ is $\Sigma_{10}^{\mathrm{J}}$. On $\Sigma_{00}$ it is a non-zero nilpotent $\tilde\nu$, with $\tilde\Pi_\pm$ the canonical Hermitian idempotents and $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$.
 
 **The one-sided operators.**
 
@@ -106,7 +106,7 @@ The two tables are the whole sector theory in one page. Along each row the rank 
 
 ## Summary
 
-The polar word carries three operators on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the two-sided operator $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q}$. All three are $\mathbb{C}$-linear; the one-sided maps are injective exactly on the units, the two-sided operator is invertible exactly on the units, and its kernel is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. The three are multiplicative, with the order reversed on the right and restored on the two-sided operator; the two-sided operator kills the central phase and squares the scale and the singular value. The four sectors, indexed by $N$ and $B^{2}$, give the rank, the spectrum and the Jordan type of the three operators; the two-sided operator spectrum is the four products $\lambda_i\bar\lambda_j$. The operator theory of the two-sided operator, with its multiplicativity and its parameter modulo the central phase, is *The Hermitian Pair of Operators Acting on Two Sides*; its matrix readings are the two Model articles; the six sector articles are the four operator articles and the two exponential articles in the Further Reading.
+The polar word carries three operators on the algebra: the left multiplication $L_{\tilde Q}$, the right multiplication $R_{\tilde Q}$, and the two-sided operator $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q}$. All three are $\mathbb{C}$-linear; the one-sided maps are injective exactly on the invertibles, the two-sided operator is invertible exactly on the invertibles, and its kernel is the set of $\tilde X$ with $\tilde Q\tilde X\tilde Q^{*}=0$. The three are multiplicative, with the order reversed on the right and restored on the two-sided operator; the two-sided operator kills the central phase and squares the scale and the singular value. The four sectors, indexed by $N$ and $B^{2}$, give the rank, the spectrum and the Jordan type of the three operators; the two-sided operator spectrum is the four products $\lambda_i\bar\lambda_j$. The operator theory of the two-sided operator, with its multiplicativity and its parameter modulo the central phase, is *The Hermitian Pair of Operators Acting on Two Sides*; its matrix readings are the two Model articles; the six sector articles are the four operator articles and the two exponential articles in the Further Reading.
 
 ## Summary of Notation
 

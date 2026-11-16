@@ -157,7 +157,7 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 
 ## Further Reading
 
-- [Conventions in Mathematics](algebra-and-element-conventions.html), for the base, the element and the units.
+- [Conventions in Mathematics](algebra-and-element-conventions.html), for the base, the element and the invertibles.
 - [Conventions of the Twelve Products and the Four Forms](product-and-form-conventions.html), for the interval, the plain weight and the other two norms.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the explicit arrays and the one set of gamma matrices.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the calculus these frames read.

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The preceding articles developed the general theory of algebras over a commutative ring: ideals and quotients, the centre, units and zero divisors, automorphisms and derivations, the tensor constructions, the topological layer and the operator-algebraic layer. This article collects the standard examples and records, for each, the data the theory associates with it — the dimension, the centre, the group of units, the zero divisors, the ideals, and the position of the algebra in the classification into division, simple and semisimple algebras. It is a reference article: the individual algebras are treated in their own articles, and the purpose here is to make the data comparable at a glance.
+The preceding articles developed the general theory of algebras over a commutative ring: ideals and quotients, the centre, units and zero divisors, automorphisms and derivations, the tensor constructions, the topological layer and the operator-algebraic layer. This article collects the standard examples and records, for each, the data the theory associates with it — the dimension, the centre, the group of invertibles, the zero divisors, the ideals, and the position of the algebra in the classification into division, simple and semisimple algebras. It is a reference article: the individual algebras are treated in their own articles, and the purpose here is to make the data comparable at a glance.
 
 The ground ring is a field $k$ unless a different ring is stated, and the finite-dimensional algebras are over their ground field. The number systems are those of the shared conventions: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{C}_{\mathrm{spl}}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{C}_{\mathrm{dln}}$ with unit $\varepsilon$, $\varepsilon^2 = 0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
@@ -28,11 +28,11 @@ The following table is the summary; each entry is justified in the sections belo
 
 ### The Real Numbers
 
-$\mathbb{R}$ is the unique one-dimensional real algebra with $1 \neq 0$: the product is forced by bilinearity and $1\cdot 1 = 1$, and the basis element $1$ has square $+1$. It is a field, hence a division algebra; its only ideals are $0$ and $\mathbb{R}$; and its group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$.
+$\mathbb{R}$ is the unique one-dimensional real algebra with $1 \neq 0$: the product is forced by bilinearity and $1\cdot 1 = 1$, and the basis element $1$ has square $+1$. It is a field, hence a division algebra; its only ideals are $0$ and $\mathbb{R}$; and its group of invertibles is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$.
 
 ### The Complex Numbers
 
-$\mathbb{C} = \mathbb{R}[x]/(x^2+1)$ is two-dimensional over $\mathbb{R}$, commutative, and a field; the generator $i$ satisfies $i^2 = -1$, and the only solution of $z z^* = 0$ is $z = 0$, so every nonzero element is a unit. Its only ideals are $0$ and $\mathbb{C}$. Over a general field $k$, the algebra $k[x]/(f)$ is a field exactly when $f$ is irreducible, which for $f = x^2+1$ happens over $k = \mathbb{R}$ and fails over $k = \mathbb{C}$; this is the simplest instance of the dependence of the structure on the ground field.
+$\mathbb{C} = \mathbb{R}[x]/(x^2+1)$ is two-dimensional over $\mathbb{R}$, commutative, and a field; the generator $i$ satisfies $i^2 = -1$, and the only solution of $z z^* = 0$ is $z = 0$, so every nonzero element is invertible. Its only ideals are $0$ and $\mathbb{C}$. Over a general field $k$, the algebra $k[x]/(f)$ is a field exactly when $f$ is irreducible, which for $f = x^2+1$ happens over $k = \mathbb{R}$ and fails over $k = \mathbb{C}$; this is the simplest instance of the dependence of the structure on the ground field.
 
 ### The Split Complex Numbers
 
@@ -42,7 +42,7 @@ $$
 \langle u\rangle_{*} = u u^* = x^2 - y^2, \qquad u^{-1} = \frac{x - jy}{x^2 - y^2} \ \ (x^2 \neq y^2),
 $$
 
-so the units are the elements off the two lines $x = \pm y$, and the nonzero elements on those lines are zero divisors. The idempotents
+so the invertibles are the elements off the two lines $x = \pm y$, and the nonzero elements on those lines are zero divisors. The idempotents
 
 $$
 \Pi_x = \tfrac{1}{2}(1+j), \qquad \Pi_y = \tfrac{1}{2}(1-j)
@@ -52,7 +52,7 @@ satisfy $\Pi_x^2 = \Pi_x$, $\Pi_y^2 = \Pi_y$, $\Pi_x\Pi_y = 0$, $\Pi_x + \Pi_y =
 
 ### The Dual Numbers
 
-$\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[x]/(x^2)$ is two-dimensional and commutative, with unit $\varepsilon$, $\varepsilon^2 = 0$. The element $x + \varepsilon y$ is a unit exactly when $x \neq 0$, with
+$\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[x]/(x^2)$ is two-dimensional and commutative, with unit $\varepsilon$, $\varepsilon^2 = 0$. The element $x + \varepsilon y$ is invertible exactly when $x \neq 0$, with
 
 $$
 (x + \varepsilon y)^{-1} = \frac{1}{x} - \frac{y}{x^2}\,\varepsilon,
@@ -64,7 +64,7 @@ and every element of the maximal ideal $(\varepsilon)$ is nilpotent, hence a zer
 
 ### The Quaternions
 
-$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically. Every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
+$\mathbb{H}$ is four-dimensional over $\mathbb{R}$, with basis $e_t = 1$, $\vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$ cyclically. Every nonzero quaternion is invertible and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
 
 ### The Split Biquaternions
 
@@ -122,35 +122,35 @@ which on comparing the two sides forces $A_{ii} = A_{jj}$ for all $i,j$ and $A_{
 
 **The centre of $k[G]$.** An element $\sum_g a_g g$ commutes with every $h \in G$ precisely when the coefficient function $a : G \to k$ is constant on conjugacy classes; hence the centre has a basis of **class sums** and dimension equal to the number of conjugacy classes.
 
-## The Units Computed
+## The Invertibles Computed
 
-The unit group is determined in each of the division-algebra-like cases, and the criterion is that the relevant product be invertible in the coefficient ring: over $\mathbb{R}$ and over $\mathbb{C}$ this is the statement that it does not vanish, while for $\mathbb{B}_{\mathrm{spl}}$ it takes values in $\mathbb{C}_{\mathrm{spl}}$ and must be a unit there.
+The group of invertibles is determined in each of the division-algebra-like cases, and the criterion is that the relevant product be invertible in the coefficient ring: over $\mathbb{R}$ and over $\mathbb{C}$ this is the statement that it does not vanish, while for $\mathbb{B}_{\mathrm{spl}}$ it takes values in $\mathbb{C}_{\mathrm{spl}}$ and must be an invertible element there.
 
-| Algebra | Unit criterion | Example of a non-unit |
+| Algebra | Unit criterion | Example of a non-invertible |
 |---|---|---|
 | $\mathbb{C}_{\mathrm{spl}}$ | $(x+y)(x-y) \neq 0$ | $1 + j$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | $x \neq 0$ | $\varepsilon$ |
 | $\mathbb{H}$ | $q \neq 0$ | none |
-| $\mathbb{B}_{\mathrm{spl}}$ | the relevant value is a unit of $\mathbb{C}_{\mathrm{spl}}$ | $1 + j$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | the relevant value is invertible in $\mathbb{C}_{\mathrm{spl}}$ | $1 + j$ |
 | $\mathbb{B}$ | the relevant value is nonzero | $ie_t + \vec e_x$ |
 
-In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{C}_{\mathrm{spl}}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{C}_{\mathrm{dln}}$, the whole maximal ideal consists of non-units, all nilpotent; for $\mathbb{H}$, there are no non-units besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{B}_{\mathrm{spl}}$ the relevant product takes values in $\mathbb{C}_{\mathrm{spl}}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, as for $u = 1+j$, with value $2 + 2j$.
+In each case the inverse is the conjugate divided by the relevant product, and the criterion is that the division be legitimate. For $\mathbb{C}_{\mathrm{spl}}$, the elements on the two null lines have no inverse and are zero divisors; for $\mathbb{C}_{\mathrm{dln}}$, the whole maximal ideal consists of non-invertibles, all nilpotent; for $\mathbb{H}$, there are no non-invertibles besides $0$; for $\mathbb{B}$ the zero divisors are precisely the nonzero elements with vanishing conjugate product. For $\mathbb{B}_{\mathrm{spl}}$ the relevant product takes values in $\mathbb{C}_{\mathrm{spl}}$ whose real part $\sum_\mu(q_\mu^2 + q'^2_\mu)$ is positive definite, so it vanishes only at $u = 0$ and does not single out the zero divisors: a nonzero $u$ is a zero divisor exactly when its value is a nonzero zero divisor of $\mathbb{C}_{\mathrm{spl}}$, as for $u = 1+j$, with value $2 + 2j$.
 
 ## Matrix Algebras
 
-Let $k$ be a field and $n \geq 2$. The algebra $M_n(k)$ of $n\times n$ matrices has dimension $n^2$, its centre is the scalar matrices $kI_n$, and its group of units is the general linear group $\mathrm{GL}_n(k)$. Its two-sided ideals are only $0$ and $M_n(k)$: the algebra is simple. Indeed, if a nonzero ideal contains a matrix $A$ with a nonzero entry $A_{ij}$, then multiplying by the matrix units $E_{ki}$ and $E_{jl}$ produces every matrix unit, hence the whole algebra.
+Let $k$ be a field and $n \geq 2$. The algebra $M_n(k)$ of $n\times n$ matrices has dimension $n^2$, its centre is the scalar matrices $kI_n$, and its group of invertibles is the general linear group $\mathrm{GL}_n(k)$. Its two-sided ideals are only $0$ and $M_n(k)$: the algebra is simple. Indeed, if a nonzero ideal contains a matrix $A$ with a nonzero entry $A_{ij}$, then multiplying by the matrix units $E_{ki}$ and $E_{jl}$ produces every matrix unit, hence the whole algebra.
 
 The zero divisors are the nonzero non-invertible matrices, which exist as soon as $n \geq 2$: the matrix units satisfy $E_{11}E_{22} = 0$ with both factors nonzero, and any nonzero matrix of rank less than $n$ kills a nonzero vector on one side. So $M_n(k)$ is simple but not a division algebra, and the two-sided ideal theory is trivial while the one-sided theory is not: the left ideals of $M_n(k)$ are exactly the sets of matrices whose columns lie in a fixed subspace of $k^n$. The matrix algebra is treated in detail.
 
 ## Polynomial Algebras
 
-Let $k$ be a field and let $k[x_1, \dots, x_n]$ be the polynomial algebra in $n$ commuting indeterminates. It is commutative, infinite-dimensional over $k$, and an integral domain: a product of nonzero polynomials is nonzero. Its group of units is $k^\times$, because only the nonzero constants have inverses; its ideals are finitely generated for every $n$, by the Hilbert basis theorem, and they are principal for $n = 1$, while for $n \geq 2$ they need not be principal. It is not simple, and it has no nonzero nilpotent elements.
+Let $k$ be a field and let $k[x_1, \dots, x_n]$ be the polynomial algebra in $n$ commuting indeterminates. It is commutative, infinite-dimensional over $k$, and an integral domain: a product of nonzero polynomials is nonzero. Its group of invertibles is $k^\times$, because only the nonzero constants have inverses; its ideals are finitely generated for every $n$, by the Hilbert basis theorem, and they are principal for $n = 1$, while for $n \geq 2$ they need not be principal. It is not simple, and it has no nonzero nilpotent elements.
 
-For $n = 1$ the structure is completely described by divisibility: every ideal of $k[x]$ is $(f)$ for a unique monic polynomial $f$, the maximal ideals are $(x - a)$ for $a \in k$ when $k$ is algebraically closed, and the units are the nonzero constants. The polynomial algebra is the free commutative $k$-algebra on one generator, and it is the commutative counterpart of the free algebra of *Tensor Powers and the Free Algebra*; it is treated.
+For $n = 1$ the structure is completely described by divisibility: every ideal of $k[x]$ is $(f)$ for a unique monic polynomial $f$, the maximal ideals are $(x - a)$ for $a \in k$ when $k$ is algebraically closed, and the invertibles are the nonzero constants. The polynomial algebra is the free commutative $k$-algebra on one generator, and it is the commutative counterpart of the free algebra of *Tensor Powers and the Free Algebra*; it is treated.
 
 ## Group Algebras
 
-Let $G$ be a finite group and $k$ a field. The group algebra $k[G]$ has $k$-basis $G$, so $\dim_k k[G] = |G|$, and multiplication is the bilinear extension of the group law; every element of $G$ is a unit, so $G \subseteq k[G]^\times$. The **augmentation map** $\pi : k[G] \to k$, $\pi\bigl(\sum a_g g\bigr) = \sum a_g$, is an algebra homomorphism, and its kernel is the **augmentation ideal** $I(G)$, generated by the elements $g - 1_G$; the quotient $k[G]/I(G) \cong k$ is the trivial representation. Over a field of characteristic dividing $|G|$ the algebra is local when $G$ is a $p$-group, with $I(G)$ the unique maximal ideal, and in characteristic zero the structure of $k[G]$ is that of the semisimple decomposition below.
+Let $G$ be a finite group and $k$ a field. The group algebra $k[G]$ has $k$-basis $G$, so $\dim_k k[G] = |G|$, and multiplication is the bilinear extension of the group law; every element of $G$ is invertible, so $G \subseteq k[G]^\times$. The **augmentation map** $\pi : k[G] \to k$, $\pi\bigl(\sum a_g g\bigr) = \sum a_g$, is an algebra homomorphism, and its kernel is the **augmentation ideal** $I(G)$, generated by the elements $g - 1_G$; the quotient $k[G]/I(G) \cong k$ is the trivial representation. Over a field of characteristic dividing $|G|$ the algebra is local when $G$ is a $p$-group, with $I(G)$ the unique maximal ideal, and in characteristic zero the structure of $k[G]$ is that of the semisimple decomposition below.
 
 Zero divisors appear as soon as $G$ is nontrivial: if $g \in G$ has order $m \geq 2$, then
 
@@ -187,7 +187,7 @@ The table at the head of the article records the data for each algebra.
 | $k[x_1,\dots,x_n]$ | Polynomial algebra |
 | $k[G]$ | Group algebra of a finite group |
 | $Z(A)$ | Centre of $A$ |
-| $A^\times$ | Group of units of $A$ |
+| $A^\times$ | Group of invertibles of $A$ |
 | $\pi$ | Augmentation map $k[G] \to k$ |
 
 

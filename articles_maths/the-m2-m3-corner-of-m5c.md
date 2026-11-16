@@ -310,7 +310,7 @@ $$
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition by an idempotent, the corner isomorphisms and the graded algebra of a block decomposition.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the corner decomposition of an algebra with involution and the behaviour of the summands.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, second edition, 2013), for the block multiplication and the rank of a projection.
-- [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its unit group.
+- [The Matrix Algebra $M_5(\mathbb{C})$](the-matrix-algebra-m5c.html), for the algebra and its group of invertibles.
 - [The Peirce Decomposition of $M_5(\mathbb{C})$](the-peirce-decomposition-of-m5c.html), for the coarse split $1+4+4+16$ and the corner isomorphisms.
 - [The Rank-Two Split of $M_5(\mathbb{C})$](the-rank-two-split-of-m5c.html), for the corners $4+6+6+9$ and the two-sided Peirce table.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_5(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m5c.html), for the four-parameter gauge and the simple nilpotents.

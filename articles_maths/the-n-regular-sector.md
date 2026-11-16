@@ -8,7 +8,7 @@ $$
 \mathbb{B}^{\times}=\{\tilde Q\in\mathbb{B}:\langle\tilde Q\rangle_{\natural}\neq0\},
 $$
 
-and it is exactly the group of units of the plain product. This article studies that sector as a set: its characterisation, its matrix model, its multiplicative and topological structure, and the place of the spectral condition inside it. Its partner is *The N-Degenerate Sector*, the null cone, on which the norm vanishes.
+and it is exactly the group of invertibles of the plain product. This article studies that sector as a set: its characterisation, its matrix model, its multiplicative and topological structure, and the place of the spectral condition inside it. Its partner is *The N-Degenerate Sector*, the null cone, on which the norm vanishes.
 
 The sector is defined by one condition, and the spectrum does not split it into two open halves. It is connected. The spectral condition cuts inside it a closed stratum of real codimension two, the spectrally degenerate units, and leaves its complement, the spectrally regular units, open and dense. The two pieces are the sectors $\Sigma_{11}$ and $\Sigma_{10}$ of *The N-Regular, Spectrally Regular Sector* and *The N-Regular, Spectrally Degenerate Sector*; this article records their place in the sector and cites their internal study.
 
@@ -46,7 +46,7 @@ For $\tilde Q\neq0$ they are also equivalent to:
 
 (vi) $\tilde Q$ is not a zero divisor.
 
-*Proof.* (i)$\iff$(ii): if $\langle\tilde Q\rangle_{\natural}\neq0$, the inverse is $\tilde Q^{\natural}/N$, by the identity $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural} e_t$; conversely an invertible element has a non-zero norm, since the norm is multiplicative and $\langle e_t\rangle_{\natural}=1$. (ii)$\iff$(iii): the matrix model is an algebra isomorphism and its determinant is the norm. (ii)$\Rightarrow$(iv),(v): multiplication by a unit is a bijection with inverse multiplication by $\tilde Q^{-1}$. (iv)$\Rightarrow$(i): if $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$, the left translation kills the non-zero element $\tilde Q^{\natural}$; if $\tilde Q=0$, it is the zero map. The right-hand side is the same. (i)$\Rightarrow$(vi): a unit cannot annihilate a non-zero element. (vi)$\Rightarrow$(i): if $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a left zero divisor.
+*Proof.* (i)$\iff$(ii): if $\langle\tilde Q\rangle_{\natural}\neq0$, the inverse is $\tilde Q^{\natural}/N$, by the identity $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural} e_t$; conversely an invertible element has a non-zero norm, since the norm is multiplicative and $\langle e_t\rangle_{\natural}=1$. (ii)$\iff$(iii): the matrix model is an algebra isomorphism and its determinant is the norm. (ii)$\Rightarrow$(iv),(v): multiplication by an invertible element is a bijection with inverse multiplication by $\tilde Q^{-1}$. (iv)$\Rightarrow$(i): if $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$, the left translation kills the non-zero element $\tilde Q^{\natural}$; if $\tilde Q=0$, it is the zero map. The right-hand side is the same. (i)$\Rightarrow$(vi): An invertible element cannot annihilate a non-zero element. (vi)$\Rightarrow$(i): if $\langle\tilde Q\rangle_{\natural}=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a left zero divisor.
 
 **Corollary (inverse and norm of the inverse).** For $\tilde Q\in\mathbb{B}^{\times}$,
 
@@ -58,9 +58,9 @@ $$
 
 *Proof.* Closure is multiplicativity: $\langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0$. Associativity is that of the algebra. The unit is $e_t$, of norm one. The inverse is the corollary above.
 
-**Remark (the other products).** For the product $\tilde Q_2^{\natural}\tilde Q$ there is a left unit $e_t$ and no right unit, so there is no group of units. The criterion is unchanged: the one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The sector is therefore a plain-product object; the other products select the same set and lose the group (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*).
+**Remark (the other products).** For the product $\tilde Q_2^{\natural}\tilde Q$ there is a left unit $e_t$ and no right unit, so there is no group of invertibles. The criterion is unchanged: the one-sided equations with $e_t$ have the common unique solution $\tilde Q/\langle\tilde Q\rangle_{\natural}$ exactly when $\langle\tilde Q\rangle_{\natural}\neq0$. The sector is therefore a plain-product object; the other products select the same set and lose the group (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Invertibles*).
 
-**Remark (the name).** In ring theory a regular element is a non-zero-divisor, and the origin qualifies; there the regular elements are $\mathbb{B}^{\times}\cup\{0\}$. The title uses **$\natural$-regular** in the sense of the norm, so the origin is excluded and the sector is exactly the unit group. The two readings differ at one point, the apex.
+**Remark (the name).** In ring theory a regular element is a non-zero-divisor, and the origin qualifies; there the regular elements are $\mathbb{B}^{\times}\cup\{0\}$. The title uses **$\natural$-regular** in the sense of the norm, so the origin is excluded and the sector is exactly the group of invertibles. The two readings differ at one point, the apex.
 
 ## The Matrix Picture
 
@@ -100,7 +100,7 @@ is a connected two-to-one covering with kernel $\{\pm(e_t,e_t)\}$, so that $\mat
 
 *Proof.* In the complex coordinates $(Q_t,Q_x,Q_y,Q_z)$ the gradient is $2(Q_t,Q_x,Q_y,Q_z)$, which vanishes only at the origin, and the origin lies on the cone. The fibre over $1$ is $\mathbb{B}^{\times}_1$; the other fibres are its translates by $Ze_t$ with $Z^2=c$.
 
-**Remark (the level sets are homogeneous).** For $c\neq0$ the level set $\{N=c\}$ is a single orbit of the special orthogonal group $\mathrm{SO}(4,\mathbb{C})$ of the norm. Two vectors of equal non-zero value are carried one to the other by an isometry of a non-degenerate quadratic form, by Witt's theorem, and the isometry may be taken of determinant one because a reflection in a non-isotropic vector orthogonal to the target has determinant minus one and fixes that target. The isometry group is not the group of units; it is the group that preserves the quadratic form, and it acts on the level sets but not on the product.
+**Remark (the level sets are homogeneous).** For $c\neq0$ the level set $\{N=c\}$ is a single orbit of the special orthogonal group $\mathrm{SO}(4,\mathbb{C})$ of the norm. Two vectors of equal non-zero value are carried one to the other by an isometry of a non-degenerate quadratic form, by Witt's theorem, and the isometry may be taken of determinant one because a reflection in a non-isotropic vector orthogonal to the target has determinant minus one and fixes that target. The isometry group is not the group of invertibles; it is the group that preserves the quadratic form, and it acts on the level sets but not on the product.
 
 **Remark (complex scaling).** For $\lambda\in\mathbb{C}^{\times}$, $\langle\lambda\tilde Q\rangle_{\natural}=\lambda^2\langle\tilde Q\rangle_{\natural}$. The sector is therefore invariant under the action of $\mathbb{C}^{\times}$ by scalar multiplication; it is a union of punctured complex lines, and the apex of each line is omitted.
 
@@ -136,7 +136,7 @@ $$
 \tilde Q=\tilde Q_H\tilde Q_0,
 $$
 
-with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$ Hermitian positive definite and $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ $*$-unitary. The pair is unique and depends continuously on $\tilde Q$. The four-factor word $r\omega\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ refines it: a positive scale $r$, a unit phase $\omega$, a Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one, and a unit real quaternion $\tilde u_{\mathrm r}$ (*The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*).
+with $\tilde Q_H=(\tilde Q\tilde Q^{*})^{1/2}$ Hermitian positive definite and $\tilde Q_0=\tilde Q_H^{-1}\tilde Q$ $*$-unitary. The pair is unique and depends continuously on $\tilde Q$. The four-factor word $r\omega\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ refines it: a positive scale $r$, an invertible element phase $\omega$, a Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one, and a unit real quaternion $\tilde u_{\mathrm r}$ (*The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*).
 
 **Remark (the two decompositions are not the same).** The modulus-unit decomposition $\tilde Q=\Rho\tilde U$ with $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ is a bijection onto $\mathcal{H}\times\mathbb{B}^{\times}_1$, where $\mathcal{H}=\{\Rho:\operatorname{Re}\Rho>0\}\cup\{it:t>0\}$ is the half-plane of the principal modulus. It is a bijection of sets, not a homeomorphism: the branch of the square root jumps across the negative real axis, and so does $\tilde U$. The smooth product structure is the non-central one: the section $\lambda\mapsto\mathrm{diag}(\lambda,1)$ trivialises the determinant bundle, so $\mathbb{B}^{\times}$ is diffeomorphic to $\mathbb{C}^{\times}\times SL_2(\mathbb{C})$, while the central multiplication map $\mathbb{C}^{\times}e_t\times\mathbb{B}^{\times}_1\to\mathbb{B}^{\times}$ is a connected two-to-one covering.
 
@@ -150,7 +150,7 @@ $$
 
 *Proof.* The norm is a complex polynomial, so its non-zero set is open and its zero set is closed. The cone is a proper algebraic subset, hence of empty interior, and its complement is dense. The gradient of the norm is non-zero off the apex, so the cone is a smooth real submanifold of real dimension six there; it is defined by two real equations, hence of real codimension two. The boundary of the open set is the intersection of the closures of the set and of its complement, that is the cone.
 
-**Remark (the sector is not convex).** The units $e_t$ and $-e_t$ have the origin as midpoint, and the origin is not a unit. The sector is a union of punctured complex lines, and a line may lie entirely in the cone; on the real line through $e_t$ the sector is the complement of the origin. Convexity fails already there.
+**Remark (the sector is not convex).** The units $e_t$ and $-e_t$ have the origin as midpoint, and the origin is not invertible. The sector is a union of punctured complex lines, and a line may lie entirely in the cone; on the real line through $e_t$ the sector is the complement of the origin. Convexity fails already there.
 
 **Remark (the Euclidean sphere).** The Euclidean unit sphere $S^7_E$ is not contained in the sector. Its intersection with the cone is the link $L\cong S^2\times S^3$, a closed five-manifold, and the intersection with the sector is the complement of $L$ in $S^7_E$, open and dense in the sphere.
 
@@ -185,7 +185,7 @@ $$
 
 and its universal cover is $\mathbb{R}\times S^3$.
 
-*Proof.* The polar decomposition $\tilde Q=\tilde Q_H\tilde Q_0$ retracts the sector onto the $*$-unitary group by $\tilde Q\mapsto\tilde Q_0$, continuously and fixing the $*$-unitary elements. The $*$-unitary group is $\mathrm{U}(2)$, and $\mathrm{U}(2)\cong(S^1\times S^3)/\{\pm e_t\}$ through the phase and the unit quaternions. The homotopy groups and the universal cover are those of $\mathrm{U}(2)$ (*The Unitary Group of the Biquaternion Algebra*; *The Biquaternion Unit Group as a Topological Group*, §*The Topology of the Group*). Non-compactness is witnessed by the unbounded family $c\,e_t+i\sqrt{c^2-1}\,\vec e_x$ with $c\ge1$.
+*Proof.* The polar decomposition $\tilde Q=\tilde Q_H\tilde Q_0$ retracts the sector onto the $*$-unitary group by $\tilde Q\mapsto\tilde Q_0$, continuously and fixing the $*$-unitary elements. The $*$-unitary group is $\mathrm{U}(2)$, and $\mathrm{U}(2)\cong(S^1\times S^3)/\{\pm e_t\}$ through the phase and the unit quaternions. The homotopy groups and the universal cover are those of $\mathrm{U}(2)$ (*The Unitary Group of the Biquaternion Algebra*; *The Biquaternion Group of Invertibles as a Topological Group*, §*The Topology of the Group*). Non-compactness is witnessed by the unbounded family $c\,e_t+i\sqrt{c^2-1}\,\vec e_x$ with $c\ge1$.
 
 **Theorem (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb{B}^{\times}$ is
 
@@ -287,7 +287,7 @@ $$
 
 *Proof.* The sector is open and dense, and its complement is the cone.
 
-**Remark (the two halves of the algebra).** The partition is by the value of one multiplicative invariant. It is a partition that the product and the inverse respect: a product of two units is a unit, a product of a unit and a non-unit is a non-unit, and the inverse of a unit is a unit. The finer partitions by the spectrum do not have this property, and they are treated as stratifications inside each sector.
+**Remark (the two halves of the algebra).** The partition is by the value of one multiplicative invariant. It is a partition that the product and the inverse respect: a product of two units is invertible, a product of an invertible element and a non-invertible is a non-invertible, and the inverse of an invertible element is invertible. The finer partitions by the spectrum do not have this property, and they are treated as stratifications inside each sector.
 
 ## Consequences
 
@@ -301,7 +301,7 @@ The boundary of the sector is the null cone. The two articles together carry the
 
 ## Summary
 
-The $\natural$-regular sector is the non-zero set of the quaternionic norm, $\mathbb{B}^{\times}=\{N\neq0\}$, and it is exactly the group of units of the plain product. Its inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$; it is open and dense, of real dimension eight, with boundary the null cone $\mathcal{N}$.
+The $\natural$-regular sector is the non-zero set of the quaternionic norm, $\mathbb{B}^{\times}=\{N\neq0\}$, and it is exactly the group of invertibles of the plain product. Its inverse is $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$; it is open and dense, of real dimension eight, with boundary the null cone $\mathcal{N}$.
 
 Under the matrix model it is $GL_2(\mathbb{C})$, the norm is the determinant, and the norm-one group is $SL_2(\mathbb{C})$. The norm is a surjective homomorphism onto $\mathbb{C}^{\times}$, with the determinant sequence $1\to SL_2(\mathbb{C})\to GL_2(\mathbb{C})\to\mathbb{C}^{\times}\to1$; the sequence does not split along the centre, and the multiplication map $\mathbb{C}^{\times}e_t\times SL_2(\mathbb{C})\to\mathbb{B}^{\times}$ is a connected two-to-one covering.
 
@@ -319,7 +319,7 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 | $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$ | the Hermitian conjugation |
 | $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$ | the quaternionic norm, multiplicative and complex-valued |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |
-| $\mathbb{B}^{\times}=\{N\neq0\}$ | the $\natural$-regular sector, the group of units |
+| $\mathbb{B}^{\times}=\{N\neq0\}$ | the $\natural$-regular sector, the group of invertibles |
 | $\mathbb{B}^{\times}_1=\{N=1\}$ | the norm-one group, the unit factor; $SL_2(\mathbb{C})$ |
 | $\mathcal{N}=\{N=0\}$ | the null cone, the $\natural$-degenerate sector |
 | $\mathcal{S}=\{B^2=0\}$ | the spectral-degenerate cone |
@@ -336,14 +336,14 @@ The spectrum does not split the sector into two open halves. The spectrally regu
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the criterion, the inverse formula and the two cases
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the partner article and the null cone
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of units
+- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus, the four factors and the group of invertibles
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the open dense sector
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan cone
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the chain of invariants
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the determinant sequence, the centre and the covering
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the determinant sequence, the centre and the covering
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the polar retraction, the homotopy groups and the universal cover
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the boundary of the sector and its link
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the matrix model and the determinant
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the matrix model and the determinant
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations: An Elementary Introduction* (Springer, 2nd ed. 2015).
 - Allen Hatcher, *Algebraic Topology* (Cambridge University Press, 2002).

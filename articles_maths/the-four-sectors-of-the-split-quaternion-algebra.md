@@ -32,11 +32,11 @@ The index $i$ records the norm: $i=1$ on the complement of $\mathcal Z$, $i=0$ o
 
 *Proof.* The two numbers $t^2-S$ and $S$ are each either zero or non-zero, giving four disjoint cases, and every element falls into one of them.
 
-**Corollary (the meaning of the indices).** The following are equivalent: $i=1$; $q$ is a unit; $q\notin\mathcal Z$. The following are equivalent: $i=0$; $q$ is a non-unit; $q\in\mathcal Z$. The following are equivalent: $j=1$; $q$ has two distinct eigenvalues; $q\notin\mathcal C$. The following are equivalent: $j=0$; $q$ has a repeated eigenvalue; $q\in\mathcal C$.
+**Corollary (the meaning of the indices).** The following are equivalent: $i=1$; $q$ is invertible; $q\notin\mathcal Z$. The following are equivalent: $i=0$; $q$ is a non-invertible; $q\in\mathcal Z$. The following are equivalent: $j=1$; $q$ has two distinct eigenvalues; $q\notin\mathcal C$. The following are equivalent: $j=0$; $q$ has a repeated eigenvalue; $q\in\mathcal C$.
 
-*Proof.* By *Split-Quaternion Norm and Invertibility*, $q$ is a unit exactly when $t^2-S\neq0$, and the non-zero elements of $\mathcal Z$ are the zero divisors. By *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*, the eigenvalues are distinct exactly when $S\neq0$.
+*Proof.* By *Split-Quaternion Norm and Invertibility*, $q$ is invertible exactly when $t^2-S\neq0$, and the non-zero elements of $\mathcal Z$ are the zero divisors. By *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*, the eigenvalues are distinct exactly when $S\neq0$.
 
-The sectors therefore refine both dichotomies at once: the row $i=1$ consists of units, the row $i=0$ of non-units; the column $j=1$ consists of spectrally regular elements, the column $j=0$ of spectrally degenerate elements.
+The sectors therefore refine both dichotomies at once: the row $i=1$ consists of invertibles, the row $i=0$ of non-invertibles; the column $j=1$ consists of spectrally regular elements, the column $j=0$ of spectrally degenerate elements.
 
 **Proposition (the sectors are cones).** If $q\in\Sigma_{ij}$ and $\lambda>0$, then $\lambda q\in\Sigma_{ij}$.
 
@@ -57,13 +57,13 @@ The sectors therefore refine both dichotomies at once: the row $i=1$ consists of
 
 ## Description of Each Sector
 
-### $\Sigma_{11}$: Units off Both Cones
+### $\Sigma_{11}$: Invertibles off Both Cones
 
-On $\Sigma_{11}$ the norm is non-zero and $S\neq0$. The element is a unit, the two eigenvalues $t\pm\sqrt S$ are distinct, and $L_q$ is semisimple. The minimal polynomial is $(\lambda-t)^2-S$, the characteristic polynomial is its square, over $\mathbb C$ each eigenspace has dimension $2$ and an eigenbasis exists. The eigenvalues are real when $S>0$ and a complex conjugate pair when $S<0$. The sector is open in $\mathbb{H}_{\mathrm{spl}}$ and has dimension $4$.
+On $\Sigma_{11}$ the norm is non-zero and $S\neq0$. The element is invertible, the two eigenvalues $t\pm\sqrt S$ are distinct, and $L_q$ is semisimple. The minimal polynomial is $(\lambda-t)^2-S$, the characteristic polynomial is its square, over $\mathbb C$ each eigenspace has dimension $2$ and an eigenbasis exists. The eigenvalues are real when $S>0$ and a complex conjugate pair when $S<0$. The sector is open in $\mathbb{H}_{\mathrm{spl}}$ and has dimension $4$.
 
-### $\Sigma_{10}$: Units on the Spectral Cone
+### $\Sigma_{10}$: Invertibles on the Spectral Cone
 
-On $\Sigma_{10}$ the norm is $t^2-S=t^2$, so the element is a unit exactly when $t\neq0$; the condition $t^2\neq S=0$ already gives $t\neq0$. Thus every element of $\Sigma_{10}$ is a unit on the spectral cone. The sector splits into two parts:
+On $\Sigma_{10}$ the norm is $t^2-S=t^2$, so the element is invertible exactly when $t\neq0$; the condition $t^2\neq S=0$ already gives $t\neq0$. Thus every element of $\Sigma_{10}$ is invertible on the spectral cone. The sector splits into two parts:
 
 $$
 \Sigma_{10}^{\mathrm s}=\{q:t\neq0,\ \vec v=0\},\qquad
@@ -74,7 +74,7 @@ The first is the punctured scalar line. On it $q=t$ and $L_q=t\,\mathrm{id}$; th
 
 The second is the defective part. On it $\vec v^2=0$, $\vec v\neq0$, and $L_q$ has minimal polynomial $(\lambda-t)^2$, characteristic polynomial $(\lambda-t)^4$, eigenspace $\ker L_{\vec v}$ of dimension $2$, and Jordan type $(2,2)$. No eigenbasis exists. It has dimension $3$.
 
-A unit on the spectral cone is therefore defective exactly when its vector part is non-zero. The scalar units are semisimple. The element $1+\vec e_x+\vec e_y$ is a defective unit, with inverse $1-\vec e_x-\vec e_y$.
+An invertible element on the spectral cone is therefore defective exactly when its vector part is non-zero. The scalar units are semisimple. The element $1+\vec e_x+\vec e_y$ is a defective unit, with inverse $1-\vec e_x-\vec e_y$.
 
 ### $\Sigma_{01}$: Zero Divisors off the Spectral Cone
 
@@ -134,7 +134,7 @@ $$
 
 The four sectors are the four sign combinations of the norm $t^2-S$ and the spectral form $S$. All four are non-empty: $2+\vec e_x$ lies in $\Sigma_{11}$, $1+\vec e_x+\vec e_y$ in $\Sigma_{10}$, $1+\vec e_y$ in $\Sigma_{01}$, and $\vec e_x+\vec e_y$ in $\Sigma_{00}$. Each sector is a cone.
 
-The sector $\Sigma_{11}$ consists of units with simple spectrum; it is open and dense, of dimension $4$. The sector $\Sigma_{10}$ consists of units on the spectral cone. Its scalar part $t\neq0$, $\vec v=0$ is semisimple, and its defective part $t\neq0$, $\vec v\neq0$, $S=0$ has minimal polynomial $(\lambda-t)^2$ and Jordan type $(2,2)$; the sector has dimension $3$. A unit on the spectral cone is defective exactly when $\vec v\neq0$.
+The sector $\Sigma_{11}$ consists of invertibles with simple spectrum; it is open and dense, of dimension $4$. The sector $\Sigma_{10}$ consists of invertibles on the spectral cone. Its scalar part $t\neq0$, $\vec v=0$ is semisimple, and its defective part $t\neq0$, $\vec v\neq0$, $S=0$ has minimal polynomial $(\lambda-t)^2$ and Jordan type $(2,2)$; the sector has dimension $3$. An invertible element on the spectral cone is defective exactly when $\vec v\neq0$.
 
 The sector $\Sigma_{01}$ consists of zero divisors with simple spectrum $\{0,2t\}$; it is semisimple, with $q=2t e$ and $e=q/(2t)$ idempotent, and has dimension $3$. The sector $\Sigma_{00}$ is the nilpotent cone $q_x^2=q_y^2+q_z^2$, consisting of the origin and the non-zero nilpotents; it has dimension $2$ and is closed. The closures are $\mathbb{H}_{\mathrm{spl}}$, $\mathcal C$, $\mathcal Z$ and $\Sigma_{00}$; the origin lies in the closure of every sector, and $\Sigma_{00}$ is the intersection of the two cones.
 

@@ -18,7 +18,7 @@ $$
 \langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2 ;
 $$
 
-it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$; on $V$ the square of an element is minus that product, $\vec v^2 = -\langle \vec v\rangle_{\natural}$.
+it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of invertibles — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{\vec e_x, \vec e_y, \vec e_z\}$; on $V$ the square of an element is minus that product, $\vec v^2 = -\langle \vec v\rangle_{\natural}$.
 
 ## Idempotents in an Algebra
 

@@ -8,7 +8,7 @@ structures is a **homomorphism** when it carries every relation of the source in
 corresponding relation of the target. The maps of a structure into itself are its **endomorphisms**;
 they compose, so they form a monoid, and the elements of that monoid that are invertible are the
 automorphisms of the structure. This article develops that operator layer for relational structures:
-the endomorphism monoid and its group of units, the **automorphism group** and its action on the
+the endomorphism monoid and its group of invertibles, the **automorphism group** and its action on the
 underlying set, the **embeddings** and the **strong endomorphisms**, the kernel of a strong
 homomorphism and the first isomorphism theorem, and the special case of a single relation.
 
@@ -26,7 +26,7 @@ beside it; both are instances of the present theory, and the article says so rat
 them. The **converse** relation and the operator it defines belong to *The Converse Relation as an
 Operator*, in this group; it is used here only to describe the inverse image of a relation. Finally,
 the systematic theory of **groups** is *Groups*, in this Part, and the theory of a group acting on a
-set is *Transformation Groups*; here the only group that occurs is the group of units of an
+set is *Transformation Groups*; here the only group that occurs is the group of invertibles of an
 endomorphism monoid, and its action is computed from the monoid.
 
 ## Relational Structures and Their Maps
@@ -107,7 +107,7 @@ homomorphism: the only pair of $R$ maps to $(u,v) \in S$. It is not strong, beca
 
 ## The Endomorphism Monoid
 
-### Composition and Units
+### Composition and Invertibles
 
 Fix a relational structure $\mathcal{A} = (A, (R_i))$ and let $\operatorname{End}(\mathcal{A})$ be
 the set of homomorphisms $\mathcal{A} \to \mathcal{A}$, the **endomorphisms** of $\mathcal{A}$.
@@ -126,24 +126,24 @@ also an endomorphism; equivalently, by the proposition above, an endomorphism th
 isomorphism $\mathcal{A} \to \mathcal{A}$. The set of automorphisms is written
 $\operatorname{Aut}(\mathcal{A})$.
 
-**Theorem.** $\operatorname{Aut}(\mathcal{A})$ is the group of units of the monoid
+**Theorem.** $\operatorname{Aut}(\mathcal{A})$ is the group of invertibles of the monoid
 $\operatorname{End}(\mathcal{A})$.
 
 **Proof.** If $f \in \operatorname{End}(\mathcal{A})$ has a two-sided inverse $g \in
 \operatorname{End}(\mathcal{A})$, then $f$ is bijective as a function and $g$ is its inverse
 function; so $f$ is a bijective endomorphism with endomorphic inverse, that is, an automorphism. If
-$f$ is an automorphism, its inverse function is an endomorphism, so $f$ is a unit. The units of a
-monoid always form a group under the monoid operation: the identity is a unit, a product of units is
-a unit, and a unit has an inverse that is a unit. The set $\operatorname{Aut}(\mathcal{A})$ is
-therefore a group, and it is the group of units of $\operatorname{End}(\mathcal{A})$.
+$f$ is an automorphism, its inverse function is an endomorphism, so $f$ is invertible. The invertibles of a
+monoid always form a group under the monoid operation: the identity is invertible, a product of invertibles is
+an invertible element, and an invertible element has an inverse that is invertible. The set $\operatorname{Aut}(\mathcal{A})$ is
+therefore a group, and it is the group of invertibles of $\operatorname{End}(\mathcal{A})$.
 
 The systematic theory of a group, and of a group acting on a set, is *Groups* and *Transformation
-Groups*, in this Part; here a group is used only as the group of units of a monoid, and the action
+Groups*, in this Part; here a group is used only as the group of invertibles of a monoid, and the action
 below is computed directly from the composition of maps.
 
 **Corollary.** A bijective endomorphism of $\mathcal{A}$ need not be an automorphism: by the last
 proposition of the previous subsection a bijective homomorphism $\mathcal{A} \to \mathcal{A}$ may
-fail to be strong, and then its inverse function is not an endomorphism, so it is not a unit of
+fail to be strong, and then its inverse function is not an endomorphism, so it is not invertible of
 $\operatorname{End}(\mathcal{A})$.
 
 ### The Automorphism Group and Its Action
@@ -331,7 +331,7 @@ sense that the source relation is the inverse image of the target relation, an e
 injective strong homomorphism, and an isomorphism is a bijective one.
 
 The endomorphisms of a structure form a monoid $\operatorname{End}(\mathcal{A})$ under composition
-with identity $\mathrm{id}_A$, and its group of units is the automorphism group
+with identity $\mathrm{id}_A$, and its group of invertibles is the automorphism group
 $\operatorname{Aut}(\mathcal{A})$, a subgroup of the symmetric group of the domain. A bijective
 endomorphism need not be an automorphism; it is one exactly when it is strong. The automorphism
 group acts on the domain, the orbits partition it, and every relation of the structure is a union of
@@ -355,7 +355,7 @@ homomorphisms while irreflexivity and antisymmetry are reflected by strong ones.
 | embedding | Injective strong homomorphism |
 | isomorphism, $\mathcal{A} \cong \mathcal{B}$ | Bijective strong homomorphism |
 | $\operatorname{End}(\mathcal{A})$ | Monoid of endomorphisms of $\mathcal{A}$ |
-| $\operatorname{Aut}(\mathcal{A})$ | Automorphism group, the group of units of $\operatorname{End}(\mathcal{A})$ |
+| $\operatorname{Aut}(\mathcal{A})$ | Automorphism group, the group of invertibles of $\operatorname{End}(\mathcal{A})$ |
 | $\operatorname{sym}(A)$ | Group of all bijections of $A$; $\operatorname{Aut}(\mathcal{A}) \leq \operatorname{sym}(A)$ |
 | $G \cdot x$, $G_x$ | Orbit and stabiliser of $x$ under $G = \operatorname{Aut}(\mathcal{A})$ |
 | $\ker f$ | Kernel of a homomorphism, $\{(x,y) : f(x) = f(y)\}$ |

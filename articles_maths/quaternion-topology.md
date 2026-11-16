@@ -3,13 +3,13 @@
 
 ## Introduction
 
-This article collects the topology of the quaternion algebra as a space and of its group of units: the topology of the underlying real four-space, its contractibility, the unit sphere, the homotopy type of the units, the low homotopy groups, and the double cover of the rotation group. Here there are no zero divisors, the algebra norm and the Euclidean norm coincide, and the unit sphere is a group.
+This article collects the topology of the quaternion algebra as a space and of its group of invertibles: the topology of the underlying real four-space, its contractibility, the unit sphere, the homotopy type of the invertibles, the low homotopy groups, and the double cover of the rotation group. Here there are no zero divisors, the algebra norm and the Euclidean norm coincide, and the unit sphere is a group.
 
-The article uses *Quaternion Algebra* for the basis and product, *Quaternion Norm and Invertibility* for the quaternion norm, division property and unit group, *Quaternion Exponential and Lie Group Structure* for the polar split of the units and the exponential, and *Quaternion Rotations and Reflections* for the covering of the rotation group. The standard algebraic topology used is cited rather than reproved.
+The article uses *Quaternion Algebra* for the basis and product, *Quaternion Norm and Invertibility* for the quaternion norm, division property and group of invertibles, *Quaternion Exponential and Lie Group Structure* for the polar split of the invertibles and the exponential, and *Quaternion Rotations and Reflections* for the covering of the rotation group. The standard algebraic topology used is cited rather than reproved.
 
 The corpus's default base is a commutative ring; the topology here requires the real numbers, and everything is stated over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$; the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$; the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$.
 
 ## The Algebra as a Topological Space
 
@@ -19,7 +19,7 @@ $$
 \tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z\longmapsto(q_t,q_x,q_y,q_z)
 $$
 
-is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the units, so $\mathbb{H}^{\times}$ is a topological group.
+is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product is bilinear, hence continuous, so $\mathbb{H}$ is a topological algebra over $\mathbb{R}$, and inversion is continuous on the invertibles, so $\mathbb{H}^{\times}$ is a topological group.
 
 *Proof.* The quaternion norm is positive definite with four positive signs, $\langle\tilde q\rangle_{\natural} = \sum_k q_k^2$, so $|\tilde q|$ is the Euclidean norm of the coordinate vector and the map is an isometry. Bilinearity gives continuity of the product, and $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ is continuous on the complement of $N = 0$, which is $\mathbb{H}^{\times}$ because the quaternion norm is definite.
 
@@ -39,25 +39,25 @@ is a linear isometry of $(\mathbb{H},|\cdot|)$ onto $\mathbb{R}^4$; the product 
 
 **Theorem.** The unit sphere is a closed, compact, connected three-dimensional manifold, homeomorphic to the standard sphere $S^3\subset\mathbb{R}^4$, and it is a topological group under the inherited multiplication, with $S^3\subseteq\mathbb{H}^{\times}$; its smooth and Lie-group structure is that of *Quaternion Exponential and Lie Group Structure*, where it is identified with $Sp(1)\cong SU(2)$.
 
-*Proof.* The unit sphere is the level set of the continuous function $\langle\cdot\rangle_{\natural}$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is a unit by the multiplicativity $\langle \tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
+*Proof.* The unit sphere is the level set of the continuous function $\langle\cdot\rangle_{\natural}$ at $1$, hence closed, and it is bounded in $\mathbb{R}^4$, hence compact; it is connected, and the coordinate identification carries it homeomorphically onto the standard sphere, by *Quaternion Norm and Invertibility*. The product of two units is invertible by the multiplicativity $\langle \tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$, and the operations are continuous, so it is a topological group. Since every unit quaternion is non-zero, $S^3\subseteq\mathbb{H}^{\times}$.
 
-## The Group of Units
+## The Group of Invertibles
 
 **Theorem.** The map $\tilde q\mapsto(|\tilde q|,\tilde q/|\tilde q|)$ is a homeomorphism
 
 $$ \boxed{\; \mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3 \;} ,$$
 
-and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence; hence the group of units is homotopy equivalent to the sphere $S^3$.
+and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence; hence the group of invertibles is homotopy equivalent to the sphere $S^3$.
 
 *Proof.* The polar split of *Quaternion Norm and Invertibility* gives the bijection, both directions being continuous; the deformation retraction $r(t,\tilde q) = (1-t)\tilde q+t\,\tilde q/|\tilde q|$ is continuous and retracts $\mathbb{H}^{\times}$ onto $S^3$ along the radial lines.
 
-**Corollary.** The group of units is path-connected and locally path-connected, and it is not compact; it deformation retracts onto the compact subgroup $Sp(1)$, which is its maximal compact subgroup.
+**Corollary.** The group of invertibles is path-connected and locally path-connected, and it is not compact; it deformation retracts onto the compact subgroup $Sp(1)$, which is its maximal compact subgroup.
 
 *Proof.* $\mathbb{R}_{>0}\times S^3$ is connected and non-compact; the retraction is the corollary to the homeomorphism, and the maximality of $Sp(1)$ is from *Quaternion Exponential and Lie Group Structure*.
 
 ## The Homotopy Groups
 
-**Theorem.** The group of units is simply connected and has the homotopy groups of the sphere,
+**Theorem.** The group of invertibles is simply connected and has the homotopy groups of the sphere,
 
 $$ \boxed{\; \pi_1(\mathbb{H}^{\times}) = 0, \qquad \pi_2(\mathbb{H}^{\times}) = 0, \qquad \pi_3(\mathbb{H}^{\times})\cong\mathbb{Z} \;} ,$$
 
@@ -77,7 +77,7 @@ $$
 
 *Proof.* The quotient identification is *Quaternion Rotations and Reflections*; the covering $\mathbb{Z}/2\to S^3\to\mathbb{RP}^3$ has connected total space, so its homotopy exact sequence gives $\pi_1(\mathbb{RP}^3)\cong\pi_0(\mathbb{Z}/2)\cong\mathbb{Z}/2$ and isomorphisms $\pi_n(\mathbb{RP}^3)\cong\pi_n(S^3)$ for every $n\geq2$; with $\pi_2(S^3) = 0$ and $\pi_3(S^3)\cong\mathbb{Z}$ this gives the listed groups.
 
-**Corollary.** The fundamental group $\mathbb{Z}/2$ belongs to the rotation group, the quotient, and not to the group of units: the group of units and the unit sphere are simply connected, whereas their adjoint quotient by the centre $\{\pm1\}$ is the rotation group and has fundamental group $\mathbb{Z}/2$.
+**Corollary.** The fundamental group $\mathbb{Z}/2$ belongs to the rotation group, the quotient, and not to the group of invertibles: the group of invertibles and the unit sphere are simply connected, whereas their adjoint quotient by the centre $\{\pm1\}$ is the rotation group and has fundamental group $\mathbb{Z}/2$.
 
 ## The Double Cover of the Rotation Group
 
@@ -95,9 +95,9 @@ with kernel $\{\pm1\}$, so the unit sphere is a two-to-one covering group of the
 
 ## Summary
 
-The quaternion algebra is the Euclidean space $\mathbb{R}^4$ with the product as a continuous bilinear map, so it is a topological algebra and a normed division algebra; the algebra norm and the Euclidean norm coincide, and the space is contractible with all homotopy groups trivial. The unit sphere $S^3 = Sp(1)$ is a compact connected topological group contained in the unit group, because the quaternion norm is multiplicative; its Lie-group structure and its identification with $SU(2)$ are in *Quaternion Exponential and Lie Group Structure*.
+The quaternion algebra is the Euclidean space $\mathbb{R}^4$ with the product as a continuous bilinear map, so it is a topological algebra and a normed division algebra; the algebra norm and the Euclidean norm coincide, and the space is contractible with all homotopy groups trivial. The unit sphere $S^3 = Sp(1)$ is a compact connected topological group contained in the group of invertibles, because the quaternion norm is multiplicative; its Lie-group structure and its identification with $SU(2)$ are in *Quaternion Exponential and Lie Group Structure*.
 
-The group of units is homeomorphic to $\mathbb{R}_{>0}\times S^3$ and deformation retracts onto $S^3$, so it is homotopy equivalent to the sphere: $\pi_1 = 0$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$. Its adjoint quotient by the centre is the rotation group $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, which has $\pi_1\cong\mathbb{Z}/2$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$; the fundamental group $\mathbb{Z}/2$ therefore belongs to the quotient and not to the units.
+The group of invertibles is homeomorphic to $\mathbb{R}_{>0}\times S^3$ and deformation retracts onto $S^3$, so it is homotopy equivalent to the sphere: $\pi_1 = 0$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$. Its adjoint quotient by the centre is the rotation group $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$, which has $\pi_1\cong\mathbb{Z}/2$, $\pi_2 = 0$, $\pi_3\cong\mathbb{Z}$; the fundamental group $\mathbb{Z}/2$ therefore belongs to the quotient and not to the invertibles.
 
 The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel $\{\pm1\}$, which is the topological content of the sign ambiguity in the unit-quaternion parametrisation of a rotation. For the quaternion division algebra the polar decomposition is global and has no boundary.
 
@@ -110,8 +110,8 @@ The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel 
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \sum_k q_k^2$ | Definite norm, four positive signs |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar and vector subspaces, $\cong\mathbb{R}$ and $\cong\mathbb{R}^3$ |
 | $S^3 = Sp(1) = \{\lvert \tilde q\rvert = 1\}$ | Unit sphere; compact group, $S^3\subseteq\mathbb{H}^{\times}$ |
-| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | Group of units; $\simeq S^3$ |
-| $\pi_1(\mathbb{H}^{\times}) = 0$, $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$ | Homotopy groups of the units |
+| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | Group of invertibles; $\simeq S^3$ |
+| $\pi_1(\mathbb{H}^{\times}) = 0$, $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$ | Homotopy groups of the invertibles |
 | $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$ | Adjoint action; quotient map to $SO(3)$ |
 | $SO(3)\cong S^3/\{\pm1\}\cong\mathbb{RP}^3$ | Rotation group; $\pi_1\cong\mathbb{Z}/2$ |
 
@@ -121,5 +121,5 @@ The adjoint map $Sp(1)\to SO(3)$ is the universal two-to-one cover, with kernel 
 - Dale Husemoller, *Fibre Bundles* (Springer, 3rd ed. 1994), for the Hopf fibration and the homotopy of spheres.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the covering $SU(2)\to SO(3)$ and the topology of the classical groups.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2nd ed. 2015), for the homotopy groups of the compact classical groups.
-- John Voight, *Quaternion Algebras* (Springer, 2021), for the unit sphere and the group of units of a quaternion algebra.
+- John Voight, *Quaternion Algebras* (Springer, 2021), for the unit sphere and the group of invertibles of a quaternion algebra.
 - Norman Steenrod, *The Topology of Fibre Bundles* (Princeton University Press, 1951), for fibre bundles, covering spaces and the homotopy groups of spheres.

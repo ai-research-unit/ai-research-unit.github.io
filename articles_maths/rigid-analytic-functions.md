@@ -31,19 +31,19 @@ The multiplicativity of the Gauss norm is the technical heart of the theory: it 
 
 ### Weierstrass Division and Preparation
 
-**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\zeta_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\zeta_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $f_{\mathrm{res}} \in k[\zeta]$ has degree $d$ as a polynomial in $\zeta_n$ and the coefficient of $\zeta_n^d$ in $f_{\mathrm{res}}$ is nonzero; the coefficient of $\zeta_n^d$ in $f$ is then a unit and the other coefficients of $\zeta_n$-degree $> d$ have norm less than $1$.
+**Definition.** A series $f \in T_n$ is **distinguished of degree** $d$ in $\zeta_n$ if its terms of maximal absolute value form a polynomial of degree $d$ in $\zeta_n$, monic of degree $d$ in the reduction. More precisely, $f \in T_n$ of norm $1$ is distinguished of degree $d$ if $f_{\mathrm{res}} \in k[\zeta]$ has degree $d$ as a polynomial in $\zeta_n$ and the coefficient of $\zeta_n^d$ in $f_{\mathrm{res}}$ is nonzero; the coefficient of $\zeta_n^d$ in $f$ is then an invertible element and the other coefficients of $\zeta_n$-degree $> d$ have norm less than $1$.
 
 **Theorem (Weierstrass division).** Let $f \in T_n$ be distinguished of degree $d$ in $\zeta_n$, normalised to $\lVert f \rVert = 1$. Then for every $g \in T_n$ there are unique $q \in T_n$ and $r \in T_{n-1}[\zeta_n]$ with $\deg_{\zeta_n} r < d$ and
 $$
 \boxed{\;g = qf + r\;}.
 $$
-**Proof sketch.** The division is performed coefficient by coefficient in $\zeta_n$, using the invertibility of the leading coefficient of $f$ as a power series in $\zeta_1,\dots,\zeta_{n-1}$ up to smaller terms: one writes $f = \zeta_n^d c + (\text{lower terms})$ with $c$ a unit of $T_{n-1}$, solves successively for the coefficients of $q$ and $r$ in decreasing $\zeta_n$-degree, and shows that the successive corrections tend to $0$ in the norm, so that the process converges in the Banach algebra. Uniqueness follows from the shape of $r$.
+**Proof sketch.** The division is performed coefficient by coefficient in $\zeta_n$, using the invertibility of the leading coefficient of $f$ as a power series in $\zeta_1,\dots,\zeta_{n-1}$ up to smaller terms: one writes $f = \zeta_n^d c + (\text{lower terms})$ with $c$ invertible in $T_{n-1}$, solves successively for the coefficients of $q$ and $r$ in decreasing $\zeta_n$-degree, and shows that the successive corrections tend to $0$ in the norm, so that the process converges in the Banach algebra. Uniqueness follows from the shape of $r$.
 
 **Theorem (Weierstrass preparation).** Let $f \in T_n$ be distinguished of degree $d$ in $\zeta_n$. Then $f$ factors uniquely as
 $$
 \boxed{\;f = u \cdot P, \qquad P = \zeta_n^d + c_{d-1}\zeta_n^{d-1} + \cdots + c_0\;},
 $$
-with $u$ a unit of $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$ is a **Weierstrass polynomial**.
+with $u$ invertible in $T_n$ and $c_i \in T_{n-1}$ of norm $< 1$; the polynomial $P$ is a **Weierstrass polynomial**.
 
 **Proof.** Apply the division theorem to $g = \zeta_n^d$ and to $f$; the remainder is a polynomial in $\zeta_n$ of degree $< d$ with coefficients in $T_{n-1}$, and the standard argument identifies $u^{-1}$ with the quotient and $P$ with $\zeta_n^d - r$. The convergence of the division is the content of the previous theorem.
 
@@ -135,7 +135,7 @@ The Liouville theorem is the sharpest expression of the discrepancy with the com
 $$
 X \longrightarrow \mathbb{A}^1_k, \qquad x \longmapsto x_{\mathrm{res}} = \text{the reduction of the coordinate of } x,
 $$
-is surjective and has as fibres the residue classes of the disc. A function $f \in T_1$ of norm $1$ that is a unit has reduction $f_{\mathrm{res}}$ a nonzero polynomial, and $f$ attains the value $1$ on the disc by the maximum modulus principle. The disc is connected and its functions are the power series with coefficients tending to $0$.
+is surjective and has as fibres the residue classes of the disc. A function $f \in T_1$ of norm $1$ that is invertible has reduction $f_{\mathrm{res}}$ a nonzero polynomial, and $f$ attains the value $1$ on the disc by the maximum modulus principle. The disc is connected and its functions are the power series with coefficients tending to $0$.
 
 **Example (annuli and the unit circle).** For $0 < r < 1$ the annulus $A(r,1) = \{x : r \leq \lvert x \rvert \leq 1\}$ is the affinoid space of the Laurent domain defined by $\lvert x \rvert \leq 1$ and $\lvert x \rvert \geq r$, with affinoid algebra $K\langle r x^{-1}, x\rangle$, the ring of Laurent series $\sum_{n\in\mathbb{Z}} a_n x^n$ with $\lvert a_n \rvert r^n \to 0$ for $n \to -\infty$ and $\lvert a_n \rvert \to 0$ for $n \to +\infty$. The unit circle $\lvert x \rvert = 1$ is the rational domain defined by $\lvert x \rvert = 1$, with algebra the Laurent algebra $K\langle x, x^{-1}\rangle$. As $r$ decreases to $0$ the algebras $K\langle r x^{-1}, x\rangle$ increase, and no single affinoid algebra among them is the ring of all functions on the punctured disc.
 

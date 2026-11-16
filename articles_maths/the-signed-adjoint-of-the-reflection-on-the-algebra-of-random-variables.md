@@ -7,11 +7,11 @@ A reflection of the algebra of random variables is the signed two-sided operator
 $$
 r_u(x)=u\,\alpha(x)\,u^{-1},
 $$
-the inner conjugation by a unit with the grade involution in the middle, and on the commutative algebra it collapses to the grade involution, $r_u=\alpha$ for every unit $u$. This article computes its **adjoint**. With respect to the form of the category, $\langle x,y\rangle=\varphi(xy^*)$, the grade involution is self-adjoint, $\alpha^*=\alpha$, so the reflection is self-adjoint,
+the inner conjugation by an invertible element with the grade involution in the middle, and on the commutative algebra it collapses to the grade involution, $r_u=\alpha$ for every invertible $u$. This article computes its **adjoint**. With respect to the form of the category, $\langle x,y\rangle=\varphi(xy^*)$, the grade involution is self-adjoint, $\alpha^*=\alpha$, so the reflection is self-adjoint,
 $$
 r_u^*=r_u=\alpha ,
 $$
-and it is its own adjoint for every unit. The adjoint operation therefore carries **no information** about the reflection over the commutative algebra: it fixes the single operator $\alpha$ and cannot distinguish the units. The article derives this, computes the adjoint with respect to the **signed pairing** $\{x,y\}=\langle x,\alpha y\rangle$, where the reflection is again an isometry with itself as adjoint, identifies the involutive signed two-sided operators among which the reflections form a single point, and states the failure of the correspondence, as against the noncommutative ring where the adjoint of the reflection is $r_{\delta(u)^{-1}}$ and depends on the unit.
+and it is its own adjoint for every invertible element. The adjoint operation therefore carries **no information** about the reflection over the commutative algebra: it fixes the single operator $\alpha$ and cannot distinguish the invertibles. The article derives this, computes the adjoint with respect to the **signed pairing** $\{x,y\}=\langle x,\alpha y\rangle$, where the reflection is again an isometry with itself as adjoint, identifies the involutive signed two-sided operators among which the reflections form a single point, and states the failure of the correspondence, as against the noncommutative ring where the adjoint of the reflection is $r_{\delta(u)^{-1}}$ and depends on the unit.
 
 The conventions are those of *The Signed Two-Sided Operator on the Algebra of Random Variables* and *Reflections as Signed Two-Sided Operators on the Algebra of Random Variables*, earlier in this category: $\mathcal{A}=L^\infty(\Omega,\mathcal F,\mathbb P)$ with the pointwise product, the conjugation $\sigma(a)=\bar a$, the state $\varphi(a)=\mathbb E[a]$, the form $\langle x,y\rangle=\varphi(xy^*)$, the grade involution $\alpha$ (an involutive, unitary, self-adjoint automorphism), the grading and the twisted involution $\delta=\sigma\alpha$. The signed two-sided operators and their adjoints are *The Signed Adjoint Two-Sided Operator on the Algebra of Random Variables*, the preceding article of this category; the signed left multiplication and its adjoint are *The Signed Left Multiplication on the Algebra of Random Variables*, earlier in this category, and *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, the later article of this category; the adjoint of the unsigned left multiplication is *The Adjoint of the Left Multiplication on the Algebra of Random Variables*, earlier in this category. The noncommutative theory of the reflections and their adjoints is *The Signed Adjoint of the Reflection on a Ring*, in Part I, and the arithmetic counterpart, in which the collapse is as total as here, is *The Signed Adjoint of the Reflection on the Algebra of Arithmetic Functions*, written. No physics is invoked.
 
@@ -21,7 +21,7 @@ Throughout, $\mathcal{A}$ is the algebra of random variables, $\mathcal{H}=L^2(\
 
 ### The form of the category
 
-**Theorem (the reflection and its adjoint).** For every unit $u$ of $\mathcal{A}$,
+**Theorem (the reflection and its adjoint).** For every invertible $u$ of $\mathcal{A}$,
 $$
 \boxed{\;r_u=\alpha,\qquad r_u^*=r_u=\alpha,\qquad \alpha^*=\alpha,\qquad \alpha^2=\mathrm{id},\qquad \|\alpha x\|=\|x\|\;} ,
 $$
@@ -35,7 +35,7 @@ and the isometry $\|\alpha x\|^2=\mathbb E[|x\circ\varphi_0|^2]=\mathbb E[|x|^2]
 
 **Theorem (the adjoint of the reflection is the reflection).** The adjoint operation maps the class of the reflections to itself and fixes every element,
 $$
-r_u^*=r_u\qquad\text{for every unit }u ,
+r_u^*=r_u\qquad\text{for every invertible element }u ,
 $$
 so the class of the reflections, which is the single operator $\alpha$, is pointwise fixed by the adjoint.
 
@@ -70,7 +70,7 @@ the $\alpha$-cocycles, and they form a group under multiplication; the reflectio
 
 ### The failure of the correspondence
 
-**Theorem (the failure).** Over the algebra of random variables the correspondence between a unit and the reflection it defines is the constant map on the unit group: $r_u=\alpha$ for every $u$, its adjoint is $\alpha$, and the group of the reflections is the trivial group generated by $\alpha$. The adjoint operation carries no information about the correspondence.
+**Theorem (the failure).** Over the algebra of random variables the correspondence between an invertible element and the reflection it defines is the constant map on the group of invertibles: $r_u=\alpha$ for every $u$, its adjoint is $\alpha$, and the group of the reflections is the trivial group generated by $\alpha$. The adjoint operation carries no information about the correspondence.
 
 *Proof.* The collapse is the commutativity; the adjoint is the theorem above; the class of the reflections is a single element, so its group is trivial.
 
@@ -82,7 +82,7 @@ the $\alpha$-cocycles, and they form a group under multiplication; the reflectio
 
 **Example (the trivial unit).** For $u=1$ the reflection is $r_1=\alpha$, and $r_1^*=\alpha$; the operator is self-adjoint and unitary, with fixed algebra the even part $\mathcal{A}_{\bar0}$ and $(-1)$-eigenspace the odd part $\mathcal{A}_{\bar1}$.
 
-**Example (the two-atom swap).** For $\Omega=\{\omega_-,\omega_+\}$ with the uniform probability and $\alpha(x_-,x_+)=(x_+,x_-)$, the reflection is the swap for every unit: with $u=(u_-,u_+)$, $u^{-1}=(u_-^{-1},u_+^{-1})$, and $u\alpha(x)u^{-1}=(u_-x_+u_-^{-1},u_+x_-u_+^{-1})=(x_+,x_-)=\alpha(x)$. The adjoint is the swap again, and the reflection is a self-adjoint unitary involution, the parity operator of the two atoms.
+**Example (the two-atom swap).** For $\Omega=\{\omega_-,\omega_+\}$ with the uniform probability and $\alpha(x_-,x_+)=(x_+,x_-)$, the reflection is the swap for every invertible element: with $u=(u_-,u_+)$, $u^{-1}=(u_-^{-1},u_+^{-1})$, and $u\alpha(x)u^{-1}=(u_-x_+u_-^{-1},u_+x_-u_+^{-1})=(x_+,x_-)=\alpha(x)$. The adjoint is the swap again, and the reflection is a self-adjoint unitary involution, the parity operator of the two atoms.
 
 **Example (the circle reflection).** On $\Omega=\mathbb R/\mathbb Z$ with the Lebesgue measure and $\alpha(x)(\theta)=x(-\theta)$, the reflection is the operator $\alpha$, self-adjoint and unitary, with the even and the odd functions as its eigenalgebras; the signed pairing $\{x,y\}=\int x(\theta)y(-\theta)\,d\theta$ is symmetric, and $\alpha$ is an isometry for it.
 
@@ -90,11 +90,11 @@ the $\alpha$-cocycles, and they form a group under multiplication; the reflectio
 
 ## Failure of the Degenerate Cases
 
-The signed adjoint of the reflection degenerates in four configurations. First, the adjoint of the reflection is the reflection itself, so the adjoint operation is the identity on the class of the reflections and there is no correspondence to compute; the adjoint is trivial precisely because the reflection is a unitary involution. Second, the signed pairing is equivalent to the form of the category through the grade involution, so the signed adjoint and the ordinary adjoint coincide; on the commutative algebra the signed structure adds nothing to the adjoint of the reflection. Third, the class of the reflections is a single operator, so the adjoint operation cannot distinguish the units; the group of the reflections is the trivial group, and the comparison with the ring isolates the commutativity as the cause. Fourth, the involutions $S^\alpha_c$ with nonconstant cocycles are not reflections and are in general not self-adjoint, so the class of the self-adjoint involutions is strictly smaller than the class of the involutions; confusing the two is the standard error of the commutative case.
+The signed adjoint of the reflection degenerates in four configurations. First, the adjoint of the reflection is the reflection itself, so the adjoint operation is the identity on the class of the reflections and there is no correspondence to compute; the adjoint is trivial precisely because the reflection is a unitary involution. Second, the signed pairing is equivalent to the form of the category through the grade involution, so the signed adjoint and the ordinary adjoint coincide; on the commutative algebra the signed structure adds nothing to the adjoint of the reflection. Third, the class of the reflections is a single operator, so the adjoint operation cannot distinguish the invertibles; the group of the reflections is the trivial group, and the comparison with the ring isolates the commutativity as the cause. Fourth, the involutions $S^\alpha_c$ with nonconstant cocycles are not reflections and are in general not self-adjoint, so the class of the self-adjoint involutions is strictly smaller than the class of the involutions; confusing the two is the standard error of the commutative case.
 
 ## Summary
 
-The reflection $r_u(x)=u\alpha(x)u^{-1}$ of the algebra of random variables collapses to the grade involution, $r_u=\alpha$ for every unit $u$, and its adjoint with respect to the form $\langle x,y\rangle=\varphi(xy^*)$ is again $\alpha$, so the reflection is a self-adjoint unitary involution and the adjoint operation fixes the class of the reflections pointwise. With respect to the signed pairing $\{x,y\}=\langle x,\alpha y\rangle$ the reflection is an isometry and its signed adjoint is itself; the signed pairing is equivalent to the form through $\alpha$, so the signed structure adds nothing beyond the identification of the two forms. The involutive signed two-sided operators are the $\alpha$-cocycles $c\alpha(c)=1$, among which the reflections form the single point $c=1$ (with the companion $c=-1$), and the self-adjoint involutions are the smaller family of the $\alpha$-Hermitian cocycles. The correspondence between a unit and the reflection fails totally over the commutative algebra, and the noncommutative contrast with the adjoint $r_{\delta(u)^{-1}}$ is *The Signed Adjoint of the Reflection on a Ring*, in Part I. The signed two-sided operator adjoint is *The Signed Adjoint Two-Sided Operator on the Algebra of Random Variables*, the preceding article of this category, and the signed left multiplication adjoint is *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, the later article of this category.
+The reflection $r_u(x)=u\alpha(x)u^{-1}$ of the algebra of random variables collapses to the grade involution, $r_u=\alpha$ for every invertible $u$, and its adjoint with respect to the form $\langle x,y\rangle=\varphi(xy^*)$ is again $\alpha$, so the reflection is a self-adjoint unitary involution and the adjoint operation fixes the class of the reflections pointwise. With respect to the signed pairing $\{x,y\}=\langle x,\alpha y\rangle$ the reflection is an isometry and its signed adjoint is itself; the signed pairing is equivalent to the form through $\alpha$, so the signed structure adds nothing beyond the identification of the two forms. The involutive signed two-sided operators are the $\alpha$-cocycles $c\alpha(c)=1$, among which the reflections form the single point $c=1$ (with the companion $c=-1$), and the self-adjoint involutions are the smaller family of the $\alpha$-Hermitian cocycles. The correspondence between an invertible element and the reflection fails totally over the commutative algebra, and the noncommutative contrast with the adjoint $r_{\delta(u)^{-1}}$ is *The Signed Adjoint of the Reflection on a Ring*, in Part I. The signed two-sided operator adjoint is *The Signed Adjoint Two-Sided Operator on the Algebra of Random Variables*, the preceding article of this category, and the signed left multiplication adjoint is *The Signed Adjoint of the Left Multiplication on the Algebra of Random Variables*, the later article of this category.
 
 ## Summary of Notation
 

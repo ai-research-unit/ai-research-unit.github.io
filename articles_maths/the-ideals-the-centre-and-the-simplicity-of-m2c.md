@@ -4,7 +4,7 @@
 
 **The left ideals of $M_2(\mathbb{C})$ are the spaces of maps killing a fixed subspace of $\mathbb{C}^{2}$, and the two-sided ideals are only the two trivial ones.**
 
-The article classifies the left and the right ideals, exhibits the minimal left ideals as the two columns and as one line's worth of them, computes the socle, proves the simplicity and the centrality, and derives that every automorphism and every derivation is inner. It assumes *The Matrix Algebra $M_2(\mathbb{C})$* for the product, the units and the trace. It defers the module reading of the minimal left ideals to *The Minimal Left Ideals of the Biquaternion Algebra* and to *The Regular Module*, and the operators on the algebra to *The Two-Sided Operators and the Segre Cone at $n=2$*.
+The article classifies the left and the right ideals, exhibits the minimal left ideals as the two columns and as one line's worth of them, computes the socle, proves the simplicity and the centrality, and derives that every automorphism and every derivation is inner. It assumes *The Matrix Algebra $M_2(\mathbb{C})$* for the product, the invertibles and the trace. It defers the module reading of the minimal left ideals to *The Minimal Left Ideals of the Biquaternion Algebra* and to *The Regular Module*, and the operators on the algebra to *The Two-Sided Operators and the Segre Cone at $n=2$*.
 
 Two facts are particular to order two. The lattice of left ideals has three levels only, with a projective line of middle elements. The socle has complex dimension $3$ and is the union of the pencil of minimal left ideals.
 
@@ -96,7 +96,7 @@ of complex dimension $2$.
 
 **Corollary.** $M_2(\mathbb{C})$ is a central simple $\mathbb{C}$-algebra of degree $2$, and its dimension is the square of its degree.
 
-**The algebra is not a division algebra.** It is simple and finite-dimensional, so it is a full matrix algebra over a division ring; that ring is $\mathbb{C}$, and the degree is $2$. The zero divisors are exactly the non-units.
+**The algebra is not a division algebra.** It is simple and finite-dimensional, so it is a full matrix algebra over a division ring; that ring is $\mathbb{C}$, and the degree is $2$. The zero divisors are exactly the non-invertibles.
 
 ## Automorphisms and Derivations
 
@@ -159,6 +159,6 @@ The socle is the rank-one set, of complex dimension $3$, projectivised to the Se
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the ideals of a full matrix algebra, the density theorem and the simplicity.
 - Joseph H. M. Wedderburn, *Lectures on Matrices* (AMS, 1934), for the structure theory and the minimal left ideals.
-- [The Matrix Algebra $M_2(\mathbb{C})$](the-matrix-algebra-m2c.html), for the units, the trace and the centre used here.
+- [The Matrix Algebra $M_2(\mathbb{C})$](the-matrix-algebra-m2c.html), for the invertibles, the trace and the centre used here.
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the same ideals in the biquaternion language.
 - [The Regular Module](the-regular-module.html), for the module reading of the algebra acting on itself.

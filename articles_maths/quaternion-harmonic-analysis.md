@@ -101,7 +101,7 @@ $$
 \widehat{f_\lambda}(\zeta) = \frac{1}{|\lambda|^4} (\mathcal F f)(\bar{\lambda}^{-1}\zeta).
 $$
 
-**Conjugation equivariance.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\mathcal F f_u(\zeta) = (\mathcal F f)(u \zeta u^{-1})$. The transform commutes with the conjugation action of the unit group.
+**Conjugation equivariance.** If $f_u(\tilde q) = f(u \tilde q u^{-1})$ for a unit quaternion $u$, then $\mathcal F f_u(\zeta) = (\mathcal F f)(u \zeta u^{-1})$. The transform commutes with the conjugation action of the group of invertibles.
 
 **Conjugation.** $\widehat{\bar{f}}(\zeta) = \overline{(\mathcal F f)(-\zeta)}$.
 

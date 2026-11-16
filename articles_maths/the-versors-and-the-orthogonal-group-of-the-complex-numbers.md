@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The **versors** of the complex numbers are the units of the definite algebraic norm, the elements of norm one, and they form the unit circle $\mathrm{U}(1)$. They are at once the group of linear maps preserving the definite form, which is the rotation group of the plane, and the spin group of the definite space, and the square of the algebra's own product is the two-to-one cover that constitutes the spin structure. This article defines the versors, reads the group they form, records the identification with the group of form-preserving maps, establishes the two-to-one cover and the halving of the parameter that goes with it, and locates the group among the pin and spin groups of the algebra and among the versor groups of the ladder.
+The **versors** of the complex numbers are the invertibles of the definite algebraic norm, the elements of norm one, and they form the unit circle $\mathrm{U}(1)$. They are at once the group of linear maps preserving the definite form, which is the rotation group of the plane, and the spin group of the definite space, and the square of the algebra's own product is the two-to-one cover that constitutes the spin structure. This article defines the versors, reads the group they form, records the identification with the group of form-preserving maps, establishes the two-to-one cover and the halving of the parameter that goes with it, and locates the group among the pin and spin groups of the algebra and among the versor groups of the ladder.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The norm, its multiplicativity, the invertibility criterion and the group of invertibles are *Complex Norm and Invertibility*. The identification of $\mathrm{U}(1)$ with the rotation group, the reflections, the group $O(2)$ and the parameter of a rotation are *Rotations and Reflections in the Complex Plane*; they are cited and not restated. The general definition of a versor, the rotor, the Clifford group, the pin and spin groups and the general two-to-one cover are *Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
 ## The Versors and Their Group
 
@@ -23,7 +23,7 @@ the set of elements of norm one.
 
 **Remark (the shell of the definite form is a group, unlike the plain one).** The versor condition is read on the definite algebraic norm $\lvert u\rvert^{2}=H(u)$, not on the plain algebraic norm $u^{2}=B(u)$. On the definite form the norm is multiplicative and positive definite, so its shell is a group. The complex definite case is the one in which the shell is a group for the simplest of reasons, the multiplicativity of a real definite norm on a field.
 
-**Remark (the four elements of the plain shell).** The plain algebraic norm $\langle Q_1\rangle=Q_1^{2}$ is complex-valued, and its shell $\{Q_1:Q_1^{2}=\pm1\}$ is the four-element set $\{1,-1,i,-i\}$, a cyclic group of order four, because $Q_1^{2}$ is multiplicative on the commutative algebra. This set is not the versor group: the versors are the units of the definite norm, and the complex-linear maps preserving the plain bilinear form are only $\pm1$, the index-two subgroup. The two shells belong to the two forms, and the article follows the definite one.
+**Remark (the four elements of the plain shell).** The plain algebraic norm $\langle Q_1\rangle=Q_1^{2}$ is complex-valued, and its shell $\{Q_1:Q_1^{2}=\pm1\}$ is the four-element set $\{1,-1,i,-i\}$, a cyclic group of order four, because $Q_1^{2}$ is multiplicative on the commutative algebra. This set is not the versor group: the versors are the elements of norm one for the definite form, and the complex-linear maps preserving the plain bilinear form are only $\pm1$, the index-two subgroup. The two shells belong to the two forms, and the article follows the definite one.
 
 ## The Group of Linear Maps Preserving the Definite Form
 
@@ -49,7 +49,7 @@ $$\boxed{\;M^{\mathsf T}M=\mathrm{I}_{2}\;},$$
 
 that is the group $O(2)$. The versors give the maps of determinant $+1$ in it; the maps of determinant $-1$ are the reflections $Q_1\mapsto u\bar Q_1$ with $\lvert u\rvert=1$ (*Rotations and Reflections in the Complex Plane*). The group of the title is thus $O(2)$, and the versors are its determinant-one half.
 
-**Remark (the two-sided operator is vacuous).** In a non-commutative algebra a unit may act on itself by the two-sided operator $Q_1\mapsto uQ_1u^{-1}$; here $uQ_1u^{-1}=Q_1$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors (*Rotations and Reflections in the Complex Plane*). The double cover below is therefore read on the multiplication, and not on a two-sided operator.
+**Remark (the two-sided operator is vacuous).** In a non-commutative algebra an invertible element may act on itself by the two-sided operator $Q_1\mapsto uQ_1u^{-1}$; here $uQ_1u^{-1}=Q_1$ for every versor, because the algebra is commutative, so the inner action is trivial and multiplication, not conjugation, is the natural action of the versors (*Rotations and Reflections in the Complex Plane*). The double cover below is therefore read on the multiplication, and not on a two-sided operator.
 
 ## The Two-to-One Cover of the Circle
 
@@ -110,7 +110,7 @@ The versors of norm one form a group and double-cover the rotations. The complex
 
 ## Summary
 
-The versors of the complex numbers are the units of the definite algebraic norm, the set $\mathrm{U}(1)=\{u:\lvert u\rvert^{2}=1\}$; they form an abelian group, the unit circle, because the definite norm is real, multiplicative and positive definite on the field. The shell of the plain algebraic norm is the four-element cyclic group $\{1,-1,i,-i\}$, which is not the versor group; the versors are read on the definite form $\langle\cdot,\cdot\rangle_{*}$ alone.
+The versors of the complex numbers are the invertibles of the definite algebraic norm, the set $\mathrm{U}(1)=\{u:\lvert u\rvert^{2}=1\}$; they form an abelian group, the unit circle, because the definite norm is real, multiplicative and positive definite on the field. The shell of the plain algebraic norm is the four-element cyclic group $\{1,-1,i,-i\}$, which is not the versor group; the versors are read on the definite form $\langle\cdot,\cdot\rangle_{*}$ alone.
 
 Multiplication by a versor, $R_{u}(Q_1)=uQ_1$, is a $\mathbb{C}$-linear map preserving $H$, and the versors are exactly the group of such maps, identified with the rotation group $\mathrm{SO}(2)$; the full group of $\mathbb{R}$-linear maps preserving $H$ is $O(2)$, given by $M^{\mathsf T}M=\mathrm{I}_{2}$, of which the versors form the determinant-one half and the reflections the other coset. The two-sided operator is trivial on the commutative algebra, so the action is by multiplication.
 
@@ -137,9 +137,9 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the circle with 
 ## Further Reading
 
 - [The Two Forms and the Two Algebraic Norms of the Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), for the definite form and the plain form whose shells are compared here.
-- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the norm, its multiplicativity, the group of units and the polar split.
+- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the norm, its multiplicativity, the group of invertibles and the polar split.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification $\mathrm{U}(1)\cong \mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- [Complex Exponential and Lie Group Structure](complex-exponential-and-lie-group-structure.html), for the exponential, the one-parameter subgroups and the group of units.
+- [Complex Exponential and Lie Group Structure](complex-exponential-and-lie-group-structure.html), for the exponential, the one-parameter subgroups and the group of invertibles.
 - [Versors, Rotors and the Two-Sided Action with Signed Inner Conjugation](versors-rotors-and-the-two-sided-action-with-signed-inner-conjugation.html), for the general versor, the rotor, the plane case $\mathrm{Spin}(2)\cong \mathrm{U}(1)$ and the two-to-one cover.
 - [The Clifford, Pin and Spin Groups with Signed Inner Conjugation](the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.html), for the Clifford group, the pin and spin groups and Cartan–Dieudonné.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for versors, the spin group and the double cover in the low-dimensional cases.

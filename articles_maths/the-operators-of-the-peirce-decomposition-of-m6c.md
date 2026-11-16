@@ -101,7 +101,7 @@ $$
 
 **Proof.** $a(cXd)b=(ac)X(db)$; $\operatorname{vec}(aXb)=(b^{\mathsf T}\otimes a)\operatorname{vec}X$.
 
-**Corollary (the two-sided monoid).** The set of two-sided operators is a monoid under composition, with identity $L_{I_6}R_{I_6}$; its group of units is
+**Corollary (the two-sided monoid).** The set of two-sided operators is a monoid under composition, with identity $L_{I_6}R_{I_6}$; its group of invertibles is
 
 $$
 (GL_6\times GL_6)/\mathbb{C}^\times,

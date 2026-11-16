@@ -140,7 +140,7 @@ $$
 
 **Proof.** The traceless involutions are the matrices of the form $\tfrac12(I+u)$ with $u^{2}=I$, which is the unit circle in the traceless plane; the complementary idempotent is $\tfrac12(I-u)$.
 
-**The Jordan frame.** A pair $e,f$ of orthogonal idempotents with $e+f=I$ is a Jordan frame, and at order two every frame is of this form for a unit traceless $u$.
+**The Jordan frame.** A pair $e,f$ of orthogonal idempotents with $e+f=I$ is a Jordan frame, and at order two every frame is of this form for an invertible element traceless $u$.
 
 **Proof.** $f=I-e$ is the only complement of a given primitive idempotent in a two-dimensional algebra with unit.
 

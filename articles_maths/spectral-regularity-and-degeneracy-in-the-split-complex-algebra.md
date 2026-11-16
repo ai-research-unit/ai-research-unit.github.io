@@ -14,7 +14,7 @@ The corpus writes the same element $Q=q+jq'$; its $q$ and $q'$ are the $t$ and $
 
 ## The Eigenvalue Problem
 
-**Definition (eigenvalue).** A real number $\lambda$ is an **eigenvalue** of $q$ if $q-\lambda$ is not a unit of $\mathbb{C}_{\mathrm{spl}}$. The **spectrum** of $q$ is the set
+**Definition (eigenvalue).** A real number $\lambda$ is an **eigenvalue** of $q$ if $q-\lambda$ is not invertible of $\mathbb{C}_{\mathrm{spl}}$. The **spectrum** of $q$ is the set
 
 $$
 \sigma(q)=\{\lambda\in\mathbb{R}:\ q-\lambda\notin{\mathbb{C}_{\mathrm{spl}}}^{\times}\}.
@@ -35,7 +35,7 @@ $$
 3. $\ker L_{q-\lambda}\neq0$;
 4. $L_{q-\lambda}$ is not invertible.
 
-*Proof.* The algebra is finite-dimensional over a field. If $L_x$ is invertible, then $xy=1$ for some $y$, and commutativity gives $yx=1$, so $x$ is a unit. Conversely a unit gives an invertible $L_x$. Hence $x$ is a non-unit exactly when $L_x$ is not invertible, and for an endomorphism of a finite-dimensional space this is equivalent to a non-zero kernel.
+*Proof.* The algebra is finite-dimensional over a field. If $L_x$ is invertible, then $xy=1$ for some $y$, and commutativity gives $yx=1$, so $x$ is invertible. Conversely an invertible element gives an invertible $L_x$. Hence $x$ is a non-invertible exactly when $L_x$ is not invertible, and for an endomorphism of a finite-dimensional space this is equivalent to a non-zero kernel.
 
 **Definition (eigenbasis).** An **eigenbasis** of $q$ is a basis of $\mathbb{C}_{\mathrm{spl}}$ over $\mathbb{R}$ consisting of eigenvectors of $q$.
 

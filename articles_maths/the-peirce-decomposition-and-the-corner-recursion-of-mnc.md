@@ -108,7 +108,7 @@ $$
 \Pi M_n\Pi\cong M_p(\mathbb{C}),\qquad QM_nQ\cong M_{n-p}(\mathbb{C}),
 $$
 
-unital for the units $\Pi$ and $Q$ respectively. The off-diagonal corners are
+unital for the invertibles $\Pi$ and $Q$ respectively. The off-diagonal corners are
 
 $$
 \Pi M_nQ\cong\operatorname{Hom}(\operatorname{im}Q,\operatorname{im}\Pi)\cong M_{p,n-p}(\mathbb{C}),

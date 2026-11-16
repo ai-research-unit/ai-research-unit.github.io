@@ -5,11 +5,11 @@
 
 The quaternion algebra has several algebraic realizations that do not have an article of their own: the spinor representation on two-component complex vectors, the identification with a Clifford algebra and with the even part of a Clifford algebra, and the module structure of the algebra over itself and over its subalgebras. This article collects them, states the identifications precisely, and records the role of the choices involved. It is the quaternion member of the family's residual-representation articles, and it supplies the realizations that the dedicated articles on the four-vector, regular, $2\times2$ and operator representations leave aside.
 
-The article depends on *Quaternion Algebra* for the basis and the relations, on *Quaternion Norm and Invertibility* for the quaternion norm, and on *Quaternion 2x2 Matrix Element Representation* for the realization of the algebra. The Clifford identifications use the conventions of *Clifford Algebras in Finite Dimensions* for $\mathrm{Cl}(V,\tilde q)$ and $\mathrm{Cl}_{p,\tilde q}$, and the spinor realization is the representation theory of the unit group $Sp(1)$ from *Quaternion Rotations and Reflections*. No physical vocabulary is used: in particular the spinors below are the vectors of a module for $Sp(1)$, not the spinors of a field.
+The article depends on *Quaternion Algebra* for the basis and the relations, on *Quaternion Norm and Invertibility* for the quaternion norm, and on *Quaternion 2x2 Matrix Element Representation* for the realization of the algebra. The Clifford identifications use the conventions of *Clifford Algebras in Finite Dimensions* for $\mathrm{Cl}(V,\tilde q)$ and $\mathrm{Cl}_{p,\tilde q}$, and the spinor realization is the representation theory of the group of invertibles $Sp(1)$ from *Quaternion Rotations and Reflections*. No physical vocabulary is used: in particular the spinors below are the vectors of a module for $Sp(1)$, not the spinors of a field.
 
 The corpus's default base is a commutative ring with identity; the Clifford identifications are stated over $\mathbb{R}$, and the module statements hold over any base in which the relevant subalgebra is defined.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
 
 ## The Spinor Representation
 
@@ -19,9 +19,9 @@ $$
 \tilde q\cdot v = \operatorname{Mat}(\tilde q)\,v, \qquad v\in\mathbb{C}^2.
 $$
 
-**Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the unit group it is the defining two-dimensional $*$-unitary representation of $Sp(1)\cong SU(2)$.
+**Theorem.** The spinor representation is a faithful $\mathbb{R}$-linear representation of $\mathbb{H}$ by complex-linear maps of $\mathbb{C}^2$; restricted to the group of invertibles it is the defining two-dimensional $*$-unitary representation of $Sp(1)\cong SU(2)$.
 
-*Proof.* The action is a representation because $\operatorname{Mat}$ is multiplicative, and it is faithful because $\operatorname{Mat}$ is injective. For a unit $u$, $\operatorname{Mat}(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\operatorname{Mat}(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
+*Proof.* The action is a representation because $\operatorname{Mat}$ is multiplicative, and it is faithful because $\operatorname{Mat}$ is injective. For an invertible element $u$, $\operatorname{Mat}(u)$ is $*$-unitary by *Quaternion 2x2 Matrix Element Representation*, so the restriction is a $*$-unitary representation; its dimension is two and it is irreducible, since any $\mathbb{C}$-linear map of $\mathbb{C}^2$ lies in $M_2(\mathbb{C})$, the complex span of $\operatorname{Mat}(\mathbb{H})$, and the algebra acts transitively on non-zero vectors.
 
 **Proposition.** The spinor representation is the fundamental representation of $Sp(1)$ and is the source of the double cover $Sp(1)\to SO(3)$: the adjoint (three-dimensional) representation is the symmetric square of the spinor representation, and the tensor square decomposes as $\mathbb{C}^2\otimes\mathbb{C}^2\cong\mathrm{sym}^2\oplus\Lambda^2$, of dimensions three and one.
 
@@ -81,7 +81,7 @@ $$ \boxed{\; \mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R}) \;} .$$
 
 **Theorem.** Two choices in any of these three lists differ by the action of the compact group $Sp(1)$ (equivalently $SO(3)$ on the imaginary subspace), and all the structural statements of the article are invariant under this action.
 
-*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by a unit; the matrix realization changes by conjugation by the corresponding $*$-unitary matrix; and the root $\tilde\zeta$ changes to $u\tilde\zeta u^{-1}$ under the adjoint action. Each of the invariants — the quaternion norm, the trace, the determinant, the module ranks — is unchanged.
+*Proof.* A change of orthonormal basis of the negative plane is a rotation of $\operatorname{Im}\mathbb{H}$, and every rotation is the adjoint action of a unit quaternion, so the generators change by conjugation by an invertible element; the matrix realization changes by conjugation by the corresponding $*$-unitary matrix; and the root $\tilde\zeta$ changes to $u\tilde\zeta u^{-1}$ under the adjoint action. Each of the invariants — the quaternion norm, the trace, the determinant, the module ranks — is unchanged.
 
 ## Summary
 

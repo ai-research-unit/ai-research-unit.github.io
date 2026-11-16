@@ -211,7 +211,7 @@ $$
 
 **Proof sketch.** One compares the two scalar functions $|J|^2$ and the model $s^2$ by means of the Riccati equation satisfied by the logarithmic derivative of $|J|$ and the Sturm comparison theorem for ordinary differential equations; the argument belongs to Part III.
 
-**Theorem (Bonnet–Myers).** If $(M, g)$ is complete and connected of dimension $n$ and there is a constant $k > 0$ with $\operatorname{Ric}(v, v) \geq (n-1)k$ for every unit $v$ and every point, then $M$ is compact, its diameter is at most $\pi/\sqrt{k}$, its fundamental group is finite, and its universal cover is compact.
+**Theorem (Bonnet–Myers).** If $(M, g)$ is complete and connected of dimension $n$ and there is a constant $k > 0$ with $\operatorname{Ric}(v, v) \geq (n-1)k$ for every invertible $v$ and every point, then $M$ is compact, its diameter is at most $\pi/\sqrt{k}$, its fundamental group is finite, and its universal cover is compact.
 
 **Proof sketch.** The Rauch comparison applied to the average of the sectional curvatures along a geodesic shows that a geodesic of length $\pi/\sqrt{k}$ has a conjugate point; by the minimising theorem it is not minimising, so the diameter is bounded; Hopf–Rinow then makes the manifold compact. Finiteness of the fundamental group follows from the compactness of the universal cover and the fact that the covering group acts properly discontinuously.
 

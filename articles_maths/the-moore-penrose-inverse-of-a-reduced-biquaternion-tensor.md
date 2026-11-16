@@ -56,7 +56,7 @@ A^\dagger=V\ast S^\dagger\ast U^{\mathsf H}
 \;}.
 $$
 
-**Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{red}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of units can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
+**Remark (the inversion is in the transform).** The diagonal entry of $S$ at $(i,i,k)$ is an element of $\mathbb{B}_{\mathrm{red}}$, but it is not inverted entry by entry in the time domain. A diagonal tube of invertibles can have a vanishing Fourier coefficient: for $n_3=2$, the tube $(1,1)$ has transform $(2,0)$, and the entrywise inverse $(1,1)$ is not the Moore-Penrose inverse of the tube. **The reciprocal-or-zero is taken on the transform slices**, as in the display.
 
 *Proof of the formula.* In the transform, $S$ is f-diagonal, so the four Penrose equations for $S$ and $S^\dagger$ reduce to the scalar equations on each diagonal entry of each slice; hence $S^\dagger$ is the Moore-Penrose inverse of $S$. For $*$-unitary $U,V$, the four equations for $A=U\ast S\ast V^{\mathsf H}$ and $X=V\ast S^\dagger\ast U^{\mathsf H}$ follow by cancellation:
 
@@ -170,7 +170,7 @@ $$
 
 *Proof.* In the transform, every slice $\widehat A^{(k)}$ is a normal matrix, and a normal matrix commutes with its Moore-Penrose inverse. Hence $\widehat A^{(k)}\widehat{A^\dagger}^{(k)}=\widehat{A^\dagger}^{(k)}\widehat A^{(k)}$ for every $k$; inverting the transform gives $A\ast A^\dagger=A^\dagger\ast A$.
 
-**The f-diagonal case.** If $A$ is f-diagonal, then $A^\dagger$ is f-diagonal, and its transform diagonal entries are the elementwise Moore-Penrose inverses of those of $A$. It equals $A^{-1}$ exactly when $A$ is a unit, equivalently when no transform diagonal entry vanishes. Time-domain entries that are units do not suffice: the diagonal tube $(1,1)$ has transform $(2,0)$ and is not a unit. The source states the f-diagonal case entrywise; the tube $(1,1)$ is the counterexample, and the statement is correct only in the transform. This is the transform computation of the SVD formula read on the diagonal.
+**The f-diagonal case.** If $A$ is f-diagonal, then $A^\dagger$ is f-diagonal, and its transform diagonal entries are the elementwise Moore-Penrose inverses of those of $A$. It equals $A^{-1}$ exactly when $A$ is invertible, equivalently when no transform diagonal entry vanishes. Time-domain entries that are invertible do not suffice: the diagonal tube $(1,1)$ has transform $(2,0)$ and is not invertible. The source states the f-diagonal case entrywise; the tube $(1,1)$ is the counterexample, and the statement is correct only in the transform. This is the transform computation of the SVD formula read on the diagonal.
 
 ## Verification
 

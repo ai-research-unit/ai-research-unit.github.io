@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The signed two-sided operators of *Two-Sided Operators with the Signed Product* become a family of conjugations when the two parameters are a unit and its inverse. The **signed two-sided operator** is
+The signed two-sided operators of *Two-Sided Operators with the Signed Product* become a family of conjugations when the two parameters are invertible and its inverse. The **signed two-sided operator** is
 
 $$
 \Sigma_x(y) = T^{\alpha}_{x,\,x^{-1}}(y) = x\,\alpha(y)\,x^{-1},
@@ -16,7 +16,7 @@ The ordinary two-sided operator and the twisted conjugation are *The Two-Sided O
 
 ## The Signed Two-Sided Operator
 
-**Definition.** For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **signed two-sided operator** by $x$ is
+**Definition.** For an invertible element $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the **signed two-sided operator** by $x$ is
 
 $$
 \Sigma_x(y) = x\,\alpha(y)\,x^{-1}, \qquad y \in \mathrm{Cl}(V,\mathfrak{Q}).
@@ -44,7 +44,7 @@ $$
 
 So the composite of two signed two-sided operators is an **ordinary inner conjugation**, with parameter $x\alpha(z)$; the two grade involutions cancel, exactly as for the general signed product.
 
-**Proof.** By the composition law of *Two-Sided Operators with the Signed Product*, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.
+**Proof.** By the composition law of *Two-Sided Operators with the Signed Product*, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are invertible and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.
 
 **Corollary (the group generated).** The signed two-sided operators generate together with their products the group
 
@@ -56,7 +56,7 @@ in which the signed two-sided operators form the nontrivial coset of the inner c
 
 **Proof.** $\Sigma_x\Sigma_z = \mathrm{Ad}_{x\alpha(z)}$ is the composition law; $\Sigma_x = \mathrm{Ad}_x\alpha$ is the first proposition, and $\alpha$ is an automorphism but not of the form $\mathrm{Ad}_y$, because it does not fix the odd part; the square is the law with $z = x$, giving $x\alpha(x)$.
 
-**Remark (the value at the unit and the odd part).** $\Sigma_x(1) = 1$ for every unit, so unlike the general signed two-sided operator the signed two-sided operator is not detected by the unit; what distinguishes it from the ordinary inner conjugation is the odd part. Precisely, $\Sigma_x = \mathrm{Ad}_x\circ\alpha$ agrees with the inner conjugation on the even part, $\Sigma_x = \mathrm{Ad}_x$ on $\mathrm{Cl}^{0}$, and equals its negative on the odd part, $\Sigma_x = -\mathrm{Ad}_x$ on $\mathrm{Cl}^{1}$; this holds for every unit $x$, whatever its parity, and it is the sharp statement of the cancellation in the composition law.
+**Remark (the value at the unit and the odd part).** $\Sigma_x(1) = 1$ for every invertible element, so unlike the general signed two-sided operator the signed two-sided operator is not detected by the unit; what distinguishes it from the ordinary inner conjugation is the odd part. Precisely, $\Sigma_x = \mathrm{Ad}_x\circ\alpha$ agrees with the inner conjugation on the even part, $\Sigma_x = \mathrm{Ad}_x$ on $\mathrm{Cl}^{0}$, and equals its negative on the odd part, $\Sigma_x = -\mathrm{Ad}_x$ on $\mathrm{Cl}^{1}$; this holds for every invertible $x$, whatever its parity, and it is the sharp statement of the cancellation in the composition law.
 
 ## The Reflections and the Versor Action
 

@@ -75,7 +75,7 @@ Let $A = C(X,\mathbb{C})$ with pointwise conjugation. The Hermitian elements are
 
 ### The Group Algebra
 
-Let $A = \mathbb{C}[G]$ with $g^{*} = g^{-1}$. The Hermitian elements are the elements with $a^{*} = a$, the order unit is the identity of the unit group, and the Jordan decomposition is the decomposition of a self-adjoint element of the group algebra into its positive and negative parts in the Hilbert cone of *The Hilbert Cone of an Involutive Algebra*; the states are the positive-definite functions on $G$ normalised to $1$ at the identity, which is the classical correspondence between the states and the positive-definite functions.
+Let $A = \mathbb{C}[G]$ with $g^{*} = g^{-1}$. The Hermitian elements are the elements with $a^{*} = a$, the order unit is the identity of the group of invertibles, and the Jordan decomposition is the decomposition of a self-adjoint element of the group algebra into its positive and negative parts in the Hilbert cone of *The Hilbert Cone of an Involutive Algebra*; the states are the positive-definite functions on $G$ normalised to $1$ at the identity, which is the classical correspondence between the states and the positive-definite functions.
 
 ## Summary
 

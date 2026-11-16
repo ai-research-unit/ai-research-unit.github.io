@@ -233,10 +233,10 @@ $$
 
 - The determinant is the fourth power of the modulus, $\det\mathsf{M}_4(\tilde q)=\lvert\tilde q\rvert^{4}$ with $\lvert\tilde q\rvert=\sqrt N$, so it is positive on every nonzero element, it equals $1$ on the unit sphere, and the model cannot distinguish $\tilde q$ from $-\tilde q$ by the determinant.
 - The zero set is a point, so there is no null cone; the rank is four on every nonzero element and zero at the origin.
-- The image of the unit sphere lies in $SL_4(\mathbb{R})$; the image of the whole algebra minus the origin lies in $GL_4^{+}(\mathbb{R})$, the component of the identity. This is the topological statement that the unit group of the algebra is connected, which is true here and false in the split-quaternion category.
+- The image of the unit sphere lies in $SL_4(\mathbb{R})$; the image of the whole algebra minus the origin lies in $GL_4^{+}(\mathbb{R})$, the component of the identity. This is the topological statement that the group of invertibles of the algebra is connected, which is true here and false in the split-quaternion category.
 - The model is **conformal**, as the complex one was and for the same reason: $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$, so the four singular values are $\sqrt N$ each. What differs is the reading. In the complex model $N$ was itself the determinant; here the determinant of $\mathsf{M}_4(\tilde q)$ is $N^{2}$, which is the determinant of $NI_4$ and therefore the fourth power of the common singular value.
 
-**The unit criterion.** An element is a unit exactly when $N\neq0$, exactly when the determinant is nonzero, exactly when the matrix is invertible. So the three criteria of the algebra, of the norm and of the matrix coincide, and the model is faithful in the strongest sense: it detects invertibility.
+**The unit criterion.** An element is invertible exactly when $N\neq0$, exactly when the determinant is nonzero, exactly when the matrix is invertible. So the three criteria of the algebra, of the norm and of the matrix coincide, and the model is faithful in the strongest sense: it detects invertibility.
 
 ## The Spectral Projectors
 
@@ -301,7 +301,7 @@ $$
 
 So the conjugation is read by the adjugate and the reversal of the product by the transpose, and the two are not interchangeable: the first gives an element of $L(\mathbb{H})$, the second an element of $R(\mathbb{H})$.
 
-**The normality.** Since $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$, every matrix of the image is **normal and conformal**, with all singular values equal to $\sqrt N$. The image of the units is therefore a four-dimensional submanifold of $SO(4)$:
+**The normality.** Since $\mathsf{M}_4(\tilde q)^{\mathsf T}\mathsf{M}_4(\tilde q)=N I_4$, every matrix of the image is **normal and conformal**, with all singular values equal to $\sqrt N$. The image of the invertibles is therefore a four-dimensional submanifold of $SO(4)$:
 
 $$
 \mathsf{M}_4(\mathbb{H}^{\times})=\mathbb{R}_{>0}\cdot\mathsf{M}_4(SU(2)),
@@ -322,7 +322,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **The determinant is not a quadratic form.** The single most important difference from the complex model: on the four real coordinates the determinant is a quartic, so the model does not carry the Euclidean form as a determinant. The Euclidean form is its square root, and the square root is the norm, which is not a polynomial in the matrix entries. This is why the regular model cannot be used to compute the norm by a determinant, and why the complex model is the one used for the spectral and polar theory.
 
-**The trace form is the Lorentzian one.** It is of signature $(1,3)$ and invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$; it is the form under which the unit group acts by isometries, and it is the same form as in the complex model up to the factor $4$ against $2$.
+**The trace form is the Lorentzian one.** It is of signature $(1,3)$ and invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$; it is the form under which the group of invertibles acts by isometries, and it is the same form as in the complex model up to the factor $4$ against $2$.
 
 **The Frobenius form is the metric.** It is positive definite, equal to $4$ times the Euclidean form on the coordinates, and it is the inner product with respect to which the transpose is the adjoint. Its restriction to the image is $4N$, so the image is a conformal copy of $\mathbb{R}^{4}$ inside the ambient.
 
@@ -418,7 +418,7 @@ Two models, one representation, and the table is the complete dictionary between
 | $N$ | the norm, equal to $\sqrt{\det\mathsf{M}_4(\tilde q)}$ | *Norm and Invertibility in the Quaternion Algebra* |
 | $\lVert\vec v\rVert$ | the modulus of the pure part | *Quaternion Algebra* |
 | $C$ | the rotation-scaling block $\begin{pmatrix}q_t&-\lVert\vec v\rVert\\ \lVert\vec v\rVert&q_t\end{pmatrix}$ | this article |
-| $SU(2)$ | the units of norm one, whose image lies in $SO(4)$ | *The Pin and Spin Groups of the Quaternion Algebra* |
+| $SU(2)$ | the invertibles of norm one, whose image lies in $SO(4)$ | *The Pin and Spin Groups of the Quaternion Algebra* |
 | $V$ | the pure part, the trace-zero subspace of the image | this article |
 
 ## Further Reading

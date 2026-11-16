@@ -44,7 +44,7 @@ $$
 **Theorem.** The cup product is associative, unital and graded-commutative, and it is natural. Precisely:
 
 1. $(\varphi \smile \psi) \smile \theta = \varphi \smile (\psi \smile \theta)$;
-2. there is a unit $1 \in H^0(X;R)$, the class of the cocycle sending every singular $0$-simplex to $1 \in R$, with $1 \smile \varphi = \varphi \smile 1 = \varphi$;
+2. there is invertible $1 \in H^0(X;R)$, the class of the cocycle sending every singular $0$-simplex to $1 \in R$, with $1 \smile \varphi = \varphi \smile 1 = \varphi$;
 3. $\varphi \smile \psi = (-1)^{|\varphi||\psi|}\, \psi \smile \varphi$;
 4. for a continuous map $f : X \to Y$, $f^*(\varphi \smile \psi) = f^*\varphi \smile f^*\psi$.
 

@@ -60,13 +60,13 @@ consists exactly of the nonzero real quaternions. Every element is norm-regular 
 
 *Proof.* The matrix is scalar and $q_t\ne0$; the minimal polynomial is linear and squarefree.
 
-**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector in which a quaternion is norm-regular and spectrally degenerate. Its elements are units, so spectral degeneracy here is neither non-invertibility nor defect; it is the collapse of the two eigenvalues onto the real axis. The comparison with the split and biquaternion algebras, where norm-regular spectrally degenerate elements can be defective, is in [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
+**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector in which a quaternion is norm-regular and spectrally degenerate. Its elements are invertible, so spectral degeneracy here is neither non-invertibility nor defect; it is the collapse of the two eigenvalues onto the real axis. The comparison with the split and biquaternion algebras, where norm-regular spectrally degenerate elements can be defective, is in [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
 
 ## The Origin
 
 **Theorem.** The set
 $$\Sigma_{00}=\{\tilde q:|\tilde q|^2=0,\ s^2=0\}=\{0\}$$
-is the unique doubly degenerate point. The origin is the only non-unit of $\mathbb H$, the only element of the norm-degenerate set, and the only element whose spectrum is $\{0\}$ with $L_0=0$.
+is the unique doubly degenerate point. The origin is the only non-invertible of $\mathbb H$, the only element of the norm-degenerate set, and the only element whose spectrum is $\{0\}$ with $L_0=0$.
 
 *Proof.* Norm degeneracy gives $\tilde q=0$; the origin is real, hence spectrally degenerate. The spectrum of $L_0$ is $\{0\}$, the characteristic polynomial is $\lambda^4$, and the minimal polynomial is $\lambda$.
 
@@ -82,7 +82,7 @@ is the unique doubly degenerate point. The origin is the only non-unit of $\math
 
 *Proof.* $|\tilde q_1\tilde q_2|^2=|\tilde q_1|^2|\tilde q_2|^2$; if the product is zero, one factor has norm zero, hence is zero. The zero element is excluded from the definition of a zero divisor, so $\{0\}$ contains none.
 
-**Corollary.** Every nonzero quaternion is a unit, and the unit group is $\mathbb H^\times=\mathbb H\setminus\{0\}$.
+**Corollary.** Every nonzero quaternion is invertible, and the group of invertibles is $\mathbb H^\times=\mathbb H\setminus\{0\}$.
 
 **Remark (the name).** "Norm-degenerate" does not mean "zero divisor": the only norm-degenerate element is the zero, and the zero is not a zero divisor. The norm-degenerate set is the smallest possible, a single point.
 
@@ -121,7 +121,7 @@ The partition, its dimensions and its closures are the subject of [The Three Sec
 
 ## Summary
 
-The quaternion norm $q_t^2+s^2$ and the spectral form $s^2$ are independent quadratic forms: neither is proportional to the other, and neither determines the other. The norm is positive definite with radical $\{0\}$; the spectral form is positive semidefinite of rank three with radical the real axis. Hence the norm-degenerate set is $\{0\}$ and the spectral-degenerate set is $\mathbb R$, with $\{0\}\subsetneq\mathbb R$. The real axis minus the origin is exactly the set of norm-regular, spectrally degenerate elements; these are the nonzero real scalars, all units and all semisimple. The origin is the only doubly degenerate point, the only non-unit and the only element of the norm-degenerate set, which contains no zero divisor.
+The quaternion norm $q_t^2+s^2$ and the spectral form $s^2$ are independent quadratic forms: neither is proportional to the other, and neither determines the other. The norm is positive definite with radical $\{0\}$; the spectral form is positive semidefinite of rank three with radical the real axis. Hence the norm-degenerate set is $\{0\}$ and the spectral-degenerate set is $\mathbb R$, with $\{0\}\subsetneq\mathbb R$. The real axis minus the origin is exactly the set of norm-regular, spectrally degenerate elements; these are the nonzero real scalars, all units and all semisimple. The origin is the only doubly degenerate point, the only non-invertible and the only element of the norm-degenerate set, which contains no zero divisor.
 
 Among the eight, $\mathbb H$ is the only noncommutative division algebra with both forms positive definite. The sector $\Sigma_{01}$ is empty for $\mathbb R,\mathbb C,\mathbb{C}_{\mathrm{dln}},\mathbb H$ and nonempty for $\mathbb{C}_{\mathrm{spl}},\mathbb{H}_{\mathrm{spl}},\mathbb B$. The chain
 $$\tilde q=0\iff|\tilde q|^2=0\implies s^2=0\iff\tilde q\in\mathbb R$$
@@ -145,7 +145,7 @@ has one strict implication, whose failure is $\mathbb R^\times$.
 ## Further Reading
 
 - [Quaternion Algebra](quaternion-algebra.html), for the multiplication and the scalar–vector decomposition.
-- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm, its multiplicativity and the unit group.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm, its multiplicativity and the group of invertibles.
 - [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html), for the spectral criterion and the minimal polynomial.
 - [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html), for the partition, dimensions and closures.
 - [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms and signatures of the eight algebras.

@@ -62,7 +62,7 @@ $$
 
 **Proof.** Let $A$ be invertible. Over $\mathbb{C}$ it has a basis in which it is diagonal or a single Jordan block, by *The Minimal Polynomial and the Two Jordan Regimes of $M_2(\mathbb{C})$*. In the diagonal case with eigenvalues $\lambda_{1},\lambda_{2}\ne0$ take $X$ diagonal with entries $\log\lambda_{1},\log\lambda_{2}$; in the Jordan case with the eigenvalue $\lambda\ne0$ take $X=(\log\lambda)I+N/\lambda$, and then $e^{X}=\lambda\bigl(I+N/\lambda\bigr)=\lambda I+N$ because $N^{2}=0$. In both cases $e^{X}=A$.
 
-**Corollary.** Every invertible matrix is the exponential of some matrix, so the exponential is surjective onto the group of units.
+**Corollary.** Every invertible matrix is the exponential of some matrix, so the exponential is surjective onto the group of invertibles.
 
 **Proof.** The theorem treats an arbitrary invertible matrix.
 

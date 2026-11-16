@@ -80,7 +80,7 @@ $$
 
 *Proof.* The powers of $\tilde{Ζ}$ alternate in pairs, $\tilde{Ζ}^{2k}=e_t$ and $\tilde{Ζ}^{2k+1}=\tilde{Ζ}$, so the exponential series splits into the even part $\cos\theta\,e_t$ and the odd part $-i\sin\theta\,\tilde{Ζ}$, the cosine and the sine being the ordinary functions of the real argument.
 
-**The kernel is a unit, at every root and every pair of indices.** Both factors of the closed form lie in $\mathbb{C}[\tilde{Ζ}]$, which is commutative, and their product is $(\cos^2\theta+\sin^2\theta)e_t$; the inverse is the closed form with the sign of the sine reversed,
+**The kernel is invertible, at every root and every pair of indices.** Both factors of the closed form lie in $\mathbb{C}[\tilde{Ζ}]$, which is commutative, and their product is $(\cos^2\theta+\sin^2\theta)e_t$; the inverse is the closed form with the sign of the sine reversed,
 
 $$
 W_N(n, \ell)^{-1} = \cos\theta\, e_t + i\sin\theta\,\tilde{Ζ} = W_N(n, -\ell).
@@ -100,7 +100,7 @@ $$
 \langle W_N(n, \ell)\rangle_{\natural} = W_N^{2} = e^{\mp 4\pi i n\ell/N} e_t ,
 $$
 
-a unit and not $e_t$. So the kernel is a unit at every root, and what fails at the central root is the identification of the inverse with a conjugation, not the invertibility.
+A unit element and not $e_t$. So the kernel is of norm one at every root, and what fails at the central root is the identification of the inverse with a conjugation, not the invertibility.
 
 ### The Peirce Form of the Kernel
 
@@ -114,7 +114,7 @@ $$
 
 *Proof.* The two idempotents are orthogonal and their sum is the unit, so the exponential acts on each by the scalar attached to it, $\exp(-2\pi i\theta\tilde{Ζ})\tilde\Pi_\pm=\exp(\mp 2\pi i\theta)\tilde\Pi_\pm$, because $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$; the two terms add.
 
-Three consequences are read off at once. **The kernel is a pair of conjugate unit complex numbers**, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. **The kernel is never a zero divisor**, since each of its two Peirce coordinates is a nonzero complex number: it stays a unit and never approaches the null cone, at any root and any index.
+Three consequences are read off at once. **The kernel is a pair of conjugate unit complex numbers**, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. **The kernel is never a zero divisor**, since each of its two Peirce coordinates is a nonzero complex number: it stays an invertible element and never approaches the null cone, at any root and any index.
 
 ## The Roots of One
 
@@ -341,11 +341,11 @@ The kernel is never on the cone: its two Peirce coordinates are unit complex num
 ### Consequences for the Transform
 
 - **The transform is a bijection, at every root and for every sequence.** The inverse formula is an identity in the algebra and uses no hypothesis on the samples.
-- **Pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone.** A convolution is undone by dividing the transform pointwise by the transform of the kernel, and that division exists at the frequency $\ell$ exactly when $F[\ell]$ is a unit.
+- **Pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone.** A convolution is undone by dividing the transform pointwise by the transform of the kernel, and that division exists at the frequency $\ell$ exactly when $F[\ell]$ is invertible.
 
 ### Structural Interpretation
 
-The vanishing norm is a genuinely biquaternionic feature: it does not arise in the complex or quaternion transforms, whose algebras are division algebras, and in $\mathbb{B}$ the units are the complement of the null cone, so division is available off the cone and nowhere on it.
+The vanishing norm is a genuinely biquaternionic feature: it does not arise in the complex or quaternion transforms, whose algebras are division algebras, and in $\mathbb{B}$ the invertibles are the complement of the null cone, so division is available off the cone and nowhere on it.
 
 ### The Open Question
 
@@ -391,7 +391,7 @@ $$
 \mathcal{X}[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$
 
-the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the central root $\tilde{Ζ}=e_t$ of the transform pair above.
+the generating function of the sequence, and the variable ranges over the invertibles of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the central root $\tilde{Ζ}=e_t$ of the transform pair above.
 
 The sample $f_n$ is written on the **left** of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde A$-scaling rule would require every sample to commute with $\tilde A$. The two conventions are interconverted by the quaternion conjugate. Writing
 

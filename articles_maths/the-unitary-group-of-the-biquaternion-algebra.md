@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of units of the biquaternion algebra, the elements that leave it invariant: the **$*$-unitary biquaternions** $\tilde Q$ with $\tilde Q^{*}\tilde Q=e_t$. This is the maximal compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of units is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+The general plain sesquilinear form $\tilde{Q}\tilde{Q}^{*}$ singles out, inside the group of invertibles of the biquaternion algebra, the elements that leave it invariant: the **$*$-unitary biquaternions** $\tilde Q$ with $\tilde Q^{*}\tilde Q=e_t$. This is the maximal compact subgroup $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ of $\mathbb{B}^{\times}$, the compact real form of the algebra, and it is the single object through which the whole topology of the group of invertibles is read: the polar decomposition gives a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$ and of the norm-one group onto its compact part $S^{3}$, and the homotopy groups, the generators and the universal cover follow from the resulting homotopy equivalence $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
-This article collects the *Hermitian* half of the topology of the unit group: the $*$-unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the units as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Unit Group as a Topological Group* and *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
+This article collects the *Hermitian* half of the topology of the group of invertibles: the $*$-unitary slice, its structure, the two retractions that the dagger supplies, and the homotopy invariants. The *bilinear* half — the invertibles as the complement of the null cone, the centre, the distribution of the units among the three classes — is *The Biquaternion Group of Invertibles as a Topological Group* and *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, and the ambient Euclidean topology and the contractibility of the algebra are *The Euclidean Topology of the Biquaternion Algebra*.
 
 ## The $*$-Unitary Biquaternions
 
@@ -46,7 +46,7 @@ so $\mathrm{U}(\mathbb{B})$ is a fibre bundle over $S^{2}$ with fibre $T^{2}$.
 
 **Proof.** Under $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ the diagonal matrices form a maximal torus, and $\mathrm{U}(2)/T^{2}$ is the complete flag variety of $\mathbb{C}^{2}$, which is $P^{1}$; every element of a compact connected Lie group lies in a maximal torus, and all maximal tori are conjugate. The central circle is the factor $S^{1}_{\mathrm{c}}$ and a maximal circle of $S^{3}$ the factor $S^{1}_{\mathrm{q}}$.
 
-## The Retraction of the Unit Group onto the $*$-Unitary Group
+## The Retraction of the Group of Invertibles onto the $*$-Unitary Group
 
 **Theorem (polar decomposition).** Every $\tilde{Q}_3\in\mathbb{B}^{\times}$ has a unique decomposition
 
@@ -56,7 +56,7 @@ $$
 
 with $\tilde{Q}_2=(\tilde{Q}_3^{*}\tilde{Q}_3)^{1/2}$; the map $\tilde{Q}_3\mapsto(\tilde Q,\tilde{Q}_2)$ is a homeomorphism of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})\times\{\text{Hermitian positive definite}\}$.
 
-**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ a unit, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the units (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde Q=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde Q^{*}\tilde Q=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
+**Proof.** $\tilde{Q}_3^{*}\tilde{Q}_3$ is Hermitian and positive definite for $\tilde{Q}_3$ an invertible element, because $\mathrm{Sc}(\tilde{Q}_3^{*}\tilde{Q}_3)=\|\tilde{Q}_3\|^{2}>0$ and the Hermitian elements that are positive for the dagger form the cone of the invertibles (*Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*, §*The Hermitian Cone*); a positive definite Hermitian element has a unique positive definite square root $\tilde{Q}_2$, and $\tilde Q=\tilde{Q}_3\tilde{Q}_2^{-1}$ satisfies $\tilde Q^{*}\tilde Q=\tilde{Q}_2^{-1}\tilde{Q}_3^{*}\tilde{Q}_3\tilde{Q}_2^{-1}=e_t$. Uniqueness is the standard argument: $\tilde{Q}_2^{2}=\tilde{Q}_3^{*}\tilde{Q}_3$ has one positive definite root.
 
 **Theorem (strong deformation retraction).** For $t\in[0,1]$ put $\tilde{Q}_{2,t}=(1-t)\tilde{Q}_2+t e_t$ and $\tilde{H}(t,\tilde{Q}_3)=\tilde Q\tilde{Q}_{2,t}$. Then $\tilde{H}$ is a strong deformation retraction of $\mathbb{B}^{\times}$ onto $\mathrm{U}(\mathbb{B})$:
 
@@ -70,7 +70,7 @@ Hence $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})$, and $\pi_n(\mathbb{B}^
 
 **Corollary (connectedness).** $\mathbb{B}^{\times}$ is connected, and $\mathrm{U}(\mathbb{B})$ is connected.
 
-**Proof.** $\tilde{H}$ joins every unit to a $*$-unitary element, and $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ is a continuous image of the connected group $S^{1}\times S^{3}$.
+**Proof.** $\tilde{H}$ joins every invertible to a $*$-unitary element, and $\mathrm{U}(\mathbb{B})\cong(S^{1}\times S^{3})/\{\pm\}$ is a continuous image of the connected group $S^{1}\times S^{3}$.
 
 ## The Retraction of the Norm-One Group onto $S^{3}$
 
@@ -101,7 +101,7 @@ $$
 
 and the universal covers are $(\mathbb{B}^\times)_{\mathrm{cov}}\cong \mathrm{U}(\mathbb{B})_{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$, while $S^{3}$ and $\mathbb{B}^{\times}_1$ are their own universal covers.
 
-**Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_1=\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of units by the homotopy equivalence.
+**Proof.** The two retractions give the homotopy equivalences; the homotopy groups of $S^{3}$ are $\pi_1=\pi_2=0$, $\pi_3\cong\mathbb{Z}$, and those of $S^{1}\times S^{3}$ follow by the product formula. The universal cover of $S^{1}\times S^{3}$ is $\mathbb{R}\times S^{3}$ because $S^{3}$ is simply connected, and the same holds for the group of invertibles by the homotopy equivalence.
 
 **Generators.** $\pi_3(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the image of the class of $\mathrm{id}_{S^{3}}$ under $S^{3}\hookrightarrow \mathrm{U}(\mathbb{B})$, which induces an isomorphism on $\pi_3$. The group $\pi_1(\mathrm{U}(\mathbb{B}))\cong\mathbb{Z}$ is generated by the central loop $\gamma(t)=\exp(2\pi it)e_t$; its norm is $\langle\gamma(t)\rangle_{\natural}=\exp(4\pi it)$, so $(\langle\cdot\rangle_{\natural})_*:\pi_1(\mathrm{U}(\mathbb{B}))\to\pi_1(S^{1})$ is multiplication by $2$, injective with image the subgroup of index two. No loop in $\mathrm{U}(\mathbb{B})$ has a norm of winding number one.
 
@@ -133,7 +133,7 @@ is a surjective homomorphism with kernel $\mathrm{U}(1)e_t$, so that $\mathrm{U}
 
 **A unit quaternion.** $\tilde Q\in\mathbb{B}_{H}$, $\langle\tilde Q,\tilde Q\rangle_{\natural}=1$, is $*$-unitary, is fixed by $\Theta$ only when central, and generates the image of $\pi_3$.
 
-**A null scalar multiple.** $\tilde{Q}=A(\vec e_x+i\vec e_y)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not a unit and in particular not $*$-unitary; its Euclidean norm is $\sqrt2|A|$.
+**A null scalar multiple.** $\tilde{Q}=A(\vec e_x+i\vec e_y)$ with $A\neq0$ has $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$, so it is not invertible and in particular not $*$-unitary; its Euclidean norm is $\sqrt2|A|$.
 
 **A negative determinant.** $\mathrm{U}(2)$ has determinant of modulus one; the slice $SU(2)=\{\langle\tilde Q\rangle_{\natural}=1\}\cap \mathrm{U}(\mathbb{B})=S^{3}$ is the unit quaternions, the kernel of $\langle\cdot\rangle_{\natural}$, and the double cover of $SO(3)$.
 
@@ -150,15 +150,15 @@ The **$*$-unitary biquaternions** $\mathrm{U}(\mathbb{B})=\{\tilde Q^{*}\tilde Q
 | $T^{2}\cong S^{1}\times S^{1}$ | Central maximal torus |
 | $\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}$ | Complete flag variety |
 | $\tilde{Q}_3=\tilde Q\tilde{Q}_2$ | Polar decomposition; retraction onto $\mathrm{U}(\mathbb{B})$ |
-| $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the unit group |
+| $\mathbb{B}^{\times}\simeq \mathrm{U}(\mathbb{B})\simeq S^{1}\times S^{3}$ | Homotopy type of the group of invertibles |
 | $\mathbb{B}^{\times}_1\simeq S^{3}$ | Homotopy type of the norm-one group |
 | $\langle\cdot\rangle_{\natural}:\mathrm{U}(\mathbb{B})\to S^{1}$, kernel $S^{3}$ | Determinant/norm; $\mathrm{U}(\mathbb{B})/S^{3}\cong S^{1}$ |
 | $\mathrm{Sd}_{\tilde Q}:\mathbb{B}_{\Psi}\to\mathbb{B}_{\Psi}$, kernel $\mathrm{U}(1)$ | $\mathrm{U}(\mathbb{B})/\mathrm{U}(1)\cong SO(3)$ |
-| $(\mathbb{B}^\times)_{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the unit group |
+| $(\mathbb{B}^\times)_{\mathrm{cov}}\cong\mathbb{R}\times S^{3}$ | Universal cover of the group of invertibles |
 
 ## Further Reading
 
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the bilinear-side treatment of the group of units
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the bilinear-side treatment of the group of invertibles
 - [The Euclidean Topology of the Biquaternion Algebra](the-euclidean-topology-of-the-biquaternion-algebra.html), for the ambient Euclidean structure the retractions use
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the form that defines the $*$-unitary slice
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the subgroups and the real forms

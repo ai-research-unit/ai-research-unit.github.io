@@ -201,11 +201,11 @@ $$
 
 **(b)** $\mathrm{M}$ is maximal if and only if $R/\mathrm{M}$ is a field, in the sense of *Fields*, later in this category.
 
-The two notions are distinguished by what the quotient is asked to satisfy: the first asks that there be no zero divisors, the second that every nonzero class be a unit.
+The two notions are distinguished by what the quotient is asked to satisfy: the first asks that there be no zero divisors, the second that every nonzero class be an invertible element.
 
 **Proposition.** Every maximal ideal is prime; and if $\mathrm{M}$ is maximal then the only ideals containing $\mathrm{M}$ are $\mathrm{M}$ and $R$.
 
-**Proof.** Let $\mathrm{M}$ be maximal. By the correspondence theorem of *Rings*, §Quotient Rings the ideals of $R/\mathrm{M}$ correspond to the ideals of $R$ containing $\mathrm{M}$, so the only ideals of $R/\mathrm{M}$ are $(0)$ and $R/\mathrm{M}$. Hence for $a \notin \mathrm{M}$ the ideal $(a + \mathrm{M})$ of $R/\mathrm{M}$ is nonzero, therefore all of $R/\mathrm{M}$, and there is $x \in R$ with $xa \equiv 1 \pmod{\mathrm{M}}$; so every nonzero class of $R/\mathrm{M}$ is a unit. A unit is not a zero divisor, since $uv = 0$ gives $v = u^{-1}uv = 0$, so $R/\mathrm{M}$ has no zero divisors and $\mathrm{M}$ is prime by the theorem above. The second statement is the definition read through the correspondence theorem.
+**Proof.** Let $\mathrm{M}$ be maximal. By the correspondence theorem of *Rings*, §Quotient Rings the ideals of $R/\mathrm{M}$ correspond to the ideals of $R$ containing $\mathrm{M}$, so the only ideals of $R/\mathrm{M}$ are $(0)$ and $R/\mathrm{M}$. Hence for $a \notin \mathrm{M}$ the ideal $(a + \mathrm{M})$ of $R/\mathrm{M}$ is nonzero, therefore all of $R/\mathrm{M}$, and there is $x \in R$ with $xa \equiv 1 \pmod{\mathrm{M}}$; so every nonzero class of $R/\mathrm{M}$ is invertible. An invertible element is not a zero divisor, since $uv = 0$ gives $v = u^{-1}uv = 0$, so $R/\mathrm{M}$ has no zero divisors and $\mathrm{M}$ is prime by the theorem above. The second statement is the definition read through the correspondence theorem.
 
 **Theorem (existence of maximal ideals).** Let $I \subsetneq R$ be a proper ideal of the commutative ring $R$. Then $I$ is contained in a maximal ideal.
 

@@ -12,7 +12,7 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, and $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ real unit vectors. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the units and the substitution loses nothing.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, and $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ real unit vectors. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the invertibles and the substitution loses nothing.
 
 Three results are established, and each is a computation.
 
@@ -91,7 +91,7 @@ $$
 
 for the four scalar parameters with the two axes held fixed, where $\partial$ is any one of the four coordinate derivatives. Four features of it matter.
 
-**Every square carries the same weight.** The four squares are multiplied by the one factor $\cosh\theta_{\mathrm{rpd}}$, which is the density ratio of the display above. The factors of $\tfrac14$ on the two angle rates are the halves of the exponents and not weights; the weight itself is one density for all four, because the frame is a unit and all of its directions are measured alike.
+**Every square carries the same weight.** The four squares are multiplied by the one factor $\cosh\theta_{\mathrm{rpd}}$, which is the density ratio of the display above. The factors of $\tfrac14$ on the two angle rates are the halves of the exponents and not weights; the weight itself is one density for all four, because the frame is invertible and all of its directions are measured alike.
 
 **The cross terms are the sinh ones, and there are two.** The amplitude gradient couples to the rapidity gradient with weight $+\sinh\theta_{\mathrm{rpd}}$, and the phase gradient couples to the rotor's angular rate with weight $-\sinh\theta_{\mathrm{rpd}}(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})$. Both vanish on the central field, and both are as large as the squares at large rapidity. A computation that keeps the cosh and drops the sinh gives an action whose Euler–Lagrange equations are not the parent's.
 

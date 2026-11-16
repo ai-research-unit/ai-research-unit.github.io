@@ -124,7 +124,7 @@ onto the space of inner derivations of *Automorphisms and Derivations of Algebra
 
 *Proof.* The kernel of $\mathrm{ad}_a$ consists of the $x$ with $ax = xa$, which is the centraliser; the kernel of $\mathrm{ad}$ is the intersection of the centralisers over all $a$, which is the set of elements commuting with everything, the centre. The first isomorphism theorem for Lie algebras then gives the last display, the inner derivations being by definition the image of $\mathrm{ad}$.
 
-The centre is thus exactly the part of the algebra that the operator $\mathrm{ad}$ cannot see, and this is the operator form of the fact — stated for rings in *Centre, Units, Zero Divisors and Division Algebras* — that the centre is the intersection of the centralisers. When $A$ is a field, $A^{(-)}$ is the zero Lie algebra and $\mathrm{ad} = 0$; when $A = M_n(k)$ the centre is the scalars, so $\operatorname{InnDer}_k(M_n(k))$ has dimension $n^2 - 1$.
+The centre is thus exactly the part of the algebra that the operator $\mathrm{ad}$ cannot see, and this is the operator form of the fact — stated for rings in *Centre, Invertibles, Zero Divisors and Division Algebras* — that the centre is the intersection of the centralisers. When $A$ is a field, $A^{(-)}$ is the zero Lie algebra and $\mathrm{ad} = 0$; when $A = M_n(k)$ the centre is the scalars, so $\operatorname{InnDer}_k(M_n(k))$ has dimension $n^2 - 1$.
 
 ### The Centraliser as an Operator Kernel
 

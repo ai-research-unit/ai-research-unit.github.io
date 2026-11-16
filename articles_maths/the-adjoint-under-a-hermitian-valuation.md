@@ -11,7 +11,7 @@ Throughout, $R$ is a ring with a valuation $v$, an involution $\sigma$ and a $\s
 
 ## The Hermitian Valuation and the Form
 
-**Theorem (the form is valued).** Let $v$ be a Hermitian valuation. Then $v(B(x,y))\geq v(x)+v(y)$ for all $x,y$, the form $B$ is nondegenerate on the quotient by its radical, and the norm form satisfies $v(N(x)) = 2v(x)$; in particular $N(x)$ has valuation zero exactly when $x$ has, and the norm form is a map from the units to the units.
+**Theorem (the form is valued).** Let $v$ be a Hermitian valuation. Then $v(B(x,y))\geq v(x)+v(y)$ for all $x,y$, the form $B$ is nondegenerate on the quotient by its radical, and the norm form satisfies $v(N(x)) = 2v(x)$; in particular $N(x)$ has valuation zero exactly when $x$ has, and the norm form is a map from the invertibles to the invertibles.
 
 **Proof.** The valuation is Hermitian and isometric, so $v(x\sigma(y))\geq v(x)+v(\sigma(y)) = v(x)+v(y)$, and the trace does not decrease the valuation beyond the addition of the valuations of the terms; taking $y = x$ gives $v(N(x)) = 2v(x)$ by the Hermitian condition. Nondegeneracy is that the radical consists of the elements whose products with all others are nonunits, which is the maximal ideal when the form is Hermitian, as in *Adjoints under the Residue Pairing*.
 
@@ -39,7 +39,7 @@ $$
 
 The unitary group is a subgroup of the units, it is closed when $N$ is continuous, and it is bounded.
 
-**Proof.** $N(u) = u\sigma(u) = 1$, and $v(N(u)) = 2v(u)$ by the Hermitian condition, so $2v(u) = 0$ and $v(u) = 0$ for a real-valued valuation; hence $u$ is a unit of the valuation ring. Closure under multiplication and inversion is the computation of *Involutive Topological Division Rings*, and closedness is the continuity of the norm form; boundedness is $v(u) = 0$ for all unitary $u$.
+**Proof.** $N(u) = u\sigma(u) = 1$, and $v(N(u)) = 2v(u)$ by the Hermitian condition, so $2v(u) = 0$ and $v(u) = 0$ for a real-valued valuation; hence $u$ is invertible in the valuation ring. Closure under multiplication and inversion is the computation of *Involutive Topological Division Rings*, and closedness is the continuity of the norm form; boundedness is $v(u) = 0$ for all unitary $u$.
 
 **Corollary (compactness in the locally compact case).** If the ring is a locally compact non-Archimedean field with a Hermitian valuation, the unitary group is compact; on a local field it is the compact group of the norm-one elements, and its reduction to the residue field is the residue norm-one group. In the archimedean case $R = \mathbb{C}$ with the Hermitian valuation $|\cdot|$ and the conjugation, the unitary group is the circle, compact, and the norm form is $N(Z) = |Z|^2$.
 
@@ -51,7 +51,7 @@ The unitary group is a subgroup of the units, it is closed when $N$ is continuou
 
 ## The Norm Form, the Residue and the Lattice
 
-**Theorem (the norm form as a map on the units).** The norm form is a map of the units into the units, $N : R^\times\to R^\times$, with $N(1) = 1$ and the identity
+**Theorem (the norm form as a map on the invertibles).** The norm form is a map of the invertibles into the invertibles, $N : R^\times\to R^\times$, with $N(1) = 1$ and the identity
 
 $$
 \boxed{\;N(uv) = u\,N(v)\,\sigma(u)\;} ,
@@ -59,15 +59,15 @@ $$
 
 so $N$ is multiplicative when the values commute with the parameters, in particular on the centre and on a commutative field; it is a homomorphism $R^\times\to (R^\times)^{\sigma}$ when $R$ is commutative, and it factors through the residue, $\bar N(\bar u) = \bar u\,\bar\sigma(\bar u)$, with the residue norm form of *Involutive Valued Fields*.
 
-**Proof.** $N(uv) = uv\sigma(v)\sigma(u) = u\,N(v)\,\sigma(u)$; the multiplicative case is $uN(v) = N(v)u$; the residue statement is that $N$ preserves $\mathcal{O}$ by $v(N(u)) = 2v(u)\geq0$ for a unit and respects $\mathrm{M}$, so it descends.
+**Proof.** $N(uv) = uv\sigma(v)\sigma(u) = u\,N(v)\,\sigma(u)$; the multiplicative case is $uN(v) = N(v)u$; the residue statement is that $N$ preserves $\mathcal{O}$ by $v(N(u)) = 2v(u)\geq0$ for an invertible element and respects $\mathrm{M}$, so it descends.
 
-**Corollary (the unitary group as the kernel of the norm).** The norm form maps the units into the units of the fixed field, $N(R^\times)\subseteq (R^\times)^\sigma$, since $\sigma(N(u)) = N(u)$, and its kernel on the units is the unitary group,
+**Corollary (the unitary group as the kernel of the norm).** The norm form maps the invertibles into the invertibles of the fixed field, $N(R^\times)\subseteq (R^\times)^\sigma$, since $\sigma(N(u)) = N(u)$, and its kernel on the invertibles is the unitary group,
 
 $$
 \mathrm{U}(R,\sigma) = \{u\in R^\times : N(u) = 1\} .
 $$
 
-For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstruction to unitarity: the unitaries are exactly the units of norm one.
+For a self-adjoint unit $x$ the norm is $x^2$, so the norm form is the obstruction to unitarity: the unitaries are exactly the invertibles of norm one.
 
 **Proof.** $\sigma(N(u)) = \sigma(u\sigma(u)) = \sigma(\sigma(u))\,\sigma(u) = u\sigma(u) = N(u)$, so the values are fixed; the kernel is the unitarity condition by definition; the self-adjoint case is $N(x) = x\sigma(x) = x^2$.
 
@@ -79,7 +79,7 @@ $$
 
 and acts by isometries of the form, $v(B(ux,uy)) = v(B(x,y))$; the induced action on the residue field is by isometries of the residue form, and the residue action is the reduction of the involution.
 
-**Proof.** $v(u) = 0$ gives $u\in\mathcal{O}^\times$, so $u\mathcal{O} = \mathcal{O}$ and $u\mathrm{M}^n = \mathrm{M}^n$. The form transforms as $B(ux,uy) = \tau(ux\,\sigma(uy)) = \tau(ux\,\sigma(y)\sigma(u))$, and $v(u) = v(\sigma(u)) = 0$, so the valuation of the argument of the trace is $v(x\sigma(y))$ and hence $v(B(ux,uy)) = v(B(x,y))$ when the trace does not change the valuation; the residue action is that of a unit of the valuation ring on the residue field.
+**Proof.** $v(u) = 0$ gives $u\in\mathcal{O}^\times$, so $u\mathcal{O} = \mathcal{O}$ and $u\mathrm{M}^n = \mathrm{M}^n$. The form transforms as $B(ux,uy) = \tau(ux\,\sigma(uy)) = \tau(ux\,\sigma(y)\sigma(u))$, and $v(u) = v(\sigma(u)) = 0$, so the valuation of the argument of the trace is $v(x\sigma(y))$ and hence $v(B(ux,uy)) = v(B(x,y))$ when the trace does not change the valuation; the residue action is that of an invertible element of the valuation ring on the residue field.
 
 ## Examples
 

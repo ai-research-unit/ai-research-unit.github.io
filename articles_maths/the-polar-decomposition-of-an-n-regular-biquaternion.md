@@ -36,13 +36,13 @@ The two levels are collected in the table.
 | modulus–unit | $\tilde Q=\Rho\tilde U=(r\varkappa_{\mathrm{phs}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
 | word | $\tilde Q=r\varkappa_{\mathrm{phs}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
-The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of units (§*The Group of Units*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
+The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of invertibles (§*The Group of Invertibles*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
 
 The conventions and the symbols are those of *Algebra and Element Conventions*, *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the norm is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$.
 
 ## The Two Factors
 
-Let $\tilde Q$ be $\natural$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q$ is invertible (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*), and the two factors of the general decomposition are
+Let $\tilde Q$ be $\natural$-regular, $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q$ is invertible (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Invertibles*), and the two factors of the general decomposition are
 
 $$
 \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\qquad \tilde Q_0=\tilde Q_H^{-1}\tilde Q .
@@ -118,11 +118,11 @@ $$
 \boxed{\;\mathbb B^{\times}_{1}\cong SL_2(\mathbb C)\;}
 $$
 
-of complex dimension three and real dimension six (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Units*).
+of complex dimension three and real dimension six (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The $\natural$-regular case: The Group of Invertibles*).
 
 The group is not compact. It contains the Hermitian positive elements of norm one, and those are unbounded: the element $c\,e_t+i\sqrt{c^{2}-1}\,\vec e_x$ has norm one for every $c\ge1$. This is the sharpest difference from the quaternion case, where the norm-one set is the sphere $S^{3}$. The biquaternion unit factor has three compact directions and three non-compact ones, and the split into boost and rotor separates them.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb B^{\times}$, the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*. The group of units is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
+The phrase **unit factor** names the norm-one elements. It is not the **group of invertibles** $\mathbb B^{\times}$, the wider set of invertible elements; the word *unit* in the phrase means norm one and never invertibility, as in *Norm and Unitary Conventions*, §*The Unitary Convention*. The group of invertibles is $\mathbb B\setminus\mathcal N$, of real dimension eight, and the norm-one group is a hypersurface inside it.
 
 **The count.** A biquaternion carries eight real parameters. The modulus carries two, the scale and the phase. The unit factor is constrained by the single complex equation $\langle\tilde U\rangle_{\natural}=1$, so it retains six real degrees of freedom. Thus
 
@@ -237,9 +237,9 @@ Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $\varkappa_{\
 
 The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\varkappa_{\mathrm{phs}}$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
 
-## The Group of Units
+## The Group of Invertibles
 
-The group of units is the $\natural$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
+The group of invertibles is the $\natural$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
 
 $$
 \Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\Rho,\tilde U),
@@ -263,9 +263,9 @@ $$
 
 *Proof.* The compact part of the word is the phase times the rotor, and both are $*$-unitary, so their product is $*$-unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is $*$-unitary, then $\det V$ is a unit complex number; choose $\varkappa_{\mathrm{phs}}$ in the branch with ${\varkappa_{\mathrm{phs}}}^{2}=\det V$, and $K={\varkappa_{\mathrm{phs}}}^{-1}V$ is $*$-unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal.
 
-The group retracts onto $U(2)$ by shrinking the scale to one and pushing the boost to $e_t$ along the Hermitian positive elements of norm one. In particular $\mathbb B^{\times}$ is connected, and its fundamental group is that of $U(2)$, namely $\mathbb Z$, generated by the phase loop around the cone (*The Biquaternion Unit Group as a Topological Group*). The rotor contributes the simply connected factor $SU(2)=S^{3}$, so the fundamental group is carried by the phase alone.
+The group retracts onto $U(2)$ by shrinking the scale to one and pushing the boost to $e_t$ along the Hermitian positive elements of norm one. In particular $\mathbb B^{\times}$ is connected, and its fundamental group is that of $U(2)$, namely $\mathbb Z$, generated by the phase loop around the cone (*The Biquaternion Group of Invertibles as a Topological Group*). The rotor contributes the simply connected factor $SU(2)=S^{3}$, so the fundamental group is carried by the phase alone.
 
-The compact part has two circular directions, and they are not interchangeable. The central phase is central and acts on the whole algebra by multiplication; the circle inside the rotor is a one-parameter subgroup of $SU(2)$ and acts by conjugation, fixing the scalar line and acting on the vector part. The first carries the fundamental group of the group of units; the second lies in the simply connected sphere and contributes no loop. The extra compact direction is the centre of the algebra, not a factor of the sphere. This is the biquaternion counterpart of the absence of a second continuous factor in the quaternion case: there the sphere is simple modulo its centre, and the only factor beyond it is the scale line.
+The compact part has two circular directions, and they are not interchangeable. The central phase is central and acts on the whole algebra by multiplication; the circle inside the rotor is a one-parameter subgroup of $SU(2)$ and acts by conjugation, fixing the scalar line and acting on the vector part. The first carries the fundamental group of the group of invertibles; the second lies in the simply connected sphere and contributes no loop. The extra compact direction is the centre of the algebra, not a factor of the sphere. This is the biquaternion counterpart of the absence of a second continuous factor in the quaternion case: there the sphere is simple modulo its centre, and the only factor beyond it is the scale line.
 
 ## The Two Halves
 
@@ -400,7 +400,7 @@ $$
 \chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=r\varkappa_{\mathrm{phs}},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
 $$
 
-the last condition making the character single-valued on $\mathbb{C}^{\times}$. The irreducible smooth finite-dimensional modules of the group of units are
+the last condition making the character single-valued on $\mathbb{C}^{\times}$. The irreducible smooth finite-dimensional modules of the group of invertibles are
 
 $$
 (j,j')_{(a,b)}=V_j\boxtimes V_{j'}\otimes\chi_{a,b},
@@ -535,8 +535,8 @@ The polar decomposition of an $\natural$-regular biquaternion is the modulus–u
 | dimensions | $8=2+6=1+1+3+3$ |
 | two readings | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=\varkappa_{\mathrm{phs}}\tilde u_{\mathrm r}$ |
 | spinor module | $S\otimes\chi$ with $\chi(\Rho)=\Rho$; the irreducible modules $(j,j')_{(a,b)}$, $a-b\equiv2j+2j'\pmod2$ |
-| unit group | $SL_2(\mathbb C)\cong H^{3}\times S^{3}$ |
-| group of units | $\mathbb B^{\times}\cong GL_2(\mathbb C)$, maximal compact $U(2)$, fundamental group $\mathbb Z$ |
+| group of invertibles | $SL_2(\mathbb C)\cong H^{3}\times S^{3}$ |
+| group of invertibles | $\mathbb B^{\times}\cong GL_2(\mathbb C)$, maximal compact $U(2)$, fundamental group $\mathbb Z$ |
 | pairings | quaternion, Hamilton root, Cartan Hermitian; the first two partial, the last total |
 | closed forms | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*}+e_t)/\sqrt{2(1+s)}$, $\tilde u_{\mathrm r}=\bigl((2s+1)e_t-\tilde U\tilde U^{*}\bigr)\tilde U/\sqrt{2(1+s)}$ |
 

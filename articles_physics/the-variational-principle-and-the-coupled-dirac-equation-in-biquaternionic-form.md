@@ -222,7 +222,7 @@ with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary poin
 
 **The non-abelian action.** With a $\mathbb{B}$-valued connection the two kinetic terms no longer separate, because the connection does not commute with the field, and the reality argument has to be redone with the ordering explicit. Whether the resulting action is self-adjoint, and whether the Noether current is the covariant one, is the non-abelian article's subject and is not settled here.
 
-**The choice of frame units in the current.** §*The Current* states the residue: the algebra does not single out $\vec e_x$ and $\vec e_y$. Whether the choice is forced by the requirement that the pairing be of a definite value, or whether it is a genuine datum of the framework, is not settled. A computation that derives the units from an invariance of the pairing would close it.
+**The choice of frame units in the current.** §*The Current* states the residue: the algebra does not single out $\vec e_x$ and $\vec e_y$. Whether the choice is forced by the requirement that the pairing be of a definite value, or whether it is a genuine datum of the framework, is not settled. A computation that derives the invertibles from an invariance of the pairing would close it.
 
 **The loop phase and the flux quantum.** The two readings of a closed loop — the trace of a holonomy and the norm of a unit element — give different statements about enclosed flux, and they have not been brought together. This is a corpus-level tension and not a question this article can settle.
 

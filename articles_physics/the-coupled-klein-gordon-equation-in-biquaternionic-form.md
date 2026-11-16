@@ -45,7 +45,7 @@ $$
 =\sum_\mu e_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big),
 $$
 
-and the second equality is the reason nothing has to be chosen. The connection's coefficients $A_\mu$ are complex scalars — central — so they pass through the units, and the sum over the four slots of one element is the sum over four scalar operators. The covariant derivative is therefore an operator with central coefficients, and the algebra's non-commutativity never enters at this order.
+and the second equality is the reason nothing has to be chosen. The connection's coefficients $A_\mu$ are complex scalars — central — so they pass through the invertibles, and the sum over the four slots of one element is the sum over four scalar operators. The covariant derivative is therefore an operator with central coefficients, and the algebra's non-commutativity never enters at this order.
 
 **The conjugate.** The second-order operator uses the quaternion conjugate of the gradient, $(\tilde\nabla_\Phi)^{\natural}$, and the corresponding covariant operator is
 

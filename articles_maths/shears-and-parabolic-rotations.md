@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows *Dual-Numbers Algebra*, which fixed the ring $\mathbb{C}_{\mathrm{dln}} = \mathbb{C}_{\mathrm{dln},\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the group of units $(\mathbb{C}_{\mathrm{dln}})^\times$. The subject is the geometry of multiplication by a unit, treated, as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.
+This article develops the one-parameter group theory of the infinitesimal extension of the real line, that is, the group theory of the dual numbers. It follows *Dual-Numbers Algebra*, which fixed the ring $\mathbb{C}_{\mathrm{dln}} = \mathbb{C}_{\mathrm{dln},\mathbb{R}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$, the maximal ideal $\mathrm{M} = (\varepsilon)$ and the group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times$. The subject is the geometry of multiplication by an invertible element, treated, as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, as a one-parameter transformation group and as a Lie group, not as a motion in any physical sense.
 
 The three two-dimensional commutative unital real algebras give three kinds of rotation. For the complex numbers $\mathbb{C}$ the norm-one group is the circle $\mathrm{U}(1)$, compact, and its one-parameter group is the elliptic rotation. For the split complex numbers $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the norm-one group is the hyperbola and its identity component is the hyperbolic rotation group, with the rapidity as additive parameter. For the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the norm is degenerate and the norm-one group degenerates to a pair of parallel lines; its identity component is the **shear group**, a one-parameter group whose elements are unipotent linear maps of the dual plane. The purpose of this article is to describe that group, its generator, its Lie algebra, its action, and its relation to the elliptic and hyperbolic cases as the common degenerate limit.
 
@@ -15,15 +15,15 @@ $$
 
 the elementary shear matrix $\begin{pmatrix}1&0\\s&1\end{pmatrix}$. The family $\{S(s) : s \in \mathbb{R}\}$ is a one-parameter group, isomorphic to the additive group of the real line, whose infinitesimal generator is the nilpotent endomorphism $E$ of multiplication by $\varepsilon$, with $E^2 = 0$. Because the generator is nilpotent rather than semisimple, the exponential map is polynomial, the group is unipotent, and no orbit other than a fixed point is periodic. The parameter $s$ is the **parabolic angle**; it is additive, and its addition law is the parabolic case of the trichotomy of angle-addition laws.
 
-No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of units acting linearly on the algebra, exactly as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
+No physics is invoked anywhere. The word "rotation" is used throughout in the algebraic sense of a one-parameter subgroup of the group of invertibles acting linearly on the algebra, exactly as in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
 Notation: $Q = q + \varepsilon q'$ with $q, q' \in \mathbb{R}$; $\operatorname{Re} Q = q$, $\operatorname{Inf} Q = q'$; $\bar Q = q - \varepsilon q'$; $\langle Q\rangle_{*} = Q\bar Q = q^2$; $q^2 + q'^2$ the Euclidean form; $\mathrm{M} = \varepsilon\mathbb{R}$ the maximal ideal; $\pi(q + \varepsilon q') = q$ the augmentation.
 
-## The Group of Units
+## The Group of Invertibles
 
-### Units and the Maximal Ideal
+### Invertibles and the Maximal Ideal
 
-**Proposition.** The element $q + \varepsilon q' \in \mathbb{C}_{\mathrm{dln}}$ is a unit if and only if $q \neq 0$, and then
+**Proposition.** The element $q + \varepsilon q' \in \mathbb{C}_{\mathrm{dln}}$ is invertible if and only if $q \neq 0$, and then
 
 $$
 (q + \varepsilon q')^{-1} = \frac{1}{q} - \frac{1}{q^2}\,\varepsilon q'.
@@ -31,15 +31,15 @@ $$
 
 **Proof.** The product $(q_1+\varepsilon q'_1)(q_2+\varepsilon q'_2) = q_1q_2 + (q_1q'_2 + q'_1q_2)\varepsilon$ equals $1$ exactly when $q_1q_2 = 1$ and $q_1q'_2 + q'_1q_2 = 0$; the first equation is solvable in $\mathbb{R}$ exactly when $q_1 \neq 0$, and then $q_2 = q_1^{-1}$ and $q'_2 = -q_1^{-2}q'_1$.
 
-So the non-units are the elements of the maximal ideal $\mathrm{M}$, and $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$. The subgroup
+So the non-invertibles are the elements of the maximal ideal $\mathrm{M}$, and $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$. The subgroup
 
 $$
 1 + \mathrm{M} = \{1 + s\varepsilon : s \in \mathbb{R}\}
 $$
 
-consists of the units of real part one; it is the fibre of the augmentation over $1$ inside the unit group, and it will turn out to be exactly the shear group.
+consists of the invertibles of real part one; it is the fibre of the augmentation over $1$ inside the group of invertibles, and it will turn out to be exactly the shear group.
 
-### The Unit Group as a Direct Product
+### The Group of Invertibles as a Direct Product
 
 **Theorem.** Let $R$ be a commutative ring. The map
 
@@ -57,17 +57,17 @@ $$
 
 using $\varepsilon^2 = 0$.
 
-**Corollary.** For $R = \mathbb{R}$, the group of units is
+**Corollary.** For $R = \mathbb{R}$, the group of invertibles is
 
 $$
 \boxed{\; (\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R} \;},
 $$
 
-with the two factors the nonzero scalars and the shear group. The unit group is abelian, has exactly two connected components, distinguished by the sign of the real part, and each is contractible.
+with the two factors the nonzero scalars and the shear group. The group of invertibles is abelian, has exactly two connected components, distinguished by the sign of the real part, and each is contractible.
 
 **Proof.** The isomorphism is the theorem. The sign of the real part is a continuous homomorphism $(\mathbb{C}_{\mathrm{dln}})^\times \to \{\pm1\}$ and $\mathbb{R}^\times$ has two components, so the two groups have the same component count; the component of the identity is $\{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}$, which is contractible.
 
-The algebra article records that the unit group is an extension of $R^\times$ by the additive group $R$; for commutative $R$ the extension splits and, the group being abelian, the extension is in fact a direct product, which is the content of the theorem above.
+The algebra article records that the group of invertibles is an extension of $R^\times$ by the additive group $R$; for commutative $R$ the extension splits and, the group being abelian, the extension is in fact a direct product, which is the content of the theorem above.
 
 ### The Norm-One Group
 
@@ -83,11 +83,11 @@ $$
 
 The three norm-one sets of the three two-dimensional algebras are therefore a circle, a hyperbola and a pair of parallel lines. The degeneration is the visible form of $\varepsilon^2 = 0$: the quadratic form has lost its non-degenerate directions, and its level set is no longer a curve of curvature but a flat pair of lines.
 
-## Multiplication by a Unit as a Shear
+## Multiplication by an Invertible as a Shear
 
-### Multiplication by a Unit as a Linear Map
+### Multiplication by an Invertible as a Linear Map
 
-Multiplication by a unit $u \in \mathbb{C}_{\mathrm{dln}}$ is the $R$-linear map
+Multiplication by an invertible element $u \in \mathbb{C}_{\mathrm{dln}}$ is the $R$-linear map
 
 $$
 M_u : \mathbb{C}_{\mathrm{dln}} \to \mathbb{C}_{\mathrm{dln}}, \qquad M_u(Q) = uQ,
@@ -107,7 +107,7 @@ The matrix is a general element of the commutative subalgebra of $\mathbb{R}^{2\
 
 ### Shear Matrices
 
-Write a unit as $u = q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q'/q$. Then
+Write an invertible element as $u = q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q'/q$. Then
 
 $$
 [u] = q\Bigl(I + sE\Bigr), \qquad E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix},
@@ -123,7 +123,7 @@ $$
 
 It is an elementary shear matrix, or transvection: it fixes the line $\mathrm{M}$ pointwise, acts as the identity on the quotient $\mathbb{C}_{\mathrm{dln}}/\mathrm{M} \cong \mathbb{R}$, and displaces every point by a vector parallel to $\mathrm{M}$.
 
-Thus multiplication by the unit $u = q(1+s\varepsilon)$ is the composition of the scalar dilation $q$ with the shear $S(s)$: the group of units acts on the dual plane by dilations and shears, and the shear parameter is the coordinate of the quotient $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times$.
+Thus multiplication by the unit $u = q(1+s\varepsilon)$ is the composition of the scalar dilation $q$ with the shear $S(s)$: the group of invertibles acts on the dual plane by dilations and shears, and the shear parameter is the coordinate of the quotient $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times$.
 
 **Remark (the degenerate perpendicular).** In terms of the Euclidean inner product, the displacement produced by $S(s)$ is
 
@@ -131,7 +131,7 @@ $$
 S(s)(Q) - Q = s\,\langle Q, 1\rangle\,\varepsilon, \qquad Q = q + \varepsilon q',
 $$
 
-since $\langle Q, 1\rangle = q$. The displacement is proportional to the component of $Q$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by a unit as the map $Q \mapsto Q + s\,Q_\perp$, with $Q_\perp = \langle Q, 1\rangle\,\varepsilon = \operatorname{Re}(Q)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm registers none of this displacement. Its bilinear form is $B(Q_1, Q_2) = \operatorname{Re}(Q_1)\operatorname{Re}(Q_2)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.
+since $\langle Q, 1\rangle = q$. The displacement is proportional to the component of $Q$ along the real axis and points along the nilpotent axis, which is the Euclidean orthogonal complement of the real axis; so $S(s)$ is the elementary shear, or transvection, that displaces each point of the plane along the nilpotent direction by an amount proportional to its real part. In the notation of the other articles on the two-dimensional algebras this is the description of multiplication by an invertible element as the map $Q \mapsto Q + s\,Q_\perp$, with $Q_\perp = \langle Q, 1\rangle\,\varepsilon = \operatorname{Re}(Q)\,\varepsilon$: the "perpendicular" component is read off by the augmentation and displaced into the maximal ideal. The norm registers none of this displacement. Its bilinear form is $B(Q_1, Q_2) = \operatorname{Re}(Q_1)\operatorname{Re}(Q_2)$, for which the nilpotent axis is the radical, $B$-orthogonal to the whole plane; the shear leaves $N$ invariant for that reason, and not because the displacement is small.
 
 ### Orbits and the Fixed Fibre
 
@@ -156,7 +156,7 @@ $$
 
 **Proof.** $S(s) = I + sE$ and $E^2 = 0$, so $(I+sE)(I+tE) = I + (s+t)E + stE^2 = I + (s+t)E$.
 
-The subgroup $G$ is exactly the image of $1 + \mathrm{M}$ under multiplication by units, and it is a subgroup of the group of linear automorphisms of the plane $\mathbb{C}_{\mathrm{dln}}$. It is **not** a subgroup of the algebra automorphism group: left multiplication by a unit is an algebra homomorphism only when the unit is the identity, since $(uQ_1)(uQ_2) = u^2 Q_1Q_2$ equals $u(Q_1Q_2)$ only when $u^2 = u$, which for a unit forces $u = 1$. The shears are symmetries of the plane that commute with multiplication, not algebra automorphisms.
+The subgroup $G$ is exactly the image of $1 + \mathrm{M}$ under multiplication by invertibles, and it is a subgroup of the group of linear automorphisms of the plane $\mathbb{C}_{\mathrm{dln}}$. It is **not** a subgroup of the algebra automorphism group: left multiplication by an invertible element is an algebra homomorphism only when the unit is the identity, since $(uQ_1)(uQ_2) = u^2 Q_1Q_2$ equals $u(Q_1Q_2)$ only when $u^2 = u$, which for an invertible element forces $u = 1$. The shears are symmetries of the plane that commute with multiplication, not algebra automorphisms.
 
 ### The Exponential Map
 
@@ -206,9 +206,9 @@ $$
 
 Two facts about the parabolic angle distinguish it from the elliptic angle, and both are shared with the hyperbolic rapidity. First, it is defined on the whole line and is unbounded, with no period: the shear group is isomorphic to $\mathbb{R}$. Second, the dual logarithm is a homeomorphism onto the whole shear group, because the exponential is injective; the angle is a globally defined coordinate, not a coordinate modulo a period and not restricted to a branch. What separates the parabolic case from the hyperbolic one is therefore not the angle but the group: the generator of the shears is nilpotent and the shear group is unipotent, whereas the generator $j$ of the hyperbolic rotations is semisimple, $j^2 = +1$, and the group of hyperbolic rotations has two components.
 
-### The Group of Units Modulo Scaling
+### The Group of Invertibles Modulo Scaling
 
-**Theorem.** The quotient of the unit group by the subgroup of nonzero scalars is the shear group, and it is identified with the additive line by the logarithm:
+**Theorem.** The quotient of the group of invertibles by the subgroup of nonzero scalars is the shear group, and it is identified with the additive line by the logarithm:
 
 $$
 (\mathbb{C}_{\mathrm{dln}})^\times / \mathbb{R}^\times \cong 1 + \mathrm{M} \cong (\mathbb{R}, +), \qquad u = q(1+s\varepsilon) \longmapsto 1 + s\varepsilon \longmapsto s.
@@ -216,11 +216,11 @@ $$
 
 **Proof.** The subgroup of scalars is $\mathbb{R}^\times = \{q + 0\varepsilon : q \neq 0\}$, and $q(1+s\varepsilon) \equiv 1 + s\varepsilon \pmod{\mathbb{R}^\times}$. The map $u \mapsto q^{-1}u$ is a homomorphism onto $1+\mathrm{M}$ with kernel $\mathbb{R}^\times$, and $1+\mathrm{M} \cong (\mathbb{R},+)$ by the group law of the shear group.
 
-So every unit is a scalar multiple of a unique shear, and the two factors of the direct product $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ are the scaling part and the parabolic angle. The quotient by scaling is the additive line of angles.
+So every invertible element is a scalar multiple of a unique shear, and the two factors of the direct product $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ are the scaling part and the parabolic angle. The quotient by scaling is the additive line of angles.
 
 ### The Three Angles
 
-The three two-dimensional algebras have three angle parameters; in each case the angle is the coordinate on the connected component of the unit group modulo scaling, and in each case the composition is addition of the coordinate.
+The three two-dimensional algebras have three angle parameters; in each case the angle is the coordinate on the connected component of the group of invertibles modulo scaling, and in each case the composition is addition of the coordinate.
 
 | Algebra | Norm-one group | Angle | Addition law | Group topology |
 |---|---|---|---|---|
@@ -276,9 +276,9 @@ so $\operatorname{Der}(\mathbb{C}_{\mathrm{dln}})$ is one-dimensional over $\mat
 
 The sharp contrast is now visible. The derivations fix the real axis pointwise and scale the maximal ideal by $\varepsilon \mapsto \exp(t)\varepsilon$, generating the automorphism group $\mathbb{R}^\times$; the shears act on $\mathrm{M}$ by the identity, fix it pointwise, and commute with multiplication without being algebra automorphisms. Their generators are the idempotent $\partial_{\mathrm{nil}}$ and the nilpotent $E$ respectively. The shear group is therefore **not** the exponential of the derivation algebra; it is the exponential of the square-zero direction of the algebra itself.
 
-### The Lie Algebra of the Unit Group
+### The Lie Algebra of the Group of Invertibles
 
-The unit group $(\mathbb{C}_{\mathrm{dln}})^\times$ is a two-dimensional abelian Lie group, and its Lie algebra at the identity is $\mathbb{C}_{\mathrm{dln}}$ itself, with the zero bracket, by *Dual-Numbers Algebra*: the commutator on $\mathbb{C}_{\mathrm{dln}}$ vanishes identically. In the direct-product decomposition $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ the Lie algebra decomposes as $\mathbb{R} \oplus \mathbb{R}$, with the first factor the infinitesimal dilations and the second factor the infinitesimal shears. The shear group is the one-parameter subgroup generated by the element $\varepsilon \in \mathrm{M}$, and its Lie algebra is the line $\mathrm{G} = \mathbb{R}\varepsilon \subset \mathbb{C}_{\mathrm{dln}}$.
+The group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times$ is a two-dimensional abelian Lie group, and its Lie algebra at the identity is $\mathbb{C}_{\mathrm{dln}}$ itself, with the zero bracket, by *Dual-Numbers Algebra*: the commutator on $\mathbb{C}_{\mathrm{dln}}$ vanishes identically. In the direct-product decomposition $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ the Lie algebra decomposes as $\mathbb{R} \oplus \mathbb{R}$, with the first factor the infinitesimal dilations and the second factor the infinitesimal shears. The shear group is the one-parameter subgroup generated by the element $\varepsilon \in \mathrm{M}$, and its Lie algebra is the line $\mathrm{G} = \mathbb{R}\varepsilon \subset \mathbb{C}_{\mathrm{dln}}$.
 
 ## The Degeneration at $\varepsilon^2 = 0$
 
@@ -296,7 +296,7 @@ So the stabiliser of the form is larger than in the non-degenerate cases, becaus
 
 ### The Norm-One Set
 
-The norm-one set $\langle Q\rangle_{*} = 1$ is the pair of parallel lines $q = \pm1$. The identity component of the group of units, $\{q > 0\}$, meets this set in the single line $q = 1$, which is the shear group $1 + \mathrm{M}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $\mathrm{U}(1)$ to $SO(1,1)_0$ to $G$.
+The norm-one set $\langle Q\rangle_{*} = 1$ is the pair of parallel lines $q = \pm1$. The identity component of the group of invertibles, $\{q > 0\}$, meets this set in the single line $q = 1$, which is the shear group $1 + \mathrm{M}$. So the shear group is exactly the connected "rotation group" of the degenerate form, and the passage from the circle to the hyperbola to the pair of parallel lines is the passage from $\mathrm{U}(1)$ to $SO(1,1)_0$ to $G$.
 
 ### The Contraction from the Elliptic and Hyperbolic Cases
 
@@ -324,14 +324,14 @@ So the shear group is the common contraction of the elliptic and hyperbolic rota
 
 Two consequences make the parabolic case the degenerate end of the trichotomy.
 
-- **No compact rotation group.** The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full unit group $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $\mathrm{U}(1)$.
+- **No compact rotation group.** The shear group $G \cong \mathbb{R}$ is non-compact and has no nontrivial compact subgroup; the only compact subgroup of the full group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$ is the central $\{\pm 1\}$. There is no analogue of the circle group $\mathrm{U}(1)$.
 - **No periodic orbits.** The orbit of a point in a fibre $\pi^{-1}(q)$ with $q \neq 0$ is the whole fibre, a non-compact line on which the shear acts by translation, so no orbit other than a fixed point is periodic; in the elliptic case every orbit is a circle and the action is periodic. The shear also does not preserve the Euclidean metric: writing $Q = q + \varepsilon q'$ one has $S(s)Q = q + (q'+s q)\varepsilon$, and $q^2+q'^2$ is preserved for every $Q$ only when $s = 0$. So $S(s)$ is an isometry of the degenerate form $N$ but not of the Euclidean metric of the plane. A compact subgroup of $GL_2(\mathbb{R})$ preserves some positive-definite form, obtained by averaging any form over the group; $G$ is non-compact, so it preserves none, and the computation above is the instance of that failure for the Euclidean form itself.
 
 ## Summary
 
-The **group of units** of $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{C}_{\mathrm{dln},R})^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $\langle Q\rangle_{*} = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.
+The **group of invertibles** of $\mathbb{C}_{\mathrm{dln}} = \mathbb{R}[\varepsilon]/(\varepsilon^2)$ is $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, with $(q + \varepsilon q')^{-1} = q^{-1} - q^{-2}\varepsilon q'$. For commutative $R$ it is the direct product $(\mathbb{C}_{\mathrm{dln},R})^\times \cong R^\times \times (R,+)$ via $q + qs\varepsilon \leftrightarrow (q,s)$; over $\mathbb{R}$ this is $\mathbb{R}^\times \times \mathbb{R}$, abelian with two contractible components. The norm $\langle Q\rangle_{*} = q^2$ is degenerate with radical $\mathrm{M}$, and its norm-one set is the pair of parallel lines $q = \pm1$, whose identity component is the shear group $1 + \mathrm{M}$.
 
-Multiplication by a unit is a **dilation composed with a shear**: in the basis $(1, \varepsilon)$ the matrix of multiplication by $q + \varepsilon q'$ is $[q + \varepsilon q'] = q(I + (q'/q)E)$ with $E = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ the matrix of multiplication by $\varepsilon$, $E^2 = 0$. The **shear** $S(s) = I + sE$ acts by $q + \varepsilon q' \mapsto q + (q'+s q)\varepsilon$; it fixes $\mathrm{M}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.
+Multiplication by an invertible element is a **dilation composed with a shear**: in the basis $(1, \varepsilon)$ the matrix of multiplication by $q + \varepsilon q'$ is $[q + \varepsilon q'] = q(I + (q'/q)E)$ with $E = \begin{pmatrix}0&0\\1&0\end{pmatrix}$ the matrix of multiplication by $\varepsilon$, $E^2 = 0$. The **shear** $S(s) = I + sE$ acts by $q + \varepsilon q' \mapsto q + (q'+s q)\varepsilon$; it fixes $\mathrm{M}$ pointwise, acts as the identity on the quotient, and its orbits are the fibres of the augmentation, with the fibre over the origin fixed.
 
 The shears form a **one-parameter group** $G = \{S(s)\} \cong (\mathbb{R},+)$ with $S(s)S(t) = S(s+t)$ and generator $E$. The **exponential** is the polynomial map $\exp(s\varepsilon) = 1 + s\varepsilon$, a group isomorphism and homeomorphism onto $G$, inverse to the dual logarithm; on the projective chart $\{q \neq 0\}$ with coordinate $t = q'/q$ the shear is the translation $t \mapsto t+s$, so $G$ is the unipotent one-parameter subgroup of the parabolic subgroup of $PGL_2(\mathbb{R})$ that fixes the class of $\varepsilon$, a transformation with a double fixed point. The parameter is the **parabolic angle**; it is additive, globally defined and without period, and $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times \cong 1+\mathrm{M} \cong (\mathbb{R},+)$.
 
@@ -348,7 +348,7 @@ The **Lie algebra** of the shear group is the line $\mathrm{G} = \mathbb{R}E = \
 | $H = \{Q : \langle Q\rangle_{*} = 1\}$ | Norm-one group, lines $q = \pm1$; $H_0 = 1+\mathrm{M}$ |
 | $\mathrm{M} = \varepsilon\mathbb{R}$ | Maximal ideal, $\mathrm{M}^2 = 0$ |
 | $\pi(q + \varepsilon q') = q$ | Augmentation, kernel $\mathrm{M}$ |
-| $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$ | Group of units |
+| $(\mathbb{C}_{\mathrm{dln}})^\times = \mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$ | Group of invertibles |
 | $1 + \mathrm{M}$ | Shear group, units of real part $1$ |
 | $[u] = \begin{pmatrix} q & 0 \\ q' & q \end{pmatrix}$ | Matrix of multiplication by $u = q + \varepsilon q'$ |
 | $E = \begin{pmatrix} 0 & 0 \\ 1 & 0 \end{pmatrix}$ | Nilpotent generator, matrix of multiplication by $\varepsilon$, $E^2 = 0$ |

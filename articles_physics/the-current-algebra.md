@@ -14,7 +14,7 @@
 
 **The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ real, the phase central, the boost Hermitian positive of unit natural norm and the rotor real unitary.** [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) states the word and its eight parameters; this article takes it and asks what a quadratic product of the field can see.
 
-**A bilinear is a product of the element with a conjugate of itself.** There are two conjugations in use. The natural conjugation $\natural$ inverts a unit and leaves the central $i$ alone. The star conjugation $*$ is $\natural$ composed with coefficient conjugation, so it fixes a Hermitian factor, conjugates the central $i$ and inverts a real rotor. The two are the corpus's pair, and their difference is what makes two bilinears out of one product.
+**A bilinear is a product of the element with a conjugate of itself.** There are two conjugations in use. The natural conjugation $\natural$ inverts an invertible element and leaves the central $i$ alone. The star conjugation $*$ is $\natural$ composed with coefficient conjugation, so it fixes a Hermitian factor, conjugates the central $i$ and inverts a real rotor. The two are the corpus's pair, and their difference is what makes two bilinears out of one product.
 
 *Proposition.* With the word as above, and with $\rho=r^{2}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$,
 
@@ -30,7 +30,7 @@ $$
 \langle\tilde\Xi\rangle_{\natural}=\rho\,e^{2i\theta_{\mathrm{pha}}}.
 $$
 
-*Proof.* The rotor and the boost are units, so each cancels against its own inverse in the natural product, and the central part squares: $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$. The current is the density times the boost's inverse square by the polar article's proposition, and the spin is the density times the rotor's image of the declared axis, likewise. Both are quoted there and neither is re-derived here.
+*Proof.* The rotor and the boost are invertible, so each cancels against its own inverse in the natural product, and the central part squares: $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$. The current is the density times the boost's inverse square by the polar article's proposition, and the spin is the density times the rotor's image of the declared axis, likewise. Both are quoted there and neither is re-derived here.
 
 **The three displays are three different extractions of one product, and the difference is which factor survives.** In the norm the two frames cancel and the centre survives. In the current the rotor and the phase cancel and the boost survives. In the spin the boost and the phase cancel and the rotor survives. Each extraction kills exactly the two factors it does not read, and the killing is by a conjugation that inverts them.
 
@@ -58,7 +58,7 @@ so the current is a timelike element of fixed square and the density is its modu
 
 ### The Norm Reads the Scale and the Phase
 
-**The norm is invariant under both frames and it is the only bilinear that sees the phase.** The boost and the rotor are units of natural norm one, so they cancel; what remains is $r^{2}e^{2i\theta_{\mathrm{pha}}}$.
+**The norm is invariant under both frames and it is the only bilinear that sees the phase.** The boost and the rotor are invertible in natural norm one, so they cancel; what remains is $r^{2}e^{2i\theta_{\mathrm{pha}}}$.
 
 **The phase enters doubled, and the range of the phase is a consequence.** The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$. Two consequences follow and both are used below: the modulus $\rho$ is unchanged by a shift of the phase through a half turn, and the norm's argument traverses a full turn while the phase traverses a half turn. The range $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ that the polar articles use is not a convention chosen for convenience: it is the range that makes the map from the phase to the norm's argument a bijection.
 

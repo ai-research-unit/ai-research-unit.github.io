@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article lists the commutative rings that the corpus meets, with the dimension, the units and the zero divisors of each. Every entry points to the article that introduces the object.
+This article lists the commutative rings that the corpus meets, with the dimension, the invertibles and the zero divisors of each. Every entry points to the article that introduces the object.
 
 The list gathers the number systems and their quotients, the quadratic and cyclotomic integer rings, the polynomial, power series and localisation rings, the two-dimensional real algebras of the split-complex and dual numbers, and the product rings. The non-commutative rings are the subject of *List of Non-Commutative Rings*; a ring that a reader may expect in a list of commutative rings and that is not commutative is named in the warnings.
 
@@ -41,14 +41,14 @@ The non-example that fixes this section is $\mathbb{Z}/6\mathbb{Z}$, a commutati
 | $\mathcal{O}_K$ | $1$ | finite rank, by Dirichlet's unit theorem | none | *Algebraic Number Theory* |
 | $\overline{\mathbb{Z}}$ | $1$ | the roots of unity it contains | none | *Bézout Domains* |
 
-These rings are all integral domains, so none has a zero divisor; they separate on the units. The Z-rank of the unit group of $\mathcal{O}_K$ is finite by Dirichlet's unit theorem, recorded in *Algebraic Number Theory*; for $\mathbb{Z}[\sqrt{-5}]$ and $\mathbb{Z}[\sqrt{-2}]$ the only units are $\pm 1$, while $\mathbb{Z}[i]$ has four and $\mathbb{Z}[\sqrt{2}]$ has infinitely many. The failure of unique factorisation in $\mathbb{Z}[\sqrt{-5}]$ is not visible in the units or the zero divisors; it is recorded in *Unique Factorisation Domains*.
+These rings are all integral domains, so none has a zero divisor; they separate on the invertibles. The Z-rank of the group of invertibles of $\mathcal{O}_K$ is finite by Dirichlet's unit theorem, recorded in *Algebraic Number Theory*; for $\mathbb{Z}[\sqrt{-5}]$ and $\mathbb{Z}[\sqrt{-2}]$ the only units are $\pm 1$, while $\mathbb{Z}[i]$ has four and $\mathbb{Z}[\sqrt{2}]$ has infinitely many. The failure of unique factorisation in $\mathbb{Z}[\sqrt{-5}]$ is not visible in the units or the zero divisors; it is recorded in *Unique Factorisation Domains*.
 
 ## Polynomial, Power Series and Localisation Rings
 
 | Ring | Dimension | Units | Zero divisors | Introduced in |
 |---|---|---|---|---|
-| $R[x]$ | $\dim R + 1$ | the units of $R$ | none when $R$ is a domain | *Polynomial Rings and Rational Functions* |
-| $R[x_1, \dots, x_n]$ | $\dim R + n$ | the units of $R$ | none when $R$ is a domain | *Polynomial Rings and Rational Functions* |
+| $R[x]$ | $\dim R + 1$ | the invertibles of $R$ | none when $R$ is a domain | *Polynomial Rings and Rational Functions* |
+| $R[x_1, \dots, x_n]$ | $\dim R + n$ | the invertibles of $R$ | none when $R$ is a domain | *Polynomial Rings and Rational Functions* |
 | $k[x]$ | $1$ | $k^{\times}$ | none | *Polynomial Rings and Rational Functions* |
 | $k[x_1, \dots, x_n]$ | $n$ | $k^{\times}$ | none | *Polynomial Rings and Rational Functions* |
 | $R[[x]]$ | $1$ when $R$ is a field | the series with unit constant term | none when $R$ is a domain | *Formal Power Series and Completion* |
@@ -96,7 +96,7 @@ A product of two nonzero rings is never an integral domain, never local and neve
 
 ## Summary
 
-This article has listed the commutative rings of the corpus with their dimension, their units and their zero divisors. The number systems and the residue rings begin the list; the quadratic and cyclotomic integer rings follow, all of them domains and distinguished by their units; the polynomial, power series and localisation rings carry the dimension $\dim R + n$ and the units of the base; the split-complex and dual numbers are the two two-dimensional real algebras, reduced and non-reduced respectively; and the product rings close it with their idempotent zero divisors. Beside the examples stand the non-examples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebra $\mathbb{C}_{\mathrm{dln}}$.
+This article has listed the commutative rings of the corpus with their dimension, their units and their zero divisors. The number systems and the residue rings begin the list; the quadratic and cyclotomic integer rings follow, all of them domains and distinguished by their units; the polynomial, power series and localisation rings carry the dimension $\dim R + n$ and the invertibles of the base; the split-complex and dual numbers are the two two-dimensional real algebras, reduced and non-reduced respectively; and the product rings close it with their idempotent zero divisors. Beside the examples stand the non-examples $\mathbb{Z}/6\mathbb{Z}$, $\mathbb{Z}/4\mathbb{Z}$ and the two-dimensional algebra $\mathbb{C}_{\mathrm{dln}}$.
 
 ## Summary of Notation
 

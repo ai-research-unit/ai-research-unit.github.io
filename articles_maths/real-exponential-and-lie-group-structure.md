@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its unit group, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(q) = e^q$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of units.
+The real algebra $\mathbb{R}$ is a one-dimensional real vector space with a commutative multiplication, and it is simultaneously a Lie algebra and, through its group of invertibles, a Lie group. This article develops the two structures and the exponential map that joins them. The exponential $\exp(q) = e^q$ is the base case of the exponential of the family: it is an isomorphism of the additive group onto the positive reals, its kernel is trivial, and its image is exactly the identity component of the group of invertibles.
 
-The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathfrak{gl}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of units is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the unit group.
+The real case is the degenerate abelian base. The bracket vanishes identically, so $\mathbb{R}$ is the abelian Lie algebra $\mathfrak{gl}_1(\mathbb{R})$ of dimension one, and the Baker–Campbell–Hausdorff series terminates at its leading term, making the exponential an exact group homomorphism. The group of invertibles is disconnected, and the exponential covers only its identity component; the sign group is left over as the torsion of the group of invertibles.
 
 The conventions are those of *Real Algebra*: basis $e_t = 1$, a general element $q = q e_t$, the sole involution the identity, norm $\langle q\rangle = q\,q = q^2$. The comparison throughout is with the complex algebra $\mathbb{C}$, for which $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a surjective homomorphism with kernel $2\pi i\,\mathbb{Z}$. Every numerical value displayed below is exact.
 
@@ -31,9 +31,9 @@ the Lie algebra of $1\times1$ real matrices with the commutator bracket, which i
 
 The universal enveloping algebra of this abelian Lie algebra is the polynomial algebra $\mathbb{R}[X]$ on one generator, the base case of the Poincaré–Birkhoff–Witt theorem. The centre of the Lie algebra is the whole algebra, and every subspace is an abelian ideal; the algebra is the simplest possible Lie algebra, and every bracket identity of the family reduces to $0 = 0$ here.
 
-## The Group of Units
+## The Group of Invertibles
 
-The **group of units** is
+The **group of invertibles** is
 
 $$
 \mathbb{R}^\times = \{q : \langle q\rangle \neq 0\} = \mathbb{R} \setminus \{0\},
@@ -45,13 +45,13 @@ $$
 \mathbb{R}^\times = \mathbb{R}_{>0} \sqcup \mathbb{R}_{<0}, \qquad \pi_0(\mathbb{R}^\times) \cong \{\pm1\}.
 $$
 
-The identity component is the positive ray $\mathbb{R}_{>0}$, a connected, contractible, non-compact group; the other component is the negative ray $-\mathbb{R}_{>0}$. The group is abelian, so its Lie algebra is $\mathbb{R}$ itself with the zero bracket, and the group of units splits as
+The identity component is the positive ray $\mathbb{R}_{>0}$, a connected, contractible, non-compact group; the other component is the negative ray $-\mathbb{R}_{>0}$. The group is abelian, so its Lie algebra is $\mathbb{R}$ itself with the zero bracket, and the group of invertibles splits as
 
 $$
 \mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\},
 $$
 
-the product of the identity component and the component group. In the complex case the unit group has one component, the second factor being the connected circle $\mathrm{U}(1)$; here the second factor is the discrete sign group, and the disconnectedness is the distinctive feature of the real base.
+the product of the identity component and the component group. In the complex case the group of invertibles has one component, the second factor being the connected circle $\mathrm{U}(1)$; here the second factor is the discrete sign group, and the disconnectedness is the distinctive feature of the real base.
 
 ## The Exponential: Series and Closed Form
 
@@ -83,7 +83,7 @@ the square of the exponential itself. The differential at the origin is the iden
 
 ## The Group Law
 
-The exponential is a **homomorphism** from the additive group of the Lie algebra to the multiplicative group of the units:
+The exponential is a **homomorphism** from the additive group of the Lie algebra to the multiplicative group of the invertibles:
 
 **Theorem.** For all $q_1, q_2 \in \mathbb{R}$,
 
@@ -109,7 +109,7 @@ $$
 \ln : \mathbb{R}_{>0} \longrightarrow \mathbb{R}, \qquad \exp(\ln r) = r, \qquad \ln(\exp q) = q,
 $$
 
-which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $\exp(q) > 0$ always, so the image is exactly the identity component of the unit group. This is the base case of the restriction of the image to the identity component; the complex exponential reaches its whole unit group, so a two-component unit group with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
+which exists because the exponential is a bijection; the reconstruction $\exp(\ln r) = r$ is exact for every $r > 0$, and the analytic development of the logarithm belongs to *Real Special Functions* and *Real Analysis*. The exponential is therefore **not surjective onto $\mathbb{R}^\times$**: the negative reals are not in its image, because $\exp(q) > 0$ always, so the image is exactly the identity component of the group of invertibles. This is the base case of the restriction of the image to the identity component; the complex exponential reaches its whole group of invertibles, so a two-component group of invertibles with a one-component exponential image is the distinctive feature of the real base, and its obstruction is exactly the sign.
 
 **Theorem (the kernel).** For $q \in \mathbb{R}$ one has $\exp(q) = 1$ if and only if $q = 0$; hence
 
@@ -163,12 +163,12 @@ the elements of finite order. The sign group is thus the group of components $\p
 
 **Proof.** The decomposition $\mathbb{R}^\times = \mathbb{R}_{>0} \sqcup \mathbb{R}_{<0}$ is a separation into two non-empty open sets, so $\mathbb{R}^\times$ is disconnected; each piece is an open interval, hence connected, so there are exactly two components and the identity component is $\mathbb{R}_{>0}$. A compact connected subgroup of positive dimension would contain a one-parameter subgroup with nontrivial compact image, but every one-parameter subgroup of $\mathbb{R}^\times$ is the non-compact positive ray or all of the line, so none is compact. The maximal compact subgroup is therefore the finite group $\{\pm1\}$.
 
-The fundamental group of the unit group is the fundamental group of its components, each a contractible line:
+The fundamental group of the group of invertibles is the fundamental group of its components, each a contractible line:
 
 $$ \boxed{\;\pi_1(\mathbb{R}^\times) = 0, \qquad \pi_n(\mathbb{R}^\times) = 0 \ \ (n \geq 1)\;}.
 $$
 
-The complex unit group has $\pi_1 \cong \mathbb{Z}$ generated by the loop around the origin; the real unit group is the case in which every homotopy group vanishes, because there is no compact connected factor to wind around.
+The complex group of invertibles has $\pi_1 \cong \mathbb{Z}$ generated by the loop around the origin; the real group of invertibles is the case in which every homotopy group vanishes, because there is no compact connected factor to wind around.
 
 ## Comparison with the Complex Lie Theory
 
@@ -177,16 +177,16 @@ The cases are tabulated; the field is named in the entries that depend on it.
 | Structure | $\mathbb{R}$ | $\mathbb{C}$ |
 |---|---|---|
 | Algebra as Lie algebra | abelian, real dimension $1$; bracket $0$ | abelian, real dimension $2$; bracket $0$ |
-| Group of units | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, two components, abelian | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, connected, abelian |
+| Group of invertibles | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, two components, abelian | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, connected, abelian |
 | Exponential | entire, homomorphism, injective | entire, homomorphism, not injective |
 | Image of $\exp$ | $\mathbb{R}_{>0}$, the identity component | $\mathbb{C}^\times$, the whole group |
 | Kernel of $\exp$ | $\{0\}$ | $2\pi i\,\mathbb{Z} \cong \mathbb{Z}$ |
-| Torsion of the unit group | $\{\pm1\}$, the sign group | the roots of unity $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$ |
+| Torsion of the group of invertibles | $\{\pm1\}$, the sign group | the roots of unity $\mu_\infty \cong \mathbb{Q}/\mathbb{Z}$ |
 | Norm-one group | $\{\pm1\} = O(1)$, finite | $\mathrm{U}(1) \cong SO(2)$, compact, dimension $1$ |
 | Maximal compact subgroup | $\{\pm 1\}$, dimension $0$ | $\mathrm{U}(1) \cong S^1$ |
 | Homotopy | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$, $\pi_n = 0$ ($n \ge 2$) |
 
-Every exponential is entire and satisfies a group law; the differences are that the real exponential is injective with trivial kernel, that its image is only the identity component of the unit group rather than the whole group, and that its maximal compact subgroup is finite rather than a positive-dimensional torus. The real case is the completely reducible abelian base of the family, and its exponential is the base case of the isomorphism between an additive Lie algebra and a multiplicative Lie group.
+Every exponential is entire and satisfies a group law; the differences are that the real exponential is injective with trivial kernel, that its image is only the identity component of the group of invertibles rather than the whole group, and that its maximal compact subgroup is finite rather than a positive-dimensional torus. The real case is the completely reducible abelian base of the family, and its exponential is the base case of the isomorphism between an additive Lie algebra and a multiplicative Lie group.
 
 ## Summary
 
@@ -194,7 +194,7 @@ The commutator bracket of $\mathbb{R}$ vanishes identically, so $\mathbb{R} \con
 
 The exponential $\exp(q) = \sum q^n/n!$ is entire, never zero, and a group homomorphism, $\exp(q_1+q_2) = \exp q_1 \exp q_2$ exactly, because the Baker–Campbell–Hausdorff series terminates at the leading term. Its closed form is $e^q$, its norm is $\langle\exp q\rangle = \exp(2q)$, it is injective with kernel $\{0\}$, and it maps $(\mathbb{R},+)$ isomorphically onto $(\mathbb{R}_{>0},\cdot)$ with inverse the natural logarithm. It is not surjective onto $\mathbb{R}^\times$, its image being exactly the identity component.
 
-The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.
+The group of invertibles is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$, with two components and the splitting $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$. Every one-parameter subgroup is $t \mapsto \exp(tX)$ and takes values in $\mathbb{R}_{>0}$, so it never reaches the sign group; the sign group is the torsion subgroup of $\mathbb{R}^\times$, its group of components, and its maximal compact subgroup, and it is the compact factor $O(1)$ of the family. The real case is the abelian base of the family: the whole structure is a line, its exponential, and a two-element sign.
 
 ## Summary of Notation
 
@@ -203,14 +203,14 @@ The group of units is $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$
 | $\mathbb{R}$ | the real algebra, basis $e_t = 1$ |
 | $[q_1,q_2] = q_1 q_2 - q_2 q_1 = 0$ | the commutator bracket, identically zero |
 | $\mathfrak{gl}_1(\mathbb{R}) \cong \mathbb{R}$ | the abelian Lie algebra of the $1\times1$ matrices |
-| $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of units, two components |
+| $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ | the group of invertibles, two components |
 | $\exp(q) = \sum_n q^n/n! = e^q$ | the exponential, entire and a homomorphism |
 | $\langle\exp q\rangle = \exp(2q)$ | the norm of an exponential |
 | $\exp : (\mathbb{R},+)\to(\mathbb{R}_{>0},\cdot)$ | the isomorphism onto the positive reals |
 | $\ln = \exp^{-1}$ | the natural logarithm |
 | $\ker\exp = \{0\}$ | the kernel, trivial |
 | $\{\pm1\} = O(1)$ | the sign group, the torsion subgroup of $\mathbb{R}^\times$ |
-| $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$ | the splitting of the unit group |
+| $\mathbb{R}^\times \cong \mathbb{R}_{>0}\times\{\pm1\}$ | the splitting of the group of invertibles |
 | $\gamma_X(t) = \exp(tX)$ | a one-parameter subgroup, $X$ in the Lie algebra |
 
 ## Further Reading

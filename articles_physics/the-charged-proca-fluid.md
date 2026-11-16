@@ -107,7 +107,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 **The check that the identification must fail.** On the free word the charge current vanishes identically, because the field is real and its conjugate is itself; on the coupled word it does not. **A quantity that is zero on the free slice cannot become the density under a coupling that does not change the word's meaning**, and the free article's "the field is the current" is therefore not a statement that survives as an approximation — it is a statement about the real slice.
 
-**What survives.** The velocity's normalisation survives in a modified form: the free article's $u_\mu u^\mu=-1$ becomes the statement that $\tilde A/r$ is a unit *element* of the algebra, and its four-vector reading is the boost's. **The free velocity's unit character is the boost's and not the field's**, which the coupled word makes visible because the boost is a separate factor.
+**What survives.** The velocity's normalisation survives in a modified form: the free article's $u_\mu u^\mu=-1$ becomes the statement that $\tilde A/r$ is invertible *element* of the algebra, and its four-vector reading is the boost's. **The free velocity's unit character is the boost's and not the field's**, which the coupled word makes visible because the boost is a separate factor.
 
 ## Three Currents
 
@@ -233,7 +233,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
 | the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
 | the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/r$ |
-| is it a unit? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
+| is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
 | the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |

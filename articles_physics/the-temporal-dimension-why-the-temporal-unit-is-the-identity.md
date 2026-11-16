@@ -76,7 +76,7 @@ $$
 
 so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
 
-**4. The signature is carried by the coefficients and not by the units.** The biquaternion norm is
+**4. The signature is carried by the coefficients and not by the invertibles.** The biquaternion norm is
 
 $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,

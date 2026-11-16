@@ -28,7 +28,7 @@ The article proves the dimension and the smoothness, exhibits the ruling and the
 $$
 \tilde q=\lambda\bigl(e_t+\vec n\bigr),\qquad \lambda=q_t\in\mathbb{R}^{\times},\quad \vec n=\frac{\vec q}{q_t}\in S^2 .
 $$
-Equivalently, with the two signs, $\tilde q=\lambda(e_t\pm\vec n)$ for $\lambda>0$ and a unit $\vec n$, and then the sign records the sign of the scalar part.
+Equivalently, with the two signs, $\tilde q=\lambda(e_t\pm\vec n)$ for $\lambda>0$ and an invertible element $\vec n$, and then the sign records the sign of the scalar part.
 
 *Proof.* On the cone with $q_t\neq0$, put $\vec n=\vec q/q_t$; then $\lvert\vec n\rvert^2=\lvert\vec q\rvert^2/q_t^2=1$, and $\tilde q=q_t(e_t+\vec n)$. The writing is unique because $q_t$ is the scalar part and $\vec n$ is determined by $\vec q$ and $q_t$. For the second form, absorb the sign of $\lambda$ into $\vec n$. Verified on random null elements.
 
@@ -80,13 +80,13 @@ positive on $\mathcal N\setminus\{0\}$ and vanishing only at the apex; on the tw
 
 ## Nullity and Invertibility
 
-**Theorem (the coexistence).** $\mathcal N\setminus\{0\}\subset\mathbb{H}^{\times}$, and the cone is a subset of the group of units.
+**Theorem (the coexistence).** $\mathcal N\setminus\{0\}\subset\mathbb{H}^{\times}$, and the cone is a subset of the group of invertibles.
 
 *Proof.* The corollary above, on the parametrised cone. Verified numerically.
 
-**Remark (the meaning of the word null).** The word null refers to the form $P$ and not to the product: an element is null when it is orthogonal to itself in the indefinite metric, and it is a zero divisor when it annihilates something non-zero in the algebra. Over $\mathbb{R}$ the second set is empty, by [Zero Divisors of the Quaternion Algebra](zero-divisors-of-the-quaternion-algebra.html), and the first is the three-dimensional cone of this article. **The two notions are independent, and the quaternion algebra is the smallest algebra in which the null cone of an indefinite norm is entirely made of units, so that the geometry of the light cone and the algebra of the zero divisors come apart.**
+**Remark (the meaning of the word null).** The word null refers to the form $P$ and not to the product: an element is null when it is orthogonal to itself in the indefinite metric, and it is a zero divisor when it annihilates something non-zero in the algebra. Over $\mathbb{R}$ the second set is empty, by [Zero Divisors of the Quaternion Algebra](zero-divisors-of-the-quaternion-algebra.html), and the first is the three-dimensional cone of this article. **The two notions are independent, and the quaternion algebra is the smallest algebra in which the null cone of an indefinite norm is entirely made of invertibles, so that the geometry of the light cone and the algebra of the zero divisors come apart.**
 
-**Remark (the contrast with the biquaternion block).** In the complexified algebra the null cone of the plain form is the set of the zero divisors, and through each point of it pass two planes of annihilators; the nullity and the non-invertibility coincide there because the coefficient conjugation supplies isotropic directions and a matrix model in which a null element can be a projector difference. Over $\mathbb{R}$ there is no isotropic direction, the cone is a cone of units, and the annihilators are trivial everywhere. **The real cone is a light cone; the complex one is a light cone that has become a zero-divisor set, and the difference is the presence of the coefficient conjugation.**
+**Remark (the contrast with the biquaternion block).** In the complexified algebra the null cone of the plain form is the set of the zero divisors, and through each point of it pass two planes of annihilators; the nullity and the non-invertibility coincide there because the coefficient conjugation supplies isotropic directions and a matrix model in which a null element can be a projector difference. Over $\mathbb{R}$ there is no isotropic direction, the cone is a cone of invertibles, and the annihilators are trivial everywhere. **The real cone is a light cone; the complex one is a light cone that has become a zero-divisor set, and the difference is the presence of the coefficient conjugation.**
 
 ## The Spectrum on the Cone
 
@@ -130,7 +130,7 @@ The P-degenerate sector is the null cone $q_t^2=\lvert\vec q\rvert^2$, closed, o
 
 Every non-zero null element has the unique writing $\lambda(e_t+\vec n)$ with $\lambda$ the scalar part and $\vec n$ the unit direction, so the punctured cone is $S^2\times\mathbb{R}_{>0}\times\{\pm1\}$ and the link at the apex is the union of the two circles $\lvert q_t\rvert=\lvert\vec q\rvert=1/\sqrt2$.
 
-The quaternion norm on the cone is $N=2q_t^2$, positive off the apex, so the whole punctured cone lies in the group of units: nullity in the indefinite form and non-invertibility in the algebra are independent, and over $\mathbb{R}$ the second set is empty.
+The quaternion norm on the cone is $N=2q_t^2$, positive off the apex, so the whole punctured cone lies in the group of invertibles: nullity in the indefinite form and non-invertibility in the algebra are independent, and over $\mathbb{R}$ the second set is empty.
 
 The cone meets the real axis only at the apex, so its punctured part is entirely spectrally regular; the spectral cut does not cut it.
 

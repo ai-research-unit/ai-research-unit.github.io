@@ -19,7 +19,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 ### The Three Maps
 
-The inner automorphism determined by a unit $u$, $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\operatorname{Ad}_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_t+\vec q_a$ one has $u^2 = u_t^2-\langle \vec q_a\rangle_{\natural}+2u_t\vec q_a$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\operatorname{Ad}_0 = \mathrm{id}$ for the identity.
+The inner automorphism determined by an invertible element $u$, $\operatorname{Ad}_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\operatorname{Ad}_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_t+\vec q_a$ one has $u^2 = u_t^2-\langle \vec q_a\rangle_{\natural}+2u_t\vec q_a$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\operatorname{Ad}_0 = \mathrm{id}$ for the identity.
 
 **Definition.** For $k = 1,2,3$ the **involution about the axis $\vec e_k$** is
 

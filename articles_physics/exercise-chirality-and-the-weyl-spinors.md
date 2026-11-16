@@ -6,7 +6,7 @@ This is one of the articles of the Dirac exercise series accompanying the biquat
 
 The following are assumed.
 
-- The algebra, the units, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two parts named by the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
+- The algebra, the invertibles, the sectors and the conjugations are those of *Algebra and Element Conventions*; the two parts named by the subscript are those of *Special Element and Peirce Conventions*, §*The Spin and Spinor Convention*; the biquaternionic gradient and the d'Alembertian are those of *Operator and Calculus Conventions*; and the four forms are those of *Product and Form Conventions*. None of them is restated here.
 - The field is one element $\tilde{Ξ}$ of $\mathbb{B}$. Its two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ carry the two parts named by the subscript, and they are named in Problem 1.
 - The group $SL(2,\mathbb{C})$ is the set of unit elements, and $\pi$ is its double cover of $SO^{+}(1,3)$, acting on $\mathbb{B}_{\Phi}$ (*Norm and Unitary Conventions*, §*The Unitary Convention*; the parent article).
 - The two actions. On one part the group acts by left multiplication, $\tilde{Ξ}\mapsto\tilde U\tilde{Ξ}$; on the other by left multiplication with the coefficient conjugate, $\tilde{Ξ}\mapsto\bar{\tilde U}\,\tilde{Ξ}$ (the parent article, §*The Two Halves*).
@@ -121,7 +121,7 @@ $$
 =\langle X,Y\rangle_{\natural}
 $$
 
-for every unit element, at residual $4\times10^{-15}$ over $100$ pairs. Only the norm-one condition is used, so the form is invariant under the whole group and not under a subgroup of it. The conjugate action preserves it as well, at residual $4\times10^{-15}$ over $100$ pairs, the coefficient conjugate of a unit element being a unit element.
+for every invertible element element, at residual $4\times10^{-15}$ over $100$ pairs. Only the norm-one condition is used, so the form is invariant under the whole group and not under a subgroup of it. The conjugate action preserves it as well, at residual $4\times10^{-15}$ over $100$ pairs, the coefficient conjugate of a unit element being a unit element.
 
 **It vanishes on one value.** Two elements of the same value are never paired: $\mathrm{Sc}(X^{\natural}Y)=0$ when $X$ and $Y$ carry the same value, at residual $2\times10^{-16}$. The form pairs one value with the other.
 

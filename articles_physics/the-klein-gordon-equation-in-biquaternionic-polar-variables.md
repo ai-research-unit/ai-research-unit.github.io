@@ -28,7 +28,7 @@ $$
 
 The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, and $\varepsilon=\Xi_t/\Rho=\pm1$, with $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ the scalar coefficient, is its branch.
 
-**The domain is $N$-regularity.** The word is a parametrisation of the group of units, so it exists iff $N(\tilde\Xi)\neq0$ (*The Meaning of N-Regularity and Degeneracy*), and it fails on every $N$-degenerate element. On the central class the cone and the nodal set coincide.
+**The domain is $N$-regularity.** The word is a parametrisation of the group of invertibles, so it exists iff $N(\tilde\Xi)\neq0$ (*The Meaning of N-Regularity and Degeneracy*), and it fails on every $N$-degenerate element. On the central class the cone and the nodal set coincide.
 
 **The scalar case comes first.** The field is taken central, $\tilde\Xi=\Xi_t e_t\in\mathbb{B}_{C}$, so that the whole field is the one complex scalar $\Xi_t$. Nothing in the equation couples $\Xi_t$ to the other three coefficients, so the restriction loses no structure. It is a choice of subject, taken because it is the case in which one scale and one angle describe the whole field. The general field is §*General Fields*.
 

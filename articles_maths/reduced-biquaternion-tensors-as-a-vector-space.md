@@ -79,7 +79,7 @@ where $A_{(j)}^{\mathbb C}$ is the entrywise complex conjugate of $A_{(j)}$.
 
 *Proof.* The idempotents $\Pi_+$ and $\Pi_-$ are orthogonal and sum to $1$, so $A\Pi_+=A_{(1)}\Pi_+$ and $A\Pi_-=A_{(2)}\Pi_-$. The formulas for $A_{1,i}$ and $A_{j,k}$ follow by adding and subtracting. The real formulas follow from $A_{1,i}=A_0+A_1i$ and $A_{j,k}=A_2+A_3i$, using that $A_0,A_1,A_2,A_3$ are real.
 
-**Remark (the coordinates are independent).** A tensor is zero if and only if both $A_{(1)}$ and $A_{(2)}$ are zero. The two coordinates carry the same amount of information as the four real tensors, and no relation between them is imposed by the algebra: every pair of complex tensors of the given shape occurs. **The two coordinates are independent**; the product later acts on them separately, and the zero divisors later are exactly the nonzero tensors with one coordinate a non-unit.
+**Remark (the coordinates are independent).** A tensor is zero if and only if both $A_{(1)}$ and $A_{(2)}$ are zero. The two coordinates carry the same amount of information as the four real tensors, and no relation between them is imposed by the algebra: every pair of complex tensors of the given shape occurs. **The two coordinates are independent**; the product later acts on them separately, and the zero divisors later are exactly the nonzero tensors with one coordinate a non-invertible.
 
 Addition and scalar multiplication are entrywise:
 

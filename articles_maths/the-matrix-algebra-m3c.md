@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the unit group and the projective group, and the reading of the algebra over the real numbers as the complexification of the anti-Hermitian matrices.
+The algebra $M_{3}(\mathbb{C})$ is the algebra of $3\times3$ complex matrices under the ordinary product. It is the model of a central simple algebra, the algebra of endomorphisms of $\mathbb{C}^{3}$, and the ambient algebra of the whole $M_{3}(\mathbb{C})$ category. This article fixes it: the basis of matrix units and the product rule, the trace and the determinant, the centre and the simplicity, the real dimension, the group of invertibles and the projective group, and the reading of the algebra over the real numbers as the complexification of the anti-Hermitian matrices.
 
-No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+No quadratic form is used in the proofs here. The trace form $\operatorname{tr}(AB)$ is mentioned only to record that it is symmetric and nondegenerate; the positive definite Hermitian form $\operatorname{tr}(A^{*}B)$ and the norm it defines are *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*. The dimensions are algebraic dimensions, not homotopy invariants; the topology of the algebra and of its group of invertibles is *The Topology of $M_{3}(\mathbb{C})$*.
 
 The article is the first of the category. The element and its coordinates are *The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$*; the root and its idempotents are *Roots of Unity and the Lagrange Idempotents of $M_3(\mathbb{C})$*; the Peirce decomposition is *The Peirce Decomposition of $M_{3}(\mathbb{C})$*.
 
@@ -192,11 +192,11 @@ lies in $I$, because $I$ is a two-sided ideal. The matrix units span, so $I=M_{3
 
 **Corollary.** $M_{3}(\mathbb{C})$ is a **central simple** $\mathbb{C}$-algebra: simple, with centre $\mathbb{C}$. Its only finite-dimensional modules are the multiples of the defining module $\mathbb{C}^{3}$, by the structure theory of simple algebras; the modules are *The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$*.
 
-**The algebra is not a division algebra.** It has zero divisors: $E_{12}E_{21}=E_{11}\neq0$ but $E_{12}E_{12}=0$, and more simply $E_{12}\neq0$ with $E_{12}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-units.
+**The algebra is not a division algebra.** It has zero divisors: $E_{12}E_{21}=E_{11}\neq0$ but $E_{12}E_{12}=0$, and more simply $E_{12}\neq0$ with $E_{12}^{2}=0$. Every off-diagonal matrix unit is nilpotent. The algebra is therefore not a division ring, and the singular matrices are exactly the non-invertibles.
 
-## The Unit Group and the Projective Group
+## The Group of Invertibles and the Projective Group
 
-**Definition.** The **unit group** is
+**Definition.** The **group of invertibles** is
 
 $$
 GL_{3}(\mathbb{C})=\{A\in M_{3}(\mathbb{C}):\det A\neq0\},
@@ -218,7 +218,7 @@ $$
 
 whose kernel is $SL_{3}(\mathbb{C})$, of complex dimension $8$.
 
-**Proof.** The unit group is the complement of the zero set of the determinant, an open subset of the nine-dimensional complex space, so it has complex dimension nine. The determinant is a polynomial homomorphism, multiplicative by the proposition of §*Trace and Determinant*, and it is surjective because $\operatorname{diag}(d,1,1)$ has determinant $d$. The kernel is the hypersurface $\det=1$, of dimension $9-1=8$.
+**Proof.** The group of invertibles is the complement of the zero set of the determinant, an open subset of the nine-dimensional complex space, so it has complex dimension nine. The determinant is a polynomial homomorphism, multiplicative by the proposition of §*Trace and Determinant*, and it is surjective because $\operatorname{diag}(d,1,1)$ has determinant $d$. The kernel is the hypersurface $\det=1$, of dimension $9-1=8$.
 
 **Proposition.** The projective group is
 
@@ -299,7 +299,7 @@ $$
 \boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \dim_{\mathbb{C}}M_{3}=9,\qquad \dim_{\mathbb{R}}M_{3}=18.\;}
 $$
 
-Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is the unique commutator-vanishing linear functional up to scale, its determinant is multiplicative, and the two are related by the characteristic cubic and Cayley–Hamilton. The unit group is $GL_{3}(\mathbb{C})$, of complex dimension $9$, and the projective group is $PGL_{3}(\mathbb{C})=GL_{3}/\mathbb{C}^{\times}I\cong SL_{3}/\mu_{3}$, of complex dimension $8$.
+Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is the unique commutator-vanishing linear functional up to scale, its determinant is multiplicative, and the two are related by the characteristic cubic and Cayley–Hamilton. The group of invertibles is $GL_{3}(\mathbb{C})$, of complex dimension $9$, and the projective group is $PGL_{3}(\mathbb{C})=GL_{3}/\mathbb{C}^{\times}I\cong SL_{3}/\mu_{3}$, of complex dimension $8$.
 
 | Property | Value for $M_{3}(\mathbb{C})$ |
 |---|---|
@@ -308,11 +308,11 @@ Its centre is $\mathbb{C}I$, and it is simple and central simple. Its trace is t
 | Centre | $\mathbb{C}I$ |
 | Simple | yes |
 | Division algebra | no; $E_{12}^{2}=0$ |
-| Unit group | $GL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=9$ |
+| Group of invertibles | $GL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=9$ |
 | Projective group | $PGL_{3}(\mathbb{C})$, $\dim_{\mathbb{C}}=8$ |
 | Real form | $\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$, $\dim_{\mathbb{R}}\mathfrak{u}(3)=9$, $\dim_{\mathbb{R}}\mathfrak{su}(3)=8$ |
 
-The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of anti-Hermitian matrices, and the Hermitian and anti-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, and the homotopy of the unit group is *The Topology of $M_{3}(\mathbb{C})$*.
+The algebra is the complexification of the real vector space $\mathfrak{u}(3)$ of anti-Hermitian matrices, and the Hermitian and anti-Hermitian parts are the real and imaginary readings of one element. No quadratic form is used in the proofs of this article; the positive definite form is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*, and the homotopy of the group of invertibles is *The Topology of $M_{3}(\mathbb{C})$*.
 
 ## Summary of Notation
 

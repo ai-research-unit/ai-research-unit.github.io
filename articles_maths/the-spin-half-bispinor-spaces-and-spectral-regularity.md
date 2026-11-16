@@ -10,7 +10,7 @@ The two eigenvalues of an element of the plane are $0$ and $\lambda$, so the spe
 
 Inside the spinor space the statement is finer. Every element has a vanishing eigenvalue, because the norm vanishes and the product of the two eigenvalues is the norm. The other eigenvalue is twice the scalar coordinate, and the degenerate elements are those whose scalar coordinate vanishes. They form a real plane inside the spinor space, and they are exactly the elements of the ideal whose square vanishes. So the degenerate locus inside a spinor space is neither empty nor the whole space: it is a plane of square-zero elements.
 
-The companion article is *The Spin-Half Bispinors and N Norm Regularity*, where the first predicate is computed and the answer is degenerate everywhere. The spaces themselves are *Introduction to the Spin-Half Bispinors*. The predicates and the four sectors are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*.
+The companion article is *The Spin-Half Bispinors and N Norm Regularity*, where the first predicate is computed and the answer is degenerate everywhere. The spaces themselves are *Introduction to the Spin-Half Bispinors Spaces*. The predicates and the four sectors are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
 Nothing below is a statement of physics. The algebra $\mathbb{B}$ is real, of dimension $8$, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$, and with $i$ an element commuting with the units and $i^2=-e_t$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu=q_\mu+iq'_\mu$ complex. A unit real axis is written $\vec u_{\mathrm r}$, and $\vec u_2,\vec u_3$ is an oriented orthonormal pair completing it.
 
@@ -165,7 +165,7 @@ The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is 
 
 ## Further Reading
 
-- [Introduction to the Spin-Half Bispinors](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
+- [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of bispinor spaces
 - [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the other predicate on the same spaces
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector in which the plane away from the origin lies

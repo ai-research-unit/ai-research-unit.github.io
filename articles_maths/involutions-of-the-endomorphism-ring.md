@@ -39,7 +39,7 @@ $$
 \boxed{\;\mathrm{U}(V,B) = \{T \in E^\times : T^{*}T = TT^{*} = \mathrm{id}\}\;}.
 $$
 
-**Proposition.** $\mathrm{U}(V,B)$ is a subgroup of the unit group $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,
+**Proposition.** $\mathrm{U}(V,B)$ is a subgroup of the group of invertibles $E^\times$, and $T \in E^\times$ is unitary exactly when $T$ preserves $B$,
 
 $$
 \boxed{\;T \in \mathrm{U}(V,B) \iff B(Tx,Ty) = B(x,y) \ \text{for all } x, y \in V\;} .
@@ -59,7 +59,7 @@ $$
 
 **(c) The Hermitian pairing.** $R = \mathbb{C}$ with the conjugation, $B(x,y) = \sum_i \overline{x_i}y_i$; the adjoint is the conjugate transpose and $\mathrm{U}(V,B)$ the unitary group. The construction is the second-kind case of the remark.
 
-**(d) The regular pairing of a ring.** On $V = A$ the pairing $B(x,y) = \tau(xy)$, with $\tau$ the regular trace, is symmetric and nondegenerate under the hypothesis of *The Adjoint of the Left Multiplication on a Ring*; the adjoint of the left multiplication $L_a$ is the right multiplication $R_a$, and the unitary elements are the units $u$ with $u^{*} = u^{-1}$.
+**(d) The regular pairing of a ring.** On $V = A$ the pairing $B(x,y) = \tau(xy)$, with $\tau$ the regular trace, is symmetric and nondegenerate under the hypothesis of *The Adjoint of the Left Multiplication on a Ring*; the adjoint of the left multiplication $L_a$ is the right multiplication $R_a$, and the unitary elements are the invertibles $u$ with $u^{*} = u^{-1}$.
 
 ## Summary
 

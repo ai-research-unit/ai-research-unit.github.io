@@ -110,7 +110,7 @@ $$
 (+,+) : (q, q') \mapsto (q, q') \qquad \text{(identity)}, \qquad (+,-) : (q, q') \mapsto (q, -q') \qquad \text{(dual conjugation)}.
 $$
 
-There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every unit $c$ with $c^2 = 1$. The reason $\mathbb{C}_{\mathrm{dln},R}$ has so few is that it has only one unit $\varepsilon$ of square zero up to scaling.
+There are exactly two over a field, and the second is the unique nontrivial one; over a general commutative ring there may be further involutions, one for every invertible $c$ with $c^2 = 1$. The reason $\mathbb{C}_{\mathrm{dln},R}$ has so few is that it has only one unit $\varepsilon$ of square zero up to scaling.
 
 **Remark.** The sign pattern $(+,+)$ fixes both submodules pointwise, and $(+,-)$ fixes $R_{\mathbb{C}_{\mathrm{dln}}}$ pointwise while negating $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$. Only the diagonal entries are free; an automorphism of $\mathbb{C}_{\mathrm{dln},R}$ cannot exchange the two submodules, because $1$ must be fixed and $\varepsilon$ must go to a multiple of $\varepsilon$. This is the submodule-theoretic content of the automorphism group $\operatorname{Aut}(\mathbb{C}_{\mathrm{dln},R}) \cong R^\times$ computed in *Dual-Numbers Automorphisms and Derivations*.
 

@@ -16,13 +16,13 @@ The Clifford algebra, its parity grading and the three intrinsic involutions $\a
 
 ## The Operator and the Parity Sign
 
-**Definition.** Let $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be a unit. The **signed inner conjugation** by $x$ is the $F$-linear map
+**Definition.** Let $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be an invertible element. The **signed inner conjugation** by $x$ is the $F$-linear map
 
 $$
 \mathrm{Ad}^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}.
 $$
 
-It is the operator of *The Family of Two-Sided Operators on a Clifford Algebra* attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.
+It is the operator of *The Family of Two-Sided Operators on a Clifford Algebra* attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the group of invertibles alone, because the right factor is the inverse.
 
 **Proposition (the parity sign).** Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then
 
@@ -34,7 +34,7 @@ where $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ is the inner conjugation. In particular $\
 
 *Proof.* The grade involution multiplies the degree-$k$ part by $(-1)^k$, so $\alpha(x)=\varepsilon_x x$; substituting into the definition gives $\mathrm{Ad}^{\alpha}_x(y)=\varepsilon_x x\,y\,x^{-1}$, and $\varepsilon_x$ is central because it is a scalar.
 
-**Proposition (value at the unit and parity).** For every unit $x$ one has $\mathrm{Ad}^{\alpha}_x(1)=\varepsilon_x$, that is $+1$ on the even part and $-1$ on the odd part, and $\mathrm{Ad}^{\alpha}_x$ preserves the parity grading, $\mathrm{Ad}^{\alpha}_x(\mathrm{Cl}^i)\subseteq\mathrm{Cl}^i$.
+**Proposition (value at the unit and parity).** For every invertible $x$ one has $\mathrm{Ad}^{\alpha}_x(1)=\varepsilon_x$, that is $+1$ on the even part and $-1$ on the odd part, and $\mathrm{Ad}^{\alpha}_x$ preserves the parity grading, $\mathrm{Ad}^{\alpha}_x(\mathrm{Cl}^i)\subseteq\mathrm{Cl}^i$.
 
 *Proof.* The value at the unit is $\alpha(x)x^{-1}=\varepsilon_x x\,x^{-1}=\varepsilon_x$. For the grading, each of the maps $\alpha$ and $\mathrm{Ad}_x$ preserves the degree modulo two, and a scalar multiple does not change that.
 
@@ -48,7 +48,7 @@ $$
 \mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},\qquad x,z\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}.
 $$
 
-So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the unit group to the group of $F$-linear bijections of $\mathrm{Cl}(V,\mathfrak{Q})$, with image isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/F^{\times}$.
+So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the group of invertibles to the group of $F$-linear bijections of $\mathrm{Cl}(V,\mathfrak{Q})$, with image isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/F^{\times}$.
 
 *Proof.* For the composition, $\mathrm{Ad}^{\alpha}_x\bigl(\mathrm{Ad}^{\alpha}_z(y)\bigr)=\alpha(x)\bigl(\alpha(z)\,y\,z^{-1}\bigr)x^{-1}=\alpha(xz)\,y\,(xz)^{-1}$. Taking $z=x^{-1}$ gives the inverse. The kernel is computed in the next section.
 
@@ -76,7 +76,7 @@ $$
 
 The inner conjugation and the signed inner conjugation have different kernels, and that difference is the second place where the minus is load-bearing.
 
-**Proposition.** The kernel of the inner conjugation on the unit group is the group of units of the centre,
+**Proposition.** The kernel of the inner conjugation on the group of invertibles is the group of invertibles of the centre,
 
 $$
 \ker\mathrm{Ad}=\{\,x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times} : xy=yx\ \text{for all } y\,\}=Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)^{\times},
@@ -84,9 +84,9 @@ $$
 
 which is $F^{\times}\cdot1$ when $\dim V$ is even and $F^{\times}\cdot1\cup F^{\times}\omega$ when $\dim V$ is odd, where $\omega$ is the volume element.
 
-*Proof.* $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is a unit because $\omega^{2}=\pm1$, a nonzero scalar.
+*Proof.* $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is invertible because $\omega^{2}=\pm1$, a nonzero scalar.
 
-**Proposition.** The kernel of the signed inner conjugation on the unit group is the group of nonzero scalars,
+**Proposition.** The kernel of the signed inner conjugation on the group of invertibles is the group of nonzero scalars,
 
 $$
 \boxed{\;\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1\;} ,
@@ -137,7 +137,7 @@ The second row is the reflection $\rho_{e_1}$ and the first its negative, and th
 
 ### The Volume Element
 
-In the same algebra the volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=1$, so it is a unit and $\alpha(\omega)=-\omega$. Hence
+In the same algebra the volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=1$, so it is invertible and $\alpha(\omega)=-\omega$. Hence
 
 $$
 \mathrm{Ad}_{\omega}=\mathrm{id},\qquad \mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id},\qquad N(\omega)=\omega\bar\omega=\omega^{2}=1 .
@@ -157,7 +157,7 @@ which is the half-turn of the plane $\mathrm{span}(e_1,e_2)$: the rotation carri
 
 ### A Split Signature
 
-In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not a unit and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $\mathfrak{Q}(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.
+In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not invertible and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $\mathfrak{Q}(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.
 
 ## Summary
 
@@ -177,7 +177,7 @@ Its kernel is $F^{\times}\cdot1$ in every dimension, strictly smaller than the k
 |---|---|
 | $\alpha$ | Grade involution, the sign character, $\alpha(x)=(-1)^kx$ on the degree-$k$ part |
 | $\varepsilon_x=(-1)^{k}$ | Parity sign of a homogeneous element, $\alpha(x)=\varepsilon_xx$ |
-| $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ | Inner conjugation, defined on the units |
+| $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ | Inner conjugation, defined on the invertibles |
 | $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, the operator of this article |
 | $\mathrm{Ad}^{\alpha}_x=\varepsilon_x\mathrm{Ad}_x$ | The parity sign, the spine of the article |
 | $\mathrm{Ad}^{\alpha}_x(\mathrm{Cl}^i)\subseteq\mathrm{Cl}^i$ | Preservation of the parity grading |
@@ -186,7 +186,7 @@ Its kernel is $F^{\times}\cdot1$ in every dimension, strictly smaller than the k
 | $\ker\mathrm{Ad}^{\alpha}=F^{\times}$, $\ker\mathrm{Ad}=Z(\mathrm{Cl})^{\times}$ | The two kernels |
 | $\mathrm{Ad}^{\alpha}_\omega=-\mathrm{id}$, $\mathrm{Ad}_\omega=\mathrm{id}$ | The volume element, odd dimension |
 | $\mathrm{Ad}^{\alpha}_a=\rho_a$, $\mathrm{Ad}_a=-\rho_a$ | The reflection and its negative on a vector $a$ |
-| $\Gamma(V,\mathfrak{Q})$ | Clifford group, the units with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ |
+| $\Gamma(V,\mathfrak{Q})$ | Clifford group, the invertibles with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$ |
 
 ## Further Reading
 

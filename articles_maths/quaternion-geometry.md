@@ -69,7 +69,7 @@ $$
 
 for $\vec q \neq 0$; they are the great circles, and they are exactly the one-parameter subgroups. The exponential map $\exp : \operatorname{Im}\mathbb{H}\to S^3$ is surjective, its kernel is the union of the spheres $\{\vec q : |\vec q| = 2\pi k\}$ over the integers $k$, and it is a diffeomorphism from the open ball of radius $\pi$ onto $S^3\setminus\{-1\}$.
 
-*Proof.* The formula for $\exp(t\vec q)$ follows from $\vec q^2 = -|\vec q|^2$ and the splitting of the exponential series into even and odd parts, as in *Quaternion Rotations and Reflections*. One-parameter subgroups of a matrix group are the exponentials of Lie-algebra elements, so the geodesics through $1$ are these curves, and the general geodesic is their left translate. The statement on the kernel is the identity $\exp(\vec q) = 1$ iff $|\vec q| \in 2\pi\mathbb{Z}$ and $\vec q/|\vec q|$ arbitrary; the injectivity on the ball of radius $\pi$ is the polar form, and the image omits exactly $-1 = \exp(\pi u)$ for every unit $u$.
+*Proof.* The formula for $\exp(t\vec q)$ follows from $\vec q^2 = -|\vec q|^2$ and the splitting of the exponential series into even and odd parts, as in *Quaternion Rotations and Reflections*. One-parameter subgroups of a matrix group are the exponentials of Lie-algebra elements, so the geodesics through $1$ are these curves, and the general geodesic is their left translate. The statement on the kernel is the identity $\exp(\vec q) = 1$ iff $|\vec q| \in 2\pi\mathbb{Z}$ and $\vec q/|\vec q|$ arbitrary; the injectivity on the ball of radius $\pi$ is the polar form, and the image omits exactly $-1 = \exp(\pi u)$ for every invertible $u$.
 
 Geodesics are the locally distance-minimising curves, and on $S^3$ every geodesic segment of length at most $\pi$ realises the geodesic distance. The **cut locus** of a point is the antipode: for each $u$ there is exactly one point $v$ at distance $\pi$, namely $v = -u$, and beyond that distance the two unit vectors are joined by a one-parameter family of minimising geodesics. This is the geometry of the compact rank-one symmetric space $S^3$, whose curvature is constant and positive.
 
@@ -84,7 +84,7 @@ $$
 \qquad t\in[0,1].
 $$
 
-**Proposition.** The curve $t\mapsto\mathrm{slerp}(u,v;t)$ is a unit quaternion for every $t$, it equals $u$ at $t = 0$ and $v$ at $t = 1$, it is the geodesic segment joining them, and the relative quaternion $u^{-1}\mathrm{slerp}(u,v;t)$ is $\exp(t\Omega w)$ for a unit $w\in\operatorname{Im}\mathbb{H}$. The half-angle of the interpolation is therefore $t\Omega$ and the swept rotation angle is $2t\Omega$: the interpolation turns at a **constant** angular rate.
+**Proposition.** The curve $t\mapsto\mathrm{slerp}(u,v;t)$ is a unit quaternion for every $t$, it equals $u$ at $t = 0$ and $v$ at $t = 1$, it is the geodesic segment joining them, and the relative quaternion $u^{-1}\mathrm{slerp}(u,v;t)$ is $\exp(t\Omega w)$ for an invertible element $w\in\operatorname{Im}\mathbb{H}$. The half-angle of the interpolation is therefore $t\Omega$ and the swept rotation angle is $2t\Omega$: the interpolation turns at a **constant** angular rate.
 
 *Proof.* For $v\neq u$ write $v = \cos\Omega\,u+\sin\Omega\,uw$ with $w$ a unit imaginary quaternion, possible because $v-\cos\Omega\,u$ is orthogonal to $u$ of norm $\sin\Omega$; substituting this into the display gives $\cos(t\Omega)u+\sin(t\Omega)uw$, which is $u\exp(t\Omega w)$ by the exponential formula of the previous subsection and is therefore a product of unit quaternions. The relative quaternion is $\exp(t\Omega w)$ by left translation. The direction $w$ is determined by $v$ when $\Omega\in(0,\pi)$, and the reconstruction $uw = (v-\cos\Omega\,u)/\sin\Omega$ turns the display into the standard formula.
 
@@ -233,11 +233,11 @@ are the **Lipschitz order** and the **Hurwitz order**.
 
 *Proof.* The Lipschitz order is the integer span of the basis, and its closure under multiplication is the integrality of the structure constants. For the Hurwitz order, the four cosets listed exhaust the elements with all coordinates in $\mathbb{Z}$ or all in $\mathbb{Z}+\tfrac{1}{2}$, and the product of two elements of any two cosets lies in one of the four; the verification is a finite computation with the structure constants of the quaternion algebra. Closure under conjugation is clear from the coordinate description. The two orders are lattices because they are free abelian groups of rank four spanning $\mathbb{R}^4$.
 
-### The Units and Their Geometry
+### The Invertibles and Their Geometry
 
-The unit groups of the two orders are finite, and their geometry is the arithmetic of the sphere of radius one.
+The groups of invertibles of the two orders are finite, and their geometry is the arithmetic of the sphere of radius one.
 
-**Theorem.** The groups of units are
+**Theorem.** The groups of invertibles are
 
 $$
 \mathcal{L}^\times = \{\pm e_t, \pm \vec e_x, \pm \vec e_y, \pm \vec e_z\}, \qquad |\mathcal{L}^\times| = 8,
@@ -249,11 +249,11 @@ $$
 \pm e_t, \quad \pm \vec e_x, \quad \pm \vec e_y, \quad \pm \vec e_z, \quad \tfrac{1}{2}(\pm e_t \pm \vec e_x \pm \vec e_y \pm \vec e_z),
 $$
 
-with the four signs of the last family taken independently; they form the binary tetrahedral group $2T$, the preimage in $S^3$ of the rotation group $T\cong A_4$ of the regular tetrahedron; as a group, $2T$ has one element of order $2$ and $8$ elements of order $6$, and its elements of order $3$ and $6$ number $16$ in all. On the sphere $S^3$ the twenty-four units are the vertices of the regular 24-cell, inscribed in the unit sphere and invariant under right and left multiplication by $2T$. The symmetry group of the $24$-cell is larger than the unit group: the signed coordinate permutations form the Weyl group $B_4$ of order $384$, and the full symmetry group is the Weyl group $F_4$ of order $1152$, while $2T$ has order $24$.
+with the four signs of the last family taken independently; they form the binary tetrahedral group $2T$, the preimage in $S^3$ of the rotation group $T\cong A_4$ of the regular tetrahedron; as a group, $2T$ has one element of order $2$ and $8$ elements of order $6$, and its elements of order $3$ and $6$ number $16$ in all. On the sphere $S^3$ the twenty-four units are the vertices of the regular 24-cell, inscribed in the unit sphere and invariant under right and left multiplication by $2T$. The symmetry group of the $24$-cell is larger than the group of invertibles: the signed coordinate permutations form the Weyl group $B_4$ of order $384$, and the full symmetry group is the Weyl group $F_4$ of order $1152$, while $2T$ has order $24$.
 
 *Proof.* An element of $\mathcal{L}$ has integer coordinates and norm one, so three of its coordinates vanish and the fourth is $\pm 1$: the eight units are the quaternion group. An element of $\mathcal{H}$ has coordinates in $\mathbb{Z}$ or all in $\mathbb{Z}+\tfrac{1}{2}$; a sum of four squares integer or four squares half-integer equal to one gives exactly the twenty-four listed. Closure under multiplication makes the set a group, and the coincidence of the $24$ vertices with the $24$-cell is the standard combinatorial description of the Hurwitz units.
 
-The lattice is thus the arithmetic counterpart of the geometry: the unit sphere of the algebra carries a discrete subgroup of finite covolume up to scaling, the quaternion norm is the quadratic form of the lattice, and the unit group of the lattice is the finite symmetry of the densest four-dimensional packing that the quaternion norm defines. The detailed arithmetic is the subject of *Lattices and the Quaternion Lattice* in Part II; the geometric content kept here is that the lattice is a discrete cocompact subset of the sphere of each radius up to the diagonal scaling.
+The lattice is thus the arithmetic counterpart of the geometry: the unit sphere of the algebra carries a discrete subgroup of finite covolume up to scaling, the quaternion norm is the quadratic form of the lattice, and the group of invertibles of the lattice is the finite symmetry of the densest four-dimensional packing that the quaternion norm defines. The detailed arithmetic is the subject of *Lattices and the Quaternion Lattice* in Part II; the geometric content kept here is that the lattice is a discrete cocompact subset of the sphere of each radius up to the diagonal scaling.
 
 ## Comparison with the Complex Case
 
@@ -281,7 +281,7 @@ The quaternion algebra $\mathbb{H}$ with its quaternion norm is a four-dimension
 
 The Hopf map $\pi(\tilde q) = \tilde q \vec e_x\tilde{q}^{\natural}$ is the orbit map of the free right action of $\mathrm{U}(1)$ and gives the locally trivial bundle $S^1\to S^3\to S^2$, whose fibres are linked great circles. Its higher analogue is the bundle $S^3\to S^7\to S^4$ over the quaternionic projective line, and $\mathbb{H}P^n$ is the quotient of the unit sphere of $\mathbb{H}^{n+1}$ by the free right action of $S^3$, a manifold of real dimension $4n$ with a tautological quaternionic line bundle. The quaternionic Möbius group $PGL_2(\mathbb{H})$ acts on $\mathbb{H}P^1\cong S^4$ by fractional transformations and is the orientation-preserving conformal group of the four-sphere.
 
-A quaternionic structure on a real vector space is a triple of complex structures satisfying the quaternion relations; over $\mathbb{R}$ its dimension is a multiple of four, and it carries a compatible inner product, the linear model of the hypercomplex and hyperkähler geometry developed in Part IV. Finally the quaternion norm defines the Lipschitz and Hurwitz orders, whose unit groups have order eight and twenty-four; the twenty-four Hurwitz units form the binary tetrahedral group and are the vertices of the regular 24-cell inscribed in the unit sphere.
+A quaternionic structure on a real vector space is a triple of complex structures satisfying the quaternion relations; over $\mathbb{R}$ its dimension is a multiple of four, and it carries a compatible inner product, the linear model of the hypercomplex and hyperkähler geometry developed in Part IV. Finally the quaternion norm defines the Lipschitz and Hurwitz orders, whose groups of invertibles have order eight and twenty-four; the twenty-four Hurwitz units form the binary tetrahedral group and are the vertices of the regular 24-cell inscribed in the unit sphere.
 
 ## Summary of Notation
 
@@ -307,7 +307,7 @@ A quaternionic structure on a real vector space is a triple of complex structure
 | $I_1, I_2, I_3$ | Images of $\vec e_x, \vec e_y, \vec e_z$: the quaternionic structure |
 | $\mathcal{L}$ | Lipschitz order, integer coordinates |
 | $\mathcal{H}$ | Hurwitz order, integer or half-integer coordinates |
-| $\mathcal{L}^\times$, $\mathcal{H}^\times$ | Unit groups of order $8$ and $24$ |
+| $\mathcal{L}^\times$, $\mathcal{H}^\times$ | Groups of invertibles of order $8$ and $24$ |
 | $2T$ | Binary tetrahedral group, the Hurwitz units |
 
 ## Further Reading
@@ -317,6 +317,6 @@ A quaternionic structure on a real vector space is a triple of complex structure
 - Norman Steenrod, *The Topology of Fibre Bundles* (Princeton University Press, 1951), for the principal bundle structure of the Hopf maps and the quaternionic projective spaces.
 - Marcel Berger, *A Panoramic View of Riemannian Geometry* (Springer, 2003), for the bi-invariant metric on a compact Lie group and the geometry of the round spheres.
 - Ahlfors, Lars V., *Möbius Transformations in Several Dimensions* (University of Minnesota, 1981), for the conformal group of the four-sphere and the quaternionic Möbius transformations.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the Hurwitz order, the quaternion unit groups and the 24-cell.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the Hurwitz order, the quaternion groups of invertibles and the 24-cell.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the sphere as a Lie group and the two-sided action giving $SO(4)$.
 - Ken Shoemake, "Animating rotation with quaternion curves", *Computer Graphics (SIGGRAPH '85 Proceedings)* **19** (1985) 245–254, for the spherical linear interpolation of the section *Interpolation and the Parameterisation of the Rotations*.

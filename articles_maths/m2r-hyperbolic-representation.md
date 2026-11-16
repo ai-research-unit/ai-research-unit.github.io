@@ -15,7 +15,7 @@ the sign of the square of the generator being the whole difference from the comp
 - two idempotents, hence a Peirce frame, two minimal ideals, two corners and a decomposition of every element;
 - two null lines, hence zero divisors, and a rank that drops to one on them;
 - a determinant that is indefinite, with zero set a pair of lines and not a point;
-- a unit group with four components and a hyperbolic angle instead of a circle;
+- a group of invertibles with four components and a hyperbolic angle instead of a circle;
 - the same two dimensions as the complex case, so that every difference between the two articles is a difference of the algebras and not of their sizes.
 
 That last point is what makes this category the cleanest comparison in the block. The complex and split-complex models are the same map, $qI_2+q'J$, with $J^{2}=\pm I_2$; so the two articles can be read side by side, entry against entry, and the sign is the only parameter.
@@ -230,10 +230,10 @@ $$
 
 - **Signature.** The determinant form on the algebra has Gram matrix $g=\operatorname{diag}(1,-1)$ and signature $(1,1)$: it is the Minkowski form of the plane, and the algebra is a Lorentzian plane with the two null lines for light rays.
 - **Rank drop.** On the null lines the matrix has rank one, not zero: a null element $Q=\lambda_+\Pi_+$ gives $\mathsf{M}_2(Q)=\lambda_+\rho_+$, of image the line $\mathbb{R}\Pi_+$ and kernel the line $\mathbb{R}\Pi_-$. So the image of the model contains matrices of rank two, one and zero, and the rank is one exactly on the null cone.
-- **Unit criterion.** $Q$ is a unit $\iff\langle Q\rangle_{*}\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. As in the complex case all four statements coincide; what changes is that the first set is now the complement of two lines rather than of a point.
+- **Unit criterion.** $Q$ is invertible $\iff\langle Q\rangle_{*}\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. As in the complex case all four statements coincide; what changes is that the first set is now the complement of two lines rather than of a point.
 - **Multiplicativity.** $\det(\mathsf{M}_2(Q)\mathsf{M}_2(P))=\langle Q\rangle_{*}\langle P\rangle_{*}=\langle QP\rangle_{*}$, without correction.
 
-**The geometry.** The determinant is the signed area scaling, and it is indefinite because the image contains reflections: $\mathsf{M}_2(j)=J$ has determinant $-1$ and reverses orientation. So the image meets both components of $GL_2(\mathbb{R})$, and the unit group has four components rather than two.
+**The geometry.** The determinant is the signed area scaling, and it is indefinite because the image contains reflections: $\mathsf{M}_2(j)=J$ has determinant $-1$ and reverses orientation. So the image meets both components of $GL_2(\mathbb{R})$, and the group of invertibles has four components rather than two.
 
 **The comparison with the two neighbouring categories.** In the complex algebra the zero set of the determinant was a point and the algebra a field. In the dual numbers, treated next in Part VI, the determinant is degenerate and its zero set a whole line, with nilpotents. Here the zero set is a pair of lines and the algebra is reduced. So the sign of the determinant's zero set — none, two lines, one line — is the whole trichotomy of the first three categories, and the model displays it as the sign of $J^{2}$.
 
@@ -329,7 +329,7 @@ $$
 \mathsf{M}_2({\mathbb{C}_{\mathrm{spl}}}^{\times})\subset CO(1,1),\qquad \mathsf{M}_2(\{Q:\langle Q\rangle_{*}=\pm1\})=O(1,1).
 $$
 
-**The four components.** The unit group is
+**The four components.** The group of invertibles is
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
@@ -343,7 +343,7 @@ $$
 
 the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1,1)$ is to this category what $SO(2)$ was to the complex one, and the exponential of $j\theta_{\mathrm{rpd}}$ is the parametrisation of its identity component.
 
-**The non-compactness.** $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of units follows from the signature of the determinant.
+**The non-compactness.** $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of invertibles follows from the signature of the determinant.
 
 ## The Norms
 
@@ -401,7 +401,7 @@ $$
 
 of dimensions $2+1+1$, and the three summands are the conformal part, the norm and the rotation. In the complex model the corresponding split was conformal plus anti-conformal; here there is a third piece, and it is the one that carries the sign of the determinant.
 
-**The units.** The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.
+**The invertibles.** The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.
 
 **The comparison with the ambient.** The image contains no nilpotent, no antisymmetric matrix, no traceless matrix and no off-diagonal matrix unit; the ambient contains all of them. The passage from the ambient to the algebra is the passage from an arbitrary linear map to a hyperbolic similarity, and it is the imposition of two linear conditions $CJ=JC$.
 
@@ -432,7 +432,7 @@ of dimensions $2+1+1$, and the three summands are the conformal part, the norm a
 | $H=\frac{1}{\sqrt2}\begin{pmatrix}1&1\\1&-1\end{pmatrix}$ | the diagonalising reflection, $HM_QH=\operatorname{diag}(\lambda_+,\lambda_-)$ | this article |
 | $g=\operatorname{diag}(1,-1)$ | the split form; $\operatorname{adj}M=gM^{\mathsf T}g$ | this article |
 | $S_\pm=\mathbb{R}\Pi_\pm$ | the two minimal ideals, the two null lines | this article |
-| $SO^{+}(1,1)$ | the boost group, the identity component of the units | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
+| $SO^{+}(1,1)$ | the boost group, the identity component of the invertibles | *Modulus–Unit Polar Decomposition of Split-Complex Numbers* |
 | $\mathsf{M}_4$ | the regular matrix of the complexification in the basis $1,i,j,ij$ | this article |
 
 ## Further Reading

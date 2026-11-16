@@ -18,7 +18,7 @@ It assumes *The Two-Sided Operators and the Segre Cone at $n=4$* and *The One-Si
 
 **Proof.** The real dimension is twice the complex one, and the trace and determinant are invariant under conjugation.
 
-**Corollary.** The endomorphism algebra has exactly two two-sided ideals, and every nonzero element of it is a unit or a zero divisor.
+**Corollary.** The endomorphism algebra has exactly two two-sided ideals, and every nonzero element of it is invertible or a zero divisor.
 
 **Proof.** Simplicity and the structure of a full matrix algebra.
 
@@ -119,7 +119,7 @@ is an isomorphism of algebras.
 
 **Theorem.** In the axis-free frame the left and right families are the matrices $L^{\mathrm{axf}}$ and $R^{\mathrm{axf}}$, whose four elements are signed permutations of the coefficient basis; the endomorphism $L^{\mathrm{axf}}_a$ acts on the sixteen $T_{\mu\nu}$ by left multiplication of the index.
 
-**Proof.** The coefficient basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, and left multiplication by a unit permutes the four basis elements up to signs; the action on the two-sided basis operators is the corresponding signed permutation of the first index.
+**Proof.** The coefficient basis is $e_t,\vec e_x,\vec e_y,\vec e_z$, and left multiplication by an invertible element permutes the four basis elements up to signs; the action on the two-sided basis operators is the corresponding signed permutation of the first index.
 
 **Corollary.** In the basis $T_{\mu\nu}$ the regular representation is a group of $16\times16$ signed permutation matrices, and the two families are the two index permutations.
 

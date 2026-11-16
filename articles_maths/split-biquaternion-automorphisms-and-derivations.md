@@ -29,7 +29,7 @@ Throughout this section the ground ring is $\mathbb{C}_{\mathrm{spl}}$, and an a
 
 **Corollary.** As a Lie group, $\mathrm{Aut}_{\mathbb{C}_{\mathrm{spl}}}(\mathbb{B}_{\mathrm{spl}})$ has dimension $6$ and is connected and compact.
 
-**Example.** Conjugation by a unit of the first factor, $\sigma(\tilde{Q}_+,\tilde{Q}_-) = (u\tilde{Q}_+ u^{-1}, \tilde{Q}_-)$ with $|u| = 1$, is a $\mathbb{C}_{\mathrm{spl}}$-algebra automorphism; conjugation by a unit of the second factor is the companion. Every $\mathbb{C}_{\mathrm{spl}}$-automorphism is a pair of such conjugations, one per factor.
+**Example.** Conjugation by an invertible element of the first factor, $\sigma(\tilde{Q}_+,\tilde{Q}_-) = (u\tilde{Q}_+ u^{-1}, \tilde{Q}_-)$ with $|u| = 1$, is a $\mathbb{C}_{\mathrm{spl}}$-algebra automorphism; conjugation by an invertible element of the second factor is the companion. Every $\mathbb{C}_{\mathrm{spl}}$-automorphism is a pair of such conjugations, one per factor.
 
 ## Automorphisms over $\mathbb{R}$
 

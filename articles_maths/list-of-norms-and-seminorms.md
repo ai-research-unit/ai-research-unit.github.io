@@ -40,7 +40,7 @@ This article lists the norms, seminorms and families of seminorms that the corpu
 | Object | The space it defines, and the completeness it gives | Introduced in |
 |---|---|---|
 | the submultiplicative norm, $\lVert xy\rVert \leq \lVert x\rVert\lVert y\rVert$ | a normed algebra; complete exactly when it is a Banach algebra | *Topological Algebras and Banach Algebras* |
-| the Neumann-series bound $(1-x)^{-1} = \sum_n x^n$ for $\lVert x\rVert<1$ | the openness of the unit group in a normed algebra | *Topological Algebras and Banach Algebras* |
+| the Neumann-series bound $(1-x)^{-1} = \sum_n x^n$ for $\lVert x\rVert<1$ | the openness of the group of invertibles in a normed algebra | *Topological Algebras and Banach Algebras* |
 | the spectral radius $r(a) = \lim_n \lVert a^n\rVert^{1/n}$ | a quantity bounded above by the norm, $r(a) \leq \lVert a\rVert$, but not a norm itself | *Topological Algebras and Banach Algebras* |
 | the Hilbert–Schmidt norm | $L^2(H)$; complete, an inner-product norm | *Operator Algebras* |
 | the trace-class norm $\lVert T\rVert_1 = \operatorname{Tr}\lvert T\rvert$ | $L^1(H)$; complete | *Operator Algebras* |

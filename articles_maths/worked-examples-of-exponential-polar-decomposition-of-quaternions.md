@@ -21,7 +21,7 @@ The eight cases cover the identity, the two pure rotors, the pure scale, the sca
 | Scale and rotor | $3e_t+4\vec e_x$ | one axis, one exponential |
 | Orthogonal axes | $\vec e_z=\vec e_x\vec e_y$ | a product word, defect $1$ |
 | Non-parallel axes | $\frac{-e_t+\vec e_z}{\sqrt2}$ | a product at $45^\circ$, defect $1/\sqrt2$ |
-| Generic | $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | a non-unit with all four coordinates nonzero |
+| Generic | $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | a non-invertible with all four coordinates nonzero |
 
 The norm is written in full throughout,
 
@@ -208,7 +208,7 @@ At $k=0$ the first row is the single value $\ln r$ for every $\vec n$. The expon
 
 ## The Eight Cases
 
-The first five cases mirror the first five of the biquaternion article: the identity, the two rotors, the pure boost replaced by the pure scale, and the parallel-axis case replaced by a scale and a rotor on one axis. Cases 6 and 7 mirror the biquaternion orthogonal-axis and non-parallel-axis cases: the two axes sit in two factors of a product, and the formal exponent is the sum of their exponents. Case 8 is the generic element, a non-unit with all four coordinates nonzero. The two-axis defect that the biquaternion cases carry inside one element is carried here by the product in cases 6 and 7, because a single quaternion has only one axis.
+The first five cases mirror the first five of the biquaternion article: the identity, the two rotors, the pure boost replaced by the pure scale, and the parallel-axis case replaced by a scale and a rotor on one axis. Cases 6 and 7 mirror the biquaternion orthogonal-axis and non-parallel-axis cases: the two axes sit in two factors of a product, and the formal exponent is the sum of their exponents. Case 8 is the generic element, a non-invertible with all four coordinates nonzero. The two-axis defect that the biquaternion cases carry inside one element is carried here by the product in cases 6 and 7, because a single quaternion has only one axis.
 
 ### Case 1: The Identity
 
@@ -695,7 +695,7 @@ Off the real axis the other logarithms are obtained by adding $2\pi k\vec n$. On
 - Case 5 is the one-axis case. The scale is central, the two factors commute, the word is one exponential, and the formal exponent is the true logarithm. The defect is zero.
 - Case 6 is the orthogonal-axis product. The word is $\vec e_x\vec e_y=\vec e_z$; the polar data give the axis $\vec e_z$ and the exponent $\frac{\pi}{2}\vec e_z$. The formal exponent $\frac{\pi}{2}(\vec e_x+\vec e_y)$ misses the element by $1$, so the defect is $1$. The true polar word is one exponential.
 - Case 7 is the non-parallel product. The word is a product of rotors at $45^\circ$, and the element has the negative scalar $-1/\sqrt2$. The polar data give the axis $\vec e_z$ and the exponent $\frac{3\pi}{4}\vec e_z$; the formal exponent misses the element by $1/\sqrt2$. The angle is $3\pi/4<\pi$, so the principal logarithm exists. The negative scalar is the scalar part of the product, not a point on the branch cut.
-- Case 8 is the generic non-unit. The modulus is $\sqrt{30}$, all four coordinates are nonzero, and the axis has all three components. The formal exponent is the true logarithm, so the defect is zero.
+- Case 8 is the generic non-invertible. The modulus is $\sqrt{30}$, all four coordinates are nonzero, and the axis has all three components. The formal exponent is the true logarithm, so the defect is zero.
 - The defect is zero when the word is a single factor, in cases 1 to 5 and 8; it is nonzero when two rotors about different axes are multiplied, in cases 6 and 7. The cross term is the defect. This is how the quaternion article mirrors the biquaternion defect without a second axis inside one element.
 - The open negative real axis is the branch cut. The polar word exists there, but the principal exponent does not, and the axis is free. The general logarithms form the spheres of radii $(2k+1)\pi$ at scalar height $\ln r$; the first is the sphere of radius $\pi$. The kernel is a union of spheres and is not a subgroup.
 

@@ -166,7 +166,7 @@ $$
 
 It is purely imaginary, and it is a pairing $\mathbb{B}_{\Phi}\times\mathbb{B}_{\Psi}\to i\mathbb{R}$: it reads one element of each sector and returns a phase.
 
-**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(r'_{t},\vec v)$ with the informational four-vector $(h_t,\vec h_\Psi)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(r'_{t}\,h_t+\vec v\cdot\vec h_\Psi)$. The product squares the units and the norm squares the coefficients, and the sign of the spatial term is the difference.
+**Interpretation.** The pairing is the Minkowski pairing of the material four-vector $(r'_{t},\vec v)$ with the informational four-vector $(h_t,\vec h_\Psi)$, multiplied by $i$: the time components pair with the time component, the spatial components with the spatial components, and the indefiniteness of the interval is the relative sign. The result is a phase, not a probability. The norm reads the same two pairs with the opposite spatial sign: its cross term is $2i(r'_{t}\,h_t+\vec v\cdot\vec h_\Psi)$. The product squares the invertibles and the norm squares the coefficients, and the sign of the spatial term is the difference.
 
 **Boundary.** A pairing is not a product: it produces a scalar, not an element to be fed back into the algebra, and it does not compose. It is an interpretation of two objects, not an operation that turns one into the other. The pairing also depends on the product. The plain product and the product with the adjoint in the second slot give the Minkowski pairing; the product with the adjoint in the first slot gives its negative; the quaternionic product gives the Euclidean pairing, with the spatial sign reversed. The article uses the plain product and does not compare the four.
 
@@ -204,7 +204,7 @@ There is no contradiction because the two statements quantify over different cla
 
 ### The Thermal Faces
 
-Two further interpretations belong to the same split and are not new bridges. The material and informational ledgers are exchanged by the central $i$, which reverses the norm; the temperature is the thermodynamic rate at which one ledger is converted into the other, and erasure is the non-invertible operation that pays the price in the material ledger, $k_BT\log2$ per bit. The arrow that orders the exchange is the split of the acting monoid into units and non-units, not the central $i$, which is invertible. Both are thermodynamic interpretations of the split; neither adds a fifth kind to the catalogue.
+Two further interpretations belong to the same split and are not new bridges. The material and informational ledgers are exchanged by the central $i$, which reverses the norm; the temperature is the thermodynamic rate at which one ledger is converted into the other, and erasure is the non-invertible operation that pays the price in the material ledger, $k_BT\log2$ per bit. The arrow that orders the exchange is the split of the acting monoid into the invertibles and non-invertibles, not the central $i$, which is invertible. Both are thermodynamic interpretations of the split; neither adds a fifth kind to the catalogue.
 
 ## Limits
 

@@ -5,7 +5,7 @@
 
 This article lists the matrix rings $M_n(R)$ over the commutative rings and the matrix algebras over the fields, together with the rings and the algebras that are not of that form. The matrix ring is the model object of the subject: it is the algebra by which the associative theory is tested, it carries a basis — the matrix units — whose multiplication table is the clearest display of a non-commutative structure, and over a field it is simple, central and finite-dimensional. Every entry points to the article that introduces the object.
 
-The list is a proper subclass of *List of Algebras*: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals; the matrix rings over a commutative ring and over a division ring lie beyond that scope, and this one carries them together with the matrix algebras, with the matrix units, the centre, the units and the ideals of each, and beside them the rings and algebras that are not a matrix ring.
+The list is a proper subclass of *List of Algebras*: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals; the matrix rings over a commutative ring and over a division ring lie beyond that scope, and this one carries them together with the matrix algebras, with the matrix units, the centre, the invertibles and the ideals of each, and beside them the rings and algebras that are not a matrix ring.
 
 A ring-theoretic point governs the naming throughout. The object is a **matrix ring** when the row reads $M_n(R)$ over a commutative ring or $M_n(D)$ over a division ring, and a **matrix algebra** when the row reads it over a field and the algebra structure is what matters; the article that introduces the object is *Matrix Algebras*, and the rows for $M_n(R)$ and its structure point there whatever name the row uses.
 
@@ -39,7 +39,7 @@ which differ, and $E_{12}E_{12}=0$ while $E_{12}\neq 0$.
 | The case $n = 1$ | $M_1(R) = R$: the ring itself | *Matrix Algebras* |
 | The case $n = 2$ | four-dimensional, with $E_{12}$ and $E_{21}$ nilpotent and $E_{11}E_{22} = 0$ | *Matrix Algebras* |
 
-The units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of the matrix ring trivial over a field, and the products $E_{ij}E_{kl}$ with $j \neq k$ vanish, which is why the matrix ring is never a domain for $n \geq 2$.
+The invertibles satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of the matrix ring trivial over a field, and the products $E_{ij}E_{kl}$ with $j \neq k$ vanish, which is why the matrix ring is never a domain for $n \geq 2$.
 
 ## The Matrix Algebras over a Field
 
@@ -54,14 +54,14 @@ Over a field the matrix ring is simple, its left ideals are the sets of matrices
 
 Over a field the two-sided ideal structure is trivial, so a proper nonzero two-sided ideal is the one thing a matrix algebra does not have; the left ideals are not trivial, and they are classified by the subspaces of the row space.
 
-## The Centre, the Units and the Ideals
+## The Centre, the Invertibles and the Ideals
 
-The data that distinguish $M_n(R)$ from a general ring are the scalar centre, the determinant criterion for a unit, and the trace; all three are computed from the matrix units.
+The data that distinguish $M_n(R)$ from a general ring are the scalar centre, the determinant criterion for an invertible element, and the trace; all three are computed from the matrix units.
 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | The centre $Z(M_n(R)) = R I_n$ | the scalar matrices; $M_n(R)$ is a central $R$-algebra | *Matrix Algebras* |
-| The unit criterion | $A$ is a unit if and only if $\det A \in R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$ | *Matrix Algebras* |
+| The unit criterion | $A$ is invertible if and only if $\det A \in R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$ | *Matrix Algebras* |
 | $\mathrm{GL}_n(k)$, the units over a field | the matrices with $\det A \neq 0$ | *Matrix Algebras* |
 | The trace $\operatorname{Tr} A$ | $R$-linear, with $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ and invariance under cyclic permutation | *Matrix Algebras* |
 | The determinant $\det A$ | multiplicative, $\det(AB) = \det A \cdot \det B$ and $\det I_n = 1$ | *Matrix Algebras* |
@@ -70,7 +70,7 @@ The data that distinguish $M_n(R)$ from a general ring are the scalar centre, th
 | Skolem–Noether | every $k$-automorphism of $M_n(k)$ is inner, and $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$ | *Matrix Algebras* |
 | Derivations of $M_n(k)$ | every $k$-derivation is inner, $\delta(A) = [H,A]$ | *Matrix Algebras* |
 
-The determinant criterion is the reason the units of a matrix ring are computable: over a field they are the invertible matrices, and over a general commutative ring the determinant may be a nonzero nonunit, as for $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$.
+The determinant criterion is the reason the invertibles of a matrix ring are computable: over a field they are the invertible matrices, and over a general commutative ring the determinant may be a nonzero nonunit, as for $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$.
 
 ## Tensor Products and Products of Matrix Rings
 
@@ -145,7 +145,7 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | $\operatorname{Tr} A$, $\det A$, $\operatorname{adj}(A)$ | trace, determinant and adjugate |
 | $\chi_A(t) = \det(tI_n - A)$ | the characteristic polynomial |
 | $\langle A,B\rangle = \operatorname{Tr}(AB)$ | the trace form |
-| $\mathrm{GL}_n(k)$, $\mathrm{PGL}_n(k)$ | the units and the projective general linear group |
+| $\mathrm{GL}_n(k)$, $\mathrm{PGL}_n(k)$ | the invertibles and the projective general linear group |
 | $\operatorname{End}_R(R^n)$ | the endomorphism ring, isomorphic to $M_n(R)$ |
 | $I_V$ | the left ideal of matrices whose rows lie in the subspace $V$ |
 | $D$, $D^n$ | a division ring and its $n$-fold direct sum, the simple module |

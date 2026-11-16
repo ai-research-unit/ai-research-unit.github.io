@@ -113,7 +113,7 @@ and the doubly conjugated product carries a minus on both odd slots, that is $SS
 
 The product restricted to the two halves gives four tables, and each table splits into a symmetric and an antisymmetric part whose places depend on the parities of the factors: the two diagonal tables have the anticommutator symmetric, the two mixed tables have it antisymmetric.
 
-The diagonal tables span the whole algebra and the mixed ones span the traceless algebra, of dimensions $16$ and $15$; no table is closed, and the failure is exhibited by three explicit pairs of units. The two mixed tables are transposes of one another up to sign and are different maps with the same image.
+The diagonal tables span the whole algebra and the mixed ones span the traceless algebra, of dimensions $16$ and $15$; no table is closed, and the failure is exhibited by three explicit pairs of invertibles. The two mixed tables are transposes of one another up to sign and are different maps with the same image.
 
 The four tables are the unsigned blocks of the multiplication in the grading by parity, and the four general products of the biquaternion algebra are the signed combinations obtained by inserting the conjugation in one slot or both. The axis-free frame, where the transpose is the quaternion conjugation, makes the dictionary between the two articles exact.
 

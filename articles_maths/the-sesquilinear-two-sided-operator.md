@@ -6,7 +6,7 @@ The sesqualgebra built from an associative algebra with an involution has a two-
 
 The subject is the operator theory of the category, and it belongs to the group *Operator Theory* of the sesqualgebras. The two-sided operator stands to the sesqualgebra as the ordinary two-sided multiplication $x \mapsto axb$ stands to the associative algebra, and as the signed two-sided operator of *The Signed Two-Sided Operator on a Bimodule over an Algebra* stands to the algebra with an involution; the left and the right multiplication of the category, which are the one-sided cases, are *The Left and Right Multiplication Operators of a Sesqualgebra*. The triple product from which the two-sided operator is built, its additivity, its two linear slots and its one conjugate-linear slot, are *Sesqualgebras*, §*The Ternary Product*; the Jordan triple identity it satisfies is *Algebraic J\*-Algebras*; and the operator attached to a pair with the third slot as the variable, together with the Lie structure that the operators form, is *The Ternary Product as an Operator*.
 
-The setting is the standard example of *Sesqualgebras*: $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the sesquilinear product is $x \star y = xy^{*}$, and the triple product is $\{x,y,z\} = (x \star y) \star z^{*} = xy^{*}z$. Juxtaposition denotes the associative product of $A$. The unitary elements and the inner $*$-automorphisms are *Units and the Unitary Elements*; the inner involutions $\sigma_u(x) = ux^{*}u^{*}$ and the criterion for them to be of order two are *The Involutions of a Sesqualgebra*; and the bilinear case $\varsigma = \mathrm{id}$, where the two families are both $R$-linear, is *Left and Right Multiplication*.
+The setting is the standard example of *Sesqualgebras*: $A$ is an associative unital $R$-algebra with a $\varsigma$-semilinear involution $*$, the sesquilinear product is $x \star y = xy^{*}$, and the triple product is $\{x,y,z\} = (x \star y) \star z^{*} = xy^{*}z$. Juxtaposition denotes the associative product of $A$. The unitary elements and the inner $*$-automorphisms are *Invertibles and the Unitary Elements*; the inner involutions $\sigma_u(x) = ux^{*}u^{*}$ and the criterion for them to be of order two are *The Involutions of a Sesqualgebra*; and the bilinear case $\varsigma = \mathrm{id}$, where the two families are both $R$-linear, is *Left and Right Multiplication*.
 
 ---
 
@@ -42,7 +42,7 @@ $$
 
 **Proof.** Every two-sided operator is $L_{a}R_{b} \circ {}^{*}$ and every composite $\mathcal{T}_{q^{*},p^{*}}$ is ${}^{*} \circ L_{p}R_{q}$, so the two families differ by one factor of ${}^{*}$ and the monoid they generate is the same whether the involution is adjoined on the left or on the right.
 
-**Remark.** The parametrisation is not injective: for a **central** unit $p$ one has $\mathcal{T}_{ap,\,p^{-1}b} = \mathcal{T}_{a,b}$, because $p$ commutes with $x^{*}$. On the units the kernel is exactly the group of the central units, as the proposition on the parametrisation below makes precise, so the invertible two-sided operators are the quotient of $A^{\times} \times A^{\times}$ by that action.
+**Remark.** The parametrisation is not injective: for a **central** unit $p$ one has $\mathcal{T}_{ap,\,p^{-1}b} = \mathcal{T}_{a,b}$, because $p$ commutes with $x^{*}$. On the invertibles the kernel is exactly the group of the central units, as the proposition on the parametrisation below makes precise, so the invertible two-sided operators are the quotient of $A^{\times} \times A^{\times}$ by that action.
 
 ## The Composition
 
@@ -79,19 +79,19 @@ so a two-sided operator is an involution exactly when $a b^{*} = 1$, equivalentl
 
 ## The Invertible Two-Sided Operators
 
-**Theorem.** The two-sided operator $\mathcal{T}_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then
+**Theorem.** The two-sided operator $\mathcal{T}_{a,b}$ is invertible if and only if $a$ and $b$ are invertible in $A$, and then
 
 $$
 \boxed{\;\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{(b^{-1})^{*},\, (a^{-1})^{*}}\;} .
 $$
 
-**Proof.** If $a$ or $b$ is not a unit then multiplication by it is not injective, so $\mathcal{T}_{a,b}$ has a nonzero kernel and is not invertible. Conversely $\mathcal{T}_{a,b}(x) = a x^{*} b$ is inverted by $\mathcal{T}_{(b^{-1})^{*},(a^{-1})^{*}}$ by the table: writing the table as $\mathcal{T}_{p,q} \circ \mathcal{T}_{r,s} = L_{p s^{*}}R_{\, r^{*} q}$, the composite $\mathcal{T}_{a,b} \circ \mathcal{T}_{(b^{-1})^{*},(a^{-1})^{*}}$ is $L_{a d^{*}}R_{\, c^{*} b}$ with $c = (b^{-1})^{*}$ and $d = (a^{-1})^{*}$, that is $L_{a a^{-1}}R_{\, (b^{-1}) b} = L_{1}R_{1} = \mathrm{id}$, and the same computation in the other order gives $\mathrm{id}$ as well.
+**Proof.** If $a$ or $b$ is not invertible then multiplication by it is not injective, so $\mathcal{T}_{a,b}$ has a nonzero kernel and is not invertible. Conversely $\mathcal{T}_{a,b}(x) = a x^{*} b$ is inverted by $\mathcal{T}_{(b^{-1})^{*},(a^{-1})^{*}}$ by the table: writing the table as $\mathcal{T}_{p,q} \circ \mathcal{T}_{r,s} = L_{p s^{*}}R_{\, r^{*} q}$, the composite $\mathcal{T}_{a,b} \circ \mathcal{T}_{(b^{-1})^{*},(a^{-1})^{*}}$ is $L_{a d^{*}}R_{\, c^{*} b}$ with $c = (b^{-1})^{*}$ and $d = (a^{-1})^{*}$, that is $L_{a a^{-1}}R_{\, (b^{-1}) b} = L_{1}R_{1} = \mathrm{id}$, and the same computation in the other order gives $\mathrm{id}$ as well.
 
 **Proposition (the kernel of the parametrisation).** Let $a, b, c, d$ be units of $A$. Then $\mathcal{T}_{a,b} = \mathcal{T}_{c,d}$ if and only if there is a central unit $p$ with $c = ap$ and $d = p^{-1} b$, and the assignment $(a,b) \mapsto \mathcal{T}_{a,b}$ induces a bijection from the quotient of $A^{\times} \times A^{\times}$ by the action $p \cdot (a,b) = (ap,\, p^{-1}b)$ of the central units onto the set of the invertible two-sided operators.
 
 **Proof.** The equality $\mathcal{T}_{a,b} = \mathcal{T}_{c,d}$ says $a x^{*} b = c x^{*} d$ for every $x$; multiplying by $a^{-1}$ on the left and by $b^{-1}$ on the right, it is $x^{*} = a^{-1}c\,x^{*}\,d\,b^{-1}$ for every $x$, that is, with $p = a^{-1}c$ and $q = d\,b^{-1}$, the identity $x^{*} = p\,x^{*}\,q$ for every $x$. At $x = 1$ this gives $pq = 1$, and then $x^{*} = p\,x^{*}\,p^{-1}$ for every $x^{*}$, which holds exactly when $p$ commutes with every element of $A$, since $*$ is onto; so $p$ is a central unit with $q = p^{-1}$, that is $c = ap$ and $d = p^{-1}b$. Conversely a central unit $p$ gives $\mathcal{T}_{ap, p^{-1}b} = \mathcal{T}_{a,b}$, since $p$ commutes with $x^{*}$.
 
-**Remark.** The invertible two-sided operators are not closed under composition: the product of two of them is an ordinary two-sided multiplication, by the table, and it is a two-sided multiplication rather than a two-sided operator precisely because the composite of two conjugate-linear maps is linear. They are therefore not a group, and the subgroup they generate together with the invertible two-sided multiplications is the unit group of the monoid of the corollary, with the two-sided operators as its $\varsigma$-semilinear half and the two-sided multiplications as its $R$-linear half. For unitary parameters the inverse reads $\mathcal{T}_{u,v}^{-1} = \mathcal{T}_{v,u}$, since $(v^{-1})^{*} = v$ and $(u^{-1})^{*} = u$, and the kernel of the parametrisation is the group of the central unitary elements.
+**Remark.** The invertible two-sided operators are not closed under composition: the product of two of them is an ordinary two-sided multiplication, by the table, and it is a two-sided multiplication rather than a two-sided operator precisely because the composite of two conjugate-linear maps is linear. They are therefore not a group, and the subgroup they generate together with the invertible two-sided multiplications is the group of invertibles of the monoid of the corollary, with the two-sided operators as its $\varsigma$-semilinear half and the two-sided multiplications as its $R$-linear half. For unitary parameters the inverse reads $\mathcal{T}_{u,v}^{-1} = \mathcal{T}_{v,u}$, since $(v^{-1})^{*} = v$ and $(u^{-1})^{*} = u$, and the kernel of the parametrisation is the group of the central unitary elements.
 
 ## The Reflections
 
@@ -146,11 +146,11 @@ The invertible two-sided operators are those with invertible parameters, with $\
 | $\mathcal{T}_{a,b}^{2} = L_{ab^{*}}R_{a^{*}b}$ | the square of a two-sided operator |
 | $\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{(b^{-1})^{*},(a^{-1})^{*}}$ | the inverse on the invertible parameters |
 | $\mathcal{T}_{u,u}$ | the reflection of a unitary $u$, an involution |
-| $\mathcal{T}_{u,u^{*}} = \sigma_{u}$ | the inner involution of a unit $u$ |
+| $\mathcal{T}_{u,u^{*}} = \sigma_{u}$ | the inner involution of an invertible element $u$ |
 
 ## Further Reading
 
 - Nathan Jacobson, *Structure of Rings* (American Mathematical Society Colloquium Publications 37, 1956), for the triple products of a ring with involution and the operators they induce.
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the two-sided operators of a ring with involution and the conjugate-linear maps attached to them.
 - Nicolas Bourbaki, *Algebra I, Chapters 1–3* (Springer, 1998), for the semilinear operators, the two-sided multiplications and the case of the trivial involution.
-- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), *Algebraic J\*-Algebras*, *The Left and Right Multiplication Operators of a Sesqualgebra*, *Units and the Unitary Elements*, *The Involutions of a Sesqualgebra*, *The Signed Two-Sided Operator on a Bimodule over an Algebra*, *The Ternary Product as an Operator* and *Left and Right Multiplication*.
+- The companion articles of this series: [Sesqualgebras](sesqualgebras.html), *Algebraic J\*-Algebras*, *The Left and Right Multiplication Operators of a Sesqualgebra*, *Invertibles and the Unitary Elements*, *The Involutions of a Sesqualgebra*, *The Signed Two-Sided Operator on a Bimodule over an Algebra*, *The Ternary Product as an Operator* and *Left and Right Multiplication*.

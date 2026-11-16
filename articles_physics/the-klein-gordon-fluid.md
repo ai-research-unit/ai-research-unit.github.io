@@ -188,7 +188,7 @@ $$
 \sum_{\nu}V_{\nu}V_{\nu}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m} .
 $$
 
-**The normalisation is a unit only where the quantum potential vanishes, and the display says so.** The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is a unit on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert<c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}>-mc^{2}/2$. **That is the qualification the first-order rung removes**, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.
+**The normalisation is invertible only where the quantum potential vanishes, and the display says so.** The mass shell fixes the norm of $\tilde V_\Phi=\tilde P_\Phi/m$ at $-c^{2}-2Q_{\mathrm{qnt}}/m$, so the four-velocity is invertible on the free shell and on nothing else; the flow is bounded by $\lvert\vec v\rvert<c$ exactly while the shell stays timelike, that is while $Q_{\mathrm{qnt}}>-mc^{2}/2$. **That is the qualification the first-order rung removes**, and it is the reason the non-relativistic fluid's acceleration law carries no $\gamma$: with no norm there is no bound, and a velocity that nothing bounds has no Lorentz factor to carry.
 
 **The four-acceleration is minus the gradient of one scalar per unit mass, with no remainder.** That is the criterion's third item verbatim, and the potential it names is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/m$: the quantum term alone, with $V=0$. The scalar fluid is therefore the pressureless member of the reverse map's family, and the family's nonlinear term is absent rather than small.
 
@@ -278,7 +278,7 @@ $$
 1. **The word carries two parameters and a sign.** The scale, the action and the branch, and the count closes: three data against the two components of one complex coefficient plus the half turn the angle's range excludes.
 2. **The density is a bilinear and the conserved density is not it.** $\rho_{\mathrm{num}}=r^{2}$ is the density in the fluid's frame; the conserved quantity is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, and $\gamma$ is signed on the negative sheet.
 3. **Continuity is the imaginary part of the wave equation**, and the equivalence runs both ways: every solution gives a pair, every nowhere-zero solution of the pair gives a field.
-4. **The velocity is a gradient**, $v_{\Phi,\mu}=\partial_\mu S_{\tilde\Xi}/m$, and it is a unit only where $Q_{\mathrm{qnt}}$ vanishes. **No other field fluid has a velocity that is a gradient.**
+4. **The velocity is a gradient**, $v_{\Phi,\mu}=\partial_\mu S_{\tilde\Xi}/m$, and it is invertible only where $Q_{\mathrm{qnt}}$ vanishes. **No other field fluid has a velocity that is a gradient.**
 5. **There is one force and it is a gradient.** $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and the factor $1/\gamma$ is the relativistic inertia: the same gradient accelerates a fast flow less.
 6. **There is no equation of state, and the class has a name.** The stress is a Korteweg stress — a function of the density and its first two derivatives — and the force is third order in $\nabla\ln\rho_{\mathrm{num}}$, so no function of the density's value can produce it.
 7. **A stress exists and is not a pressure.** The quantum stress is anisotropic, and a divergence of an anisotropic stress is a force and not $-\rho^{-1}\nabla p$.

@@ -188,7 +188,7 @@ The sector is a four-vector, which is $1\oplus3$ under rotations; the constraint
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the equation, the implied Lorenz condition and the three polarisations.
 - [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the carrier of complex dimension one.
 - [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html), for the carrier that is a minimal left ideal.
-- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the classification of the carriers and their relation to the sectors.
+- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the classification of the carriers and their relation to the sectors.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the polar word of the sector and the absence of a Madelung pair.
 - [The Charged Proca Fluid](the-charged-proca-fluid.html), for the doubling of the parameters under a coupling.
 - [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the complex structure that the sector acquires only after complexification.

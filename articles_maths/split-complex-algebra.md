@@ -276,15 +276,15 @@ $$
 
 so $1+j$ and $1-j$ are non-zero elements with zero product, and $\mathbb{C}_{\mathrm{spl}}$ is not a domain.
 
-**Proposition.** Write $Q = Q_+\Pi_+ + Q_-\Pi_-$ in the idempotent basis, with $Q$ not both coordinates zero. Then $Q$ is a zero divisor if and only if one of $Q_+, Q_-$ vanishes; if both are nonzero then $Q$ is a unit, with inverse
+**Proposition.** Write $Q = Q_+\Pi_+ + Q_-\Pi_-$ in the idempotent basis, with $Q$ not both coordinates zero. Then $Q$ is a zero divisor if and only if one of $Q_+, Q_-$ vanishes; if both are nonzero then $Q$ is invertible, with inverse
 
 $$
 \boxed{\; Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_- \;}.
 $$
 
-**Proof.** In the idempotent basis multiplication is componentwise, $QB = Q_+B_+\Pi_+ + Q_-B_-\Pi_-$. If $Q_+ = 0$ then $Q\Pi_+ = Q_-\Pi_-\Pi_+ = 0$ with $\Pi_+ \neq 0$, so $Q$ is a zero divisor, and symmetrically for $Q_- = 0$. If both coordinates are nonzero, the displayed formula gives $Q Q^{-1} = \Pi_+ + \Pi_- = 1$, so $Q$ is a unit, and a unit is never a zero divisor.
+**Proof.** In the idempotent basis multiplication is componentwise, $QB = Q_+B_+\Pi_+ + Q_-B_-\Pi_-$. If $Q_+ = 0$ then $Q\Pi_+ = Q_-\Pi_-\Pi_+ = 0$ with $\Pi_+ \neq 0$, so $Q$ is a zero divisor, and symmetrically for $Q_- = 0$. If both coordinates are nonzero, the displayed formula gives $Q Q^{-1} = \Pi_+ + \Pi_- = 1$, so $Q$ is invertible, and an invertible element is never a zero divisor.
 
-So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-units of $\mathbb{C}_{\mathrm{spl}}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Zero Divisors of the Split-Complex Algebra*; the criterion by the norm belongs to *Norm and Invertibility in the General Split-Complex Algebra*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
+So the zero divisors are exactly the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, and the non-invertibles of $\mathbb{C}_{\mathrm{spl}}$ are $0$ together with the zero divisors. The classification of the zero-divisor set, its two families and its relation to the isotropic cone are the subject of *Zero Divisors of the Split-Complex Algebra*; the criterion by the norm belongs to *Norm and Invertibility in the General Split-Complex Algebra*, where the norm, the Hermitian form and the inner product — a form and a distance — are treated.
 
 ## Summary
 
@@ -292,7 +292,7 @@ The split complex algebra $\mathbb{C}_{\mathrm{spl}}$ is the two-dimensional rea
 
 Split complex conjugation sends $q + j q'$ to $q - j q'$; it is the unique non-trivial involution, and the idempotent conjugation coincides with it, so the conjugation group is $\mathbb{Z}/2$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and its anti-fixed points the split imaginary subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $Q = Q_+\Pi_+ + Q_-\Pi_-$, where $\Pi_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $Q_\pm = q \pm q'$. The two components are independent ring homomorphisms, so $\mathbb{C}_{\mathrm{spl}}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
 
-The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Q = Q_+\Pi_+ + Q_-\Pi_-$ is a zero divisor exactly when one of its two coordinates vanishes, while it is a unit with $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, classified in *Zero Divisors of the Split-Complex Algebra*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra*.
+The algebra has zero divisors: $(1+j)(1-j) = 0$, and in the idempotent basis a non-zero element $Q = Q_+\Pi_+ + Q_-\Pi_-$ is a zero divisor exactly when one of its two coordinates vanishes, while it is invertible with $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$ exactly when both are nonzero. The zero divisors are therefore the non-zero elements of the two idempotent lines $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$, classified in *Zero Divisors of the Split-Complex Algebra*. The norm, the Hermitian form and the inner product are a form and a distance and belong to *Norm and Invertibility in the General Split-Complex Algebra*.
 
 ## Summary of Notation
 

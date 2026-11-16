@@ -13,7 +13,7 @@ The Clifford algebra and its two-sided operators are *The Family of Two-Sided Op
 
 ### The Four Operators
 
-**Definition.** Let $\mathrm{J}$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,\mathfrak{Q})$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be a unit. The **two-sided operator** with left twist $\mathrm{J}$ and right factor $\rho$ is
+**Definition.** Let $\mathrm{J}$ be $\mathrm{id}$ or the grading involution $\alpha$ of $\mathrm{Cl}(V,\mathfrak{Q})$, let $\rho$ be the **inversion** $\mathrm{inv}(x) = x^{-1}$ or the **dagger** $\dagger(x) = x^{\dagger}$, and let $x$ be an invertible element. The **two-sided operator** with left twist $\mathrm{J}$ and right factor $\rho$ is
 
 $$
 \Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)\,y\,\rho(x) .
@@ -21,17 +21,17 @@ $$
 
 The four members of the family are the **inner conjugation** $\Phi_{\mathrm{id},\mathrm{inv},x}(y) = x\,y\,x^{-1}$, the **signed inner conjugation** $\Phi_{\mathrm{inv},x}^{\alpha}(y) = \alpha(x)\,y\,x^{-1}$, the **Hermitian pair** $\Phi_{\mathrm{id},x}^{\dagger}(y) = x\,y\,x^{\dagger}$, and the **signed Hermitian pair** $\Phi^{\alpha,\dagger}_{x}(y) = \alpha(x)\,y\,x^{\dagger}$; the last two are the mixed operators that combine the grading with the adjoint. The last two are the **bilinear two-sided operator** and its signed version in the vocabulary of the biquaternion layer. The superscript $\dagger$ on $\Phi$ marks the slot that carries the adjoint; it is not part of the operator's name.
 
-**Proposition (multiplicativity in $x$).** For each fixed pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the group of units:
+**Proposition (multiplicativity in $x$).** For each fixed pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the group of invertibles:
 
 $$
 \Phi^{\mathrm{J},\rho}_{xy} = \Phi^{\mathrm{J},\rho}_{x}\circ\Phi^{\mathrm{J},\rho}_{y} ,
 $$
 
-because $\mathrm{J}$ is a homomorphism and $\rho(xy) = \rho(y)\rho(x)$ for both $\rho$. This was checked for all four pairs on the units of $\mathrm{Cl}_{0,3}(\mathbb{R})$.
+because $\mathrm{J}$ is a homomorphism and $\rho(xy) = \rho(y)\rho(x)$ for both $\rho$. This was checked for all four pairs on the invertibles of $\mathrm{Cl}_{0,3}(\mathbb{R})$.
 
 ### The Horizontal Defect
 
-**Theorem (dagger versus inverse).** For a unit $x$ and both twists $\mathrm{J}$,
+**Theorem (dagger versus inverse).** For an invertible element $x$ and both twists $\mathrm{J}$,
 
 $$
 \Phi^{\mathrm{J},\dagger}_{x}\circ\bigl(\Phi_{\mathrm{inv},x}^{\mathrm{J}}\bigr)^{-1} = R_{xx^{\dagger}} ,
@@ -45,7 +45,7 @@ the **right multiplication** by the element $x\,x^{\dagger}$; equivalently $\Phi
 
 ### The Vertical Defect
 
-**Theorem (signed versus unsigned).** For a unit $x$ and both right factors $\rho$,
+**Theorem (signed versus unsigned).** For an invertible element $x$ and both right factors $\rho$,
 
 $$
 \Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho} ,
@@ -133,7 +133,7 @@ In $\mathbb{B} = \mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})$ the slice is 
 
 ## Summary
 
-The family $\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)y\rho(x)$, with $\mathrm{J}\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian pair** and the **signed Hermitian pair**, and for each pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the units. The two defects are exact: the **horizontal** defect is $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi_{\mathrm{inv},x}^{\mathrm{J}})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
+The family $\Phi^{\mathrm{J},\rho}_{x}(y) = \mathrm{J}(x)y\rho(x)$, with $\mathrm{J}\in\{\mathrm{id},\alpha\}$ and $\rho\in\{\mathrm{inv},\dagger\}$, contains the **inner conjugation**, the **signed inner conjugation**, the **Hermitian pair** and the **signed Hermitian pair**, and for each pair $(\mathrm{J},\rho)$ the assignment $x\mapsto\Phi^{\mathrm{J},\rho}_{x}$ is multiplicative on the invertibles. The two defects are exact: the **horizontal** defect is $\Phi^{\mathrm{J},\dagger}_{x}\circ(\Phi_{\mathrm{inv},x}^{\mathrm{J}})^{-1} = R_{xx^{\dagger}}$, the right multiplication by $xx^{\dagger}$, and the **vertical** defect is $\Phi^{\alpha,\rho}_{x} = L_{\alpha(x)x^{-1}}\circ\Phi_{\mathrm{id},x}^{\rho}$, the left multiplication by $\alpha(x)x^{-1}$; for homogeneous $x$ the vertical defect is the scalar $(-1)^{|x|}$.
 
 Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the inverse, the signed is the unsigned up to $(-1)^{|x|}$ for homogeneous $x$, and the whole family collapses onto the inner conjugation $\mathrm{Ad}_x$, which is the operator-level reason the involutive, the Hermitian and the signed theories agree there and only there. The bilinear two-sided operator has adjoint $(\Phi^{\mathrm{J},\dagger}_{x})^{*} = \Phi^{\mathrm{J},\dagger}_{x^{\dagger}}$, it is an isometry of the module form for every $x\in U$ (and an isometry at all only when $\mathrm{J}(x^{\dagger}x)\,x^{\dagger}x = 1$, which for the unsigned twist is the slice condition), and it is an algebra homomorphism exactly for $x\in U$, where it is the inner conjugation; the signed operators are multiplicative up to the degree sign, exactly multiplicative only on the even part.
 
@@ -157,4 +157,4 @@ Both defects vanish exactly on the **unitary slice**: on $U$ the dagger is the i
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the Pin and Spin groups, the norm condition and the twisted conjugation.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the grading, the Clifford group and the two-sided action on the spinor module.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998), for the interaction of an involution with an automorphism of order two and the signed multiplicativity.
-- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the inner automorphisms of a simple algebra, the centralizer of the group of units and the automorphism group.
+- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for the inner automorphisms of a simple algebra, the centralizer of the group of invertibles and the automorphism group.

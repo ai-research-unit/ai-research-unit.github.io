@@ -30,15 +30,15 @@ $$
 
 (i) $\tilde Q\in\Sigma_{11}$;
 
-(ii) $\tilde Q$ is a unit and its two eigenvalues are distinct;
+(ii) $\tilde Q$ is invertible and its two eigenvalues are distinct;
 
-(iii) $\tilde Q$ is a unit and is semisimple with a non-scalar spectrum;
+(iii) $\tilde Q$ is invertible and is semisimple with a non-scalar spectrum;
 
 (iv) $\tilde Q$ admits a spectral decomposition into two non-trivial idempotents with distinct non-zero coefficients;
 
 (v) $\tilde Q$ is invertible, non-scalar, and admits a Peirce decomposition with idempotents commuting with it.
 
-*Proof.* (i) $\iff$ (ii): $\langle\tilde Q\rangle_{\natural}\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta=iB$ and $B^2\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-\neq0$ makes the element a unit.
+*Proof.* (i) $\iff$ (ii): $\langle\tilde Q\rangle_{\natural}\neq0$ is the unit condition, and $B^2\neq0$ is the discriminant condition, so the eigenvalues $\lambda_\pm=Q_t\pm\beta$, with $\beta=iB$ and $B^2\neq0$, are distinct; conversely distinct eigenvalues give $B^2\neq0$ and $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-\neq0$ makes the element an invertible element.
 
 (ii) $\iff$ (iii): in two dimensions a semisimple element with a repeated eigenvalue is a scalar, so semisimplicity with a non-scalar spectrum is the same as two distinct eigenvalues.
 
@@ -46,13 +46,13 @@ $$
 
 (i) $\iff$ (v): for a non-scalar element a Peirce decomposition relative to $\tilde Q$ exists exactly when $B^2\neq0$, by the existence theorem of *The Spectrum*; invertibility is exactly $\langle\tilde Q\rangle_{\natural}\neq0$. So both conditions together are exactly (i).
 
-**Corollary (regular semisimple units).** The sector is the set of regular semisimple elements of the unit group:
+**Corollary (regular semisimple units).** The sector is the set of regular semisimple elements of the group of invertibles:
 
 $$
 \Sigma_{11}=\{\tilde Q\in\mathbb{B}^\times\ :\ \lambda_+\neq\lambda_-\},
 $$
 
-with $\mathbb{B}^\times=\{N\neq0\}$ the unit group. Its complement in $\mathbb{B}^\times$ is the degenerate half $\Sigma_{10}$, so the unit group splits into a generic part and a unipotent part.
+with $\mathbb{B}^\times=\{N\neq0\}$ the group of invertibles. Its complement in $\mathbb{B}^\times$ is the degenerate half $\Sigma_{10}$, so the group of invertibles splits into a generic part and a unipotent part.
 
 **Corollary (eigenvalue parametrisation).** Every element of the sector is written uniquely as
 
@@ -105,7 +105,7 @@ $$
 
 both non-zero, so the loop lies in $\Sigma_{11}$. The continuous map $\tilde Q\mapsto(\langle\tilde Q\rangle_{\natural},B^2(\tilde Q))$ sends $\Sigma_{11}$ to $\mathbb{C}^\times\times\mathbb{C}^\times$ and sends this loop to one whose two components wind twice around $1$ and around $0$ respectively. That image is not null-homotopic in the torus, so the loop is not null-homotopic in $\Sigma_{11}$.
 
-**Remark (the identity is not generic).** $e_t$ has $B^2=0$, so it lies in $\Sigma_{10}$, not in $\Sigma_{11}$. The sector is not a neighbourhood of the identity and not a subgroup; it is the part of the unit group on which the discriminant does not vanish. Likewise the scalar line $\mathbb{C}^\times e_t$ is entirely outside the sector.
+**Remark (the identity is not generic).** $e_t$ has $B^2=0$, so it lies in $\Sigma_{10}$, not in $\Sigma_{11}$. The sector is not a neighbourhood of the identity and not a subgroup; it is the part of the group of invertibles on which the discriminant does not vanish. Likewise the scalar line $\mathbb{C}^\times e_t$ is entirely outside the sector.
 
 **Remark (where $Q_t$ may vanish).** The sector meets the hyperplane $Q_t=0$: the pure vectors with $B^2\neq0$, such as $\vec e_x+\vec e_y$, have $\langle\tilde Q\rangle_{\natural}=B^2\neq0$ and lie in $\Sigma_{11}$. For such an element the two eigenvalues are opposite, $\lambda_-=-\lambda_+$, and its square is a non-zero scalar. So the sector is not characterised by a non-zero scalar part, only by the non-vanishing of both invariants.
 
@@ -161,7 +161,7 @@ f(\tilde Q)=f(\lambda_+)e_++f(\lambda_-)e_-,\qquad
 $$
 the second because $\lambda_+\lambda_-=N\neq0$; it agrees with $\tilde Q^{\natural}/N$, since $\lambda_-\tilde\Pi_++\lambda_+\tilde\Pi_-=\tilde Q^{\natural}$. The eigenvalue map $\mathbb{B}^\times\to\mathbb{C}^\times\times\mathbb{C}^\times$, $\tilde Q\mapsto(\lambda_+,\lambda_-)$, is surjective, not injective and not a group homomorphism.
 
-**Annihilators.** Since $\tilde Q$ is a unit,
+**Annihilators.** Since $\tilde Q$ is invertible,
 
 $$
 A(\tilde Q)=B(\tilde Q)=\{0\},
@@ -867,7 +867,7 @@ The first column is $S_+$, the second is $S_-$, and multiplication by $\tilde Q$
 
 ## Multiplication and Inversion
 
-**Products stay in the unit group.** The norm is multiplicative, so for $\tilde Q,\tilde Q_2\in\Sigma_{11}$,
+**Products stay in the group of invertibles.** The norm is multiplicative, so for $\tilde Q,\tilde Q_2\in\Sigma_{11}$,
 
 $$
 \langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
@@ -918,7 +918,7 @@ $$
 
 So squaring can leave the sector, and it leaves it precisely through the vertex of the spectral cone.
 
-**Inversion and closure.** The sector is inverse-closed, because $\langle\tilde Q^{-1}\rangle_{\natural}\neq0$ and $B^2(\tilde Q^{-1})\neq0$; it is not product-closed, by the theorem. It is therefore a **symmetric subset** of the unit group, not a subgroup. In fact it contains no subgroup at all, since every subgroup contains the identity and $e_t\notin\Sigma_{11}$.
+**Inversion and closure.** The sector is inverse-closed, because $\langle\tilde Q^{-1}\rangle_{\natural}\neq0$ and $B^2(\tilde Q^{-1})\neq0$; it is not product-closed, by the theorem. It is therefore a **symmetric subset** of the group of invertibles, not a subgroup. In fact it contains no subgroup at all, since every subgroup contains the identity and $e_t\notin\Sigma_{11}$.
 
 **Caveat on the parametrisation.** Although $\lambda_+e_++\lambda_-e_-$ is unique, products do not add eigenvalues: the eigenvalues of $\tilde Q_2\tilde Q$ are not determined by those of $\tilde Q_2$ and $\tilde Q$ separately. Only their product is, through the norm.
 
@@ -947,7 +947,7 @@ $$
 
 coincide whenever $Q_t=0$. At a common point of the two cones one has $Q_t=0$ and $B^2=0$, which is $\Sigma_{00}$; there the gradients are both $2(0,\vec Q)$, equal and non-zero off the origin. So the cones are tangent along $\Sigma_{00}\setminus\{0\}$ and both singular at the origin. On $\Sigma_{11}$ there is nothing to be tangent to: the sector is disjoint from both cones.
 
-**The sector where the answers agree.** Every element of the sector is a unit with distinct eigenvalues: both questions — is it invertible, and are its eigenvalues separated — receive the positive answer. This is the fourth corner of the $2\times2$ table and the reason the independence of the two problems is not vacuous: the doubly regular case exists, and it exists on a dense open set.
+**The sector where the answers agree.** Every element of the sector is invertible with distinct eigenvalues: both questions — is it invertible, and are its eigenvalues separated — receive the positive answer. This is the fourth corner of the $2\times2$ table and the reason the independence of the two problems is not vacuous: the doubly regular case exists, and it exists on a dense open set.
 
 **Independence, restated.** $\Sigma_{01}$ and $\Sigma_{10}$ show that neither cone contains the other. $\Sigma_{11}$ shows that the two conditions are simultaneously satisfiable, and $\Sigma_{00}$ shows that they are simultaneously violable. The four sectors together are the complete truth table of the pair of predicates $(N\neq0,\ B^2\neq0)$.
 
@@ -1052,7 +1052,7 @@ with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element
 | question | answer |
 |---|---|
 | definition | $\Sigma_{11}=\{N\neq0,\ B^2\neq0\}$ |
-| descriptions | $\mathbb{B}\setminus(\mathcal N\cup\mathcal S)$; a unit with distinct eigenvalues; $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero; invertible with a non-trivial Peirce decomposition relative to $\tilde Q$ |
+| descriptions | $\mathbb{B}\setminus(\mathcal N\cup\mathcal S)$; an invertible element with distinct eigenvalues; $\lambda_+e_++\lambda_-e_-$ with $\lambda_\pm$ distinct and non-zero; invertible with a non-trivial Peirce decomposition relative to $\tilde Q$ |
 | geometry | open dense, of full measure; complex dimension $4$ and real dimension $8$; connected; complement the hypersurface $NB^2=0$ |
 | elements | regular semisimple units; minimal polynomial $X^2-2Q_tX+N$, squarefree; centraliser $\mathbb{C}\oplus\mathbb{C}$ |
 | Peirce decomposition | exists, unique, both coefficients non-zero |
@@ -1064,7 +1064,7 @@ with $\vec{Ζ}=-i\vec Q/B$. The eigenvalues weight the operator, not the element
 | relation to the cones | off both cones; the cones are tangent along $\Sigma_{00}\setminus\{0\}$ |
 | place in the arrangement | the distinct sector: the one sector where both answers are positive |
 
-The sector is the generic sector. It is the set of units with distinct non-zero eigenvalues, the complement of the union of the two cones, and the only sector of the arrangement in which both questions — is the element invertible, and can its eigenvalues be told apart — receive the positive answer. It is what the algebra looks like when nothing degenerates. Its complement is the arrangement, and the three other sectors are the three ways the doubly regular case can fail: by losing invertibility, by losing spectral separation, or by losing both.
+The sector is the generic sector. It is the set of invertibles with distinct non-zero eigenvalues, the complement of the union of the two cones, and the only sector of the arrangement in which both questions — is the element invertible, and can its eigenvalues be told apart — receive the positive answer. It is what the algebra looks like when nothing degenerates. Its complement is the arrangement, and the three other sectors are the three ways the doubly regular case can fail: by losing invertibility, by losing spectral separation, or by losing both.
 
 ## Summary of Notation
 
@@ -1074,7 +1074,7 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 | $\Sigma_{11}$ | the norm-regular, spectrally regular sector, this article |
 | $\mathcal N=\{N=0\}$ | the null cone of the quaternionic norm |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
-| $\mathbb{B}^\times=\{N\neq0\}$ | the unit group |
+| $\mathbb{B}^\times=\{N\neq0\}$ | the group of invertibles |
 | $\lambda_\pm=Q_t\pm\beta$, $\beta=iB$ | the two eigenvalues |
 | $e_\pm=\tilde\Pi_\pm$ | the spectral idempotents, unique; the same pair in both notations |
 | $\Rho=\sqrt{N}$ | the modulus |
@@ -1086,7 +1086,7 @@ The sector is the generic sector. It is the set of units with distinct non-zero 
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the unit group.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the group of invertibles.
 - [The Spectrum](the-spectrum.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.

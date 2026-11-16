@@ -73,7 +73,7 @@ $$
 
 **Basis and dimension.** The real basis is $e_t, \vec e_x, \vec e_y, \vec e_z$ and $\dim_{\mathbb{R}}\mathbb{B}_{H} = 4$. It is the copy of the real quaternion algebra inside $\mathbb{B}$.
 
-**Role.** It is a subalgebra, one of the two remarkable subspaces closed under the product, and it is a division algebra: every non-zero element is a unit. It is the only one of the remarkable subspaces that is non-commutative, and it is the image of the structure map $\mathbb{H} \to \mathbb{B}$, $h \mapsto he_t$.
+**Role.** It is a subalgebra, one of the two remarkable subspaces closed under the product, and it is a division algebra: every non-zero element is invertible. It is the only one of the remarkable subspaces that is non-commutative, and it is the image of the structure map $\mathbb{H} \to \mathbb{B}$, $h \mapsto he_t$.
 
 ### The Anti-Quaternion Subspace
 
@@ -463,7 +463,7 @@ Each of the four conjugations preserves each remarkable subspace and acts on it 
 - [The Group of Involutions of the Biquaternion Algebra](the-group-of-involutions.html), for the four conjugations as an abstract group
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products brought to the remarkable subspaces together, the product of two elements of the remarkable subspaces, and the Jordan and the Lie algebra each subspace carries
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms on the remarkable subspaces side by side, the only orthogonal pair and the comparison of the two readings
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula, the unit group and the zero divisors of the whole algebra
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula, the group of invertibles and the zero divisors of the whole algebra
 - [Square Roots of an Element](square-roots-of-an-element.html), for the three classifications in the whole algebra
 - [Idempotents](idempotents.html), for the classification of the idempotents of the whole algebra, the bijection with the roots of minus one and the projection reading
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra

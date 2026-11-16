@@ -38,7 +38,7 @@ show that the first, second and fourth sectors are nonempty; the third is empty.
 
 **Spectral description.** For $\tilde q\in\Sigma_{11}$ the eigenvalues $q_t\pm i|\vec q|$ are distinct, each of algebraic and geometric multiplicity two; $L_{\tilde q}$ is semisimple and diagonalisable over $\mathbb C$, with no real eigenvector. Its real canonical form is two copies of the rotation-scaling block. The eigenbasis is constructed in [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html).
 
-**Norm description.** Every element is a unit, $|\tilde q|>0$, and the polar decomposition is $\tilde q=|\tilde q|(\cos\theta+\sin\theta J_{\tilde q})$ with $\theta\in(0,\pi)$ and $J_{\tilde q}=\vec q/|\vec q|$.
+**Norm description.** Every element is invertible, $|\tilde q|>0$, and the polar decomposition is $\tilde q=|\tilde q|(\cos\theta+\sin\theta J_{\tilde q})$ with $\theta\in(0,\pi)$ and $J_{\tilde q}=\vec q/|\vec q|$.
 
 **Proposition (not a subgroup).** $\Sigma_{11}$ is invariant under conjugation, under inversion and under multiplication by nonzero real scalars, but it is not closed under multiplication:
 $$(1+\vec e_x)(1-\vec e_x)=2\in\mathbb R.$$
@@ -55,13 +55,13 @@ $$(1+\vec e_x)(1-\vec e_x)=2\in\mathbb R.$$
 
 **Norm description.** $|\tilde q|^2=q_t^2>0$, the inverse is $q_t^{-1}$, and the polar angle is $\theta=0$ for $q_t>0$ and $\theta=\pi$ for $q_t<0$, with $J$ arbitrary. The positive ray is the identity component of the group.
 
-**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector whose elements are norm-regular and spectrally degenerate. Its elements are units and semisimple, so the degeneracy is neither non-invertibility nor defect: it is the collapse of the two eigenvalues onto the real axis. In the split-quaternion and biquaternion algebras the corresponding sector contains defective elements; see [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
+**Remark (the only coexistence).** $\Sigma_{10}$ is the only sector whose elements are norm-regular and spectrally degenerate. Its elements are invertible and semisimple, so the degeneracy is neither non-invertibility nor defect: it is the collapse of the two eigenvalues onto the real axis. In the split-quaternion and biquaternion algebras the corresponding sector contains defective elements; see [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html).
 
 ## The Sector of the Origin
 
-**Theorem.** $\Sigma_{00}=\{0\}$. It is a single point, closed, of dimension zero, and the unique non-unit of $\mathbb H$. For $\tilde q=0$, $L_0=0$, the characteristic polynomial is $\lambda^4$, the minimal polynomial is $\lambda$, and the spectrum is $\{0\}$; every nonzero vector is an eigenvector and every basis is an eigenbasis.
+**Theorem.** $\Sigma_{00}=\{0\}$. It is a single point, closed, of dimension zero, and the unique non-invertible of $\mathbb H$. For $\tilde q=0$, $L_0=0$, the characteristic polynomial is $\lambda^4$, the minimal polynomial is $\lambda$, and the spectrum is $\{0\}$; every nonzero vector is an eigenvector and every basis is an eigenbasis.
 
-*Proof.* The sector was computed above; the norm is zero only at the origin, so the origin is the only non-unit. The matrix of $L_0$ is zero, and the polynomial statements are immediate.
+*Proof.* The sector was computed above; the norm is zero only at the origin, so the origin is the only non-invertible. The matrix of $L_0$ is zero, and the polynomial statements are immediate.
 
 **Proposition (semisimple).** The origin is semisimple: $\mathbb R[0]=\mathbb R$ is a field, and the minimal polynomial $\lambda$ is squarefree.
 
@@ -98,7 +98,7 @@ Each closure is a union of sectors, so the partition satisfies the frontier cond
 
 *Proof.* On the real axis $\mathbb R[\tilde q]=\mathbb R$; off it $\mathbb R[\tilde q]\cong\mathbb C$. Both are fields, and the displayed minimal polynomials have distinct roots.
 
-**Theorem (no nonzero norm-degenerate element).** The norm-degenerate set is $\Sigma_{00}=\{0\}$. It contains no zero divisor, and every nonzero quaternion is a unit:
+**Theorem (no nonzero norm-degenerate element).** The norm-degenerate set is $\Sigma_{00}=\{0\}$. It contains no zero divisor, and every nonzero quaternion is invertible:
 $$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$
 
 *Proof.* Positive definiteness gives the first statement; multiplicativity of the norm gives the absence of zero divisors; every nonzero element has the inverse $\tilde q^{\natural}/|\tilde q|^2$.
@@ -111,9 +111,9 @@ $$\mathbb H^\times=\mathbb H\setminus\{0\}=\Sigma_{11}\cup\Sigma_{10}.$$
 
 The two conditions $|\tilde q|^2\ne0$ and $|\vec q|^2\ne0$ partition $\mathbb H$ into four sectors. Because the norm is positive definite and the spectral form has radical the real axis, the sectors are
 $$\Sigma_{11}=\mathbb H\setminus\mathbb R,\qquad \Sigma_{10}=\mathbb R^\times,\qquad \Sigma_{01}=\varnothing,\qquad \Sigma_{00}=\{0\}.$$
-The first is open, dense, connected and four-dimensional; the second is a one-dimensional subgroup with two components, locally closed, with closure the real axis; the third is empty; the fourth is a closed point, the only non-unit, the only doubly degenerate element and the only element of the norm-degenerate set.
+The first is open, dense, connected and four-dimensional; the second is a one-dimensional subgroup with two components, locally closed, with closure the real axis; the third is empty; the fourth is a closed point, the only non-invertible, the only doubly degenerate element and the only element of the norm-degenerate set.
 
-Every element is semisimple, so there is no defective element and no defective sector. No nonzero element is norm-degenerate, so every nonzero quaternion is a unit and $\mathbb H$ has no zero divisor. The fourth sector is empty precisely because the norm is definite; in the biquaternion algebra it is nonempty and carries zero divisors.
+Every element is semisimple, so there is no defective element and no defective sector. No nonzero element is norm-degenerate, so every nonzero quaternion is invertible and $\mathbb H$ has no zero divisor. The fourth sector is empty precisely because the norm is definite; in the biquaternion algebra it is nonempty and carries zero divisors.
 
 ## Summary of Notation
 
@@ -124,7 +124,7 @@ Every element is semisimple, so there is no defective element and no defective s
 | $\Sigma_{10}=\mathbb R^\times$ | the punctured real axis |
 | $\Sigma_{01}=\varnothing$ | the empty sector |
 | $\Sigma_{00}=\{0\}$ | the origin |
-| $\mathbb H^\times=\mathbb H\setminus\{0\}$ | the unit group |
+| $\mathbb H^\times=\mathbb H\setminus\{0\}$ | the group of invertibles |
 | $|\tilde q|^2=q_t^2+|\vec q|^2$ | the quaternion norm |
 | $|\vec q|^2$ | the spectral form |
 | dimension | real dimension as a subset of $\mathbb H\cong\mathbb R^4$ |
@@ -133,7 +133,7 @@ Every element is semisimple, so there is no defective element and no defective s
 ## Further Reading
 
 - [Quaternion Algebra](quaternion-algebra.html), for the multiplication and the scalar–vector decomposition.
-- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm and the unit group.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm and the group of invertibles.
 - [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html), for the spectral criterion.
 - [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html), for the eigenbasis of the non-real sector.
 - [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the two forms and the chain of invariants.

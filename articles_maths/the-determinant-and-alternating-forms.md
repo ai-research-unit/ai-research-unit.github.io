@@ -89,11 +89,11 @@ $$
 \boxed{\;\det(g \circ f) = \det(g)\, \det(f)\;}.
 $$
 
-Moreover $f$ is invertible if and only if $\det(f)$ is a unit of $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.
+Moreover $f$ is invertible if and only if $\det(f)$ is invertible in $R$, and then $\det(f^{-1}) = \det(f)^{-1}$.
 
-**Proof.** Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is a unit, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring.
+**Proof.** Functoriality of the top exterior power gives $\Lambda^m(g \circ f) = \Lambda^m g \circ \Lambda^m f$, and on the rank-one module $\Lambda^m M$ these are multiplications by $\det(g \circ f)$, $\det(g)$, and $\det(f)$ respectively, so the scalars multiply. If $f$ is invertible, applying the first part to $g = f^{-1}$ and $g \circ f = \mathrm{id}$ gives $\det(f)\det(f^{-1}) = \det(\mathrm{id}) = 1$. Conversely, if $\det(f)$ is invertible, then the adjugate identity $f \circ \operatorname{adj}(f) = \det(f)\,\mathrm{id}_M$ exhibits an inverse: $\operatorname{adj}(f)$ is the endomorphism whose matrix entries are the $(m-1)$-minors of the matrix of $f$, with alternating signs, and it is defined over any commutative ring.
 
-**Remark.** Over a general commutative ring one cannot conclude that a non-invertible endomorphism has $\det(f) = 0$: only that $\det(f)$ is a non-unit. For example, over $R = \mathbb{Z}$ the map of $\mathbb{Z}$ given by multiplication by $2$ has determinant $2$, which is neither a unit nor zero. This is the point at which the determinant over a ring differs from the determinant over a field.
+**Remark.** Over a general commutative ring one cannot conclude that a non-invertible endomorphism has $\det(f) = 0$: only that $\det(f)$ is a non-invertible. For example, over $R = \mathbb{Z}$ the map of $\mathbb{Z}$ given by multiplication by $2$ has determinant $2$, which is neither an invertible element nor zero. This is the point at which the determinant over a ring differs from the determinant over a field.
 
 ### The Characteristic Polynomial
 
@@ -211,7 +211,7 @@ The Pfaffian and its relation to the symplectic form are treated. Over a ring in
 
 ## Summary
 
-The determinant of an endomorphism of a free module of rank $m$ is the scalar by which it acts on the top exterior power $\Lambda^m M$; in a basis it is the Leibniz sum $\sum_\sigma \operatorname{sgn}(\sigma)\prod_q a_{q,\sigma(q)}$. It is multiplicative, $\det(g \circ f) = \det(g)\det(f)$, it satisfies $\det(f^{\mathsf{T}}) = \det(f)$, and an endomorphism is invertible exactly when its determinant is a unit of the base ring. The characteristic polynomial is governed by the traces of the induced maps on the exterior powers, $\det(\mathrm{id} + tf) = \sum_k \operatorname{tr}(\Lambda^k f)t^k$.
+The determinant of an endomorphism of a free module of rank $m$ is the scalar by which it acts on the top exterior power $\Lambda^m M$; in a basis it is the Leibniz sum $\sum_\sigma \operatorname{sgn}(\sigma)\prod_q a_{q,\sigma(q)}$. It is multiplicative, $\det(g \circ f) = \det(g)\det(f)$, it satisfies $\det(f^{\mathsf{T}}) = \det(f)$, and an endomorphism is invertible exactly when its determinant is invertible in the base ring. The characteristic polynomial is governed by the traces of the induced maps on the exterior powers, $\det(\mathrm{id} + tf) = \sum_k \operatorname{tr}(\Lambda^k f)t^k$.
 
 In every degree the induced map $\Lambda^n f$ has matrix the $n \times n$ minors of the matrix of $f$, and the identity $\Lambda^n(g \circ f) = \Lambda^n g \circ \Lambda^n f$ reads, in entries, as the Cauchy–Binet formula
 

@@ -12,7 +12,7 @@ $$
 
 with discriminant $\Delta=t(t+4)$, scalar part $Q_t=1+t/2$ and vector square $B^2(T)=-t(t+4)/4$. The product is defective exactly at $t=0$ and $t=-4$, with the scalar exception $T=e_t$ at $t=0$; otherwise it is regular. On the regular set, the spectrum is on the unit circle exactly when $t$ is real and $-4<t<0$, real and reciprocal when $t$ is real and $t>0$ or $t<-4$, and non-real and reciprocal when $t$ is not real. For real $t$, the sign of $t$ alone does not decide the type: the type is fixed by whether $t$ lies in $(-4,0)$ or outside it, equivalently by the sign of $t(t+4)$, and the sign of $t$ then separates the positive real branch from the negative one.
 
-The two examples show two of the regular types. With $t=-1$ the product has eigenvalues $e^{\pm i\pi/3}$; with $t=1$ it has eigenvalues $(3\pm\sqrt5)/2$. The two values differ only in the pairing of the two nilpotent parts. The article also proves that every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotent elements, and that every element of the unit group is a central scalar times an element of the norm-one slice.
+The two examples show two of the regular types. With $t=-1$ the product has eigenvalues $e^{\pm i\pi/3}$; with $t=1$ it has eigenvalues $(3\pm\sqrt5)/2$. The two values differ only in the pairing of the two nilpotent parts. The article also proves that every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotent elements, and that every element of the group of invertibles is a central scalar times an element of the norm-one slice.
 
 The product law on the spectral-degenerate sector, which uses the pairing $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$, is *Exponential Polar Decomposition on the N-Regular Sector*, §*The Group Law*; the spectral criterion, the characteristic polynomial and the cone are *The Spectrum*; the norm, the norm-one group and the matrix model are *The N-Regular Sector* and *$M_2(\mathbb{C})$ Pauli Representation*. The relation $t=-2s$ is the bridge between the two computations, and nothing of the cited articles is reproved here.
 
@@ -334,9 +334,9 @@ are nilpotent, and $A_- - A_+ = 2\operatorname{diag}(1,-1)$. Together with $E_{1
 
 **Corollary.** The product map from pairs of non-trivial unipotent elements to the norm-one group is surjective onto $\mathbb{B}^{\times}_1\setminus\{-e_t\}$. In particular, every regular element and every defective element of the norm-one group occurs; the only element missed is the scalar $-e_t$.
 
-## Scaling and the General Unit Group
+## Scaling and the General Group of Invertibles
 
-The restriction to the norm-one slice loses nothing for defective elements. Every defective element of the unit group is of the form
+The restriction to the norm-one slice loses nothing for defective elements. Every defective element of the group of invertibles is of the form
 
 $$
 \tilde Q_2=c\,U,\qquad c\in\mathbb{C}^{\times},\quad U=e_t+\vec\Upsilon,\quad \vec\Upsilon^2=0,\quad\vec\Upsilon\neq0,

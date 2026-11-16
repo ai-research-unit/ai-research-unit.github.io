@@ -152,7 +152,7 @@ $$
 \hat s^{2}=-e_t ,
 $$
 
-**and the implication is the one the polar form uses**: the empty scalar slot is what makes $\hat s$ a unit *spatial* direction and not a direction with a temporal part, and a real unit vector is what the norm relation $\hat s^{2}=-e_t$ states. **The Frenkel condition itself needs nothing from that**: it came from the antisymmetry of $\varepsilon$ two displays ago, and it holds whatever $\hat s$ is.
+**and the implication is the one the polar form uses**: the empty scalar slot is what makes $\hat s$ an invertible element *spatial* direction and not a direction with a temporal part, and a real unit vector is what the norm relation $\hat s^{2}=-e_t$ states. **The Frenkel condition itself needs nothing from that**: it came from the antisymmetry of $\varepsilon$ two displays ago, and it holds whatever $\hat s$ is.
 
 **The two facts together are the article's main structural statement: the corpus imposes neither the direction nor the condition.** The direction is the rotor's image of the frame's declared axis, and the condition is the dual's antisymmetry. The spin is carried by a rotation, a rotation is a real unitary element, and the image of a spatial direction under a rotation is a spatial direction. **A framework in which the spin lived in the field's eight parameters without a rotor would have to impose $\mathcal{F}$ by hand; this one gets it from the decomposition.**
 

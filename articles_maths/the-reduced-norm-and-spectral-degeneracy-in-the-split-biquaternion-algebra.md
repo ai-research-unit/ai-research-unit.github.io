@@ -42,7 +42,7 @@ $$
 \Delta(\tilde Q)=0\iff Q_+=0\text{ or }Q_-=0.
 $$
 
-Consequently $\tilde Q$ is a unit exactly when $\Delta(\tilde Q)\neq0$.
+Consequently $\tilde Q$ is invertible exactly when $\Delta(\tilde Q)\neq0$.
 
 *Proof.* Each $|Q_\pm|^2$ is a sum of four squares, hence non-negative and zero only at $Q_\pm=0$. A product of non-negative reals vanishes exactly when a factor vanishes. In $\mathbb{H}\oplus\mathbb{H}$, an element is invertible exactly when both components are non-zero, by *[Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html)*.
 
@@ -94,7 +94,7 @@ For the converse, take $Q_+=1$ and $Q_-=\vec e_z$. Then $\Delta=1$ but $p_+=(\la
 
 **Corollary (the mixed sectors).** The sector $\{\Delta\neq0,\ \text{spectrally degenerate}\}$ is non-empty, and the sector $\{\Delta=0,\ \text{spectrally regular}\}$ is empty.
 
-The only independence available is the failure of the converse: a unit can have a repeated root, but a zero divisor cannot have a simple spectrum. In logical form,
+The only independence available is the failure of the converse: An invertible element can have a repeated root, but a zero divisor cannot have a simple spectrum. In logical form,
 
 $$
 \text{spectrally regular}\Longrightarrow\text{norm-regular},
@@ -137,7 +137,7 @@ In terms of information, the invariants form a hierarchy:
 
 | Invariant | Data | What it determines |
 |---|---|---|
-| $\Delta$ | one real number | whether the element is a unit |
+| $\Delta$ | one real number | whether the element is invertible |
 | $(\lvert Q_+\rvert^2,\lvert Q_-\rvert^2)$ | two non-negative reals | the two factors of $\Delta$ and which half vanishes |
 | $(t_\pm,\lvert\vec q_\pm\rvert^2)$ | four reals | the two half-spectra and the repeated-root pattern |
 | $p_{\tilde Q}=p_+p_-$ | a monic quartic | the spectrum with the multiplicity of the reduced polynomial |
@@ -213,7 +213,7 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 ## Further Reading
 
 - [Split-Biquaternion Algebra](split-biquaternion-algebra.html), for the algebra and its idempotents.
-- [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html), for the reduced norm, the inverse formula and the unit group.
+- [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html), for the reduced norm, the inverse formula and the group of invertibles.
 - [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the two ideals and the zero-divisor set.
 - [Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html), for the repeated-root criterion.
 - [The Spectrum](the-spectrum.html), for the complex cone and the comparison with the split case.

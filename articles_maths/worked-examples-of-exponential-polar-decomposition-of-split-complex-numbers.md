@@ -47,7 +47,7 @@ The component sign is read from the quadrant of the pair $(q,q')$:
 | $q'>\lvert q\rvert$ | $j$ | right wedge $R$ |
 | $q'<-\lvert q\rvert$ | $-j$ | left wedge $L$ |
 
-The four conditions are exclusive and cover every unit. In every row the product $\epsilon Q$ lies in $F$.
+The four conditions are exclusive and cover every invertible element. In every row the product $\epsilon Q$ lies in $F$.
 
 The two combinations are recovered from the polar data by
 
@@ -79,7 +79,7 @@ $$
 M_Q=\begin{pmatrix}q&q'\\q'&q\end{pmatrix}.
 $$
 
-Its trace is $2q$ and its determinant is $q^2-q'^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is a unit. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.
+Its trace is $2q$ and its determinant is $q^2-q'^2=(q+q')(q-q')$. It is invertible exactly when $Q$ is invertible. The product $\epsilon Q$ acts on $F$ by a positive scale and a hyperbolic rotation.
 
 ### The Null Cone
 
@@ -572,4 +572,4 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
 - *Worked Examples of Exponential Polar Decomposition of Biquaternions*, for the noncommutative companion.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.
-- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the four components of the unit group.
+- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the four components of the group of invertibles.

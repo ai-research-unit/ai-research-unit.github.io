@@ -134,7 +134,7 @@ and $e_t$ is fixed.
 
 **Theorem (the versors act by automorphisms).** For every versor $\tilde U$ the map $\Phi_{\tilde U}\colon\tilde Q\mapsto\tilde U\tilde Q\tilde U^{\natural}$ is an automorphism of the algebra and therefore of the bracket, and the map $\tilde U\mapsto\Phi_{\tilde U}$ is a homomorphism whose kernel is $\{\pm e_t\}$.
 
-*Proof.* $\Phi_{\tilde U}$ is the conjugation by a unit, so it preserves the product; the kernel is computed as in the classical theory of the quaternion units. Verified numerically on random versors and random pairs, with a deviation of zero for the product and for the bracket.
+*Proof.* $\Phi_{\tilde U}$ is the conjugation by an invertible element, so it preserves the product; the kernel is computed as in the classical theory of the quaternion units. Verified numerically on random versors and random pairs, with a deviation of zero for the product and for the bracket.
 
 **Remark (the group).** The versors form the group $\mathrm{SL}(2,\mathbb{C})$, of complex dimension three, and the automorphism group of the bracket that they generate is $\mathrm{SO}(3,\mathbb{C})$, the group of the linear maps of $\mathbb{B}_V$ preserving the cross product and the Euclidean form. The map is two-to-one, and it is the classical spin cover of the rotation group, read over $\mathbb{C}$.
 

@@ -7,7 +7,7 @@ This is the first article of the Integers system in Part V, and it occupies the 
 
 This article carries out the construction by pairs, verifies that the operations are well defined and satisfy the ring axioms, develops the order and the absolute value, describes the divisibility structure — units, primes, greatest common divisors, the Euclidean algorithm, the principal ideal domain and unique factorisation — and records the quotients $\mathbb{Z}/n\mathbb{Z}$. The system supports an algebra slot and an applications slot: there is no geometry of the integers, no interval structure beyond the discrete order, no analysis, and the arithmetic applications are the modular arithmetic, which is written after this article and is not used here. The divisibility theory of *The Natural Numbers* is the base of the divisibility theory below, and the construction of $\mathbb{Q}$ as the fraction field of $\mathbb{Z}$ belongs to *The Rational Numbers*.
 
-Throughout, $\mathbb{Z}$ is the ring of integers, its elements are written as differences $a - b$ of naturals or as the cosets of the diagonal in $\mathbb{N} \times \mathbb{N}$, $n \mapsto \bar n$ is the embedding $\mathbb{N} \hookrightarrow \mathbb{Z}$, the units are $\pm 1$, and the order is the unique total order making $\mathbb{Z}$ an ordered ring. The corpus's default base is the commutative ring with identity, and $\mathbb{Z}$ is the initial such ring; every result below is stated for that base. The theory of rings, ideals, principal ideal domains and Euclidean domains is from *Rings* and *Unique Factorisation Domains*; the order-theoretic background is from *Order Theory and Lattices*.
+Throughout, $\mathbb{Z}$ is the ring of integers, its elements are written as differences $a - b$ of naturals or as the cosets of the diagonal in $\mathbb{N} \times \mathbb{N}$, $n \mapsto \bar n$ is the embedding $\mathbb{N} \hookrightarrow \mathbb{Z}$, the invertibles are $\pm 1$, and the order is the unique total order making $\mathbb{Z}$ an ordered ring. The corpus's default base is the commutative ring with identity, and $\mathbb{Z}$ is the initial such ring; every result below is stated for that base. The theory of rings, ideals, principal ideal domains and Euclidean domains is from *Rings* and *Unique Factorisation Domains*; the order-theoretic background is from *Order Theory and Lattices*.
 
 ## The Construction of $\mathbb{Z}$
 
@@ -55,9 +55,9 @@ $$
 
 **Proof.** The ring axioms were verified in the construction. If $n = a - b$ and $m = c - d$ with $a,b,c,d \in \mathbb{N}$ and $nm = 0$, then $ac + bd = ad + bc$ in $\mathbb{Z}$, and since both sides lie in $\mathbb{N}$ they are equal there. If $a \geq b$, write $a = b + k$ with $k \in \mathbb{N}$; substituting gives $bc + kc + bd = bd + kd + bc$, hence $kc = kd$ and $k(c-d) = 0$, so $k = 0$ or $c = d$ by the integrality of $\mathbb{N}$, that is, $n = 0$ or $m = 0$. If $a < b$, the same computation with $b = a + k$ gives $k(d-c) = 0$, so again $n = 0$ or $m = 0$. The characteristic is zero because the embedding $\mathbb{N} \to \mathbb{Z}$ is injective and $k \cdot 1 = k \neq 0$ for $k > 0$.
 
-**Theorem (cancellation).** If $nm = nk$ and $n \neq 0$ then $m = k$. Consequently the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is cancellative and its group of units is $\{1, -1\}$.
+**Theorem (cancellation).** If $nm = nk$ and $n \neq 0$ then $m = k$. Consequently the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is cancellative and its group of invertibles is $\{1, -1\}$.
 
-**Proof.** $n(m-k) = 0$ and the integrality gives $m - k = 0$. The units are the divisors of $1$; an integer $u$ with $uv = 1$ has $\lvert u \rvert \lvert v \rvert = 1$ in $\mathbb{N}$, so $\lvert u\rvert = 1$.
+**Proof.** $n(m-k) = 0$ and the integrality gives $m - k = 0$. The invertibles are the divisors of $1$; an integer $u$ with $uv = 1$ has $\lvert u \rvert \lvert v \rvert = 1$ in $\mathbb{N}$, so $\lvert u\rvert = 1$.
 
 **Theorem.** The **division algorithm** holds in $\mathbb{Z}$: for all $n, m \in \mathbb{Z}$ with $m \neq 0$ there are $q, r \in \mathbb{Z}$ with
 
@@ -88,13 +88,13 @@ With this order, $\mathbb{Z}$ is a discrete ordered ring: every element has an i
 
 ## Divisibility and Factorisation
 
-### Units, Primes and gcd
+### Invertibles, Primes and gcd
 
-**Definition.** For $n, m \in \mathbb{Z}$, $n \mid m$ if $m = nk$ for some $k$. Two integers are **associates** if each divides the other, which in $\mathbb{Z}$ means $n = \pm m$. An element $p$ is **irreducible** if $p \neq 0$, $p$ is not a unit, and $p = nm$ forces $n$ or $m$ to be a unit; $p$ is **prime** if $p$ is not a unit and $p \mid nm$ implies $p \mid n$ or $p \mid m$. A **greatest common divisor** of $n$ and $m$ is a common divisor divisible by every common divisor.
+**Definition.** For $n, m \in \mathbb{Z}$, $n \mid m$ if $m = nk$ for some $k$. Two integers are **associates** if each divides the other, which in $\mathbb{Z}$ means $n = \pm m$. An element $p$ is **irreducible** if $p \neq 0$, $p$ is not invertible, and $p = nm$ forces $n$ or $m$ to be an invertible element; $p$ is **prime** if $p$ is not invertible and $p \mid nm$ implies $p \mid n$ or $p \mid m$. A **greatest common divisor** of $n$ and $m$ is a common divisor divisible by every common divisor.
 
 **Theorem.** In $\mathbb{Z}$ an element is irreducible if and only if it is prime, and the irreducibles are the numbers $\pm p$ with $p$ a prime of $\mathbb{N}$.
 
-**Proof.** An irreducible is prime in every unique factorisation domain; conversely a prime is irreducible, since $p = nm$ with $p$ prime gives $p \mid n$ or $p \mid m$, so one of $n, m$ is an associate of $p$ and the other is a unit. The irreducibles of $\mathbb{N}$ are its primes, and adjoining the sign gives the irreducibles of $\mathbb{Z}$.
+**Proof.** An irreducible is prime in every unique factorisation domain; conversely a prime is irreducible, since $p = nm$ with $p$ prime gives $p \mid n$ or $p \mid m$, so one of $n, m$ is an associate of $p$ and the other is invertible. The irreducibles of $\mathbb{N}$ are its primes, and adjoining the sign gives the irreducibles of $\mathbb{Z}$.
 
 **Theorem (Bézout).** Any two integers $n, m$, not both zero, have a greatest common divisor $d$, unique up to sign, and there are $u, v \in \mathbb{Z}$ with
 
@@ -109,9 +109,9 @@ The Euclidean algorithm computes $d$, and $d$ is determined up to sign by this p
 
 **Theorem.** Every ideal of $\mathbb{Z}$ is principal: $I = (n)$ for some $n \geq 0$, and $\mathbb{Z}$ is a **principal ideal domain**. The ideal $(n)$ is prime if and only if $n$ is $0$ or a prime, and maximal if and only if $n$ is a prime.
 
-**Proof.** If $I \neq 0$, let $n$ be the least positive element of $I$; the division algorithm gives $I = (n)$. The ideal $(n)$ is prime exactly when $n$ has no proper divisors other than units, by the definition of primality; prime ideals of a principal ideal domain are maximal because $\mathbb{Z}/(p)$ is a field for $p$ prime.
+**Proof.** If $I \neq 0$, let $n$ be the least positive element of $I$; the division algorithm gives $I = (n)$. The ideal $(n)$ is prime exactly when $n$ has no proper divisors other than invertibles, by the definition of primality; prime ideals of a principal ideal domain are maximal because $\mathbb{Z}/(p)$ is a field for $p$ prime.
 
-**Theorem (fundamental theorem of arithmetic).** Every nonzero non-unit of $\mathbb{Z}$ is a product of irreducibles, uniquely up to order and up to multiplication by units. Equivalently, the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is the free commutative monoid on the primes $\pm p$ modulo the relation $-1$; every nonzero integer has a unique expression
+**Theorem (fundamental theorem of arithmetic).** Every nonzero non-invertible of $\mathbb{Z}$ is a product of irreducibles, uniquely up to order and up to multiplication by invertibles. Equivalently, the multiplicative monoid $\mathbb{Z}\setminus\{0\}$ is the free commutative monoid on the primes $\pm p$ modulo the relation $-1$; every nonzero integer has a unique expression
 
 $$ \boxed{\;n = \pm \prod_{p} p^{v_p(n)}, \qquad v_p(n) \in \mathbb{N}\;},
 $$
@@ -136,7 +136,7 @@ up to sign, so that $\gcd(n,m) \cdot \operatorname{lcm}(n,m) = \lvert nm \rvert$
 
 **Theorem.** $\mathbb{Z}/n\mathbb{Z}$ has exactly $n$ elements, it is a commutative ring with identity, and it is a field if and only if $n$ is prime, in which case it is $\mathbb{F}_p$. For every $n$, the canonical map $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ is a surjective ring homomorphism with kernel $(n)$, and $\mathbb{Z}/n\mathbb{Z}$ is the initial object among rings $A$ with $n \cdot 1_A = 0$.
 
-**Proof.** The classes are $0, 1, \dots, n-1$ and are distinct, so there are $n$ of them. If $n$ is prime then every nonzero class is a unit by Bézout: $up + vm = 1$ gives an inverse of $m$; if $n = m_1 m_2$ with $1 < m_1, m_2 < n$, then $m_1$ is a zero divisor and not a unit. The universal property is the standard one of the quotient by the kernel of the map $\mathbb{Z} \to A$.
+**Proof.** The classes are $0, 1, \dots, n-1$ and are distinct, so there are $n$ of them. If $n$ is prime then every nonzero class is invertible by Bézout: $up + vm = 1$ gives an inverse of $m$; if $n = m_1 m_2$ with $1 < m_1, m_2 < n$, then $m_1$ is a zero divisor and not an invertible element. The universal property is the standard one of the quotient by the kernel of the map $\mathbb{Z} \to A$.
 
 **Corollary (Chinese remainder).** If $m$ and $n$ are coprime then $\mathbb{Z}/mn\mathbb{Z} \cong \mathbb{Z}/m\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z}$ as rings.
 
@@ -185,7 +185,7 @@ up to sign, so that $\gcd(n,m) \cdot \operatorname{lcm}(n,m) = \lvert nm \rvert$
 
 The integers are the Grothendieck group of the additive monoid of the naturals: $\mathbb{Z} = (\mathbb{N}\times\mathbb{N})/{\sim}$ with $(a,b) \sim (c,d) \iff a+d = b+c$, with componentwise addition and the multiplication $(a,b)(c,d) = (ac+bd, ad+bc)$. The quotient is a commutative ring with identity, the map $n \mapsto [(n,0)]$ is an injective semiring homomorphism, and $\mathbb{Z}$ is the initial object among commutative rings with identity: every such ring receives a unique unital homomorphism from $\mathbb{Z}$, injective exactly in characteristic $0$. Additively, $\mathbb{Z}$ is the free group on one generator, and the abelian groups are its modules.
 
-$\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in which cancellation holds and the division algorithm makes $\lvert\cdot\rvert$ a Euclidean function. Its order is the unique total order making it an ordered ring; the order is discrete, Archimedean and well ordered from below, with order type $\varkappa_{\mathrm{crd}}$. Divisibility is governed by the associates $n = \pm m$, the irreducibles are the $\pm p$ with $p$ prime in $\mathbb{N}$, irreducible and prime coincide, the greatest common divisor exists and satisfies the Bézout identity $un + vm = d$, and every ideal is principal, so that $\mathbb{Z}$ is a Euclidean domain, a principal ideal domain and a unique factorisation domain with $n = \pm\prod p^{v_p(n)}$. The quotients $\mathbb{Z}/n\mathbb{Z}$ have $n$ elements and are fields exactly for $n$ prime, and the Chinese remainder theorem decomposes $\mathbb{Z}/mn\mathbb{Z}$ for coprime $m, n$. The naturals embed in $\mathbb{Z}$ as the nonnegative elements and $\mathbb{Z}$ embeds in $\mathbb{Q}$ as its fraction field, in $\mathbb{R}$ and in $\mathbb{C}$; $\mathbb{Z}$ is countable, of cardinality $\aleph_0$.
+$\mathbb{Z}$ is an integral domain of characteristic zero with invertibles $\pm 1$, in which cancellation holds and the division algorithm makes $\lvert\cdot\rvert$ a Euclidean function. Its order is the unique total order making it an ordered ring; the order is discrete, Archimedean and well ordered from below, with order type $\varkappa_{\mathrm{crd}}$. Divisibility is governed by the associates $n = \pm m$, the irreducibles are the $\pm p$ with $p$ prime in $\mathbb{N}$, irreducible and prime coincide, the greatest common divisor exists and satisfies the Bézout identity $un + vm = d$, and every ideal is principal, so that $\mathbb{Z}$ is a Euclidean domain, a principal ideal domain and a unique factorisation domain with $n = \pm\prod p^{v_p(n)}$. The quotients $\mathbb{Z}/n\mathbb{Z}$ have $n$ elements and are fields exactly for $n$ prime, and the Chinese remainder theorem decomposes $\mathbb{Z}/mn\mathbb{Z}$ for coprime $m, n$. The naturals embed in $\mathbb{Z}$ as the nonnegative elements and $\mathbb{Z}$ embeds in $\mathbb{Q}$ as its fraction field, in $\mathbb{R}$ and in $\mathbb{C}$; $\mathbb{Z}$ is countable, of cardinality $\aleph_0$.
 
 ## Summary of Notation
 

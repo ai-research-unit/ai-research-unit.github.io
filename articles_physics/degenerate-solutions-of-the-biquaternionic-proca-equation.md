@@ -186,7 +186,7 @@ and which is degenerate at its nodes. The chart is a chart of $\mathbb{B}_\Phi$,
 
 **The count.** A general plane wave has six parameters: three of momentum on the mass shell and three of amplitude after the Lorenz condition. The lightlike amplitudes form the empty subfamily at $k_m\neq0$, and at $k_m=0$ the longitudinal subfamily, three parameters of momentum and one of amplitude. That is not the count of degenerate solutions, because a real wave is degenerate at its nodes whatever its amplitude: the numbers count the degenerate amplitudes, and those are the empty family or the longitudinal one.
 
-**The comparison with the Dirac case.** For a massive Dirac plane wave the phase is a unit of the algebra, so the norm of the field is the norm of the polarization times a unit that never vanishes: degeneracy is a property of the polarization, of codimension two in the free eight, and the degenerate family has nine parameters against eleven. For the Proca wave the chart sees a real scale and not a unit, so degeneracy is transported as a scale and appears at the nodes. The Dirac degeneracy is a property of the polarization, and the Proca degeneracy is a property of the point.
+**The comparison with the Dirac case.** For a massive Dirac plane wave the phase is invertible in the algebra, so the norm of the field is the norm of the polarization times an invertible element that never vanishes: degeneracy is a property of the polarization, of codimension two in the free eight, and the degenerate family has nine parameters against eleven. For the Proca wave the chart sees a real scale and not an invertible element, so degeneracy is transported as a scale and appears at the nodes. The Dirac degeneracy is a property of the polarization, and the Proca degeneracy is a property of the point.
 
 **Where degenerate values occur.** A superposition's local value is a sum of values, and a sum is not confined to one line of the carrier. Two lightlike values of different directions add to a value that is not lightlike:
 
@@ -228,7 +228,7 @@ $$
 
 **Why the mass is the switch.** At $k_m\neq0$ the identity gives $\tilde F_0^2=-k_m^2\langle\tilde A_0\rangle_\natural$, and the norm of the amplitude is strictly positive, so the field strength's square is strictly negative. A massive plane wave's field strength is never null, and its second invariant is the potential's norm with a sign. The mass is what moves the field strength off its cone, and it does so for every mode at once.
 
-**A caveat on superpositions.** Neither statement survives a sum of modes with different momenta. The field strength of a sum is not the sum of the field strengths, and its square is not the sum of the squares; a superposition of two massless modes of different momenta is generally not a null field. The sector statements of this section are statements about single modes, and the Dirac article's massless case has the same limitation: its two-sided field is generically a unit.
+**A caveat on superpositions.** Neither statement survives a sum of modes with different momenta. The field strength of a sum is not the sum of the field strengths, and its square is not the sum of the squares; a superposition of two massless modes of different momenta is generally not a null field. The sector statements of this section are statements about single modes, and the Dirac article's massless case has the same limitation: its two-sided field is generically an invertible element.
 
 ## The Polar Word and Its Boundary
 

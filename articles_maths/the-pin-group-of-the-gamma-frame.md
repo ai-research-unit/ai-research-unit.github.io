@@ -60,7 +60,7 @@ $$
 (A_k)^2=-I\quad(k=1,2,3),\qquad
 (A_5)^2=+I .
 $$
-The first four are the Lorentzian unit vectors; the fifth is the pseudoscalar, not a vector, but it is a unit in the Clifford group. The metric square is
+The first four are the Lorentzian unit vectors; the fifth is the pseudoscalar, not a vector, but it is invertible in the Clifford group. The metric square is
 $$
 q(A_\mu)=g_{\mu\mu}\in\{+1,-1\}.
 $$
@@ -82,7 +82,7 @@ $$
 
 **The determinant.** The reflection $\rho_\zeta$ has determinant $-1$ on $V$. A product of $k$ reflections has determinant $(-1)^k$. The even words give determinant $+1$ and form the even part of Pin; the norm-one even words form the spin group, and the norm $-1$ even words form its other component. The odd words give determinant $-1$ and form the odd part. The Lorentz determinant is the parity of the word length, not the determinant of the $4\times4$ matrix.
 
-**The matrix determinant.** In the complex-linear description each frame element is a unit multiple of the two-sided product $L_{a}R_{b}$, and every one has determinant $+1$ as a $4\times4$ matrix:
+**The matrix determinant.** In the complex-linear description each frame element is an invertible multiple of the two-sided product $L_{a}R_{b}$, and every one has determinant $+1$ as a $4\times4$ matrix:
 $$
 \det(iL_{e_t}R_{\vec e_x})=\det(iL_{\vec e_x}R_{\vec e_y})=\det(iL_{\vec e_y}R_{\vec e_y})=\det(iL_{\vec e_z}R_{\vec e_y})=\det(-iL_{e_t}R_{\vec e_z})=1 .
 $$
@@ -206,7 +206,7 @@ The Pin group of the Lorentzian four-space is not contained in $\mathbb{B}$; its
 $$
 \mathrm{Pin}(1,3)=L(\mathbb{B}^{\times}_1)\cup L(\mathbb{B}^{\times}_{-1})\cup\bar{\cdot}L(\mathbb{B}^{\times}_1)\cup\bar{\cdot}L(\mathbb{B}^{\times}_{-1}),
 $$
-in the real-linear dictionary. The five frame elements are unit vectors with squares $+1,-1,-1,-1$; the reflection in the hyperplane orthogonal to a unit $\zeta$ is $\rho_\zeta(\eta)=-\varepsilon(\zeta)\zeta\eta\zeta$ with $\varepsilon(\zeta)=q(\zeta)=\zeta^2$, and its determinant is $-1$. The frame generates a finite subgroup of order $32$,
+in the real-linear dictionary. The five frame elements are unit vectors with squares $+1,-1,-1,-1$; the reflection in the hyperplane orthogonal to an invertible element $\zeta$ is $\rho_\zeta(\eta)=-\varepsilon(\zeta)\zeta\eta\zeta$ with $\varepsilon(\zeta)=q(\zeta)=\zeta^2$, and its determinant is $-1$. The frame generates a finite subgroup of order $32$,
 $$
 G_A=L(U)\cup\bar{\cdot}L(U),
 $$

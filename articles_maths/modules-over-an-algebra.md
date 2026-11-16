@@ -139,7 +139,7 @@ for all $a \in A$ and $m,m' \in M$. Since $A$ is an $R$-algebra, every $A$-linea
 
 The set $\operatorname{Hom}_A(M,N)$ of $A$-linear maps is an abelian group under pointwise addition, with zero the zero map. It carries no natural left $A$-module structure when $A$ is noncommutative: the attempt $(af)(m)=a f(m)$ fails to be $A$-linear, since $(af)(bm)=a f(bm)=ab f(m)$ while $b(af)(m)=ba f(m)$, and these differ unless $a$ and $b$ commute. What is available is a module structure over the centre. If $z \in Z(A)$ then $(zf)(m)=f(zm)$ defines the same map as $(zf)(m)=z f(m)$, and this makes $\operatorname{Hom}_A(M,N)$ a module over $Z(A)$, hence in particular an $R$-module. More generally, if ${}_B M_A$ is a $(B,A)$-bimodule then $\operatorname{Hom}_A(M,N)$ is a left $B$-module by $(bf)(m)=f(bm)$, the bimodule axiom providing the $A$-linearity of $bf$.
 
-The **endomorphism ring** $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of units is the **automorphism group** $\operatorname{Aut}_A(M)$. Both are studied .
+The **endomorphism ring** $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of invertibles is the **automorphism group** $\operatorname{Aut}_A(M)$. Both are studied .
 
 ### The isomorphism theorems
 
@@ -173,7 +173,7 @@ $$
 
 *Proof.* For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A_{\mathrm{opp}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.
 
-Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A_{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.
+Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A_{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of invertibles of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by invertibles, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.
 
 ## Annihilators, Cyclic Modules and Simple Modules
 
@@ -271,7 +271,7 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $F$, $K$ | fields |
 | $A$ | unital associative $R$-algebra, generally noncommutative |
 | $A_{\mathrm{opp}}$ | opposite algebra, product $a \cdot_{\mathrm{opp}} b = ba$ |
-| $A^{\times}$ | group of units of $A$ |
+| $A^{\times}$ | group of invertibles of $A$ |
 | $Z(A)$ | centre of $A$ |
 | $1_A$ | unit of $A$ |
 | $M$, $N$, $P$ | left $A$-modules |

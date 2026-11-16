@@ -67,7 +67,7 @@ $$
 \det(XY)=\det X\det Y,\qquad \operatorname{tr}(X+Y)=\operatorname{tr}X+\operatorname{tr}Y.
 $$
 
-The first identity is the reason the determinant is called the norm of the algebra: it is a multiplicative function of degree $n$, and it vanishes exactly on the non-units.
+The first identity is the reason the determinant is called the norm of the algebra: it is a multiplicative function of degree $n$, and it vanishes exactly on the non-invertibles.
 
 **The norm form of the algebra is the determinant.** In the language of quadratic forms, the norm form of a central simple algebra of degree $n$ is the reduced norm, a homogeneous polynomial of degree $n$. For $n=2$ it is a quadratic form; for $n\ge3$ it is a form of higher degree. The degree is the invariant that decides everything below.
 

@@ -64,7 +64,7 @@ $$
 
 **Proposition.** The elements $e_{1}$ and $e_{2}$ are idempotents, they are orthogonal, $e_{1}e_{2} = e_{2}e_{1} = 0$, they are central, and they are Hermitian, with $e_{1} + e_{2} = 1$.
 
-**Proof.** $e_{1}^{2} = (1,0)^{2} = (1,0) = e_{1}$ and $e_{2}^{2} = e_{2}$; $e_{1}e_{2} = (1,0)(0,1) = (0,0)$ and $e_{2}e_{1} = 0$; the centre of $A \times B$ is $Z(A) \times Z(B)$, so each $e_{i}$ is central because $1$ is central in its factor and $0$ is central in the other; and $e_{1}^{*} = (1^{*}, 0^{*}) = (1,0) = e_{1}$, likewise for $e_{2}$, because the unit is Hermitian by *Units and the Unitary Elements*, §*The Unit is Hermitian*.
+**Proof.** $e_{1}^{2} = (1,0)^{2} = (1,0) = e_{1}$ and $e_{2}^{2} = e_{2}$; $e_{1}e_{2} = (1,0)(0,1) = (0,0)$ and $e_{2}e_{1} = 0$; the centre of $A \times B$ is $Z(A) \times Z(B)$, so each $e_{i}$ is central because $1$ is central in its factor and $0$ is central in the other; and $e_{1}^{*} = (1^{*}, 0^{*}) = (1,0) = e_{1}$, likewise for $e_{2}$, because the unit is Hermitian by *Invertibles and the Unitary Elements*, §*The Unit is Hermitian*.
 
 **Remark.** The idempotents are Hermitian for the same reason the unit is: the involution fixes $1$, and it therefore fixes $(1,0)$ and $(0,1)$. This is not an accident of the construction but the reason the construction is compatible with the involution at all, and it is what makes the two components of the product genuine sesqualgebras and not merely algebras.
 

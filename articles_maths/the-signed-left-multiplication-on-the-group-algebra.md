@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The one-sided operators of the group algebra are the left and right convolutions and their mirrors, and the grade involution twists one of them: the **signed left multiplication** is the operator $f\mapsto a*\alpha(f)$, the composite of the left convolution by $a$ with the twist. It is a bounded operator, invertible when $a$ is a unit, but it is not an algebra automorphism and it is not a right or left multiplication; the family it forms is a coset of the left convolutions, its products with the unsigned left convolutions are unsigned, and the elements it fixes are the kernel of an unsigned left convolution. This article defines the operator, computes its laws, its relation to the unsigned left multiplication, its invertibility and its square, and describes the elements it fixes.
+The one-sided operators of the group algebra are the left and right convolutions and their mirrors, and the grade involution twists one of them: the **signed left multiplication** is the operator $f\mapsto a*\alpha(f)$, the composite of the left convolution by $a$ with the twist. It is a bounded operator, invertible when $a$ is invertible, but it is not an algebra automorphism and it is not a right or left multiplication; the family it forms is a coset of the left convolutions, its products with the unsigned left convolutions are unsigned, and the elements it fixes are the kernel of an unsigned left convolution. This article defines the operator, computes its laws, its relation to the unsigned left multiplication, its invertibility and its square, and describes the elements it fixes.
 
 The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the algebra $L^1(G)$ and its norm from *The Convolution Algebra $L^1(G)$*; the convolution operators and their composition laws from *Convolution on a Group* and *The Group Algebra as an Algebra of Operators*; the grade involution $\alpha$, the operator $\mathrm{A}f = \alpha(f)$, the signed two-sided operator and its composition laws from *The Signed Two-Sided Operator on the Group Algebra*; the abstract signed left multiplication, its relation to the unsigned one and the elements it fixes from *The Signed Left Multiplication on a Group* (Part I) and *The Signed Left Multiplication on a Topological Group* (Part II); and the bounded operators, the operator norm and the strong topology from *Operator Algebras*. The reflections are *Reflections as Signed Two-Sided Operators on the Group Algebra*, immediately preceding; the adjoint of this operator is *The Signed Adjoint of the Left Multiplication on the Group Algebra*, in the `- * Operator Theory` group of this category; the measure algebra is *The Involution on the Measure Algebra*, later. No adjoint is used here, and nothing Fourier-analytic occurs.
 
-Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and identity $e$; $\mathcal{A} = L^1(G)$ is the group algebra with convolution $f*g$, norm $\|f\|_1$ and unit group $\mathcal{A}^\times$; $\alpha$ is a continuous involutive automorphism, $\mathrm{A}f = \alpha(f)$ with $\mathrm{A}^2 = \mathrm{id}$; and the **signed left multiplication** by $a$ and the **signed right multiplication** by $b$ are
+Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$ and identity $e$; $\mathcal{A} = L^1(G)$ is the group algebra with convolution $f*g$, norm $\|f\|_1$ and group of invertibles $\mathcal{A}^\times$; $\alpha$ is a continuous involutive automorphism, $\mathrm{A}f = \alpha(f)$ with $\mathrm{A}^2 = \mathrm{id}$; and the **signed left multiplication** by $a$ and the **signed right multiplication** by $b$ are
 
 $$
 \Lambda_a = L_a\,\mathrm{A}, \quad \Lambda_a(f) = a*\alpha(f); \qquad \Lambda^{\mathrm R}_b = \mathrm{A}\,R_b, \quad \Lambda^{\mathrm R}_b(f) = \alpha(f)*b .
@@ -31,7 +31,7 @@ and $\|\Lambda_a\| = \|a\|_1$ when $\alpha$ is isometric, in particular for the 
 
 **Proposition (it is not an algebra homomorphism).** If $\alpha\neq\mathrm{id}$ then $\Lambda_a$ is not an algebra automorphism of $\mathcal{A}$, and it is not a left convolution; it preserves the product only in the degenerate cases $\alpha = \mathrm{id}$ or $a = 0$.
 
-**Proof.** $\Lambda_a(f*g) = a*\alpha(f)*\alpha(g)$ and $\Lambda_a(f)*\Lambda_a(g) = a*\alpha(f)*a*\alpha(g)$; these agree for all $f, g$ exactly when $a = 0$ or $\alpha = \mathrm{id}$. Similarly $\Lambda_a = L_b$ would give $\mathrm{A} = L_{a^{-1}*b}$ when $a$ is a unit, and a left convolution is not the automorphism $\mathrm{A}$ unless $\mathrm{A} = \mathrm{id}$.
+**Proof.** $\Lambda_a(f*g) = a*\alpha(f)*\alpha(g)$ and $\Lambda_a(f)*\Lambda_a(g) = a*\alpha(f)*a*\alpha(g)$; these agree for all $f, g$ exactly when $a = 0$ or $\alpha = \mathrm{id}$. Similarly $\Lambda_a = L_b$ would give $\mathrm{A} = L_{a^{-1}*b}$ when $a$ is invertible, and a left convolution is not the automorphism $\mathrm{A}$ unless $\mathrm{A} = \mathrm{id}$.
 
 **Remark (an affine operator).** The signed left multiplication is an **affine** operator on the algebra: it is a bounded linear map that permutes the algebra without preserving its multiplication, exactly as a reflection does. Its study belongs with the operators that act on $\mathcal{A}$ as a Banach space rather than as an algebra, and the only algebraic structure it respects is the grading carried by $\mathrm{A}$.
 
@@ -93,11 +93,11 @@ $$
 
 so $\operatorname{Fix}_L(\delta_k)$ is the linear span of the square roots of $k$: for $G = \mathbb{R}$ additive and $k$ arbitrary it is one-dimensional, spanned by $\delta_{k/2}$; for $G = \mathbb{Z}$ with $k$ odd it is $\{0\}$, since $k$ has no square root; on a divisible abelian group where every element has two square roots it is two-dimensional. This is the group-algebra form of the square-root example of *The Signed Left Multiplication on a Topological Group*.
 
-**Example (the trivial grade involution).** If $\alpha = \mathrm{id}$ then $\Lambda_a = L_a$ and $\operatorname{Fix}_L(a) = \ker(L_a - \mathrm{id})$: the signed operator is the unsigned one, its fixed set is the $1$-eigenspace of left convolution by $a$, and the family is not a new one. When $a$ is a unit different from $1$ this kernel is $\{0\}$.
+**Example (the trivial grade involution).** If $\alpha = \mathrm{id}$ then $\Lambda_a = L_a$ and $\operatorname{Fix}_L(a) = \ker(L_a - \mathrm{id})$: the signed operator is the unsigned one, its fixed set is the $1$-eigenspace of left convolution by $a$, and the family is not a new one. When $a$ is invertible different from $1$ this kernel is $\{0\}$.
 
 ## Invertibility and the Square
 
-**Theorem (invertibility).** The signed left multiplication $\Lambda_a$ is invertible exactly when $a$ is a unit, and then
+**Theorem (invertibility).** The signed left multiplication $\Lambda_a$ is invertible exactly when $a$ is invertible, and then
 
 $$
 \boxed{\;\Lambda_a^{-1} = \mathrm{A}\,L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}}\;} ,
@@ -105,7 +105,7 @@ $$
 
 that is $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g)$; the inverse of a signed left multiplication is again a signed left multiplication, and the invertible signed left multiplications form a coset of the group of invertible left convolutions.
 
-**Proof.** $\Lambda_a = L_a\mathrm{A}$ is invertible exactly when $L_a$ is, that is exactly when $a$ is a unit, and then $\Lambda_a^{-1} = \mathrm{A}^{-1}L_{a^{-1}} = \mathrm{A}L_{a^{-1}}$. For the explicit form, $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g) = \Lambda_{\alpha(a)^{-1}}(g)$, using that $\alpha$ is multiplicative and $\alpha(a^{-1}) = \alpha(a)^{-1}$.
+**Proof.** $\Lambda_a = L_a\mathrm{A}$ is invertible exactly when $L_a$ is, that is exactly when $a$ is invertible, and then $\Lambda_a^{-1} = \mathrm{A}^{-1}L_{a^{-1}} = \mathrm{A}L_{a^{-1}}$. For the explicit form, $\Lambda_a^{-1}(g) = \alpha(a^{-1}*g) = \alpha(a)^{-1}*\alpha(g) = \Lambda_{\alpha(a)^{-1}}(g)$, using that $\alpha$ is multiplicative and $\alpha(a^{-1}) = \alpha(a)^{-1}$.
 
 **Proposition (the square and the involution case).** The square of the signed left multiplication is the unsigned left convolution
 
@@ -113,15 +113,15 @@ $$
 \Lambda_a^2 = L_{a*\alpha(a)},
 $$
 
-so $\Lambda_a$ is an involution of the Banach space $\mathcal{A}$ if and only if $a*\alpha(a) = 1$, equivalently $\alpha(a) = a^{-1}$ when $a$ is a unit; the set of such units is the **inverted set** $I(\alpha) = \{u\in\mathcal{A}^\times : \alpha(u) = u^{-1}\}$, on which the associated involution of the group agrees with the grade involution.
+so $\Lambda_a$ is an involution of the Banach space $\mathcal{A}$ if and only if $a*\alpha(a) = 1$, equivalently $\alpha(a) = a^{-1}$ when $a$ is invertible; the set of such units is the **inverted set** $I(\alpha) = \{u\in\mathcal{A}^\times : \alpha(u) = u^{-1}\}$, on which the associated involution of the group agrees with the grade involution.
 
-**Proof.** $\Lambda_a^2 = L_a\mathrm{A}L_a\mathrm{A} = L_aL_{\alpha(a)}\mathrm{A}^2 = L_{a*\alpha(a)}$ by the intertwining $\mathrm{A}L_a = L_{\alpha(a)}\mathrm{A}$; a left convolution $L_c$ is the identity exactly when $c = 1$ (for $\mathcal{A}$ unital) or, in general, when $c$ is the identity of the unitisation. The identification $a*\alpha(a) = 1\iff\alpha(a) = a^{-1}$ for a unit $a$ is immediate.
+**Proof.** $\Lambda_a^2 = L_a\mathrm{A}L_a\mathrm{A} = L_aL_{\alpha(a)}\mathrm{A}^2 = L_{a*\alpha(a)}$ by the intertwining $\mathrm{A}L_a = L_{\alpha(a)}\mathrm{A}$; a left convolution $L_c$ is the identity exactly when $c = 1$ (for $\mathcal{A}$ unital) or, in general, when $c$ is the identity of the unitisation. The identification $a*\alpha(a) = 1\iff\alpha(a) = a^{-1}$ for an invertible element $a$ is immediate.
 
 **Remark (relation to the reflections).** The one-sided operator is the specialisation of the signed two-sided operator in which one factor is the identity, $\Lambda_a = \mathcal{T}_{a,1} = \Sigma^\alpha_{a,1}$ when $\mathcal{A}$ is unital, and more generally $\Sigma^\alpha_{a,b} = \Lambda_aR_{\alpha(b)}$; the signed left multiplication is thus the one-sided member of the two-sided family of the category, and the reflections are the members whose two factors are inverse to each other. The carrier condition of the reflection, $u*\alpha(u)\in Z(\mathcal{A})$, is the centrality of the square factor, and it is weaker than the involution condition $a*\alpha(a) = 1$ of the present section; the two coincide when the only central element of the form $a*\alpha(a)$ arising is $1$.
 
 ## Summary
 
-The signed left multiplication on the group algebra is $\Lambda_a(f) = a*\alpha(f) = L_a\mathrm{A}$, a bounded operator with $\|\Lambda_a\|\leq\|a\|_1\|\alpha\|$, equal to $\|a\|_1$ when $\alpha$ is isometric; it is an affine operator, not an algebra automorphism and not a left convolution unless $\alpha = \mathrm{id}$. Its composition laws are $\Lambda_a\Lambda_b = L_{a*\alpha(b)}$, $L_a\Lambda_b = \Lambda_{a*b}$ and $\Lambda_aL_b = \Lambda_{a*\alpha(b)}$, so the signed left multiplications form the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A} = \mathrm{A}L(\mathcal{A})$, a product of two of them is unsigned, and the generated group is $L(\mathcal{A})^\times\sqcup L(\mathcal{A})^\times\mathrm{A}$; the signed family is disjoint from the unsigned one when $\alpha\neq\mathrm{id}$. The operator is invertible exactly when $a$ is a unit, with $\Lambda_a^{-1} = \mathrm{A}L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}}$, an inverse that is again signed; its square is $\Lambda_a^2 = L_{a*\alpha(a)}$, so it is an involution exactly for the units of the inverted set $I(\alpha)$, $\alpha(a) = a^{-1}$. The fixed set $\operatorname{Fix}_L(a)$ is the closed kernel of $\Lambda_a - \mathrm{id}$, equal to the $1$-eigenspace $\ker(L_{a*\alpha(a)} - \mathrm{id})$ of an unsigned left convolution; on an abelian group with the inversion as twist it is the span of the square roots of the translating element, and it may be $\{0\}$. The signed left multiplication is the one-sided specialisation of the signed two-sided operator, and its adjoint is *The Signed Adjoint of the Left Multiplication on the Group Algebra*.
+The signed left multiplication on the group algebra is $\Lambda_a(f) = a*\alpha(f) = L_a\mathrm{A}$, a bounded operator with $\|\Lambda_a\|\leq\|a\|_1\|\alpha\|$, equal to $\|a\|_1$ when $\alpha$ is isometric; it is an affine operator, not an algebra automorphism and not a left convolution unless $\alpha = \mathrm{id}$. Its composition laws are $\Lambda_a\Lambda_b = L_{a*\alpha(b)}$, $L_a\Lambda_b = \Lambda_{a*b}$ and $\Lambda_aL_b = \Lambda_{a*\alpha(b)}$, so the signed left multiplications form the coset $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A} = \mathrm{A}L(\mathcal{A})$, a product of two of them is unsigned, and the generated group is $L(\mathcal{A})^\times\sqcup L(\mathcal{A})^\times\mathrm{A}$; the signed family is disjoint from the unsigned one when $\alpha\neq\mathrm{id}$. The operator is invertible exactly when $a$ is invertible, with $\Lambda_a^{-1} = \mathrm{A}L_{a^{-1}} = \Lambda_{\alpha(a)^{-1}}$, an inverse that is again signed; its square is $\Lambda_a^2 = L_{a*\alpha(a)}$, so it is an involution exactly for the invertibles of the inverted set $I(\alpha)$, $\alpha(a) = a^{-1}$. The fixed set $\operatorname{Fix}_L(a)$ is the closed kernel of $\Lambda_a - \mathrm{id}$, equal to the $1$-eigenspace $\ker(L_{a*\alpha(a)} - \mathrm{id})$ of an unsigned left convolution; on an abelian group with the inversion as twist it is the span of the square roots of the translating element, and it may be $\{0\}$. The signed left multiplication is the one-sided specialisation of the signed two-sided operator, and its adjoint is *The Signed Adjoint of the Left Multiplication on the Group Algebra*.
 
 ## Summary of Notation
 
@@ -135,7 +135,7 @@ The signed left multiplication on the group algebra is $\Lambda_a(f) = a*\alpha(
 | $\Lambda_a\Lambda_b = L_{a*\alpha(b)}$ | Product of two signed left multiplications is unsigned |
 | $\Lambda(\mathcal{A}) = L(\mathcal{A})\mathrm{A}$ | The signed left multiplications as a coset |
 | $\operatorname{Fix}_L(a) = \ker(\Lambda_a - \mathrm{id}) = \ker(L_{a*\alpha(a)} - \mathrm{id})$ | The fixed set, closed |
-| $\Lambda_a^{-1} = \Lambda_{\alpha(a)^{-1}}$ | The inverse, invertible iff $a$ is a unit |
+| $\Lambda_a^{-1} = \Lambda_{\alpha(a)^{-1}}$ | The inverse, invertible iff $a$ is invertible |
 | $\Lambda_a^2 = L_{a*\alpha(a)}$ | The square |
 | $I(\alpha) = \{u\in\mathcal{A}^\times : \alpha(u) = u^{-1}\}$ | The inverted set, on which $\Lambda_a$ is an involution |
 

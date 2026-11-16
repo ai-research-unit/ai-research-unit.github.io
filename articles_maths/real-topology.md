@@ -15,7 +15,7 @@ $$
 q \longmapsto q
 $$
 
-is a linear isometry of $(\mathbb{R}, |\cdot|)$ onto the Euclidean line $\mathbb{R}^1$. The topology of $\mathbb{R}$ is therefore the Euclidean topology of the line; multiplication is bilinear, hence continuous, so $\mathbb{R}$ is a **topological algebra** over $\mathbb{R}$; and inversion is continuous on the units, so $\mathbb{R}^\times$ is a **topological group**.
+is a linear isometry of $(\mathbb{R}, |\cdot|)$ onto the Euclidean line $\mathbb{R}^1$. The topology of $\mathbb{R}$ is therefore the Euclidean topology of the line; multiplication is bilinear, hence continuous, so $\mathbb{R}$ is a **topological algebra** over $\mathbb{R}$; and inversion is continuous on the invertibles, so $\mathbb{R}^\times$ is a **topological group**.
 
 The two distinguished structures of the line are its order and its metric, and each generates a topology; the first result of the article is that the two are the same.
 
@@ -72,9 +72,9 @@ Thus the connected subsets of $\mathbb{R}$ are the intervals — the sets $[a,b]
 $$ \boxed{\;\mathbb{R} \setminus \{q_0\} = (-\infty, q_0) \sqcup (q_0, \infty), \qquad \pi_0(\mathbb{R}\setminus\{q_0\}) \cong \{\pm1\}\;}.
 $$
 
-In particular the group of units $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ has two components, the positive and negative rays, as recorded in *Real Norm and Invertibility* and *Real Exponential and Lie Group Structure*. In the complex case the punctured plane is connected, because a plane minus a point can be walked around; the disconnectedness of the punctured line is the one-dimensional exception, and it is why the real unit group is disconnected.
+In particular the group of invertibles $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ has two components, the positive and negative rays, as recorded in *Real Norm and Invertibility* and *Real Exponential and Lie Group Structure*. In the complex case the punctured plane is connected, because a plane minus a point can be walked around; the disconnectedness of the punctured line is the one-dimensional exception, and it is why the real group of invertibles is disconnected.
 
-## The Sign Group and the Group of Units
+## The Sign Group and the Group of Invertibles
 
 **Definition.** The **unit set** of $\mathbb{R}$ is the norm-one level set
 
@@ -88,9 +88,9 @@ The two descriptions coincide because the norm is positive definite and equals t
 
 **Proof.** It is the kernel of the norm on $\mathbb{R}^\times$, hence a subgroup; it is finite, hence compact and discrete, of dimension $0$; it is abelian and has the two components $\{+1\}$ and $\{-1\}$. A compact subgroup of the one-dimensional group $\mathbb{R}^\times$ lies in a compact interval around $1$, and the only such subgroups are $\{1\}$ and $\{\pm1\}$; since $\{1\}$ is not maximal, the maximal compact subgroup is $\{\pm1\}$.
 
-The unit set is the group $O(1)$, and it is the **base case** of the theorem that the unit sphere of a real normed division algebra is a Lie group. The cases are the finite list $S^0 = \{\pm1\}$, $S^1$, $S^3$, and the real member is $S^0$. It is disconnected, in contrast with the connected circle $S^1$ of the complex case; the disconnectedness is the sign, and it is the topological form of the two-component unit group.
+The unit set is the group $O(1)$, and it is the **base case** of the theorem that the unit sphere of a real normed division algebra is a Lie group. The cases are the finite list $S^0 = \{\pm1\}$, $S^1$, $S^3$, and the real member is $S^0$. It is disconnected, in contrast with the connected circle $S^1$ of the complex case; the disconnectedness is the sign, and it is the topological form of the two-component group of invertibles.
 
-**The group of units.** $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ is an open, dense, disconnected, non-compact topological group with two contractible components, the positive and negative rays. Its identity component is $\mathbb{R}_{>0}$, and its group of components is the sign group:
+**The group of invertibles.** $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ is an open, dense, disconnected, non-compact topological group with two contractible components, the positive and negative rays. Its identity component is $\mathbb{R}_{>0}$, and its group of components is the sign group:
 
 $$ \boxed{\;\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \{\pm1\}, \qquad \pi_0(\mathbb{R}^\times) \cong \{\pm1\}\;}.
 $$
@@ -109,13 +109,13 @@ is continuous with $H(0,q) = q$ and $H(1,q) = 0$, so the identity is homotopic t
 
 Every map into $\mathbb{R}$ is null-homotopic, and the same homotopy contracts each of the two rays and each interval, since they are closed under the contraction toward any base point. The single distinguished subspace, the whole line, therefore carries no topology beyond that of the contractible line; the content on the norm of *Real Algebra* lies in the quadratic form, not in the topology.
 
-**The homotopy groups of the unit group.** The two components of $\mathbb{R}^\times$ are contractible, so
+**The homotopy groups of the group of invertibles.** The two components of $\mathbb{R}^\times$ are contractible, so
 
 $$
 \mathbb{R}^\times \simeq \{\pm1\}, \qquad \pi_1(\mathbb{R}^\times) = 0, \qquad \pi_n(\mathbb{R}^\times) = 0 \ \ (n \geq 1).
 $$
 
-The real unit group is thus homotopy equivalent to a two-point space, and every homotopy group vanishes. This is the base case of the topology of the unit groups of the family: $\mathbb{C}^\times \simeq S^1$ has $\pi_1 \cong \mathbb{Z}$ from the winding of the phase. The real case has no compact connected factor and therefore no homotopy to wind.
+The real group of invertibles is thus homotopy equivalent to a two-point space, and every homotopy group vanishes. This is the base case of the topology of the groups of invertibles of the family: $\mathbb{C}^\times \simeq S^1$ has $\pi_1 \cong \mathbb{Z}$ from the winding of the phase. The real case has no compact connected factor and therefore no homotopy to wind.
 
 ## The One-Point and Two-Point Compactifications, and the Ends
 
@@ -134,7 +134,7 @@ $$
 
 a compact ordered space in which every subset has a supremum and an infimum. The extra points are the two ends: the one-point compactification identifies them, the two-point compactification keeps them apart. In the complex case the one-point compactification is the Riemann sphere $S^2$; here it is the circle, and the circle appears because the two ends of the line, once joined, form a loop.
 
-**The ends.** The line has exactly **two ends**, the directions $a \to +\infty$ and $a \to -\infty$; both are ends of the contractible line, and the end compactification is $\overline{\mathbb{R}}$, which adds one point for each. The group of units $\mathbb{R}^\times$ has the same two ends, since removing the origin does not merge or split the unbounded directions. The number of ends is the topological invariant that distinguishes the line from the plane (which has one end); the two ends of $\mathbb{R}$ are the topological form of the two signs.
+**The ends.** The line has exactly **two ends**, the directions $a \to +\infty$ and $a \to -\infty$; both are ends of the contractible line, and the end compactification is $\overline{\mathbb{R}}$, which adds one point for each. The group of invertibles $\mathbb{R}^\times$ has the same two ends, since removing the origin does not merge or split the unbounded directions. The number of ends is the topological invariant that distinguishes the line from the plane (which has one end); the two ends of $\mathbb{R}$ are the topological form of the two signs.
 
 ## Comparison with the Complex Topology
 
@@ -145,18 +145,18 @@ a compact ordered space in which every subset has a supremum and an infimum. The
 | Norm-one level set | $\{\pm1\} = O(1)$, finite | $S^1 = \mathrm{U}(1)$, compact |
 | Null cone $\{\langle q\rangle = 0\}$ | $\{0\}$, a point | $\{0\}$, a point |
 | Link of the null cone | none | none |
-| Group of units | two contractible components | $\mathbb{C}^\times \simeq S^1$, connected |
-| Homotopy of the units | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$ |
+| Group of invertibles | two contractible components | $\mathbb{C}^\times \simeq S^1$, connected |
+| Homotopy of the invertibles | all $\pi_n = 0$ | $\pi_1 \cong \mathbb{Z}$ |
 | One-point compactification | $S^1$ | $S^2$ |
 | Ends | two | one |
 
-The two algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$ and a connected circle for $\mathbb{C}$; in the unit group, which has two contractible components for $\mathbb{R}$ and a compact connected core for $\mathbb{C}$; and in the ends, which are two for the line and one for the plane. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite or a circle, and the definiteness of the norm, which makes the zero set of $\langle q\rangle$ a single point.
+The two algebras share the contractibility of the ambient space. They differ in the unit sphere, which is the finite sign group for $\mathbb{R}$ and a connected circle for $\mathbb{C}$; in the group of invertibles, which has two contractible components for $\mathbb{R}$ and a compact connected core for $\mathbb{C}$; and in the ends, which are two for the line and one for the plane. Each difference traces to a single cause: the dimension of the real algebra, which makes the unit set finite or a circle, and the definiteness of the norm, which makes the zero set of $\langle q\rangle$ a single point.
 
 ## Summary
 
-The real algebra $\mathbb{R}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{R}) = 0$ for all $n \ge 1$; its order topology and its metric topology coincide, it is complete and locally compact, and its connected subsets are exactly the intervals. The unit set $\{\pm1\} = O(1)$ is a compact, disconnected, abelian topological group of dimension $0$, the base case $S^0$ of the unit spheres of the normed division algebras; it is the maximal compact subgroup of the unit group.
+The real algebra $\mathbb{R}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{R}) = 0$ for all $n \ge 1$; its order topology and its metric topology coincide, it is complete and locally compact, and its connected subsets are exactly the intervals. The unit set $\{\pm1\} = O(1)$ is a compact, disconnected, abelian topological group of dimension $0$, the base case $S^0$ of the unit spheres of the normed division algebras; it is the maximal compact subgroup of the group of invertibles.
 
-The group of units is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex unit group. The unit group is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm is definite and the zero-divisor class is empty.
+The group of invertibles is $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$, an open, dense, disconnected, non-compact topological group with the two contractible components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$, homeomorphic to $\mathbb{R}_{>0}\times\{\pm1\}$. It is homotopy equivalent to a two-point space, so all of its homotopy groups vanish, in contrast with the winding of the complex group of invertibles. The group of invertibles is the disjoint union of its two contractible rays; there is no null cone and no link, because the norm is definite and the zero-divisor class is empty.
 
 The line has two ends, and the two compactifications are the two-point compactification $\overline{\mathbb{R}} = [-\infty,+\infty] \cong [0,1]$, which keeps the ends apart, and the one-point compactification $\mathbb{R}\cup\{\infty\} \cong S^1$, which joins them into the circle. Compared with the complex algebra, the real case loses the connected unit circle and the non-vanishing homotopy groups, and keeps a contractible line whose compactification is the simplest closed curve.
 
@@ -170,8 +170,8 @@ The line has two ends, and the two compactifications are the two-point compactif
 | $d(q_1,q_2) = \lvert q_1-q_2\rvert$ | the metric generating the topology |
 | $B(q_0,\varepsilon) = (q_0-\varepsilon, q_0+\varepsilon)$ | the open ball, an open interval |
 | $\{\pm1\} = O(1) = S^0$ | the unit set, a discrete compact group |
-| $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$ | the group of units, two contractible components |
-| $\pi_0(\mathbb{R}^\times) \cong \{\pm1\}$ | the group of components of the units |
+| $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$ | the group of invertibles, two contractible components |
+| $\pi_0(\mathbb{R}^\times) \cong \{\pm1\}$ | the group of components of the invertibles |
 | $\mathbb{R}\cup\{\infty\} \cong S^1$ | the one-point compactification |
 | $\overline{\mathbb{R}} = [-\infty,+\infty] \cong [0,1]$ | the two-point compactification, the extended line |
 | $\pi_n(\mathbb{R}) = 0$, $\pi_n(\mathbb{R}^\times) = 0$ | vanishing homotopy groups |

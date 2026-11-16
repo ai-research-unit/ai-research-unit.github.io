@@ -191,7 +191,7 @@ $$
 \boxed{\;(1-a_k)m_k=\sum_{i<k} a_i m_i\;}.
 $$
 
-Since $a_k \in J(R)$, the element $1-a_k$ is a unit, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$.
+Since $a_k \in J(R)$, the element $1-a_k$ is invertible, so $m_k$ lies in the span of $m_1,\dots,m_{k-1}$, contradicting minimality. The second statement applies the first to $M/N$.
 
 For a local ring $(R,\mathrm{M})$ one takes $I=\mathrm{M}$, and Nakayama then says that a finitely generated module over a local ring has a minimal generating set of exactly $\dim_{k}(M/\mathrm{M}M)$ elements, where $k=R/\mathrm{M}$; this number is the **minimal number of generators**. Nakayama is used in the structure theory and in the theory of projective modules.
 
@@ -209,7 +209,7 @@ Principal ideal domains are Noetherian, and so is every finitely generated algeb
 
 ### Over a Field
 
-If $R=F$ is a field then every module is free, every submodule of a free module is free, and the rank of a free module is its **dimension**, written $\dim_F V$. Two finite-dimensional vector spaces are isomorphic exactly when their dimensions agree, because a bijection between bases extends to an isomorphism , conversely, an isomorphism carries a basis to a basis. This is the whole of the classification of finitely generated $F$-modules, and it is the case against which every other case is measured. The companion articledevelops it; the point recorded here is that it holds because every element of $F^{\times}$ is a unit, so a nonzero coefficient in a relation can always be divided out.
+If $R=F$ is a field then every module is free, every submodule of a free module is free, and the rank of a free module is its **dimension**, written $\dim_F V$. Two finite-dimensional vector spaces are isomorphic exactly when their dimensions agree, because a bijection between bases extends to an isomorphism , conversely, an isomorphism carries a basis to a basis. This is the whole of the classification of finitely generated $F$-modules, and it is the case against which every other case is measured. The companion articledevelops it; the point recorded here is that it holds because every element of $F^{\times}$ is invertible, so a nonzero coefficient in a relation can always be divided out.
 
 ### Over the Integers
 

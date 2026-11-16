@@ -246,7 +246,7 @@ $$
 
 cannot apply, because $m_i(\lambda_i) = 0$ when $e_i > 1$: the factor $x-\lambda_i$ still occurs in $m_i$ with exponent $e_i-1$. Equivalently, $m_a'(\lambda_i) = 0$. The derivative form of the eigenprojector formula is therefore a criterion for simple roots, not a formula that survives their failure.
 
-The correct replacement is Hermite interpolation. Let $q_i = m_a/(x-\lambda_i)^{e_i}$. The polynomial $q_i$ is a unit modulo $(x-\lambda_i)^{e_i}$, because $q_i(\lambda_i) \neq 0$. Let $u_i$ be its inverse modulo $(x-\lambda_i)^{e_i}$,
+The correct replacement is Hermite interpolation. Let $q_i = m_a/(x-\lambda_i)^{e_i}$. The polynomial $q_i$ is invertible modulo $(x-\lambda_i)^{e_i}$, because $q_i(\lambda_i) \neq 0$. Let $u_i$ be its inverse modulo $(x-\lambda_i)^{e_i}$,
 
 $$
 q_i u_i \equiv 1 \pmod{(x-\lambda_i)^{e_i}} .

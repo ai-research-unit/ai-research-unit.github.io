@@ -4,7 +4,7 @@
 
 The Peirce decomposition of $M_{n}(\mathbb{C})$ relative to a complete family of $n$ idempotents gives $n^{2}$ lines and no element inside the mixed ones. A **Peirce basis** is a choice of one nonzero element in each line, normalised so that the chosen elements multiply by the matrix-unit rule. The basis is not part of the decomposition: the decomposition is canonical given the family, while the basis is a choice, and the freedom of the choice is the **Peirce gauge**.
 
-The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It identifies the basis with a system of matrix units, proves that two such systems are conjugate by a unit unique up to the centre, gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
+The article proves that a Peirce basis exists, that it is unique up to the gauge, and that the gauge is a torus of dimension $n-1$. It identifies the basis with a system of matrix units, proves that two such systems are conjugate by an invertible element unique up to the centre, gives the coordinates of an element in the basis, the dimension count of the families and of the frames, and the projective reading of the construction. It assumes *The Peirce Decomposition in $n$ Dimensions*.
 
 ## The Definition
 
@@ -109,9 +109,9 @@ $$
 
 A Peirce basis is exactly such a system: the definition of §*The Definition* and this one are the same list of conditions. The coordinate map of §*Coordinates* sends the system to the $n^{2}$ elementary matrices, so a system of matrix units is the same data as an isomorphism $M_{n}(\mathbb{C})\to M_{n}(\mathbb{C})$ carrying the family to the standard diagonal family.
 
-**Uniqueness up to conjugation.** Every two systems of $n\times n$ matrix units of $M_{n}(\mathbb{C})$ are conjugate by a unit, and the conjugating unit is unique up to the centre.
+**Uniqueness up to conjugation.** Every two systems of $n\times n$ matrix units of $M_{n}(\mathbb{C})$ are conjugate by an invertible element, and the conjugating unit is unique up to the centre.
 
-*Proof.* By the Skolem–Noether theorem every automorphism of $M_{n}(\mathbb{C})$ is inner, so it is enough to compare each system with the standard one. The data $(v_{k})$, $(\ell_{k})$ of §*Existence* give $E_{kl}=v_{k}\ell_{l}$; two bases $v$ and $v'$ of $\mathbb{C}^{n}$ differ by an invertible $U$ with $Uv_{k}=v'_{k}$, and then $UE_{kl}U^{-1}=v'_{k}\ell'_{l}=E'_{kl}$. If $U$ and $U'$ both carry the system to the same one, then $U^{-1}U'$ commutes with every $E_{kl}$, hence with the whole algebra, since the units span it, so it is a scalar. The conjugating unit is therefore unique up to the centre.
+*Proof.* By the Skolem–Noether theorem every automorphism of $M_{n}(\mathbb{C})$ is inner, so it is enough to compare each system with the standard one. The data $(v_{k})$, $(\ell_{k})$ of §*Existence* give $E_{kl}=v_{k}\ell_{l}$; two bases $v$ and $v'$ of $\mathbb{C}^{n}$ differ by an invertible $U$ with $Uv_{k}=v'_{k}$, and then $UE_{kl}U^{-1}=v'_{k}\ell'_{l}=E'_{kl}$. If $U$ and $U'$ both carry the system to the same one, then $U^{-1}U'$ commutes with every $E_{kl}$, hence with the whole algebra, since the invertibles span it, so it is a scalar. The conjugating unit is therefore unique up to the centre.
 
 **The biquaternion instance.** At $n=2$ the four elements $\tilde\Pi_{+},\vec\Upsilon_{+-},\vec\Upsilon_{-+},\tilde\Pi_{-}$ are a system of $2\times2$ matrix units, and the theorem above is the one proved in *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*, §*Systems of Matrix Units*. There the two proofs differ in style only: the biquaternion article conjugates into $M_{2}(\mathbb{C})$ and uses that every automorphism of $M_{2}(\mathbb{C})$ is inner, which is the same Skolem–Noether step.
 
@@ -157,7 +157,7 @@ The basis exists only when the components are lines. A coarse family, with a com
 
 ## Summary
 
-A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. A basis is the same data as a system of matrix units, and two systems are conjugate by a unit unique up to the centre. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
+A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{kl}E_{pq}=\delta_{lp}E_{kq}$ and $E_{kk}=P_{k}$. It exists for every complete family of $n$ idempotents of $M_{n}(\mathbb{C})$, and it is unique up to the gauge $E_{kl}\mapsto t_{k}t_{l}^{-1}E_{kl}$, a torus of dimension $n-1$. A basis is the same data as a system of matrix units, and two systems are conjugate by an invertible element unique up to the centre. In the basis the coordinates multiply by the matrix product, and the coordinates change by $X_{kl}\mapsto t_{k}^{-1}t_{l}X_{kl}$. The family space has dimension $n^{2}-n$, the gauge $n-1$, and the frame space $n^{2}-1$, which is the orbit–stabiliser count of $PGL_{n}$; for $n=3$ it is $8=6+2$.
 
 ## Summary of Notation
 
@@ -173,7 +173,7 @@ A Peirce basis is a choice of one nonzero element in each Peirce line, with $E_{
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions and the units of a fine decomposition.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce decompositions and the invertibles of a fine decomposition.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for matrix units and the matrix product of coordinates.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the lines and their multiplication.
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the case $n=2$ of §*Systems of Matrix Units*.

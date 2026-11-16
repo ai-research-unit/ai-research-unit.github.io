@@ -98,7 +98,7 @@ $$
 W(t, \omega)^{\natural} = W(t, \omega)^{-1}, \qquad \langle W(t, \omega)\rangle_{\natural} = e_t ,
 $$
 
-because $\vec{Ζ}^{\natural}=-\vec{Ζ}$ for a pure element. **The central roots $\tilde{Ζ}=\pm e_t$ are the exception**: the kernel is the complex scalar $e^{\mp 2\pi i\omega t}e_t$, which the quaternion conjugation fixes rather than inverts, and the inverse is the coefficient conjugate $\overline{W}$. The natural norm there is $W^{2}=e^{\mp4\pi i\omega t}e_t$, a unit and not $e_t$. The distinction affects only that pair, and the statements below that use the conjugation of the kernel are stated for a pure root.
+because $\vec{Ζ}^{\natural}=-\vec{Ζ}$ for a pure element. **The central roots $\tilde{Ζ}=\pm e_t$ are the exception**: the kernel is the complex scalar $e^{\mp 2\pi i\omega t}e_t$, which the quaternion conjugation fixes rather than inverts, and the inverse is the coefficient conjugate $\overline{W}$. The natural norm there is $W^{2}=e^{\mp4\pi i\omega t}e_t$, an invertible element and not $e_t$. The distinction affects only that pair, and the statements below that use the conjugation of the kernel are stated for a pure root.
 
 **The Peirce form.** Substituting $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$, and using $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$,
 
@@ -430,7 +430,7 @@ The continuous transform **diagonalizes the constant-coefficient differential op
 
 ### Functions of Vanishing Norm
 
-A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm on a set of positive measure. On such a set the values are zero divisors: for some $t$ there is a nonzero biquaternion $\tilde{Q}(t)$ with $f(t)\tilde{Q}(t) = 0$ or $\tilde{Q}(t)f(t) = 0$. Since the kernel is a unit, the product $W(t,\omega)f(t)$ is a zero divisor too.
+A function $f : \mathbb{R} \to \mathbb{B}$ may take values of vanishing norm on a set of positive measure. On such a set the values are zero divisors: for some $t$ there is a nonzero biquaternion $\tilde{Q}(t)$ with $f(t)\tilde{Q}(t) = 0$ or $\tilde{Q}(t)f(t) = 0$. Since the kernel is invertible, the product $W(t,\omega)f(t)$ is a zero divisor too.
 
 None of this damages the transform. The inversion theorem is a statement about the kernel and holds for every integrable $f$; what a zero-divisor value damages is the arithmetic after the transform, where a null element has no inverse to divide by.
 
@@ -441,7 +441,7 @@ None of this damages the transform. The inversion theorem is a statement about t
 
 ### Structural Interpretation
 
-The vanishing-norm issue is a genuinely biquaternionic feature: the complex and quaternion algebras are division algebras, and the biquaternion algebra is not. A definite subspace removes the difficulty of division, since on $\mathbb{B}_{H}$ the norm is a sum of real squares and every nonzero value is a unit; on $\mathbb{B}_{\Phi}$ the values of vanishing norm lie on a cone, and the division is available off it.
+The vanishing-norm issue is a genuinely biquaternionic feature: the complex and quaternion algebras are division algebras, and the biquaternion algebra is not. A definite subspace removes the difficulty of division, since on $\mathbb{B}_{H}$ the norm is a sum of real squares and every nonzero value is invertible; on $\mathbb{B}_{\Phi}$ the values of vanishing norm lie on a cone, and the division is available off it.
 
 ### The Open Question
 
@@ -467,7 +467,7 @@ $$
 K = \cos\theta_1 \cos\theta_2 \, e_t - i\cos\theta_1 \sin\theta_2 \, \tilde{Ζ}_2 - i\sin\theta_1 \cos\theta_2 \, \tilde{Ζ}_1 - \sin\theta_1 \sin\theta_2 \, \tilde{Ζ}_1 \tilde{Ζ}_2 .
 $$
 
-The first term is central and the next two are pure, because the roots are pure; the fourth carries the product $\tilde{Ζ}_1\tilde{Ζ}_2$, which is a unit when the two roots commute and a general element when they do not.
+The first term is central and the next two are pure, because the roots are pure; the fourth carries the product $\tilde{Ζ}_1\tilde{Ζ}_2$, which is invertible when the two roots commute and a general element when they do not.
 
 **Reduction to the one-unit kernel.** If the two roots coincide, $\tilde{Ζ}_1 = \tilde{Ζ}_2 = \tilde{Ζ}$, the exponents add and $K$ is the kernel $W$ read on the linear form $\omega_1 Q_x + \omega_2 Q_y$, which is the kernel of the two-dimensional transform of the discrete case. The one-unit theory is the case in which the two roots are equal, and the two-unit transform is its refinement.
 
@@ -521,7 +521,7 @@ $$
 A_1 = i: \qquad \bar A_1 A_1 \, G(0) = i^2 \, \mu(\mathbb{R}^n) = -\mu(\mathbb{R}^n) \, e_t ,
 $$
 
-which is negative for every non-zero measure, because $\langle i\rangle_{\natural} = -1$. The scalar imaginary is a unit of the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence **the transform of a measure is not a positive-definite function for $\mathbb{B}$**, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.
+which is negative for every non-zero measure, because $\langle i\rangle_{\natural} = -1$. The scalar imaginary is invertible in the algebra — the element whose presence makes the algebra biquaternionic — and the norm is negative on it. Hence **the transform of a measure is not a positive-definite function for $\mathbb{B}$**, and the positivity a Bochner-type hypothesis would need is not available. The absence is the same indefiniteness the vanishing-norm section records, read at a different value: the norm vanishes on the null cone and it is negative on the centre.
 
 **The repair, and what it costs.** Positivity returns when the norm is replaced by a definite pairing, whose integrand is a sum of squares of moduli,
 

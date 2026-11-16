@@ -101,7 +101,7 @@ If $Q_-=0$, the roles of $\Pi_+$ and $\Pi_-$ are exchanged.
 $$
 \mathbb{C}^{\times}\cdot1=\{Q_+=Q_-\neq0\}=\{Q_\blacktriangledown=0,\ Q_\blacktriangle\neq0\},
 $$
-the reduced norm is $\nu=Q_+^{2}\neq0$, so the element is a unit; the spectrum is the singleton $\{Q_+\}$; the characteristic polynomial is $(X-Q_+)^{2}$; the minimal polynomial is $X-Q_+$; the spectral decomposition is the one-term writing $Q_+1$; and the element is semisimple, not defective.
+the reduced norm is $\nu=Q_+^{2}\neq0$, so the element is invertible; the spectrum is the singleton $\{Q_+\}$; the characteristic polynomial is $(X-Q_+)^{2}$; the minimal polynomial is $X-Q_+$; the spectral decomposition is the one-term writing $Q_+1$; and the element is semisimple, not defective.
 
 *Proof.* The identities $Q_+=Q_-$ and $Q_+\neq0$ give $Q_\blacktriangle=Q_+\neq0$ and $Q_\blacktriangledown=0$, hence $\nu=Q_+^{2}\neq0$. The spectrum, the characteristic polynomial and the minimal polynomial are those of the scalar line in *Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra*, §*The Scalar Stratum*. The minimal polynomial is linear, hence squarefree, so the element is semisimple.
 
@@ -148,7 +148,7 @@ of discriminant $\Delta(\breve Q)=\delta(\breve Q)^{2}$. The constant term is th
 
 **Remark (the minimal polynomial does not refine the chain).** The minimal polynomial is $X-Q_+$ on the scalar line $\Sigma_{10}\cup\Sigma_{00}$ and $(X-Q_+)(X-Q_-)$ on its complement $\Sigma_{11}\cup\Sigma_{01}$. It therefore separates two types, not four, and it does not split any sector. This is the effect of semisimplicity: the biquaternion algebra refines the four sectors into six strata by the minimal polynomial, because its scalar line splits into a scalar and a Jordan part and its origin splits into the origin and the nonzero nilpotents (*Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*). In the reduced algebra those defective parts are empty.
 
-**Remark (the chain is not multiplicative).** The reduced norm is multiplicative, but the sector is not. The unit group $\Sigma_{11}\cup\Sigma_{10}$ is closed under multiplication. In $\Sigma_{01}$, $\Pi_+^{2}=\Pi_+$ stays in the sector while $\Pi_+\Pi_-=0$ falls in $\Sigma_{00}$. Two elements of $\Sigma_{11}$ can multiply into $\Sigma_{10}$:
+**Remark (the chain is not multiplicative).** The reduced norm is multiplicative, but the sector is not. The group of invertibles $\Sigma_{11}\cup\Sigma_{10}$ is closed under multiplication. In $\Sigma_{01}$, $\Pi_+^{2}=\Pi_+$ stays in the sector while $\Pi_+\Pi_-=0$ falls in $\Sigma_{00}$. Two elements of $\Sigma_{11}$ can multiply into $\Sigma_{10}$:
 $$
 \left(\tfrac32-\tfrac12 j\right)\left(\tfrac32+\tfrac12 j\right)=2,
 $$

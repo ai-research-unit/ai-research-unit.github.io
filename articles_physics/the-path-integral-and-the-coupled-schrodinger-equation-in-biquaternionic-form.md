@@ -81,7 +81,7 @@ $$
 
 which is the standard transformation with the sign convention of $D_t$ and $D_\eta$ above.
 
-**The measure is invariant because the Jacobian is one.** At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs a unit Jacobian and nothing else.
+**The measure is invariant because the Jacobian is one.** At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs an invertible element Jacobian and nothing else.
 
 **The exponent is invariant term by term.** The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$, the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two cancel; the gradient term is invariant by covariance. The variational companion states the same cancellation and calls it the clearest statement of why the covariant derivative and the potential are one object. **The integral's invariance is therefore exact and is not a boundary-term statement**, because the two gains are equal and opposite inside the exponent at every point.
 

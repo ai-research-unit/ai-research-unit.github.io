@@ -155,11 +155,11 @@ $$
 
 which vanishes only when $q = 0$ and $2q' + 3q = 0$, that is $q = q' = 0$.
 
-## Units and Inverses, Worked
+## Invertibles and Inverses, Worked
 
-### Units
+### Invertibles
 
-**Example (worked).** $Q = 2 + 3\varepsilon$ has real part $2 \neq 0$, so it is a unit. Its inverse is
+**Example (worked).** $Q = 2 + 3\varepsilon$ has real part $2 \neq 0$, so it is invertible. Its inverse is
 
 $$
 Q^{-1} = \frac{1}{2} - \frac{3}{4}\,\varepsilon,
@@ -171,11 +171,11 @@ $$
 (2 + 3\varepsilon)\Bigl(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon\Bigr) = 1 + \Bigl(-\tfrac{3}{2} + \tfrac{3}{2}\Bigr)\varepsilon = 1.
 $$
 
-### Non-Units
+### Non-Invertibles
 
-**Example (worked).** $Q = 0 + 3\varepsilon$ has real part $0$, so it is not a unit. Any attempted inverse fails: if $(3\varepsilon)(q + \varepsilon q') = 3q\,\varepsilon = 1$, then $3q = 1$ and $0 = 1$, a contradiction.
+**Example (worked).** $Q = 0 + 3\varepsilon$ has real part $0$, so it is not invertible. Any attempted inverse fails: if $(3\varepsilon)(q + \varepsilon q') = 3q\,\varepsilon = 1$, then $3q = 1$ and $0 = 1$, a contradiction.
 
-**Example (worked).** $Q = -4 + \varepsilon$ has real part $-4 \neq 0$, so it is a unit, since the criterion is $q \neq 0$ and not $q > 0$:
+**Example (worked).** $Q = -4 + \varepsilon$ has real part $-4 \neq 0$, so it is invertible, since the criterion is $q \neq 0$ and not $q > 0$:
 
 $$
 (-4 + \varepsilon)^{-1} = -\frac{1}{4} - \frac{1}{16}\varepsilon.
@@ -215,9 +215,9 @@ $$
 
 matching the coordinate product worked above. The matrix is upper triangular with equal diagonal entries, and $\Phi(1 + \varepsilon) = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
 
-### Multiplication by a Unit Is a Shear
+### Multiplication by an Invertible Is a Shear
 
-Let $Q_1 = q_1 + \varepsilon q'_1$ be a unit, so $q_1 \neq 0$, and write $s = q'_1/q_1$, giving $Q_1 = q_1(1 + s\varepsilon)$. Acting on $Q_2 = q_2 + \varepsilon q'_2$,
+Let $Q_1 = q_1 + \varepsilon q'_1$ be an invertible element, so $q_1 \neq 0$, and write $s = q'_1/q_1$, giving $Q_1 = q_1(1 + s\varepsilon)$. Acting on $Q_2 = q_2 + \varepsilon q'_2$,
 
 $$
 Q_1 Q_2 = q_1(1 + s\varepsilon)(q_2 + \varepsilon q'_2) = q_1 q_2 + (q_1 q'_2 + q_1 s q_2)\varepsilon = q_1\bigl(q_2 + (q'_2 + s q_2)\varepsilon\bigr).
@@ -249,7 +249,7 @@ a dilation by $2$ of the sheared point $(2, 8)$.
 
 ## Worked Hyperbolic Elements
 
-### The Two Factors of a Unit
+### The Two Factors of an Invertible
 
 Every unit factors as $Q = q(1 + s\varepsilon)$ with $q \neq 0$ and $s = q'/q$: the real factor $q$ is the scale and $1 + s\varepsilon$ the parabolic factor.
 
@@ -267,7 +267,7 @@ and in the factorised form $2^3\bigl(1 + \tfrac{3}{2}\varepsilon\bigr)^3 = 8\big
 
 ### The Hyperbolic Case Degenerates
 
-In the split-complex algebra the units $a + jb$ satisfy $a^2 - b^2 = 1$ and form a hyperbola, a one-parameter multiplicative family with a genuine hyperbolic parameter; in the complex algebra the units form a circle. In $\mathbb{C}_{\mathrm{dln}}$ the corresponding family of units is the pair of parallel lines $q = \pm 1$, and each line is carried by the parabolic family $1 + s\varepsilon$ with the additive parameter $s$. The hyperbola and the circle have both degenerated to lines, the hyperbolic parameter being replaced by the shear parameter; this is the arithmetic content of $\varepsilon^2 = 0$.
+In the split-complex algebra the invertibles $a + jb$ satisfy $a^2 - b^2 = 1$ and form a hyperbola, a one-parameter multiplicative family with a genuine hyperbolic parameter; in the complex algebra the invertibles form a circle. In $\mathbb{C}_{\mathrm{dln}}$ the corresponding family of invertibles is the pair of parallel lines $q = \pm 1$, and each line is carried by the parabolic family $1 + s\varepsilon$ with the additive parameter $s$. The hyperbola and the circle have both degenerated to lines, the hyperbolic parameter being replaced by the shear parameter; this is the arithmetic content of $\varepsilon^2 = 0$.
 
 ## Relation Between the Decompositions
 
@@ -280,7 +280,7 @@ There is no third decomposition, and no nontrivial Peirce decomposition: the onl
 
 ## Summary
 
-The worked computations in the dual-number algebra are these. The two involutions are the identity and dual conjugation; the identity has fixed set all of $\mathbb{C}_{\mathrm{dln}}$, while dual conjugation has $+1$-eigenspace $R_{\mathbb{C}_{\mathrm{dln}}} = \mathbb{R}$ and $-1$-eigenspace $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}} = \varepsilon\mathbb{R}$, meeting only in $0$. Every element of the maximal ideal is nilpotent of index two, $(\varepsilon q')^2 = 0$, while a mixed element has $(q + \varepsilon q')^n = q^n + n q^{n-1}\varepsilon q'$ and is never nilpotent unless $q = 0$. The zero divisors are the nonzero elements $\varepsilon q'$ of $\mathrm{M}$, and any two of them multiply to zero; for instance $(2\varepsilon)(5\varepsilon) = 0$. The criterion for a unit is $q \neq 0$, and the inverse is $q^{-1} - q^{-2}\varepsilon q'$; the check $(2 + 3\varepsilon)(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon) = 1$ is the worked instance. Under the matrix model $\Phi(q + \varepsilon q') = \begin{pmatrix} q & q' \\ 0 & q \end{pmatrix}$ the worked product $\Phi(2 + 3\varepsilon)\Phi(4 + 5\varepsilon) = \Phi(8 + 22\varepsilon)$ reproduces the coordinate product, and multiplication by the unit $q(1 + s\varepsilon)$ acts as the dilation by $q$ followed by the shear $(q, q') \mapsto (q, q' + s q)$. The two decompositions of the algebra coincide, and no nontrivial Peirce decomposition exists.
+The worked computations in the dual-number algebra are these. The two involutions are the identity and dual conjugation; the identity has fixed set all of $\mathbb{C}_{\mathrm{dln}}$, while dual conjugation has $+1$-eigenspace $R_{\mathbb{C}_{\mathrm{dln}}} = \mathbb{R}$ and $-1$-eigenspace $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}} = \varepsilon\mathbb{R}$, meeting only in $0$. Every element of the maximal ideal is nilpotent of index two, $(\varepsilon q')^2 = 0$, while a mixed element has $(q + \varepsilon q')^n = q^n + n q^{n-1}\varepsilon q'$ and is never nilpotent unless $q = 0$. The zero divisors are the nonzero elements $\varepsilon q'$ of $\mathrm{M}$, and any two of them multiply to zero; for instance $(2\varepsilon)(5\varepsilon) = 0$. The criterion for an invertible element is $q \neq 0$, and the inverse is $q^{-1} - q^{-2}\varepsilon q'$; the check $(2 + 3\varepsilon)(\tfrac{1}{2} - \tfrac{3}{4}\varepsilon) = 1$ is the worked instance. Under the matrix model $\Phi(q + \varepsilon q') = \begin{pmatrix} q & q' \\ 0 & q \end{pmatrix}$ the worked product $\Phi(2 + 3\varepsilon)\Phi(4 + 5\varepsilon) = \Phi(8 + 22\varepsilon)$ reproduces the coordinate product, and multiplication by the unit $q(1 + s\varepsilon)$ acts as the dilation by $q$ followed by the shear $(q, q') \mapsto (q, q' + s q)$. The two decompositions of the algebra coincide, and no nontrivial Peirce decomposition exists.
 
 ## Summary of Notation
 
@@ -293,7 +293,7 @@ The worked computations in the dual-number algebra are these. The two involution
 | $R_{\mathbb{C}_{\mathrm{dln}}}$, $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$ | Real and infinitesimal submodules |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, $\mathrm{M}^2 = 0$ |
 | $\Phi(q + \varepsilon q') = \begin{pmatrix} q & q' \\ 0 & q \end{pmatrix}$ | The faithful matrix model |
-| $q(1 + s\varepsilon)$ | Factorisation of a unit, $s = q'/q$ |
+| $q(1 + s\varepsilon)$ | Factorisation of an invertible element, $s = q'/q$ |
 | $(q, q') \mapsto (q, q' + s q)$ | The shear of multiplication by $1 + s\varepsilon$ |
 
 ## Further Reading

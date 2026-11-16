@@ -201,9 +201,9 @@ Over a general commutative ring non-degeneracy is strictly stronger than the van
 
 **Proposition.** Let $M$ be free of finite rank with Gram matrix $G$. Then $B$ is non-degenerate if and only if $\det G$ is a **unit** of $R$.
 
-**Proof.** The map $M \to M^*$ is represented by $G$, and an endomorphism of a free module of finite rank is an isomorphism if and only if its determinant is a unit.
+**Proof.** The map $M \to M^*$ is represented by $G$, and an endomorphism of a free module of finite rank is an isomorphism if and only if its determinant is invertible.
 
-**Example.** Let $R = \mathbb{R}$ and $G = \operatorname{diag}(1, 1, 0)$ on $\mathbb{R}^3$. Then $G$ has rank $2$ and radical spanned by $e_3$, so the form is degenerate. Let $R = \mathbb{Z}$ and $G = (2)$ on $\mathbb{Z}$. Then $\det G = 2$ is not a unit, the radical is zero, and the map $\mathbb{Z} \to \mathbb{Z}^*$ is multiplication by $2$, which is injective but not surjective: the form is degenerate although its radical vanishes.
+**Example.** Let $R = \mathbb{R}$ and $G = \operatorname{diag}(1, 1, 0)$ on $\mathbb{R}^3$. Then $G$ has rank $2$ and radical spanned by $e_3$, so the form is degenerate. Let $R = \mathbb{Z}$ and $G = (2)$ on $\mathbb{Z}$. Then $\det G = 2$ is not invertible, the radical is zero, and the map $\mathbb{Z} \to \mathbb{Z}^*$ is multiplication by $2$, which is injective but not surjective: the form is degenerate although its radical vanishes.
 
 **Remark (the field case).** Over a field, and for a finite-dimensional space, the dual has the same dimension, so injectivity of $M \to M^*$ is equivalent to bijectivity, and the following are equivalent:
 
@@ -332,7 +332,7 @@ A **bilinear form** on an $R$-module $M$ is a function $B : M \times M \to R$ li
 
 On a free module of finite rank a form is represented by its **Gram matrix** $G_{ij} = B(e_i, e_j)$, with $B(u, v) = [u]^T G [v]$. Symmetry is $G = G^T$, antisymmetry is $G = -G^T$, and a change of basis replaces $G$ by $P^T G P$; forms related in this way are **congruent**. The **rank** of $B$ is the rank of $G$.
 
-The **radical** $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is **non-degenerate** when this map is an isomorphism; over a free module of finite rank this means $\det G$ is a unit of $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.
+The **radical** $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is **non-degenerate** when this map is an isomorphism; over a free module of finite rank this means $\det G$ is invertible in $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.
 
 The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus \mathsf{M}_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a **symplectic basis** $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the **symplectic plane**, which is not the quadratic hyperbolic plane. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The **discriminant** $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.
 

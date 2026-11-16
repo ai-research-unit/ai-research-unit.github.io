@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The split biquaternion algebra is, as a topological space, a copy of $\mathbb{R}^8$, and the interesting topological objects attached to it are the unit sphere, the null cone of the Hermitian form together with its link, the group of units, and the failure surface of the polar decomposition. This article records the topology of these spaces and compares it with the biquaternion case. The algebra and its forms are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Norm and Invertibility*; the Hermitian form and the Lorentzian structure are treated in *Split-Biquaternion Rotations and the Lorentz Group*; the group of units is described in *Split-Biquaternion Exponential and Lie Group Structure*.
+The split biquaternion algebra is, as a topological space, a copy of $\mathbb{R}^8$, and the interesting topological objects attached to it are the unit sphere, the null cone of the Hermitian form together with its link, the group of invertibles, and the failure surface of the polar decomposition. This article records the topology of these spaces and compares it with the biquaternion case. The algebra and its forms are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Norm and Invertibility*; the Hermitian form and the Lorentzian structure are treated in *Split-Biquaternion Rotations and the Lorentz Group*; the group of invertibles is described in *Split-Biquaternion Exponential and Lie Group Structure*.
 
 The treatment is purely mathematical. No physics is invoked; "null cone" names the zero set of a quadratic form, and "link" names the intersection with a sphere.
 
@@ -43,7 +43,7 @@ $$
 
 **Proof.** The equation is homogeneous of degree two, so $C$ is a cone; its real dimension is $7$ because the gradient of $g$ is nonzero away from the origin. Removing the origin leaves the connected surface $\|q\| = \|q'\| > 0$, the product of the two spheres with their common radius; the two equal-norm conditions do not separate it into components. The split-biquaternion norm has $\mathrm{Re}\,\langle\tilde{Q}\rangle_{\natural} = \|q\|^2 + \|q'\|^2 > 0$ off the origin, so $\langle\cdot\rangle_{\natural}$ never vanishes there.
 
-**Remark.** The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of *Split-Biquaternion Rotations and the Lorentz Group*), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is a unit of $\mathbb{C}_{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.
+**Remark.** The null cone of the Hermitian form is strictly larger than the zero divisor set. Every zero divisor is isotropic for $g$ (this is a statement of *Split-Biquaternion Rotations and the Lorentz Group*), but the converse fails: the element $\vec e_x + je_t$ is null for $g$ and is not a zero divisor, since its split-biquaternion norm is invertible in $\mathbb{C}_{\mathrm{spl}}$. The zero divisors form the union of the two four-dimensional ideals, a proper subset of the cone.
 
 ## The Link of the Null Cone
 
@@ -61,13 +61,13 @@ $$
 
 The link of the null cone is thus the same manifold as the norm-one group $S^3 \times S^3 = \mathrm{Spin}(4)$, and the coincidence is structural: both are the twofold product of a three-sphere by itself, one cut out by the Hermitian form on the unit sphere and the other by the split complex norm on the whole algebra. The link is connected, simply connected, and has the homology of $S^3\times S^3$, with nonzero Betti numbers in degrees $0,3,3,6$.
 
-## The Group of Units and Its Homotopy
+## The Group of Invertibles and Its Homotopy
 
-**Theorem.** The group of units is ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.
+**Theorem.** The group of invertibles is ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{H}^{\times}\times\mathbb{H}^{\times} \cong \mathbb{R}_{>0}^2 \times S^3 \times S^3$. It is connected and simply connected, and it is homotopy equivalent to $S^3\times S^3$.
 
-**Proof.** Units are pairs of nonzero quaternions, and $\mathbb{H}^\times \cong \mathbb{R}_{>0}\times S^3$; the positive rays are contractible, so the unit group deformation retracts onto $S^3\times S^3$. A product of spheres of dimension $3$ is simply connected.
+**Proof.** Units are pairs of nonzero quaternions, and $\mathbb{H}^\times \cong \mathbb{R}_{>0}\times S^3$; the positive rays are contractible, so the group of invertibles deformation retracts onto $S^3\times S^3$. A product of spheres of dimension $3$ is simply connected.
 
-**Corollary.** The homotopy groups of the unit group are
+**Corollary.** The homotopy groups of the group of invertibles are
 
 $$
 \boxed{\;
@@ -93,11 +93,11 @@ The polar decomposition is therefore a homeomorphism from the complement of $Z$ 
 
 ## Comparison with the Biquaternion Case
 
-The two algebras share the ambient topology: both are $\mathbb{R}^8$, both are contractible, and both have a seven-sphere of unit vectors. They differ in every structure attached to the forms. The biquaternion norm one slice is the complex quadric $\{\langle\tilde{Q}\rangle_{\natural} = 1\} \subset \mathbb{C}^4$, a six-dimensional manifold related to $SL(2,\mathbb{C})$ and non-compact; the split biquaternion norm-one group is the compact $S^3\times S^3 \cong \mathrm{Spin}(4)$. The biquaternion unit group $GL(2,\mathbb{C})$ deformation retracts onto the compact $\mathrm{U}(2) \cong (S^1\times S^3)/\{\pm1\}$, with fundamental group $\mathbb{Z}$ and third homotopy group $\mathbb{Z}$; the split biquaternion unit group is $\mathbb{R}_{>0}^2\times S^3\times S^3$, simply connected, with third homotopy group $\mathbb{Z}^2$. The biquaternion null cone of the complex norm is the null cone of the complexified quadratic form with link $S^1\times S^1$; the split biquaternion null cone of the Hermitian form has link $S^3\times S^3$. The link of the null cone and the norm-one group, the same manifold here, are different objects in the biquaternion case, where the norm-one slice is non-compact and the null cone link is a torus.
+The two algebras share the ambient topology: both are $\mathbb{R}^8$, both are contractible, and both have a seven-sphere of unit vectors. They differ in every structure attached to the forms. The biquaternion norm one slice is the complex quadric $\{\langle\tilde{Q}\rangle_{\natural} = 1\} \subset \mathbb{C}^4$, a six-dimensional manifold related to $SL(2,\mathbb{C})$ and non-compact; the split biquaternion norm-one group is the compact $S^3\times S^3 \cong \mathrm{Spin}(4)$. The biquaternion group of invertibles $GL(2,\mathbb{C})$ deformation retracts onto the compact $\mathrm{U}(2) \cong (S^1\times S^3)/\{\pm1\}$, with fundamental group $\mathbb{Z}$ and third homotopy group $\mathbb{Z}$; the split biquaternion group of invertibles is $\mathbb{R}_{>0}^2\times S^3\times S^3$, simply connected, with third homotopy group $\mathbb{Z}^2$. The biquaternion null cone of the complex norm is the null cone of the complexified quadratic form with link $S^1\times S^1$; the split biquaternion null cone of the Hermitian form has link $S^3\times S^3$. The link of the null cone and the norm-one group, the same manifold here, are different objects in the biquaternion case, where the norm-one slice is non-compact and the null cone link is a torus.
 
 ## Summary
 
-The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is homotopy equivalent to $S^7$. The Euclidean norm, the square root of the real part of the split-biquaternion norm, is positive definite; the Euclidean unit sphere is $S^7$, distinct from the six-dimensional norm-one group. The null cone of the Hermitian form $g$ of signature $(4,4)$ is the seven-dimensional cone $\|q\| = \|q'\|$, on which the split-biquaternion norm never vanishes off the origin, and it strictly contains the zero divisor set, whose members are isotropic but which does not exhaust the cone. The link of the null cone is $S^3\times S^3$, the same manifold as the norm-one group $\mathrm{Spin}(4)$. The group of units is $\mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, homotopy equivalent to $S^3\times S^3$, with $\pi_z = \mathbb{Z}^2$. The polar decomposition of an element is defined off the zero divisor set, whose two four-dimensional pieces $Z_\pm$ are each $\simeq S^3$ and meet only at the origin; that set is the failure surface and the topological boundary of the polar domain. Compared with the biquaternion case, the ambient topology is the same but every form-attached object differs: the compact $\mathrm{Spin}(4)$ norm-one group replaces the non-compact $SL(2,\mathbb{C})$ slice, the simply connected unit group replaces $GL(2,\mathbb{C})$, and the link $S^3\times S^3$ replaces the torus.
+The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is homotopy equivalent to $S^7$. The Euclidean norm, the square root of the real part of the split-biquaternion norm, is positive definite; the Euclidean unit sphere is $S^7$, distinct from the six-dimensional norm-one group. The null cone of the Hermitian form $g$ of signature $(4,4)$ is the seven-dimensional cone $\|q\| = \|q'\|$, on which the split-biquaternion norm never vanishes off the origin, and it strictly contains the zero divisor set, whose members are isotropic but which does not exhaust the cone. The link of the null cone is $S^3\times S^3$, the same manifold as the norm-one group $\mathrm{Spin}(4)$. The group of invertibles is $\mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, homotopy equivalent to $S^3\times S^3$, with $\pi_z = \mathbb{Z}^2$. The polar decomposition of an element is defined off the zero divisor set, whose two four-dimensional pieces $Z_\pm$ are each $\simeq S^3$ and meet only at the origin; that set is the failure surface and the topological boundary of the polar domain. Compared with the biquaternion case, the ambient topology is the same but every form-attached object differs: the compact $\mathrm{Spin}(4)$ norm-one group replaces the non-compact $SL(2,\mathbb{C})$ slice, the simply connected group of invertibles replaces $GL(2,\mathbb{C})$, and the link $S^3\times S^3$ replaces the torus.
 
 ## Summary of Notation
 
@@ -111,9 +111,9 @@ The algebra is $\mathbb{R}^8$, hence contractible, and its punctured form is hom
 | $L = C\cap S_{\mathbb{E}} \cong S^3\times S^3$ | Link of the null cone |
 | $Z_\pm = \{\tilde{Q}_\pm = 0\}$ | The two four-dimensional zero divisor subspaces |
 | $Z = Z_+\cup Z_-$ | Zero divisor set, the failure surface of the polar form |
-| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units |
+| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of invertibles |
 | $G_1 = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
-| $\pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$ | Third homotopy group of the unit group |
+| $\pi_z({\mathbb{B}_{\mathrm{spl}}}^{\times}) = \mathbb{Z}^2$ | Third homotopy group of the group of invertibles |
 
 ## Further Reading
 

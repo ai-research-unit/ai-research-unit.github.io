@@ -126,7 +126,7 @@ A(Q)=
 \end{cases}
 $$
 
-**Proof.** The first case is the invertibility criterion: if $Q$ is a unit then $QB=0$ implies $B=Q^{-1}0=0$. For the second, write $B=B_{+}\Pi_{+}+B_{-}\Pi_{-}$; then $QB=\lambda B_{+}\Pi_{+}$, which vanishes exactly when $B_{+}=0$, that is $B\in\mathbb{R}\Pi_{-}$. The third case is symmetric. The fourth is the definition: $0\cdot B=0$ for every $B$.
+**Proof.** The first case is the invertibility criterion: if $Q$ is invertible then $QB=0$ implies $B=Q^{-1}0=0$. For the second, write $B=B_{+}\Pi_{+}+B_{-}\Pi_{-}$; then $QB=\lambda B_{+}\Pi_{+}$, which vanishes exactly when $B_{+}=0$, that is $B\in\mathbb{R}\Pi_{-}$. The third case is symmetric. The fourth is the definition: $0\cdot B=0$ for every $B$.
 
 **Corollary (the dichotomy).** A nonzero element is a zero divisor exactly when its annihilator is nonzero, and then the annihilator is a line. The annihilator of a zero divisor is never the line that carries the element itself: the two null lines annihilate one another.
 
@@ -183,7 +183,7 @@ The distinguished one-dimensional subspaces are the real line $\mathbb{R}_{\math
 
 ### The Real Subspace $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
-For $Q=q\neq0$ the operator $L_Q$ is multiplication by the nonzero real number $q$, of rank $2$ and kernel $\{0\}$. Every nonzero real number is a unit, and its annihilator is trivial.
+For $Q=q\neq0$ the operator $L_Q$ is multiplication by the nonzero real number $q$, of rank $2$ and kernel $\{0\}$. Every nonzero real number is invertible, and its annihilator is trivial.
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
@@ -255,6 +255,6 @@ The two null lines annihilate one another, the annihilator of the whole algebra 
 ## Further Reading
 
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the zero-divisor set, its two families and the criterion.
-- [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the invertibility criterion and the group of units.
+- [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the invertibility criterion and the group of invertibles.
 - [Ideals and Peirce Decomposition of the Split-Complex Algebra](ideals-and-peirce-decomposition-of-the-split-complex-algebra.html), for the two minimal ideals and the Peirce decomposition.
 - [The Two Products of the Split-Complex Space](the-two-products-of-the-split-complex-space.html), for the two products and the multiplication operators.

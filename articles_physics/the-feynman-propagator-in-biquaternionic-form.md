@@ -99,7 +99,7 @@ $$
 G_\eta:\ \tilde Q\longmapsto i^2\,\vec e_\eta^2\,\tilde Q\,\vec e_y^2=(-1)(-1)(-1)\,\tilde Q=-\tilde Q .
 $$
 
-The cross terms vanish because each action puts a unit on the right, and the two possible orders differ by $\vec e_y\vec e_x=-\vec e_x\vec e_y$ for the energy term against a spatial one; two distinct spatial terms cancel the same way, because distinct spatial units anticommute. Hence
+The cross terms vanish because each action puts an invertible element on the right, and the two possible orders differ by $\vec e_y\vec e_x=-\vec e_x\vec e_y$ for the energy term against a spatial one; two distinct spatial terms cancel the same way, because distinct spatial units anticommute. Hence
 
 $$
 \mathcal{A}_p^2=p^2\,\mathrm{id},\qquad p^2=p_0^2-\vec p^2 .
@@ -461,4 +461,4 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 - N. N. Bogoliubov and D. V. Shirkov, *Introduction to the Theory of Quantized Fields* (Interscience, 1959), for the analytic properties of the two-point functions and the connection to the Euclidean continuation.
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), and J. I. Kapusta and C. Gale, *Finite-Temperature Field Theory* (Cambridge, 2006), for the Matsubara formalism and the relation of the vacuum contour to the thermal sum.
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic setting in which propagators are distributions and states are functionals.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the algebraic background of the units, their products and their squares.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the algebraic background of the invertibles, their products and their squares.

@@ -29,7 +29,7 @@ with $J$ the block-diagonal matrix of $\tfrac{n}{2}$ copies of $\begin{pmatrix}0
 
 ## The Involutions of the First Kind
 
-**Every complex-linear anti-automorphism of order two is $A\mapsto SA^{\mathsf T}S^{-1}$ with $S^{\mathsf T}=\pm S$.** An anti-automorphism $\sigma$ sends the matrix units to $E_{ij}\mapsto c_{ij}E_{\tau(i)\tau(j)}$ for a permutation $\tau$ and scalars, and the condition $\sigma^{2}=\mathrm{id}$ forces $\tau$ to be the identity or the reversal of the order of the units; the reversal case reduces to the identity composed with the transpose. So $\sigma(A)=SA^{\mathsf T}S^{-1}$, and $\sigma^{2}=\mathrm{id}$ reads $SS^{-{\mathsf T}}=\lambda\mathrm{I}$, that is $S=\pm S^{\mathsf T}$ after rescaling. Hence
+**Every complex-linear anti-automorphism of order two is $A\mapsto SA^{\mathsf T}S^{-1}$ with $S^{\mathsf T}=\pm S$.** An anti-automorphism $\sigma$ sends the matrix units to $E_{ij}\mapsto c_{ij}E_{\tau(i)\tau(j)}$ for a permutation $\tau$ and scalars, and the condition $\sigma^{2}=\mathrm{id}$ forces $\tau$ to be the identity or the reversal of the order of the invertibles; the reversal case reduces to the identity composed with the transpose. So $\sigma(A)=SA^{\mathsf T}S^{-1}$, and $\sigma^{2}=\mathrm{id}$ reads $SS^{-{\mathsf T}}=\lambda\mathrm{I}$, that is $S=\pm S^{\mathsf T}$ after rescaling. Hence
 
 $$
 \sigma(A)=SA^{\mathsf T}S^{-1},\qquad S^{\mathsf T}=S\ \text{or}\ S^{\mathsf T}=-S .

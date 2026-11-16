@@ -7,7 +7,7 @@ This article studies the first of the two axioms that the corpus adds to the bro
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra in the broad sense, unless a sentence names a stronger hypothesis. Associativity is the only hypothesis added: $A$ is not assumed commutative and not assumed unital. The article is algebraic throughout and uses no distance, no norm and no limit.
 
-The constructions that other articles own are cited and not repeated. The tensor algebra $T(M)$ and its universal property belong to *Tensor Powers and the Free Algebra*; the formalism of ideals and quotients to *Ideals and Quotients of Algebras*; the linearisation of the identities below associativity to *Non-Associative Algebras and the Property Ladder*; the unit group and the regular module to *Centre, Units, Zero Divisors and Division Algebras*; and the matrix algebra to *Matrix Algebras*. The relevant module theory is that of *Modules*.
+The constructions that other articles own are cited and not repeated. The tensor algebra $T(M)$ and its universal property belong to *Tensor Powers and the Free Algebra*; the formalism of ideals and quotients to *Ideals and Quotients of Algebras*; the linearisation of the identities below associativity to *Non-Associative Algebras and the Property Ladder*; the group of invertibles and the regular module to *Centre, Invertibles, Zero Divisors and Division Algebras*; and the matrix algebra to *Matrix Algebras*. The relevant module theory is that of *Modules*.
 
 ## Associativity and the Associator
 
@@ -139,7 +139,7 @@ if and only if $A$ is associative. If $A$ is associative and unital then $L$ is 
 
 *Proof.* The map $L$ is $R$-linear because the product is. For $a, b, x \in A$, $L(a)L(b)(x) = a(bx)$ while $L(ab)(x) = (ab)x$; the two are equal for every $x$ exactly when $a(bx) = (ab)x$ for all $a, b, x$, that is, when $A$ is associative. If $A$ is unital and $L(a) = 0$ then $a = a\,1 = L(a)(1) = 0$.
 
-The proposition locates associativity precisely: it is the condition that the left multiplications compose, $L_a L_b = L_{ab}$. Without it there is no homomorphism $A \to \operatorname{End}_R(A)$, and the regular module $A_A$ of *Centre, Units, Zero Divisors and Division Algebras* has no algebra of operators to come from.
+The proposition locates associativity precisely: it is the condition that the left multiplications compose, $L_a L_b = L_{ab}$. Without it there is no homomorphism $A \to \operatorname{End}_R(A)$, and the regular module $A_A$ of *Centre, Invertibles, Zero Divisors and Division Algebras* has no algebra of operators to come from.
 
 **Theorem (modules are homomorphisms).** Let $A$ be an associative unital $R$-algebra and $M$ an $R$-module. A unital $A$-module structure on $M$ is the same thing as a unital $R$-algebra homomorphism $\rho : A \to \operatorname{End}_R(M)$; the correspondence is $\rho(a)(m) = a \cdot m$.
 

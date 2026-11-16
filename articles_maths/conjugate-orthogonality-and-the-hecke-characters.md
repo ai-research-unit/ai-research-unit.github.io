@@ -19,7 +19,7 @@ equivalently a continuous homomorphism $\chi:I_K\to\mathbb{T}$ trivial on $K^\ti
 $$
 \boxed{\;\chi=\prod_{v}\chi_v\;},
 $$
-a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of which are unramified, and a character is **unramified** at $v$ if $\chi_v$ is trivial on the units $\mathcal{O}_v^\times$.
+a product of local characters $\chi_v:K_v^\times\to\mathbb{T}$ almost all of which are unramified, and a character is **unramified** at $v$ if $\chi_v$ is trivial on the invertibles $\mathcal{O}_v^\times$.
 
 **Proof.** The idèle class group is a product of the local multiplicative groups modulo the global units; a continuous character of a restricted product of locally compact abelian groups factors as a product of local characters with almost all factors unramified, by the theory of local compact abelian groups in *Abstract Harmonic Analysis*. The decomposition is the content of the idèle-class version of the Chinese remainder theorem.
 

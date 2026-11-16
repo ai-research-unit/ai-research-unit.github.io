@@ -12,9 +12,9 @@ of dimension sixteen. The general article gives two families of operators for fr
 
 **The count in one line.** Sixteen operators $L_{e_\mu}R_{e_\nu}$ span the ambient, so a general operator is a sum of sixteen products, and the product of a left and a right multiplication is written $L_{\tilde q}R_{\tilde p}(\tilde x)=\tilde q\tilde x\tilde p$. The pair $(\tilde q,\tilde p)$ runs over an eight-dimensional space, the operators reach a seven-dimensional cone inside the sixteen-dimensional ambient, and the generic operator is a sum of four products. Those three numbers, eight, seven and four, organise the article.
 
-**Two things the pair does and one it does not.** It gives the full operator algebra, since the span is everything. It gives the Lorentz action, since the units act on the carrier as $SO(2,2)$. It does not give the spin structure, because the spinors are the minimal left ideals and that is a statement about modules, not about operators of the carrier. The last section says exactly where the boundary lies.
+**Two things the pair does and one it does not.** It gives the full operator algebra, since the span is everything. It gives the Lorentz action, since the invertibles act on the carrier as $SO(2,2)$. It does not give the spin structure, because the spinors are the minimal left ideals and that is a statement about modules, not about operators of the carrier. The last section says exactly where the boundary lies.
 
-**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral trichotomy, the adjugate, the norms and the projective line are the companion article *$M_2(\mathbb{R})$ Standard Representation*. The algebra is *Split-Quaternion Algebra*; the norm and the units are *Split-Quaternion Norm and Invertibility*; the zero divisors are *Split-Quaternion Zero Divisors*; the action of the units on the null cone and the hyperbolic geometry are *Split-Quaternion Rotations and the Lorentz Group*. The abstract operators of the algebra, with no matrix in them, are *Left and Right Multiplication* and *The Left and Right Multiplication Operators on a Clifford Algebra*, which this article does not replace.
+**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral trichotomy, the adjugate, the norms and the projective line are the companion article *$M_2(\mathbb{R})$ Standard Representation*. The algebra is *Split-Quaternion Algebra*; the norm and the invertibles are *Split-Quaternion Norm and Invertibility*; the zero divisors are *Split-Quaternion Zero Divisors*; the action of the invertibles on the null cone and the hyperbolic geometry are *Split-Quaternion Rotations and the Lorentz Group*. The abstract operators of the algebra, with no matrix in them, are *Left and Right Multiplication* and *The Left and Right Multiplication Operators on a Clifford Algebra*, which this article does not replace.
 
 **Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=e_t$, the model is $\mathsf{M}_2$ with images $I,J,K,D$, and $M_{\tilde q}$ is written for $\mathsf{M}_2(\tilde q)$. The trace form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, of signature $(3,1)$; the Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$, positive definite. The coefficient matrix $c(M)$ of an operator is its matrix in the basis $\{L_{e_\mu}R_{e_\nu}\}$.
 
@@ -100,7 +100,7 @@ $$
 L_{A}R_{A^{-1}}(X)=AXA^{-1},
 $$
 
-whose kernel on the pairs of units is the centre $\mathbb{R}^{\times}I$, so the effective group is
+whose kernel on the pairs of invertibles is the centre $\mathbb{R}^{\times}I$, so the effective group is
 
 $$
 \mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1),
@@ -144,7 +144,7 @@ and the value three never occurs.
 
 **Proof.** The rank of a Kronecker product is the product of the ranks, and the rank of a $2\times2$ matrix is $0$, $1$ or $2$. The products are then $0$, $1$, $2$ or $4$, and $3$ is not among them.
 
-**The consequences.** A single product is invertible exactly when both elements are units, and then its rank is four. It has rank one exactly when one of the two is a rank-one matrix and the other is a unit. It has rank two in two ways, and the two ways are not distinguishable by the rank alone. And it vanishes exactly when one of the two is zero.
+**The consequences.** A single product is invertible exactly when both elements are invertible, and then its rank is four. It has rank one exactly when one of the two is a rank-one matrix and the other is invertible. It has rank two in two ways, and the two ways are not distinguishable by the rank alone. And it vanishes exactly when one of the two is zero.
 
 **The invariants collected.** The table gathers the four numbers of a single product.
 
@@ -167,7 +167,7 @@ $$
 
 so the family is closed under composition, and the composition law is the product in the first slot and the **opposite** product in the second. The family is therefore a copy of $M_2(\mathbb{R})\times M_2(\mathbb{R})_{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $M_2\times M_2$: the reversal of the second factor is the associativity of the original product showing through.
 
-**The units of the semigroup.** The invertible members are the products of two units, and their inverses are $L_{A^{-1}}R_{B^{-1}}$. They form the group
+**The invertibles of the semigroup.** The invertible members are the products of two units, and their inverses are $L_{A^{-1}}R_{B^{-1}}$. They form the group
 
 $$
 \bigl(GL_2(\mathbb{R})\times GL_2(\mathbb{R})\bigr)/\mathbb{R}^{\times},
@@ -175,7 +175,7 @@ $$
 
 of dimension seven, where the quotient is by the simultaneous scaling $(\lambda,\lambda^{-1})$.
 
-**The automorphisms.** The inner automorphisms of the algebra appear as the products $L_{A}R_{A^{-1}}$, and they form the subgroup $\mathrm{PGL}_2(\mathbb{R})$ of the group above, of dimension three. So the semigroup contains two distinguished subgroups: the full seven-dimensional group of the products of units, and the three-dimensional group of the conjugations. The four dimensions between them are the two-sided operators $L_{A}R_{B}$ with $AB\neq I$.
+**The automorphisms.** The inner automorphisms of the algebra appear as the products $L_{A}R_{A^{-1}}$, and they form the subgroup $\mathrm{PGL}_2(\mathbb{R})$ of the group above, of dimension three. So the semigroup contains two distinguished subgroups: the full seven-dimensional group of the products of invertibles, and the three-dimensional group of the conjugations. The four dimensions between them are the two-sided operators $L_{A}R_{B}$ with $AB\neq I$.
 
 **The matrix units.** The sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are the matrix units of the ambient under the tensor identification, and the four corners of the Peirce decomposition give four of them. The algebra is a full matrix algebra and the semigroup carries a complete system of such units; the quaternion and split-biquaternion categories do not, which is the structural difference that their operators articles have to state.
 
@@ -247,7 +247,7 @@ so the generic operator has length four and four always suffice, the single prod
 
 ## What the Pair Buys and Does Not
 
-**What it buys.** The span of the sixteen products is the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$, so every real-linear operator of the carrier is a sum of at most four products and the pair describes the operator algebra completely. It gives the group of the products of units, of dimension seven, containing the conformal group $SO(2,2)$ through $SL_2(\mathbb{R})\times SL_2(\mathbb{R})$, and the group of the conjugations, $\mathrm{PGL}_2(\mathbb{R})$, of dimension three. It gives the two rulings of the cone of single products, and it gives the length filtration with its determinantal strata.
+**What it buys.** The span of the sixteen products is the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$, so every real-linear operator of the carrier is a sum of at most four products and the pair describes the operator algebra completely. It gives the group of the products of invertibles, of dimension seven, containing the conformal group $SO(2,2)$ through $SL_2(\mathbb{R})\times SL_2(\mathbb{R})$, and the group of the conjugations, $\mathrm{PGL}_2(\mathbb{R})$, of dimension three. It gives the two rulings of the cone of single products, and it gives the length filtration with its determinantal strata.
 
 **What it does not buy.** Nothing that is not a linear operator of the carrier. The norm is a quadratic form and not a linear map; the conjugation of the algebra, $\tilde q\mapsto\tilde q^{\natural}$, is the adjugate and is polynomial of degree one in the entries of the adjugate but not linear in the operator sense; the projective line is a set of ideals and not a set of vectors of the carrier. In particular the spinors of the algebra are the minimal left ideals, and the double cover $SL_2(\mathbb{R})\to SO^{+}(2,1)$ acts on them; that action is a statement about modules, and the operators of the carrier see only its shadow, the conjugation.
 

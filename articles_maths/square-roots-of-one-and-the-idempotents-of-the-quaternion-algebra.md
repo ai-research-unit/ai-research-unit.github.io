@@ -92,7 +92,7 @@ the class being the two-point set $\{+e_t,-e_t\}$.
 
 The two elements are roots, $(\pm e_t)^2=e_t$, and nothing else is, because the reduction yields only the two branches and the pure branch is empty. The class is the **central part of the level set** $\{N=1\}$: the level set is the elements of norm one, and a central element is a real scalar $se_t$ of norm $\langle se_t\rangle_{\natural}=s^2$, so the central elements of the level set are $\pm e_t$.
 
-### The Roots of One Are Units
+### The Roots of One Are Invertible
 
 A root of $+e_t$ is a **unit**: $\tilde\zeta^2=e_t$ reads $\tilde\zeta\tilde\zeta=e_t$, so $\tilde\zeta$ is invertible with inverse
 
@@ -100,7 +100,7 @@ $$
 \tilde\zeta^{-1}=\tilde\zeta,
 $$
 
-and a unit is not a zero divisor. The single element common to the roots of $+e_t$ and the idempotents is $e_t$: an element that is both a root of $+e_t$ and an idempotent satisfies $\tilde\zeta^2=e_t$ and $\tilde\zeta^2=\tilde\zeta$, hence $\tilde\zeta=e_t$. The two classes are different sets, and the halving map of §*The Idempotents* is the bijection between them.
+and an invertible element is not a zero divisor. The single element common to the roots of $+e_t$ and the idempotents is $e_t$: an element that is both a root of $+e_t$ and an idempotent satisfies $\tilde\zeta^2=e_t$ and $\tilde\zeta^2=\tilde\zeta$, hence $\tilde\zeta=e_t$. The two classes are different sets, and the halving map of §*The Idempotents* is the bijection between them.
 
 **The roots of minus one.** The roots of $-e_t$ are not the image of the roots of $+e_t$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a **central element of square $-e_t$**, an element $i$ of the centre with $i^2=-e_t$, multiplication by it flips the sign, $(i\tilde\zeta)^2=i^2\tilde\zeta^2=-\tilde\zeta^2$, and the roots of $-e_t$ are read off the roots of $+e_t$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_t$ and no central element has square $-e_t$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §*The Reduction* reads $-\lvert\vec\zeta\rvert^2=-1$ on the pure branch, that is $\lvert\vec\zeta\rvert^2=1$, so the roots of $-e_t$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $\langle \vec\zeta\rangle_{\natural}=|\vec\zeta|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_t$ alone, and the roots of $-e_t$ are quoted here and used nowhere in this article.
 
@@ -182,7 +182,7 @@ $$ \boxed{\;\tilde\pi=e_t:\quad \mathbb{H}=\mathbb{H}\oplus\{0\}\oplus\{0\}\oplu
 
 *Proof.* For $\tilde\pi=e_t$ the four spaces are $e_t\mathbb{H}e_t=\mathbb{H}$, $e_t\mathbb{H}(e_t-e_t)=0$, $(e_t-e_t)\mathbb{H}e_t=0$ and $(e_t-e_t)\mathbb{H}(e_t-e_t)=0$. For $\tilde\pi=0$ the same computation exchanges the outer factors.
 
-So the Peirce decomposition of the algebra is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal space. In particular the two off-diagonal Peirce units, which in the complexified block generate the minimal ideals, do not exist over $\mathbb{R}$: such a unit satisfies $\tilde\nu^2=0$ with $\tilde\nu\neq0$, and there is none (*Square Roots of Zero and the Nilpotents of the Quaternion Algebra*).
+So the Peirce decomposition of the algebra is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal space. In particular the two off-diagonal Peirce units, which in the complexified block generate the minimal ideals, do not exist over $\mathbb{R}$: such an invertible element satisfies $\tilde\nu^2=0$ with $\tilde\nu\neq0$, and there is none (*Square Roots of Zero and the Nilpotents of the Quaternion Algebra*).
 
 ### The Halving Map and the Bijection With the Roots of One
 
@@ -214,11 +214,11 @@ $$
 
 **Corollary (the complement swaps the two idempotents).** For the two idempotents of the algebra the map $\tilde\pi\mapsto e_t-\tilde\pi$ is the exchange $0\leftrightarrow e_t$, and $0\cdot e_t=0$. The complement is available because $e_t$ is the unit, and it is the reason the two-point class is closed under it.
 
-### Idempotents, the Zero Divisors and the Units
+### Idempotents, the Zero Divisors and the Invertibles
 
-**Proposition (no idempotent is a zero divisor).** No idempotent of the algebra is a zero divisor, and every idempotent is either the origin or a unit.
+**Proposition (no idempotent is a zero divisor).** No idempotent of the algebra is a zero divisor, and every idempotent is either the origin or an invertible element.
 
-*Proof.* The idempotents are $0$ and $e_t$. The element $0$ is not a zero divisor by the requirement that a divisor be nonzero, and $e_t$ is the unit and a nonzero element, hence invertible with $e_t^{-1}=e_t$. This is a reading of the division property: an idempotent that is neither $0$ nor a unit would be a non-invertible nonzero element, and there is none.
+*Proof.* The idempotents are $0$ and $e_t$. The element $0$ is not a zero divisor by the requirement that a divisor be nonzero, and $e_t$ is the unit and a nonzero element, hence invertible with $e_t^{-1}=e_t$. This is a reading of the division property: an idempotent that is neither $0$ nor an invertible element would be a non-invertible nonzero element, and there is none.
 
 A non-trivial idempotent would be a zero divisor, since $\tilde\pi(e_t-\tilde\pi)=0$ with both factors nonzero; over $\mathbb{R}$ the statement is vacuous, because there is no non-trivial idempotent and no zero divisor at all. The zero-divisor set is empty (*Zero Divisors of the Quaternion Algebra*), and the idempotent reading of it has nothing to describe. In the complexified block the non-trivial idempotents sit inside the zero-divisor cone as its non-pure family, which is what disappears here.
 
@@ -228,11 +228,11 @@ Both idempotents are **central**: $0$ and $e_t$ lie in the centre $\mathbb{R}e_t
 
 ## Summary
 
-The quaternion product is the multiplication of the quaternion algebra, and the roots of $+e_t$ in that product are, by the reduction $\tilde\zeta^2=\lambda e_t\Longleftrightarrow\{2\zeta_t\vec\zeta=0,\ \zeta_t^2-|\vec\zeta|^2=\lambda\}$, the two central scalars $\pm e_t$ alone: the pure branch needs $|\vec\zeta|^2=-1$, which has no real solution, and the scalar branch gives $\zeta_t^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_t$ is a unit with $\tilde\zeta^{-1}=\tilde\zeta$.
+The quaternion product is the multiplication of the quaternion algebra, and the roots of $+e_t$ in that product are, by the reduction $\tilde\zeta^2=\lambda e_t\Longleftrightarrow\{2\zeta_t\vec\zeta=0,\ \zeta_t^2-|\vec\zeta|^2=\lambda\}$, the two central scalars $\pm e_t$ alone: the pure branch needs $|\vec\zeta|^2=-1$, which has no real solution, and the scalar branch gives $\zeta_t^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_t$ is invertible with $\tilde\zeta^{-1}=\tilde\zeta$.
 
 The roots of $-e_t$ are read from the same reduction at $\lambda=-1$: they are the elements of the vector subspace with $N=1$, a quadric of real dimension two. The sign cannot be flipped, the centre $\mathbb{R}e_t$ having no element of square $-e_t$, so the roots of $-e_t$ are not the image of the roots of $+e_t$; the paragraph is a remark, and the roots of $-e_t$ index no idempotent.
 
-The idempotents are the trivial elements $0$ and $e_t$ and nothing else, the equation $\tilde\pi(\tilde\pi-e_t)=0$ and the absence of zero divisors leaving the two; there is no orthogonal family of two nonzero idempotents, no complete orthogonal family but the singleton $\{e_t\}$, no primitive idempotent but $e_t$, and no nontrivial direct sum decomposition of the algebra. The Peirce decomposition is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal unit. The halving map $\tilde\zeta\mapsto\tfrac12(e_t+\tilde\zeta)$ is a bijection from the roots of $+e_t$ onto the idempotents, with inverse $\tilde\zeta=2\tilde\pi-e_t$, and it carries the pair $\{\tilde\zeta,-\tilde\zeta\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$; the complement $e_t-\tilde\pi$ exchanges the two idempotents. No idempotent is a zero divisor, and every idempotent is the origin or a unit; both idempotents are central, so the vector subspace carries the origin alone.
+The idempotents are the trivial elements $0$ and $e_t$ and nothing else, the equation $\tilde\pi(\tilde\pi-e_t)=0$ and the absence of zero divisors leaving the two; there is no orthogonal family of two nonzero idempotents, no complete orthogonal family but the singleton $\{e_t\}$, no primitive idempotent but $e_t$, and no nontrivial direct sum decomposition of the algebra. The Peirce decomposition is the trivial one, with Peirce spaces $\mathbb{H}$ and $\{0\}$ and no off-diagonal unit. The halving map $\tilde\zeta\mapsto\tfrac12(e_t+\tilde\zeta)$ is a bijection from the roots of $+e_t$ onto the idempotents, with inverse $\tilde\zeta=2\tilde\pi-e_t$, and it carries the pair $\{\tilde\zeta,-\tilde\zeta\}$ to the complementary pair $\{\tilde\pi,e_t-\tilde\pi\}$; the complement $e_t-\tilde\pi$ exchanges the two idempotents. No idempotent is a zero divisor, and every idempotent is the origin or an invertible element; both idempotents are central, so the vector subspace carries the origin alone.
 
 ## Summary of Notation
 

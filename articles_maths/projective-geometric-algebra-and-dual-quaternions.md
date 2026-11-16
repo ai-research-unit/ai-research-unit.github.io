@@ -87,7 +87,7 @@ $$
 
 ### The Unit Dual Quaternions
 
-**Theorem.** A dual quaternion is written $q=q_0+\varepsilon q_1$ with $q_0,q_1\in\mathbb{H}$; it is a unit when it satisfies the two conditions
+**Theorem.** A dual quaternion is written $q=q_0+\varepsilon q_1$ with $q_0,q_1\in\mathbb{H}$; it is invertible when it satisfies the two conditions
 
 $$
 \langle q_0\rangle=1,\qquad B(q_0,q_1)=0 ,

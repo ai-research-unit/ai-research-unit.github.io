@@ -19,7 +19,7 @@ which carries the Cauchy product of sequences to the product of power series. Th
 
 **Proof.** If $f,g$ are supported on $p$-powers then so is $f*g$, and $(f*g)(p^r)=\sum_{j=0}^rf(p^j)g(p^{r-j})$ is the Cauchy product. The identity $\varepsilon$ corresponds to $1$, and the display is the geometric substitution.
 
-**Corollary.** The unit group of $\mathcal{A}_p$ is $\{f:f(p^0)=f(1)\ne0\}$, and $\mathcal{A}_p$ has no zero divisors.
+**Corollary.** The group of invertibles of $\mathcal{A}_p$ is $\{f:f(p^0)=f(1)\ne0\}$, and $\mathcal{A}_p$ has no zero divisors.
 
 ### The restricted product
 

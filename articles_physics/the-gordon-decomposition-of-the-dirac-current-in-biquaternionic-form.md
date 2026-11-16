@@ -16,7 +16,7 @@ The article is organised as follows. The next section fixes the conventions: the
 
 ### The Field and Its Value
 
-The conventions are those of the companion articles, and none is restated here: the algebra, its basis, its element glyphs and its three conjugations are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the metric and the units are *Frame and Metric Conventions*; the chirality value is *Matrix Representations Conventions*, §*The Subscript on an Element*; the gradient and its four products are *Operator and Calculus Conventions*.
+The conventions are those of the companion articles, and none is restated here: the algebra, its basis, its element glyphs and its three conjugations are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the metric and the invertibles are *Frame and Metric Conventions*; the chirality value is *Matrix Representations Conventions*, §*The Subscript on an Element*; the gradient and its four products are *Operator and Calculus Conventions*.
 
 The field is an element of $\mathbb{B}$. At each point $\tilde Q$ it takes a value $\tilde{Ξ}(\tilde Q)$, with the four coefficients $\tilde{Ξ}_{t}$, $\tilde{Ξ}_{x}$, $\tilde{Ξ}_{y}$, $\tilde{Ξ}_{z}$. Those four coefficients are the four components of the field. A state is an element; there is no second carrier behind it, and the four coefficients are read off the one element.
 
@@ -221,7 +221,7 @@ The first term is proportional to the scalar bilinear $\bar w_2w$, the second to
 
 ### The parent identity
 
-Both momentum-space statements are consequences of the simpler **parent identity**. The two on-shell conditions replace the field on either side of a bilinear by the generator applied to it, so for any two products of units $a$ and $b$
+Both momentum-space statements are consequences of the simpler **parent identity**. The two on-shell conditions replace the field on either side of a bilinear by the generator applied to it, so for any two products of invertibles $a$ and $b$
 
 $$
 2m\,\bar w_2\,a\,w\,b

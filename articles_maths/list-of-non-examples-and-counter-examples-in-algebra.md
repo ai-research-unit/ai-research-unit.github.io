@@ -73,14 +73,14 @@ A **Euclidean domain** is a domain with a degree function and division with rema
 
 ## Not Division Rings or Division Algebras
 
-A **division ring** is a ring in which every nonzero element is a unit; a **division algebra** is the corresponding algebra over a field. The failures are of two kinds: the objects with zero divisors, and the objects that are division algebras but not rings because associativity fails.
+A **division ring** is a ring in which every nonzero element is invertible; a **division algebra** is the corresponding algebra over a field. The failures are of two kinds: the objects with zero divisors, and the objects that are division algebras but not rings because associativity fails.
 
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
 | $M_2(\mathbb{R})$ | a simple algebra but not a division ring: the matrix with one nonzero entry is a nonzero zero divisor | *Examples of Algebras* |
 | Split biquaternions $\mathbb{B}_{\mathrm{spl}}$ | not a division algebra: $\cong \mathbb{H}\oplus\mathbb{H}$, with zero divisors and no nonzero nilpotents | *Split-Biquaternion Algebra* |
 | Biquaternions $\mathbb{B}$ | not a division ring: $\cong M_2(\mathbb{C})$ | *The Biquaternion Algebra* |
-| $\mathbb{Z}$ | a domain but not a division ring: only $\pm 1$ are units | *The Integers* |
+| $\mathbb{Z}$ | a domain but not a division ring: only $\pm 1$ are invertible | *The Integers* |
 | The free algebra $k\langle x_1,\dots,x_n\rangle$ | a domain but not a division ring, and not commutative | *Tensor Powers and the Free Algebra* |
 | The Weyl algebra $A_1$ | a domain but not a division ring; it embeds in a division ring of fractions | *Quotients of the Tensor Algebra* |
 | Non-example: $\mathbb{H}$ as a division ring that is not a field | it is a division ring: the failure is commutativity, not inverses | *Quaternion Algebra* |
@@ -93,9 +93,9 @@ A **field** is a commutative division ring; the objects here are domains or divi
 | Object | The property above it, and the failure | Introduced in |
 |---|---|---|
 | $\mathbb{H}$ | a division ring but not a field: not commutative | *Quaternion Algebra* |
-| $\mathbb{Z}$ | an integral domain but not a field: $2$ is not a unit | *The Integers* |
-| $\mathbb{Z}_p$, the $p$-adic integers | a principal ideal domain but not a field: $p$ is not a unit | *Absolute Values, Valuations and Completions* |
-| $k[x]$, $k[[x]]$ | principal ideal domains but not fields: $x$ is not a unit | *Polynomial Rings and Rational Functions* |
+| $\mathbb{Z}$ | an integral domain but not a field: $2$ is not invertible | *The Integers* |
+| $\mathbb{Z}_p$, the $p$-adic integers | a principal ideal domain but not a field: $p$ is not invertible | *Absolute Values, Valuations and Completions* |
+| $k[x]$, $k[[x]]$ | principal ideal domains but not fields: $x$ is not invertible | *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}[\sqrt{-5}]$ | a domain but not a field, and not a unique factorisation domain | *Unique Factorisation Domains* |
 | The zero ring | not a field: $1 = 0$ | *Rings* |
 | Non-example: $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$ as fields | fail already the domain axiom: a field is a domain | *Split-Complex Algebra* |

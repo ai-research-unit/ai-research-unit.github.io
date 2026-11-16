@@ -22,7 +22,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 | unique factorisation domain | every nonzero nonunit is a product of irreducibles, uniquely up to order and associates | *Unique Factorisation Domains* |
 | principal ideal domain | every ideal is principal | *Principal Ideal Domains* |
 | Euclidean domain | a Euclidean degree with division with remainder | *Euclidean Domains* |
-| field | every nonzero element is a unit | *Fields* |
+| field | every nonzero element is invertible | *Fields* |
 
 The progression that the menu names runs Ring → Commutative ring → Reduced ring → Integral domain → UFD → PID → Euclidean domain → Field. The two entries GCD domain and Bézout domain are the refinement of the step from an integral domain to a UFD, and they are treated separately below because at that step the progression branches rather than continuing in a line.
 
@@ -36,7 +36,7 @@ The progression that the menu names runs Ring → Commutative ring → Reduced r
 | a unique factorisation domain is an integral domain | unique factorisation | $\mathbb{Z}[\sqrt{-5}]$, in which $6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$ | *Unique Factorisation Domains* |
 | a principal ideal domain is a unique factorisation domain | every ideal principal | $\mathbb{Z}[x]$, whose ideal $(2, x)$ is not principal | *Principal Ideal Domains* |
 | a Euclidean domain is a principal ideal domain | a Euclidean degree | $\mathbb{Z}[(1+\sqrt{-19})/2]$ | *Euclidean Domains* |
-| a field is a Euclidean domain | every nonzero element a unit | $\mathbb{Z}$, in which $2$ is not a unit | *The Integers* |
+| a field is a Euclidean domain | every nonzero element an invertible element | $\mathbb{Z}$, in which $2$ is not invertible | *The Integers* |
 
 The first witness, $M_2(\mathbb{R})$, is the matrix ring of *Matrix Algebras*; the progression is not entered by $M_2(\mathbb{R})$ again. The witness $\mathbb{Z}[\sqrt{-5}]$ is the classical Noetherian domain whose class group has order $2$, recorded in *Dedekind Domains and Ideal Class Groups* as well as in *Unique Factorisation Domains*. The witness $\mathbb{Z}[(1+\sqrt{-19})/2]$ is the principal ideal domain that fails to be Euclidean, recorded in *Euclidean Domains*; the subring $\mathbb{Z}[\sqrt{-19}]$ is not integrally closed.
 

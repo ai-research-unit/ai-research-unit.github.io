@@ -18,7 +18,7 @@ The chain begins with the systems that are ordered: $\mathbb{N}$, $\mathbb{Z}$, 
 | $\mathbb{R}$ | commutative, associative; a field and a division algebra; no zero divisors; ordered and complete | *The Real Numbers* |
 | $\mathbb{Q}$ as a prime field | the smallest field of characteristic $0$; the prime field embedding | *Fields* |
 | Non-example: $\mathbb{N}$ as a field | fails: it has no additive inverses and no multiplicative inverses beyond $1$ | *The Natural Numbers* |
-| Non-example: $\mathbb{Z}$ as a division algebra | fails: only $\pm 1$ are units | *The Integers* |
+| Non-example: $\mathbb{Z}$ as a division algebra | fails: only $\pm 1$ are invertible | *The Integers* |
 
 ## The Complex Numbers: the Loss of Order
 

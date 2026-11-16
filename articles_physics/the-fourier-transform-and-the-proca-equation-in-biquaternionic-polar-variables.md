@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the units and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The gradient and the d'Alembertian are those of *Operator and Calculus Conventions*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The gradient and the d'Alembertian are those of *Operator and Calculus Conventions*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,

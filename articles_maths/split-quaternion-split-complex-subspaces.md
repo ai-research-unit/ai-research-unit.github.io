@@ -95,9 +95,9 @@ $$
 
 of signature $(1,1)$. Each restriction is the hyperbolic or **Minkowski** form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.
 
-### Units and Zero Divisors
+### Invertibles and Zero Divisors
 
-In $\mathbb{C}_{\mathrm{spl},2}$, an element $q_t + q_y\vec e_y$ is a unit of the algebra exactly when $q_t^2 \neq q_y^2$, with inverse $(q_t - q_y\vec e_y)/(q_t^2-q_y^2)$; the units form the two branches of the hyperbola $q_t^2 - q_y^2 \neq 0$. The non-units are the two isotropic lines
+In $\mathbb{C}_{\mathrm{spl},2}$, an element $q_t + q_y\vec e_y$ is invertible in the algebra exactly when $q_t^2 \neq q_y^2$, with inverse $(q_t - q_y\vec e_y)/(q_t^2-q_y^2)$; the invertibles form the two branches of the hyperbola $q_t^2 - q_y^2 \neq 0$. The non-invertibles are the two isotropic lines
 
 $$
 \mathbb{R}(1 + \vec e_y), \qquad \mathbb{R}(1 - \vec e_y),
@@ -107,7 +107,7 @@ on which $q_t = \pm q_y$; every nonzero element of these lines is a zero divisor
 
 **Proposition.** The zero divisors of $\mathbb{C}_{\mathrm{spl},2}$ are exactly the nonzero elements of the two isotropic lines $\mathbb{R}(1 \pm \vec e_y)$, and the zero divisors of $\mathbb{C}_{\mathrm{spl},3}$ are exactly the nonzero elements of $\mathbb{R}(1 \pm \vec e_z)$.
 
-**Proof.** The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is a unit if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-units are exactly the nonzero null elements.
+**Proof.** The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is invertible if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-invertibles are exactly the nonzero null elements.
 
 ## The Structure of the Planes
 
@@ -156,7 +156,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 **Example (an idempotent of the first plane).** For $\tilde\pi_1 = \tfrac{1}{2}(1 + \vec e_y)$ one has $\tilde\pi_1^2 = \tilde\pi_1$, with $\vec e_y \tilde\pi_1 = \tilde\pi_1$ and $\tilde\pi_2 \tilde\pi_1 = 0$; $\langle\tilde\pi_1\rangle_{\natural} = 0$, and $\tilde\pi_1$ is a zero divisor in $\mathbb{C}_{\mathrm{spl},2}$ with $\tilde\pi_1 \tilde\pi_2 = 0$.
 
-**Example (a unit of the second plane).** For $\tilde q = 2 + \vec e_z$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is a unit with inverse $(2 - \vec e_z)/3$.
+**Example (an invertible element of the second plane).** For $\tilde q = 2 + \vec e_z$, the split-quaternion norm is $N = 4 - 1 = 3$, so $\tilde q$ is invertible with inverse $(2 - \vec e_z)/3$.
 
 **Example (the twisted multiplication).** Take $A_1 = 1$, $A_2 = \vec e_y$, $B_1 = 1$, $B_2 = 0$ in $\mathbb{H}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl},2} \oplus \mathbb{C}_{\mathrm{spl},2} \vec e_x$. Then $(1 + \vec e_y \vec e_x)(1) = 1 + \vec e_y \vec e_x = 1 - \vec e_x \vec e_y = 1 - \vec e_z$, while treating $\vec e_x$ as commuting with $\mathbb{C}_{\mathrm{spl},2}$ would give $1 + \vec e_z$; the sign is the twist $\vec e_x \vec e_y = \vec e_y^{\natural}\, \vec e_x$. This is the concrete content of the twisted formula above.
 

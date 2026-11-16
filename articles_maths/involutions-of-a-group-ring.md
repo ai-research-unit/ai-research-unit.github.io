@@ -65,7 +65,7 @@ is an involution of $K[G]$ restricting to $\sigma$ on the coefficients; the invo
 
 **Proof.** Additivity and $1^{*} = 1$ are immediate, the restriction to $K$ is $\sigma$, and $\sigma^2 = \mathrm{id}$ with $\iota^2 = \mathrm{id}$ and $u_g u_{\iota(g)} = 1$ give $(x^{*})^{*} = x$. For the anti-multiplicativity, it suffices to check the products of group elements: $(g h)^{*} = \sigma(1)u_{gh}\iota(gh) = u_{gh}\iota(h)\iota(g)$, while $h^{*}g^{*} = u_h\iota(h)\,u_g\iota(g) = u_hu_g\,\iota(h)\iota(g)$, and the two agree by $u_{gh} = u_hu_g$ (the coefficients $u_g$ are central scalars). The case $u = 1$ is the involution induced by $\iota$.
 
-**Remark.** The map $u$ is a **cocycle**, an anti-homomorphism of $G$ into the units of $K$ that is inverted by $\iota$; when $K^{\times}$ is abelian it is a homomorphism and its class in $H^1(G;K^{\times})$ is an invariant of the involution. That every involution of $K[G]$ that restricts to $\sigma$ on the coefficients arises from a pair $(\iota, u)$ as above is the classification theorem of Hertweck; it is quoted here, not used, and the family above is the part the article works with.
+**Remark.** The map $u$ is a **cocycle**, an anti-homomorphism of $G$ into the invertibles of $K$ that is inverted by $\iota$; when $K^{\times}$ is abelian it is a homomorphism and its class in $H^1(G;K^{\times})$ is an invariant of the involution. That every involution of $K[G]$ that restricts to $\sigma$ on the coefficients arises from a pair $(\iota, u)$ as above is the classification theorem of Hertweck; it is quoted here, not used, and the family above is the part the article works with.
 
 ## The Twisted Group Ring
 

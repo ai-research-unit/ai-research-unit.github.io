@@ -7,7 +7,7 @@ The complex space carries two distinguished forms (*The Two Forms and the Two Al
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.
 
-The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of units are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
+The article does not define the two forms, which are *The Two Forms and the Two Algebraic Norms of the Complex Space*, nor the two algebraic norms $Q_1^{2}$ and $\langle Q_1\rangle_{*}$ that are their diagonals. The modulus $\sqrt{\langle Q_1\rangle_{*}}=\sqrt{H(Q_1)}$, its multiplicativity, its triangle inequality, the invertibility criterion and the group of invertibles are *Complex Norm and Invertibility*. The topology is *Complex Topology*; the reflections and the group of maps preserving the definite form are *Rotations and Reflections in the Complex Plane*, below this article in this category. The realification by which a complex form becomes a real bilinear form is the two-dimensional case of *The Realification and the Effect of the Change of Scalars*.
 
 ## The Two Forms and Their Realifications
 
@@ -61,7 +61,7 @@ It is the diagonal of the definite form $\langle\cdot,\cdot\rangle_{*}$ read on 
 
 The level sets are the circles: $d_{H}(Q_1,Q_2)=r$ is the circle of radius $r$ about $Q_2$. The form is definite, so there is no null cone beyond the point $Q_1=Q_2$.
 
-**The group of maps preserving the form.** The $\mathbb{C}$-linear maps preserving $\langle\cdot,\cdot\rangle_{*}$ are the multiplications by the units of norm one, $Q\mapsto uQ$ with $\lvert u\rvert=1$; the identification of this group of multiplications with $\mathrm{SO}(2)$, together with the reading of the parameter, is *Rotations and Reflections in the Complex Plane*, below this article in this category. The full group of $\mathbb{R}$-linear maps preserving $H$ is the group $O(2)$, given by the matrix condition
+**The group of maps preserving the form.** The $\mathbb{C}$-linear maps preserving $\langle\cdot,\cdot\rangle_{*}$ are the multiplications by the invertibles of norm one, $Q\mapsto uQ$ with $\lvert u\rvert=1$; the identification of this group of multiplications with $\mathrm{SO}(2)$, together with the reading of the parameter, is *Rotations and Reflections in the Complex Plane*, below this article in this category. The full group of $\mathbb{R}$-linear maps preserving $H$ is the group $O(2)$, given by the matrix condition
 
 $$
 M^{\mathsf T}M=\mathrm{I}_{2}
@@ -192,7 +192,7 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 - [The Two Forms and the Two Algebraic Norms of the Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.html), for the two forms and the two algebraic norms whose diagonals are their squares.
 - [The Two Products of the Complex Space](the-two-products-of-the-complex-space.html), for the two products $Q_1Q_2$ and $Q_1\bar Q_2$ whose forms are realified here.
 - [Complex Algebra](complex-algebra.html), for the algebra, its basis and its one nontrivial involution.
-- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of units.
+- [Complex Norm and Invertibility](complex-norm-and-invertibility.html), for the modulus, its multiplicativity, its triangle inequality and the group of invertibles.
 - [Rotations and Reflections in the Complex Plane](rotations-and-reflections-in-the-complex-plane.html), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
 - [The Group of Involutions and the Two Subspaces of the Complex Space](the-group-of-involutions-and-the-two-subspaces-of-the-complex-space.html), for the real and imaginary subspaces on which the split metric is definite of opposite signs, and for the restrictions of the two forms to them.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.

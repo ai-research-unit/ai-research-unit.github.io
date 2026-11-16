@@ -132,7 +132,7 @@ $$
 
 is its unique maximal ideal; $\mathcal{O}$ is a local ring with residue field $k = \mathcal{O}/\mathrm{M}$, and $F = \operatorname{Frac}(\mathcal{O})$.
 
-**Proof.** $\mathcal{O}$ is closed under addition by (AV3') and under multiplication by (AV2); the elements of absolute value $1$ are exactly the units, because $\lvert x \rvert = 1$ gives $\lvert x^{-1} \rvert = 1$, and every element of $\mathrm{M}$ is noninvertible since $\lvert x \rvert < 1$ forces $\lvert x^{-1} \rvert > 1$. Every proper ideal is contained in $\mathrm{M}$, because a unit generates the whole ring, so $\mathrm{M}$ is the unique maximal ideal.
+**Proof.** $\mathcal{O}$ is closed under addition by (AV3') and under multiplication by (AV2); the elements of absolute value $1$ are exactly the units, because $\lvert x \rvert = 1$ gives $\lvert x^{-1} \rvert = 1$, and every element of $\mathrm{M}$ is noninvertible since $\lvert x \rvert < 1$ forces $\lvert x^{-1} \rvert > 1$. Every proper ideal is contained in $\mathrm{M}$, because an invertible element generates the whole ring, so $\mathrm{M}$ is the unique maximal ideal.
 
 ---
 
@@ -164,7 +164,7 @@ $$
 
 is a bijection between the valuations of $F$ with value group $\Gamma \subseteq \mathbb{R}$ and the non-Archimedean absolute values of $F$, and this correspondence is compatible with equivalence: two valuations give equivalent absolute values exactly when they have the same valuation ring.
 
-**Proof.** (V2) and (V3) become (AV2) and (AV3') under $v \mapsto c^{-v}$; conversely $\log_c \lvert x \rvert$ recovers $v$ up to the sign convention. Equivalence of absolute values preserves the unit group $\{x : \lvert x \rvert = 1\}$, hence the valuation ring, and conversely equality of valuation rings determines the unit group and the set $\{x : \lvert x \rvert < 1\}$, hence the topology.
+**Proof.** (V2) and (V3) become (AV2) and (AV3') under $v \mapsto c^{-v}$; conversely $\log_c \lvert x \rvert$ recovers $v$ up to the sign convention. Equivalence of absolute values preserves the group of invertibles $\{x : \lvert x \rvert = 1\}$, hence the valuation ring, and conversely equality of valuation rings determines the group of invertibles and the set $\{x : \lvert x \rvert < 1\}$, hence the topology.
 
 **Definition.** The **valuation ring** of $v$ is
 
@@ -260,7 +260,7 @@ then there is a unique $b \in \mathcal{O}$ with $f(b) = 0$ and $\lvert b - a \rv
 
 **Proof sketch.** The Newton iteration $a_{n+1} = a_n - f(a_n)/\frac{df}{dx}(a_n)$ is defined by the hypothesis and is Cauchy for the non-Archimedean absolute value, with $\lvert a_{n+1} - a_n \rvert$ decreasing quadratically; completeness gives a limit $b$, and continuity of $f$ gives $f(b) = 0$. Uniqueness is by the ultrametric estimate on $f(b) - f(b')$.
 
-**Corollary (roots of units).** Let $p$ be odd and let $u \in \mathbb{Z}_p^\times$. Then $u$ is a square in $\mathbb{Z}_p$ if and only if its image in $\mathbb{F}_p^\times$ is a square.
+**Corollary (roots of invertibles).** Let $p$ be odd and let $u \in \mathbb{Z}_p^\times$. Then $u$ is a square in $\mathbb{Z}_p$ if and only if its image in $\mathbb{F}_p^\times$ is a square.
 
 **Proof.** Apply Hensel's lemma to $f(x) = x^2 - u$ at a lift $a$ of a square root of the image of $u$ in $\mathbb{F}_p$: since the image is a nonzero square, $\frac{df}{dx}(a) = 2a$ has absolute value $1$, while $\lvert f(a) \rvert \leq 1/p < 1 = \lvert \frac{df}{dx}(a) \rvert^2$, so the hypothesis of Hensel's lemma holds.
 

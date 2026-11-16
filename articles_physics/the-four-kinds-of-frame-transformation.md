@@ -200,7 +200,7 @@ $\lvert\tau\rvert\to2$ from below is a rotation whose angle tends to $0$ or $2\p
 
 ## Summary
 
-The Lorentz group has four conjugacy classes, classified by the trace $\tau=2Q_t$: elliptic when $\tau$ is real with $\lvert\tau\rvert<2$ and the eigenvalues are a unit-modulus pair; hyperbolic when $\tau$ is real with $\lvert\tau\rvert>2$ and the eigenvalues are real and reciprocal; parabolic when $\tau=\pm2$ and the element is a nontrivial unipotent; loxodromic when $\tau$ is not real and the eigenvalues are a spiral pair. The four are the rotation, the boost, the null shear and the screw motion, they have two, two, one and two fixed null directions, and they are read off the scalar part of the element in the algebra. The two central elements $\pm e_t$ sit at the boundary and belong to none of the four.
+The Lorentz group has four conjugacy classes, classified by the trace $\tau=2Q_t$: elliptic when $\tau$ is real with $\lvert\tau\rvert<2$ and the eigenvalues are invertible-modulus pair; hyperbolic when $\tau$ is real with $\lvert\tau\rvert>2$ and the eigenvalues are real and reciprocal; parabolic when $\tau=\pm2$ and the element is a nontrivial unipotent; loxodromic when $\tau$ is not real and the eigenvalues are a spiral pair. The four are the rotation, the boost, the null shear and the screw motion, they have two, two, one and two fixed null directions, and they are read off the scalar part of the element in the algebra. The two central elements $\pm e_t$ sit at the boundary and belong to none of the four.
 
 ## Summary of Notation
 

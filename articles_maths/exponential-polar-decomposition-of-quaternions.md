@@ -93,7 +93,7 @@ The first is positive real; the second has norm one, $\langle\exp(\vec v)\rangle
 | scale | $\exp(q_{\log})=r$ | $(0,\infty)$ | $q_{\log}=\ln r$ | $r>0$ |
 | unit factor (rotor) | $\exp(\vec q_{\log})=\tilde q/r$ | $S^3$ | $\vec q_{\log}=\theta\vec n$ | $\theta\in[0,\pi)$, $\vec n\in S^2$ |
 
-The real dimensions are $1$ and $3$, and they add to the real dimension $4$ of $\mathbb{H}$. The scale is non-compact; the unit factor is compact. This is the compact case of the polar decomposition: the group of units retracts onto the sphere.
+The real dimensions are $1$ and $3$, and they add to the real dimension $4$ of $\mathbb{H}$. The scale is non-compact; the unit factor is compact. This is the compact case of the polar decomposition: the group of invertibles retracts onto the sphere.
 
 ### The Rotor Part
 
@@ -189,7 +189,7 @@ $$
 =\bigl(\ln(r_1r_2),\ \tilde u_{\mathrm r,1}\tilde u_{\mathrm r,2}\bigr).
 $$
 
-The logarithmic scale adds and the unit factors multiply. The group of units is the direct product $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
+The logarithmic scale adds and the unit factors multiply. The group of invertibles is the direct product $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
 
 In exponential coordinates the law is not additive. With $\tilde u_{\mathrm r,j}=\cos\theta_j+\vec n_j\sin\theta_j$, the product is
 
@@ -471,7 +471,7 @@ again with multiplicity two. The map is a similarity on the first plane and a di
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $\tilde q=r\tilde u_{\mathrm r}$ with $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$. It is unique on the whole of $\mathbb{H}^{\times}$, it uses the square root of the norm, and it is the product decomposition of the group of units. It is the form developed in *Modulus–Unit Polar Decomposition of Quaternions*.
+The modulus–unit form is $\tilde q=r\tilde u_{\mathrm r}$ with $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$. It is unique on the whole of $\mathbb{H}^{\times}$, it uses the square root of the norm, and it is the product decomposition of the group of invertibles. It is the form developed in *Modulus–Unit Polar Decomposition of Quaternions*.
 
 ### The Rational-Chart Form
 
@@ -587,7 +587,7 @@ $$
 
 with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and axis $\vec n\in S^2$; the unit factor is the rotor $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$, whose two-sided operator rotates by $2\theta$. The pair $(r,\theta\vec n)$ is unique off the real axis. On the positive real axis the angle is $0$ and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation has $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ and covers the quaternion space cut along the closed negative real axis. Its exponent is the principal logarithm $\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\theta\vec n$; every other logarithm is $\log\tilde q+2\pi k\vec n$ off the real axis, and a union of spheres on it.
 
-The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of units is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
+The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of invertibles is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
 
 The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ anti-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
 

@@ -56,7 +56,7 @@ $$
 
 the nonreal pairs contribute positive factors, so the sign of the determinant is the product of the signs of the real eigenvalues, counted with multiplicity. In particular $\det A<0$ forces an odd number of negative real eigenvalues, and $\det A>0$ does not force the spectrum to be real.
 
-**The sign is what cuts the unit group in two.** $\det:\mathrm{GL}_n(\mathbb{R})\to\mathbb{R}^{\times}$ is continuous and surjective, so its two signs are the two components. A matrix with $\det>0$ may still have no real eigenvalue of either sign: the rotation $J$ at $n=2$ has $\det J=1$ and no real eigenvalue. So the sign of the determinant is not readable from the real spectrum unless the spectrum is real.
+**The sign is what cuts the group of invertibles in two.** $\det:\mathrm{GL}_n(\mathbb{R})\to\mathbb{R}^{\times}$ is continuous and surjective, so its two signs are the two components. A matrix with $\det>0$ may still have no real eigenvalue of either sign: the rotation $J$ at $n=2$ has $\det J=1$ and no real eigenvalue. So the sign of the determinant is not readable from the real spectrum unless the spectrum is real.
 
 **The determinant is multiplicative and vanishes exactly on the singular set.** $\det(AB)=\det A\det B$, and $\det A=0$ exactly when $A$ is not invertible, which is exactly when $\operatorname{rk}A<n$. So the zero set of the determinant is the closed stratum $\Sigma_{\le n-1}$, of codimension one.
 
@@ -131,7 +131,7 @@ Both have $\chi(t)=t^{3}$, both have trace $0$ and determinant $0$, and they are
 
 ## Summary
 
-The rank, the trace, the determinant and the characteristic polynomial of a real matrix are real data computed by polynomial formulas. The rank stratifies $M_n(\mathbb{R})$ into the varieties $\Sigma_{\le r}$ of dimension $r(2n-r)$ and codimension $(n-r)^{2}$. The trace is the only invariant linear functional and the sum of the eigenvalues; the determinant is the product, and its sign cuts the unit group in two. The characteristic polynomial has real coefficients, its roots are real or come in conjugate pairs, a real root gives a real invariant line and a conjugate pair a real invariant plane with a $2\times2$ rotation block. Cayley–Hamilton holds over $\mathbb{R}$. The four invariants do not determine the element: at $n=3$ the nilpotents of type $(2,1)$ and $(3)$ share $t^{3}$ and differ in rank.
+The rank, the trace, the determinant and the characteristic polynomial of a real matrix are real data computed by polynomial formulas. The rank stratifies $M_n(\mathbb{R})$ into the varieties $\Sigma_{\le r}$ of dimension $r(2n-r)$ and codimension $(n-r)^{2}$. The trace is the only invariant linear functional and the sum of the eigenvalues; the determinant is the product, and its sign cuts the group of invertibles in two. The characteristic polynomial has real coefficients, its roots are real or come in conjugate pairs, a real root gives a real invariant line and a conjugate pair a real invariant plane with a $2\times2$ rotation block. Cayley–Hamilton holds over $\mathbb{R}$. The four invariants do not determine the element: at $n=3$ the nilpotents of type $(2,1)$ and $(3)$ share $t^{3}$ and differ in rank.
 
 ## Summary of Notation
 

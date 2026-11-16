@@ -47,9 +47,9 @@ It is one of exactly two of the four distinguished subspaces that are subalgebra
 
 ### It Is a Division Algebra
 
-**Theorem.** $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a division algebra: every nonzero element is a unit, and there are no zero divisors in the subspace.
+**Theorem.** $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a division algebra: every nonzero element is invertible, and there are no zero divisors in the subspace.
 
-**Proof.** On the subspace the split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$, a strictly positive real number for $\tilde{Q} \neq 0$; a nonzero real norm is a unit of $\mathbb{C}_{\mathrm{spl}}$, so by the invertibility criterion the element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A zero divisor would have to be a nonzero non-unit, which does not exist.
+**Proof.** On the subspace the split-biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$, a strictly positive real number for $\tilde{Q} \neq 0$; a nonzero real norm is invertible in $\mathbb{C}_{\mathrm{spl}}$, so by the invertibility criterion the element is invertible, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A zero divisor would have to be a nonzero non-invertible, which does not exist.
 
 So although the ambient algebra $\mathbb{B}_{\mathrm{spl}}$ has many zero divisors, the quaternion subspace contains none of them; the zero divisors all have at least one vanishing idempotent component and hence cannot have all coefficients real and nonzero in the required way. This is developed in *Split-Biquaternion Zero Divisors*.
 
@@ -115,9 +115,9 @@ which is real and **positive definite**, vanishing only at $\tilde{Q} = 0$.
 
 Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
 
-### Units and Idempotents
+### Invertibles and Idempotents
 
-**Theorem.** For $\tilde{Q}$ in the quaternion subspace the following are equivalent: $\tilde{Q}$ is a unit; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$.
+**Theorem.** For $\tilde{Q}$ in the quaternion subspace the following are equivalent: $\tilde{Q}$ is invertible; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. The inverse is $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$.
 
 **Proof.** The split-biquaternion norm is positive definite, so $\langle\tilde{Q}\rangle_{\natural} = 0$ only at the origin; the inverse formula is the standard quaternion inverse and is verified directly.
 
@@ -169,7 +169,7 @@ As the fixed space of split complex conjugation, the quaternion subspace is the 
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_t, \vec e_x, \vec e_y, \vec e_z$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is a unit, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $\vec e_x \vec e_y = \vec e_z$, and its commutator is $2\,\vec q\times\vec v$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\varphi$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed space of split complex conjugation, the set of elements with real coefficients; it is a real vector space of dimension $4$ with basis $e_t, \vec e_x, \vec e_y, \vec e_z$, a real form of the algebra. It is a subalgebra isomorphic to the real quaternion algebra $\mathbb{H}$, noncommutative and a **division algebra**: it contains no zero divisor, every nonzero element is invertible, and the split-biquaternion norm restricts to the positive definite quaternion norm $N = \sum_\mu q_\mu^2$, so $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. Its roots of $-1$ are the unit pure quaternions $S^2$, it contains the quaternion imaginary units with $\vec e_x \vec e_y = \vec e_z$, and its commutator is $2\,\vec q\times\vec v$, a pure quaternion, so the commutator subalgebra is the three-dimensional space of pure quaternions and the subspace is the Lie algebra $\mathrm{SO}(3)$ under the bracket. The only idempotents it contains are $0$ and $1$; the nontrivial idempotents of the algebra lie in the split complex subspace. Its image under $\varphi$ is the diagonal copy of $\mathbb{H}$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, split complex conjugation fixes it pointwise and quaternion and Hermitian conjugations both act as the quaternion conjugation; the subspace meets the split complex and Hermitian subspaces in $\mathbb{R}$ and the anti-Hermitian and vector subspaces in the space of pure real quaternions.
 
 ## Summary of Notation
 
@@ -186,7 +186,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the fixed sp
 | $\varphi(\tilde{Q}) = (\tilde{Q}, \tilde{Q})$ | Diagonal image in $\mathbb{H} \oplus \mathbb{H}$ |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | The other distinguished subspaces |
 | $\sum_\mu \partial^2/\partial q_\mu^2$ | Quaternion Laplace operator on the subspace |
-| $SO(4)$, $S^3\times S^3$ | Rotations and unit group acting on the quaternion subspace |
+| $SO(4)$, $S^3\times S^3$ | Rotations and group of invertibles acting on the quaternion subspace |
 
 ## Further Reading
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, shows that no positive-definite form on the algebra is multiplicative, describes the group of units, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
+This article studies the split-quaternion norm, its isotropy, and the invertibility theory it determines. It proves the criterion that an element is invertible exactly when its split-quaternion norm does not vanish, shows that no positive-definite form on the algebra is multiplicative, describes the group of invertibles, classifies the elements, and describes how the invertible elements are distributed among the distinguished subspaces.
 
 The split-quaternion algebra, its basis, its conjugation ${}^{\natural}$, its split-quaternion norm $\langle\cdot\rangle_{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its subspaces $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ are assumed from *Split-Quaternion Algebra* and are not redefined. The zero divisor set is treated separately in *Split-Quaternion Zero Divisors*, and the roots of $-1$ in *Split-Quaternion Roots of Minus One*. Nothing physical is invoked.
 
@@ -65,9 +65,9 @@ $$
 |\tilde q_1\tilde q_2| \leq \sqrt2\,|\tilde q_1|\,|\tilde q_2|,
 $$
 
-with equality at $\tilde q_1=\tilde q_2=1+\vec e_y$. The algebra is therefore a normed algebra up to a constant, multiplication is continuous, inversion is continuous on the units, and the group of units is open. Since all norms on a finite-dimensional space give the same topology, the topology of $\mathbb{H}_{\mathrm{spl}}$ is unaffected by the failure. What fails is the metric compatibility: no Riemannian structure on the algebra is multiplicative.
+with equality at $\tilde q_1=\tilde q_2=1+\vec e_y$. The algebra is therefore a normed algebra up to a constant, multiplication is continuous, inversion is continuous on the invertibles, and the group of invertibles is open. Since all norms on a finite-dimensional space give the same topology, the topology of $\mathbb{H}_{\mathrm{spl}}$ is unaffected by the failure. What fails is the metric compatibility: no Riemannian structure on the algebra is multiplicative.
 
-Two consequences follow. First, the multiplicative scale exists only on the units, where $\sqrt{|\langle\tilde q\rangle_{\natural}|}$ is a homomorphism to $\mathbb{R}_{>0}$ and vanishes on the null cone; it is not a norm and is not defined on the whole algebra. Second, the norm-one set is $\mathrm{U}\cong\mathrm{SL}_2(\mathbb{R})$, non-compact with $\pi_1=\mathbb{Z}$, where the quaternion norm-one set is the compact and simply connected $Sp(1)\cong S^3$; the radial decomposition has the non-compact slice $S^1\times\mathbb{R}^2$ and its boundary is the null cone (*Split-Quaternion Topology*).
+Two consequences follow. First, the multiplicative scale exists only on the invertibles, where $\sqrt{|\langle\tilde q\rangle_{\natural}|}$ is a homomorphism to $\mathbb{R}_{>0}$ and vanishes on the null cone; it is not a norm and is not defined on the whole algebra. Second, the norm-one set is $\mathrm{U}\cong\mathrm{SL}_2(\mathbb{R})$, non-compact with $\pi_1=\mathbb{Z}$, where the quaternion norm-one set is the compact and simply connected $Sp(1)\cong S^3$; the radial decomposition has the non-compact slice $S^1\times\mathbb{R}^2$ and its boundary is the null cone (*Split-Quaternion Topology*).
 
 **The division of labour.** The two norms share the topology and carry different structures:
 
@@ -143,13 +143,13 @@ $$
 
 so $\tilde q_1$ is invertible with the displayed inverse. Conversely, suppose $\tilde q_1$ is invertible, say $\tilde q_1 \tilde q_2 = 1$. Applying $\langle\cdot\rangle_{\natural}$ and using multiplicativity, $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = \langle 1\rangle_{\natural} = 1$, so $\langle\tilde q_1\rangle_{\natural} \neq 0$. This proves the equivalence of (1) and (2).
 
-**Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $\langle\tilde q\rangle_{\natural} = 0$. If $\langle\tilde q\rangle_{\natural} = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not a unit, so $\langle\tilde q\rangle_{\natural} = 0$ by the criterion.
+**Corollary (Zero Divisors).** A nonzero element is a zero divisor if and only if $\langle\tilde q\rangle_{\natural} = 0$. If $\langle\tilde q\rangle_{\natural} = 0$ and $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor; conversely a zero divisor is not invertible, so $\langle\tilde q\rangle_{\natural} = 0$ by the criterion.
 
 The criterion has the form the menu names: **invertibility is $\langle\tilde q\rangle_{\natural} \neq 0$**, and the boundary is the null cone of the split-quaternion norm. Since the split-quaternion norm is multiplicative, the multiplicative structure of the algebra and the invertibility theory are governed by one quadratic form.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Definition.** The **group of units** of the split-quaternion algebra is
+**Definition.** The **group of invertibles** of the split-quaternion algebra is
 
 $$
 {\mathbb{H}_{\mathrm{spl}}}^{\times} = \{\tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} \neq 0\},
@@ -163,7 +163,7 @@ $$
 \langle\cdot\rangle_{\natural} : {\mathbb{H}_{\mathrm{spl}}}^{\times} \longrightarrow \mathbb{R}^{\times}.
 $$
 
-**Proof.** Multiplicativity of $\langle\cdot\rangle_{\natural}$ makes it a group homomorphism from the units to $\mathbb{R}^{\times}$, and it is surjective because $\langle \lambda\rangle_{\natural} = \lambda^2$ and $\langle \lambda \vec e_y\rangle_{\natural} = -\lambda^2$ for real $\lambda \neq 0$.
+**Proof.** Multiplicativity of $\langle\cdot\rangle_{\natural}$ makes it a group homomorphism from the invertibles to $\mathbb{R}^{\times}$, and it is surjective because $\langle \lambda\rangle_{\natural} = \lambda^2$ and $\langle \lambda \vec e_y\rangle_{\natural} = -\lambda^2$ for real $\lambda \neq 0$.
 
 **Corollary (The Norm-One Groups).** The kernel of $\langle\cdot\rangle_{\natural}$ is the group of **unit split-quaternions**
 
@@ -171,9 +171,9 @@ $$
 \mathrm{U} = \{\tilde q \in \mathbb{H}_{\mathrm{spl}} : \langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R}),
 $$
 
-and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint union $\{\tilde q : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ of two connected components, namely $\mathrm{U}$ and its negative. The group of units has two connected components as well, the open sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$; the norm-one subgroup $\mathrm{U}$ is connected.
+and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint union $\{\tilde q : \langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ of two connected components, namely $\mathrm{U}$ and its negative. The group of invertibles has two connected components as well, the open sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$; the norm-one subgroup $\mathrm{U}$ is connected.
 
-**Proof.** The kernel of $\langle\cdot\rangle_{\natural}$ is $\{\langle\tilde q\rangle_{\natural} = 1\}$, which is the group of unit split-quaternions and is connected, as recalled in *Matrix Groups and Classical Groups*; the second norm level is its negative coset $-\mathrm{U}$. The group of units is the disjoint union of the two open sign sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
+**Proof.** The kernel of $\langle\cdot\rangle_{\natural}$ is $\{\langle\tilde q\rangle_{\natural} = 1\}$, which is the group of unit split-quaternions and is connected, as recalled in *Matrix Groups and Classical Groups*; the second norm level is its negative coset $-\mathrm{U}$. The group of invertibles is the disjoint union of the two open sign sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
 This is the exact point at which the indefinite norm changes the group theory. The quaternion unit sphere is the compact group $Sp(1) \cong SU(2)$, the kernel of a positive-definite norm on a division algebra. The split-quaternion norm-one set is the non-compact $\mathrm{SL}_2(\mathbb{R})$, and the passage from $Sp(1)$ to $\mathrm{SL}_2(\mathbb{R})$ is the passage from the double cover of the rotation group of three-space to the double cover of the Lorentz group of signature $(2,1)$. The rotations themselves are treated in *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -193,7 +193,7 @@ There is no fourth class, and in particular the third class is **not** empty: th
 
 **Proof.** Let $\tilde q$ be nonzero. The real number $\langle\tilde q\rangle_{\natural}$ is either zero or a unit of $\mathbb{R}$; there is no third possibility, because $\mathbb{R}$ is a field. If $\langle\tilde q\rangle_{\natural} = 0$ then $\tilde q$ is a zero divisor by the corollary of the criterion; if $\langle\tilde q\rangle_{\natural} \neq 0$ then $\tilde q$ is invertible. The two cases are exclusive and exhaust the nonzero elements.
 
-**Remark.** In the split-biquaternion case the corresponding classification genuinely has three nonzero classes, because there the norm takes values in a ring with zero divisors rather than in a field, so that $\langle\tilde q\rangle_{\natural}$ can be a nonzero non-unit. The three-way classification of the present article is therefore a **dichotomy plus the zero element**, and its third row is the single element $0$. The contrast is developed in *Comparison with the Quaternion and Split-Biquaternion Cases*.
+**Remark.** In the split-biquaternion case the corresponding classification genuinely has three nonzero classes, because there the norm takes values in a ring with zero divisors rather than in a field, so that $\langle\tilde q\rangle_{\natural}$ can be a nonzero non-invertible. The three-way classification of the present article is therefore a **dichotomy plus the zero element**, and its third row is the single element $0$. The contrast is developed in *Comparison with the Quaternion and Split-Biquaternion Cases*.
 
 **Corollary (The Refinement by Sign).** The invertible class splits into the two open sets
 
@@ -201,7 +201,7 @@ $$
 P = \{\tilde q : \langle\tilde q\rangle_{\natural} > 0\}, \qquad Q = \{\tilde q : \langle\tilde q\rangle_{\natural} < 0\},
 $$
 
-each of which is closed under multiplication, while $P \cdot Q \subseteq Q$ and $Q \cdot Q \subseteq P$. The identity lies in $P$, and $P$ is the identity component of the group of units.
+each of which is closed under multiplication, while $P \cdot Q \subseteq Q$ and $Q \cdot Q \subseteq P$. The identity lies in $P$, and $P$ is the identity component of the group of invertibles.
 
 ## Distribution of the Invertible Elements
 
@@ -209,7 +209,7 @@ The invertible elements are distributed over the distinguished subspaces as foll
 
 ### The Scalar Subspace
 
-On $S = \mathbb{R} \cdot 1$, an element is $\tilde q = q_t$ with $\langle\tilde q\rangle_{\natural} = q_t^2$. Every nonzero scalar is a unit, and every such unit lies in $P$. The only non-unit of $S$ is $0$.
+On $S = \mathbb{R} \cdot 1$, an element is $\tilde q = q_t$ with $\langle\tilde q\rangle_{\natural} = q_t^2$. Every nonzero scalar is invertible, and every such unit lies in $P$. The only non-invertible of $S$ is $0$.
 
 ### The Vector Subspace
 
@@ -257,7 +257,7 @@ The invertible elements are the complement of the null cone $\{\langle\tilde q\r
 
 ### The Quaternion Case
 
-For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of units is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{spl}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
+For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of invertibles is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{spl}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
 
 ### The Split-Biquaternion Case
 
@@ -267,9 +267,9 @@ The eight-dimensional algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{s
 
 The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the null cone $q_x^2 = q_y^2 + q_z^2$.
 
-A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of units is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The units form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
+A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of invertibles is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The invertibles form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
-No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are units; in $V$ the units are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}_{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
+No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, since $(1+\vec e_y)(1-\vec e_y)=0$ with both factors nonzero. The Euclidean norm carries the topology, being submultiplicative up to $\sqrt2$, and the split-quaternion norm carries invertibility; the two jobs cannot be fused. The classification of the elements is a dichotomy plus the zero element: invertible, or zero divisor, or zero; there is no further class, because the split-quaternion norm takes values in the field $\mathbb{R}$. The invertible elements are distributed as follows: all nonzero scalars are invertible; in $V$ the invertibles are the spacelike and timelike vectors and the zero divisors are the null cone; in each split-complex subalgebra the units avoid the two isotropic lines; and the four minimal ideals $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ are totally isotropic. In the eight-dimensional $\mathbb{B}_{\mathrm{spl}}$ the norm takes values in a ring with zero divisors, and the corresponding classification has a genuinely third nonzero class; that system is treated later under Split-Biquaternions.
 
 ## Summary of Notation
 
@@ -280,10 +280,10 @@ No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, sinc
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | this article |
 | $\lvert\tilde q\rvert$ | the Euclidean norm, submultiplicative up to $\sqrt2$ | *Split-Quaternion Analysis* |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural}=0$, and its span | this article |
-| ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ | the group of units $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ | this article |
+| ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ | the group of invertibles $\{\langle\tilde q\rangle_{\natural} \neq 0\}$ | this article |
 | $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\}$ | the unit split-quaternions, $\cong \mathrm{SL}_2(\mathbb{R})$ | this article |
 | $\{\langle\tilde q\rangle_{\natural} = \pm 1\}$ | the two split-quaternion norm levels, $\mathrm{U}$ and $-\mathrm{U}$ | this article |
-| $P = \{\langle\tilde q\rangle_{\natural} > 0\}$, $Q = \{\langle\tilde q\rangle_{\natural} < 0\}$ | the two components of the units | this article |
+| $P = \{\langle\tilde q\rangle_{\natural} > 0\}$, $Q = \{\langle\tilde q\rangle_{\natural} < 0\}$ | the two components of the invertibles | this article |
 | $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$, $\mathbb{C}_{\mathrm{spl},3}$ | the scalar, vector and split-complex subspaces | *Split-Quaternion Algebra* |
 | $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ | the non-central idempotents | *Split-Quaternion Algebra* |
 | spacelike, timelike, lightlike | the sign of $\langle\cdot\rangle_{\natural}$ on $V$ | this article |

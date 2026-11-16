@@ -24,9 +24,9 @@ Hence $x \mapsto R_x$ is an injective homomorphism from the opposite algebra $\m
 
 **Remark (the asymmetry with the left family).** The left multiplication is multiplicative in the written order, $L_xL_z = L_{xz}$, and the right multiplication is anti-multiplicative. It is this single reversal, and not the presence or absence of an involution, that forces the opposite algebra into the statement of the right family. With an anti-automorphism $c$ the composite $\mathrm{P}^{c}_x(y) = y\,c(x)$ recovers multiplicativity, $\mathrm{P}^{c}_x\mathrm{P}^{c}_z = \mathrm{P}^{c}_{xz}$, because the reversal inside $c$ cancels the reversal of the composition; this is the content of *One-Sided Operators on a Clifford Algebra* and is used below only for reversion and conjugation.
 
-**Proposition (right ideals).** A subspace $J \subseteq \mathrm{Cl}(V,\mathfrak{Q})$ is a submodule of the right regular module exactly when it is a right ideal, that is when $J\cdot\mathrm{Cl}(V,\mathfrak{Q}) \subseteq J$. Right multiplication by a unit preserves every right ideal, and a minimal right ideal is exactly a simple right module.
+**Proposition (right ideals).** A subspace $J \subseteq \mathrm{Cl}(V,\mathfrak{Q})$ is a submodule of the right regular module exactly when it is a right ideal, that is when $J\cdot\mathrm{Cl}(V,\mathfrak{Q}) \subseteq J$. Right multiplication by an invertible element preserves every right ideal, and a minimal right ideal is exactly a simple right module.
 
-**Proof.** The two conditions are the definition of a submodule and of a right ideal; for a unit $R$, $JR = J$ because $\mathrm{Cl}R = \mathrm{Cl}$.
+**Proof.** The two conditions are the definition of a submodule and of a right ideal; for an invertible element $R$, $JR = J$ because $\mathrm{Cl}R = \mathrm{Cl}$.
 
 **Remark (why the right family is needed for spinors).** A minimal left ideal is not preserved by right multiplication, as *The One-Sided Action and the Spin Representation* shows; a minimal *right* ideal is preserved by right multiplication by construction, and the action of the spin group on it by right multiplication is the dual of the spin representation.
 

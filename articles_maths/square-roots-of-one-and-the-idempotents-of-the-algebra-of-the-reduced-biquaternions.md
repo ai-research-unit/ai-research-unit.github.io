@@ -30,7 +30,7 @@ $$
 \Pi_{\pm}=\tfrac12(1\pm j).
 $$
 
-The trivial idempotents are Hermitian, fixed by the star; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two complex equations $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, each with two solutions, hence four roots. The roots of $+1$ form the four-element group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$; they are not the roots of $+1$.
+The trivial idempotents are Hermitian, fixed by the star; the standard idempotents are non-Hermitian, exchanged by it. Every idempotent is one of the four $0,1,\Pi_{+},\Pi_{-}$; there are no positive-dimensional families, because the root equation reduces to the two complex equations $Ζ_{+}^{2}=1$ and $Ζ_{-}^{2}=1$, each with two solutions, hence four roots. The roots of $+1$ form the four-element group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication, and every root is invertible. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$; they are not the roots of $+1$.
 
 The following table collects the results at a glance.
 
@@ -191,13 +191,13 @@ $$
 \mathcal{R}_{+1}=\{1,-1,j,-j\}
 $$
 
-is a subgroup of the group of units of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.
+is a subgroup of the group of invertibles of the plain product, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
 **Proof.** The product of two roots is a root, because $(Ζ B)^{2}=Ζ^{2}B^{2}=1$ and the algebra is commutative; the unit is $1$; and each element is its own inverse, $Ζ^{2}=1$. The group is abelian of order four with every non-identity element of order two, hence $(\mathbb{Z}/2\mathbb{Z})^{2}$.
 
-**Proposition (the roots are units).** Every root of $+1$ is a unit, with $Ζ^{-1}=Ζ$, and no root is a zero divisor.
+**Proposition (the roots are invertible).** Every root of $+1$ is invertible, with $Ζ^{-1}=Ζ$, and no root is a zero divisor.
 
-**Proof.** $Ζ^{2}=1$ reads $ΖΖ=1$, so $Ζ$ is invertible with inverse $Ζ$. A unit is not a zero divisor.
+**Proof.** $Ζ^{2}=1$ reads $ΖΖ=1$, so $Ζ$ is invertible with inverse $Ζ$. An invertible element is not a zero divisor.
 
 **Corollary (the real form).** In the real coordinates the roots are $1=(1,0,0,0)$, $-1=(-1,0,0,0)$, $j=(0,0,1,0)$ and $-j=(0,0,-1,0)$; all four lie in the real subalgebra $\mathbb{R}\{1,j\}$.
 
@@ -534,7 +534,7 @@ $$
 1,\qquad -1,\qquad j,\qquad -j,
 $$
 
-and they form the group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication; they all lie in the real subalgebra $\mathbb{R}\{1,j\}$, and every root is a unit. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$.
+and they form the group $(\mathbb{Z}/2\mathbb{Z})^{2}$ under multiplication; they all lie in the real subalgebra $\mathbb{R}\{1,j\}$, and every root is invertible. The roots of $-1$ are the four elements $\pm i$ and $\pm ij$, the roots of $+1$ multiplied by $i$.
 
 The idempotents are the four elements
 

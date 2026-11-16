@@ -16,7 +16,7 @@ $$
 \langle Q\rangle = Q\bar Q = (a + b\varepsilon)(a - b\varepsilon) = a^2,
 $$
 
-where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate quadratic form of rank one, multiplicative, with radical the maximal ideal $\mathrm{M} = (\varepsilon) = \{a = 0\}$; it vanishes exactly on $\mathrm{M}$ and is non-zero exactly on the units. These facts are those of *Dual-Numbers Norm and Invertibility*. The **characteristic polynomial** of $Q$ is the characteristic polynomial of $L_Q$; it is computed below. The matrix-element representation $\mathsf{M}_2$ of *Dual-Numbers Matrix Element Representation* is used only to compare conventions, and the eigenvalue decomposition of a general element is *The Eigenvalue Decomposition of an Element*. The companion articles *The Defective Sector of the Dual-Number Algebra* and *Relations between the Dual Norm and Spectral Degeneracy* take up the defect and the comparison with the norm.
+where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate quadratic form of rank one, multiplicative, with radical the maximal ideal $\mathrm{M} = (\varepsilon) = \{a = 0\}$; it vanishes exactly on $\mathrm{M}$ and is non-zero exactly on the invertibles. These facts are those of *Dual-Numbers Norm and Invertibility*. The **characteristic polynomial** of $Q$ is the characteristic polynomial of $L_Q$; it is computed below. The matrix-element representation $\mathsf{M}_2$ of *Dual-Numbers Matrix Element Representation* is used only to compare conventions, and the eigenvalue decomposition of a general element is *The Eigenvalue Decomposition of an Element*. The companion articles *The Defective Sector of the Dual-Number Algebra* and *Relations between the Dual Norm and Spectral Degeneracy* take up the defect and the comparison with the norm.
 
 ## The Eigenvalue Problem
 
@@ -36,9 +36,9 @@ $$
 
 where $L_A(v) = Av$ is left multiplication. The **spectrum** $\sigma(Q)$ is the set of eigenvalues.
 
-**Proposition (the eigenvalue criterion).** A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not a unit of $\mathbb{C}_{\mathrm{dln},R}$.
+**Proposition (the eigenvalue criterion).** A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not invertible of $\mathbb{C}_{\mathrm{dln},R}$.
 
-*Proof.* If $Q-\lambda$ is a unit and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not a unit, then its real part $a-\lambda$ vanishes, because the units of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and
+*Proof.* If $Q-\lambda$ is invertible and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not invertible, then its real part $a-\lambda$ vanishes, because the invertibles of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and
 
 $$
 (Q-\lambda)\varepsilon = b\varepsilon^2 = 0
@@ -289,7 +289,7 @@ The comparison with the neighbouring algebras is the comparison of discriminants
 
 ## Further Reading
 
-- [Dual-Numbers Algebra](dual-numbers-algebra.html), for the algebra, the two conjugations, the maximal ideal and the group of units.
+- [Dual-Numbers Algebra](dual-numbers-algebra.html), for the algebra, the two conjugations, the maximal ideal and the group of invertibles.
 - [Dual-Numbers Norm and Invertibility](dual-numbers-norm-and-invertibility.html), for the norm, its degeneracy, the Euclidean form and the invertibility criterion.
 - [$M_2(R)$ Triangular Representation](m2r-triangular-representation.html), for the matrix model, the characteristic polynomial and the transpose convention.
 - [Dual-Numbers Linear Representations](dual-numbers-linear-representations.html), for the regular representation in the basis $(1,\varepsilon)$.

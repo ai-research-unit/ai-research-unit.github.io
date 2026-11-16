@@ -3,22 +3,22 @@
 
 ## Introduction
 
-This article lists the algebras and the rings that carry an identity, together with the objects that do not. A unital algebra has an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, with the convention $1 \neq 0$ excluding the zero ring, and the identity makes the algebra a ring and gives it a group of units; a non-unital algebra has no such element, and the unitisation adjoins one. Every entry points to the article that introduces the object.
+This article lists the algebras and the rings that carry an identity, together with the objects that do not. A unital algebra has an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, with the convention $1 \neq 0$ excluding the zero ring, and the identity makes the algebra a ring and gives it a group of invertibles; a non-unital algebra has no such element, and the unitisation adjoins one. Every entry points to the article that introduces the object.
 
-The list is a proper subclass of *List of Algebras*: that article carries the algebras over a field of the corpus, unital or not, with their dimension, their centre and their ideals, and this one carries the unital algebras, over a field or over a commutative ring, the identity that fixes them and the unit group they acquire, and beside them the non-unital objects that fail to have an identity.
+The list is a proper subclass of *List of Algebras*: that article carries the algebras over a field of the corpus, unital or not, with their dimension, their centre and their ideals, and this one carries the unital algebras, over a field or over a commutative ring, the identity that fixes them and the group of invertibles they acquire, and beside them the non-unital objects that fail to have an identity.
 
 This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being an algebra or a ring with no identity, with the failure named and the article that records it.
 
-## The Identity, the Canonical Map and the Unit Group
+## The Identity, the Canonical Map and the Group of Invertibles
 
-An identity for the product is an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, and it is unique when it exists. The identity is what converts an algebra into a ring and makes the multiplicative structure a monoid, so the unit group and the centre are available and the homomorphisms between unital algebras can be required to preserve it.
+An identity for the product is an element $1_A$ with $1_Ax = x1_A = x$ for every $x$, and it is unique when it exists. The identity is what converts an algebra into a ring and makes the multiplicative structure a monoid, so the group of invertibles and the centre are available and the homomorphisms between unital algebras can be required to preserve it.
 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | Unital algebra | an algebra with a two-sided identity $1_A$, and $1_A \neq 0$ | *Unital Algebras* |
 | The canonical map $\eta : R \to A$, $\eta(r) = r1_A$ | a unital ring homomorphism with image in the centre $Z(A)$; a unital $R$-algebra is a ring with a unital homomorphism $R \to Z(A)$ | *Unital Algebras* |
-| The unit group $A^\times$ | the invertible elements, a group under multiplication, with identity $1_A$ | *Centre, Units, Zero Divisors and Division Algebras* |
-| A unit is not a zero divisor | if $u$ is invertible and $uz = 0$ then $z = 0$, and likewise on the left | *Centre, Units, Zero Divisors and Division Algebras* |
+| The group of invertibles $A^\times$ | the invertible elements, a group under multiplication, with identity $1_A$ | *Centre, Invertibles, Zero Divisors and Division Algebras* |
+| an invertible element is not a zero divisor | if $u$ is invertible and $uz = 0$ then $z = 0$, and likewise on the left | *Centre, Invertibles, Zero Divisors and Division Algebras* |
 | Unital subalgebra | a subalgebra containing $1_A$; its own identity is necessarily $1_A$ | *Ideals and Quotients of Algebras* |
 | The convention $1 \neq 0$ | excludes the zero ring, the one algebra in which $1 = 0$; the corpus assumes it of every ring | *Rings* |
 
@@ -26,7 +26,7 @@ The identity is inherited by quotients and not by ideals: the quotient of a unit
 
 ## The Unital Algebras of the Corpus
 
-The examples are the algebras whose identity is part of the construction, and in each case the unit group is computed in the introducing article.
+The examples are the algebras whose identity is part of the construction, and in each case the group of invertibles is computed in the introducing article.
 
 | Algebra | Its identity and units | Introduced in |
 |---|---|---|
@@ -36,14 +36,14 @@ The examples are the algebras whose identity is part of the construction, and in
 | $T(V)$, the tensor algebra | the unit $1 \in V^{\otimes 0} = R$ | *Tensor Powers and the Free Algebra* |
 | $R[x_1,\dots,x_n]$, the polynomial algebra | the constant polynomial $1$; commutative | *Polynomial Algebras* |
 | $kQ$, the path algebra of a finite quiver | the sum $1 = \sum_{v \in Q_0} e_v$ of the length-zero paths is the identity, so the algebra is unital exactly when the vertex set is finite | *Quiver Representations and Representation Type* |
-| A division algebra $D$ | $D^\times = D\setminus\{0\}$: every nonzero element is a unit | *Division Algebras* |
+| A division algebra $D$ | $D^\times = D\setminus\{0\}$: every nonzero element is invertible | *Division Algebras* |
 | $B(H)$, the bounded operators | the identity operator $1$, so $B(H)$ is a unital $\mathrm{C}^*$-algebra | *Operator Algebras* |
 | $C(X)$, continuous functions on a compact space $X$ | the constant function $1$; the commutative Gelfand–Naimark theorem identifies the unital commutative $\mathrm{C}^*$-algebras as the $C(X)$ with $X$ compact | *Operator Algebras* |
 | $\mathbb{H}$, the quaternions | $\mathbb{H}^\times = \mathbb{H}\setminus\{0\}$; a unital division ring | *Quaternion Algebra* |
 | $\mathbb{B} \cong M_2(\mathbb{C})$, the biquaternions | the identity of $M_2(\mathbb{C})$; $\mathbb{B}^\times = \mathrm{GL}_2(\mathbb{C})$ | *The Biquaternion Algebra* |
 | The augmentation ideal $I(G) \subseteq R[G]$ for $G = \mathbb{Z}/2$ | carries the identity $(1-g)/2$ when the characteristic is not $2$, an idempotent of $R[G]$ different from $1$ | *Unital Algebras* |
 
-The matrix algebra and the group algebra are unital by construction, and their unit groups are the general linear group and the group of units of the group ring; the enveloping algebra inherits its identity from the tensor algebra, of which it is a quotient. The division algebras are the unital algebras in which the unit group is as large as possible, and their unit group is the punctured algebra.
+The matrix algebra and the group algebra are unital by construction, and their groups of invertibles are the general linear group and the group of invertibles of the group ring; the enveloping algebra inherits its identity from the tensor algebra, of which it is a quotient. The division algebras are the unital algebras in which the group of invertibles is as large as possible, and their group of invertibles is the punctured algebra.
 
 ## The Rings with Identity Read as Algebras
 
@@ -53,8 +53,8 @@ The corpus fixes the identity as an axiom of every ring, so the rings it meets a
 |---|---|---|
 | A ring with identity $A$ | the corpus's rings are associative and unital by axiom (A4), with $1 \neq 0$ | *Rings* |
 | $A$ as a $\mathbb{Z}$-algebra | the canonical map $n \mapsto n1_A$; every associative ring with identity is a unital $\mathbb{Z}$-algebra in exactly one way | *Unital Algebras* |
-| $Z(A)$, the centre | a commutative subring containing $1_A$ | *Centre, Units, Zero Divisors and Division Algebras* |
-| $M_n(D)$ over a division ring $D$ | the identity matrix; unit group $\mathrm{GL}_n(D)$ | *Simple and Semisimple Modules* |
+| $Z(A)$, the centre | a commutative subring containing $1_A$ | *Centre, Invertibles, Zero Divisors and Division Algebras* |
+| $M_n(D)$ over a division ring $D$ | the identity matrix; group of invertibles $\mathrm{GL}_n(D)$ | *Simple and Semisimple Modules* |
 | $\mathbb{Z}/n\mathbb{Z}$, the residue ring | the identity $1 + n\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{Z}$, the integers | the multiplicative identity $1$; $\mathbb{Z}^\times = \{\pm1\}$ | *The Integers* |
 
@@ -99,7 +99,7 @@ The objects below are the algebras of the corpus with no identity, and each row 
 | $K(H)$, the compact operators on an infinite-dimensional Hilbert space $H$ | the identity operator is not compact; $K(H)$ is unital only when $H$ is finite-dimensional | *Operator Algebras* |
 | $C_0(X)$ for a locally compact non-compact space $X$ | a continuous function vanishing at infinity has no constant $1$ to contain; $C_0(X)$ is unital exactly when $X$ is compact | *Operator Algebras* |
 | $L^1(H)$ and $L^2(H)$, the trace-class and Hilbert–Schmidt operators | two-sided $*$-ideals of $B(H)$; the identity is not trace class or Hilbert–Schmidt in infinite dimension | *Operator Algebras* |
-| A proper two-sided ideal $I \subsetneq A$ of a unital algebra | contains no unit of $A$, so $1_A \notin I$ and $I$ is non-unital as a subalgebra; it may carry an identity of its own, an idempotent of $A$ different from $1_A$ | *Ideals and Quotients of Algebras*; *Unital Algebras* |
+| A proper two-sided ideal $I \subsetneq A$ of a unital algebra | contains no invertible element of $A$, so $1_A \notin I$ and $I$ is non-unital as a subalgebra; it may carry an identity of its own, an idempotent of $A$ different from $1_A$ | *Ideals and Quotients of Algebras*; *Unital Algebras* |
 | The ideal $(x) \subseteq R[x]$, the polynomials of positive degree | a proper ideal of the unital algebra $R[x]$, containing no unit, hence non-unital as a subalgebra | *Unital Algebras* |
 
 These are the algebras of the corpus whose lack of an identity is the point of the article that introduces them, and they are the reason the unitisation is needed. The convolution algebra is the standard example: the identity it lacks for non-discrete $G$ is replaced by an approximate identity, and the whole representation theory of the group is developed from that.
@@ -119,7 +119,7 @@ The approximate identity is the substitute for the identity in norm estimates an
 
 ## Summary
 
-This article has listed the unital algebras and rings of the corpus, together with the objects that fail to be unital. The identity $1_A$ is unique, it makes the algebra a ring with a unit group $A^\times$, and the canonical map $\eta : R \to A$, $\eta(r) = r1_A$, identifies a unital $R$-algebra with a ring carrying a homomorphism from $R$ into its centre. The unital examples are the matrix algebra $M_n(R)$, the group algebra $k[G]$, the universal enveloping algebra $\mathrm{U}(\mathrm{G})$, the tensor algebra $T(V)$, the polynomial algebra, the path algebra of a finite quiver, the division algebras, the augmentation ideal of $\mathbb{Z}/2$, and, on the operator side, $B(H)$ and $C(X)$ for compact $X$. The rings with identity are read as unital algebras over $\mathbb{Z}$ and over themselves, with the centre $Z(A)$ and the matrix ring $M_n(D)$ among them. The unitisation $A^+$ adjoins an identity, with $A$ a two-sided ideal of $A^+$ and $A^+/A \cong R$. The non-examples — $L^1(G)$ for non-discrete $G$, the compact operators on an infinite-dimensional space, $C_0(X)$ for non-compact $X$, the trace-class and Hilbert–Schmidt ideals, and a proper ideal of a unital algebra — each name the failure of the identity axiom, and the analytic ones among them carry an approximate identity in place of the unit.
+This article has listed the unital algebras and rings of the corpus, together with the objects that fail to be unital. The identity $1_A$ is unique, it makes the algebra a ring with a group of invertibles $A^\times$, and the canonical map $\eta : R \to A$, $\eta(r) = r1_A$, identifies a unital $R$-algebra with a ring carrying a homomorphism from $R$ into its centre. The unital examples are the matrix algebra $M_n(R)$, the group algebra $k[G]$, the universal enveloping algebra $\mathrm{U}(\mathrm{G})$, the tensor algebra $T(V)$, the polynomial algebra, the path algebra of a finite quiver, the division algebras, the augmentation ideal of $\mathbb{Z}/2$, and, on the operator side, $B(H)$ and $C(X)$ for compact $X$. The rings with identity are read as unital algebras over $\mathbb{Z}$ and over themselves, with the centre $Z(A)$ and the matrix ring $M_n(D)$ among them. The unitisation $A^+$ adjoins an identity, with $A$ a two-sided ideal of $A^+$ and $A^+/A \cong R$. The non-examples — $L^1(G)$ for non-discrete $G$, the compact operators on an infinite-dimensional space, $C_0(X)$ for non-compact $X$, the trace-class and Hilbert–Schmidt ideals, and a proper ideal of a unital algebra — each name the failure of the identity axiom, and the analytic ones among them carry an approximate identity in place of the unit.
 
 ## Summary of Notation
 
@@ -128,13 +128,13 @@ A catalogue denotes its objects by name rather than by symbol. The symbols that 
 | Symbol | Meaning |
 |---|---|
 | $1_A$, $1$ | The identity of an algebra or a ring, with $1 \neq 0$ |
-| $A^\times$ | The group of units of $A$ |
+| $A^\times$ | The group of invertibles of $A$ |
 | $Z(A)$ | The centre of $A$, a commutative subring containing $1_A$ |
 | $\eta : R \to A$, $\eta(r) = r1_A$ | The canonical map making a unital $R$-algebra a ring over $R$ |
 | $\varphi^+$ | The unique unital extension $A^+ \to B$ of $\varphi : A \to B$, $\varphi^+(a,r) = \varphi(a) + r1_B$ |
 | $\varphi(1_A)$ | An idempotent in $B$; $\varphi$ is unital exactly when it equals $1_B$ |
 | $A^+ = A \oplus R$ | The unitisation, with $(a,r)(b,s) = (ab+rb+sa, rs)$ and identity $(0,1)$ |
-| $I_n$, $\mathrm{GL}_n(R)$ | The identity matrix and the unit group of $M_n(R)$ |
+| $I_n$, $\mathrm{GL}_n(R)$ | The identity matrix and the group of invertibles of $M_n(R)$ |
 | $M_n(D)$, $\mathrm{GL}_n(D)$ | A matrix ring over a division ring and its units |
 | $k[G]$, $\pi$, $I(G)$ | Group algebra, augmentation map, augmentation ideal |
 | $\mathrm{U}(\mathrm{G})$, $T(V)$ | Universal enveloping algebra and tensor algebra |

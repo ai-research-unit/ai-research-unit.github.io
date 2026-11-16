@@ -30,7 +30,7 @@ $$
 (X\circ Y)\circ(X\circ X)=X\circ\big(Y\circ(X\circ X)\big).
 $$
 
-Both sides are polynomials of degree four in the entries, and the identity holds because the associative product does. With commutativity, a unit and this identity, $\operatorname{Sym}_n$ is a Jordan algebra over $\mathbb{R}$.
+Both sides are polynomials of degree four in the entries, and the identity holds because the associative product does. With commutativity, an invertible element and this identity, $\operatorname{Sym}_n$ is a Jordan algebra over $\mathbb{R}$.
 
 ## The Idempotents
 

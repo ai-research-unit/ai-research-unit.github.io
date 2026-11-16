@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The split biquaternion algebra is a real associative algebra of dimension eight, and as such it carries a Lie algebra structure under the commutator, an exponential map into its group of units, and the Lie-group structures attached to the two. This article records the Lie algebra and its decomposition into the two halves, the exponential with its closed form and its kernel, the group of units and the norm-one group, the elliptic and hyperbolic one-parameter subgroups, the polar and exponential parametrisation of an element, and the comparison with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the quaternion exponential is that of the companion article on the quaternions.
+The split biquaternion algebra is a real associative algebra of dimension eight, and as such it carries a Lie algebra structure under the commutator, an exponential map into its group of invertibles, and the Lie-group structures attached to the two. This article records the Lie algebra and its decomposition into the two halves, the exponential with its closed form and its kernel, the group of invertibles and the norm-one group, the elliptic and hyperbolic one-parameter subgroups, the polar and exponential parametrisation of an element, and the comparison with the biquaternion case. The algebra and its decomposition are used from *Split-Biquaternion Algebra* and *Split-Biquaternion Ideals and Peirce Decomposition*; the quaternion exponential is that of the companion article on the quaternions.
 
 The treatment is purely mathematical. No physics is invoked; the "Lorentz group" is not used here, and the compact and non-compact subgroups discussed below are named for their mathematical position in the classification of one-parameter subgroups.
 
 ## The Algebra as a Lie Algebra and Its Two Halves
 
-**Definition.** The **commutator bracket** on $\mathbb{B}_{\mathrm{spl}}$ is $[\tilde Q_1,\tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$. With this bracket $\mathbb{B}_{\mathrm{spl}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of units.
+**Definition.** The **commutator bracket** on $\mathbb{B}_{\mathrm{spl}}$ is $[\tilde Q_1,\tilde Q_2] = \tilde Q_1\tilde Q_2 - \tilde Q_2\tilde Q_1$. With this bracket $\mathbb{B}_{\mathrm{spl}}$ is a real Lie algebra of dimension $8$, and it is the Lie algebra of its own group of invertibles.
 
 **Theorem.** In the components of the isomorphism $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{H} \oplus \mathbb{H}$ the bracket is componentwise,
 
@@ -67,13 +67,13 @@ $$
 
 where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\vec u$ with $k \in \mathbb{Z}_{>0}$ and $\vec u$ a unit imaginary quaternion.
 
-**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\tilde u$ with $r > 0$ and $\tilde u$ a unit quaternion, and $\tilde u = \cos\theta + \sin\theta\,\vec u$ is $\exp(\theta\vec u)$, so $\exp(\log r + \theta\vec u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec q) = 1$ gives $\exp(a)\cos|\vec q| = 1$ and $\exp(a)\sin|\vec q|\,\vec u = 0$; if $\vec q = 0$ then $\exp(a) = 1$ and $a = 0$, while if $\vec q \neq 0$ then $\sin|\vec q| = 0$ forces $a = 0$ and $|\vec q| \in 2\pi\mathbb{Z}_{>0}$.
+**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\tilde u$ with $r > 0$ and $\tilde u$ a unit quaternion, and $\tilde u = \cos\theta + \sin\theta\,\vec u$ is $\exp(\theta\vec u)$, so $\exp(\log r + \theta\vec u) = \tilde q$; applying this in each half gives surjectivity onto the invertibles. For the kernel, $\exp(a + \vec q) = 1$ gives $\exp(a)\cos|\vec q| = 1$ and $\exp(a)\sin|\vec q|\,\vec u = 0$; if $\vec q = 0$ then $\exp(a) = 1$ and $a = 0$, while if $\vec q \neq 0$ then $\sin|\vec q| = 0$ forces $a = 0$ and $|\vec q| \in 2\pi\mathbb{Z}_{>0}$.
 
 The kernel is therefore a union of a point and countably many two-spheres in each half, and the exponential fails to be injective in the same manner as the quaternion exponential.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Theorem.** Under the splitting, the group of units is
+**Theorem.** Under the splitting, the group of invertibles is
 
 $$
 \boxed{\;
@@ -83,9 +83,9 @@ $$
 
 a connected real Lie group of dimension $8$.
 
-**Proof.** An element of a product ring is a unit exactly when both components are units, and $\mathbb{H}^{\times}$ is the set of nonzero quaternions, which by the polar form is $\mathbb{R}_{>0} \times S^3$.
+**Proof.** An element of a product ring is invertible exactly when both components are invertible, and $\mathbb{H}^{\times}$ is the set of nonzero quaternions, which by the polar form is $\mathbb{R}_{>0} \times S^3$.
 
-The unit group is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^3$ is simply connected, it is simply connected; its Lie algebra is $\mathbb{B}_{\mathrm{spl}}$ with the commutator bracket, of dimension $8$.
+The group of invertibles is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^3$ is simply connected, it is simply connected; its Lie algebra is $\mathbb{B}_{\mathrm{spl}}$ with the commutator bracket, of dimension $8$.
 
 ## The Norm-One Group
 
@@ -95,7 +95,7 @@ The unit group is connected and, since $\mathbb{R}_{>0}$ is contractible and $S^
 
 **Proof.** Since $\langle\tilde{Q}\rangle_{\natural} = N_+(\tilde{Q})\tilde\Pi_1 + N_-(\tilde{Q})\tilde\Pi_2$ and $N_\pm(\tilde{Q}) = |\tilde{Q}_\pm|^2$, the condition $\langle\tilde{Q}\rangle_{\natural} = e_t$ is the pair $|\tilde{Q}_+| = |\tilde{Q}_-| = 1$, so $G_1$ is the product of two unit spheres, and $S^3\times S^3 \cong \mathrm{Spin}(4)$ is the standard double cover of $SO(4)$.
 
-The norm-one group is the compact part of the unit group: every unit is a positive real scale in each component times an element of $G_1$.
+The norm-one group is the compact part of the group of invertibles: every invertible element is a positive real scale in each component times an element of $G_1$.
 
 ## The Hyperbolic and Elliptic Subgroups
 
@@ -125,7 +125,7 @@ $$
 \;},
 $$
 
-and every unit has an exponential parametrisation $\tilde{Q} = \exp(\tilde Q_3)$ with $\tilde Q_3 = (\tilde Q_{3+}, \tilde Q_{3-})$ and $\tilde Q_{3\pm}$ in the quaternion logarithm of $\tilde{Q}_\pm$.
+and every invertible element has an exponential parametrisation $\tilde{Q} = \exp(\tilde Q_3)$ with $\tilde Q_3 = (\tilde Q_{3+}, \tilde Q_{3-})$ and $\tilde Q_{3\pm}$ in the quaternion logarithm of $\tilde{Q}_\pm$.
 
 **Proof.** Apply the polar form and the logarithm of a nonzero quaternion in each half.
 
@@ -133,11 +133,11 @@ Under this parametrisation the norm-one group is the exponential image of the tr
 
 ## Comparison with the Biquaternion Case
 
-In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple with Lie algebra $\mathrm{GL}(2,\mathbb{C})$, its group of units is $GL(2,\mathbb{C})$ of real dimension $8$, and the norm-one slice corresponds to $SL(2,\mathbb{C})$; the exponential is surjective onto $GL(2,\mathbb{C})$ and the compact retract is $\mathrm{U}(2)$. In the split biquaternion case the algebra is the reductive Lie algebra $\mathbb{R}^2\oplus\mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$, the group of units is $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the norm-one group is the compact $S^3\times S^3$ rather than a non-compact $SL(2,\mathbb{C})$. The exponential is again surjective onto the units, with a kernel described componentwise. The compact/non-compact split is measured by the two factors: the biquaternion unit group is a complex group of dimension $8$ whose maximal compact subgroup is $\mathrm{U}(2)$, while the split biquaternion unit group is the product of two copies of $SU(2)$ times two positive rays, and its maximal compact subgroup is $S^3\times S^3$. The elliptic and hyperbolic one-parameter subgroups both occur, the elliptic from the imaginary directions with square $-e_t$ and the hyperbolic from the central $j$ with square $+e_t$.
+In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simple with Lie algebra $\mathrm{GL}(2,\mathbb{C})$, its group of invertibles is $GL(2,\mathbb{C})$ of real dimension $8$, and the norm-one slice corresponds to $SL(2,\mathbb{C})$; the exponential is surjective onto $GL(2,\mathbb{C})$ and the compact retract is $\mathrm{U}(2)$. In the split biquaternion case the algebra is the reductive Lie algebra $\mathbb{R}^2\oplus\mathrm{SO}(3)\oplus\mathrm{SO}(3) \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$, the group of invertibles is $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the norm-one group is the compact $S^3\times S^3$ rather than a non-compact $SL(2,\mathbb{C})$. The exponential is again surjective onto the invertibles, with a kernel described componentwise. The compact/non-compact split is measured by the two factors: the biquaternion group of invertibles is a complex group of dimension $8$ whose maximal compact subgroup is $\mathrm{U}(2)$, while the split biquaternion group of invertibles is the product of two copies of $SU(2)$ times two positive rays, and its maximal compact subgroup is $S^3\times S^3$. The elliptic and hyperbolic one-parameter subgroups both occur, the elliptic from the imaginary directions with square $-e_t$ and the hyperbolic from the central $j$ with square $+e_t$.
 
 ## Summary
 
-The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}\cong\mathbb{C}_{\mathrm{spl}}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $\exp(a)(\cos|\vec q| + \vec u\sin|\vec q|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\vec u$. The group of units is ${\mathbb{B}_{\mathrm{spl}}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_t$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\vec u$; the hyperbolic ones are generated by the central $j$ with square $+e_t$, the only noncentral solutions of $\tilde Q^2 = e_t$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
+The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}\cong\mathbb{C}_{\mathrm{spl}}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $\exp(a)(\cos|\vec q| + \vec u\sin|\vec q|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the invertibles, with kernel the pairs of quaternions of the form $2\pi k\vec u$. The group of invertibles is ${\mathbb{B}_{\mathrm{spl}}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_t$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\vec u$; the hyperbolic ones are generated by the central $j$ with square $+e_t$, the only noncentral solutions of $\tilde Q^2 = e_t$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the group of invertibles $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
 
 ## Summary of Notation
 
@@ -150,7 +150,7 @@ The split biquaternion algebra is a real Lie algebra of dimension $8$ under the 
 | $\exp(\tilde Q) = \sum \tilde Q^n/n!$ | Exponential map |
 | $\exp(t\vec u) = \cos t + \sin t\,\vec u$ | Elliptic one-parameter subgroup, $\vec u^2 = -e_t$ |
 | $\exp(tj) = \cosh t + \sinh t\,j$ | Hyperbolic one-parameter subgroup, $j^2 = +e_t$ |
-| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units, connected, dimension $8$ |
+| ${\mathbb{B}_{\mathrm{spl}}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of invertibles, connected, dimension $8$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $G_1 = \{ \tilde{Q} : \langle\tilde{Q}\rangle_{\natural} = e_t \} = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
 | $\ker\exp$ | Pairs of quaternions $2\pi k\vec u$ |

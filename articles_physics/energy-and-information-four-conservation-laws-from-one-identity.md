@@ -729,7 +729,7 @@ The corpus contains three constants and one unit, and none of them is an informa
 
 | object | value or origin | status |
 | --- | --- | --- |
-| $c$ | the unit conversion of the temporal slot; it sets the null cone at $\lvert\vec p\rvert=E/c$ | with the units |
+| $c$ | the unit conversion of the temporal slot; it sets the null cone at $\lvert\vec p\rvert=E/c$ | with the invertibles |
 | $\hbar$ | the phase $\exp(i\theta_{\mathrm{act}})$ and the spin generators | imported |
 | $k_B$ | the thermodynamic entropy, $S_{\mathrm{th}}=k_BS$ | imported |
 | the bit | $\log2$, the capacity of the two-dimensional carrier | algebraic, from $\dim S=2$ |
@@ -847,7 +847,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the interval and the Lorentz congruence.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the trace, the Born pairing and the Bloch ball.
 - [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html), for the generator $G_\star=-iz_\star$ and the split into Hermitian damping and anti-Hermitian energy.
-- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the Hermitian norm and the anti-Hermitian generator of the state-vector equation.
+- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the Hermitian norm and the anti-Hermitian generator of the state-vector equation.
 - [Quantum Channels and the Reversible–Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Lindblad form, the trace-preserving flow and the split between the reversible derivation and the jump part.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the Hermitian norm of the flow, the three quantities that fix it, and the norm deficit $\lVert\rho\rVert^2\ge1$.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the left and right eigenbases and the Petermann factor as the norm deficit.

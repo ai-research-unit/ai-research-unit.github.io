@@ -24,7 +24,7 @@ $$
 
 **Corollary (the elementary properties).** The product is conjugate-commutative; its image is the whole space, of complex dimension $4$; it has no unit; and its trace form is $\tau(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=K(\tilde Q_1,\tilde Q_2)$.
 
-*Proof.* Conjugate-commutativity is the symmetry of the average with conjugation; the image is four-dimensional by the values at $e_t$ and the three units, computed exactly; the absence of a unit was settled by solving the two linear systems, with least-squares residual $\tfrac32$ on each side; the trace form is the scalar row.
+*Proof.* Conjugate-commutativity is the symmetry of the average with conjugation; the image is four-dimensional by the values at $e_t$ and the three units, computed exactly; the absence of an invertible element was settled by solving the two linear systems, with least-squares residual $\tfrac32$ on each side; the trace form is the scalar row.
 
 **Remark (the four symmetrisations, by their images).** The four symmetrisations are separated by their images: the two central ones have one-dimensional images and this one and the plain one have four-dimensional images. The pairing is not the pairing of the decorations but the pairing of the conjugated slot: a product whose second slot is conjugated has a cross term that survives the symmetrisation, and a product whose second slot is not conjugated loses it. The rule is the two-bit rule of [The Vector Parts of the Products over the Biquaternion Algebra](the-vector-parts-of-the-products-over-the-biquaternion-algebra.html) read on the halves.
 
@@ -126,7 +126,7 @@ and the operator $U(\tilde Q_1)$ is invertible for generic $\tilde Q_1$.
 
 *Proof.* Both sides are computed from the closed form; the left is of degree five in the coordinates and the right of degree three. The deviation on random pairs is of order $10^3$.
 
-**Remark (the meaning of invertibility).** The invertibility of $U(\tilde Q_1)$ is the Jordan-theoretic notion of invertibility, and it is the only one of the four algebras of the block in which it holds for a generic element: the two central algebras have $U$ of rank one and the plain symmetrisation has $U(\tilde Q_1)\tilde Q_2=\tilde Q_1\tilde Q_2\tilde Q_1$, invertible exactly when $\tilde Q_1$ is a unit of the plain algebra, that is when $N(\tilde Q_1)\neq0$. The two notions coincide there, and here they separate: $U$ is invertible and there is no unit at all.
+**Remark (the meaning of invertibility).** The invertibility of $U(\tilde Q_1)$ is the Jordan-theoretic notion of invertibility, and it is the only one of the four algebras of the block in which it holds for a generic element: the two central algebras have $U$ of rank one and the plain symmetrisation has $U(\tilde Q_1)\tilde Q_2=\tilde Q_1\tilde Q_2\tilde Q_1$, invertible exactly when $\tilde Q_1$ is invertible in the plain algebra, that is when $N(\tilde Q_1)\neq0$. The two notions coincide there, and here they separate: $U$ is invertible and there is no unit at all.
 
 ## The Place among the Four
 

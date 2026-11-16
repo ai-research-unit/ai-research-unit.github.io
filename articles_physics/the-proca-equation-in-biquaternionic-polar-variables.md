@@ -307,7 +307,7 @@ so the boost is fixed by the amplitude and the whole spacetime dependence sits i
 - No closure problem: unlike the constrained systems, the count here is exact.
 - No simplification of the field equation. The Proca equation is second order in both branches, and the polar form replaces four linear equations by one real equation and one Hermitian-vector equation of three real components, both of them nonlinear in the word's parameters.
 
-**The distinction that matters.** The spinor polar form is a chart on an eight-parameter group of units, and its four brackets are four transport laws. The material polar form is a chart on a four-parameter set, and its two brackets are one transport law and one scale. The difference in the number of brackets is the difference between a complex field and a real one, and it is not a convention.
+**The distinction that matters.** The spinor polar form is a chart on an eight-parameter group of invertibles, and its four brackets are four transport laws. The material polar form is a chart on a four-parameter set, and its two brackets are one transport law and one scale. The difference in the number of brackets is the difference between a complex field and a real one, and it is not a convention.
 
 ## Open Questions
 

@@ -74,7 +74,7 @@ a real number added to a real number. **The connection occupies the phase type a
 
 **The exact case is the constant bracket.** For a plane wave the bracket is constant, the symbol exists, and the equation reduces to the algebraic relation $\hbar\omega+ϙ\varphi=\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$. **Nothing is approximated**, and the reduction is exact because the coefficient is constant.
 
-**The varying case has no symbol.** A unit whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. **The spread grows with the chirp and the symbol does not exist for any of them.**
+**The varying case has no symbol.** an invertible element whose phase is $\theta=\omega_0t'+\tfrac12\alpha t'^{2}$ has a bracket $\omega_0+\alpha t'$ that varies, and its transform is not supported at one frequency. On a grid of sixty-four points the effective number of modes $1/\sum_jp_j^{2}$ was $1.00$ for an integer tone, $5.64$ at $\alpha=1$ and $26.20$ at $\alpha=4$. **The spread grows with the chirp and the symbol does not exist for any of them.**
 
 **So the model's domain is the constant bracket.** That is the chart's way of stating the licence of the companion article: constant coefficients. **The licence is on the bracket and not on the coefficients of the equation**, and the two coincide for a plane wave.
 

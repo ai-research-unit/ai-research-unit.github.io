@@ -27,7 +27,7 @@ $$
 g = \frac{2m}{ϙ}\frac{\mu}{S},
 $$
 
-so that $g$ is dimensionless and is the ratio of the moment to the elementary moment $(ϙ/2m)S$ that a uniformly charged and uniformly massive body would carry. For orbital magnetism $g = 1$; for the intrinsic magnetism of a spin it is $g\approx 2$, and the measured value for the electron is $g/2 = 1.00115965218$. The value of $g$, unlike the magnitude of the moment, is independent of the units and of the particular carrier, and it is the number the two companion articles measure.
+so that $g$ is dimensionless and is the ratio of the moment to the elementary moment $(ϙ/2m)S$ that a uniformly charged and uniformly massive body would carry. For orbital magnetism $g = 1$; for the intrinsic magnetism of a spin it is $g\approx 2$, and the measured value for the electron is $g/2 = 1.00115965218$. The value of $g$, unlike the magnitude of the moment, is independent of the invertibles and of the particular carrier, and it is the number the two companion articles measure.
 
 ### The Moment and the Angular Momentum in the Algebra
 

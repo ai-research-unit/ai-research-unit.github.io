@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Klein–Gordon fluid's one defect is that its four-velocity is a unit only where the quantum potential vanishes, and a mode is exactly a point where it does.** That is the article's finding, and it is a statement about supports. The shell is $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, so a mode — whose scale is constant and whose $Q_{\mathrm{qnt}}$ therefore vanishes — sits exactly on the mass shell, and it sits there with a unit four-velocity and with no qualification at all.
+**The Klein–Gordon fluid's one defect is that its four-velocity is invertible only where the quantum potential vanishes, and a mode is exactly a point where it does.** That is the article's finding, and it is a statement about supports. The shell is $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, so a mode — whose scale is constant and whose $Q_{\mathrm{qnt}}$ therefore vanishes — sits exactly on the mass shell, and it sits there with a unit four-velocity and with no qualification at all.
 
 **The defect is a radial displacement of the support, and that is the second finding.** The quantum potential enters the shell's right-hand side, so it changes the radius of the local hyperboloid and not its centre. The charged companion's potential does the opposite: it enters as a translation and leaves the radius alone. **Two potentials, one radial and one translational, and the momentum-space picture separates them without any algebra.**
 
@@ -72,7 +72,7 @@ $$
 
 at a mode, by the display above and by nothing else. The check on the two modes $(\vec k_\Phi,k_t')=(0.7,1.220656)$ and $(0.3,1.044031)$, with $m=c=\hbar=1$, gave $\langle\tilde V_\Phi\rangle_{\natural}=-1.000000$ in both cases.
 
-**So the companion's qualification is a statement about how many modes are present.** The velocity is a unit wherever the local word is a single mode, and the failure of the unit is the measure of the local admixture. **That is what $Q_{\mathrm{qnt}}$ is, in the momentum-space reading: a measure of the distance between the local field and a single point of the shell.**
+**So the companion's qualification is a statement about how many modes are present.** The velocity is invertible wherever the local word is a single mode, and the failure of the unit is the measure of the local admixture. **That is what $Q_{\mathrm{qnt}}$ is, in the momentum-space reading: a measure of the distance between the local field and a single point of the shell.**
 
 **The stated objection, and the answer.** The objection is that "$Q_{\mathrm{qnt}}=0$ at a mode" is trivial, since $Q_{\mathrm{qnt}}$ carries derivatives and a plane wave has none. The objection is correct and the triviality is the finding: a defect that vanishes on a dense set of the solutions and that is a derivative functional is a defect of the *superposition* and not of the equation. **The companion states the defect as a condition on the solution; this article states it as a condition on the support**, and the second statement is the one that says what has to be added to a mode to produce it.
 
@@ -164,7 +164,7 @@ and a negative-frequency mode carries a negative charge density. **The two sheet
 
 ## Summary
 
-A mode has a constant scale, so its quantum potential vanishes exactly, and the mass shell it satisfies is the plain one, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$. Its four-velocity is therefore a unit exactly, and the companion's qualification — a unit only where the quantum potential vanishes — is a statement that a mode is exactly such a place.
+A mode has a constant scale, so its quantum potential vanishes exactly, and the mass shell it satisfies is the plain one, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$. Its four-velocity is therefore an invertible element exactly, and the companion's qualification — an invertible element only where the quantum potential vanishes — is a statement that a mode is exactly such a place.
 
 The quantum potential is a measure of the distance between the local field and a single point of the shell. It acts on the radius of the support; the connection acts on the centre. A radius cannot be removed by a change of variable and a centre can, so the quantum potential is an intrinsic deformation and the connection is a change of chart.
 

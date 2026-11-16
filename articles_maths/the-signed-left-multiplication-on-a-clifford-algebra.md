@@ -29,7 +29,7 @@ $$
 
 **(b)** For a homogeneous element $a$ of degree $k$ one has $\mathrm{L}^{\alpha}_a = (-1)^{k}L_a$ on the odd part of the algebra and $\mathrm{L}^{\alpha}_a = L_a$ on the even part.
 
-**(c)** $\mathrm{L}^{\alpha}_1 = \alpha$, and $\mathrm{L}^{\alpha}_a$ is invertible exactly when $a$ is a unit.
+**(c)** $\mathrm{L}^{\alpha}_1 = \alpha$, and $\mathrm{L}^{\alpha}_a$ is invertible exactly when $a$ is invertible.
 
 **(d)** $\mathrm{L}^{\alpha}_a$ is a homogeneous operator of parity $|a|$.
 
@@ -59,7 +59,7 @@ Two signed left multiplications compose to an **ordinary** left multiplication, 
 
 ## The Operator as Half a Motion
 
-**Proposition (the pairing with the right factor).** For a unit $x$ the composition of the signed left multiplication with the ordinary right multiplication by the inverse of the twisted parameter is the signed two-sided operator,
+**Proposition (the pairing with the right factor).** For an invertible element $x$ the composition of the signed left multiplication with the ordinary right multiplication by the inverse of the twisted parameter is the signed two-sided operator,
 
 $$
 \boxed{\;\mathrm{L}^{\alpha}_x\circ R_{\alpha(x)^{-1}} = T^{\alpha}_{x,\alpha(x)^{-1}}\;} ,
@@ -91,7 +91,7 @@ For $a=x=e_1e_2$, even, $\mathrm{L}^{\alpha}_x=L_x$ because $\alpha$ is the iden
 
 ## Summary
 
-The **signed left multiplication** $\mathrm{L}^{\alpha}_a=L_a\circ\alpha$, $\mathrm{L}^{\alpha}_a(y)=a\alpha(y)$, is the ordinary left multiplication of the twisted argument; it satisfies $\mathrm{L}^{\alpha}_a=\alpha L_{\alpha(a)}$, it coincides with $L_a$ on the even part of the algebra and is $-L_a$ on the odd part, it is invertible exactly for units, and it has the parity of $a$. Its products satisfy $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$, so the signed left family is a **coset** of the group of invertible left multiplications; its fixed space is $\{y : a\alpha(y)=y\}$, which for a scalar is the even part, the odd part or nothing according as the scalar is $1$, $-1$ or neither. The operator is one half of the signed two-sided operator, $\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}}=T^{\alpha}_{x,\alpha(x)^{-1}}$, which for a vector is the reflection $\rho_u$; the signed left multiplication alone never preserves the quadratic space, because it exchanges the two parity components, and only the pairing with a right multiplication restores the grading. The parameter-twisted family $\alpha(x)y$ is a different operator, by *The Graded Multiplication Operators*; the one-sided calculus is *One-Sided Operators on a Clifford Algebra*, and the signed product is *One-Sided Operators with the Signed Product*.
+The **signed left multiplication** $\mathrm{L}^{\alpha}_a=L_a\circ\alpha$, $\mathrm{L}^{\alpha}_a(y)=a\alpha(y)$, is the ordinary left multiplication of the twisted argument; it satisfies $\mathrm{L}^{\alpha}_a=\alpha L_{\alpha(a)}$, it coincides with $L_a$ on the even part of the algebra and is $-L_a$ on the odd part, it is invertible exactly for invertibles, and it has the parity of $a$. Its products satisfy $\mathrm{L}^{\alpha}_a\mathrm{L}^{\alpha}_c=L_{a\alpha(c)}$, so the signed left family is a **coset** of the group of invertible left multiplications; its fixed space is $\{y : a\alpha(y)=y\}$, which for a scalar is the even part, the odd part or nothing according as the scalar is $1$, $-1$ or neither. The operator is one half of the signed two-sided operator, $\mathrm{L}^{\alpha}_xR_{\alpha(x)^{-1}}=T^{\alpha}_{x,\alpha(x)^{-1}}$, which for a vector is the reflection $\rho_u$; the signed left multiplication alone never preserves the quadratic space, because it exchanges the two parity components, and only the pairing with a right multiplication restores the grading. The parameter-twisted family $\alpha(x)y$ is a different operator, by *The Graded Multiplication Operators*; the one-sided calculus is *One-Sided Operators on a Clifford Algebra*, and the signed product is *One-Sided Operators with the Signed Product*.
 
 ## Summary of Notation
 

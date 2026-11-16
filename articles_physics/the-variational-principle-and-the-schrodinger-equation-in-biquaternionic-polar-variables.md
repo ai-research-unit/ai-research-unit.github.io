@@ -18,7 +18,7 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, and the two unit real axes $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$. The word is a bijection from those eight parameters onto the units of $\mathbb{B}$, so the eight parameters are coordinates on the units, and the substitution adds nothing and drops nothing.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, and the two unit real axes $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$. The word is a bijection from those eight parameters onto the invertibles of $\mathbb{B}$, so the eight parameters are coordinates on the invertibles, and the substitution adds nothing and drops nothing.
 
 **Two cases, and they are not the same calculation.**
 
@@ -419,7 +419,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $\rho=2r^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)$ |
 | $R_a$ | The Euler–Lagrange residual of the parameter $p_a$ |
 | $E=i\hbar\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The equation's element; $E=0$ is the equation |
-| $J$ | The real Jacobian of the word, invertible on the units |
+| $J$ | The real Jacobian of the word, invertible on the invertibles |
 | $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ | Quantum potential, in the operator setting |
 
 ## Further Reading
@@ -427,8 +427,8 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 - [The Variational Principle and the Schrödinger Equation in Biquaternionic Form](the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-form.html), the companion, for the element-form action, its two currents and its two settings.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the two norms, the four brackets and the flow that this article re-derives.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the equation, the carrier and the centrality of $i$.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word as a bijection on the units.
-- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.
+- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word as a bijection on the invertibles.
+- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for Madelung's pair read as the first term of a series.
 - [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting in which the central pair is solved.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the exception at a nodal line, where the action is multivalued.

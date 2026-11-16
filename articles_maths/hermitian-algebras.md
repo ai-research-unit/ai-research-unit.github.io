@@ -135,7 +135,7 @@ $$
 U = \{x \in A : x^{\dagger}x = xx^{\dagger} = 1\}.
 $$
 
-It is a subgroup of the group of units: it is closed under the product because $(xy)^{\dagger}(xy) = y^{\dagger}x^{\dagger}xy = 1$, it contains $1$, and it is closed under inversion because the two defining relations are exchanged by the dagger. On the slice the dagger is the inverse, $x^{\dagger} = x^{-1}$, so the Hermitian pair and the inner conjugation agree there and only there; this is the identity that the four operator groups below exploit. The slice, its relation to the compact real form and the definite case are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
+It is a subgroup of the group of invertibles: it is closed under the product because $(xy)^{\dagger}(xy) = y^{\dagger}x^{\dagger}xy = 1$, it contains $1$, and it is closed under inversion because the two defining relations are exchanged by the dagger. On the slice the dagger is the inverse, $x^{\dagger} = x^{-1}$, so the Hermitian pair and the inner conjugation agree there and only there; this is the identity that the four operator groups below exploit. The slice, its relation to the compact real form and the definite case are *The Unitary Slice and the Compact Real Form with Hermitian Adjoint*.
 
 **Proposition.** An element of the unitary slice acts by an isometry of the algebra under both the inner conjugation and the Hermitian pair.
 

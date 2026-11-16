@@ -26,7 +26,7 @@ $$
 
 and the two composition factors are both the residue field $R$, on which $Q$ acts by the same scalar $q$. Two equal diagonal entries, one off-diagonal entry, and no other shape is possible. The triangular form is the visible form of the non-split extension, and the double diagonal entry is the visible form of its having one composition factor twice.
 
-**Boundaries.** The algebra, its product, its ideals and its maximal ideal are *Dual-Numbers Algebra*, *Dual-Numbers Ideals and the Maximal Ideal* and *Dual-Numbers Zero Divisors*; the norm, the unit criterion and the inverse are *Dual-Numbers Norm and Invertibility*; the distinguished submodules are *Dual-Number Subspaces*; the spectrum, the minimal polynomial and the Jordan form are *Spectral Regularity and Degeneracy in the Dual-Number Algebra*; the classification of the representations, the standard non-split extension and the Ext algebra are *Dual-Numbers Linear Representations*; the shears, the parabolic angle and the unit group are *Shears and Parabolic Rotations*; the automorphisms and the derivations are *Dual-Numbers Automorphisms and Derivations*; the polar decomposition is *Dual-Numbers Polar Decomposition*. The operators of this model are *$M_2(R)$ Triangular Representation : Operators*.
+**Boundaries.** The algebra, its product, its ideals and its maximal ideal are *Dual-Numbers Algebra*, *Dual-Numbers Ideals and the Maximal Ideal* and *Dual-Numbers Zero Divisors*; the norm, the unit criterion and the inverse are *Dual-Numbers Norm and Invertibility*; the distinguished submodules are *Dual-Number Subspaces*; the spectrum, the minimal polynomial and the Jordan form are *Spectral Regularity and Degeneracy in the Dual-Number Algebra*; the classification of the representations, the standard non-split extension and the Ext algebra are *Dual-Numbers Linear Representations*; the shears, the parabolic angle and the group of invertibles are *Shears and Parabolic Rotations*; the automorphisms and the derivations are *Dual-Numbers Automorphisms and Derivations*; the polar decomposition is *Dual-Numbers Polar Decomposition*. The operators of this model are *$M_2(R)$ Triangular Representation : Operators*.
 
 **Conventions.** $R$ is a commutative ring with identity in which $2$ is invertible; the field statements are made over a field $K$, and the geometric case is $R=\mathbb{R}$, written $\mathbb{C}_{\mathrm{dln}}$. The natural basis is $(1,\varepsilon)$ and the reversed one, which gives the upper shape, is $(\varepsilon,1)$. The element is $Q=q+\varepsilon q'$, with $q=\operatorname{Re}Q$ and $q'=\operatorname{Inf}Q$; the conjugate is $\bar Q=q-\varepsilon q'$; the norm is $\langle Q\rangle=Q\bar Q=q^{2}$; the maximal ideal is $\mathrm{M}=(\varepsilon)=\varepsilon R$; the real and infinitesimal submodules are $R_{\mathbb{C}_{\mathrm{dln}}}$ and $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$. The nilpotent matrix unit is $E=E_{12}$, the diagonal involution is $J=\operatorname{diag}(1,-1)$, and the swap is $S=\begin{pmatrix}0&1\\1&0\end{pmatrix}$. The transpose is written $^{\mathsf T}$, and it is taken in the basis $(1,\varepsilon)$.
 
@@ -228,7 +228,7 @@ $$
 
 and this is the sharpest comparison of the block. The zero set of the complex determinant is the single point $0$; of the split determinant, the pair of null lines $q=\pm q'$; of the dual determinant, the one line $\mathrm{M}$, counted twice. The determinant is a square, so the line is a double line, and this is the algebraic statement that the algebra is local with a square-zero maximal ideal.
 
-**The sign is lost.** Over $\mathbb{R}$ the determinant is nonnegative everywhere, and the two half-planes $q>0$ and $q<0$ are indistinguishable by it. In the split category the sign of the determinant still carried information, splitting the units into the sheet where the norm is positive and the sheet where it is negative; here it carries none, and the separation of the two components is made by the sign of the real part, that is by the residue. So the determinant is not an orientation in this category, and the unit group has two components that the determinant does not see.
+**The sign is lost.** Over $\mathbb{R}$ the determinant is nonnegative everywhere, and the two half-planes $q>0$ and $q<0$ are indistinguishable by it. In the split category the sign of the determinant still carried information, splitting the invertibles into the sheet where the norm is positive and the sheet where it is negative; here it carries none, and the separation of the two components is made by the sign of the real part, that is by the residue. So the determinant is not an orientation in this category, and the group of invertibles has two components that the determinant does not see.
 
 **The rank ladder.** The rank of the matrix takes the three values
 
@@ -244,7 +244,7 @@ $$
 \mathsf{M}_2(Q)\ \text{invertible}\iff \det\mathsf{M}_2(Q)\in R^{\times}\iff q\in R^{\times},
 $$
 
-and over a field this is $q\neq0$. So the model recovers the criterion of *Dual-Numbers Norm and Invertibility* from the matrix side, and it does so through a determinant that is a square; the square is harmless because a square is a unit exactly when its root is.
+and over a field this is $q\neq0$. So the model recovers the criterion of *Dual-Numbers Norm and Invertibility* from the matrix side, and it does so through a determinant that is a square; the square is harmless because a square is invertible exactly when its root is.
 
 **The characteristic polynomial.** It is
 
@@ -340,7 +340,7 @@ $$
 \operatorname{adj}\mathsf{M}_2(Q)=\begin{pmatrix}q&-q'\\ 0&q\end{pmatrix}=\mathsf{M}_2(\bar Q),
 $$
 
-and therefore, where $q$ is a unit,
+and therefore, where $q$ is invertible,
 
 $$
 \mathsf{M}_2(Q)^{-1}=\frac{\mathsf{M}_2(\bar Q)}{\langle Q\rangle}=\mathsf{M}_2\!\left(\frac{\bar Q}{\langle Q\rangle}\right)
@@ -349,7 +349,7 @@ $$
 
 **Proof.** The adjugate of $\begin{pmatrix}a&b\\ c&d\end{pmatrix}$ is $\begin{pmatrix}d&-b\\ -c&a\end{pmatrix}$, which for the display gives the matrix stated; the inverse is the adjugate divided by the determinant, and the determinant is $\langle Q\rangle$.
 
-**The reading.** The formula is the complex formula $Q^{-1}=\bar Q/\langle Q\rangle$ with the degenerate norm in place of the definite one, and it holds over any commutative ring in which $q$ is a unit. The inverse of a shear is a shear of the opposite parameter, $I_2+sE$ inverted by $I_2-sE$, so the nilpotent direction never obstructs invertibility: the units are the matrices with a unit diagonal entry, and the unipotent subgroup is entirely inside them.
+**The reading.** The formula is the complex formula $Q^{-1}=\bar Q/\langle Q\rangle$ with the degenerate norm in place of the definite one, and it holds over any commutative ring in which $q$ is invertible. The inverse of a shear is a shear of the opposite parameter, $I_2+sE$ inverted by $I_2-sE$, so the nilpotent direction never obstructs invertibility: the invertibles are the matrices with a unit diagonal entry, and the unipotent subgroup is entirely inside them.
 
 **The triple coincidence fails.** In the complex model three operations coincided, the adjugate, the transpose and the model of the conjugate. Here they separate:
 
@@ -408,7 +408,7 @@ positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, 
 
 ## The Subspaces
 
-**The tabulation.** The entries are the real line $q'=0$, the maximal ideal $q=0$, the algebra, the parabolic of the flag, the ambient, the group of units $q\in R^{\times}$, the **norm-one set** $\{Q:\langle Q\rangle=1\}=\{q=\pm1\}$, the idempotents $Q^{2}=Q$ and the nilpotents $Q^{2}=0$, which coincide with the zero divisors over a field. In the matrix column, the conditions $c=0$ and $a=d$ refer to the entries of a general ambient matrix.
+**The tabulation.** The entries are the real line $q'=0$, the maximal ideal $q=0$, the algebra, the parabolic of the flag, the ambient, the group of invertibles $q\in R^{\times}$, the **norm-one set** $\{Q:\langle Q\rangle=1\}=\{q=\pm1\}$, the idempotents $Q^{2}=Q$ and the nilpotents $Q^{2}=0$, which coincide with the zero divisors over a field. In the matrix column, the conditions $c=0$ and $a=d$ refer to the entries of a general ambient matrix.
 
 | subspace | algebra condition | matrix condition | dimension |
 |---|---|---|---|
@@ -417,7 +417,7 @@ positive definite over $\mathbb{R}$, of Gram matrix $\operatorname{diag}(2,1)$, 
 | the algebra | — | $c=0$, $a=d$ | $2$ |
 | the parabolic of the flag | — | $c=0$ | $3$ |
 | the ambient | — | — | $4$ |
-| the units | $q\in R^{\times}$ | $\det\neq0$ | open and dense |
+| the invertibles | $q\in R^{\times}$ | $\det\neq0$ | open and dense |
 | the norm-one set | $q^{2}=1$ | $\pm I_2+q'E$ | $1$, two components |
 | the idempotents | $Q^{2}=Q$ | $0$ and $I_2$ | $0$ |
 | the nilpotents and zero divisors | $\mathrm{M}$ | $q'E$ | $1$ |
@@ -433,7 +433,7 @@ $$
 
 the fixed space being the constants and the anti-fixed space the maximal ideal. The count is two, the same as for the complex and split categories and less than the six of the biquaternion algebra. The difference from the complex case is that here the anti-fixed space is an ideal, so the decomposition is not a decomposition into ideals: the constants are a complement and not a summand.
 
-**The units.** The unit group is
+**The invertibles.** The group of invertibles is
 
 $$
 (\mathbb{C}_{\mathrm{dln},R})^{\times}\cong R^{\times}\times(R,+),

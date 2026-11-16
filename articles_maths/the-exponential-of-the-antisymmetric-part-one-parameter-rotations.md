@@ -134,7 +134,7 @@ $$
 \exp(\pi[u])=2uu^{\mathsf T}-\mathrm{I},
 $$
 
-which is symmetric, and it is also $\exp(-\pi[u])$, since $[\,-u\,]=-[u]$ and $\cos\pi=\cos(-\pi)$, $\sin(\pm\pi)=0$. The two matrices $\pi[u]$ and $-\pi[u]$ are distinct, at Frobenius distance $2\pi\sqrt2$ for a unit $u$, and they have the same exponential:
+which is symmetric, and it is also $\exp(-\pi[u])$, since $[\,-u\,]=-[u]$ and $\cos\pi=\cos(-\pi)$, $\sin(\pm\pi)=0$. The two matrices $\pi[u]$ and $-\pi[u]$ are distinct, at Frobenius distance $2\pi\sqrt2$ for an invertible element $u$, and they have the same exponential:
 
 $$
 \lVert\exp(\pi[u])-\exp(-\pi[u])\rVert=2.2\cdot10^{-15},\qquad \lVert\pi[u]+\pi[u]\rVert_{F}=8.89 .

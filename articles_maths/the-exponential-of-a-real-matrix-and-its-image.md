@@ -36,7 +36,7 @@ $$
 \exp X\,\exp Y=\exp(X+Y)\qquad\text{whenever }XY=YX .
 $$
 
-Taking $Y=-X$ gives $\exp X\,\exp(-X)=\mathrm{I}$. Every exponential is invertible, with inverse $\exp(-X)$, so the image lies in the unit group.
+Taking $Y=-X$ gives $\exp X\,\exp(-X)=\mathrm{I}$. Every exponential is invertible, with inverse $\exp(-X)$, so the image lies in the group of invertibles.
 
 ## The Transpose and the Determinant
 

@@ -134,13 +134,13 @@ $$
 
 the split analogue of the biquaternion null cone, but carried by the Hermitian form rather than by the split-biquaternion norm.
 
-### Units, Zero Divisors and Nilpotents
+### Invertibles, Zero Divisors and Nilpotents
 
-**Theorem.** For $\tilde{Q} \in \mathbb{B}_{\Psi}$ the following are equivalent: $\tilde{Q}$ is a unit; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. In particular $\mathbb{B}_{\Psi}$ contains **no zero divisor** and **no nilpotent**.
+**Theorem.** For $\tilde{Q} \in \mathbb{B}_{\Psi}$ the following are equivalent: $\tilde{Q}$ is invertible; $\langle\tilde{Q}\rangle_{\natural} \neq 0$; $\tilde{Q} \neq 0$. In particular $\mathbb{B}_{\Psi}$ contains **no zero divisor** and **no nilpotent**.
 
-**Proof.** The split-biquaternion norm is positive definite on the subspace, so it vanishes only at the origin and every nonzero element is a unit, with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A nilpotent satisfies $\tilde{Q}^2 = 0$; by the square formula this forces $q_t^2 = |\vec q|^2$ and $q_t\vec q = 0$, hence $\vec q = 0$ and $q_t = 0$.
+**Proof.** The split-biquaternion norm is positive definite on the subspace, so it vanishes only at the origin and every nonzero element is invertible, with $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$. A nilpotent satisfies $\tilde{Q}^2 = 0$; by the square formula this forces $q_t^2 = |\vec q|^2$ and $q_t\vec q = 0$, hence $\vec q = 0$ and $q_t = 0$.
 
-So the isotropic cone of the Hermitian form is **not** the zero divisor set: every nonzero point of the cone is a unit. This is the sharpest difference from the biquaternion Hermitian subspace, where the isotropic cone and the zero divisors of the sector coincide. The absence of nilpotents holds here as it does there.
+So the isotropic cone of the Hermitian form is **not** the zero divisor set: every nonzero point of the cone is invertible. This is the sharpest difference from the biquaternion Hermitian subspace, where the isotropic cone and the zero divisors of the sector coincide. The absence of nilpotents holds here as it does there.
 
 ### The Idempotents
 

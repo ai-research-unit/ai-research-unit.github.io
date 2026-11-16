@@ -81,7 +81,7 @@ $$
 | $Q=0$ | zero | both zero | $0$ |
 | $Q_{+}Q_{-}=0$, $Q\neq0$ | zero divisor | exactly one zero | $0$ |
 
-**Corollary (the non-units).** The non-units of $\mathbb{C}_{\mathrm{spl}}$ are the zero element and the zero divisors. They do not form an ideal: $\Pi_{+}+\Pi_{-}=1$ is a unit, so the sum of two non-units can be a unit. The algebra is therefore not a local ring, and it has no unique maximal ideal of non-units.
+**Corollary (the non-invertibles).** The non-invertibles of $\mathbb{C}_{\mathrm{spl}}$ are the zero element and the zero divisors. They do not form an ideal: $\Pi_{+}+\Pi_{-}=1$ is invertible, so the sum of two non-invertibles can be an invertible element. The algebra is therefore not a local ring, and it has no unique maximal ideal of non-invertibles.
 
 ## The Algebra Is Not a Division Algebra
 
@@ -157,7 +157,7 @@ Each family $\mathbb{R}^{\times}\Pi_{\pm}$ is a line with the origin removed. Th
 
 **Proposition.** The set $\mathcal{Z}\cup\{0\}=\mathcal{N}$ is closed under multiplication. The set $\mathcal{Z}$ is not closed under multiplication: the product of two elements of the same family lies in $\mathcal{Z}$, but the product of one element from each family is $0$. Neither set is closed under addition, and neither is an ideal of $\mathbb{C}_{\mathrm{spl}}$.
 
-**Proof.** For the product, $\Pi_{+}^{2}=\Pi_{+}$, $\Pi_{-}^{2}=\Pi_{-}$ and $\Pi_{+}\Pi_{-}=0$, so the product of two elements of the same line stays on that line and the product of two elements of opposite lines is zero, outside $\mathcal{Z}$ but in $\mathcal{N}$. For the sum, $\Pi_{+}+\Pi_{-}=1$ is a unit and not in $\mathcal{N}$; so the sum of two zero divisors can be a unit, and $\mathcal{N}$ is not closed under addition. An ideal is closed under addition, so $\mathcal{N}$ is not an ideal; the two lines individually are ideals, and they are the minimal ideals of the algebra.
+**Proof.** For the product, $\Pi_{+}^{2}=\Pi_{+}$, $\Pi_{-}^{2}=\Pi_{-}$ and $\Pi_{+}\Pi_{-}=0$, so the product of two elements of the same line stays on that line and the product of two elements of opposite lines is zero, outside $\mathcal{Z}$ but in $\mathcal{N}$. For the sum, $\Pi_{+}+\Pi_{-}=1$ is invertible and not in $\mathcal{N}$; so the sum of two zero divisors can be an invertible element, and $\mathcal{N}$ is not closed under addition. An ideal is closed under addition, so $\mathcal{N}$ is not an ideal; the two lines individually are ideals, and they are the minimal ideals of the algebra.
 
 **Remark (the zero-divisor set is not a submanifold at the origin).** The set $\mathcal{N}$ is a cross, not a submanifold at $0$; removing the origin makes $\mathcal{Z}$ a disjoint union of four open rays, each a one-dimensional submanifold. The closure adds the singular point.
 
@@ -179,11 +179,11 @@ The distinguished one-dimensional subspaces are the real line $\mathbb{R}_{\math
 
 ### The Real Subspace $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
-On $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ one has $Q=q$, $Q_{+}=Q_{-}=q$, and $Q\bar Q=q^{2}$, which vanishes only at $q=0$. Every nonzero real number is a unit; there is no zero divisor.
+On $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ one has $Q=q$, $Q_{+}=Q_{-}=q$, and $Q\bar Q=q^{2}$, which vanishes only at $q=0$. Every nonzero real number is invertible; there is no zero divisor.
 
 ### The Split Imaginary Subspace $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$
 
-On $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ one has $Q=jq'$, $Q_{+}=q'$, $Q_{-}=-q'$, and $Q\bar Q=-q'^{2}$, which vanishes only at $q'=0$. Every nonzero element is a unit; there is no zero divisor.
+On $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ one has $Q=jq'$, $Q_{+}=q'$, $Q_{-}=-q'$, and $Q\bar Q=-q'^{2}$, which vanishes only at $q'=0$. Every nonzero element is invertible; there is no zero divisor.
 
 ### The Idempotent Lines
 
@@ -236,7 +236,7 @@ $$
 
 the union of the two null lines, of real dimension $1$ and with four connected components. The two families annihilate one another, $\operatorname{ann}(\lambda\Pi_{+})=\mathbb{R}\Pi_{-}$ and $\operatorname{ann}(\lambda\Pi_{-})=\mathbb{R}\Pi_{+}$, and the primitive zero divisors are the two idempotents $\Pi_{\pm}$.
 
-The elements fall into the three classes invertible, zero and zero divisor; the non-units are the zero element and the zero divisors and do not form an ideal, since $\Pi_{+}+\Pi_{-}=1$. The closure $\mathcal{N}$ is closed under multiplication, while the zero-divisor set itself is not, because the product of the two families is $0$; neither is closed under addition, neither is an ideal, and the closure is the singular cross $\mathcal{N}$. On the two eigenspaces of the conjugation the norm is definite and there are no zero divisors except the origin, while the two idempotent lines are totally singular; the conjugation exchanges the two lines. The zero divisors are the elements supported on a single idempotent, the rank-one elements of the regular matrix model, and the common zero-divisor set of the two products of the split-complexoid.
+The elements fall into the three classes invertible, zero and zero divisor; the non-invertibles are the zero element and the zero divisors and do not form an ideal, since $\Pi_{+}+\Pi_{-}=1$. The closure $\mathcal{N}$ is closed under multiplication, while the zero-divisor set itself is not, because the product of the two families is $0$; neither is closed under addition, neither is an ideal, and the closure is the singular cross $\mathcal{N}$. On the two eigenspaces of the conjugation the norm is definite and there are no zero divisors except the origin, while the two idempotent lines are totally singular; the conjugation exchanges the two lines. The zero divisors are the elements supported on a single idempotent, the rank-one elements of the regular matrix model, and the common zero-divisor set of the two products of the split-complexoid.
 
 ## Summary of Notation
 

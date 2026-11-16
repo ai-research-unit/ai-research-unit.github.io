@@ -246,7 +246,7 @@ $$
 
 of dimensions $1+2+2+4$. The block form is the same, with the $1\times1$ block first and the $2\times2$ block last; the determinant formula is the same with the roles of the scalar and the $2\times2$ block exchanged. The rank-two split $4+2+2+1$ is the rank-one split $1+2+2+4$ read from the other end.
 
-**The exchange of the units.** The map $P\mapsto Q$ exchanges the two diagonal corners and the two mixed corners:
+**The exchange of the invertibles.** The map $P\mapsto Q$ exchanges the two diagonal corners and the two mixed corners:
 
 $$
 PMP\leftrightarrow QMQ,\qquad PMQ\leftrightarrow QMP.

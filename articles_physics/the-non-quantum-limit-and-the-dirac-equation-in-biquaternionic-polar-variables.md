@@ -18,7 +18,7 @@ and that the four brackets are of four types. **The limit is an ordering of thes
 
 **Order zero is not only a mass shell, and that is the family's characteristic statement.** In the scalar case the eikonal fixes a relation among the four components of the phase gradient. Here, once the phase bracket dominates, the equation becomes algebraic in the frame, and its content is the mass shell *plus* a polarisation condition: given the momentum, the pair $i\tilde K_\Phi\tilde\Xi_0^{R}=k_m\tilde\Xi_0^{L}$ fixes the frame up to the two branches. **The Dirac eikonal fixes the momentum and the spin's polarisation together.**
 
-**The parent is honest about how much of that is a result, and this article repeats the honesty.** The mass-shell relation $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ is, in the parent's words, *a restatement and not a result*: the hypothesis defines $\tilde K_\Phi$ as $ik_m$ times a unit, so the conclusion repeats the definition. What survives the objection is the geometric content, and that content is what the limit uses.
+**The parent is honest about how much of that is a result, and this article repeats the honesty.** The mass-shell relation $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ is, in the parent's words, *a restatement and not a result*: the hypothesis defines $\tilde K_\Phi$ as $ik_m$ times an invertible element, so the conclusion repeats the definition. What survives the objection is the geometric content, and that content is what the limit uses.
 
 **The frame's ordering is a hypothesis and it is stated here as one.** The scale's derivative is order $\epsilon$ by the criterion; the boost's must be too, because the velocity field of a slowly varying fluid varies on the fluid's own length. The rotor's is order one for a different reason: **the spin changes only as the momentum changes**, since a boost and a rotor that are functions of $\tilde K_\Phi$ change at the rate $\tilde K_\Phi$ changes, and that rate is order one. **No article in the corpus states either assignment**, and this one states both.
 
@@ -96,7 +96,7 @@ i\tilde K_\Phi^{\natural}\tilde\Xi_0^{L}=k_m\tilde\Xi_0^{R},
 \tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}.
 $$
 
-**The third relation is not independent and the parent says so.** With $\tilde K_\Phi=ik_m\tilde M$ and $N(\tilde M)=1$ the norm follows, and conversely every element of that norm is of that form. **The mass shell is the statement that the four-wavevector over $k_m$ is a unit**, that is the image of the time axis under a Lorentz transformation — and in the word it holds identically, because $\tilde K_\Phi=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$.
+**The third relation is not independent and the parent says so.** With $\tilde K_\Phi=ik_m\tilde M$ and $N(\tilde M)=1$ the norm follows, and conversely every element of that norm is of that form. **The mass shell is the statement that the four-wavevector over $k_m$ is invertible**, that is the image of the time axis under a Lorentz transformation — and in the word it holds identically, because $\tilde K_\Phi=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$.
 
 **What order zero therefore contains, stated exactly.** One relation among the four components of $\tilde K_\Phi$ — the mass shell — and one relation between the two chiral halves that fixes the frame given the momentum,
 
@@ -160,17 +160,17 @@ with $\vec\Omega_{\mathrm{sp}}$ the precession's angular velocity, whose two con
 
 **The classical object is not a point particle.** A point particle has a position and a momentum; this object has those and a spin field, and the spin has its own transport law. **The corpus's phrase is that the limit gives relativistic mechanics, and this article adds that it gives the mechanics of a spinning fluid**, of which the single particle is the ray.
 
-**The two statements that survive from the exact theory without being ordered**: the current and the spin. **Both are density times a unit**, and a unit is not a small quantity.
+**The two statements that survive from the exact theory without being ordered**: the current and the spin. **Both are density times an invertible element**, and an invertible element is not a small quantity.
 
 **The one statement that is ordered and is not a transport law**: the mass shell. **It is order zero, it is algebraic, and in the word it is the unitarity of the boost.** There is no amplitude-curvature term to drop, because the equation is first order; the corpus's quantum potential belongs to the families whose equation is second order, and in this one it is a property of the iterated equation.
 
 ## Verification
 
-**The logarithmic derivative was checked numerically.** With $r$, $\theta_{\mathrm{pha}}$, the boost's rapidity and axis, and the rotor's angle and axis all varying along one parameter, the element was formed, differentiated by central differences, and multiplied on the left by its inverse. The result was compared with the four brackets computed independently. **Residual below $10^{-10}$ on three test paths**, with the boost generated by $i\sinh(\theta/2)\hat u$ and the rotor by $\sin(\phi/2)\hat n$, which are the units the algebra requires.
+**The logarithmic derivative was checked numerically.** With $r$, $\theta_{\mathrm{pha}}$, the boost's rapidity and axis, and the rotor's angle and axis all varying along one parameter, the element was formed, differentiated by central differences, and multiplied on the left by its inverse. The result was compared with the four brackets computed independently. **Residual below $10^{-10}$ on three test paths**, with the boost generated by $i\sinh(\theta/2)\hat u$ and the rotor by $\sin(\phi/2)\hat n$, which are the invertibles the algebra requires.
 
-**The brackets' types were checked against the parent's table.** The boost's contribution has zero scalar part because the boost is a unit; the rotor's is a real vector part; the phase's is central imaginary; the scale's is real central. **All four were confirmed on the same test paths.**
+**The brackets' types were checked against the parent's table.** The boost's contribution has zero scalar part because the boost is invertible; the rotor's is a real vector part; the phase's is central imaginary; the scale's is real central. **All four were confirmed on the same test paths.**
 
-**The two norms were checked.** $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ follows from $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and the inverse of a unit, and $\hat s^{2}=-e_{t}$ from $\tilde u_{\mathrm r}\vec e_z^{2}\tilde u_{\mathrm r}^{-1}$. **Both are identities and neither uses a plane wave.**
+**The two norms were checked.** $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ follows from $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ and the inverse of an invertible element, and $\hat s^{2}=-e_{t}$ from $\tilde u_{\mathrm r}\vec e_z^{2}\tilde u_{\mathrm r}^{-1}$. **Both are identities and neither uses a plane wave.**
 
 **The mass-shell restatement was checked to be a restatement.** With $\tilde K_\Phi=ik_m\tilde M$ and $N(\tilde M)=1$, $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ follows in one line, and the converse holds with $\tilde M=\tilde K_\Phi/(ik_m)$. **The parent's own objection is accepted and repeated**: this is a definition read backwards, not a derived relation.
 

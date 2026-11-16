@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the units and the material time those of *Physics Units and Common Elements Conventions*. The word, the four brackets and the quantum potential are the polar parent's, and they are cited rather than restated.
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word, the four brackets and the quantum potential are the polar parent's, and they are cited rather than restated.
 
 **The seed is quoted once.** On the material sector $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so
 

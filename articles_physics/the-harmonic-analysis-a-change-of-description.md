@@ -20,7 +20,7 @@ $$
 
 **The sixth claim is that the modular pair of the algebra is trivial, and that the triviality is a statement about a vector and not about the algebra.** The Tomita operator of the left regular image at the unit is the star, its polar decomposition has modular operator the identity, and the modular flow is constant. The reason is exact: the vector state of the unit is the trace. The indefinite version does not exist, because the left regular image is not closed under the indefinite adjoint, and its Krein envelope has no separating vector. The corpus's thermal readings therefore cannot be built on the algebra alone.
 
-**The first objection is that this is the complex Fourier transform written twice.** It largely is, and the mathematics says so in the form of a theorem: every biquaternion transform is four scalar complex transforms, two on each minimal ideal, carried at opposite signs of the frequency. That is a result and not a defect, because it gives the $O(N\log N)$ algorithm and it locates the difficulty exactly. What is not in the complex theory is the root: the pair of ideals, the sign of the frequency on each, the failure of the isometry away from the Hermitian roots, and the degenerate set where the symbol stops being a unit. The complex transform is the case in which all of that collapses.
+**The first objection is that this is the complex Fourier transform written twice.** It largely is, and the mathematics says so in the form of a theorem: every biquaternion transform is four scalar complex transforms, two on each minimal ideal, carried at opposite signs of the frequency. That is a result and not a defect, because it gives the $O(N\log N)$ algorithm and it locates the difficulty exactly. What is not in the complex theory is the root: the pair of ideals, the sign of the frequency on each, the failure of the isometry away from the Hermitian roots, and the degenerate set where the symbol stops being an invertible element. The complex transform is the case in which all of that collapses.
 
 **The second objection is that a change of description which is invertible says nothing.** Invertibility says that nothing is lost; it does not say that nothing is changed. The content of this section is the second question: what the change preserves, what it rescales, and where it fails. An invertible map that multiplies lengths by a factor between $0.855$ and $1.156$ is a change of description that a physical statement cannot pass through unchanged, and the section computes that factor instead of assuming it away.
 
@@ -37,9 +37,9 @@ $$
 | the root of one and its pair, the discrete kernel and its closed form, the Peirce form, the classification of the roots, the discrete transform pair, invertibility, the conjugate symmetry, the factorization, the convolution theorem, the vanishing-norm issue, the two-dimensional transform, the $Z$ transform, the reduced commutative alternative | [Biquaternion Discrete Harmonic Analysis](../articles_maths/biquaternion-discrete-harmonic-analysis.html) |
 | the continuous kernel, the transform pair, convergence, Riemann–Lebesgue, inversion, Plancherel, the factorization, the convolution theorem, the relation to the gradient and the d'Alembertian, the vanishing-norm issue, the measure transform and the failure of positivity, sampling and periodization | [Biquaternion Continuous Harmonic Analysis](../articles_maths/biquaternion-continuous-harmonic-analysis.html) |
 | the exponential and the kernel as two readings of one object, the spectrum as two frequencies, the kernel identity, the eigenbasis as a Fourier basis, the two conjugations, normality and unitarity, the cone where no root exists, the three strata | [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html) |
-| the conjugate as adjugate, the reciprocal over the norm, the residues at simple and repeated null points, the exponential type and the tail, the two contours, the obstacle of real codimension two, inversion where the symbol is not a unit | [Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set](../articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.html) |
+| the conjugate as adjugate, the reciprocal over the norm, the residues at simple and repeated null points, the exponential type and the tail, the two contours, the obstacle of real codimension two, inversion where the symbol is not invertible | [Inversion of the Biquaternion Fourier Transform: Poles, Tails and the Degenerate Set](../articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.html) |
 | the three placements, the commutant and the complement, the one-sided placements, the two-sided placement and the two signs, the invariance groups and their intersection | [The Three Kernel Placements of the Biquaternion Fourier Transform](../articles_maths/three-kernel-placements-of-the-biquaternion-fourier-transform.html) |
-| the degenerate set and the rank of left multiplication, inversion in the algebra, two generalised inverses, the exponential on the degenerate set, inversion where the symbol is nowhere a unit | [Biquaternion Fourier Inversion on the Degenerate Set](../articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html) |
+| the degenerate set and the rank of left multiplication, inversion in the algebra, two generalised inverses, the exponential on the degenerate set, inversion where the symbol is nowhere an invertible element | [Biquaternion Fourier Inversion on the Degenerate Set](../articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html) |
 | the Krein space and the left regular representation, the indefinite adjoint, the Krein–von Neumann envelope, the definite interpretation, the twisted fundamental symmetries | [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html) |
 | the Hilbert algebra, the cyclic and separating unit, the Tomita operator, the modular conjugation and the two sides, the indefinite obstruction | [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html) |
 
@@ -49,7 +49,7 @@ $$
 
 **The root.** An element with $\tilde{Z}^{2}=e_t$ is central, $\pm e_t$, or pure with $(\vec{Z},\vec{Z})=-1$. The pure roots are a family of real dimension four, containing the purely imaginary unit vectors $i\vec u$. A root is Hermitian when $\tilde{Z}^{*}=\tilde{Z}$, and the Hermitian roots are exactly the central pair and the $i\vec u$.
 
-**The kernel.** $W(t,\omega)=\exp(-2\pi i\tilde{Z}\omega t)=\cos\theta\,e_t-i\sin\theta\,\tilde{Z}$ with $\theta=2\pi\omega t$. It is a unit at every root and every phase, with inverse $W(-\omega)$, and its norm is the unit at every root. What fails at the central roots is the identification of the inverse with the conjugation, not invertibility.
+**The kernel.** $W(t,\omega)=\exp(-2\pi i\tilde{Z}\omega t)=\cos\theta\,e_t-i\sin\theta\,\tilde{Z}$ with $\theta=2\pi\omega t$. It is invertible at every root and every phase, with inverse $W(-\omega)$, and its norm is the unit at every root. What fails at the central roots is the identification of the inverse with the conjugation, not invertibility.
 
 **The Peirce form.** $W=e^{-2\pi i\omega t}\tilde\Pi_++e^{+2\pi i\omega t}\tilde\Pi_-$, a pair of conjugate unit complex numbers on the two minimal ideals. The kernel is never a zero divisor, because both coordinates are non-zero scalars.
 
@@ -91,9 +91,9 @@ $$
 
 the even part of the series being the cosine and the odd part the sine. Both factors lie in the commutative algebra $\mathbb{C}[\tilde{Z}]$, so the inverse is the closed form with the sine reversed, $W(t,\omega)^{-1}=W(t,-\omega)$, and the product is $(\cos^{2}+\sin^{2})e_t=e_t$. The inverse is therefore the kernel at the negated frequency, at every root, with no case distinction.
 
-**The kernel is a unit at every phase and every root, and the statement is stronger than invertibility.** Its algebraic norm is the unit, $N(W)=1$, which is read off the closed form: writing $R=-i\tilde{Z}$, the kernel is $\cos\theta\,e_t+\sin\theta\,R$ with $R^{2}=-e_t$, and $N(a\,e_t+bR)=a^{2}+b^{2}$. The number is one for every $\theta$ and does not depend on the root, and it is the kernel's own statement that the transform never loses rank for want of a kernel: the kernel never approaches the null cone.
+**The kernel is invertible at every phase and every root, and the statement is stronger than invertibility.** Its algebraic norm is the unit, $N(W)=1$, which is read off the closed form: writing $R=-i\tilde{Z}$, the kernel is $\cos\theta\,e_t+\sin\theta\,R$ with $R^{2}=-e_t$, and $N(a\,e_t+bR)=a^{2}+b^{2}$. The number is one for every $\theta$ and does not depend on the root, and it is the kernel's own statement that the transform never loses rank for want of a kernel: the kernel never approaches the null cone.
 
-**What the conjugation gives, and where it stops.** At a pure root the quaternion conjugation reverses the vector part, so $W^{\natural}=W^{-1}$ and the natural norm of the kernel is the unit. At the central roots this fails: the kernel is the complex scalar $e^{\mp2\pi i\omega t}e_t$, which the quaternion conjugation fixes rather than inverts, while the inverse is the coefficient conjugate. The natural norm there is $W^{2}$, a unit and not $e_t$. The distinction affects only that pair, and every statement below that uses the conjugation of the kernel is stated for a pure root.
+**What the conjugation gives, and where it stops.** At a pure root the quaternion conjugation reverses the vector part, so $W^{\natural}=W^{-1}$ and the natural norm of the kernel is the unit. At the central roots this fails: the kernel is the complex scalar $e^{\mp2\pi i\omega t}e_t$, which the quaternion conjugation fixes rather than inverts, while the inverse is the coefficient conjugate. The natural norm there is $W^{2}$, an invertible element and not $e_t$. The distinction affects only that pair, and every statement below that uses the conjugation of the kernel is stated for a pure root.
 
 **The Peirce form is the same statement in the coordinates that the transform uses.** Substituting $\tilde{Z}=\tilde\Pi_+-\tilde\Pi_-$,
 
@@ -137,7 +137,7 @@ with inverse $f[n]=\frac1N\sum_{\ell}W_N(n,-\ell)F[\ell]$. The orthogonality rel
 
 ### What Inversion Costs
 
-**Inversion costs nothing and the transform costs a factorization.** The transform is a bijection at every root; that is the whole of the invertibility statement, and it is unconditional. The cost appears in what the transform does to the *arithmetic* on the other side: pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone, and a convolution is undone by dividing the transform pointwise by the transform of the kernel, which exists at the frequency $\ell$ exactly when $F[\ell]$ is a unit.
+**Inversion costs nothing and the transform costs a factorization.** The transform is a bijection at every root; that is the whole of the invertibility statement, and it is unconditional. The cost appears in what the transform does to the *arithmetic* on the other side: pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone, and a convolution is undone by dividing the transform pointwise by the transform of the kernel, which exists at the frequency $\ell$ exactly when $F[\ell]$ is invertible.
 
 **The convolution theorem needs the kernel to be central on the values.** With $W_N(n,\ell)a=aW_N(n,\ell)$ for every sample, $\mathcal{F}[f*g][\ell]=\mathcal{F}[f][\ell]\cdot\mathcal{F}[g][\ell]$. The hypothesis holds at the central roots, whose kernel is a complex scalar, and for every sequence valued in $\mathbb{C}[\tilde{Z}]$. It is a hypothesis and not a technicality: for general quaternion-valued sequences the products $f[m]g[n-m]$ do not reassemble, because the kernel cannot be moved past the values. A convolution theorem is a commutativity statement about the kernel, and the algebra supplies one only on a commutative subalgebra.
 
@@ -201,7 +201,7 @@ The multiplier is a negative scalar and it vanishes only at $\omega=0$: this ope
 
 ### The Cone and the Degenerate Set
 
-**The zero set of the symbol is the degenerate set of the transform problem.** Inversion of an operator equation by the transform is division by $\Sigma(\omega)$, and the division is available exactly where $\Sigma(\omega)$ is a unit. The set where it is not a unit is where the norm vanishes, that is the intersection of the symbol's range with the null cone; the mathematics calls it the degenerate set and computes the rank of left multiplication there.
+**The zero set of the symbol is the degenerate set of the transform problem.** Inversion of an operator equation by the transform is division by $\Sigma(\omega)$, and the division is available exactly where $\Sigma(\omega)$ is invertible. The set where it is not invertible is where the norm vanishes, that is the intersection of the symbol's range with the null cone; the mathematics calls it the degenerate set and computes the rank of left multiplication there.
 
 **The rank drop is by two, and the projector shows it.** Left multiplication by a unit element is an invertible map of the four complex dimensions of the algebra; left multiplication by the idempotent $\tilde\Pi_+$ has rank two and determinant zero. The check is direct: $\operatorname{rank}L_{\tilde\Pi_+}=2$ with $\det L_{\tilde\Pi_+}=0$, $\operatorname{rank}L_{\tilde{Z}}=4$, and $\operatorname{rank}L_{e_t+i\vec e_y}=2$. The last element is a zero divisor and the first is a projector, and both sit at rank two.
 
@@ -292,7 +292,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **Where the ordinary inverse does not exist, two generalised inverses do.** The mathematics constructs them from the adjugate and from the Peirce coordinates respectively, and it states which one reproduces which class of solutions. The distinction matters at a pole, because a generalised inverse selects a solution and the selection is not unique.
 
-**Inversion where the symbol is nowhere a unit is a different problem.** If the symbol is a zero divisor at every frequency, no division is available anywhere and the equation is not solved by a reciprocal at all. What remains is the algebraic inversion on the degenerate set, which is a statement about elements and not about distributions, and the exponential there, which truncates: on the cone the flow is $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N^{2}=0$, a polynomial in the parameter and not a periodic function.
+**Inversion where the symbol is nowhere an invertible element is a different problem.** If the symbol is a zero divisor at every frequency, no division is available anywhere and the equation is not solved by a reciprocal at all. What remains is the algebraic inversion on the degenerate set, which is a statement about elements and not about distributions, and the exponential there, which truncates: on the cone the flow is $e^{\theta Q_t}(e_t+\theta\vec N)$ with $\vec N^{2}=0$, a polynomial in the parameter and not a periodic function.
 
 **The truncation is the algebraic form of a critical point.** A flow that is a polynomial rather than a circle has no period and no frequency, which is the same statement as the absence of a root on the cone. The two facts are one fact read in the flow and in the kernel.
 
@@ -320,7 +320,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 ### III.2.a — The Kernel Is the Clock
 
-**The object.** $W(t,\omega)=\cos\theta\,e_t-i\sin\theta\,\tilde{Z}$ with $\theta=2\pi\omega t$, a unit of the algebra for every $t$, and its Peirce coordinates $e^{\mp2\pi i\omega t}$ on the two ideals.
+**The object.** $W(t,\omega)=\cos\theta\,e_t-i\sin\theta\,\tilde{Z}$ with $\theta=2\pi\omega t$, an invertible element of the algebra for every $t$, and its Peirce coordinates $e^{\mp2\pi i\omega t}$ on the two ideals.
 
 **The warrant.** The kernel is a unit circle in the commutative plane $\mathbb{C}[\tilde{Z}]$, its algebraic norm is the unit at every phase, and its inverse is the kernel at the negated frequency. The phase advances linearly in $t$ and the rate of advance is $\omega$; nothing else in the algebra advances.
 
@@ -350,7 +350,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The object.** The zero set of the symbol $\Sigma(\omega)$, the set where $N(\Sigma)$ vanishes, and the poles of $\Sigma^{-1}=\bar\Sigma/N(\Sigma)$.
 
-**The warrant.** Division by the symbol is available exactly where the symbol is a unit, the rank of left multiplication falls from four to two at a simple null point, and the transform of a solution of $\Sigma(\hat f)=\hat g$ is supported on the zero set of $\Sigma$.
+**The warrant.** Division by the symbol is available exactly where the symbol is invertible, the rank of left multiplication falls from four to two at a simple null point, and the transform of a solution of $\Sigma(\hat f)=\hat g$ is supported on the zero set of $\Sigma$.
 
 **The reading.** A pole of a propagator is a zero of a symbol, and a zero of a symbol is a shell. The mass shell is the pole set of the massive symbol, the null cone is the pole set of the massless one, and the exceptional point is where two poles meet: the archive's *The Zero-Divisor Cone and the Massless Spectrum*, *The Massless Limit as a Boundary Value of the Polar Word* and *The Rest Frame and the Exceptional Point* are the three cases. The sharp edge that the mathematics states and the physics must not soften is this: the support of a transform is the pole set of its partner's kernel, so a coupling that enters the symbol linearly can translate the pole set and cannot reshape it. A shift moves a shell; it does not make a continuum.
 
@@ -412,7 +412,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 ## Summary
 
-**The transform of this algebra is generated by a root of $1$ and a frequency.** The kernel is $\exp(-2\pi i\tilde{Z}\omega t)$, closed at once into a cosine and a sine because the square of the root is the unit. It is a unit at every phase and every root with $N(W)=1$, its Peirce coordinates are two conjugate unit scalars, and it is never a zero divisor. The root is the only non-trivial datum, and every statement of the section is indexed by it.
+**The transform of this algebra is generated by a root of $1$ and a frequency.** The kernel is $\exp(-2\pi i\tilde{Z}\omega t)$, closed at once into a cosine and a sine because the square of the root is the unit. It is invertible at every phase and every root with $N(W)=1$, its Peirce coordinates are two conjugate unit scalars, and it is never a zero divisor. The root is the only non-trivial datum, and every statement of the section is indexed by it.
 
 **Inversion is unconditional and the isometry is not.** The inverse formula reproduces every sequence and every integrable function at every root, including samples on the null cone. Plancherel holds exactly at the Hermitian roots; elsewhere the transform preserves the Peirce-weighted form, and the deficit is $\lVert\tilde{Z}\rVert^{2}=1+2\lVert\vec p\rVert^{2}$, measured as a factor of $1.7060$ in the discrete case at $\tilde{Z}=\vec e_x+i\sqrt2\,\vec e_y$.
 
@@ -424,7 +424,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **A placement is a convention with a stated price.** The two-sided placements fix complementary parts and lose the frequency of the part they fix, carrying the survivor at twice the frequency, and the inversion carries a factor two. No other sign fixes anything, and no two-sided transform is injective.
 
-**The degenerate set is where the symbol stops being a unit.** The rank of left multiplication falls from four to two, the adjugate supplies a generalised inverse, and the exponentiation truncates on the cone. The modular pair of the algebra is trivial because the unit's vector state is the trace, and the indefinite version does not exist.
+**The degenerate set is where the symbol stops being an invertible element.** The rank of left multiplication falls from four to two, the adjugate supplies a generalised inverse, and the exponentiation truncates on the cone. The modular pair of the algebra is trivial because the unit's vector state is the trace, and the indefinite version does not exist.
 
 **Eight readings, each with a boundary.** The kernel is the clock, the frequency its rate, unitarity a property of the element, the poles the degenerate set, the placements conventions, the measure transform not positive definite, the tail the decay and the axis the stable case, and the modular clock trivial for the algebra's own vector. Each is the archive's, each is bounded, and none is a new physical claim.
 
@@ -442,7 +442,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 | the symbol | $\Sigma(\omega)$ | multiplier of a constant-coefficient operator under the transform |
 | the adjugate | $\bar\Sigma$ | $\Sigma\bar\Sigma=N(\Sigma)e_t$ |
 | the norm of an element | $N(\tilde{Q})$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, central and complex |
-| the degenerate set | $\{N(\Sigma)=0\}$ | where the symbol is not a unit |
+| the degenerate set | $\{N(\Sigma)=0\}$ | where the symbol is not invertible |
 | the plane of the root | $C(R)$ | $\mathrm{span}_{\mathbb{C}}\{e_t,R\}$, the commutant of a pure root |
 | the transverse frame | $\nu,\eta$ | $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ |
 | the two placements | $R'=\pm R$ | the two-sided kernels that fix a part |
@@ -465,10 +465,10 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 - [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), the archived dictionary of the symbol and the wave-number transcription.
 - [Each Sector Is the Other's Clock: the Sector Exchange as Relational Time](each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), the archived reading of the clock that the algebra supplies and the arrow it does not.
 - [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), the archived reading of the three rates.
-- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), the archived reading of the massless pole set.
+- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), the archived reading of the massless pole set.
 - [The Massless Regime](the-massless-regime.html), the archived reading of the pole at the vertex.
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), the archived reading of the meeting of two poles.
-- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), the archived positive half of the isometry condition.
+- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), the archived positive half of the isometry condition.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), the archived reading of the probability as a pairing and not a norm.
 - [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html), the archived reading of the three species of the probability product.
 - [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), the archived thermal reading, which needs a state other than the unit's.

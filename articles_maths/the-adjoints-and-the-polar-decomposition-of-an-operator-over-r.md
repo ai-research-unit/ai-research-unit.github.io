@@ -124,7 +124,7 @@ so $U$ is orthogonal, and $T=UP$. For uniqueness, $T^{*}T=P^{2}$ forces $P$ to b
 
 **The decomposition is the polar decomposition of a matrix, at size $n^{2}$.** It is the factorisation of an invertible matrix into an orthogonal and a positive definite factor. Measured at $n=3$ on a random operator, the factorisation reproduces $T$, $U$ is orthogonal, $P$ is symmetric and positive with smallest eigenvalue $0.2693$.
 
-**The orthogonal factor is continuous, so the decomposition retracts the unit group.** The map $T\mapsto U=TP^{-1}$ is continuous on the open set of invertible operators, and it is the identity on the orthogonal group. Following $t\mapsto U_t$ along $P_t=P^{t}$ gives a deformation retraction of $\mathrm{GL}_{n^{2}}(\mathbb{R})$ onto $\mathrm{O}(n^{2})$, the statement used in *The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant*.
+**The orthogonal factor is continuous, so the decomposition retracts the group of invertibles.** The map $T\mapsto U=TP^{-1}$ is continuous on the open set of invertible operators, and it is the identity on the orthogonal group. Following $t\mapsto U_t$ along $P_t=P^{t}$ gives a deformation retraction of $\mathrm{GL}_{n^{2}}(\mathbb{R})$ onto $\mathrm{O}(n^{2})$, the statement used in *The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant*.
 
 **The polar decomposition of a two-sided operator is the pair of decompositions of its factors.** Write $A=U_A|A|$ with $|A|=(A^{\mathsf T}A)^{1/2}$ and $B=|B^{\mathsf T}|V$ with $|B^{\mathsf T}|=(BB^{\mathsf T})^{1/2}$. Then
 

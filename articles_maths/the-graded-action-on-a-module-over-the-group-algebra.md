@@ -91,7 +91,7 @@ $$
 
 **Corollary (the invariants vanish when the odd part contains a unit).** If $\mathcal{A}^-$ contains a unit $u$ of $\mathcal{A}$, then $M^{\mathcal{A}^-} = \{0\}$; if $G$ is discrete and the odd part contains a point mass $\delta_h$ with $\alpha(\delta_h) = -\delta_h$, then every invariant element is annihilated by $\delta_h$, that is, $M^{\mathcal{A}^-} = \{m : \delta_h\cdot m = 0\}$.
 
-**Proof.** A unit $u\in\mathcal{A}^-$ acts by the invertible operator $m\mapsto u\cdot m$, whose kernel is $\{0\}$. For the point mass statement, the invariant set is the kernel of the single operator because $\mathcal{A}^-$ is spanned by the odd point masses and $\delta_h$ is a unit.
+**Proof.** an invertible element $u\in\mathcal{A}^-$ acts by the invertible operator $m\mapsto u\cdot m$, whose kernel is $\{0\}$. For the point mass statement, the invariant set is the kernel of the single operator because $\mathcal{A}^-$ is spanned by the odd point masses and $\delta_h$ is invertible.
 
 **Example (the trivial and the maximal grading).** If $\alpha = \mathrm{id}$ then $\mathcal{A}^- = 0$, $M^{\mathcal{A}^-} = M$, and the twisted action is the original one. If $M$ carries the trivial grading $M^- = 0$, every module action is homogeneous and the twisted action equals the original one on the even part of the algebra; the grading involution is the identity.
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **reflection** at a unit $u$ is the signed two-sided operator $\rho_u(x) = u\,\alpha(x)\,u^{-1}$, the operator that conjugates by $u$ in the graded sense; it is an automorphism of the algebra of order two exactly when $u$ is a graded involution, and it is the operator whose adjoint exhibits the signed phenomenon most sharply. Its adjoint with respect to the form of the category is the reflection at the conjugate parameter, $\rho_u^\dagger = \rho_{\delta(u)}$, $\delta = \sigma\alpha$; the reflection is therefore self-adjoint exactly when $\rho_{\delta(u)} = \rho_u$, that is when the **defect** $\delta(u)u^{-1}$ is central, and this can fail: the signed adjoint of the reflection is the first operator of the block whose self-adjointness is a condition on the parameter and not a tautology. This article computes the adjoint of the reflection, derives the self-adjointness and unitarity conditions, and records the failure.
+The **reflection** at an invertible element $u$ is the signed two-sided operator $\rho_u(x) = u\,\alpha(x)\,u^{-1}$, the operator that conjugates by $u$ in the graded sense; it is an automorphism of the algebra of order two exactly when $u$ is a graded involution, and it is the operator whose adjoint exhibits the signed phenomenon most sharply. Its adjoint with respect to the form of the category is the reflection at the conjugate parameter, $\rho_u^\dagger = \rho_{\delta(u)}$, $\delta = \sigma\alpha$; the reflection is therefore self-adjoint exactly when $\rho_{\delta(u)} = \rho_u$, that is when the **defect** $\delta(u)u^{-1}$ is central, and this can fail: the signed adjoint of the reflection is the first operator of the block whose self-adjointness is a condition on the parameter and not a tautology. This article computes the adjoint of the reflection, derives the self-adjointness and unitarity conditions, and records the failure.
 
 The article assumes the reflection, its composition, its inverse and its group from *The Signed Reflection on a Banach Algebra* and *The Signed Two-Sided Operator on a Banach Algebra*; the grade involution $\alpha$ and the composite $\delta = \sigma\alpha$ from *The Grade Involution on a Banach Algebra* and *The Signed Left Multiplication on an Involutive Banach Algebra*; the form of the category and the adjoint from *The Involution on the Operator Algebra*; the adjoint of the signed two-sided operator from *The Signed Adjoint Two-Sided Operator on a Banach Algebra*; the involution $\sigma$, the unitary elements and the Cayley transform from *Adjoints in a Banach Algebra*; and the operator theory of the reflection from *Reflections as Signed Two-Sided Operators on a Banach Algebra*. The graded module case is *The Graded Adjoint Action on a Graded Module*.
 
@@ -17,7 +17,7 @@ the **defect** of $u$ is $\delta(u)u^{-1}$; and the **conjugate parameter** is $
 
 ## The Adjoint of the Reflection
 
-**Theorem (the explicit form).** For every unit $u$, the reflection is adjointable and
+**Theorem (the explicit form).** For every invertible $u$, the reflection is adjointable and
 
 $$
 \boxed{\;(\rho_u)^\dagger = \rho_{\delta(u)} , \qquad (\rho_u)^\dagger(x) = \delta(u)\,\alpha(x)\,\delta(u)^{-1}\;} .
@@ -27,7 +27,7 @@ The adjoint of a reflection is the reflection at the image of the parameter unde
 
 **Proof.** The reflection is the signed two-sided operator $\Sigma^\alpha_{u,u^{-1}}$, whose adjoint is $\Sigma^\alpha_{\delta(u),\delta(u^{-1})} = \Sigma^\alpha_{\delta(u),\delta(u)^{-1}}$ by *The Signed Adjoint Two-Sided Operator on a Banach Algebra*; this is exactly $\rho_{\delta(u)}$.
 
-**Corollary (the reflection group and the adjoint).** The adjoint map $u \mapsto \delta(u)$ on the reflection group is an automorphism, $(\rho_u\rho_v)^\dagger = \rho_{\delta(u)}\rho_{\delta(v)}$ and $(\rho_u)^{-1\,\dagger} = \rho_{\delta(u)^{-1}}$; the reflection group maps under the adjoint by the automorphism $\delta$ of the unit group, and the reflection $\rho_1 = \mathrm{id}$ has adjoint $\rho_1$.
+**Corollary (the reflection group and the adjoint).** The adjoint map $u \mapsto \delta(u)$ on the reflection group is an automorphism, $(\rho_u\rho_v)^\dagger = \rho_{\delta(u)}\rho_{\delta(v)}$ and $(\rho_u)^{-1\,\dagger} = \rho_{\delta(u)^{-1}}$; the reflection group maps under the adjoint by the automorphism $\delta$ of the group of invertibles, and the reflection $\rho_1 = \mathrm{id}$ has adjoint $\rho_1$.
 
 **Proof.** The adjoint is anti-multiplicative on the operators and multiplicative on the parameters, and $\rho_u\rho_v = \Sigma^\alpha_{u,u^{-1}}\Sigma^\alpha_{v,v^{-1}} = \rho_{uv}$; the identity reflection is fixed.
 
@@ -39,7 +39,7 @@ $$
 \boxed{\;(\rho_u)^\dagger = \rho_u \iff \delta(u)u^{-1} \in Z(A) \quad (\text{a central unit})\;} .
 $$
 
-Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for a unit whose defect is not central.
+Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whenever $u$ is a fixed point of $\delta$; the self-adjointness fails for an invertible element whose defect is not central.
 
 **Proof.** $\rho_{\delta(u)} = \rho_u$ iff the two parametrising units differ by a central unit, because the parametrisation of the reflection group has kernel the central units: $\rho_p = \rho_q$ iff $q^{-1}p$ is central. With $p = \delta(u)$ and $q = u$ this is the centrality of $u^{-1}\delta(u)$, equivalently of $\delta(u)u^{-1}$.
 
@@ -49,13 +49,13 @@ Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whene
 
 ## The Failure and Examples
 
-**Proposition (the failure of self-adjointness).** Let $u$ be a unit with $\delta(u)u^{-1}$ not central. Then $\rho_u$ is not self-adjoint and the signed adjoint of the reflection is a genuinely different reflection; the obstruction is the commutant of the defect, and it vanishes for a commutative algebra and for a unit fixed by $\delta$.
+**Proposition (the failure of self-adjointness).** Let $u$ be an invertible element with $\delta(u)u^{-1}$ not central. Then $\rho_u$ is not self-adjoint and the signed adjoint of the reflection is a genuinely different reflection; the obstruction is the commutant of the defect, and it vanishes for a commutative algebra and for an invertible element fixed by $\delta$.
 
 **Proof.** Immediate from the centrality criterion; a non-central defect gives $\rho_{\delta(u)} \neq \rho_u$, and the number of distinct reflections in the class of $u$ is measured by the class group of $A$ by the central units.
 
 **Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the transpose-involution and the trace form, the reflections are the conjugations $x \mapsto uxu^{-1}$ in the graded sense; the defect $\delta(u)u^{-1} = u^{-1}u^{-1}\cdot$... is central exactly when the corresponding conjugation is self-adjoint, and for a graded reflection with $u^2 = 1$ and $\delta(u) = u$ the operator is self-adjoint.
 
-**Example (the commutative algebra).** For a commutative $A$ every unit is central, so every reflection is self-adjoint; the signed adjoint of the reflection is the reflection at $\delta(u)$, and on a commutative algebra the whole signed theory collapses to the unsigned one twisted by $\delta$.
+**Example (the commutative algebra).** For a commutative $A$ every invertible element is central, so every reflection is self-adjoint; the signed adjoint of the reflection is the reflection at $\delta(u)$, and on a commutative algebra the whole signed theory collapses to the unsigned one twisted by $\delta$.
 
 **Example (the group algebra).** For the group algebra of a finite group with $\delta(g) = g^{-1}$ on the group elements, the reflection at a group element is the conjugation; the defect $g^{-2}$ is central exactly when $g^2$ is central, and the self-adjointness of the reflection is the condition that the conjugation by $g$ is a self-adjoint operator, a condition on the conjugacy class of $g$.
 
@@ -69,7 +69,7 @@ Hence $\rho_u$ is self-adjoint whenever $\delta(u) = u$, and in particular whene
 
 ## Summary
 
-The reflection $\rho_u(x) = u\alpha(x)u^{-1}$ is adjointable with $(\rho_u)^\dagger = \rho_{\delta(u)}$, the reflection at the conjugate parameter $\delta = \sigma\alpha$; the adjoint map on the reflection group is the automorphism $\delta$ of the unit group, and it fixes the identity. The reflection is self-adjoint exactly when the defect $\delta(u)u^{-1}$ is central, so it is self-adjoint whenever $\delta(u) = u$, and it can fail: a unit with a non-central defect gives a reflection different from its adjoint, the obstruction vanishing for a commutative algebra and for the units fixed by $\delta$. The reflection is unitary when the defect is central and $\delta(u) = u^{-1}$ modulo the centre, that is when the adjoint is the inverse reflection. The operator theory of the reflection is *Reflections as Signed Two-Sided Operators on a Banach Algebra*, and the one-sided case is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
+The reflection $\rho_u(x) = u\alpha(x)u^{-1}$ is adjointable with $(\rho_u)^\dagger = \rho_{\delta(u)}$, the reflection at the conjugate parameter $\delta = \sigma\alpha$; the adjoint map on the reflection group is the automorphism $\delta$ of the group of invertibles, and it fixes the identity. The reflection is self-adjoint exactly when the defect $\delta(u)u^{-1}$ is central, so it is self-adjoint whenever $\delta(u) = u$, and it can fail: An invertible element with a non-central defect gives a reflection different from its adjoint, the obstruction vanishing for a commutative algebra and for the invertibles fixed by $\delta$. The reflection is unitary when the defect is central and $\delta(u) = u^{-1}$ modulo the centre, that is when the adjoint is the inverse reflection. The operator theory of the reflection is *Reflections as Signed Two-Sided Operators on a Banach Algebra*, and the one-sided case is *The Signed Adjoint of the Left Multiplication on an Involutive Banach Algebra*.
 
 ## Summary of Notation
 

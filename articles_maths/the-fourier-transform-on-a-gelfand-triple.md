@@ -282,7 +282,7 @@ The Banach triple is the instructive failure. The Paley–Wiener space $PW_K$ is
 | $P(D)$ | A constant-coefficient operator $\sum_{\lvert\alpha\rvert\le m}a_\alpha\partial^\alpha$ with $a_\alpha\in A$ |
 | $P^{t}(D)$ | The transpose $\varphi\mapsto\sum(-1)^{\lvert\alpha\rvert}(\partial^\alpha\varphi)a_\alpha$, coefficients on the right |
 | $\sigma_P(\zeta)$ | The symbol $\sum a_\alpha(i\zeta)^\alpha$, an element of $A_{\mathbb{C}}$ |
-| $Z(P)$ | The zero set $\{\zeta:\sigma_P(\zeta)$ is not a unit$\}$ |
+| $Z(P)$ | The zero set $\{\zeta:\sigma_P(\zeta)$ is not invertible$\}$ |
 | $r(\zeta)$ | The rank of $L_{\sigma_P(\zeta)}$ at the frequency $\zeta$ |
 | $L_a$ | Left multiplication by $a$ |
 | $\operatorname{Ann}_L(a)$ | The left annihilator $\{x:ax=0\}$, the kernel of $L_a$ |

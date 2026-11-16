@@ -87,7 +87,7 @@ $$
 \tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R},
 $$
 
-the $L$ part of value $-1$ and the $R$ part of value $+1$ under the frame's chirality basis operator (*Special Element Conventions*, §*The Chirality Convention*), and only the zero element has both parts zero. The value is a subscript of the element: a general element, a product, a unit and a field all carry it. Left multiplication keeps the value, and a product takes the value of its right factor. A Lorentz action multiplies on the left, so it preserves both values.
+the $L$ part of value $-1$ and the $R$ part of value $+1$ under the frame's chirality basis operator (*Special Element Conventions*, §*The Chirality Convention*), and only the zero element has both parts zero. The value is a subscript of the element: a general element, a product, an invertible element and a field all carry it. Left multiplication keeps the value, and a product takes the value of its right factor. A Lorentz action multiplies on the left, so it preserves both values.
 
 **The two Dirac equations.** The dynamics is the chiral pair
 

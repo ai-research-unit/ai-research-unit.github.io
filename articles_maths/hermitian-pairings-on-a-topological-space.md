@@ -18,7 +18,7 @@ $$
 \beta(ru + sv, w) = r\beta(u,w) + s\beta(v,w), \qquad \beta(u, rv) = \bar r\,\beta(u,v),
 $$
 
-and it is **Hermitian** when it satisfies the Hermitian symmetry $\beta(v,u) = \overline{\beta(u,v)}$, or **$\varepsilon$-Hermitian** when $\beta(v,u) = \varepsilon\,\overline{\beta(u,v)}$ with $\varepsilon$ a unit of $R$ satisfying $\varepsilon\bar\varepsilon = 1$. For the trivial involution the Hermitian symmetry is the ordinary symmetry and the $\varepsilon$-Hermitian condition is the $\varepsilon$-symmetry of Part I.
+and it is **Hermitian** when it satisfies the Hermitian symmetry $\beta(v,u) = \overline{\beta(u,v)}$, or **$\varepsilon$-Hermitian** when $\beta(v,u) = \varepsilon\,\overline{\beta(u,v)}$ with $\varepsilon$ invertible in $R$ satisfying $\varepsilon\bar\varepsilon = 1$. For the trivial involution the Hermitian symmetry is the ordinary symmetry and the $\varepsilon$-Hermitian condition is the $\varepsilon$-symmetry of Part I.
 
 **Theorem.** An $\varepsilon$-Hermitian pairing has no confusion of the two variables: the conjugate-linear and the $\varepsilon$ factors multiply as expected, the form is determined by the values $\beta(u,u)$ when two is invertible and $\varepsilon = 1$, and the adjoint operation of the form, $\beta(Tu,v) = \beta(u,T^{*}v)$, is an anti-automorphism of the algebra of operators, an involution when the form is $\varepsilon$-Hermitian. The form is **nondegenerate** when the adjoint map $u \mapsto \beta(u,\cdot)$ is a bijection onto the conjugate dual.
 
@@ -52,7 +52,7 @@ $$
 \beta(\sigma^{*}u, \sigma^{*}v) = \beta(u,v) \qquad (u, v),
 $$
 
-and **$\sigma$-anti-invariant** when $\beta(\sigma^{*}u,\sigma^{*}v) = -\beta(u,v)$; more generally it **scales** by a unit $c$ when $\beta(\sigma^{*}u,\sigma^{*}v) = c\,\beta(u,v)$.
+and **$\sigma$-anti-invariant** when $\beta(\sigma^{*}u,\sigma^{*}v) = -\beta(u,v)$; more generally it **scales** by an invertible element $c$ when $\beta(\sigma^{*}u,\sigma^{*}v) = c\,\beta(u,v)$.
 
 **Theorem.** If the involution preserves the fundamental class, $\sigma_{*}[X] = [X]$, then the intersection pairing is $\sigma$-invariant; if it reverses the fundamental class, $\sigma_{*}[X] = -[X]$, then the pairing is $\sigma$-anti-invariant. In general the pairing scales by the degree $\deg(\sigma) = \pm 1$ of the involution, and this is the scalar by which the antipodal operator scales the cup-product pairing on the sphere in *The Antipodal Map and the Adjoint*.
 

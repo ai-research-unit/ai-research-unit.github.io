@@ -78,7 +78,7 @@ It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Doub
 
 **Proof.** The product of two two-sided rotations is a two-sided rotation with both factors non-scalar, and the expansion above exhibits the mixing.
 
-**The rank-one operators.** The mixed terms $L_aR_b$ are the two-sided operators of the earlier articles, and their matrices are the sixteen $T_{\mu\nu}$ on the units.
+**The rank-one operators.** The mixed terms $L_aR_b$ are the two-sided operators of the earlier articles, and their matrices are the sixteen $T_{\mu\nu}$ on the invertibles.
 
 **Proof.** The definition $T_{a,b}(X)=aXb$ and the product rule $T_{a,b}T_{c,d}=T_{ac,db}$.
 
@@ -90,7 +90,7 @@ It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Doub
 
 **Corollary.** Each simple ideal of the even part contributes one factor, so the two ideals of $\mathrm{Cl}^{+}$ are the two factors of the spin group.
 
-**Proof.** The unit group of a direct sum of two matrix algebras is the product of the two general linear groups.
+**Proof.** The group of invertibles of a direct sum of two matrix algebras is the product of the two general linear groups.
 
 **Corollary.** The rotor group double covers $SO(4,\mathbb{C})$ with kernel $\{\pm1\}$, and the kernel is the simultaneous sign in the two factors.
 

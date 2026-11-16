@@ -44,7 +44,7 @@ The identity $A = A^+ \oplus A^-$ is the reason an involutive automorphism is an
 
 **Proposition.** The involutive automorphism $\alpha$ is an element of $\operatorname{End}_k(A)$ with $\alpha^2 = \mathrm{id}$, and it is an operator of order two in the group $\operatorname{Aut}_k(A)$ of algebra automorphisms of *Automorphisms and Derivations of Algebras*.
 
-*Proof.* It is $k$-linear and multiplicative, hence in $\operatorname{End}_k(A)$, and it is invertible with inverse itself, hence in the unit group of the endomorphism monoid, which is the automorphism group of the algebra. The order is two by hypothesis.
+*Proof.* It is $k$-linear and multiplicative, hence in $\operatorname{End}_k(A)$, and it is invertible with inverse itself, hence in the group of invertibles of the endomorphism monoid, which is the automorphism group of the algebra. The order is two by hypothesis.
 
 **Remark.** The involutive automorphisms of $A$ form the elements of order dividing two in the automorphism group, and they are the operators of the present article. A single one is fixed throughout, and it is written $\alpha$; when it is the identity the whole theory reduces to the unsigned one.
 
@@ -104,13 +104,13 @@ is $k$-linear onto the signed two-sided space, and its products obey the table a
 
 ### Invertibility
 
-**Theorem.** Let $A$ be finite-dimensional. The signed two-sided operator $\mathcal{T}_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are units of $A$, and then
+**Theorem.** Let $A$ be finite-dimensional. The signed two-sided operator $\mathcal{T}_{a,b}$ is invertible in $\operatorname{End}_k(A)$ if and only if $a$ and $b$ are invertible in $A$, and then
 
 $$
 \boxed{\;\mathcal{T}_{a,b}^{-1} = \mathcal{T}_{\alpha(a)^{-1},\, \alpha(b)^{-1}}\;} .
 $$
 
-*Proof.* The form $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ is the composite of the invertible operator $\alpha$ with the two-sided operator $L_{a}R_{b}$, so it is invertible exactly when $L_{a}R_{b}$ is; by *The Two-Sided Operator on an Algebra* this is exactly when $a$ and $b$ are units. For the inverse, apply the composition rule for two signed two-sided operators: $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})b} = L_{a\alpha(a)^{-1}}R_{\,b^{-1}b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
+*Proof.* The form $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha$ is the composite of the invertible operator $\alpha$ with the two-sided operator $L_{a}R_{b}$, so it is invertible exactly when $L_{a}R_{b}$ is; by *The Two-Sided Operator on an Algebra* this is exactly when $a$ and $b$ are invertible. For the inverse, apply the composition rule for two signed two-sided operators: $\mathcal{T}_{a,b}\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}} = L_{a\alpha(\alpha(a)^{-1})}R_{\,\alpha(\alpha(b)^{-1})b} = L_{a\alpha(a)^{-1}}R_{\,b^{-1}b} = L_{1}R_{1} = \mathrm{id}$, using $\alpha(\alpha(a)^{-1}) = a^{-1}$ and $\alpha(\alpha(b)^{-1}) = b^{-1}$; the same computation in the other order gives the two-sided inverse.
 
 **Remark.** The inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ is again a signed two-sided operator, so the invertible signed two-sided operators are stable under inversion; they are not stable under composition, because the product of two of them is an unsigned two-sided operator. The stable object is the union of the invertible signed and the invertible unsigned two-sided operators, which is the subgroup $G_0 \cup G_0\alpha$ of the remark above. When $\alpha = \mathrm{id}$ the signed and the unsigned two-sided operators coincide and this union is the ordinary group of invertible two-sided operators.
 
@@ -118,15 +118,15 @@ $$
 
 ### The Signed Conjugations
 
-**Definition.** For a unit $u \in A$ the **signed conjugation**, or **signed inner automorphism**, by $u$ is the operator
+**Definition.** For an invertible element $u \in A$ the **signed conjugation**, or **signed inner automorphism**, by $u$ is the operator
 
 $$
 \rho_u = \mathcal{T}_{u,\, u^{-1}} : A \to A, \qquad \rho_u(x) = u\,\alpha(x)\,u^{-1} .
 $$
 
-The signed conjugation is the signed two-sided operator with $b = u^{-1}$, exactly as the inner automorphism $\iota_u$ is the unsigned two-sided operator with $b = u^{-1}$. It is an automorphism of $A$ for every unit $u$, being the composite of the automorphisms $\alpha$ and $\iota_u$. The reflections are the signed conjugations of order two, and their detailed study is *Reflections as Signed Two-Sided Operators on an Algebra*; the present article fixes the operator and states the criterion for it to be a reflection.
+The signed conjugation is the signed two-sided operator with $b = u^{-1}$, exactly as the inner automorphism $\iota_u$ is the unsigned two-sided operator with $b = u^{-1}$. It is an automorphism of $A$ for every invertible $u$, being the composite of the automorphisms $\alpha$ and $\iota_u$. The reflections are the signed conjugations of order two, and their detailed study is *Reflections as Signed Two-Sided Operators on an Algebra*; the present article fixes the operator and states the criterion for it to be a reflection.
 
-**Proposition.** For every unit $u$ the signed conjugation is an automorphism of $A$, and
+**Proposition.** For every invertible $u$ the signed conjugation is an automorphism of $A$, and
 
 $$
 \rho_u^2 = \iota_{u\,\alpha(u)}, \qquad \text{that is} \qquad \rho_u^2(x) = u\,\alpha(u)\, x\, (u\,\alpha(u))^{-1} .
@@ -170,13 +170,13 @@ the ordinary conjugation dressed by the parity of the element acted on — not o
 
 ### The Exterior Algebra
 
-Let $A = \Lambda(V)$ be the exterior algebra of a $k$-module $V$, graded by the degree, with grade involution $\alpha$ negating the odd part. The signed two-sided operator is the two-sided multiplication twisted by the parity, and the signed conjugations $\rho_u(x) = u\,\alpha(x)\,u^{-1}$ for an odd element $u$ are the reflections of the algebra; for a vector $v$ with $v^2 = 0$ the element $v$ is not a unit and the operator $\rho_v$ is not defined as a conjugation, which is the degenerate case. The exterior algebra and its involution belong to *The Exterior Algebra* of the anti-symmetric category, and its relation to the metric case is Part II.
+Let $A = \Lambda(V)$ be the exterior algebra of a $k$-module $V$, graded by the degree, with grade involution $\alpha$ negating the odd part. The signed two-sided operator is the two-sided multiplication twisted by the parity, and the signed conjugations $\rho_u(x) = u\,\alpha(x)\,u^{-1}$ for an odd element $u$ are the reflections of the algebra; for a vector $v$ with $v^2 = 0$ the element $v$ is not invertible and the operator $\rho_v$ is not defined as a conjugation, which is the degenerate case. The exterior algebra and its involution belong to *The Exterior Algebra* of the anti-symmetric category, and its relation to the metric case is Part II.
 
 ## Summary
 
-Fix an involutive automorphism $\alpha$ of $A$, $k$-linear and multiplicative with $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance, and the grading theory itself belongs to *Superalgebras and Graded Structures*. The **signed two-sided operator** is $\mathcal{T}_{a,b}(x) = a\alpha(x)b$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $\mathcal{T}_{1,1} = \alpha$, $\mathcal{T}_{a,b}(1) = ab$, and the two readings $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha = \alpha L_{\alpha(a)}R_{\alpha(b)}$ of the unsigned two-sided operator. The signed two-sided operators satisfy $\mathcal{T}_{a,b}L_{c}R_{d} = \mathcal{T}_{a\alpha(c),\alpha(d)b}$, $L_{a}R_{b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = L_{a\alpha(c)}R_{\alpha(d)b}$, so the product of two signed two-sided operators is an unsigned two-sided operator; and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, with inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$.
+Fix an involutive automorphism $\alpha$ of $A$, $k$-linear and multiplicative with $\alpha^2 = \mathrm{id}$; the grade involution of a $\mathbb{Z}/2$-grading is the standard instance, and the grading theory itself belongs to *Superalgebras and Graded Structures*. The **signed two-sided operator** is $\mathcal{T}_{a,b}(x) = a\alpha(x)b$, $k$-linear in $x$ and $k$-bilinear in $a$ and $b$, with $\mathcal{T}_{1,1} = \alpha$, $\mathcal{T}_{a,b}(1) = ab$, and the two readings $\mathcal{T}_{a,b} = L_{a}R_{b}\alpha = \alpha L_{\alpha(a)}R_{\alpha(b)}$ of the unsigned two-sided operator. The signed two-sided operators satisfy $\mathcal{T}_{a,b}L_{c}R_{d} = \mathcal{T}_{a\alpha(c),\alpha(d)b}$, $L_{a}R_{b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = L_{a\alpha(c)}R_{\alpha(d)b}$, so the product of two signed two-sided operators is an unsigned two-sided operator; and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are invertible, with inverse $\mathcal{T}_{\alpha(a)^{-1},\alpha(b)^{-1}}$.
 
-The signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, is an automorphism for every unit $u$ and satisfies $\rho_u^2 = \iota_{u\alpha(u)}$; hence $\rho_u$ is a reflection exactly when $u\alpha(u)$ is central, which for an odd element $u$ of a graded algebra with $u^2$ central is the case $u\alpha(u) = -u^2$. The reflections are the signed conjugations of order two and are treated in *Reflections as Signed Two-Sided Operators on an Algebra*; the one-sided signed operators are the subject of *The Signed Left Multiplication on an Algebra*, and the signed adjoints are the subject of *The Signed Adjoint Two-Sided Operator on an Algebra*.
+The signed conjugation $\rho_u = \mathcal{T}_{u,u^{-1}}$, $\rho_u(x) = u\alpha(x)u^{-1}$, is an automorphism for every invertible $u$ and satisfies $\rho_u^2 = \iota_{u\alpha(u)}$; hence $\rho_u$ is a reflection exactly when $u\alpha(u)$ is central, which for an odd element $u$ of a graded algebra with $u^2$ central is the case $u\alpha(u) = -u^2$. The reflections are the signed conjugations of order two and are treated in *Reflections as Signed Two-Sided Operators on an Algebra*; the one-sided signed operators are the subject of *The Signed Left Multiplication on an Algebra*, and the signed adjoints are the subject of *The Signed Adjoint Two-Sided Operator on an Algebra*.
 
 ## Summary of Notation
 

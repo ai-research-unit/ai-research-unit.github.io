@@ -39,7 +39,7 @@ expresses every measure uniquely as an absolutely continuous part and a part sin
 
 **Proof.** The convolution inequalities follow from Fubini and the subadditivity of the total variation; associativity is the associativity of the product in $G$; the identity is $\delta_e$. The embedding is isometric by the definition of $L^1(G)$ and is multiplicative, and the ideal property is the translation invariance of $dx$. The Lebesgue decomposition is the Radon–Nikodym theorem for the pair $\mu$ and $dx$.
 
-**Example (the discrete and compact cases).** For $G$ discrete with counting measure, $M(G) = \ell^1(G)$ is unital and the point masses $\delta_x$ are unitary elements; for $G$ compact, $M(G) = L^1(G)\oplus M_s(G)$ with $M_s(G)$ the discrete measures, and $\delta_e$ is a unit not in $L^1(G)$.
+**Example (the discrete and compact cases).** For $G$ discrete with counting measure, $M(G) = \ell^1(G)$ is unital and the point masses $\delta_x$ are unitary elements; for $G$ compact, $M(G) = L^1(G)\oplus M_s(G)$ with $M_s(G)$ the discrete measures, and $\delta_e$ is invertible not in $L^1(G)$.
 
 ## The Involution
 

@@ -156,7 +156,7 @@ $$
 
 and $G$ acts on the right-hand side by $u\mapsto t^{-1}u$. No basis is distinguished.
 
-**The stabilizer.** In $G$, the action is free, so the stabilizer of a basis is trivial. In the unit group, the units that fix the family are
+**The stabilizer.** In $G$, the action is free, so the stabilizer of a basis is trivial. In the group of invertibles, the units that fix the family are
 
 $$
 U=a\tilde\Pi_{+}+b\tilde\Pi_{-},\qquad a,b\in\mathbb{C}^{\times}.
@@ -169,7 +169,7 @@ U\vec\Upsilon_{+-}U^{-1}=\frac{a}{b}\vec\Upsilon_{+-},\qquad
 U\vec\Upsilon_{-+}U^{-1}=\frac{b}{a}\vec\Upsilon_{-+}.
 $$
 
-The map $U\mapsto(a,b)$ is an isomorphism from the stabilizer of the family in $\mathbb{B}^{\times}$ onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The centre of $\mathbb{B}$ is $\mathbb{C}e_{t}$, and the centre of the unit group is the diagonal $a=b$. The quotient is $G$. A unit fixes a basis exactly when $a=b$, that is exactly when it is central. Two bases of the same family are conjugate by a unit, unique up to the centre.
+The map $U\mapsto(a,b)$ is an isomorphism from the stabilizer of the family in $\mathbb{B}^{\times}$ onto $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$. The centre of $\mathbb{B}$ is $\mathbb{C}e_{t}$, and the centre of the group of invertibles is the diagonal $a=b$. The quotient is $G$. An invertible element fixes a basis exactly when $a=b$, that is exactly when it is central. Two bases of the same family are conjugate by an invertible element, unique up to the centre.
 
 **Coordinates under the gauge.** With $t=t_{-}t_{+}^{-1}$,
 
@@ -214,7 +214,7 @@ $$
 
 A Peirce basis is exactly such a system. The coordinate map of §*Coordinates* sends it to the four elementary matrices, so a system of matrix units is the same data as an algebra isomorphism $\mathbb{B}\to M_{2}(\mathbb{C})$ in which the family is the standard diagonal pair.
 
-**Uniqueness up to conjugation.** Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by a unit, and the conjugating unit is unique up to the centre.
+**Uniqueness up to conjugation.** Every two systems of $2\times2$ matrix units of $\mathbb{B}$ are conjugate by an invertible element, and the conjugating unit is unique up to the centre.
 
 **Proof.** For two systems of the same family, the two bases differ by the gauge of §*The Gauge*, and that gauge is conjugation by $U=t_{+}\tilde\Pi_{+}+t_{-}\tilde\Pi_{-}$; the conjugating unit is unique up to a common scalar, that is up to the centre. For two systems of different families, pass to the matrix model. A nontrivial idempotent of $M_{2}(\mathbb{C})$ is a rank-one projection; choose a basis of $\mathbb{C}^{2}$ in which its image is the first coordinate line and its kernel the second. The projection is then $E_{11}$, and the mixed units are determined up to the diagonal torus. Every automorphism of $M_{2}(\mathbb{C})$ is inner, so the conjugation descends to $\mathbb{B}$. The centralizer of a full system of matrix units is the centre. Each system is therefore conjugate to the standard one, and any two systems are conjugate to each other; the unit is unique up to the centre.
 
@@ -280,7 +280,7 @@ with determinant $Q_{++}Q_{--}-Q_{+-}Q_{-+}=\langle\tilde Q\rangle_{\natural}$.
 
 ## Summary
 
-A Peirce basis of a nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ is a pair of nonzero mixed elements $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$ and $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$ and $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$. The diagonal elements are the idempotents and are forced. Existence is the nilpotent route: every nonzero element of one mixed line has a unique partner in the other, and the two idempotents are the two products. The bases are a $\mathbb{C}^{\times}$-torsor, equivalently the nonzero elements of one mixed line; the gauge is the reciprocal scaling, free and transitive. In the unit group the stabilizer of a basis is the centre. The Hermitian condition restricts the gauge to $U(1)$ and does not fix it. The coordinate matrix is a $2\times2$ matrix model, and its determinant is the quaternionic norm. The dimensions are $6=4+2$ real.
+A Peirce basis of a nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ is a pair of nonzero mixed elements $\vec\Upsilon_{+-}\in\mathbb{B}_{+-}$ and $\vec\Upsilon_{-+}\in\mathbb{B}_{-+}$ with $\vec\Upsilon_{+-}\vec\Upsilon_{-+}=\tilde\Pi_{+}$ and $\vec\Upsilon_{-+}\vec\Upsilon_{+-}=\tilde\Pi_{-}$. The diagonal elements are the idempotents and are forced. Existence is the nilpotent route: every nonzero element of one mixed line has a unique partner in the other, and the two idempotents are the two products. The bases are a $\mathbb{C}^{\times}$-torsor, equivalently the nonzero elements of one mixed line; the gauge is the reciprocal scaling, free and transitive. In the group of invertibles the stabilizer of a basis is the centre. The Hermitian condition restricts the gauge to $U(1)$ and does not fix it. The coordinate matrix is a $2\times2$ matrix model, and its determinant is the quaternionic norm. The dimensions are $6=4+2$ real.
 
 ## Summary of Notation
 

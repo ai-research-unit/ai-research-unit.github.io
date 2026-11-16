@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin.** That is the whole of what the coupling does to the spin fluid, and the article's work is to draw out what follows: the velocity is still a unit, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. **The charge adds a force and an angle shift; it does not add a constitutive law.**
+**The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin.** That is the whole of what the coupling does to the spin fluid, and the article's work is to draw out what follows: the velocity is still an invertible element, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. **The charge adds a force and an angle shift; it does not add a constitutive law.**
 
 **The equation.** The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
@@ -20,7 +20,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 
 *First, the connection reaches two of the four brackets and no others.* Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale bracket is a real scalar and the rotor bracket is a real vector part, and a central element can produce neither. **On the fluid's side: the momentum and the rapidity move, the density does not, and the spin does not.**
 
-*Second, the velocity is the kinetic one and it is a unit for every field.* The mass-shell identity holds for the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the word is the one the covariant wavevector names, and $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ with $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ whatever the coupling. **This is the one charged fluid whose normalisation the coupling cannot touch**, and the reason is structural: the velocity is a unit by construction and not by the equation of motion.
+*Second, the velocity is the kinetic one and it is invertible for every field.* The mass-shell identity holds for the covariant wavevector, $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, so the boost in the word is the one the covariant wavevector names, and $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ with $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ whatever the coupling. **This is the one charged fluid whose normalisation the coupling cannot touch**, and the reason is structural: the velocity is invertible by construction and not by the equation of motion.
 
 *Third, the force is the Lorentz force and there is no torque.* The coupling enters the momentum balance through the charge current and the antisymmetric part of the stress through the spin current, and the second is the free article's. So the fluid is pushed where it carries charge and is turned where its spin varies, and **the field does not turn the spin directly**; what the standard theory calls Larmor precession appears at second order, through the transport of the frame, and §*The Force, and Not the Torque* states the composition.
 
@@ -88,14 +88,14 @@ $$
 
 **In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-q\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
 
-**The velocity is a unit for every field, and this is where the spin fluid parts company with the scalar one.** Because the boost is a unit by construction and the density is a separate factor,
+**The velocity is invertible for every field, and this is where the spin fluid parts company with the scalar one.** Because the boost is invertible by construction and the density is a separate factor,
 
 $$
 \langle\tilde V_\Phi\rangle_{\natural}=-c^{2}
 \qquad\text{whatever the coupling,}
 $$
 
-and the reason is that the velocity is not the momentum over the mass but the frame itself. **In the scalar fluid the velocity was $\tilde P^{\mathrm{mech}}/m$ and was a unit only where the quantum potential vanished**, because the quantum potential changed the momentum's norm; here nothing can change the norm of a frame. The contrast is the sharpest single difference between the two charged articles: **the scalar fluid's normalisation is dynamical and the spin fluid's is kinematical.**
+and the reason is that the velocity is not the momentum over the mass but the frame itself. **In the scalar fluid the velocity was $\tilde P^{\mathrm{mech}}/m$ and was an invertible element only where the quantum potential vanished**, because the quantum potential changed the momentum's norm; here nothing can change the norm of a frame. The contrast is the sharpest single difference between the two charged articles: **the scalar fluid's normalisation is dynamical and the spin fluid's is kinematical.**
 
 **The mass shell in canonical components is the translated hyperboloid.** Expanding the identity,
 
@@ -237,7 +237,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 1. **The word is unchanged and the coupling is confined by type.** Eight parameters; the connection reaches the phase and boost brackets and not the scale or the rotor.
 2. **The density is untouched.** The gauge transformation moves the angle alone, and the scale, the rapidity, the axis and the rotor are gauge invariant by inspection.
 3. **The velocity is the kinetic one**, named by the covariant wavevector: $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-ϙ\tilde A_\Phi/\hbar$.
-4. **The velocity is a unit for every field.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.
+4. **The velocity is invertible for every field.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$; the normalisation is kinematical and the coupling cannot touch it.
 5. **The rapidity and the axis are observables.** $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, and no gauge transformation changes either.
 6. **The vorticity is the frame's gradient.** Its proper part is rank two for every solution, and it is not $ϙF/m$ for any field.
 7. **The vorticity is closed and not exact.** Closedness is the Maurer–Cartan flatness of $\Gamma$; exactness fails wherever the holonomy is non-trivial; there is still no transport law.
@@ -256,7 +256,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
 | the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
 | the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/r$ |
-| is it a unit? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
+| is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
 | the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
@@ -267,9 +267,9 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 **This article's column is the second, and it is the column in which the charge does least.** The velocity keeps its normalisation, the vorticity keeps its kind, the spin keeps its invariance and the closure keeps its underdetermination; what the charge does is shift the momentum, turn the frame, and add a force. **The reason is the type table, and the type table is the same in all three articles**: the connection is central, the central brackets are the scale and the phase, and everything a fluid does with its frame sits in the two brackets a central element cannot reach.
 
-**The row that separates this column from the scalar one is the normalisation, and it is a one-word difference.** The scalar velocity is a unit only where the quantum potential vanishes; the spin velocity is a unit wherever the word exists. **The scalar fluid's velocity is dynamical and this one's is kinematical**, and that single contrast explains why the scalar article can say "the vorticity is the field strength" and this one cannot: a velocity that is a momentum can be a gradient plus a potential, and a velocity that is a frame can only be a frame.
+**The row that separates this column from the scalar one is the normalisation, and it is a one-word difference.** The scalar velocity is invertible only where the quantum potential vanishes; the spin velocity is invertible wherever the word exists. **The scalar fluid's velocity is dynamical and this one's is kinematical**, and that single contrast explains why the scalar article can say "the vorticity is the field strength" and this one cannot: a velocity that is a momentum can be a gradient plus a potential, and a velocity that is a frame can only be a frame.
 
-**The row that separates it from the vector one is the compressibility.** The Proca fluid's expansion is fixed by its own amplitude, because its velocity is the field's direction; here the velocity is a unit and the expansion is a property of the frame's gradient, which is the free article's subject and which the coupling does not reach. **Three velocities, three expansions, and the charge reaches only one of them.**
+**The row that separates it from the vector one is the compressibility.** The Proca fluid's expansion is fixed by its own amplitude, because its velocity is the field's direction; here the velocity is invertible and the expansion is a property of the frame's gradient, which is the free article's subject and which the coupling does not reach. **Three velocities, three expansions, and the charge reaches only one of them.**
 
 ## What the Charge Does to the Correspondence
 

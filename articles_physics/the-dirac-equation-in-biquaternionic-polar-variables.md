@@ -38,7 +38,7 @@ The scalar part is real and at least one, so the factor grows instead of turning
 
 The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum.
 
-**The domain is the whole of the first qualification of this article.** In the corpus's vocabulary, an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of units, so
+**The domain is the whole of the first qualification of this article.** In the corpus's vocabulary, an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of invertibles, so
 
 $$
 \boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular},\;}
@@ -73,7 +73,7 @@ They do not name two values. The value is a letter returned by one multiplicatio
 
 *Proposition.* Let $\tilde X\neq0$ carry a definite value, that is $\tilde X\vec e_z=-i\tilde X$ or $\tilde X\vec e_z=+i\tilde X$. Then $N(\tilde X)=0$.
 
-*Proof.* The central $i$ passes through the element, so $\tilde X\vec e_z=-i\tilde X$ may be written $\tilde X\vec e_z+i\tilde X=\tilde X(\vec e_z+ie_t)=0$, and the other value gives $\tilde X(\vec e_z-ie_t)=0$. The element $\vec e_z\pm ie_t$ is not zero, so $\tilde X$ is a zero divisor. A zero divisor has $N=0$, because the units are exactly the elements of nonzero norm.
+*Proof.* The central $i$ passes through the element, so $\tilde X\vec e_z=-i\tilde X$ may be written $\tilde X\vec e_z+i\tilde X=\tilde X(\vec e_z+ie_t)=0$, and the other value gives $\tilde X(\vec e_z-ie_t)=0$. The element $\vec e_z\pm ie_t$ is not zero, so $\tilde X$ is a zero divisor. A zero divisor has $N=0$, because the invertibles are exactly the elements of nonzero norm.
 
 **What the proposition settles.** The word's domain is $N\neq0$. A part of definite value is a zero divisor, so it lies outside the domain and has no word at all. The letters therefore cannot name the two values: a split of the field into two definite-value parts would be a split into two objects on which the word is undefined. The word is stated once, for the whole element, and the two letters name its two parts.
 
@@ -94,7 +94,7 @@ The four factors and their types are those of *The Polar Decomposition of an N-R
 
 The count closes. The scale is one real number, the angle one, the boost a rapidity and a unit axis, three, and the rotor an angle and a unit axis, three. That is $1+1+3+3=8$ against four complex coefficients.
 
-**The modulus is the density and the phase, and nothing else.** The scale and the phase are one modulus, $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, and $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part. The boost and the rotor are units, $\tilde U_{\Psi,\mathrm b}^{\natural}=\tilde U_{\Psi,\mathrm b}^{-1}$ and $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$, so both cancel in the norm and
+**The modulus is the density and the phase, and nothing else.** The scale and the phase are one modulus, $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, and $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part. The boost and the rotor are invertible, $\tilde U_{\Psi,\mathrm b}^{\natural}=\tilde U_{\Psi,\mathrm b}^{-1}$ and $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$, so both cancel in the norm and
 
 $$
 N(\tilde\Xi)=r^{2}e^{2i\theta_{\mathrm{pha}}},
@@ -134,7 +134,7 @@ $$
 
 so the exponent inside the boost is half the rapidity of the frame it produces. The rapidity $\theta_{\mathrm{rpd}}$ is the kinematic one throughout: $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ are read from $\tilde U_{\Psi,\mathrm b}^{2}$ and never from $\tilde U_{\Psi,\mathrm b}$ itself. Every factor of two in this article comes from that square and from nowhere else.
 
-Two factors have norm one and two are central, and that sentence carries the whole of the next section. The two norms of the word are not a property of the four factors taken together: they are the statement that two of them are units and two are central, and the split of the four into those two pairs is where the two norms come from.
+Two factors have norm one and two are central, and that sentence carries the whole of the next section. The two norms of the word are not a property of the four factors taken together: they are the statement that two of them are invertible and two are central, and the split of the four into those two pairs is where the two norms come from.
 
 ### The Two Norms
 
@@ -161,7 +161,7 @@ The two norms read different things, and the whole of the physics of the density
 | $\tilde\Xi\tilde\Xi^{*}$ | $\rho\,\tilde U_{\Psi,\mathrm b}^{2}$ | neither | the density and the boost |
 | $\langle\tilde\Xi\rangle_{*}$ | $\gamma\rho$ | real | the density of a boosted state |
 
-**The density is the modulus of the quaternionic norm and not the square root of the Hermitian one.** The Hermitian norm is $\gamma$ times the density, so it is the density with the motion's time dilation applied. Under a Lorentz transformation, that is $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $\tilde M$ a unit, the quaternionic norm is carried into itself, because it is central, while the Hermitian norm of the transformed field is $\operatorname{Sc}(\tilde M\tilde\Xi\tilde\Xi^{*}\tilde M^{*})$, which is not the original. That is the standard situation of a field of this type: the Hermitian square is the time component of a four-vector, and only the quaternionic norm is a scalar. The word says which of the two is the scalar, and the answer is $\rho$, the modulus of the quaternionic norm.
+**The density is the modulus of the quaternionic norm and not the square root of the Hermitian one.** The Hermitian norm is $\gamma$ times the density, so it is the density with the motion's time dilation applied. Under a Lorentz transformation, that is $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $\tilde M$ an invertible element, the quaternionic norm is carried into itself, because it is central, while the Hermitian norm of the transformed field is $\operatorname{Sc}(\tilde M\tilde\Xi\tilde\Xi^{*}\tilde M^{*})$, which is not the original. That is the standard situation of a field of this type: the Hermitian square is the time component of a four-vector, and only the quaternionic norm is a scalar. The word says which of the two is the scalar, and the answer is $\rho$, the modulus of the quaternionic norm.
 
 **The factor of two in the angle is not decoration.** The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$, so every bilinear built from the norm runs at twice the rate of the field's own phase. Two consequences follow and both are used below: the density is insensitive to the sign of $\theta_{\mathrm{pha}}$, and a superposition of two branches beats at twice the difference of their angles.
 
@@ -254,7 +254,7 @@ $$
 \langle\tilde V_{\Phi}\rangle_{\natural}=i^{2}c^{2}\,\tilde U_{\Psi,\mathrm b}^{-2}\tilde U_{\Psi,\mathrm b}^{2}=-c^{2},
 $$
 
-because the natural conjugation inverts a unit. The four-velocity of the word is therefore a unit timelike element for every field, not only for a plane wave: the boost is a unit by construction and the density is a separate factor.
+because the natural conjugation inverts an invertible element. The four-velocity of the word is therefore a unit timelike element for every field, not only for a plane wave: the boost is invertible by construction and the density is a separate factor.
 
 ### The Mass Term Is the Four-Vector Factor
 
@@ -265,7 +265,7 @@ $$
 \qquad \mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}\;}
 $$
 
-and the second line is then satisfied identically, since $i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=i\,ik_m\tilde U_{\Psi,\mathrm b}^{2}(-\mathcal B_{\Psi}\tilde\Xi_{0}^{R})=k_m\tilde\Xi_{0}^{R}$, the natural conjugation leaving the central $i$ alone and inverting a unit.
+and the second line is then satisfied identically, since $i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0}^{L}=i\,ik_m\tilde U_{\Psi,\mathrm b}^{2}(-\mathcal B_{\Psi}\tilde\Xi_{0}^{R})=k_m\tilde\Xi_{0}^{R}$, the natural conjugation leaving the central $i$ alone and inverting an invertible element.
 
 **What the display says.** The relation between the two parts carries no $k_m$. The scalar cancels against the momentum it multiplies, and what is left is the frame factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$. In this chart the mass term is an operator on the parts and not a number written in front of them, and the operator is the four-vector factor that the velocity also carries.
 
@@ -287,7 +287,7 @@ The third relation of the momentum-space system is the dispersion relation, and 
 
 **What the proposition says.** The mass shell is the statement that the four-wavevector divided by $k_m$ is a unit element, that is, the image of the time axis under a Lorentz transformation. In the word, with $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, it holds identically.
 
-**The strongest objection.** The proposition is a restatement and not a result. Its hypothesis defines $\tilde K_{\Phi}$ as $ik_m$ times a unit, so the two halves of the hypothesis are the same half, and the conclusion repeats the definition. The objection is correct, and the article claims no more than the identity: what the proposition fixes is the direction of the reading, since the same line can be read from the momentum to the frame or from the frame to the momentum.
+**The strongest objection.** The proposition is a restatement and not a result. Its hypothesis defines $\tilde K_{\Phi}$ as $ik_m$ times an invertible element, so the two halves of the hypothesis are the same half, and the conclusion repeats the definition. The objection is correct, and the article claims no more than the identity: what the proposition fixes is the direction of the reading, since the same line can be read from the momentum to the frame or from the frame to the momentum.
 
 **What is standard in it.** The geometric content is the textbook one. The normalized four-momentum $\tilde P_{\Phi}/(mc)$ is a point of the unit hyperboloid, that hyperboloid is the Lorentz orbit of the time axis, and in the spinor language the orbit is the space of boosts. The corpus names a point of that orbit by an element of the algebra. The naming is its own and the orbit is not.
 
@@ -388,7 +388,7 @@ Three statements are worth separating, because they are easily run together.
 
 **The field is not zero.** $N=0$ says nothing about the density. Measured on the cone, the Hermitian norm $\operatorname{Sc}(\tilde\Xi\tilde\Xi^{*})$ is positive and of order one. What vanishes is the quaternionic norm, and with it the scale of the word.
 
-**Masslessness does not put the field on the cone.** The pieces of a massless field are one-sided, and each piece is a zero divisor. The sum generally is not: with the two pieces taken from the two kernels of the gradient, the sum is a unit and the cross term is what carries the nonzero norm. A massless field with both parts therefore has a polar word, and a one-sided field has none. The word's failure tracks the parts of the field and not its mass. This is the same cross term that *The Hamilton Pairing* records in the mass of a sum, seen from the side of the domain.
+**Masslessness does not put the field on the cone.** The pieces of a massless field are one-sided, and each piece is a zero divisor. The sum generally is not: with the two pieces taken from the two kernels of the gradient, the sum is invertible and the cross term is what carries the nonzero norm. A massless field with both parts therefore has a polar word, and a one-sided field has none. The word's failure tracks the parts of the field and not its mass. This is the same cross term that *The Hamilton Pairing* records in the mass of a sum, seen from the side of the domain.
 
 **The equation does not stop.** What fails is the parametrisation and not the physics. The pair, the current and the spin are equations on the element and need no word. What is lost is the reading of the element in eight named coordinates.
 
@@ -398,7 +398,7 @@ A two-factor decomposition survives, and it is worth a paragraph because it is o
 
 Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry; off the cone the second factor is unitary and on the cone it is not. The Hermitian factor loses rank and the isometry loses unitarity, and the two statements are one statement. This is the matrix polar decomposition, and it is defined on every element (*The Polar Decomposition of an N-Degenerate Biquaternion*).
 
-So the contrast is not that the word exists off the cone and nothing exists on it. It is that the two-factor decomposition is available always and the four-factor word only on the units, because the word is a parametrisation of the group of units. The two answer different questions — *what is this element, as a positive factor times an isometry* against *which unit is this* — and only the second needs a unit.
+So the contrast is not that the word exists off the cone and nothing exists on it. It is that the two-factor decomposition is available always and the four-factor word only on the units, because the word is a parametrisation of the group of invertibles. The two answer different questions — *what is this element, as a positive factor times an isometry* against *which unit is this* — and only the second needs an invertible element.
 
 ### The Boundary Value
 
@@ -488,7 +488,7 @@ The mass term is a frame factor, and its scale is the scalar $k_m$. In polar var
 
 The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.
 
-The word fails on the zero divisors and nowhere else, that is on the $N$-degenerate elements and on no others. Two families lie there: the parts of definite value, and the one-sided plane waves, each by the one line that a nonzero element annihilated by, or annihilating, a nonzero element is a zero divisor. This is not the nodal set: a one-sided plane wave is nowhere zero and has $N=0$ everywhere. Masslessness does not put the field on the cone, because the sum of two one-sided parts is generally a unit and the cross term carries the norm. What survives on the cone is the two-factor decomposition, not the four-factor word.
+The word fails on the zero divisors and nowhere else, that is on the $N$-degenerate elements and on no others. Two families lie there: the parts of definite value, and the one-sided plane waves, each by the one line that a nonzero element annihilated by, or annihilating, a nonzero element is a zero divisor. This is not the nodal set: a one-sided plane wave is nowhere zero and has $N=0$ everywhere. Masslessness does not put the field on the cone, because the sum of two one-sided parts is generally an invertible element and the cross term carries the norm. What survives on the cone is the two-factor decomposition, not the four-factor word.
 
 ## Summary of Notation
 
@@ -533,4 +533,4 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the Dirac equation, its current and the structure the pair reproduces.
 - Claude Daviau, "Équations de Dirac et de Maxwell en algèbre de Clifford," *Annales de la Fondation Louis de Broglie* **39** (2014), for a field read as an element with eight real parameters, which is the count this article uses.
 
-- The companion articles: [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same word applied to the non-relativistic equation; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the scalar relativistic equation; [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word; [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form, the sign $\varepsilon$ and the rigidity constraint of $\Sigma_{10}$; and [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.
+- The companion articles: [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same word applied to the non-relativistic equation; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the scalar relativistic equation; [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word; [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form, the sign $\varepsilon$ and the rigidity constraint of $\Sigma_{10}$; and [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.

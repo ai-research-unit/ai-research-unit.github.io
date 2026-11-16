@@ -8,7 +8,7 @@ $$
 h \longmapsto h_{C}, \qquad h_{C}(x,y) = h(Cx, Cy) \qquad (C \text{ invertible}),
 $$
 
-of the group of units of the algebra on the set of the forms of the layer. The action is the congruence action, its orbits are the **congruence classes**, and its **stabiliser** of $h$ is exactly the unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form*. This article proves the last statement and organises the classification that the action produces.
+of the group of invertibles of the algebra on the set of the forms of the layer. The action is the congruence action, its orbits are the **congruence classes**, and its **stabiliser** of $h$ is exactly the unitary group $\mathrm{U}(A,h)$ of *Isometries and the Unitary Group of a Form*. This article proves the last statement and organises the classification that the action produces.
 
 The substance is threefold. The Gram matrix of $h_{C}$ in a basis is $C^{\dagger}GC$, the transform of the Gram matrix of $h$; the determinant is multiplied by a norm, so the non-degeneracy and the rank are invariants of the class. The stabiliser of $h$ is the unitary group, because the equation $h(Cx,Cy) = h(x,y)$ is the isometry equation and nothing else. And the classification of the classes is the classical classification of the forms: over $\mathbb{R}$ the complete invariant is the signature (Sylvester's law of inertia), over $\mathbb{C}$ it is the signature for a Hermitian form and the rank for a complex bilinear form, and over a general field with an involution it is the Witt class, whose group is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint* and *Witt's Theorems*.
 
@@ -18,7 +18,7 @@ The matrix equations are those of *Isometries and Unitary Operators of a Form*; 
 
 **Definition.** For an invertible operator $C$ the **congruent form** of $h$ is $h_{C}(x,y) = h(Cx, Cy)$; the set $\{h_{C} : C$ invertible$\}$ is the congruence class of $h$, and its stabiliser is the **stabiliser** of $h$, $\operatorname{Stab}(h) = \{C \text{ invertible} : h_{C} = h\}$.
 
-**Proposition.** The form $h_{C}$ is $\varsigma$-sesquilinear and Hermitian whenever $h$ is, the assignment $C \mapsto h_{C}$ is a right action of the group of the units, $h_{CD} = (h_{D})_{C}$, and the non-degeneracy is preserved.
+**Proposition.** The form $h_{C}$ is $\varsigma$-sesquilinear and Hermitian whenever $h$ is, the assignment $C \mapsto h_{C}$ is a right action of the group of the invertibles, $h_{CD} = (h_{D})_{C}$, and the non-degeneracy is preserved.
 
 **Proof.** Sesquilinearity: $h_{C}(\lambda x, y) = h(C(\lambda x), Cy) = h(\lambda Cx, Cy) = \lambda h_{C}(x,y)$, and the same on the right. Hermitian: $h_{C}(y,x) = h(Cy,Cx) = \varsigma(h(Cx,Cy)) = \varsigma(h_{C}(x,y))$. The action: $h_{CD}(x,y) = h(CDx,CDy) = h_{D}(Cx,Cy) = (h_{D})_{C}(x,y)$. Non-degeneracy: if $h_{C}(x,y) = 0$ for every $y$ then $h(Cx, Cy) = 0$ for every $y$, and $C$ being onto, $h(Cx, z) = 0$ for every $z$, so $Cx = 0$ and $x = 0$.
 
@@ -42,7 +42,7 @@ $$
 
 **Proof.** The two defining conditions are the same equation; the elements of the left-hand set are the invertible isometries of $h$, which is the unitary group by *Isometries and the Unitary Group of a Form*. In the multiplication reading the condition is $C^{\dagger}GC = G$ of *Isometries and Unitary Operators of a Form*, which is the same equation in coordinates.
 
-**Corollary.** The congruence action is transitive on the forms of a fixed signature and free on the classes up to the stabiliser; the class of $h$ is the quotient of the group of units by $\mathrm{U}(A,h)$, and the conjugates of the unitary group along the class are the unitary groups of the congruent forms:
+**Corollary.** The congruence action is transitive on the forms of a fixed signature and free on the classes up to the stabiliser; the class of $h$ is the quotient of the group of invertibles by $\mathrm{U}(A,h)$, and the conjugates of the unitary group along the class are the unitary groups of the congruent forms:
 
 $$
 \mathrm{U}(A,h_{C}) = C^{-1}\,\mathrm{U}(A,h)\,C .

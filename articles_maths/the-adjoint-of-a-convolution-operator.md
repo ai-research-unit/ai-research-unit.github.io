@@ -49,7 +49,7 @@ whose image is a `*`-subalgebra; the map $f\mapsto C_f$ is the left regular repr
 
 **Theorem (the involution is not the inverse).** The adjoint $C_f^* = C_{f^*}$ is convolution by the involution, not by the inverse; the two agree, $C_f^* = C_{f}^{-1}$, exactly when $f$ is a unitary element of $L^1(G)$, and in the group algebra of a non-discrete group there are no unitary elements, so the identity is the only self-adjoint element with unitary convolution operator.
 
-**Proof.** $C_f^* = C_{f^*}$ and $C_f^{-1} = C_{f^{-1}}$ for a unit $f$; they agree exactly when $f^* = f^{-1}$, which is the definition of a unitary element. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*.
+**Proof.** $C_f^* = C_{f^*}$ and $C_f^{-1} = C_{f^{-1}}$ for an invertible element $f$; they agree exactly when $f^* = f^{-1}$, which is the definition of a unitary element. The absence of unitary elements on a non-discrete $L^1(G)$ is *The Group Algebra as an Involutive Algebra*.
 
 ## The Measure Case and the $L^{n}$ Picture
 

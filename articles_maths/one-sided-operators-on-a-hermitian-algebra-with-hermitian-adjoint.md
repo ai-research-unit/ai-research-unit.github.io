@@ -19,7 +19,7 @@ $$
 \Lambda^{\mathrm{J}}_x(y) = \mathrm{J}(x)\,y, \qquad \qquad \mathrm P^{c}_x(y) = y\,c(x).
 $$
 
-With $\mathrm{J} = \mathrm{id}$ and $\mathrm{J} = \alpha$ this gives the left multiplications $L_x$ and the signed left multiplication $L_{\alpha(x)}$; with $c = \mathrm{id}$, $c = r$, $c = \bar\cdot$ and $c = {}^{\dagger}$ it gives the right multiplications $R_x$, $R_{x^{r}}$, $R_{x^{\natural}}$ and $R_{x^{\dagger}}$. The inverse variants $y\mapsto y\,x^{-1}$ are defined on the units.
+With $\mathrm{J} = \mathrm{id}$ and $\mathrm{J} = \alpha$ this gives the left multiplications $L_x$ and the signed left multiplication $L_{\alpha(x)}$; with $c = \mathrm{id}$, $c = r$, $c = \bar\cdot$ and $c = {}^{\dagger}$ it gives the right multiplications $R_x$, $R_{x^{r}}$, $R_{x^{\natural}}$ and $R_{x^{\dagger}}$. The inverse variants $y\mapsto y\,x^{-1}$ are defined on the invertibles.
 
 **Proposition (composition laws).** Both families are multiplicative with the same order:
 
@@ -155,7 +155,7 @@ $$
 L_{e_1}^{*} = -L_{e_1}, \qquad L_{e_1}^{2} = \mathrm{id},
 $$
 
-an anti-self-adjoint involution; it is not unitary, and its action on the form reverses the sign, $(L_{e_1}x, L_{e_1}y) = -(x,y)$, because $e_1^{\dagger}e_1 = -e_1^{2} = -1$. The same vector is a unit of $\Gamma(V,\mathfrak{Q})$ with norm $1$ and gives an honest reflection on $V$, so the one-sided operator and the two-sided operator divide the labour: the two-sided signed inner conjugation by $e_1$ is the reflection, while the one-sided $L_{e_1}$ is an anti-self-adjoint involution of the whole algebra that reverses the sign of the Hermitian form.
+an anti-self-adjoint involution; it is not unitary, and its action on the form reverses the sign, $(L_{e_1}x, L_{e_1}y) = -(x,y)$, because $e_1^{\dagger}e_1 = -e_1^{2} = -1$. The same vector is invertible in $\Gamma(V,\mathfrak{Q})$ with norm $1$ and gives an honest reflection on $V$, so the one-sided operator and the two-sided operator divide the labour: the two-sided signed inner conjugation by $e_1$ is the reflection, while the one-sided $L_{e_1}$ is an anti-self-adjoint involution of the whole algebra that reverses the sign of the Hermitian form.
 
 ## Summary
 

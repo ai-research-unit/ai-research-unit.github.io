@@ -5,7 +5,7 @@
 
 This article studies the family of operators on the algebra of arithmetic functions that are given by Dirichlet convolution with a fixed function. For $h$ in the algebra the operator $M_h$ sends $f$ to $h*f$, and on the side of Dirichlet series it turns $L(f,s)$ into the product $L(h,s)L(f,s)$: it is exactly the operation of multiplying an $L$-function by the $L$-function of $h$. The family is a representation of the algebra, $M_hM_g=M_{h*g}$, and it is faithful, so the operators realise the multiplicative structure of *Analytic Number Theory* on the Hilbert space of coefficients. The two questions this article answers are when $M_h$ is bounded, invertible or unitary on the form of the category, and how the Euler factors and the functional equation appear as operators in the same family.
 
-The conventions are those fixed for the category. The algebra of arithmetic functions is denoted $\mathcal{A}$, with Dirichlet convolution $*$, identity $\varepsilon$, and unit group $\mathcal{A}^{\times}=\{h:h(1)\ne0\}$. The form of the category is
+The conventions are those fixed for the category. The algebra of arithmetic functions is denoted $\mathcal{A}$, with Dirichlet convolution $*$, identity $\varepsilon$, and group of invertibles $\mathcal{A}^{\times}=\{h:h(1)\ne0\}$. The form of the category is
 $$
 \langle f,g\rangle = \sum_{n\ge1}f(n)\overline{g(n)}, \qquad \mathcal{H}=\ell^2(\mathbb{N}_{>0};\mathbb{C}),
 $$

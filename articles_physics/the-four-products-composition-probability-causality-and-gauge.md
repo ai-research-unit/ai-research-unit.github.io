@@ -230,7 +230,7 @@ $$
 \tilde Q\in\mathbb{B}^{\times}\iff\langle\tilde Q\rangle_{\natural}\neq0 .
 $$
 
-**The wall is not empty and it is not thin in the physical sense.** $e_t+i\vec e_x$ is a zero divisor of norm zero, and the plane wave of a null field sits on that cone; $e_t+\vec e_x$ is a unit whose plain form is zero, so the composition's own quadratic form does not decide invertibility. The criterion is the norm of the causal product, not the form of this one, and the two must not be exchanged.
+**The wall is not empty and it is not thin in the physical sense.** $e_t+i\vec e_x$ is a zero divisor of norm zero, and the plane wave of a null field sits on that cone; $e_t+\vec e_x$ is invertible whose plain form is zero, so the composition's own quadratic form does not decide invertibility. The criterion is the norm of the causal product, not the form of this one, and the two must not be exchanged.
 
 **The boundary.** The product is a composition of elements, not a dynamics. No equation of motion, no field and no quantisation is derived here.
 
@@ -333,7 +333,7 @@ $$
 \langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
 $$
 
-so the causal type of a composite is the product of the causal types. The units, the zero divisors and the null set are each closed under multiplication.
+so the causal type of a composite is the product of the causal types. The invertibles, the zero divisors and the null set are each closed under multiplication.
 
 **The product is not associative, and the norm does not notice.** The composite of three causal operations depends on the bracket, while its interval is the product of the three intervals whatever the bracket. **The causal type composes even though the causal operation does not associate,** and that separation is the reason the interval can be an invariant of a theory whose operations do not compose.
 
@@ -420,7 +420,7 @@ $$
 
 **The boundary.** The twelve are the operations of the complex space. A real form carries ten of them, and every statement of the source articles is a statement about the complex space unless it says otherwise.
 
-### I.6.m — In the Gauge Band an Idempotent Is a Unit
+### I.6.m — In the Gauge Band an Idempotent Is Invertible
 
 **Read:** the equation $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ is relative to the product, so the word *idempotent* names a different set in each band; and in one of them the elements of that set are invertible.
 
@@ -432,7 +432,7 @@ $$
 
 which is $\tilde\Pi_d^{\natural}\tilde\Pi_d^{*}=\tilde\Pi_d$: its two conjugates coincide, $\tilde\Pi_d^{\natural}=\tilde\Pi_d^{*}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u$, and the square of that element is $\tilde\Pi_d$ itself. The family is written about the point $-\tfrac12e_t$ and not about $\tfrac12e_t$, and it lies in the real quaternion layer $\mathbb{B}_{H}$.
 
-**Its elements are units of the algebra.** The plain square is the conjugate, not the element itself,
+**Its elements are invertible in the algebra.** The plain square is the conjugate, not the element itself,
 
 $$
 \tilde\Pi_d^{2}=-\tfrac12e_t-\tfrac{\sqrt3}{2}\vec u=\tilde\Pi_d^{\natural},
@@ -474,7 +474,7 @@ so $\tilde\Pi_d$ has inverse $\tilde\Pi_d^{\natural}$ and is not a zero divisor.
 - The two central symmetrisations have no vector part, which is why the parent and its antisymmetric half share a vector part in those two families; the twelve vector parts fall into nine classes.
 - Exactly two of the twelve satisfy a classical identity, the Jordan product and the Lie bracket of the plain product, and they exist because the plain product is the only associative parent.
 - The Jacobi failures count $252$, $144$ and $72$ triples; the Jordan failures count $7$, $6$ and $4$ elements; the sparsest Jacobi failure needs a complex witness.
-- An idempotent belongs to a band: the gauge band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are units of the algebra, and their complement is not one of them, so the pair reading does not reach that band.
+- An idempotent belongs to a band: the gauge band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are invertible in the algebra, and their complement is not one of them, so the pair reading does not reach that band.
 - The grid is a grid of products on $\mathbb{B}$, so entanglement is not a fifth row: a shared state is an element of $\mathbb{B}\otimes\mathbb{B}$ and the partial trace is a map on the tensor square.
 - The four forms have signatures $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
 - Probability is the only definite form, and its product has no clock: the central element squares to $+e_t$, there is no nilpotent of index two, and the cone appears at the third power.

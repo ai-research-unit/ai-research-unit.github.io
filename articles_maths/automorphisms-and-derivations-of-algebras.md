@@ -21,7 +21,7 @@ for all $x, y \in A$. The set of all such maps is a group under composition, wri
 
 **Proposition.** Every algebra automorphism maps the centre onto itself, and it preserves idempotents, units, zero divisors and the lattice of two-sided ideals.
 
-*Proof.* The centre statement is proved in *Centre, Units, Zero Divisors and Division Algebras*: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is a unit then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$.
+*Proof.* The centre statement is proved in *Centre, Invertibles, Zero Divisors and Division Algebras*: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is invertible then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$.
 
 ### Inner Automorphisms
 
@@ -31,7 +31,7 @@ $$
 \iota_u(x) = uxu^{-1}, \qquad x \in A.
 $$
 
-**Proposition.** For every unit $u$, the map $\iota_u$ is an algebra automorphism, and
+**Proposition.** For every invertible $u$, the map $\iota_u$ is an algebra automorphism, and
 
 $$
 \iota_u \circ \iota_v = \iota_{uv}, \qquad \iota_u^{-1} = \iota_{u^{-1}}, \qquad \iota_1 = \mathrm{id}.
@@ -53,7 +53,7 @@ $$
 \boxed{\;\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times\;}.
 $$
 
-*Proof.* The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.
+*Proof.* The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ an invertible element this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.
 
 **Proposition.** $\operatorname{Inn}_R(A)$ is a normal subgroup of $\operatorname{Aut}_R(A)$, and for $\sigma \in \operatorname{Aut}_R(A)$,
 
@@ -61,7 +61,7 @@ $$
 \sigma \circ \iota_u \circ \sigma^{-1} = \iota_{\sigma(u)}.
 $$
 
-*Proof.* Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is a unit, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality.
+*Proof.* Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is invertible, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality.
 
 **Definition.** The **outer automorphism group** is the quotient
 
@@ -195,7 +195,7 @@ Associativity of $A$ is needed in the displayed expansion, at the point where th
 
 **Example.** $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$: a derivation of a field extension vanishes on the ground field and, for $\mathbb{C}$, is forced to vanish on $i$ by $0 = \delta(i^2) = 2i\,\delta(i)$. More generally $\operatorname{Der}_K(K) = 0$ for any field $K$ and ground field $K$ itself.
 
-**Example (the split complex numbers revisited).** $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is a unit, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}_{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}_{\mathrm{dln}}$ has both.
+**Example (the split complex numbers revisited).** $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is invertible, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}_{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}_{\mathrm{dln}}$ has both.
 
 ### Inner Derivations
 
@@ -287,7 +287,7 @@ The same identity applied to $\exp(-\delta)$, together with the commutativity of
 
 The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\varphi_t$ of automorphisms with $\varphi_0 = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.
 
-**Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then
+**Theorem (inner derivations exponentiate to inner automorphisms).** Let $a \in A$ and suppose $\exp(a)$ is invertible in $A$. Then
 
 $$
 \boxed{\;\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a)\;}.
@@ -322,8 +322,8 @@ An algebra automorphism preserves the product and nothing more; a length or an a
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 | $A$ | $R$-algebra, unital and associative where stated |
 | $\operatorname{Aut}_R(A)$ | Group of $R$-algebra automorphisms of $A$ |
-| $A^\times$ | Group of units of $A$ |
-| $\iota_u(x) = uxu^{-1}$ | Inner automorphism by a unit $u$ |
+| $A^\times$ | Group of invertibles of $A$ |
+| $\iota_u(x) = uxu^{-1}$ | Inner automorphism by an invertible element $u$ |
 | $\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$ | Group of inner automorphisms |
 | $\operatorname{Out}_R(A)$ | Outer automorphism group, $\operatorname{Aut}_R/\operatorname{Inn}_R$ |
 | $Z(A)$ | Centre of $A$ |

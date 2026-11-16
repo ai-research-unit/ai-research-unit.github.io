@@ -191,7 +191,7 @@ $$
 
 a complex surface, and the ideal $\mathbb{B}\Pi_u$ depends only on the kernel line of $\Pi_u$. Two idempotents with distinct kernels give complementary ideals, so a splitting is an unordered pair of distinct points of $\mathbb{P}^{1}$.
 
-**No splitting is canonical.** The automorphisms of the module are the right multiplications by units, and they move the pairs of points transitively. The Peirce pair and the tensor split of the Pauli display are the same splitting, written twice.
+**No splitting is canonical.** The automorphisms of the module are the right multiplications by invertibles, and they move the pairs of points transitively. The Peirce pair and the tensor split of the Pauli display are the same splitting, written twice.
 
 **The module carries a form and a swap instead.**
 
@@ -215,7 +215,7 @@ the middle layer being a projective line of pairwise incomparable ideals, each m
 
 **The parameter is the kernel line, not the image line.** The left ideals are indexed by $\ker\tilde\Pi$ and the right ideals by $\operatorname{im}\tilde\Pi$, and applying the image criterion to the left family is the standard error.
 
-**The units act on the line by Möbius transformations.**
+**The invertibles act on the line by Möbius transformations.**
 
 $$
 \tilde Q\cdot[\zeta]=[P\zeta],\qquad z'=\frac{az+b}{cz+d},\qquad \mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B}).
@@ -361,13 +361,13 @@ so $a$ is invariant and $c$ is not; the vanishing of $c$ is invariant, since $c=
 
 ### I.4.j — The Line of Polarizations Is the Celestial Sphere
 
-**Read:** the minimal left ideals are indexed by the kernel lines, the index set is a projective line, and the units act on it by Möbius transformations through $PGL_2(\mathbb{C})$.
+**Read:** the minimal left ideals are indexed by the kernel lines, the index set is a projective line, and the invertibles act on it by Möbius transformations through $PGL_2(\mathbb{C})$.
 
 $$
 \mathbb{B}^{\times}/\mathbb{C}^{\times}e_t\cong PGL_2(\mathbb{C})\cong\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong SO^{+}(1,3).
 $$
 
-**The group that acts is the Lorentz group.** The quotient of the units by the scalars is the automorphism group of the algebra, and the automorphism group is the proper orthochronous Lorentz group acting by inner automorphisms. A projective line with a transitive Möbius action of that group is the sphere of null directions.
+**The group that acts is the Lorentz group.** The quotient of the invertibles by the scalars is the automorphism group of the algebra, and the automorphism group is the proper orthochronous Lorentz group acting by inner automorphisms. A projective line with a transitive Möbius action of that group is the sphere of null directions.
 
 **The physical reading is that a polarization is a null direction.** A minimal left ideal names a line in the defining module, and a Lorentz transformation moves that line by a Möbius map. So choosing a spin frame is choosing a point of the celestial sphere, and the family of spin frames is the sphere itself, not a discrete set.
 
@@ -417,7 +417,7 @@ $$
 - A spinor has an intrinsic diagonal coefficient and an intrinsic nilpotent part; the mixed coordinate is gauge-dependent.
 - The two nilpotents are two square-zero steps, and the ladder has two rungs because the carrier has two lines.
 - The module carries an indefinite bilinear form and a canonical swap, and no positivity: the Hermitian form is a second structure.
-- The units act on the line of polarizations by Möbius transformations through $PGL_2(\mathbb{C})$, transitively, with a Borel stabiliser.
+- The invertibles act on the line of polarizations by Möbius transformations through $PGL_2(\mathbb{C})$, transitively, with a Borel stabiliser.
 - The module category contains no biquaternion physics beyond the doubling; the content lies in the forms, the norms and the real structure.
 
 ## Summary of Notation
@@ -446,4 +446,4 @@ $$
 
 **In this category.** *The Idempotents, the Ideals and the Observables* constructs the minimal left ideal that this entry names as a carrier. *The Spectrum and the Two Modes* asks what an element does to a carrier it does not preserve. *The Four Forms and the Four Norms* supplies the positivity that this entry shows the plain product cannot supply.
 
-**The sources of this entry.** [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html) is the case where the carrier is a minimal left ideal, with the one-sidedness of the operator and the two dimensions as the whole content. [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html) sets the module structure beside the probability structure on one carrier and shows that the algebra's own form is degenerate there. [The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module](the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) is the boundary case, where the missing one-dimensional module is proved missing. [Biquaternion Physical Interpretation of Operator Chirality](biquaternion-physical-interpretation-of-operator-chirality.html) treats the swap and the chirality operator at length.
+**The sources of this entry.** [The Carrier of the Dirac Field](the-carrier-of-the-dirac-field.html) is the case where the carrier is a minimal left ideal, with the one-sidedness of the operator and the two dimensions as the whole content. [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) sets the module structure beside the probability structure on one carrier and shows that the algebra's own form is degenerate there. [The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module](the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html) is the boundary case, where the missing one-dimensional module is proved missing. [Biquaternion Physical Interpretation of Operator Chirality](biquaternion-physical-interpretation-of-operator-chirality.html) treats the swap and the chirality operator at length.

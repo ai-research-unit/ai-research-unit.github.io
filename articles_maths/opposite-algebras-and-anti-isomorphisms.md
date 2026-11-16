@@ -6,7 +6,7 @@ Every algebra has a mirror image, the **opposite algebra** $A_{\mathrm{opp}}$, o
 
 This article develops the opposite algebra as a construction, with its functoriality and its behaviour under the tensor product, the group algebra and the matrix algebra; the anti-isomorphisms onto it, with the calculus of composition that turns two anti-maps into a map; and the place of the involution as the special anti-isomorphism of order two. The notion of an involution, the symmetric and the anti-Hermitian elements and their Lie and Jordan structures are the subject of *Involutive Algebras*, and they are cited rather than restated.
 
-Throughout, $k$ is a field, $A$ and $B$ are unital associative $k$-algebras, and the unit is $1$; the opposite algebra is written $A_{\mathrm{opp}}$, and the element $a$ of $A$, viewed in $A_{\mathrm{opp}}$, is written $a_{\mathrm{opp}}$ when the two algebras are being compared. The tensor products are over $k$, and $\operatorname{End}$ means $\operatorname{End}_k$. The algebras, the ideals and the centre are those of *Algebras*, *Ideals and Quotients of Algebras* and *Centre, Units, Zero Divisors and Division Algebras*; the modules are those of *Modules over an Algebra* and the tensor products those of *Tensor Products of Algebras*.
+Throughout, $k$ is a field, $A$ and $B$ are unital associative $k$-algebras, and the unit is $1$; the opposite algebra is written $A_{\mathrm{opp}}$, and the element $a$ of $A$, viewed in $A_{\mathrm{opp}}$, is written $a_{\mathrm{opp}}$ when the two algebras are being compared. The tensor products are over $k$, and $\operatorname{End}$ means $\operatorname{End}_k$. The algebras, the ideals and the centre are those of *Algebras*, *Ideals and Quotients of Algebras* and *Centre, Invertibles, Zero Divisors and Division Algebras*; the modules are those of *Modules over an Algebra* and the tensor products those of *Tensor Products of Algebras*.
 
 ## The Opposite Algebra
 
@@ -42,7 +42,7 @@ The opposite algebra is introduced with the object in *Algebras*; the definition
 
 **(e)** for ideals $I \subseteq A$ the set $I$ is a two-sided ideal of $A_{\mathrm{opp}}$, and $(A/I)_{\mathrm{opp}} = A_{\mathrm{opp}}/I$.
 
-*Proof.* (a) Reversing the product twice restores it, and the two maps are inverse bijections. (b) The associativity of $A_{\mathrm{opp}}$ is the associativity of $A$ read in the reverse order, and the unit is unaffected; $z$ commutes with every $a$ in $A_{\mathrm{opp}}$ exactly when $az = za$ in $A$, which is the centre. (c) $A_{\mathrm{opp}} = A$ says $ab = ba$ for every pair, which is commutativity. (d) A bijective map reverses the product exactly when it carries the unit to the unit and preserves invertibility with the inverse reversed; the group of units of the opposite algebra is the opposite group of $A^\times$ because the product is reversed. (e) An ideal is closed under multiplication on both sides by every element, a property symmetric in the order of the two factors, so it is again an ideal in $A_{\mathrm{opp}}$; the quotient product is reversed.
+*Proof.* (a) Reversing the product twice restores it, and the two maps are inverse bijections. (b) The associativity of $A_{\mathrm{opp}}$ is the associativity of $A$ read in the reverse order, and the unit is unaffected; $z$ commutes with every $a$ in $A_{\mathrm{opp}}$ exactly when $az = za$ in $A$, which is the centre. (c) $A_{\mathrm{opp}} = A$ says $ab = ba$ for every pair, which is commutativity. (d) A bijective map reverses the product exactly when it carries the unit to the unit and preserves invertibility with the inverse reversed; the group of invertibles of the opposite algebra is the opposite group of $A^\times$ because the product is reversed. (e) An ideal is closed under multiplication on both sides by every element, a property symmetric in the order of the two factors, so it is again an ideal in $A_{\mathrm{opp}}$; the quotient product is reversed.
 
 **Corollary.** Every algebra is anti-isomorphic to its opposite, and the anti-isomorphism $\iota_A$ is canonical. The algebras $A$ and $A_{\mathrm{opp}}$ therefore have the same dimension, the same centre and the same lattice of two-sided ideals, and are either equal (when $A$ is commutative) or distinct as subalgebras of a common ambient algebra (when $A$ is not).
 
@@ -136,11 +136,11 @@ The definition is the one of *Involutive Algebras*, where the involution and its
 
 **Example.** On $M_n(k)$ the transpose is an involution. On $k[G]$ the inversion $g \mapsto g^{-1}$ extends to an anti-automorphism, and it is an involution exactly when every element of $G$ has order dividing two; otherwise it is an anti-automorphism of infinite order, and the group algebra may or may not carry an involution of order two.
 
-## The Centre, the Units and the Ideals of the Opposite
+## The Centre, the Invertibles and the Ideals of the Opposite
 
-**Proposition.** The centre, the group of units, the radical and the lattice of two-sided ideals of $A_{\mathrm{opp}}$ are those of $A$; the simple quotients of $A_{\mathrm{opp}}$ are the opposites of the simple quotients of $A$, and $A$ is simple if and only if $A_{\mathrm{opp}}$ is.
+**Proposition.** The centre, the group of invertibles, the radical and the lattice of two-sided ideals of $A_{\mathrm{opp}}$ are those of $A$; the simple quotients of $A_{\mathrm{opp}}$ are the opposites of the simple quotients of $A$, and $A$ is simple if and only if $A_{\mathrm{opp}}$ is.
 
-*Proof.* The centre and the ideals were settled above; the units form the opposite group. A two-sided ideal $I$ is maximal exactly when $A/I$ is simple, and $(A/I)_{\mathrm{opp}} = A_{\mathrm{opp}}/I$; a ring is simple exactly when its opposite is, because the lattice of two-sided ideals is the same.
+*Proof.* The centre and the ideals were settled above; the invertibles form the opposite group. A two-sided ideal $I$ is maximal exactly when $A/I$ is simple, and $(A/I)_{\mathrm{opp}} = A_{\mathrm{opp}}/I$; a ring is simple exactly when its opposite is, because the lattice of two-sided ideals is the same.
 
 **Corollary (central simple algebras).** If $A$ is central simple over $k$, then so is $A_{\mathrm{opp}}$, and the two are related by the Brauer group: the class of $A_{\mathrm{opp}}$ is the inverse of the class of $A$ in $\operatorname{Br}(k)$, as in *Central Simple Algebras and the Brauer Group*. In particular $A \cong A_{\mathrm{opp}}$ for every central simple algebra, and the isomorphism can be chosen of order two when $A$ is a matrix algebra.
 

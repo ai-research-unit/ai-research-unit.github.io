@@ -15,7 +15,7 @@ This article defines Huber rings, continuous valuations, the adic spectrum and i
 
 ### Huber Rings
 
-**Definition.** A topological ring $A$ is a **Huber ring** (or **f-adic ring**) if there is an open subring $A_0 \subseteq A$ and a finitely generated ideal $I \subseteq A_0$ such that the sets $I^n$ form a fundamental system of neighbourhoods of $0$ in $A_0$, with the topology on $A_0$ the subspace topology from $A$. The subring $A_0$ is a **ring of definition**. A Huber ring is **uniform** if its subring $A^\circ$ of power-bounded elements is bounded; and **Tate** if it contains an element $t$ which is a unit and topologically nilpotent.
+**Definition.** A topological ring $A$ is a **Huber ring** (or **f-adic ring**) if there is an open subring $A_0 \subseteq A$ and a finitely generated ideal $I \subseteq A_0$ such that the sets $I^n$ form a fundamental system of neighbourhoods of $0$ in $A_0$, with the topology on $A_0$ the subspace topology from $A$. The subring $A_0$ is a **ring of definition**. A Huber ring is **uniform** if its subring $A^\circ$ of power-bounded elements is bounded; and **Tate** if it contains an element $t$ which is invertible and topologically nilpotent.
 
 **Example (affinoid algebras are Tate).** A $K$-affinoid algebra $A$ with the residue norm topology is a Tate Huber ring: the ring of definition is the unit ball $A^\circ = \{a : \lVert a \rVert \leq 1\}$, the ideal of definition is the topologically nilpotent ideal $A^{\circ\circ} = \{a : \lVert a \rVert < 1\}$, and the residue field element $K^\times$ gives a topologically nilpotent unit when the value group of $K$ is nontrivial.
 
@@ -33,7 +33,7 @@ $$
 
 are an open subring and an open ideal of $A$ respectively, and the pair is a ring of definition. If $\lvert \cdot \rvert$ is continuous then it is bounded by a constant multiple of the norm of any fixed ring of definition, and its support is a prime ideal.
 
-**Proof.** Multiplicativity makes $A^\circ$ closed under multiplication, and the ultrametric inequality makes it closed under addition; continuity of the valuation at $0$ makes $A^\circ$ a neighbourhood of $0$, hence open, and it is a subring containing $1$. The set $A^{\circ\circ}$ is an ideal contained in $A^\circ$ by the same two properties and is open, and its complement in $A^\circ$ is the set of units of $A^\circ$ because an element of value $1$ has inverse of value $1$. The boundedness statement follows because a continuous homomorphism from a topological group to an ordered group with the order topology is bounded on a neighbourhood of $0$.
+**Proof.** Multiplicativity makes $A^\circ$ closed under multiplication, and the ultrametric inequality makes it closed under addition; continuity of the valuation at $0$ makes $A^\circ$ a neighbourhood of $0$, hence open, and it is a subring containing $1$. The set $A^{\circ\circ}$ is an ideal contained in $A^\circ$ by the same two properties and is open, and its complement in $A^\circ$ is the set of invertibles of $A^\circ$ because an element of value $1$ has inverse of value $1$. The boundedness statement follows because a continuous homomorphism from a topological group to an ordered group with the order topology is bounded on a neighbourhood of $0$.
 
 ### The Adic Spectrum
 

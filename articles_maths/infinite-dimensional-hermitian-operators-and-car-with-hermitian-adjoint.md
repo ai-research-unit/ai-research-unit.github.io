@@ -63,7 +63,7 @@ are self-adjoint idempotents; the three expressions agree because $a_ja_j^{\ast}
 $$
 \boxed{\;\alpha_U\bigl(c(f)\bigr) = c(Uf)\;},
 $$
-and the assignment $U\mapsto\alpha_U$ is a homomorphism from the unitary group to the automorphism group. The map is the infinite-dimensional analogue of the conjugation of the Clifford algebra by the units of the slice, and it is the action that makes the CAR algebra the carrier of the fermionic second quantisation: the one-particle unitary acts on the algebra, and its image in the automorphism group is the group of free evolutions.
+and the assignment $U\mapsto\alpha_U$ is a homomorphism from the unitary group to the automorphism group. The map is the infinite-dimensional analogue of the conjugation of the Clifford algebra by the invertibles of the slice, and it is the action that makes the CAR algebra the carrier of the fermionic second quantisation: the one-particle unitary acts on the algebra, and its image in the automorphism group is the group of free evolutions.
 
 ### Implementability and the Hilbert–Schmidt Condition
 

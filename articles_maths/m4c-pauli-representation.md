@@ -156,7 +156,7 @@ The matrix is block diagonal with two equal blocks. The first block acts on the 
 
 **Why the block repeats.** The left action preserves the splitting $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$, because $\tilde Q\tilde X\tilde\Pi_+=\tilde Q(\tilde X\tilde\Pi_+)$ stays in the first summand and likewise for the second. Each summand has complex dimension two, and on each the action is the same block $A$, written in the pairs $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are therefore equal, and their equality is the statement $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$.
 
-**The four left matrices.** The four matrices are the images of the units under the left matrix map,
+**The four left matrices.** The four matrices are the images of the invertibles under the left matrix map,
 $$
 L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\mathrm I_4,\qquad
 L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -180,7 +180,7 @@ L_{\mathrm{pau}}(\tilde Q)=
 $$
 The trace is $8+4i=4(2+i)$, and the determinant is $117+44i=(11+2i)^2$, with $\langle\tilde Q\rangle_{\natural}=11+2i$.
 
-**The product of two left matrices.** Write the quaternion product of two units as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ with $\varepsilon=\pm1$ and $e_{\mu\nu}$ a unit. Then
+**The product of two left matrices.** Write the quaternion product of two units as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ with $\varepsilon=\pm1$ and $e_{\mu\nu}$ an invertible element. Then
 $$
 L_{\mathrm{pau},e_\mu} L_{\mathrm{pau},e_\nu}=\varepsilon L_{\mathrm{pau},e_{\mu\nu}},
 $$
@@ -225,7 +225,7 @@ L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The two identities are the two ways of reading the associative law: the first is $(\tilde X\tilde Q_1)\tilde Q_2=\tilde X(\tilde Q_1\tilde Q_2)$ read on the right, the second is $\tilde Q_1\tilde X\tilde Q_2$ read from either side.
 
-**The four right matrices.** The four matrices are the images of the units under the right matrix map,
+**The four right matrices.** The four matrices are the images of the invertibles under the right matrix map,
 $$
 R_{\mathrm{pau},e_t}=\mathsf{M}_{4R}(e_t)=\mathrm I_4,\qquad
 R_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -472,7 +472,7 @@ $$
 \qquad
 \begin{pmatrix}-i&-i\\1&-1\end{pmatrix},
 $$
-which are the two blocks of $C_{\Pi}^{-1}$, read transposed: that array lists the units by columns and not by rows. This is why the two arrays have four zeros in each off-block position: the idempotents never mix with the nilpotents.
+which are the two blocks of $C_{\Pi}^{-1}$, read transposed: that array lists the invertibles by columns and not by rows. This is why the two arrays have four zeros in each off-block position: the idempotents never mix with the nilpotents.
 
 **The same dictionary on a column.** A coordinate column changes by the same two arrays,
 $$
@@ -649,7 +649,7 @@ and $C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)C_{\Pi}$ returns the first. The block
 
 **(h) The switch is half a swap.** The Gram matrix of the plain product in this frame is $\tfrac12\mathsf P$, so $C_{\Pi}^{\mathsf T}DC_{\Pi}=\tfrac12\mathsf P$ and the two frames differ by a swap and a factor two.
 
-**(i) The invariants of a unit are trivial.** $\operatorname{Tr}L_{\mathrm{pau},e_\mu}=4\delta_{\mu t}$ and $\det L_{\mathrm{pau},e_\mu}=1$, and the same on the right.
+**(i) The invariants of an invertible element are trivial.** $\operatorname{Tr}L_{\mathrm{pau},e_\mu}=4\delta_{\mu t}$ and $\det L_{\mathrm{pau},e_\mu}=1$, and the same on the right.
 
 **(j) The transpose is two copies of $\sigma_2$.** $L(\tilde Q)^{\mathsf T}=C_LL(\tilde Q^{\natural})C_L$ and $R(\tilde Q)^{\mathsf T}=C_RR(\tilde Q^{\natural})C_R$.
 

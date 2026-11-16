@@ -53,7 +53,7 @@ Now the ground field is $\mathbb{C}$: an automorphism is required to be $\mathbb
 
 **Proof.** A $\mathbb{C}$-algebra automorphism fixes $1$ by definition and is $\mathbb{C}$-linear, so it fixes every element of the form $\lambda \cdot 1 = \lambda$ with $\lambda \in \mathbb{C}$; since every element of $\mathbb{C}$ has that form, $\sigma = \operatorname{id}$.
 
-The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. Here the algebra is the ground field itself, the group of units modulo scalars is $GL(1,\mathbb{C})/\mathbb{C}^\times = 1$, and the automorphism group is trivial. Complex conjugation does **not** appear in $\operatorname{Aut}_{\mathbb{C}}(\mathbb{C})$: it is not $\mathbb{C}$-linear, since $\overline{i \cdot 1} = -i$ while $i\cdot \overline{1} = i$. The only candidate nontrivial automorphism is exactly this non-$\mathbb{C}$-linear one.
+The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. Here the algebra is the ground field itself, the group of invertibles modulo scalars is $GL(1,\mathbb{C})/\mathbb{C}^\times = 1$, and the automorphism group is trivial. Complex conjugation does **not** appear in $\operatorname{Aut}_{\mathbb{C}}(\mathbb{C})$: it is not $\mathbb{C}$-linear, since $\overline{i \cdot 1} = -i$ while $i\cdot \overline{1} = i$. The only candidate nontrivial automorphism is exactly this non-$\mathbb{C}$-linear one.
 
 ## Derivations
 

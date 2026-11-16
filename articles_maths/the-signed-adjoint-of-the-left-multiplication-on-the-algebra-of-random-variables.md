@@ -72,7 +72,7 @@ T^\alpha_a\ \text{is an isometry}\iff|a|=1 ,
 $$
 in which case it is unitary with the inverse $T^\alpha_{\alpha(a)^{-1}}$; the self-adjoint unitary signed left multiplications are the unimodular $\alpha$-Hermitian elements, $\alpha(a)=a^*$ and $|a|=1$.
 
-*Proof.* Self-adjointness is $T^\alpha_a=T^\alpha_{\delta(a)}$; the map $a\mapsto T^\alpha_a$ is injective, so the two are equal exactly when $a=\delta(a)$, that is $a=\alpha(a)^*$, equivalently $\alpha(a)=a^*$. For the isometry, $(T^\alpha_a)^*T^\alpha_a=T^\alpha_{\delta(a)}T^\alpha_a=L_{\delta(a)\alpha(a)}=L_{\alpha(a^*)\alpha(a)}=L_{\alpha(a^*a)}=L_{|a|^2}$, the identity exactly when $|a|=1$; the unitary statement is the same computation in the other order, and the inverse of $T^\alpha_a$ for a unit $a$ is $T^\alpha_{\alpha(a)^{-1}}$.
+*Proof.* Self-adjointness is $T^\alpha_a=T^\alpha_{\delta(a)}$; the map $a\mapsto T^\alpha_a$ is injective, so the two are equal exactly when $a=\delta(a)$, that is $a=\alpha(a)^*$, equivalently $\alpha(a)=a^*$. For the isometry, $(T^\alpha_a)^*T^\alpha_a=T^\alpha_{\delta(a)}T^\alpha_a=L_{\delta(a)\alpha(a)}=L_{\alpha(a^*)\alpha(a)}=L_{\alpha(a^*a)}=L_{|a|^2}$, the identity exactly when $|a|=1$; the unitary statement is the same computation in the other order, and the inverse of $T^\alpha_a$ for an invertible element $a$ is $T^\alpha_{\alpha(a)^{-1}}$.
 
 **Theorem (the unitary group).** The unitary signed left multiplications form the group
 $$
@@ -92,7 +92,7 @@ Abelian, and the self-adjoint unitary members are the unimodular $\alpha$-Hermit
 
 ### The arithmetic contrast
 
-**Theorem (the comparison with the arithmetic case).** Over the algebra of arithmetic functions under the coefficient form the adjoint of $L_a\alpha$ is the transposed multiplication $\mathrm{Sd}_a$ composed with $\alpha$, and it is a signed left multiplication only when $\alpha(a)$ is a unit; here the adjoint is a signed left multiplication for every $a$. The discrepancy is the invariance of the expectation form, which returns $L_{a^*}$ for the adjoint of $L_a$ instead of the transpose.
+**Theorem (the comparison with the arithmetic case).** Over the algebra of arithmetic functions under the coefficient form the adjoint of $L_a\alpha$ is the transposed multiplication $\mathrm{Sd}_a$ composed with $\alpha$, and it is a signed left multiplication only when $\alpha(a)$ is invertible; here the adjoint is a signed left multiplication for every $a$. The discrepancy is the invariance of the expectation form, which returns $L_{a^*}$ for the adjoint of $L_a$ instead of the transpose.
 
 *Proof.* The arithmetic statement is that of *The Adjoint of the Left Multiplication on the Algebra of Arithmetic Functions*, written, and *The Signed Left Multiplication on the Algebra of Arithmetic Functions*, written; the difference is the invariance of the form, which is the traciality of the state in the commutative algebra.
 

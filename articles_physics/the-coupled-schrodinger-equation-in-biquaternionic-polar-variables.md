@@ -152,7 +152,7 @@ because $\nabla\times\nabla S$ vanishes identically. So the canonical flow is ir
 
 ## The Gauge Transformation Read on the Word
 
-**The transformation.** With $\lambda=\exp(iϙ\Gamma/\hbar)$ and $\Gamma$ real, the field becomes $\lambda\tilde\Xi$, and since $\lambda$ is central and commutes with every unit, the word's factors transform one at a time:
+**The transformation.** With $\lambda=\exp(iϙ\Gamma/\hbar)$ and $\Gamma$ real, the field becomes $\lambda\tilde\Xi$, and since $\lambda$ is central and commutes with every invertible element, the word's factors transform one at a time:
 
 $$
 r\longmapsto r,

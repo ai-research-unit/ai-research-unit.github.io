@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**Both halves of $M_n(\mathbb{R})$ are contractible, so the topology of the algebra is not in the halves but in their strata.** $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are Euclidean spaces of dimensions $n(n+1)/2$ and $n(n-1)/2$, and each contracts to a point. The interesting spaces are the sets of a fixed rank, the positive definite cone, and the intersections with the unit group.
+**Both halves of $M_n(\mathbb{R})$ are contractible, so the topology of the algebra is not in the halves but in their strata.** $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are Euclidean spaces of dimensions $n(n+1)/2$ and $n(n-1)/2$, and each contracts to a point. The interesting spaces are the sets of a fixed rank, the positive definite cone, and the intersections with the group of invertibles.
 
-The article proves the two homeomorphisms, the contractibility of the two halves and of the positive definite cone, computes the dimensions of the rank strata, describes the determinant on each half at odd and even $n$, and reads the two halves as the kernel and the image of the symmetrisation map. It assumes *The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant* for the unit group and its two components.
+The article proves the two homeomorphisms, the contractibility of the two halves and of the positive definite cone, computes the dimensions of the rank strata, describes the determinant on each half at odd and even $n$, and reads the two halves as the kernel and the image of the symmetrisation map. It assumes *The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant* for the group of invertibles and its two components.
 
 Throughout $n\ge2$ and $M_n=M_n(\mathbb{R})$.
 
@@ -92,7 +92,7 @@ $$
 
 **Measured.** With $300$ samples of unit-normal entries above the diagonal, the largest value of $|\det K|$ on $\operatorname{Skew}_n$ was $0$ at $n=3$ and $n=5$, and about $10$ at $n=2$ (measured $9.61$) and $40$ at $n=4$ (measured $42.4$ and $47.37$ on two samples). The zeros at odd $n$ are exact, and the nonzero values at even $n$ show the determinant is not identically zero there.
 
-**The determinant on the symmetric half is the discriminant of the form.** $\det S$ vanishes exactly on the degenerate symmetric matrices, among them the boundary of the positive definite cone, and a symmetric matrix of signature $(p,q)$ has determinant of sign $(-1)^{q}$. So the symmetric half meets both components of the unit group.
+**The determinant on the symmetric half is the discriminant of the form.** $\det S$ vanishes exactly on the degenerate symmetric matrices, among them the boundary of the positive definite cone, and a symmetric matrix of signature $(p,q)$ has determinant of sign $(-1)^{q}$. So the symmetric half meets both components of the group of invertibles.
 
 **The zero sets are hypersurfaces.** On $\operatorname{Sym}_n$ the set $\{\det=0\}$ has dimension $n(n+1)/2-1$; on $\operatorname{Skew}_n$ with $n$ even the set $\{\operatorname{pf}=0\}$ has dimension $n(n-1)/2-1$; on $\operatorname{Skew}_n$ with $n$ odd it is the whole half.
 
@@ -110,11 +110,11 @@ $$
 
 ## Where the Topology Lives
 
-**The symmetric half meets the unit group in $n+1$ components.** By Sylvester's law of inertia the invertible symmetric matrices fall into $n+1$ classes, indexed by the signature $(p,q)$ with $p+q=n$. Each class is a single orbit of the congruence action, and since $-P$ acts by the same congruence as $P$, each class is an orbit of the connected group $\mathrm{GL}_n^{+}$, hence connected. At $n=2$ the three are the positive definite, the negative definite and the indefinite matrices.
+**The symmetric half meets the group of invertibles in $n+1$ components.** By Sylvester's law of inertia the invertible symmetric matrices fall into $n+1$ classes, indexed by the signature $(p,q)$ with $p+q=n$. Each class is a single orbit of the congruence action, and since $-P$ acts by the same congruence as $P$, each class is an orbit of the connected group $\mathrm{GL}_n^{+}$, hence connected. At $n=2$ the three are the positive definite, the negative definite and the indefinite matrices.
 
-**The antisymmetric half meets the unit group only for even $n$.** For odd $n$ every antisymmetric matrix is singular, since an odd-order alternating form is degenerate; for even $n$ the invertible ones form the stratum of rank $n$, an open subset of the half whose complement is $\{\operatorname{pf}=0\}$.
+**The antisymmetric half meets the group of invertibles only for even $n$.** For odd $n$ every antisymmetric matrix is singular, since an odd-order alternating form is degenerate; for even $n$ the invertible ones form the stratum of rank $n$, an open subset of the half whose complement is $\{\operatorname{pf}=0\}$.
 
-**The topology is the topology of the strata.** The symmetric half is contractible but its intersection with the unit group has $n+1$ components, and the antisymmetric half is contractible but its rank strata have the dimensions of §*The Strata of the Antisymmetric Half*. So the invariants live in the stratification.
+**The topology is the topology of the strata.** The symmetric half is contractible but its intersection with the group of invertibles has $n+1$ components, and the antisymmetric half is contractible but its rank strata have the dimensions of §*The Strata of the Antisymmetric Half*. So the invariants live in the stratification.
 
 **The two halves together add nothing.** $M_n$ is the direct sum and is contractible, so no homotopy invariant distinguishes the halves. What distinguishes them is the algebra of the product: $\operatorname{Skew}_n$ is closed under the commutator and $\operatorname{Sym}_n$ is not, as in *The Matrix Algebra $M_n(\mathbb{R})$*.
 
@@ -140,5 +140,5 @@ $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are Euclidean spaces of dimen
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the symmetric and antisymmetric matrices, the inertia and the Pfaffian.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the positive definite cone and the congruence action.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the two halves, their dimensions and their products.
-- [The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant](the-topology-of-mnr-and-the-sign-of-the-determinant.html), for the unit group and its two components.
+- [The Topology of $M_n(\mathbb{R})$ and the Sign of the Determinant](the-topology-of-mnr-and-the-sign-of-the-determinant.html), for the group of invertibles and its two components.
 - [The Symmetric and Antisymmetric Parts of the Operator Space](the-symmetric-and-antisymmetric-parts-of-the-operator-space-over-r.html), for the same split one level up.

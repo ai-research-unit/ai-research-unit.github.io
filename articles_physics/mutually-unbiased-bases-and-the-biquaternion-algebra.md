@@ -259,7 +259,7 @@ $$
 \mathcal{B}_k = \bigl\{\tfrac12(e_t+i\vec u_\eta),\ \tfrac12(e_t-i\vec u_\eta)\bigr\}, \qquad \eta = 1, 2, 3 .
 $$
 
-The unbiasedness is derived from the algebra alone: for $j\neq k$ the traceless terms vanish and the units' orthogonality gives
+The unbiasedness is derived from the algebra alone: for $j\neq k$ the traceless terms vanish and the invertibles' orthogonality gives
 
 $$
 \mathrm{Tr}\bigl(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_\eta)\bigr) = \tfrac12 , \qquad

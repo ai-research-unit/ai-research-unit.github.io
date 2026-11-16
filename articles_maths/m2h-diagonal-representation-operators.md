@@ -112,7 +112,7 @@ $$
 $$
 so the zero operator is attained by nonzero pairs — $\tilde Q=\tilde\Pi_{1}$ and $\tilde Q_2=\tilde\Pi_{2}$, for example — and the three other combinations of the two idempotents. The zero set of the map $(\tilde Q,\tilde Q_2)\mapsto L_{\tilde Q}R_{\tilde Q_2}$ is therefore a union of four products, of real dimension $4+8=12$ each, and the pairs that achieve the zero operator are the ones that the length discussion below must count.
 
-**The units.** The operators of the family that are invertible are those with both blocks nonzero, that is
+**The invertibles.** The operators of the family that are invertible are those with both blocks nonzero, that is
 $$
 L_{\tilde Q}R_{\tilde Q_2}\in GL(\mathbb{B}_{\mathrm{spl}})\iff \tilde Q_{\pm}\neq0,\ \tilde Q_{2\pm}\neq0 ,
 $$
@@ -146,13 +146,13 @@ so the operator is a **conformal** map of the quaternionic norm, with factor $N(
 $$
 \Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad \tilde X^{*}=\tilde X,
 $$
-is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X^{*}\tilde Q^{*}$, and positive definite when $\tilde Q$ is a unit, because each block is a positive quaternionic operator. So the group of units acts on the open cone of positive Hermitian elements, and this action is the conformal action of the category on the Minkowski space of signature $(1,3)$ of the norms section of the general article.
+is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X^{*}\tilde Q^{*}$, and positive definite when $\tilde Q$ is invertible, because each block is a positive quaternionic operator. So the group of invertibles acts on the open cone of positive Hermitian elements, and this action is the conformal action of the category on the Minkowski space of signature $(1,3)$ of the norms section of the general article.
 
 **The kernel.** The units giving the identity operator are those that centralise every element and square to one,
 $$
 \{\tilde Q:\tilde Q\tilde X\tilde Q^{*}=\tilde X\ \forall\tilde X\}=\{\pm1,\pm j\},
 $$
-a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the units of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the two-sided map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the two-sided operator sees them.
+a four-group, because the centraliser is $\mathbb{C}_{\mathrm{spl}}$ and the invertibles of $\mathbb{C}_{\mathrm{spl}}$ are the split-complex units $\{\pm e^{\phi j}\}$, cut down by the condition $Q^{2}=1$ to the four elements. So the kernel of the two-sided map is a four-group and not a torus, and the difference from the reduced biquaternion category, where the kernel was the whole torus $T^{2}$, is that the quaternion blocks have no commuting phases: the phases are noncommutative and the two-sided operator sees them.
 
 **The plain two-sided operator.** $x\mapsto \tilde Q\tilde X\tilde Q$ is not conformal in the same sense, since $u^{2}$ is not real, and it is the operator of the plain product and of the functional calculus: its powers give $\tilde Q^{n}\tilde X\tilde Q^{n}$, and its kernel over the family is again the four-group.
 
@@ -211,7 +211,7 @@ so the test of the category is **blockwise linear** and the reach is the product
 $$
 \operatorname{rank}_{\mathbb{H}}\mathsf M(\tilde Q)\in\{0,1,2\},\qquad \operatorname{rank}_{\mathbb{R}}\mathsf L_{\tilde Q}\in\{0,4,8\},
 $$
-with the strata of the general article: the zero element, the union of the two punctured ideals, and the units.
+with the strata of the general article: the zero element, the union of the two punctured ideals, and the invertibles.
 
 **The two-sided rank.** For a pair,
 $$
@@ -231,7 +231,7 @@ and the reduced trace is additive over sums of operators while the determinant i
 
 **Composition, the unit, the stabiliser, the isometries and the multiplicative pairs.**
 
-**The semigroup.** The pairs form the semigroup $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$ under $(\tilde Q,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q\tilde Q_3,\tilde Q_4\tilde Q_2)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The units of the semigroup are the pairs with both entries in the group of units, and they act on the algebra by the two-sided operators.
+**The semigroup.** The pairs form the semigroup $\mathbb{B}_{\mathrm{spl}}\times\mathbb{B}_{\mathrm{spl}}$ under $(\tilde Q,\tilde Q_2)(\tilde Q_3,\tilde Q_4)=(\tilde Q\tilde Q_3,\tilde Q_4\tilde Q_2)$, with the two-sided operators as a quotient by the central stabiliser, and the map is a homomorphism of semigroups. The invertibles of the semigroup are the pairs with both entries in the group of invertibles, and they act on the algebra by the two-sided operators.
 
 **The isometries.** The pairs whose two-sided operator preserves a form:
 
@@ -245,7 +245,7 @@ so the compact retract of the isometry group of the category is a product of fou
 
 **The multiplicative pairs.** The pairs $(\tilde Q,\tilde Q^{\natural})$ are those whose operator is a conformal map, by the computation of the two-sided operator section, and the pairs $(\tilde Q,\tilde Q^{-1})$ are those whose plain operator is the identity composed with the inner automorphism: since the algebra is a product of division rings, the inner automorphism group is $(SU(2)\times SU(2))/\{\pm1\}$ per block, and it is the gauge of the category.
 
-**The gauge.** The inner automorphisms of $\mathbb{B}_{\mathrm{spl}}$ are the conjugations by the units, and they act blockwise by the inner automorphisms of $\mathbb{H}$. The quotient by the inner automorphisms is the two-block outer group, and the model realises the inner ones as the pairs $(\tilde Q,\tilde Q^{-1})$. Since $\mathbb{H}$ is a division ring, the inner automorphism group is the whole of the automorphism group, so the outer group is trivial and the gauge is the whole of $SU(2)\times SU(2)$ per block modulo the sign. The difference from the reduced biquaternion category is large: there the algebra is commutative, the inner automorphism group was trivial, and the whole operator family was the multiplicative gauge.
+**The gauge.** The inner automorphisms of $\mathbb{B}_{\mathrm{spl}}$ are the conjugations by the invertibles, and they act blockwise by the inner automorphisms of $\mathbb{H}$. The quotient by the inner automorphisms is the two-block outer group, and the model realises the inner ones as the pairs $(\tilde Q,\tilde Q^{-1})$. Since $\mathbb{H}$ is a division ring, the inner automorphism group is the whole of the automorphism group, so the outer group is trivial and the gauge is the whole of $SU(2)\times SU(2)$ per block modulo the sign. The difference from the reduced biquaternion category is large: there the algebra is commutative, the inner automorphism group was trivial, and the whole operator family was the multiplicative gauge.
 
 ## The Cone and the Coefficient Matrix
 
@@ -366,5 +366,5 @@ because one index can serve both blocks, and this is why the bound is four and n
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the bimodule structure of a division algebra, the semigroup of pairs and the stabiliser of the identity.
 - F. Zhang, *Quaternions and Matrices of Quaternions* (Linear Algebra and its Applications 251, 1997), for the quaternionic cone of rank-one maps, the coefficient array and the two-sided rank.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Kronecker product, the rank of a sum of tensor products and the block diagonal arithmetic of trace and determinant.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the conformal action of the quaternion group of units on the Minkowski space of signature $(1,3)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the conformal action of the quaternion group of invertibles on the Minkowski space of signature $(1,3)$.
 - Igor Frenkel and Matvei Libine, *Quaternionic Analysis, Representation Theory and Physics* (Advances in Mathematics 218, 2008), for the conformal group of the quaternions and the four-dimensional representation of $SL_{2}(\mathbb{C})$ on the Hermitian subspace.

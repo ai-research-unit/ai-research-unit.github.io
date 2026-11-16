@@ -22,7 +22,7 @@ $$
 R(A)=\{u\in A:u^2=1\}.
 $$
 
-The trivial roots are $1$ and $-1$; they coincide in characteristic two. A root is a unit, with $u^{-1}=u$, so $R(A)\subseteq A^\times$.
+The trivial roots are $1$ and $-1$; they coincide in characteristic two. A root is invertible, with $u^{-1}=u$, so $R(A)\subseteq A^\times$.
 
 **Proposition.** Let $u,v\in R(A)$.
 

@@ -70,7 +70,7 @@ extended by antisymmetry and bilinearity. This datum is invariant under the rota
 
 ### What the Data Do Not Contain
 
-**No base field.** The construction does not begin with a subfield of the algebra other than the scalar line. In particular it does not begin with $\mathbb{C}=\mathbb{R}[\vec e_z]$, so no unit of $V$ is spent on a coefficient field.
+**No base field.** The construction does not begin with a subfield of the algebra other than the scalar line. In particular it does not begin with $\mathbb{C}=\mathbb{R}[\vec e_z]$, so no invertible element of $V$ is spent on a coefficient field.
 
 **No imaginary unit and no doubling unit.** All three units of $V$ are declared at once, in one line, with the same square and the same relation to the other two. None is adjoined to another, and none is computed from another.
 
@@ -94,7 +94,7 @@ with $\cdot$ the inner product and $\times$ the cross product of §*The Vector P
 
 **Bilinearity.** The right side is linear in $(\lambda,\vec u)$ alone and in $(\mu,\vec v)$ alone, so the rule extends to a bilinear map $\mathbb{H}\times\mathbb{H}\to\mathbb{H}$, and by that extension it is defined on the whole algebra. Nothing else is assumed.
 
-### The Rule on the Units
+### The Rule on the Invertibles
 
 **Proposition.** On two pure elements the rule reads
 
@@ -120,7 +120,7 @@ together with the three cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\v
 
 **The equivalence.** The product rule is equivalent to ten statements on the units: that $e_t$ is a two-sided unit; that each of the three vector units squares to $-e_t$; that each pair of distinct vector units anticommutes; and that the three cyclic products hold.
 
-*Proof.* The rule gives the ten statements by evaluation on the pairs of units, which is the proposition above. Conversely the ten statements fix all sixteen products: the seven involving $e_t$ by the unit axiom, the three squares, the six ordered products of distinct units by the three anticommutations and the three cyclic products. A bilinear map is fixed by its values on the sixteen pairs, so the ten statements fix the product. ∎
+*Proof.* The rule gives the ten statements by evaluation on the pairs of invertibles, which is the proposition above. Conversely the ten statements fix all sixteen products: the seven involving $e_t$ by the unit axiom, the three squares, the six ordered products of distinct units by the three anticommutations and the three cyclic products. A bilinear map is fixed by its values on the sixteen pairs, so the ten statements fix the product. ∎
 
 **Two of the four families are symmetric and two are not.** The unit axiom, the three squares and the three anticommutations are stated for the three units without distinction, and every permutation of the three leaves them unchanged. The three cyclic products are stated in one order, and they are invariant under the cyclic group of order three alone: a transposition turns $\vec e_x\vec e_y=\vec e_z$ into $\vec e_y\vec e_x=\vec e_z$, which is the negative of the anticommutation statement. The asymmetry of the table is exactly this, and it is nothing else.
 
@@ -153,7 +153,7 @@ and the scalar part of the product is symmetric in the two factors while the vec
 
 **The four blocks.** The table is one row and one column of the identity, one scalar diagonal $-e_t$ repeated three times, and a $3\times3$ block of the three vector units with signs. The block is antisymmetric, and the antisymmetry is the statement that the product is not commutative. No entry names a direction in a role another entry does not have: the three diagonal entries are equal, and the six off-diagonal entries are the three units in two signs each.
 
-**The count.** Of the sixteen entries, one is $e_t$, six are the units themselves, three are $-e_t$, and six are units with a sign. The signs carry the whole of the asymmetry of the table.
+**The count.** Of the sixteen entries, one is $e_t$, six are the units themselves, three are $-e_t$, and six are invertible with a sign. The signs carry the whole of the asymmetry of the table.
 
 ### The Three Identities
 
@@ -173,7 +173,7 @@ $$
 \vec e_x^2=\vec e_y^2=\vec e_z^2=\vec e_x\vec e_y\vec e_z=-e_t ,
 $$
 
-which is the compact statement of the table's scalar half. Every entry of the table is a unit with a sign, so the table is a statement about signs alone.
+which is the compact statement of the table's scalar half. Every entry of the table is invertible with a sign, so the table is a statement about signs alone.
 
 **The sign count.** The four scalar values above are the compact test of a table found in the literature: the three squares and the triple product must all equal $-e_t$, and the three cyclic products must hold in one cyclic order. A table that passes the first test and fails the second is the table of the opposite algebra, and a table with one square equal to $+e_t$ is the table of a split-quaternion algebra.
 
@@ -222,7 +222,7 @@ $$
 
 *Proof.* Direct multiplication of the printed arrays. Each identity is an equality of four-by-four integer matrices, and each is checked entry by entry. ∎
 
-**Corollary.** $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of units.
+**Corollary.** $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of invertibles.
 
 *Proof.* Seven pairs involve $L_t=\mathrm I_4$ and are trivial. Of the remaining nine, three are the squares and three are the cyclic products, which the proposition gives. The last three are the reverse-ordered products, and each is the negative of a cyclic product: $L_yL_x=-L_xL_y=-L_z=L_{yx}$, and likewise for $L_xL_z$ and $L_zL_y$. ∎
 
@@ -236,7 +236,7 @@ $$
 L(\tilde q)L(\tilde p)=\sum_{\mu,\nu}q_\mu p_\nu L_{e_\mu}L_{e_\nu}=\sum_{\mu,\nu}q_\mu p_\nu L_{e_\mu e_\nu}=L(\tilde q\tilde p),
 $$
 
-the last equality because $\tilde q\tilde p$ is by definition the bilinear extension of the products of units. Then $L(\tilde q\tilde p)$ is left multiplication by $\tilde q\tilde p$, so
+the last equality because $\tilde q\tilde p$ is by definition the bilinear extension of the products of invertibles. Then $L(\tilde q\tilde p)$ is left multiplication by $\tilde q\tilde p$, so
 
 $$
 (\tilde q\tilde p)\tilde r=L(\tilde q\tilde p)\tilde r=L(\tilde q)L(\tilde p)\tilde r=L(\tilde q)(\tilde p\tilde r)=\tilde q(\tilde p\tilde r). 
@@ -274,7 +274,7 @@ $$
 
 whose scalar part vanishes and whose vector part is the cross product. So $\vec q\times\vec e_x=0$ and $\vec q\times\vec e_y=0$. A vector orthogonal to two independent vectors is zero, so $\vec q=0$. ∎
 
-**The reading.** The centre is one-dimensional, so the algebra is not commutative and not of the form $M_n(K)$ for a field $K$ larger than $\mathbb{R}$: a matrix algebra carries its coefficient field as its centre. The centre of the group of units is $\mathbb{R}^{\times}e_t$ by the same computation, and the two statements are one.
+**The reading.** The centre is one-dimensional, so the algebra is not commutative and not of the form $M_n(K)$ for a field $K$ larger than $\mathbb{R}$: a matrix algebra carries its coefficient field as its centre. The centre of the group of invertibles is $\mathbb{R}^{\times}e_t$ by the same computation, and the two statements are one.
 
 ### The Conjugation and the Two Subspaces
 
@@ -286,7 +286,7 @@ $$
 
 **Proposition.** The conjugation is an involution, it reverses the order of a product, and its fixed space is $\mathbb{R}e_t$ while its anti-fixed space is $V$.
 
-*Proof.* The involution and the two fixed spaces are read from the definition. The order reversal is checked on the sixteen pairs of units: each product is a unit with a sign, the conjugation negates the three vector units, and the two sides agree on every pair; bilinearity extends the identity to all elements. ∎
+*Proof.* The involution and the two fixed spaces are read from the definition. The order reversal is checked on the sixteen pairs of invertibles: each product is invertible with a sign, the conjugation negates the three vector units, and the two sides agree on every pair; bilinearity extends the identity to all elements. ∎
 
 **The two subspaces, and the third conjugation.** The decomposition $\mathbb{H}=\mathbb{R}e_t\oplus V$ is the eigenspace decomposition of ${}^{\natural}$ for the eigenvalues $+1$ and $-1$, and the projections are $\tfrac12(\tilde q\pm\tilde q^{\natural})$. Two companion maps exist, $-\tilde q^{\natural}$ and $-\tilde q$, and with the identity they form a group of order four. The conjugation is the only member of that group that reverses the order of a product: negating the product is not an order reversal, and negating the conjugate is not one either. The catalogue of the four maps and of the classes of element they cut out is *The Specificities of the Quaternion Algebra*.
 
@@ -371,7 +371,7 @@ $$
 
 *Proof.* Let $I$ be a two-sided ideal and take $0\neq a\in I$. Then $a^{\natural}a=\langle a\rangle_{\natural}e_t\in I$, and the norm is a positive real number, so $e_t\in I$ and $I=\mathbb{H}$. ∎
 
-**The reading.** The algebra is simple, and it is the only simple associative algebra of dimension four over $\mathbb{R}$ other than the matrix algebra $M_2(\mathbb{R})$. The two are distinguished by the division property, which is the next article's subject, and by the centre of the unit group.
+**The reading.** The algebra is simple, and it is the only simple associative algebra of dimension four over $\mathbb{R}$ other than the matrix algebra $M_2(\mathbb{R})$. The two are distinguished by the division property, which is the next article's subject, and by the centre of the group of invertibles.
 
 ## What Is Free and What Is Fixed
 
@@ -425,7 +425,7 @@ $$
 
 ### The Three Roles
 
-**The doubling in one paragraph.** The doubling of *The Cayley–Dickson Construction of the Quaternion Algebra* begins with the complex algebra $\mathbb{C}=\mathbb{R}[\vec e_z]$, adjoins a unit $\vec e_x$ with the square $-e_t$ and the twisting rule $\vec e_xw=\bar w\vec e_x$, and reads the third unit off the product, $\vec e_y=\vec e_z\vec e_x$. The three units enter as a base field, a generator and an output.
+**The doubling in one paragraph.** The doubling of *The Cayley–Dickson Construction of the Quaternion Algebra* begins with the complex algebra $\mathbb{C}=\mathbb{R}[\vec e_z]$, adjoins an invertible element $\vec e_x$ with the square $-e_t$ and the twisting rule $\vec e_xw=\bar w\vec e_x$, and reads the third unit off the product, $\vec e_y=\vec e_z\vec e_x$. The three units enter as a base field, a generator and an output.
 
 **Why that is a defect of presentation and not of mathematics.** The doubling proves three things the axis-free route assumes: that the twist is forced by the absence of zero divisors, that the third unit is computed rather than chosen, and that the signs of the ordered products are not conventions. Those are results, and the axis-free route cannot supply them, because it takes the table as data. A reader who wants to know why the table has these signs and not others must read the doubling.
 
@@ -496,7 +496,7 @@ The first properties follow in a few lines each: the centre is the scalar line, 
 - [Quaternion Algebra](quaternion-algebra.html), for the algebra as a structure, the three conjugations, the three fixed-point subspaces and the Lie algebra of the vector part.
 - [The Cayley–Dickson Construction of the Quaternion Algebra](the-cayley-dickson-construction-of-the-quaternion-algebra.html), for the doubling route, the nine derivations of the table and the argument that fixes the twist.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), for the classes of element and the Frobenius and Hurwitz theorems.
-- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm as a quadratic form, its polarisation and the group of units.
+- [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm as a quadratic form, its polarisation and the group of invertibles.
 - [The Rotor Group via $4\times4$ Real Matrices](the-rotor-group-via-4x4-real-matrices.html), for the left regular display, the four properties of its generators and the group they generate.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the axis-free array and the reason the coefficient basis is the one that names no direction.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the same construction with one square changed, and the three idempotents it then carries.

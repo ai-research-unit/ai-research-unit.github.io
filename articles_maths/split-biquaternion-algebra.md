@@ -434,7 +434,7 @@ There are four conjugations: quaternion conjugation, split complex conjugation, 
 
 There are three natural decompositions of the algebra: the quaternion decomposition $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}} \oplus j \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, the idempotent decomposition $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$, and the Hermitian decomposition $\mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$.
 
-The four forms of the layer — the plain, the quaternionic, the Hermitian and the Krein — the four norms they carry, and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of units are also established.
+The four forms of the layer — the plain, the quaternionic, the Hermitian and the Krein — the four norms they carry, and the Euclidean norm are a form and a distance; they are developed in *Split-Biquaternion Norm and Invertibility*, where the invertibility criterion and the group of invertibles are also established.
 
 ## Summary of Notation
 

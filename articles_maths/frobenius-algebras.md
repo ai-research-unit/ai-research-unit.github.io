@@ -62,7 +62,7 @@ $$
 
 The map $\nu$ is the **Nakayama automorphism** of $(A,\lambda)$.
 
-**Proposition.** The map $\nu$ is a $k$-algebra automorphism of $A$, and it depends on $\lambda$ only up to composition with an inner automorphism: if $\lambda' = \lambda \circ \iota_u$ for a unit $u$, then $\nu' = \iota_u^{-1}\circ\nu\circ\iota_u$ where $\iota_u(x) = uxu^{-1}$.
+**Proposition.** The map $\nu$ is a $k$-algebra automorphism of $A$, and it depends on $\lambda$ only up to composition with an inner automorphism: if $\lambda' = \lambda \circ \iota_u$ for an invertible element $u$, then $\nu' = \iota_u^{-1}\circ\nu\circ\iota_u$ where $\iota_u(x) = uxu^{-1}$.
 
 *Proof.* For the multiplicativity, compute
 
@@ -134,7 +134,7 @@ $$
 \nu(u) = (-1)^{\deg u}\,u ,
 $$
 
-which is the algebra automorphism; it is not inner, because the odd part generates $\Lambda(V)$ as an algebra and a unit conjugating an odd element to its negative would have to be a scalar, while the scalars act trivially. The exterior algebra in an even number of variables is therefore the basic example of a Frobenius algebra whose Nakayama automorphism is not inner, and its sign rule is the Koszul sign rule.
+which is the algebra automorphism; it is not inner, because the odd part generates $\Lambda(V)$ as an algebra and an invertible element conjugating an odd element to its negative would have to be a scalar, while the scalars act trivially. The exterior algebra in an even number of variables is therefore the basic example of a Frobenius algebra whose Nakayama automorphism is not inner, and its sign rule is the Koszul sign rule.
 
 **Example (semisimple algebras).** Every finite-dimensional semisimple $k$-algebra is symmetric Frobenius. If $A = \prod_i M_{n_i}(D_i)$ with the $D_i$ division algebras, take $\lambda$ to be the sum of the reduced traces of the components; each reduced trace satisfies $\operatorname{Trd}(xy) = \operatorname{Trd}(yx)$ and is non-degenerate, so their sum is a symmetric Frobenius functional. Hencedescribes a subclass of the Frobenius algebras, and the Frobenius condition is the weakening of semisimplicity that keeps the duality of the regular module but drops complete reducibility.
 

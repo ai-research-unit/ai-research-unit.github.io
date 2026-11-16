@@ -19,7 +19,7 @@ $$
 \boxed{\;a b = 0 \quad \Longrightarrow \quad a = 0 \ \text{or}\ b = 0\;} .
 $$
 
-Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors, the element $0$ being the only element that annihilates a nonzero element. A field is the special case in which every nonzero element is a unit; the field axioms belong to *Fields*, later in this category.
+Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors, the element $0$ being the only element that annihilates a nonzero element. A field is the special case in which every nonzero element is invertible; the field axioms belong to *Fields*, later in this category.
 
 **Proposition (cancellation).** Let $R$ be an integral domain, $a, b, c \in R$ and $a \neq 0$. If $ab = ac$ then $b = c$.
 
@@ -43,7 +43,7 @@ Equivalently, $R$ has no zero divisors in the sense of *Rings*, §Zero Divisors,
 
 **(d)** $(R[x])^{\times} = R^{\times}$.
 
-**Proof.** (a) A subring with the same $1$ inherits the absence of zero divisors. (b) $(1, 0)(0, 1) = (0,0)$ with both factors nonzero. (c) If $f$ and $g$ are nonzero with leading coefficients $a$ and $b$, then the term of degree $\deg f + \deg g$ in $fg$ is $ab x^{\deg f + \deg g}$, and $ab \neq 0$ in the domain $R$; no higher-degree term occurs, so the coefficient is nonzero and $fg \neq 0$. (d) If $fg = 1$ then $\deg f + \deg g = \deg 1 = 0$, so $f$ and $g$ are nonzero constants, and a constant is a unit of $R[x]$ exactly when it is a unit of $R$.
+**Proof.** (a) A subring with the same $1$ inherits the absence of zero divisors. (b) $(1, 0)(0, 1) = (0,0)$ with both factors nonzero. (c) If $f$ and $g$ are nonzero with leading coefficients $a$ and $b$, then the term of degree $\deg f + \deg g$ in $fg$ is $ab x^{\deg f + \deg g}$, and $ab \neq 0$ in the domain $R$; no higher-degree term occurs, so the coefficient is nonzero and $fg \neq 0$. (d) If $fg = 1$ then $\deg f + \deg g = \deg 1 = 0$, so $f$ and $g$ are nonzero constants, and a constant is invertible in $R[x]$ exactly when it is invertible in $R$.
 
 The general theory of polynomial rings — degree, the division algorithm, roots in the applications sense and the arithmetic of $R[x]$ as a ring — is *Polynomial Rings and Rational Functions*, below this article in this category, and only the two facts above and the root theorem of this article are used before it is reached.
 
@@ -59,7 +59,7 @@ The general theory of polynomial rings — degree, the division algorithm, roots
 
 **Definition.** For $a, b \in R$, write $a \mid b$, and say that $a$ **divides** $b$, if $b = ac$ for some $c \in R$. An element $a$ is a **divisor** of $b$ in that case, and $b$ is a **multiple** of $a$.
 
-**Proposition.** Let $R$ be an integral domain and $a, b, c \in R$, with $u \in R^{\times}$ a unit.
+**Proposition.** Let $R$ be an integral domain and $a, b, c \in R$, with $u \in R^{\times}$ an invertible element.
 
 **(a)** $a \mid a$, and $1 \mid a$, and $a \mid 0$.
 
@@ -77,15 +77,15 @@ Thus divisibility is a reflexive and transitive relation, a preorder; by (c) it 
 
 ### Associates
 
-**Definition.** Two elements $a, b \in R$ are **associates**, written $a \sim b$, if $a = ub$ for some unit $u \in R^{\times}$.
+**Definition.** Two elements $a, b \in R$ are **associates**, written $a \sim b$, if $a = ub$ for some invertible $u \in R^{\times}$.
 
 **Proposition (associates).** Let $R$ be an integral domain and $a, b \in R$. Then $a \sim b$ if and only if $a \mid b$ and $b \mid a$.
 
-**Proof.** If $a = ub$ with $u$ a unit then $b = u^{-1}a$, so each divides the other. Conversely suppose $b = ax$ and $a = by$. If $a = 0$ then $b = a x = 0$, and $a = 1 \cdot b$. If $a \neq 0$, then $a = axy$ and cancellation gives $1 = xy$, so $x$ is a unit and $a \sim b$.
+**Proof.** If $a = ub$ with $u$ an invertible element then $b = u^{-1}a$, so each divides the other. Conversely suppose $b = ax$ and $a = by$. If $a = 0$ then $b = a x = 0$, and $a = 1 \cdot b$. If $a \neq 0$, then $a = axy$ and cancellation gives $1 = xy$, so $x$ is invertible and $a \sim b$.
 
-This is the point at which the domain hypothesis is used: in a general commutative ring the conclusion fails, and what breaks it is that the two cofactors need not be units. In $R = k[s,t]/(s^2, st^2)$ the element $s$ divides $s + st$, because $s + st = s(1+t)$, and $s + st$ divides $s$, because $s = (s+st)(1-t)$; but the units of $R$ are the classes $c + s(b + et)$ with $c \neq 0$, and these multiply $s$ to $cs$, so $s+st$ is not an associate of $s$.
+This is the point at which the domain hypothesis is used: in a general commutative ring the conclusion fails, and what breaks it is that the two cofactors need not be units. In $R = k[s,t]/(s^2, st^2)$ the element $s$ divides $s + st$, because $s + st = s(1+t)$, and $s + st$ divides $s$, because $s = (s+st)(1-t)$; but the invertibles of $R$ are the classes $c + s(b + et)$ with $c \neq 0$, and these multiply $s$ to $cs$, so $s+st$ is not an associate of $s$.
 
-**Corollary.** Association is an equivalence relation, and divisibility induces a partial order on the associate classes of an integral domain: $[a] \leq [b]$ exactly when $a \mid b$. The class of $0$ is the largest element, and the class of the units is the smallest.
+**Corollary.** Association is an equivalence relation, and divisibility induces a partial order on the associate classes of an integral domain: $[a] \leq [b]$ exactly when $a \mid b$. The class of $0$ is the largest element, and the class of the invertibles is the smallest.
 
 **Proof.** Reflexivity, symmetry and transitivity follow from $1 \in R^{\times}$ and the closure of $R^{\times}$ under inverses and products; antisymmetry on classes is the proposition above.
 
@@ -93,9 +93,9 @@ This is the point at which the domain hypothesis is used: in a general commutati
 
 Immediately above a domain in the chain one asks which elements cannot be factored further and which control divisibility of products.
 
-**Definition.** Let $R$ be an integral domain. A nonzero non-unit $a \in R$ is
+**Definition.** Let $R$ be an integral domain. A nonzero non-invertible $a \in R$ is
 
-**(a)** **irreducible** if every factorisation $a = bc$ has $b$ or $c$ a unit;
+**(a)** **irreducible** if every factorisation $a = bc$ has $b$ or $c$ an invertible element;
 
 **(b)** **prime** if $a \mid bc$ always implies $a \mid b$ or $a \mid c$.
 
@@ -105,7 +105,7 @@ Immediately above a domain in the chain one asks which elements cannot be factor
 
 **(b)** The ideal $(p)$ generated by a prime element $p$ is a prime ideal, and conversely if $(p)$ is prime and $p \neq 0$ then $p$ is prime.
 
-**Proof.** (a) Let $p$ be prime and $p = bc$. Since $p \mid bc = p$, primality gives $p \mid b$ or $p \mid c$. If $p \mid b$, say $b = pd$, then $p = pdc$ and cancellation of $p \neq 0$ gives $dc = 1$, so $c$ is a unit; the other case is symmetric. (b) $ab \in (p)$ means $p \mid ab$, which for prime $p$ means $p \mid a$ or $p \mid b$, that is $a \in (p)$ or $b \in (p)$; conversely $(p)$ prime says $p \mid ab$ implies $p \mid a$ or $p \mid b$.
+**Proof.** (a) Let $p$ be prime and $p = bc$. Since $p \mid bc = p$, primality gives $p \mid b$ or $p \mid c$. If $p \mid b$, say $b = pd$, then $p = pdc$ and cancellation of $p \neq 0$ gives $dc = 1$, so $c$ is invertible; the other case is symmetric. (b) $ab \in (p)$ means $p \mid ab$, which for prime $p$ means $p \mid a$ or $p \mid b$, that is $a \in (p)$ or $b \in (p)$; conversely $(p)$ prime says $p \mid ab$ implies $p \mid a$ or $p \mid b$.
 
 **Remark.** The converse of (a) fails, and its failure is the arithmetic obstruction that the rung *Unique Factorisation Domains*, below this article in this category, is defined to exclude: in $\mathbb{Z}[\sqrt{-5}]$ the element $2$ is irreducible but not prime. What is missing in a general domain is not the factorisation theory but the existence of greatest common divisors, which *GCD Domains*, below this article in this category, adds.
 
@@ -201,7 +201,7 @@ and $a_i - a_1 \neq 0$ since the roots are distinct, so $g(a_i) = 0$ because $R$
 
 **Corollary.** A finite integral domain is a field.
 
-**Proof.** Let $R$ be a finite domain and $a \in R$ nonzero. The powers $a, a^2, a^3, \ldots$ cannot all be distinct in the finite set $R$, so $a^i = a^j$ for some $i > j \geq 1$. Then $a^j (a^{i-j} - 1) = 0$ with $a^j \neq 0$, so $a^{i-j} = 1$ and $a \cdot a^{i-j-1} = 1$ exhibits $a$ as a unit.
+**Proof.** Let $R$ be a finite domain and $a \in R$ nonzero. The powers $a, a^2, a^3, \ldots$ cannot all be distinct in the finite set $R$, so $a^i = a^j$ for some $i > j \geq 1$. Then $a^j (a^{i-j} - 1) = 0$ with $a^j \neq 0$, so $a^{i-j} = 1$ and $a \cdot a^{i-j-1} = 1$ exhibits $a$ as an invertible element.
 
 ---
 
@@ -219,7 +219,7 @@ $$
 N(a + b\sqrt{d}) = a^2 - d b^2 = (a + b\sqrt{d})(a - b\sqrt{d}),
 $$
 
-which is multiplicative, so that $N(xy) = N(x)N(y)$, and an element is a unit exactly when its norm is a unit of $\mathbb{Z}$, that is, when $N(x) = \pm 1$; when $d < 0$ the norm is non-negative and the condition is $N(x) = 1$. For $d = -1$ and $d = -5$ the norm reads $N(a+bi) = a^2 + b^2$ and $N(a + b\sqrt{-5}) = a^2 + 5b^2$. This $N$ is the norm on a quadratic ring; it is not the Euclidean degree function of *Euclidean Domains*, below this article in this category, although the letter is the same.
+which is multiplicative, so that $N(xy) = N(x)N(y)$, and an element is invertible exactly when its norm is invertible in $\mathbb{Z}$, that is, when $N(x) = \pm 1$; when $d < 0$ the norm is non-negative and the condition is $N(x) = 1$. For $d = -1$ and $d = -5$ the norm reads $N(a+bi) = a^2 + b^2$ and $N(a + b\sqrt{-5}) = a^2 + 5b^2$. This $N$ is the norm on a quadratic ring; it is not the Euclidean degree function of *Euclidean Domains*, below this article in this category, although the letter is the same.
 
 ### Where the Rung Sits
 
@@ -241,7 +241,7 @@ are two factorisations into irreducibles differing neither by order nor by units
 
 An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors, equivalently a commutative ring in which $ab = 0$ forces $a = 0$ or $b = 0$. Cancellation holds for nonzero factors, subrings and polynomial rings over a domain remain domains, and a product of two nonzero rings is never a domain. Divisibility is a preorder, equivalent to reverse inclusion of principal ideals, and it becomes a partial order on associate classes because in a domain $a \mid b$ and $b \mid a$ force $a \sim b$; this is the point at which domains are separated from general commutative rings.
 
-A nonzero non-unit is irreducible when it admits no nontrivial factorisation and prime when it divides a product only through its factors; every prime is irreducible, and the converse can fail. The characteristic of a domain is $0$ or a prime, and the prime subring is $\mathbb{Z}$ in characteristic $0$ and the field $\mathbb{F}_p$ in characteristic $p$; every domain contains exactly one smallest field, $\mathbb{Q}$ or $\mathbb{F}_p$. Over a domain a polynomial of degree $< m$ with $m$ distinct roots vanishes identically, so a nonzero polynomial of degree $n$ has at most $n$ roots, and a finite domain is a field. The greatest common divisor, the fraction field and the factorisation rungs are the content of articles below this one in the category, each of which is a statement about how well divisibility in a domain behaves.
+A nonzero non-invertible is irreducible when it admits no nontrivial factorisation and prime when it divides a product only through its factors; every prime is irreducible, and the converse can fail. The characteristic of a domain is $0$ or a prime, and the prime subring is $\mathbb{Z}$ in characteristic $0$ and the field $\mathbb{F}_p$ in characteristic $p$; every domain contains exactly one smallest field, $\mathbb{Q}$ or $\mathbb{F}_p$. Over a domain a polynomial of degree $< m$ with $m$ distinct roots vanishes identically, so a nonzero polynomial of degree $n$ has at most $n$ roots, and a finite domain is a field. The greatest common divisor, the fraction field and the factorisation rungs are the content of articles below this one in the category, each of which is a statement about how well divisibility in a domain behaves.
 
 ## Summary of Notation
 
@@ -249,11 +249,11 @@ A nonzero non-unit is irreducible when it admits no nontrivial factorisation and
 |---|---|
 | $R$ | Integral domain (commutative ring with $1 \neq 0$ and no zero divisors) |
 | $K$, $F$ | Fields, where the field axioms are needed |
-| $R^{\times}$ | Group of units |
+| $R^{\times}$ | Group of invertibles |
 | $a \mid b$ | $a$ divides $b$, that is, $b = ac$ for some $c \in R$ |
 | $a \sim b$ | Associates, $a = ub$ with $u \in R^{\times}$ |
 | $(a)$, $(a, b)$ | Principal ideal generated by $a$; ideal generated by $a$ and $b$ |
-| irreducible, prime | Nonzero non-unit admitting no nontrivial factorisation; dividing products only through factors |
+| irreducible, prime | Nonzero non-invertible admitting no nontrivial factorisation; dividing products only through factors |
 | $R[x]$ | Polynomial ring in one indeterminate |
 | $f(a)$ | Evaluation of $f$ at $a$; $a$ a root when $f(a) = 0$ |
 | $\operatorname{char} R$ | Characteristic of $R$ |

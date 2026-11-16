@@ -83,7 +83,7 @@ The coefficients are computed by running the divisions forwards as in the proof,
 
 **Proof.** The first implication is the theorem above, the second is *Principal Ideal Domains*, above this article in this category, and the third is the definition of a unique factorisation domain. For the strictness: $\mathbb{Z}[(1+\sqrt{-19})/2]$ is a principal ideal domain that is not Euclidean, with its citation in the last section of this article; $\mathbb{Z}[x]$ is a unique factorisation domain that is not principal, by *Principal Ideal Domains*, above; and $\mathbb{Z}[\sqrt{-5}]$ is an integral domain that is not a unique factorisation domain, by *Unique Factorisation Domains*, above.
 
-**Corollary.** In a Euclidean domain every nonzero non-unit factors into irreducibles, every irreducible is prime, every pair has a gcd, and the gcd is computed by the Euclidean algorithm. In particular $\mathbb{Z}$ and, for a field $F$, the ring $F[x]$ are unique factorisation domains.
+**Corollary.** In a Euclidean domain every nonzero non-invertible factors into irreducibles, every irreducible is prime, every pair has a gcd, and the gcd is computed by the Euclidean algorithm. In particular $\mathbb{Z}$ and, for a field $F$, the ring $F[x]$ are unique factorisation domains.
 
 **Proof.** A Euclidean domain is principal, hence Bézout and Noetherian, hence satisfies the criteria of *Principal Ideal Domains*, above, and of *Unique Factorisation Domains*, above.
 
@@ -119,7 +119,7 @@ and $\tfrac12 N(w) < N(w)$ because $N(w) > 0$.
 
 **Corollary.** $\mathbb{Z}[i]$ is a Euclidean domain with degree function $N$, hence a unique factorisation domain; its units are $\pm 1, \pm i$, the elements with $N = 1$.
 
-**Proof.** The lemma is the division property. The units are the elements with $N = 1$, namely $a + bi$ with $a^2 + b^2 = 1$, which are exactly $\pm 1$ and $\pm i$; unique factorisation follows from the Euclidean chain above.
+**Proof.** The lemma is the division property. The invertibles are the elements with $N = 1$, namely $a + bi$ with $a^2 + b^2 = 1$, which are exactly $\pm 1$ and $\pm i$; unique factorisation follows from the Euclidean chain above.
 
 ### The Euclidean Algorithm in $\mathbb{Z}[i]$
 
@@ -143,13 +143,13 @@ so $3 + 4i = (-2-i)(-2-i) + 0$ and $\gcd(5, 3+4i) \sim -2-i$, with $N = 5$. This
 
 **(c)** $N(\pi) = p$ for a rational prime $p$ with $p = 2$ or $p \equiv 1 \pmod 4$, equivalently $\pi \sim a \pm bi$ with $a^2 + b^2 = p$.
 
-**Proof.** If $N(\pi)$ is a rational prime then $\pi$ is irreducible, since a factorisation $\pi = zw$ with both factors non-units gives $N(\pi) = N(z)N(w)$ with both $N$-values greater than $1$.
+**Proof.** If $N(\pi)$ is a rational prime then $\pi$ is irreducible, since a factorisation $\pi = zw$ with both factors non-invertibles gives $N(\pi) = N(z)N(w)$ with both $N$-values greater than $1$.
 
 Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ is irreducible in $\mathbb{Z}[i]$: a nontrivial factorisation $p = zw$ would give $N(z), N(w) > 1$ with $N(z)N(w) = p^2$, hence $N(z) = p$, that is, $p = a^2 + b^2$; but squares are $0$ or $1$ modulo $4$, so a sum of two squares is never $3$ modulo $4$. If $p \equiv 1 \pmod 4$ then by the two-squares theorem, cited as standard, $p = a^2 + b^2 = (a+bi)(a-bi)$ with both factors of $N$-value $p$, so $p$ is reducible and $a \pm bi$ has prime $N$-value. If $p = 2$ then $2 = (1+i)(1-i) = -i(1+i)^2$ and $N(1+i) = 2$.
 
-Conversely, let $\pi$ be irreducible and let $p$ be a rational prime dividing $N(\pi) = \pi\bar\pi$. If $p \equiv 3 \pmod 4$ then $p$ is irreducible, hence prime because $\mathbb{Z}[i]$ is a unique factorisation domain, so $p \mid \pi$ or $p \mid \bar\pi$, and the second gives $p \mid \pi$ as well; writing $\pi = pc$ and taking $N$-values gives $N(\pi) = p^2 N(c)$, and since $\pi$ is irreducible and $p$ is a non-unit, $c$ is a unit, so $\pi \sim p$. If $p = 2$ or $p \equiv 1 \pmod 4$, the two previous paragraphs produce an irreducible $\pi_0$ with $N(\pi_0) = p$; then $\pi_0 \mid \pi \bar\pi$, so $\pi_0 \mid \pi$ or $\pi_0 \mid \bar\pi$, and in either case writing $\pi = \pi_0 c$ and comparing $N$-values gives $N(\pi) = p N(c)$ with $c$ a unit, so $N(\pi) = p$.
+Conversely, let $\pi$ be irreducible and let $p$ be a rational prime dividing $N(\pi) = \pi\bar\pi$. If $p \equiv 3 \pmod 4$ then $p$ is irreducible, hence prime because $\mathbb{Z}[i]$ is a unique factorisation domain, so $p \mid \pi$ or $p \mid \bar\pi$, and the second gives $p \mid \pi$ as well; writing $\pi = pc$ and taking $N$-values gives $N(\pi) = p^2 N(c)$, and since $\pi$ is irreducible and $p$ is a non-invertible, $c$ is invertible, so $\pi \sim p$. If $p = 2$ or $p \equiv 1 \pmod 4$, the two previous paragraphs produce an irreducible $\pi_0$ with $N(\pi_0) = p$; then $\pi_0 \mid \pi \bar\pi$, so $\pi_0 \mid \pi$ or $\pi_0 \mid \bar\pi$, and in either case writing $\pi = \pi_0 c$ and comparing $N$-values gives $N(\pi) = p N(c)$ with $c$ an invertible element, so $N(\pi) = p$.
 
-**Corollary (the rational primes in $\mathbb{Z}[i]$).** Let $p$ be a rational prime. Then exactly one of the following holds, and in each case the factorisation is unique up to units.
+**Corollary (the rational primes in $\mathbb{Z}[i]$).** Let $p$ be a rational prime. Then exactly one of the following holds, and in each case the factorisation is unique up to invertibles.
 
 **(a)** $p = -i(1+i)^2$: the prime $2$ ramifies, and $1 + i$ is the unique Gaussian prime above it.
 
@@ -206,7 +206,7 @@ The Gaussian integers $\mathbb{Z}[i]$ are Euclidean for the degree function $N(a
 | Symbol | Meaning |
 |---|---|
 | $R$ | Integral domain, and a Euclidean domain where stated |
-| $R^{\times}$ | Group of units |
+| $R^{\times}$ | Group of invertibles |
 | $N$ | Euclidean degree function on $R \setminus \{0\}$, values in $\mathbb{Z}_{\geq 0}$ |
 | $N(a + bi) = a^2 + b^2$ | The multiplicative degree function on $\mathbb{Z}[i]$ |
 | $N(a + b\sqrt{-5}) = a^2 + 5b^2$ | The multiplicative degree function on $\mathbb{Z}[\sqrt{-5}]$, of *Integral Domains*, above |

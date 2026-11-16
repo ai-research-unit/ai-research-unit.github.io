@@ -55,13 +55,13 @@ and the unsigned two-sided operators compose by $\Sigma_{a,b}\circ\Sigma_{c,d}=\
 
 **Corollary.** The signed two-sided operators form a monoid under composition, with unit $\Sigma^{\alpha}_{1,1}$; the unsigned two-sided operators form a monoid with unit $\Sigma_{1,1}$. The product of two signed two-sided operators is a signed two-sided operator, not an unsigned one; the product of a signed and an unsigned two-sided operator is a signed two-sided operator, and the unsigned part is a submonoid.
 
-**Theorem.** The signed two-sided operator $\Sigma^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are units of $A$, and then
+**Theorem.** The signed two-sided operator $\Sigma^{\alpha}_{a,b}$ is invertible if and only if $a$ and $b$ are invertible in $A$, and then
 
 $$
 \boxed{\;\bigl(\Sigma^{\alpha}_{a,b}\bigr)^{-1}=\Sigma^{\alpha}_{\alpha(a^{-1}),\,\alpha(b^{-1})}\;} .
 $$
 
-**Proof.** Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is a unit, and right multiplication by $b$ is invertible, so $b$ is a unit.
+**Proof.** Compose on the right: $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(b^{-1})}=\Sigma^{\alpha}_{a\alpha(\alpha(a^{-1})),\ \alpha(\alpha(b^{-1}))b}=\Sigma^{\alpha}_{a a^{-1},\ b^{-1}b}=\Sigma^{\alpha}_{1,1}$, by the composition law, the multiplicativity of $\alpha$ and $\alpha^2=\mathrm{id}$; the same computation with the factors interchanged gives the left inverse. Conversely if $\Sigma^{\alpha}_{a,b}$ is invertible then left multiplication by $a$ is invertible, so $a$ is invertible, and right multiplication by $b$ is invertible, so $b$ is invertible.
 
 ## The Parity of the Two-Sided Operators
 
@@ -77,13 +77,13 @@ $$
 
 **Definition.** An operator $S$ on $A$ is an **involution**, or a **reflection**, when $S^2=\mathrm{id}$, and a signed two-sided operator is a **signed reflection** when it is an involution.
 
-**Theorem.** If $a$ is a unit with $a\,\alpha(a)=1$, then the signed two-sided operator
+**Theorem.** If $a$ is invertible with $a\,\alpha(a)=1$, then the signed two-sided operator
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,\,a^{-1}}(x)=a\,\alpha(x)\,a^{-1}\;}
 $$
 
-is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}$ is an involution whenever $a,b$ are units with $a\alpha(a)=1$ and $b\alpha(b)=1$ and $a,b$ lie in the centre. An element $x$ is fixed by $\Sigma^{\alpha}_{a,a^{-1}}$ exactly when $\alpha(x)=a^{-1}xa$.
+is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}$ is an involution whenever $a,b$ are invertible with $a\alpha(a)=1$ and $b\alpha(b)=1$ and $a,b$ lie in the centre. An element $x$ is fixed by $\Sigma^{\alpha}_{a,a^{-1}}$ exactly when $\alpha(x)=a^{-1}xa$.
 
 **Proof.** By the composition law $\Sigma^{\alpha}_{a,a^{-1}}\circ\Sigma^{\alpha}_{a,a^{-1}}=\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$; with $a\alpha(a)=1$ the first factor is $1$, and the second is $\alpha(a^{-1})a^{-1}=(a\alpha(a))^{-1}=1$. The general condition is the same computation with two pairs; the fixed-point statement is $a\alpha(x)a^{-1}=x$.
 
@@ -91,12 +91,12 @@ is an involution, a **signed reflection**; more generally $\Sigma^{\alpha}_{a,b}
 
 ## Worked Case: The Exterior Algebra
 
-Let $A=\Lambda^\bullet V$ be the exterior algebra of a finite-dimensional $K$-vector space $V$, graded by the degree modulo two, with the grade involution $\alpha$ acting by $(-1)^k$ on $\Lambda^kV$. For homogeneous $a,b$ the signed two-sided operator is $\Sigma^{\alpha}_{a,b}(\omega)=a\wedge\alpha(\omega)\wedge b$, and the composition law reads $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\wedge\alpha(c),\alpha(d)\wedge b}$. For $a$ of even degree and $b=a^{-1}$ when $a$ is a unit in the even part, the two-sided operator is an unsigned conjugation; for $a$ of odd degree, for example $a=v$ a vector, one has $\alpha(v)=-v$ and $\Sigma^{\alpha}_{v,v}(\omega)=v\wedge\alpha(\omega)\wedge v=v\wedge(-1)^{|\omega|}\omega\wedge v$, which is $0$ on the whole algebra because $v\wedge v=0$. The degenerate case shows that the involution condition is not automatic and is the reason the next entry separates the nondegenerate from the degenerate correspondences.
+Let $A=\Lambda^\bullet V$ be the exterior algebra of a finite-dimensional $K$-vector space $V$, graded by the degree modulo two, with the grade involution $\alpha$ acting by $(-1)^k$ on $\Lambda^kV$. For homogeneous $a,b$ the signed two-sided operator is $\Sigma^{\alpha}_{a,b}(\omega)=a\wedge\alpha(\omega)\wedge b$, and the composition law reads $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\wedge\alpha(c),\alpha(d)\wedge b}$. For $a$ of even degree and $b=a^{-1}$ when $a$ is invertible in the even part, the two-sided operator is an unsigned conjugation; for $a$ of odd degree, for example $a=v$ a vector, one has $\alpha(v)=-v$ and $\Sigma^{\alpha}_{v,v}(\omega)=v\wedge\alpha(\omega)\wedge v=v\wedge(-1)^{|\omega|}\omega\wedge v$, which is $0$ on the whole algebra because $v\wedge v=0$. The degenerate case shows that the involution condition is not automatic and is the reason the next entry separates the nondegenerate from the degenerate correspondences.
 
 
 ## Summary
 
-On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the **unsigned two-sided operator** is $\Sigma_{a,b}(x)=axb$ and the **signed two-sided operator** is $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b=\Sigma_{a,b}\alpha$. The signed two-sided operators compose by $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}$, so they form a monoid with unit $\Sigma^{\alpha}_{1,1}$, and the product of two signed two-sided operators is again signed; a signed two-sided operator is invertible exactly when its two elements are units. Homogeneous elements give homogeneous two-sided operators of degree $|a|+|b|$, the twist contributing the sign $(-1)^k$ on $A^k$. A signed two-sided operator is an involution, a **signed reflection**, exactly under the stated centrality conditions, and the special case $\Sigma^{\alpha}_{a,a^{-1}}$ with $a\alpha(a)=1$ gives the algebraic reflection of a Clifford algebra, model only, while in the exterior algebra an odd element with $a\wedge a=0$ gives the degenerate vanishing. The reflections, the one-sided signed operators and the graded actions are the companion entries, and the adjoints belong to the `- * Operator Theory` group.
+On a $\mathbb{Z}/2$-graded algebra $A$ with grade involution $\alpha$, the **unsigned two-sided operator** is $\Sigma_{a,b}(x)=axb$ and the **signed two-sided operator** is $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b=\Sigma_{a,b}\alpha$. The signed two-sided operators compose by $\Sigma^{\alpha}_{a,b}\circ\Sigma^{\alpha}_{c,d}=\Sigma^{\alpha}_{a\alpha(c),\alpha(d)b}$, so they form a monoid with unit $\Sigma^{\alpha}_{1,1}$, and the product of two signed two-sided operators is again signed; a signed two-sided operator is invertible exactly when its two elements are invertible. Homogeneous elements give homogeneous two-sided operators of degree $|a|+|b|$, the twist contributing the sign $(-1)^k$ on $A^k$. A signed two-sided operator is an involution, a **signed reflection**, exactly under the stated centrality conditions, and the special case $\Sigma^{\alpha}_{a,a^{-1}}$ with $a\alpha(a)=1$ gives the algebraic reflection of a Clifford algebra, model only, while in the exterior algebra an odd element with $a\wedge a=0$ gives the degenerate vanishing. The reflections, the one-sided signed operators and the graded actions are the companion entries, and the adjoints belong to the `- * Operator Theory` group.
 
 ## Summary of Notation
 

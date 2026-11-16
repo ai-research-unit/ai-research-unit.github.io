@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The algebra $M_n(\mathbb{R})$ is a Euclidean space and its unit group has exactly two connected components, cut by the sign of the determinant; the sign is the only obstruction to a path.** The space itself is contractible, so all of its topology sits in the complement of the singular set. That complement retracts onto the orthogonal group, and the two components of the orthogonal group are the two signs.
+**The algebra $M_n(\mathbb{R})$ is a Euclidean space and its group of invertibles has exactly two connected components, cut by the sign of the determinant; the sign is the only obstruction to a path.** The space itself is contractible, so all of its topology sits in the complement of the singular set. That complement retracts onto the orthogonal group, and the two components of the orthogonal group are the two signs.
 
-The article proves that $M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$ and contractible, that $\mathrm{GL}_n(\mathbb{R})$ is open and dense with two path-connected components, that the components are homeomorphic, that $\mathrm{O}(n)$ is a deformation retract, that the fundamental group of the identity component is $\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$, and that the singular set $\{\det=0\}$ is an algebraic hypersurface of dimension $n^{2}-1$. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* for the determinant and the unit group, and it defers the topology of the two halves to *The Two Halves and Their Topology*.
+The article proves that $M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$ and contractible, that $\mathrm{GL}_n(\mathbb{R})$ is open and dense with two path-connected components, that the components are homeomorphic, that $\mathrm{O}(n)$ is a deformation retract, that the fundamental group of the identity component is $\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$, and that the singular set $\{\det=0\}$ is an algebraic hypersurface of dimension $n^{2}-1$. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* for the determinant and the group of invertibles, and it defers the topology of the two halves to *The Two Halves and Their Topology*.
 
 Throughout $n\ge2$ and $M_n=M_n(\mathbb{R})$.
 
@@ -16,7 +16,7 @@ Throughout $n\ge2$ and $M_n=M_n(\mathbb{R})$.
 
 **The space is contractible.** The map $H(A,t)=(1-t)A$ is continuous on $M_n\times[0,1]$, it starts at the identity of the space and ends at the zero matrix. So every point is joined to $0$ by a path, and the whole space is contractible. In particular $M_n$ is simply connected and all of its homotopy groups vanish.
 
-## The Unit Group Is Open and Dense
+## The Group of Invertibles Is Open and Dense
 
 **Theorem.** $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is open and dense in $M_n$, and its complement $\Sigma=\{\det=0\}$ is closed with empty interior.
 
@@ -36,9 +36,9 @@ $$
 \operatorname{sgn}\det:\mathrm{GL}_n(\mathbb{R})\longrightarrow\{+1,-1\}.
 $$
 
-Since $\{+1,-1\}$ is discrete, the sign is constant on each connected component of the unit group. So the unit group has at least two components, one of each sign.
+Since $\{+1,-1\}$ is discrete, the sign is constant on each connected component of the group of invertibles. So the group of invertibles has at least two components, one of each sign.
 
-**The two sets are homeomorphic.** Let $D=\operatorname{diag}(-1,1,\dots,1)$. Then $\det D=-1$ and the map $A\mapsto DA$ is a homeomorphism of $\mathrm{GL}_n(\mathbb{R})$ carrying $\mathrm{GL}^{+}$ onto $\mathrm{GL}^{-}$, with inverse $A\mapsto DA$. Multiplication by $D$ is its own inverse, so the two halves of the unit group are homeomorphic and have the same homotopy type. Measured at $n=3$, $\det D=-1$ and $\det(DA)=-\det A$ for random $A$.
+**The two sets are homeomorphic.** Let $D=\operatorname{diag}(-1,1,\dots,1)$. Then $\det D=-1$ and the map $A\mapsto DA$ is a homeomorphism of $\mathrm{GL}_n(\mathbb{R})$ carrying $\mathrm{GL}^{+}$ onto $\mathrm{GL}^{-}$, with inverse $A\mapsto DA$. Multiplication by $D$ is its own inverse, so the two halves of the group of invertibles are homeomorphic and have the same homotopy type. Measured at $n=3$, $\det D=-1$ and $\det(DA)=-\det A$ for random $A$.
 
 ## The Two Components
 
@@ -46,7 +46,7 @@ Since $\{+1,-1\}$ is discrete, the sign is constant on each connected component 
 
 *Proof.* Let $A$ have $\det A>0$ and write its polar decomposition $A=UP$ with $U$ orthogonal and $P$ positive definite. Then $\det U=\det A/\det P>0$, so $U\in\mathrm{SO}(n)$. Every element of $\mathrm{SO}(n)$ is $\exp(S)$ for an antisymmetric $S$, so $t\mapsto\exp(tS)$ joins $U$ to $\mathrm{I}$ inside $\mathrm{SO}(n)$, and $t\mapsto P^{t}$ joins $P$ to $\mathrm{I}$ inside the positive definite matrices, a convex set. The product $t\mapsto\exp(tS)P^{t}$ is a path in $\mathrm{GL}^{+}$ from $A$ to $\mathrm{I}$. The same argument after multiplication by $D$ handles $\mathrm{GL}^{-}$, which is the homeomorphic image $D\,\mathrm{GL}^{+}$.
 
-**The two components are the two signs.** The sign is continuous and the unit group has exactly two path-connected pieces, so two matrices lie in the same component exactly when their determinants have the same sign. Measured at $n=3$, the segment from $\mathrm{I}$ to $D$ has determinant $1-2t$, with values $1.0,0.8,0.6,0.4,0.2,0.0,-0.2,-0.4,-0.6,-0.8,-1.0$ at the eleven points $t=0,0.1,\dots,1$: the path crosses the singular set at $t=1/2$ and changes component there.
+**The two components are the two signs.** The sign is continuous and the group of invertibles has exactly two path-connected pieces, so two matrices lie in the same component exactly when their determinants have the same sign. Measured at $n=3$, the segment from $\mathrm{I}$ to $D$ has determinant $1-2t$, with values $1.0,0.8,0.6,0.4,0.2,0.0,-0.2,-0.4,-0.6,-0.8,-1.0$ at the eleven points $t=0,0.1,\dots,1$: the path crosses the singular set at $t=1/2$ and changes component there.
 
 **The two components are not the two halves of the algebra.** $\det(-\mathrm{I})=(-1)^{n}$, so $-\mathrm{I}$ lies in $\mathrm{GL}^{+}$ for even $n$ and in $\mathrm{GL}^{-}$ for odd $n$; and the symmetric half meets both components, since $\mathrm{I}$ and $-\mathrm{I}$ are both symmetric. So the cut by the sign is topological, not linear, as in *The Matrix Algebra $M_n(\mathbb{R})$*.
 
@@ -58,13 +58,13 @@ Since $\{+1,-1\}$ is discrete, the sign is constant on each connected component 
 
 *Proof.* The polar decomposition writes every invertible $A$ uniquely as $UP$ with $U\in\mathrm{O}(n)$ and $P$ positive definite, both depending continuously on $A$. The map $r(A)=U$ is continuous, it is the identity on $\mathrm{O}(n)$, and $H(A,t)=U\,P^{t}$ deforms the identity of $\mathrm{GL}$ to $r$ through maps that fix $\mathrm{O}(n)$. So $\mathrm{O}(n)$ is a deformation retract.
 
-**The unit group and the orthogonal group have the same homotopy type.** Hence
+**The group of invertibles and the orthogonal group have the same homotopy type.** Hence
 
 $$
 \mathrm{GL}_n(\mathbb{R})\simeq\mathrm{O}(n),\qquad \mathrm{GL}_n(\mathbb{R})^{+}\simeq\mathrm{SO}(n),
 $$
 
-and the second retraction is the first followed by the observation that $U$ has the sign of $\det A$. So the topology of the unit group is the topology of the orthogonal group, and the two components are the two components of $\mathrm{O}(n)$.
+and the second retraction is the first followed by the observation that $U$ has the sign of $\det A$. So the topology of the group of invertibles is the topology of the orthogonal group, and the two components are the two components of $\mathrm{O}(n)$.
 
 **The dimensions agree.** $\dim\mathrm{GL}_n(\mathbb{R})=n^{2}$ and $\dim\mathrm{O}(n)=n(n-1)/2$, so the retraction drops $n^{2}-n(n-1)/2=n(n+1)/2$ dimensions, the dimension of the positive definite cone. Measured at $n=3$, the retraction of a random invertible matrix is orthogonal to machine precision.
 
@@ -76,7 +76,7 @@ and the second retraction is the first followed by the observation that $U$ has 
 
 **The case $n\ge3$.** $\mathrm{SO}(n)$ is the quotient of its universal cover, the spin group, by a group of order two, and $\pi_1(\mathrm{SO}(n))=\mathbb{Z}/2$ for $n\ge3$. The generator is the loop of rotations by a full turn in a fixed plane, which is not null-homotopic for $n\ge3$ although it lifts to a path in the spin group joining the two preimages of the identity. So the fundamental group has order two.
 
-**The non-identity component has the same fundamental group.** $\mathrm{GL}^{-}=D\,\mathrm{GL}^{+}$ and multiplication by $D$ is a homeomorphism, so $\pi_1(\mathrm{GL}^{-})=\pi_1(\mathrm{GL}^{+})$. The unit group as a whole is disconnected, so it has no single fundamental group: the groupoid of paths has two objects, one for each component, and each object has the group above.
+**The non-identity component has the same fundamental group.** $\mathrm{GL}^{-}=D\,\mathrm{GL}^{+}$ and multiplication by $D$ is a homeomorphism, so $\pi_1(\mathrm{GL}^{-})=\pi_1(\mathrm{GL}^{+})$. The group of invertibles as a whole is disconnected, so it has no single fundamental group: the groupoid of paths has two objects, one for each component, and each object has the group above.
 
 ## The Singular Set
 
@@ -94,18 +94,18 @@ and the second retraction is the first followed by the observation that $U$ has 
 
 **The statement is false over $\mathbb{C}$.** Over $\mathbb{C}$ the determinant is a surjection onto $\mathbb{C}^{\times}$, which is connected, and $\mathrm{GL}_n(\mathbb{C})$ is path connected. So the two components are a real phenomenon, and they come from the two components of $\mathbb{R}^{\times}$ exactly as in *The Matrix Algebra $M_n(\mathbb{R})$*.
 
-**The two components are the two halves of the orthogonal group.** Under the retraction onto $\mathrm{O}(n)$, the positive component goes to $\mathrm{SO}(n)$ and the negative one to the other component of $\mathrm{O}(n)$, the set of orthogonal matrices with determinant $-1$. That set is $D\,\mathrm{SO}(n)$, a homeomorphic copy of $\mathrm{SO}(n)$, so the unit group is the disjoint union of two copies of $\mathrm{SO}(n)$.
+**The two components are the two halves of the orthogonal group.** Under the retraction onto $\mathrm{O}(n)$, the positive component goes to $\mathrm{SO}(n)$ and the negative one to the other component of $\mathrm{O}(n)$, the set of orthogonal matrices with determinant $-1$. That set is $D\,\mathrm{SO}(n)$, a homeomorphic copy of $\mathrm{SO}(n)$, so the group of invertibles is the disjoint union of two copies of $\mathrm{SO}(n)$.
 
 ## Summary
 
-$M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$, hence contractible and simply connected, and all of its topology sits in the subsets defined by polynomial conditions. The unit group $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is open and dense, and the singular set $\Sigma=\{\det=0\}$ is a real algebraic hypersurface of dimension $n^{2}-1$ whose smooth part is the stratum of rank $n-1$. The determinant has two signs, so the unit group has exactly two components, $\mathrm{GL}^{+}$ and $\mathrm{GL}^{-}$, each path connected and each homeomorphic to the other by multiplication by $\operatorname{diag}(-1,1,\dots,1)$. The orthogonal group $\mathrm{O}(n)$ is a deformation retract, so $\mathrm{GL}^{\pm}\simeq\mathrm{SO}(n)$, and $\pi_1(\mathrm{GL}^{+})=\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$. The sign of the determinant is a complete invariant of the component: it is the only obstruction to a path.
+$M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$, hence contractible and simply connected, and all of its topology sits in the subsets defined by polynomial conditions. The group of invertibles $\mathrm{GL}_n(\mathbb{R})=\{\det\ne0\}$ is open and dense, and the singular set $\Sigma=\{\det=0\}$ is a real algebraic hypersurface of dimension $n^{2}-1$ whose smooth part is the stratum of rank $n-1$. The determinant has two signs, so the group of invertibles has exactly two components, $\mathrm{GL}^{+}$ and $\mathrm{GL}^{-}$, each path connected and each homeomorphic to the other by multiplication by $\operatorname{diag}(-1,1,\dots,1)$. The orthogonal group $\mathrm{O}(n)$ is a deformation retract, so $\mathrm{GL}^{\pm}\simeq\mathrm{SO}(n)$, and $\pi_1(\mathrm{GL}^{+})=\mathbb{Z}$ at $n=2$ and $\mathbb{Z}/2$ at $n\ge3$. The sign of the determinant is a complete invariant of the component: it is the only obstruction to a path.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $M_n(\mathbb{R})\cong\mathbb{R}^{n^{2}}$ | the algebra as a topological space, contractible |
-| $\mathrm{GL}_n(\mathbb{R})$ | the unit group, the open dense set $\{\det\ne0\}$ |
+| $\mathrm{GL}_n(\mathbb{R})$ | the group of invertibles, the open dense set $\{\det\ne0\}$ |
 | $\Sigma=\{\det=0\}$ | the singular set, an algebraic hypersurface of dimension $n^{2}-1$ |
 | $\mathrm{GL}^{+}$, $\mathrm{GL}^{-}$ | the components of positive and of negative determinant |
 | $D=\operatorname{diag}(-1,1,\dots,1)$ | the matrix carrying $\mathrm{GL}^{+}$ onto $\mathrm{GL}^{-}$ |
@@ -117,6 +117,6 @@ $M_n(\mathbb{R})$ is homeomorphic to $\mathbb{R}^{n^{2}}$, hence contractible an
 
 - Allen Hatcher, *Algebraic Topology* (Cambridge, 2002), for the fundamental group of the orthogonal groups and the covering by the spin group.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the determinant, the polar decomposition and the orthogonal group.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the determinant, the unit group and the two components.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the determinant, the group of invertibles and the two components.
 - [The Adjoints and the Polar Decomposition of an Operator](the-adjoints-and-the-polar-decomposition-of-an-operator-over-r.html), for the polar decomposition as a retraction.
 - [The Two Halves and Their Topology](the-two-halves-and-their-topology-over-r.html), for the symmetric and antisymmetric halves and their strata.

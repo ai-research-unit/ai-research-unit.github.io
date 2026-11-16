@@ -4,7 +4,7 @@
 
 **The matrix algebra $M_n(\mathbb{R})$ is the algebra of $n\times n$ real matrices, and it is the split real form of $M_n(\mathbb{C})$: same matrix units, same trace, same determinant, and a different geometry.** Every construction of the complex category reads here, and three things change. The transpose is one of two inequivalent involutions. The spectrum need not lie in the base field. The trace form is indefinite.
 
-The article fixes the algebra, its matrix units, its trace and determinant, its centre, its transpose, its trace form and its unit group, and closes with the case $n=2$. It assumes only linear algebra over $\mathbb{R}$, and defers the embedding in $M_n(\mathbb{C})$ to *The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* and the spectral theory to *The Real Spectrum: Real Roots and Conjugate Pairs*.
+The article fixes the algebra, its matrix units, its trace and determinant, its centre, its transpose, its trace form and its group of invertibles, and closes with the case $n=2$. It assumes only linear algebra over $\mathbb{R}$, and defers the embedding in $M_n(\mathbb{C})$ to *The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* and the spectral theory to *The Real Spectrum: Real Roots and Conjugate Pairs*.
 
 Throughout $n\ge2$; the transpose is written ${}^{\mathsf T}$ and the identity is $\mathrm{I}$.
 
@@ -40,7 +40,7 @@ so it is a polynomial in the entries with integer coefficients, and $\det(AB)=\d
 
 **The rank is the dimension of the image.** For $A\in M_n(\mathbb{R})$ the rank $\operatorname{rk}A$ is $\dim\operatorname{im}A$, equal to the largest order of a nonvanishing minor, and $\operatorname{rk}_{\mathbb{C}}A=\operatorname{rk}_{\mathbb{R}}A$ because the minors are the same real polynomials. The eigenvalues do not survive in the same way; *The Element: Rank, Trace, Determinant, Characteristic Polynomial over $\mathbb{R}$* treats that.
 
-**The determinant cuts the algebra into two open halves.** The zero set $\Sigma=\{A:\det A=0\}$ is a hypersurface of dimension $n^{2}-1$ and its complement is the unit group. Since $\mathbb{R}^{\times}$ has two components, so does the complement; over $\mathbb{C}$ it is connected.
+**The determinant cuts the algebra into two open halves.** The zero set $\Sigma=\{A:\det A=0\}$ is a hypersurface of dimension $n^{2}-1$ and its complement is the group of invertibles. Since $\mathbb{R}^{\times}$ has two components, so does the complement; over $\mathbb{C}$ it is connected.
 
 ## The Centre and the Simplicity
 
@@ -113,9 +113,9 @@ The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}(
 
 **No form on $M_n(\mathbb{R})$ is both definite and invariant.** The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. *The Trace Form and Its Indefinite Signature* and *The Hilbert–Schmidt Form: Definite but Not Invariant* prove the two halves of the statement.
 
-## The Unit Group and the Two Components
+## The Group of Invertibles and the Two Components
 
-**The unit group is $\mathrm{GL}_n(\mathbb{R})$, of dimension $n^{2}$.** It is the complement of $\Sigma$, open and dense, and a group under the product. The determinant is a surjective homomorphism
+**The group of invertibles is $\mathrm{GL}_n(\mathbb{R})$, of dimension $n^{2}$.** It is the complement of $\Sigma$, open and dense, and a group under the product. The determinant is a surjective homomorphism
 
 $$
 \det:\mathrm{GL}_n(\mathbb{R})\longrightarrow\mathbb{R}^{\times},
@@ -139,7 +139,7 @@ whose kernel is $\mathrm{SL}_n(\mathbb{R})$, of dimension $n^{2}-1$.
 
 ## Summary
 
-$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The unit group has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.
+$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.
 
 ## Summary of Notation
 
@@ -153,7 +153,7 @@ $M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$,
 | $\operatorname{Sym}_n$, $\operatorname{Skew}_n$ | the symmetric and antisymmetric halves, of dimensions $n(n+1)/2$ and $n(n-1)/2$ |
 | $\sigma_J(A)=-JA^{\mathsf T}J^{-1}$ | the symplectic involution, for even $n$ |
 | $\langle A,B\rangle=\operatorname{tr}(AB)$ | the trace form, of signature $(n(n+1)/2,n(n-1)/2)$ |
-| $\mathrm{GL}_n(\mathbb{R})$, $\mathrm{SL}_n(\mathbb{R})$ | the unit group and its determinant-one subgroup |
+| $\mathrm{GL}_n(\mathbb{R})$, $\mathrm{SL}_n(\mathbb{R})$ | the group of invertibles and its determinant-one subgroup |
 | $\Sigma=\{\det=0\}$ | the singular set, of codimension one |
 
 ## Further Reading

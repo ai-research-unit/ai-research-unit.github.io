@@ -168,9 +168,9 @@ $$
 
 the closed cone whose two sides are the non-negative rays of the two null lines, containing the positive real axis. The radicands with four roots are the interior of the cone, those with two roots are its boundary minus the origin, those with one root are the origin, and those with no roots are the complement.
 
-**Corollary (roots of units and of zero divisors).** If $Q$ is a unit, every root is a unit. If $Q$ is a nonzero zero divisor, every root is a zero divisor. If $Q=0$, the root is $0$.
+**Corollary (roots of invertibles and of zero divisors).** If $Q$ is invertible, every root is invertible. If $Q$ is a nonzero zero divisor, every root is a zero divisor. If $Q=0$, the root is $0$.
 
-**Proof.** A unit has both coordinates nonzero, so a root has both coordinates nonzero, hence is a unit. A zero divisor has exactly one coordinate zero and the other nonzero; a root has the same vanishing coordinate and a nonzero square root in the other, hence is a zero divisor. The origin has the root $0$.
+**Proof.** an invertible element has both coordinates nonzero, so a root has both coordinates nonzero, hence is invertible. A zero divisor has exactly one coordinate zero and the other nonzero; a root has the same vanishing coordinate and a nonzero square root in the other, hence is a zero divisor. The origin has the root $0$.
 
 ## The Three Central Values
 
@@ -246,7 +246,7 @@ $$
 Ζ=\varepsilon_{+}\sqrt{Q_{+}}\,\Pi_{+}+\varepsilon_{-}\sqrt{Q_{-}}\,\Pi_{-},
 $$
 
-over the signs for which the square roots are real. There are four roots when both coordinates of the radicand are positive, two when exactly one is zero and the other positive, one when the radicand is zero, and none when a coordinate is negative. The roots come in opposite pairs except at the origin; the roots of a unit are units, the roots of a nonzero zero divisor are zero divisors, and the root of $0$ is $0$.
+over the signs for which the square roots are real. There are four roots when both coordinates of the radicand are positive, two when exactly one is zero and the other positive, one when the radicand is zero, and none when a coordinate is negative. The roots come in opposite pairs except at the origin; the roots of an invertible element are invertible, the roots of a nonzero zero divisor are zero divisors, and the root of $0$ is $0$.
 
 The three central values give the cardinalities $4,1,0$: four roots of $+1$, the root $0$ of $0$, and no root of $-1$. The image of the square map is the forward cone $Q_{+}\ge0,Q_{-}\ge0$, that is $q\ge|q'|$; the square map is four-to-one over the interior of the cone, two-to-one over the boundary minus the origin, and one-to-one at the origin; up to the sign of the root it is a two-to-one cover of the cone, branched along the boundary, the boundary of the cone being the two non-negative null rays. The order cone is the subject of *The Classes of Element of the Split-Complex Algebra*.
 
@@ -270,5 +270,5 @@ The three central values give the cardinalities $4,1,0$: four roots of $+1$, the
 - [Square Roots of Zero and the Nilpotents of the Split-Complex Algebra](square-roots-of-zero-and-the-nilpotents-of-the-split-complex-algebra.html), for the value $0$ and the absence of nilpotents.
 - [The Classes of Element of the Split-Complex Algebra](the-classes-of-element-of-the-split-complex-algebra.html), for the order cone of squares and the synthesis of the classes.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the null lines on the boundary of the forward cone.
-- [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the units and the zero divisors that the roots preserve.
+- [Norm and Invertibility in the General Split-Complex Algebra](norm-and-invertibility-in-the-general-split-complex-algebra.html), for the invertibles and the zero divisors that the roots preserve.
 - [Split-Complex Algebra](split-complex-algebra.html), for the algebra and its element theory.

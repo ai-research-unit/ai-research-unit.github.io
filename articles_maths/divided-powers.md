@@ -4,7 +4,7 @@
 
 This article introduces the **divided power algebra**, the refinement of the symmetric algebra that remains well behaved when factorials are not invertible. The treatment is introductory and purely mathematical.
 
-The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The reader should have *Symmetric Powers* and *The Symmetric Algebra of a Module* at hand: the divided power algebra is a second algebra with the same degree-one part as the symmetric algebra, differing from it by binomial and factorial coefficients, and coinciding with it exactly when every factorial is a unit. The anti-symmetric analogue, the divided or shuffle treatment of the exterior algebra, is not needed here; the exterior algebra belongs to category 07.
+The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The reader should have *Symmetric Powers* and *The Symmetric Algebra of a Module* at hand: the divided power algebra is a second algebra with the same degree-one part as the symmetric algebra, differing from it by binomial and factorial coefficients, and coinciding with it exactly when every factorial is invertible. The anti-symmetric analogue, the divided or shuffle treatment of the exterior algebra, is not needed here; the exterior algebra belongs to category 07.
 
 The problem the divided power algebra solves is easy to state. In the symmetric algebra the $n$-th power of a degree-one element is again a legitimate element, but the divided $n$-th power $x^n/n!$ is not available once $n!$ fails to be invertible, and in characteristic $p$ the $p$-th power map $x \mapsto x^p$ reaches only the pure monomials $x_i^p$ of the degree-$p$ part, not a monomial such as $x_1 x_2^{p-1}$. The divided power $\gamma_n(x)$ is designed to play the role of $x^n/n!$, and it exists as an operation even when $n!$ does not.
 
@@ -221,7 +221,7 @@ $$
 
 which is the composition law. By the universal property of $\Gamma(M)$ there is therefore an algebra homomorphism $\Gamma(M) \to \operatorname{sym}(M)$ with $\gamma_n(x) \mapsto x^n/n!$, and it is inverse to $c$.
 
-Conversely, suppose $c$ is an isomorphism. Take a free module of rank one, $M = Rx$, so $\operatorname{sym}(M) = R[x]$ and $\Gamma(M) = \bigoplus_n R\gamma_n$. In degree $n$ the map $c_n$ is $R x^n \to R\gamma_n$, $x^n \mapsto \gamma_1^n = n!\,\gamma_n$, so with the chosen bases $c_n$ is multiplication by $n!$ on $R$. If $c$ is an isomorphism then so is $c_n$, and multiplication by $n!$ is an isomorphism of $R$ exactly when $n!$ is a unit. Hence $n!$ is a unit for every $n$, as claimed.
+Conversely, suppose $c$ is an isomorphism. Take a free module of rank one, $M = Rx$, so $\operatorname{sym}(M) = R[x]$ and $\Gamma(M) = \bigoplus_n R\gamma_n$. In degree $n$ the map $c_n$ is $R x^n \to R\gamma_n$, $x^n \mapsto \gamma_1^n = n!\,\gamma_n$, so with the chosen bases $c_n$ is multiplication by $n!$ on $R$. If $c$ is an isomorphism then so is $c_n$, and multiplication by $n!$ is an isomorphism of $R$ exactly when $n!$ is invertible. Hence $n!$ is invertible for every $n$, as claimed.
 
 **Corollary.** Over a $\mathbb{Q}$-algebra, and in particular in characteristic zero, the canonical map is an isomorphism; the divided power algebra and the symmetric algebra coincide. Over $\mathbb{Z}$ or over $\mathbb{F}_p$ they do not.
 

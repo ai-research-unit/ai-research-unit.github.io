@@ -6,7 +6,7 @@
 A two-sided operator on a ring dresses one element between a left and a right factor: for $a, b \in A$ the **unsigned two-sided operator** is
 $\mathcal{T}_{a,b}(x) = axb$. When the ring carries an automorphism $\alpha$ of order two — the **grade involution** — the two-sided operator can be twisted in the middle, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x) = a\,\alpha(x)\,b$. The twist is a single substitution of $\alpha(x)$ for $x$, and it is the operator form of the parity sign that the graded algebras carry: an element of odd degree changes sign under $\alpha$, and the two-sided operator records that sign in the middle factor.
 
-This article defines the two such operators, computes how each is built from the one-sided multiplications of *Left and Right Multiplication in a Ring*, and shows the exact relation between them: $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed two-sided operator is the unsigned one precomposed with the grade involution, and the two coincide when $\alpha = \mathrm{id}$. It then specialises to the **reflections**, the signed two-sided operators $\mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit, and determines when such an operator is an involution: exactly when $u\,\alpha(u)$ is central.
+This article defines the two such operators, computes how each is built from the one-sided multiplications of *Left and Right Multiplication in a Ring*, and shows the exact relation between them: $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed two-sided operator is the unsigned one precomposed with the grade involution, and the two coincide when $\alpha = \mathrm{id}$. It then specialises to the **reflections**, the signed two-sided operators $\mathcal{T}^{\alpha}_{u,u^{-1}}$ by an invertible element, and determines when such an operator is an involution: exactly when $u\,\alpha(u)$ is central.
 
 The article assumes a ring with a grade involution. No involution of the elements is used; the involution $\sigma$ of a ring and the dagger built from it belong to the `* Theory` and `* Operator Theory` groups of this category, and the Hermitian pair, which pairs an element with its dagger, is the corresponding object there. The article stays inside Part I: no distance, norm, form or measure occurs, and the "reflection" is defined algebraically as an operator of order two, without any geometric reading. Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a **grade involution** of $A$, that is, an automorphism with $\alpha^2 = \mathrm{id}$; and $L_a$, $R_b$ are the one-sided multiplications.
 
@@ -36,15 +36,15 @@ The vanishing of the operator is the two-sided condition $\mathcal{T}_{a,b} = 0 
 
 The unsigned two-sided operators are exactly the products of one left and one right multiplication, and the composition law $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ exhibits them as a monoid isomorphic to $A \times A_{\mathrm{opp}}$ acting on $A$.
 
-**Proposition.** The two-sided operators form a submonoid of $\operatorname{End}(A)$ under composition, with identity $\mathcal{T}_{1,1} = \mathrm{id}$, and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are units, in which case
+**Proposition.** The two-sided operators form a submonoid of $\operatorname{End}(A)$ under composition, with identity $\mathcal{T}_{1,1} = \mathrm{id}$, and $\mathcal{T}_{a,b}$ is invertible exactly when $a$ and $b$ are invertible, in which case
 
 $$
 \mathcal{T}_{a,b}^{-1} = \mathcal{T}_{a^{-1},\,b^{-1}} .
 $$
 
-**Proof.** The composition law is closure, and $\mathcal{T}_{1,1}(x) = x$. For invertibility, $\mathcal{T}_{a,b}\mathcal{T}_{a^{-1},b^{-1}} = \mathcal{T}_{1,1} = \mathcal{T}_{a^{-1},b^{-1}}\mathcal{T}_{a,b}$ when $a, b$ are units; conversely if $\mathcal{T}_{a,b}$ is invertible then $\mathcal{T}_{a,b}(A) = aAb = A$, which forces $a$ and $b$ to be units (take $1$ in the image: $a x_1 b = 1 = a x_2 b$ gives left and right inverses).
+**Proof.** The composition law is closure, and $\mathcal{T}_{1,1}(x) = x$. For invertibility, $\mathcal{T}_{a,b}\mathcal{T}_{a^{-1},b^{-1}} = \mathcal{T}_{1,1} = \mathcal{T}_{a^{-1},b^{-1}}\mathcal{T}_{a,b}$ when $a, b$ are invertible; conversely if $\mathcal{T}_{a,b}$ is invertible then $\mathcal{T}_{a,b}(A) = aAb = A$, which forces $a$ and $b$ to be units (take $1$ in the image: $a x_1 b = 1 = a x_2 b$ gives left and right inverses).
 
-**Remark.** The diagonal two-sided operator $\mathcal{T}_{u,u^{-1}}$ with $u$ a unit is the **inner conjugation** $\operatorname{conj}_u(x) = uxu^{-1}$ of *Inner Automorphisms of a Ring*, and the composition law reads $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. The non-diagonal two-sided operators, with $b \neq a^{-1}$, are the general two-sided operators and are not automorphisms.
+**Remark.** The diagonal two-sided operator $\mathcal{T}_{u,u^{-1}}$ with $u$ an invertible element is the **inner conjugation** $\operatorname{conj}_u(x) = uxu^{-1}$ of *Inner Automorphisms of a Ring*, and the composition law reads $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. The non-diagonal two-sided operators, with $b \neq a^{-1}$, are the general two-sided operators and are not automorphisms.
 
 ## The Grade Involution
 
@@ -112,7 +112,7 @@ $$
 
 **Corollary.** The signed two-sided operators form a submonoid of $\operatorname{End}(A)$, with identity $\mathcal{T}^{\alpha}_{1,1} = \alpha$. The monoid law is not the two-sided law of the unsigned case: the composite of $\mathcal{T}^{\alpha}_{a,b}$ and $\mathcal{T}^{\alpha}_{c,d}$ inserts $\alpha$ into the parameters, which is the operator form of the sign rule the grading imposes.
 
-**Proposition (the diagonal case).** For a unit $u$,
+**Proposition (the diagonal case).** For an invertible element $u$,
 
 $$
 \mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\,\alpha(x)\,u^{-1},
@@ -130,7 +130,7 @@ $$
 
 ### Definition and the involutive case
 
-**Definition.** A **reflection** of the graded ring $(A,\alpha)$ is a signed two-sided operator $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^2 = \mathrm{id}$.
+**Definition.** A **reflection** of the graded ring $(A,\alpha)$ is a signed two-sided operator $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ by an invertible element $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^2 = \mathrm{id}$.
 
 **Theorem.** Let $u \in A^\times$. The signed inner conjugation $r_u$ is an involution if and only if $u\,\alpha(u)$ is central; it is then the inner automorphism $\operatorname{conj}_{u\alpha(u)}$ of order two, and it can be written
 
@@ -152,7 +152,7 @@ $$
 
 ## Summary
 
-For a ring $A$ with a grade involution $\alpha$, the **unsigned two-sided operator** is $\mathcal{T}_{a,b}(x) = axb = L_aR_b$, with composition $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and inverses $\mathcal{T}_{a^{-1},b^{-1}}$ on the units, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$. The two are related by $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed two-sided operator is the unsigned one at the grade-involution of its argument, and they coincide exactly when $\alpha = \mathrm{id}$. The signed two-sided operators compose as $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$, a monoid law with identity $\alpha$ that inserts the grade involution into the parameters, which is the sign rule of the grading.
+For a ring $A$ with a grade involution $\alpha$, the **unsigned two-sided operator** is $\mathcal{T}_{a,b}(x) = axb = L_aR_b$, with composition $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ and inverses $\mathcal{T}_{a^{-1},b^{-1}}$ on the invertibles, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x) = a\alpha(x)b$. The two are related by $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$, so the signed two-sided operator is the unsigned one at the grade-involution of its argument, and they coincide exactly when $\alpha = \mathrm{id}$. The signed two-sided operators compose as $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$, a monoid law with identity $\alpha$ that inserts the grade involution into the parameters, which is the sign rule of the grading.
 
 The diagonal signed two-sided operator $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x \mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$. It is therefore an involution, a **reflection**, exactly when $u\,\alpha(u)$ is central; this covers the case $u^2 \in Z(A)$ for either parity of $u$, and it fails in the degenerate case of a non-central $u\alpha(u)$, where the operator is an automorphism of infinite order. No involution of the elements, no dagger and no form occurs; the Hermitian pair, in which the right factor is the dagger of the left, is the corresponding construction of the `* Operator Theory` group of this category.
 
@@ -167,7 +167,7 @@ The diagonal signed two-sided operator $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}$ i
 | $\mathcal{T}^{\alpha}_{a,b} = \mathcal{T}_{a,b}\circ\alpha$ | The signed two-sided operator is the unsigned one at $\alpha$ |
 | $\mathcal{T}_{a,b}\mathcal{T}_{c,d} = \mathcal{T}_{ac,db}$ | Composition of unsigned two-sided operators |
 | $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d} = \mathcal{T}^{\alpha}_{a\alpha(c),b\alpha(d)}$ | Composition of signed two-sided operators |
-| $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ | Reflection, signed inner conjugation by a unit |
+| $r_u = \mathcal{T}^{\alpha}_{u,u^{-1}}(x) = u\alpha(x)u^{-1}$ | Reflection, signed inner conjugation by an invertible element |
 | $r_u^2 = \operatorname{conj}_{u\alpha(u)}$ | A reflection is an involution iff $u\alpha(u) \in Z(A)$ |
 | $A_{\bar 0}, A_{\bar 1}$ | Even and odd parts of the grading by $\alpha$ |
 

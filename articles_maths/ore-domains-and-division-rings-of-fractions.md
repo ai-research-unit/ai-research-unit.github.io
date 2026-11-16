@@ -61,7 +61,7 @@ This is again well defined, and the ring axioms follow from the ring axioms of $
 
 *The embedding.* The map $A \to D$ sending $b$ to $1^{-1}b$ is a ring homomorphism, and it is injective by the cancellation criterion of *Non-Commutative Domains*, above: if $1^{-1}b = 0 = 1^{-1}0$ then $(1, b) \sim (1, 0)$ gives nonzero $x, y$ with $x = y$ and $xb = 0$, hence $b = 0$.
 
-*Units.* Let $a^{-1}b \neq 0$, so $b \neq 0$. Taking $c = b$ and $d = a$ in the multiplication formula with $x = y = 1$ gives $(a^{-1}b)(b^{-1}a) = a^{-1}a = 1$, and the symmetric computation gives $1$ on the other side. Hence every nonzero element of $D$ is a unit and $D$ is a division ring. Uniqueness follows from the universal property.
+*Units.* Let $a^{-1}b \neq 0$, so $b \neq 0$. Taking $c = b$ and $d = a$ in the multiplication formula with $x = y = 1$ gives $(a^{-1}b)(b^{-1}a) = a^{-1}a = 1$, and the symmetric computation gives $1$ on the other side. Hence every nonzero element of $D$ is invertible and $D$ is a division ring. Uniqueness follows from the universal property.
 
 **Theorem (universal property).** Let $A$ be an Ore domain, let $D$ be a division ring and let $\varphi : A \to D$ be a homomorphism with $\varphi(a) \neq 0$ whenever $a \neq 0$. Then $\varphi$ extends uniquely to a homomorphism $\operatorname{Frac}(A) \to D$.
 
@@ -125,7 +125,7 @@ $$
 f = f \cdot 1 = f(gh) = (fg)h = h ,
 $$
 
-so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero element of $k((G))$ is a unit.
+so $gf = gh = 1$ as well and $g$ is a two-sided inverse. Hence every nonzero element of $k((G))$ is invertible.
 
 **Corollary.** Let $G$ be an ordered group. Then $k[G]$ is an Ore domain, and the inclusion $k[G] \to k((G))$ extends by the universal property to an embedding $\operatorname{Frac}(k[G]) \to k((G))$ of division rings over $k[G]$.
 

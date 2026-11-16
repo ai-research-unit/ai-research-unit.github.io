@@ -106,9 +106,9 @@ Then $\mathcal C=\mathbb R\times N_V$. The cone has dimension $3$, is smooth off
 
 *Proof.* Since $S$ involves only $\vec v$, $t$ is free and $\mathcal C=\mathbb R\times N_V$. The gradient $(-2q_x,2q_y,2q_z)$ is non-zero off the origin, so $N_V$ has dimension $2$ and $\mathcal C$ has dimension $3$. The gradient of $S$ in four coordinates is $(0,-2q_x,2q_y,2q_z)$, which vanishes exactly along the scalar line.
 
-**Proposition (what the cone is not).** The spectral cone is not a linear subspace, not the zero-divisor cone, not the set of non-units, and not the set of defective elements.
+**Proposition (what the cone is not).** The spectral cone is not a linear subspace, not the zero-divisor cone, not the set of non-invertibles, and not the set of defective elements.
 
-*Proof.* The elements $\vec e_x\pm\vec e_y$ lie on $\mathcal C$ while their sum $2\vec e_x$ does not, so $\mathcal C$ is not a subspace. The element $1+\vec e_y$ has norm $0$ and $S=1$; the element $1+\vec e_x+\vec e_y$ has norm $1$ and $S=0$; the scalar line lies on $\mathcal C$ and is semisimple. These witnesses separate $\mathcal C$ from the zero-divisor cone, from the non-units and from the defective set.
+*Proof.* The elements $\vec e_x\pm\vec e_y$ lie on $\mathcal C$ while their sum $2\vec e_x$ does not, so $\mathcal C$ is not a subspace. The element $1+\vec e_y$ has norm $0$ and $S=1$; the element $1+\vec e_x+\vec e_y$ has norm $1$ and $S=0$; the scalar line lies on $\mathcal C$ and is semisimple. These witnesses separate $\mathcal C$ from the zero-divisor cone, from the non-invertibles and from the defective set.
 
 ## The Defective Stratum
 
@@ -177,7 +177,7 @@ The quaternion form is negative definite, so its spectral cone is the centre, ev
 
 The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S>0$, conjugate for $S<0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.
 
-The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: a unit can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is *Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy*; the four combinations are *The Four Sectors of the Split-Quaternion Algebra*. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.
+The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: An invertible element can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is *Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy*; the four combinations are *The Four Sectors of the Split-Quaternion Algebra*. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.
 
 ## Summary of Notation
 

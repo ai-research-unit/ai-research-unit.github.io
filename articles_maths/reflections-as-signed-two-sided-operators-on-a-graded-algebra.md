@@ -11,15 +11,15 @@ The base is a commutative ring $R$ with $1$, $A=A^0\oplus A^1$ is a $\mathbb{Z}/
 
 **Definition.** An operator $S:A\to A$ is a **reflection** when $S\circ S=\mathrm{id}_A$. A reflection is **signed** when it is a signed two-sided operator, and **unsigned** when it is an unsigned two-sided operator.
 
-**Proposition.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is a signed reflection; the inner conjugation $\Sigma_{a,a^{-1}}(x)=axa^{-1}$, defined for a unit $a$, is an automorphism, and it is a reflection exactly when $a^{2}$ is central and $a^{-1}$ acts as $a$ in the conjugation, that is when $\Sigma_{a^{-1},a}=\Sigma_{a,a^{-1}}$.
+**Proposition.** The grade involution $\alpha=\Sigma^{\alpha}_{1,1}$ is a signed reflection; the inner conjugation $\Sigma_{a,a^{-1}}(x)=axa^{-1}$, defined for an invertible element $a$, is an automorphism, and it is a reflection exactly when $a^{2}$ is central and $a^{-1}$ acts as $a$ in the conjugation, that is when $\Sigma_{a^{-1},a}=\Sigma_{a,a^{-1}}$.
 
-**Proof.** $\alpha^2=\mathrm{id}$ by definition. The inner conjugation is an automorphism because it is conjugation by a unit; it is an involution exactly when conjugating by $a$ and by $a^{-1}$ agree, which is the displayed condition.
+**Proof.** $\alpha^2=\mathrm{id}$ by definition. The inner conjugation is an automorphism because it is conjugation by an invertible element; it is an involution exactly when conjugating by $a$ and by $a^{-1}$ agree, which is the displayed condition.
 
 **Corollary.** The signed reflections and the unsigned reflections are two different families: the first carry the twist of the argument, the second do not, and they meet in the elements fixed by $\alpha$, that is in the even part when the even elements are the only ones used.
 
 ## The Correspondence
 
-**Theorem.** Let $\mathrm{R}(A)$ be the set of units $a$ with $a\,\alpha(a)=1$ and let $\mathrm{Ref}^{\alpha}(A)$ be the set of signed two-sided operators that are reflections. The map
+**Theorem.** Let $\mathrm{R}(A)$ be the set of invertibles $a$ with $a\,\alpha(a)=1$ and let $\mathrm{Ref}^{\alpha}(A)$ be the set of signed two-sided operators that are reflections. The map
 
 $$
 \Phi:\mathrm{R}(A)\longrightarrow\mathrm{Ref}^{\alpha}(A),\qquad \Phi(a)=\Sigma^{\alpha}_{a,\,a^{-1}},
@@ -51,7 +51,7 @@ so the signed reflections generate the group of the operators $\Sigma^{\alpha}_{
 
 ## The Degenerate Cases
 
-**Definition.** The correspondence is **nondegenerate** at $a$ when $a$ is a unit with $a\alpha(a)=1$; it is **degenerate** when $a\alpha(a)$ is a non-unit, and **totally degenerate** when $a\alpha(a)=0$.
+**Definition.** The correspondence is **nondegenerate** at $a$ when $a$ is invertible with $a\alpha(a)=1$; it is **degenerate** when $a\alpha(a)$ is a non-invertible, and **totally degenerate** when $a\alpha(a)=0$.
 
 **Theorem.** The map $\Phi$ fails to be a correspondence in the degenerate cases: if $a\alpha(a)\neq1$ then $\Sigma^{\alpha}_{a,a^{-1}}$ is not a reflection, and if $a\alpha(a)=0$ then
 
@@ -63,18 +63,18 @@ so the operator is nilpotent of order two and not invertible.
 
 **Proof.** The square is $\Sigma^{\alpha}_{a\alpha(a),\,\alpha(a^{-1})a^{-1}}$ by the composition law; if the product is not the unit the square is not the identity; if $a\alpha(a)=0$ the square is the zero operator.
 
-**Corollary.** In the exterior algebra $\Lambda^\bullet V$ an odd element $v$ satisfies $\alpha(v)=-v$, so $v\alpha(v)=-v\wedge v=0$: the signed two-sided operator $\Sigma^{\alpha}_{v,v^{-1}}$ is defined only if $v$ is a unit, which never happens for a nonzero odd element because $v^2=0$; this is the totally degenerate case, and it is why the reflections of the geometric theory need a Clifford algebra, where an odd element can be a unit. The Clifford algebra and its orthogonal group are the model of the symmetric algebras, and nothing of them is used here.
+**Corollary.** In the exterior algebra $\Lambda^\bullet V$ an odd element $v$ satisfies $\alpha(v)=-v$, so $v\alpha(v)=-v\wedge v=0$: the signed two-sided operator $\Sigma^{\alpha}_{v,v^{-1}}$ is defined only if $v$ is invertible, which never happens for a nonzero odd element because $v^2=0$; this is the totally degenerate case, and it is why the reflections of the geometric theory need a Clifford algebra, where an odd element can be an invertible element. The Clifford algebra and its orthogonal group are the model of the symmetric algebras, and nothing of them is used here.
 
 **Remark.** The failure is not a defect of the correspondence but a genuine change of type: as long as the base ring has zero divisors or the graded algebra has nilpotent odd elements, the signed two-sided operators of order two exhaust a strictly smaller set of reflections than the invertible ones, and the degenerate two-sided operators form a nilpotent family. This is the algebraic statement that a geometric reflection needs a non-isotropic vector.
 
 ## Worked Case: The Even Part and the Odd Part
 
-Let $A=A^0\oplus A^1$ be a graded algebra in which some odd element $u$ is a unit with $u\alpha(u)=1$; then $u^2=1$? Not necessarily: $u\alpha(u)=1$ reads $u\cdot(-u)=-u^2=1$ when $u$ is odd, so $u^{2}=-1$ in characteristic not two. Thus an odd signed reflection is an element whose square is $-1$, and the reflection it defines is $\Sigma^{\alpha}_{u,u^{-1}}(x)=u\alpha(x)u^{-1}$, which is the negative of the unsigned conjugation $uxu^{-1}$ on the odd part and equal to it on the even part. For the exterior algebra of a two-dimensional space there is no such odd unit, and every odd signed two-sided operator is totally degenerate; for a graded algebra in which the odd part is generated by elements of square $-1$, the odd signed reflections exist and are in bijection with the odd units modulo the centre.
+Let $A=A^0\oplus A^1$ be a graded algebra in which some odd element $u$ is invertible with $u\alpha(u)=1$; then $u^2=1$? Not necessarily: $u\alpha(u)=1$ reads $u\cdot(-u)=-u^2=1$ when $u$ is odd, so $u^{2}=-1$ in characteristic not two. Thus an odd signed reflection is an element whose square is $-1$, and the reflection it defines is $\Sigma^{\alpha}_{u,u^{-1}}(x)=u\alpha(x)u^{-1}$, which is the negative of the unsigned conjugation $uxu^{-1}$ on the odd part and equal to it on the even part. For the exterior algebra of a two-dimensional space there is no such odd unit, and every odd signed two-sided operator is totally degenerate; for a graded algebra in which the odd part is generated by elements of square $-1$, the odd signed reflections exist and are in bijection with the odd units modulo the centre.
 
 
 ## Summary
 
-A **reflection** of a graded algebra is an order-two two-sided operator. The **signed reflections** are the signed two-sided operators $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\alpha(x)a^{-1}$, and they are reflections exactly when $a\,\alpha(a)=1$; the grade involution itself is $\Sigma^{\alpha}_{1,1}$, and the unsigned inner conjugation is the other kind of reflection. The map $\Phi(a)=\Sigma^{\alpha}_{a,a^{-1}}$ from the units with $a\alpha(a)=1$ to the signed reflections is well defined and injective modulo central units, its image is closed under composition in the sense that the product of two signed reflections is again a signed two-sided operator of the same shape with $c=a\alpha(b)$, and the product is an involution only under the stated centrality condition. In the **degenerate cases** the correspondence fails: an element with $a\alpha(a)$ a non-unit gives a non-reflection, an element with $a\alpha(a)=0$ gives a square-zero operator, and in the exterior algebra every nonzero odd element is totally degenerate because $v^2=0$, so the geometric reflections require a Clifford algebra, which is the model of the symmetric algebras and is not used here.
+A **reflection** of a graded algebra is an order-two two-sided operator. The **signed reflections** are the signed two-sided operators $\Sigma^{\alpha}_{a,a^{-1}}(x)=a\alpha(x)a^{-1}$, and they are reflections exactly when $a\,\alpha(a)=1$; the grade involution itself is $\Sigma^{\alpha}_{1,1}$, and the unsigned inner conjugation is the other kind of reflection. The map $\Phi(a)=\Sigma^{\alpha}_{a,a^{-1}}$ from the invertibles with $a\alpha(a)=1$ to the signed reflections is well defined and injective modulo central units, its image is closed under composition in the sense that the product of two signed reflections is again a signed two-sided operator of the same shape with $c=a\alpha(b)$, and the product is an involution only under the stated centrality condition. In the **degenerate cases** the correspondence fails: an element with $a\alpha(a)$ a non-invertible gives a non-reflection, an element with $a\alpha(a)=0$ gives a square-zero operator, and in the exterior algebra every nonzero odd element is totally degenerate because $v^2=0$, so the geometric reflections require a Clifford algebra, which is the model of the symmetric algebras and is not used here.
 
 ## Summary of Notation
 
@@ -85,7 +85,7 @@ A **reflection** of a graded algebra is an order-two two-sided operator. The **s
 | $\alpha$ | the grade involution |
 | $\Sigma^{\alpha}_{a,b}(x)=a\alpha(x)b$ | the signed two-sided operator |
 | $\Sigma_{a,b}(x)=axb$ | the unsigned two-sided operator |
-| $\mathrm{R}(A)=\{a\text{ unit}:a\alpha(a)=1\}$ | the elements defining signed reflections |
+| $\mathrm{R}(A)=\{a\text{ invertible}:a\alpha(a)=1\}$ | the elements defining signed reflections |
 | $\Phi(a)=\Sigma^{\alpha}_{a,a^{-1}}$ | the correspondence to the signed reflections |
 | $\mathrm{Z}(A)$ | the centre |
 

@@ -49,7 +49,7 @@ so that $c(b)$ is anti-unitary for the fibre form when $g(b,b)=1$ and $\frac1{\s
 
 **Proof.** For a unit vector $e$, $c(e)^2=-\operatorname{id}$ and $c(e)^*=-c(e)$; then $h(c(e)\sigma,c(e)\tau) = -h(c(e)^2\sigma,\tau)=h(\sigma,\tau)$, where the first step uses $c(e)^*=-c(e)$ and the second $c(e)^2=-\operatorname{id}$. The general case is the scalar multiple $b=\sqrt{g(b,b)}e$ with $e$ unit. Anti-self-adjointness for all vectors, transported through the algebra, is invariance under the generated group.
 
-**Remark.** The two displayed properties are the reason the multiplication by a unit tangent vector is an isometry of the fibre form: it is a complex structure on the module, one of the operators that a quaternionic or hyperkähler structure on the manifold makes parallel. The relation to the almost complex and quaternionic structures is *Quaternionic Geometry*, and the parallel case is *Hyperkähler Manifolds and the Twistor Space*.
+**Remark.** The two displayed properties are the reason the multiplication by an invertible element tangent vector is an isometry of the fibre form: it is a complex structure on the module, one of the operators that a quaternionic or hyperkähler structure on the manifold makes parallel. The relation to the almost complex and quaternionic structures is *Quaternionic Geometry*, and the parallel case is *Hyperkähler Manifolds and the Twistor Space*.
 
 ### The Chirality
 

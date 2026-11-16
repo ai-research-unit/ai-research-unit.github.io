@@ -139,7 +139,7 @@ an outer product of four vectors in three dimensions. Its rank is therefore at m
 
 **The Lorenz condition is the secondary constraint.** Preserving the primary constraint in time produces the Lorenz condition, which in the chart is the single scalar equation displayed in the polar article. So the pair is second class, the physical count is three, and the chart's four parameters lose one on shell. That is the same count as the polarizations, and the same count as the element form's.
 
-**No multipliers for the units, and no escape from the constraint.** The two statements must be kept apart.
+**No multipliers for the invertibles, and no escape from the constraint.** The two statements must be kept apart.
 
 | what is counted | element form | chart | Takabayasi's tensor form (spin-$\tfrac12$) |
 | --- | --- | --- | --- |

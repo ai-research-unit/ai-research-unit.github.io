@@ -49,7 +49,7 @@ $$
 
 The only point to check is that the reorganisation is legitimate, and it is: the index set is finite, so the sum is a finite sum and associativity of addition applies term by term.
 
-**Corollary.** The finitely supported functions form an associative $k$-algebra under convolution, with identity $\delta_e$. The map $a \mapsto \delta_a$ is an injective homomorphism of the group $G$ into the units of this algebra, and
+**Corollary.** The finitely supported functions form an associative $k$-algebra under convolution, with identity $\delta_e$. The map $a \mapsto \delta_a$ is an injective homomorphism of the group $G$ into the invertibles of this algebra, and
 
 $$
 \boxed{\;\delta_a * \delta_b = \delta_{ab}, \qquad \delta_a^{-1} = \delta_{a^{-1}}\;} .

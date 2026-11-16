@@ -10,7 +10,7 @@ The next section fixes the two values of the field and the action that carries o
 
 ## The field, the two values and the action
 
-**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$, with $e_t$ the identity, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ for distinct indices, and $i$ central with $i^2=-1$. A squared three-vector is the Euclidean square, $\vec p^2=p_1^2+p_2^2+p_3^2$. An element is written $\tilde Q=a_te_t+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$, with $\mathrm{Sc}\,\tilde Q=a_t$ and $\mathrm{Tr}\,\tilde Q=2a_t$, and the coefficient bar conjugates the four coefficients and leaves the units alone (*Algebra and Element Conventions*, §*The Conjugations*).
+**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$, with $e_t$ the identity, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ for distinct indices, and $i$ central with $i^2=-1$. A squared three-vector is the Euclidean square, $\vec p^2=p_1^2+p_2^2+p_3^2$. An element is written $\tilde Q=a_te_t+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$, with $\mathrm{Sc}\,\tilde Q=a_t$ and $\mathrm{Tr}\,\tilde Q=2a_t$, and the coefficient bar conjugates the four coefficients and leaves the invertibles alone (*Algebra and Element Conventions*, §*The Conjugations*).
 
 **The two values of the field.** The field carries a letter, and the letter names one of two components. An element of value minus one is written $\tilde Q_L$, an element of value plus one is written $\tilde Q_R$; each value is of two complex dimensions, every element is one part of each value, and only the zero element carries both. Three facts about the letters are used below, and no fourth. A product takes the letter of its right factor. A left multiplication keeps the letter. A right multiplication by $\vec e_t$ or by $\vec e_z$ keeps the letter, and a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values. The last is a property of the four units and not of an element, and it is what lets an action built of right multiplications carry an element of one value into the other. No symbol is introduced for the letter, and no formula is written for it: the article writes $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ and uses the three facts.
 
@@ -20,7 +20,7 @@ $$
 \mathcal{D}(\tilde{\mathcal P})\,\tilde Q=iE\,\tilde Q\,\vec e_x-\sum_{\eta=1}^{3}ip_\eta\,\vec e_\eta\,\tilde Q\,\vec e_y ,
 $$
 
-written for the wave element $\tilde{\mathcal P}=iEe_t+p_1\vec e_x+p_2\vec e_y+p_3\vec e_z$. It is an action written out with products and units only: two right multiplications and three left ones, and no object other than $\tilde Q$, the units and the numbers $E$ and $\vec p$. Two properties of it are one line each, and each was checked on generic elements.
+written for the wave element $\tilde{\mathcal P}=iEe_t+p_1\vec e_x+p_2\vec e_y+p_3\vec e_z$. It is an action written out with products and units only: two right multiplications and three left ones, and no object other than $\tilde Q$, the invertibles and the numbers $E$ and $\vec p$. Two properties of it are one line each, and each was checked on generic elements.
 
 *It squares to the mass shell.* $\mathcal{D}(\tilde{\mathcal P})^2\tilde Q=(E^2-\vec p^2)\tilde Q$ for every element $\tilde Q$. The first term squared gives $+E^2\tilde Q$, since $\vec e_x^2=-e_t$ and the two factors of $i$ give $-1$. The spatial part squared gives $-\vec p^2\tilde Q$, since $\vec e_y^2=-e_t$ and the terms of $p_jp_\eta\vec e_j\vec e_\eta$ cancel in pairs by the antisymmetry of $\vec e_j\vec e_\eta$ against the symmetry of $p_jp_\eta$. The two interfering terms cancel because $\vec e_y\vec e_x=-\vec e_x\vec e_y$.
 
@@ -321,7 +321,7 @@ The contraction sums follow from the squares. With one index raised, $\gamma^\mu
 
 ## Summary
 
-The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}=k_m\tilde{Ξ}$, with the action $iE\tilde{Ξ}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}\vec e_y$ written out in products of units. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=m^{2}\,c^{2}$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the units and the numbers $E$ and $\vec p$.
+The biquaternionic Dirac equation is one equation on one element, $\mathcal{D}(\tilde{\mathcal P})\tilde{Ξ}=k_m\tilde{Ξ}$, with the action $iE\tilde{Ξ}\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde{Ξ}\vec e_y$ written out in products of invertibles. Read on the two values it is the chiral pair of the companion article, each line an equation of one value; the mass is the term that keeps the value and the action the term that carries it, and the mass shell $E^2-\vec p^2=m^{2}\,c^{2}$ is the consistency condition of the pair. The action squares to the mass shell, exchanges the two values and is built of no object but the element, the invertibles and the numbers $E$ and $\vec p$.
 
 The solutions are explicit. The two helicity elements of one value are the seed, the corresponding elements of the other value are their images under the action, and the two branches are
 
@@ -349,7 +349,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $e_t=1,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\tilde Q=a_te_t+\vec a$ | General element; $\mathrm{Sc}\,\tilde Q=a_t$, $\mathrm{Tr}\,\tilde Q=2a_t$ |
-| coefficient bar | Conjugates the four coefficients, leaves the units |
+| coefficient bar | Conjugates the four coefficients, leaves the invertibles |
 | $\tilde Q^{*}$ | $\overline{\tilde Q^{\natural}}$, the Hermitian conjugate |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde Q_L,\ \tilde Q_R$ | The element of value minus one and the element of value plus one |

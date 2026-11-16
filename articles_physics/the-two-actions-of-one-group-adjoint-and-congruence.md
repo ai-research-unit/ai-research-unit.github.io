@@ -12,13 +12,13 @@ The article assumes *The Group of Unit-Norm Biquaternions* for the group and its
 
 ### The Adjoint
 
-For $\tilde U$ in the group of units and $\tilde Q$ any element,
+For $\tilde U$ in the group of invertibles and $\tilde Q$ any element,
 
 $$
 \mathrm{Ad}_{\tilde U}:\ \tilde Q\ \longmapsto\ \tilde U\tilde Q\tilde U^{-1}.
 $$
 
-On the unit-norm group the inverse is the quaternion conjugate, so the same formula reads $\tilde U\tilde Q\tilde U^{\natural}$. The map is defined on the group of units and not only on $G$, which is one of the two places where the two actions differ.
+On the unit-norm group the inverse is the quaternion conjugate, so the same formula reads $\tilde U\tilde Q\tilde U^{\natural}$. The map is defined on the group of invertibles and not only on $G$, which is one of the two places where the two actions differ.
 
 ### The Congruence
 
@@ -38,7 +38,7 @@ with ${}^{*}$ the corpus's star, the anti-involution that fixes the Hermitian se
 | preserves the two Hermitian sectors | no | yes |
 | preserves the indefinite form | yes, because it preserves the norm | yes, because $\det(\tilde U\tilde Q\tilde U^{*})=\lvert\det\tilde U\rvert^{2}N(\tilde Q)$ |
 | preserves the trace | yes | only for $*$-unitary $\tilde U$ |
-| defined on the group of units | yes | yes |
+| defined on the group of invertibles | yes | yes |
 | defined on all elements | no | yes |
 | kernel on $G$ | $\{\pm e_t\}$ | $\{\pm e_t\}$ |
 | blind to | any nonzero complex factor | a unit-modulus factor only |
@@ -74,7 +74,7 @@ $$
 \mathrm{Ad}_{\tilde U\tilde V}=\mathrm{Ad}_{\tilde U}\circ\mathrm{Ad}_{\tilde V},
 $$
 
-so the adjoint is a representation of the group of units, of real dimension eight on the eight-dimensional algebra. That representation is not irreducible: it is the six-dimensional adjoint of the Lorentz algebra plus two trivial central directions, as *The Isomorphisms and Their Dimensions* states.
+so the adjoint is a representation of the group of invertibles, of real dimension eight on the eight-dimensional algebra. That representation is not irreducible: it is the six-dimensional adjoint of the Lorentz algebra plus two trivial central directions, as *The Isomorphisms and Their Dimensions* states.
 
 ## The Congruence Preserves the Sectors and the Form
 
@@ -104,7 +104,7 @@ $$
 =\lvert N(\tilde U)\rvert^{2}\bigl(q_t^{2}-\lvert\vec q\rvert^{2}\bigr),
 $$
 
-so on the unit group the congruence preserves the interval exactly, with the factor $\lvert N\rvert^{2}=1$. The indefinite form is
+so on the group of invertibles the congruence preserves the interval exactly, with the factor $\lvert N\rvert^{2}=1$. The indefinite form is
 
 $$
 q_t^{2}-\lvert\vec q\rvert^{2}=\det\mathsf{M}_2(\tilde Q)
@@ -165,14 +165,14 @@ $$
 
 This is the two-to-one cover of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, read as a statement about kernels.
 
-### The Scale on the Group of Units
+### The Scale on the Group of Invertibles
 
-The two actions differ in what they are blind to when the group of units is used.
+The two actions differ in what they are blind to when the group of invertibles is used.
 
 - **The adjoint** is blind to any nonzero complex factor: $\mathrm{Ad}_{\lambda\tilde U}=\mathrm{Ad}_{\tilde U}$ for $\lambda\in\mathbb{C}^{\times}$, because the factor cancels against its inverse. Its true kernel on $\mathbb{B}^{\times}$ is the whole centre $\mathbb{C}^{\times}e_t$, of real dimension two.
 - **The congruence** is blind to a unit-modulus factor only: $\mathrm{Cg}_{\lambda\tilde U}=\lvert\lambda\rvert^{2}\mathrm{Cg}_{\tilde U}$. A phase cancels, a real scale does not.
 
-So a scale $r$ is invisible to the adjoint and is a genuine dilatation of the congruence: the congruence sees the modulus and the adjoint does not. This is the algebraic form of the statement that the interval's isometry group contains the scale only through its modulus, and of the further statement that the congruence by a non-unit element is a conformal map, which *The Conformal Group in Biquaternionic Form* takes up.
+So a scale $r$ is invisible to the adjoint and is a genuine dilatation of the congruence: the congruence sees the modulus and the adjoint does not. This is the algebraic form of the statement that the interval's isometry group contains the scale only through its modulus, and of the further statement that the congruence by a non-invertible element is a conformal map, which *The Conformal Group in Biquaternionic Form* takes up.
 
 ### The Phase
 
@@ -233,7 +233,7 @@ This is the formula the whole block uses, and it is the formula *The Lorentz Tra
 
 ### What the Other Action Is For
 
-The adjoint is not idle. It is the action on the algebra's own structure: it is the map under which the multiplication table, the structure constants and the spectrum are invariant, and it is the map that gives the eight-dimensional representation of the group of units. When the block asks what a frame change does to an *algebra element*, it uses the congruence. When it asks how the algebra's own symmetries act, it uses the adjoint. The two questions are different and the answers are different maps.
+The adjoint is not idle. It is the action on the algebra's own structure: it is the map under which the multiplication table, the structure constants and the spectrum are invariant, and it is the map that gives the eight-dimensional representation of the group of invertibles. When the block asks what a frame change does to an *algebra element*, it uses the congruence. When it asks how the algebra's own symmetries act, it uses the adjoint. The two questions are different and the answers are different maps.
 
 A short table makes the division of labour explicit:
 
@@ -246,7 +246,7 @@ A short table makes the division of labour explicit:
 
 ## Summary
 
-The adjoint $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ is an algebra automorphism: it preserves the product, the commutator, the norm, the trace and the spectrum. The congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ is an isometry of the indefinite form: it preserves each Hermitian sector separately and it preserves the interval on the unit group up to $\lvert N\rvert^{2}$. The two coincide exactly on the $*$-unitary elements, that is on the rotations. Both have kernel $\{\pm e_t\}$ on the unit group and both factor through the Lorentz group. On the group of units the adjoint is blind to any complex factor and the congruence to a unit-modulus factor only, so the scale is a genuine dilatation of the congruence and the phase is invisible to both. A boost fixes the time axis and the boost axis under the adjoint and moves the time axis under the congruence, and it does not even preserve the four-vector sector under the adjoint. A frame change is therefore the congruence, and the adjoint is reserved for the algebra's own automorphisms.
+The adjoint $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ is an algebra automorphism: it preserves the product, the commutator, the norm, the trace and the spectrum. The congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ is an isometry of the indefinite form: it preserves each Hermitian sector separately and it preserves the interval on the group of invertibles up to $\lvert N\rvert^{2}$. The two coincide exactly on the $*$-unitary elements, that is on the rotations. Both have kernel $\{\pm e_t\}$ on the group of invertibles and both factor through the Lorentz group. On the group of invertibles the adjoint is blind to any complex factor and the congruence to a unit-modulus factor only, so the scale is a genuine dilatation of the congruence and the phase is invisible to both. A boost fixes the time axis and the boost axis under the adjoint and moves the time axis under the congruence, and it does not even preserve the four-vector sector under the adjoint. A frame change is therefore the congruence, and the adjoint is reserved for the algebra's own automorphisms.
 
 ## Summary of Notation
 

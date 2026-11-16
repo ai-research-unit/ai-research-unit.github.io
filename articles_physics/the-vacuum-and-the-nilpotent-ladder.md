@@ -35,7 +35,7 @@ $$
 | the characteristic polynomial, the two eigenvalues and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
 | the two predicates, the independence of the cones and the single point where both degenerations coincide | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the corner rule, the off-diagonal nilpotents and the dimensions of the four corners | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| the quaternionic norm, the null cone, its pure stratum and the unit group | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the quaternionic norm, the null cone, its pure stratum and the group of invertibles | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the minimal left and right ideals, the idempotents and the projective structure of the module | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | the exponential, its degenerate boundary and the truncation of the series | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | the place of $B^{2}$ outside the four norms, and the multiplicativity of the quaternionic one | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
@@ -125,7 +125,7 @@ N\bigl(e^{\theta\tilde Q}\bigr)=1,\qquad
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}.
 $$
 
-**The flow is a shear and not a rotation.** Its matrix is unipotent: every eigenvalue is $1$, the determinant is $1$, and the matrix is not the identity. The Hermitian norm grows without bound in $\theta$, polynomially and not exponentially. So the element generates a flow that is a unit at every parameter and that is never a bounded one.
+**The flow is a shear and not a rotation.** Its matrix is unipotent: every eigenvalue is $1$, the determinant is $1$, and the matrix is not the identity. The Hermitian norm grows without bound in $\theta$, polynomially and not exponentially. So the element generates a flow that is invertible at every parameter and that is never a bounded one.
 
 **No nilpotent is an exponential.** The norm of every exponential is $e^{2X_t}$ and the norm of every element of the stratum is zero, so the stratum is disjoint from the image of the exponential and no nilpotent has a logarithm.
 
@@ -388,7 +388,7 @@ $$
 \lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2},
 $$
 
-**checked to $1.8\times10^{-15}$ over fifty elements.** The norm is a quadratic polynomial in the parameter with a positive quadratic coefficient, so the flow is a unit at every $\theta$ — its quaternionic norm is one — and it is never a bounded unit. The two notions of unit separate here, and this is the stratum where they separate furthest: the quaternionic norm is constant and the Hermitian norm is unbounded.
+**checked to $1.8\times10^{-15}$ over fifty elements.** The norm is a quadratic polynomial in the parameter with a positive quadratic coefficient, so the flow is invertible at every $\theta$ — its quaternionic norm is one — and it is never a bounded unit. The two notions of unit separate here, and this is the stratum where they separate furthest: the quaternionic norm is constant and the Hermitian norm is unbounded.
 
 **Conjugation by the flow preserves the norm of every element.**
 
@@ -618,9 +618,9 @@ $$
 
 **So the scalar line is entirely inside the spectral stratum and meets this stratum at one point.** Every scalar has $B^{2}=0$, and the scalar is null only at $q=0$. The line is therefore $\Sigma_{01}\cap\mathbb{B}_{C}=\mathbb{C}e_t$ as a set with its origin attached here: the two degenerate strata share exactly the zero element.
 
-**The identity is not the vacuum, and the scalar line is where the confusion is possible.** Along the line the two conditions separate cleanly: the vector square vanishes everywhere and the norm vanishes at one point. The identity $e_t$ sits at $q=1$ with norm one and is a unit; the origin sits at $q=0$ with norm zero and is not. The line contains both, and the stratum's material share is the second and not the first.
+**The identity is not the vacuum, and the scalar line is where the confusion is possible.** Along the line the two conditions separate cleanly: the vector square vanishes everywhere and the norm vanishes at one point. The identity $e_t$ sits at $q=1$ with norm one and is invertible; the origin sits at $q=0$ with norm zero and is not. The line contains both, and the stratum's material share is the second and not the first.
 
-**The reading is that a four-momentum chart's own scalar axis is the boundary of the stratum and not part of it.** The axis is where the vector square cannot fail; the stratum is where it does. A chart that followed the scalar axis to find the vacuum would find $e_t$ on the way, and $e_t$ is a unit of the algebra and not an element of the stratum.
+**The reading is that a four-momentum chart's own scalar axis is the boundary of the stratum and not part of it.** The axis is where the vector square cannot fail; the stratum is where it does. A chart that followed the scalar axis to find the vacuum would find $e_t$ on the way, and $e_t$ is invertible in the algebra and not an element of the stratum.
 
 **The boundary.** The line is a line of scalars and not a physical trajectory. Its points have no direction and no mode, and the reading is a statement about where the two strata meet.
 
@@ -673,7 +673,7 @@ $$
 
 **Read:** the origin as the unique semisimple element of the stratum, with minimal polynomial $X$, both multiplications zero, and every idempotent commuting with it.
 
-**The zero element is not the identity, and the difference is the whole content of the word.** The identity $e_t$ is a unit with norm one, vector square zero and spectrum $\{1\}$; it lives on the scalar line of the other degenerate stratum. The origin has norm zero, rank zero and spectrum $\{0\}$. Calling the origin the vacuum and calling $e_t$ the vacuum are two different statements, and only the first is on the stratum.
+**The zero element is not the identity, and the difference is the whole content of the word.** The identity $e_t$ is invertible with norm one, vector square zero and spectrum $\{1\}$; it lives on the scalar line of the other degenerate stratum. The origin has norm zero, rank zero and spectrum $\{0\}$. Calling the origin the vacuum and calling $e_t$ the vacuum are two different statements, and only the first is on the stratum.
 
 **The reading is that the vacuum is the element with no scale, no mode and no direction.** It is the additive zero of the chart, so it is the value of a field that vanishes, and it is the only element of the stratum that a four-momentum can take.
 
@@ -716,11 +716,11 @@ $$
 
 **Read:** $e^{\theta\tilde Q}=e_t+\theta\tilde Q$, with every eigenvalue $1$, determinant $1$, and $\langle e^{\theta\tilde Q}\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$.
 
-**The one-parameter group generated by a nilpotent is unipotent.** It fixes every direction of its own plane, shifts the rest by a multiple of the parameter, and has no scale and no angle. The Hermitian norm grows as a quadratic polynomial, so the group is a unit at every parameter and is never a bounded one.
+**The one-parameter group generated by a nilpotent is unipotent.** It fixes every direction of its own plane, shifts the rest by a multiple of the parameter, and has no scale and no angle. The Hermitian norm grows as a quadratic polynomial, so the group is invertible at every parameter and is never a bounded one.
 
 **The reading is that the stratum supplies a translation and not a rotation.** A rotation has a period and a bounded norm; a boost has an exponential norm; a shear has a polynomial norm and no period. The three behaviours are three different words, and the stratum settles which one it is by a single computation.
 
-**The separation of the two notions of unit is the sharpest statement in the section.** The quaternionic norm of the flow is exactly one at every parameter, and its Hermitian norm is unbounded. A reader who uses one word *unitary* for both will conclude that the stratum is unitary; a reader who keeps them apart will see that it is a unit in the multiplicative group and not in the Hermitian one.
+**The separation of the two notions of unit is the sharpest statement in the section.** The quaternionic norm of the flow is exactly one at every parameter, and its Hermitian norm is unbounded. A reader who uses one word *unitary* for both will conclude that the stratum is unitary; a reader who keeps them apart will see that it is invertible in the multiplicative group and not in the Hermitian one.
 
 **The shear preserves the norm, so it moves the stratum within itself.** Conjugation by $e^{\theta\tilde Q}$ leaves $N$ of every element unchanged and maps nilpotents to nilpotents. It is a symmetry of the cone and not a motion off it, and it is the reason the stratum's own geometry is thin: the group that preserves it acts on it transitively up to scale.
 
@@ -847,7 +847,7 @@ $$
 | image and kernel | $\operatorname{im}L=\ker L=\tilde Q\mathbb{B}$, a minimal right ideal; the plane killed is the plane reached |
 | the two annihilators | $\ker L\cap\ker R=\mathbb{C}\tilde Q$; exchanged by the conjugation |
 | the exponential | $e^{\theta\tilde Q}=e_t+\theta\tilde Q$ exactly; unipotent; determinant $1$; trace $4$ |
-| the Hermitian norm | $1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$; a unit at every parameter and never a bounded one |
+| the Hermitian norm | $1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$; an invertible element at every parameter and never a bounded one |
 | no logarithm | $N(e^{X})=e^{2X_t}\neq0$; the stratum is disjoint from the image of the exponential |
 | the products | $\operatorname{Sc}(\vec\Upsilon_2\vec\Upsilon)=-\vec\Upsilon_2\cdot\vec\Upsilon$, $B^{2}(\vec\Upsilon_2\vec\Upsilon)=-(\vec\Upsilon_2\cdot\vec\Upsilon)^{2}$; the product lies in $\{0\}\cup\Sigma_{01}$ |
 | the null field | $\tilde F^{2}=\epsilon(I_1+2icI_2)e_t$; $\tilde F^{2}=0$ exactly when $\lvert\vec E\rvert=c\lvert\vec B\rvert$ and $\vec E\cdot\vec B=0$ |
@@ -886,6 +886,6 @@ $$
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), for the stratum on which the modulus exists and the eigenbasis does not.
 - [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), for the open stratum and the two-mode picture.
 - [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html), for the arrangement of the four strata and the statement that the two conditions are independent.
-- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the reach of each carrier on each stratum.
-- [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html), for the cone whose apex is this stratum's material share.
+- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the reach of each carrier on each stratum.
+- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the cone whose apex is this stratum's material share.
 - [Norm and Pairing Conventions](norm-and-pairing-conventions.html), for the letters, the signatures and the two norms used throughout.

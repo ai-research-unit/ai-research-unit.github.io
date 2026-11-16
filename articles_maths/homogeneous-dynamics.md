@@ -68,7 +68,7 @@ $$
 
 which is the contraction relation of the Mautner phenomenon.
 
-Geometrically, the $A$-orbit of a unit tangent vector is the geodesic through its base point in the direction of the vector, and the $U$-orbit is the horocycle through that point, the orbit of the parabolic one-parameter group corresponding to the limit point of the geodesic.
+Geometrically, the $A$-orbit of an invertible element tangent vector is the geodesic through its base point in the direction of the vector, and the $U$-orbit is the horocycle through that point, the orbit of the parabolic one-parameter group corresponding to the limit point of the geodesic.
 
 **Theorem (ergodicity of the geodesic flow).** Let $\Gamma \le PSL_2(\mathbb{R})$ be a lattice. The geodesic flow on $G/\Gamma$ is ergodic with respect to the invariant measure, and it is mixing.
 

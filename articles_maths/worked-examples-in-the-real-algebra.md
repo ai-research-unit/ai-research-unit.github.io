@@ -149,7 +149,7 @@ The real column is the base case that the other worked-example articles continue
 
 On the worked pair $q_1 = -\tfrac{3}{4}$ and $q_2 = \tfrac{7}{2}$ the real algebra is exhibited concretely: the sum $\tfrac{11}{4}$, the difference $\tfrac{17}{4}$, and the product $q_1 q_2 = -\tfrac{21}{8}$ with $q_2 q_1 = q_1 q_2$, the concrete form of commutativity.
 
-The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are units — their inverses are the field inverses $q_1^{-1} = -\tfrac{4}{3}$ and $q_2^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-unit, the concrete form of the field property.
+The only involution is the identity, so its fixed-point subspace is the whole algebra and its anti-fixed subspace is $\{0\}$; the involution decomposition is the trivial $\mathbb{R} = \mathbb{R}_{\mathbb{R}} \oplus \{0\}$. Both worked elements are invertible — their inverses are the field inverses $q_1^{-1} = -\tfrac{4}{3}$ and $q_2^{-1} = \tfrac{2}{7}$ — and $0$ is the only non-invertible, the concrete form of the field property.
 
 On the order, the worked pair straddles the origin, the Archimedean witness for $\lvert q_1\rvert$ against $\lvert q_2\rvert$ is $n = 5$, and the completeness axiom is checked on the bounded sets $\{q_1,0,q_2\}$ and $\{\tfrac{n}{n+1}\}$, whose suprema are $\tfrac{7}{2}$ and $1$. The article is the first rung of the ladder continued by the worked-example article of the complex algebra.
 

@@ -56,7 +56,7 @@ $$
 T(x, y) = (n+1)\bigl(\alpha\beta + B(v, w)\bigr), \qquad x = (\alpha, v),\ y = (\beta, w),
 $$
 
-which is $\frac{n+1}{2}$ times the generic trace of the product, $T(x\bullet y) = 2(\alpha\beta + B(v,w))$. In these terms $x$ is invertible in $JSpin(V)$ exactly when $N(x)$ is a unit of $R$, with $x^{-1} = N(x)^{-1}(T(x)1 - x) = N(x)^{-1}(\alpha, -v)$; over a field this is the condition $N(x) \neq 0$.
+which is $\frac{n+1}{2}$ times the generic trace of the product, $T(x\bullet y) = 2(\alpha\beta + B(v,w))$. In these terms $x$ is invertible in $JSpin(V)$ exactly when $N(x)$ is invertible in $R$, with $x^{-1} = N(x)^{-1}(T(x)1 - x) = N(x)^{-1}(\alpha, -v)$; over a field this is the condition $N(x) \neq 0$.
 
 ### Idempotents and the Peirce Decomposition
 

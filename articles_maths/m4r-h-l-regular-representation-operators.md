@@ -82,13 +82,13 @@ All three are inherited from the complex reading; the third is the one that need
 
 **The scaling.** The pair has eight real parameters and the operator has sixteen entries; the kernel of the map is the line of scalings $(\lambda\tilde q,\lambda^{-1}\tilde p)$, so the effective parameter count is seven and the fibre over a non-zero product is one real line.
 
-**The group.** The units of the pair form the group
+**The group.** The invertibles of the pair form the group
 
 $$
 \bigl(\mathbb{H}^{\times}\times\mathbb{H}^{\times}\bigr)/\mathbb{R}^{\times},
 $$
 
-of dimension seven, and the inner automorphisms $L_{\tilde q}R_{\tilde q^{-1}}$ form $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$, acting on the pure part as the rotation group. In the axis-free frame the second group is visible as the group of conjugations of the Cayley matrices by the units, which is the classical statement that $SU(2)$ covers $SO(3)$ twice; the double cover is the sign ambiguity of $\tilde q$.
+of dimension seven, and the inner automorphisms $L_{\tilde q}R_{\tilde q^{-1}}$ form $\mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3)$, acting on the pure part as the rotation group. In the axis-free frame the second group is visible as the group of conjugations of the Cayley matrices by the invertibles, which is the classical statement that $SU(2)$ covers $SO(3)$ twice; the double cover is the sign ambiguity of $\tilde q$.
 
 **The real block structure.** A two-sided operator commutes with nothing in general, but its action on the carrier can be read block by block: for a pure parameter the Cayley matrix splits as two identical blocks, so $L_{\tilde q}R_{\tilde p}$ acts as two copies of the same $2\times2$ block on the two invariant planes of the complex structure. The doubling is the realification, and it is the operator-level reason why the determinant of every product is a square.
 
@@ -145,11 +145,11 @@ for every operator, and $\Phi$ is given in the two bases by the sixteen matrices
 
 **Composition.** $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, with the reversal in the second slot; the family is a copy of $\mathbb{H}\times\mathbb{H}_{\mathrm{opp}}$.
 
-**The units.** Invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, forming the seven-dimensional group of the previous section.
+**The invertibles.** Invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, forming the seven-dimensional group of the previous section.
 
 **The isometries.** A product has four equal singular values $\sqrt{N(\tilde q)N(\tilde p)}$, so it is orthogonal exactly when $N(\tilde q)N(\tilde p)=1$, a condition invariant under the scaling and therefore a six-dimensional family inside the seven-dimensional cone. The multiplicative members among them are those with $\tilde p=\tilde q^{-1}$, which is the three-dimensional group $SO(3)$. So the intersection of the pair with $O(4)$ is strictly larger than the group of automorphisms, and the excess consists of the two-sided rotations with no conjugation in them.
 
-**The multiplicative members.** A member of the pair is an algebra endomorphism of the carrier exactly when $\tilde p=\tilde q^{-1}$, by the double centraliser theorem: an endomorphism commuting with the left action is a right multiplication, and it is an algebra map exactly when the parameter is a unit acting by conjugation.
+**The multiplicative members.** A member of the pair is an algebra endomorphism of the carrier exactly when $\tilde p=\tilde q^{-1}$, by the double centraliser theorem: an endomorphism commuting with the left action is a right multiplication, and it is an algebra map exactly when the parameter is invertible acting by conjugation.
 
 ## The Cone and the Coefficient Matrix
 
@@ -230,7 +230,7 @@ $$
 
 ## What the Pair Buys and Does Not
 
-**What it buys.** The operator algebra of the carrier, completely: every real-linear operator is a sum of at most four products, the products form a seven-dimensional cone, the units of the pair form a seven-dimensional group with $SO(3)$ of automorphisms inside it, and the length filtration is the determinantal filtration of a $4\times4$ array of the same size as the operator. It also buys the finite group of order $32$ of the signed basis products, a concrete object with which every computation of the category can be done by hand.
+**What it buys.** The operator algebra of the carrier, completely: every real-linear operator is a sum of at most four products, the products form a seven-dimensional cone, the invertibles of the pair form a seven-dimensional group with $SO(3)$ of automorphisms inside it, and the length filtration is the determinantal filtration of a $4\times4$ array of the same size as the operator. It also buys the finite group of order $32$ of the signed basis products, a concrete object with which every computation of the category can be done by hand.
 
 **What it does not buy: the Peirce frame.** The regular model carries no matrix units, because the algebra is a division algebra: there is no idempotent, hence no Peirce decomposition, hence no corners, and therefore no corner operators. In the split-quaternion category the Peirce frame was an operator tool: the corners indexed the strata and the four Peirce components gave four families of operators. That tool is absent here, and its absence is not a gap in the article but a property of the algebra.
 

@@ -47,7 +47,7 @@ $$
 \mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}} \to \mathbb{R} \oplus \mathbb{R}, \qquad a \tilde\Pi_1 + b \tilde\Pi_2 \mapsto (a, b)
 $$
 
-is an isomorphism of real algebras. The two idempotents are the units of the two copies of $\mathbb{R}$ in this decomposition, and they are the only nontrivial idempotents of the centre.
+is an isomorphism of real algebras. The two idempotents are the invertibles of the two copies of $\mathbb{R}$ in this decomposition, and they are the only nontrivial idempotents of the centre.
 
 The idempotents $\tilde\Pi_{1,2}$ are exchanged by the split complex conjugation and fixed by the quaternion conjugation. Indeed $\bar{\tilde\Pi_{1,2}} = \tilde\Pi_{1,2}$ because the coefficients of $\tilde\Pi_{1,2}$ are real, while $j^* = -j$ gives
 

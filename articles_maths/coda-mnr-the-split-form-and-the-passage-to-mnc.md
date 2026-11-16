@@ -50,7 +50,7 @@ but one fixed space is a Jordan algebra and the other a Lie algebra. The fixed s
 | antisymmetric part | $\operatorname{Skew}_n=\mathfrak{so}(n)$ | $\operatorname{Skew}_n(\mathbb{C})=\mathfrak{so}(n,\mathbb{C})$ |
 | the trace form | signature $(n(n+1)/2,\,n(n-1)/2)$ | the complex bilinear form, no signature |
 | the invariant definite form | none | $\operatorname{tr}(A^{*}B)$ |
-| the unit group | two components | one component |
+| the group of invertibles | two components | one component |
 | the spectrum | real roots and conjugate pairs | all roots, no pairs |
 | the Jordan form | rotation blocks $2\times2$ | no rotation blocks |
 
@@ -92,7 +92,7 @@ but one fixed space is a Jordan algebra and the other a Lie algebra. The fixed s
 
 **The series added one structure at a time to the same space, and the three phenomena recurred at every stage.** The two involution classes gave the two fixed spaces and the two decompositions; the spectrum gave the discriminant, the Jordan form and the two spectral theorems; the indefinite trace form gave the signature, the curvature and the absence of a definite invariant form.
 
-**The last statement of the series is the first.** $M_n(\mathbb{R})$ is a simple real algebra of dimension $n^{2}$ with centre $\mathbb{R}\mathrm{I}$, its trace form has signature $(n(n+1)/2,\,n(n-1)/2)$, its unit group has two components cut by the sign of the determinant, and the whole structure is the split real form of the complex algebra. Everything else is a consequence.
+**The last statement of the series is the first.** $M_n(\mathbb{R})$ is a simple real algebra of dimension $n^{2}$ with centre $\mathbb{R}\mathrm{I}$, its trace form has signature $(n(n+1)/2,\,n(n-1)/2)$, its group of invertibles has two components cut by the sign of the determinant, and the whole structure is the split real form of the complex algebra. Everything else is a consequence.
 
 ## Summary
 

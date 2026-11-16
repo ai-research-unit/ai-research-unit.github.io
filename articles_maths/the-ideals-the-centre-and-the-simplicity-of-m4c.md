@@ -6,7 +6,7 @@
 
 The article proves the two-sided simplicity through the matrix units, identifies the one-sided ideals as column and row spaces attached to subspaces of $\mathbb{C}^{4}$, records the central-simple invariants, and explains why the Kronecker factorisation $M_4=M_2\otimes M_2$ does not contradict simplicity: a tensor factor is a subalgebra, and a subalgebra is not an ideal.
 
-It assumes *The Matrix Algebra $M_4(\mathbb{C})$* for the units and the trace, and *The Kronecker Factorisation of $M_4(\mathbb{C})$ into $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$* for the tensor reading. The case $n=2$ is *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*. The finite-dimensional theory is *The Structure of Semisimple Algebras*.
+It assumes *The Matrix Algebra $M_4(\mathbb{C})$* for the invertibles and the trace, and *The Kronecker Factorisation of $M_4(\mathbb{C})$ into $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$* for the tensor reading. The case $n=2$ is *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*. The finite-dimensional theory is *The Structure of Semisimple Algebras*.
 
 ## The Centre
 
@@ -32,17 +32,17 @@ $$
 E_{ij}=\frac{1}{A_{rs}}E_{ir}AE_{sj}\in I,
 $$
 
-since $E_{ir}A$ selects the $r$-th row into the $i$-th and $E_{sj}$ places it in the column $j$; the coefficient $A_{rs}$ is nonzero. The units generate the algebra, so $I$ is everything.
+since $E_{ir}A$ selects the $r$-th row into the $i$-th and $E_{sj}$ places it in the column $j$; the coefficient $A_{rs}$ is nonzero. The invertibles generate the algebra, so $I$ is everything.
 
 **Corollary.** The algebra is simple, and it has no nonzero nilpotent two-sided ideal, so it is semisimple in the sense of Jacobson.
 
 **Proof.** Simplicity excludes every proper two-sided ideal, and a nilpotent ideal is proper unless it is the algebra, which is not nilpotent.
 
-**The matrix-unit picture.** The proof shows the mechanism: a two-sided ideal is closed under the two operations that move a single nonzero entry anywhere, so a single entry generates everything. There is no room for a proper nonzero two-sided ideal because the units act transitively on the $16$ entries.
+**The matrix-unit picture.** The proof shows the mechanism: a two-sided ideal is closed under the two operations that move a single nonzero entry anywhere, so a single entry generates everything. There is no room for a proper nonzero two-sided ideal because the invertibles act transitively on the $16$ entries.
 
 **Corollary.** Every nonzero element generates the whole algebra as a two-sided ideal, so $M_4(\mathbb{C})$ has one nonzero two-sided ideal class.
 
-**Proof.** An element with a nonzero entry contains a unit as in the proof above, and the units generate.
+**Proof.** An element with a nonzero entry contains a unit as in the proof above, and the invertibles generate.
 
 ## Central Simplicity
 
@@ -124,6 +124,6 @@ The Kronecker decomposition $M_4=M_2\otimes M_2$ is a tensor product of subalgeb
 
 - Israel Nathan Herstein, *Noncommutative Rings* (Carus Mathematical Monographs, 1968), for simplicity, central simplicity and the density theorem.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the matrix-unit argument and the classification of simple algebras.
-- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the units, the trace and the rank.
+- [The Matrix Algebra $M_4(\mathbb{C})$](the-matrix-algebra-m4c.html), for the invertibles, the trace and the rank.
 - [The Kronecker Factorisation of $M_4(\mathbb{C})$ into $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the index calculus behind the factorisation.
 - [The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$](the-ideals-the-centre-and-the-simplicity-of-m2c.html), for the same proof at order two.

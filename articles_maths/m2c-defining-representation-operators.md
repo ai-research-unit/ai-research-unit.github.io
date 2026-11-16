@@ -181,7 +181,7 @@ and $T$ is invertible for no pair $(u,\phi)$.
 
 **The semigroup.** The product is associative by the associativity of the matrix product. There is a zero, $L_{0}R_{\phi}=0$, and there is no identity, because $I_2$ has rank two and every member has rank at most one. The family is thus a **semigroup with zero and without identity**, and the multiplicative structure is the one of $\mathbb{P}^{1}\times\mathbb{P}^{1}$ with the pairing as the structure scalar.
 
-**Remark (the comparison with the algebra family).** The family of the biquaternion algebra contains $L_{e_t}R_{e_t}$, the identity, and it contains inverses whenever both parameters are units (*$M_2(\mathbb{C})$ Pauli Representation : Operators*). **The module family contains neither**, and the reason is not the choice of parametrisation but the rank: a rank-one operator can never be the identity of a two-dimensional space.
+**Remark (the comparison with the algebra family).** The family of the biquaternion algebra contains $L_{e_t}R_{e_t}$, the identity, and it contains inverses whenever both parameters are invertible (*$M_2(\mathbb{C})$ Pauli Representation : Operators*). **The module family contains neither**, and the reason is not the choice of parametrisation but the rank: a rank-one operator can never be the identity of a two-dimensional space.
 
 ## The Length
 
@@ -306,7 +306,7 @@ T^{\mathsf T}T=\phi\,(u^{\mathsf T}u)\,\phi^{\mathsf T}=\tau\,\phi\,\phi^{\maths
 $$
 of rank at most one as well, and of rank zero when $\tau=0$. Neither can be $I_2$.
 
-**The family therefore contains no isometry, no orthogonal member and no unitary member.** In the algebra categories the units of the algebra give isometries of the operator space, and the length ladder starts at one because the identity is a product; here the identity is not a product at all, and the isometry group of the family is empty.
+**The family therefore contains no isometry, no orthogonal member and no unitary member.** In the algebra categories the invertibles of the algebra give isometries of the operator space, and the length ladder starts at one because the identity is a product; here the identity is not a product at all, and the isometry group of the family is empty.
 
 ## The Carrier with an Algebra Structure
 
@@ -372,7 +372,7 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 **What it does not buy.**
 
 - **The identity.** $I_2$ has rank two and is not a member; the family is a semigroup with zero and not a monoid.
-- **The inverses.** No member is invertible; the group of units is empty.
+- **The inverses.** No member is invertible; the group of invertibles is empty.
 - **The isometries.** No nonzero member satisfies $T^{*}T=I_2$, so there is no orthogonal or unitary sector.
 - **The reach beyond the cone.** Every member is of rank at most one; a matrix of rank two needs a sum of two members, and the sum is not a member.
 - **The mixing of the two rulings.** The two rulings are independent, but the composition contracts them to a single pair, and there is no product that mixes the two families.
@@ -387,14 +387,14 @@ and not a linear one. The image is therefore the quadric cone of complex dimensi
 | fibre | $\mathbb{C}^{\times}$, complex dimension $1$ | the scalars, complex dimension $1$ |
 | reach | complex dimension $3$ | complex dimension $7$ |
 | identity in the family | no | yes, $L_{e_t}R_{e_t}$ |
-| inverses in the family | no | yes, for pairs of units |
+| inverses in the family | no | yes, for pairs of invertibles |
 | isometries | none | the group $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three |
 | the length | $0,1,2$ | $0,\dots,4$ |
 | the chain of nested sets | $0\subset\mathcal{C}\subset M_2(\mathbb{C})$, dimensions $0,3,4$ | $1,4,7,16$ |
 | rank constraint | rank $\le1$ | rank $0$ or $4$, by the division algebra |
 | the second cone | the Hermitian cone, distinct | no second cone of the same kind |
 
-**The single sentence.** The pair is the cleanest operator theory of the corpus because the cone is thin and the composition is a scalar; it is also the poorest, because a rank-one family has no group of units, and **everything that the algebra pairs gain they gain by the identity being a product.**
+**The single sentence.** The pair is the cleanest operator theory of the corpus because the cone is thin and the composition is a scalar; it is also the poorest, because a rank-one family has no group of invertibles, and **everything that the algebra pairs gain they gain by the identity being a product.**
 
 ## Summary
 

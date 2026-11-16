@@ -125,7 +125,7 @@ $$
 
 where $X$ is the clean color video tensor, $H$ is the blur tensor, $B$ is the observed video and $N$ is noise. The t-product applies the blur to each frame and convolves the frames along the time mode. The deblurring solves $H\ast X=B$ for $X$.
 
-**The exact case.** If $H$ is a unit of the tensor algebra, then
+**The exact case.** If $H$ is invertible in the tensor algebra, then
 
 $$
 X=H^{-1}\ast B.
@@ -133,7 +133,7 @@ $$
 
 The inverse is computed by the criterion of *Zero Divisors of the Reduced Biquaternion Tensor Algebra*: transform $H$, invert every transform slice in both idempotent coordinates, and invert the transform. The cost is the cost of the transform and of the slicewise matrix inverses, $O(n_1n_2n_3\log n_3+n_3n_1^3)$ for square tensors.
 
-**The general case.** If $H$ is not a unit, the equation may have no exact solution, and one takes the minimum-norm least-squares solution of *Tensor Equations over the Reduced Biquaternions*,
+**The general case.** If $H$ is not invertible, the equation may have no exact solution, and one takes the minimum-norm least-squares solution of *Tensor Equations over the Reduced Biquaternions*,
 
 $$
 \boxed{\;
@@ -147,7 +147,7 @@ $$
 X=(H^{\mathsf H}\ast H+\lambda\mathrm I)^{-1}\ast H^{\mathsf H}\ast B
 $$
 
-for a regularization parameter $\lambda>0$. The pseudoinverse is computed by the t-SVD of $H$; the Tikhonov solution is computed slicewise in the transform. The zero-divisor criterion says when the exact inverse exists: $H$ is a unit exactly when no transform slice is singular in either coordinate.
+for a regularization parameter $\lambda>0$. The pseudoinverse is computed by the t-SVD of $H$; the Tikhonov solution is computed slicewise in the transform. The zero-divisor criterion says when the exact inverse exists: $H$ is invertible exactly when no transform slice is singular in either coordinate.
 
 **The algorithm.**
 
@@ -180,11 +180,11 @@ but the constants are smaller: the transform is a complex FFT applied to the two
 
 The pipeline was recomputed on a synthetic color video of $4\times4$ pixels and $2$ frames, with $32$ tensor entries and $96$ color samples. The encoding and decoding were inverse to $1.1\times10^{-16}$. The tubal rank of the video tensor was $3$; the per-frame PSNR of the rank-$k$ reconstruction, averaged over the two frames, was $25.6$ dB at $k=1$, $36.2$ dB at $k=2$, and $70.9$ dB at $k=3$, the last being the numerical roundoff of the exact reconstruction. For this small video the compression ratios were $1.78$ against the encoded tensor and $1.33$ against RGB at $k=1$; the formula gives $6.39$ and $4.79$ for $256\times256$ pixels, $100$ frames and $k=20$.
 
-For the deblurring, the blur tensor was a unit with a cyclic shift of strength $0.15$; the exact deblurring reproduced the clean video to $3.4\times10^{-16}$. With $1\%$ noise, the pseudoinverse reconstruction had a relative error of $8.0\times10^{-3}$ and a per-frame PSNR, averaged over the two frames, of $49.7$ dB. The exact case and the noisy case used the same transform, slicewise solve and inverse transform as the algorithm above.
+For the deblurring, the blur tensor was an invertible element with a cyclic shift of strength $0.15$; the exact deblurring reproduced the clean video to $3.4\times10^{-16}$. With $1\%$ noise, the pseudoinverse reconstruction had a relative error of $8.0\times10^{-3}$ and a per-frame PSNR, averaged over the two frames, of $49.7$ dB. The exact case and the noisy case used the same transform, slicewise solve and inverse transform as the algorithm above.
 
 ## Summary
 
-A color video is encoded as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$, one frame per frontal slice. The rank-$k$ truncation of its t-SVD compresses the video; the stored factors have $n_3k(n_1+n_2+1)$ reduced biquaternion entries, and the compression ratio is $n_1n_2/[k(n_1+n_2+1)]$ against the encoded tensor and $3n_1n_2/[4k(n_1+n_2+1)]$ against RGB. The reconstruction error is measured by the per-frame PSNR $10\log_{10}(3n_1n_2\lVert C\rVert_\infty^2/\langle C-C_k\rangle_*)$, averaged over the frames. Deblurring solves $H\ast X=B$: the inverse when $H$ is a unit, the pseudoinverse or a Tikhonov solution otherwise, all slicewise in the Fourier domain. The reduced biquaternion algorithms replace the quaternion SVD by two complex SVDs and the quaternion transform by two complex transforms; the asymptotic cost is the same and the constants are smaller. **The compression is optimal for the tubal rank, the deblurring is the tensor-equation solution, and the color video is one reduced biquaternion tensor.**
+A color video is encoded as $A_{\mathrm C}=A_{\mathrm R}i+A_{\mathrm G}j+A_{\mathrm B}ij$, one frame per frontal slice. The rank-$k$ truncation of its t-SVD compresses the video; the stored factors have $n_3k(n_1+n_2+1)$ reduced biquaternion entries, and the compression ratio is $n_1n_2/[k(n_1+n_2+1)]$ against the encoded tensor and $3n_1n_2/[4k(n_1+n_2+1)]$ against RGB. The reconstruction error is measured by the per-frame PSNR $10\log_{10}(3n_1n_2\lVert C\rVert_\infty^2/\langle C-C_k\rangle_*)$, averaged over the frames. Deblurring solves $H\ast X=B$: the inverse when $H$ is invertible, the pseudoinverse or a Tikhonov solution otherwise, all slicewise in the Fourier domain. The reduced biquaternion algorithms replace the quaternion SVD by two complex SVDs and the quaternion transform by two complex transforms; the asymptotic cost is the same and the constants are smaller. **The compression is optimal for the tubal rank, the deblurring is the tensor-equation solution, and the color video is one reduced biquaternion tensor.**
 
 ## Summary of Notation
 

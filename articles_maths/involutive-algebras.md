@@ -72,7 +72,7 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 **(a)** $\sigma(0) = 0$, $\sigma(1) = 1$, $\sigma(-a) = -\sigma(a)$, and $\sigma$ is additive and $F$-linear.
 
-**(b)** $\sigma$ maps the set of units onto itself by $u \mapsto \sigma(u)$, and $\sigma(u^{-1}) = \sigma(u)^{-1}$; the restriction $\sigma|_{A^\times}$ is an anti-automorphism of order two of the group of units $A^\times$, in the sense of *Involutive Groups*.
+**(b)** $\sigma$ maps the set of invertibles onto itself by $u \mapsto \sigma(u)$, and $\sigma(u^{-1}) = \sigma(u)^{-1}$; the restriction $\sigma|_{A^\times}$ is an anti-automorphism of order two of the group of invertibles $A^\times$, in the sense of *Involutive Groups*.
 
 **(c)** $\sigma$ carries a right ideal to a left ideal and a two-sided ideal to a two-sided ideal, and it preserves products and sums of ideals.
 
@@ -80,9 +80,9 @@ The $F$-linear case is the case $\varsigma = \mathrm{id}$, so the semilinear not
 
 **(e)** The elements $a + \sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric, and $a - \sigma(a)$ is antisymmetric.
 
-**Proof.** (a) is immediate from additivity and $\sigma^2 = \mathrm{id}$. (b) $\sigma(u)\sigma(u^{-1}) = \sigma(u^{-1}u) = \sigma(1) = 1$ and likewise in the other order, so $\sigma(u)$ is a unit with the stated inverse; the restriction is a group map of order two, and it reverses a product because $\sigma$ does. (c) If $rA \subseteq I$ then $A\sigma(r) = \sigma(rA) \subseteq \sigma(I)$, and the two-sided case follows by applying the same computation on both sides. (d) For $z$ central and $a$ arbitrary, $z\sigma(a) = \sigma(az) = \sigma(za) = \sigma(a)z$, so $\sigma(z)$ is central; the restriction is a ring automorphism of order two. (e) Apply $\sigma$: $\sigma(a+\sigma(a)) = \sigma(a)+a$, $\sigma(a\sigma(a)) = \sigma(\sigma(a))\sigma(a) = a\sigma(a)$, and $\sigma(\sigma(a)a) = \sigma(a)a$; and $\sigma(a-\sigma(a)) = -(a-\sigma(a))$.
+**Proof.** (a) is immediate from additivity and $\sigma^2 = \mathrm{id}$. (b) $\sigma(u)\sigma(u^{-1}) = \sigma(u^{-1}u) = \sigma(1) = 1$ and likewise in the other order, so $\sigma(u)$ is invertible with the stated inverse; the restriction is a group map of order two, and it reverses a product because $\sigma$ does. (c) If $rA \subseteq I$ then $A\sigma(r) = \sigma(rA) \subseteq \sigma(I)$, and the two-sided case follows by applying the same computation on both sides. (d) For $z$ central and $a$ arbitrary, $z\sigma(a) = \sigma(az) = \sigma(za) = \sigma(a)z$, so $\sigma(z)$ is central; the restriction is a ring automorphism of order two. (e) Apply $\sigma$: $\sigma(a+\sigma(a)) = \sigma(a)+a$, $\sigma(a\sigma(a)) = \sigma(\sigma(a))\sigma(a) = a\sigma(a)$, and $\sigma(\sigma(a)a) = \sigma(a)a$; and $\sigma(a-\sigma(a)) = -(a-\sigma(a))$.
 
-**Remark.** Part (b) is the passage to the group case: an involution of the algebra restricts to an anti-automorphism of order two of the group of units, and the fixed units of $\sigma$ are a subgroup only when the symmetric units commute, by the structure theory of *Involutive Groups*. The linear-group consequences of the restriction — the orthogonal and the unitary groups that a form selects among the fixed units — are Part II.
+**Remark.** Part (b) is the passage to the group case: an involution of the algebra restricts to an anti-automorphism of order two of the group of invertibles, and the fixed units of $\sigma$ are a subgroup only when the symmetric units commute, by the structure theory of *Involutive Groups*. The linear-group consequences of the restriction — the orthogonal and the unitary groups that a form selects among the fixed units — are Part II.
 
 ### Examples
 
@@ -148,7 +148,7 @@ the algebra is $\mathbb{Z}/2$-graded, with $A^+$ the even part and $A^-$ the odd
 
 **Proof.** The decomposition is the theorem of the first subsection. For $x,y$ fixed, $\alpha(xy) = \alpha(x)\alpha(y) = xy$; for $x$ fixed and $y$ negated, $\alpha(xy) = x(-y) = -xy$ and likewise on the other side; and for $x,y$ negated, $\alpha(xy) = (-x)(-y) = xy$. Each line says that the product lands in the stated summand.
 
-**Corollary (the inner case).** Let $u$ be a unit of $A$. Then $\operatorname{ad}_u(x) = uxu^{-1}$ is an involutive automorphism exactly when $u^2 \in Z(A)$, and then its fixed subalgebra is the centraliser $C_A(u)$. In particular an inner involutive automorphism is the identity on the centre, and if $A$ is central simple then every involutive automorphism is inner, by Skolem–Noether, so every involutive automorphism of $A$ is of this form.
+**Corollary (the inner case).** Let $u$ be an invertible element of $A$. Then $\operatorname{ad}_u(x) = uxu^{-1}$ is an involutive automorphism exactly when $u^2 \in Z(A)$, and then its fixed subalgebra is the centraliser $C_A(u)$. In particular an inner involutive automorphism is the identity on the centre, and if $A$ is central simple then every involutive automorphism is inner, by Skolem–Noether, so every involutive automorphism of $A$ is of this form.
 
 **Proof.** $\operatorname{ad}_u^2(x) = u^2xu^{-2}$, so $\operatorname{ad}_u^2 = \mathrm{id}$ exactly when $u^2$ is central; $x$ is fixed exactly when $ux = xu$. An inner automorphism fixes the centre pointwise, and for a central simple algebra every automorphism is inner by the Skolem–Noether theorem of *Automorphisms and Derivations of Algebras*.
 
@@ -278,7 +278,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 ## The Three Other Cases
 
-**Groups.** In *Involutive Groups* the involution of a group is an anti-automorphism of order two, and the inversion $g \mapsto g^{-1}$ is the model; an involution of an algebra restricts to the group of units, by the proposition on the elementary properties, and not every involution of that group extends to the algebra. The coset theorem above is the algebra case of the coset $\operatorname{Anti}(G)$ of the group theory, with the chosen involution $\sigma$ in the place of the inversion.
+**Groups.** In *Involutive Groups* the involution of a group is an anti-automorphism of order two, and the inversion $g \mapsto g^{-1}$ is the model; an involution of an algebra restricts to the group of invertibles, by the proposition on the elementary properties, and not every involution of that group extends to the algebra. The coset theorem above is the algebra case of the coset $\operatorname{Anti}(G)$ of the group theory, with the chosen involution $\sigma$ in the place of the inversion.
 
 **Rings.** *Involutive Rings* gives the same map with the field removed: there the involution of a ring is an anti-automorphism of order two, the datum is an order-two isomorphism $A \to A_{\mathrm{opp}}$, and the $\sigma$-ideals, the $\sigma$-prime notions and the reduced questions are its subject. The present article adds the field $F$, the $F$-linearity and the scalar twisting, and the $\varsigma$-semilinear case exists only here.
 
@@ -288,7 +288,7 @@ so the commutative $F$-algebra $B$ is recovered from its scalar extension $B \ot
 
 ## Summary
 
-An involution of a unital associative $F$-algebra $A$ is an $F$-linear anti-automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$, the same datum as an $F$-algebra isomorphism $A \to A_{\mathrm{opp}}$ of order two; a second kind of order-two map, the involutive automorphism, preserves the product, and the two coincide exactly on a commutative algebra. When $A$ carries an involution the anti-automorphisms of $A$ form a coset $\operatorname{Anti}(A) = \sigma\operatorname{Aut}(A)$, the composite of two of them is an automorphism, and the involutions among them are those $\sigma\alpha$ with $(\sigma\alpha)^2 = \mathrm{id}$. The centre and the group of units are stable, the restriction to the units is an anti-automorphism of order two of the group, and the elements $a+\sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric.
+An involution of a unital associative $F$-algebra $A$ is an $F$-linear anti-automorphism $\sigma$ with $\sigma^2 = \mathrm{id}$, the same datum as an $F$-algebra isomorphism $A \to A_{\mathrm{opp}}$ of order two; a second kind of order-two map, the involutive automorphism, preserves the product, and the two coincide exactly on a commutative algebra. When $A$ carries an involution the anti-automorphisms of $A$ form a coset $\operatorname{Anti}(A) = \sigma\operatorname{Aut}(A)$, the composite of two of them is an automorphism, and the involutions among them are those $\sigma\alpha$ with $(\sigma\alpha)^2 = \mathrm{id}$. The centre and the group of invertibles are stable, the restriction to the invertibles is an anti-automorphism of order two of the group, and the elements $a+\sigma(a)$, $a\sigma(a)$ and $\sigma(a)a$ are symmetric.
 
 Over a field with $2 \neq 0$ the involution decomposes the algebra, $A = A^+ \oplus A^-$, into the symmetric and the anti-Hermitian elements, the eigenspaces of $\sigma$ for the eigenvalues $1$ and $-1$; the decomposition is the eigenvalue decomposition of the involution, and the two parts are studied in *The Self-Adjoint Part of an Algebra* and *The Anti-Hermitian Part of an Algebra*. For an involutive automorphism $\alpha$ the fixed set $A^+$ is always a subalgebra and $A = A^+ \oplus A^-$ is a $\mathbb{Z}/2$-grading, and an inner $\alpha$ is $\operatorname{ad}_u$ with $u^2$ central. In characteristic two the symmetric and the anti-Hermitian elements coincide, and the decomposition is unavailable.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The classical construction of the covering groups of the orthogonal group uses the inverse: the Clifford group is the set of units $x$ for which $x\,v\,x^{-1}$ is again a vector, the norm $N(x)=x x^{\natural}$ cuts it down to $\mathrm{Pin}$, and the parity cuts $\mathrm{Pin}$ down to $\mathrm{Spin}$. The right factor in all of it is $x^{-1}$, and the operator carrying it is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
+The classical construction of the covering groups of the orthogonal group uses the inverse: the Clifford group is the set of invertibles $x$ for which $x\,v\,x^{-1}$ is again a vector, the norm $N(x)=x x^{\natural}$ cuts it down to $\mathrm{Pin}$, and the parity cuts $\mathrm{Pin}$ down to $\mathrm{Spin}$. The right factor in all of it is $x^{-1}$, and the operator carrying it is the signed inner conjugation $\mathrm{Ad}^{\alpha}_x(v)=\alpha(x)vx^{-1}$.
 
 This article makes the same construction with the right factor replaced by the dagger, that is with the **signed Hermitian pair** of *Two-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*,
 
@@ -24,7 +24,7 @@ The groups $\Gamma$, $\mathrm{Pin}$, $\mathrm{Spin}$, the norm and the exact seq
 
 ## The Three Conditions
 
-**Proposition (the slice is a group).** $U=\{x:x^{\dagger}x=1\}$ is a subgroup of the unit group. It contains $1$; if $x\in U$ then $x^{\dagger}=x^{-1}$ and $x^{\dagger}\in U$; and $U$ is closed under multiplication.
+**Proposition (the slice is a group).** $U=\{x:x^{\dagger}x=1\}$ is a subgroup of the group of invertibles. It contains $1$; if $x\in U$ then $x^{\dagger}=x^{-1}$ and $x^{\dagger}\in U$; and $U$ is closed under multiplication.
 
 *Proof.* This is the slice proposition of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint*: $(xy)^{\dagger}(xy)=y^{\dagger}x^{\dagger}xy=y^{\dagger}y=1$.
 
@@ -52,7 +52,7 @@ So the Hermitian Clifford group **is** the pin group, and the slice meets it in 
 
 **Remark (the equality is the point).** The proposition says that in the trivial-involution case the three conditions — "the dagger is the inverse", "the Hermitian pair is an isometry", "the norm is $\pm1$" — cut $\Gamma$ down to the same group, the pin group being the isometry locus and the slice its norm-one subgroup. The Hermitian pair therefore needs no new group: it reconstructs $\mathrm{Pin}$ from the adjunction rather than from the inversion, and the identity $\mathrm{Sd}^{\alpha}_x=\mathrm{Ad}^{\alpha}_x$ on the slice is what makes the two constructions agree.
 
-**Remark (for a general involution the three differ).** The slice $U$ and the Hermitian Clifford group $\Gamma_{\dagger}$ are different subsets of the unit group in general. The slice condition is $x^{\dagger}x=1$ and it does not involve the quadratic form; the isometry condition is $\sigma(N(x))^{2}=1$ and it does. An element can be a unit of norm $\pm1$ without being on the slice, and an element of the slice can have $\sigma(N(x))^{2}\neq1$; in the trivial-involution case the two reduce to $U\cap\Gamma=\{N=1\}$ and $\Gamma_{\dagger}=\{N=\pm1\}=\mathrm{Pin}$, which coincide for a definite form and differ by an index-two subgroup otherwise. The scalar widening by $\sigma$ is the only trace of the coefficient involution in the group theory.
+**Remark (for a general involution the three differ).** The slice $U$ and the Hermitian Clifford group $\Gamma_{\dagger}$ are different subsets of the group of invertibles in general. The slice condition is $x^{\dagger}x=1$ and it does not involve the quadratic form; the isometry condition is $\sigma(N(x))^{2}=1$ and it does. An element can be a unit of norm $\pm1$ without being on the slice, and an element of the slice can have $\sigma(N(x))^{2}\neq1$; in the trivial-involution case the two reduce to $U\cap\Gamma=\{N=1\}$ and $\Gamma_{\dagger}=\{N=\pm1\}=\mathrm{Pin}$, which coincide for a definite form and differ by an index-two subgroup otherwise. The scalar widening by $\sigma$ is the only trace of the coefficient involution in the group theory.
 
 ## The Reflections and the Covering
 
@@ -112,7 +112,7 @@ In each case $\mathrm{Pin}$ is compact because the form is definite, the norm $N
 
 **Remark (the norm can be isotropic).** On $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the norm is the determinant of signature $(2,2)$ and vanishes on the nonzero rank-one matrices. Those elements are zero divisors and not in $\Gamma$, so $\Gamma_{\dagger}\subseteq\Gamma$ excludes them; but an element of the slice can lie outside $\Gamma$, and the two conditions are genuinely independent off the trivial-involution case, as the next remark records.
 
-**Remark (the slice is not inside the Clifford group).** In $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the element $1-\tfrac12e_2-\tfrac12e_1e_2$ has norm $1$ and is a unit, and its signed inner conjugation does not preserve $V$, by *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The same element shows that a unit can satisfy a norm condition and fail the Clifford-group condition, which is why $\Gamma_{\dagger}$ is defined inside $\Gamma$ and not by a norm condition alone. In the trivial-involution case this cannot happen, because there the norm condition and the slice condition coincide with membership in $\Gamma$.
+**Remark (the slice is not inside the Clifford group).** In $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ the element $1-\tfrac12e_2-\tfrac12e_1e_2$ has norm $1$ and is invertible, and its signed inner conjugation does not preserve $V$, by *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The same element shows that an invertible element can satisfy a norm condition and fail the Clifford-group condition, which is why $\Gamma_{\dagger}$ is defined inside $\Gamma$ and not by a norm condition alone. In the trivial-involution case this cannot happen, because there the norm condition and the slice condition coincide with membership in $\Gamma$.
 
 **Remark (the degenerate case).** If $q$ is degenerate the Clifford group need not act on $V$ by invertible maps, the map to $O(V,\mathfrak{Q})$ need not be onto, and the covering statement fails in both formulations; the Hermitian pair does not repair it. The degenerate theory belongs to *Degenerate Clifford Algebras and the Radical*.
 

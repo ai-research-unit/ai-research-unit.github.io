@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the units and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*.
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*.
 
 **The bookkeeping is quoted once.** With $t'$ the time and $r'_t=c\,t'$ the material time, a positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+i\vec k_\Phi\cdot\vec r)$, so
 
@@ -115,7 +115,7 @@ verified over one hundred draws to $1.4\times10^{-14}$. **The zeros are $\hbar\o
 
 **The count.** Over one hundred draws: all four roots real in $32$ draws for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\tilde Z=\vec e_z$ the cone condition held in exactly the same $32$ draws, which is the whole explanation of the number.
 
-**So reality is a cone and not a theorem.** For a central unit the cone is everything, because the pencil is definite on the whole carrier. For a quaternion root the cone is a proper subset of the Hamiltonians, and the subset depends on the root's axis. **A unit that works on one cone is not a unit for the equation**, which is the parent's uniformity argument in its momentum-space form.
+**So reality is a cone and not a theorem.** For a central unit the cone is everything, because the pencil is definite on the whole carrier. For a quaternion root the cone is a proper subset of the Hamiltonians, and the subset depends on the root's axis. **an invertible element that works on one cone is not invertible for the equation**, which is the parent's uniformity argument in its momentum-space form.
 
 ## The Zero Set Is Two Points
 
@@ -186,7 +186,7 @@ verified over one hundred draws to $1.4\times10^{-14}$. **The zeros are $\hbar\o
 
 **The third is the relation to the spectral theorem.** The symbol's two eigenvalues are the spectrum of a self-adjoint array. The operator setting's spectrum is a set of real numbers with accumulation points, and the passage from one to the other is the spectral theorem for $L^{2}$ sections of a bundle, which this article does not construct.
 
-**The fourth is the physical status of the second writing.** The symbol uses $i\hbar\partial_{t'}-\tilde H_\Psi$, and the parent's second writing divides by $i\hbar c$. The two give symbols that differ by the real factor $c$ in the frequency; that factor is a unit and not a structure, and no statement here depends on it.
+**The fourth is the physical status of the second writing.** The symbol uses $i\hbar\partial_{t'}-\tilde H_\Psi$, and the parent's second writing divides by $i\hbar c$. The two give symbols that differ by the real factor $c$ in the frequency; that factor is invertible and not a structure, and no statement here depends on it.
 
 ## Summary
 

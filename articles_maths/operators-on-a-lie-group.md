@@ -13,7 +13,7 @@ The article assumes the definition and the elementary structure of a Lie group f
 
 ### The Operator Layer
 
-**Definition.** A **smooth operator** on $G$ is a smooth map $G \to G$. The smooth operators form a monoid under composition, and its group of units is the group $\operatorname{Diff}(G)$ of diffeomorphisms of $G$ onto itself.
+**Definition.** A **smooth operator** on $G$ is a smooth map $G \to G$. The smooth operators form a monoid under composition, and its group of invertibles is the group $\operatorname{Diff}(G)$ of diffeomorphisms of $G$ onto itself.
 
 **Proposition.** The left and the right translations $L_g(h) = gh$ and $R_g(h) = hg$ are diffeomorphisms, the inversion $\iota$ is a diffeomorphism, and the inner automorphisms $\Psi_g = L_gR_{g^{-1}}$ are diffeomorphisms and Lie group automorphisms.
 

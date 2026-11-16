@@ -7,7 +7,7 @@ A lattice is a set carrying two binary operations, the meet and the join, and th
 those operations are the **operators** of the lattice. This article studies them. It defines the
 lattice maps — the join-preserving, the meet-preserving and the fully preserving ones — and shows
 where the three notions separate; it collects the endomorphisms of a lattice into a monoid whose
-group of units is the automorphism group; it reads a **congruence** as the kernel of a
+group of invertibles is the automorphism group; it reads a **congruence** as the kernel of a
 lattice homomorphism, constructs the quotient, and proves the first isomorphism theorem for
 lattices; and it studies the family of congruences as a lattice in its own right, distributive by
 the theorem of Funayama and Nakayama, and reads the lattice back through its operator layer.
@@ -22,7 +22,7 @@ order-theoretic completeness of *Order Theory and Lattices* and is not the metri
 later part. No **form** and no linear structure appears. And the group-theoretic analogue of the
 theory — normal subgroups, congruence relations on a group and the quotient group — is not used
 here; it belongs to *Groups*, in this Part, and the comparison is drawn only at the points where the
-lattice case is genuinely different. A group occurs here only as the group of units of a monoid, as
+lattice case is genuinely different. A group occurs here only as the group of invertibles of a monoid, as
 in *Sets, Functions and Relations*; its systematic theory is *Groups*. The operators that only
 preserve an *order* and not the
 operations are the subject of *Operators on a Poset*, in this category, and the operators of a
@@ -112,7 +112,7 @@ bounded homomorphisms, while the theory of congruences below works with the unit
 ### The Endomorphism Monoid
 
 **Definition.** The set of lattice endomorphisms of $L$, written $\operatorname{End}(L)$, is a monoid
-under composition, with identity $\mathrm{id}_L$; its group of units is the **automorphism group**
+under composition, with identity $\mathrm{id}_L$; its group of invertibles is the **automorphism group**
 $\operatorname{Aut}(L)$.
 
 **Proposition.** $\operatorname{End}(L)$ is a monoid, and $\operatorname{Aut}(L)$ is a group.
@@ -121,7 +121,7 @@ $\operatorname{Aut}(L)$.
 h(g(x) \vee g(y)) = h(g(x)) \vee h(g(y))$, and dually for the meet. Composition is associative and
 $\mathrm{id}_L$ is a two-sided identity by *Sets, Functions and Relations*. A unit of the monoid is
 a bijective endomorphism with inverse in the monoid; by the proposition above that inverse is a
-lattice homomorphism, so the units are exactly the automorphisms, and they form a group.
+lattice homomorphism, so the invertibles are exactly the automorphisms, and they form a group.
 
 The monoid of join-preserving maps and the monoid of meet-preserving maps are defined the same way;
 each contains $\operatorname{End}(L)$, and each is closed under composition.
@@ -326,7 +326,7 @@ lattice here is the algebraic half of it.
 
 A lattice map may preserve the join, the meet, or both; a join-preserving map is monotone, and the
 three notions are distinct, as the diamond $M_3$ shows. The lattice endomorphisms form the monoid
-$\operatorname{End}(L)$, whose group of units is the automorphism group $\operatorname{Aut}(L)$;
+$\operatorname{End}(L)$, whose group of invertibles is the automorphism group $\operatorname{Aut}(L)$;
 the constants are endomorphisms, so the monoid is large and its units are few.
 
 A congruence of a lattice is an equivalence relation compatible with the meet and the join; it is
@@ -351,7 +351,7 @@ kernel–image correspondence is the algebraic content of the first isomorphism 
 | $h : L \to M$ | A map of lattices; join-preserving, meet-preserving, or a homomorphism |
 | $\operatorname{End}(L)$ | Monoid of lattice endomorphisms of $L$ under composition |
 | $\operatorname{End}_\vee(L)$, $\operatorname{End}_\wedge(L)$ | Monoids of join-preserving and of meet-preserving self-maps of $L$ |
-| $\operatorname{Aut}(L)$ | Automorphism group of $L$, the group of units of $\operatorname{End}(L)$ |
+| $\operatorname{Aut}(L)$ | Automorphism group of $L$, the group of invertibles of $\operatorname{End}(L)$ |
 | $\vartheta_{\mathrm{cng}}$ | A congruence of $L$: an equivalence compatible with $\wedge$ and $\vee$ |
 | $L/\vartheta_{\mathrm{cng}}$, $\pi$ | Quotient lattice and quotient map $x \mapsto [x]$ |
 | $\ker h$ | Kernel of a homomorphism, $\{(x,y) : h(x) = h(y)\}$ |

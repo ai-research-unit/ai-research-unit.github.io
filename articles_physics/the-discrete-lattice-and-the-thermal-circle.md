@@ -4,14 +4,14 @@
 
 The corpus has two disciplines of discreteness, and they have never been compared. The **algebraic**
 discipline is the discrete lattice: the integral structures of the algebra, the Lipschitz and Hurwitz orders,
-and the finite groups of units attached to them — the quaternion group of order eight, the binary tetrahedral
+and the finite groups of invertibles attached to them — the quaternion group of order eight, the binary tetrahedral
 group of order twenty-four and the binary polyhedral groups — all owned by *Quaternion Orders and Finite
-Groups of Units*. The **analytic** discipline is the thermal circle: the imaginary-time compactification and
+Groups of Invertibles*. The **analytic** discipline is the thermal circle: the imaginary-time compactification and
 the discrete Matsubara frequencies, owned by [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html). The lattice is
 static and algebraic, the circle is thermal and analytic, and this article states the one principle that
 produces both.
 
-The article owns the comparison and the principle, and no theorem. The orders and their unit groups are the
+The article owns the comparison and the principle, and no theorem. The orders and their groups of invertibles are the
 orders article; the frequencies, the circle and the KMS condition are the Matsubara article, *The KMS
 Condition and the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion
 Framework*; the central phase whose compactification the thermal circle realises is *The Central
@@ -35,13 +35,13 @@ that bridge them:
 | the central phase $\mathrm{U}(1)$ | the integer phase winding | the discrete charge label (*Particle Types*) |
 | the internal group $\mathrm{U}(2)$, compact | its irreducible labels | internal quantum numbers, the discrete charge |
 | the thermal circle, circumference $\beta$ | the Matsubara frequencies $\omega_n=2\pi n/\beta$ | the thermal spectrum (*The Matsubara Formalism*) |
-| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite unit groups and the discrete lattice (*Quaternion Orders and Finite Groups of Units*) |
+| the unit sphere $Sp(1)\cong SU(2)$, compact | its finite subgroups and the orders above them | the finite groups of invertibles and the discrete lattice (*Quaternion Orders and Finite Groups of Invertibles*) |
 
 The first two rows are the same mechanism read at two sizes: the compactness of the phase is why angular
 momentum and charge are discrete, and the internal group being compact is why its labels are discrete. The
 third row is thermal: the imaginary-time direction is a **circle**, a compact direction, and its character
 group is $\mathbb{Z}$, the Matsubara lattice. The fourth row is algebraic: the unit sphere is compact, and a
-discrete subgroup of a compact group is finite, so the lattice of units is finite and the orders are the
+discrete subgroup of a compact group is finite, so the lattice of invertibles is finite and the orders are the
 integral lattices inside the compact group.
 
 ## The Lattice and the Circle as Two Duals
@@ -70,7 +70,7 @@ two compactnesses of different origins, and the article states both rather than 
 
 ## The Lattice of the Logarithm
 
-A third lattice appears in the algebra, and it is neither of the two above. For a unit $\tilde Q=Q_te_t+\vec Q$ with $B\neq0$, write $\vec U=\vec Q/B$ for the pure unit element of the vector part, $\vec U^2=-e_t$, and $B^2=Q_x^2+Q_y^2+Q_z^2$. The logarithm is defined up to the kernel of the exponential on the diagonal part of the element,
+A third lattice appears in the algebra, and it is neither of the two above. For an invertible element $\tilde Q=Q_te_t+\vec Q$ with $B\neq0$, write $\vec U=\vec Q/B$ for the pure unit element of the vector part, $\vec U^2=-e_t$, and $B^2=Q_x^2+Q_y^2+Q_z^2$. The logarithm is defined up to the kernel of the exponential on the diagonal part of the element,
 
 $$
 \boxed{\;L(\tilde Q)=\left\{\pi i m\,e_t+\pi n\,\vec U:\ m,n\in\mathbb Z,\ m\equiv n\pmod 2\right\}\;}.
@@ -85,13 +85,13 @@ This is the **gauge of the logarithm**, not a thermal spectrum. It is a lattice 
 ## Where the Two Meet: The Orders at Finite Temperature
 
 The comparison suggests exactly one meeting point, and the article states it as a programme. The orders
-article's finite unit groups are the discrete subgroups of the compact unit sphere, and the Matsubara
+article's finite groups of invertibles are the discrete subgroups of the compact unit sphere, and the Matsubara
 article's lattice is the dual of the compact imaginary-time circle. A finite-temperature interpretation of the
-orders would require the discrete unit group to be a **spectrum** — the set of excitations the imaginary-time
+orders would require the discrete group of invertibles to be a **spectrum** — the set of excitations the imaginary-time
 circle supports — and the corpus supplies no such statement; the identification of the order's units with a
 thermal partition function is not made anywhere, and the article records the gap rather than proposing a
 formula. What is available is the shape: both are "discreteness from compactness", so a thermal interpretation of
-the lattice would be a partition function whose spectrum is the unit group, and whether such a function is
+the lattice would be a partition function whose spectrum is the group of invertibles, and whether such a function is
 the algebra's is open.
 
 ## Physical Readings
@@ -104,14 +104,14 @@ the algebra's is open.
   the central phase of the algebra are one compact direction, so the Matsubara formalism is the central
   rotation at finite temperature. Owner: *The Matsubara Thermal Formalism in Biquaternionic Form* and *The Central
   Rotation*.
-- **A finite lattice and an infinite lattice, one principle.** The interpretation is that the finite unit groups and
+- **A finite lattice and an infinite lattice, one principle.** The interpretation is that the finite groups of invertibles and
   the infinite Matsubara lattice are the two dual faces of the compactness principle, one a subgroup and one
   a character group, so the corpus's two disciplines of discreteness are one principle with two duals.
   Boundary: a statement of the principle, and the thermal interpretation of the orders is left open.
 
 ## Summary
 
-The corpus's discrete data fall into two disciplines: the algebraic lattice of orders and finite unit groups
+The corpus's discrete data fall into two disciplines: the algebraic lattice of orders and finite groups of invertibles
 in the compact real unit sphere, and the thermal lattice of Matsubara frequencies dual to the compact
 imaginary-time circle. This article states the one principle that produces both — every discreteness is the
 Pontryagin dual of a compactness — and tables its four instances: the compact central phase, the compact
@@ -127,7 +127,7 @@ named as a gap and not proposed as a formula.
 | $\mathrm{U}(1)=\exp(i\theta_{\mathrm{cen}})e_t$ | the compact central phase, dual to the integer charge lattice |
 | $U\cong \mathrm{U}(2)$ | the compact $*$-unitary slice, whose irreducible labels are the internal quantum numbers |
 | $\omega_n=2\pi n/\beta$ | the Matsubara frequencies, the dual lattice of the thermal circle |
-| $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite unit groups sit |
+| $Sp(1)\cong SU(2)$ | the compact real unit sphere, in which the orders and their finite groups of invertibles sit |
 | $\beta=\frac{\hbar}{k_{B}\,T}$ | the circumference of the thermal circle, in the coordinate $r'_t$ |
 
 ## Further Reading
@@ -135,7 +135,7 @@ named as a gap and not proposed as a formula.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the parity-matched lattice and its two cosets.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the kernel of the exponential and the eigenvalue formula.
 - [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the kernel as a gauge of the logarithm and for the boundary that keeps it apart from the thermal circle.
-- [Quaternion Orders and Finite Groups of Units](../articles_maths/quaternion-orders-and-finite-groups-of-units.html), for the orders, the finite unit groups and the infinite unit group of the complex order.
+- [Quaternion Orders and Finite Groups of Invertibles](../articles_maths/quaternion-orders-and-finite-groups-of-invertibles.html), for the orders, the finite groups of invertibles and the infinite group of invertibles of the complex order.
 - [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html), for the thermal circle, the Matsubara frequencies and the
   partition function.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html) and *Thermal Time and the Modular Flow in the

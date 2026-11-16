@@ -10,7 +10,7 @@ $$
 S=\frac{\hbar c}{2}\int\mathrm{d}^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr].
 $$
 
-The word is a bijection from eight parameters onto the units of $\mathbb{B}$, so the substitution adds nothing and drops nothing: the eight parameters are coordinates on the carrier, and the polar action is the element action in those coordinates.
+The word is a bijection from eight parameters onto the invertibles of $\mathbb{B}$, so the substitution adds nothing and drops nothing: the eight parameters are coordinates on the carrier, and the polar action is the element action in those coordinates.
 
 **Two things are found, and they are the article's content.**
 
@@ -257,7 +257,7 @@ for every $r>0$. One non-vanishing bracket is enough: the constraints are second
 
 ## The Four Brackets and the Parameter Basis
 
-Two bases of the eight-dimensional tangent space at a unit, and one change of basis.
+Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
 
 **The bracket basis.** The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
 
@@ -281,7 +281,7 @@ The comparison is worth stating precisely, because the two formulations are usua
 
 **The word absorbs the unit conditions.** The rotor is $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ with a unit axis, so $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ satisfies $\hat s^{2}=\tilde u_{\mathrm r}\vec e_z^{2}\tilde u_{\mathrm r}^{-1}=-e_t$ identically, for every value of the three parameters. The unit condition is not imposed; it is a consequence of the parameterisation. The same holds for the boost: $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=e_t$ identically.
 
-**So no multipliers are needed for the unit conditions, and the article says exactly that.** It does not say that the polar action has no constraints. The constraints are there, four of them, and they are Euler–Lagrange equations: the vanishing of the momenta conjugate to the scale and to the boost. Those constraints come from the *structure* of the kinetic term, not from a unit condition, and a multiplier would not remove them.
+**So no multipliers are needed for the unit conditions, and the article says exactly that.** It does not say that the polar action has no constraints. The constraints are there, four of them, and they are Euler–Lagrange equations: the vanishing of the momenta conjugate to the scale and to the boost. Those constraints come from the *structure* of the kinetic term, not from an invertible element condition, and a multiplier would not remove them.
 
 **The correspondence is exact in one respect and only one.** Takabayasi's velocity field enters the Lagrangian algebraically, without a time derivative, and so does the boost here: $p_{\theta_{\mathrm{rpd}}}=0=p_{u_{\mathrm b}}$. Takabayasi's spin direction carries a transport equation, and so does the rotor here: away from rest its three momenta are non-zero, they are $\vec p_{\mathrm{spin}}=-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, and its three equations are dynamical. The agreement with Takabayasi is therefore an agreement about a boosted frame. At rest the spin's momentum vanishes, and the polar action's spin sector becomes constrained as well; the article states this because the closed form makes it visible, and does not claim it for Takabayasi's formulation, where the spin momentum is not proportional to a rapidity.
 
@@ -356,7 +356,7 @@ The four brackets remain the natural form of the equation, and the parameter equ
 - [The Variational Principle and the Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-dirac-equation-in-biquaternionic-form.html), the companion, for the action that is substituted here, and for the proof that the split into parts is forced.
 - [The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same substitution in the second-order case, where the Lagrangian comes out in closed form.
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
-- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone; the parts $\tilde\Xi\Pi_\pm$ lie on the cone, which is why the word is a word for the sum.
+- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone; the parts $\tilde\Xi\Pi_\pm$ lie on the cone, which is why the word is a word for the sum.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, §8, for the tensor formulation, its three Lagrange multipliers, and the velocity and spin-transport equations this article's constraint structure reproduces.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the spin fluid and the non-uniqueness of its transport equation.
 - Paul A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for primary and secondary constraints, second-class brackets, and the closure this article leaves open.

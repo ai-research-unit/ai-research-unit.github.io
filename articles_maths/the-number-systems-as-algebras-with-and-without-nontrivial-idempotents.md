@@ -106,7 +106,7 @@ If $a=0$, then $b=0$; if $a=1$, then $2b=b$, so $b=0$ in characteristic not two.
 
 **Theorem.** The algebra $\mathbb{C}_{\mathrm{dln}}$ is local with maximal ideal $(\varepsilon)$, and a local algebra has no nontrivial idempotents.
 
-*Proof.* The ideal $(\varepsilon)$ is the set of nonunits: $a+b\varepsilon$ is a unit exactly when $a\neq0$, with inverse $a^{-1}-a^{-2}b\varepsilon$. The quotient $\mathbb{C}_{\mathrm{dln}}/(\varepsilon)\cong\mathbb{R}$ is a field, so $(\varepsilon)$ is the unique maximal ideal. If $e$ is an idempotent in a local algebra with maximal ideal $\mathfrak{m}$, then $e$ and $1-e$ cannot both lie in $\mathfrak{m}$, because their sum is $1\notin\mathfrak{m}$; hence one of them is a unit. If $e$ is a unit and $e^2=e$, then $e=1$; if $1-e$ is a unit and $e(1-e)=0$, then $e=0$. Hence $e=0$ or $1$.
+*Proof.* The ideal $(\varepsilon)$ is the set of nonunits: $a+b\varepsilon$ is invertible exactly when $a\neq0$, with inverse $a^{-1}-a^{-2}b\varepsilon$. The quotient $\mathbb{C}_{\mathrm{dln}}/(\varepsilon)\cong\mathbb{R}$ is a field, so $(\varepsilon)$ is the unique maximal ideal. If $e$ is an idempotent in a local algebra with maximal ideal $\mathfrak{m}$, then $e$ and $1-e$ cannot both lie in $\mathfrak{m}$, because their sum is $1\notin\mathfrak{m}$; hence one of them is invertible. If $e$ is invertible and $e^2=e$, then $e=1$; if $1-e$ is invertible and $e(1-e)=0$, then $e=0$. Hence $e=0$ or $1$.
 
 **Corollary.** The dual numbers have exactly the idempotents $0$ and $1$, and the unit $1$ is primitive.
 
@@ -130,7 +130,7 @@ $$
 0, \qquad 1, \qquad \Pi_+=\tfrac12(1+j), \qquad \Pi_-=\tfrac12(1-j).
 $$
 
-They satisfy $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$. The two nontrivial idempotents are orthogonal and complete; they are the units of the two factors in the isomorphism
+They satisfy $\Pi_+^2=\Pi_+$, $\Pi_-^2=\Pi_-$, $\Pi_+\Pi_-=0$ and $\Pi_++\Pi_-=1$. The two nontrivial idempotents are orthogonal and complete; they are the invertibles of the two factors in the isomorphism
 
 $$
 \mathbb{C}_{\mathrm{spl}}\longrightarrow\mathbb{R}\times\mathbb{R}, \qquad a+bj\longmapsto(a+b,a-b).
@@ -232,7 +232,7 @@ $$
 e\mathbb{B}_{\mathrm{spl}}e\cong\mathbb{H}, \qquad f\mathbb{B}_{\mathrm{spl}}f\cong\mathbb{H}, \qquad e\mathbb{B}_{\mathrm{spl}}f=f\mathbb{B}_{\mathrm{spl}}e=0.
 $$
 
-The Peirce decomposition is the direct sum of the two copies of $\mathbb{H}$, and the two corners are division algebras. The algebra is the product of the two, and the two idempotents are the units of the factors.
+The Peirce decomposition is the direct sum of the two copies of $\mathbb{H}$, and the two corners are division algebras. The algebra is the product of the two, and the two idempotents are the identities of the factors.
 
 ## The Property Ladder
 

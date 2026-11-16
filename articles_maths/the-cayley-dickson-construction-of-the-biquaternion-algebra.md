@@ -12,7 +12,7 @@ The article asks one question about the third layer and answers it: whether it i
 
 The rest follows from reading the third layer against the first two. It keeps the multiplication table, the associativity and the non-commutativity of the quaternion layer, it changes the centre from the real line to the complex line, and it destroys the division property. The mechanism of the last is short: every unit direction of the quaternion layer, multiplied by $i$, has square $+e_t$, so the layer carries the idempotents $\tfrac12(e_t\pm i\vec u)$ and the zero divisors $(e_t+i\vec e_x)(e_t-i\vec e_x)$.
 
-**The boundaries.** The full Cayley–Dickson construction of $\mathbb{H}$, with the nine derivations of Hamilton's rules and the argument that fixes the twist, is *The Cayley–Dickson Construction of the Quaternion Algebra*, in the Quaternion Algebra category. The algebra $\mathbb{B}$, its table, its axioms and the proof that it is not a division algebra are *The Biquaternion Algebra*, above this article in this category. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero divisors and the unit criterion are *Zero Divisors and Units*; the general doubling and its associativity criterion are *Quadratic Forms over Algebras and Norms*; the tensor product is *Tensor Products of Algebras*.
+**The boundaries.** The full Cayley–Dickson construction of $\mathbb{H}$, with the nine derivations of Hamilton's rules and the argument that fixes the twist, is *The Cayley–Dickson Construction of the Quaternion Algebra*, in the Quaternion Algebra category. The algebra $\mathbb{B}$, its table, its axioms and the proof that it is not a division algebra are *The Biquaternion Algebra*, above this article in this category. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero divisors and the unit criterion are *Zero Divisors and Invertibles*; the general doubling and its associativity criterion are *Quadratic Forms over Algebras and Norms*; the tensor product is *Tensor Products of Algebras*.
 
 **What the construction uses.** One unit for the first rung, $\vec e_z$; one unit for the second, $\vec e_x$; one scalar for the third, $i$. The third direction of the vector subspace, $\vec e_y$, is computed and not adjoined, $\vec e_y=\vec e_z\vec e_x$. The letters j and k are not used at any layer: the three directions keep the letters $x$, $y$ and $z$, and the remaining letter is the scalar $i$.
 
@@ -29,7 +29,7 @@ Each layer is a real algebra, and the table records what was adjoined to obtain 
 
 **The glyphs.** The generic element of the second layer is written $\tilde q$ and the generic element of the third is written $\tilde Q$. The two are told apart by the case of the letter, because the third layer is the second read with complex coefficients: $\tilde Q=\tilde q+i\tilde q'$ with $\tilde q$ and $\tilde q'$ in $\mathbb{H}$. The vector part of $\tilde Q$ is $\vec Q$, and a coefficient is written $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu$ and $q'_\mu$ real. The prime marks the imaginary part throughout.
 
-**The arrows.** The three vector units carry the arrow and the two scalar units do not, at every layer: $\vec e_x,\vec e_y,\vec e_z$ name directions, while $e_t$ and $i$ are scalars. The arrow is a statement about the grade of a unit and not about its layer. The two scalars differ in a respect that the rest of this article is about: $e_t$ is the unit of the algebra and $i$ is a scalar of the coefficient field.
+**The arrows.** The three vector units carry the arrow and the two scalar units do not, at every layer: $\vec e_x,\vec e_y,\vec e_z$ name directions, while $e_t$ and $i$ are scalars. The arrow is a statement about the grade of an invertible element and not about its layer. The two scalars differ in a respect that the rest of this article is about: $e_t$ is the unit of the algebra and $i$ is a scalar of the coefficient field.
 
 ## Rung One: The Complex Algebra
 
@@ -197,7 +197,7 @@ of real dimension two. *Proof.* The commutator $[X,Y]=XY-YX$ with a vector unit 
 | $\mathbb{H}$ | $\mathbb{R}e_t$ | 1 |
 | $\mathbb{B}$ | $\mathbb{C}e_t$ | 2 |
 
-**Why a rung does not enlarge the centre.** Beyond the first rung, the unit adjoined is not central: the twist makes $\vec e_x$ anticommute with $\vec e_z$, and the same twist inside the double makes the new unit of a rung above $\mathbb{H}$ non-central. What a later rung does to the centre is to carry the previous scalar direction into the vector subspace: $\vec e_z$ is a scalar at rung one and a direction at rung two. The scalar extension does the opposite. It adjoins a unit that is central by construction, so the centre grows by one real dimension and the vector subspace does not move, and that is the structural difference between the two moves.
+**Why a rung does not enlarge the centre.** Beyond the first rung, the unit adjoined is not central: the twist makes $\vec e_x$ anticommute with $\vec e_z$, and the same twist inside the double makes the new unit of a rung above $\mathbb{H}$ non-central. What a later rung does to the centre is to carry the previous scalar direction into the vector subspace: $\vec e_z$ is a scalar at rung one and a direction at rung two. The scalar extension does the opposite. It adjoins an identity that is central by construction, so the centre grows by one real dimension and the vector subspace does not move, and that is the structural difference between the two moves.
 
 ## What the Layer Loses
 
@@ -292,7 +292,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)} ,
 $$
 
-two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same computation on the other side. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Hence **an element is a unit exactly when its norm is non-zero**, which is the criterion of *Zero Divisors and Units*, and the vanishing set of the norm is the set of the zero divisors of the layer.
+two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same computation on the other side. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Hence **an element is invertible exactly when its norm is non-zero**, which is the criterion of *Zero Divisors and Invertibles*, and the vanishing set of the norm is the set of the zero divisors of the layer.
 
 ## The Place of the Layer
 
@@ -318,9 +318,9 @@ two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same comp
 4. The third layer is the scalar extension, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the adjunction of a central element of square $-e_t$ that the companion article calls the gate.
 5. The product rule is $(\tilde q_1+i\tilde q_1')(\tilde q_2+i\tilde q_2')=(\tilde q_1\tilde q_2-\tilde q_1'\tilde q_2')+i(\tilde q_1\tilde q_2'+\tilde q_1'\tilde q_2)$, and the table of the four units is unchanged because $i$ is never a factor.
 6. The layer keeps the table, the associativity and the non-commutativity of $\mathbb{H}$, and it changes the centre from $\mathbb{R}e_t$ to $\mathbb{C}e_t$, of real dimension two.
-7. The layer destroys the division property: $(i\vec u)^2=+e_t$ for every unit direction, so the idempotents $\tfrac12(e_t\pm i\vec u)$ exist and $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$.
+7. The layer destroys the division property: $(i\vec u)^2=+e_t$ for every invertible element direction, so the idempotents $\tfrac12(e_t\pm i\vec u)$ exist and $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$.
 8. The layer contains three two-dimensional subalgebras: the non-central copy of $\mathbb{C}$ of the first rung, the central copy $\mathbb{R}[i]$ of the scalars, and the split line $\mathbb{R}[i\vec e_z]$ of the idempotents.
-9. The norm is the complex number $N=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, with $\tilde Q\tilde Q^{\natural}=Ne_t$; it is multiplicative and not definite, and an element is a unit exactly when its norm is non-zero.
+9. The norm is the complex number $N=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, with $\tilde Q\tilde Q^{\natural}=Ne_t$; it is multiplicative and not definite, and an element is invertible exactly when its norm is non-zero.
 10. At the third step only the layer keeps associativity: a rung above $\mathbb{H}$ is not associative, whichever involution it uses, while $\mathbb{B}$ is associative and is not a division algebra.
 
 ## Summary of Notation

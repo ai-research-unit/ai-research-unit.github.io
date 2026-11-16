@@ -351,7 +351,7 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 ## 19. Lie Groups in the Wider Corpus
 
-- The group of units of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathrm{GL}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Structure of Lie Algebras*; the biquaternion exponential is treated in a separate article of the biquaternion series.
+- The group of invertibles of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathrm{GL}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Structure of Lie Algebras*; the biquaternion exponential is treated in a separate article of the biquaternion series.
 - The unit quaternions form $S^3 \cong SU(2) \cong Sp(1)$, the double cover of $SO(3)$, and $SL_2(\mathbb{C})$ is the double cover of the identity component $SO^+(1,3)$ of the Lorentz group.
 - The spin groups $\operatorname{Spin}(n)$ for $n \geq 3$, the universal covers of $SO(n)$, link this article to the Clifford algebra and spinor articles of the series.
 

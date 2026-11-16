@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and the multiplication rules $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = \vec e_x\vec e_y\vec e_z = -e_t$, so that $\vec e_x\vec e_y = \vec e_z$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the **quaternion norm** $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of units.
+The quaternion algebra $\mathbb{H}$ is the four-dimensional algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and the multiplication rules $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = \vec e_x\vec e_y\vec e_z = -e_t$, so that $\vec e_x\vec e_y = \vec e_z$ and the basis elements anticommute in pairs. This article studies the multiplicative quadratic form that the algebra carries, the **quaternion norm** $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, and the property that the form forces: every non-zero quaternion is invertible, so that $\mathbb{H}$ is a division algebra. It is the entry of the quaternion family that owns the quaternion norm, its multiplicativity, the inverse formula and the group of invertibles.
 
-The companion article *Quaternion Algebra* fixes the basis, the conjugation, the multiplication table and the scalar–vector decomposition, and they are used here without restatement. The companion article *Ideals and Simplicity of the Quaternion Algebra*, below this article in this category treats the absence of proper one- and two-sided ideals and the central-simplicity statement; this article owns the quaternion norm, the multiplicativity, the invertibility criterion and the unit group, and it refers to that article for the ideal-theoretic consequences. A reader who wants the full structure of the algebra should read the three together: the algebra supplies the multiplication, this article supplies the quaternion norm and the division property, and the ideals article supplies the consequences of division for the ideal structure.
+The companion article *Quaternion Algebra* fixes the basis, the conjugation, the multiplication table and the scalar–vector decomposition, and they are used here without restatement. The companion article *Ideals and Simplicity of the Quaternion Algebra*, below this article in this category treats the absence of proper one- and two-sided ideals and the central-simplicity statement; this article owns the quaternion norm, the multiplicativity, the invertibility criterion and the group of invertibles, and it refers to that article for the ideal-theoretic consequences. A reader who wants the full structure of the algebra should read the three together: the algebra supplies the multiplication, this article supplies the quaternion norm and the division property, and the ideals article supplies the consequences of division for the ideal structure.
 
-The corpus's default base is a commutative ring with identity, and the algebra $\mathbb{H}$ is defined over such a base by the same presentation. The results of this article that need more than that base are obtained over a field $F$ of characteristic not $2$; the positivity statements are obtained over $F = \mathbb{R}$, and they are flagged where they occur. In particular, the multiplicativity of the quaternion norm, the inverse formula and the group-of-units statements hold over any field of characteristic not $2$, whereas the statement that the quaternion norm is positive definite, the polar split of the unit group, and the identification of the unit sphere are statements over $\mathbb{R}$.
+The corpus's default base is a commutative ring with identity, and the algebra $\mathbb{H}$ is defined over such a base by the same presentation. The results of this article that need more than that base are obtained over a field $F$ of characteristic not $2$; the positivity statements are obtained over $F = \mathbb{R}$, and they are flagged where they occur. In particular, the multiplicativity of the quaternion norm, the inverse formula and the group-of-units statements hold over any field of characteristic not $2$, whereas the statement that the quaternion norm is positive definite, the polar split of the group of invertibles, and the identification of the unit sphere are statements over $\mathbb{R}$.
 
 Throughout, a quaternion is written
 
@@ -46,7 +46,7 @@ $$
 
 Multiplicativity is the single feature that makes the quaternion norm the algebraic centre of gravity of the subject. It holds over any commutative base in which the computation makes sense, and in particular over any field.
 
-**Corollary.** If $\langle\tilde q_1\rangle_{\natural} = 0$ then $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_2\tilde q_1\rangle_{\natural} = 0$ for every $\tilde q_2$, so a vanishing norm propagates and neither $\tilde q_1$ nor any multiple of it is a unit; over a field over which the quaternion norm is anisotropic, that is $\langle\tilde q_3\rangle_{\natural} = 0$ only for $\tilde q_3 = 0$, this middle case is empty and every non-zero element is a unit.
+**Corollary.** If $\langle\tilde q_1\rangle_{\natural} = 0$ then $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_2\tilde q_1\rangle_{\natural} = 0$ for every $\tilde q_2$, so a vanishing norm propagates and neither $\tilde q_1$ nor any multiple of it is invertible; over a field over which the quaternion norm is anisotropic, that is $\langle\tilde q_3\rangle_{\natural} = 0$ only for $\tilde q_3 = 0$, this middle case is empty and every non-zero element is invertible.
 
 ### Positive Definiteness and the Real Case
 
@@ -82,11 +82,11 @@ a symmetric bilinear form on the real vector space $\mathbb{H}$. The one-variabl
 
 **Proposition.** The form $\langle\cdot,\cdot\rangle$ is bilinear, symmetric and positive definite over $\mathbb{R}$; it satisfies $\langle\tilde q_1, \tilde q_2\rangle = \mathrm{Sc}(\tilde q_1^{\natural} \tilde q_2)$, and it is invariant under left and under right multiplication by a unit quaternion.
 
-*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = \langle\tilde q\rangle_{\natural}$. For a unit $u$, $\langle u\tilde q_1, u\tilde q_2\rangle = \mathrm{Sc}(u\tilde q_1(u\tilde q_2)^{\natural}) = \mathrm{Sc}(u\,\tilde q_1\tilde q_2^{\natural}\,u^{\natural}) = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ because conjugation by a unit preserves the scalar part, as in *Quaternion Rotations and Reflections*, below this article in this category; the right case is the same computation.
+*Proof.* Bilinearity and symmetry are immediate from the coordinate expression. Positive definiteness is $\langle \tilde q,\tilde q\rangle = \sum_\mu q_\mu^2 = \langle\tilde q\rangle_{\natural}$. For an invertible element $u$, $\langle u\tilde q_1, u\tilde q_2\rangle = \mathrm{Sc}(u\tilde q_1(u\tilde q_2)^{\natural}) = \mathrm{Sc}(u\,\tilde q_1\tilde q_2^{\natural}\,u^{\natural}) = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ because conjugation by an invertible element preserves the scalar part, as in *Quaternion Rotations and Reflections*, below this article in this category; the right case is the same computation.
 
 ### The Group of Linear Maps Preserving the Form
 
-In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of the inner product is the identity, $\langle\cdot,\cdot\rangle=\sum_\mu q_{1\mu} q_{2\mu}$, so a linear map $T$ preserves the form exactly when its matrix satisfies the algebraic condition $T^{\mathsf T}T=\mathrm I_4$; the group of linear maps preserving the form is therefore the group defined by that matrix condition, $T^{\mathsf T}T=\mathrm I_4$, named here algebraically. The inner automorphisms $\tilde q\mapsto u\tilde q u^{-1}$ of the units are elements of that group, since conjugation by a unit preserves the scalar part; their further reading is in *Quaternion Rotations and Reflections*, below this article in this category and *Quaternion Automorphisms and Derivations*, below this article in this category.
+In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the Gram matrix of the inner product is the identity, $\langle\cdot,\cdot\rangle=\sum_\mu q_{1\mu} q_{2\mu}$, so a linear map $T$ preserves the form exactly when its matrix satisfies the algebraic condition $T^{\mathsf T}T=\mathrm I_4$; the group of linear maps preserving the form is therefore the group defined by that matrix condition, $T^{\mathsf T}T=\mathrm I_4$, named here algebraically. The inner automorphisms $\tilde q\mapsto u\tilde q u^{-1}$ of the invertibles are elements of that group, since conjugation by an invertible element preserves the scalar part; their further reading is in *Quaternion Rotations and Reflections*, below this article in this category and *Quaternion Automorphisms and Derivations*, below this article in this category.
 
 ### Relation Between the Quaternion Norm and the Inner Product
 
@@ -112,13 +112,13 @@ The two forms are therefore the same datum: a positive definite quadratic form o
 
 *Proof.* If $\tilde q_1\tilde q_2 = 1$ for some $\tilde q_1$, then $\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural} = \langle\tilde q_1\tilde q_2\rangle_{\natural} = 1$, so $\langle\tilde q_2\rangle_{\natural}\neq 0$ in the base field; conversely if $\langle\tilde q_2\rangle_{\natural}\neq 0$ then $\tilde q_2\cdot(\tilde q_2^{-1}) $ with $\tilde q_2^{-1} = \tilde q_2^{\natural}/\langle\tilde q_2\rangle_{\natural}$ is a two-sided inverse by the inverse formula below. The right case is symmetric.
 
-Thus, over a field of characteristic not $2$, the three notions coincide, and an element is a unit exactly when its quaternion norm does not vanish.
+Thus, over a field of characteristic not $2$, the three notions coincide, and an element is invertible exactly when its quaternion norm does not vanish.
 
 ### Criterion for Invertibility
 
 **Theorem.** A quaternion $\tilde q$ is invertible if and only if $\tilde q\neq 0$ over $F = \mathbb{R}$; more generally, $\tilde q$ is invertible if and only if $\langle\tilde q\rangle_{\natural}\neq 0$, and over a field of characteristic not $2$ the vanishing of $\langle\cdot\rangle_{\natural}$ away from $0$ is exactly what it means for the algebra to fail to be a division algebra.
 
-*Proof.* Over $\mathbb{R}$ the quaternion norm is positive definite, so $\langle\tilde q\rangle_{\natural} = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is a unit.
+*Proof.* Over $\mathbb{R}$ the quaternion norm is positive definite, so $\langle\tilde q\rangle_{\natural} = 0$ holds only for $\tilde q = 0$; by the criterion of the preceding paragraph every non-zero $\tilde q$ is invertible.
 
 ### The Inverse Formula
 
@@ -130,11 +130,11 @@ $$ \boxed{\; \tilde q^{-1} = \frac{\tilde{q}^{\natural}}{\langle\tilde q\rangle_
 
 For a unit quaternion $\langle\tilde q\rangle_{\natural} = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/\langle \vec q\rangle_{\natural}$, so the imaginary line is closed under inversion up to the real scale.
 
-## The Group of Units
+## The Group of Invertibles
 
 ### Definition
 
-**Definition.** The **group of units** of $\mathbb{H}$ is
+**Definition.** The **group of invertibles** of $\mathbb{H}$ is
 
 $$
 \mathbb{H}^{\times} = \{\tilde q\in\mathbb{H} : \langle\tilde q\rangle_{\natural}\neq 0\}.
@@ -156,17 +156,17 @@ $$
 
 *Proof.* $(\tilde q_1\tilde q_2)(\tilde q_2^{-1}\tilde q_1^{-1}) = \tilde q_1(\tilde q_2\tilde q_2^{-1})\tilde q_1^{-1} = \tilde q_1\tilde q_1^{-1} = 1$ by associativity. The formula $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ then exhibits the composite.
 
-### The Polar Split of the Units
+### The Polar Split of the Invertibles
 
-**Theorem.** Over $\mathbb{R}$ the group of units factors as a direct product
+**Theorem.** Over $\mathbb{R}$ the group of invertibles factors as a direct product
 
 $$ \boxed{\; \mathbb{H}^{\times} \cong \mathbb{R}_{>0}\times \mathbb{H}^1, \qquad \tilde q = |\tilde q|\,\frac{\tilde q}{|\tilde q|} \;} ,$$
 
-where $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by *The Quaternion Unit Group as a Topological Group*, below this article in this category.
+where $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the unit sphere, the shell of the norm-one elements, and the two factors commute. The map is an isomorphism of groups; the topological structure of $\mathbb{H}^1$ is owned by *The Quaternion Group of Invertibles as a Topological Group*, below this article in this category.
 
 *Proof.* The map $\tilde q\mapsto(|\tilde q|, \tilde q/|\tilde q|)$ is a bijection with inverse $(r,u)\mapsto ru$, and it is a homomorphism because the modulus is multiplicative and positive. Every positive real is central, so the two factors commute and the product is direct. The identification $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ is the definition.
 
-Thus every unit is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the units into the multiplicative group $\mathbb{R}_{>0}$ and the norm-one shell $\mathbb{H}^1$.
+Thus every invertible element is the product of a positive scale and a unit quaternion, and the two factors are unique. This is the polar decomposition of the quaternion algebra, and it divides the group theory of the invertibles into the multiplicative group $\mathbb{R}_{>0}$ and the norm-one shell $\mathbb{H}^1$.
 
 ## The Absence of Zero Divisors
 
@@ -202,7 +202,7 @@ The division property is the reason the quaternion algebra stands at the head of
 
 The quaternion algebra carries the multiplicative quadratic form $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = \sum_\mu q_\mu^2$, central valued and multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$; over $\mathbb{R}$ it is positive definite, and its square root is the modulus, the unique real norm compatible with the algebra. The associated inner product is $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$, a real symmetric bilinear form whose diagonal is $\langle\tilde q\rangle_{\natural}$ and whose polarisation recovers it; the Hermitian form $\tilde q\tilde{q}^{\natural}$ coincides with $\langle\tilde q\rangle_{\natural}$.
 
-Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly when $\langle\tilde q\rangle_{\natural}\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of units is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
+Invertibility is decided by the quaternion norm: $\tilde q$ is invertible exactly when $\langle\tilde q\rangle_{\natural}\neq 0$, the inverse being $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$, which reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$ on the unit sphere. The group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, with centre the non-zero scalars, and it splits as the direct product $\mathbb{R}_{>0}\times \mathbb{H}^1$ of a positive scale and the unit sphere.
 
 ## Summary of Notation
 
@@ -218,15 +218,15 @@ Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly wh
 | $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2^{\natural})$ | Inner product, $\langle\tilde q\rangle_{\natural} = \langle \tilde q,\tilde q\rangle$ |
 | $\tilde q\tilde{q}^{\natural}$ | Hermitian form, coinciding with $\langle\tilde q\rangle_{\natural}$ |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | Inverse formula |
-| $\mathbb{H}^{\times} = \{\tilde q : \langle\tilde q\rangle_{\natural}\neq 0\}$ | Group of units |
+| $\mathbb{H}^{\times} = \{\tilde q : \langle\tilde q\rangle_{\natural}\neq 0\}$ | Group of invertibles |
 | $\mathbb{H}^1 = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}$ | Unit quaternions, the norm-one shell |
-| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times \mathbb{H}^1$ | Polar split of the units |
+| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times \mathbb{H}^1$ | Polar split of the invertibles |
 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the quaternion norm and its multiplicativity.
 - Leonard Dickson, *Algebras and Their Arithmetics* (University of Chicago Press, 1923), for the quaternion norm and the division property of the quaternion algebra.
-- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the reduced norm and the group of units of a central simple algebra.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the reduced norm and the group of invertibles of a central simple algebra.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for multiplicative quadratic forms and the anisotropic case.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the quaternion norm, the unit sphere and the division algebras.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the identification of the quaternion norm with a Clifford norm.

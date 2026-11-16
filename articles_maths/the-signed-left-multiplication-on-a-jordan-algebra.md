@@ -107,9 +107,9 @@ that is, the intersection of the even part with the eigenvalue-one space of the 
 
 **Corollary (the case $a = 1$).** The signed left multiplication by the unit is the grade involution itself, $\ell^{\alpha}_1 = \alpha$, and its fixed space is exactly the even part $A_{\bar 0}$, which is the subalgebra of $J$; the odd part $A_{\bar 1}$ is the eigenvalue-minus-one space.
 
-**Corollary (the case of a central unit).** If $a$ is a unit with $a^2 = 1$ or, more generally, if the equation $a\alpha(x) = x$ decouples as $ax = x$ on the even part and $ax = -x$ on the odd part, the fixed space is the kernel of $\ell_a - \mathrm{id}$ on $A_{\bar 0}$ together with the kernel of $\ell_a + \mathrm{id}$ on $A_{\bar 1}$. The case $a = 1$ gives the even part.
+**Corollary (the case of a central unit).** If $a$ is invertible with $a^2 = 1$ or, more generally, if the equation $a\alpha(x) = x$ decouples as $ax = x$ on the even part and $ax = -x$ on the odd part, the fixed space is the kernel of $\ell_a - \mathrm{id}$ on $A_{\bar 0}$ together with the kernel of $\ell_a + \mathrm{id}$ on $A_{\bar 1}$. The case $a = 1$ gives the even part.
 
-**Example.** Let $A = k[x]/(x^2)$, $\alpha = \mathrm{id}$ and $a = x$, so that $\ell^{\alpha}_x = \ell_x$ and the fixed elements satisfy $xy = y$, that is $(x-1)y = 0$; since $x-1$ is a unit of $A$, the fixed space is $0$. For the coordinatewise algebra $A = k^n$ with the involution negating the last coordinate and $a = 1$, the fixed space is the span of the first $n-1$ standard idempotents, the even part.
+**Example.** Let $A = k[x]/(x^2)$, $\alpha = \mathrm{id}$ and $a = x$, so that $\ell^{\alpha}_x = \ell_x$ and the fixed elements satisfy $xy = y$, that is $(x-1)y = 0$; since $x-1$ is invertible in $A$, the fixed space is $0$. For the coordinatewise algebra $A = k^n$ with the involution negating the last coordinate and $a = 1$, the fixed space is the span of the first $n-1$ standard idempotents, the even part.
 
 ### The Symmetrisation and the Structure Group
 

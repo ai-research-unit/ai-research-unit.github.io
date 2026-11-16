@@ -20,7 +20,7 @@ $$
 E_{ij}E_{kl} = \delta_{jk}\,E_{il}, \qquad E_{jj}^2 = E_{jj}, \qquad E_{ij}^2 = 0 \ \ (i \neq j), \qquad \sum_{i=1}^{n} E_{ii} = I .
 $$
 
-So each diagonal unit \(E_{jj}\) is an idempotent and each off-diagonal unit is square-zero, and \(\dim_D A = n^2\). The multiplication table, the centre and the units are those of *Matrix Algebras*, §*Matrix Units* and §*Ideals and Simplicity*; the units of a division ring and the vocabulary of ideals, idempotents and nilpotents are *Rings*.
+So each diagonal unit \(E_{jj}\) is an idempotent and each off-diagonal unit is square-zero, and \(\dim_D A = n^2\). The multiplication table, the centre and the invertibles are those of *Matrix Algebras*, §*Matrix Units* and §*Ideals and Simplicity*; the invertibles of a division ring and the vocabulary of ideals, idempotents and nilpotents are *Rings*.
 
 ### The Column Ideal
 
@@ -221,7 +221,7 @@ The two counts add up: \(n + n(n-1) = n^2 = \dim_D A\). Per column the count is 
 
 ### The Case \(n = 2\) and the Biquaternion Instance
 
-For \(n = 2\) a column has one diagonal corner and one off-diagonal corner, so the count is one idempotent and one nilpotent, the smallest case in which both kinds occur. The four corners of \(M_2(k)\) over a field and the multiplication of the units are *Matrix Algebras*, §*The Case \(n = 2\)*.
+For \(n = 2\) a column has one diagonal corner and one off-diagonal corner, so the count is one idempotent and one nilpotent, the smallest case in which both kinds occur. The four corners of \(M_2(k)\) over a field and the multiplication of the invertibles are *Matrix Algebras*, §*The Case \(n = 2\)*.
 
 The corpus's worked instance is the biquaternion algebra \(\mathbb{B} \cong M_2(\mathbb{C})\), with \(D = \mathbb{C}\) and \(n = 2\). The first column is the spinor space
 

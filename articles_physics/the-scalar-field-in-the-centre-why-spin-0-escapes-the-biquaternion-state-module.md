@@ -52,7 +52,7 @@ Left multiplication by a central element is the identity map of $\mathbb{B}$. Th
 
 ### No State Is Rotationally Invariant
 
-A state cannot be fixed by every rotation. If $\tilde r\tilde{Ξ}=\tilde{Ξ}$ for every unit real quaternion $\tilde r$, the choice $\tilde r=-e_t$ gives $-\tilde{Ξ}=\tilde{Ξ}$, hence $\tilde{Ξ}=0$. No nonzero state is rotation-invariant.
+A state cannot be fixed by every rotation. If $\tilde r\tilde{Ξ}=\tilde{Ξ}$ for every invertible element real quaternion $\tilde r$, the choice $\tilde r=-e_t$ gives $-\tilde{Ξ}=\tilde{Ξ}$, hence $\tilde{Ξ}=0$. No nonzero state is rotation-invariant.
 
 The pure state carries the direction $\vec u$ that the preparation supplies, and a rotation of the frame carries it to the pure state whose direction is the rotated unit, while a rotation about $\vec u$ fixes it. A rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends the direction $\vec e_z$ to $(-0.586,-0.524,0.618)$, a unit vector. The direction is what the preparation supplies, and the rotation moves it.
 

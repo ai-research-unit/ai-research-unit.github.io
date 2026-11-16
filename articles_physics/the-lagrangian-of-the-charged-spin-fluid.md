@@ -68,7 +68,7 @@ $$
 
 **What the table says about the block's claim of a surviving normalisation.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, and the table gives the reason: the velocity is built from the boost element, the boost's bracket is a connection, and a connection does not change a norm. **A connection changes transports; a norm is not a transport.** The free companion's normalisation is therefore not "surviving" anything — nothing was ever at risk.
 
-**And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is a unit's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
+**And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is invertible's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
 
 ## Norms Survive and the Vorticity Stays the Frame's
 
@@ -76,7 +76,7 @@ $$
 
 *At the scalar rung the velocity is a gradient.* $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$, so the velocity is the covariant derivative of a function, and its curl is the field strength: $\omega=ϙ F/m$. The coupling makes the flow rotational, and the rotation is the field's.
 
-*At the spinor rung the velocity is a square.* $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, the square of a unit element read through the quaternionic norm, so it is a function of the boost factor alone. **A square of a unit is not the derivative of anything** — the block's article states this as the reason the Dirac velocity does not come from a potential — and adding a connection to a bracket does not turn a square into a gradient.
+*At the spinor rung the velocity is a square.* $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, the square of a unit element read through the quaternionic norm, so it is a function of the boost factor alone. **A square of an invertible element is not the derivative of anything** — the block's article states this as the reason the Dirac velocity does not come from a potential — and adding a connection to a bracket does not turn a square into a gradient.
 
 **Hence the vorticity stays the frame's.** [The Charged Spin Fluid](the-charged-spin-fluid.html) finds that the vorticity is the frame's and that the coupling does not put the field strength into it, in contrast to the scalar case's $\mathrm{d}V=ϙ F/m$. The action's version: the connection enters the boost's bracket, the boost's bracket is not the velocity's curl, and the velocity's curl is the antisymmetrised derivative of a square, which is a frame quantity.
 
@@ -124,7 +124,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The norms.** Every norm survives, because a connection transports and does not measure; the scalar rung's shell is a norm that measures, and it is the exception.
 
-**The vorticity.** The frame's and not the field's, because the velocity is a unit's square and not a gradient. The two charged rungs differ in the kind of object the velocity is.
+**The vorticity.** The frame's and not the field's, because the velocity is invertible's square and not a gradient. The two charged rungs differ in the kind of object the velocity is.
 
 **Gauge invariance.** Exact, and exact because the gauge group is central and therefore commutes with the frame.
 
@@ -136,7 +136,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 | $ϙ$ | Coupling; minus the electric charge |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; Hermitian, hence central-imaginary in time and Hermitian in space |
 | $\lambda=\exp(iϙ\Gamma/\hbar)$ | The gauge element; central, hence commuting with the frame |
-| $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The velocity; a unit's square, norm $-c^{2}$ for every field |
+| $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The velocity; an invertible element's square, norm $-c^{2}$ for every field |
 | $\rho_{\mathrm{num}}=r^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
 | $\beta=\tanh\theta_{\mathrm{rpd}}$ | The spin's canonical weight |
 | $\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$ | The two covariant rates |

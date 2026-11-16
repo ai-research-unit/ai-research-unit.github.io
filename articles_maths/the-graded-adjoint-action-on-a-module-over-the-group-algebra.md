@@ -35,13 +35,13 @@ with $q = 0$ for an even form and $q = 1$ for an odd form; the sign is the produ
 
 ## The Adjoint Action on the Endomorphisms
 
-**Definition.** For a unit $a\in\mathcal{A}$ the **adjoint action** on the endomorphisms of $M$ is
+**Definition.** For an invertible element $a\in\mathcal{A}$ the **adjoint action** on the endomorphisms of $M$ is
 
 $$
 a\cdot T = \pi(a)\,T\,\pi(a)^{-1} .
 $$
 
-**Theorem (it is an action preserving the parity).** The adjoint action is an action of the unit group of $\mathcal{A}$ on $\mathrm{End}(M)$, it is compatible with the grading in the form
+**Theorem (it is an action preserving the parity).** The adjoint action is an action of the group of invertibles of $\mathcal{A}$ on $\mathrm{End}(M)$, it is compatible with the grading in the form
 
 $$
 \boxed{\;\varepsilon\,(a\cdot T)\,\varepsilon = \alpha(a)\cdot(\varepsilon\,T\,\varepsilon) = (\alpha(a))\cdot T^{\varepsilon}, \qquad T^\varepsilon = \varepsilon T\varepsilon\;} ,
@@ -81,7 +81,7 @@ so the adjoint action of a unitary element preserves self-adjointness, positivit
 
 ## Summary
 
-A graded module over the group algebra carries a homogeneous action and its $\alpha$-twist, the grading involution $\varepsilon$ interchanging them, and the adjoint action $a\cdot T = \pi(a)T\pi(a)^{-1}$ of a unit is compatible with the grading in the form $\varepsilon(a\cdot T)\varepsilon = \alpha(a)\cdot(\varepsilon T\varepsilon)$, preserving the parity of operators. For a homogeneous graded form the transpose obeys the sign rule $B(Tv,w) = (-1)^{|T|q}B(v,T^\#w)$ with $q = 0$ for an even form and $q = 1$ for an odd one, and the grading involution is self-adjoint for an even form and anti-self-adjoint for an odd one. When the module is a Hilbert space with a `*`-compatible action and $a$ is unitary, the adjoint of the adjoint action is $(a\cdot T)^* = a\cdot T^*$, so self-adjointness, positivity and unitarity are preserved by the adjoint action; and when the two graded summands are orthogonal the grading involution is self-adjoint and commutes with the adjoint action. The degenerate cases are the trivial grade involution, where the two actions coincide and the grading is central, and the inner grade involution, where the compatibility is conjugation by the inner element. The adjoint of a convolution operator is the neighbouring article.
+A graded module over the group algebra carries a homogeneous action and its $\alpha$-twist, the grading involution $\varepsilon$ interchanging them, and the adjoint action $a\cdot T = \pi(a)T\pi(a)^{-1}$ of an invertible element is compatible with the grading in the form $\varepsilon(a\cdot T)\varepsilon = \alpha(a)\cdot(\varepsilon T\varepsilon)$, preserving the parity of operators. For a homogeneous graded form the transpose obeys the sign rule $B(Tv,w) = (-1)^{|T|q}B(v,T^\#w)$ with $q = 0$ for an even form and $q = 1$ for an odd one, and the grading involution is self-adjoint for an even form and anti-self-adjoint for an odd one. When the module is a Hilbert space with a `*`-compatible action and $a$ is unitary, the adjoint of the adjoint action is $(a\cdot T)^* = a\cdot T^*$, so self-adjointness, positivity and unitarity are preserved by the adjoint action; and when the two graded summands are orthogonal the grading involution is self-adjoint and commutes with the adjoint action. The degenerate cases are the trivial grade involution, where the two actions coincide and the grading is central, and the inner grade involution, where the compatibility is conjugation by the inner element. The adjoint of a convolution operator is the neighbouring article.
 
 ## Summary of Notation
 

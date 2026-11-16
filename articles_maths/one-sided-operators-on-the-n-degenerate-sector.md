@@ -346,7 +346,7 @@ $$
 L_{\tilde Q}\circ L_{\tilde Q'}=L_{\tilde Q\tilde Q'},\qquad R_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'\tilde Q},\qquad L_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'}\circ L_{\tilde Q},
 $$
 
-and both operators are invertible exactly when $\tilde Q$ is a unit, which on the null cone never happens. Rank two, kernel of dimension two and image of dimension two therefore hold throughout the sector.
+and both operators are invertible exactly when $\tilde Q$ is invertible, which on the null cone never happens. Rank two, kernel of dimension two and image of dimension two therefore hold throughout the sector.
 
 ### Elementary properties on the idempotent multiples
 
@@ -360,7 +360,7 @@ and both operators are invertible exactly when $\tilde Q$ is a unit, which on th
 
 **(d)** the parameter maps are injective;
 
-**(e)** $L_{\tilde Q}$ and $R_{\tilde Q}$ are invertible exactly when $\tilde Q$ is a unit.
+**(e)** $L_{\tilde Q}$ and $R_{\tilde Q}$ are invertible exactly when $\tilde Q$ is invertible.
 
 On $\Sigma_{01}$ the element is a zero divisor, so neither operator is invertible. The properties are those of *Operators of the Polar Word: The Common Framework*; the sector only changes the values.
 
@@ -751,7 +751,7 @@ $$
 =e^{tc},
 $$
 
-because $\tilde\Pi^{\natural}=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$. The exponential is a unit for every $t$. Its $B^{2}$ is $-\tfrac14(e^{tc}-1)^{2}$, which is non-zero for generic $t\neq0$; it vanishes exactly when $e^{tc}=1$, where the exponential is $e_t$ on the wall $\Sigma_{10}$. Hence the flow lies in the doubly regular sector $\Sigma_{11}$ for generic $t\neq0$. For generic $t$, a zero divisor of $\Sigma_{01}$ has an exponential that is a unit with distinct eigenvalues. The one-sided rate is $c$; the two-sided rate of the companion article is $\lvert c\rvert^{2}$.
+because $\tilde\Pi^{\natural}=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$. The exponential is invertible for every $t$. Its $B^{2}$ is $-\tfrac14(e^{tc}-1)^{2}$, which is non-zero for generic $t\neq0$; it vanishes exactly when $e^{tc}=1$, where the exponential is $e_t$ on the wall $\Sigma_{10}$. Hence the flow lies in the doubly regular sector $\Sigma_{11}$ for generic $t\neq0$. For generic $t$, a zero divisor of $\Sigma_{01}$ has an exponential that is invertible with distinct eigenvalues. The one-sided rate is $c$; the two-sided rate of the companion article is $\lvert c\rvert^{2}$.
 
 ### The exponential on the nilpotents
 
@@ -783,7 +783,7 @@ $$
 B^{2}\bigl(\exp(t\tilde\nu)\bigr)=t^{2}B^{2}(\tilde\nu)=0 .
 $$
 
-Hence the exponential is a unit with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$), not in the doubly regular sector. This is the mirror of the generic $\Sigma_{01}$ flow, which leaves both walls and lies in $\Sigma_{11}$. The exponential moves the element one wall away: it removes the norm degeneration and preserves the spectral one.
+Hence the exponential is invertible with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$), not in the doubly regular sector. This is the mirror of the generic $\Sigma_{01}$ flow, which leaves both walls and lies in $\Sigma_{11}$. The exponential moves the element one wall away: it removes the norm degeneration and preserves the spectral one.
 
 The one-sided operator exponential is unipotent with two Jordan blocks of size two at eigenvalue one; this is the operator type of the N-regular, spectrally degenerate one-sided operator of *One-Sided Operators on the N-Regular Sector*. The two-sided companion is a unipotent Lorentz flow of Jordan type $2+1+1$. The one-sided exponential is a shear of the operator space, not a Lorentz transformation.
 

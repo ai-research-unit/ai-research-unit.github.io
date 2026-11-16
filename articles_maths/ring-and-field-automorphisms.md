@@ -2,11 +2,11 @@
 
 ## Introduction
 
-An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by a unit, and these are the inner automorphisms.
+An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by an invertible element, and these are the inner automorphisms.
 
 This article studies automorphism groups of rings and of fields, the fixed subrings and fixed fields they determine, and the arithmetic automorphism supplied by the Frobenius map. It separates the commutative theory, in which conjugation is trivial, from the noncommutative theory of inner automorphisms, and it records the boundary where the two diverge.
 
-Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from *Galois Theory*; the vocabulary of units, zero divisors and idempotents is from *Rings*.
+Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from *Galois Theory*; the vocabulary of invertibles, zero divisors and idempotents is from *Rings*.
 
 ---
 
@@ -38,7 +38,7 @@ where the subscript records that only $1$ is required to be fixed, so that $\ope
 
 ### Inner Automorphisms and the Noncommutative Case
 
-**Definition.** Let $R$ be a ring, not necessarily commutative, with unit group $R^\times$. For $u \in R^\times$ the **inner automorphism** (or **conjugation**) by $u$ is
+**Definition.** Let $R$ be a ring, not necessarily commutative, with group of invertibles $R^\times$. For $u \in R^\times$ the **inner automorphism** (or **conjugation**) by $u$ is
 
 $$
 \operatorname{conj}_u : R \to R, \qquad \operatorname{conj}_u(r) = u r u^{-1}.
@@ -46,7 +46,7 @@ $$
 
 The set $\operatorname{Inn}(R) = \{\operatorname{conj}_u : u \in R^\times\}$ is a subgroup of $\operatorname{Aut}(R)$ called the **inner automorphism group**, and the quotient $\operatorname{Out}(R) = \operatorname{Aut}(R)/\operatorname{Inn}(R)$ is the **outer automorphism group**.
 
-**Proposition.** The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of units of the centre. Hence
+**Proposition.** The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of invertibles of the centre. Hence
 
 $$
 \boxed{\;\operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R)\;}.
@@ -189,7 +189,7 @@ An anti-automorphism with $\tau^2 = \mathrm{id}$ is an **involution** (anti-invo
 
 ## Summary
 
-The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by a unit is the identity there; for a general ring the automorphisms induced by conjugation by units are the **inner** automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.
+The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by an invertible element is the identity there; for a general ring the automorphisms induced by conjugation by invertibles are the **inner** automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.
 
 For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.
 
@@ -226,7 +226,7 @@ Anti-automorphisms reverse multiplication; complex conjugation is the standard i
 | $\operatorname{gal}(\overline{F}/F)$ | Absolute Galois group |
 | $\omega_n$ | Primitive $n$-th root of unity |
 | $\mathbb{M}_n(k)$, $\operatorname{PGL}_n(k)$ | Matrix algebra and its projective general linear group |
-| $Z(A)$, $A^\times$ | Centre and unit group of an algebra $A$ |
+| $Z(A)$, $A^\times$ | Centre and group of invertibles of an algebra $A$ |
 
 
 ## Further Reading

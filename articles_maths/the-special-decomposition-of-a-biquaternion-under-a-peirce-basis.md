@@ -23,7 +23,7 @@ $$
 \vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y,
 $$
 
-the reversed products being the negatives. The central imaginary is $i$, with $i^{2}=-1$ and $i$ commuting with every unit. An element and its vector part are
+the reversed products being the negatives. The central imaginary is $i$, with $i^{2}=-1$ and $i$ commuting with every invertible element. An element and its vector part are
 
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=Q_te_t+\vec Q,\qquad Q_\mu\in\mathbb{C},

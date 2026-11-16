@@ -61,7 +61,7 @@
 
 **An interpretation does not derive the physics from the algebra.** It identifies which physical object the algebraic structure is. The dynamics belongs to the other physics categories of the corpus.
 
-**Six entries depart from the four-part form.** Three were taken whole from the archive — the mirror, the two sectors and the unit group — so they carry no source table and no readings, and their prose is the archive's. Three more predate the template — *Biquaternion Physical Interpretation of Operator Chirality*, *Wave–Particle Duality and the Fourier Transform* and *The Fubini–Study Geometry and the Biquaternion Norm* — and they state their results and link their sources in prose, without a source table and without labelled readings. The remaining twenty-seven follow the form exactly.
+**Six entries depart from the four-part form.** Three were taken whole from the archive — the mirror, the two sectors and the group of invertibles — so they carry no source table and no readings, and their prose is the archive's. Three more predate the template — *Biquaternion Physical Interpretation of Operator Chirality*, *Wave–Particle Duality and the Fourier Transform* and *The Fubini–Study Geometry and the Biquaternion Norm* — and they state their results and link their sources in prose, without a source table and without labelled readings. The remaining twenty-seven follow the form exactly.
 
 **Labels are used where an entry is long enough to need them.** The thirteen algebra entries and the three analysis entries label every reading, with a letter after the subsection number (I.10.a, III.2.c); the carriers entry labels its readings in bold (IV.2.a); the three spin entries number theirs from one. A reader citing a spin reading cites the number, and a reader citing a companion cites a section.
 
@@ -95,7 +95,7 @@
 
 | subsection | from | the entry |
 | --- | --- | --- |
-| II.1 | Topology, $4$ | The Unit Group, the Cone and the Orders |
+| II.1 | Topology, $4$ | The Group of Invertibles, the Cone and the Orders |
 
 ### Part III — The Analysis
 
@@ -110,10 +110,10 @@
 | subsection | from | the entry |
 | --- | --- | --- |
 | IV.1 | Geometry, $6$ | The Rotations, the Boosts and the Groups |
-| IV.2 | The Carriers and the Closure, $1$ | The Carriers, the Spin and the Closure |
-| IV.3 | The Spin-Zero Centre Subspace, $4$ | The Spin-Zero Carrier: The Centre |
-| IV.4 | The Spin-Half Bispinors, $5$ | The Spin-Half Carrier: The Bispinors |
-| IV.5 | The Spin-One Anti-Hermitian Subspace, $4$ | The Spin-One Carrier: The Material Sector |
+| IV.2 | The Carriers and the Closure, $1$ | From the Spin to the Carriers and the Closures |
+| IV.3 | The Spin-Zero Centre Subspace, $4$ | Introduction to the Spin-Zero Centre Subspace |
+| IV.4 | The Spin-Half Bispinors Spaces, $5$ | Introduction to the Spin-Half Bispinors Spaces |
+| IV.5 | The Spin-One Anti-Hermitian Subspace, $4$ | Introduction to the Spin-One Anti-Hermitian Subspace |
 | IV.6 | Fractal Geometry, $10$ | The Quadratic Map and the Singular Sets |
 
 **IV.1 is filed with the relativity articles.** *The Rotations, the Boosts and the Groups* is the entry of the geometry section, and it is listed where a reader looks for a rotation. It opens the part all the same: the carriers of IV.2 come after it, because a spin is a weight of a representation of a rotation and cannot precede the rotation.
@@ -138,7 +138,7 @@
 - [Mirror Biquaternions of the Biquaternion Algebra](../articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.html)
 - [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
 - [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html)
-- [Zero Divisors and Units in the Biquaternion Algebra](../articles_maths/zero-divisors-and-units.html)
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html)
 - [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html)
 
 #### Matrix Representations
@@ -274,7 +274,7 @@
 #### Topology of the Biquaternion Algebra
 
 - [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html)
-- [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html)
+- [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html)
 - [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html)
 
 ### Analysis
@@ -335,9 +335,9 @@
 - [The Spin-Zero Centre Subspace and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.html)
 - [The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html)
 
-##### The Spin-Half Bispinors
+##### The Spin-Half Bispinors Spaces
 
-- [Introduction to the Spin-Half Bispinors](../articles_maths/the-spin-half-bispinor-spaces.html)
+- [Introduction to the Spin-Half Bispinors Spaces](../articles_maths/the-spin-half-bispinor-spaces.html)
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](../articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.html)
 - [The Spin-Half Bispinors and N Norm Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.html)
 - [The Spin-Half Bispinors and Spectral Regularity](../articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.html)
@@ -369,7 +369,7 @@
 
 **The archive is not a second reading of the subject.** The derived entries above are the category. The archived articles are kept for two reasons: their readings are being carried over one at a time, and a reader who wants the older and longer treatment of one point can still find it. An archived article is retired once its readings have been carried into an entry and that entry has been checked against it.
 
-**Four articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Unit Group, the Cone and the Orders* is taken unchanged as II.1. *Mirror Biquaternions and the Phy–Psy Switch* is taken whole as a companion of I.1, after that entry, because its subject is one construction — the switch, the class and the Wick comparison — and a construction is not a section that one entry can absorb. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
+**Four articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Group of Invertibles, the Cone and the Orders* is taken unchanged as II.1. *Mirror Biquaternions and the Phy–Psy Switch* is taken whole as a companion of I.1, after that entry, because its subject is one construction — the switch, the class and the Wick comparison — and a construction is not a section that one entry can absorb. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
 
 ## The Limits of the Category
 
@@ -405,7 +405,7 @@
 - The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces, and with four companions that sit beside an entry rather than replacing one.
 - Every entry links its mathematics, states the result in brief, gives labelled interpretations, and states the limits of each.
 - The spin is the last part of the geometry, after the rotations and the groups, because a spin is a weight of a representation of the rotation.
-- The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Four articles are kept whole instead: this introduction, the two sectors, the unit group, and the mirror.
+- The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Four articles are kept whole instead: this introduction, the two sectors, the group of invertibles, and the mirror.
 - All thirty-three derived entries are written; none of the menu's links is dead for want of an article.
 
 ## Further Reading

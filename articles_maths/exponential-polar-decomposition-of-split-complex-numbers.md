@@ -39,7 +39,7 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 | Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)=Q/r$, with $\lvert\langle u\rangle_{*}\rvert=1$ |
 | Exponent | $Q_{\log}=\ln r+j\theta$, the logarithm of $\epsilon Q\in F$ |
-| Existence | every unit has a decomposition |
+| Existence | every invertible element has a decomposition |
 | Uniqueness | $\epsilon$ and $Q_{\log}$ are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
 | Group | ${\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2}$ |
@@ -50,7 +50,7 @@ The plan is as follows. The analytic facts and the four components are recalled 
 
 ## The Analytic Setting
 
-The decomposition rests on the exponential and the logarithm of *Split-Complex Elementary Functions*, and on the geometry of the four components of the unit group.
+The decomposition rests on the exponential and the logarithm of *Split-Complex Elementary Functions*, and on the geometry of the four components of the group of invertibles.
 
 ### The Exponential and the Logarithm
 
@@ -75,7 +75,7 @@ These are the statements of *Split-Complex Elementary Functions*, §*The Exponen
 
 ### The Four Components
 
-The group of units is ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:
+The group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:
 
 $$
 F=\{q>\lvert q'\rvert\},\qquad
@@ -101,7 +101,7 @@ $$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}/F\cong(\mathbb{Z}/2\mathbb{Z})^{2}.
 $$
 
-The group of units is therefore
+The group of invertibles is therefore
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
@@ -247,7 +247,7 @@ $$
 
 **Uniqueness.** Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}_{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\theta=q'_{\log}$.
 
-The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of units, not the set of nonzero elements. The parameters and their ranges are collected in one table.
+The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of invertibles, not the set of nonzero elements. The parameters and their ranges are collected in one table.
 
 | Parameter | Range | Unique? |
 |---|---|---|
@@ -293,7 +293,7 @@ $$
 
 and for $Q\notin F$ it is empty. In particular the fibre is not a lattice and there is no period: the kernel is $\{0\}$.
 
-The quotient of the group of units by the image is
+The quotient of the group of invertibles by the image is
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^\times/\exp(\mathbb{C}_{\mathrm{spl}})={\mathbb{C}_{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2.
@@ -393,7 +393,7 @@ The derivative of the logarithm at $Q\in F$ is left multiplication by $Q^{-1}$, 
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}_{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of units. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.
+The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}_{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of invertibles. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.
 
 ### The Rational-Chart Form
 
@@ -429,7 +429,7 @@ In a noncommutative algebra the amalgamation into one exponential fails; in the 
 | Property | Modulus–unit | Rational-chart | Exponential |
 |---|---|---|---|
 | Algebraic or transcendental | algebraic | rational | transcendental |
-| Global on the units | yes | no | yes |
+| Global on the invertibles | yes | no | yes |
 | Unique without a choice | yes | no | yes |
 | Non-uniqueness | none | a cut at $u=-1$ | none; the sign is discrete |
 | Group law | componentwise product | tangent addition | addition, with the signs multiplying |
@@ -510,7 +510,7 @@ The coordinates $\ln r$ and $\theta$ are linear, hence harmonic for the indefini
 | Parameters | $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$, $\theta\in\mathbb{R}$, $\epsilon\in\{\pm1,\pm j\}$ |
 | Unit factor | $\epsilon\exp(\theta j)$ with $\lvert\langle u\rangle_{*}\rvert=1$ |
 | Exponent | $Q_{\log}=\ln r+j\theta$, the logarithm of $\epsilon Q\in F$ |
-| Existence | every unit has a decomposition |
+| Existence | every invertible element has a decomposition |
 | Uniqueness | the component sign and the exponent are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
 | Fibre | one point on $F$, empty elsewhere: no lattice and no branch |

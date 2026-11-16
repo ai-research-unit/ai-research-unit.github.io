@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The algebra theory so far has been algebraic: an $R$-algebra is a module with a bilinear product, and nothing is assumed about a topology. The hypercomplex analysis needs more. Differentiation, integration and limits require a topology in which the algebra operations are continuous, and the completeness needed for the exponential and for the solution of differential equations requires that topology to come from a norm that is compatible with the product. This article supplies that layer: topological algebras, normed algebras, Banach algebras, the openness of the unit group, the exponential map, the Gelfand–Mazur theorem, and the precise sense in which a norm controls divisibility.
+The algebra theory so far has been algebraic: an $R$-algebra is a module with a bilinear product, and nothing is assumed about a topology. The hypercomplex analysis needs more. Differentiation, integration and limits require a topology in which the algebra operations are continuous, and the completeness needed for the exponential and for the solution of differential equations requires that topology to come from a norm that is compatible with the product. This article supplies that layer: topological algebras, normed algebras, Banach algebras, the openness of the group of invertibles, the exponential map, the Gelfand–Mazur theorem, and the precise sense in which a norm controls divisibility.
 
 The base ring of this article is no longer an arbitrary commutative ring. Topology enters through a complete valued ground field, and we take
 
@@ -47,11 +47,11 @@ a two-sided ideal of $A$ contained in every neighbourhood of $0$. Consequently $
 
 **Example.** The real number-system algebras are topological algebras over $\mathbb{R}$: with the Euclidean topology on $\mathbb{R}^n$, the sum and the product are the polynomial maps given by the multiplication tables, hence continuous.
 
-### The Unit Group
+### The Group of Invertibles
 
-**Proposition.** Let $A$ be a unital topological algebra whose topology is induced by a norm. Then the group $A^\times$ of units is an open subset of $A$, and the inversion map $A^\times \to A^\times$, $x \mapsto x^{-1}$, is continuous.
+**Proposition.** Let $A$ be a unital topological algebra whose topology is induced by a norm. Then the group $A^\times$ of invertibles is an open subset of $A$, and the inversion map $A^\times \to A^\times$, $x \mapsto x^{-1}$, is continuous.
 
-*Proof.* Let $a \in A^\times$ and set $c = \|a^{-1}\|$. If $\|x - a\| < c^{-1}$ then $\|a^{-1}(x - a)\| \leq c\|x-a\| < 1$, so by the Neumann series below the element $1 + a^{-1}(x-a) = a^{-1}x$ is a unit, hence $x = a(a^{-1}x)$ is a unit. Thus the ball of radius $c^{-1}$ around $a$ lies in $A^\times$, so $A^\times$ is open. For continuity, write
+*Proof.* Let $a \in A^\times$ and set $c = \|a^{-1}\|$. If $\|x - a\| < c^{-1}$ then $\|a^{-1}(x - a)\| \leq c\|x-a\| < 1$, so by the Neumann series below the element $1 + a^{-1}(x-a) = a^{-1}x$ is invertible, hence $x = a(a^{-1}x)$ is invertible. Thus the ball of radius $c^{-1}$ around $a$ lies in $A^\times$, so $A^\times$ is open. For continuity, write
 
 $$
 x^{-1} - a^{-1} = x^{-1}(a - x)a^{-1},
@@ -59,7 +59,7 @@ $$
 
 so that $\|x^{-1} - a^{-1}\| \leq \|x^{-1}\|\,\|a^{-1}\|\,\|a - x\|$; since $\|x^{-1}\|$ is bounded on a small neighbourhood of $a$ by the previous estimate, the right side tends to $0$ as $x \to a$.
 
-**Corollary.** In a unital normed algebra, an element $x$ with $\|1 - x\| < 1$ is a unit, and
+**Corollary.** In a unital normed algebra, an element $x$ with $\|1 - x\| < 1$ is invertible, and
 
 $$
 \boxed{\;x^{-1} = \sum_{n \geq 0} (1 - x)^n, \qquad \|x^{-1}\| \leq \frac{1}{1 - \|1 - x\|}\;}.
@@ -67,7 +67,7 @@ $$
 
 *Proof.* This is the Neumann series, valid because the geometric series converges absolutely when $\|1 - x\| < 1$; the estimate follows from the submultiplicative inequality $\|(1-x)^n\| \leq \|1-x\|^n$.
 
-The openness of $A^\times$ is the algebraic expression of the fact that invertibility is a stable condition, and it is used repeatedly in the hypercomplex analysis entries, where the set of units is open and the set of zero divisors is its closed complement together with $0$: in a finite-dimensional algebra the left zero divisors are exactly the elements $x$ with $\det\lambda_x = 0$, a closed condition on $x$.
+The openness of $A^\times$ is the algebraic expression of the fact that invertibility is a stable condition, and it is used repeatedly in the hypercomplex analysis entries, where the set of invertibles is open and the set of zero divisors is its closed complement together with $0$: in a finite-dimensional algebra the left zero divisors are exactly the elements $x$ with $\det\lambda_x = 0$, a closed condition on $x$.
 
 ## Normed Algebras
 
@@ -87,15 +87,15 @@ $$
 \|x_n y_n - x_0 y_0\| \leq \|x_n - x_0\|\,\|y_n\| + \|x_0\|\,\|y_n - y_0\| \longrightarrow 0.
 $$
 
-Hence $A$, with its norm topology, is a topological algebra, and if $A$ is unital then $\|x^{-1}\| \geq \|x\|^{-1}$ for every unit.
+Hence $A$, with its norm topology, is a topological algebra, and if $A$ is unital then $\|x^{-1}\| \geq \|x\|^{-1}$ for every invertible element.
 
 *Proof.* The displayed estimate is the triangle inequality and submultiplicativity. The norm topology makes addition and scalar multiplication continuous by the definition of a normed vector space. For the last statement, $1 = \|xx^{-1}\| \leq \|x\|\|x^{-1}\|$.
 
-**Definition.** A normed algebra is a **normed division algebra** if it is unital and every nonzero element is a unit; the norm is **multiplicative** if $\|xy\| = \|x\|\|y\|$ for all $x,y$. An algebra with a multiplicative norm is a **composition algebra**.
+**Definition.** A normed algebra is a **normed division algebra** if it is unital and every nonzero element is invertible; the norm is **multiplicative** if $\|xy\| = \|x\|\|y\|$ for all $x,y$. An algebra with a multiplicative norm is a **composition algebra**.
 
 **Proposition.** Let $A$ be a normed algebra with multiplicative norm. Then $A$ has no zero divisors, and if $A$ is finite-dimensional and unital it is a normed division algebra.
 
-*Proof.* If $xy = 0$ then $\|x\|\|y\| = \|xy\| = 0$, so $x = 0$ or $y = 0$. If $A$ is finite-dimensional, no zero divisors implies every nonzero element is a unit by *Centre, Units, Zero Divisors and Division Algebras*.
+*Proof.* If $xy = 0$ then $\|x\|\|y\| = \|xy\| = 0$, so $x = 0$ or $y = 0$. If $A$ is finite-dimensional, no zero divisors implies every nonzero element is invertible by *Centre, Invertibles, Zero Divisors and Division Algebras*.
 
 **Completion.** Let $A$ be a normed algebra and let $\bar{A}$ be the completion of the underlying normed space. The product extends uniquely to a continuous bilinear map $\bar{A} \times \bar{A} \to \bar{A}$, because it is uniformly continuous on bounded sets; the extension is associative when $A$ is, and unital with the same unit. Hence
 
@@ -143,7 +143,7 @@ Completeness follows from finite dimension and equivalence of the norm with $\|\
 
 The uniqueness of the topology means that for finite-dimensional algebras the topological notions of convergence, continuity and differentiability do not depend on the norm chosen. This is what permits the hypercomplex-analysis entries to speak of the Euclidean topology on $\mathbb{H}$ or $\mathbb{B}$ without further qualification.
 
-## The Unit Group and the Exponential
+## The Group of Invertibles and the Exponential
 
 **Theorem.** Let $A$ be a unital Banach algebra. Then $A^\times$ is an open subset of $A$, inversion is continuous, and $A^\times$ is a topological group under multiplication. Moreover $A^\times$ is a **Banach Lie group**, and its Lie algebra is $A$ itself with the commutator bracket
 
@@ -151,7 +151,7 @@ $$
 [x,y] = xy - yx.
 $$
 
-*Proof.* The first two statements are the proposition above specialised to a complete normed algebra. For the Lie structure, the exponential below gives local coordinates near $1$, and the Lie algebra of the group of units is the tangent space at $1$, identified with $A$; the bracket is the commutator because the group law is multiplication.
+*Proof.* The first two statements are the proposition above specialised to a complete normed algebra. For the Lie structure, the exponential below gives local coordinates near $1$, and the Lie algebra of the group of invertibles is the tangent space at $1$, identified with $A$; the bracket is the commutator because the group law is multiplication.
 
 **Definition.** For $x \in A$, the **exponential** is
 
@@ -183,7 +183,7 @@ $$
 
 where $\mathrm{ad}_a(x) = [a,x]$. The inner automorphisms of $A$ therefore arise from exponentials of inner derivations, and the correspondence between derivations and automorphisms of *Automorphisms and Derivations of Algebras* is exact in the Banach setting.
 
-**Example (units of the number systems).** The group of units of a finite-dimensional algebra is an open subset, as above. For the number systems:
+**Example (units of the number systems).** The group of invertibles of a finite-dimensional algebra is an open subset, as above. For the number systems:
 
 | Algebra | $A^\times$ | Components |
 |---|---|---|
@@ -194,7 +194,7 @@ where $\mathrm{ad}_a(x) = [a,x]$. The inner automorphisms of $A$ therefore arise
 | $\mathbb{C}_{\mathrm{spl}}$ | $a^2 \neq b^2$ | $4$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | $a \neq 0$ | $2$ |
 
-The unit group of $\mathbb{B}$ is $GL_2(\mathbb{C})$ under the algebra isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, which is connected; that of $\mathbb{H}$ retracts onto the unit sphere $S^3 = SU(2)$, which is connected and simply connected.
+The group of invertibles of $\mathbb{B}$ is $GL_2(\mathbb{C})$ under the algebra isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, which is connected; that of $\mathbb{H}$ retracts onto the unit sphere $S^3 = SU(2)$, which is connected and simply connected.
 
 ## The Gelfand–Mazur Theorem
 
@@ -224,7 +224,7 @@ topologised as a subset of the unit ball of the dual space $A'$ in the weak-$*$ 
 
 **Theorem (characters and maximal ideals, standard).** Let $A$ be a commutative unital $\mathbb{C}$-Banach algebra. Every character is continuous of norm one, the map $\chi \mapsto \ker\chi$ is a bijection from $\operatorname{Max}(A)$ onto the set of maximal ideals of $A$, and $\operatorname{Max}(A)$ is a nonempty compact Hausdorff space in the weak-$*$ topology.
 
-*Proof (sketch).* The kernel of a character is a proper ideal, and if $I \supseteq \ker\chi$ then $A/I$ is a quotient of $\mathbb{C}$, hence $\mathbb{C}$; so $\ker\chi$ is maximal. Conversely, if $M$ is maximal then $A/M$ is a unital complex Banach algebra whose only ideals are trivial, hence a division algebra, and Gelfand–Mazur gives $A/M \cong \mathbb{C}$; the quotient map is therefore a character. A maximal ideal of a unital Banach algebra is closed, because its closure is again a proper ideal — the open unit ball about $1$ consists of units, so no sequence from $M$ can converge to $1$ — hence $\ker\chi$ is closed and $\chi$, whose kernel has codimension one, is continuous. Compactness of $\operatorname{Max}(A)$ in the weak-$*$ topology follows from the Banach–Alaoglu theorem together with the closedness of the character conditions, and nonemptiness from the existence of maximal ideals.
+*Proof (sketch).* The kernel of a character is a proper ideal, and if $I \supseteq \ker\chi$ then $A/I$ is a quotient of $\mathbb{C}$, hence $\mathbb{C}$; so $\ker\chi$ is maximal. Conversely, if $M$ is maximal then $A/M$ is a unital complex Banach algebra whose only ideals are trivial, hence a division algebra, and Gelfand–Mazur gives $A/M \cong \mathbb{C}$; the quotient map is therefore a character. A maximal ideal of a unital Banach algebra is closed, because its closure is again a proper ideal — the open unit ball about $1$ consists of invertibles, so no sequence from $M$ can converge to $1$ — hence $\ker\chi$ is closed and $\chi$, whose kernel has codimension one, is continuous. Compactness of $\operatorname{Max}(A)$ in the weak-$*$ topology follows from the Banach–Alaoglu theorem together with the closedness of the character conditions, and nonemptiness from the existence of maximal ideals.
 
 **Theorem (Gelfand transform).** Let $A$ be a commutative unital $\mathbb{C}$-Banach algebra. The **Gelfand transform**
 
@@ -288,9 +288,9 @@ A norm and a norm are different objects, and the difference governs what the ana
 
 **Proposition.** Let $A$ be a unital normed algebra. Then:
 
-1. $\|x^{-1}\| \geq \|x\|^{-1}$ for every unit $x$;
-2. if $\|1 - x\| < 1$ then $x$ is a unit, and $\|x^{-1}\| \leq (1 - \|1-x\|)^{-1}$;
-3. if the norm is multiplicative, then $A$ has no zero divisors and $\|x^{-1}\| = \|x\|^{-1}$ for every unit $x$;
+1. $\|x^{-1}\| \geq \|x\|^{-1}$ for every invertible $x$;
+2. if $\|1 - x\| < 1$ then $x$ is invertible, and $\|x^{-1}\| \leq (1 - \|1-x\|)^{-1}$;
+3. if the norm is multiplicative, then $A$ has no zero divisors and $\|x^{-1}\| = \|x\|^{-1}$ for every invertible $x$;
 4. no norm can vanish on a nonzero element, so a norm never detects a zero divisor.
 
 *Proof.* Statement 1 is $\|1\| \leq \|x\|\|x^{-1}\|$ with $\|1\| = 1$. Statement 2 is the Neumann series. Statement 3: multiplicativity gives $\|x\|\|y\| = \|xy\| = 0$ if $xy = 0$, and $\|x\|\|x^{-1}\| = \|1\| = 1$. Statement 4 is the positive definiteness of a norm.
@@ -311,7 +311,7 @@ is a genuine norm, positive definite and vanishing only at $\tilde{Q} = 0$; it i
 
 A **topological algebra** is a $\mathbb{K}$-algebra whose addition, scalar multiplication and product are continuous, and a **normed algebra** is one whose norm is submultiplicative, which makes the product jointly continuous. A **Banach algebra** is a complete normed algebra; the completion of a normed algebra is a Banach algebra. Every finite-dimensional $\mathbb{K}$-algebra is a Banach algebra in a unique topology, all norms on it being equivalent, so the number systems, the matrix algebras and the Clifford algebras are all Banach algebras.
 
-In a unital normed algebra the **unit group** $A^\times$ is open and inversion is continuous, by the Neumann series; in a unital Banach algebra $A^\times$ is a Banach Lie group with Lie algebra $A$ under the commutator bracket, and the **exponential** $\exp(x) = \sum x^n/n!$ converges everywhere, satisfies $\exp(x+y) = \exp(x)\exp(y)$ for commuting $x,y$, and is a local diffeomorphism at $0$; inner derivations exponentiate to inner automorphisms, as in *Automorphisms and Derivations of Algebras*. The **Gelfand–Mazur theorem** states that a unital complex Banach algebra in which every nonzero element is invertible is $\mathbb{C}$; with Hurwitz and Frobenius this pins the normed real division algebras to $\mathbb{R}, \mathbb{C}, \mathbb{H}$ (associative) and to $\mathbb{O}$ as well without associativity.
+In a unital normed algebra the **group of invertibles** $A^\times$ is open and inversion is continuous, by the Neumann series; in a unital Banach algebra $A^\times$ is a Banach Lie group with Lie algebra $A$ under the commutator bracket, and the **exponential** $\exp(x) = \sum x^n/n!$ converges everywhere, satisfies $\exp(x+y) = \exp(x)\exp(y)$ for commuting $x,y$, and is a local diffeomorphism at $0$; inner derivations exponentiate to inner automorphisms, as in *Automorphisms and Derivations of Algebras*. The **Gelfand–Mazur theorem** states that a unital complex Banach algebra in which every nonzero element is invertible is $\mathbb{C}$; with Hurwitz and Frobenius this pins the normed real division algebras to $\mathbb{R}, \mathbb{C}, \mathbb{H}$ (associative) and to $\mathbb{O}$ as well without associativity.
 
 A **norm** in the analytic sense is positive definite and never vanishes on a nonzero element, whereas the **norm** $N$ of an algebra is a quadratic form that may vanish on the zero divisors; the norm $\langle\tilde{Q}\rangle_{\natural}$ of $\mathbb{B}$, being complex-valued and vanishing on the null set, is not a norm in the analytic sense, and the Euclidean norm of $\mathbb{B}$ detects only the zero element. Divisibility is read from the norm $N$, not from the Euclidean norm, and this distinction is what the hypercomplex analysis has to respect.
 
@@ -325,7 +325,7 @@ A **character** of a commutative unital complex Banach algebra is a nonzero homo
 | $A$ | Topological / normed / Banach algebra over $\mathbb{K}$ |
 | $\|\cdot\|$ | Submultiplicative norm; $\|xy\| \leq \|x\|\|y\|$ |
 | $\|\cdot\|_\infty$ | Supremum norm on $C(X,\mathbb{K})$ |
-| $A^\times$ | Group of units, open in a normed algebra |
+| $A^\times$ | Group of invertibles, open in a normed algebra |
 | $(1-x)^{-1} = \sum_{n} x^n$ | Neumann series, valid for $\|x\| < 1$ |
 | $\exp(x) = \sum_n x^n/n!$ | Exponential map, defined on a Banach algebra |
 | $[x,y] = xy - yx$ | Commutator, the bracket of $A$ as Lie algebra of $A^\times$ |

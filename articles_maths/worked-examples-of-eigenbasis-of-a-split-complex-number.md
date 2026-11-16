@@ -59,7 +59,7 @@ $$
 p_Q(X)=X^2-2qX+(q^2-q'^2)=(X-\lambda_+)(X-\lambda_-),
 $$
 
-with discriminant $4q'^2$. The element is a unit exactly when $\lambda_+\lambda_-\neq0$.
+with discriminant $4q'^2$. The element is invertible exactly when $\lambda_+\lambda_-\neq0$.
 
 ### The Eigenprojections
 
@@ -185,7 +185,7 @@ Q^n=\lambda_+^n\Pi_++\lambda_-^n\Pi_-,
 f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-.
 $$
 
-When $Q$ is a unit,
+When $Q$ is invertible,
 
 $$
 Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-.

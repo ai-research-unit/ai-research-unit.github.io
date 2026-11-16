@@ -23,9 +23,9 @@ So the article is short because the algebra is a field. Each absence is a statem
 
 - It is an **isomorphism onto its image**: the field $\mathbb{C}$ and the conformal matrices are the same object, so every algebraic question about $\mathbb{C}$ is a matrix question about a two-dimensional subspace of $M_2(\mathbb{R})$, and conversely.
 - It makes the **involution visible as the transpose**: conjugation of the field is transposition of matrices, which is the sharpest form the involution takes anywhere in the series. In the quaternion models the transpose was a signed transpose or a conjugate transpose; here it is the plain one.
-- It realises the **circle as the rotation group**: the units are $\mathrm{U}(1)$, their image is $SO(2)$, and the model is the classical isomorphism $\mathrm{U}(1)\cong SO(2)$ stated as a statement about matrices.
+- It realises the **circle as the rotation group**: the invertibles are $\mathrm{U}(1)$, their image is $SO(2)$, and the model is the classical isomorphism $\mathrm{U}(1)\cong SO(2)$ stated as a statement about matrices.
 
-**Boundaries.** The algebra, its product, its classes and its specificities are *Complex Algebra*, *The Classes of Element of the Complex Algebra* and *The Specificities of the Complex Algebra*; the norm and the units are *Complex Norm and Invertibility*; the spectrum and the sectors are *Spectral Regularity and Degeneracy in the Complex Algebra*, *Eigenvalue Decomposition and Eigenbasis of a Complex Number* and *The Three Sectors of the Complex Algebra*; the geometry of the plane is *Rotations and Reflections in the Complex Plane* and *The Versors and the Orthogonal Group of the Complex Numbers*. The model of the algebra by matrices is also treated, for the second algebra of the block, in *The Matrix Element Representations of the Split-Complexoid*. The operators of this model are *$M_2(\mathbb{R})$ Cayley Representation : Operators*.
+**Boundaries.** The algebra, its product, its classes and its specificities are *Complex Algebra*, *The Classes of Element of the Complex Algebra* and *The Specificities of the Complex Algebra*; the norm and the invertibles are *Complex Norm and Invertibility*; the spectrum and the sectors are *Spectral Regularity and Degeneracy in the Complex Algebra*, *Eigenvalue Decomposition and Eigenbasis of a Complex Number* and *The Three Sectors of the Complex Algebra*; the geometry of the plane is *Rotations and Reflections in the Complex Plane* and *The Versors and the Orthogonal Group of the Complex Numbers*. The model of the algebra by matrices is also treated, for the second algebra of the block, in *The Matrix Element Representations of the Split-Complexoid*. The operators of this model are *$M_2(\mathbb{R})$ Cayley Representation : Operators*.
 
 **Conventions.** The basis is $(1,i)$ with $i^{2}=-1$; the element is $Q=q+iq'$, its conjugate is $\bar Q=q-iq'$, and its norm is $N(Q)=Q\bar Q=q^{2}+q'^{2}$. The real and imaginary subspaces are $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$. The structure matrix is $J$, and $\mathsf{M}_2$ is the Cayley map. The transpose is written $^{\mathsf T}$ and is taken in the basis $(1,i)$.
 
@@ -177,8 +177,8 @@ $$
 **The consequences.**
 
 - The zero set of the determinant in the algebra is the single point $0$: there is no null cone and no isotropic direction.
-- The determinant is positive on every nonzero element, so the image of $\mathbb{C}^{\times}$ lies in $GL_2^{+}(\mathbb{R})$, the component of the identity. The unit group is connected, and it is not merely connected but a circle.
-- The unit criterion collapses: $Q$ is a unit $\iff N(Q)\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. All four statements are the same statement, and the model detects invertibility exactly.
+- The determinant is positive on every nonzero element, so the image of $\mathbb{C}^{\times}$ lies in $GL_2^{+}(\mathbb{R})$, the component of the identity. The group of invertibles is connected, and it is not merely connected but a circle.
+- The unit criterion collapses: $Q$ is invertible $\iff N(Q)\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. All four statements are the same statement, and the model detects invertibility exactly.
 - The determinant is multiplicative, so the model carries the multiplicative property of the norm without correction: $\det(\mathsf{M}_2(Q)\mathsf{M}_2(P))=N(Q)N(P)=N(QP)$.
 
 **The geometric reading.** The determinant is the area scaling of the map $\mathsf{M}_2(Q)$, and the modulus is its length scaling. The two are related by $\det=N=\lvert Q\rvert^{2}$ because both singular values of $\mathsf{M}_2(Q)$ are $\lvert Q\rvert$: the matrix is a similarity, so it scales lengths by $\lvert Q\rvert$ and areas by $\lvert Q\rvert^{2}$. The identity $\det=\lvert Q\rvert^{2}$ is therefore the statement that $\mathsf{M}_2(Q)$ is conformal, and it is why the image is called the conformal matrices.
@@ -268,7 +268,7 @@ $$
 \mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N(Q)I_2 .
 $$
 
-So every member of the image is a **conformal normal matrix**, with both singular values equal to $\lvert Q\rvert$, and the image of the units is the orthogonal group:
+So every member of the image is a **conformal normal matrix**, with both singular values equal to $\lvert Q\rvert$, and the image of the invertibles is the orthogonal group:
 
 $$
 \mathsf{M}_2(\mathrm{U}(1))=SO(2).
@@ -334,7 +334,7 @@ so the image splits as the direct sum of its symmetric part and its antisymmetri
 
 **The count.** The distinguished subspaces of the algebra are the fixed and anti-fixed spaces of its involutions, and the count is the count of the involution group. Here the group generated by the conjugation has two elements, and it produces the two subspaces $\mathbb{R}_{\mathbb{C}}$ and $i\mathbb{R}_{\mathbb{C}}$, of dimensions one each. The biquaternion algebra, whose involution group has four elements, produces six such subspaces. So the count is two against six, and it is the smallest count in the series.
 
-**The units.** The unit circle is the model's only nonlinear distinguished set,
+**The norm-one circle.** The unit circle is the model's only nonlinear distinguished set,
 
 $$
 \mathsf{M}_2(\mathrm{U}(1))=SO(2)=\{\mathsf{M}_2(Q):N(Q)=1\},
@@ -353,7 +353,7 @@ of dimension one, and it is the level set of the determinant. The model realises
 5. The determinant is the norm $q^{2}+q'^{2}$, positive definite, with zero set the single point $0$; the unit criterion is the same as the invertibility criterion and the same as the non-vanishing of the determinant.
 6. There is no idempotent but $0$ and $I_2$, so there is no Peirce frame over $\mathbb{R}$; over $\mathbb{C}$ the frame exists, with the two idempotents $P_{\pm}=\tfrac12(I_2\mp iJ)$ and the two isotropic eigenlines.
 7. The eigenvalues are $\lambda=q+iq'$ and $\bar\lambda$, the diagonalising matrix is the unitary $U$ of the second-order Fourier transform, and it is a rotation by $-45^{\circ}$ on the real plane.
-8. The adjugate, the transpose and the Cayley matrix of the conjugate are one matrix, so $\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N I_2$; every member of the image is a conformal normal matrix, and the units are $SO(2)$.
+8. The adjugate, the transpose and the Cayley matrix of the conjugate are one matrix, so $\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N I_2$; every member of the image is a conformal normal matrix, and the invertibles are $SO(2)$.
 9. The image carries the determinant form, positive definite, and the trace form, Lorentzian; the two are inequivalent, and there is no further invariant form.
 10. The image splits as the scalar line plus the imaginary line, and the distinguished subspaces are two, against the six of the biquaternion algebra.
 

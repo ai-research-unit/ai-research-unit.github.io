@@ -3,11 +3,11 @@
 
 ## Introduction
 
-Conjugation by a unit is the one source of automorphisms that every ring, commutative or not, carries internally. For $u \in A^\times$ the **inner automorphism** by $u$ is the map $\operatorname{conj}_u(x) = uxu^{-1}$, and the set of these maps is a group under composition. Read as an operator, $\operatorname{conj}_u$ is the composite $L_u \circ R_{u^{-1}}$ of a left and a right multiplication, and this article studies the inner automorphisms in that operator reading: the factorisation, the composition law, the exact sense in which they form a group, and the point at which commutativity makes them collapse.
+Conjugation by an invertible element is the one source of automorphisms that every ring, commutative or not, carries internally. For $u \in A^\times$ the **inner automorphism** by $u$ is the map $\operatorname{conj}_u(x) = uxu^{-1}$, and the set of these maps is a group under composition. Read as an operator, $\operatorname{conj}_u$ is the composite $L_u \circ R_{u^{-1}}$ of a left and a right multiplication, and this article studies the inner automorphisms in that operator reading: the factorisation, the composition law, the exact sense in which they form a group, and the point at which commutativity makes them collapse.
 
 The group-theoretic facts — that the inner automorphisms form a normal subgroup of $\operatorname{Aut}(A)$ and that $\operatorname{Inn}(A) \cong A^\times / Z(A)^\times$ — are established in *Ring and Field Automorphisms* and are quoted, not reproved; what is added here is the operator description and the discussion of the failure of commutativity, which is where the noncommutative case differs from the commutative one. The article stays inside Algebra: no length, angle or norm is available to an automorphism, and none is used. The Skolem–Noether theorem, that every automorphism of a central simple algebra is inner, is named as the boundary and deferred to *Automorphisms and Derivations of Algebras*.
 
-Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative, $A^\times$ is its unit group, $Z(A)$ its centre, and $L_u(x) = ux$, $R_v(x) = xv$ are the one-sided multiplications of *Left and Right Multiplication in a Ring*. The automorphism group is $\operatorname{Aut}(A)$ and the inner automorphism group is $\operatorname{Inn}(A)$, as in *Ring and Field Automorphisms*; the derivations $\operatorname{ad}_a$ and their image $\operatorname{Inn}_{\mathrm{der}}(A)$ are distinct from the automorphism group of this article and are *Derivations of a Ring*.
+Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative, $A^\times$ is its group of invertibles, $Z(A)$ its centre, and $L_u(x) = ux$, $R_v(x) = xv$ are the one-sided multiplications of *Left and Right Multiplication in a Ring*. The automorphism group is $\operatorname{Aut}(A)$ and the inner automorphism group is $\operatorname{Inn}(A)$, as in *Ring and Field Automorphisms*; the derivations $\operatorname{ad}_a$ and their image $\operatorname{Inn}_{\mathrm{der}}(A)$ are distinct from the automorphism group of this article and are *Derivations of a Ring*.
 
 ## The Conjugation Operator
 
@@ -79,23 +79,23 @@ $$
 
 **Proof.** The homomorphism and the kernel are the two propositions above; the first isomorphism theorem gives the isomorphism. For normality, if $\varphi \in \operatorname{Aut}(A)$ then $\varphi \operatorname{conj}_u \varphi^{-1} = \operatorname{conj}_{\varphi(u)}$, because $\varphi(uxu^{-1}) = \varphi(u)\varphi(x)\varphi(u)^{-1}$.
 
-**Corollary.** $\operatorname{Inn}(A)$ is trivial exactly when every unit is central; for a commutative ring $Z(A)^\times = A^\times$, so $\operatorname{Inn}(A) = 1$ and $\operatorname{Aut}(A) = \operatorname{Out}(A)$.
+**Corollary.** $\operatorname{Inn}(A)$ is trivial exactly when every invertible element is central; for a commutative ring $Z(A)^\times = A^\times$, so $\operatorname{Inn}(A) = 1$ and $\operatorname{Aut}(A) = \operatorname{Out}(A)$.
 
 ### The failure of commutativity
 
 In a commutative ring the inner automorphism group is trivial and carries no information. In a noncommutative ring it can be large and, in contrast with the commutative case, it can be nonabelian.
 
-**Proposition.** $\operatorname{Inn}(A)$ is abelian exactly when $A^\times / Z(A)^\times$ is abelian; equivalently, exactly when every commutator of units is central. In a commutative ring this holds vacuously.
+**Proposition.** $\operatorname{Inn}(A)$ is abelian exactly when $A^\times / Z(A)^\times$ is abelian; equivalently, exactly when every commutator of invertibles is central. In a commutative ring this holds vacuously.
 
 **Proof.** $\operatorname{Inn}(A)$ is isomorphic to $A^\times/Z(A)^\times$ by the theorem, and a group is abelian exactly when the commutator subgroup is trivial, that is, when every commutator $uvu^{-1}v^{-1}$ lies in the centre.
 
-**Example.** In $A = M_n(k)$ over a field $k$ and $n \geq 2$, the unit group is $GL_n(k)$ and the centre is the scalars $k^\times I$, so
+**Example.** In $A = M_n(k)$ over a field $k$ and $n \geq 2$, the group of invertibles is $GL_n(k)$ and the centre is the scalars $k^\times I$, so
 
 $$
 \operatorname{Inn}(M_n(k)) \cong GL_n(k)/k^\times I = PGL_n(k),
 $$
 
-which is nonabelian for $n \geq 2$. Concretely, for the units $U = \left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$ and $V = \left(\begin{smallmatrix}1&0\\1&1\end{smallmatrix}\right)$ in $GL_2(\mathbb{Q})$, the two inner automorphisms $\operatorname{conj}_U$ and $\operatorname{conj}_V$ do not commute, because the matrix $UVU^{-1}V^{-1}$ is not scalar: a direct computation gives $UVU^{-1}V^{-1} = \left(\begin{smallmatrix}3&-1\\1&0\end{smallmatrix}\right)$, whose trace is $3$ and which is not of the form $\lambda I$. Hence $\operatorname{Inn}(M_2(\mathbb{Q}))$ is nonabelian, and the inner automorphisms of a noncommutative ring are a genuinely nonabelian group.
+which is nonabelian for $n \geq 2$. Concretely, for the invertibles $U = \left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$ and $V = \left(\begin{smallmatrix}1&0\\1&1\end{smallmatrix}\right)$ in $GL_2(\mathbb{Q})$, the two inner automorphisms $\operatorname{conj}_U$ and $\operatorname{conj}_V$ do not commute, because the matrix $UVU^{-1}V^{-1}$ is not scalar: a direct computation gives $UVU^{-1}V^{-1} = \left(\begin{smallmatrix}3&-1\\1&0\end{smallmatrix}\right)$, whose trace is $3$ and which is not of the form $\lambda I$. Hence $\operatorname{Inn}(M_2(\mathbb{Q}))$ is nonabelian, and the inner automorphisms of a noncommutative ring are a genuinely nonabelian group.
 
 **Example (division rings).** If $D$ is a division ring with centre $F$, then $\operatorname{Inn}(D) \cong D^\times/F^\times$, and $\operatorname{Aut}(D)$ contains it. For $D = \mathbb{H}$ the centre is $\mathbb{R}$, so $\operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$, a group whose structure belongs to the algebra layer; the inner automorphisms of $\mathbb{H}$ are the maps $Q \mapsto UQU^{-1}$ by a quaternion $U \neq 0$.
 
@@ -109,10 +109,10 @@ The inner automorphisms sit inside the two operator structures of this category,
 |---|---|---|---|
 | left multiplication | $L_a(x) = ax$ | one element | not multiplicative |
 | right multiplication | $R_a(x) = xa$ | one element | anti-multiplicative |
-| inner automorphism | $\operatorname{conj}_u(x) = uxu^{-1}$ | a unit | $\operatorname{Inn}(A) \cong A^\times/Z(A)^\times$ |
+| inner automorphism | $\operatorname{conj}_u(x) = uxu^{-1}$ | an invertible element | $\operatorname{Inn}(A) \cong A^\times/Z(A)^\times$ |
 | inner derivation | $\operatorname{ad}_a(x) = ax - xa$ | an element | $\operatorname{Inn}_{\mathrm{der}}(A) \cong A/Z(A)$ |
 
-**Remark.** The table is the operator ladder of the ring in miniature: the two one-sided multiplications are the raw material, their pairing on a unit gives an automorphism, and their commutator gives a derivation. The two inner structures are different in kind — one is a group, the other a Lie ring — and they are related by the fact that both measure the failure of an element to be central: $\operatorname{conj}_u = \mathrm{id}$ iff $u$ is central, and $\operatorname{ad}_a = 0$ iff $a$ is central.
+**Remark.** The table is the operator ladder of the ring in miniature: the two one-sided multiplications are the raw material, their pairing on an invertible element gives an automorphism, and their commutator gives a derivation. The two inner structures are different in kind — one is a group, the other a Lie ring — and they are related by the fact that both measure the failure of an element to be central: $\operatorname{conj}_u = \mathrm{id}$ iff $u$ is central, and $\operatorname{ad}_a = 0$ iff $a$ is central.
 
 **Proposition.** For $u \in A^\times$ and $a \in A$,
 
@@ -140,21 +140,21 @@ $$
 
 **Proposition.** $\operatorname{Inn}(A \times B) \cong \operatorname{Inn}(A) \times \operatorname{Inn}(B)$ and $Z(A \times B) = Z(A) \times Z(B)$.
 
-**Proof.** A unit of $A \times B$ is a pair of units, and conjugation acts componentwise; the centre is the product of the centres.
+**Proof.** A unit of $A \times B$ is a pair of invertibles, and conjugation acts componentwise; the centre is the product of the centres.
 
 ## Summary
 
-For a unit $u$ of the ring $A$, the inner automorphism $\operatorname{conj}_u(x) = uxu^{-1}$ is the composite $L_u R_{u^{-1}}$ of a left and a right multiplication; it is a unital automorphism with inverse $\operatorname{conj}_{u^{-1}}$, and $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. Two conjugations agree exactly when the ratio of their units is central, so $\operatorname{conj}_u = \mathrm{id}$ exactly when $u$ is a central unit, and $u \mapsto \operatorname{conj}_u$ induces $\operatorname{Inn}(A) \cong A^\times/Z(A)^\times$, a normal subgroup of $\operatorname{Aut}(A)$ with $\operatorname{Out}(A) = \operatorname{Aut}(A)/\operatorname{Inn}(A)$ as quotient.
+For an invertible element $u$ of the ring $A$, the inner automorphism $\operatorname{conj}_u(x) = uxu^{-1}$ is the composite $L_u R_{u^{-1}}$ of a left and a right multiplication; it is a unital automorphism with inverse $\operatorname{conj}_{u^{-1}}$, and $\operatorname{conj}_u\operatorname{conj}_v = \operatorname{conj}_{uv}$. Two conjugations agree exactly when the ratio of their units is central, so $\operatorname{conj}_u = \mathrm{id}$ exactly when $u$ is a central unit, and $u \mapsto \operatorname{conj}_u$ induces $\operatorname{Inn}(A) \cong A^\times/Z(A)^\times$, a normal subgroup of $\operatorname{Aut}(A)$ with $\operatorname{Out}(A) = \operatorname{Aut}(A)/\operatorname{Inn}(A)$ as quotient.
 
-The one-sided factors are not automorphisms — $L_u$ is not multiplicative unless $A$ is commutative, and $R_{u^{-1}}$ is anti-multiplicative — and only their pairing is; this is the operator form of the reversal that a noncommutative automorphism must perform. In the commutative case every unit is central, $\operatorname{Inn}(A) = 1$ and $\operatorname{Aut}(A) = \operatorname{Out}(A)$; in the noncommutative case $\operatorname{Inn}(A)$ can be nonabelian, as $PGL_n(k)$ and $\mathbb{H}^\times/\mathbb{R}^\times$ show. The inner automorphism group and the Lie ring of inner derivations are the two inner structures of the ring, a group and a Lie ring respectively, and both measure the failure of an element to be central. The outer automorphisms vanish for a central simple algebra by the Skolem–Noether theorem, whose proof is in the algebra category.
+The one-sided factors are not automorphisms — $L_u$ is not multiplicative unless $A$ is commutative, and $R_{u^{-1}}$ is anti-multiplicative — and only their pairing is; this is the operator form of the reversal that a noncommutative automorphism must perform. In the commutative case every invertible element is central, $\operatorname{Inn}(A) = 1$ and $\operatorname{Aut}(A) = \operatorname{Out}(A)$; in the noncommutative case $\operatorname{Inn}(A)$ can be nonabelian, as $PGL_n(k)$ and $\mathbb{H}^\times/\mathbb{R}^\times$ show. The inner automorphism group and the Lie ring of inner derivations are the two inner structures of the ring, a group and a Lie ring respectively, and both measure the failure of an element to be central. The outer automorphisms vanish for a central simple algebra by the Skolem–Noether theorem, whose proof is in the algebra category.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $A$ | Ring with $1 \neq 0$, not assumed commutative |
-| $A^\times$, $Z(A)$ | Unit group and centre of $A$ |
-| $\operatorname{conj}_u(x) = uxu^{-1}$ | Inner automorphism by a unit $u$ |
+| $A^\times$, $Z(A)$ | Group of invertibles and centre of $A$ |
+| $\operatorname{conj}_u(x) = uxu^{-1}$ | Inner automorphism by an invertible element $u$ |
 | $L_u$, $R_{u^{-1}}$ | Left and right multiplications; $\operatorname{conj}_u = L_uR_{u^{-1}}$ |
 | $\operatorname{conj}_u = \operatorname{conj}_v \iff uv^{-1} \in Z(A)$ | Agreement of two conjugations |
 | $\operatorname{Inn}(A) \cong A^\times/Z(A)^\times$ | Inner automorphism group |
@@ -165,6 +165,6 @@ The one-sided factors are not automorphisms — $L_u$ is not multiplicative unle
 ## Further Reading
 
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for inner automorphisms, their group structure and the failure of commutativity.
-- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1956), for conjugation by units, the inner automorphism group and its relation to the unit group.
+- Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1956), for conjugation by invertibles, the inner automorphism group and its relation to the group of invertibles.
 - Paul M. Cohn, *Skew Fields: Theory of General Division Rings* (Cambridge University Press, 1995), for the automorphism group of a division ring and the inner automorphisms of a noncommutative field.
 - Tsi-Yuen Lam, *A First Course in Noncommutative Rings*, Graduate Texts in Mathematics 131 (Springer, 2nd ed. 2001), for $PGL_n$ as the inner automorphism group of a matrix ring and the Skolem–Noether theorem.

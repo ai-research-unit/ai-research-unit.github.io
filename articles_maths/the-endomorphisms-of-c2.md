@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article treats the algebra of the operators on the duo-complex numbers: the complex-linear endomorphisms, their identification with the matrix algebra $M_2(\mathbb{C})$, the group of units and the projective quotient, the conjugate-linear maps, and the two centralisers cut out by the complex structure. The algebra is the first non-commutative object of the synthetic part, and it is the algebra whose simple module is the space itself.
+This article treats the algebra of the operators on the duo-complex numbers: the complex-linear endomorphisms, their identification with the matrix algebra $M_2(\mathbb{C})$, the group of invertibles and the projective quotient, the conjugate-linear maps, and the two centralisers cut out by the complex structure. The algebra is the first non-commutative object of the synthetic part, and it is the algebra whose simple module is the space itself.
 
 The article states the structure of the algebra as an operator algebra on $\mathbb{C}^2$. It does not restate the matrix theory: the product rule, the trace, the determinant, the six subspaces, the centraliser and the double centraliser of a matrix and the Jordan form are the subject of the $M_2(\mathbb{C})$ Model articles of the biquaternion category, cited at each point. The tensor square is *The Tensor Square of $\mathbb{C}^2$*; the classical groups as groups of matrices are *The Classical Groups of $\mathbb{C}^2$*; the general theory of endomorphism algebras is *Endomorphisms of a Linear Space* and *The Endomorphism Algebra of a Module*.
 
@@ -173,7 +173,7 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix computations of the product, the trace and the determinant.
 - [The Centraliser](the-centraliser.html), for the centraliser of a single matrix and the bicommutant.
-- [The Biquaternion Unit Group as a Topological Group](the-biquaternion-unit-group-as-a-topological-group.html), for the groups and the determinant.
+- [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the groups and the determinant.
 - [The Möbius Transformation as an Operator](the-mobius-transformation-as-an-operator.html), for the action on $\mathbb{CP}^1$.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its isomorphism with $M_2(\mathbb{C})$.
 - [The Endomorphism Algebra of a Module](the-endomorphism-algebra-of-a-module.html), for the double centraliser theorem in general.

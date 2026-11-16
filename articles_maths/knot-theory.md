@@ -39,7 +39,7 @@ $$
 \boxed{\;\Delta_K(t) \doteq \det(t^{1/2}V - t^{-1/2}V^{\mathsf{T}})\;}
 $$
 
-up to multiplication by a unit $\pm t^{k}$, where $\Delta_K$ is the **Alexander polynomial**; it satisfies $\Delta_K(t)\doteq\Delta_K(t^{-1})$ and $\Delta_K(1) = \pm1$, and the determinant of the knot is $|\Delta_K(-1)|$. The **signature** $\sigma(K)$ is the signature of the symmetric matrix $V + V^{\mathsf{T}}$, an even integer, and it is a concordance invariant.
+up to multiplication by an invertible element $\pm t^{k}$, where $\Delta_K$ is the **Alexander polynomial**; it satisfies $\Delta_K(t)\doteq\Delta_K(t^{-1})$ and $\Delta_K(1) = \pm1$, and the determinant of the knot is $|\Delta_K(-1)|$. The **signature** $\sigma(K)$ is the signature of the symmetric matrix $V + V^{\mathsf{T}}$, an even integer, and it is a concordance invariant.
 
 **Proof sketch.** The Alexander polynomial is computed from a presentation of the Alexander module $H_1$ of the infinite cyclic cover of the complement, obtained from a Seifert surface by the Fox calculus; the Seifert matrix computes the linking form on the surface, and the determinant formula for the Alexander polynomial is the resulting statement. The symmetry and the value at $1$ are formal properties of the determinant.
 

@@ -141,7 +141,7 @@ where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-va
 
 **Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(F_{\mathrm{fn}}G_{\mathrm{fn}}) = (\tilde{\nabla}F_{\mathrm{fn}})G_{\mathrm{fn}} + \sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$, and the divergence theorem applied to the product $F_{\mathrm{fn}}G_{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F_{\mathrm{fn}} e_\mu G_{\mathrm{fn}}$ and sum over $\mu$.
 
-**Remark (the non-commutative correction).** The transposition that moves the derivative off $G_{\mathrm{fn}}$ while leaving $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ in the volume term is **false for a non-central** $F_{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$ equals $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ only when $F_{\mathrm{fn}}$ commutes with every unit $e_\mu$. The right gradient $\nabla^{R}$ is the transposition that removes the restriction.
+**Remark (the non-commutative correction).** The transposition that moves the derivative off $G_{\mathrm{fn}}$ while leaving $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ in the volume term is **false for a non-central** $F_{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$ equals $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ only when $F_{\mathrm{fn}}$ commutes with every invertible $e_\mu$. The right gradient $\nabla^{R}$ is the transposition that removes the restriction.
 
 ## The Divergence Theorem
 

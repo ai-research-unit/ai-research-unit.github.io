@@ -6,7 +6,7 @@
 An **order automorphism** of a poset is a bijection that preserves the order in both directions, and
 the order automorphisms of a poset $P$ form a group under composition, written
 $\operatorname{Aut}(P)$. This article studies that group as an operator layer of the order: it proves
-that $\operatorname{Aut}(P)$ is the group of units of the monoid of monotone self-maps of $P$ and a
+that $\operatorname{Aut}(P)$ is the group of invertibles of the monoid of monotone self-maps of $P$ and a
 subgroup of the symmetric group $\operatorname{sym}(P)$, that an order automorphism preserves every
 meet and join that exists, so that for a lattice the order automorphisms and the lattice
 automorphisms coincide; it computes the **fixed-point structure** of a single automorphism, which is a
@@ -19,7 +19,7 @@ The article presupposes *Order Theory and Lattices* — posets, chains, lattices
 monotone maps and the least and greatest elements — and *Sets, Functions and Relations* — bijections,
 the symmetric group and group actions in the elementary sense. The monoid of monotone maps and the
 endomorphism monoid of a poset are the subject of *Operators on a Poset*, in this group, and this
-article uses the group of units of that monoid without repeating its construction. The lattice
+article uses the group of invertibles of that monoid without repeating its construction. The lattice
 automorphisms and the congruence theory of a lattice are the subject of *Operators on a Lattice*, in
 this group; the statement that, for a lattice, the two notions of automorphism coincide is proved
 here because the article needs it. The endomorphism monoid and the automorphism group of a general
@@ -30,7 +30,7 @@ rigid case of that theory.
 Three boundaries are observed. No **topology** is used: the order automorphisms of a dense order are
 computed with the order alone, and the topological dynamics of a later part is not used. The theory of
 **groups** is *Groups*, in this Part, and the theory of a group acting on a set is *Transformation
-Groups*; here a group occurs only as the group of units of a monoid of monotone maps, and the action
+Groups*; here a group occurs only as the group of invertibles of a monoid of monotone maps, and the action
 is computed from the composition of maps. The order automorphisms of a **linear space**, and the
 affine group of a geometry, are Part IV and are named once to mark the boundary; no scalar, no
 distance and no **form** is used.
@@ -51,15 +51,15 @@ The set of order automorphisms of $P$ is written $\operatorname{Aut}(P)$, and $\
 denotes the set of monotone self-maps of $P$, a monoid under composition with identity
 $\mathrm{id}_P$, treated in *Operators on a Poset*.
 
-**Theorem.** $\operatorname{Aut}(P)$ is the group of units of the monoid $\operatorname{End}(P)$, and
+**Theorem.** $\operatorname{Aut}(P)$ is the group of invertibles of the monoid $\operatorname{End}(P)$, and
 it is a subgroup of the symmetric group $\operatorname{sym}(P)$.
 
 **Proof.** The composite of two order automorphisms is an order automorphism, because the equivalences
 compose, and the inverse of an order automorphism is an order automorphism, because the defining
 equivalence is symmetric in $f$ and $f^{-1}$. So $\operatorname{Aut}(P)$ is closed under composition
-and inverses, contains $\mathrm{id}_P$, and is a group. A bijection $f$ is a unit of
+and inverses, contains $\mathrm{id}_P$, and is a group. A bijection $f$ is invertible in
 $\operatorname{End}(P)$ exactly when $f$ and $f^{-1}$ are monotone, which is exactly the defining
-equivalence; so the units are the order automorphisms. Since every order automorphism is a bijection
+equivalence; so the invertibles are the order automorphisms. Since every order automorphism is a bijection
 of $P$, the group is a subgroup of $\operatorname{sym}(P)$.
 
 **Corollary.** $\operatorname{Aut}(P)$ is the stabiliser of the relation $\leq$ in the action of
@@ -234,7 +234,7 @@ invoked.
 ## Summary
 
 An order automorphism of a poset is a bijection preserving the order in both directions; the order
-automorphisms form the group $\operatorname{Aut}(P)$ of units of the monoid of monotone self-maps, and
+automorphisms form the group $\operatorname{Aut}(P)$ of invertibles of the monoid of monotone self-maps, and
 it is a subgroup of the symmetric group $\operatorname{sym}(P)$. An order automorphism preserves every
 join, every meet, the least and the greatest elements, the atoms, the coatoms and the cover relation;
 for a lattice the order automorphisms are exactly the lattice automorphisms, and the two notions of

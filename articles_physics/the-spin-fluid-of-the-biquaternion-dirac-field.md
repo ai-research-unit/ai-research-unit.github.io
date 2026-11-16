@@ -53,7 +53,7 @@ $$
 
 The square is not decoration and it is not an error of the display. A velocity is bilinear in the spinor, so the frame enters it twice; the word deposits the boost once in the frame and twice in the four-vector. The conventions record the factor of two as the commonest error in the corpus, and the polar article's §*The boost is the four-velocity* is where the factors are counted. This article takes the display as given.
 
-The norm being $-c^{2}$ is stronger than the corresponding statement for the scalar field. There the four-velocity is a unit element only where the quantum potential vanishes, because the scalar velocity is a gradient and a gradient of a solution is not automatically on the mass shell; here the frame element is a unit by construction, so the velocity is a unit wherever the field is non-zero. The density is a separate factor and carries no part of the normalisation.
+The norm being $-c^{2}$ is stronger than the corresponding statement for the scalar field. There the four-velocity is a unit element only where the quantum potential vanishes, because the scalar velocity is a gradient and a gradient of a solution is not automatically on the mass shell; here the frame element is invertible by construction, so the velocity is invertible wherever the field is non-zero. The density is a separate factor and carries no part of the normalisation.
 
 ### The spin is the rotor's image of the axis
 
@@ -118,7 +118,7 @@ $$
 =\frac{1}{m}\left(\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\nu\partial R_\mu}-\frac{\partial^{2}S_{\tilde\Xi}}{\partial R_\mu\partial R_\nu}\right)=0 .
 $$
 
-The scalar flow is therefore **closed**: it is the gradient of a single function, and every closed-loop integral of it is fixed by the winding of the action. That is the fact [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) uses, and it is exact for every solution and not only for a plane wave. The qualification the scalar article carries is that the four-velocity is a unit only where the quantum potential vanishes; the closure does not depend on that qualification and holds everywhere the action is defined.
+The scalar flow is therefore **closed**: it is the gradient of a single function, and every closed-loop integral of it is fixed by the winding of the action. That is the fact [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) uses, and it is exact for every solution and not only for a plane wave. The qualification the scalar article carries is that the four-velocity is invertible only where the quantum potential vanishes; the closure does not depend on that qualification and holds everywhere the action is defined.
 
 ### The Dirac case is a frame
 
@@ -213,7 +213,7 @@ $$
 
 with $a$ the acceleration and $v_{\Phi}^{\ \mu}\omega_{\mathrm{vrt},\mu\nu}=0$. The projected part annihilates the velocity, so it is a two-form on the three dimensions the rest space carries, and every two-form on three dimensions is simple: $\omega_{\mathrm{vrt}}\wedge\omega_{\mathrm{vrt}}=0$ identically. **The vorticity proper is therefore rank two for every solution, one Clebsch pair always represents it, and the rank-four row of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) is not a property of the Dirac field.**
 
-**What can reach rank four is the raw derivative, and it reaches it through the acceleration and not through the spin.** Because the projected part is simple, the four-form of the raw derivative is proportional to $v_{\Phi}\wedge a\wedge\omega_{\mathrm{vrt}}$, so it vanishes for an irrotational flow, for a geodesic one, and for any flow whose acceleration is orthogonal to its vorticity — and it does not vanish otherwise. The test was run on a unit field with rapidity $r_xr_z$ and direction angles $r_y+r'_t$ and $r_zr_x$: the rest-frame product $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ of the projected part came out at $10^{-19}$, and the same product for the raw derivative at $-0.106$.
+**What can reach rank four is the raw derivative, and it reaches it through the acceleration and not through the spin.** Because the projected part is simple, the four-form of the raw derivative is proportional to $v_{\Phi}\wedge a\wedge\omega_{\mathrm{vrt}}$, so it vanishes for an irrotational flow, for a geodesic one, and for any flow whose acceleration is orthogonal to its vorticity — and it does not vanish otherwise. The test was run on an invertible element field with rapidity $r_xr_z$ and direction angles $r_y+r'_t$ and $r_zr_x$: the rest-frame product $\vec E_{\mathrm{vrt}}\cdot\vec B_{\mathrm{vrt}}$ of the projected part came out at $10^{-19}$, and the same product for the raw derivative at $-0.106$.
 
 **The reading's real yield is not a rank but two structural statements, and both are about what the Dirac fluid does not carry.** The first is that its vorticity has no independent dynamics. The object it is built from is the frame's logarithmic derivative, which is the Maurer–Cartan form of the Lorentz group and is flat by construction, $\mathrm{d}(\tilde U^{-1}\mathrm{d}\tilde U)+(\tilde U^{-1}\mathrm{d}\tilde U)\wedge(\tilde U^{-1}\mathrm{d}\tilde U)=0$. So the vorticity is a function of the frame and of nothing else, and it obeys no transport law of its own: there is no field whose evolution is a vorticity equation, and the Helmholtz and Kelvin statements of a classical fluid have no counterpart here. A classical rotational flow has a vorticity that is derived and then transported; the Dirac fluid has a vorticity that is read off the frame and never transported.
 
@@ -277,7 +277,7 @@ The accounting explains why the Dirac fluid needs one more equation than the sca
 **Twelve statements, each one line, and each with its reason. This is what the spin fluid is.**
 
 1. **It carries three data at each event: a density, a frame element and a spin direction.** That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.
-2. **The velocity is the frame's inverse square**, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is a unit wherever the field is non-zero — stronger than the scalar case, where the velocity is a unit only where $Q_{\mathrm{qnt}}$ vanishes.
+2. **The velocity is the frame's inverse square**, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is invertible wherever the field is non-zero — stronger than the scalar case, where the velocity is invertible only where $Q_{\mathrm{qnt}}$ vanishes.
 3. **The current reads four of the eight parameters** — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.
 4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
 5. **The current splits by Gordon into convection and bound magnetisation.** The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.
@@ -323,7 +323,7 @@ $$
 \text{fluid}\;\longrightarrow\;\text{field}\quad(\text{total, but only solutions close}).
 $$
 
-**The forward arrow is exact in all three cases, and exact for the same reason.** Any non-vanishing spinor gives a density, a frame and a spin direction at once, and the polar decomposition is a bijection on the eight-parameter set of units, so the fluid's data are the field's data.
+**The forward arrow is exact in all three cases, and exact for the same reason.** Any non-vanishing spinor gives a density, a frame and a spin direction at once, and the polar decomposition is a bijection on the eight-parameter set of invertibles, so the fluid's data are the field's data.
 
 **The reverse arrow is where the cases part.** Given a density, a frame and a spin direction, the spinor is written at once, but the three data are not yet a solution: what closes the system is the spin's transport, and the closure needs either the Frenkel condition or a free constitutive law. **That is why the spinor case alone has a genuinely non-unique fluid** — the three choices [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html) records are choices the reverse map does not make for you — and why the orientation, and not the density or the velocity, is where the extra structure of the Dirac medium sits.
 

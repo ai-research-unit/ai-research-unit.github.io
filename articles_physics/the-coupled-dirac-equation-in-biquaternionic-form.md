@@ -110,7 +110,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\mu}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_\mu$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every unit.
+with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\mu}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_\mu$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
 
 **That one line is the whole of the polar reading.** Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §*Larmor Precession and the Gyromagnetic Ratio*.
 
@@ -385,7 +385,7 @@ $$
 j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr),
 $$
 
-a scalar part of three factors: the field, a unit, the field again. **The adjoint row and the right multiplier $\vec e_x$ are the same datum in two spellings.** The older form hides it inside the adjoint; the pairing shows it as the last factor, and the last factor is a frame unit and not a field.
+a scalar part of three factors: the field, an invertible element, the field again. **The adjoint row and the right multiplier $\vec e_x$ are the same datum in two spellings.** The older form hides it inside the adjoint; the pairing shows it as the last factor, and the last factor is a frame unit and not a field.
 
 **Why this matters here.** It says that the conserved current is available inside the algebra, as a *triple* product with two fixed frame units, and that no fourth object and no second carrier is needed. It also says why the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ cannot be the current: a product of the field with its conjugate carries no fixed unit, so the two parts enter with the same sign, and the current needs them with opposite signs. The variational companion proves this, computes the repaired object, and shows the failure on an exact solution.
 

@@ -122,7 +122,7 @@ $$
 $$
 - **Null times null, positive product.** $e_t+\vec e_x$ and $e_t-\vec e_x$ are null, and their product is $2e_t$, of value $4$.
 
-**Theorem (inversion preserves the sign).** Let $\tilde Q$ be a unit, with algebraic norm $\langle\tilde Q\rangle_{\natural}\neq0$. Then
+**Theorem (inversion preserves the sign).** Let $\tilde Q$ be an invertible element, with algebraic norm $\langle\tilde Q\rangle_{\natural}\neq0$. Then
 
 $$
 \langle\tilde Q^{-1}\rangle_{\natural*}=\frac{\langle\tilde Q\rangle_{\natural*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
@@ -133,19 +133,19 @@ $$
 \langle\tilde Q^{-1}\rangle_{\natural*}=\frac{|Q_t|^2-\lVert\vec Q\rVert^2}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
 $$
 
-**Corollary (the sector is inversion-stable).** The regular sector is stable under inversion wherever inversion is defined, and each sign region is stable as well: inversion preserves the sign and rescales the value by a positive factor. The positive region is a **symmetric subset of the unit group** — closed under inversion, not closed under multiplication. The negative region contains zero divisors, on which inversion is undefined, and on its units it is inversion-stable.
+**Corollary (the sector is inversion-stable).** The regular sector is stable under inversion wherever inversion is defined, and each sign region is stable as well: inversion preserves the sign and rescales the value by a positive factor. The positive region is a **symmetric subset of the group of invertibles** — closed under inversion, not closed under multiplication. The negative region contains zero divisors, on which inversion is undefined, and on its units it is inversion-stable.
 
-**Remark (the group actions).** The sector is stable under $\mathbb{C}^{\times}$ and under the Krein isometry group $\mathrm{U}(1,3)$, which preserves the value. It is not stable under the unit group acting by similarity: the conjugation of §*Why There Is No Spectral Split* moves an element of the negative region to another value.
+**Remark (the group actions).** The sector is stable under $\mathbb{C}^{\times}$ and under the Krein isometry group $\mathrm{U}(1,3)$, which preserves the value. It is not stable under the group of invertibles acting by similarity: the conjugation of §*Why There Is No Spectral Split* moves an element of the negative region to another value.
 
 ## Relation to the Algebraic Partition
 
-**Theorem (positive implies unit).** If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is a unit of the plain product.
+**Theorem (positive implies invertible).** If $\langle\tilde Q\rangle_{\natural*}>0$ then $\tilde Q$ is invertible in the plain product.
 
 *Proof.* Positivity gives $|Q_t|>\lVert\vec Q\rVert$, hence $Q_t\neq0$. If $\tilde Q$ were a zero divisor, then $\langle\tilde Q\rangle_{\natural}=0$, so $Q_t^2=-\sum_kQ_k^2$ and
 $$
 |Q_t|^2=\Bigl|\sum_kQ_k^2\Bigr|\le\sum_k|Q_k|^2=\lVert\vec Q\rVert^2,
 $$
-in contradiction with positivity. A non-zero element that is not a zero divisor is a unit.
+in contradiction with positivity. A non-zero element that is not a zero divisor is invertible.
 
 **Theorem (the zero divisors of the sector).** The zero divisors of the regular sector are exactly the zero divisors that are not doubly null,
 
@@ -166,9 +166,9 @@ and they all lie in the negative region.
 
 The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.
 
-**Corollary (the sector meets every algebraic class except the origin).** The regular sector contains positive units, negative units and negative zero divisors. The origin, which is neither a unit nor a zero divisor, is the only algebraic class it misses, and the origin lies in the degenerate sector.
+**Corollary (the sector meets every algebraic class except the origin).** The regular sector contains positive units, negative units and negative zero divisors. The origin, which is neither an invertible element nor a zero divisor, is the only algebraic class it misses, and the origin lies in the degenerate sector.
 
-**Remark (the sector is not the unit group).** The unit group is the union of the positive region and the negative units; it is strictly larger than the positive region and strictly smaller than the sector. The difference is the negative zero divisors, on which the two partitions disagree.
+**Remark (the sector is not the group of invertibles).** The group of invertibles is the union of the positive region and the negative units; it is strictly larger than the positive region and strictly smaller than the sector. The difference is the negative zero divisors, on which the two partitions disagree.
 
 ## Comparison with the Degenerate Sector
 
@@ -182,17 +182,17 @@ The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natura
 | line $\mathbb{C}\tilde Q$ | non-degenerate, definite | totally isotropic |
 | algebraic classes | units and zero divisors | units and zero divisors |
 | closed under products | no | no |
-| closed under inversion | on the units | on the isotropic units |
+| closed under inversion | on the invertibles | on the isotropic units |
 
 **The two sectors exhaust the algebra.** $\mathbb{B}=\mathbb{B}^{\natural*}\uplus\mathcal K$, and the partition is by the value alone. The comparison of the algebraic classes inside each sector is the content of the two articles: here the classes are separated by the sign, there by the algebraic norm.
 
 ## Consequences
 
-**Left multiplication.** If $\tilde Q$ is positive it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q$ is negative, $L_{\tilde Q}$ has rank $4$ when $\tilde Q$ is a unit and rank $2$ when it is a zero divisor, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*. The rank therefore follows the algebraic norm and not the Krein sign.
+**Left multiplication.** If $\tilde Q$ is positive it is invertible, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q$ is negative, $L_{\tilde Q}$ has rank $4$ when $\tilde Q$ is invertible and rank $2$ when it is a zero divisor, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*. The rank therefore follows the algebraic norm and not the Krein sign.
 
 **The two-sided operator.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two-Sided Operator*. On the positive region it is invertible throughout; on the negative region it is invertible exactly on the negative units and singular on the negative zero divisors.
 
-**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. It therefore exists throughout the positive region, and on the negative region exactly off the zero divisors. The decomposition itself is *The Polar Decomposition of an N-Regular Biquaternion*.
+**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the group of invertibles. It therefore exists throughout the positive region, and on the negative region exactly off the zero divisors. The decomposition itself is *The Polar Decomposition of an N-Regular Biquaternion*.
 
 **The adjoint.** The Krein adjoint is defined for every element, because the form is non-degenerate, so the sector imposes no restriction on it; the operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
@@ -210,7 +210,7 @@ The pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natura
 | multiplication | not closed: positive times positive can be negative, negative times negative positive, regular times regular null |
 | inversion | preserves the sign, with $\langle\tilde Q^{-1}\rangle_{\natural*}=\langle\tilde Q\rangle_{\natural*}/\lvert\langle\tilde Q\rangle_{\natural}\rvert^2$ |
 | algebraic classes | positive units, negative units, negative zero divisors; no positive zero divisor |
-| operators | left multiplication and the two-sided operator follow the algebraic norm; the polar decomposition exists exactly on the units |
+| operators | left multiplication and the two-sided operator follow the algebraic norm; the polar decomposition exists exactly on the invertibles |
 
 The sector is the metric interior and exterior of the null set, taken together. It carries two signs, two topologies and three algebraic classes, and it is the whole of the algebra on which the Krein norm is a genuine measure: the positive region is the inside of the cone, the negative region the outside, and the null set between them is the degenerate sector.
 
@@ -241,6 +241,6 @@ The sector is the metric interior and exterior of the null set, taken together. 
 - [The Fundamental Symmetry of the Form](the-fundamental-symmetry-of-the-form.html), for the fundamental symmetry and the bridge.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, their topology and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its action.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the unit group and the zero-divisor cone.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicative norm, the group of invertibles and the zero-divisor cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the two-sided operator, the rank of left multiplication and the polar decomposition.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.

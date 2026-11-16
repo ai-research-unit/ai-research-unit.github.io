@@ -45,7 +45,7 @@ $$
 \boxed{\;\bigl(\ell_r^\pi\bigr)^\dagger = \ell_r^\pi \iff \delta(r) = r , \qquad \bigl(\ell_r^\pi\bigr)^\dagger\ell_r^\pi = \mathrm{id} \iff \delta(r)\alpha(r)\in K , \qquad \bigl(\ell_r^\pi\bigr)^2 = \mathrm{id} \iff r\alpha(r)\in K\;} ,
 $$
 
-with $K$ the units inducing the grade involution, when the parametrisation is injective; in particular the graded adjoint action is self-adjoint exactly on the parameters fixed by the twist.
+with $K$ the invertibles inducing the grade involution, when the parametrisation is injective; in particular the graded adjoint action is self-adjoint exactly on the parameters fixed by the twist.
 
 **Proof.** The parametrisation is injective when $\pi$ is onto, and the computations are those of *The Signed Adjoint of the Left Multiplication on a Topological Ring* read on the module; the unitarity and involutivity conditions are the module-level composites $\ell_{\delta(r)}^\pi\ell_r^\pi = \ell_{\delta(r)\alpha(r)}^\pi$ and $(\ell_r^\pi)^2 = \ell_{r\alpha(r)}^\pi$.
 

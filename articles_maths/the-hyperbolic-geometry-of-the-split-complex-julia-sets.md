@@ -28,7 +28,7 @@ with identity component $SO^+(1,1) = \{z \mapsto \exp(js)z : s \in \mathbb{R}\}$
 
 ### The Orbits, the Unit Hyperbola and the Null Quadric
 
-**Theorem.** The orbits of the identity component $SO^+(1,1)$ on the units are the branches of the **hyperbolas** $\langle z\rangle_{*} = t$: for $t > 0$ the two branches meeting the real axis at $\pm\sqrt t$ and asymptotic to the null lines, and for $t < 0$ the two branches meeting the imaginary axis at $\pm\sqrt{|t|}j$. The **unit hyperbola** $\mathcal{H} = \{N = 1\}$ has the two branches $\mathcal{H}^\pm$, and on each branch the rapidity $s$ with $z = \pm \exp(js)$ is an additive parametrisation.
+**Theorem.** The orbits of the identity component $SO^+(1,1)$ on the invertibles are the branches of the **hyperbolas** $\langle z\rangle_{*} = t$: for $t > 0$ the two branches meeting the real axis at $\pm\sqrt t$ and asymptotic to the null lines, and for $t < 0$ the two branches meeting the imaginary axis at $\pm\sqrt{|t|}j$. The **unit hyperbola** $\mathcal{H} = \{N = 1\}$ has the two branches $\mathcal{H}^\pm$, and on each branch the rapidity $s$ with $z = \pm \exp(js)$ is an additive parametrisation.
 
 **Proof.** Multiplication by $\exp(js)$ preserves $\langle\cdot\rangle_{*}$ and moves along the level set; conversely on $\langle z\rangle_{*} = 1$ with $z$ on the right branch one has $z = \exp(js)$ for the unique $s$ with $\cosh s = a$, $\sinh s = a'$, and $s$ is additive because $\exp(js)\exp(jt) = \exp(j(s+t))$. The parametrisation of the other branches is the same up to scale.
 
@@ -50,9 +50,9 @@ fixing each of the two points at infinity, and the **hyperbolic distance** betwe
 $$
 \alpha = \alpha^2, \qquad 2\alpha\beta = 0 .
 $$
-The solutions of $\alpha^2 = \alpha$ in $\mathbb{C}_{\mathrm{spl}}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is a unit; a bijection requires $\alpha$ to be a unit, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{C}_{\mathrm{spl}}$ has no nonzero element of additive order two. Hence $h$ is the identity.
+The solutions of $\alpha^2 = \alpha$ in $\mathbb{C}_{\mathrm{spl}}$ are $0$, $1$ and the two idempotents $\Pi_\pm$, and only $\alpha = 1$ is invertible; a bijection requires $\alpha$ to be an invertible element, so $\alpha = 1$, and then $2\beta = 0$ forces $\beta = 0$, because $\mathbb{C}_{\mathrm{spl}}$ has no nonzero element of additive order two. Hence $h$ is the identity.
 
-**Theorem (the even symmetries).** The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every unit with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
+**Theorem (the even symmetries).** The map $f_c$ is even in the strong sense that $f_c(uz) = f_c(z)$ for every invertible element with $u^2 = 1$, that is for $u \in \{\pm1,\pm j\}$; hence the Fatou and the Julia sets are invariant under each of the four maps $z \mapsto uz$,
 $$
 \boxed{\; J_c = uJ_c \qquad (u^2 = 1) \;},
 $$
@@ -60,7 +60,7 @@ although none of the three nontrivial ones commutes with $f_c$. Among the hyperb
 
 **Proof.** $f_c(uz) = u^2z^2+c = z^2+c = f_c(z)$ when $u^2 = 1$, and then $f_c^n(uz) = f_c^n(z)$ for every $n$ by induction. Since $z \mapsto uz$ is a bi-Lipschitz bijection of the plane, the family $\{f_c^n\}$ is equicontinuous at $z$ if and only if it is at $uz$, so both sets are invariant. For a hyperbolic rotation $u = \exp(js)$ one has $u^2 = \exp(2js)$, which is $1$ only for $s = 0$.
 
-**Theorem (the scaling action).** Let $u \in \mathbb{C}_{\mathrm{spl}}$ be a unit and let $h(z) = uz$. Then
+**Theorem (the scaling action).** Let $u \in \mathbb{C}_{\mathrm{spl}}$ be an invertible element and let $h(z) = uz$. Then
 
 $$
 h^{-1}\circ f_c\circ h\,(z) = u z^2 + \frac{c}{u} ,

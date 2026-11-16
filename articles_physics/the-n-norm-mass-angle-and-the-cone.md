@@ -20,9 +20,9 @@ $$
 \lvert\varkappa\rvert=1\;}
 $$
 
-**The condition is $\Rho\neq0$.** The word divides by the modulus, and the modulus vanishes exactly on the null cone. Off the cone the element is a unit, the four factors exist, and the decomposition is a coordinate system on the group of units. On the cone the modulus is zero, the word does not exist, and what survives is the two-factor pair of the previous entry. The line between the two is the zero set of one complex number.
+**The condition is $\Rho\neq0$.** The word divides by the modulus, and the modulus vanishes exactly on the null cone. Off the cone the element is invertible, the four factors exist, and the decomposition is a coordinate system on the group of invertibles. On the cone the modulus is zero, the word does not exist, and what survives is the two-factor pair of the previous entry. The line between the two is the zero set of one complex number.
 
-**The single idea is that the norm decides invertibility, and invertibility is the only sharp division the algebra has.** Every other partition of the corpus is finer and sits inside one of these two cases. The regular case is the unit group: open, dense, connected. The degenerate case is the null cone: closed, of real codimension two, the wall of the group. Mass, the massless boundary, the reversible process and the zero divisor are four readings of this one cut.
+**The single idea is that the norm decides invertibility, and invertibility is the only sharp division the algebra has.** Every other partition of the corpus is finer and sits inside one of these two cases. The regular case is the group of invertibles: open, dense, connected. The degenerate case is the null cone: closed, of real codimension two, the wall of the group. Mass, the massless boundary, the reversible process and the zero divisor are four readings of this one cut.
 
 **The second idea is that the norm is complex, so the modulus is a branch, and the branch is the only convention in the decomposition.** A complex number has two square roots. One of them is chosen by a rule fixed once and for all, and with the rule fixed, all four factors are functions of the element. On the material sector the choice is not free, because there the norm is real: the modulus is either real or purely imaginary, and which one it is is exactly the timelike–spacelike distinction. The convention that looks arbitrary on the algebra is a signature on the sector.
 
@@ -40,8 +40,8 @@ $$
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| the norm, its identity, its multiplicativity, the criterion of invertibility in five equivalent forms, the group of units, the two strata of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| the four-factor word on the units, the modulus and its branch, the closed forms, the three pairings, the characterisation of the maximal compact subgroup | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the norm, its identity, its multiplicativity, the criterion of invertibility in five equivalent forms, the group of invertibles, the two strata of the cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the four-factor word on the invertibles, the modulus and its branch, the closed forms, the three pairings, the characterisation of the maximal compact subgroup | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the two-factor pair on the cone, the rank-one amplitude, the partial isometry, the two sectors of degeneracy | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 | the exponential writing of the word, the ranges of the three angles, the component form and the parameter count | [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html) |
 | the word on the spectrally degenerate sector, the unipotent unit factor, the two strata, the boundary | [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html) |
@@ -49,13 +49,13 @@ $$
 | the four forms and the four algebraic norms, the Gram matrices, and the multiplicativity of the quaternionic form alone | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the isomorphism onto the complex matrices, the determinant as the norm and the adjugate as the conjugate | [$M_2(\mathbb{C})$ Pauli Representation](../articles_maths/m2c-pauli-representation.html) |
 | the cone as a topological object, its apex, its link, its real dimension and its contractibility | [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html) |
-| the unit group as a topological group, its retraction onto the compact part and its fundamental group | [The Biquaternion Unit Group as a Topological Group](../articles_maths/the-biquaternion-unit-group-as-a-topological-group.html) |
+| the group of invertibles as a topological group, its retraction onto the compact part and its fundamental group | [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html) |
 
 ## The Results in Brief
 
 - The quaternionic norm is $N(\tilde Q)=Q_t^{2}+B^{2}=\sum_\mu Q_\mu^{2}$, with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$; it is the only one of the four algebraic norms that is multiplicative.
-- $N(\tilde Q_2\tilde Q_1)=N(\tilde Q_2)N(\tilde Q_1)$, and the inverse of a unit is $\tilde Q^{\natural}/N$; the norm is the determinant in the matrix model.
-- The algebra is the disjoint union of the unit group $\mathbb B^{\times}=\{N\neq0\}$ and the null cone $\mathcal N=\{N=0\}$; the group is open and dense, the cone is closed of real codimension two and is its boundary.
+- $N(\tilde Q_2\tilde Q_1)=N(\tilde Q_2)N(\tilde Q_1)$, and the inverse of an invertible element is $\tilde Q^{\natural}/N$; the norm is the determinant in the matrix model.
+- The algebra is the disjoint union of the group of invertibles $\mathbb B^{\times}=\{N\neq0\}$ and the null cone $\mathcal N=\{N=0\}$; the group is open and dense, the cone is closed of real codimension two and is its boundary.
 - The cone is the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of idempotents; the split is by the scalar part.
 - Off the cone the element has the word $\tilde Q=r\varkappa\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $r=\lvert N\rvert^{1/2}>0$, $\lvert\varkappa\rvert=1$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one and $\tilde u_{\mathrm r}$ a unit real quaternion.
 - The four factors are the scale, the central phase, the boost and the rotor, of real dimensions $1,1,3,3$, summing to eight.
@@ -111,12 +111,12 @@ $$
 **The criterion of invertibility has five equivalent forms, and the equivalence is the content of the first case.** For $\tilde Q\neq0$:
 
 1. $N(\tilde Q)\neq0$;
-2. $\tilde Q$ is a unit of the plain product;
+2. $\tilde Q$ is invertible in the plain product;
 3. $\tilde Q$ is not a zero divisor;
 4. left multiplication by $\tilde Q$ is injective;
 5. right multiplication by $\tilde Q$ is injective.
 
-**The five are one condition because the two-sided inverse is available.** The implication from the norm to the unit is the formula for the inverse. The implication from the unit to the absence of a zero divisor is that a unit cannot annihilate. The implications to injectivity are the definitions read one-sidedly. And the return from injectivity uses the identity: if $N(\tilde Q)=0$ with $\tilde Q\neq0$ then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so the left translation kills a nonzero element. The only point where the chain needs care is the origin, which satisfies the norm condition and is neither a zero divisor nor a unit; the criterion is stated for $\tilde Q\neq0$ for that reason.
+**The five are one condition because the two-sided inverse is available.** The implication from the norm to the unit is the formula for the inverse. The implication from the unit to the absence of a zero divisor is that an invertible element cannot annihilate. The implications to injectivity are the definitions read one-sidedly. And the return from injectivity uses the identity: if $N(\tilde Q)=0$ with $\tilde Q\neq0$ then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so the left translation kills a nonzero element. The only point where the chain needs care is the origin, which satisfies the norm condition and is neither a zero divisor nor an invertible element; the criterion is stated for $\tilde Q\neq0$ for that reason.
 
 **In the matrix model the same five forms are the invertibility of a two-by-two matrix.** A biquaternion is invertible exactly when its matrix is, the determinant is the norm, and the zero divisors are the singular matrices. The whole of this entry's algebra is therefore the algebra of $2\times2$ complex matrices read in one basis, and the physics is what the basis makes visible.
 
@@ -171,7 +171,7 @@ $$
 
 **The consequence is that matter sits at the endpoint of the phase interval.** The phase of a timelike four-vector is exactly $i$, which is the boundary value $\psi/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
 
-**The angle is therefore a signature label on the sector and a free parameter off it.** This is the sharpest difference between the two readings of one complex number. On the algebra the phase is one continuous parameter of the unit group. On the material sector it takes two values, and the two values are the two halves of the light cone, and the third case is the cone itself.
+**The angle is therefore a signature label on the sector and a free parameter off it.** This is the sharpest difference between the two readings of one complex number. On the algebra the phase is one continuous parameter of the group of invertibles. On the material sector it takes two values, and the two values are the two halves of the light cone, and the third case is the cone itself.
 
 ## The Two Cases
 
@@ -179,10 +179,10 @@ $$
 
 | condition on $N$ | set | name |
 | --- | --- | --- |
-| $N\neq0$ | $\mathbb B^{\times}=\{N\neq0\}$ | the regular case: the group of units |
+| $N\neq0$ | $\mathbb B^{\times}=\{N\neq0\}$ | the regular case: the group of invertibles |
 | $N=0$ | $\mathcal N=\{N=0\}$ | the degenerate case: the null cone |
 
-**The two sets have opposite topology and that is the point.** The unit group is open and dense. The cone is closed, of real codimension two, and it is the boundary of the group. An element is either invertible or it is not, and there is no third state: the algebra is the disjoint union of the two.
+**The two sets have opposite topology and that is the point.** The group of invertibles is open and dense. The cone is closed, of real codimension two, and it is the boundary of the group. An element is either invertible or it is not, and there is no third state: the algebra is the disjoint union of the two.
 
 **The cone has an apex and two strata, and the split is by the scalar part.**
 
@@ -214,7 +214,7 @@ so the two strata are also the two values of the second invariant on the cone.
 
 ## The Word
 
-**On the units the two-factor pair refines into four factors, and the refinement is the content of the regular case.**
+**On the invertibles the two-factor pair refines into four factors, and the refinement is the content of the regular case.**
 
 $$
 \boxed{\;\tilde Q=r\,\varkappa\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -243,7 +243,7 @@ and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit three-vectors, the **boost
 
 **The four dimensions add to eight, and the addition is a theorem.** $1+1+3+3=8$, the real dimension of the algebra. The scale and the phase are central and commute with everything. The boost and the rotor do not commute, and the order of the word is part of the definition: the boost stands on the left.
 
-**The word is a coordinate system on the group of units, and the two axes are points of the sphere.** The parameter count is the dimension of $\mathbb B^{\times}$, and the ranges of the angles cut the chart. The chart is not global in the angle of the phase, because the branch cuts the circle; it is global in everything else.
+**The word is a coordinate system on the group of invertibles, and the two axes are points of the sphere.** The parameter count is the dimension of $\mathbb B^{\times}$, and the ranges of the angles cut the chart. The chart is not global in the angle of the phase, because the branch cuts the circle; it is global in everything else.
 
 **The four factors group into the two factors of the previous entry in one way, and into a second pair in another.**
 
@@ -271,7 +271,7 @@ $$
 
 **The first line is a pure rotor.** The norm is real and positive, the phase is one, the rapidity is zero, and the whole of the element is a scale and a rotation by $\pi/2$ about $\vec e_x$. It is the case in which the word is the quaternion word.
 
-**The second line is the case the eigenbasis cannot see.** The norm is one, so the element is a unit and the word exists; but $B^{2}=0$, so the two eigenvalues coincide and the element is defective. The rapidity is $\operatorname{arccosh}3$, finite and positive: the boost is real and the word is perfectly well defined, while the spectral decomposition of the same element has collapsed. This is the sharpest single illustration in the entry of the difference between the two decompositions, and it is the subject of the next entry but two.
+**The second line is the case the eigenbasis cannot see.** The norm is one, so the element is invertible and the word exists; but $B^{2}=0$, so the two eigenvalues coincide and the element is defective. The rapidity is $\operatorname{arccosh}3$, finite and positive: the boost is real and the word is perfectly well defined, while the spectral decomposition of the same element has collapsed. This is the sharpest single illustration in the entry of the difference between the two decompositions, and it is the subject of the next entry but two.
 
 **The third line is matter at rest in a boosted frame.** The norm is real and negative, the phase is $i$, and the scale is the mass: $r=\sqrt3$ with $N=-3$, so $m=\sqrt3$. The rapidity is $\operatorname{arccosh}(5/3)$, which is not zero, so the mass is not at rest in this frame. The scale is the mass no matter what the boost does, and that is the content of the next section.
 
@@ -296,7 +296,7 @@ $$
 \qquad\theta\to\infty,
 $$
 
-**with $K>0$ a constant and $\lvert\omega\rvert=1$.** Every member of the family is a unit with scale $Ke^{-\theta/2}$ and rapidity $\theta$. The limit is a nonzero null element of rank one. The scale vanishes as $e^{-\theta/2}$ and the boost diverges as $e^{\theta/2}$, so the element converges while both of its factors diverge in opposite directions.
+**with $K>0$ a constant and $\lvert\omega\rvert=1$.** Every member of the family is invertible with scale $Ke^{-\theta/2}$ and rapidity $\theta$. The limit is a nonzero null element of rank one. The scale vanishes as $e^{-\theta/2}$ and the boost diverges as $e^{\theta/2}$, so the element converges while both of its factors diverge in opposite directions.
 
 **The Hermitian norm does not diverge and does not vanish.** Along the same family, in the notation of the previous entry,
 
@@ -378,7 +378,7 @@ $$
 | Hamilton root | $\Rho$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta$ | $N\neq0$ and $B^{2}\neq0$ |
 | Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $\varkappa\tilde u_{\mathrm r}$ | $N\neq0$ |
 
-**The Cartan pairing is the only one defined on the whole group of units, and the reason is that it divides by nothing.** It takes the Hermitian square $\tilde Q\tilde Q^{*}$, takes the positive square root in the cone, and divides by that root. All three steps exist for every invertible element. The other two pairings divide: the quaternion pairing by the real-coefficient part, the Hamilton pairing by $B$.
+**The Cartan pairing is the only one defined on the whole group of invertibles, and the reason is that it divides by nothing.** It takes the Hermitian square $\tilde Q\tilde Q^{*}$, takes the positive square root in the cone, and divides by that root. All three steps exist for every invertible element. The other two pairings divide: the quaternion pairing by the real-coefficient part, the Hamilton pairing by $B$.
 
 **The Hamilton pairing is the polar form of a complex number, written for a biquaternion.**
 
@@ -400,11 +400,11 @@ $$
 N=-c^{2}\neq0,\qquad Q_t=ic,\qquad B^{2}=0,
 $$
 
-**which are units with no real part and no spectral direction.** They are the exception that a reader who assumes one pairing is general will miss, and the Cartan pairing covers them.
+**which are invertible with no real part and no spectral direction.** They are the exception that a reader who assumes one pairing is general will miss, and the Cartan pairing covers them.
 
 **The three pairings are three notions of magnitude and they are not interchangeable.** The modulus $\Rho$ is a square root of the product of the two eigenvalues. The norm $N$ is that product without the root. The Hermitian factor $r\tilde U_{\mathrm b}$ is the amplitude of the previous entry. A text that says *the magnitude of the biquaternion* without saying which pairing is in use says nothing, and this is the reason the corpus writes the letter: $N$ for the norm, $H$ for the weight, $\Rho$ for the modulus.
 
-## The Group of Units
+## The Group of Invertibles
 
 **The regular case is a group and the decomposition is a coordinate on it.**
 
@@ -440,7 +440,7 @@ $$
 
 **The generator of $\pi_1$ is the loop of the phase around the cone, and the sphere of the rotor is simply connected.** The boost adds no loops, because hyperbolic space is contractible. So the winding is carried by the one compact central direction, and not by the spin.
 
-**Nothing in this section is dynamics.** The group of units is the set of elements that have an inverse, the retraction is a homotopy, and the winding number is a class of loops. The physical readings are in the interpretations, and each carries its boundary with it.
+**Nothing in this section is dynamics.** The group of invertibles is the set of elements that have an inverse, the retraction is a homotopy, and the winding number is a class of loops. The physical readings are in the interpretations, and each carries its boundary with it.
 
 ## The Interpretations
 
@@ -466,7 +466,7 @@ $$
 
 **A property decided by one number is a property that cannot be graded.** Invertibility is not a matter of degree: the determinant is either zero or it is not, and the set where it is zero has measure zero. There is no element that is nearly invertible in the algebraic sense, and no process that is nearly reversible.
 
-**The physical interpretation is that reversibility is a wall and not a slope.** A process is a unit of the algebra or it is a zero divisor, and an irreversible one is one that annihilates something. An irreversible process has a kernel, and a kernel in this algebra is at least a complex line.
+**The physical interpretation is that reversibility is a wall and not a slope.** A process is invertible in the algebra or it is a zero divisor, and an irreversible one is one that annihilates something. An irreversible process has a kernel, and a kernel in this algebra is at least a complex line.
 
 **The boundary.** This is a statement about elements and their products, not about time. Nothing in the algebra says that a physical process is described by an element, and nothing forbids an element from being both invertible and thermodynamically irreversible. The reading is structural.
 
@@ -500,7 +500,7 @@ $$
 
 **Read:** on the material sector $N\in\mathbb R$, so $\varkappa=1$ for $N>0$, $\varkappa=i$ for $N<0$, and there is no phase for $N=0$.
 
-**A free parameter of the algebra becomes a label on the sector.** The phase of a biquaternion is one continuous parameter of the group of units. On the material sector it takes exactly two values, and the two values are the two halves of the light cone. The complex structure of the algebra is, on that sector, the choice between a length and a mass.
+**A free parameter of the algebra becomes a label on the sector.** The phase of a biquaternion is one continuous parameter of the group of invertibles. On the material sector it takes exactly two values, and the two values are the two halves of the light cone. The complex structure of the algebra is, on that sector, the choice between a length and a mass.
 
 **The physical interpretation is that the difference between a displacement and a four-momentum is a phase of $i$.** The same quadratic form reads as a proper length on a spacelike vector and as minus a mass squared on a timelike one, and the object that changes between the two readings is the phase of the modulus. This is the precise sense in which the mass is imaginary in a metric of signature $(3,1)$: the modulus of the interval is $im$ and not $m$.
 
@@ -548,7 +548,7 @@ $$
 
 ### I.9.j — Three Pairings Are Three Notions of Magnitude, and Two Have Holes
 
-**Read:** the Cartan pairing is total on the units; the quaternion pairing needs a nonzero real part; the Hamilton pairing needs $B^{2}\neq0$.
+**Read:** the Cartan pairing is total on the invertibles; the quaternion pairing needs a nonzero real part; the Hamilton pairing needs $B^{2}\neq0$.
 
 **The pairing defined everywhere is the one that divides by nothing.** The other two are partial and their domains are different. The Hamilton pairing fails exactly at the spectral cone, which is where the two eigenvalues coalesce; there is no direction $\vec U$ and no angle $\Theta$ when the spectrum is degenerate.
 
@@ -590,15 +590,15 @@ $$
 
 **The rank is not a state count.** Rank two, one and zero are ranks of the amplitude of one element. They do not count excitations and they do not count the degrees of freedom of a field.
 
-**The group of units has a topology and the topology has no coupling.** That $\pi_1$ is the integers is a fact of the group. It is not a charge, because a charge requires a field to couple to and the algebra contains no field.
+**The group of invertibles has a topology and the topology has no coupling.** That $\pi_1$ is the integers is a fact of the group. It is not a charge, because a charge requires a field to couple to and the algebra contains no field.
 
-**The word is defined on the units and its continuity stops at the wall.** The factors diverge in opposite directions along the family that reaches the cone, and the element does not. No claim in this entry extends a four-factor formula to the cone by continuity, because at the cone the formula has no value.
+**The word is defined on the invertibles and its continuity stops at the wall.** The factors diverge in opposite directions along the family that reaches the cone, and the element does not. No claim in this entry extends a four-factor formula to the cone by continuity, because at the cone the formula has no value.
 
 **The four factors are not four observables.** They are four coordinates of one element. A choice of coordinates is not a measurement, and the scalar nature of the algebra forbids the identification of a coordinate with a number read off a device.
 
 ## Summary
 
-The quaternionic norm is the multiplicative measure of the algebra; its vanishing is the wall between the group of units and the null cone, and its modulus carries the mass and the angle.
+The quaternionic norm is the multiplicative measure of the algebra; its vanishing is the wall between the group of invertibles and the null cone, and its modulus carries the mass and the angle.
 
 | item | result |
 | --- | --- |
@@ -619,7 +619,7 @@ The quaternionic norm is the multiplicative measure of the algebra; its vanishin
 | the pairings | Cartan total on the units, quaternion needs a real part, Hamilton needs $B^{2}\neq0$ |
 | the group | $\mathbb B^{\times}\cong\mathcal H\times SL_2(\mathbb C)$, retracting onto $U(2)$ |
 
-The value of the norm decides everything downstream. It is zero or it is not; if it is not, the element is a unit and the four factors are coordinates on the group; if it is, the element is null and the two-factor pair is the description, with an amplitude of rank one and a scale equal to the square root of half the weight.
+The value of the norm decides everything downstream. It is zero or it is not; if it is not, the element is invertible and the four factors are coordinates on the group; if it is, the element is null and the two-factor pair is the description, with an amplitude of rank one and a scale equal to the square root of half the weight.
 
 ### What the Reader Should Retain
 
@@ -637,7 +637,7 @@ The three statements to carry away are these. The quaternionic norm is the only 
 | $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | the weight of the previous entry, the additive measure |
 | $\mathcal N=\{N=0\}$ | the null cone, the zero-divisor cone, the wall |
 | $\mathcal N_{\mathrm p}$, $\mathcal N_{\mathrm{np}}$ | its pure stratum of nilpotents and its non-pure stratum |
-| $\mathbb B^{\times}=\{N\neq0\}$ | the group of units, the regular case |
+| $\mathbb B^{\times}=\{N\neq0\}$ | the group of invertibles, the regular case |
 | $\mathbb B^{\times}_{1}=\{N=1\}$ | the norm-one group, isomorphic to $SL_2(\mathbb C)$ |
 | $\Rho$ | the modulus, the principal square root of $N$ in $\mathcal H$ |
 | $r,\ \varkappa$ | the scale $r=\lvert\Rho\rvert$ and the phase $\varkappa=\Rho/r$ |
@@ -652,8 +652,8 @@ The three statements to carry away are these. The quaternionic norm is the only 
 
 ## Further Reading
 
-**In the mathematics corpus.** The ten articles of the source table, and inside the first of them the sections *The Quaternionic Norm*, which owns the identity and the five equivalent criteria; *The $\natural$-regular case: The Group of Units*, which owns the connectedness and the homotopy; and *The $\natural$-degenerate case: the origin together with the zero divisors*, which owns the two strata and the law $\tilde Q^{2}=2Q_t\tilde Q$. The four-factor word, its modulus, its branch and its three pairings are in *The Polar Decomposition of an N-Regular Biquaternion*, in the sections *The Four Factors*, *The split of the modulus*, *The Group of Units* and *The Three Pairings*. The word in the logarithmic variable, with the ranges of the three angles, is *Exponential Polar Decomposition on the N-Regular Sector*. The rank-one amplitude is in *The Polar Decomposition of an N-Degenerate Biquaternion*. The independence of the two invariants and the four sectors are in *Relations between the N Norm and Spectral Regularity and Degeneracy*, and the topology of the cone is in *The Topology of the Zero-Divisor Cone*.
+**In the mathematics corpus.** The ten articles of the source table, and inside the first of them the sections *The Quaternionic Norm*, which owns the identity and the five equivalent criteria; *The $\natural$-regular case: The Group of Invertibles*, which owns the connectedness and the homotopy; and *The $\natural$-degenerate case: the origin together with the zero divisors*, which owns the two strata and the law $\tilde Q^{2}=2Q_t\tilde Q$. The four-factor word, its modulus, its branch and its three pairings are in *The Polar Decomposition of an N-Regular Biquaternion*, in the sections *The Four Factors*, *The split of the modulus*, *The Group of Invertibles* and *The Three Pairings*. The word in the logarithmic variable, with the ranges of the three angles, is *Exponential Polar Decomposition on the N-Regular Sector*. The rank-one amplitude is in *The Polar Decomposition of an N-Degenerate Biquaternion*. The independence of the two invariants and the four sectors are in *Relations between the N Norm and Spectral Regularity and Degeneracy*, and the topology of the cone is in *The Topology of the Zero-Divisor Cone*.
 
 **In this category.** *The Four Forms and the Four Norms* supplies the four measures, their Gram matrices and the proof that only the quaternionic one is multiplicative. *The Four Products: Composition, Probability, Causality and Gauge* supplies the products whose scalar parts the measures are. *The Spectrum and the Two Modes* supplies the two eigenvalues, the characteristic polynomial and the identity $N=\lambda_+\lambda_-$. *The Two Sectors: Split and the Four Bridges* supplies the coordinate split on which the material sector and the sign of the norm depend. *The Element: the Six Subspaces and the Two Ledgers* supplies the six subspaces and the two ledgers. *The H Norm: Amplitude and Frame* is the previous entry and supplies the Cartan pair that this entry brackets the other way. The next entries are *The Partition: Two Invariants and Four Regimes*, which reads the four sectors as a partition, and *Mass in Motion: The Region of Both Invariants*, which reads the boost on the sector where both invariants are nonzero.
 
-**The sources of this entry.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) states the two cases as the reversible and the irreversible. [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) places the massless content on the cone. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) compares the three bracketings and their domains. [The Massless Regime](the-massless-regime.html) is the family of §*The Two Walls*, read as a limit of the polar data. [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) identifies the two cones. [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html) is the earlier reading of the same wall. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) states the two cases as the reversible and the irreversible. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) places the massless content on the cone. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) compares the three bracketings and their domains. [The Massless Regime](the-massless-regime.html) is the family of §*The Two Walls*, read as a limit of the polar data. [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) identifies the two cones. [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html) is the earlier reading of the same wall. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.

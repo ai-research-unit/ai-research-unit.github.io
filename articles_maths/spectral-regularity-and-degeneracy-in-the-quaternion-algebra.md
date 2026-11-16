@@ -63,19 +63,19 @@ If $\vec q\ne0$ the two eigenvalues are distinct, each of algebraic multiplicity
 
 *Proof.* The equivalence of (2), (3) and (5) is positive definiteness: $|\vec q|^2=q_x^2+q_y^2+q_z^2$ vanishes only at $\vec q=0$, which is the condition $\tilde q=q_t\in\mathbb R$. The eigenvalues coincide exactly when $|\vec q|=0$, which is (4); the equivalence of (4) with (1) is the definition.
 
-**Remark (no real eigenvector off the axis).** If $\vec q\ne0$ and $\lambda\in\mathbb R$, then $\tilde q-\lambda$ is a unit, so $(\tilde q-\lambda)x=0$ gives $x=0$: a non-real quaternion has no real eigenvector. Its eigenvalues are complex conjugate and its eigenvectors lie in the complexification; on the axis the eigenspace is all of $\mathbb H_{\mathbb C}$.
+**Remark (no real eigenvector off the axis).** If $\vec q\ne0$ and $\lambda\in\mathbb R$, then $\tilde q-\lambda$ is invertible, so $(\tilde q-\lambda)x=0$ gives $x=0$: a non-real quaternion has no real eigenvector. Its eigenvalues are complex conjugate and its eigenvectors lie in the complexification; on the axis the eigenspace is all of $\mathbb H_{\mathbb C}$.
 
 ## The Degenerate Locus
 
 **Theorem.** The spectrally degenerate set is
 $$\mathcal S=\{\tilde q:\vec q=0\}=\mathbb R e_t,$$
-a real line through the origin, closed in $\mathbb H$, of dimension one and measure zero. Its complement $\mathbb H\setminus\mathbb R$ is open, dense and of dimension four. The origin is the only non-unit in $\mathcal S$.
+a real line through the origin, closed in $\mathbb H$, of dimension one and measure zero. Its complement $\mathbb H\setminus\mathbb R$ is open, dense and of dimension four. The origin is the only non-invertible in $\mathcal S$.
 
 *Proof.* The line is the common zero set of the continuous functions $q_x,q_y,q_z$, hence closed; a line in $\mathbb R^4$ has measure zero, and its complement is open and dense. A nonzero real quaternion has the inverse $q_t^{-1}e_t$; the origin has none.
 
 **Proposition.** For $\tilde q=q_t\in\mathbb R$, $L_{\tilde q}=q_t\,\mathrm{id}$, the spectrum is $\{q_t\}$, the eigenspace is all of $\mathbb H_{\mathbb C}$, and the minimal polynomial is $\lambda-q_t$; the element is semisimple.
 
-**Remark (degeneracy is not invertibility).** The degenerate set contains every nonzero real quaternion, and every nonzero quaternion is a unit. Spectral degeneracy therefore does not imply non-invertibility; the comparison is in [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html).
+**Remark (degeneracy is not invertibility).** The degenerate set contains every nonzero real quaternion, and every nonzero quaternion is invertible. Spectral degeneracy therefore does not imply non-invertibility; the comparison is in [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html).
 
 ## Semisimplicity and the Absence of Defect
 
@@ -105,7 +105,7 @@ a real line through the origin, closed in $\mathbb H$, of dimension one and meas
 
 *Proof.* In each case $(\tilde q-q_t)^2=\vec q^2$. If $\vec q^2=0$ and $\vec q\ne0$, the minimal polynomial is $(\lambda-q_t)^2$, with a repeated root; if the form is definite, $\vec q^2=0$ forces $\vec q=0$ and the minimal polynomial is $\lambda-q_t$.
 
-**Examples (units that are defective).** In $\mathbb{H}_{\mathrm{spl}}$ the element $1+\vec e_x+\vec e_y$ has $\vec q^2=0$, norm $1+1-1=1$, and $(\tilde q-1)^2=0$. In $\mathbb B$ the element $e_t+\vec e_x+i\vec e_y$ has $B^2=1+i^2=0$, norm $1+0=1$, and $(\tilde Q-e_t)^2=0$. Both are units, spectrally degenerate and defective; in $\mathbb H$ no such example exists.
+**Examples (units that are defective).** In $\mathbb{H}_{\mathrm{spl}}$ the element $1+\vec e_x+\vec e_y$ has $\vec q^2=0$, norm $1+1-1=1$, and $(\tilde q-1)^2=0$. In $\mathbb B$ the element $e_t+\vec e_x+i\vec e_y$ has $B^2=1+i^2=0$, norm $1+0=1$, and $(\tilde Q-e_t)^2=0$. Both are invertible, spectrally degenerate and defective; in $\mathbb H$ no such example exists.
 
 **Corollary.** Among the three, $\mathbb H$ is the only division algebra, the only one with a definite vector form, and the only one with no defective element; its degenerate locus is the smallest possible nonempty one, a line.
 

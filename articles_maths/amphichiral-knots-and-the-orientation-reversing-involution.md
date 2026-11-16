@@ -25,7 +25,7 @@ The class of amphichiral knots is small and its members have rigid invariants: t
 $$
 \boxed{\;\sigma(K^{*}) = -\sigma(K), \qquad \text{whence} \qquad \sigma(K) = 0 \ \text{for an amphichiral } K\;} .
 $$
-More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristram–Levine signatures at a unit $\omega$.
+More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristram–Levine signatures at an invertible element $\omega$.
 
 **Proof.** The signature is the signature of the Seifert form $V + V^{t}$; the mirroring changes the sign of the linking form on a Seifert surface, hence negates the Seifert form and its symmetrisation, and the signature changes sign with it. The amphichiral case is immediate.
 
@@ -33,7 +33,7 @@ More generally $\sigma_{\omega}(K^{*}) = -\sigma_{\omega}(K)$ for the Tristram�
 $$
 \boxed{\;\Delta_{K^{*}}(t) \doteq \Delta_K(t^{-1}), \qquad \nabla_{K^{*}}(z) = \nabla_K(-z), \qquad V_{K^{*}}(t) = V_K(t^{-1}), \qquad P_{K^{*}}(a,z) = P_K(a^{-1},z)\;},
 $$
-where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ the Jones polynomial and $P$ the HOMFLY polynomial, and $\doteq$ denotes equality up to units. Hence an amphichiral knot satisfies $V_K(t) = V_K(t^{-1})$, $P_K(a,z) = P_K(a^{-1},z)$ and $\nabla_K(z) = \nabla_K(-z)$: the Conway polynomial is even and the Jones and HOMFLY polynomials are symmetric in their variable.
+where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ the Jones polynomial and $P$ the HOMFLY polynomial, and $\doteq$ denotes equality up to invertibles. Hence an amphichiral knot satisfies $V_K(t) = V_K(t^{-1})$, $P_K(a,z) = P_K(a^{-1},z)$ and $\nabla_K(z) = \nabla_K(-z)$: the Conway polynomial is even and the Jones and HOMFLY polynomials are symmetric in their variable.
 
 **Proof.** Each polynomial is computed from a diagram; a reflection of the diagram replaces every crossing by its mirror and every skein relation by its mirror, which is the substitution $t\mapsto t^{-1}$ (respectively $z\mapsto-z$, $a\mapsto a^{-1}$). The Alexander polynomial is symmetric for every knot by its definition, so the substitution is invisible on it and it gives no obstruction.
 
@@ -71,7 +71,7 @@ where $\Delta$ is the Alexander polynomial, $\nabla$ the Conway polynomial, $V$ 
 
 **Proof.** The signature is the signature of the Goeritz matrix or, equivalently, of the Seifert form symmetrised; the mirror reverses the orientation of the ambient space, and the intersection form of a closed oriented $4$-manifold changes sign under an orientation reversal, so the signature changes sign. For an amphichiral knot the knot and its mirror have the same signature and the two values are opposite, so both vanish.
 
-**Proposition (the Alexander polynomial does not obstruct).** The Alexander polynomial of the mirror is $\Delta_{K^{*}}(t) = \Delta_{K}(t^{-1})$, and every Alexander polynomial is symmetric, $\Delta(t) = t^{-m}\Delta(t^{-1})$ up to units, so the condition $\Delta_{K} = \Delta_{K^{*}}$ is automatic and the Alexander polynomial cannot certify chirality; the same holds for the determinant and the Reidemeister torsion, which are symmetric under the mirror. The examples are the knots whose Alexander polynomials are all the symmetric ones but which are chiral, such as the trefoil and its mirror.
+**Proposition (the Alexander polynomial does not obstruct).** The Alexander polynomial of the mirror is $\Delta_{K^{*}}(t) = \Delta_{K}(t^{-1})$, and every Alexander polynomial is symmetric, $\Delta(t) = t^{-m}\Delta(t^{-1})$ up to invertibles, so the condition $\Delta_{K} = \Delta_{K^{*}}$ is automatic and the Alexander polynomial cannot certify chirality; the same holds for the determinant and the Reidemeister torsion, which are symmetric under the mirror. The examples are the knots whose Alexander polynomials are all the symmetric ones but which are chiral, such as the trefoil and its mirror.
 
 **Proof.** The Alexander polynomial is computed from the Seifert matrix $V$ as $\Delta(t) = \det(V-tV^{\mathsf T})$ up to normalisation; the mirror replaces $V$ by $-V^{\mathsf T}$ or $V^{\mathsf T}$ according to the convention, which inverts $t$ in the determinant, giving the stated relation; the symmetry of the Alexander polynomial is the classical result that the polynomial is palindromic. The determinant $|\Delta(-1)|$ and the torsion are unchanged by $t\mapsto t^{-1}$.
 

@@ -205,7 +205,7 @@ The composition and the rank are fixed by the norm; the closed form, the spectru
 
 **(b)** $\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'}$;
 
-**(c)** $\mathrm{Sd}_{\tilde Q}$ is invertible exactly when $\tilde Q$ is a unit, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$;
+**(c)** $\mathrm{Sd}_{\tilde Q}$ is invertible exactly when $\tilde Q$ is invertible, with inverse $\mathrm{Sd}_{\tilde Q^{-1}}$;
 
 **(d)** $\mathrm{Sd}_{\tilde Q}$ preserves the real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$;
 
@@ -613,7 +613,7 @@ $$
 c\bar c,\quad c\cdot0,\quad 0\cdot\bar c,\quad 0\cdot0,
 $$
 
-that is, $\lvert c\rvert^{2},0,0,0$. The full rotor of the regular two-sided operator has no angle or rapidity here: the element is not a unit, and the two-sided operator is not a conformal Lorentz transformation. It is an oblique projection onto a null line.
+that is, $\lvert c\rvert^{2},0,0,0$. The full rotor of the regular two-sided operator has no angle or rapidity here: the element is not invertible, and the two-sided operator is not a conformal Lorentz transformation. It is an oblique projection onto a null line.
 
 For a non-Hermitian $\tilde\Pi$ the eigenbasis still exists, but the two-sided operator is not diagonal in it. The invariant statement is the spectrum: the four products are still $\lvert c\rvert^{2},0,0,0$, and the image is still the null line $\mathbb{C}P$, with $P=\tilde\Pi\tilde\Pi^{*}/\kappa\neq\tilde\Pi$.
 
@@ -678,7 +678,7 @@ $$
 
 for every complex $t$. The eigenvalues are $e^{t\lvert c\rvert^{2}}$ and $1$ (three times); the determinant is $e^{t\lvert c\rvert^{2}}$. The group is invertible for every $t$, although the generator $\mathrm{Sd}_{\tilde Q}$ is singular. It dilates the image line and fixes the kernel hyperplane.
 
-**The element flow.** The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$ is a unit for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its two-sided operator $\mathrm{Sd}_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\mathrm{Sd}_{\tilde Q}$:
+**The element flow.** The exponential $\exp(t\tilde Q)=e_t+(e^{tc}-1)\tilde\Pi$ is invertible for every $t$, and it lies in $\Sigma_{11}$ for generic $t\neq0$; at the exceptional values $e^{tc}=1$ it is $e_t$ on the wall $\Sigma_{10}$. Its two-sided operator $\mathrm{Sd}_{\exp(t\tilde Q)}$ is therefore a conformal Lorentz transformation, with the generator $\mathrm{Sd}_{\tilde Q}$:
 
 $$
 \mathrm{Sd}_{\exp(t\tilde Q)}
@@ -711,7 +711,7 @@ $$
 B^{2}\bigl(\exp(t\tilde\nu)\bigr)=t^{2}B^{2}(\tilde\nu)=0 .
 $$
 
-Hence the exponential is a unit with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$). The element flow moves one wall away: it removes the norm degeneration and preserves the spectral one. Its two-sided operator is
+Hence the exponential is invertible with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$). The element flow moves one wall away: it removes the norm degeneration and preserves the spectral one. Its two-sided operator is
 
 $$
 \mathrm{Sd}_{\exp(t\tilde\nu)}

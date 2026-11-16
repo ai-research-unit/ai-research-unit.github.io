@@ -10,7 +10,7 @@ The carrier is the smallest of the three and the one with no argument. The rotat
 
 **The answer in one line.** The real line $\mathbb{R}e_t$, and its closure $\mathbb{C}e_t$ of real dimension $2$.
 
-Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of units, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.
+Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of invertibles, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.
 
 ## The Subspace
 
@@ -66,7 +66,7 @@ The propositions above say that the centre is a fixed space. They do not yet say
 
 ## The Action and the Two Numbers
 
-**The action.** The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On this space the action is trivial: $\varrho_{\mathrm{ad}}(u)$ is the identity operator for every unit $u$.
+**The action.** The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On this space the action is trivial: $\varrho_{\mathrm{ad}}(u)$ is the identity operator for every invertible $u$.
 
 **The generator.** Write a rotor as $u=\exp\bigl(\theta_{\mathrm{axr}}A(\vec u_{\mathrm r})\bigr)$ with $A(\vec u_{\mathrm r})=\tfrac12\vec u_{\mathrm r}$. The derived operator is the commutator, and on a central element the commutator vanishes:
 

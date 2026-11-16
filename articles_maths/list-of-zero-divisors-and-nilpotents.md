@@ -80,7 +80,7 @@ The two eight-dimensional cases are the contrast the corpus records: $\mathbb{B}
 | Ring | Why it has no nonzero nilpotent | Introduced in |
 |---|---|---|
 | every domain, for instance $\mathbb{Z}$, $k[x]$, $\mathbb{Z}[i]$ | a nilpotent would be a zero divisor | *Integral Domains* |
-| every field | every nonzero element is a unit | *Fields* |
+| every field | every nonzero element is invertible | *Fields* |
 | $\mathbb{Z}/6\mathbb{Z}$ | the modulus is squarefree, so no nonzero element has a zero power | *Reduced Rings and the Nilradical* |
 | a product of reduced rings | the nilpotents of a product are the tuples of nilpotents | *Reduced Rings and the Nilradical* |
 | a Boolean ring | every element is idempotent, so $a^n = a \neq 0$ for $a \neq 0$ | *Von Neumann Regular Rings* |
@@ -95,7 +95,7 @@ A ring is reduced when it has no nonzero nilpotent, equivalently when its nilrad
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | integral domains and fields | *The Integers*, *Fields* |
 | $k[x]$, $\mathbb{Z}[x]$, $k[x_1, \dots, x_n]$ | polynomial rings over a domain | *Polynomial Rings and Rational Functions* |
 | $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{-5}]$ | quadratic integer rings, hence domains | *Examples of Rings and Fields* |
-| $\mathbb{H}$ | a division ring: every nonzero element is a unit | *Quaternion Algebra* |
+| $\mathbb{H}$ | a division ring: every nonzero element is invertible | *Quaternion Algebra* |
 | $k[F_n]$, the group ring of a free group | torsion-free group, domain | *Group Algebras* |
 | the zero ring $\{0\}$ | $0 = 1$, excluded by the convention $1 \neq 0$ | *Rings*, §2 |
 

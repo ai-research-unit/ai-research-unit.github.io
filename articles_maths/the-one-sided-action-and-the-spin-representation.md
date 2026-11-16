@@ -22,9 +22,9 @@ It is the module action of the regular module on its submodule $I$, and it is an
 
 **Proof.** $x\psi \in \mathrm{Cl}\psi \subseteq \mathrm{Cl}\,\mathrm{Cl}\pi \subseteq \mathrm{Cl}\pi = I$; the homomorphism properties are associativity and $1\psi = \psi$.
 
-**Proposition (only the left family acts).** Let $R_y(\psi) = \psi y$ be the right multiplication. Then $R_y$ preserves $I$ for every $y$ only when $I$ is a two-sided ideal, which for a minimal left ideal of a simple algebra it is not. A right multiplication by a unit preserves a minimal *right* ideal, and the resulting action is the dual of $\rho_I$.
+**Proposition (only the left family acts).** Let $R_y(\psi) = \psi y$ be the right multiplication. Then $R_y$ preserves $I$ for every $y$ only when $I$ is a two-sided ideal, which for a minimal left ideal of a simple algebra it is not. A right multiplication by an invertible element preserves a minimal *right* ideal, and the resulting action is the dual of $\rho_I$.
 
-**Proof.** If $R_y(I) \subseteq I$ for all $y$ then $\mathrm{Cl}\pi\,\mathrm{Cl} \subseteq \mathrm{Cl}\pi$, so $\mathrm{Cl}\pi$ is two-sided, contrary to minimality in a simple algebra, where the only two-sided ideals are $0$ and the algebra. For a minimal right ideal $J = \pi'\mathrm{Cl}$, right multiplication by a unit $R$ satisfies $JR = \pi'\mathrm{Cl}R = \pi'\mathrm{Cl}$, since $\mathrm{Cl}R = \mathrm{Cl}$.
+**Proof.** If $R_y(I) \subseteq I$ for all $y$ then $\mathrm{Cl}\pi\,\mathrm{Cl} \subseteq \mathrm{Cl}\pi$, so $\mathrm{Cl}\pi$ is two-sided, contrary to minimality in a simple algebra, where the only two-sided ideals are $0$ and the algebra. For a minimal right ideal $J = \pi'\mathrm{Cl}$, right multiplication by an invertible element $R$ satisfies $JR = \pi'\mathrm{Cl}R = \pi'\mathrm{Cl}$, since $\mathrm{Cl}R = \mathrm{Cl}$.
 
 **Remark (the two actions on the ideal).** The left action of the algebra and the right action of the opposite algebra on the same ideal, the identification of the ideal with the exterior algebra of a Witt basis, and the fact that a left ideal is preserved by every left multiplication while a right ideal is preserved by every right multiplication, are *Peirce Carriers and Inner Conjugation*; the operator-theoretic content of the present article is only the restriction of the left family, which is the module action.
 

@@ -20,9 +20,9 @@ So $\mathrm{L}^{\alpha}_a = L_a\circ\alpha$ is the ordinary left multiplication 
 
 **Convention.** The symbol $\Lambda^{\alpha}$ of *One-Sided Operators on a Clifford Algebra* and *One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation* puts the grade involution on the **parameter**, $\Lambda^{\alpha}_x = L_{\alpha(x)} = \varepsilon_xL_x$, and it is that operator which is the left factor of the signed inner conjugation. The present family is the one-sided form of the **signed product** $T^{\alpha}_{a,b}(y) = a\alpha(y)b$, so its left factor twists the argument instead, and it is written $\mathrm{L}^{\alpha}$ to keep the two apart; the right factor agrees with the other convention, $\mathrm{P}^{\alpha}_a = R_{\alpha(a)}$.
 
-**Proposition (elementary properties).** Both families are $F$-linear and bijective for $a$ a unit; $\mathrm{L}^{\alpha}_1 = \alpha = \mathrm{P}^{\alpha}_1$; $\mathrm{L}^{\alpha}_a$ coincides with $L_a$ on the even part and with $-L_a$ on the odd part; and for homogeneous $a$ one has $\mathrm{P}^{\alpha}_a = (-1)^{|a|}R_a$.
+**Proposition (elementary properties).** Both families are $F$-linear and bijective for $a$ an invertible element; $\mathrm{L}^{\alpha}_1 = \alpha = \mathrm{P}^{\alpha}_1$; $\mathrm{L}^{\alpha}_a$ coincides with $L_a$ on the even part and with $-L_a$ on the odd part; and for homogeneous $a$ one has $\mathrm{P}^{\alpha}_a = (-1)^{|a|}R_a$.
 
-**Proof.** $\mathrm{L}^{\alpha}_a$ and $\mathrm{P}^{\alpha}_a$ are composites of $F$-linear bijections when $a$ is a unit; at $a = 1$ both reduce to $\alpha(1) = 1$ applied to the argument, that is to $\alpha$. The sign statements are $\alpha(a) = (-1)^{|a|}a$ for the right family and $\alpha(y) = (-1)^{i}y$ on $\mathrm{Cl}^{i}$ for the left: $\mathrm{L}^{\alpha}_a$ is $L_a\circ\alpha$, so it equals $(-1)^{i}L_a$ on $\mathrm{Cl}^{i}$ and hence $L_a$ on $\mathrm{Cl}^{0}$, $-L_a$ on $\mathrm{Cl}^{1}$; it is **not** a scalar multiple of $L_a$ unless $L_a$ is itself even, the argument twisting a different factor from the parameter.
+**Proof.** $\mathrm{L}^{\alpha}_a$ and $\mathrm{P}^{\alpha}_a$ are composites of $F$-linear bijections when $a$ is invertible; at $a = 1$ both reduce to $\alpha(1) = 1$ applied to the argument, that is to $\alpha$. The sign statements are $\alpha(a) = (-1)^{|a|}a$ for the right family and $\alpha(y) = (-1)^{i}y$ on $\mathrm{Cl}^{i}$ for the left: $\mathrm{L}^{\alpha}_a$ is $L_a\circ\alpha$, so it equals $(-1)^{i}L_a$ on $\mathrm{Cl}^{i}$ and hence $L_a$ on $\mathrm{Cl}^{0}$, $-L_a$ on $\mathrm{Cl}^{1}$; it is **not** a scalar multiple of $L_a$ unless $L_a$ is itself even, the argument twisting a different factor from the parameter.
 
 **Proposition (the parity).** $\mathrm{L}^{\alpha}_a$ and $\mathrm{P}^{\alpha}_a$ have the parity of $a$: they carry $\mathrm{Cl}^{i}$ to $\mathrm{Cl}^{i+|a|}$.
 
@@ -80,13 +80,13 @@ $$
 
 ## The Reflections
 
-**Proposition (the pairing).** For a unit $x$, the signed two-sided operator of *The Signed Inner Conjugation on a Clifford Algebra* is the pairing of the signed left multiplication by $x$ with the ordinary right multiplication by the inverse of the twisted parameter:
+**Proposition (the pairing).** For an invertible element $x$, the signed two-sided operator of *The Signed Inner Conjugation on a Clifford Algebra* is the pairing of the signed left multiplication by $x$ with the ordinary right multiplication by the inverse of the twisted parameter:
 
 $$
 \Sigma_x = \mathrm{L}^{\alpha}_x \circ R_{\alpha(x)^{-1}} .
 $$
 
-**Proof.** $\mathrm{L}^{\alpha}_x\bigl(R_{\alpha(x)^{-1}}(y)\bigr) = x\,\alpha\bigl(y\,\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha\bigl(\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha^{2}(x)^{-1} = x\,\alpha(y)\,x^{-1} = \Sigma_x(y)$, using that $\alpha$ is an automorphism, that $\alpha^{-1} = \alpha$, and that $\alpha^{2} = \mathrm{id}$. The inverse right multiplication of the other convention, $R_{x^{-1}}$, gives only $\varepsilon_x\Sigma_x$, because $\alpha(x)^{-1} = \varepsilon_x x^{-1}$; the two pairings agree exactly on the even part of the unit group, which is the reason the corpus keeps the two families apart.
+**Proof.** $\mathrm{L}^{\alpha}_x\bigl(R_{\alpha(x)^{-1}}(y)\bigr) = x\,\alpha\bigl(y\,\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha\bigl(\alpha(x)^{-1}\bigr) = x\,\alpha(y)\,\alpha^{2}(x)^{-1} = x\,\alpha(y)\,x^{-1} = \Sigma_x(y)$, using that $\alpha$ is an automorphism, that $\alpha^{-1} = \alpha$, and that $\alpha^{2} = \mathrm{id}$. The inverse right multiplication of the other convention, $R_{x^{-1}}$, gives only $\varepsilon_x\Sigma_x$, because $\alpha(x)^{-1} = \varepsilon_x x^{-1}$; the two pairings agree exactly on the even part of the group of invertibles, which is the reason the corpus keeps the two families apart.
 
 **Theorem (the reflections).** Let $u \in V$ with $\mathfrak{Q}(u) \neq 0$. Then $\Sigma_u = \mathrm{L}^{\alpha}_u\circ R_{\alpha(u)^{-1}}$ restricted to $V$ is the reflection $\rho_u$, and its fixed vectors in $V$ are the hyperplane $u^{\perp}$:
 

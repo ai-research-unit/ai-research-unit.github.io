@@ -25,7 +25,7 @@ so a field that fixes its spin angle has no freedom left in its rapidity. The ve
 
 **The sector is the set of elements that are invertible and spectrally degenerate.** In the corpus's notation $\Sigma_{10}$ is the set with $N\neq0$ and $B^{2}=0$: the norm does not vanish and the two eigenvalues coincide. [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) defines it and gives its physical reading as the defective unit, the element that is reversible without a mode basis.
 
-**The two conditions are independent and both are needed.** $N=Q_t^{2}+B^{2}$ so a vanishing $B^{2}$ with a non-vanishing $N$ requires a non-vanishing $Q_t$: the element is a unit whose vector part is nilpotent. A vanishing $N$ with a vanishing $B^{2}$ is the origin, which is the doubly degenerate sector and a different object.
+**The two conditions are independent and both are needed.** $N=Q_t^{2}+B^{2}$ so a vanishing $B^{2}$ with a non-vanishing $N$ requires a non-vanishing $Q_t$: the element is invertible whose vector part is nilpotent. A vanishing $N$ with a vanishing $B^{2}$ is the origin, which is the doubly degenerate sector and a different object.
 
 ### Two Conditions on Eight Parameters
 
@@ -157,7 +157,7 @@ $$
 
 **The failure is a divergence and not a jump.** As the spin angle approaches $\pi$, the rapidity grows without bound and the velocity tends to $c$. Checked directly on $B^{2}$: at $\theta_{\mathrm{axr}}=\pi$ and $\vec u_{\mathrm r}\perp\vec u_{\mathrm b}$, the value is $+1$ at $\theta_{\mathrm{rpd}}=2$, $+1$ at $8$ and $+1$ at $20$ — the element moves further and further from the sector as the rapidity grows, and $B^{2}$ stays at the value $1-c_b^{2}c_a^{2}=1$ that the theorem predicts.
 
-**The limit is null in the motion and not in the element.** The norm of the element is $\Rho^{2}$ for every rapidity, so the element stays a unit at the antipode's approach: it is the *velocity* that becomes null, not the field. That distinction matters for the reading, because it says that the sector's far end is a massless limit of the motion at a fixed element and not a massless element.
+**The limit is null in the motion and not in the element.** The norm of the element is $\Rho^{2}$ for every rapidity, so the element stays an invertible element at the antipode's approach: it is the *velocity* that becomes null, not the field. That distinction matters for the reading, because it says that the sector's far end is a massless limit of the motion at a fixed element and not a massless element.
 
 **What sits at the far end is a transverse spin at the speed of light.** At $\theta_{\mathrm{axr}}=\pi$ the spin direction is $-\vec e_z$, orthogonal to the motion, and the helicity is zero. A massless particle of the standard theory has helicity $\pm1$; this limit has helicity zero, so the sector's far end is not the standard massless state. It is the chart's degeneracy, and the article records it as such.
 

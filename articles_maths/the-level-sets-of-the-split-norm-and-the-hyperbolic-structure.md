@@ -124,7 +124,7 @@ The norm is invariant under the group, and off zero it is a complete invariant: 
 
 The quotient of the plane by the group is the set of orbits, and it is the real line with the value zero replaced by three points: the two punctured null lines and the origin. Away from zero the norm is a coordinate of the quotient, one point per non-zero value; at zero the coordinate collapses and three orbits sit over it.
 
-So the quotient is not a manifold, and the failure is exactly at the value of the norm that separates the units from the zero divisors. The norm is a complete invariant on the units and on nothing else, which is the quotient form of the statement that the zero divisors are where the ring's structure degenerates.
+So the quotient is not a manifold, and the failure is exactly at the value of the norm that separates the invertibles from the zero divisors. The norm is a complete invariant on the invertibles and on nothing else, which is the quotient form of the statement that the zero divisors are where the ring's structure degenerates.
 
 ## The Comparison with the Complex Case
 
@@ -144,7 +144,7 @@ In both cases the level sets are the orbits of the group of norm-one elements an
 
 The level sets of the split norm are the hyperbolas $a^2-b^2=c$: two branches for $c>0$, two for $c<0$, and the pair of null lines at $c=0$. A level of fixed magnitude has four components, the two branches of each of the two signs, and the null pair of lines is the common asymptotic boundary of all of them, the asymptotes of every hyperbola.
 
-The hyperbolic rotations, the multiplications by elements of norm one, form a group isomorphic to $\mathbb{R}^\times$ whose identity component is parametrised by the hyperbolic angle with no period. The group acts transitively on each level set of non-zero value and its identity component on each branch, so the orbits are the non-zero level sets, the two punctured null lines and the origin, and the level set of norm one is the orbit of $1$. The quotient is the real line with three orbits over the value zero, and the norm is a complete invariant exactly on the units.
+The hyperbolic rotations, the multiplications by elements of norm one, form a group isomorphic to $\mathbb{R}^\times$ whose identity component is parametrised by the hyperbolic angle with no period. The group acts transitively on each level set of non-zero value and its identity component on each branch, so the orbits are the non-zero level sets, the two punctured null lines and the origin, and the level set of norm one is the orbit of $1$. The quotient is the real line with three orbits over the value zero, and the norm is a complete invariant exactly on the invertibles.
 
 Over $\mathbb{C}$ the level sets are circles, compact, connected, one per value, and each a single orbit of the circle group. The split level sets are non-compact, in two branches, and their four components per magnitude have no complex counterpart; the difference is the signature of the form, and the whole of the hyperbolic structure is that difference.
 

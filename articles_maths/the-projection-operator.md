@@ -47,7 +47,7 @@ where $r = \dim W$; over a field in which the idempotent equation is reducible e
 
 **Proof.** In the adapted basis the first $\dim U$ coordinates are sent to zero and the last $r$ coordinates are fixed, which is the displayed block matrix; two idempotent matrices are conjugate exactly when they have the same rank, and the trace is invariant and equals $r$ because the eigenvalues of an idempotent are $0$ and $1$.
 
-**Remark.** The projection is not invertible when both $U$ and $W$ are nonzero, so it is not an operator of the projective group and not a point of $GL(V)$; it lies in the algebra $\operatorname{End}_k(V)$ of all linear operators, of which the projective group is the unit group modulo the scalars. The one-sided name records that the datum is the direct sum decomposition, and that the projection is an element of the algebra of operators rather than a unit of the group.
+**Remark.** The projection is not invertible when both $U$ and $W$ are nonzero, so it is not an operator of the projective group and not a point of $GL(V)$; it lies in the algebra $\operatorname{End}_k(V)$ of all linear operators, of which the projective group is the group of invertibles modulo the scalars. The one-sided name records that the datum is the direct sum decomposition, and that the projection is an element of the algebra of operators rather than an invertible element of the group.
 
 ## The Central Projection of a Projective Space
 

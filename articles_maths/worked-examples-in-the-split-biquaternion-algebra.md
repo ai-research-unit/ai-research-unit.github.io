@@ -88,7 +88,7 @@ $$
 \tilde{Q}_+ = 2 + 2 \vec e_x, \qquad \tilde{Q}_- = 2 \vec e_x + 2 \vec e_y.
 $$
 
-Both components are nonzero, so $\tilde{Q}$ is a unit.
+Both components are nonzero, so $\tilde{Q}$ is invertible.
 
 ## The Four Conjugations on a Concrete Element
 
@@ -188,7 +188,7 @@ $$
 \varphi(\tilde{Q}) = \big(2 + 2 \vec e_x, \; 2 \vec e_x + 2 \vec e_y \big).
 $$
 
-Multiplication is componentwise, so the concrete element is a unit in $\mathbb{B}_{\mathrm{spl}}$ exactly because each of $2 + 2 \vec e_x$ and $2 \vec e_x + 2 \vec e_y$ is a nonzero quaternion, hence a unit in $\mathbb{H}$; indeed
+Multiplication is componentwise, so the concrete element is invertible in $\mathbb{B}_{\mathrm{spl}}$ exactly because each of $2 + 2 \vec e_x$ and $2 \vec e_x + 2 \vec e_y$ is a nonzero quaternion, hence a unit in $\mathbb{H}$; indeed
 
 $$
 (2 + 2 \vec e_x)^{-1} = \tfrac{1}{8}(2 - 2 \vec e_x), \qquad (2 \vec e_x + 2 \vec e_y)^{-1} = \tfrac{1}{8}(-2 \vec e_x - 2 \vec e_y),

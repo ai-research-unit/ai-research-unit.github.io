@@ -60,7 +60,7 @@ A group acts on an algebra by **automorphisms**, and the subalgebra it fixes is 
 | Action | Orbit, stabiliser and representation | Introduced in |
 |---|---|---|
 | Action of $\operatorname{Aut}(R)$ on a ring $R$ | the fixed subring and the invariant centre; the transformation group of the ring | *Ring and Field Automorphisms* |
-| Inner action $x \mapsto uxu^{-1}$ by a unit | the orbit is the conjugacy class; the action is by an inner automorphism | *Ring and Field Automorphisms* |
+| Inner action $x \mapsto uxu^{-1}$ by an invertible element | the orbit is the conjugacy class; the action is by an inner automorphism | *Ring and Field Automorphisms* |
 | Galois action of $\operatorname{gal}(L/K)$ on $L$ | the fixed field is $K$; the orbit of an element has size the degree of its minimal polynomial | *Galois Theory* |
 | Action of $G$ on a polynomial ring by graded automorphisms | the invariant ring $R^G$; the Molien series computes the graded dimensions | *Invariant Theory* |
 | Crossed product $A \# G$ | the algebra built from a group action, with the action as twisted multiplication | *Crossed Products* |

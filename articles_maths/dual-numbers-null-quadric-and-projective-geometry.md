@@ -125,7 +125,7 @@ The comparison isolates the single feature that controls the whole degeneration:
 
 ### The Geometry of the Dual Plane
 
-Read on the dual plane rather than on the projective line, the picture is the one developed in *Shears and Parabolic Rotations*: the isotropic line $\mathrm{M}$ is the fixed line of the shear, the shear translates the fibres of the augmentation, and the norm registers none of the displacement because the nilpotent direction lies in the radical. The projective statement—the shear is the parabolic projectivity fixing the doubled isotropic point—is the compact way to say that multiplication by a unit acts on the dual plane as a unipotent map with a single fixed line, the isotropic line.
+Read on the dual plane rather than on the projective line, the picture is the one developed in *Shears and Parabolic Rotations*: the isotropic line $\mathrm{M}$ is the fixed line of the shear, the shear translates the fibres of the augmentation, and the norm registers none of the displacement because the nilpotent direction lies in the radical. The projective statement—the shear is the parabolic projectivity fixing the doubled isotropic point—is the compact way to say that multiplication by an invertible element acts on the dual plane as a unipotent map with a single fixed line, the isotropic line.
 
 ## Summary
 

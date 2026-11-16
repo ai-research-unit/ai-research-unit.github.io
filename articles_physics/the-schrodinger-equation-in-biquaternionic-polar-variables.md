@@ -30,15 +30,15 @@ $$
 
 The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. The rotor's angle $\theta_{\mathrm{axr}}$ is the angle of the spatial rotation the rotor performs, so the factor $\tfrac12$ in its exponential is the half-angle of a quaternion and not a physical factor.
 
-**The domain is the whole of the qualification of this article.** In the corpus's vocabulary an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of units, so
+**The domain is the whole of the qualification of this article.** In the corpus's vocabulary an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of invertibles, so
 
 $$
-\boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff\tilde\Xi\text{ is a unit of }\mathbb{B}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular},\;}
+\boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff\tilde\Xi\text{ is invertible in }\mathbb{B}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular},\;}
 $$
 
-and it fails on every $N$-degenerate element. The three conditions are one condition, stated three ways: in this algebra an element is a unit exactly when its determinant does not vanish, and the word is a parametrisation of the group of units. There is no third case and no extension of the word to $N=0$.
+and it fails on every $N$-degenerate element. The three conditions are one condition, stated three ways: in this algebra an element is invertible exactly when its determinant does not vanish, and the word is a parametrisation of the group of invertibles. There is no third case and no extension of the word to $N=0$.
 
-**The condition is the whole of the qualification, and it is weak.** The cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is a unit, and the flow preserves the cone, so a field is a unit at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar word of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
+**The condition is the whole of the qualification, and it is weak.** The cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is invertible, and the flow preserves the cone, so a field is invertible at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar word of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
 
@@ -103,9 +103,9 @@ $$
 \langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural},
 $$
 
-and $\langle\tilde Q\rangle_{\natural}$ is a unit of the centre at every $t'$. Hence $\langle\tilde\Xi\rangle_{\natural}$ vanishes at one time exactly when it vanishes at every time, and the word's domain is an invariant set.
+and $\langle\tilde Q\rangle_{\natural}$ is invertible in the centre at every $t'$. Hence $\langle\tilde\Xi\rangle_{\natural}$ vanishes at one time exactly when it vanishes at every time, and the word's domain is an invariant set.
 
-**What that means in practice.** A field that is a unit at $t'=0$ is a unit at every $t'$, and the word exists for all time. A field on the cone at $t'=0$ never leaves it, and the word exists at no time. There is no crossing, and no field drifts into or out of the domain. The invariance is exact: nothing is integrated, and only the centrality of $\langle\tilde Q\rangle_{\natural}$ is used.
+**What that means in practice.** A field that is invertible at $t'=0$ is invertible at every $t'$, and the word exists for all time. A field on the cone at $t'=0$ never leaves it, and the word exists at no time. There is no crossing, and no field drifts into or out of the domain. The invariance is exact: nothing is integrated, and only the centrality of $\langle\tilde Q\rangle_{\natural}$ is used.
 
 **The cone is not the nodal set.** A central field vanishes exactly when its single complex coefficient does, and that is a point of the cone but not the whole of it: the cone is a proper algebraic subset of the algebra and not a level set of a single coefficient, and a field can be off the cone while one of its coefficients vanishes. What fails on the cone is the parametrisation and never the equation: the equation is one element times one element, and it makes sense on zero divisors as well.
 
@@ -295,7 +295,7 @@ A second-order equation carries a mass shell: its four-momentum obeys $\langle\t
 
 **The equation, no; the coordinates, yes.** Nothing here predicts anything the parent does not. What the polar form adds is a set of coordinates in which the flow is a statement about two numbers, the phase and the rotor's angle, and their two rates.
 
-**The domain is settled, and it is not a carrier.** The word exists exactly on the units, the units are generic in this algebra, and the flow preserves them. The excluded set is the cone, a real set of measure zero, and it is not the nodal set: on a central field the two coincide, on a general field the cone is far larger than the node, and only the node is where the density vanishes. The polar word of this equation is therefore total on the generic field.
+**The domain is settled, and it is not a carrier.** The word exists exactly on the invertibles, the invertibles are generic in this algebra, and the flow preserves them. The excluded set is the cone, a real set of measure zero, and it is not the nodal set: on a central field the two coincide, on a general field the cone is far larger than the node, and only the node is where the density vanishes. The polar word of this equation is therefore total on the generic field.
 
 **The frozen parameters are the statement of unitarity.** Of the propagator's four factors, the scale and the boost are frozen; the two that remain are the two that a unitary element can carry when the Hamiltonian is fixed. The field's word freezes the same two quantities, its scale and its rapidity, while its phase and its two axes turn. The count is two in both cases, and it needs no proof beyond the word's definition.
 
@@ -317,7 +317,7 @@ A second-order equation carries a mass shell: its four-momentum obeys $\langle\t
 
 ## Summary
 
-The Schrödinger equation is one element of $\mathbb{B}$ acting on another by left multiplication, and the polar word of the second element is substituted into it. The word exists exactly on the units of the algebra, which is the complement of the zero-divisor cone; a generic field is a unit and the flow preserves the cone, so the word exists for all time or for none.
+The Schrödinger equation is one element of $\mathbb{B}$ acting on another by left multiplication, and the polar word of the second element is substituted into it. The word exists exactly on the invertibles of the algebra, which is the complement of the zero-divisor cone; a generic field is invertible and the flow preserves the cone, so the word exists for all time or for none.
 
 The propagator's word is a central phase times a rotor, with the scale frozen at $1$, the rapidity at $0$ and the boost's axis carrying no data: only the phase and the rotor's angle move. The field's own scale and rapidity are constants of the motion, and they are the only two: the phase and the rotor's angle run, the rotor's axis and the boost's axis precess at the gap, and the flow moves six of the eight parameters. The phase runs at minus the mean of the Hamiltonian's two eigenvalues and the rotor's half-angle at half their gap; a direction the field carries runs at the gap, $d\hat s/dt'=2\vec h_\Psi\times\hat s/\hbar$.
 
@@ -360,7 +360,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the equation, its solution and the axis-free array.
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
 - [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form used here.
-- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the units and the cone.
+- [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the two relativistic equations.
 - [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the pair read as the first term of a series.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for why the body of the equation carries elements and not arrays.

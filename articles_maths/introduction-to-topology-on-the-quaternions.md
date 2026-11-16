@@ -37,32 +37,32 @@ $$
 $$ \boxed{\; \mathbb{H}^\times\longrightarrow\mathbb{R}_{>0}\times S^3,\qquad
 \tilde q\longmapsto\bigl(\lvert\tilde q\rvert,\ \tilde q/\lvert\tilde q\rvert\bigr) \;} ,$$
 
-is a homeomorphism, and an isomorphism of topological groups when the first factor is given its multiplicative structure; the display is the decomposition of the group of units, and its proof, together with the topology of the group, is *The Quaternion Unit Group as a Topological Group*, below this article in this category. The homeomorphism is named here because it is the bridge between the punctured space and the sphere, and it is not reproved here.
+is a homeomorphism, and an isomorphism of topological groups when the first factor is given its multiplicative structure; the display is the decomposition of the group of invertibles, and its proof, together with the topology of the group, is *The Quaternion Group of Invertibles as a Topological Group*, below this article in this category. The homeomorphism is named here because it is the bridge between the punctured space and the sphere, and it is not reproved here.
 
 ## The Map of the Topological Articles
 
 | object | article |
 |---|---|
 | the topology of the algebra, connectedness, compactness, the structure of the space | *Quaternion Topology* |
-| the group of units, its decomposition, its exponential | *The Quaternion Unit Group as a Topological Group* |
-| the orders and the finite subgroups of the unit sphere | *Quaternion Orders and Finite Groups of Units* |
+| the group of invertibles, its decomposition, its exponential | *The Quaternion Group of Invertibles as a Topological Group* |
+| the orders and the finite subgroups of the unit sphere | *Quaternion Orders and Finite Groups of Invertibles* |
 | the metric of the quaternion space and its subspaces | *Quaternion Metrics* |
 
 ## Summary
 
-The quaternion algebra is $\mathbb{R}^4$ with its Euclidean topology, the norm $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$ multiplicative and the inverse continuous off the origin. Three objects carry the topology: the whole space $\mathbb{H}$, which is contractible and simply connected; the unit sphere $S^3=\{N=1\}$, which is the compact connected topological group $Sp(1)$ of the unit quaternions; and the punctured space $\mathbb{H}^\times$, which is homeomorphic and group-isomorphic to $\mathbb{R}_{>0}\times S^3$. The topological articles of the chapter read the space, the unit group, the finite subgroups of the sphere through the orders, and the metrics of the quaternion space.
+The quaternion algebra is $\mathbb{R}^4$ with its Euclidean topology, the norm $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$ multiplicative and the inverse continuous off the origin. Three objects carry the topology: the whole space $\mathbb{H}$, which is contractible and simply connected; the unit sphere $S^3=\{N=1\}$, which is the compact connected topological group $Sp(1)$ of the unit quaternions; and the punctured space $\mathbb{H}^\times$, which is homeomorphic and group-isomorphic to $\mathbb{R}_{>0}\times S^3$. The topological articles of the chapter read the space, the group of invertibles, the finite subgroups of the sphere through the orders, and the metrics of the quaternion space.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\lvert\tilde q\rvert=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the norm, multiplicative on the algebra |
-| $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$ | the punctured space, the group of units |
+| $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$ | the punctured space, the group of invertibles |
 | $S^3=\{N=1\}=Sp(1)$ | the unit sphere, the compact group of unit quaternions |
-| $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition of the units |
+| $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition of the invertibles |
 | $\mathcal N=\{N=0\}$ | the null cone; a point $\{0\}$ over $\mathbb{R}$, a cone of real dimension $6$ over $\mathbb{C}$ |
 
 ## Further Reading
 
 - [Quaternion Topology](quaternion-topology.html), for the space and its structure
-- [The Quaternion Unit Group as a Topological Group](the-quaternion-unit-group-as-a-topological-group.html) and [Quaternion Orders and Finite Groups of Units](quaternion-orders-and-finite-groups-of-units.html), for the units
+- [The Quaternion Group of Invertibles as a Topological Group](the-quaternion-group-of-invertibles-as-a-topological-group.html) and [Quaternion Orders and Finite Groups of Invertibles](quaternion-orders-and-finite-groups-of-invertibles.html), for the invertibles

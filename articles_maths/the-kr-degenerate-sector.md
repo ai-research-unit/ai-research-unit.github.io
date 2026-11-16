@@ -53,7 +53,7 @@ Its elements are **isotropic**; the non-zero ones are the **Krein-null** element
 
 *Proof.* If $Q_t=0$ then $\lVert\vec Q\rVert=0$, hence $\vec Q=0$ and $\tilde Q=0$.
 
-**Remark (the null set is not the algebraic null cone).** The two cones are different objects of the same ambient space: $\mathcal N$ has complex dimension three and real dimension six, and $\mathcal K$ is a real hypersurface of real dimension seven. They meet in $\mathcal K_{\mathrm d}$, of real dimension four. The element $e_t+\vec e_x$ is Krein-null and a unit; the element $\vec e_x+i\vec e_y$ is a zero divisor and not Krein-null.
+**Remark (the null set is not the algebraic null cone).** The two cones are different objects of the same ambient space: $\mathcal N$ has complex dimension three and real dimension six, and $\mathcal K$ is a real hypersurface of real dimension seven. They meet in $\mathcal K_{\mathrm d}$, of real dimension four. The element $e_t+\vec e_x$ is Krein-null and an invertible element; the element $\vec e_x+i\vec e_y$ is a zero divisor and not Krein-null.
 
 ## Geometry
 
@@ -110,9 +110,9 @@ $$
 \mathcal K_{\mathrm u}=\mathcal K\setminus\mathcal K_{\mathrm d}.
 $$
 
-**Theorem (the two strata).** $\mathcal K=\mathcal K_{\mathrm d}\uplus\mathcal K_{\mathrm u}$. The doubly null set is closed in $\mathcal K$, of real dimension $4$; the isotropic units form its open dense complement, of real dimension $7$. The points of $\mathcal K_{\mathrm d}$ are the origin together with the zero divisors of $\mathcal K$; every point of $\mathcal K_{\mathrm u}$ is a unit.
+**Theorem (the two strata).** $\mathcal K=\mathcal K_{\mathrm d}\uplus\mathcal K_{\mathrm u}$. The doubly null set is closed in $\mathcal K$, of real dimension $4$; the isotropic units form its open dense complement, of real dimension $7$. The points of $\mathcal K_{\mathrm d}$ are the origin together with the zero divisors of $\mathcal K$; every point of $\mathcal K_{\mathrm u}$ is invertible.
 
-*Proof.* $\mathcal K_{\mathrm d}$ is the trace on $\mathcal K$ of the closed algebraic null cone, hence closed. On $\mathcal K$ the algebraic norm takes the values determined by the two parameters: in the parametrisation $\Psi$ one has $\langle\Psi(Q_t,W)\rangle_{\natural}=Q_t^2(1+B^2(W))$, which vanishes exactly when $B^2(W)=-1$. With $\lVert W\rVert=1$, writing $W=a+ib$ with $a,b\in\mathbb{R}^3$, the conditions $\lVert W\rVert=1$ and $B^2(W)=-1$ give $a\cdot b=0$, $|a|^2+|b|^2=1$ and $|a|^2-|b|^2=-1$, hence $a=0$ and $|b|=1$: the set is $\mathbb{C}^{\times}\times(e_t+iS^2)$, of real dimension $4$. An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is not a zero divisor, and being non-zero it is a unit; at the origin the element is neither.
+*Proof.* $\mathcal K_{\mathrm d}$ is the trace on $\mathcal K$ of the closed algebraic null cone, hence closed. On $\mathcal K$ the algebraic norm takes the values determined by the two parameters: in the parametrisation $\Psi$ one has $\langle\Psi(Q_t,W)\rangle_{\natural}=Q_t^2(1+B^2(W))$, which vanishes exactly when $B^2(W)=-1$. With $\lVert W\rVert=1$, writing $W=a+ib$ with $a,b\in\mathbb{R}^3$, the conditions $\lVert W\rVert=1$ and $B^2(W)=-1$ give $a\cdot b=0$, $|a|^2+|b|^2=1$ and $|a|^2-|b|^2=-1$, hence $a=0$ and $|b|=1$: the set is $\mathbb{C}^{\times}\times(e_t+iS^2)$, of real dimension $4$. An element with $\langle\tilde Q\rangle_{\natural}\neq0$ is not a zero divisor, and being non-zero it is invertible; at the origin the element is neither.
 
 **Corollary (the split is the algebraic partition).** The two strata are exactly the traces on $\mathcal K$ of the three algebraic classes:
 
@@ -155,11 +155,11 @@ The line $\mathbb{C}(e_t+i\vec u)$ is the line of the idempotent, and it is a mi
 
 *Proof.* $(e_t+i\vec u)^2=e_t+2i\vec u+(i\vec u)^2=e_t+2i\vec u+\vec u^2=2e_t+2i\vec u$, since $\vec u^2=-e_t$; dividing by four gives the idempotent. The complement is computed in the same way, and $(e_t+i\vec u)(e_t-i\vec u)=e_t-\vec u^2=e_t-e_t=0$. The line is a minimal left ideal, by the classification of the doubly null Peirce lines in the cited section.
 
-**Corollary (the algebraic status).** Every non-zero point of $\mathcal K_{\mathrm d}$ is a zero divisor, and the origin is neither a unit nor a zero divisor. The algebraic norm vanishes identically on $\mathcal K_{\mathrm d}$.
+**Corollary (the algebraic status).** Every non-zero point of $\mathcal K_{\mathrm d}$ is a zero divisor, and the origin is neither an invertible element nor a zero divisor. The algebraic norm vanishes identically on $\mathcal K_{\mathrm d}$.
 
 **Remark (not the nilpotent cone).** The doubly null set and the nilpotent cone $\{\tilde Q:\tilde Q^2=0\}$ both have real dimension $4$, and they are different cones: $e_t+i\vec e_x$ is doubly null and its square is $2e_t+2i\vec e_x\neq0$, while a non-zero nilpotent has $Q_t=0$ and therefore is not in $\mathcal K$. Their intersection is the origin. The nilpotent cone is the intersection $\mathcal N\cap\mathcal S$ of the algebraic null cone with the spectral-degenerate cone, and the doubly null set is the intersection $\mathcal N\cap\mathcal K$ of the algebraic null cone with the Krein null set; the two intersections are computed from different second conditions.
 
-## The Isotropic Units
+## The Isotropic Invertibles
 
 **Theorem (the open stratum).** In the parametrisation of §*Geometry*,
 
@@ -185,7 +185,7 @@ is surjective. On $\mathcal K_{\mathrm d}$ it is identically zero.
 
 **Corollary (the two strata are not separated by the metric).** Both strata lie in the single orbit $\mathcal K\setminus\{0\}$ of $\mathrm{U}(1,3)$; the isometry group moves a point of $\mathcal K_{\mathrm d}$ to a point of $\mathcal K_{\mathrm u}$. The stratum is an invariant of the algebra, not of the form.
 
-**Remark (the spectral locus).** The spectral-degenerate cone $\mathcal S=\{B^2=0\}$ meets $\mathcal K$ in the origin together with a real cone of dimension $5$, contained in $\mathcal K_{\mathrm u}$: in the parametrisation, $B^2(W)=0$ on $S^5$ is a set of real dimension $3$, and $\mathbb{C}^{\times}$ adds two. Every non-zero point of that intersection is a unit. Nothing in the Krein split depends on it, and it is recorded only because the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on $\mathcal S$.
+**Remark (the spectral locus).** The spectral-degenerate cone $\mathcal S=\{B^2=0\}$ meets $\mathcal K$ in the origin together with a real cone of dimension $5$, contained in $\mathcal K_{\mathrm u}$: in the parametrisation, $B^2(W)=0$ on $S^5$ is a set of real dimension $3$, and $\mathbb{C}^{\times}$ adds two. Every non-zero point of that intersection is invertible. Nothing in the Krein split depends on it, and it is recorded only because the inner derivation $\mathrm{ad}_{\tilde Q}$ is nilpotent exactly on $\mathcal S$.
 
 ## Multiplication and Inversion
 
@@ -201,7 +201,7 @@ $$
 \langle\cdot\rangle_{\natural*}=2-2=0.
 $$
 
-**Theorem (inversion preserves the null set).** If $\tilde Q$ is a unit then
+**Theorem (inversion preserves the null set).** If $\tilde Q$ is invertible then
 
 $$
 \langle\tilde Q^{-1}\rangle_{\natural*}=\frac{\langle\tilde Q\rangle_{\natural*}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert^2}.
@@ -209,9 +209,9 @@ $$
 
 *Proof.* $\tilde Q^{-1}=(Q_t-\vec Q)/\langle\tilde Q\rangle_{\natural}$, so the scalar part of the inverse is $Q_t/\langle\tilde Q\rangle_{\natural}$ and its vector part is $-\vec Q/\langle\tilde Q\rangle_{\natural}$; the value follows.
 
-**Corollary (the strata under inversion).** The null set is stable under inversion on its units: $\mathcal K_{\mathrm u}$ is closed under inversion. It is not closed under multiplication. The doubly null set is not inversion-stable, its non-zero points being zero divisors. The isotropic units therefore form a **symmetric subset of the unit group**, not a subgroup.
+**Corollary (the strata under inversion).** The null set is stable under inversion on its units: $\mathcal K_{\mathrm u}$ is closed under inversion. It is not closed under multiplication. The doubly null set is not inversion-stable, its non-zero points being zero divisors. The isotropic units therefore form a **symmetric subset of the group of invertibles**, not a subgroup.
 
-**Remark (the products of the strata).** The doubly null set is a set of zero divisors, so its products with anything are constrained by the algebraic norm: the product of an element of $\mathcal K_{\mathrm d}$ with any element has algebraic norm zero, hence lies in $\mathcal N$. The isotropic units have non-zero algebraic norm, so their products are units. Neither statement uses the Krein norm, and this is the sense in which the algebraic partition is the finer one inside the sector.
+**Remark (the products of the strata).** The doubly null set is a set of zero divisors, so its products with anything are constrained by the algebraic norm: the product of an element of $\mathcal K_{\mathrm d}$ with any element has algebraic norm zero, hence lies in $\mathcal N$. The isotropic units have non-zero algebraic norm, so their products are invertible. Neither statement uses the Krein norm, and this is the sense in which the algebraic partition is the finer one inside the sector.
 
 ## Relation to the Algebraic Partition
 
@@ -224,7 +224,7 @@ $$
 
 The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, of pair $(0,0)$, where the pair is $(\langle\tilde Q\rangle_{\natural*},\langle\tilde Q\rangle_{\natural})$.
 
-**Corollary (the sector straddles the algebraic partition).** The null set is neither contained in the unit group nor in the zero-divisor set: it meets both, and its two strata are exactly the two intersections. The Krein norm alone cannot see the difference, since it vanishes on both; the algebraic norm is the invariant that separates them.
+**Corollary (the sector straddles the algebraic partition).** The null set is neither contained in the group of invertibles nor in the zero-divisor set: it meets both, and its two strata are exactly the two intersections. The Krein norm alone cannot see the difference, since it vanishes on both; the algebraic norm is the invariant that separates them.
 
 **Remark (the equality case).** The doubly null set is the equality case of the inequality of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, §*The degeneracy case: the null set*: an algebraic-null element has non-positive Krein norm, and it is Krein-null exactly on the Peirce lines, together with the origin. So the closed negative half-space $\{\langle\cdot\rangle_{\natural*}\le0\}$ contains the whole zero-divisor set, and the doubly null set is where the two cones touch.
 
@@ -240,18 +240,18 @@ The pair of witnesses is $e_t+\vec e_x$, of pair $(0,2)$, and $e_t+i\vec e_x$, o
 | line $\mathbb{C}\tilde Q$ | totally isotropic | non-degenerate, definite |
 | algebraic classes | zero divisors and units | units and zero divisors |
 | closed under products | no | no |
-| closed under inversion | on the isotropic units | on the units |
+| closed under inversion | on the isotropic units | on the invertibles |
 | refinement inside | algebraic norm | sign and algebraic norm |
 
 **The two sectors exhaust the algebra.** $\mathbb{B}=\mathcal K\uplus\mathbb{B}^{\natural*}$. The comparison of the algebraic classes is the point of the pair: the regular sector separates units from zero divisors by the sign, and the degenerate sector separates them by the algebraic norm alone.
 
 ## Consequences
 
-**Left multiplication.** If $\tilde Q\in\mathcal K_{\mathrm u}$ it is a unit, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q\in\mathcal K_{\mathrm d}$ is non-zero it is a zero divisor, and $L_{\tilde Q}$ has rank $2$; at the origin it has rank $0$. The rank follows the algebraic norm and not the Krein norm: it is constant on $\mathcal K_{\mathrm u}$ and on each point of $\mathcal K_{\mathrm d}$ it is the algebraic rank, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*.
+**Left multiplication.** If $\tilde Q\in\mathcal K_{\mathrm u}$ it is invertible, and $L_{\tilde Q}$ is a bijection of complex rank $4$. If $\tilde Q\in\mathcal K_{\mathrm d}$ is non-zero it is a zero divisor, and $L_{\tilde Q}$ has rank $2$; at the origin it has rank $0$. The rank follows the algebraic norm and not the Krein norm: it is constant on $\mathcal K_{\mathrm u}$ and on each point of $\mathcal K_{\mathrm d}$ it is the algebraic rank, by *The Four General Products and Their Relations over the Biquaternion Algebra*, §*The Annihilators*.
 
 **The two-sided operator.** The operator $\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*}$ is singular exactly on the algebraic null cone, by *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Two-Sided Operator*. On the null set it is therefore singular exactly on $\mathcal K_{\mathrm d}$, and invertible on $\mathcal K_{\mathrm u}$. This is the sharpest operator reading of the two strata: the two-sided operator separates them, and it does so through the algebraic norm.
 
-**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the unit group. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of an N-Regular Biquaternion*.
+**The polar decomposition.** The modulus–unit decomposition $\tilde Q=\Rho\tilde U$ requires $\Rho^2=\langle\tilde Q\rangle_{\natural}$ with $\Rho\neq0$, so it exists exactly on the group of invertibles. On the null set it therefore exists exactly on $\mathcal K_{\mathrm u}$ and fails on $\mathcal K_{\mathrm d}$; *The Polar Decomposition of an N-Regular Biquaternion*.
 
 **The adjoint.** The Krein adjoint is defined at every point of the sector, the form being non-degenerate; the sector imposes no restriction on it. The operator theory is *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra*.
 
@@ -297,7 +297,7 @@ The sector is the light cone of the Krein form. It is a single orbit of the isom
 - [Kr-Regularity and Degeneracy in the Biquaternion Algebra](kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html), for the partition, the line criterion, the Krein cone, the two partitions of the algebra, and the four reasons why no spectral split is available.
 - [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), for the level sets, the null quadric and the complex hyperbolic ball.
 - [The Krein Isometry Group and Its Cartan Decomposition](the-krein-isometry-group-and-its-cartan-decomposition.html), for the group $\mathrm{U}(1,3)$ and its transitive action.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the unit group and the zero-divisor cone.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the algebraic norm, the group of invertibles and the zero-divisor cone.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce idempotents behind the doubly null lines.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the two-sided operator, the rank of left multiplication and the polar decomposition.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ and its failure at the algebraic null cone.

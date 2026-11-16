@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An element $q=t+bj$ carries two quadratic conditions. The **split norm** $q\bar q=t^2-b^2$ is the determinant of left multiplication and the product of the eigenvalues; it vanishes exactly on the non-units. The **spectral condition** $b^2$ is a quarter of the discriminant and the square of half the eigenvalue difference; it vanishes exactly when the eigenvalues coincide. This article compares them, proves that neither implies the other, and reads the four combinations as four sectors. The mixed sectors are the point: a zero divisor with distinct eigenvalues, and a unit with a repeated one.
+An element $q=t+bj$ carries two quadratic conditions. The **split norm** $q\bar q=t^2-b^2$ is the determinant of left multiplication and the product of the eigenvalues; it vanishes exactly on the non-invertibles. The **spectral condition** $b^2$ is a quarter of the discriminant and the square of half the eigenvalue difference; it vanishes exactly when the eigenvalues coincide. This article compares them, proves that neither implies the other, and reads the four combinations as four sectors. The mixed sectors are the point: a zero divisor with distinct eigenvalues, and an invertible element with a repeated one.
 
 **Notation.** An element is $q=t+bj$, its conjugate is $\bar q=t-bj$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$. The idempotent coordinates are $u=t+b$ and $v=t-b$, so that $q=ue_+ +ve_-$, the eigenvalues are $\lambda_+=u$ and $\lambda_-=v$, the split norm is $q\bar q=uv$, and $b=(u-v)/2$. The split norm is indefinite and is not a length. The corpus writes the same element $Q=q+jq'$, with its $q,q'$ equal to $t,b$ here and its $\Pi_\pm$ equal to the $e_\pm$.
 
@@ -39,9 +39,9 @@ $$
 
 *Proof.* Direct computation: $(2+j)(-2+j)=-4+2j-2j+1=-3$.
 
-**Corollary (the unit criterion).** For $q\neq0$, $q$ is a unit exactly when $q\bar q\neq0$; then $q^{-1}=\bar q/(q\bar q)$. If the norm vanishes, $q$ is a zero divisor.
+**Corollary (the invertibility criterion).** For $q\neq0$, $q$ is invertible exactly when $q\bar q\neq0$; then $q^{-1}=\bar q/(q\bar q)$. If the norm vanishes, $q$ is a zero divisor.
 
-*Proof.* The product $q\bar q$ is real and equals $\bar q q$, so the formula gives an inverse when the denominator is non-zero. When it vanishes and $q\neq0$, the element is a non-unit in a finite-dimensional algebra, hence a zero divisor.
+*Proof.* The product $q\bar q$ is real and equals $\bar q q$, so the formula gives an inverse when the denominator is non-zero. When it vanishes and $q\neq0$, the element is a non-invertible in a finite-dimensional algebra, hence a zero divisor.
 
 ## Independence of the Two Conditions
 
@@ -86,7 +86,7 @@ are all non-empty, and $\mathbb{C}_{\mathrm{spl}}$ is their disjoint union.
 
 Each admits the two-term spectral decomposition $q=2t\,e_\pm +0\cdot e_\mp$.
 
-*Proof.* (1)$\iff$(2): $t^2-b^2=(t-b)(t+b)$, and $q\neq0$ excludes $t=b=0$. (2)$\iff$(3): if $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. (3)$\iff$(4): $e_\pm$ are eigenvectors with eigenvalues $2t$ and $0$, distinct because $t\neq0$. (4)$\iff$(6): the spectrum has two elements exactly when $b\neq0$. (3)$\iff$(5): if $q=2t e_+$ then $qe_-=0$ with $e_-\neq0$, and symmetrically; conversely a zero divisor is a non-unit, so $q\bar q=0$ by the unit criterion.
+*Proof.* (1)$\iff$(2): $t^2-b^2=(t-b)(t+b)$, and $q\neq0$ excludes $t=b=0$. (2)$\iff$(3): if $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. (3)$\iff$(4): $e_\pm$ are eigenvectors with eigenvalues $2t$ and $0$, distinct because $t\neq0$. (4)$\iff$(6): the spectrum has two elements exactly when $b\neq0$. (3)$\iff$(5): if $q=2t e_+$ then $qe_-=0$ with $e_-\neq0$, and symmetrically; conversely a zero divisor is a non-invertible, so $q\bar q=0$ by the unit criterion.
 
 **Corollary (the annihilators).** On the null cone,
 
@@ -103,7 +103,7 @@ $$
 
 ## The Real Axis Minus the Origin
 
-**The real axis minus the origin is the sector of units with a repeated eigenvalue: the norm is positive and the spectrum is a singleton.**
+**The real axis minus the origin is the sector of invertibles with a repeated eigenvalue: the norm is positive and the spectrum is a singleton.**
 
 **Theorem (the real axis).** For $q=t$ with $t\neq0$, one has $q\bar q=t^2>0$, $q^{-1}=1/t$, $\sigma(q)=\{t\}$, and minimal polynomial $X-t$. The element is norm-regular and spectrally degenerate, with the one-term spectral decomposition $q=t\cdot1$.
 
@@ -172,9 +172,9 @@ The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C
 
 The split norm $q\bar q=t^2-b^2$ is the determinant of $L_q$ and the product of the eigenvalues; it decides invertibility. The spectral condition $b^2$ is a quarter of the discriminant; it decides whether the spectrum is separated. Both sit in $p_q(X)=X^2-2tX+q\bar q$: the norm as constant term, $4b^2$ as discriminant.
 
-The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of units with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.
+The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of invertibles with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.
 
-The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigma_{00}$. The norm separates units from non-units, the spectral condition regular from degenerate spectra, and the characteristic polynomial the four sectors. The minimal polynomial adds nothing: it reproduces the same four types, unlike the biquaternion case, where it refines the degenerate cone into three strata. The plane is the unique algebra of the table with four non-empty sectors and no defective element.
+The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigma_{00}$. The norm separates units from non-invertibles, the spectral condition regular from degenerate spectra, and the characteristic polynomial the four sectors. The minimal polynomial adds nothing: it reproduces the same four types, unlike the biquaternion case, where it refines the degenerate cone into three strata. The plane is the unique algebra of the table with four non-empty sectors and no defective element.
 
 ## Summary of Notation
 

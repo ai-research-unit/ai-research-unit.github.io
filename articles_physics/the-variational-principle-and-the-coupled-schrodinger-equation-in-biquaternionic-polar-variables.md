@@ -190,7 +190,7 @@ r\longmapsto r,
 \vec u_{\mathrm r}\longmapsto\vec u_{\mathrm r},
 $$
 
-because the factor is central and commutes with every unit. Seven parameters are inert and one is translated by a function.
+because the factor is central and commutes with every invertible element. Seven parameters are inert and one is translated by a function.
 
 **The Lagrangian's response.** The kinetic term gains $-ϙ\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\varphi$'s coefficient are the same function of the rapidity.
 

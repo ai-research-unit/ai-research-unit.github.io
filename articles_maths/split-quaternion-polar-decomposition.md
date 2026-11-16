@@ -12,7 +12,7 @@ $$
 namely
 
 - a positive real scale $r$ ($r \in \mathbb{R}$, $r>0$);
-- a unit boost $b$ ($b \in \mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$, $\langle b\rangle_{\natural}=1$);
+- an invertible element boost $b$ ($b \in \mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$, $\langle b\rangle_{\natural}=1$);
 - an orthogonal factor $\tilde u_{\mathrm r}$, a rotation in the timelike case and a reflection in the spacelike case.
 
 The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.
@@ -132,7 +132,7 @@ $$
 
 in which $r$ is the **modulus**, $b$ the **unit boost** and $\tilde u_{\mathrm r}$ the **orthogonal factor**.
 
-Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of units** ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
+Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of invertibles** ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
 
 The definition is stated before its existence is proved, and it contains three conditions that are not independent: a symmetric element of the algebra is positive definite exactly when its two eigenvalues are positive, and the normalisation $\langle b\rangle_{\natural} = 1$ fixes the product of those eigenvalues. The conditions are collected in the proposition below.
 

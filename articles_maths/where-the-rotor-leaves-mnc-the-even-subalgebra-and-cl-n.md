@@ -62,7 +62,7 @@ $$
 Cl^{0}(n)\cong Cl(n-1),
 $$
 
-so the even part of the three-dimensional algebra is the quaternions and the even part of the four-dimensional algebra is the algebra of the three-dimensional one. The identification is a standard one, and it explains why the rotors of $n$-space are the units of a Clifford algebra of dimension $n-1$.
+so the even part of the three-dimensional algebra is the quaternions and the even part of the four-dimensional algebra is the algebra of the three-dimensional one. The identification is a standard one, and it explains why the rotors of $n$-space are the invertibles of a Clifford algebra of dimension $n-1$.
 
 **The bivectors span the even part of degree two.** The products $e_ie_j$ with $i<j$ are the bivectors and they span the subspace of $Cl^{0}(n)$ of degree two, of dimension $\binom{n}{2}$, which is exactly the antisymmetric half of *Rotors Acting on the Bivector Space: the Adjoint Action*. So
 
@@ -74,13 +74,13 @@ which was checked at $n=3,4$ by the dimension count $3$ and $6$ against the tota
 
 ## The Even Subalgebra
 
-**The rotors are the exponentials of the bivectors, hence elements of the unit group of the even part.** Since every bivector is an element of $Cl^{0}(n)$ and the exponential of an element of a finite-dimensional algebra stays in the algebra, we have
+**The rotors are the exponentials of the bivectors, hence elements of the group of invertibles of the even part.** Since every bivector is an element of $Cl^{0}(n)$ and the exponential of an element of a finite-dimensional algebra stays in the algebra, we have
 
 $$
 R=e^{K}\in Cl^{0}(n)\qquad(K\in\Lambda^{2}\mathbb{R}^{n}),
 $$
 
-and the inverse of a rotor is the exponential of $-K$, also in the even part. So the group of rotors is a subgroup of the unit group of $Cl^{0}(n)$, and the computation confirms the membership at $n=3,4$ through the polynomial fit.
+and the inverse of a rotor is the exponential of $-K$, also in the even part. So the group of rotors is a subgroup of the group of invertibles of $Cl^{0}(n)$, and the computation confirms the membership at $n=3,4$ through the polynomial fit.
 
 **The rotor group is the spin group.** By definition
 
@@ -183,7 +183,7 @@ A rotor is a polynomial of degree below $n$ in its generator, so it lies in a co
 | $\dim Cl(n)=2^{n}$ | the dimension of the Clifford algebra |
 | $Cl^{0}(n)$, $Cl^{1}(n)$ | the even and odd parts, of dimension $2^{n-1}$ |
 | $Cl^{0}(n)\cong Cl(n-1)$ | the even part as a Clifford algebra of one dimension less |
-| $\mathrm{Spin}(n)$ | the rotors, the unit group of the even part |
+| $\mathrm{Spin}(n)$ | the rotors, the group of invertibles of the even part |
 | $RvR^{-1}\in V$ | the sandwich action on the vectors |
 | $2^{\lfloor n/2\rfloor}$ | the dimension of the spinor module |
 

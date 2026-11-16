@@ -3,13 +3,13 @@
 
 ## Introduction
 
-The quaternion algebra is at once an associative algebra, a Lie algebra under the commutator bracket, and the tangent space at the identity of its group of units; the unit sphere is a compact Lie group, and the exponential map connects the three descriptions. This article develops that structure: the Lie algebra of $\mathbb{H}$ and its decomposition into a centre and an orthogonal part, the exponential map and its closed form, the surjectivity of the exponential onto the group of units, the polar split of the units into a positive scale and the unit sphere, the compact subgroup $Sp(1)$ and its parametrisation, and the relation to the rotations and reflections of the geometry slot.
+The quaternion algebra is at once an associative algebra, a Lie algebra under the commutator bracket, and the tangent space at the identity of its group of invertibles; the unit sphere is a compact Lie group, and the exponential map connects the three descriptions. This article develops that structure: the Lie algebra of $\mathbb{H}$ and its decomposition into a centre and an orthogonal part, the exponential map and its closed form, the surjectivity of the exponential onto the group of invertibles, the polar split of the invertibles into a positive scale and the unit sphere, the compact subgroup $Sp(1)$ and its parametrisation, and the relation to the rotations and reflections of the geometry slot.
 
-The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra and the units, *The Scalar and Vector Subspaces of $\mathbb{H}$* for the decomposition, *Quaternion Rotations and Reflections* for the orthogonal actions, and *Quaternion Automorphisms and Derivations* for the derivation algebra, which is the Lie algebra computed here independently. The special functions are in *Quaternion Special Functions*.
+The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* for the algebra and the invertibles, *The Scalar and Vector Subspaces of $\mathbb{H}$* for the decomposition, *Quaternion Rotations and Reflections* for the orthogonal actions, and *Quaternion Automorphisms and Derivations* for the derivation algebra, which is the Lie algebra computed here independently. The special functions are in *Quaternion Special Functions*.
 
 The corpus's default base is a commutative ring with identity, but the exponential series, the closed form and the Lie group statements require a complete ordered field, so everything below is stated over $\mathbb{R}$; the algebraic identities remain meaningful for complex coefficients and are used in the comparison.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}\cong S^3$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$, norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1) = \{\tilde q : \langle\tilde q\rangle_{\natural} = 1\}\cong S^3$.
 
 ## The Lie Algebra Structure
 
@@ -47,7 +47,7 @@ $$
 
 which converges for every $\tilde q$ because the quaternion norm is multiplicative and $\mathbb{H}$ is complete as a finite-dimensional real space.
 
-**Proposition.** For every $\tilde q$ the exponential satisfies $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, so $\exp(\tilde q)$ is a unit with $|\exp(\tilde q)| = \exp(q_t)$; the exponential maps the pure imaginary subspace into the unit sphere.
+**Proposition.** For every $\tilde q$ the exponential satisfies $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, so $\exp(\tilde q)$ is invertible with $|\exp(\tilde q)| = \exp(q_t)$; the exponential maps the pure imaginary subspace into the unit sphere.
 
 *Proof.* By continuity of $\exp$ relative to the rational exponential and the identity $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2\mathrm{Sc}\tilde q)$, which holds for rational multiples and extends by continuity; for pure $\tilde q$, $q_t = 0$ and the quaternion norm is one.
 
@@ -67,7 +67,7 @@ and for $\vec q = 0$ it reduces to the real exponential $\exp(q_t) = \exp(q_t)$.
 
 ### Surjectivity
 
-**Theorem.** The exponential is surjective onto the group of units,
+**Theorem.** The exponential is surjective onto the group of invertibles,
 
 $$ \boxed{\; \exp(\mathbb{H}) = \mathbb{H}^{\times} = \mathbb{H}\setminus\{0\} \;} ,$$
 
@@ -85,9 +85,9 @@ and its restriction to the open set $\{\tilde q : |\vec q| < \pi\}$ is a diffeom
 
 *Proof.* $\exp(\tilde q) = 1$ forces $\exp(q_t) = 1$ and $\sin|\vec q| = 0$ with $\cos|\vec q| = 1$, so $q_t = 0$ and $|\vec q| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Theorem.** The group of units is the direct product of the positive scalars and the unit sphere,
+**Theorem.** The group of invertibles is the direct product of the positive scalars and the unit sphere,
 
 $$ \boxed{\; \mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1), \qquad \tilde q = |\tilde q|\,\tilde u, \quad \tilde u = \frac{\tilde q}{|\tilde q|} \;} ,$$
 
@@ -95,7 +95,7 @@ and the two factors commute and are the image under the exponential of the centr
 
 *Proof.* The polar split is *Quaternion Norm and Invertibility*; the scale factor is $\exp(q_t)$ with $q_t$ real and the unit factor is $\exp(\vec q)$ up to the periodicity of the pure component, so the two exponential images are the two factors.
 
-**Theorem.** The polar form and the exponential form are the same decomposition: every unit has the parametrisation
+**Theorem.** The polar form and the exponential form are the same decomposition: every invertible element has the parametrisation
 
 $$
 \tilde u = \exp(\mu\theta) = \cos\theta+\mu\sin\theta, \qquad \mu\in\operatorname{Im}\mathbb{H},\quad \langle \mu\rangle_{\natural} = 1,\quad \theta\in[0,\pi],
@@ -107,7 +107,7 @@ and the map $(\mu,\theta)\mapsto\exp(\mu\theta)$ is a diffeomorphism of the open
 
 ## The Compact Subgroup
 
-**Theorem.** The unit sphere $Sp(1)$ is a compact connected Lie group of dimension three, diffeomorphic to $S^3$ and isomorphic to $SU(2)$; it is the maximal compact subgroup of $\mathbb{H}^{\times}$, and the group of units is the product of it with the non-compact factor $\mathbb{R}_{>0}$.
+**Theorem.** The unit sphere $Sp(1)$ is a compact connected Lie group of dimension three, diffeomorphic to $S^3$ and isomorphic to $SU(2)$; it is the maximal compact subgroup of $\mathbb{H}^{\times}$, and the group of invertibles is the product of it with the non-compact factor $\mathbb{R}_{>0}$.
 
 *Proof.* The unit sphere is the set $\langle\tilde q\rangle_{\natural} = 1$, a closed bounded subset of $\mathbb{R}^4$, hence compact; multiplication is smooth and the inverse is smooth, so it is a Lie group of dimension three, and its identification with $SU(2)$ is standard. It is the maximal compact subgroup of the product $\mathbb{R}_{>0}\times Sp(1)$ because the line has no non-trivial compact subgroup.
 
@@ -147,7 +147,7 @@ $$
 \exp(t\,\operatorname{ad}_{\mu})(\tilde q) = \exp(t\mu)\,\tilde q\,\exp(-t\mu) = \operatorname{Ad}_{\exp(t\mu)}(\tilde q),
 $$
 
-for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of units agree under the exponential.
+for every $\tilde q\in\mathbb{H}$ and every $\mu\in\operatorname{Im}\mathbb{H}$; equivalently the adjoint representation of the Lie algebra and the adjoint action of the group of invertibles agree under the exponential.
 
 *Proof.* The identity $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ is the standard Lie-theoretic identity for an inner derivation, here computed from the series.
 
@@ -155,9 +155,9 @@ The identification of the adjoint action with the rotations of $\operatorname{Im
 
 ## Summary
 
-The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_t+\vec q) = \exp(q_t)(\cos|\vec q|+\frac{\vec q}{|\vec q|}\sin|\vec q|)$, it satisfies $\langle\exp \tilde q\rangle_{\natural} = \exp(2q_t)$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.
+The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_t+\vec q) = \exp(q_t)(\cos|\vec q|+\frac{\vec q}{|\vec q|}\sin|\vec q|)$, it satisfies $\langle\exp \tilde q\rangle_{\natural} = \exp(2q_t)$, and it is surjective onto the group of invertibles but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.
 
-The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = \exp(\alpha)\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{\exp(t\mu)}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in *Quaternion Rotations and Reflections*.
+The group of invertibles splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = \exp(\alpha)\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{\exp(t\mu)}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in *Quaternion Rotations and Reflections*.
 
 The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups are exactly what the definite quaternion norm buys.
 
@@ -173,7 +173,7 @@ The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups ar
 | $\exp(q_t+\vec q) = \exp(q_t)(\cos\lvert\vec q\rvert+\frac{\vec q}{\lvert\vec q\rvert}\sin\lvert\vec q\rvert)$ | Closed form |
 | $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ | Unit-sphere parametrisation, $\mu$ a pure unit |
 | $\exp^{-1}(1) = \{2\pi k\mu\}$ | Kernel of the exponential |
-| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$ | Polar split of the units |
+| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$ | Polar split of the invertibles |
 | $Sp(1)\cong S^3\cong SU(2)$ | Compact subgroup, maximal compact |
 | $\log \tilde q = \ln\lvert \tilde q\rvert+\mu\theta$ | Logarithm, inverse off the negative axis |
 | $\operatorname{Ad}_{\tilde u}(\tilde q) = \tilde u\tilde q\tilde u^{-1}$ | Adjoint action; $\exp(\operatorname{ad}_a) = \operatorname{Ad}_{\exp a}$ |
@@ -184,6 +184,6 @@ The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups ar
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map, the unit quaternions and the rotation group.
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2nd ed. 2015), for the exponential of a matrix Lie algebra and the Lie correspondence.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for $SU(2)$, its Lie algebra and the covering of $SO(3)$.
-- John Voight, *Quaternion Algebras* (Springer, 2021), for the quaternion exponential and the unit group.
+- John Voight, *Quaternion Algebras* (Springer, 2021), for the quaternion exponential and the group of invertibles.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the exponential of a multivector and the spin parametrisation.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the rotor exponential and the composition of rotations.

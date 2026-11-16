@@ -42,7 +42,7 @@ $$
 \breve Q\bar{\breve Q}=\bigl(|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2\bigr)+2j\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})
 $$
 
-lies in the cone $P$ exactly when $\breve Q$ is a unit. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$, an element of $P$ fixed by the bar, and the unit factor is
+lies in the cone $P$ exactly when $\breve Q$ is invertible. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$, an element of $P$ fixed by the bar, and the unit factor is
 
 $$
 u=\breve r^{-1}\breve Q,\qquad u\bar u=1.
@@ -137,7 +137,7 @@ $$
 
 so $c(s)=(1-is)/(1+is)=w$. Applying this to $w=u_+$ and $w=u_-$ gives the two coordinates, and an element of the torus is determined by its circular components.
 
-For a unit $\breve Q$ the circular components of the unit factor are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$, so the coordinates are
+For an invertible element $\breve Q$ the circular components of the unit factor are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$, so the coordinates are
 
 $$
 s_1=i\,\frac{Q_{+}-\rho_+}{Q_{+}+\rho_+},\qquad
@@ -158,7 +158,7 @@ $$
 
 that is $1+i(s'-s)+ss'=1+i(s-s')+ss'$, hence $s=s'$. The same for $s_2$.
 
-**Surjectivity.** This is the proposition of §*The Inverse*: for every unit $u$ with neither circular component equal to $-1$, the real numbers $s_1,s_2$ of that proposition satisfy $u(s_1,s_2)=u$.
+**Surjectivity.** This is the proposition of §*The Inverse*: for every invertible $u$ with neither circular component equal to $-1$, the real numbers $s_1,s_2$ of that proposition satisfy $u(s_1,s_2)=u$.
 
 The chart is therefore one-to-one, and its image is the torus with the two circles $M$ removed.
 
@@ -204,7 +204,7 @@ $$
 {\mathbb{B}_{\mathrm{red}}}^{\times}\setminus(W_+\cup W_-).
 $$
 
-The zero divisors are excluded twice over: they are the lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, and $Q_{\blacktriangle}=Q_{\blacktriangledown}$ lies in $W_-$ while $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ lies in $W_+$. The walls are larger than the zero divisors. A unit can have $Q_{+}$ real and negative, for instance $Q_{\blacktriangle}=-3/2$, $Q_{\blacktriangledown}=1/2$, where $Q_{+}=-1$ and $Q_{-}=-2$; such a unit lies on both walls and has no chart coordinate, although it has a perfectly good modulus–unit decomposition with unit factor $(-1,-1)$.
+The zero divisors are excluded twice over: they are the lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, and $Q_{\blacktriangle}=Q_{\blacktriangledown}$ lies in $W_-$ while $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ lies in $W_+$. The walls are larger than the zero divisors. An invertible element can have $Q_{+}$ real and negative, for instance $Q_{\blacktriangle}=-3/2$, $Q_{\blacktriangledown}=1/2$, where $Q_{+}=-1$ and $Q_{-}=-2$; such an invertible element lies on both walls and has no chart coordinate, although it has a perfectly good modulus–unit decomposition with unit factor $(-1,-1)$.
 
 In the formula $s_k=i(u_k-1)/(u_k+1)$ the two exclusions are visible at once: the denominator of the first vanishes at $u_+=-1$, that is $Q_{+}=-\rho_+$, and the denominator of the second at $u_-=-1$. The numerator and denominator of the second form both vanish at a zero divisor, where one of $\rho_+,\rho_-$ is zero and no decomposition of any kind exists.
 
@@ -309,7 +309,7 @@ The cut is not the zero-divisor set, which is the union of the two lines $Q_{\bl
 The chart has three properties, and they are the terms of an exchange.
 
 - **It is rational.** Both $c(s)$ and its inverse are ratios of polynomials, and the reconstruction uses field operations alone. No transcendental function and no infinite series occur.
-- **It is local.** It misses two circles of the torus, and therefore two walls of the unit group. Four charts, or a compactification in each component, are needed to recover the torus.
+- **It is local.** It misses two circles of the torus, and therefore two walls of the group of invertibles. Four charts, or a compactification in each component, are needed to recover the torus.
 - **It is unbounded.** Near a missed circle the coordinate escapes to infinity, and the two sides of a wall carry opposite signs of the corresponding coordinate.
 
 The modulus–unit form is global and uses a square root. The exponential form, treated in *Exponential Polar Decomposition of Reduced Biquaternions*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.
@@ -499,5 +499,5 @@ In the matrix picture the unit factor is orthogonally conjugate to the block dia
 - [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the transcendental coordinate on the torus.
 - [Rational-Chart Polar Decomposition of Complex Numbers](rational-chart-polar-decomposition-of-complex-numbers.html), for the complex member of the family.
 - [Rational-Chart Polar Decomposition of Split-Complex Numbers](rational-chart-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic companion.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the torus.
+- [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the torus.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two zero-divisor lines.

@@ -80,7 +80,7 @@ for the same graded commutator; on the even part, and on any pair with one even 
 
 *Proof.* The restriction to the even part is an anti-automorphism in either case; on the odd part, the sign in the Koszul rule is the only freedom, and it is the sign distinguishing the two classes. The commutation of $\alpha$ with $\sigma$ and the order of the three maps give the table.
 
-**Remark.** The two classes can be read through the grade involution: an invertible element $u$ of the even part defines an inner automorphism $\iota_u$ commuting with $\alpha$, and the conjugate $\iota_u\sigma\iota_u^{-1}$ is of the same kind as $\sigma$. The classification of the superviolutions up to conjugacy, and the correspondence with the symmetric and the alternating forms of the even part, belong to *Hilbert Algebras* and to Part II.
+**Remark.** The two classes can be read through the grade involution: An invertible element $u$ of the even part defines an inner automorphism $\iota_u$ commuting with $\alpha$, and the conjugate $\iota_u\sigma\iota_u^{-1}$ is of the same kind as $\sigma$. The classification of the superviolutions up to conjugacy, and the correspondence with the symmetric and the alternating forms of the even part, belong to *Hilbert Algebras* and to Part II.
 
 ## The Examples
 

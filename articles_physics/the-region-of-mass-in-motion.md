@@ -33,7 +33,7 @@ $$
 | the existence and uniqueness of the eigenbasis, the normalisation, the transverse construction | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) |
 | the Peirce corners, the special decomposition and the corner generators | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the minimal left ideals, the polarized module, the two Peirce copies | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
-| the multiplicative norm, the unit group and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the multiplicative norm, the group of invertibles and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the spectral criterion, the eigenvalues and the spectral-degenerate cone | [The Spectrum](../articles_maths/the-spectrum.html) |
 | the two predicates, the independence of the cones, the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the modulus, the unit factor and the three pairings of the polar word | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
@@ -57,9 +57,9 @@ $$
 
 It is open and dense in $\mathbb{B}$, of complex dimension four and real dimension eight. Its complement is a complex hypersurface of real codimension two and of Lebesgue measure zero. The region is connected and it is not simply connected.
 
-**A hundred random draws with complex normal coefficients gave a hundred elements of the region.** No draw landed on either cone. That is the numerical form of the statement that the union of two complex hypersurfaces has measure zero: a random element is a unit with two separated eigenvalues, and a degenerate element has to be arranged.
+**A hundred random draws with complex normal coefficients gave a hundred elements of the region.** No draw landed on either cone. That is the numerical form of the statement that the union of two complex hypersurfaces has measure zero: a random element is invertible with two separated eigenvalues, and a degenerate element has to be arranged.
 
-**The identity is not in the region.** $e_t$ has $B^{2}=0$, so it lies on the spectral wall. The region contains no subgroup, because every subgroup contains the identity. It is a symmetric subset of the unit group and not a subgroup.
+**The identity is not in the region.** $e_t$ has $B^{2}=0$, so it lies on the spectral wall. The region contains no subgroup, because every subgroup contains the identity. It is a symmetric subset of the group of invertibles and not a subgroup.
 
 ### The Spectrum and the Two Terms
 
@@ -135,7 +135,7 @@ Each is a complex plane. On each, left multiplication by $\tilde Q$ is $\operato
 
 ### Products and Inverses
 
-**The norm is multiplicative, so a product of two elements of the region is a unit.**
+**The norm is multiplicative, so a product of two elements of the region is invertible.**
 
 $$
 N(\tilde Q_2\tilde Q)=N(\tilde Q_2)N(\tilde Q)\neq0,
@@ -214,7 +214,7 @@ The product $\langle\tilde Q\rangle_{\natural}B^{2}$ is a single polynomial of d
 
 **The dimension count is the first asymmetry between the four strata.** The region has real dimension eight, the two mixed strata have six, and the doubly degenerate stratum has four. The partition entry stated these numbers; what matters here is their consequence. A stratum of codimension two does not separate: a path can pass from the region to the other side, but it does so at an isolated parameter value, and that value is where one of the two invariants vanishes. A stratum of codimension one would separate the algebra into two halves; these do not.
 
-**Two of the five descriptions of the region are worth restating in the language of this entry.** An element of the region is a unit whose two eigenvalues are distinct; and it is the only kind of element that admits a spectral decomposition into two non-trivial idempotents with distinct non-zero coefficients. The second description is the algebraic form of the phrase *two modes*, and the other three strata are where it fails: no unit, no separation, or a vanishing coefficient.
+**Two of the five descriptions of the region are worth restating in the language of this entry.** An element of the region is invertible whose two eigenvalues are distinct; and it is the only kind of element that admits a spectral decomposition into two non-trivial idempotents with distinct non-zero coefficients. The second description is the algebraic form of the phrase *two modes*, and the other three strata are where it fails: no unit, no separation, or a vanishing coefficient.
 
 ### The Eigenvalue Parametrisation
 
@@ -266,7 +266,7 @@ neither of which vanishes. So the loop lies in the region. Its image under the i
 
 **The identity is the first case.** $e_t$ is a scalar, so its vector part is zero and the two eigenvalues coincide at $1$. A region that excluded the identity is a region of *changes*, and this is the algebraic reason the region is a symmetric subset and not a subgroup.
 
-**The second case is the one that matters for the two-mode picture.** A non-trivial unipotent $u=e_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ has the double eigenvalue $1$ and the minimal polynomial $(X-1)^{2}$: it has one eigenvalue and no eigenbasis. It is a unit, and it is on the wall.
+**The second case is the one that matters for the two-mode picture.** A non-trivial unipotent $u=e_t+\vec\Upsilon$ with $\vec\Upsilon^{2}=0$ has the double eigenvalue $1$ and the minimal polynomial $(X-1)^{2}$: it has one eigenvalue and no eigenbasis. It is invertible, and it is on the wall.
 
 ## The Spectrum and the Two Terms
 
@@ -512,7 +512,7 @@ $$
 
 ### The Product Law on the Region
 
-**The region is a subset of the unit group, and the unit group is the union of the region and the spectral wall.**
+**The region is a subset of the group of invertibles, and the group of invertibles is the union of the region and the spectral wall.**
 
 $$
 \mathbb{B}^{\times}=\Sigma_{11}\sqcup\Sigma_{10},\qquad
@@ -831,7 +831,7 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 
 **The interpretation is that rest is a boundary case of motion and not the base case.** A treatment that begins from the rest frame begins on a wall, and the generic element is not the one at rest. That is the opposite of the usual order of exposition, where the rest frame is the simple case and motion is a transformation of it. In the algebra the simple case is the wall, and the generic case has two modes.
 
-**The absence of a subgroup is the precise form of the statement.** A subgroup would contain the identity, the identity is on the wall, and a wall has no interior. So no set of reversible motions that is closed under composition sits inside the region: every subgroup of the unit group meets the wall. Composition always eventually returns to rest.
+**The absence of a subgroup is the precise form of the statement.** A subgroup would contain the identity, the identity is on the wall, and a wall has no interior. So no set of reversible motions that is closed under composition sits inside the region: every subgroup of the group of invertibles meets the wall. Composition always eventually returns to rest.
 
 **The boundary.** The word *generic* is algebraic. A physical system can sit at rest by symmetry, and does; the claim is about the structure of the algebra, not about the frequency of rest in nature.
 
@@ -936,7 +936,7 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 ## Summary
 
 - $\Sigma_{11}=\{N\neq0,\ B^{2}\neq0\}$ is the complement of two cones: open, dense, connected, not simply connected, of real dimension eight.
-- Its elements are units with two distinct non-zero eigenvalues $\lambda_\pm=Q_t\pm iB$, and $N=\lambda_+\lambda_-$, $B^{2}=-(\lambda_+-\lambda_-)^{2}/4$.
+- Its elements are invertible with two distinct non-zero eigenvalues $\lambda_\pm=Q_t\pm iB$, and $N=\lambda_+\lambda_-$, $B^{2}=-(\lambda_+-\lambda_-)^{2}/4$.
 - The two-term writing $\tilde Q=\lambda_+e_++\lambda_-e_-$ is unique and both terms are null; the region is the only stratum where this holds with two non-zero coefficients.
 - The spectrum fixes the invariants and not the element: the fibre is four-dimensional and carries the direction of $\vec Q$.
 - The eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ makes left multiplication $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ and right multiplication $\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-)$.
@@ -991,4 +991,4 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 
 **Mathematics.** [The N-Regular, Spectrally Regular Sector](../articles_maths/the-n-regular-spectrally-regular-sector.html) is the source; [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) owns the construction and the normalisation of the eigenbasis, and [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) owns the corners.
 
-**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word used in §*The Polar Word and the Flow*. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the two-sided operator and the boost rotor. [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word used in §*The Polar Word and the Flow*. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the two-sided operator and the boost rotor. [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.

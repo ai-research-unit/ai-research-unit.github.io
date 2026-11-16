@@ -16,7 +16,7 @@ The conventions are those of the companion articles, and none is restated here: 
 
 ### The Spaces
 
-Liu's construction lives on the product of three spaces. The element $\tilde U$ is a unit biquaternion of the Lorentz group; it acts on the three spaces by three inequivalent linear maps — left multiplication, right multiplication, and the congruence on the vector. Each space is four-real-dimensional, and its carrier is a four-vector of components.
+Liu's construction lives on the product of three spaces. The element $\tilde U$ is invertible biquaternion of the Lorentz group; it acts on the three spaces by three inequivalent linear maps — left multiplication, right multiplication, and the congruence on the vector. Each space is four-real-dimensional, and its carrier is a four-vector of components.
 
 | Space | Name | Real dimension | Action of $\tilde U$ | Carrier |
 |---|---|---|---|---|
@@ -42,7 +42,7 @@ The basis operators are the objects the construction uses: the trilinear form, t
 $$
 C_\mu C_\nu(Q) = i^2\,a_\mu a_\nu\,Q\,b_\nu b_\mu = -\,a_\mu a_\nu\,Q\,b_\nu b_\mu ,
 $$
-a derived form. The two prefactors multiply to $i^2=-1$, and what survives is a product of the units. That minus is the whole of the double $i$: it is used once, here, and it never appears in a display. The four generators obey the anticommutation relations, on every $Q$,
+a derived form. The two prefactors multiply to $i^2=-1$, and what survives is a product of the invertibles. That minus is the whole of the double $i$: it is used once, here, and it never appears in a display. The four generators obey the anticommutation relations, on every $Q$,
 $$
 C_\mu C_\nu(Q) + C_\nu C_\mu(Q) = 2\varepsilon_\mu\delta_{\mu\nu}Q ,
 $$
@@ -177,7 +177,7 @@ The contrast with Cartan's case is worth naming. There the triality automorphism
 
 ## Open Questions
 
-1. **The order-three automorphisms of $\mathbb{B}$.** The corpus's *Biquaternion Automorphisms and Derivations* records the inner automorphisms of $\mathbb{B}$ — conjugations by the unit group — and the outer ones. The ding map $J$ is an outer permutation of three spaces; is it induced by an automorphism of the algebra, or by an anti-automorphism, or by neither? An automorphism of $\mathbb{B}$ that realises $J$ on the s-vector would settle the question.
+1. **The order-three automorphisms of $\mathbb{B}$.** The corpus's *Biquaternion Automorphisms and Derivations* records the inner automorphisms of $\mathbb{B}$ — conjugations by the group of invertibles — and the outer ones. The ding map $J$ is an outer permutation of three spaces; is it induced by an automorphism of the algebra, or by an anti-automorphism, or by neither? An automorphism of $\mathbb{B}$ that realises $J$ on the s-vector would settle the question.
 
 2. **The relation to the Cartan case.** The four-dimensional ding and the eight-dimensional triality are the $4$ and $8$ cases of the Hurwitz list. Is there a uniform construction for $1, 2, 4, 8$ — with the complex numbers, the quaternions and the octonions? The $1$- and $2$-dimensional cases are degenerate; the $4$- and $8$-dimensional cases are the ones Liu's construction and Cartan's triality treat.
 

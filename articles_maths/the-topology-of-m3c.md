@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The algebra $M_3(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{18}$ and is contractible; its group of units $GL_3(\mathbb{C})$ is homotopy equivalent to the compact $*$-unitary group $U(3)$, with**
+**The algebra $M_3(\mathbb{C})$ is homeomorphic to $\mathbb{R}^{18}$ and is contractible; its group of invertibles $GL_3(\mathbb{C})$ is homotopy equivalent to the compact $*$-unitary group $U(3)$, with**
 
 $$
 \pi_1(GL_3)=\mathbb{Z},\qquad

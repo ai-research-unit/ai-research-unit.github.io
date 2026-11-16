@@ -19,7 +19,7 @@ and the reflection condition $\alpha(a)=a^{-1}$ collapses the two parameters: **
 
 ## The Adjoint of a Reflection
 
-**Definition.** A **reflection** of the Clifford algebra is a signed two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ a unit satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** two-sided operators are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
+**Definition.** A **reflection** of the Clifford algebra is a signed two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ with $a$ an invertible element satisfying the **reflection condition** $a\,\alpha(a)=1$, equivalently $\alpha(a)=a^{-1}$; the **reflection-shaped** two-sided operators are those of the form $\Sigma^{\alpha}_{a,a^{-1}}$ with no condition on $a\alpha(a)$.
 
 **Theorem.** Every reflection is self-adjoint for the standard form:
 
@@ -35,7 +35,7 @@ $$
 
 ## The Self-Adjointness Criterion
 
-**Theorem.** Let $a$ be a unit. Then the reflection-shaped two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $\alpha(a)a$ is central. In particular every reflection ($\alpha(a)a=1$) is self-adjoint, and the self-adjointness of a reflection-shaped two-sided operator is exactly the centrality of the product of the parameter with its grade-twisted value.
+**Theorem.** Let $a$ be an invertible element. Then the reflection-shaped two-sided operator $\Sigma^{\alpha}_{a,a^{-1}}$ is self-adjoint if and only if $\alpha(a)a$ is central. In particular every reflection ($\alpha(a)a=1$) is self-adjoint, and the self-adjointness of a reflection-shaped two-sided operator is exactly the centrality of the product of the parameter with its grade-twisted value.
 
 **Proof.** By the adjoint formula, $\bigl(\Sigma^{\alpha}_{a,a^{-1}}\bigr)^{*}=\Sigma^{\alpha}_{\alpha(a)^{-1},\alpha(a)}$, which is the reflection-shaped two-sided operator $\Sigma^{\alpha}_{b,b^{-1}}$ with $b=\alpha(a)^{-1}$. By the injectivity-up-to-the-centre of the reflection correspondence of *Reflections as Signed The Family of Two-Sided Operators on a Clifford Algebra*, two reflection-shaped two-sided operators coincide exactly when the products $b^{-1}a$ differ by a central unit; here $b^{-1}a=\alpha(a)a$. Hence self-adjointness holds exactly when $\alpha(a)a$ is central.
 
@@ -43,9 +43,9 @@ $$
 
 ## Failure in the Degenerate Case
 
-**Definition.** A reflection-shaped two-sided operator is **reflection-degenerate** when $a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not a unit and $\Sigma^{\alpha}_{a,a^{-1}}$ is not defined.
+**Definition.** A reflection-shaped two-sided operator is **reflection-degenerate** when $a\alpha(a)$ is not central, and **totally degenerate** when $a$ is not invertible and $\Sigma^{\alpha}_{a,a^{-1}}$ is not defined.
 
-**Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is a unit, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
+**Theorem (failure of self-adjointness).** There exist Clifford algebras and units $a$ for which $\Sigma^{\alpha}_{a,a^{-1}}$ is not self-adjoint. Concretely, in the Euclidean Clifford algebra $\mathrm{Cl}_4$ with $e_1^2=e_2^2=e_3^2=e_4^2=-1$ and the standard form, the even element $a=1+e_1e_2$ is invertible, its grade-twisted product is $\alpha(a)a=a^{2}=2e_1e_2$, which is not central, and the conjugation by $a$ has adjoint the conjugation by $a^{-1}$:
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,a^{-1}}=L_{a}R_{a^{-1}} , \qquad \bigl(L_{a}R_{a^{-1}}\bigr)^{*}=L_{a^{-1}}R_{a}\neq L_{a}R_{a^{-1}}\;} .
@@ -57,7 +57,7 @@ $$
 a\,e_1\,a^{-1}=e_2 , \qquad a^{-1}\,e_1\,a=-e_2 .
 $$
 
-**Corollary (the totally degenerate case).** When $a$ is not a unit the reflected two-sided operator does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
+**Corollary (the totally degenerate case).** When $a$ is not invertible the reflected two-sided operator does not exist; the operator $\Sigma^{\alpha}_{a,a}$ is defined for every $a$, and its square is
 
 $$
 \boxed{\;\Sigma^{\alpha}_{a,a}\circ\Sigma^{\alpha}_{a,a}=\Sigma_{a\alpha(a),\,\alpha(a)a}\;} ,
@@ -97,7 +97,7 @@ In $\mathrm{Cl}_4$ with the negative-definite form and the even unit $a=1+e_1e_2
 
 ## Summary
 
-A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with the reflection condition $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; therefore **every reflection is self-adjoint** for the standard form. More generally, a reflection-shaped two-sided operator is self-adjoint exactly when the product $\alpha(a)a$ is **central**, the centrality being the relaxation of the reflection normalisation, and in the central-simple case the criterion reads $\alpha(a)a\in F\cdot1$. The **degenerate** case in which $\alpha(a)a$ is not central gives a reflection-shaped two-sided operator that is not self-adjoint; the explicit example is the conjugation by the even unit $a=1+e_1e_2$ in $\mathrm{Cl}_4$ with the negative-definite form, whose adjoint is the conjugation by $a^{-1}$ and which differs from it on $e_1$. The **totally degenerate** case, in which $a$ is not a unit, produces no reflection; the operator $\Sigma^{\alpha}_{a,a}$ has square $\Sigma_{a\alpha(a),\alpha(a)a}$, which is zero for an isotropic vector $u$ and makes $\Sigma^{\alpha}_{u,u}$ square-zero. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, the fixed part being $\alpha(x)=a^{-1}xa$ and, on the quadratic space, the hyperplane $u^{\perp}$. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
+A **signed reflection** $\Sigma^{\alpha}_{a,a^{-1}}$ with the reflection condition $a\alpha(a)=1$ has adjoint $\Sigma^{\alpha}_{\alpha(a^{-1}),\alpha(a)}$, which equals the reflection itself because $\alpha(a)=a^{-1}$; therefore **every reflection is self-adjoint** for the standard form. More generally, a reflection-shaped two-sided operator is self-adjoint exactly when the product $\alpha(a)a$ is **central**, the centrality being the relaxation of the reflection normalisation, and in the central-simple case the criterion reads $\alpha(a)a\in F\cdot1$. The **degenerate** case in which $\alpha(a)a$ is not central gives a reflection-shaped two-sided operator that is not self-adjoint; the explicit example is the conjugation by the even unit $a=1+e_1e_2$ in $\mathrm{Cl}_4$ with the negative-definite form, whose adjoint is the conjugation by $a^{-1}$ and which differs from it on $e_1$. The **totally degenerate** case, in which $a$ is not invertible, produces no reflection; the operator $\Sigma^{\alpha}_{a,a}$ has square $\Sigma_{a\alpha(a),\alpha(a)a}$, which is zero for an isotropic vector $u$ and makes $\Sigma^{\alpha}_{u,u}$ square-zero. The $\pm1$-eigenspace decomposition of a reflection is its spectral decomposition, the fixed part being $\alpha(x)=a^{-1}xa$ and, on the quadratic space, the hyperplane $u^{\perp}$. The analytic spectral theory of the self-adjoint reflections belongs to a later Part.
 
 ## Summary of Notation
 

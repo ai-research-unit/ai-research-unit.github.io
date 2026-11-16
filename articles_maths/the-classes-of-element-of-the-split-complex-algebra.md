@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The corpus studies, for each algebra of the ladder, the classes of element singled out by the multiplication: the units and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
+The corpus studies, for each algebra of the ladder, the classes of element singled out by the multiplication: the invertibles and the zero divisors, the idempotents, the nilpotents, the square roots of the three central values $-1$, $0$ and $+1$, and the square roots of a general element. This article is the **hub** of those classes for the split-complex algebra $\mathbb{C}_{\mathrm{spl}}$, the two-dimensional member of the family. It names each class with its pointer, records the inclusions and the disjointness among the classes, and owns the one object that none of the specialised articles carries: the **order cone of squares**.
 
 **The classes and their articles.** The classes are now developed in the articles of the block, one subject per article:
 
-- the units, the norm and the criterion of invertibility are *Norm and Invertibility in the General Split-Complex Algebra*;
+- the invertibles, the norm and the criterion of invertibility are *Norm and Invertibility in the General Split-Complex Algebra*;
 - the zero divisors, their two families and the null cone are *Zero Divisors of the Split-Complex Algebra*;
 - the annihilators and the multiplication operators are *Annihilators of the Split-Complex Algebra*;
 - the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Split-Complex Algebra*;
@@ -16,7 +16,7 @@ The corpus studies, for each algebra of the ladder, the classes of element singl
 
 This article does not restate the proofs of those articles. It records the **relations among the classes**, which no single article owns, and the order cone of squares, which is the image of the square map and the order that the algebra carries.
 
-**The results.** The elements of $\mathbb{C}_{\mathrm{spl}}$ fall into the three disjoint classes: the units, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
+**The results.** The elements of $\mathbb{C}_{\mathrm{spl}}$ fall into the three disjoint classes: the invertibles, the zero element, and the zero divisors. The idempotents are the four elements $0,1,\Pi_{+},\Pi_{-}$; the nontrivial ones are the primitive zero divisors, and $0$ is an idempotent but not a zero divisor. There are no nonzero nilpotents, so the nilpotent class is empty; the square-zero elements are exactly $\{0\}$, which is the root of $0$ and is not a nilpotent under the corpus convention. The roots of $+1$ are the four elements $\pm1,\pm j$, all units; the roots of $-1$ are empty; the roots of a general element exist exactly on the forward cone $\mathcal{C}=\{q\ge|q'|\}$, with four, two, one or no roots according to the position in the cone. The forward cone is a pointed closed convex cone, the image of the square map, and the order it defines is compatible with addition and with multiplication by elements of the cone.
 
 ## The Classes and Their Articles
 
@@ -37,25 +37,25 @@ This article does not restate the proofs of those articles. It records the **rel
 
 ## The Inclusions and the Disjointness
 
-**The units, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents meet the zero divisors in the two nontrivial idempotents and meet the units in $1$; the nilpotents are empty; the roots of $+1$ are units; the roots of $0$ are the origin.**
+**The invertibles, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents meet the zero divisors in the two nontrivial idempotents and meet the invertibles in $1$; the nilpotents are empty; the roots of $+1$ are invertible; the roots of $0$ are the origin.**
 
 ### The Partition by Invertibility
 
 For $Q\in\mathbb{C}_{\mathrm{spl}}$ exactly one of the following holds:
 
-1. $Q$ is a unit: $Q_{+}Q_{-}\neq0$;
+1. $Q$ is invertible: $Q_{+}Q_{-}\neq0$;
 2. $Q=0$;
 3. $Q$ is a zero divisor: $Q_{+}Q_{-}=0$ and $Q\neq0$.
 
 **Proof.** This is the three-way classification of *Norm and Invertibility in the General Split-Complex Algebra*, read in the idempotent coordinates.
 
-So the units and the zero divisors do not meet, and the origin is neither. The non-units are the origin and the zero divisors; they do not form an ideal, because $\Pi_{+}+\Pi_{-}=1$.
+So the invertibles and the zero divisors do not meet, and the origin is neither. The non-invertibles are the origin and the zero divisors; they do not form an ideal, because $\Pi_{+}+\Pi_{-}=1$.
 
 ### The Idempotents
 
 The idempotents are $0,1,\Pi_{+},\Pi_{-}$. Their intersections with the three classes are:
 
-- $1$ is a unit;
+- $1$ is invertible;
 - $0$ is the zero element;
 - $\Pi_{+}$ and $\Pi_{-}$ are zero divisors.
 
@@ -77,7 +77,7 @@ $$
 \boxed{\;\mathcal{C}=\{Q:Q_{+}\ge0,\ Q_{-}\ge0\}=\{Q:q\ge|q'|\}\;}.
 $$
 
-On the interior of the cone there are four roots; on the boundary minus the origin there are two; at the origin there is one; outside there are none. A root of a unit is a unit, a root of a nonzero zero divisor is a zero divisor, and the root of $0$ is $0$. The classification is *Square Roots of a General Element in the Split-Complex Algebra*.
+On the interior of the cone there are four roots; on the boundary minus the origin there are two; at the origin there is one; outside there are none. A root of an invertible element is invertible, a root of a nonzero zero divisor is a zero divisor, and the root of $0$ is $0$. The classification is *Square Roots of a General Element in the Split-Complex Algebra*.
 
 ### The Two Algebraic Norms and the Classes
 
@@ -86,9 +86,9 @@ The two algebraic norms see different classes, and the difference is the source 
 | norm | value | vanishing set | class it decides |
 |---|---|---|---|
 | $\langle Q\rangle=Q^{2}$ | $\mathbb{C}_{\mathrm{spl}}$-valued | $\{0\}$ | none; it does not decide invertibility |
-| $\langle Q\rangle_{*}=Q\bar Q$ | real, signature $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the units (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
+| $\langle Q\rangle_{*}=Q\bar Q$ | real, signature $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the invertibles (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
 
-The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the units are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.
+The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the invertibles are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.
 
 ## The Order Cone of Squares
 
@@ -146,7 +146,7 @@ The order is not total: $\Pi_{+}$ and $\Pi_{-}$ are incomparable, since their di
 
 **Corollary.** A radicand $Q$ has a square root exactly when $Q\succeq0$; the square root is unique in $\mathcal{C}$, namely $\sqrt{Q_{+}}\,\Pi_{+}+\sqrt{Q_{-}}\,\Pi_{-}$, and the four roots of an interior radicand are the independent sign choices in the two idempotent coordinates.
 
-The order cone is therefore the exact domain of the square-root problem: the forward cone is the image of the square, the set of radicands that have a root, and the order that the algebra carries. The boundary of the cone is the non-negative part of the null cone of the zero divisors, and the interior is the set of units that are squares.
+The order cone is therefore the exact domain of the square-root problem: the forward cone is the image of the square, the set of radicands that have a root, and the order that the algebra carries. The boundary of the cone is the non-negative part of the null cone of the zero divisors, and the interior is the set of invertibles that are squares.
 
 ### The Order and the Classes
 
@@ -157,7 +157,7 @@ The order cone is therefore the exact domain of the square-root problem: the for
 | apex | $q=q'=0$ | the zero element; one root |
 | complement of $\mathcal{C}$ | $q<|q'|$ | no root; the units off the negative null rays, and the zero divisors on them |
 
-The complement contains the **backward cone** $- \mathcal{C}=\{q\le-|q'|\}$ away from the apex, whose interior points are units with no square root and whose boundary, the two negative null rays, are zero divisors; the two side sectors between the cones contain units and no zero divisors.
+The complement contains the **backward cone** $- \mathcal{C}=\{q\le-|q'|\}$ away from the apex, whose interior points are invertible with no square root and whose boundary, the two negative null rays, are zero divisors; the two side sectors between the cones contain units and no zero divisors.
 
 ## The Three Central Values Compared
 
@@ -173,7 +173,7 @@ The value $+1$ has the four roots because the non-central unit $j$ is a root of 
 
 ## Summary
 
-The classes of element of the split-complex algebra are indexed by the articles of the block: the units and the criterion of invertibility by the general norm article, the plain norm by the other, the annihilators by the annihilator article, the roots and the idempotents by the two central-value articles, the general roots by the square-root article, and the ideals by the Peirce article. The units, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents are $0,1,\Pi_{+},\Pi_{-}$, with the two nontrivial ones the primitive zero divisors; there are no nonzero nilpotents and the square-zero elements are $\{0\}$; the roots of $+1$ are the four units $\pm1,\pm j$; the roots of $-1$ are empty.
+The classes of element of the split-complex algebra are indexed by the articles of the block: the invertibles and the criterion of invertibility by the general norm article, the plain norm by the other, the annihilators by the annihilator article, the roots and the idempotents by the two central-value articles, the general roots by the square-root article, and the ideals by the Peirce article. The invertibles, the zero element and the zero divisors are the three disjoint classes of the plain product; the idempotents are $0,1,\Pi_{+},\Pi_{-}$, with the two nontrivial ones the primitive zero divisors; there are no nonzero nilpotents and the square-zero elements are $\{0\}$; the roots of $+1$ are the four units $\pm1,\pm j$; the roots of $-1$ are empty.
 
 The order cone of squares is the forward cone
 
@@ -181,7 +181,7 @@ $$
 \mathcal{C}=\{Q:Q_{+}\ge0,Q_{-}\ge0\}=\{Q:q\ge|q'|\},
 $$
 
-the image of the square map, a pointed closed convex cone. It defines the componentwise partial order of the algebra, compatible with addition and with multiplication by elements of the cone, and it is the exact domain of the square-root problem: four roots in its interior, two on its boundary minus the apex, one at the apex, none outside. Its boundary is the non-negative part of the null cone of the zero divisors, and its interior is the set of units that are squares.
+the image of the square map, a pointed closed convex cone. It defines the componentwise partial order of the algebra, compatible with addition and with multiplication by elements of the cone, and it is the exact domain of the square-root problem: four roots in its interior, two on its boundary minus the apex, one at the apex, none outside. Its boundary is the non-negative part of the null cone of the zero divisors, and its interior is the set of invertibles that are squares.
 
 ## Summary of Notation
 

@@ -32,13 +32,13 @@ Throughout, $k$ is a field, $A$ is a unital associative $k$-algebra with $1_A\ne
 
 **(c)** $e$ is trivial, $e=0$ or $e=1_A$, exactly when $f$ is trivial; $e$ is central exactly when $f$ is central.
 
-**(d)** $e$ is a unit exactly when $e=1_A$, and then $f=0$.
+**(d)** $e$ is invertible exactly when $e=1_A$, and then $f=0$.
 
 **(e)** A nontrivial idempotent is a zero divisor: $e(1_A-e)=0=(1_A-e)e$.
 
 **(f)** If $e$ is primitive, $f$ need not be primitive.
 
-*Proof.* (a) $f^2=1_A-2e+e^2=1_A-e=f$, and $ef=e-e^2=0=fe$. If $g$ is idempotent with $eg=ge=0$ and $e+g=1_A$, then $g=1_A-e=f$. (b) $1_A-(1_A-e)=e$. A fixed point would satisfy $2e=1_A$; multiplying by $e$ gives $2e=e$, hence $e=0$ and $1_A=0$, against the hypothesis. (c) The first assertion follows from (b), and $e$ is central exactly when $1_A-e$ is. (d) If $e$ is a unit, then $e=e^2$ gives $1_A=e$ after multiplying by $e^{-1}$. (e) is the computation of (a). (f) In $M_3(k)$ the idempotent $E_{11}$ is primitive, because its corner is $kE_{11}$, while $1_A-E_{11}$ has corner $M_2(k)$, which contains the idempotent $E_{22}$ different from $0$ and $1_A-E_{11}$. The corner criterion is that of *Primitive Idempotents and Minimal Left Ideals*, §*The corner criterion*.
+*Proof.* (a) $f^2=1_A-2e+e^2=1_A-e=f$, and $ef=e-e^2=0=fe$. If $g$ is idempotent with $eg=ge=0$ and $e+g=1_A$, then $g=1_A-e=f$. (b) $1_A-(1_A-e)=e$. A fixed point would satisfy $2e=1_A$; multiplying by $e$ gives $2e=e$, hence $e=0$ and $1_A=0$, against the hypothesis. (c) The first assertion follows from (b), and $e$ is central exactly when $1_A-e$ is. (d) If $e$ is invertible, then $e=e^2$ gives $1_A=e$ after multiplying by $e^{-1}$. (e) is the computation of (a). (f) In $M_3(k)$ the idempotent $E_{11}$ is primitive, because its corner is $kE_{11}$, while $1_A-E_{11}$ has corner $M_2(k)$, which contains the idempotent $E_{22}$ different from $0$ and $1_A-E_{11}$. The corner criterion is that of *Primitive Idempotents and Minimal Left Ideals*, §*The corner criterion*.
 
 **Remark.** Part (f) is the first warning that the complement does not preserve the whole theory: it preserves centrality, but not primitivity. In $M_n(k)$ with $n\ge3$, $E_{11}$ is primitive and $1_A-E_{11}$ has rank $n-1\ge2$, so it is not primitive.
 

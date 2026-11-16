@@ -37,7 +37,7 @@ and the reverse products negative: $\vec e_y\vec e_x=-\vec e_z$, $\vec e_z\vec e
 $$
 N(a)=a_t^2+a_x^2+a_y^2+a_z^2
 $$
-can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+i\vec e_x)(1-i\vec e_x)=1-\vec e_x^2=0$. The units are the elements with $N(a)\ne0$. This matters below: $L_a$ is invertible exactly when $a$ is a unit.
+can vanish for $a\ne0$, and then $a$ is a zero divisor. For example $(1+i\vec e_x)(1-i\vec e_x)=1-\vec e_x^2=0$. The units are the elements with $N(a)\ne0$. This matters below: $L_a$ is invertible exactly when $a$ is invertible.
 
 **The multiplication table of the basis.** Row $\mu$, column $\nu$, entry $e_\mu e_\nu$. It is the quaternion table, and it is the left table of §*Multiplication*.
 
@@ -63,7 +63,7 @@ L_{\mathrm{axf},\vec e_y}=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\en
 L_{\mathrm{axf},\vec e_z}=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
 $$
 
-**The laws.** $L_aL_b=L_{ab}$, $L_{\mathrm{axf},e_t}=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is a unit. The image $L(\mathbb{B})$ has complex dimension four.
+**The laws.** $L_aL_b=L_{ab}$, $L_{\mathrm{axf},e_t}=\mathrm{I}_4$, and $L_a$ is invertible exactly when $a$ is invertible. The image $L(\mathbb{B})$ has complex dimension four.
 
 ### Right multiplication
 
@@ -84,7 +84,7 @@ $$
 R_b=D\,L_{b^{\dagger}}\,D .
 $$
 
-**The laws.** $R_aR_b=R_{ba}$, $R_{\mathrm{axf},e_t}=\mathrm{I}_4$, and $R_b$ is invertible exactly when $b$ is a unit. The image $R(\mathbb{B})$ has complex dimension four.
+**The laws.** $R_aR_b=R_{ba}$, $R_{\mathrm{axf},e_t}=\mathrm{I}_4$, and $R_b$ is invertible exactly when $b$ is invertible. The image $R(\mathbb{B})$ has complex dimension four.
 
 ### The two-sided matrices
 

@@ -16,7 +16,7 @@ $$
 \Sigma(\omega)=\sum_{\alpha}a_\alpha\prod_{k}(2\pi i\tilde{Ζ}\omega_k)^{\alpha_k},
 $$
 
-an element of $\mathbb{B}$ chosen so that the transform of $P(D)u$ is $\Sigma$ times the transform of $u$. The frequency set is $Z(P)=\{\omega:N(\Sigma(\omega))=0\}$, the set on which the symbol is not a unit. **The object of this article is the kernel of the reciprocal**,
+an element of $\mathbb{B}$ chosen so that the transform of $P(D)u$ is $\Sigma$ times the transform of $u$. The frequency set is $Z(P)=\{\omega:N(\Sigma(\omega))=0\}$, the set on which the symbol is not invertible. **The object of this article is the kernel of the reciprocal**,
 
 $$
 \kappa_\Sigma(t)=\int_{\mathbb{R}^{n}}\overline{W(t,\omega)}\,\Sigma(\omega)^{-1}\,d\omega ,
@@ -24,7 +24,7 @@ $$
 
 the element that carries a datum to a solution. Three questions decide what that integral means: where $\Sigma^{-1}$ fails to exist, which is the question of the poles; how $\kappa_\Sigma$ behaves at large $\lvert t\rvert$, which is the question of the type; and what the singularity contributes there, which is the question of the tail.
 
-**The status of the sections, stated at once.** §*The Adjugate Over the Norm* is proved and needs no hypothesis beyond finite dimension. §*Residues at a Simple Null Point* and §*Residues at a Repeated Null Point* are proved in one frequency variable for a symbol with values in a commutative plane of $\mathbb{B}$, the plane case, which is where a residue is a number. §*Exponential Type and the Tail* quotes Paley–Wiener and Plancherel and proves what is read off them. §*Two Contours, Not One* proves the one-variable expansion for an arbitrary symbol, commuting or not. §*The Obstacle: Real Codimension Two* proves that the method does not extend to two or more variables, and states without proof what would replace it. §*Inversion Where the Symbol Is Not a Unit* is proved in the plane case and quoted in general.
+**The status of the sections, stated at once.** §*The Adjugate Over the Norm* is proved and needs no hypothesis beyond finite dimension. §*Residues at a Simple Null Point* and §*Residues at a Repeated Null Point* are proved in one frequency variable for a symbol with values in a commutative plane of $\mathbb{B}$, the plane case, which is where a residue is a number. §*Exponential Type and the Tail* quotes Paley–Wiener and Plancherel and proves what is read off them. §*Two Contours, Not One* proves the one-variable expansion for an arbitrary symbol, commuting or not. §*The Obstacle: Real Codimension Two* proves that the method does not extend to two or more variables, and states without proof what would replace it. §*Inversion Where the Symbol Is Not Invertible* is proved in the plane case and quoted in general.
 
 **What is quoted, and from where.** The Peirce frame — the idempotents $\Pi_\pm$, the ideals, the scalars — is quoted from *Biquaternion Continuous Harmonic Analysis* and is not rebuilt here, and Paley–Wiener and Plancherel are quoted from the same article. The identity $\det L_{\tilde Q}=\lvert N(\tilde Q)\rvert^{4}$, the null cone and the rank of left multiplication are quoted from *The Fourier Transform and the Symbol of a Differential Operator*. **Nothing is quoted without the hypotheses that make it true.**
 
@@ -52,7 +52,7 @@ $$
 
 *Proof.* Write $\tilde Q=Q_te_t+Q_v$ with $Q_v=\sum_kQ_k\vec e_k$. The product of two vector parts is $\vec e_j\vec e_k+\vec e_k\vec e_j=0$ for $j\ne k$, so $Q_v^{2}=-\sum_kQ_k^{2}e_t$, and then $\tilde Q\overline{\tilde Q}=Q_t^{2}e_t-Q_v^{2}=(Q_t^{2}+\sum_kQ_k^{2})e_t$. The reversed product is the same computation, because the two factors commute with each other and the scalar coefficients are central. Centrality of $N$ is immediate from the display, and the reciprocal follows by multiplying $\Sigma\bar\Sigma=N$ by the central scalar $1/N$.
 
-**Corollary (the reciprocal of the regular representation).** For a symbol that is a unit, $L_{\Sigma}^{-1}=N(\Sigma)^{-1}L_{\overline{\Sigma}}$. Since $\det L_{\Sigma}=\lvert N(\Sigma)\rvert^{4}$ by *The Fourier Transform and the Symbol of a Differential Operator*, the adjugate of the real $8\times8$ block is
+**Corollary (the reciprocal of the regular representation).** For a symbol that is invertible, $L_{\Sigma}^{-1}=N(\Sigma)^{-1}L_{\overline{\Sigma}}$. Since $\det L_{\Sigma}=\lvert N(\Sigma)\rvert^{4}$ by *The Fourier Transform and the Symbol of a Differential Operator*, the adjugate of the real $8\times8$ block is
 
 $$
 \operatorname{adj}L_{\Sigma}=\lvert N(\Sigma)\rvert^{2}\,\overline{N(\Sigma)}\,L_{\overline{\Sigma}} ,
@@ -142,7 +142,7 @@ and the same computation at $\omega_1$, with the two signs exchanged, gives $-\P
 
 *Proof.* The residue is $\overline{\Sigma}(\omega_0)$ divided by the nonzero complex number $N'(\omega_0)$. Since $N(\overline{\Sigma})=N(\Sigma)$, because conjugation changes the sign of every vector coordinate and the norm is the sum of the second powers of the coordinates, the numerator has norm $N(\Sigma(\omega_0))=0$, and dividing by a nonzero complex scalar multiplies the norm by the second power of that scalar, hence preserves vanishing. Non-vanishing holds because $\overline{\Sigma}(\omega_0)\ne0$ and the divisor is finite. The rank statement is the rank of left multiplication at a nonzero null element, quoted from *The Fourier Transform and the Symbol of a Differential Operator*.
 
-**Remark (the residue is not the inverse of the derivative of the symbol).** In the scalar case a simple zero of $\sigma$ gives the residue $1/\sigma'(\omega_0)$, and it is tempting to write $\Sigma'(\omega_0)^{-1}$ here. **That is false for the element**: in the example $\Sigma'(\omega_0)=2\pi i\tilde{Ζ}$ is a unit while the residue is the null element $\Pi_+/(2\pi i)$. The analogy fails because the symbol does not vanish at the pole; the norm does.
+**Remark (the residue is not the inverse of the derivative of the symbol).** In the scalar case a simple zero of $\sigma$ gives the residue $1/\sigma'(\omega_0)$, and it is tempting to write $\Sigma'(\omega_0)^{-1}$ here. **That is false for the element**: in the example $\Sigma'(\omega_0)=2\pi i\tilde{Ζ}$ is invertible while the residue is the null element $\Pi_+/(2\pi i)$. The analogy fails because the symbol does not vanish at the pole; the norm does.
 
 ### A Worked Kernel
 
@@ -168,13 +168,13 @@ For $t>0$ the first integrand decays in the upper half-plane and the contour clo
 
 ### The Expansion at a Null Point of the First Kind
 
-**Lemma (the local expansion).** Let $\Sigma(\omega_0)=0$ and suppose that $\Sigma(\omega_0+h)=h^{k}A+h^{k+1}B+h^{k+2}C+\cdots$ with $A$ a unit and $h$ a complex scalar. Then
+**Lemma (the local expansion).** Let $\Sigma(\omega_0)=0$ and suppose that $\Sigma(\omega_0+h)=h^{k}A+h^{k+1}B+h^{k+2}C+\cdots$ with $A$ an invertible element and $h$ a complex scalar. Then
 
 $$
 \Sigma^{-1}=h^{-k}A^{-1}-h^{-k+1}A^{-1}BA^{-1}+h^{-k+2}\bigl(A^{-1}BA^{-1}BA^{-1}-A^{-1}CA^{-1}\bigr)+\cdots
 $$
 
-*Proof.* Factor $\Sigma=h^{k}(A+hB+h^{2}C+\cdots)$ and invert the parenthesis by the geometric series in $h$, which is legitimate because $h$ is central and $A$ is a unit: $(A+hB)^{-1}=A^{-1}-hA^{-1}BA^{-1}+\cdots$. Multiply by the central scalar $h^{-k}$.
+*Proof.* Factor $\Sigma=h^{k}(A+hB+h^{2}C+\cdots)$ and invert the parenthesis by the geometric series in $h$, which is legitimate because $h$ is central and $A$ is invertible: $(A+hB)^{-1}=A^{-1}-hA^{-1}BA^{-1}+\cdots$. Multiply by the central scalar $h^{-k}$.
 
 **Corollary (the residue at orders one, two and three).** With the notation of the lemma, the residue of $\Sigma^{-1}$ at $\omega_0$ is $A^{-1}$ for $k=1$, $-A^{-1}BA^{-1}$ for $k=2$, and $A^{-1}BA^{-1}BA^{-1}-A^{-1}CA^{-1}$ for $k=3$.
 
@@ -272,11 +272,11 @@ the sums running over the poles of $\Sigma^{-1}$, each taken with its own order.
 
 **Remark (the two open points).** First, the kernel as a sum of contributions in $n\ge2$, for which the residue current is the candidate and not the answer. Second, the points where the gradient of the norm vanishes, which the null cone meets at its vertex. **Both are open, and neither is hidden.**
 
-## Inversion Where the Symbol Is Not a Unit
+## Inversion Where the Symbol Is Not Invertible
 
 ### The Pointwise Problem
 
-**Remark (what replaces the equation when the inverse does not exist).** Transforming $P(D)u=g$ gives $\Sigma(\omega)\hat u(\omega)=\hat g(\omega)$, a linear equation in the algebra at each frequency. Where $\Sigma(\omega)$ is a unit, $\hat u=\Sigma^{-1}\hat g$. Where it is not, there are three possibilities: no solution, a four-dimensional affine set of them, or — at $\Sigma(\omega)=0$ — solutions exactly when the datum vanishes. **The algebra decides which; the transform does not.**
+**Remark (what replaces the equation when the inverse does not exist).** Transforming $P(D)u=g$ gives $\Sigma(\omega)\hat u(\omega)=\hat g(\omega)$, a linear equation in the algebra at each frequency. Where $\Sigma(\omega)$ is invertible, $\hat u=\Sigma^{-1}\hat g$. Where it is not, there are three possibilities: no solution, a four-dimensional affine set of them, or — at $\Sigma(\omega)=0$ — solutions exactly when the datum vanishes. **The algebra decides which; the transform does not.**
 
 ### The Moore–Penrose Inverse
 
@@ -296,7 +296,7 @@ $$
 
 the sum being taken over the scalars that do not vanish at the frequency in question.
 
-*Proof.* Off the null set both scalars are nonzero, the element is a unit, and the display is the reciprocal of the plane lemma, which satisfies the four identities because a two-sided inverse does. At a null point of the second kind exactly one scalar vanishes, say $\sigma_+(\omega_0)=0$; then $\Sigma=\sigma_-\Pi_-$ and the display is $\sigma_-^{-1}\Pi_-$. The four identities hold: $\Sigma\Sigma^{+}\Sigma=\sigma_-\Pi_-\sigma_-^{-1}\Pi_-\sigma_-\Pi_-=\sigma_-\Pi_-=\Sigma$, and similarly for the second; the two projections $\Sigma\Sigma^{+}$ and $\Sigma^{+}\Sigma$ are both $\Pi_-$ itself, and $\Pi_-$ is self-adjoint because $\tilde{Ζ}$ is. At a point where both scalars vanish the element is zero, and the display is the empty sum, which is the Moore–Penrose inverse of zero.
+*Proof.* Off the null set both scalars are nonzero, the element is invertible, and the display is the reciprocal of the plane lemma, which satisfies the four identities because a two-sided inverse does. At a null point of the second kind exactly one scalar vanishes, say $\sigma_+(\omega_0)=0$; then $\Sigma=\sigma_-\Pi_-$ and the display is $\sigma_-^{-1}\Pi_-$. The four identities hold: $\Sigma\Sigma^{+}\Sigma=\sigma_-\Pi_-\sigma_-^{-1}\Pi_-\sigma_-\Pi_-=\sigma_-\Pi_-=\Sigma$, and similarly for the second; the two projections $\Sigma\Sigma^{+}$ and $\Sigma^{+}\Sigma$ are both $\Pi_-$ itself, and $\Pi_-$ is self-adjoint because $\tilde{Ζ}$ is. At a point where both scalars vanish the element is zero, and the display is the empty sum, which is the Moore–Penrose inverse of zero.
 
 **Remark (what the hypothesis on the root buys).** Let $\tilde{Ζ}$ be a root of $1$ that is not self-adjoint, for instance $\tilde{Ζ}=\vec e_x+i\sqrt2\vec e_y$, for which $\tilde{Ζ}^{2}=e_t$ and $N(\tilde{Ζ})=-1$ as required. The Peirce projections are then idempotent and oblique. At a second-kind point the display still satisfies $\Sigma\Sigma^{+}\Sigma=\Sigma$ and $\Sigma^{+}\Sigma\Sigma^{+}=\Sigma^{+}$ and fails the two symmetry equations, so it is a reflexive generalised inverse and **not** the Moore–Penrose inverse. The solvability condition survives, because it uses only that $\Sigma\Sigma^{+}$ is idempotent with the image of $\Sigma$.
 
@@ -328,7 +328,7 @@ that is if and only if the datum has no component on the ideal that the symbol h
 
 ### Two Model Families
 
-**Example (family one: a symbol that is null at every frequency).** Let $p=e_t+\tilde{Ζ}=2\Pi_+$, a nonzero null element, and let $P(D)=p\partial_t$. Its symbol is $\Sigma(\omega)=2\pi i\omega\tilde{Ζ}p=2\pi i\omega p$, because $\tilde{Ζ}p=p$, so $N(\Sigma(\omega))=(2\pi i\omega)^{2}N(p)=0$ for every $\omega$. The symbol is never a unit: the rank of left multiplication is $4$ for $\omega\ne0$ and $0$ at $\omega=0$. The transform buys nothing here, and the equation is solved pointwise: $2\Pi_+f'=g$ is solvable exactly when $\Pi_-g=0$, and then
+**Example (family one: a symbol that is null at every frequency).** Let $p=e_t+\tilde{Ζ}=2\Pi_+$, a nonzero null element, and let $P(D)=p\partial_t$. Its symbol is $\Sigma(\omega)=2\pi i\omega\tilde{Ζ}p=2\pi i\omega p$, because $\tilde{Ζ}p=p$, so $N(\Sigma(\omega))=(2\pi i\omega)^{2}N(p)=0$ for every $\omega$. The symbol is never an invertible element: the rank of left multiplication is $4$ for $\omega\ne0$ and $0$ at $\omega=0$. The transform buys nothing here, and the equation is solved pointwise: $2\Pi_+f'=g$ is solvable exactly when $\Pi_-g=0$, and then
 
 $$
 f(t)=f(0)+\frac{1}{2}\int_0^{t}\Pi_+g(s)\,ds+\int_0^{t}\ell(s)\,ds ,
@@ -344,7 +344,7 @@ with $\ell$ taking values in the left ideal $\mathbb{B}\Pi_-$, which is the kern
 
 ## Summary
 
-The reciprocal of a biquaternion symbol is an adjugate over a norm. For every element $\tilde Q$ the product with its conjugate is the central scalar $N(\tilde Q)e_t$, so $\Sigma^{-1}=\overline{\Sigma}/N(\Sigma)$ wherever the symbol is a unit, and the regular representation has $L_{\Sigma}^{-1}=N^{-1}L_{\overline{\Sigma}}$ with adjugate $\lvert N\rvert^{2}\overline{N}L_{\overline{\Sigma}}$, the conjugate on the norm because $\lvert N\rvert^{4}/N=\lvert N\rvert^{2}\overline{N}$. One complex scalar sits in the denominator, and its vanishing is two real equations.
+The reciprocal of a biquaternion symbol is an adjugate over a norm. For every element $\tilde Q$ the product with its conjugate is the central scalar $N(\tilde Q)e_t$, so $\Sigma^{-1}=\overline{\Sigma}/N(\Sigma)$ wherever the symbol is invertible, and the regular representation has $L_{\Sigma}^{-1}=N^{-1}L_{\overline{\Sigma}}$ with adjugate $\lvert N\rvert^{2}\overline{N}L_{\overline{\Sigma}}$, the conjugate on the norm because $\lvert N\rvert^{4}/N=\lvert N\rvert^{2}\overline{N}$. One complex scalar sits in the denominator, and its vanishing is two real equations.
 
 The order of the pole is the order of the vanishing of the norm minus that of the adjugate, and it is neither the order of the operator nor the degree of the block determinant: for $\Sigma=(\omega-\omega_0)^{2}e_t$ the pole has order two while the determinant has order sixteen.
 
@@ -356,7 +356,7 @@ In one frequency variable the two signs are not an obstruction. The conjugate ke
 
 In two or more variables the obstacle is geometric. The singular set after complexification is a hypersurface of real codimension two, with real dimension six in four variables, so there is no point to encircle and no sum of residues; the residue becomes a current supported on the hypersurface, or a Leray form over a real cycle linking it.
 
-Where the symbol is not a unit the pointwise equation is solved by the Moore–Penrose inverse, which in the plane case is the reciprocal with the singular ideal's term omitted. Solutions exist exactly when the datum lies in the image, which in the plane case means that it has no component on the ideal the symbol has lost. The two model families are the two extreme ways a symbol meets the null set, and the transform is useful in the second and useless in the first.
+Where the symbol is not invertible the pointwise equation is solved by the Moore–Penrose inverse, which in the plane case is the reciprocal with the singular ideal's term omitted. Solutions exist exactly when the datum lies in the image, which in the plane case means that it has no component on the ideal the symbol has lost. The two model families are the two extreme ways a symbol meets the null set, and the transform is useful in the second and useless in the first.
 
 ## Summary of Notation
 

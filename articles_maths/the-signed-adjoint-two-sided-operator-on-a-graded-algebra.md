@@ -77,9 +77,9 @@ that is, every nondegenerate signed reflection is **self-adjoint**.
 
 ## Isometry and Unitarty
 
-**Definition.** An operator $S$ is an **isometry** of the form, or **unitary**, when $S^{\dagger}S=SS^{\dagger}=\mathrm{id}$; the isometries form a subgroup of the units of $\operatorname{End}_K(A)$.
+**Definition.** An operator $S$ is an **isometry** of the form, or **unitary**, when $S^{\dagger}S=SS^{\dagger}=\mathrm{id}$; the isometries form a subgroup of the invertibles of $\operatorname{End}_K(A)$.
 
-**Theorem.** The signed two-sided operator $\Sigma^{\alpha}_{a,b}$ is an isometry of a balanced α-compatible form if and only if $a$ is a unit and $b=a^{-1}$; equivalently the isometric signed two-sided operators are exactly the signed reflections $\Sigma^{\alpha}_{a,a^{-1}}$.
+**Theorem.** The signed two-sided operator $\Sigma^{\alpha}_{a,b}$ is an isometry of a balanced α-compatible form if and only if $a$ is invertible and $b=a^{-1}$; equivalently the isometric signed two-sided operators are exactly the signed reflections $\Sigma^{\alpha}_{a,a^{-1}}$.
 
 **Proof.** By the composition law and the adjoint formula,
 $$
@@ -116,7 +116,7 @@ $$
 u^{*}u=uu^{*}=1 ,
 $$
 
-and they form a subgroup $\mathrm{U}(A,{}^{*})$ of the units; the condition is the **unitarity condition**.
+and they form a subgroup $\mathrm{U}(A,{}^{*})$ of the invertibles; the condition is the **unitarity condition**.
 
 **Theorem.** If $u$ is unitary then the signed two-sided operator $\Sigma^{\alpha}_{u,u^{*}}$ is an isometry of the star form.
 

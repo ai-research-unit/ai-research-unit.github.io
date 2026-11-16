@@ -12,7 +12,7 @@ of basis $1,i,j,ij$ with $i^{2}=-1$, $j^{2}=+1$ and $ji=ij$, whose two complemen
 
 The biquaternion algebra exhibits the opposite behaviour, and the contrast organises the article. There the algebra is simple, so every derivation is inner and the automorphisms over $\mathbb{C}$ are the inner ones, a group of complex dimension three; the reduced biquaternion algebra has no nonzero derivation at all, and its automorphism group is finite of order eight. The reduction is the whole content: an automorphism must permute the two primitive idempotents, and then acts on each complex factor by an $\mathbb{R}$-algebra automorphism, of which there are two; a derivation annihilates the idempotents, and then acts on each factor by an $\mathbb{R}$-derivation of $\mathbb{C}$, of which there are none.
 
-The article owns the structure of the automorphism group, its generators in the algebra's own vocabulary, its finite order, the inner automorphisms, and the vanishing of the derivations. The multiplication and the idempotents are *Reduced Biquaternion Space*; the bar, the tessarine sign, the star and the flat are *The Two Involutions and the Group of Involutions*; the ideals, the radical and the failure of simplicity are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the zero divisors that the automorphisms permute are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the group of units is *The Group of Units of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart, where the algebra is simple and the derivations are inner, is *Biquaternion Automorphisms and Derivations*.
+The article owns the structure of the automorphism group, its generators in the algebra's own vocabulary, its finite order, the inner automorphisms, and the vanishing of the derivations. The multiplication and the idempotents are *Reduced Biquaternion Space*; the bar, the tessarine sign, the star and the flat are *The Two Involutions and the Group of Involutions*; the ideals, the radical and the failure of simplicity are *Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions*; the zero divisors that the automorphisms permute are *Zero Divisors of the Algebra of the Reduced Biquaternions*; the group of invertibles is *The Group of Invertibles of the Algebra of the Reduced Biquaternions*. The biquaternion counterpart, where the algebra is simple and the derivations are inner, is *Biquaternion Automorphisms and Derivations*.
 
 ## The Idempotents and the Factor Structure
 
@@ -81,7 +81,7 @@ and $\bar{\cdot}:i\mapsto-i$, $j\mapsto j$, $ij\mapsto-ij$. The tessarine sign i
 
 ## Inner Automorphisms and Derivations
 
-**Proposition (the inner automorphisms are trivial).** The algebra is commutative, so for every unit $P$ the conjugation $\breve Q\mapsto P \breve Q P^{-1}$ is the identity; every inner automorphism is the identity, and all eight automorphisms of the theorem above are outer.
+**Proposition (the inner automorphisms are trivial).** The algebra is commutative, so for every invertible $P$ the conjugation $\breve Q\mapsto P \breve Q P^{-1}$ is the identity; every inner automorphism is the identity, and all eight automorphisms of the theorem above are outer.
 
 **Proof.** $P \breve Q=\breve Q P$ for every $\breve Q$ because the algebra is commutative, so $P \breve Q P^{-1}=\breve Q$.
 
@@ -136,6 +136,6 @@ The reduced biquaternion algebra is the direct product $\mathbb{C}\Pi_+\oplus\ma
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the multiplication, the idempotents and the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\oplus\mathbb{C}$.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the bar, the tessarine sign, the star and the flat.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the minimal two-sided ideals that an automorphism permutes.
-- [The Group of Units of the Algebra of the Reduced Biquaternions](the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the units whose inner automorphisms are all trivial.
+- [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the invertibles whose inner automorphisms are all trivial.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the companion in which the algebra is simple, the automorphisms over $\mathbb{C}$ are inner and the derivations are inner and three-dimensional.
 - [Split-Biquaternion Automorphisms and Derivations](split-biquaternion-automorphisms-and-derivations.html), for the split-complex companion.

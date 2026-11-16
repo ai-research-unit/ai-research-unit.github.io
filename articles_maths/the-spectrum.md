@@ -37,12 +37,12 @@ which is a right ideal of $\mathbb{B}$.
 **Theorem (the spectral criterion).** For $\tilde Q\in\mathbb{B}$ and $\lambda\in\mathbb{C}$, the following are equivalent:
 
 1. $\lambda$ is an eigenvalue of $\tilde Q$;
-2. $\tilde Q-\lambda e_t$ is not a unit of the plain product;
+2. $\tilde Q-\lambda e_t$ is not invertible of the plain product;
 3. $(\lambda-Q_t)^2+B^2=0$.
 
 *Proof.* Write $a=\tilde Q-\lambda e_t=a_te_t+\vec a$, with $a_t=Q_t-\lambda$ and $\vec a=\vec Q$.
 
-*(1)$\iff$(2).* If $a$ is a unit then $\mathbb{B}a=\mathbb{B}$, so the left ideal is not proper. Conversely, if $\mathbb{B}a=\mathbb{B}$ then $e_t=xa$ for some $x$. Left multiplication by $a$ is injective, since $ay=0$ gives $y=xay=0$. In finite dimension an injective endomorphism is bijective, so there is $b$ with $ab=e_t$. Then $a(ba-e_t)=0$, hence $ba=e_t$ by injectivity, and $b$ is a two-sided inverse.
+*(1)$\iff$(2).* If $a$ is invertible then $\mathbb{B}a=\mathbb{B}$, so the left ideal is not proper. Conversely, if $\mathbb{B}a=\mathbb{B}$ then $e_t=xa$ for some $x$. Left multiplication by $a$ is injective, since $ay=0$ gives $y=xay=0$. In finite dimension an injective endomorphism is bijective, so there is $b$ with $ab=e_t$. Then $a(ba-e_t)=0$, hence $ba=e_t$ by injectivity, and $b$ is a two-sided inverse.
 
 *(2)$\iff$(3).* The conjugate product is
 
@@ -50,7 +50,7 @@ $$
 aa^{\natural}=a_t^2-\vec a^2=(a_t^2+B^2)e_t=((\lambda-Q_t)^2+B^2)e_t .
 $$
 
-If the scalar is non-zero, then $a^{-1}=a^{\natural}/(a_t^2+B^2)$, so $a$ is a unit. If the scalar is zero, then $aa^{\natural}=0$; for $a\neq0$ this exhibits $a$ as a zero divisor, since $a^{\natural}\neq0$, and $a=0$ is not a unit. So $a$ is a unit exactly when the scalar is non-zero.
+If the scalar is non-zero, then $a^{-1}=a^{\natural}/(a_t^2+B^2)$, so $a$ is invertible. If the scalar is zero, then $aa^{\natural}=0$; for $a\neq0$ this exhibits $a$ as a zero divisor, since $a^{\natural}\neq0$, and $a=0$ is not invertible. So $a$ is invertible exactly when the scalar is non-zero.
 
 **Remark (the determinant in the model).** Under $\mathsf{M}_2$ the element $a=a_te_t+\vec a$ is
 
@@ -350,7 +350,7 @@ A Jordan basis of $L_{\vec Q}$ needs two vectors outside $\ker L_{\vec Q}$ whose
 
 ## The Similarity Classification
 
-**Definition.** Two biquaternions $\tilde Q_1,\tilde Q_2$ are **similar** if $\tilde Q_2=S\tilde Q_1S^{-1}$ for some unit $S\in\mathbb{B}$.
+**Definition.** Two biquaternions $\tilde Q_1,\tilde Q_2$ are **similar** if $\tilde Q_2=S\tilde Q_1S^{-1}$ for some invertible $S\in\mathbb{B}$.
 
 **Theorem (the classification).**
 
@@ -386,7 +386,7 @@ The unordered spectrum therefore determines the similarity class off the spectra
 
 The biquaternion algebra carries many quadratic conditions; the one studied here is the square of the vector part, $B^2=Q_x^2+Q_y^2+Q_z^2$, which involves no scalar term. It decides whether the two eigenvalues of an element can be told apart: the characteristic polynomial is $X^2-2Q_tX+Q_t^2+B^2$, of discriminant $-4B^2$, with eigenvalues $Q_t\pm iB$.
 
-The eigenvalue problem is stated without a module and without an acting operator: an eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, an eigenvector lies in the left annihilator, and a spectral idempotent is an idempotent commuting with the element. The criterion proves that $\lambda$ is an eigenvalue exactly when $\tilde Q-\lambda e_t$ is a non-unit, exactly when $(\lambda-Q_t)^2+B^2=0$. The determinant of the matrix model is the same scalar, not the proof; the proof is the conjugate product $a a^{\natural}=(a_t^2+B^2)e_t$. The eigenspace of a non-scalar element has complex dimension $2$; Cayley–Hamilton gives the inverse whenever the determinant does not vanish. The same condition reads on the operators: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $R_{\tilde Q}=Q_t\,\mathrm{id}+R_{\vec Q}$, with $L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id}$. Off the spectral-degenerate cone the directional part is a complex structure; on the spectral-degenerate cone it is nilpotent.
+The eigenvalue problem is stated without a module and without an acting operator: an eigenvalue is a scalar for which the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, an eigenvector lies in the left annihilator, and a spectral idempotent is an idempotent commuting with the element. The criterion proves that $\lambda$ is an eigenvalue exactly when $\tilde Q-\lambda e_t$ is a non-invertible, exactly when $(\lambda-Q_t)^2+B^2=0$. The determinant of the matrix model is the same scalar, not the proof; the proof is the conjugate product $a a^{\natural}=(a_t^2+B^2)e_t$. The eigenspace of a non-scalar element has complex dimension $2$; Cayley–Hamilton gives the inverse whenever the determinant does not vanish. The same condition reads on the operators: $L_{\tilde Q}=Q_t\,\mathrm{id}+L_{\vec Q}$ and $R_{\tilde Q}=Q_t\,\mathrm{id}+R_{\vec Q}$, with $L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id}$. Off the spectral-degenerate cone the directional part is a complex structure; on the spectral-degenerate cone it is nilpotent.
 
 The regular case is $B^2\neq0$. The eigenvalues are distinct, the element is semisimple, and its left multiplication is diagonalisable. The spectral idempotents are the Lagrange idempotents $\tilde\Pi_\pm=(\tilde Q-\lambda_\mp e_t)/(\lambda_\pm-\lambda_\mp)$, which coincide with $(e_t\pm\vec{Ζ})/2$ for $\vec{Ζ}=-i\vec Q/B$; the decomposition is unique, and an eigenbasis exists with diagonal values $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$.
 
@@ -418,7 +418,7 @@ The degeneracy case is the spectral-degenerate cone $B^2=0$, of complex dimensio
 - [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split.html), for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the null cone and the spectral-degenerate cone, the four sectors, the two decompositions and the two operator loci.
-- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the unit group.
+- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unipotent stratum inside the group of invertibles.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent stratum and the origin.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections, the degenerate regimes, the Hermitian case and the spectral theorem.

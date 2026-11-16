@@ -79,7 +79,7 @@ $$
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2},
 $$
 
-which is the free shell with the mechanical variables in place of the canonical ones. **It is one relation among four components, and it is the statement that the mechanical wavevector over $k_m$ is a unit.**
+which is the free shell with the mechanical variables in place of the canonical ones. **It is one relation among four components, and it is the statement that the mechanical wavevector over $k_m$ is invertible.**
 
 **The polarisation.** The chiral link is the parent's,
 

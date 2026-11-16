@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Schrödinger equation's fluid is the one member of the block on which the fluid reading closes with no qualification at all.** [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) meets the reverse map's criterion with two qualifications, and both are consequences of its equation being second order in time: its four-velocity is a unit only where the quantum potential vanishes, and its acceleration law carries the factor $\gamma^{-1}$. In the first-order case the two qualifications are not repaired, they are absent. The velocity is a velocity, the force is a gradient, and nothing has to be added to say so.
+**The Schrödinger equation's fluid is the one member of the block on which the fluid reading closes with no qualification at all.** [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) meets the reverse map's criterion with two qualifications, and both are consequences of its equation being second order in time: its four-velocity is invertible only where the quantum potential vanishes, and its acceleration law carries the factor $\gamma^{-1}$. In the first-order case the two qualifications are not repaired, they are absent. The velocity is a velocity, the force is a gradient, and nothing has to be added to say so.
 
 **The article is the rung below the scalar fluid, and it is placed here for that reason.** The block is grouped by spin, so the scalar field's fluid belongs with the scalar field's fluids; the relativistic member is not the only one, it is the higher one. The ladder is Euler, then the free and the charged first-order fluids, then the free and the charged Klein–Gordon fluids, and each rung is the one above it with one structure removed rather than one structure corrected.
 
@@ -70,7 +70,7 @@ The first is a Hamilton–Jacobi equation with one extra term and the second is 
 
 **The direction article's pressureless row is this fluid, and its third row is this fluid's equation with $V\ne0$.** The pressureless row is the only place in that table where a fluid produces a free linear equation, and this article is that row's instance. The third row is the irrotational inviscid flow whose pressure is not a function of the density, whose inverted equation is linear with a potential of position: this fluid with $V\ne0$ has exactly that equation, with one difference of mechanism — its potential is imposed from outside rather than produced by the fluid's own pressure. One output, two routes, and [The Direction of the Fluid-Wave Correspondence, Field by Field](the-direction-of-the-fluid-wave-correspondence-field-by-field.html) states the output abstractly.
 
-**The pair is unconstrained.** One equation defines the phase's rate and one defines the density's, and neither restricts the other's initial function. That is the structural difference from the companion, where the four-velocity is a unit and the flow is therefore bounded: here nothing fixes $\lvert\vec v\rvert$, and the velocity is whatever the phase's gradient is.
+**The pair is unconstrained.** One equation defines the phase's rate and one defines the density's, and neither restricts the other's initial function. That is the structural difference from the companion, where the four-velocity is invertible and the flow is therefore bounded: here nothing fixes $\lvert\vec v\rvert$, and the velocity is whatever the phase's gradient is.
 
 ## The Density the Fluid Carries
 

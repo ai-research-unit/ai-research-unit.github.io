@@ -67,7 +67,7 @@ divisor, since $\tilde q_2\wedge\tilde q_2 = 0$. Throughout the rest of this art
 product is the quaternion product. A product that has a two-sided unit and no zero
 divisor is a **division rule**, and an algebra whose product is a division rule is a **division
 algebra**; the theorem of §*The Criterion Is Never Satisfied Off the Origin* shows that the plain
-product is one, so every nonzero element of the quaternion product is a unit.
+product is one, so every nonzero element of the quaternion product is invertible.
 
 ## The Criterion
 
@@ -247,7 +247,7 @@ $\tilde q\tilde q^{\natural}$ vanishes. Over $\mathbb{R}$ that product is the qu
 $q_t^2 + q_x^2 + q_y^2 + q_z^2$, a sum of squares of real numbers, so it vanishes only at the origin;
 the criterion admits no element, the zero divisor set is the **empty set**, and the algebra is a
 **division algebra**. The three-way classification of the elements keeps its invertible and zero
-slots and loses its zero-divisor slot, and every nonzero quaternion is a unit,
+slots and loses its zero-divisor slot, and every nonzero quaternion is invertible,
 $\tilde q^{-1} = \tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$.
 
 This is the opposite of the complexified block, whose zero divisors form the punctured complex cone

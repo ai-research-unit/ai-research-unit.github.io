@@ -94,7 +94,7 @@ The two-sided case runs along the centre.
 
 **Theorem.** If $A$ is unital with $1 \neq 0$ and has no proper two-sided algebra ideal, then the centre $Z(A)$ is a field.
 
-**Proof.** The centre is a commutative ring with $1$. For $0 \neq z \in Z(A)$ the set $AzA$ is a nonzero two-sided algebra ideal, so $AzA = A$ and $1 = \sum_i a_i z b_i$ for finitely many $a_i, b_i \in A$. Since $z$ is central, $1 = z \sum_i a_i b_i = \bigl(\sum_i a_i b_i\bigr) z$, so $u = \sum_i a_i b_i$ is a two-sided inverse of $z$. The inverse is central: for any $x$ one has $x u = u z x u = u x z u = u x$, using $z u = u z = 1$. Hence every nonzero central element is a unit with central inverse, so $Z(A)$ is a field.
+**Proof.** The centre is a commutative ring with $1$. For $0 \neq z \in Z(A)$ the set $AzA$ is a nonzero two-sided algebra ideal, so $AzA = A$ and $1 = \sum_i a_i z b_i$ for finitely many $a_i, b_i \in A$. Since $z$ is central, $1 = z \sum_i a_i b_i = \bigl(\sum_i a_i b_i\bigr) z$, so $u = \sum_i a_i b_i$ is a two-sided inverse of $z$. The inverse is central: for any $x$ one has $x u = u z x u = u x z u = u x$, using $z u = u z = 1$. Hence every nonzero central element is invertible with central inverse, so $Z(A)$ is a field.
 
 **Remark.** The hypothesis is simplicity for the product by juxtaposition, and it is strictly stronger than simplicity for $\star$. The algebra $\mathbb{F}_2 \times \mathbb{F}_2$ with the exchange involution is $\star$-simple and invariant-simple, and its centre is $\mathbb{F}_2 \times \mathbb{F}_2$, not a field; the point is that $\mathbb{F}_2 \times 0$ is a proper two-sided algebra ideal even though it is not a $\star$-ideal. For an algebra that is simple for the product by juxtaposition the centre is a field, and it may be larger than the scalars: $M_n(\mathbb{C})$ has centre $\mathbb{C}$, the quaternions have centre $\mathbb{R}$, and an algebra over $R$ whose centre is $R$ is central, in the sense of *Central Simple Algebras and the Brauer Group*.
 
@@ -106,7 +106,7 @@ The two-sided case runs along the centre.
 
 **Proof.** For the commutative case, the centre of the commutative algebra is the algebra itself, so the theorem above makes it a field. For the failure in the noncommutative case, the matrix model below exhibits two Hermitian idempotents with product $0$.
 
-**Remark.** Simplicity constrains the two-sided ideals and says nothing about the one-sided ones. A zero divisor is the shadow of a proper one-sided ideal: if $xy = 0$ with $x \neq 0$ and $y \neq 0$, then $x$ is not a unit, and the left annihilator of $y$ is a nonzero left ideal which is proper because it omits $1$. A simple algebra may therefore be a full matrix algebra rather than a division algebra, and the one-sided ideals, not the two-sided ones, are what separate the two cases.
+**Remark.** Simplicity constrains the two-sided ideals and says nothing about the one-sided ones. A zero divisor is the shadow of a proper one-sided ideal: if $xy = 0$ with $x \neq 0$ and $y \neq 0$, then $x$ is not invertible, and the left annihilator of $y$ is a nonzero left ideal which is proper because it omits $1$. A simple algebra may therefore be a full matrix algebra rather than a division algebra, and the one-sided ideals, not the two-sided ones, are what separate the two cases.
 
 ## Examples
 

@@ -79,7 +79,7 @@ $$
 
 **Proof sketch.** The classical theorem of Cartan and Dieudonné: an isometry is written as a product of reflections in the hyperplanes it moves, and the length count is the dimension of the moved subspace; the proof is in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*.
 
-**Theorem (the versor action, quoted).** The invertible elements of the Clifford algebra that preserve $V$ under the signed conjugation form the **Clifford group** $\Gamma$, the products of units of $V$ act on $V$ through the signed two-sided operator as orthogonal transformations, and the resulting map $\Gamma\to O(V,\mathfrak{Q})$ is surjective with kernel the central units. Its restriction to the products of an even number of units is the spin group, and the odd coset carries the reflections.
+**Theorem (the versor action, quoted).** The invertible elements of the Clifford algebra that preserve $V$ under the signed conjugation form the **Clifford group** $\Gamma$, the products of invertibles of $V$ act on $V$ through the signed two-sided operator as orthogonal transformations, and the resulting map $\Gamma\to O(V,\mathfrak{Q})$ is surjective with kernel the central units. Its restriction to the products of an even number of invertibles is the spin group, and the odd coset carries the reflections.
 
 **Proof sketch.** An element $a$ preserves $V$ under $x\mapsto a\alpha(x)a^{-1}$ exactly when it is a versor, which is the definition of the Clifford group; the map to $O(V,\mathfrak{Q})$ is a group homomorphism by the composition law, it is surjective by Cartan–Dieudonné, and its kernel is computed from the condition that the conjugated vector equal the vector for all vectors, which forces the element central. This is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, quoted.
 
@@ -97,7 +97,7 @@ For $V$ of dimension two with the split form $e_1^2=1$, $e_2^2=-1$, take $u=e_1+
 
 ### A Rotation of the Lorentz Plane
 
-For $x=e_1e_2$ the element is even and a unit with $x^{-1}=e_2e_1=-e_1e_2$; the signed two-sided operator $T^{\alpha}_{x,x^{-1}}(v)=xvx^{-1}$ is the ordinary inner conjugation, since $\alpha$ is the identity on the even part, and its action is the half-turn of the plane $\mathrm{span}(e_1,e_2)$: it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$ in the Euclidean case, the rotation of angle $\pi$. The signed and the unsigned two-sided operators coincide on the even part of the algebra, and differ only on the odd part, which is where the reflections live.
+For $x=e_1e_2$ the element is even and an invertible element with $x^{-1}=e_2e_1=-e_1e_2$; the signed two-sided operator $T^{\alpha}_{x,x^{-1}}(v)=xvx^{-1}$ is the ordinary inner conjugation, since $\alpha$ is the identity on the even part, and its action is the half-turn of the plane $\mathrm{span}(e_1,e_2)$: it sends $e_1\mapsto-e_1$, $e_2\mapsto-e_2$ in the Euclidean case, the rotation of angle $\pi$. The signed and the unsigned two-sided operators coincide on the even part of the algebra, and differ only on the odd part, which is where the reflections live.
 
 ## Summary
 

@@ -1,10 +1,10 @@
-# __Zero Divisors and Units__
+# __Zero Divisors and Invertibles__
 
 ## Introduction
 
 Multiplication makes every element of the algebra act on the algebra, on the left and on the right. This article studies what the action kills.
 
-For $\tilde Q_1\in\mathbb{B}$, the set of elements that left multiplication by $\tilde Q_1$ sends to zero is a complex subspace of $\mathbb{B}$, and so is the set of elements that right multiplication sends to zero. The two are the **annihilators** of $\tilde Q_1$. Their dimensions are the invariant that separates the elements: an element that kills nothing is a unit, an element that kills something is a zero divisor, and there is no third case.
+For $\tilde Q_1\in\mathbb{B}$, the set of elements that left multiplication by $\tilde Q_1$ sends to zero is a complex subspace of $\mathbb{B}$, and so is the set of elements that right multiplication sends to zero. The two are the **annihilators** of $\tilde Q_1$. Their dimensions are the invariant that separates the elements: an element that kills nothing is invertible, an element that kills something is a zero divisor, and there is no third case.
 
 The article computes the two annihilators in coordinates, proves that a non-zero element has annihilators of dimension $0$ or $2$ and never anything else, exhibits a basis in each case, identifies the two-sided annihilator, and closes with the unit criterion. The article is form-free: it uses the product and the coefficients of *The Element, the Coordinates and the Conjugations*, and the square of *The Square of an Element*. The degenerate condition $Q_{1t}^2+B_1^2=0$ appears as the condition for a linear system to have a solution, not as a norm.
 
@@ -207,31 +207,31 @@ $$
 \tilde Q_3(\tilde Q_1\tilde Q_2)=(\tilde Q_3\tilde Q_1)\tilde Q_2=0,
 $$
 
-so $\tilde Q_1\tilde Q_2$ is annihilated on the left by $\tilde Q_3$: a product of a zero divisor with any element is a zero divisor or zero. The same argument on the other side shows that a product with an element on the left, $\tilde Q_2\tilde Q_1$, is a zero divisor or zero. In particular no product of two zero divisors is a unit.
+so $\tilde Q_1\tilde Q_2$ is annihilated on the left by $\tilde Q_3$: a product of a zero divisor with any element is a zero divisor or zero. The same argument on the other side shows that a product with an element on the left, $\tilde Q_2\tilde Q_1$, is a zero divisor or zero. In particular no product of two zero divisors is invertible.
 
-## The Units
+## The Invertibles
 
-**Definition.** An element $\tilde U$ is a **unit** when there is an element $\tilde V$ with
+**Definition.** An element $\tilde U$ is **invertible** when there is an element $\tilde V$ with
 
 $$
 \tilde U\tilde V=\tilde V\tilde U=e_t .
 $$
 
-**Proposition.** For $\tilde Q_1\neq0$ the following are equivalent: $\tilde Q_1$ is a unit; $\mathrm{Ann}_r(\tilde Q_1)=0$; $\mathrm{Ann}_l(\tilde Q_1)=0$; $Q_{1t}^2+B_1^2\neq0$.
+**Proposition.** For $\tilde Q_1\neq0$ the following are equivalent: $\tilde Q_1$ is invertible; $\mathrm{Ann}_r(\tilde Q_1)=0$; $\mathrm{Ann}_l(\tilde Q_1)=0$; $Q_{1t}^2+B_1^2\neq0$.
 
-*Proof.* A unit has trivial annihilators, because multiplying $\tilde Q_1\tilde Q_2=0$ on the left by its inverse gives $\tilde Q_2=0$, and similarly on the right.
+*Proof.* an invertible element has trivial annihilators, because multiplying $\tilde Q_1\tilde Q_2=0$ on the left by its inverse gives $\tilde Q_2=0$, and similarly on the right.
 
-Conversely, suppose $\mathrm{Ann}_r(\tilde Q_1)=0$. Left multiplication by $\tilde Q_1$ is then injective, and on the finite-dimensional complex space $\mathbb{B}$ it is bijective. Let $\tilde V$ be the preimage of $e_t$, so that $\tilde Q_1\tilde V=e_t$. Then $\tilde Q_1(\tilde V\tilde Q_1-e_t)=\tilde Q_1\tilde V\tilde Q_1-\tilde Q_1=0$, so $\tilde V\tilde Q_1-e_t$ lies in the right annihilator, which is zero, and $\tilde V\tilde Q_1=e_t$. Hence $\tilde Q_1$ is a unit. The same argument with the left annihilator gives the same conclusion, and the two annihilators have equal dimension.
+Conversely, suppose $\mathrm{Ann}_r(\tilde Q_1)=0$. Left multiplication by $\tilde Q_1$ is then injective, and on the finite-dimensional complex space $\mathbb{B}$ it is bijective. Let $\tilde V$ be the preimage of $e_t$, so that $\tilde Q_1\tilde V=e_t$. Then $\tilde Q_1(\tilde V\tilde Q_1-e_t)=\tilde Q_1\tilde V\tilde Q_1-\tilde Q_1=0$, so $\tilde V\tilde Q_1-e_t$ lies in the right annihilator, which is zero, and $\tilde V\tilde Q_1=e_t$. Hence $\tilde Q_1$ is invertible. The same argument with the left annihilator gives the same conclusion, and the two annihilators have equal dimension.
 
 The last equivalence is the theorem of the preceding section: the annihilator is non-zero exactly when $Q_{1t}^2+B_1^2=0$. QED.
 
-So the non-zero elements split into the units and the zero divisors, according as $Q_{1t}^2+B_1^2$ is non-zero or zero, and the units are exactly the elements with trivial annihilators. The criterion is a condition on the annihilator, not a normalisation: $B_1^2$ alone does not decide, since
+So the non-zero elements split into the invertibles and the zero divisors, according as $Q_{1t}^2+B_1^2$ is non-zero or zero, and the invertibles are exactly the elements with trivial annihilators. The criterion is a condition on the annihilator, not a normalisation: $B_1^2$ alone does not decide, since
 
 $$
 \tilde Q_1=e_t+\vec e_x+i\vec e_y
 $$
 
-has $B_1^2=1+i^2=0$ and is a unit, with $Q_{1t}^2+B_1^2=1$.
+has $B_1^2=1+i^2=0$ and is invertible, with $Q_{1t}^2+B_1^2=1$.
 
 ## Summary
 
@@ -239,7 +239,7 @@ has $B_1^2=1+i^2=0$ and is a unit, with $Q_{1t}^2+B_1^2=1$.
 - For $\tilde Q_1\neq0$ the common dimension is $0$ when $Q_{1t}^2+B_1^2\neq0$ and $2$ when $Q_{1t}^2+B_1^2=0$; it is never $1$ or $3$.
 - In the degenerate case the two annihilators are distinct planes and their intersection, the two-sided annihilator, is the line $\mathbb{C}\tilde Q_1^{\natural}$.
 - The zero divisors are the non-zero elements with $Q_{1t}^2+B_1^2=0$; they form a complex cone of complex dimension $3$, with the pure isotropic elements (the square-zero elements) as the subcone $Q_{1t}=0$ of complex dimension $2$.
-- The units are the non-zero elements with a trivial annihilator, that is $Q_{1t}^2+B_1^2\neq0$; they are the complement of the zero-divisor cone.
+- The invertibles are the non-zero elements with a trivial annihilator, that is $Q_{1t}^2+B_1^2\neq0$; they are the complement of the zero-divisor cone.
 
 ## Summary of Notation
 

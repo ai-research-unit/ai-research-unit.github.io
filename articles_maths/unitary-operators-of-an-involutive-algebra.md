@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An involution of the operator algebra distinguishes among the operators those that it carries to their inverse: an operator $T$ is **unitary** for the involution when $T^{*}T=TT^{*}=\mathrm{id}$, and the unitary operators form a group — the fixed subgroup of the automorphism $\mathrm{J}(T)=(T^{*})^{-1}$ of the unit group, and the operator analogue of the group of unitary elements of an involutive algebra. The two groups are related by the regular representation: the assignment $a \mapsto L_a$ carries a unitary element of $A$ to a unitary operator of $E$, and against the twisted pairing this assignment is a `*`-representation, so that the unitary group of the algebra appears as a subgroup of the unitary group of its operators. The operator group is in general larger, and its Lie algebra is the space of the anti-self-adjoint operators.
+An involution of the operator algebra distinguishes among the operators those that it carries to their inverse: an operator $T$ is **unitary** for the involution when $T^{*}T=TT^{*}=\mathrm{id}$, and the unitary operators form a group — the fixed subgroup of the automorphism $\mathrm{J}(T)=(T^{*})^{-1}$ of the group of invertibles, and the operator analogue of the group of unitary elements of an involutive algebra. The two groups are related by the regular representation: the assignment $a \mapsto L_a$ carries a unitary element of $A$ to a unitary operator of $E$, and against the twisted pairing this assignment is a `*`-representation, so that the unitary group of the algebra appears as a subgroup of the unitary group of its operators. The operator group is in general larger, and its Lie algebra is the space of the anti-self-adjoint operators.
 
 This article develops the unitary operators of an involutive algebra, the group they form, the self-adjoint and the anti-self-adjoint operators beside them, the two unitary groups attached to the two pairings of the category, and the map from the unitary elements of the algebra into the unitary operators. It assumes the operator algebra and its involution of *Involutions of the Operator Algebra*, the adjoint operation and the twisted pairing of *The Adjoint in an Involutive Algebra*, the trace and the pairing of *Frobenius Algebras*, the involutions of an algebra of *Involutive Algebras*, the unitary elements, the self-adjoint part and the Lie algebra of the anti-Hermitian elements of *Unitary Elements of an Involutive Algebra* and *The Self-Adjoint Part of an Algebra*, and the one-sided multiplications of *Left and Right Multiplication*. The adjoints of the one-sided and the signed operators are *The Adjoint of the Left Multiplication on an Algebra* and *The Signed Adjoint Two-Sided Operator on an Algebra*; the analytic unitary group, the norm and the positivity are Part II and *Hilbert Algebras* and *Operator Algebras*, named as the owner and not used.
 
@@ -18,7 +18,7 @@ $$
 
 and **unitary for the twisted pairing** when the same equations hold with $T^{*_\sigma}$ in place of $T^{*}$. The sets of such operators are written $\mathrm{U}(E)=\mathrm{U}(E,*)$ and $\mathrm{U}(E,*_\sigma)$.
 
-**Theorem.** $\mathrm{U}(E)$ and $\mathrm{U}(E,*_\sigma)$ are subgroups of the unit group $E^{\times}$, and
+**Theorem.** $\mathrm{U}(E)$ and $\mathrm{U}(E,*_\sigma)$ are subgroups of the group of invertibles $E^{\times}$, and
 
 $$
 \boxed{\;T \in \mathrm{U}(E) \iff T \in E^{\times} \text{ and } T^{*}=T^{-1}, \qquad T \in \mathrm{U}(E,*_\sigma) \iff T \in E^{\times} \text{ and } T^{*_\sigma}=T^{-1}\;} .

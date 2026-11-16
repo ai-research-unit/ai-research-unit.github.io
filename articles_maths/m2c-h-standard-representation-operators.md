@@ -12,9 +12,9 @@ of dimension sixteen. The operator layer lives one size above the model, and eve
 
 **The count.** The left multiplications $L_{\tilde q}$ and the right multiplications $R_{\tilde q}$ are two four-dimensional families inside the ambient; the sixteen products $L_{e_\mu}R_{e_\nu}$ form a basis of the ambient; a single product is a pair $(\tilde q,\tilde p)$ modulo one real scaling; the products reach a seven-dimensional cone; and a general operator needs four of them. The numbers four, sixteen, seven and four are the skeleton of the article.
 
-**The one number that changes.** In the split-quaternion category the operator rank of a single product was $\operatorname{rank}A\cdot\operatorname{rank}B$, ranging over $\{0,1,2,4\}$, because a split quaternion can be a zero divisor. Here every nonzero quaternion is a unit, so the two factors have rank two each and the product has rank four. The operator rank therefore takes only the values four and zero, and **the rank tells nothing at all about the length**. That single collapse is what makes the quaternion operator layer the cleanest of the category.
+**The one number that changes.** In the split-quaternion category the operator rank of a single product was $\operatorname{rank}A\cdot\operatorname{rank}B$, ranging over $\{0,1,2,4\}$, because a split quaternion can be a zero divisor. Here every nonzero quaternion is invertible, so the two factors have rank two each and the product has rank four. The operator rank therefore takes only the values four and zero, and **the rank tells nothing at all about the length**. That single collapse is what makes the quaternion operator layer the cleanest of the category.
 
-**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral projectors, the adjugate and the subspaces are the previous article, *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation*. The algebra is *Quaternion Algebra*, the norm is *Quaternion Norm and Invertibility*, the unit group is *Quaternion Exponential and Lie Group Structure*. The abstract operator articles, with no matrix in them, are *The One-Sided Operators*, *Two-Sided Operators* and *The Enveloping Operator Algebra*, which this article does not replace; the two-sided operator on the *matrix space* rather than on the carrier is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
+**Boundaries.** The model, its dictionary, the trace, the determinant, the spectral projectors, the adjugate and the subspaces are the previous article, *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation*. The algebra is *Quaternion Algebra*, the norm is *Quaternion Norm and Invertibility*, the group of invertibles is *Quaternion Exponential and Lie Group Structure*. The abstract operator articles, with no matrix in them, are *The One-Sided Operators*, *Two-Sided Operators* and *The Enveloping Operator Algebra*, which this article does not replace; the two-sided operator on the *matrix space* rather than on the carrier is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*.
 
 **Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclically; the model is $\mathsf{M}_2$ with the image $M_2(\mathbb{H})$; the norm is $N$. The left and right multiplication matrices are written $L_{\tilde q},R_{\tilde q}\in M_4(\mathbb{R})$, in the real basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the carrier. The coefficient matrix $c(M)$ of an operator is its $4\times4$ array of coordinates in the basis $L_{e_\mu}R_{e_\nu}$.
 
@@ -101,7 +101,7 @@ $$
 L_{\tilde q}R_{\tilde q^{-1}}(\tilde x)=\tilde q\tilde x\tilde q^{-1},
 $$
 
-whose kernel on the pairs of units is $\mathbb{R}^{\times}e_t$, so the effective group is
+whose kernel on the pairs of invertibles is $\mathbb{R}^{\times}e_t$, so the effective group is
 
 $$
 \mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3),
@@ -175,7 +175,7 @@ $$
 
 so the family is a copy of $\mathbb{H}\times\mathbb{H}_{\mathrm{opp}}$ inside the algebra of all operators, and not a copy of $\mathbb{H}\times\mathbb{H}$: the second slot composes in the reverse order. The reversal is associativity showing through, and it is the same law as in the split category.
 
-**The units.** The invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, and they form the group
+**The invertibles.** The invertible members are the products of two non-zero elements, with inverse $L_{\tilde q^{-1}}R_{\tilde p^{-1}}$, and they form the group
 
 $$
 \bigl(\mathbb{H}^{\times}\times\mathbb{H}^{\times}\bigr)/\mathbb{R}^{\times},
@@ -187,7 +187,7 @@ of dimension seven.
 
 **The absence of matrix units.** The algebra has no idempotent, so it has no system of matrix units, and the sixteen basis operators $L_{e_\mu}R_{e_\nu}$ are a basis of the ambient and not a system of units in the algebra. The Peirce frame of the split category has no counterpart, and the corner structure of that frame is replaced here by the single fact that the two copies intersect in the scalars.
 
-**What survives from the semigroup.** The composition law, the units, the automorphisms, and the identity $L_{e_t}R_{e_t}=I_4$, which is a product of length one. So the family is a semigroup with unit, closed under inversion on its units, and it does not contain the whole group $GL_4(\mathbb{R})$: it contains only the operators of the form $L_{\tilde q}R_{\tilde p}$, a seven-dimensional submanifold of the sixteen-dimensional group.
+**What survives from the semigroup.** The composition law, the invertibles, the automorphisms, and the identity $L_{e_t}R_{e_t}=I_4$, which is a product of length one. So the family is a semigroup with unit, closed under inversion on its units, and it does not contain the whole group $GL_4(\mathbb{R})$: it contains only the operators of the form $L_{\tilde q}R_{\tilde p}$, a seven-dimensional submanifold of the sixteen-dimensional group.
 
 ## The Cone and the Coefficient Matrix
 
@@ -263,11 +263,11 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 
 ## What the Pair Buys and Does Not
 
-**What it buys.** The sixteen products span the ambient, so every real-linear operator of the carrier is a sum of at most four of them and the pair describes the operator algebra completely. It gives the seven-dimensional group of products of units, with the three-dimensional group $SO(3)$ of the inner automorphisms inside it, and it gives the seven-dimensional cone of single products with its two rulings. It gives the length filtration and, through it, the statement that the four products always suffice and are generically necessary.
+**What it buys.** The sixteen products span the ambient, so every real-linear operator of the carrier is a sum of at most four of them and the pair describes the operator algebra completely. It gives the seven-dimensional group of products of invertibles, with the three-dimensional group $SO(3)$ of the inner automorphisms inside it, and it gives the seven-dimensional cone of single products with its two rulings. It gives the length filtration and, through it, the statement that the four products always suffice and are generically necessary.
 
 **What it does not buy.** The model is not the algebra, so the operator algebra is strictly larger than the algebra in a way it was not in the split case: there the carrier was the algebra and the ambient was its tensor square; here the carrier is a four-dimensional real form of a matrix algebra and the ambient is the full $M_4(\mathbb{R})$, in which the algebra sits as a proper subspace through two different embeddings, $L$ and $R$. The difference between the two categories is exactly this: the split case asks what the tensor square says about the product, and the quaternion case asks what the ambient says about a subalgebra that is not all of it.
 
-**What stays outside.** The complex structure, the spectral projectors and the Hermitian metric are properties of the *model*, not of the operator layer. The operator layer sees only the real form: it knows that $\mathbb{H}$ is a division algebra, that its unit group is a three-sphere up to scale, and that its automorphism group is $SO(3)$, and it cannot see the $2\times2$ complex matrices that make those facts computable. The spinors, the minimal left ideals and the Peirce frame of the split category have no counterpart, because a division algebra has no proper one-sided ideal.
+**What stays outside.** The complex structure, the spectral projectors and the Hermitian metric are properties of the *model*, not of the operator layer. The operator layer sees only the real form: it knows that $\mathbb{H}$ is a division algebra, that its group of invertibles is a three-sphere up to scale, and that its automorphism group is $SO(3)$, and it cannot see the $2\times2$ complex matrices that make those facts computable. The spinors, the minimal left ideals and the Peirce frame of the split category have no counterpart, because a division algebra has no proper one-sided ideal.
 
 ## Summary
 
@@ -277,7 +277,7 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 4. The Kronecker display of the split category does not transfer, because a division algebra is not a tensor product of smaller real algebras; the coefficient matrix replaces it, and the display reappears over $\mathbb{C}$ in the biquaternion layer.
 5. The sixteen operators $L_{e_\mu}R_{e_\nu}$ form a basis, and $c(L_{\tilde q}R_{\tilde p})=\tilde q\tilde p^{\,\mathsf T}$ has rank one.
 6. The cone of single products is the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$, of dimension seven, and the membership test is $\operatorname{rank}c\le1$.
-7. The composition is $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, the units form a group of dimension seven, and the inner automorphisms form $SO(3)$.
+7. The composition is $L_{\tilde q}R_{\tilde p}L_{\tilde q'}R_{\tilde p'}=L_{\tilde q\tilde q'}R_{\tilde p'\tilde p}$, the invertibles form a group of dimension seven, and the inner automorphisms form $SO(3)$.
 8. The length is the coefficient rank, in $\{0,\dots,4\}$, with strata of dimensions $0,7,12,15,16$; four products always suffice and generically are needed.
 9. The operator rank is two-valued and the length five-valued; the identity has rank four and length one, and the sum $L_{e_t}R_{e_t}+L_{\vec e_x}R_{\vec e_x}$ is a singular operator of rank two and length two.
 10. The operator algebra is strictly larger than the algebra, and the excess is the content of the category.

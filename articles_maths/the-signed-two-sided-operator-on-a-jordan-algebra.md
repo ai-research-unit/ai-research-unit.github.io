@@ -124,7 +124,7 @@ This operator is the $(1,2)$-coordinate functional times the matrix unit $E_{12}
 
 ### The Diagonal Signed Two-Sided Operator
 
-**Definition.** For a unit $u \in A^\times$ the **diagonal signed two-sided operator** is
+**Definition.** For an invertible element $u \in A^\times$ the **diagonal signed two-sided operator** is
 
 $$
 r_u = \mathcal{T}^{\alpha}_{u,u^{-1}} : J \to J, \qquad r_u(x) = u\,\alpha(x)\,u^{-1} .

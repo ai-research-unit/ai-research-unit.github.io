@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units and its polar split. The complex algebra is the definite two-dimensional member of the family of algebras and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
+This article studies the norm of the complex algebra and the invertibility of its elements. It follows the basic algebra article, which defined the algebra, its unique nontrivial involution and its two distinguished subspaces. The goal here is to define the norm and the Hermitian form, to establish the criterion for invertibility, and to describe the group of invertibles and its polar split. The complex algebra is the definite two-dimensional member of the family of algebras and the base case of the polar series, and the article collects the facts that the other members of the family generalise.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, the basis is $1$, $i$ with $i^2 = -1$, a general element is $Q = q + i q'$ with $q, q' \in \mathbb{R}$, and the involution is complex conjugation $\bar{Q} = q - i q'$. The norm is $\langle Q\rangle_{*} = Q\bar{Q}$.
 
@@ -41,7 +41,7 @@ $$
 
 Since $\langle Q_2\rangle_{*}$ is a real number and the algebra is commutative, it commutes with $Q_1$ and with $\bar{Q}_1$, so $Q_1 \langle Q_2\rangle_{*} \bar{Q}_1 = \langle Q_2\rangle_{*} Q_1\bar{Q}_1 = \langle Q_2\rangle_{*} \langle Q_1\rangle_{*}$.
 
-**Corollary.** If $\langle Q_1\rangle_{*} \neq 0$ and $\langle Q_2\rangle_{*} \neq 0$, then $\langle Q_1Q_2\rangle_{*} \neq 0$. Equivalently, the product of two units is a unit.
+**Corollary.** If $\langle Q_1\rangle_{*} \neq 0$ and $\langle Q_2\rangle_{*} \neq 0$, then $\langle Q_1Q_2\rangle_{*} \neq 0$. Equivalently, the product of two units is invertible.
 
 The multiplicativity is used below to prove the invertibility criterion in one line, and it is the source of the polar decomposition: the norm is the squared scale.
 
@@ -98,7 +98,7 @@ It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: p
 
 The two forms are related as follows.
 
-- The **norm** $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of units, and the polar scale.
+- The **norm** $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ is real, positive-definite and multiplicative, and it vanishes only at the origin. It controls the multiplicative structure: invertibility, the group of invertibles, and the polar scale.
 - The **Hermitian form** $Q\bar{Q} = q^2+q'^2$ is the same expression. It controls the topological structure: the Euclidean norm, the topology of $\mathbb{C}$ as $\mathbb{R}^2$, and completeness.
 
 That the two coincide is a degeneracy of the commutative two-dimensional case. The information collapses into one real positive-definite form. This is the same degeneracy that makes $\mathbb{C}$ the trivial example in the theory of composition algebras.
@@ -166,25 +166,25 @@ $$
 
 ### Worked Example
 
-For the worked pair of the category, $Q_1 = 3+4i$ and $Q_2 = 1-2i$, the criterion and the inverse formula are exact. Here $\langle Q_1\rangle_{*} = 3^2+4^2 = 25 \neq 0$ and $\langle Q_2\rangle_{*} = 1^2+(-2)^2 = 5 \neq 0$, so both are units, with
+For the worked pair of the category, $Q_1 = 3+4i$ and $Q_2 = 1-2i$, the criterion and the inverse formula are exact. Here $\langle Q_1\rangle_{*} = 3^2+4^2 = 25 \neq 0$ and $\langle Q_2\rangle_{*} = 1^2+(-2)^2 = 5 \neq 0$, so both are invertible, with
 
 $$
 Q_1^{-1} = \frac{\bar{Q}_1}{\langle Q_1\rangle_{*}} = \frac{3-4i}{25} = 0.12 - 0.16 i, \qquad Q_2^{-1} = \frac{\bar{Q}_2}{\langle Q_2\rangle_{*}} = \frac{1+2i}{5} = 0.2 + 0.4 i,
 $$
 
-and $Q_1 Q_1^{-1} = 25/25 = 1$, $Q_2 Q_2^{-1} = 5/5 = 1$. The product $Q_1Q_2 = 11-2i$ has $\langle Q_1Q_2\rangle_{*} = 121+4 = 125 = 25 \cdot 5$, so it is a unit, and its inverse is computed in the two ways with the same result:
+and $Q_1 Q_1^{-1} = 25/25 = 1$, $Q_2 Q_2^{-1} = 5/5 = 1$. The product $Q_1Q_2 = 11-2i$ has $\langle Q_1Q_2\rangle_{*} = 121+4 = 125 = 25 \cdot 5$, so it is invertible, and its inverse is computed in the two ways with the same result:
 
 $$
 (Q_1Q_2)^{-1} = Q_2^{-1}Q_1^{-1} = (0.2+0.4i)(0.12-0.16i) = 0.088 + 0.016 i, \qquad (Q_1Q_2)^{-1} = \frac{\overline{Q_1Q_2}}{\langle Q_1Q_2\rangle_{*}} = \frac{11+2i}{125} = 0.088 + 0.016 i .
 $$
 
-The only element of vanishing norm is $0$, since $q^2+q'^2 = 0$ forces $q = q' = 0$, so there is no nonzero non-unit and no zero divisor.
+The only element of vanishing norm is $0$, since $q^2+q'^2 = 0$ forces $q = q' = 0$, so there is no nonzero non-invertible and no zero divisor.
 
-## The Group of Units
+## The Group of Invertibles
 
 ### Definition
 
-The **group of units** of $\mathbb{C}$ is the set of invertible elements:
+The **group of invertibles** of $\mathbb{C}$ is the set of invertible elements:
 
 $$
 \mathbb{C}^\times = \{ Q \in \mathbb{C} : \langle Q\rangle_{*} \neq 0 \} = \mathbb{C} \setminus \{0\}.
@@ -199,9 +199,9 @@ It is a group under multiplication with identity $1$.
 - **Infinite.** $\mathbb{C}^\times$ is uncountable and contains the infinite cyclic group of powers of any non-root-of-unity element.
 - **Dimension.** $\mathbb{C}^\times$ is a topological group whose underlying space is a manifold of real dimension $2$; its Lie group and Lie algebra structure are the subject of the companion article *Complex Exponential and Lie Group Structure*.
 
-The unit group is the base case of the family: below it lies only the non-unit $0$, and every nonzero element is a unit because the algebra is a field.
+The group of invertibles is the base case of the family: below it lies only the non-invertible $0$, and every nonzero element is invertible because the algebra is a field.
 
-### The Polar Split of the Group of Units
+### The Polar Split of the Group of Invertibles
 
 **Theorem.** The map
 
@@ -212,7 +212,7 @@ where $\mathrm{U}(1) = \{ u \in \mathbb{C} : \langle u\rangle_{*} = 1 \}$ is the
 
 **Proof.** The map is well defined because $\sqrt{\langle Q_1\rangle_{*}} > 0$ for $Q_1 \neq 0$, and its image lies in $\mathbb{R}_{>0} \times \mathrm{U}(1)$ because $\langle Q_1/\sqrt{\langle Q_1\rangle_{*}}\rangle_{*} = 1$. It is a group homomorphism: $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and $Q_1Q_2/\sqrt{\langle Q_1Q_2\rangle_{*}} = (Q_1/\sqrt{\langle Q_1\rangle_{*}})(Q_2/\sqrt{\langle Q_2\rangle_{*}})$. Its inverse is $(r,u) \mapsto ru$, which is continuous, so it is a homeomorphism.
 
-The two factors are the **scale** $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, a positive real, and the **phase** $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the unit group, which is what the norm supplies.
+The two factors are the **scale** $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, a positive real, and the **phase** $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$. The product form is $Q = ru$; here it is recorded as the splitting of the group of invertibles, which is what the norm supplies.
 
 ### The Inverse Map
 
@@ -222,19 +222,19 @@ $$
 (ru)^{-1} = r^{-1} u^{-1} = r^{-1} \bar{u},
 $$
 
-because for a unit $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts the scale and conjugates the phase.
+because for an invertible element $u$ one has $u^{-1} = \bar{u}$. Inversion therefore inverts the scale and conjugates the phase.
 
 ## The Three-Way Classification
 
-An element of a finite-dimensional real algebra is of one of three kinds: a unit, a zero divisor, or zero. The classes are read off from the norm.
+An element of a finite-dimensional real algebra is of one of three kinds: An invertible element, a zero divisor, or zero. The classes are read off from the norm.
 
 **Definition.** Let $Q \in \mathbb{C}$. Then exactly one of the following holds:
 
-- $\langle Q\rangle_{*} > 0$: $Q$ is a **unit**, i.e. an invertible element;
+- $\langle Q\rangle_{*} > 0$: $Q$ is an **invertible element**;
 - $\langle Q\rangle_{*} = 0$ and $Q \neq 0$: $Q$ is a **zero divisor**;
 - $Q = 0$: $Q$ is **zero**.
 
-**Theorem (the classification of $\mathbb{C}$).** The zero-divisor class is empty, so every nonzero complex number is a unit and the classification has only two non-empty classes.
+**Theorem (the classification of $\mathbb{C}$).** The zero-divisor class is empty, so every nonzero complex number is invertible and the classification has only two non-empty classes.
 
 **Proof.** $\langle Q\rangle_{*} = q^2+q'^2 = 0$ forces $q = q' = 0$ because squares of reals are non-negative, so the only element of vanishing norm is $0$.
 
@@ -244,7 +244,7 @@ The emptiness of the zero-divisor class is the statement that $\mathbb{C}$ is a 
 
 ## Distribution of the Invertible Elements
 
-The invertible elements are distributed over the two distinguished subspaces as follows. Since every nonzero element is a unit, both computations are immediate, and their content is the inversion-stability of the two subspaces.
+The invertible elements are distributed over the two distinguished subspaces as follows. Since every nonzero element is invertible, both computations are immediate, and their content is the inversion-stability of the two subspaces.
 
 ### The Real Subspace
 
@@ -304,7 +304,7 @@ The norm of a complex number is $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$, re
 
 A complex number is invertible if and only if it is nonzero, equivalently if and only if its norm is nonzero, and the inverse is $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$. On the worked pair $Q_1 = 3+4i$, $Q_2 = 1-2i$ the criterion gives $\langle Q_1\rangle_{*} = 25$, $\langle Q_2\rangle_{*} = 5$ and $\langle Q_1Q_2\rangle_{*} = 125$, with inverses $Q_1^{-1} = (3-4i)/25$ and $Q_2^{-1} = (1+2i)/5$. The zero-divisor class is empty, so $\mathbb{C}$ is a division algebra by the Frobenius theorem, and every nonzero element of each of the two distinguished subspaces is invertible.
 
-The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ into a positive scale and a phase, the product form of that splitting being $Q = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, and the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.
+The group of invertibles is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, open, dense, connected and non-compact, and it splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$ into a positive scale and a phase, the product form of that splitting being $Q = ru$. The norm is definite on both the real and the imaginary subspace with the same sign, and the only element of vanishing norm is the origin, which is why the complex norm is the definite base case of the norm series and the complex algebra the definite base case of the family.
 
 ## Summary of Notation
 
@@ -317,7 +317,7 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 | $\|Q\| = \sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and the modulus |
 | $\bar{Q}_1Q_2$ | the Hermitian product, whose real part is $\langle Q_1,Q_2\rangle_{*}$ and whose diagonal is $\langle Q_1\rangle_{*}$ |
 | $Q_1 = 3+4i$, $Q_2 = 1-2i$ | the worked pair of the category |
-| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units |
+| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of invertibles |
 | $\mathrm{U}(1) = \{u : \langle u\rangle_{*} = 1\}$ | the unit circle, the phase factor group |
 | $Q = ru$ | the polar split, $r = \sqrt{\langle Q\rangle_{*}} \in \mathbb{R}_{>0}$, $u = Q/\sqrt{\langle Q\rangle_{*}} \in \mathrm{U}(1)$ |
 | $Q^{-1} = \bar{Q}/\langle Q\rangle_{*}$ | the inverse of a nonzero element |
@@ -327,5 +327,5 @@ The group of units is $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, abelian, o
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the norm and the modulus of a complex number.
 - Israel Nathan Herstein, *Topics in Algebra*, 2nd edition (Wiley, 1975), for division algebras, inverses and the Frobenius theorem.
-- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for norms, invertibility in finite-dimensional algebras and the group of units.
+- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for norms, invertibility in finite-dimensional algebras and the group of invertibles.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the modulus, the Euclidean norm and the polar decomposition of a complex number.

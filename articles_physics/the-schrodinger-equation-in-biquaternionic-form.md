@@ -154,7 +154,7 @@ $$
 \langle\tilde\Xi\rangle_{\natural}=\tilde\Xi\tilde\Xi^{\natural}=0,
 $$
 
-which is the zero-divisor cone of the algebra. A generic element is off it — a random element has $\langle\tilde\Xi\rangle_{\natural}\neq0$ with probability one — and the flow keeps it there, because $\langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural}$ and $\langle\tilde Q\rangle_{\natural}$ is a central unit. So the field of this equation is a unit of the algebra at almost every point of space and time, and it stays one.
+which is the zero-divisor cone of the algebra. A generic element is off it — a random element has $\langle\tilde\Xi\rangle_{\natural}\neq0$ with probability one — and the flow keeps it there, because $\langle\tilde Q\tilde\Xi\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde\Xi\rangle_{\natural}$ and $\langle\tilde Q\rangle_{\natural}$ is a central unit. So the field of this equation is invertible in the algebra at almost every point of space and time, and it stays one.
 
 **The density is the Hermitian norm.** Put
 
@@ -287,7 +287,7 @@ so the norm is not preserved by this "Schrödinger equation". The failure is gen
 
 There is a second defect in the non-central choice: because $\vec e_z \vec e_x = \vec e_y$ while $\vec e_x \vec e_z = -\vec e_y$, the elements $\vec e_z\tilde{Ξ}$ and $\tilde{Ξ} \vec e_z$ differ, so the left- and right-handed interpretations of "the same" equation produce opposite generators. The centrality of $i$ removes this ambiguity.
 
-**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde H_\Psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde H_\Psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde H_\Psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde H_\Psi = -ie_t$). What fails is uniformity, and a unit that works only for Hamiltonians aligned with a preferred direction is not a unit for the Schrödinger equation, which claims no preferred direction. The caveat survives in the summary: the uniqueness is a uniqueness *for all Hermitian Hamiltonians*, and it is that uniformity, not the sign, that the algebra forces.
+**A caveat, stated honestly.** A non-central $\tilde{Ζ}$ is not always inadmissible: if a particular $\tilde H_\Psi$ commutes with $\tilde{Ζ}$, then $\tilde{Ζ}\tilde H_\Psi$ can be anti-Hermitian and the flow $*$-unitary on that sector (for instance $\tilde H_\Psi = i\,\vec e_z$ and $\vec{Ζ} = \vec e_z$, giving $\vec{Ζ}\tilde H_\Psi = -ie_t$). What fails is uniformity, and an invertible element that works only for Hamiltonians aligned with a preferred direction is not invertible for the Schrödinger equation, which claims no preferred direction. The caveat survives in the summary: the uniqueness is a uniqueness *for all Hermitian Hamiltonians*, and it is that uniformity, not the sign, that the algebra forces.
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 

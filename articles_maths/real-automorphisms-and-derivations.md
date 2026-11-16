@@ -37,7 +37,7 @@ Throughout this section the ground field is $\mathbb{R}$.
 
 **Proof.** By the display above, $\sigma(q e_t) = q\sigma(e_t) = q e_t$ for every $q$, so $\sigma$ is the identity.
 
-The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. In the complex case the $\mathbb{R}$-automorphism group is $\mathbb{Z}/2$. Here the algebra is the ground field itself, the group of units modulo scalars is $GL_1(\mathbb{R})/\mathbb{R}^\times = 1$, and the automorphism group is trivial.
+The result is the exact analogue of Skolem–Noether for a one-dimensional central simple algebra. In the complex case the $\mathbb{R}$-automorphism group is $\mathbb{Z}/2$. Here the algebra is the ground field itself, the group of invertibles modulo scalars is $GL_1(\mathbb{R})/\mathbb{R}^\times = 1$, and the automorphism group is trivial.
 
 ## Automorphisms of the Field and of the Ordered Field
 

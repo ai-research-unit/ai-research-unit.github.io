@@ -1,11 +1,11 @@
 
-# __Centre, Units, Zero Divisors and Division Algebras__
+# __Centre, Invertibles, Zero Divisors and Division Algebras__
 
 ## Introduction
 
 The ideal theory of *Ideals and Quotients of Algebras* divides an algebra by its two-sided ideals. This article studies the elements of an algebra rather than its ideals: which elements commute with everything, which are invertible, which annihilate something nonzero, and when the three notions combine to make the algebra a division algebra.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$ is an $R$-algebra. The centre, the group of units and the notion of a zero divisor are meaningful for a general algebra, but the theory is at its sharpest for a **unital associative** algebra, and most statements below assume unitality and associativity and say so. The base ring stays a commutative ring except where the classical theorems require a field; those places are flagged.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$ is an $R$-algebra. The centre, the group of invertibles and the notion of a zero divisor are meaningful for a general algebra, but the theory is at its sharpest for a **unital associative** algebra, and most statements below assume unitality and associativity and say so. The base ring stays a commutative ring except where the classical theorems require a field; those places are flagged.
 
 The article closes with the **regular module** $A_A$: the algebra acting on itself by right multiplication. Its submodules are the right ideals, and the simplicity of $A_A$ is exactly the division-algebra condition. This is the bridge from elements to modules, and it prepares the module theory of *Linear Spaces over Algebras*.
 
@@ -90,53 +90,53 @@ $$
 
 and both sides extend bilinearly, so $z \otimes w$ is central. The second statement is the standard theorem that the tensor product of central simple algebras is central simple, proved over an algebraically closed field by the identification with matrix algebras and in general by Galois descent.
 
-## Units
+## Invertibles
 
-**Definition.** Let $A$ be a unital associative $R$-algebra. An element $u \in A$ is a **unit** if there exists $v \in A$ with
+**Definition.** Let $A$ be a unital associative $R$-algebra. An element $u \in A$ is **invertible** if there exists $v \in A$ with
 
 $$
 uv = vu = 1_A.
 $$
 
-The element $v$ is unique when it exists and is written $u^{-1}$; the units form a group $A^\times$ under multiplication, the **group of units** of $A$.
+The element $v$ is unique when it exists and is written $u^{-1}$; the invertibles form a group $A^\times$ under multiplication, the **group of invertibles** of $A$.
 
-**Proposition.** The group of units is closed under multiplication and inversion, contains $1_A$, and every unit is neither a zero divisor nor a member of any proper two-sided ideal.
+**Proposition.** The group of invertibles is closed under multiplication and inversion, contains $1_A$, and every invertible element is neither a zero divisor nor a member of any proper two-sided ideal.
 
-*Proof.* If $u,v$ are units then $(uv)(v^{-1}u^{-1}) = 1$ and $(v^{-1}u^{-1})(uv) = 1$, so $uv$ is a unit; $u^{-1}$ is a unit; $1_A$ is a unit. If $ux = 0$ then $x = u^{-1}ux = 0$, so a unit is not a zero divisor, and if $u$ lies in a two-sided ideal $I$ then $1 = u^{-1}u \in I$, whence $I = A$.
+*Proof.* If $u,v$ are invertible then $(uv)(v^{-1}u^{-1}) = 1$ and $(v^{-1}u^{-1})(uv) = 1$, so $uv$ is invertible; $u^{-1}$ is invertible; $1_A$ is invertible. If $ux = 0$ then $x = u^{-1}ux = 0$, so an invertible element is not a zero divisor, and if $u$ lies in a two-sided ideal $I$ then $1 = u^{-1}u \in I$, whence $I = A$.
 
-**Proposition (uniqueness of the inverse and cancellation).** In a unital associative algebra, if $uv = 1_A$ and $wu = 1_A$, then $v = w$; in particular, if $u$ has both a left inverse and a right inverse the two coincide and $u$ is a unit, and units cancel in products.
+**Proposition (uniqueness of the inverse and cancellation).** In a unital associative algebra, if $uv = 1_A$ and $wu = 1_A$, then $v = w$; in particular, if $u$ has both a left inverse and a right inverse the two coincide and $u$ is invertible, and invertibles cancel in products.
 
 *Proof.* From $uv = 1$ and $wu = 1$, $w = w1 = w(uv) = (wu)v = 1v = v$.
 
-**Remark (one-sided inverses).** The hypothesis that an inverse exists on both sides is not redundant. In the algebra $\operatorname{End}_F(V)$ of linear endomorphisms of a vector space with basis $e_0, e_1, e_2, \dots$, the shift $R(e_i) = e_{i+1}$ has the left inverse $L$ defined by $L(e_0) = 0$ and $L(e_{i+1}) = e_i$, so $LR = \mathrm{id}$, while $RL(e_0) = 0$ and $RL \neq \mathrm{id}$; thus $R$ has a one-sided inverse and is not a unit. Finite dimension removes the possibility, and it is precisely this that the division-algebra criterion below uses.
+**Remark (one-sided inverses).** The hypothesis that an inverse exists on both sides is not redundant. In the algebra $\operatorname{End}_F(V)$ of linear endomorphisms of a vector space with basis $e_0, e_1, e_2, \dots$, the shift $R(e_i) = e_{i+1}$ has the left inverse $L$ defined by $L(e_0) = 0$ and $L(e_{i+1}) = e_i$, so $LR = \mathrm{id}$, while $RL(e_0) = 0$ and $RL \neq \mathrm{id}$; thus $R$ has a one-sided inverse and is not invertible. Finite dimension removes the possibility, and it is precisely this that the division-algebra criterion below uses.
 
-**Example (matrix units).** For a field $k$, $M_n(k)^\times = GL_n(k)$, the invertible matrices; an element of $M_n(k)$ is a unit if and only if its determinant is a unit of $k$, which over a field means nonzero. Over a general commutative ring $R$, an element of $M_n(R)$ is a unit if and only if its determinant is a unit of $R$, a strictly stronger condition than $\det \neq 0$.
+**Example (matrix units).** For a field $k$, $M_n(k)^\times = GL_n(k)$, the invertible matrices; an element of $M_n(k)$ is invertible if and only if its determinant is invertible in $k$, which over a field means nonzero. Over a general commutative ring $R$, an element of $M_n(R)$ is invertible if and only if its determinant is invertible in $R$, a strictly stronger condition than $\det \neq 0$.
 
-**Example (the number systems).** The group of units of the small algebras is tabulated below.
+**Example (the number systems).** The group of invertibles of the small algebras is tabulated below.
 
-| Algebra | Unit criterion | Group of units |
+| Algebra | Invertibility criterion | Group of invertibles |
 |---|---|---|
 | $\mathbb{R}$ | $a \neq 0$ | $\mathbb{R}^\times = \mathbb{R}\setminus\{0\}$ |
 | $\mathbb{C}$ | $z\bar z = a^2+b^2 \neq 0$ | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ |
 | $\mathbb{C}_{\mathrm{spl}}$ | $z\bar z = a^2-b^2 \neq 0$ | four components, $\cong \mathbb{R}^\times \times \mathbb{R}^\times$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | $a \neq 0$ | $\{a + b\varepsilon : a \neq 0\}$, an abelian group |
 | $\mathbb{H}$ | $q q^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2 \neq 0$ | $\mathbb{H}\setminus\{0\}$ |
-| $\mathbb{B}_{\mathrm{spl}}$ | $u\bar u$ a unit of $\mathbb{C}_{\mathrm{spl}}$ | $\{u : u\bar u \in {\mathbb{C}_{\mathrm{spl}}}^\times\}$ |
+| $\mathbb{B}_{\mathrm{spl}}$ | $u\bar u$ invertible in $\mathbb{C}_{\mathrm{spl}}$ | $\{u : u\bar u \in {\mathbb{C}_{\mathrm{spl}}}^\times\}$ |
 | $\mathbb{B}$ | $\tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 \neq 0$ | $\mathbb{B}^\times = \{\tilde{Q} : \tilde{Q}\tilde{Q}^{\natural} \neq 0\}$ |
 
-The criterion for the quaternionic cases is the standard one: in a quaternion algebra over a commutative ring $R$, an element $u$ is a unit if and only if $u\bar u$ is a unit of $R$, and then $u^{-1} = \bar{u}\,(u\bar u)^{-1}$. The identity is verified directly:
+The criterion for the quaternionic cases is the standard one: in a quaternion algebra over a commutative ring $R$, an element $u$ is invertible if and only if $u\bar u$ is invertible in $R$, and then $u^{-1} = \bar{u}\,(u\bar u)^{-1}$. The identity is verified directly:
 
 $$
 u \cdot \bar{u}\,(u\bar u)^{-1} = (u\bar u)\,(u\bar u)^{-1} = 1, \qquad \bar{u}\,(u\bar u)^{-1}\cdot u = (u\bar u)^{-1}\,\bar{u}u = 1,
 $$
 
-using $u\bar{u} = \bar{u}u \in R$ and its centrality. For $\mathbb{C}_{\mathrm{dln}}$ the element $a + b\varepsilon$ has $(a + b\varepsilon)(a - b\varepsilon) = a^2$, which is a unit of $\mathbb{R}$ exactly when $a \neq 0$; the inverse is $a^{-1} - b a^{-2}\varepsilon$.
+using $u\bar{u} = \bar{u}u \in R$ and its centrality. For $\mathbb{C}_{\mathrm{dln}}$ the element $a + b\varepsilon$ has $(a + b\varepsilon)(a - b\varepsilon) = a^2$, which is invertible in $\mathbb{R}$ exactly when $a \neq 0$; the inverse is $a^{-1} - b a^{-2}\varepsilon$.
 
 ## Zero Divisors
 
 **Definition.** Let $A$ be an $R$-algebra. A nonzero element $z \in A$ is a **left zero divisor** if there exists $0 \neq w \in A$ with $zw = 0$, and a **right zero divisor** if there exists $0 \neq w$ with $wz = 0$. It is a **zero divisor** if it is a left or a right zero divisor. An algebra with no zero divisors is a **domain**, and a commutative unital associative algebra with no zero divisors is an **integral domain**.
 
-In a commutative algebra the two notions coincide. A left zero divisor cannot be a unit, and by the proposition above a unit cannot be a zero divisor; the two classes are disjoint. They need not exhaust the algebra: in $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ the elements are $0$, the units $a + b\varepsilon$ with $a \neq 0$, and the zero divisors $b\varepsilon$ with $b \neq 0$, but in general there are elements that are neither — in $\mathbb{Z}$, the element $2$ is neither a unit nor a zero divisor.
+In a commutative algebra the two notions coincide. A left zero divisor cannot be an invertible element, and by the proposition above an invertible element cannot be a zero divisor; the two classes are disjoint. They need not exhaust the algebra: in $\mathbb{C}[\varepsilon]/(\varepsilon^2)$ the elements are $0$, the invertibles $a + b\varepsilon$ with $a \neq 0$, and the zero divisors $b\varepsilon$ with $b \neq 0$, but in general there are elements that are neither — in $\mathbb{Z}$, the element $2$ is neither an invertible element nor a zero divisor.
 
 **Proposition.** Let $A$ be a unital associative algebra and $z \in A$. The left annihilator
 
@@ -170,9 +170,9 @@ $$
 
 Since every zero divisor of $\mathbb{C}_{\mathrm{spl}}$ has $a^2 = b^2$, the zero divisors of $\mathbb{C}_{\mathrm{spl}}$ are exactly the nonzero multiples of $1 + j$ and of $1 - j$, that is, the two lines $\mathbb{R}(1+j)$ and $\mathbb{R}(1-j)$. In the idempotent basis $\pi_{1,2} = \tfrac{1}{2}(1 \pm j)$ these are the ideals $\mathbb{C}_{\mathrm{spl}}\pi_{1,2}$.
 
-**Example (zero divisors in $\mathbb{C}_{\mathrm{dln}}$).** For $z = a + b\varepsilon$ one has $z \cdot b\varepsilon = ab\varepsilon$, so if $a \neq 0$ then $z$ is a unit, and if $a = 0$ and $b \neq 0$ then $z^2 = 0$ and $z$ is a zero divisor. The zero divisors of $\mathbb{C}_{\mathrm{dln}}$ are exactly the nonzero elements of the maximal ideal $(\varepsilon) = \mathbb{R}\varepsilon$, which is a square-zero ideal.
+**Example (zero divisors in $\mathbb{C}_{\mathrm{dln}}$).** For $z = a + b\varepsilon$ one has $z \cdot b\varepsilon = ab\varepsilon$, so if $a \neq 0$ then $z$ is invertible, and if $a = 0$ and $b \neq 0$ then $z^2 = 0$ and $z$ is a zero divisor. The zero divisors of $\mathbb{C}_{\mathrm{dln}}$ are exactly the nonzero elements of the maximal ideal $(\varepsilon) = \mathbb{R}\varepsilon$, which is a square-zero ideal.
 
-**Example (zero divisors in $\mathbb{B}$).** For a biquaternion $\tilde{Q}$ the product $\tilde{Q}\tilde{Q}^{\natural}$ is multiplicative. Hence if $\tilde{Q}\tilde{Q}^{\natural} = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}^{\natural} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $\tilde{Q}\tilde{Q}^{\natural} \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $\tilde{Q}\tilde{Q}^{\natural} = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, and the zero divisors $\tilde{Q}\tilde{Q}^{\natural} = 0$. The explicit pairs are exhibited .
+**Example (zero divisors in $\mathbb{B}$).** For a biquaternion $\tilde{Q}$ the product $\tilde{Q}\tilde{Q}^{\natural}$ is multiplicative. Hence if $\tilde{Q}\tilde{Q}^{\natural} = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}^{\natural} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $\tilde{Q}\tilde{Q}^{\natural} \neq 0$ makes $\tilde{Q}$ an invertible element, every nonzero $\tilde{Q}$ with $\tilde{Q}\tilde{Q}^{\natural} = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the invertibles $\tilde{Q}\tilde{Q}^{\natural} \neq 0$, and the zero divisors $\tilde{Q}\tilde{Q}^{\natural} = 0$. The explicit pairs are exhibited .
 
 **Example (zero divisors in $\mathbb{B}_{\mathrm{spl}}$).** The split biquaternions contain the central split complex scalars, and the zero divisors of $\mathbb{C}_{\mathrm{spl}}$ are inherited: with $j$ central and $j^2 = +1$,
 
@@ -180,21 +180,21 @@ $$
 (1 + j)(1 - j) = 0.
 $$
 
-Thus $\mathbb{B}_{\mathrm{spl}}$ has zero divisors and is not a division algebra, even though its quaternion part $\mathbb{H}$ is one. The unit criterion $u\bar u \in {\mathbb{C}_{\mathrm{spl}}}^\times$ shows again that the central element $u = 1+j$ fails to be a unit: $u\bar u = (1+j)^2 = 2+2j$, and $(2+2j)(2-2j) = 4-4 = 0$, so $2+2j$ is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ rather than a unit.
+Thus $\mathbb{B}_{\mathrm{spl}}$ has zero divisors and is not a division algebra, even though its quaternion part $\mathbb{H}$ is one. The unit criterion $u\bar u \in {\mathbb{C}_{\mathrm{spl}}}^\times$ shows again that the central element $u = 1+j$ fails to be an invertible element: $u\bar u = (1+j)^2 = 2+2j$, and $(2+2j)(2-2j) = 4-4 = 0$, so $2+2j$ is a zero divisor of $\mathbb{C}_{\mathrm{spl}}$ rather than an invertible element.
 
 **Proposition (zero divisors and finite dimension).** Let $A$ be a finite-dimensional unital associative algebra over a field $F$. Then $A$ is a division algebra if and only if $A$ has no zero divisors.
 
-*Proof.* A division algebra has no zero divisors by the proposition on units. Conversely, suppose $A$ has no zero divisors and let $0 \neq a \in A$. The left multiplication $\lambda_a : x \mapsto ax$ is $F$-linear and injective, since $ax = 0$ forces $x = 0$. As $A$ is finite-dimensional, $\lambda_a$ is surjective, so $ab = 1$ for some $b$; by uniqueness of inverses $a$ is a unit. Hence every nonzero element is a unit.
+*Proof.* A division algebra has no zero divisors by the proposition on the invertibles. Conversely, suppose $A$ has no zero divisors and let $0 \neq a \in A$. The left multiplication $\lambda_a : x \mapsto ax$ is $F$-linear and injective, since $ax = 0$ forces $x = 0$. As $A$ is finite-dimensional, $\lambda_a$ is surjective, so $ab = 1$ for some $b$; by uniqueness of inverses $a$ is invertible. Hence every nonzero element is invertible.
 
 Finite dimension is used at the step where injectivity of $\lambda_a$ is converted into surjectivity, and it is finite dimension over a field that makes that step available. Over a general commutative ring the equivalence fails: the ring $\mathbb{Z}$, regarded as a $\mathbb{Z}$-algebra, has no zero divisors yet is not a division algebra, because $2$ has no inverse; the argument above would have to produce $b$ with $2b = 1$, which does not exist.
 
-**Theorem (non-units are zero divisors).** Let $A$ be a finite-dimensional unital associative algebra over a field $F$, and $a \in A$. Then $a$ is a unit, or $a = 0$, or $a$ is a zero divisor. Equivalently, the non-units of $A$ are the origin together with the zero divisors.
+**Theorem (non-invertibles are zero divisors).** Let $A$ be a finite-dimensional unital associative algebra over a field $F$, and $a \in A$. Then $a$ is invertible, or $a = 0$, or $a$ is a zero divisor. Equivalently, the non-invertibles of $A$ are the origin together with the zero divisors.
 
-*Proof.* Suppose $a$ is not a unit and $a \neq 0$, and let $\lambda_a$ be the left multiplication. If $\lambda_a$ were surjective it would be bijective, since $A$ is finite-dimensional; let $b$ be the preimage of $1$, so that $ab = 1$. The inverse linear map is $\lambda_b$, so $\lambda_{ba} = \lambda_b \circ \lambda_a = \mathrm{id}_A$ and $ba = 1$. Then $a$ would be a unit, a contradiction. Hence $\lambda_a$ is not surjective, and the rank–nullity theorem gives $\ker \lambda_a \neq 0$: some $x \neq 0$ satisfies $ax = 0$, and $a$ is a left zero divisor.
+*Proof.* Suppose $a$ is not invertible and $a \neq 0$, and let $\lambda_a$ be the left multiplication. If $\lambda_a$ were surjective it would be bijective, since $A$ is finite-dimensional; let $b$ be the preimage of $1$, so that $ab = 1$. The inverse linear map is $\lambda_b$, so $\lambda_{ba} = \lambda_b \circ \lambda_a = \mathrm{id}_A$ and $ba = 1$. Then $a$ would be an invertible element, a contradiction. Hence $\lambda_a$ is not surjective, and the rank–nullity theorem gives $\ker \lambda_a \neq 0$: some $x \neq 0$ satisfies $ax = 0$, and $a$ is a left zero divisor.
 
-**Remark (where finite dimension enters).** Only in the last step: a non-surjective endomorphism of a finite-dimensional space has a non-zero kernel. Over an infinite-dimensional algebra the statement fails. On $\ell^2(\mathbb{N})$ the diagonal operator $D = \operatorname{diag}(1/2, 1/3, 1/4, \dots)$ is injective with dense but proper range, so it is not surjective and not a unit; yet $Dx = 0$ forces $x = 0$, and $xD = 0$ forces $x = 0$ because the adjoint $D^{*}$ is injective too. It is therefore a non-unit that is neither a left nor a right zero divisor. The right shift is not a witness: it has the non-zero left inverse $T(y) = y_0 e_0$, so $TS = 0$ and $S$ is a right zero divisor.
+**Remark (where finite dimension enters).** Only in the last step: a non-surjective endomorphism of a finite-dimensional space has a non-zero kernel. Over an infinite-dimensional algebra the statement fails. On $\ell^2(\mathbb{N})$ the diagonal operator $D = \operatorname{diag}(1/2, 1/3, 1/4, \dots)$ is injective with dense but proper range, so it is not surjective and not an invertible element; yet $Dx = 0$ forces $x = 0$, and $xD = 0$ forces $x = 0$ because the adjoint $D^{*}$ is injective too. It is therefore a non-invertible that is neither a left nor a right zero divisor. The right shift is not a witness: it has the non-zero left inverse $T(y) = y_0 e_0$, so $TS = 0$ and $S$ is a right zero divisor.
 
-**Corollary (the biquaternion instance).** In $\mathbb{B}$ the units are the elements with $\langle \tilde{Q} \rangle_{\natural} \neq 0$ and the non-units are $\{0\} \cup \{\tilde{Q} \neq 0 : \langle \tilde{Q} \rangle_{\natural} = 0\}$, which is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
+**Corollary (the biquaternion instance).** In $\mathbb{B}$ the invertibles are the elements with $\langle \tilde{Q} \rangle_{\natural} \neq 0$ and the non-invertibles are $\{0\} \cup \{\tilde{Q} \neq 0 : \langle \tilde{Q} \rangle_{\natural} = 0\}$, which is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Two Cases*.
 
 ## The Regular Module and Division Algebras
 
@@ -204,11 +204,11 @@ The algebra acts on itself, and this action is faithful: $a \cdot x = 0$ for all
 
 **Theorem.** Let $A$ be a unital associative $R$-algebra. The following are equivalent:
 
-1. $A$ is a division algebra, that is, every nonzero element of $A$ is a unit;
+1. $A$ is a division algebra, that is, every nonzero element of $A$ is invertible;
 2. $A_A$ is a simple right $A$-module;
 3. ${}_A A$ is a simple left $A$-module.
 
-*Proof.* $(1) \Rightarrow (2)$: if $A$ is a division algebra and $M \subseteq A_A$ is a nonzero submodule, take $0 \neq m \in M$; then $m$ is a unit, so $A = mA \subseteq M$, whence $M = A$. $(2) \Rightarrow (1)$: if $A_A$ is simple and $0 \neq a \in A$, then $aA$ is a nonzero submodule, hence $aA = A$, so $ab = 1$ for some $b$; a ring in which every nonzero element has a right inverse is a division ring, as shown next. The equivalence with $(3)$ is symmetric.
+*Proof.* $(1) \Rightarrow (2)$: if $A$ is a division algebra and $M \subseteq A_A$ is a nonzero submodule, take $0 \neq m \in M$; then $m$ is invertible, so $A = mA \subseteq M$, whence $M = A$. $(2) \Rightarrow (1)$: if $A_A$ is simple and $0 \neq a \in A$, then $aA$ is a nonzero submodule, hence $aA = A$, so $ab = 1$ for some $b$; a ring in which every nonzero element has a right inverse is a division ring, as shown next. The equivalence with $(3)$ is symmetric.
 
 For completeness, the standard argument alluded to: if every nonzero $a$ has a right inverse, choose $b$ with $ab = 1$; the element $b$ is nonzero and has a right inverse $c$ with $bc = 1$; then
 
@@ -222,15 +222,15 @@ so $ba = bc = 1$ and $b$ is a two-sided inverse of $a$.
 
 Because $A_A$ is simple for a division algebra, a division algebra has no nonzero proper right ideal, and by the same argument no nonzero proper two-sided ideal: every division algebra is **simple**. The converse fails. The matrix algebra $M_n(k)$ over a field $k$ is simple, asshows, but $A_A$ is not simple as a module — its nonzero proper right ideals are the column-type subspaces — and $M_n(k)$ has zero divisors. Simplicity of the algebra and simplicity of the regular module are therefore genuinely different conditions; the second is the division condition.
 
-**Example.** The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are not covered here. The algebras $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-units and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given.
+**Example.** The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are not covered here. The algebras $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-invertibles and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given.
 
 ## Summary
 
 The **centre** $Z(A) = C_A(A)$ is the set of elements commuting with everything; for an associative algebra it is a commutative subalgebra containing the unit, and it is preserved by every algebra automorphism. An algebra is **central** when $Z(A) = R\cdot 1$. The standard centres are $\mathbb{R}$ for $\mathbb{H}$, $\mathbb{C}_{\mathrm{spl}}$ for $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{C}$ for $\mathbb{B}$, and $k I_n$ for $M_n(k)$.
 
-A **unit** is an element with a two-sided inverse, and the units form the group $A^\times$; a unit is neither a zero divisor nor a member of a proper ideal. A **zero divisor** is a nonzero element annihilating a nonzero element on one side, and the annihilator of an element is a one-sided ideal. In $\mathbb{C}_{\mathrm{spl}}$ the zero divisors are the nonzero multiples of $1 \pm j$; in $\mathbb{C}_{\mathrm{dln}}$ they are the nonzero elements of the square-zero maximal ideal $(\varepsilon)$; in $\mathbb{B}$ they are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$; in $\mathbb{B}_{\mathrm{spl}}$ they include the inherited split complex ones, beginning with $1 \pm j$.
+An element with a two-sided inverse is **invertible**, and the invertibles form the group $A^\times$; such an element is neither a zero divisor nor a member of a proper ideal. A **zero divisor** is a nonzero element annihilating a nonzero element on one side, and the annihilator of an element is a one-sided ideal. In $\mathbb{C}_{\mathrm{spl}}$ the zero divisors are the nonzero multiples of $1 \pm j$; in $\mathbb{C}_{\mathrm{dln}}$ they are the nonzero elements of the square-zero maximal ideal $(\varepsilon)$; in $\mathbb{B}$ they are exactly the nonzero elements with $\langle\tilde{Q}\rangle_{\natural} = 0$; in $\mathbb{B}_{\mathrm{spl}}$ they include the inherited split complex ones, beginning with $1 \pm j$.
 
-A unital associative algebra $A$ is a **division algebra** exactly when every nonzero element is a unit and exactly when the regular module $A_A$ is simple; over a field, a finite-dimensional such algebra is a division algebra exactly when it has no zero divisors. Over a field and in finite dimension the non-units are the origin together with the zero divisors, so a non-unit is either $0$ or annihilates something nonzero. The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the simple algebras $M_n(k)$ and $\mathbb{B}$ fail to be division algebras because the regular module is not simple and zero divisors exist.
+A unital associative algebra $A$ is a **division algebra** exactly when every nonzero element is invertible and exactly when the regular module $A_A$ is simple; over a field, a finite-dimensional such algebra is a division algebra exactly when it has no zero divisors. Over a field and in finite dimension the non-invertibles are the origin together with the zero divisors, so a non-invertible is either $0$ or annihilates something nonzero. The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the simple algebras $M_n(k)$ and $\mathbb{B}$ fail to be division algebras because the regular module is not simple and zero divisors exist.
 
 ## Summary of Notation
 
@@ -240,8 +240,8 @@ A unital associative algebra $A$ is a **division algebra** exactly when every no
 | $A$ | $R$-algebra, unital and associative where stated |
 | $Z(A)$ | Centre of $A$ |
 | $C_A(S)$ | Centralizer of $S$ in $A$ |
-| $A^\times$ | Group of units of $A$ |
-| $u^{-1}$ | Inverse of a unit $u$ |
+| $A^\times$ | Group of invertibles of $A$ |
+| $u^{-1}$ | Inverse of an invertible element $u$ |
 | $\operatorname{Ann}_\ell(z)$, $\operatorname{Ann}_r(z)$ | Left and right annihilator of $z$ |
 | $A_A$, ${}_A A$ | Regular right and left module |
 | $\mathbb{R}, \mathbb{C}, \mathbb{H}$ | The finite-dimensional division algebras over $\mathbb{R}$ |

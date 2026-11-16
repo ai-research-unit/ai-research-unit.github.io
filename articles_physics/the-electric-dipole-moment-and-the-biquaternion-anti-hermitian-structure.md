@@ -404,7 +404,7 @@ $$
 \gamma_5=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 $$
 
-The five are generators, not a basis: the basis is the sixteen two-sided products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$, one for each ordered pair of units, linearly independent over $\mathbb{C}$ and spanning the sixteen complex dimensions. A product of two basis operators is again a basis operator up to sign, and a general element is a complex linear combination of the sixteen.
+The five are generators, not a basis: the basis is the sixteen two-sided products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$, one for each ordered pair of invertibles, linearly independent over $\mathbb{C}$ and spanning the sixteen complex dimensions. A product of two basis operators is again a basis operator up to sign, and a general element is a complex linear combination of the sixteen.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality operator. The central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 

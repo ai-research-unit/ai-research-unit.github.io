@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The polar word exists exactly on the elements of nonzero norm, and that set is not the whole algebra.** The word is a parametrisation of the units, so it is defined where the element is invertible and nowhere else. The complement is the zero-divisor cone: the set of elements whose quaternionic norm vanishes. On the cone the field is not zero, the density is usually not zero, and the chart nevertheless fails. That is the article's subject.
+**The polar word exists exactly on the elements of nonzero norm, and that set is not the whole algebra.** The word is a parametrisation of the invertibles, so it is defined where the element is invertible and nowhere else. The complement is the zero-divisor cone: the set of elements whose quaternionic norm vanishes. On the cone the field is not zero, the density is usually not zero, and the chart nevertheless fails. That is the article's subject.
 
 **The cone is a complex hypersurface and not a real one.** The norm is a complex number, so its vanishing is two real conditions on eight real parameters and the cone has six real dimensions. It is the set of singular matrices in the algebra's matrix representation, and its real codimension is two. The word "cone" is exact: the set is invariant under multiplication by any central scalar.
 
@@ -18,7 +18,7 @@
 
 *Theorem.* The polar word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists on $\tilde\Xi$ if and only if $N(\tilde\Xi)\neq0$.
 
-*Proof.* The word divides by the modulus $\Rho$, and $\Rho^{2}=N(\tilde\Xi)$. A division by $\Rho$ is a division by zero exactly where $N$ vanishes. Conversely, where $N\neq0$ the modulus is a nonzero central number and the element $\tilde\Xi/\Rho$ is a unit; the polar decomposition of a unit into a Hermitian boost and a real rotor is [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html)'s proposition, and it applies to every unit.
+*Proof.* The word divides by the modulus $\Rho$, and $\Rho^{2}=N(\tilde\Xi)$. A division by $\Rho$ is a division by zero exactly where $N$ vanishes. Conversely, where $N\neq0$ the modulus is a nonzero central number and the element $\tilde\Xi/\Rho$ is invertible; the polar decomposition of an invertible element into a Hermitian boost and a real rotor is [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html)'s proposition, and it applies to every invertible element.
 
 **The word's existence is therefore a property of the element and not of the field's equation.** Nothing in the field equation enters the statement. The equation decides which elements occur; the algebra decides which occur in the chart.
 
@@ -123,11 +123,11 @@ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a parti
 
 **The domain is a condition at each event and is not conserved by any of the corpus's flows except the Schrödinger one.** The Klein–Gordon flow does not preserve it because the equation is second order; the Dirac flow does not preserve it because the mass couples the two chiral pieces.
 
-**The Klein–Gordon check.** With $\Xi_t(0,x)=0$ and $\partial_{t'}\Xi_t(0,x)$ a unit packet of width $2$, $k_m=1$, and a $1+1$ evolution on a periodic grid of $4000$ points spanning $60$ with step $10^{-4}$, the field starts on the cone and its maximum modulus is $0.0500$ at $t=0.05$ and $0.1983$ at $t=0.2$. So the field leaves the cone immediately and returns to it only at isolated events.
+**The Klein–Gordon check.** With $\Xi_t(0,x)=0$ and $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$, $k_m=1$, and a $1+1$ evolution on a periodic grid of $4000$ points spanning $60$ with step $10^{-4}$, the field starts on the cone and its maximum modulus is $0.0500$ at $t=0.05$ and $0.1983$ at $t=0.2$. So the field leaves the cone immediately and returns to it only at isolated events.
 
 **The Dirac check.** A field carrying one chiral piece alone is on the cone; after evolution the modulus of the determinant rises from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$, because the mass couples the pieces and a field carrying one piece alone does not keep one piece alone. [Why Biquaternions?](why-biquaternions.html) records the check.
 
-**The Schrödinger flow is the exception and the reason is multiplicative.** That flow is left multiplication by a unit, so it preserves the norm exactly: $N(\tilde U\tilde\Xi)=N(\tilde U)N(\tilde\Xi)$ and $N(\tilde U)\neq0$. A cone preserved by a flow is a cone preserved by a group of units, and the relativistic flows are not of that kind.
+**The Schrödinger flow is the exception and the reason is multiplicative.** That flow is left multiplication by an invertible element, so it preserves the norm exactly: $N(\tilde U\tilde\Xi)=N(\tilde U)N(\tilde\Xi)$ and $N(\tilde U)\neq0$. A cone preserved by a flow is a cone preserved by a group of invertibles, and the relativistic flows are not of that kind.
 
 **The consequence for the reading is that the chart is local in time as well as in space.** A field's word at one event says nothing about the word at a nearby event: the chart can fail between two events at which it exists. A fluid reading is therefore a family of chart patches and not a global chart.
 
@@ -175,7 +175,7 @@ Two families of fields lie on the cone with a non-vanishing density: the element
 
 What survives on the cone is the two-factor decomposition into a Hermitian factor and a partial isometry, which separates the scale from the direction and not the velocity from the spin.
 
-The domain is a condition at each event. The Klein–Gordon flow and the Dirac flow do not preserve it, checked at two times each; only the Schrödinger flow, being left multiplication by a unit, does. The reading is therefore a family of chart patches, exact on the interior and populated on the boundary, and it adds no dynamics of its own.
+The domain is a condition at each event. The Klein–Gordon flow and the Dirac flow do not preserve it, checked at two times each; only the Schrödinger flow, being left multiplication by an invertible element, does. The reading is therefore a family of chart patches, exact on the interior and populated on the boundary, and it adds no dynamics of its own.
 
 ## Summary of Notation
 

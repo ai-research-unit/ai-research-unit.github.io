@@ -81,8 +81,8 @@ $$
 
 | regime | conditions | spectrum | the element | name |
 | --- | --- | --- | --- | --- |
-| $\Sigma_{11}$ | $N\neq0$, $B^{2}\neq0$ | two distinct non-zero roots | a unit with two modes | mass in motion |
-| $\Sigma_{10}$ | $N\neq0$, $B^{2}=0$ | a double non-zero root | a unit with one mode | the rest frame and the exceptional point |
+| $\Sigma_{11}$ | $N\neq0$, $B^{2}\neq0$ | two distinct non-zero roots | an invertible element with two modes | mass in motion |
+| $\Sigma_{10}$ | $N\neq0$, $B^{2}=0$ | a double non-zero root | an invertible element with one mode | the rest frame and the exceptional point |
 | $\Sigma_{01}$ | $N=0$, $B^{2}\neq0$ | two distinct roots, one at zero | a zero divisor with two modes | the light ray |
 | $\Sigma_{00}$ | $N=0$, $B^{2}=0$ | a double root at zero | a zero divisor with one mode | the vacuum and the nilpotent ladder |
 
@@ -97,7 +97,7 @@ e_t+i\vec e_x\in\Sigma_{01}\quad(N=0,\ B^{2}=-1),\qquad
 e_t+\vec e_x+i\vec e_y\in\Sigma_{10}\quad(N=1,\ B^{2}=0).
 $$
 
-**The first is null with a full eigenbasis and the second is a unit with none.** The eigenvalues of the first are $0$ and $2$. The minimal polynomial of the second is $(X-1)^{2}$.
+**The first is null with a full eigenbasis and the second is invertible with none.** The eigenvalues of the first are $0$ and $2$. The minimal polynomial of the second is $(X-1)^{2}$.
 
 **The two conditions are also functionally independent, and that is a statement about gradients.** With coordinates $(Q_t,Q_x,Q_y,Q_z)$,
 
@@ -125,7 +125,7 @@ $$
 
 | invariant | data | number of types | what the types are |
 | --- | --- | --- | --- |
-| norm | $N$ | $2$ | the units and the null cone |
+| norm | $N$ | $2$ | the invertibles and the null cone |
 | characteristic polynomial | $(2Q_t,N)$ | $4$ | the four regimes |
 | minimal polynomial | $m_{\tilde Q}$ | $6$ | the six strata |
 
@@ -146,7 +146,7 @@ $$
 | the origin | one term | no |
 | the non-zero nilpotents | none | no |
 
-**The two failures sit in opposite mixed regimes.** The Jordan part is a unit with no eigenbasis. A null element with two modes is a zero divisor with no polar decomposition. Neither failure implies the other.
+**The two failures sit in opposite mixed regimes.** The Jordan part is invertible with no eigenbasis. A null element with two modes is a zero divisor with no polar decomposition. Neither failure implies the other.
 
 ### The Two Operators
 
@@ -252,13 +252,13 @@ $$
 
 **$\Sigma_{11}$ is the complement of the union of two cones, so it is open.** Its complement has real codimension two, so it is also dense, and an element drawn without a rule lies in it: a hundred random draws with complex normal coefficients gave a hundred elements of $\Sigma_{11}$.
 
-**The element is a unit with two distinct eigenvalues.** It has two orthogonal spectral idempotents, a unique two-term decomposition, an eigenbasis, a modulus and a unit factor. Every description the category has built applies here, and applies here only.
+**The element is invertible with two distinct eigenvalues.** It has two orthogonal spectral idempotents, a unique two-term decomposition, an eigenbasis, a modulus and a unit factor. Every description the category has built applies here, and applies here only.
 
 **The physical name is mass in motion, and the name is exact.** On the material slice the element is a timelike momentum with a non-zero spatial part, or a spacelike one. The two eigenvalues are the two light-cone frequencies, their product is $-m^{2}$, and their ratio is the squared Doppler factor.
 
 ### The Rest Frame and the Exceptional Point
 
-**$\Sigma_{10}$ is the set of units whose two eigenvalues have merged.** The gradient of $B^{2}$ vanishes on the scalar line, so the regime is not a manifold there, and it has two faces that share no physics.
+**$\Sigma_{10}$ is the set of invertibles whose two eigenvalues have merged.** The gradient of $B^{2}$ vanishes on the scalar line, so the regime is not a manifold there, and it has two faces that share no physics.
 
 **The scalar line is the semisimple face.** The element is $Q_te_t$: one eigenvalue, repeated, and every basis is an eigenbasis. On the material slice this is the rest frame, the only frame in which the momentum is purely temporal.
 
@@ -298,7 +298,7 @@ $$
 \mathcal N\not\subseteq\mathcal S,\qquad \mathcal S\not\subseteq\mathcal N .
 $$
 
-**The witnesses are the two mixed regimes, and each is a short element.** The element $e_t+i\vec e_x$ has $N=0$ and $B^{2}=-1$; it is null and its eigenvalues are $0$ and $2$, so it has a full eigenbasis. The element $e_t+\vec e_x+i\vec e_y$ has $N=1$ and $B^{2}=0$; it is a unit whose minimal polynomial is $(X-1)^{2}$, so it has no eigenbasis.
+**The witnesses are the two mixed regimes, and each is a short element.** The element $e_t+i\vec e_x$ has $N=0$ and $B^{2}=-1$; it is null and its eigenvalues are $0$ and $2$, so it has a full eigenbasis. The element $e_t+\vec e_x+i\vec e_y$ has $N=1$ and $B^{2}=0$; it is invertible whose minimal polynomial is $(X-1)^{2}$, so it has no eigenbasis.
 
 **A second pair of witnesses covers the degenerate corners.** The scalar $ie_t$ has $N=-1$ and $B^{2}=0$, and the nilpotent $\vec e_x+i\vec e_y$ has $N=0$ and $B^{2}=0$. The four elements together exhibit all four combinations, which is the proof that the partition is fourfold and not twofold.
 
@@ -380,7 +380,7 @@ $$
 
 **The polar side.** A writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb C$, $\Rho^{2}=N(\tilde Q)$ and $N(\tilde U)=1$ exists exactly on $\Sigma_{11}\cup\Sigma_{10}$, and the modulus is a choice of square root.
 
-**The two failures are in opposite mixed regimes.** The Jordan part is a unit with no eigenbasis. The light-ray regime is a zero divisor with an eigenbasis. So the two descriptions fail independently, and an element can have one without the other.
+**The two failures are in opposite mixed regimes.** The Jordan part is invertible with no eigenbasis. The light-ray regime is a zero divisor with an eigenbasis. So the two descriptions fail independently, and an element can have one without the other.
 
 **Neither failure is a defect of the element.** Each is a defect of a description relative to a condition. The element exists in both cases; what does not exist is the coordinate system that the description assumes.
 
@@ -477,7 +477,7 @@ $$
 
 ### The Image Theorem
 
-**Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every unit is a central scalar times an element of the norm-one slice.**
+**Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every invertible element is a central scalar times an element of the norm-one slice.**
 
 **The mechanism is visible in the invariants.** On the slice $B^{2}=1-Q_t^{2}$, so the two invariants of a norm-one element are not independent: prescribing $Q_t$ prescribes $B^{2}$. The product law has $Q_t=1-s$ and $B^{2}=s(2-s)$, which is the same relation, so $s=1-Q_t$ reproduces both invariants. The single value that fails is $s=2$, that is $Q_t=-1$, and it fails because $B^{2}=0$ there and the product is defective.
 
@@ -501,7 +501,7 @@ $$
 
 **Read:** the table of §*The Four Regimes*, whose last column names each class after the part of it that matter reaches.
 
-**A name is a compression of a regime, and it must be recoverable from the algebra.** Mass in motion is a unit with two modes on a timelike or spacelike momentum with a non-zero spatial part. The rest frame is the semisimple face of the units with one mode. The light ray is a null element with two modes and one vanishing eigenvalue. The vacuum is the square-zero set, of which matter reaches only the origin.
+**A name is a compression of a regime, and it must be recoverable from the algebra.** Mass in motion is invertible with two modes on a timelike or spacelike momentum with a non-zero spatial part. The rest frame is the semisimple face of the invertibles with one mode. The light ray is a null element with two modes and one vanishing eigenvalue. The vacuum is the square-zero set, of which matter reaches only the origin.
 
 **The physical interpretation is that the four regimes are the four kinematic situations of a four-momentum, extended to the complex algebra.** There is no fifth situation, because a quadratic has only four degeneration patterns: two distinct non-zero roots, a double non-zero root, two distinct roots with one at zero, and a double root at zero.
 
@@ -519,7 +519,7 @@ $$
 
 **A hundred random draws with complex normal coefficients gave a hundred elements of $\Sigma_{11}$.** The degenerate regimes are not small in the sense of being rare in a discrete family. They are small in the sense of having no interior.
 
-**The physical interpretation is that the exceptional regimes are walls and not rooms.** An element drawn without a rule is a unit with two modes. To be at rest, to be null, or to be square-zero is to satisfy an equation, and an equation is a wall.
+**The physical interpretation is that the exceptional regimes are walls and not rooms.** An element drawn without a rule is invertible with two modes. To be at rest, to be null, or to be square-zero is to satisfy an equation, and an equation is a wall.
 
 **The reading gives a precise sense to the word exceptional.** The word does not mean improbable in the sense of a rare event with a probability. It means of empty interior and of lower dimension, so that a generic perturbation leaves the regime at once.
 
@@ -529,7 +529,7 @@ $$
 
 **Read:** the two witnesses $e_t+i\vec e_x$ and $e_t+\vec e_x+i\vec e_y$, one in each mixed regime.
 
-**One element is null and has a full eigenbasis; the other is a unit and has none.** The first is $2\tilde\Pi$ for a non-trivial idempotent, so its spectrum is $\{2,0\}$ and its spectral decomposition is unique. The second satisfies $(\tilde Q-e_t)^{2}=0$ with $\tilde Q\neq e_t$, so its minimal polynomial has degree two and no non-trivial idempotent commutes with it.
+**One element is null and has a full eigenbasis; the other is invertible and has none.** The first is $2\tilde\Pi$ for a non-trivial idempotent, so its spectrum is $\{2,0\}$ and its spectral decomposition is unique. The second satisfies $(\tilde Q-e_t)^{2}=0$ with $\tilde Q\neq e_t$, so its minimal polynomial has degree two and no non-trivial idempotent commutes with it.
 
 **The physical interpretation is that having a mass and having a mode basis are different achievements.** A massless element can be perfectly resolvable into two modes, and a massive element can be a single defective block. Neither property is a consequence of the other, and neither is a proxy for the other.
 
@@ -575,9 +575,9 @@ $$
 
 ### I.10.h — Two Descriptions Fail in Opposite Regimes
 
-**Read:** the eigenbasis fails on the Jordan part, the polar decomposition fails on the null cone, and the Jordan part is a unit while a null element is not.
+**Read:** the eigenbasis fails on the Jordan part, the polar decomposition fails on the null cone, and the Jordan part is invertible while a null element is not.
 
-**The two failures are independent because the two conditions are.** A unit can fail to have an eigenbasis. A zero divisor can have one. The two descriptions are therefore not two names for one structure.
+**The two failures are independent because the two conditions are.** an invertible element can fail to have an eigenbasis. A zero divisor can have one. The two descriptions are therefore not two names for one structure.
 
 **The physical interpretation is that non-invertibility and non-diagonalisability are different obstructions.** An object can be irreversible and perfectly resolvable, or reversible and defective. The two words are used loosely in physics, and the algebra separates them.
 
@@ -607,7 +607,7 @@ $$
 
 **Read:** $U_1U_2$ with $U_i=e_t+\vec\Upsilon_i$, both defective, and $B^{2}(U_1U_2)=s(2-s)$.
 
-**The defect is not inherited.** Two elements of the spectral wall compose into an element off it whenever $s\notin\{0,2\}$, and the product is a unit with two distinct eigenvalues.
+**The defect is not inherited.** Two elements of the spectral wall compose into an element off it whenever $s\notin\{0,2\}$, and the product is invertible with two distinct eigenvalues.
 
 **The physical interpretation is that composing two shears produces a rotation or a boost, and never another shear.** A shear is a null transformation: it fixes one direction and displaces everything else along it. Two of them, about different null directions, compose into a transformation of the elliptic or the hyperbolic type.
 
@@ -629,7 +629,7 @@ $$
 
 ### I.10.l — Every Motion Is Two Null Motions, Except the Full Turn
 
-**Read:** every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every unit is a central scalar times such an element.
+**Read:** every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents, and every invertible element is a central scalar times such an element.
 
 **One exception, and it is the element that squares to minus the identity.** The failure is not generic: it is a single point of the group, and the point is the central element that represents a full turn in the double cover.
 
@@ -677,7 +677,7 @@ $$
 | the image theorem | the norm-one group is generated by two unipotents, except at $-e_t$ |
 | the material slice | $\Sigma_{11}$ with $\vec p\neq0$; the rest line; the light cone; the origin |
 
-**The pair of values decides everything downstream.** If both predicates are true the element is a unit with two modes and every description applies. If one fails, exactly one description fails, and which one fails is decided by which predicate failed. If both fail the element squares to zero, and no description applies at all.
+**The pair of values decides everything downstream.** If both predicates are true the element is invertible with two modes and every description applies. If one fails, exactly one description fails, and which one fails is decided by which predicate failed. If both fail the element squares to zero, and no description applies at all.
 
 ### What the Reader Should Retain
 
@@ -712,4 +712,4 @@ $$
 
 **In this category.** [The Element: the Six Subspaces and the Two Ledgers](the-element-the-six-subspaces-and-the-two-ledgers.html) supplies the coordinates in which the two invariants are written. [The Four Forms and the Four Norms](the-four-forms-and-the-four-norms.html) supplies the four measures and the proof that only the quaternionic one is multiplicative, which is why the first predicate is a group condition. [The Four Products: Composition, Probability, Causality and Gauge](the-four-products-composition-probability-causality-and-gauge.html) supplies the products whose scalar parts the measures are. [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) supplies the eigenvalues, the discriminant and the reading of $B$ as half the gap. [The H Norm: Amplitude and Frame](the-h-norm-amplitude-and-frame.html) supplies the weight that the sandwich reproduces at the identity. [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html) is the entry before this one and supplies the norm, its cone and its two strata. The four entries that follow read the four regimes one to an article: *Mass in Motion: The Region of Both Invariants*, *The Rest Frame and the Exceptional Point*, *The Massless Regime* and *The Vacuum and the Nilpotent Ladder*.
 
-**The sources of this entry.** [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html) states the reach of the three carriers, which this entry uses for the four regimes. [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) reads the second predicate as the two modes and the stopped clock. [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), [The Massless Regime](the-massless-regime.html) and [The Vacuum and the Nilpotent Ladder](the-vacuum-and-the-nilpotent-ladder.html) take the four regimes one each. [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) places the massless content on the first cone. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) states the reach of the three carriers, which this entry uses for the four regimes. [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) reads the second predicate as the two modes and the stopped clock. [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), [The Massless Regime](the-massless-regime.html) and [The Vacuum and the Nilpotent Ladder](the-vacuum-and-the-nilpotent-ladder.html) take the four regimes one each. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) places the massless content on the first cone. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.

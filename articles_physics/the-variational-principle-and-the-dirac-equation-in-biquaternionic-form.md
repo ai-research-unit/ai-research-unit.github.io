@@ -74,7 +74,7 @@ $$
 
 A kinetic density that is a total derivative on every field carries no equation of motion. This is the whole defect of the $\natural$ pairing, and it is why the same symbol, used to conjugate the gradient, does not also serve to pair the action.
 
-**The Hermitian pairing is the one the equation's own structure uses.** The two lines of the pair carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$. Under $*$ these are two different operators, related by $(\tilde\nabla_\Phi)^{*}=(\tilde\nabla_\Phi)^{\natural}$, and the pairing is antilinear in its first slot, so the two slots are not interchangeable. Under $\natural$ the two are related by a conjugation of the units alone, the $i$ of the material time is untouched, and the bilinear is symmetric, which is why it cannot produce a density that is not exact. The pair's asymmetry is the $*$-pairing's asymmetry.
+**The Hermitian pairing is the one the equation's own structure uses.** The two lines of the pair carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$. Under $*$ these are two different operators, related by $(\tilde\nabla_\Phi)^{*}=(\tilde\nabla_\Phi)^{\natural}$, and the pairing is antilinear in its first slot, so the two slots are not interchangeable. Under $\natural$ the two are related by a conjugation of the invertibles alone, the $i$ of the material time is untouched, and the bilinear is symmetric, which is why it cannot produce a density that is not exact. The pair's asymmetry is the $*$-pairing's asymmetry.
 
 **Which one-sided functional is empty, and which is not.** Two candidates look alike and behave differently.
 
@@ -248,7 +248,7 @@ The two-sided display is the same equation in a different right frame — a cons
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $*$ | Hermitian conjugation, $\tilde X^{*}=\bar{\tilde X}^{\natural}$ |
-| $\natural$ | Quaternion conjugation; $\tilde U^{\natural}=\tilde U^{-1}$ for a unit |
+| $\natural$ | Quaternion conjugation; $\tilde U^{\natural}=\tilde U^{-1}$ for an invertible element |
 | $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part; trace |
 | $\tilde\nabla_\Phi=e_t\partial_{R_t}+\vec e_\eta\partial_\eta$ | Biquaternionic gradient, $R_t=ir'_t$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | The same gradient with the spatial part reversed |

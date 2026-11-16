@@ -123,14 +123,14 @@ $$
 
 **Takabayasi assumes $\rho>0$ and derives. The word states its domain and the domain is smaller.**
 
-**His assumption and the word's condition are different conditions.** The factorisation $\rho v_\mu$ with $v_\mu$ a unit vector needs $\rho\neq0$. The word needs $N(\tilde\Xi)\neq0$, which is the condition that the element be a unit of the algebra. For the scalar field the two agree. For the spinor field they do not.
+**His assumption and the word's condition are different conditions.** The factorisation $\rho v_\mu$ with $v_\mu$ a unit vector needs $\rho\neq0$. The word needs $N(\tilde\Xi)\neq0$, which is the condition that the element be an invertible element of the algebra. For the scalar field the two agree. For the spinor field they do not.
 
 **Two families of Dirac fields have $\rho\neq0$ everywhere and no word anywhere.**
 
 - **Parts of definite value.** An element with $\tilde X\vec e_z=\pm i\tilde X$ is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. Every field of definite chirality is of this kind.
 - **One-sided plane waves.** A plane wave with $\tilde K_{\Phi}\tilde\Xi_{0}=0$ and $\tilde K_{\Phi}$ null has $N(\tilde\Xi_{0})=0$ everywhere. It is nowhere zero and its density never vanishes, and its word does not exist.
 
-**The second family is the one that matters physically**, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_\mu$ and $w_\mu$ are defined on it, since $\rho>0$. **Whether his formulation proceeds on it is a separate question.** Several of his quantities carry the factor $1/k_m=\hbar/(mc)$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be a unit, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
+**The second family is the one that matters physically**, because a one-sided wave is what a massless helicity eigenstate is. His variables $\rho$, $v_\mu$ and $w_\mu$ are defined on it, since $\rho>0$. **Whether his formulation proceeds on it is a separate question.** Several of his quantities carry the factor $1/k_m=\hbar/(mc)$, so they diverge at $m=0$ and the massless field is a limit rather than a case, and whether that limit exists for a one-sided wave is not settled here. What the comparison establishes is a difference of domain conditions: the word needs the element to be an invertible element, which is strictly stronger than $\rho\neq0$, and the one-sided wave is the field that exhibits the difference.
 
 **What survives on the cone is the two-factor decomposition.** Every element is $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. It separates a scale from a direction but not a velocity from a spin, so it is not enough for a fluid. The four-factor word is the finer decomposition and it is the one that fails.
 
@@ -156,7 +156,7 @@ $$
 
 **The reason the vorticity is not a dynamical variable.** A classical fluid's vorticity is derived and then transported, with Helmholtz's theorems and a conserved helicity. The word's vorticity is a function of the boost's gradient and of nothing else, so the transport law has nothing to act on and the invariant of a loop is the frame's holonomy rather than a circulation. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) carries the classical side of that distinction.
 
-**The precise domain.** His variables need $\rho\neq0$; the word needs the element to be a unit, and for the spinor field the second condition is strictly stronger. The one-sided waves are the fields that show the difference.
+**The precise domain.** His variables need $\rho\neq0$; the word needs the element to be an invertible element, and for the spinor field the second condition is strictly stronger. The one-sided waves are the fields that show the difference.
 
 **The mass term's frame dependence.** The scalar coupling is a frame factor, and the factor is the same one the velocity carries.
 
@@ -174,7 +174,7 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the first three rows of the mapping are identities of the corpus's own definitions. That the count of eight functions matches on both sides and that the fifth row is the only consistent assignment of the two leftovers. That the derivative of the word separates into four brackets of four distinct types, and that the Dirac equation constrains them without closing them. That the current reads the boost and the spin reads the rotor. That the word's domain is the set of units and that the one-sided plane waves lie on the cone with a density that never vanishes. That the mass term is the frame factor and depends on the boost alone.
+**Established.** That the first three rows of the mapping are identities of the corpus's own definitions. That the count of eight functions matches on both sides and that the fifth row is the only consistent assignment of the two leftovers. That the derivative of the word separates into four brackets of four distinct types, and that the Dirac equation constrains them without closing them. That the current reads the boost and the spin reads the rotor. That the word's domain is the set of invertibles and that the one-sided plane waves lie on the cone with a density that never vanishes. That the mass term is the frame factor and depends on the boost alone.
 
 **Interpretation.** That Takabayasi's subsidiary condition is the tensor form of the algebraic non-closure. The structural correspondence is exact — both are statements that the momentum is fixed only up to one function — but the identification of the two conditions is an identification and not a derivation. That his internal angle is the rotor angle. The count forces the pairing once the first four rows are granted, and the sign of the double cover and the chiral operation support it; it is not computed. That his stress remainder is what the word's boost and rotor pieces together would give. That the momentum row's qualifier is resolved by reading his curl as the phase's freedom.
 
@@ -182,7 +182,7 @@ $$
 
 ## Summary
 
-Takabayasi's 1957 formulation of the Dirac field as a relativistic spin fluid and the biquaternion polar word describe the same object. His variables are a density, a unit four-velocity, a unit spin vector, a momentum and an internal angle. The word's variables are a scale, a phase, a boost and a rotor.
+Takabayasi's 1957 formulation of the Dirac field as a relativistic spin fluid and the biquaternion polar word describe the same object. His variables are a density, an invertible element four-velocity, an invertible element spin vector, a momentum and an internal angle. The word's variables are a scale, a phase, a boost and a rotor.
 
 The mapping is graded. The density is the scale squared, the velocity is the boost and the spin is the rotor, and those three rows are identities. The internal angle is the rotor angle, and that row is forced by the count once the first three identities and the one reading are granted: eight parameters on each side, four buckets matched, and the rotor's third parameter and the internal angle are the only two leftovers. The momentum is the phase gradient, and that row holds where his momentum's curl vanishes.
 
@@ -190,7 +190,7 @@ His equations close the count and not the system. The derivative of the word sep
 
 The current reads the density and the boost; the spin reads the density and the rotor. The separation is the same in both formulations, and the word supplies its reason.
 
-The domain is where the word is smaller. His variables need a non-zero density; the word needs the element to be a unit. The one-sided plane waves are nowhere zero, have a positive density, and have no word. That is the difference the comparison finds, and it is a finding about the word.
+The domain is where the word is smaller. His variables need a non-zero density; the word needs the element to be an invertible element. The one-sided plane waves are nowhere zero, have a positive density, and have no word. That is the difference the comparison finds, and it is a finding about the word.
 
 No experiment separates the two formulations. What separates them is the origin of the structure: Takabayasi constructs the spin fluid and the word reads it. The equation, no; the coordinates, yes.
 

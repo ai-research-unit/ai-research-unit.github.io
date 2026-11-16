@@ -1,14 +1,14 @@
-# __The Spin-Zero Carrier: The Centre__
+# __Introduction to the Spin-Zero Centre Subspace__
 
 ## Introduction
 
-**This entry reads the first of the three carriers in detail: the line, the centre, and the complex number that a scalar field carries at each event.** The mathematics is one short article and its two companions, and it answers four questions. Which subspace is fixed by every rotation. How many real dimensions it has and how many its closure has. What the norm does on it. What its spectrum is. The answers are the smallest numbers in the whole classification, and they are also the sharpest: the carrier has one real dimension, its closure two, the norm vanishes at one point only, and the spectrum has one value with multiplicity two.
+**This entry reads the first of the three carriers in detail: the fixed line, the centre, and the complex number that a scalar field carries at each event.** The mathematics is one short article and its two companions, and it answers four questions. Which subspace is fixed by every rotation. How many real dimensions it has and how many its closure has. What the norm does on it. What its spectrum is. The answers are the smallest numbers in the whole classification, and they are also the sharpest: the carrier has one real dimension, its closure two, the norm vanishes at one point only, and the spectrum has one value with multiplicity two.
 
-**The first claim is that the carrier is the real line and that nothing else in the algebra is fixed.** For every unit $u$ and every real $t$, $u(te_t)u^{*}=te_t$, and the elements fixed by every unit are exactly the complex multiples of the identity. Verified on two hundred random units: the largest deviation of $\mathrm{Ad}_u(te_t)$ from $te_t$ is $4.6\times10^{-16}$. The real line $\mathbb{R}e_t$ is therefore the carrier, and the centre $\mathbb{C}e_t$ is its closure.
+**The first claim is that the carrier is the real line and that nothing else in the algebra is fixed.** For every invertible $u$ and every real $t$, $u(te_t)u^{*}=te_t$, and the elements fixed by every unit are exactly the complex multiples of the identity. Verified on two hundred random units: the largest deviation of $\mathrm{Ad}_u(te_t)$ from $te_t$ is $4.6\times10^{-16}$. The real line $\mathbb{R}e_t$ is therefore the carrier, and the centre $\mathbb{C}e_t$ is its closure.
 
 **The second claim is that the action is trivial and that this is the whole content of spin zero.** The generator acts as the zero operator, so the only weight is $0$, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and a full turn has operator $+1$. A carrier whose action is trivial is the smallest representation of any group, and it exists here for one reason: the identity element of an algebra is always central.
 
-**The third claim is that the triviality is a statement about one action and not about the subspace.** The centre is fixed by the adjoint action of the whole group of units, and it is not preserved by left multiplication: a general element multiplies $e_t$ to a general element, and the left multiples of $e_t$ span six of the eight real dimensions. Even a rotor does it, since $\tilde u e_t=\tilde u$ is a unit quaternion and not central unless $\tilde u=\pm e_t$. So the line is a carrier for the conjugation and not for the multiplication, and this single asymmetry is why a scalar field is not a value of the state action.
+**The third claim is that the triviality is a statement about one action and not about the subspace.** The centre is fixed by the adjoint action of the whole group of invertibles, and it is not preserved by left multiplication: a general element multiplies $e_t$ to a general element, and the left multiples of $e_t$ span six of the eight real dimensions. Even a rotor does it, since $\tilde u e_t=\tilde u$ is a unit quaternion and not central unless $\tilde u=\pm e_t$. So the line is a carrier for the conjugation and not for the multiplication, and this single asymmetry is why a scalar field is not a value of the state action.
 
 **The fourth claim is that the norm on the centre separates points and the spectrum does not.** The norm is $N(\lambda e_t)=\lambda^{2}$, which vanishes only at the origin, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. The second predicate goes the other way: the vector part vanishes identically, so the two eigenvalues coincide, and every element of the centre is spectrally degenerate. The centre is the extreme case of both predicates and in opposite directions, and it is the only carrier with that property.
 
@@ -22,9 +22,9 @@
 
 **The third objection is that spin zero is a gap in the classification rather than a member of it.** It is a member, and the algebra says so twice: the centre is a copy of $\mathbb{C}$ inside $\mathbb{B}$, and the trivial module of any group is its identity object. A gap would be a value the algebra cannot carry; spin zero is the value it carries most cheaply.
 
-**The letters.** The algebra is $\mathbb{B}$, real of dimension eight, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$. The central imaginary is $i$, commuting with the units and satisfying $i^{2}=-e_t$; an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $\mathrm{Sc}$ is the scalar part. The centre is $\mathbb{B}_C=\mathbb{C}e_t$; the carrier is the real line $\mathbb{R}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, the second being the material sector. The group of units is $G=\{u:uu^{*}=e_t\}\cong\mathrm{U}(2)$, a unit real axis is $\vec u$, the generator is $A(\vec u)=\tfrac12\vec u$, and a rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A scalar field value is $\xi e_t$ with $\xi$ complex, and its polar form is $\xi=re^{i\vartheta}$.
+**The letters.** The algebra is $\mathbb{B}$, real of dimension eight, with units $e_t,\vec e_x,\vec e_y,\vec e_z$, $e_t$ the identity and $\vec e_k^{2}=-e_t$. The central imaginary is $i$, commuting with the units and satisfying $i^{2}=-e_t$; an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and $\mathrm{Sc}$ is the scalar part. The centre is $\mathbb{B}_C=\mathbb{C}e_t$; the carrier is the real line $\mathbb{R}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$, the second being the material sector. The group of invertibles is $G=\{u:uu^{*}=e_t\}\cong\mathrm{U}(2)$, a unit real axis is $\vec u$, the generator is $A(\vec u)=\tfrac12\vec u$, and a rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A scalar field value is $\xi e_t$ with $\xi$ complex, and its polar form is $\xi=re^{i\vartheta}$.
 
-**Boundaries.** The carrier, the closure, the character theorem, the two numbers and the multiplicity are *Introduction to the Spin-Zero Centre Subspace*; the norm, the two real forms, the isotropic lines and the polar form are *The Spin-Zero Centre Subspace and N Norm Regularity*; the double eigenvalue, the degenerate cone and the sector placement are *The Spin-Zero Centre Subspace and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the two predicates and the four sectors are *Relations between the N Norm and Spectral Regularity and Degeneracy*; the multiplicativity of the norm and its vanishing on the non-invertible elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The physics is read from *The Carrier of the Klein–Gordon Field*, *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, *The Centre of the Biquaternion Algebra as the Classical Sector*, *The Gauge Extension of the Central Phase: Why the Centre Caps the Group* and *The Higgs Mechanism in Biquaternionic Form*. The other two carriers are read in *The Spin-Half Carrier: The Bispinors* and *The Spin-One Carrier: The Material Sector*, and the doubling of the phase belongs to *The Quadratic Map and the Singular Sets*. No dynamics, no potential, no mass value and no quantum postulate appear below.
+**Boundaries.** The carrier, the closure, the character theorem, the two numbers and the multiplicity are *Introduction to the Spin-Zero Centre Subspace*; the norm, the two real forms, the isotropic lines and the polar form are *The Spin-Zero Centre Subspace and N Norm Regularity*; the double eigenvalue, the degenerate cone and the sector placement are *The Spin-Zero Centre Subspace and Spectral Regularity*; the list of three carriers and the four closure rules are *From the Spin to the Carriers and the Closures*; the two predicates and the four sectors are *Relations between the N Norm and Spectral Regularity and Degeneracy*; the multiplicativity of the norm and its vanishing on the non-invertible elements are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*. The physics is read from *The Carrier of the Klein–Gordon Field*, *The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module*, *The Central Scalar Field: Classical Dynamics in the Biquaternion Centre*, *The Centre of the Biquaternion Algebra as the Classical Sector*, *The Gauge Extension of the Central Phase: Why the Centre Caps the Group* and *The Higgs Mechanism in Biquaternionic Form*. The other two carriers are read in *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*, and the doubling of the phase belongs to *The Quadratic Map and the Singular Sets*. No dynamics, no potential, no mass value and no quantum postulate appear below.
 
 ## The Source Table
 
@@ -42,11 +42,11 @@
 
 ## The Results in Brief
 
-**The carrier.** The real line $\mathbb{R}e_t$, of real dimension $1$, fixed pointwise by the adjoint action of every unit.
+**The carrier.** The real line $\mathbb{R}e_t$, of real dimension $1$, fixed pointwise by the adjoint action of every invertible element.
 
 **The closure.** The centre $\mathbb{C}e_t$, of real dimension $2$ and complex dimension one, with the two real lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$.
 
-**The action.** Trivial at every axis: $\varrho(\tilde u)=\mathrm{id}$ for every unit, the generator is the zero operator, and the commutator $[\tfrac12\vec u,te_t]$ vanishes identically.
+**The action.** Trivial at every axis: $\varrho(\tilde u)=\mathrm{id}$ for every invertible element, the generator is the zero operator, and the commutator $[\tfrac12\vec u,te_t]$ vanishes identically.
 
 **The two numbers.** The spectrum is $\{0\}$, of multiplicity one on the line and two on the closure; the spin is $0$; $2s+1=1$ is the dimension of the carrier; a full turn has operator $+1=(-1)^{2s}$.
 
@@ -72,7 +72,7 @@
 
 **The module.** The simple module is $\mathbb{C}^{2}$, the action on it is irreducible, and no module of complex dimension one exists, so the scalar is a value of its carrier and not a ray of the module.
 
-## The Line and the Centre
+## The Fixed Line and the Centre
 
 **The carrier.** The subspace is
 
@@ -98,21 +98,21 @@ of real dimension $2$ and complex dimension one. This is the centre, the set of 
 
 **The multiplicity.** The centre contains the carrier twice: $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ are each fixed pointwise, and they are the real and imaginary parts of one complex line. The multiplicity belongs to the space and not to the carrier. The module is one real dimension, the space is two, and the factor of two is the price of reading a real space complexly. It is the first appearance of a number that returns twice more, in the double eigenvalue and in the two real modes of the vacuum.
 
-## Why Every Unit Fixes It
+## Why Every Invertible Fixes It
 
-**The proposition.** For every unit $u$ and every real $t$,
+**The proposition.** For every invertible $u$ and every real $t$,
 
 $$
 u\,(te_t)\,u^{*}=t\,uu^{*}=te_t ,
 $$
 
-because the identity is central and $uu^{*}=e_t$. Verified on two hundred random units: the largest deviation is $4.6\times10^{-16}$. The line, and with it the whole centre, is fixed pointwise, and the operator of the action is the identity at every unit.
+because the identity is central and $uu^{*}=e_t$. Verified on two hundred random units: the largest deviation is $4.6\times10^{-16}$. The line, and with it the whole centre, is fixed pointwise, and the operator of the action is the identity at every invertible element.
 
-**The converse.** If $X$ satisfies $uXu^{*}=X$ for every unit $u$, then $uX=Xu$ for every unit, so $X$ commutes with everything the units generate; they generate the algebra over $\mathbb{C}$, so $X$ is a complex multiple of $e_t$. Verified at the level of the generators: the sum of the three norms $\lvert[\vec e_k,X]\rvert$ is $0$ for central $X$ and at least $3.25$ for every non-central element tried. The fixed space of the conjugation is therefore exactly the centre, and the line is that fixed space read at one real parameter.
+**The converse.** If $X$ satisfies $uXu^{*}=X$ for every invertible $u$, then $uX=Xu$ for every invertible element, so $X$ commutes with everything the invertibles generate; they generate the algebra over $\mathbb{C}$, so $X$ is a complex multiple of $e_t$. Verified at the level of the generators: the sum of the three norms $\lvert[\vec e_k,X]\rvert$ is $0$ for central $X$ and at least $3.25$ for every non-central element tried. The fixed space of the conjugation is therefore exactly the centre, and the line is that fixed space read at one real parameter.
 
-**The character theorem, and why the norm is needed.** Invariance alone does not force a complex line to be the centre. If $W$ is a complex line with $uWu^{*}\subseteq W$ for every unit, then $uwu^{*}=\chi(u)w$ for a character $\chi$ of the group of units. Multiplicativity of the norm gives $\chi(u)^{2}=1$, so the character takes values in $\{\pm1\}$; and the group of units is connected, so a continuous character into a two-element set is constant, and $\chi(e_t)=1$ gives $\chi=1$. Without the invariance of the norm the argument fails: a line could be scaled by an arbitrary nonzero complex number, and the scaling would be a character with values off the unit circle.
+**The character theorem, and why the norm is needed.** Invariance alone does not force a complex line to be the centre. If $W$ is a complex line with $uWu^{*}\subseteq W$ for every invertible element, then $uwu^{*}=\chi(u)w$ for a character $\chi$ of the group of invertibles. Multiplicativity of the norm gives $\chi(u)^{2}=1$, so the character takes values in $\{\pm1\}$; and the group of invertibles is connected, so a continuous character into a two-element set is constant, and $\chi(e_t)=1$ gives $\chi=1$. Without the invariance of the norm the argument fails: a line could be scaled by an arbitrary nonzero complex number, and the scaling would be a character with values off the unit circle.
 
-**What the theorem costs, and what it buys.** It costs two hypotheses of the algebra, a multiplicative norm and a connected group of units, and it buys the statement that the spin-zero carrier is unique rather than merely present. The uniqueness is what makes "the" centre a legitimate name. It is also what the other two carriers do not have: their axes are free parameters, and the families of ideals and of planes are indexed by the unit sphere.
+**What the theorem costs, and what it buys.** It costs two hypotheses of the algebra, a multiplicative norm and a connected group of invertibles, and it buys the statement that the spin-zero carrier is unique rather than merely present. The uniqueness is what makes "the" centre a legitimate name. It is also what the other two carriers do not have: their axes are free parameters, and the families of ideals and of planes are indexed by the unit sphere.
 
 ## The Action Is Trivial and That Is the Content
 
@@ -178,7 +178,7 @@ and the whole centre lies in the spectrally degenerate cone. The element satisfi
 
 **The reading.** The two predicates disagree maximally on this carrier, and they agree nowhere else so sharply. The norm separates the points of the centre; the spectrum does not separate anything. A scalar field therefore has a mass, in the sense that its norm is a nonzero function of the value, and no internal spectrum, in the sense that its value cannot be split into components. The combination is the algebraic form of the sentence that a scalar has a mass and no polarisation.
 
-**The norm is not injective.** Because $N(-\lambda)=N(\lambda)$, verified to $0$, the algebraic norm identifies a value with its negative. The map $\lambda\mapsto\lambda^{2}$ is two-to-one away from the origin and branched there. This is the first appearance of a doubling that runs through the corpus: a quadratic quantity cannot see a sign, and the sign it cannot see is the one the group of units cannot see either, since $\{\pm e_t\}$ is the kernel of the adjoint action.
+**The norm is not injective.** Because $N(-\lambda)=N(\lambda)$, verified to $0$, the algebraic norm identifies a value with its negative. The map $\lambda\mapsto\lambda^{2}$ is two-to-one away from the origin and branched there. This is the first appearance of a doubling that runs through the corpus: a quadratic quantity cannot see a sign, and the sign it cannot see is the one the group of invertibles cannot see either, since $\{\pm e_t\}$ is the kernel of the adjoint action.
 
 **The modulus is a different form.** The Hermitian square is
 
@@ -289,7 +289,7 @@ does preserve the centre, because each derivative is central. The two writings, 
 
 ## The Centre and the Group
 
-**The group is the centre times the sphere.** The unit group is $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong\mathrm{U}(2)\cong\bigl(SU(2)\times\mathrm{U}(1)\bigr)/\mathbb{Z}_2$. The abelian factor is exactly the central phase, the $SU(2)$ factor is the real quaternion sphere, and the $\mathbb{Z}_2$ is $\{\pm e_t\}$, the kernel of the adjoint action.
+**The group is the centre times the sphere.** The group of invertibles is $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong\mathrm{U}(2)\cong\bigl(SU(2)\times\mathrm{U}(1)\bigr)/\mathbb{Z}_2$. The abelian factor is exactly the central phase, the $SU(2)$ factor is the real quaternion sphere, and the $\mathbb{Z}_2$ is $\{\pm e_t\}$, the kernel of the adjoint action.
 
 | piece of the group | where it lives | what it does |
 | --- | --- | --- |
@@ -323,7 +323,7 @@ the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field h
 
 ## The Interpretations
 
-**A scalar is the carrier the rotations cannot touch.** The adjoint action of every unit is the identity on the line, so no rotation moves a scalar value; a rotation moves the event, not the value. The warrant is the proposition and its converse, verified to $4.6\times10^{-16}$ and to a gap of $3.25$ between central and non-central elements. The boundary is that the statement is about the adjoint action: the left action does move central values out of the centre.
+**A scalar is the carrier the rotations cannot touch.** The adjoint action of every invertible element is the identity on the line, so no rotation moves a scalar value; a rotation moves the event, not the value. The warrant is the proposition and its converse, verified to $4.6\times10^{-16}$ and to a gap of $3.25$ between central and non-central elements. The boundary is that the statement is about the adjoint action: the left action does move central values out of the centre.
 
 **An amplitude and a phase are the two real dimensions of the closure.** The carrier supplies the amplitude and the closure adds the phase, and the polar form $\xi=re^{i\vartheta}$ with $N=r^{2}e^{2i\vartheta}$ is the exact statement of the split. The warrant is the identity to $9\times10^{-16}$. The boundary is that the phase is read from the norm only up to $\pi$, because the norm is quadratic.
 
@@ -361,7 +361,7 @@ the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field h
 
 ## Summary
 
-The carrier of spin zero is the real line $\mathbb{R}e_t$, of real dimension one, and its closure is the centre $\mathbb{C}e_t$, of real dimension two. The adjoint action of every unit fixes the line pointwise, the generator is the zero operator, the spectrum is $\{0\}$ with multiplicity one on the line and two on the closure, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and a full turn has operator $+1$. The centre is the only invariant complex line, and the character theorem that proves it needs the invariance of the norm and the connectedness of the group of units.
+The carrier of spin zero is the real line $\mathbb{R}e_t$, of real dimension one, and its closure is the centre $\mathbb{C}e_t$, of real dimension two. The adjoint action of every unit fixes the line pointwise, the generator is the zero operator, the spectrum is $\{0\}$ with multiplicity one on the line and two on the closure, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and a full turn has operator $+1$. The centre is the only invariant complex line, and the character theorem that proves it needs the invariance of the norm and the connectedness of the group of invertibles.
 
 The two predicates are extreme and opposite. The norm is $N(\xi e_t)=\xi^{2}$, whose zero locus in the centre is the origin alone, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. Its real part has signature $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, on which the norm is $\pm2i$ and not zero. The vector part vanishes identically, so the two eigenvalues coincide and the whole centre is spectrally degenerate. Away from the origin the carrier lies in $\Sigma_{10}$: a mass and no spectrum.
 
@@ -386,7 +386,7 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 | $\mathbb{C}e_t=\mathbb{B}_C$ | the centre, the closure, real dimension $2$ |
 | $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | the Hermitian and anti-Hermitian sectors |
 | $\mathbb{R}(ie_t)$ | the imaginary line, the fixed line of the material sector |
-| $G\cong\mathrm{U}(2)$ | the group of units, $uu^{*}=e_t$ |
+| $G\cong\mathrm{U}(2)$ | the group of invertibles, $uu^{*}=e_t$ |
 | $A(\vec u)=\tfrac12\vec u$ | the generator along the unit real axis $\vec u$ |
 | $\theta$ | the rotation angle, twice the rotor angle |
 | $\tilde u$ | a rotor, $\cos\tfrac\theta2 e_t+\sin\tfrac\theta2\,\vec u$ |
@@ -405,11 +405,11 @@ Spin zero forbids an internal vector and everything built from one: the intrinsi
 - [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the list of three and the four closure rules.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the placement of the carriers among them.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the multiplicativity of the norm and its vanishing on the non-invertible elements.
-- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the article this one is the first case of.
+- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the article this one is the first case of.
 - [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the centrality of the operator and the freedom of the restriction.
 - [The Scalar Field in the Centre: Why Spin 0 Escapes the Biquaternion State Module](the-scalar-field-in-the-centre-why-spin-0-escapes-the-biquaternion-state-module.html), for the three obstructions that keep a scalar out of the state action.
 - [The Central Scalar Field: Classical Dynamics in the Biquaternion Centre](the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html), for the action, the static solution, the current and the absence of intrinsic magnetism.
 - [The Centre of the Biquaternion Algebra as the Classical Sector](the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html), for the real line as the classical limit.
 - [The Gauge Extension of the Central Phase: Why the Centre Caps the Group](the-gauge-extension-of-the-central-phase-why-the-centre-caps-the-group.html), for centrality as globality and the ceiling at $\mathrm{U}(2)$.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), for the two modes of the broken vacuum.
-- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the carrier whose norm vanishes and whose mass is a pairing, taken up in *The Spin-Half Carrier: The Bispinors*.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the carrier whose norm vanishes and whose mass is a pairing, taken up in *Introduction to the Spin-Half Bispinors Spaces*.

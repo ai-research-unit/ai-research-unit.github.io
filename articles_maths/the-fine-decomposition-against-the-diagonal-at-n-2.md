@@ -4,7 +4,7 @@
 
 **Against a complete family of rank-one projections the algebra splits into four lines, one for each pair of indices, and the multiplication of the lines is the multiplication of a two-by-two table.**
 
-The article proves the fine decomposition $M_2(\mathbb{C})=\bigoplus_{k,l}A_{kl}$ against the diagonal, computes the dimension of each corner, states the corner multiplication rule, and reads the trace, the determinant and the symmetric half in these coordinates. It assumes *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$* for the minimal left ideals, and *The Matrix Algebra $M_2(\mathbb{C})$* for the units.
+The article proves the fine decomposition $M_2(\mathbb{C})=\bigoplus_{k,l}A_{kl}$ against the diagonal, computes the dimension of each corner, states the corner multiplication rule, and reads the trace, the determinant and the symmetric half in these coordinates. It assumes *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$* for the minimal left ideals, and *The Matrix Algebra $M_2(\mathbb{C})$* for the invertibles.
 
 It defers the Peirce operators that produce the same decomposition to *The Peirce Basis in $n$ Dimensions*, and the frame of the biquaternion algebra to *The Peirce Basis of the Biquaternion Algebra*. In the biquaternion language the four lines are the four corners $\mathbb{B}_{st}$ of *The Peirce Decomposition of the Biquaternion Algebra*.
 

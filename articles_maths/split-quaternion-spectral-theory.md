@@ -47,7 +47,7 @@ $$
 \sigma_L(\tilde q)\cap\mathbb{R} = \sigma_R(\tilde q)\cap\mathbb{R} = \sigma_{\mathbb{R}}(\tilde q) = \{\lambda \in \mathbb{R} : p_{\tilde q}(\lambda) = 0\}.
 $$
 
-For eigenvalues taken in the full algebra, $\sigma_R(\tilde q)$ is a union of conjugacy classes: $\tilde q \tilde q_2 = \tilde q_2\lambda$ implies $\tilde q(\tilde q_2\tilde u) = (\tilde q_2\tilde u)(\tilde u^{-1}\lambda \tilde u)$ for every unit $\tilde u$, so the right spectrum is closed under conjugation by units, while the left spectrum is not.
+For eigenvalues taken in the full algebra, $\sigma_R(\tilde q)$ is a union of conjugacy classes: $\tilde q \tilde q_2 = \tilde q_2\lambda$ implies $\tilde q(\tilde q_2\tilde u) = (\tilde q_2\tilde u)(\tilde u^{-1}\lambda \tilde u)$ for every invertible $\tilde u$, so the right spectrum is closed under conjugation by invertibles, while the left spectrum is not.
 
 **Proof.** Central scalars commute with every element, so $(\tilde q-\lambda)\tilde q_2 = 0$ and $\tilde q_2(\tilde q-\lambda) = 0$ are equivalent, and either condition is the singularity of $\tilde q-\lambda$; the conjugacy statement is the displayed computation.
 

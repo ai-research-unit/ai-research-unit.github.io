@@ -12,7 +12,7 @@ It carries two structures, distinguished by the ground field. Over $\mathbb{C}$ 
 
 We use the conventions of the article on the biquaternion algebra throughout: the basis $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ with $\vec e_k^2 = -e_t$; the central scalar imaginary $i$ with $i^2 = -1$; the conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural} \circ \bar{\cdot}$, ${}^{\flat} = -{}^{*}$; and the remarkable subspaces $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ with $Q_\mu \in \mathbb{C}$.
 
-**The inverse action and the dagger action.** The automorphisms of this article are the maps $\tilde{Q}_2\mapsto\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}$ built from the inverse. They use the product and the biquaternion norm alone, and for a unit $\tilde{Q}$ they are the inner automorphisms below. A second two-sided action of a unit replaces the inverse by the Hermitian conjugate,
+**The inverse action and the dagger action.** The automorphisms of this article are the maps $\tilde{Q}_2\mapsto\tilde{Q}\tilde{Q}_2\tilde{Q}^{-1}$ built from the inverse. They use the product and the biquaternion norm alone, and for an invertible element $\tilde{Q}$ they are the inner automorphisms below. A second two-sided action of an invertible element replaces the inverse by the Hermitian conjugate,
 $$
 \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*},
 $$
@@ -49,7 +49,7 @@ $$ \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times} / \mathbb{C}^
 
 **Dimension.** Since $\mathbb{B}^{\times}$ has complex dimension $4$ and the central scalars have complex dimension $1$, $\dim_{\mathbb{C}} \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = 4 - 1 = 3$. Equivalently, the group has real dimension $6$, and it is connected.
 
-**Corollary (the projective linear group).** Under the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the units are $GL(2,\mathbb{C})$ and the nonzero central scalars are the scalar matrices, so
+**Corollary (the projective linear group).** Under the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ the invertibles are $GL(2,\mathbb{C})$ and the nonzero central scalars are the scalar matrices, so
 $$
 \boxed{\;\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}^{\times}/\mathbb{C}^{\times}\cong PGL(2,\mathbb{C})\;},
 $$

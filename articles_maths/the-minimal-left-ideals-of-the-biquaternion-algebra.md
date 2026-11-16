@@ -127,7 +127,7 @@ for the subspaces $W\subseteq\mathbb{C}^2$ in the defining module, and the latti
 
 **Theorem.** $\mathbb{B}$ is simple: its only two-sided ideals are $0$ and $\mathbb{B}$.
 
-*Proof.* *The Biquaternion Algebra*, §*Simplicity*: a nonzero two-sided ideal contains a nonzero element, and multiplying by the units and taking linear combinations produces the whole algebra; equivalently $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra over a field, which is simple.
+*Proof.* *The Biquaternion Algebra*, §*Simplicity*: a nonzero two-sided ideal contains a nonzero element, and multiplying by the invertibles and taking linear combinations produces the whole algebra; equivalently $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra over a field, which is simple.
 
 **Corollary (a carrier of the multiplication is one-sided).** No two-sided ideal other than $0$ and $\mathbb{B}$ exists, so an irreducible left ideal is a carrier and the algebra itself is not one. The two-sided structure is exhausted by the trivial pair, and every carrier of the multiplication is a minimal left ideal.
 

@@ -18,7 +18,7 @@
 | the six remarkable subspaces, the four coordinate blocks, the three decompositions, and why there are exactly three | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
 | the mirror map, the mirror biquaternion, its class and its two projections | [Mirror Biquaternions of the Biquaternion Algebra](../articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.html) |
 | the square, its two parts, the central square, the square-zero elements, the isotropic cone | [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html) |
-| the two annihilators, the zero divisors, the units and the criterion that separates them | [Zero Divisors and Units in the Biquaternion Algebra](../articles_maths/zero-divisors-and-units.html) |
+| the two annihilators, the zero divisors, the invertibles and the criterion that separates them | [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html) |
 | the reduction of the root problem, the classification of roots, the three central values | [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html) |
 
 **The rows are in the order the entry uses them.** The algebra comes first, then the element that inhabits it, then the maps that cut it, then the pieces the maps produce, then the two operations that are read: the square and the root.
@@ -135,17 +135,17 @@ $$
 
 two real equations in six real coordinates, hence a cone of real dimension four. The square-zero elements are its pure points, $Q_t=0$ and $B^2=0$.
 
-### The Zero Divisors and the Units
+### The Zero Divisors and the Invertibles
 
 **The non-zero elements split into two classes, and one complex number decides which.**
 
 $$
-\tilde Q\ \text{is a unit}\iff Q_t^2+B^2\neq0,\qquad \tilde Q\ \text{is a zero divisor}\iff Q_t^2+B^2=0 .
+\tilde Q\ \text{is invertible}\iff Q_t^2+B^2\neq0,\qquad \tilde Q\ \text{is a zero divisor}\iff Q_t^2+B^2=0 .
 $$
 
-**The criterion is the norm.** Since $N(\tilde Q)=Q_t^2+B^2$, a non-zero element is invertible exactly when its norm is non-zero. The units are the complement of the zero-divisor set, and that set is a complex cone of real dimension six, with the pure family as its subcone of real dimension four.
+**The criterion is the norm.** Since $N(\tilde Q)=Q_t^2+B^2$, a non-zero element is invertible exactly when its norm is non-zero. The invertibles are the complement of the zero-divisor set, and that set is a complex cone of real dimension six, with the pure family as its subcone of real dimension four.
 
-**The criterion is not a normalisation.** The complex length alone does not decide: $e_t+\vec e_x+i\vec e_y$ has $B^2=0$ and is a unit. The sum is what decides.
+**The criterion is not a normalisation.** The complex length alone does not decide: $e_t+\vec e_x+i\vec e_y$ has $B^2=0$ and is invertible. The sum is what decides.
 
 ### The Square Roots
 
@@ -331,7 +331,7 @@ $$
 
 **Invertibility is a norm condition and not a normalisation.** This is the vocabulary the whole category uses: an element is **regular** when its norm is non-zero, and **degenerate** when the norm vanishes, and the two classes are the two sides of one cone. On the material sector that cone is the light cone, because $N=-{r'_t}^{2}+\lvert\vec r\rvert^{2}$; there the horizon of reversibility and the causal horizon are the same set.
 
-**The two families behave differently.** A pure zero divisor annihilates itself on both sides and squares to zero; a non-pure one does not square to zero, its two annihilators are distinct planes, and its conjugate is the line they share. A product with a zero divisor is never a unit, so reaching the cone is irreversible: multiplication cannot leave it.
+**The two families behave differently.** A pure zero divisor annihilates itself on both sides and squares to zero; a non-pure one does not square to zero, its two annihilators are distinct planes, and its conjugate is the line they share. A product with a zero divisor is never an invertible element, so reaching the cone is irreversible: multiplication cannot leave it.
 
 **The boundary.** On the informational sector the same cone is not a causal horizon. Its trace-one slice bounds the state space and that boundary is the set of pure states. One set, two readings, and the entry says which one it is using.
 
@@ -381,7 +381,7 @@ $$
 - Every intersection of two distinct subspaces is one block or zero: a shared vector block is agreement on a space, a shared scalar block agreement on a time, and the three empty pairs are the three decompositions.
 - The orbit of an element under the Klein group has size one, two or four, and the size counts distinct descriptions: one on $\mathbb{R}e_t$, two when one map is invisible, four on the generic element and on both sectors.
 - The square of an element of either sector is Hermitian, so the material sector is not closed under squaring.
-- The norm separates the units from the zero divisors: $N\neq0$ is invertibility and $N=0$ is the cone. On the material sector that cone is the light cone.
+- The norm separates the invertibles from the zero divisors: $N\neq0$ is invertibility and $N=0$ is the cone. On the material sector that cone is the light cone.
 - On the material sector the norm is the interval and the square's scalar part is minus the Euclidean length: two geometries, one element.
 - Every element has four roots, two or none, by the classification; the root set of a value is the level set of the norm.
 

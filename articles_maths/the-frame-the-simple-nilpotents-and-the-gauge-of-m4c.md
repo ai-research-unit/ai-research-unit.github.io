@@ -170,7 +170,7 @@ $$
 T/\mathbb{C}^{\times}\cong(\mathbb{C}^{\times})^3.
 $$
 
-**Proof.** The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\omega_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every unit, so the kernel is the diagonal.
+**Proof.** The idempotent $E_{kk}=v_k\ell_k$ is invariant because $t_kt_k^{-1}=1$. The root is a linear combination of the idempotents with constant coefficients $\omega_k$, hence invariant. The common rescaling $t_k=t$ gives $t t^{-1}=1$ for every invertible element, so the kernel is the diagonal.
 
 **One parameter per simple nilpotent.** Put
 
@@ -213,7 +213,7 @@ $$
 E_{kl}=E_{k,k+1}E_{k+1,k+2}\cdots E_{l-1,l},
 $$
 
-so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the units is the coboundary of the $0$-cochain $t$ in the torus, and a coboundary has no freedom beyond the cochain modulo constants.
+so the scale of $E_{kl}$ is the product of the scales of the factors, and $\mu$ is determined by them. Equivalently, the gauge action on the invertibles is the coboundary of the $0$-cochain $t$ in the torus, and a coboundary has no freedom beyond the cochain modulo constants.
 
 **The gauge is not a second root.** The parameters $\lambda_k$ act on the nilpotents and on the off-diagonal units. They never act on the diagonal, on the idempotents, or on the root. A statement that depends on $\lambda$ is a statement about a frame, not about the algebra or the idempotents.
 
@@ -366,7 +366,7 @@ $$
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for matrix units, Peirce corners and the coordinate algebra of a frame.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for bases, dual bases and the matrix of a linear map.
 - [Roots of Unity and the Lagrange Idempotents of $M_4(\mathbb{C})$](roots-of-unity-and-the-lagrange-idempotents-of-m4c.html), for the root that fixes the flag.
-- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners that the units span.
+- [The Peirce Decomposition of $M_4(\mathbb{C})$](the-peirce-decomposition-of-m4c.html), for the corners that the invertibles span.
 - [The Rank-Two Split of $M_4(\mathbb{C})$](the-rank-two-split-of-m4c.html), for the coarse split and the mass block.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the general construction at order $n$.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the biquaternion frame and the parameter $\lambda$.

@@ -25,7 +25,7 @@ centre in a line and the vector subspace in a three-plane, and it is a diagonal 
 
 The whole of the article is algebra. It uses the product, the four conjugations, the trace, the quaternionic norm and the Hermitian form, all as the conventions
 fix them, and it introduces no further structure, no form and no topology. The two sectors and their decompositions are *Subspaces and Decompositions of the
-Biquaternion Algebra*; the conjugations are *The Group of Involutions*; the zero divisors are *Zero Divisors and Units*. The same construction read as a statement
+Biquaternion Algebra*; the conjugations are *The Group of Involutions*; the zero divisors are *Zero Divisors and Invertibles*. The same construction read as a statement
 about two physical readings, with the operators, the equations and the fields it carries there, is the physics article *Mirror Biquaternions and the Phy–Psy
 Switch*, and nothing of that article is needed here.
 
@@ -657,11 +657,11 @@ four coordinate blocks and the three decompositions, and for the complex structu
 anti-fixed spaces
 - [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the formulas of the
 conjugations, their linear or antilinear character and the real reading of the algebra
-- [Zero Divisors and Units in the Biquaternion Algebra](zero-divisors-and-units.html), for the zero divisors that the criterion of the product needs and for the
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles.html), for the zero divisors that the criterion of the product needs and for the
 annihilators of an element
 - [The Square of an Element in the Biquaternion Algebra](the-square-of-an-element.html), for the square of a sector element and the isotropic cone
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula
-and the unit group
+and the group of invertibles
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html),
 for the invariants that take factors on the class
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for what the six

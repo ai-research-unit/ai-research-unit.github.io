@@ -10,7 +10,7 @@ The first is that the equation does not exclude a degenerate field. For a massiv
 
 The second is that the degenerate set is the cone, and the cone carries exactly two non-zero sectors, $\Sigma_{01}$ and $\Sigma_{00}$. Each has a component form, a worked example and a reading. The readings are the ones the polar companion gives from the other side: $\Sigma_{01}$ is a ray that keeps a direction and a weight, and $\Sigma_{00}$ is a null direction that keeps neither.
 
-The third is that at $k_m=0$ the two lines of the pair decouple, and every non-zero one-sided solution is degenerate. Degeneracy is then not a codimension-two accident but the generic case, which is why a massless field is written as a sum of two one-sided fields: the sum is generically a unit, and the interference of the two parts is what carries the norm.
+The third is that at $k_m=0$ the two lines of the pair decouple, and every non-zero one-sided solution is degenerate. Degeneracy is then not a codimension-two accident but the generic case, which is why a massless field is written as a sum of two one-sided fields: the sum is generically an invertible element, and the interference of the two parts is what carries the norm.
 
 **A warning about letters.** Three different objects are called $L$ and $R$ in the corpus, and one of them cannot be substituted into the pair. The next section separates the three. The separation is not pedantry: the substitution that looks most natural makes both lines of the pair vanish, so a reader who takes it writes an article about the zero field.
 
@@ -100,7 +100,7 @@ The third object cannot be the second, and the reason is one associativity step.
 
 **A check.** The momentum-space system with the $u$-split substituted becomes four complex equations on the single unknown $\tilde\Xi_{0}$, and its solution space has complex dimension zero. Five candidate splits return the same answer: the value split at $u=\vec e_z$, the three splits by pairs of coefficients, the row split of the matrix model and the column split.
 
-**Where the declared unit does work.** The two-sided form of the same equation, $-(\tilde\nabla_\Phi)^{\natural}F-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the units alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
+**Where the declared unit does work.** The two-sided form of the same equation, $-(\tilde\nabla_\Phi)^{\natural}F-i\bar F\vec e_zk_m=0$, has a mass term that multiplies on the right and conjugates the coefficient. The conjugation reverses the value, because it sends the central $i$ to $-i$ and leaves the invertibles alone, so the two-sided equation can be split by a definite-value pair where the one-sided pair cannot. That is the structural reason the corpus keeps two forms of the equation and does not identify them.
 
 **What this article uses.** The letters $L$ and $R$ below are the pair's components in the sense of §*The Pair's Two Components*. No unit is declared and no value is tested, except where a counterexample is being exhibited.
 
@@ -144,7 +144,7 @@ $$
 i\tilde K_{\Phi}^{\natural}\tilde\Xi_{0,L}=i\frac{i}{k_m}\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}\tilde X=-\frac{1}{k_m}\bigl(-k_m^{2}\bigr)\tilde X=k_m\tilde X ,
 $$
 
-using the mass shell in the form $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=-k_m^{2}$. Conversely the first line gives $\tilde\Xi_{0,L}=(i/k_m)\tilde K_{\Phi}\tilde\Xi_{0,R}$ for every solution, so every solution is of the stated form. The parametrisation is by $\tilde X$ alone, and $\tilde\Xi_{0}=A\tilde X$ is a bijection of $\mathbb{B}$ because $A$ is a unit.
+using the mass shell in the form $\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=-k_m^{2}$. Conversely the first line gives $\tilde\Xi_{0,L}=(i/k_m)\tilde K_{\Phi}\tilde\Xi_{0,R}$ for every solution, so every solution is of the stated form. The parametrisation is by $\tilde X$ alone, and $\tilde\Xi_{0}=A\tilde X$ is a bijection of $\mathbb{B}$ because $A$ is invertible.
 
 **What the proposition says.** Every element of the algebra is the polarization of exactly one massive plane-wave solution. The pair constrains the split completely and the field not at all. The natural guess is the opposite one, that a degenerate polarization is a special solution, and it is wrong for the massive plane wave: the eight real components of $\tilde\Xi_{0}$ are free, and the equation spends its two lines on the two components instead.
 
@@ -174,7 +174,7 @@ $$
 A=\bigl(1-\gamma\bigr)e_t=\begin{cases}0, & k'_t=+k_m,\\[2pt] 2e_t, & k'_t=-k_m.\end{cases}
 $$
 
-On the branch $k'_t=+k_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, a unit, and the field survives.
+On the branch $k'_t=+k_m$ the factor vanishes, so $\tilde\Xi_{0}=A\tilde\Xi_{0,R}=0$: the single-frequency plane wave has no polarization, although its two components are separately non-zero and opposite, $\tilde\Xi_{0,L}=-\tilde\Xi_{0,R}$. On the other branch the factor is $2e_t$, an invertible element, and the field survives.
 
 This asymmetry belongs to the sign convention of the pair and not to the physics: the polarization is the sum of the two components, and at $+k_m$ the two components cancel in that sum. The hypothesis $N(A)\neq0$ of the proposition fails exactly here, and the rest frame is the one momentum at which the map $\tilde X\mapsto\tilde\Xi_{0}$ is not a bijection. The consequence is worth stating once, because it is easy to misread a table of rest-frame solutions: a rest-frame field of this corpus is a superposition of the two branches, one of each sign of the frequency, and no single-frequency rest field of the positive branch exists.
 
@@ -194,7 +194,7 @@ $$
 \langle\vec Z\rangle_{\natural}=-1,
 $$
 
-where the last condition says that $\vec Z$ is a unit in the $\natural$ norm; in the quaternion square it reads $\vec Z^{2}=e_t$. Written out on the field it is
+where the last condition says that $\vec Z$ is invertible in the $\natural$ norm; in the quaternion square it reads $\vec Z^{2}=e_t$. Written out on the field it is
 
 $$
 Q_x^{2}+Q_y^{2}+Q_z^{2}=-Q_t^{2},
@@ -348,7 +348,7 @@ The kernel is a right ideal of complex dimension two, since $\tilde K_{\Phi}(\ti
 
 ### The Two-Sided Massless Field
 
-A massless field of the corpus's pair carries both components, one from each kernel, and the sum is generically a unit. Take the component $\vec e_y-i\vec e_x$ from the kernel of $\tilde K_{\Phi}$ and the component $\vec e_y+i\vec e_x$ from the kernel of $\tilde K_{\Phi}^{\natural}$. Both have vanishing norm, and their sum is $2\vec e_y$, of norm $4$. Written as a sum of cross terms, $\tilde X_L\tilde X_R^{\natural}=2(e_t+i\vec e_z)$ and $\tilde X_R\tilde X_L^{\natural}=2(e_t-i\vec e_z)$, and the two add to $4e_t$: with both parts on the cone, the whole norm of the sum is the interference of the two parts.
+A massless field of the corpus's pair carries both components, one from each kernel, and the sum is generically an invertible element. Take the component $\vec e_y-i\vec e_x$ from the kernel of $\tilde K_{\Phi}$ and the component $\vec e_y+i\vec e_x$ from the kernel of $\tilde K_{\Phi}^{\natural}$. Both have vanishing norm, and their sum is $2\vec e_y$, of norm $4$. Written as a sum of cross terms, $\tilde X_L\tilde X_R^{\natural}=2(e_t+i\vec e_z)$ and $\tilde X_R\tilde X_L^{\natural}=2(e_t-i\vec e_z)$, and the two add to $4e_t$: with both parts on the cone, the whole norm of the sum is the interference of the two parts.
 
 So masslessness does not put the field on the cone. The two parts are degenerate and their sum is not, and the quantity that carries the field's norm is the interference of the two. That is the same cross term the polar companion records as the mass of a sum of two rays seen from the side of the domain.
 
@@ -396,7 +396,7 @@ The cone has two non-zero sectors. $\Sigma_{01}$ is $\tilde\Xi^{2}=\lambda\tilde
 
 The polar word fails on both sectors, because its scale is read from the norm and the norm has vanished. What survives is the trace: the amplitude and the phase of a degenerate field are the modulus and the argument of $\lambda=2Q_t$, a linear object where the word's reading was quadratic.
 
-At $k_m=0$ the two lines decouple and every non-zero one-sided solution is degenerate, at every momentum and every amplitude. The kernel of a null left multiplier is a right ideal of complex dimension two, and inside it the two sectors appear as two lines, one of each. The sum of one component from each kernel is generically a unit, so a massless field with both components is generically regular, and the norm of the sum is the interference of the two parts.
+At $k_m=0$ the two lines decouple and every non-zero one-sided solution is degenerate, at every momentum and every amplitude. The kernel of a null left multiplier is a right ideal of complex dimension two, and inside it the two sectors appear as two lines, one of each. The sum of one component from each kernel is generically an invertible element, so a massless field with both components is generically regular, and the norm of the sum is the interference of the two parts.
 
 The letters $L$ and $R$ are the pair's two components and are fixed by the equation. They are not a definite-value split: a definite-value pair inserted into the chiral pair forces both components to vanish, for any declared traceless unit and either assignment of signs. That incompatibility is why the two-sided form of the equation, whose mass term conjugates and so reverses the value, is the form in which a definite-value split does work.
 

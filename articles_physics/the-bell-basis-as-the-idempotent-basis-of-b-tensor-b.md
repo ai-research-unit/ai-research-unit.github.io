@@ -247,7 +247,7 @@ $$
 
 Thus $HH^{T}=H^{T}H=4I_4$, i.e. $H$ is a Hadamard matrix. The first relation says that the four sign vectors are pairwise orthogonal of squared length four; the second says that the four columns are also orthogonal and that, in particular, $\sum_\epsilon\epsilon_\mu=0$ for each $\mu\in\{x,y,z\}$. The first relation is the algebraic content of operator orthogonality — the mixed terms cancel exactly — and the vanishing column sums are the reason the mixed terms cancel in the resolution of the identity $\sum_\epsilon \tilde\Pi_\epsilon=e_t\otimes e_t$. The Bell idempotents are, in this sense, the operator form of a Hadamard matrix.
 
-It is worth noting what the Hadamard structure does **not** yet show. The relations above concern the four sign patterns with $\epsilon_1\epsilon_2\epsilon_3=+1$; they do not by themselves exclude the existence of a diagonal-form idempotent with some other pattern, or with non-unit coefficients. We settle that question in the section on maximal entanglement, where the diagonal-form idempotents are classified.
+It is worth noting what the Hadamard structure does **not** yet show. The relations above concern the four sign patterns with $\epsilon_1\epsilon_2\epsilon_3=+1$; they do not by themselves exclude the existence of a diagonal-form idempotent with some other pattern, or with non-invertible coefficients. We settle that question in the section on maximal entanglement, where the diagonal-form idempotents are classified.
 
 ## The Bell Basis as a Stabiliser Eigenbasis
 

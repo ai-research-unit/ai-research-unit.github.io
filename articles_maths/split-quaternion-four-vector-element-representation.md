@@ -122,7 +122,7 @@ The restrictions to the distinguished subspaces read off the coordinates:
 
 Only the scalar restriction is definite; the others are indefinite, and their null sets are the zero-divisor sets of the respective subspaces.
 
-## The Unit Criterion in Coordinates
+## The Invertibility Criterion in Coordinates
 
 **Theorem.** The four-vector $(q_t,q_x,q_y,q_z)$ is **invertible** if and only if
 
@@ -132,9 +132,9 @@ $$
 \;},
 $$
 
-and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural} = \dfrac{q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z}{q_t^2+q_x^2-q_y^2-q_z^2}$. Equivalently, the element is a unit if and only if the determinant of the matrix model is nonzero.
+and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural} = \dfrac{q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z}{q_t^2+q_x^2-q_y^2-q_z^2}$. Equivalently, the element is invertible if and only if the determinant of the matrix model is nonzero.
 
-**Proof.** The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be a unit.
+**Proof.** The identity $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ gives $\tilde q \cdot (\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}) = 1$ whenever $\langle\tilde q\rangle_{\natural} \neq 0$; conversely, if $\langle\tilde q\rangle_{\natural} = 0$ with $\tilde q \neq 0$, then $\tilde q\tilde{q}^{\natural} = 0$ with $\tilde{q}^{\natural} \neq 0$, so $\tilde q$ is a zero divisor and cannot be an invertible element.
 
 The non-invertible nonzero four-vectors are exactly those on the **null cone** $q_t^2 + q_x^2 = q_y^2 + q_z^2$; on the vector subspace $q_t = 0$ this is the null cone $q_x^2 = q_y^2 + q_z^2$ of the Minkowski form, and in the split-complex plane $\mathbb{C}_{\mathrm{spl},2}$ it is the pair of isotropic lines $q_t = \pm q_y$.
 
@@ -162,7 +162,7 @@ The product is computed in components by the displayed formula, whose scalar par
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | ${}^{\natural}, \alpha, \rho$ | the three involutions as sign flips | *Split-Quaternion Subspaces and the Involutions* |
 | $S, V, \mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$ | the distinguished subspaces as coordinate conditions | *Split-Quaternion Relations Between Subspaces* |
-| $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of a unit | *Split-Quaternion Norm and Invertibility* |
+| $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse of an invertible element | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 

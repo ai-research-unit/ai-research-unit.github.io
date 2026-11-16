@@ -122,7 +122,7 @@ $$ \boxed{\;(\ln r_1,\theta_1)*(\ln r_2,\theta_2)
 =\bigl(\ln(r_1r_2),\ \theta_1+\theta_2 \bmod 2\pi\bigr)\;}.
 $$
 
-The logarithmic scale and the angle do not mix. The group of units is the product of a line and a circle.
+The logarithmic scale and the angle do not mix. The group of invertibles is the product of a line and a circle.
 
 ## The Logarithm
 
@@ -333,7 +333,7 @@ The exponential is conformal: it multiplies lengths by $r$ and preserves angles 
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $Q=ru$ with $r=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/\sqrt{\langle Q\rangle_{*}}$. It is unique on the whole of $\mathbb{C}^\times$, it uses the square root of the norm, and it is the product decomposition of the group of units. It is the form developed in *Modulus–Unit Polar Decomposition of Complex Numbers*.
+The modulus–unit form is $Q=ru$ with $r=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/\sqrt{\langle Q\rangle_{*}}$. It is unique on the whole of $\mathbb{C}^\times$, it uses the square root of the norm, and it is the product decomposition of the group of invertibles. It is the form developed in *Modulus–Unit Polar Decomposition of Complex Numbers*.
 
 ### The Rational-Chart Form
 

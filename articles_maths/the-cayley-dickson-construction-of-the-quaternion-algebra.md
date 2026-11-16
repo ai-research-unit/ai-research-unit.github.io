@@ -143,7 +143,7 @@ Neither idempotent is zero: $\vec z=\vec e_z\vec e_x$ has no scalar part, so $\v
 
 **Why the sign of the square.** The new unit squares to $-e_t$, the same sign as at the first rung, where the base unit $\vec e_z$ was adjoined to $\mathbb{R}$ with $\vec e_z^2=-e_t$. The opposite sign at this second rung gives the split quaternions of *Split-Quaternion Algebra*, and the two constructions differ in that sign alone. The choice made here is the one that keeps the squared norm a sum of squares, and the four-square identity is what the doubling is built to preserve.
 
-## Naming the Units
+## Naming the Invertibles
 
 **The third unit is computed.** Set
 
@@ -353,7 +353,7 @@ $$
 (\tilde q_1\tilde q_2)^{\natural}=\tilde q_2^{\natural}\,\tilde q_1^{\natural}.
 $$
 
-*Proof.* Both sides are bilinear, so it suffices to check the sixteen pairs of units. A product of two units is a signed unit, $\vec e_\mu\vec e_\nu=\varepsilon\vec e_\gamma$ with $\varepsilon=\pm1$, and the conjugation sends each unit to a signed copy of itself, $\vec e_\mu^{\natural}=\sigma_\mu\vec e_\mu$ with $\sigma_t=+1$ and $\sigma_x=\sigma_y=\sigma_z=-1$. The left side is then $\varepsilon\sigma_\gamma\vec e_\gamma$ and the right side is $\sigma_\nu\sigma_\mu\varepsilon\vec e_\gamma$, so the identity holds once $\sigma_\gamma=\sigma_\mu\sigma_\nu$. The four cases exhaust the sixteen pairs: two scalar units, one scalar and one vector, two distinct vector units with the third as their product, and one vector unit twice with the scalar unit as its square. In each the sign of the product unit is the product of the signs of the two factors. Bilinearity extends the identity to the algebra.
+*Proof.* Both sides are bilinear, so it suffices to check the sixteen pairs of invertibles. A product of two units is a signed unit, $\vec e_\mu\vec e_\nu=\varepsilon\vec e_\gamma$ with $\varepsilon=\pm1$, and the conjugation sends each unit to a signed copy of itself, $\vec e_\mu^{\natural}=\sigma_\mu\vec e_\mu$ with $\sigma_t=+1$ and $\sigma_x=\sigma_y=\sigma_z=-1$. The left side is then $\varepsilon\sigma_\gamma\vec e_\gamma$ and the right side is $\sigma_\nu\sigma_\mu\varepsilon\vec e_\gamma$, so the identity holds once $\sigma_\gamma=\sigma_\mu\sigma_\nu$. The four cases exhaust the sixteen pairs: two scalar units, one scalar and one vector, two distinct vector units with the third as their product, and one vector unit twice with the scalar unit as its square. In each the sign of the product unit is the product of the signs of the two factors. Bilinearity extends the identity to the algebra.
 
 **The bar is the restriction.** On the base, the second part vanishes and the conjugation reads $(w+0\vec e_x)^{\natural}=\bar w$. So the bar of §*The Conjugation of the Base* is the restriction of $\natural$ to the base, and the two signs are one sign. The distinction to keep is that the bar is written on a base element $w$ and $\natural$ on an element $\tilde q$ of the doubled algebra; the marks are different because the objects are.
 
@@ -377,7 +377,7 @@ The scalar part is the sum of the two base norms, $a\bar a=q_t^2+q_z^2$ and $b\b
 
 ### The Inverse
 
-**Every non-zero element is a unit.** Let $\tilde q\neq0$. Then $N(\tilde q)>0$ is a real number, and
+**Every non-zero element is invertible.** Let $\tilde q\neq0$. Then $N(\tilde q)>0$ is a real number, and
 
 $$
 \tilde q^{-1}=\frac{\tilde q^{\natural}}{N(\tilde q)} ,
@@ -398,7 +398,7 @@ because $\tilde q\tilde q^{\natural}=N(\tilde q)e_t$ and the norm is a scalar. T
 5. The nine derivations of §*Hamilton's Rules* produce the squares, the sign flip and the six ordered products, that is the multiplication table of the quaternion algebra, from the two generating rules alone.
 6. The result is associative, because the base is associative and commutative, and non-commutative, because the two new units anticommute.
 7. The conjugation $\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$ reverses the order of a product, and it restricts to the bar on the base.
-8. The norm is the sum of the four squares of the coordinates, it is definite, and it gives the inverse $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$; every non-zero element is a unit, and the algebra is a division algebra.
+8. The norm is the sum of the four squares of the coordinates, it is definite, and it gives the inverse $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$; every non-zero element is invertible, and the algebra is a division algebra.
 9. The ladder is $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$, with the same sign choice at each rung; the next doubling gives the octonions and loses associativity, so $\mathbb{H}$ is the last associative division algebra of the sequence.
 
 ## Summary of Notation
@@ -423,5 +423,5 @@ because $\tilde q\tilde q^{\natural}=N(\tilde q)e_t$ and the norm is a scalar. T
 - William Rowan Hamilton, *On Quaternions* (Proceedings of the Royal Irish Academy, 1844) and *Lectures on Quaternions* (1853), for the table as it was first stated.
 - Leonard E. Dickson, *On Quaternions and Their Generalization and the History of the Eight Square Theorem* (Annals of Mathematics, 1919), for the doubling as a construction.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Dover, 1995), for the doubling, the criterion for associativity and the ladder.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the doubling read through the arithmetic of the units.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the doubling read through the arithmetic of the invertibles.
 - John C. Baez, *The Octonions* (Bulletin of the American Mathematical Society, 2002), for the ladder, the lost properties at each rung and the place of the quaternions in it.

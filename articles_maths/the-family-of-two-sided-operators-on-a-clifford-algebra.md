@@ -5,7 +5,7 @@
 
 Every operator used in the geometric layer of a Clifford algebra dresses an element of the algebra between two factors built from a single element, one on the left and one on the right. The reflection and the rotation of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* are the members of that family in which the right factor is the inverse. The other members are used elsewhere in the corpus, so the family is set up here once, with the properties that hold for all of its members, before any single member is singled out.
 
-The family has five members, indexed by the right factor: the **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$, both defined on the units; the **reversion two-sided operator** $x\,y\,x^{r}$ and the **conjugation two-sided operator** $x\,y\,x^{\natural}$, both defined on the whole algebra; and the **Hermitian pair** $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.
+The family has five members, indexed by the right factor: the **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$, both defined on the invertibles; the **reversion two-sided operator** $x\,y\,x^{r}$ and the **conjugation two-sided operator** $x\,y\,x^{\natural}$, both defined on the whole algebra; and the **Hermitian pair** $x\,y\,x^{\dagger}$, defined when the base carries an involution. The first two are the members used by the groups, the middle two need no invertibility, and the last belongs to the involutive theory.
 
 The Clifford algebra, the fundamental relation and the parity grading are from *Clifford Algebras*; the grade involution $\alpha$, reversion $x^{r}$ and Clifford conjugation $x^{\natural}=\alpha(x^{r})$ are from the same entry and from *Clifford Algebras in Finite Dimensions*; the Clifford group $\Gamma(V,\mathfrak{Q})$, the Clifford norm $N(x)=x x^{\natural}$ and the signed inner conjugation action are from *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*; the dagger, its involution of the base and the Hermitian pair are from *Hilbert Algebras*. Nothing owned by those entries is re-derived. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.
 
@@ -39,7 +39,7 @@ $$
 \Phi^{\mathrm{J},c}_x\bigl(\Phi^{\mathrm{J},c}_z(y)\bigr)=\mathrm{J}(x)\bigl(\mathrm{J}(z)\,y\,c(z)\bigr)c(x)=\mathrm{J}(xz)\,y\,\bigl(c(z)c(x)\bigr)=\mathrm{J}(xz)\,y\,c(xz).
 $$
 
-**Remark.** The assignment $x\mapsto\Phi^{\mathrm{J},c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$. When the right factor is the inverse the assignment is defined on the units and is a homomorphism of the unit group. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the unit group is a group of isometries.
+**Remark.** The assignment $x\mapsto\Phi^{\mathrm{J},c}_x$ is a homomorphism from the multiplicative monoid of $\mathrm{Cl}(V,\mathfrak{Q})$ to the endomorphisms of $\mathrm{Cl}(V,\mathfrak{Q})$. When the right factor is the inverse the assignment is defined on the invertibles and is a homomorphism of the group of invertibles. It is the multiplicativity that lets a composite of two operators be read off from the product of the two elements: it is why the product of two reflections is computed from the product of the two reflecting vectors, and why the image of the group of invertibles is a group of isometries.
 
 ### The Value at the Unit
 
@@ -72,21 +72,21 @@ The family is indexed by the right factor, the left factor being the element its
 
 | name | left factor | right factor | operator | defined for |
 |---|---|---|---|---|
-| inner conjugation | $x$ | $x^{-1}$ | $x\,y\,x^{-1}$ | the units |
-| signed inner conjugation | $\alpha(x)$ | $x^{-1}$ | $\alpha(x)\,y\,x^{-1}$ | the units |
+| inner conjugation | $x$ | $x^{-1}$ | $x\,y\,x^{-1}$ | the invertibles |
+| signed inner conjugation | $\alpha(x)$ | $x^{-1}$ | $\alpha(x)\,y\,x^{-1}$ | the invertibles |
 | reversion two-sided operator | $x$ | $x^{r}$ | $x\,y\,x^{r}$ | every $x$ |
 | conjugation two-sided operator | $x$ | $x^{\natural}$ | $x\,y\,x^{\natural}$ | every $x$ |
 | Hermitian pair | $x$ | $x^{\dagger}$ | $x\,y\,x^{\dagger}$ | every $x$ |
 
-The right factors of the last three rows are the standard anti-involutions of the Clifford algebra, and the table carries the first structural fact: invertibility is required by the inverse alone. The first two operators are defined only where the inverse exists, that is on the unit group; the other three are defined on the whole algebra.
+The right factors of the last three rows are the standard anti-involutions of the Clifford algebra, and the table carries the first structural fact: invertibility is required by the inverse alone. The first two operators are defined only where the inverse exists, that is on the group of invertibles; the other three are defined on the whole algebra.
 
 ### The Inverse Two-Sided Operators
 
 The two members with the inverse to the right are the ones that act on the quadratic space by isometries.
 
-The **inner conjugation** $y\mapsto x\,y\,x^{-1}$ is defined on the unit group and is the conjugation by $x$. On the even units it acts on the vectors as a rotation, and on the whole algebra it is the inner automorphism attached to $x$.
+The **inner conjugation** $y\mapsto x\,y\,x^{-1}$ is defined on the group of invertibles and is the conjugation by $x$. On the even units it acts on the vectors as a rotation, and on the whole algebra it is the inner automorphism attached to $x$.
 
-The **signed inner conjugation** $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on the unit group and differs from the inner conjugation by the grade involution in the left factor. On a vector $u$ with $\mathfrak{Q}(u)\neq0$ it reproduces the reflection $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u=-uvu^{-1}$, and the elements $x$ for which it preserves the space of vectors are by definition the elements of the Clifford group $\Gamma(V,\mathfrak{Q})$.
+The **signed inner conjugation** $y\mapsto \alpha(x)\,y\,x^{-1}$ is defined on the group of invertibles and differs from the inner conjugation by the grade involution in the left factor. On a vector $u$ with $\mathfrak{Q}(u)\neq0$ it reproduces the reflection $\rho_u(v)=v-2B(v,u)\mathfrak{Q}(u)^{-1}u=-uvu^{-1}$, and the elements $x$ for which it preserves the space of vectors are by definition the elements of the Clifford group $\Gamma(V,\mathfrak{Q})$.
 
 **Remark.** The two differ exactly on the odd part: for even $x$ the factors $\alpha(x)$ and $x$ coincide, and the two operators agree. This is why a rotation, carried by an even element, is described by either one, while a reflection, carried by an odd element, requires the graded form.
 
@@ -179,9 +179,9 @@ For the unit rotor $R=e_1e_2$ one has $N(R)=1$, so the norm-one slice applies: t
 
 ## Summary
 
-A **two-sided operator** on a Clifford algebra is the map $\Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)$ attached to an automorphism $\mathrm{J}$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the unit group on the units. Each member preserves the parity grading.
+A **two-sided operator** on a Clifford algebra is the map $\Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)$ attached to an automorphism $\mathrm{J}$ and an anti-automorphism $c$. It is the product of a left translation and a right translation, it is $F$-linear in $y$, and it satisfies the composition law $\Phi_{xz}=\Phi_x\circ\Phi_z$, so that $x\mapsto\Phi_x$ is a homomorphism of the multiplicative monoid on the algebra and of the group of invertibles on the invertibles. Each member preserves the parity grading.
 
-The family has five members, indexed by the right factor. The **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$ are defined on the units and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The **reversion two-sided operator** $x\,y\,x^{r}$ and the **conjugation two-sided operator** $x\,y\,x^{\natural}$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation two-sided operator at the unit is the Clifford norm. The **Hermitian pair** $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to *Hilbert Algebras*.
+The family has five members, indexed by the right factor. The **inner conjugation** $x\,y\,x^{-1}$ and the **signed inner conjugation** $\alpha(x)\,y\,x^{-1}$ are defined on the invertibles and are the members that act on the quadratic space by isometries; they agree on the even part and differ on the odd part, which is why a reflection needs the graded form while a rotation does not. The **reversion two-sided operator** $x\,y\,x^{r}$ and the **conjugation two-sided operator** $x\,y\,x^{\natural}$ are defined on the whole algebra, need no invertibility, fix and negate the vectors respectively, and agree on the even part; the value of the conjugation two-sided operator at the unit is the Clifford norm. The **Hermitian pair** $x\,y\,x^{\dagger}$ requires an involution of the base and belongs to *Hilbert Algebras*.
 
 The members differ at the unit by a parity sign and a norm: the inner conjugation fixes $1$, the signed inner conjugation gives $\pm1$ according to parity, the reversion two-sided operator gives $x\,x^{r}$, and the conjugation two-sided operator gives $N(x)$. The operators that carry geometry are those with $\Phi_x(V)\subseteq V$, which for the signed inner conjugation is the defining condition of the Clifford group. On $\Gamma$ the conjugation two-sided operator is the inner conjugation scaled by the norm, $x\,y\,x^{\natural}=N(x)\,(x\,y\,x^{-1})$, so on the slice $N(x)=\pm1$ the two coincide and the odd and even elements give the reflections and the rotations. The scale must be a scalar and not merely central: in $\mathrm{Cl}_{3,0}$ the element $x=1+\omega$ has $x x^{\natural}=2\omega$ central and sends $e_1$ to the bivector $2e_2e_3$, so it is not in the Clifford group.
 
@@ -193,8 +193,8 @@ The members differ at the unit by a parity sign and a norm: the inner conjugatio
 | $c$ | Anti-automorphism, $c(xz)=c(z)c(x)$, $c(1)=1$ |
 | $\Phi^{\mathrm{J},c}_x(y)=\mathrm{J}(x)\,y\,c(x)$ | Two-sided operator |
 | $L_a$, $R_b$ | Left and right translation, $\Phi^{\mathrm{J},c}_x=L_{\mathrm{J}(x)}R_{c(x)}$ |
-| $x\,y\,x^{-1}$ | Inner conjugation, defined on the units |
-| $\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, defined on the units |
+| $x\,y\,x^{-1}$ | Inner conjugation, defined on the invertibles |
+| $\alpha(x)\,y\,x^{-1}$ | Signed inner conjugation, defined on the invertibles |
 | $x\,y\,x^{r}$ | Reversion two-sided operator, defined for every $x$ |
 | $x\,y\,x^{\natural}$ | Conjugation two-sided operator, defined for every $x$ |
 | $x\,y\,x^{\dagger}$ | Hermitian pair, needs an involution of the base |

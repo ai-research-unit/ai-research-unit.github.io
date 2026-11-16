@@ -36,9 +36,9 @@ $$
 
 (iv) $\tilde Q=Q_tu$ with $Q_t\in\mathbb{C}^\times$ and $u$ a unipotent element, $(u-e_t)^2=0$;
 
-(v) $\tilde Q$ is a unit whose two eigenvalues coincide at $Q_t$.
+(v) $\tilde Q$ is invertible whose two eigenvalues coincide at $Q_t$.
 
-*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\langle\tilde Q\rangle_{\natural}\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Upsilon=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Upsilon^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Upsilon$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$ makes $\tilde Q$ a unit.
+*Proof.* (i) $\iff$ (ii): on $B^2=0$ one has $\langle\tilde Q\rangle_{\natural}=Q_t^2$, so $\langle\tilde Q\rangle_{\natural}\neq0$ exactly when $Q_t\neq0$. (ii) $\iff$ (iii): the vector part is pure, and $\vec Q^2=-B^2e_t=0$, so $\vec\Upsilon=\vec Q$ is nilpotent; conversely $B^2=0$ follows from $\vec\Upsilon^2=0$. (iii) $\iff$ (iv): $u=e_t+\vec\Upsilon$ has $u-e_t$ nilpotent, and conversely. (ii) $\iff$ (v): with $B^2=0$ the characteristic polynomial is $X^2-2Q_tX+Q_t^2=(X-Q_t)^2$, so both eigenvalues are $Q_t$; and $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$ makes $\tilde Q$ an invertible element.
 
 **Corollary (positive characterisation).** The sector is the non-zero complex cone over the unipotent variety:
 
@@ -50,7 +50,7 @@ The pair $(Q_t,u)$ is determined by $\tilde Q$: the scalar part gives $Q_t$, and
 
 **Corollary (automatic scalar part).** Every element of the sector has $Q_t\neq0$. The non-vanishing of the scalar part is not an extra condition: on $\mathcal S$ it is exactly the norm-regularity condition. The sector is the part of $\mathcal S$ on which the scalar part survives.
 
-**Remark (two orbits).** The unipotent variety is $\{e_t\}$ together with a single orbit of the unit group: a non-zero pure nilpotent generates a minimal left ideal, and the unit group is transitive on the minimal left ideals. The sector is the union of the corresponding two orbits of $\mathbb{C}^\times\times\mathbb{B}^\times$ acting by scaling and inner automorphisms: the scalar line, and the cone over the non-trivial unipotents.
+**Remark (two orbits).** The unipotent variety is $\{e_t\}$ together with a single orbit of the group of invertibles: a non-zero pure nilpotent generates a minimal left ideal, and the group of invertibles is transitive on the minimal left ideals. The sector is the union of the corresponding two orbits of $\mathbb{C}^\times\times\mathbb{B}^\times$ acting by scaling and inner automorphisms: the scalar line, and the cone over the non-trivial unipotents.
 
 ## Geometry
 
@@ -72,7 +72,7 @@ is a bijection. The pure nilpotent cone is the cone over a smooth conic in $\mat
 
 ## The Two Regimes
 
-The sector is not homogeneous in its spectral behaviour, although it is homogeneous under the unit group. It splits by the vector part:
+The sector is not homogeneous in its spectral behaviour, although it is homogeneous under the group of invertibles. It splits by the vector part:
 
 $$
 \Sigma_{10}=\Sigma_{10}^{\mathrm{s}}\sqcup\Sigma_{10}^{\mathrm{J}}.
@@ -92,7 +92,7 @@ $$
 
 with the same coefficient on both terms, and the pair is not determined by $\tilde Q$. The canonical Peirce decomposition attached to $\tilde Q$ has the **one-term** form $\tilde Q=Q_te_t$; every two-term refinement is non-unique.
 
-This is the sharpest warning in the arrangement: $\mathcal S$ is not the locus of non-diagonalisable elements. The identity $e_t$ lies here, with $Q_t=1$, spectrum $\{1\}$ and a repeated eigenvalue, and it is a unit. The punctured scalar line is the only place in the algebra where a non-zero element admits several two-term Peirce decompositions with commuting idempotents.
+This is the sharpest warning in the arrangement: $\mathcal S$ is not the locus of non-diagonalisable elements. The identity $e_t$ lies here, with $Q_t=1$, spectrum $\{1\}$ and a repeated eigenvalue, and it is invertible. The punctured scalar line is the only place in the algebra where a non-zero element admits several two-term Peirce decompositions with commuting idempotents.
 
 ### The Jordan part
 
@@ -167,7 +167,7 @@ $$
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}=J_2(Q_t).
 $$
 
-**No eigenbasis.** The construction needs a root $\vec{Ζ}=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is a unit, and still no eigenbasis is attached to it.
+**No eigenbasis.** The construction needs a root $\vec{Ζ}=-i\vec Q/B$, and here $B=0$. The root is undefined, and the regular construction attaches no Peirce pair to $\tilde Q$. The Hermitian form attaches one, and the canonical Jordan basis of *The Jordan Basis of a Spectrally Degenerate Biquaternion* exists; what fails is the eigenbasis. This is the spectral particularity of the sector: the norm is non-zero, so the element is invertible, and still no eigenbasis is attached to it.
 
 ## Multiplication and Inversion
 
@@ -177,7 +177,7 @@ $$
 \langle\tilde Q_2\tilde Q\rangle_{\natural}=\langle\tilde Q_2\rangle_{\natural}\langle\tilde Q\rangle_{\natural}\neq0,
 $$
 
-and the product lies in the unit group $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. All three outcomes inside the unit group occur.
+and the product lies in the group of invertibles $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. All three outcomes inside the group of invertibles occur.
 
 **Theorem (what products do).**
 
@@ -207,7 +207,7 @@ $$
 
 with $B^2=4+4i\neq0$ and $\langle\tilde Q\rangle_{\natural}=1$. So the product lies in $\Sigma_{11}$.
 
-**Inversion stays inside the sector.** Since $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$, every element of the sector is a unit, with
+**Inversion stays inside the sector.** Since $\langle\tilde Q\rangle_{\natural}=Q_t^2\neq0$, every element of the sector is invertible, with
 
 $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{\langle\tilde Q\rangle_{\natural}}
@@ -217,7 +217,7 @@ $$
 
 The element $-\vec\Upsilon$ is again nilpotent, so $\tilde Q^{-1}\in\Sigma_{10}$; it lies in the scalar line exactly when $\tilde Q$ does.
 
-**Consequence.** The sector is **closed under inversion and not closed under multiplication**. It is a symmetric subset of the unit group, not a subgroup. The only part of it closed under both is the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$, a subgroup isomorphic to $\mathbb{C}^\times$.
+**Consequence.** The sector is **closed under inversion and not closed under multiplication**. It is a symmetric subset of the group of invertibles, not a subgroup. The only part of it closed under both is the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$, a subgroup isomorphic to $\mathbb{C}^\times$.
 
 ## Relation to the Two Cones
 
@@ -259,7 +259,7 @@ a single Jordan block with eigenvalue $1$, and the identity $e_t$ itself, a semi
 
 **The two mixed sectors.** $\Sigma_{01}$ and $\Sigma_{10}$ are the independence witnesses: $\Sigma_{01}$ is $\natural$-degenerate with a full eigenbasis, $\Sigma_{10}$ is $\natural$-regular with none. Neither cone contains the other, and these are the sectors that show it.
 
-**Position among the four sectors.** Sector $10$ is the **degenerate half of the unit group**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
+**Position among the four sectors.** Sector $10$ is the **degenerate half of the group of invertibles**, $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$, and it has two strata: the punctured scalar line $\Sigma_{10}^{\mathrm{s}}$ and the Jordan part $\Sigma_{10}^{\mathrm{J}}$. These are strata of the sector, not sectors of their own: both have $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^2=0$, so no predicate separates them. The split is by the minimal polynomial and is recorded in *Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*.
 
 ## Consequences
 
@@ -281,9 +281,9 @@ which is polynomial in $\theta$; it grows even when $Q_t$ is purely imaginary. T
 
 **Polar decomposition.** It exists throughout the sector, because $\langle\tilde Q\rangle_{\natural}\neq0$ and the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\neq0$ is defined; the modulus–unit polar decomposition of *The Polar Decomposition of an N-Regular Biquaternion* applies. This is the sector's positive feature and its sharpest contrast with $\Sigma_{01}$: there the eigenbasis exists and the polar decomposition does not; here the polar decomposition exists and the eigenbasis does not.
 
-**One-sided operators.** Since $\tilde Q$ is a unit, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.
+**One-sided operators.** Since $\tilde Q$ is invertible, $L_{\tilde Q}$ and $R_{\tilde Q}$ are bijections of complex rank $4$, with zero kernel, and both annihilators are $\{0\}$. The spectral defectivity is invisible to the one-sided structure: on $\Sigma_{10}$ and on $\Sigma_{11}$ alike, both multiplications are invertible. No ideal-theoretic condition can detect a repeated eigenvalue.
 
-**The degenerate half of the unit group.** The unit group splits as $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. The sector $\Sigma_{10}$ is the degenerate half: closed under inversion, not under multiplication, and made of the units whose two eigenvalues have merged.
+**The degenerate half of the group of invertibles.** The group of invertibles splits as $\mathbb{B}^\times=\Sigma_{10}\sqcup\Sigma_{11}$. The sector $\Sigma_{10}$ is the degenerate half: closed under inversion, not under multiplication, and made of the invertibles whose two eigenvalues have merged.
 
 ## The Generators, the Eigenvalues, and the Element
 
@@ -344,12 +344,12 @@ reproduces the Peirce form and the sum: $e\tilde Qe=Q_te$, $e\tilde Qf=\vec\Upsi
 | geometry | Zariski-open in $\mathcal S$; complex cone of complex dimension $3$ and real dimension $6$; connected; contains the punctured scalar line, the singular locus of $\mathcal S$ |
 | regimes | $\Sigma_{10}^{\mathrm{s}}$: scalar, semisimple, non-unique spectral idempotents, dimension $1$, closed; $\Sigma_{10}^{\mathrm{J}}$: Jordan, defective, dual-number centraliser, dimension $3$, open dense |
 | Peirce decomposition | the spectral pair fails on the Jordan part; there the Hermitian form selects a canonical pair and a Jordan basis (see *The Jordan Basis of a Spectrally Degenerate Biquaternion*); one-term and non-unique on the scalar line |
-| annihilators | both zero: the element is a unit |
+| annihilators | both zero: the element is invertible |
 | multiplication | $\Sigma_{10}\cdot\Sigma_{10}\subseteq\Sigma_{10}\cup\Sigma_{11}$, with all three outcomes; inverse-closed, not product-closed |
 | relation to the cones | $\Sigma_{10}=\mathcal S\setminus\mathcal N$; transverse on the Jordan part; singular on the scalar line; tangency only on $\Sigma_{00}$ |
 | place in the arrangement | the Jordan and scalar strata: units with a repeated eigenvalue |
 
-The sector is the unipotent sector. It is the non-zero scalar cone over the unipotent elements, the complement of the nilpotent stratum inside the spectral-degenerate cone, and the degenerate half of the unit group. Its elements are exactly the units whose two eigenvalues are equal: invertibility survives, the spectral separation fails. It contains, in its scalar line, the identity and the whole singular locus of the spectral cone, and it is the sharpest reminder that spectral degeneracy and non-diagonalisability are not the same property.
+The sector is the unipotent sector. It is the non-zero scalar cone over the unipotent elements, the complement of the nilpotent stratum inside the spectral-degenerate cone, and the degenerate half of the group of invertibles. Its elements are exactly the invertibles whose two eigenvalues are equal: invertibility survives, the spectral separation fails. It contains, in its scalar line, the identity and the whole singular locus of the spectral cone, and it is the sharpest reminder that spectral degeneracy and non-diagonalisability are not the same property.
 
 ## Summary of Notation
 
@@ -370,7 +370,7 @@ The sector is the unipotent sector. It is the non-zero scalar cone over the unip
 
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotents and the origin.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the partner mixed sector $\Sigma_{01}$, the scaled idempotents.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the unit group.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its two strata and the group of invertibles.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
 - [The Spectrum](the-spectrum.html), for the spectral criterion, the discriminant and the spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.

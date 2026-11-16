@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The units of a topological algebra $E$ act on it by conjugation, $x \mapsto axa^{-1}$, and this **adjoint action** is the module-level form of the signed inner conjugation; with respect to the trace form of the category its adjoint is the conjugate action by $a^{-1}$, so the adjoint action is an involutive action in the sense that it intertwines the trace-adjoint with the inversion of the parameter. On a graded algebra the conjugation by a homogeneous element is compatible with the grading: by an even element it preserves the two parts, and by an odd element it preserves them up to the parity, and the elementwise condition for the compatibility is $a^{-1}\alpha(a) \in Z(E)$. On a graded module over $E$ the conjugated action satisfies $\beta\rho_{x} = (-1)^{i}\rho_{x}\beta$ for a homogeneous $x$ of parity $i$, and the sign rule that the graded commutator imposes is the one of the graded category, named here and deferred.
+The invertibles of a topological algebra $E$ act on it by conjugation, $x \mapsto axa^{-1}$, and this **adjoint action** is the module-level form of the signed inner conjugation; with respect to the trace form of the category its adjoint is the conjugate action by $a^{-1}$, so the adjoint action is an involutive action in the sense that it intertwines the trace-adjoint with the inversion of the parameter. On a graded algebra the conjugation by a homogeneous element is compatible with the grading: by an even element it preserves the two parts, and by an odd element it preserves them up to the parity, and the elementwise condition for the compatibility is $a^{-1}\alpha(a) \in Z(E)$. On a graded module over $E$ the conjugated action satisfies $\beta\rho_{x} = (-1)^{i}\rho_{x}\beta$ for a homogeneous $x$ of parity $i$, and the sign rule that the graded commutator imposes is the one of the graded category, named here and deferred.
 
 This article develops the adjoint action, its adjoint, and its compatibility with the grading on a module. The adjoint action and its relation to the inner automorphisms are *The Signed Two-Sided Operator on a Topological Vector Space*; the trace form and the adjoint of the inner conjugation are *The Adjoint of the Left Multiplication on a Topological Vector Space* and *The Signed Adjoint Two-Sided Operator on a Topological Vector Space*; the graded module and the compatible action are *The Graded Action on a Module over a Topological Vector Space*; the sign rule of the graded commutator is *Superalgebras and Graded Structures*. The forms are Part III.
 
@@ -17,7 +17,7 @@ $$
 \mathrm{Ad}_{a}(x) = axa^{-1} ,
 $$
 
-a continuous algebra automorphism with $\mathrm{Ad}_{a}\mathrm{Ad}_{b} = \mathrm{Ad}_{ab}$ and $\mathrm{Ad}_{a}^{-1} = \mathrm{Ad}_{a^{-1}}$, so that $a \mapsto \mathrm{Ad}_{a}$ is a continuous representation of the unit group $E^{\times}$ with kernel the centre $Z(E)^{\times}$; the image is the group of inner automorphisms.
+a continuous algebra automorphism with $\mathrm{Ad}_{a}\mathrm{Ad}_{b} = \mathrm{Ad}_{ab}$ and $\mathrm{Ad}_{a}^{-1} = \mathrm{Ad}_{a^{-1}}$, so that $a \mapsto \mathrm{Ad}_{a}$ is a continuous representation of the group of invertibles $E^{\times}$ with kernel the centre $Z(E)^{\times}$; the image is the group of inner automorphisms.
 
 **Theorem (the adjoint of the adjoint action).** For every invertible $a \in E$ the adjoint action has the trace-adjoint
 
@@ -89,14 +89,14 @@ because $axa^{-1}$ has the same parity $i$ as $x$; the conjugation therefore pre
 
 ## Summary
 
-The adjoint action $\mathrm{Ad}_{a}(x) = axa^{-1}$ of the invertible elements of a topological algebra is a continuous representation of the unit group with kernel the central units, and with respect to the trace form of the category its adjoint is $\mathrm{Ad}_{a^{-1}}$, so the adjoint action is unitary and preserves self-adjointness and unitarity. On a graded algebra the conjugation by a homogeneous unit of parity $p$ preserves the grading, sending $E_{i}$ to $E_{i}$ for $p = 0$ and for $p = 1$ alike, because the two same-parity factors cancel, and a general unit preserves the grading exactly when $a^{-1}\alpha(a)$ is central; the conjugate of the grade involution is the signed inner conjugation of the parameter, so the adjoint action of an involution reproduces the reflection's graded structure. On a graded module the conjugated action satisfies $\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta$ for a homogeneous $x$ of parity $i$, the conjugation preserving the parity; the sign rule of the graded commutator and of the graded tensor product belongs to *Superalgebras and Graded Structures* and to the graded-algebra category of this Part, and is named, not developed. The forms are Part III.
+The adjoint action $\mathrm{Ad}_{a}(x) = axa^{-1}$ of the invertible elements of a topological algebra is a continuous representation of the group of invertibles with kernel the central units, and with respect to the trace form of the category its adjoint is $\mathrm{Ad}_{a^{-1}}$, so the adjoint action is unitary and preserves self-adjointness and unitarity. On a graded algebra the conjugation by a homogeneous unit of parity $p$ preserves the grading, sending $E_{i}$ to $E_{i}$ for $p = 0$ and for $p = 1$ alike, because the two same-parity factors cancel, and a general unit preserves the grading exactly when $a^{-1}\alpha(a)$ is central; the conjugate of the grade involution is the signed inner conjugation of the parameter, so the adjoint action of an involution reproduces the reflection's graded structure. On a graded module the conjugated action satisfies $\beta\rho^{a}_{x} = (-1)^{i}\rho^{a}_{x}\beta$ for a homogeneous $x$ of parity $i$, the conjugation preserving the parity; the sign rule of the graded commutator and of the graded tensor product belongs to *Superalgebras and Graded Structures* and to the graded-algebra category of this Part, and is named, not developed. The forms are Part III.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $E = E_{0}\oplus E_{1}$, $\alpha$ | graded topological algebra and its grade involution |
-| $\mathrm{Ad}_{a}(x) = axa^{-1}$ | adjoint action of a unit |
+| $\mathrm{Ad}_{a}(x) = axa^{-1}$ | adjoint action of an invertible element |
 | $(\mathrm{Ad}_{a})^{\dagger} = \mathrm{Ad}_{a^{-1}}$ | the trace-adjoint, unitary |
 | $\mathrm{Ad}_{a}(E_{i}) \subseteq E_{i + p}$ | parity $p$ of the conjugating unit |
 | $a^{-1}\alpha(a) \in Z(E)$ | grading-preservation condition |

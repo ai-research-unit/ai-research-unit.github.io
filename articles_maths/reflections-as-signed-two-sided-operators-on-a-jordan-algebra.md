@@ -12,7 +12,7 @@ The article assumes *The Signed Two-Sided Operator on a Jordan Algebra* for the 
 
 ### Definition and Automorphism Property
 
-**Definition.** For a unit $u \in A^\times$ the **signed conjugation** by $u$ is the operator
+**Definition.** For an invertible element $u \in A^\times$ the **signed conjugation** by $u$ is the operator
 
 $$
 c_u : J \longrightarrow J, \qquad c_u(x) = u\,\alpha(x)\,u^{-1} .
@@ -20,7 +20,7 @@ $$
 
 It is $R$-linear and bijective with inverse $c_{u^{-1}}$, and it is the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$ of *The Signed Two-Sided Operator on a Jordan Algebra*.
 
-**Theorem.** For every unit $u$, the signed conjugation $c_u$ is an automorphism of the Jordan algebra $J$.
+**Theorem.** For every invertible $u$, the signed conjugation $c_u$ is an automorphism of the Jordan algebra $J$.
 
 *Proof.* For $x, y \in J$,
 $$
@@ -32,7 +32,7 @@ $$
 $$
 Hence $c_u$ preserves the Jordan product; being bijective, it is an automorphism of $J$.
 
-**Corollary.** The map $u \mapsto c_u$ is a homomorphism from $A^\times$ to the automorphism group of $J$ (with the composition law computed below); its kernel is the group of units fixed by the automorphism, that is, the units $u$ with $uzu^{-1} = \alpha(z)$ for all $z$, which is $Z(A)^\times$ when $\alpha = \mathrm{id}$.
+**Corollary.** The map $u \mapsto c_u$ is a homomorphism from $A^\times$ to the automorphism group of $J$ (with the composition law computed below); its kernel is the group of invertibles fixed by the automorphism, that is, the invertibles $u$ with $uzu^{-1} = \alpha(z)$ for all $z$, which is $Z(A)^\times$ when $\alpha = \mathrm{id}$.
 
 ### The Square and the Twisted Square
 
@@ -42,7 +42,7 @@ $$
 N(u) = u\,\alpha(u) \in A^\times .
 $$
 
-It is a unit, because $\alpha(u)$ is a unit, and it satisfies $\alpha(N(u)) = N(u)$ when $u$ is even or when $u^{-1} = \alpha(u)$; in general $N(u)$ need not be fixed by $\alpha$.
+It is invertible, because $\alpha(u)$ is invertible, and it satisfies $\alpha(N(u)) = N(u)$ when $u$ is even or when $u^{-1} = \alpha(u)$; in general $N(u)$ need not be fixed by $\alpha$.
 
 **Proposition.** The twisted square is multiplicative up to conjugation:
 $$
@@ -52,7 +52,7 @@ and $N(uv) = N(u)N(v)$ whenever $N(v)$ is central.
 
 *Proof.* $N(uv) = uv\,\alpha(uv) = uv\,\alpha(v)\,\alpha(u) = u\,N(v)\,\alpha(u)$; if $N(v)$ is central it commutes with $\alpha(u)$ and the product is $u\alpha(u)N(v) = N(u)N(v)$.
 
-**Theorem (the square of a signed conjugation).** For every unit $u$,
+**Theorem (the square of a signed conjugation).** For every invertible $u$,
 
 $$
 \boxed{\;c_u^2 = \operatorname{conj}_{N(u)} , \qquad c_u^2(x) = u\alpha(u)\,x\,(u\alpha(u))^{-1}\;} .
@@ -72,7 +72,7 @@ $$
 
 *Proof.* By the square theorem, $c_u^2 = \operatorname{conj}_{N(u)}$, and an inner conjugation is the identity exactly when the conjugating element is central.
 
-**Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so a unit with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, a unit $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
+**Corollary (parity).** If $u$ is fixed by $\alpha$ then $N(u) = u^2$; if $u$ is negated by $\alpha$ then $N(u) = -u^2$; in both cases $N(u)$ is central exactly when $u^2$ is central, so an invertible element with $u^2$ central gives a reflection whatever its parity. In particular every symmetry of $J$, an invertible element $u$ with $u \bullet u = 1$ in the special product, has $N(u) = u\alpha(u)$ with $\alpha(u) = u^{-1}$ when $u$ is even, whence $N(u) = 1$; and if $u$ is odd then $N(u) = -1$; in either case the reflection condition holds.
 
 ### The Relation to the Signed Two-Sided Operator
 
@@ -86,7 +86,7 @@ where $U_u$ is the quadratic representation and $\Sigma^{\alpha}_{u,u}$ is the s
 
 *Proof.* $U_u(\alpha(x)) = u\alpha(x)u$ for the special quadratic representation, and $u = u^{-1}$ turns this into $u\alpha(x)u^{-1} = c_u(x)$. On the other hand $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$ by definition, so $c_u = U_u\circ\alpha$.
 
-**Corollary.** The reflections by the symmetries of $J$ are exactly the symmetrised signed two-sided operators $\Sigma^{\alpha}_{u,u}$ with $u$ a unit and $u^{-1} = u$; these operators lie in the multiplication algebra and are self-adjoint for the trace form of *The Left and Right Multiplication Operators on a Jordan Algebra*, whereas the general reflection $c_u$ with $u \ne u^{-1}$ is an operator on the module $J$ and need not lie in $\operatorname{Mult}(J)$.
+**Corollary.** The reflections by the symmetries of $J$ are exactly the symmetrised signed two-sided operators $\Sigma^{\alpha}_{u,u}$ with $u$ an invertible element and $u^{-1} = u$; these operators lie in the multiplication algebra and are self-adjoint for the trace form of *The Left and Right Multiplication Operators on a Jordan Algebra*, whereas the general reflection $c_u$ with $u \ne u^{-1}$ is an operator on the module $J$ and need not lie in $\operatorname{Mult}(J)$.
 
 ## The Correspondence
 
@@ -99,7 +99,7 @@ $$
 
 *Proof.* Suppose $c_u = c_v$, so $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ for all $x$. Applying this with $x = \alpha^{-1}(z)$, which runs through all $z$ as $x$ does, gives $uzu^{-1} = vzv^{-1}$ for all $z$, that is $u^{-1}v$ commutes with every $z$, so $u^{-1}v$ is central. Conversely if $u^{-1}v$ is central then it commutes with $\alpha(x)$, and $u\alpha(x)u^{-1} = v\alpha(x)v^{-1}$ follows from $v = u(u^{-1}v)$ with $u^{-1}v$ central.
 
-**Corollary.** The correspondence $u \mapsto c_u$ factors through the quotient $A^\times/Z(A)^\times$, and it is injective there; the signed conjugations are in bijection with the **cosets** of the units modulo the central units of $A$.
+**Corollary.** The correspondence $u \mapsto c_u$ factors through the quotient $A^\times/Z(A)^\times$, and it is injective there; the signed conjugations are in bijection with the **cosets** of the invertibles modulo the central units of $A$.
 
 ### The Reflections Among the Signed Conjugations
 
@@ -107,7 +107,7 @@ $$
 $$
 G = \{u \in A^\times : N(u) = u\alpha(u) \in Z(A)\}
 $$
-be the set of units with central twisted square, the **reflection group** of the graded algebra.
+be the set of invertibles with central twisted square, the **reflection group** of the graded algebra.
 
 **Theorem.** $G$ is a subgroup of $A^\times$ containing $Z(A)^\times$, and the reflections are the images $c_u$ of the elements $u \in G$; the reflections are in bijection with the cosets $uZ(A)^\times$ with $u \in G$.
 
@@ -117,7 +117,7 @@ be the set of units with central twisted square, the **reflection group** of the
 $$
 c_u\,c_v = \operatorname{conj}_{u\alpha(v)} ,
 $$
-because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugation is generally not of the form $c_w$: it is a signed conjugation only when $u\alpha(v) = w\alpha(w)w^{-1}$ for some unit $w$, which is not automatic. The reflections therefore generate the inner automorphism group of $J$ without forming a subgroup of it, and the group they generate is the **inner automorphism group** of the graded Jordan algebra.
+because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugation is generally not of the form $c_w$: it is a signed conjugation only when $u\alpha(v) = w\alpha(w)w^{-1}$ for some invertible $w$, which is not automatic. The reflections therefore generate the inner automorphism group of $J$ without forming a subgroup of it, and the group they generate is the **inner automorphism group** of the graded Jordan algebra.
 
 *Proof.* The computation is the one displayed; the failure of closure is shown by the degenerate example below, where $c_uc_v$ has non-central conjugating element $u\alpha(v)$.
 
@@ -139,7 +139,7 @@ because $c_u(c_v(x)) = u\alpha(v)\,x\,\alpha(v)^{-1}u^{-1}$. This inner conjugat
 
 ## Summary
 
-For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, the **signed conjugation** $c_u(x) = u\alpha(x)u^{-1}$ is an automorphism of $J$ for every unit $u$; its square is the inner conjugation by the **twisted square** $N(u) = u\alpha(u)$. The signed conjugation is a **reflection**, an operator of order two, exactly when $N(u)$ is central. The signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections by the cosets with $u$ in the reflection group $G = \{u : N(u) \in Z(A)\}$. The reflections do not form a group: $c_uc_v = \operatorname{conj}_{u\alpha(v)}$, and this is a signed conjugation only rarely; they generate the inner automorphism group. The degenerate case is a unit with non-central twisted square, where $c_u$ is an inner automorphism of infinite order; the unipotent unit $I+E_{12}$ of $M_2(k)$ with $\alpha = \mathrm{id}$ is the model. When $u^{-1} = u$ the reflection is the symmetrised signed two-sided operator $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$, and for the symmetries of $J$ this identification holds. No form, norm or geometric reading is used.
+For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, the **signed conjugation** $c_u(x) = u\alpha(x)u^{-1}$ is an automorphism of $J$ for every invertible $u$; its square is the inner conjugation by the **twisted square** $N(u) = u\alpha(u)$. The signed conjugation is a **reflection**, an operator of order two, exactly when $N(u)$ is central. The signed conjugations are classified by the cosets $uZ(A)^\times$, and the reflections by the cosets with $u$ in the reflection group $G = \{u : N(u) \in Z(A)\}$. The reflections do not form a group: $c_uc_v = \operatorname{conj}_{u\alpha(v)}$, and this is a signed conjugation only rarely; they generate the inner automorphism group. The degenerate case is invertible with non-central twisted square, where $c_u$ is an inner automorphism of infinite order; the unipotent unit $I+E_{12}$ of $M_2(k)$ with $\alpha = \mathrm{id}$ is the model. When $u^{-1} = u$ the reflection is the symmetrised signed two-sided operator $\Sigma^{\alpha}_{u,u} = U_u\circ\alpha$, and for the symmetries of $J$ this identification holds. No form, norm or geometric reading is used.
 
 ## Summary of Notation
 
@@ -148,7 +148,7 @@ For a special graded Jordan algebra $J = A^+$ with grade involution $\alpha$, th
 | $A$ | Associative unital $R$-algebra |
 | $J = A^+$ | Special Jordan algebra, halved product |
 | $\alpha$ | Grade involution, automorphism with $\alpha^2 = \mathrm{id}$ |
-| $c_u(x) = u\alpha(x)u^{-1}$ | Signed conjugation by a unit $u$ |
+| $c_u(x) = u\alpha(x)u^{-1}$ | Signed conjugation by an invertible element $u$ |
 | $N(u) = u\alpha(u)$ | Twisted square |
 | $c_u^2 = \operatorname{conj}_{N(u)}$ | Square of a signed conjugation |
 | $c_u$ reflection | $N(u)$ central |

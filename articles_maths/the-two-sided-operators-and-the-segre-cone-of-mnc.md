@@ -4,7 +4,7 @@
 
 **The question.** An operator of the form $X\mapsto AXB$ is the product of a left and a right multiplication. At $n=2$ the same object is the biquaternion two-sided operator, of which the corpus already has three accounts: the abstract family, the sixteen basis operators in the Peirce frame, and the coefficient matrix computed entry by entry. This article states the construction for $M_{n}(\mathbb{C})$, where the two parameters are $n\times n$ matrices, and computes the set they fill inside the $n^{4}$ dimensions of the endomorphism algebra.
 
-**The result in one line.** The products fill a cone of complex dimension $2n^{2}-1$, closed under multiplication, with group of units $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$; the cone is the set of pure tensors of $M_{n}\otimes M_{\mathrm{opp},n}$ and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
+**The result in one line.** The products fill a cone of complex dimension $2n^{2}-1$, closed under multiplication, with group of invertibles $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$; the cone is the set of pure tensors of $M_{n}\otimes M_{\mathrm{opp},n}$ and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
 
 **The three numbers.** The parametrisation has $2n^{2}$ complex parameters, its generic fibre is a single scaling orbit of dimension one, and the image has dimension $2n^{2}-1$. At $n=2$ this is $8-1=7$, the dimension of the cone of the biquaternion algebra; at $n=3$ it is $17$; at $n=4$ it is $31$.
 
@@ -150,7 +150,7 @@ $$
 
 **The consequence.** The set of attained ranks is the multiplication table of $\{0,1,\dots,n\}$ against itself. At $n=2$ it is $\{0,1,2,4\}$ and the value $3$ is missing; at $n=3$ it is $\{0,1,2,3,4,6,9\}$ and the values $5,7,8$ are missing; at $n=4$ it is $\{0,1,2,3,4,6,8,9,12,16\}$ and the values $5,7,10,11,13,14,15$ are missing. **No product has rank strictly between $n$ and $n^{2}$ unless that number factors through $n$, and in particular no product has a prime rank above $n$.**
 
-**The two ends.** The rank $n^{2}$ is attained exactly by the pairs of units: the product is invertible exactly when both parameters are. The rank one is attained by every pair of rank-one parameters, and more generally by every pair whose ranks multiply to one. The rank zero is the vertex.
+**The two ends.** The rank $n^{2}$ is attained exactly by the pairs of invertibles: the product is invertible exactly when both parameters are. The rank one is attained by every pair of rank-one parameters, and more generally by every pair whose ranks multiply to one. The rank zero is the vertex.
 
 **The comparison with the biquaternion case.** At $n=2$ the four values $0,1,2,4$ are the values of the biquaternion article, and the missing value $3$ is the reason the product set is not a union of determinantal strata of every rank. **The gap at $3$ is the first trace of the general arithmetic of $n$, and it is visible already at the smallest case.**
 
@@ -171,9 +171,9 @@ $$
 $$
 (L_{A}R_{B})^{k}=L_{A^{k}}R_{B^{k}},
 $$
-for $k\ge1$, and the identity operator is $L_{I}R_{I}$. In particular the powers of a two-sided operator are two-sided, and the one-parameter family $\{L_{e^{tX}}R_{e^{tY}}\}$ is a one-parameter subgroup of the group of units.
+for $k\ge1$, and the identity operator is $L_{I}R_{I}$. In particular the powers of a two-sided operator are two-sided, and the one-parameter family $\{L_{e^{tX}}R_{e^{tY}}\}$ is a one-parameter subgroup of the group of invertibles.
 
-### The Group of Units
+### The Group of Invertibles
 
 **Theorem.** The set of invertible products is
 $$
@@ -181,9 +181,9 @@ $$
 $$
 and it is the image of $\mathrm{GL}_{n}(\mathbb{C})\times\mathrm{GL}_{n}(\mathbb{C})$; since the fibre of the parametrisation is the line of scalings it is isomorphic to the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
-*Proof.* The inverse of $L_{A}R_{B}$ is $L_{A^{-1}}R_{B^{-1}}$, by the composition law, so the products of units are invertible and form a group. The pair $(A,B)$ is recovered from the operator by the fibre theorem up to scaling; the map $(A,B)\mapsto L_{A}R_{B}$ restricted to units has kernel $\{(\lambda I,\lambda^{-1}I)\}$ of dimension one, so the group is the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$, the same count as the cone.
+*Proof.* The inverse of $L_{A}R_{B}$ is $L_{A^{-1}}R_{B^{-1}}$, by the composition law, so the products of invertibles are invertible and form a group. The pair $(A,B)$ is recovered from the operator by the fibre theorem up to scaling; the map $(A,B)\mapsto L_{A}R_{B}$ restricted to units has kernel $\{(\lambda I,\lambda^{-1}I)\}$ of dimension one, so the group is the quotient $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$, the same count as the cone.
 
-**The two counts are the same number and different objects.** The cone has dimension $2n^{2}-1$ and contains non-invertible members; the group of units has dimension $2n^{2}-1$ and is open inside the cone. **The cone is the closure of the group of units, and the smaller strata are the degenerations in which one parameter loses rank; this is the precise sense in which the two-sided family is a group that has been allowed to degenerate.**
+**The two counts are the same number and different objects.** The cone has dimension $2n^{2}-1$ and contains non-invertible members; the group of invertibles has dimension $2n^{2}-1$ and is open inside the cone. **The cone is the closure of the group of invertibles, and the smaller strata are the degenerations in which one parameter loses rank; this is the precise sense in which the two-sided family is a group that has been allowed to degenerate.**
 
 **The monoid is not a group and the failure is the zero.** The product set contains the zero operator, which has no inverse, so the family is a monoid with zero. It is regular in the semigroup sense: every member has a generalised inverse, because $L_{A}R_{B}L_{A^{-}}R_{B^{-}}L_{A}R_{B}$ for a reflexive generalised inverse $A^{-}$ of $A$ and $B^{-}$ of $B$.
 
@@ -209,7 +209,7 @@ It is a real subcone of the complex cone, of real dimension $2n^{2}-1$, and it i
 $$
 \operatorname{rank}T=rs\in\{0,1,2,4\},\qquad \operatorname{tr}T=4Q_{t}P_{t},\qquad \det T=\langle\tilde Q\rangle_{\natural}^{2}\langle\tilde Q_2\rangle_{\natural}^{2},
 $$
-the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and the general formula $\det T=(\det A\det B)^{2}$. The dimension of the cone is $7$, its projectivisation is $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of dimension six, and the group of units is $(\mathrm{GL}_{2}\times\mathrm{GL}_{2})/\mathbb{C}^{\times}$, of complex dimension $7$.
+the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and the general formula $\det T=(\det A\det B)^{2}$. The dimension of the cone is $7$, its projectivisation is $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of dimension six, and the group of invertibles is $(\mathrm{GL}_{2}\times\mathrm{GL}_{2})/\mathbb{C}^{\times}$, of complex dimension $7$.
 
 **What is the same and what is not.** The cone, the fibre, the composition law, the rank formula, the trace formula and the determinant formula are the same statements at every $n$. The biquaternion articles add three things that the general case does not see: the Clifford frame and the sixteen basis operators, the gauge of the Peirce frame, and the two conjugate-linear involutions of the algebra. **The general article owns the counts; the biquaternion article owns the frame.**
 
@@ -217,7 +217,7 @@ the last by $\det\mathsf M_{2}(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and 
 
 The two-sided operator $L_{A}R_{B}(X)=AXB$ has the matrix $B^{\mathsf T}\otimes A$, is bilinear in the pair, and is constant on the scaling orbits $(\lambda A,\lambda^{-1}B)$. The products fill a closed algebraic cone of complex dimension $2n^{2}-1$ inside the $n^{4}$ dimensions of the endomorphism algebra; the cone is the set of pure tensors of $M_{n}\otimes M_{\mathrm{opp},n}$, and its projectivisation is the Segre variety $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$.
 
-The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of units is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
+The rank of a product is the product of the ranks, so the attained ranks are the products $rs$ with $0\le r,s\le n$; the trace is the product of the traces and the determinant is the $n$-th power of the product of the determinants. The products compose by $L_{A}R_{B}L_{C}R_{D}=L_{AC}R_{DB}$, so the family is a monoid with zero whose group of invertibles is $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$, of complex dimension $2n^{2}-1$.
 
 The two one-sided copies are the two rulings of the cone and meet in the scalars; the two-sided operator $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ is a real subcone of real dimension $2n^{2}-1$; the diagonal $\{L_{A}R_{A}\}$ is a complex subcone of complex dimension $n^{2}$. **The cone is not a subspace and not a group, and every property of the two-sided operators follows from the one fact that its members are the pure tensors of a tensor square.**
 
@@ -232,7 +232,7 @@ The two one-sided copies are the two rulings of the cone and meet in the scalars
 | $2n^{2}-1$ | the complex dimension of the cone |
 | $\mathbb{P}^{n^{2}-1}\times\mathbb{P}^{n^{2}-1}$ | the Segre variety of the projectivised cone |
 | $\mathrm{Sd}_{A}=L_{A}R_{A^{*}}$ | the two-sided operator |
-| $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$ | the group of units of the monoid |
+| $(\mathrm{GL}_{n}\times\mathrm{GL}_{n})/\mathbb{C}^{\times}$ | the group of invertibles of the monoid |
 | $\ell$ | the length, treated in the companion article |
 
 ## Further Reading

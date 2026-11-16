@@ -248,7 +248,7 @@ $$
 \bar Q = q - jq' , \qquad j^2 = +1 .
 $$
 
-**The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{spl}}$.** Only the quaternion sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the two sets of units:
+**The quaternions $\mathbb{H}$ and the split-quaternions $\mathbb{H}_{\mathrm{spl}}$.** Only the quaternion sign has a sense, the coefficients being real and the conjugation intrinsic to the quaternion factor, and the same formula is read on the basis of each algebra:
 
 $$
 \tilde q^{\natural} = q_te_t - q_x\vec e_x - q_y\vec e_y - q_z\vec e_z , \qquad \vec e_k^2 = -e_t \ (\mathbb{H}) , \qquad \vec e_x^2 = -e_t , \ \vec e_y^2 = \vec e_z^2 = +e_t \ (\mathbb{H}_{\mathrm{spl}}) .
@@ -327,7 +327,7 @@ The conventions below are those used throughout the corpus.
 | $V^{\otimes n}, S^n V, \Lambda^n V$ | Tensor, symmetric and exterior powers |
 | $\langle v,w\rangle, \mathfrak{Q}(v), \lVert x\rVert$ | Bilinear form, quadratic form, norm |
 | $P$, $N$, $H$, $\mathrm{Kr}$ | The letters of the four forms and algebraic norms of the biquaternion layer — plain, quaternionic, Hermitian and Krein — each naming the form with two arguments and the norm with one; $P$ and not $B$, which is the complex modulus of the vector part and the right annihilator (*Product and Form Conventions*, §*The Form Convention*) |
-| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$; only the $N$ pair is the partition into units and non-units, and *regular* unqualified is spectral, $B^{2}\neq0$ (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*) |
+| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$; only the $N$ pair is the partition into the invertibles and non-invertibles, and *regular* unqualified is spectral, $B^{2}\neq0$ (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*Regular and Degenerate Biquaternions*) |
 | $\mathfrak{Q}$ | The quadratic form of a quadratic space, in Fraktur so that the plain $q$ and $Q$ stay with the elements |
 | $\mathcal{Q}$ | The Lie or null quadric, in calligraphic, as in $\mathcal{Q}^{n+1}$ |
 | $\bullet$ | The symmetrised (Jordan) product, $x \bullet y = \tfrac{1}{2}(xy + yx)$, and, with the slot subscripts ${}_{*}$, ${}_{\natural}$ and ${}_{\natural*}$, the four **symmetric products** of *Product and Form Conventions*, §*The Twelve Products and Their Names*; the circle $\circ$ is reserved for the composition of maps |

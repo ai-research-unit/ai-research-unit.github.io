@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ carries two group structures and one Lie algebra structure that interlock: the **group of units** ${\mathbb{H}_{\mathrm{spl}}}^\times = GL_2(\mathbb{R})$, the **norm-one group** $U = \{N = 1\} \cong SL_2(\mathbb{R})$, and the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ of traceless elements under the commutator. The link is the exponential map, which we compute in closed form and study for its group law, its kernel and its range. Because the split-quaternion norm is indefinite, the exponential splits into an elliptic part from the directions of square $-1$ and a hyperbolic part from the directions of square $+1$.
+The split-quaternion algebra $\mathbb{H}_{\mathrm{spl}} \cong M_2(\mathbb{R})$ carries two group structures and one Lie algebra structure that interlock: the **group of invertibles** ${\mathbb{H}_{\mathrm{spl}}}^\times = GL_2(\mathbb{R})$, the **norm-one group** $U = \{N = 1\} \cong SL_2(\mathbb{R})$, and the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ of traceless elements under the commutator. The link is the exponential map, which we compute in closed form and study for its group law, its kernel and its range. Because the split-quaternion norm is indefinite, the exponential splits into an elliptic part from the directions of square $-1$ and a hyperbolic part from the directions of square $+1$.
 
-This article owns the exponential and the Lie group structure: the algebra as a Lie algebra, the closed form of the exponential, the group of units, the norm-one group and its identification with $SL_2(\mathbb{R})$, the elliptic and hyperbolic subgroups, and the polar and exponential parametrisation. It relies on *Split-Quaternion Rotations and the Lorentz Group* for the Lorentz action, on *Split-Quaternion Automorphisms and Derivations* for the derivations. No physics is invoked.
+This article owns the exponential and the Lie group structure: the algebra as a Lie algebra, the closed form of the exponential, the group of invertibles, the norm-one group and its identification with $SL_2(\mathbb{R})$, the elliptic and hyperbolic subgroups, and the polar and exponential parametrisation. It relies on *Split-Quaternion Rotations and the Lorentz Group* for the Lorentz action, on *Split-Quaternion Automorphisms and Derivations* for the derivations. No physics is invoked.
 
 ## The Algebra as a Lie Algebra
 
@@ -27,9 +27,9 @@ so $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The bracket vanis
 
 **Proof.** The brackets are the multiplication table of the algebra. If $\tilde q_1, \tilde q_2 \in V$ then $\tilde q_1 \tilde q_2 + \tilde q_2\tilde q_1$ is scalar and equal to $-2\langle\tilde q_1,\tilde q_2\rangle$, so $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ has zero trace and lies in $V$; the vanishing statements on $S$ and on each $\mathbb{C}_{\mathrm{spl},k}$ are the commutativity of the scalar line and of the plane. Since $V$ is the adjoint module of $\mathrm{SL}_2(\mathbb{R})$ and is irreducible, the space of invariant symmetric bilinear forms on it is one-dimensional, so $\langle\cdot,\cdot\rangle|_V$ and the Killing form differ by a nonzero scalar. Invariance of $\langle\cdot,\cdot\rangle$ follows from the multiplicativity of $\langle\cdot\rangle_{\natural}$ along the one-parameter automorphism groups $\operatorname{Ad}_{\exp(tw)} = \exp(t\,\mathrm{ad}_w)$: differentiating $\langle\exp(t\,\mathrm{ad}_w)\tilde q_1, \exp(t\,\mathrm{ad}_w)\tilde q_2\rangle = \langle\tilde q_1,\tilde q_2\rangle$ at $t=0$ gives $\langle\mathrm{ad}_w \tilde q_1,\tilde q_2\rangle + \langle\tilde q_1,\mathrm{ad}_w \tilde q_2\rangle = 0$.
 
-## The Group of Units
+## The Group of Invertibles
 
-**Theorem.** The units of $\mathbb{H}_{\mathrm{spl}}$ are the elements of nonzero norm,
+**Theorem.** The invertibles of $\mathbb{H}_{\mathrm{spl}}$ are the elements of nonzero norm,
 
 $$
 {\mathbb{H}_{\mathrm{spl}}}^\times = \{\, \tilde q : \langle\tilde q\rangle_{\natural} \neq 0 \,\} \cong GL_2(\mathbb{R}),
@@ -37,7 +37,7 @@ $$
 
 with inverse $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$. The group has exactly **two connected components**, $\{N > 0\}$ and $\{N < 0\}$, the sign of the split-quaternion norm separating them.
 
-**Proof.** $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ shows that $\langle\tilde q\rangle_{\natural}\neq0$ implies invertibility, and $\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ shows that the non-units are exactly the nonzero null elements. The continuous surjection $N : {\mathbb{H}_{\mathrm{spl}}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
+**Proof.** $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ shows that $\langle\tilde q\rangle_{\natural}\neq0$ implies invertibility, and $\langle\tilde q_1 \tilde q_2\rangle_{\natural} = \langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$ shows that the non-invertibles are exactly the nonzero null elements. The continuous surjection $N : {\mathbb{H}_{\mathrm{spl}}}^\times \to \mathbb{R}^\times$ maps onto the two components of $\mathbb{R}^\times$, and the level set $\{N>0\}$ is connected (it retracts onto $U$), as is $\{N<0\}$; so the group has two components.
 
 The identity component $\{N>0\} \cong GL_2^+(\mathbb{R})$ is the part of the group acting by the orientation-preserving half of the Lorentz action; the component $\{N<0\}$ acts by Lorentz transformations reversing time orientation, as in *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -69,7 +69,7 @@ $$
 
 **Proof.** The scalar $q_t$ commutes with $\vec v$, so $\exp(\tilde q) = \exp(q_t) \exp(\vec v)$, and $\vec v^2 = -\langle \vec v\rangle_{\natural} = -\mu$ is scalar. Hence $\vec v^{2k} = (-1)^k \mu^k$ and $\vec v^{2k+1} = (-1)^k \mu^k \vec v$, and the series splits into the even and odd parts $\sum_k \frac{(-1)^k\mu^k}{(2k)!}$ and $\vec v \sum_k \frac{(-1)^k\mu^k}{(2k+1)!}$. These are the power series of $\cos$ and $\sin$ when $\mu > 0$, of $\cosh$ and $\sinh$ when $\mu < 0$ (after factoring $\sqrt{|\mu|}$), and terminate as $1$ and $\vec v$ when $\mu = 0$.
 
-**Corollary.** The split-quaternion norm of the exponential is $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, so the exponential lands in the component $\{N > 0\}$ of the group of units, and $\exp(S) = \mathbb{R}_{>0}$.
+**Corollary.** The split-quaternion norm of the exponential is $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, so the exponential lands in the component $\{N > 0\}$ of the group of invertibles, and $\exp(S) = \mathbb{R}_{>0}$.
 
 **Proof.** The multiplicativity $\langle ab\rangle_{\natural} = \langle a\rangle_{\natural}\langle b\rangle_{\natural}$ together with $\langle \exp(q_t)\rangle_{\natural} = \exp(2q_t)$ for a scalar reduce the claim to $\langle \exp(\vec v)\rangle_{\natural} = 1$ for $\vec v \in V$. The element $\vec v$ generates the commutative two-dimensional subalgebra $\operatorname{span}\{1, \vec v\}$ with $\vec v^2 = -\langle \vec v\rangle_{\natural}$; writing $\lambda = -\langle \vec v\rangle_{\natural}$, the exponential in this subalgebra is $\exp(\vec v) = \cosh\sqrt\lambda + \frac{\sinh\sqrt\lambda}{\sqrt\lambda}\,\vec v$ for $\lambda > 0$, $\exp(\vec v) = \cos\sqrt{-\lambda} + \frac{\sin\sqrt{-\lambda}}{\sqrt{-\lambda}}\,\vec v$ for $\lambda < 0$, and $\exp(\vec v) = 1 + \vec v$ for $\lambda = 0$; in each case $\langle \exp(\vec v)\rangle_{\natural} = 1$ by the identity $\langle a + b\vec v\rangle_{\natural} = a^2 - b^2\lambda$.
 
@@ -81,13 +81,13 @@ $$
 \log\bigl(\exp(\tilde q_1) \exp(\tilde q_2)\bigr) = \tilde q_1 + \tilde q_2 + \tfrac{1}{2}[\tilde q_1,\tilde q_2] + \tfrac{1}{12}\bigl([\tilde q_1,[\tilde q_1,\tilde q_2]] - [\tilde q_2,[\tilde q_2,\tilde q_1]]\bigr) + \cdots,
 $$
 
-a series in the free Lie algebra on $\tilde q_1,\tilde q_2$, convergent near the origin. Consequently the exponential is a local diffeomorphism from a neighbourhood of $0$ on the algebra to a neighbourhood of $1$ in the group of units, with local inverse the logarithm.
+a series in the free Lie algebra on $\tilde q_1,\tilde q_2$, convergent near the origin. Consequently the exponential is a local diffeomorphism from a neighbourhood of $0$ on the algebra to a neighbourhood of $1$ in the group of invertibles, with local inverse the logarithm.
 
 **Example.** For $\tilde q_1 = \vec e_x$ and $\tilde q_2 = \vec e_y$ one has $\exp(\vec e_x)\exp(\vec e_y) \neq \exp(\vec e_x+\vec e_y)$, because $[\vec e_x,\vec e_y] = 2\vec e_z \neq 0$; indeed $\log(\exp(\vec e_x)\exp(\vec e_y)) - (\vec e_x+\vec e_y)$ begins at second order with $\tfrac12[\vec e_x,\vec e_y] = \vec e_z$.
 
 ## Surjectivity of the Exponential
 
-**Theorem.** The exponential is **not** surjective onto the group of units. A unit $\tilde u$ is an exponential if and only if it has a real logarithm, which holds exactly when each negative real root of the characteristic polynomial of $\tilde u$ occurs an even number of times; since that polynomial has degree two, a unit with a negative real root is an exponential precisely when the root is a double root.
+**Theorem.** The exponential is **not** surjective onto the group of invertibles. An invertible element $\tilde u$ is an exponential if and only if it has a real logarithm, which holds exactly when each negative real root of the characteristic polynomial of $\tilde u$ occurs an even number of times; since that polynomial has degree two, an invertible element with a negative real root is an exponential precisely when the root is a double root.
 
 **Proof.** This is the standard real-logarithm criterion for $2\times2$ matrices: $A = \exp(X)$ for real $X$ iff $A$ is invertible and each elementary divisor of $A$ belonging to a negative real eigenvalue occurs an even number of times.
 
@@ -119,7 +119,7 @@ $$
 
 The positive scalar $\rho$ carries the scale, and the unit $\tilde u$ carries the direction; the unit $\tilde u$ is in $\mathrm{U}$ when $\langle\tilde q\rangle_{\natural}>0$ and in the component $\{N=-1\}$ when $\langle\tilde q\rangle_{\natural}<0$.
 
-**Proof.** For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar decomposition is the multiplicative form of the decomposition of the group of units into its two components.
+**Proof.** For $\langle\tilde q\rangle_{\natural}>0$, $\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$ has norm $1$; for $\langle\tilde q\rangle_{\natural}<0$, $\tilde q/\sqrt{-\langle\tilde q\rangle_{\natural}}$ has norm $-1$. The polar decomposition is the multiplicative form of the decomposition of the group of invertibles into its two components.
 
 **Theorem (exponential parametrisation).** Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_t + \vec v)$ with $q_t \in \mathbb{R}$ and $\vec v \in V$; the norm-one elements $\mathrm{U}$ that lie in the image are $\exp(\vec v)$ with $\vec v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $\langle \vec v\rangle_{\natural}$: $\langle \vec v\rangle_{\natural} > 0$ gives the compact part and $\langle \vec v\rangle_{\natural} < 0$ the non-compact part.
 
@@ -135,7 +135,7 @@ U = \{\, \tilde q : \langle\tilde q\rangle_{\natural} = 1 \,\} = \mathrm{SL}_2(\
 \;}
 $$
 
-is a connected three-dimensional Lie group, a double cover of the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group by the adjoint action of *Split-Quaternion Rotations and the Lorentz Group*; its Lie algebra is $\mathrm{SL}_2(\mathbb{R}) = V$. The other component of the group of units is the coset $\{N = -1\} = \vec e_y U$ of $U$, so any negative-norm unit is a root of $-1$ times a norm-one unit.
+is a connected three-dimensional Lie group, a double cover of the identity component $\mathrm{SO}^{+}(2,1)$ of the Lorentz group by the adjoint action of *Split-Quaternion Rotations and the Lorentz Group*; its Lie algebra is $\mathrm{SL}_2(\mathbb{R}) = V$. The other component of the group of invertibles is the coset $\{N = -1\} = \vec e_y U$ of $U$, so any negative-norm unit is a root of $-1$ times a norm-one unit.
 
 **Proof.** The norm-one group is the kernel of the continuous norm homomorphism on the component $\{N>0\}$, and $\{N>0\}$ retracts onto $U$ by $\tilde q \mapsto \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$; hence $U$ is connected. The identification with the double cover of $\mathrm{SO}^{+}(2,1)$, the Lie algebra $\mathrm{SL}_2(\mathbb{R}) = V$, and the coset statement $\{N=-1\} = \vec e_y U$ (since $\langle \vec e_y \tilde u\rangle_{\natural} = \langle \vec e_y\rangle_{\natural}\langle \tilde u\rangle_{\natural} = (-1)\cdot 1 = -1$) are as above.
 
@@ -159,7 +159,7 @@ $$
 
 a non-compact group isomorphic to $\mathbb{R}$, the **hyperbolic** subgroup. The prototypes are $\exp(\theta \vec e_y)$ and $\exp(\theta \vec e_z)$, whose adjoint actions are boosts of the planes $\operatorname{span}\{\vec e_x,\vec e_z\}$ and $\operatorname{span}\{\vec e_x,\vec e_y\}$ of signature $(1,1)$.
 
-**Terminology (hyperbolic versors).** The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \zeta\sin\theta$, built on a root of $-1$, is a **versor**, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a **hyperbolic versor**. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in *List of Algebras by Dimension*; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.
+**Terminology (hyperbolic versors).** The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \zeta\sin\theta$, built on a root of $-1$, is a **versor**, and $\cosh t + \eta\sinh t$, the same expression built on an element of square $+1$, is a **hyperbolic versor**. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in *List of Algebras by Dimension*; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.
 
 **The parabolic directions.** For $\vec v$ null ($\vec v^2 = 0$, $\vec v \neq 0$), the closed form gives $\exp(\vec v) = 1 + \vec v$, a unipotent element; the exponentials of the null directions form the one-parameter unipotent subgroups conjugate to the translations of the affine line.
 
@@ -167,7 +167,7 @@ These are the elliptic, hyperbolic and parabolic one-parameter subgroups of the 
 
 ## The Lie Algebra and the Lorentz Group
 
-The Lie algebra of the group of units is $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{GL}_2(\mathbb{R})$; the Lie algebra of $U = SL_2(\mathbb{R})$ is the traceless part $V \cong \mathrm{SL}_2(\mathbb{R})$; and the adjoint action on $V$ identifies these with the Lorentz Lie algebra:
+The Lie algebra of the group of invertibles is $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{GL}_2(\mathbb{R})$; the Lie algebra of $U = SL_2(\mathbb{R})$ is the traceless part $V \cong \mathrm{SL}_2(\mathbb{R})$; and the adjoint action on $V$ identifies these with the Lorentz Lie algebra:
 
 $$
 \operatorname{Lie}(U) = V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1),
@@ -177,11 +177,11 @@ with the bracket of the proposition above. The exponential $\exp : V \to U$ is t
 
 ## Comparison with the Biquaternion Case
 
-The biquaternion article *Biquaternion Lie Group and Exponential Structure* computes the same objects for $\mathbb{B} = M_2(\mathbb{C})$: the group of units $GL(2,\mathbb{C})$, the retraction onto $\mathrm{U}(2)$, the norm-one group $SL(2,\mathbb{C})$ retracting onto $SU(2)$, the closed form of the exponential, its kernel, and the elliptic and hyperbolic subgroups of the Lorentz group $SO(3,1)$. The split-quaternion case is the real, indefinite analogue. The group of units is $GL_2(\mathbb{R})$ rather than $GL(2,\mathbb{C})$, with **two** components instead of one; the norm-one group is $SL_2(\mathbb{R})$, which retracts onto the circle $SO(2)$ and has infinite cyclic fundamental group, in place of the simply connected sphere $SU(2)$; and the Lorentz group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ in place of the six-dimensional $\mathrm{SO}^{+}(3,1)$. The closed form is the same series, with the sign of $\langle \vec v\rangle_{\natural}$ deciding between the trigonometric and the hyperbolic branch, the split signature producing both branches where the definite case produces only the elliptic one. Nothing biquaternion-specific — the central imaginary unit $i$, the $*$-unitary retraction, the complex parametrisation — is imported.
+The biquaternion article *Biquaternion Lie Group and Exponential Structure* computes the same objects for $\mathbb{B} = M_2(\mathbb{C})$: the group of invertibles $GL(2,\mathbb{C})$, the retraction onto $\mathrm{U}(2)$, the norm-one group $SL(2,\mathbb{C})$ retracting onto $SU(2)$, the closed form of the exponential, its kernel, and the elliptic and hyperbolic subgroups of the Lorentz group $SO(3,1)$. The split-quaternion case is the real, indefinite analogue. The group of invertibles is $GL_2(\mathbb{R})$ rather than $GL(2,\mathbb{C})$, with **two** components instead of one; the norm-one group is $SL_2(\mathbb{R})$, which retracts onto the circle $SO(2)$ and has infinite cyclic fundamental group, in place of the simply connected sphere $SU(2)$; and the Lorentz group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ in place of the six-dimensional $\mathrm{SO}^{+}(3,1)$. The closed form is the same series, with the sign of $\langle \vec v\rangle_{\natural}$ deciding between the trigonometric and the hyperbolic branch, the split signature producing both branches where the definite case produces only the elliptic one. Nothing biquaternion-specific — the central imaginary unit $i$, the $*$-unitary retraction, the complex parametrisation — is imported.
 
 ## Summary
 
-The commutator makes $\mathbb{H}_{\mathrm{spl}}$ a Lie algebra with centre $S$ and associated Lie algebra $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The group of units is ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N \neq 0\} \cong GL_2(\mathbb{R})$, with two components $\{N>0\}$ and $\{N<0\}$; the norm-one group is $U = \{N=1\} \cong SL_2(\mathbb{R})$, a connected three-dimensional group that double-covers $\mathrm{SO}^{+}(2,1)$, with the other component the coset $\vec e_y U$.
+The commutator makes $\mathbb{H}_{\mathrm{spl}}$ a Lie algebra with centre $S$ and associated Lie algebra $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The group of invertibles is ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N \neq 0\} \cong GL_2(\mathbb{R})$, with two components $\{N>0\}$ and $\{N<0\}$; the norm-one group is $U = \{N=1\} \cong SL_2(\mathbb{R})$, a connected three-dimensional group that double-covers $\mathrm{SO}^{+}(2,1)$, with the other component the coset $\vec e_y U$.
 
 The exponential has the closed form displayed above, with the sign of $\langle \vec v\rangle_{\natural}$ selecting the trigonometric branch ($\langle \vec v\rangle_{\natural}>0$), the hyperbolic branch ($\langle \vec v\rangle_{\natural}<0$) or the terminating branch ($\langle \vec v\rangle_{\natural}=0$); it satisfies $\langle\exp(\tilde q)\rangle_{\natural} = \exp(2q_t)$, so it lands in the identity component, it is a local diffeomorphism, and it obeys the Baker–Campbell–Hausdorff law rather than additivity. It is not surjective, its image being the invertible matrices with no negative real eigenvalue of odd multiplicity, and its kernel is $0$ together with the $2\pi$-multiples of the roots of $-1$. Every nonzero element has the polar form $\rho\tilde u$, and the norm-one elements in the image of the exponential are $\exp(\vec v)$ with $\vec v \in V$. The one-parameter subgroups are elliptic (compact, from roots of $-1$), hyperbolic (non-compact, from roots of $+1$ in $V$) and parabolic (unipotent, from the null directions). The comparison with $\mathbb{B}$ is the comparison of a real indefinite form with a complex definite one.
 
@@ -192,9 +192,9 @@ The exponential has the closed form displayed above, with the sign of $\langle \
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, $\cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ | the commutator making the algebra a Lie algebra | this article |
 | $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | the traceless elements under the bracket | *Split-Quaternion Scalar and Vector Subspaces* |
-| ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N \neq 0\}$ | the group of units, $\cong GL_2(\mathbb{R})$, two components | this article |
+| ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N \neq 0\}$ | the group of invertibles, $\cong GL_2(\mathbb{R})$, two components | this article |
 | $U = \{N=1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group | *Split-Quaternion Norm and Invertibility* |
-| $\vec e_y U = \{N=-1\}$ | the other component of the group of units | this article |
+| $\vec e_y U = \{N=-1\}$ | the other component of the group of invertibles | this article |
 | $\exp(\tilde q) = \sum \tilde q^k/k!$ | the exponential, with the closed form above | this article |
 | $\tilde q = q_t + \vec v$, $\mu = \langle \vec v\rangle_{\natural}$ | the scalar–vector split and the sign parameter | this article |
 | $\ker\exp$ | $\{2\pi k\vec\zeta : k\in\mathbb{Z}, \vec\zeta^2=-1\} \cup \{0\}$ | this article |

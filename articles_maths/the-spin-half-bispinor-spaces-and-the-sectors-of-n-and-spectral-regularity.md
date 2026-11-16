@@ -17,7 +17,7 @@ $N(X_++X_-)=2B(X_+,X_-)$, so the first index of the sector is decided by whether
 $B^{2}$ separately. The two indices therefore come from two different places, which is why the four combinations all occur.
 
 The predicates, the sectors and the strata are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*, and the definitions
-are repeated below. The spaces themselves are *Introduction to the Spin-Half Bispinors*. The two predicates taken one at a time are *The
+are repeated below. The spaces themselves are *Introduction to the Spin-Half Bispinors Spaces*. The two predicates taken one at a time are *The
 Spin-Half Bispinors and N Norm Regularity* and *The Spin-Half Bispinors and Spectral Regularity*.
 
 Nothing below is a statement of physics. The elements are written $X,Y$. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the
@@ -336,7 +336,7 @@ it. The plane is the case in which one of the two components is absent, and the 
 
 ## The Axis Does Not Matter
 
-**Theorem (the pattern is the same at every axis).** Let $\vec u_{\mathrm r}'$ be a second unit real axis and let $u$ be a unit with
+**Theorem (the pattern is the same at every axis).** Let $\vec u_{\mathrm r}'$ be a second unit real axis and let $u$ be an invertible element with
 $\operatorname{Ad}_u(\vec u_{\mathrm r})=\vec u_{\mathrm r}'$. Then
 
 $$
@@ -422,7 +422,7 @@ axis.
 
 ## Further Reading
 
-- [Introduction to the Spin-Half Bispinors](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of
+- [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the family of
 bispinor spaces.
 - [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the plane and
 of the ideals, and the pairing of the two halves.

@@ -23,7 +23,7 @@ $$
 
 *Proof.* If $rm=0$ and $sn=0$ with $r,s \neq 0$, then $rs(m+n)=s(rm)+r(sn)=0$ and $rs \neq 0$ because $R$ is a domain, so $m+n \in M_{\mathrm{tor}}$; and $r(am)=a(rm)=0$ for $a \in R$. For the quotient, if the class of $m$ is torsion then $rm \in M_{\mathrm{tor}}$, so $s(rm)=0$ for some $s \neq 0$, whence $(sr)m=0$ and $m \in M_{\mathrm{tor}}$.
 
-The domain hypothesis is exactly what fails over a general commutative ring: in $\mathbb{Z}/6\mathbb{Z}$ as a module over itself, the elements $2$ and $3$ are torsion but their sum $5$ is a unit and is not, as noted. The module $M$ is **torsion-free** if $M_{\mathrm{tor}}=0$ and **torsion** if $M=M_{\mathrm{tor}}$; the quotient $M/M_{\mathrm{tor}}$ is always torsion-free.
+The domain hypothesis is exactly what fails over a general commutative ring: in $\mathbb{Z}/6\mathbb{Z}$ as a module over itself, the elements $2$ and $3$ are torsion but their sum $5$ is invertible and is not, as noted. The module $M$ is **torsion-free** if $M_{\mathrm{tor}}=0$ and **torsion** if $M=M_{\mathrm{tor}}$; the quotient $M/M_{\mathrm{tor}}$ is always torsion-free.
 
 ### Annihilators and Cyclic Modules
 
@@ -35,7 +35,7 @@ Both are ideals, and $\operatorname{Ann}(M)$ is the kernel of the ring homomorph
 
 *Proof.* (i) The first isomorphism theorem applied to $R \to Rm$, $r \mapsto rm$, whose kernel is $\operatorname{Ann}(m)$. (ii) $R \cong Rm$ exactly when the kernel is zero. (iii) If $M=Rm_1+\cdots+Rm_k$ and $a_i m_i=0$ with $a_i \neq 0$, then $a_1\cdots a_k$ annihilates every generator, hence $M$.
 
-So cyclic modules over a principal ideal domain are exactly the modules $R/(a)$, with $a$ well defined up to multiplication by a unit, and the torsion cyclic modules are those with $a \neq 0$. The unit ambiguity is unavoidable and is the reason the invariant factors below are unique only up to units.
+So cyclic modules over a principal ideal domain are exactly the modules $R/(a)$, with $a$ well defined up to multiplication by an invertible element, and the torsion cyclic modules are those with $a \neq 0$. The unit ambiguity is unavoidable and is the reason the invariant factors below are unique only up to invertibles.
 
 ### Primary Components
 
@@ -49,7 +49,7 @@ equivalently the set of elements annihilated by some power of $p$.
 
 **Proposition.** Each $M_p$ is a submodule; if $p \neq q$ are distinct primes then $M_p \cap M_q=0$; and if $M$ is a finitely generated torsion module then only finitely many $M_p$ are nonzero and $M=\bigoplus_p M_p$.
 
-*Proof.* That $M_p$ is a submodule and the intersection statement are immediate from unique factorisation: an element of $M_p\cap M_q$ is annihilated by coprime powers of $p$ and $q$, hence by a unit, hence is zero. For the sum, if $M$ is torsion and finitely generated, its annihilator $(a)$ is nonzero; the primes with $M_p \neq 0$ divide $a$, so there are finitely many. That every torsion element lies in the sum uses Bézout: if $rm=0$ and $r=\prod p_i^{n_i}$, the Chinese remainder theorem gives $m=\sum_i m_i$ with $p_i^{n_i}m_i=0$, so $m_i \in M_{p_i}$.
+*Proof.* That $M_p$ is a submodule and the intersection statement are immediate from unique factorisation: an element of $M_p\cap M_q$ is annihilated by coprime powers of $p$ and $q$, hence by an invertible element, hence is zero. For the sum, if $M$ is torsion and finitely generated, its annihilator $(a)$ is nonzero; the primes with $M_p \neq 0$ divide $a$, so there are finitely many. That every torsion element lies in the sum uses Bézout: if $rm=0$ and $r=\prod p_i^{n_i}$, the Chinese remainder theorem gives $m=\sum_i m_i$ with $p_i^{n_i}m_i=0$, so $m_i \in M_{p_i}$.
 
 The decomposition into primary components is the first step of the structure theorem: it separates the primes, and within one prime the classification is that of a finite abelian $p$-group.
 
@@ -89,13 +89,13 @@ $$
 \boxed{\;M \cong R^r \oplus R/(d_1) \oplus \cdots \oplus R/(d_k)\;}
 $$
 
-for a unique $r \ge 0$ and a unique finite sequence of nonzero non-units $d_1,\dots,d_k \in R$ with
+for a unique $r \ge 0$ and a unique finite sequence of nonzero non-invertibles $d_1,\dots,d_k \in R$ with
 
 $$
 \boxed{\;d_1 \mid d_2 \mid \cdots \mid d_k\;} .
 $$
 
-The sequence of $d_i$ is unique up to multiplication of each $d_i$ by a unit of $R$. The integer $r$ is the **free rank**, or **Betti number**, of $M$, and the $d_i$ are its **invariant factors**. In particular $M$ is the direct sum of a free module and a torsion module, and the torsion part is a finite direct sum of cyclic torsion modules.
+The sequence of $d_i$ is unique up to multiplication of each $d_i$ by an invertible element of $R$. The integer $r$ is the **free rank**, or **Betti number**, of $M$, and the $d_i$ are its **invariant factors**. In particular $M$ is the direct sum of a free module and a torsion module, and the torsion part is a finite direct sum of cyclic torsion modules.
 
 The uniqueness statement has two parts: the number $r$ of free summands and the multiset of principal ideals $(d_i)$. Both are recovered from invariants of $M$ without reference to a presentation, and that is the content of the uniqueness proof.
 
@@ -113,7 +113,7 @@ $$
 M \cong R^n/K \cong R^n / \langle d_1 e_1,\dots,d_m e_m\rangle \cong R/(d_1)\oplus\cdots\oplus R/(d_m)\oplus R^{n-m}.
 $$
 
-Discarding the $d_i$ that are units, for which $R/(d_i)=0$, and taking $r=n-m$ gives the decomposition of the theorem, and the divisibility of the surviving diagonal entries is inherited from the Smith form. This proves existence.
+Discarding the $d_i$ that are invertible, for which $R/(d_i)=0$, and taking $r=n-m$ gives the decomposition of the theorem, and the divisibility of the surviving diagonal entries is inherited from the Smith form. This proves existence.
 
 ### Uniqueness
 
@@ -161,7 +161,7 @@ $$
 M \cong R^r \oplus \bigoplus_{p}\ \bigoplus_{j} R/(p^{e_{p,j}}), \qquad e_{p,1} \le e_{p,2} \le \cdots,
 $$
 
-where the prime powers $p^{e_{p,j}}$ are the **elementary divisors** of $M$. They are unique up to units and reordering. The invariant factors are recovered from them prime by prime: for each $p$ arrange the exponents $e_{p,j}$ in nondecreasing order and pad the list on the left with zeros to length $k$, where $k$ is the largest number of primary summands for any single prime; the $i$-th invariant factor is
+where the prime powers $p^{e_{p,j}}$ are the **elementary divisors** of $M$. They are unique up to invertibles and reordering. The invariant factors are recovered from them prime by prime: for each $p$ arrange the exponents $e_{p,j}$ in nondecreasing order and pad the list on the left with zeros to length $k$, where $k$ is the largest number of primary summands for any single prime; the $i$-th invariant factor is
 
 $$
 d_i=\prod_p p^{\,e_{p,i}},
@@ -173,7 +173,7 @@ with the convention $p^0=1$. Padding on the left is what keeps each list nondecr
 
 ### Elementary Operations
 
-Let $A$ be an $n \times m$ matrix over $R$. The **elementary row operations** are: interchange two rows; add a multiple of one row to another; multiply a row by a unit of $R$. The elementary column operations are the same for columns. Row operations are exactly left multiplication by elementary matrices and column operations are exactly right multiplication by them; these matrices are invertible, so equivalence by elementary operations is the same relation as equivalence by left and right multiplication by invertible matrices. Over a general principal ideal domain the Smith form still exists, by an argument that uses Bézout's identity in place of Euclidean division.
+Let $A$ be an $n \times m$ matrix over $R$. The **elementary row operations** are: interchange two rows; add a multiple of one row to another; multiply a row by an invertible element of $R$. The elementary column operations are the same for columns. Row operations are exactly left multiplication by elementary matrices and column operations are exactly right multiplication by them; these matrices are invertible, so equivalence by elementary operations is the same relation as equivalence by left and right multiplication by invertible matrices. Over a general principal ideal domain the Smith form still exists, by an argument that uses Bézout's identity in place of Euclidean division.
 
 **Definition.** A matrix is in **Smith normal form** if it is diagonal, $D=\operatorname{diag}(d_1,\dots,d_q)$, and $d_1 \mid d_2 \mid \cdots \mid d_q$.
 
@@ -185,13 +185,13 @@ When $R$ carries a Euclidean function $\nu$, the proof is an algorithm. If some 
 
 ### Uniqueness and Fitting Invariants
 
-For $1 \le k \le \min(n,m)$ let $D_k(A)$ be the ideal generated by all $k \times k$ minors of $A$, with $D_0=R$. These **determinantal ideals** are unchanged by elementary row and column operations, because each operation multiplies the set of $k \times k$ minors by a unit or replaces it by a set with the same generated ideal. If $A=\operatorname{diag}(d_1,\dots,d_q)$ in Smith form then the $k \times k$ minors are the products of $k$ distinct diagonal entries: every such product is divisible by $d_1d_2\cdots d_k$, and the product of the first $k$ diagonal entries is itself a minor, so
+For $1 \le k \le \min(n,m)$ let $D_k(A)$ be the ideal generated by all $k \times k$ minors of $A$, with $D_0=R$. These **determinantal ideals** are unchanged by elementary row and column operations, because each operation multiplies the set of $k \times k$ minors by an invertible element or replaces it by a set with the same generated ideal. If $A=\operatorname{diag}(d_1,\dots,d_q)$ in Smith form then the $k \times k$ minors are the products of $k$ distinct diagonal entries: every such product is divisible by $d_1d_2\cdots d_k$, and the product of the first $k$ diagonal entries is itself a minor, so
 
 $$
 D_k(A)=(d_1 d_2 \cdots d_k)
 $$
 
-with the convention that $D_k=0$ if $k>q$. Hence the products $d_1\cdots d_k$ are determined by $A$, and therefore so are the quotients $d_k=D_k/D_{k-1}$, up to units. This proves uniqueness of the Smith form and gives the invariant factors of the cokernel directly from the determinantal ideals of a presentation matrix.
+with the convention that $D_k=0$ if $k>q$. Hence the products $d_1\cdots d_k$ are determined by $A$, and therefore so are the quotients $d_k=D_k/D_{k-1}$, up to invertibles. This proves uniqueness of the Smith form and gives the invariant factors of the cokernel directly from the determinantal ideals of a presentation matrix.
 
 ## Worked Examples
 
@@ -281,7 +281,7 @@ $$
 M \cong R^r \oplus R/(d_1)\oplus\cdots\oplus R/(d_k), \qquad d_1 \mid \cdots \mid d_k,
 $$
 
-with $r$ and the invariant factors $d_i$ unique up to units. Existence is proved by presenting $M=R^n/K$, taking the Smith normal form of the matrix of the inclusion $K \hookrightarrow R^n$ and reading the quotient off the diagonal. Uniqueness is proved by tensoring with the fraction field to recover $r$, and by counting $\dim_{k(p)}(p^{n-1}T_p/p^nT_p)$ to recover the exponents of each prime. The elementary divisor form replaces the invariant factors by the prime powers occurring in them, and the two descriptions are equivalent.
+with $r$ and the invariant factors $d_i$ unique up to invertibles. Existence is proved by presenting $M=R^n/K$, taking the Smith normal form of the matrix of the inclusion $K \hookrightarrow R^n$ and reading the quotient off the diagonal. Uniqueness is proved by tensoring with the fraction field to recover $r$, and by counting $\dim_{k(p)}(p^{n-1}T_p/p^nT_p)$ to recover the exponents of each prime. The elementary divisor form replaces the invariant factors by the prime powers occurring in them, and the two descriptions are equivalent.
 
 The Smith normal form is the algorithmic content: elementary row and column operations put any matrix into a diagonal form with $d_1 \mid \cdots \mid d_q$, the form is unique, and its diagonal entries are read from the determinantal ideals $D_k(A)=(d_1\cdots d_k)$. Consequences include: a finitely generated torsion-free module is free; a submodule of a module generated by $n$ elements is generated by $n$ elements; the index of a full-rank sublattice equals the absolute value of the determinant of its basis matrix. Specialising to $\mathbb{Z}$ recovers the classification of finitely generated abelian groups and specialising to $K[x]$ the rational and Jordan canonical forms.
 

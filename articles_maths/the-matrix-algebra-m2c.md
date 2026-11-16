@@ -4,7 +4,7 @@
 
 **The algebra $M_2(\mathbb{C})$ is the algebra of $2\times2$ complex matrices, and everything in it is decided by four matrix units and one product rule.**
 
-This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the unit group and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*, the real matrices to *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$*, and the ideal theory to *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*.
+This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the group of invertibles and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*, the real matrices to *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$*, and the ideal theory to *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*.
 
 No quadratic form is used in the proofs. The trace pairing is recorded as symmetric and nondegenerate, nothing more; its signature is *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
 
@@ -72,13 +72,13 @@ $$
 
 **Corollary.** The algebra is central simple. Every automorphism is inner and every derivation is inner, by Skolem–Noether and Noether; the proofs are *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*.
 
-**The algebra is not a division algebra.** Every off-diagonal unit is a nonzero nilpotent, $E_{12}^{2}=0$, so there are zero divisors and the non-units are exactly the singular matrices.
+**The algebra is not a division algebra.** Every off-diagonal unit is a nonzero nilpotent, $E_{12}^{2}=0$, so there are zero divisors and the non-invertibles are exactly the singular matrices.
 
-## The Unit Group and the Projective Group
+## The Group of Invertibles and the Projective Group
 
 **Proposition.** $GL_2(\mathbb{C})=\{\det\neq0\}$ is a complex algebraic group of complex dimension $4$. The determinant maps it onto $\mathbb{C}^{\times}$, with kernel $SL_2(\mathbb{C})$ of complex dimension $3$.
 
-**Proof.** The unit group is the complement of a hypersurface in $\mathbb{C}^{4}$; the determinant is polynomial, multiplicative and onto, since $\operatorname{diag}(d,1)$ has determinant $d$; its kernel is a hypersurface, of dimension $3$.
+**Proof.** The group of invertibles is the complement of a hypersurface in $\mathbb{C}^{4}$; the determinant is polynomial, multiplicative and onto, since $\operatorname{diag}(d,1)$ has determinant $d$; its kernel is a hypersurface, of dimension $3$.
 
 **Proposition.** $PGL_2(\mathbb{C})=GL_2(\mathbb{C})/\mathbb{C}^{\times}I\cong SL_2(\mathbb{C})/\{\pm I\}$, of complex dimension $3$.
 
@@ -143,7 +143,7 @@ $$
 \boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \dim_{\mathbb{C}}=4,\qquad \dim_{\mathbb{R}}=8.\;}
 $$
 
-Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is the only commutator-vanishing functional up to scale, the determinant is multiplicative, and the two are the coefficients of $\chi_A=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. The rank takes the values $0,1,2$ on strata of dimensions $0,3,4$, and the singular set is the determinant hypersurface of real codimension two. The unit group is $GL_2(\mathbb{C})$ of dimension $4$, and $PGL_2(\mathbb{C})\cong SL_2(\mathbb{C})/\{\pm I\}$ has dimension $3$. Over $\mathbb{R}$ the algebra is $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$. It is the biquaternion algebra under $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\operatorname{tr}=2Q_t$ and $\det=N$.
+Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is the only commutator-vanishing functional up to scale, the determinant is multiplicative, and the two are the coefficients of $\chi_A=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. The rank takes the values $0,1,2$ on strata of dimensions $0,3,4$, and the singular set is the determinant hypersurface of real codimension two. The group of invertibles is $GL_2(\mathbb{C})$ of dimension $4$, and $PGL_2(\mathbb{C})\cong SL_2(\mathbb{C})/\{\pm I\}$ has dimension $3$. Over $\mathbb{R}$ the algebra is $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$. It is the biquaternion algebra under $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\operatorname{tr}=2Q_t$ and $\det=N$.
 
 | Property | Value for $M_2(\mathbb{C})$ |
 |---|---|
@@ -152,7 +152,7 @@ Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is
 | Centre | $\mathbb{C}I$ |
 | Simple | yes |
 | Division algebra | no; $E_{12}^{2}=0$ |
-| Unit group | $GL_2(\mathbb{C})$, dimension $4$ |
+| Group of invertibles | $GL_2(\mathbb{C})$, dimension $4$ |
 | Projective group | $PGL_2\cong SL_2/\{\pm I\}$, dimension $3$ |
 | Real reading | $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$, real dimensions $4+4$ |
 | Biquaternion model | $\vec e_k\mapsto-i\sigma_k$; $\det=N$, $\operatorname{tr}=2Q_t$ |

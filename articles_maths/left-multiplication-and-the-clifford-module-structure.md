@@ -30,9 +30,9 @@ $$
 
 **Proof.** The two conditions are the definition of a submodule and the definition of a left ideal.
 
-**Proposition (the annihilator and the image).** For $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the kernel of $L_x$ is the left annihilator $\mathrm{Ann}(x)$, a left ideal, and the image is the principal left ideal $\mathrm{Cl}(V,\mathfrak{Q})x$. Both are submodules of the regular module, and $L_x$ is injective exactly when $x$ is not a left zero divisor, in particular when $x$ is a unit.
+**Proposition (the annihilator and the image).** For $x \in \mathrm{Cl}(V,\mathfrak{Q})$ the kernel of $L_x$ is the left annihilator $\mathrm{Ann}(x)$, a left ideal, and the image is the principal left ideal $\mathrm{Cl}(V,\mathfrak{Q})x$. Both are submodules of the regular module, and $L_x$ is injective exactly when $x$ is not a left zero divisor, in particular when $x$ is invertible.
 
-**Proof.** $L_x(y) = 0$ says $xy = 0$, which is the definition of the left annihilator; the image is the set of $xy$, which is $\mathrm{Cl}(V,\mathfrak{Q})x$. Injectivity of $L_x$ for a unit $x$ follows from $x^{-1}xy = y$.
+**Proof.** $L_x(y) = 0$ says $xy = 0$, which is the definition of the left annihilator; the image is the set of $xy$, which is $\mathrm{Cl}(V,\mathfrak{Q})x$. Injectivity of $L_x$ for an invertible element $x$ follows from $x^{-1}xy = y$.
 
 ## The Simple Modules and the Minimal Left Ideals
 

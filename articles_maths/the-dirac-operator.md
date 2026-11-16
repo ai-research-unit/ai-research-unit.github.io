@@ -96,7 +96,7 @@ $$
 \boxed{\;\sigma(\zeta)\,\bar\sigma(\zeta) = \bar\sigma(\zeta)\,\sigma(\zeta) = |\zeta|^2 = \zeta_t^2+\sum_{i=1}^{m}\zeta_i^2 > 0\;} ,
 $$
 
-so $\sigma(\zeta)$ is a unit of $A$, with $\sigma(\zeta)^{-1}=\bar\sigma(\zeta)/|\zeta|^2$, and $D$ is
+so $\sigma(\zeta)$ is invertible in $A$, with $\sigma(\zeta)^{-1}=\bar\sigma(\zeta)/|\zeta|^2$, and $D$ is
 **elliptic**.
 
 *Proof.* Expanding the product, the diagonal terms contribute $\zeta_t^2+\sum_{i\ge1} e_i\bar e_i\zeta_i^2$.
@@ -104,7 +104,7 @@ For $i\ge1$, $e_i\bar e_i=-e_i^2=1$, so every diagonal term is $\zeta_t^2$ or $\
 terms cancel pairwise, because $\zeta_i\zeta_j$ is a real scalar and
 $e_i\bar e_j+\bar e_j e_i=0$ for $i\neq j\ge1$, this being the Clifford relation
 $e_ie_j+e_je_i=-2\delta_{ij}$ after the sign $\bar e_j=\epsilon_j e_j$ with
-$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\zeta|^2$ is a positive real number, hence a unit of $A$,
+$\epsilon_i=-1$; the scalar term commutes with everything. The value $|\zeta|^2$ is a positive real number, hence an invertible element of $A$,
 and the displayed inverse is immediate. The computation is identical in the other order because
 $\zeta_t$ is central and the two factors commute.
 
@@ -303,7 +303,7 @@ $\mathcal{S}$-valued functions of a vector variable by the one-sided Clifford ac
 names it the Cauchy–Riemann operator, and the classical name *Dirac operator* is carried by the
 self-adjoint family of *Dirac Differential Operators*. Its principal symbol is left multiplication
 by $\sigma(\zeta)=\zeta_t+\sum_{i\ge1}e_i\zeta_i$, which satisfies $\sigma(\zeta)\bar\sigma(\zeta)=|\zeta|^2$; hence
-$\sigma(\zeta)$ is a unit for $\zeta\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
+$\sigma(\zeta)$ is invertible for $\zeta\neq0$, $D$ is elliptic, and $D\bar D=\bar DD=\Delta$. Because the
 coefficients are constant, $D$ is the divergence of the field with components $e_\mu f$, and the
 divergence theorem applies to it with the conormal element $\nu_B=\nu_t+\sum_{i\ge1}\nu_i e_i$.
 

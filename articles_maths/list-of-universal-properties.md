@@ -81,7 +81,7 @@ A **localization** inverts a chosen set of elements and is universal among rings
 
 | Object | The property it has | Introduced in |
 |---|---|---|
-| Localization $S^{-1}R$ | the universal ring in which every element of $S$ becomes a unit | *Localization and the Fraction Field* |
+| Localization $S^{-1}R$ | the universal ring in which every element of $S$ becomes an invertible element | *Localization and the Fraction Field* |
 | Fraction field $\operatorname{Frac}(R)$ | the initial field in which an integral domain embeds | *Localization and the Fraction Field* |
 | Local ring $R_\mathrm{P}$ | the localization at a prime ideal, with a single maximal ideal | *Localization and the Fraction Field* |
 | Localization of a module $S^{-1}M$ | the universal module over $S^{-1}R$ receiving $M$ | *Localization and Completion of Modules* |

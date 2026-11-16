@@ -60,7 +60,7 @@ $$
 
 ## Invertibility and Composition
 
-**Theorem.** The signed left multiplication $\Lambda(a)$ is invertible exactly when $a$ is a unit of $A$, with
+**Theorem.** The signed left multiplication $\Lambda(a)$ is invertible exactly when $a$ is invertible in $A$, with
 
 $$
 \Lambda(a)^{-1}=\Lambda\bigl(\alpha(a)^{-1}\bigr) ;
@@ -72,9 +72,9 @@ $$
 \Lambda(a)\Lambda(b)=L\bigl(a\alpha(b)\bigr), \qquad \Lambda(a)L(b)=\Lambda\bigl(a\alpha(b)\bigr), \qquad L(a)\Lambda(b)=\Lambda(ab),
 $$
 
-and a product of three is again signed, $\Lambda(a)\Lambda(b)\Lambda(c)=\Lambda(a\alpha(b)c)$. The signed left multiplications therefore generate the union of the unsigned and the signed left multiplications, and they form a semigroup, closed under inverses on the units.
+and a product of three is again signed, $\Lambda(a)\Lambda(b)\Lambda(c)=\Lambda(a\alpha(b)c)$. The signed left multiplications therefore generate the union of the unsigned and the signed left multiplications, and they form a semigroup, closed under inverses on the invertibles.
 
-*Proof.* $\Lambda(a)$ is the composite $L(a)\alpha$ of the invertible operator $\alpha$ with $L(a)$, so it is invertible exactly when $L(a)$ is, that is when $a$ is a unit; then $\Lambda(\alpha(a)^{-1})\Lambda(a)(x)=\alpha(a)^{-1}\alpha(a\alpha(x))=\alpha(a)^{-1}\alpha(a)x=x$. The first product rule is the direct computation $\Lambda(a)(b\alpha(x))=a\alpha(b\alpha(x))=a\alpha(b)x$; the latter two are the identities (d) of *The Signed Left Multiplication on an Algebra*; the threefold product follows by applying the third to $\Lambda(a)\Lambda(b)=L(a\alpha(b))$ and $\Lambda(c)$. Stability under inversion is the inverse formula, and the products of three being signed is the last identity.
+*Proof.* $\Lambda(a)$ is the composite $L(a)\alpha$ of the invertible operator $\alpha$ with $L(a)$, so it is invertible exactly when $L(a)$ is, that is when $a$ is invertible; then $\Lambda(\alpha(a)^{-1})\Lambda(a)(x)=\alpha(a)^{-1}\alpha(a\alpha(x))=\alpha(a)^{-1}\alpha(a)x=x$. The first product rule is the direct computation $\Lambda(a)(b\alpha(x))=a\alpha(b\alpha(x))=a\alpha(b)x$; the latter two are the identities (d) of *The Signed Left Multiplication on an Algebra*; the threefold product follows by applying the third to $\Lambda(a)\Lambda(b)=L(a\alpha(b))$ and $\Lambda(c)$. Stability under inversion is the inverse formula, and the products of three being signed is the last identity.
 
 **Corollary.** The multiplicative closure of the left multiplications and the signed left multiplications is their union $L(A)\cup\Lambda(A)$, with $\Lambda(A)=L(A)\alpha$ the coset of the left multiplications; the product of two signed left multiplications is always an unsigned left multiplication, and the product of three is signed again.
 
@@ -90,7 +90,7 @@ $$
 \Lambda(a) \text{ is an involution} \iff a\alpha(a)=1\;} .
 $$
 
-The unitary signed left multiplications are exactly the operators $\Lambda(a)$ with $\alpha(a)$ a unitary element of the algebra, and they form a subgroup of the unit group of $E$ isomorphic to a subgroup of the units of $A$.
+The unitary signed left multiplications are exactly the operators $\Lambda(a)$ with $\alpha(a)$ a unitary element of the algebra, and they form a subgroup of the group of invertibles of $E$ isomorphic to a subgroup of the invertibles of $A$.
 
 *Proof.* Injectivity of $\Lambda$ makes $\Lambda(\delta(a))=\Lambda(a)$ equivalent to $\delta(a)=a$; for unitarity, $\Lambda(a)^{*_\sigma}\Lambda(a)=\Lambda(\delta(a))\Lambda(a)=L(\delta(a)\alpha(a))$ by the product rule, and a left multiplication is the identity exactly when its parameter is $1$, so $\delta(a)\alpha(a)=1$; with $\delta=\sigma\alpha$ and $v=\alpha(a)$ this is $\sigma(v)v=1$, the unitarity of $v$ in $(A,\sigma)$. For the involution, $\Lambda(a)^{2}=L(a\alpha(a))$, which is the identity exactly when $a\alpha(a)=1$. The group statement is *Unitary Operators of an Involutive Algebra* applied to the image.
 
@@ -136,7 +136,7 @@ The one-sided signed operators therefore generate the two-sided ones, and the un
 
 ## Summary
 
-The signed left multiplication $\Lambda(a)=\mathcal{T}_{a,1}=L(a)\alpha=\alpha L(\alpha(a))$ has twisted adjoint $\Lambda(a)^{*_\sigma}=\Lambda(\delta(a))$ with $\delta=\sigma\alpha$: the signed adjoint does not switch the side, and the signed left regular map is a `*`-map from $(A,\delta)$ to $(E,*_\sigma)$, though not a homomorphism, since $\Lambda(a)\Lambda(b)=L(a\alpha(b))$. The plain adjoint does switch the side, $\Lambda(a)^{*}=\mathcal{T}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, and the two adjoints differ by the conjugation $c_{\sigma}(T)=\sigma T\sigma$. The operator is invertible exactly when $a$ is a unit, with $\Lambda(a)^{-1}=\Lambda(\alpha(a)^{-1})$; it is self-adjoint for the twisted pairing exactly when $\delta(a)=a$, unitary exactly when $\delta(a)\alpha(a)=1$, equivalently when $\alpha(a)$ is a unitary element, and an involution exactly when $a\alpha(a)=1$. The signed two-sided operator is the product $\Lambda(a)R_{\alpha(b)}$ and the reflection is $\Lambda(u)R_{\alpha(u)^{-1}}$, so the side switch of the plain pairing is confined to the second factor while the signed pairing keeps both factors on their sides. The unsigned case is the specialization $\alpha=\mathrm{id}$, and the module case is the next category.
+The signed left multiplication $\Lambda(a)=\mathcal{T}_{a,1}=L(a)\alpha=\alpha L(\alpha(a))$ has twisted adjoint $\Lambda(a)^{*_\sigma}=\Lambda(\delta(a))$ with $\delta=\sigma\alpha$: the signed adjoint does not switch the side, and the signed left regular map is a `*`-map from $(A,\delta)$ to $(E,*_\sigma)$, though not a homomorphism, since $\Lambda(a)\Lambda(b)=L(a\alpha(b))$. The plain adjoint does switch the side, $\Lambda(a)^{*}=\mathcal{T}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$, and the two adjoints differ by the conjugation $c_{\sigma}(T)=\sigma T\sigma$. The operator is invertible exactly when $a$ is invertible, with $\Lambda(a)^{-1}=\Lambda(\alpha(a)^{-1})$; it is self-adjoint for the twisted pairing exactly when $\delta(a)=a$, unitary exactly when $\delta(a)\alpha(a)=1$, equivalently when $\alpha(a)$ is a unitary element, and an involution exactly when $a\alpha(a)=1$. The signed two-sided operator is the product $\Lambda(a)R_{\alpha(b)}$ and the reflection is $\Lambda(u)R_{\alpha(u)^{-1}}$, so the side switch of the plain pairing is confined to the second factor while the signed pairing keeps both factors on their sides. The unsigned case is the specialization $\alpha=\mathrm{id}$, and the module case is the next category.
 
 ## Summary of Notation
 
@@ -148,7 +148,7 @@ The signed left multiplication $\Lambda(a)=\mathcal{T}_{a,1}=L(a)\alpha=\alpha L
 | $\Lambda(a)^{*_\sigma}=\Lambda(\delta(a))$ | the signed adjoint; no side switch |
 | $\Lambda(a)^{*}=\mathcal{T}_{1,\alpha(a)}=R_{\alpha(a)}\alpha$ | the plain adjoint; side switch |
 | $\Lambda(a)^{*_\sigma}=c_{\sigma}(\Lambda(a)^{*})$ | the two adjoints related by the conjugation |
-| $\Lambda(a)^{-1}=\Lambda(\alpha(a)^{-1})$ | the inverse, for a unit $a$ |
+| $\Lambda(a)^{-1}=\Lambda(\alpha(a)^{-1})$ | the inverse, for an invertible element $a$ |
 | $\Lambda(a)\Lambda(b)=L(a\alpha(b))$ | the composition |
 | $\Lambda(a)$ self-adjoint $\iff \delta(a)=a$ | self-adjointness for the twisted pairing |
 | $\delta(a)\alpha(a)=1$ | the unitarity condition |

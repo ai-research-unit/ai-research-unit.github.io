@@ -79,11 +79,11 @@ The Lipschitz and Hurwitz lattices are the integral forms of the quaternion alge
 |---|---|---|
 | the Lipschitz lattice $\mathbb{H}(\mathbb{Z})$ | the integer span of the quaternion basis, rank $4$, not maximal | *Lattices and the Quaternion Lattice* |
 | the Hurwitz lattice $\mathbb{H}'(\mathbb{Z})$ | the order with the half-integral generator $\omega = \tfrac12(1+\vec e_x+\vec e_y+\vec e_z)$, rank $4$, maximal | *Lattices and the Quaternion Lattice* |
-| the Hurwitz unit group | the $24$ units of the Hurwitz order, the binary tetrahedral group $2T$ | *Quaternion Geometry*, §The Units and Their Geometry |
+| the Hurwitz group of invertibles | the $24$ units of the Hurwitz order, the binary tetrahedral group $2T$ | *Quaternion Geometry*, §The Units and Their Geometry |
 | the norm on the lattice | the sum of four squares, the integral quadratic form of the lattice | *Quaternion Geometry*, §The Arithmetic Geometry of the Quaternion Lattice |
 | the unit sphere lattice | the unit sphere carries a discrete subgroup of finite covolume, up to scaling | *Quaternion Geometry*, §The Units and Their Geometry |
 
-The Hurwitz order contains the Lipschitz order with index two, and it is the maximal order of the rational quaternion algebra; the unit group is finite of order $24$ and is the binary tetrahedral group. The lattice is the arithmetic counterpart of the geometry of the quaternion sphere, and the norm is the quaternary quadratic form that the lattice carries.
+The Hurwitz order contains the Lipschitz order with index two, and it is the maximal order of the rational quaternion algebra; the group of invertibles is finite of order $24$ and is the binary tetrahedral group. The lattice is the arithmetic counterpart of the geometry of the quaternion sphere, and the norm is the quaternary quadratic form that the lattice carries.
 
 ## Warnings
 
@@ -99,7 +99,7 @@ An object that a reader may expect among the geometric lattices and integral for
 
 ## Summary
 
-This article has listed the geometric lattices and integral forms of the corpus. The lattices as free $\mathbb{Z}$-modules open the list, with their rank, their sublattices and their indices; the Euclidean lattices follow, with the Gram matrix and the covolume, together with the covolume of a lattice in a Lie group; the dual lattice, the discriminant and the ring of integers of a number field are recorded; the integral quadratic and bilinear forms are gathered with the polar form, the norm and the radical; and the Lipschitz and Hurwitz lattices close the list with the norm and the Hurwitz unit group. Beside the examples stand the non-examples: a dense subgroup is not discrete, the rational lattice is not finitely generated, the dual is undefined without a form, and a lattice in a Lie group is a lattice in the other sense of the word.
+This article has listed the geometric lattices and integral forms of the corpus. The lattices as free $\mathbb{Z}$-modules open the list, with their rank, their sublattices and their indices; the Euclidean lattices follow, with the Gram matrix and the covolume, together with the covolume of a lattice in a Lie group; the dual lattice, the discriminant and the ring of integers of a number field are recorded; the integral quadratic and bilinear forms are gathered with the polar form, the norm and the radical; and the Lipschitz and Hurwitz lattices close the list with the norm and the Hurwitz group of invertibles. Beside the examples stand the non-examples: a dense subgroup is not discrete, the rational lattice is not finitely generated, the dual is undefined without a form, and a lattice in a Lie group is a lattice in the other sense of the word.
 
 ## Summary of Notation
 

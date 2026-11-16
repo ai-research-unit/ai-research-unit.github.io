@@ -252,7 +252,7 @@ For an ideal $I$ of a ring $R$ the $I$-adic topology has the powers $I^n$ as a f
 |---|---|
 | $R$ | Topological ring; often commutative with $1 \neq 0$ |
 | $F$ | Topological field |
-| $R^\times$, $F^\times$ | Unit groups, open when $R$, $F$ are Hausdorff |
+| $R^\times$, $F^\times$ | Groups of invertibles, open when $R$, $F$ are Hausdorff |
 | $\overline{\{0\}}$ | Closure of zero, a closed ideal |
 | $I^n$ | Powers of an ideal, a filtration |
 | $x + I^n$ | Basic neighbourhood in the $I$-adic topology |

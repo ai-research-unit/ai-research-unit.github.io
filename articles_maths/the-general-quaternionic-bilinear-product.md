@@ -6,7 +6,7 @@ The second of the four general products conjugates the first slot by the quatern
 $$
 \tilde Q_1^{\natural}\tilde Q_2=(\tilde Q_1^{\natural})\,\tilde Q_2 .
 $$
-The insertion of one involution is enough to destroy associativity, flexibility and alternation, to keep a unit on one side only, to collapse the diagonal onto the centre, and to make the two defects of the halves meet in the two smallest nonzero values of the batch, one for the symmetrisation and three for the antisymmetrisation. This article reads the product on its own: the coordinate rule, the scalar–vector form, the laws, the units, the image and the diagonal, the two halves, the four composites, the trace form against the halves, and the row of the product in the comparison of the four.
+The insertion of one involution is enough to destroy associativity, flexibility and alternation, to keep an invertible element on one side only, to collapse the diagonal onto the centre, and to make the two defects of the halves meet in the two smallest nonzero values of the batch, one for the symmetrisation and three for the antisymmetrisation. This article reads the product on its own: the coordinate rule, the scalar–vector form, the laws, the invertibles, the image and the diagonal, the two halves, the four composites, the trace form against the halves, and the row of the product in the comparison of the four.
 
 The notation is that of [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html): $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, $\tilde Q=Q_te_t+\vec Q$, the scalar part $\langle\tilde Q\rangle_{*}=Q_t$, the three conjugations $\overline{\phantom{x}}$, ${}^{\natural}$ and ${}^{*}={}^{\natural}\circ\overline{\phantom{x}}$, and the two pairings $(\vec Q_1,\vec Q_2)$ and $\vec Q_1\times\vec Q_2$. The algebra and its four conjugations are [The Biquaternion Algebra](the-biquaternion-algebra.html); the twelve products of the space are [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html); the forms are [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html).
 
@@ -78,7 +78,7 @@ $$
 
 *Proof.* ${}^{\natural}$ is an anti-automorphism of the plain product, so $(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}(\tilde Q_1^{\natural})^{\natural}=\tilde Q_2^{\natural}\tilde Q_1$, and the right-hand side is the product with the arguments interchanged. Verified on general elements.
 
-**Remark (what the identity says).** The involution is an anti-automorphism of the product onto its opposite product. It is the only exact identity of the product beyond bilinearity and the scalar rule, and it is the one used in the theory of the versors: a unit $\tilde R$ with $\tilde R^{\natural}\tilde R=e_t$ acts by the product as the identity on itself.
+**Remark (what the identity says).** The involution is an anti-automorphism of the product onto its opposite product. It is the only exact identity of the product beyond bilinearity and the scalar rule, and it is the one used in the theory of the versors: An invertible element $\tilde R$ with $\tilde R^{\natural}\tilde R=e_t$ acts by the product as the identity on itself.
 
 ## The One-Sided Units
 

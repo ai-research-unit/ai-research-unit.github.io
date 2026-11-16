@@ -65,7 +65,7 @@ $$
 
 holds over any commutative ring in which 2 is invertible, where $B$ is the bilinear form associated with $Q$. It is a consequence of the defining relation $v^2 = \mathfrak{Q}(v) \cdot 1$, not an independent assumption. The polarization identity used to derive it requires division by 2.
 
-**Key difference from the field case.** Over a field of characteristic not equal to 2, 2 is automatically invertible. Over a general commutative ring, we must assume that 2 is a unit. Over $\mathbb{Z}$, this fails, and the theory of Clifford algebras over $\mathbb{Z}$ requires more care.
+**Key difference from the field case.** Over a field of characteristic not equal to 2, 2 is automatically invertible. Over a general commutative ring, we must assume that 2 is invertible. Over $\mathbb{Z}$, this fails, and the theory of Clifford algebras over $\mathbb{Z}$ requires more care.
 
 ---
 

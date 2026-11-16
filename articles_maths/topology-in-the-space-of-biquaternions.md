@@ -90,11 +90,11 @@ $$
 
 ## 5. Summary
 
-The space of biquaternions is a real vector space of dimension eight. It carries a norm (§1), all its norms are equivalent and it carries exactly one topological norm and one topology (§2), that topology is built in §3 and is the Euclidean topology of $\mathbb{R}^{8}$, and in it the product is continuous, so the space is a topological, normed and Banach algebra with an open group of units (§4). One norm, one topological norm, one topology, and it is the Euclidean one.
+The space of biquaternions is a real vector space of dimension eight. It carries a norm (§1), all its norms are equivalent and it carries exactly one topological norm and one topology (§2), that topology is built in §3 and is the Euclidean topology of $\mathbb{R}^{8}$, and in it the product is continuous, so the space is a topological, normed and Banach algebra with an open group of invertibles (§4). One norm, one topological norm, one topology, and it is the Euclidean one.
 
 ## Further Reading
 
 - [Normed and Banach Spaces](normed-and-banach-spaces.html), the norm, the equivalence of norms and the uniqueness of the topology in finite dimension; [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html).
 - [Metric, Uniform and Complete Spaces](metric-uniform-and-complete-spaces.html), the metric, the completeness and the compactness properties of §3; [Banach and Hilbert Spaces](banach-and-hilbert-spaces.html).
-- [Topological Algebras and Banach Algebras](topological-algebras-and-banach-algebras.html), the continuity of the product and the openness of the group of units.
+- [Topological Algebras and Banach Algebras](topological-algebras-and-banach-algebras.html), the continuity of the product and the openness of the group of invertibles.
 - [The Matrix Element Representation and the Biquaternion Dynamics](the-matrix-element-representation-and-the-biquaternion-dynamics.html), the realization $\mathsf{M}_2$ and $\langle\mathsf{M}_2(\tilde{Q})\rangle_*^{1/2}=\sqrt2\lVert\tilde{Q}\rVert$.

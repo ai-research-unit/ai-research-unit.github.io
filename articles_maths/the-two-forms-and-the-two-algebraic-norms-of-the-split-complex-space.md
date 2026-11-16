@@ -106,7 +106,7 @@ $$
 
 real, multiplicative, indefinite. Its value is the real part of the form and the whole of the form, since $H(A,A)$ is real.
 
-**Theorem.** $H(AC)=H(A)H(C)$ and $H(A)\neq0$ is the criterion of invertibility of $A$; the units are the elements off the null lines.
+**Theorem.** $H(AC)=H(A)H(C)$ and $H(A)\neq0$ is the criterion of invertibility of $A$; the invertibles are the elements off the null lines.
 
 **Proof.** $H(AC)=(AC)\overline{(AC)}=A\bar A\,C\bar C$ by commutativity, and $A^{-1}=\bar A/H(A)$ when $H(A)\neq0$; the criterion is *Norm and Invertibility in the General Split-Complex Algebra*.
 

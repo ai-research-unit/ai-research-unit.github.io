@@ -89,7 +89,7 @@ The Cayley–Dickson doubling chain loses commutativity at the quaternions and a
 | $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{Z}/6\mathbb{Z}$ | commutative, with zero divisors; not even domains | *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Modular Arithmetic and the Ring of Residues* |
 | $\mathbb{O}$, $\mathbb{S}$ | normed division algebras whose multiplication is not associative, so not rings | *Division Algebras* |
 | the group ring $k[G]$ | has zero divisors whenever $G$ has torsion | *Group Algebras* |
-| $k[G]$ with $G$ torsion-free and nontrivial | a domain, but not every nonzero element is a unit: $g - 1$ has augmentation $0$ | *Non-Commutative Domains* |
+| $k[G]$ with $G$ torsion-free and nontrivial | a domain, but not every nonzero element is invertible: $g - 1$ has augmentation $0$ | *Non-Commutative Domains* |
 
 The split-biquaternions and the biquaternions are the two eight-dimensional algebras closest to $\mathbb{H}$, and both fail the definition by a zero divisor that the quaternion algebra does not have. The octonions are excluded by non-associativity and not by zero divisors, and this is the exact sense in which they are a normed division algebra without being a division ring.
 

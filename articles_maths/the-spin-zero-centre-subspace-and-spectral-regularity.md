@@ -167,5 +167,5 @@ Every element of the centre is spectrally degenerate: its vector part vanishes, 
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The Spectrum](the-spectrum.html), for the characteristic polynomial and the two eigenvalues of an element
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the sector in which the centre away from the origin lies
-- [Centre, Units, Zero Divisors and Division Algebras](centre-units-zero-divisors-and-division-algebras.html), for the centre as a division algebra inside the algebra
+- [Centre, Invertibles, Zero Divisors and Division Algebras](centre-invertibles-zero-divisors-and-division-algebras.html), for the centre as a division algebra inside the algebra
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

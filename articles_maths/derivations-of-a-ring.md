@@ -198,7 +198,7 @@ This is a Lie subring of $\operatorname{Der}(A)$, and it is a module over the ce
 
 ## Summary
 
-A derivation of the ring $A$ is an additive operator satisfying $D(xy) = D(x)y + xD(y)$. It satisfies $D(0)=0$, $D(1)=0$, $D(-x)=-D(x)$, the product rule over any finite list, the power rule $\sum_i x^iD(x)x^{n-1-i}$ for $x^n$, and the rule $D(u^{-1}) = -u^{-1}D(u)u^{-1}$ for a unit; it carries the centre into the centre. The formal derivative of a polynomial ring, the inner derivations of a matrix ring, and the derivation $\partial/\partial t$ of an imperfect field are the standard examples; in characteristic $p$ every derivation kills $p$-th powers, so a perfect field has no nonzero derivation.
+A derivation of the ring $A$ is an additive operator satisfying $D(xy) = D(x)y + xD(y)$. It satisfies $D(0)=0$, $D(1)=0$, $D(-x)=-D(x)$, the product rule over any finite list, the power rule $\sum_i x^iD(x)x^{n-1-i}$ for $x^n$, and the rule $D(u^{-1}) = -u^{-1}D(u)u^{-1}$ for an invertible element; it carries the centre into the centre. The formal derivative of a polynomial ring, the inner derivations of a matrix ring, and the derivation $\partial/\partial t$ of an imperfect field are the standard examples; in characteristic $p$ every derivation kills $p$-th powers, so a perfect field has no nonzero derivation.
 
 The derivations are closed under the commutator $[D,E] = DE - ED$, which is again a derivation, and form the Lie ring $\operatorname{Der}(A)$; over a commutative base $k$ the $k$-linear derivations form the Lie algebra $\operatorname{Der}_k(A)$. The map $a \mapsto \operatorname{ad}_a$, $\operatorname{ad}_a(x) = ax - xa$, is a homomorphism of Lie rings $A \to \operatorname{Der}(A)$ with kernel $Z(A)$ and image the inner derivations $\operatorname{Inn}_{\mathrm{der}}(A) \cong A/Z(A)$, and $[D,\operatorname{ad}_a] = \operatorname{ad}_{D(a)}$ shows that the inner derivations form a Lie ideal, with the outer derivations as the quotient $\operatorname{Der}(A)/\operatorname{Inn}_{\mathrm{der}}(A)$. A derivation is the linear part of an automorphism; when it is nilpotent and the necessary integers are invertible, its exponential is an automorphism with that linear part.
 
@@ -216,7 +216,7 @@ The derivations are closed under the commutator $[D,E] = DE - ED$, which is agai
 | $[D,\operatorname{ad}_a] = \operatorname{ad}_{D(a)}$ | Inn is a Lie ideal |
 | $\operatorname{Der}_S(A)$ | Derivations annihilating a subring $S$ |
 | $\exp(D)$ | Automorphism of a nilpotent derivation when the integers are invertible |
-| $Z(A)$, $A^\times$ | Centre and unit group of $A$ |
+| $Z(A)$, $A^\times$ | Centre and group of invertibles of $A$ |
 
 ## Further Reading
 

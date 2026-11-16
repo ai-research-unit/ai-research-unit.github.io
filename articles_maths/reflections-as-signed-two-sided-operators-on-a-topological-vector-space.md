@@ -59,7 +59,7 @@ and the inner conjugation $\Phi_{r, r^{-1}} = \mathrm{Ad}_{r}$ is the reflection
 
 ## Conjugation and the Degenerate Cases
 
-**Proposition (conjugation of reflections).** For an invertible $u$ and an involutive automorphism $\alpha$, the conjugate $u\alpha u^{-1}$, $x \mapsto u\alpha(u^{-1}xu)u^{-1}$, is an involutive automorphism; if $\alpha = \mathrm{Ad}_{r}$ with $r$ an involution then $u\alpha u^{-1} = \mathrm{Ad}_{uru^{-1}}$ with $uru^{-1}$ again an involution, so the inner reflections form the orbit of $\mathrm{Ad}$ under conjugation by the units. The fixed and negated parts of the conjugate are $uE^{+}$ and $uE^{-}$.
+**Proposition (conjugation of reflections).** For an invertible $u$ and an involutive automorphism $\alpha$, the conjugate $u\alpha u^{-1}$, $x \mapsto u\alpha(u^{-1}xu)u^{-1}$, is an involutive automorphism; if $\alpha = \mathrm{Ad}_{r}$ with $r$ an involution then $u\alpha u^{-1} = \mathrm{Ad}_{uru^{-1}}$ with $uru^{-1}$ again an involution, so the inner reflections form the orbit of $\mathrm{Ad}$ under conjugation by the invertibles. The fixed and negated parts of the conjugate are $uE^{+}$ and $uE^{-}$.
 
 **Proof.** $\alpha^{2} = \mathrm{id}$ gives $(u\alpha u^{-1})^{2} = u\alpha^{2}u^{-1} = \mathrm{id}$, and multiplicativity is preserved by conjugation; if $\alpha = \mathrm{Ad}_{r}$ then $u\mathrm{Ad}_{r}u^{-1}(x) = uru^{-1}xuru^{-1} = \mathrm{Ad}_{uru^{-1}}(x)$, and $(uru^{-1})^{2} = ur^{2}u^{-1} = 1$. The fixed-part statement is the computation $u\alpha u^{-1}(ux) = u\alpha(x)$ for $x \in E^{\pm}$.
 

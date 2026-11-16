@@ -10,7 +10,7 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
-**The first claim is that the word is a coordinate chart on the unit group and nothing more.** Eight real parameters, matching the real dimension of the algebra: one for the scale, one for the phase, and two for each of the two exponentials, which are a rapidity with an axis and an angle with an axis. Every element off the null cone has exactly one word up to the degenerate directions where an axis is undefined. This is a statement about a group of transformations and not about a process: the word says what an element is at one instant and not how it got there.
+**The first claim is that the word is a coordinate chart on the group of invertibles and nothing more.** Eight real parameters, matching the real dimension of the algebra: one for the scale, one for the phase, and two for each of the two exponentials, which are a rapidity with an axis and an angle with an axis. Every element off the null cone has exactly one word up to the degenerate directions where an axis is undefined. This is a statement about a group of transformations and not about a process: the word says what an element is at one instant and not how it got there.
 
 **The second claim is that the word survives both walls and only one of them is fatal.** At the null cone $N=0$ the scale collapses and the rapidity diverges in the same breath, and the product has a finite limit that is a null element. At the spectral cone $B^{2}=0$ the word has a finite limit and the eigenbasis does not: the two eigenvalues coalesce, the minimal polynomial becomes a square, and the idempotents diverge while the Cartan factors converge. The polar decomposition is continuous across the spectral wall and the spectral decomposition is not, and that asymmetry is the sharpest mathematical statement in the section.
 
@@ -59,7 +59,7 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 
 **The seven data.** $r=\sqrt{|N|}$, $\theta_{\mathrm{pha}}=\tfrac12\operatorname{Arg}N$, $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVert^{2}/|N|$, the boost axis from the imaginary parts of the cross products, and the rotor recovered from $\tilde Q$, the boost and the phase. Verified: on three random elements of $\Sigma_{11}$ the reconstructed element differs from the original by at most $1.5\times10^{-16}$, and the two unit factors have norm one to $1\times10^{-16}$.
 
-**The parameter count.** $1+1+(1+2)+(1+2)=8$, the real dimension of the group of units. The word is a chart on that group, not on the algebra.
+**The parameter count.** $1+1+(1+2)+(1+2)=8$, the real dimension of the group of invertibles. The word is a chart on that group, not on the algebra.
 
 **The eigenvalues.** $\lambda_\pm=Q_t\pm iB$, distinct and nonzero exactly on $\Sigma_{11}$, coalescent on $\Sigma_{10}$. Their product is the norm and their sum is twice the trace.
 
@@ -77,7 +77,7 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 
 **The doubling.** The scale doubles its exponent, the phase produces nothing, the boost and the rotor double theirs. A boost of rapidity $\theta$ has one-slot eigenvalues $e^{\pm\theta/2}$ and two-slot eigenvalues $e^{\pm\theta}$.
 
-**The logarithm.** The exponential is onto the unit group and its image excludes exactly the null cone; a logarithm exists on the units and only there, and the fibre is the kernel, a lattice on the diagonal part and continuous off it.
+**The logarithm.** The exponential is onto the group of invertibles and its image excludes exactly the null cone; a logarithm exists on the invertibles and only there, and the fibre is the kernel, a lattice on the diagonal part and continuous off it.
 
 ## The Word and Its Domain
 
@@ -91,11 +91,11 @@ $$
 
 The first is the reduced product $\tilde Q\tilde Q^{\natural}$ and the second is the quadratic form of the vector part. Each carries one complex condition, so the pair cuts the algebra into four sectors, and the word behaves differently in each. The two conditions are independent: $e_t+i\vec e_x$ has $N=0$ and $B^{2}=-1$, and $e_t+\vec e_x+i\vec e_y$ has $N=2$ and $B^{2}=0$.
 
-**The sector of this entry is the union of two of the four.** On $\Sigma_{11}$ and $\Sigma_{10}$ the norm does not vanish, so the element is a unit and a modulus exists; the two sectors differ in whether the vector part is null. The other two sectors have $N=0$: the element is a zero divisor, there is no modulus, and no word exists. The entry's boundary is therefore the null cone, and the spectral cone $B^{2}=0$ is an internal wall.
+**The sector of this entry is the union of two of the four.** On $\Sigma_{11}$ and $\Sigma_{10}$ the norm does not vanish, so the element is invertible and a modulus exists; the two sectors differ in whether the vector part is null. The other two sectors have $N=0$: the element is a zero divisor, there is no modulus, and no word exists. The entry's boundary is therefore the null cone, and the spectral cone $B^{2}=0$ is an internal wall.
 
-**Five descriptions of the regular sector.** $N\neq0$ with $B^{2}\neq0$ is equivalent to each of: the two eigenvalues $Q_t\pm iB$ distinct and nonzero; the minimal polynomial $X^{2}-2Q_tX+N$ squarefree with nonzero constant term; the element a unit with two spectral points; and, with $\tilde U=\tilde Q/\Rho$, the scalar part of $\tilde U$ not equal to $\pm1$. The last is the one that separates the two sectors most clearly: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of units.
+**Five descriptions of the regular sector.** $N\neq0$ with $B^{2}\neq0$ is equivalent to each of: the two eigenvalues $Q_t\pm iB$ distinct and nonzero; the minimal polynomial $X^{2}-2Q_tX+N$ squarefree with nonzero constant term; the element an invertible element with two spectral points; and, with $\tilde U=\tilde Q/\Rho$, the scalar part of $\tilde U$ not equal to $\pm1$. The last is the one that separates the two sectors most clearly: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of invertibles.
 
-**The parameter count is the chart's dimension.** The data are $\ln r$, $\theta_{\mathrm{pha}}$, the rapidity with a point of $S^{2}$, and the angle with a point of $S^{2}$, which is $1+1+3+3=8$, the real dimension of the algebra. The word is therefore a coordinate system on the group of units and not a constraint on the element.
+**The parameter count is the chart's dimension.** The data are $\ln r$, $\theta_{\mathrm{pha}}$, the rapidity with a point of $S^{2}$, and the angle with a point of $S^{2}$, which is $1+1+3+3=8$, the real dimension of the algebra. The word is therefore a coordinate system on the group of invertibles and not a constraint on the element.
 
 ### The Word
 
@@ -194,7 +194,7 @@ $$
 \tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),\qquad \vec\Upsilon=\vec Q/Q_t,\qquad \vec\Upsilon^{2}=0,
 $$
 
-and the writing is unique because $Q_t$ is the scalar part. The unipotent factor has norm one and inverse $e_t-\vec\Upsilon$, so every element of the sector is a unit.
+and the writing is unique because $Q_t$ is the scalar part. The unipotent factor has norm one and inverse $e_t-\vec\Upsilon$, so every element of the sector is invertible.
 
 **The sector splits into two strata.** The scalar line $\vec\Upsilon=0$ is the set of nonzero complex scalars, closed in the sector and of measure zero. The Jordan part $\vec\Upsilon\neq0$ is open and dense, with minimal polynomial $(X-Q_t)^{2}$ and geometric multiplicity one. The two strata are the two possible Jordan forms of an element with a single eigenvalue.
 
@@ -420,16 +420,16 @@ Three cases exhaust the word. If $A^{*}=A$ the two slots carry the same exponent
 
 ## The Logarithm and the Fibre
 
-### The Image Is the Unit Group
+### The Image Is the Group of Invertibles
 
-**The exponential is entire, never zero, and onto the units.**
+**The exponential is entire, never zero, and onto the invertibles.**
 
 $$
 \exp:\mathbb{B}\longrightarrow\mathbb{B}^{\times},\qquad
 \langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)\neq0,
 $$
 
-the norm identity being the multiplicativity of $N$ applied to $\exp(Q_t e_t)\exp(\vec Q)$. The image excludes exactly the null cone, and the exclusion is sharp: every unit has a logarithm, because $\mathbb{B}\cong M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm.
+the norm identity being the multiplicativity of $N$ applied to $\exp(Q_t e_t)\exp(\vec Q)$. The image excludes exactly the null cone, and the exclusion is sharp: every invertible element has a logarithm, because $\mathbb{B}\cong M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm.
 
 **The two regimes of the closed form are the two sectors.**
 
@@ -532,7 +532,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ## The Limits
 
-**No dynamics.** The entry decomposes an element and states nothing about its evolution. The word is a chart of the group of units, and a chart does not supply a vector field.
+**No dynamics.** The entry decomposes an element and states nothing about its evolution. The word is a chart of the group of invertibles, and a chart does not supply a vector field.
 
 **No preferred pairing.** The three pairings are three dictionaries with three domains. The entry states the domains and refuses to name a fundamental one; where the corpus names one for a purpose, the entry records the purpose.
 
@@ -546,7 +546,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ## Summary
 
-**The word is a coordinate chart on the unit group.** $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with eight real parameters, unique up to the directions where an axis vanishes, verified to $1.5\times10^{-16}$ on random elements of the regular sector.
+**The word is a coordinate chart on the group of invertibles.** $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with eight real parameters, unique up to the directions where an axis vanishes, verified to $1.5\times10^{-16}$ on random elements of the regular sector.
 
 **Two sectors, two shapes.** On $\Sigma_{11}$ the element has two distinct eigenvalues and a two-mode flow with reciprocal exponents. On $\Sigma_{10}$ it is a scalar times a unipotent, the eigenvalues coincide, the angles are tied by $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, the axes are orthogonal, and the closed form reduces four parameters to one complex number, one angle and a frame.
 
@@ -562,7 +562,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The doubling rule governs every factor.** The scale doubles, the phase cancels, the boost and the rotor double. A boost of rapidity $0.9$ has one-slot eigenvalues $1.568312$ and $0.637628$ and two-slot eigenvalues $2.459603$, $0.406570$, $1$, $1$.
 
-**The logarithm exists on the units and nowhere else.** The exponential is onto the unit group with the null cone excluded, the fibre is the kernel, a lattice only on the diagonal part, and on the degenerate sector the logarithm is exact and truncated.
+**The logarithm exists on the invertibles and nowhere else.** The exponential is onto the group of invertibles with the null cone excluded, the fibre is the kernel, a lattice only on the diagonal part, and on the degenerate sector the logarithm is exact and truncated.
 
 **Eight readings, each with a boundary.** The word is a flow split into rate and frame; the two modes are the two directions of one flow; the mass is the modulus and the only invariant; the amplitude is the Hermitian factor; the quaternion modulus is the spatial frame; the degenerate case is the flow that cannot be split; the half-angle is the spinor and the full angle is the vector; the factor of two is where the errors live. Each is the archive's, each is bounded, and none is a new physical claim.
 

@@ -57,7 +57,7 @@ That group is the kernel of the double cover and the reason every conjugation is
 
 ### What the Set Is Not
 
-The unit-norm set is not compact, and it is not the group of units. The group of units is $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\cong GL_2(\mathbb{C})$, of real dimension eight, and $G$ is the kernel of the norm inside it. The distinction matters in *The Two Actions of One Group: Adjoint and Congruence*, where one action is defined for all of $\mathbb{B}^{\times}$ and the other is not.
+The unit-norm set is not compact, and it is not the group of invertibles. The group of invertibles is $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\cong GL_2(\mathbb{C})$, of real dimension eight, and $G$ is the kernel of the norm inside it. The distinction matters in *The Two Actions of One Group: Adjoint and Congruence*, where one action is defined for all of $\mathbb{B}^{\times}$ and the other is not.
 
 ## Two Descriptions of One Element
 
@@ -129,7 +129,7 @@ The two parametrisations are therefore coordinates and not just labels. Every el
 
 This is the one count that readers get wrong, and the two answers are different for two different reasons.
 
-- The **associative algebra** $\mathbb{B}$ has real dimension eight. The group is cut out of it by the norm condition, which is one complex equation, so the group has six. The two directions lost are the scale $r$ and the central phase $\theta_{\mathrm{pha}}$: a unit-norm element has neither, and every element of the group of units is a positive scale times a central phase times an element of $G$.
+- The **associative algebra** $\mathbb{B}$ has real dimension eight. The group is cut out of it by the norm condition, which is one complex equation, so the group has six. The two directions lost are the scale $r$ and the central phase $\theta_{\mathrm{pha}}$: a unit-norm element has neither, and every element of the group of invertibles is a positive scale times a central phase times an element of $G$.
 - The **Lie algebra** of $G$ has real dimension six, and it is the traceless part. It is *not* the associative algebra under the commutator, which has eight; the two extra directions are the centre, and the centre exponentiates to the scale and to the phase, neither of which lies in $G$.
 
 So "the group is six-dimensional while the algebra is eight" is true of the associative algebra and false of the Lie algebra, and a sentence that does not say which is meant cannot be checked.
@@ -191,7 +191,7 @@ The chart is a local diffeomorphism away from its cut and it covers the group ex
 
 - **The axes meet at the far point.** With a fixed axis, the rotation family is $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, so $\theta_{\mathrm{axr}}$ and $\theta_{\mathrm{axr}}+4\pi$ give the same element and $\theta_{\mathrm{axr}}+2\pi$ gives its negative. The chart is one-to-one on $0\le\theta_{\mathrm{axr}}<4\pi$ along each fixed axis, and the two ends coincide.
 - **One element, every axis.** At $\theta_{\mathrm{axr}}=2\pi$ every axis gives the same element, $-e_t$. The sphere of radius $\pi$ in the rotation part of the algebra therefore collapses to a point of the group, and the chart is not injective on any neighbourhood of that sphere.
-- **The identity is not isolated in the fibre.** $\exp(2\pi k\,\vec u)=e_t$ and $\exp((2k+1)\pi\,\vec u)=-e_t$ for every integer $k$ and every unit $\vec u$, so the fibre over each of the two central elements contains a whole family of spheres.
+- **The identity is not isolated in the fibre.** $\exp(2\pi k\,\vec u)=e_t$ and $\exp((2k+1)\pi\,\vec u)=-e_t$ for every integer $k$ and every invertible $\vec u$, so the fibre over each of the two central elements contains a whole family of spheres.
 - **The rapidity is injective but unbounded.** Along a fixed boost axis the map $\theta_{\mathrm{rpd}}\mapsto\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ is injective on $\mathbb{R}$, since $\cosh$ and $\sinh$ are injective on the pair. The non-injectivity of the chart is entirely the compact direction's.
 
 ### Why the Fibre Matters Physically

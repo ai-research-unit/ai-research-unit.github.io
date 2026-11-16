@@ -78,7 +78,7 @@ $$
 
 This factor is the dimension of the carrier and nothing else. It is the reason the matrix norm is written with the bracket: the bar belongs to the element, where the scalar part is the one half of the trace.
 
-**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the unit group and $N$-degenerate the non-units. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the group of invertibles and $N$-degenerate the non-invertibles. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
 
 ### The Unitary Convention
 
@@ -126,7 +126,7 @@ of real dimension four, written upright because it is a group. Its elements are 
 - the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;
 - the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.
 
-A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is $N$-norm one and $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\neq e_t$. A $*$-unitary element whose determinant is not one is $*$-unitary and is not a unit element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
+A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is $N$-norm one and $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\neq e_t$. A $*$-unitary element whose determinant is not one is $*$-unitary and is not invertible element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
 
 **The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the quaternion sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of *Complex Algebra* and *The Group of Involutions and the Two Subspaces of the Complex Space*, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of *Complex Norm and Invertibility*, and the Lie-group structure and exponential of *Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
+This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of invertibles. It uses the algebra and the two distinguished subspaces of *Complex Algebra* and *The Group of Involutions and the Two Subspaces of the Complex Space*, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of *Complex Norm and Invertibility*, and the Lie-group structure and exponential of *Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
 
-The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of units is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the units and their connectedness are the subject of the companion article *Complex Exponential and Lie Group Structure*; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.
+The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of invertibles is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the invertibles and their connectedness are the subject of the companion article *Complex Exponential and Lie Group Structure*; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.
 
 ## The Algebra as a Topological Space
 
@@ -15,7 +15,7 @@ $$
 Q = q+i q' \longmapsto (q,q')
 $$
 
-is a linear isometry of $(\mathbb{C}, |\cdot|)$ onto the Euclidean plane $\mathbb{R}^2$. The topology of $\mathbb{C}$ is therefore the Euclidean topology of $\mathbb{R}^2$; multiplication is bilinear, hence continuous, so $\mathbb{C}$ is a topological algebra over $\mathbb{R}$; and inversion is continuous on the units, so $\mathbb{C}^\times$ is a topological group.
+is a linear isometry of $(\mathbb{C}, |\cdot|)$ onto the Euclidean plane $\mathbb{R}^2$. The topology of $\mathbb{C}$ is therefore the Euclidean topology of $\mathbb{R}^2$; multiplication is bilinear, hence continuous, so $\mathbb{C}$ is a topological algebra over $\mathbb{R}$; and inversion is continuous on the invertibles, so $\mathbb{C}^\times$ is a topological group.
 
 **Theorem (contractibility).** $\mathbb{C}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}) = 0$ for all $n \ge 1$.
 
@@ -56,9 +56,9 @@ because the norm is positive definite and equals the square of the Euclidean nor
 
 The compactness is exactly the multiplicativity of the complex norm together with the definiteness of the form: the unit sphere is a group because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and the definite form makes the level set bounded. This is the base case of the theorem that the unit sphere of a normed division algebra with associative multiplication carries a Lie-group structure; the smooth structure that structure needs is the subject of the companion article *Complex Exponential and Lie Group Structure*, and only the group and its topology are used here. The cases are $S^0$, $S^1$, $S^3$, the finite list of spheres that carry such a structure, and $S^1$ is the complex member.
 
-## The Group of Units
+## The Group of Invertibles
 
-The **group of units** is
+The **group of invertibles** is
 
 $$
 \mathbb{C}^\times = \{Q : \langle Q\rangle_{*} \neq 0\} = \mathbb{C} \setminus \{0\},
@@ -95,7 +95,7 @@ traversed once round the circle; the integer attached to a closed loop is its **
 
 ## The Punctured Plane and Its Fundamental Group
 
-The punctured plane is the group of units, and it is the standard example of a space that is connected but not simply connected.
+The punctured plane is the group of invertibles, and it is the standard example of a space that is connected but not simply connected.
 
 - **Path-connected.** Every $Q \neq 0$ joins to the circle by the rescaling $t \mapsto Q/\bigl(\sqrt{\langle Q\rangle_{*}}\bigr)^{\,t}$, and any two points of the circle join by an arc; the concatenation is a path from $Q$ to $1$ through nonzero elements.
 - **Not simply connected.** The loop $\gamma(t) = \exp(2\pi i t)$ is not null-homotopic, its winding number being $1 \neq 0$; equivalently there is no continuous branch of the argument $\arg : \mathbb{C}^\times \to \mathbb{R}$.
@@ -109,7 +109,7 @@ is a homeomorphism onto $\mathbb{C}^\times$ after the identification $(\theta + 
 
 ## The Boundary of the Polar Decomposition
 
-The polar parametrisation of the group of units,
+The polar parametrisation of the group of invertibles,
 
 $$
 \Phi : \mathbb{R}_{>0} \times \mathbb{R} \longrightarrow \mathbb{C}^\times, \qquad \Phi(r, \theta) = r \exp(i\theta),
@@ -130,7 +130,7 @@ the **Riemann sphere**, and $\mathbb{C}^\times$ becomes the sphere with two poin
 
 The complex algebra $\mathbb{C} \cong \mathbb{R}^2$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}) = 0$ for all $n \ge 1$; the two distinguished subspaces are contractible copies of the line. The unit circle $S^1 = \{\sqrt{\langle Q\rangle_{*}} = 1\} = \{\langle Q\rangle_{*} = 1\}$ is a compact, connected, abelian topological group isomorphic to $\mathrm{U}(1) \cong SO(2) \cong \mathbb{R}/2\pi\mathbb{Z}$; it is a group because the norm is definite and multiplicative, so that the Euclidean unit sphere and the norm-one level set coincide.
 
-The group of units is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $Q \mapsto Q/\sqrt{\langle Q\rangle_{*}}$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto \exp(2\pi i t)$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has **no boundary**, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.
+The group of invertibles is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $Q \mapsto Q/\sqrt{\langle Q\rangle_{*}}$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto \exp(2\pi i t)$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has **no boundary**, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.
 
 ## Summary of Notation
 
@@ -141,7 +141,7 @@ The group of units is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setmin
 | $\langle Q\rangle_{*} = q^2+q'^2$ | the norm; definite, the square of the modulus |
 | $\sqrt{\langle Q\rangle_{*}}$ | the Euclidean norm and modulus |
 | $S^1 = \mathrm{U}(1) = \{Q : \langle Q\rangle_{*} = 1\}$ | the unit circle, a compact topological group, $\cong SO(2) \cong \mathbb{R}/2\pi\mathbb{Z}$ |
-| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of units, the punctured plane; $\simeq S^1$ |
+| $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of invertibles, the punctured plane; $\simeq S^1$ |
 | $\pi(Q) = Q/\sqrt{\langle Q\rangle_{*}}$ | the retraction; $H(t,Q) = Q/\bigl(\sqrt{\langle Q\rangle_{*}}\bigr)^{\,t}$ the deformation retraction |
 | $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$ | the fundamental group, the winding number |
 | $\Phi(r,\theta) = r\exp(i\theta)$ | the polar parametrisation, covering $\mathbb{C}^\times$ |

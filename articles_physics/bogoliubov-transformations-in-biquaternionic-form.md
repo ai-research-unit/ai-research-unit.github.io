@@ -82,7 +82,7 @@ $$
 $$
 This is the $n=1$ instance of the general parametrization, and both $\vec b$ and $\vec b^{*}$ are elements of $\mathbb{B}$ for every $\alpha,\beta$.
 
-**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by a unit, $L_a\tilde{Ξ}=a\tilde{Ξ}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
+**The Majorana pair of the mode.** The two Hermitian combinations $m_{\mathrm{fop},1}=\vec\Upsilon_x+\vec\Upsilon_y=i\vec e_x$ and $m_{\mathrm{fop},2}=-i(\vec\Upsilon_x-\vec\Upsilon_y)=i\vec e_y$ obey $\{m_{\mathrm{fop},\eta},m_{\mathrm{fop},l}\}=2\delta_{\eta l}e_t$ for $k,l=1,2$, so they are the one-mode instance of the Majorana operators of the previous section. Both are left multiplications by an invertible element, $L_a\tilde{Ξ}=a\tilde{Ξ}$ with $a$ of norm one, hence the basis operators $m_{\mathrm{fop},1}=iL_x$ and $m_{\mathrm{fop},2}=iL_y$; for $n\ge2$ the Majorana operators are operators of the mode algebra, which the algebra $\mathbb{B}$ does not contain.
 
 **The first anticommutator.** Using $\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t$ and $\{\vec\Upsilon_x,\vec\Upsilon_x\}=\{\vec\Upsilon_y,\vec\Upsilon_y\}=0$,
 $$
@@ -157,7 +157,7 @@ The group-theoretic statement is worth restating physically. Fermionic squeezing
 
 ## What the Surviving Transformations Do
 
-Both branches act geometrically on the state space, and the action is the action of the unit group of $\mathbb{B}$.
+Both branches act geometrically on the state space, and the action is the action of the group of invertibles of $\mathbb{B}$.
 
 **Phases are the gauge symmetry of the mode.** A phase $\vec\Upsilon_x\mapsto \exp(i\vartheta_{\mathrm{par}})\vec\Upsilon_x$ is conjugation by $\tilde Q_{\mathrm{par},\vartheta}=\exp(-i\vartheta_{\mathrm{par}}\tilde\Pi_-)$, which commutes with the number operator and therefore fixes it and both idempotents:
 $$
@@ -169,7 +169,7 @@ $$
 $$
 The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
 
-**The unit group acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
+**The group of invertibles acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
 $$
 \tilde H_\Psi \;\longmapsto\; \tilde U\,\tilde H_\Psi\,\tilde U^{*} ,
 \qquad \tilde Q\in \mathrm{U}(2),

@@ -50,9 +50,9 @@ It is open and dense, and it has exactly six connected components, the six open 
 
 The open quadrants of positive norm are $Q_+=\{t>|b|\}$ and $Q_-=\{t<-|b|\}$. Each is convex, but the removed real axis cuts $Q_+$ into the components $b>0$ and $b<0$, and cuts $Q_-$ similarly. The negative-norm region $|t|<|b|$ contributes the components $b>|t|$ and $b<-|t|$. Hence four components have positive norm and two have negative norm.
 
-**Proposition (the elements of $\Sigma_{11}$).** Every element of $\Sigma_{11}$ is a unit with two distinct real eigenvalues $t+b$ and $t-b$, and spectral decomposition $q=(t+b)e_+ +(t-b)e_-$.
+**Proposition (the elements of $\Sigma_{11}$).** Every element of $\Sigma_{11}$ is invertible with two distinct real eigenvalues $t+b$ and $t-b$, and spectral decomposition $q=(t+b)e_+ +(t-b)e_-$.
 
-*Proof.* The element is not scalar because $b\neq0$, so the eigenvalues are distinct. The norm is non-zero, so the element is a unit, with inverse $\bar q/(q\bar q)$. The idempotent expansion is the spectral decomposition.
+*Proof.* The element is not scalar because $b\neq0$, so the eigenvalues are distinct. The norm is non-zero, so the element is invertible, with inverse $\bar q/(q\bar q)$. The idempotent expansion is the spectral decomposition.
 
 The two open quadrants $Q_+\cup Q_-$ are not the whole sector: after $b=0$ is removed each splits in two, and with the two negative-norm sectors the total is six.
 
@@ -84,7 +84,7 @@ The two lines annihilate each other: $\operatorname{ann}(2t e_+)=\mathbb{R}e_-$ 
 
 **The sector $\Sigma_{10}$ is the real axis minus the origin: the scalar units, with a repeated eigenvalue.**
 
-**Theorem (the real half-lines).** The sector $\Sigma_{10}$ is $\mathbb{R}^{\times}=\{t\neq0,\ b=0\}$. Every element is the scalar $q=t$, a unit with $q^{-1}=1/t$, norm $t^2>0$, spectrum $\{t\}$ and minimal polynomial $X-t$. Its spectral decomposition is the one-term writing $q=t\cdot1$.
+**Theorem (the real half-lines).** The sector $\Sigma_{10}$ is $\mathbb{R}^{\times}=\{t\neq0,\ b=0\}$. Every element is the scalar $q=t$, an invertible element with $q^{-1}=1/t$, norm $t^2>0$, spectrum $\{t\}$ and minimal polynomial $X-t$. Its spectral decomposition is the one-term writing $q=t\cdot1$.
 
 *Proof.* The conditions are $b=0$ and $t^2-b^2=t^2\neq0$, hence $t\neq0$. The inverse is $1/t$, the characteristic polynomial is $(X-t)^2$, and the minimal polynomial is $X-t$ because $q-t=0$.
 
@@ -150,7 +150,7 @@ Unlike *[The Spectrum](the-spectrum.html)*, whose degenerate cone carries nilpot
 
 ## Summary
 
-The four sectors are the truth-value sectors of the split norm and the spectral condition. $\Sigma_{11}$ is the complement of the three lines $b=0$, $t=b$ and $t=-b$; it is open and dense, of dimension two, with six components: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each split by the removed real axis, and the negative-norm sectors $b>|t|$ and $b<-|t|$. Its elements are units with distinct eigenvalues.
+The four sectors are the truth-value sectors of the split norm and the spectral condition. $\Sigma_{11}$ is the complement of the three lines $b=0$, $t=b$ and $t=-b$; it is open and dense, of dimension two, with six components: the positive-norm quadrants $t>|b|$ and $t<-|b|$, each split by the removed real axis, and the negative-norm sectors $b>|t|$ and $b<-|t|$. Its elements are invertible with distinct eigenvalues.
 
 $\Sigma_{01}$ is the two null lines with the origin removed, of dimension one and four rays; its elements are zero divisors $2t e_\pm$ with eigenvalues $2t$ and $0$. $\Sigma_{10}$ is the real axis minus the origin, of dimension one and two half-lines; its elements are scalar units with repeated eigenvalue $t$. $\Sigma_{00}$ is the origin, of dimension zero, the only element degenerate for both and not a zero divisor.
 

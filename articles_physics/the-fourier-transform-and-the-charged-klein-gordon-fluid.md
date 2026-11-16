@@ -95,7 +95,7 @@ and in the canonical variable the support is the same shell translated the other
 
 ## Open Questions
 
-1. **The Klein region's support.** §*The Translated Shell* finds the translated shell crossing $k_t'=0$ at $\varkappa a_t'>mc^{2}$. Whether the fluid's velocity remains a unit on the part of the support beyond the crossing, and what the chart does where the support is two-branched on both sides of the plane, is not settled here.
+1. **The Klein region's support.** §*The Translated Shell* finds the translated shell crossing $k_t'=0$ at $\varkappa a_t'>mc^{2}$. Whether the fluid's velocity remains an invertible element on the part of the support beyond the crossing, and what the chart does where the support is two-branched on both sides of the plane, is not settled here.
 
 2. **A varying field.** A uniform $\vec B$ is a linear $\vec A$ and admits no mode, so the vorticity in a uniform field is not analysable mode by mode. Whether the Landau-like structure of the charged scalar fluid in this chart is a statement about the support or about a basis of non-plane-wave modes is open.
 

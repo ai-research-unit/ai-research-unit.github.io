@@ -28,7 +28,7 @@ Its projection is the scalar part $\mathrm{Sc}(\tilde q)=\tfrac12(\tilde q+\tild
 
 **Role.** The scalar subspace is a subalgebra of $\mathbb{H}$ isomorphic to $\mathbb{R}$; it is the **centre** of the algebra, since it commutes with every element and every central element is scalar; and it is closed under inversion, the inverse of a nonzero scalar being the scalar $1/s$. It is the unique copy of the field in $\mathbb{H}$ up to the choice of a real unit, and it is the base of the algebra as a free module, the whole of $\mathbb{H}$ being a free module of rank four over it.
 
-**Norm.** On $\mathbb{R}_{\mathbb{H}}$ the quaternion norm is the square, $\langle s\rangle_{\natural}=s^2$, and it is positive definite on the line; the nonzero scalars are exactly the units of the line.
+**Norm.** On $\mathbb{R}_{\mathbb{H}}$ the quaternion norm is the square, $\langle s\rangle_{\natural}=s^2$, and it is positive definite on the line; the nonzero scalars are exactly the invertibles of the line.
 
 ## The Vector Subspace
 
@@ -54,7 +54,7 @@ so the cross product is recovered by $\vec q_1\times\vec q_2=\tfrac12(\vec q_1\v
 
 Together with the decomposition $\tilde q=\mathrm{Sc}(\tilde q)+\vec q$ the two restrictions give the orthogonal sum
 $$ \boxed{\; \langle\tilde q\rangle_{\natural}=\langle\mathrm{Sc}(\tilde q)\rangle_{\natural}+\langle \vec q\rangle_{\natural}=q_t^2+|\vec q|^2 \;} ,$$
-the two subspaces being orthogonal for the associated inner product; this is *Norm and Invertibility in the Quaternion Algebra*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category: every nonzero element of either subspace is a unit, the scalar line and the vector space both meeting the singular set only at zero.
+the two subspaces being orthogonal for the associated inner product; this is *Norm and Invertibility in the Quaternion Algebra*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category: every nonzero element of either subspace is invertible, the scalar line and the vector space both meeting the singular set only at zero.
 
 ## The Two-Subspace Lattice and the Absence of the Full Lattice
 

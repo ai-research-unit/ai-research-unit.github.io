@@ -95,7 +95,7 @@ The non-scalar semisimple type has two Peirce sub-cases, which the decomposition
 | semisimple, unit | $B^2\neq0$, $Q_t^2+B^2\neq0$ | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$, both $\lambda_\pm\neq0$ | two diagonal corners |
 | semisimple, zero divisor | $B^2\neq0$, $Q_t^2+B^2=0$ | $\tilde Q=\lambda\tilde\Pi$, one $\lambda\neq0$ | one diagonal corner |
 
-The condition of the second row is the vanishing of the constant term of $p_{\tilde Q}$, that is $\tilde Q\tilde Q^{\natural}=0$. One eigenvalue is then zero, the element is a non-zero complex multiple of a non-trivial idempotent, and it is a zero divisor. The first row is a unit: its inverse is $\lambda_+^{-1}\tilde\Pi_++\lambda_-^{-1}\tilde\Pi_-$. Both rows have $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$, so the Jordan–Chevalley decomposition does not see the difference; the Peirce decomposition does.
+The condition of the second row is the vanishing of the constant term of $p_{\tilde Q}$, that is $\tilde Q\tilde Q^{\natural}=0$. One eigenvalue is then zero, the element is a non-zero complex multiple of a non-trivial idempotent, and it is a zero divisor. The first row is invertible: its inverse is $\lambda_+^{-1}\tilde\Pi_++\lambda_-^{-1}\tilde\Pi_-$. Both rows have $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$, so the Jordan–Chevalley decomposition does not see the difference; the Peirce decomposition does.
 
 **Remark (the two words).** *Semisimple* is a property of the minimal polynomial, and it includes the scalar line; *regular* in the spectral articles means $B^2\neq0$, which is the same condition as semisimple for a non-scalar element, while the scalar line is semisimple and spectrally degenerate at once. *Unit* and *zero divisor* are properties of the product, and the second table is their restriction to the non-scalar semisimple type.
 
@@ -129,9 +129,9 @@ So the nilpotent part has index two, never higher: the element has a single Jord
 
 ## The Multiplicative Form
 
-**For a unit, the additive split has a multiplicative form: a product of a semisimple element and a unipotent one. For a semisimple zero divisor the only product is trivial, and for a nilpotent element there is none.**
+**For an invertible element, the additive split has a multiplicative form: a product of a semisimple element and a unipotent one. For a semisimple zero divisor the only product is trivial, and for a nilpotent element there is none.**
 
-**Corollary (multiplicative form).** Let $\tilde Q$ be a unit. Then
+**Corollary (multiplicative form).** Let $\tilde Q$ be an invertible element. Then
 
 $$
 \tilde Q=\tilde Q_s\tilde U,\qquad \tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon,\qquad \tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon,
@@ -139,11 +139,11 @@ $$
 
 with $\tilde Q_s$ semisimple, $\tilde U$ unipotent, and $\tilde Q_s\tilde U=\tilde U\tilde Q_s$.
 
-*Proof.* The element $\tilde Q_s$ is a unit in both cases: in the semisimple case $\tilde Q_s=\tilde Q$; in the defective case $\tilde Q_s=Q_te_t$ with $Q_t\neq0$, because $\tilde Q$ is a unit, $\tilde Q^{\natural}$ is a unit, and $\tilde Q\tilde Q^{\natural}=Q_t^2e_t$ is therefore non-zero. Then $\tilde Q_s^{-1}\vec\Upsilon$ is defined, it commutes with $\tilde Q_s$, and $(\tilde Q_s^{-1}\vec\Upsilon)^2=\tilde Q_s^{-2}\vec\Upsilon^2=0$. Hence $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ is unipotent, $\tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon$, and $\tilde Q_s\tilde U=\tilde Q_s+\vec\Upsilon=\tilde Q$.
+*Proof.* The element $\tilde Q_s$ is invertible in both cases: in the semisimple case $\tilde Q_s=\tilde Q$; in the defective case $\tilde Q_s=Q_te_t$ with $Q_t\neq0$, because $\tilde Q$ is invertible, $\tilde Q^{\natural}$ is invertible, and $\tilde Q\tilde Q^{\natural}=Q_t^2e_t$ is therefore non-zero. Then $\tilde Q_s^{-1}\vec\Upsilon$ is defined, it commutes with $\tilde Q_s$, and $(\tilde Q_s^{-1}\vec\Upsilon)^2=\tilde Q_s^{-2}\vec\Upsilon^2=0$. Hence $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ is unipotent, $\tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon$, and $\tilde Q_s\tilde U=\tilde Q_s+\vec\Upsilon=\tilde Q$.
 
-**Remark (the obstruction).** The hypothesis is not removable. A semisimple zero divisor has $\tilde Q_s=\tilde Q$ not a unit, so $\tilde Q_s^{-1}$ does not exist. Both factors of a product commute with $\tilde Q$, hence lie in the centraliser $\mathbb{C}\times\mathbb{C}$, which has no non-zero nilpotent; so $\tilde U=e_t$ and the only product is the trivial $\tilde Q=\tilde Q\,e_t$. A nilpotent element has no product at all: a semisimple element of its centraliser is a scalar $ae_t$, and $ae_t(e_t+b\tilde Q)=ae_t+ab\tilde Q$ has scalar part $a$, which must vanish, leaving $0$. The multiplicative form is therefore a theorem about the unit group, not about the algebra: it is the biquaternion case of the multiplicative Jordan decomposition, and its natural domain is $\mathbb{B}^{\times}$.
+**Remark (the obstruction).** The hypothesis is not removable. A semisimple zero divisor has $\tilde Q_s=\tilde Q$ not an invertible element, so $\tilde Q_s^{-1}$ does not exist. Both factors of a product commute with $\tilde Q$, hence lie in the centraliser $\mathbb{C}\times\mathbb{C}$, which has no non-zero nilpotent; so $\tilde U=e_t$ and the only product is the trivial $\tilde Q=\tilde Q\,e_t$. A nilpotent element has no product at all: a semisimple element of its centraliser is a scalar $ae_t$, and $ae_t(e_t+b\tilde Q)=ae_t+ab\tilde Q$ has scalar part $a$, which must vanish, leaving $0$. The multiplicative form is therefore a theorem about the group of invertibles, not about the algebra: it is the biquaternion case of the multiplicative Jordan decomposition, and its natural domain is $\mathbb{B}^{\times}$.
 
-**Remark (no form is used).** The proof uses only the inverse of $\tilde Q_s$, not a norm. The criterion that $\tilde Q$ is a unit is the existence of a two-sided inverse; the identity $\tilde Q\tilde Q^{\natural}=Q_t^2e_t$ in the defective case is the product computation
+**Remark (no form is used).** The proof uses only the inverse of $\tilde Q_s$, not a norm. The criterion that $\tilde Q$ is invertible is the existence of a two-sided inverse; the identity $\tilde Q\tilde Q^{\natural}=Q_t^2e_t$ in the defective case is the product computation
 
 $$
 (Q_te_t+\vec Q)(Q_te_t-\vec Q)=Q_t^2e_t-\vec Q^2=Q_t^2e_t,
@@ -190,7 +190,7 @@ The comparison is exact. In the semisimple case the Peirce decomposition at the 
 
 **Five elements, one per type, in the order of the three cases, with the decomposition computed from the formulas.**
 
-### A Semisimple Unit
+### A Semisimple Invertible
 
 Take $\tilde Q=2e_t+\vec e_x$. Then $B^2=1$, $B=1$, and
 
@@ -200,7 +200,7 @@ $$
 \tilde Q=(2+i)\tilde\Pi_++(2-i)\tilde\Pi_- .
 $$
 
-The element is semisimple, $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$. It is a unit, with inverse $(2+i)^{-1}\tilde\Pi_++(2-i)^{-1}\tilde\Pi_-$, and its multiplicative form is $\tilde Q=\tilde Q\,e_t$.
+The element is semisimple, $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$. It is invertible, with inverse $(2+i)^{-1}\tilde\Pi_++(2-i)^{-1}\tilde\Pi_-$, and its multiplicative form is $\tilde Q=\tilde Q\,e_t$.
 
 ### A Semisimple Zero Divisor
 
@@ -230,7 +230,7 @@ Q_t=2,\qquad
 \vec Q^2=\vec e_x^2+i(\vec e_x\vec e_y+\vec e_y\vec e_x)+i^2\vec e_y^2=-e_t+e_t=0 .
 $$
 
-Hence $\tilde Q_s=2e_t$, $\vec\Upsilon=\vec Q$, and $\vec\Upsilon^2=0$. The element is a unit, and the multiplicative form is
+Hence $\tilde Q_s=2e_t$, $\vec\Upsilon=\vec Q$, and $\vec\Upsilon^2=0$. The element is invertible, and the multiplicative form is
 
 $$
 \tilde Q=2\left(e_t+\frac{\vec e_x+i\vec e_y}{2}\right)=\tilde Q_s\tilde U,\qquad
@@ -260,7 +260,7 @@ There are four minimal-polynomial types, read first by the discriminant and then
 
 In a frame adapted to the element, $\tilde Q_s$ is diagonal and $\vec\Upsilon$ lies in a single mixed corner. The mixed corner is square-zero, so $\vec\Upsilon^2=0$ and the nilpotent index is at most two. This is the corner form of the theorem: the diagonal carries the semisimple part, the mixed corner carries the nilpotent part, and the Peirce idempotents are the idempotents of the element. The spectral frame gives the eigenvalue decomposition; the defective frame gives the Jordan basis; the discriminant chooses between them.
 
-For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_s\tilde U$ with $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ unipotent and $\tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon$. For a semisimple zero divisor the multiplicative form collapses to the trivial product, because $\tilde Q_s$ is not a unit and the centraliser has no non-zero nilpotent; a nilpotent element has no product at all. The whole article uses the product, the scalar part and the characteristic polynomial. No form, no norm, no pairing and no matrix is used. The canonical defective frame of the Jordan basis article is built from the element and the corner condition; this article replaces it by an arbitrary adapted frame, so that the theorem and its corner reading stay algebraic.
+For an invertible element, the additive split gives the multiplicative form $\tilde Q=\tilde Q_s\tilde U$ with $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ unipotent and $\tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon$. For a semisimple zero divisor the multiplicative form collapses to the trivial product, because $\tilde Q_s$ is not invertible and the centraliser has no non-zero nilpotent; a nilpotent element has no product at all. The whole article uses the product, the scalar part and the characteristic polynomial. No form, no norm, no pairing and no matrix is used. The canonical defective frame of the Jordan basis article is built from the element and the corner condition; this article replaces it by an arbitrary adapted frame, so that the theorem and its corner reading stay algebraic.
 
 ## Summary of Notation
 
@@ -277,7 +277,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_
 | $e,e'$ | a defective frame, with $\vec Q\in e\mathbb{B}e'$ |
 | $\mathbb{B}_{\sigma\tau}=\tilde\Pi_\sigma\mathbb{B}\tilde\Pi_\tau$ | a Peirce corner |
 | $\vec\Upsilon_x,\vec\Upsilon_y$ | the mixed generators of the standard frame |
-| $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ | the unipotent factor of a unit |
+| $\tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon$ | the unipotent factor of an invertible element |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, for $B^2\neq0$ |
 
 ## Further Reading
@@ -286,7 +286,7 @@ For a unit, the additive split gives the multiplicative form $\tilde Q=\tilde Q_
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the spectral frame, the root and the eigenbasis.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the defective sector, the support idempotents and the Jordan basis.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.
-- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the units, the zero divisors and their two strata.
+- [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the invertibles, the zero divisors and their two strata.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the general theorem, its uniqueness and the multiplicative form.
 - [The Eigenvalue Decomposition in a Jordan Algebra](the-eigenvalue-decomposition-in-a-jordan-algebra.html), for the spectral idempotents read as Peirce idempotents.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan block behind the defective case.

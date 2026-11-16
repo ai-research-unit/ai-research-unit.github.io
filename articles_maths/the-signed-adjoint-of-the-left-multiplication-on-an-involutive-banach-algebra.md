@@ -67,7 +67,7 @@ and its adjoint is $\Sigma^\alpha_{\delta(r),\delta(s)} = \ell_{\delta(r)}R_{\de
 
 **Example (the matrix algebra).** For $A = M_n(\mathbb{C})$ with the transpose-involution and the trace form, the signed left multiplication by $X$ has adjoint the signed left multiplication by $\delta(X) = X^{\mathsf{T}}$ in the graded sense; the self-adjoint signed left multiplications are the symmetric graded multiplications, and the unitary ones satisfy $\delta(X)\alpha(X) = 1$.
 
-**Example (the commutative algebra).** For a commutative $A$ the kernel of the one-sided parametrisation is trivial on the units, the self-adjoint signed left multiplication is exactly $\delta(r) = r$, and the unitarity condition reads $\delta(r)\alpha(r) = 1$; the Cayley transform of *Adjoints in a Banach Algebra* produces a family of unitary signed left multiplications from the self-adjoint ones.
+**Example (the commutative algebra).** For a commutative $A$ the kernel of the one-sided parametrisation is trivial on the invertibles, the self-adjoint signed left multiplication is exactly $\delta(r) = r$, and the unitarity condition reads $\delta(r)\alpha(r) = 1$; the Cayley transform of *Adjoints in a Banach Algebra* produces a family of unitary signed left multiplications from the self-adjoint ones.
 
 **Example (the group algebra).** For the group algebra of a finite group with $\alpha(g) = g$, $\delta(g) = g^{-1}$ on the group elements, the signed left multiplication by a group element $g$ has adjoint the signed left multiplication by $g^{-1}$; it is unitary because $\delta(g)\alpha(g) = 1$, and the regular graded module is the group algebra acting on itself.
 

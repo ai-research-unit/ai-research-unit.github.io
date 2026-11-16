@@ -19,9 +19,9 @@ $$
 \sum a_n x^n + \sum b_n x^n = \sum (a_n + b_n) x^n, \qquad \left(\sum a_n x^n\right)\left(\sum b_n x^n\right) = \sum_{n \geq 0} \left(\sum_{k=0}^{n} a_k b_{n-k}\right) x^n .
 $$
 
-**Theorem.** With these operations $R[[x]]$ is a commutative ring with identity $1$, the polynomial ring $R[x]$ is a subring, and a series $\sum a_n x^n$ is a unit in $R[[x]]$ if and only if $a_0$ is a unit of $R$. The map $R \to R[[x]]$, $a \mapsto a$, is an injective ring homomorphism.
+**Theorem.** With these operations $R[[x]]$ is a commutative ring with identity $1$, the polynomial ring $R[x]$ is a subring, and a series $\sum a_n x^n$ is invertible in $R[[x]]$ if and only if $a_0$ is invertible in $R$. The map $R \to R[[x]]$, $a \mapsto a$, is an injective ring homomorphism.
 
-**Proof.** The ring axioms are those of $R$ applied componentwise; associativity of the product is the associativity of the convolution $\sum_{k} a_k b_{n-k}$, which is finite for each $n$. If $a_0$ is a unit then the coefficients of the inverse are determined recursively by $b_0 = a_0^{-1}$ and $b_n = -a_0^{-1}\sum_{k=1}^n a_k b_{n-k}$, and conversely a unit must have invertible constant term because the constant term of a product is the product of the constant terms. The last statement is clear.
+**Proof.** The ring axioms are those of $R$ applied componentwise; associativity of the product is the associativity of the convolution $\sum_{k} a_k b_{n-k}$, which is finite for each $n$. If $a_0$ is invertible then the coefficients of the inverse are determined recursively by $b_0 = a_0^{-1}$ and $b_n = -a_0^{-1}\sum_{k=1}^n a_k b_{n-k}$, and conversely an invertible element must have invertible constant term because the constant term of a product is the product of the constant terms. The last statement is clear.
 
 **Definition.** For a formal power series $A = \sum a_n x^n$ one writes
 
@@ -174,7 +174,7 @@ $$
 
 ### The Lagrange–Bürmann Formula
 
-**Definition.** Let $R$ be a commutative $\mathbb{Q}$-algebra and let $w(x) = \sum_{n \geq 1} w_n x^n$ have $w_1$ a unit. Then $w$ has a compositional inverse $\bar w$ with $w(\bar w(x)) = x = \bar w(w(x))$.
+**Definition.** Let $R$ be a commutative $\mathbb{Q}$-algebra and let $w(x) = \sum_{n \geq 1} w_n x^n$ have $w_1$ an invertible element. Then $w$ has a compositional inverse $\bar w$ with $w(\bar w(x)) = x = \bar w(w(x))$.
 
 **Theorem (Lagrange inversion).** With $w$ as above and $n \geq 1$,
 
@@ -270,7 +270,7 @@ and the number of bracelets is obtained by adding the reversal to the group and 
 
 ## Summary
 
-A commutative ring $R$ gives the formal power series ring $R[[x]]$, in which addition is componentwise and multiplication is the Cauchy convolution; a series is a unit exactly when its constant term is a unit, the derivation is formal and satisfies the usual rules, and the logarithm and exponential exist when $R$ is a $\mathbb{Q}$-algebra. The ordinary generating function converts the convolution of sequences into multiplication and the partial-sum operator into multiplication by $(1-x)^{-1}$, while the exponential generating function converts the labelled product into multiplication and the formation of sets of components into the exponential.
+A commutative ring $R$ gives the formal power series ring $R[[x]]$, in which addition is componentwise and multiplication is the Cauchy convolution; a series is invertible exactly when its constant term is invertible, the derivation is formal and satisfies the usual rules, and the logarithm and exponential exist when $R$ is a $\mathbb{Q}$-algebra. The ordinary generating function converts the convolution of sequences into multiplication and the partial-sum operator into multiplication by $(1-x)^{-1}$, while the exponential generating function converts the labelled product into multiplication and the formation of sets of components into the exponential.
 
 The binomial coefficients satisfy the Pascal identity, the binomial theorem and Vandermonde's identity, with generating function $\sum_n \binom{n}{k} x^n = x^k/(1-x)^{k+1}$. The Stirling numbers of the second kind satisfy $S(n+1,k) = kS(n,k) + S(n,k-1)$ with exponential generating function $(\exp(x)-1)^k/k!$, the Bell numbers have exponential generating function $\exp(\exp(x)-1)$, and the Catalan numbers satisfy $C = 1 + xC^2$ with $C_n = \binom{2n}{n}/(n+1)$. The partition function has generating function $\prod_k(1-x^k)^{-1}$, Euler's pentagonal theorem gives its recurrence, and the arithmetic functions form a commutative ring under Dirichlet convolution in which $\mu * \zeta = \varepsilon$ and Möbius inversion holds; the Euler totient, divisor and Liouville functions have the classical Dirichlet series. Lagrange inversion inverts a compositional relation and yields Cayley's formula $n^{n-2}$ for the labelled trees, and the asymptotic estimates of Stirling and Hardy–Ramanujan give the growth of the factorial and the partition function. The special functions of $\mathbb{N}$ are thus the combinatorial and arithmetic functions, and their generating functions are the algebraic and analytic encoding of the system's arithmetic.
 

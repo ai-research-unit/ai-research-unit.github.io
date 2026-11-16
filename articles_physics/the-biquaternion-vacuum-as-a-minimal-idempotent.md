@@ -156,7 +156,7 @@ $$
 $$
 So
 $$
-\boxed{\,\langle\tilde\Pi(\vec u)\rangle_{\natural} = 0 \quad\text{for every unit vector } \vec u}
+\boxed{\,\langle\tilde\Pi(\vec u)\rangle_{\natural} = 0 \quad\text{for every invertible element vector } \vec u}
 $$
 and the same computation with $\tilde\Pi_-$ gives $\langle\tilde\Pi_-\rangle_{\natural}=0$. In the language of the biquaternion norm, every minimal idempotent of $\mathbb{B}$ is a **null element**: it lies on the cone $\langle\tilde Q\rangle_{\natural}=0$, which is the zero-divisor cone and the framework's light cone. Equivalently, $\det\mathsf{M}_2(\tilde\Pi(\vec u))=0$, since the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$.
 
@@ -194,7 +194,7 @@ $$
 \qquad
 \tilde\Pi(-\vec u) = \tfrac12\big(e_t - i\vec u\big),
 $$
-and every identity above holds with $\vec u$ in place of $\vec e_z$, because $\vec u^2 = -e_t$ for every unit vector. The family
+and every identity above holds with $\vec u$ in place of $\vec e_z$, because $\vec u^2 = -e_t$ for every invertible element vector. The family
 $$
 \boxed{\;\mathcal{M}_{\text{vac}} \;=\; \big\{\,\tilde\Pi(\vec u) : \vec u\in S^2\,\big\} \;\cong\; S^2\;}
 $$

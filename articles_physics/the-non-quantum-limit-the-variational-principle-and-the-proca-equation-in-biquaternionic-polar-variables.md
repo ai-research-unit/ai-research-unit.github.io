@@ -92,7 +92,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 **The size ratio was checked on a real plane wave.** With $r=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ and the Proca dispersion, the kinetic density is $\tfrac12\omega^{2}\lvert\vec A_0\rvert^{2}\sin^{2}(\omega t')$ and the mass density is $\tfrac12k_m^{2}\lvert\vec A_0\rvert^{2}\cos^{2}(\omega t')$; the ratio is $\omega^{2}\tan^{2}/k_m^{2}$, which is of order one at every time and unbounded near the zeros of the cosine. **The claim that the two are comparable holds at every time and fails only more strongly near the nodes.**
 
-**The constraint was checked to be the trace.** Contracting the equation with the units and taking the scalar part returns $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which is one real equation. **The count matches the parent's.**
+**The constraint was checked to be the trace.** Contracting the equation with the invertibles and taking the scalar part returns $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which is one real equation. **The count matches the parent's.**
 
 **What was not checked.** No solution of the two boxed equations was integrated, and no error estimate was attempted. **The second omission is the result**: an error estimate would be an estimate of a quantity of order one.
 

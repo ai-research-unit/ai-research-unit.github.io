@@ -399,7 +399,7 @@ $$
 $$
 so its four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$. The first factor is the multiplicity and the second the matrix of the element.
 
-**The four left matrices.** Each is the image of a unit,
+**The four left matrices.** Each is the image of an invertible element,
 $$
 L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -739,7 +739,7 @@ iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
 iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
 -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\;}
 $$
-Each is a unit multiple of a basis operator; the left factor is a unit and the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$. The order is timelike, the three spatial, chirality. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Legacy Pauli Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too, and the conjugation of §*The Switch Between the Two Frames* carries the whole basis operator algebra with it.
+Each is an invertible multiple of a basis operator; the left factor is invertible and the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$. The order is timelike, the three spatial, chirality. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §*The Legacy Pauli Gamma Formulation*; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too, and the conjugation of §*The Switch Between the Two Frames* carries the whole basis operator algebra with it.
 
 **The anticommutation relations.**
 $$
@@ -891,7 +891,7 @@ $$
 $$
 with $C_{\Pi}$ the change of §*The Switch Between the Two Frames*, $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. Every identity of this section holds in both displays, because a conjugation preserves products, anticommutators, traces, determinants and spectra; what it does not preserve is the reading of a single entry. In the axis-free display $\gamma_0$ is $iR_{\mathrm{axf},\vec e_x}$ and the four others are four more signed permutations times $i$, so the printed array shows nothing of the Pauli structure. The gamma map is therefore a display of the five basis operators and not the five basis operators themselves.
 
-**The subscript on an element.** Chirality is the subscript: an element is $L$ or $R$, and those are the two values. The chirality of an operator is its slot, and the basis operator that reads the subscript is $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*, printed here $\gamma_5$ with the rest of the gamma display. The letters are the Dirac ones. In the Peirce display $\gamma_5=\operatorname{diag}(-I_2,I_2)$, so $\tilde Q_L$ is the upper block, which is $\tilde{Ξ}=(\tilde{Ξ}_{L},\tilde{Ξ}_{R})$; a display moves the entries and not the values. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript is a function of the element and of the declared frame, so a unit, a product and a general element carry it as well as a state.
+**The subscript on an element.** Chirality is the subscript: an element is $L$ or $R$, and those are the two values. The chirality of an operator is its slot, and the basis operator that reads the subscript is $\mathsf{V}_{\mathrm{vol}}$ of *Special Element Conventions*, §*The Chirality Convention*, printed here $\gamma_5$ with the rest of the gamma display. The letters are the Dirac ones. In the Peirce display $\gamma_5=\operatorname{diag}(-I_2,I_2)$, so $\tilde Q_L$ is the upper block, which is $\tilde{Ξ}=(\tilde{Ξ}_{L},\tilde{Ξ}_{R})$; a display moves the entries and not the values. Every element is a sum of one of each, only the zero element is both, a product takes the letter of its right factor, and left multiplication keeps the letter. The subscript is a function of the element and of the declared frame, so an invertible element, a product and a general element carry it as well as a state.
 
 **The three uses of the two letters.** $L_a$ and $R_b$ are the left and the right multiplier, an operator. $\mathsf M_4^{L}$ and $\mathsf M_4^{R}$ are the left and the right regular matrix, an array. $\tilde Q_L$, $\tilde Q_R$, $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ are the chirality of an element, and only the third applies to every element of the algebra.
 
@@ -977,7 +977,7 @@ $$
 $$
 and it is the reading every numerical check in the corpus is performed with.
 
-**The four unit images.** The images of the units are fixed once, because every article depends on them agreeing:
+**The four unit images.** The images of the invertibles are fixed once, because every article depends on them agreeing:
 $$
 \mathsf{M}_2(e_t)=I_2,\qquad
 \mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1,\qquad
@@ -1009,7 +1009,7 @@ $$
 $$
 and this is the only place in the article where the trace appears. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript, $\operatorname{tr}L(\tilde Q)$. The identity $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\operatorname{Tr}(\tilde Q_1\tilde Q_2)$ is the same reading applied to the plain form, not a probability statement. The same element in the regular $4\times4$ representation has trace $4\,\mathrm{Sc}(\tilde Q)$, twice the trace of the $2\times2$ image: the factor belongs to the presentation, not to the element.
 
-**The determinant is the norm.** The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of units and the unit-norm group are read from it; the derivations are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*.
+**The determinant is the norm.** The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of invertibles and the unit-norm group are read from it; the derivations are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*.
 
 **Never conjugate the matrix entries on their own.** Conjugating the entries of $\mathsf{M}_2(\tilde Q)$ is *not* the image of any involution of the algebra: it negates the images of $\vec e_x$ and $\vec e_z$ while leaving $\mathsf{M}_2(\vec e_y)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\natural$, $\bar{\phantom{Q}}$, ${}^{*}$ and $\flat$ are evaluated through the matrix formulas recorded in *Element and Operator Representations: The Three Actions*, never by conjugating entries.
 

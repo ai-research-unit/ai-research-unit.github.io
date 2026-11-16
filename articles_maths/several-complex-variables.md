@@ -244,7 +244,7 @@ $$
 $$ \boxed{\;f = u \cdot w \;},
 $$
 
-where $u$ is a unit in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $Q_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $m$ and $r$ with $g = mf + r$, where $r$ is a polynomial in $Q_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
+where $u$ is invertible in the local ring and $w$ is a Weierstrass polynomial of degree $k$ in $Q_n$. Moreover, for every $g \in \mathcal{O}_{\mathbb{C}^n,0}$ there are unique $m$ and $r$ with $g = mf + r$, where $r$ is a polynomial in $Q_n$ of degree less than $k$ over $\mathcal{O}_{\mathbb{C}^{n-1},0}$.
 
 **Proof.** The division theorem is proved by the one-variable Weierstrass division applied to the holomorphic functions of $Q_n$ with parameters $Q_{<n}$, using the regularity to divide the polynomial part; the preparation theorem is the special case $g = Q_n^k$. The details are in the references.
 

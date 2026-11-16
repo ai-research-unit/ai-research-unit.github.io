@@ -78,7 +78,7 @@ The second condition is unitality. The algebra endomorphisms that are bijective 
 
 **Theorem (the automorphism group).** $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of complex dimension $3$.
 
-*Proof.* Fix an isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. Every automorphism of a central simple algebra is inner, by the Skolem–Noether theorem, so it has the form $x\mapsto uxu^{-1}$ for a unit $u$. The units that give the identity are the central ones, $\mathbb{C}^{\times}\mathrm{I}_2$. Hence the group is $GL_2(\mathbb{C})/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$, of complex dimension $4-1=3$.
+*Proof.* Fix an isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. Every automorphism of a central simple algebra is inner, by the Skolem–Noether theorem, so it has the form $x\mapsto uxu^{-1}$ for an invertible element $u$. The invertibles that give the identity are the central ones, $\mathbb{C}^{\times}\mathrm{I}_2$. Hence the group is $GL_2(\mathbb{C})/\mathbb{C}^{\times}\cong PGL_2(\mathbb{C})$, of complex dimension $4-1=3$.
 
 **A group, not a subspace.** The automorphisms are cut out by a condition quadratic in the operator, so they form a group and not a subspace: the sum of two automorphisms is generally not an automorphism. The complex dimension three is that of the group, and it agrees with the dimension of its tangent space at the identity, computed in the next subsection.
 
@@ -120,7 +120,7 @@ $$
 
 **Proposition.** $D$ is a $\mathbb{C}$-linear involution, $D^2=\mathrm{id}$, and an anti-automorphism, $D(xy)=D(y)D(x)$. Its matrix in the coefficient basis is $\operatorname{diag}(1,-1,-1,-1)$, so its trace is $-2$ and its determinant $-1$. It is not an algebra endomorphism.
 
-*Proof.* Linearity and the square are read on the basis: $D$ fixes $e_t$ and changes the sign of the three vector units. The anti-automorphism is the standard property of the quaternion conjugation, extended by $\mathbb{C}$-linearity. Multiplicativity fails on the first pair of units: $\vec e_x\vec e_y=\vec e_z$, so $D(\vec e_x\vec e_y)=-\vec e_z$, while $D(\vec e_x)D(\vec e_y)=(-\vec e_x)(-\vec e_y)=\vec e_z$.
+*Proof.* Linearity and the square are read on the basis: $D$ fixes $e_t$ and changes the sign of the three vector units. The anti-automorphism is the standard property of the quaternion conjugation, extended by $\mathbb{C}$-linearity. Multiplicativity fails on the first pair of invertibles: $\vec e_x\vec e_y=\vec e_z$, so $D(\vec e_x\vec e_y)=-\vec e_z$, while $D(\vec e_x)D(\vec e_y)=(-\vec e_x)(-\vec e_y)=\vec e_z$.
 
 **An element of the ambient algebra, not of the group.** $D$ is $\mathbb{C}$-linear, so it is an element of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and it is invertible, with inverse itself. It is not in $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$, because it reverses the product. It is therefore the one conjugation of the algebra that lives inside the complex operator algebra, and the reason the corpus can read it as an operator without leaving the complex-linear layer.
 

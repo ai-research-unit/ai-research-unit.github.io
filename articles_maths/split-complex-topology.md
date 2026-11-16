@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article collects the topology of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ as a space: its contractibility as $\mathbb{R}^2$, its Euclidean unit circle, its null cone as a pair of lines, the link of the null cone, the topology of the group of units and its four components, the deformation retract of the complement of the null cone, and the null cone as the frontier of the four sign classes of ${\mathbb{C}_{\mathrm{spl}}}^\times$. It is the two-dimensional counterpart of the higher-dimensional zero-divisor cones, and the degeneration is complete: the null cone drops from a real hypersurface to two lines, its link from a connected manifold to four points, and the group of units from connected to four components.
+This article collects the topology of the split-complex algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ as a space: its contractibility as $\mathbb{R}^2$, its Euclidean unit circle, its null cone as a pair of lines, the link of the null cone, the topology of the group of invertibles and its four components, the deformation retract of the complement of the null cone, and the null cone as the frontier of the four sign classes of ${\mathbb{C}_{\mathrm{spl}}}^\times$. It is the two-dimensional counterpart of the higher-dimensional zero-divisor cones, and the degeneration is complete: the null cone drops from a real hypersurface to two lines, its link from a connected manifold to four points, and the group of invertibles from connected to four components.
 
 The article uses the algebra of *Split-Complex Algebra*, the norm $\langle Q\rangle_{*}=q^2-q'^2$ and the invertibility criterion of *Norm and Invertibility in the General Split-Complex Algebra*, the zero-divisor set of *Zero Divisors of the Split-Complex Algebra*, the idempotents of *Square Roots of One and the Idempotents of the Split-Complex Algebra*, and the group structure of *Split-Complex Exponential and Lie Group Structure*. No physics is invoked and no new result is claimed.
 
@@ -15,7 +15,7 @@ $$
 Q=q+jq' \longmapsto (q,q')
 $$
 
-of $(\mathbb{C}_{\mathrm{spl}},\lVert\cdot\rVert)$ onto $\mathbb{R}^2$. So the topology of $\mathbb{C}_{\mathrm{spl}}$ is the Euclidean topology of the plane. The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{spl}}$ is a topological algebra over $\mathbb{R}$; inversion is continuous on the units, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group.
+of $(\mathbb{C}_{\mathrm{spl}},\lVert\cdot\rVert)$ onto $\mathbb{R}^2$. So the topology of $\mathbb{C}_{\mathrm{spl}}$ is the Euclidean topology of the plane. The product is bilinear, hence continuous, so $\mathbb{C}_{\mathrm{spl}}$ is a topological algebra over $\mathbb{R}$; inversion is continuous on the invertibles, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group.
 
 **Theorem (contractibility).** The algebra is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}_{\mathrm{spl}})=0$ for all $n\geq 1$.
 
@@ -39,7 +39,7 @@ $$
 
 a closed, compact, connected $1$-manifold.
 
-The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert$, and $S^1_E$ is not contained in the units. Indeed the null cone meets the circle where $q^2=q'^2$ and $q^2+q'^2=1$, that is at the four points
+The circle is the wrong object here. Multiplication does not preserve $\lVert\cdot\rVert$, and $S^1_E$ is not contained in the invertibles. Indeed the null cone meets the circle where $q^2=q'^2$ and $q^2+q'^2=1$, that is at the four points
 
 $$
 S^1_E\cap\mathcal{N}=\Bigl\{\pm\tfrac{1}{\sqrt2}(1+j),\ \pm\tfrac{1}{\sqrt2}(1-j)\Bigr\}=\bigl\{\pm\sqrt2\,\Pi_+,\ \pm\sqrt2\,\Pi_-\bigr\},
@@ -95,9 +95,9 @@ the two null directions.
 
 **Remark (the link).** Here the link of the null cone is four points, and the null cone of $\mathbb{C}_{\mathrm{spl}}$ is a union of linear subspaces rather than a nonsingular real hypersurface.
 
-## The Group of Units and Its Components
+## The Group of Invertibles and Its Components
 
-**Definition.** The **group of units** is ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq 0\}=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}$, with the multiplication of the algebra.
+**Definition.** The **group of invertibles** is ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq 0\}=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}$, with the multiplication of the algebra.
 
 **Theorem.** The complement of the null cone in the plane is the disjoint union of the four open sectors
 
@@ -153,13 +153,13 @@ which is continuous on $[0,1]\times{\mathbb{C}_{\mathrm{spl}}}^\times$, fixes ${
 
 The null cone is the frontier of each of the four sign classes of ${\mathbb{C}_{\mathrm{spl}}}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of the four components, and $\mathcal{N}$ contains no point of any component, so the cone is a closed set of empty interior that separates them. In the idempotent coordinates a point approaches the cone exactly when one of its two coordinates tends to zero, and the two coordinates are the two independent real parameters of *Split-Complex Algebra*.
 
-The polar parametrisation of a unit, $Q=\rho u$ with modulus $\rho=\lvert \langle Q\rangle_{*}\rvert^{1/2}>0$ and direction $u=Q/\rho$ of unit modulus, is defined on ${\mathbb{C}_{\mathrm{spl}}}^\times$ and degenerates on $\mathcal{N}$: the modulus vanishes there and the direction is undefined. That parametrisation, its two regimes and the behaviour of its angle as the cone is approached are the subject of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the cone read geometrically, as a pair of asymptotic directions, is in *Hyperbolic Rotations*.
+The polar parametrisation of an invertible element, $Q=\rho u$ with modulus $\rho=\lvert \langle Q\rangle_{*}\rvert^{1/2}>0$ and direction $u=Q/\rho$ of unit modulus, is defined on ${\mathbb{C}_{\mathrm{spl}}}^\times$ and degenerates on $\mathcal{N}$: the modulus vanishes there and the direction is undefined. That parametrisation, its two regimes and the behaviour of its angle as the cone is approached are the subject of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the cone read geometrically, as a pair of asymptotic directions, is in *Hyperbolic Rotations*.
 
 ## Summary
 
-The split-complex algebra is $\mathbb{R}^2$, hence contractible, path-connected and simply connected; its product and inversion are continuous, so it is a topological algebra and ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group. The Euclidean unit circle $S^1_E$ is a compact $1$-manifold but is not contained in the units: it meets the null cone in four points, so $S^1_E\not\subseteq{\mathbb{C}_{\mathrm{spl}}}^\times$. The null cone $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ is the union of the two null lines $q=\pm q'$, a closed real algebraic cone of real dimension $1$, a real $1$-manifold off the apex and singular at the apex, contractible, and with empty interior. Its link is the four-point set $\{\pm\sqrt2\,\Pi_+,\pm\sqrt2\,\Pi_-\}$, and its projectivisation is the two null directions.
+The split-complex algebra is $\mathbb{R}^2$, hence contractible, path-connected and simply connected; its product and inversion are continuous, so it is a topological algebra and ${\mathbb{C}_{\mathrm{spl}}}^\times$ is a topological group. The Euclidean unit circle $S^1_E$ is a compact $1$-manifold but is not contained in the invertibles: it meets the null cone in four points, so $S^1_E\not\subseteq{\mathbb{C}_{\mathrm{spl}}}^\times$. The null cone $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ is the union of the two null lines $q=\pm q'$, a closed real algebraic cone of real dimension $1$, a real $1$-manifold off the apex and singular at the apex, contractible, and with empty interior. Its link is the four-point set $\{\pm\sqrt2\,\Pi_+,\pm\sqrt2\,\Pi_-\}$, and its projectivisation is the two null directions.
 
-The group of units ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}\cong(\mathbb{R}^\times)^2$ has four contractible components, the four open sectors cut out by the null lines, so $\pi_0\cong(\mathbb{Z}/2)^2$ and $\pi_n=0$ for $n\geq1$; the complement of the null cone deformation retracts onto the unit-modulus set ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$, four hyperbola branches each homeomorphic to $\mathbb{R}$, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ has the homotopy type of four points. The null cone is the frontier of the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of them. The null cone is a pair of lines, its link is four points, and the group of units has four contractible components.
+The group of invertibles ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}\cong(\mathbb{R}^\times)^2$ has four contractible components, the four open sectors cut out by the null lines, so $\pi_0\cong(\mathbb{Z}/2)^2$ and $\pi_n=0$ for $n\geq1$; the complement of the null cone deformation retracts onto the unit-modulus set ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$, four hyperbola branches each homeomorphic to $\mathbb{R}$, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ has the homotopy type of four points. The null cone is the frontier of the four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$: every neighbourhood of a point of $\mathcal{N}$ meets exactly two of them. The null cone is a pair of lines, its link is four points, and the group of invertibles has four contractible components.
 
 ## Summary of Notation
 
@@ -167,12 +167,12 @@ The group of units ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}
 |---|---|
 | $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}^2$ | Split complex algebra as a topological space; contractible |
 | $\lVert Q\rVert=(q^2+q'^2)^{1/2}$ | Euclidean norm; topological algebra |
-| $S^1_E=\{\lVert Q\rVert=1\}$ | Euclidean unit circle; not contained in the units |
+| $S^1_E=\{\lVert Q\rVert=1\}$ | Euclidean unit circle; not contained in the invertibles |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | Norm |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Null cone; the two lines $q=\pm q'$; contractible, singular at $0$ |
 | $L=\mathcal{N}\cap S^1_E$ | Link of the null cone; four points |
 | $\mathbb{P}(\mathcal{N})$ | Projectivised null cone; the two null directions |
-| ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}$ | Group of units; four contractible components |
+| ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}\setminus\mathcal{N}$ | Group of invertibles; four contractible components |
 | $({\mathbb{C}_{\mathrm{spl}}}^\times)_0=\{q>\lvert q'\rvert\}$ | Identity component |
 | $\Sigma_+=\{q'>\lvert q\rvert\}$, $\Sigma_-=\{q'<-\lvert q\rvert\}$ | The two components of negative norm |
 | $\rho(Q)=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | Modulus |
@@ -185,5 +185,5 @@ The group of units ${\mathbb{C}_{\mathrm{spl}}}^\times=\mathbb{C}_{\mathrm{spl}}
 - William Fulton, *Algebraic Topology: A First Course* (Springer, Graduate Texts in Mathematics 153, 1995), for the deformation retraction of quadric complements and low-dimensional examples.
 - John Stillwell, *Naive Lie Theory* (Springer, Undergraduate Texts in Mathematics, 2008), for the topology of low-dimensional matrix and abelian Lie groups.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic geometry of the split complex plane and its asymptotes.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex algebra, its isotropic lines and its unit group.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex algebra, its isotropic lines and its group of invertibles.
 - Theodor Bröcker and Tammo tom Dieck, *Representations of Compact Lie Groups* (Springer, Graduate Texts in Mathematics 98, 1985), for the topology of matrix groups and their maximal compact subgroups.

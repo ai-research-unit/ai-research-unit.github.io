@@ -16,7 +16,7 @@ An **algebra over a field** $F$ is an $F$-module with a bilinear product; it is 
 | Associative algebra | the product is associative | *Algebras* |
 | Unital algebra | the product has an identity $1$ | *Algebras* |
 | Commutative algebra | the product is commutative | *Algebras* |
-| Division algebra | every nonzero element is a unit, so the algebra has no zero divisors | *Division Algebras* |
+| Division algebra | every nonzero element is invertible, so the algebra has no zero divisors | *Division Algebras* |
 | Ideal of an algebra | a subspace closed under multiplication by the algebra; the kernel of a homomorphism | *Algebras* |
 | Centre $Z(A)$ | the elements commuting with every element; a commutative subalgebra | *Algebras* |
 | Lie algebra | an anticommutative product satisfying the Jacobi identity; not associative | *Lie Algebras* |
@@ -52,7 +52,7 @@ An algebra is **simple** when it has no nontrivial two-sided ideals, **semisimpl
 | Simple algebra | exactly two two-sided ideals, $0$ and the algebra; a matrix algebra over a division ring | *Simple and Semisimple Modules* |
 | Central simple algebra over $F$ | simple, finite-dimensional, centre $F$; becomes a matrix algebra over a splitting field | *Central Simple Algebras and the Brauer Group* |
 | Brauer group $\operatorname{Br}(F)$ | the central simple algebras modulo matrix algebras, under $\otimes_F$ | *Central Simple Algebras and the Brauer Group* |
-| Division algebra | a simple algebra whose only nonzero elements are units | *Division Algebras* |
+| Division algebra | a simple algebra whose only nonzero elements are invertible | *Division Algebras* |
 | Non-example: a simple algebra that is not a division algebra | $M_2(\mathbb{R})$ is simple but has zero divisors | *Examples of Algebras* |
 | Non-example: the biquaternions over $\mathbb{R}$ | fail to be central simple over $\mathbb{R}$: their centre is $\mathbb{C}$, and $\mathbb{B}$ is split | *The Biquaternion Algebra* |
 
@@ -90,7 +90,7 @@ The number systems give the corpus its chain of non-associative algebras: $\math
 
 ## Summary
 
-The list gathers the algebras over a field of the corpus. The axioms are associativity, a unit, commutativity and the division property, with the Lie and Jordan algebras as the non-associative classes. The associative algebras are the field, the polynomial algebra, the matrix algebra $M_n(k)$, the group algebra, the quaternions, the split biquaternions, the split-complex numbers, the dual numbers and the biquaternions, each with its dimension, centre and ideals; the simple, semisimple and central simple algebras are the matrix algebras over division rings, with the Wedderburn–Artin decomposition and the Brauer group. The algebras defined by generators and relations are the tensor and free algebras, the symmetric, exterior and Clifford algebras, the universal enveloping algebra, the Weyl algebra and the path algebra. The non-associative algebras are the Lie and Jordan algebras, and the number systems run from the associative division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ to the non-associative division algebra $\mathbb{O}$ and the zero-divisor algebras. The non-examples — a non-associative algebra, a non-unital algebra, the split-complex numbers as a non-field, the quaternions as a non-field, a simple algebra that is not a division algebra, the biquaternions as non-central, the free algebra as non-commutative, a degenerate Clifford algebra and the octonions as non-associative — each name the failure.
+The list gathers the algebras over a field of the corpus. The axioms are associativity, an invertible element, commutativity and the division property, with the Lie and Jordan algebras as the non-associative classes. The associative algebras are the field, the polynomial algebra, the matrix algebra $M_n(k)$, the group algebra, the quaternions, the split biquaternions, the split-complex numbers, the dual numbers and the biquaternions, each with its dimension, centre and ideals; the simple, semisimple and central simple algebras are the matrix algebras over division rings, with the Wedderburn–Artin decomposition and the Brauer group. The algebras defined by generators and relations are the tensor and free algebras, the symmetric, exterior and Clifford algebras, the universal enveloping algebra, the Weyl algebra and the path algebra. The non-associative algebras are the Lie and Jordan algebras, and the number systems run from the associative division algebras $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ to the non-associative division algebra $\mathbb{O}$ and the zero-divisor algebras. The non-examples — a non-associative algebra, a non-unital algebra, the split-complex numbers as a non-field, the quaternions as a non-field, a simple algebra that is not a division algebra, the biquaternions as non-central, the free algebra as non-commutative, a degenerate Clifford algebra and the octonions as non-associative — each name the failure.
 
 ## Summary of Notation
 

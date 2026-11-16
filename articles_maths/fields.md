@@ -12,13 +12,13 @@ We assume familiarity with rings, ideals, quotient rings, and vector spaces. Two
 
 ## 1. Definition of a Field
 
-A **field** is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is a unit. Equivalently, $F$ is a set with two operations such that $(F,+)$ is an abelian group, $(F \setminus \{0\}, \cdot)$ is an abelian group, and multiplication distributes over addition:
+A **field** is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is invertible. Equivalently, $F$ is a set with two operations such that $(F,+)$ is an abelian group, $(F \setminus \{0\}, \cdot)$ is an abelian group, and multiplication distributes over addition:
 $$
 a(b+c) = ab + ac
 $$
-for all $a, b, c \in F$. The multiplicative group $F \setminus \{0\}$ is written $F^\times$. The condition $1 \neq 0$ excludes the zero ring, in which "every nonzero element is a unit" holds vacuously.
+for all $a, b, c \in F$. The multiplicative group $F \setminus \{0\}$ is written $F^\times$. The condition $1 \neq 0$ excludes the zero ring, in which "every nonzero element is invertible" holds vacuously.
 
-**Criterion in terms of ideals.** A commutative ring $R$ with $1 \neq 0$ is a field if and only if its only ideals are $0$ and $R$: if $a \neq 0$ and $(a) = R$ then $ab = 1$, while a non-unit generates a proper nonzero ideal. Since $I$ is maximal in $R$ exactly when $R/I$ is a field (*Rings*, §6), this gives the standard construction of fields as quotients. For $R = F$ a field, $F[x]$ is a principal ideal domain, so
+**Criterion in terms of ideals.** A commutative ring $R$ with $1 \neq 0$ is a field if and only if its only ideals are $0$ and $R$: if $a \neq 0$ and $(a) = R$ then $ab = 1$, while a non-invertible generates a proper nonzero ideal. Since $I$ is maximal in $R$ exactly when $R/I$ is a field (*Rings*, §6), this gives the standard construction of fields as quotients. For $R = F$ a field, $F[x]$ is a principal ideal domain, so
 $$
 F[x]/(f) \text{ is a field} \iff f \text{ is irreducible over } F.
 $$
@@ -72,7 +72,7 @@ Thus every field is an extension of a prime field and a vector space over it, an
 
 ## 5. Non-Examples
 
-**(a)** $\mathbb{Z}$ is an integral domain but not a field: $2$ is not a unit.
+**(a)** $\mathbb{Z}$ is an integral domain but not a field: $2$ is not invertible.
 
 **(b)** For composite $n$, $\mathbb{Z}/n\mathbb{Z}$ has zero divisors, for instance $2 \cdot 3 = 0$ in $\mathbb{Z}/6\mathbb{Z}$; it is a field exactly when $n$ is prime.
 
@@ -86,7 +86,7 @@ Thus every field is an extension of a prime field and a vector space over it, an
 
 **(g)** If $f$ is reducible, then $F[x]/(f)$ is not a field: $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$, and $\mathbb{F}_2[x]/(x^2+1)$ fails since $x^2+1 = (x+1)^2$ over $\mathbb{F}_2$.
 
-**(h)** The ring of integers $\mathcal{O}_K$ of a number field $K$ has field of fractions $K$ but is not a field unless $K = \mathbb{Q}$; for example $\mathbb{Z}[\sqrt2]$, in which $2$ is not a unit.
+**(h)** The ring of integers $\mathcal{O}_K$ of a number field $K$ has field of fractions $K$ but is not a field unless $K = \mathbb{Q}$; for example $\mathbb{Z}[\sqrt2]$, in which $2$ is not invertible.
 
 ---
 

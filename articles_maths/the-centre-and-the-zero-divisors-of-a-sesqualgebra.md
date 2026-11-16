@@ -4,7 +4,7 @@
 
 The centre of a ring is the set of the elements that commute with every element, and the zero divisors are the nonzero elements that annihilate something. Both notions are stated with the product alone, so both carry over to a sesqualgebra, and the two new axioms meet them in two different places: the second scalar rule meets the centre in its behaviour under the scalars, and the involution meets the zero divisors in the pairing of the one-sided classes. The centre is the piece of the algebra that the arguments of the block keep returning to: it is the set of the elements whose inner map vanishes, it is carried to itself by the involution, and, over the complex numbers with the conjugation, a nonzero centre is a witness that the algebra is not of full type.
 
-Throughout, $A$ is a sesqualgebra over the datum $(R,\varsigma)$ with a $\varsigma$-semilinear involution $*$, in the sense of *Sesqualgebras*: the product is additive in each variable, $R$-linear in the first and $\varsigma$-semilinear in the second, and $*$ is additive, of order two, anti-multiplicative and $\varsigma$-semilinear. The product need not be associative and need not have a unit, and where an argument uses associativity or a unit it is said so. The comparison is with *Centre, Units, Zero Divisors and Division Algebras* in the bilinear layer; the inner derivations that the centre cuts are the subject of *Derivations of a Sesqualgebra*.
+Throughout, $A$ is a sesqualgebra over the datum $(R,\varsigma)$ with a $\varsigma$-semilinear involution $*$, in the sense of *Sesqualgebras*: the product is additive in each variable, $R$-linear in the first and $\varsigma$-semilinear in the second, and $*$ is additive, of order two, anti-multiplicative and $\varsigma$-semilinear. The product need not be associative and need not have a unit, and where an argument uses associativity or an invertible element it is said so. The comparison is with *Centre, Invertibles, Zero Divisors and Division Algebras* in the bilinear layer; the inner derivations that the centre cuts are the subject of *Derivations of a Sesqualgebra*.
 
 What is added here: the centre and its closure under the scalars, the parts cut by the involution, the centre of a unital or annihilator-free algebra, the one-sided and the two-sided zero divisors, the annihilators with the sides that the involution and the derived operation pair, and the interaction of the centre with the zero divisors.
 
@@ -72,7 +72,7 @@ with $z_{+} \in Z(A) \cap H(A)$ and $z_{-} \in Z(A) \cap S(A)$.
 
 **Definition.** A nonzero $z \in A$ is a **left zero divisor** if there is $0 \neq w \in A$ with $zw = 0$, and a **right zero divisor** if there is $0 \neq w \in A$ with $wz = 0$. It is a **zero divisor** if it is a left or a right one, and $A$ is a **domain** if it has none.
 
-**Remark.** In a commutative algebra the two classes coincide. In an associative algebra a unit is neither a left nor a right zero divisor, since $zw = 0$ gives $w = v(zw) = (vz)w = 0$ for a left inverse $v$ of $z$; the class of the units and the class of the zero divisors are disjoint. They need not exhaust the algebra, and the disjointness does use associativity: in a non-associative unital algebra a unit can be a zero divisor.
+**Remark.** In a commutative algebra the two classes coincide. In an associative algebra an invertible element is neither a left nor a right zero divisor, since $zw = 0$ gives $w = v(zw) = (vz)w = 0$ for a left inverse $v$ of $z$; the class of the invertibles and the class of the zero divisors are disjoint. They need not exhaust the algebra, and the disjointness does use associativity: in a non-associative unital algebra an invertible element can be a zero divisor.
 
 ### The Annihilators
 
@@ -127,7 +127,7 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 **Theorem.** For $z \in Z(A)$ and every $\lambda \in R$ one has $(\lambda - \varsigma(\lambda))\,zA = 0$. Consequently, if some $\lambda - \varsigma(\lambda)$ acts injectively on $A$, then $zA = 0$, and by centrality $Az = 0$, so that $Z(A) \subseteq \ell(A) \cap r(A)$; under that hypothesis a unital $A$, or one with zero annihilator, has $Z(A) = 0$.
 
-**Proof.** For $x \in A$ the centrality of $z$ at the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$ by the two scalar rules and the centrality of $z$; hence $(\lambda - \varsigma(\lambda))zx = 0$. If $\lambda - \varsigma(\lambda)$ is injective then $zx = 0$ for every $x$, and $Az = zA = 0$ by centrality. A unit lies in $A$, so $z = z1 = 0$, and a zero annihilator gives the same.
+**Proof.** For $x \in A$ the centrality of $z$ at the element $\lambda x$ gives $z(\lambda x) = (\lambda x)z$, that is $\varsigma(\lambda)(zx) = \lambda(xz) = \lambda(zx)$ by the two scalar rules and the centrality of $z$; hence $(\lambda - \varsigma(\lambda))zx = 0$. If $\lambda - \varsigma(\lambda)$ is injective then $zx = 0$ for every $x$, and $Az = zA = 0$ by centrality. An invertible element lies in $A$, so $z = z1 = 0$, and a zero annihilator gives the same.
 
 **Corollary.** Over $(\mathbb{C},\varsigma)$ with $\varsigma$ the conjugation, the scalar $i - \varsigma(i) = 2i$ acts injectively on every complex module, so the centre of a sesqualgebra over $(\mathbb{C},\varsigma)$ is contained in the annihilator of $A$. A unital sesqualgebra over $(\mathbb{C},\varsigma)$ has zero centre.
 
@@ -137,9 +137,9 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 ### The Real Matrix Algebra
 
-**Proposition.** Let $A = M_{n}(\mathbb{R})$ over the datum $(\mathbb{R},\mathrm{id})$ with the transpose as the involution and $n \geq 2$. Then the centre is the set of the scalar matrices, the zero divisors are the nonzero singular matrices, every nonsingular matrix is a unit, and the centre has no zero divisors.
+**Proposition.** Let $A = M_{n}(\mathbb{R})$ over the datum $(\mathbb{R},\mathrm{id})$ with the transpose as the involution and $n \geq 2$. Then the centre is the set of the scalar matrices, the zero divisors are the nonzero singular matrices, every nonsingular matrix is invertible, and the centre has no zero divisors.
 
-**Proof.** A matrix $z$ is central exactly when $zX = Xz$ for every $X$, which forces $z$ to be diagonal with all the diagonal entries equal, that is $z = cI_{n}$; the standard computation is the one of *Centre, Units, Zero Divisors and Division Algebras*. A nonzero matrix is singular exactly when it annihilates a nonzero vector, that is, is a left zero divisor, and for the matrices the left and the right zero divisors coincide by the transpose; the nonsingular matrices are the units, and a nonzero scalar matrix is nonsingular.
+**Proof.** A matrix $z$ is central exactly when $zX = Xz$ for every $X$, which forces $z$ to be diagonal with all the diagonal entries equal, that is $z = cI_{n}$; the standard computation is the one of *Centre, Invertibles, Zero Divisors and Division Algebras*. A nonzero matrix is singular exactly when it annihilates a nonzero vector, that is, is a left zero divisor, and for the matrices the left and the right zero divisors coincide by the transpose; the nonsingular matrices are the invertibles, and a nonzero scalar matrix is nonsingular.
 
 ### The Twisted Matrix Algebra
 
@@ -151,9 +151,9 @@ Let $A$ be associative with a $\varsigma$-semilinear involution, let $\star$ be 
 
 ### The Quaternions
 
-**Proposition.** Let $A = \mathbb{H}$ over the datum $(\mathbb{R},\mathrm{id})$ with quaternion conjugation and the ordinary product. Then the centre is the set of the real quaternions, there are no zero divisors, and every nonzero quaternion is a unit.
+**Proposition.** Let $A = \mathbb{H}$ over the datum $(\mathbb{R},\mathrm{id})$ with quaternion conjugation and the ordinary product. Then the centre is the set of the real quaternions, there are no zero divisors, and every nonzero quaternion is invertible.
 
-**Proof.** The centre of $\mathbb{H}$ is $\mathbb{R}$ because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$; a nonzero quaternion has a two-sided inverse $q^{-1} = q^{*}/(qq^{*})$ with $qq^{*}$ a nonzero real number, so it is a unit, and $A$ is a domain.
+**Proof.** The centre of $\mathbb{H}$ is $\mathbb{R}$ because $\mathbb{H}$ is a central division algebra over $\mathbb{R}$; a nonzero quaternion has a two-sided inverse $q^{-1} = q^{*}/(qq^{*})$ with $qq^{*}$ a nonzero real number, so it is invertible, and $A$ is a domain.
 
 ### The Sesquilinear Field
 
@@ -192,5 +192,5 @@ The centre of a sesqualgebra is the set of the elements that commute with every 
 ## Further Reading
 
 - I. N. Herstein, *Rings with Involution* (University of Chicago Press, 1976), for the centre of a ring with involution, the parts cut by the involution and the symmetric and the anti-Hermitian elements.
-- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the centre, the units and the zero divisors of a ring, and the annihilator arguments.
+- T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the centre, the invertibles and the zero divisors of a ring, and the annihilator arguments.
 - Sterling K. Berberian, *Baer $*$-Rings* (Springer, 1972), for the interplay of an involution with the one-sided annihilators and the projection on the structure of an involutive ring.

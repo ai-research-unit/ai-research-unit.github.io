@@ -212,9 +212,9 @@ $$
 
 For an associative algebra $A$, the centre is a commutative subalgebra of $A$ over $R$.
 
-### Units and Zero Divisors
+### Invertibles and Zero Divisors
 
-A **unit** in an algebra $A$ over a commutative ring $R$ is an element $u$ that has a multiplicative inverse: there exists $u^{-1} \in A$ such that $uu^{-1} = u^{-1}u = 1$. If $A$ is associative and unital, the set of all units in $A$ forms a group under multiplication, called the **group of units** of $A$.
+An **invertible element** in an algebra $A$ over a commutative ring $R$ is an element $u$ that has a multiplicative inverse: there exists $u^{-1} \in A$ such that $uu^{-1} = u^{-1}u = 1$. If $A$ is associative and unital, the set of all units in $A$ forms a group under multiplication, called the **group of invertibles** of $A$.
 
 A **zero divisor** in an algebra $A$ over a commutative ring $R$ is a nonzero element $z$ such that there exists a nonzero element $w$ with $zw = 0$ or $wz = 0$. An algebra with no zero divisors is called a **domain**.
 
@@ -317,7 +317,7 @@ The notion of a division algebra requires $R$ to be at least an integral domain,
 **Key differences from the field case.**
 
 - Not every module is free, so not every algebra has a well-defined rank.
-- Invertibility requires the determinant to be a unit of $R$, not merely nonzero.
+- Invertibility requires the determinant to be an invertible element of $R$, not merely nonzero.
 - Zero divisors in $R$ become zero divisors in any $R$-algebra in which they remain nonzero.
 - Division algebras are only meaningful when $R$ is an integral domain.
 

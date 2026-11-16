@@ -618,7 +618,7 @@ which is $\Rho$ for $\varepsilon=+1$ and $-\Rho$ for $\varepsilon=-1$. This is t
 | uniqueness | unique up to the branch of $B$ | unique in the branch of the logarithm |
 | survives the wall | the root diverges | the exponent is finite and exact |
 
-The Hamilton pairing is therefore the one pairing of the three that does not survive the wall as a pairing. The quaternion pairing survives as a regrouping, and the Cartan pairing survives as the polar decomposition of the unit group. The Hamilton pairing survives only after the root is replaced by the nilpotent direction, which is a different object.
+The Hamilton pairing is therefore the one pairing of the three that does not survive the wall as a pairing. The quaternion pairing survives as a regrouping, and the Cartan pairing survives as the polar decomposition of the group of invertibles. The Hamilton pairing survives only after the root is replaced by the nilpotent direction, which is a different object.
 
 ## Worked Examples off the Wall
 

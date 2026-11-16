@@ -12,7 +12,7 @@ The article assumes the Chinese remainder decomposition of *The Algebra Generate
 
 An element $x \in A$ is **nilpotent** if $x^m = 0$ for some integer $m \ge 1$. The least such $m$ is the **nilpotency index** of $x$. The zero element is nilpotent of index one; a nonzero nilpotent has index at least two.
 
-A nilpotent element is a zero divisor: if $x \neq 0$ and $x^m = 0$ with $m$ minimal, then $x^{m-1} \neq 0$ and $x \cdot x^{m-1} = 0$. A nilpotent element is not a unit: if $x$ is a unit and $x^m = 0$, then $1 = (x^{-1})^m x^m = 0$, a contradiction. The converse fails: a zero divisor need not be nilpotent, and the idempotents are the standard counterexamples.
+A nilpotent element is a zero divisor: if $x \neq 0$ and $x^m = 0$ with $m$ minimal, then $x^{m-1} \neq 0$ and $x \cdot x^{m-1} = 0$. A nilpotent element is not invertible: if $x$ is invertible and $x^m = 0$, then $1 = (x^{-1})^m x^m = 0$, a contradiction. The converse fails: a zero divisor need not be nilpotent, and the idempotents are the standard counterexamples.
 
 ### Sums and products
 
@@ -83,7 +83,7 @@ $$
 sn = ns, \qquad s \text{ semisimple}, \qquad n \text{ nilpotent}.
 $$
 
-The element $s$ is the **semisimple part** and $n$ is the **nilpotent part**. The decomposition is **additive**; the **multiplicative** version for units is treated in §*The Multiplicative Version*.
+The element $s$ is the **semisimple part** and $n$ is the **nilpotent part**. The decomposition is **additive**; the **multiplicative** version for invertibles is treated in §*The Multiplicative Version*.
 
 ### Uniqueness
 
@@ -109,7 +109,7 @@ $$
 k[a] \;\cong\; \prod_{i=1}^{r} k[x]/(f_i^{e_i}),
 $$
 
-with canonical idempotents $\varepsilon_i$. Work in the $i$-th factor and let $\bar a_i$ be the image of $a$. The element $f_i(\bar a_i)$ lies in the maximal ideal $(f_i)$, so it is nilpotent. Since $f_i$ is separable, $f_i'$ is coprime to $f_i$, hence $f_i'(\bar a_i)$ is a unit modulo $f_i^{e_i}$. We look for a root of $f_i$ of the form
+with canonical idempotents $\varepsilon_i$. Work in the $i$-th factor and let $\bar a_i$ be the image of $a$. The element $f_i(\bar a_i)$ lies in the maximal ideal $(f_i)$, so it is nilpotent. Since $f_i$ is separable, $f_i'$ is coprime to $f_i$, hence $f_i'(\bar a_i)$ is invertible modulo $f_i^{e_i}$. We look for a root of $f_i$ of the form
 
 $$
 s_i = \bar a_i + f_i(\bar a_i)q_i
@@ -157,7 +157,7 @@ $$
 
 The polynomial $f$ is irreducible and inseparable, and $f^2$ has the repeated inseparable factor $f$. We show that $a$ has no Jordan–Chevalley decomposition in $A$.
 
-Suppose $a = s + n$ with $s$ semisimple, $n$ nilpotent and $sn = ns$. The algebra $A$ is local with maximal ideal $(f)$, and its residue field is $k[x]/(f) = k(\alpha)$ with $\alpha^p = t$. Every element of $A$ is either a unit or nilpotent, because the non-units form the maximal ideal, which is nilpotent. If $s$ were nilpotent, then $a = s+n$ would be nilpotent, being a sum of commuting nilpotents. But $a = x$ is a unit in $A$, because $f(0) = -t \neq 0$, so $x \notin (f)$. Hence $s$ is a unit.
+Suppose $a = s + n$ with $s$ semisimple, $n$ nilpotent and $sn = ns$. The algebra $A$ is local with maximal ideal $(f)$, and its residue field is $k[x]/(f) = k(\alpha)$ with $\alpha^p = t$. Every element of $A$ is either an invertible element or nilpotent, because the non-invertibles form the maximal ideal, which is nilpotent. If $s$ were nilpotent, then $a = s+n$ would be nilpotent, being a sum of commuting nilpotents. But $a = x$ is invertible in $A$, because $f(0) = -t \neq 0$, so $x \notin (f)$. Hence $s$ is invertible.
 
 A semisimple unit $s$ in a local algebra has $k[s]$ a product of fields; since $k[s]$ is a subalgebra of the local algebra $A$, it has no nontrivial idempotents, so $k[s]$ is a field. The residue of $s$ in $A/(f) = k(\alpha)$ is $\alpha$, because $s = a - n$ and $n$ is nilpotent, hence lies in $(f)$. The minimal polynomial of $s$ is therefore an irreducible polynomial vanishing at $\alpha$, so it is $f$; in particular $s$ is a root of $f$ in $A$.
 
@@ -167,23 +167,23 @@ $$
 f(x + fq) = (x+fq)^p - t = x^p + f^p q^p - t = f + f^p q^p = f\left(1 + f^{p-1}q^p\right).
 $$
 
-The factor $1 + f^{p-1}q^p$ is congruent to $1$ modulo $f$, hence is a unit, so the product is a nonzero multiple of $f$ and is not zero modulo $f^2$. Hence no root exists, a contradiction. Therefore $a$ has no Jordan–Chevalley decomposition.
+The factor $1 + f^{p-1}q^p$ is congruent to $1$ modulo $f$, hence is invertible, so the product is a nonzero multiple of $f$ and is not zero modulo $f^2$. Hence no root exists, a contradiction. Therefore $a$ has no Jordan–Chevalley decomposition.
 
 The same failure occurs for the companion matrix of $f^2$ in $M_{2p}(k)$. Over the algebraic closure, $f^2 = (x-\alpha)^{2p}$ and the companion matrix is a single Jordan block of size $2p$ at $\alpha$; its semisimple part would be $\alpha I$, which is not a matrix over $k$ because $\alpha \notin k$. So the matrix has no Jordan–Chevalley decomposition over $k$ either. The example shows that the perfect hypothesis, or the separability hypothesis of §*The general field*, cannot be dropped.
 
 ## The Multiplicative Version
 
-### Units and unipotents
+### Invertibles and unipotents
 
-Let $a \in A$ be a unit, with Jordan–Chevalley decomposition $a = s+n$. Then $s$ is a unit: $s = a - n = a(1 - a^{-1}n)$, and $1 - a^{-1}n$ is a unit because $a^{-1}n$ is nilpotent, with inverse the finite geometric series
+Let $a \in A$ be an invertible element, with Jordan–Chevalley decomposition $a = s+n$. Then $s$ is invertible: $s = a - n = a(1 - a^{-1}n)$, and $1 - a^{-1}n$ is invertible because $a^{-1}n$ is nilpotent, with inverse the finite geometric series
 
 $$
 (1 - a^{-1}n)^{-1} = 1 + a^{-1}n + (a^{-1}n)^2 + \cdots .
 $$
 
-Conversely, if $s$ is a unit, then $a = s(1 + s^{-1}n)$ is a unit. Hence $a$ is a unit if and only if $s$ is a unit.
+Conversely, if $s$ is invertible, then $a = s(1 + s^{-1}n)$ is invertible. Hence $a$ is invertible if and only if $s$ is invertible.
 
-When $a$ is a unit, put
+When $a$ is invertible, put
 
 $$
 u = 1 + s^{-1}n .
@@ -195,7 +195,7 @@ $$
 \boxed{\;a = s u = u s\;} .
 $$
 
-This is the **multiplicative Jordan–Chevalley decomposition**: every unit is the product of a commuting semisimple unit and a unipotent element. It is unique, because the additive decomposition is unique and $u = s^{-1}a$. Conversely, a multiplicative decomposition $a = su$ with $s$ semisimple, $u$ unipotent and $su = us$ gives the additive decomposition $a = s + s(u-1)$, with $s(u-1)$ nilpotent. The two versions carry the same information for units.
+This is the **multiplicative Jordan–Chevalley decomposition**: every invertible element is the product of a commuting semisimple unit and a unipotent element. It is unique, because the additive decomposition is unique and $u = s^{-1}a$. Conversely, a multiplicative decomposition $a = su$ with $s$ semisimple, $u$ unipotent and $su = us$ gives the additive decomposition $a = s + s(u-1)$, with $s(u-1)$ nilpotent. The two versions carry the same information for invertibles.
 
 ### Eigenvalues and the unipotent part
 
@@ -301,11 +301,11 @@ is unipotent. Its Jordan–Chevalley decomposition is $s = I$ and $n = E_{12}$, 
 
 ## Summary
 
-A nilpotent element is an element some power of which is zero; its least exponent is the nilpotency index. Nilpotents are zero divisors and non-units. The set of nilpotents is not a subspace, but sums and products of commuting nilpotents are nilpotent. In a finite-dimensional algebra the radical is a nilpotent ideal contained in the set of nilpotents; in a commutative algebra the nilpotents form the nilradical, and the quotient by it is reduced.
+A nilpotent element is an element some power of which is zero; its least exponent is the nilpotency index. Nilpotents are zero divisors and non-invertibles. The set of nilpotents is not a subspace, but sums and products of commuting nilpotents are nilpotent. In a finite-dimensional algebra the radical is a nilpotent ideal contained in the set of nilpotents; in a commutative algebra the nilpotents form the nilradical, and the quotient by it is reduced.
 
 A Jordan–Chevalley decomposition of $a$ is a writing $a = s+n$ with $s$ semisimple, $n$ nilpotent and $sn=ns$. It is unique when it exists. Over a perfect field it always exists, with $s, n \in k[a]$; the semisimple part is the lift of $a$ to the reduced quotient $k[a]_{\mathrm{red}}$, its minimal polynomial is the squarefree part of $m_a$, and the nilpotency index of $n$ is the largest exponent in $m_a$. Over a general field the same construction works whenever every repeated irreducible factor of $m_a$ is separable; it fails for the class of $x$ in $k[x]/((x^p-t)^2)$ over $\mathbb{F}_p(t)$, and for the companion matrix of the same polynomial.
 
-For a unit, the multiplicative form is $a = su$ with $s$ semisimple, $u$ unipotent and $su=us$; it is equivalent to the additive form via $u = 1 + s^{-1}n$. Over a splitting field, the semisimple part is $\sum_i \lambda_i \varepsilon_i$ and the nilpotent part is $\sum_i n_i$, with $\varepsilon_i$ the generalized eigenprojectors and $n_i = (a-\lambda_i)\varepsilon_i$. In a matrix algebra over a perfect field, $S$ is diagonalisable over the algebraic closure, $N$ is nilpotent, both are polynomials in $a$, and the decomposition is the invariant form of the Jordan form.
+For an invertible element, the multiplicative form is $a = su$ with $s$ semisimple, $u$ unipotent and $su=us$; it is equivalent to the additive form via $u = 1 + s^{-1}n$. Over a splitting field, the semisimple part is $\sum_i \lambda_i \varepsilon_i$ and the nilpotent part is $\sum_i n_i$, with $\varepsilon_i$ the generalized eigenprojectors and $n_i = (a-\lambda_i)\varepsilon_i$. In a matrix algebra over a perfect field, $S$ is diagonalisable over the algebraic closure, $N$ is nilpotent, both are polynomials in $a$, and the decomposition is the invariant form of the Jordan form.
 
 ## Summary of Notation
 
@@ -318,8 +318,8 @@ For a unit, the multiplicative form is $a = su$ with $s$ semisimple, $u$ unipote
 | $s$ | The semisimple part of $a$; $m_s$ squarefree |
 | $n$ | The nilpotent part of $a$ |
 | $a = s+n$ | The additive Jordan–Chevalley decomposition |
-| $a = su$ | The multiplicative Jordan–Chevalley decomposition for a unit |
-| $u = 1 + s^{-1}n$ | The unipotent part of a unit |
+| $a = su$ | The multiplicative Jordan–Chevalley decomposition for an invertible element |
+| $u = 1 + s^{-1}n$ | The unipotent part of an invertible element |
 | $m_a = \prod_i f_i^{e_i}$ | The primary decomposition of the minimal polynomial |
 | $\varepsilon_i$ | The generalized eigenprojector of the $i$-th primary factor |
 | $n_i = (a-\lambda_i)\varepsilon_i$ | The nilpotent part of the $i$-th block, in the split case |

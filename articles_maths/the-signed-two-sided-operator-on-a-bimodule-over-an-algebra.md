@@ -5,7 +5,7 @@
 
 A two-sided operator on a module dresses one element between a left and a right factor: for $a, b \in A$ the **unsigned two-sided operator** is $\mathcal{T}_{a,b}(x)=a x b$. When the algebra and the module carry a **grade involution** $\alpha$ — an order-two automorphism that preserves the products — the two-sided operator can be twisted in the middle, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x)=a\,\alpha(x)\,b$. The twist is a single substitution of $\alpha(x)$ for $x$, and it is the operator form of the parity sign the graded structures carry: an element of odd degree changes sign under $\alpha$, and the two-sided operator records that sign in the middle factor.
 
-The article defines the two such operators, computes how each is built from the one-sided multiplications of *Left and Right Multiplication of a Module*, proves the exact relation between them, $\mathcal{T}^{\alpha}_{a,b}=\mathcal{T}_{a,b}\circ\alpha$, and works out the composition rule. The rule is the graded one: a product of two signed two-sided operators is unsigned, and the whole family of two-sided operators is $\mathbb{Z}/2$-graded by the parity of the twist. The article then specialises to the **reflections**, the signed two-sided operators $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit, and determines when such an operator is an involution.
+The article defines the two such operators, computes how each is built from the one-sided multiplications of *Left and Right Multiplication of a Module*, proves the exact relation between them, $\mathcal{T}^{\alpha}_{a,b}=\mathcal{T}_{a,b}\circ\alpha$, and works out the composition rule. The rule is the graded one: a product of two signed two-sided operators is unsigned, and the whole family of two-sided operators is $\mathbb{Z}/2$-graded by the parity of the twist. The article then specialises to the **reflections**, the signed two-sided operators $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ by an invertible element, and determines when such an operator is an involution.
 
 The article assumes the module theory of *Modules over an Algebra* and the operator layer of *Left and Right Multiplication of a Module* and *Module Endomorphisms*. The reflected operators are developed further in *Reflections as Signed Two-Sided Operators on a Bimodule over an Algebra*, and the involution of the elements $\sigma$, the dagger built from it and the adjoint belong to the `* Theory` and `* Operator Theory` groups: none of them occurs here. The article stays inside Part I — no distance, norm, form, topology or limit — and the word *reflection* names an operator of order two, with no geometric reading. Throughout, $R$ is a commutative ring with $1 \neq 0$; $A$ is a unital associative $R$-algebra, not assumed commutative; $\alpha$ is a grade involution of $A$; ${}_A M_A$ is an $(A,A)$-bimodule carrying the compatible grade involution $\alpha$; and $L_a$, $R_b$ are the one-sided multiplications.
 
@@ -31,21 +31,21 @@ $$
 
 ### The operator monoid
 
-**Proposition.** The unsigned two-sided operators form a submonoid of $\operatorname{End}_R(M)$ under composition, with identity $\mathcal{T}_{1,1}=\mathrm{id}_M$; if $a$ and $b$ are units then $\mathcal{T}_{a,b}$ is invertible with
+**Proposition.** The unsigned two-sided operators form a submonoid of $\operatorname{End}_R(M)$ under composition, with identity $\mathcal{T}_{1,1}=\mathrm{id}_M$; if $a$ and $b$ are invertible then $\mathcal{T}_{a,b}$ is invertible with
 
 $$
 \mathcal{T}_{a,b}^{-1}=\mathcal{T}_{a^{-1}\!,\,b^{-1}} .
 $$
 
-*Proof.* The composition law is closure, and $\mathcal{T}_{1,1}=\mathrm{id}_M$. If $a,b$ are units then $\mathcal{T}_{a,b}\mathcal{T}_{a^{-1},b^{-1}}=\mathcal{T}_{1,1}=\mathcal{T}_{a^{-1},b^{-1}}\mathcal{T}_{a,b}$ by the law.
+*Proof.* The composition law is closure, and $\mathcal{T}_{1,1}=\mathrm{id}_M$. If $a,b$ are invertible then $\mathcal{T}_{a,b}\mathcal{T}_{a^{-1},b^{-1}}=\mathcal{T}_{1,1}=\mathcal{T}_{a^{-1},b^{-1}}\mathcal{T}_{a,b}$ by the law.
 
-The converse is not claimed: an element of $A$ that is not a unit may act invertibly on a small module, and then the two-sided operator it defines is invertible even though its parameter is not. For the regular bimodule $M={}_A A_A$ the converse is a statement about units of $A$ and is not needed here.
+The converse is not claimed: an element of $A$ that is not invertible may act invertibly on a small module, and then the two-sided operator it defines is invertible even though its parameter is not. For the regular bimodule $M={}_A A_A$ the converse is a statement about units of $A$ and is not needed here.
 
 The kernel of the operator is the additive subgroup $\ker \mathcal{T}_{a,b}=\{x : axb=0\}$, and the operator vanishes exactly when $aMb=0$; in a noncommutative algebra the single product $ab$ does not control the operator, the reason being the same $2\times2$ example as in *Left and Right Multiplication in a Ring*.
 
 ### The diagonal case
 
-**Proposition.** For a unit $u \in A^{\times}$ the diagonal two-sided operator is the inner conjugation
+**Proposition.** For an invertible element $u \in A^{\times}$ the diagonal two-sided operator is the inner conjugation
 
 $$
 \mathcal{T}_{u,u^{-1}}(x)=uxu^{-1},
@@ -131,7 +131,7 @@ Thus the product of two such operators of the same parity is unsigned and the pr
 
 *Proof.* The first line is the unsigned law. For the second, $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{a,b}\alpha \mathcal{T}_{c,d}=\mathcal{T}_{a,b}\mathcal{T}_{\alpha(c),\alpha(d)}\alpha=\mathcal{T}^{\alpha}_{a\alpha(c),\alpha(d)b}$, using the conjugation identity and $\mathcal{T}_{a,b}\mathcal{T}_{c',d'}=\mathcal{T}_{ac',d'b}$. The third is $\mathcal{T}_{a,b}\mathcal{T}_{c,d}\alpha=\mathcal{T}_{ac,db}\alpha=\mathcal{T}^{\alpha}_{ac,db}$. The fourth is $\mathcal{T}_{a,b}\alpha \mathcal{T}_{c,d}\alpha=\mathcal{T}_{a,b}\mathcal{T}_{\alpha(c),\alpha(d)}=\mathcal{T}_{a\alpha(c),\alpha(d)b}$, the two grade involutions cancelling.
 
-**Corollary.** If the parameters are units then the signed two-sided operator is invertible, and
+**Corollary.** If the parameters are invertible then the signed two-sided operator is invertible, and
 
 $$
 \bigl(\mathcal{T}^{\alpha}_{a,b}\bigr)^{-1}=\mathcal{T}^{\alpha}_{\alpha(a)^{-1}\!,\,\alpha(b)^{-1}} \qquad (a,b \in A^{\times}).
@@ -139,7 +139,7 @@ $$
 
 *Proof.* $\mathcal{T}^{\alpha}_{a,b}=\mathcal{T}_{a,b}\alpha$ and $\alpha$ is invertible with $\alpha^{-1}=\alpha$; the inverse is $\alpha\,\mathcal{T}_{a,b}^{-1}=\alpha\,\mathcal{T}_{a^{-1},b^{-1}}=\mathcal{T}^{\alpha}_{\alpha(a)^{-1},\alpha(b)^{-1}}$ by the conjugation identity.
 
-**Proposition (the diagonal case).** For a unit $u$,
+**Proposition (the diagonal case).** For an invertible element $u$,
 
 $$
 r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}, \qquad r_u(x)=u\,\alpha(x)\,u^{-1},
@@ -159,7 +159,7 @@ The square lands in the unsigned two-sided operators even though the reflection 
 
 ### Definition and the involutive case
 
-**Definition.** A **reflection** of the graded bimodule $(M,\alpha)$ is a signed two-sided operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ by a unit $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^{2}=\mathrm{id}_M$.
+**Definition.** A **reflection** of the graded bimodule $(M,\alpha)$ is a signed two-sided operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ by an invertible element $u$; it is a genuine reflection, that is, an operator of order two, exactly when $r_u^{2}=\mathrm{id}_M$.
 
 **Definition.** The **centralizer of the bimodule** is
 
@@ -179,7 +179,7 @@ $$
 
 **Corollary.** If $u$ is fixed by $\alpha$ then $w=u^{2}$; if $u$ is negated by $\alpha$ and $2$ is invertible then $w=-u^{2}$; in either case $w$ is central as soon as $u^{2}$ is, and then $r_u$ is a reflection.
 
-*Proof.* Substitute $\alpha(u)=\pm u$. If $\alpha(u)=u$ then $u\alpha(u)=u^{2}$; if $\alpha(u)=-u$ then $u\alpha(u)=-u^{2}$. A unit and its negative are central together.
+*Proof.* Substitute $\alpha(u)=\pm u$. If $\alpha(u)=u$ then $u\alpha(u)=u^{2}$; if $\alpha(u)=-u$ then $u\alpha(u)=-u^{2}$. An invertible element and its negative are central together.
 
 ### Examples
 
@@ -193,7 +193,7 @@ $$
 
 ## Summary
 
-Let $A$ be an $R$-algebra with a grade involution $\alpha$ and ${}_A M_A$ a bimodule carrying the compatible action of $\alpha$. The **unsigned two-sided operator** is $\mathcal{T}_{a,b}(x)=axb=L_aR_b$, with $\mathcal{T}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{ac,db}$ and inverses $\mathcal{T}_{a^{-1},b^{-1}}$ on the units, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x)=a\alpha(x)b=\mathcal{T}_{a,b}\alpha$. The grade involution conjugates one-sided multiplications and two-sided operators as $\alpha \mathcal{T}_{a,b}\alpha^{-1}=\mathcal{T}_{\alpha(a),\alpha(b)}$. The composition rule is graded: $\mathcal{T}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{ac,db}$ and $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d}=\mathcal{T}_{a\alpha(c),\alpha(d)b}$ are unsigned, while $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}^{\alpha}_{a\alpha(c),\alpha(d)b}$ and $\mathcal{T}_{a,b}\mathcal{T}^{\alpha}_{c,d}=\mathcal{T}^{\alpha}_{ac,db}$ are signed. The diagonal signed two-sided operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x\mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$; it is a reflection exactly when $u\alpha(u)$ lies in the centralizer $C_A(M)$ of the bimodule, which is $Z(A)$ for a faithful module. The case $\alpha=\mathrm{id}$ reduces everything to the unsigned theory, and the failure in the degenerate case is the non-centrality of $u\alpha(u)$. No involution of the elements, no dagger and no adjoint occurs; those belong to the `* Theory` and `* Operator Theory` groups of the category.
+Let $A$ be an $R$-algebra with a grade involution $\alpha$ and ${}_A M_A$ a bimodule carrying the compatible action of $\alpha$. The **unsigned two-sided operator** is $\mathcal{T}_{a,b}(x)=axb=L_aR_b$, with $\mathcal{T}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{ac,db}$ and inverses $\mathcal{T}_{a^{-1},b^{-1}}$ on the invertibles, and the **signed two-sided operator** is $\mathcal{T}^{\alpha}_{a,b}(x)=a\alpha(x)b=\mathcal{T}_{a,b}\alpha$. The grade involution conjugates one-sided multiplications and two-sided operators as $\alpha \mathcal{T}_{a,b}\alpha^{-1}=\mathcal{T}_{\alpha(a),\alpha(b)}$. The composition rule is graded: $\mathcal{T}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{ac,db}$ and $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d}=\mathcal{T}_{a\alpha(c),\alpha(d)b}$ are unsigned, while $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}^{\alpha}_{a\alpha(c),\alpha(d)b}$ and $\mathcal{T}_{a,b}\mathcal{T}^{\alpha}_{c,d}=\mathcal{T}^{\alpha}_{ac,db}$ are signed. The diagonal signed two-sided operator $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ is the signed inner conjugation $x\mapsto u\alpha(x)u^{-1}$, and its square is the inner conjugation by $u\alpha(u)$; it is a reflection exactly when $u\alpha(u)$ lies in the centralizer $C_A(M)$ of the bimodule, which is $Z(A)$ for a faithful module. The case $\alpha=\mathrm{id}$ reduces everything to the unsigned theory, and the failure in the degenerate case is the non-centrality of $u\alpha(u)$. No involution of the elements, no dagger and no adjoint occurs; those belong to the `* Theory` and `* Operator Theory` groups of the category.
 
 ## Summary of Notation
 
@@ -208,7 +208,7 @@ Let $A$ be an $R$-algebra with a grade involution $\alpha$ and ${}_A M_A$ a bimo
 | $\mathcal{T}^{\alpha}_{a,b}=\mathcal{T}_{a,b}\circ\alpha$ | the signed two-sided operator is the unsigned one at $\alpha$ |
 | $\mathcal{T}_{a,b}\mathcal{T}_{c,d}=\mathcal{T}_{ac,db}$ | composition of unsigned two-sided operators |
 | $\mathcal{T}^{\alpha}_{a,b}\mathcal{T}^{\alpha}_{c,d}=\mathcal{T}_{a\alpha(c),\alpha(d)b}$ | composition of two signed two-sided operators is unsigned |
-| $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ | reflection, the signed inner conjugation by a unit |
+| $r_u=\mathcal{T}^{\alpha}_{u,u^{-1}}$ | reflection, the signed inner conjugation by an invertible element |
 | $r_u^{2}=\operatorname{conj}_{u\alpha(u)}$ | a reflection is an involution iff $u\alpha(u) \in C_A(M)$ |
 | $C_A(M)$ | centralizer of the bimodule, $\{w : wx=xw \text{ for all } x\}$ |
 | $L_a$, $R_b$ | left and right multiplications of the module |

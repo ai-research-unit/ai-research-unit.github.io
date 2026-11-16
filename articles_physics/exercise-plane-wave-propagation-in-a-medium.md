@@ -152,7 +152,7 @@ which is the parent's form of the amplitude. For a pure-vector biquaternion the 
 $$
 \vec N_0\cdot\vec N_0 = \vec E_0^2 - (\vec u_\Phi\times\vec E_0)^2 + 2i\,\vec E_0\cdot(\vec u_\Phi\times\vec E_0).
 $$
-The last term vanishes identically, and the first two cancel because for a unit $\vec u_\Phi$ and a transverse $\vec E_0$,
+The last term vanishes identically, and the first two cancel because for an invertible element $\vec u_\Phi$ and a transverse $\vec E_0$,
 $$
 (\vec u_\Phi\times\vec E_0)^2 = (\vec u_\Phi\cdot\vec u_\Phi)\,\vec E_0^2 - (\vec u_\Phi\cdot\vec E_0)^2 = \vec E_0^2,
 $$

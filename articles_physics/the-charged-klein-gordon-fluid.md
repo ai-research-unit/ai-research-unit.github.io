@@ -93,7 +93,7 @@ $$
 \tilde V_\Phi\tilde V_\Phi^{\natural}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m}.
 $$
 
-The last display is the free article's statement with the potential folded in, and it says what it said before: **the four-velocity is a unit exactly where the quantum potential vanishes**, and nowhere else. The coupling does not change that and cannot: a shift of the momentum cannot change the relation between the momentum's norm and the mass.
+The last display is the free article's statement with the potential folded in, and it says what it said before: **the four-velocity is invertible exactly where the quantum potential vanishes**, and nowhere else. The coupling does not change that and cannot: a shift of the momentum cannot change the relation between the momentum's norm and the mass.
 
 **What changes is that the velocity is no longer a gradient.** The free velocity was $\tilde\nabla_\Phi S_{\tilde\Xi}/m$, so its one-form was closed by the symmetry of second derivatives and nothing else. The mechanical velocity is
 
@@ -217,7 +217,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 1. **The word is unchanged and the coupling is a shift, not a parameter.** The scale, the angle and the branch; the connection enters the phase bracket, and the count of the field's data is the free article's.
 2. **The marker density is $r^{2}$ and the conserved density is the mechanical phase rate times it.** $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$, and it is gauge invariant, which the free one was not.
-3. **The velocity is the mechanical momentum over the mass**, and it is the only velocity the fluid has. It is a unit exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
+3. **The velocity is the mechanical momentum over the mass**, and it is the only velocity the fluid has. It is invertible exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
 4. **The flow is irrotational exactly where the field strength vanishes.** $\omega=ϙF/m$, exact, with no quantum correction.
 5. **The vorticity's rank is the field strength's**: $0$, $2$ or $4$, and $4$ exactly where $\vec E\cdot\vec B\ne0$. No free fluid of the block reaches rank four with its vorticity proper.
 6. **The circulation is $2\pi\hbar n+ϙ\Phi_B$**, and the flux term survives on a loop where the field strength vanishes.
@@ -237,7 +237,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
 | the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
 | the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/r$ |
-| is it a unit? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
+| is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
 | the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
@@ -248,7 +248,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 **This article's column is the first, and it is the only column where the charge changes the vorticity's nature.** That one fact explains four rows at once: the vorticity is a field strength rather than a frame gradient or the curl of a direction, the circulation is a winding plus a flux, the force is a Lorentz force rather than a stress divergence, and the stress is untouched because the field is external. **The scalar fluid is the one case in which the coupling is pure kinematics.**
 
-**The row that separates it from the other two is the velocity's.** Here the velocity is the mechanical momentum over the mass, a gradient plus a potential, so $\mathrm{d}V$ is exactly $F$. In the spin case the velocity is the frame, which is a unit and not a gradient, so $\mathrm{d}V$ carries the frame's logarithmic derivative and no $F$ at all; in the vector case the velocity is the field's own direction, and the free case's $\mathrm{d}V$ is $F$ minus a radial term while the charged case's is not computed in this block. **Three velocities, three curls, and only one of them is the field strength.**
+**The row that separates it from the other two is the velocity's.** Here the velocity is the mechanical momentum over the mass, a gradient plus a potential, so $\mathrm{d}V$ is exactly $F$. In the spin case the velocity is the frame, which is invertible and not a gradient, so $\mathrm{d}V$ carries the frame's logarithmic derivative and no $F$ at all; in the vector case the velocity is the field's own direction, and the free case's $\mathrm{d}V$ is $F$ minus a radial term while the charged case's is not computed in this block. **Three velocities, three curls, and only one of them is the field strength.**
 
 **Two rows are the same in all three columns and deserve a sentence.** Every one of the three fluids has a degenerate set at $r=0$ and none of them has an equation of state; those are properties of the word and not of the connection, which is why the three articles state them once and do not re-derive them.
 
@@ -286,7 +286,7 @@ The charged Klein–Gordon equation is $\tilde\nabla_{\mathrm{gco}}^{\natural}\t
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
-The density is $r^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, a unit exactly where the quantum potential vanishes and no longer a gradient.
+The density is $r^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
 
 The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
 

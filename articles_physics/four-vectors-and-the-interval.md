@@ -39,7 +39,7 @@ $$
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | the sector, its basis, its coordinate blocks and its position among the six subspaces | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| the norm, its signature, the inverse formula, the units and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the norm, its signature, the inverse formula, the invertibles and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the four forms, their Gram matrices and their inertia on the sector | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the products, the symmetric and antisymmetric decomposition and the cross-product formula | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | the bracket, the anticommutator and the Lie algebra of the sector | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
@@ -84,7 +84,7 @@ $$
 
 with no temporal part and no dependence on $r'_{1t}$ or $r'_{2t}$. The temporal coordinate is therefore central in the sector, and the sector's Lie algebra is $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$.
 
-**The Lorentz action is a congruence by a unit, and the unit need not be in the sector.** For any invertible $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ carries $\mathbb{B}_{\Phi}$ into itself, since $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*}=-\tilde U\tilde Q\tilde U^{*}$. The norm scales by $\lvert N(\tilde U)\rvert^{2}$, so the action is by isometries exactly on the unit group.
+**The Lorentz action is a congruence by an invertible element, and the invertible need not be in the sector.** For any invertible $\tilde U$ the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ carries $\mathbb{B}_{\Phi}$ into itself, since $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*}=-\tilde U\tilde Q\tilde U^{*}$. The norm scales by $\lvert N(\tilde U)\rvert^{2}$, so the action is by isometries exactly on the elements with $\lvert N(\tilde U)\rvert=1$, a set of real dimension $7$ strictly larger than the norm-one group.
 
 **The spectrum is the Doppler pair.** For a momentum $\tilde P_{\Phi}=i\frac{E}{c}e_t+\vec p$ the eigenvalues are $\lambda_\pm=i(E/c\pm\lvert\vec p\rvert)$, the two frequencies are $\nu_\pm=mc\,e^{\pm\theta_{\mathrm{rpd}}}$ for a massive momentum, and the product is the mass squared.
 
@@ -173,7 +173,7 @@ and the right-hand side is a real quadratic form of signature $(3,1)$: one negat
 
 **The signature is produced by the square of the central imaginary.** The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'^{2}$. With a real temporal coefficient the form would be $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian signature is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.
 
-**The inverse formula fails exactly on the cone.** For a unit-norm element the inverse is $\tilde R_{\Phi}^{-1}=\tilde R_{\Phi}^{\natural}/N(\tilde R_{\Phi})$, and for zero norm there is no inverse. The zero set of the norm is therefore the boundary of the set of units, and on it the element is a zero divisor:
+**The inverse formula fails exactly on the cone.** For a unit-norm element the inverse is $\tilde R_{\Phi}^{-1}=\tilde R_{\Phi}^{\natural}/N(\tilde R_{\Phi})$, and for zero norm there is no inverse. The zero set of the norm is therefore the boundary of the set of invertibles, and on it the element is a zero divisor:
 
 $$
 N(\tilde R_{\Phi})=0,\quad \tilde R_{\Phi}\neq0
@@ -209,7 +209,7 @@ d\tau=\frac{1}{c}\sqrt{-N(d\tilde R_{\Phi})}
 =\sqrt{dr_t'^{2}-\frac{dr_x^{2}+dr_y^{2}+dr_z^{2}}{c^{2}}},
 $$
 
-and the parameter is defined where the interval is negative. On the null set the proper time vanishes and the worldline is a light ray. The formula is a consequence of the norm and not an independent axiom, and it is the only place where the speed of light enters the sector: as the constant that converts the spatial coordinates into the units of the temporal one.
+and the parameter is defined where the interval is negative. On the null set the proper time vanishes and the worldline is a light ray. The formula is a consequence of the norm and not an independent axiom, and it is the only place where the speed of light enters the sector: as the constant that converts the spatial coordinates into the invertibles of the temporal one.
 
 **The speed of light is local because the conversion is a choice of coordinates.** The number $c$ does not appear in the algebra; it appears in the identification of the temporal coordinate with a length. In a medium, $c=1/\sqrt{\epsilon\mu}$ varies, so the cone varies from point to point and the identification varies with it. The vacuum value is the case in which the conversion is the same everywhere. The sector carries the kinematic structure; the variation of the conversion is a statement about a medium and not about the algebra.
 
@@ -285,7 +285,7 @@ and this is the corpus's definition of the Minkowski pairing of two four-vectors
 
 ## The Lorentz Action
 
-**The action is a congruence by a unit, and the sector is its carrier.** For $\tilde U\in\mathbb{B}$ with $N(\tilde U)=1$ the map
+**The action is a congruence by an invertible element, and the sector is its carrier.** For $\tilde U\in\mathbb{B}$ with $N(\tilde U)=1$ the map
 
 $$
 \Lambda_{\tilde U}:\ \mathbb{B}_{\Phi}\longrightarrow\mathbb{B}_{\Phi},
@@ -295,15 +295,15 @@ $$
 
 is real-linear, preserves the interval, and composes as an action. The three properties are one computation each. The sector is preserved because the star is an anti-automorphism; the interval is preserved because the norm is multiplicative and $N(\tilde U)=N(\tilde U^{*})=1$; and the action law is the associativity of the product.
 
-**The sector is preserved by a much larger set than the units.** The computation of the previous paragraph used only the anti-automorphism property, so $\Lambda_{\tilde U}$ carries the sector into itself for *every* invertible $\tilde U$, unit or not. What the unit condition buys is the preservation of the interval: for a general unit the norm scales as
+**The sector is preserved by a much larger set than the invertibles.** The computation of the previous paragraph used only the anti-automorphism property, so $\Lambda_{\tilde U}$ carries the sector into itself for *every* invertible $\tilde U$, unit or not. What the unit condition buys is the preservation of the interval: for a general unit the norm scales as
 
 $$
 N\bigl(\Lambda_{\tilde U}(\tilde Q)\bigr)=N(\tilde U)N(\tilde Q)N(\tilde U^{*})=\lvert N(\tilde U)\rvert^{2}N(\tilde Q).
 $$
 
-**So the congruences by invertible elements form a group larger than the Lorentz group.** A central rescaling $\tilde U=\lambda e_t$ acts on the sector as multiplication by $\lambda^{2}$ and moves the interval by the positive factor $\lvert\lambda\rvert^{4}$, while the units act by isometries. Only the second is the Lorentz group, and the first is the reason a four-vector can be rescaled without leaving the sector.
+**So the congruences by invertible elements form a group larger than the Lorentz group.** A central rescaling $\tilde U=\lambda e_t$ acts on the sector as multiplication by $\lambda^{2}$ and moves the interval by the positive factor $\lvert\lambda\rvert^{4}$, while the invertibles act by isometries. Only the second is the Lorentz group, and the first is the reason a four-vector can be rescaled without leaving the sector.
 
-**The unit group is the double cover of the proper orthochronous Lorentz group.** The kernel of the action is the set of units that act trivially, and it is the centre $\{\pm e_t\}$. Hence
+**The group of invertibles is the double cover of the proper orthochronous Lorentz group.** The kernel of the action is the set of invertibles that act trivially, and it is the centre $\{\pm e_t\}$. Hence
 
 $$
 \mathbb{B}^{\times}_{1}/\{\pm e_t\}\cong SO^{+}(1,3),
@@ -325,13 +325,13 @@ $$
 
 with the boost factor on the left. The boost factor is Hermitian and lies in $\mathbb{B}_{\Psi}$; the rotation factor is real and lies in $\mathbb{B}_{H}$, the quaternion layer. Only a general rotor uses the whole algebra.
 
-**The two factors act on the sector in two recognisable ways.** The rotation factor $\tilde u_{\mathrm r}$ is a unit of the real quaternion algebra, so its congruence is a rotation of the spatial block and fixes the temporal coordinate. The boost factor $\tilde U_{\Psi,\mathrm b}$ is Hermitian, so its congruence mixes the temporal coordinate into the spatial ones and is the hyperbolic rotation of a change of velocity. The two commute only when the boost axis and the rotation axis coincide, and the product is written with the boost on the left because the two do not commute in general.
+**The two factors act on the sector in two recognisable ways.** The rotation factor $\tilde u_{\mathrm r}$ is invertible in the real quaternion algebra, so its congruence is a rotation of the spatial block and fixes the temporal coordinate. The boost factor $\tilde U_{\Psi,\mathrm b}$ is Hermitian, so its congruence mixes the temporal coordinate into the spatial ones and is the hyperbolic rotation of a change of velocity. The two commute only when the boost axis and the rotation axis coincide, and the product is written with the boost on the left because the two do not commute in general.
 
-**The factorisation is where the sector's thinness becomes visible again.** Rotations are inside the sector: $\tilde u_{\mathrm r}$ is a material element of unit norm, and its action is the congruence by an element of the sector. Boosts are not: $\tilde U_{\Psi,\mathrm b}$ is informational. A sector closed under the action of its own units would generate only rotations, and the reason it does not is that the boost factor is not one of its own.
+**The factorisation is where the sector's thinness becomes visible again.** Rotations are inside the sector: $\tilde u_{\mathrm r}$ is a material element of unit norm, and its action is the congruence by an element of the sector. Boosts are not: $\tilde U_{\Psi,\mathrm b}$ is informational. A sector closed under the action of its own invertibles would generate only rotations, and the reason it does not is that the boost factor is not one of its own.
 
 **The action is transitive on each class of four-vector and preserves the class.** A timelike four-vector is carried to any other timelike four-vector of the same interval, a null one to any null one of the same temporal sign, and a spacelike one to any spacelike one of the same interval. The invariant that separates the orbits is the norm, and it is the only one, because the group is large enough to move any direction into any other direction of the same length. The statement is the orbit classification of *Biquaternion Rotations and Lorentz Transformations*, §*Orbits and the Invariants*, restricted to the sector.
 
-**The two sheets of the timelike region are not exchanged.** The action preserves the sign of the temporal component of a timelike or null element, so the future and past hyperboloids are separate orbits and not one orbit in two pieces. The statement is the proper orthochronous condition, and it is a property of the unit group as defined by a continuous path from the identity: a single reflection would exchange the sheets, and a reflection is not in the connected component.
+**The two sheets of the timelike region are not exchanged.** The action preserves the sign of the temporal component of a timelike or null element, so the future and past hyperboloids are separate orbits and not one orbit in two pieces. The statement is the proper orthochronous condition, and it is a property of the group of invertibles as defined by a continuous path from the identity: a single reflection would exchange the sheets, and a reflection is not in the connected component.
 
 **The action is what the word frame means in this entry.** A frame is an orbit point; a change of frame is a rotor; the invariants of a four-vector are the quantities constant on the orbit. Nothing in that sentence is a new assumption, and nothing in it is specific to the material sector: the same three sentences describe an observable in the informational sector, with the same group acting.
 
@@ -345,7 +345,7 @@ $$
 
 **The two kinds of generator sit in different sectors, and only one of them is in the sector's own bracket.** The rotation generator is a material vector and its action is the sector's bracket. The boost generator is an informational imaginary vector and its action is the anticommutator, which leaves the sector as a product while preserving it as an operator. A boost is therefore realisable as an action on the sector and not as an element of the sector's Lie algebra.
 
-**The last statement is worth a display because it is often got wrong.** A Lorentz transformation is the congruence by a unit; the unit is the exponential of an element of the Lie algebra $\mathfrak{so}(1,3)=\mathfrak{su}(2)\oplus i\mathfrak{su}(2)$; and only the first summand is material. So the exponential of a material element is a rotation, the exponential of an informational element is a boost, and the general unit is the product of the two. The sector's own exponential is the rotation subgroup, and it is compact.
+**The last statement is worth a display because it is often got wrong.** A Lorentz transformation is the congruence by an invertible element; the unit is the exponential of an element of the Lie algebra $\mathfrak{so}(1,3)=\mathfrak{su}(2)\oplus i\mathfrak{su}(2)$; and only the first summand is material. So the exponential of a material element is a rotation, the exponential of an informational element is a boost, and the general unit is the product of the two. The sector's own exponential is the rotation subgroup, and it is compact.
 
 ## The Spectrum
 
@@ -557,7 +557,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 **Read:** the action display, the kernel and the factorisation of §*The Lorentz Action*.
 
-**The unit group acts on the sector by congruence, the kernel is $\{\pm e_t\}$, and the quotient is $SO^{+}(1,3)$.** A frame is an orbit point of a four-vector, a change of frame is a unit acting by congruence, and the invariants are the orbit labels. The double cover is the statement that two units give the same frame.
+**The group of invertibles acts on the sector by congruence, the kernel is $\{\pm e_t\}$, and the quotient is $SO^{+}(1,3)$.** A frame is an orbit point of a four-vector, a change of frame is invertible acting by congruence, and the invariants are the orbit labels. The double cover is the statement that two units give the same frame.
 
 **Neither factor of a general unit need be in the sector.** A rotation factor is material and a boost factor is informational, and a general unit is their product. The acting group is therefore larger than the acted-on space, and the sector is a representation space in the strict sense: a module for a group it does not contain.
 
@@ -642,7 +642,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 | the bracket | $[\tilde R_1,\tilde R_2]$ | $2\vec r_1\times\vec r_2$ |
 | the definite pairing | $\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2})$ | minus the Euclidean pairing of the coefficients |
 | the Minkowski pairing | $\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2}^{\natural})$ | $-r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2$ |
-| the Lorentz rotor | $\tilde U$ | a unit, $N(\tilde U)=1$ |
+| the Lorentz rotor | $\tilde U$ | an invertible element, $N(\tilde U)=1$ |
 | the boost factor | $\tilde U_{\Psi,\mathrm b}$ | $\cosh\tfrac{\theta}{2}+i\sinh\tfrac{\theta}{2}\vec u_{\mathrm b}$, Hermitian |
 | the rotation factor | $\tilde u_{\mathrm r}$ | $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u_{\mathrm r}$, real |
 | the rapidity | $\theta_{\mathrm{rpd}}$ | $\tanh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert c/E$ |
@@ -662,6 +662,6 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 **The partition.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) places the momentum among the four sectors of the norm and the spectrum.
 
-**The unit group.** [The Unit Group, the Cone and the Orders](the-unit-group-the-cone-and-the-orders.html) reads the complement of the cone as the set of reversible processes.
+**The group of invertibles.** [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) reads the complement of the cone as the set of reversible processes.
 
-**The mathematics.** [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) owns the double covers and the orbit classification, and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) owns the norm, the units and the cone.
+**The mathematics.** [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) owns the double covers and the orbit classification, and [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) owns the norm, the invertibles and the cone.

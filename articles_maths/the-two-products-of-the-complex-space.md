@@ -75,7 +75,7 @@ The two products belong to two different classes, and the classes must be kept a
 
 **Proposition.** The sesquilinear product is not associative, has the unit $1$ on the right and no unit on the left, and is commutative in the twisted sense $\overline{Q_2\bar Q_1}=Q_1\bar Q_2$.
 
-*Proof.* The right unit is read at $Q_2=1$: $Q_1\bar 1=Q_1$. On the left, a unit $E$ would satisfy $E\bar Q=Q$ for every $Q$; at $Q=1$ this gives $E=1$, and at $Q=i$ it gives $E\bar i=-iE=i$, that is $E=-1$, so the two values contradict and no left unit exists. The twisted commutativity is the exchange identity. The failure of associativity is computed in *The Ternary Product and the Associator of the Complex Space*; its value is $Q_1\bar Q_2(\bar Q_3-Q_3)$, which is not identically zero, the two sides at $(Q_1,Q_2,Q_3)=(1,1,i)$ being $-i$ and $i$.
+*Proof.* The right unit is read at $Q_2=1$: $Q_1\bar 1=Q_1$. On the left, an invertible element $E$ would satisfy $E\bar Q=Q$ for every $Q$; at $Q=1$ this gives $E=1$, and at $Q=i$ it gives $E\bar i=-iE=i$, that is $E=-1$, so the two values contradict and no left unit exists. The twisted commutativity is the exchange identity. The failure of associativity is computed in *The Ternary Product and the Associator of the Complex Space*; its value is $Q_1\bar Q_2(\bar Q_3-Q_3)$, which is not identically zero, the two sides at $(Q_1,Q_2,Q_3)=(1,1,i)$ being $-i$ and $i$.
 
 The two products differ on exactly the laws the slot analysis predicts: the conjugation in the second slot is what destroys associativity and what removes the left unit. The plain product, whose second slot is linear, keeps both.
 

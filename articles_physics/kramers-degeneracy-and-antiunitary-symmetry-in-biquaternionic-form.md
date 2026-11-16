@@ -182,7 +182,7 @@ The value of $\mathcal T^2$ is not a detail of the operator; it selects the symm
 
 The three rows are the three ways a complex Hilbert space can be given a real structure: none, a real structure (a conjugation $K$ with $K^2=1$), and a quaternionic structure (an antiunitary $J_{\mathrm q}$ with $J_{\mathrm q}^2=-1$). Only the last enforces a degeneracy, and the reason is the one the proof exhibits: $J_{\mathrm q}^2=-1$ is what makes the partner orthogonal to its source, whereas a real structure's partner is not orthogonal to it in general and no degeneracy follows. The opposite-sign verification above is the second row of the table realized: a real symmetric matrix has no enforced degeneracy.
 
-The biquaternion interpretation is that the algebra contains the units for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_\eta$ square to $-e_t$ and supply candidate $J_{\mathrm q}$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
+The biquaternion interpretation is that the algebra contains the invertibles for exactly the third row and the involutions for the second. Its three imaginary elements $\vec e_\eta$ square to $-e_t$ and supply candidate $J_{\mathrm q}$'s; its involutions $\bar{\cdot}$, ${}^{*}$, $\flat$ have fixed spaces of real dimensions $4,4,4$ and supply real structures, though as the mass article insists, an *algebra* involution is not yet a *module* conjugation. The $*$-unitary class is the absence of any such structure, and it is the generic class in the sense that a perturbation breaking the antiunitary symmetry removes the degeneracy without restoring it.
 
 ## What Breaks the Symmetry
 
@@ -194,7 +194,7 @@ H_{\text{field}}=-\vec\mu\cdot\vec B ,
 \vec\mu=\gamma\vec S ,
 $$
 
-and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out a unit $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical signature of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.
+and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out an invertible element $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical signature of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.
 
 **The linear splitting, and why it is linear.** The two facts — an invariant perturbation cannot split a pair, an odd one splits it linearly — follow from the transformation of the perturbation. Under $\mathcal T$ the spin operators are odd,
 

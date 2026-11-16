@@ -35,7 +35,7 @@ Write $B^2=Q_x^2+Q_y^2+Q_z^2$. The quaternionic norm is
 $$
 \langle\tilde Q\rangle_{\natural}=Q_t^2+B^2=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$
-the scalar part of $\tilde Q\tilde Q^{\natural}$. An element is a unit exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The quaternion conjugation is the $\mathbb{C}$-linear map
+the scalar part of $\tilde Q\tilde Q^{\natural}$. An element is invertible exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The quaternion conjugation is the $\mathbb{C}$-linear map
 $$
 \tilde Q^{\natural}=Q_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z.
 $$
@@ -130,7 +130,7 @@ and the map is injective. The image is the four-dimensional subalgebra $\mathbb{
 $$
 \det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2,
 $$
-with the eigenvalues $Q_t\pm iB$, each twice, where $B^2=Q_x^2+Q_y^2+Q_z^2$; see §*The Quadratic Relation*. The rank is $4$ for a unit, $2$ for a nonzero zero divisor and $0$ for the zero element; the proof is in §*The Rank of a One-Sided Operator*.
+with the eigenvalues $Q_t\pm iB$, each twice, where $B^2=Q_x^2+Q_y^2+Q_z^2$; see §*The Quadratic Relation*. The rank is $4$ for an invertible element, $2$ for a nonzero zero divisor and $0$ for the zero element; the proof is in §*The Rank of a One-Sided Operator*.
 
 ### The Four Left Matrices
 
@@ -333,7 +333,7 @@ $$
 $$
 *Proof.* The trace is bilinear in the pair, and only $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ has nonzero trace, equal to $4$; hence the trace is $4Q_tP_t$. The determinant is multiplicative, and $\det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$ and $\det R_{\mathrm{axf}}(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}^2$. The inverse is the inverse of each factor.
 
-**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ and $0$ for the other fifteen. The basis consists of units, but its span does not: for example
+**The basis values.** Every basis matrix is invertible, of determinant $1$ and rank $4$; the trace is $4$ only for $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}$ and $0$ for the other fifteen. The basis consists of invertibles, but its span does not: for example
 $$
 L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}
 =\mathrm I_4+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}
@@ -407,7 +407,7 @@ has $\beta(X,X)=\langle X\rangle_{\natural}$ and Gram matrix $\mathrm I_4$ in th
 
 *Proof.* If $\langle\tilde Q\rangle_{\natural}\neq0$, the determinant is $\langle\tilde Q\rangle_{\natural}^2\neq0$ and the rank is $4$. If $\tilde Q=0$, the matrix is zero. Suppose $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$.
 
-Let $X$ lie in the kernel of $L_{\mathrm{axf}}(\tilde Q)$, so that $\tilde QX=0$. If $X$ were a unit, then $\tilde Q=(\tilde QX)X^{-1}=0$, against the hypothesis; hence $X$ is not a unit and $\langle X\rangle_{\natural}=0$. The kernel is therefore a linear subspace of the null cone, hence totally isotropic for $\beta$, of dimension at most two. This gives $\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)\ge2$.
+Let $X$ lie in the kernel of $L_{\mathrm{axf}}(\tilde Q)$, so that $\tilde QX=0$. If $X$ were an invertible element, then $\tilde Q=(\tilde QX)X^{-1}=0$, against the hypothesis; hence $X$ is not invertible and $\langle X\rangle_{\natural}=0$. The kernel is therefore a linear subspace of the null cone, hence totally isotropic for $\beta$, of dimension at most two. This gives $\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)\ge2$.
 
 For the other bound, split on $Q_t$. If $Q_t\neq0$, the relation reads $L(L-2Q_t\mathrm I_4)=0$, so the minimal polynomial divides $\lambda(\lambda-2Q_t)$, whose roots are distinct; the matrix is diagonalizable with eigenvalues $0$ and $2Q_t$. The trace is $4Q_t$, so $2Q_t$ has multiplicity two and $0$ has multiplicity two; the rank is $2$. If $Q_t=0$, the relation reads $L^2=0$, so the image lies in the kernel and $\operatorname{rank}L\le4-\operatorname{rank}L$, hence the rank is at most two. With the lower bound, the rank is two.
 
@@ -421,11 +421,11 @@ $$
 \le\min\bigl(\operatorname{rank}L_{\mathrm{axf}}(\tilde Q),
 \operatorname{rank}R_{\mathrm{axf}}(\tilde Q_2)\bigr).
 $$
-If one parameter is a unit, the bound is attained, and the rank of the product is the rank of the other one-sided factor. Hence a product is invertible exactly when both parameters are units.
+If one parameter is invertible, the bound is attained, and the rank of the product is the rank of the other one-sided factor. Hence a product is invertible exactly when both parameters are invertible.
 
-*Proof.* The operator is the composite $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$; the rank of a composite is at most the rank of either factor. A unit $\tilde Q_2$ makes $R_{\mathrm{axf}}(\tilde Q_2)$ invertible, so $\operatorname{rank}(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2))=\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)$; a unit $\tilde Q$ does the same on the other side.
+*Proof.* The operator is the composite $L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$; the rank of a composite is at most the rank of either factor. An invertible element $\tilde Q_2$ makes $R_{\mathrm{axf}}(\tilde Q_2)$ invertible, so $\operatorname{rank}(L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2))=\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)$; an invertible element $\tilde Q$ does the same on the other side.
 
-**The possible ranks.** The one-sided ranks are $0$, $2$ and $4$. If a parameter is zero the product is zero. If both parameters are nonzero zero divisors, the product has rank at most two. If both are units, the product is invertible of rank four. Hence a product has rank $0$, $1$, $2$ or $4$, and never rank three.
+**The possible ranks.** The one-sided ranks are $0$, $2$ and $4$. If a parameter is zero the product is zero. If both parameters are nonzero zero divisors, the product has rank at most two. If both are invertible, the product is invertible of rank four. Hence a product has rank $0$, $1$, $2$ or $4$, and never rank three.
 
 **The drop.** For $\tilde Q=\tilde Q_2=e_t+i\vec e_z$,
 $$
@@ -507,7 +507,7 @@ L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)=0
 $$
 *Proof.* The coefficient matrix of the product is $[Q][P]^{\mathsf T}$, by §*The Coefficient Matrix $c(M)$*; it is zero exactly when one of the two columns is zero, and $c$ is injective.
 
-**The two slots.** With the other parameter a unit, the map is injective in each slot:
+**The two slots.** With the other parameter an invertible element, the map is injective in each slot:
 $$
 L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(e_t)=L_{\mathrm{axf}}(\tilde Q),\qquad
 L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(\tilde Q_2)=R_{\mathrm{axf}}(\tilde Q_2).
@@ -561,7 +561,7 @@ For $M\neq0$ the rank is exactly one; the zero matrix has $c=0$ and rank zero.
 
 ### Matrix Rank Against Length
 
-**The two ranks.** The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in $\{0,1,2,4\}$ by §*The Rank of a Product*, and it is four exactly when both parameters are units. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.
+**The two ranks.** The matrix rank and the length are different invariants of the same matrix. The matrix rank of a product lies in $\{0,1,2,4\}$ by §*The Rank of a Product*, and it is four exactly when both parameters are invertible. The length is the coefficient rank, which can be four while the matrix rank is one. Neither invariant determines the other.
 
 **The examples.** The matrix unit $E_{11}$ has matrix rank one and coefficient rank four; the product $L_{\mathrm{axf}}(e_t+\vec e_x)R_{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and coefficient rank one; the product $L_{\mathrm{axf}}(e_t+i\vec e_z)R_{\mathrm{axf}}(e_t+i\vec e_z)$ has matrix rank one and coefficient rank one; the matrix $L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_x}$ has matrix rank two and coefficient rank two.
 
@@ -707,19 +707,19 @@ exactly when
 $$
 \tilde Q_2\tilde Q=\pm e_t.
 $$
-Then $\tilde Q$ is a unit and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ is the inner automorphism. The isometry group is
+Then $\tilde Q$ is invertible and $\tilde Q_2=\pm\tilde Q^{-1}$, and the operator is $\pm\mathrm{Ad}_{\tilde Q}$, where $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ is the inner automorphism. The isometry group is
 $$
 \{\pm\mathrm{Ad}_{\tilde Q}\}
 \cong\bigl(\mathbb{B}^{\times}/\mathbb{C}^{\times}\bigr)\times\{\pm1\},
 $$
-of complex dimension three, where $\mathbb{B}^{\times}$ is the group of units. It is not the full orthogonal group, which has dimension six.
+of complex dimension three, where $\mathbb{B}^{\times}$ is the group of invertibles. It is not the full orthogonal group, which has dimension six.
 
 *Proof.* An isometry of a non-degenerate form on a finite-dimensional space is injective: if $FX=0$, then $\langle X,Y\rangle=\langle FX,FY\rangle=0$ for all $Y$, so $X=0$ by non-degeneracy. Hence it is invertible, and the isometry condition is equivalent to $F^{\approx}F=\mathrm I$. With $F=L_{\mathrm{axf}}(\tilde Q)R_{\mathrm{axf}}(\tilde Q_2)$ and $F^{\approx}=L_{\mathrm{axf}}(\tilde Q_2)R_{\mathrm{axf}}(\tilde Q)$,
 $$
 F^{\approx}F
 =L_{\mathrm{axf}}(\tilde Q_2\tilde Q)R_{\mathrm{axf}}(\ \tilde Q_2\tilde Q).
 $$
-The identity is $L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(e_t)$. The fibre theorem gives $\tilde Q_2\tilde Q=\lambda e_t$ in both slots; then $F^{\approx}F=\lambda^2\mathrm I$, so $\lambda^2=1$. Hence $\tilde Q_2\tilde Q=\pm e_t$. The converse is immediate. The dimension is the dimension of the unit group modulo the central scalars, four minus one; the two signs are discrete.
+The identity is $L_{\mathrm{axf}}(e_t)R_{\mathrm{axf}}(e_t)$. The fibre theorem gives $\tilde Q_2\tilde Q=\lambda e_t$ in both slots; then $F^{\approx}F=\lambda^2\mathrm I$, so $\lambda^2=1$. Hence $\tilde Q_2\tilde Q=\pm e_t$. The converse is immediate. The dimension is the dimension of the group of invertibles modulo the central scalars, four minus one; the two signs are discrete.
 
 ### The Multiplicative Members
 
@@ -818,7 +818,7 @@ The sixteen products $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ are real sig
 
 The coefficient matrix $c(M)$ is the coordinate matrix of $M$ in the sixteen-dimensional basis $L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, computed by $c_{\mu\nu}=\frac14\operatorname{Tr}((L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu})^{\mathsf T}M)$. It is a linear isomorphism of $M_4(\mathbb{C})$ onto itself, and it is not the matrix $M$. The product set is the seven-dimensional Segre cone of pure tensors in $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$. It is not a subspace. The factorisation map has eight parameters, one scaling orbit, and the zero operator as vertex. The product condition is the rank condition $\operatorname{rank}c(M)\le1$.
 
-The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for a unit, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are units, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L_{\mathrm{axf}}(e_t+\vec e_x)R_{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
+The length is the coefficient rank, $\ell(M)=\operatorname{rank}c(M)$, and it takes the values $0,1,2,3,4$; every matrix is a sum of at most four products, and a generic matrix needs four. A one-sided operator has rank four for an invertible element, two for a nonzero zero divisor, and zero for zero. A product has rank $0$, $1$, $2$ or $4$, never three; it is invertible exactly when both parameters are invertible, and its rank can drop to one when both are zero divisors. The matrix rank and the length are independent: the matrix unit $E_{11}$ has matrix rank one and length four, and the product $L_{\mathrm{axf}}(e_t+\vec e_x)R_{\mathrm{axf}}(e_t+\vec e_y)$ has matrix rank four and length one. All sixteen units have length four. The length is frame-invariant: a change of the element basis sends $c$ to $C^{-1}cC^{-\mathsf T}$, which has the same rank, and a change of the display alone leaves $c$ unchanged, so the length belongs to the operator and not to the array that displays it.
 
 The plain adjoint swaps the two parameters, and the type criteria are $\tilde Q_2=\lambda\tilde Q$ for self-adjoint, $\tilde Q_2\tilde Q=\pm e_t$ for isometry and $\tilde Q_2\tilde Q=e_t$ for multiplicative. The isometry group is $\{\pm\mathrm{Ad}_{\tilde Q}\}$, of complex dimension three, and it is not a pin group.
 
@@ -848,7 +848,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 | $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$ | Hermitian conjugation |
 | $\mathrm{Ad}_{\tilde Q}(X)=\tilde QX\tilde Q^{-1}$ | inner automorphism |
 | $\mathbb{B}_{\mathrm{opp}}$ | the opposite algebra |
-| $\mathbb{B}^{\times}$ | the unit group |
+| $\mathbb{B}^{\times}$ | the group of invertibles |
 | $\operatorname{Sc}$ | scalar part, the $e_t$ coefficient |
 | $\approx$ | plain adjoint for $\langle X,Y\rangle=\operatorname{Sc}(XY)$ |
 | $\dagger$ | Hilbert–Schmidt adjoint |

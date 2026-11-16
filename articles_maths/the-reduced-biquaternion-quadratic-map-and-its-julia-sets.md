@@ -42,7 +42,7 @@ $$
 
 and the unique classical critical point is the origin.
 
-**Proof.** The derivative of $\breve Q\mapsto \breve Q^{2}$ at $\breve Q$ in the direction $H$ is $\breve Q H+H\breve Q=2\breve Q H$, the multiplication by $2\breve Q$; that operator is invertible exactly when $2\breve Q$ is a unit, that is when $Q_{+}\neq0$ and $Q_{-}\neq0$; and the operator is zero exactly when $\breve Q=0$.
+**Proof.** The derivative of $\breve Q\mapsto \breve Q^{2}$ at $\breve Q$ in the direction $H$ is $\breve Q H+H\breve Q=2\breve Q H$, the multiplication by $2\breve Q$; that operator is invertible exactly when $2\breve Q$ is invertible, that is when $Q_{+}\neq0$ and $Q_{-}\neq0$; and the operator is zero exactly when $\breve Q=0$.
 
 ## The Quadratic Family
 

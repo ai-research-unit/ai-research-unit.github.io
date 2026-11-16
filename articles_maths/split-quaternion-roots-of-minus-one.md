@@ -5,7 +5,7 @@
 
 This article determines the solutions of the equation $\tilde\zeta^2 = -1$ in the split-quaternion algebra. It proves that the solutions are exactly the elements of the vector subspace of unit norm, identifies them with the complex structures of the plane, proves that they form a single conjugacy class and describes them as a homogeneous space, relates them to the idempotents and to the zero divisors, and compares the result with the quaternion case.
 
-The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the units are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
+The split-quaternion algebra, its basis, its vector subspace $V$, its central product $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$, its idempotents $\tilde\pi_{1,2}$ and its conjugation are assumed from *Split-Quaternion Algebra*; the metrical reading of $\langle\cdot\rangle_{\natural}$ is in *Split-Quaternion Norm and Invertibility*. The criterion that the invertibles are the elements with $N \neq 0$ and the description of the zero divisors are assumed from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the zero divisor set is not re-described here. The hyperbolic plane that the solution set carries is treated in *Split-Quaternions and Hyperbolic Geometry*, and the double cover of the Lorentz group that acts on it in *Split-Quaternion Rotations and the Lorentz Group*. Nothing physical is invoked.
 
 ## The Equation and the Reduction to the Vector Subspace
 
@@ -47,7 +47,7 @@ the two components being distinguished by the sign of the coefficient $q_x$ of $
 
 **Proof.** The two components are the intersections of the level set with the closed half-spaces $q_x \geq 1$ and $q_x \leq -1$; on the first, $q_x = \sqrt{1 + q_y^2 + q_z^2}$, and the map $(\zeta_y, \zeta_z) \mapsto \big(\sqrt{1 + \zeta_y^2 + \zeta_z^2}, \zeta_y, \zeta_z\big)$ is a diffeomorphism from $\mathbb{R}^2$ onto it, and similarly for the second.
 
-The solutions therefore have $\langle\tilde\zeta\rangle_{\natural} = 1$, so by the invertibility criterion every solution is a **unit** and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
+The solutions therefore have $\langle\tilde\zeta\rangle_{\natural} = 1$, so by the invertibility criterion every solution is invertible and none is a zero divisor. This is the first point of contact with *Split-Quaternion Zero Divisors* and it is taken up again in *The Relation to the Idempotents and to the Zero Divisors* below.
 
 ## Identification with the Complex Structures of the Plane
 
@@ -73,7 +73,7 @@ a copy of the complex numbers inside $\mathbb{H}_{\mathrm{spl}}$, and every suba
 
 ## The Root Set as a Conjugacy Class
 
-**Theorem (A Single Conjugacy Class).** All solutions of $\tilde\zeta^2 = -1$ are conjugate to one another under the group of units:
+**Theorem (A Single Conjugacy Class).** All solutions of $\tilde\zeta^2 = -1$ are conjugate to one another under the group of invertibles:
 
 $$
 \boxed{\;\mathcal{R}_{-1} = \{g \vec e_x g^{-1} : g \in {\mathbb{H}_{\mathrm{spl}}}^{\times}\}\;}.
@@ -81,15 +81,15 @@ $$
 
 The set is a single conjugacy class of the group ${\mathbb{H}_{\mathrm{spl}}}^{\times}$, and it contains $\vec e_x$, so it is the conjugacy class of $\vec e_x$.
 
-**Proof.** The adjoint action of the unit group on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each component of the level set $N = 1$; the unit $\vec e_y$ with $N = -1$ exchanges the components. Hence every solution is conjugate to $\vec e_x$ under the unit group.
+**Proof.** The adjoint action of the group of invertibles on $V$ has image the Lorentz group $\mathrm{SO}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and $\mathrm{SO}(2,1)$ acts transitively on each component of the level set $N = 1$; the unit $\vec e_y$ with $N = -1$ exchanges the components. Hence every solution is conjugate to $\vec e_x$ under the group of invertibles.
 
-**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full unit group ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $\vec e_y$, since $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$.
+**Corollary (The Two Orbits of the Group $\{N = 1\}$).** The group $U = \{N = 1\} \cong \mathrm{SL}_2(\mathbb{R})$ is connected, so its orbits under conjugation are connected; the root set has two connected components, and $U$ acts on it with exactly two orbits, the two components of the level set. The full group of invertibles ${\mathbb{H}_{\mathrm{spl}}}^{\times}$ acts transitively, and the element that exchanges the two sheets is any unit of norm $-1$, for instance $\vec e_y$, since $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$.
 
 **Proof.** The first statement is the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the connectedness of the two components. The action of $\vec e_y$ is the computation $\vec e_y \vec e_x = -\vec e_z = -\vec e_x \vec e_y$, so $\vec e_y \vec e_x \vec e_y^{-1} = -\vec e_x$; here $\vec e_y^{-1} = \vec e_y$ and $\langle \vec e_y\rangle_{\natural} = -1$.
 
 ## The Root Set as a Homogeneous Space
 
-**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(\vec e_x) = \{g \in {\mathbb{H}_{\mathrm{spl}}}^{\times} : g \vec e_x = \vec e_x g\}$ be the centraliser of $\vec e_x$ in the group of units. Then $\operatorname{Cent}(\vec e_x)$ is the group of nonzero elements of the copy $\mathbb{R}[\vec e_x] \cong \mathbb{C}$ of the complex numbers, so that
+**Theorem (The Homogeneous Space).** Let $\operatorname{Cent}(\vec e_x) = \{g \in {\mathbb{H}_{\mathrm{spl}}}^{\times} : g \vec e_x = \vec e_x g\}$ be the centraliser of $\vec e_x$ in the group of invertibles. Then $\operatorname{Cent}(\vec e_x)$ is the group of nonzero elements of the copy $\mathbb{R}[\vec e_x] \cong \mathbb{C}$ of the complex numbers, so that
 
 $$
 \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times},
@@ -101,7 +101,7 @@ $$
 \boxed{\;\mathcal{R}_{-1} \cong {\mathbb{H}_{\mathrm{spl}}}^{\times} / \operatorname{Cent}(\vec e_x), \qquad \operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}\;}.
 $$
 
-The two sides are real surfaces: the unit group has real dimension $4$ and $\mathbb{C}^{\times}$ has real dimension $2$, so the quotient has real dimension $2$, matching the dimension of the level set.
+The two sides are real surfaces: the group of invertibles has real dimension $4$ and $\mathbb{C}^{\times}$ has real dimension $2$, so the quotient has real dimension $2$, matching the dimension of the level set.
 
 **Proof.** An element commutes with $\vec e_x$ exactly when it lies in the subalgebra $\operatorname{span}\{1,\vec e_x\} \cong \mathbb{C}$: the elements $1$ and $\vec e_x$ commute with $\vec e_x$, while $\vec e_y$ and $\vec e_z = \vec e_x\vec e_y$ anticommute with it, since $\vec e_x\vec e_y = -\vec e_y\vec e_x$ and $\vec e_z\vec e_x = -\vec e_x\vec e_z$. The units of this subalgebra are the nonzero complex numbers, so $\operatorname{Cent}(\vec e_x) \cong \mathbb{C}^{\times}$. The orbit of $\vec e_x$ under conjugation is the whole root set by the theorem that the root set is a single conjugacy class, and the stabiliser of $\vec e_x$ is the centraliser, so the orbit–stabiliser correspondence gives the displayed bijection.
 
@@ -153,9 +153,9 @@ $$
 \langle\tilde\zeta\tilde\pi\rangle_{\natural} = \langle\tilde\zeta\rangle_{\natural} \langle\tilde\pi\rangle_{\natural} = 1 \cdot 0 = 0 .
 $$
 
-**Proof.** $\langle\tilde\zeta\rangle_{\natural} = 1 \neq 0$, so $\tilde\zeta$ is a unit and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\zeta\tilde\pi$ is nonzero because $\tilde\zeta$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.
+**Proof.** $\langle\tilde\zeta\rangle_{\natural} = 1 \neq 0$, so $\tilde\zeta$ is invertible and not a zero divisor, by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*. The product $\tilde\zeta\tilde\pi$ is nonzero because $\tilde\zeta$ is invertible and $\tilde\pi \neq 0$, and its split-quaternion norm is zero by multiplicativity and the vanishing of $\langle\tilde\pi\rangle_{\natural}$.
 
-The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are units. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.
+The picture is therefore the following. The roots of $+1$ in $V$ form the level set $N = -1$ and produce the idempotents, which are zero divisors and split the algebra; the roots of $-1$ form the level set $N = 1$, produce the copies of $\mathbb{C}$, and are invertible. The two loci are disjoint level sets in the same three-dimensional space $V$, one cut out by $N = -1$ and one by $N = 1$.
 
 ## Comparison with the Quaternion and Biquaternion Cases
 
@@ -180,7 +180,7 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the not
 
 ## Summary
 
-The solutions of $\tilde\zeta^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\zeta\rangle_{\natural} = 1$, that is, the points of the level set $q_x^2 - q_y^2 - q_z^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is a unit and none is a zero divisor.
+The solutions of $\tilde\zeta^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $\langle\tilde\zeta\rangle_{\natural} = 1$, that is, the points of the level set $q_x^2 - q_y^2 - q_z^2 = 1$; no solution has a nonzero scalar part, and every solution has $N = 1$, so every solution is invertible and none is a zero divisor.
 
 Each solution is a vector of the vector subspace with $\operatorname{Sc} = 0$ and $N = 1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\tilde\zeta$ and $-\tilde\zeta$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
@@ -201,7 +201,7 @@ The roots of $+1$ play the companion role: they are $\pm 1$ together with the le
 | $\mathcal{R}_{-1} \cong {\mathbb{H}_{\mathrm{spl}}}^{\times}/\mathbb{C}^{\times}$ | the root set as a homogeneous space | this article |
 | $\eta^2 = +1$, $\langle \eta\rangle_{\natural} = -1$ | the root set of $+1$ in $V$ | this article |
 | $\tfrac12(1 \pm \eta)$ | the idempotents attached to a root of $+1$ | this article |
-| $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the group of units with $N = 1$ | *Split-Quaternion Norm and Invertibility* |
+| $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the group of invertibles with $N = 1$ | *Split-Quaternion Norm and Invertibility* |
 | $V$ | the vector subspace | *Split-Quaternion Algebra* |
 | $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$ | later Part V systems, named only | *The Number Systems as Clifford Algebras* |
 

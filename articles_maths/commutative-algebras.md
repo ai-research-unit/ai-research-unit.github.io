@@ -112,7 +112,7 @@ Let $S \subseteq A$ be a **multiplicative subset**: $1 \in S$ and $s, t \in S \R
 
 **Proposition (universal property).** Every homomorphism $\phi : A \to B$ with $\phi(S) \subseteq B^{\times}$ factors uniquely through the canonical map $A \to S^{-1}A$.
 
-*Proof.* The formula $\phi(a/s) = \phi(a)\phi(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\phi(a)\phi(s') = \phi(a')\phi(s)$, and $\phi(s)$, $\phi(s')$ are units; it is a homomorphism by the usual rules of fractions.
+*Proof.* The formula $\phi(a/s) = \phi(a)\phi(s)^{-1}$ is forced; it is well defined because $as' = a's$ gives $\phi(a)\phi(s') = \phi(a')\phi(s)$, and $\phi(s)$, $\phi(s')$ are invertible; it is a homomorphism by the usual rules of fractions.
 
 The localisations $A_f$ for $f \in A$ ($S = \{f^n\}$) and $A_{\mathrm{P}}$ for a prime ideal $\mathrm{P}$ ($S = A \setminus \mathrm{P}$) are the principal and local cases. The primes of $S^{-1}A$ correspond bijectively to the primes of $A$ disjoint from $S$; in particular $\operatorname{Spec} A_f = D(f)$ as sets.
 

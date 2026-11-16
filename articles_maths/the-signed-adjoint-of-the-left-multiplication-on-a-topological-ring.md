@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The signed left multiplication is the one-sided operator $\ell_a(x) = a\,\alpha(x)$, the signed two-sided operator with the right parameter equal to $1$, and its adjoint with respect to the form of the category is again a signed left multiplication, now with the parameter replaced by its image under the twist $\delta = \sigma\alpha$: $\ell_a^\dagger = \ell_{\delta(a)}$. The class of signed one-sided operators is therefore closed under the adjoint, exactly as the class of reflections is, and the self-adjointness, the unitarity and the involutivity of the operator read off three conditions on the parameter, modulo the kernel of the parametrisation, which consists of the units inducing the grade involution. This article computes the adjoint, separates the three conditions, assembles the two-sided signed two-sided operator from the one-sided operator and its adjoint, and reads the whole thing through the topology.
+The signed left multiplication is the one-sided operator $\ell_a(x) = a\,\alpha(x)$, the signed two-sided operator with the right parameter equal to $1$, and its adjoint with respect to the form of the category is again a signed left multiplication, now with the parameter replaced by its image under the twist $\delta = \sigma\alpha$: $\ell_a^\dagger = \ell_{\delta(a)}$. The class of signed one-sided operators is therefore closed under the adjoint, exactly as the class of reflections is, and the self-adjointness, the unitarity and the involutivity of the operator read off three conditions on the parameter, modulo the kernel of the parametrisation, which consists of the invertibles inducing the grade involution. This article computes the adjoint, separates the three conditions, assembles the two-sided signed two-sided operator from the one-sided operator and its adjoint, and reads the whole thing through the topology.
 
 The article assumes the topological ring and the bounded operators from *Topological Rings and Fields* and *Operators on a Topological Ring*; the signed left and right multiplications, their composition laws, their group and their fixed sets from *The Signed Left Multiplication on a Topological Ring*; the signed two-sided operator, its adjoint and its composition from *The Signed Adjoint Two-Sided Operator on a Topological Ring*; the reflection and its adjoint from *The Signed Adjoint of the Reflection on a Topological Ring*; the involution, the grade involution and the closedness of the fixed set from *Involutive Topological Rings and Fields*; and the operator adjoint and the form of the category from *The Involution on Bounded Operators of a Ring*.
 
@@ -13,7 +13,7 @@ $$
 \ell_a(x) = a\,\alpha(x) = L_a\alpha = \Sigma^\alpha_{a,1} ,
 $$
 
-the **signed right multiplication** is $\varrho_b(x) = \alpha(x)\,b = \alpha R_b = \Sigma^\alpha_{1,b}$, and the kernel of the parametrisation is $K = \{u\in R^\times : c_u = \alpha\}$, the units inducing the grade involution.
+the **signed right multiplication** is $\varrho_b(x) = \alpha(x)\,b = \alpha R_b = \Sigma^\alpha_{1,b}$, and the kernel of the parametrisation is $K = \{u\in R^\times : c_u = \alpha\}$, the invertibles inducing the grade involution.
 
 ## The Adjoint of the Signed Left Multiplication
 
@@ -51,7 +51,7 @@ $$
 
 and when the grade involution is not inner, $K = \{1\}$, so unitarity is $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$.
 
-**Proof.** The parametrisation $u\mapsto\ell_u$ is injective: $\ell_u = \ell_v$ means $u\alpha(x) = v\alpha(x)$ for all $x$, and $\alpha$ is surjective, so $u = v$. Hence $\ell_a^\dagger = \ell_{\delta(a)}$ equals $\ell_a$ exactly when $\delta(a) = a$. For unitarity, $\ell_a^\dagger\ell_a = \ell_{\delta(a)}\ell_a = \ell_{\delta(a)\alpha(a)}$, which is the identity exactly when $\delta(a)\alpha(a)\in K$, where $K$ is the set of units $u$ with $\ell_u = \mathrm{id}$; for involutivity, $\ell_a^2 = \ell_{a\alpha(a)}$, which is the identity exactly when $a\alpha(a)\in K$.
+**Proof.** The parametrisation $u\mapsto\ell_u$ is injective: $\ell_u = \ell_v$ means $u\alpha(x) = v\alpha(x)$ for all $x$, and $\alpha$ is surjective, so $u = v$. Hence $\ell_a^\dagger = \ell_{\delta(a)}$ equals $\ell_a$ exactly when $\delta(a) = a$. For unitarity, $\ell_a^\dagger\ell_a = \ell_{\delta(a)}\ell_a = \ell_{\delta(a)\alpha(a)}$, which is the identity exactly when $\delta(a)\alpha(a)\in K$, where $K$ is the set of invertibles $u$ with $\ell_u = \mathrm{id}$; for involutivity, $\ell_a^2 = \ell_{a\alpha(a)}$, which is the identity exactly when $a\alpha(a)\in K$.
 
 **Corollary (the anti-Hermitian case).** The signed left multiplication is anti-Hermitian, $\ell_a^\dagger = -\ell_a$, exactly when $\delta(a) = -a$; an anti-Hermitian signed left multiplication is never unitary.
 
@@ -69,7 +69,7 @@ $$
 
 which contains $0$ and is the fixed set of the composite automorphism $\alpha$ when $a = 1$; the self-adjointness of $\ell_a$ makes the fixed set the fixed set of a set of constraints involving $\delta$, and the fixed element $x$ is one with $\alpha(x) = a^{-1}x$.
 
-**Proof.** The equation $a\alpha(x) = x$ defines the fixed set, closed as an equalizer; for $a=1$ it is $R^\alpha$; for a unit $a$ it is $\alpha(x) = a^{-1}x$, from *The Signed Left Multiplication on a Topological Ring*.
+**Proof.** The equation $a\alpha(x) = x$ defines the fixed set, closed as an equalizer; for $a=1$ it is $R^\alpha$; for an invertible element $a$ it is $\alpha(x) = a^{-1}x$, from *The Signed Left Multiplication on a Topological Ring*.
 
 **Theorem (the subgroup generated and the adjoint).** The signed left multiplications with unit parameter and the grade involution generate a subgroup of the group of additive automorphisms, in which $\alpha$ acts on the parameters by $\ell_u\mapsto\ell_{\alpha(u)}$ and in which the adjoint acts as an anti-automorphism,
 
@@ -119,7 +119,7 @@ which evaluates to $\Sigma^\alpha_{\delta(a),\delta(b)}$, recovering the adjoint
 
 ## Summary
 
-The signed left multiplication $\ell_a(x) = a\alpha(x) = \Sigma^\alpha_{a,1}$ has adjoint $\ell_a^\dagger = \ell_{\delta(a)}$ with respect to the form of the category, where $\delta = \sigma\alpha$, and the signed right multiplication has adjoint $\varrho_b^\dagger = \varrho_{\delta(b)}$; the one-sided signed families are therefore closed under the adjoint, and the adjoint is an anti-automorphism of the generated one-sided family. The parametrisation $u\mapsto\ell_u$ is injective, and the operator is self-adjoint exactly when $\delta(a) = a$; it is unitary exactly when $\delta(a)\alpha(a)\in K$ and an involution exactly when $a\alpha(a)\in K$, where $K$ is the set of units inducing the grade involution, trivial when the grade involution is not inner, so that unitarity is then $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$. The two-sided signed two-sided operator is assembled as $\Sigma^\alpha_{a,b} = \ell_a\varrho_{\alpha(b)}\alpha$, and its adjoint is recovered from the one-sided adjoints and the self-adjointness of the grade involution as $\Sigma^\alpha_{\delta(a),\delta(b)}$. Topologically the operators are bounded and continuous, the adjoint map is continuous, and the three sets are closed.
+The signed left multiplication $\ell_a(x) = a\alpha(x) = \Sigma^\alpha_{a,1}$ has adjoint $\ell_a^\dagger = \ell_{\delta(a)}$ with respect to the form of the category, where $\delta = \sigma\alpha$, and the signed right multiplication has adjoint $\varrho_b^\dagger = \varrho_{\delta(b)}$; the one-sided signed families are therefore closed under the adjoint, and the adjoint is an anti-automorphism of the generated one-sided family. The parametrisation $u\mapsto\ell_u$ is injective, and the operator is self-adjoint exactly when $\delta(a) = a$; it is unitary exactly when $\delta(a)\alpha(a)\in K$ and an involution exactly when $a\alpha(a)\in K$, where $K$ is the set of invertibles inducing the grade involution, trivial when the grade involution is not inner, so that unitarity is then $\delta(a)\alpha(a) = 1$ and involutivity is $a\alpha(a) = 1$. The two-sided signed two-sided operator is assembled as $\Sigma^\alpha_{a,b} = \ell_a\varrho_{\alpha(b)}\alpha$, and its adjoint is recovered from the one-sided adjoints and the self-adjointness of the grade involution as $\Sigma^\alpha_{\delta(a),\delta(b)}$. Topologically the operators are bounded and continuous, the adjoint map is continuous, and the three sets are closed.
 
 ## Summary of Notation
 

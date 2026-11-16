@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{C}_{\mathrm{dln}}$ itself, the exponential map, the group of units as a Lie group, the parabolic one-parameter subgroup, and the quotient of the unit group by the scalars. It follows *Dual-Numbers Algebra* for the algebra and its abelian Lie bracket, *Dual-Numbers Norm and Invertibility* for the unit group, *Dual-Numbers Automorphisms and Derivations* for the derivation algebra, and *Shears and Parabolic Rotations* for the shear. The comparison throughout is with the split complex algebra, whose unit group is the two-component quotient $\mathbb{R}^\times$; here the unit group is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.
+This article develops the Lie theory of the dual-number algebra: the Lie algebra structure on $\mathbb{C}_{\mathrm{dln}}$ itself, the exponential map, the group of invertibles as a Lie group, the parabolic one-parameter subgroup, and the quotient of the group of invertibles by the scalars. It follows *Dual-Numbers Algebra* for the algebra and its abelian Lie bracket, *Dual-Numbers Norm and Invertibility* for the group of invertibles, *Dual-Numbers Automorphisms and Derivations* for the derivation algebra, and *Shears and Parabolic Rotations* for the shear. The comparison throughout is with the split complex algebra, whose group of invertibles is the two-component quotient $\mathbb{R}^\times$; here the group of invertibles is the much smaller group $\mathbb{R}^\times \times \mathbb{R}$.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible; the exponential is a formal series when $R$ is a commutative $\mathbb{Q}$-algebra and an analytic series over the geometric specialisation $R = \mathbb{R}$, and then the algebra is written $\mathbb{C}_{\mathrm{dln}}$. A general dual number is
 
@@ -11,7 +11,7 @@ $$
 Q = q + \varepsilon q', \qquad q, q' \in R,
 $$
 
-with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = q^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$, and unit group $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$.
+with $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$, norm $\langle Q\rangle = q^2$, maximal ideal $\mathrm{M} = (\varepsilon) = \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$, and group of invertibles $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$.
 
 ## The Lie Algebra Structure
 
@@ -45,7 +45,7 @@ So the dual-number Lie algebra is the abelian two-dimensional real Lie algebra, 
 
 ### The Lie Algebra of a Commutative Associative Algebra
 
-**Remark.** For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{C}_{\mathrm{dln}}$ therefore lives not in $\mathbb{C}_{\mathrm{dln}}$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}}$ and in the Lie group structure of the unit group, which are treated below.
+**Remark.** For any associative algebra $A$ the commutator makes $A$ a Lie algebra, and the Jacobi identity is a consequence of associativity. When $A$ is commutative the bracket vanishes, so the Lie algebra records no more than the $R$-module structure. The interesting Lie theory of $\mathbb{C}_{\mathrm{dln}}$ therefore lives not in $\mathbb{C}_{\mathrm{dln}}$ itself but in its derivation algebra $\operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}}$ and in the Lie group structure of the group of invertibles, which are treated below.
 
 ## The Exponential
 
@@ -93,13 +93,13 @@ $$
 
 **Proof.** The exponential is the usual exponential of the commutative associative algebra $\mathbb{C}_{\mathrm{dln},R}$, and for commuting $Q_1, Q_2$ the identity $\exp(Q_1+Q_2) = \exp(Q_1)\exp(Q_2)$ follows by the binomial theorem. Alternatively, $\exp(q_1 + \varepsilon q'_1)\exp(q_2 + \varepsilon q'_2) = \exp(q_1)(1 + \varepsilon q'_1)\exp(q_2)(1 + \varepsilon q'_2) = \exp(q_1+q_2)(1 + (q'_1+q'_2)\varepsilon) = \exp((q_1+q_2) + \varepsilon(q'_1+q'_2))$, matching $Q_1 + Q_2$.
 
-So $\exp$ is a homomorphism of groups, and the image is a subgroup of the unit group.
+So $\exp$ is a homomorphism of groups, and the image is a subgroup of the group of invertibles.
 
-## The Group of Units
+## The Group of Invertibles
 
 ### The Lie Group
 
-**Theorem.** The group of units
+**Theorem.** The group of invertibles
 
 $$
 (\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}
@@ -117,7 +117,7 @@ the isomorphism being $q + \varepsilon q' \leftrightarrow (q,\, q'/q)$.
 
 ### Connected Components
 
-**Proposition.** Over $R = \mathbb{R}$ the unit group has exactly two connected components, $\{q > 0\}$ and $\{q < 0\}$, each contractible; the identity component is
+**Proposition.** Over $R = \mathbb{R}$ the group of invertibles has exactly two connected components, $\{q > 0\}$ and $\{q < 0\}$, each contractible; the identity component is
 
 $$
 (\mathbb{C}_{\mathrm{dln}})^\times_0 = \{q > 0\} \cong \mathbb{R}_{>0} \times \mathbb{R}.
@@ -167,7 +167,7 @@ are inverse isomorphisms of groups, where $\mathrm{M}$ carries the additive grou
 
 **Proof.** $(1 + s\varepsilon) - 1 = s\varepsilon$ and $(s\varepsilon)^2 = s^2\varepsilon^2 = 0$, so the displacement from the identity is nilpotent of index two, which is the algebraic form of unipotence; in particular $1 + s\varepsilon$ has no eigenvalue different from $1$ as a linear map of the algebra. The generator is the nilpotent $\varepsilon$, whose exponential is polynomial.
 
-## The Group of Units Modulo Scaling
+## The Group of Invertibles Modulo Scaling
 
 ### The Quotient
 
@@ -187,7 +187,7 @@ the isomorphism being the class of $q + \varepsilon q'$ mapped to $1 + (q'/q)\va
 
 ### The Split Complex Case
 
-For the split complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the unit group is ${\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times$, of real dimension two and with four contractible components; the exponential from the abelian Lie algebra $\mathbb{R}^2$ is a bijection onto the identity component, exactly as in the dual case. The quotient is
+For the split complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$, the group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times$, of real dimension two and with four contractible components; the exponential from the abelian Lie algebra $\mathbb{R}^2$ is a bijection onto the identity component, exactly as in the dual case. The quotient is
 
 $$
 {\mathbb{C}_{\mathrm{spl}}}^\times/\mathbb{R}^\times \cong \mathbb{R}^\times,
@@ -200,16 +200,16 @@ obtained by the ratio of the two idempotent components, and it has two component
 | | $\mathbb{C}_{\mathrm{dln}}$ | $\mathbb{C}_{\mathrm{spl}}$ |
 |---|---|---|
 | Lie algebra | $\mathbb{R}^2$, abelian | $\mathbb{R}^2$, abelian |
-| Unit group | $\mathbb{R}^\times\times\mathbb{R}$, two components | $\mathbb{R}^\times\times\mathbb{R}^\times$, four components |
+| Group of invertibles | $\mathbb{R}^\times\times\mathbb{R}$, two components | $\mathbb{R}^\times\times\mathbb{R}^\times$, four components |
 | Exponential | bijection onto identity component | bijection onto identity component |
 | Kernel of $\exp$ | $0$ | $0$ |
-| Unit group $/$ scalars | $\mathbb{R}$, connected | $\mathbb{R}^\times$, two components |
+| Group of invertibles $/$ scalars | $\mathbb{R}$, connected | $\mathbb{R}^\times$, two components |
 
 The dual row is the two-dimensional row with the collapse of the quotient: the parabolic case replaces the hyperbolic two-component quotient of the split complex numbers by a single contractible line, while sharing with it the property that the exponential is a global diffeomorphism.
 
 ## Summary
 
-The dual-number algebra $\mathbb{C}_{\mathrm{dln}}$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ and is a group homomorphism from $(\mathbb{C}_{\mathrm{dln}},+)$ to the unit group. The unit group is $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{q > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the unit group by the central scalars is $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.
+The dual-number algebra $\mathbb{C}_{\mathrm{dln}}$ is an abelian two-dimensional real Lie algebra, nilpotent of class one, with vanishing bracket. The exponential has the closed form $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ and is a group homomorphism from $(\mathbb{C}_{\mathrm{dln}},+)$ to the group of invertibles. The group of invertibles is $(\mathbb{C}_{\mathrm{dln}})^\times \cong \mathbb{R}^\times \times \mathbb{R}$: a two-dimensional abelian Lie group with two contractible components, and the exponential is a diffeomorphism from the Lie algebra onto the identity component $\{q > 0\}$, with trivial kernel. The parabolic one-parameter subgroup $G = 1 + \mathrm{M} = \{1 + s\varepsilon\}$ is isomorphic to the additive line $(\mathbb{R},+)$, is the image of the exponential of the maximal ideal, and consists of unipotent elements; the quotient of the group of invertibles by the central scalars is $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times \cong 1 + \mathrm{M} \cong \mathbb{R}$. The comparison with the split complex case shows the same exponential behaviour but a two-component quotient $\mathbb{R}^\times$.
 
 ## Summary of Notation
 
@@ -224,9 +224,9 @@ The dual-number algebra $\mathbb{C}_{\mathrm{dln}}$ is an abelian two-dimensiona
 | $\mathrm{G} = \mathbb{C}_{\mathrm{dln}}$ | Abelian Lie algebra of the dual numbers |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, the nilpotent direction |
 | $\exp(q + \varepsilon q') = \exp(q)(1 + \varepsilon q')$ | Exponential |
-| $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$ | Group of units |
+| $(\mathbb{C}_{\mathrm{dln}})^\times = \{q \neq 0\}$ | Group of invertibles |
 | $G = 1 + \mathrm{M}$ | Parabolic one-parameter subgroup $\cong (\mathbb{R},+)$ |
-| $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times \cong \mathbb{R}$ | Unit group modulo scaling |
+| $(\mathbb{C}_{\mathrm{dln}})^\times/\mathbb{R}^\times \cong \mathbb{R}$ | Group of invertibles modulo scaling |
 | $\partial_{\mathrm{nil}}$ | Derivation generator, $\operatorname{Der}(\mathbb{C}_{\mathrm{dln}}) = \mathbb{R}\,\partial_{\mathrm{nil}}$ |
 
 ## Further Reading

@@ -94,7 +94,7 @@ The two remaining spatial units carry the same weight. No entry distinguishes $\
 ### The Diagonal Operators Tell the Same Story
 The same fact can be stated without writing a single array, and the statement is the one used later.
 
-A basis operator is diagonal in a basis when it sends each basis vector to a multiple of itself. In the coefficient basis the diagonal basis operators are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$: the square of a unit is a scalar, so it multiplies every basis vector by that scalar. No other basis operator is diagonal, because a basis operator with two different slots multiplies a unit by a different unit.
+A basis operator is diagonal in a basis when it sends each basis vector to a multiple of itself. In the coefficient basis the diagonal basis operators are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$: the square of an invertible element is a scalar, so it multiplies every basis vector by that scalar. No other basis operator is diagonal, because a basis operator with two different slots multiplies an invertible element by a different unit.
 
 In the Pauli display the diagonal basis operators are four others. They are $e_te_t$, $e_t\vec e_z$, $\vec e_ze_t$ and $\vec e_z\vec e_z$: both slots take their value from the pair $\{e_t,\vec e_z\}$. The declared unit appears twice, and the two other spatial units appear in no diagonal basis operator at all.
 
@@ -224,7 +224,7 @@ The three basis operators $-iR_{\vec e_x}$, $-iR_{\vec e_y}$ and $-iR_{\vec e_z}
 
 ### Physical Space Has No Preferred Spatial Direction
 
-Take any two spatial directions. A rotation of the algebra carries one to the other, and the rotation is an automorphism: it preserves the product, the metric, the trace and the determinant. For $s$ a nonzero versor, the operator $L_sR_{s^{-1}}$ is such an automorphism, and it acts on the units by $u\mapsto sus^{-1}$. The three spatial units are one orbit.
+Take any two spatial directions. A rotation of the algebra carries one to the other, and the rotation is an automorphism: it preserves the product, the metric, the trace and the determinant. For $s$ a nonzero versor, the operator $L_sR_{s^{-1}}$ is such an automorphism, and it acts on the invertibles by $u\mapsto sus^{-1}$. The three spatial units are one orbit.
 
 No experiment distinguishes them. A laboratory that is turned by ninety degrees measures the same physics, and the transformation that relates the two descriptions is a symmetry of the theory and not a relabelling of a measurement error. Isotropy is not a convenience of notation; it is a property of space, and it is the reason angular momentum is conserved.
 
@@ -347,7 +347,7 @@ The axis-free display is not merely neutral. It has properties that the Pauli di
 
 Every one of the sixteen basis operators is a real signed permutation matrix: one nonzero entry in each row and in each column, of modulus one, of determinant one, of Hilbert–Schmidt norm two. The sixteen were checked one by one. In the Pauli display eight are real and eight carry $i$.
 
-The four unit arrays and their negatives form a group of order eight isomorphic to the quaternion group. The array of a product is the product of the arrays, and the array of a unit is a column of the multiplication table. The display is the algebra's own multiplication table, so nothing is added by the act of writing it.
+The four unit arrays and their negatives form a group of order eight isomorphic to the quaternion group. The array of a product is the product of the arrays, and the array of an invertible element is a column of the multiplication table. The display is the algebra's own multiplication table, so nothing is added by the act of writing it.
 
 The invariants are read directly, from the array's own entries:
 
@@ -571,7 +571,7 @@ Put the gamma form in one closing section, with the dictionary and no derivation
 
 The Pauli matrices carry a direction and do not say so. The asymmetry is one-against-two: exactly one of the three spatial units is diagonal, and it is the unit that built the idempotents of the display. The direction then propagates to the root, the idempotents, the ordered mixed pair, the Peirce decomposition, the adapted basis, the minimal left ideal, the two-component column, the spinor, the block split, the gamma frame, the adjoint, the charge conjugation and every sentence that speaks of "the third member" or "the upper block".
 
-The gamma matrices carry the same direction in the frame. The five basis operators use the three spatial units in three different jobs, and a relabelling of the units produces a different five-element set. The Clifford relations do not notice the change, because a permutation of the units is an automorphism; the list of five does notice it.
+The gamma matrices carry the same direction in the frame. The five basis operators use the three spatial units in three different jobs, and a relabelling of the units produces a different five-element set. The Clifford relations do not notice the change, because a permutation of the invertibles is an automorphism; the list of five does notice it.
 
 No gamma display can avoid the choice. The two gammas $\gamma_0[\mathbb{B}_{\Phi}]$ and $\gamma_5[\mathbb{B}_{\Phi}]$ anticommute, so at most one of them is diagonal, and the display spends that allowance on the time direction or on a spatial one. The Pauli display of this corpus spends it on the spatial one.
 

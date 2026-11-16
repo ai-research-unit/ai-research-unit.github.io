@@ -14,7 +14,7 @@ A third claim follows, and it is the other half of the paper's title. The family
 
 The corpus records the programme and does not endorse it. Its value here lies in the structural part: the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation. That part is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial-current form of the massless equation, which the spinor bilinear reproduces.
 
-The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The units, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $\tilde F$, the spinor $\tilde{Ξ}$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
+The source's conventions are close to the corpus's, and the places where they part are flagged as they come up, so that formulas are not misread between the two. The invertibles, the central $i$ and the sign vector $\varepsilon=(1,-1,-1,-1)$ are those of *Conventions in the Biquaternion Universe*; the field $\tilde F$, the spinor $\tilde{Ξ}$ and the volume element $\omega$ are elements of the biquaternion algebra $\mathbb{B}$.
 
 **The calculus.** Everything below is written with the biquaternionic gradient of *Operator and Calculus Conventions*,
 
@@ -41,7 +41,7 @@ two first-order equations in two chiral halves, and the spinorial part below is 
 
 **The source's letter.** The source writes its calculus with one letter for a first-order operator of its own, one generator per coordinate. That operator is not one of the corpus's conventions, and this article neither uses it nor displays it. The free-field content of the source is carried here by $\tilde\nabla_\Phi$; the massive content by the chiral pair. Where the source's own equation is translated, the translation is stated once, and no basis operator appears.
 
-**Worked action.** The operator is read off the multiplication table of the units: a coordinate times a unit returns the product of that coordinate's unit with the unit, and the only constants the table carries are the ones the sector substitution puts in, $-i$ in the temporal slot and nothing in the three spatial slots.
+**Worked action.** The operator is read off the multiplication table of the units: a coordinate times an invertible element returns the product of that coordinate's unit with the unit, and the only constants the table carries are the ones the sector substitution puts in, $-i$ in the temporal slot and nothing in the three spatial slots.
 
 | $\tilde{Ξ}$ | $\tilde\nabla_\Phi\tilde{Ξ}$ |
 |+-|+-|
@@ -323,7 +323,7 @@ $$
 
 and each of the two values is fixed by its own map and annihilated by the other, because the second term of the map then reproduces the first term or cancels it.
 
-**The conjugation is not the identity, and it is not an idempotent.** It takes both values on the algebra, each on four of the eight real dimensions, so the pair splits the algebra into two fours. The corpus's Dirac–Hestenes article splits the same algebra by an **idempotent applied on one side**, an idempotent built from a unit that article declares; that is a different split. The source uses no idempotent here, and the element it conjugates by is the time vector of its own frame.
+**The conjugation is not the identity, and it is not an idempotent.** It takes both values on the algebra, each on four of the eight real dimensions, so the pair splits the algebra into two fours. The corpus's Dirac–Hestenes article splits the same algebra by an **idempotent applied on one side**, an idempotent built from an invertible element that article declares; that is a different split. The source uses no idempotent here, and the element it conjugates by is the time vector of its own frame.
 
 **The one-parameter family.** The family is the same projection seen from a duality-rotated frame. With the volume element $\omega$,
 

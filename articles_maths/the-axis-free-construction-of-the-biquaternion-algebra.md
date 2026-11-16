@@ -16,7 +16,7 @@
 
 **The overlap, declared.** The table, the ten statements and several of the properties below overlap *The Biquaternion Algebra* and the doubling article. A construction must produce the object those articles use. What this article adds is the order of the argument, the associativity proof inside the coefficient display, the derivation of the tensor product, and the accounting of what is chosen and what is forced.
 
-**Boundaries.** The algebra as a structure, with its scalar extension, its centre, its structure map and the absence of division, is *The Biquaternion Algebra*, above this article in this category. The stack of three layers is *The Cayley–Dickson Construction of the Biquaternion Algebra*, beside this one. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the annihilators and the unit criterion are *Zero Divisors and Units*; the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the square of an element and its roots are *The Square of an Element*. The real case of this construction is *The Axis-Free Construction of the Quaternion Algebra*, in the Quaternions category.
+**Boundaries.** The algebra as a structure, with its scalar extension, its centre, its structure map and the absence of division, is *The Biquaternion Algebra*, above this article in this category. The stack of three layers is *The Cayley–Dickson Construction of the Biquaternion Algebra*, beside this one. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the annihilators and the unit criterion are *Zero Divisors and Invertibles*; the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the square of an element and its roots are *The Square of an Element*. The real case of this construction is *The Axis-Free Construction of the Quaternion Algebra*, in the Quaternions category.
 
 ## The Data
 
@@ -37,7 +37,7 @@ $$
 
 with a real part $q_\mu$ and an imaginary part $q'_\mu$ for each of the four. A pure element is one with $Q_t=0$, and it is written $\vec Q$.
 
-**The names are still labels.** The letters $x,y,z$ name three directions of a three-dimensional space, and no unit of $V$ is spent on the coefficient field. In particular $\vec e_z$ is not the imaginary unit of the scalars: the scalar imaginary is $i$, it is central, and it appears only as a coefficient.
+**The names are still labels.** The letters $x,y,z$ name three directions of a three-dimensional space, and no invertible element of $V$ is spent on the coefficient field. In particular $\vec e_z$ is not the imaginary unit of the scalars: the scalar imaginary is $i$, it is central, and it appears only as a coefficient.
 
 ### The Central Scalar
 
@@ -47,7 +47,7 @@ $$
 i^2=-e_t,\qquad i\tilde Q=\tilde Q i \ \text{ for every } \tilde Q .
 $$
 
-**What the declaration says and what it does not say.** It says that the coefficient field is $\mathbb{C}=\mathbb{R}[i]$ and that the field lies in the centre. It does not say that $i$ is a vector unit: $i$ has no direction, it multiplies no direction label, and it is written on the coefficient and never on a unit. The table below contains no $i$, and that absence is the statement that the coefficient field is central.
+**What the declaration says and what it does not say.** It says that the coefficient field is $\mathbb{C}=\mathbb{R}[i]$ and that the field lies in the centre. It does not say that $i$ is a vector unit: $i$ has no direction, it multiplies no direction label, and it is written on the coefficient and never on an invertible element. The table below contains no $i$, and that absence is the statement that the coefficient field is central.
 
 **The choice of sign.** The declaration of $i$ is a two-element choice, $i$ or $-i$, and the coefficientwise conjugation of §*The Four Conjugations* exchanges the two. The choice is therefore invisible, and cheaper than the choice of an orientation: it is absorbed by an automorphism, where the orientation is absorbed only by an anti-automorphism.
 
@@ -105,7 +105,7 @@ extended by $\mathbb{C}$-bilinearity.
 
 **Bilinearity.** The right side is $\mathbb{C}$-linear in each argument separately, so the rule extends to a $\mathbb{C}$-bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$, and by that extension it is defined on the whole algebra.
 
-### The Rule on the Units
+### The Rule on the Invertibles
 
 **Proposition.** On two pure elements the rule reads $\vec u\vec v=-(\vec u,\vec v)e_t+\vec u\times\vec v$, and the products of the four units are
 
@@ -158,7 +158,7 @@ with all terms complex.
 
 ### The Table Is the Quaternion Table
 
-**The statement.** Every entry is a unit with a real sign. The table is the table of *The Axis-Free Construction of the Quaternion Algebra* and of *The Biquaternion Algebra*, entry for entry.
+**The statement.** Every entry is invertible with a real sign. The table is the table of *The Axis-Free Construction of the Quaternion Algebra* and of *The Biquaternion Algebra*, entry for entry.
 
 **Why this is the central fact of the construction.** A complex algebra of dimension four needs a table of sixteen complex numbers. This one needs sixteen integers. The coefficient field has enlarged and the multiplication has not changed, which is possible only because the new scalar is central. A reader who wants one sentence for the whole construction has it: the biquaternion algebra is the quaternion algebra with complex coefficients.
 
@@ -247,7 +247,7 @@ with $L_t=\mathrm I_4$. The four generators are the four generators of the real 
 
 *Proof.* Direct multiplication of the printed integer arrays. ∎
 
-**Corollary.** $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of units.
+**Corollary.** $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of invertibles.
 
 *Proof.* Seven pairs involve $L_t=\mathrm I_4$; of the remaining nine, three are the squares and three are the cyclic products, and the last three are the negatives of cyclic products, as in the real case. ∎
 
@@ -271,7 +271,7 @@ $$
 
 **The centre of the display.** The matrix $L(\tilde Q)$ has trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$, the square of the norm of §*The Norm*, so the display separates the scalar part from the rest by its trace and detects the zero divisors by its determinant.
 
-**The check.** The trace identity held exactly on one hundred random complex elements, and the determinant identity to $7.7\times10^{-14}$. The rank of $L(\tilde Q)$ was $4$ on a unit and $2$ on the zero divisor $e_t+i\vec e_x$, which is the rank statement behind the annihilator dimension of *Zero Divisors and Units*.
+**The check.** The trace identity held exactly on one hundred random complex elements, and the determinant identity to $7.7\times10^{-14}$. The rank of $L(\tilde Q)$ was $4$ on an invertible element and $2$ on the zero divisor $e_t+i\vec e_x$, which is the rank statement behind the annihilator dimension of *Zero Divisors and Invertibles*.
 
 ## The First Properties
 
@@ -298,7 +298,7 @@ $$
 \tilde Q^{\ast}=\bar{\tilde Q}^{\natural}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z ,
 $$
 
-and the identity. The first negates the vector part and fixes the coefficients; the second conjugates the coefficients and fixes the units; the third does both.
+and the identity. The first negates the vector part and fixes the coefficients; the second conjugates the coefficients and fixes the invertibles; the third does both.
 
 **Proposition.** The four maps form a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The natural conjugation ${}^{\natural}$ is $\mathbb{C}$-linear and reverses the order of a product; the coefficientwise conjugation $\bar{\ }$ is $\mathbb{C}$-antilinear and preserves the order; the Hermitian conjugation ${}^{\ast}$ is $\mathbb{C}$-antilinear and reverses the order.
 
@@ -341,7 +341,7 @@ with projections $\tilde Q_{\Psi}=\tfrac12(\tilde Q+\tilde Q^{\ast})$ and $\tild
 
 ### The Zero Divisors and the Absence of Division
 
-**Theorem.** The element $\tilde Q$ is a unit if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The algebra is not a division algebra.
+**Theorem.** The element $\tilde Q$ is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The algebra is not a division algebra.
 
 *Proof.* If the norm does not vanish, the two products of $\tilde Q$ with $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ are the unit, since the norm is central and nonzero. If the norm vanishes, $\tilde Q$ kills a nonzero element: for every real unit vector $\vec u$,
 
@@ -419,7 +419,7 @@ because $\vec u^2=-e_t$ and $i^2=-e_t$, so both factors are nonzero and both are
 
 **The check.** A rotation gave an automorphism with a largest residual of $4.8\times10^{-15}$ over one hundred random complex pairs, and a transposition of two units gave an anti-automorphism with a largest residual of $1.8\times10^{-15}$; the same transposition read as an automorphism failed with a residual of $16.3$.
 
-**Where the rest of the group is.** The $\mathbb{C}$-linear automorphisms of $\mathbb{B}$ are more numerous than the rotations of the vector part. The algebra is central simple over $\mathbb{C}$, so every $\mathbb{C}$-linear automorphism is inner, of the form $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ for a unit $\tilde U$, by the Skolem–Noether theorem; the group, its real forms and the derivation algebra are *Biquaternion Automorphisms and Derivations*. This article uses only the subfamily of rotations, because that is the subfamily its own symmetries produce, and the real case is *Quaternion Automorphisms and Derivations*.
+**Where the rest of the group is.** The $\mathbb{C}$-linear automorphisms of $\mathbb{B}$ are more numerous than the rotations of the vector part. The algebra is central simple over $\mathbb{C}$, so every $\mathbb{C}$-linear automorphism is inner, of the form $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ for an invertible element $\tilde U$, by the Skolem–Noether theorem; the group, its real forms and the derivation algebra are *Biquaternion Automorphisms and Derivations*. This article uses only the subfamily of rotations, because that is the subfamily its own symmetries produce, and the real case is *Quaternion Automorphisms and Derivations*.
 
 ### No Axis, and No Vector Root Distinguished
 
@@ -503,7 +503,7 @@ Two bits are left over and both are absorbed: the orientation of the three vecto
 - [The Cayley–Dickson Construction of the Biquaternion Algebra](the-cayley-dickson-construction-of-the-biquaternion-algebra.html), for the stack of three layers and the proof that the third is a scalar extension.
 - [The Axis-Free Construction of the Quaternion Algebra](the-axis-free-construction-of-the-quaternion-algebra.html), for the real case, the ten statements and the associativity proof this article repeats.
 - [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations, their group and the three coordinate systems.
-- [Zero Divisors and Units](zero-divisors-and-units.html), for the annihilators, their dimension two, and the unit criterion.
+- [Zero Divisors and Invertibles](zero-divisors-and-invertibles.html), for the annihilators, their dimension two, and the unit criterion.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norm as a form, its conjugates and its vanishing set.
 - [The Square of an Element](the-square-of-an-element.html), for the roots of a general element and the full classification of the idempotents.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the axis-free array and the reason the coefficient basis is the one that names no direction.

@@ -3,17 +3,17 @@
 
 ## Introduction
 
-Among the signed two-sided operators of a graded ring, the ones of order two have a special place: they are the **reflections**. If $A$ carries a grade involution $\alpha$ and $u$ is a unit, the signed inner conjugation
+Among the signed two-sided operators of a graded ring, the ones of order two have a special place: they are the **reflections**. If $A$ carries a grade involution $\alpha$ and $u$ is invertible, the signed inner conjugation
 $$r_u(x) = u\,\alpha(x)\,u^{-1}$$
-is an automorphism of $A$ for every unit $u$, and it is an involution precisely when $u\alpha(u)$ is central. This article studies the reflections as a class: the correspondence between a reflection and the unit that defines it, the subgroup and coset structure they carry inside $\operatorname{Aut}(A)$, the criterion that singles out the involutive ones, and the degenerate cases in which the correspondence fails.
+is an automorphism of $A$ for every invertible $u$, and it is an involution precisely when $u\alpha(u)$ is central. This article studies the reflections as a class: the correspondence between a reflection and the unit that defines it, the subgroup and coset structure they carry inside $\operatorname{Aut}(A)$, the criterion that singles out the involutive ones, and the degenerate cases in which the correspondence fails.
 
 A reflection is not a new kind of operator — it is the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}} = \operatorname{conj}_u\circ\alpha$ of *The Signed Two-Sided Operator on a Ring* — but it is the one class of two-sided operators that acts on the elements as an automorphism of order two, and it is the algebraic skeleton of the geometric reflection of a quadratic space. That geometric reading requires forms and belongs to Part II and Part VI; nothing here measures an angle, a length or a distance, and "reflection" is a purely operator-theoretic name for an order-two automorphism of this shape.
 
-Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a grade involution, $\alpha^2 = \mathrm{id}$; $A^\times$ and $Z(A)$ are the unit group and the centre; $\operatorname{conj}_u(x) = uxu^{-1}$ is the inner automorphism; and $r_u = \operatorname{conj}_u\circ\alpha$ is the reflection by the unit $u$. The set-theoretic and coset facts about $\operatorname{Inn}(A)$ are from *Inner Automorphisms of a Ring*.
+Throughout, $A$ is a ring with $1 \neq 0$, not assumed commutative; $\alpha$ is a grade involution, $\alpha^2 = \mathrm{id}$; $A^\times$ and $Z(A)$ are the group of invertibles and the centre; $\operatorname{conj}_u(x) = uxu^{-1}$ is the inner automorphism; and $r_u = \operatorname{conj}_u\circ\alpha$ is the reflection by the unit $u$. The set-theoretic and coset facts about $\operatorname{Inn}(A)$ are from *Inner Automorphisms of a Ring*.
 
 ## Reflections as Operators
 
-### The reflection by a unit
+### The reflection by an invertible element
 
 **Definition.** Let $u \in A^\times$. The **reflection** by $u$ is the operator
 
@@ -23,7 +23,7 @@ $$
 
 It is the signed inner conjugation of *The Signed Two-Sided Operator on a Ring*, the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$.
 
-**Proposition.** For every unit $u$, $r_u$ is a unital ring automorphism of $A$, equal to the composite
+**Proposition.** For every invertible $u$, $r_u$ is a unital ring automorphism of $A$, equal to the composite
 
 $$
 r_u = \operatorname{conj}_u \circ \alpha = \alpha \circ \operatorname{conj}_{\alpha(u)},
@@ -37,7 +37,7 @@ $$
 
 **Proof.** $r_u = \operatorname{conj}_u\alpha$ is a composite of automorphisms, hence an automorphism. The identity $\operatorname{conj}_u\alpha = \alpha\operatorname{conj}_{\alpha(u)}$ is $\alpha\operatorname{conj}_{\alpha(u)}(x) = \alpha(\alpha(u)x\alpha(u)^{-1}) = u\alpha(x)u^{-1}$. The inverse: $\alpha\operatorname{conj}_{\alpha(u)}$ composed with $\alpha\operatorname{conj}_{\alpha(u)^{-1}}$... equivalently $r_u r_{\alpha(u)^{-1}}(x) = u\alpha(\alpha(u)^{-1}\alpha(x)\alpha(u))u^{-1} = u\alpha(\alpha(u)^{-1})x\alpha(\alpha(u))u^{-1} = u\alpha(u)^{-1}x\alpha(u)u^{-1} = x$. For the product, $r_ur_v = \operatorname{conj}_u\alpha\operatorname{conj}_v\alpha = \operatorname{conj}_u\operatorname{conj}_{\alpha(v)}\alpha^2 = \operatorname{conj}_{u\alpha(v)}$. Finally $r_u=r_v \iff \operatorname{conj}_u = \operatorname{conj}_v$, and that holds exactly when $uv^{-1}\in Z(A)$.
 
-**Corollary.** The assignment $u \mapsto r_u$ is a well-defined injective map $A^\times/Z(A)^\times \to \operatorname{Aut}(A)$ whose image is the coset $\operatorname{Inn}(A)\,\alpha$ of the subgroup $\operatorname{Inn}(A)$ generated with $\alpha$: the reflections are the elements of $\operatorname{Aut}(A)$ of the form (an inner automorphism)$\circ\alpha$. In particular, the number of distinct reflections equals the order of the inner automorphism group at the units, $|A^\times / Z(A)^\times|$.
+**Corollary.** The assignment $u \mapsto r_u$ is a well-defined injective map $A^\times/Z(A)^\times \to \operatorname{Aut}(A)$ whose image is the coset $\operatorname{Inn}(A)\,\alpha$ of the subgroup $\operatorname{Inn}(A)$ generated with $\alpha$: the reflections are the elements of $\operatorname{Aut}(A)$ of the form (an inner automorphism)$\circ\alpha$. In particular, the number of distinct reflections equals the order of the inner automorphism group at the invertibles, $|A^\times / Z(A)^\times|$.
 
 **Remark.** The reflections do not form a subgroup of $\operatorname{Aut}(A)$: the product of two of them is the **inner automorphism** $\operatorname{conj}_{u\alpha(v)}$, not a reflection, by the proposition. They form a coset of $\operatorname{Inn}(A)$ in the subgroup generated by $\operatorname{Inn}(A)$ and $\alpha$, so a reflection composed with a reflection is never a reflection (unless $\operatorname{Inn}(A)$ is trivial).
 
@@ -59,9 +59,9 @@ When this holds, $r_u$ is the inner automorphism $\operatorname{conj}_{u\alpha(u
 
 ### The correspondence with the elements
 
-The criterion organises the units into those that act by an involution and those that act by an automorphism of larger order.
+The criterion organises the invertibles into those that act by an involution and those that act by an automorphism of larger order.
 
-**Definition.** A unit $u$ is a **reflecting element** of $(A,\alpha)$ when $u\alpha(u) \in Z(A)$; equivalently, when the reflection $r_u$ is an involution.
+**Definition.** an invertible element $u$ is a **reflecting element** of $(A,\alpha)$ when $u\alpha(u) \in Z(A)$; equivalently, when the reflection $r_u$ is an involution.
 
 **Proposition.** The reflecting elements form a subgroup $A^\times_{\mathrm{refl}}$ of $A^\times$ containing $Z(A)^\times$, and the map $u \mapsto r_u$ induces a bijection
 
@@ -77,13 +77,13 @@ so the involutive reflections are in bijection with the reflecting units modulo 
 
 ## Degenerate Cases
 
-### Non-units
+### Non-Invertibles
 
-The construction uses $u^{-1}$, and the criterion uses $u\alpha(u)$. If $u$ is a zero divisor the operator $x \mapsto u\alpha(x)u^{-1}$ is not defined, and the multiplication $x \mapsto u\alpha(x)$ alone is the signed **left** multiplication of *The Signed Left Multiplication on a Ring*, not a reflection. The correspondence between reflections and elements therefore has domain the units, and it does not extend to the zero divisors.
+The construction uses $u^{-1}$, and the criterion uses $u\alpha(u)$. If $u$ is a zero divisor the operator $x \mapsto u\alpha(x)u^{-1}$ is not defined, and the multiplication $x \mapsto u\alpha(x)$ alone is the signed **left** multiplication of *The Signed Left Multiplication on a Ring*, not a reflection. The correspondence between reflections and elements therefore has domain the invertibles, and it does not extend to the zero divisors.
 
 ### Non-central $u\alpha(u)$
 
-If $u$ is a unit but $u\alpha(u) \notin Z(A)$, then $r_u$ is an automorphism and not an involution: its square is the nontrivial inner automorphism $\operatorname{conj}_{u\alpha(u)}$, and $r_u$ has infinite order in characteristic $0$ as soon as some power of $u\alpha(u)$ is non-central. The reflection exists — it is a signed two-sided operator, and $r_u = \operatorname{conj}_u\alpha$ — but it is not of order two, and the name "reflection" must then be carried only by the criterion and not by the operator.
+If $u$ is invertible but $u\alpha(u) \notin Z(A)$, then $r_u$ is an automorphism and not an involution: its square is the nontrivial inner automorphism $\operatorname{conj}_{u\alpha(u)}$, and $r_u$ has infinite order in characteristic $0$ as soon as some power of $u\alpha(u)$ is non-central. The reflection exists — it is a signed two-sided operator, and $r_u = \operatorname{conj}_u\alpha$ — but it is not of order two, and the name "reflection" must then be carried only by the criterion and not by the operator.
 
 ### The trivial grading
 
@@ -91,7 +91,7 @@ If $\alpha = \mathrm{id}$, every reflection is the inner conjugation $r_u = \ope
 
 ### The fixed subring
 
-**Proposition.** For a unit $u$, the fixed set of the reflection $r_u$ is the subring
+**Proposition.** For an invertible element $u$, the fixed set of the reflection $r_u$ is the subring
 
 $$
 A^{r_u} = \{x \in A : \alpha(x) = \operatorname{conj}_{u^{-1}}(x)\},
@@ -103,16 +103,16 @@ which contains the central even elements $Z(A) \cap A_{\bar 0}$.
 
 ## Summary
 
-For a ring $A$ with grade involution $\alpha$ and a unit $u$, the **reflection** $r_u(x) = u\alpha(x)u^{-1}$ is the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$ and the composite $\operatorname{conj}_u\circ\alpha$; it is an automorphism with inverse $r_{\alpha(u)^{-1}}$, two reflections agree exactly when their units differ by a central unit, and the product of two reflections is the inner automorphism $\operatorname{conj}_{u\alpha(v)}$. The reflections are therefore the coset $\operatorname{Inn}(A)\alpha$ inside the subgroup generated by the inner automorphisms and $\alpha$, indexed by $A^\times/Z(A)^\times$, and they do not form a subgroup.
+For a ring $A$ with grade involution $\alpha$ and an invertible element $u$, the **reflection** $r_u(x) = u\alpha(x)u^{-1}$ is the diagonal signed two-sided operator $\mathcal{T}^{\alpha}_{u,u^{-1}}$ and the composite $\operatorname{conj}_u\circ\alpha$; it is an automorphism with inverse $r_{\alpha(u)^{-1}}$, two reflections agree exactly when their units differ by a central unit, and the product of two reflections is the inner automorphism $\operatorname{conj}_{u\alpha(v)}$. The reflections are therefore the coset $\operatorname{Inn}(A)\alpha$ inside the subgroup generated by the inner automorphisms and $\alpha$, indexed by $A^\times/Z(A)^\times$, and they do not form a subgroup.
 
-The reflection $r_u$ is an involution exactly when $u\alpha(u)$ is central; the units satisfying this are the **reflecting elements**, they form a subgroup containing the centre, and the involutive reflections are in bijection with the reflecting elements modulo the centre. The correspondence fails at three points: non-units are excluded because the construction needs $u^{-1}$; a unit with non-central $u\alpha(u)$ gives a reflection that is not of order two; and when $\alpha = \mathrm{id}$ (as in a commutative ring, or in characteristic $2$ with the trivial grading) the reflections collapse to the inner conjugations. The fixed set of a reflection is the subring where $\alpha$ and $\operatorname{conj}_{u^{-1}}$ agree. No form, length or angle is used; the geometric reflection of a quadratic space is a Part II and Part VI reading of the same operator.
+The reflection $r_u$ is an involution exactly when $u\alpha(u)$ is central; the units satisfying this are the **reflecting elements**, they form a subgroup containing the centre, and the involutive reflections are in bijection with the reflecting elements modulo the centre. The correspondence fails at three points: non-invertibles are excluded because the construction needs $u^{-1}$; an invertible element with non-central $u\alpha(u)$ gives a reflection that is not of order two; and when $\alpha = \mathrm{id}$ (as in a commutative ring, or in characteristic $2$ with the trivial grading) the reflections collapse to the inner conjugations. The fixed set of a reflection is the subring where $\alpha$ and $\operatorname{conj}_{u^{-1}}$ agree. No form, length or angle is used; the geometric reflection of a quadratic space is a Part II and Part VI reading of the same operator.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $A$, $\alpha$ | Ring with $1 \neq 0$ and its grade involution, $\alpha^2 = \mathrm{id}$ |
-| $r_u(x) = u\alpha(x)u^{-1}$ | Reflection by a unit $u$; the signed inner conjugation |
+| $r_u(x) = u\alpha(x)u^{-1}$ | Reflection by an invertible element $u$; the signed inner conjugation |
 | $r_u = \operatorname{conj}_u\circ\alpha = \mathcal{T}^{\alpha}_{u,u^{-1}}$ | The reflection as an inner automorphism composed with $\alpha$ |
 | $r_ur_v = \operatorname{conj}_{u\alpha(v)}$ | Product of two reflections is inner |
 | $r_u = r_v \iff uv^{-1} \in Z(A)$ | Reflections indexed by $A^\times/Z(A)^\times$ |
@@ -124,7 +124,7 @@ The reflection $r_u$ is an involution exactly when $u\alpha(u)$ is central; the 
 
 ## Further Reading
 
-- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the reflection of a vector space as a signed inner conjugation and its relation to the unit group.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge Studies in Advanced Mathematics 50 (Cambridge University Press, 1995), for the reflection of a vector space as a signed inner conjugation and its relation to the group of invertibles.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, London Mathematical Society Lecture Note Series 286 (Cambridge University Press, 2nd ed. 2001), for reflections, their inverses and the parity sign.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the involutions of a ring and the automorphisms of order two they define.
 - Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for inner automorphisms of order two and the centrality of the conjugating element.

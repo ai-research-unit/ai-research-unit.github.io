@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The endomorphisms of a linear space $V$ are the linear maps $V \to V$, and they carry two operations at once: they may be added, because a sum of linear maps is linear, and they may be composed, because a composite of linear maps is linear. Under these two operations they form a ring that is also a linear space over the field — an $F$-algebra — and this algebra is the object of the present article. It is the first of the **operator algebras** of the corpus, and it fixes the vocabulary of the whole operator layer of this category: the multiplication, the units, the idempotents, the nilpotents, the centre, the opposite, and the ambient space in which the operators on it live.
+The endomorphisms of a linear space $V$ are the linear maps $V \to V$, and they carry two operations at once: they may be added, because a sum of linear maps is linear, and they may be composed, because a composite of linear maps is linear. Under these two operations they form a ring that is also a linear space over the field — an $F$-algebra — and this algebra is the object of the present article. It is the first of the **operator algebras** of the corpus, and it fixes the vocabulary of the whole operator layer of this category: the multiplication, the invertibles, the idempotents, the nilpotents, the centre, the opposite, and the ambient space in which the operators on it live.
 
-The individual endomorphism is treated in *Linear Maps and Matrices*: its kernel, image and rank, its matrix, and the rank–nullity theorem are there, and none of them is reproved. The group of units is treated in *The General Linear Group*: the group of automorphisms, its centre, its action on subspaces and its projective quotient are there. What is established here is the algebra that these maps form, its structure, and the two-sided regular representation that makes the algebra act on itself by left and right multiplication.
+The individual endomorphism is treated in *Linear Maps and Matrices*: its kernel, image and rank, its matrix, and the rank–nullity theorem are there, and none of them is reproved. The group of invertibles is treated in *The General Linear Group*: the group of automorphisms, its centre, its action on subspaces and its projective quotient are there. What is established here is the algebra that these maps form, its structure, and the two-sided regular representation that makes the algebra act on itself by left and right multiplication.
 
 The article assumes a field $F$, a finite-dimensional $F$-linear space $V$ of dimension $n$, the algebra of linear maps $\operatorname{Hom}_F(V,W)$ and the identification of an endomorphism with its matrix from *Linear Maps and Matrices*, the vocabulary of rings, units, ideals, idempotents and nilpotents from *Rings*, and the modules over a field that make an $F$-algebra from *Algebras*. It uses no form, no norm and no distance; a pairing occurs nowhere in it, and the trace pairing that the later adjoint articles use is introduced in *The Adjoint of the Left Multiplication on a Linear Space*.
 
-The article is organised in three parts: the algebra itself and its elementary structure, its elements of special type — the units, the idempotents, the nilpotents, the zero divisors — and its global structure, namely its centre, its two-sided ideals, its opposite, and its place as the space on which its own multiplication acts. Throughout, products in $\operatorname{End}_F(V)$ are compositions and are written by juxtaposition, $AB = A \circ B$, so that $(AB)(x) = A(B(x))$; the identity is $\mathrm{id}_V$, and the standard basis of the matrix algebra is the family $E_{ij}$.
+The article is organised in three parts: the algebra itself and its elementary structure, its elements of special type — the invertibles, the idempotents, the nilpotents, the zero divisors — and its global structure, namely its centre, its two-sided ideals, its opposite, and its place as the space on which its own multiplication acts. Throughout, products in $\operatorname{End}_F(V)$ are compositions and are written by juxtaposition, $AB = A \circ B$, so that $(AB)(x) = A(B(x))$; the identity is $\mathrm{id}_V$, and the standard basis of the matrix algebra is the family $E_{ij}$.
 
 ## The Algebra of Endomorphisms
 
@@ -52,19 +52,19 @@ where $\delta_{jk}$ is the Kronecker delta. The isomorphism is not canonical: it
 
 ## The Elements of Special Type
 
-### Units
+### Invertibles
 
-**Proposition.** The group of units of $E$ is the general linear group,
+**Proposition.** The group of invertibles of $E$ is the general linear group,
 
 $$
 E^{\times} = \operatorname{GL}(V),
 $$
 
-and an endomorphism is a unit if and only if it is injective, if and only if it is surjective.
+and an endomorphism is invertible if and only if it is injective, if and only if it is surjective.
 
-**Proof.** An element of $E$ is a unit exactly when it has a two-sided inverse in $E$, which is exactly when it is a bijection, and a bijection with linear inverse is an automorphism; that is *The General Linear Group*. For a linear endomorphism of a finite-dimensional space, injective, surjective and bijective coincide, by the rank–nullity theorem of *Linear Maps and Matrices*.
+**Proof.** An element of $E$ is invertible exactly when it has a two-sided inverse in $E$, which is exactly when it is a bijection, and a bijection with linear inverse is an automorphism; that is *The General Linear Group*. For a linear endomorphism of a finite-dimensional space, injective, surjective and bijective coincide, by the rank–nullity theorem of *Linear Maps and Matrices*.
 
-**Proposition (non-units are zero divisors).** In the finite-dimensional algebra $E$, every element that is not a unit is a zero divisor: if $A \notin \operatorname{GL}(V)$ then there are nonzero $B,C \in E$ with $AB=0$ and $CA=0$.
+**Proposition (non-invertibles are zero divisors).** In the finite-dimensional algebra $E$, every element that is not invertible is a zero divisor: if $A \notin \operatorname{GL}(V)$ then there are nonzero $B,C \in E$ with $AB=0$ and $CA=0$.
 
 **Proof.** If $A$ is not invertible then $\ker A \neq 0$ and $A(V) \neq V$. Choose $u \neq 0$ with $Au = 0$ and a nonzero $w \in V$ with $Aw = 0$; a nonzero $w$ exists because $A$ is not injective. For $B$ take an endomorphism with $B(V) \subseteq \ker A$, possible and nonzero because $\ker A \neq 0$; then $AB=0$. For $C$ take an endomorphism with $u$ in its image and with $C$ vanishing on $A(V)$; such a $C$ is nonzero, since $u \neq 0$, and $CA=0$ because $C$ kills $A(V)$.
 
@@ -92,7 +92,7 @@ and then $P$ acts as the identity on $\operatorname{im}P$ and as zero on $\ker P
 
 **Proof.** If $N^k=0$ and $Nv=\lambda v$ with $v \neq 0$, then $0=N^kv=\lambda^kv$, so $\lambda=0$. Conversely, if the only eigenvalue is $0$ then the characteristic polynomial is $x^n$, and the Cayley–Hamilton theorem of *Eigenvalues and Diagonalisation* gives $N^n=0$. The displayed map satisfies $N^2=0$ and $N \neq 0$.
 
-**Remark.** A nonzero nilpotent is neither a unit nor an idempotent, so the three families overlap only at $0$: an element with $P^2=P$ and $P^k=0$ is $0$, since $P = P^k = 0$ for $k \ge 2$.
+**Remark.** A nonzero nilpotent is neither an invertible element nor an idempotent, so the three families overlap only at $0$: an element with $P^2=P$ and $P^k=0$ is $0$, since $P = P^k = 0$ for $k \ge 2$.
 
 ## The Global Structure
 
@@ -152,7 +152,7 @@ are $F$-linear; $L_A L_B = L_{AB}$, $R_A R_B = R_{BA}$, $L_A R_B = R_B L_A$ for 
 
 ## Summary
 
-The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form, under addition and composition, the unital associative $F$-algebra $E = \operatorname{End}_F(V)$ of dimension $n^2$; after a basis is fixed it is the matrix algebra $M_n(F)$ with the elementary multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$. Its units are the automorphisms, $E^{\times} = \operatorname{GL}(V)$, and every non-unit is a zero divisor. Its idempotents are exactly the projections onto a direct summand along a complement, and an idempotent has rank equal to its trace; its nilpotents are the endomorphisms with vanishing spectrum, and the three families of units, idempotents and nilpotents meet only at $0$. The centre of $E$ is the line $F\,\mathrm{id}_V$ of scalars, and $E$ is a central simple $F$-algebra: every nonzero element generates $E$ as a two-sided ideal, so $E$ has no nonzero proper two-sided ideal and no nontrivial quotient. The algebra is isomorphic to its opposite by an anti-isomorphism, whose intrinsic form is the transpose deferred to the next article. Finally, $E$ acts on itself on the left and on the right by the multiplications $L_A(X)=AX$ and $R_A(X)=XA$, which commute and make $E$ and $E_{\mathrm{opp}}$ subalgebras of the strictly larger operator algebra $\operatorname{End}_F(E)$ of dimension $n^4$; this is the ambient space of the operator layer of the category.
+The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form, under addition and composition, the unital associative $F$-algebra $E = \operatorname{End}_F(V)$ of dimension $n^2$; after a basis is fixed it is the matrix algebra $M_n(F)$ with the elementary multiplication $E_{ij}E_{kl} = \delta_{jk}E_{il}$. Its units are the automorphisms, $E^{\times} = \operatorname{GL}(V)$, and every non-invertible is a zero divisor. Its idempotents are exactly the projections onto a direct summand along a complement, and an idempotent has rank equal to its trace; its nilpotents are the endomorphisms with vanishing spectrum, and the three families of invertibles, idempotents and nilpotents meet only at $0$. The centre of $E$ is the line $F\,\mathrm{id}_V$ of scalars, and $E$ is a central simple $F$-algebra: every nonzero element generates $E$ as a two-sided ideal, so $E$ has no nonzero proper two-sided ideal and no nontrivial quotient. The algebra is isomorphic to its opposite by an anti-isomorphism, whose intrinsic form is the transpose deferred to the next article. Finally, $E$ acts on itself on the left and on the right by the multiplications $L_A(X)=AX$ and $R_A(X)=XA$, which commute and make $E$ and $E_{\mathrm{opp}}$ subalgebras of the strictly larger operator algebra $\operatorname{End}_F(E)$ of dimension $n^4$; this is the ambient space of the operator layer of the category.
 
 ## Summary of Notation
 
@@ -166,7 +166,7 @@ The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form
 | $E_{ij}$ | the endomorphism with matrix having a single $1$ in position $(i,j)$ |
 | $M_n(F)$ | the matrix algebra, isomorphic to $E$ after a basis is fixed |
 | $\delta_{jk}$ | the Kronecker delta |
-| $E^{\times} = \operatorname{GL}(V)$ | the units of $E$, the general linear group |
+| $E^{\times} = \operatorname{GL}(V)$ | the invertibles of $E$, the general linear group |
 | $P$ | an idempotent, $P^2=P$; a projection of $V$ |
 | $N$ | a nilpotent, $N^k=0$ |
 | $Z(E) = F\,\mathrm{id}_V$ | the centre of $E$ |
@@ -181,8 +181,8 @@ The endomorphisms of a finite-dimensional linear space $V$ over a field $F$ form
 
 - Frank W. Anderson and Kent R. Fuller, *Rings and Categories of Modules* (Springer, 2nd ed. 1992), for the endomorphism ring of a module, its centre and its idempotents.
 - Nicolas Bourbaki, *Algebra I: Chapters 1–3* (Springer, 1998), for the endomorphism algebra of a vector space and the structure of matrix algebras.
-- Paul M. Cohn, *Basic Algebra: Groups, Rings and Fields* (Springer, 2003), for the units, the zero divisors and the simplicity of matrix algebras over a field.
+- Paul M. Cohn, *Basic Algebra: Groups, Rings and Fields* (Springer, 2003), for the invertibles, the zero divisors and the simplicity of matrix algebras over a field.
 - Kenneth Hoffman and Ray Kunze, *Linear Algebra* (Prentice Hall, 2nd ed. 1971), for the elementary properties of endomorphisms, projections and nilpotents.
 - Nathan Jacobson, *Lectures in Abstract Algebra*, volume II: *Linear Algebra* (Van Nostrand, 1953), for the endomorphism algebra, its regular representation and its place among the operator algebras.
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for the structure of central simple algebras over a field.
-- Joseph J. Rotman, *Advanced Modern Algebra* (American Mathematical Society, 2nd ed. 2010), for the ring-theoretic vocabulary of units, ideals, idempotents and nilpotents applied to endomorphism algebras.
+- Joseph J. Rotman, *Advanced Modern Algebra* (American Mathematical Society, 2nd ed. 2010), for the ring-theoretic vocabulary of invertibles, ideals, idempotents and nilpotents applied to endomorphism algebras.

@@ -169,7 +169,7 @@ Closure under left multiplication is exact for **every** left multiplier, so the
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the equation, the value rule and the argument that the letters are not defined by idempotents.
 - [The Carrier of the Klein–Gordon Field](the-carrier-of-the-klein-gordon-field.html), for the carrier of complex dimension one.
 - [The Carrier of the Proca Field](the-carrier-of-the-proca-field.html), for the carrier that is a sector.
-- [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the classification of the carriers by the action that preserves them.
+- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the classification of the carriers by the action that preserves them.
 - [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for the module category and the dimension of the defining module.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the spin operators as elements of the informational sector.
-- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the algebra, the units and the conjugations.
+- [Algebra and Element Conventions](algebra-and-element-conventions.html), for the algebra, the invertibles and the conjugations.

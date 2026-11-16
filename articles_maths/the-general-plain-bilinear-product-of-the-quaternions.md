@@ -60,7 +60,7 @@ $$
 
 **Proposition (the unit).** The element $e_t$ is a two-sided unit; it is the only one; and the centre of the algebra is the line $\mathbb{R}e_t$.
 
-*Proof.* $e_t\tilde q=\tilde q e_t=\tilde q$ is the definition of the scalar part. A unit $\tilde u$ satisfies $\tilde u\tilde q=\tilde q$ at $\tilde q=e_t$, hence $\tilde u=e_t$. An element is central iff its vector part is parallel to every vector, hence iff it is real. The centre is computed in [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html) and the computation is not repeated here.
+*Proof.* $e_t\tilde q=\tilde q e_t=\tilde q$ is the definition of the scalar part. An invertible element $\tilde u$ satisfies $\tilde u\tilde q=\tilde q$ at $\tilde q=e_t$, hence $\tilde u=e_t$. An element is central iff its vector part is parallel to every vector, hence iff it is real. The centre is computed in [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html) and the computation is not repeated here.
 
 **Theorem (the division property).** Every nonzero element is invertible, with
 $$

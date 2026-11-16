@@ -227,7 +227,7 @@ $$
 S_F(p)=\frac{i\big(\tilde P_{\Phi}\,w_R+imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L+imc\,w_R\big)}{p^2-m^{2}\,c^{2}+i\epsilon}.
 $$
 
-The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_\eta$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. Written with the units, the numerator has its two imaginary units multiplied to $-1$ and becomes
+The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_\eta$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. Written with the invertibles, the numerator has its two imaginary units multiplied to $-1$ and becomes
 
 $$
 S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
@@ -327,7 +327,7 @@ The phase of the determinant is where the fermionic integral's analytic content 
 
 - *The sector and centrality statements.* The phase $iS$ is central and lies in $\mathbb{B}_{\Phi}$ along the $i r'_t$ axis; the action is even; the sources are odd and live in the Grassmann extension. These are the generalities companion's findings applied to the fermionic case, and they are the only place where the algebra's structure enters.
 - *The real structure that makes the pairing available.* That the algebra offers a field-to-its-own-conjugate pairing at all is what $\flat=-{}^{*}$ makes available; that the resulting integral is a Pfaffian is the consequence.
-- *The biquaternion form of the kernel.* The deformed mass-shell denominator inherited from the propagator companion, with the symbol of the gradient written on the units, $w\mapsto i\tilde K_{\Phi} w$ on each part of the pair, and its square the mass shell.
+- *The biquaternion form of the kernel.* The deformed mass-shell denominator inherited from the propagator companion, with the symbol of the gradient written on the invertibles, $w\mapsto i\tilde K_{\Phi} w$ on each part of the pair, and its square the mass shell.
 
 **Open.**
 

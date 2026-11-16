@@ -24,7 +24,7 @@ $$
 \lVert\{x,y,z\}\rVert \leq C\lVert x\rVert\lVert y\rVert\lVert z\rVert \quad \text{for some } C \geq 0, \qquad \lVert 1\rVert = 1 ,
 $$
 
-a **unit** $1 \in A$ with the two recovered operations
+a **identity** $1 \in A$ with the two recovered operations
 
 $$
 y^{*} = \{1, y, 1\}, \qquad xy = \{x, y^{*}, 1\} ,
@@ -66,7 +66,7 @@ and at $C = 1$ the recovered involution is an isometry, $\lVert y^{*}\rVert = \l
 
 *Proof.* The triple product is a bounded trilinear map of the pair by the definition, the recovered product is bounded by the proposition of §*The Unit and the Recovered Binary Product*, and the recovered involution is isometric, hence bounded; each extends uniquely to the completion by *Normed and Banach Spaces*, §*Quotients, Direct Sums and Completion*, and the extensions are the recovered operations of the extended triple product because the three are continuous and agree on the dense subspace $A$. The identities are polynomials in the extended operations and the scalar action, hence continuous functions on $\widehat{A}$ and on $\widehat{A}^{5}$ respectively, and they vanish on the dense subsets $A$ and $A^{5}$; a continuous function vanishing on a dense subset vanishes everywhere in a Hausdorff space. The unit $1$ of $A$ is an element of $\widehat{A}$ with $\lVert1\rVert = 1$ and it is the unit of the extended product, since the constant sequence converges to it and the products are continuous.
 
-**Corollary (the unit is a unit of the completion).** The element $1$ satisfies $\{1,y,1\} = y^{*}$ and $\{x,y^{*},1\} = xy$ for all $x,y \in \widehat{A}$, so the recoveries hold on the completion and $\widehat{A}$ is a Banach $J^{*}$-algebra.
+**Corollary (the unit is invertible in the completion).** The element $1$ satisfies $\{1,y,1\} = y^{*}$ and $\{x,y^{*},1\} = xy$ for all $x,y \in \widehat{A}$, so the recoveries hold on the completion and $\widehat{A}$ is a Banach $J^{*}$-algebra.
 
 *Proof.* This is the theorem together with the continuity of the three operations: the identities hold on the dense subsets and both sides are continuous.
 
@@ -88,7 +88,7 @@ and at $C = 1$ the recovered involution is an isometry, $\lVert y^{*}\rVert = \l
 
 **Theorem (the operator model).** Let $H$ and $K$ be Hilbert spaces and let $A = \mathcal{L}(H,K)$ be the space of the bounded linear operators with the operator norm, the involution the adjoint and the triple product $\{x,y,z\} = xy^{*}z$. Then $A$ is a Banach $J^{*}$-algebra in the square case $H = K$, and a Banach $J^{*}$-triple without a unit and without a binary product in the rectangular case $H \neq K$.
 
-*Proof.* The space $\mathcal{L}(H,K)$ is complete and the triple product is defined, since $y^{*} : K \to H$ and the composite $x y^{*} z : H \to K$ is bounded with $\lVert x y^{*} z\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$; it satisfies the Jordan triple identity because it is the model of an associative algebra with involution on the square case, and the identity is inherited by the rectangular one as an identity of the operators in a common square algebra containing both. When $H = K$ the identity operator is a unit and the binary product is the composition, so the object is a Banach $J^{*}$-algebra; when $H \neq K$ the space is closed under no binary composition, since two maps $H \to K$ cannot be composed, and it carries no unit, so it is only a Banach $J^{*}$-triple. The bound with constant one is the submultiplicativity of the operator norm and the isometry of the adjoint.
+*Proof.* The space $\mathcal{L}(H,K)$ is complete and the triple product is defined, since $y^{*} : K \to H$ and the composite $x y^{*} z : H \to K$ is bounded with $\lVert x y^{*} z\rVert \leq \lVert x\rVert\lVert y\rVert\lVert z\rVert$; it satisfies the Jordan triple identity because it is the model of an associative algebra with involution on the square case, and the identity is inherited by the rectangular one as an identity of the operators in a common square algebra containing both. When $H = K$ the identity operator is invertible and the binary product is the composition, so the object is a Banach $J^{*}$-algebra; when $H \neq K$ the space is closed under no binary composition, since two maps $H \to K$ cannot be composed, and it carries no unit, so it is only a Banach $J^{*}$-triple. The bound with constant one is the submultiplicativity of the operator norm and the isometry of the adjoint.
 
 **Remark.** The square case is the $\mathrm{C}^{*}$-algebra $B(H)$ of *Operator Algebras*, §*Algebras of Bounded Operators*, and the rectangular case is Harris's $J^{*}$-algebra of operators between two Hilbert spaces, the example in which the triple product exists and the binary product does not. The pair $(H,K)$ is therefore the model of the gap that the axioms of $J^{*}$-algebras leave open, and the article's definition is the smallest one that closes the gap in the unital case.
 

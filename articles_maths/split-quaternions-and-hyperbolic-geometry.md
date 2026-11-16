@@ -133,7 +133,7 @@ on the disc, and the isometry group of the disc with this metric is the conjugat
 2. **hyperbolic**, if $|\tau| > 2$; it has two fixed points on the boundary and no interior fixed point, and it translates along the geodesic joining them;
 3. **parabolic**, if $|\tau| = 2$ and $g \neq \pm 1$; it has exactly one fixed point on the boundary and no interior fixed point.
 
-The three types correspond to the three classes of the adjoint action of the unit group on the vector subspace: the elliptic isometries fix a vector of positive norm, the hyperbolic isometries fix a vector of negative norm and the two lightlike directions of its orthogonal plane, and the parabolic isometries fix a lightlike direction.
+The three types correspond to the three classes of the adjoint action of the group of invertibles on the vector subspace: the elliptic isometries fix a vector of positive norm, the hyperbolic isometries fix a vector of negative norm and the two lightlike directions of its orthogonal plane, and the parabolic isometries fix a lightlike direction.
 
 **Proof.** The classification of elements of $\mathrm{SL}_2(\mathbb{R})$ by trace is the standard one, treated in *Hyperbolic Geometry* and in *Hyperbolic Rotations*; the translation to the vector subspace is the fixed-direction computation of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups* and §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
 

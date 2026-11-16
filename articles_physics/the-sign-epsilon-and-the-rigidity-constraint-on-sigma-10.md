@@ -173,7 +173,7 @@ so for every rotor angle there are at most two rapidities and for every rapidity
 
 **What the scalar line is in this language.** At $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$ the element is central: a pure rate with no frame at all. It is the sector's one point where the word's two frames both collapse, and the sector encloses it as the point where the two branches of the identity meet.
 
-**What the sector is not.** It is not a set of small elements, not a neighbourhood of the centre, and not a surface of constant density. It is a six-dimensional locus of units, and the constraint is its equation.
+**What the sector is not.** It is not a set of small elements, not a neighbourhood of the centre, and not a surface of constant density. It is a six-dimensional locus of invertibles, and the constraint is its equation.
 
 ## What $\varepsilon$ Is Not
 

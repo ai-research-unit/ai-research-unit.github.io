@@ -8,9 +8,9 @@ $$ \boxed{\; \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad 
 
 with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Algebra and Element Conventions*, §*Summary of Notation*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the two-sided operator by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
 
-The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the unit group is abelian. The quaternion case is the first definite case in which the unit group is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of units, in the matrix picture and in the absence of a second continuous factor.
+The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the group of invertibles is abelian. The quaternion case is the first definite case in which the group of invertibles is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of invertibles, in the matrix picture and in the absence of a second continuous factor.
 
-The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of units and the sphere are described (§*The Group of Units and the Sphere*), the two subspaces are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the quaternion case in the family is recorded (§*The Other Algebras*).
+The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of invertibles and the sphere are described (§*The Group of Invertibles and the Sphere*), the two subspaces are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the quaternion case in the family is recorded (§*The Other Algebras*).
 
 The conventions and the symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Quaternion Algebra* and *Algebra and Element Conventions*; the symbols are collected in §*Summary of Notation*.
 
@@ -56,9 +56,9 @@ It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\ra
 
 $$ \boxed{\; \mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 \;} .$$
 
-The sphere is a group under multiplication. If $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then multiplicativity gives $\langle\tilde u_1\tilde u_2\rangle_{\natural}=1$, and the inverse of a unit is its conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, because $\tilde u\tilde u^{\natural}=1$. The sphere is a closed and bounded subset of $\mathbb{H}\cong\mathbb{R}^4$, hence compact, and it is connected. It is not abelian: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The complex unit circle is abelian, and this is the first structural difference between the two cases.
+The sphere is a group under multiplication. If $\langle\tilde u_1\rangle_{\natural} = \langle\tilde u_2\rangle_{\natural} = 1$ then multiplicativity gives $\langle\tilde u_1\tilde u_2\rangle_{\natural}=1$, and the inverse of an invertible element is its conjugate, $\tilde u^{-1}=\tilde u^{\natural}$, because $\tilde u\tilde u^{\natural}=1$. The sphere is a closed and bounded subset of $\mathbb{H}\cong\mathbb{R}^4$, hence compact, and it is connected. It is not abelian: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The complex unit circle is abelian, and this is the first structural difference between the two cases.
 
-The phrase **unit factor** names the norm-one elements. It is not the **group of units** $\mathbb{H}^{\times}$, which is the wider set of invertible elements; the two senses of the word *unit* are kept apart throughout, as in *Norm and Unitary Conventions*, §*The Unitary Convention*. In $\mathbb{H}$ every nonzero element is invertible, so $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, but the unit factor is the smaller set of norm-one elements.
+The phrase **unit factor** names the norm-one elements. It is not the **group of invertibles** $\mathbb{H}^{\times}$, which is the wider set of invertible elements; the word *unit* in the phrase means norm one and never invertibility, as in *Norm and Unitary Conventions*, §*The Unitary Convention*. In $\mathbb{H}$ every nonzero element is invertible, so $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, but the unit factor is the smaller set of norm-one elements.
 
 ### The Count of the Parameters
 
@@ -80,11 +80,11 @@ The three is the dimension of the sphere $S^3$, not a triple of scalar parameter
 
 The pair is unique, with no sign ambiguity and no branch ambiguity. The two quaternions $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors; the sign is carried by the unit factor, not by the modulus. This is a statement about the factorisation, not about a coordinate on the sphere: two different charts assign different parameters to the same unit factor.
 
-## The Group of Units and the Sphere
+## The Group of Invertibles and the Sphere
 
-### The Splitting of the Group of Units
+### The Splitting of the Group of Invertibles
 
-The group of units of $\mathbb{H}$ is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$. The polar decomposition read as a map
+The group of invertibles of $\mathbb{H}$ is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$. The polar decomposition read as a map
 
 $$
 \Phi : \mathbb{H}^{\times} \longrightarrow \mathbb{R}_{>0}\times S^3, \qquad \Phi(\tilde q) = \bigl(\sqrt{\langle\tilde q\rangle_{\natural}},\ \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr),
@@ -116,7 +116,7 @@ $$
 H : [0,1]\times\mathbb{H}^{\times} \longrightarrow \mathbb{H}^{\times}, \qquad H(t,\tilde q) = \bigl((1-t)\sqrt{\langle\tilde q\rangle_{\natural}}+t,\ \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr),
 $$
 
-is continuous, fixes $S^3$ at every $t$, is the identity at $t=0$, and lands in $S^3$ at $t=1$. The group of units therefore deformation retracts onto the sphere, and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence. In particular the group of units is connected and simply connected, with $\pi_1(\mathbb{H}^{\times})=0$ and $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$, against $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$ for the complex case. The fundamental group of the rotation group, $\mathbb{Z}/2$, belongs to the quotient $S^3/\{\pm1\}\cong SO(3)$ and not to the units.
+is continuous, fixes $S^3$ at every $t$, is the identity at $t=0$, and lands in $S^3$ at $t=1$. The group of invertibles therefore deformation retracts onto the sphere, and the inclusion $S^3\hookrightarrow\mathbb{H}^{\times}$ is a homotopy equivalence. In particular the group of invertibles is connected and simply connected, with $\pi_1(\mathbb{H}^{\times})=0$ and $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$, against $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$ for the complex case. The fundamental group of the rotation group, $\mathbb{Z}/2$, belongs to the quotient $S^3/\{\pm1\}\cong SO(3)$ and not to the invertibles.
 
 ### The Absence of a Second Continuous Factor
 
@@ -128,7 +128,7 @@ $$
 
 Suppose that $S^3$ were a direct product $A\times B$ of two connected Lie groups of positive dimension. The factors would be connected normal subgroups of $S^3$, hence each would be $\{1\}$ or $S^3$, and one factor would be trivial. The sphere therefore has no product decomposition with two positive-dimensional factors. The connected normal subgroups of $S^3$ are exhausted by the trivial group and the whole sphere, because their Lie algebras are ideals of the simple algebra $\mathfrak{so}(3)$.
 
-The group of units does split, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, but the only factor beyond the sphere is the **central scale line**. That factor is one-dimensional and central, and it cannot be moved into the sphere. There is no circle factor and no hyperbolic line factor inside the sphere, in contrast with the split cases, where the unit set itself contains a hyperbolic line. The dimension count confirms the shape: $4=1+3$, and the three is irreducible.
+The group of invertibles does split, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, but the only factor beyond the sphere is the **central scale line**. That factor is one-dimensional and central, and it cannot be moved into the sphere. There is no circle factor and no hyperbolic line factor inside the sphere, in contrast with the split cases, where the unit set itself contains a hyperbolic line. The dimension count confirms the shape: $4=1+3$, and the three is irreducible.
 
 ## The Two Axes
 
@@ -218,7 +218,7 @@ The image of $\mathbb{H}$ is the real subspace of matrices of the form $\begin{p
 
 ### The Matrix of a Unit
 
-For a unit $\tilde u_{\mathrm r}$ the matrix $M_{\tilde u}=\operatorname{Mat}(\tilde u_{\mathrm r})$ satisfies
+For an invertible element $\tilde u_{\mathrm r}$ the matrix $M_{\tilde u}=\operatorname{Mat}(\tilde u_{\mathrm r})$ satisfies
 
 $$
 M_{\tilde u}^{\dagger}M_{\tilde u}=I, \qquad \det M_{\tilde u}=1,
@@ -246,7 +246,7 @@ The matrix $B$ is therefore conformal: its columns are orthogonal and of equal l
 | unit factor | $M_{\tilde u}\in SU(2)$ | $1$ | rotation of the sphere |
 | $\tilde q$ | $M_{\tilde q}$ | $r^2$ | conformal map |
 
-In the split cases the matrix of a unit is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than $*$-unitary. The contrast is a property of the norm and not of the matrix representation.
+In the split cases the matrix of an invertible element is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than $*$-unitary. The contrast is a property of the norm and not of the matrix representation.
 
 ## Worked Examples
 
@@ -283,7 +283,7 @@ The checks are exact in the data: $\langle\tilde u_{\mathrm r}\rangle_{\natural}
 | $e_t+\vec e_x$ | $2$ | $\sqrt{2}$ | $(e_t+\vec e_x)/\sqrt{2}$ | $1$ |
 | $e_t+2\vec e_x+3\vec e_y+4\vec e_z$ | $30$ | $\sqrt{30}$ | the unit factor above | $1$ |
 
-The second line shows that the unit factor, not the modulus, carries the sign. A negative real quaternion has positive modulus and unit factor $-e_t$. The third line is a pure unit: its modulus is one and its unit factor is itself; the fourth line has modulus five and is not a unit, and its unit factor is $0.6\vec e_x-0.8\vec e_z$. The fifth line has unit factor $(e_t+\vec e_x)/\sqrt{2}$, a rotor of a quarter turn about $\vec e_x$: its square is $\vec e_x$, which is the check of the half-angle rule of the exponential article.
+The second line shows that the unit factor, not the modulus, carries the sign. A negative real quaternion has positive modulus and unit factor $-e_t$. The third line is a pure unit: its modulus is one and its unit factor is itself; the fourth line has modulus five and is not invertible, and its unit factor is $0.6\vec e_x-0.8\vec e_z$. The fifth line has unit factor $(e_t+\vec e_x)/\sqrt{2}$, a rotor of a quarter turn about $\vec e_x$: its square is $\vec e_x$, which is the check of the half-angle rule of the exponential article.
 
 ### The Reconstruction Error
 
@@ -307,7 +307,7 @@ The quaternion column is the first definite column whose unit set is neither fin
 
 Every nonzero quaternion has exactly one modulus–unit polar decomposition $\tilde q=r\tilde u_{\mathrm r}$, with modulus $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$ and unit factor $\tilde u_{\mathrm r}=\tilde q/r$ on the unit sphere. The pair is unique with no sign or branch choice. The modulus is a positive central scale, and the unit factor is a point of $S^3=\mathrm{Sp}(1)$, a compact, connected, simply connected, non-abelian group.
 
-The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, the sphere being the maximal compact subgroup and a deformation retract of the whole group. The scalar line is Hermitian and carries the modulus; the pure subspace is anti-Hermitian and is the axis of the rotor. The sphere is simple modulo its centre $\{\pm1\}$, with quotient $SO(3)$, so there is no second continuous factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
+The group of invertibles splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, the sphere being the maximal compact subgroup and a deformation retract of the whole group. The scalar line is Hermitian and carries the modulus; the pure subspace is anti-Hermitian and is the axis of the rotor. The sphere is simple modulo its centre $\{\pm1\}$, with quotient $SO(3)$, so there is no second continuous factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
 
 In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}=rM_{\tilde u}$ of the conformal matrix, with positive factor $rI$ and special $*$-unitary factor $M_{\tilde u}\in SU(2)$.
 
@@ -322,8 +322,8 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 | $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
 | $\tilde u_{\mathrm r}=\tilde q/r$ | the unit factor, of norm one |
 | $\mathrm{Sp}(1)=S^3=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}$ | the unit sphere, a compact group |
-| $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ | the group of units |
-| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | the polar splitting of the group of units |
+| $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ | the group of invertibles |
+| $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | the polar splitting of the group of invertibles |
 | $\mathbb{R}_{\mathbb{H}}$ | the scalar line, the Hermitian subspace |
 | $\operatorname{Im}\mathbb{H}$ | the pure quaternions, the anti-Hermitian subspace |
 | $SO(3)\cong S^3/\{\pm1\}$ | the rotation group, the adjoint quotient |
@@ -336,4 +336,4 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the polar decomposition of an invertible matrix and the special $*$-unitary group.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition 2001), for the quaternion algebra, the unit sphere and the exponential.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $SU(2)$, the unit quaternions and the covering of the rotation group.
-- Michael Artin, *Algebra* (Prentice Hall, 2nd edition 2011), for the group of units, direct products and the maximal compact subgroup.
+- Michael Artin, *Algebra* (Prentice Hall, 2nd edition 2011), for the group of invertibles, direct products and the maximal compact subgroup.

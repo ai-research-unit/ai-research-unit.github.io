@@ -13,7 +13,7 @@ A **division algebra** over a field $k$ is a $k$-algebra with identity in which 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | Division algebra over $k$ | every nonzero element invertible; no zero divisors | *Division Algebras* |
-| Unit group $D^\times = D\setminus\{0\}$ | the nonzero elements, a group under multiplication | *Division Algebras* |
+| Group of invertibles $D^\times = D\setminus\{0\}$ | the nonzero elements, a group under multiplication | *Division Algebras* |
 | Centre $Z(D)$ | a field; $D$ is an algebra over it | *Division Algebras* |
 | Matrix algebra $M_n(D)$ over a division algebra | simple; the building block of the Wedderburn–Artin decomposition | *Simple and Semisimple Modules* |
 | Warning: the algebra of a division ring | the centre is a field, so a division ring is a division algebra over its centre, possibly of infinite dimension there | *Division Algebras* |

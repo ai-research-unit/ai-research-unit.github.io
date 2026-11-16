@@ -147,7 +147,7 @@ the simplicial cohomology of *Simplicial and Singular Homology*. If in addition 
 
 ### The Exponential Sequence and the Picard Group
 
-**Theorem.** Let $(X,\mathcal{O}_X)$ be a ringed space with sheaf of units $\mathcal{O}_X^*$, and let $\underline{\mathbb{Z}}$ be the constant sheaf, so that the exponential sequence
+**Theorem.** Let $(X,\mathcal{O}_X)$ be a ringed space with sheaf of invertibles $\mathcal{O}_X^*$, and let $\underline{\mathbb{Z}}$ be the constant sheaf, so that the exponential sequence
 
 $$
 0 \to \underline{\mathbb{Z}} \to \mathcal{O}_X \xrightarrow{\ \exp\ } \mathcal{O}_X^* \to 0

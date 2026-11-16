@@ -251,7 +251,7 @@ $$
 \le\tfrac12\bigl(\|x_0\|^{2}+\|Vx_1\|^{2}\bigr)=\tfrac12\|x\|^{2},
 $$
 
-because $V$ is isometric on $\operatorname{ran}V^{*}$. For the converse, take a unit $x_1\in\operatorname{ran}V^{*}$ and $x=(x_1+e^{i\varphi}Vx_1)/\sqrt2$; then $\|x\|=1$ and $\langle x,Vx\rangle=\tfrac12 e^{-i\varphi}$. Hence the field of values is the closed disk.
+because $V$ is isometric on $\operatorname{ran}V^{*}$. For the converse, take an invertible element $x_1\in\operatorname{ran}V^{*}$ and $x=(x_1+e^{i\varphi}Vx_1)/\sqrt2$; then $\|x\|=1$ and $\langle x,Vx\rangle=\tfrac12 e^{-i\varphi}$. Hence the field of values is the closed disk.
 
 **Proposition (the rank blindness).** $W(L_{E_{12}}R_{E_{12}})$ and $W(L_{E_{12}+E_{34}}R_{E_{12}+E_{34}})$ are both the closed disk of radius $\tfrac12$, while the ranks of the two operators are $1$ and $4$.
 

@@ -22,7 +22,7 @@ $$
 
 with $r>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$ the component sign. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the components are those of the elementary and polar articles.
 
-The two decompositions answer different questions. The spectral writing separates $Q$ into its two real coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$, with fixed directions $\Pi_\pm$. The polar writing separates $Q$ into a positive modulus $r$, a hyperbolic angle $\theta_{\mathrm{hpa}}$, and a discrete sign $\epsilon$ that records the component. The dictionary is therefore a change of coordinates on the unit group: the continuous pair $(\lambda_+,\lambda_-)$ is replaced by $(r,\theta_{\mathrm{hpa}})$, and the two signs of $\lambda_\pm$ are replaced by the single discrete factor $\epsilon$.
+The two decompositions answer different questions. The spectral writing separates $Q$ into its two real coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$, with fixed directions $\Pi_\pm$. The polar writing separates $Q$ into a positive modulus $r$, a hyperbolic angle $\theta_{\mathrm{hpa}}$, and a discrete sign $\epsilon$ that records the component. The dictionary is therefore a change of coordinates on the group of invertibles: the continuous pair $(\lambda_+,\lambda_-)$ is replaced by $(r,\theta_{\mathrm{hpa}})$, and the two signs of $\lambda_\pm$ are replaced by the single discrete factor $\epsilon$.
 
 **The results.** The eigenvalues are recovered from the polar data by
 
@@ -53,7 +53,7 @@ and $\epsilon$ is the component determined by the signs of $\lambda_\pm$. The pr
 | Sign pattern | $(\sigma_+,\sigma_-)$ is the spectral reading of $\epsilon$ |
 | Factor decompositions | $r=r\Pi_++r\Pi_-$, $\epsilon=\sigma_+\Pi_++\sigma_-\Pi_-$, $e^{\theta_{\mathrm{hpa}} j}=e^{\theta_{\mathrm{hpa}}}\Pi_++e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
 | Exponential on idempotents | $\exp(Q_{\log})=r e^{\theta_{\mathrm{hpa}}}\Pi_++r e^{-\theta_{\mathrm{hpa}}}\Pi_-$ |
-| Common domain | the units, $q^2-q'^2=\lambda_+\lambda_-\neq0$ |
+| Common domain | the invertibles, $q^2-q'^2=\lambda_+\lambda_-\neq0$ |
 | Spectral domain | all $Q$; the zero divisors have a spectrum but no polar word |
 | Kernel | trivial: no continuous period |
 
@@ -111,11 +111,11 @@ with $r>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$
 | Component sign | $\epsilon\in\{\pm1,\pm j\}$ |
 | Exponent | $Q_{\log}=\ln r+j\theta_{\mathrm{hpa}}$ |
 | Kernel | $\{0\}$ |
-| Fibre of the polar map | one point on each component, empty off the units |
+| Fibre of the polar map | one point on each component, empty off the invertibles |
 
 ### The Common Domain
 
-The spectral decomposition exists for every $Q$, including the zero divisors and the zero element. The polar decomposition exists exactly on the units. The two conditions that separate the regimes are
+The spectral decomposition exists for every $Q$, including the zero divisors and the zero element. The polar decomposition exists exactly on the invertibles. The two conditions that separate the regimes are
 
 $$
 q'\neq0\quad\text{(distinct eigenvalues)},
@@ -138,7 +138,7 @@ The spectral domain is therefore strictly larger than the polar domain. The gap 
 
 ### The Eigenvalues from the Polar Parameters
 
-Let $Q=r\,\epsilon\exp(\theta_{\mathrm{hpa}} j)$ be a unit, and let $\sigma_\pm=\operatorname{sgn}\lambda_\pm$. Applying the eigenvalue relations $Q\Pi_\pm=\lambda_\pm\Pi_\pm$ to the polar writing gives
+Let $Q=r\,\epsilon\exp(\theta_{\mathrm{hpa}} j)$ be an invertible element, and let $\sigma_\pm=\operatorname{sgn}\lambda_\pm$. Applying the eigenvalue relations $Q\Pi_\pm=\lambda_\pm\Pi_\pm$ to the polar writing gives
 
 $$
 \lambda_\pm=\sigma_\pm\,r\,e^{\pm\theta_{\mathrm{hpa}}}.
@@ -185,7 +185,7 @@ The product is independent of the component; the modulus of the ratio is the exp
 
 ### The Polar Parameters from the Eigenvalues
 
-For a unit $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the angle are
+For an invertible element $Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the angle are
 
 $$
 \boxed{\; r=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert q^2-q'^2\rvert},
@@ -204,7 +204,7 @@ The component sign is recovered from the signs of the two eigenvalues:
 
 The exponent is then $Q_{\log}=\ln r+j\theta_{\mathrm{hpa}}$, with real eigenvalues $\ln r\pm\theta_{\mathrm{hpa}}=\ln\lvert\lambda_\pm\rvert$. The imaginary parts of the complex logarithms of $\lambda_\pm$ are $0$ or $\pi$, and they are carried by $\epsilon$, not by a continuous angle. This is the exact point at which the split-complex dictionary differs from the complex one: the sign of a real eigenvalue is a discrete datum, not a phase.
 
-**Proposition (the dictionary).** On the unit group, the map
+**Proposition (the dictionary).** On the group of invertibles, the map
 
 $$
 \boxed{\; (r,\theta_{\mathrm{hpa}},\epsilon)\longmapsto(\lambda_+,\lambda_-)=(\sigma_+re^{\theta_{\mathrm{hpa}}},\sigma_-re^{-\theta_{\mathrm{hpa}}}) \;}
@@ -311,7 +311,7 @@ The spectral regimes of the eigenvalue article and the components of the polar a
 | Regime | Condition | Spectral data | Polar data |
 |---|---|---|---|
 | Distinct interior | $q'\neq0$, $q^2-q'^2\neq0$ | $\lambda_+\neq\lambda_-$, both nonzero | $r>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$, one of four $\epsilon$ |
-| Zero divisor | $q'\neq0$, $q^2-q'^2=0$ | $\lambda_+\neq\lambda_-$, one zero | none: not a unit |
+| Zero divisor | $q'\neq0$, $q^2-q'^2=0$ | $\lambda_+\neq\lambda_-$, one zero | none: not an invertible element |
 | Scalar nonzero | $q'=0$, $q\neq0$ | $\lambda_+=\lambda_-=q$ | $r=\lvert q\rvert$, $\theta_{\mathrm{hpa}}=0$, $\epsilon=\operatorname{sgn}q$ |
 | Zero | $q'=0$, $q=0$ | $\lambda_+=\lambda_-=0$ | none |
 | Jordan | absent: the algebra is reduced | — | — |
@@ -351,7 +351,7 @@ so $\exp X=1$ exactly when $e^{x+y}=e^{x-y}=1$, that is when $x+y=x-y=0$, hence 
 
 ### The Fibre
 
-For a unit $Q$, the equation $\exp X=Q$ has exactly one solution, and it exists exactly when $Q$ lies in the future cone $F$. In spectral coordinates the condition is $\lambda_\pm>0$, and the solution is
+For an invertible element $Q$, the equation $\exp X=Q$ has exactly one solution, and it exists exactly when $Q$ lies in the future cone $F$. In spectral coordinates the condition is $\lambda_\pm>0$, and the solution is
 
 $$
 \boxed{\; X=\tfrac12\ln(\lambda_+\lambda_-)+\tfrac12\ln\frac{\lambda_+}{\lambda_-}\,j
@@ -472,7 +472,7 @@ Q=\lambda_+\Pi_++\lambda_-\Pi_-
 \lambda_\pm=\sigma_\pm r e^{\pm\theta_{\mathrm{hpa}}},
 $$
 
-with $\Pi_\pm=\tfrac12(1\pm j)$, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$, $r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$ and $\theta_{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$. The component sign $\epsilon$ is the spectral sign pair. The dictionary is a bijection on the unit group; the zero divisors have a spectrum but no polar word, and the scalar elements have a repeated eigenvalue and a vanishing angle.
+with $\Pi_\pm=\tfrac12(1\pm j)$, $\sigma_\pm=\operatorname{sgn}\lambda_\pm$, $r=\sqrt{\lvert\lambda_+\lambda_-\rvert}$ and $\theta_{\mathrm{hpa}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$. The component sign $\epsilon$ is the spectral sign pair. The dictionary is a bijection on the group of invertibles; the zero divisors have a spectrum but no polar word, and the scalar elements have a repeated eigenvalue and a vanishing angle.
 
 ### Main Results
 
@@ -540,7 +540,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the branches.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the decomposition, the components, existence and uniqueness, and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the modulus and the unit factor.
-- [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group of units and the exponential parametrisation.
+- [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group of invertibles and the exponential parametrisation.
 - [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the reduced biquaternion analogue.
 - *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

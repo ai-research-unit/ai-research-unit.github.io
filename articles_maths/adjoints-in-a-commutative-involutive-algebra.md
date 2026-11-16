@@ -40,7 +40,7 @@ Hence ${}^{\dagger}$ is an involution of the associative algebra $\operatorname{
 
 **Proposition.** The self-adjoint operators form a Jordan algebra under $F\bullet G = \tfrac12(FG+GF)$ and the anti-self-adjoint operators form a Lie algebra under the commutator; $E = E^+\oplus E^-$ when $2$ is invertible, and the unitary operators form a group.
 
-*Proof.* This is *Involutive Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the units fixed up to the inverse form the unitary group.
+*Proof.* This is *Involutive Algebras* applied to the involution ${}^{\dagger}$ of $E$: the fixed set is closed under the symmetrised product, the anti-fixed under the commutator, and the invertibles fixed up to the inverse form the unitary group.
 
 ### The Adjoint of a Multiplication
 

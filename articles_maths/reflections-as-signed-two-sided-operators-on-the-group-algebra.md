@@ -3,11 +3,11 @@
 
 ## Introduction
 
-A reflection of the group algebra is a signed two-sided operator of the form $f\mapsto u\,\alpha(f)\,u^{-1}$ that is its own inverse: it is an involution produced by the convolution product, the grade involution and the inverse of a unit. This article reads the reflections of a graded group algebra as operators, identifies the units that carry them, computes the closed subalgebra they fix, and records the two ways the correspondence between reflections and carriers can degenerate — the grade involution inner, or the group algebra commutative. It is the two-sided operator theory of the signed conjugations of which the signed two-sided operator is the general form.
+A reflection of the group algebra is a signed two-sided operator of the form $f\mapsto u\,\alpha(f)\,u^{-1}$ that is its own inverse: it is an involution produced by the convolution product, the grade involution and the inverse of an invertible element. This article reads the reflections of a graded group algebra as operators, identifies the invertibles that carry them, computes the closed subalgebra they fix, and records the two ways the correspondence between reflections and carriers can degenerate — the grade involution inner, or the group algebra commutative. It is the two-sided operator theory of the signed conjugations of which the signed two-sided operator is the general form.
 
 The article assumes the group, its Haar measure and the modular function from *Locally Compact Groups and Haar Measure*; the algebra $L^1(G)$ and its norm from *The Convolution Algebra $L^1(G)$*; the convolution operators and the group algebra as an algebra of operators from *Convolution on a Group* and *The Group Algebra as an Algebra of Operators*; the grade involution, the signed and unsigned two-sided operators, their composition laws, the coset, the inverse and the signed conjugation from *The Signed Two-Sided Operator on the Group Algebra*, the immediately preceding article; the general reflections of an algebra and their degenerate cases from *Reflections as Signed Two-Sided Operators on an Algebra* and *Reflections as Signed Two-Sided Operators on a Banach Algebra* (Topology on Algebras); the topological-group reflections, fixed subgroups and carriers from *Reflections as Signed Two-Sided Operators on a Topological Group* and *Involutive Topological Groups*; and the bounded operators, the operator norm and the closed subalgebras from *Operator Algebras* and *Topological Algebras and Banach Algebras*. The adjoint of a reflection is *The Signed Adjoint of the Reflection on the Group Algebra*, in the `- * Operator Theory` group of this category; the measure algebra is *The Involution on the Measure Algebra*, later. A reflection in the geometric sense — in a hyperplane, preserving a form — needs a form and belongs to the later categories; a reflection here is only a bounded operator of order two on the group algebra, and no adjoint is used.
 
-Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$; $\mathcal{A} = L^1(G)$ is the group algebra with convolution $f*g$, norm $\|f\|_1$, centre $Z(\mathcal{A})$ and unit group $\mathcal{A}^\times$; $\alpha$ is a continuous involutive automorphism, $\mathrm{A}f = \alpha(f)$, and $c_t(f) = t*f*t^{-1}$ is the inner automorphism by a unit $t$; the **reflector** set and the **reflection** family are
+Throughout, $G$ is a locally compact Hausdorff group with identity $e$ and left Haar measure $dx$; $\mathcal{A} = L^1(G)$ is the group algebra with convolution $f*g$, norm $\|f\|_1$, centre $Z(\mathcal{A})$ and group of invertibles $\mathcal{A}^\times$; $\alpha$ is a continuous involutive automorphism, $\mathrm{A}f = \alpha(f)$, and $c_t(f) = t*f*t^{-1}$ is the inner automorphism by an invertible element $t$; the **reflector** set and the **reflection** family are
 
 $$
 R^\times(\mathcal{A},\alpha) = \{u \in \mathcal{A}^\times : u*\alpha(u) \in Z(\mathcal{A})\}, \qquad \rho_u = c_u\alpha = \mathcal{T}_{u,u^{-1}} , \quad \rho_u(f) = u*\alpha(f)*u^{-1} ,
@@ -17,9 +17,9 @@ and $\mathcal{A}^\pm_\rho$ are the $\pm1$-eigenspaces of a reflection $\rho$ whe
 
 ## The Reflector and the Reflection
 
-**Definition.** A **reflector** of $\mathcal{A}$ with respect to $\alpha$ is a unit $u$ with $u*\alpha(u) \in Z(\mathcal{A})$, and the **reflection** determined by a reflector $u$ is $\rho_u = c_u\alpha$. The set of reflections is written $\mathrm{Ref}(\mathcal{A},\alpha)$.
+**Definition.** A **reflector** of $\mathcal{A}$ with respect to $\alpha$ is invertible $u$ with $u*\alpha(u) \in Z(\mathcal{A})$, and the **reflection** determined by a reflector $u$ is $\rho_u = c_u\alpha$. The set of reflections is written $\mathrm{Ref}(\mathcal{A},\alpha)$.
 
-**Theorem (the reflection is an involutive automorphism).** For every unit $u$ the signed conjugation $\rho_u = c_u\alpha$ is a bounded algebra automorphism of $\mathcal{A}$ with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and
+**Theorem (the reflection is an involutive automorphism).** For every invertible $u$ the signed conjugation $\rho_u = c_u\alpha$ is a bounded algebra automorphism of $\mathcal{A}$ with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and
 
 $$
 \boxed{\;\rho_u^2 = c_{u*\alpha(u)}\;} ,
@@ -87,7 +87,7 @@ so the reflections are parametrised by the reflectors modulo the central units, 
 
 ## The Degenerate Cases
 
-**Theorem (the inner grade involution).** Suppose $\alpha = c_z$ for a unit $z$. Then
+**Theorem (the inner grade involution).** Suppose $\alpha = c_z$ for an invertible element $z$. Then
 
 $$
 \rho_u = c_{u*z}, \qquad \mathrm{Ref}(\mathcal{A},\alpha) = \{\text{involutive inner automorphisms}\},
@@ -97,9 +97,9 @@ so the reflections are exactly the inner automorphisms of $\mathcal{A}$ of order
 
 **Proof.** $\rho_u = c_u\alpha = c_uc_z = c_{u*z}$, an inner automorphism; it is an involution exactly when $(u*z)*f*(u*z)^{-1} = f$ for all $f$, that is when $u*z\in Z(\mathcal{A})$.
 
-**Theorem (the commutative case).** If $G$ is abelian then every unit is a reflector and $\rho_u = \alpha$ for every unit $u$; the reflection family collapses to the two-element group $\{\mathrm{id},\alpha\}$ and the correspondence $u\mapsto\rho_u$ is constant on the units.
+**Theorem (the commutative case).** If $G$ is abelian then every invertible element is a reflector and $\rho_u = \alpha$ for every invertible $u$; the reflection family collapses to the two-element group $\{\mathrm{id},\alpha\}$ and the correspondence $u\mapsto\rho_u$ is constant on the invertibles.
 
-**Proof.** In a commutative algebra every element is central, so every unit is a reflector and $\rho_u = c_u\alpha = \alpha$; the reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$.
+**Proof.** In a commutative algebra every element is central, so every invertible element is a reflector and $\rho_u = c_u\alpha = \alpha$; the reflections are therefore only $\alpha$, together with $\mathrm{id}$ when $\alpha = \mathrm{id}$.
 
 **Remark (the failure of the correspondence).** The map $u\mapsto\rho_u$ is neither injective nor, when $\alpha$ is not inner, surjective onto all involutive automorphisms: only the signed conjugations are reflections, and the involutive automorphisms outside the coset $\mathrm{Inn}(\mathcal{A})\alpha$ are not. The parametrisation is also not a group homomorphism in general, because the product of two reflections is an unsigned two-sided operator rather than a reflection; each reflection is individually of order two, and the reflections are a coset of the inner automorphisms, not a subgroup.
 
@@ -113,19 +113,19 @@ $$
 
 so that the restriction of $\rho_{\delta_h}$ to the point masses is exactly the signed conjugation $\rho_h$ of *Reflections as Signed Two-Sided Operators on a Topological Group*; the fixed subalgebra $\mathcal{A}^+_\rho$ is the linear span of the fixed subgroup $\{g : \alpha(g) = h^{-1}gh\}$ together with the topological closedness inherited from $\ell^1(G)$.
 
-**Example (the sign character and the two-element group).** Let $\alpha = \alpha_\varepsilon$ for a sign character and let $G$ be abelian. Then $\varepsilon$ is the only nontrivial reflection, the family is $\{\mathrm{id},\alpha_\varepsilon\}$, and the reflector condition is $h^2 \in Z(G) = G$, automatically satisfied by every unit: the correspondence is constant, in accordance with the commutative degeneracy. On a finite abelian group the two reflections are the identity and the sign, which is the group-algebra reading of the Fourier sign symmetry.
+**Example (the sign character and the two-element group).** Let $\alpha = \alpha_\varepsilon$ for a sign character and let $G$ be abelian. Then $\varepsilon$ is the only nontrivial reflection, the family is $\{\mathrm{id},\alpha_\varepsilon\}$, and the reflector condition is $h^2 \in Z(G) = G$, automatically satisfied by every invertible element: the correspondence is constant, in accordance with the commutative degeneracy. On a finite abelian group the two reflections are the identity and the sign, which is the group-algebra reading of the Fourier sign symmetry.
 
 **Remark (the group-level dictionary).** The reflector condition $u*\alpha(u)\in Z(\mathcal{A})$, the square $\rho_u^2 = c_{u*\alpha(u)}$, the parametrisation by $Z(\mathcal{A})^\times$ and the two degenerate cases are the group-algebra form of the dictionary of *Involutive Topological Groups* and *Reflections as Signed Two-Sided Operators on a Topological Group*; on the point masses of a discrete group the latter theory is recovered exactly, and on a non-discrete group only the integrable reflections survive.
 
 ## Summary
 
-A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the invertible twist $\alpha$ is the signed conjugation $\rho_u(f) = u*\alpha(f)*u^{-1} = \mathcal{T}_{u,u^{-1}}$, a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and square $c_{u*\alpha(u)}$; it is an involutive automorphism exactly when $u$ is a **reflector**, $u*\alpha(u)\in Z(\mathcal{A})$. An involutive reflection splits $\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho$ into a closed fixed subalgebra and a closed negated part with the multiplication table of a grading, and it is determined by its fixed subalgebra. The map $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections with kernel the central units, so the reflections are parametrised by $R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$, and they are exactly the involutive automorphisms in the coset $\mathrm{Inn}(\mathcal{A})\alpha$, mapping to $\mathrm{Out}(\mathcal{A})$ by the class of the inner part. When $\alpha$ is inner every reflection is an inner automorphism, $c_{u*z}$; when $G$ is abelian every unit is a reflector, every reflection equals $\alpha$, and the family collapses to $\{\mathrm{id},\alpha\}$. The correspondence is neither injective nor, for a non-inner $\alpha$, surjective onto all involutive automorphisms, and the reflections form a coset of the inner automorphisms rather than a subgroup. On a discrete group the point masses reproduce the signed conjugations of the topological-group theory; the adjoint and the measure algebra are the `- * Operator Theory` group and *The Involution on the Measure Algebra*.
+A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the invertible twist $\alpha$ is the signed conjugation $\rho_u(f) = u*\alpha(f)*u^{-1} = \mathcal{T}_{u,u^{-1}}$, a bounded algebra automorphism with $\rho_u = c_u\alpha = \alpha c_{\alpha(u)}$ and square $c_{u*\alpha(u)}$; it is an involutive automorphism exactly when $u$ is a **reflector**, $u*\alpha(u)\in Z(\mathcal{A})$. An involutive reflection splits $\mathcal{A} = \mathcal{A}^+_\rho\oplus\mathcal{A}^-_\rho$ into a closed fixed subalgebra and a closed negated part with the multiplication table of a grading, and it is determined by its fixed subalgebra. The map $u\mapsto\rho_u$ is a surjection of the reflectors onto the reflections with kernel the central units, so the reflections are parametrised by $R^\times(\mathcal{A},\alpha)/Z(\mathcal{A})^\times$, and they are exactly the involutive automorphisms in the coset $\mathrm{Inn}(\mathcal{A})\alpha$, mapping to $\mathrm{Out}(\mathcal{A})$ by the class of the inner part. When $\alpha$ is inner every reflection is an inner automorphism, $c_{u*z}$; when $G$ is abelian every invertible element is a reflector, every reflection equals $\alpha$, and the family collapses to $\{\mathrm{id},\alpha\}$. The correspondence is neither injective nor, for a non-inner $\alpha$, surjective onto all involutive automorphisms, and the reflections form a coset of the inner automorphisms rather than a subgroup. On a discrete group the point masses reproduce the signed conjugations of the topological-group theory; the adjoint and the measure algebra are the `- * Operator Theory` group and *The Involution on the Measure Algebra*.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{A} = L^1(G)$, $Z(\mathcal{A})$, $\mathcal{A}^\times$ | Group algebra, centre, unit group |
+| $\mathcal{A} = L^1(G)$, $Z(\mathcal{A})$, $\mathcal{A}^\times$ | Group algebra, centre, group of invertibles |
 | $\alpha$, $\mathrm{A}f = \alpha(f)$, $c_t(f) = t*f*t^{-1}$ | Grade involution; inner automorphism |
 | $\rho_u = c_u\alpha = \mathcal{T}_{u,u^{-1}}$ | Reflection by the unit $u$, $\rho_u(f) = u*\alpha(f)*u^{-1}$ |
 | $R^\times(\mathcal{A},\alpha)$ | Reflectors: units with $u*\alpha(u)\in Z(\mathcal{A})$ |
@@ -138,7 +138,7 @@ A reflection of the group algebra $\mathcal{A} = L^1(G)$ with respect to the inv
 
 ## Further Reading
 
-- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for involutive automorphisms, signed conjugations and the correspondence with the units.
+- Richard S. Pierce, *Associative Algebras*, Graduate Texts in Mathematics 88 (Springer, 1982), for involutive automorphisms, signed conjugations and the correspondence with the invertibles.
 - Nathan Jacobson, *Structure of Rings*, American Mathematical Society Colloquium Publications 37 (1964), for inner automorphisms, the cosets of the automorphism group and the reflections.
 - Charles E. Rickart, *General Theory of Banach Algebras* (Van Nostrand, 1960), for bounded automorphisms of a Banach algebra and their closed fixed subalgebras.
 - Theodore W. Palmer, *Banach Algebras and the General Theory of ${}^*$-Algebras, Volume I* (Cambridge University Press, 1994), for graded Banach algebras, automorphisms of order two and reflections.

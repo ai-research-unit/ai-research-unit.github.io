@@ -227,7 +227,7 @@ $$
 
 *Proof.* Under the matrix representation $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$, the algebraic norm is the determinant, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$, as the computation of the determinant of $\mathsf{M}_2(\tilde Q)=Q_t\mathrm I-i\sum_kQ_k\sigma_k$ shows. The map $\mathsf{M}_2$ is an algebra homomorphism and the determinant is multiplicative, so $\langle\cdot\rangle_{\natural}$ is.
 
-The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*: an element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and the unit group is the norm-one group $\{\langle\tilde Q\rangle_{\natural}=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
+The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*: an element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and the group of invertibles is the norm-one group $\{\langle\tilde Q\rangle_{\natural}=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 
 ### The General Plain Sesquilinear Algebraic Norm
 
@@ -265,7 +265,7 @@ The table separates the four by their letter, by the field of their values, by t
 
 **The plain norm: no job of its own.** $P(\tilde Q)=\langle\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})$ is the scalar part of the ordinary square, the quadratic form of the plain product. It is neither definite nor multiplicative, and it decides no invertibility: the unit $e_t+\vec e_x$ has $P(e_t+\vec e_x)=0$, while the zero divisor $e_t+i\vec e_x$ has $P(e_t+i\vec e_x)=2$. It is the value of the product read on the diagonal and carries no job of its own: the square, its idempotents, its Peirce decompositions, its roots and its cone are properties of the product, which comes before the form.
 
-**The use of the quaternionic norm: invertibility.** $\langle\tilde Q\rangle_{\natural}$ is the determinant of the $2\times2$ image, hence multiplicative. Its vanishing set is exactly the zero-divisor cone, so $\tilde Q$ is invertible if and only if the value is non-zero, and the unit group is the level set $1$. The value is the quadratic form of the quaternionic layer. It answers *when is the element invertible*, a yes-or-no question and not a how-big one, and the price of multiplicativity is that it is complex and vanishes off the origin.
+**The use of the quaternionic norm: invertibility.** $\langle\tilde Q\rangle_{\natural}$ is the determinant of the $2\times2$ image, hence multiplicative. Its vanishing set is exactly the zero-divisor cone, so $\tilde Q$ is invertible if and only if the value is non-zero, and the group of invertibles is the level set $1$. The value is the quadratic form of the quaternionic layer. It answers *when is the element invertible*, a yes-or-no question and not a how-big one, and the price of multiplicativity is that it is complex and vanishes off the origin.
 
 **The use of the Hermitian norm: topology.** $H(\tilde Q)=\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ is real and positive definite, and its square root is the Euclidean norm $\lVert\tilde Q\rVert$, the unique topological norm of the space. It gives the distance, the balls, the Cauchy–Schwarz inequality, the bounded operators and the completion. It is the pairing of the positive cone. It answers *what is the distance*, and the price of definiteness is that it is not multiplicative.
 
@@ -340,26 +340,26 @@ $$
 
 **The four degenerate sets.** The $P$-degenerate set is the complex cone $\{P=0\}$, of real dimension $6$. The $\natural$-degenerate set is the zero-divisor cone $\mathcal N$, of real dimension $6$. The $\mathrm{Kr}$-degenerate set is the real cone $\mathcal K$, of real dimension $7$. The $H$-degenerate set is the origin alone: $H$ is a sum of four non-negative terms, so it vanishes only where every coefficient vanishes.
 
-| Letter | $\Phi$-degenerate set | $\dim_{\mathbb R}$ | Contains a unit | Equals the non-units |
+| Letter | $\Phi$-degenerate set | $\dim_{\mathbb R}$ | Contains a unit | Equals the non-invertibles |
 |---|---|---|---|---|
 | $P$ | the complex cone $\{P=0\}$ | $6$ | yes | no |
 | $N$ | $\mathcal N$, the origin together with the zero divisors | $6$ | no | **yes** |
 | $H$ | $\{0\}$ | $0$ | no | no |
 | $\mathrm{Kr}$ | $\mathcal K$, the real cone $\{\mathrm{Kr}=0\}$ | $7$ | yes | no |
 
-**Proposition (only the $\natural$-degenerate set is the non-unit set).** The $\natural$-degenerate biquaternions are the origin and the zero divisors, $\{N=0\}=\{0\}\cup\mathcal Z$, and they alone are the non-units. The $P$-degenerate set and the $\mathrm{Kr}$-degenerate set contain units, and the $H$-degenerate set contains the origin alone; none of the three is the non-unit set.
+**Proposition (only the $\natural$-degenerate set is the non-invertible set).** The $\natural$-degenerate biquaternions are the origin and the zero divisors, $\{N=0\}=\{0\}\cup\mathcal Z$, and they alone are the non-invertibles. The $P$-degenerate set and the $\mathrm{Kr}$-degenerate set contain units, and the $H$-degenerate set contains the origin alone; none of the three is the non-invertible set.
 
 *Proof.* The identity $\langle\tilde Q\rangle_{\natural}=\det\mathsf M_2(\tilde Q)$ identifies $\{N=0\}$ with the singular matrices of $M_2(\mathbb{C})$, which are the zero matrix and the zero divisors. The unit $e_t+\vec e_x$ has $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=1-1=0$ and $N(e_t+\vec e_x)=1+1=2$, so the $P$ and $\mathrm{Kr}$ sets contain a unit. The $H$ case is the sum of four non-negative terms.
 
 **Remark (the four sets are distinct).** The unit $e_t+\vec e_x$ is $P$-degenerate and $\mathrm{Kr}$-degenerate, not $\natural$-degenerate; the zero divisor $e_t+i\vec e_x$ is $\natural$-degenerate and $\mathrm{Kr}$-degenerate, with $P(e_t+i\vec e_x)=1-i^{2}=2$; the zero divisor $\vec e_x+i\vec e_y$ is $P$-degenerate and $\natural$-degenerate, with $\mathrm{Kr}(\vec e_x+i\vec e_y)=-(1+1)=-2$; and $\sqrt2 e_t+\vec e_x+i\vec e_y$ is $\mathrm{Kr}$-degenerate, with $P=N=2$. The $H$-degenerate set is the origin alone. The four sets are therefore pairwise distinct.
 
-**Remark (the zero element).** The origin is $\Phi$-degenerate for all four letters, and it is neither a unit nor a zero divisor. A degenerate biquaternion is therefore not the same object as a zero divisor for any letter; the $N$ case is the closest, its set being the origin together with the zero divisors.
+**Remark (the zero element).** The origin is $\Phi$-degenerate for all four letters, and it is neither an invertible element nor a zero divisor. A degenerate biquaternion is therefore not the same object as a zero divisor for any letter; the $N$ case is the closest, its set being the origin together with the zero divisors.
 
-**Remark (the existing names).** $\natural$-regular and $\natural$-degenerate are the qualified pair of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* read at $\Phi=N$, the two halves of its partition of $\mathbb{B}$ into the unit group and the null cone. $\mathrm{Kr}$-regular and $\mathrm{Kr}$-degenerate are the **Krein-regular** and **Krein-degenerate** of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, whose halves are *The Kr-Regular Sector* and *The Kr-Degenerate Sector*. The $P$ and $H$ qualifiers are the same construction on the other two letters, named here to close the four; neither decides invertibility.
+**Remark (the existing names).** $\natural$-regular and $\natural$-degenerate are the qualified pair of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* read at $\Phi=N$, the two halves of its partition of $\mathbb{B}$ into the group of invertibles and the null cone. $\mathrm{Kr}$-regular and $\mathrm{Kr}$-degenerate are the **Krein-regular** and **Krein-degenerate** of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, whose halves are *The Kr-Regular Sector* and *The Kr-Degenerate Sector*. The $P$ and $H$ qualifiers are the same construction on the other two letters, named here to close the four; neither decides invertibility.
 
 **Remark (the unqualified words).** **Regular** without a letter is **spectrally regular**, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, of *The Spectrum*, and **degenerate** without a letter is **spectrally degenerate**, $B^{2}=0$. The letter is therefore never omitted when the four algebraic norms are meant.
 
-**The four regular sets.** The $P$-regular set is the complement of the complex cone, open and dense of real dimension $8$; it is not a group, since $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors $P$-regular of value $2$. The $\natural$-regular set is the unit group $\mathbb{B}^{\times}$, open and dense and a group. The $H$-regular set is $\mathbb{B}\setminus\{0\}$, open and dense, and not a group, since it contains the zero divisors. The $\mathrm{Kr}$-regular set is the complement of $\mathcal K$, open and dense with exactly two connected components, the positive and the negative regions, and it is not a group; it is the regular set of *The Kr-Regular Sector*.
+**The four regular sets.** The $P$-regular set is the complement of the complex cone, open and dense of real dimension $8$; it is not a group, since $(e_t+i\vec e_x)(e_t-i\vec e_x)=0$ with both factors $P$-regular of value $2$. The $\natural$-regular set is the group of invertibles $\mathbb{B}^{\times}$, open and dense and a group. The $H$-regular set is $\mathbb{B}\setminus\{0\}$, open and dense, and not a group, since it contains the zero divisors. The $\mathrm{Kr}$-regular set is the complement of $\mathcal K$, open and dense with exactly two connected components, the positive and the negative regions, and it is not a group; it is the regular set of *The Kr-Regular Sector*.
 
 
 ## Summary
@@ -372,7 +372,7 @@ The same two slots read on the groups that preserve the four forms: the second s
 
 Read at their two equal arguments, the four forms give the four algebraic norms $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, each attained by two operations, the general product and its symmetrisation of the same family, while the four antisymmetrisations carry the vanishing algebraic norm. $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ are complex-valued and $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ real-valued. $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the reduced norm and the criterion of invertibility; $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm of the space; $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural*}$ are the two indefinite ones of the plain and of the Krein form. Multiplicativity and definiteness are held by no single one of the four, and the zero divisors are the reason.
 
-The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter gives a qualified pair: a $\Phi$-regular biquaternion is one with $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$. Only the $N$ pair is the unit partition — $\natural$-regular is the unit group, $\natural$-degenerate the origin together with the zero divisors — while $P$ and $\mathrm{Kr}$ vanish on units and $H$ vanishes only at the origin.
+The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter gives a qualified pair: a $\Phi$-regular biquaternion is one with $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$. Only the $N$ pair is the unit partition — $\natural$-regular is the group of invertibles, $\natural$-degenerate the origin together with the zero divisors — while $P$ and $\mathrm{Kr}$ vanish on the invertibles and $H$ vanishes only at the origin.
 
 ## Summary of Notation
 
@@ -394,7 +394,7 @@ The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter give
 | $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the general quaternionic sesquilinear algebraic norm, the Krein Norm |
 | $P$, $N$, $H$, $\mathrm{Kr}$ | the letters of the plain, the quaternionic, the Hermitian and the Krein form and norm; one letter, two arities |
 | $P(\tilde Q)$, $\langle\tilde Q\rangle_{\natural}$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | the four algebraic norms, the diagonals of the four forms |
-| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$; the $N$ pair alone is the partition into units and non-units |
+| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$; the $N$ pair alone is the partition into the invertibles and non-invertibles |
 | $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$ | one bracket, two arities: two arguments give the form, one argument the algebraic norm |
 | $\lVert\tilde Q\rVert$ | the Euclidean norm, the square root of $\langle\cdot\rangle_{*}$, the unique topological norm |
 

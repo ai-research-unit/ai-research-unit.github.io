@@ -25,15 +25,15 @@ $$
 
 and its radical on the right, $\{x : \langle x,y\rangle = 0 \text{ for all } y\}$, is the maximal ideal $\mathrm{M}$; hence it induces a nondegenerate form on the residue field $k$.
 
-**Proof.** Additivity is the additivity of the product, the residue operator and $\sigma$; for the sesquilinearity, $\langle ax,by\rangle = \mathrm{res}(ax\sigma(by)) = \mathrm{res}(a\,x\,\sigma(y)\,\sigma(b)) = \mathrm{res}(a)\mathrm{res}(x\sigma(y))\bar\sigma(\mathrm{res}(b))$, using that $\mathrm{res}(\sigma(b)) = \bar\sigma(\mathrm{res}(b))$ and the commutativity of $k$. For the radical, $\langle x,y\rangle = 0$ for all $y$ means $\mathrm{res}(x\sigma(y)) = 0$ for all $y$, that is $x\sigma(y)\in\mathrm{M}$ for all $y$, which for $y$ with $\sigma(y)$ a unit gives $x\in\mathrm{M}$; conversely $x\in\mathrm{M}$ gives the vanishing. Hence the radical is $\mathrm{M}$ and the induced form on $k$ is nondegenerate.
+**Proof.** Additivity is the additivity of the product, the residue operator and $\sigma$; for the sesquilinearity, $\langle ax,by\rangle = \mathrm{res}(ax\sigma(by)) = \mathrm{res}(a\,x\,\sigma(y)\,\sigma(b)) = \mathrm{res}(a)\mathrm{res}(x\sigma(y))\bar\sigma(\mathrm{res}(b))$, using that $\mathrm{res}(\sigma(b)) = \bar\sigma(\mathrm{res}(b))$ and the commutativity of $k$. For the radical, $\langle x,y\rangle = 0$ for all $y$ means $\mathrm{res}(x\sigma(y)) = 0$ for all $y$, that is $x\sigma(y)\in\mathrm{M}$ for all $y$, which for $y$ with $\sigma(y)$ an invertible element gives $x\in\mathrm{M}$; conversely $x\in\mathrm{M}$ gives the vanishing. Hence the radical is $\mathrm{M}$ and the induced form on $k$ is nondegenerate.
 
-**Corollary (the diagonal and the residue norm form).** The diagonal $\langle x,x\rangle = \mathrm{res}(x\sigma(x))$ is the residue norm form $\mathfrak{Q}(x)$, it satisfies $\mathfrak{Q}(x)\in k^{\bar\sigma}$ when $x$ is a unit, and on the residue field it is the norm form $\mathfrak{Q}(a) = a\bar\sigma(a)$ of the residue involution.
+**Corollary (the diagonal and the residue norm form).** The diagonal $\langle x,x\rangle = \mathrm{res}(x\sigma(x))$ is the residue norm form $\mathfrak{Q}(x)$, it satisfies $\mathfrak{Q}(x)\in k^{\bar\sigma}$ when $x$ is invertible, and on the residue field it is the norm form $\mathfrak{Q}(a) = a\bar\sigma(a)$ of the residue involution.
 
 **Proof.** The diagonal is the residue of the norm form; its value is fixed by $\bar\sigma$ because $\mathrm{res}(x\sigma(x))$ is read on the class of $x\sigma(x)$, and the induced form on $k$ is $a\bar\sigma(a)$.
 
 ## The Adjoints of the Elementary Operators
 
-**Theorem (the adjoint exchanges the sides).** For a unit $a\in\mathcal{O}^\times$ the left and right multiplications are adjointable under the residue pairing, with
+**Theorem (the adjoint exchanges the sides).** For an invertible element $a\in\mathcal{O}^\times$ the left and right multiplications are adjointable under the residue pairing, with
 
 $$
 \boxed{\;(L_a)^\dagger = R_{\sigma(a)} , \qquad (R_b)^\dagger = L_{\sigma(b)}\;} ,
@@ -57,7 +57,7 @@ $$
 
 that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint element of $k$; the self-adjoint elements in this sense form the central self-adjoint part of the residue field, and they form a subring of $k$ when $k$ is commutative, namely the fixed field $k^{\bar\sigma}$.
 
-**Proof.** $L_a^\dagger = R_{\sigma(a)}$ by the theorem, and $L_a = R_{\sigma(a)}$ as operators on the residue exactly when $ax\equiv x\sigma(a)\pmod{\mathrm{M}}$ for all $x$, that is $xa\equiv x\sigma(a)$, which for $x$ a unit is $a\equiv\sigma(a)$ together with the centrality; the last statement is that the fixed field of $\bar\sigma$ is a subfield.
+**Proof.** $L_a^\dagger = R_{\sigma(a)}$ by the theorem, and $L_a = R_{\sigma(a)}$ as operators on the residue exactly when $ax\equiv x\sigma(a)\pmod{\mathrm{M}}$ for all $x$, that is $xa\equiv x\sigma(a)$, which for $x$ an invertible element is $a\equiv\sigma(a)$ together with the centrality; the last statement is that the fixed field of $\bar\sigma$ is a subfield.
 
 **Corollary (the involutive elements and the residue norm form).** An element $a$ with $a\sigma(a) = 1$ is $\sigma$-unitary and has residue norm form $\mathfrak{Q}(a) = 1$; the $\sigma$-unitary elements of $\mathcal{O}$ form a subgroup, and their residues form the norm-one subgroup of $k$ when the residue involution is nontrivial.
 
@@ -69,7 +69,7 @@ that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint el
 
 **Proof.** The residue operator is continuous by *The Residue Operator of a Valued Field*, and the product and $\sigma$ are continuous, so the pairing is continuous; the adjoint map is the composition of the continuity of the pairing with the operator topology; the self-adjoint set is closed by *The Involution on Bounded Operators of a Ring*. The completion has the same residue field and residue involution, so the pairing does not change.
 
-**Example ($\mathbb{Z}_p[i]$ with the conjugation).** The Gaussian integers of the $p$-adic field, $p$ inert, with $i\mapsto -i$: $\mathcal{O} = \mathbb{Z}_p[i]$, $\mathrm{M} = p\mathbb{Z}_p[i]$, $k = \mathbb{F}_{p^2}$, and $\bar\sigma$ is the Frobenius; the residue pairing is $\langle x,y\rangle = \mathrm{res}(x\bar y)$ with the adjoint of $L_a$ equal to $R_{\bar a}$, the self-adjoint elements being the central ones, that is the units of $\mathbb{Z}_p$.
+**Example ($\mathbb{Z}_p[i]$ with the conjugation).** The Gaussian integers of the $p$-adic field, $p$ inert, with $i\mapsto -i$: $\mathcal{O} = \mathbb{Z}_p[i]$, $\mathrm{M} = p\mathbb{Z}_p[i]$, $k = \mathbb{F}_{p^2}$, and $\bar\sigma$ is the Frobenius; the residue pairing is $\langle x,y\rangle = \mathrm{res}(x\bar y)$ with the adjoint of $L_a$ equal to $R_{\bar a}$, the self-adjoint elements being the central ones, that is the invertibles of $\mathbb{Z}_p$.
 
 **Example (a ramified local field).** For $\mathbb{Q}_p(\sqrt p)$ the residue field is $\mathbb{F}_p$ and the residue involution is the identity; the residue pairing is symmetric, the adjoint of $L_a$ is $R_a$, and every element is self-adjoint up to centrality, so the residue pairing sees no involution.
 
@@ -77,7 +77,7 @@ that is when the residue $\bar a = \mathrm{res}(a)$ is a central self-adjoint el
 
 ## Summary
 
-The residue pairing $\langle x,y\rangle = \mathrm{res}(x\sigma(y))$ of a valued field with an isometric involution is additive, sesquilinear for the residue involution $\bar\sigma$, with radical the maximal ideal, so that it induces the nondegenerate form $\mathfrak{Q}(a) = a\bar\sigma(a)$ on the residue field; its diagonal is the residue norm form. The adjoint taken with respect to it converts one-sided operators into the opposite ones, $(L_a)^\dagger = R_{\sigma(a)}$ and $(R_b)^\dagger = L_{\sigma(b)}$ for units, in contrast with the trace pairing, under which $(L_a)^\dagger = L_{\sigma(a)}$; the adjoint of an operator is therefore form-dependent, and the residue pairing is the form whose adjoint exchanges the sides. The self-adjoint elements of the residue pairing are the elements that are central and $\bar\sigma$-fixed modulo the maximal ideal, and the $\sigma$-unitary elements reduce to the norm-one subgroup of the residue field. The pairing is continuous, the adjoint map is continuous in the topology of bounded convergence, and the self-adjoint elements are closed; the completion carries the same residue pairing.
+The residue pairing $\langle x,y\rangle = \mathrm{res}(x\sigma(y))$ of a valued field with an isometric involution is additive, sesquilinear for the residue involution $\bar\sigma$, with radical the maximal ideal, so that it induces the nondegenerate form $\mathfrak{Q}(a) = a\bar\sigma(a)$ on the residue field; its diagonal is the residue norm form. The adjoint taken with respect to it converts one-sided operators into the opposite ones, $(L_a)^\dagger = R_{\sigma(a)}$ and $(R_b)^\dagger = L_{\sigma(b)}$ for invertibles, in contrast with the trace pairing, under which $(L_a)^\dagger = L_{\sigma(a)}$; the adjoint of an operator is therefore form-dependent, and the residue pairing is the form whose adjoint exchanges the sides. The self-adjoint elements of the residue pairing are the elements that are central and $\bar\sigma$-fixed modulo the maximal ideal, and the $\sigma$-unitary elements reduce to the norm-one subgroup of the residue field. The pairing is continuous, the adjoint map is continuous in the topology of bounded convergence, and the self-adjoint elements are closed; the completion carries the same residue pairing.
 
 ## Summary of Notation
 

@@ -19,7 +19,7 @@ $$ \tilde{Q} = \tilde Q_H\,\tilde Q_0 , \qquad \tilde Q_H = r\,\tilde U_{\mathrm
 
 It takes the first and the third factors of the word, the scale and the boost $\tilde U_{\mathrm b}$, into $\tilde Q_H$, and the second and the fourth, the phase and the rotor $\tilde u_{\mathrm r}$, into $\tilde Q_0$. The two factors are therefore of two different kinds: $\tilde Q_H$ is **Hermitian and positive**, $\tilde Q_0$ is **$*$-unitary**. The pairing is the matrix polar decomposition of the biquaternion, read in the algebra, and it is the form of the polar word that the physics articles use for a unit-norm Lorentz rotor. It is called the **Cartan pairing** here because the two exponents of its factors lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra, one Hermitian and one anti-Hermitian; the Hermitian split of the exponents, and not the mere grouping of the factors, is what the name records.
 
-**The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and the two equations that determine its factors, the two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It then records the two exponents, which are the precise sense in which the pairing is a Hermitian pairing, the Cartan decomposition of the unit group, and the published form. Each result is collected in a table, and each imported proof is cited rather than repeated.
+**The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and the two equations that determine its factors, the two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It then records the two exponents, which are the precise sense in which the pairing is a Hermitian pairing, the Cartan decomposition of the group of invertibles, and the published form. Each result is collected in a table, and each imported proof is cited rather than repeated.
 
 **The result.** For every biquaternion with $\langle\tilde Q\rangle_{\natural}\neq0$ the word $\tilde{Q} = \tilde Q_H\,\tilde Q_0$ is unique with $\tilde Q_H$ Hermitian positive and $\tilde Q_0$ $*$-unitary; the first factor is the Hermitian positive square root $\tilde Q_H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$, the second is $\tilde Q_0 = \tilde Q_H^{-1}\tilde{Q}$, and the two exponents $\ln \tilde Q_H$ and $\ln \tilde Q_0$ lie in the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The pairing is collected in the table.
 
@@ -34,7 +34,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 | classical limit | the matrix polar decomposition |
 | position among the three | the only total pairing, and the only pairing whose two factors are of the two involutive kinds |
 
-The other two pairings are partial: *The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
+The other two pairings are partial: *The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
 
 The article assumes the algebra and the domain of the polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
 
@@ -342,7 +342,7 @@ $$ \mathfrak{gl}(2,\mathbb{C}) = \mathfrak{u}(2) \oplus \mathfrak{p} , \qquad \m
 
 The compact summand $\mathfrak{u}(2)$ is spanned by the anti-Hermitian elements, the anti-Hermitian scalar $ie_t$ and the anti-Hermitian vectors $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$; the non-compact summand $\mathfrak{p}$ is spanned by the Hermitian elements, the real scalar $\ln r\,e_t$ and the Hermitian vectors $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$. The two summands are of real dimension four each, and their sum is the real dimension $8$ of the algebra. The exponent of $\mathfrak{u}(2)$ is the $*$-unitary group $\mathrm{U}(2)$ and the exponent of $\mathfrak{p}$ is the positive cone of the Hermitian elements, so the Cartan decomposition of the algebra reads the pairing at the level of the group.
 
-## The Cartan Decomposition of the Unit Group
+## The Cartan Decomposition of the Group of Invertibles
 
 ### The Unit-Norm Case
 
@@ -352,7 +352,7 @@ $$
 \boxed{\;\tilde{Q} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \tilde U_{\mathrm b}\in\mathbb{B}_{\Psi} , \quad \tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b} , \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1)\;}.
 $$
 
-This is the **Cartan decomposition** of the unit group, $SL(2,\mathbb{C}) = \exp(\mathfrak{p}_0)SU(2)$ with $\mathfrak{p}_0=\mathfrak{p}\cap\mathfrak{sl}(2,\mathbb{C})$ the traceless Hermitian elements, read in the algebra: the unit-norm elements are the products of a Hermitian positive element of determinant one and an element of the maximal compact subgroup $SU(2) = \mathrm{Sp}(1)$.
+This is the **Cartan decomposition** of the group of invertibles, $SL(2,\mathbb{C}) = \exp(\mathfrak{p}_0)SU(2)$ with $\mathfrak{p}_0=\mathfrak{p}\cap\mathfrak{sl}(2,\mathbb{C})$ the traceless Hermitian elements, read in the algebra: the unit-norm elements are the products of a Hermitian positive element of determinant one and an element of the maximal compact subgroup $SU(2) = \mathrm{Sp}(1)$.
 
 ### The Physical Interpretation
 
@@ -569,11 +569,11 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element
 | Hermitian conjugation | order reversed, factors $\tilde Q_0^{*}\tilde Q_H\tilde Q_0$ and $\tilde Q_0^{*}$ |
 | degenerate limits | none: the pairing exists on the whole complement of the null cone |
 | classical case | the matrix polar decomposition |
-| unit-norm case | the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group |
+| unit-norm case | the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles |
 
 The Cartan pairing groups the scale with the boost into the Hermitian positive factor $\tilde Q_H=r\tilde U_{\mathrm b}$ and the phase with the rotor into the $*$-unitary factor $\tilde Q_0=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$. The first is the positive square root of $\tilde Q\tilde Q^{*}$, the second is $\tilde Q_H^{-1}\tilde Q$, and the pairing solves the single equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$. Both factors are functions of the element alone, and both are defined on the whole complement of the null cone. The Hamilton pairing is partial in both senses; the quaternion pairing is partial in its construction only; the Cartan pairing is total in both.
 
-The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\theta_{\mathrm{pha}}\,e_t+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group. At the wall the two factors keep their form and only their product becomes unipotent, with $\operatorname{Sc}\tilde U=\pm1$.
+The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\theta_{\mathrm{pha}}\,e_t+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles. At the wall the two factors keep their form and only their product becomes unipotent, with $\operatorname{Sc}\tilde U=\pm1$.
 
 ### At the Wall
 
@@ -590,7 +590,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 
 ### What the Pairing Shows
 
-- The Cartan factorization is the polar decomposition of the unit group; it does not use the eigenbasis.
+- The Cartan factorization is the polar decomposition of the group of invertibles; it does not use the eigenbasis.
 - The product is unipotent, but the factors are not; the defect is carried by their commutator.
 - The phase sits with the rotor, not with the scale; this is the difference from the Hamilton pairing.
 - The pairing survives the wall without a limit process.

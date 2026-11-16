@@ -26,7 +26,7 @@ $$
 
 The vectors of $\mathbb{R}^{n}$ are the odd part, of dimension $n$, and they sit inside $\mathrm{Cl}_n$ as $\sum x_{i}e_{i}$.
 
-**The reversal leaves the even part invariant, and on it the reversal is an antiautomorphism.** For a product of two unit vectors $u v$ the reversal is $v u$, which is $-(uv)$ when $u$ and $v$ are orthogonal. So the reversal of $uv$ is the Clifford conjugate, and a rotor is a unit even element in the sense of that conjugate.
+**The reversal leaves the even part invariant, and on it the reversal is an antiautomorphism.** For a product of two unit vectors $u v$ the reversal is $v u$, which is $-(uv)$ when $u$ and $v$ are orthogonal. So the reversal of $uv$ is the Clifford conjugate, and a rotor is invertible even element in the sense of that conjugate.
 
 ## The Sandwich Action
 
