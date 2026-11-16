@@ -71,6 +71,7 @@
         <h1 id="one-sided-operators-on-the-n-degenerate-sector"><strong>One-Sided Operators on the N-Degenerate Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two. This article treats the second half, the <strong>null cone</strong> $N=0$, a closed set of real dimension six and real codimension two.</p>
+<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$. Two forms are used and they must be kept apart: the quaternionic norm $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$, which vanishes on the null cone, and the Hermitian norm $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$, which does not. The matrix model $\mathsf M_2$ sends $e_t$ to $I_2$ and $\vec e_k$ to $-i\sigma_k$, and it is multiplicative.</p>
 <p>The biquaternion algebra acts on itself by left and right multiplication,</p>
 <p>$$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
@@ -155,7 +156,7 @@ $$</p>
 $$</p>
 <p>Finally $\tilde Q_H\tilde Q_0=2aP\tilde Q_0=2a\tilde Q_0=\tilde Q$.</p>
 <p>The pair $(\tilde Q_H,\tilde Q_0)$ is the general pair of <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, specialized to the rank-one case. It is not the modulus–unit pair: the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ is zero, while $\tilde Q_H$ is a non-zero rank-one element. The number $2a$ is the non-zero singular value of $\tilde Q$; it is not an eigenvalue in general (it coincides with $c$ when $\kappa=1$ and $c>0$).</p>
-<h3 id="the-closed-form-on-math91">The closed form on $\Sigma_{01}$</h3>
+<h3 id="the-closed-form-on-math102">The closed form on $\Sigma_{01}$</h3>
 <p>Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. Put</p>
 <p>$$
 \tilde{Ζ}=2\tilde\Pi-e_t,\qquad
@@ -562,7 +563,7 @@ $$</p>
 <p>The phase $e^{i\beta}$ is carried by $\tilde Q_0$ and by $L_{\tilde\nu}$; the scalar $2a=2\lvert c_0\rvert$ is positive. The nilpotent direction $\vec e_x+i\vec e_y$ is unchanged. The two-sided operator of the companion article sees only $\lvert c_0\rvert$ and the canonical pair; the phase cancels. The sign $\tilde\nu\mapsto-\tilde\nu$ is also carried by $\tilde Q_0$; the scalar $2a$ is unchanged.</p>
 <h3 id="the-modulus-and-the-singular-value-on-the-nilpotents">The modulus and the singular value on the nilpotents</h3>
 <p>The element modulus is zero, while the operator has rank two and non-zero singular value $2a$. The vanishing of the norm says that the element is a null vector and that both multiplications have a non-trivial kernel; it does not say that the operator is zero. The spectral degeneration $B^{2}=0$ makes the operator nilpotent; the norm degeneration makes its rank two. The two defects are independent.</p>
-<h2 id="the-eigenbasis-and-the-two-slots-on-the-idempotent-multiples">The Eigenbasis and the Two Slots on the Idempotent Multiples</h2>
+<h2 id="the-eigenbasis-and-the-two-spinor-spaces-on-the-idempotent-multiples">The Eigenbasis and the Two Spinor Spaces on the Idempotent Multiples</h2>
 <p>Since $B^{2}\neq0$, the eigenbasis of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is</p>
 <p>$$
 \tilde\Pi\tilde Q\tilde\Pi=c\tilde\Pi,\qquad
@@ -905,11 +906,15 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>symbol</th>
-<th>meaning</th>
+<th>Symbol</th>
+<th>Meaning</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$</td>
+<td>the quaternionic norm $Q_t^{2}+B^{2}$, zero on the null cone, and the Hermitian norm $\operatorname{Sc}(\tilde Q\tilde Q^{*})$, positive there</td>
+</tr>
 <tr>
 <td>$\tilde Q=c\tilde\Pi$</td>
 <td>an element of $\Sigma_{01}$</td>
@@ -1010,10 +1015,10 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-hermitian-pair-on-the-n-degenerate-sector.html">The Hermitian Pair on the N-Degenerate Sector</a>, for the two-sided operator on the same two strata.</li>
+<li><a href="two-sided-operators-on-the-n-degenerate-sector.html">Two-Sided Operators on the N-Degenerate Sector</a>, for the two-sided operator on the same two strata.</li>
 <li><a href="the-one-sided-operator-exponential-on-the-n-regular-sector.html">The One-Sided Operator Exponential on the N-Regular Sector</a>, for the operator exponential off the null cone, where the four-factor word exists.</li>
 <li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>, for the two-factor polar pair used throughout.</li>
-<li><a href="introduction-to-the-operators-of-the-four-sectors.html">Introduction to the Operators of the Four Sectors</a>, for the three operators, the doubling rule and the table of the four sectors.</li>
+<li><a href="introduction-to-the-operators-on-the-four-sectors.html">Introduction to the Operators on the Four Sectors</a>, for the three operators, the doubling rule and the table of the four sectors.</li>
 <li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a> and <a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the element-level descriptions of $\Sigma_{01}$ and $\Sigma_{00}$.</li>
 </ul>
       </div>

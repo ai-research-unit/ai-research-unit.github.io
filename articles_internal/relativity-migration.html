@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relativity Migration: The Lorentz Group in the Physics Menu — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="relativity-migration-the-lorentz-group-in-the-physics-menu"><strong>Relativity Migration: The Lorentz Group in the Physics Menu</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article fixes the plan for the <code>## Biquaternion Relativity</code> block of <code>physics.md</code>. It names the sections, the entries, the content of each entry, and what happens to every entry that is there now. It is an internal article: it states a plan and it does not write the physics articles.</p>
+<p><strong>The state of the block.</strong> Twenty-one entries in seven sections. The block was moved from its old position to just after <code>## Biquaternion Algebra Physical Interpretations</code>, and the exercise on the field of a uniformly moving charge was moved to <code>## Biquaternion Electromagnetism</code>, immediately after its parent. Both edits are applied. The seven sections are <em>The Transformation and Its Two Displays</em> (2), <em>The Group</em> (2), <em>The Representations</em> (3), <em>The Group at Work</em> (3), <em>The Larger Groups and Their Modules</em> (3), <em>The Kinematics of One and Two Particles</em> (6) and <em>The Action, the Current and the Flow</em> (2).</p>
+<p><strong>The decision.</strong> The block becomes fifteen sections and fifty-seven entries. Of the fifty-seven, twenty stay as they are, one is the survey turned into a portal, eight are split out of that survey, eight are imported from other blocks, nine are physical readings of sections that the mathematics already proves and declines to read physically, and eleven are new.</p>
+<p><strong>The rule that decides every entry.</strong> A physics entry is earned by a physical object: a frame, a rod, a clock, a signal, a sky, a momentum, a vacuum, a detector. An entry that has only an algebra element is not earned. It belongs in <code>articles_maths</code>, and the physics corpus carries a comment and a link. This rule is what the previous three drafts of this plan broke: five of the proposed entries restated mathematics articles that already exist, and three restated or partly restated physics articles that already exist. §<em>What Was Proposed Before and Rejected</em> lists them.</p>
+<p><strong>The second rule.</strong> A section of the survey article is split out only when the section is thin and the subject is large. The eleven sections of the survey occupy about four hundred of its $493$ lines, so each is about thirty-five lines, and each split produces an article ten times its present length. A split is not a copy. It is the material the survey did not have room for.</p>
+<p><strong>The provenance codes.</strong> Used in every table below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>code</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>K</strong></td>
+<td>kept: the article stays, its position may change</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>split: one section of <em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em> becomes an article of its own</td>
+</tr>
+<tr>
+<td><strong>I</strong></td>
+<td>imported: the article exists and is filed in another block</td>
+</tr>
+<tr>
+<td><strong>R</strong></td>
+<td>reading: the mathematics proves it and declines the physics; the article gives the physical reading and cites the mathematics</td>
+</tr>
+<tr>
+<td><strong>N</strong></td>
+<td>new: nothing in either corpus</td>
+</tr>
+</tbody>
+</table></div>
+<p>The twenty-one <strong>K</strong> entries include the survey, which keeps its place and its role as the dictionary of the block and hands its eight split sections to the articles that follow it.</p>
+<h2 id="the-block-as-it-stands">The Block as It Stands</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>section</th>
+<th>entry</th>
+<th>lines</th>
+<th>becomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Transformation and Its Two Displays</td>
+<td>The Lorentz Transformation as a Biquaternionic Rotation</td>
+<td>504</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Transformation and Its Two Displays</td>
+<td>Paravectors and the Geometry of Spacetime</td>
+<td>429</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Group</td>
+<td>The Lorentz Group in Biquaternionic Form — Structure and Representations †</td>
+<td>493</td>
+<td>portal</td>
+</tr>
+<tr>
+<td>The Group</td>
+<td>The Poincaré Group and the Biquaternion Frame</td>
+<td>272</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Representations</td>
+<td>The Spinor Representation of the Lorentz Group</td>
+<td>249</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Representations</td>
+<td>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</td>
+<td>271</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Representations</td>
+<td>The Celestial Sphere of the Null Cone</td>
+<td>117</td>
+<td>kept, moves to the sky</td>
+</tr>
+<tr>
+<td>The Group at Work</td>
+<td>Exercise: Boosting a Four-Velocity and Rapidity Composition</td>
+<td>400</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Group at Work</td>
+<td>Exercise: The Thomas Precession</td>
+<td>327</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Group at Work</td>
+<td>Exercise: The Relativistic Doppler Effect</td>
+<td>367</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Larger Groups</td>
+<td>The Conformal Group in Biquaternionic Form</td>
+<td>390</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Larger Groups</td>
+<td>Twistor Theory and Biquaternions</td>
+<td>363</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Larger Groups</td>
+<td>The SO(4) Route to the Euclidean Frame</td>
+<td>383</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>Relativistic Mechanics in Biquaternionic Form</td>
+<td>331</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>The Non-Relativistic Limit of Relativistic Mechanics</td>
+<td>204</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>The Relativistic Particle in an External Field</td>
+<td>394</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>The Relativistic Two-Body Problem</td>
+<td>531</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>Exercise: Four-Momentum Conservation in a Collision</td>
+<td>425</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Kinematics</td>
+<td>Exercise: The Kinematics of a Two-Body Decay</td>
+<td>443</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Action</td>
+<td>Noether's Theorem in Biquaternionic Form</td>
+<td>601</td>
+<td>kept</td>
+</tr>
+<tr>
+<td>The Action</td>
+<td>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</td>
+<td>299</td>
+<td>kept</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-thesis-one-object-three-layers">The Thesis: One Object, Three Layers</h2>
+<p>The block is about one object, the Lorentz group, and that object has three layers. Every section below belongs to one of the three.</p>
+<p><strong>The ground.</strong> The algebra is the complexified Lorentz algebra. This is not an analogy and not a coincidence of dimension. The chain</p>
+<p>$$
+\mathbb{B}\;\cong\;\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\;\cong\;M_2(\mathbb{C})\;\cong\;\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}
+$$</p>
+<p>is a chain of isomorphisms of complex algebras, and the last term is the complexification of the Lorentz Lie algebra $\mathfrak{so}(1,3)$. The matrix model</p>
+<p>$$
+M(\tilde Q)=Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z
+$$</p>
+<p>is the standard identification of a four-vector with a $2\times2$ complex matrix through the Pauli matrices. The unit factor $\tilde U=\tilde Q/\Rho$ lies in $SL(2,\mathbb{C})$ and is the spinor representation of the restricted Lorentz group $SO^{+}(1,3)$.</p>
+<p><strong>The decompositions.</strong> One element carries two splits, and both are group-theoretic. The first is the polar word, which is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$. The second is the spectral decomposition, which is the eigenvalue decomposition in the defining representation. The two splits agree exactly on the normal elements, and the size of the disagreement is a physical number: the relative angle of the two axes.</p>
+<p><strong>The representations.</strong> The finite-dimensional representations are the $(m,n)$ and none of them is unitary. Unitarity lives in the infinite-dimensional series. The orbits of the group on momentum space and their stabilisers are the little groups, and the little-group labels are mass and spin.</p>
+<p>The three layers are the three parts of the block. A reader who has the ground can read the decompositions. A reader who has the decompositions can read the representations. A reader who has the representations can read the orbits, the little groups and the fields.</p>
+<h2 id="the-dictionary-the-block-must-carry">The Dictionary the Block Must Carry</h2>
+<p>This table is the spine of the block. Every entry below either proves a row, reads a row, or applies a row.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>biquaternion object</th>
+<th>Lorentz group or representation object</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})$</td>
+<td>the complexified Lorentz algebra $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}$</td>
+</tr>
+<tr>
+<td>$M(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$</td>
+<td>a four-vector as a $2\times2$ complex matrix</td>
+</tr>
+<tr>
+<td>the determinant of $M(\tilde Q)$</td>
+<td>the interval $N(\tilde Q)$</td>
+</tr>
+<tr>
+<td>the unit factor $\tilde U=\tilde Q/\Rho$</td>
+<td>an element of $SL(2,\mathbb{C})$, the spinor group of $SO^{+}(1,3)$</td>
+</tr>
+<tr>
+<td>$r$ and $e^{i\theta_{\mathrm{pha}}}$</td>
+<td>a dilatation and a central phase, outside $SL(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$</td>
+<td>a pure boost of rapidity $\theta_{\mathrm{rpd}}$ along $\vec u_{\mathrm b}$</td>
+</tr>
+<tr>
+<td>$\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$</td>
+<td>a spatial rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$</td>
+</tr>
+<tr>
+<td>the word $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>the Cartan decomposition $SL(2,\mathbb{C})=PK$, a boost times a rotation</td>
+</tr>
+<tr>
+<td>the seven data $(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$</td>
+<td>exponential coordinates: eight real numbers, six on the unit group, one scale and one phase</td>
+</tr>
+<tr>
+<td>$[\tilde U_{\mathrm b},\tilde u_{\mathrm r}]=0$</td>
+<td>the boost and the rotation commute, which happens exactly when the axes are parallel</td>
+</tr>
+<tr>
+<td>the relative angle $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$</td>
+<td>the data the spectrum does not carry; it is the seed of the Wigner angle</td>
+</tr>
+<tr>
+<td>$\lambda_{\pm}=Q_t\pm iB$</td>
+<td>the two eigenvalues of the defining representation, that is the two weights</td>
+</tr>
+<tr>
+<td>$\vec Z=-i\vec Q/B$ with $\vec Z^{2}=1$</td>
+<td>the idempotents, that is the two eigenlines</td>
+</tr>
+<tr>
+<td>$\mu_{\pm}=U_t\pm i\sqrt{1-U_t^{2}}$</td>
+<td>the weights of the unit factor</td>
+</tr>
+<tr>
+<td>$B^{2}\neq0$</td>
+<td>the element is regular: two distinct eigenvalues, an eigenbasis, a semisimple element</td>
+</tr>
+<tr>
+<td>$B^{2}=0$ with $N\neq0$</td>
+<td>the element is defective: one Jordan block, the parabolic class, a null rotation</td>
+</tr>
+<tr>
+<td>$N=0$</td>
+<td>the light cone: the modulus vanishes and no unit factor exists</td>
+</tr>
+<tr>
+<td>the half-angle $\theta_{\mathrm{axr}}/2$ in the rotor</td>
+<td>the two-to-one cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$; a $2\pi$ turn returns $-1$</td>
+</tr>
+<tr>
+<td>the two Casimirs of the algebra</td>
+<td>the two labels of the $(m,n)$ carrier, the Casimirs of the two $\mathfrak{su}(2)$ halves</td>
+</tr>
+<tr>
+<td>the finite-dimensional $(m,n)$</td>
+<td>the non-unitary representations of the Lorentz group</td>
+</tr>
+<tr>
+<td>the infinite-dimensional series</td>
+<td>the unitary representations, where the physics lives</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-dependency-graph">The Dependency Graph</h2>
+<p>Every entry is readable on its own, but nine of them carry the block. The arrows are the prerequisites, and no arrow crosses a part boundary backwards.</p>
+<pre><code>entry 3  isomorphisms ──→ entry 4  matrix model ──→ entry 11 generators ──→ entry 13 Casimirs
+      │                        │                            │
+      ↓                        ↓                            ↓
+entry 5  portal ──→ entry 6  unit group ──→ entry 16 Cartan word ──→ entry 19 normal axes
+                                                    │
+                                                    ↓
+entry 10 cover ──→ entry 24 spinor ──→ entry 27 self-dual ──→ entry 29 non-unitarity
+                                                                   │
+                                                                   ↓
+                                                  entry 32 Wigner ──→ 33, 34 little groups
+                                                                   │
+                                                                   ↓
+                                            entry 37 sky ──→ entry 38 aberration
+</code></pre>
+<p>Three consequences for the order of writing. The Casimirs must exist before <em>Wigner's Classification</em> calls itself a classification. The cover must exist before the half-angle in the spinor entry is read as anything but a convention. The Cartan word must exist before the three exercises, because all three are that word applied to a different object.</p>
+<h2 id="the-progression">The Progression</h2>
+<p>The order is not decorative. It follows from four dependencies.</p>
+<p><strong>The algebra before the group.</strong> A reader who does not know that $\mathbb{B}$ is the complexified Lorentz algebra will read every later article as an analogy between two unrelated objects. §<em>The Algebra Is the Lorentz Algebra</em> therefore comes second, before any decomposition.</p>
+<p><strong>The group before its decompositions.</strong> The word is a product of two subgroup elements, so the subgroups must be in place. §<em>The Group and Its Two Actions</em> comes before §<em>The Two Decompositions</em>.</p>
+<p><strong>The decompositions before the kinds.</strong> A classification of transformations by their fixed sets is a statement about which of the two angles vanish, so the angles must be in place.</p>
+<p><strong>The representations before the orbits.</strong> The orbits are picked out by the two Casimir operators, and the little-group labels are weights. Both are representation theory.</p>
+<p>The five parts of the block are these dependencies read off in order.</p>
+<h2 id="part-i-the-ground">Part I: The Ground</h2>
+<h3 id="1-the-frame-and-the-transformation">1. The Frame and the Transformation</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Lorentz Transformation as a Biquaternionic Rotation</td>
+<td>K</td>
+<td>the congruence $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$ on the material sector; one unit-norm element acting on two sides; the interval preserved because the norm is multiplicative; the boost as a Hermitian element and the rotation as a real quaternion; why the map is a rotation of the algebra and not of space.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Paravectors and the Geometry of Spacetime</td>
+<td>K</td>
+<td>the paravector $Q_te_t+\vec Q$ as one time and three space coordinates; the quadratic form as the interval; the light cone as its zero set; the two null planes and the two chiralities.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2-the-algebra-is-the-lorentz-algebra">2. The Algebra Is the Lorentz Algebra</h3>
+<p>This section is new and it is the load-bearing one. It replaces nothing: there is no article in either corpus that states the chain of isomorphisms as a physical statement with the Lorentz algebra as its subject.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>The Three Isomorphisms</td>
+<td>N</td>
+<td>$\mathbb{B}\cong\mathbb{C}\otimes\mathbb{H}\cong M_2(\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}$; each isomorphism stated, proved and given its use; the dimension count $4$ real, $8$ real, $4$ complex; what $\mathbb{C}\otimes\mathbb{H}$ buys, what $M_2$ buys, what $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}$ buys; why the Lorentz algebra is not an add-on to the algebra but the algebra read as a Lie algebra.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Matrix Model: What It Sees and What It Hides</td>
+<td>N</td>
+<td>$M(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$; the determinant as the interval; the trace as twice the time; the singular values as the two scales $re^{\pm\theta_{\mathrm{rpd}}/2}$; the images of the two walls; the two things the matrix cannot show (the two walls have one image each, and the scale and the phase are both a modulus).</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="3-the-group-and-its-two-actions">3. The Group and Its Two Actions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5</td>
+<td>The Lorentz Group in Biquaternionic Form — Structure and Representations †</td>
+<td>K</td>
+<td>the portal. One paragraph per topic and a link: the group of unit-norm elements, the two actions, the composition law, the Lie algebra, the two $\mathfrak{su}(2)$ halves, the finite representations, the two-to-one cover, the unitary series, the stabilisers. It keeps the tables that are used as dictionaries and loses the proofs to the eight articles below it.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Group of Unit-Norm Biquaternions</td>
+<td>S</td>
+<td>the group as a set; the inverse and closure; the two descriptions, by unit norm and by Hermitian pairs; the real dimension three plus three; why the group is six-dimensional while the algebra is eight; the compact subgroup $SU(2)$ and the non-compact direction.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Two Actions of One Group: Adjoint and Congruence</td>
+<td>S</td>
+<td>$\mathrm{Ad}_{\tilde U}$ preserves the product; the congruence by ${}^{*}$ preserves the two Hermitian sectors and the indefinite form; the coincidence on the compact slice; the kernel; the scale; why a boost is invisible to the adjoint and visible to the congruence; which action a frame change uses and why.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>The Rotations, the Boosts and the Groups</td>
+<td>I</td>
+<td>the maths-side reading: five groups and five invariants; the chain of containments and the dimensions; the rotation as an automorphism and the boost as a motion; two boosts are not a boost; the four groups compared. Donor: <code>## Biquaternion Algebra Physical Interpretations</code>.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>The Lorentz Group as Biquaternion Norm Automorphisms</td>
+<td>I</td>
+<td>the norm as the algebra's own multiplicative quadratic form; the group read as the automorphism group of that form; why the group is a structure of the algebra and not an object imposed on it. Donor: <code>## Biquaternion Relativistic Non Quantum Approximation</code>.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</td>
+<td>I</td>
+<td>the map $\tilde U\mapsto$ conjugation by $\tilde U$ with kernel $\{\pm e_t\}$; the manifold of the covering group; the $2\pi$ loop and the belt; the topology of the boost manifold; why the half-angle is the signature of a cover and not a convention. This article exists, is $401$ lines, and already proves the $2\pi$ return of $-1$; it is imported rather than written. Donor: <code>## Biquaternion Relativistic Non Quantum Approximation</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="4-the-lie-algebra-and-the-exponential">4. The Lie Algebra and the Exponential</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td>The Six Generators and Their Commutators</td>
+<td>S</td>
+<td>the three rotation and three boost generators as elements of the algebra; the full commutator table; the structure constants; the invariant bilinear form and its signature $(3,3)$; the quadratic Casimir; why the same table appears in every display.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>The Two Commuting $\mathfrak{su}(2)$ Triples</td>
+<td>S</td>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$; the complex combinations $\vec J\pm i\vec K$; the self-dual and anti-self-dual projections; the adjoint as $(1,0)\oplus(0,1)$; why one triple is compact and the other is not, and why that single fact is the whole of the finite representation theory.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>The Two Casimirs of the Lorentz Algebra</td>
+<td>N</td>
+<td>the two quadratic Casimirs of $\mathfrak{so}(1,3)$ computed in the algebra; the combinations $\vec J^{2}+\vec K^{2}$ and $\vec J\cdot\vec K$; their eigenvalues $m(m+1)+n(n+1)$ and the imaginary $m(m+1)-n(n+1)$ on the $(m,n)$ carrier; the proof that two labels suffice and that they do not distinguish $(\tfrac12,0)$ from $(0,\tfrac12)$ except locally; the difference from the Poincar\'e Casimirs, which are mass and spin; why this is the article that makes the $(m,n)$ table a classification rather than a list. No article in either corpus states the Lorentz Casimirs.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>The Cartan Subalgebra, the Roots and the Three Real Forms</td>
+<td>N</td>
+<td>a Cartan subalgebra of the complexified algebra and its four roots; the root diagram as two orthogonal lines; the three real forms $\mathfrak{so}(1,3)$, $\mathfrak{so}(4)$ and $\mathfrak{so}(2,2)$ as three real slices of one complex algebra; which slice is the Lorentz algebra of the corpus, which is the Euclidean route and which is the split route; the compact and split Cartan involutions and the signatures they fix; why the choice of slice is a physical choice of signature.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>The Exponential Map from Algebra to Group</td>
+<td>N</td>
+<td>$\exp:\mathfrak{sl}(2,\mathbb{C})\to SL(2,\mathbb{C})$ is surjective, proved rather than cited; the image of each real slice; the elements that need one generator and the elements that need two; the logarithm, its branch cut and the fibre; the failure at each wall; the reconstruction check.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="part-ii-the-decompositions">Part II: The Decompositions</h2>
+<h3 id="5-the-two-decompositions">5. The Two Decompositions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td>
+<td>A Frame Is a Boost Times a Rotation: The Cartan Word</td>
+<td>R</td>
+<td>the word read as the global Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ with $P$ the positive Hermitian determinants-one elements and $K=SU(2)$; the table of the four factors with their group meaning; the seven data as exponential coordinates; the parameter count $3+3$ against the dimension six; the order of the operations, proved and not asserted: $A=U\Sigma V^{\dagger}$ gives $H=U\Sigma U^{\dagger}$ and $K=UV^{\dagger}$ with $\det K=\det A/\lvert\det A\rvert$, so the split is symmetric in $U$ and the central factor must be removed first, since $\det K=1$ holds only when $\det A>0$ real; the naive split leaves $\lvert\det K-1\rvert$ as large as $2$; the two orderings and why the corpus fixes boost first. Parent: <em>The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector</em>, §The Cartan Decomposition of the Unit Group.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>The Two Eigenvalues Are the Two Weyl Weights</td>
+<td>R</td>
+<td>$\lambda_{\pm}=Q_t\pm iB$ as the eigenvalues of the defining representation; the idempotents from $\vec Z=-i\vec Q/B$ with $\vec Z^{2}=1$; the two eigenlines and their reading as the two chiral weights; $\mu_{\pm}=U_t\pm i\sqrt{1-U_t^{2}}$ as the weights of the unit factor; why $B^{2}\neq0$ is exactly the semisimplicity of the element; the correction that the two eigenvalues are shared by the two chiral halves and are not themselves the halves. Parents: <em>The Biquaternion Eigenvalue Decomposition</em>, §The Eigenvalue Decomposition, and <em>Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</em>, §The Dictionary.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>The Spectrum Does Not Determine the Frame</td>
+<td>R</td>
+<td>the theorem that the eigenvalues fix the scalar part and the modulus but not the two axes or the two angles; the exact one-parameter family with $\vec u_{\mathrm r}$ rotated about $\vec u_{\mathrm b}$; the worked element with $\theta_{\mathrm{rpd}}=1.763$, $\theta_{\mathrm{axr}}=\pi/2$, $c=1/\sqrt2$ where the normal-case formulas return $1.466$ and $1.350$; the physical statement that two different frame changes can have identical invariants. Parents: <em>Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</em>, §The General Case and the One-Parameter Family, for the family, and <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Non-Normal Case, for the numbers.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>When the Axes Commute: The Normal Transformations</td>
+<td>R</td>
+<td>$[\tilde U_{\mathrm b},\tilde u_{\mathrm r}]=0$ if and only if the axes are parallel or one angle vanishes; the three equivalent statements (the commutator, the parallel axes, the single-axis form $\Rho\exp(\vec U\Theta)$); the screw as the physical case; the check at $\theta_{\mathrm{rpd}}=1.5$ and $\theta_{\mathrm{axr}}=1.0$, where the commutator norm is $1.115$ at $\cos=0$, $0.966$ at $0.5$, $0.486$ at $0.9$, $0.157$ at $0.99$ and $0$ at $1$; the correction that the single exponential always exists and it is the single-axis form that fails. Parents: <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Normal Case; <em>The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector</em>, §The Second Factor: The Lorentz Transformation.</td>
+</tr>
+<tr>
+<td>20</td>
+<td>Why Boosts Are Not Additive: The Bracket Table</td>
+<td>S</td>
+<td>the three rows $[\mathfrak k,\mathfrak k]\subset\mathfrak k$, $[\mathfrak p,\mathfrak p]\subset\mathfrak k$, $[\mathfrak k,\mathfrak p]\subset\mathfrak p$; the power series of the product $re^{i\theta}e^{\tilde H}e^{\tilde K}$ with the middle product re-split; the first correction as a commutator; the second row as the Thomas–Wigner rotation; the third row as the statement that the boost set is a symmetric space and not a group.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="6-the-kinds-of-transformation-and-the-two-walls">6. The Kinds of Transformation and the Two Walls</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>21</td>
+<td>The Four Kinds of Frame Transformation</td>
+<td>R</td>
+<td>the elliptic, hyperbolic, parabolic and loxodromic kinds; the class table against $(N,B^{2})$ and against the two angles; the fixed set of each, computed: a boost with $\beta=0.6$ has eigenvalues $2$ and $1/2$ on the two null rays and $1$ on the transverse plane, a quarter turn fixes the time axis and one spatial axis, a parabolic element fixes a null hyperplane pointwise and is one Jordan block; the screw as the normal hyperbolic case; the laboratory signature of each kind. Parent: <em>Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</em>, §The Regimes.</td>
+</tr>
+<tr>
+<td>22</td>
+<td>The Rest Frame and the Exceptional Point</td>
+<td>I</td>
+<td>the stratum where the norm survives and the spectral splitting does not; the rest frame as the frame in which the element is real; the exceptional point as the physical name of the wall; what a detector sees as the element approaches it; the naming of the class, since the article's §I.10.ad already says that the defect is a shear and the unipotent is a null rotation. This entry replaces the proposed <em>Spectral Wall</em> and <em>Null Rotation</em> entries, which restated it. Donor: <code>## Biquaternion Algebra Physical Interpretations</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p>| 23 | The Null Cone: The Massless Boundary | R | $N=0$ and the collapse $r\to0$ with the rapidity diverging; the unit factor ceasing to exist; the element becoming a zero divisor of rank one; the relation to the massless limit, where the two chiral halves separate; what survives of the group structure on the cone. Parent: <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Two Walls, §The Null Cone. |</p>
+<h2 id="part-iii-the-representations">Part III: The Representations</h2>
+<h3 id="7-the-representations">7. The Representations</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>24</td>
+<td>The Spinor Representation of the Lorentz Group</td>
+<td>K</td>
+<td>the two Weyl halves; the half-angle as the signature of the two-to-one cover; the two inequivalent chiralities and the conjugate; the one-particle module.</td>
+</tr>
+<tr>
+<td>25</td>
+<td>The Spinor Module in Biquaternionic Form and Its Lorentz Action †</td>
+<td>I</td>
+<td>the simple module; the one-sided action of the group; the spinor as the element carried by a single multiplication, in contrast with the congruence; the two actions compared. Donor: <code>## Biquaternion Relativistic Quantum Theory</code>.</td>
+</tr>
+<tr>
+<td>26</td>
+<td>The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</td>
+<td>K</td>
+<td>$d\tilde U/d\tau=\tfrac12\tilde\Omega\tilde U$; the rotor as a curve in the group; the acceleration bivector as the generator; the reconstruction of the worldline from the rotor.</td>
+</tr>
+<tr>
+<td>27</td>
+<td>The Self-Dual and Anti-Self-Dual Split</td>
+<td>S</td>
+<td>$\vec E+i\vec B$ as the self-dual half; the Hodge star on bivectors and its eigenvalue $\pm i$; the two triples $(1,0)$ and $(0,1)$; why the two halves do not mix under the proper group and do mix under parity; the link to the chiral projectors.</td>
+</tr>
+<tr>
+<td>28</td>
+<td>$P$, $T$ and the Representation Labels</td>
+<td>N</td>
+<td>parity exchanges $(m,n)$ with $(n,m)$, which is why the Dirac pair is the minimal parity-invariant fermion and why chirality is not defined for the full group; time reversal as an antilinear map and its effect on the two labels; the four components of $O(1,3)$ as the order-four quotient the corpus already names; what is proved where: the operators in <em>The Reflection and the Rotation</em>, $C$ in <em>Antilinear Structure</em>, the combined statement in <em>The CPT Theorem</em>, the order-four quotient in <em>Parras Four Options</em>. This entry adds only the label exchange, which no article states.</td>
+</tr>
+<tr>
+<td>29</td>
+<td>The Finite-Dimensional Representations and Their Unitarity Defect</td>
+<td>S</td>
+<td>the $(m,n)$ label and the dimension table; the restriction to $SU(2)$ and the Clebsch–Gordan rule; the tensor products; the proof that no nontrivial finite-dimensional representation is unitary, from compactness of the maximal compact subgroup; the reframing of the word in the title: non-unitarity is not a defect but the reason the finite carriers are fields and not states, and the first paragraph says so, so the title stays as the corpus's phrase and the article supplies the correction; the split between the finite field carriers and the infinite state space.</td>
+</tr>
+<tr>
+<td>30</td>
+<td>The Principal Series and the Complementary Series</td>
+<td>S</td>
+<td>the Borel subgroup $MAN$; the induced representation and its two parameters, one discrete and one continuous; the principal, complementary and discrete series; temperedness; why the physical modules are infinite-dimensional; where the finite carriers of the algebra sit relative to these.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="8-the-orbits-and-the-little-groups">8. The Orbits and the Little Groups</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>31</td>
+<td>The Poincaré Group and the Biquaternion Frame</td>
+<td>K</td>
+<td>the semidirect structure; the translation as additive and not multiplicative; the dimension count that forbids a faithful embedding; what the frame captures and what it does not.</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Wigner's Classification: Two Casimirs, Three Orbits</td>
+<td>N</td>
+<td>the two Casimir operators $P^{2}$ and $W^{2}$; the three orbits $P^{2}>0$, $P^{2}=0$, $P^{2}<0$; mass as the orbit and spin as the little-group label; the part the corpus proves (the orbit split by the sign of $P^{2}$, which follows from the Casimir; the little-group structure of entries 32 and 33; the spin as a little-group weight) separated from the part it imports (the unitary representation theory of the little groups, Wigner's modules); the honest statement that the algebra's carriers $(1,0)$, $(0,1)$, $(\tfrac12,\tfrac12)$ are finite-dimensional and are not the Wigner modules, and which of them stands in for which orbit; the spacelike orbit as a closing subsection, with $SU(1,1)$, the continuous series and the disclaimer that no tachyon is observed.</td>
+</tr>
+<tr>
+<td>33</td>
+<td>The Little Group of a Massive Particle: $SU(2)$</td>
+<td>N</td>
+<td>the rest frame as the orbit representative; the stabiliser $SU(2)$; the spin label as the weight and the count $2s+1$ per momentum; the boost as the transport from the rest frame to a general momentum; the Wigner rotation as the failure of that transport to be a homomorphism; the check on two boost compositions.</td>
+</tr>
+<tr>
+<td>34</td>
+<td>The Little Group of a Null Momentum: $E(2)$</td>
+<td>N</td>
+<td>the stabiliser $ISO(2)$ of a null momentum and its $U(1)$ part; the two null translations and the proof that they act trivially on a finite-helicity state; the helicity as the weight; the continuous-spin case and what it would require; the boundary with <em>Helicity in Biquaternionic Form</em>, which treats the label and not the group.</td>
+</tr>
+<tr>
+<td>## Part IV: The Group at Work</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="9-the-velocity-the-sky-and-the-measure">9. The Velocity, the Sky and the Measure</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>35</td>
+<td>Velocity Space as Hyperbolic Geometry</td>
+<td>I</td>
+<td>the boost manifold $SL(2,\mathbb{C})/SU(2)\cong\mathbb{H}^{3}$; the rapidity as distance; the light cone as the boundary at infinity; the holonomy as hyperbolic area; Thomas precession as the rate form. Donor: <code>## Biquaternion Relativistic Quantum Theory</code>.</td>
+</tr>
+<tr>
+<td>36</td>
+<td>The Wigner Rotation and the Information Content of a Boost</td>
+<td>I</td>
+<td>the product of two boosts and the rotation it leaves; the generator and the Cartan split; the cocycle condition; the closed loop that returns the frame and not the spin; what a boost imprints on a spin. Donor: <code>## Biquaternion Relativistic Quantum Theory</code>.</td>
+</tr>
+<tr>
+<td>37</td>
+<td>The Celestial Sphere of the Null Cone</td>
+<td>K</td>
+<td>the projective null cone; the two chiralities and the Segre quadric; the spinor coordinates; the little-group phase on the ray. Moves from <em>The Representations</em> to here, because its subject is the sky.</td>
+</tr>
+<tr>
+<td>38</td>
+<td>Aberration and the Sky: The Boost as a Möbius Flow</td>
+<td>N</td>
+<td>the boost acting on the sphere of null directions; the two fixed points and the circles carried to circles; the aberration formula as that flow; the three kinds read on the sky; why the sky is the spinor projective line and the boost a fractional linear map on it; the cross-ratio check.</td>
+</tr>
+<tr>
+<td>39</td>
+<td>The Invariant Measure on the Mass Shell</td>
+<td>N</td>
+<td>$d^{3}p/(2E)$ as the measure the group leaves alone; the proof from the Jacobian of a boost; the four-dimensional form $\delta(p^{2}-m^{2})\theta(p^{0})d^{4}p$; the phase space of one particle and its invariance; where the corpus assumes the measure and never states it.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="10-the-rod-the-clock-and-the-signal">10. The Rod, the Clock and the Signal</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>40</td>
+<td>The Relativistic Exchange of Information and Clock Synchronisation</td>
+<td>I</td>
+<td>signals as null displacements; proper time from the norm; the radar method and Einstein synchronisation; the $k$-factor; the relativity of simultaneity, defined by exchange and not asserted. Donor: <code>## Biquaternion Relativistic Non Quantum Approximation</code>.</td>
+</tr>
+<tr>
+<td>41</td>
+<td>Length Contraction and Time Dilation Are Not Deformations</td>
+<td>R</td>
+<td>a rod as a pair of worldlines and a clock as a pair of events; the congruence carrying them; the contraction as the ratio of two cross-sections and not a change of the object; the two measurements that must not be conflated, the simultaneous endpoints and the passing endpoints; the table for $\beta=0.6$ and $\beta=0.8$; the statement that the group acts on the description and not on the object.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="11-three-exercises">11. Three Exercises</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>42</td>
+<td>Exercise: Boosting a Four-Velocity and Rapidity Composition</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>43</td>
+<td>Exercise: The Thomas Precession</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>44</td>
+<td>Exercise: The Relativistic Doppler Effect</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="12-the-fields-under-the-group">12. The Fields Under the Group</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45</td>
+<td>The Field Strength as $(1,0)\oplus(0,1)$</td>
+<td>R</td>
+<td>the potential as $(\tfrac12,\tfrac12)$ and the field strength as the sum of the two self-dual triples; the transformation of each; the gauge shift $\tilde A\mapsto\tilde A+\tilde\nabla\chi$ and what the group does to it; the reading of the potential as a connection and the field strength as its curvature, which is the representation-theoretic origin of gauge invariance: the $(\tfrac12,\tfrac12)$ carrier is not invariant under the shift and the $(1,0)\oplus(0,1)$ carrier is; why the field carries two chiral halves and the potential one. Parent: <em>The Lorentz Group in Biquaternionic Form</em>, §Finite-Dimensional Representations, the dictionary table.</td>
+</tr>
+<tr>
+<td>46</td>
+<td>The Dirac Pair and the Mass Term</td>
+<td>R</td>
+<td>the Dirac field as $(\tfrac12,0)\oplus(0,\tfrac12)$; the mass term as the only term that couples the two halves; why parity forces the pair and forbids a single Weyl field with a mass; the gamma matrices as the intertwiners between the $(\tfrac12,\tfrac12)$ momentum carrier and the $(\tfrac12,0)\oplus(0,\tfrac12)$ spinor carrier, which is the representation-theoretic content of the Dirac equation; the non-unitarity of the finite representation read on the field. The equation itself, its plane waves and its non-relativistic limit are not rewritten here: they are <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>. Parents: <em>Antilinear Structure and the Two Kinds of Mass</em>, §Why a Mass Is a Pairing with a Conjugate.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="part-v-the-rest">Part V: The Rest</h2>
+<h3 id="13-the-larger-groups-and-their-modules">13. The Larger Groups and Their Modules</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>47</td>
+<td>The Conformal Group in Biquaternionic Form</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>48</td>
+<td>Twistor Theory and Biquaternions</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>49</td>
+<td>The SO(4) Route to the Euclidean Frame</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="14-the-kinematics-of-one-and-two-particles">14. The Kinematics of One and Two Particles</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>50</td>
+<td>Relativistic Mechanics in Biquaternionic Form</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>51</td>
+<td>The Non-Relativistic Limit of Relativistic Mechanics</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>52</td>
+<td>The Relativistic Particle in an External Field</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>53</td>
+<td>The Relativistic Two-Body Problem</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>54</td>
+<td>Exercise: Four-Momentum Conservation in a Collision</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>55</td>
+<td>Exercise: The Kinematics of a Two-Body Decay</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="15-the-action-the-current-and-the-flow">15. The Action, the Current and the Flow</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>entry</th>
+<th>prov.</th>
+<th>content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>56</td>
+<td>Noether's Theorem in Biquaternionic Form</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+<tr>
+<td>57</td>
+<td>Similitudes Between Biquaternion Rotors and Hamiltonian Flow</td>
+<td>K</td>
+<td>unchanged.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-eleven-new-articles">The Eleven New Articles</h2>
+<p>Each one is stated with the object it needs, because the object is what earns it, and with the claim it must not make.</p>
+<p><strong>3. The Three Isomorphisms.</strong> The object is the algebra itself. The claim is that $\mathbb{B}$ <em>is</em> the complexified Lorentz algebra and not merely isomorphic to something that is. It proves the chain, gives each link a use, and refuses the reading in which the algebra is a notation for matrices. It states the convention in the article: the chain is canonical up to the choice of Pauli basis, and no physical prediction depends on the choice.</p>
+<p><strong>4. The Matrix Model.</strong> The object is the $2\times2$ array. The claim is that the model is a faithful display that loses exactly two things: the distinction between the scale and the phase, which are both a modulus, and the distinction between the two walls, which both become a degenerate determinant. It must not claim that the matrix is the algebra.</p>
+<p><strong>13. The Two Casimirs of the Lorentz Algebra.</strong> The object is a label. The claim is that two numbers classify an irreducible representation and that the two numbers are the Casimirs of the two $\mathfrak{su}(2)$ halves. Verified: with $\vec J_{\pm}=(\vec J\pm i\vec K)/2$ the two triples commute and each closes as $\mathfrak{su}(2)$; $\vec J^{2}-\vec K^{2}=2(\vec J_{+}^{2}+\vec J_{-}^{2})$ and $(\vec J\cdot\vec K+\vec K\cdot\vec J)/2=i(\vec J_{+}^{2}-\vec J_{-}^{2})$, both invariant; on the vector representation $(\tfrac12,\tfrac12)$ the first has the eigenvalue $-2\cdot\tfrac32$ in the sign convention of the check and the second has eigenvalue $0$. The article must fix its own normalization, because the factors $2$ and $i$ are conventional, and the review's form $m(m+1)\pm n(n+1)$ is that pair only after the factor is fixed. It must also say what the two Casimirs cannot do: they do not separate $(\tfrac12,0)$ from $(0,\tfrac12)$ unless the sign of one of them is used, and they are not the Poincar\'e Casimirs.</p>
+<p><strong>14. The Cartan Subalgebra, the Roots and the Three Real Forms.</strong> The object is the signature. The claim is that the Lorentz algebra, the Euclidean algebra and the split algebra are three real slices of one complex algebra, and that the physical choice of signature is a choice of slice. This is the article that makes <em>The SO(4) Route</em> intelligible. It must not claim that the three slices are equivalent physically.</p>
+<p><strong>15. The Exponential Map from Algebra to Group.</strong> The object is the group element reached from the identity. The claim is that the exponential is surjective and that the elements needing two generators are exactly the non-normal ones in the unit group. It carries the logarithm, the branch and the fibre. Verified: $\lVert\exp\log A-A\rVert\le1.1\times10^{-15}$ on five elements, including the Jordan one.</p>
+<p><strong>28. $P$, $T$ and the Representation Labels.</strong> The object is the label under a reflection. The claim is that parity exchanges $(m,n)$ with $(n,m)$, which is why the Dirac pair is the minimal parity-invariant fermion and why chirality is not defined for the full group. Everything else about the discrete symmetries is already written: the operators in <em>The Reflection and the Rotation in Biquaternionic Form</em>, charge conjugation in <em>Antilinear Structure and the Two Kinds of Mass</em>, the combined statement in <em>The CPT Theorem</em>, and the order-four quotient — which is the four components of $O(1,3)$ — in <em>Parras Four Options</em>. This entry adds the exchange of labels and nothing else.</p>
+<p><strong>32. Wigner's Classification.</strong> The object is a momentum. The claim is that mass is the orbit and spin is the little-group label, and that the algebra's finite carriers are not the physical modules. It separates what the corpus proves — the sign of $P^{2}$ from the Casimir, the little-group structure, the weight — from what it imports, the unitary representation theory of the little groups. The spacelike orbit is a closing subsection, not an entry of its own: $SU(1,1)$, the continuous series, and the plain statement that no tachyon is observed.</p>
+<p><strong>33. The Little Group of a Massive Particle.</strong> The object is the rest frame. The claim is that the stabiliser of a timelike momentum is $SU(2)$ and that the boost is the transport whose failure to be a homomorphism is the Wigner rotation. It is the article the Thomas exercise assumes.</p>
+<p><strong>34. The Little Group of a Null Momentum.</strong> The object is a null momentum. The claim is that the stabiliser is $ISO(2)$, that the two translations act trivially on a finite-helicity state, and that the compact part supplies the helicity. It hands the label to <em>Helicity in Biquaternionic Form</em> and takes only the group.</p>
+<p><strong>38. Aberration and the Sky.</strong> The object is the sky. The claim is that a boost is a Möbius flow on the sphere of null directions, with two fixed points, and that the aberration formula is that flow written in an angle. It extends <em>The Celestial Sphere</em> rather than repeating it: the one builds the coordinates and this one moves them.</p>
+<p><strong>39. The Invariant Measure on the Mass Shell.</strong> The object is the volume of momentum space. The claim is that $d^{3}p/(2E)$ is invariant, a statement about the group that the corpus assumes everywhere and proves nowhere.</p>
+<h2 id="the-migration-of-the-old-entries">The Migration of the Old Entries</h2>
+<p>Every one of the twenty-one entries of the block as it stands has a destination.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>old entry</th>
+<th>destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lorentz Transformation as a Biquaternionic Rotation</td>
+<td>§1, unchanged</td>
+</tr>
+<tr>
+<td>Paravectors and the Geometry of Spacetime</td>
+<td>§1, unchanged</td>
+</tr>
+<tr>
+<td>The Lorentz Group in Biquaternionic Form — Structure and Representations †</td>
+<td>§3, becomes the portal; its sections and its tables are distributed as below</td>
+</tr>
+<tr>
+<td>The Poincaré Group and the Biquaternion Frame</td>
+<td>§8, unchanged</td>
+</tr>
+<tr>
+<td>The Spinor Representation of the Lorentz Group</td>
+<td>§7, unchanged</td>
+</tr>
+<tr>
+<td>The Eigenspinor</td>
+<td>§7, unchanged</td>
+</tr>
+<tr>
+<td>The Celestial Sphere of the Null Cone</td>
+<td>§9, moves from the representations to the sky</td>
+</tr>
+<tr>
+<td>Exercise: Boosting a Four-Velocity</td>
+<td>§11, unchanged</td>
+</tr>
+<tr>
+<td>Exercise: The Thomas Precession</td>
+<td>§11, unchanged</td>
+</tr>
+<tr>
+<td>Exercise: The Relativistic Doppler Effect</td>
+<td>§11, unchanged</td>
+</tr>
+<tr>
+<td>The Conformal Group</td>
+<td>§13, unchanged</td>
+</tr>
+<tr>
+<td>Twistor Theory and Biquaternions</td>
+<td>§13, unchanged</td>
+</tr>
+<tr>
+<td>The SO(4) Route to the Euclidean Frame</td>
+<td>§13, unchanged</td>
+</tr>
+<tr>
+<td>Relativistic Mechanics</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>The Non-Relativistic Limit</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>The Relativistic Particle in an External Field</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>The Relativistic Two-Body Problem</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>Exercise: Four-Momentum Conservation</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>Exercise: The Kinematics of a Two-Body Decay</td>
+<td>§14, unchanged</td>
+</tr>
+<tr>
+<td>Noether's Theorem</td>
+<td>§15, unchanged</td>
+</tr>
+<tr>
+<td>Similitudes Between Rotors and Hamiltonian Flow</td>
+<td>§15, unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p>The survey's sections are distributed as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>survey section</th>
+<th>becomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rotors, Boosts, and Rotations</td>
+<td>the opening of the portal</td>
+</tr>
+<tr>
+<td>Where the Biquaternion Algebra Sits</td>
+<td><em>The Three Isomorphisms</em></td>
+</tr>
+<tr>
+<td>The Group of Unit-Norm Biquaternions</td>
+<td><em>The Group of Unit-Norm Biquaternions</em></td>
+</tr>
+<tr>
+<td>The Group of Units and Its Representations</td>
+<td><em>The Two Actions of One Group</em></td>
+</tr>
+<tr>
+<td>Boosts Do Not Close: The Composition Law</td>
+<td><em>Why Boosts Are Not Additive</em></td>
+</tr>
+<tr>
+<td>The Lie Algebra</td>
+<td><em>The Six Generators and Their Commutators</em></td>
+</tr>
+<tr>
+<td>The Two $\mathrm{SU}(2)$ Halves</td>
+<td><em>The Two Commuting $\mathfrak{su}(2)$ Triples</em></td>
+</tr>
+<tr>
+<td>Finite-Dimensional Representations</td>
+<td><em>The Self-Dual and Anti-Self-Dual Split</em> and <em>The Finite-Dimensional Representations and Their Unitarity Defect</em></td>
+</tr>
+<tr>
+<td>The Two-to-One Cover</td>
+<td>the portal, and <em>The Two-Sheeted Cover</em></td>
+</tr>
+<tr>
+<td>$*$-Unitary Representations</td>
+<td><em>The Principal Series and the Complementary Series</em></td>
+</tr>
+<tr>
+<td>The Stabilisers of a Direction and Their Series</td>
+<td><em>The Little Group of a Null Momentum</em></td>
+</tr>
+<tr>
+<td>Summary and the tables</td>
+<td>kept in the portal, because they are the dictionary</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every section of the survey therefore has a destination: eight become articles of their own, one is dissolved into the portal and one into the cover article, one is split in two, and the tables stay.</p>
+<h2 id="the-imports-and-their-donors">The Imports and Their Donors</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>entry</th>
+<th>donor block</th>
+<th>donor count before</th>
+<th>after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Rotations, the Boosts and the Groups</td>
+<td>Biquaternion Algebra Physical Interpretations</td>
+<td>34</td>
+<td>33</td>
+</tr>
+<tr>
+<td>The Rest Frame and the Exceptional Point</td>
+<td>Biquaternion Algebra Physical Interpretations</td>
+<td>33</td>
+<td>32</td>
+</tr>
+<tr>
+<td>The Lorentz Group as Biquaternion Norm Automorphisms</td>
+<td>Biquaternion Relativistic Non Quantum Approximation</td>
+<td>30</td>
+<td>29</td>
+</tr>
+<tr>
+<td>The Two-Sheeted Cover and the Topology of Boosts</td>
+<td>Biquaternion Relativistic Non Quantum Approximation</td>
+<td>29</td>
+<td>28</td>
+</tr>
+<tr>
+<td>The Relativistic Exchange of Information and Clock Synchronisation</td>
+<td>Biquaternion Relativistic Non Quantum Approximation</td>
+<td>28</td>
+<td>27</td>
+</tr>
+<tr>
+<td>The Spinor Module in Biquaternionic Form and Its Lorentz Action †</td>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td>124</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Velocity Space as Hyperbolic Geometry</td>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td>123</td>
+<td>122</td>
+</tr>
+<tr>
+<td>The Wigner Rotation and the Information Content of a Boost</td>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td>122</td>
+<td>121</td>
+</tr>
+</tbody>
+</table></div>
+<p>The block grows from twenty-one entries to fifty-seven and from seven sections to fifteen.</p>
+<h2 id="what-was-proposed-before-and-rejected">What Was Proposed Before and Rejected</h2>
+<p>Three earlier drafts of this plan proposed entries that already exist. They are recorded here so that the same proposals are not made a fourth time.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>proposed entry</th>
+<th>where it already is</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Cartan Decomposition of the Lorentz Group</td>
+<td><em>The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector</em>, §The Cartan Decomposition of the Unit Group, and <em>The Rotations, the Boosts and the Groups</em>, §The Boost</td>
+<td>rejected; only the physical reading survives, as entry 16</td>
+</tr>
+<tr>
+<td>The Polar Word and Its Matrix Image</td>
+<td><em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Matrix Picture, and <em>The H Norm: Amplitude and Frame</em></td>
+<td>rejected; the claim was also backwards, since the matrix decomposition is the image and not the source</td>
+</tr>
+<tr>
+<td>The Image of the Exponential Map and the Fibre over a Spectrum</td>
+<td><em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Logarithm and §The Fibre</td>
+<td>rejected; the content survives as entry 15, where the object is the group element and the fibre is a physical ambiguity</td>
+</tr>
+<tr>
+<td>Conjugacy Classes of the Restricted Lorentz Group</td>
+<td><em>Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</em>, §The Regimes, six spectral regimes</td>
+<td>rejected as stated; the physical content survives as entry 21, where the subject is the fixed set</td>
+</tr>
+<tr>
+<td>The Spectral Wall: Null Rotations and the Parabolic Class</td>
+<td><em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Unipotent Unit Factor and §The Spectral Cone</td>
+<td>rejected as stated; survives as entry 22, where the object is the element at the spectral wall and the naming is already in that article's §I.10.ad against the boundary</td>
+</tr>
+<tr>
+<td>The Little Group of a Null Momentum: $E(2)$</td>
+<td><em>Helicity in Biquaternionic Form</em>, §The Little Group and the Invariance, which states $ISO(2)$ and the triviality of the two translations</td>
+<td>partly duplicated; kept only as entry 34, where the subject is the group and not the label</td>
+</tr>
+<tr>
+<td>Simultaneity Is a Foliation</td>
+<td><em>The Relativistic Exchange of Information and Clock Synchronisation</em>, §Simultaneity Defined by Exchange and §The Relativity of Simultaneity</td>
+<td>rejected; the article is imported as entry 40</td>
+</tr>
+<tr>
+<td>The Boost Is a Squeezing</td>
+<td><em>The Harmonic Oscillator in Biquaternionic Form</em>, the squeezing-as-boost correspondence, cited by <em>Similitudes</em></td>
+<td>rejected</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rule drawn from this: before an entry is proposed, its subject is checked against <code>maths.md</code> and <code>physics.md</code> by keyword, and the check is recorded. Eight of the thirteen proposals failed it.</p>
+<h2 id="where-each-idea-of-the-analysis-lands">Where Each Idea of the Analysis Lands</h2>
+<p>This is the guarantee that the analysis is carried and not paraphrased. The left column is the idea, the middle is the article that proves it, the right is the article that reads it physically.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>idea</th>
+<th>proof</th>
+<th>physical reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}$</td>
+<td>entry 3</td>
+<td>entry 1</td>
+</tr>
+<tr>
+<td>the matrix model and the four-vector</td>
+<td>entry 4</td>
+<td>entry 45</td>
+</tr>
+<tr>
+<td>the unit factor is the spinor representation of $SO^{+}(1,3)$</td>
+<td>entry 24</td>
+<td>entry 3</td>
+</tr>
+<tr>
+<td>the half-angle is the signature of a cover</td>
+<td>entry 10</td>
+<td>entry 24</td>
+</tr>
+<tr>
+<td>the word is the Cartan decomposition $P\cdot K$</td>
+<td>entry 16</td>
+<td>entry 19, the screw</td>
+</tr>
+<tr>
+<td>the four factors and their group meanings</td>
+<td>entry 16</td>
+<td>entries 42 to 44</td>
+</tr>
+<tr>
+<td>the seven data are exponential coordinates</td>
+<td>entry 15</td>
+<td>entry 16</td>
+</tr>
+<tr>
+<td>normal is parallel axes is a single axis</td>
+<td>entry 19</td>
+<td>entry 19, the screw</td>
+</tr>
+<tr>
+<td>the spectral decomposition is the weight decomposition</td>
+<td>entry 17</td>
+<td>entry 27</td>
+</tr>
+<tr>
+<td>the two $\mathfrak{su}(2)$ halves are the two labels</td>
+<td>entry 13</td>
+<td>entry 32</td>
+</tr>
+<tr>
+<td>$B^{2}\neq0$ is semisimplicity</td>
+<td>entry 17</td>
+<td>entry 22</td>
+</tr>
+<tr>
+<td>the spectrum does not determine the word</td>
+<td>entry 18</td>
+<td>entry 18, the two frames</td>
+</tr>
+<tr>
+<td>$c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ is the seed of the Wigner angle</td>
+<td>entry 18</td>
+<td>entry 36</td>
+</tr>
+<tr>
+<td>the null cone is the massless boundary</td>
+<td><em>Exponential Polar Decomposition</em>, §The Null Cone</td>
+<td>entry 23</td>
+</tr>
+<tr>
+<td>the spectral cone is the parabolic boundary</td>
+<td>entry 22, §I.10.ad</td>
+<td>entry 21</td>
+</tr>
+<tr>
+<td>the parabolic element is a null rotation</td>
+<td>entry 22, §I.10.ad</td>
+<td>entry 34</td>
+</tr>
+<tr>
+<td>the finite $(m,n)$ are non-unitary</td>
+<td>entry 29</td>
+<td>entry 46</td>
+</tr>
+<tr>
+<td>$P$ exchanges the two labels</td>
+<td>entry 28</td>
+<td>entry 46</td>
+</tr>
+<tr>
+<td>the unitary theory is the infinite series</td>
+<td>entry 30</td>
+<td>entry 32</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three statements of the analysis are corrected rather than carried.</p>
+<p><strong>The eigenvalues are not the two chiral halves.</strong> The eigenvalues $\lambda_{\pm}$ of $M(\tilde Q)$ are the two weights of the defining representation $\mathbb{C}^{2}$. The two chiral halves are $(\tfrac12,0)$ and $(0,\tfrac12)$, which are different representations of the same group, and the eigenvalues are data shared by both. The correct statement is that the two eigenlines are the two weight lines of the defining representation, and that the two chiral halves are read on the two-sided action.</p>
+<p><strong>Semisimplicity is a property of the element, not of a representation.</strong> "$B^{2}\neq0$ is a semisimple representation" should read "$B^{2}\neq0$ is a semisimple element". A non-semisimple element carries a Jordan block, and every finite-dimensional representation of the group is semisimple because the group is reductive; what can fail to be semisimple is the element, not the representation.</p>
+<p><strong>The word does not cover $SL(2,\mathbb{C})$ alone.</strong> The four-factor word includes the scale and the phase, so its group is $\mathbb{C}^{\times}\times SL(2,\mathbb{C})=GL_2(\mathbb{C})$, not $SL(2,\mathbb{C})$. The Cartan statement is the unit-norm case, where the scale and the phase are trivial.</p>
+<h2 id="what-must-be-recomputed">What Must Be Recomputed</h2>
+<p>Every number below was obtained on at most one hundred elements, in a temporary directory, and the scripts were deleted.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the word exists and is unique off the null cone</td>
+<td>100 random N-regular elements: remove the central factor, split $M(\tilde Q)/(re^{i\theta_{\mathrm{pha}}})$ at the matrix model, reassemble</td>
+<td>$100/100$ pass; maximum reconstruction error $8.0\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the Hermitian factor is Hermitian</td>
+<td>$\lVert H-H^{\dagger}\rVert$ over the same hundred</td>
+<td>$7.8\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the rotor factor is unitary of determinant one</td>
+<td>$\lVert K^{\dagger}K-1\rVert$ and $\lvert\det K-1\rvert$ over the same hundred</td>
+<td>$1.6\times10^{-15}$ and $0$</td>
+</tr>
+<tr>
+<td>the two factors are of the two kinds</td>
+<td>$\tilde U_{\mathrm b}$ real scalar with purely imaginary vector and $q_t^{2}+\vec q^{2}=1$; $\tilde u_{\mathrm r}$ real with unit norm</td>
+<td>$100/100$ both, no failure</td>
+</tr>
+<tr>
+<td>the central factor must be removed first</td>
+<td>a split without it leaves $\lvert\det K-1\rvert=2$</td>
+<td>confirmed; the naive SVD fails all hundred</td>
+</tr>
+<tr>
+<td>the axes commute exactly when parallel</td>
+<td>the commutator norm at $\theta_{\mathrm{rpd}}=1.5$, $\theta_{\mathrm{axr}}=1.0$ against $\cos$ of the axis angle</td>
+<td>$1.115$, $0.966$, $0.486$, $0.157$, $0$ at $\cos=0,0.5,0.9,0.99,1$</td>
+</tr>
+<tr>
+<td>the exponential is surjective on the group</td>
+<td>$\lVert\exp\log A-A\rVert$ on five elements: a rotor, a boost, the non-normal example, the wall element $2+i\vec e_x+\vec e_y$, a random element</td>
+<td>maximum $1.1\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$B^{2}=0$ with $N\neq0$ is one Jordan block</td>
+<td>$Q=2+i\vec e_x+\vec e_y$: $B^{2}=0$, $N=4$, eigenvalues $2,2$, $\operatorname{rank}(A-2I)=1$</td>
+<td>confirmed</td>
+</tr>
+<tr>
+<td>the four classes have the stated fixed sets</td>
+<td>eigenvectors with a real eigenvalue: boost $\beta=0.6$, quarter turn, parabolic, screw, loxodromic</td>
+<td>two null rays and the transverse plane for the boost; the time axis and one spatial axis for the rotation; a null hyperplane pointwise for the parabolic</td>
+</tr>
+<tr>
+<td>the spectrum does not determine the word</td>
+<td>the worked element of <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §The Non-Normal Case, split at the matrix model</td>
+<td>$\theta_{\mathrm{rpd}}=1.762747$ and $\theta_{\mathrm{axr}}=\pi/2$ true against $1.466$ and $1.350$ from the normal formulas; $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$</td>
+</tr>
+<tr>
+<td>the two Casimirs close the two $\mathfrak{su}(2)$ halves</td>
+<td>$\vec J_{\pm}=(\vec J\pm i\vec K)/2$ on the $4\times4$ vector representation: the two triples commute and each closes; $\vec J^{2}-\vec K^{2}=2(\vec J_{+}^{2}+\vec J_{-}^{2})$ and $(\vec J\cdot\vec K+\vec K\cdot\vec J)/2=i(\vec J_{+}^{2}-\vec J_{-}^{2})$, both invariant</td>
+<td>confirmed exactly; on $(\tfrac12,\tfrac12)$ the first takes $-3$ in the sign convention of the check and the second takes $0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-independent-review">The Independent Review</h2>
+<p>An external reader reviewed the fifty-seven-entry plan and returned fifteen recommendations: four additions, three merges or conditional merges, six patches and one presentation change. Each was checked against both corpora before it was accepted. Nine were accepted as written, four were accepted in a narrowed form, and two were rejected because the article they asked for already exists.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>recommendation</th>
+<th>verdict</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add the two-to-one cover</td>
+<td><strong>accepted, as an import not a new article</strong></td>
+<td><em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em> already exists at $411$ lines, with §The $2\pi$ Loop and the Belt. Writing it again would be the fifth duplication. It is imported into §3 as entry 10.</td>
+</tr>
+<tr>
+<td>add the full Lorentz group and the discrete symmetries</td>
+<td><strong>accepted, narrowed to the label exchange</strong></td>
+<td>the four components of $O(1,3)$ are the order-four quotient $\Gamma_{1,3}/\Gamma^{0}_{1,3}$ that <em>Parras Four Options</em> already computes; $P$ and $T$ are operators in <em>The Reflection and the Rotation</em>; $C$ is in <em>Antilinear Structure</em>; the combination is in <em>The CPT Theorem</em>. What no article states is that parity exchanges $(m,n)$ with $(n,m)$. Entry 28 states only that.</td>
+</tr>
+<tr>
+<td>add the Casimirs of the Lorentz algebra</td>
+<td><strong>accepted, as a new article</strong></td>
+<td>confirmed absent: neither corpus contains a Casimir of $\mathfrak{so}(1,3)$. Entry 13. The review's eigenvalues are the right pair up to a conventional factor, and the article must fix the factor rather than copy the form.</td>
+</tr>
+<tr>
+<td>expand the Dirac pair to derive the Dirac equation</td>
+<td><strong>accepted, narrowed</strong></td>
+<td><em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em> already has the equation, the plane waves, the bilinears and the non-relativistic limit. Entry 46 gains the intertwiner paragraph and hands the equation over.</td>
+</tr>
+<tr>
+<td>add <em>Why Biquaternions?</em></td>
+<td><strong>rejected</strong></td>
+<td><em>Why Complexify Spacetime</em> and <em>Introduction to the Biquaternion Universe</em>, §What the Framework Achieves, answer the question, and the block comment now states the thesis in six lines.</td>
+</tr>
+<tr>
+<td>merge the tachyon orbit into Wigner's classification</td>
+<td><strong>accepted</strong></td>
+<td>the count falls by one and the physically disfavoured case stops being an entry. It is now a closing subsection of entry 32.</td>
+</tr>
+<tr>
+<td>merge the rest frame into the spectral wall</td>
+<td><strong>accepted, in the other direction</strong></td>
+<td>the review is right that they are the same stratum: $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$. But the existing article is $932$ lines and the proposed one was unwritten, so the proposal is dropped and the existing article is kept, as entry 22, in the section on the kinds of transformation. One treatment, not two.</td>
+</tr>
+<tr>
+<td>merge the three exercises</td>
+<td><strong>rejected</strong></td>
+<td><code>physics.md</code> carries $23$ exercises as separate entries. One exercise per entry is the house convention, and merging these three would break it.</td>
+</tr>
+<tr>
+<td>patch the isomorphisms entry with the Pauli convention</td>
+<td><strong>accepted</strong></td>
+<td>the claim moved from the plan into the article description.</td>
+</tr>
+<tr>
+<td>patch the unitarity entry: not a defect</td>
+<td><strong>accepted</strong></td>
+<td>the reframing is written into entry 29 and the title was left alone, because <em>Unitarity Defect</em> is the corpus's existing phrase and the block points at it.</td>
+</tr>
+<tr>
+<td>patch Wigner: prove versus import</td>
+<td><strong>accepted</strong></td>
+<td>entry 32 now separates the three proved statements from the imported module theory.</td>
+</tr>
+<tr>
+<td>add the cover and the Casimirs to the dictionary</td>
+<td><strong>accepted</strong></td>
+<td>rows added.</td>
+</tr>
+<tr>
+<td>patch the field strength with gauge invariance</td>
+<td><strong>accepted</strong></td>
+<td>the connection and curvature reading is written into entry 46.</td>
+</tr>
+<tr>
+<td>patch the Cartan word: prove the central-factor-first rule</td>
+<td><strong>accepted</strong></td>
+<td>entry 16 now carries the proof $\det K=\det A/\lvert\det A\rvert$, not only the warning.</td>
+</tr>
+<tr>
+<td>add a dependency graph</td>
+<td><strong>accepted</strong></td>
+<td>appended after the dictionary.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The arithmetic of the review was $57+4-2=60$ with one conditional merge. The arithmetic after the checks is $57+3-3=57$: three additions survive, because the cover is an import, and three subtractions apply, because the tachyon, the spectral wall and the null rotation each had a home already. Sections fall from sixteen to fifteen, because the two walls no longer need a section of their own once the spectral wall is the existing article.</p>
+<h2 id="the-menu-edit">The Menu Edit</h2>
+<p>The edit is one block of <code>physics.md</code>, replaced in place at its present position, between <code>## Biquaternion Algebra Physical Interpretations</code> and <code>## Biquaternion Relativistic Quantum Theory</code>.</p>
+<p><strong>The block comment</strong> that follows <code>## Biquaternion Relativity</code> is rewritten to state the thesis and the rule:</p>
+<blockquote>
+<p>the Lorentz group, in five parts. the ground: the algebra is the complexified Lorentz algebra, $\mathbb{B}\cong M_2(\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{C}}$, and the unit factor is the spinor group of $SO^{+}(1,3)$. the two decompositions: the polar word, which is the Cartan split $PK$ of a boost and a rotation, and the spectral split, which is the weight decomposition of the defining representation; the two agree on the normal elements and the disagreement is the relative angle of the axes. the representations: the finite ones are non-unitary, the unitary ones are the infinite series, and the little groups of the momentum orbits carry mass and spin. the group at work: the velocity, the sky, the rod, the clock and the signal. the fields, the larger groups and the kinematics, kept whole. an entry belongs here when its subject is the group, one of its decompositions, one of its representations, or a physical object the group acts on.</p>
+</blockquote>
+<p><strong>The headings</strong>, in order, are the fifteen above. The <code>###</code> level is used inside the <code>##</code> block, as in the other long blocks.</p>
+<p><strong>The counts after the edit.</strong> The page keeps its fourteen <code>##</code> headings. The block goes from twenty-one to fifty-seven entries and from seven to fifteen <code>###</code> headings. Every entry keeps the two-line shape, the anchor and its comment.</p>
+<h2 id="open-decisions">Open Decisions</h2>
+<ol>
+<li>
+<p><strong>Do the eight splits go through?</strong> The alternative is to leave the survey as it is and let it grow to about three thousand lines. The splits are what keeps it readable, and they are what gives the block its detail.</p>
+</li>
+<li>
+<p><strong>Do the two imports from <code>## Biquaternion Algebra Physical Interpretations</code> go through?</strong> They are readings of two maths sections, the groups of the norm and the strata, and that block's series loses two entries, leaving two gaps in its numbering. If the block is meant to keep its series whole, those two entries stay where they are and §3 stands with five entries.</p>
+</li>
+<li>
+<p><strong>Does the block want its own level of detail for the kinematics?</strong> The six kinematics entries are the only part of the block that is not about the group. They are kept whole here because they are the destination of the split word, but a case can be made for moving them to their own block.</p>
+</li>
+</ol>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
