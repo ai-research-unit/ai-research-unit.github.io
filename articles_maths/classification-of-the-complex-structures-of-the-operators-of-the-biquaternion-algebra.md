@@ -1,0 +1,670 @@
+# __Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups__
+
+## Introduction and Scope
+
+The article [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html) classified the structures that change the ground field at the operator level. It developed the two operator algebras, $\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$ and $\mathcal{E}_{\mathbb{R}}=\operatorname{End}_{\mathbb{R}}(\mathbb{B})=M_8(\mathbb{R})$, proved that $M_4(\mathbb{C})$ has exactly two real forms, the split $M_4(\mathbb{R})$ and the quaternionic $M_2(\mathbb{H})$, separated by the trace-form signatures $(10,6)$ and $(6,10)$, proved the double centralizer theorem, and located the biquaternion base inside the operator algebra. The article [Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra.html) then developed those two real forms in the three layers, associative, Lie and Jordan, with the Lie groups of their distinguished Lie subalgebras.
+
+This article develops the third and last object of the series: the complexification, at the operator level. It is the sibling of the element-level [Classification of the Complex Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-complex-structures-of-the-biquaternion-algebra.html), and it is written in the same three layers and at the same level of detail.
+
+**Two complexifications, not one.** At the element level only one complexification exists, $\mathbb{B}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}=M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, because there is only one algebra to complexify. At the operator level there are two, and they are different algebras:
+
+$$
+\mathcal{E}^{\oplus 2}_{\mathbb{C}}:=\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C}),
+\qquad
+\mathcal{E}_{\mathbb{R},\mathbb{C}}:=\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C}).
+$$
+
+The first has complex dimension thirty-two, the second sixty-four. The first is a sum of two simple ideals of dimension sixteen; the second is simple. The first has four real algebras, the second two real forms. Nothing in the element-level article prepares the reader for the second, and the distinction between the two is the first thing this article has to make clear.
+
+**The finding, stated as a contrast.** The first complexification reproduces the element-level pattern exactly, with $M_4$ in place of $M_2$: five real structures up to conjugacy, four real algebras up to isomorphism, and a diagonal correspondence that sends the two real forms of the complex algebra into two of those four algebras and misses the other two. The counts are the same as at element level, and the reason is structural: the classification of the real structures of a sum $A\oplus A$ depends on the sum and on the two real structures of $A$, and not on the size of $A$. The second complexification is new, and its classification is of a different kind: $M_8(\mathbb{C})$ is simple, so the classification is the classification of the real forms of a simple complex algebra, and it gives two, $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$.
+
+**The strategic statement.** The two complexified objects have complex dimensions thirty-two and sixty-four, and their real-form classifications are finite, four and two. Their **subalgebra lattices are not finite**, and this article does not classify them. The method is the three-tier strategy of the companion article on real structures, and it is the same in all three layers. The first tier is a **structural theorem**: the subalgebras of a direct sum are described by Goursat's theorem, and the subalgebras of a simple matrix algebra are described by the module dictionary. The second tier is a **master table of the distinguished members**: the images of the biquaternion base, the maximal subalgebras, the parabolics and their Levis, each with its dimension, its signature and a cross-reference. The third tier is an **explicit statement of what is not classified**: the full lattice of $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$, of $M_8(\mathbb{R})$ or of $M_4(\mathbb{H})$ is not known in exhaustive form, and no reader should expect it here. The same three tiers are used for the associative, the Lie and the Jordan layer.
+
+**Scope.** This article owns the complexification story at operator level: the two complexifications and their identification with a direct sum and with a simple algebra, the two central idempotents and the Peirce decomposition, the five real structures and four real algebras of the first complexification, the two real forms of the second, the biquaternion base inside the complexifications, the diagonal correspondence, the three layers, the Killing forms and their signatures, the Jordan structure, and the comparison with the element level. It recaps from [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html) the two real forms of $\mathcal{E}_{\mathbb{C}}$, the double centralizer and the base, and it cites [Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra.html) for the full development of those real forms. It cites [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html) once, for the group theory, and [Real Forms of a Complex Lie Algebra](real-forms-of-a-complex-lie-algebra.html) once, for the general descent. It does not re-derive the two real forms, the biquaternion base, or the element-level classification.
+
+**The order.** The second section fixes the two complexifications, proves that the first is a direct sum, and tabulates the four algebras with their ground fields, dimensions and centres. The third treats the two central idempotents and the Peirce decomposition, and contrasts the central cut with the non-central cut of the ambient algebra. The fourth proves the classification of the real structures of the first complexification. The fifth proves the classification of the real forms of the second. The sixth places the biquaternion base inside both complexifications, with the ground field of every tensor product stated. The seventh states the diagonal correspondence and separates it from the two-sided span. The eighth, ninth and tenth treat the associative, Lie and Jordan layers. The eleventh computes the Killing forms, the twelfth compares with the element level, the thirteenth states what the complex form does and does not determine, and the fourteenth hands off.
+
+## The Two Operator Complexifications
+
+**The two operators.** The complex operator algebra is $\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, isomorphic to $M_4(\mathbb{C})$ because $\mathbb{B}$ is a complex vector space of dimension four. The real operator algebra is $\mathcal{E}_{\mathbb{R}}=\operatorname{End}_{\mathbb{R}}(\mathbb{B})$, of real dimension sixty-four, isomorphic to $M_8(\mathbb{R})$. The first is the complex-linear part of the second, by the umbrella article, and the inclusion
+
+$$
+\mathcal{E}_{\mathbb{C}}\subset\mathcal{E}_{\mathbb{R}}
+$$
+
+is an inclusion of real algebras, of real dimension thirty-two inside sixty-four.
+
+**The first complexification.** The complexification of the complex algebra, read over the reals, is
+
+$$
+\mathcal{E}^{\oplus 2}_{\mathbb{C}}:=\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}.
+$$
+
+The ground field of the tensor is $\mathbb{R}$ and not $\mathbb{C}$: the left factor is a complex algebra, but the tensor is taken over the reals, so the result is a complex algebra of complex dimension equal to the real dimension of $\mathcal{E}_{\mathbb{C}}$, that is thirty-two.
+
+**Proposition (the first complexification is a direct sum).** The rule
+
+$$
+\Phi(A\otimes z)=\bigl(zA,\ \bar z A\bigr),\qquad z\in\mathbb{C},
+$$
+
+defines an isomorphism of real algebras
+
+$$
+\Phi:\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\longrightarrow\mathcal{E}_{\mathbb{C}}\oplus\mathcal{E}_{\mathbb{C}},
+$$
+
+with $\Phi(A\otimes1)=(A,A)$ and $\Phi(A\otimes i)=(iA,-iA)$, where $\bar z$ is the complex conjugate of the scalar.
+
+*Proof.* The rule is $\mathbb{R}$-bilinear, because both slots enter $\mathbb{R}$-linearly, so it defines an $\mathbb{R}$-linear map; and it is multiplicative:
+$$
+\Phi(A\otimes z)\Phi(B\otimes w)=(zA,\bar zA)(wB,\bar wB)=(zwAB,\overline{zw}AB)=\Phi(AB\otimes zw).
+$$
+For surjectivity, the images of the two families are $(A,A)$ and $(iB,-iB)$, and their sum is $(A+iB,A-iB)$; every pair $(U,V)$ is of that form with $A=\tfrac12(U+V)$ and $B=-\tfrac{i}{2}(U-V)$, since then $A+iB=U$ and $A-iB=V$. Both sides have real dimension sixty-four, so the surjective linear map is an isomorphism. ∎
+
+**Remark (the isomorphism is real and not complex).** The complex structure of the tensor is carried by the second slot, $z\cdot(A\otimes w)=A\otimes(zw)$, and $\Phi$ transports it to
+$$
+z*(U,V)=(zU,\ \bar z V),
+$$
+which is not the product complex structure of the direct sum. So $\Phi$ is an isomorphism of real algebras and not of complex algebras: the second summand carries the conjugate complex structure. The two summands are therefore $\mathcal{E}_{\mathbb{C}}$ and its conjugate $\overline{\mathcal{E}}_{\mathbb{C}}$, and since $M_4(\mathbb{C})$ is isomorphic to its conjugate by the transpose, the complexification is isomorphic, as a complex algebra, to $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$. That last step is the only one that uses the specific algebra, and it is why the conclusion survives at every $n$.
+
+**Remark (diagonal and slanted, and which one the tensor produces).** The first rule gives $\Phi(A\otimes1)=(A,A)$, so the copy of $\mathcal{E}_{\mathbb{C}}$ that the tensor produces is the **diagonal**, of real dimension thirty-two. The **slanted** copy $\{(A,\bar A):A\in\mathcal{E}_{\mathbb{C}}\}$ is a second real form, of the same dimension, and it is a subalgebra as well, since $(A,\bar A)(B,\bar B)=(AB,\overline{AB})$; it is the one the fourth section produces as the fixed set of the exchange structure. The diagonal and the slanted copy are different subalgebras and both are real forms, and the reader who has seen the slanted copy called "the image of the algebra" should read that phrase as "the image of the algebra under $A\mapsto(A,\bar A)$", not as the image of $A\otimes1$.
+
+**The second complexification.** The complexification of the real algebra is
+
+$$
+\mathcal{E}_{\mathbb{R},\mathbb{C}}:=\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C}),
+$$
+
+of complex dimension sixty-four. The identification with $M_8(\mathbb{C})$ is the scalar extension of the identification $\mathcal{E}_{\mathbb{R}}\cong M_8(\mathbb{R})$, and it needs no theorem.
+
+**Proposition (the first complexification sits inside the second).** The inclusion $\mathcal{E}_{\mathbb{C}}\subset\mathcal{E}_{\mathbb{R}}$ complexifies to an inclusion of complex algebras
+
+$$
+\mathcal{E}^{\oplus 2}_{\mathbb{C}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\ \subset\ M_8(\mathbb{C})\cong\mathcal{E}_{\mathbb{R},\mathbb{C}},
+$$
+
+of codimension thirty-two.
+
+*Proof.* A scalar extension $-\otimes_{\mathbb{R}}\mathbb{C}$ of an injective map of real vector spaces is injective, so an injective map of real algebras stays injective. The source has complex dimension thirty-two and the target sixty-four, so the codimension is thirty-two. In matrices, the image is the subalgebra of the operators on $\mathbb{C}^8$ that preserve the decomposition of $\mathbb{C}^8$ into the two complex subspaces that come from the complex structure of $\mathbb{B}$, and it is the sum of two blocks of complex dimension sixteen. ∎
+
+**The trivial identity.** One tensor product in this story is trivial and is recorded only to fix the notation:
+
+$$
+\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{C}}\mathbb{C}=\mathcal{E}_{\mathbb{C}}=M_4(\mathbb{C}),
+$$
+
+of complex dimension sixteen. It is not a complexification in the sense of this article, and it is not $\mathcal{E}^{\oplus2}_{\mathbb{C}}$. The subscript of the tensor is the whole content of the distinction, and the source paper leaves it out.
+
+**The master table.** The rows give the four algebras, the ground field, the two dimensions and the centre.
+
+| algebra | ground field | $\dim_{\mathbb{F}}$ | $\dim_{\mathbb{R}}$ | centre |
+|---|---|---|---|---|
+| $\mathcal{E}_{\mathbb{C}}=M_4(\mathbb{C})$ | $\mathbb{C}$ | $16$ | $32$ | $\mathbb{C}\mathrm{I}_4$ |
+| $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ | $\mathbb{R}$ | $64$ | $64$ | $\mathbb{R}\mathrm{I}_8$ |
+| $\mathcal{E}^{\oplus 2}_{\mathbb{C}}=\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}$ | $\mathbb{C}$ | $32$ | $64$ | $\mathbb{C}\oplus\mathbb{C}$ |
+| $\mathcal{E}_{\mathbb{R},\mathbb{C}}=\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}$ | $\mathbb{C}$ | $64$ | $128$ | $\mathbb{C}\mathrm{I}_8$ |
+
+**Remark (the complex form is not the complexification).** The two words are not synonyms, and the article uses them in one sense each. A **complex form** of a real algebra $A$ is a complex algebra whose underlying real algebra is $A$; the passage is a change of scalars, and it exists only when the centre of $A$ contains a copy of $\mathbb{C}$. A **complexification** is the tensor product $A\otimes_{\mathbb{R}}\mathbb{C}$; the passage is a construction, and it always exists. The two are inverse only under hypotheses that are never met in this series. $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ has centre $\mathbb{R}$ and therefore **no** complex form, since a unital $\mathbb{R}$-algebra map $\mathbb{C}\to M_8(\mathbb{R})$ would have to land in the centre, and the centre is $\mathbb{R}$, which contains no copy of $\mathbb{C}$. What does have a complex form is $M_4(\mathbb{C})$ read over the reals, and its complex form is unique, namely $M_4(\mathbb{C})=\mathcal{E}_{\mathbb{C}}$ itself.
+
+**Remark (why $\mathcal{E}_{\mathbb{R}}$ has no complex structure).** A complex structure on a real algebra $A$ is a unital $\mathbb{R}$-algebra homomorphism $\mathbb{C}\to A$, equivalently a central element $J\in A$ with $J^2=-1$. In $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ there is no such element: the centre is $\mathbb{R}\mathrm{I}_8$, and $(\lambda \mathrm{I}_8)^2=-\mathrm{I}_8$ has no real solution. A non-central $J$ exists — the multiplication by $i$ on $\mathbb{B}$ is one, and it is an operator of square $-\mathrm{I}_8$ — but it does not make $\mathcal{E}_{\mathbb{R}}$ a complex algebra, because the scalars it generates do not commute with the operators. This is the point the umbrella article makes, and it is repeated here because the source paper blurs it: the complexification $\mathcal{E}_{\mathbb{R},\mathbb{C}}=M_8(\mathbb{C})$ is the closest analogue of a complex structure at operator level, and it is a complexification and not a complex form.
+
+**Warning (the ground field of a tensor product is part of the statement).** The source paper writes $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\otimes\mathbb{C}$ in its §4.1 and $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\otimes\mathbb{C}$ in its §4.2, and calls both a complexification. The first is a complexification only over $\mathbb{R}$, and it gives $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$; over $\mathbb{C}$ the same expression is the trivial identity $M_4(\mathbb{C})$, of complex dimension sixteen, and the direct sum never appears. The second is a complexification over $\mathbb{R}$ and gives $M_8(\mathbb{C})$, of complex dimension sixty-four. Neither is a complex form. The rule this article follows is that **the ground field of every tensor product is written**, in the definition, in the proposition and in every display, and a tensor without a subscript does not occur.
+
+## The Two Central Idempotents and the Peirce Decomposition
+
+**The two idempotents.** Write
+
+$$
+E_1=(\mathrm{I}_4,0),\qquad E_2=(0,\mathrm{I}_4),
+$$
+
+with the order fixed once and used throughout: the first slot is the first summand of the direct sum, the second slot the second.
+
+**Proposition (the idempotents).** The elements $E_1$ and $E_2$ are idempotent, orthogonal, sum to the identity, are central, and are the only nonzero central idempotents of $\mathcal{E}^{\oplus 2}_{\mathbb{C}}$.
+
+*Proof.* Computed slot by slot, $E_1^2=(\mathrm{I}_4^2,0)=E_1$, $E_2^2=E_2$, and $E_1E_2=(\mathrm{I}_4\cdot0,0\cdot\mathrm{I}_4)=0=E_2E_1$. The sum is $(\mathrm{I}_4,\mathrm{I}_4)$, the identity of the direct sum. For centrality, $E_1(A,B)=(A,0)=(A,B)E_1$ for every $(A,B)$, and symmetrically for $E_2$. For uniqueness, let $P=(P_1,P_2)$ be a central idempotent; centrality forces $P_k\in Z(M_4(\mathbb{C}))=\mathbb{C}\mathrm{I}_4$, and idempotence forces each scalar to be $0$ or $1$. The four choices are $0$, $E_1$, $E_2$ and the identity. ∎
+
+**The Peirce decomposition.** Relative to the family $E_1,E_2$ the Peirce components are $A_{ij}=E_i\mathcal{E}^{\oplus2}_{\mathbb{C}}E_j$, and
+
+$$
+\mathcal{E}^{\oplus 2}_{\mathbb{C}}=A_{11}\oplus A_{12}\oplus A_{21}\oplus A_{22}.
+$$
+
+**Proposition (the off-diagonal components vanish).** For every pair $(A,B)$,
+
+$$
+E_1(A,B)E_2=(0,0)=E_2(A,B)E_1,
+$$
+
+so $A_{12}=A_{21}=0$ and the decomposition reads
+
+$$
+\mathcal{E}^{\oplus 2}_{\mathbb{C}}=A_{11}\oplus A_{22},\qquad A_{11}=M_4(\mathbb{C})\oplus 0,\qquad A_{22}=0\oplus M_4(\mathbb{C}).
+$$
+
+*Proof.* Slot by slot, $E_1(A,B)E_2=(A,0)(0,B)=(0,0)$, and symmetrically. The diagonal components are $E_1(A,B)E_1=(A,0)$ and $E_2(A,B)E_2=(0,B)$, which run over the two summands as $(A,B)$ runs over the algebra. ∎
+
+**Remark (a Peirce decomposition without off-diagonal lines).** A Peirce decomposition is trivial in the technical sense when its off-diagonal components vanish, and this one is trivial for one reason: the family is central. The element-level complexification behaves identically, and the reason is the same. The contrast is with a **non-central** idempotent of the ambient algebra. Take $P\in\mathcal{E}_{\mathbb{C}}$ the projection of $\mathbb{B}$ onto a complex line, so that $P^2=P$, $P\neq\mathrm{I}_4$ and $P$ is not central. Then the four Peirce blocks $P\mathcal{E}_{\mathbb{C}}P$, $P\mathcal{E}_{\mathbb{C}}(\mathrm{I}_4-P)$, $(\mathrm{I}_4-P)\mathcal{E}_{\mathbb{C}}P$ and $(\mathrm{I}_4-P)\mathcal{E}_{\mathbb{C}}(\mathrm{I}_4-P)$ have complex dimensions $1,3,3,9$, and the algebra is a sum of four blocks with nonvanishing off-diagonal ones. The cut of this section is therefore of a different kind from the non-central cut of the ambient algebra; the first separates two ideals, the second separates four corners of a simple algebra.
+
+**Remark (why the vanishing of the off-diagonal components creates the new families).** The vanishing of $A_{12}$ and $A_{21}$ says that the **algebra** is a product of its two ideals. It does not say that a **subalgebra** is a product. A subalgebra $S$ carries two projections $p_1(S)\subset M_4(\mathbb{C})$ and $p_2(S)\subset M_4(\mathbb{C})$, and it need not contain the whole product of them: it may hold only the pairs $(A,B)$ that satisfy a relation. Whether the relation is trivial, an isomorphism, or a surjection with a kernel is the content of Goursat's theorem, and that is the classification of the eighth section.
+
+## Five Real Structures and Four Real Algebras
+
+**The real structures of a factor.** A real structure on $A=M_4(\mathbb{C})$ is a conjugate-linear multiplicative involution. By the umbrella article there are exactly two up to conjugacy, and they are the two of the corpus:
+
+$$
+\tau_{\mathbb{R}}(A)=\bar A,\qquad \tau_{\mathbb{H}}(A)=J_0\bar A J_0^{-1},
+$$
+
+with fixed algebras $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$. The first is the entrywise conjugation, of trace-form signature $(10,6)$; the second is the quaternionic conjugation, of signature $(6,10)$. The two are not conjugate, since their fixed algebras are not isomorphic; the invariant that separates them is the trace-form signature, $(10,6)$ against $(6,10)$, and the Killing form separates them too, both being computed in the section *Killing Forms and Signatures*.
+
+**Theorem (the real structures of the complexification).** Let $A=M_4(\mathbb{C})$. A real structure on $A\oplus A$ either preserves or exchanges the two simple summands.
+
+- In the preserving case $\theta=\theta_1\times\theta_2$ with each $\theta_i$ a real structure of $A$, and there are four such maps.
+- In the exchanging case $\theta(A,B)=(\varphi(B),\varphi^{-1}(A))$ for a conjugate-linear automorphism $\varphi$ of $A$, and all such $\theta$ are conjugate.
+
+Hence there are **five real structures** and **four classes**. A structure is a map and a class is an orbit of maps, and the two counts differ because the two mixed structures, $\tau_{\mathbb{R}}\times\tau_{\mathbb{H}}$ and $\tau_{\mathbb{H}}\times\tau_{\mathbb{R}}$, are distinct maps that are conjugate by the swap, as the remark below shows. The four classes give **four real algebras** up to isomorphism:
+
+$$
+M_4(\mathbb{R})\oplus M_4(\mathbb{R}),\quad
+M_2(\mathbb{H})\oplus M_2(\mathbb{H}),\quad
+M_4(\mathbb{R})\oplus M_2(\mathbb{H}),\quad
+M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}.
+$$
+
+*Proof.* The summands are the two simple ideals, and a conjugate-linear automorphism permutes the two-element set of them, so it preserves or exchanges. In the preserving case each component is a conjugate-linear multiplicative involution of $A$, and there are exactly two of those. In the exchanging case write $\theta(A,B)=(\varphi(B),\psi(A))$ with $\varphi,\psi$ multiplicative and conjugate-linear; then $\theta^2=1$ forces $\psi=\varphi^{-1}$. A conjugate-linear automorphism of $A$ is $\varphi=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ for some $G\in GL_4(\mathbb{C})$, by Skolem–Noether applied to $\varphi\circ\tau_{\mathbb{R}}^{-1}$, which is $\mathbb{C}$-linear. Two such structures are conjugate: conjugation by $(1,U)$ replaces $\operatorname{Ad}_G$ by $\operatorname{Ad}_{G\bar U}$, and $G\bar U$ runs over $GL_4(\mathbb{C})$ as $U$ does. The fixed algebra of the exchanging case is read off from $\theta(A,B)=(A,B)$, that is $A=\varphi(B)$, one condition and hence real dimension thirty-two. ∎
+
+**The five structures, explicitly.** The table lists the five, the fixed algebra of each, and its type.
+
+| real structure | fixed algebra | $\dim_{\mathbb{R}}$ | type |
+|---|---|---|---|
+| $\tau_{\mathbb{R}}\times\tau_{\mathbb{R}}$ | $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$ | $32$ | pair, split $\oplus$ split |
+| $\tau_{\mathbb{R}}\times\tau_{\mathbb{H}}$ | $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ | $32$ | pair, mixed |
+| $\tau_{\mathbb{H}}\times\tau_{\mathbb{R}}$ | $M_2(\mathbb{H})\oplus M_4(\mathbb{R})$ | $32$ | pair, mixed, other order |
+| $\tau_{\mathbb{H}}\times\tau_{\mathbb{H}}$ | $M_2(\mathbb{H})\oplus M_2(\mathbb{H})$ | $32$ | pair, quaternionic $\oplus$ quaternionic |
+| $\theta(A,B)=(\bar B,\bar A)$, and its twists | $\{(A,\bar A)\}\cong M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ | $32$ | slanted |
+
+**Remark (the swap exchanges the two mixed structures).** The swap $s(A,B)=(B,A)$ is a $\mathbb{C}$-algebra automorphism of $A\oplus A$, and
+
+$$
+s\circ(\tau_{\mathbb{R}}\times\tau_{\mathbb{H}})\circ s^{-1}=\tau_{\mathbb{H}}\times\tau_{\mathbb{R}},
+$$
+
+so the two mixed structures are conjugate and their fixed algebras are isomorphic. What the pair $(A\oplus A,\theta)$ records beyond the isomorphism class is the position of the two summands, and that position is not an invariant of the algebra.
+
+**Remark (the slanted form and its two names).** The fixed algebra of the exchange structure is written $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ in this article, and it has a second and equally standard name, $M_4(\mathbb{C})_{\mathbb{R}}$, the **realification** of $M_4(\mathbb{C})$, that is the same ring read with real scalars. The identification is by $(A,\bar A)\mapsto A$, which is a real isomorphism because $\overline{A+B}=\bar A+\bar B$, $\overline{AB}=\bar A\bar B$ and $\overline{\lambda A}=\bar\lambda\bar A$ for $\lambda\in\mathbb{C}$. The two names record the same real algebra of real dimension thirty-two, and the fixed set is a copy of it inside the sum, not the sum.
+
+**The trace-form signatures.** The trace form of the sum is the sum of the trace forms of the two factors, so the signatures add:
+
+$$
+M_4(\mathbb{R})^{\oplus 2}:(10,6)+(10,6)=(20,12),\qquad
+M_2(\mathbb{H})^{\oplus 2}:(6,10)+(6,10)=(12,20),
+$$
+
+$$
+M_4(\mathbb{R})\oplus M_2(\mathbb{H}):(10,6)+(6,10)=(16,16),\qquad
+M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}:(16,16).
+$$
+
+The last entry needs one line of computation. On the slanted form the trace form reads $(A,\bar A)\mapsto \operatorname{Re}\operatorname{tr}(A^2)$, and writing $A=X+iY$ with real $X,Y$ gives $\operatorname{Re}\operatorname{tr}(A^2)=\operatorname{tr}(X^2)-\operatorname{tr}(Y^2)$, which is $(10,6)$ on the real part and $(6,10)$ on the imaginary part, so $(16,16)$ in total.
+
+**Remark (the four algebras are pairwise non-isomorphic, and the signature does not separate them).** Simplicity separates the slanted form from the other three: $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ is simple as a real algebra, because a two-sided ideal of the realification is a complex subspace stable under multiplication, hence an ideal of $M_4(\mathbb{C})$, and the complex algebra is simple. Among the three sums of two simple ideals the multiset of summand types separates: $\{M_4(\mathbb{R}),M_4(\mathbb{R})\}$, $\{M_2(\mathbb{H}),M_2(\mathbb{H})\}$ and $\{M_4(\mathbb{R}),M_2(\mathbb{H})\}$ are different multisets, since $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$ are not isomorphic, having different trace-form signatures. The trace form alone does not separate the four: the mixed and the slanted forms share the signature $(16,16)$. The Killing form does separate them, by the computation of the section *Killing Forms and Signatures*, which gives $(18,12)$, $(10,20)$, $(14,16)$ and $(15,15)$; the trace form is an invariant and not a complete invariant, and the Killing form is the Lie-level refinement that completes it on this list.
+
+**Warning (five structures, four algebras).** The source paper's table lists four entries and calls two of them the two mixed forms, which reads as a list of four. The correct count is stated as follows and never otherwise. There are **five real structures** up to conjugacy, and **four real algebras** up to isomorphism, the two mixed structures being conjugate by the swap. A count of structures and a count of isomorphism classes are different counts, and both are used: the structures are the objects that act on the complexification, the algebras are the isomorphism classes that appear in the diagonal correspondence of the seventh section. Saying "five real forms" or "four real structures" is wrong in both cases.
+
+## The Two Real Forms of the Second Complexification
+
+**The theorem.** The second complexification is simple, so its classification is of a different kind from that of the fourth section: it is the classification of the real forms of a simple complex algebra.
+
+**Theorem (the real forms of $M_8(\mathbb{C})$).** Let $B$ be a real algebra with $B\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$. Then $B$ is isomorphic to exactly one of
+
+$$
+M_8(\mathbb{R}),\qquad M_4(\mathbb{H}).
+$$
+
+*Proof.* A real form $B$ is a real algebra of dimension sixty-four. Its centre is a real form of the centre $\mathbb{C}$ of $M_8(\mathbb{C})$, hence is $\mathbb{R}$, so $B$ is central simple over $\mathbb{R}$. By Wedderburn $B\cong M_k(D)$ with $D$ a finite-dimensional real division algebra, and by Frobenius $D$ is $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$; centrality excludes $\mathbb{C}$, whose centre is $\mathbb{C}$ and not $\mathbb{R}$. So $D$ is $\mathbb{R}$ or $\mathbb{H}$, and the dimension condition $k^2\dim_{\mathbb{R}}D=64$ gives $(k,D)=(8,\mathbb{R})$ or $(4,\mathbb{H})$. Both occur, since $M_8(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$ and $M_4(\mathbb{H})\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$, the second by the identification $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ followed by $M_4(M_2(\mathbb{C}))\cong M_8(\mathbb{C})$. ∎
+
+**The trace-form signatures.** On $M_8(\mathbb{R})$ the trace form is $(X,Y)\mapsto\operatorname{tr}(XY)$, with thirty-six positive directions from the symmetric matrices and twenty-eight negative ones from the skew matrices, hence $(36,28)$. On $M_4(\mathbb{H})$ the trace is quaternion-valued and the real form is $(X,Y)\mapsto\operatorname{Re}\operatorname{tr}(XY)$, equivalently $\operatorname{tr}(X^{*}Y)$; it has twenty-eight positive directions from the Hermitian matrices, of real dimension $4+4\cdot6=28$, and thirty-six negative ones from the skew-Hermitian, hence $(28,36)$. Both computations are the computation of the companion article at $n=8$ and at $n=4$ quaternionic.
+
+**Remark (the two forms are the two ends of one construction).** The complexification of the real operator algebra $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ is $M_8(\mathbb{C})$, and one of its two real forms is the algebra one started from. The other, $M_4(\mathbb{H})$, is the quaternionic form of the same complex algebra, and it is the operator-level analogue of the passage from $M_4(\mathbb{R})$ to $M_2(\mathbb{H})$ inside $M_4(\mathbb{C})$, one size up. The analogy is exact: $M_4(\mathbb{C})$ has the real forms $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$; $M_8(\mathbb{C})$ has the real forms $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$; in both cases the two are separated by the trace-form signature, and in both cases the quaternionic form is the one whose matrices are Hermitian in the quaternionic sense.
+
+**Remark (the two complexifications are not to be confused).** The two classifications are different objects and their counts are unrelated.
+
+| item | $\mathcal{E}^{\oplus 2}_{\mathbb{C}}=M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ | $\mathcal{E}_{\mathbb{R},\mathbb{C}}=M_8(\mathbb{C})$ |
+|---|---|---|
+| complex dimension | $32$ | $64$ |
+| simple? | no, two simple ideals | yes |
+| centre | $\mathbb{C}\oplus\mathbb{C}$ | $\mathbb{C}$ |
+| real algebras | $4$ | $2$ |
+| the list | the four of the fourth section | $M_8(\mathbb{R})$, $M_4(\mathbb{H})$ |
+
+The number four and the number two are not related by any arithmetic of the problem. The first object is a sum of two simple algebras of dimension sixteen, and its real structures either preserve or exchange the two summands; the second is simple, and its real forms come from Frobenius. The two classifications happen in different sections, use different methods, and produce different lists.
+
+**Warning (two classifications, kept apart).** The real algebras of $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ are $M_4(\mathbb{R})^{\oplus2}$, $M_2(\mathbb{H})^{\oplus2}$, $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ and $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$. The real forms of $M_8(\mathbb{C})$ are $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$. The second list is not a sublist of the first, not a quotient of it, and not a refinement of it, and no relation between the two is asserted anywhere in this article. A reader who carries $M_4(\mathbb{H})$ from the fifth section into the fourth, or $M_4(\mathbb{R})^{\oplus2}$ from the fourth into the fifth, has changed the object. The single honest link between the two is the inclusion of the second section, $\mathcal{E}^{\oplus2}_{\mathbb{C}}\subset\mathcal{E}_{\mathbb{R},\mathbb{C}}$ as a subalgebra of half the dimension, and that link is a link between the **complexifications**, not between their real forms.
+
+## The Biquaternion Base in the Complexifications
+
+**The regular families, complexified.** The left and right regular images are complex subalgebras of $\mathcal{E}_{\mathbb{C}}$ isomorphic to $M_2(\mathbb{C})$, of complex dimension four each, and
+
+$$
+L(\mathbb{B})\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C}),
+$$
+
+of complex dimension eight, and likewise for $R(\mathbb{B})$. The ground field is $\mathbb{R}$ and the direct sum is the result.
+
+**Proposition (the ground field changes the answer).** For every $n\ge1$,
+
+$$
+M_n(\mathbb{C})\otimes_{\mathbb{R}}\mathbb{C}\cong M_n(\mathbb{C})\oplus M_n(\mathbb{C}),
+\qquad
+M_n(\mathbb{C})\otimes_{\mathbb{C}}\mathbb{C}=M_n(\mathbb{C}).
+$$
+
+*Proof.* The second identity is the unit of the tensor. The first is the proposition of the second section at $n=4$; the same construction, with $\Phi(A\otimes z)=(zA,\bar zA)$ and the identification of the conjugate summand with $M_n(\mathbb{C})$ by the transpose, proves it at every $n$, the two copies being the two eigenspaces of $J\otimes i$. ∎
+
+**Remark (the correction of the source paper's §4.3).** The source paper writes $L(\mathbb{B})\otimes\mathbb{C}\cong\mathfrak{gl}(2,\mathbb{C})\oplus\mathfrak{gl}(2,\mathbb{C})$ without a ground field. Over $\mathbb{R}$ the statement is true up to one slip: the algebra is $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, which has the same underlying vector space as $\mathfrak{gl}(2,\mathbb{C})\oplus\mathfrak{gl}(2,\mathbb{C})$ and is not the same object, since one is an associative algebra and the other the Lie algebra of that associative algebra. Over $\mathbb{C}$ the statement is false: the tensor is $M_2(\mathbb{C})$, of complex dimension four, and the direct sum never appears. The two errors are of different kinds, a missing ground field and a missing distinction between an algebra and its Lie algebra, and both are corrected in every display of this article.
+
+**The base subspaces, and which of them are complex.** The left multiplication is complex-linear, $L_{iX}=iL_X$, so a subspace of $\mathbb{B}$ closed under multiplication by $i$ has an image closed under multiplication by $i$. Two of the six remarkable subspaces are closed: the centre $\mathbb{B}_C=\mathbb{C}e_t$, of real dimension two and complex dimension one, and the pure part $\mathbb{B}_V$, of real dimension six and complex dimension three. The other four are not: $\mathbb{B}_H=\mathbb{H}$ is the real quaternions, and $i\mathbb{B}_H=\mathbb{B}_{iH}$ is a different four-dimensional space, so multiplication by the scalar carries the subspace out of itself. Their images $L(\mathbb{B}_H)$, $L(\mathbb{B}_{iH})$, $L(\mathbb{B}_\Psi)$ and $L(\mathbb{B}_\Phi)$ are therefore **real** subspaces of $\mathcal{E}_{\mathbb{C}}$, of real dimension four each, and they are not complex subspaces of complex dimension two. The real dimension alone would not reveal the difference, since a complex subspace of complex dimension two is a real subspace of real dimension four; it is the invariance of the subspace that decides, not its size. The table keeps the two notions in separate columns, and it records the statuses of the companion article, which are real-algebra statuses and are preserved by scalar extension.
+
+| subspace | $\dim_{\mathbb{R}}$ in $\mathcal{E}_{\mathbb{C}}$ | complex subspace? | $\dim_{\mathbb{C}}$ after $\otimes_{\mathbb{R}}\mathbb{C}$ | status |
+|---|---|---|---|---|
+| $L(\mathbb{B})$ | $8$ | yes | $8$ | subalgebra, $\cong M_2(\mathbb{C})^{\oplus 2}$ |
+| $L(\mathbb{B}_C)$ | $2$ | yes, $\mathbb{C}\mathrm{I}_4$ | $2$ | subalgebra, the scalars |
+| $L(\mathbb{B}_V)$ | $6$ | yes | $6$ | Lie subalgebra, not associative |
+| $L(\mathbb{B}_H)$ | $4$ | no | $4$ | subalgebra |
+| $L(\mathbb{B}_{iH})$ | $4$ | no | $4$ | neither |
+| $L(\mathbb{B}_{\Psi})$ | $4$ | no | $4$ | neither |
+| $L(\mathbb{B}_{\Phi})$ | $4$ | no | $4$ | Lie subalgebra |
+| $L(\mathbb{B})+R(\mathbb{B})$ | $14$ | yes | $14$ | subalgebra |
+| $\mathfrak{m}$ | $18$ | yes | $18$ | neither |
+
+**Remark (why the last column repeats the second).** A real vector space of dimension $d$ complexifies to a complex space of complex dimension $d$, so the fourth column of the table repeats the second, read over $\mathbb{C}$, and the entries do not double. What doubles is the **real** dimension of the ambient algebra, from thirty-two to sixty-four: the subspace $L(\mathbb{B}_H)$ sits in $\mathcal{E}_{\mathbb{C}}$ as four real dimensions and in $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ as four complex ones, and the apparent stability of the numbers is the statement that scalar extension trades a real direction for a complex one. For the subspaces that were already complex the same rule holds with $d=2c$, and the complexified object is $W\oplus\bar W$: the scalars $\mathbb{C}\mathrm{I}_4$ complexify to the two-dimensional space of pairs $(\lambda\mathrm{I}_4,\mu\mathrm{I}_4)$.
+
+**The dimension count, verified.** The complement of the base is the complexified complement, and the two counts agree. In $\mathcal{E}_{\mathbb{C}}$ one has $\dim_{\mathbb{R}}(L+R)=8+8-2=14$, the intersection being the scalars $\mathbb{C}\mathrm{I}_4$ of real dimension two, and $\dim_{\mathbb{R}}\mathfrak{m}=32-14=18$. Scalar extension turns these two real dimensions into the complex dimensions of the complexification,
+
+$$
+14+18=32=\dim_{\mathbb{C}}\mathcal{E}^{\oplus 2}_{\mathbb{C}},
+$$
+
+and the complement is a complement because the tensor product of a direct sum decomposition with $\mathbb{C}$ is a direct sum decomposition.
+
+**The two-sided span, complexified.** The two-sided span of an element form $A_0$ is $\mathcal{E}(A_0)\cong A_0\otimes_{\mathbb{R}}A_0^{\mathrm{op}}\cong M_4(\mathbb{R})$, a real algebra of real dimension sixteen, by the companion article. Its complexification is therefore
+
+$$
+\mathcal{E}(A_0)\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})=\mathcal{E}_{\mathbb{C}},
+$$
+
+of complex dimension sixteen. This is **not** $\mathcal{E}^{\oplus2}_{\mathbb{C}}$, which has complex dimension thirty-two, and the two differ in the way the next remark states.
+
+**Remark (one copy against two).** The complexification of a real form of $\mathcal{E}_{\mathbb{C}}$ has complex dimension sixteen, the complex dimension of $\mathcal{E}_{\mathbb{C}}$ itself; the complexification of $\mathcal{E}_{\mathbb{C}}$ read over the reals has complex dimension thirty-two, twice as much. The ratio is the ratio of the real dimensions of the two sources, sixteen against thirty-two, and it is not an accident: $A\otimes_{\mathbb{R}}\mathbb{C}$ always has complex dimension $\dim_{\mathbb{R}}A$. The rule to remember is that **the complexification of a real form is one copy of the complex algebra, and the complexification of the complex algebra read over the reals is two copies**. The first is a change of ground field upward from a real form; the second is the same move from an algebra that already carries a complex structure, and it produces the extra copy.
+
+**The quaternionic operator form, complexified.** The quaternionic form is $\mathcal{E}_{\mathbb{H}}=\operatorname{End}_{\mathbb{H}}(\mathbb{B})\cong M_2(\mathbb{H})$, of real dimension sixteen, by the umbrella article. Then
+
+$$
+\mathcal{E}_{\mathbb{H}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{H})\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})=\mathcal{E}_{\mathbb{C}},
+$$
+
+by $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})$ and $M_2(M_2(\mathbb{C}))\cong M_4(\mathbb{C})$. The two operator real forms therefore have the **same** complexification, and it is $\mathcal{E}_{\mathbb{C}}$: the split form and the quaternionic form are two real forms of one complex algebra, which is the umbrella article's theorem restated in the language of tensor products.
+
+**Proposition (both real forms complexify to the same algebra).** $\mathcal{E}(A_0)\otimes_{\mathbb{R}}\mathbb{C}\cong\mathcal{E}_{\mathbb{H}}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathcal{E}_{\mathbb{C}}$.
+
+*Proof.* The first is $M_4(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})$; the second is $M_2(\mathbb{H})\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})$. ∎
+
+**Warning (the complexified two-sided span is not the complexification).** The two objects $\mathcal{E}(A_0)\otimes_{\mathbb{R}}\mathbb{C}=M_4(\mathbb{C})$ and $\mathcal{E}^{\oplus2}_{\mathbb{C}}=M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ are different: different dimensions, sixteen against thirty-two; different centres, $\mathbb{C}$ against $\mathbb{C}\oplus\mathbb{C}$; different numbers of ideals, two against four; different real-form lattices, two real forms against four real algebras. The first is the scalar extension of one real form of the operator algebra; the second is the scalar extension of the complex operator algebra itself. A reader who identifies them will also identify their real forms, and will then believe that $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ is a real form of $M_4(\mathbb{C})$, which it is not.
+
+## The Diagonal Correspondence
+
+**The two maps.** Let $A_0$ be a real form of $\mathcal{E}_{\mathbb{C}}$, that is $M_4(\mathbb{R})$ or $M_2(\mathbb{H})$. There are two natural real embeddings of $A_0$ into the complexification, and they are different.
+
+The **scalar-extension** map is the restriction of $\Phi$:
+
+$$
+\iota_{\mathrm{sc}}:A_0\longrightarrow\mathcal{E}^{\oplus 2}_{\mathbb{C}},\qquad A\longmapsto(A,\bar A),
+$$
+
+whose image lies in the slanted form, by the second section. The **diagonal** map is
+
+$$
+\iota_{\mathrm{d}}:A_0\longrightarrow A_0\oplus A_0\subset\mathcal{E}^{\oplus 2}_{\mathbb{C}},\qquad A\longmapsto(A,A).
+$$
+
+Both are injective homomorphisms of real algebras and both have image of real dimension sixteen. The first lies in the fixed set of the exchange structure, the second in the fixed set of $\tau_{\mathbb{R}}\times\tau_{\mathbb{R}}$ when $A_0=M_4(\mathbb{R})$ and of $\tau_{\mathbb{H}}\times\tau_{\mathbb{H}}$ when $A_0=M_2(\mathbb{H})$. For $A_0=M_4(\mathbb{R})$ the two maps **coincide**, because $\bar A=A$ for real $A$ and hence $(A,\bar A)=(A,A)$: the diagonal of the real form is already slanted. They are distinct for $A_0=M_2(\mathbb{H})$, where $\bar A=J_0^{-1}AJ_0$ differs from $A$ in general, so that $(A,\bar A)$ is not $(A,A)$. The coincidence is the reason the two constructions agree on the split form and differ on the quaternionic one, and it is not a degeneration of either map.
+
+**Proposition (both maps are embeddings of real forms).** For each real form $A_0$ of $\mathcal{E}_{\mathbb{C}}$, the maps $\iota_{\mathrm{sc}}$ and $\iota_{\mathrm{d}}$ are injective homomorphisms of real algebras, and their images are real subalgebras of the complexification isomorphic to $A_0$.
+
+*Proof.* Injectivity is clear for both. For multiplicativity of $\iota_{\mathrm{sc}}$: $\overline{AB}=\bar A\bar B$, so $(AB,\overline{AB})=(A,\bar A)(B,\bar B)$. For $\iota_{\mathrm{d}}$ it is the multiplicativity of the product in a direct sum. The dimension of each image is sixteen because the maps are injective. ∎
+
+**The correspondence, at the level of algebras.** The map
+
+$$
+\{\text{real forms of }\mathcal{E}_{\mathbb{C}}\}\longrightarrow\{\text{real algebras of }\mathcal{E}^{\oplus 2}_{\mathbb{C}}\},\qquad A_0\longmapsto A_0\oplus A_0
+$$
+
+sends $M_4(\mathbb{R})$ to $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$ and $M_2(\mathbb{H})$ to $M_2(\mathbb{H})\oplus M_2(\mathbb{H})$. It is **injective**, since $A_0$ is recovered from $A_0\oplus A_0$ as either summand, and it is **not surjective**: its image consists of two of the four real algebras of the fourth section. The other two, the mixed $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ and the slanted $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$, are not of the form $A_0\oplus A_0$ for any real form of $\mathcal{E}_{\mathbb{C}}$, and the reasons are different.
+
+**Remark (why the mixed and the slanted forms are not images).** The mixed form is a sum of two simple ideals that are not isomorphic to one another, and $A_0\oplus A_0$ is a sum of two isomorphic ones; so no $A_0$ produces it. The slanted form is simple, and $A_0\oplus A_0$ is never simple; so no $A_0$ produces it either. The two exclusions have two different sources, the first a match of summand types and the second a count of ideals.
+
+**Remark (the correspondence is two into four, and it is not a classification).** Two real forms, four real algebras, and an injection that is not a bijection. The correspondence is therefore not a classification of the real algebras of the complexification; it is a statement about which of them come from a real form of the complex algebra by the diagonal construction. The mixed form comes from using the two real forms **separately**, one in each slot, and the slanted form comes from the **exchange** real structure, and neither is a diagonal object.
+
+**Warning (the diagonal embedding is not the two-sided span).** The diagonal map $A\mapsto(A,A)$ and the two-sided span of the companion article are different constructions, and the difference is not a detail. The diagonal map starts from a **real form** of $\mathcal{E}_{\mathbb{C}}$, that is from a subalgebra of real dimension sixteen, and lands in the complexification. The two-sided span starts from an **element form** $A_0\subset\mathbb{B}$ of real dimension four and produces the real algebra $\mathcal{E}(A_0)\cong A_0\otimes_{\mathbb{R}}A_0^{\mathrm{op}}\cong M_4(\mathbb{R})$, which is a subalgebra of $\mathcal{E}_{\mathbb{C}}$ and not of the complexification. The first is a change of scalars; the second is a tensor square. They are related in one way only: the two-sided span is the target of the diagonal map for the split real form, since both give $M_4(\mathbb{R})$. Everything else about them is different, including the level, the dimension and the number of objects involved.
+
+## Associative Subalgebras of the Complexified Algebras
+
+**The three tiers, and the honest statement.** The complexified objects have complex dimensions thirty-two and sixty-four, and their subalgebra lattices are larger than those of the real operator forms of the companion article, not smaller. This article does not classify them, and the reason is not laziness: a classification would have to enumerate the unital subalgebras of $M_8(\mathbb{R})$, and that enumeration is not known in exhaustive form and would not be readable if it were. What the article does is the three tiers of the companion article. First a **structural theorem** for each layer, which says what form a subalgebra takes without listing them. Second a **master table of the distinguished members**, the base, the maximals, the parabolics and their Levis, with dimensions and signatures. Third an **explicit statement of the gap**: what is listed is a sample of a much larger set, and the sample is chosen by the two criteria that matter in this series, containment of the biquaternion base and maximality.
+
+**Theorem (Goursat, for algebras).** Let $A_1,A_2$ be unital algebras over a field, let $S\subset A_1\oplus A_2$ be a unital subalgebra, and let $p_i$ be the two projections. Put $S_i=p_i(S)$ and
+
+$$
+J_1=\{a\in S_1:(a,0)\in S\},\qquad J_2=\{b\in S_2:(0,b)\in S\}.
+$$
+
+Then $J_i$ is a two-sided ideal of $S_i$, and $S$ is the fibre product of $S_1$ and $S_2$ over an isomorphism $S_1/J_1\cong S_2/J_2$. Conversely every such triple gives a unital subalgebra.
+
+*Proof.* The set $J_1$ is the kernel of the restriction of $p_2$ to $S$, read in the first slot, so it is an ideal of $S_1$; likewise $J_2$. The map $S_1/J_1\to S_2/J_2$, $a+J_1\mapsto b+J_2$ for $(a,b)\in S$, is well defined and injective because $(a,b),(a,b')\in S$ forces $(0,b-b')\in S$, and it is surjective by the definition of $S_2$. Then $S=\{(a,b):a+J_1\mapsto b+J_2\}$, which is the fibre product. The converse is a direct check. ∎
+
+**The three families.** The theorem gives three families, and they exhaust the possibilities.
+
+- **Products** $S=S_1\oplus S_2$, the case $J_1=S_1$ and $J_2=S_2$. No relation between the slots.
+- **Graphs** $S=\{(a,\varphi(a))\}$, the case $J_1=0=J_2$ and $\varphi:S_1\to S_2$ an isomorphism; when $S_1=S_2$ and $\varphi=\mathrm{id}$ this is the diagonal.
+- **Fibre products** over a proper common quotient, the case in which the $J_i$ are nonzero and at least one is proper. This is the family with no counterpart in a simple algebra.
+
+**The count of the product family.** For $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$ the product family is indexed by the pairs of unital subalgebras of $M_4(\mathbb{R})$: at the semisimple level there are finitely many types in each slot, by the companion article, and the number of pairs of types is its square. The graph family is indexed by the isomorphisms between subalgebras of the same type, which form a single class per type. The fibre-product family is not finite, because two subalgebras can share a quotient and the quotients vary. The smallest example is inside the diagonal algebra: with $D=\mathbb{R}^4$ the diagonal subalgebra of $M_4(\mathbb{R})$ and $J\subset D$ the ideal of diagonal matrices whose last entry vanishes, the fibre product of $D$ with itself over $D/J\cong\mathbb{R}$ is the seven-dimensional algebra
+
+$$
+\{(\operatorname{diag}(a_1,a_2,a_3,a_4),\operatorname{diag}(b_1,b_2,b_3,a_4))\},
+$$
+
+which is neither the product $D\oplus D$ of dimension eight nor the diagonal of dimension four.
+
+**The same count for the quaternionic slot.** For $M_2(\mathbb{H})\oplus M_2(\mathbb{H})$ the product family is the square of the number of types of $M_2(\mathbb{H})$, and for the mixed $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ it is the product of the two numbers. In each case the complexified lattice is larger than the lattice of a single real form, and the factor is the number of types of the other slot.
+
+**The simple algebras.** For $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$ there is no Goursat decomposition, and the dictionary is the one of the companion article: a unital subalgebra $A\subset M_N(\mathbb{F})$ is a faithful module structure on $\mathbb{F}^N$, so $A$ is described by its Wedderburn factors and their multiplicities, and the semisimple types are the multisets of simple factors $M_{n_i}(D_i)$ with
+
+$$
+\sum_i m_in_id_i=N\quad\text{for }M_N(\mathbb{R}),
+\qquad
+\sum_i n_i\le N\quad\text{for }M_N(\mathbb{H}),
+$$
+
+with $d_i=\dim_{\mathbb{R}}D_i$, and the second rule the one written in the companion article. The count grows fast with $N$, and the growth is the quantitative form of the statement that the lattice of $M_8(\mathbb{R})$ is not a longer list of the same kind of thing but a different order of magnitude. This article does not quote the numbers: the enumeration is the companion article's, at $N=4$ and $N=2$, and the rules above are what one would iterate.
+
+**The distinguished associative subalgebras.** The table lists the ones this article uses, with the ambient algebra and the real dimension. "Base" marks the images of the biquaternion base, "max" marks a maximal subalgebra.
+
+| ambient | subalgebra | $\dim_{\mathbb{R}}$ | why |
+|---|---|---|---|
+| $M_4(\mathbb{R})^{\oplus 2}$ | $M_4(\mathbb{R})\oplus 0$, $0\oplus M_4(\mathbb{R})$ | $16$ | the two ideals |
+| $M_4(\mathbb{R})^{\oplus 2}$ | diagonal $M_4(\mathbb{R})$ | $16$ | graph of the identity |
+| $M_4(\mathbb{R})^{\oplus 2}$ | $L(\mathbb{B})\oplus R(\mathbb{B})$ | $16$ | base, one copy per slot |
+| $M_4(\mathbb{R})^{\oplus 2}$ | fibre product of $\mathbb{R}^4$ over $\mathbb{R}$ | $7$ | neither product nor graph |
+| $M_2(\mathbb{H})^{\oplus 2}$ | $M_2(\mathbb{H})\oplus0$, diagonal | $16$ | ideal, graph |
+| $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ | the two summands | $16$ | ideals, non-isomorphic |
+| $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ | $M_4(\mathbb{R})$, $iM_4(\mathbb{R})$ | $16$ | the real and imaginary parts |
+| $M_8(\mathbb{R})$ | $M_4(\mathbb{C})$ | $32$ | max, the centralizer of a complex structure |
+| $M_8(\mathbb{R})$ | $M_7(\mathbb{R})\oplus\mathbb{R}$ | $50$ | max, block diagonal |
+| $M_8(\mathbb{R})$ | $M_4(\mathbb{R})\oplus M_4(\mathbb{R})$ | $32$ | max, block diagonal |
+| $M_4(\mathbb{H})$ | $M_4(\mathbb{R})$ | $16$ | the real matrices |
+| $M_4(\mathbb{H})$ | $M_2(\mathbb{H})\oplus M_2(\mathbb{H})$ | $32$ | max, block diagonal |
+| $M_4(\mathbb{H})$ | $M_3(\mathbb{H})\oplus\mathbb{H}$ | $40$ | max, block diagonal |
+
+**Remark (the two entries that carry the article).** The fourth row and the eighth are the ones that matter. The fibre product over $\mathbb{R}$ is the operator-level instance of the family that does not exist in a simple algebra: it is not a product of two subalgebras and not a graph of an isomorphism, and it is a proper subalgebra of the product, of dimension seven against eight. The eighth row, $M_4(\mathbb{C})\subset M_8(\mathbb{R})$, is maximal by the double centralizer theorem: $\mathbb{R}^8$ is $\mathbb{C}^4$ as a module over $M_4(\mathbb{C})$, of multiplicity one, so a subalgebra containing $M_4(\mathbb{C})$ is contained in its own bicommutant, which is $M_4(\mathbb{C})$.
+
+**Remark (what the reader should take from the associative layer).** That the complexified lattice is described by a theorem and not by a list, that the theorem has three families, that the third family is where the new phenomena live, and that the count of the second family is a product of the counts of the two factors. Everything else in the layer is bookkeeping on those four statements.
+
+## Lie Subalgebras of the Complexified Algebras
+
+**The complexified Lie algebras.** The Lie algebra of $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ is
+
+$$
+\mathfrak{gl}(4,\mathbb{C})\oplus\mathfrak{gl}(4,\mathbb{C}),
+\qquad\dim_{\mathbb{C}}=32,
+$$
+
+and the Lie algebra of $\mathcal{E}_{\mathbb{R},\mathbb{C}}$ is $\mathfrak{gl}(8,\mathbb{C})$, of complex dimension sixty-four. Their real forms, restricted to the associative list of the fourth and fifth sections, are
+
+$$
+\mathfrak{gl}(4,\mathbb{R})^{\oplus 2},\qquad
+\mathfrak{gl}(2,\mathbb{H})^{\oplus 2},\qquad
+\mathfrak{gl}(4,\mathbb{R})\oplus\mathfrak{gl}(2,\mathbb{H}),\qquad
+\mathfrak{gl}(4,\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}},
+$$
+
+for the first, and $\mathfrak{gl}(8,\mathbb{R})$, $\mathfrak{gl}(4,\mathbb{H})$ for the second.
+
+**Remark (more real forms at Lie level than at associative level).** The list above is the list of the real forms of the two complex Lie algebras that close under the matrix product. The complex Lie algebra $\mathfrak{gl}(4,\mathbb{C})$ has more real forms than that — the umbrella article counts six, of which the compact $\mathfrak{u}(4)$ is one — and the extra ones are not the Lie algebra of any real form of the associative algebra, because the product of two skew-Hermitian matrices is skew-Hermitian only when they commute. The same happens one size up, at $\mathfrak{gl}(8,\mathbb{C})$. The Lie-level classification is therefore strictly finer than the associative one, and this article uses the associative list, adding the compact forms where they occur as subalgebras.
+
+**Goursat in the Lie layer.** The theorem of the eighth section holds verbatim for Lie algebras, with "two-sided ideal" replaced by "Lie ideal": a Lie subalgebra $S\subset\mathfrak g_1\oplus\mathfrak g_2$ is a fibre product of its two projections over an isomorphism of their quotients. The three families are again products, graphs and fibre products, and the graph of a Lie algebra isomorphism between two coinciding subalgebras is a diagonal.
+
+**The maximals of the complexified sums.** For $\mathfrak{gl}(4,\mathbb{R})\oplus\mathfrak{gl}(4,\mathbb{R})$ the maximal subalgebras are of three kinds:
+
+- the products $\mathfrak m_1\oplus\mathfrak{gl}(4,\mathbb{R})$ and $\mathfrak{gl}(4,\mathbb{R})\oplus\mathfrak m_2$ with $\mathfrak m_i$ maximal in $\mathfrak{gl}(4,\mathbb{R})$, of dimension $15+16=31$ for $\mathfrak m_i=\mathfrak{sl}(4,\mathbb{R})$;
+- the graphs of the automorphisms of $\mathfrak{gl}(4,\mathbb{R})$, which include the diagonals of the whole algebra and of $\mathfrak{sl}(4,\mathbb{R})$, of dimensions $16$ and $15$;
+- the fibre products over a common quotient. The trace is a homomorphism of Lie algebras, $\mathfrak{gl}(4,\mathbb{R})\to\mathbb{R}$ with abelian target, though not of associative algebras, so the pairs $(\mathfrak g,\mathfrak h)$ with equal trace form a Lie subalgebra of dimension $31$, neither a product nor a graph. The contrast with the associative layer is exact: the condition that fails there succeeds here, and the reason is that the trace is linear and not multiplicative.
+
+**The maximals of $\mathfrak{gl}(8,\mathbb{R})$ and $\mathfrak{gl}(4,\mathbb{H})$.** Here the tool is the classification of maximal subalgebras of a classical algebra, that is Dynkin's theorem for the reductive ones and the parabolic description for the others.
+
+| ambient | subalgebra | $\dim_{\mathbb{R}}$ | kind |
+|---|---|---|---|
+| $\mathfrak{gl}(8,\mathbb{R})$ | $\mathfrak{sl}(8,\mathbb{R})$ | $63$ | reductive, max |
+| $\mathfrak{gl}(8,\mathbb{R})$ | $\mathfrak{gl}(k,\mathbb{R})\oplus\mathfrak{gl}(8-k,\mathbb{R})$ | $k^2+(8-k)^2$ | reductive, max |
+| $\mathfrak{gl}(8,\mathbb{R})$ | $\mathfrak{so}(p,8-p)$ | $28$ | reductive, max |
+| $\mathfrak{gl}(8,\mathbb{R})$ | $\mathfrak{sp}(8,\mathbb{R})$ | $36$ | reductive, max |
+| $\mathfrak{gl}(8,\mathbb{R})$ | $\mathfrak{gl}(4,\mathbb{C})$ | $32$ | reductive, max, irreducible |
+| $\mathfrak{gl}(8,\mathbb{R})$ | stabilizer of a $k$-plane | $64-k(8-k)$ | parabolic |
+| $\mathfrak{gl}(8,\mathbb{R})$ | Levi of the above | $k^2+(8-k)^2$ | reductive |
+| $\mathfrak{gl}(4,\mathbb{H})$ | $\mathfrak{sl}(4,\mathbb{H})$ | $63$ | reductive, max |
+| $\mathfrak{gl}(4,\mathbb{H})$ | $\mathfrak{gl}(k,\mathbb{H})\oplus\mathfrak{gl}(4-k,\mathbb{H})$ | $4(k^2+(4-k)^2)$ | reductive, max |
+| $\mathfrak{gl}(4,\mathbb{H})$ | $\mathfrak{sp}(p,4-p)$ | $36$ | reductive, max |
+| $\mathfrak{gl}(4,\mathbb{H})$ | stabilizer of a quaternionic $k$-plane | $64-4k(4-k)$ | parabolic |
+| $\mathfrak{gl}(4,\mathbb{H})$ | Levi of the above | $4(k^2+(4-k)^2)$ | reductive |
+
+**Remark (the parabolic dimensions, checked twice).** A parabolic is the stabilizer of a flag, and its dimension is the dimension of the whole algebra minus the dimension of the space of maps from the smaller piece to the larger. For $\mathfrak{gl}(8,\mathbb{R})$ and a $k$-plane the space of maps is $k(8-k)$ real dimensions, so the parabolic has $64-k(8-k)$, and the Levi is $\mathfrak{gl}(k)\oplus\mathfrak{gl}(8-k)$, of $k^2+(8-k)^2$. For $\mathfrak{gl}(4,\mathbb{H})$ and a quaternionic $k$-plane the space of maps is $4k(4-k)$ real dimensions, so the parabolic has $64-4k(4-k)$ and the Levi is $\mathfrak{gl}(k,\mathbb{H})\oplus\mathfrak{gl}(4-k,\mathbb{H})$, of $4(k^2+(4-k)^2)$. At $k=1$ the two parabolics are $57$ and $52$, and their Levis are $50$ and $40$; at $k=4$ the parabolic of the split case is $48$ and its Levi is $32$.
+
+**Remark (the difference between the two lists).** The two tables have the same shapes because both algebras are $\mathfrak{gl}$ of something, and they have different numbers because the division algebra changes the count of scalar directions. A $k$-plane in $\mathbb{R}^8$ costs $k(8-k)$ real dimensions, and a quaternionic $k$-plane in $\mathbb{H}^4$ costs four times as much, since each quaternionic dimension is four real ones. The ratio of four is the ratio of the dimensions of $\mathbb{H}$ and $\mathbb{R}$, and it is the only numeric difference between the two columns.
+
+**Remark (how to read these tables, and what they do not contain).** The tables list the members this series uses, and they are not the classification of the maximal subalgebras: that classification is Dynkin's, it is longer, and it contains exceptional members of which the operator algebras have none at this size but which appear in the general theorem. What the tables do give is the dimension of each member, and the dimension is what the layer needs, since a Lie algebra of dimension $d$ inside $\mathfrak{gl}(n)$ gives a Lie group of dimension $d$ inside $GL(n)$ by the Lie correspondence. The next occurrence of the group theory is in the companion article, where the groups of these subalgebras are listed; the complexified groups are the complexifications of those, in the sense of the Lie correspondence and not in the sense of the tensor product.
+
+## Jordan Subalgebras of the Complexified Algebras
+
+**The symmetric products.** Each algebra carries its Jordan structure $X\circ Y=\tfrac12(XY+YX)$, and the complexification carries the complexification of that structure. The Jordan algebra of $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ is
+
+$$
+M_4(\mathbb{C})^{+}\oplus M_4(\mathbb{C})^{+},
+$$
+
+and the Jordan algebra of $\mathcal{E}_{\mathbb{R},\mathbb{C}}$ is $M_8(\mathbb{C})^{+}$. The two are different objects for the reason of the fifth section: one is a sum of two Jordan algebras of complex dimension sixteen, the other a simple one of complex dimension sixty-four.
+
+**The real forms of the simple one.** The Jordan algebra $M_n(\mathbb{C})^{+}$ has exactly three real forms:
+
+$$
+M_n(\mathbb{R})^{+},\qquad M_n(\mathbb{H})^{+},\qquad H_n(\mathbb{C}),
+$$
+
+the third the space of complex Hermitian matrices with the symmetrized product, of real dimension $n^2$. The first two are the Jordan algebras of the two associative real forms, and the third is not the Jordan algebra of any associative real algebra of the same dimension: its real dimension is $n^2$, while an associative real form of $M_n(\mathbb{C})$ has real dimension $2n^2$. At $n=4$ this is the statement of the companion article that $H_4(\mathbb{C})$ has no associative lift; at $n=8$ it is the same statement one size up, and the form is $H_8(\mathbb{C})$, of real dimension sixty-four.
+
+**Proposition (the Jordan forms of the first complexification).** $M_4(\mathbb{C})^{+}\oplus M_4(\mathbb{C})^{+}$ has at least seven real forms: the six products of two of the three real forms of $M_4(\mathbb{C})^{+}$,
+
+$$
+M_4(\mathbb{R})^{+}\oplus M_4(\mathbb{R})^{+},\quad
+M_2(\mathbb{H})^{+}\oplus M_2(\mathbb{H})^{+},\quad
+H_4(\mathbb{C})\oplus H_4(\mathbb{C}),
+$$
+
+$$
+M_4(\mathbb{R})^{+}\oplus M_2(\mathbb{H})^{+},\quad
+M_4(\mathbb{R})^{+}\oplus H_4(\mathbb{C}),\quad
+M_2(\mathbb{H})^{+}\oplus H_4(\mathbb{C}),
+$$
+
+and the slanted form $\{(X,\bar X)\}$, which is the realification of $M_4(\mathbb{C})^{+}$ and is distinct from all six.
+
+*Proof.* Each product of two real forms is a real form of the product, by the additivity of the tensor product over $\mathbb{R}$, and the six are pairwise non-isomorphic: the multiset of factors separates them, the three factors being of real dimension sixteen each and pairwise non-isomorphic as Jordan algebras, $H_4(\mathbb{C})$ being separated from the other two by the absence of an associative lift. The slanted form is the fixed set of the exchange real structure, of real dimension thirty-two, and it is not a product, since the exchange structure does not preserve the summands. ∎
+
+**Remark (more Jordan forms than associative ones).** The associative algebra $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ has four real algebras, and its Jordan algebra has at least seven real forms. The excess is the excess of the third form: at each slot there are three Jordan real forms against two associative ones, so the products give $3^2=9$ ordered pairs, hence six unordered products, against the four of the associative layer, and the slanted form adds one more. The Jordan layer is therefore not determined by the associative layer, and the sentence has a precise meaning: two of the seven Jordan forms are not the Jordan algebra of any of the four real algebras.
+
+**Remark (why the count is stated as a lower bound).** The proposition exhibits seven forms and does not claim that there are no others. A full count would have to run the descent of [Real Forms and the Descent of an Algebra](real-forms-and-the-descent-of-an-algebra.html) in the Jordan category, where the automorphism group is the group of Jordan automorphisms and the cocycle computation is not the one of the associative case, and this article does not do it. The number seven is what the two constructions of this section produce, the product construction and the exchange construction, and no claim is made that it is final.
+
+**The distinguished Jordan subalgebras.** The table lists the ones this article uses, with the ambient algebra and the real dimension.
+
+| ambient | subalgebra | $\dim_{\mathbb{R}}$ | note |
+|---|---|---|---|
+| $M_4(\mathbb{R})^{+}$ | $H_4(\mathbb{R})$ | $10$ | max, real symmetric |
+| $M_2(\mathbb{H})^{+}$ | $H_2(\mathbb{H})$ | $6$ | max, quaternionic Hermitian |
+| $M_4(\mathbb{C})^{+}$ | $H_4(\mathbb{C})$ | $16$ | no associative lift |
+| $M_4(\mathbb{C})^{+}$ | $L(\mathbb{B}_{\Psi})\otimes_{\mathbb{R}}\mathbb{C}$ | $8$ | subspace, not a subalgebra |
+| $M_8(\mathbb{C})^{+}$ | $H_8(\mathbb{C})$ | $64$ | no associative lift |
+| $M_8(\mathbb{R})^{+}$ | $H_8(\mathbb{R})$ | $36$ | max, real symmetric |
+
+**Remark (the Hermitian spaces, complexified).** The Hermitian space $H_4(\mathbb{C})$ is a real form of $M_4(\mathbb{C})^{+}$ and is not a complex subspace of $M_4(\mathbb{C})$: it has real dimension sixteen and is not closed under multiplication by $i$, since $i$ times a Hermitian matrix is skew-Hermitian. Its relation to the complexification is the relation of a real form, $H_4(\mathbb{C})\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})^{+}$, by the decomposition of a complex matrix into Hermitian and skew-Hermitian parts. The same holds at $n=8$. The biquaternion shadow $L(\mathbb{B}_{\Psi})\otimes_{\mathbb{R}}\mathbb{C}$ is a complex subspace of complex dimension four inside $H_4(\mathbb{C})\otimes_{\mathbb{R}}\mathbb{C}$, and it is a subspace and not a Jordan subalgebra, as at the real level.
+
+**Warning (the Jordan layer is larger than the associative one).** The four real algebras of $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ and the two real forms of $\mathcal{E}_{\mathbb{R},\mathbb{C}}$ are the associative classification. The Jordan classification has more members: seven at least for the first complexification, three for $M_8(\mathbb{C})^{+}$, and in each case one member, $H_n(\mathbb{C})$, which is the Jordan algebra of no associative real algebra. A reader who infers the Jordan forms from the associative ones will miss exactly that member, at every size.
+
+## Killing Forms and Signatures
+
+**Two forms, and they are not the same form.** Every associative algebra here carries the symmetric bilinear form $(X,Y)\mapsto\operatorname{tr}(XY)$ read in the appropriate sense, real, complex or quaternionic, and every Lie algebra carries the Killing form $K(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$. The two agree on a semisimple algebra up to a scalar and differ on an algebra with a centre, and the difference is exactly the centre: the trace form is nondegenerate on $\mathfrak{gl}(n,\mathbb{F})$, the Killing form has the centre in its radical. This section computes both, and it keeps them apart, because the two have different signatures and the difference is the subject of one of the remarks below.
+
+**The formulas.** For $\mathbb{F}=\mathbb{R}$ or $\mathbb{C}$,
+
+$$
+K_{\mathfrak{gl}(n,\mathbb{F})}(X,Y)=2n\operatorname{Re}\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)
+$$
+
+with the second term read in $\mathbb{F}$, and for the quaternionic case the same formula with $2n=4m$ at $m$ quaternionic size. At $n=2$ this is the formula of the element-level article, $K=4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$, and at $n=4$ quaternionic and $n=8$ real it is the formula of the companion article.
+
+**Proposition (the centre is null and orthogonal to everything).** On $\mathfrak{gl}(n,\mathbb{F})$ the identity direction is isotropic and orthogonal to the whole algebra: $K(\mathrm{I},\mathrm{I})=0$ and $K(\mathrm{I},X)=0$ for every $X$. On the traceless part, $K$ is $2n$ times the trace form.
+
+*Proof.* $\operatorname{ad}_{\mathrm{I}}=0$, so $K(\mathrm{I},X)=0$ for every $X$ and in particular $K(\mathrm{I},\mathrm{I})=0$. With $\operatorname{tr}X=\operatorname{tr}Y=0$ the formula gives $K(X,Y)=2n\operatorname{Re}\operatorname{tr}(XY)$. ∎
+
+**Remark (what follows for the signature).** The Killing form of $\mathfrak{gl}(n,\mathbb{F})$ is therefore degenerate, of radical one, and its signature is the signature of $2n$ times the trace form on the traceless hyperplane. Two consequences. The Killing form of $\mathfrak{gl}(n,\mathbb{F})$ has no signature in the strict sense, only a signature on the semisimple part plus a null line, and a table that reports a single pair of numbers for it is reporting the trace form or the restriction without saying which. And the rank of the Killing form is $\dim\mathfrak{gl}-1=n^2-1$, not $n^2$.
+
+**The forms on the factors.** The table gives both forms, with the signature of the trace form and, for the Killing form, the signature on the traceless part and the dimension of the radical. Every entry is computed from the structure constants, and the computation reproduces the element-level values at $n=2$.
+
+| algebra | $\dim_{\mathbb{R}}$ | trace form | Killing form on the traceless part | radical |
+|---|---|---|---|---|
+| $\mathfrak{gl}(4,\mathbb{R})$ | $16$ | $(10,6)$ | $(9,6)$ | $1$ |
+| $\mathfrak{gl}(2,\mathbb{H})$ | $16$ | $(6,10)$ | $(5,10)$ | $1$ |
+| $\mathfrak{u}(4)$ | $16$ | $(0,16)$ | $(0,15)$ | $1$ |
+| $\mathfrak{gl}(8,\mathbb{R})$ | $64$ | $(36,28)$ | $(35,28)$ | $1$ |
+| $\mathfrak{gl}(4,\mathbb{H})$ | $64$ | $(28,36)$ | $(27,36)$ | $1$ |
+| $\mathfrak{u}(8)$ | $64$ | $(0,64)$ | $(0,63)$ | $1$ |
+
+**Reading the table.** The trace form of the split form has $p=n(n+1)/2$ positive directions, from the symmetric matrices, and $n(n-1)/2$ negative ones, from the skew matrices: at $n=4$ this is $10+6=16$, at $n=8$ it is $36+28=64$. The quaternionic form has the two counts exchanged, because the Hermitian and the skew-Hermitian matrices exchange roles, so $(6,10)$ at $m=2$ and $(28,36)$ at $m=4$. The compact form is negative definite. Each entry of the Killing column is the corresponding trace entry with one direction removed, and that direction is the identity: null for $K$, and definite for the trace form, positive in the split and the quaternionic cases and negative in the compact one. The check $9+6=15$, $5+10=15$, $35+28=63$, $27+36=63$ confirms the count, and $(0,15)$ against $(0,16)$, $(0,63)$ against $(0,64)$ confirms the compact case.
+
+**The forms on the sums.** For a direct sum $K$ is the sum of the summands and the trace form is the sum of the summands, so both tables add. The radicals add too, and the sum has a two-dimensional radical. The last row of the table is not a sum and is listed for comparison: its algebra is the realification of $M_4(\mathbb{C})$, whose semisimple part is $\mathfrak{sl}(4,\mathbb{C})_{\mathbb{R}}$ and whose radical is the two real dimensions of the centre.
+
+| algebra | $\dim_{\mathbb{R}}$ | trace form | Killing form on the semisimple part | radical |
+|---|---|---|---|---|
+| $M_4(\mathbb{R})^{\oplus 2}$ | $32$ | $(20,12)$ | $(18,12)$ | $2$ |
+| $M_2(\mathbb{H})^{\oplus 2}$ | $32$ | $(12,20)$ | $(10,20)$ | $2$ |
+| $M_4(\mathbb{R})\oplus M_2(\mathbb{H})$ | $32$ | $(16,16)$ | $(14,16)$ | $2$ |
+| $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ | $32$ | $(16,16)$ | $(15,15)$ | $2$ |
+
+**Proposition (the Killing form of a direct sum is the sum).** $K_{\mathfrak g\oplus\mathfrak h}=K_{\mathfrak g}\oplus K_{\mathfrak h}$, so the signatures add and the radicals add.
+
+*Proof.* The bracket in a direct sum is componentwise, so $\operatorname{ad}_{(X_1,X_2)}$ is the block diagonal operator $\operatorname{ad}_{X_1}\oplus\operatorname{ad}_{X_2}$, and the trace of its square is the sum of the traces of the squares. ∎
+
+**Remark (the slanted signature, and the rule that does not hold).** The slanted form has Killing signature $(15,15)$. The tempting computation is to double the signature $(9,6)$ of the split form, which would give $(18,12)$, and it is wrong: the correct rule for the realification is that the Killing form of a complex algebra read over the reals is twice the real part of the complex form,
+$$
+K_{\mathbb{R}}(X,Y)=2\operatorname{Re}K_{\mathbb{C}}(X,Y),
+$$
+because $\operatorname{ad}_X^{\mathbb{R}}$ is the realification of the complex operator $\operatorname{ad}_X^{\mathbb{C}}$, and the trace of the realification of a complex operator is twice the real part of its trace. So the realification keeps neither the split signature nor a doubling of it: on $\mathfrak{sl}(4,\mathbb{C})_{\mathbb{R}}$ the Cartan decomposition is $\mathfrak{su}(4)\oplus i\,\mathfrak{su}(4)$, of fifteen plus fifteen real dimensions, and $K_{\mathbb{R}}$ is negative definite on the first summand and, by complex bilinearity, positive definite on the second, since $K_{\mathbb{R}}(iX,iY)=-K_{\mathbb{R}}(X,Y)$. Hence $(15,15)$. There is no arithmetic rule that turns the signature of one real form of a complex algebra into that of another: the split form $\mathfrak{sl}(4,\mathbb{R})$ has $(9,6)$ and the realification has $(15,15)$, and at the first size $\mathfrak{sl}(2,\mathbb{R})$ has $(2,1)$ while $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(3,1)$ has $(3,3)$. What does double is the signature of a **direct sum**, $K_{\mathfrak g\oplus\mathfrak h}=K_{\mathfrak g}\oplus K_{\mathfrak h}$, and that is the only doubling in the table: $(18,12)=2\times(9,6)$ for the split sum and $(10,20)=2\times(5,10)$ for the quaternionic one.
+
+**Remark (the pair of forms separates the four algebras).** Reading the last table column by column, the Killing form separates all four entries, $(18,12)$, $(10,20)$, $(14,16)$, $(15,15)$, while the trace form separates only three and gives $(16,16)$ twice, for the mixed sum and for the slanted form. The coincidence is structural and not an accident of the arithmetic: the trace form of the realification is $\operatorname{Re}\operatorname{tr}(A^2)$, which is the trace form of the real matrices in the real part minus the trace form of the imaginary part, and at $n=4$ that is $(10,6)+(6,10)=(16,16)$, the signature of the mixed sum. So the trace form is an invariant that does not complete the classification, the Killing form completes it on this list, and neither is needed to tell the four apart by hand, since simplicity already separates the slanted form from the three sums.
+
+**Remark (which invariant to use).** The Killing form is the invariant of the Lie algebra: it is defined by the bracket alone, it is preserved by every automorphism, and its definiteness decides compactness. The trace form is the invariant of the operator algebra: it is defined by the product and the trace, it is the form the algebra carries from its origin, and it is the form that appears in the biquaternion base, where $\operatorname{tr}(U_1U_2)$ is the Euclidean form on the traceless part. The two are both used in this series, and mixing their signatures is the most common numerical error in the territory: the numbers $(10,6)$ and $(6,10)$ are trace-form numbers, and the Killing numbers at the same size are $(9,6)$ and $(5,10)$ with a null line.
+
+**Remark (what the signature is good for).** The signature of the Killing form decides compactness of the adjoint group, by the theorem that a connected Lie group with negative-definite Killing form is compact with finite centre. In the tables it separates the compact forms from the non-compact ones and nothing else: the split and the quaternionic forms are both non-compact, both are of rank $n^2-1$, and the difference between them is the ordering of the two entries and not their sizes. The global data, fundamental group and centre, come from the companion article and from [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html), and not from the signature.
+
+## Comparison with the Element Level
+
+**The two articles side by side.** The element-level article and this one run the same programme on objects of two sizes, and the comparison is the best check that neither has a slip. The table pairs the items.
+
+| item | element level ($\mathbb{B}$, $\dim_{\mathbb{R}}=4$) | operator level ($\mathcal{E}_{\mathbb{R}}$, $\dim_{\mathbb{R}}=64$) |
+|---|---|---|
+| complexification | $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, $\dim_{\mathbb{C}}8$ | $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, $\dim_{\mathbb{C}}32$ |
+| central idempotents | two, Peirce trivial | two, Peirce trivial |
+| real forms of the factor | $M_2(\mathbb{R})$, $M_1(\mathbb{H})=\mathbb{H}$ | $M_4(\mathbb{R})$, $M_2(\mathbb{H})$ |
+| real structures of the sum | five | five |
+| real algebras of the sum | four | four |
+| slanted form | $M_2(\mathbb{C})_{\mathbb{R}}$ | $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ |
+| trace-form signatures | $(6,2)$, $(2,6)$, $(4,4)$, $(4,4)$ | $(20,12)$, $(12,20)$, $(16,16)$, $(16,16)$ |
+| diagonal correspondence | two into four | two into four |
+| second complexification | — | $M_8(\mathbb{C})$, two real forms |
+
+**The two rows that are identical and the one that is not.** The counts of real structures, of real algebras, and of diagonal images are the same at both levels, and for a structural reason: they depend on the fact that the complexification is a sum of two simple factors with two real structures each, and not on the dimensions. The signatures are not the same, and they are not proportional either: $(10,6)$ at operator level against $(3,1)$ at element level, and $(10,6)+(6,10)=(16,16)$ against $(3,1)+(1,3)=(4,4)$. The ratio of the total dimensions is four, and the ratio of the individual entries is not constant, since $10/3$ and $6/1$ differ. The signatures are therefore genuinely new information at the operator level, and they are the reason the operator article has a section on Killing forms that the element article does not need.
+
+**The one row the element level does not have.** The second complexification exists only at operator level, because only at operator level is there a real algebra with no complex structure whose complexification is simple: $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ complexifies to $M_8(\mathbb{C})$. The element-level algebra $\mathbb{B}_{\mathbb{R}}$ is a division algebra, its complexification is a sum of two fields, and there is no second object. This is the structural novelty of the present article, and the fifth section is where it is treated.
+
+**Remark (the element level is the module, the operator level is its endomorphism ring).** The element-level algebra $\mathbb{B}$ is the module and the operator algebras are its endomorphism rings, $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, $\operatorname{End}_{\mathbb{R}}(\mathbb{B})$ and $\operatorname{End}_{\mathbb{H}}(\mathbb{B})$, by the umbrella article, and the base sits inside by left multiplication. The relation between the two levels is therefore not an analogy but a construction, and the counts coincide because the construction is functorial: left multiplication is an algebra homomorphism, so it carries a complexification to a complexification and a real structure to a real structure. What it does not carry is the dimension, and that is the whole difference.
+
+**Remark (a check by counting).** The element-level classification has five real structures and four real algebras, and the operator-level one has the same. Two independent computations agreeing at five and four is evidence that the pattern is structural rather than accidental. The evidence is not a proof of anything new; it is a check that the two articles use the same definitions. It is also a warning about what can be shared: the Jordan layer does not compare in the same way, since the element-level article counts the Jordan subalgebras of a single factor, six over $\mathbb{C}$ and eight over $\mathbb{R}$ for the split form, while the tenth section here counts the real forms of a Jordan algebra, and the two counts answer different questions.
+
+## What the Complex Form Determines and What It Does Not
+
+**Determined.** The complexification determines the following, and the list is exact.
+
+- The **dimension** and the **centre** of the algebra, and the number of its simple ideals.
+- Its **real-form lattice** up to isomorphism: two forms for $M_4(\mathbb{C})$, two for $M_8(\mathbb{C})$, and the trace-form signatures that separate them.
+- The **associative real algebras** of the complexification: four for the sum, two for the simple algebra, with the diagonal correspondence between the two lists.
+- The **Lie real forms** that arise from associative ones, and the **Killing signatures** of all of them.
+- The **Jordan real forms** arising by the product and exchange constructions, at least seven for the sum and three for the simple algebra.
+- The **structural form** of every subalgebra: Goursat's three families for a sum, the module dictionary for a simple algebra.
+
+**Not determined.** The complexification does not determine the following, and the list is exact.
+
+- The **number** of real structures. The complexification has five real structures and four real algebras, and the pair is not derivable from the dimension: $M_8(\mathbb{C})$ has two real forms and one real structure per form. The count depends on the shape of the complex algebra and not on its size. For a sum of two isomorphic simple factors with two real structures each, the preserving structures are the $2\times2=4$ pairs and the exchanging structures form one class, giving five structures and four classes; for a simple factor there are two. A larger sum would be counted the same way, from the permutations of its simple factors and the real structures of each.
+- The **full lattice of subalgebras**, in any layer. The complexification determines the form of a subalgebra, not its list.
+- The **real structure of a given real subalgebra**: an algebra $B$ with $B\otimes_{\mathbb{R}}\mathbb{C}\cong\mathcal{E}^{\oplus2}_{\mathbb{C}}$ may be any of the four, and the complexification alone does not say which. This is the same statement as the warning of the fifth section, from the other side.
+- The **group-level data**: connected components, fundamental group, and the lattice of central quotients. A complex Lie algebra determines its simply connected group and nothing else, by [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html), and the real forms determine which discrete central quotients are available.
+- The **operator interpretation**: whether a given complex subalgebra acts on $\mathbb{B}$ by left multiplication, by right multiplication, by conjugation, or by none of these. That is a question about the base, not about the complexification, and it is answered by the sixth section case by case.
+
+**Warning (the complex form does not determine the real form).** The single most common error in this territory is to read a complexification as if it named the real algebra it came from. It does not: $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ has four real algebras, and knowing the complexification tells one only that the real algebra is one of the four. The information that selects among them is the real structure, that is the conjugation, and the conjugation is extra data. The fifth section's warning and this one are the same warning, stated once for the simple case and once for the sum.
+
+## Hand-off
+
+**To the Lie groups.** The companion article, [Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra.html), carries the groups of the real subalgebras, with their centres and their quotient lattices. The complexified groups of this article are obtained from those by the Lie correspondence, not by tensoring with $\mathbb{C}$ at the group level, and the distinction is the distinction of [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html): the complexification of $\mathfrak{gl}(4,\mathbb{R})$ is $\mathfrak{gl}(4,\mathbb{C})$, and the group of $\mathfrak{gl}(4,\mathbb{C})$ is $GL(4,\mathbb{C})$, which is not $GL(4,\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}$ in any naive sense.
+
+**To the element level.** [Classification of the Complex Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-complex-structures-of-the-biquaternion-algebra.html) is the base case, and the comparison of the twelfth section is the bridge. A reader who wants the pattern in the smallest instance reads that article first; a reader who wants the operator interpretation reads the sixth section of this one.
+
+**To the umbrella.** [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html) owns the two operator algebras, the two real forms of $\mathcal{E}_{\mathbb{C}}$, the double centralizer theorem and the base. The present article uses all four and reproves none.
+
+**To the general theory.** [Real Forms of a Complex Lie Algebra](real-forms-of-a-complex-lie-algebra.html) is the general descent, of which the fourth, fifth and tenth sections are the instances; [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html) is the group theory; [Root Systems and Classification](root-systems-and-classification.html) is the general theory behind the maximal subalgebras used in the ninth section.
+
+## Summary
+
+The operator algebra has two complexifications, and they are different algebras. The first is $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, of complex dimension thirty-two, with two central idempotents, a trivial Peirce decomposition, five real structures, four real algebras, and a diagonal correspondence that is injective from two to four and not surjective. The second is $\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$, of complex dimension sixty-four, simple, with two real forms, $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$, separated by the trace-form signatures $(36,28)$ and $(28,36)$.
+
+The pattern of the element level repeats exactly in the first complexification, with $M_4$ in place of $M_2$ and with different signatures, and it does not repeat in the second, which is a new object with a new classification. The biquaternion base sits inside both, and its images keep their real dimensions when read as complex ones, since scalar extension trades a real direction for a complex one: two of them, the centre and the pure part, are complex subspaces and four are only real, and the table of the sixth section says which is which. The three layers are treated by three structural theorems, Goursat's for the sums, the module dictionary for the simple algebras, and the product and exchange constructions for the Jordan forms, each with a table of distinguished members and an explicit statement of what is not classified.
+
+The numbers are: five real structures, four real algebras, two real forms of the second complexification, at least seven Jordan real forms, the Killing signatures $(18,12)$, $(10,20)$, $(14,16)$, $(15,15)$ of the four, and the trace-form signatures $(20,12)$, $(12,20)$, $(16,16)$, $(16,16)$ for the sums and $(10,6)$, $(6,10)$, $(0,16)$ at the first size, $(36,28)$, $(28,36)$, $(0,64)$ at the second.
+
+## Summary of Notation
+
+| symbol | meaning |
+|---|---|
+| $\mathbb{B}$ | the biquaternion algebra, real dimension four |
+| $\mathcal{E}_{\mathbb{C}}$ | $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$, complex dimension sixteen |
+| $\mathcal{E}_{\mathbb{R}}$ | $\operatorname{End}_{\mathbb{R}}(\mathbb{B})\cong M_8(\mathbb{R})$, real dimension sixty-four |
+| $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ | $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, complex dimension thirty-two |
+| $\mathcal{E}_{\mathbb{R},\mathbb{C}}$ | $\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$, complex dimension sixty-four |
+| $\mathcal{E}_{\mathbb{H}}$ | $\operatorname{End}_{\mathbb{H}}(\mathbb{B})\cong M_2(\mathbb{H})$, real dimension sixteen |
+| $E_1,E_2$ | the two central idempotents $(\mathrm{I}_4,0)$, $(0,\mathrm{I}_4)$ |
+| $\tau_{\mathbb{R}},\tau_{\mathbb{H}}$ | the two real structures of $M_4(\mathbb{C})$, with fixed algebras $M_4(\mathbb{R})$, $M_2(\mathbb{H})$ |
+| $A^{\mathrm{swap}}_{\mathbb{R}}$ | the realification of a complex algebra $A$ |
+| $M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$ | the slanted form, fixed algebra of the exchange structure |
+| $\Phi$ | the real-algebra isomorphism $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\to\mathcal{E}_{\mathbb{C}}\oplus\mathcal{E}_{\mathbb{C}}$, $A\otimes z\mapsto(zA,\bar zA)$ |
+| $\iota_{\mathrm{sc}},\iota_{\mathrm{d}}$ | the scalar-extension and diagonal embeddings of a real form |
+| $L(B_j),R(B_j)$ | the left and right multiplication images of the base subspaces |
+| $\mathfrak{m}$ | the complement of $L(\mathbb{B})+R(\mathbb{B})$ in $\mathcal{E}_{\mathbb{C}}$ |
+| $K$ | the Killing form |
+| $H_n(\mathbb{F})$ | the Hermitian matrices over $\mathbb{F}$ |
+
+## Further Reading
+
+- N. Bourbaki, *Algèbres*, ch. IX, for the central simple algebras over a field and the Brauer group.
+- P. K. Rashevskii, “On the real forms of a complex semisimple Lie algebra”, for the descent used in the fifth section.
+- S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, ch. III and X, for the Killing form and the compactness criterion.
+- E. B. Dynkin, “Maximal subgroups of the classical groups”, for the classification of the maximal subalgebras used in the ninth section.
+- K. McCrimmon, *A Taste of Jordan Algebras*, for the three real forms of $M_n(\mathbb{C})^{+}$ and the Hermitian form $H_n(\mathbb{C})$.
+- T. Y. Lam, *A First Course in Noncommutative Rings*, ch. 1–4, for the module dictionary of the eighth section.
+- A. Knapp, *Lie Groups Beyond an Introduction*, ch. I–II, for the comparison of the real forms at group level.
