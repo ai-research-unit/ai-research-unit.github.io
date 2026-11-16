@@ -184,7 +184,7 @@ $$
 $$
 which is the statement that $\tilde{P}_{\Phi}$ has been rotated until its vector part vanishes, i.e. that the frame is the COM frame. The rotor that carries the COM frame's data back to the laboratory is the quaternion conjugate,
 $$
-\tilde{P}_{\Phi,a} = \tilde U^{\natural}_{\rm CM}\,\tilde{P}_{\Phi,a}^{*}\,\tilde U^{\natural}_{\rm CM}{}^\dagger ,
+\tilde{P}_{\Phi,a} = \tilde U^{\natural}_{\rm CM}\,\tilde{P}_{\Phi,a}^{*}\,\overline{\tilde U_{\rm CM}} ,
 $$
 because $\tilde U^{\natural}_{\rm CM}$ is the boost of the same rapidity in the opposite direction.
 

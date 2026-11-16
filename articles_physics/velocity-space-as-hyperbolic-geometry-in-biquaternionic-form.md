@@ -76,7 +76,7 @@ where $d\Omega^2$ is the round metric of the unit sphere on the direction.
 
 **Proof.** With $\vec u$ a unit vector, $\vec u\cdot d\vec u = 0$ and $|d\vec u|^2 = d\Omega^2$. Differentiating, $d(c\sinh(\rho/c)\,\vec u) = \cosh(\rho/c)\,\vec u\,d\rho+c\sinh(\rho/c)\,d\vec u$ and $d(c\cosh(\rho/c)) = \sinh(\rho/c)\,d\rho$, whence
 $$
--ds^2 = \langle d\tilde{V}_{\Phi}\rangle_{\natural} = -\sinh^2\frac{\rho}{c}\,d\rho^2+\cosh^2\frac{\rho}{c}\,d\rho^2+c^2\sinh^2\frac{\rho}{c}\,|d\vec u|^2 ,
+ds^2 = \langle d\tilde{V}_{\Phi}\rangle_{\natural} = -\sinh^2\frac{\rho}{c}\,d\rho^2+\cosh^2\frac{\rho}{c}\,d\rho^2+c^2\sinh^2\frac{\rho}{c}\,|d\vec u|^2 ,
 $$
 which is the stated metric.
 

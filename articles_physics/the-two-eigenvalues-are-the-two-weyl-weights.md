@@ -166,9 +166,9 @@ which is exactly the eigenvalue computed above.
 | object | value on the fundamental | where it appears |
 |---|---|---|
 | weight $w_+$ | $+\tfrac12$ | $\lambda_+=e^{+\theta_{\mathrm{rpd}}/2}$ |
-| $B$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the square root of the squared vector part, and the square itself |
-| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues of the general element |
-| $\vec Z=-i\vec Q/B$, $P_\pm=\tfrac12(e_t\pm\vec Z)$ | the unit vector of the vector part and the two eigenprojectors |
+| $B$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the square root of the squared vector part, and the square itself | — |
+| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues of the general element | — |
+| $\vec Z=-i\vec Q/B$, $P_\pm=\tfrac12(e_t\pm\vec Z)$ | the unit vector of the vector part and the two eigenprojectors | — |
 | weight $w_-$ | $-\tfrac12$ | $\lambda_-=e^{-\theta_{\mathrm{rpd}}/2}$ |
 | sum $w_++w_-$ | $0$ | $\det=1$ |
 | root of the adjoint | $\pm1$ | eigenvalue ratio $e^{2\theta_{\mathrm{rpd}}}$ |

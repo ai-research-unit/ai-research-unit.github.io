@@ -198,12 +198,12 @@ The same element under the congruence gives
 
 $$
 \mathrm{Cg}_{\tilde U_{\mathrm b}}(ie_t)=ie_t\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*}
-=i\bigl(\cosh\theta_{\mathrm{rpd}}\,e_t-\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr),
+=i\cosh\theta_{\mathrm{rpd}}\,e_t-\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
 $$
 
 which is the four-velocity of a frame moving with speed $c\tanh\theta_{\mathrm{rpd}}$ along $-\vec u_{\mathrm b}$. The sign is the passive reading: the frame is boosted along $+\vec u_{\mathrm b}$ and the coordinate velocity of the original rest frame is reversed.
 
-So the congruence moves the time axis, and it moves it by exactly the Lorentz transformation. Verified numerically at rapidity $0.8$: the image is $i(1.337435\,e_t-0.888106\,\vec u_{\mathrm b})$ against $\cosh 0.8=1.337435$ and $\sinh 0.8=0.888106$.
+So the congruence moves the time axis, and it moves it by exactly the Lorentz transformation. Verified numerically at rapidity $0.8$: the image is $1.337435\,i e_t-0.888106\,\vec u_{\mathrm b}$ against $\cosh 0.8=1.337435$ and $\sinh 0.8=0.888106$.
 
 ### The Sector Argument
 

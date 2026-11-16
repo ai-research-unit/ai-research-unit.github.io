@@ -53,23 +53,30 @@ With $J^\pm=J_x\pm iJ_y$ and $K^\pm=K_x\pm iK_y$, the brackets against the Carta
 
 $$
 [J_z,J^{\pm}]=\mp iJ^{\pm},\qquad
-[K_z,J^{\pm}]=\mp iJ^{\pm},\qquad
+[K_z,J^{\pm}]=\mp iK^{\pm},\qquad
 [J_z,K^{\pm}]=\mp iK^{\pm},\qquad
-[K_z,K^{\pm}]=\mp iK^{\pm},
+[K_z,K^{\pm}]=\pm iJ^{\pm}.
 $$
 
-so the four root vectors $J^+,J^-,K^+,K^-$ carry the four roots
+The vectors $J^\pm$ and $K^\pm$ are therefore eigenvectors of $J_z$ but not of $K_z$, which mixes the two within each sign. The root vectors of the full Cartan are the combinations
 
 $$
-\alpha_1=(H_1\mapsto-i,\ H_2\mapsto 0),\quad
-\alpha_2=(H_1\mapsto+i,\ H_2\mapsto 0),
-$$
-$$
-\beta_1=(H_1\mapsto 0,\ H_2\mapsto-i),\quad
-\beta_2=(H_1\mapsto 0,\ H_2\mapsto+i),
+E_1=J^{+}+iK^{+},\quad E_2=J^{+}-iK^{+},\quad
+E_3=J^{-}+iK^{-},\quad E_4=J^{-}-iK^{-},
 $$
 
-with $H_1=J_z$ and $H_2=K_z$. The signs $\mp i$ are the corpus's anti-Hermitian convention; in the physicist's Hermitian convention every generator is multiplied by $i$ and the roots become $\pm1$, which is the more familiar display. The two conventions differ by the factor $i$ throughout and nothing in this article depends on which is used.
+which carry the four roots
+
+$$
+\alpha_1=(H_1\mapsto-i,\ H_2\mapsto-1),\quad
+\alpha_2=(H_1\mapsto-i,\ H_2\mapsto+1),
+$$
+$$
+\beta_1=(H_1\mapsto+i,\ H_2\mapsto-1),\quad
+\beta_2=(H_1\mapsto+i,\ H_2\mapsto+1),
+$$
+
+with $H_1=J_z$ and $H_2=K_z$. The $H_1$ entry is imaginary because $J_z$ is anti-Hermitian, and the $H_2$ entry is real because $K_z$ is Hermitian; in the physicist's convention every generator is multiplied by $i$ and the two entries exchange their natures, the $H_1$ values becoming the real $\mp1$. The two conventions differ by the factor $i$ throughout and nothing in this article depends on which is used.
 
 ### The Root Spaces
 
@@ -89,7 +96,7 @@ The values $\pm i$ are imaginary because the generator $J_z$ is anti-Hermitian. 
 
 ### The Two Pairs
 
-The four roots are $\pm\alpha$ and $\pm\beta$, with $\alpha=(H_1\mapsto-i,H_2\mapsto0)$ and $\beta=(H_1\mapsto0,H_2\mapsto-i)$. Each pair is a line through the origin in the two-dimensional complex span of the roots.
+The four roots are $\pm\alpha$ and $\pm\beta$, with $\alpha=(H_1\mapsto-i,H_2\mapsto-1)$ and $\beta=(H_1\mapsto-i,H_2\mapsto+1)$. Each pair is a line through the origin in the two-dimensional complex span of the roots.
 
 ### The Span Is Two-Dimensional
 
@@ -101,7 +108,13 @@ $$
 (\alpha,\beta)=0,
 $$
 
-with the inner product induced by the Killing form. Indeed $\alpha$ is supported on $H_1$ and $\beta$ on $H_2$, and $B(H_1,H_2)=0$ because the two Cartan directions lie in the two different summands, which are orthogonal under the Killing form by the same computation that gave $B(J_i,K_j)=0$ in *The Six Generators and Their Commutators*.
+with the inner product induced by the Killing form. The dual metric is $\mathrm{diag}(-\tfrac14,+\tfrac14)$ in the basis dual to $(H_1,H_2)$, because $B(H_1,H_1)=-4$ and $B(H_2,H_2)=+4$, so
+
+$$
+(\alpha,\beta)=(-i)(-i)\bigl(-\tfrac14\bigr)+(+1)(-1)\bigl(+\tfrac14\bigr)=\tfrac14-\tfrac14=0 .
+$$
+
+The vanishing is the orthogonality of the two summands: $\alpha$ is the root of one and $\beta$ of the other, and $B(J_i,K_j)=0$ by the computation in *The Six Generators and Their Commutators*.
 
 ### The Inner Products on the Lines
 
@@ -273,7 +286,7 @@ The complexified Lorentz algebra has a two-dimensional Cartan subalgebra, four r
 |---|---|
 | $\mathfrak{h}$ | the Cartan subalgebra, spanned by $J_z$ and $K_z$ |
 | $\alpha,\beta$ | the two positive roots |
-| $J^\pm=J_x\pm iJ_y$, $K^\pm=K_x\pm iK_y$ | the root vectors |
+| $J^\pm=J_x\pm iJ_y$, $K^\pm=K_x\pm iK_y$ | the $J_z$-eigenvectors; the roots are carried by $J^\pm\pm iK^\pm$ |
 | $A_1\times A_1$ | the root system, two orthogonal equal lines |
 | $W\cong\mathbb{Z}_2\times\mathbb{Z}_2$ | the Weyl group |
 | $\mathfrak{so}(4)$, $\mathfrak{so}(1,3)$, $\mathfrak{so}(2,2)$ | the three real forms |

@@ -4,7 +4,7 @@
 
 The biquaternion description of a Lorentz transformation is a description of the **homogeneous** part of relativistic kinematics: it reorients a frame and changes its state of motion, but it holds the origin fixed. A change of inertial frame also shifts the origin, and the group that contains both operations is the **Poincaré group**, the ten-parameter group of transformations
 $$
-x_\mu \;\longmapsto\; \sum_\nu\Lambda_{\mu\nu}x_\nu + a_\mu
+x^\mu \;\longmapsto\; \sum_\nu\Lambda^{\mu}{}_{\nu}x^\nu + a^\mu
 $$
 of Minkowski space. The question this article answers is how much of that group the biquaternion algebra $\mathbb{B}$ contains.
 

@@ -16,7 +16,7 @@ $$
 J_\eta=\tfrac12\vec e_\eta,\qquad K_\eta=\tfrac12 i\vec e_\eta,\qquad \eta\in\{x,y,z\},
 $$
 
-the rotation and boost generators, anti-Hermitian in the corpus's convention: $J_\eta^{*}=-J_\eta$ and $K_\eta^{*}=-K_\eta$. Their brackets are stated in *The Six Generators and Their Commutators* and are reproduced here because the rest of the article reads the table.
+the rotation and boost generators: the $J_\eta$ are anti-Hermitian, $J_\eta^{*}=-J_\eta$, and the $K_\eta$ are Hermitian, $K_\eta^{*}=+K_\eta$. Their brackets are stated in *The Six Generators and Their Commutators* and are reproduced here because the rest of the article reads the table.
 
 ### The Table
 
@@ -267,7 +267,8 @@ The bracket table has three blocks; the third, $[K_a,K_b]=-\epsilon_{abc}J_c$, i
 | $\epsilon_{abc}$ | the alternating symbol |
 | $a_i=\tfrac12\theta_{\mathrm{rpd},i}$ | half-rapidity of the $i$-th boost |
 | $\vec u_i$, $\theta$ | boost direction and angle between the two directions |
-| $\theta_{\mathrm{wgn}}$ | the Thomas–Wigner rotation angle |\n| $S$, $\vec v$, $\vec w$ | scalar, real vector and imaginary vector parts of the product |
+| $\theta_{\mathrm{wgn}}$ | the Thomas–Wigner rotation angle |
+| $S$, $\vec v$, $\vec w$ | scalar, real vector and imaginary vector parts of the product |
 | $\theta_{\mathrm{rpd},12}$ | rapidity of the product |
 
 ## Further Reading

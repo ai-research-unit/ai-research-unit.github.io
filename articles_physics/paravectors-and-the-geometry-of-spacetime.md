@@ -24,7 +24,7 @@ the minus of $\vec p\,\vec p=-(\vec p\cdot\vec p)e_t$ undone by the two factors 
 
 ## The Algebra of Physical Space Inside the Biquaternions
 
-The three imaginary vectors $i\vec e_\eta$, $k=x,y,z$, satisfy
+The three imaginary vectors $i\vec e_\eta$, $\eta=x,y,z$, satisfy
 
 $$
 (i\vec e_j)(i\vec e_\eta)+(i\vec e_\eta)(i\vec e_j)=2\delta_{j\eta}\,e_t ,
@@ -346,7 +346,7 @@ The signs here are the mostly-minus $\varepsilon=(1,-1,-1,-1)$, in which $\gamma
 The letter $\gamma$ is also used, in the algebra-of-physical-space literature, for the three **generators** of that algebra. That is a different object: the element
 
 $$
-i\vec e_\eta,\qquad k=x,y,z,
+i\vec e_\eta,\qquad \eta=x,y,z,
 $$
 
 generates $\mathrm{Cl}_{3,0}$ inside $\mathbb{B}$, with $(i\vec e_j)(i\vec e_\eta)+(i\vec e_\eta)(i\vec e_j)=2\delta_{j\eta}e_t$, $(i\vec e_\eta)^2=+e_t$ and $(i\vec e_x)(i\vec e_y)(i\vec e_z)=i$. The two uses of the letter are irreconcilable and both are standard, so this article keeps them apart: the four gamma basis operators appear only in this section, and everywhere else the three generators are written $i\vec e_\eta$. Read as an operator, a generator is the single left basis operator $L_{\mathrm{pau},i\vec e_\eta}$, and the anticommutation relations of the elements are the relations of those basis operators:

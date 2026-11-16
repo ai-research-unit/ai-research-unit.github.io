@@ -123,7 +123,7 @@ such a form exists exactly when the representation is **self-conjugate**, that i
 | $(m,m)$ | yes | exists, indefinite for $m>0$ |
 | $(m,n)$, $m\neq n$ | no | does not exist |
 
-So $(1,1)$, the four-vector, carries the Minkowski form, of signature $(1,3)$ or $(3,1)$; $(1,0)$ carries none, and its invariant bilinear form is the antisymmetric one on a two-form's components.
+So $(1,1)$, the four-vector, carries the Minkowski form, of signature $(1,3)$ or $(3,1)$; $(1,0)$ carries none, and its invariant bilinear form is the antisymmetric $\epsilon$ on its two components.
 
 ### Its Inertia
 
@@ -196,7 +196,8 @@ The finite-dimensional representations of the Lorentz algebra are labelled $(\tf
 |---|---|
 | $(\tfrac{j_1}{2},\tfrac{j_2}{2})$, $(m,n)$ | the finite-dimensional labels |
 | $\chi_{j_1,j_2}$ | the character, the trace of the representation |
-| $\theta_{\mathrm{axr}}$ | the rotation angle of the torus element |\n| $\theta_{\mathrm{rpd}}$ | the boost rapidity of the torus element |
+| $\theta_{\mathrm{axr}}$ | the rotation angle of the torus element |
+| $\theta_{\mathrm{rpd}}$ | the boost rapidity of the torus element |
 | $d=\tfrac12(j_1+j_2)$ | the unitarity defect |
 | self-conjugate | $m=n$, so that $\overline{(m,n)}\cong(m,n)$ |
 | inertia | the number of positive and negative signs of an invariant form |

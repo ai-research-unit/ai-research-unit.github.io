@@ -62,7 +62,7 @@ A reader who tries to compute the two triples as biquaternions will get zero, an
 
 ### How the Checks Are Done
 
-The numerical checks are performed on the $2\times2$ images of the generators. Those images are complex matrices, and the outer $i$ of the definition multiplies the matrix rather than being absorbed into its entries, so the matrices $\tfrac12(\mathsf{M}_2(J_\eta)\pm i\,\mathsf{M}_2(K_\eta))$ are nonzero, and the brackets below hold for them. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
+The numerical checks are performed on the real four-dimensional congruence matrices of the generators, in which $J_\eta$ and $K_\eta$ are real and the complexification unit $i$ is an external scalar, so the combinations $\tfrac12(\rho(J_\eta)\pm i\rho(K_\eta))$ are nonzero and the brackets below hold for them. The $2\times2$ image cannot serve for this purpose: there the central scalar is already inside the entries, $\mathsf{M}_2(K_\eta)=i\,\mathsf{M}_2(J_\eta)$, and the combination collapses to zero, as the identity above requires. This is the operational meaning of "the coefficient field's $i$": it is an operation on the array, and it is distinguishable from the central scalar because the central scalar is already inside the array.
 
 ## Each Triple Closes
 

@@ -236,11 +236,11 @@ $$
 $$
 The two summands are the **self-dual** and **anti-self-dual** halves of the complexified Lorentz algebra. The rotation generators are the diagonal combination,
 $$
-\vec e_\eta=N_k^++N_k^-,
+\vec e_\eta=N_\eta^++N_\eta^-,
 $$
 and the boost generators are the off-diagonal combination,
 $$
-B_{\mathrm{boost},\eta}=\frac{1}{\mathsf{i}}\bigl(N_k^+-N_k^-\bigr).
+B_{\mathrm{boost},\eta}=\frac{1}{\mathsf{i}}\bigl(N_\eta^+-N_\eta^-\bigr).
 $$
 So a rotation is a simultaneous equal rotation in the two $\mathrm{SU}(2)$ factors, while a boost is a rotation in one factor and an opposite rotation in the other. This is the algebraic reason why the spatial rotation group is compact and the boosts are not: rotations act in the same sense in both factors, boosts in opposite senses.
 
@@ -352,7 +352,7 @@ Because $\mathrm{Ad}$ is two-to-one and surjective, the groups have the same Lie
 $$
 \boxed{\;SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 \qquad
-\pi_x\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z}\;},
+\pi_1\bigl(SO^+(1,3)\bigr)\cong\mathbb{Z}/2\mathbb{Z}\;},
 $$
 while $SL(2,\mathbb{C})$ is simply connected. The Lorentz group is doubly connected, and $SL(2,\mathbb{C})$ is its universal cover.
 
@@ -400,7 +400,7 @@ the double cover of $SO(1,2)$, generated in the algebra by the boost $B_{\mathrm
 $$
 S^2=SU(2)/\mathrm{U}(1),\qquad H^\pm=SU(1,1)/\mathrm{U}(1),\qquad H^{sl}\ (\text{stabiliser }SO(1,1)),
 $$
-the sphere in $\mathbb{R}^3$ with $\eta^{(3)}=\mathrm{diag}(-1,-1,-1)$, and the two hyperboloids of $\mathbb{R}^{1,2}$ with $\eta^{(1,2)}=\mathrm{diag}(1,-1,-1)$ — the **two-sheeted** time-like one, $t^2-x^2-y^2=1$, whose compact stabiliser $\mathrm{U}(1)$ is what the discrete series attaches to, and the **one-sheeted** space-like one, $t^2-x^2-y^2=-1$, whose non-compact stabiliser is what the continuous series attaches to. Each is modelled on spinors of the defining module, and the models are the ones the external paper cited below constructs. With the indefinite pairing $[u|v]=u^{\dagger}\sigma_3v$, invariant under $SU(1,1)$ and not under all of $SL(2,\mathbb{C})$, and the triple
+the sphere in $\mathbb{R}^3$ with $\eta^{(3)}=\mathrm{diag}(-1,-1,-1)$, and the two hyperboloids of $\mathbb{R}^{1,2}$ with $\eta^{(1,2)}=\mathrm{diag}(1,-1,-1)$ — the **two-sheeted** time-like one, $t^2-x^2-y^2=1$, whose compact stabiliser $\mathrm{U}(1)$ is what the discrete series attaches to, and the **one-sheeted** space-like one, $t^2-x^2-y^2=-1$, whose non-compact stabiliser is what the continuous series attaches to. Each is modelled on spinors of the defining module, and the models are the ones the external paper cited below constructs. With the indefinite pairing $[u\vert v]=u^{\dagger}\sigma_3v$, invariant under $SU(1,1)$ and not under all of $SL(2,\mathbb{C})$, and the triple
 $$
 \varsigma_1=\sigma_3,\qquad \varsigma_2=i\sigma_2,\qquad \varsigma_3=-i\sigma_1,\qquad \varsigma=\sigma_3(1,\sigma_1,\sigma_2),
 $$
@@ -428,7 +428,7 @@ $$
 =\frac{\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta}
 {\cosh\frac{\theta_{\mathrm{rpd},1}}{2}\cosh\frac{\theta_{\mathrm{rpd},2}}{2}+\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\cos\theta},
 $$
-about the axis $\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\theta_{\mathrm{rpd},\mathrm c}=\cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2}+\sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2}\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation.
+about the axis $-\vec u_x\times\vec u_y$; the boost factor has the composite rapidity $\cosh\theta_{\mathrm{rpd},\mathrm c}=\cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2}+\sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2}\cos\theta$. Every unit-norm biquaternion has a unique polar decomposition $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into a boost and a rotation.
 
 The real Lie algebra is $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by rotations $\vec e_\eta$ and boosts $B_{\mathrm{boost},\eta}=i\vec e_\eta$, with $[B_{\mathrm{boost},j},B_{\mathrm{boost},\eta}]=-2\varepsilon_{j\eta l}\vec e_l$; its complexification splits into two commuting $\mathrm{SU}(2)$'s, the self-dual and anti-self-dual halves. The finite-dimensional irreducibles are the $(m,n)$, $m,n\in\tfrac12\mathbb{Z}_{\geq0}$, of dimension $(2m+1)(2n+1)$; the biquaternion algebra carries $(\tfrac12,\tfrac12)$ under conjugation. Representations with $m+n\in\mathbb{Z}$ descend to $SO^+(1,3)$; those with $m+n\in\tfrac12+\mathbb{Z}$ are genuine spin representations of the double cover.
 
@@ -448,14 +448,14 @@ The group that carries the transformations is represented as follows. The group 
 | $\tilde U_{\mathrm{lor}}\in SL(2,\mathbb{C})$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Rotor conjugation (four-vector action) |
 | $\mathrm{Ad}:SL(2,\mathbb{C})\to SO^+(1,3)$ | Two-to-one covering homomorphism, kernel $\{\pm e_t\}$ |
-| $\\tilde U_{\\Psi,\\mathrm b}=\\cosh\\frac\\theta_{\\mathrm{rpd}}2+i\\sinh\\frac\\theta_{\\mathrm{rpd}}2\\vec u_{\\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{B}_{\Psi}$) |
+| $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Boost rotor (Hermitian positive, in $\mathbb{B}_{\Psi}$) |
 | $\tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Rotation rotor (unit real quaternion, in $SU(2)$) |
 | $\theta_{\mathrm{rpd}}$ | Rapidity, $\tanh\theta_{\mathrm{rpd}}=v_b/c$ |
 | $\theta_{\mathrm{wgn}}$ | Thomas–Wigner rotation angle |
 | $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Cartan (polar) decomposition: boost times rotation |
 | $\vec e_\eta$, $B_{\mathrm{boost},\eta}=i\vec e_\eta$ | Rotation and boost generators |
 | $[\vec e_j,\vec e_\eta]=2\varepsilon_{j\eta l}\vec e_l$, $[\vec e_j,B_{\mathrm{boost},\eta}]=2\varepsilon_{j\eta l}B_{\mathrm{boost},l}$, $[B_{\mathrm{boost},j},B_{\mathrm{boost},\eta}]=-2\varepsilon_{j\eta l}\vec e_l$ | Lie brackets |
-| $N_k^\pm=\frac12(\vec e_\eta\pm\mathsf{i}(i\vec e_\eta))$ | Generators of the two $\mathrm{SU}(2)$ halves |
+| $N_\eta^\pm=\frac12(\vec e_\eta\pm\mathsf{i}(i\vec e_\eta))$ | Generators of the two $\mathrm{SU}(2)$ halves |
 | $(m,n)=V_m\boxtimes V_n$ | Irreducible representation, $\dim=(2m+1)(2n+1)$ |
 | $(\tfrac12,0)$, $(0,\tfrac12)$ | Left- and right-handed Weyl spinors |
 | $(\tfrac12,\tfrac12)$ | Four-vector (biquaternion algebra as module) |
@@ -468,7 +468,7 @@ The group that carries the transformations is represented as follows. The group 
 | $\operatorname{Ind}_P^G(\xi_{m,\nu})$ | Principal series of $SL(2,\mathbb{C})$; $P=MAN$ the Borel subgroup |
 | $SU(1,1)\cong SL(2,\mathbb{R})\cong Sp(2,\mathbb{R})$ | Subgroup fixing a space-like direction; double cover of $SO(1,2)$ |
 | $S^2$, $H^\pm$, $H^{sl}$ | Sphere, two-sheeted time-like hyperboloid, one-sheeted hyperboloid |
-| $[u|v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |
+| $[u\vert v]=u^{\dagger}\sigma_3v$ | Indefinite $SU(1,1)$-invariant pairing |
 | $\varsigma_1=\sigma_3$, $\varsigma_2=i\sigma_2$, $\varsigma_3=-i\sigma_1$ | Triple of $SU(1,1)$ generators; $\varsigma_i\varsigma_j=\eta^{(1,2)}_{ij}-i\sum_{\eta,l}\varepsilon_{ij\eta}\eta^{(1,2)}_{\eta l}\varsigma_l$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

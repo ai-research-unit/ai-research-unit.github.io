@@ -83,7 +83,7 @@ Three facts about this description are needed later, and each is proved in *A Fr
 - The unitary factor is a pure rotation: it is $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$.
 - Positivity is what makes the pair unique, and positivity of a Hermitian matrix of determinant one is an open condition, so the pair varies smoothly.
 
-So the second description of an element of the group is **a boost and a rotation**, and the second description of the group is the product of the two sets. The product is not direct: the sets intersect in $\{\pm e_t\}$, which is why the word is written $P\cdot K$ and not $P\times K$.
+So the second description of an element of the group is **a boost and a rotation**, and the second description of the group is the product of the two sets. The product is not a direct product of groups: $P$ is a submanifold and not a subgroup, and the two sets meet in $e_t$ alone, which is why the word is written $P\cdot K$ and not $P\times K$.
 
 ### The Two Columns as a Spinor Pair
 
@@ -180,7 +180,7 @@ For a pure generator the series closes, because every traceless element satisfie
 $$
 \exp(a\vec u)=\cos a+\sin a\,\vec u\quad(\vec u^{2}=-e_t),
 \qquad
-\exp(ia\vec u)=\cosh a+\sinh a\,\vec u\quad(\vec u^{2}=-e_t),
+\exp(ia\vec u)=\cosh a+i\sinh a\,\vec u\quad(\vec u^{2}=-e_t),
 $$
 
 and these two lines are the rotation and the boost of the block in exponential form. With the half-angle convention, a rotation of angle $\theta_{\mathrm{axr}}$ is $\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ and a boost of rapidity $\theta_{\mathrm{rpd}}$ is $\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$.

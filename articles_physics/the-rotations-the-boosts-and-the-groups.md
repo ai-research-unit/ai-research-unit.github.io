@@ -2,19 +2,19 @@
 
 ## Introduction
 
-**This entry reads the eighteenth section of the mathematical category: the groups of the norm.** Six articles, one group and two actions. The group is the set of units of the algebra, and the two actions are the two ways a unit can act on the algebra it belongs to. The mathematics states both actions and the groups each one generates: the adjoint, which preserves the product, and the congruence by the dagger, which preserves the two Hermitian sectors and the indefinite form. The entry reads the two actions against each other, which the mathematics does not do, and that comparison is the whole of its content. The one-sided actions by left and right multiplication are read with them, because they are what carries the element, and the reflections because they are the one family of isometries the two-sided action cannot reach.
+**This entry reads the eighteenth section of the mathematical category: the groups of the norm.** Six articles, one group and two actions. The group is the set of units of the algebra, and the two actions are the two ways a unit can act on the algebra it belongs to. The mathematics states both actions and the groups each one generates: the adjoint, which preserves the product, and the congruence by the star, which preserves the two Hermitian sectors and the indefinite form. The entry reads the two actions against each other, which the mathematics does not do, and that comparison is the whole of its content. The one-sided actions by left and right multiplication are read with them, because they are what carries the element, and the reflections because they are the one family of isometries the two-sided action cannot reach.
 
 **The first claim is that there is one group and two actions, not two groups.** Every unit $\tilde U$ acts on the algebra by
 
 $$
 \mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1},
 \qquad
-\mathrm{Sd}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*},
+\mathrm{Cg}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*},
 $$
 
 and the two maps differ only in the factor on the right, the inverse against the dagger. The adjoint is multiplicative and carries the product to the product. The congruence is not multiplicative, and it carries each of the two Hermitian sectors into itself. The two maps coincide exactly on the $*$-unitary elements, that is on the compact slice $\mathrm{U}(\mathbb{B})$. Verified: on one hundred random $*$-unitary elements the two maps differ by at most $2.1\times10^{-15}$ in Euclidean norm, and on a boost of rapidity two they differ by $6.9$.
 
-**The second claim is that this one coincidence is what separates a rotation from a boost.** A rotation lies in the coincidence, so it is an automorphism and an isometry at once, and there is no ambiguity in calling it a symmetry. A boost lies in one family each time: the congruence is an isometry of the form that preserves the sectors and is not multiplicative, and the adjoint is an automorphism that mixes the sectors. Verified: for a boost of rapidity two the adjoint fixes $e_t$ to $5.0\times10^{-16}$ while the congruence sends it to $\cosh 2\,e_t=3.762196\,e_t$; the congruence preserves both sectors to $8.7\times10^{-15}$ and the adjoint leaves the Hermitian sector by $36.5$.
+**The second claim is that this one coincidence is what separates a rotation from a boost.** A rotation lies in the coincidence, so it is an automorphism and an isometry at once, and there is no ambiguity in calling it a symmetry. A boost lies in one family each time: the congruence is an isometry of the form that preserves the sectors and is not multiplicative, and the adjoint is an automorphism that mixes the sectors. Verified: for a boost of rapidity two the adjoint fixes $e_t$ to $5.0\times10^{-16}$ while the congruence sends it to $\cosh 2\,e_t+i\sinh 2\,\vec u_{\mathrm b}$, whose scalar part is $3.762196$; the congruence preserves both sectors to $8.7\times10^{-15}$ and the adjoint leaves the Hermitian sector by $36.5$.
 
 **The third claim is that the algebra reaches one of the four components of $O(1,3)$ through its units and the other three through two operations that are not motions.** The congruence of a unit is always proper and orthochronous, of determinant $+1$ and positive time orientation; on the modulus-one slice it is an isometry of the form as well. Verified on one hundred units: the determinant is $1$ to $4\times10^{-14}$, the time entry is at least $1$, and the interval form is preserved to $2.2\times10^{-16}$. The improper component is reached by conjugating the argument with the quaternion conjugation, the anti-orthochronous one by negating the result, and the fourth by both at once. The twofold cover is the same statement one level down: the operations of even length lie in the algebra, the odd ones do not, and $\mathrm{Pin}(1,3)$ is therefore not contained in $\mathbb{B}$.
 
@@ -32,7 +32,7 @@ and the two maps differ only in the factor on the right, the inverse against the
 
 **The second objection is that a statement about groups is not a statement about physics.** It is not, and the entry does not make one. Each group is attached to the structure it preserves, the reach of each action is computed, and the eight readings at the end are the archive's, each with its warrant and its limit. The entry contributes the arrangement and the boundaries, not a physical claim.
 
-**The letters.** The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$; the element is $\tilde Q=Q_te_t+\vec Q$; the unit group is $\mathbb{B}^{\times}=\{N\neq0\}$ and the norm-one group is $\mathbb{B}^{\times}_1=\{N=1\}$; the $*$-unitary group is $\mathrm{U}(\mathbb{B})=\{\tilde U^{*}\tilde U=e_t\}$; the adjoint action is $\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$, the congruence is $\mathrm{Sd}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$, and the bilinear two-sided operator of the mathematics is $\mathrm{H}_{\tilde Q}$, which is $\mathrm{Sd}_{\tilde Q}$ read as an operator; the Hermitian sectors are $\mathbb{B}_{\Psi}=\{\tilde X^{*}=\tilde X\}$ and $\mathbb{B}_{\Phi}=\{\tilde X^{*}=-\tilde X\}$; the derivations are $\mathrm{Der}(\mathbb{B})$ and the automorphisms are $\mathrm{Aut}(\mathbb{B})$, with the ground field named whenever it matters.
+**The letters.** The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$; the element is $\tilde Q=Q_te_t+\vec Q$; the unit group is $\mathbb{B}^{\times}=\{N\neq0\}$ and the norm-one group is $\mathbb{B}^{\times}_1=\{N=1\}$; the $*$-unitary group is $\mathrm{U}(\mathbb{B})=\{\tilde U^{*}\tilde U=e_t\}$; the adjoint action is $\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$, the congruence is $\mathrm{Cg}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$, and the bilinear two-sided operator of the mathematics is $\mathrm{H}_{\tilde Q}$, which is $\mathrm{Cg}_{\tilde Q}$ read as an operator; the Hermitian sectors are $\mathbb{B}_{\Psi}=\{\tilde X^{*}=\tilde X\}$ and $\mathbb{B}_{\Phi}=\{\tilde X^{*}=-\tilde X\}$; the derivations are $\mathrm{Der}(\mathbb{B})$ and the automorphisms are $\mathrm{Aut}(\mathbb{B})$, with the ground field named whenever it matters.
 
 **Boundaries.** The double covers, the rotor, the two-sided operator and its action on the remarkable subspaces are *Biquaternion Rotations and Lorentz Transformations*; the automorphism group over each ground field, the derivations and their exponential are *Biquaternion Automorphisms and Derivations*; the Clifford envelope, the grading of the versors, the four components and the volume element are *Biquaternion Versors and the Orthogonal Group*; the compact slice, the two retractions and the homotopy are *The Unitary Group of the Biquaternion Algebra*; the indefinite isometry group, its two involutions and its Cartan decomposition are *The Krein Isometry Group and Its Cartan Decomposition*; the three level sets, the positive lines and the ball are *The Krein Level Sets and the Hyperbolic Structure*. The physical reading of the frames is the archived *Frames, Rotations and the Lorentz Group*, of the compact slice *The Unitary Group: Gauge, Phase and the Double Cover*, of the indefinite form *The Krein Form and the Indefinite Structure*.
 
@@ -53,19 +53,19 @@ The six articles fall into two pairs and two singletons. The first pair is the g
 
 **The unit group.** $\mathbb{B}^{\times}=\{N\neq0\}\cong GL_2(\mathbb{C})$, of real dimension eight, connected and non-compact, with centre $\mathbb{C}^{\times}$. Its subgroup of norm one is $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$, of real dimension six, with centre $\{\pm e_t\}$, and the quotient $\mathbb{B}^{\times}_1/\{\pm e_t\}\cong SO^{+}(1,3)$ is the proper orthochronous Lorentz group.
 
-**The adjoint is an automorphism and the congruence is not.** $\mathrm{Ad}_{\tilde U}(\tilde X\tilde Y)=\mathrm{Ad}_{\tilde U}(\tilde X)\,\mathrm{Ad}_{\tilde U}(\tilde Y)$ for every unit, to $2.7\times10^{-13}$ on one hundred random triples. $\mathrm{Sd}_{\tilde U}$ fails the same identity by a relative error of order one, and preserves the sectors instead: $\mathrm{Sd}_{\tilde U}(\mathbb{B}_{\Psi})\subseteq\mathbb{B}_{\Psi}$ and $\mathrm{Sd}_{\tilde U}(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$, to $9\times10^{-15}$.
+**The adjoint is an automorphism and the congruence is not.** $\mathrm{Ad}_{\tilde U}(\tilde X\tilde Y)=\mathrm{Ad}_{\tilde U}(\tilde X)\,\mathrm{Ad}_{\tilde U}(\tilde Y)$ for every unit, to $2.7\times10^{-13}$ on one hundred random triples. $\mathrm{Cg}_{\tilde U}$ fails the same identity by a relative error of order one, and preserves the sectors instead: $\mathrm{Cg}_{\tilde U}(\mathbb{B}_{\Psi})\subseteq\mathbb{B}_{\Psi}$ and $\mathrm{Cg}_{\tilde U}(\mathbb{B}_{\Phi})\subseteq\mathbb{B}_{\Phi}$, to $9\times10^{-15}$.
 
-**The coincidence.** $\mathrm{Sd}_{\tilde U}=\mathrm{Ad}_{\tilde U}$ exactly when $\tilde U^{*}=\tilde U^{-1}$, that is on $\mathrm{U}(\mathbb{B})$. Verified at $2.1\times10^{-15}$ over one hundred $*$-unitary elements and violated by $6.9$ at a boost of rapidity two.
+**The coincidence.** $\mathrm{Cg}_{\tilde U}=\mathrm{Ad}_{\tilde U}$ exactly when $\tilde U^{*}=\tilde U^{-1}$, that is on $\mathrm{U}(\mathbb{B})$. Verified at $2.1\times10^{-15}$ over one hundred $*$-unitary elements and violated by $6.9$ at a boost of rapidity two.
 
-**The scaling and the kernel.** $\mathrm{Sd}_{\tilde U}$ multiplies the biquaternion norm by $\lvert N(\tilde U)\rvert^{2}$, so it is an isometry of the indefinite form exactly on the modulus-one slice; the adjoint preserves $N$ identically. The kernel of the congruence on the unit group is the central circle $\mathrm{U}(1)$, since a central phase $\lambda$ gives $\mathrm{Sd}_{\lambda}=\lvert\lambda\rvert^{2}\mathrm{id}$; the kernel of the adjoint is $\mathbb{C}^{\times}$.
+**The scaling and the kernel.** $\mathrm{Cg}_{\tilde U}$ multiplies the biquaternion norm by $\lvert N(\tilde U)\rvert^{2}$, so it is an isometry of the indefinite form exactly on the modulus-one slice; the adjoint preserves $N$ identically. The kernel of the congruence on the unit group is the central circle $\mathrm{U}(1)$, since a central phase $\lambda$ gives $\mathrm{Cg}_{\lambda}=\lvert\lambda\rvert^{2}\mathrm{id}$; the kernel of the adjoint is $\mathbb{C}^{\times}$.
 
 **The rotor.** $\tilde u=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\vec u$ conjugates the vector part by the rotation of angle $\theta$ about $\vec u$, and $\tilde u$ and $-\tilde u$ give the same rotation; at $\theta=2\pi$ the rotor is $-e_t$. Verified: the unit vector $\vec e_x$ is carried to $\cos\theta\,\vec e_x+\sin\theta\,\vec e_y$ at $\theta=0.5,\pi/2,\pi$.
 
-**The one-sided actions.** $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ are representations of the same group, of eight real dimensions each. For $*$-unitary $\tilde Q$ the left action preserves $\langle\tilde X,\tilde Y\rangle_{*}$ to $4.4\times10^{-15}$ and fails multiplicativity by $18.7$, so it acts on the algebra as a module; the congruence is the pair in tandem, $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, to $9.2\times10^{-16}$. The group they generate is seven-dimensional inside the sixteen of $\mathrm{U}(4)$.
+**The one-sided actions.** $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ are representations of the same group, of eight real dimensions each. For $*$-unitary $\tilde Q$ the left action preserves $\langle\tilde X,\tilde Y\rangle_{*}$ to $4.4\times10^{-15}$ and fails multiplicativity by $18.7$, so it acts on the algebra as a module; the congruence is the pair in tandem, $\mathrm{Cg}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, to $9.2\times10^{-16}$. The group they generate is seven-dimensional inside the sixteen of $\mathrm{U}(4)$.
 
-**The reflections.** On the real vector subspace the dagger is minus the element, so $\mathrm{Sd}_v$ is the half turn about $v$, of determinant $+1$ there, and the mirror is $\rho_v=-v\tilde Xv^{\natural}$: it negates $v$, fixes $v^{\perp}$, has determinant $-1$ on the subspace and $+1$ on the algebra, and squares to the identity. Cartan–Dieudonné gives $\mathrm{O}(3)$ from at most three of them.
+**The reflections.** On the real vector subspace the dagger is minus the element, so $\mathrm{Cg}_v$ is the half turn about $v$, of determinant $+1$ there, and the mirror is $\rho_v=-v\tilde Xv^{\natural}$: it negates $v$, fixes $v^{\perp}$, has determinant $-1$ on the subspace and $+1$ on the algebra, and squares to the identity. Cartan–Dieudonné gives $\mathrm{O}(3)$ from at most three of them.
 
-**The four components.** $\mathrm{Sd}_{\tilde U}$ with $\lvert N(\tilde U)\rvert=1$ is proper orthochronous. Quaternion conjugation of the argument supplies parity, negation supplies the product of parity with time reversal, and the two together supply the fourth component. Verified on the $4\times4$ real matrices of the four operations: determinants $+1,-1,+1,-1$ and time entries $+1.337,+1.337,-1.337,-1.337$.
+**The four components.** $\mathrm{Cg}_{\tilde U}$ with $\lvert N(\tilde U)\rvert=1$ is proper orthochronous. Quaternion conjugation of the argument supplies parity, negation supplies the product of parity with time reversal, and the two together supply the fourth component. Verified on the $4\times4$ real matrices of the four operations: determinants $+1,-1,+1,-1$ and time entries $+1.337,+1.337,-1.337,-1.337$.
 
 **The automorphisms.** $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of complex dimension three, all of it inner. $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})\cong\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes\mathbb{Z}/2$, of real dimension six and two components, the second the coset of complex conjugation, which is conjugate-linear and not inner.
 
@@ -143,10 +143,10 @@ A unit $\tilde U$ acts on the algebra in two ways, and the two formulas differ i
 $$
 \mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1},
 \qquad
-\mathrm{Sd}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}.
+\mathrm{Cg}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}.
 $$
 
-Both are group homomorphisms from $\mathbb{B}^{\times}$ into the linear group of the eight-dimensional real space. That is, both are representations: $\mathrm{Ad}_{\tilde U\tilde V}=\mathrm{Ad}_{\tilde U}\mathrm{Ad}_{\tilde V}$ and $\mathrm{Sd}_{\tilde U\tilde V}=\mathrm{Sd}_{\tilde U}\mathrm{Sd}_{\tilde V}$, the second because $(\tilde U\tilde V)\tilde X(\tilde U\tilde V)^{*}=\tilde U(\tilde V\tilde X\tilde V^{*})\tilde U^{*}$.
+Both are group homomorphisms from $\mathbb{B}^{\times}$ into the linear group of the eight-dimensional real space. That is, both are representations: $\mathrm{Ad}_{\tilde U\tilde V}=\mathrm{Ad}_{\tilde U}\mathrm{Ad}_{\tilde V}$ and $\mathrm{Cg}_{\tilde U\tilde V}=\mathrm{Cg}_{\tilde U}\mathrm{Cg}_{\tilde V}$, the second because $(\tilde U\tilde V)\tilde X(\tilde U\tilde V)^{*}=\tilde U(\tilde V\tilde X\tilde V^{*})\tilde U^{*}$.
 
 What separates them is what they do to the product of two arguments. The adjoint is an algebra automorphism,
 $$
@@ -168,7 +168,7 @@ The adjoint does not preserve them. The same computation with the inverse gives 
 
 The congruence also scales the norm, by exactly the squared modulus of the norm of the acting element:
 $$
-N\bigl(\mathrm{Sd}_{\tilde U}(\tilde X)\bigr)=\lvert N(\tilde U)\rvert^{2}N(\tilde X),
+N\bigl(\mathrm{Cg}_{\tilde U}(\tilde X)\bigr)=\lvert N(\tilde U)\rvert^{2}N(\tilde X),
 $$
 verified to $6.9\times10^{-13}$. The identity is the multiplicativity of the norm together with $N(\tilde U^{*})=\overline{N(\tilde U)}$. On the modulus-one slice the factor is one, and there the congruence is an isometry of the indefinite form; off it, it is a similarity.
 
@@ -192,15 +192,15 @@ The adjoint kills the centre: $\mathrm{Ad}_{\lambda}=\mathrm{id}$ for every nonz
 
 In the projective space of the algebra that quotient is one phrase: the units are the classes with $N\neq0$, so the unit group modulo the scale is the complement of the null quadric of the norm, and that complement is $PGL_2(\mathbb{C})$. The null quadric is the set of classes of the zero divisors, so a degenerate element is a point of the projective space that the quotient leaves out.
 
-The congruence kills only the phases: $\mathrm{Sd}_{\lambda}=\lvert\lambda\rvert^{2}\mathrm{id}$, so the kernel is the central circle $\mathrm{U}(1)$, of real dimension one, and the congruence factors through $\mathbb{B}^{\times}/\mathrm{U}(1)$, of dimension seven. Verified: $\mathrm{Sd}_{ie_t}$ is the identity to $0.0$ and $\mathrm{Sd}_{2e_t}$ is four times the identity to $0.0$. The congruence sees the scale, and reports it as a dilation of the whole algebra.
+The congruence kills only the phases: $\mathrm{Cg}_{\lambda}=\lvert\lambda\rvert^{2}\mathrm{id}$, so the kernel is the central circle $\mathrm{U}(1)$, of real dimension one, and the congruence factors through $\mathbb{B}^{\times}/\mathrm{U}(1)$, of dimension seven. Verified: $\mathrm{Cg}_{ie_t}$ is the identity to $0.0$ and $\mathrm{Cg}_{2e_t}$ is four times the identity to $0.0$. The congruence sees the scale, and reports it as a dilation of the whole algebra.
 
 The images are therefore of dimensions six and seven, both inside the linear group of the eight-dimensional space, and they meet in the compact subgroup of dimension four:
 $$
-\mathrm{Im}\,\mathrm{Ad}\cap\mathrm{Im}\,\mathrm{Sd}=\mathrm{U}(1)\cdot PU(2)\cong \mathrm{U}(1)\times SO(3).
+\mathrm{Im}\,\mathrm{Ad}\cap\mathrm{Im}\,\mathrm{Cg}=\mathrm{U}(1)\cdot PU(2)\cong \mathrm{U}(1)\times SO(3).
 $$
 The intersection is computed from the coincidence: the two maps agree exactly on $\mathrm{U}(\mathbb{B})$, whose image modulo the common kernel is $PU(2)\cong SO(3)$, and the central phases agree when their modulus is one. Four dimensions is the size of the set on which a motion of the algebra is also a symmetry of its multiplication.
 
-| | adjoint $\mathrm{Ad}$ | congruence $\mathrm{Sd}$ |
+| | adjoint $\mathrm{Ad}$ | congruence $\mathrm{Cg}$ |
 | --- | --- | --- |
 | formula | $\tilde U\tilde X\tilde U^{-1}$ | $\tilde U\tilde X\tilde U^{*}$ |
 | kernel | $\mathbb{C}^{\times}$, dimension $2$ | $\mathrm{U}(1)$, dimension $1$ |
@@ -227,9 +227,9 @@ with $L_{\tilde Q\tilde Q'}=L_{\tilde Q}L_{\tilde Q'}$ and $R_{\tilde Q\tilde Q'
 
 **A one-sided action preserves the form and not the algebra.** For $\tilde Q$ $*$-unitary, $\langle\tilde Q\tilde X,\tilde Q\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$, verified to $4.4\times10^{-15}$ over one hundred random pairs, because $\tilde Q^{*}\tilde Q=e_t$ and the Euclidean form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$ is a trace pairing. The same map fails multiplicativity on the same sample, with a defect of $18.7$ in Euclidean norm, and it does not preserve the Hermitian sectors: the left multiple of an Hermitian element has an Hermitian defect of $5.8$. So a one-sided action carries the element and neither the multiplication nor the involution: it acts on the algebra as a module and not as an algebra.
 
-That is the action a gauge transformation performs on a spinor. The spinor is the element, the transformation is the left factor, and the four-vector is the same element read through the congruence on the Hermitian sector. The two readings are two representations of one group, and the difference between them is the difference between $L$ and $\mathrm{Sd}$, which is the right factor.
+That is the action a gauge transformation performs on a spinor. The spinor is the element, the transformation is the left factor, and the four-vector is the same element read through the congruence on the Hermitian sector. The two readings are two representations of one group, and the difference between them is the difference between $L$ and $\mathrm{Cg}$, which is the right factor.
 
-**The congruence is the two one-sided actions used in tandem.** On the compact slice $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, verified to $9.2\times10^{-16}$, and $R_{\tilde Q^{*}}=R_{\tilde Q}^{-1}$ there. The two-sided action therefore adds no ingredient beyond a left factor and a right factor; what it adds is the constraint that the two factors are one element and its inverse.
+**The congruence is the two one-sided actions used in tandem.** On the compact slice $\mathrm{Cg}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, verified to $9.2\times10^{-16}$, and $R_{\tilde Q^{*}}=R_{\tilde Q}^{-1}$ there. The two-sided action therefore adds no ingredient beyond a left factor and a right factor; what it adds is the constraint that the two factors are one element and its inverse.
 
 **The actions generate seven dimensions inside sixteen.** The left and the right images are each a copy of $\mathrm{U}(\mathbb{B})$, of dimension four, and they meet in the central circle, so the group $L_{\mathrm{U}(\mathbb{B})}R_{\mathrm{U}(\mathbb{B})}$ has dimension $4+4-1=7$. The Euclidean form on $\mathbb{B}\cong\mathbb{C}^{4}$ is preserved by $\mathrm{U}(4)$, of dimension sixteen, and that is its whole isometry group; the algebra's own actions supply seven of the sixteen. A generic element of $\mathrm{U}(4)$ is not of the shape $L_{\tilde Q}R_{\tilde Q'}$, and the witness is the image of $e_t$: such a pair sends $e_t$ to the product $\tilde Q\tilde Q'$, whose norm has modulus one, while the unit vectors of $\mathbb{C}^{4}$ carry no such constraint. Verified on two hundred random unit vectors: the moduli of their norms run from $0.081$ to $0.990$, and none is one.
 
@@ -271,7 +271,7 @@ The minus sign at $2\pi$ is arithmetic, not an extra rule. The rotor is a square
 
 Complexifying, the same construction with a unit of $\mathbb{B}^{\times}_1$ gives the double cover of the Lorentz group,
 $$
-\mathbb{B}^{\times}_1\longrightarrow SO^{+}(1,3),\qquad \tilde U\longmapsto \mathrm{Sd}_{\tilde U}\big|_{\mathbb{B}_{\Psi}},
+\mathbb{B}^{\times}_1\longrightarrow SO^{+}(1,3),\qquad \tilde U\longmapsto \mathrm{Cg}_{\tilde U}\big|_{\mathbb{B}_{\Psi}},
 $$
 with kernel $\{\pm e_t\}$. The parameter count is why the complexification is needed: a Lorentz transformation has six parameters, the quaternion layer has real dimension four, so the group manifold does not fit in the algebra and the action on a four-dimensional space does.
 
@@ -319,7 +319,7 @@ The element is Hermitian, $\tilde U^{*}=\tilde U$, and its inverse is its quater
 
 The element is not $*$-unitary: $\tilde U^{*}\tilde U=\tilde U^{2}=\cosh\theta+i\sinh\theta\,\vec u$, which is not the identity. Verified at rapidity two: the dagger defect is $4.559$. The element is of norm one, so it lies in the norm-one group and in neither the compact group nor the coincidence.
 
-**The failure of multiplicativity is first order and the time dilation is second order.** The defect of $\mathrm{Sd}_{\tilde U}$ on a product grows like $\theta$, while the dilation $\cosh\theta-1$ grows like $\tfrac{\theta^{2}}{2}$. Verified on two elements of the informational sector at rapidity $0.02$: the defect is $2.83\times10^{-2}$ and $\cosh\theta-1$ is $2.0\times10^{-4}$, a ratio of $141$. So the algebra's multiplication has already failed by two parts in a hundred before the clock has moved by a part in ten thousand, and the non-multiplicativity of a boost is a first-order effect of the motion and not a relativistic correction to it.
+**The failure of multiplicativity is first order and the time dilation is second order.** The defect of $\mathrm{Cg}_{\tilde U}$ on a product grows like $\theta$, while the dilation $\cosh\theta-1$ grows like $\tfrac{\theta^{2}}{2}$. Verified on two elements of the informational sector at rapidity $0.02$: the defect is $2.83\times10^{-2}$ and $\cosh\theta-1$ is $2.0\times10^{-4}$, a ratio of $141$. So the algebra's multiplication has already failed by two parts in a hundred before the clock has moved by a part in ten thousand, and the non-multiplicativity of a boost is a first-order effect of the motion and not a relativistic correction to it.
 
 ### What the Adjoint Cannot See
 
@@ -339,7 +339,7 @@ So the adjoint of a boost is an automorphism, and it is not the boost. It is the
 
 The congruence of the same element does the opposite. It preserves the sectors and it moves the time axis:
 $$
-\mathrm{Sd}_{\tilde U}(e_t)=\tilde U\tilde U^{*}=\tilde U^{2}=\cosh\theta\,e_t+\sinh\theta\,i\vec u .
+\mathrm{Cg}_{\tilde U}(e_t)=\tilde U\tilde U^{*}=\tilde U^{2}=\cosh\theta\,e_t+\sinh\theta\,i\vec u .
 $$
 Verified at rapidity two: the image is $3.762196\,e_t$ plus the vector term, and $\cosh 2=3.762196$.
 
@@ -347,7 +347,7 @@ The time entry of the image of $e_t$ is the Euclidean norm of the element, $\lVe
 
 The congruence also fixes the two null lines of the Hermitian sector. The elements $e_t\pm i\vec u$ are null, $N(e_t\pm i\vec u)=1-1=0$, and the boost scales them by $e^{\pm\theta}$:
 $$
-\mathrm{Sd}_{\tilde U}(e_t\pm i\vec u)=e^{\pm\theta}(e_t\pm i\vec u).
+\mathrm{Cg}_{\tilde U}(e_t\pm i\vec u)=e^{\pm\theta}(e_t\pm i\vec u).
 $$
 Verified at rapidity two: both ratios are $3.762196=e^{2}$, one up and one down. The pair of null lines is fixed, the hyperboloid sheet between them is translated, and nothing leaves the sector. That is a Lorentz boost written in the algebra's own coordinates, with no matrix and no preferred basis.
 
@@ -371,7 +371,7 @@ which differs from $\tilde U_1\tilde U_2$ whenever the two axes are not parallel
 $$
 \tilde U_1\tilde U_2=\tilde U_{\mathrm{rot}}\,\tilde U_{\mathrm b},
 $$
-with $\tilde U_{\mathrm b}$ Hermitian of norm one, hence a boost, and $\tilde U_{\mathrm{rot}}$ $*$-unitary, acting on the Hermitian sector by congruence as a rotation — the central phase inside it acts trivially there. Since $\mathrm{Sd}$ is a homomorphism, $\mathrm{Sd}_{\tilde U_1}\mathrm{Sd}_{\tilde U_2}=\mathrm{Sd}_{\tilde U_{\mathrm{rot}}}\mathrm{Sd}_{\tilde U_{\mathrm b}}$: the boost is performed first, the rotation second.
+with $\tilde U_{\mathrm b}$ Hermitian of norm one, hence a boost, and $\tilde U_{\mathrm{rot}}$ $*$-unitary, acting on the Hermitian sector by congruence as a rotation — the central phase inside it acts trivially there. Since $\mathrm{Cg}$ is a homomorphism, $\mathrm{Cg}_{\tilde U_1}\mathrm{Cg}_{\tilde U_2}=\mathrm{Cg}_{\tilde U_{\mathrm{rot}}}\mathrm{Cg}_{\tilde U_{\mathrm b}}$: the boost is performed first, the rotation second.
 
 Verified at rapidities $1.1$ and $0.9$ about $\vec e_x$ and $\vec e_y$: the dagger defect of the product is $2.5793$, against $4.5589$ for the single boost of rapidity $2$; the Hermitian factor is the boost of rapidity $1.518$ about $0.615\vec e_x+0.789\vec e_y$; and the compact factor is $0.978423-0.206613\vec e_z$, a rotation through $0.4162$ rad.
 
@@ -500,8 +500,8 @@ with the quaternion conjugate on the right, and the leading minus is essential.
 
 **On the real form the dagger is minus the element.** The dagger negates the three vector units, so for real $v$ one has $v^{*}=-v$ and not $v^{*}=v$. Three consequences, each verified to $10^{-16}$ on a random unit $v$:
 
-- The two-sided operator alone, $\mathrm{Sd}_v(\tilde X)=v\tilde Xv^{*}=v\tilde X(-v)$, is the half turn about $v$: it fixes $v$, negates every $w\perp v$, and has determinant $+1$ on $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$. It is the same map as $\mathrm{Ad}_v$, since $v^{*}=v^{-1}$ on the norm-one slice.
-- The mirror is that half turn composed with the negation of the whole algebra, $\rho_v=-\mathrm{H}_v=-\mathrm{Sd}_v$. It negates $v$, fixes $v^{\perp}$ pointwise, has determinant $-1$ on the vector subspace and $+1$ on the eight-dimensional algebra, and its square is the identity.
+- The two-sided operator alone, $\mathrm{Cg}_v(\tilde X)=v\tilde Xv^{*}=v\tilde X(-v)$, is the half turn about $v$: it fixes $v$, negates every $w\perp v$, and has determinant $+1$ on $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$. It is the same map as $\mathrm{Ad}_v$, since $v^{*}=v^{-1}$ on the norm-one slice.
+- The mirror is that half turn composed with the negation of the whole algebra, $\rho_v=-\mathrm{H}_v=-\mathrm{Cg}_v$. It negates $v$, fixes $v^{\perp}$ pointwise, has determinant $-1$ on the vector subspace and $+1$ on the eight-dimensional algebra, and its square is the identity.
 - So the reflection is minus a congruence and not a congruence, and its determinant on the vector subspace is the minus sign. A formula that writes $v\tilde Xv^{*}$ for the mirror writes a rotation by $\pi$; the minus of the source's prose is right and the sign belongs in the display.
 
 **Cartan–Dieudonné then gives the whole orthogonal group of the vector subspace.** Every isometry of $\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ is a product of at most three mirrors $\rho_v$, so $\mathrm{O}(3)$ is generated by them and a reflection is an odd word. The mirrors are not motions of the algebra: a $\rho_v$ is minus a congruence of a unit, and no continuous path of units supplies the minus, because the congruence of a real unit quaternion has determinant $+1$ on the vector subspace. Interpreted physically, a mirror operation is not a rotation, and the algebra says so by putting the sign outside the two-sided operator.
@@ -575,7 +575,7 @@ so the compact group is a bundle over the two-sphere with a two-torus as fibre.
 
 **The fibre is the stabiliser of a pure state, and it is the two-torus.** The Hermitian idempotent $\tfrac12(e_t+i\vec u)$ is fixed by conjugation exactly by the pair of diagonal phases, so the stability group of a pure state is $T^{2}$ of real dimension two, and the central circle alone is too small by a circle. Verified: the diagonal two-torus fixes the idempotent of a real unit vector to $5.6\times10^{-17}$, and a generic unitary moves it by $0.575$. The sphere and the ball of §*The Level Sets* are then the same quotient read on two sectors, and the flag variety is the set of measurement bases because a basis of $\mathbb{C}^{2}$ is a pair of orthogonal pure states, each carrying its own phase.
 
-**In the matrix model the norm is the determinant.** Under $\mathbb{B}\cong M_2(\mathbb{C})$ an element is a $2\times2$ matrix and $N(\tilde Q)=\det$, verified symbolically and numerically: the determinant of $Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ mapped to $Q_t\sigma_0+Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3$ is $Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}$. The compact slice is therefore the unitary matrices with the norm a phase, and that is why the quotient by $S^{3}$ is the norm's circle rather than something larger.
+**In the matrix model the norm is the determinant.** Under $\mathbb{B}\cong M_2(\mathbb{C})$ an element is a $2\times2$ matrix and $N(\tilde Q)=\det$, verified symbolically and numerically: the determinant of the image $\mathsf{M}_2(\tilde Q)$ of $Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, with $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The compact slice is therefore the unitary matrices with the norm a phase, and that is why the quotient by $S^{3}$ is the norm's circle rather than something larger.
 
 **A point of the flag variety is a measurement basis.** A complete flag of $\mathbb{C}^{2}$ is a line inside a plane; the plane is the whole space, so the flag is one line, and the line together with its orthogonal complement is a pair of orthogonal pure states. The two-torus is the pair of their phases, so the quotient is the pair itself, and the sphere carries two readings: the pure states of *Idempotents, Ideals and Observables*, where they are the Hermitian idempotents $\tfrac12(e_t+i\vec u)$ over the real unit vectors, and the bases in which a complete measurement is stated. The two coincide because a pure state is a line and a pair of outcomes is a pair of lines, and the space of each is $P^{1}$ in two dimensions.
 
@@ -653,7 +653,7 @@ The group is not the unit group of the algebra and is not contained in it. It is
 
 Which operators of the group are supplied by the algebra's elements? The mathematics answers by families.
 
-Left and right multiplication are isometries exactly for the central phases: $L_{\tilde Q}$ and $R_{\tilde Q}$ are $J$-unitary if and only if $\tilde Q\in S^{1}e_t$. The two-sided operator is an isometry exactly on the modulus-one slice: $\mathrm{Sd}_{\tilde Q}$ is $J$-unitary if and only if $\lvert N(\tilde Q)\rvert=1$. Verified on forty norm-one units: the congruence is a Krein isometry to $2.1\times10^{-14}$, and the adjoint of the same units fails by $168$.
+Left and right multiplication are isometries exactly for the central phases: $L_{\tilde Q}$ and $R_{\tilde Q}$ are $J$-unitary if and only if $\tilde Q\in S^{1}e_t$. The two-sided operator is an isometry exactly on the modulus-one slice: $\mathrm{Cg}_{\tilde Q}$ is $J$-unitary if and only if $\lvert N(\tilde Q)\rvert=1$. Verified on forty norm-one units: the congruence is a Krein isometry to $2.1\times10^{-14}$, and the adjoint of the same units fails by $168$.
 
 So the algebra's contribution is
 $$
@@ -845,11 +845,11 @@ The entry is an arrangement, and the arrangement has edges.
 
 ## Summary
 
-The algebra has one group of units and two actions on itself. The adjoint $\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$ preserves the product, has kernel the centre and image $PGL_2(\mathbb{C})\cong SO^{+}(1,3)$. The congruence $\mathrm{Sd}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ preserves the two Hermitian sectors, scales the norm by $\lvert N(\tilde U)\rvert^{2}$, has kernel the central circle and image of dimension seven. The two coincide exactly on the $*$-unitary slice, and that coincidence is the sense in which a rotation is a symmetry and a boost is not: a rotation is $*$-unitary, a boost is not.
+The algebra has one group of units and two actions on itself. The adjoint $\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$ preserves the product, has kernel the centre and image $PGL_2(\mathbb{C})\cong SO^{+}(1,3)$. The congruence $\mathrm{Cg}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ preserves the two Hermitian sectors, scales the norm by $\lvert N(\tilde U)\rvert^{2}$, has kernel the central circle and image of dimension seven. The two coincide exactly on the $*$-unitary slice, and that coincidence is the sense in which a rotation is a symmetry and a boost is not: a rotation is $*$-unitary, a boost is not.
 
-The two one-sided actions complete the picture. Left and right multiplication are representations of the same group on the algebra as a module: they preserve the definite form, do not preserve the product and do not preserve the sectors, and they carry the element rather than the frame. The congruence of the compact slice factors through them, $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, and the group the algebra's actions generate on itself has dimension seven inside the sixteen of $\mathrm{U}(4)$, the same seven of sixteen as in the indefinite case.
+The two one-sided actions complete the picture. Left and right multiplication are representations of the same group on the algebra as a module: they preserve the definite form, do not preserve the product and do not preserve the sectors, and they carry the element rather than the frame. The congruence of the compact slice factors through them, $\mathrm{Cg}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, and the group the algebra's actions generate on itself has dimension seven inside the sixteen of $\mathrm{U}(4)$, the same seven of sixteen as in the indefinite case.
 
-The reflections of the vector subspace are the negated congruences of real unit vectors. On the real form the dagger negates a vector, so $\mathrm{Sd}_v$ is a half turn of determinant $+1$ and the mirror is $\rho_v=-v\tilde Xv^{\natural}$, of determinant $-1$ on the vector subspace and $+1$ on the algebra; Cartan–Dieudonné generates $\mathrm{O}(3)$ from at most three of them, and no path of units supplies the minus sign.
+The reflections of the vector subspace are the negated congruences of real unit vectors. On the real form the dagger negates a vector, so $\mathrm{Cg}_v$ is a half turn of determinant $+1$ and the mirror is $\rho_v=-v\tilde Xv^{\natural}$, of determinant $-1$ on the vector subspace and $+1$ on the algebra; Cartan–Dieudonné generates $\mathrm{O}(3)$ from at most three of them, and no path of units supplies the minus sign.
 
 The unit group is $\mathbb{B}^{\times}\cong GL_2(\mathbb{C})$ of dimension eight, with norm-one part $\mathbb{B}^{\times}_1\cong SL_2(\mathbb{C})$ of dimension six and maximal compact part $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ of dimension four. The two middle groups intersect in $S^{3}$. Over $\mathbb{C}$ every automorphism is inner and $\mathrm{Aut}_{\mathbb{C}}\cong PGL_2(\mathbb{C})$; over $\mathbb{R}$ the group gains exactly one component, the coset of complex conjugation, which is conjugate-linear, not inner, and the algebraic shape of an antiunitary operator. The derivations are the traceless part, of dimension six, and they do not grow over $\mathbb{R}$.
 
@@ -868,7 +868,7 @@ The isometry group of the fourth form is $\mathrm{U}(1,3)$ of dimension sixteen,
 | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ | $*$-unitary group; the compact slice; real dimension $4$ |
 | $S^{3}=Sp(1)$ | unit quaternions; the rotations |
 | $\mathrm{Ad}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$ | adjoint action; the automorphism |
-| $\mathrm{Sd}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ | congruence; the two-sided operator; the motion |
+| $\mathrm{Cg}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ | congruence; the two-sided operator; the motion |
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$, $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ | one-sided actions; the module action; the spinor |
 | $\rho_v(\tilde X)=-v\tilde Xv^{\natural}$ | reflection in $v^{\perp}$ on the vector subspace; minus a congruence |
 | $\mathrm{U}(4)$ | isometry group of the Euclidean form on $\mathbb{B}\cong\mathbb{C}^{4}$; real dimension $16$ |

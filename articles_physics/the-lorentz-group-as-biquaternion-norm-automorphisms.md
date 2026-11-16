@@ -99,8 +99,8 @@ The matrix realization makes the form and its automorphisms concrete. With $\mat
 $$
 \mathsf{M}_2(\tilde{Q}) =
 \begin{pmatrix}
-Q_t - iQ_3 & -iQ_1 - Q_y\
--iQ_1 + Q_y & Q_t + iQ_3
+Q_t - iQ_z & -iQ_x - Q_y\\
+-iQ_x + Q_y & Q_t + iQ_z
 \end{pmatrix},
 \qquad
 \det\mathsf{M}_2(\tilde{Q}) = Q_t^2+Q_x^2+Q_y^2+Q_z^2 = \langle\tilde{Q}\rangle_{\natural}.
@@ -306,7 +306,7 @@ The source's matrix realization differs from the $\mathsf{M}_2$ of the conventio
 $$
 \tilde{Q}\ \longmapsto\
 \begin{pmatrix}
-z_0+z_3 & z_1-iz_2\
+z_0+z_3 & z_1-iz_2\\
 z_1+iz_2 & z_0-z_3
 \end{pmatrix},
 \qquad
@@ -336,7 +336,7 @@ $$
 T \longmapsto T , \qquad \vec X \longmapsto R\,\vec X ,
 $$
 
-a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\tilde{Ξ}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
+a scalar and a 3-vector, which is the source's remark that $T$ is invariant under real 3-rotations. Under an **imaginary** rotation by $i\theta_{\mathrm{rpd}}$ in the plane of a pair of components — the complementary, non-compact part of $SO(3,\mathbb{C})$ — with $z_3=0$ so that $\vec X$ lies along the third axis, one gets
 
 $$
 T \longmapsto \cosh 2\theta_{\mathrm{rpd}}\,T + \sinh 2\theta_{\mathrm{rpd}}\,X_3 , \qquad

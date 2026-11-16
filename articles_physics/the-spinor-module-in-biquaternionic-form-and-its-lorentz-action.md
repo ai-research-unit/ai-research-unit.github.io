@@ -74,7 +74,7 @@ The subgroups relevant to the series sit inside it as follows.
 
 | Element | Characterization | Sector |
 |---|---|---|
-| Pure boost $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\zeta}{2}\,e_t+i\sinh\frac{\zeta}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{B}_{\Psi}$ |
+| Pure boost $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Hermitian, norm one | $\mathbb{B}_{\Psi}$ |
 | Pure rotation $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | Real quaternion, norm one | $\mathbb{B}_{H}$ |
 | General $\tilde U_{\mathrm{lor}}=\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Norm one | $\mathbb{B}$ |
 
@@ -123,10 +123,10 @@ No two-sided action appears. That is the defining feature of the module: one fac
 
 ### Boosts and Rotations as Exponentials
 
-A boost along the direction $\vec u_{\mathrm b}$ with rapidity $\zeta$ is the exponential of its generator, because the generator squares to the unit:
+A boost along the direction $\vec u_{\mathrm b}$ with rapidity $\theta_{\mathrm{rpd}}$ is the exponential of its generator, because the generator squares to the unit:
 
 $$
-\tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\Bigr),
+\tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\Bigr),
 \qquad (i\vec u_{\mathrm b})^2=e_t .
 $$
 

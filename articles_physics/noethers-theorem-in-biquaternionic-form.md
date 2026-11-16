@@ -72,7 +72,7 @@ $$
 the uniform signs being what the $\natural$ conjugation supplies. The time term is nevertheless negative, because $\partial/\partial R_t=\partial/\partial i r'_t$ acts on both factors and two applications of it give $-\partial^2/\partial {r'_t}^2$; in the real coordinates $x_\mu=(r'_{t},r_x,r_y,r_z)$ the same expression reads
 
 $$
-\mathcal{L} = -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
+\mathcal{L} = -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
 $$
 
 This is the form used with the energy–momentum tensor below. The Euler–Lagrange equation of $\mathcal{L}$ is the biquaternion Klein–Gordon equation
@@ -273,7 +273,7 @@ $$
 \qquad (\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)).
 $$
 
-The mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ follows, since $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-(E/c)^2+\vec p^{\,2}$ and $E^2=\vec p^{\,2}c^2+m^2c^4$. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}_{\Phi}/d\tau = 0$, because $\mathrm{Lag}$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2) + i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ with $\tilde{Ξ} = 1.2$, the conjugation being $\tilde U\tilde P_{\Phi}\tilde U^{*}$: the result is $E' = 1.206$ and $p'_x = -0.674$, which are the component formulas $E'=\cosh\theta_{\mathrm{rpd}}\,E-\sinh\theta_{\mathrm{rpd}}\,p_x$ and $p'_x=\cosh\theta_{\mathrm{rpd}}\,p_x-\sinh\theta_{\mathrm{rpd}}\,E$, and the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
+The mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$ follows, since $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-(E/c)^2+\vec p^{\,2}$ and $E^2=\vec p^{\,2}c^2+m^2c^4$. Translation invariance is thus the symmetry whose Noether charge is the four-momentum; the four-momentum is conserved for a free particle, $d\tilde{P}_{\Phi}/d\tau = 0$, because $\mathrm{Lag}$ has no explicit $\tilde{Q}$-dependence. As an independent check, a particle with $m = c = 1$, $\vec p = (0.6,0,0)$ and $E = \sqrt{1.36}$ was boosted by the rotor $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2) + i\sinh(\theta_{\mathrm{rpd}}/2)\vec e_x$ with $\theta_{\mathrm{rpd}} = 1.2$, the conjugation being $\tilde U\tilde P_{\Phi}\tilde U^{*}$: the result is $E' = 1.206$ and $p'_x = -0.674$, which are the component formulas $E'=\cosh\theta_{\mathrm{rpd}}\,E-\sinh\theta_{\mathrm{rpd}}\,p_x$ and $p'_x=\cosh\theta_{\mathrm{rpd}}\,p_x-\sinh\theta_{\mathrm{rpd}}\,E$, and the biquaternion norm is $-1$ in both frames, confirming that the Noether charge transforms as a four-vector.
 
 ### The Conservation Law for a System, Stated Correctly
 
@@ -340,8 +340,8 @@ $$
 with the scalar Lagrangian of the same coordinates,
 
 $$
-\mathcal{L}_{\mathrm{scl},\xi} = \sum_\mu\frac{\partial{\xi_{\mathrm{scl}}}^*}{\partial R_\mu}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\mu} + k_m^{2}|\xi_{\mathrm{scl}}|^2
-= -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 .
+\mathcal{L}_{\mathrm{scl},\xi} = \sum_\mu\frac{\partial{\xi_{\mathrm{scl}}}^*}{\partial R_\mu}\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\mu} + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2
+= -\left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 .
 $$
 
 Here $x_\mu=(r'_{t},r_x,r_y,r_z)$ are the real coordinates, the chart of $Q_\mu$ with the $i$ of the time coefficient removed, $Q_t=i q'_t$: $Q_0=i q'_t$ carries the $i$, while $x_0=r'_{t}$ does not. Both indices of $T$ are low, the first the row. The coefficient of $\mathcal{L}_{\mathrm{scl},\xi}$ is the plain form of the two units, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$: plus on the time entry and minus on the three space entries. The derivative index of the conservation law carries one minus on the time direction and none on the three space directions, and that minus is the square of the $i$ in $Q_t=i q'_t$, spent once and written out. Translation invariance gives
@@ -353,7 +353,7 @@ $$
 on shell. Its time–time component is the energy density,
 
 $$
-T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2 > 0,
+T_{00} = \left|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\right|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2 > 0,
 $$
 
 positive for every configuration because each term is a square. This was checked by recomputation on an on-shell superposition of two plane waves: the four divergences $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta\nu}/\partial r_\eta$ vanish to $10^{-10}$, the tensor is symmetric, and $T_{00}$ equals the expression above.
@@ -374,7 +374,7 @@ the last equality being the Poynting theorem. The factor $i$ is uniform across t
 
 ### A Caution on the $i r'_t$ Convention
 
-The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}|\xi_{\mathrm{scl}}|^2$, with the mass wave number $k_m=mc/\hbar$ and its reciprocal $k_m=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=i q'_t$; the tensor lives in $x_\mu=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
+The energy density is not $\mathcal{L}_{\mathrm{scl},\xi}$ and is not obtained from it by a flat sum: $T_{00}=\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ while $\mathcal{L}_{\mathrm{scl},\xi}=-\frac{1}{c^2}|\dot\xi_{\mathrm{scl}}|^2+|\nabla\xi_{\mathrm{scl}}|^2+k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$, with the mass wave number $k_m=mc/\hbar$ and its reciprocal $k_m=mc/\hbar$. The gradient and $\Box$ live in the $Q_\mu$ frame, where $Q_0=i q'_t$; the tensor lives in $x_\mu=(r'_{t},r_x,r_y,r_z)$, where the time component is real and the minus is written on the time derivative. Mixing the two charts produces the wrong sign on the time derivative, and the mismatch is the same $1/i^2=-1$ that makes the time term of the uniform $Q$-frame sum of $\mathcal{L}$ negative once written in the real coordinates. This is the same caution the energy–momentum exercise records for the trace.
 
 ## Lorentz Invariance and the Angular-Momentum Bivector
 
@@ -538,7 +538,7 @@ $$
 
 as the Noether charge, conserved for a free particle. The conservation law for a system is the vanishing of the **coordinate**-time derivative of the total, $d\tilde{P}_{\Phi,\mathrm{tot}}/dt' = c\,d\tilde{P}_{\Phi,\mathrm{tot}}/dr'_t = 0$; the parent's proper-time four-force cannot be summed across bodies, and the correct form is $\sum_a\tilde{\mathcal F}_{\mathrm{frc},a}/(c\gamma_a) = 0$, or the integrated $\sum_{\mathrm{in}}\tilde{P}_{\Phi} = \sum_{\mathrm{out}}\tilde{P}_{\Phi}$. A translation acts on a plane wave by the central unit-modulus phase $\exp(-i\theta_{\mathrm{pwp}})$, with $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_{\Phi,0}^{\natural}) = \vec k_\Phi\cdot\vec R_0-\omega r'_{t,0}/c$.
 
-The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta\nu}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}|\xi_{\mathrm{scl}}|^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
+The field translation current is the canonical energy–momentum, $-\partial T_{0\nu}/\partial x_0+\sum_\eta\partial T_{\eta\nu}/\partial r_\eta = 0$ on shell in the real coordinates, with positive energy density $T_{00} = |\partial\xi_{\mathrm{scl}}/\partial r'_t|^2 + |\nabla\xi_{\mathrm{scl}}|^2 + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$. Rank two cannot be one biquaternion, so the framework packages it bilinearly; the Maxwell object $\tilde{W}_{\Psi} = \tfrac12\tilde{F}\tilde{F}^{*}$ is its time row, and $\mathrm{Sc}(\tilde\nabla_\Phi\tilde{W}_{\Psi}) = \frac{i}{c}\vec J\cdot\vec E$ is the energy law it carries. Lorentz invariance gives the angular-momentum bivector $\tilde L = \tfrac12\sum L_{\mu\nu}\,e^{\natural}_\mu e_\nu$, with the rank-three field current reduced to the rank-two particle bivector only when the spin term vanishes. The theorem is standard; the algebra supplies the home of each conserved object and the compact form of its divergence, and it supplies no conservation law the symmetries did not already give.
 
 ## Summary of Notation
 
@@ -560,7 +560,7 @@ The field translation current is the canonical energy–momentum, $-\partial T_{
 | $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi} = iE/c\,e_t + \vec p$ | Four-momentum, Noether charge of translation; real energy and momentum, so in $\mathbb{B}_{\Phi}$ |
 | $\tilde{\mathcal F}_{\mathrm{frc},a} = d\tilde{P}_{\Phi,a}/d\tau_a$ | Four-force (proper-time derivative; not summable) |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Complex biquaternion scalar field |
-| $\mathcal{L} = \sum_\mu(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\mu)(\partial\xi_{\mathrm{scl}}/\partial R_\mu) + k_m^{2}|\xi_{\mathrm{scl}}|^2$ | Field Lagrangian density, $Q$ frame |
+| $\mathcal{L} = \sum_\mu(\partial{\xi_{\mathrm{scl}}}^{*}/\partial R_\mu)(\partial\xi_{\mathrm{scl}}/\partial R_\mu) + k_m^{2}\lvert\xi_{\mathrm{scl}}\rvert^2$ | Field Lagrangian density, $Q$ frame |
 | $\tilde{J}_{\Phi} = i[(\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ} - \tilde{Ξ}^{*}\tilde\nabla_\Phi\tilde{Ξ}]$ | Central-phase Noether current, in $\mathbb{B}_{\Phi}$ |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = \langle\tilde\nabla_\Phi,\tilde J_{\Phi}\rangle_{\natural} = \sum_\mu\partial J_\mu/\partial R_\mu$ | Divergence of the current, plain sum |
 | $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$ | Maxwell source $\sqrt{\mu}\,\tilde J_{\Phi}$; $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ is charge conservation |

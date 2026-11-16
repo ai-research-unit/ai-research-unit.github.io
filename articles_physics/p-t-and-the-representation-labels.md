@@ -97,7 +97,7 @@ $$
 C_2=m^{2}c^{2}\lvert\vec S\rvert^{2}=\hbar^{2}m^{2}c^{2}s(s+1).
 $$
 
-The computation is verified in the spin-$\tfrac12$ representation of the Lorentz algebra: with $\tilde P=(mc,0,0,0)$, the four Pauli–Lubanski generators come out as $W_0=0$ and $\vec W=-mc\vec J$, and $C_2=\tfrac34\hbar^{2}m^{2}c^{2}$, which is $s(s+1)$ at $s=\tfrac12$.
+The computation is verified in the spin-$\tfrac12$ representation of the Lorentz algebra: with $\tilde P=(mc,0,0,0)$, the four Pauli–Lubanski generators come out as $W_0=0$ and $\vec W=mc\vec S$, with $\vec S$ the Hermitian spin operator so that $\vec S^{2}=+s(s+1)$, and $C_2=\tfrac34\hbar^{2}m^{2}c^{2}$, which is $s(s+1)$ at $s=\tfrac12$.
 
 ### Why $C_2$ Is the Spin
 

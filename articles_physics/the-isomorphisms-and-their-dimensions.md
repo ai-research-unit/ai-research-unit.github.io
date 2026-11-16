@@ -79,7 +79,7 @@ A reviewer must not "correct" the assignment by making the three images real, an
 
 ### What the Isomorphism Is Not
 
-It is an isomorphism of associative algebras and nothing more. It is not an isomorphism of algebras with the corpus's involution ${}^{*}$: the star of an element is **not** the conjugate transpose of its image, and conjugating the entries of $\mathsf{M}_2(\tilde Q)$ on their own maps no element of the algebra to any element of the algebra. The three involutions are carried by explicit formulas, which *Element and Operator Representations: The Three Actions* records and this block uses.
+It is an isomorphism of associative algebras, and it also carries the corpus's involution ${}^{*}$: the star of an element is the conjugate transpose of its image, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. Conjugating the entries on their own is a different operation and is no involution of the algebra: it negates the images of $\vec e_x$ and $\vec e_z$ and leaves $\mathsf{M}_2(\vec e_y)$, whose array is real, untouched, so it maps no element to an element. The remaining conjugations $\natural$, $\bar{\phantom{Q}}$ and ${}^{\flat}$ are carried by explicit formulas, which *Element and Operator Representations: The Three Actions* records and this block uses.
 
 The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of *The Matrix Model: What It Sees and What It Hides*.
 
@@ -91,7 +91,7 @@ $$
 
 The identity is checked by multiplying the two diagonal entries, and it is the reason the numerical practice of this block runs through matrices: the algebra's quadratic form, its invertibility criterion, its group of units and its unit-norm group are all read from one determinant. Checking it on a hundred random elements gives agreement to machine precision, better than $10^{-14}$.
 
-The form $N$ is **complex**. On the element $e_t+i\vec e_x$ it takes the value $1-i^{2}=2$, and on $e_t+\vec e_x$ it takes the value $2$ as well, while the Minkowski interval of the corresponding four-vector is $1-1=0$ in the second case. The two forms are different functions, and they agree only on the slice named in the next article.
+The form $N$ is **complex**. On the element $e_t+i\vec e_x$ it takes the value $1+i^{2}=0$, and on $e_t+\vec e_x$ it takes the value $2$, while the Minkowski interval of the corresponding four-vector is $1-1=0$ in the second case. The two forms are different functions, and they agree only on the slice named in the next article.
 
 ## The Traceless Part Under the Commutator
 

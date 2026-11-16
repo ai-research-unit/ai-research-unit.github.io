@@ -502,7 +502,7 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\tilde{P}_{\Phi,a} = m_a\tilde{V}_{\Phi,a} = iE_a/c\,e_t+\vec p_a$ | Four-momentum of body $a$ |
 | $\tilde{P}_{\Phi} = \tilde{P}_{\Phi,1}+\tilde{P}_{\Phi,2}$ | Total four-momentum |
 | $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -M^2c^2$ | Invariant mass of the pair |
-| $\tilde{V}_{\Phi,2|1}$ | Relative four-velocity (body 2 in the rest frame of body 1) |
+| $\tilde{V}_{\Phi,2\vert1}$ | Relative four-velocity (body 2 in the rest frame of body 1) |
 | $\gamma_{\rm rel} = \cosh\theta_{\mathrm{rpd},\rm rel} = -\langle\tilde{V}_{\Phi,1},\tilde{V}_{\Phi,2}\rangle/c^2$ | Relative Lorentz factor |
 | $\theta_{\mathrm{rpd},\rm rel}$ | Relative rapidity, $v_{\rm rel} = c\tanh\theta_{\mathrm{rpd},\rm rel}$ |
 | $\tilde U_{\rm CM} = \sqrt{-i\tilde{P}_{\Phi}^{\natural}/(Mc)}$ | Boost biquaternion to the centre-of-momentum frame |

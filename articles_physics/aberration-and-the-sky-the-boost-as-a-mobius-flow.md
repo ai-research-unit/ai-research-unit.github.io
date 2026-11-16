@@ -73,7 +73,7 @@ The sign convention is that the moving observer sees the stars crowd toward the 
 Take the null element
 
 $$
-\tilde X=\tfrac12\bigl(e_t+i\sin\theta\,\tilde e_x+i\cos\theta\,\vec e_z\bigr)
+\tilde X=\tfrac12\bigl(e_t+i\sin\theta\,\vec e_x+i\cos\theta\,\vec e_z\bigr)
 $$
 
 and apply the boost $\tilde B=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+\,i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec e_z$ by the congruence, with $\tanh\theta_{\mathrm{rpd}}=\beta$:
@@ -88,7 +88,7 @@ $$
 \cos\theta'=\frac{\cos\theta+\beta}{1+\beta\cos\theta},
 $$
 
-which is the aberration formula. The computation is verified numerically in the block's model at three angles: $\theta=0.2$ gives $0.100250626$, $\theta=1$ gives $0.533293254$, $\theta=2.5$ gives $1.968525471$, each matching the formula to nine digits.
+which is the aberration formula. The computation is verified numerically in the block's model at three angles with $\beta=0.6$: $\theta=0.2$ gives $\theta'=0.100250626$, $\theta=1$ gives $\theta'=0.533293254$, $\theta=2.5$ gives $\theta'=1.968525471$, each matching the formula to nine digits.
 
 ### Why the Formula Is a Projective One
 

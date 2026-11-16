@@ -273,7 +273,9 @@ The spectrum of a rotor is two eigenvalues whose product is one, that is two rea
 |---|---|
 | $\mu_\pm$ | the two eigenvalues of a rotor, $\mu_+\mu_-=1$ |
 | $\Rho$, $\theta_{\mathrm{pha}}$ | modulus and phase of $\mu$, with $\theta_{\mathrm{pha}}=\theta_{\mathrm{axr}}/2$ on a rotation |
-| $N=Q_t^{2}+B^{2}$ | the norm, the product of the two eigenvalues |\n| $Q_t$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | scalar part and squared vector part of the rotor |\n| $\Pi_\pm$ | the eigenprojectors, Hermitian idempotents of trace one |
+| $N=Q_t^{2}+B^{2}$ | the norm, the product of the two eigenvalues |
+| $Q_t$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | scalar part and squared vector part of the rotor |
+| $\Pi_\pm$ | the eigenprojectors, Hermitian idempotents of trace one |
 | $\tilde V$ | the diagonalising unitary |
 | $\tilde W=\operatorname{diag}(e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2})$ | the residual freedom of the diagonalisation, a rotation through $\theta_{\mathrm{axr}}$ |
 

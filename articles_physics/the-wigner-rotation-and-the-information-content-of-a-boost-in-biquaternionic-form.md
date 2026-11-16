@@ -10,13 +10,13 @@ The findings are stated in advance.
 
 1. **The Wigner rotation is the compact part of a composed boost.** For unit-norm boost rotors $\tilde U_{\Psi,\mathrm b,1},\tilde U_{\Psi,\mathrm b,2}$ the product $\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1}$ is again unit-norm, but it is Hermitian only when the two boost directions commute; in general it factors as $\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1} = \tilde U_{\Psi,\mathrm b}\tilde U_{\mathrm{Wig}}$ with $\tilde U_{\mathrm{Wig}}$ a unit real quaternion, i.e. a rotation.
 2. **It is a cocycle.** The Wigner rotation satisfies $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\,\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$, the cocycle condition of a little-group bundle; a boost is a connection on that bundle and the rotation is its parallel transport.
-3. **A boost is a controlled rotation.** On a momentum superposition the boost acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde U_{\mathrm{Wig},i}$, a momentum-controlled $*$-unitary on the spin; it cannot be written as a momentum operation times a momentum-independent spin operation, and this is exactly why it can change spin entanglement while remaining globally $*$-unitary.
+3. **A boost is a controlled rotation.** On a momentum superposition the boost acts as $\sum_i\lvert p_{i,2}\rangle\langle p_i\rvert\otimes\tilde U_{\mathrm{Wig},i}$, a momentum-controlled $*$-unitary on the spin; it cannot be written as a momentum operation times a momentum-independent spin operation, and this is exactly why it can change spin entanglement while remaining globally $*$-unitary.
 4. **The information content is a rotation angle.** Everything a boost can do to a spin is summarised by the pair (angle, axis) of its Wigner rotation; the angle vanishes for collinear boosts and is maximal for transverse ones, and the entropy it can imprint on a transverse spin is $h((1+\cos\theta_{\mathrm{wgn}})/2)$.
 5. **A closed loop of boosts leaves a rotation.** The product of boosts around a closed path in velocity space is a pure rotation about the normal to the path, with an angle that grows with the area; this is the Thomas–Wigner holonomy, the curvature of the boost connection, and the relativistic content of Thomas precession.
 
 The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_x\vec e_y = \vec e_z$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{B}_{\Psi}$, anti-Hermitian sector $\mathbb{B}_{\Phi}$, and the matrix model $\mathsf M_2$ with $\vec e_\eta\mapsto-i\sigma_\eta$, $i\mapsto iI_2$. The boost rotor is
 $$
-\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = \exp((\tilde{Ξ}/2)\,i\vec u_{\mathrm b}), \qquad \langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = 1 ,
+\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} = \exp((\theta_{\mathrm{rpd}}/2)\,i\vec u_{\mathrm b}), \qquad \langle\tilde U_{\Psi,\mathrm b}\rangle_{\natural} = 1 ,
 $$
 with $\theta_{\mathrm{rpd}}$ the rapidity and $\vec u_{\mathrm b}$ the boost direction; the four-velocity of a particle boosted from rest is $\tilde{V}_{\Phi} = ic\,\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\Psi,\mathrm b}^{-1{}^{*}}$. The Wigner rotation is $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi}) = \tilde U_{\tilde{V}_{\Phi,2}}\tilde U_{\Psi,\mathrm b}\tilde U_{\tilde{V}_{\Phi}}^{-1}\in SU(2)$ with $\tilde{V}_{\Phi,2} = \tilde U_{\Psi,\mathrm b}\tilde{V}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}$.
 
@@ -40,7 +40,7 @@ $$
 $$
 The first bracket closes the rotation subalgebra, the second says that the boosts form a representation of the rotations, and the third — the decisive one — says that the **boosts do not close**: the commutator of two boosts is a rotation. This is the algebraic origin of everything that follows. A boost is the exponential of the pure element $\tfrac12 i\vec u_{\mathrm b}$ along its unit direction,
 $$
-\tilde U_{\Psi,\mathrm b} = \exp\!\bigl(\tilde{Ξ}\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
+\tilde U_{\Psi,\mathrm b} = \exp\!\bigl(\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\cdot i\mathbf{e}/2\bigr)
 = \cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t + i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b} ,
 $$
 which is Hermitian because $(\tfrac12 i\vec u_{\mathrm b})^2=+\tfrac14 e_t$, so the exponential is the hyperbolic sum written, not a phase. The set of pure boosts is therefore the exponential of a three-dimensional real subspace of Hermitian generators, and it is a symmetric space rather than a group: the product of two boosts is a boost times a rotation, by the third bracket. The correction is the BCH defect of the four-factor word, computed in *The Exponential Word and Its Boundary*: the formal exponents do not add, and the difference is the rotation.
@@ -99,38 +99,38 @@ a rotation about the axis normal to the plane of the two boost directions, by an
 Each boost is a Hamilton word of a degenerate kind. On the Hermitian axis $\vec U=i\vec u_{\mathrm b}$, which satisfies $\vec U^{2}=e_t$, the rotor is
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\tilde{Ξ}}{2}i\vec u_{\mathrm b}\Big)
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\theta_{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\Big)
 =\Rho\,e^{\vec U\Theta},
 \qquad
-\Rho=e_t,\quad \Theta=\frac{\tilde{Ξ}}{2}\in\mathbb{R},
+\Rho=e_t,\quad \Theta=\frac{\theta_{\mathrm{rpd}}}{2}\in\mathbb{R},
 $$
 
-and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\tilde{Ξ}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\tilde{Ξ}\vec u_{\mathrm b}/2$.
+and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\theta_{\mathrm{rpd}}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2$.
 The last expression is the reason the word *amplitude* needs care here. On the Hermitian axis $\vec U^{2}=+e_t$, so
 
 $$
-\exp\Big(\frac{\tilde{Ξ}}{2}i\vec u_{\mathrm b}\Big)=\cosh\frac{\tilde{Ξ}}{2}\,e_t+\sinh\frac{\tilde{Ξ}}{2}\,\vec U,
+\exp\Big(\frac{\theta_{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\Big)=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec U,
 $$
 
-a real scalar part that grows with $\tilde{Ξ}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\Rho e^{\vec U\Theta}$ with $\Rho=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\tilde{Ξ}/2)$.
+a real scalar part that grows with $\theta_{\mathrm{rpd}}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\Rho e^{\vec U\Theta}$ with $\Rho=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\theta_{\mathrm{rpd}}/2)$.
 
-**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,\eta}=\frac{\tilde{Ξ}_{k}}{2}i\vec u_\Phi$,
+**The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,k}=\frac{\theta_{\mathrm{rpd},k}}{2}i\vec u_k$,
 
 $$
 \operatorname{Log}\bigl(\exp\tilde{H}_{\Psi,2}\exp\tilde{H}_{\Psi,1}\bigr)
 =\tilde{H}_{\Psi,2}+\tilde{H}_{\Psi,1}+\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]+\cdots,
 \qquad
 \frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]
-=\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{4}\,\vec u_1\times\vec u_2 .
+=\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{4}\,\vec u_1\times\vec u_2 .
 $$
 
 The commutator is a real pure quaternion, hence a rotation generator, and its magnitude is the half-angle of the leading Wigner rotation. The leading angle is therefore
 
 $$
-\theta_{\mathrm{wgn}}\simeq\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{2}\sin\theta_{\mathrm{wgn}},
+\theta_{\mathrm{wgn}}\simeq\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{2}\sin\phi,
 $$
 
-where $\theta_{\mathrm{wgn}}$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\tilde{Ξ}\xi\sin\theta$ recorded in the summary, and for right angles and $\tilde{Ξ}_{1}=1,\tilde{Ξ}_{2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
+where $\phi$ is the angle between the two boost directions. For small rapidities this is the $\theta_{\mathrm{wgn}}\approx\frac12\theta_{\mathrm{rpd}}\xi\sin\phi$ recorded in the summary, and for right angles and $\theta_{\mathrm{rpd},1}=1,\theta_{\mathrm{rpd},2}=0.5$ it gives $14.32^\circ$ against the exact $12.9146^\circ$. The ratio is $0.90$ at these rapidities and $0.99996$ at $(0.02,0.01)$: the defect is the first term of a series, not the exact angle.
 
 **The exact factor.** The Cartan decomposition of the product is the exact statement,
 
@@ -197,7 +197,7 @@ $$
 $$
 For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\theta_{\mathrm{wgn}}$ and the entropy $h((1+\cos\theta_{\mathrm{wgn}})/2)$ that the boost imprints on a transverse spin:
 
-| $\tilde{Ξ}$ | $\theta_{\mathrm{wgn}}$ | $\cos\theta_{\mathrm{wgn}}$ | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ |
+| $\theta_{\mathrm{rpd}}$ | $\theta_{\mathrm{wgn}}$ | $\cos\theta_{\mathrm{wgn}}$ | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ |
 |---:|---:|---:|---:|
 | $0.25$ | $3.81681^\circ$ | $0.997782$ | $0.012486$ |
 | $0.50$ | $7.50939^\circ$ | $0.991423$ | $0.039902$ |
@@ -296,7 +296,7 @@ $$
 $$
 obeying the cocycle condition $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$. For a boost along $x$ of rapidity $1$ followed by one along $y$ of rapidity $0.5$, the rotation is $0.99366\,e_t+0.11246\,\vec e_z$, an angle of $12.9146^\circ$ about $\vec u_z$.
 
-Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde U_{\mathrm{Wig},i}$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_\eta] = -\epsilon_{j\eta l}\tfrac12\vec e_l$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$; it grows with the rapidity towards $\arctan(\sinh\xi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\theta_{\mathrm{wgn}})/2)$, approaches $h((1+1/\cosh\xi)/2)$ and reaches one bit only in the ultrarelativistic limit, while for small rapidities $\theta_{\mathrm{wgn}}\approx\tfrac12\theta_{\mathrm{rpd}}\xi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
+Operationally the boost is a **controlled rotation**: on a momentum superposition it acts as $\sum_i\lvert p_{i,2}\rangle\langle p_i\rvert\otimes\tilde U_{\mathrm{Wig},i}$, with the momentum as control and the branch-dependent Wigner rotation as the operation on the target. The factorisation into a momentum operation times a spin operation is forbidden by the bracket $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_\eta] = -\epsilon_{j\eta l}\tfrac12\vec e_l$, and the Wigner rotation is the obstruction. The angle is zero for collinear boosts and exact for transverse ones, $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$; it grows with the rapidity towards $\arctan(\sinh\xi)$, so the entropy imprinted on a transverse spin, $h((1+\cos\theta_{\mathrm{wgn}})/2)$, approaches $h((1+1/\cosh\xi)/2)$ and reaches one bit only in the ultrarelativistic limit, while for small rapidities $\theta_{\mathrm{wgn}}\approx\tfrac12\theta_{\mathrm{rpd}}\xi\sin\theta$. The information a boost carries is the pair (angle, axis) of its Wigner rotation, and a spin collinear with the boost carries none of it.
 
 Because the boost parameter space is curved, a closed path of boosts that returns the four-velocity to its starting value returns the spin only up to a rotation. For the loop $0\to\vec v_1\to\vec v_2\to0$ with a boost along $x$ of rapidity $a$ and one along $y$ of rapidity $b$, the holonomy is a rotation about $\vec u_z$ by $6.86557^\circ$, $12.91464^\circ$, $24.10915^\circ$, and $32.71532^\circ$ for $(a,b) = (0.5,0.5)$, $(1,0.5)$, $(1,1)$, $(1.5,1)$. This is the Thomas–Wigner holonomy, and its rate form is Thomas precession; it is the information a path of boosts carries beyond the information in its endpoints.
 
@@ -315,10 +315,10 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi})$ | Wigner rotation, $\in SU(2)$ |
 | $\theta_{\mathrm{wgn}}$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
-| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\tilde{Ξ}/2$ | Hamilton data of a boost on the Hermitian axis |
-| $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\tilde{Ξ}_{1}\tilde{Ξ}_{2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
+| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\theta_{\mathrm{rpd}}/2$ | Hamilton data of a boost on the Hermitian axis |
+| $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$ | Cocycle condition |
-| $\sum_i|p_{i,2}\rangle\langle p_i|\otimes\tilde U_{\mathrm{Wig},i}$ | Boost as a controlled rotation |
+| $\sum_i\lvert p_{i,2}\rangle\langle p_i\rvert\otimes\tilde U_{\mathrm{Wig},i}$ | Boost as a controlled rotation |
 | $\tan\theta_{\mathrm{wgn}} = \sinh\theta_{\mathrm{rpd}}\sinh\xi/(\cosh\theta_{\mathrm{rpd}}+\cosh\xi)$ | Exact angle at $\theta = \pi/2$ |
 | $h\!\left(\frac{1+\cos\theta_{\mathrm{wgn}}}{2}\right)$ | Spin entropy imprinted on a transverse spin |
 | $\tilde{P}_{\Phi} = \tilde U_{\vec v_2}\tilde U_{\Psi,\mathrm b,y}(b)\tilde U_{\Psi,\mathrm b,x}(a)$ | Holonomy of a closed velocity loop |
@@ -327,8 +327,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 ## Further Reading
 
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group," *Annals of Mathematics* **40** (1939) 149–204, for the little group and the original Wigner rotation.
-- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Hamilton angle, the two regimes and the BCH defect.
-- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Cartan amplitude and the word.
+- [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the Hamilton angle, the two regimes, the Cartan amplitude and the BCH defect.
 - *The Root Pairing of the Polar Decomposition of Biquaternions*, for the Hamilton angle with a complex axis.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the precession of the spin of an accelerated electron.
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the detailed kinematical derivation.

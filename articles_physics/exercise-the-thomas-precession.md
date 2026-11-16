@@ -300,7 +300,7 @@ along $\vec a\times\vec v$, and the non-relativistic limit $\vec\omega_T\approx\
 | $\tilde{P}_{\Phi}=m\tilde{V}_{\Phi}=iE/c\,e_t+\vec p$ | Four-momentum |
 | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}=d\tilde{P}_{\Phi}/d\tau$ | Four-force, in $\mathbb{B}_{\Phi}$ |
 | $\gamma=(1-\vec v^2/c^2)^{-1/2}$ | Lorentz factor |
-| $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=v/c$ | Rapidity; $v=|\vec v|$, $\vec u_v=\vec v/v$ |
+| $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=v/c$ | Rapidity; $v=\lvert\vec v\rvert$, $\vec u_v=\vec v/v$ |
 | $\tilde U_{\vec v}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_v$ | Lab-to-rest boost rotor, Hermitian, in $\mathbb{B}_{\Psi}$ |
 | $\vec a=c\,d\vec v/dr'_t$, $\vec a_\perp$ | Lab acceleration; its part perpendicular to $\vec v$ |
 | $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{-1}$ | Rotor between neighbouring rest frames |

@@ -13,7 +13,7 @@ with the limit $\Rho\to0$ understood as the identity plus $\tilde X$. One formul
 
 The article then states something that is often asserted wrongly. The exponential of the traceless algebra is **not** onto the unit-norm group. It misses one conjugacy class, the class of $-e_t$ plus a nonzero nilpotent, and the missing class is exactly what produces the "$\pi$ rotation" of the double cover at the level of the algebra. The exponential of the **full eight-dimensional algebra** is onto the group of units, by a different and classical theorem, and the difference between the two statements is the central direction.
 
-The article assumes *The Group of Unit-Norm Biquaternions* for the group and its dimension, *The Six Generators and Their Commutators* for the algebra, and *The Two Casimirs of the Lorentz Algebra* for the labels. It feeds *A Frame Is a Boost Times a Rotation: The Cartan Word* and *The Exponential Chart*'s use in *The Principal Series and the Complementary Series*.
+The article assumes *The Group of Unit-Norm Biquaternions* for the group and its dimension, *The Six Generators and Their Commutators* for the algebra, and *The Two Casimirs of the Lorentz Algebra* for the labels. It feeds *A Frame Is a Boost Times a Rotation: The Cartan Word* and *The Principal Series and the Complementary Series*.
 
 ## The Exponential of a Biquaternion
 

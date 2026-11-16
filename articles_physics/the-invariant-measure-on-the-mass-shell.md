@@ -120,7 +120,7 @@ The check, with $m=c=1$ in the arithmetic: at $\vec v=(0.3,0.4,0.5)$ the Jacobia
 In terms of the direction and the energy,
 
 $$
-\frac{d^{3}p}{2E}=\tfrac12\,E\,dE\,d\Omega ,
+\frac{d^{3}p}{2E}=\tfrac12\,p\,dE\,d\Omega ,
 $$
 
 where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE$, the second because $p^{2}=E^{2}-m^{2}c^{2}$.
@@ -133,7 +133,7 @@ So the measure factorises into a *radial* part and an *angular* part, and the an
 |---|---|---|
 | $\vec p$ | $d^{3}p/(2E)$ | yes |
 | $\vec v$ | $m^{2}c^{2}d^{3}v/2(1-v^{2})^{2}$ | yes |
-| $E,\Omega$ | $\tfrac12E\,dE\,d\Omega$ | yes in the angular part only |
+| $E,\Omega$ | $\tfrac12\,p\,dE\,d\Omega$ | yes in the angular part only |
 
 The third row's caveat is the point: $d\Omega$ alone is invariant under rotations but not under boosts, and $E$ transforms under boosts, so the factorisation is useful only for rotation-invariant integrands.
 
@@ -184,9 +184,9 @@ There are three standard normalisations, and they differ by powers of $2E$ and $
 
 | convention | inner product of momentum states |
 |---|---|
-| covariant with $(2\pi)^{3}$ | $\langle\vec p|\vec q\rangle=2E_{\vec p}(2\pi)^{3}\delta^{3}(\vec p-\vec q)$ |
-| covariant without $(2\pi)^{3}$ | $\langle\vec p|\vec q\rangle=2E_{\vec p}\delta^{3}(\vec p-\vec q)$ |
-| non-relativistic | $\langle\vec p|\vec q\rangle=\delta^{3}(\vec p-\vec q)$, with $\sqrt{2E}$ absorbed into the state |
+| covariant with $(2\pi)^{3}$ | $\langle\vec p\vert\vec q\rangle=2E_{\vec p}(2\pi)^{3}\delta^{3}(\vec p-\vec q)$ |
+| covariant without $(2\pi)^{3}$ | $\langle\vec p\vert\vec q\rangle=2E_{\vec p}\delta^{3}(\vec p-\vec q)$ |
+| non-relativistic | $\langle\vec p\vert\vec q\rangle=\delta^{3}(\vec p-\vec q)$, with $\sqrt{2E}$ absorbed into the state |
 
 The three are related by absorbing $\sqrt{2E}$ into the state's normalisation and by a power of $2\pi$. The block uses the covariant one, because it makes the measure's invariance manifest: the identity operator reads
 

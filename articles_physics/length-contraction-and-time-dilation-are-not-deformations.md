@@ -52,19 +52,19 @@ To measure the length of a moving rod, an observer marks the positions of the tw
 Let the rod be at rest in $S'$ with ends at $x'=0$ and $x'=L_0$, and let $S'$ move at $\beta$ along $+x$ relative to $S$. The transformation is
 
 $$
-x=\gamma(x'+\beta t'),\qquad t=\gamma(t'+\beta x').
+x=\gamma(x'+\beta c\,t'),\qquad t=\gamma\bigl(t'+\beta x'/c\bigr).
 $$
 
 The observer in $S$ takes the two ends at the same $t$, which is **not** the same $t'$:
 
 $$
-\Delta t=0\ \Longrightarrow\ \Delta t'=-\beta\Delta x',
+\Delta t=0\ \Longrightarrow\ \Delta t'=-\beta\,\Delta x'/c,
 $$
 
 and substituting,
 
 $$
-L=\Delta x=\gamma\bigl(\Delta x'+\beta\Delta t'\bigr)=\gamma\bigl(L_0-\beta^{2}L_0\bigr)=\frac{L_0}{\gamma}.
+L=\Delta x=\gamma\bigl(\Delta x'+\beta c\,\Delta t'\bigr)=\gamma\bigl(L_0-\beta^{2}L_0\bigr)=\frac{L_0}{\gamma}.
 $$
 
 So the factor $1/\gamma$ comes out of the simultaneity condition, and it comes out as $1-\beta^{2}$ times $\gamma$, which is exactly $1/\gamma$.

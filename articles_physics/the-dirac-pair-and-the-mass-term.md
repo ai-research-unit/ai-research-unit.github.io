@@ -22,7 +22,7 @@ both of complex dimension two, and they are **inequivalent**: no change of basis
 
 ### The Two Actions
 
-On the first, the rotation generators act by $\tfrac12i\vec\sigma$ and the boost generators by $\tfrac12\vec\sigma$; on the second the signs of the boost part are reversed. So the two spinors differ by the sign of the boost, which is the statement that they are conjugate representations and not equivalent ones.
+On the first, the generators act by left multiplication in the corpus's matrix model, $\vec e_\eta\mapsto-i\sigma_\eta$ for the rotations and $i\vec e_\eta\mapsto\sigma_\eta$ for the boosts, as *The Spinor Representation of the Lorentz Group in Biquaternionic Form* fixes them; multiplied by $\tfrac{i}{2}$ the same two read $\tfrac12\sigma_\eta$ and $\tfrac{i}{2}\sigma_\eta$, the normalisation in which the rotation generator is Hermitian and the boost generator carries the $i$. On the second the sign of the boost part is reversed relative to the rotation part. So the two spinors differ by the sign of the boost, which is the statement that they are conjugate representations and not equivalent ones.
 
 In the algebra, the first is the defining module $V_{1/2}=\mathbb{C}^{2}$ and the second is its conjugate $\overline{V_{1/2}}$. The algebra acts on the first by left multiplication, and the second is reached by complex conjugation. The corpus reserves the bar for complex conjugation and the star for the Hermitian conjugation built from it, and the exchange of the two chiralities on the module is what the corpus calls charge conjugation there; this article keeps the names apart and writes "complex conjugation" when it means the bar.
 
