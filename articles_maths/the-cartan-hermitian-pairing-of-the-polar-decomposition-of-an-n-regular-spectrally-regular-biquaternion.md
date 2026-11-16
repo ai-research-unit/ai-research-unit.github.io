@@ -11,7 +11,7 @@ $$
 = r\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
+The four factors are those of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *Exponential Polar Decomposition on the N-Regular Sector*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
 
 **The Cartan Hermitian pairing** is the grouping that multiplies the scale into the boost and the phase into the rotor:
 
@@ -45,7 +45,7 @@ The article takes the following results as established and does not prove them a
 | result | established in | used here for |
 |---|---|---|
 | the four factors, their ranges and their order | *The Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
-| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
+| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *Exponential Polar Decomposition on the N-Regular Sector*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
 | the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
 | the Hermitian and anti-Hermitian split | *Hermitian and Anti-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
@@ -484,7 +484,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues*, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the principal branch that fix the two exponents of the pairing.
-- [Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
+- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) and [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
 - [Hermitian and Anti-Hermitian Elements](hermitian-and-anti-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.

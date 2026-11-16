@@ -30,7 +30,7 @@ $$
 
 with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
 
-*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion*.
+*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition on the N-Regular Sector*.
 
 The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the $*$-unitary group.
 
@@ -172,5 +172,5 @@ The Cartan pairing is the one that needs no spectral data at all. It is defined 
 ## Further Reading
 
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the regular pairing.
-- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the word and the exact logarithm.
+- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the word and the exact logarithm.
 - [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the regrouping that keeps the real quaternion modulus.

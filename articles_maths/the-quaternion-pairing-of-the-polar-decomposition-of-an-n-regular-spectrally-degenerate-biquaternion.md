@@ -191,5 +191,5 @@ The pairing is therefore the same regrouping on both sides of the wall. The wall
 ## Further Reading
 
 - [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the unrestricted pairing.
-- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the word and the rigidity.
+- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the word and the rigidity.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the other pairing that survives the wall.

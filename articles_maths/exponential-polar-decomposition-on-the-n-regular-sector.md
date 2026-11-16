@@ -1,16 +1,8 @@
-# __Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion__
+# __Exponential Polar Decomposition on the N-Regular Sector__
 
 ## Introduction
 
-This article computes the exponential polar decomposition of a biquaternion that is N-regular and spectrally regular, that is, one with
-
-$$
-\langle\tilde Q\rangle_{\natural}\neq0,
-\qquad
-B^2=Q_x^2+Q_y^2+Q_z^2\neq0.
-$$
-
-The word is the four-factor product
+This article computes the exponential polar decomposition of a biquaternion of the **N-regular sector**, the set $N=\langle\tilde Q\rangle_{\natural}\neq0$. The word is the four-factor product
 
 $$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
@@ -22,14 +14,11 @@ $$
 
 with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition, computes the closed forms, and reads the word against the spectral decomposition.
 
-The spectral reading is the subject that distinguishes this article from the general theory. The element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis. The unit factor is diagonal in that basis, with eigenvalues $\mu_\pm=\lambda_\pm/\Rho$. The polar factors are diagonal in the same basis exactly when the element is normal, and that is exactly the case in which the two axes are parallel and the word collapses to a single exponential. In the general, non-normal case the eigenbasis is not a polar basis: the spectrum determines the two eigenvalues of the unit factor, but it does not determine the rapidity, the rotor angle or the axes. The worked examples show the gap numerically.
+The existence of the word is a property of the group of units alone. The second invariant, the vector form $B^2=Q_x^2+Q_y^2+Q_z^2$, decides only its shape. Off the wall $B^2\neq0$ the element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis, and the polar factors are diagonal in it exactly when the element is normal. On the wall the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, its minimal polynomial is a square, and its two angles are locked by $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.
 
-The companion article *Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion* treats the case $B^2=0$. The two articles are independent: each defines the word, proves existence and uniqueness, and develops the logarithm and the group law. This article does not use the companion, and the companion does not use this one. The boundary of the sector has two pieces: the null cone $\langle\tilde Q\rangle_{\natural}=0$, where the modulus vanishes, and the spectral cone $B^2=0$, where the eigenbasis degenerates while the word remains finite. The second piece is the doorway to the companion, and it is treated in §*The Two Walls*.
+The article assumes *The Polar Decomposition of an N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The Eigenbasis of a Spectrally Regular Biquaternion* for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector. The numerical cases are in *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*.
 
-The article assumes *The Polar Decomposition of an N-Regular Biquaternion* for the modulus–unit theorem, *Biquaternion Elementary Functions* for the exponential and the logarithm, and *The Eigenbasis of a Spectrally Regular Biquaternion* for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector; those are in the articles cited. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*.
-
-**The plan.** The word, its two unit factors and the seven data are boxed and proved in §*The Result in Terms of the Coordinates*. The domain is fixed in §*The Domain*. The word and its component form are stated in §*The Decomposition*. The spectral reading occupies §*The Spectral Reading*, with the eigenbasis, the normal case and the non-normal case. Existence and uniqueness are proved in §*Existence and Uniqueness*. The logarithm, the group law, the matrix picture and the exponential coordinates follow. §*The Two Walls* treats the boundary. The summary collects the formulas and the comparison between the polar and the spectral data.
-
+**The plan.** The word, its two unit factors and the seven data are boxed and proved in §*The Result in Terms of the Coordinates*, which also gives the boxes in the coordinates of the wall. The domain is fixed in §*The Domain*, with the normal form that the wall imposes. The word and its component form are stated in §*The Decomposition*. The spectral reading occupies §*The Spectral Reading*, with the eigenbasis, the normal case and the non-normal case. §*The Unipotent Unit Factor* and §*The Two Strata* prove the rigidity on the wall: the scalar constraint, the orthogonal frame and the closed form. Existence and uniqueness are proved in §*Existence and Uniqueness*. The logarithm, the group law, the matrix picture, the exponential coordinates and the two walls follow. The summary collects the formulas of both cases in one table.
 
 ## The Result in Terms of the Coordinates
 
@@ -186,6 +175,168 @@ $$
 \vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}.
 $$
 
+### The Boxes at the Wall
+
+The general boxes are stated for every unit. On the wall the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ evaluates them in closed shape, and the theorem below is that evaluation.
+
+**Setting.** Use the normal form of §*The Domain*, $\tilde Q=Q_t(e_t+\vec\Upsilon)$, and write
+
+$$
+\vec\Upsilon=\vec A+i\vec B,\qquad \vec A,\vec B\in\mathbb R^3,\qquad a=\lVert\vec A\rVert.
+$$
+
+Since $\vec\Upsilon^2=0$, one has $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$. In terms of the coordinates, write $Q_t=q_t+iq'_t$ and $Q_j=q_j+iq'_j$ for $j=x,y,z$, with the eight coefficients real, and put $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$. Then
+
+$$
+\vec A=\frac{q_t\,\vec q+q'_t\,\vec q'}{q_t^2+q_t'^2},\qquad
+\vec B=\frac{q_t\,\vec q'-q'_t\,\vec q}{q_t^2+q_t'^2},
+$$
+
+since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Upsilon=\vec Q\,Q_t^{-1}$.
+
+**Theorem (the word and its seven data).** On the Jordan part $a>0$, every $\tilde Q$ of the sector is
+
+$$
+\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
+$$
+
+with the two unit factors
+
+$$
+\boxed{\;\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b},\qquad
+\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}\;}
+$$
+
+and with the seven data determined by $Q_t,Q_x,Q_y,Q_z$. Here $\Rho$ is the principal square root of $Q_t^2$, that is, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part.
+
+$$
+\boxed{\;r=|Q_t|,\qquad
+\Rho=\begin{cases}Q_t,&\operatorname{Re}Q_t>0\ \text{or}\ \bigl(\operatorname{Re}Q_t=0,\ \operatorname{Im}Q_t>0\bigr),\\[2pt]-Q_t,&\text{otherwise},\end{cases}\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1\;}
+$$
+
+$$
+\boxed{\;\theta_{\mathrm{pha}}=\arg\Rho=\begin{cases}\arg Q_t,&\varepsilon=+1,\\[2pt]\arg(-Q_t),&\varepsilon=-1,\end{cases}\;}
+$$
+
+$$
+\boxed{\;\theta_{\mathrm{rpd}}=2\operatorname{arsinh}a\;}
+$$
+
+$$
+\boxed{\;\theta_{\mathrm{axr}}=\begin{cases}2\arctan a,&\varepsilon=+1,\\[2pt]2\pi-2\arctan a,&\varepsilon=-1.\end{cases}\;}
+$$
+
+$$
+\boxed{\;\vec u_{\mathrm b}=\frac{\vec B+\vec A\times\vec B}{a\sqrt{1+a^2}},\qquad
+\vec u_{\mathrm r}=\varepsilon\,\frac{\vec A}{a}\;}
+$$
+
+$$
+\boxed{\;\tilde u_{\mathrm r}=\varepsilon\,\frac{e_t+\vec A}{\sqrt{1+a^2}},\qquad
+\tilde U_{\mathrm b}=\sqrt{1+a^2}\,e_t+\frac{i}{\sqrt{1+a^2}}\bigl(\vec B+\vec A\times\vec B\bigr)\;}
+$$
+
+On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ if $\varepsilon=+1$, $\theta_{\mathrm{axr}}=2\pi$ if $\varepsilon=-1$; both axes are arbitrary.
+
+*Proof.*
+
+**The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\Rho^2=Q_t^2$, hence $\Rho=\pm Q_t$. The principal branch selects the sign displayed, and $r=|\Rho|=|Q_t|$, $\varepsilon=Q_t/\Rho=\pm1$. Writing $\Rho=re^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg\Rho$, with the principal argument in $(-\pi,\pi]$; since $\Rho=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.
+
+**The structure of $\vec\Upsilon$.** With $\vec\Upsilon=\vec A+i\vec B$,
+
+$$
+\vec\Upsilon^2=\vec A^2-\vec B^2+2i\vec A\cdot\vec B
+=\bigl(\lVert\vec B\rVert^2-\lVert\vec A\rVert^2\bigr)+2i\vec A\cdot\vec B,
+$$
+
+because $\vec A^2=-\lVert\vec A\rVert^2$ and $\vec B^2=-\lVert\vec B\rVert^2$ for real vectors. The vanishing of $\vec\Upsilon^2$ gives $\lVert\vec A\rVert=\lVert\vec B\rVert=a$ and $\vec A\cdot\vec B=0$.
+
+**The product $\tilde U\tilde U^*$.** The unit factor is $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ and its star conjugate is $\tilde U^*=\varepsilon(e_t-\bar{\vec\Upsilon})$. Hence
+
+$$
+\tilde U\tilde U^*=(e_t+\vec\Upsilon)(e_t-\bar{\vec\Upsilon})
+=e_t+\vec\Upsilon-\bar{\vec\Upsilon}-\vec\Upsilon\bar{\vec\Upsilon}.
+$$
+
+Now $\vec\Upsilon-\bar{\vec\Upsilon}=2i\vec B$, and, using $\vec A\cdot\vec B=0$ and $\lVert\vec A\rVert=\lVert\vec B\rVert=a$,
+
+$$
+\vec\Upsilon\bar{\vec\Upsilon}
+=(\vec A+i\vec B)(\vec A-i\vec B)
+=-2a^2-2i\,\vec A\times\vec B.
+$$
+
+Therefore
+
+$$
+\tilde U\tilde U^*=(1+2a^2)e_t+2i\bigl(\vec B+\vec A\times\vec B\bigr).
+$$
+
+**The boost.** Since $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r}$ $*$-unitary, $\tilde U\tilde U^*=\tilde U_{\mathrm b}^2$. With $\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$,
+
+$$
+\tilde U_{\mathrm b}^2=\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}.
+$$
+
+Comparing the scalar parts gives $\cosh\theta_{\mathrm{rpd}}=1+2a^2=1+2\sinh^2\frac{\theta_{\mathrm{rpd}}}{2}$, so $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{1+a^2}$ and $\theta_{\mathrm{rpd}}=2\operatorname{arsinh}a$. Comparing the vector parts gives $\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}=2(\vec B+\vec A\times\vec B)$. Since $\vec A\cdot\vec B=0$,
+
+$$
+\lVert\vec B+\vec A\times\vec B\rVert^2=\lVert\vec B\rVert^2+\lVert\vec A\times\vec B\rVert^2=a^2+a^4=a^2(1+a^2),
+$$
+
+so $2\lVert\vec B+\vec A\times\vec B\rVert=2a\sqrt{1+a^2}=\sinh\theta_{\mathrm{rpd}}$. This gives the boxes for $\vec u_{\mathrm b}$ and $\tilde U_{\mathrm b}$.
+
+**The rotor.** Put $c=\sqrt{1+a^2}$ and $w=\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}=(\vec B+\vec A\times\vec B)/c$, so that $\tilde U_{\mathrm b}=c\,e_t+iw$. The candidate
+
+$$
+\tilde u_{\mathrm r}=\varepsilon\,\frac{e_t+\vec A}{c}
+$$
+
+is a unit real quaternion, because $(e_t+\vec A)(e_t-\vec A)=e_t-\vec A^2=(1+a^2)e_t=c^2e_t$. Moreover, using $\vec B\vec A=-\vec A\times\vec B$ and $(\vec A\times\vec B)\vec A=a^2\vec B$,
+
+$$
+w(e_t+\vec A)=\frac{(\vec B+\vec A\times\vec B)(e_t+\vec A)}{c}=c\,\vec B,
+$$
+
+hence
+
+$$
+\tilde U_{\mathrm b}\tilde u_{\mathrm r}
+=(c\,e_t+iw)\,\varepsilon\,\frac{e_t+\vec A}{c}
+=\varepsilon\bigl(e_t+\vec A+i\vec B\bigr)
+=\varepsilon(e_t+\vec\Upsilon)=\tilde U.
+$$
+
+By the uniqueness of the polar decomposition, this is the rotor, and the box for $\tilde u_{\mathrm r}$ follows.
+
+**The angles.** From the box, $\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon/c$ and $\mathrm{Vect}\tilde u_{\mathrm r}=\varepsilon\vec A/c$. With $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon/c$ and $\sin\frac{\theta_{\mathrm{axr}}}{2}=a/c\ge0$. For $\varepsilon=+1$ this gives $\frac{\theta_{\mathrm{axr}}}{2}=\arctan a$; for $\varepsilon=-1$ it gives $\frac{\theta_{\mathrm{axr}}}{2}=\pi-\arctan a$. Hence the box for $\theta_{\mathrm{axr}}$, and
+
+$$
+\vec u_{\mathrm r}=\frac{\mathrm{Vect}\tilde u_{\mathrm r}}{\sin\frac{\theta_{\mathrm{axr}}}{2}}
+=\varepsilon\,\frac{\vec A}{a}.
+$$
+
+**The scalar line.** If $a=0$ then $\vec B=0$ and $\vec A=0$, so $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. Then $\theta_{\mathrm{rpd}}=0$, and the rotor is $\varepsilon e_t$, that is, $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=2\pi$ for $\varepsilon=-1$. Both axes are arbitrary.
+
+**Check.** For
+
+$$
+\tilde Q=e_t+\frac{i}{\sqrt2}\vec e_x+\vec e_y+\frac{i}{\sqrt2}\vec e_z,
+$$
+
+one has $\vec A=\vec e_y$, $\vec B=(\vec e_x+\vec e_z)/\sqrt2$, $a=1$, $Q_t=1$, $\varepsilon=1$. The boxes give
+
+$$
+\theta_{\mathrm{rpd}}=1.762747174,\qquad
+\theta_{\mathrm{axr}}=\frac{\pi}{2},\qquad
+\vec u_{\mathrm b}=\vec e_x,\qquad
+\vec u_{\mathrm r}=\vec e_y,\qquad
+\tilde u_{\mathrm r}=\frac{e_t+\vec e_y}{\sqrt2},\qquad
+\tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x.
+$$
+
 ## The Domain
 
 ### The Two Invariants
@@ -206,7 +357,7 @@ $$
 \Sigma_{11}=\{\tilde Q\in\mathbb{B}:\ N\neq0,\ B^2\neq0\}.
 $$
 
-The name is the one of *The Spectrum*: the element is N-regular when $N\neq0$, and spectrally regular when $B^2\neq0$. The two conditions are independent, and their four combinations are the four sectors of the algebra. This article treats the combination $11$; the companion treats $10$.
+The name is the one of *The Spectrum*: the element is N-regular when $N\neq0$, and spectrally regular when $B^2\neq0$. The two conditions are independent, and their four combinations are the four sectors of the algebra. This article treats the two combinations with $N\neq0$: the compact notation below writes $11$ for the regular case and $10$ for the wall. The combinations with $N=0$ are the boundary, treated in §*The Two Walls*.
 
 ### Five Descriptions
 
@@ -230,13 +381,51 @@ $$
 
 so $B^2\neq0$ is equivalent to $\operatorname{Sc}\tilde U\notin\{1,-1\}$.
 
-The last description is the one that separates this article from its companion: the two sectors are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of units.
+The last description separates the two nonzero-$N$ sectors: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of units, and the wall is the union of the two hyperplanes.
 
 ### Geometry
 
 The sector is the complement of the union $NB^2=0$ of the null cone and the spectral cone. It is open and dense in $\mathbb{B}$, of complex dimension $4$ and real dimension $8$. It is not a subgroup: $e_t$ has $B^2=0$ and lies outside, and the scalar line $\mathbb{C}^{\times}e_t$ lies entirely outside. It contains the pure vectors with $B^2\neq0$, such as $\vec e_x+\vec e_y$, for which $Q_t=0$ and the two eigenvalues are opposite. It also contains every Hermitian element with $B^2<0$ and $N\neq0$, such as $\sqrt2\,e_t+i\vec e_x$.
 
 The sector is connected, and it is not simply connected; the loop $t\mapsto e_t+\varepsilon e^{2\pi it}\vec e_x$ winds around the spectral cone. The topology is not used below beyond the parameter count.
+
+### The Normal Form at the Wall
+
+**Proposition (the normal form).** Every $\tilde Q\in\Sigma_{10}$ has a unique writing
+
+$$
+\boxed{\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr)},
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+Q_t\neq0,
+$$
+
+with $Q_t$ the scalar part and $\vec\Upsilon$ the vector part divided by $Q_t$.
+
+*Proof.* Since $B^2=0$ the vector part is null, $\vec Q^2=-B^2=0$. Since $N=Q_t^2+B^2=Q_t^2$ and $N\neq0$, the scalar part is nonzero. Put $\vec\Upsilon=\vec Q/Q_t$; then $\vec\Upsilon^2=\vec Q^2/Q_t^2=0$, and $\tilde Q=Q_te_t+\vec Q=Q_t(e_t+\vec\Upsilon)$. The writing is unique because $Q_t$ is the scalar part.
+
+The element is a scalar multiple of a unipotent element. The unipotent factor $e_t+\vec\Upsilon$ has norm one, because
+
+$$
+\langle e_t+\vec\Upsilon\rangle_{\natural}=1+\vec\Upsilon^2=1,
+$$
+
+and it is invertible, with inverse $e_t-\vec\Upsilon$.
+
+### The Unit Factor at the Wall
+
+The modulus is the principal square root of $N=Q_t^2$. Since $Q_t^2$ has the two square roots $\pm Q_t$, the modulus is $\Rho=\pm Q_t$, and the unit factor is
+
+$$
+\tilde U=\frac{\tilde Q}{\Rho}
+=\frac{Q_t}{\Rho}\bigl(e_t+\vec\Upsilon\bigr)
+=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),
+\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+$$
+
+The sign $\varepsilon$ is fixed by the branch of the modulus. It is $+1$ when $\Rho=Q_t$ and $-1$ when $\Rho=-Q_t$. The unit factor is therefore $\pm$unipotent, and the sign is the only trace of the scalar part that survives in it.
 
 ## The Decomposition
 
@@ -350,6 +539,7 @@ $$
 $$
 
 the real dimension of the group of units. The word is a coordinate system on that group, cut by the ranges of the two angles and of the phase. The two axes are points of $S^2$.
+
 
 ## The Spectral Reading
 
@@ -577,6 +767,174 @@ The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\t
 
 **Remark (the two decompositions are transverse).** The eigenbasis depends on the complex structure of the vector part; the polar frame depends on the Hermitian structure of the unit factor. The normal elements are the intersection: the elements for which the two frames coincide. The intersection is the normal set, $Q_t+\omega\vec u$ with $Q_t,\omega\in\mathbb{C}$ and $\vec u\in S^2$, of real dimension $2+2+2=6$; it is not open in the sector.
 
+
+## The Unipotent Unit Factor
+
+### The Scalar Constraint
+
+**Theorem (the rigidity of the word).** Let $\tilde Q\in\Sigma_{10}$ with word as above. Then
+
+$$
+\operatorname{Sc}\tilde U=\varepsilon=\pm1,
+\qquad
+\bigl(\tilde U-\varepsilon e_t\bigr)^2=0,
+$$
+
+and the parameters satisfy
+
+$$
+\boxed{\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon},
+\qquad
+\boxed{\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0}.
+$$
+
+*Proof.* By the normal form, $\tilde U=\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$. Its scalar part is $\varepsilon$, and
+
+$$
+\bigl(\tilde U-\varepsilon e_t\bigr)^2
+=\varepsilon^2\vec\Upsilon^2=0.
+$$
+
+The scalar part of the component form is $c_{\mathrm b}c_{\mathrm r}-i s_{\mathrm b}s_{\mathrm r}c$. It equals the real number $\varepsilon$, so its imaginary part vanishes, which gives the second equation, and its real part gives the first.
+
+The two equations are the whole constraint. The scalar part of the unit factor is a complex equation, and the unitarity of $\tilde U$ has already been used; the constraint is one complex equation on the six parameters of the unit factor, which is why the unipotent set has real dimension four.
+
+### The Orthogonal Frame
+
+**Theorem (the orthogonal frame).** On the Jordan part of $\Sigma_{10}$, the word has
+
+$$
+\theta_{\mathrm{rpd}}>0,
+\qquad
+\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\},
+\qquad
+\vec u_{\mathrm b}\perp\vec u_{\mathrm r},
+$$
+
+and the two angles are tied by
+
+$$
+\boxed{\Bigl\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\Bigr\rvert=\frac{1}{\cosh\frac{\theta_{\mathrm{rpd}}}{2}}},
+\qquad
+\varepsilon=\operatorname{sgn}\cos\frac{\theta_{\mathrm{axr}}}{2}.
+$$
+
+Conversely, every choice of $\theta_{\mathrm{axr}}\in(0,\pi)\cup(\pi,2\pi)$, of $\vec u_{\mathrm b}\in S^2$ and of $\vec u_{\mathrm r}$ in the great circle orthogonal to $\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ defined by the displayed relation, gives a word of an element of the Jordan part.
+
+*Proof.* On the Jordan part $\vec\Upsilon\neq0$, so $\tilde U\neq\varepsilon e_t$. If $\theta_{\mathrm{rpd}}=0$ then $c_{\mathrm b}=1$ and the first constraint gives $c_{\mathrm r}=\pm1$, so $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ and the component form is $\tilde U=\pm e_t$, a contradiction. Hence $\theta_{\mathrm{rpd}}>0$ and $s_{\mathrm b}>0$. If $\theta_{\mathrm{axr}}=0$ or $2\pi$ then $s_{\mathrm r}=0$ and the component form is again scalar. If $\theta_{\mathrm{axr}}=\pi$ then $c_{\mathrm r}=0$, and the first constraint gives $0=\pm1$, impossible. Hence $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and $s_{\mathrm r}>0$. The second constraint then forces $c=0$. The first gives $|c_{\mathrm b}c_{\mathrm r}|=1$, which is the displayed relation, and the sign of $c_{\mathrm r}$ is the sign of $\varepsilon$. The converse is a direct substitution: with orthogonal axes and the relation, the scalar part is $\varepsilon$ and the vector part is null, so the unit factor is unipotent and the element lies in the Jordan part.
+
+The frame is therefore orthogonal, and one of the two angles is a function of the other. The independent data of the unipotent factor are one angle and a frame: $\theta_{\mathrm{axr}}$ (one real number), $\vec u_{\mathrm b}$ (two), and $\vec u_{\mathrm r}$ in the orthogonal circle (one), which is four real dimensions, the dimension of the punctured nilpotent cone.
+
+### The Closed Form
+
+Substituting the constraints into the component form gives the shape of the whole sector.
+
+**Theorem (the closed form).** Every $\tilde Q\in\Sigma_{10}$ is
+
+$$
+\boxed{\;
+\tilde Q=Q_t\Bigl(e_t+
+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
++\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}
++i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}\Bigr)
+\;}
+$$
+
+with $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$; on the Jordan part the two axes are orthogonal. Equivalently,
+
+$$
+\boxed{\;
+\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon\Bigr),
+\qquad
+\vec\Upsilon=i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}
++\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}
++i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
+\;}
+$$
+
+*Proof.* The scalar part of the unit factor is $\varepsilon$, so $c_{\mathrm r}=\varepsilon/c_{\mathrm b}$. On the Jordan part $s_{\mathrm r}>0$, and $\tan\frac{\theta_{\mathrm{axr}}}{2}=s_{\mathrm r}/c_{\mathrm r}=\varepsilon c_{\mathrm b}s_{\mathrm r}$, hence $s_{\mathrm r}=\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}/c_{\mathrm b}$. The component form then gives
+
+$$
+i s_{\mathrm b}c_{\mathrm r}
+=i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2},
+\qquad
+c_{\mathrm b}s_{\mathrm r}
+=\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2},
+\qquad
+i s_{\mathrm b}s_{\mathrm r}
+=i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}.
+$$
+
+The vector part of the unit factor is $\varepsilon$ times the bracket, and $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, so the bracket is $\vec\Upsilon$; hence $\tilde Q=Q_t(e_t+\vec\Upsilon)$. On the scalar line $\tan\frac{\theta_{\mathrm{axr}}}{2}=\tanh\frac{\theta_{\mathrm{rpd}}}{2}=0$, and the same display reduces to $Q_te_t$.
+
+The formula is the exact shape of the sector. The complex number $Q_t$ carries the scale and the phase; the rest is a unipotent written in the frame. The vector part is automatically null: with the three orthogonal directions, its square is
+
+$$
+\vec\Upsilon^2=\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}-\tan^2\frac{\theta_{\mathrm{axr}}}{2}
++\tanh^2\frac{\theta_{\mathrm{rpd}}}{2}\tan^2\frac{\theta_{\mathrm{axr}}}{2},
+$$
+
+which vanishes by $|\cos\frac{\theta_{\mathrm{axr}}}{2}|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. The cross term carries the plus sign because its coefficient is imaginary.
+
+**Remark (the scalar factor).** The unit factor depends only on $\theta_{\mathrm{axr}}$ and the frame, not on $Q_t$. Changing $Q_t$ by a nonzero complex number changes the scale and the phase, and possibly the sign $\varepsilon$, but leaves $\vec\Upsilon$ unchanged. The sector is the product of the scalar line $\mathbb{C}^{\times}$ with the punctured nilpotent cone; the frame and the two angles are functions of the second factor alone, and the sign is carried by the first.
+
+
+## The Two Strata
+
+### The Scalar Line
+
+On the scalar line $\vec\Upsilon=0$, the element is $Q_te_t$, the unit factor is $\varepsilon e_t$, and
+
+$$
+\theta_{\mathrm{rpd}}=0,
+\qquad
+\theta_{\mathrm{axr}}\in\{0,2\pi\},
+\qquad
+\vec u_{\mathrm b},\vec u_{\mathrm r}\ \text{free}.
+$$
+
+The word is
+
+$$
+\tilde Q=r e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t
+=Q_te_t.
+$$
+
+The sign $\varepsilon$ is fixed by the branch: if $\Rho=Q_t$ then $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=0$; if $\Rho=-Q_t$ then $\varepsilon=-1$ and $\theta_{\mathrm{axr}}=2\pi$. The axes are undefined, because the boost and the rotor are central. The scalar line is the normal locus of the sector: a normal element with a single eigenvalue is a scalar, and every scalar is normal.
+
+### The Jordan Part
+
+On the Jordan part $\vec\Upsilon\neq0$, the element is defective: its minimal polynomial is $(X-Q_t)^2$, its geometric multiplicity is one, and it has no eigenbasis. The word has
+
+$$
+\theta_{\mathrm{rpd}}>0,
+\qquad
+\theta_{\mathrm{axr}}\in(0,\pi)\cup(\pi,2\pi),
+\qquad
+\vec u_{\mathrm b}\perp\vec u_{\mathrm r},
+$$
+
+and the two possible signs of $\cos\frac{\theta_{\mathrm{axr}}}{2}$ are the two values of $\varepsilon$. The word is
+
+$$
+\tilde Q=Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+$$
+
+with $\vec\Upsilon$ as in the closed form and $\theta_{\mathrm{rpd}}$ determined by $\theta_{\mathrm{axr}}$. The data are
+
+$$
+\underbrace{2}_{Q_t}
++\underbrace{1}_{\theta_{\mathrm{axr}}}
++\underbrace{2}_{\vec u_{\mathrm b}}
++\underbrace{1}_{\vec u_{\mathrm r}\perp\vec u_{\mathrm b}}
+=6,
+$$
+
+the real dimension of the sector. The rapidity and the sign are functions of the angle.
+
+The Jordan part is unbounded: as $\theta_{\mathrm{axr}}\to\pi$, $\theta_{\mathrm{rpd}}\to\infty$ and $|\vec\Upsilon|\to\infty$. The value $\theta_{\mathrm{axr}}=\pi$ is not attained, because it would force $c_{\mathrm r}=0$ and violate the scalar constraint.
+
+
 ## Existence and Uniqueness
 
 **Theorem (the exponential polar decomposition).** Every $\tilde Q\in\Sigma_{11}$ has a unique writing
@@ -599,7 +957,7 @@ $$
 
 gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta_{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\theta_{\mathrm{axr}}\in[0,2\pi]$. The endpoint $\theta_{\mathrm{axr}}=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
 
-The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the companion article can repeat the same theorem verbatim.
+The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the theorem holds on the wall as it stands, with the same proof and the same ranges.
 
 **The degeneracies.** The boost axis is undefined at $\theta_{\mathrm{rpd}}=0$, where the boost is the identity. The rotor axis is undefined at $\theta_{\mathrm{axr}}=0$, where the rotor is the identity, and at $\theta_{\mathrm{axr}}=2\pi$, where the rotor is $-e_t$ for every axis. These are the usual coordinate singularities of polar coordinates; the element is smooth there and the word is unique.
 
@@ -685,6 +1043,74 @@ $$
 
 The word is a section of that map, not of the exponential. It is a global coordinate system on the group of units, and its domain is the complement of the null cone.
 
+### The Exact Logarithm at the Wall
+
+The special feature of the sector is that the true logarithm is not a transcendental object: the unipotent factor has a truncated logarithm.
+
+**Theorem (the exact logarithm).** For $\tilde Q=Q_t(e_t+\vec\Upsilon)\in\Sigma_{10}$,
+
+$$
+\boxed{\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon},
+$$
+
+where $\log Q_t$ is any logarithm of the nonzero complex number $Q_t$ and the principal choice is $\ln|Q_t|+i\arg Q_t$. The right-hand side is exact, with no series and no correction.
+
+*Proof.* The exponential of a nilpotent element truncates:
+
+$$
+\exp(\vec\Upsilon)=e_t+\vec\Upsilon,
+$$
+
+because $\vec\Upsilon^2=0$. The scalar $Q_t$ commutes with $\vec\Upsilon$, so
+
+$$
+\exp(\log Q_t+\vec\Upsilon)=Q_t(e_t+\vec\Upsilon)=\tilde Q.
+$$
+
+
+The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
+
+The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operators on the N-Regular Sector* and of *The Hermitian Pair on the N-Regular Sector*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
+
+### The Formal Exponent and the Defect at the Wall
+
+The **formal exponent** is the sum of the four exponents,
+
+$$
+\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
+$$
+
+It is not the logarithm. The true logarithm is
+
+$$
+\operatorname{Log}\tilde Q=\ln r+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
+$$
+
+because $Q=\Rho\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\Rho+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\Rho+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
+
+$$
+\boxed{\;
+\operatorname{Log}\tilde Q-\tilde Q_{\log}
+=i\pi\frac{1-\varepsilon}{2}
++i\Bigl(\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}\Bigr)\vec u_{\mathrm b}
++\Bigl(\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}\Bigr)\vec u_{\mathrm r}
++i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\;\vec u_{\mathrm b}\times\vec u_{\mathrm r}.
+\;}
+$$
+
+The **defect** is the norm of $\exp(\tilde Q_{\log})-\tilde Q$, not the norm of the log defect, because the exponential is not linear. The log defect shows the three corrections: the scalar period, the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$, and the cross term. The numerical defect is computed in the worked examples.
+
+On the Jordan part the cross term is nonzero, because $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$ and the axes are orthogonal. The formal exponent is therefore not the logarithm. The cross term has the shape of the first correction of the Baker–Campbell–Hausdorff series,
+
+$$
+\frac12[\tilde H,\tilde K]
+=\frac{i\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
+$$
+
+with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$.
+
+On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every unit $\vec u_{\mathrm r}$.
+
 ## The Group Law
 
 The product of two words is
@@ -714,6 +1140,52 @@ The second row is the Thomas–Wigner rotation. The third is the statement that 
 | rotor | multiplies |
 | exponent | does not add: the Baker–Campbell–Hausdorff correction |
 | group | $\mathbb{B}^{\times}\cong\mathrm{GL}_2(\mathbb{C})$ |
+
+### The Product at the Wall
+
+The sector is closed under inversion:
+
+$$
+\tilde Q^{-1}=Q_t^{-1}\bigl(e_t-\vec\Upsilon\bigr).
+$$
+
+It is not closed under multiplication. The product of two elements is
+
+$$
+\tilde Q_1\tilde Q_2
+=Q_{t1}Q_{t2}\bigl(e_t+\vec\Upsilon_1\bigr)\bigl(e_t+\vec\Upsilon_2\bigr)
+=Q_{t1}Q_{t2}\bigl(e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2\bigr).
+$$
+
+Let
+
+$$
+s=\vec\Upsilon_1\cdot\vec\Upsilon_2.
+$$
+
+The scalar part of the product is $Q_{t1}Q_{t2}(1-s)$, and the product has norm one, so its vector form is
+
+$$
+\boxed{B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\,s(2-s)}.
+$$
+
+The product lies in $\Sigma_{10}$ exactly when $s=0$ or $s=2$; otherwise it lies in $\Sigma_{11}$.
+
+*Proof.* Write the product as $Q_{t1}Q_{t2}W$, with $W=(1+\vec\Upsilon_1)(1+\vec\Upsilon_2)$. The scalar part of $W$ is $1-\vec\Upsilon_1\cdot\vec\Upsilon_2=1-s$, because the dot part of $\vec\Upsilon_1\vec\Upsilon_2$ is $-\vec\Upsilon_1\cdot\vec\Upsilon_2$ and the cross part is a pure vector. The norm of $W$ is one, because it is the product of two unipotent elements of norm one. An element of norm one with scalar part $1-s$ has vector form $1-(1-s)^2=s(2-s)$; the central scalar $Q_{t1}Q_{t2}$ multiplies the vector form by $(Q_{t1}Q_{t2})^2$.
+
+**Example.** Take $u_1=e_t+\vec e_x+i\vec e_y$ and $u_2=e_t+\vec e_y+i\vec e_z$. Then $s=i$, and
+
+$$
+u_1u_2=(1-i)e_t+\vec e_y+(1+i)\vec e_z,
+$$
+
+with $B^2=1+2i\neq0$. The product has left the sector. Take instead $u_1$ and $u_2=e_t+\vec e_x-i\vec e_y$; then $s=2$, and
+
+$$
+u_1u_2=-e_t+2\vec e_x-2i\vec e_z,
+$$
+
+with $B^2=0$; the product stays. The two cases are the two roots of $s(2-s)=0$.
 
 ## The Matrix Picture
 
@@ -754,6 +1226,24 @@ of real dimensions $4$ and $4$. The scale and the boost lie in $\mathfrak H$; th
 
 The two scales of the matrix are $r e^{\theta_{\mathrm{rpd}}/2}$ and $r e^{-\theta_{\mathrm{rpd}}/2}$, each with multiplicity one in the regular sector. Their product is $r^2=|\Rho|^2$, and their ratio is $e^{\theta_{\mathrm{rpd}}}$. The determinant is $N=\Rho^2$, of modulus $r^2$.
 
+### The Picture at the Wall
+
+On the Jordan part, $\mathsf M(\vec\Upsilon)$ is a nonzero nilpotent matrix, so
+
+$$
+\mathsf M(\tilde Q)=Q_t\bigl(I+N\bigr),
+\qquad
+N=\mathsf M(\vec\Upsilon),
+\qquad
+N^2=0,
+\qquad
+N\neq0.
+$$
+
+The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $r e^{\theta_{\mathrm{rpd}}/2}$ and $r e^{-\theta_{\mathrm{rpd}}/2}$. The polar factors are the positive and $*$-unitary factors of the block, and the $*$-unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.
+
+The spectral reading is degenerate in the matrix picture: the matrix has no eigenbasis, the two eigenvalues coincide, and the diagonal form does not exist. The polar decomposition still exists, because it is the Cartan decomposition of $SL(2,\mathbb{C})$, which does not require diagonalizability. This is the matrix form of the contrast between the two cases.
+
 ## The Exponential Coordinates
 
 The parameters $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ and the two axes are coordinates on the group of units. Their ranges make the map a bijection up to the axis degeneracies. The coordinate lines are the four one-parameter families:
@@ -784,6 +1274,44 @@ r^4=\exp(4\ln r)=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^2,
 $$
 
 so lengths are multiplied by $r^2=|\langle\tilde Q\rangle_{\natural}|$. The scale exponent is a quarter of the logarithm of the conformal factor; the phase, the boost and the rotor are isometries of the form.
+
+### The Coordinates at the Wall
+
+The data of the sector are
+
+$$
+\underbrace{2}_{Q_t}
++\underbrace{1}_{\theta_{\mathrm{axr}}}
++\underbrace{2}_{\vec u_{\mathrm b}}
++\underbrace{1}_{\vec u_{\mathrm r}\perp\vec u_{\mathrm b}}
+=6,
+$$
+
+the real dimension of the wall. The rapidity and the sign are determined by
+
+$$
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\frac{1}{\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\rvert},
+\qquad
+\varepsilon=\operatorname{sgn}\cos\frac{\theta_{\mathrm{axr}}}{2}.
+$$
+
+The coordinate map is
+
+$$
+(Q_t,\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})
+\longmapsto
+Q_t\Bigl(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})\Bigr),
+$$
+
+from $\mathbb{C}^{\times}\times\bigl((0,\pi)\cup(\pi,2\pi)\bigr)\times US^2$ to the Jordan part, where $US^2=\{(\vec u_{\mathrm b},\vec u_{\mathrm r}):\lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1,\ \vec u_{\mathrm b}\perp\vec u_{\mathrm r}\}$ is the unit tangent bundle of the sphere. It is a bijection onto the Jordan part; the scalar line is the common limit $\theta_{\mathrm{axr}}\to0$ and $\theta_{\mathrm{axr}}\to2\pi$, where the frame is free.
+
+The coordinate lines are three families:
+
+- the **scalar line** $Q_t\mapsto Q_t(e_t+\vec\Upsilon)$, a complex plane with the origin removed;
+- the **angle line** $\theta_{\mathrm{axr}}\mapsto Q_t(e_t+\vec\Upsilon(\theta_{\mathrm{axr}},\ldots))$, a non-compact curve from the scalar line to infinity, with $\theta_{\mathrm{rpd}}$ growing as $\theta_{\mathrm{axr}}\to\pi$;
+- the **frame sphere** $(\vec u_{\mathrm b},\vec u_{\mathrm r})\mapsto Q_t(e_t+\vec\Upsilon)$, a circle bundle over $S^2$.
+
+The sector retracts onto the scalar line, because the nilpotent part can be contracted to zero along $\vec\Upsilon\mapsto(1-t)\vec\Upsilon$, which stays null. Hence $\Sigma_{10}$ is connected and $\pi_1(\Sigma_{10})=\mathbb{Z}$, carried by the phase of $Q_t$.
 
 ## The Two Walls
 
@@ -843,9 +1371,36 @@ At the scalar line the limit is different. If $\tilde Q_0=Q_0e_t$ is a nonzero s
 
 The contrast is the exact content of the difference between the two articles. The polar decomposition is a decomposition of the group of units, and it is continuous across the spectral wall. The spectral decomposition is a decomposition of the element, and it degenerates there. The sector $\Sigma_{11}$ is the open set on which both exist; its wall $B^2=0$ is where only the polar one survives.
 
+### The Wall From Inside
+
+The sector is closed under inversion but not under multiplication. It is a complex hypersurface of $\mathbb{B}$, not an open set: its closure is the spectral cone $B^2=0$, and the points of that closure with $N=0$ form the nilpotent stratum $\Sigma_{00}$.
+
+### The Nilpotent Stratum
+
+As $Q_t\to0$ with $\vec\Upsilon$ fixed, the element tends to zero and the modulus tends to zero. The unit factor does not degenerate:
+
+$$
+\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr)
+$$
+
+is independent of $Q_t$. The scale collapses, the phase follows the argument of $Q_t$, and the unipotent shape survives. This is the structural difference from the regular sector, where the rapidity diverges as the modulus vanishes. In $\Sigma_{10}$ the modulus is the scalar part, and the only thing that vanishes is the scalar.
+
+A nonzero nilpotent of $\Sigma_{00}$ is reached by letting $Q_t\to0$ and $\vec\Upsilon\to\infty$ at the rate $Q_t\vec\Upsilon\to\vec N$ with $\vec N^2=0$. The unit factor diverges, the word parameters leave every bounded set, and the limit is the nilpotent. The sector is not compact, and the angle $\theta_{\mathrm{axr}}\to\pi$ is the direction in which it is unbounded.
+
+### The Spectral Wall From Inside
+
+Seen from $\Sigma_{11}$, the locus $B^2=0$ is a wall: the word converges to the word of the limit, as §*The Spectral Cone* proves, while the eigenbasis diverges and the spectral decomposition disappears. Seen from $\Sigma_{10}$, the same locus is the ambient space. The two descriptions are the two sides of one hypersurface: defective elements, no eigenbasis, and a polar word that is still defined.
+
+| Approach | Locus | What happens |
+|---|---|---|
+| nilpotent stratum | $N=0$, $B^2=0$ | $Q_t\to0$; the unit factor survives if $\vec\Upsilon$ is fixed; the scale vanishes |
+| spectral wall from $\Sigma_{11}$ | $B^2=0$, $N\neq0$ | the word converges; the eigenbasis diverges |
+
 ## Summary
 
 ### Main Formulas
+
+The table collects the general formulas and the shapes they take on the wall.
 
 | Object | Formula |
 |---|---|
@@ -863,6 +1418,17 @@ The contrast is the exact content of the difference between the two articles. Th
 | normal criterion | $\vec Q\times\overline{\vec Q}=0$ |
 | spectral wall | $B^2=0\iff U_t=\pm1$ |
 | explicit data | §*The Result in Terms of the Coordinates*: boxes for $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ |
+| domain, wall | $N\neq0$, $B^2=0$ |
+| normal form | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ |
+| unit factor, wall | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $\varepsilon=Q_t/\Rho=\pm1$ |
+| scalar constraint | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$ |
+| axis constraint | $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ |
+| Jordan part | $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$, $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ |
+| angle relation | $\bigl|\cos\frac{\theta_{\mathrm{axr}}}{2}\bigr|=1/\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
+| closed form, wall | $\tilde Q=Q_t\bigl(e_t+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}+i\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm b}\times\vec u_{\mathrm r}\bigr)$ |
+| exact logarithm | $\operatorname{Log}\tilde Q=\log Q_t+\vec\Upsilon$ |
+| product criterion | $B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2s(2-s)$, $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$ |
+| dimension, wall | $6$: $Q_t$ (2), angles (2), frame (3), angle relation (1) |
 
 ### The Comparison
 
@@ -875,14 +1441,18 @@ The contrast is the exact content of the difference between the two articles. Th
 | survives $B^2\to0$ | no on the Jordan part | yes |
 | real dimension | $8$ | $8$ |
 | shared data | $r,\theta_{\mathrm{pha}},U_t$ | $r,\theta_{\mathrm{pha}},U_t$ |
+The last row is the statement of the section: the spectral reading is defined on the open sector, the polar reading is defined on the whole group of units.
 
 ### What the Sector Shows
 
-- The word exists for every element of the sector, and it is unique up to the axis degeneracies.
-- The eigenbasis exists because the two eigenvalues are distinct. It is a spectral basis, not a polar basis.
-- The polar factors are diagonal in the eigenbasis exactly for the normal elements, and those are exactly the elements whose two axes are parallel and whose word is a single exponential.
+- The word exists for every element of the N-regular sector, off the wall and on it, and it is unique up to the axis degeneracies.
+- The existence theorem uses only the invertibility of $\tilde Q$. The invariant $B^2$ enters through the domain and through the shape of the word, not through the existence.
+- Off the wall the eigenbasis exists because the two eigenvalues are distinct. It is a spectral basis, not a polar basis. The polar factors are diagonal in it exactly for the normal elements, and those are exactly the elements whose two axes are parallel and whose word is a single exponential.
 - In the non-normal case the spectrum determines the eigenvalues of the unit factor but not the rapidity, the rotor angle or the axes. The polar word carries four real data that the spectrum does not.
-- The word is continuous across the spectral wall $B^2=0$; on the Jordan part the eigenbasis is not. This is why the spectrally degenerate case needs its own article, and why it can reuse the word verbatim.
+- On the wall the unit factor is $\pm$unipotent: its two eigenvalues coincide, its minimal polynomial is a square, and it has no eigenbasis. The word still exists, with four real data: the scalar part, one angle and a frame.
+- On the wall the scalar part of the unit factor is $\pm1$. This one complex equation ties the two angles, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\pm1$, and on the Jordan part it forces the two axes to be orthogonal.
+- The true logarithm on the wall is exact and truncated, $\log Q_t+\vec\Upsilon$. The formal exponent is not a logarithm: the log defect is the cross term plus the nonlinear terms of the two angles.
+- The word is continuous across the spectral wall; the eigenbasis is not. This is the precise sense in which the polar decomposition is a decomposition of the group and the spectral decomposition is a decomposition of the element.
 
 ## Summary of Notation
 
@@ -913,15 +1483,26 @@ The contrast is the exact content of the difference between the two articles. Th
 | $\vec a$ | the vector $\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$ |
 | $C,S$ | the half-angle numerators, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=C/\sqrt{|N|}$, $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=S/\sqrt{|N|}$ |
 | $\mathrm{Vect}\tilde X$ | the vector part of $\tilde X$ |
+| $\Sigma_{11}$ | the N-regular, spectrally regular sector |
+| $\Sigma_{10}$ | the N-regular, spectrally degenerate sector |
+| $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction on the wall, $\vec\Upsilon^2=0$ |
+| $\vec A=\operatorname{Re}\vec\Upsilon$, $\vec B=\operatorname{Im}\vec\Upsilon$ | the real and imaginary parts, $\vec A\cdot\vec B=0$ |
+| $a=\lVert\vec A\rVert=\lVert\vec B\rVert$ | the common length on the wall |
+| $\varepsilon=Q_t/\Rho=\pm1$ | the sign of the unit factor on the wall |
+| $Q_\mu=q_\mu+iq'_\mu$ | the eight real coordinates |
+| $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$ | the real and imaginary vector coordinates |
+| $s=\vec\Upsilon_1\cdot\vec\Upsilon_2$ | the invariant of a product on the wall |
 
 ## Further Reading
 
-- [Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](exponential-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html), the companion for $B^2=0$, independent of this article.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-regular-biquaternion.html), for the dictionary between the word and the eigenvalue data.
-- [Worked Examples of Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the numerical cases, the normal and non-normal comparison, and the defect tables.
+- [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the dictionary between the word and the eigenvalue data, and its limit on the Jordan part.
+- [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html), for the numerical cases off the wall and on it, the normal and non-normal comparison, and the defect tables.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem and the group of units.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the eigenbasis, the Peirce corners and the spinors.
+- [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the normal forms and the two strata of the wall.
 - [The Spectrum](the-spectrum.html), for the four sectors and the discriminants.
+- [One-Sided Operators on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator form of the exact logarithm on the wall.
+- [The Hermitian Pair on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the two-sided operator form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the fibre.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition and the Baker–Campbell–Hausdorff series.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

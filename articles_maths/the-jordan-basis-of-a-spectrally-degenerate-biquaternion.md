@@ -762,7 +762,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the matrix reading of the eigenbasis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a sector, with the Peirce data and the degenerate limits of the eigenbasis
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the nilpotent half as a sector, with the same Peirce data
-- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Degenerate Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-degenerate-biquaternion.html), for the chain as the limit of a rescaled eigenbasis
+- [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the chain as the limit of a rescaled eigenbasis
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the explicit constructions in coordinates
 - [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html), for the degenerate operator on the two-sided module
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm and its partition
