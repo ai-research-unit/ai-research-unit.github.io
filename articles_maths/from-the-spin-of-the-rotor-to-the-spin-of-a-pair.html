@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-the-spin-of-the-rotor-to-the-spin-of-a-pair-of-operators-acting-on-two-sides"><strong>From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single rotor carries spin $\tfrac12$. The number comes from three real $4\times4$ matrices and one sum of squares, and it needs no complex two-vector and no table of coefficients. A pair of operators acting on two sides carries two such factors, one on the left and one on the right, and the pair carries spin $0$ and spin $1$. This article computes both numbers in the real display and states exactly what each step uses.</p>
+<p><strong>The thread.</strong> Left multiplication by a unit quaternion is a real orthogonal matrix. Its three generators square to minus the identity, so the sum of their squares is $-3\mathrm{I}_4$, and the Casimir of the halved generators is $\pm\tfrac34$. On an irreducible carrier the Casimir is $s(s+1)$, so $s=\tfrac12$. The pair is an element of the product group $S^3_L\times S^3_R$, each factor carries $\tfrac12$, and the addition rule for the irreducible carriers of the rotor group gives $0$ and $1$. The total Casimir then takes the values $0$ and $2$, and those are the only two values.</p>
+<p><strong>What the article does not use.</strong> No matrix group called $SU(2)$, no complex two-space, and no Clebsch–Gordan coefficients. The carriers are real, the generators are real antisymmetric matrices, and the multiplicities are read off as dimensions of eigenspaces. The complex display appears once, in a remark, as a bookkeeping device that the real computation does not need.</p>
+<p><strong>Roadmap.</strong> The rotor group comes first, then the single rotor and its Casimir, then the two-sided operator and the correction it needs, then the pair, then the addition rule, then the Casimir check on the two carriers, then what is and is not claimed. The corrections, the verification and the summary close the article.</p>
+<h2 id="the-rotor-group">The Rotor Group</h2>
+<p><strong>Definition.</strong> The <strong>rotor group</strong> is the group of unit quaternions,</p>
+<p>$$
+\mathrm{Rot}:=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
+$$</p>
+<p>under quaternion multiplication. Its real dimension is three. It is the spin group $Spin(3)$, and it is not a group of matrices: every matrix group below is an image of it.</p>
+<p><strong>The double cover.</strong> The map</p>
+<p>$$
+S^3\longrightarrow SO(3),\qquad \tilde q\longmapsto\bigl[\vec v\mapsto\tilde q\vec v\tilde q^{-1}\bigr],
+$$</p>
+<p>is a surjective homomorphism with kernel $\{\pm e_t\}$. A rotation by $2\pi$ corresponds to the rotor $-e_t$, and only a rotation by $4\pi$ corresponds to $+e_t$. This is the geometric origin of the half-integer numbers: the sphere covers the rotation group twice, so a carrier on which $-e_t$ acts as $-1$ is available, and it does not descend to the rotation group.</p>
+<p><strong>The two names.</strong> $Spin(3)$ and $\mathrm{Rot}$ denote one object. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$ and is not a sphere; the identification with the rotor group is a statement about $n=3$ only.</p>
+<p><strong>Remark (the excluded sentence).</strong> The sentence "the rotor group is $SU(2)$" is excluded. $SU(2)$ is the image of the $2\times2$ complex display, and the isomorphism from $S^3$ to that image is a choice of display. Every statement below is a statement about $S^3$ and about real carriers, so the exclusion costs nothing here.</p>
+<h2 id="the-single-rotor">The Single Rotor</h2>
+<p><strong>The generators.</strong> On the real basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{H}$, left multiplication by $\tilde q$ is $X\mapsto\tilde qX$, with matrix $L(\tilde q)_{\mu\nu}=[\tilde qe_\nu]_\mu$. The three generators $L_k:=L(\vec e_k)$ are real, antisymmetric, signed permutation matrices, and they satisfy</p>
+<p>$$
+L_k^2=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z\ \text{and cyclically.}
+$$</p>
+<p>The first identity is $\vec e_k^2=-e_t$ read in the display; the second is $\vec e_x\vec e_y-\vec e_y\vec e_x=2\vec e_z$ read in the display.</p>
+<p><strong>The normalization.</strong> With $J_k:=\tfrac12L_k$ the bracket is the standard one,</p>
+<p>$$
+[J_i,J_j]=\varepsilon_{ijk}J_k .
+$$</p>
+<p><strong>The Hermitian normalization.</strong> The $J_k$ are real antisymmetric, hence anti-Hermitian, so the spectral statements are made with</p>
+<p>$$
+H_k:=iJ_k=\tfrac i2L_k,\qquad [H_i,H_j]=i\varepsilon_{ijk}H_k .
+$$</p>
+<p>The two normalizations differ by $i^2$ in every square, and the article states both wherever a sign is involved.</p>
+<p><strong>The Casimir.</strong> Define</p>
+<p>$$
+\mathbf{J}^2:=\sum_kJ_k^2,\qquad \mathbf{H}^2:=\sum_kH_k^2=-\mathbf{J}^2 .
+$$</p>
+<p>Since $L_k^2=-\mathrm{I}_4$,</p>
+<p>$$
+\mathbf{J}^2=\tfrac14(-3\mathrm{I}_4)=-\tfrac34\,\mathrm{I}_4,
+\qquad
+\mathbf{H}^2=+\tfrac34\,\mathrm{I}_4 .
+$$</p>
+<p><strong>The number.</strong> On an irreducible carrier the Hermitian Casimir is $s(s+1)$ times the identity, by the definition of the spin of the carrier. Therefore</p>
+<p>$$
+s(s+1)=\tfrac34\quad\Longrightarrow\quad s=\tfrac12,
+$$</p>
+<p>the other root being $-\tfrac32$ and the spin being taken non-negative.</p>
+<p><strong>The weights.</strong> The eigenvalues of $H_z$ on $\mathbb{R}^4$ are $+\tfrac12$ and $-\tfrac12$, each twice. The weight set is $\{\pm\tfrac12\}$ and the carrier is the spin-$\tfrac12$ carrier.</p>
+<p><strong>The dimension, and the factor of two.</strong> The carrier has real dimension $4$ where $2s+1=2$. The factor of two is not an error: the spin-$\tfrac12$ carrier is of quaternionic type, so its smallest real form has twice the complex dimension. In general an irreducible carrier of spin $s$ has real dimension $2s+1$ for integer $s$ and $2(2s+1)$ for half-integer $s$. The two rules are used in the counting below.</p>
+<p><strong>The statement.</strong> The left-regular representation on $\mathbb{R}^4$ carries spin $\tfrac12$, and the three $L$-generators are the spin-$\tfrac12$ generators in real $4\times4$ form. This is the only spin the $L$-generators give, because they act on one carrier and that carrier is irreducible.</p>
+<h2 id="the-two-sided-operator">The Two-Sided Operator</h2>
+<p><strong>Why two-sided.</strong> Let $A$ be an associative algebra with a unit and let $R\in A$ be invertible. One-sided multiplication $\Lambda(X)=RX$ is multiplicative only when $R=e_t$. Conjugation $\Theta(X)=RXR^{-1}$ is multiplicative for every invertible $R$. The count of factors is the whole proof: $R(XY)$ carries one factor $R$ and $(RX)(RY)$ carries two, and no normalization repairs the count. A two-sided product is therefore forced, and it is the only inner-type action available.</p>
+<p><strong>The corpus operator.</strong> For the biquaternion algebra the operator is</p>
+<p>$$
+\Theta_{\natural}(\tilde Q):\ \tilde X\longmapsto\tilde Q\,\tilde X\,\tilde Q^{\natural},
+$$</p>
+<p>and its Hermitian partner is $\Theta_{*}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$. On a real quaternion the two marks agree, since $\natural$ is the quaternion conjugation and the complex conjugation of a real coefficient does nothing.</p>
+<p><strong>Proposition (both operators, in closed form).</strong> For invertible $\tilde Q$,</p>
+<p>$$
+\tilde Q\tilde X\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,\tilde Q\tilde X\tilde Q^{-1},
+\qquad
+\Theta_{*}(\tilde X^{*})=\Theta_{*}(\tilde X)^{*} .
+$$</p>
+<p><em>Proof.</em> $\tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}e_t$, so $\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\tilde Q^{-1}$. For the second, $\tilde Q\tilde X^{*}\tilde Q^{*}=(\tilde Q\tilde X\tilde Q^{*})^{*}$ because the adjoint reverses the order twice. ∎</p>
+<p><strong>Corollary.</strong> The $\natural$-operator is an algebra automorphism exactly on the norm-one surface, and there it is conjugation by the inverse. The $*$-operator preserves the involution for every $\tilde Q$, and it is conjugation by the inverse exactly when $\tilde Q^{*}=\tilde Q^{-1}$.</p>
+<p><strong>The rotor.</strong> For a real unit quaternion $\tilde u$ the two marks coincide, $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$, so the two operators are the same operator and each is conjugation by the inverse. This is the sense in which a rotor is the element whose two-sided action is an inner automorphism with no scalar in front and no choice between the two forms. The action is a rotation of $\mathbb{H}$, and it is the double cover $S^3\to SO(3)$ when it is restricted to the imaginary part.</p>
+<p><strong>The boost, and the correction the brief needs.</strong> A boost is $\tilde U_{\mathrm b}=\cosh\tfrac\phi2\,e_t+i\sinh\tfrac\phi2\,\vec n$ with real unit $\vec n$. It is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and that part of the usual statement is right. But its $\natural$-conjugate is $\cosh\tfrac\phi2\,e_t-i\sinh\tfrac\phi2\,\vec n$, and the product of the two is $\cosh^2-\sinh^2=1$, because $(i\vec n)^2=+e_t$. So</p>
+<p>$$
+\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1},
+$$</p>
+<p>and the $\natural$-operator <strong>is</strong> conjugation by the inverse on a boost. The honest form of the correction is this: on the rotor sphere the two operators coincide; on the boost sector they separate, and the one that fails to be inverse-conjugation is the $*$-operator, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}\ne\tilde U_{\mathrm b}^{-1}$. The $\natural$-operator preserves the product on the whole norm-one surface, rotor and boost alike; the $*$-operator preserves the involution everywhere and the product only on the unitary elements.</p>
+<p><strong>The general Lorentz element.</strong> A general element is a product of a boost and a rotor, and it has norm one as well. So the $\natural$-operator is conjugation by the inverse on the whole Lorentz group, and the $*$-operator is not. The sentence to keep is: <em>the two-sided form is compulsory; it is conjugation by the inverse exactly on the norm-one surface of the mark in use.</em></p>
+<p><strong>The right factor is an anti-homomorphism.</strong> Write $R(\tilde p)$ for right multiplication, $X\mapsto X\tilde p$. Then $R(\tilde q)R(\tilde p)=R(\tilde p\tilde q)$, because $(X\tilde p)\tilde q=X(\tilde p\tilde q)$. The map $\tilde q\mapsto R(\tilde q)$ is therefore an anti-homomorphism, and the pair $(\tilde q,\tilde p)\mapsto[X\mapsto\tilde qX\tilde p]$ is an action of $S^3_L\times S^3_R$ in which the right factor composes in reverse order. Two consequences are used below: the right generators obey $[R_x,R_y]=-2R_z$ while the left ones obey $[L_x,L_y]=+2L_z$, and the diagonal rotation $X\mapsto\tilde qX\tilde q^{-1}$ has generator $J_k-J'_k$, not $J_k+J'_k$, where $J'_k=\tfrac12R(\vec e_k)$.</p>
+<h2 id="the-pair">The Pair</h2>
+<p><strong>The group and the carrier.</strong> A pair of operators acting on two sides is an element of</p>
+<p>$$
+S^3_L\times S^3_R,\qquad (\tilde q,\tilde p)\longmapsto\bigl[X\mapsto\tilde qX\tilde p\bigr],
+$$</p>
+<p>acting on $\mathbb{H}$, of real dimension four. The map is onto $SO(4)$ with kernel $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$, so the pair is the classical double cover $Spin(4)\to SO(4)$, and the two factors commute: $L(\tilde q)R(\tilde p)=R(\tilde p)L(\tilde q)$ for all $\tilde q,\tilde p$.</p>
+<p><strong>The two Casimirs.</strong> Each factor has its own Casimir, built from its own generators,</p>
+<p>$$
+C_L=\sum_kJ_k^2=-\tfrac34\,\mathrm{I}_4,
+\qquad
+C_R=\sum_kJ_k^{\prime 2}=-\tfrac34\,\mathrm{I}_4 .
+$$</p>
+<p>Each factor is spin $\tfrac12$. The two Casimirs commute, because the two families of generators commute, and each is a scalar on the carrier.</p>
+<p><strong>The total generators.</strong> The diagonal generators of the pair, which are the generators of the rotation $X\mapsto\tilde qX\tilde q^{-1}$, are</p>
+<p>$$
+J_k^{\mathrm{tot}}:=J_k-J'_k,
+$$</p>
+<p>and they obey the standard bracket, $[J_i^{\mathrm{tot}},J_j^{\mathrm{tot}}]=\varepsilon_{ijk}J_k^{\mathrm{tot}}$, since the minus sign in the right bracket cancels the minus sign in the combination. The total Casimir is</p>
+<p>$$
+\mathbf{J}^2_{\mathrm{tot}}:=\sum_k\bigl(J_k^{\mathrm{tot}}\bigr)^2 .
+$$</p>
+<p><strong>The second carrier.</strong> There is a second object that the phrase <em>a pair of rotors</em> can mean, and the two must be kept apart.</p>
+<ul>
+<li><strong>Carrier A</strong>, $\mathbb{H}$ itself, real dimension $4$. This is the carrier of the two-sided action $X\mapsto\tilde qX\tilde p$. The pair acts on it and the diagonal generators are $J_k-J'_k$.</li>
+<li><strong>Carrier B</strong>, $\mathbb{H}\otimes\mathbb{H}$, real dimension $16$. This is the state space of two independent rotor systems, each in the left-regular carrier. The generators are $J_k\otimes\mathrm{I}+\mathrm{I}\otimes J_k$, by the Leibniz rule of a derivation.</li>
+</ul>
+<p>The brief of this article names $\mathbb{R}^{16}$ and the generators $J_k\otimes\mathrm{I}+\mathrm{I}\otimes J_k$; those belong to carrier B. Both carriers are computed below, because the claim <em>the pair carries $0$ and $1$</em> is true on both, and the multiplicities differ.</p>
+<h2 id="the-addition-rule">The Addition Rule</h2>
+<p><strong>The theorem.</strong> The irreducible unitary carriers of the rotor group are labelled by</p>
+<p>$$
+j\in\tfrac12\mathbb{Z}_{\ge0}=\{0,\tfrac12,1,\tfrac32,2,\ldots\},
+$$</p>
+<p>the carrier of label $j$ carrying the Casimir $j(j+1)$ and having complex dimension $2j+1$. For two labels $j_1,j_2$ the tensor product decomposes as a direct sum of irreducible carriers, each occurring once,</p>
+<p>$$
+j_1\otimes j_2=\bigoplus_{j=\lvert j_1-j_2\rvert}^{j_1+j_2} j .
+$$</p>
+<p>This is a theorem about the representation theory of the rotor group, equivalently about its Lie algebra. It is not a formula about complex matrices, and no coefficient is computed in this article; the statement used here is the list of labels, and the labels are identified with the numbers $0$ and $1$ by the Casimir, in the next section.</p>
+<p><strong>The case of two rotors.</strong> With $j_1=j_2=\tfrac12$,</p>
+<p>$$
+\tfrac12\otimes\tfrac12=0\oplus1,
+\qquad\text{that is}\qquad j_{\mathrm{tot}}\in\{0,1\}.
+$$</p>
+<p><strong>The dimension bookkeeping, over the reals.</strong> The carrier of label $\tfrac12$ has real dimension $4$ and the carriers of labels $0$ and $1$ have real dimensions $1$ and $3$. On carrier A the count is $4=1+3$, one copy each. On carrier B the count is $16=4\cdot1+4\cdot3$, four copies each. The two counts are consistent with the same labels, and the difference between them is the multiplicity, not the spin.</p>
+<p><strong>What the rule does and does not say.</strong> It says which labels occur and that each occurs once in the decomposition of the tensor product of two irreducibles. It does not say that a given carrier is irreducible, and it does not give the eigenvalues of the Casimir by itself. The eigenvalues are computed directly, and the agreement of the two computations is the check.</p>
+<p><strong>Remark (no Clebsch–Gordan coefficients).</strong> A treatment by complex two-vectors would expand the four basis products in a table of coefficients. That table is one way to prove the theorem, and it is not the theorem. Nothing in the argument below needs a coefficient, because nothing below projects onto a particular vector: the splitting is by the eigenspaces of one symmetric operator, and the eigenvalues are read from its spectrum.</p>
+<h2 id="the-casimir-check">The Casimir Check</h2>
+<p><strong>Carrier A, direct computation.</strong> The Hermitian total generators are $H_k-H'_k$, and their Casimir has the spectrum</p>
+<p>$$
+\mathbf{H}^2_{\mathrm{tot}}\Big|_{\mathbb{H}}:\quad 0\ \text{once},\qquad 2\ \text{three times.}
+$$</p>
+<p>The weights of $H_z-H'_z$ are $\{-1,0,+1\}$, so the three-dimensional part is the carrier of label $1$ and the one-dimensional part is the carrier of label $0$. The one-dimensional part is the line $\mathbb{R}e_t$, on which conjugation fixes every point.</p>
+<p><strong>Carrier B, direct computation.</strong> The Casimir of $H_k\otimes\mathrm{I}+\mathrm{I}\otimes H_k$ has the spectrum</p>
+<p>$$
+\mathbf{H}^2_{\mathrm{tot}}\Big|_{\mathbb{H}\otimes\mathbb{H}}:\quad 0\ \text{four times},\qquad 2\ \text{twelve times.}
+$$</p>
+<p>On the four-dimensional part every weight is $0$; on the twelve-dimensional part the weights are $+1$ and $-1$, four times each, and $0$ four times. By the real-dimension rule of <em>The Single Rotor</em>, the two parts are four copies of label $0$ and four copies of label $1$, and $4\cdot1+4\cdot3=16$.</p>
+<p><strong>Theorem (the Casimir is a projector, up to an affine map).</strong> On each carrier the Hermitian total Casimir is</p>
+<p>$$
+\mathbf{H}^2_{\mathrm{tot}}=2\bigl(\mathrm{I}-Q\bigr),
+$$</p>
+<p>where $Q$ is the orthogonal projection onto the part of label $0$. On carrier A, $Q=\mathrm{I}_4+\tfrac12\sum_k(J_k-J'_k)^2$ has rank $1$ and image $\mathbb{R}e_t$. On carrier B, $Q=\tfrac14\mathrm{I}_{16}+\sum_kJ_k\otimes J_k$ has rank $4$.</p>
+<p><em>Proof.</em> For carrier A, expand $\sum_k(J_k-J'_k)^2$ using $[J_k,J'_l]=0$ and $\sum_kJ_k^{\prime 2}=\sum_kJ_k^2=-\tfrac34\mathrm{I}_4$. The result is $\sum_k(J_k-J'_k)^2=2Q-2\mathrm{I}_4$ with $Q$ as displayed, and the sign change to the Hermitian normalization gives $\mathbf{H}^2_{\mathrm{tot}}=2(\mathrm{I}_4-Q)$. That $Q$ is an orthogonal projection is checked by $Q^2=Q$ and $Q^{\mathsf T}=Q$, and its rank is its trace. Carrier B is the same expansion with $\sum_kJ_k\otimes J_k$ in place of the cross term; the identities $Q^2=Q$ and $Q^{\mathsf T}=Q$ hold there too, and the trace is $4$. ∎</p>
+<p><strong>Two consequences.</strong> First, the total Casimir has exactly two eigenvalues, $0$ and $2$, so the composite carries exactly the two labels $0$ and $1$ and no third. Second, the projecting operator $Q$ commutes with the total generators but <strong>not</strong> with the generators of a single factor: on carrier B the commutator of $Q$ with $J_k\otimes\mathrm{I}$ is $\tfrac14$ in norm. That is the precise sense in which the split into $0$ and $1$ belongs to the pair and not to either factor alone.</p>
+<p><strong>The full turn, as a second reading.</strong> The rotor of a full turn is $-e_t$. On the single carrier it acts as $\exp(2\pi J_z)=-\mathrm{I}_4$, which is the reason a single rotor needs the double cover. On carrier A the same turn is $\exp(2\pi(J_z-J'_z))=\mathrm{I}_4$, and on carrier B it is $\mathrm{I}_{16}$; both are identity, so both pair carriers are actions of the rotation group and not merely of its double cover. A half turn is not the identity on either: its spectrum contains $-1$ on the part of label $1$ in both cases, and $+1$ on the part of label $0$.</p>
+<p><strong>Why the check is not circular.</strong> The total Casimir is defined by a sum of squares of explicit matrices, and its spectrum is computed from those matrices. The addition rule is a theorem about labels, stated independently. The two agree, and neither was used to obtain the other. What the agreement buys is that the labels $0$ and $1$ are the labels of the two pieces, and the multiplicities $1+3$ and $4+12$ are the multiplicities of those labels.</p>
+<h2 id="what-is-and-is-not-claimed">What Is and Is Not Claimed</h2>
+<p><strong>Claimed.</strong> Each factor of the pair carries spin $\tfrac12$, by the computation on $\mathbb{R}^4$. The pair carries spin $0$ and spin $1$ and nothing else, on either carrier, by the addition rule and by the spectrum of the total Casimir. The two-sided action is forced, and the diagonal generator of the pair is $J_k-J'_k$.</p>
+<p><strong>Not claimed.</strong> The pair does not contain spin $2$. Two factors of $\tfrac12$ reach at most $1$, and each further factor raises the maximum by $\tfrac12$, so spin $2$ needs four factors and spin $\tfrac32$ needs three. The pair does not contain a half-integer piece either: the spectrum of the total Casimir is $\{0,2\}$ with no intermediate value.</p>
+<p><strong>Not claimed either.</strong> The $L$-generators do not give all spins. They act on one carrier, that carrier is irreducible, and its label is $\tfrac12$. Another label needs another carrier and the same Casimir read there — on the vector part of the algebra the label is $1$ and the value is $2$, and on the fixed line the label is $0$ and the value is $0$.</p>
+<p><strong>One sentence.</strong> The single rotor is the carrier of label $\tfrac12$; the pair is the direct sum of the carriers of labels $0$ and $1$; the passage from one to the other is the addition rule, and the Casimir confirms it.</p>
+<h2 id="corrections">Corrections</h2>
+<p><strong>The sentences that must not be written.</strong> Each is an error of fact or of scope, and each has a repair above.</p>
+<ol>
+<li><strong>"The rotor group is $SU(2)$."</strong> The rotor group is $S^3$. $SU(2)$ is the image of one complex display, and the isomorphism is a choice.</li>
+<li><strong>"The $L$-generators give all spins."</strong> They give $\tfrac12$, on $\mathbb{R}^4$. Other spins need other carriers.</li>
+<li><strong>"A boost has $\tilde U_{\mathrm b}^{\natural}\ne\tilde U_{\mathrm b}^{-1}$, so the two-sided operator is not inverse-conjugation on the boost sector."</strong> The premise is false: a boost has norm one, so $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$ and the $\natural$-operator is inverse-conjugation on it. The operator that fails to be inverse-conjugation there is the $*$-operator, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$.</li>
+<li><strong>"The pair contains spin $2$."</strong> It contains $0$ and $1$. Spin $2$ needs four factors.</li>
+<li><strong>"The pair carries spin $\tfrac12$ again."</strong> The total Casimir has no half-integer value on either carrier. The half-integer belongs to one factor, not to the pair.</li>
+<li><strong>"The right multiplication is a homomorphism, so the total generator is $J_k+J'_k$."</strong> Right multiplication is an anti-homomorphism, $R(\tilde q)R(\tilde p)=R(\tilde p\tilde q)$, its generators obey $[R_x,R_y]=-2R_z$, and the diagonal rotation generator is $J_k-J'_k$. The combination $J_k+J'_k$ generates $X\mapsto\tilde qX\tilde q$, which is not a group action at all.</li>
+<li><strong>"The decomposition is the complex formula $\mathbf{2}\otimes\mathbf{2}=\mathbf{1}\oplus\mathbf{3}$, imported."</strong> The formula is a matrix realization of the theorem. The theorem is the addition rule for the labels of the rotor group, and the real computation confirms it with real matrices.</li>
+<li><strong>"Differentiate at $R=1$."</strong> The Lie algebra is the tangent space at the identity; the phrase "differentiate at $R=1$" mixes a matrix entry with a group element.</li>
+<li><strong>"The proof is circular, because the Casimir is used to define the spin and the addition rule to define the Casimir."</strong> Neither is used to define the other. The Casimir is a sum of squares of explicit matrices, the addition rule is a theorem about labels, and the two agree.</li>
+<li><strong>"The Casimir of the real antisymmetric generators is $+\tfrac34$."</strong> It is $-\tfrac34$; the Hermitian normalization $H_k=iJ_k$ gives $+\tfrac34$. Both appear above, and the sign is the sign of $i^2$.</li>
+</ol>
+<h2 id="verification">Verification</h2>
+<p><strong>How the numbers were obtained.</strong> All matrices were built from the multiplication table of $\mathbb{H}$, with no library quaternion type. The right-regular matrices were built as the columns $e_\nu\tilde q$ and checked against the anti-homomorphism law. The Casimir spectra were obtained by diagonalising the sum of squares of explicit $4\times4$ and $16\times16$ matrices. The exponentials were obtained from the eigen-decomposition of the generator, not from a closed form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>what was computed</th>
+<th>residual or value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the left generators are antisymmetric</td>
+<td>$L_k+L_k^{\mathsf T}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the left bracket</td>
+<td>$[L_x,L_y]-2L_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the halved bracket</td>
+<td>$[J_x,J_y]-J_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the Hermitian bracket</td>
+<td>$[H_x,H_y]-iH_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the two families commute</td>
+<td>$[J_k,J'_l]$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>right multiplication is an anti-homomorphism</td>
+<td>$R(\tilde q\tilde p)-R(\tilde p)R(\tilde q)$</td>
+<td>$1.8\cdot10^{-15}$</td>
+</tr>
+<tr>
+<td>the right bracket</td>
+<td>$[J'_x,J'_y]+J'_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the single-rotor Casimir</td>
+<td>$\sum_kJ_k^2+\tfrac34\mathrm{I}_4$ and $\sum_kH_k^2-\tfrac34\mathrm{I}_4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the single-rotor weights</td>
+<td>eigenvalues of $H_z$</td>
+<td>$\pm\tfrac12$, each twice</td>
+</tr>
+<tr>
+<td>carrier A: total bracket</td>
+<td>$[J^{\mathrm{tot}}_x,J^{\mathrm{tot}}_y]-J^{\mathrm{tot}}_z$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>carrier A: Casimir spectrum</td>
+<td>eigenvalues of $\mathbf{H}^2_{\mathrm{tot}}$</td>
+<td>$0$ once, $2$ thrice</td>
+</tr>
+<tr>
+<td>carrier A: weights</td>
+<td>eigenvalues of $H_z-H'_z$</td>
+<td>$\{-1,0,+1\}$</td>
+</tr>
+<tr>
+<td>carrier A: projector</td>
+<td>$Q^2-Q$, $Q-Q^{\mathsf T}$, $\operatorname{tr}Q$</td>
+<td>$0$, $0$, $1$</td>
+</tr>
+<tr>
+<td>carrier A: Casimir $=2(\mathrm{I}-Q)$</td>
+<td>$\mathbf{H}^2_{\mathrm{tot}}-2(\mathrm{I}_4-Q)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>carrier B: Casimir spectrum</td>
+<td>eigenvalues of $\mathbf{H}^2_{\mathrm{tot}}$</td>
+<td>$0$ four times, $2$ twelve times</td>
+</tr>
+<tr>
+<td>carrier B: weights</td>
+<td>eigenvalues of $H_k\otimes\mathrm{I}+\mathrm{I}\otimes H_k$</td>
+<td>$\pm1$ four each, $0$ eight times</td>
+</tr>
+<tr>
+<td>carrier B: projector</td>
+<td>$Q^2-Q$, $Q-Q^{\mathsf T}$, $\operatorname{tr}Q$</td>
+<td>$0$, $0$, $4$</td>
+</tr>
+<tr>
+<td>carrier B: Casimir $=2(\mathrm{I}-Q)$</td>
+<td>$\mathbf{H}^2_{\mathrm{tot}}-2(\mathrm{I}_{16}-Q)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>carrier B: $Q$ commutes with the total generators</td>
+<td>$[Q,H^{\mathrm{tot}}_z]$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>carrier B: $Q$ does not commute with one factor</td>
+<td>$[Q,H_z\otimes\mathrm{I}]$</td>
+<td>$0.25$</td>
+</tr>
+<tr>
+<td>full turn on the single carrier</td>
+<td>$\exp(2\pi J_z)$</td>
+<td>$-\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>full turn on carrier A</td>
+<td>$\exp(2\pi(J_z-J'_z))$</td>
+<td>$\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>full turn on carrier B</td>
+<td>$\exp(2\pi(H_z\otimes\mathrm{I}+\mathrm{I}\otimes H_z))$</td>
+<td>$\mathrm{I}_{16}$</td>
+</tr>
+<tr>
+<td>half turn on the pair</td>
+<td>$\exp(\pi\cdot)$ on both carriers</td>
+<td>spectrum contains $-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two rows that carry the article.</strong> The two Casimir spectra are the whole result: $0$ and $2$ are the only values, and $j(j+1)$ with $j\in\{0,1\}$ are the only solutions. The two projector rows show why: the Casimir is an affine function of a projection, so its spectrum has exactly two values by construction and not by accident.</p>
+<p><strong>One check that is not numerical.</strong> The addition rule is a theorem about all labels, and no sample confirms it. What the numbers confirm is the case $\tfrac12\otimes\tfrac12$: two values, the multiplicities $1+3$ and $4+12$, and the labels forced by the real dimensions.</p>
+<h2 id="summary">Summary</h2>
+<p>The rotor group is $S^3$, of real dimension three, and it is $Spin(3)$. Its double cover of $SO(3)$ has kernel $\{\pm e_t\}$, a full turn upstairs is $-e_t$, and this is where half-integer carriers come from.</p>
+<p>Left multiplication gives three real antisymmetric generators with $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$. Halving them gives $[J_i,J_j]=\varepsilon_{ijk}J_k$ and the Casimir $\sum_kJ_k^2=-\tfrac34\mathrm{I}_4$, or $+\tfrac34\mathrm{I}_4$ in the Hermitian normalization $H_k=iJ_k$. On the irreducible carrier $\mathbb{R}^4$ the Casimir is $s(s+1)$, so $s=\tfrac12$, and the weights $\pm\tfrac12$ confirm it. The real dimension is $4$ where $2s+1=2$, because the carrier is quaternionic.</p>
+<p>The two-sided product is forced, since one-sided multiplication is multiplicative only for the unit. The corpus operator $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}$ equals the norm times conjugation by the inverse, so it is an automorphism exactly on the norm-one surface, and on the rotor sphere the two marks coincide and the operator is conjugation by the inverse with no ambiguity. On the boost sector $\natural$ is still the inverse, since a boost has norm one; the operator that fails there is the $*$-operator. The right factor of a two-sided action is an anti-homomorphism, and the diagonal rotation generator is $J_k-J'_k$.</p>
+<p>The pair is $S^3_L\times S^3_R$, acting on $\mathbb{H}$ of real dimension four, with two commuting Casimirs each $-\tfrac34$. The addition rule for the labels of the rotor group gives $\tfrac12\otimes\tfrac12=0\oplus1$. The total Casimir is $2(\mathrm{I}-Q)$ with $Q$ the projection onto the singlet part: on $\mathbb{H}$ its spectrum is $0$ once and $2$ three times, and on $\mathbb{H}\otimes\mathbb{H}$ it is $0$ four times and $2$ twelve times. The values $0$ and $2$ are $j(j+1)$ at $j=0$ and $j=1$, and those are the two spins of the pair.</p>
+<p>A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the pair is an action of the rotation group. The projection $Q$ commutes with the total generators and not with either factor alone, which is the precise sense in which the split belongs to the pair.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Rot}=S^3=Spin(3)$</td>
+<td>the rotor group, the unit quaternions</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$, $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the quaternion algebra and its real basis</td>
+</tr>
+<tr>
+<td>$\natural$, $*$</td>
+<td>quaternion conjugation and the Hermitian adjoint $*=\bar{\cdot}\circ\natural$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}$</td>
+<td>the value of the quaternion norm on $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\Theta_{\natural}$, $\Theta_{*}$</td>
+<td>$\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}$ and $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
+</tr>
+<tr>
+<td>$L(\tilde q)$, $L_k$</td>
+<td>the real left-regular matrix and its three generators</td>
+</tr>
+<tr>
+<td>$R(\tilde q)$, $R_k$</td>
+<td>the real right-regular matrix and its three generators</td>
+</tr>
+<tr>
+<td>$J_k=\tfrac12L_k$, $J'_k=\tfrac12R_k$</td>
+<td>the halved left and right generators</td>
+</tr>
+<tr>
+<td>$H_k=iJ_k$</td>
+<td>the Hermitian generators, $[H_i,H_j]=i\varepsilon_{ijk}H_k$</td>
+</tr>
+<tr>
+<td>$\mathbf{H}^2=\sum_kH_k^2$</td>
+<td>the quadratic Casimir, $s(s+1)$ on an irreducible carrier</td>
+</tr>
+<tr>
+<td>$J_k^{\mathrm{tot}}=J_k-J'_k$</td>
+<td>the diagonal generators of the pair on $\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$J_k\otimes\mathrm{I}+\mathrm{I}\otimes J_k$</td>
+<td>the generators of two independent systems on $\mathbb{H}\otimes\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>the orthogonal projection onto the part of label $0$; $\mathbf{H}^2_{\mathrm{tot}}=2(\mathrm{I}-Q)$</td>
+</tr>
+<tr>
+<td>$s$, $j$</td>
+<td>the spin of a carrier, read from the Casimir and the real dimension</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="from-the-rotor-to-the-spin-of-the-rotor.html">From the Rotor to the Spin of the Rotor</a>, for the single-rotor Casimir, the forcing of the two-sided product and the tensor square of the rotor carrier.</li>
+<li><a href="the-rotor-group-via-4x4-real-matrices.html">The Rotor Group via 4×4 Real Matrices</a>, for the left-regular display, its generators, its exponential and the two isoclinic copies of $S^3$ in $SO(4)$.</li>
+<li><a href="the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>, for the two-sided operators of the biquaternion algebra and their relation to the spin group.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">The Carriers, the Representation, the Spin and the Closure</a>, for the three carriers, the spin table and the identity $2s+1=\dim$.</li>
+<li><a href="hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html">Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides</a>, for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.</li>
+<li><a href="the-pin-and-spin-groups-of-the-quaternion-algebra.html">The Pin and Spin Groups of the Quaternion Algebra</a>, for the Clifford description of the same groups.</li>
+<li>I. R. Porteous, <em>Clifford Algebras and the Classical Groups</em>, ch. 13 and 16, for the spin groups, the double covers and $Spin(4)\cong S^3\times S^3$.</li>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, ch. II and III, for the Casimir element and the addition rule for the labels of a compact group.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
