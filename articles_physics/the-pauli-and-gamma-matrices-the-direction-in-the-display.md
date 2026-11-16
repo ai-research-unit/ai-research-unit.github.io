@@ -8,7 +8,7 @@
 
 **The one idea that governs the entry is that the element is one and the pictures are many.** The doubling of the size, the block structure, the diagonal member and the gamma list are all consequences of one choice of frame, and none of them is a second object.
 
-**Boundaries.** The root, the Peirce frame, the tensor product, the six roots that keep the sparsity, the compression at size two, the Pauli correspondence, the spectral projectors and the adjugate are *$M_4(\mathbb{C})$ Pauli Representation* and *$M_2(\mathbb{C})$ Pauli Representation*; the two families in a general frame and the change of frame are *Families of Matrix Representations*; the gamma frame, its non-canonicity, the Clifford and pin groups and the legacy dictionary are *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *The Pin Group of the Gamma Frame*. The display that chooses no direction is *The AXF Matrices*, and the argument for preferring it is *Why AXF Matrices instead of Pauli and Gamma Matrices*. No dynamics, no mass value and no quantum postulate appears below.
+**Boundaries.** The root, the Peirce frame, the tensor product, the six roots that keep the sparsity, the compression at size two, the Pauli correspondence, the spectral projectors and the adjugate are *$M_4(\mathbb{C})$ Pauli Representation* and *$M_2(\mathbb{C})$ Pauli Representation*; the two families in a general frame and the change of frame are *Families of Matrix Representations*; the gamma frame, its non-canonicity, the Clifford and pin groups and the legacy dictionary are *The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$* and *The Pin Group of the Gamma Frame*. The display that chooses no direction is *The AXF Matrices: Axis-Free, Integer Entries*, and the argument for preferring it is *Why AXF Matrices instead of Pauli and Gamma Matrices*. No dynamics, no mass value and no quantum postulate appears below.
 
 ## The Source Table
 
@@ -185,7 +185,7 @@ does not return itself: under the exchange of $\vec e_z$ with $\vec e_x$ the dia
 
 **No computation done in the Pauli or gamma display is wrong.** The Clifford relations hold in every display, every trace and every determinant is invariant, and an amplitude computed with gammas is correct. The Dirac equation written with the five gammas is a correct equation, and it is the equation of the literature.
 
-**The claim is about the page.** A fundamental equation should not be written in a form that privileges a direction the physical reality does not contain, because the privilege then travels with the formula and cannot be distinguished from the physics. The remedy is not a correction of any result; it is a rule of writing, and the display that obeys it is *The AXF Matrices*.
+**The claim is about the page.** A fundamental equation should not be written in a form that privileges a direction the physical reality does not contain, because the privilege then travels with the formula and cannot be distinguished from the physics. The remedy is not a correction of any result; it is a rule of writing, and the display that obeys it is *The AXF Matrices: Axis-Free, Integer Entries*.
 
 ## The Interpretations
 
@@ -315,7 +315,7 @@ $$
 
 ## The Limits
 
-**The entry reads displays and not the algebra.** It states what each picture makes visible and what each one loses. The axis-free display, its ten properties and its uniqueness belong to *The AXF Matrices*, and the argument that the corpus should display in that basis belongs to *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+**The entry reads displays and not the algebra.** It states what each picture makes visible and what each one loses. The axis-free display, its ten properties and its uniqueness belong to *The AXF Matrices: Axis-Free, Integer Entries*, and the argument that the corpus should display in that basis belongs to *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 **The entry does not read the spectrum.** The eigenvalue pair is named because the matrix invariants carry it, and the spectral theory is the subject of its own entry.
 
@@ -364,7 +364,7 @@ $$
 - [Families of Matrix Representations](../articles_maths/families-of-matrix-representations.html), for the two families in a general frame.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame operators and the legacy dictionary.
 - [The Pin Group of the Gamma Frame](../articles_maths/the-pin-group-of-the-gamma-frame.html), for the finite group and the double cover.
-- [The AXF Matrices](the-axf-matrices.html), for the display that chooses no direction.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html), for the display that chooses no direction.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the argument and the migration rules.
 - [Idempotents, Ideals and Observables](idempotents-ideals-and-observables.html), for the roots of $+e_t$ and $-e_t$ and the Peirce corners named here.
 - [The Modules: What the Algebra Acts On](the-modules-what-the-algebra-acts-on.html), for the carrier the copy index belongs to.

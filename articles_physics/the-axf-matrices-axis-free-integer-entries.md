@@ -1,4 +1,4 @@
-# __The AXF Matrices__
+# __The AXF Matrices: Axis-Free, Integer Entries__
 
 ## Introduction
 
