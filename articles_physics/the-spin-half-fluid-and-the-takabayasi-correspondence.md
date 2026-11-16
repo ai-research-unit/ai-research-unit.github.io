@@ -6,6 +6,8 @@
 
 **The article is a comparison and not a derivation.** The word, its four brackets, its current and its spin are [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). Takabayasi's system is his. What is new here is the mapping between them, the reason each row of the mapping holds, and the ledger of what the comparison buys.
 
+**The comparison also yields two fluid properties that the block has named and not used, and they are computed here rather than asserted.** §*The Mass Density and the Heat Flow* shows that his density is the current's modulus and that the mass term couples to a different number, and it puts a value on the heat flow that his choice of velocity leaves in the fluid's own rest frame. The two are not decoration: the first gives the fluid its one thermodynamic function, and the second says what the frame choice costs. Each claim carries its check in place.
+
 **The ledger is short and it is stated at the outset.**
 
 - **No new prediction.** Nothing in the biquaternion reading predicts what the tensor formulation does not predict.
@@ -51,8 +53,10 @@ $$
 | $\rho$, the rest density | $r^{2}$, the scale squared | identity |
 | $v_\mu$, the unit four-velocity | $\tilde U_{\Psi,\mathrm b}$, the Hermitian boost | identity |
 | $w_\mu$, the unit spin vector | $\tilde u_{\mathrm r}$, the real rotor | identity |
-| $k_\mu$, the momentum | $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, the phase gradient | reading, with a qualifier |
+| $k_\mu$, the momentum | $\tilde K_{\mu}/k_m$, the phase gradient in units of the mass wave number | reading, with a qualifier |
 | $\theta$, the internal angle | $\theta_{\mathrm{axr}}$, the rotor angle | forced by the count, given the first four rows |
+
+**Two of the rows carry a unit as well as a comparison, and the momentum row is one of them.** Takabayasi defines $k_\mu=p_\mu/(mc)$, a momentum divided by a mass, so his $k_\mu$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=mc/\hbar$, so the row reads $k_\mu=\tilde K_\mu/k_m$ and a table that equates the two loses the $\hbar$. His units also set $c=1$, which is why his $v_\mu$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
 
 **The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
@@ -144,6 +148,54 @@ $$
 
 **The remainder is a mix, and the correspondence is not a computed equality.** The word splits the derivative into a boost connection and a rotor connection, and a split of the derivative is not a split of the stress. Takabayasi's remainder draws on both: the angle's gradient is a rotor quantity, the spin direction is a rotor quantity, and the curl of the velocity is a boost quantity. So the honest statement is that the remainder is not the rotor's contribution alone, and that no term-by-term identification of it with the word's boost and rotor pieces is computed in this corpus. The relativistic quantum stress is exhibited in [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for the scalar case, and the spinor case's antisymmetric part is the subject of the articles that follow this one.
 
+## The Mass Density and the Heat Flow
+
+**Two fluid properties follow from the mapping and have not been used in this block.** The fluid carries two densities and not one, and its velocity is the particle frame's and not the energy frame's. The first is what the internal angle says when it is not read as a spin; the second is what the stress remainder calls heat flow. Both are computed here.
+
+### The two densities
+
+**His density is the modulus of the current, and his scalar bilinear is a different number.** His $\Omega$ and $\Omega_{\mathrm{ps}}$ are the scalar and the pseudoscalar bilinears, $\Omega=\bar\psi\psi$ and $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$, and his density is their quadrature:
+
+$$
+\rho^{2}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}=j_\mu j^{\mu},
+$$
+
+with $j$ the current. The identity is Fierz's; on twenty random spinors its largest deviation is $9\times10^{-14}$.
+
+**Three statements follow.** The velocity $v_\mu=S_\mu/\rho$ is a unit vector because $\rho$ is the current's modulus, so the normalisation of the velocity is not a condition at all: nothing is imposed. His $\rho>0$ is a definition and not a restriction, the modulus being positive exactly where the current does not vanish. The third is this section's subject: his mass term carries the scalar bilinear and not the density, so the fluid's mass density is
+
+$$
+m\Omega=m\rho\cos\theta
+$$
+
+while its particle density is $\rho$, and the two differ by the factor $\cos\theta$.
+
+**A plane wave is the case where they agree in magnitude.** $\Omega_{\mathrm{ps}}$ vanishes for a free plane wave, and the reason is exact rather than numerical: the two chiral halves of a plane-wave spinor differ by the Hermitian factor $\vec\sigma\cdot\vec p$, so the two terms of the pseudoscalar cancel. Checked on eight plane waves, four momenta and both spins, to $10^{-16}$. So $\theta$ is $0$ for a particle and a half turn for an antiparticle, and $\lvert\cos\theta\rvert=1$ either way. A free plane wave is a fluid element whose mass density and particle density are one number, up to the sign that carries its charge content.
+
+**Away from it they differ, and the difference is a mass defect.** A two-mode superposition gives $\cos\theta=0.9986$, $0.9739$ and $0.8777$ at three events of one field, and a particle–antiparticle superposition gives $0.045$ and $0.037$ at two events of another. Each particle then contributes $mc^{2}\cos\theta$ to the mass term instead of $mc^{2}$, so the fluid carries a defect $mc^{2}(1-\cos\theta)$ per particle: between $0.0014$ and $0.12$ in the first field and about $0.95$ in the second. **Whether the defect is to be called an internal energy is a reading**; what is computed is $\cos\theta$. The reading is that the fluid has one thermodynamic function per particle, $mc^{2}(\cos\theta-1)$, which is the function the block's table records as "none". The table's *none* is right about the pressure: [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) says in the same place that the fluid's data do not determine its stress. It is silent about the mass.
+
+**The sign of the mass density is the particle content, and charge conjugation flips it while leaving the density alone.** An antiparticle-dominated field has $\Omega<0$ with $\rho>0$; two antiparticle modes give $\cos\theta=-0.9987$. Charge conjugation sends $\Omega\to-\Omega$ and leaves $\Omega_{\mathrm{ps}}$, so $\cos\theta\to-\cos\theta$ and $\sin\theta\to+\sin\theta$. That is $\theta\to\pi-\theta$ and not $\theta\to\theta+\pi$. Checked on both superpositions: the cosines are equal and opposite to the last digit, the sines agree to $10^{-17}$, and the alternative $\theta+\pi$ misses by $2.0$ and $0.09$. The energy reading of the paragraph above is therefore confined to the particle sector; on the antiparticle side the sign of $\Omega$ is a charge label and not an energy.
+
+### The velocity and the heat flow
+
+**His velocity is the current's direction, and the standard name for that choice is the Eckart frame.** Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_\mu=\rho v_\mu$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,
+
+$$
+q^{\mu}=T^{\mu\lambda}u_{\lambda}-\epsilon\,u^{\mu},
+\qquad
+\epsilon=T_{\lambda\rho}u^{\lambda}u^{\rho},
+$$
+
+with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy density it sees.
+
+**A plane wave has none, and a superposition has some.** Computed on the Belinfante stress — the symmetrised canonical tensor, whose divergence vanishes to $2\times10^{-16}$ on every case checked — a single plane wave has $\lVert q\rVert/\lvert\epsilon\rvert\le6\times10^{-16}$. The two-mode superposition has it at $0.31$ and $0.34$ of the energy density at two events, and the particle–antiparticle superposition at $18$ and $15$. The angle and the flux move together: $\lvert\cos\theta\rvert=1$ with $q=0$, and $\lvert\cos\theta\rvert<1$ with $q\neq0$.
+
+**The check that separates the angle from the superposition is the pair with one momentum.** Two plane waves of the same momentum and opposite spins have $\cos\theta=1$ and $\lVert q\rVert/\lvert\epsilon\rvert\le5\times10^{-17}$. So it is not the interference of two waves that produces the heat flow; it is the disparity between the momentum and the velocity, which the interference happens to produce and the common momentum does not.
+
+**This is where his reading of $\theta$ becomes a fluid statement.** He says that the angle measures the disparity between the velocity and the momentum, and his own stress says the same in the other vocabulary: the particle part of $L_{\mu\nu}$ is $mc^{2}\rho k_\mu v_\nu$, whose momentum density lies along $k$ and whose particle flux lies along $v$, so the two are parallel exactly when $k$ is. When they are parallel the transport term is a transport along the flow and there is nothing left to carry; when they are not, the momentum density and the particle flux point along different directions, and the difference has to appear as a flux in the fluid's own rest frame. **The identification of the disparity with $\theta$ is his and is quoted; what is computed here is that the two families separate the same way.**
+
+**What is established and what is read.** Established: that $\rho$ is the current's modulus and that $\Omega=\rho\cos\theta$; that $\lvert\cos\theta\rvert=1$ for a free plane wave and falls below it for superpositions, with the values quoted; that charge conjugation sends $\theta\to\pi-\theta$; that the Eckart energy flux vanishes for a plane wave and for two waves of one momentum, and does not for the superpositions. Read: that the defect is an internal energy; that the disparity of momentum and velocity is the angle itself.
+
 ## What the Correspondence Adds and What It Does Not
 
 ### What it adds
@@ -160,6 +212,8 @@ $$
 
 **The mass term's frame dependence.** The scalar coupling is a frame factor, and the factor is the same one the velocity carries.
 
+**The fluid's two densities, and the frame its velocity belongs to.** His density is the current's modulus, so his subsidiary conditions are met by construction, and the mass term couples to the scalar rather than to that density: the fluid carries a particle density and a mass density, and their ratio is the angle. His velocity is the current's direction, which is the Eckart frame, and the energy flux that this choice leaves in the fluid's rest frame is what his reading of the stress remainder calls heat flow.
+
 ### What it does not add
 
 **No prediction.** The two formulations make the same predictions, and there is no experiment that separates them.
@@ -174,11 +228,11 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the first three rows of the mapping are identities of the corpus's own definitions. That the count of eight functions matches on both sides and that the fifth row is the only consistent assignment of the two leftovers. That the derivative of the word separates into four brackets of four distinct types, and that the Dirac equation constrains them without closing them. That the current reads the boost and the spin reads the rotor. That the word's domain is the set of invertibles and that the one-sided plane waves lie on the cone with a density that never vanishes. That the mass term is the frame factor and depends on the boost alone.
+**Established.** That the first three rows of the mapping are identities of the corpus's own definitions. That the count of eight functions matches on both sides and that the fifth row is the only consistent assignment of the two leftovers. That the derivative of the word separates into four brackets of four distinct types, and that the Dirac equation constrains them without closing them. That the current reads the boost and the spin reads the rotor. That the word's domain is the set of invertibles and that the one-sided plane waves lie on the cone with a density that never vanishes. That the mass term is the frame factor and depends on the boost alone. That his density is the current's modulus, so that the normalisation of his velocity and his $\rho>0$ are definitions and not restrictions. That the mass density is $\Omega=\rho\cos\theta$ and is therefore not the particle density; that $\lvert\cos\theta\rvert=1$ on a free plane wave and falls below it on superpositions, with the values quoted; that $\theta\to\pi-\theta$ under charge conjugation; and that the Eckart-frame energy flux vanishes for a plane wave and for two waves of one momentum and not for the superpositions.
 
-**Interpretation.** That Takabayasi's subsidiary condition is the tensor form of the algebraic non-closure. The structural correspondence is exact — both are statements that the momentum is fixed only up to one function — but the identification of the two conditions is an identification and not a derivation. That his internal angle is the rotor angle. The count forces the pairing once the first four rows are granted, and the sign of the double cover and the chiral operation support it; it is not computed. That his stress remainder is what the word's boost and rotor pieces together would give. That the momentum row's qualifier is resolved by reading his curl as the phase's freedom.
+**Interpretation.** That Takabayasi's subsidiary condition is the tensor form of the algebraic non-closure. The structural correspondence is exact — both are statements that the momentum is fixed only up to one function — but the identification of the two conditions is an identification and not a derivation. That his internal angle is the rotor angle. The count forces the pairing once the first four rows are granted, and the sign of the double cover and the chiral operation support it; it is not computed. That his stress remainder is what the word's boost and rotor pieces together would give. That the momentum row's qualifier is resolved by reading his curl as the phase's freedom. That the mass defect is an internal energy per particle; what is computed is the ratio $\cos\theta$, and the energy is a reading of it. That the disparity between his momentum and his velocity is the angle itself, which is his statement quoted and not a derivation; the computed content is the correlation of the two families, $\theta=0$ with $q=0$ and $\theta\neq0$ with $q\neq0$.
 
-**Not claimed.** It is not claimed that the two formulations are the same in the sense of a dictionary with no residue. Three rows are exact, one is forced, one is read. A reader who wants a single theorem will not find one; what is offered is a mapping with its grades named.
+**Not claimed.** It is not claimed that the two formulations are the same in the sense of a dictionary with no residue. Three rows are exact, one is forced, one is read. A reader who wants a single theorem will not find one; what is offered is a mapping with its grades named. It is not claimed that the heat flow and the angle are proportional: no number is computed that ties $\lVert q\rVert$ to $\theta$, and the two are checked only to vanish and to be non-zero together.
 
 ## Summary
 
@@ -191,6 +245,8 @@ His equations close the count and not the system. The derivative of the word sep
 The current reads the density and the boost; the spin reads the density and the rotor. The separation is the same in both formulations, and the word supplies its reason.
 
 The domain is where the word is smaller. His variables need a non-zero density; the word needs the element to be an invertible element. The one-sided plane waves are nowhere zero, have a positive density, and have no word. That is the difference the comparison finds, and it is a finding about the word.
+
+The two densities are the by-product. His $\rho$ is the current's modulus, so the normalisation of his velocity is satisfied by construction, and the density that the mass term couples to is the scalar $\Omega=\rho\cos\theta$ and not $\rho$. A free plane wave has the two equal in magnitude; a superposition does not, and the defect $mc^{2}(1-\cos\theta)$ per particle is the one function of the particle's internal state that the fluid carries — an internal energy per particle, if it is read as one. Charge conjugation flips the sign of the mass density and leaves the particle density, which makes the sign a charge label. His velocity is the current's direction, which is the Eckart frame, and the energy flux it leaves in its own rest frame — the heat flow — vanishes on a plane wave and on two waves of one momentum, and not on a superposition. That flux and the angle vanish together.
 
 No experiment separates the two formulations. What separates them is the origin of the structure: Takabayasi constructs the spin-half fluid and the word reads it. The equation, no; the coordinates, yes.
 
@@ -211,6 +267,10 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\rho$, $v_\mu$, $w_\mu$, $k_\mu$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
+| $\Omega=\bar\psi\psi$, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
+| $j^{\mu}$ | The current, with $\rho^{2}=j_\mu j^{\mu}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$ |
+| $k_m=mc/\hbar$ | Mass wave number; the unit that makes his $k_\mu$ dimensionless |
+| $u^{\mu}$, $q^{\mu}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm, the determinant |
 | $c$ | Speed of light in the medium |
 
@@ -221,4 +281,6 @@ No experiment separates the two formulations. What separates them is the origin 
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the geometric reading of the Dirac field as a density, an angle and a rotor.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the relativistic spin fluid and the spin-transport equation it must carry.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the enumeration of minimal spin-fluid systems and the non-uniqueness of the closing condition.
+- C. Eckart, "The thermodynamics of irreversible processes III: Relativistic theory of the simple fluid," *Physical Review* **58** (1940) 919–924, for the frame that follows the current and the first-order entropy production.
+- L. D. Landau and E. M. Lifshitz, *Fluid Mechanics*, 2nd edition (Pergamon, 1987), §127, for the frame that follows the energy flux and for the heat flow that separates the two.
 - The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Spin-Zero Fluid](the-spin-zero-fluid.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html).
