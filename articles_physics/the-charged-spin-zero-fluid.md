@@ -1,4 +1,4 @@
-# __The Charged Klein–Gordon Fluid: Vorticity Is the Field Strength__
+# __The Charged Spin-Zero Fluid: Vorticity Is the Field Strength__
 
 ## Introduction
 
@@ -32,7 +32,7 @@ with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the mate
 
 **What is not here.** No new solution, no new prediction, no new particle. The article's subject is the fluid reading of the standard minimally coupled scalar field, and its work is to say which of the free article's properties are properties of the scalar field and which are properties of the connection it is coupled to. The answer is short: the irrotationality and the gauge non-invariance of the velocity are the connection's, and the density, the quantum stress, the absence of an equation of state and the nodal set are the field's.
 
-**Position in the block.** This article is the charged companion of [The Klein–Gordon Fluid](the-klein-gordon-fluid.html). Its siblings are [The Charged Spin Fluid](the-charged-spin-fluid.html) and [The Charged Proca Fluid](the-charged-proca-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
+**Position in the block.** This article is the charged companion of [The Spin-Zero Fluid](the-spin-zero-fluid.html). Its siblings are [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and the three are compared side by side in §*The Three Charged Fluids*. The free article's own table of the three free fluids is in that article and in the two free companions, and the present table is its charged counterpart.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, and $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
@@ -318,7 +318,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 
 ## Further Reading
 
-- [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), the free companion, whose twelve properties these twelve answer.
+- [The Spin-Zero Fluid](the-spin-zero-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word, the pair, the quantum potential and the nodal set.
 - [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the action and the current in the chart.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
@@ -327,7 +327,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank table this fluid fills differently.
 - [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), for the criterion the charged fluid still fails.
 - [The Klein Paradox in Biquaternionic Form](the-klein-paradox-in-biquaternionic-form.html), for the field theory of the charge-sign boundary.
-- [The Charged Spin Fluid](the-charged-spin-fluid.html) and [The Charged Proca Fluid](the-charged-proca-fluid.html), the two companions.
+- [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the two companions.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the covariant derivative in geometric algebra.
 - Alexander Altland and Ben Simons, *Condensed Matter Field Theory* (Cambridge University Press, 2nd edition, 2010), for the charged condensate and the London response.
 - Michael E. Peskin and Daniel V. Schroeder, *An Introduction to Quantum Field Theory* (Addison-Wesley, 1995), for the minimally coupled scalar field and its stress tensor.

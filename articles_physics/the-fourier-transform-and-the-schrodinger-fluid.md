@@ -139,7 +139,7 @@ wherever the phase is twice differentiable — at a mode and at every superposit
 
 ## What the Transform Leaves, Rung by Rung
 
-**The scalar rung's momentum lives in the phase bracket, and the reader should keep that against the vector rung's opposite arrangement.** The Proca fluid's word has no phase at all, so its wave number has nowhere to go but the scale. The table is stated here because the present article is the first rung of it.
+**The scalar rung's momentum lives in the phase bracket, and the reader should keep that against the vector rung's opposite arrangement.** The spin-one fluid's word has no phase at all, so its wave number has nowhere to go but the scale. The table is stated here because the present article is the first rung of it.
 
 | rung | which factor carries the wave number | what is therefore mode-blind |
 | --- | --- | --- |

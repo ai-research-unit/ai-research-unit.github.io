@@ -152,5 +152,5 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 - *Wave–Particle Duality and the Weight of a Level Set*, for the measure-theoretic reading of a support.
 - M. Plancherel, "Contribution à l'étude de la représentation d'une fonction arbitraire par des intégrales définies," *Rendiconti del Circolo Matematico di Palermo* **30** (1910) 289–335, for the isometry.
 - L. Mandel and E. Wolf, *Optical Coherence and Quantum Optics* (Cambridge, 1995), Part I, for the modulation and shift theorems in the form used here.
-- T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin fluid whose four brackets the word carries.
+- T. Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half fluid whose four brackets the word carries.
 - P. R. Holland, *The Quantum Theory of Motion* (Cambridge, 1993), for the same structure read as a guidance equation.

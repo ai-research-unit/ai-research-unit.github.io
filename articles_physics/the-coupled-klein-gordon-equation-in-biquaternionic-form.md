@@ -14,7 +14,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=mc/\hbar$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and Its Four Copies* shows what it produces.
+with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=mc/\hbar$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and the Carrier* shows what it produces.
 
 **Four findings, and the second is the reason the article exists.**
 
@@ -30,7 +30,7 @@ $$
 
 The second term is a pure vector, so a central field cannot satisfy the covariant second-order equation in a region of nonzero curvature; and the *component* equation $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, which is the one the action produces and the one this article adopts, differs from it by exactly that term (§*The Covariant Square and What It Forbids*, §*The Two Coupled Equations*).
 
-*Third, the free article's fourfold structure survives the coupling unchanged.* The free equation separates into four independent scalar equations because $\Box_\Phi$ is central; the coupled equation separates for the same reason, so the coupled theory is four copies of the standard charged scalar field sharing one connection and one charge, with no equation relating the four coefficients (§*The Field Equation and Its Four Copies*).
+*Third, the carrier survives the coupling, and the coupling's reach is two structural zeros.* The free equation is one complex equation on the centre because $\Box_\Phi$ is central, and the coupled equation is one complex equation for the same reason; a value that leaves the centre would give four charged scalars sharing one connection, and the connection cannot mix them either — what the curvature does instead is convert a scalar coefficient into vector ones, which is why the algebra's own covariant square is not an equation for the central field (§*The Field Equation and the Carrier*).
 
 *Fourth, the current the free article already has becomes the source of the inhomogeneous Maxwell equation, and becomes gauge invariant in the same step.* The pairing is the algebra's own, so no adjoint row is needed and no bilinear has to be repaired; the current is conserved by the equation, and its conservation is the integrability condition of the connection's equation (§*The Current*, §*The Source*).
 
@@ -56,7 +56,7 @@ $$
 
 the conjugation applied to the units and not to the connection's coefficients, which are scalars and unaffected by $\natural$. The article writes $\natural$ on the operator and never on a coefficient.
 
-**Which carrier.** The field is an element of $\mathbb{B}$, as it is in the free theory, and the coupling does not change that. The free article shows that the equation decouples on the four coefficients and that the carrier could be taken as four complex scalars; the coupled equation decouples in the same way, so the carrier question is the same question and it has the same answer. This is where the scalar case differs from the vector and spinor cases: there the coupling *forced* a change of carrier, here it forces nothing, and the reason is that the field was complex from the start and that the connection's coefficients are central.
+**Which carrier.** The field is the spin-zero carrier's, the centre $\mathbb{B}_C$, as it is in the free theory, and the coupling does not move it: $\tilde\Xi=\xi\,e_t$ with $\xi$ one complex function. The restriction is what makes the coupling look like nothing: the connection's coefficients are central, so the covariant derivative acts on one complex function and the equation is the ordinary charged scalar equation. The alternative — a value that leaves the centre — is treated below in §*The Covariant Square and What It Forbids*: it gives four coefficients coupled by $\tilde F$, and it is a different theory, not the corpus's with more freedom.
 
 **The two potentials are the two slots of one element.** For a material connection $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with $a'_t$ and $\vec A$ real, the temporal coefficient is imaginary and the three spatial coefficients are real. So
 
@@ -64,7 +64,7 @@ $$
 \frac{i\,ϙ}{\hbar}\tilde A_\Phi=-\frac{ϙ}{\hbar}a'_t\,e_t+\frac{i\,ϙ}{\hbar}\vec A ,
 $$
 
-a real central number in the temporal slot and imaginary central numbers in the spatial ones. The sign difference is not a convention of this article: it is the metric, and it is the same sign difference that appears in the Proca companion's four-momentum shift. The article records it once here and uses it in §*The Field Equation and Its Four Copies*.
+a real central number in the temporal slot and imaginary central numbers in the spatial ones. The sign difference is not a convention of this article: it is the metric, and it is the same sign difference that appears in the Proca companion's four-momentum shift. The article records it once here and uses it in §*The Field Equation and the Carrier*.
 
 **What the prescription is not.** It is not the replacement of $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$ inside $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and nothing else. That replacement is the natural guess, it is what the Proca and Dirac companions do, and §*The Covariant Square and What It Forbids* shows that it produces a different equation from the one the action produces. The distinction is the article's second finding and its technical core.
 
@@ -183,9 +183,9 @@ whose Euler–Lagrange equation is E1. The two functionals differ by the off-dia
 
 **What the two equations share.** Both are gauge covariant, both reduce to the free equation at $ϙ=0$, and both are second order. What separates them is that E2 is the standard theory and E1 is not, and the separating term is the field strength. The article states this as its second finding and does not present E1 as a rival with a claim to the same physics.
 
-## The Field Equation and Its Four Copies
+## The Field Equation and the Carrier
 
-**The equation, slot by slot.** Because the covariant derivative is central, E2 acts on each coefficient separately:
+**On the carrier the equation is one line.** The value is $\xi\,e_t$, the covariant derivative is central, and E2 is $(\Box_{\mathrm{gco}}-k_m^{2})\xi=0$ for one complex function $\xi$: the standard charged scalar equation, and the one the block reads. **On a value that leaves the centre it is four lines.** Because the covariant derivative is central, E2 acts on each coefficient separately:
 
 $$
 \left(\Box_{\mathrm{gco}}-k_m^{2}\right)\tilde\Xi=0
@@ -283,7 +283,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 - The exact split of the covariant square into the scalar d'Alembertian and the curvature, and with it the prohibition on central fields in a nonzero field strength.
 - The discrimination between the two coupled equations, which the free theory cannot make, with the action as the arbiter and the current as the second witness.
 - The gauge-invariant current, and its identification with the source of the connection's equation.
-- The fourfold structure carried over without change, so the free article's bookkeeping survives.
+- The carrier carried over without change: one complex function, one equation, one charge, so the free article's bookkeeping survives as it stands.
 
 **Does not add.**
 
@@ -312,7 +312,7 @@ $$
 \Box_{\mathrm{gco}}=\sum_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big)^{2},
 $$
 
-and it is the free equation with the derivative replaced slot by slot. The connection's coefficients are central, so the coupling is one rule and the fourfold decoupling of the free article survives: the coupled theory is four independent charged scalars with one charge and one connection.
+and it is the free equation with the derivative replaced slot by slot. The connection's coefficients are central, so the coupling is one rule, the field stays in the centre and the equation stays one complex equation for one charged scalar; the covariant derivative is the only change. A value outside the centre would give four charged scalars with one charge and one connection, and the curvature term is what keeps the central field from satisfying the algebra's own covariant square, E1.
 
 The free theory has two writings of its second-order operator, $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and $\sum_\mu\partial_\mu^{2}$, which agree identically; with the connection they differ by the curvature,
 

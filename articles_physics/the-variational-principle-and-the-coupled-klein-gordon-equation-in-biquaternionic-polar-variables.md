@@ -243,7 +243,7 @@ and its two equations are the transport equation and the amplitude equation of t
 - [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Form](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the element action.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariant bracket and the curvature.
-- [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), for the hydrodynamic reading.
+- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the hydrodynamic reading.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the winding and the circulation.
 - [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the vector case's chart.

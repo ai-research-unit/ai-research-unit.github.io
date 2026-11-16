@@ -1,4 +1,4 @@
-# __The Dirac Fluid and the Takabayasi Correspondence__
+# __The Spin-Half Fluid and the Takabayasi Correspondence__
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 - **No new prediction.** Nothing in the biquaternion reading predicts what the tensor formulation does not predict.
 - **No new solution.** The general solution is the Fourier superposition of plane waves in both.
-- **A cleaner origin.** The spin fluid, its non-closure, its current–spin separation and its domain all follow from the factorisation of one element, and in the tensor language they are imposed by hand.
+- **A cleaner origin.** The spin-half fluid, its non-closure, its current–spin separation and its domain all follow from the factorisation of one element, and in the tensor language they are imposed by hand.
 
 **The correspondence is graded, and the grades matter.** Three of the five rows are read off the algebra as identities. One is a reading of the momentum as a gradient, which holds only where his curl vanishes, so it is a reading and not an identity. The last is forced by the count once the first four are granted, and is supported by two further arguments that are not computations. The table in §*The Variable Mapping* marks each row with its grade, and a reader who wants only the secure part can take the first three rows and leave the rest.
 
@@ -117,7 +117,7 @@ $$
 
 **The separation is the same and the reason is not.** In the tensor formulation the current and the spin are different bilinears, and the separation is a fact about which bilinear is which. In the word the current reads the Hermitian factor and the spin reads the real-unitary factor, and the separation is a consequence of the four factors being of different types. **The word explains the separation and does not merely record it.**
 
-**The thing that is not the current is worth one paragraph here, because Takabayasi's formulation does not have the problem.** The algebra's own bilinear $i\tilde\Xi\tilde\Xi^{*}$ is the current's mirror image: its temporal slot agrees with $\tilde J_{\Phi}$ up to the factor $c$ and its spatial part is reversed, because the star conjugation fixes the boost and cancels the rotor and the outer $i$ then reverses the spatial vector. Takabayasi defines his current as $\rho v_\mu$ directly and never meets this. The corpus meets it because it tries to read the current from a bilinear of the algebra, and [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) carries the analysis of the failure.
+**The thing that is not the current is worth one paragraph here, because Takabayasi's formulation does not have the problem.** The algebra's own bilinear $i\tilde\Xi\tilde\Xi^{*}$ is the current's mirror image: its temporal slot agrees with $\tilde J_{\Phi}$ up to the factor $c$ and its spatial part is reversed, because the star conjugation fixes the boost and cancels the rotor and the outer $i$ then reverses the spatial vector. Takabayasi defines his current as $\rho v_\mu$ directly and never meets this. The corpus meets it because it tries to read the current from a bilinear of the algebra, and [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) carries the analysis of the failure.
 
 ## The Domain
 
@@ -148,7 +148,7 @@ $$
 
 ### What it adds
 
-**The origin of the spin fluid.** Takabayasi constructs the fluid from the bilinears of the field. The word reads it from the factorisation of one element: the four factors are the fluid's variables and the four brackets are its equations. The construction becomes a reading.
+**The origin of the spin-half fluid.** Takabayasi constructs the fluid from the bilinears of the field. The word reads it from the factorisation of one element: the four factors are the fluid's variables and the four brackets are its equations. The construction becomes a reading.
 
 **The explanation of the subsidiary condition.** Takabayasi imposes his condition to close the system. The word shows that the system's non-closure is the algebraic independence of four brackets of four types, and his condition is one way to close it.
 
@@ -168,7 +168,7 @@ $$
 
 **No removal of the non-uniqueness.** The closing condition is still a choice. Takabayasi makes one, the spin-hydrodynamics literature makes others, and the corpus records the choice without making it.
 
-**Where the Dirac fluid stands among the three.** The block now has a fluid per spin, and they are compared side by side in [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Proca Fluid](the-proca-fluid.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
+**Where the spin-half fluid stands among the three.** The block now has a fluid per spin, and they are compared side by side in [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)'s §*The Three Fluids* and in [The Spin-One Fluid](the-spin-one-fluid.html)'s: the scalar field is a gradient flow with a Korteweg stress and no orientation, the Proca field is a charged flow with a London response and no orientation, and this one is a flow with an orientation — a Cosserat medium but not the constrained one. Takabayasi's own subsidiary condition is the constraint that would make it the constrained case, and that is the sharpest way to say what his tensor fluid is and what the word's is.
 
 **The one-sentence ledger is: the equation, no; the coordinates, yes.** Takabayasi's tensor calculus is the equation in tensor form. The polar word is the coordinates in which the equation's structure is algebraic.
 
@@ -192,7 +192,7 @@ The current reads the density and the boost; the spin reads the density and the 
 
 The domain is where the word is smaller. His variables need a non-zero density; the word needs the element to be an invertible element. The one-sided plane waves are nowhere zero, have a positive density, and have no word. That is the difference the comparison finds, and it is a finding about the word.
 
-No experiment separates the two formulations. What separates them is the origin of the structure: Takabayasi constructs the spin fluid and the word reads it. The equation, no; the coordinates, yes.
+No experiment separates the two formulations. What separates them is the origin of the structure: Takabayasi constructs the spin-half fluid and the word reads it. The equation, no; the coordinates, yes.
 
 ## Summary of Notation
 
@@ -221,4 +221,4 @@ No experiment separates the two formulations. What separates them is the origin 
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the geometric reading of the Dirac field as a density, an angle and a rotor.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the relativistic spin fluid and the spin-transport equation it must carry.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the enumeration of minimal spin-fluid systems and the non-uniqueness of the closing condition.
-- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html).
+- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Spin-Zero Fluid](the-spin-zero-fluid.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html).

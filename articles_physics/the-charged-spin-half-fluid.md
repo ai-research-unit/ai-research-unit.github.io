@@ -1,8 +1,8 @@
-# __The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not__
+# __The Charged Spin-Half Fluid: The Force Takes the Charge and the Spin Does Not__
 
 ## Introduction
 
-**The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin.** That is the whole of what the coupling does to the spin fluid, and the article's work is to draw out what follows: the velocity is still an invertible element, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. **The charge adds a force and an angle shift; it does not add a constitutive law.**
+**The charge reaches the momentum and the frame's rapidity, and it cannot reach the spin.** That is the whole of what the coupling does to the spin-half fluid, and the article's work is to draw out what follows: the velocity is still an invertible element, the vorticity is still the frame's, the spin direction is still gauge invariant and still coupling-blind, and the three open items of the free article — no vorticity transport law, no closure, no spin dynamics in a background — survive the coupling untouched. **The charge adds a force and an angle shift; it does not add a constitutive law.**
 
 **The equation.** The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
@@ -26,7 +26,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 
 **What is not here.** No new solution, no derivation of a spin equation in a background, and no closure of the general field. The parent records all three limits for the free case; this article records that the coupling does not lift them, and that the reason is a fact of type.
 
-**Position in the block.** This article is the charged companion of [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Proca Fluid](the-charged-proca-fluid.html), and §*The Three Charged Fluids* compares the three.
+**Position in the block.** This article is the charged companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and §*The Three Charged Fluids* compares the three.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
@@ -88,14 +88,14 @@ $$
 
 **In one sentence: the boost in the word is the one the covariant wavevector names, so the velocity is kinetic and the potential sits entirely in the canonical wavevector.** The classical statement is $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-q\vec A$; the chart's statement is that the two wavevectors differ by one element and that the mass-shell identity is applied to the second.
 
-**The velocity is invertible for every field, and this is where the spin fluid parts company with the scalar one.** Because the boost is invertible by construction and the density is a separate factor,
+**The velocity is invertible for every field, and this is where the spin-half fluid parts company with the scalar one.** Because the boost is invertible by construction and the density is a separate factor,
 
 $$
 \langle\tilde V_\Phi\rangle_{\natural}=-c^{2}
 \qquad\text{whatever the coupling,}
 $$
 
-and the reason is that the velocity is not the momentum over the mass but the frame itself. **In the scalar fluid the velocity was $\tilde P^{\mathrm{mech}}/m$ and was an invertible element only where the quantum potential vanished**, because the quantum potential changed the momentum's norm; here nothing can change the norm of a frame. The contrast is the sharpest single difference between the two charged articles: **the scalar fluid's normalisation is dynamical and the spin fluid's is kinematical.**
+and the reason is that the velocity is not the momentum over the mass but the frame itself. **In the scalar fluid the velocity was $\tilde P^{\mathrm{mech}}/m$ and was an invertible element only where the quantum potential vanished**, because the quantum potential changed the momentum's norm; here nothing can change the norm of a frame. The contrast is the sharpest single difference between the two charged articles: **the scalar fluid's normalisation is dynamical and the spin-half fluid's is kinematical.**
 
 **The mass shell in canonical components is the translated hyperboloid.** Expanding the identity,
 
@@ -145,7 +145,7 @@ where $[\,\cdot\,]_\nu$ is the coefficient of $e_\nu$. **Every term is built fro
 
 ## The Loop Invariant: a Holonomy and a Phase
 
-**The circulation of the spin fluid is not a number, and that is what distinguishes it from the scalar one.** Integrate the velocity around a closed loop. Because $\tilde V_\Phi$ is built from the frame, the integral is the trace of the frame's transport around the loop, and the transport is an element of the Lorentz group:
+**The circulation of the spin-half fluid is not a number, and that is what distinguishes it from the scalar one.** Integrate the velocity around a closed loop. Because $\tilde V_\Phi$ is built from the frame, the integral is the trace of the frame's transport around the loop, and the transport is an element of the Lorentz group:
 
 $$
 \oint\tilde V_\Phi\cdot\mathrm{d}\vec l
@@ -176,7 +176,7 @@ and the two factors commute because the second is central. **The object is an el
 
 **Why the scalar case is the special one.** There the velocity was a gradient plus a potential, so the loop integral split into an integer and a flux and both terms were numbers. Here the velocity is a frame, so the loop integral is a group element before the potential is added and remains one after. **The charge adds a phase to a Lorentz transformation; it does not turn the transformation into a number.**
 
-**What survives of the free article's statement.** The free article records that the spin fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{iϙ\Phi_B/\hbar}$ rather than unity. **That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.**
+**What survives of the free article's statement.** The free article records that the spin-half fluid's circulation is the holonomy and is therefore not quantised, and that the frozen-frame sector is where the circulation vanishes. Both survive, the first with the phase attached and the second with a qualification: a constant frame has a trivial holonomy and a constant flux still gives a phase, so the frozen-frame sector's circulation becomes $e^{iϙ\Phi_B/\hbar}$ rather than unity. **That is the smallest exact statement the article can make about the charge, and it is a statement about a loop and not about an event.**
 
 ## The Gordon Split
 
@@ -224,11 +224,11 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 **The free article's three open items are still open, and the coupling is the reason they are.** The first is the closure of the general field: the four brackets are coupled and the equation does not close them. The second is the choice of spin-transport law, which the Frenkel condition of [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) supplies in one sector and not in general. The third is the spin's dynamics in a background.
 
-**The tempting hypothesis, and why it fails.** One might hope that coupling the spin fluid to a field supplies the missing closure: the field is a new set of variables, the equation is longer, and a longer equation might close. **It does not, and the reason is the type table.** The missing closure is a statement about the rotor bracket and about the fourth bracket's transport; the connection is central and confined to the first two brackets. A longer equation in the brackets the connection can reach cannot constrain the brackets it cannot reach. **The count is unchanged: the word still has eight parameters, the connection still has four, and the four brackets are still underdetermined by the equation alone.**
+**The tempting hypothesis, and why it fails.** One might hope that coupling the spin-half fluid to a field supplies the missing closure: the field is a new set of variables, the equation is longer, and a longer equation might close. **It does not, and the reason is the type table.** The missing closure is a statement about the rotor bracket and about the fourth bracket's transport; the connection is central and confined to the first two brackets. A longer equation in the brackets the connection can reach cannot constrain the brackets it cannot reach. **The count is unchanged: the word still has eight parameters, the connection still has four, and the four brackets are still underdetermined by the equation alone.**
 
 **What would be needed and is not in this construction.** A coupling that could write in the fourth bracket would have to be non-central: a connection taking values in the algebra's vector part, or a word arranged so that the rotor sits in a bracket a central element can reach. Neither exists in the abelian construction, and the parent's §*Open Questions* records the same obstacle for the free case.
 
-**The negative result stated as a positive one.** The charge does not close the spin fluid, and that is informative: it says that the spin fluid's underdetermination is internal to the word and not a consequence of the field being free. **A fluid whose closure one could buy with a coupling would be a fluid whose degrees of freedom were not its own**, and this one's are.
+**The negative result stated as a positive one.** The charge does not close the spin-half fluid, and that is informative: it says that the spin-half fluid's underdetermination is internal to the word and not a consequence of the field being free. **A fluid whose closure one could buy with a coupling would be a fluid whose degrees of freedom were not its own**, and this one's are.
 
 ## The Properties, Listed
 
@@ -269,7 +269,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 **The row that separates this column from the scalar one is the normalisation, and it is a one-word difference.** The scalar velocity is invertible only where the quantum potential vanishes; the spin velocity is invertible wherever the word exists. **The scalar fluid's velocity is dynamical and this one's is kinematical**, and that single contrast explains why the scalar article can say "the vorticity is the field strength" and this one cannot: a velocity that is a momentum can be a gradient plus a potential, and a velocity that is a frame can only be a frame.
 
-**The row that separates it from the vector one is the compressibility.** The Proca fluid's expansion is fixed by its own amplitude, because its velocity is the field's direction; here the velocity is invertible and the expansion is a property of the frame's gradient, which is the free article's subject and which the coupling does not reach. **Three velocities, three expansions, and the charge reaches only one of them.**
+**The row that separates it from the vector one is the compressibility.** The spin-one fluid's expansion is fixed by its own amplitude, because its velocity is the field's direction; here the velocity is invertible and the expansion is a property of the frame's gradient, which is the free article's subject and which the coupling does not reach. **Three velocities, three expansions, and the charge reaches only one of them.**
 
 ## What the Charge Does to the Correspondence
 
@@ -285,7 +285,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
-**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now.** For the spin fluid the added datum is a field acting on a medium that already had an orientation, and the table's second row is this article's.
+**The free correspondence's three kinds of extra structure were the three ways a medium exceeds a dust; the charged correspondence's third column names what exceeds the dust now.** For the spin-half fluid the added datum is a field acting on a medium that already had an orientation, and the table's second row is this article's.
 
 **What the correspondence supports and what it does not.** It supports the claim that the coupled Dirac equation is the equation of motion of a charged Cosserat medium, and it supports the twelve properties of §*The Properties, Listed* item by item. It does not support a spin dynamics in a background, a closure of the general field, or the identification of the vorticity with the field strength: the first two are refused in §*What the Charge Cannot Close* and the third in §*The Vorticity Is Still the Frame's*.
 
@@ -332,7 +332,7 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 
 ## Further Reading
 
-- [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), the free companion, whose twelve properties these twelve answer.
+- [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), the free companion, whose twelve properties these twelve answer.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the type table, the kinetic momentum and the kinetic velocity.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the frame, the spin direction and the mass-shell proposition.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the split into convection and magnetisation.
@@ -340,6 +340,6 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the composition of the rotor's rate with the frame's transport.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank hierarchy the vorticity proper sits in.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.
-- [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Proca Fluid](the-charged-proca-fluid.html), the two companions.
+- [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the two companions.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the Lorentz group's rotor parametrisation.
 - Ingo Kirsch and Dirk Kreimer, *Spin Hydrodynamics* (lecture notes), for the Weyssenhoff–Raabe stress and the Frenkel condition in their relativistic form.

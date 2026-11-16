@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Charged Proca Fluid: The Constraint Is the Amplitude__
+# __The Fourier Transform and the Charged Spin-One Fluid: The Constraint Is the Amplitude__
 
 ## Introduction
 
@@ -8,13 +8,13 @@
 
 **The second finding is that the free fluid's incompressibility is the statement that the constraint is label-local.** At $ϙ=0$ the right-hand side vanishes identically and the constraint becomes a multiplier on both sides; **the mass's gift is therefore a locality in the momentum space**, which is the sharpest form the fluid article's sentence can take.
 
-**The third finding is that the mode basis of the charged Proca fluid is a basis of the chart and not of the field.** The chart's scale is an amplitude and not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex and the invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **An amplitude at a label is therefore a coordinate**, and the transform's support is a property of the description.
+**The third finding is that the mode basis of the charged spin-one fluid is a basis of the chart and not of the field.** The chart's scale is an amplitude and not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex and the invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **An amplitude at a label is therefore a coordinate**, and the transform's support is a property of the description.
 
-**Position in the block.** This is the charged companion of [The Fourier Transform and the Proca Fluid](the-fourier-transform-and-the-proca-fluid.html) and the Fourier companion of [The Charged Proca Fluid: Three Currents and a Compressibility](the-charged-proca-fluid.html). It closes the eight Fourier articles of the fluid block.
+**Position in the block.** This is the charged companion of [The Fourier Transform and the Spin-One Fluid](the-fourier-transform-and-the-spin-one-fluid.html) and the Fourier companion of [The Charged Spin-One Fluid: Three Currents and a Compressibility](the-charged-spin-one-fluid.html). It closes the eight Fourier articles of the fluid block.
 
 ## Conventions
 
-The charged Proca fluid's: $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
+The charged spin-one fluid's: $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
 
 $$
 \tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
@@ -81,7 +81,7 @@ $$
 \mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}\ \text{only where the rotor is trivial}.
 $$
 
-**So the amplitude at a label is a coordinate of the chart and not an observable.** The rotor is a real datum of the chart with no invariant that reads it, and a change of the chart's normalisation moves $r$ while leaving the field alone. **The mode basis of the charged Proca fluid is therefore a basis of the description and not of the field**, and that is the last rung's answer to the question the block has asked at each of the four: *what does the transform see?*
+**So the amplitude at a label is a coordinate of the chart and not an observable.** The rotor is a real datum of the chart with no invariant that reads it, and a change of the chart's normalisation moves $r$ while leaving the field alone. **The mode basis of the charged spin-one fluid is therefore a basis of the description and not of the field**, and that is the last rung's answer to the question the block has asked at each of the four: *what does the transform see?*
 
 | rung | what the amplitude at a label is | does the transform see the field |
 | --- | --- | --- |
@@ -167,4 +167,4 @@ Across the eight Fourier articles the invisible object is always either a produc
 - Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," *Journal de Physique et le Radium* **7** (1936) 347–353, for the equation and the constraint.
 - Fritz London, "On the problem of the molecular interpretation of the persistent current," *Physical Review* **54** (1938) 947–954, for the London response $J\propto A$ that the parent identifies with the mass term.
 - Jan Łopuszański, "On the correspondence between the Proca and the Maxwell fields," *Acta Physica Polonica* **9** (1948) 205–218, for the massless limit and the constraint's behaviour in it.
-- The companion articles: [The Charged Proca Fluid: Three Currents and a Compressibility](the-charged-proca-fluid.html), for the two displays this article transforms; [The Fourier Transform and the Proca Fluid](the-fourier-transform-and-the-proca-fluid.html), the free rung's transversality; [The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the product rule and the mode count; and the free companion [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the four brackets the block's diagnostics are built on.
+- The companion articles: [The Charged Spin-One Fluid: Three Currents and a Compressibility](the-charged-spin-one-fluid.html), for the two displays this article transforms; [The Fourier Transform and the Spin-One Fluid](the-fourier-transform-and-the-spin-one-fluid.html), the free rung's transversality; [The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the product rule and the mode count; and the free companion [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the four brackets the block's diagnostics are built on.

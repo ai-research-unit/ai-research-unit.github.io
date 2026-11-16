@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The variational parent states one sentence in passing and drops it.** At its §*The Four Scalar Actions* it writes that for a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, "whose four branches are the four eigenvalues". The sentence is stated, used as a remark about what a non-central coefficient would do, and not developed. This article develops it.
+**The variational parent states one sentence in passing and drops it.** At its §*The Action on the Carrier and on the Algebra* it writes that for a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, "whose four branches are the four eigenvalues". The sentence is stated, used as a remark about what a non-central coefficient would do, and not developed. This article develops it.
 
 **The finding is a count, and the count is not four.** Under the transform the equation becomes $(\omega^{2}/c^{2}-k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, an eigenvalue problem for one operator on $\mathbb{B}$. For a Hermitian $\tilde M=a\,e_t+i\vec v\cdot\vec e$ the spectrum of left multiplication is $a+\lvert\vec v\rvert$ and $a-\lvert\vec v\rvert$, **each with multiplicity two**. There are two eigenvalues and four frequencies, and the doubling is not the sector pair.
 

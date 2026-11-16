@@ -1,8 +1,8 @@
-# __The Non-Uniqueness of the Spin Fluid__
+# __The Non-Uniqueness of the Spin-Half Fluid__
 
 ## Introduction
 
-**The word is a section of a map and not the map, and "the spin fluid" is three choices made on top of it.** The map takes eight parameters to one element. The word chooses the ranges that make the map injective, and it chooses nothing else: every fluid variable is a function of the element and none of the element. That is what makes the reading a re-coordinatisation. What it does not do is fix the fluid, because a fluid also needs a density normalisation, a split of the current into a transport and a bound part, and a transport equation for the spin. The algebra supplies the first two up to a choice and does not supply the third at all.
+**The word is a section of a map and not the map, and "the spin-half fluid" is three choices made on top of it.** The map takes eight parameters to one element. The word chooses the ranges that make the map injective, and it chooses nothing else: every fluid variable is a function of the element and none of the element. That is what makes the reading a re-coordinatisation. What it does not do is fix the fluid, because a fluid also needs a density normalisation, a split of the current into a transport and a bound part, and a transport equation for the spin. The algebra supplies the first two up to a choice and does not supply the third at all.
 
 **The three choices are independent and each has a literature.** The density can be the squared amplitude, the time component of the current or the Hermitian norm, and the three differ by factors of $\gamma$. The current splits into a convection part and a spin part by the Gordon identity, and the split is defined only up to a total divergence. The spin's transport equation is not implied by the field equation, and the tensor formulations close the system by adding a subsidiary condition whose choice is theirs. A reader who expects one spin fluid per field will find, at the end of this article, that there is one per choice of the three.
 
@@ -59,7 +59,7 @@ Checked numerically: the two parameter sets give elements differing by $3.55\tim
 
 **The distinction between the last two is nominal and the article says so.** The two coincide as numbers, so a reader may take either; what differs is the object's type, a component of a four-vector against a form on the algebra. The choice that moves a number is the first: $\rho$ against $\gamma\rho$, and the factor between them is the motion's time dilation.
 
-**The choice is forced by what one wants conserved and not by taste.** For the scalar fluid, [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) shows that the conserved density is $\gamma\rho$ and not $\rho$: the transport equation becomes a continuity equation for $\gamma\rho$ and for nothing else, and the marker density obeys a different equation that carries the time dilation. So a fluid whose density is the marker density has no continuity equation, and a fluid whose density is the charge density has one.
+**The choice is forced by what one wants conserved and not by taste.** For the scalar fluid, [The Spin-Zero Fluid](the-spin-zero-fluid.html) shows that the conserved density is $\gamma\rho$ and not $\rho$: the transport equation becomes a continuity equation for $\gamma\rho$ and for nothing else, and the marker density obeys a different equation that carries the time dilation. So a fluid whose density is the marker density has no continuity equation, and a fluid whose density is the charge density has one.
 
 **The same field therefore supports two fluids that differ in what their density means.** The velocities are the same, the streamlines are the same, and the density that flows is different. That is the first of the three choices, and it is invisible in the word.
 
@@ -97,7 +97,7 @@ $$
 
 **The field equation does not fix the transport of the spin, and every formulation closes the system by adding a condition.** In the algebra the statement is the non-closure of the four brackets: the derivative of the word has four terms of four types and the equation constrains them jointly without fixing any one.
 
-**Takabayasi's closure is a condition on the curl of the momentum.** His second subsidiary condition fixes $\partial_\mu k_\nu-\partial_\nu k_\mu$ in terms of the velocity, the spin and the field strength, which makes the system self-contained and determines $k_\mu$ up to a gradient. [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) states this and grades the correspondence.
+**Takabayasi's closure is a condition on the curl of the momentum.** His second subsidiary condition fixes $\partial_\mu k_\nu-\partial_\nu k_\mu$ in terms of the velocity, the spin and the field strength, which makes the system self-contained and determines $k_\mu$ up to a gradient. [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) states this and grades the correspondence.
 
 **The other closures are conditions on the spin's transport.** A condition of Frenkel type fixes the spin's time component; a condition of Weyssenhoff type fixes the spin's relation to the velocity differently. Each gives a different evolution for the spin and the same evolution for the density and the current at the level of the conservation laws.
 
@@ -166,8 +166,8 @@ On top of the word a fluid needs three choices: which density is conserved, how 
 
 ## Further Reading
 
-- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin fluid and its subsidiary conditions.
-- F. Halbwachs, P. Hillion and J.-P. Vigier, "Lagrangian formulation of the rotational hydrodynamical model of spinning particles," *Il Nuovo Cimento* **33** (1964) 221, for the spin fluid's kinematics in a different variable set.
+- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half fluid and its subsidiary conditions.
+- F. Halbwachs, P. Hillion and J.-P. Vigier, "Lagrangian formulation of the rotational hydrodynamical model of spinning particles," *Il Nuovo Cimento* **33** (1964) 221, for the spin-half fluid's kinematics in a different variable set.
 - Walter Gordon, "Der Comptoneffekt nach der Schrödingerschen Theorie," *Zeitschrift für Physik* **40** (1926) 117–133, for the decomposition whose freedom the split inherits.
 - David Hestenes, "Space–time structure of the Dirac theory," in *Clifford Algebras and their Applications in Mathematical Physics* (Reidel, 1986), for the rotor reading of the spinor.
-- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html), [The Current Algebra](the-current-algebra.html), [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html).
+- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html), [The Current Algebra](the-current-algebra.html), [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html).

@@ -147,7 +147,7 @@ $$
 | spectrum of $L(e_t)$ | $1,0,0,0$ | $1,1,1,1$ | $1,0,0,0$ | $1,-1,-1,-1$ |
 | Peirce rules | third rule fails | all six hold | third rule fails | degenerate |
 
-**Remark (the column of the scalar product).** This is the column of the batch that is a scalar product, and its Jordan theory is the theory of a form: a defect that is a single scalar, a cone that is a line, a Peirce decomposition that collapses, and a quadratic representation of rank one. The Jordan identity fails, and the failure is the exact measure of the difference between the product and a genuine Jordan product. The companion columns show that the failure is not repairable inside the family: the only repair is to symmetrise a product with a unit, which is what the plain column does.
+**Remark (the column of the scalar product).** This is the column of the batch that is a scalar product, and its Jordan theory is the theory of a form: a defect that is a single scalar, a cone that is a line, a Peirce decomposition that collapses, and a quadratic representation of rank one. The Jordan identity fails, and the failure is the exact measure of the difference between the product and a genuine Jordan product. The companion columns show that the failure is not repairable inside the family: the only repair is to symmetrise a product with a unit, which is what the plain column does. The plain column is in addition the Jordan algebra $H_2(\mathbb{C})\cong JSpin_3$ with a norm, an order and a cone, and that reading, [The Biquaternion Algebra as a JB-Algebra](the-biquaternion-algebra-as-a-jb-algebra.html), is unavailable here and to the other two columns, because a JB-algebra is a Jordan algebra before it is anything else.
 
 ## Summary
 

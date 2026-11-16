@@ -44,13 +44,13 @@ This is symmetric in the pair $(\mu,\nu)$, so it is ten equations on four functi
 
 **The letters.** $R_\mu$ runs over $r'_t$ and the three $r_\eta$. The derivative is the algebra's own, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the material sector and $\partial/\partial R_\eta=\partial/\partial r_\eta$, exactly as [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) uses it. No Christoffel symbol appears, and none is needed: the frame is flat, the metric is $\delta_{\mu\nu}$, and the index is a label of a direction. The curved-spacetime bookkeeping is the subject of [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html), and this article stays in the flat frame on purpose.
 
-**The relation to the vorticity.** [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) defines the vorticity 2-form as the *antisymmetric* part of the same gradient,
+**The relation to the vorticity.** [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) defines the vorticity 2-form as the *antisymmetric* part of the same gradient,
 
 $$
 \omega_{\mu\nu}=\frac{\partial v_{\Phi,\nu}}{\partial R_\mu}-\frac{\partial v_{\Phi,\mu}}{\partial R_\nu},
 $$
 
-and observes that the scalar flow is closed, so that its velocity one-form has zero curl. The present condition is the vanishing of the *symmetric* part. The two conditions are independent: a flow can be closed and not rigid, rigid and not closed, both, or neither. A flow that is both is a flow whose velocity is constant, and that is the trivial case. **A reader who takes the two conditions for one will read this article and the spin-fluid article as contradicting each other; they are the two halves of one gradient.**
+and observes that the scalar flow is closed, so that its velocity one-form has zero curl. The present condition is the vanishing of the *symmetric* part. The two conditions are independent: a flow can be closed and not rigid, rigid and not closed, both, or neither. A flow that is both is a flow whose velocity is constant, and that is the trivial case. **A reader who takes the two conditions for one will read this article and the spin-half-fluid article as contradicting each other; they are the two halves of one gradient.**
 
 ### The three consequences
 
@@ -107,7 +107,7 @@ which follows from the $(t,\eta)$ entry $-i\partial_{r'_t}(\gamma v_\eta)+ic\par
 **The condition was evaluated on two flows, and the numbers separate them.** With $c=2$, the component spelling above, and central differences of step $10^{-6}$ at the event $(r'_t,r_x,r_y,r_z)=(0.3,0.5,0.7,1.1)$:
 
 - **Uniform translation**, $\theta_{\mathrm{rpd}}=0.4$ and $\vec u_{\mathrm b}=\vec e_y$ everywhere: the largest of the sixteen entries of $\partial_\mu v_{\Phi,\nu}+\partial_\nu v_{\Phi,\mu}$ was $0$, exactly, in double precision.
-- **The transverse shear flow** of the spin-fluid article, $\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3r_x)$ with $\vec u_{\mathrm b}=\vec e_y$: the largest entry was $0.471\,438$, attained at the $(r_x,r_y)$ pair, and it equals the single derivative $\partial_{r_x}(\gamma v_y)=c\cosh\theta\,\partial_{r_x}\theta$ computed independently at that event. **The entries with $\eta$ along the flow vanish**, because nothing in the flow depends on $r_y$; **the entry with $\eta$ across the flow does not**, because the rapidity and with it $\gamma$ vary with $r_x$, and the $(t,r_x)$ entry carries $c\,\partial_{r_x}\gamma=c\sinh\theta\,\partial_{r_x}\theta=0.225\,583$ at the same event. That second failure is the content of paragraph (c): a stationary flow whose Lorentz factor varies in space is not rigid either, and the shear entry is only the larger of the two violations.
+- **The transverse shear flow** of the spin-half-fluid article, $\theta_{\mathrm{rpd}}(r_x)=0.4+0.2\sin(1.3r_x)$ with $\vec u_{\mathrm b}=\vec e_y$: the largest entry was $0.471\,438$, attained at the $(r_x,r_y)$ pair, and it equals the single derivative $\partial_{r_x}(\gamma v_y)=c\cosh\theta\,\partial_{r_x}\theta$ computed independently at that event. **The entries with $\eta$ along the flow vanish**, because nothing in the flow depends on $r_y$; **the entry with $\eta$ across the flow does not**, because the rapidity and with it $\gamma$ vary with $r_x$, and the $(t,r_x)$ entry carries $c\,\partial_{r_x}\gamma=c\sinh\theta\,\partial_{r_x}\theta=0.225\,583$ at the same event. That second failure is the content of paragraph (c): a stationary flow whose Lorentz factor varies in space is not rigid either, and the shear entry is only the larger of the two violations.
 
 The second flow therefore fails the rigidity condition in two of its families of entries — the no-shear part and the acceleration part — and the first satisfies both. The condition is not vacuous: it separates exactly the flows that the classical theory calls rigid from those it does not.
 
@@ -231,7 +231,7 @@ So the two statements — mechanical rigidity in the flat frame, and the Killing
 - **The velocity is an element and its index stays low.** $v_{\Phi,\mu}$ is the fourth coefficient of an element, on the pattern of $k_{\Phi,\mu}$; no velocity carries a raised index anywhere in the display, and the letter $u$ is not used for the velocity at all. The index labels a direction of the frame and is not a tensor slot, which is the third of the eight rules of *Frame and Metric Conventions*.
 - **The derivative is the algebra's own.** $\partial/\partial R_t=-i\partial/\partial r'_t$ on the material sector, and the factor $c$ is the algebra's statement and not a convention. So the condition's $(t,\eta)$ pair carries an $i$ and its real form is the display of §*The three consequences*.
 - **The metric is $\delta_{\mu\nu}$.** One metric, all coefficients $+1$, and the local complex structure is a scale and not a coefficient. This is why the Tolman law appears as $Tc=\text{const}$ and not as a lapse.
-- **The condition is symmetric and the vorticity is antisymmetric.** The two are the two halves of one gradient, and a reader who keeps them apart will not confuse this article's condition with the spin-fluid article's closure.
+- **The condition is symmetric and the vorticity is antisymmetric.** The two are the two halves of one gradient, and a reader who keeps them apart will not confuse this article's condition with the spin-half-fluid article's closure.
 
 ### The two conditions of the category, side by side
 
@@ -243,7 +243,7 @@ So the two statements — mechanical rigidity in the flat frame, and the Killing
 | Part of the gradient | antisymmetric | symmetric |
 | What it forbids | vorticity | expansion, shear, acceleration |
 | Which flows satisfy it | gradient flows; the scalar field | uniform translation; inertial observers |
-| Where it is used | [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) | this article, [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) |
+| Where it is used | [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) | this article, [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) |
 | What it is a statement of | the flow is a gradient | the flow is in local equilibrium |
 
 A flow that satisfies both is a uniform translation, and it is the only one. A flow that satisfies neither is a general flow, and it is what the dissipative articles describe. The two conditions together exhaust the flat-frame decomposition of the velocity's gradient into its symmetric and antisymmetric parts, so nothing about the gradient is left over.
@@ -314,4 +314,4 @@ The verdict on the gate is that a local temperature is available, and that the p
 - C. Eckart, "The thermodynamics of irreversible processes III: relativistic theory of the simple fluid," *Physical Review* **58** (1940) 919–924, for the first covariant formulation.
 - W. Israel, "Nonstationary irreversible thermodynamics: a causal relativistic theory," *Annals of Physics* **100** (1976) 310–331, for the equilibrium conditions in the causal theory.
 - F. Becattini, L. Bucciantini, E. Grossi and L. Tinti, "Local thermodynamical equilibrium and the $\beta$ frame for a quantum relativistic fluid," *European Physical Journal C* **75** (2015) 191, for the Killing property of the thermal vector and the frame dependence.
-- The companion articles: [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), and [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html).
+- The companion articles: [The Local Thermal Structure: k_B as the Scale of Imaginary Time](the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html), [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), and [Curved-Spacetime KMS and Modular Flow](curved-spacetime-kms-and-modular-flow.html).

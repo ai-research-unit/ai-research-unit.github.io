@@ -1,8 +1,8 @@
-# The Lagrangian of the Charged Proca Fluid
+# The Lagrangian of the Charged Spin-One Fluid
 
 ## Introduction
 
-**The connection enters one of the two terms and it enters it as a derivative.** The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. **So the charged Proca fluid keeps its pressure and loses its continuity**, which is the reverse of what the other charged articles of this layer do.
+**The connection enters one of the two terms and it enters it as a derivative.** The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. **So the charged spin-one fluid keeps its pressure and loses its continuity**, which is the reverse of what the other charged articles of this layer do.
 
 **Three results.**
 
@@ -12,9 +12,9 @@
 
 *Third, the mass term is coupling-blind, so the four statements it carried at the free rung become three.* It still removes the field's own shift freedom, still supplies the condition, still fixes the pressure to a constant. What it can no longer do is make that condition a conservation law.
 
-**Position in the block.** This is the variational companion of [The Charged Proca Fluid](the-charged-proca-fluid.html) and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.
+**Position in the block.** This is the variational companion of [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.
 
-**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signature, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Proca Fluid](the-charged-proca-fluid.html) records the doubling and this article does not re-derive it.
+**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signature, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
@@ -64,7 +64,7 @@ $$
 
 and the right-hand side is not zero, is imaginary, and carries the carrier's phase. **That is the precise sense in which the condition ceases to be continuity**: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.
 
-**The block's display is this statement in the algebra.** [The Charged Proca Fluid](the-charged-proca-fluid.html) writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. **Read as a continuity equation it says that the fluid's density is not conserved by the flow**, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
+**The block's display is this statement in the algebra.** [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. **Read as a continuity equation it says that the fluid's density is not conserved by the flow**, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
 
 **Three consequences, and the article states them as losses.**
 
@@ -82,7 +82,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 *It supplies the condition.* The derivation above uses the mass term's coefficient: with $k_m=0$ the identity $\partial\partial F=0$ stands alone and says nothing about $A$.
 
-*It fixes the stiffness.* The algebraic term is $\frac{k_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{k_m^{2}}{2}r^{2}$. **The charged Proca fluid is stiff at both rungs, and the coupling does not touch the stiffness**, because the algebraic term carries no derivative for the connection to enter.
+*It fixes the stiffness.* The algebraic term is $\frac{k_m^{2}}{2}\lvert A\rvert^{2}$, and the pressure is read off it as at the free rung: energy density and pressure are equal, $\epsilon=p=\frac{k_m^{2}}{2}r^{2}$. **The charged spin-one fluid is stiff at both rungs, and the coupling does not touch the stiffness**, because the algebraic term carries no derivative for the connection to enter.
 
 **What the mass term no longer does is make the condition a conservation law.** That is the fourth statement of the free rung and it is not available, for the reason the previous section gives: the source is there whether or not the mass is.
 
@@ -94,7 +94,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 **The density and the direction are therefore not enough to describe the carrier, and that is the difference from the other charged articles.** At the scalar rung the carrier is one complex number and the fluid's variables exhaust it; at the spinor rung the carrier is one biquaternion and the word's eight parameters exhaust it; **here the carrier is a complex vector, the fluid's variables are a magnitude and a direction, and the count does not close.** The balance is the phase and the imaginary part of the direction, and the action puts the phase in the derivative term only.
 
-**The consequence for what the fluid reading can be is a boundary and the article states it as one.** [The Charged Proca Fluid](the-charged-proca-fluid.html) finds that the free incompressibility is revealed as the mass's gift, that the condition ceases to be continuity, and that the carrier doubles. A reader who wants to know whether the charged Proca field has a fluid reading at all is being told: **it has a fluid reading of its magnitude and direction, and the carrier has four parameters more than those two supply.** Whether the extra four can be read as a second fluid — a second density with its own phase — is not settled anywhere in the corpus.
+**The consequence for what the fluid reading can be is a boundary and the article states it as one.** [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) finds that the free incompressibility is revealed as the mass's gift, that the condition ceases to be continuity, and that the carrier doubles. A reader who wants to know whether the charged Proca field has a fluid reading at all is being told: **it has a fluid reading of its magnitude and direction, and the carrier has four parameters more than those two supply.** Whether the extra four can be read as a second fluid — a second density with its own phase — is not settled anywhere in the corpus.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 
@@ -148,4 +148,4 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 - Wolfgang Pauli, "Relativistic field theories of elementary particles," *Reviews of Modern Physics* **13** (1941) 203–232, for the constraint counting of a massive vector field and the fate of its gauge freedom.
 - John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," *Physical Review* **60** (1941) 150, for the constraint structure of a massive vector coupled to an external field.
 - Friedrich W. Hehl, "On the kinematics of the torsion of space-time," *Foundations of Physics* **15** (1985) 451–471, for a unit vector's covariant vorticity, its transversality and its rank.
-- The companion articles: [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Charged Proca Fluid](the-charged-proca-fluid.html), the equations and the divergence $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$; [The Lagrangian of the Proca Fluid](the-lagrangian-of-the-proca-fluid.html), the free rung where the condition is continuity; and [The Lagrangian of the Charged Spin Fluid](the-lagrangian-of-the-charged-spin-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.
+- The companion articles: [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the equations and the divergence $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$; [The Lagrangian of the Spin-One Fluid](the-lagrangian-of-the-spin-one-fluid.html), the free rung where the condition is continuity; and [The Lagrangian of the Charged Spin-Half Fluid](the-lagrangian-of-the-charged-spin-half-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.

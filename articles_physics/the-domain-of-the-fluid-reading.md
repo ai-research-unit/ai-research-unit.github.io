@@ -147,7 +147,7 @@ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a parti
 
 ### Rotor Precession
 
-**The spin's precession is a motion of the chart's fourth factor and it has no counterpart in the scale and phase.** A reading that used only the two central brackets would see a fluid with no spin; the rotor's precession would be invisible. So the third limit is that the reading is a reading of *all four* brackets or it is not the spin fluid.
+**The spin's precession is a motion of the chart's fourth factor and it has no counterpart in the scale and phase.** A reading that used only the two central brackets would see a fluid with no spin; the rotor's precession would be invisible. So the third limit is that the reading is a reading of *all four* brackets or it is not the spin-half fluid.
 
 **The three limits are the article's honest accounting.** The non-relativistic limit drops the spin; the coarse-graining drops the doubling; the central-only reading drops the precession. Each is a limit of the reading and none is a limit of the field.
 
@@ -194,4 +194,4 @@ The domain is a condition at each event. The Klein–Gordon flow and the Dirac f
 - David Hestenes, "Space–time structure of the Dirac theory," in *Clifford Algebras and their Applications in Mathematical Physics* (Reidel, 1986), for the spinor as a frame and the extent of the frame description.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, vol. 1 (Cambridge University Press, 1984), for the null flag and the two-component spinor as a degenerate direction.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the nodal set of the non-relativistic fluid and the limits of the reading.
-- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html), [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html).
+- The companion articles: [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html), [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), [The Spin-Zero Fluid](the-spin-zero-fluid.html), [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html), [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html).

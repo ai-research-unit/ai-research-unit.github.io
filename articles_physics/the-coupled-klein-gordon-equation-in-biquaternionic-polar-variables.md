@@ -52,7 +52,7 @@ with the three parameters $(r,\theta_{\mathrm{pha}},\varepsilon)$ a bijection on
 
 **The coupling does not enlarge or shrink the domain.** The word needs $r>0$; the connection is a set of functions and contributes no condition on the field, so the parameter domain is the free article's and the word's bijection is unaffected. Whether the *flow* stays inside that domain is a separate question, and it is the free second-order article's: the covariant operator is the free one with central coefficients, so the coupling adds lower-order terms and no new mechanism, and the article inherits the free statement rather than proving it. What the coupling does add is a motion of the phase by a function, which is a reparameterisation and not a motion of the field.
 
-**The four coefficients and the one pair.** The free polar article's §*General Fields* records that a general element's four coefficients obey four independent equations, so the polar pair describes one coefficient and the mixed case is the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_\mu$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and
+**The one coefficient and the one pair.** The spin-zero field is central, so it has one coefficient and the polar pair describes the whole of it rather than a slice. A value that leaves the centre has four coefficients obeying four independent equations, and the pair would then describe one of them, the mixed case being the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_\mu$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and
 
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\mu}g ,
@@ -241,7 +241,7 @@ and the second term is the field strength conjugated by the field.
 
 **Hides.**
 
-- The fourfold multiplicity. The chart describes one coefficient, and the constant polarization is the only case in which four coefficients share one phase; the multiplicity is a constant factor the chart does not see.
+- The multiplicity of a value outside the carrier. The chart describes one coefficient, which on the centre is the whole field; a value with four would share one phase only in the constant-polarization case, and the chart does not see what the carrier has already removed.
 - The algebra's second equation. Its curvature term is a general element in the chart, so the chart cannot represent it and the element form is the place where it is written.
 - The field strength. $\tilde F$ does not appear in the pair at all, because the pair is the chart of the component equation, whose only use of the connection is the four-momentum shift. The chart therefore *hides the very object that separates the two equations*, and that is the sharpest statement of what a coordinate system can and cannot show.
 
@@ -305,7 +305,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
-- [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), for the hydrodynamic reading of the pair.
+- [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the hydrodynamic reading of the pair.
 - [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), for the free flow's irrotationality that the coupling breaks.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the quantization of the circulation in units of $2\pi\hbar$.
 - [Landau Levels in Biquaternionic Form](landau-levels-in-biquaternionic-form.html), for the magnetic spectrum that the vorticity statement presupposes.

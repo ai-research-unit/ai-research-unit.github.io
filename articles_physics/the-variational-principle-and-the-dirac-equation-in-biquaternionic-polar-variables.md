@@ -358,6 +358,6 @@ The four brackets remain the natural form of the equation, and the parameter equ
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone; the parts $\tilde\Xi\Pi_\pm$ lie on the cone, which is why the word is a word for the sum.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, §8, for the tensor formulation, its three Lagrange multipliers, and the velocity and spin-transport equations this article's constraint structure reproduces.
-- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the spin fluid and the non-uniqueness of its transport equation.
+- Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), §9, for the spin-half fluid and the non-uniqueness of its transport equation.
 - Paul A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for primary and secondary constraints, second-class brackets, and the closure this article leaves open.
 - Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the several inequivalent fluid systems the same equation admits.

@@ -101,7 +101,7 @@ $$
 m\,v_{\Phi,\mathrm{sup},\mu}=\partial_\mu S_{\tilde\Xi}+\hbar\,\chi_{\mu},
 $$
 
-where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) is a different article. **For the scalar condensate the flow is a pure gradient**, so its vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\mathrm{sup},\nu}-\partial_\nu v_{\Phi,\mathrm{sup},\mu}$ vanishes identically.
+where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field and non-zero for the spinor, which is why [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) is a different article. **For the scalar condensate the flow is a pure gradient**, so its vorticity $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\mathrm{sup},\nu}-\partial_\nu v_{\Phi,\mathrm{sup},\mu}$ vanishes identically.
 
 **The vanishing vorticity is the definition of superfluidity in this formalism, and it is the reason the two-fluid model has a superfluid at all.** A flow that is a gradient cannot be brought to rest by a boundary, because a gradient with a non-zero circulation is quantised and cannot decay continuously. **The circulation is [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html)'s subject**, and the article cites it rather than re-deriving the quantisation.
 

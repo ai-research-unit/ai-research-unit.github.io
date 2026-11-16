@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Charged Spin Fluid: A Phase Cannot Rotate a Rotor__
+# __The Fourier Transform and the Charged Spin-Half Fluid: A Phase Cannot Rotate a Rotor__
 
 ## Introduction
 
@@ -8,7 +8,7 @@
 
 **The third result is that the force is inter-mode.** A mode's label is a constant, so a mode does not accelerate and the Lorentz force vanishes at a mode identically. The force $ϙ\sum_\nu F_{\mu\nu}J_\nu$ is the statement about how the label responds to a curvature, and a curvature is exactly what a mode's connection does not have.
 
-**Position in the block.** This is the charged companion of [The Fourier Transform and the Spin Fluid](the-fourier-transform-and-the-spin-fluid.html) and the Fourier companion of [The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not](the-charged-spin-fluid.html). The charged Schrödinger rung's Fourier article makes the same curvature argument with no frame, and §*The Four Rungs' One Invariant* says what the four share.
+**Position in the block.** This is the charged companion of [The Fourier Transform and the Spin-Half Fluid](the-fourier-transform-and-the-spin-half-fluid.html) and the Fourier companion of [The Charged Spin-Half Fluid: The Force Takes the Charge and the Spin Does Not](the-charged-spin-half-fluid.html). The charged Schrödinger rung's Fourier article makes the same curvature argument with no frame, and §*The Four Rungs' One Invariant* says what the four share.
 
 ## Conventions
 
@@ -22,7 +22,7 @@ $$
 k_m=\frac{mc}{\hbar}.
 $$
 
-The word is $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=r^{2}$. The symbol rule is the spin fluid Fourier companion's.
+The word is $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=r^{2}$. The symbol rule is the spin-half fluid Fourier companion's.
 
 ## The Label, and the Rotor Outside It
 
@@ -167,4 +167,4 @@ The vorticity is $ϙF/m$ and a constant connection has no curvature, so a mode i
 - Yakir Aharonov and David Bohm, "Significance of electromagnetic potentials in the quantum theory," *Physical Review* **115** (1959) 485–491, for the phase factor of a mode on a loop.
 - Michael Berry, "Quantal phase factors accompanying adiabatic changes," *Proceedings of the Royal Society A* **392** (1984) 45–57, for the product of a phase and a frame's transport, which §*The Loop Invariant, One Factor at a Time* splits.
 - Alexander J. Silenko, "Spin precession in a magnetic field and the Lorentz force," *Physics of Particles and Nuclei Letters* **14** (2017) 256–259, for the standard statement that the field turns the spin only through the transport of the frame.
-- The companion articles: [The Charged Spin Fluid: The Force Takes the Charge and the Spin Does Not](the-charged-spin-fluid.html), for the type table, the loop invariant and the force without torque; [The Fourier Transform and the Spin Fluid](the-fourier-transform-and-the-spin-fluid.html), the free rung's four brackets and the vorticity's inter-mode character; [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html), the same curvature argument with no frame; and [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the mode count and the mass's off-diagonal action in the part label.
+- The companion articles: [The Charged Spin-Half Fluid: The Force Takes the Charge and the Spin Does Not](the-charged-spin-half-fluid.html), for the type table, the loop invariant and the force without torque; [The Fourier Transform and the Spin-Half Fluid](the-fourier-transform-and-the-spin-half-fluid.html), the free rung's four brackets and the vorticity's inter-mode character; [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html), the same curvature argument with no frame; and [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the mode count and the mass's off-diagonal action in the part label.

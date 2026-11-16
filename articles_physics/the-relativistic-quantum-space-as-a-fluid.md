@@ -17,14 +17,14 @@ in advance.
 **This article states the framework of the twenty-five that follow the fluid layer: the object, the word, the four variables, the domain and the four denials.** The rest is grouped by
 spin, and the scalar group is a ladder. [The Schrödinger Fluid](the-schrodinger-fluid.html) and [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html)
 take the first-order rung, on which the boost and the rotor are both absent, the density is the conserved one and no norm constrains the velocity.
-[The Klein–Gordon Fluid](the-klein-gordon-fluid.html) takes the scalar case, in which the word collapses to two factors, with [The Quantum Stress Tensor of the
+[The Spin-Zero Fluid](the-spin-zero-fluid.html) takes the scalar case, in which the word collapses to two factors, with [The Quantum Stress Tensor of the
 Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) for its energy and flux and [The Nodal Set and Quantized
-Circulation](the-nodal-set-and-quantized-circulation.html) for its charge, and [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) for the same
-field with a connection. [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which
-all four survive, with [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) for its frame, [The Spin
-Energy-Momentum Tensor](the-spin-energy-momentum-tensor.html) for its spin current and [The Charged Spin Fluid](the-charged-spin-fluid.html) for its coupling.
-[The Proca Fluid](the-proca-fluid.html) takes the vector case, with [The Charged Proca
-Fluid](the-charged-proca-fluid.html) for its coupling. The closing group is the algebra that reads all of them: the bilinears, the choices the word leaves open, the
+Circulation](the-nodal-set-and-quantized-circulation.html) for its charge, and [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) for the same
+field with a connection. [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which
+all four survive, with [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) for its frame, [The Spin
+Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html) for its spin current and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html) for its coupling.
+[The Spin-One Fluid](the-spin-one-fluid.html) takes the vector case, with [The Charged Proca
+Fluid](the-charged-spin-one-fluid.html) for its coupling. The closing group is the algebra that reads all of them: the bilinears, the choices the word leaves open, the
 sign $\varepsilon$ with its rigidity constraint, the locking of velocity to spin on the degenerate sector, and the boundary at which the chart ends.
 
 ## The Object: One Element at Each Event
@@ -97,7 +97,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 
 **The three rows are the fluid's whole observable content, and the last row is where the angle lives.** The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
 
-**The velocity row is the spinor row, and the scalar case reads its velocity from the phase.** $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ is the boost's own velocity and it is the four-velocity of the spinor fluid. A central field has $\tilde U_{\Psi,\mathrm b}=e_t$, so the formula returns $ic\,e_t$, the velocity of a field at rest, whatever the field's momentum. The scalar fluid's velocity is the phase gradient, $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ with $\tilde P_{\Phi}=\tilde\nabla_\Phi S$, and the two agree in form, $\gamma(ic\,e_t+\vec v)$, because the momentum carries in its temporal component the $\gamma$ that the collapsed boost cannot supply. So *the current reads the density and the boost* is the spinor rule; the scalar rule is *the current reads the density and the phase*. [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) works the second, and [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html) the first.
+**The velocity row is the spinor row, and the scalar case reads its velocity from the phase.** $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ is the boost's own velocity and it is the four-velocity of the spinor fluid. A central field has $\tilde U_{\Psi,\mathrm b}=e_t$, so the formula returns $ic\,e_t$, the velocity of a field at rest, whatever the field's momentum. The scalar fluid's velocity is the phase gradient, $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ with $\tilde P_{\Phi}=\tilde\nabla_\Phi S$, and the two agree in form, $\gamma(ic\,e_t+\vec v)$, because the momentum carries in its temporal component the $\gamma$ that the collapsed boost cannot supply. So *the current reads the density and the boost* is the spinor rule; the scalar rule is *the current reads the density and the phase*. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works the second, and [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) the first.
 
 **The factor of two in the angle is not decoration.** The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$, so every bilinear built from the norm runs at twice the field's rate. For a superposition of two branches the density beats at the difference of their rates and the norm's argument runs at their sum, and the density is insensitive to the sign of the angle.
 
@@ -114,11 +114,11 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 | closure | closed: continuity and energy | not closed: the brackets are constrained and not determined |
 | vorticity | the four-velocity is a gradient | not a gradient: the frame's curl is the source |
 | domain | the cone is the nodal set | the cone is strictly larger than the nodal set |
-| article | [The Klein–Gordon Fluid](the-klein-gordon-fluid.html) | [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html) |
+| article | [The Spin-Zero Fluid](the-spin-zero-fluid.html) | [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) |
 
 **The scalar case closes because the boost has nothing to carry.** With a central field the boost is $e_t$ and the rotor is $\varepsilon e_t$, so two of the four factors collapse to the identity and a sign. A central element has $B^{2}=0$, so it lies on $\Sigma_{10}$, and there $\varepsilon=\pm1$ exactly; off that sector the sign of the scalar part is not a sign. One complex equation separates into two real equations, and the pair is the relativistic Madelung–Takabayasi system: a continuity equation and an energy equation.
 
-**The spinor case does not close, and the failure is structural.** The derivative of the word separates into four brackets — scale, phase, boost connection, rotor connection — of four different algebraic types. The equation constrains them. No rule of the algebra fixes one from another, because the types are distinct. The non-closure is the underdetermination of the spin-fluid formulation, and it is the subject of [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html).
+**The spinor case does not close, and the failure is structural.** The derivative of the word separates into four brackets — scale, phase, boost connection, rotor connection — of four different algebraic types. The equation constrains them. No rule of the algebra fixes one from another, because the types are distinct. The non-closure is the underdetermination of the spin-half-fluid formulation, and it is the subject of [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html).
 
 ## The Domain: N-Regularity
 
@@ -192,7 +192,7 @@ The four factors are of four algebraic types: real central, central imaginary, H
 The domain is the set of invertibles, asked at each event. The word exists iff $N(\tilde\Xi)\neq0$, and the complement is the zero-divisor cone. The cone is the nodal set for a scalar field and strictly larger for a spinor field, where the fields of definite value and the one-sided plane waves lie on it with a density that never vanishes. On the cone the two-factor decomposition survives and the four-factor word does not.
 
 The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid mechanics, eight of them with no element of the algebra;
-the scalar ladder, which is the first-order pair below the Klein–Gordon fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
+the scalar ladder, which is the first-order pair below the spin-zero fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
 fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its variational article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
 word leaves open, the sign $\varepsilon$, the locking on the degenerate sector and the boundary at which it fails.
 
@@ -227,9 +227,9 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 
 ## Further Reading
 
-- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation of the spin fluid that the spinor case of this block corresponds to.
+- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the tensor formulation of the spin-half fluid that the spinor case of this block corresponds to.
 - David Hestenes, *Space–Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the reading of the Dirac field as a density, an angle and a rotor.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the hydrodynamical formulation and its relativistic extension.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the non-relativistic pair that the scalar case reduces to.
-- Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the non-uniqueness of the spin-fluid system.
-- The companion articles: [The Klein–Gordon Fluid](the-klein-gordon-fluid.html), [The Dirac Fluid and the Takabayasi Correspondence](the-dirac-fluid-and-the-takabayasi-correspondence.html), [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).
+- Luca Fabbri, *Dirac Theory in Hydrodynamic Form* (2023), for the non-uniqueness of the spin-half-fluid system.
+- The companion articles: [The Spin-Zero Fluid](the-spin-zero-fluid.html), [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html), [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).

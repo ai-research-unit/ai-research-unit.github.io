@@ -144,7 +144,7 @@ $$
 | index-$2$ nilpotents | none | none | the isotropes of $N$ | the isotropes of $K$ |
 | spectrum of $L(e_t)$ | $1,0,0,0$ | $1,1,1,1$ | $1,0,0,0$ | $1,-1,-1,-1$ |
 
-**Remark (the column with a definite form).** This is the only column of the batch whose defining form is definite, and the definiteness shows in three places at once: the cone of squares is a ray and not a line, there are no isotropic elements, and the defect has no term that grows with the imaginary part of the scalar part alone. The algebra fails the Jordan identity, and the failure is one-dimensional; the column therefore does not repair the loss of the identity, it only removes the indefiniteness.
+**Remark (the column with a definite form).** This is the only column of the batch whose defining form is definite, and the definiteness shows in three places at once: the cone of squares is a ray and not a line, there are no isotropic elements, and the defect has no term that grows with the imaginary part of the scalar part alone. The algebra fails the Jordan identity, and the failure is one-dimensional; the column therefore does not repair the loss of the identity, it only removes the indefiniteness. The column that carries a norm, an order and a cone is the plain one, which is the Jordan algebra $H_2(\mathbb{C})\cong JSpin_3$ of [The Biquaternion Algebra as a JB-Algebra](the-biquaternion-algebra-as-a-jb-algebra.html); the definiteness recorded here is a property of a form and it is not the positivity of an order, and the two are distinguished there.
 
 ## Summary
 

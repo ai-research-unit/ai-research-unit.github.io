@@ -146,6 +146,24 @@ be its set of **effects**, the self-adjoint elements with spectrum in $[0,1]$. D
 
 The projection lattice and the standard effect algebra are the two levels of the same structure: the projections are the *sharp* effects, those that are idempotent, and the effects are the unit interval of the surrounding operator algebra. That operator algebra and the norm on it belong to *Operator Algebras* and *Banach and Hilbert Spaces*; the present article takes only the order and the partial sum.
 
+**Example (the biquaternion interval, and its sharp effects).** The corpus has one worked interval, and it is small enough that every level of the construction is visible at once. Take the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra with the symmetrised plain product, which is the Jordan algebra $H_2(\mathbb{C})$; its unit is $e_t$ and its order is the one of *The Biquaternion Algebra as a JB-Algebra*. The effect interval is
+
+$$
+[0,e_t]=\bigl\{te_t+i\vec s : 0\leq t\leq1,\ \lvert\vec s\rvert\leq\min(t,1-t)\bigr\},
+$$
+
+a double cone over a disc, the intersection of the cone of squares with its reflection in $e_t$. Its extreme points are $0$, $e_t$ and the waist $\lvert\vec s\rvert=\tfrac12$ at $t=\tfrac12$, so the sharp effects are exactly
+
+$$
+\{0\}\ \cup\ \{\tfrac12(e_t+i\vec u):\lvert\vec u\rvert=1\}\ \cup\ \{e_t\},
+$$
+
+and the middle set is a two-sphere, that is $\mathbb{CP}^{1}$, the pure states. The orthosupplement is $\alpha'=e_t-\alpha$, which sends $\vec u$ to $-\vec u$: the orthocomplementation of the projection lattice is the antipodal map of the sphere. The lattice is therefore $\{0\}\cup\mathbb{CP}^{1}\cup\{\mathbb{C}^{2}\}$, the lattice of subspaces of $\mathbb{C}^{2}$, and the three descriptions of the sharp effects — idempotent, extreme point of the interval, projection of the matrix display — are one set.
+
+**What makes that coincidence a theorem.** In a JB-algebra the idempotents of the order interval are exactly its extreme points, and the sharp elements of the interval in the effect-algebra sense are exactly the idempotents, so the three descriptions coincide for a structural reason and not by inspection of this example. The general statement is in *Jordan Algebras and the Positive Cone*; the consequence here is that the unsharp effects are all the interior of the double cone, and that no sharp effect is missing from the sphere. Both were checked on the interval: the extreme points of the double cone are the waist sphere together with the two endpoints, and every idempotent of $\mathbb{B}_{\Psi}$ other than $0$ and $e_t$ lies on that sphere.
+
+**Where the corpus's own vocabulary meets the lattice.** The projections of this lattice are the objects the physics corpus calls outcomes, and the two extreme rays $\pm\vec u$ are the two outcomes of a spin measurement along $\vec u$. The identification is worth stating because the corpus derives the same sphere twice: once from the spectral projectors of a Hermitian biquaternion, in *The Biquaternion Eigenvalue Decomposition*, and once from the cone of squares, in *The Biquaternion Algebra as a JB-Algebra*. The lattice is where the two derivations meet, and *States, Observables and the Born Weight* reads it as the sharp end of the effect interval.
+
 ### Elementary Consequences
 
 **Theorem.** In an effect algebra $E$, for all $\alpha, \beta, \gamma$:

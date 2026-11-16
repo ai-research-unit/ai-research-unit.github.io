@@ -1,4 +1,4 @@
-# __The Fourier Transform and the Charged Klein–Gordon Fluid: The Support Is the Translated Shell__
+# __The Fourier Transform and the Charged Spin-Zero Fluid: The Support Is the Translated Shell__
 
 ## Introduction
 
@@ -8,7 +8,7 @@
 
 **The third result is that the radius of the support is the quantum potential's and the centre is the connection's.** The free companion proves the first and this article proves the second, and the pair of statements is the momentum-space form of the block's maxim that the charge shifts a momentum and the amplitude sets a scale.
 
-**Position in the block.** This is the charged companion of [The Fourier Transform and the Klein–Gordon Fluid](the-fourier-transform-and-the-klein-gordon-fluid.html) and the Fourier companion of [The Charged Klein–Gordon Fluid: Vorticity Is the Field Strength](the-charged-klein-gordon-fluid.html). The rung below is [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html).
+**Position in the block.** This is the charged companion of [The Fourier Transform and the Spin-Zero Fluid](the-fourier-transform-and-the-spin-zero-fluid.html) and the Fourier companion of [The Charged Spin-Zero Fluid: Vorticity Is the Field Strength](the-charged-spin-zero-fluid.html). The rung below is [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html).
 
 ## Conventions
 
@@ -133,4 +133,4 @@ The fluid reads its velocity from the kinetic label, so the chart in which the f
 - Oskar Klein, "Die Reflexion von Elektronen an einem Potentialsprung nach der relativistischen Dynamik von Dirac," *Zeitschrift für Physik* **53** (1929) 157–165, for the threshold that §*The Translated Shell* reads as a tangency.
 - Fritz Sauter, "Über das Verhalten eines Elektrons im homogenen elektrischen Feld nach der relativistischen Theorie Diracs," *Zeitschrift für Physik* **69** (1931) 742–764, for the pair production the crossing of the zero-frequency plane describes.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), chapter 9, for the charged scalar fluid and the movement of its charge-sign boundary.
-- The companion articles: [The Charged Klein–Gordon Fluid: Vorticity Is the Field Strength](the-charged-klein-gordon-fluid.html), for the vorticity identity, its rank and the charge-sign boundary; [The Fourier Transform and the Klein–Gordon Fluid](the-fourier-transform-and-the-klein-gordon-fluid.html), where the quantum potential moves the radius; [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html), the rung below, where the same curvature argument is made with no mass; and [The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the squared reading and the fork.
+- The companion articles: [The Charged Spin-Zero Fluid: Vorticity Is the Field Strength](the-charged-spin-zero-fluid.html), for the vorticity identity, its rank and the charge-sign boundary; [The Fourier Transform and the Spin-Zero Fluid](the-fourier-transform-and-the-spin-zero-fluid.html), where the quantum potential moves the radius; [The Fourier Transform and the Charged Schrödinger Fluid](the-fourier-transform-and-the-charged-schrodinger-fluid.html), the rung below, where the same curvature argument is made with no mass; and [The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the squared reading and the fork.

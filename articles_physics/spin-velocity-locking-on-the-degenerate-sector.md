@@ -216,7 +216,7 @@ The lock is a constraint on the state and not a dynamics: it ties the velocity's
 
 ## Further Reading
 
-- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin fluid and the role of the spin angle.
+- Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter, Part I. General theory," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half fluid and the role of the spin angle.
 - David Hestenes, "Space–time structure of the Dirac theory," in *Clifford Algebras and their Applications in Mathematical Physics* (Reidel, 1986), for the rotor reading of the spin and the velocity.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), for the relativistic spin fluid's kinematics.
-- The companion articles: [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html), [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Non-Uniqueness of the Spin Fluid](the-non-uniqueness-of-the-spin-fluid.html), [The Current Algebra](the-current-algebra.html).
+- The companion articles: [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html), [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html), [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html), [The Current Algebra](the-current-algebra.html).

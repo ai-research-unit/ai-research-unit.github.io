@@ -291,11 +291,11 @@ The honest limits are three. The connection's equation is not derived here; the 
 ## Further Reading
 
 - J. Frenkel, "Die Elektrodynamik des rotierenden Elektrons," *Zeitschrift für Physik* **37** (1926) 243–262, for the spin-momentum orthogonality condition.
-- J. Weyssenhoff and A. Raabe, "Relativistic dynamics of spin-fluids and spin-particles," *Acta Physica Polonica* **9** (1947) 7–18, for the spin fluid with a conserved spin current.
+- J. Weyssenhoff and A. Raabe, "Relativistic dynamics of spin-fluids and spin-particles," *Acta Physica Polonica* **9** (1947) 7–18, for the spin-half fluid with a conserved spin current.
 - A. Papapetrou, "Spinning test-particles in general relativity I," *Proceedings of the Royal Society A* **209** (1951) 248–258, for the equations of motion of a spinning particle and the constraint's role.
 - F. W. Hehl, P. von der Heyde and G. D. Kerlick, "General relativity with spin and torsion: foundations and prospects," *Reviews of Modern Physics* **48** (1976) 393–416, for the spin tensor's conservation and the asymmetric stress.
 - F. J. Belinfante, "On the spin angular momentum of mesons," *Physica* **6** (1939) 887–898, for the improvement that symmetrises the stress.
 - L. Rosenfeld, "Sur le tenseur d'impulsion-énergie," *Mémoires de l'Académie Royale de Belgique* **18** (1940) 1–30, for the same improvement in the field-theoretic setting.
 - L. H. Thomas, "The motion of the spinning electron," *Nature* **117** (1926) 514, for the precession factor quoted here.
 - C. Møller, *The Theory of Relativity* (Oxford, 1972), for the spin tensor's transformation properties, which the preservation discussion follows.
-- The companion articles: [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html), and [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html).
+- The companion articles: [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), and [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html).

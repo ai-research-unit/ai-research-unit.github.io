@@ -142,7 +142,7 @@ and the operator $U(\tilde Q_1)$ is invertible for generic $\tilde Q_1$.
 | $U$ of a generic element | invertible | invertible | rank one | rank one |
 | spectrum of $L(e_t)$ | $1,-1,-1,-1$ | $1,1,1,1$ | $1,0,0,0$ | $1,0,0,0$ |
 
-**Remark (the column of the largest defect).** This is the column with the full defect, and it is the only column in which the failure of the Jordan identity has both a scalar and a vector face. It is also the only column whose operator at the unit is an involution, and the only one with no Peirce theory of any kind. The three facts have one cause: the square of a generic element is not central, so the algebra cannot be reduced to a form and a line.
+**Remark (the column of the largest defect).** This is the column with the full defect, and it is the only column in which the failure of the Jordan identity has both a scalar and a vector face. It is also the only column whose operator at the unit is an involution, and the only one with no Peirce theory of any kind. The three facts have one cause: the square of a generic element is not central, so the algebra cannot be reduced to a form and a line. The column that carries a norm, an order and a cone is the plain one, the Jordan algebra $H_2(\mathbb{C})\cong JSpin_3$ of [The Biquaternion Algebra as a JB-Algebra](the-biquaternion-algebra-as-a-jb-algebra.html); that $U$ is invertible at a generic element here, while the cone of squares is a line, is the contrast between an operator property and an order property, and it is drawn there.
 
 ## Summary
 

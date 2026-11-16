@@ -6,7 +6,7 @@ An element of the biquaternion algebra holds eight real numbers. The claim of th
 
 The claim is about pertinence, not about novelty. The framework predicts no number that the standard formalism does not predict, and [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) records the parity domain by domain. What the algebra offers instead is economy of one specific kind. One element is the point, one element is the field, one element is the derivative, and the multiplication is the algebra's own. No matrix, no column, no minimal ideal, no projector and no basis enters the equations, and an array appears only as a display of an element.
 
-The economy appears first in relativity, where the signature of spacetime is a fact about $i^{2}$ and the metric is read off the multiplication table. It appears next in wave mechanics, where the Schrödinger and Klein–Gordon equations are one equation read at two speeds. It pays best in the Dirac field, where the spin fluid that Takabayasi, Bohm and Hestenes each built by hand comes out as a factorisation of one element.
+The economy appears first in relativity, where the signature of spacetime is a fact about $i^{2}$ and the metric is read off the multiplication table. It appears next in wave mechanics, where the Schrödinger and Klein–Gordon equations are one equation read at two speeds. It pays best in the Dirac field, where the spin-half fluid that Takabayasi, Bohm and Hestenes each built by hand comes out as a factorisation of one element.
 
 The article follows that order. It sets out the algebra, then relativity, then wave mechanics, then the Dirac field. It then compares the Dirac result with what the other traditions found, states what the algebra reaches and where it stops, and names the price. The strongest objection — that this is a reformulation and nothing more — is answered last, because it can only be answered after the account of what the reformulation does.
 
@@ -256,7 +256,7 @@ $$
 \omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},
 $$
 
-which is the antisymmetrised gradient of the frame element and vanishes exactly where the frame is constant ([The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html)). A spatially varying rapidity is enough to make it nonzero.
+which is the antisymmetrised gradient of the frame element and vanishes exactly where the frame is constant ([The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)). A spatially varying rapidity is enough to make it nonzero.
 
 The frozen-frame sector is therefore the scalar sector: freeze the frame and the flow becomes a gradient flow, which is the Madelung flow of §*The polar word and the Madelung pair*. The Dirac field leaves that sector as soon as its rapidity or its axis varies, and the vorticity measures how far.
 
@@ -268,7 +268,7 @@ $$
 
 with $n$ the degree of the phase map, independent of the loop's shape ([The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html)). The charge is an object of the algebra because it is the winding of the field into the central unit circle, and the phase is only a coordinate on that circle.
 
-## The Spin Fluid, and the Convergence
+## The Spin-Half Fluid, and the Convergence
 
 ### Takabayasi
 
@@ -330,7 +330,7 @@ The framework is flat so far, and the gravitational articles are a programme rat
 
 The framework reproduces and does not predict. The parity list is long and it is the corpus's own: the Bloch ball, the Born rule and the projective update; the interval, the mass shell and the four-force constraints; Maxwell and Dirac as transcriptions; the hydrogen spectrum, the Casimir force, the Unruh temperature and the Bell bounds ([The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html)).
 
-So the objection is correct at the level of numbers, and the answer has to be at another level. What the framework changes is the number of objects a reader must hold at once. Before, the spin fluid is three constructions and a consistency condition; after, it is three factors and a product. Before, the Lorentz group is a group whose invariance is checked; after, it is the group of the one form the algebra has. Before, the Lorentzian minus is a convention declared in each article; after, it is $i^{2}$. None of that is a measurement, and the corpus says so.
+So the objection is correct at the level of numbers, and the answer has to be at another level. What the framework changes is the number of objects a reader must hold at once. Before, the spin-half fluid is three constructions and a consistency condition; after, it is three factors and a product. Before, the Lorentz group is a group whose invariance is checked; after, it is the group of the one form the algebra has. Before, the Lorentzian minus is a convention declared in each article; after, it is $i^{2}$. None of that is a measurement, and the corpus says so.
 
 ### Chirality, and the declared direction
 
@@ -394,7 +394,7 @@ So the domain of the word is an algebraic condition, checked at each point. At e
 
 ## Summary
 
-The biquaternion algebra writes relativity, wave mechanics and the Dirac fluid with one product, and that is its claim to pertinence.
+The biquaternion algebra writes relativity, wave mechanics and the spin-half fluid with one product, and that is its claim to pertinence.
 
 Relativity is a chapter of the multiplication table. The interval is the quaternionic norm, the Lorentzian minus is $i^{2}$, the metric is the unit metric read off the table, the Lorentz group is the group of the norm, and Maxwell's four equations are one equation whose types are the four.
 
@@ -456,7 +456,7 @@ The corpus articles, in the order in which this article uses them:
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html). The wave operator as a product.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html). The chiral pair, the factorisation reading, and the constructions the equation does not need.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). The word, the four brackets, the current, the spin, and the domain.
-- [The Spin Fluid of the Biquaternion Dirac Field](the-spin-fluid-of-the-biquaternion-dirac-field.html). The vorticity, the frozen-frame sector, and the fluid reading.
+- [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). The vorticity, the frozen-frame sector, and the fluid reading.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html). The convection and spin parts, and $g=2$.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html). The cone, the phase winding, and the quantum of circulation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html). The Madelung pair and its relativistic form.

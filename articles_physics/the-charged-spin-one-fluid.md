@@ -1,4 +1,4 @@
-# __The Charged Proca Fluid: Three Currents and a Compressibility__
+# __The Charged Spin-One Fluid: Three Currents and a Compressibility__
 
 ## Introduction
 
@@ -41,7 +41,7 @@ $$
 
 **What is not here.** No new solution and no new particle. The article's subject is the fluid reading of the covariant Proca equation, and its work is to say what the coupling does to a fluid whose current *was* its field.
 
-**Position in the block.** This article is the charged companion of [The Proca Fluid](the-proca-fluid.html). Its siblings are [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Spin Fluid](the-charged-spin-fluid.html), and §*The Three Charged Fluids* compares the three.
+**Position in the block.** This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html), and §*The Three Charged Fluids* compares the three.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
@@ -191,7 +191,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 **The equation of state survives as a formula and dies as a constitutive law.** The formula $\epsilon=m^{2}r^{2}/2=p$ holds on the sector where the field strength vanishes, where the mass term is the whole stress; off that sector the ratio is not $1$ and is not a function of any single density, which is the free article's point and the criterion by which it denies the block an equation of state. **What the coupling changes is not the formula but its reference**: the free article's $r$ was $\sqrt{-A^{2}}$, a property of the field; the coupled article's $r$ is the chart's scale, and the mass term's own invariant is $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, which equals $r^{2}$ only where the rotor is trivial. **So the equation of state names its variables in a coordinate and not in an invariant**, and even on the stiff sector it is a formula and not a law.
 
-**The three fluids' rows in the block's table become a comparison of what each one's stress can say.** The scalar fluid's stress has the quantum potential and no equation of state. The spin fluid's stress has the antisymmetric part and no equation of state. The vector fluid's stress is stiff on the sector where the field strength vanishes, and the free article says so. **The charged version of the vector fluid keeps that sector, keeps the stiffness on it, and loses the identification of the sector's density** — which is the smallest possible change, and the article reports it as such.
+**The three fluids' rows in the block's table become a comparison of what each one's stress can say.** The scalar fluid's stress has the quantum potential and no equation of state. The spin-half fluid's stress has the antisymmetric part and no equation of state. The vector fluid's stress is stiff on the sector where the field strength vanishes, and the free article says so. **The charged version of the vector fluid keeps that sector, keeps the stiffness on it, and loses the identification of the sector's density** — which is the smallest possible change, and the article reports it as such.
 
 **What the coupling does add is the self-interaction term in the field strength.** The covariant field strength carries $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, so the field-strength part of the stress is no longer purely the gradient of the potential's own tensor: it contains a term quadratic in the potential and independent of its derivatives. **That term is present even where the derivatives vanish**, and it is the chart's version of the statement that a charged vector field's stress sees its own charge density. No number is quoted for it here because the parent does not compute it and this article does not either.
 
@@ -209,7 +209,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 ## The Properties, Listed
 
-**Twelve statements, each one line, and each with its reason. This is what the charged Proca fluid is.**
+**Twelve statements, each one line, and each with its reason. This is what the charged spin-one fluid is.**
 
 1. **The word has eight parameters.** A scale, a continuous phase, a boost and a rotor; the free word's four parameters are the real slice $\vartheta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial.
 2. **The phase is physical and the rotor is new.** The free case's discrete sign is the phase's collapse to two points, and the rotor is a factor the free decomposition had no room for.
@@ -242,9 +242,9 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 | the degenerate set | $r=0$, codimension two | $r=0$, codimension two | $r=0$; the free case's lightlike wall is gone |
 | what the charge does | turns the vorticity into the field strength | pushes and does not torque | doubles the carrier and opens the constraint |
 
-**This article's column is the third, and it is the column in which the charge does most.** The carrier doubles, the density decouples from the norm, the current splits in three, and the constraint stops being a continuity equation. **The reason is that this is the only one of the three whose fluid was identical with its field**: the scalar fluid's velocity was a momentum and the spin fluid's a frame, so both were already separate from the unknown they were read from; the vector fluid's velocity was the field itself, and a field with a connection is not itself.
+**This article's column is the third, and it is the column in which the charge does most.** The carrier doubles, the density decouples from the norm, the current splits in three, and the constraint stops being a continuity equation. **The reason is that this is the only one of the three whose fluid was identical with its field**: the scalar fluid's velocity was a momentum and the spin-half fluid's a frame, so both were already separate from the unknown they were read from; the vector fluid's velocity was the field itself, and a field with a connection is not itself.
 
-**The row that separates this column from the other two is the compressibility.** The scalar fluid is compressible by the quantum potential, the spin fluid is compressible by its frame's expansion, and the vector fluid is compressible by its amplitude. **Three compressibilities and three different objects**, and only the third is fixed by an equation rather than by an identity: the scalar's is a derived quantity, the spin's is free data, and the vector's is the modulus.
+**The row that separates this column from the other two is the compressibility.** The scalar fluid is compressible by the quantum potential, the spin-half fluid is compressible by its frame's expansion, and the vector fluid is compressible by its amplitude. **Three compressibilities and three different objects**, and only the third is fixed by an equation rather than by an identity: the scalar's is a derived quantity, the spin's is free data, and the vector's is the modulus.
 
 **The row that makes this column the richest is the stress.** The companion articles can say that the gauge field's stress is external and sits on the other side of the equation; here the field's stress is the fluid's own, and the self-interaction term in the field strength is the reason. **A fluid whose stress includes its own field is a medium in the strongest sense the block has**, and it is the vector case's privilege.
 
@@ -272,7 +272,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 **Interpretation.** That $r$ is an amplitude rather than a density is a reading of the homogeneity of the fluid formulas, and it is a reading and not a theorem. That the three currents "separate one object into three" is a way of describing the real slice's collapse, and the collapse itself is the fact. That the self-interaction term is what makes the vector fluid the block's richest medium is an assessment and not a result.
 
-**Not claimed.** It is not claimed that the charged Proca fluid has an equation of state, that its density is any of the three candidates, that the massless limit has a fluid reading, or that the charge current's chart expression is simpler than the element form's — the parent says it is not, and this article takes that as given.
+**Not claimed.** It is not claimed that the charged spin-one fluid has an equation of state, that its density is any of the three candidates, that the massless limit has a fluid reading, or that the charge current's chart expression is simpler than the element form's — the parent says it is not, and this article takes that as given.
 
 ## Summary
 
@@ -308,10 +308,10 @@ The stiff equation of state survives as a formula on the sector where the field 
 
 ## Further Reading
 
-- [The Proca Fluid](the-proca-fluid.html), the free companion, whose twelve properties these twelve answer.
+- [The Spin-One Fluid](the-spin-one-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the word, the covariant logarithmic derivative, the constraint and the mass term's frame dependence.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free decomposition and the two branches.
-- [The Charged Klein–Gordon Fluid](the-charged-klein-gordon-fluid.html) and [The Charged Spin Fluid](the-charged-spin-fluid.html), the two companions.
+- [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html), the two companions.
 - [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), for the criterion by which the block denies an equation of state.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank hierarchy.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.

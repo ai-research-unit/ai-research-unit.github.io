@@ -12,7 +12,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2,
 $$
 
-one equation for the **biquaternion-valued** field $\tilde\Xi$, whose value at each event is an element of $\mathbb{B}$ and not a single number. It is the equation that a spin-$0$ field obeys, and it is **second order in the time coordinate**.
+one equation, written for a general element $\tilde\Xi$ in order to display the operator. **The spin-zero field's value is not a general element and not four numbers: it is one complex number.** It is the equation that a spin-$0$ field obeys, it is **second order in the time coordinate**, and the two paragraphs below say which subspace holds its value and why that subspace is the centre.
 
 The operator $\Box$ is central and scalar: it multiplies each coefficient and mixes no two of them. Read on the coefficients, the same one equation is
 
@@ -21,9 +21,11 @@ $$
 \qquad \mu\in\{t,x,y,z\},
 $$
 
-that is, the wave equation stated once for each direction. Every component respects the one equation, and the four are independent of one another. The biquaternion line and the four scalar lines say the same thing.
+that is, the operator acting on each coefficient separately. **This is the operator's reach, and the spin-zero field is smaller than it.** A value that ranges over all of $\mathbb{B}$ carries four independent scalars, and four independent scalars are four particles; the carrier holds one, and the equation it obeys is the single complex line $(\Box-k_m^{2})\xi=0$. The next paragraph says where the value is taken from, and the article thereafter writes the equation for the central field and records the four-coefficient reading as what the restriction excludes.
 
-**The carrier: this article works on *Introduction to the Spin-Zero Centre Subspace*.** The four coefficients are not four states of one field; they are four copies of the same scalar field, because the operator cannot tell them apart. The spin fixes which subspace of $\mathbb{B}$ holds the solution, and for spin zero that subspace is the centre $\mathbb{B}_C=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, of complex dimension one. The carrier is not derived here. The subspace, its invariance under every invertible, the two numbers read on it, its multiplicity two, the phase, the sector question and the failure of the covariant square are [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), and one sentence is taken from it: the field is central, $\tilde\Xi=\xi\,e_t$ with $\xi$ a complex scalar function. The equation is written below for a general element in order to display the operator, while its spin-zero content is its central part. The restriction is exact and costs nothing in the equation, since $\Box_\Phi$ is central and real; what it costs is the interpretation, and the entry named above prices it. The same question — which subspace a solution may occupy — is asked for the other two spins in [Introduction to the Spin-Half Bispinor Spaces](the-spin-half-bispinor-spaces.html) and [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html).
+**The value is one complex number and the equation is one complex equation.** A scalar carries an amplitude and a phase at each event, and the subspace that holds them is the centre; the four coefficients of a general element are the operator's freedom and not the field's.
+
+**The carrier: this article works on *Introduction to the Spin-Zero Centre Subspace*.** The spin fixes which subspace of $\mathbb{B}$ holds the solution, and for spin zero that subspace is the centre $\mathbb{B}_C=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$, of complex dimension one. The carrier is not derived here. The subspace, its invariance under every invertible, the two numbers read on it, its multiplicity two, the phase, the sector question and the failure of the covariant square are [Introduction to the Spin-Zero Centre Subspace](the-spin-zero-centre-subspace.html), and one sentence is taken from it: the field is central, $\tilde\Xi=\xi\,e_t$ with $\xi$ a complex scalar function. The equation is written below for a general element in order to display the operator, while its spin-zero content is its central part. The restriction is exact and costs nothing in the equation, since $\Box_\Phi$ is central and real; what it costs is the interpretation, and the entry named above prices it. The same question — which subspace a solution may occupy — is asked for the other two spins in [Introduction to the Spin-Half Bispinor Spaces](the-spin-half-bispinor-spaces.html) and [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html).
 
 The companion article *Relativistic Mechanics in Biquaternionic Form* already recorded the biquaternion line as one of the ten formulas of relativistic mechanics. The present article does not repeat that line for its own sake; it examines what the line does and does not carry. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
@@ -60,7 +62,7 @@ $$
 \left(\Box - k_m^{2}\right)\Xi_z = 0 .
 $$
 
-The equivalence runs both ways: the four hold if and only if the biquaternion one holds, and any four complex scalar solutions assemble into a $\mathbb{B}$-valued one. Consequently the biquaternion Klein–Gordon equation on $\mathbb{B}$-valued $\tilde\Xi$ is **four decoupled copies** of the complex scalar Klein–Gordon equation, one per coefficient. If the intended field is a single Lorentz scalar, the right host is the centre $\mathbb{B}_{C}$, and then the biquaternion form and the ordinary complex form say the same thing.
+The equivalence runs both ways: the four hold if and only if the biquaternion one holds, and any four complex scalar solutions assemble into a $\mathbb{B}$-valued one. So a solution allowed to range over the whole algebra is **four decoupled copies** of the complex scalar Klein–Gordon equation, one per coefficient, and that is the theory of four scalar fields, each with its own density and its own charge. **The spin-zero field is the central one.** Its value is $\xi\,e_t$, it has one coefficient, and it obeys one complex equation, which is the ordinary complex Klein–Gordon equation written in the algebra's letters. The restriction costs nothing and adds nothing: on the centre the biquaternion form and the complex form say the same thing.
 
 The operator is nevertheless the natural object to name, because it is the composition of $\tilde\nabla_\Phi$ with its quaternion conjugate,
 
@@ -383,7 +385,7 @@ $$
 
 ## What the Form Adds and What It Relabels
 
-Stated plainly, the biquaternion form of the scalar Klein–Gordon equation is a **relabelling** for the equation itself. The operator $\Box$ is central and scalar, the equation decouples into independent scalar equations, the dispersion relation is the textbook one, and no prediction is added. The field, the current, and the two defects are the standard ones.
+Stated plainly, the biquaternion form of the scalar Klein–Gordon equation is a **relabelling** for the equation itself. The operator $\Box$ is central and scalar, the field is one complex scalar, the equation is one complex equation, the dispersion relation is the textbook one, and no prediction is added. The field, the current, and the two defects are the standard ones.
 
 Three things are genuinely rearranged rather than renamed.
 
@@ -427,7 +429,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2,
 $$
 
-with $\tilde\Xi$ a biquaternion-valued field. Because $\Box$ is central and scalar, the equation decomposes into four decoupled scalar equations, and the biquaternion writing is for the scalar field a relabelling.
+with the value in the centre, $\tilde\Xi=\xi\,e_t$. Because $\Box$ is central and scalar, the equation on the centre is the one complex equation $(\Box-k_m^{2})\xi=0$, and the biquaternion writing is for the scalar field a relabelling. A value that leaves the centre decomposes the same operator into four decoupled scalar equations, and that is four fields rather than one.
 
 Being second order in time, the equation has two frequency branches and requires both $\tilde\Xi$ and $\tilde\Xi^{*}$. Its dispersion relation is $\omega^2 = c^2k_\Phi^{2} + c^2k_m^{2}$, that is $k_{t}^{\prime\,2}=k_\Phi^{2}+k_m^{2}$, which is the mass-shell condition $\langle\tilde K_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}/\hbar^{2}= -m^{2}c^{2}/\hbar^{2}$ read on the wave number, and the phase of a plane wave is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t$. Both branches solve the one equation, and neither can be removed by choosing $\vec k_\Phi$ or $m$. The conserved current $\tilde{J}_{\Phi} = ic\rho e_t + \vec j$ lies in $\mathbb{B}_{\Phi}$ and satisfies $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$, but its scalar component $\rho$ has the sign of the frequency and is not positive definite; together with the absence of a one-particle interpretation, this is the two-fold defect the equation has always had, and the biquaternion notation neither removes nor disguises it.
 

@@ -121,7 +121,7 @@ $$
 
 The second is the continuity equation with the density $\rho$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.
 
-**No Lagrange multipliers for the unit conditions.** This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are invertible *by construction*, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. **The tensor formulations of the spin fluid need three multipliers for exactly these conditions**, and the article's contribution is to record that the exact parameterisation removes them.
+**No Lagrange multipliers for the unit conditions.** This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are invertible *by construction*, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. **The tensor formulations of the spin-half fluid need three multipliers for exactly these conditions**, and the article's contribution is to record that the exact parameterisation removes them.
 
 **No multipliers is not no constraints.** The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.
 
@@ -207,7 +207,7 @@ $$
 S=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}+\text{terms in }\nabla r,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
 $$
 
-and the gradient terms are the quantum potential's, in the spin-fluid form.
+and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 **The standard counterpart.** The scalar case of this structure is Madelung's variational principle, and the spin case is the Takabayasi–Bohm–Holland hydrodynamics with the spin's own transport law. Both are established in the literature and this article does not derive them: the scalar case is the central-field limit of the parent polar article, and the spin case is the subject of *Spin Hydrodynamics in Biquaternionic Form*.
 
@@ -298,7 +298,7 @@ The polar variational principle's genuine gain is therefore structural and not d
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-term proposition.
 - [The Variational Principle and the Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-dirac-equation-in-biquaternionic-form.html), for the free action's structure and the count of the pair.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization that produces the coupling.
-- [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the four brackets as the spin fluid's transport laws.
+- [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the four brackets as the spin-half fluid's transport laws.
 - [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the scalar limit in which the brackets collapse to two.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing's two frame units.

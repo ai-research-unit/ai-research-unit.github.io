@@ -107,9 +107,9 @@ The convention fixed in §*The Equation and Its Operator* is $\Box_\Phi=\Delta_\
 
 **No factor of one half.** The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.
 
-## The Four Scalar Actions
+## The Action on the Carrier and on the Algebra
 
-The action is not merely real: it separates into four copies of one scalar action, and that is the structural fact of the element form.
+**The spin-zero action is one scalar action.** The field is central, so the Lagrangian is the ordinary complex scalar Lagrangian and the sum below has one term. The separation that follows is exact on the whole algebra, and it is recorded because it is what the restriction rules out: four terms with no cross term are four independent fields, each with its own density, its own charge and its own action, and the carrier admits one.
 
 **The separation.** By $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ applied to $A=\partial\tilde\Xi$, and by the same identity applied to $\tilde\Xi$ itself, every term of the Lagrangian is a sum over the four coefficients,
 
@@ -127,7 +127,7 @@ $$
 
 where $S$ on the right is the scalar action of one complex coefficient. There are no cross terms, because the four units are orthogonal for the Hermitian pairing and every off-diagonal product $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and has no scalar part.
 
-**What follows for the equation.** The four coefficients are independent, the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$ with $S$ the set of complex scalar solutions, and the parent's §*General Fields* is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.
+**What follows for the equation.** On the centre there is one coefficient, one action and one solution set $S$. On the whole algebra the four coefficients are independent and the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, which is four fields; the parent's §*A value outside the centre, and the four equations* is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.
 
 **What breaks it.** A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_\mu$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.
 
@@ -265,7 +265,7 @@ The ledger is short and it is the reason the article is worth writing.
 
 ## Open Questions
 
-1. **The current of a general field.** The phase current above is a bilinear of the element, and it is additive over the four coefficients by the identity of §*The Four Scalar Actions*. The parent's §*General Fields* records a second reading, which puts the current in the vector slots of $\mathbb{B}_{\Phi}$ and finds no diagonal term there. The two readings cannot both be the conserved current of a sector-valued element, and this article's variational derivation does not decide between them: it produces the additive one because the action is additive. The choice is recorded as open in the polar companion and in the parent.
+1. **The current of a general field.** The phase current above is a bilinear of the element, and it is additive over the coefficients of a value outside the centre by the identity of §*The Action on the Carrier and on the Algebra*. The parent's §*General Fields* records a second reading, which puts the current in the vector slots of $\mathbb{B}_{\Phi}$ and finds no diagonal term there. The two readings cannot both be the conserved current of a sector-valued element, and this article's variational derivation does not decide between them: it produces the additive one because the action is additive. The choice is recorded as open in the polar companion and in the parent.
 
 2. **The stress tensor and its improvement.** The tensor of §*Space Translations and Rotations* is the canonical one. Whether it agrees with the tensor of *The Quantum Stress Tensor of the Biquaternion Scalar Field*, and whether the massless case needs the improvement term that makes the trace vanish, is a comparison this article does not make. The conformal article's improved trace is the object to compare against.
 
@@ -293,7 +293,7 @@ $$
 
 and its variation returns $\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0$ in eight real components. The pairing is the Hermitian one, $\mathrm{Sc}(\cdot^{*}\cdot)$, because $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is real and non-negative while $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ is complex and its real part is indefinite; the two agree only for real quaternionic coefficients, and the Klein–Gordon field has complex ones.
 
-The action is the sum of four scalar actions, one per coefficient, with no cross term, because the four units are orthogonal for the pairing. The independence of the four coefficients is therefore a property of the Lagrangian and not only of the equation. A non-central Hermitian coefficient couples them, and then the four branches are the four eigenvalues of one Hermitian matrix.
+The action on a value that leaves the centre is the sum of four scalar actions, one per coefficient, with no cross term, because the four units are orthogonal for the pairing. The independence of the four coefficients is therefore a property of the Lagrangian and not only of the equation, and on the centre the sum has one term. A non-central Hermitian coefficient couples them, and then the four branches are the four eigenvalues of one Hermitian matrix.
 
 The phase symmetry gives the charge, whose density is $j_{r'_t}=-2k_m\rho_{\mathrm{chg}}$, proportional to the parent's with a constant that is a normalization and a sign that is the action's. The charge is indefinite: it flips between the two frequency branches. Time translation gives the energy, which is non-negative on both branches, and the contrast between the two is the content of the parent's two defects read as one. Space translations and rotations give the stress tensor, which is the current of the four translations and needs no separate construction.
 

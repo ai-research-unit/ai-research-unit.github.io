@@ -115,6 +115,8 @@ $$
 
 The Jordan product $\tilde Q_1\bullet\tilde Q_2$, the general plain bilinear product with the cross term dropped. It is commutative, $e_t$ is invertible on both sides, and it satisfies the **Jordan identity**; it is the only one of the four symmetric parts that does, and it is the only part of the eight that has a unit at all. The identity is not put to the four general products, which are neither symmetrisations nor antisymmetrisations; the counts over the parts are in §*The Counts of the Failures*.
 
+**The two counts are the same count.** Of the four symmetric parts exactly one satisfies the Jordan identity, and of the four antisymmetric parts exactly one satisfies the Jacobi identity, and in both cases it is the plain one: the two identities are inherited from the associativity of the same parent product, so the symmetric table carries one **Jordan** and three *no Jordan*, and the antisymmetric table carries one **Jacobi** and three *no Jacobi*. The parallel is exact and it stops at the identity: the Jordan column carries in addition a norm, an order and a cone, which the Lie column does not, and those three are read in [The Biquaternion Algebra as a JB-Algebra](the-biquaternion-algebra-as-a-jb-algebra.html).
+
 ### The Symmetric Quaternionic Bilinear Product (sqa)
 
 The symmetric quaternionic bilinear product, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, is the symmetric part of the general quaternionic bilinear product above.

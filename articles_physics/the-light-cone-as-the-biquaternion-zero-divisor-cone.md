@@ -235,7 +235,13 @@ The same set appears wherever the biquaternion norm is evaluated, and three guis
 - **Field space.** The field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is a pure vector $(F_0 = 0)$, so its biquaternion norm is $\langle\tilde{F}\rangle_{\natural} = \langle\tilde{F},\tilde{F}\rangle_{\natural} = \tilde{F}\tilde{F}^{\natural} = \sum_\eta F_\eta^2$, and it vanishes exactly for a **null (radiative) field**: $\vec E\perp\vec H$ and $|\vec E| = c|\vec B|$. This is the zero-divisor cone realized inside the six-dimensional complex vector space of the field strength, and it is developed in the companion article *The Field-Strength Biquaternion and Its Invariants*. The energy–momentum tensor of such a field has rank one, as the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor* shows.
 - **Wave space.** The four-wavevector $\tilde P_{\Phi}$ is null when the plane wave is dispersionless, as derived above.
 
-In each case the statement is the same: a physically distinguished class of objects — massless particles, radiative fields, dispersionless waves — is exactly the class on which the algebra's biquaternion norm vanishes, and the class is closed under the Lorentz group.
+**A fourth guise is the cone of squares, and it is the one the cone comes from.** The vanishing set is not the only cone the algebra carries. On the Hermitian sector the symmetrised plain product has a cone of squares, $C=\{\tilde Q\bullet\tilde Q\}$, which is the Lorentz cone $\{te_t+i\vec s : t\geq\lvert\vec s\rvert\}$ of *The Biquaternion Algebra as a JB-Algebra*; and the zero-divisor cone of this article is its boundary under the exchange of the two sectors,
+$$
+\mathcal{Z}\cap\mathbb{B}_{\Phi}=i\bigl(\partial C\cup\partial(-C)\bigr).
+$$
+The identity is not a rephrasing. It says that the surface on which the biquaternion norm vanishes is the boundary of an object defined by a product and by no form, that the object is a symmetric cone, and that the two nappes of the light cone come from the two symmetric nappes that every pointed cone has. The norm supplies the equation; the product supplies the object the equation bounds.
+
+In each case the statement is the same: a physically distinguished class of objects — massless particles, radiative fields, dispersionless waves — is exactly the class on which the algebra's biquaternion norm vanishes, and the class is closed under the Lorentz group. The fourth guise adds that the class is the boundary of the cone of squares of the Hermitian sector, which is the object the order and the states of the corpus are built on.
 
 ## The Cone as the Boundary of Invertibility
 
@@ -328,3 +334,4 @@ The light cone is the set on which elements of the biquaternion algebra cease to
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the characteristic cone and null directions in the spacetime algebra.
 - Ludwik Silberstein, "Elektromagnetische Grundgleichungen in bivektorieller Behandlung", *Annalen der Physik* **22** (1907) 579–586, for the complex-vector formulation whose null fields are the radiative case.
 - Iwo Białynicki-Birula and Zofia Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* **46** (2013) 053001, for the null-field conditions in the complex-vector formulation.
+- [The Biquaternion Algebra as a JB-Algebra](../articles_maths/the-biquaternion-algebra-as-a-jb-algebra.html), for the cone of squares of the Hermitian sector, its symmetry, and the identity $\mathcal{Z}\cap\mathbb{B}_{\Phi}=i(\partial C\cup\partial(-C))$ that makes the light cone the boundary of that cone.

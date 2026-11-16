@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The limit in one sentence.** The parent prints two actions — one for the operator setting, with gradient terms, and one boxed for the constant setting, without — and the difference is exactly the quantum potential's terms in the spin-fluid form, so the boxed action *is* the non-quantum action.
+**The limit in one sentence.** The parent prints two actions — one for the operator setting, with gradient terms, and one boxed for the constant setting, without — and the difference is exactly the quantum potential's terms in the spin-half-fluid form, so the boxed action *is* the non-quantum action.
 
 **The two displays, side by side, and their difference.**
 
@@ -16,7 +16,7 @@ S_{\mathrm{box}}=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\th
 \rho=r^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
 
-**The parent states that the gradient terms are the quantum potential's**, in the spin-fluid form, and that is the whole of the article's premise. **The boxed action is the operator-setting action with those terms deleted, and the deletion is the non-quantum limit.**
+**The parent states that the gradient terms are the quantum potential's**, in the spin-half-fluid form, and that is the whole of the article's premise. **The boxed action is the operator-setting action with those terms deleted, and the deletion is the non-quantum limit.**
 
 **Why this family is different from the two scalar ones, and the difference is worth stating carefully.** In the Klein–Gordon family the deleted term is the scale's kinetic term and it sits in the same display as the rest. **Here the deleted terms are the frame's gradients and the parent keeps them in a separate display**, so the two actions the limit relates are printed in the same article and the reader can see what the limit costs. **No other family in the corpus has that.**
 
@@ -33,7 +33,7 @@ $$
 
 **What the article establishes, in five sentences.** The parent's boxed action is the operator-setting action with the frame's gradient terms deleted, and the deleted terms are the quantum potential's. The deletion leaves a constrained system whose seven momenta are zero or fixed, whose two evolution equations are the continuity equation and the guidance equation, and whose six remaining equations are the frame's constraints. The coupling enters the phase slot and the boost slot only, so the guidance equation is the mechanical mass shell and the density and the spin are untouched by it. The limit is therefore a truncation with a computable ledger: the deleted terms are gradient terms in three of the eight coordinates, and nothing else is dropped. The action does not derive the force; the force is read from the constraint surface and it is the equation-route companion's subject.
 
-**What is not new.** The spin-fluid action with the frame's gradients, the constrained Hamiltonian reading, and the Madelung–Takabayasi correspondence are standard. Added here: the identification of the parent's boxed display with the non-quantum action, the ledger of what the limit deletes stated in coordinates, and the reading of the coupling's two-bracket reach as a statement about which quantities the limit may move.
+**What is not new.** The spin-half-fluid action with the frame's gradients, the constrained Hamiltonian reading, and the Madelung–Takabayasi correspondence are standard. Added here: the identification of the parent's boxed display with the non-quantum action, the ledger of what the limit deletes stated in coordinates, and the reading of the coupling's two-bracket reach as a statement about which quantities the limit may move.
 
 **The restriction.** The word exists where $N(\tilde\Xi)\neq0$; the action is written in the eight real coordinates of the chart, and the limit is defined there.
 
@@ -115,7 +115,7 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 
 ## Summary
 
-The parent prints two actions: one for the operator setting with the frame's gradient terms and one boxed without them. **The boxed action is the non-quantum action**, because the deleted terms are the quantum potential's in the spin-fluid form.
+The parent prints two actions: one for the operator setting with the frame's gradient terms and one boxed without them. **The boxed action is the non-quantum action**, because the deleted terms are the quantum potential's in the spin-half-fluid form.
 
 The deletion removes three quadratic gradient terms and nothing else: the curvature of the density, of the rapidity and of the rotor's angle. **All three are order two**, and their size is the free size, so the limit costs the free accuracy and no more.
 

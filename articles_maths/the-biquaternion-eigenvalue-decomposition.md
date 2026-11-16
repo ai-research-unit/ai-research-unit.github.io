@@ -257,6 +257,14 @@ Hermitian conjugation is the star, and normality is $\tilde Q\tilde Q^{*}=\tilde
 
 When the conditions hold, the projectors are the standard idempotents of the pure root $\vec{Ζ}=-i\vec u$ over a real unit vector $\vec u$. For a Hermitian $\tilde Q$ the eigenvalues are real, $\lambda_{\pm}=Q_{t}\mp\lvert\vec q'\rvert$ with $\vec Q=i\vec q'$, and the two idempotents are Hermitian and orthogonal for the Hermitian form.
 
+**Remark (the projectors are affine in the element).** On the Hermitian sector the spectral theorem needs no algorithm, because the degree is two. With $\lambda_{\pm}=t\pm\lvert\vec q'\rvert$ the two projectors are the affine functions
+
+$$
+\tilde\Pi_{\pm}=\frac{\tilde Q-\lambda_{\mp}e_t}{\lambda_+-\lambda_-}=\tfrac12\Bigl(e_t\pm i\,\frac{\vec q'}{\lvert\vec q'\rvert}\Bigr),
+$$
+
+so the interpolation between the eigenvalues is a two-point formula and the whole functional calculus follows, $f(\tilde Q)=f(\lambda_+)\tilde\Pi_+ + f(\lambda_-)\tilde\Pi_-$. The Clifford route above reaches the same objects by the pure root and the normality criterion, and the pure root $\vec Z=-i\vec u$ of this article is $\mp i\vec q'/\lvert\vec q'\rvert$ in the formula, the choice of sign naming which of the two projectors is called $\tilde\Pi_+$. The Jordan reading of the identity, with the cone it brings and the order-unit norm, is [The Biquaternion Algebra as a JB-Algebra](the-biquaternion-algebra-as-a-jb-algebra.html), §*The Functional Calculus*; the point worth carrying here is that the closed form belongs to the algebra and not to the display, so it is invariant under every change of representation of $\mathbb{B}$.
+
 ### The Grade Reading of the Hermitian Case
 
 The Hermitian condition has a grade reading. The biquaternion star fixes the real scalar part and the imaginary vector part, and negates the real vector part and the imaginary scalar part; in the Clifford grading, it fixes grades $0$ and $1$ and negates grades $2$ and $3$ up to the appropriate conjugation. A Hermitian element therefore has its grade-$0$ and grade-$1$ components real and its grade-$2$ and grade-$3$ components imaginary, which is the statement that $\vec Q=i\vec q'$ with $\vec q'$ real. The pure root $\vec{Ζ}=-\omega\vec U$ is then purely imaginary, equal to $-i\vec u$ for a real unit vector $\vec u$, and the projectors $\frac12(1\pm\vec{Ζ})$ are the Hermitian idempotents of that pure root. The spectral resolution is the orthogonal decomposition of the Hermitian form.
