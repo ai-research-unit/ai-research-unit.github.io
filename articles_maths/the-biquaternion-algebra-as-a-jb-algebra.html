@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternion Algebra as a JB-Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternion-algebra-as-a-jb-algebra"><strong>The Biquaternion Algebra as a JB-Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The four symmetrisations of the biquaternion products are read one by one in the block of the Jordan structures, and the plain one is the only Jordan algebra of the four. That reading is algebraic. It states that one identity holds and three fail, and it stops there. It says nothing about a norm, an order or a cone, because none of those three is fixed by an identity.</p>
+<p>This article adds the three, for the one symmetrisation that admits them. The Hermitian subspace $\mathbb{B}_{\Psi}$ with the symmetrised plain product, the cone of squares and the order-unit norm is a real Jordan Banach algebra satisfying the three axioms of a <strong>JB-algebra</strong>. The algebra is the $H_2(\mathbb{C})$ of Hermitian $2\times2$ complex matrices, which is the spin factor $JSpin_3$. The identification is not new to the corpus, which prints it in <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>; what is new is the reading of the biquaternion block through it, and the four objects it hands over: the order unit, the order-unit norm, the symmetric cone and the states.</p>
+<p>The article also fixes what the algebra is not, because the boundary of the claim is where the corpus could go wrong. The biquaternion algebra with the corpus's Euclidean norm is not a JB-algebra. The three other symmetrisations are not Jordan algebras at all, so no JB-structure exists for them. And $\mathbb{B}$ itself, unlike $\mathbb{B}_{\Psi}$, is not formally real, so every cone and order statement is a statement about the Hermitian subspace and about nothing else.</p>
+<p>The order of the reading is the order of the structure: the product and its closure on the Hermitian subspace, the identification with the spin factor, the order unit and its norm, the cone, the states, the axioms, the complex algebra and its JB*-structure, the triple product, the light cone, and the comparison with the three companions.</p>
+<h2 id="the-product-on-the-hermitian-subspace">The Product on the Hermitian Subspace</h2>
+<p>The symmetrised plain product is
+$$
+\tilde Q_1\bullet\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr),
+$$
+with the coordinate rule of <em>Product and Form Conventions</em>, §<em>The Twelve Products and Their Names</em>.</p>
+<p><strong>Proposition (the Hermitian subspace is closed).</strong> If $\tilde Q_1^{*}=\tilde Q_1$ and $\tilde Q_2^{*}=\tilde Q_2$ then $(\tilde Q_1\bullet\tilde Q_2)^{*}=\tilde Q_1\bullet\tilde Q_2$.</p>
+<p><em>Proof.</em> The star is an anti-automorphism of the plain product, so $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}=\tilde Q_2\tilde Q_1$, and the half-sum is fixed. Verified on one hundred random pairs of $\mathbb{B}_{\Psi}$, the largest deviation from Hermiticity being $8.9\times10^{-16}$.</p>
+<p><strong>The general element of the subspace</strong> is written $\tilde Q=te_t+i\vec s$ with $t$ and the three components of $\vec s$ real, and the product read on those coordinates is
+$$
+(te_t+i\vec s)\bullet(ue_t+i\vec v)=\bigl(tu+\vec s\cdot\vec v\bigr)e_t+i\bigl(t\vec v+u\vec s\bigr).
+$$</p>
+<p><em>Verification.</em> The rule follows from $e_t$ central, $\vec e_k^{2}=-e_t$ and $i$ central; it was checked on one hundred random pairs, the largest coordinate deviation being $8.9\times10^{-16}$.</p>
+<p><strong>Three consequences are read from the display at once.</strong> The scalar part is the Lorentzian pairing of the two scalar–vector pairs with the plus sign. The vector part is the symmetric mixture of the two vector parts, weighted by the scalar parts. And the product is commutative and has $e_t$ as a unit, so the Hermitian subspace is a commutative unital algebra over $\mathbb{R}$ of dimension four.</p>
+<p><strong>The square</strong> is the case $\tilde Q_1=\tilde Q_2$,
+$$
+(te_t+i\vec s)^{2}=\bigl(t^{2}+\lvert\vec s\rvert^{2}\bigr)e_t+2it\,\vec s ,
+$$
+and it is a genuine square of the plain product, $\tilde Q\bullet\tilde Q=\tilde Q^{2}$. Verified on one hundred elements.</p>
+<h2 id="the-identification-with-the-spin-factor">The Identification with the Spin Factor</h2>
+<p><strong>Theorem.</strong> $\mathbb{B}_{\Psi}$ with the product $\bullet$ is the Jordan algebra $H_2(\mathbb{C})$ of Hermitian $2\times2$ matrices with the symmetrised product, and it is the spin factor $JSpin_3$.</p>
+<p><em>Proof.</em> A Hermitian $2\times2$ matrix is $tI+\vec s\cdot\vec\sigma$ with $t$ and $\vec s$ real, which is $\tilde Q=te_t+i\vec s$ under the display $\mathsf{M}(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$, and the symmetrised product of two such matrices is the display above. The second identification is the corollary $H_2(D)\cong JSpin_{1+\dim_{\mathbb{R}}D}$ of <em>Spin Factors and the Clifford Envelope with Inner Conjugation</em>, at $D=\mathbb{C}$.</p>
+<p><strong>What the identification fixes.</strong> The algebra is simple, of degree two, of rank two, and special. It is not exceptional, and the exceptional phenomenon of <em>Special and Exceptional Jordan Algebras</em> is confined to size at least three. Its spectral resolution is the pair of eigenvalues
+$$
+\lambda_\pm=t\pm\lvert\vec s\rvert ,
+$$
+verified on one hundred elements, with
+$$
+\operatorname{tr}\tilde Q=2t,\qquad \det\mathsf{M}(\tilde Q)=t^{2}-\lvert\vec s\rvert^{2} ,
+$$
+both verified on one hundred elements, so that the characteristic polynomial is $\lambda^{2}-2t\lambda+\bigl(t^{2}-\lvert\vec s\rvert^{2}\bigr)$.</p>
+<p><strong>The classification slot.</strong> The algebra is not merely a Jordan algebra that happens to be smallest in some list. As a JBW-algebra it is a <strong>factor of type $\mathrm{I}_2$</strong>, and the spin factors of dimension at least three are exactly the type-$\mathrm{I}_2$ factors of the JBW classification. The state space of a type-$\mathrm{I}_2$ factor is the unit ball of a real Hilbert space, so the fact that the states of $\mathbb{B}_{\Psi}$ form the Bloch ball is a classification statement and not an accident of dimension four: the Hilbert space is $\mathbb{R}^3$, the ball is its unit ball, and the pure states are its sphere. The same slot fixes the character of the projections: a type-$\mathrm{I}_2$ factor is the algebra whose projection lattice is that of $\mathbb{C}^2$, which is the chain written in <em>Effect Algebras and Orthomodular Lattices</em>, §<em>The Standard Examples</em>.</p>
+<p><strong>The determinant is the quaternionic norm.</strong> On the whole algebra $\det\mathsf{M}(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, so the determinant of the Jordan algebra is the $N$ of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>, and on $\mathbb{B}_{\Psi}$ it is the indefinite form $t^{2}-\lvert\vec s\rvert^{2}$. The Euclidean form of the same article, $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, restricts to $t^{2}+\lvert\vec s\rvert^{2}$ and is the positive definite one. Two forms, one indefinite and one definite, and the pair is the standard pair of a Jordan algebra: the determinant and the trace form.</p>
+<h2 id="the-order-unit-and-the-order-unit-norm">The Order Unit and the Order-Unit Norm</h2>
+<p>The cone of squares is defined first, because the order is read from it. It is the set
+$$
+C=\{\tilde Q\bullet\tilde Q : \tilde Q\in\mathbb{B}_{\Psi}\}=\{\tilde Q^{2} : \tilde Q\in\mathbb{B}_{\Psi}\}.
+$$</p>
+<p><strong>Proposition (the cone is the Lorentz cone).</strong> $C=\{\tilde Q=te_t+i\vec s : t\geq\lvert\vec s\rvert\}$.</p>
+<p><em>Proof.</em> The square of $ue_t+i\vec v$ is $\bigl(u^{2}+\lvert\vec v\rvert^{2}\bigr)e_t+2iu\vec v$, whose scalar part exceeds its vector norm by $\bigl(\lvert u\rvert-\lvert\vec v\rvert\bigr)^{2}\geq0$, so every square lies in the set; conversely, given $t\geq\lvert\vec s\rvert$, the choice
+$$
+u=\sqrt{\tfrac12\bigl(t+\sqrt{t^{2}-\lvert\vec s\rvert^{2}}\bigr)},\qquad \lvert\vec v\rvert=\sqrt{\tfrac12\bigl(t-\sqrt{t^{2}-\lvert\vec s\rvert^{2}}\bigr)}
+$$
+with $\vec v$ along $\vec s$ returns the element. Verified on one hundred elements of the cone, with no failure, and the cone was compared with the positive semidefinite cone of the matrix display on one hundred elements, with no disagreement.</p>
+<p><strong>The order.</strong> For $\tilde Q_1,\tilde Q_2\in\mathbb{B}_{\Psi}$ put $\tilde Q_1\leq\tilde Q_2$ when $\tilde Q_2-\tilde Q_1\in C$. The relation is a partial order, and it is the Loewner order of the display.</p>
+<p><strong>Definition (the order unit).</strong> An element $u\in\operatorname{int}C$ such that for every $\tilde Q$ there is $\lambda\geq0$ with $-\lambda u\leq\tilde Q\leq\lambda u$.</p>
+<p><strong>Proposition.</strong> $e_t$ is an order unit, and it is the identity of the algebra.</p>
+<p><em>Proof.</em> $e_t$ is the identity, since $\bullet$ is the symmetrisation of a product with unit $e_t$; and $-\lambda e_t\leq\tilde Q\leq\lambda e_t$ reads $\lambda\pm t\geq\lvert\vec s\rvert$, which holds for $\lambda=\lvert t\rvert+\lvert\vec s\rvert$. Verified on one hundred elements, the identity residual being zero.</p>
+<p><strong>Definition (the order-unit norm).</strong> The least such $\lambda$,
+$$
+\lVert\tilde Q\rVert_{u}=\inf\{\lambda\geq0 : -\lambda e_t\leq\tilde Q\leq\lambda e_t\}.
+$$</p>
+<p><strong>Theorem.</strong> $\lVert te_t+i\vec s\rVert_{u}=\lvert t\rvert+\lvert\vec s\rvert$, and this is the operator norm of the matrix display.</p>
+<p><em>Proof.</em> The two inequalities of the definition give $\lambda\geq t+\lvert\vec s\rvert$ and $\lambda\geq-t+\lvert\vec s\rvert$, whose least common value is $\lvert t\rvert+\lvert\vec s\rvert$. The eigenvalues of the display are $t\pm\lvert\vec s\rvert$, so its operator norm is the larger of $\lvert t+\lvert\vec s\rvert\rvert$ and $\lvert t-\lvert\vec s\rvert\rvert$, which is $\lvert t\rvert+\lvert\vec s\rvert$. The two were compared on one hundred elements, the largest deviation being $8.9\times10^{-16}$.</p>
+<p><strong>The norm is intrinsic, and the display is a display.</strong> The order-unit norm is defined from the cone, the cone from the square, the square from the product. Nothing outside the algebra enters, and the agreement with the operator norm is a theorem about the display and not a definition. This matters because the corpus's topological norm is the Euclidean one, $\lVert\tilde Q\rVert=\sqrt{H(\tilde Q)}$, and the two norms differ: at $e_t+i\vec u$ with $\lvert\vec u\rvert=1$ the order-unit norm is $2$ and the Euclidean norm is $\sqrt2$. The order-unit norm is the larger, as it must be, and on $\mathbb{B}_{\Psi}$ the ratio is bounded by $\sqrt2$.</p>
+<p><strong>The order-unit norm is not one of the four algebraic norms.</strong> The four forms $P$, $N$, $H$ and $\mathrm{Kr}$ of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> are complex-quadratic in the coefficients and one of them, $H$, is the square of the Euclidean norm. The order-unit norm is not quadratic in the coefficients: it is the spectral norm $\lvert t\rvert+\lvert\vec s\rvert$ of the spin factor, which the article <em>Jordan Algebras and the Positive Cone</em> already names for the general spin factor.</p>
+<h2 id="the-cone-is-symmetric">The Cone Is Symmetric</h2>
+<p><strong>Proposition (self-duality).</strong> With the trace form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\tfrac12\operatorname{tr}(\tilde Q_1\tilde Q_2)$, the dual cone of $C$ is $C$.</p>
+<p><em>Proof.</em> On $\mathbb{B}_{\Psi}$ the form is $tu+\vec s\cdot\vec v$, positive definite, so it identifies the space with its dual; the polar of the Lorentz cone under this pairing is the Lorentz cone, which is the elementary Cauchy–Schwarz computation for $t\geq\lvert\vec s\rvert$. The two cones were compared on one hundred elements with no disagreement.</p>
+<p><strong>Proposition (homogeneity).</strong> For $\tilde U$ invertible the map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ preserves $C$.</p>
+<p><em>Proof.</em> The map is $x\mapsto uxu^{*}$ on the display, a congruence, and a congruence with an invertible multiplier preserves positive semidefiniteness; in the algebra it is the quadratic representation $U(\tilde U)$ read through the star. Verified on one hundred pairs of an invertible $\tilde U$ and an element of $C$, with no disagreement.</p>
+<p><strong>Consequence.</strong> $C$ is closed, convex and pointed, its interior is open, and the interior is homogeneous under the congruence group, so $\operatorname{int}C$ is a <strong>symmetric cone</strong> and its automorphism group is the connected component of that group. The Koecher–Vinberg theorem makes the correspondence between symmetric cones and formally real Jordan algebras bijective, so the cone and the algebra determine each other; <em>Jordan Algebras and the Positive Cone</em> states the theorem in general and gives the Lorentz cone as its second-order case.</p>
+<h2 id="the-states">The States</h2>
+<p><strong>Definition.</strong> A <strong>state</strong> of $\mathbb{B}_{\Psi}$ is a linear functional $f$ with $f(C)\subseteq\mathbb{R}_{\geq0}$ and $f(e_t)=1$.</p>
+<p><strong>Proposition (the states are the density matrices).</strong> The states are exactly the functionals $f_{\tilde\rho}(\tilde Q)=\operatorname{tr}(\tilde\rho\,\tilde Q)$ with $\tilde\rho\in C$ and $\operatorname{tr}\tilde\rho=1$.</p>
+<p><em>Proof.</em> Positivity of $f$ on $C$ is positivity of the representing element in the dual cone, which is $C$ by self-duality; the normalisation $f(e_t)=1$ is $\operatorname{tr}\tilde\rho=1$, since $f_{\tilde\rho}(e_t)=\operatorname{tr}\tilde\rho$ and $\operatorname{tr}e_t=2$ makes the two conditions consistent. The pairing $\operatorname{tr}(\tilde\rho\,\tilde Q)$ was checked non-negative on one hundred pairs of a normalised element of $C$ and an element of $C$, with no failure.</p>
+<p><strong>The state space is the base of the cone</strong>, $\{\tilde\rho\in C : \operatorname{tr}\tilde\rho=1\}$, which is the set of elements $\tfrac12 e_t+i\vec w$ with $\lvert\vec w\rvert\leq\tfrac12$. This is the set the physics corpus calls the state space, and the biquaternion norm of a state is a function of $\lvert\vec w\rvert$ alone, as <em>Von Neumann Entropy and the Biquaternion Norm</em> computes.</p>
+<p><strong>Theorem (the pure states are the idempotents).</strong> The extreme points of the state space are the rank-one idempotents, $\tfrac12\bigl(e_t+i\vec u\bigr)$ with $\lvert\vec u\rvert=1$.</p>
+<p><em>Proof.</em> The state space is the base of the cone, cut by the hyperplane $\operatorname{tr}=1$. A point of a base is extreme exactly when the ray through it is an extreme ray of the cone, which is the elementary part of the Choquet theory of <em>Cones, Extremal Rays and the Choquet Theory</em>. The extreme rays of the cone of squares of $H_2(\mathbb{C})$ are the rays of the rank-one positive semidefinite matrices, because a positive semidefinite matrix of rank at least two is a sum of two non-proportional positive semidefinite matrices. The rank-one elements of trace one are therefore the extreme points, and those are $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$: the idempotents of $H_2(\mathbb{C})$ are $0$, $e_t$ and the rank-one elements, and a rank-one idempotent of trace one has that form. Verified on one hundred unit vectors, the idempotency residual being $1.1\times10^{-16}$ and the trace one.</p>
+<p><strong>The defect of an idempotent candidate is a scalar.</strong> For $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert$ not one,
+$$
+\tilde\Pi^{2}-\tilde\Pi=\tfrac14\bigl(\lvert\vec u\rvert^{2}-1\bigr)e_t ,
+$$
+verified on one hundred vectors to $6.7\times10^{-16}$, so the failure of idempotency is a central scalar and the sphere $\lvert\vec u\rvert=1$ is exactly the idempotent locus.</p>
+<p><strong>The Born weight is a positive functional.</strong> For a pure state $\tilde\Pi$ and a state $\tilde\rho$ the number $\operatorname{tr}(\tilde\Pi\tilde\rho)$ is the pairing at a pair of elements of the cone, hence non-negative and at most one by the normalisations. The reading of that number as a probability is the programme's step and not a theorem of the algebra; the algebra supplies the positive functional and the extreme point, which is what the reading needs.</p>
+<h2 id="the-functional-calculus">The Functional Calculus</h2>
+<p><strong>The spectrum is closed form because the degree is two.</strong> For $\tilde Q=te_t+i\vec s$ put
+$$
+\lambda_\pm=t\pm\lvert\vec s\rvert ,
+\qquad
+\tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_+ -\lambda_-},
+$$
+the second display being a definition for $\lvert\vec s\rvert\neq0$.</p>
+<p><strong>Proposition.</strong> $\tilde\Pi_\pm$ are Hermitian idempotents with $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\bullet\tilde\Pi_-=0$, and $\tilde Q=\lambda_+\tilde\Pi_+ + \lambda_-\tilde\Pi_-$. They are the rank-one idempotents
+$$
+\tilde\Pi_\pm=\tfrac12\Bigl(e_t\pm i\,\frac{\vec s}{\lvert\vec s\rvert}\Bigr),
+$$
+and they are the spectral projectors of the matrix display.</p>
+<p><em>Proof.</em> Both are polynomials in $\tilde Q$, so they commute with it and multiply as $\tilde\Pi_\pm^2=\tilde\Pi_\pm$ and $\tilde\Pi_+\tilde\Pi_-=0$ by the Cayley–Hamilton identity $\tilde Q^2-2t\tilde Q+\bigl(t^2-\lvert\vec s\rvert^2\bigr)e_t=0$ of <em>The Jordan Structure of the Symmetric Plain Product</em>, §<em>The Peirce Theory</em>. The second display is the expansion of the first, and it is Hermitian because $\vec s/\lvert\vec s\rvert$ is real. Verified on one hundred elements, the largest residuals being $2.2\times10^{-16}$ for idempotency, $2.2\times10^{-16}$ for the sum against $e_t$ and $6.7\times10^{-16}$ for the resolution.</p>
+<p><strong>Consequence (the functional calculus).</strong> For any function $f$ defined on the two-point spectrum,
+$$
+f(\tilde Q)=f(\lambda_+)\tilde\Pi_+ + f(\lambda_-)\tilde\Pi_- ,
+$$
+which is the holomorphic functional calculus of the algebra, closed because there are only two points to interpolate. Three cases carry the corpus's work. The modulus is $\lvert\tilde Q\rvert=\lvert\lambda_+\rvert\tilde\Pi_+ + \lvert\lambda_-\rvert\tilde\Pi_-$, non-negative in the order, and it carries the same order-unit norm as $\tilde Q$, since $\lVert\tilde Q\rVert_u=\max(\lvert\lambda_+\rvert,\lvert\lambda_-\rvert)$ is already a spectral maximum. The sign is $\operatorname{sgn}\tilde Q=\operatorname{sgn}(\lambda_+)\tilde\Pi_+ + \operatorname{sgn}(\lambda_-)\tilde\Pi_-$, a symmetry of the algebra, and the pair reconstructs the element, $\tilde Q=\lvert\tilde Q\rvert\operatorname{sgn}\tilde Q$, verified to $8.9\times10^{-16}$; the special case in which the two eigenvalues straddle zero is the one in which the sign is the reflection $\tilde\Pi_+ - \tilde\Pi_-$. And the cone reads spectrally: $\tilde Q\in C$ exactly when both eigenvalues are non-negative, so $C$ is the set of elements with non-negative spectrum, which is the general statement that the cone of squares of a formally real algebra is its spectral non-negative set.</p>
+<p><strong>The corpus's spectral theorem is this display.</strong> <em>The Biquaternion Eigenvalue Decomposition</em> reaches the same two projectors from the Clifford grading, by way of the pure root and the normality criterion, and its Hermitian projectors $\tfrac12(1\pm\vec Z)$ are $\tilde\Pi_\pm$ at $\vec Z=i\vec s/\lvert\vec s\rvert$. The two derivations agree because the degree is two: a unital algebra of degree two has a spectral theorem that is an affine formula, and the Clifford machinery is doing the interpolation implicitly. What the Jordan reading adds is the converse half, that the formula belongs to the algebra and not to the display, so it survives every change of representation of the four-dimensional algebra.</p>
+<h2 id="the-three-axioms">The Three Axioms</h2>
+<p><strong>A word on the two norms.</strong> The corpus writes $\lVert\tilde Q\rVert$ for the Euclidean norm $\sqrt{H(\tilde Q)}$ and that letter is kept for it here. The norm of the axioms below is written $\lVert\cdot\rVert_{\mathrm{op}}$, and on $\mathbb{B}_{\Psi}$ it is the order-unit norm $\lVert\cdot\rVert_{u}$ of the previous section, by the theorem proved there.</p>
+<p><strong>Definition.</strong> A <strong>JB-algebra</strong> is a real Jordan algebra with a complete norm satisfying, for all $x,y$,
+$$
+\lVert x\bullet y\rVert_{\mathrm{op}}\leq\lVert x\rVert_{\mathrm{op}}\,\lVert y\rVert_{\mathrm{op}},\qquad \lVert x^{2}\rVert_{\mathrm{op}}=\lVert x\rVert_{\mathrm{op}}^{2},\qquad \lVert x^{2}\rVert_{\mathrm{op}}\leq\lVert x^{2}+y^{2}\rVert_{\mathrm{op}} .
+$$</p>
+<p><strong>Theorem.</strong> $\mathbb{B}_{\Psi}$ with the product $\bullet$ and the order-unit norm is a JB-algebra.</p>
+<p><em>Proof.</em> Three steps, each read on the coordinates $x=te_t+i\vec s$.</p>
+<p>The product inequality: $\lvert t_1t_2+\vec s_1\cdot\vec s_2\rvert\leq\lvert t_1\rvert\lvert t_2\rvert+r_1r_2$ and $\lvert t_1\vec s_2+t_2\vec s_1\rvert\leq\lvert t_1\rvert r_2+\lvert t_2\rvert r_1$, with $r=\lvert\vec s\rvert$, and the sum of the two bounds is $(\lvert t_1\rvert+r_1)(\lvert t_2\rvert+r_2)$.</p>
+<p>The square identity: the eigenvalues of $x$ are $t\pm r$, so those of $x^{2}$ are $(t\pm r)^{2}$, and the larger is $(\lvert t\rvert+r)^{2}=\lVert x\rVert_{\mathrm{op}}^{2}$.</p>
+<p>The third: $x^{2}$ and $y^{2}$ lie in $C$, so $x^{2}+y^{2}-x^{2}\in C$ and $x^{2}\leq x^{2}+y^{2}$; the norm is monotone on the order, because $\lVert z\rVert_{u}\leq\lambda$ is the pair of inequalities $-\lambda e_t\leq z\leq\lambda e_t$ and a larger element has the larger least $\lambda$.</p>
+<p>Completeness is automatic in dimension four. The three inequalities were also checked on one hundred random pairs, the first and the third with no violation and the second with residual $1.1\times10^{-14}$.</p>
+<p><strong>What the theorem carries.</strong> Every finite-dimensional JB-algebra is a formally real Jordan algebra, by the Jordan–von Neumann–Wigner classification, which <em>Jordan Algebras and the Positive Cone</em> states as the identity of the two classes. So the identification of the previous sections was not a convenience: the algebra either is a formally real Jordan algebra or it is not, and it is.</p>
+<p><strong>The three axioms are not the Jordan identity.</strong> The identity is what makes the algebra a Jordan algebra; the three inequalities are what make the cone closed and the order archimedean. The symmetrised plain product has both, and the corpus records the identity alone in <em>The Jordan Structure of the Symmetric Plain Product</em>. The two properties are independent in general, and the three companions of the next section show the independence in one direction: they fail the identity first, so the question of the inequalities does not arise.</p>
+<h2 id="the-complex-algebra-and-its-jb-structure">The Complex Algebra and Its JB*-Structure</h2>
+<p><strong>Definition.</strong> A <strong>JB*-algebra</strong> is a complex Jordan algebra with a conjugate-linear involution and a complete norm satisfying $\lVert x\bullet y\rVert_{\mathrm{op}}\leq\lVert x\rVert_{\mathrm{op}}\lVert y\rVert_{\mathrm{op}}$, $\lVert x^{*}\rVert_{\mathrm{op}}=\lVert x\rVert_{\mathrm{op}}$ and $\lVert U_{x}x^{*}\rVert_{\mathrm{op}}=\lVert x\rVert_{\mathrm{op}}^{3}$, where $U_{x}y=2x\bullet(x\bullet y)-x^{2}\bullet y$.</p>
+<p><strong>Theorem.</strong> $\mathbb{B}$ with the product $\bullet$, the star and the operator norm of the display is a JB*-algebra.</p>
+<p><em>Proof.</em> The display is an isomorphism of $\mathbb{B}$ onto $M_2(\mathbb{C})$ as an involutive algebra, and every C*-algebra with its symmetrised product is a JB*-algebra, by <em>Determinants in Jordan Matrix Algebras</em>, §<em>JB-algebras and JB*-algebras</em>, which states the fact and cites <em>Jordan Algebras of Sesqualgebras</em>. Concretely $U_{x}y=xyx$, verified on one hundred pairs to $2.1\times10^{-14}$, so $\lVert U_{x}x^{*}\rVert_{\mathrm{op}}=\lVert xx^{*}x\rVert_{\mathrm{op}}=\lVert x\rVert_{\mathrm{op}}^{3}$, verified on one hundred elements to $2.3\times10^{-13}$.</p>
+<p><strong>The self-adjoint part is the JB-algebra of the previous section</strong>, which is the general relation between the two classes and not a coincidence of this example.</p>
+<p><strong>The Euclidean norm is not a JB*-norm.</strong> The corpus's topological norm is $\lVert\tilde Q\rVert=\sqrt{H(\tilde Q)}$, and with it the axiom fails. At $\tilde Q=e_t+i\vec u$ with $\lvert\vec u\rvert=1$ the display has eigenvalues $2$ and $0$, so its cube is $8\tilde\Pi$ at the rank-one idempotent $\tilde\Pi$; then $H(\tilde Q)=2$ and $H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)=H(8\tilde\Pi)=32$, so $\sqrt{H\bigl(U_{\tilde Q}\tilde Q^{*}\bigr)}=4\sqrt2$ against $\bigl(\sqrt{H(\tilde Q)}\bigr)^{3}=2\sqrt2$. The axiom was also checked on one hundred random elements, failing in every case. The star is an isometry for the Euclidean norm, so that condition holds; the product inequality does not, and it fails on random pairs, the largest excess over two thousand trials being $2.7$. The Euclidean norm is the square root of a quadratic form on the coefficient space, and it is not a norm of the algebra: it lacks the spectral character that ties the norm to the cone.</p>
+<p><strong>The consequence for the corpus.</strong> No statement of the corpus that uses $\lVert\cdot\rVert$ as the Euclidean norm is a statement about the JB-algebra, and no statement about the JB-algebra may be read in the Euclidean norm. The two norms are different objects on the same space, and the sections above use the order-unit norm while saying so.</p>
+<h2 id="the-triple-product">The Triple Product</h2>
+<p><strong>Definition.</strong> The <strong>Jordan triple product</strong> of the algebra is
+$$
+\{x,y,z\}=(x\bullet y)\bullet z+(x\bullet z)\bullet y-(y\bullet z)\bullet x ,
+$$
+which is the ternary law of <em>The Lie–Jordan Decomposition of a Bilinear Product and the Jordan Triple System</em>, and which expands to $\tfrac12\bigl(yxz+zxy\bigr)$ in the plain product, as <em>The Jordan Structure of the Symmetric Plain Product</em> proves.</p>
+<p><strong>Definition.</strong> The <strong>C*-triple product</strong> is
+$$
+\{x,y,z\}_{\mathrm{C}^{*}}=\tfrac12\bigl(xy^{*}z+zy^{*}x\bigr),
+$$
+conjugate-linear in the middle slot.</p>
+<p><strong>The two are different, and the difference is the conjugation.</strong> The first is complex-bilinear and belongs to the Jordan algebra; the second is sesquilinear and belongs to the normed theory. $\mathbb{B}$ with the second is a <strong>JB*-triple</strong>, which is the general statement for a C*-algebra, and the triple is the object on which the state-space geometry of the corpus is written: the tripotents are the idempotents, the rank is two, and the two rank-one tripotents of a complete family are the two orthogonal pure states.</p>
+<p><strong>The quadratic representation closes the circle.</strong> $U_{x}y=2x\bullet(x\bullet y)-x^{2}\bullet y$ is $xyx$ on both products, verified on one hundred pairs, so the operator that the Jordan theory calls quadratic and the operator that the display calls conjugation are the same operator. That identity is what makes the congruence of the previous sections a positivity-preserving map and not merely a linear map.</p>
+<h2 id="the-light-cone-is-the-zero-set-of-the-determinant">The Light Cone Is the Zero Set of the Determinant</h2>
+<p>The determinant is $\langle\tilde Q\rangle_{\natural}$ on the whole algebra, and its zero set is the zero-divisor cone $\mathcal{Z}$ of <em>The Light Cone as the Biquaternion Zero-Divisor Cone</em>. The Jordan reading adds the relation to the cone of squares.</p>
+<p><strong>Proposition.</strong> On the material sector, $\tilde Q\in\mathbb{B}_{\Phi}$ is null, $\langle\tilde Q\rangle_{\natural}=0$, if and only if $-i\tilde Q$ lies on the boundary of $C$ or on the boundary of $-C$.</p>
+<p><em>Proof.</em> Write $\tilde Q=iq'_te_t+\vec q$ with $q'_t$ and $\vec q$ real, and put $\tilde X=-i\tilde Q=q'_te_t-i\vec q$, which is Hermitian. Then $\langle\tilde Q\rangle_{\natural}=-q'^{2}_{t}+\lvert\vec q\rvert^{2}$ and $\tilde X$ has scalar part $q'_t$ and vector part $-\vec q$, so the vanishing is $\lvert q'_t\rvert=\lvert\vec q\rvert$, which is the boundary condition. Verified on one hundred null elements and on one hundred boundary elements, with no failure in either direction.</p>
+<p><strong>The statement in one line.</strong> The light cone is
+$$
+\mathcal{Z}\cap\mathbb{B}_{\Phi}=i\bigl(\partial C\cup\partial(-C)\bigr),
+$$
+the image of the two nappes of the boundary of the Lorentz cone under the multiplication by $i$ that exchanges the two sectors.</p>
+<p><strong>Two cautions.</strong> The identity is a statement about $\mathbb{B}_{\Phi}$ and not about $\mathbb{B}_{\Psi}$, and the $i$ is the exchange between them: without it the sentence relates a cone in one subspace to a cone in the other. And $\partial C$ is one nappe, so the past light cone needs the second term. The zero set of the determinant is symmetric under $\tilde Q\mapsto-\tilde Q$ and the cone of squares is not, which is why the two nappes appear.</p>
+<h2 id="the-three-companions">The Three Companions</h2>
+<p>The other three symmetrisations fail the Jordan identity, with defects of dimension one, one and four, as <em>The Jordan Structure of the Symmetric Quaternionic Product</em>, <em>The Jordan Structure of the Symmetric Plain Sesquilinear Product</em> and <em>The Jordan Structure of the Symmetric Quaternionic Sesquilinear Product</em> establish. A JB-algebra is a Jordan algebra, so none of the three carries a JB-structure.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\bullet$</th>
+<th>$\bullet_{\natural}$</th>
+<th>$\bullet_{*}$</th>
+<th>$\bullet_{\natural*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jordan identity</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>defect of the identity</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>image</td>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{R}e_t$</td>
+<td>$\mathbb{R}e_t$</td>
+<td>$\mathbb{B}$</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>$e_t$</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>cone of squares in $\mathbb{B}_{\Psi}$</td>
+<td>$t\geq\lvert\vec s\rvert$</td>
+<td>$\mathbb{R}e_t$</td>
+<td>$\mathbb{R}_{\geq0}e_t$</td>
+<td>$\mathbb{R}e_t$</td>
+</tr>
+<tr>
+<td>JB-algebra</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two columns with a central image are forms and not algebras.</strong> $\bullet_{\natural}$ and $\bullet_{*}$ take values in a one-dimensional space, so they are scalar-valued products, and a scalar-valued product cannot be a Jordan algebra of the space: the square of an element is a scalar and the Jordan identity is not even formulable on the image. The corpus records the same fact as the collapse of the cone of squares to a ray.</p>
+<p><strong>The fourth column is not central and is still not a Jordan algebra.</strong> $\bullet_{\natural*}$ has the whole algebra as image and no unit, and its defect of dimension four is the largest of the four. It is the column that shows the identity to be a genuine condition and not a consequence of having a large image.</p>
+<h2 id="what-the-identification-buys">What the Identification Buys</h2>
+<p><strong>The classification, without a new check.</strong> A finite-dimensional JB-algebra is a formally real Jordan algebra, and the classification of those is a theorem. The biquaternion block occupies one entry of it, of dimension four and degree two, and nothing else of that dimension and degree exists. The consequence is that a question about the cone, the order or the states of $\mathbb{B}_{\Psi}$ is a question about $H_2(\mathbb{C})$, and the answer is in the literature.</p>
+<p><strong>The order.</strong> The three objects of the order — the cone, the order unit, the order-unit norm — are one object read three ways, and the corpus already uses two of the three without naming them, in the effect interval and the trace-one slice of the physics corpus.</p>
+<p><strong>The rigidity of the causal maps.</strong> The result of <em>Causality and the Light Cone as an Information Barrier in Biquaternionic Form</em>, that a causal bijection of Minkowski space is a Lorentz map composed with a translation and a positive dilation, is the automorphism theorem for a symmetric cone. The cone's structure group is the congruence group of the previous section, and the theorem that a cone-preserving bijection is in that group is the Koecher–Vinberg statement. The physics article proves the result directly; the Jordan reading supplies the reason it holds and the classification of the maps.</p>
+<p><strong>The states and the Born weight.</strong> A state is a positive functional normalised at the order unit, and a pure state is an extreme point. Both sentences are theorems here and definitions in the physics corpus, and the identification of the two vocabularies is the content of the two sections above.</p>
+<p><strong>The step of the quadratic map.</strong> <em>The Quadratic Map and the Singular Sets</em> observes that the differential of the square is an anticommutator and that no one-parameter group has it as a time-one map. The Jordan identity gives the positive statement beside the negative one: $[L(\tilde Q),L(\tilde Q^{2})]=0$, so the linearisations of all iterates at a fixed element commute and are simultaneously diagonalisable. The step has no generator, and it has a family of commuting operators, which is what stands in place of a generator.</p>
+<h2 id="what-the-identification-does-not-buy">What the Identification Does Not Buy</h2>
+<p><strong>No formal reality for $\mathbb{B}$.</strong> The algebra $\mathbb{B}$ contains nilpotents, so a sum of squares can vanish with nonzero terms, and no cone of squares of the whole algebra is pointed. Only $\mathbb{B}_{\Psi}$ is formally real. Every statement of this article about a cone is a statement about the Hermitian subspace.</p>
+<p><strong>No dynamics.</strong> A JB-algebra is an order and a norm. It supplies no time, no generator and no evolution, and nothing above reads one.</p>
+<p><strong>No fifth form.</strong> The order-unit norm is a norm and not a form; it is not a bilinear pairing and it has no polarisation. The count of four forms stands.</p>
+<p><strong>No claim about the other symmetrisations.</strong> The three companions are excluded by their defects, and the exclusion is the whole of what this article says about them.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian subspace $\mathbb{B}_{\Psi}$ with the symmetrised plain product is the Jordan algebra $H_2(\mathbb{C})$, equivalently the spin factor $JSpin_3$: simple, of degree two, special, of dimension four. Its product is $(te_t+i\vec s)\bullet(ue_t+i\vec v)=(tu+\vec s\cdot\vec v)e_t+i(t\vec v+u\vec s)$, its square is $(t^{2}+\lvert\vec s\rvert^{2})e_t+2it\vec s$, its spectrum is $t\pm\lvert\vec s\rvert$, and its determinant is the quaternionic norm $N$.</p>
+<p>The order unit is $e_t$, the cone of squares is the Lorentz cone $t\geq\lvert\vec s\rvert$, and the order-unit norm is $\lvert t\rvert+\lvert\vec s\rvert$, which is the operator norm of the matrix display and is not the corpus's Euclidean norm $\sqrt H$. The cone is self-dual for the trace form and homogeneous under the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, hence symmetric.</p>
+<p>The three JB-algebra axioms hold, so $\mathbb{B}_{\Psi}$ is a JB-algebra, and $\mathbb{B}$ with the star and the operator norm is a JB*-algebra. The Euclidean norm is not a JB*-norm, and the axiom fails at $e_t+i\vec u$ with $\lvert\vec u\rvert=1$. The states are the density matrices, the pure states are the rank-one idempotents $\tfrac12(e_t+i\vec u)$ on the sphere, and the defect of a candidate idempotent is the central scalar $\tfrac14(\lvert\vec u\rvert^{2}-1)e_t$.</p>
+<p>The light cone is the zero set of the determinant on the material sector, and it is the image under multiplication by $i$ of the two nappes of the boundary of the cone of squares. The three other symmetrisations are not Jordan algebras, so they carry no JB-structure, and the count of JB-algebras among the four symmetrisations is the count of Lie algebras among the four antisymmetrisations: one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>the Hermitian subspace, $te_t+i\vec s$ with $t,\vec s$ real</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>the anti-Hermitian subspace, the material sector, $iq'_te_t+\vec q$</td>
+</tr>
+<tr>
+<td>$\tilde Q_1\bullet\tilde Q_2$</td>
+<td>the symmetric plain product, the Jordan product</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the cone of squares, the Lorentz cone $t\geq\lvert\vec s\rvert$</td>
+</tr>
+<tr>
+<td>$\lVert\cdot\rVert_{u}$</td>
+<td>the order-unit norm of the order unit $e_t$, equal to $\lvert t\rvert+\lvert\vec s\rvert$</td>
+</tr>
+<tr>
+<td>$\lVert\cdot\rVert_{\mathrm{op}}$</td>
+<td>the operator norm of the matrix display, equal on $\mathbb{B}_{\Psi}$ to the order-unit norm</td>
+</tr>
+<tr>
+<td>$\sqrt{H}$</td>
+<td>the corpus's Euclidean norm, not a JB-norm</td>
+</tr>
+<tr>
+<td>$N=\langle\cdot\rangle_{\natural}$</td>
+<td>the determinant of the Jordan algebra</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{*}$</td>
+<td>the trace form on $\mathbb{B}_{\Psi}$, half the trace pairing</td>
+</tr>
+<tr>
+<td>$U_{\tilde Q}$</td>
+<td>the quadratic representation, $U_{\tilde Q}\tilde P=\tilde Q\tilde P\tilde Q$</td>
+</tr>
+<tr>
+<td>$\{x,y,z\}$</td>
+<td>the Jordan triple product, complex-bilinear</td>
+</tr>
+<tr>
+<td>$\{x,y,z\}_{\mathrm{C}^{*}}$</td>
+<td>the C*-triple product, conjugate-linear in the middle slot</td>
+</tr>
+<tr>
+<td>$\tilde\Pi=\tfrac12(e_t+i\vec u)$</td>
+<td>a rank-one idempotent, a pure state at $\lvert\vec u\rvert=1$</td>
+</tr>
+<tr>
+<td>$H_2(\mathbb{C})\cong JSpin_3$</td>
+<td>the two names of the algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-jordan-structure-of-the-symmetric-plain-product.html">The Jordan Structure of the Symmetric Plain Product</a>, for the identity, the Peirce theory and the quadratic representation of the algebra read algebraically.</li>
+<li><a href="jordan-algebras-and-the-positive-cone.html">Jordan Algebras and the Positive Cone</a>, for the cone, the order unit, the order-unit norm and the JB-algebras in general.</li>
+<li><a href="jb-star-algebras-and-the-gelfand-naimark-theorem.html">JB*-Algebras and the Gelfand–Naimark Theorem</a>, for the complex class and the representation theorem.</li>
+<li><a href="spin-factors-and-the-clifford-envelope-with-inner-conjugation.html">Spin Factors and the Clifford Envelope with Inner Conjugation</a>, for $H_2(D)\cong JSpin_{1+\dim_{\mathbb{R}}D}$ and the envelope $M_2(\mathbb{C})=\mathbb{B}$.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the four forms, which are not the order-unit norm.</li>
+<li><a href="the-hermitian-jordan-algebra.html">The Hermitian Jordan Algebra</a>, for the symmetrisation of a sesqualgebra, which is the general construction behind the closure of $\mathbb{B}_{\Psi}$.</li>
+<li><a href="../articles_physics/the-light-cone-as-the-biquaternion-zero-divisor-cone.html">The Light Cone as the Biquaternion Zero-Divisor Cone</a>, for the identification of the null set with the zero divisors, which the determinant reproduces.</li>
+<li><a href="../articles_physics/states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for the state space, the effect interval and the Born pairing read physically.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
