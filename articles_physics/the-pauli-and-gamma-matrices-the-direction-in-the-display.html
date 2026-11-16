@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pauli and Gamma Matrices: the Direction in the Display — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-pauli-and-gamma-matrices-the-direction-in-the-display"><strong>The Pauli and Gamma Matrices: the Direction in the Display</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the two displays the literature uses: the Pauli pair and the gamma frame.</strong> The Pauli pair is the $2\times2$ image and its $4\times4$ tensor lift, built in the Peirce frame of a root; the gamma frame is the five generators of the complexified Dirac algebra, written inside $M_4(\mathbb{C})$.</p>
+<p><strong>Both are frames, and both print a direction.</strong> The entry states what each display shows, what each one costs, and how the cost is measured. The measurement is a test and not an opinion: conjugate the statement and re-read it. What returns itself is a fact about the algebra; what does not is a fact about the page.</p>
+<p><strong>The one idea that governs the entry is that the element is one and the pictures are many.</strong> The doubling of the size, the block structure, the diagonal member and the gamma list are all consequences of one choice of frame, and none of them is a second object.</p>
+<p><strong>Boundaries.</strong> The root, the Peirce frame, the tensor product, the six roots that keep the sparsity, the compression at size two, the Pauli correspondence, the spectral projectors and the adjugate are <em>$M_4(\mathbb{C})$ Pauli Representation</em> and <em>$M_2(\mathbb{C})$ Pauli Representation</em>; the two families in a general frame and the change of frame are <em>Families of Matrix Representations</em>; the gamma frame, its non-canonicity, the Clifford and pin groups and the legacy dictionary are <em>The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</em> and <em>The Pin Group of the Gamma Frame</em>. The display that chooses no direction is <em>The AXF Matrices</em>, and the argument for preferring it is <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>. No dynamics, no mass value and no quantum postulate appears below.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mathematical Content</th>
+<th>Source Mathematical Article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the root $\vec\Xi=i\vec e_z$, the idempotents and the Peirce basis, the left and right families, the stitch as a pure swap, the switch to the axis-free display, the sixteen products, which roots give a Peirce frame</td>
+<td><a href="../articles_maths/m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a></td>
+</tr>
+<tr>
+<td>the compression to size two, the two orders, the images of the four units, the Pauli correspondence, the spectral projectors, the diagonalising matrix, the adjugate and the inverse</td>
+<td><a href="../articles_maths/m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a></td>
+</tr>
+<tr>
+<td>the two families in a general frame, the three composition laws, the $2\times2$ family and why it has no second side</td>
+<td><a href="../articles_maths/families-of-matrix-representations.html">Families of Matrix Representations</a></td>
+</tr>
+<tr>
+<td>the five frame operators, their identity with five of the sixteen basis operators, the non-canonicity of the frame, the Clifford group and the legacy gamma formulation</td>
+<td><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a></td>
+</tr>
+<tr>
+<td>the unit vectors of the frame, the finite group, the lift and the double cover</td>
+<td><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are the entry's own order.</strong> The Peirce frame comes first, then its compression, then the general theory, then the gamma frame built on the same sixteen operators.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<h3 id="the-root-and-the-peirce-frame">The Root and the Peirce Frame</h3>
+<p><strong>A root of the unit fixes a frame.</strong> For $\vec Z=\sum_ka_k\vec e_k$ with</p>
+<p>$$
+\vec Z^{2}=-\bigl(a_x^2+a_y^2+a_z^2\bigr)e_t=e_t ,
+$$</p>
+<p>the condition is $a_x^2+a_y^2+a_z^2=-1$, one complex equation in three unknowns: a family of real dimension four. The root gives the idempotent pair, and the pair gives a frame.</p>
+<p><strong>The standard root is $\vec\Xi=i\vec e_z$,</strong> with</p>
+<p>$$
+\tilde\Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),\qquad
+\vec\Upsilon_\pm=\tfrac12\bigl(i\vec e_x\pm\vec e_y\bigr),
+$$</p>
+<p>and the order $\mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$.</p>
+<p><strong>In that frame the sixteen matrices are monomial, unitary, of determinant one, with entries in $\mathbb{Z}[i]$.</strong> The display is a tensor product,</p>
+<p>$$
+L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q),\qquad R(\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T}\otimes\mathrm I_2 ,
+$$</p>
+<p>the idempotents are the first and fourth frame vectors, and the stitch is a pure swap, $R=\mathsf P L^{\mathsf T}\mathsf P$.</p>
+<p><strong>Only the six coordinate roots keep the sparsity.</strong> The roots $\pm i\vec e_x,\pm i\vec e_y,\pm i\vec e_z$ give one frame up to cyclic relabelling and the exchange of the two idempotents; a root with two nonzero coordinates densifies every array.</p>
+<h3 id="the-doubling-rule">The Doubling Rule</h3>
+<p><strong>At size two the same data appear at half the size.</strong></p>
+<p>$$
+\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=N,\qquad \operatorname{spec}=\{Q_t+iB,\ Q_t-iB\},\qquad \operatorname{rank}\in\{0,1,2\} .
+$$</p>
+<p><strong>The larger size is the smaller one written twice.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>size two</th>
+<th>size four</th>
+<th>rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>trace</td>
+<td>$2Q_t$</td>
+<td>$4Q_t$</td>
+<td>double</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$N$</td>
+<td>$N^2$</td>
+<td>square</td>
+</tr>
+<tr>
+<td>characteristic polynomial</td>
+<td>degree $2$</td>
+<td>its square</td>
+<td>square</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\lambda_\pm$ once each</td>
+<td>each twice</td>
+<td>repeat</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$r$</td>
+<td>$2r$</td>
+<td>double</td>
+</tr>
+<tr>
+<td>minimal polynomial</td>
+<td>degree $2$</td>
+<td>degree $2$</td>
+<td>unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the exception.</strong> The characteristic polynomial squares and the minimal polynomial does not, because the square of a minimal polynomial is not minimal. The element has two eigenmodes and not four.</p>
+<h3 id="the-pauli-correspondence">The Pauli Correspondence</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>unit</th>
+<th>matrix</th>
+<th>Hermitian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$\mathrm I_2$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\vec e_\eta$</td>
+<td>$-i\sigma_\eta$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$i\vec e_\eta$</td>
+<td>$\sigma_\eta$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p>$$
+\boxed{\;\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr)\;}
+$$</p>
+<p><strong>Hermitian conjugation becomes the conjugate transpose,</strong> $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, so the fixed space of ${}^{*}$ is carried onto the Hermitian matrices.</p>
+<p><strong>There is no second side at size two.</strong> The right action there is the ordinary matrix product $\mathsf A\mapsto\mathsf A\,\mathsf M_2(\tilde Q)$, which is not left multiplication by a matrix unless $\mathsf M_2(\tilde Q)$ is scalar.</p>
+<h3 id="the-gamma-frame">The Gamma Frame</h3>
+<p><strong>The five operators are five of the sixteen basis operators.</strong> In the coefficient frame of the method article,</p>
+<p>$$
+\gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
+$$</p>
+<p><strong>They satisfy the Clifford relations, with the sign vector $\varepsilon=(1,-1,-1,-1)$.</strong></p>
+<p>$$
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm I_4,\qquad
+(\gamma_k)^2=-\mathrm I_4,\qquad
+\gamma_5^2=\mathrm I_4,\qquad
+\{\gamma_\mu,\gamma_5\}=0,
+$$</p>
+<p>$$
+\operatorname{tr}(\gamma_\mu\gamma_\nu)=4\varepsilon_\mu\delta_{\mu\nu},\qquad
+\operatorname{tr}(\gamma_5\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)=-4i\,\epsilon_{\mu\nu\rho\sigma} .
+$$</p>
+<p><strong>The frame is not canonical.</strong> If the generators satisfy the anticommutation relations and $S\in GL_4(\mathbb{C})$, then $S\gamma_\mu S^{-1}$ satisfy the same relations, so the frames form a homogeneous space under $GL_4(\mathbb{C})$, and the subgroup that preserves the span of the generators is the Clifford group, which acts on the frame by Lorentz transformations. The gamma set is one frame among a bundle of them.</p>
+<h3 id="the-switch-between-the-two-displays">The Switch Between the Two Displays</h3>
+<p><strong>One matrix carries the Peirce frame onto the axis-free one.</strong></p>
+<p>$$
+C_{\Pi}=\bigl(\tilde\Pi_+\ \ \vec\Upsilon_+\ \ \vec\Upsilon_-\ \ \tilde\Pi_-\bigr)
+=\frac12
+\begin{pmatrix}
+1&0&0&1\\
+0&i&i&0\\
+0&1&-1&0\\
+i&0&0&-i
+\end{pmatrix},
+\qquad
+L_{\mathrm{pau}}(\tilde Q)=C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)\,C_{\Pi},
+$$</p>
+<p>with $\det C_{\Pi}=-\tfrac14$ and $C_{\Pi}^{-1}=2C_{\Pi}^{\dagger}$. The switch is two independent $2\times2$ Hadamard blocks and it mixes no direction: one block joins $\{e_t,\vec e_z\}$ to $\{\tilde\Pi_+,\tilde\Pi_-\}$, the other joins $\{\vec e_x,\vec e_y\}$ to $\{\vec\Upsilon_+,\vec\Upsilon_-\}$.</p>
+<p><strong>Every invariant survives the change.</strong> Products, anticommutators, traces, determinants, spectra, ranks and the eigenvalue count are the same on both sides, which is why the correspondence between two articles written in different displays is a sentence and not a computation.</p>
+<h2 id="the-direction-in-the-display">The Direction in the Display</h2>
+<h3 id="why-the-third-matrix-is-the-diagonal-one">Why the Third Matrix Is the Diagonal One</h3>
+<p><strong>The Pauli matrices are</strong></p>
+<p>$$
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+\sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$</p>
+<p><strong>Two of them carry $i$ or carry zeros on the diagonal; the third is real and diagonal.</strong> That difference is not a difference between three operators. It is a difference between three positions in a list, produced by the order in which the list was built: the root is $\vec\Xi=i\vec e_z$, the idempotents are built from $\vec e_z$, and $\sigma_3$ is the matrix of the unit the root was made from. The direction is in the frame, and the array reports it.</p>
+<h3 id="the-three-spatial-units-have-three-different-jobs">The Three Spatial Units Have Three Different Jobs</h3>
+<p><strong>In the gamma set the three spatial units appear in three shapes.</strong> $\vec e_x$ sits in the left slot of $\gamma_0$, $\vec e_z$ in the right slot of $\gamma_3$ and $\gamma_5$, and $\vec e_y$ in the right slot of three of them, while $\gamma_1$ and $\gamma_2$ carry two of them at once. The three are one orbit under the rotations of the algebra, and the display shows them as three unrelated objects.</p>
+<p><strong>That is the cost, stated exactly.</strong> The orbit is a statement of physics; the page shows one member of it and two others, and a reader who wants to use the symmetry must first discover that the symmetry exists. The display is what conceals it.</p>
+<h3 id="the-relabelling-test">The Relabelling Test</h3>
+<p><strong>The test is mechanical.</strong> Apply the automorphism that exchanges two spatial units, re-read the statement, and compare.</p>
+<p>$$
+\vec e_\eta^{2}=-e_t
+$$</p>
+<p>returns itself, with the index renamed: it is a fact about $\mathbb{B}$.</p>
+<p>$$
+\sigma_3=\operatorname{diag}(1,-1)
+$$</p>
+<p>does not return itself: under the exchange of $\vec e_z$ with $\vec e_x$ the diagonal member becomes the first one, and the array is not the array that was printed. It is a fact about the page.</p>
+<p><strong>Both are printed as equalities, in the same font, with no marker.</strong> A reader who wants to know which kind of statement is in front of him has nothing to consult, and a writer who copies the second into a rotated context produces a formula that is wrong without being detectable as wrong.</p>
+<h3 id="the-defect-is-the-unmarked-direction">The Defect Is the Unmarked Direction</h3>
+<p><strong>The defect is not that the display has a direction.</strong> A frame is legitimate whenever the physics supplies one: a Stern–Gerlach apparatus has an axis, a beam has an axis, a background field breaks isotropy, and in each case the frame is a datum and the correct practice is to name it and use it.</p>
+<p><strong>The defect is that the direction is unmarked.</strong> A sentence $\sigma_3[\vec u]$, with $\vec u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.</p>
+<p><strong>The signature is the model of the other case.</strong> Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.</p>
+<h3 id="what-is-not-claimed">What Is Not Claimed</h3>
+<p><strong>No computation done in the Pauli or gamma display is wrong.</strong> The Clifford relations hold in every display, every trace and every determinant is invariant, and an amplitude computed with gammas is correct. The Dirac equation written with the five gammas is a correct equation, and it is the equation of the literature.</p>
+<p><strong>The claim is about the page.</strong> A fundamental equation should not be written in a form that privileges a direction the physical reality does not contain, because the privilege then travels with the formula and cannot be distinguished from the physics. The remedy is not a correction of any result; it is a rule of writing, and the display that obeys it is <em>The AXF Matrices</em>.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<h3 id="i2i-one-element-two-pictures-and-the-doubling-is-not-a-second-particle">I.2.i — One Element, Two Pictures, and the Doubling Is Not a Second Particle</h3>
+<p><strong>Read:</strong> the $4\times4$ regular image is the $2\times2$ image written twice, and the two copies are the two dimensions of the module.</p>
+<p><strong>The tensor display makes the doubling visible as a block structure.</strong> $L=\mathrm I_2\otimes\mathsf M_2$ and $R=\mathsf M_2^{\mathsf T}\otimes\mathrm I_2$: the first factor of each tensor is the copy index, the second is the element. The matrix is a two-by-two array of blocks, each block a copy of $\mathsf M_2(\tilde Q)$.</p>
+<p><strong>The consequences are bookkeeping and they are not optional.</strong> The trace doubles because there are two blocks. The determinant squares because it is multiplicative over the blocks. The spectrum repeats because each block has the same two eigenvalues. The rank doubles because both blocks have the same rank. None of these is a physical multiplicity.</p>
+<p><strong>The boundary.</strong> The copy index is not a chirality, not a generation and not a particle label. The two copies are the two columns of the module, and the two minimal left ideals they correspond to are isomorphic, so nothing in the algebra distinguishes them. A reading that treats the two copies as two species is reading the display and not the algebra.</p>
+<h3 id="i2j-the-qubit-is-the-math86-image-and-it-has-one-side">I.2.j — The Qubit Is the $2\times2$ Image, and It Has One Side</h3>
+<p><strong>Read:</strong> the compressed image is the state space of a two-level system, and the regular image is the same object with its copy index exposed.</p>
+<p><strong>At size two the picture is complete and it has one side.</strong> The carrier is $M_2(\mathbb{C})$ itself: the element acts on a two-component column, and the column is a spinor. The right action there is an ordinary matrix product, and it is not the left multiplication by a second matrix. So the element yields one matrix, and the "before" and "after" pictures collapse into one.</p>
+<p><strong>The transposition and the conjugation are the same operation at this size.</strong> The conjugating matrix is $\varepsilon=i\sigma_2$, with $\varepsilon^{\mathsf T}=-\varepsilon$ and $\varepsilon^{2}=-\mathrm I_2$, and</p>
+<p>$$
+\mathsf M_2(\tilde Q^{\natural})=\varepsilon\,\mathsf M_2(\tilde Q)^{\mathsf T}\varepsilon^{-1} .
+$$</p>
+<p>The transpose returns the conjugate element, not a second side. At size four the two operations separate, and that separation is what the regular picture buys.</p>
+<p><strong>The boundary.</strong> The $2\times2$ image is a model of the module and not of the algebra's action on itself. Anything that needs the algebra as a carrier — a commutator of two multiplications, a two-sided operator, the Peirce corners — has no home at this size.</p>
+<h3 id="i2k-left-multiplication-carries-right-multiplication-couples-the-mass-is-a-right-action">I.2.k — Left Multiplication Carries, Right Multiplication Couples: the Mass Is a Right Action</h3>
+<p><strong>Read:</strong> the two families are the two things an element can do to another element. A left multiplication carries what it acts on; a right multiplication changes its internal index.</p>
+<p><strong>The reason is one line of the composition laws.</strong> $L(\tilde Q_2\tilde Q)=L(\tilde Q_2)L(\tilde Q)$ is associativity read on the left, so left multiplication composes forward. $R(\tilde Q_2\tilde Q)=R(\tilde Q)R(\tilde Q_2)$ carries the product backwards, so right multiplication is a map on the other side of the argument.</p>
+<p><strong>The mass is a right multiplication, and the algebra says why.</strong> Left multiplication preserves the copy index, so a term that couples the two copies cannot be a left action. The coupling is the right multiplication by the column swap</p>
+<p>$$
+J=i\vec e_x,\qquad J^{2}=e_t,\qquad \mathsf M_2(J)=\sigma_1,\qquad R_J(\tilde Q)=\tilde QJ ,
+$$</p>
+<p>and $R_J$ exchanges the two columns with $R_J^{2}=\mathrm I$. The coupling element has to be invertible, because the mass is a bijection between the copies: one coefficient in each direction. A nilpotent cannot serve. For $\vec\Upsilon_x$ the matrix is $E_{21}$, the right multiplication carries the first column into the second and annihilates the second, and the map has rank two and no inverse. That is a one-way copy flip, not a mass.</p>
+<p><strong>The boundary.</strong> The statement is structural: it says which kind of action can couple the two copies, and it says that the coupling element must be off the cone. It does not give the coupling a value, and it does not produce a mass spectrum. The magnitude of the mass is an input, and the algebra is scale-free.</p>
+<h3 id="i2l-the-factor-math100-separates-the-generators-from-the-observables">I.2.l — The Factor $i$ Separates the Generators from the Observables</h3>
+<p><strong>Read:</strong> the algebra's own basis maps to minus $i$ times the Pauli matrices, and the Hermitian basis maps to the Pauli matrices. The two rows differ by one factor and by nothing else.</p>
+<p>$$
+\vec e_\eta\longmapsto-i\sigma_\eta\ \ (\text{anti-Hermitian, generates}),\qquad i\vec e_\eta\longmapsto\sigma_\eta\ \ (\text{Hermitian, is measured}) .
+$$</p>
+<p><strong>The factor is forced, and the sign is forced.</strong> A real $2\times2$ matrix of square $-\mathrm I_2$ is a complex structure on $\mathbb{R}^2$; three of them, anticommuting, are the quaternionic structure. The algebra whose vectors square to $-e_t$ needs the coefficient field to supply the $i$ that turns $\sigma_\eta$ into $-i\sigma_\eta$. The alternative assignment $\vec e_\eta\mapsto-\mathsf M_2(\vec e_\eta)$ keeps the squares and fails the products.</p>
+<p><strong>So $i$ is not bookkeeping.</strong> It is the statement that the three directions of the algebra are generators of rotations and not observables, and that the same three directions multiplied by $i$ are observables and not generators. The complexification is what allows one algebra to hold both.</p>
+<p><strong>The boundary.</strong> The argument explains why the factor is present in the model. It does not derive the complex numbers from anything physical, and it does not say that a measured quantity must be Hermitian; that is a separate postulate which the image makes convenient.</p>
+<h3 id="i2m-the-doubling-is-where-the-factors-of-two-live">I.2.m — The Doubling Is Where the Factors of Two Live</h3>
+<p><strong>Read:</strong> every quantity of the smaller picture changes in one of three ways at the larger size, and the three ways are fixed by the block structure.</p>
+<p><strong>Additive quantities double, multiplicative ones square, the spectrum repeats, the minimal polynomial does not change.</strong> The first four follow from the block form. The last does not, and it is the one that catches errors: the characteristic polynomial squares and the minimal polynomial stays at degree two, because the square of a minimal polynomial is not minimal.</p>
+<p><strong>The operator picture makes it worse.</strong> The two-sided operator $X\mapsto\tilde QX\tilde Q^{*}$ is quadratic in the element, so it double-counts the parameters: its trace is $4\lvert Q_t\rvert^2$ and its determinant is $\lvert N\rvert^4$. Only the zero sets of the three determinants agree.</p>
+<p><strong>The boundary.</strong> The rule is bookkeeping and not physics. Its role is diagnostic: when a factor of two appears in an argument, the first question is which picture the argument is in.</p>
+<h3 id="i2n-the-element-stores-half-the-rapidity">I.2.n — The Element Stores Half the Rapidity</h3>
+<p><strong>Read:</strong> a boost rotor of rapidity $\eta$ has a matrix with eigenvalues $e^{\pm\eta/2}$, and its two-sided operator has eigenvalues $e^{\eta},1,1,e^{-\eta}$.</p>
+<p>$$
+\tilde B_\eta=\cosh\tfrac{\eta}{2}\,e_t+\sinh\tfrac{\eta}{2}\,i\vec e_z,\qquad \mathsf M_2(\tilde B_\eta)=\operatorname{diag}\bigl(e^{\eta/2},e^{-\eta/2}\bigr) .
+$$</p>
+<p><strong>The half is the double cover, read on the spectrum.</strong> The element acts on the spinor, so it carries half of the rapidity; the congruence acts on the four-vector, so it carries the whole of it. The two middle eigenvalues of the operator are the transverse directions, which the boost fixes.</p>
+<p><strong>The same factor appears for a rotation, with a sign that is observable.</strong> For a rotation of angle $\theta$ the element has eigenvalues $e^{\pm i\theta/2}$ and the operator has $e^{\pm i\theta}$ beside two ones. At $\theta=2\pi$ the element eigenvalues are $-1$ and the operator eigenvalues are $1$: the spinor returns with a sign and the vector returns unchanged.</p>
+<p><strong>The boundary.</strong> The reading needs a diagonalisable element and a pure boost or rotation. On the cone one eigenvalue vanishes, on its trace-zero part the two collide at zero, and the reading stops. For a general Lorentz element no single rapidity exists, and the polar decomposition separates the boost from the rotation.</p>
+<h3 id="i2o-the-central-phase-is-the-fibre-and-the-operator-cannot-see-it">I.2.o — The Central Phase Is the Fibre, and the Operator Cannot See It</h3>
+<p><strong>Read:</strong> the central element $e^{i\theta}e_t$ maps to the scalar matrix $e^{i\theta}\mathrm I_2$, which multiplies the element, multiplies the determinant by $e^{2i\theta}$, multiplies a state by $e^{i\theta}$, and acts trivially in the two-sided operator.</p>
+<p><strong>A state is a ray and not a vector.</strong> The scalar matrix does not preserve the trace-one slice, because it multiplies it by a phase; so the phase is not a property of the state and the state is an equivalence class. The map $\varsigma\mapsto\varsigma\varsigma^{\dagger}$ from unit spinors to rank-one Hermitian matrices of trace one has the phase circle as its fibre, and the bundle</p>
+<p>$$
+U(1)\hookrightarrow S^{3}\longrightarrow S^{2}
+$$</p>
+<p>is the Hopf bundle.</p>
+<p><strong>The element picture sees the phase and the operator picture does not.</strong> This is why the polar word carries a phase and the two-sided operator does not, and it is why a phase cannot be an observable: no operator of the algebra's own action records it.</p>
+<p><strong>The boundary.</strong> The fibre of the ray map and the stabiliser of an axis are different circles of $U(2)$ that meet only in $\{\pm\mathrm I_2\}$. They must not be identified fibre by fibre. And the holonomy of the Hopf connection is not derived here; it belongs to the entry on the gauge bundle.</p>
+<h3 id="i2p-the-peirce-frame-is-a-choice-of-axis-and-the-algebra-does-not-make-it">I.2.p — The Peirce Frame Is a Choice of Axis, and the Algebra Does Not Make It</h3>
+<p><strong>Read:</strong> a frame with the monomial properties exists for every root of the unit, and there is a four-real-parameter family of roots.</p>
+<p><strong>The root is a pair of projectors, and the pair is a measurement axis.</strong> A root $\vec Z$ gives the idempotents $\tfrac12(e_t\pm\vec Z)$, and the idempotents are the first and fourth frame vectors. So the frame is a measurement axis together with the two nilpotent directions that complete it. Conversely every frame containing two orthogonal idempotents that sum to $e_t$ arises this way, so there is nothing else a Peirce frame can be.</p>
+<p><strong>Sparsity belongs to six roots and not to the algebra.</strong> Only $\pm i\vec e_x,\pm i\vec e_y,\pm i\vec e_z$ keep the sixteen arrays monomial with entries in $\mathbb{Z}[i]$, and those six give one frame up to a cyclic relabelling and the exchange of the two idempotents. A root with two nonzero coordinates has an idempotent with three nonzero coordinates, so the change matrix is not monomial and the sixteen arrays lose the monomial form.</p>
+<p><strong>The consequence is a rule of method.</strong> The standard form of the display is a convention about the axis, and the axis is chosen by the conventions article and not by the algebra. Any result that changes when the root changes is a result about the frame.</p>
+<p><strong>The boundary.</strong> The sparsity is a property of the display, not a symmetry of the algebra. All Peirce frames are conjugate, so no physics can depend on the choice, and the appearance of a dense array in an unusual frame is not a signal of anything.</p>
+<h3 id="i2q-every-element-carries-its-own-frame-and-the-chart-is-singular-on-the-axis">I.2.q — Every Element Carries Its Own Frame, and the Chart Is Singular on the Axis</h3>
+<p><strong>Read:</strong> a general element produces its own root, its own projectors and its own diagonalising matrix.</p>
+<p>$$
+\vec Z=-\frac{i}{B}\vec Q,\qquad \mathsf C_Q=\begin{pmatrix}B-Q_z&Q_x-iQ_y\\-Q_x-iQ_y&B-Q_z\end{pmatrix},\qquad \det\mathsf C_Q=2B(B-Q_z) .
+$$</p>
+<p><strong>The frame is not the frame of the previous reading.</strong> The Peirce frame is fixed once for the whole algebra; $\mathsf C_Q$ moves inside the element and depends on it. The first is a change of basis of the algebra, the second a change of basis adapted to one element.</p>
+<p><strong>The singularity is a coordinate artefact.</strong> The chart degenerates exactly when $B=Q_z$, which is one point of the sphere of directions. The second chart degenerates at $B=-Q_z$, and the two cannot degenerate together because $B\neq0$. So every element off the cone is covered.</p>
+<p><strong>The physical reading is that a generic element has a frame of its own and a degenerate one does not.</strong> An element with $B=0$ has coincident eigenvalues, and both charts degenerate with it, since both determinants carry the factor $B$. Its two projectors merge, no eigenbasis follows from the spectrum, and the diagonalisation carries nothing that the element did not already carry.</p>
+<p><strong>The boundary.</strong> The frame of an element is a statement about that element's spectrum and not about a measurement performed on it. Two elements with the same spectrum are not thereby in the same frame, and the diagonalising matrix is defined up to two rescalings that no measurement fixes.</p>
+<h2 id="the-limits">The Limits</h2>
+<p><strong>The entry reads displays and not the algebra.</strong> It states what each picture makes visible and what each one loses. The axis-free display, its ten properties and its uniqueness belong to <em>The AXF Matrices</em>, and the argument that the corpus should display in that basis belongs to <em>Why AXF Matrices instead of Pauli and Gamma Matrices</em>.</p>
+<p><strong>The entry does not read the spectrum.</strong> The eigenvalue pair is named because the matrix invariants carry it, and the spectral theory is the subject of its own entry.</p>
+<p><strong>Three readings are labelled and not proved.</strong> The identification of the four matrix involutions with the physical conjugations, the identification of the copy index with an internal index that a mass couples, and the naming of the phase as a fibre are conventions of the corpus with a stated reason. The algebra supplies the two sides, the two involutions and the circle; which physical name goes with which is a naming.</p>
+<p><strong>The gamma section is a dictionary and not a derivation.</strong> The five operators are identified with five of the sixteen basis operators in a particular coefficient frame, and a different normalisation of the basis operators changes the identification. Nothing in the physics depends on which five are chosen, because the frame is not canonical.</p>
+<p><strong>No factor in this entry is physical.</strong> The factors two and four are the dimensions of the spinor and the regular modules. They are exact, they are unavoidable, and they are not measurements.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The Peirce frame is built from a root of the unit; the standard root is $i\vec e_z$, and the frame gives the tensor display $L=\mathrm I_2\otimes\mathsf M_2$, $R=\mathsf M_2^{\mathsf T}\otimes\mathrm I_2$ with a pure-swap stitch.</li>
+<li>The $4\times4$ image is the $2\times2$ image written twice: additive quantities double, multiplicative ones square, the spectrum repeats, the minimal polynomial is unchanged.</li>
+<li>The $2\times2$ image is the qubit and it has one side; the second side appears only when the element acts on a carrier.</li>
+<li>Left multiplication preserves the copy index, so a mass term is a right multiplication, and the element that carries it must be invertible because the mass is a bijection.</li>
+<li>The factor $i$ in the Pauli correspondence separates the anti-Hermitian generators from the Hermitian observables.</li>
+<li>A boost stores half its rapidity in the element and the whole of it in the congruence; that factor is the double cover.</li>
+<li>The central phase is the fibre of the ray map and it acts trivially in the two-sided operator, so it is not an observable.</li>
+<li>The Peirce frame is a choice of axis; the roots form a four-parameter family and only six of them keep the sparsity.</li>
+<li>The gamma set is five of the sixteen basis operators, it satisfies the Clifford relations with the sign vector $(1,-1,-1,-1)$, and the frame is not canonical.</li>
+<li>The display prints a direction the algebra does not contain, and the relabelling test measures it: a statement that does not return itself under the exchange of two spatial units is a statement about the page.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>the compressed image in $M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)$, $R(\tilde Q)$</td>
+<td>the left and right matrices in the Peirce frame, in $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\vec Z$, $\vec\Xi$</td>
+<td>a root of the unit, $\vec Z^2=e_t$; and the standard root $i\vec e_z$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>the idempotents and the nilpotents of the root</td>
+</tr>
+<tr>
+<td>$\mathcal{P}$</td>
+<td>the Peirce order $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$</td>
+</tr>
+<tr>
+<td>$\mathsf P$</td>
+<td>the swap matrix of the stitch, $\mathsf P^2=\mathrm I_4$</td>
+</tr>
+<tr>
+<td>$\sigma_1,\sigma_2,\sigma_3$</td>
+<td>the Pauli matrices</td>
+</tr>
+<tr>
+<td>$\varepsilon=i\sigma_2$</td>
+<td>the conjugating matrix of the transpose at size two</td>
+</tr>
+<tr>
+<td>$C_{\Pi}$</td>
+<td>the switch to the axis-free frame, $\det C_{\Pi}=-\tfrac14$</td>
+</tr>
+<tr>
+<td>$\gamma_0,\gamma_1,\gamma_2,\gamma_3,\gamma_5$</td>
+<td>the five frame operators of the gamma set</td>
+</tr>
+<tr>
+<td>$\varepsilon_\mu$</td>
+<td>the sign vector $(1,-1,-1,-1)$ of the frame operators</td>
+</tr>
+<tr>
+<td>$N=\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$</td>
+<td>the quaternionic norm</td>
+</tr>
+<tr>
+<td>$\mathsf C_Q$</td>
+<td>the diagonalising matrix of the element $\tilde Q$</td>
+</tr>
+<tr>
+<td>$\rho_\pm$</td>
+<td>the spectral projectors of the element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the root, the Peirce frame, the stitch and the switch.</li>
+<li><a href="../articles_maths/m2c-pauli-representation.html">$M_2(\mathbb{C})$ Pauli Representation</a>, for the compression, the Pauli correspondence and the diagonalising matrix.</li>
+<li><a href="../articles_maths/families-of-matrix-representations.html">Families of Matrix Representations</a>, for the two families in a general frame.</li>
+<li><a href="../articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html">The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$</a>, for the five frame operators and the legacy dictionary.</li>
+<li><a href="../articles_maths/the-pin-group-of-the-gamma-frame.html">The Pin Group of the Gamma Frame</a>, for the finite group and the double cover.</li>
+<li><a href="the-axf-matrices.html">The AXF Matrices</a>, for the display that chooses no direction.</li>
+<li><a href="why-axf-matrices-instead-of-pauli-and-gamma-matrices.html">Why AXF Matrices instead of Pauli and Gamma Matrices</a>, for the argument and the migration rules.</li>
+<li><a href="idempotents-ideals-and-observables.html">Idempotents, Ideals and Observables</a>, for the roots of $+e_t$ and $-e_t$ and the Peirce corners named here.</li>
+<li><a href="the-modules-what-the-algebra-acts-on.html">The Modules: What the Algebra Acts On</a>, for the carrier the copy index belongs to.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
