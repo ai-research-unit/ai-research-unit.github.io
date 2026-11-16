@@ -252,7 +252,7 @@ $$</p>
 <td>—</td>
 </tr>
 <tr>
-<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(3,1)$</td>
+<td>$\mathfrak{so}(1,3)=\mathfrak{so}(3,1)\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$</td>
 <td>the Lorentz algebra</td>
 <td>$\mathbb{B}_V=\{Q_t=0\}$</td>
 <td>$6$</td>
@@ -346,7 +346,7 @@ $$</p>
 </table></div>
 <p>The bracket identity $[i\vec e_x,\vec e_y+i\vec e_z]=\vec e_y+i\vec e_z$ is what makes $\mathfrak{b}_0$ a Borel: the nilpotent line is the eigenspace of the semisimple generator $i\vec e_x$ with eigenvalue one.</p>
 <h2 id="table-3-lie-groups-as-sets-of-elements">Table 3 — Lie Groups as Sets of Elements</h2>
-<p>The Lorentz row is the model of the whole table: the group is a group of operators on $\mathbb{B}$ made of unit biquaternions acting two-sidedly as a Hermitian pair.</p>
+<p>The first row is the model of the whole table. The Lorentz group is a group of operators on $\mathbb{B}$ made of unit biquaternions acting two-sidedly as a Hermitian pair: the operator is $\mathrm{Hp}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ with $N(\tilde U)=1$, and it acts on the Hermitian subspace $\mathbb{B}_{\Psi}$, on which the norm is the form of signature $(1,3)$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -357,6 +357,30 @@ $$</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>$\mathbf{SO^{+}(1,3)}$</td>
+<td><strong>the Lorentz group</strong></td>
+<td><strong>the group of operators</strong> $\mathrm{Hp}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*}$ <strong>with</strong> $N(\tilde U)=1$, <strong>acting two-sidedly on</strong> $\mathbb{B}_{\Psi}$; <strong>equally</strong> $G/\{\pm e_t\}$, the two-to-one quotient of the level set</td>
+<td>operator group, quotient</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,3)\rtimes\langle\natural\rangle$</td>
+<td>the Lorentz group with one reflection adjoined</td>
+<td>$\mathrm{Hp}_{\tilde U}$ with $N(\tilde U)=1$ together with $\natural$, which on $\mathbb{B}_{\Psi}$ is $\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>two components</td>
+</tr>
+<tr>
+<td>$O(1,3)$</td>
+<td>the full Lorentz group</td>
+<td>not a group of two-sided multiplications: see the remark below the table</td>
+<td>four components</td>
+</tr>
+<tr>
+<td>$G=\mathbb{B}^{\times}_1$</td>
+<td>the group of unit-norm biquaternions</td>
+<td>$\{\tilde Q:N(\tilde Q)=1\}$; the parent of the Lorentz group, see Table 3b</td>
+<td>level set</td>
+</tr>
 <tr>
 <td>$\mathbb{B}^{\times}$</td>
 <td>the group of units</td>
@@ -389,8 +413,14 @@ $$</p>
 </tr>
 <tr>
 <td>$SL(2,\mathbb{C})$</td>
-<td>complex unimodular</td>
-<td>$\mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}$</td>
+<td><strong>the group of Lorentz rotors</strong></td>
+<td>$G$ itself, $\mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}$; every rotor is $\tilde U_b\tilde u_r$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$Sp(2,\mathbb{C})$</td>
+<td>the complex symplectic group of rank two</td>
+<td>$\{\tilde Q:\sigma_{\mathrm{tr}}(\tilde Q)\,\vec e_y\,\tilde Q=\vec e_y\}$, which is $\{N(\tilde Q)=1\}$</td>
 <td>level set</td>
 </tr>
 <tr>
@@ -414,7 +444,7 @@ $$</p>
 <tr>
 <td>$U(2)$</td>
 <td>the unitary group</td>
-<td>$\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$</td>
+<td>$\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$; not a subset of $G$, meeting it in $SU(2)$</td>
 <td>level set</td>
 </tr>
 <tr>
@@ -436,15 +466,9 @@ $$</p>
 <td>quotient</td>
 </tr>
 <tr>
-<td>$SO^{+}(1,3)$</td>
-<td>the proper orthochronous Lorentz group</td>
-<td>$\mathbb{B}^{\times}_1/\{\pm e_t\}$, and equally the group of operators $\mathrm{Hp}_{\tilde U}$ on $\mathbb{B}_{\Psi}$ with $N(\tilde U)=1$</td>
-<td>quotient, operator group</td>
-</tr>
-<tr>
 <td>$PSL(2,\mathbb{C})=PGL(2,\mathbb{C})$</td>
 <td>the complex Möbius group</td>
-<td>$\mathbb{B}^{\times}/\mathbb{C}^{\times}$, the classes of the units; the same set as $SO^{+}(1,3)$</td>
+<td>$\mathbb{B}^{\times}/\mathbb{C}^{\times}$, the classes of the units; isomorphic to $SO^{+}(1,3)$, both being $G/\{\pm e_t\}$</td>
 <td>quotient</td>
 </tr>
 <tr>
@@ -486,7 +510,7 @@ $$</p>
 <tr>
 <td>$Spin(1,3)$</td>
 <td>the spin group of $SO^{+}(1,3)$</td>
-<td>$\mathbb{B}^{\times}_1$</td>
+<td>$\mathbb{B}^{\times}_1=G$, the same group as $SL(2,\mathbb{C})$</td>
 <td>equality</td>
 </tr>
 <tr>
@@ -503,8 +527,121 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<p><strong>Why the first row is written as it is.</strong> Three facts fix it, and each is a computation. First, $\mathrm{Hp}_{\tilde U}$ is an isometry of $\mathbb{B}_{\Psi}$ whenever $N(\tilde U)=1$, because $N(\mathrm{Hp}_{\tilde U}\tilde X)=\lvert N(\tilde U)\rvert^{2}N(\tilde X)$. Second, it is a rotation of $\mathbb{B}_{\Psi}$ and not a reflection, its determinant being $+1$ on every sample. Third, the kernel on the level set is $\{\pm e_t\}$, so the group of operators is exactly the image of the twofold cover, that is $SO^{+}(1,3)$ and not its universal cover. The row is therefore a quotient row: the set that generates the group is $G$, of dimension $6$, and the group of operators is $G/\{\pm e_t\}$, of dimension $6$ as well but with $\pi_1=\mathbb{Z}_2$. Table 3b writes that quotient out and separates it from the three names that are $G$ itself.</p>
+<p><strong>Why $O(1,3)$ and $SO(1,3)$ are not rows of the same kind.</strong> The full orthogonal group of the form has four components, represented by the identity, the space reversal $P$, the time reversal $T$ and their product $PT$; the special group $SO(1,3)$ keeps the two components of determinant $+1$, namely the identity and $PT$.</p>
+<p>Two facts stop the biquaternion formula from reaching them. Every $\mathrm{Hp}_{\tilde U}$ has determinant $+1$, so no reflection is available from a two-sided product. And the element $PT$ is represented by the scalar $-1$, which acts trivially, $\mathrm{Hp}_{-e_t}=\mathrm{Hp}_{e_t}$, because the scalars are central. Hence $SO(1,3)$ is not the group of any condition on $\tilde U$: the second of its two components collapses to the identity. What the formula does give is $SO^{+}(1,3)$, one component. Adjoining the single element $\natural$ supplies one reflection with determinant $-1$, since $\natural$ fixes $\mathbb{B}_{\Psi}$ as a set and acts there as $\operatorname{diag}(1,-1,-1,-1)$; the result is the two-component group $SO^{+}(1,3)\rtimes\langle\natural\rangle$, of index two in $O(1,3)$, and the two remaining components stay out of reach.</p>
 <p><strong>Three distinctions that the table keeps.</strong> The unit-norm group is a level set and therefore a subset of $\mathbb{B}$; the Lorentz group is a quotient of it and therefore not a subset; the conformal group is a group of operators and therefore lives one level up. The map $\mathrm{Hp}$ is not injective on $\mathbb{B}^{\times}$: since $(i\tilde U)\tilde X(i\tilde U)^{*}=\tilde U\tilde X\tilde U^{*}$, the kernel is the full circle $U(1)$, and it is only on the level set $N=1$ that the kernel shrinks to $\{\pm e_t\}$.</p>
 <p><strong>A group with the algebra $\mathfrak{u}(2)$ that is not $U(2)$.</strong> $\mathbb{H}^{\times}$ is a connected four-dimensional group with Lie algebra $\mathbb{B}_H$, and $\mathbb{B}_H$ is $\mathfrak{u}(2)$. The group is not $U(2)$: its centre is $\mathbb{R}_{>0}$, it is not compact, and $U(2)$ is a quotient of the simply connected cover $SU(2)\times\mathbb{R}$ instead.</p>
+<h2 id="table-3b-one-group-four-names-and-one-quotient">Table 3b — One Group, Four Names, and One Quotient</h2>
+<p>The reference object is the group of unit-norm biquaternions,</p>
+<p>$$
+G=\{\tilde U\in\mathbb{B}:\tilde U\tilde U^{\natural}=e_t\}=\{\tilde U:N(\tilde U)=1\},
+$$</p>
+<p>of real dimension $6$ and non-compact. Three of the names below are $G$ itself under another letter: $SL(2,\mathbb{C})$, $Sp(2,\mathbb{C})$ and $Spin(1,3)$. Two further names are one quotient of $G$, the same quotient twice, and that quotient is not isomorphic to $G$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>Relation to $G$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G=\mathbb{B}^{\times}_1$</td>
+<td>the group of unit-norm biquaternions</td>
+<td>the level set $N=1$; $\dim_{\mathbb{R}}G=6$, non-compact, simply connected</td>
+<td>the reference group</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{C})$</td>
+<td>the special linear group, <strong>the group of Lorentz rotors</strong></td>
+<td>$G$ under $\tilde U\mapsto\mathsf{M}_2(\tilde U)$, the defining representation on $\mathbb{C}^{2}$</td>
+<td>isomorphic: $\mathsf{M}_2$ is a bijection of $\mathbb{C}^{4}$, so the kernel is trivial</td>
+</tr>
+<tr>
+<td>$Sp(2,\mathbb{C})$</td>
+<td>the complex symplectic group, rank two</td>
+<td>$G$; the condition is $\sigma_{\mathrm{tr}}(\tilde U)\,\vec e_y\,\tilde U=\vec e_y$</td>
+<td>the same group, not merely isomorphic</td>
+</tr>
+<tr>
+<td>$Spin(1,3)$</td>
+<td>the spin group of the Lorentzian form</td>
+<td>$G$, read as the even versors of $\mathrm{Cl}_{3,1}$</td>
+<td>the same group, since $SL(2,\mathbb{C})$ is simply connected</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{C})/\{\pm e_t\}=PSL(2,\mathbb{C})=PGL(2,\mathbb{C})$</td>
+<td>the Möbius group</td>
+<td>$G/\{\pm e_t\}$</td>
+<td>quotient, two-to-one</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,3)$</td>
+<td><strong>the restricted Lorentz group</strong></td>
+<td>$G/\{\pm e_t\}$ under the congruence $\tilde U\mapsto\mathrm{Hp}_{\tilde U}$; equally the group of operators $\mathrm{Hp}_{\tilde U}$ on $\mathbb{B}_{\Psi}$</td>
+<td><strong>the quotient, not isomorphic to $G$</strong>: $\pi_1(G)=0$ and $\pi_1(SO^{+}(1,3))=\mathbb{Z}_2$</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>the maximal compact subgroup</td>
+<td>$G\cap\mathbb{B}_H$</td>
+<td>subgroup: the determinant-one slice of the compact part</td>
+</tr>
+<tr>
+<td>$SO(3)$</td>
+<td>the rotation group</td>
+<td>$(G\cap\mathbb{B}_H)/\{\pm e_t\}$</td>
+<td>quotient of a subgroup</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The covering, written once.</strong> The map onto the Lorentz group is the congruence</p>
+<p>$$
+\mathrm{Hp}\colon G\longrightarrow SO^{+}(1,3),\qquad \tilde U\mapsto\mathrm{Hp}_{\tilde U},\qquad \mathrm{Hp}_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{*},
+$$</p>
+<p>and it is two-to-one:</p>
+<p>$$
+\mathrm{Hp}_{-\tilde U}=\mathrm{Hp}_{\tilde U}\ \ \text{identically},\qquad \ker\mathrm{Hp}=\{\pm e_t\}\cong\mathbb{Z}_2,\qquad SO^{+}(1,3)\cong SL(2,\mathbb{C})/\mathbb{Z}_2 .
+$$</p>
+<p>The two are therefore not isomorphic, and no bijection can make them so: $G$ is simply connected, so $\pi_1(G)=0$, while $\pi_1(SO^{+}(1,3))=\mathbb{Z}_2$, and a homeomorphism carries one fundamental group to the other. The relation is a covering and nothing weaker.</p>
+<p><strong>The rotor and the transformation it performs.</strong> A rotor is a unit-norm biquaternion, so the group of Lorentz rotors is $SL(2,\mathbb{C})=\mathbb{B}^{\times}_1=G$. Every rotor is a boost rotor times a rotation rotor,</p>
+<p>$$
+\tilde U=\tilde U_b\tilde u_r,\qquad \tilde U_b=\cosh s\,e_t+i\sinh s\,\hat u,\qquad \tilde u_r=\cos t+\sin t\,\hat v,
+$$</p>
+<p>with $N(\tilde U_b)=N(\tilde u_r)=1$, $\tilde U_b$ Hermitian and of positive scalar part, $\tilde u_r\in Sp(1)$. The boost rotor performs the boost of rapidity $2s$ along $\hat u$ and the rotation rotor the rotation of angle $2t$ about $\hat v$, both by the congruence $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$. Two rotors perform each transformation, $\pm\tilde U$, so a Lorentz transformation and the rotor that performs it correspond two-to-one: the rotor group <em>is</em> the double cover, and the Lorentz group is its quotient. Written as an equality of groups of transformations of $\mathbb{B}_{\Psi}$,</p>
+<p>$$
+\text{rotors}/\{\pm e_t\}\;=\;SO^{+}(1,3),
+$$</p>
+<p>and not rotors $=$ $SO^{+}(1,3)$. The decomposition is the polar decomposition of $G$, and it is global and unique on the positive sheet; it is not a direct product of groups, since the product of two boost rotors is not a boost rotor, its rotation factor being the Wigner rotation.</p>
+<p><strong>What the difference is, in one sign.</strong> $\mathrm{Hp}_{\tilde U}$ does not see the sign of $\tilde U$; $\mathsf{M}_2$ does. The pair $\pm\tilde U$ is one point of the Lorentz group and two points of $G$, and a spinor is a vector of the second kind. That is why the Dirac equation is written with the cover and not with the group: the covariance holds on $G$, the invariance holds on the quotient, and the difference is the sign that acts on a spinor as $-1$. The Lorentz group acts on $\mathbb{B}_{\Psi}$, of real dimension $4$; the cover acts on $\mathbb{C}^{2}$, of complex dimension $2$. Forgetting the cover loses the sign, and the sign is the whole content of spin.</p>
+<p><strong>$Sp(2,\mathbb{C})$ is the same group, and the reason is dimension two.</strong> The symplectic form of rank two is the element $\vec e_y$ itself: its matrix image is $\mathsf{M}_2(\vec e_y)=-i\sigma_2=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$, which squares to $-I_2$. The transpose is the $\mathbb{C}$-linear anti-automorphism</p>
+<p>$$
+\sigma_{\mathrm{tr}}(\tilde Q)=\vec e_y\,\tilde Q^{\natural}\,\vec e_y^{-1},
+$$</p>
+<p>the twist of quaternion conjugation by $\vec e_y$; it acts by $Q_y\mapsto-Q_y$ with the other three coefficients fixed, which is exactly the transpose of $\mathsf{M}_2$, since $\sigma_1$ and $\sigma_3$ are symmetric and $\sigma_2$ is not. It is none of $\natural$, coefficient conjugation and $*$. The symplectic condition $\mathsf{M}_2(\tilde Q)^{T}J\mathsf{M}_2(\tilde Q)=J$ then reads</p>
+<p>$$
+\sigma_{\mathrm{tr}}(\tilde Q)\,\vec e_y\,\tilde Q=\vec e_y ,
+$$</p>
+<p>and the left side collapses in one step: $\vec e_y\tilde Q^{\natural}\vec e_y^{-1}\vec e_y\tilde Q=\vec e_y\tilde Q^{\natural}\tilde Q=N(\tilde Q)\vec e_y$. The condition is $N(\tilde Q)=1$, with no further equation, so $Sp(2,\mathbb{C})$ is the level set itself. The matrix statement is the same one in another language:</p>
+<p>$$
+A^{T}JA=\det(A)J\qquad\text{for }2\times2,
+$$</p>
+<p>because a two-form on $\mathbb{C}^{2}$ has a single component, so the symplectic condition reads $\det A=1$. In dimension two there is only one symplectic form up to scale, so the alternating form pairing the two spinor components is the same object as the determinant. This is an identity, not a coincidence of small groups.</p>
+<p><strong>$Spin(1,3)$ is the same group, and no separate computation is needed.</strong> $SO^{+}(1,3)$ is connected with $\pi_1=\mathbb{Z}_2$, so it has exactly one connected double cover, and that cover is simply connected, which is the definition of the spin group. The cover is $SL(2,\mathbb{C})$. In biquaternion letters the versor condition $\tilde U\tilde U^{\natural}=e_t$ is the spin-group condition, and $N$ is the norm whose polarisation is the Clifford form; the Clifford reading is therefore a re-reading of the level set and not a new group.</p>
+<p><strong>One element, two twists, two different involutions.</strong> $\sigma_{\mathrm{tr}}=\operatorname{Ad}_{\vec e_y}\circ\natural$ is $\mathbb{C}$-linear and is the transpose. $\sigma_{\mathrm{split}}=\operatorname{Ad}_{\vec e_y}\circ(\text{coefficient conjugation})$ is conjugate-linear and its fixed set is the split real form. The same element $\vec e_y$ produces both, by twisting the linear conjugation in one case and the conjugate-linear one in the other. $\vec e_y$ has a third role, as the symplectic unit: it is at once the $J$ of $Sp(2,\mathbb{C})$, the twist of the split form, and one of the three generators of $\mathfrak{sl}(2,\mathbb{R})$.</p>
+<p><strong>A naming trap: unit-norm is not unitary.</strong> $N(\tilde U)=1$ is a condition on a complex bilinear form; $A^{*}A=I$ is a condition on a Hermitian form. They differ, and they select different groups. Every one of $60$ random unit-norm elements fails $A^{*}A=I$, with a failure of order $10$, so $G$ is not a unitary group. The unitary group of the algebra is</p>
+<p>$$
+U(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}\cong U(2),
+$$</p>
+<p>of real dimension $4$ and compact. It is not a subgroup of $G$: for $A\in U(2)$ one has $\lvert\det A\rvert=1$, that is $\lvert N\rvert=1$, and $N=1$ holds only when $\det A=1$. Hence</p>
+<p>$$
+U(\mathbb{B})\cap G=SU(2),
+$$</p>
+<p>the rotations, of real dimension $3$. The name "the unitary group of the biquaternion algebra" therefore points at $U(2)$ and not at $G$, and the two must not be interchanged. It is also why $G$ of dimension $6$ cannot be called compact: it contains $SU(2)$, but it also contains the boosts $\exp(\mathbb{R}i\vec e_z)$, and those are unbounded.</p>
+<p><strong>What each name carries in use.</strong> $SL(2,\mathbb{C})$ carries the two-component spinors and the covariance of the Dirac equation, since a Dirac spinor is a pair of such objects and the Clifford generators are the images of a basis of $\mathbb{B}_{\Psi}$. $Sp(2,\mathbb{C})$ carries the same objects with the symplectic pairing made explicit, which is how a mass term is built from two spinors rather than from a spinor and its conjugate. $Spin(1,3)$ carries the Clifford reading, and that is the reading which generalises to a curved manifold, where a bundle of versors replaces the single group, and then to supergravity and string theory, where the spin group is part of the local structure. $SO^{+}(1,3)$ carries only the vector action, on $\mathbb{B}_{\Psi}$.</p>
 <h2 id="table-4-the-operator-layer-algebras-lie-algebras-and-the-hermitian-pair">Table 4 — The Operator Layer: Algebras, Lie Algebras, and the Hermitian Pair</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -595,7 +732,7 @@ $$</p>
 <td>$(0,3,1)$</td>
 </tr>
 <tr>
-<td>$\mathfrak{so}(3,1)$</td>
+<td>$\mathfrak{so}(1,3)=\mathfrak{so}(3,1)$</td>
 <td>the Lorentz algebra, as operators</td>
 <td>$\rho_L(\mathbb{B}_V)$</td>
 <td>$6$</td>
@@ -812,11 +949,15 @@ $$</p>
 <li><strong>Idempotents and nilpotents.</strong> $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$ is idempotent to $10^{-16}$, and $\tfrac12(e_t+i\vec u)\circ\tfrac12(e_t-i\vec u)=0$. $(\vec e_y+i\vec e_x)^{2}=0$ exactly.</li>
 <li><strong>Groups.</strong> $Sp(1)\to SU(2)$: unitary and determinant one to $5\times10^{-16}$. Dictionary round trip $SU(2)\to\tilde Q\to\mathsf{M}_2$: $2\times10^{-16}$. $SU(2)$ satisfies $\tilde Q^{*}\tilde Q=e_t$ to $3\times10^{-15}$. Unit-norm elements of $\mathbb{B}$ satisfy $\det\mathsf{M}_2=1$ to $6\times10^{-15}$. $\mathrm{Hp}$ scales the norm by $\lvert N(\tilde Q)\rvert^{2}$ with error $4\times10^{-13}$, so on $N=1$ it is an isometry of $\mathbb{B}_{\Psi}$. The two-sided action $\tilde X\mapsto\tilde u\tilde X\tilde v^{\natural}$ of $Sp(1)\times Sp(1)$ preserves the Euclidean norm of $\mathbb{R}^{8}$ to $7\times10^{-15}$. $\exp(t\vec e_y)=\begin{pmatrix}\cos t&-\sin t\\ \sin t&\cos t\end{pmatrix}$ and $\exp(ti\vec e_z)=\operatorname{diag}(e^{t},e^{-t})$.</li>
 <li><strong>Operator layer.</strong> $\dim\rho_L(\mathbb{B})=8$, $\dim\rho_R(\mathbb{B})=8$, $\dim(\rho_L+\rho_R)=14$. $\rho_L(\mathbb{B}_H\cap\mathbb{B}_V)+\rho_R(\mathbb{B}_H\cap\mathbb{B}_V)$: dimension $6$, closed, $\kappa=(0,6,0)$. The split analogue: dimension $6$, closed, $\kappa=(4,2,0)$. $\rho_L(\mathbb{B}_V)+\rho_R(\mathbb{B}_V)$: dimension $12$, closed, $\kappa=(6,6,0)$. $\rho_L(\mathbb{B}_V)$ alone: $(3,3,0)$. $\rho_L(\mathbb{B}_{\Phi})$: $(0,3,1)$. The whole two-sided span: $(6,6,2)$. The commutant of right multiplication by $\mathbb{B}_H$ inside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has real dimension $16$, which is $M_2(\mathbb{H})$.</li>
+<li><strong>The Lorentz group as a group of operators.</strong> With $G=\operatorname{diag}(1,-1,-1,-1)$ on $\mathbb{B}_{\Psi}$ in the basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$: every $\mathrm{Hp}_{\tilde U}$ with $N(\tilde U)=1$ satisfies $M^{T}GM=G$ to $1.3\times10^{-13}$ and has $\det M=+1$ on all samples, so the image is $SO^{+}(1,3)$ and not a larger group. The element $\natural$ fixes $\mathbb{B}_{\Psi}$ and acts there as $G$ itself, with $\det=-1$; it preserves the form exactly. The conjugate $\natural\,\mathrm{Hp}_{\tilde U}\,\natural$ is again a form-preserving map of determinant $+1$, to $2.6\times10^{-13}$, so $\natural$ normalizes $SO^{+}(1,3)$ and the two-component group of the table is a group.</li>
+<li><strong>The cover is two-to-one, not an isomorphism.</strong> $\mathrm{Hp}_{\tilde U}$ and $\mathrm{Hp}_{-\tilde U}$ are bit-identical on $40$ random unit-norm elements: difference $0.0$. The Lorentz form is preserved to $1.9\times10^{-13}$ on $60$ elements, and every image has determinant $+1$. The kernel is $\{\pm e_t\}$ and is not trivial, so $G\to SO^{+}(1,3)$ is a covering; $G$ is simply connected and $SO^{+}(1,3)$ is not, which is the reason the two are not isomorphic.</li>
+<li><strong>The five names of the Lorentz group.</strong> $Sp(2,\mathbb{C})$: $\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$ with square $-I_2$ exactly; $\mathsf{M}_2(\sigma_{\mathrm{tr}}\tilde Q)=\mathsf{M}_2(\tilde Q)^{T}$ to $0$; $\sigma_{\mathrm{tr}}$ is $\mathbb{C}$-linear to $0$, an anti-automorphism to $2\times10^{-15}$, an involution to $0$; $\sigma_{\mathrm{tr}}(\tilde Q)\vec e_y\tilde Q=N(\tilde Q)\vec e_y$ to $2\times10^{-15}$; $A^{T}JA=\det(A)J$ to $5\times10^{-15}$; and $M^{T}JM=J$ on $80$ unit-norm elements to $1.5\times10^{-15}$, so the level set lies in $Sp(2,\mathbb{C})$ and the two are the same set.</li>
+<li><strong>Unit-norm is not unitary.</strong> On $60$ random unit-norm elements, $\lvert A^{*}A-I\rvert$ reaches $30$, and all $60$ fail: $G$ is not the unitary group. The unitary group $\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$ is $U(2)$, of real dimension $4$ and compact; it meets $G$ in $SU(2)$, since $A\in U(2)$ gives $\lvert\det A\rvert=\lvert N\rvert=1$ and $N=1$ only for $\det A=1$.</li>
 <li><strong>Adjoints.</strong> $\rho_L(\tilde Q)^{*}=\rho_L(\tilde Q^{*})$ exactly, and $\rho_L(\tilde Q)+\rho_L(\tilde Q)^{T}=0$ exactly for $\tilde Q\in\mathbb{B}_{\Phi}$, where the transpose is taken in the real coordinates of the base, with defect $5.6$ for a generic $\tilde Q$.</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>The tables collect the correspondences in one place and keep the level of each one visible. At the element level the biquaternion algebra is $M_2(\mathbb{C})$, its two real forms are $\mathbb{B}^{\sigma_{\mathrm{split}}}$ and $\mathbb{B}_H$, and the six subspaces carry the six classical readings: the centre is the trace line, the vector part is the traceless part and the Lorentz algebra, the quaternion subspace is $\mathbb{H}$ and $\mathfrak{u}(2)$ and $\mathbb{R}^{4}$, the antiquaternion subspace is $i\mathbb{H}$, the Hermitian subspace is $H_2(\mathbb{C})$ and $\mathbb{R}^{1,3}$ and the scene of the Hermitian pair, and the anti-Hermitian subspace is $\mathfrak{u}(2)$ and $\mathbb{R}^{3,1}$. The three readings of $\mathfrak{sl}(2,\mathbb{C})$ appear as $\mathbb{B}_H\cap\mathbb{B}_V$, as $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$, and as $\mathbb{B}_V$ read over $\mathbb{R}$.</p>
-<p>At the group level the unit-norm group is $SL(2,\mathbb{C})$, its quotient by the centre is the Lorentz group, the unit quaternions are $SU(2)$, and the split units are $SL(2,\mathbb{R})$ with quotient $SO^{+}(2,1)$. At the operator level the endomorphism algebra is $M_4(\mathbb{C})$, the two real forms are the operators commuting with coefficient conjugation and the operators commuting with right quaternion multiplication, and the two-sided pairs give $\mathfrak{so}(4)$, $\mathfrak{so}(2,2)$ and $\mathfrak{so}(4,\mathbb{C})$ from the pure quaternions, from the traceless split elements, and from the vector part.</p>
+<p>At the group level there is one group with four names and one quotient. The group is $G=\{\tilde U:N(\tilde U)=1\}$; it is $SL(2,\mathbb{C})$ under $\mathsf{M}_2$, it is $Sp(2,\mathbb{C})$ as the same set, and it is $Spin(1,3)$ as the same set read through the Clifford algebra. Its quotient by $\{\pm e_t\}$ is $SO^{+}(1,3)=G/\{\pm e_t\}$, and that is the only row of the five that is not $G$: the covering is two-to-one, $\pi_1(G)=0$, $\pi_1(SO^{+}(1,3))=\mathbb{Z}_2$, and the two are therefore not isomorphic. The compact core is $SU(2)=G\cap\mathbb{B}_H$, the split units are $SL(2,\mathbb{R})$ with quotient $SO^{+}(2,1)$, and the Lorentz row of the group table is a quotient row: the operators $\mathrm{Hp}_{\tilde U}$ with $N(\tilde U)=1$, of determinant one, with kernel $\{\pm e_t\}$. At the operator level the endomorphism algebra is $M_4(\mathbb{C})$, the two real forms are the operators commuting with coefficient conjugation and the operators commuting with right quaternion multiplication, and the two-sided pairs give $\mathfrak{so}(4)$, $\mathfrak{so}(2,2)$ and $\mathfrak{so}(4,\mathbb{C})$ from the pure quaternions, from the traceless split elements, and from the vector part.</p>
 <p>The failures are as instructive as the successes. $\mathfrak{so}(4)$ and $\mathfrak{so}(2,2)$ are not subspaces of $\mathbb{B}$ but pairs of operators, $\mathfrak{su}(n)$ for $n\geq3$ does not fit at all, $\mathbb{B}_{\Psi}$ is a Jordan algebra and not a Lie algebra, $\mathbb{B}_{\Phi}$ is the other way round, and $\mathfrak{sl}(4,\mathbb{C})$ is one dimension too large for two-sided multiplication to reach.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -836,6 +977,10 @@ $$</p>
 <td>the norm, equal to $\det\mathsf{M}_2$</td>
 </tr>
 <tr>
+<td>$G=\mathbb{B}^{\times}_1=\{\tilde U:N(\tilde U)=1\}$</td>
+<td>the group of unit-norm biquaternions; $=SL(2,\mathbb{C})=Sp(2,\mathbb{C})=Spin(1,3)$; $SO^{+}(1,3)=G/\{\pm e_t\}$</td>
+</tr>
+<tr>
 <td>$\natural$, $\bar{\ }$, $*=\natural\circ\bar{\ }$</td>
 <td>the three conjugations: quaternion, coefficient, Hermitian</td>
 </tr>
@@ -850,6 +995,10 @@ $$</p>
 <tr>
 <td>$\sigma_{\mathrm{split}}(\tilde Q)=\vec e_y\bar{\tilde Q}\vec e_y^{-1}$</td>
 <td>the involution whose fixed set is $\mathbb{B}^{\sigma_{\mathrm{split}}}$</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{tr}}(\tilde Q)=\vec e_y\tilde Q^{\natural}\vec e_y^{-1}$</td>
+<td>the transpose, $Q_y\mapsto-Q_y$; $\sigma_{\mathrm{tr}}(\tilde Q)\vec e_y\tilde Q=N(\tilde Q)\vec e_y$</td>
 </tr>
 <tr>
 <td>$X\wedge Y=\tfrac12(XY-YX)$</td>
@@ -879,6 +1028,7 @@ $$</p>
 <li><em>Classification of the Real Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> and <em>Classification of the Complex Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> for the layer-by-layer lattice and the group tables with covers, centres and quotients.</li>
 <li><em>Classification of the Structures of the Operators of the Biquaternion Algebra</em>, <em>Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> and <em>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> for the operator layer, the two real forms of $M_4(\mathbb{C})$ and the real forms of $\mathfrak{sl}(4,\mathbb{C})$.</li>
 <li><em>Biquaternion Versors and the Orthogonal Group</em>, <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em> for the versor groups, the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ and the spin isomorphisms.</li>
+<li><em>The Classical Groups of $\mathbb{C}^{2}$</em> for $Sp(2,\mathbb{C})=SL_2(\mathbb{C})$ proved from $A^{T}\Omega A=\Omega$, and for the four complex groups of the plane and their compact core $SU(2)$.</li>
 <li><em>Operators Acting on Two Sides</em>, <em>The Regular Representation as an Algebra of Operators</em> and <em>The Two-Sided Operators and the Segre Cone</em> for $\rho_L$, $\rho_R$, their sum and the cone of Hermitian pairs.</li>
 <li><em>Subspaces and Decompositions of the Biquaternion Algebra</em>, <em>Hermitian and Anti-Hermitian Elements</em> and <em>The Unitary Group of the Biquaternion Algebra</em> for the six subspaces, the star and the unitary conditions.</li>
 <li><em>The Element: the Coordinates and the Conjugations</em> and <em>M2C Pauli Representation</em> for the dictionary $\mathsf{M}_2$ and its three conjugations.</li>

@@ -254,12 +254,12 @@ $$</p>
 <p><strong>The coefficient computation gives the cross product exactly.</strong> Writing the two elements in components, the product is</p>
 <p>$$
 \tilde R_{\Phi,1}\tilde R_{\Phi,2}
-=-\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
-+i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr)
+=-\bigl(r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2\bigr)e_t
++i\bigl(r'_{1t}\vec r_2+r'_{2t}\vec r_1\bigr)
 +\vec r_1\times\vec r_2,
 $$</p>
 <p>and the antisymmetric part of that expression is twice the cross product of the space parts, with the temporal coordinates cancelling. The entry verifies the identity numerically as well as symbolically, and the cancellation is exact.</p>
-<p><strong>The symmetric part of the same product is Hermitian and carries the temporal mixing.</strong> Its scalar part is minus the Minkowski pairing of the two elements, and its vector part is the antisymmetric temporal mixture $i(r'_{1t}\vec r_2-r'_{2t}\vec r_1)$. The anticommutator is the sum of twice each, and it is informational.</p>
+<p><strong>The symmetric part of the same product is Hermitian and carries the temporal mixing.</strong> Its scalar part is minus the Euclidean pairing of the four coefficients, and its vector part is the symmetric temporal mixture $i(r'_{1t}\vec r_2+r'_{2t}\vec r_1)$. The anticommutator is the sum of twice each, and it is informational.</p>
 <p><strong>The two halves of the product are the two halves of the algebra.</strong> The commutator, which stays, is the compact part and generates rotations. The anticommutator, which leaves, is the non-compact part and carries the boosts. This is the Cartan decomposition of the Lorentz algebra, obtained here without naming the group: the compact generators are the real vectors, and the non-compact ones are the imaginary vectors, which lie in the informational sector.</p>
 <p><strong>That the boost generators are informational is a coordinate fact.</strong> The element $i\vec e_x$ has coefficient vector $(0,i,0,0)$, and its star is $(0,i,0,0)$ again, so it is Hermitian. The rotation generator $\vec e_x$ has star $-\vec e_x$ and is material. Hence</p>
 <p>$$
@@ -340,8 +340,8 @@ $$</p>
 <p><strong>The bracket of the sector is the cross product, and the entry verifies it in coordinates.</strong> With $\tilde R_{\Phi,1}=ir'_{1t}e_t+\vec r_1$ and $\tilde R_{\Phi,2}=ir'_{2t}e_t+\vec r_2$ the product is</p>
 <p>$$
 \tilde R_{\Phi,1}\tilde R_{\Phi,2}
-=-\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
-+i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr)
+=-\bigl(r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2\bigr)e_t
++i\bigl(r'_{1t}\vec r_2+r'_{2t}\vec r_1\bigr)
 +\vec r_1\times\vec r_2,
 $$</p>
 <p>and the antisymmetric part of the product is twice the cross product of the space parts:</p>
@@ -369,11 +369,17 @@ $$</p>
 <p><strong>The anticommutator is what carries the temporal mixing, and it is Hermitian.</strong> The symmetric part of the product in the display above is</p>
 <p>$$
 \{\tilde R_{\Phi,1},\tilde R_{\Phi,2}\}
-=-2\bigl(\vec r_1\cdot\vec r_2-r'_{1t}r'_{2t}\bigr)e_t
-+2i\bigl(r'_{1t}\vec r_2-r'_{2t}\vec r_1\bigr),
+=-2\bigl(r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2\bigr)e_t
++2i\bigl(r'_{1t}\vec r_2+r'_{2t}\vec r_1\bigr),
 $$</p>
-<p>an element of $\mathbb{B}_{\Psi}$ whose scalar part is minus twice the Minkowski pairing of the two four-vectors and whose vector part is twice the antisymmetric temporal mixture. The scalar part of half the anticommutator is therefore minus the pairing, and the vector part of half of it is the generator of the boost that would carry one four-vector into the other. Both are informational.</p>
-<p><strong>The Minkowski pairing is therefore a scalar part of an informational element, not a form on the sector.</strong> This is a small but real difference from the standard formalism, where the pairing is a bilinear form on the same space. Here the definite pairing of two four-vectors is the scalar part of half their anticommutator, so the pairing of two material elements is computed by leaving the sector and coming back with a scalar.</p>
+<p>an element of $\mathbb{B}_{\Psi}$ whose scalar part is minus twice the Euclidean pairing of the four coefficients and whose vector part is twice the symmetric temporal mixture. The scalar part of half the anticommutator is therefore minus that pairing, and the vector part of half of it is the generator of the boost that would carry one four-vector into the other. Both are informational.</p>
+<p><strong>The Minkowski pairing is one conjugation away, and the conjugation is the natural one.</strong> The plain product pairs the four coefficients with a plus in every slot, so its scalar part is the definite form $P$ and not the interval. The indefinite pairing is read through the natural conjugation,</p>
+<p>$$
+\operatorname{Sc}\bigl(\tilde R_{\Phi,1}\tilde R_{\Phi,2}^{\natural}\bigr)
+=-r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2,
+$$</p>
+<p>and this is the corpus's definition of the Minkowski pairing of two four-vectors. The scalar is real, and the element it is read from is neither material nor informational; what the second reading buys is the minus on the temporal slot, which is the whole of the difference between the interval and a Euclidean distance.</p>
+<p><strong>The two pairings are the two forms, read on pairs.</strong> $P$ is negative definite on the sector and $N$ is indefinite, and the two polar forms differ by the conjugation and not by a sign. A sentence that says <em>the pairing</em> without naming which one is therefore ambiguous in this sector, and the entry names it each time.</p>
 <p><strong>The Jordan structure and the Lie structure are therefore two different sectors.</strong> The symmetric product closes on $\mathbb{B}_{\Psi}$ and the antisymmetric one on $\mathbb{B}_{\Phi}$; the first is a Jordan algebra, the second a Lie algebra. This is the algebra's own version of the statement that the observables and the generators of a theory are different kinds of object, and the entry records it here because it is a property of the involution and not of any physical choice.</p>
 <p><strong>The mixed products do not close anywhere, and they are the interesting ones.</strong> A material element times an informational one is neither material nor informational in general, because the product of an anti-Hermitian and a Hermitian element has no definite symmetry. Those products are the ones a change of frame uses: a boost times a four-vector, a rotation times a four-vector, and the rotor products of the next section.</p>
 <h2 id="the-lorentz-action">The Lorentz Action</h2>
@@ -533,7 +539,7 @@ $$</p>
 </table></div>
 <p><strong>Three of the seven have a fixed norm and four do not, and the difference is the physical content.</strong> The position has its interval, the velocity has its normalisation, and the momentum has its mass shell; those three are level sets that the motion cannot leave. The wavevector's norm vanishes exactly for light, which is a constraint and not a level set. The potential, the current and the force have norms that depend on the configuration, and for those three the sector supplies the carrier and not the invariant.</p>
 <p><strong>The four-velocity's norm is a constant, and that is what makes it a normalised direction.</strong> $N(\tilde V_{\Phi})=-c^{2}$ for every velocity with $\lvert\vec v\rvert<c$, so the four-velocity is a point of the timelike hyperboloid of radius $c$ and the three-velocity is a coordinate on it.</p>
-<p><strong>The four-force is orthogonal to the four-velocity in the definite pairing of half the anticommutator.</strong> The display of §<em>The Bracket</em> applies with $\tilde R_{\Phi,1}=\tilde{\mathcal F}_{\Phi}$ and $\tilde R_{\Phi,2}=\tilde V_{\Phi}$, and the scalar part of the anticommutator is minus twice their Minkowski pairing. That scalar part vanishes when the power is $\vec f\cdot\vec v$, which is the statement that such a force preserves the rest mass. A force with a different power has a non-zero scalar part and changes $N(\tilde V_{\Phi})$: it changes the rest mass, and the algebra says so through the scalar part of an informational element.</p>
+<p><strong>The four-force is orthogonal to the four-velocity in the Minkowski pairing of §<em>The Bracket</em>.</strong> The identity of that section applies with $\tilde R_{\Phi,1}=\tilde{\mathcal F}_{\Phi}$ and $\tilde R_{\Phi,2}=\tilde V_{\Phi}$, and $\operatorname{Sc}(\tilde{\mathcal F}_{\Phi}\tilde V_{\Phi}^{\natural})$ is their Minkowski pairing. That scalar vanishes when the temporal component of the force is the power divided by $c$, which is the statement that such a force preserves the rest mass. A force whose temporal component is anything else has a non-zero pairing and changes $N(\tilde V_{\Phi})$: it changes the rest mass, and the algebra says so through the scalar part of an element of the algebra.</p>
 <p><strong>The four-potential's gauge freedom is a motion inside the sector.</strong> The transformation $\tilde A_{\Phi}\mapsto\tilde A_{\Phi}+\partial\xi$ adds to the potential an element of the sector that is the gradient of a scalar, and the norm of the sum is not the sum of the norms. The field strength, built from the antisymmetrised derivative, is the object whose components are the entries of a matrix in $\mathbb{B}_{\Phi}$ and whose norm is invariant. The entry does not derive the field equations; it records that the object whose norm is invariant exists in the sector and the potential does not have that property.</p>
 <p><strong>The four-current's norm is not fixed because a current is a density and not a state.</strong> The continuity equation $\operatorname{Sc}\bigl((\tilde\nabla_{\Phi})^{\natural}\tilde J_{\Phi}\bigr)=0$ is the statement that a divergence vanishes, and the divergence is the scalar part of a product of an informational operator with a material element. The current is a material four-vector whose scalar part is a charge density and whose vector part is a flux; the equation constrains the pair and not the norm.</p>
 <p><strong>The seven entries are one object in seven costumes, and the costume is the invariant.</strong> The entry states this because it is the summary of the section: the sector is not a list of physical quantities, it is the space in which each of them is a direction, and the invariant attached to the direction is what tells one from another.</p>
@@ -559,7 +565,7 @@ $$</p>
 <h3 id="i12d-a-four-vector-squared-is-a-state">I.12.d — A Four-Vector Squared Is a State</h3>
 <p><strong>Read:</strong> the anti-automorphism computation and the closure display of §<em>The Bracket</em>.</p>
 <p><strong>The product of two material elements is Hermitian exactly when the two commute.</strong> The square of one is therefore always informational, and a product of two distinct ones is informational never. A four-vector multiplied by a four-vector has left the sector by the first factor's own involution.</p>
-<p><strong>The anticommutator is always informational and carries the Minkowski pairing.</strong> Its scalar part is minus twice the pairing, so the scalar part of half of it is minus the pairing, and its vector part is the antisymmetric temporal mixture. So the definite pairing of two four-vectors is computed in the other sector and returned as a scalar.</p>
+<p><strong>The anticommutator is always informational and its scalar part is the definite pairing.</strong> Its scalar part is minus twice the Euclidean pairing of the four coefficients, so the scalar part of half of it is minus that pairing, and its vector part is twice the symmetric temporal mixture. The Minkowski pairing is read from the same two elements one conjugation away, $\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2}^{\natural})$, and it is a scalar part too, so both pairings are computed inside the algebra.</p>
 <p><strong>The Jordan and Lie structures are the two sectors.</strong> Symmetric products close on the informational half and antisymmetric products on the material half. The observables and the generators of a theory are the two halves here, and the split is the involution's and not a modelling decision.</p>
 <p><strong>Boundary.</strong> The reading names roles. It does not claim that every observable is a product of two four-vectors, and it does not claim that every state is one.</p>
 <h3 id="i12e-the-modes-of-a-four-vector-are-in-the-other-sector">I.12.e — The Modes of a Four-Vector Are in the Other Sector</h3>
@@ -602,7 +608,7 @@ $$</p>
 <p><strong>Read:</strong> the dictionary table of §<em>The Seven Four-Vectors</em>.</p>
 <p><strong>Every row of the table has an imaginary temporal component, a real space part, and a norm that names a physical quantity.</strong> The position, the velocity, the momentum, the wavevector, the potential, the current and the force are therefore one algebraic object read with seven invariants. The reading is what the sector is for.</p>
 <p><strong>Three rows have a fixed norm and four do not.</strong> The interval, the normalisation of the velocity and the mass shell are level sets; the dispersion of the wavevector is a constraint; the potential, the current and the force have norms that depend on the configuration. The difference is the difference between a kinematic constraint and a dynamical variable, and it is visible in the table as the difference between a constant entry and a blank one.</p>
-<p><strong>The orthogonality of the four-force to the four-velocity is read in the other sector.</strong> The pairing is the scalar part of half the anticommutator, so the statement that a force preserves the rest mass is the statement that a scalar part vanishes. The algebra puts the pairing where the physics needs it.</p>
+<p><strong>The orthogonality of the four-force to the four-velocity is read in the other sector.</strong> The pairing is a scalar part of a product, $\operatorname{Sc}(\tilde{\mathcal F}_{\Phi}\tilde V_{\Phi}^{\natural})$, so the statement that a force preserves the rest mass is the statement that a scalar part vanishes. The algebra puts the pairing where the physics needs it.</p>
 <p><strong>Boundary.</strong> The table is a dictionary and not a derivation. The field equations, the Lorentz force law and the wave equations are not results of the algebra; the algebra supplies the carrier space and the invariant for each entry.</p>
 <h3 id="i12l-what-the-sector-cannot-do">I.12.l — What the Sector Cannot Do</h3>
 <p><strong>Read:</strong> the closures of §<em>The Bracket</em> together with the limits stated in each interpretation.</p>
@@ -736,9 +742,14 @@ $$</p>
 <td>$2\vec r_1\times\vec r_2$</td>
 </tr>
 <tr>
-<td>the pairing</td>
-<td>$\operatorname{Sc}\tfrac12\{\tilde R_1,\tilde R_2\}$</td>
-<td>minus the Minkowski pairing</td>
+<td>the definite pairing</td>
+<td>$\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2})$</td>
+<td>minus the Euclidean pairing of the coefficients</td>
+</tr>
+<tr>
+<td>the Minkowski pairing</td>
+<td>$\operatorname{Sc}(\tilde R_{\Phi,1}\tilde R_{\Phi,2}^{\natural})$</td>
+<td>$-r'_{1t}r'_{2t}+\vec r_1\cdot\vec r_2$</td>
 </tr>
 <tr>
 <td>the Lorentz rotor</td>
