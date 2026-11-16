@@ -74,7 +74,7 @@
 | subsection | from | the entry |
 | --- | --- | --- |
 | I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers; *Mirror Biquaternions and the Phy–Psy Switch*, a companion |
-| I.2 | Matrix Representations, $4$ | The Matrix Images: One Element, Two Pictures |
+| I.2 | Matrix Representations, $4$ | The AXF Matrices; *The Pauli and Gamma Matrices: the Direction in the Display*, a companion |
 | I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
 | I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
 | I.5 | The Spectral Theory, $6$ | The Spectrum and the Two Modes |
@@ -87,7 +87,7 @@
 | I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight; *The Fubini–Study Geometry and the Biquaternion Norm*, a companion |
 | I.13 | Operators, $29$ | The Operators of the Algebra; *Biquaternion Physical Interpretation of Operator Chirality*, a companion |
 
-**I.10 is five entries and I.12 is four.** The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight, and the Fubini–Study entry alongside it reads the metric that the state space carries.
+**I.2 is two entries, I.10 is five and I.12 is four.** The two entries of I.2 split the section by display and not by size: the axis-free entry reads the frame that chooses no direction, and the companion reads the Peirce frame, the compression at size two and the gamma set, with the readings numbered continuously from I.2.a to I.2.q across the pair.  The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight, and the Fubini–Study entry alongside it reads the metric that the state space carries.
 
 **One of the four regime entries is filed elsewhere in the menu.** *The Rest Frame and the Exceptional Point* carries I.10.y to I.10.ah and is listed with the relativity articles, because its subject is a frame and a change of frame. It belongs to I.10 all the same, and the entry that precedes it, *Mass in Motion*, hands over to it by label.
 
