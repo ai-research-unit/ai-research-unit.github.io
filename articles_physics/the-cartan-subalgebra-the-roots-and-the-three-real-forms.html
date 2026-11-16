@@ -100,20 +100,25 @@ $$</p>
 <p>With $J^\pm=J_x\pm iJ_y$ and $K^\pm=K_x\pm iK_y$, the brackets against the Cartan are</p>
 <p>$$
 [J_z,J^{\pm}]=\mp iJ^{\pm},\qquad
-[K_z,J^{\pm}]=\mp iJ^{\pm},\qquad
+[K_z,J^{\pm}]=\mp iK^{\pm},\qquad
 [J_z,K^{\pm}]=\mp iK^{\pm},\qquad
-[K_z,K^{\pm}]=\mp iK^{\pm},
+[K_z,K^{\pm}]=\pm iJ^{\pm}.
 $$</p>
-<p>so the four root vectors $J^+,J^-,K^+,K^-$ carry the four roots</p>
+<p>The vectors $J^\pm$ and $K^\pm$ are therefore eigenvectors of $J_z$ but not of $K_z$, which mixes the two within each sign. The root vectors of the full Cartan are the combinations</p>
 <p>$$
-\alpha_1=(H_1\mapsto-i,\ H_2\mapsto 0),\quad
-\alpha_2=(H_1\mapsto+i,\ H_2\mapsto 0),
-$$
-$$
-\beta_1=(H_1\mapsto 0,\ H_2\mapsto-i),\quad
-\beta_2=(H_1\mapsto 0,\ H_2\mapsto+i),
+E_1=J^{+}+iK^{+},\quad E_2=J^{+}-iK^{+},\quad
+E_3=J^{-}+iK^{-},\quad E_4=J^{-}-iK^{-},
 $$</p>
-<p>with $H_1=J_z$ and $H_2=K_z$. The signs $\mp i$ are the corpus's anti-Hermitian convention; in the physicist's Hermitian convention every generator is multiplied by $i$ and the roots become $\pm1$, which is the more familiar display. The two conventions differ by the factor $i$ throughout and nothing in this article depends on which is used.</p>
+<p>which carry the four roots</p>
+<p>$$
+\alpha_1=(H_1\mapsto-i,\ H_2\mapsto-1),\quad
+\alpha_2=(H_1\mapsto-i,\ H_2\mapsto+1),
+$$
+$$
+\beta_1=(H_1\mapsto+i,\ H_2\mapsto-1),\quad
+\beta_2=(H_1\mapsto+i,\ H_2\mapsto+1),
+$$</p>
+<p>with $H_1=J_z$ and $H_2=K_z$. The $H_1$ entry is imaginary because $J_z$ is anti-Hermitian, and the $H_2$ entry is real because $K_z$ is Hermitian; in the physicist's convention every generator is multiplied by $i$ and the two entries exchange their natures, the $H_1$ values becoming the real $\mp1$. The two conventions differ by the factor $i$ throughout and nothing in this article depends on which is used.</p>
 <h3 id="the-root-spaces">The Root Spaces</h3>
 <p>Each root space is one-dimensional, spanned by the root vector named above. The four vectors together with the two Cartan elements span the six-dimensional algebra, so the root decomposition is</p>
 <p>$$
@@ -124,14 +129,18 @@ $$</p>
 <p>The values $\pm i$ are imaginary because the generator $J_z$ is anti-Hermitian. A compact generator has imaginary eigenvalues, and that is the finite-dimensional trace of compactness. In the split picture the Cartan element is not compact and the corresponding root values are real. The point is taken up in §<em>The Three Real Forms</em>, because it is exactly the point at which the root system fails to decide the real structure.</p>
 <h2 id="the-root-system">The Root System</h2>
 <h3 id="the-two-pairs">The Two Pairs</h3>
-<p>The four roots are $\pm\alpha$ and $\pm\beta$, with $\alpha=(H_1\mapsto-i,H_2\mapsto0)$ and $\beta=(H_1\mapsto0,H_2\mapsto-i)$. Each pair is a line through the origin in the two-dimensional complex span of the roots.</p>
+<p>The four roots are $\pm\alpha$ and $\pm\beta$, with $\alpha=(H_1\mapsto-i,H_2\mapsto-1)$ and $\beta=(H_1\mapsto-i,H_2\mapsto+1)$. Each pair is a line through the origin in the two-dimensional complex span of the roots.</p>
 <h3 id="the-span-is-two-dimensional">The Span Is Two-Dimensional</h3>
 <p>The two lines are distinct and neither is zero, so they span the two-dimensional space of linear functionals on $\mathfrak{h}$. That is the statement that the rank is two, read dually.</p>
 <h3 id="the-pairing">The Pairing</h3>
 <p>$$
 (\alpha,\beta)=0,
 $$</p>
-<p>with the inner product induced by the Killing form. Indeed $\alpha$ is supported on $H_1$ and $\beta$ on $H_2$, and $B(H_1,H_2)=0$ because the two Cartan directions lie in the two different summands, which are orthogonal under the Killing form by the same computation that gave $B(J_i,K_j)=0$ in <em>The Six Generators and Their Commutators</em>.</p>
+<p>with the inner product induced by the Killing form. The dual metric is $\mathrm{diag}(-\tfrac14,+\tfrac14)$ in the basis dual to $(H_1,H_2)$, because $B(H_1,H_1)=-4$ and $B(H_2,H_2)=+4$, so</p>
+<p>$$
+(\alpha,\beta)=(-i)(-i)\bigl(-\tfrac14\bigr)+(+1)(-1)\bigl(+\tfrac14\bigr)=\tfrac14-\tfrac14=0 .
+$$</p>
+<p>The vanishing is the orthogonality of the two summands: $\alpha$ is the root of one and $\beta$ of the other, and $B(J_i,K_j)=0$ by the computation in <em>The Six Generators and Their Commutators</em>.</p>
 <h3 id="the-inner-products-on-the-lines">The Inner Products on the Lines</h3>
 <p>$$
 (\alpha,\alpha)\neq0,\qquad(\beta,\beta)\neq0,
@@ -176,19 +185,19 @@ $$</p>
 \mathfrak{g}_0\otimes_{\mathbb{R}}\mathbb{C}\cong\mathfrak{g}.
 $$</p>
 <p>Equivalently it is the fixed-point set of a conjugate-linear involution $\sigma$ of $\mathfrak{g}$, the <strong>conjugation</strong>. Two real forms can be non-isomorphic and still have the same complexification, which is the situation here.</p>
-<h3 id="the-compact-form-math68">The Compact Form: $\mathfrak{so}(4)$</h3>
+<h3 id="the-compact-form-math78">The Compact Form: $\mathfrak{so}(4)$</h3>
 <p>The real span of the six generators with the brackets of the table <strong>with the sign of the boost–boost block reversed</strong>,</p>
 <p>$$
 [K_i,K_j]=+J_k,
 $$</p>
 <p>is $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimension six and compact. Its Killing form is negative definite, its Cartan is compact, its roots are imaginary, and every finite-dimensional representation is equivalent to a unitary one.</p>
-<h3 id="the-lorentz-form-math71">The Lorentz Form: $\mathfrak{so}(1,3)$</h3>
+<h3 id="the-lorentz-form-math81">The Lorentz Form: $\mathfrak{so}(1,3)$</h3>
 <p>The real span of the same six with</p>
 <p>$$
 [K_i,K_j]=-J_k
 $$</p>
 <p>is $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ read as a real algebra. Its Killing form has signature $(3,3)$, its Cartan has one compact and one non-compact direction, and <em>as a real algebra it is simple</em>: it is not a direct sum of two real three-dimensional algebras. This is the form of this block.</p>
-<h3 id="the-split-form-math75">The Split Form: $\mathfrak{so}(2,2)$</h3>
+<h3 id="the-split-form-math85">The Split Form: $\mathfrak{so}(2,2)$</h3>
 <p>$$
 \mathfrak{so}(2,2)\cong\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R}),
 $$</p>
@@ -288,7 +297,7 @@ $$</p>
 </tr>
 <tr>
 <td>$J^\pm=J_x\pm iJ_y$, $K^\pm=K_x\pm iK_y$</td>
-<td>the root vectors</td>
+<td>the $J_z$-eigenvectors; the roots are carried by $J^\pm\pm iK^\pm$</td>
 </tr>
 <tr>
 <td>$A_1\times A_1$</td>

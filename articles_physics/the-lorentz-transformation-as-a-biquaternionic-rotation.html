@@ -166,7 +166,7 @@ $$</p>
 <p><strong>1. It preserves the subspace $\mathbb{B}_{\Phi}$.</strong> If $\tilde{A}_{\Phi} \in \mathbb{B}_{\Phi}$ and $\tilde U_{\Psi,\mathrm b}$ is a unit-norm biquaternion, then $\tilde U_{\Psi,\mathrm b}\tilde{A}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*} \in \mathbb{B}_{\Phi}$.</p>
 <p><strong>2. It preserves the biquaternion norm.</strong> Since $\tilde U_{\Psi,\mathrm b}$ has unit norm, we have</p>
 <p>$$
-\tilde{A}_{\Phi,2}\tilde{A}_{\Phi,2}^{\natural} = \tilde U_{\Psi,\mathrm b}\tilde{A}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}\,\overline{\tilde U_{\Psi,\mathrm b}\tilde{A}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}} = \tilde{A}_{\Phi}\tilde{A}_{\Phi}^{\natural},
+\tilde{A}_{\Phi,2}\tilde{A}_{\Phi,2}^{\natural} = \tilde U_{\Psi,\mathrm b}\tilde{A}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}\bigl(\tilde U_{\Psi,\mathrm b}\tilde{A}_{\Phi}\tilde U_{\Psi,\mathrm b}^{*}\bigr)^{\natural} = \tilde{A}_{\Phi}\tilde{A}_{\Phi}^{\natural},
 $$</p>
 <p>so the biquaternion norm of the transformed four-vector is the same as the biquaternion norm of the original. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval.</p>
 <p><strong>3. It is a group action.</strong> The composition of two rotor conjugations is another rotor conjugation: if $\tilde U_{\Psi,\mathrm b,1}$ and $\tilde U_{\Psi,\mathrm b,2}$ are two unit-norm biquaternions, then</p>
@@ -260,11 +260,11 @@ $$</p>
 $$</p>
 <p>the square root being the biquaternion square root, multivalued by sign, and the two branches differing by the kernel element $-1$ of the double cover. Equivalently, since $\tilde U_{\Psi,\mathrm b}\,p$ lies along the <strong>bisector</strong> of $p$ and $r$,</p>
 <p>$$
-\tilde U_{\Psi,\mathrm b}\,p \;=\; \frac{p + r}{\sqrt{2\,\bigl\langle (p+r)\,p^{-1}\bigr\rangle_S}},
+\tilde U_{\Psi,\mathrm b}\,p \;=\; \frac{p + r}{\sqrt{2\,\mathrm{Sc}\bigl((p+r)\,p^{-1}\bigr)}},
 \qquad\text{so that}\qquad
-\tilde U_{\Psi,\mathrm b} \;=\; \frac{(p+r)\,p^{-1}}{\sqrt{2\,\bigl\langle (p+r)\,p^{-1}\bigr\rangle_S}},
+\tilde U_{\Psi,\mathrm b} \;=\; \frac{(p+r)\,p^{-1}}{\sqrt{2\,\mathrm{Sc}\bigl((p+r)\,p^{-1}\bigr)}},
 $$</p>
-<p>where $\langle\,\cdot\,\rangle_S$ is the scalar part. The denominator is a positive real number because $p$ is non-null, and it normalizes the bisector to unit norm; the factor $p^{-1}$ on the right places the result in the plane.</p>
+<p>where $\mathrm{Sc}(\cdot)$ is the scalar part. The denominator is a positive real number because $p$ is non-null, and it normalizes the bisector to unit norm; the factor $p^{-1}$ on the right places the result in the plane.</p>
 <p>The <strong>bisector property</strong> is the statement that the image $r=\tilde U_{\Psi,\mathrm b}^2p$ and the original $p$ are symmetrically placed about the direction of $\tilde U_{\Psi,\mathrm b} p$, which is the direction of $p+r$; it is why the rotor can be reconstructed from one element of the plane and its image. The closed form is the second printed form of the source (Baylis, §V.B), whose PDF extraction is ambiguous about the placement of the square-root exponent; the recomputation above selects the form displayed here, with no leading factor $p$ and the exponent $1/2$ on the whole denominator. The first form, $\tilde U_{\Psi,\mathrm b}=(rp^{-1})^{1/2}$, is unambiguous and agrees with it.</p>
 <h2 id="the-group-structure">The Group Structure</h2>
 <p>The <strong>unit-norm biquaternions</strong> form a group under multiplication. The general element is</p>
@@ -284,9 +284,9 @@ $$</p>
 <p>carries the four-momentum of the first to the four-momentum of the second, $\tilde{P}_{\Phi,1}\mapsto\tilde{P}_{\Phi,2}$, and is the frame-to-frame transformation. The three interpretations differ by which factor of the rotor is inverted, and the physics of "which frame moves relative to which" is the choice among them. The series writes the abstract group element as $\tilde U_{\mathrm{lor}}$ without committing to an interpretation, and says which interpretation is meant only where a physical frame is named.</p>
 <p><strong>The reciprocal basis.</strong> The component transformation is most cleanly stated with a dual basis. On the four-dimensional space spanned by $\{e_t, \vec e_x, \vec e_y, \vec e_z\}$, define the dual basis by the trace pairing $\mathrm{Sc}(\mathcal E_{\mathrm{du},\mu}\mathcal{E}_\nu) = \delta_{\mu\nu}$. The basis and its dual are</p>
 <p>$$
-\mathcal{E}_0 = e_t,\quad \mathcal{E}_k = \vec e_\eta,
+\mathcal{E}_0 = e_t,\quad \mathcal{E}_\eta = \vec e_\eta,
 \qquad
-\mathcal E_{\mathrm{du},0} = e_t,\quad \mathcal E_{\mathrm{du},k} = -\vec e_\eta,
+\mathcal E_{\mathrm{du},0} = e_t,\quad \mathcal E_{\mathrm{du},\eta} = -\vec e_\eta,
 $$</p>
 <p>the minus signs coming from $\vec e_\eta^2 = -e_t$: the metric is carried by the dual, not by any index-raising. Because the coefficient of $e_t$ is the imaginary $i r'_t$, the pair $(q_0, q_\eta) = (i r'_t, x_\eta)$ is the coordinate quadruple. Given a rotor $\tilde U_{\mathrm{lor}}$, the components transform as</p>
 <p>$$
