@@ -129,7 +129,7 @@ $$
 \qquad \tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor}}{}^{\natural} = e_t .
 $$
 
-It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz transformation**: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz transformation. The rotor of the bilinear two-sided operator of the physics articles is this factor, written $\tilde U$ there.
+It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz rotor**, whose congruence is the Lorentz transformation: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz rotor. The rotor of the bilinear two-sided operator of the physics articles is this factor, written $\tilde U$ there.
 
 | aspect | value |
 |---|---|
@@ -780,7 +780,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 | $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
 | $r$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real rotor |
 | $\tilde{Q} = \Rho\exp(\vec U\Theta)$ | the Hamilton representation, the root pairing |
-| $\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the second factor, the Lorentz transformation |
+| $\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the second factor, the Lorentz rotor |
 | $\Rho = r\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar decomposition |
 | $\vec U = \vec Q/B$ | the Hamilton axis, the root of $-1$ parallel to the vector part |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ on $\mathbb{B}$; $L_{\tilde Q}$ is diagonal in the eigenbasis, $R_{\tilde Q}$ has the left ideals $S_\pm$ as eigenspaces |

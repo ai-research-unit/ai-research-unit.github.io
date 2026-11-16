@@ -537,7 +537,7 @@ $$
 \qquad \tilde Q \in \mathbb{B} \ \ \text{invertible},
 $$
 
-and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The **quantum operations** of the Schrödinger picture are the **$*$-unitary** case, $\tilde Q\tilde Q^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{B}_{\Phi}$ are the case of **unit norm**, written $\tilde U_{\mathrm{lor}}$, with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
+and the two theories differ only in the subgroup of the invertible elements over which the conjugating element ranges. The **quantum operations** of the Schrödinger picture are the **$*$-unitary** case, $\tilde Q\tilde Q^{*} = e_t$; these elements form the group $\mathrm{U}(2)$. The **proper orthochronous Lorentz transformations** of $\mathbb{B}_{\Phi}$ come from the elements of **unit norm**, the **Lorentz rotors** written $\tilde U_{\mathrm{lor}}$, with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$; these elements form $SL(2,\mathbb{C})$, the double cover of that group. The two normalization conditions are genuinely different — neither group contains the other — yet both act by the same formula, on the same biquaternion space, and their intersection is the rotation group:
 
 $$
 SU(2) \subset \mathrm{U}(2), \qquad SU(2) \subset SL(2,\mathbb{C}), \qquad \mathrm{U}(2) \cap SL(2,\mathbb{C}) = SU(2).

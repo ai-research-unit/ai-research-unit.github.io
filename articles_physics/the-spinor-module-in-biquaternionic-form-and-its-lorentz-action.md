@@ -16,7 +16,7 @@ $$
 \tilde X\;\longmapsto\;\tilde U_{\mathrm{lor}}\,\tilde X .
 $$
 
-The difference is not a matter of notation. The element $-e_t$ acts trivially by the two-sided operator on $\mathbb{B}_{\Phi}$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
+The acting element is a Lorentz rotor in both displays, a biquaternion of unit norm; the two actions differ and the element does not. The difference is not a matter of notation. The element $-e_t$ acts trivially by the two-sided operator on $\mathbb{B}_{\Phi}$ and as minus the identity by the one-sided action, so the four-vector action descends to the Lorentz group and the one-sided action does not. The one-sided action is a representation of the double cover.
 
 **The field is an element of the algebra.** An element multiplies an element, and the module structure is the multiplication of the algebra; no array and no list of components enters the statement. The field carries four complex numbers, and they are the coefficients of one element.
 

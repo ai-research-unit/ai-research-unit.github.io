@@ -14,7 +14,7 @@ $$
 
 **The two dials are independent and each is an involution,** so the four settings are the four elements of $\mathbb{Z}_2\times\mathbb{Z}_2$. There is no fifth product, and none of the four is a variant of another: they are four different questions asked of one multiplication.
 
-**Each product then splits in two.** The symmetric half keeps the scalar part and loses the direction; the antisymmetric half keeps the direction and loses the scalar part. Four parents with two halves each give the twelve operations of the space, and the twelve are pairwise distinct over $\mathbb{C}$.
+**Each product then splits in two.** The symmetric half keeps the scalar part and loses the direction; the antisymmetric half keeps the direction and loses the scalar part. Four products with two halves each give twelve operations in all, the four parents and their eight halves, and the twelve are pairwise distinct over $\mathbb{C}$.
 
 **The single idea is that the algebra supplies the products and the corpus supplies the names.** The algebra proves that the four settings exist, that only one of them is associative, that only one has a central square, and that only two of the twelve satisfy a classical identity. It does not prove that a physical theory needs exactly these four jobs. The reading below is offered with that boundary stated each time.
 

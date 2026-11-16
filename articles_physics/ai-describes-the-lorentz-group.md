@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The **Lorentz group**, written $\mathrm{SO}^{+}(1,3)$, is the group of the changes of inertial frame in the theory of relativity: the linear maps of flat spacetime that keep the interval between two events, restricted to those that do not reverse time and do not mirror space.
+The **restricted Lorentz group**, written $\mathrm{SO}^{+}(1,3)$, is the group of the Lorentz transformations that preserve both the orientation of space and the direction of time in the theory of relativity. It is the group of the changes of inertial frame: the linear maps of flat spacetime that keep the interval between two events.
 
 Every element of the group is a boost times a rotation. The same group sits inside the biquaternion algebra: its unit elements act on a four-vector by the two-sided product $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators obtained that way are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.
 
@@ -31,7 +31,7 @@ $$
 \bigl(\Lambda^{0}{}_{0}\bigr)^2=1+\sum_i\bigl(\Lambda^{i}{}_{0}\bigr)^2\ \ge 1 ,
 $$
 
-so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it.
+so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the restricted Lorentz group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it.
 
 **Six parameters.** The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,
 
@@ -106,13 +106,13 @@ $$
 
 because $N(\tilde U^{*})=\overline{N(\tilde U)}=1$. **The invariance of the interval is not imposed; it is the multiplicativity of the norm.**
 
-**The operator group is the Lorentz group.** Write $\Theta_{\tilde U}$ for the map above. It is a homomorphism, $\Theta_{\tilde U}\Theta_{\tilde V}=\Theta_{\tilde U\tilde V}$, and every $\Theta_{\tilde U}$ lies in $\mathrm{SO}^{+}(1,3)$. The kernel is $\{\pm e_t\}$, since an operator that is the identity commutes with every element of the algebra and so is a scalar. Both sides have dimension six and are connected, so the image is all of $\mathrm{SO}^{+}(1,3)$, and
+**The operator group is the restricted Lorentz group.** Write $\Theta_{\tilde U}$ for the map above. It is a homomorphism, $\Theta_{\tilde U}\Theta_{\tilde V}=\Theta_{\tilde U\tilde V}$, and every $\Theta_{\tilde U}$ lies in $\mathrm{SO}^{+}(1,3)$. The kernel is $\{\pm e_t\}$, since an operator that is the identity commutes with every element of the algebra and so is a scalar. Both sides have dimension six and are connected, so the image is all of $\mathrm{SO}^{+}(1,3)$, and
 
 $$
 \boxed{\ G/\{\pm e_t\}\;\cong\;\mathrm{SO}^{+}(1,3)\ }
 $$
 
-**The correspondence is one-to-one on operators.** The two elements $\tilde U$ and $-\tilde U$ are different but give the same operator, and nothing else is lost: the operator group is exactly the Lorentz group, and it acts on four-vectors by its defining representation.
+**The correspondence is one-to-one on operators.** The two elements $\tilde U$ and $-\tilde U$ are different but give the same operator, and nothing else is lost: the operator group is exactly the restricted Lorentz group, and it acts on four-vectors by its defining representation.
 
 | the standard object | the algebra's object |
 |---|---|
@@ -165,7 +165,7 @@ The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and t
 
 ## Summary
 
-**The group.** The Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.
+**The group.** The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.
 
 **The products.** Every element is a boost times a rotation, uniquely, so the two families generate the group; but they are not a pair of subgroups, since only the rotations close.
 

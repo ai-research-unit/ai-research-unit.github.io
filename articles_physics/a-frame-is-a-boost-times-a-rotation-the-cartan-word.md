@@ -8,7 +8,7 @@ $$
 \tilde U_{\mathrm{lor}}=\tilde U_{\Psi}\tilde u_{\mathrm r},
 $$
 
-with $\tilde U_\Psi$ a positive Hermitian element of unit norm and $\tilde u_{\mathrm r}$ a unit real quaternion. The product is unique. This article proves the existence and the uniqueness, identifies the word with the **left polar decomposition** of the two-by-two matrix, counts the dimensions twice, and lists the cases in which the word degenerates.
+with $\tilde U_\Psi$ a positive Hermitian element of unit norm and $\tilde u_{\mathrm r}$ a unit real quaternion. The element is the **Lorentz rotor** and the transformation is its congruence; the two are kept apart because every statement below is about the element. The product is unique. This article proves the existence and the uniqueness, identifies the word with the **left polar decomposition** of the two-by-two matrix, counts the dimensions twice, and lists the cases in which the word degenerates.
 
 The word is the block's main coordinate system. It is what makes "three boost parameters and three rotation parameters" an honest statement, it is what the Cartan decomposition of the group *is*, and it is the object the non-uniqueness of the cover shows itself in.
 

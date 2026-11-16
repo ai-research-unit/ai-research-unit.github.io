@@ -24,7 +24,7 @@ $$
 
 **A second objection is that the entry renames a known object and calls the renaming a result.** The Krein form is standard in operator theory, and its indefinite geometry is standard with it. The answer is that what is not standard is the pair of theorems that the algebra supplies and the general theory does not. The first is the coincidence of the two null sets on the material sector, which turns a physical synonym into a sector statement. The second is the transitivity of the isometry group on the null set, which forbids the spectral split that general theory would seem to allow.
 
-**The interpretation labels continue the category's sequence.** *The H Norm: Amplitude and Frame* carries I.8.a to I.8.l, *The N Norm: Mass, Angle and the Cone* carries I.9.a to I.9.l, and the five entries from *The Partition: Two Invariants and Four Regimes* to *The Vacuum and the Nilpotent Ladder* carry I.10.a to I.10.bd. This entry carries I.11.a to I.11.l.
+**The interpretation labels continue the category's sequence.** *The H Norm: Amplitude and Frame* carries I.8.a to I.8.k, *The N Norm: Mass, Angle and the Cone* carries I.9.a to I.9.l, and the five entries from *The Partition: Two Invariants and Four Regimes* to *The Vacuum and the Nilpotent Ladder* carry I.10.a to I.10.bd. This entry carries I.11.a to I.11.l.
 
 **The readings are readings.** Every physical name below is attached to an algebraic object that is defined without it, and §*The Limits* states what the readings do not carry. In particular no dynamics, no field equation and no statistics are supplied here, and the words *state*, *weight* and *light cone* name roles inside the algebra.
 

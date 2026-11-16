@@ -131,6 +131,8 @@
 <a href="articles_physics/the-vacuum-and-the-nilpotent-ladder.html">The Vacuum and the Nilpotent Ladder</a>
 <!-- the N-degenerate, spectrally degenerate sector; read as the vacuum, the scalar line, the nilpotent stratum, the unipotent stratum with its shear, the ladder with its two rungs, and the correction that the apex is the only square-zero element of the material closure. -->
 
+<!-- the fourth regime entry, *The Rest Frame and the Exceptional Point*, is filed with the relativity articles under *The Kinds of Transformation and the Two Walls*; it carries I.10.y to I.10.ah and completes the partition read in the three entries above. -->
+
 <a href="articles_physics/the-k-norm-and-the-indefinite-structure.html">The K Norm and the Indefinite Structure</a>
 <!-- Kr-regularity and Kr-degeneracy and the two Kr sectors; read as the Krein form that is the weight of a state space keeping a time direction, the two Kr sectors as the definite and the indefinite parts, and the indefinite structure as the price of a Lorentzian state space. -->
 
@@ -190,7 +192,7 @@
 
 ## Biquaternion Relativity
 
-<!-- the block of the Lorentz group, in five parts. the ground: the algebra is $M_2(\mathbb{C})$, its traceless part under the commutator is the real Lorentz algebra $\mathfrak{so}(1,3)$, and the complexified algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$, whose two summands are the two chiral labels; the unit factor is the spinor group of $SO^{+}(1,3)$. the two decompositions: the polar word, which is the Cartan split $PK$ of a boost and a rotation, and the spectral split, which is the weight decomposition of the defining representation; the two agree on the normal elements and the disagreement is the relative angle of the axes. the representations: the finite ones are non-unitary, the unitary ones are the infinite series, and the little groups of the momentum orbits carry mass and spin. the group at work: the velocity, the sky, the rod, the clock and the signal. the fields, the larger groups and the kinematics, kept whole. an entry belongs here when its subject is the group, one of its decompositions, one of its representations, or a physical object the group acts on. physical readings. -->
+<!-- the block of the Lorentz group, in five parts. the ground: the algebra is $M_2(\mathbb{C})$, its traceless part under the commutator is the real Lorentz algebra $\mathfrak{so}(1,3)$, and the complexified algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$, whose two summands are the two chiral labels; the unit factor, the Lorentz rotor, is the spinor group of $SO^{+}(1,3)$. the two decompositions: the polar word, which is the Cartan split $PK$ of a boost and a rotation, and the spectral split, which is the weight decomposition of the defining representation; the two agree on the normal elements and the disagreement is the relative angle of the axes. the representations: the finite ones are non-unitary, the unitary ones are the infinite series, and the little groups of the momentum orbits carry mass and spin. the group at work: the velocity, the sky, the rod, the clock and the signal. the fields, the larger groups and the kinematics, kept whole. an entry belongs here when its subject is the group, one of its decompositions, one of its representations, or a physical object the group acts on. physical readings. -->
 
 ### The Frame and the Transformation
 

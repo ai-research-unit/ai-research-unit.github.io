@@ -35,17 +35,17 @@ whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
 
-**The plain form.** For two Hermitian elements $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$,
+**The plain form.** For two Hermitian elements $\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=h_{t,2}\,e_t+i\vec h_{\Psi,2}$,
 $$
-\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}\bigr)=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}\bigr)=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}
 $$
 is positive definite, of signature $(4,0)$; its $2\times2$ reading is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}$, the Euclidean pairing on $\mathbb{R}^4$ with $\mathrm{Tr}(e_t)=2$, and it is the Hilbert–Schmidt pairing of the matrix model.
 
 **The biquaternion norm and its polarization.**
 $$
-\langle\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural}=\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,1}^{\natural}=\bigl(c r_{t,1}^2-|\vec r_{\Psi,1}|^2\bigr)e_t,
+\langle\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural}=\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,1}^{\natural}=\bigl(h_{t,1}^2-|\vec h_{\Psi,1}|^2\bigr)e_t,
 \qquad
-\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural}+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\bigr)=\bigl(r_{t,1}r_{t,2}-\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr)e_t,
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural}+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\bigr)=\bigl(h_{t,1}h_{t,2}-\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}\bigr)e_t,
 $$
 is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 

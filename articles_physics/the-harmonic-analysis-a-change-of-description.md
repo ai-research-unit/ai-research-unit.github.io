@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This entry reads the sixteenth section of the mathematical category: harmonic analysis.** Eight articles, one construction. The construction is a transform, and the transform is a change of description: it rewrites a function of one variable as a function of another without adding and without deleting anything. The mathematics establishes when that rewriting is invertible, when it preserves a norm, what it does to a differential operator, and what it costs at the points where the algebra ceases to be a division algebra. Those four answers are the subject, and each of them is a physical statement before it is a mathematical one.
+**This entry reads the harmonic-analysis subsection of the mathematical category.** Eight articles, one construction. The construction is a transform, and the transform is a change of description: it rewrites a function of one variable as a function of another without adding and without deleting anything. The mathematics establishes when that rewriting is invertible, when it preserves a norm, what it does to a differential operator, and what it costs at the points where the algebra ceases to be a division algebra. Those four answers are the subject, and each of them is a physical statement before it is a mathematical one.
 
 $$
 W(t,\omega)=\exp\left(-2\pi i\,\tilde{Z}\,\omega t\right),\qquad \tilde{Z}^{2}=e_t,\qquad \tilde\Pi_\pm=\tfrac12\left(e_t\pm\tilde{Z}\right).
@@ -318,7 +318,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 ## The Interpretations
 
-### I.16.a — The Kernel Is the Clock
+### III.2.a — The Kernel Is the Clock
 
 **The object.** $W(t,\omega)=\cos\theta\,e_t-i\sin\theta\,\tilde{Z}$ with $\theta=2\pi\omega t$, a unit of the algebra for every $t$, and its Peirce coordinates $e^{\mp2\pi i\omega t}$ on the two ideals.
 
@@ -326,7 +326,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The reading.** A clock needs a reference, a period and a sense. The root supplies the reference: it is the axis about which the phase turns, and a different root is a different clock. The frequency supplies the period: one turn is $t=1/\omega$. The kernel supplies neither a sense nor a rate, and it supplies them for a reason: $W(-t,\omega)=W(t,-\omega)$, so reversing the time and negating the frequency are one operation, and the algebra contains no rule that selects one of the two. The archive's *Each Sector Is the Other's Clock* makes the same point from the other end, for the central phase: the algebra supplies the reference and the period of a clock and neither the arrow nor the rate. What this entry adds is that the clock is indexed by a root: at a pure root there are two counters, running at opposite rates on the two ideals, and a state confined to one ideal reads a definite sign of the frequency while a general element reads both. That is the algebraic origin of the sign of the frequency, and it is where a two-component clock becomes a one-component one only by projection.
 
-### I.16.b — The Frequency Is the Rate
+### III.2.b — The Frequency Is the Rate
 
 **The object.** The frequency $\omega$ conjugate to $t$, and the multiplier $2\pi i\tilde{Z}\omega_\mu$ that the transform assigns to $\partial_\mu$.
 
@@ -336,7 +336,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The rate is a label of a description and not a property of an object. The same element transformed at two different roots carries two different pairs of rates, and neither is privileged by the algebra.
 
-### I.16.c — Unitarity Belongs to the Element, Not to the Transform
+### III.2.c — Unitarity Belongs to the Element, Not to the Transform
 
 **The object.** The Plancherel identity, and the condition on the root under which it holds: $\tilde{Z}^{*}=\tilde{Z}$.
 
@@ -346,7 +346,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The condition is on the element and not on the transform, so no choice of kernel repairs a non-normal element. A root change moves the deficit; it does not remove it.
 
-### I.16.d — The Poles Are the Degenerate Set
+### III.2.d — The Poles Are the Degenerate Set
 
 **The object.** The zero set of the symbol $\Sigma(\omega)$, the set where $N(\Sigma)$ vanishes, and the poles of $\Sigma^{-1}=\bar\Sigma/N(\Sigma)$.
 
@@ -356,7 +356,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The statement is about a symbol, and a symbol is the transform of a constant-coefficient operator. For a position-dependent coupling the pole set is a set of functions and the reading becomes a statement about a dispersion relation at each point, which is a different and weaker object.
 
-### I.16.e — The Three Placements Are Three Conventions
+### III.2.e — The Three Placements Are Three Conventions
 
 **The object.** The left, right and two-sided transforms, and the two signs $R'=\pm R$ of the second root.
 
@@ -366,7 +366,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The placements are three descriptions of one object, so no experiment distinguishes them; what an experiment can see is the doubling, and the doubling is a property of a two-sided kernel and not of the algebra.
 
-### I.16.f — The Transform of a Measure Is Not Positive Definite
+### III.2.f — The Transform of a Measure Is Not Positive Definite
 
 **The object.** $G(\omega)=\int\chi_\omega\,d\mu$, its value $G(0)=\mu(\mathbb{R}^{n})e_t$, and the quadratic form $\sum_{k,l}\bar A_kA_lG(\omega_k-\omega_l)=\int\langle Z\rangle_{\natural}\,d\mu$.
 
@@ -376,7 +376,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The repair by the Euclidean pairing costs multiplicativity: $\lVert ZW\rVert\neq\lVert Z\rVert\lVert W\rVert$ in general, with $\lVert\tilde\Pi^{2}\rVert=\tfrac12$ against $\lVert\tilde\Pi\rVert^{2}=\tfrac14$ for the Hermitian idempotent $\tilde\Pi=\tfrac12(e_t+i\vec e_x)$. Positivity and multiplicativity are two properties and the algebra supplies them from two different pairings.
 
-### I.16.g — The Tail Is the Decay, and the Pole on the Axis Is the Stable Case
+### III.2.g — The Tail Is the Decay, and the Pole on the Axis Is the Stable Case
 
 **The object.** The exponential type $2\pi\rho$ of the kernel, the pole on the real axis, and the compact-support criterion.
 
@@ -386,7 +386,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The limit.** The exponential law is the leading behaviour of a residue, and a sum of residues is not an exponential. The exact statement is the bound and its attainment, not a decay law.
 
-### I.16.h — The Modular Clock Is Trivial, and That Is a Statement About the Vector
+### III.2.h — The Modular Clock Is Trivial, and That Is a Statement About the Vector
 
 **The object.** The Tomita operator $S={}^{*}$ of the left regular image at the unit, its polar decomposition $\Delta=\mathrm{id}$, and the modular flow $\sigma_t=\mathrm{id}$.
 

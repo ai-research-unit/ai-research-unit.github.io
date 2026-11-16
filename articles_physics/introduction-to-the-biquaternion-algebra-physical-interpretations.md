@@ -2,19 +2,19 @@
 
 ## Introduction
 
-**This category is derived from the Mathematical menu and inherits its order.** It takes the one hundred and fifty articles of the *Biquaternions* category in the order the menu gives them, and asks one question of each group: what does this result mean physically, and how many articles does the reading need. The answer is twenty-nine articles in twenty-three subsections. This introduction is the thirtieth entry and it is the index of the other twenty-nine.
+**This category is derived from the Mathematical menu and inherits its order.** It takes the one hundred and fifty articles of the *Biquaternions* category in the order the menu gives them, and asks one question of each group: what does this result mean physically, and how many articles does the reading need. The answer is thirty-three articles in twenty-three subsections. This introduction is the thirty-fourth entry and it is the index of the other thirty-three.
 
 **The direction of the derivation is the whole point.** An article list assembled from the physics side inherits the history of the physics. That history put the spin at the head of the algebra, among the modules, and it put the spectral reading in the same block. The mathematics places the spin at the end of the geometry, after the rotations and the Lorentz group, in a section of its own. A list built from the algebra first and corrected afterwards keeps the spin in the wrong place, and no amount of vocabulary repair moves it. A list built from the menu puts it where the mathematics puts it, by construction, and needs no correction.
 
-**The compression is five to one.** One hundred and fifty mathematics articles become twenty-nine physics articles. The ratio is not a target. It is what the reading costs: a mathematics article proves one thing, and several of them prove facets of one thing that a reader of physics wants in one place, with one statement and its interpretations.
+**The compression is a little under five to one.** One hundred and fifty mathematics articles become thirty-three physics articles. The ratio is not a target. It is what the reading costs: a mathematics article proves one thing, and several of them prove facets of one thing that a reader of physics wants in one place, with one statement and its interpretations.
 
 | part | mathematics articles | physics articles |
 | --- | --- | --- |
-| Algebra | $80$ | $19$ |
+| Algebra | $80$ | $22$ |
 | Topology | $4$ | $1$ |
-| Analysis | $36$ | $3$ |
+| Analysis | $36$ | $4$ |
 | Geometry | $30$ | $6$ |
-| total | $150$ | $29$ |
+| total | $150$ | $33$ |
 
 ## The Rule of Derivation
 
@@ -26,9 +26,11 @@
 | R2 | one physics article to one section of the mathematics menu |
 | R3 | a section may take more than one physics article only where the physics reads separate regimes or separate spaces, and every such exception is named |
 | R4 | every mathematics article of the section is visible in the physics article: as a link, as a stated result, or as an interpretation |
-| R5 | no article exists without at least one interpretation |
+| R5 | no derived article exists without at least one interpretation; the three articles taken whole from the archive are the only exceptions |
 
 **The two exceptions, named.** *The Spectral Strata* takes five entries and *The Remarkable Subspaces* takes three. The first is four regimes that a physicist names and uses: mass in motion, the rest frame, the light ray, the vacuum. Folding them into one article would put four dispersion relations in one file and lose the naming the rest of the menu relies on. The second is a state space — the split of the algebra into two geometries, the four-vector, and the state–observable–probability triple — and that triple is a reading the mathematics does not contain at all, because it is a reading and not a theorem.
+
+**Four companions sit beside an entry, and a companion is not an exception.** A companion reads a construction or a general statement that belongs to an entry but is not a section of the mathematics, so it takes no subsection of its own and changes no count of sections. There are four: the mirror beside I.1, the Fubini–Study geometry beside I.12, the operator chirality beside I.13, and the wave–particle duality beside III.2.
 
 **Every other section takes one entry, and the entry reads all of its mathematics.** A section of eight mathematics articles does not become eight entries. It becomes one entry that states the section's result in brief, links the articles, and gives the readings. The reader who wants a proof follows the link; the reader who wants the meaning reads the entry.
 
@@ -59,6 +61,10 @@
 
 **An interpretation does not derive the physics from the algebra.** It identifies which physical object the algebraic structure is. The dynamics belongs to the other physics categories of the corpus.
 
+**Six entries depart from the four-part form.** Three were taken whole from the archive — the mirror, the two sectors and the unit group — so they carry no source table and no readings, and their prose is the archive's. Three more predate the template — *Biquaternion Physical Interpretation of Operator Chirality*, *Wave–Particle Duality and the Fourier Transform* and *The Fubini–Study Geometry and the Biquaternion Norm* — and they state their results and link their sources in prose, without a source table and without labelled readings. The remaining twenty-seven follow the form exactly.
+
+**Labels are used where an entry is long enough to need them.** The thirteen algebra entries and the three analysis entries label every reading, with a letter after the subsection number (I.10.a, III.2.c); the carriers entry labels its readings in bold (IV.2.a); the three spin entries number theirs from one. A reader citing a spin reading cites the number, and a reader citing a companion cites a section.
+
 ## The Structure of the Category
 
 **Twenty-three subsections in four parts.** The middle column gives the mathematics section the entry derives from and the number of articles in it.
@@ -67,7 +73,7 @@
 
 | subsection | from | the entry |
 | --- | --- | --- |
-| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers |
+| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers; *Mirror Biquaternions and the Phy–Psy Switch*, a companion |
 | I.2 | Matrix Representations, $4$ | The Matrix Images: One Element, Two Pictures |
 | I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
 | I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
@@ -78,10 +84,12 @@
 | I.9 | Algebra with the N Norm, $5$ | The N Norm: Mass, Angle and the Cone |
 | I.10 | The Spectral Strata and the N Norm, $6$ | The Partition: Two Invariants and Four Regimes, and the four regime entries |
 | I.11 | Algebra with the K Norm, $3$ | The K Norm and the Indefinite Structure |
-| I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight |
-| I.13 | Operators, $29$ | The Operators of the Algebra |
+| I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight; *The Fubini–Study Geometry and the Biquaternion Norm*, a companion |
+| I.13 | Operators, $29$ | The Operators of the Algebra; *Biquaternion Physical Interpretation of Operator Chirality*, a companion |
 
-**I.10 is five entries and I.12 is three.** The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight.
+**I.10 is five entries and I.12 is four.** The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight, and the Fubini–Study entry alongside it reads the metric that the state space carries.
+
+**One of the four regime entries is filed elsewhere in the menu.** *The Rest Frame and the Exceptional Point* carries I.10.y to I.10.ah and is listed with the relativity articles, because its subject is a frame and a change of frame. It belongs to I.10 all the same, and the entry that precedes it, *Mass in Motion*, hands over to it by label.
 
 ### Part II — The Topology
 
@@ -94,7 +102,7 @@
 | subsection | from | the entry |
 | --- | --- | --- |
 | III.1 | General Analysis, $10$ | The Derivative, the Field and the Transform |
-| III.2 | Harmonic Analysis, $8$ | The Harmonic Analysis: The Transform as a Change of Description |
+| III.2 | Harmonic Analysis, $8$ | The Harmonic Analysis: The Transform as a Change of Description; *Wave–Particle Duality and the Fourier Transform*, a companion |
 | III.3 | Exponential Polar Decomposition, $18$ | The Exponential and Its Three Pairings |
 
 ### Part IV — The Geometry
@@ -107,6 +115,8 @@
 | IV.4 | The Spin-Half Bispinors, $5$ | The Spin-Half Carrier: The Bispinors |
 | IV.5 | The Spin-One Anti-Hermitian Subspace, $4$ | The Spin-One Carrier: The Material Sector |
 | IV.6 | Fractal Geometry, $10$ | The Quadratic Map and the Singular Sets |
+
+**IV.1 is filed with the relativity articles.** *The Rotations, the Boosts and the Groups* is the entry of the geometry section, and it is listed where a reader looks for a rotation. It opens the part all the same: the carriers of IV.2 come after it, because a spin is a weight of a representation of a rotation and cannot precede the rotation.
 
 **The spin block is four entries for fourteen mathematics articles.** The mathematics needs fourteen because fourteen proofs. This category needs four because there are four things to say: what carries the spin, and then one entry to each spin. Inside a per-spin entry the four mathematics articles of that subsection become four readings — the subspace, the norm, the spectrum and the sectors — stated once each. That block is the test case of the whole compression, and it is the part of the category that the corpus has been missing.
 
@@ -367,7 +377,7 @@
 
 **The category predicts no number.** It identifies a physical object with an algebraic structure and leaves the dynamics, the constants and the comparison with experiment to the other physics categories. An identification that would need a measurement to be true is a claim of those categories, not of this one.
 
-**The category is not complete.** Twenty-seven of the twenty-nine derived entries are titled in the menu and not yet written; their links are dead until they exist. The two written entries are the two that were taken unchanged. The order of writing follows the order of dependence: the vocabulary of the carrier and the norm first, then the spin block, then the algebra that the spin block cites.
+**The category is complete.** Every one of the thirty-three derived entries is written and sits in the folder, so no link in the menu is dead for want of an article. The writing did not follow the order of the menu; it followed the order of dependence — the vocabulary of the carrier and the norm first, then the spin block, then the algebra that the spin block cites — and the menu was filled in behind it.
 
 **The archive is not maintained.** A factual correction is made to a derived entry. An archived article that is found to be wrong is retired rather than repaired, unless its readings have not yet been carried, in which case the error is recorded in the entry that carries them.
 
@@ -391,12 +401,12 @@
 
 ## Summary
 
-- The category is derived from the Mathematical menu and inherits its order. One hundred and fifty mathematics articles in twenty sections become twenty-nine physics entries in twenty-three subsections.
-- The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces.
+- The category is derived from the Mathematical menu and inherits its order. One hundred and fifty mathematics articles in twenty sections become thirty-three physics entries in twenty-three subsections.
+- The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces, and with four companions that sit beside an entry rather than replacing one.
 - Every entry links its mathematics, states the result in brief, gives labelled interpretations, and states the limits of each.
 - The spin is the last part of the geometry, after the rotations and the groups, because a spin is a weight of a representation of the rotation.
 - The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Four articles are kept whole instead: this introduction, the two sectors, the unit group, and the mirror.
-- Twenty-seven derived entries are titled and not yet written; none exists on disk as a stub.
+- All thirty-three derived entries are written; none of the menu's links is dead for want of an article.
 
 ## Further Reading
 

@@ -155,7 +155,7 @@ That is the bracket table with the parameters put back, and it is all the physic
 
 ### The Word Near the Identity
 
-The word of the block is $\tilde U_{\mathrm{lor}}=\tilde U_\Psi\tilde u_{\mathrm r}$ of *A Frame Is a Boost Times a Rotation: The Cartan Word*, with $\tilde U_\Psi=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$ and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$. Both factors are exponentials of algebra elements, so a product of two frames is a product of two exponentials, and the bracket table is the statement about that product. Write $\tilde U_1=e^{\tilde X}$ and $\tilde U_2=e^{\tilde Y}$ with $\tilde X,\tilde Y$ in the algebra.
+The word of the block is the Lorentz rotor $\tilde U_{\mathrm{lor}}=\tilde U_\Psi\tilde u_{\mathrm r}$ of *A Frame Is a Boost Times a Rotation: The Cartan Word*, with $\tilde U_\Psi=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$ and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$. Both factors are exponentials of algebra elements, so a product of two frames is a product of two exponentials, and the bracket table is the statement about that product. Write $\tilde U_1=e^{\tilde X}$ and $\tilde U_2=e^{\tilde Y}$ with $\tilde X,\tilde Y$ in the algebra.
 
 ### The Middle Product Re-Split
 

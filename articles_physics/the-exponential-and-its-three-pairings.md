@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This entry reads the seventeenth section of the mathematical category: the exponential polar decomposition.** Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
+**This entry reads the exponential-polar-decomposition subsection of the mathematical category.** Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
 
 $$
 \boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
@@ -450,7 +450,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ## The Interpretations
 
-### I.17.a — The Word Is a Flow Split into Rate and Frame
+### III.3.a — The Word Is a Flow Split into Rate and Frame
 
 **The object.** $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the three bracketings of its four factors.
 
@@ -460,7 +460,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The word says nothing about dynamics. It is a chart of a group, so it describes a flow at one parameter value, and a statement about how the factors evolve requires an equation that the word does not supply.
 
-### I.17.b — The Two Modes Are the Two Directions of the Same Flow
+### III.3.b — The Two Modes Are the Two Directions of the Same Flow
 
 **The object.** $\lambda_\pm=Q_t\pm iB$ and the exponents $\mu_\pm=\lambda_\pm/\Rho$ with $\mu_+\mu_-=1$.
 
@@ -470,7 +470,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The two modes are the element's own, not the field's. A field that is a function of position has a two-mode structure at every point, and a global statement about modes requires the modes to be continuous, which is not automatic across the spectral wall.
 
-### I.17.c — The Mass Is the Modulus, and the Modulus Is the Only Invariant
+### III.3.c — The Mass Is the Modulus, and the Modulus Is the Only Invariant
 
 **The object.** $\Rho=\sqrt N=r e^{i\theta_{\mathrm{pha}}}$ in the Hamilton pairing.
 
@@ -480,7 +480,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The identification of a modulus with a mass is an input of the corpus, not a theorem of the algebra. The algebra supplies a central invariant and its phase; the name *mass*, the factor $mc$ and the assignment of units are physical choices, and the entry states them as choices.
 
-### I.17.d — The Amplitude Is the Hermitian Factor, and Its Exponent Lies in One Sector
+### III.3.d — The Amplitude Is the Hermitian Factor, and Its Exponent Lies in One Sector
 
 **The object.** $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}$ Hermitian positive and $\tilde Q_0$ $*$-unitary.
 
@@ -490,7 +490,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The amplitude is an operator and not a number. Reading it as a probability requires the trace normalisation, and reading it as a wave function requires a choice of slot, which the Cartan pairing does not make.
 
-### I.17.e — The Quaternion Modulus Is the Spatial Frame
+### III.3.e — The Quaternion Modulus Is the Spatial Frame
 
 **The object.** $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion, and $\exp(i\tilde\Theta)$ with a real quaternion exponent.
 
@@ -500,7 +500,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The construction needs the real part of the element invertible, so it is unavailable exactly where the element is purely imaginary — a set of real codimension four that is large in the algebra and includes physically natural elements such as $i\vec e_x+i\vec e_y$.
 
-### I.17.f — The Degenerate Case Is the Flow That Cannot Be Split
+### III.3.f — The Degenerate Case Is the Flow That Cannot Be Split
 
 **The object.** $\Sigma_{10}$ with the normal form $Q_t(e_t+\vec\Upsilon)$, the locking identity and the orthogonal frame.
 
@@ -510,7 +510,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The lock holds exactly on $B^{2}=0$ and on no neighbourhood of it, because the two conditions that produce it are equalities. A statement about an approximate lock is a statement about a perturbation and requires an estimate that the sector does not supply.
 
-### I.17.g — The Half-Angle Is the Spinor and the Full Angle Is the Vector
+### III.3.g — The Half-Angle Is the Spinor and the Full Angle Is the Vector
 
 **The object.** The one-sided exponentials with eigenvalues $e^{t\lambda_\pm}$ and the two-sided operator with eigenvalues $\lambda_i\bar\lambda_j$.
 
@@ -520,7 +520,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The limit.** The half-angle belongs to a slot and not to an element. A statement that halves an angle must name the slot it is acting on, and a statement about an element's own angle is a statement about the two-sided action.
 
-### I.17.h — The Factor of Two Is Where the Errors Live
+### III.3.h — The Factor of Two Is Where the Errors Live
 
 **The object.** The doubling rule, and the four objects that the corpus calls a boost.
 

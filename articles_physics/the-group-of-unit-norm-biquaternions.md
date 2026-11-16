@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The group of this block is the set of biquaternions of unit norm. It is the spinor group of the restricted Lorentz group, it is the group of $2\times2$ complex matrices of determinant one, and it is the manifold on which the two decompositions of the block are defined. This article states what the set is, proves that it is a group, gives its two descriptions, counts its dimension twice, identifies its compact part, and describes the exponential chart together with the set on which the chart ceases to be one-to-one.
+The group of this block is the set of biquaternions of unit norm. It is the spinor group of the restricted Lorentz group, it is the group of $2\times2$ complex matrices of determinant one, and it is the manifold on which the two decompositions of the block are defined. Its elements are the Lorentz rotors. This article states what the set is, proves that it is a group, gives its two descriptions, counts its dimension twice, identifies its compact part, and describes the exponential chart together with the set on which the chart ceases to be one-to-one.
 
 The group is the object the rest of the block acts with. The next two articles take its two actions; the two after that take its Lie algebra; the decompositions take its polar and spectral structure. Everything here is therefore load-bearing, and the article is written to be used rather than admired.
 

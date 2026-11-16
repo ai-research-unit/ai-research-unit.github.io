@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This entry reads the fifteenth section of the mathematical category: analysis.** Nine articles, one construction.
+**This entry reads the analysis block of the mathematical category.** Ten articles, one construction.
 
 $$
 \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
@@ -299,7 +299,7 @@ for $\tilde R_0$ inside $\Omega$ and $\tilde u_{\mathrm n}$ the unit normal of t
 
 **Liouville, and the price of a definite signature.** On the quaternion subspace the maximum principle holds, so a regular field bounded on all of space is constant. A non-constant regular field is therefore unbounded somewhere, and since it is real-analytic off its singular set, it has a singular set. That is a statement with a physical face: in the elliptic sector regularity forbids a non-trivial field that is finite everywhere, so every field carries a source. On the material sector the argument fails, because a hyperbolic operator has no maximum principle, and something else takes its place: the kernel is no longer the Euclidean one, the point singularity becomes a cone, and the domains of the Cauchy theory must avoid the cone and not merely the origin.
 
-**What the reading does not say.** It does not identify the volume term with a Lagrangian density, and it does not derive an action principle. The corpus's variational principles are stated for the field equations, in the archived variational articles, and carry their own functionals; the word *action* in the reading names the integral of the field against the kernel, which is a representation formula, not a variational principle. The distinction is stated in §*The Limits* and is the honest boundary of I.15.h.
+**What the reading does not say.** It does not identify the volume term with a Lagrangian density, and it does not derive an action principle. The corpus's variational principles are stated for the field equations, in the archived variational articles, and carry their own functionals; the word *action* in the reading names the integral of the field against the kernel, which is a representation formula, not a variational principle. The distinction is stated in §*The Limits* and is the honest boundary of III.1.h.
 
 ## The Four Signatures
 
@@ -366,7 +366,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ## The Interpretations
 
-### I.15.a — The Derivative Is the Field Equation
+### III.1.a — The Derivative Is the Field Equation
 
 **The object.** $\tilde\nabla$ is an element of $\mathbb{B}$, the field $\tilde\Xi$ is an element of $\mathbb{B}$, and the derivative is a product.
 
@@ -374,7 +374,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** There is no second object called the derivative. In a transcription the field and its derivative are a section and a connection; here they are two elements of one algebra, and the derivative is obtained from the field by the algebra's product. The simplification is real and it is also the restriction: differentiability becomes one condition among several, and the others are not equivalent to it.
 
-### I.15.b — The Second Order Is Where the Sectors Part
+### III.1.b — The Second Order Is Where the Sectors Part
 
 **The object.** $\Box=\tilde\nabla\tilde\nabla^{\natural}$ restricts to four different operators on the four real forms, with signatures $(4,0)$, $(0,4)$, $(1,3)$ and $(3,1)$.
 
@@ -382,7 +382,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The derivative is one object and the field equation is four, and the difference is the sector. A world with a light cone is a world whose second-order operator is hyperbolic, so the light cone is not added to the theory: it is the failure of ellipticity of the restriction of one operator to one subspace. The two sectors that carry the physics are the two indefinite ones, and the one sign that separates them is the placement of the imaginary unit.
 
-### I.15.c — The Root Is the Propagation
+### III.1.c — The Root Is the Propagation
 
 **The object.** A first-order operator $\mathsf D$ with $\mathsf D^{2}=\Box I$, and its shifted form $\mathsf D_\lambda=\mathsf D+c\gamma_5$ with $\det\mathsf D_\lambda=(\Box-\lambda)^{2}$.
 
@@ -390,7 +390,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** A second-order wave is two first-order transports. The two transported objects are the two chiral halves, which are the two minimal left ideals, and the shift is what couples them. A massless field has two decoupled halves and a massive one has two coupled halves, and the algebra says so in one line. The corpus's Dirac equation has the same structure, with the mass as the one term that multiplies on the right.
 
-### I.15.d — The On-Shell Field Is the Regular Field
+### III.1.d — The On-Shell Field Is the Regular Field
 
 **The object.** The condition $\tilde\nabla\tilde\Xi=0$, and its componentwise form $\partial_tF_0=\operatorname{div}\vec F$, $\partial_t\vec F=-\operatorname{grad}F_0-\operatorname{rot}\vec F$.
 
@@ -398,7 +398,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** "On shell" and "regular" are the same predicate, so the free field equation is not a postulate imposed on the field but a property of the function. The corpus's electromagnetism and the corpus's analysis meet here without a transcription step: the four equations of the free field are the four equations of differentiability, written once.
 
-### I.15.e — The Characteristic Cone Is the Light Cone
+### III.1.e — The Characteristic Cone Is the Light Cone
 
 **The object.** The symbol $S(\xi)=\sum_\mu\xi_\mu\mathsf M_2(e_\mu)$ and its determinant $\det S(\xi)=N(\xi)$.
 
@@ -406,7 +406,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The light cone is not put into the theory as a postulate about a metric; it is the set on which the algebra's own product fails to be invertible, read on covectors. Three descriptions coincide: the null cone of the norm, the set of zero divisors, and the characteristic set of the derivative. A theory built on this algebra therefore has a causal structure for the same reason that it has zero divisors, and the two cannot be separated.
 
-### I.15.f — The Two-Sided Condition Is the Primary Equation
+### III.1.f — The Two-Sided Condition Is the Primary Equation
 
 **The object.** $dF=L\,dZ\,R$, the rank-one criterion, and the eikonal $N(\nabla\Sigma)=0$.
 
@@ -414,7 +414,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** One can define the derivative before writing any equation, and the equation that follows is quadratic. The physical consequence is that the singular set of a solution is null, so a singularity is a light-like object and can carry the data that a particle carries. This is the reading the algebrodynamical programme develops, and the corpus records it as external: the algebraic statements are verified, the particle interpretation is the programme's.
 
-### I.15.g — The Fueter Extension Is the Axial Completion
+### III.1.g — The Fueter Extension Is the Axial Completion
 
 **The object.** The map $f_0\mapsto\Delta_4f_{\mathrm{ax},0}$ from holomorphic functions of one complex variable to regular fields on four real dimensions.
 
@@ -422,7 +422,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The minimal data of an axially symmetric field is one complex function of one complex variable, so four-dimensional data are two-dimensional data completed by a second-order operator. The invisible modes are exactly what a second derivative cannot see, and the axis is a parameter of the family, chosen one root at a time, exactly as the idempotents are chosen one axis at a time.
 
-### I.15.h — The Integral Is the Action, the Kernel Is the Propagator, the Pole Is the Shell
+### III.1.h — The Integral Is the Action, the Kernel Is the Propagator, the Pole Is the Shell
 
 **The object.** The Cauchy–Lanczos–Fueter formula, the fundamental solution $G_{\mathrm{fn}}=\tilde R^{\natural}/\|\tilde R\|^{4}$ and its distributional gradient $2\pi^{2}\delta_0e_t$.
 
@@ -430,7 +430,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The three terms of the formula are the three objects of the reading. The boundary term is the data, the volume term is the source, the kernel is the propagator. Strength enters only through the failure of regularity, so a free field has no volume term and a non-free one is its own failure integrated against the kernel. The pole set of the kernel is the shell, and the corpus's two integral articles — the action and the transform — meet at that set.
 
-### I.15.i — Liouville Forces a Singularity
+### III.1.i — Liouville Forces a Singularity
 
 **The object.** Liouville's theorem: a regular field bounded on all of $\mathbb{B}_{H}$ is constant.
 
@@ -438,7 +438,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** In the elliptic sector a non-constant regular field cannot be finite everywhere, so every field carries a singular set. The price of a definite signature is therefore that the field must be singular somewhere; the price of an indefinite signature is that the singular set is a cone rather than a point. Neither price can be avoided, and the two together say that a source-free, everywhere-finite, everywhere-regular field exists only in one case: the constant.
 
-### I.15.j — The Exponential Is the Flow
+### III.1.j — The Exponential Is the Flow
 
 **The object.** The exponential from the Lie algebra to the group of units, its closed form, and its failure to be surjective onto the norm-one group.
 
@@ -446,7 +446,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The transform is the map that turns a rate into a frame. A derivative is a derivation and a derivation is a rate; an element is a frame and acts by multiplication. The exponential is what converts one into the other, so a differential equation becomes an algebraic one, and the parameter of the group is the accumulated rate. The failure of surjectivity says that not every frame is one exponential of one rate, which is a statement about transformations and not about flows: some frames are products of flows and not flows.
 
-### I.15.k — The Two Real Directions Are Rotation and Boost
+### III.1.k — The Two Real Directions Are Rotation and Boost
 
 **The object.** The trace-free part of the Lie algebra, its two real directions, the compact subalgebra and $i$ times it, and the Killing form of signature $(3,3)$.
 
@@ -454,7 +454,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The reading.** The Lorentz group and the rotation group are the two real forms of one complex group, and the difference between them is compactness, which is the sign of one quadratic form. A boost is a rotation by an imaginary angle, and the algebra states this as the placement of the $i$ on the generator rather than as an analytic continuation performed afterwards. The group of the interval is the group of the norm, so the metric and its group are one condition.
 
-### I.15.l — Addition Fails, and That Is Non-Commutativity
+### III.1.l — Addition Fails, and That Is Non-Commutativity
 
 **The object.** The exponential and the trigonometric functions of one variable, and their failure to satisfy the addition formulas for two independent elements.
 
@@ -466,7 +466,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The entry has no dynamics.** No element is selected, no equation of motion is imposed, and no action principle is stated. The six readings are readings of one operator at different orders and on different sectors; none of them fixes a Lagrangian, and the corpus records that it has none.
 
-**The word action names an integral and not a variational principle.** I.15.h identifies the representation formula with the action because both integrate the field against a kernel and both carry the strength. It does not claim that the volume term is a Lagrangian density, and the distinction is not cosmetic: a variational principle would supply the dynamics that this entry does not have.
+**The word action names an integral and not a variational principle.** III.1.h identifies the representation formula with the action because both integrate the field against a kernel and both carry the strength. It does not claim that the volume term is a Lagrangian density, and the distinction is not cosmetic: a variational principle would supply the dynamics that this entry does not have.
 
 **No constant is derived.** $\hbar$ does not appear in the analysis, and the identification of the root's shift with a mass, of the flow's rate with an energy, and of the kernel's pole with a shell are inputs of the corpus. The algebra supplies the shape of each identification and none of the numbers.
 

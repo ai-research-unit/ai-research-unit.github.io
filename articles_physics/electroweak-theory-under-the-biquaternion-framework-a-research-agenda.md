@@ -95,7 +95,7 @@ $$
 
 and only the zero element is both. That is the whole of the chirality. Everything else in this section is read off from it by two laws of the subscript — **a product takes the letter of its right factor, and left multiplication keeps the letter** (*Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*) — together with one law of the units: right multiplication by $\vec e_t$ or by $\vec e_z$ keeps the letter, and right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two.
 
-**The letters are constants of the equation.** The Lorentz action on the field multiplies on the left, $\tilde{Ξ}\mapsto\tilde U_{\mathrm{lor}}\tilde{Ξ}$, and a left multiplication keeps the letter. The chirality multiplies on the right, and right multiplications commute with left multiplications; so the basis operator commutes with every left multiplier, the gradient among them, and the two values are conserved by the free equation.
+**The letters are constants of the equation.** The Lorentz action on the field multiplies on the left by the Lorentz rotor, $\tilde{Ξ}\mapsto\tilde U_{\mathrm{lor}}\tilde{Ξ}$, and a left multiplication keeps the letter. The chirality multiplies on the right, and right multiplications commute with left multiplications; so the basis operator commutes with every left multiplier, the gradient among them, and the two values are conserved by the free equation.
 
 **The mass bilinear is mixed.** The Dirac mass bilinear is the scalar part of an element product built on the time-like unit,
 
