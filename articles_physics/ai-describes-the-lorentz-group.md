@@ -2,9 +2,7 @@
 
 ## Introduction
 
-The **Lorentz group**, written $\mathrm{SO}^{+}(1,3)$, is the group of changes of inertial frame. Its elements are the linear maps of flat spacetime that keep the interval between two events, restricted to those that do not reverse time and do not mirror space.
-
-Relativity rests on what these maps encode. Einstein, 1905: "the same laws of electrodynamics and optics will be valid for all frames of reference for which the equations of mechanics hold good."
+The **Lorentz group**, written $\mathrm{SO}^{+}(1,3)$, is the group of the changes of inertial frame in the theory of relativity: the linear maps of flat spacetime that keep the interval between two events, restricted to those that do not reverse time and do not mirror space.
 
 Every element of the group is a boost times a rotation. The same group sits inside the biquaternion algebra: its unit elements act on a four-vector by the two-sided product $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators obtained that way are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.
 
@@ -179,7 +177,6 @@ The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and t
 
 ## Further Reading
 
-- A. Einstein, "On the Electrodynamics of Moving Bodies" (1905), §1, for the sentence quoted in the introduction.
 - S. Weinberg, *The Quantum Theory of Fields*, vol. 1, chapter 2, for the group and its algebra.
 - [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the five groups that contain the two families and what each leaves invariant.
 - [The Group of Unit-Norm Biquaternions](the-group-of-unit-norm-biquaternions.html), for the group as a set inside the algebra.
