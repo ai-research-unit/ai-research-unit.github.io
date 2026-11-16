@@ -89,6 +89,8 @@
 
 ### Algebra
 
+#### The Element, the Mirror and the Matrix Images
+
 <a href="articles_physics/the-element-the-six-subspaces-and-the-two-ledgers.html">The Element, the Six Subspaces and the Two Ledgers</a>
 <!-- the element, the coordinates and the conjugations; the group of involutions; the mirror biquaternion; the subspaces and the decompositions; the square of an element; the zero divisors and the units; the square roots; read as the two ledgers of informational and material time and space, the six subspaces named physically, the involutions as parity, time reversal, $PT$ and charge conjugation, the mirror as the second reading of one element, the square as mass and motion, the cone as the horizon of reversibility and the roots as the mass shell. -->
 
@@ -98,6 +100,8 @@
 <a href="articles_physics/the-matrix-images-one-element-two-pictures.html">The Matrix Images: One Element, Two Pictures</a>
 <!-- the families of matrix representations, the axis-free and the Pauli forms in $M_4(\mathbb{C})$ and $M_2(\mathbb{C})$; read as the $2\times2$ image of the qubit and the $4\times4$ image of the regular picture, with the statement that the two are one element described twice; the Pauli correspondence, the factor $i$ as the complex structure, the determinant as interval, causal type, mixedness and volume, the central phase as the fibre and the double cover as the spin. -->
 
+#### The Idempotents, the Modules and the Spectra
+
 <a href="articles_physics/idempotents-ideals-and-observables.html">Idempotents, Ideals and Observables</a>
 <!-- the nilpotents, the idempotents, the minimal left ideals, the Peirce decomposition and its basis, the companion nilpotents and the special decomposition; read as the idempotent that is a pure state, a rank-one projector and a vacuum at once, the ideal that is a chirality, the Peirce corners that are the four blocks of a measurement, the nilpotent that is a mode with no mass, the square-zero element as mode, differential and supercharge, and the roots of $+1$ and $-1$ as observables and complex structures. -->
 
@@ -106,6 +110,8 @@
 
 <a href="articles_physics/the-spectrum-and-the-two-modes.html">The Spectrum and the Two Modes</a>
 <!-- the spectrum, the centraliser, the semisimple–nilpotent split, the eigenbasis, the worked examples and the Jordan basis; read as the eigenvalue pair that is the two frequencies, the eigenbasis that is the frame separating them, the centraliser that is what no frame can change, the Jordan basis that a degenerate element forbids, and the difference between spectral regularity and invertibility. -->
+
+#### The Products, the Forms and the Norms
 
 <a href="articles_physics/the-four-products-composition-probability-causality-and-gauge.html">The Four Products: Composition, Probability, Causality and Gauge</a>
 <!-- the four general products and their relations, the symmetric and antisymmetric decomposition, the vector parts; read as the four ways two elements combine, the four labels of composition, probability, causality and gauge, the symmetric part as the reversible and the antisymmetric as the irreversible, the twelve products enumerated, and the probability band with its species and its geometric phase. -->
@@ -136,6 +142,8 @@
 <a href="articles_physics/the-k-norm-and-the-indefinite-structure.html">The K Norm and the Indefinite Structure</a>
 <!-- Kr-regularity and Kr-degeneracy and the two Kr sectors; read as the Krein form that is the weight of a state space keeping a time direction, the two Kr sectors as the definite and the indefinite parts, and the indefinite structure as the price of a Lorentzian state space. -->
 
+#### The Subspaces and the Operators
+
 <a href="articles_physics/the-two-sectors-split-and-the-four-bridges.html">The Two Sectors: Split and the Four Bridges</a>
 <!-- the remarkable subspaces against the four general products, the forms and the norms, and the polar decomposition against the subspaces; read as the two sectors that are two geometries, the four bridges that are the four ways an element crosses, and the anti-isometry of the two sectors. -->
 
@@ -151,7 +159,7 @@
 <a href="articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html">Biquaternion Physical Interpretation of Operator Chirality</a>
 <!-- operator chirality interpreted physically: the two slots, the four-dimensional families $L(\mathbb{B})$ and $R(\mathbb{B})$ overlapping in the scalars and spanning seven of sixteen, and operator chirality as the side on which an operator multiplies, with the four labels (left slot, right slot, both slots for the scalars, no single side); the cell of the frame that realises the split, $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3=-iR_{\vec e_z}$, a pure right multiplier and therefore an example of the right slot rather than the definition of chirality, while the biquaternion gradient is the pure left multiplier $L(\tilde\nabla)$, the two commuting because a left multiplier commutes with a right one, so that a massless field carries one state of each chirality; the mass as the central scalar, the one term of the pair with no side; the eight objects the physics does not need, a root, an idempotent, a Peirce decomposition, a Peirce basis, a spinor, a Pauli matrix, an ideal and a Clifford algebra, each stated with the physical reason, and the reason no anticommutator can supply the sign; the earlier route through the adjoined root and the central sign, and why it produced the same array; and the limit, the two halves of $\mathbb{B}$ being copies of $S$, so that the grading is vector-like and the inequivalence of $S$ and $S^{\mathrm{c}}$ belongs to the conjugate module. -->
 
-#### Rotors, Spins, Carriers and Closures
+##### Rotors, Spins, Carriers and Closures
 
 <a href="articles_physics/from-the-spin-to-the-carriers-and-the-closures.html">From the Spin to the Carriers and the Closures</a>
 <!-- the rotor and the pair that give the three spins, then the carriers and the closures: the fixed line, the spinor plane and the vector part under the trivial action, left multiplication and the conjugation, the four closure rules, the criterion of the weight string, three and no more; read as the three numbers 1, 2 and 3 with the identity $2s+1=\dim$, the two repairs of the passage from a carrier to a subspace, and the factor of two between the two spectra. -->

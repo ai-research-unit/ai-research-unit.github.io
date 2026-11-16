@@ -73,7 +73,7 @@ and the three parameters are unique: the first column of $\Lambda$ is $(\gamma,-
 
 ## The Same Group in the Biquaternion Algebra
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_\eta^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.
 
 **The norm.** The biquaternion norm is
 
@@ -82,6 +82,8 @@ N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
 $$
 
 and it is **multiplicative**, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.
+
+On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x^0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.
 
 **The group.** The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group
 
@@ -106,7 +108,7 @@ $$
 
 because $N(\tilde U^{*})=\overline{N(\tilde U)}=1$. **The invariance of the interval is not imposed; it is the multiplicativity of the norm.**
 
-**The operator group is the restricted Lorentz group.** Write $\Theta_{\tilde U}$ for the map above. It is a homomorphism, $\Theta_{\tilde U}\Theta_{\tilde V}=\Theta_{\tilde U\tilde V}$, and every $\Theta_{\tilde U}$ lies in $\mathrm{SO}^{+}(1,3)$. The kernel is $\{\pm e_t\}$, since an operator that is the identity commutes with every element of the algebra and so is a scalar. Both sides have dimension six and are connected, so the image is all of $\mathrm{SO}^{+}(1,3)$, and
+**The operator group is the restricted Lorentz group.** Write $\Theta_{\tilde U}$ for the map above. It is a homomorphism, $\Theta_{\tilde U}\Theta_{\tilde V}=\Theta_{\tilde U\tilde V}$, and every $\Theta_{\tilde U}$ lies in $\mathrm{SO}^{+}(1,3)$. The kernel is $\{\pm e_t\}$: an operator that is the identity fixes every anti-Hermitian element, and those span the algebra over $\mathbb{C}$, so $\tilde U$ is central, hence a complex scalar, and $N(\tilde U)=1$ leaves $\pm e_t$. That kernel is discrete, so the image has dimension six; a six-dimensional subgroup of a connected six-dimensional group is open, hence all of $\mathrm{SO}^{+}(1,3)$, and
 
 $$
 \boxed{\ G/\{\pm e_t\}\;\cong\;\mathrm{SO}^{+}(1,3)\ }
@@ -117,7 +119,7 @@ $$
 | the standard object | the algebra's object |
 |---|---|
 | the interval $s^2$ | the norm $N$ |
-| the condition $\det\Lambda=1$ | the condition $N=1$ |
+| the conditions $\det\Lambda=1$ and $\Lambda^{0}{}_{0}\ge1$ | the condition $N=1$ |
 | the two-to-one cover | the sign $\pm e_t$ |
 | the four-vector | an anti-Hermitian element |
 | the Lorentz transformation | the two-sided pair $\tilde U\tilde X\tilde U^{*}$ |
