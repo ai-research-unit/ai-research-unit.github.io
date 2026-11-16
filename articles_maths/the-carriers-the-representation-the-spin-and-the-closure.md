@@ -1,20 +1,32 @@
-# __The Carriers, the Representation, the Spin and the Closure__
+# __From the Spin to the Carriers and the Closures__
 
 ## Introduction
 
-The question of this article is fixed, and so is its answer.
+**The question.** What spins does the biquaternion algebra carry, and which subspaces of it carry them? The question is about the algebra itself. The spins are read from the actions the algebra has on itself, not from a matrix group imposed on it from outside.
 
-**The question.** How do spatial rotations act on the biquaternion algebra — what are its rotation-invariant pieces and one-sided ideals?
+**The answer, one line per spin.**
 
-**The answer.** A line of real dimension $1$ with the trivial action and spin $0$; a plane of real dimension $2$ with the spinor action and spin $\tfrac12$; and the vector part of real dimension $3$ with the adjoint action and spin $1$. The dimensions are $1,2,3$, and the spin is $s$ with $2s+1=\dim_\mathbb{R}$.
+$$
+s=0\ \longmapsto\ \dim_\mathbb{R}=1\ \longmapsto\ \text{fixed line }\mathbb{R}e_t\ \longmapsto\ \text{centre},
+$$
+
+$$
+s=\tfrac12\ \longmapsto\ \dim_\mathbb{R}=2\ \longmapsto\ \text{spinor plane }\Sigma\ \longmapsto\ \text{spinor space, then bispinor space},
+$$
+
+$$
+s=1\ \longmapsto\ \dim_\mathbb{R}=3\ \longmapsto\ \text{vector part }\mathfrak{k}\ \longmapsto\ \text{anti-Hermitian space}.
+$$
+
+The dimension and the spin are tied by $2s+1=\dim_\mathbb{R}$, and the tie is a relation between two counts of the same nature, both read from one real space.
+
+**The route.** The spin comes first, and a carrier is the answer to which subspace carries it. *Part A* derives $s=\tfrac12$ from the rotor group alone: the real left-regular matrices of the quaternion layer, their three generators, and the Casimir. *Part B* derives $s\in\{0,1\}$ from a pair of operators acting on two sides: each factor carries $\tfrac12$, and the addition rule for the labels of the rotor group gives $0$ or $1$. *The Carriers* then reads, for each $s$, the subspace of real dimension $2s+1$ that carries it, and the assignment is forced by the dimension and by the natural action of the algebra on itself — trivial, left multiplication, conjugation. *The Closure of a Carrier* then places each carrier in a subspace of $\mathbb{B}$. *Three and No More* closes the list, and *The Quadratic Element* reads the same three numbers from one central element of the algebra.
 
 The whole article is written over the reals, and this is not a matter of taste. A spatial rotation acts on a real space; a subspace that a rotation leaves alone is a real subspace; and the question asks for those subspaces. Over the reals the three dimensions are $1,2,3$, the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim$ compares two counts of the same nature. Over the complex numbers the three dimensions would be $1,2,3$ again, but the identity would compare a complex dimension with a weight count, which is weaker.
 
 The complex structure $i$ is an element of the algebra here and not a scalar of the ground field. It is one of the operators, on the same footing as $\vec e_x,\vec e_y,\vec e_z$, and the fact that it is available is what the closure steps use.
 
-*Preliminaries* fixes the real algebra. *The Rotation Action* fixes the action and the generator, and *The Criterion* gives the test that makes irreducibility a reading of the spectrum. *The Carriers* and *The Spin Table* contain the answer, with the three carriers read off the action itself. *Three and No More* proves that the list is complete, and *The Quadratic Element* reads the same three numbers from a second construction. *What the Construction Uses and Does Not Use* records the limits. *The Closure of a Carrier* is the last step: a carrier is a module, and the question asks for subspaces, so each carrier is closed into a subspace — the centre, the spinor and bispinor spaces, and the anti-Hermitian space. The appendix holds the computations.
-
-Two things are not claimed. The article does not read the label as anything but a spectral quantity, and it does not present the closure as a decomposition: the three closures are not the pieces of one splitting of the algebra. What it does claim, and proves, is the trichotomy itself — that the list of three is complete — in *Three and No More*, where the count is derived rather than quoted.
+Three things are not claimed. The article does not read the label $s$ as anything but a spectral quantity: it is the largest weight of a carrier, and no physical vocabulary is attached to it. It does not present the closures as a decomposition, because they are not one: the four closure dimensions sum to $18$, and the algebra has real dimension $8$. And the plane of real dimension $2$ is not a matrix group returning under another name. It is the smallest faithful carrier of the double cover, and it is realized inside $\mathbb{B}$ by the algebra's own $i$; what can be read into it is a choice of display, not a structure of the algebra.
 
 No argument array is printed anywhere below, at any point, and this is deliberate. An array carries a frame, the frame singles out a direction, and the direction is not part of the algebra: a display that fixes one axis absorbs whatever depends on that axis, and the page then stops showing it. Every statement here is made at a general axis $\vec u_{\mathrm r}$ and proved from two identities that hold at that axis. The rule and its reasons are those of *Matrix Representations Conventions*.
 
@@ -168,7 +180,189 @@ $$
 
 the largest weight, with $s=0$ for the spectrum $\{0\}$. The definition is well posed by the two lemmas: the weights are real, so the maximum exists, and they do not depend on the axis, so the number depends on the carrier and not on a choice. It agrees with the definition by dimension, the identity $2s+1=\dim_\mathbb{R}$ of *The Spin Table*: on an irreducible carrier the weights are $s,s-1,\dots,-s$, so there are $2s+1$ of them.
 
+## Part A: The Spin of a Single Rotor
+
+The first of the three spins comes from one rotor, and it comes from three real matrices and one sum of squares.
+
+**The rotor group.** The rotors form $Sp(1)$, the unit sphere of the quaternion layer,
+
+$$
+S^3=\{q\in\mathbb{H}:N(q)=1\},
+$$
+
+of real dimension $3$, and the map to $SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$. The group is $S^3$. A matrix realization of it is a separate choice, a display of the same object, and no display is used below: the computation is a computation about real left multiplication on the quaternion layer.
+
+**The left-regular generators.** Read the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension $4$. Left multiplication by $\vec e_k$ is the real operator $L_k:=L_{\vec e_k}$, and the three of them satisfy
+
+$$
+L_k^2=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z\quad\text{and cyclically.}
+$$
+
+The first identity is $\vec e_k^2=-e_t$ read in the display: the square of a basis vector is minus the identity of the algebra, so its left multiplication squares to minus the identity of the space. The second is $\vec e_x\vec e_y-\vec e_y\vec e_x=2\vec e_z$ read in the display, which is the quaternion rule $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$ applied to two different coordinate axes.
+
+**The normalization.** The generators of the action are the halved ones, $A_k=\tfrac12\vec e_k$, the same element $A(\vec u_{\mathrm r})$ of *The Rotation Action* at the coordinate axes, and with them the bracket is the standard one,
+
+$$
+[A_x,A_y]=A_z\quad\text{and cyclically},\qquad L_k=2\,\varrho_{\mathrm{def}}(A_k).
+$$
+
+**The Casimir.** The **Casimir** of the single rotor is the sum of squares of the three generators. On the quaternion layer,
+
+$$
+\sum_k L_k^2=-3\,\mathrm{I}_4,\qquad \sum_k A_k^2=\tfrac14\sum_kL_k^2=-\tfrac34\,\mathrm{I}_4 .
+$$
+
+The first is the sum of three copies of $-\mathrm{I}_4$, by $L_k^2=-\mathrm{I}_4$. The second follows from it by the factor $4$ in $L_k=2A_k$.
+
+**Proposition (the Casimir of an irreducible carrier).** On a carrier of spin $s$ the Casimir is the scalar
+
+$$
+\sum_kA_k^2=-s(s+1),
+$$
+
+the sign being that of the antisymmetric generators. The values on the three carriers are computed in *The Quadratic Element*, where the element $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=iA_k$ is shown to take the values $0,\tfrac34,2$, so that $\sum_kA_k^{2}=-C$ takes the values $0,-\tfrac34,-2$; these are $-s(s+1)$ at $s=0,\tfrac12,1$.
+
+**Theorem (a single rotor carries spin $\tfrac12$).** The quaternion layer carries the spin $\tfrac12$, and the number is read from the Casimir of the left-regular generators alone.
+
+*Proof.* By the computation above the Casimir on the layer is the scalar $-\tfrac34\mathrm{I}_4$. By the proposition a carrier of spin $s$ has the scalar $-s(s+1)$, so
+
+$$
+s(s+1)=\tfrac34\quad\Longrightarrow\quad s=\tfrac12,
+$$
+
+the other root being $s=-\tfrac32$ and the spin being taken non-negative. ∎
+
+**Remark (the type, not the copy).** The layer of real dimension $4$ is not irreducible: its weight string is $\pm\tfrac12$ each with multiplicity two, so it is two copies of the plane, by the remark on repeated weights in *The Criterion*. The Casimir does not notice, because it is a sum of squares of operators and acts as one scalar on both copies. What it reads is therefore the type and not the copy, which is exactly what a spin label is.
+
+**Remark (the two readings agree).** The Casimir gives $s=\tfrac12$. The largest weight gives $s=\tfrac12$ as well: on the plane the operator $\varrho\bigl(A(\vec u_{\mathrm r})\bigr)$ is the scalar $-\tfrac i2$, so the weights are $\pm\tfrac12$, as computed in *The Spinor Plane*. The two readings are of one number, one from a sum of squares and one from a spectrum, and the plane is where the second is read.
+
+**Remark (what the generators do not give).** The three generators $L_k$ act on one carrier, that carrier is of one type, and the type is $\tfrac12$. No other spin is obtained by squaring them, halving them or combining them, because a combination of operators on one carrier is again an operator on that carrier. Another spin needs another carrier, and the next section produces one from a second factor.
+
+## Part B: The Spin of a Pair Acting on Two Sides
+
+The other two spins come from two rotors, one acting on the left and one on the right. The step from one factor to two is the addition rule, and it is a theorem about the rotor group.
+
+**Why the two-sided form is forced.** Let $X$ be an element and $L_X$ left multiplication. Then
+
+$$
+L_X(YZ)=XYZ,\qquad L_X(Y)L_X(Z)=XYXZ,
+$$
+
+so $L_X$ is multiplicative as an operator on the algebra exactly when $X=e_t$. One factor on one side is therefore not an action by automorphisms, and the count of factors is the whole obstruction: the left side of the first display carries one copy of $X$ and the left side of the second carries two. A two-sided product carries one copy on each side, and it is multiplicative.
+
+**The two two-sided operators.** Two of them occur, and they differ in the second factor:
+
+$$
+\Theta_Q(X)=QXQ^{*},\qquad \Phi_Q(X)=QXQ^{\natural}.
+$$
+
+Both are multiplicative on the rotors. That is the content of *A.4*, and it is stated there once: for invertible $Q$,
+
+$$
+\Phi_Q=N(Q)\operatorname{Ad}_Q,\qquad \Theta_Q=\operatorname{Ad}_Q\iff Q^{*}Q\ \text{is central},
+$$
+
+and on the group of units, $Q^{*}=Q^{-1}$, both reduce to conjugation by the inverse. The second equivalence is the one that matters here: $\Theta_Q$ is conjugation by the inverse exactly on $G$, and it is not multiplicative off it.
+
+**The rotor and the boost.** The two types of element behave differently, and the difference is read off $N$ and the two conjugations.
+
+For a rotor $\tilde u_{\mathrm r}$, the coefficients are real, so $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$ and $N(\tilde u_{\mathrm r})=1$. Both operators are the same operator, and each is conjugation by the inverse.
+
+For a boost $\tilde U_{\mathrm b}=\cosh\tfrac\phi2\,e_t+i\sinh\tfrac\phi2\,\vec n$ with real unit $\vec n$, the element is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and it is not the inverse of itself. But its norm is
+
+$$
+N(\tilde U_{\mathrm b})=\cosh^{2}\tfrac\phi2-\sinh^{2}\tfrac\phi2=1,
+$$
+
+because $(i\vec n)^{2}=+e_t$ and the two squares therefore subtract. So $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$, and the operator $\Phi$ is conjugation by the inverse on the boost sector as well. The operator that fails there is $\Theta$: its second factor is $\tilde U_{\mathrm b}$ and not $\tilde U_{\mathrm b}^{-1}$, and $\tilde U_{\mathrm b}^{*}\tilde U_{\mathrm b}=\tilde U_{\mathrm b}^{2}$ is not central, so $\Theta_{\tilde U_{\mathrm b}}$ is not multiplicative at all.
+
+The sentence to keep is this. The two-sided form is compulsory, and it is conjugation by the inverse exactly on the surface where the mark in use agrees with the inverse. On the rotor sphere the two marks coincide. On the boost sector they separate, and it is the star that separates them.
+
+**The pair.** A pair of operators acting on two sides is an element of $S^3_L\times S^3_R$, acting by
+
+$$
+(q,p):X\longmapsto qXp .
+$$
+
+Two carriers occur, and they are different objects.
+
+The two-sided action on the algebra itself is the pair acting on $\mathbb{H}$, of real dimension $4$. Since right multiplication is an anti-homomorphism, $R_qR_p=R_{pq}$, the diagonal generator is the difference of the two families,
+
+$$
+A_k^{\mathrm{tot}}=A_k-A'_k,\qquad A'_k=\tfrac12R_{\vec e_k},
+$$
+
+and it satisfies the standard bracket, because the minus sign of the right bracket cancels the minus sign of the difference.
+
+Two independent systems give the tensor carrier $\mathbb{H}\otimes\mathbb{H}$, of real dimension $16$, with the generators
+
+$$
+A_k\otimes\mathrm{I}+\mathrm{I}\otimes A_k,
+$$
+
+by the Leibniz rule of a derivation. This is the carrier of two rotors, each in its own layer.
+
+**The two Casimirs.** Each factor has its own Casimir, and each is the value of a single rotor:
+
+$$
+\sum_kA_k^2=-\tfrac34\,\mathrm{I},\qquad \sum_kA_k^{\prime2}=-\tfrac34\,\mathrm{I}.
+$$
+
+The two families commute, since left and right multiplication commute, so the two Casimirs commute and each is a scalar. Each factor carries spin $\tfrac12$, by Part A.
+
+**The total Casimir.** The Casimir of the pair is the sum of squares of the total generators,
+
+$$
+\mathbf{A}^2_{\mathrm{tot}}:=\sum_k\bigl(A_k^{\mathrm{tot}}\bigr)^2 .
+$$
+
+**The addition rule.** The carriers of the rotor group are labelled by
+
+$$
+j\in\tfrac12\mathbb{Z}_{\ge0}=\{0,\tfrac12,1,\tfrac32,2,\dots\},
+$$
+
+the carrier of label $j$ having spin $j$, that is Casimir $-j(j+1)$ and complex dimension $2j+1$. Two labels combine by
+
+$$
+j_{\mathrm{tot}}\in\bigl\{|j_1-j_2|,\;\dots,\;j_1+j_2\bigr\}.
+$$
+
+This is a theorem about the carriers of $S^3$: the product of two irreducible carriers is a sum of irreducible carriers, and the labels that occur are exactly those in the display, each once. It is a statement about the group and its modules. It is not a table of coefficients, and no coefficient is computed or needed in this article.
+
+**Theorem (the pair carries spin $0$ or $1$).** Two rotors carry the spins $0$ and $1$, and no other.
+
+*Proof.* By Part A each factor carries $j=\tfrac12$. The addition rule with $j_1=j_2=\tfrac12$ gives
+
+$$
+j_{\mathrm{tot}}\in\{0,\,1\}. \qquad\blacksquare
+$$
+
+**The Casimir check.** The conclusion is confirmed by squaring, and the confirmation is a computation and not a restatement. On a summand of total spin $j$ the total Casimir is the scalar $-j(j+1)$, so the two values are
+
+$$
+j=0\ \Rightarrow\ \mathbf{A}^2_{\mathrm{tot}}=0,\qquad j=1\ \Rightarrow\ \mathbf{A}^2_{\mathrm{tot}}=-2 .
+$$
+
+On the tensor carrier of real dimension $16$ the spectrum of $\mathbf{A}^2_{\mathrm{tot}}$ is $0$ with multiplicity $4$ and $-2$ with multiplicity $12$, and nothing else. On the two-sided carrier of real dimension $4$ it is $0$ once and $-2$ three times. The equation $-j(j+1)\in\{0,-2\}$ with $j\ge0$ has exactly the solutions $j=0$ and $j=1$.
+
+**Remark (the multiplicities are dimensions).** The two spectra are consistent with the two carriers. In the two-sided case, $1+3=4$, one copy of the singlet and one of the triplet. In the tensor case, $4\cdot1+4\cdot3=16$, four copies of each, because two rotors each in a layer of types $2$ give four copies of the pair of types. The multiplicities differ and the labels do not, and the labels are what the spin is.
+
+**Remark (no spin $2$).** The pair gives $0$ and $1$ and nothing else, and the arithmetic says why. Spin $2$ would need $j_1+j_2=2$ with both labels from halves present in the product, which needs four factors of $\tfrac12$, or the product $\mathfrak{k}\otimes\mathfrak{k}$ of two vector parts, whose labels are $1\otimes1=0\oplus1\oplus2$. Neither is the pair acting on two sides. A pair is two factors, and two halves reach $1$.
+
+**Remark (the check is not circular).** The addition rule is a theorem about the carriers of $S^3$, stated before any matrix is written. The total Casimir is defined independently, as a sum of squares of explicit operators. The equation $-j(j+1)$ then identifies the eigenvalues $0$ and $-2$ with the labels $0$ and $1$. Neither step uses the other, and their agreement is the content of the check.
+
+**The three spins.** Part A and Part B together give
+
+$$
+s\in\bigl\{0,\;\tfrac12,\;1\bigr\},
+$$
+
+with $s=\tfrac12$ from one rotor and $s\in\{0,1\}$ from a pair. These three are the input of *The Carriers*: for each of them, the next section names the subspace of $\mathbb{B}$ of real dimension $2s+1$ that carries it.
+
 ## The Criterion
+
+Parts A and B fixed the three spins. What is still missing is a test, since irreducibility is the property that the dimension cannot supply: a space of the right dimension can be reducible, and the question of which subspace carries a given spin is a question of irreducibility.
 
 Irreducibility is the one property of a carrier that no dimension can supply, and it is normally checked case by case. One test covers every module that arises here, and it is worth stating on its own, because it turns irreducibility into a reading of the spectrum.
 
@@ -192,9 +386,13 @@ so on an eigenvector of weight $\lambda$ they produce an eigenvector of weight $
 
 ## The Carriers
 
-The three carriers are stated in the order line, plane, vector part: the two rotation-invariant pieces first, the one-sided one after. Each is described by the same template: the subspace, the action, the operator, the spectrum, the dimension, the spin, and the sign of a full turn.
+For each of the three spins $s\in\{0,\tfrac12,1\}$ there is a real subspace of $\mathbb{B}$ of dimension $2s+1$, invariant and irreducible under one of the actions. The spin $s=0$ is carried by the fixed line $\mathbb{R}e_t$; the spin $s=\tfrac12$ by the spinor plane $\Sigma$; the spin $s=1$ by the vector part $\mathfrak{k}$. The assignment is forced by the dimension $2s+1$ and by the natural action of $\mathbb{B}$ on itself — trivial, left multiplication, conjugation — and the criterion of the preceding section is what makes each of the three irreducible and not merely of the right size.
+
+The three carriers are stated in the order of their spins, $0$, $\tfrac12$, $1$, which is also the order line, plane, vector part: the two rotation-invariant pieces first, the one-sided one after. Each is described by the same template: the subspace, the action, the operator, the spectrum, the dimension, the spin, and the sign of a full turn.
 
 ### The Fixed Line
+
+This is the carrier of $s=0$.
 
 **The subspace.** The real line $\mathbb{R}e_t$, of real dimension $1$.
 
@@ -207,6 +405,8 @@ The three carriers are stated in the order line, plane, vector part: the two rot
 **Dimension, spin, full turn.** $\dim_\mathbb{R}=1$, $s=0$, and $2s+1=1$. The full turn has operator $\varrho(-e_t)=\mathrm{id}$, so the sign is $+1$.
 
 ### The Spinor Plane
+
+This is the carrier of $s=\tfrac12$. Its weights are $\pm\tfrac12$, matching the single-rotor Casimir of Part A.
 
 **The subspace.** Fix a unit real axis $\vec u_{\mathrm r}$ and the idempotent
 
@@ -240,6 +440,8 @@ The rotor multiplies the plane by the phase $e^{-i\theta_{\mathrm{axr}}/2}$, at 
 
 ### The Vector Part
 
+This is the carrier of $s=1$. Its weights are $\pm1,0$, matching the pair spin of Part B.
+
 **The subspace.** $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, of real dimension $3$.
 
 **The action.** The conjugation, $\varrho_{\mathrm{ad}}(u)=\operatorname{Ad}_u$. It preserves $\mathfrak{k}$ and it preserves the form, so it is a representation into $SO(\mathfrak{k})$; the map is onto with kernel $\{\pm e_t\}$.
@@ -272,7 +474,9 @@ The spinor plane occurs in neither as a summand: it is a complex line inside $S_
 
 ## Three and No More
 
-The list is complete, and the proof has one half for each action. Both halves use one form, and the form is not the trace form: it is the polar form of the norm.
+Part A and Part B produced the three spins $0,\tfrac12,1$. This section proves that the list is complete: the biquaternion algebra carries no fourth spin.
+
+The proof has one half for each action. Both halves use one form, and the form is not the trace form: it is the polar form of the norm.
 
 **The form.** For elements $X,Y$ put
 
@@ -396,7 +600,7 @@ $$
 
 ## The Closure of a Carrier
 
-A carrier is a module; the question asks for subspaces. The two are not the same object, and the passage from one to the other is a step of its own. The step is a **closure**: to a carrier, attach a real subspace of $\mathbb{B}$ in which it sits and on which the action is defined.
+A carrier carries a spin $s$. The closure places it in a subspace of $\mathbb{B}$. A carrier is a module, the question asks for subspaces, and the two are not the same object: the passage from one to the other is a step of its own. The step is a **closure**: to a carrier, attach a real subspace of $\mathbb{B}$ in which it sits and on which the action is defined.
 
 **Definition (closure).** Let $W$ be a carrier with representation space $V_W$. A **closure** of $W$ is a real subspace $\overline{W}\subseteq\mathbb{B}$ that contains $V_W$, is invariant under the action of $W$, and is the smallest subspace of $\mathbb{B}$ with a further property, named by the rule of the case.
 
@@ -405,6 +609,8 @@ The definition is deliberately incomplete, and the incompleteness is the content
 **The four properties.** For the line the property is being a complex subspace, since the line is real and the algebra has an $i$ to spend. For the plane no further property is needed: invariance under the whole group is the property, and it is the plane that fails to have it, not the definition. For the spinor space the property is containing both members of the Peirce pair. For the vector part the property is being the whole eigenspace of the conjugation.
 
 The plane needs two steps and the other two need one.
+
+The closures are read in the order of the spins: the spin $0$ line closes to the centre; the spin $\tfrac12$ plane closes to the spinor space and then, in a second step, to the bispinor space; the spin $1$ vector part closes to the anti-Hermitian space. Four rules, four properties, four subspaces.
 
 | carrier | $\dim_\mathbb{R}$ | closure | $\dim_\mathbb{R}$ | property the rule adds |
 | --- | --- | --- | --- | --- |
@@ -498,6 +704,8 @@ The same identity shows that the anticommutator runs the other way, $\{X,Y\}^{*}
 **The order of the steps.** The rotation acts; the action has three carriers; each carrier closes into a space. The first step is a question about the group, the second about the modules, the third about the subspaces. A statement about a carrier and a statement about its closure are different statements, and the two are kept apart by the naming: the line and the centre, the plane and the spinor space, the vector part and the anti-Hermitian space.
 
 ## Discussion
+
+**The three steps.** The article proceeds in three steps, and the order is the whole point. In Parts A and B the three spins $0,\tfrac12,1$ are derived from the rotor group: $s=\tfrac12$ from the Casimir of the single-rotor generators, and $s\in\{0,1\}$ from the pair acting on two sides by the addition rule. In *The Carriers* each spin is then read as a subspace of $\mathbb{B}$ of real dimension $2s+1$, the dimension and the action forcing the assignment. In *The Closure of a Carrier* each carrier is placed in a subspace of $\mathbb{B}$ by a rule named for that carrier. *Three and No More* proves that the list of three spins is complete, and *The Quadratic Element* reads the same three values $s(s+1)$ from one central element of the algebra.
 
 **What is established.** Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases and covering every carrier, because the list is complete and the completeness is proved; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; the quadratic element, whose values on the three carriers are $s(s+1)$; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.
 

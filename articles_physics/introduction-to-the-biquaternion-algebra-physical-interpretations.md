@@ -249,15 +249,15 @@
 
 ##### Operators on the Four Sectors
 
-- [Introduction to N and Spectrally Regular and Degenerate Operators](../articles_maths/introduction-to-n-and-spectrally-regular-and-degenerate-operators.html)
-- [N-Regular, Spectrally Regular Operators Acting on One Side](../articles_maths/n-regular-spectrally-regular-operators-acting-on-one-side.html)
-- [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html)
-- [N-Regular, Spectrally Degenerate Operators Acting on One Side](../articles_maths/n-regular-spectrally-degenerate-operators-acting-on-one-side.html)
-- [Hermitian Pair of N-Regular, Spectrally Degenerate Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-regular-spectrally-degenerate-operators-acting-on-two-sides.html)
-- [N-Degenerate, Spectrally Regular Operators Acting on One Side](../articles_maths/n-degenerate-spectrally-regular-operators-acting-on-one-side.html)
-- [Hermitian Pair of N-Degenerate, Spectrally Regular Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-regular-operators-acting-on-two-sides.html)
-- [N-Degenerate, Spectrally Degenerate Operators Acting on One Side](../articles_maths/n-degenerate-spectrally-degenerate-operators-acting-on-one-side.html)
-- [Hermitian Pair of N-Degenerate, Spectrally Degenerate Operators Acting on Two Sides](../articles_maths/hermitian-pair-of-n-degenerate-spectrally-degenerate-operators-acting-on-two-sides.html)
+- [Introduction to the Operators of the Four Sectors](../articles_maths/introduction-to-the-operators-of-the-four-sectors.html)
+- [One-Sided Operators on the N-Regular Sector](../articles_maths/one-sided-operators-on-the-n-regular-sector.html)
+- [The Hermitian Pair on the N-Regular Sector](../articles_maths/the-hermitian-pair-on-the-n-regular-sector.html)
+- [One-Sided Operators on the N-Regular Sector](../articles_maths/one-sided-operators-on-the-n-regular-sector.html)
+- [The Hermitian Pair on the N-Regular Sector](../articles_maths/the-hermitian-pair-on-the-n-regular-sector.html)
+- [One-Sided Operators on the N-Degenerate Sector](../articles_maths/one-sided-operators-on-the-n-degenerate-sector.html)
+- [The Hermitian Pair on the N-Degenerate Sector](../articles_maths/the-hermitian-pair-on-the-n-degenerate-sector.html)
+- [One-Sided Operators on the N-Degenerate Sector](../articles_maths/one-sided-operators-on-the-n-degenerate-sector.html)
+- [The Hermitian Pair on the N-Degenerate Sector](../articles_maths/the-hermitian-pair-on-the-n-degenerate-sector.html)
 
 ### Topology
 
@@ -306,8 +306,8 @@
 - [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html)
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html)
-- [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html)
-- [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html)
+- [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html)
+- [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html)
 
 #### Exponential Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion
 
@@ -318,8 +318,8 @@
 - [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html)
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html)
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html)
-- [The One-Sided Operator Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html)
-- [The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html)
+- [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html)
+- [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html)
 
 ### Geometry
 
@@ -332,7 +332,7 @@
 
 #### Spin Geometry
 
-- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html)
+- [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html)
 
 ##### The Spin-Zero Centre Subspace
 

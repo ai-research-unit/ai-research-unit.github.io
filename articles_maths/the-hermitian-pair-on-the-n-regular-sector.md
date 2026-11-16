@@ -1,16 +1,16 @@
-# __Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides__
+# __The Hermitian Pair on the N-Regular Sector__
 
 ## Introduction
 
-Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with *Spectrally Degenerate*.
-
-The **Hermitian pair** of the biquaternion algebra, also called the **bilinear two-sided operator**, is the operator
+Throughout this article $\tilde Q$ lies in the **N-regular sector**, so $N\neq0$ and $\tilde Q$ is a unit. The **Hermitian pair** of the biquaternion algebra, also called the **bilinear two-sided operator**, is the operator
 
 $$
 \mathrm{Sd}_{\tilde Q}:\mathbb{B}\longrightarrow\mathbb{B},\qquad \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\,\tilde X\,\tilde Q^{*},
 $$
 
 the two-sided operator — the default two-sided operator of the corpus — whose right factor is the Hermitian conjugate of its left factor. It is the operator that carries the Lorentz group on the algebra: on the norm-one slice it acts on the anti-Hermitian and Hermitian subspaces by the proper orthochronous Lorentz group, and on the full group of units it is that action composed with a dilation.
+
+**What the norm decides, and what the vector form decides.** The norm decides everything global, and the vector form $B^{2}$ decides only the Jordan type. On the whole N-regular sector the operator is invertible, of rank four, with the whole algebra as image and the central circle $U(1)$ as kernel. The wall $B^{2}=0$ changes the spectrum from the four products $\lambda_i\bar\lambda_j$ of two distinct eigenvalues to a single repeated eigenvalue, and on the Jordan part of the wall it changes the Jordan type from semisimple to one block of size three and one of size one. That is the whole difference, and it is the reason the wall is a part of this article.
 
 The polar decomposition writes an element of non-vanishing norm as four factors,
 
@@ -22,9 +22,9 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *N-Regular, Spectrally Regular Operators Acting on One Side*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operators on the N-Regular Sector*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential on the N-Regular Sector*.
 
-The plan is the following. §*The Two-Sided Operator of the Word* proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the two-sided operator as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. The exponent bookkeeping is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
+The plan is the following. §*The Two-Sided Operator of the Word* proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the two-sided operator as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Wall $B^{2}=0$* treats the unipotent case, its $3+1$ Jordan structure and its fixed directions. §*The Boundary: the Null Cone* records the comparison with the N-degenerate article. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -441,9 +441,151 @@ so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type 
 
 **Remark (what the image is not).** The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the two-sided operator sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and of this article.
 
-## The Null Cone
+## The Wall $B^{2}=0$: the Unipotent Case
 
-On the null cone $\langle\tilde Q\rangle_{\natural}=0$ the polar word does not exist, but the two-sided operator does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The two-sided operator therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
+On the wall the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, and the operator is a positive scalar times a unipotent operator: $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\,\mathrm{Sd}_{\tilde Q_0}$ with $\tilde Q_0=e_t+\vec\Upsilon$. The scalar is $\lvert Q_t\rvert^{2}$, not $Q_t^{2}$, because the operator carries the Hermitian conjugate on the right. The scalar line $\vec\Upsilon=0$ is the case $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{id}$, with geometric multiplicity four and Jordan type $1+1+1+1$; the sections below describe the Jordan part $\vec\Upsilon\neq0$.
+
+### The Unipotent Operator
+
+Let $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, the left multiplication by $\vec\Upsilon$ and the right multiplication by $\vec\Upsilon^{*}$. They commute, and
+
+$$
+A^2=0,
+\qquad
+B^2=0,
+\qquad
+\mathrm{Sd}_{\tilde U}=I+A+B+AB.
+$$
+
+**Proposition (the Jordan structure).** On the Jordan part, $\mathrm{Sd}_{\tilde U}$ has the single eigenvalue $1$, and its nilpotent part
+
+$$
+\mathsf N=\mathrm{Sd}_{\tilde U}-I=A+B+AB
+$$
+
+satisfies $\mathsf N^2=2AB$, $\mathsf N^3=0$, with $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. The Jordan form is one block of size three and one block of size one.
+
+*Proof.* The operators $A$ and $B$ commute and square to zero, so
+
+$$
+\mathsf N^2=2AB,
+\qquad
+\mathsf N^3=3AB(A+B)=0,
+$$
+
+because $A^2=B^2=0$. The rank of $A$ is two, and the rank of $B$ is two; their product $AB$ has rank one because the image of $B$ is the right ideal $\vec\Upsilon^{*}\mathbb{B}$ and the kernel of $A$ is the right annihilator of $\vec\Upsilon$, whose intersection with that image is one complex line. Hence $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^2=1$. A nilpotent on a four-dimensional space with $\mathsf N^3=0$ and $\operatorname{rank}\mathsf N^2=1$ has one block of size three and one of size one.
+
+Consequently $\mathrm{Sd}_{\tilde Q}$ has the single eigenvalue $|Q_t|^2$, with one $3\times3$ Jordan block and one $1\times1$ block. Its determinant is
+
+$$
+\det\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{8},
+$$
+
+the fourth power of the element determinant, as in the regular sector.
+
+The fixed subspace of $\mathrm{Sd}_{\tilde U}$ is two-dimensional. It is not the centralizer of $\tilde U$: the norm-one element is not $*$-unitary, and $\mathrm{Sd}_{\tilde U}$ is not a conjugation. One fixed vector comes from the $3\times3$ block and one from the $1\times1$ block; both are written explicitly in §*The Fixed Directions*.
+
+### The Polar Decomposition of the Two-Sided Operator
+
+Write the Cartan pairing of the element as $\tilde Q=\tilde H\tilde V$ with $\tilde H=r\tilde U_{\mathrm b}$ positive and $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ $*$-unitary. Then
+
+$$
+\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde H}\circ\mathrm{Sd}_{\tilde V},
+\qquad
+\mathrm{Sd}_{\tilde H}(\tilde X)=\tilde H\tilde X\tilde H^{*},
+\qquad
+\mathrm{Sd}_{\tilde V}(\tilde X)=\tilde V\tilde X\tilde V^{*}.
+$$
+
+The first factor is a positive operator on $\mathbb{B}$, because $\tilde H$ is positive. The second is a $*$-unitary operator, because $\tilde V$ is $*$-unitary. This is the polar decomposition of the operator $\mathrm{Sd}_{\tilde Q}$.
+
+The product $\mathrm{Sd}_{\tilde Q}$ is $\lvert Q_t\rvert^{2}$ times a unipotent operator, while the two factors are not unipotent. The positive factor has eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd}}}$ on the two spinor slots, and the $*$-unitary factor has eigenvalues $e^{\pm i\theta}$ after the phase cancels. The product has the single eigenvalue $\lvert Q_t\rvert^{2}$. The factors do not commute, and the non-commutativity is the Jordan defect of the two-sided operator.
+
+### The Coalescence of the Two Slots
+
+In the regular sector the two-sided operator has two spinor slots, and the rotor angle and the rapidity are doubled on them. On the wall the slots do not disappear; they coalesce into the Jordan chain. The $3\times3$ block and the $1\times1$ block are the remnants of the two slots: one slot keeps a fixed vector, and the other carries the nilpotent chain of length three.
+
+The central phase is invisible in the two-sided operator, as in the regular sector: $\mathrm{Sd}_{e^{i\theta_{\mathrm{pha}}}}=\mathrm{id}$. The phase is visible only in the one-sided operator. The sector therefore preserves the one-sided/two-sided operator contrast: the phase is a one-sided datum, and the two-sided operator sees only the scale, the boost and the rotor.
+
+### The Fixed Directions
+
+The fixed subspace is $\ker\mathsf N$, of dimension two. Put $\vec c=\vec A\times\vec B/a^2$, so that $\lvert\vec c\rvert=1$, and $X=e_t+i\vec c$.
+
+*Proposition.* $\mathrm{Sd}_{\tilde U}$ fixes $\vec A$ and $X$. These two vectors span the fixed subspace. On $\mathbb{B}_{\Phi}$ the fixed null vector is $iX=ie_t-\vec c$.
+
+*Proof.* From $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$,
+
+$$
+\Upsilon\vec A=-a^2-i\vec A\times\vec B=\vec A\bar\Upsilon,\qquad
+\bar\Upsilon^2=0,
+$$
+
+and
+
+$$
+\Upsilon\vec c=-\vec B+i\vec A,\qquad
+\vec c\bar\Upsilon=\vec B+i\vec A.
+$$
+
+Hence $\Upsilon X=\Upsilon+i\Upsilon\vec c=0$ and $X\bar\Upsilon=\bar\Upsilon+i\vec c\bar\Upsilon=0$. Therefore
+
+$$
+\mathrm{Sd}_{\tilde U}(\vec A)
+=\vec A+\Upsilon\vec A-\vec A\bar\Upsilon-\Upsilon\vec A\bar\Upsilon=\vec A,
+$$
+
+because the two middle terms are equal and cancel, and $\Upsilon\vec A\bar\Upsilon=\vec A\bar\Upsilon^2=0$; and
+
+$$
+\mathrm{Sd}_{\tilde U}(X)
+=X+\Upsilon X-X\bar\Upsilon-\Upsilon X\bar\Upsilon=X.
+$$
+
+The vector $\vec A$ has zero scalar part and $X$ has scalar part one, so they are independent. Since $\ker\mathsf N$ is two-dimensional, they span it.
+
+The vector $X$ is null, $\langle X\rangle_{\natural}=1-\lvert\vec c\rvert^2=0$, so the fixed line is the null line of the rotation. The vector $\vec A$ is spacelike, of norm $-a^2$.
+
+### Worked Example on the Wall
+
+Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
+
+$$
+\mathsf M(\mathrm{Sd}_{\tilde Q})=
+\begin{pmatrix}
+3 & 0 & -2i & 2i\\
+0 & 1 & 0 & 0\\
+2i & 0 & 1 & -2\\
+2i & 0 & 2 & -1
+\end{pmatrix}.
+$$
+
+The matrix is the identity plus
+
+$$
+\mathsf N=
+\begin{pmatrix}
+2 & 0 & -2i & 2i\\
+0 & 0 & 0 & 0\\
+2i & 0 & 0 & -2\\
+2i & 0 & 2 & -2
+\end{pmatrix}.
+$$
+
+The rank of $\mathsf N$ is two, the rank of $\mathsf N^2$ is one, and $\mathsf N^3=0$. The second coordinate is fixed, and the remaining three coordinates carry one Jordan block of size three. The determinant is one.
+
+The Cartan factors are
+
+$$
+\tilde H=\sqrt2\,e_t+i\frac{\vec e_y+\vec e_z}{\sqrt2},
+\qquad
+\tilde V=\frac{e_t+\vec e_x}{\sqrt2},
+$$
+
+and the two-sided operator is the composition of the positive operator $\mathrm{Sd}_{\tilde H}$ and the $*$-unitary operator $\mathrm{Sd}_{\tilde V}$. The example shows the general structure: the product is unipotent, the factors are not, and the fixed coordinate is the remnant of the $1\times1$ block.
+
+## The Boundary: the Null Cone
+
+The null cone $N=0$ is the subject of *The Hermitian Pair on the N-Degenerate Sector*. Only the two identities that connect the operator on the cone to the operator on the sector are recorded here. On the cone the polar word does not exist, but the two-sided operator does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The two-sided operator therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
 
 $$
 \mathsf M_2(\tilde Q)\,X\,\mathsf M_2(\tilde Q)^{*}
@@ -483,11 +625,13 @@ $$
 \operatorname{spec}\mathrm{Sd}_{\tilde Q}
 =\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}.
 $$
-The two-sided operator is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The two-sided operator is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Exponential on the N-Regular Sector*.
 
 The image of the two-sided operator on the group of units is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $r=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the two-sided operator survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
 
 The phase is the one factor that the two-sided operator does not see. It is visible to the norm, to the determinant and to the module, which is why the polar word carries it; it is invisible to the vector action, which is why the two-sided operator is a representation whose image is the conformal Lorentz group and not the full group of units.
+
+On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}\mathrm{Sd}_{e_t+\vec\Upsilon}$. The nilpotent part $\mathsf N=\mathrm{Sd}_{e_t+\vec\Upsilon}-I=A+B+AB$, with $A=L_{\vec\Upsilon}$ and $B=R_{\vec\Upsilon^{*}}$, satisfies $\mathsf N^{2}=2AB$, $\mathsf N^{3}=0$, $\operatorname{rank}\mathsf N=2$ and $\operatorname{rank}\mathsf N^{2}=1$: one Jordan block of size three and one of size one, eigenvalue $\lvert Q_t\rvert^{2}$, determinant $\lvert Q_t\rvert^{8}$. The fixed subspace is two-dimensional, spanned by the spacelike vector $\vec A$ and the null vector $e_t+i\vec c$ with $\vec c=\vec A\times\vec B/a^{2}$. The two spinor slots coalesce into the Jordan chain.
 
 ## Summary of Notation
 
@@ -524,8 +668,8 @@ The phase is the one factor that the two-sided operator does not see. It is visi
 
 ## Further Reading
 
-- [N-Regular, Spectrally Regular Operators Acting on One Side](n-regular-spectrally-regular-operators-acting-on-one-side.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ by the phase $i$.
-- [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the doubling rule and the cancellation of the phase.
+- [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html), for the one-sided companion: the left and right multiplications, the sector decomposition and the exchange $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ by the phase $i$.
+- [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the operator exponential, the doubling rule and the cancellation of the phase.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.

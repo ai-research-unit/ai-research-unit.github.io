@@ -169,4 +169,4 @@ On the closure the norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Regular Sector](the-n-regular-sector.html), for the open set on which the norm does not vanish
 - [The Topology of the Zero Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the cone as a union of null lines
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

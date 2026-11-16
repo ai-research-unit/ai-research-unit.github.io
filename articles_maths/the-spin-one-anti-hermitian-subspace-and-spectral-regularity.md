@@ -156,4 +156,4 @@ On the anti-Hermitian closure the square of the vector part is $\lvert\vec v\rve
 - [The Spectrum](the-spectrum.html), for the two eigenvalues of an element and the quadratic relation
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the sector in which the carrier away from the origin lies
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector containing the null cone of the closure
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

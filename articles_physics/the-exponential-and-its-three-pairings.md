@@ -45,8 +45,8 @@ The eighteen articles fall into two blocks of nine, one for each sector. The two
 | [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) | the scale-with-rotor bracketing, its construction, its domain |
 | [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) | the scale-with-phase bracketing, the root of $-1$, the eigenbasis and the two spinor spaces |
 | [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) | the scale-with-boost bracketing, the two involutive kinds, the total domain |
-| [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html) | the representation identity, the spectrum on one slot, the half-angle |
-| [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html) | the quadratic operator, the four products, the doubling rule |
+| [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html) | the representation identity, the spectrum on one slot, the half-angle |
+| [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html) | the quadratic operator, the four products, the doubling rule |
 
 | the degenerate block: $N\neq0$, $B^{2}=0$ | what it owns |
 | --- | --- |
@@ -57,8 +57,8 @@ The eighteen articles fall into two blocks of nine, one for each sector. The two
 | [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html) | the same bracketing on the rigid sector |
 | [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html) | the root on the spectral wall, where the axis is defined and the angle is pinned |
 | [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-degenerate-biquaternion.html) | the total pairing on the rigid sector |
-| [The One-Sided Operator Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html) | the representation identity in the defective case |
-| [The Two-Sided Exponential of an N-Regular, Spectrally Degenerate Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-degenerate-biquaternion.html) | the quadratic operator without a common eigenbasis |
+| [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html) | the representation identity in the defective case |
+| [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html) | the quadratic operator without a common eigenbasis |
 
 **The shape of the table is the shape of the section.** Nine articles for the sector with two eigenvalues and nine for the sector with one, and the two sets are parallel line by line: the word, its relation to the eigenbasis, its numbers, its numbers with the eigenbasis, the three pairings, and the two actions. The parallelism is the section's claim: the polar decomposition does not care whether the element is semisimple, and every other decomposition in the algebra does.
 
@@ -613,8 +613,8 @@ The second row is the truncation, and it is the reason the degenerate sector has
 - [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the scale-with-rotor bracketing.
 - [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the scale-with-phase bracketing and the eigenbasis.
 - [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), the scale-with-boost bracketing and its total domain.
-- [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), the representation identity and the half-angle.
-- [The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion](../articles_maths/the-two-sided-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), the four products and the doubling rule.
+- [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html), the representation identity and the half-angle.
+- [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html), the four products and the doubling rule.
 - [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), the reading of the central modulus.
 - [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), the norm's own dictionary.
 - [The H Norm: Amplitude and Frame](the-h-norm-amplitude-and-frame.html), the amplitude as the measure that survives the largest group of motions.

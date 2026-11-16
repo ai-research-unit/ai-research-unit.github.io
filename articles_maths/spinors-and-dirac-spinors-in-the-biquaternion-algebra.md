@@ -22,7 +22,7 @@ parameter for the coupling of the two parts: the coupling is a right multiplicat
 one complex number times a fixed exchange is the whole datum the pair costs.
 
 The predicates, the sectors and the strata are those of *Relations between the N Norm and Spectral Regularity and Degeneracy*, and they are defined
-again below so that the article stands alone. The carriers are *The Carriers, the Representation, the Spin and the Closure*. The levels themselves
+again below so that the article stands alone. The carriers are *From the Spin to the Carriers and the Closures*. The levels themselves
 are *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors* and *Introduction to the Spin-One Anti-Hermitian
 Subspace*.
 
@@ -504,7 +504,7 @@ the ideals, and the pairing of the two halves.
 of the plane and the degenerate plane inside an ideal.
 - [The Spin-Half Bispinors and the Sectors of N and Spectral Regularity](the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.html),
 for the four intersections of the bispinor space with the sectors, with their dimensions.
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the definition of
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the definition of
 spin as a maximal weight, the two identities from which the spectra are read, and the double cover.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html),
 for the two predicates, the four sectors and the strata.

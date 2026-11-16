@@ -361,7 +361,7 @@ The completeness of the catalogue is therefore a statement about the base algebr
 ## Further Reading
 
 - [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the three carriers named and read physically, with the particle assignments.
-- [The Carriers, the Representation, the Spin and the Closure](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the carriers, the quadratic element, the criterion and the proof that multiplication kills spin two.
+- [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the carriers, the quadratic element, the criterion and the proof that multiplication kills spin two.
 - [The Carriers, the Spin and the Closure](the-carriers-the-spin-and-the-closure.html), for the partition by $N$ and $B^2$ that the three carriers cut.
 - [The Self-Dual and Anti-Self-Dual Split: Spin One from the Biquaternion Material Sector](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the spin-one case.
 - [The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form](the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.html), for the spin-$\tfrac32$ case and its constraint structure.

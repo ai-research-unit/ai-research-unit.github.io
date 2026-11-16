@@ -1,16 +1,20 @@
-# __N-Regular, Spectrally Regular Operators Acting on One Side__
+# __One-Sided Operators on the N-Regular Sector__
 
 ## Introduction
 
-Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with *Spectrally Degenerate*.
+The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two, and the split is the primary one for the operators: $N\neq0$ is the unit group $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, open and dense of real dimension eight, and $N=0$ is the null cone, closed of real dimension six. This article treats the first half.
 
-The biquaternion algebra acts on itself by left multiplication and by right multiplication. For a parameter $\tilde Q$ the two **one-sided operators** are
+Throughout, $\tilde Q$ lies in the **N-regular sector**, so $N\neq0$ and $\tilde Q$ is a unit. The biquaternion algebra acts on itself by left and right multiplication. For a parameter $\tilde Q$ the two **one-sided operators** are
 
 $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides*. This article reads the one-sided factors: the polar word
+The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Hermitian Pair on the N-Regular Sector*.
+
+**What the norm decides, and what the vector form decides.** Inside the N-regular sector the second condition $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ cuts one wall, and the two sides of the wall behave differently in exactly one way. Everything global is fixed by $N$ alone: both operators are invertible, both have rank four, both have the whole algebra as image and zero as kernel, and the parameter map is faithful. The wall $B^{2}=0$ changes only the **eigenvalue count and the Jordan type**: off the wall there are two distinct eigenvalues and a semisimple operator, on the wall one repeated eigenvalue, and on the Jordan part of the wall two Jordan blocks of size two. That is the whole difference, and it is the reason the wall is a part of this article and not an article of its own.
+
+**The polar word.** The article reads the operators through the polar word
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -20,7 +24,7 @@ $$
 
 with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
-The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
 
 The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. Its block form in the splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is
 
@@ -49,7 +53,7 @@ $$
 
 It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided operator cancels: $\mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
 
-The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Vanishing of the Modulus* records the degenerate case. The article closes with the summary, the notation and the readings.
+The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Wall $B^{2}=0$* treats the unipotent case. §*The Boundary: the Null Cone* records the comparison with the N-degenerate article. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -628,9 +632,146 @@ The following table collects the comparison. The rank is the complex rank of the
 
 **Corollary (the real forms are two-sided).** The only one-sided multiplications that preserve $\mathbb{B}_{\Phi}$ are the real scalars, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore does not give the Lorentz group on $\mathbb{B}_{\Phi}$. The norm-one one-sided operators are $\mathbb{C}$-orthogonal. The proper orthochronous Lorentz group is not among them: it is the image of the two-sided operator on the norm-one slice, the identity component of the subgroup of the $\mathbb{C}$-orthogonal group that also preserves the two real forms.
 
-## The Null Cone
+## The Wall $B^{2}=0$: the Unipotent Case
 
-On the null cone the polar word does not exist, but both one-sided operators do. Let $\tilde Q\neq0$ with $\langle\tilde Q\rangle_{\natural}=0$. In the matrix model $\mathsf M_2(\tilde Q)=uv^{*}$ with $u$ a nonzero column and $v^{*}$ a nonzero row. Then
+The second condition $B^{2}=0$ is the wall inside the N-regular sector. Off the wall the element has two distinct eigenvalues and the operators are semisimple. On the wall the element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, the operators are a scalar times a unipotent operator, and the Jordan type leaves the semisimple case. Nothing else changes: the operators remain invertible, of rank four, with the whole algebra as image and zero as kernel.
+
+The scalar line $\vec\Upsilon=0$ is the case $\tilde Q=Q_t e_t$. The operator is $Q_t\,\mathrm{id}$, with the single eigenvalue $Q_t$ of algebraic and geometric multiplicity four and Jordan type $1+1+1+1$; that case needs no separate treatment, and the sections below describe the Jordan part $\vec\Upsilon\neq0$.
+
+### The Jordan Structure
+
+Let
+
+$$
+\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+\vec\Upsilon\neq0.
+$$
+
+Then
+
+$$
+L_{\tilde Q}=Q_t\bigl(I+L_{\vec\Upsilon}\bigr),
+\qquad
+L_{\vec\Upsilon}^2=0,
+\qquad
+L_{\vec\Upsilon}\neq0.
+$$
+
+**Proposition (the two blocks).** The operator $L_{\vec\Upsilon}$ has rank two and kernel of dimension two. The operator $L_{\tilde Q}$ has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^2$, geometric multiplicity two and two Jordan blocks of size two. The same statements hold for $R_{\tilde Q}$.
+
+*Proof.* The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$, of complex dimension two because $\vec\Upsilon\neq0$ and $\vec\Upsilon^2=0$; the kernel is the right annihilator of $\vec\Upsilon$, also of complex dimension two. The square is zero, so the image lies in the kernel and both have dimension two. A nilpotent of index two on a four-dimensional space with rank two has two blocks of size two. Adding the scalar $Q_t$ shifts the eigenvalue and preserves the blocks.
+
+The determinant and the trace follow from the matrix model:
+
+$$
+\det_{\mathbb{C}}L_{\tilde Q}=Q_t^4,
+\qquad
+\operatorname{tr}L_{\tilde Q}=4Q_t.
+$$
+
+The determinant is the fourth power of the scalar, not the square, because the left multiplication acts on the four-dimensional algebra. The trace is four times the scalar because the diagonal of $L_{\tilde Q}$ has the four entries $Q_t$.
+
+The polar word splits the operator into four one-sided factors. The modulus is the scalar $\Rho\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
+
+$$
+L_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\tilde X,
+\qquad
+L_{\tilde u_{\mathrm r}}(\tilde X)=\tilde u_{\mathrm r}\tilde X.
+$$
+
+Their product is the left multiplication by the unit factor,
+
+$$
+L_{\tilde U}=L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
+\qquad
+\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr).
+$$
+
+The product is unipotent up to $\varepsilon$, while the two factors are not. This is the one-sided form of the Cartan phenomenon: the operator $L_{\tilde U}$ has a double eigenvalue and two Jordan blocks, and its two polar factors are left multiplications by a positive element and a rotor, each with distinct eigenvalues.
+
+The one-sided operator therefore sees the defect more directly than the element. The element is defective but scalar; the operator is defective on a four-dimensional space and exhibits the two blocks explicitly.
+
+### The Word One-Sided
+
+The polar word splits the operator into four one-sided factors. The modulus is the scalar $\Rho\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
+
+$$
+L_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\tilde X,
+\qquad
+L_{\tilde u_{\mathrm r}}(\tilde X)=\tilde u_{\mathrm r}\tilde X.
+$$
+
+Their product is the left multiplication by the unit factor,
+
+$$
+L_{\tilde U}=L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
+\qquad
+\tilde U=\varepsilon\bigl(e_t+\vec\Upsilon\bigr).
+$$
+
+The product is unipotent up to $\varepsilon$, while the two factors are not. This is the one-sided form of the Cartan phenomenon: the operator $L_{\tilde U}$ has a double eigenvalue and two Jordan blocks, and its two polar factors are left multiplications by a positive element and a rotor, each with distinct eigenvalues.
+
+The one-sided operator therefore sees the defect more directly than the element. The element is defective but scalar; the operator is defective on a four-dimensional space and exhibits the two blocks explicitly.
+
+### Worked Example
+
+Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
+
+$$
+\mathsf M(L_{\tilde Q})=
+\begin{pmatrix}
+1 & -1 & -i & 0\\
+1 & 1 & 0 & i\\
+i & 0 & 1 & -1\\
+0 & -i & 1 & 1
+\end{pmatrix},
+\qquad
+\mathsf M(L_{\vec\Upsilon})=
+\begin{pmatrix}
+0 & -1 & -i & 0\\
+1 & 0 & 0 & i\\
+i & 0 & 0 & -1\\
+0 & -i & 1 & 0
+\end{pmatrix}.
+$$
+
+The second matrix squares to zero and has rank two. The first is the identity plus the second, so it has the single eigenvalue $1$, two Jordan blocks of size two, determinant $1$ and trace $4$.
+
+The polar factors are left multiplications by
+
+$$
+\tilde U_{\mathrm b}=\sqrt2\,e_t+i\frac{\vec e_y+\vec e_z}{\sqrt2},
+\qquad
+\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
+$$
+
+Their left multiplication matrices are not unipotent. Their product is the unipotent matrix above. The example shows the same contrast as the element-level article: the factors are diagonalizable, the product is not.
+
+### The Image and the Kernel of the Nilpotent Part
+
+Because $\tilde Q$ is a unit, $L_{\tilde Q}$ is invertible: its image is the whole algebra and its kernel is zero. The interesting image and kernel are those of $L_{\vec\Upsilon}$, not of $L_{\tilde Q}$.
+
+The image of $L_{\vec\Upsilon}$ is the left ideal generated by $\vec\Upsilon$,
+
+$$
+\operatorname{im}L_{\vec\Upsilon}=\mathbb{B}\vec\Upsilon
+=\mathbb{C}\{\vec\Upsilon,\vec\Upsilon\vec e_x,\vec\Upsilon\vec e_y,\vec\Upsilon\vec e_z\},
+$$
+
+of dimension two. The kernel is the right annihilator
+
+$$
+\ker L_{\vec\Upsilon}=\{\tilde X:\vec\Upsilon\tilde X=0\},
+$$
+
+also of dimension two. The kernel is the generalized eigenspace of $L_{\tilde Q}$ at $Q_t$; the image is the left ideal inside it. The Jordan blocks live on a complement to the kernel.
+
+## The Boundary: the Null Cone
+
+The null cone $N=0$ is the subject of *One-Sided Operators on the N-Degenerate Sector*. Only the comparison of the two readings is recorded here, because it measures how much the one-sided operator keeps. On the cone the polar word does not exist, but both one-sided operators do. Let $\tilde Q\neq0$ with $\langle\tilde Q\rangle_{\natural}=0$. In the matrix model $\mathsf M_2(\tilde Q)=uv^{*}$ with $u$ a nonzero column and $v^{*}$ a nonzero row. Then
 
 $$
 \mathsf M_2(L_{\tilde Q}\tilde X)=\mathsf M_2(\tilde Q)\,\mathsf M_2(\tilde X)=u\,(v^{*}\mathsf M_2(\tilde X)).
@@ -689,7 +830,9 @@ $$
 
 the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\theta_{\mathrm{pha}})$, and the sectors are reached exactly at $\theta_{\mathrm{pha}}\equiv0$ and $\theta_{\mathrm{pha}}\equiv\pi/2$ modulo $\pi$.
 
-The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion* and *The Two-Sided Exponential of an N-Regular, Spectrally Regular Biquaternion*.
+The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
+
+On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Upsilon}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$ and its kernel is the right annihilator, both of complex dimension two.
 
 In the eigenbasis the left multiplication is diagonal,
 $$
@@ -740,8 +883,8 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 ## Further Reading
 
-- [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html), for the two-sided operator, the factor-by-factor doubling rule and the cancellation of the phase.
-- [The One-Sided Operator Exponential of an N-Regular, Spectrally Regular Biquaternion](the-one-sided-operator-exponential-of-an-n-regular-spectrally-regular-biquaternion.html), for the operator exponential, the half-spin theorem and the weights.
+- [The Hermitian Pair on the N-Regular Sector](the-hermitian-pair-on-the-n-regular-sector.html), for the two-sided operator, the factor-by-factor doubling rule and the cancellation of the phase.
+- [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential, the half-spin theorem and the weights.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular, Spectrally Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-spectrally-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.

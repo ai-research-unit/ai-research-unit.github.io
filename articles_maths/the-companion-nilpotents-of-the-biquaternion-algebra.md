@@ -174,7 +174,7 @@ Every biquaternion has a unique Peirce expansion, with the scalar part and the a
 ## Further Reading
 
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the ideals, their bases and the sphere of axes
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the ideals as carriers and for the weight of $\vec\Upsilon_{-+}$
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the ideals as carriers and for the weight of $\vec\Upsilon_{-+}$
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis of the four corners
 - [The Special Decomposition of a Biquaternion under a Peirce Basis](the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html), for the reading of an element in that basis

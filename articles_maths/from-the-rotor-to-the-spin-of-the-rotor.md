@@ -263,7 +263,7 @@ that is $\{1,0,0,-1\}$, which is $\{0\}\cup\{\pm1,0\}$: one weight of the single
 
 **The full turn, and what it proves.** The rotor of a full turn is $-e_t$. On the single spinor space it acts as $-1$, which is the reason the single rotor needs the double cover. On the tensor square it acts as $(-1)\otimes(-1)=+1$, so the composite is an action of the rotation group and not merely of its double cover. This is the precise sense in which two rotors make an integer-spin object: the sign that a single rotor carries cancels in pairs. It also fixes the parity: the antisymmetric summand is $+1$ and the symmetric summand is $+1$, and both are integer.
 
-**The identification with the two integer carriers.** The singlet has dimension one and weight $\{0\}$; the triplet has dimension three and weights $\{\pm1,0\}$. Those are the data of the fixed line $\mathbb{R}e_t$ and of the vector part $\mathfrak{k}$ of the algebra, the two integer carriers of *The Carriers, the Representation, the Spin and the Closure*. Over $\mathbb{C}$ the composite is the complexification of those two real carriers: the complexification of the line has complex dimension one and the complexification of the vector part has complex dimension three. The identification is by the weight set and the dimension, which determine a carrier of the algebra among the three.
+**The identification with the two integer carriers.** The singlet has dimension one and weight $\{0\}$; the triplet has dimension three and weights $\{\pm1,0\}$. Those are the data of the fixed line $\mathbb{R}e_t$ and of the vector part $\mathfrak{k}$ of the algebra, the two integer carriers of *From the Spin to the Carriers and the Closures*. Over $\mathbb{C}$ the composite is the complexification of those two real carriers: the complexification of the line has complex dimension one and the complexification of the vector part has complex dimension three. The identification is by the weight set and the dimension, which determine a carrier of the algebra among the three.
 
 | composite | $\dim_\mathbb{C}$ | weights | $\mathbf{H}^2$ | $s$ | $2s+1$ | full turn |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -380,7 +380,7 @@ What the $L$-generators do not give is the rest of the spectrum. They act on one
 ## Further Reading
 
 - [The Rotor Group via 4×4 Real Matrices](the-rotor-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the proof that no generator is diagonal.
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table, the quadratic element and the identity $2s+1=\dim_\mathbb{R}$.
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table, the quadratic element and the identity $2s+1=\dim_\mathbb{R}$.
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the group of unit quaternions and the double cover $Sp(1)\to SO(3)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the algebra and their relation to the spin group.
 - [The Pin and Spin Groups of the Quaternion Algebra](the-pin-and-spin-groups-of-the-quaternion-algebra.html), for the Clifford description of the same groups.

@@ -6,7 +6,7 @@ An idempotent $\tilde\Pi$ cuts the algebra into $\mathbb{B}=\mathbb{B}\tilde\Pi\
 
 This article defines the idempotents at an axis, computes the two ideals they generate, proves minimality, gives the decomposition $\mathbb{B}=S_{+}\oplus S_{-}$, describes the lattice of left ideals, and draws the consequence that matters for the carriers: because the algebra is simple, a carrier of the multiplication is necessarily one-sided, and the two-sided ideals are the two trivial ones.
 
-The idempotents themselves, their classes and their Peirce decompositions are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, *Peirce Decompositions of the Biquaternion Algebra* and *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; the nilpotent that accompanies each ideal is *The Companion Nilpotents of the Biquaternion Algebra*; the module category is *The Category of Modules in the Biquaternion Algebra*; and the carrier these ideals define is *The Carriers, the Representation, the Spin and the Closure*.
+The idempotents themselves, their classes and their Peirce decompositions are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, *Peirce Decompositions of the Biquaternion Algebra* and *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*; the nilpotent that accompanies each ideal is *The Companion Nilpotents of the Biquaternion Algebra*; the module category is *The Category of Modules in the Biquaternion Algebra*; and the carrier these ideals define is *From the Spin to the Carriers and the Closures*.
 
 Nothing below is a statement of physics. The elements are written $\tilde Q$ with coefficients $Q_t,Q_x,Q_y,Q_z$, the axis $\vec u$ is a unit real vector, and $\vec e_x,\vec e_y,\vec e_z$ are the pure quaternion units.
 
@@ -143,7 +143,7 @@ for the subspaces $W\subseteq\mathbb{C}^2$ in the defining module, and the latti
 
 **Corollary (one type, many subspaces).** All the minimal left ideals have the same type, of complex dimension $2$; the axis is a parameter of the family and not a datum of the algebra. The type is what a carrier contributes to the count, and it does not depend on the axis.
 
-**Remark (the axis and the weight).** The axis does affect the weight string of a generator: the generator $\tilde S(\vec u)$ is the one that is diagonal on the ideal at the axis $\vec u$, and a generator at another axis has a different matrix in the same basis. *The Carriers, the Representation, the Spin and the Closure*, §*The Spinor Plane*, reads the string at the axis of the ideal, where it is $\{+\tfrac12,-\tfrac12\}$.
+**Remark (the axis and the weight).** The axis does affect the weight string of a generator: the generator $\tilde S(\vec u)$ is the one that is diagonal on the ideal at the axis $\vec u$, and a generator at another axis has a different matrix in the same basis. *From the Spin to the Carriers and the Closures*, §*The Spinor Plane*, reads the string at the axis of the ideal, where it is $\{+\tfrac12,-\tfrac12\}$.
 
 ## Summary
 
@@ -167,7 +167,7 @@ The algebra splits as $\mathbb{B}=S_{+}\oplus S_{-}$ into two copies of one simp
 
 ## Further Reading
 
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the ideals as carriers and for the count of types
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the ideals as carriers and for the count of types
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for $\vec\Upsilon_{\mp\pm}$, the corners and the Peirce functional
 - [The Square Roots of One and the Idempotents of the Biquaternion Algebra](idempotents.html), for the classification of the idempotents of the whole algebra
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition at an idempotent

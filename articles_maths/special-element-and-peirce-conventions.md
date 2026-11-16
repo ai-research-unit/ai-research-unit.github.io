@@ -253,7 +253,7 @@ No generic $E$ is written outside the matrix model, and no tilde on a pure eleme
 
 ## The Spin and Spinor Convention
 
-**Three words.** A **spin** is a scalar label of a carrier; an **elementary spinor** is an element of a carrier; a **Dirac spinor** is an element of $\mathbb{B}$ read as a pair of elementary spinors. The three words are fixed here, as names with their glyphs. The theorems that produce the carriers, that fix the weights and the dimension, and that separate the two parts are *The Carriers, the Representation, the Spin and the Closure* and *Spinors and Dirac Spinors in the Biquaternion Algebra*.
+**Three words.** A **spin** is a scalar label of a carrier; an **elementary spinor** is an element of a carrier; a **Dirac spinor** is an element of $\mathbb{B}$ read as a pair of elementary spinors. The three words are fixed here, as names with their glyphs. The theorems that produce the carriers, that fix the weights and the dimension, and that separate the two parts are *From the Spin to the Carriers and the Closures* and *Spinors and Dirac Spinors in the Biquaternion Algebra*.
 
 ### The Spin Convention
 
@@ -321,6 +321,6 @@ The **spin** of an irreducible unitary carrier is the largest eigenvalue of $\ve
 
 - Benjamin Peirce, "Linear Associative Algebra", *American Journal of Mathematics* **4** (1881) 97–229. The original Peirce decomposition, from which the components and the multiplication rule of §*The General Peirce Convention* take their name.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022. The reduced biquaternion algebra of the engineering literature, its idempotent decomposition, its ring-valued norm and its transform.
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html). The rotation algebra, the criterion, the quadratic element, the definition of spin and the classification of the carriers.
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html). The rotation algebra, the criterion, the quadratic element, the definition of spin and the classification of the carriers.
 - [Spinors and Dirac Spinors in the Biquaternion Algebra](spinors-and-dirac-spinors-in-the-biquaternion-algebra.html). The two definitions, the weights, the dimension and the multiplicity of the two parts.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, Colloquium Publications 44 (American Mathematical Society, 1998). Algebras with involution, the first and the second kind, and the classification of their involutions.

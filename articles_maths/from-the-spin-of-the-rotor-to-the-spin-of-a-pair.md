@@ -320,8 +320,8 @@ A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the
 - [From the Rotor to the Spin of the Rotor](from-the-rotor-to-the-spin-of-the-rotor.html), for the single-rotor Casimir, the forcing of the two-sided product and the tensor square of the rotor carrier.
 - [The Rotor Group via 4×4 Real Matrices](the-rotor-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the two isoclinic copies of $S^3$ in $SO(4)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the biquaternion algebra and their relation to the spin group.
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the identity $2s+1=\dim$.
-- [Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides](hermitian-pair-of-n-regular-spectrally-regular-operators-acting-on-two-sides.html), for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the identity $2s+1=\dim$.
+- [The Hermitian Pair on the N-Regular Sector](the-hermitian-pair-on-the-n-regular-sector.html), for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.
 - [The Pin and Spin Groups of the Quaternion Algebra](the-pin-and-spin-groups-of-the-quaternion-algebra.html), for the Clifford description of the same groups.
 - I. R. Porteous, *Clifford Algebras and the Classical Groups*, ch. 13 and 16, for the spin groups, the double covers and $Spin(4)\cong S^3\times S^3$.
 - S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, ch. II and III, for the Casimir element and the addition rule for the labels of a compact group.

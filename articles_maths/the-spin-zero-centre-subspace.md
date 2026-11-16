@@ -118,7 +118,7 @@ of real dimension $1$. The imaginary unit line of the centre is the fixed direct
 
 ## The Carrier in the List of Three
 
-**The three carriers.** The algebra has three carriers under the rotation action: this line, of real dimension $1$ and spin $0$; a spinor plane, of real dimension $2$ and spin $\tfrac12$; and the vector part, of real dimension $3$ and spin $1$. The list is proved in *The Carriers, the Representation, the Spin and the Closure*, §*Three and No More* and is not reproved here.
+**The three carriers.** The algebra has three carriers under the rotation action: this line, of real dimension $1$ and spin $0$; a spinor plane, of real dimension $2$ and spin $\tfrac12$; and the vector part, of real dimension $3$ and spin $1$. The list is proved in *From the Spin to the Carriers and the Closures*, §*Three and No More* and is not reproved here.
 
 **The arithmetic.** The three dimensions are $1,2,3$ and the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim_\mathbb{R}$ holds in all three cases. The line is the case $s=0$, and it is the only case in which the spectrum has a single member.
 
@@ -148,6 +148,6 @@ The carrier of spin $0$ is the real line $\mathbb{R}e_t$, of real dimension $1$.
 
 - [The Spin-Zero Centre Subspace and N Norm Regularity](the-spin-zero-centre-subspace-and-n-norm-regularity.html), for the $N$ norm on the centre and the isotropic lines of its real part
 - [The Spin-Zero Centre Subspace and Spectral Regularity](the-spin-zero-centre-subspace-and-spectral-regularity.html), for the double eigenvalue of a central element and the degenerate cone
-- [The Carriers, the Representation, the Spin and the Closure](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the completeness of the list, the spin table and the four closures
+- [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the completeness of the list, the spin table and the four closures
 - [The Centre and the Zero Divisors of a Sesqualgebra](the-centre-and-the-zero-divisors-of-a-sesqualgebra.html), for the centre of a related algebra
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the centre and the pure part among the subspaces of the algebra

@@ -39,7 +39,7 @@ $$
 \boxed{\;\mathrm{Hp}_{\tilde{Q}_1}(x) = \tilde{Q}_1\,x\,\tilde{Q}_1^{*}\;}
 $$
 
-of *Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides*, §*The Two-Sided Operator of the Word*. Its two general laws read in this algebra as the composition
+of *The Hermitian Pair on the N-Regular Sector*, §*The Two-Sided Operator of the Word*. Its two general laws read in this algebra as the composition
 
 $$
 \mathrm{Hp}_{\tilde{Q}_1\tilde Q_2} = \mathrm{Hp}_{\tilde{Q}_1}\circ\mathrm{Hp}_{\tilde Q_2},
@@ -72,7 +72,7 @@ $$
 \langle\mathrm{Hp}_{\tilde{Q}_1}(x)\rangle_{\natural} = |\langle\tilde{Q}_1\rangle_{\natural}|^{2}\,\langle x\rangle_{\natural}
 $$
 
-is the general similarity statement of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *Hermitian Pair of N-Regular, Spectrally Regular Operators Acting on Two Sides*, §*The Two-Sided Operator of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
+is the general similarity statement of *The Hermitian Pair of Operators on a Hermitian Algebra with Hermitian Adjoint* in its biquaternion form. The operator is *The Hermitian Pair on the N-Regular Sector*, §*The Two-Sided Operator of the Word*; the Lorentzian application is *Biquaternion Rotations and Lorentz Transformations*.
 
 **Corollary (the operator is not an automorphism off the slice).** $\mathrm{Hp}_{\tilde{Q}_1}(xy) = \mathrm{Hp}_{\tilde{Q}_1}(x)\mathrm{Hp}_{\tilde{Q}_1}(y)$ holds exactly when $\tilde{Q}_1^{*}\tilde{Q}_1 = 1$, which is the general unitality and automorphism theorem of *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint*; the insertion between $x$ and $y$ is the defect $\tilde{Q}_1^{*}\tilde{Q}_1$, and the Hermitian pair is an automorphism only on the slice.
 
