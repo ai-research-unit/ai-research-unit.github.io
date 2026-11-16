@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>N-Degenerate, Spectrally Regular Operators Acting on One Side — Biquaternion Universe</title>
+  <title>One-Sided Operators on the N-Degenerate Sector — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,13 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="n-degenerate-spectrally-regular-operators-acting-on-one-side"><strong>N-Degenerate, Spectrally Regular Operators Acting on One Side</strong></h1>
+        <h1 id="one-sided-operators-on-the-n-degenerate-sector"><strong>One-Sided Operators on the N-Degenerate Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>Throughout this article $\tilde Q$ lies in the N-degenerate, spectrally regular sector $\Sigma_{01}$, so $\langle\tilde Q\rangle_{\natural}=0$ and $B^{2}\neq0$. The sector is the set of non-zero complex multiples of non-trivial idempotents,</p>
-<p>$$
-\tilde Q=c\,\tilde\Pi,\qquad c=2Q_t\neq0,\qquad \tilde\Pi^{2}=\tilde\Pi,\qquad \tilde\Pi\neq0,e_t,
-$$</p>
-<p>as in <em>The N-Degenerate, Spectrally Regular Sector</em>. The element is a zero divisor; its spectrum is $\{c,0\}$, with distinct eigenvalues, so the spectral decomposition and the eigenbasis exist. The word <strong>N-degenerate</strong> refers to the vanishing of the quaternionic norm; the word <strong>spectrally regular</strong> to the non-vanishing of $B^{2}$.</p>
+<p>The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two. This article treats the second half, the <strong>null cone</strong> $N=0$, a closed set of real dimension six and real codimension two.</p>
 <p>The biquaternion algebra acts on itself by left and right multiplication,</p>
 <p>$$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
@@ -83,26 +79,23 @@ $$</p>
 <p>$$
 \tilde Q=\tilde Q_H\tilde Q_0,\qquad \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\qquad \tilde Q_0=\tilde Q_H^{+}\tilde Q,
 $$</p>
-<p>of <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>. The factor $\tilde Q_H$ is Hermitian positive semidefinite of rank one and $\tilde Q_0$ is a partial isometry. On $\Sigma_{01}$ the pair has a closed form: $\tilde Q_0$ is a scalar times the idempotent $\tilde\Pi$, and the scalar has modulus $1/\sqrt\kappa$, where $\kappa\ge1$ measures the obliqueness of $\tilde\Pi$.</p>
-<p>The main result is that <strong>the one-sided operator is a scalar multiple of a partial isometry</strong>:</p>
+<p>of <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>. The factor $\tilde Q_H$ is Hermitian positive semidefinite of rank one and $\tilde Q_0$ is a partial isometry. The main result is that the one-sided operator is a scalar multiple of a partial isometry,</p>
 <p>$$
-\boxed{\;L_{\tilde Q}=2a\,L_{\tilde Q_0},\qquad R_{\tilde Q}=2a\,R_{\tilde Q_0},\qquad \tilde Q=2a\,\tilde Q_0\;}
+L_{\tilde Q}=2a\,L_{\tilde Q_0},\qquad R_{\tilde Q}=2a\,R_{\tilde Q_0},
 $$</p>
-<p>with $a=\sqrt{\langle\tilde Q\rangle_{*}/2}>0$. The scalar $2a$ is the non-zero singular value of $\tilde Q$ in the matrix model. The operator $L_{\tilde Q}$ has rank two, spectrum $\{c,c,0,0\}$ and no Jordan defect; it is a projection up to scale, not a nilpotent. The spectral wall $B^{2}=0$ is the boundary at which this projection gives way to the square-zero operator of <em>N-Degenerate, Spectrally Degenerate Operators Acting on One Side</em>.</p>
-<p>The article is organized as follows. §<em>The Polar Pair</em> proves the rank-one singular value decomposition. §<em>The One-Sided Operators</em> computes the composition laws, the rank, the spectrum, the image and the kernel. §<em>The Polar Pair, One-Sided</em> proves the scalar collapse and reads the operator through the pair. §<em>The Eigenbasis and the Two Slots</em> gives the diagonal form and the spinorial reading. §<em>The Exponential</em> computes the one-parameter group. §<em>Worked Examples</em> treats a Hermitian and a non-Hermitian idempotent. The article closes with the summary, the notation and the readings.</p>
+<p>with $2a>0$ the non-zero singular value of $\tilde Q$ in the matrix model, repeated twice.</p>
+<p><strong>What the norm decides, and what the vector form decides.</strong> Every global property of the one-sided operators is fixed by $N$ alone. On the whole null cone both operators are singular, both have complex rank two, both have a two-dimensional kernel, and both have a two-dimensional totally isotropic image, a left ideal for $L$ and a right ideal for $R$. The second condition $B^{2}=0$ decides only the <strong>eigenvalue count and the Jordan type</strong>, exactly as it does on the N-regular sector: the first stratum $\Sigma_{01}$ has the two distinct eigenvalues $c,0$ and no defect, and the second $\Sigma_{00}$ has the single eigenvalue $0$ and maximal defect, the minimal polynomial $X^{2}$. A reader who knows the rank two and the scalar $2a$ knows everything the norm decides; the wall decides the rest.</p>
+<p>The two strata are therefore two sections of one theory and not two theories:</p>
+<p>$$
+\Sigma_{01}=\{N=0,\ B^{2}\neq0\}:\ \tilde Q=c\,\tilde\Pi,\quad c=2Q_t\neq0,\quad \tilde\Pi^{2}=\tilde\Pi\neq0,e_t,
+$$</p>
+<p>$$
+\Sigma_{00}=\{N=0,\ B^{2}=0\}:\ \tilde Q=\tilde\nu=\vec A+i\vec B,\quad \lVert\vec A\rVert=\lVert\vec B\rVert=a>0,\quad \vec A\cdot\vec B=0,\quad \tilde\nu^{2}=0 .
+$$</p>
+<p>The first is the set of non-zero complex multiples of non-trivial idempotents; the second is the set of non-zero nilpotents, with the origin as its only semisimple element. The word <strong>N-degenerate</strong> refers to the vanishing of the quaternionic norm, the word <strong>spectrally degenerate</strong> to the vanishing of $B^{2}$.</p>
+<p>The article is organized as follows. §<em>The Polar Pair</em> proves the rank-one singular value decomposition for $\Sigma_{01}$ and the canonical Hermitian pair for $\Sigma_{00}$. §<em>The One-Sided Operators</em> computes the composition laws, the rank, the spectrum, the image and the kernel on both strata. §<em>The Polar Pair, One-Sided</em> proves the scalar collapse and reads the operator through the pair. §<em>The Eigenbasis and the Two Slots</em> gives the diagonal form and the spinorial reading for $\Sigma_{01}$. §<em>The Exponential</em> computes the one-parameter group on both strata. §<em>Worked Examples</em> treats a Hermitian idempotent, a non-Hermitian idempotent, the standard nilpotent and a complex scalar multiple. The article closes with the summary, the notation and the readings.</p>
 <h2 id="the-polar-pair">The Polar Pair</h2>
-<p>The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, the product $\vec e_x\vec e_y=\vec e_z$ and the squares $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The scalar imaginary $i$ is central. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$, and the Hermitian norm is</p>
-<p>$$
-\langle\tilde X\rangle_{*}=\operatorname{Sc}\bigl(\tilde X\tilde X^{*}\bigr)=\sum_{\mu\in\{t,x,y,z\}}\lvert X_\mu\rvert^{2}.
-$$</p>
-<p>It is positive definite. The quaternionic norm is $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$, and the vector form is $B^{2}=X_x^{2}+X_y^{2}+X_z^{2}$.</p>
-<p>The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$. It is $\mathbb{C}$-linear, multiplicative, and satisfies</p>
-<p>$$
-\mathsf M_2(\tilde X^{*})=\mathsf M_2(\tilde X)^{\dagger},\qquad
-\det\mathsf M_2(\tilde X)=\langle\tilde X\rangle_{\natural},\qquad
-\tfrac12\operatorname{tr}\bigl(\mathsf M_2(\tilde X)\mathsf M_2(\tilde X)^{\dagger}\bigr)=\langle\tilde X\rangle_{*}.
-$$</p>
-<p>The last identity says that the Frobenius norm of $\mathsf M_2(\tilde X)$ is $\sqrt{2\langle\tilde X\rangle_{*}}$.</p>
+<p>The two strata carry two different polar pairs, and the difference is the eigenvalue at which the positive factor acts. On $\Sigma_{01}$ the pair is a rank-one projection scaled by $2a$ and the partial isometry is a scalar times an idempotent. On $\Sigma_{00}$ the positive factor is $2a\tilde\Pi_+$ and the partial isometry is itself nilpotent. The common statement is the scalar collapse of §<em>The Polar Pair, One-Sided</em>.</p>
 <h3 id="the-rank-one-singular-value-decomposition">The rank-one singular value decomposition</h3>
 <p><strong>Theorem (the null cone as normalized rank-one partial isometries).</strong> Let $\tilde Q\in\mathbb{B}$ be non-zero. Then $\tilde Q$ lies on the null cone $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$ if and only if</p>
 <p>$$
@@ -162,7 +155,7 @@ $$</p>
 $$</p>
 <p>Finally $\tilde Q_H\tilde Q_0=2aP\tilde Q_0=2a\tilde Q_0=\tilde Q$.</p>
 <p>The pair $(\tilde Q_H,\tilde Q_0)$ is the general pair of <em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, specialized to the rank-one case. It is not the modulus–unit pair: the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ is zero, while $\tilde Q_H$ is a non-zero rank-one element. The number $2a$ is the non-zero singular value of $\tilde Q$; it is not an eigenvalue in general (it coincides with $c$ when $\kappa=1$ and $c>0$).</p>
-<h3 id="the-closed-form-on-math102">The closed form on $\Sigma_{01}$</h3>
+<h3 id="the-closed-form-on-math91">The closed form on $\Sigma_{01}$</h3>
 <p>Let $\tilde Q=c\tilde\Pi$ with $c=2Q_t\neq0$ and $\tilde\Pi$ a non-trivial idempotent. Put</p>
 <p>$$
 \tilde{Ζ}=2\tilde\Pi-e_t,\qquad
@@ -204,8 +197,129 @@ $$</p>
 \tilde Q_0^{2}=\frac{Q_t}{a}\,\tilde Q_0 .
 $$</p>
 <p>The scalar $Q_t/a$ is non-zero, so $\tilde Q_0/(Q_t/a)=\tilde\Pi$ is an idempotent. This is the algebraic form of the spectral regularity: the normalized element is a scalar times an idempotent, not a nilpotent. The spectral wall is the boundary at which the overlap $v^{\dagger}u$ vanishes; there the normalized element is nilpotent, not a scalar times an idempotent.</p>
+<h3 id="the-canonical-hermitian-pair">The canonical Hermitian pair</h3>
+<p>Let $\tilde\nu=\vec A+i\vec B$ with $\vec A,\vec B$ real, orthogonal and of equal norm $a>0$. The vector</p>
+<p>$$
+\vec c=\frac{\vec A\times\vec B}{a^{2}}
+$$</p>
+<p>is real and unit. Define</p>
+<p>$$
+\tilde\Pi_+=\frac{e_t+i\vec c}{2},
+\qquad
+\tilde\Pi_-=\frac{e_t-i\vec c}{2},
+\qquad
+\tilde\Pi_++\tilde\Pi_-=e_t,
+\qquad
+\tilde\Pi_\pm^{2}=\tilde\Pi_\pm,
+\qquad
+\tilde\Pi_\pm^{*}=\tilde\Pi_\pm .
+$$</p>
+<p>These are the canonical Hermitian idempotents of <em>The N-Degenerate, Spectrally Degenerate Sector</em>. They satisfy</p>
+<p>$$
+\tilde\Pi_+\tilde\nu=\tilde\nu,
+\qquad
+\tilde\nu\tilde\Pi_+=0,
+\qquad
+\tilde\Pi_-\tilde\nu=0,
+\qquad
+\tilde\nu\tilde\Pi_-=\tilde\nu .
+$$</p>
+<p>Thus $\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-$ lies in the mixed corner $\mathbb{B}_{+-}$ of the pair, and it is annihilated by the two products that would put it in a diagonal corner. In particular</p>
+<p>$$
+\langle\tilde\nu\rangle_{\natural}
+=\operatorname{Sc}(\tilde\nu^{2})=0,
+\qquad
+\langle\tilde\nu\rangle_{*}
+=\operatorname{Sc}(\tilde\nu\tilde\nu^{*})=2a^{2},
+\qquad
+\tilde\nu\tilde\nu^{*}=4a^{2}\tilde\Pi_+,
+\qquad
+\tilde\nu^{*}\tilde\nu=4a^{2}\tilde\Pi_- .
+$$</p>
+<h3 id="the-polar-pair-on-the-nilpotents">The polar pair on the nilpotents</h3>
+<p>With $a=\sqrt{\langle\tilde\nu\rangle_{*}/2}$, the polar pair is</p>
+<p>$$
+\boxed{\;
+P=\tilde\Pi_+,
+\qquad
+\tilde Q_H=2a\tilde\Pi_+,
+\qquad
+\tilde Q_0=\frac{\tilde\nu}{2a},
+\qquad
+\tilde Q=\tilde Q_H\tilde Q_0,
+\qquad
+\tilde Q_0^{2}=0 .
+\;}
+$$</p>
+<p>The Hermitian factor is positive semidefinite of rank one and spectrum $\{0,2a\}$. The partial-isometry factor is nilpotent:</p>
+<p>$$
+\tilde Q_0\tilde Q_0^{*}=\tilde\Pi_+,
+\qquad
+\tilde Q_0^{*}\tilde Q_0=\tilde\Pi_-,
+\qquad
+\tilde Q_0\tilde Q_0^{*}\tilde Q_0=\tilde Q_0,
+\qquad
+\tilde Q_0^{2}=0 .
+$$</p>
+<p>A nilpotent partial isometry is not a contradiction: the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ is a partial isometry and squares to zero. The polar pair is the rank-one singular value decomposition of the nilpotent; the "$*$-unitary" factor is a nilpotent partial isometry.</p>
+<h3 id="the-matrix-model">The matrix model</h3>
+<p>In the matrix model $\mathsf M_2(e_t)=I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$. The null element is a rank-one matrix,</p>
+<p>$$
+\mathsf M_2(\tilde\nu)=2a\,u v^{\dagger},
+\qquad
+v^{\dagger}u=\frac{Q_t}{a}=0,
+\qquad
+u^{\dagger}u=v^{\dagger}v=1,
+\qquad
+u\perp v .
+$$</p>
+<p>The two singular vectors are orthogonal; this is the matrix form of the spectral degeneracy. The polar factors are</p>
+<p>$$
+P=u u^{\dagger}=\tilde\Pi_+,
+\qquad
+\tilde Q_H=2a\,u u^{\dagger},
+\qquad
+\tilde Q_0=u v^{\dagger},
+\qquad
+\tilde Q_0^{*}=v u^{\dagger},
+\qquad
+\tilde Q_0^{2}=u(v^{\dagger}u)v^{\dagger}=0 .
+$$</p>
+<p>The overlap $v^{\dagger}u=Q_t/a$ vanishes exactly on $\Sigma_{00}$. On $\Sigma_{01}$ it was $1/\sqrt{\kappa}\neq0$; the wall is the orthogonality of the two slots.</p>
+<h3 id="the-standard-nilpotent">The standard nilpotent</h3>
+<p>For</p>
+<p>$$
+\tilde\nu=\vec e_x+i\vec e_y,
+$$</p>
+<p>one has $a=1$, $\vec c=\vec e_z$, and</p>
+<p>$$
+\tilde\Pi_+=\frac{e_t+i\vec e_z}{2},
+\qquad
+\tilde\Pi_-=\frac{e_t-i\vec e_z}{2},
+\qquad
+\tilde Q_H=e_t+i\vec e_z,
+\qquad
+\tilde Q_0=\frac{\vec e_x+i\vec e_y}{2}.
+$$</p>
+<p>The matrix model is</p>
+<p>$$
+\mathsf M_2(\tilde\nu)=
+\begin{pmatrix}0&-2i\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2(\tilde Q_H)=
+\begin{pmatrix}2&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2(\tilde Q_0)=
+\begin{pmatrix}0&-i\\0&0\end{pmatrix}.
+$$</p>
+<p>The singular value is $2$, the only eigenvalue is $0$, and the two singular vectors may be taken as $u=(1,0)$ and $v=(0,i)$, which are orthogonal.</p>
 <h2 id="the-one-sided-operators">The One-Sided Operators</h2>
-<h3 id="elementary-properties">Elementary properties</h3>
+<p>The composition laws, the rank and the singular values are the same on the two strata; the spectrum and the Jordan type are not. The composition laws are</p>
+<p>$$
+L_{\tilde Q}\circ L_{\tilde Q'}=L_{\tilde Q\tilde Q'},\qquad R_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'\tilde Q},\qquad L_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'}\circ L_{\tilde Q},
+$$</p>
+<p>and both operators are invertible exactly when $\tilde Q$ is a unit, which on the null cone never happens. Rank two, kernel of dimension two and image of dimension two therefore hold throughout the sector.</p>
+<h3 id="elementary-properties-on-the-idempotent-multiples">Elementary properties on the idempotent multiples</h3>
 <p><strong>Proposition.</strong> Let $\tilde Q,\tilde Q'\in\mathbb{B}$. Then:</p>
 <p><strong>(a)</strong> $L_{\tilde Q}$ and $R_{\tilde Q}$ are $\mathbb{C}$-linear;</p>
 <p><strong>(b)</strong> $L_{\tilde Q}\circ L_{\tilde Q'}=L_{\tilde Q\tilde Q'}$ and $R_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'\tilde Q}$;</p>
@@ -277,8 +391,131 @@ L_{\tilde\Pi}L_{\tilde\Pi}^{*}=L_{\tilde\Pi\tilde\Pi^{*}},
 \tilde\Pi\tilde\Pi^{*}=\kappa P,
 $$</p>
 <p>and $L_P$ is an orthogonal projection of rank two. Hence the singular values of $L_{\tilde Q}$ are $\lvert c\rvert\sqrt{\kappa}=2a$ (twice) and $0$ (twice). The same holds for $R_{\tilde Q}$. The non-zero singular value $2a$ is the singular value of the element $\tilde Q$ itself; the one-sided operator repeats it twice.</p>
+<h3 id="the-square-the-rank-and-the-spectrum">The square, the rank and the spectrum</h3>
+<p><strong>Theorem.</strong> On $\Sigma_{00}$:</p>
+<p><strong>(a)</strong> $L_{\tilde\nu}^{2}=0$ and $R_{\tilde\nu}^{2}=0$;</p>
+<p><strong>(b)</strong> $L_{\tilde\nu}$ and $R_{\tilde\nu}$ have complex rank $2$;</p>
+<p><strong>(c)</strong> their only eigenvalue is $0$, with algebraic multiplicity $4$ and geometric multiplicity $2$;</p>
+<p><strong>(d)</strong> their Jordan form is $J_2(0)\oplus J_2(0)$, with minimal polynomial $X^{2}$;</p>
+<p><strong>(e)</strong> $\operatorname{tr}L_{\tilde\nu}=\operatorname{tr}R_{\tilde\nu}=0$ and $\det L_{\tilde\nu}=\det R_{\tilde\nu}=0$;</p>
+<p><strong>(f)</strong> for every $\tilde X$, $\langle L_{\tilde\nu}\tilde X\rangle_{\natural}=\langle R_{\tilde\nu}\tilde X\rangle_{\natural}=0$; both images lie on the null cone.</p>
+<p><em>Proof.</em> The square is $L_{\tilde\nu}^{2}=L_{\tilde\nu^{2}}=L_0=0$, and similarly on the right. In the matrix model, $\mathsf M_2(\tilde\nu)=2a\,u v^{\dagger}$ is a rank-one nilpotent. Left multiplication is $X\mapsto 2a\,u v^{\dagger}X$; its image is $\{u w^{\dagger}:w\in\mathbb{C}^{2}\}$, of dimension two, and its kernel is $\{X:v^{\dagger}X=0\}$, also of dimension two. Since the square is zero, the image is contained in the kernel, and the two dimensions are equal, so the image equals the kernel. The eigenvalues of left multiplication by a matrix are the eigenvalues of the matrix, each repeated twice; the only eigenvalue of $2a\,u v^{\dagger}$ is $0$, so the algebraic multiplicity is four. The geometric multiplicity is the dimension of the kernel, two. The minimal polynomial is $X^{2}$ because the operator is non-zero and squares to zero. The trace is $2\operatorname{tr}\mathsf M_2(\tilde\nu)=0$, and the determinant is $(\det\mathsf M_2(\tilde\nu))^{2}=0$. The norm is multiplicative and $\langle\tilde\nu\rangle_{\natural}=0$.
+The same arguments apply to the right multiplication $X\mapsto 2a\,X u v^{\dagger}$.</p>
+<h3 id="the-image-and-the-kernel-on-the-nilpotents">The image and the kernel on the nilpotents</h3>
+<p>The image and the kernel of $L_{\tilde\nu}$ coincide, and likewise for $R_{\tilde\nu}$. The two common planes are distinct and meet in the line of the nilpotent.</p>
+<p><strong>Proposition (the two planes).</strong> On $\Sigma_{00}$,</p>
+<p>$$
+\boxed{\;
+\operatorname{im}L_{\tilde\nu}
+=\ker L_{\tilde\nu}
+=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+,
+\qquad
+\operatorname{im}R_{\tilde\nu}
+=\ker R_{\tilde\nu}
+=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_- .
+\;}
+$$</p>
+<p>The two planes are distinct and</p>
+<p>$$
+\bigl(\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+\bigr)
+\cap
+\bigl(\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-\bigr)
+=\mathbb{C}\tilde\nu .
+$$</p>
+<p><em>Proof.</em> The multiplications by the canonical idempotents give</p>
+<p>$$
+\tilde\nu\tilde\Pi_+=0,
+\qquad
+\tilde\nu\tilde\Pi_-=\tilde\nu,
+\qquad
+\tilde\Pi_+\tilde\nu=\tilde\nu,
+\qquad
+\tilde\Pi_-\tilde\nu=0 .
+$$</p>
+<p>Hence $L_{\tilde\nu}(\tilde\Pi_+)=0$ and $L_{\tilde\nu}(\tilde\Pi_-)=\tilde\nu$, so the image contains $\mathbb{C}\tilde\nu$ and $\mathbb{C}\tilde\Pi_+$ after one more step: the corner vector $\vec X$ of §<em>The Peirce Matrices</em> satisfies $\tilde\nu\vec X\in\mathbb{C}\tilde\Pi_+$. The image is therefore the plane $\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$; the kernel contains the same plane by the square-zero property, and the dimensions agree. The right-hand statement is the mirror, using $\tilde\Pi_+\tilde\nu=\tilde\nu$ and $\tilde\Pi_-\tilde\nu=0$. The intersection is the common line $\mathbb{C}\tilde\nu$ because $\tilde\Pi_+$ and $\tilde\Pi_-$ are independent modulo $\tilde\nu$.</p>
+<p>The image planes are totally isotropic: for $\tilde X=\tilde\nu\tilde Y$,</p>
+<p>$$
+\langle\tilde X\rangle_{\natural}
+=\langle\tilde\nu\rangle_{\natural}\langle\tilde Y\rangle_{\natural}=0 .
+$$</p>
+<p>The kernels are the same planes, so the operator does not split the algebra into an image and a complement: the image is contained in the kernel, and the algebra is a non-trivial extension. This is the operator form of the absence of a spectral decomposition.</p>
+<h3 id="the-peirce-matrices">The Peirce matrices</h3>
+<p>Let $\tilde\Pi_\pm$ be the canonical Hermitian idempotents. Choose a non-zero corner vector</p>
+<p>$$
+\vec X\in\tilde\Pi_-\mathbb{B}\tilde\Pi_+,
+$$</p>
+<p>and normalize it so that</p>
+<p>$$
+\tilde\nu\vec X=\tilde\Pi_+,
+\qquad
+\vec X\tilde\nu=\varkappa\,\tilde\Pi_-,
+\qquad
+\varkappa\neq0 .
+$$</p>
+<p>In the standard example one may take $\varkappa=1$. The four elements</p>
+<p>$$
+\bigl(\tilde\Pi_+,\ \tilde\nu,\ \vec X,\ \tilde\Pi_-\bigr)
+$$</p>
+<p>form a basis, the canonical Jordan basis of <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, with the Peirce form purely off-diagonal:</p>
+<p>$$
+\tilde\nu=\tilde\Pi_+\tilde\nu\tilde\Pi_-,
+\qquad
+\tilde\Pi_\pm\tilde\nu\tilde\Pi_\pm=0,
+\qquad
+\tilde\Pi_\pm\tilde\nu\tilde\Pi_\mp=0 \text{ except } \tilde\Pi_+\tilde\nu\tilde\Pi_-=\tilde\nu .
+$$</p>
+<p>The one-sided operators have the matrices</p>
+<p>$$
+\boxed{\;
+\mathsf M\bigl(L_{\tilde\nu}\bigr)=
+\begin{pmatrix}
+0&0&1&0\\
+0&0&0&1\\
+0&0&0&0\\
+0&0&0&0
+\end{pmatrix},
+\qquad
+\mathsf M\bigl(R_{\tilde\nu}\bigr)=
+\begin{pmatrix}
+0&0&0&0\\
+1&0&0&0\\
+0&0&0&0\\
+0&0&\varkappa&0
+\end{pmatrix}.
+\;}
+$$</p>
+<p>The columns are the images of the basis vectors:</p>
+<p>$$
+L_{\tilde\nu}:\quad
+\tilde\Pi_+\mapsto0,\quad
+\tilde\nu\mapsto0,\quad
+\vec X\mapsto\tilde\Pi_+,\quad
+\tilde\Pi_-\mapsto\tilde\nu,
+$$</p>
+<p>$$
+R_{\tilde\nu}:\quad
+\tilde\Pi_+\mapsto\tilde\nu,\quad
+\tilde\nu\mapsto0,\quad
+\vec X\mapsto\varkappa\tilde\Pi_-,\quad
+\tilde\Pi_-\mapsto0 .
+$$</p>
+<p>The Jordan chains are therefore</p>
+<p>$$
+L_{\tilde\nu}:\quad
+\vec X\to\tilde\Pi_+\to0,
+\qquad
+\tilde\Pi_-\to\tilde\nu\to0,
+$$</p>
+<p>$$
+R_{\tilde\nu}:\quad
+\tilde\Pi_+\to\tilde\nu\to0,
+\qquad
+\vec X\to\varkappa\tilde\Pi_-\to0 .
+$$</p>
+<p>Each operator has two chains of length two. The chain starts are the two directions outside the common image plane; the chain ends are the two directions inside it.</p>
 <h2 id="the-polar-pair-one-sided">The Polar Pair, One-Sided</h2>
-<h3 id="the-scalar-collapse">The scalar collapse</h3>
+<p>On both strata the operator is a scalar times the operator of the partial isometry, and the scalar is the non-zero singular value. The factor $2a$ acts as the scalar on the image, so the collapse is exact rather than approximate.</p>
+<h3 id="the-scalar-collapse-on-the-idempotent-multiples">The scalar collapse on the idempotent multiples</h3>
 <p>By the polar pair theorem, $\tilde Q=2a\tilde Q_0$ and $\tilde Q_0$ is a partial isometry. The composition laws give</p>
 <p>$$
 \boxed{\;
@@ -307,7 +544,25 @@ $$</p>
 <p>When $\tilde\Pi$ is Hermitian, $\kappa=1$ and $\tilde Q_0=(c/\lvert c\rvert)\tilde\Pi$. Then $L_{\tilde Q}=cL_{\tilde\Pi}$ with $L_{\tilde\Pi}$ an orthogonal projection, and the clean word is a scale $c$ times a projection. When $\tilde\Pi$ is not Hermitian, $L_{\tilde\Pi}$ is only $\sqrt{\kappa}$ times a partial isometry; the scalar collapse through $\tilde Q_0$ is the correct statement. The non-Hermitian example of §<em>Worked Examples</em> shows the difference.</p>
 <h3 id="the-modulus-and-the-singular-value">The modulus and the singular value</h3>
 <p>The element modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The number $2a$ is not a modulus in that sense: it is the non-zero singular value of $\tilde Q$ in the matrix model, equivalently the non-zero spectral value of the Hermitian factor $\tilde Q_H$. The operator $L_{\tilde Q}$ is singular, but it is not the zero operator: it has rank two and non-zero singular value $2a$. The vanishing of $\Rho$ says that the element is a zero divisor; it does not say that the operator is nilpotent. On $\Sigma_{00}$, where $B^{2}=0$ and $Q_t=0$, the operator is nilpotent; on $\Sigma_{10}$, where $Q_t\neq0$, it is unipotent instead.</p>
-<h2 id="the-eigenbasis-and-the-two-slots">The Eigenbasis and the Two Slots</h2>
+<h3 id="the-phase-and-the-sign">The phase and the sign</h3>
+<p>For a complex multiple</p>
+<p>$$
+\tilde\nu=c_0(\vec e_x+i\vec e_y),
+\qquad
+c_0=\lvert c_0\rvert e^{i\beta},
+$$</p>
+<p>one has $a=\lvert c_0\rvert$ and</p>
+<p>$$
+\tilde Q_0=\frac{c_0}{\lvert c_0\rvert}\frac{\vec e_x+i\vec e_y}{2},
+\qquad
+\tilde Q_H=2\lvert c_0\rvert\,\tilde\Pi_+,
+\qquad
+\tilde\Pi_+=\frac{e_t+i\vec e_z}{2}.
+$$</p>
+<p>The phase $e^{i\beta}$ is carried by $\tilde Q_0$ and by $L_{\tilde\nu}$; the scalar $2a=2\lvert c_0\rvert$ is positive. The nilpotent direction $\vec e_x+i\vec e_y$ is unchanged. The two-sided operator of the companion article sees only $\lvert c_0\rvert$ and the canonical pair; the phase cancels. The sign $\tilde\nu\mapsto-\tilde\nu$ is also carried by $\tilde Q_0$; the scalar $2a$ is unchanged.</p>
+<h3 id="the-modulus-and-the-singular-value-on-the-nilpotents">The modulus and the singular value on the nilpotents</h3>
+<p>The element modulus is zero, while the operator has rank two and non-zero singular value $2a$. The vanishing of the norm says that the element is a null vector and that both multiplications have a non-trivial kernel; it does not say that the operator is zero. The spectral degeneration $B^{2}=0$ makes the operator nilpotent; the norm degeneration makes its rank two. The two defects are independent.</p>
+<h2 id="the-eigenbasis-and-the-two-slots-on-the-idempotent-multiples">The Eigenbasis and the Two Slots on the Idempotent Multiples</h2>
 <p>Since $B^{2}\neq0$, the eigenbasis of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is</p>
 <p>$$
 \tilde\Pi\tilde Q\tilde\Pi=c\tilde\Pi,\qquad
@@ -326,6 +581,8 @@ $$</p>
 <p>On each chirality, left multiplication by $\tilde Q$ has the matrix $\operatorname{diag}(c,0)$; right multiplication is $c$ on $S_+$ and $0$ on $S_-$. The zero eigenvalue is a value on a component, not a missing direction. This is the specialisation to $\Sigma_{01}$ of the spinorial reading of <em>The N-Degenerate, Spectrally Regular Sector</em>, §<em>Spinors and Chirality</em>. The reading is spinorial in the module sense, not in the little-group sense: the generator is a scaled projection rather than a rotor or a boost, so there is no half-angle to read and the half-angle theorem of the regular sector does not apply.</p>
 <p>In the matrix model the two slots are the singular vectors $u$ and $v$. The left multiplication $L_{\tilde Q}$ writes on the left slot $u$ and reads the right covector $v^{\dagger}$; the right multiplication reads the $u$-component and writes on the $v$-slot. The one-sided operator sees the complex overlap $v^{\dagger}u=Q_t/a$. Its eigenvalue is $c=2a\,v^{\dagger}u$, twice. The modulus of the overlap is $\cos\theta=1/\sqrt{\kappa}$; the phase of the overlap is the phase of $c$. The two-sided operator of the companion article sees only the squared modulus $\cos^{2}\theta$; this is the precise form of the one-sided/two-sided contrast in this sector.</p>
 <h2 id="the-exponential">The Exponential</h2>
+<p>On both strata the exponential of the singular operator is invertible for every $t\neq0$. The rates differ: the one-sided rate is $c$ on $\Sigma_{01}$, and on $\Sigma_{00}$ the unipotent flow removes the norm degeneration while preserving the spectral one.</p>
+<h3 id="the-exponential-on-the-idempotent-multiples">The exponential on the idempotent multiples</h3>
 <p><strong>The operator exponential.</strong> Since $L_{\tilde Q}=cL_{\tilde\Pi}$ and $L_{\tilde\Pi}^{2}=L_{\tilde\Pi}$,</p>
 <p>$$
 \boxed{\;
@@ -345,7 +602,30 @@ $$</p>
 =e^{tc},
 $$</p>
 <p>because $\tilde\Pi^{\natural}=\tilde\Pi'$ and $\tilde\Pi\tilde\Pi'=0$. The exponential is a unit for every $t$. Its $B^{2}$ is $-\tfrac14(e^{tc}-1)^{2}$, which is non-zero for generic $t\neq0$; it vanishes exactly when $e^{tc}=1$, where the exponential is $e_t$ on the wall $\Sigma_{10}$. Hence the flow lies in the doubly regular sector $\Sigma_{11}$ for generic $t\neq0$. For generic $t$, a zero divisor of $\Sigma_{01}$ has an exponential that is a unit with distinct eigenvalues. The one-sided rate is $c$; the two-sided rate of the companion article is $\lvert c\rvert^{2}$.</p>
+<h3 id="the-exponential-on-the-nilpotents">The exponential on the nilpotents</h3>
+<p><strong>The operator exponential.</strong> Since $L_{\tilde\nu}^{2}=0$,</p>
+<p>$$
+\boxed{\;
+\exp\bigl(tL_{\tilde\nu}\bigr)=I+tL_{\tilde\nu}
+\;}
+$$</p>
+<p>for every complex $t$, and the same formula holds for $R_{\tilde\nu}$. The eigenvalues are all $1$; the Jordan form is $J_2(1)\oplus J_2(1)$; the determinant is $1$. The group is unipotent: it is a shear, not a dilation. It is invertible for every $t$, although the generator $L_{\tilde\nu}$ is nilpotent and singular.</p>
+<p><strong>The element exponential.</strong> Since $\tilde\nu^{2}=0$,</p>
+<p>$$
+\exp\bigl(t\tilde\nu\bigr)=e_t+t\tilde\nu .
+$$</p>
+<p>The quaternionic norm is</p>
+<p>$$
+\bigl\langle\exp(t\tilde\nu)\bigr\rangle_{\natural}=1,
+$$</p>
+<p>and the vector form is</p>
+<p>$$
+B^{2}\bigl(\exp(t\tilde\nu)\bigr)=t^{2}B^{2}(\tilde\nu)=0 .
+$$</p>
+<p>Hence the exponential is a unit with $B^{2}=0$: for every $t$ it lies in the N-regular, spectrally degenerate sector $\Sigma_{10}$ (at $t=0$ it is $e_t$), not in the doubly regular sector. This is the mirror of the generic $\Sigma_{01}$ flow, which leaves both walls and lies in $\Sigma_{11}$. The exponential moves the element one wall away: it removes the norm degeneration and preserves the spectral one.</p>
+<p>The one-sided operator exponential is unipotent with two Jordan blocks of size two at eigenvalue one; this is the operator type of the N-regular, spectrally degenerate one-sided operator of <em>One-Sided Operators on the N-Regular Sector</em>. The two-sided companion is a unipotent Lorentz flow of Jordan type $2+1+1$. The one-sided exponential is a shear of the operator space, not a Lorentz transformation.</p>
 <h2 id="worked-examples">Worked Examples</h2>
+<p>Two examples on each stratum, the second at the boundary of its canonical form.</p>
 <h3 id="example-1-a-hermitian-idempotent">Example 1: a Hermitian idempotent</h3>
 <p>Take</p>
 <p>$$
@@ -395,8 +675,51 @@ $$</p>
 L_{\tilde Q}=2L_{\tilde\Pi}=2\sqrt2\,L_{\tilde Q_0},
 $$</p>
 <p>with eigenvalues $2,2,0,0$ and singular values $2\sqrt2,2\sqrt2,0,0$. The example shows that the scalar collapse uses the partial isometry $\tilde Q_0$, not the idempotent $\tilde\Pi$, and that the non-zero singular value $2a$ can be strictly larger than the eigenvalue modulus $\lvert c\rvert$.</p>
+<h3 id="example-3-the-standard-nilpotent">Example 3: the standard nilpotent</h3>
+<p>For</p>
+<p>$$
+\tilde\nu=\vec e_x+i\vec e_y,
+$$</p>
+<p>one has $a=1$, $\vec c=\vec e_z$, and</p>
+<p>$$
+\tilde\Pi_+=\frac{e_t+i\vec e_z}{2},
+\qquad
+\tilde\Pi_-=\frac{e_t-i\vec e_z}{2},
+\qquad
+\tilde Q_H=e_t+i\vec e_z,
+\qquad
+\tilde Q_0=\frac{\vec e_x+i\vec e_y}{2}.
+$$</p>
+<p>The matrix model is</p>
+<p>$$
+\mathsf M_2(\tilde\nu)=
+\begin{pmatrix}0&-2i\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2(\tilde Q_H)=
+\begin{pmatrix}2&0\\0&0\end{pmatrix},
+\qquad
+\mathsf M_2(\tilde Q_0)=
+\begin{pmatrix}0&-i\\0&0\end{pmatrix}.
+$$</p>
+<p>The singular value is $2$, the only eigenvalue is $0$, and the two singular vectors may be taken as $u=(1,0)$ and $v=(0,i)$, which are orthogonal.</p>
+<h3 id="example-4-a-complex-scalar-multiple">Example 4: a complex scalar multiple</h3>
+<p>For</p>
+<p>$$
+\tilde\nu=c_0(\vec e_x+i\vec e_y),
+\qquad
+c_0=\lvert c_0\rvert e^{i\beta},
+$$</p>
+<p>the element has $a=\lvert c_0\rvert$, and</p>
+<p>$$
+\tilde Q_0=e^{i\beta}\frac{\vec e_x+i\vec e_y}{2},
+\qquad
+\tilde Q_H=2\lvert c_0\rvert\,\tilde\Pi_+,
+\qquad
+L_{\tilde\nu}=2\lvert c_0\rvert\,L_{\tilde Q_0}.
+$$</p>
+<p>The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert$ is positive and phase-blind. The two-sided operator of the companion article is $4\lvert c_0\rvert^{2}\mathrm{Sd}_{\tilde Q_0}$, also phase-blind. This is the cleanest illustration of the one-sided/two-sided contrast in the sector.</p>
 <h2 id="summary">Summary</h2>
-<h3 id="main-results">Main Results</h3>
+<h3 id="main-results-on-the-idempotent-multiples">Main Results on the Idempotent Multiples</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -483,14 +806,100 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h3 id="main-results-on-the-nilpotents">Main Results on the Nilpotents</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sector</td>
+<td>$\Sigma_{00}=\{\langle\tilde Q\rangle_{\natural}=0,\ B^{2}=0\}$</td>
+</tr>
+<tr>
+<td>parameter</td>
+<td>$\tilde\nu=\vec A+i\vec B$, $\lVert\vec A\rVert=\lVert\vec B\rVert=a>0$, $\vec A\cdot\vec B=0$</td>
+</tr>
+<tr>
+<td>canonical pair</td>
+<td>$\tilde\Pi_\pm=(e_t\pm i\vec c)/2$, $\vec c=\vec A\times\vec B/a^{2}$</td>
+</tr>
+<tr>
+<td>polar pair</td>
+<td>$\tilde Q_H=2a\tilde\Pi_+$, $\tilde Q_0=\tilde\nu/(2a)$, $\tilde Q_0^{2}=0$</td>
+</tr>
+<tr>
+<td>one-sided operators</td>
+<td>$L_{\tilde\nu}$, $R_{\tilde\nu}$</td>
+</tr>
+<tr>
+<td>squares</td>
+<td>$L_{\tilde\nu}^{2}=0$, $R_{\tilde\nu}^{2}=0$</td>
+</tr>
+<tr>
+<td>rank</td>
+<td>$2$ for both</td>
+</tr>
+<tr>
+<td>spectrum</td>
+<td>$\{0\}$, algebraic multiplicity $4$, geometric multiplicity $2$</td>
+</tr>
+<tr>
+<td>Jordan form</td>
+<td>$J_2(0)\oplus J_2(0)$</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>determinant</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>singular values</td>
+<td>$2a$ (twice), $0$ (twice)</td>
+</tr>
+<tr>
+<td>image</td>
+<td>$\operatorname{im}L_{\tilde\nu}=\ker L_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>mirror</td>
+<td>$\operatorname{im}R_{\tilde\nu}=\ker R_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>intersection</td>
+<td>the two planes meet in $\mathbb{C}\tilde\nu$</td>
+</tr>
+<tr>
+<td>scalar collapse</td>
+<td>$L_{\tilde\nu}=2aL_{\tilde Q_0}$, $R_{\tilde\nu}=2aR_{\tilde Q_0}$</td>
+</tr>
+<tr>
+<td>exponential</td>
+<td>$\exp(tL_{\tilde\nu})=I+tL_{\tilde\nu}$</td>
+</tr>
+<tr>
+<td>element flow</td>
+<td>$\exp(t\tilde\nu)=e_t+t\tilde\nu$, a unit in $\Sigma_{10}$ for every $t$ (at $t=0$ it is $e_t$)</td>
+</tr>
+</tbody>
+</table></div>
 <h3 id="what-the-operator-shows">What the Operator Shows</h3>
+<p>The norm fixes the rank and the spectral condition fixes the defect, on both strata.</p>
 <ul>
-<li>The norm degeneration fixes the rank: on the null cone the one-sided operator has rank two, and its image is a totally isotropic plane.</li>
-<li>The spectral regularity fixes the Jordan type: the operator is a projection up to scale, not a nilpotent; its minimal polynomial is squarefree.</li>
+<li>The norm degeneration fixes the rank: on the null cone the one-sided operator has rank two, and its image is a totally isotropic plane, a left ideal for $L$ and a right ideal for $R$.</li>
+<li>The spectral regularity fixes the Jordan type: on $\Sigma_{01}$ the operator is a projection up to scale, not a nilpotent, and its minimal polynomial is squarefree.</li>
+<li>The spectral degeneration fixes the Jordan type on $\Sigma_{00}$: the operator is nilpotent with two blocks of size two and minimal polynomial $X^{2}$.</li>
 <li>The polar pair collapses to a scalar times a partial isometry, $L_{\tilde Q}=2aL_{\tilde Q_0}$; the positive factor acts as the scalar $2a$ on the image.</li>
-<li>The non-zero singular value $2a$ is the singular value of the element, repeated twice; the idempotent projection $L_{\tilde\Pi}$ has singular value $\sqrt{\kappa}$, not one, unless $\tilde\Pi$ is Hermitian.</li>
-<li>The phase is one-sided: it sits in $\tilde Q_0$ and in the eigenvalue $c$; the two-sided operator of the companion article sees only $\lvert c\rvert^{2}$.</li>
-<li>The two slots of the matrix model are the singular vectors $u$ and $v$; their overlap $\cos\theta=1/\sqrt{\kappa}$ is the spectral invariant, and it vanishes exactly at the wall $\Sigma_{00}$.</li>
+<li>The non-zero singular value $2a$ is the singular value of the element, repeated twice. The gap between the spectrum and the singular values is the measure of the defect, and it is largest on $\Sigma_{00}$, where the only eigenvalue is zero.</li>
+<li>The phase and the sign are one-sided: they sit in $\tilde Q_0$ and in the eigenvalue $c$. The two-sided operator of the companion article sees only $\lvert c\rvert^{2}$ on $\Sigma_{01}$ and $4a^{2}=(2a)^{2}$ on $\Sigma_{00}$.</li>
+<li>On $\Sigma_{00}$ the image equals the kernel, so there is no spectral splitting: the algebra is a non-trivial extension with kernel equal to image.</li>
+<li>The exponential is a line of projections on $\Sigma_{01}$ and unipotent on $\Sigma_{00}$; in both cases it removes the norm degeneration and, on $\Sigma_{01}$ generically, the spectral one as well.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -557,18 +966,55 @@ $$</p>
 <td>$\theta$</td>
 <td>the angle between the slots, $\cos\theta=1/\sqrt{\kappa}$</td>
 </tr>
+<tr>
+<td>$\tilde\nu=\vec A+i\vec B$</td>
+<td>a non-zero element of $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>$a=\lVert\vec A\rVert=\lVert\vec B\rVert$</td>
+<td>the half singular value, $2a$ the non-zero singular value</td>
+</tr>
+<tr>
+<td>$\vec c=\vec A\times\vec B/a^{2}$</td>
+<td>the unit spectral direction</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=(e_t\pm i\vec c)/2$</td>
+<td>the canonical Hermitian idempotents</td>
+</tr>
+<tr>
+<td>$\tilde Q_H=2a\tilde\Pi_+$</td>
+<td>the Hermitian factor</td>
+</tr>
+<tr>
+<td>$\tilde Q_0=\tilde\nu/(2a)$</td>
+<td>the nilpotent partial-isometry factor</td>
+</tr>
+<tr>
+<td>$L_{\tilde\nu},R_{\tilde\nu}$</td>
+<td>left and right multiplication</td>
+</tr>
+<tr>
+<td>$\vec X$</td>
+<td>a normalized corner vector, $\tilde\nu\vec X=\tilde\Pi_+$</td>
+</tr>
+<tr>
+<td>$\varkappa$</td>
+<td>the corner constant, $\vec X\tilde\nu=\varkappa\tilde\Pi_-$</td>
+</tr>
+<tr>
+<td>$J_2(0)$</td>
+<td>the nilpotent Jordan block of size two</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="n-regular-spectrally-regular-operators-acting-on-one-side.html">N-Regular, Spectrally Regular Operators Acting on One Side</a>, for the general one-sided theory and the four-factor word.</li>
-<li><a href="n-regular-spectrally-degenerate-operators-acting-on-one-side.html">N-Regular, Spectrally Degenerate Operators Acting on One Side</a>, for the unipotent two-block operator at the spectral wall of the regular sector.</li>
-<li><a href="hermitian-pair-of-n-degenerate-spectrally-regular-operators-acting-on-two-sides.html">Hermitian Pair of N-Degenerate, Spectrally Regular Operators Acting on Two Sides</a>, for the companion two-sided operator, the rank-one projection and the cancellation of the phase.</li>
-<li><a href="n-degenerate-spectrally-degenerate-operators-acting-on-one-side.html">N-Degenerate, Spectrally Degenerate Operators Acting on One Side</a>, for the nilpotent case of the same sector pair.</li>
-<li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>, for the general two-factor pair on the null cone.</li>
-<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a>, for the definition, the spectral decomposition and the spinorial reading of the sector.</li>
-<li><a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the wall $B^{2}=0$, the nilpotents and the canonical Jordan pair.</li>
-<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the null cone and the quaternionic norm.</li>
+<li><a href="the-hermitian-pair-on-the-n-degenerate-sector.html">The Hermitian Pair on the N-Degenerate Sector</a>, for the two-sided operator on the same two strata.</li>
+<li><a href="the-one-sided-operator-exponential-on-the-n-regular-sector.html">The One-Sided Operator Exponential on the N-Regular Sector</a>, for the operator exponential off the null cone, where the four-factor word exists.</li>
+<li><a href="the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a>, for the two-factor polar pair used throughout.</li>
+<li><a href="introduction-to-the-operators-of-the-four-sectors.html">Introduction to the Operators of the Four Sectors</a>, for the three operators, the doubling rule and the table of the four sectors.</li>
+<li><a href="the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a> and <a href="the-n-degenerate-spectrally-degenerate-sector.html">The N-Degenerate, Spectrally Degenerate Sector</a>, for the element-level descriptions of $\Sigma_{01}$ and $\Sigma_{00}$.</li>
 </ul>
       </div>
     </main>
