@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Axis-Free Construction of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-axis-free-construction-of-the-biquaternion-algebra"><strong>The Axis-Free Construction of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The biquaternion algebra is fixed by the same four units as the quaternion algebra, one central imaginary $i$, and the same ten statements on the units, read with complex coefficients. The three vector units enter the data in the same way, the scalar $i$ is central and names no direction, and the construction therefore names no axis.</p>
+<p><strong>The route it improves on.</strong> The doubling of <em>The Cayley–Dickson Construction of the Biquaternion Algebra</em> builds the algebra as a stack of three layers: $\mathbb{R}$ to $\mathbb{C}$ by adjoining $\vec e_z$, $\mathbb{C}$ to $\mathbb{H}$ by adjoining $\vec e_x$ with the twist, and $\mathbb{H}$ to $\mathbb{B}$ by a scalar extension with $i$. That stack is correct and complete. It also fixes a rank at its first rung and keeps it at the second, and it presents the central imaginary $i$ as a third layer, added to a construction that already carries a direction. This article declares the four units and the scalar $i$ at once, and obtains the table directly.</p>
+<p><strong>Why the order is worth a separate article.</strong> A reader of the stack learns that one direction is a field and another is a generator, and then that a complex scalar is stacked on top. The algebra teaches neither. The three squares are equal, the cyclic symmetry of the table is exact, no vector unit is a coefficient field, and $i$ commutes with everything. The axis-free route states all four at the start. The cost of the stack is not an error but a misplaced emphasis: a reader cannot tell which features are the algebra's and which are the way the algebra was reached.</p>
+<p><strong>What is left over, and what it costs.</strong> One bit, the same one as for the quaternion algebra: the table needs a cyclic order of the three vector units, and a cyclic order is an orientation and not a direction. The central imaginary adds a second two-element choice, the sign of $i$, and that one is absorbed by the coefficientwise conjugation, which is an automorphism of the algebra and exchanges $i$ with $-i$. Neither bit costs anything. §<em>What Is Free and What Is Fixed</em> proves both absorptions.</p>
+<p><strong>The tensor product becomes a theorem.</strong> The base article <em>The Biquaternion Algebra</em> defines $\mathbb{B}$ as $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and derives the table from the tensor product. This article runs the argument the other way: it declares the table, proves the algebra axioms, and then derives the tensor product from the coefficient rule. The two routes reach the same object, and the second shows that the tensor product is a consequence of the coefficient field and not a construction step.</p>
+<p><strong>What the article contains.</strong> Section §<em>The Data</em> states the four units and the central scalar. Section §<em>The Product</em> gives the rule and shows that complex bilinearity is the whole of the difference from the quaternion algebra. Section §<em>The Table</em> prints the sixteen products. Section §<em>The Tensor Product as a Theorem</em> derives the tensor product. Section §<em>Associativity</em> proves associativity from the four left multipliers, now complex matrices, and records what that display says about the algebra. Section §<em>The First Properties</em> gives the centre, the four conjugations, the two sectors, the norm, the zero divisors, the idempotents and the commutator. Section §<em>What Is Free and What Is Fixed</em> accounts for the two bits. Section §<em>The Contrast with the Stack</em> sets the two constructions side by side.</p>
+<p><strong>The overlap, declared.</strong> The table, the ten statements and several of the properties below overlap <em>The Biquaternion Algebra</em> and the doubling article. A construction must produce the object those articles use. What this article adds is the order of the argument, the associativity proof inside the coefficient display, the derivation of the tensor product, and the accounting of what is chosen and what is forced.</p>
+<p><strong>Boundaries.</strong> The algebra as a structure, with its scalar extension, its centre, its structure map and the absence of division, is <em>The Biquaternion Algebra</em>, above this article in this category. The stack of three layers is <em>The Cayley–Dickson Construction of the Biquaternion Algebra</em>, beside this one. The element, its three coordinate systems and the four conjugations are <em>The Element, the Coordinates and the Conjugations</em>; the annihilators and the unit criterion are <em>Zero Divisors and Units</em>; the forms and their algebraic norms are <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the square of an element and its roots are <em>The Square of an Element</em>. The real case of this construction is <em>The Axis-Free Construction of the Quaternion Algebra</em>, in the Quaternions category.</p>
+<h2 id="the-data">The Data</h2>
+<h3 id="the-four-units">The Four Units</h3>
+<p><strong>One unit to a direction, and one scalar to the coefficient field.</strong> The algebra is written on a complex vector space with four units, exactly as the quaternion algebra is written on a real one:</p>
+<p>$$
+e_t=1,\qquad \vec e_x,\qquad \vec e_y,\qquad \vec e_z ,
+$$</p>
+<p>with the three vector units square to $-e_t$ and anticommuting in pairs, as in §<em>The Ten Statements</em>. The coefficients are complex, and the generic element is</p>
+<p>$$
+\tilde Q=Q_t e_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=\sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu,
+\qquad Q_\mu=q_\mu+iq'_\mu ,
+$$</p>
+<p>with a real part $q_\mu$ and an imaginary part $q'_\mu$ for each of the four. A pure element is one with $Q_t=0$, and it is written $\vec Q$.</p>
+<p><strong>The names are still labels.</strong> The letters $x,y,z$ name three directions of a three-dimensional space, and no unit of $V$ is spent on the coefficient field. In particular $\vec e_z$ is not the imaginary unit of the scalars: the scalar imaginary is $i$, it is central, and it appears only as a coefficient.</p>
+<h3 id="the-central-scalar">The Central Scalar</h3>
+<p><strong>The declaration.</strong> The algebra carries one extra element, the central imaginary $i$, declared by</p>
+<p>$$
+i^2=-e_t,\qquad i\tilde Q=\tilde Q i \ \text{ for every } \tilde Q .
+$$</p>
+<p><strong>What the declaration says and what it does not say.</strong> It says that the coefficient field is $\mathbb{C}=\mathbb{R}[i]$ and that the field lies in the centre. It does not say that $i$ is a vector unit: $i$ has no direction, it multiplies no direction label, and it is written on the coefficient and never on a unit. The table below contains no $i$, and that absence is the statement that the coefficient field is central.</p>
+<p><strong>The choice of sign.</strong> The declaration of $i$ is a two-element choice, $i$ or $-i$, and the coefficientwise conjugation of §<em>The Four Conjugations</em> exchanges the two. The choice is therefore invisible, and cheaper than the choice of an orientation: it is absorbed by an automorphism, where the orientation is absorbed only by an anti-automorphism.</p>
+<h3 id="the-vector-part-and-its-two-data">The Vector Part and Its Two Data</h3>
+<p><strong>The splitting.</strong> The underlying complex space is</p>
+<p>$$
+\mathbb{B}=\mathbb{C}e_t\oplus V_{\mathbb{C}},\qquad V_{\mathbb{C}}=\mathbb{C}\otimes_{\mathbb{R}}V=\operatorname{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\},
+$$</p>
+<p>of complex dimension $1+3=4$ and real dimension $8$.</p>
+<p><strong>The two data on the vector part.</strong> The three units of $V_{\mathbb{C}}$ are declared orthonormal for the complex-bilinear form</p>
+<p>$$
+(\vec e_\eta,\vec e_\zeta)=\delta_{\eta\zeta},
+$$</p>
+<p>extended $\mathbb{C}$-bilinearly, and the cyclic order $x\to y\to z\to x$ is declared as the orientation, exactly as in the real case. The first datum is complex bilinear and not Hermitian: $(\lambda\vec u,\vec v)=\lambda(\vec u,\vec v)$, with no conjugate on the scalar. That is the whole difference from the real case, and it is the reason the norm of §<em>The Norm</em> is complex and can vanish.</p>
+<p><strong>The cross product.</strong> The cross product is the one the orientation defines,</p>
+<p>$$
+\vec e_x\times\vec e_y=\vec e_z,\qquad
+\vec e_y\times\vec e_z=\vec e_x,\qquad
+\vec e_z\times\vec e_x=\vec e_y,
+$$</p>
+<p>extended by antisymmetry and $\mathbb{C}$-bilinearity.</p>
+<h3 id="what-the-data-do-not-contain">What the Data Do Not Contain</h3>
+<p><strong>No axis.</strong> The three vector units occur in the ten statements in the same way, and $i$ occurs in none of them.</p>
+<p><strong>No base field inside the vector part.</strong> The construction does not begin with $\mathbb{C}=\mathbb{R}[\vec e_z]$; there is a coefficient field, but it is $\mathbb{R}[i]$ and it is central. This is the difference the doubling cannot make, because its first rung must use a vector unit for the field it adjoins.</p>
+<p><strong>No stack.</strong> The four units and the scalar are declared in one act. There is no intermediate algebra, no second step that doubles the first, and no third step that extends scalars.</p>
+<p><strong>No root of $-e_t$ named.</strong> The roots of $-e_t$ in $\mathbb{B}$ form two complex quadrics together with the pair $\pm ie_t$, and the construction names no member of either.</p>
+<h2 id="the-product">The Product</h2>
+<h3 id="the-rule">The Rule</h3>
+<p><strong>Definition.</strong> For $\lambda,\mu\in\mathbb{C}$ and $\vec u,\vec v\in V_{\mathbb{C}}$, the product is</p>
+<p>$$
+(\lambda e_t+\vec u)(\mu e_t+\vec v)=(\lambda\mu-(\vec u,\vec v))\,e_t+\lambda\vec v+\mu\vec u+\vec u\times\vec v ,
+$$</p>
+<p>extended by $\mathbb{C}$-bilinearity.</p>
+<p><strong>The rule is the real rule with complex scalars.</strong> The formula is that of <em>The Axis-Free Construction of the Quaternion Algebra</em>, read with $\mathbb{C}$ in place of $\mathbb{R}$ and the complex-bilinear form in place of the real one. No term is added, no term is removed and no sign changes. The central imaginary enters only through the coefficients $\lambda$ and $\mu$, and it passes through the four terms untouched because it commutes with every element.</p>
+<p><strong>Bilinearity.</strong> The right side is $\mathbb{C}$-linear in each argument separately, so the rule extends to a $\mathbb{C}$-bilinear map $\mathbb{B}\times\mathbb{B}\to\mathbb{B}$, and by that extension it is defined on the whole algebra.</p>
+<h3 id="the-rule-on-the-units">The Rule on the Units</h3>
+<p><strong>Proposition.</strong> On two pure elements the rule reads $\vec u\vec v=-(\vec u,\vec v)e_t+\vec u\times\vec v$, and the products of the four units are</p>
+<p>$$
+e_te_\mu=e_\mu e_t=e_\mu,\qquad
+\vec e_\eta^2=-e_t,\qquad
+\vec e_\eta\vec e_\zeta=-\vec e_\zeta\vec e_\eta\ \ (\eta\neq\zeta),
+$$</p>
+<p>together with the three cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$ and $\vec e_z\vec e_x=\vec e_y$.</p>
+<p><em>Proof.</em> The first display is the rule with $\lambda=\mu=0$; it gives the square from $(\vec e_\eta,\vec e_\eta)=1$, the anticommutation from the antisymmetry of the cross product, and the cyclic products from the declared orientation. ∎</p>
+<p><strong>The central scalar nowhere.</strong> No entry of the list above contains $i$. The list is the ten statements of the quaternion algebra, letter for letter.</p>
+<h3 id="the-ten-statements">The Ten Statements</h3>
+<p><strong>The equivalence.</strong> The product rule is equivalent to ten statements on the units — the unit axiom, the three squares, the three anticommutations and the three cyclic products — read with $\mathbb{C}$-bilinear extension.</p>
+<p><em>Proof.</em> The rule gives the ten statements on the unit pairs. Conversely the ten statements fix all sixteen products, and a $\mathbb{C}$-bilinear map is fixed by its values on the sixteen pairs of a $\mathbb{C}$-basis. ∎</p>
+<p><strong>The same asymmetry.</strong> Seven of the ten statements are invariant under every permutation of the three vector units, and the three cyclic products are invariant under the cyclic group alone. The count and the reason are those of the quaternion algebra, and the central scalar changes neither: it is in none of the ten statements.</p>
+<h3 id="the-scalarvector-form">The Scalar–Vector Form</h3>
+<p><strong>Corollary.</strong> For two general elements,</p>
+<p>$$
+\tilde Q\tilde P=(Q_tP_t-(\vec Q,\vec P))\,e_t+Q_t\vec P+P_t\vec Q+\vec Q\times\vec P ,
+$$</p>
+<p>with all terms complex.</p>
+<p><em>Proof.</em> Expand the rule and collect. ∎</p>
+<p><strong>The reading.</strong> The two products of the vector part are the complex-bilinear form and the cross product, and the coefficient field enters only through the coefficients. The complexification changes the scalars and nothing else, so every structural statement about the quaternion algebra that uses only the ten statements carries over without change. That is the content of the next four sections.</p>
+<h2 id="the-table">The Table</h2>
+<h3 id="the-sixteen-products">The Sixteen Products</h3>
+<p><strong>The table.</strong> The rows give the left factor and the columns the right factor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-table-is-the-quaternion-table">The Table Is the Quaternion Table</h3>
+<p><strong>The statement.</strong> Every entry is a unit with a real sign. The table is the table of <em>The Axis-Free Construction of the Quaternion Algebra</em> and of <em>The Biquaternion Algebra</em>, entry for entry.</p>
+<p><strong>Why this is the central fact of the construction.</strong> A complex algebra of dimension four needs a table of sixteen complex numbers. This one needs sixteen integers. The coefficient field has enlarged and the multiplication has not changed, which is possible only because the new scalar is central. A reader who wants one sentence for the whole construction has it: the biquaternion algebra is the quaternion algebra with complex coefficients.</p>
+<p><strong>The check.</strong> The sixteen entries were evaluated from the rule and compared with the table, with no mismatch; the products were also computed against the coefficientwise rule $\sum_{\mu\nu}Q_{1\mu}Q_{2\nu}e_\mu e_\nu$, with a largest residual of $2.0\times10^{-15}$ over one hundred random complex pairs.</p>
+<h3 id="the-three-identities">The Three Identities</h3>
+<p><strong>The scalar half.</strong> The three squares and the triple product are one value,</p>
+<p>$$
+\vec e_x^2=\vec e_y^2=\vec e_z^2=\vec e_x\vec e_y\vec e_z=-e_t ,
+$$</p>
+<p>and the anti-cyclic triple product is $+e_t$. The identities are those of the quaternion algebra, and their proofs are the same proofs.</p>
+<p><strong>The check.</strong> The triple product in both cyclic orders was evaluated on the units, exactly, with no mismatch.</p>
+<h3 id="what-the-table-fixes-and-what-it-leaves">What the Table Fixes and What It Leaves</h3>
+<p><strong>Fixed.</strong> The sixteen products, hence the product of any two elements, hence associativity by §<em>Associativity</em>. The central scalar, hence the coefficient field and the complex dimension. The three squares, hence the form of the norm.</p>
+<p><strong>Left open.</strong> The cyclic order, one bit. The sign of $i$, one bit, absorbed by an automorphism. The names of the three units, which are labels.</p>
+<h2 id="the-tensor-product-as-a-theorem">The Tensor Product as a Theorem</h2>
+<p><strong>Theorem.</strong> The algebra built above is isomorphic, as an $\mathbb{R}$-algebra, to $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and the isomorphism carries $i$ to $i\otimes1$.</p>
+<p><em>Proof.</em> Write every element as $\tilde Q=\tilde q+i\tilde p$ with $\tilde q,\tilde p\in\mathbb{H}$, the quaternion algebra of real coefficients in the same four units; the decomposition is unique because the four units are $\mathbb{C}$-linearly independent. The map</p>
+<p>$$
+\tilde q+i\tilde p\longmapsto \tilde q\otimes1+\tilde p\otimes i
+$$</p>
+<p>is $\mathbb{R}$-linear and bijective, both sides being of real dimension eight. It is multiplicative: on the left,</p>
+<p>$$
+(\tilde q_1+i\tilde p_1)(\tilde q_2+i\tilde p_2)=\tilde q_1\tilde q_2-\tilde p_1\tilde p_2+i(\tilde q_1\tilde p_2+\tilde p_1\tilde q_2),
+$$</p>
+<p>using the centrality of $i$ and $i^2=-e_t$; on the right, the tensor rule $(a\otimes b)(a'\otimes b')=aa'\otimes bb'$ with $b,b'\in\{1,i\}$ gives</p>
+<p>$$
+(\tilde q_1\otimes1+\tilde p_1\otimes i)(\tilde q_2\otimes1+\tilde p_2\otimes i)
+=\tilde q_1\tilde q_2\otimes1+\tilde q_1\tilde p_2\otimes i+\tilde p_1\tilde q_2\otimes i-\tilde p_1\tilde p_2\otimes1 ,
+$$</p>
+<p>and the two agree term by term. ∎</p>
+<p><strong>The check.</strong> The two expansions were compared on one hundred random complex pairs, largest residual $2.0\times10^{-15}$.</p>
+<p><strong>The reading.</strong> The tensor product is a theorem here and a definition in <em>The Biquaternion Algebra</em>. Both statements are true and they are not rivals: the definition there answers the question what the algebra is made of, and the theorem here answers the question what the algebra built from the table turns out to be. The reverse reading is the useful one for this article, because a construction that begins with a tensor product has already chosen which factor is a field.</p>
+<p><strong>What the theorem does not say.</strong> It does not say that $\mathbb{H}$ is the important factor or that $\mathbb{C}$ is an added layer. The tensor product is symmetric as a set of data, and the choice of the quaternion factor as the one with the vector units is a description, not a construction step.</p>
+<h2 id="associativity">Associativity</h2>
+<h3 id="the-left-multipliers">The Left Multipliers</h3>
+<p><strong>The display.</strong> Left multiplication by $\tilde Q$ is the $\mathbb{C}$-linear map $X\mapsto\tilde QX$. Read on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, it is the matrix</p>
+<p>$$
+L(\tilde Q)=
+\begin{pmatrix}
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
+Q_z&-Q_y&Q_x&Q_t
+\end{pmatrix},
+$$</p>
+<p>the matrix $L_{\mathrm{axf}}(\tilde Q)$ of <em>Matrix Representations Conventions</em> with complex entries, and the four generators are</p>
+<p>$$
+L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$</p>
+<p>with $L_t=\mathrm I_4$. The four generators are the four generators of the real case, unchanged, with real integer entries.</p>
+<p><strong>The two things the display shows at once.</strong> The coefficient field does not appear in the generators: the four matrices are integer matrices, and the complex scalars enter only through the combination $\tilde Q\mapsto L(\tilde Q)$. The display therefore carries the same information as the table and no more, and it names no direction: each generator is a signed permutation with zero diagonal and determinant $+1$.</p>
+<h3 id="associativity_1">Associativity</h3>
+<p><strong>Proposition.</strong> $L_x^2=L_y^2=L_z^2=-\mathrm I_4$ and $L_xL_y=L_z$, $L_yL_z=L_x$, $L_zL_x=L_y$.</p>
+<p><em>Proof.</em> Direct multiplication of the printed integer arrays. ∎</p>
+<p><strong>Corollary.</strong> $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of units.</p>
+<p><em>Proof.</em> Seven pairs involve $L_t=\mathrm I_4$; of the remaining nine, three are the squares and three are the cyclic products, and the last three are the negatives of cyclic products, as in the real case. ∎</p>
+<p><strong>Theorem.</strong> The multiplication is associative.</p>
+<p><em>Proof.</em> The map $\tilde Q\mapsto L(\tilde Q)$ is $\mathbb{C}$-linear and multiplicative on the basis by the corollary, hence multiplicative everywhere by $\mathbb{C}$-bilinearity of both sides; so $L(\tilde Q)L(\tilde P)=L(\tilde Q\tilde P)$, and</p>
+<p>$$
+(\tilde Q\tilde P)\tilde R=L(\tilde Q\tilde P)\tilde R=L(\tilde Q)L(\tilde P)\tilde R=L(\tilde Q)(\tilde P\tilde R)=\tilde Q(\tilde P\tilde R). 
+$$</p>
+<p><strong>What the proof does not use.</strong> It does not use the tensor product, the central scalar, or any array of a matrix model. It uses the sixteen products and the four integer generators. The complexification therefore preserves associativity for a structural reason: the table is real, and the proof reads only the table.</p>
+<p><strong>The check.</strong> The sixty-four triples of basis elements were checked in integer arithmetic, with no mismatch. One hundred random complex triples gave a largest residual of $1.1\times10^{-14}$.</p>
+<h3 id="the-algebra-axioms">The Algebra Axioms</h3>
+<p><strong>Theorem.</strong> With this multiplication $\mathbb{B}$ is a four-dimensional associative unital non-commutative algebra over $\mathbb{C}$, of real dimension eight, and it is not a division algebra.</p>
+<p><em>Proof.</em> Associativity is the theorem above; the unit is $e_t$; non-commutativity is $\vec e_x\vec e_y=-\vec e_y\vec e_x\neq\vec e_y\vec e_x$; the dimensions are the declared basis over $\mathbb{C}$ and its realification. The failure of division is §<em>The Zero Divisors and the Absence of Division</em>. ∎</p>
+<p><strong>The centre of the display.</strong> The matrix $L(\tilde Q)$ has trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$, the square of the norm of §<em>The Norm</em>, so the display separates the scalar part from the rest by its trace and detects the zero divisors by its determinant.</p>
+<p><strong>The check.</strong> The trace identity held exactly on one hundred random complex elements, and the determinant identity to $7.7\times10^{-14}$. The rank of $L(\tilde Q)$ was $4$ on a unit and $2$ on the zero divisor $e_t+i\vec e_x$, which is the rank statement behind the annihilator dimension of <em>Zero Divisors and Units</em>.</p>
+<h2 id="the-first-properties">The First Properties</h2>
+<h3 id="the-unit-and-the-centre">The Unit and the Centre</h3>
+<p><strong>Theorem.</strong> The centre of $\mathbb{B}$ is the complex line $\mathbb{C}e_t$.</p>
+<p><em>Proof.</em> The line is central. Conversely let $\tilde Q$ commute with every element. It commutes with each vector unit, so by $[\tilde Q,\vec e_\eta]=2\vec Q\times\vec e_\eta$ and the argument of the real case, its vector part vanishes. It is therefore a complex multiple of $e_t$. ∎</p>
+<p><strong>The check.</strong> The commutation with all four units held exactly on one hundred random elements of the line.</p>
+<p><strong>The reading.</strong> The centre is a field, $\mathbb{C}$, of real dimension two; it is not the scalar line of the quaternion algebra. The difference is the whole of the difference between the two algebras at the level of structure, and the next subsection is its source.</p>
+<h3 id="the-four-conjugations">The Four Conjugations</h3>
+<p><strong>The four maps.</strong> The algebra carries four involutions:</p>
+<p>$$
+\tilde Q^{\natural}=Q_te_t-Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z,\qquad
+\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z,
+$$</p>
+<p>$$
+\tilde Q^{\ast}=\bar{\tilde Q}^{\natural}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z ,
+$$</p>
+<p>and the identity. The first negates the vector part and fixes the coefficients; the second conjugates the coefficients and fixes the units; the third does both.</p>
+<p><strong>Proposition.</strong> The four maps form a group isomorphic to $\mathbb{Z}_2\times\mathbb{Z}_2$. The natural conjugation ${}^{\natural}$ is $\mathbb{C}$-linear and reverses the order of a product; the coefficientwise conjugation $\bar{\ }$ is $\mathbb{C}$-antilinear and preserves the order; the Hermitian conjugation ${}^{\ast}$ is $\mathbb{C}$-antilinear and reverses the order.</p>
+<p><em>Proof.</em> Each map is an involution and the three commute, so the group is $\mathbb{Z}_2\times\mathbb{Z}_2$ with ${}^{\natural}\bar{\ }={}^{\ast}$. The order behaviour of ${}^{\natural}$ is that of the quaternion conjugation, extended $\mathbb{C}$-linearly; the order behaviour of $\bar{\ }$ is that of a field automorphism applied to the coefficients; and ${}^{\ast}$ composes the two. ∎</p>
+<p><strong>The check.</strong> The involution, the commutation, the order behaviour of each of the three and the identity ${}^{\ast}={}^{\natural}\bar{\ }$ were checked on one hundred random complex pairs, with largest residuals between $9.9\times10^{-16}$ and $2.0\times10^{-15}$.</p>
+<p><strong>What the coefficient field buys.</strong> In the quaternion algebra only one of the four is an anti-automorphism. Here two are, and the coefficientwise conjugation is an automorphism. That is the exact sense in which the complex scalar doubles the symmetries of the algebra: the field contributes a map, and the product respects it because the coefficients are central.</p>
+<h3 id="the-two-sectors">The Two Sectors</h3>
+<p><strong>Definition.</strong> The two sectors are the eigenspaces of the Hermitian conjugation,</p>
+<p>$$
+\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{\ast}=\tilde Q\},\qquad
+\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{\ast}=-\tilde Q\},
+$$</p>
+<p>with projections $\tilde Q_{\Psi}=\tfrac12(\tilde Q+\tilde Q^{\ast})$ and $\tilde Q_{\Phi}=\tfrac12(\tilde Q-\tilde Q^{\ast})$.</p>
+<p><strong>Proposition.</strong> Both sectors are real subspaces of real dimension four, and $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ as a real space, not as a complex one.</p>
+<p><em>Proof.</em> The map ${}^{\ast}$ is $\mathbb{C}$-antilinear and involutive, so its eigenspaces are real subspaces and their direct sum is the whole real space. In coordinates, $\mathbb{B}_{\Psi}$ is carried by $e_t$ and $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which are four real parameters, and $\mathbb{B}_{\Phi}$ by $ie_t$ and $\vec e_x$, $\vec e_y$, $\vec e_z$. ∎</p>
+<p><strong>The check.</strong> The two projections sum to the identity and land in the two sectors, with residual $0$ on one hundred random elements.</p>
+<p><strong>The reading.</strong> The splitting is not a splitting over $\mathbb{C}$: an element of a sector multiplied by $i$ passes to the other sector. The two sectors are therefore the real halves of the algebra, and no vector unit is needed to define them, since ${}^{\ast}$ uses the coefficient conjugation and the vector part and nothing else.</p>
+<h3 id="the-norm">The Norm</h3>
+<p><strong>Definition.</strong> The quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$.</p>
+<p><strong>Proposition.</strong> $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, a complex central element, and it is multiplicative.</p>
+<p><em>Proof.</em> The product is computed from the scalar–vector form; the vector part vanishes and the scalar part is the sum of four squares. Multiplicativity is the computation of the real case, which uses only the order reversal of ${}^{\natural}$ and the centrality of the value. ∎</p>
+<p><strong>The difference from the real case.</strong> The value is complex, so it can vanish at a nonzero element; it is not a norm in the sense of a distance, and the corpus writes it as an algebraic norm and not as $\lvert\tilde Q\rvert$. Its vanishing set is a cone of complex dimension three, and it is the subject of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>.</p>
+<p><strong>The check.</strong> The sum-of-squares reading held to $1.8\times10^{-15}$ on one hundred random elements, and multiplicativity to $5.9\times10^{-14}$ on one hundred random pairs.</p>
+<h3 id="the-zero-divisors-and-the-absence-of-division">The Zero Divisors and the Absence of Division</h3>
+<p><strong>Theorem.</strong> The element $\tilde Q$ is a unit if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and then $\tilde Q^{-1}=\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$. The algebra is not a division algebra.</p>
+<p><em>Proof.</em> If the norm does not vanish, the two products of $\tilde Q$ with $\tilde Q^{\natural}/\langle\tilde Q\rangle_{\natural}$ are the unit, since the norm is central and nonzero. If the norm vanishes, $\tilde Q$ kills a nonzero element: for every real unit vector $\vec u$,</p>
+<p>$$
+(e_t+i\vec u)(e_t-i\vec u)=e_t-(i\vec u)^{2}=e_t+\vec u^{2}=0 ,
+$$</p>
+<p>because $\vec u^2=-e_t$ and $i^2=-e_t$, so both factors are nonzero and both are zero divisors. ∎</p>
+<p><strong>The family of zero divisors.</strong> The identity above holds for every real unit $\vec u$, so the sphere of real unit vectors is a two-dimensional family of zero divisors with their annihilators. Two of them are $e_t\pm i\vec e_z$, the pair the corpus writes in its frames; the construction distinguishes neither, and the sphere is where the pair sits.</p>
+<p><strong>The check.</strong> The product $(e_t+i\vec u)(e_t-i\vec u)$ was evaluated exactly, with no mismatch, and the inverse identity held to $1.2\times10^{-15}$ on one hundred random elements of nonzero norm.</p>
+<h3 id="the-idempotents">The Idempotents</h3>
+<p><strong>Proposition.</strong> For every real unit vector $\vec u$, the element $\tilde\Pi_+=\tfrac12(e_t+i\vec u)$ is an idempotent, Hermitian, of zero norm, and $\tilde\Pi_-=\tfrac12(e_t-i\vec u)$ is its orthogonal companion, with $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=e_t$.</p>
+<p><em>Proof.</em> Expanding, $\tilde\Pi_+^2=\tfrac14(e_t+2i\vec u+(i\vec u)^2)=\tfrac14(e_t+2i\vec u+e_t)=\tfrac12(e_t+i\vec u)$, using the centrality of $i$, $(i\vec u)^2=i^2\vec u^2=+e_t$. The Hermitian property is the reality of $\vec u$, and the vanishing of the norm is $\tfrac14(1-(\vec u,\vec u))=0$, the vector being a real unit. The companion statements follow by the change of sign of $i$ and by the identity of the zero divisors above. ∎</p>
+<p><strong>The check.</strong> The idempotent, Hermitian and null properties held on one hundred random real unit vectors, largest residual $1.1\times10^{-16}$.</p>
+<p><strong>The sphere of idempotents.</strong> The idempotents of this form are indexed by the unit sphere of the real vector part, and the rotations of that sphere are automorphisms of the algebra, so no one of them is distinguished. The corpus writes one pair, $\tfrac12(e_t\pm i\vec e_z)$, because a frame is needed for the physics; the algebra supplies a sphere. The full classification of the idempotents, which is wider than this family, is <em>The Square of an Element</em>.</p>
+<h3 id="the-classes-of-element">The Classes of Element</h3>
+<p><strong>The roots of $-e_t$.</strong> An element satisfies $\tilde\zeta^2=-e_t$ exactly when either $\tilde\zeta=\pm ie_t$, or $\tilde\zeta$ is pure with $B^2=(\vec\zeta,\vec\zeta)=1$; the second alternative is a complex quadric of complex dimension two.</p>
+<p><em>Proof.</em> The square is $(Q_t^2-B^2)e_t+2Q_t\vec\zeta$. The vanishing of the vector part leaves $Q_t=0$ or $\vec\zeta=0$; the first gives $-B^2=-1$, the second $Q_t^2=-1$. ∎</p>
+<p><strong>The roots of $+e_t$.</strong> The same computation with the other sign gives either $\tilde\zeta=\pm e_t$ or $\tilde\zeta$ pure with $B^2=-1$.</p>
+<p><strong>The one imaginary that is central.</strong> The pair $\pm ie_t$ is the pair of central roots, and it is the sign choice of §<em>The Central Scalar</em>. The quadric $B^2=1$ is the family of vector roots, and it contains the real unit sphere of the quaternion algebra: the real roots of $-e_t$ are the real points of the complex quadric, and the complex algebra adds the rest.</p>
+<p><strong>The classes, in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>equation</th>
+<th>the set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>units</td>
+<td>$\langle\tilde Q\rangle_{\natural}\neq0$</td>
+<td>the complement of the null cone</td>
+</tr>
+<tr>
+<td>zero divisors</td>
+<td>$\langle\tilde Q\rangle_{\natural}=0$</td>
+<td>the null cone, of real dimension six</td>
+</tr>
+<tr>
+<td>idempotents</td>
+<td>$\tilde Q^2=\tilde Q$</td>
+<td>a sphere of Hermitian idempotents, and more</td>
+</tr>
+<tr>
+<td>roots of $-e_t$</td>
+<td>$\tilde Q^2=-e_t$</td>
+<td>$\{\pm ie_t\}$ and the quadric $B^2=1$</td>
+</tr>
+<tr>
+<td>roots of $+e_t$</td>
+<td>$\tilde Q^2=+e_t$</td>
+<td>$\{\pm e_t\}$ and the quadric $B^2=-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The check.</strong> One hundred random points of the quadric $B^2=1$ squared to $-e_t$ to $4.4\times10^{-16}$, and the two central roots were checked exactly.</p>
+<h3 id="the-commutator">The Commutator</h3>
+<p><strong>Proposition.</strong> For two elements with pure parts, $[\vec Q_1,\vec Q_2]=2\,\vec Q_1\times\vec Q_2$, and for two general elements $[\tilde Q_1,\tilde Q_2]=2\,\vec Q_1\times\vec Q_2$.</p>
+<p><em>Proof.</em> The commutator cancels the symmetric terms of the scalar–vector form. ∎</p>
+<p><strong>The check.</strong> The identity held exactly on one hundred random complex pairs.</p>
+<p><strong>The reading.</strong> The bracket is the complex-bilinear cross product, so the vector part with the bracket is the complex Lie algebra $\mathfrak{so}(3,\mathbb{C})$, of complex dimension three. The central scalar does not enter the bracket, and it does not enlarge it: the bracket of the algebra is the bracket of the quaternion algebra read over $\mathbb{C}$.</p>
+<h2 id="what-is-free-and-what-is-fixed">What Is Free and What Is Fixed</h2>
+<h3 id="the-one-bit-of-the-table">The One Bit of the Table</h3>
+<p><strong>The invariance.</strong> Seven of the ten statements are invariant under every permutation of the three vector units, and the three cyclic products are the orientation. The argument is that of the real case, and it is unchanged: the central scalar is in none of the ten statements, so it can neither enlarge nor reduce the symmetry.</p>
+<p><strong>The residue.</strong> One bit, and it is absorbed by the natural conjugation, which reverses the order and is an isomorphism onto the opposite algebra.</p>
+<h3 id="the-one-bit-of-the-scalar">The One Bit of the Scalar</h3>
+<p><strong>The sign of $i$.</strong> The declaration of $i$ is the choice between $i$ and $-i$, and the coefficientwise conjugation exchanges the two. It is an automorphism of the algebra, so the choice is absorbed without even reversing the product. This bit is strictly cheaper than the orientation bit, and it is the reason the complex scalar adds no freedom to the construction.</p>
+<p><strong>The comparison with the doubling.</strong> The stack needs a root of $-e_t$ in a vector direction and then the scalar $i$ as a further layer. Here the scalar sits in the centre from the first line and the vector units are untouched, so there is no direction in the choice at all.</p>
+<h3 id="the-automorphisms">The Automorphisms</h3>
+<p><strong>Proposition.</strong> A rotation of the real vector part, extended $\mathbb{C}$-linearly and by the identity on $e_t$ and on $i$, is an automorphism. A reflection of the real vector part, extended in the same way, satisfies $T(\tilde Q\tilde P)=T(\tilde P)T(\tilde Q)$ and is not an automorphism.</p>
+<p><em>Proof.</em> The rule of §<em>The Product</em> is preserved by a map that preserves the complex-bilinear form, the cross product and the central scalar. A rotation preserves the cross product, since $Ru\times Rv=(\det R)R(u\times v)$ and $\det R=1$; a reflection reverses it, and the reversal is the sign that turns the identity into the anti-automorphism, as in the real case. ∎</p>
+<p><strong>The check.</strong> A rotation gave an automorphism with a largest residual of $4.8\times10^{-15}$ over one hundred random complex pairs, and a transposition of two units gave an anti-automorphism with a largest residual of $1.8\times10^{-15}$; the same transposition read as an automorphism failed with a residual of $16.3$.</p>
+<p><strong>Where the rest of the group is.</strong> The $\mathbb{C}$-linear automorphisms of $\mathbb{B}$ are more numerous than the rotations of the vector part. The algebra is central simple over $\mathbb{C}$, so every $\mathbb{C}$-linear automorphism is inner, of the form $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ for a unit $\tilde U$, by the Skolem–Noether theorem; the group, its real forms and the derivation algebra are <em>Biquaternion Automorphisms and Derivations</em>. This article uses only the subfamily of rotations, because that is the subfamily its own symmetries produce, and the real case is <em>Quaternion Automorphisms and Derivations</em>.</p>
+<h3 id="no-axis-and-no-vector-root-distinguished">No Axis, and No Vector Root Distinguished</h3>
+<p><strong>The account.</strong> The data are four units, one central scalar, one complex-bilinear form and one orientation. The three vector units occur in the ten statements in the same way, the central scalar occurs in none of them, the roots of $-e_t$ form two quadrics and a central pair with no member singled out, the idempotents form a sphere, and the two bits that remain are absorbed, one by an anti-automorphism and one by an automorphism.</p>
+<h2 id="the-contrast-with-the-stack">The Contrast with the Stack</h2>
+<h3 id="the-three-layers">The Three Layers</h3>
+<p><strong>The stack in one paragraph.</strong> The doubling of <em>The Cayley–Dickson Construction of the Biquaternion Algebra</em> runs the doubling twice and then extends the scalars: $\mathbb{R}$ to $\mathbb{C}$ by adjoining $\vec e_z$, $\mathbb{C}$ to $\mathbb{H}$ by adjoining $\vec e_x$ with the twist, and $\mathbb{H}$ to $\mathbb{B}$ by adjoining $i$ as a central scalar. Two of the three steps spend a vector unit, and the third adds the field.</p>
+<p><strong>What the stack proves and this article assumes.</strong> The stack proves that each rung is forced: that the twist is the only rule without zero divisors, that the third unit is computed, and that the fourth layer is a scalar extension and not a fourth rung of the ladder. Those are results, and this article takes them as given. Its table is the stack's table, and a reader who wants the reasons for the signs must read the stack.</p>
+<p><strong>The asymmetry.</strong> In the stack, the first rung names $\vec e_z$ inside a conjugation and the second names $\vec e_x$ outside it, and the third names $i$. Three different roles for one product. Here the ten statements name no unit differently from another, and the field is declared in the centre.</p>
+<h3 id="the-two-choices-compared">The Two Choices, Compared</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the stack</th>
+<th>the axis-free construction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>declared first</td>
+<td>$\mathbb{C}=\mathbb{R}[\vec e_z]$</td>
+<td>the four units and the central $i$</td>
+</tr>
+<tr>
+<td>the role of $\vec e_z$</td>
+<td>the imaginary unit of the base</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>the role of $\vec e_x$</td>
+<td>the doubling unit</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>the role of $\vec e_y$</td>
+<td>computed, $\vec e_z\vec e_x$</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>the role of $i$</td>
+<td>a third layer, added last</td>
+<td>a central scalar, declared first</td>
+</tr>
+<tr>
+<td>what is derived</td>
+<td>the squares, the anticommutations, the cycle, the tensor product</td>
+<td>the table, then the tensor product</td>
+</tr>
+<tr>
+<td>what is chosen</td>
+<td>a root of $-e_t$, a transverse unit, a sign</td>
+<td>an orientation and a sign of $i$</td>
+</tr>
+<tr>
+<td>the size of the choice</td>
+<td>a point of a sphere, a direction, a sign</td>
+<td>two bits, both absorbed</td>
+</tr>
+<tr>
+<td>what is proved</td>
+<td>the twist is forced, the layers are the only ones</td>
+<td>associativity, the algebra axioms, the first properties</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the table.</strong> The two routes answer different questions. The stack answers why the algebra has this table and why the ladder stops where it does. The axis-free construction answers what the table is, with data that match the symmetry of the object, and it is the route to take when the table is the starting point.</p>
+<h3 id="what-the-stack-is-for">What the Stack Is For</h3>
+<p><strong>The exclusion of the plain rule.</strong> The stack is the only route that exhibits the alternative: under the plain rule the element $\vec e_z\vec e_x$ squares to $+e_t$ and the algebra acquires two idempotents and zero divisors. The axis-free construction never has the plain rule in view, so it cannot make that argument, and the doubling article's is the one to read.</p>
+<p><strong>The scalar extension as a rung.</strong> The stack also shows why the fourth layer is not a fourth rung: the Cayley–Dickson step at that rung would produce the octonions or a split algebra, and the scalar extension produces neither. That identification is the content of <em>The Cayley–Dickson Construction of the Biquaternion Algebra</em>, §<em>The Three Layers</em>, and it has no counterpart here.</p>
+<p><strong>The division property.</strong> Both routes prove that the quaternion algebra divides and that the biquaternion algebra does not. The axis-free route proves it in one line from the norm, because the norm is a sum of four squares of coefficients; the stack proves it from the norm of a doubled element. The two proofs are the same proof read at different depths.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternion algebra is fixed by four units, one central imaginary, and the ten statements of the quaternion algebra read with complex coefficients. The product rule is</p>
+<p>$$
+(\lambda e_t+\vec u)(\mu e_t+\vec v)=(\lambda\mu-(\vec u,\vec v))\,e_t+\lambda\vec v+\mu\vec u+\vec u\times\vec v ,
+$$</p>
+<p>with $\lambda,\mu$ complex and the form complex bilinear. Complex bilinearity is the whole of the difference from the quaternion algebra: no term is added, no sign changes, and the table has the same sixteen integer entries. The central scalar appears in no entry, and that absence is what makes the table real and the algebra complex.</p>
+<p>Associativity is proved inside the coefficient display, whose four generators are integer signed permutations with zero diagonal and determinant one; the complex scalars enter only through the combination. The tensor product with $\mathbb{C}$ is a theorem of this route and a definition of the base article, and the two readings agree term by term.</p>
+<p>The first properties follow in a few lines each: the centre is the complex line; four involutions form a Klein group, with two $\mathbb{C}$-linear maps and two antilinear ones, two of them reversing the order; the two sectors are real four-dimensional halves given by the Hermitian conjugation; the norm is a complex central quadratic form, multiplicative and vanishing on a cone, so the algebra is not a division algebra and its units are the complement of the cone; the zero divisors include the whole sphere $(e_t+i\vec u)(e_t-i\vec u)=0$ over the real unit vectors; the Hermitian idempotents are the same sphere, $\tfrac12(e_t+i\vec u)$; the roots of $\pm e_t$ are a central pair and a complex quadric each; and the commutator of two elements is twice the complex cross product of their vector parts.</p>
+<p>Two bits are left over and both are absorbed: the orientation of the three vector units by the natural conjugation, and the sign of $i$ by the coefficientwise conjugation. No direction is named, no vector unit is spent on a field, and no layer is stacked.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}e_t\oplus V_{\mathbb{C}}$</td>
+<td>the biquaternion algebra, a complex scalar line plus a three-dimensional complex vector part</td>
+</tr>
+<tr>
+<td>$e_t=1$</td>
+<td>the scalar unit, the two-sided identity</td>
+</tr>
+<tr>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the three vector units, orthonormal and positively oriented</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central imaginary, $i^2=-e_t$, the coefficient field $\mathbb{C}=\mathbb{R}[i]$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$</td>
+<td>the generic biquaternion, coefficients complex</td>
+</tr>
+<tr>
+<td>$\vec Q$</td>
+<td>the vector part, a pure element</td>
+</tr>
+<tr>
+<td>$(\vec Q_1,\vec Q_2)$</td>
+<td>the complex-bilinear form of the vector part</td>
+</tr>
+<tr>
+<td>$B^2=(\vec Q,\vec Q)$</td>
+<td>the quadratic value of a vector part</td>
+</tr>
+<tr>
+<td>$\vec Q_1\times\vec Q_2$</td>
+<td>the complex cross product the orientation fixes</td>
+</tr>
+<tr>
+<td>$^{\natural}$</td>
+<td>the natural conjugation, $\mathbb{C}$-linear, order reversing</td>
+</tr>
+<tr>
+<td>$\bar{\ }$</td>
+<td>the coefficientwise conjugation, antilinear, order preserving</td>
+</tr>
+<tr>
+<td>${}^{\ast}={}^{\natural}\bar{\ }$</td>
+<td>the Hermitian conjugation, antilinear, order reversing</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$</td>
+<td>the two sectors, the eigenspaces of ${}^{\ast}$</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$</td>
+<td>the quaternionic norm, complex and central</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$</td>
+<td>the complex-bilinear form $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$</td>
+</tr>
+<tr>
+<td>$L(\tilde Q)$, $L_x,L_y,L_z$</td>
+<td>left multiplication and its four generators, the axis-free display</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$</td>
+<td>the Hermitian idempotents over the real unit vectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra as a tensor product, its table, its axioms, its centre and the absence of division.</li>
+<li><a href="the-cayley-dickson-construction-of-the-biquaternion-algebra.html">The Cayley–Dickson Construction of the Biquaternion Algebra</a>, for the stack of three layers and the proof that the third is a scalar extension.</li>
+<li><a href="the-axis-free-construction-of-the-quaternion-algebra.html">The Axis-Free Construction of the Quaternion Algebra</a>, for the real case, the ten statements and the associativity proof this article repeats.</li>
+<li><a href="the-element-the-coordinates-and-the-conjugations.html">The Element, the Coordinates and the Conjugations</a>, for the four conjugations, their group and the three coordinate systems.</li>
+<li><a href="zero-divisors-and-units.html">Zero Divisors and Units</a>, for the annihilators, their dimension two, and the unit criterion.</li>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the norm as a form, its conjugates and its vanishing set.</li>
+<li><a href="the-square-of-an-element.html">The Square of an Element</a>, for the roots of a general element and the full classification of the idempotents.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the axis-free array and the reason the coefficient basis is the one that names no direction.</li>
+<li><a href="biquaternion-automorphisms-and-derivations.html">Biquaternion Automorphisms and Derivations</a>, for the full automorphism group, its two connected components, the derivation algebra and the role of Skolem–Noether.</li>
+<li><a href="quaternion-automorphisms-and-derivations.html">Quaternion Automorphisms and Derivations</a>, for the real case of the same three objects.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the doubling ladder and the complexification of a composition algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

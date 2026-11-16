@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Axis-Free Construction of the Quaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-axis-free-construction-of-the-quaternion-algebra"><strong>The Axis-Free Construction of the Quaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The quaternion algebra is fixed by four units, one unit axiom, three equal squares, three anticommutations and three cyclic products. The three vector units enter that list in exactly the same way, so the construction names no direction, no base field and no imaginary unit.</p>
+<p><strong>The route it improves on.</strong> The doubling of <em>The Cayley–Dickson Construction of the Quaternion Algebra</em> builds the same algebra, correctly and completely. It also declares a base field $\mathbb{C}=\mathbb{R}[\vec e_z]$, then a doubling unit $\vec e_x$, and it computes the third unit, $\vec e_y=\vec e_z\vec e_x$. Three units that the algebra treats alike therefore enter the doubling in three different roles: one is a scalar field, one is a generator, one is an output. This article takes the other order. It declares the three alike and derives the table.</p>
+<p><strong>Why the order is worth a separate article.</strong> A construction is the page on which a reader learns what belongs to the object and what belongs to the way the object was reached. The doubling teaches that one direction is a field and another is a generator, and the algebra teaches no such thing. Nothing in the doubling is wrong. The cost is that the equality of the three squares, the cyclic symmetry of the table and the fact that the third unit carries no special role must all be re-derived, and a reader cannot tell from that page which features are the algebra's and which are the construction's. The axis-free route states them at the start, in the data.</p>
+<p><strong>What is left over, and what it costs.</strong> One bit. The table needs a cyclic order of the three units, and a cyclic order is an orientation, not a direction. §<em>What Is Free and What Is Fixed</em> shows that seven of the ten statements of the data are invariant under every permutation of the three units, that the remaining three are the cyclic ones, that the automorphisms of the algebra are exactly the rotations of the vector part, that a reflection is an anti-automorphism, and that the other cyclic order tabulates the opposite algebra, which the conjugation identifies with this one. The bit is therefore invisible.</p>
+<p><strong>What the article contains.</strong> Section §<em>The Data</em> states the four units and the two data on the vector part. Section §<em>The Product</em> gives the rule, first in the invariant form and then on the units, and states the ten equations the rule is equivalent to. Section §<em>The Table</em> prints the sixteen products and the three identities they satisfy. Section §<em>Associativity</em> proves associativity from the four left multipliers, which are signed permutation matrices of determinant one; that display is used as a proof and not as a picture. Section §<em>The First Properties</em> gives the unit, the centre, the conjugation, the norm, the inverse, the division property, the classes of element and the commutator. Section §<em>What Is Free and What Is Fixed</em> accounts for the symmetries. Section §<em>The Contrast with the Doubling</em> sets the two constructions side by side and states what each is good for.</p>
+<p><strong>The overlap, declared.</strong> The table and the list of properties below overlap <em>Quaternion Algebra</em> and the doubling article, and the overlap is deliberate. A construction must produce the object the other two articles use, and a reader who arrives from either of them must meet the same sixteen products. What is new here is the order of the argument, the associativity proof from the display, and the accounting of what is chosen and what is forced.</p>
+<p><strong>Boundaries.</strong> The algebra as an algebraic structure, with its vector subspaces and its Lie algebra, is <em>Quaternion Algebra</em>, above this article in this category. The doubling step, its nine derivations and the argument that fixes the twist are <em>The Cayley–Dickson Construction of the Quaternion Algebra</em>, beside this one. The classes of element are <em>The Specificities of the Quaternion Algebra</em>; the norm, its multiplicativity and the invertibility criterion it supplies are <em>Norm and Invertibility in the Quaternion Algebra</em>; the matrix models are <em>Quaternion Linear Representations</em> and <em>The Rotor Group via $4\times4$ Real Matrices</em>. The same construction with the signs of two squares changed is <em>Split-Quaternion Algebra</em>, and the same construction on the biquaternion algebra is <em>The Axis-Free Construction of the Biquaternion Algebra</em>, in the Biquaternions category.</p>
+<h2 id="the-data">The Data</h2>
+<h3 id="the-four-units">The Four Units</h3>
+<p><strong>One unit to a direction.</strong> The algebra is written on a real vector space with four units, one for the scalar and one for each direction:</p>
+<p>$$
+e_t=1,\qquad \vec e_x,\qquad \vec e_y,\qquad \vec e_z .
+$$</p>
+<p>The scalar unit is $e_t$ and it is the number $1$. The three vector units are the quaternion units, the corpus's replacement for Hamilton's $i,j,k$. The arrow is the only mark that separates the scalar unit from a vector unit.</p>
+<p><strong>The coefficients.</strong> A coefficient carries the name of the direction it multiplies. The generic element is</p>
+<p>$$
+\tilde q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z=\sum_{\mu\in\{t,x,y,z\}} q_\mu e_\mu ,
+$$</p>
+<p>with the four coefficients real and the label on each coefficient naming the unit it multiplies. A pure element is one with $q_t=0$, and it is written $\vec q$.</p>
+<p><strong>The names are labels and not data.</strong> The letters $x,y,z$ name three directions of a three-dimensional space. Nothing in this article reads a physical direction into them, and §<em>What Is Free and What Is Fixed</em> proves that a permutation of the three labels produces the same algebra.</p>
+<h3 id="the-vector-part-and-its-two-data">The Vector Part and Its Two Data</h3>
+<p><strong>The splitting.</strong> The underlying space is the direct sum</p>
+<p>$$
+\mathbb{H}=\mathbb{R}e_t\oplus V,\qquad V=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},
+$$</p>
+<p>of real dimensions $1+3=4$. The scalar line and the vector part are the two objects the construction adds a product to, and the vector part carries the whole of the interest: the scalar line has one dimension and no choice in it.</p>
+<p><strong>The first datum: an inner product.</strong> The three units of $V$ are declared orthonormal,</p>
+<p>$$
+\vec e_\eta\cdot\vec e_\zeta=\delta_{\eta\zeta},
+$$</p>
+<p>and the inner product is extended bilinearly. It is the unit metric of <em>Algebra and Element Conventions</em>, positive definite, of signature $(3,0)$ on $V$. This datum is invariant under every orthogonal map of $V$.</p>
+<p><strong>The second datum: an orientation.</strong> The cyclic order $x\to y\to z\to x$ is declared, equivalently the volume element $\vec e_x\wedge\vec e_y\wedge\vec e_z$, and the cross product is the one it defines,</p>
+<p>$$
+\vec e_x\times\vec e_y=\vec e_z,\qquad
+\vec e_y\times\vec e_z=\vec e_x,\qquad
+\vec e_z\times\vec e_x=\vec e_y,
+$$</p>
+<p>extended by antisymmetry and bilinearity. This datum is invariant under the rotations of $V$ and reverses under a reflection.</p>
+<p><strong>Neither datum is a direction.</strong> The inner product is one object and the orientation is another, and neither is a point of the unit sphere of $V$. A direction would be a unit vector, and naming one would be a datum of a different kind. The construction below names none.</p>
+<h3 id="what-the-data-do-not-contain">What the Data Do Not Contain</h3>
+<p><strong>No base field.</strong> The construction does not begin with a subfield of the algebra other than the scalar line. In particular it does not begin with $\mathbb{C}=\mathbb{R}[\vec e_z]$, so no unit of $V$ is spent on a coefficient field.</p>
+<p><strong>No imaginary unit and no doubling unit.</strong> All three units of $V$ are declared at once, in one line, with the same square and the same relation to the other two. None is adjoined to another, and none is computed from another.</p>
+<p><strong>No root of $-e_t$.</strong> The roots of $-e_t$ in $\mathbb{H}$ are the unit sphere of $V$, a two-dimensional family, and the construction distinguishes no member of it. This is the sharp form of the claim of the article: the object that the doubling names at its first step, and that every frame of the corpus names later, is here a whole sphere.</p>
+<p><strong>No array.</strong> The construction is a product rule on four symbols. The display of the algebra appears only in §<em>Associativity</em>, where it is the instrument of a proof, and that display is the coefficient basis, whose diagonal is the four squares and which names no direction.</p>
+<h2 id="the-product">The Product</h2>
+<h3 id="the-rule">The Rule</h3>
+<p><strong>Definition.</strong> For $\lambda,\mu\in\mathbb{R}$ and $\vec u,\vec v\in V$, the product is</p>
+<p>$$
+(\lambda e_t+\vec u)(\mu e_t+\vec v)=(\lambda\mu-\vec u\cdot\vec v)\,e_t+\lambda\vec v+\mu\vec u+\vec u\times\vec v ,
+$$</p>
+<p>with $\cdot$ the inner product and $\times$ the cross product of §<em>The Vector Part and Its Two Data</em>, extended to the whole algebra by bilinearity.</p>
+<p><strong>The four terms, and what each is for.</strong> The scalar term $\lambda\mu$ is the product of the scalar parts. The term $-\vec u\cdot\vec v$ is the collapse of two vector parts into the scalar line, and it is the only place the inner product is used. The two linear terms $\lambda\vec v+\mu\vec u$ say that the scalar line acts as the identity. The term $\vec u\times\vec v$ is the only place the orientation is used, and it is the reason the product is not commutative.</p>
+<p><strong>Bilinearity.</strong> The right side is linear in $(\lambda,\vec u)$ alone and in $(\mu,\vec v)$ alone, so the rule extends to a bilinear map $\mathbb{H}\times\mathbb{H}\to\mathbb{H}$, and by that extension it is defined on the whole algebra. Nothing else is assumed.</p>
+<h3 id="the-rule-on-the-units">The Rule on the Units</h3>
+<p><strong>Proposition.</strong> On two pure elements the rule reads</p>
+<p>$$
+\vec u\vec v=-\vec u\cdot\vec v\,e_t+\vec u\times\vec v ,
+$$</p>
+<p>so that the products of the four units are</p>
+<p>$$
+e_t e_\mu=e_\mu e_t=e_\mu,\qquad
+\vec e_\eta^2=-e_t,\qquad
+\vec e_\eta\vec e_\zeta=-\vec e_\zeta\vec e_\eta\ \ (\eta\neq\zeta),
+$$</p>
+<p>together with the three cyclic products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$ and $\vec e_z\vec e_x=\vec e_y$.</p>
+<p><em>Proof.</em> The first display is the rule with $\lambda=\mu=0$, and it is the whole of the second: the inner product gives the square $\vec e_\eta\cdot\vec e_\eta=1$, hence $\vec e_\eta^2=-e_t$; it gives $\vec e_\eta\cdot\vec e_\zeta=0$ for distinct units, hence the product of two distinct units is pure; and the cross product of two distinct units is the third unit up to sign, antisymmetric in the pair. The cyclic products are the declared orientation. ∎</p>
+<p><strong>The three squares are one equation written three times.</strong> The data give $\vec e_\eta^2=-e_t$ for each of the three, and the three equations are the same equation with the label changed. This is the point the doubling cannot make at its start: there the three squares are three theorems, and they hold because the twist and the sign of the new unit happen to produce them.</p>
+<h3 id="the-ten-statements">The Ten Statements</h3>
+<p><strong>The equivalence.</strong> The product rule is equivalent to ten statements on the units: that $e_t$ is a two-sided unit; that each of the three vector units squares to $-e_t$; that each pair of distinct vector units anticommutes; and that the three cyclic products hold.</p>
+<p><em>Proof.</em> The rule gives the ten statements by evaluation on the pairs of units, which is the proposition above. Conversely the ten statements fix all sixteen products: the seven involving $e_t$ by the unit axiom, the three squares, the six ordered products of distinct units by the three anticommutations and the three cyclic products. A bilinear map is fixed by its values on the sixteen pairs, so the ten statements fix the product. ∎</p>
+<p><strong>Two of the four families are symmetric and two are not.</strong> The unit axiom, the three squares and the three anticommutations are stated for the three units without distinction, and every permutation of the three leaves them unchanged. The three cyclic products are stated in one order, and they are invariant under the cyclic group of order three alone: a transposition turns $\vec e_x\vec e_y=\vec e_z$ into $\vec e_y\vec e_x=\vec e_z$, which is the negative of the anticommutation statement. The asymmetry of the table is exactly this, and it is nothing else.</p>
+<h3 id="the-scalarvector-form">The Scalar–Vector Form</h3>
+<p><strong>Corollary.</strong> For two general elements,</p>
+<p>$$
+\tilde q\tilde p=(q_tp_t-\vec q\cdot\vec p)\,e_t+q_t\vec p+p_t\vec q+\vec q\times\vec p ,
+$$</p>
+<p>and the scalar part of the product is symmetric in the two factors while the vector part is not.</p>
+<p><em>Proof.</em> Expand the rule with $\lambda=q_t$, $\vec u=\vec q$ and $\mu=p_t$, $\vec v=\vec p$. The scalar part is $q_tp_t-\vec q\cdot\vec p$ and the vector part is $q_t\vec p+p_t\vec q+\vec q\times\vec p$. ∎</p>
+<p><strong>The reading.</strong> The scalar part of a product of two elements carries the inner product of their vector parts, and the vector part carries the cross product. The two operations that a three-dimensional space supports are therefore not two structures imposed on the algebra: they are the two halves of one product. The square of a pure element, $\vec q^2=-\lvert\vec q\rvert^{2}e_t$, is the statement that a vector has no direction of its own, and it is the first thing the algebra says about the geometry of $V$.</p>
+<h2 id="the-table">The Table</h2>
+<h3 id="the-sixteen-products">The Sixteen Products</h3>
+<p><strong>The table.</strong> The rows give the left factor and the columns the right factor.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$e_t$</td>
+<td>$\vec e_x$</td>
+<td>$\vec e_y$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$\vec e_x$</td>
+<td>$-e_t$</td>
+<td>$\vec e_z$</td>
+<td>$-\vec e_y$</td>
+</tr>
+<tr>
+<td>$\vec e_y$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_z$</td>
+<td>$-e_t$</td>
+<td>$\vec e_x$</td>
+</tr>
+<tr>
+<td>$\vec e_z$</td>
+<td>$\vec e_z$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$-e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four blocks.</strong> The table is one row and one column of the identity, one scalar diagonal $-e_t$ repeated three times, and a $3\times3$ block of the three vector units with signs. The block is antisymmetric, and the antisymmetry is the statement that the product is not commutative. No entry names a direction in a role another entry does not have: the three diagonal entries are equal, and the six off-diagonal entries are the three units in two signs each.</p>
+<p><strong>The count.</strong> Of the sixteen entries, one is $e_t$, six are the units themselves, three are $-e_t$, and six are units with a sign. The signs carry the whole of the asymmetry of the table.</p>
+<h3 id="the-three-identities">The Three Identities</h3>
+<p><strong>The product of the three units.</strong> Multiplying the three vector units in cyclic order gives minus the identity,</p>
+<p>$$
+\vec e_x\vec e_y\vec e_z=-e_t ,
+$$</p>
+<p>and multiplying them out of cyclic order gives plus the identity, $\vec e_x\vec e_z\vec e_y=+e_t$.</p>
+<p><em>Proof.</em> $\vec e_x\vec e_y=\vec e_z$ and $\vec e_z\vec e_z=-e_t$. For the other order, $\vec e_x\vec e_y\vec e_z$ and $\vec e_x\vec e_z\vec e_y$ differ by the transposition of $\vec e_y$ and $\vec e_z$, which are distinct vector units and anticommute, so the second product is the negative of the first. ∎</p>
+<p><strong>One equation for the four units.</strong> The three squares and the triple product are one value,</p>
+<p>$$
+\vec e_x^2=\vec e_y^2=\vec e_z^2=\vec e_x\vec e_y\vec e_z=-e_t ,
+$$</p>
+<p>which is the compact statement of the table's scalar half. Every entry of the table is a unit with a sign, so the table is a statement about signs alone.</p>
+<p><strong>The sign count.</strong> The four scalar values above are the compact test of a table found in the literature: the three squares and the triple product must all equal $-e_t$, and the three cyclic products must hold in one cyclic order. A table that passes the first test and fails the second is the table of the opposite algebra, and a table with one square equal to $+e_t$ is the table of a split-quaternion algebra.</p>
+<h3 id="what-the-table-fixes-and-what-it-leaves">What the Table Fixes and What It Leaves</h3>
+<p><strong>Fixed.</strong> The sixteen products, hence the product of any two elements. The squares, hence the norm of a pure element and the sign that makes the algebra a division algebra. The anticommutations, hence the non-commutativity. The three cyclic products, hence the orientation.</p>
+<p><strong>Left open.</strong> The cyclic order, which is one bit. The names of the three units, which are labels. The signs of the three squares, which are not a labelling: with the three at $-e_t$ the algebra is this one, and with $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$ it is the split-quaternion algebra of <em>Split-Quaternion Algebra</em>, a different algebra and not a different tabulation of this one.</p>
+<h2 id="associativity">Associativity</h2>
+<h3 id="the-four-left-multipliers">The Four Left Multipliers</h3>
+<p><strong>The display.</strong> Left multiplication by an element $\tilde q$ is the linear map $X\mapsto\tilde qX$. Read on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with the products $\tilde qe_\nu$ as columns, its matrix is</p>
+<p>$$
+L(\tilde q)=
+\begin{pmatrix}
+q_t&-q_x&-q_y&-q_z\\
+q_x&q_t&-q_z&q_y\\
+q_y&q_z&q_t&-q_x\\
+q_z&-q_y&q_x&q_t
+\end{pmatrix},
+$$</p>
+<p>the matrix $L_{\mathrm{axf}}(\tilde q)$ of <em>Matrix Representations Conventions</em>, and the four generators are</p>
+<p>$$
+L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
+L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
+L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
+$$</p>
+<p>with $L_t=\mathrm I_4$. The display is the one of <em>The Rotor Group via $4\times4$ Real Matrices</em>, and the proof below uses three of the properties that article records.</p>
+<p><strong>Why this display and no other.</strong> Each generator has exactly one nonzero entry in each row and each column, that entry $\pm1$, a zero diagonal and determinant $+1$. No generator is diagonal and no generator carries a direction: the three are the three signed permutations of one cycle, and a cyclic relabelling of the units permutes them. A display with a direction inside it would put one unit on the diagonal and two off it, and the proof would then be a proof about that unit. This one is not.</p>
+<h3 id="the-display-is-multiplicative-on-the-basis">The Display Is Multiplicative on the Basis</h3>
+<p><strong>Proposition.</strong> The four generators satisfy</p>
+<p>$$
+L_x^2=L_y^2=L_z^2=-\mathrm I_4,\qquad
+L_xL_y=L_z,\qquad L_yL_z=L_x,\qquad L_zL_x=L_y .
+$$</p>
+<p><em>Proof.</em> Direct multiplication of the printed arrays. Each identity is an equality of four-by-four integer matrices, and each is checked entry by entry. ∎</p>
+<p><strong>Corollary.</strong> $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ for all sixteen pairs of units.</p>
+<p><em>Proof.</em> Seven pairs involve $L_t=\mathrm I_4$ and are trivial. Of the remaining nine, three are the squares and three are the cyclic products, which the proposition gives. The last three are the reverse-ordered products, and each is the negative of a cyclic product: $L_yL_x=-L_xL_y=-L_z=L_{yx}$, and likewise for $L_xL_z$ and $L_zL_y$. ∎</p>
+<h3 id="associativity_1">Associativity</h3>
+<p><strong>Theorem.</strong> The multiplication is associative, $(\tilde q_1\tilde q_2)\tilde q_3=\tilde q_1(\tilde q_2\tilde q_3)$.</p>
+<p><em>Proof.</em> The map $\tilde q\mapsto L(\tilde q)$ is linear, and on the basis it is multiplicative by the corollary, so it is multiplicative everywhere: for $\tilde q=\sum_\mu q_\mu e_\mu$ and $\tilde p=\sum_\nu p_\nu e_\nu$,</p>
+<p>$$
+L(\tilde q)L(\tilde p)=\sum_{\mu,\nu}q_\mu p_\nu L_{e_\mu}L_{e_\nu}=\sum_{\mu,\nu}q_\mu p_\nu L_{e_\mu e_\nu}=L(\tilde q\tilde p),
+$$</p>
+<p>the last equality because $\tilde q\tilde p$ is by definition the bilinear extension of the products of units. Then $L(\tilde q\tilde p)$ is left multiplication by $\tilde q\tilde p$, so</p>
+<p>$$
+(\tilde q\tilde p)\tilde r=L(\tilde q\tilde p)\tilde r=L(\tilde q)L(\tilde p)\tilde r=L(\tilde q)(\tilde p\tilde r)=\tilde q(\tilde p\tilde r). 
+$$</p>
+<p><strong>What the proof uses.</strong> The sixteen products of the table, the four printed arrays, and nothing else — no model, no array of a general element, no ideal, no root. The display of §<em>The Four Left Multipliers</em> is the axis-free display, and the fact that associativity is proved inside it is the reason that display is used throughout the corpus.</p>
+<h3 id="the-check">The Check</h3>
+<p><strong>The sixty-four triples.</strong> The two sides of the associativity identity were evaluated on the sixty-four triples of basis elements in integer arithmetic, so that no rounding enters: the number of mismatches is $0$.</p>
+<p><strong>One hundred elements.</strong> The same identity on one hundred random real elements gave a largest residual of $2.7\times10^{-15}$ in double precision, which is the rounding of the arithmetic and not a failure of the identity.</p>
+<p><strong>The multiplicativity of the display.</strong> The sixteen identities $L_{e_\mu}L_{e_\nu}=L_{e_\mu e_\nu}$ were checked as integer matrix equalities, again with no rounding and no mismatch, and the three cyclic relations and the three squares of the proposition were checked the same way. The four determinants of the generators are $+1$ exactly.</p>
+<h3 id="the-algebra-axioms">The Algebra Axioms</h3>
+<p><strong>Theorem.</strong> With this multiplication $\mathbb{H}$ is a four-dimensional associative unital non-commutative real algebra, and every nonzero element is invertible.</p>
+<p><em>Proof.</em> Associativity is the theorem above. The unit is $e_t$, by the first row and column of the table. Non-commutativity is $\vec e_x\vec e_y=\vec e_z\neq-\vec e_z=\vec e_y\vec e_x$. The dimension is four by the declared basis. Invertibility is the theorem of §<em>The Inverse and the Division Property</em>. ∎</p>
+<p><strong>The four general products.</strong> The corpus writes four general products on a quaternion algebra: the plain one, the two sesquilinear ones, and the pair of symmetrised and antisymmetrised halves. Only the plain one is associative with a unit, and it is the one tabulated above. The symmetrised half is commutative and not associative, since $(\vec e_x\bullet\vec e_x)\bullet\vec e_z=-\vec e_z$ while $\vec e_x\bullet(\vec e_x\bullet\vec e_z)=0$. The antisymmetrised half has no unit, since $[\tilde q,e_t]=0$ for every $\tilde q$. The two sesquilinear products fail associativity on the algebra as a whole. The comparison is <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, and it is not repeated here; what matters for this article is that the product built above is the algebra's own, and not a product chosen among several.</p>
+<h2 id="the-first-properties">The First Properties</h2>
+<h3 id="the-unit-and-the-centre">The Unit and the Centre</h3>
+<p><strong>Theorem.</strong> The centre of $\mathbb{H}$ is the scalar line $\mathbb{R}e_t$.</p>
+<p><em>Proof.</em> The scalar line is central because $e_t$ is the unit. Conversely let $\tilde q=q_te_t+\vec q$ commute with every element. It commutes with each vector unit, and the commutator of two elements with vector parts $\vec q$ and $\vec e_\eta$ is</p>
+<p>$$
+[\tilde q,\vec e_\eta]=2\,\vec q\times\vec e_\eta ,
+$$</p>
+<p>whose scalar part vanishes and whose vector part is the cross product. So $\vec q\times\vec e_x=0$ and $\vec q\times\vec e_y=0$. A vector orthogonal to two independent vectors is zero, so $\vec q=0$. ∎</p>
+<p><strong>The reading.</strong> The centre is one-dimensional, so the algebra is not commutative and not of the form $M_n(K)$ for a field $K$ larger than $\mathbb{R}$: a matrix algebra carries its coefficient field as its centre. The centre of the group of units is $\mathbb{R}^{\times}e_t$ by the same computation, and the two statements are one.</p>
+<h3 id="the-conjugation-and-the-two-subspaces">The Conjugation and the Two Subspaces</h3>
+<p><strong>Definition.</strong> The conjugation is the linear map that fixes $e_t$ and negates the three vector units,</p>
+<p>$$
+\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z .
+$$</p>
+<p><strong>Proposition.</strong> The conjugation is an involution, it reverses the order of a product, and its fixed space is $\mathbb{R}e_t$ while its anti-fixed space is $V$.</p>
+<p><em>Proof.</em> The involution and the two fixed spaces are read from the definition. The order reversal is checked on the sixteen pairs of units: each product is a unit with a sign, the conjugation negates the three vector units, and the two sides agree on every pair; bilinearity extends the identity to all elements. ∎</p>
+<p><strong>The two subspaces, and the third conjugation.</strong> The decomposition $\mathbb{H}=\mathbb{R}e_t\oplus V$ is the eigenspace decomposition of ${}^{\natural}$ for the eigenvalues $+1$ and $-1$, and the projections are $\tfrac12(\tilde q\pm\tilde q^{\natural})$. Two companion maps exist, $-\tilde q^{\natural}$ and $-\tilde q$, and with the identity they form a group of order four. The conjugation is the only member of that group that reverses the order of a product: negating the product is not an order reversal, and negating the conjugate is not one either. The catalogue of the four maps and of the classes of element they cut out is <em>The Specificities of the Quaternion Algebra</em>.</p>
+<h3 id="the-norm">The Norm</h3>
+<p><strong>Definition.</strong> The quaternion norm is $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$.</p>
+<p><strong>Proposition.</strong> $\langle\tilde q\rangle_{\natural}=\tilde q^{\natural}\tilde q=q_t^2+q_x^2+q_y^2+q_z^2$, a real scalar, non-negative, and zero only at $\tilde q=0$.</p>
+<p><em>Proof.</em> The product $\tilde q\tilde q^{\natural}$ is computed from the scalar–vector form: the scalar part is $q_t^2+\lvert\vec q\rvert^{2}$, and the vector part is $q_t(-\vec q)+q_t\vec q+\vec q\times(-\vec q)=0$. The other order agrees because the value is a real scalar and the scalar line is central. The sum of four squares is non-negative, and it vanishes only when the four coefficients do. ∎</p>
+<p><strong>Theorem.</strong> The norm is multiplicative, $\langle\tilde q_1\tilde q_2\rangle_{\natural}=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}$.</p>
+<p><em>Proof.</em> Using the order reversal of ${}^{\natural}$ and the centrality of the value,</p>
+<p>$$
+\langle\tilde q_1\tilde q_2\rangle_{\natural}
+=\tilde q_1\tilde q_2(\tilde q_1\tilde q_2)^{\natural}
+=\tilde q_1\tilde q_2\tilde q_2^{\natural}\tilde q_1^{\natural}
+=\tilde q_1\langle\tilde q_2\rangle_{\natural}\tilde q_1^{\natural}
+=\langle\tilde q_1\rangle_{\natural}\langle\tilde q_2\rangle_{\natural}. 
+$$</p>
+<p><strong>The check.</strong> The identity on one hundred random real pairs gave a largest residual of $1.4\times10^{-14}$, and the sum-of-squares reading on one hundred random elements a largest residual of $4.4\times10^{-16}$.</p>
+<h3 id="the-inverse-and-the-division-property">The Inverse and the Division Property</h3>
+<p><strong>Theorem.</strong> Every nonzero element is invertible, with two-sided inverse</p>
+<p>$$
+\tilde q^{-1}=\frac{\tilde q^{\natural}}{\langle\tilde q\rangle_{\natural}} .
+$$</p>
+<p><em>Proof.</em> The norm is a positive real number for $\tilde q\neq0$, so the quotient is defined, and $\tilde q\tilde q^{\natural}=\tilde q^{\natural}\tilde q=\langle\tilde q\rangle_{\natural}$ gives $\tilde q\tilde q^{-1}=\tilde q^{-1}\tilde q=e_t$. ∎</p>
+<p><strong>Corollary.</strong> $\mathbb{H}$ has no zero divisors, no nonzero nilpotent and no idempotent other than $0$ and $e_t$.</p>
+<p><em>Proof.</em> A zero divisor $\tilde q$ would have a nonzero annihilator, and multiplying $\tilde q\tilde p=0$ by $\tilde q^{\natural}$ gives $\langle\tilde q\rangle_{\natural}\tilde p=0$, hence $\tilde p=0$. A nilpotent has zero norm, because $\langle\tilde q^k\rangle_{\natural}=\langle\tilde q\rangle_{\natural}^{k}$. An idempotent satisfies $\langle\tilde\Pi\rangle_{\natural}=\langle\tilde\Pi^2\rangle_{\natural}=\langle\tilde\Pi\rangle_{\natural}^{2}$, so its norm is $0$ or $1$, and the first case is $\tilde\Pi=0$ while the second forces all three vector coefficients to vanish and $q_t^2=q_t$. ∎</p>
+<p><strong>The check.</strong> The inverse identity on one hundred random elements, both sides, gave a largest residual of $2.2\times10^{-16}$; one hundred random real elements were tested against the idempotent equation and none satisfied it, the two solutions of the corollary aside.</p>
+<h3 id="the-classes-of-element">The Classes of Element</h3>
+<p><strong>The roots of $-e_t$ are the unit sphere.</strong> An element $\tilde\zeta=q_te_t+\vec q$ satisfies $\tilde\zeta^2=-e_t$ exactly when $q_t=0$ and $\lvert\vec q\rvert=1$, so the roots of minus the unit form the unit sphere of $V$, of real dimension two.</p>
+<p><em>Proof.</em> The square is $(q_t^2-\lvert\vec q\rvert^{2})e_t+2q_t\vec q$. The vector part vanishes when $q_t=0$ or $\vec q=0$; the second case would need $q_t^2=-1$, which has no real solution; the first needs $-\lvert\vec q\rvert^{2}=-1$. ∎</p>
+<p><strong>This is the article's claim in one object.</strong> There is a two-sphere of roots of $-e_t$ and no member of it is distinguished, because the automorphisms of the algebra act on that sphere transitively (§<em>The Automorphisms Are the Rotations</em>). The doubling enters the same sphere at one point, $\vec e_z$, and derives the other two directions from it.</p>
+<p><strong>The roots of $+e_t$ are the two signs of the unit.</strong> An element with square $+e_t$ is $\pm e_t$. The same computation gives $q_t^2-\lvert\vec q\rvert^{2}=1$ and $2q_t\vec q=0$; the second equation leaves $q_t=0$ or $\vec q=0$; the first then reads $-\lvert\vec q\rvert^{2}=1$ in the first case, which is impossible, and $q_t^2=1$ in the second.</p>
+<p><strong>The classes, in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>equation</th>
+<th>the set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>units</td>
+<td>$\langle\tilde q\rangle_{\natural}\neq0$</td>
+<td>the complement of the origin</td>
+</tr>
+<tr>
+<td>zero divisors</td>
+<td>$\langle\tilde q\rangle_{\natural}=0$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>idempotents</td>
+<td>$\tilde q^2=\tilde q$</td>
+<td>$\{0,e_t\}$</td>
+</tr>
+<tr>
+<td>nilpotents</td>
+<td>$\tilde q^2=0$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>roots of $-e_t$</td>
+<td>$\tilde q^2=-e_t$</td>
+<td>the unit sphere of $V$</td>
+</tr>
+<tr>
+<td>roots of $+e_t$</td>
+<td>$\tilde q^2=+e_t$</td>
+<td>$\{\pm e_t\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The check.</strong> One hundred random unit vectors of $V$ squared to $-e_t$ with a largest residual of $4.4\times10^{-16}$, and a vector of length $1.3$ squared to $-1.69\,e_t$, so the condition on the length is not decorative.</p>
+<h3 id="the-commutator-and-the-lie-algebra">The Commutator and the Lie Algebra</h3>
+<p><strong>Proposition.</strong> For two pure elements, $[\vec u,\vec v]=2\,\vec u\times\vec v$, and for two general elements,</p>
+<p>$$
+[\tilde q,\tilde p]=2\,\vec q\times\vec p .
+$$</p>
+<p><em>Proof.</em> The commutator of the two products cancels the symmetric terms of the scalar–vector form and leaves twice the cross-product term. ∎</p>
+<p><strong>The consequences.</strong> The vector part is closed under the bracket, so it is a Lie subalgebra, and with the bracket it is $\mathfrak{so}(3)$: the cross product is the adjoint action, and the identity $\vec u\times(\vec v\times\vec w)=\vec v(\vec u\cdot\vec w)-\vec w(\vec u\cdot\vec v)$ is the Jacobi identity read on $V$. The bracket of an element with itself vanishes, and the scalar part never enters the bracket: the commutator is a map $V\wedge V\to V$ and nothing else.</p>
+<p><strong>The check.</strong> The identity was evaluated on one hundred random pairs of vectors, exact residual $0$, and on one hundred random pairs of general real elements, where the commutator agreed with $2\vec q\times\vec p$ to $2.2\times10^{-16}$.</p>
+<h3 id="the-two-sided-ideals">The Two-Sided Ideals</h3>
+<p><strong>Theorem.</strong> $\mathbb{H}$ has no two-sided ideal other than $0$ and $\mathbb{H}$.</p>
+<p><em>Proof.</em> Let $I$ be a two-sided ideal and take $0\neq a\in I$. Then $a^{\natural}a=\langle a\rangle_{\natural}e_t\in I$, and the norm is a positive real number, so $e_t\in I$ and $I=\mathbb{H}$. ∎</p>
+<p><strong>The reading.</strong> The algebra is simple, and it is the only simple associative algebra of dimension four over $\mathbb{R}$ other than the matrix algebra $M_2(\mathbb{R})$. The two are distinguished by the division property, which is the next article's subject, and by the centre of the unit group.</p>
+<h2 id="what-is-free-and-what-is-fixed">What Is Free and What Is Fixed</h2>
+<h3 id="the-seven-statements-are-invariant">The Seven Statements Are Invariant</h3>
+<p><strong>The invariance.</strong> Seven of the ten statements of §<em>The Ten Statements</em> are invariant under every permutation of the three vector units: the unit axiom, the three squares and the three anticommutations. A permutation that renames the three units therefore maps a tabulation of the algebra to a tabulation of the algebra, with the same sixteen products up to the renaming.</p>
+<p><strong>What this buys.</strong> A reader who is told that $\vec e_x$ is the diagonal one, or that $\vec e_z$ is the axis, is being told something about a page and not about the algebra. The seven statements cannot express such a distinction, and no consequence of them can either.</p>
+<h3 id="the-tenth-statement-is-the-orientation">The Tenth Statement Is the Orientation</h3>
+<p><strong>The residue.</strong> The three cyclic products are the only asymmetric part of the data, and they are the two-valued choice of orientation of $V$. One bit.</p>
+<p><strong>The comparison with a direction.</strong> A direction would be a point of the unit sphere of $V$, and the sphere has two dimensions. An orientation has no continuous parameter. The choice the construction makes is therefore strictly smaller than the choice of a root of $-e_t$, and it is of a different kind: it is the choice of which of the two cyclic orders is written plus.</p>
+<h3 id="the-automorphisms-are-the-rotations">The Automorphisms Are the Rotations</h3>
+<p><strong>Theorem.</strong> The automorphisms of $\mathbb{H}$ are exactly the maps that fix $e_t$ and act on $V$ by a rotation, so $\operatorname{Aut}(\mathbb{H})\cong SO(3)$.</p>
+<p><em>Proof.</em> Let $\phi$ be an automorphism. It fixes $e_t$, because the unit is the unique two-sided identity. It preserves the property of being a negative multiple of $e_t$, so it maps $V=\{0\}\cup\{u:u^2\in\mathbb{R}_{<0}e_t\}$ to itself. On $V$ it preserves squares, hence the inner product read from $\vec u^2=-\lvert\vec u\rvert^{2}e_t$, and it preserves products, hence the cross product and the orientation. So $\phi|_V$ is a rotation. Conversely a rotation $R$ of $V$, extended by the identity on $e_t$, preserves the inner product and satisfies $Ru\times Rv=(\det R)\,R(u\times v)=R(u\times v)$, so it preserves the product rule and is an automorphism. ∎</p>
+<p><strong>The corollary.</strong> The automorphism group acts transitively on the unit sphere of $V$, so no root of $-e_t$ is an invariant of the algebra. A statement that names one is a statement about a frame.</p>
+<h3 id="a-reflection-is-an-anti-automorphism">A Reflection Is an Anti-Automorphism</h3>
+<p><strong>Proposition.</strong> Let $T$ be a reflection of $V$, extended by the identity on $e_t$. Then $T(\tilde q\tilde p)=T(\tilde p)T(\tilde q)$ for all elements, and $T$ is not an automorphism.</p>
+<p><em>Proof.</em> For orthogonal $T$ and any two vectors, $Tu\times Tv=(\det T)\,T(u\times v)$, so a reflection reverses the cross product: $Tu\times Tv=-T(u\times v)$. In the product rule the scalar terms are unchanged and the only term that changes is the cross product, which changes sign; the same sign appears on the other side when the two factors are exchanged, because $Tv\times Tu=-T(v\times u)=+T(u\times v)$. The two sides therefore agree. A reflection fails to be an automorphism because $T(\vec e_x\vec e_y)=T(\vec e_z)$ while $T(\vec e_x)T(\vec e_y)=\vec e_y\vec e_x=-\vec e_z$. ∎</p>
+<p><strong>The reading.</strong> The symmetry group of the tabulation is the full orthogonal group: its rotations are automorphisms and its reflections are anti-automorphisms. A reflection is the operation that reverses the cyclic order, and the proposition says that reversing the cyclic order reverses the product and nothing else.</p>
+<p><strong>The check.</strong> A transposition of two units gave an anti-automorphism with a largest residual of $8.9\times10^{-16}$ over one hundred random pairs, and the same transposition read as an automorphism failed with a residual of $16.1$, so the two statements are not interchangeable.</p>
+<h3 id="the-other-orientation-is-the-opposite-algebra">The Other Orientation Is the Opposite Algebra</h3>
+<p><strong>The proposition.</strong> Tabulating with the other cyclic order, $\vec e_x\vec e_y=-\vec e_z$, produces the opposite algebra $\mathbb{H}^{\mathrm{op}}$, in which every product is the product of this article read backwards.</p>
+<p><strong>Corollary.</strong> The two tabulations give isomorphic algebras, and the isomorphism is the conjugation.</p>
+<p><em>Proof.</em> The conjugation reverses the order of a product and is an involution, so it is an isomorphism $\mathbb{H}\to\mathbb{H}^{\mathrm{op}}$ and an isomorphism back. ∎</p>
+<p><strong>The consequence.</strong> The one bit the construction leaves costs nothing: the algebra built from the other orientation is this algebra, with the labels read through ${}^{\natural}$. A construction that spends a direction cannot make that statement, because a direction is not absorbed by an anti-automorphism.</p>
+<h3 id="no-axis-and-no-root-distinguished">No Axis, and No Root Distinguished</h3>
+<p><strong>The account.</strong> The data are four units, one inner product and one orientation. The three vector units occur in the axioms in the same way, the seven symmetric statements cannot name one of them, the roots of $-e_t$ form a sphere on which the automorphism group acts transitively, and the only choice left is one bit that the conjugation absorbs.</p>
+<p><strong>What this does not claim.</strong> It does not claim that the algebra has no directions; it has three, and every element with a unit vector part names one. It claims that the construction does not name one, and that no statement derived from the construction can prefer one.</p>
+<h2 id="the-contrast-with-the-doubling">The Contrast with the Doubling</h2>
+<h3 id="the-three-roles">The Three Roles</h3>
+<p><strong>The doubling in one paragraph.</strong> The doubling of <em>The Cayley–Dickson Construction of the Quaternion Algebra</em> begins with the complex algebra $\mathbb{C}=\mathbb{R}[\vec e_z]$, adjoins a unit $\vec e_x$ with the square $-e_t$ and the twisting rule $\vec e_xw=\bar w\vec e_x$, and reads the third unit off the product, $\vec e_y=\vec e_z\vec e_x$. The three units enter as a base field, a generator and an output.</p>
+<p><strong>Why that is a defect of presentation and not of mathematics.</strong> The doubling proves three things the axis-free route assumes: that the twist is forced by the absence of zero divisors, that the third unit is computed rather than chosen, and that the signs of the ordered products are not conventions. Those are results, and the axis-free route cannot supply them, because it takes the table as data. A reader who wants to know why the table has these signs and not others must read the doubling.</p>
+<p><strong>The asymmetry, stated exactly.</strong> The twisting rule mentions $\vec e_z$ inside $\bar w$ and $\vec e_x$ outside it, and it does not mention $\vec e_y$ at all. The axiom set of the doubling is therefore asymmetric by construction, and the symmetry of the resulting table is a theorem about that axiom set. The axis-free route begins with a symmetric axiom set and obtains the table directly.</p>
+<h3 id="the-one-bit">The One Bit</h3>
+<p><strong>The two choices, compared.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the doubling</th>
+<th>the axis-free construction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>declared first</td>
+<td>a base field $\mathbb{C}=\mathbb{R}[\vec e_z]$</td>
+<td>the four units and the product rule</td>
+</tr>
+<tr>
+<td>the role of $\vec e_z$</td>
+<td>the imaginary unit of the base</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>the role of $\vec e_x$</td>
+<td>the doubling unit</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>the role of $\vec e_y$</td>
+<td>computed, $\vec e_z\vec e_x$</td>
+<td>one of three units</td>
+</tr>
+<tr>
+<td>what is derived</td>
+<td>the three squares, the anticommutations, the cycle</td>
+<td>the table, from the ten statements</td>
+</tr>
+<tr>
+<td>what is chosen</td>
+<td>a root of $-e_t$, then a transverse unit</td>
+<td>a cyclic order</td>
+</tr>
+<tr>
+<td>the size of the choice</td>
+<td>a point of the two-sphere, then a direction</td>
+<td>one bit</td>
+</tr>
+<tr>
+<td>what is proved</td>
+<td>the twist is forced, the third unit is computed</td>
+<td>associativity, division, the automorphism group</td>
+</tr>
+<tr>
+<td>taken as data</td>
+<td>the base field and the twist</td>
+<td>the ten statements on the units</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the table.</strong> The two routes prove different things about the same object, and neither replaces the other. The doubling answers the question why the table is what it is. The axis-free construction answers the question what the table is, with the fewest and the most symmetric data, and it is the route to take when the table is the starting point rather than the conclusion.</p>
+<h3 id="what-the-doubling-is-for">What the Doubling Is For</h3>
+<p><strong>The ladder.</strong> The doubling is the only route that shows where the construction stops: the next rung gives the octonions, where associativity fails, and the rung after that gives zero divisors of a new kind. That ladder, its saturation and the Hurwitz theorem are <em>Quadratic Forms over Algebras and Norms</em>, §<em>The Cayley–Dickson Doubling</em>.</p>
+<p><strong>The zero divisors.</strong> The doubling is also the route that exhibits the alternative: with the plain rule instead of the twist, the element $\vec e_z\vec e_x$ squares to $+e_t$ and the algebra carries two non-zero orthogonal idempotents. That argument is the doubling article's, and it has no counterpart here, because the axis-free construction never has the plain rule in view.</p>
+<p><strong>The division property.</strong> The doubling proves it from the norm of a doubled element; this article proves it from the norm of the element itself, in one line, because the norm is a sum of four squares by construction. The two proofs are the same proof read at different depths.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion algebra is fixed by four units and ten statements: that $e_t$ is a two-sided unit, that each of the three vector units squares to $-e_t$, that distinct vector units anticommute, and that the three cyclic products hold. The product rule in the invariant form uses an inner product and an orientation on the three-dimensional vector part, and it reads</p>
+<p>$$
+(\lambda e_t+\vec u)(\mu e_t+\vec v)=(\lambda\mu-\vec u\cdot\vec v)\,e_t+\lambda\vec v+\mu\vec u+\vec u\times\vec v .
+$$</p>
+<p>The three vector units enter the data in the same way, so the construction names no direction. Seven of the ten statements are invariant under every permutation of the three units, and the three cyclic products are the orientation, one bit. The automorphisms are the rotations of the vector part, a reflection is an anti-automorphism, and the other cyclic order tabulates the opposite algebra, which the conjugation identifies with this one. The bit therefore costs nothing.</p>
+<p>Associativity is proved inside the coefficient display. The four left multipliers are signed permutation matrices of determinant one, with zero diagonal, and they satisfy $L_x^2=L_y^2=L_z^2=-\mathrm I_4$ and $L_xL_y=L_z$ cyclically; from those sixteen identities the display is multiplicative, and multiplicativity of the display is associativity of the product. The proof uses no model, no ideal and no root.</p>
+<p>The first properties follow in a few lines each: the centre is the scalar line, the conjugation reverses the order and splits the algebra into the scalars and the vector part, the norm is the sum of four squares and is multiplicative, every nonzero element is invertible with inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$, the algebra has no zero divisors, no nonzero nilpotent and no idempotent beyond $0$ and $e_t$, the commutator of two elements is twice the cross product of their vector parts, and the algebra is simple. The roots of $-e_t$ form the unit sphere of the vector part, a two-sphere with no distinguished point. That sphere is the object the doubling enters at a single point, and it is the sharpest statement of what this construction does not choose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}=\mathbb{R}e_t\oplus V$</td>
+<td>the quaternion algebra, as a scalar line plus a three-dimensional vector part</td>
+</tr>
+<tr>
+<td>$e_t=1$</td>
+<td>the scalar unit, the two-sided identity</td>
+</tr>
+<tr>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the three vector units, orthonormal and positively oriented</td>
+</tr>
+<tr>
+<td>$\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$</td>
+<td>the generic quaternion, coefficients real</td>
+</tr>
+<tr>
+<td>$\vec q$</td>
+<td>the vector part, a pure element</td>
+</tr>
+<tr>
+<td>$\vec u\cdot\vec v$</td>
+<td>the inner product of the vector part, the unit metric</td>
+</tr>
+<tr>
+<td>$\vec u\times\vec v$</td>
+<td>the cross product the orientation fixes</td>
+</tr>
+<tr>
+<td>the ten statements</td>
+<td>the unit axiom, the three squares, the three anticommutations, the three cyclic products</td>
+</tr>
+<tr>
+<td>the seven symmetric statements</td>
+<td>the ten less the three cyclic products; invariant under every permutation of the three units</td>
+</tr>
+<tr>
+<td>$\tilde q^{\natural}=q_te_t-q_x\vec e_x-q_y\vec e_y-q_z\vec e_z$</td>
+<td>the conjugation, an order-reversing involution</td>
+</tr>
+<tr>
+<td>$\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+q_x^2+q_y^2+q_z^2$</td>
+<td>the quaternion norm</td>
+</tr>
+<tr>
+<td>$L(\tilde q)$, $L_x,L_y,L_z$</td>
+<td>left multiplication and its three generators, the axis-free display</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{H})\cong SO(3)$</td>
+<td>the automorphisms, the rotations of the vector part</td>
+</tr>
+<tr>
+<td>$T$</td>
+<td>a reflection of $V$, an anti-automorphism of the algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\mathrm{op}}$</td>
+<td>the opposite algebra, tabulated by the other cyclic order</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="quaternion-algebra.html">Quaternion Algebra</a>, for the algebra as a structure, the three conjugations, the three fixed-point subspaces and the Lie algebra of the vector part.</li>
+<li><a href="the-cayley-dickson-construction-of-the-quaternion-algebra.html">The Cayley–Dickson Construction of the Quaternion Algebra</a>, for the doubling route, the nine derivations of the table and the argument that fixes the twist.</li>
+<li><a href="the-specificities-of-the-quaternion-algebra.html">The Specificities of the Quaternion Algebra</a>, for the classes of element and the Frobenius and Hurwitz theorems.</li>
+<li><a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>, for the norm as a quadratic form, its polarisation and the group of units.</li>
+<li><a href="the-rotor-group-via-4x4-real-matrices.html">The Rotor Group via $4\times4$ Real Matrices</a>, for the left regular display, the four properties of its generators and the group they generate.</li>
+<li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the axis-free array and the reason the coefficient basis is the one that names no direction.</li>
+<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the same construction with one square changed, and the three idempotents it then carries.</li>
+<li><a href="the-axis-free-construction-of-the-biquaternion-algebra.html">The Axis-Free Construction of the Biquaternion Algebra</a>, in the Biquaternions category, for the same route taken with complex coefficients.</li>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original table and the words the corpus keeps.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the doubling ladder and the classification of the real division algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

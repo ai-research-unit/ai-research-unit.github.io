@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biquaternion Correspondences: the Sets, their Names, and their Places in the Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="biquaternion-correspondences-the-sets-their-names-and-their-places-in-the-algebra"><strong>Biquaternion Correspondences: the Sets, their Names, and their Places in the Algebra</strong></h1>
+<h2 id="what-a-row-claims">What a Row Claims</h2>
+<p>A row of these tables is a claim, not a translation. The first column names a set in the standard notation of the subject. The third column says where that set sits in biquaternion letters. The row is only as good as the kind of identification it states.</p>
+<p>Four kinds are used, and every row names its own.</p>
+<ul>
+<li><strong>Equal.</strong> After the dictionary $e_t\mapsto I_2$, $\vec e_k\mapsto-i\sigma_k$ the two sets are the same set of matrices.</li>
+<li><strong>Isomorphic.</strong> A map is given, and the map is not the identity of sets.</li>
+<li><strong>Fixed, or level.</strong> The set is the fixed set of a named conjugation, or the level set of $N(\tilde Q)$ or of $\tilde Q^{*}\tilde Q$.</li>
+<li><strong>Quotient, cover, or group of operators.</strong> The set is a quotient, a twofold cover, or a group of operators built from elements of $\mathbb{B}$.</li>
+</ul>
+<p>Three tests kill a row, and every row below survived all three. The third column contains only $e_t$, $\vec e_k$, their $i$-multiples, and the operations $N$, $\natural$, $*$, $\bar{}$, $\sigma_{\mathrm{split}}$, $\tilde Q\wedge\tilde P$, $\circ$, $\rho_L$, $\rho_R$, $\mathrm{Hp}$. The real dimensions agree. The product, the bracket, or the Jordan product closes with defect zero.</p>
+<p><strong>The two errors the tests catch.</strong> The first is to put a matrix model in the third column. $M_2(\mathbb{C})$ is not a biquaternion equivalence of $\mathbb{B}$; it is the same algebra under another name, and that row belongs the other way round, with $M_2(\mathbb{C})$ in the first column and $\mathbb{B}$ in the third. In the same way $M_4(\mathbb{C})$ is not biquaternion. Its biquaternion interpretation is the endomorphism algebra of $\mathbb{B}$, and $\mathbb{B}$ itself sits inside it as the left regular copy.</p>
+<p><strong>The second error is to treat a word as a biquaternion.</strong> "Traceless" is not a property of an abstract matrix algebra in these tables. The trace of an element is $\operatorname{Tr}(\tilde Q)=2Q_t$, so traceless means $Q_t=0$, which is $\mathbb{B}_V$. The trace line is the centre $\mathbb{B}_C$, and the sentence "traceless, hence centre-free, hence the vector part" states one condition in three vocabularies. The word occurs in a row about $\mathfrak{sl}(2,\mathbb{R})$ at the element level and in a row about $\mathfrak{sl}(4,\mathbb{C})$ at the operator level, and it means the biquaternion condition in the first case and the tracelessness of a $4\times4$ matrix in the second. No row may pass between the two without saying which one it uses.</p>
+<h2 id="conventions">Conventions</h2>
+<p>The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$, the scalar part is $Q_t$, the vector part is $\vec Q$. The norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$. The conjugations are the quaternion one $\natural$, with $\tilde Q^{\natural}=Q_te_t-\vec Q$, the coefficient one $\bar{\tilde Q}=\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z$, and their composite $\tilde Q^{*}=\natural\bar{\tilde Q}=\bar Q_te_t-\bar Q_x\vec e_x-\bar Q_y\vec e_y-\bar Q_z\vec e_z$.</p>
+<p><strong>The six subspaces.</strong></p>
+<p>$$
+\mathbb{B}_C=\mathbb{C}e_t,\qquad \mathbb{B}_V=\{Q_t=0\},\qquad \mathbb{B}_H=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\},
+$$</p>
+<p>$$
+\mathbb{B}_{iH}=i\mathbb{B}_H,\qquad \mathbb{B}_{\Psi}=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},\qquad \mathbb{B}_{\Phi}=\operatorname{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}.
+$$</p>
+<p>The last two are the fixed and the anti-fixed sets of $*$: $\mathbb{B}_{\Psi}$ is the Hermitian subspace and $\mathbb{B}_{\Phi}$ is the anti-Hermitian one.</p>
+<p><strong>The two real forms.</strong> The split form is</p>
+<p>$$
+\mathbb{B}^{\sigma_{\mathrm{split}}}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\},
+$$</p>
+<p>the fixed set of the conjugate-linear involution $\sigma_{\mathrm{split}}(\tilde Q)=\vec e_y\bar{\tilde Q}\vec e_y^{-1}$, and it is isomorphic to $M_2(\mathbb{R})$: the four generators have the real matrix images $I_2$, $-i\sigma_2$, $\sigma_1$, $\sigma_3$. The quaternion form is $\mathbb{B}_H$, the fixed set of coefficient conjugation, isomorphic to $\mathbb{H}$. Both are eight-dimensional real subalgebras of the eight-dimensional real algebra $\mathbb{B}_{\mathbb{R}}$. One is split, the other is a division algebra, and no other real form exists. The split form is written $\mathbb{B}^{\sigma_{\mathrm{split}}}$ after its involution, and the short form $\mathbb{B}_{\mathrm{spl}}$ is used where the line is narrow.</p>
+<p><strong>One factor, fixed once.</strong> The bracket is the half-commutator,</p>
+<p>$$
+\tilde Q_1\wedge\tilde Q_2=\tfrac12\bigl(\tilde Q_1\tilde Q_2-\tilde Q_2\tilde Q_1\bigr)=\vec Q_1\times\vec Q_2 ,
+$$</p>
+<p>so that $\vec e_x\wedge\vec e_y=\vec e_z$ and the structure constants are the Levi-Civita symbol. The classification articles of the corpus use the full commutator, which is twice this one. The Jordan product is $\tilde Q_1\circ\tilde Q_2=\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$.</p>
+<p><strong>The operator layer.</strong> The complex operator algebra is $\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$, of real dimension $32$, and the real one is $\mathcal{E}_{\mathbb{R}}=\operatorname{End}_{\mathbb{R}}(\mathbb{B})=M_8(\mathbb{R})$, of real dimension $64$. The left and right regular operators are $\rho_L(\tilde Q)(\tilde X)=\tilde Q\tilde X$ and $\rho_R(\tilde Q)(\tilde X)=\tilde X\tilde Q$. They commute, and $\rho_L(\mathbb{B})\cap\rho_R(\mathbb{B})=\mathbb{C}\,\mathrm{id}$. The Hermitian pair is $\mathrm{Hp}_{\tilde Q}=\rho_L(\tilde Q)\rho_R(\tilde Q^{*})$, that is $\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$.</p>
+<p><strong>A letter that cannot be skipped.</strong> Every row is written in the base $e_t,\vec e_x,\vec e_y,\vec e_z$. No row uses $\sigma_k$ in its third column. The Pauli letters belong to the matrix image $\mathsf{M}_2$, which is the dictionary, not the answer.</p>
+<h2 id="table-1-the-algebra-its-subspaces-and-their-quadratic-forms">Table 1 — The Algebra, its Subspaces, and their Quadratic Forms</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>Kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_2(\mathbb{C})$</td>
+<td>complex $2\times2$ matrices</td>
+<td>$\mathbb{B}$ itself, $\mathbb{C}$-dim $4$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{C})_{\mathbb{R}}$</td>
+<td>the same algebra over $\mathbb{R}$</td>
+<td>$\mathbb{B}_{\mathbb{R}}$, $\mathbb{R}$-dim $8$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>the scalars</td>
+<td>$\mathbb{B}_C=\mathbb{C}e_t$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^2$</td>
+<td>the real plane</td>
+<td>$\mathbb{B}_C$ with the real basis $e_t,ie_t$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the quaternions</td>
+<td>$\mathbb{B}_H$, the fixed set of coefficient conjugation</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$i\mathbb{H}$</td>
+<td>the antiquaternions</td>
+<td>$\mathbb{B}_{iH}=i\mathbb{B}_H$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})$</td>
+<td>real $2\times2$ matrices</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}$, the fixed set of $\sigma_{\mathrm{split}}$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$, second copy</td>
+<td>a copy of the field inside $M_2(\mathbb{R})$</td>
+<td>$\operatorname{span}\{e_t,\vec e_y\}$ with $\vec e_y^{2}=-e_t$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\oplus\mathbb{R}$</td>
+<td>split complex numbers</td>
+<td>$\operatorname{span}\{e_t,i\vec e_x\}$ with $(i\vec e_x)^{2}=+e_t$, idempotents $\tfrac12(e_t\pm i\vec e_x)$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[\epsilon]/\epsilon^{2}$</td>
+<td>dual numbers</td>
+<td>$\operatorname{span}\{e_t,\vec e_y+i\vec e_x\}$ with $(\vec e_y+i\vec e_x)^{2}=0$</td>
+<td>equal</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{4}$</td>
+<td>Euclidean four-space</td>
+<td>$\mathbb{B}_H$ with $N=\sum_k Q_k^{2}$</td>
+<td>isometric</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{1,3}$</td>
+<td>Minkowski space</td>
+<td>$\mathbb{B}_{\Psi}$ with $N=a^{2}-\lvert\vec b\rvert^{2}$</td>
+<td>isometric</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{3,1}$</td>
+<td>Minkowski space, opposite sign</td>
+<td>$\mathbb{B}_{\Phi}$ with $N=\lvert\vec b\rvert^{2}-a^{2}$</td>
+<td>isometric</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{2,2}$</td>
+<td>split signature</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}$ with $N=\det\mathsf{M}_2$</td>
+<td>isometric</td>
+</tr>
+<tr>
+<td>$S^{2}$</td>
+<td>the idempotents of $M_2(\mathbb{C})$</td>
+<td>$\{\tfrac12(e_t+i\vec u):\vec u\ \text{real},\ \lvert\vec u\rvert=1\}$</td>
+<td>bijection</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^{1}$</td>
+<td>the lines of $\mathbb{C}^{2}$</td>
+<td>the same set, since $\mathbb{CP}^{1}\cong S^{2}$</td>
+<td>bijection</td>
+</tr>
+<tr>
+<td>$H_2(\mathbb{C})$</td>
+<td>Hermitian matrices</td>
+<td>$\mathbb{B}_{\Psi}$ as a set, with the Jordan product of Table 5</td>
+<td>linear iso</td>
+</tr>
+<tr>
+<td>—</td>
+<td>the nilpotents of rank one</td>
+<td>the single conjugacy orbit of $\vec e_y+i\vec e_x$, namely $\tilde U(\vec e_y+i\vec e_x)\tilde U^{-1}$</td>
+<td>orbit</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the two Minkowski rows both stand.</strong> $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are eight-real-dimensional halves of $\mathbb{B}$, each of real dimension $4$, and on each the norm is a form of Lorentzian signature. On $\mathbb{B}_{\Psi}$ the scalar is real and the vector imaginary, so the form is $a^{2}-\lvert\vec b\rvert^{2}$. On $\mathbb{B}_{\Phi}$ the signs are exchanged. The two are the same space with the two conventions for which half carries the time axis, and this is why the Hermitian and the anti-Hermitian subspaces both serve as Minkowski space in the corpus.</p>
+<h2 id="table-2-lie-algebras-as-subspaces-of-math136">Table 2 — Lie Algebras as Subspaces of $\mathbb{B}$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$\kappa$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{gl}(2,\mathbb{C})_{\mathbb{R}}$</td>
+<td>complex endomorphisms over $\mathbb{R}$</td>
+<td>$\mathbb{B}_{\mathbb{R}}$</td>
+<td>$8$</td>
+<td>$(3,3,2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>complex simple, in $\mathbb{C}$-form</td>
+<td>$\mathbb{B}_V$ with the $\mathbb{C}$-structure inherited from $\mathbb{B}$</td>
+<td>$6$ ($3$ over $\mathbb{C}$)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(3,1)$</td>
+<td>the Lorentz algebra</td>
+<td>$\mathbb{B}_V=\{Q_t=0\}$</td>
+<td>$6$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>unitary, first copy</td>
+<td>$\mathbb{B}_{\Phi}$, the anti-fixed set of $*$</td>
+<td>$4$</td>
+<td>$(0,3,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>unitary, second copy</td>
+<td>$\mathbb{B}_H$ under the commutator, centre $\mathbb{R}e_t$</td>
+<td>$4$</td>
+<td>$(0,3,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)\cong\mathfrak{so}(3)$</td>
+<td>compact simple</td>
+<td>$\mathbb{B}_H\cap\mathbb{B}_V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, the real pure quaternions</td>
+<td>$3$</td>
+<td>$(0,3)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{R})\cong\mathfrak{so}(2,1)$</td>
+<td>split simple</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V=\operatorname{span}\{i\vec e_x,\vec e_y,i\vec e_z\}$, the Hermitian traceless elements of the split form</td>
+<td>$3$</td>
+<td>$(2,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(2,\mathbb{R})$</td>
+<td>real endomorphisms</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}$</td>
+<td>$4$</td>
+<td>$(2,1,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(1)$</td>
+<td>the central phase</td>
+<td>$\mathbb{R}ie_t=\mathbb{B}_C\cap\mathbb{B}_{\Phi}$</td>
+<td>$1$</td>
+<td>$(0,0,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2)$</td>
+<td>the rotation line</td>
+<td>$\mathbb{R}\vec e_y=\mathbb{B}_{\Phi}\cap\mathbb{B}^{\sigma_{\mathrm{split}}}$, the anti-Hermitian line of the split form</td>
+<td>$1$</td>
+<td>$(0,0,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(1,1)$</td>
+<td>the boost line</td>
+<td>$\mathbb{R}i\vec e_z=\mathbb{B}_{\Psi}\cap\mathbb{B}^{\sigma_{\mathrm{split}}}$, the Hermitian line of the split form</td>
+<td>$1$</td>
+<td>$(0,0,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>Cartan subalgebra</td>
+<td>$\mathbb{B}_C$ read over $\mathbb{R}$, basis $e_t,ie_t$; equally $\operatorname{span}\{e_t,i\vec e_z\}$</td>
+<td>$2$</td>
+<td>$(0,0,2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{b}_0$</td>
+<td>Borel of $\mathfrak{sl}(2,\mathbb{R})$</td>
+<td>$\operatorname{span}\{i\vec e_x,\ \vec e_y+i\vec e_z\}$; the second generator is nilpotent</td>
+<td>$2$</td>
+<td>$(1,0,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{b}$</td>
+<td>Borel of $\mathfrak{gl}(2,\mathbb{R})$</td>
+<td>$\operatorname{span}\{e_t,\ i\vec e_x,\ \vec e_y+i\vec e_z\}$</td>
+<td>$3$</td>
+<td>$(1,0,2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{n}$</td>
+<td>maximal nilpotent</td>
+<td>$\mathbb{R}(\vec e_y+i\vec e_z)$, or $\mathbb{R}(\vec e_y+i\vec e_x)$; both are $N$-degenerate</td>
+<td>$1$</td>
+<td>$(0,0,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The bracket identity $[i\vec e_x,\vec e_y+i\vec e_z]=\vec e_y+i\vec e_z$ is what makes $\mathfrak{b}_0$ a Borel: the nilpotent line is the eigenspace of the semisimple generator $i\vec e_x$ with eigenvalue one.</p>
+<h2 id="table-3-lie-groups-as-sets-of-elements">Table 3 — Lie Groups as Sets of Elements</h2>
+<p>The Lorentz row is the model of the whole table: the group is a group of operators on $\mathbb{B}$ made of unit biquaternions acting two-sidedly as a Hermitian pair.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>Kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}^{\times}$</td>
+<td>the group of units</td>
+<td>$\{\tilde Q:N(\tilde Q)\neq0\}$, the $\natural$-regular set</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}$</td>
+<td>the scalars</td>
+<td>$\mathbb{B}_C\setminus\{0\}$</td>
+<td>subset</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{\times}$</td>
+<td>the quaternion units</td>
+<td>$\mathbb{B}_H\setminus\{0\}=\mathbb{R}_{>0}\cdot Sp(1)$</td>
+<td>subset</td>
+</tr>
+<tr>
+<td>$GL(2,\mathbb{R})$</td>
+<td>real units</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}\setminus\{0\}=\{\tilde Q\in\mathbb{B}^{\sigma_{\mathrm{split}}}:N(\tilde Q)\neq0\}$</td>
+<td>subset</td>
+</tr>
+<tr>
+<td>$GL^{+}(2,\mathbb{R})$</td>
+<td>real units of positive determinant</td>
+<td>$\{\tilde Q\in\mathbb{B}^{\sigma_{\mathrm{split}}}:N(\tilde Q)>0\}$, the norm being real on $\mathbb{B}^{\sigma_{\mathrm{split}}}$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{C})$</td>
+<td>complex unimodular</td>
+<td>$\mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$SL(2,\mathbb{R})$</td>
+<td>real unimodular</td>
+<td>$\{\tilde Q\in\mathbb{B}^{\sigma_{\mathrm{split}}}:N(\tilde Q)=1\}$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$Sp(1)\cong SU(2)$</td>
+<td>unit quaternions</td>
+<td>$\mathbb{B}_H\cap\mathbb{B}^{\times}_1=\{\tilde q\in\mathbb{B}_H:\tilde q\tilde q^{\natural}=e_t\}$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$S^{3}$</td>
+<td>the unit sphere</td>
+<td>the same set as $Sp(1)$</td>
+<td>equality</td>
+</tr>
+<tr>
+<td>$U(2)$</td>
+<td>the unitary group</td>
+<td>$\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\}$</td>
+<td>level set</td>
+</tr>
+<tr>
+<td>$U(1)$</td>
+<td>the central phases</td>
+<td>$\{\omega e_t:\lvert\omega\rvert=1\}$</td>
+<td>subset</td>
+</tr>
+<tr>
+<td>$SO(3)$</td>
+<td>the rotation group</td>
+<td>$Sp(1)/\{\pm e_t\}$</td>
+<td>quotient</td>
+</tr>
+<tr>
+<td>$\mathbb{RP}^{3}$</td>
+<td>the projective three-space</td>
+<td>$SO(3)$, hence $\mathbb{B}_H\cap\mathbb{B}^{\times}_1/\{\pm e_t\}$</td>
+<td>quotient</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,3)$</td>
+<td>the proper orthochronous Lorentz group</td>
+<td>$\mathbb{B}^{\times}_1/\{\pm e_t\}$, and equally the group of operators $\mathrm{Hp}_{\tilde U}$ on $\mathbb{B}_{\Psi}$ with $N(\tilde U)=1$</td>
+<td>quotient, operator group</td>
+</tr>
+<tr>
+<td>$PSL(2,\mathbb{C})=PGL(2,\mathbb{C})$</td>
+<td>the complex Möbius group</td>
+<td>$\mathbb{B}^{\times}/\mathbb{C}^{\times}$, the classes of the units; the same set as $SO^{+}(1,3)$</td>
+<td>quotient</td>
+</tr>
+<tr>
+<td>$CO^{+}(1,3)$</td>
+<td>the conformal Lorentz group</td>
+<td>the image of $\mathrm{Hp}$ on all of $\mathbb{B}^{\times}$, with kernel $U(1)$</td>
+<td>operator group</td>
+</tr>
+<tr>
+<td>$PSL(2,\mathbb{R})=SO^{+}(2,1)$</td>
+<td>the real Möbius group, the $2+1$ Lorentz group</td>
+<td>$\{\tilde Q\in\mathbb{B}^{\sigma_{\mathrm{split}}}:N(\tilde Q)=1\}/\{\pm e_t\}$</td>
+<td>quotient</td>
+</tr>
+<tr>
+<td>$SO(2)$</td>
+<td>the circle</td>
+<td>$\exp(\mathbb{R}\vec e_y)$</td>
+<td>one-parameter subgroup</td>
+</tr>
+<tr>
+<td>$SO(1,1)$</td>
+<td>the boost line</td>
+<td>$\exp(\mathbb{R}i\vec e_z)$, with $\exp(ti\vec e_z)=\operatorname{diag}(e^{t},e^{-t})$</td>
+<td>one-parameter subgroup</td>
+</tr>
+<tr>
+<td>$Spin(4)$</td>
+<td>the spin group of $SO(4)$</td>
+<td>$Sp(1)\times Sp(1)$</td>
+<td>equality</td>
+</tr>
+<tr>
+<td>$SO(4)$</td>
+<td>the four-dimensional rotations</td>
+<td>$(Sp(1)\times Sp(1))/\{\pm(e_t,e_t)\}$ acting by $\tilde X\mapsto\tilde u\tilde X\tilde v^{\natural}$ on $\mathbb{B}\cong\mathbb{R}^{8}$</td>
+<td>quotient</td>
+</tr>
+<tr>
+<td>$Spin(1,3)$</td>
+<td>the spin group of $SO^{+}(1,3)$</td>
+<td>$\mathbb{B}^{\times}_1$</td>
+<td>equality</td>
+</tr>
+<tr>
+<td>$\operatorname{Aut}(\mathbb{B})$</td>
+<td>the algebra automorphisms</td>
+<td>$\mathrm{Ad}_{\tilde U}$ for $\tilde U\in\mathbb{B}^{\times}$, together with the coset of $\sigma_{\mathrm{comp}}$: $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$</td>
+<td>inner plus coset</td>
+</tr>
+<tr>
+<td>$\operatorname{Der}(\mathbb{B})$</td>
+<td>the derivations</td>
+<td>$\mathbb{B}_V$ acting by $\operatorname{ad}$, that is $\tilde X\mapsto\tilde Q\wedge\tilde X$</td>
+<td>isomorphism</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three distinctions that the table keeps.</strong> The unit-norm group is a level set and therefore a subset of $\mathbb{B}$; the Lorentz group is a quotient of it and therefore not a subset; the conformal group is a group of operators and therefore lives one level up. The map $\mathrm{Hp}$ is not injective on $\mathbb{B}^{\times}$: since $(i\tilde U)\tilde X(i\tilde U)^{*}=\tilde U\tilde X\tilde U^{*}$, the kernel is the full circle $U(1)$, and it is only on the level set $N=1$ that the kernel shrinks to $\{\pm e_t\}$.</p>
+<p><strong>A group with the algebra $\mathfrak{u}(2)$ that is not $U(2)$.</strong> $\mathbb{H}^{\times}$ is a connected four-dimensional group with Lie algebra $\mathbb{B}_H$, and $\mathbb{B}_H$ is $\mathfrak{u}(2)$. The group is not $U(2)$: its centre is $\mathbb{R}_{>0}$, it is not compact, and $U(2)$ is a quotient of the simply connected cover $SU(2)\times\mathbb{R}$ instead.</p>
+<h2 id="table-4-the-operator-layer-algebras-lie-algebras-and-the-hermitian-pair">Table 4 — The Operator Layer: Algebras, Lie Algebras, and the Hermitian Pair</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$\kappa$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>complex operators</td>
+<td>$M_4(\mathbb{C})=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{op}}$, acting on $\mathbb{B}$</td>
+<td>$32$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_{\mathbb{R}}=\operatorname{End}_{\mathbb{R}}(\mathbb{B})$</td>
+<td>real operators</td>
+<td>$M_8(\mathbb{R})$</td>
+<td>$64$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{R})$</td>
+<td>the split real form</td>
+<td>$\{X:X\sigma_{\mathrm{comp}}=\sigma_{\mathrm{comp}}X\}$, the operators commuting with coefficient conjugation</td>
+<td>$16$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{H})$</td>
+<td>the quaternionic real form</td>
+<td>$\{X:X\rho_R(\tilde q)=\rho_R(\tilde q)X\ \forall\tilde q\in\mathbb{B}_H\}$, the operators commuting with right multiplication by the quaternions</td>
+<td>$16$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\rho_L(\mathbb{B})$</td>
+<td>the left regular copy</td>
+<td>$\{\rho_L(\tilde Q)\}\cong\mathbb{B}$ as an algebra</td>
+<td>$8$</td>
+<td>$(3,3,2)$</td>
+</tr>
+<tr>
+<td>$\rho_R(\mathbb{B})$</td>
+<td>the right regular copy</td>
+<td>$\{\rho_R(\tilde Q)\}\cong\mathbb{B}$ as an algebra</td>
+<td>$8$</td>
+<td>$(3,3,2)$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}\,\mathrm{id}$</td>
+<td>the scalars</td>
+<td>$\rho_L(\mathbb{B})\cap\rho_R(\mathbb{B})$</td>
+<td>$2$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\rho_L(\mathbb{B})+\rho_R(\mathbb{B})$</td>
+<td>the two-sided span</td>
+<td>$\{\rho_L(\tilde Q)+\rho_R(\tilde P)\}$</td>
+<td>$14$</td>
+<td>$(6,6,2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{m}$</td>
+<td>a complement</td>
+<td>a complement of $\rho_L(\mathbb{B})+\rho_R(\mathbb{B})$ inside $\mathcal{E}_{\mathbb{C}}$; no canonical choice is made</td>
+<td>$18$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(2,\mathbb{R})$</td>
+<td>real endomorphisms, as operators</td>
+<td>$\rho_L(\mathbb{B}^{\sigma_{\mathrm{split}}})$</td>
+<td>$4$</td>
+<td>$(2,1,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>unitary, as operators</td>
+<td>$\rho_L(\mathbb{B}_{\Phi})$; the adjoint of $\rho_L(\tilde Q)$ is $\rho_L(\tilde Q^{*})$</td>
+<td>$4$</td>
+<td>$(0,3,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(3,1)$</td>
+<td>the Lorentz algebra, as operators</td>
+<td>$\rho_L(\mathbb{B}_V)$</td>
+<td>$6$</td>
+<td>$(3,3)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$</td>
+<td>the four-dimensional rotations</td>
+<td>$\rho_L(\mathbb{B}_H\cap\mathbb{B}_V)+\rho_R(\mathbb{B}_H\cap\mathbb{B}_V)$, six independent operators</td>
+<td>$6$</td>
+<td>$(0,6)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2,2)$</td>
+<td>the split rotations</td>
+<td>$\rho_L(\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V)+\rho_R(\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V)$, that is $\rho_L(\mathfrak{sl}(2,\mathbb{R}))+\rho_R(\mathfrak{sl}(2,\mathbb{R}))$</td>
+<td>$6$</td>
+<td>$(4,2)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4,\mathbb{C})$</td>
+<td>the complex orthogonal algebra</td>
+<td>$\rho_L(\mathbb{B}_V)+\rho_R(\mathbb{B}_V)$</td>
+<td>$12$</td>
+<td>$(6,6)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(4)$</td>
+<td>the unitary operators</td>
+<td>$\{X\in\mathcal{E}_{\mathbb{C}}:X^{*}=-X\}$, the anti-Hermitian operators; it contains $\rho_L(\mathbb{B}_{\Phi})$ and $\rho_R(\mathbb{B}_{\Phi})$</td>
+<td>$16$</td>
+<td>$(0,15,1)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)\cong\mathfrak{so}(6)$</td>
+<td>the compact form</td>
+<td>the traceless part of $\mathfrak{u}(4)$, that is $\{X:X^{*}=-X,\ \operatorname{tr}X=0\}$</td>
+<td>$15$</td>
+<td>$(0,15)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(4,\mathbb{C})$</td>
+<td>the traceless complex operators</td>
+<td>$\{X:\operatorname{tr}X=0\}$; not spanned by $\rho_L$ and $\rho_R$, since $15>14$</td>
+<td>$30$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{H})=\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$</td>
+<td>the quaternionic form</td>
+<td>the traceless part of $M_2(\mathbb{H})$, the trace taken in $\mathbb{H}$</td>
+<td>$15$</td>
+<td>$(5,10)$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(3,1)$, $\mathfrak{su}(2,2)$</td>
+<td>the indefinite forms</td>
+<td>$\{X:X^{\dagger}J+JX=0\}$ for a form of signature $(3,1)$ or $(2,2)$ on $\mathbb{B}$; not canonical, because the canonical form $\operatorname{Sc}(\tilde X^{*}\tilde Y)$ is definite</td>
+<td>$15$ each</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{LR*}(\mathbb{B})$</td>
+<td>the Hermitian-pair cone</td>
+<td>$\{\mathrm{Hp}_{\tilde Q}\}=\{\rho_L(\tilde Q)\rho_R(\tilde Q^{*})\}$</td>
+<td>$7$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the two-sided sums stop at $14$.</strong> $\rho_L$ and $\rho_R$ are each injective, with images of real dimension $8$, and they meet in the scalars of real dimension $2$. Hence $8+8-2=14$. The number $14$ is smaller than the $15$ of $\mathfrak{sl}(4,\mathbb{C})$, so the traceless endomorphisms are not reachable by two-sided multiplication: one generator is always missing. The algebras that are reachable are the orthogonal ones, and there the two copies supply the self-dual and the anti-self-dual halves.</p>
+<h2 id="table-5-the-jordan-layer">Table 5 — The Jordan Layer</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Biquaternion realisation</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_2(\mathbb{C})$</td>
+<td>Hermitian matrices</td>
+<td>$\mathbb{B}_{\Psi}$ under $\circ$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$H_2(\mathbb{R})$</td>
+<td>symmetric real matrices</td>
+<td>$\mathbb{B}_{\Psi}\cap\mathbb{B}^{\sigma_{\mathrm{split}}}=\operatorname{span}\{e_t,i\vec e_x,i\vec e_z\}$ under $\circ$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}^{+}$</td>
+<td>the quaternionic Jordan algebra</td>
+<td>$\mathbb{B}_H$ under $\circ$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{R})^{+}$</td>
+<td>the real Jordan algebra</td>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}$ under $\circ$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{+}$</td>
+<td>the complex Jordan algebra</td>
+<td>$\operatorname{span}\{e_t,\vec e_y\}$ under $\circ$, with $\vec e_y\circ\vec e_y=-e_t$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\oplus\mathbb{R}$</td>
+<td>the split algebra</td>
+<td>$\operatorname{span}\{e_t,i\vec e_x\}$ under $\circ$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[\epsilon]/\epsilon^{2}$</td>
+<td>the dual numbers</td>
+<td>$\operatorname{span}\{e_t,\vec e_y+i\vec e_x\}$ under $\circ$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>—</td>
+<td>the Peirce idempotents</td>
+<td>$\tfrac12(e_t\pm i\vec u)$ with $\lvert\vec u\rvert=1$; $P\circ P=P$, $P\circ(1-P)=0$</td>
+<td>$S^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Jordan product and the bracket divide the two Hermitian halves between them, and the division is exact. $\mathbb{B}_{\Psi}$ is closed under $\circ$ and not under $\wedge$. $\mathbb{B}_{\Phi}$ is closed under $\wedge$ and not under $\circ$: the Jordan product of two anti-Hermitian elements has a real scalar part. Neither half is a subalgebra of the associative algebra, and each is a subalgebra of exactly one of the two derived structures.</p>
+<h2 id="table-6-rows-that-fail-and-why">Table 6 — Rows That Fail, and Why</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Set notation</th>
+<th>Set name</th>
+<th>Why it cannot be a row above</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(n)$, $n\geq3$</td>
+<td>compact simple</td>
+<td>A compact subalgebra of $\mathbb{B}_{\mathbb{R}}$ lies in a maximal compact one, and the maximal compact subalgebras of $\mathfrak{gl}(2,\mathbb{C})_{\mathbb{R}}$ have dimension $4$; $\mathfrak{su}(3)$ has dimension $8$, and an eight-dimensional subalgebra of an eight-dimensional algebra is the algebra, which is not compact</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n)$, $n\geq5$</td>
+<td>orthogonal</td>
+<td>$\dim\mathfrak{so}(5)=10>8$; the algebra does not fit. At the operator level $\mathfrak{so}(6)\cong\mathfrak{su}(4)$ does fit, with dimension $15$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$ as a subspace of $\mathbb{B}$</td>
+<td>compact six-dimensional</td>
+<td>A compact six-dimensional subalgebra would be a compact subalgebra of dimension larger than $4$, which does not exist</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2,2)$ as a subspace of $\mathbb{B}$</td>
+<td>split six-dimensional</td>
+<td>It would be a six-dimensional subalgebra isomorphic to $\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R})$ acting faithfully on $\mathbb{C}^{2}$. Each factor would need a faithful two-dimensional module, and the only one available is the defining module; a two-dimensional module for the sum is then one defining module tensored with the trivial one, so the other factor acts trivially and the algebra is only three-dimensional</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$ under $\wedge$</td>
+<td>Hermitian subspace</td>
+<td>$[\mathbb{B}_{\Psi},\mathbb{B}_{\Psi}]$ leaves $\mathbb{B}_{\Psi}$ with relative defect $1$; the bracket of two imaginary vectors is imaginary, and the imaginary directions are not in the span</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$ under $\circ$</td>
+<td>anti-Hermitian subspace</td>
+<td>$\tilde X\circ\tilde Y$ of two anti-Hermitian elements has real scalar part, so the result is not anti-Hermitian</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{iH}$</td>
+<td>the antiquaternions</td>
+<td>Not a subalgebra and not a Lie subalgebra: $(i\vec e_x)^{2}=-e_t$ leaves the subspace, and so does $[i\vec e_x,i\vec e_y]=-\vec e_z$</td>
+</tr>
+<tr>
+<td>$SU(2,2)$</td>
+<td>the conformal group of $\mathbb{R}^{3,1}$</td>
+<td>It acts on $\mathbb{B}$ as on $\mathbb{C}^{4}$, but not by multiplication: its translations are off-diagonal, and no condition on the coefficients of a single $\tilde Q$ cuts it out</td>
+</tr>
+<tr>
+<td>$SU(4)$</td>
+<td>the compact form of $\mathfrak{sl}(4,\mathbb{C})$</td>
+<td>The two natural conditions on an element give $U(2)$ and $SL(2,\mathbb{C})$: $\{\tilde Q^{*}\tilde Q=e_t\}$ is $U(2)$ and $\{N=1\}$ is $SL(2,\mathbb{C})$. $SU(4)$ appears one level up, as the anti-Hermitian operators of Table 4</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(4,\mathbb{C})$ as $\rho_L+\rho_R$</td>
+<td>traceless complex operators</td>
+<td>The two-sided span has dimension $14$ and the traceless algebra has dimension $15$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$ as the algebra of $SO(3,1)$</td>
+<td>the Lorentz algebra</td>
+<td>$\mathbb{H}$ under the commutator is $\mathfrak{u}(2)$, of Killing signature $(0,3,1)$; the Lorentz algebra is $\mathbb{B}_V$, of signature $(3,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="how-the-tables-read-together">How the Tables Read Together</h2>
+<p><strong>Three readings of $\mathfrak{sl}(2,\mathbb{C})$ in one algebra.</strong> The compact form is $\mathbb{B}_H\cap\mathbb{B}_V$, the real pure quaternions, with $\vec e_x\wedge\vec e_y=\vec e_z$ and Killing signature $(0,3)$. The split form is $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$, spanned by $i\vec e_x$, $\vec e_y$, $i\vec e_z$, with signature $(2,1)$. The realification is $\mathbb{B}_V$ itself, of real dimension $6$, with signature $(3,3)$, and it is $\mathfrak{so}(3,1)$. The first two have real dimension $3$ and are the two real forms; the third has real dimension $6$ and is the complex algebra read over $\mathbb{R}$. All three are visible at once because $\mathbb{B}$ carries a complex structure and three real structures, and a subspace is pinned down by which of them it respects.</p>
+<p><strong>Two copies of $\mathfrak{u}(2)$, for two different reasons.</strong> $\mathbb{B}_{\Phi}$ is $\mathfrak{u}(2)$ because its elements are skew for the positive-definite form $\operatorname{Sc}(\tilde X^{*}\tilde Y)$. $\mathbb{B}_H$ is $\mathfrak{u}(2)$ because the quaternions are a division algebra: the commutator of two real pure quaternions is again pure, the centre is the real line, and the resulting algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$. The two subspaces are different subsets of $\mathbb{B}$ with the same Killing signature, and a statement about "the compact real form" must say which one it means.</p>
+<p><strong>Traceless is one condition with three names.</strong> $\operatorname{Tr}(\tilde Q)=2Q_t$ is the trace pairing read at $e_t$. Hence traceless, $Q_t=0$, $\mathbb{B}_V$, and "no central part" are the same condition, and the trace line is the centre. This is why $\mathfrak{sl}(2,\mathbb{R})$ is the Hermitian traceless part of the split form and why $\mathfrak{gl}(2,\mathbb{R})=\mathbb{R}e_t\oplus\mathfrak{sl}(2,\mathbb{R})$ is the split form split along the centre. At the operator level the same word means the tracelessness of a $4\times4$ matrix, and the two uses are in different tables for that reason.</p>
+<p><strong>The operator rows that a subspace row cannot replace.</strong> $\mathfrak{so}(4)$, $\mathfrak{so}(2,2)$ and $\mathfrak{so}(4,\mathbb{C})$ have no place in Table 2. Each is a two-sided pair, one copy attached to $\mathbb{B}_H\cap\mathbb{B}_V$, one to $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$, one to $\mathbb{B}_V$. Their Killing signatures $(0,6)$, $(4,2)$, $(6,6)$ separate them, and the split case is the compact one with the sign changed in exactly the two directions that the split form changes.</p>
+<p><strong>One sentence that mixes two levels, and its repair.</strong> The sentence "$\mathfrak{sl}(2,\mathbb{R})_L\oplus\mathfrak{sl}(2,\mathbb{R})_R$ on the split form $M_4(\mathbb{R})$ traceless" mixes three things. The algebra $\mathfrak{sl}(2,\mathbb{R})$ is the traceless part of the split form $\mathbb{B}^{\sigma_{\mathrm{split}}}$, so the elements are $N$-real and have $Q_t=0$. The operators act on $\mathbb{B}^{\sigma_{\mathrm{split}}}\cong\mathbb{R}^{4}$, not on $M_4(\mathbb{R})$. And the resulting algebra is $\mathfrak{so}(2,2)$, the orthogonal algebra of the form $N$ of signature $(2,2)$ on that four-dimensional space. $M_4(\mathbb{R})$ is the real operator algebra of sixteen dimensions and appears nowhere in the row.</p>
+<h2 id="verification">Verification</h2>
+<p>Every row was checked by direct computation on $100$ random elements per claim, in the base $e_t,\vec e_x,\vec e_y,\vec e_z$ with coefficients drawn at random and the bracket taken as the half-commutator. The closure defect is the relative norm of the component of the result outside the span.</p>
+<ul>
+<li><strong>Norm and determinant.</strong> $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$ with error $6\times10^{-15}$. On $\mathbb{B}^{\sigma_{\mathrm{split}}}$ the image is real and $N=\det$ with error $2\times10^{-15}$. On $\mathbb{B}_H$, $N=\sum_kQ_k^{2}$ with error $2\times10^{-15}$. On $\mathbb{B}_{\Psi}$, $N=a^{2}-\lvert\vec b\rvert^{2}$ with error $2\times10^{-15}$.</li>
+<li><strong>Closure and signature, element level.</strong> $\mathbb{B}_V$ closed, $\kappa=(3,3,0)$. $\mathbb{B}_H\cap\mathbb{B}_V$ closed, $(0,3,0)$. $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$ closed, $(2,1,0)$. $\mathbb{B}_{\Phi}$ closed, $(0,3,1)$. $\mathbb{B}_H$ closed, $(0,3,1)$. $\mathbb{B}^{\sigma_{\mathrm{split}}}$ closed, $(2,1,1)$. $\mathbb{B}_{\mathbb{R}}$ closed, $(3,3,2)$. $\mathfrak{b}_0$ closed, $(1,0,1)$. $\mathfrak{b}$ closed, $(1,0,2)$. $\mathbb{B}_C$ over $\mathbb{R}$, $(0,0,2)$.</li>
+<li><strong>Failures.</strong> $\mathbb{B}_{\Psi}$ under the bracket: relative defect $1.0$. $\mathbb{B}_{iH}$: defect $1.0$. $i\mathbb{B}_V$: defect $1.0$. The symmetric part of the split form under the bracket: defect $1.0$, while it is closed under $\circ$ with defect $0$.</li>
+<li><strong>Jordan layer.</strong> $\mathbb{B}_{\Psi}$ closed under $\circ$ with defect $0$; the vector part of the product is purely imaginary. $\mathbb{B}_H$, $\mathbb{B}^{\sigma_{\mathrm{split}}}$, $\operatorname{span}\{e_t,\vec e_y\}$, $\operatorname{span}\{e_t,i\vec e_x\}$ and $\operatorname{span}\{e_t,\vec e_y+i\vec e_x\}$ all closed under $\circ$ with defect $0$.</li>
+<li><strong>Idempotents and nilpotents.</strong> $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$ is idempotent to $10^{-16}$, and $\tfrac12(e_t+i\vec u)\circ\tfrac12(e_t-i\vec u)=0$. $(\vec e_y+i\vec e_x)^{2}=0$ exactly.</li>
+<li><strong>Groups.</strong> $Sp(1)\to SU(2)$: unitary and determinant one to $5\times10^{-16}$. Dictionary round trip $SU(2)\to\tilde Q\to\mathsf{M}_2$: $2\times10^{-16}$. $SU(2)$ satisfies $\tilde Q^{*}\tilde Q=e_t$ to $3\times10^{-15}$. Unit-norm elements of $\mathbb{B}$ satisfy $\det\mathsf{M}_2=1$ to $6\times10^{-15}$. $\mathrm{Hp}$ scales the norm by $\lvert N(\tilde Q)\rvert^{2}$ with error $4\times10^{-13}$, so on $N=1$ it is an isometry of $\mathbb{B}_{\Psi}$. The two-sided action $\tilde X\mapsto\tilde u\tilde X\tilde v^{\natural}$ of $Sp(1)\times Sp(1)$ preserves the Euclidean norm of $\mathbb{R}^{8}$ to $7\times10^{-15}$. $\exp(t\vec e_y)=\begin{pmatrix}\cos t&-\sin t\\ \sin t&\cos t\end{pmatrix}$ and $\exp(ti\vec e_z)=\operatorname{diag}(e^{t},e^{-t})$.</li>
+<li><strong>Operator layer.</strong> $\dim\rho_L(\mathbb{B})=8$, $\dim\rho_R(\mathbb{B})=8$, $\dim(\rho_L+\rho_R)=14$. $\rho_L(\mathbb{B}_H\cap\mathbb{B}_V)+\rho_R(\mathbb{B}_H\cap\mathbb{B}_V)$: dimension $6$, closed, $\kappa=(0,6,0)$. The split analogue: dimension $6$, closed, $\kappa=(4,2,0)$. $\rho_L(\mathbb{B}_V)+\rho_R(\mathbb{B}_V)$: dimension $12$, closed, $\kappa=(6,6,0)$. $\rho_L(\mathbb{B}_V)$ alone: $(3,3,0)$. $\rho_L(\mathbb{B}_{\Phi})$: $(0,3,1)$. The whole two-sided span: $(6,6,2)$. The commutant of right multiplication by $\mathbb{B}_H$ inside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ has real dimension $16$, which is $M_2(\mathbb{H})$.</li>
+<li><strong>Adjoints.</strong> $\rho_L(\tilde Q)^{*}=\rho_L(\tilde Q^{*})$ exactly, and $\rho_L(\tilde Q)+\rho_L(\tilde Q)^{T}=0$ exactly for $\tilde Q\in\mathbb{B}_{\Phi}$, where the transpose is taken in the real coordinates of the base, with defect $5.6$ for a generic $\tilde Q$.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The tables collect the correspondences in one place and keep the level of each one visible. At the element level the biquaternion algebra is $M_2(\mathbb{C})$, its two real forms are $\mathbb{B}^{\sigma_{\mathrm{split}}}$ and $\mathbb{B}_H$, and the six subspaces carry the six classical readings: the centre is the trace line, the vector part is the traceless part and the Lorentz algebra, the quaternion subspace is $\mathbb{H}$ and $\mathfrak{u}(2)$ and $\mathbb{R}^{4}$, the antiquaternion subspace is $i\mathbb{H}$, the Hermitian subspace is $H_2(\mathbb{C})$ and $\mathbb{R}^{1,3}$ and the scene of the Hermitian pair, and the anti-Hermitian subspace is $\mathfrak{u}(2)$ and $\mathbb{R}^{3,1}$. The three readings of $\mathfrak{sl}(2,\mathbb{C})$ appear as $\mathbb{B}_H\cap\mathbb{B}_V$, as $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$, and as $\mathbb{B}_V$ read over $\mathbb{R}$.</p>
+<p>At the group level the unit-norm group is $SL(2,\mathbb{C})$, its quotient by the centre is the Lorentz group, the unit quaternions are $SU(2)$, and the split units are $SL(2,\mathbb{R})$ with quotient $SO^{+}(2,1)$. At the operator level the endomorphism algebra is $M_4(\mathbb{C})$, the two real forms are the operators commuting with coefficient conjugation and the operators commuting with right quaternion multiplication, and the two-sided pairs give $\mathfrak{so}(4)$, $\mathfrak{so}(2,2)$ and $\mathfrak{so}(4,\mathbb{C})$ from the pure quaternions, from the traceless split elements, and from the vector part.</p>
+<p>The failures are as instructive as the successes. $\mathfrak{so}(4)$ and $\mathfrak{so}(2,2)$ are not subspaces of $\mathbb{B}$ but pairs of operators, $\mathfrak{su}(n)$ for $n\geq3$ does not fit at all, $\mathbb{B}_{\Psi}$ is a Jordan algebra and not a Lie algebra, $\mathbb{B}_{\Phi}$ is the other way round, and $\mathfrak{sl}(4,\mathbb{C})$ is one dimension too large for two-sided multiplication to reach.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>a biquaternion, $Q_\mu\in\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\sum_\mu Q_\mu^{2}$</td>
+<td>the norm, equal to $\det\mathsf{M}_2$</td>
+</tr>
+<tr>
+<td>$\natural$, $\bar{\ }$, $*=\natural\circ\bar{\ }$</td>
+<td>the three conjugations: quaternion, coefficient, Hermitian</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_C,\mathbb{B}_V,\mathbb{B}_H,\mathbb{B}_{iH},\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$</td>
+<td>centre, vector part, quaternion, antiquaternion, Hermitian, anti-Hermitian</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\sigma_{\mathrm{split}}}$</td>
+<td>the split real form, $\operatorname{span}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\}$</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{split}}(\tilde Q)=\vec e_y\bar{\tilde Q}\vec e_y^{-1}$</td>
+<td>the involution whose fixed set is $\mathbb{B}^{\sigma_{\mathrm{split}}}$</td>
+</tr>
+<tr>
+<td>$X\wedge Y=\tfrac12(XY-YX)$</td>
+<td>the bracket, $\vec X\times\vec Y$</td>
+</tr>
+<tr>
+<td>$X\circ Y=\tfrac12(XY+YX)$</td>
+<td>the Jordan product</td>
+</tr>
+<tr>
+<td>$\rho_L,\rho_R$</td>
+<td>left and right regular operators</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
+<td>the Hermitian pair</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form, written as a signature $(p,q,z)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Classification of the Structures of the Biquaternion Algebra</em> for the two real structures, the one complex structure and the six subspaces.</li>
+<li><em>Classification of the Real Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> and <em>Classification of the Complex Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> for the layer-by-layer lattice and the group tables with covers, centres and quotients.</li>
+<li><em>Classification of the Structures of the Operators of the Biquaternion Algebra</em>, <em>Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> and <em>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</em> for the operator layer, the two real forms of $M_4(\mathbb{C})$ and the real forms of $\mathfrak{sl}(4,\mathbb{C})$.</li>
+<li><em>Biquaternion Versors and the Orthogonal Group</em>, <em>Biquaternion Rotations and Lorentz Transformations</em> and <em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em> for the versor groups, the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ and the spin isomorphisms.</li>
+<li><em>Operators Acting on Two Sides</em>, <em>The Regular Representation as an Algebra of Operators</em> and <em>The Two-Sided Operators and the Segre Cone</em> for $\rho_L$, $\rho_R$, their sum and the cone of Hermitian pairs.</li>
+<li><em>Subspaces and Decompositions of the Biquaternion Algebra</em>, <em>Hermitian and Anti-Hermitian Elements</em> and <em>The Unitary Group of the Biquaternion Algebra</em> for the six subspaces, the star and the unitary conditions.</li>
+<li><em>The Element: the Coordinates and the Conjugations</em> and <em>M2C Pauli Representation</em> for the dictionary $\mathsf{M}_2$ and its three conjugations.</li>
+<li><em>Expressing Lie Algebras via Biquaternions</em> for the two senses of "algebra in biquaternions", and <em>Lie Correspondence: $\mathfrak{so}(n)$</em>, <em>Lie Correspondence: $\mathfrak{su}(n)$</em> and <em>$\mathfrak{su}(2)$, $\mathfrak{su}(n)$ and the Anti-Hermitian Question in Biquaternion Language</em> for the operator-level correspondences with the classical groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
