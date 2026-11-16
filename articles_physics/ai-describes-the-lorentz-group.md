@@ -2,11 +2,9 @@
 
 ## Introduction
 
-**The Lorentz group is $\mathrm{SO}^{+}(1,3)$.**
+The **Lorentz group**, written $\mathrm{SO}^{+}(1,3)$, is the group of changes of inertial frame: the linear transformations of flat spacetime that leave the interval between two events unchanged, and that can be reached from the identity by a continuous change. It is the only group these pages call by that name.
 
-That is its one name in this article. It is the set of changes of inertial frame: the linear transformations of flat spacetime that leave the interval between two events unchanged, and that can be reached from the identity by a continuous change.
-
-That group is built out of two kinds of transformation, the boosts and the rotations, and every element of it is a product of one of each. The same group sits inside the biquaternion algebra: its unit elements act on a four-vector by the two-sided product $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators obtained that way are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.
+It is built out of two kinds of transformation, the boosts and the rotations, and every element of it is a product of one of each. The same group sits inside the biquaternion algebra: its unit elements act on a four-vector by the two-sided product $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators obtained that way are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.
 
 ## The Lorentz Group
 
@@ -33,7 +31,7 @@ $$
 \bigl(\Lambda^{0}{}_{0}\bigr)^2=1+\sum_i\bigl(\Lambda^{i}{}_{0}\bigr)^2\ \ge 1 ,
 $$
 
-so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it. **This is the Lorentz group.**
+so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it.
 
 **Six parameters.** The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,
 
