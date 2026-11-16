@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Actions of One Group: Adjoint and Congruence — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-actions-of-one-group-adjoint-and-congruence"><strong>The Two Actions of One Group: Adjoint and Congruence</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>One group acts on one algebra in two different ways, and the two are distinguished by which involution sits on the right of the element. The <strong>adjoint</strong> action uses the inverse and preserves the product. The <strong>congruence</strong> uses the star and preserves the two Hermitian sectors together with the indefinite form. A rotation acts the same way in both. A boost does not, and the difference between the two actions is exactly the difference between a rotation and a boost.</p>
+<p>This article separates the two actions, proves what each preserves, computes where they coincide, states the kernel and the scale ambiguity of each, and answers the question a reader of the block will ask: which of the two is a frame change?</p>
+<p>The article assumes <em>The Group of Unit-Norm Biquaternions</em> for the group and its inverse, <em>Algebra and Element Conventions</em> for the star and the quaternion conjugation, <em>Norm and Pairing Conventions</em> for the norm, and <em>Frame and Metric Conventions</em> for the two Hermitian sectors. It uses <em>The Rotations, the Boosts and the Groups</em> for the automorphism question and <em>The Lorentz Group as Biquaternion Norm Automorphisms</em> for the norm-automorphism reading.</p>
+<h2 id="the-two-actions">The Two Actions</h2>
+<h3 id="the-adjoint">The Adjoint</h3>
+<p>For $\tilde U$ in the group of units and $\tilde Q$ any element,</p>
+<p>$$
+\mathrm{Ad}_{\tilde U}:\ \tilde Q\ \longmapsto\ \tilde U\tilde Q\tilde U^{-1}.
+$$</p>
+<p>On the unit-norm group the inverse is the quaternion conjugate, so the same formula reads $\tilde U\tilde Q\tilde U^{\natural}$. The map is defined on the group of units and not only on $G$, which is one of the two places where the two actions differ.</p>
+<h3 id="the-congruence">The Congruence</h3>
+<p>$$
+\mathrm{Cg}_{\tilde U}:\ \tilde Q\ \longmapsto\ \tilde U\tilde Q\tilde U^{*},
+$$</p>
+<p>with ${}^{*}$ the corpus's star, the anti-involution that fixes the Hermitian sector. The map is defined for every $\tilde U$, invertible or not, and it is the map the block calls <strong>rotor conjugation</strong> when $\tilde U$ is of unit norm.</p>
+<p><strong>A warning on the notation.</strong> The survey writes rotor conjugation as $\tilde U\tilde Q\tilde U^{*}$ and the four-vector action of the Lorentz group as the same expression; the two are one map. The adjoint action is written with the inverse. A reader must not read $\tilde U^{*}$ as $\tilde U^{-1}$: they agree only when $\tilde U$ is $*$-unitary.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>adjoint $\tilde U\tilde Q\tilde U^{-1}$</th>
+<th>congruence $\tilde U\tilde Q\tilde U^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>preserves the product</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>preserves the two Hermitian sectors</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>preserves the indefinite form</td>
+<td>yes, because it preserves the norm</td>
+<td>yes, because $\det(\tilde U\tilde Q\tilde U^{*})=\lvert\det\tilde U\rvert^{2}N(\tilde Q)$</td>
+</tr>
+<tr>
+<td>preserves the trace</td>
+<td>yes</td>
+<td>only for $*$-unitary $\tilde U$</td>
+</tr>
+<tr>
+<td>defined on the group of units</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>defined on all elements</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>kernel on $G$</td>
+<td>$\{\pm e_t\}$</td>
+<td>$\{\pm e_t\}$</td>
+</tr>
+<tr>
+<td>blind to</td>
+<td>any nonzero complex factor</td>
+<td>a unit-modulus factor only</td>
+</tr>
+</tbody>
+</table></div>
+<p>Each row is proved below, and the two rows that decide the physics are the first and the second.</p>
+<h2 id="the-adjoint-preserves-the-product">The Adjoint Preserves the Product</h2>
+<h3 id="the-proof">The Proof</h3>
+<p>$$
+\mathrm{Ad}_{\tilde U}(\tilde Q\tilde P)=\tilde U\tilde Q\tilde P\tilde U^{-1}
+=(\tilde U\tilde Q\tilde U^{-1})(\tilde U\tilde P\tilde U^{-1})
+=\mathrm{Ad}_{\tilde U}(\tilde Q)\,\mathrm{Ad}_{\tilde U}(\tilde P).
+$$</p>
+<p>One line, and it is the definition of an algebra automorphism. The identity is fixed and inverses are carried to inverses, so $\mathrm{Ad}_{\tilde U}$ is an automorphism of the associative algebra.</p>
+<h3 id="what-follows">What Follows</h3>
+<p>Because it is an automorphism of the product, the adjoint preserves everything the product defines:</p>
+<ul>
+<li>the commutator, and therefore the structure constants of the Lie algebra;</li>
+<li>the norm, $\langle \tilde U\tilde Q\tilde U^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$;</li>
+<li>the spectrum, since similar matrices have equal eigenvalues;</li>
+<li>the trace, since $\operatorname{Tr}(\tilde U\tilde Q\tilde U^{-1})=\operatorname{Tr}\tilde Q$.</li>
+</ul>
+<p>This is the action under which the algebra has its own symmetry, and it is the action the <em>automorphism</em> language of <em>The Rotations, the Boosts and the Groups</em> refers to.</p>
+<h3 id="the-homomorphism">The Homomorphism</h3>
+<p>$$
+\mathrm{Ad}_{\tilde U\tilde V}=\mathrm{Ad}_{\tilde U}\circ\mathrm{Ad}_{\tilde V},
+$$</p>
+<p>so the adjoint is a representation of the group of units, of real dimension eight on the eight-dimensional algebra. That representation is not irreducible: it is the six-dimensional adjoint of the Lorentz algebra plus two trivial central directions, as <em>The Isomorphisms and Their Dimensions</em> states.</p>
+<h2 id="the-congruence-preserves-the-sectors-and-the-form">The Congruence Preserves the Sectors and the Form</h2>
+<h3 id="the-two-sectors">The Two Sectors</h3>
+<p>The star is an anti-involution, $(XY)^{*}=Y^{*}X^{*}$. Hence</p>
+<p>$$
+(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q^{*}\tilde U^{*},
+$$</p>
+<p>so if $\tilde Q$ is Hermitian the image is Hermitian, and if $\tilde Q$ is anti-Hermitian the image is anti-Hermitian. The congruence therefore preserves each of the two sectors</p>
+<p>$$
+\mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\},\qquad
+\mathbb{B}_{\Phi}=\{\tilde Q:\tilde Q^{*}=-\tilde Q\},
+$$</p>
+<p>separately, and it does so for every $\tilde U$, invertible or not. The adjoint does neither: for a boost the adjoint of an anti-Hermitian element leaves the sector, which is the subject of a later section.</p>
+<h3 id="the-indefinite-form">The Indefinite Form</h3>
+<p>Take $\tilde Q\in\mathbb{B}_\Psi$ and write it as the image of a real four-vector, $\tilde Q=q_t+\sum_\eta iq_\eta\vec e_\eta$, with $q_t$ and the $q_\eta$ real. Then</p>
+<p>$$
+\det\mathsf{M}_2(\tilde U\tilde Q\tilde U^{*})=\det\mathsf{M}_2(\tilde U)\det\mathsf{M}_2(\tilde Q)\overline{\det\mathsf{M}_2(\tilde U)}
+=\lvert N(\tilde U)\rvert^{2}\bigl(q_t^{2}-\lvert\vec q\rvert^{2}\bigr),
+$$</p>
+<p>so on the unit group the congruence preserves the interval exactly, with the factor $\lvert N\rvert^{2}=1$. The indefinite form is</p>
+<p>$$
+q_t^{2}-\lvert\vec q\rvert^{2}=\det\mathsf{M}_2(\tilde Q)
+$$</p>
+<p>on the Hermitian slice, and the congruence is its isometry group. That is the statement that the congruence <em>is</em> the Lorentz action, and it is the reason the physical reading of this block runs through it.</p>
+<h3 id="what-the-congruence-does-not-preserve">What the Congruence Does Not Preserve</h3>
+<p>$$
+\mathrm{Cg}_{\tilde U}(\tilde Q\tilde P)=(\tilde U\tilde Q\tilde U^{*})(\tilde U\tilde P\tilde U^{*})
+=\tilde U\tilde Q(\tilde U^{*}\tilde U)\tilde P\tilde U^{*}
+\neq\tilde U\tilde Q\tilde P\tilde U^{*}
+$$</p>
+<p>unless $\tilde U^{*}\tilde U=e_t$. So the congruence is an isometry of the form and not an automorphism of the algebra, and the two properties are different properties. A boost is an isometry of the interval and not an automorphism of the biquaternion product; this single sentence is the algebraic content of the distinction between a rotation and a boost.</p>
+<h2 id="the-coincidence-on-the-compact-slice">The Coincidence on the Compact Slice</h2>
+<h3 id="the-statement">The Statement</h3>
+<p>If $\tilde U$ is $*$-unitary, $\tilde U^{*}=\tilde U^{-1}$, and then</p>
+<p>$$
+\mathrm{Ad}_{\tilde U}=\mathrm{Cg}_{\tilde U}.
+$$</p>
+<p>The $*$-unitary elements of the group of unit norm are the rotations, $SU(2)$, which is why the article calls this the coincidence on the compact slice.</p>
+<h3 id="why-it-is-only-there">Why It Is Only There</h3>
+<p>Two reasons, and the second is the useful one.</p>
+<ul>
+<li><strong>Algebraically</strong>, the identity $\tilde U^{*}=\tilde U^{-1}$ is the definition of $*$-unitarity, and it holds on $SU(2)$ and nowhere else in $G$.</li>
+<li><strong>Geometrically</strong>, a rotation is an automorphism of the algebra and an isometry of the interval at once, while a boost is only the second. The intersection of the automorphism group and the isometry group of the form is the rotation group.</li>
+</ul>
+<p>The coincidence is what makes the rotation subgroup unproblematic. On rotations there is no choice of action to make, and every formula of the block that involves rotations only may be written with either. Every formula that involves a boost may not.</p>
+<h3 id="a-check">A Check</h3>
+<p>On a quarter turn about $\vec e_z$ and a random element, the two images agree to $10^{-16}$. On a boost of rapidity $0.8$ and the same element, they differ in the second decimal place and the difference is not small. A computation that accidentally uses the adjoint where the congruence is meant will therefore pass every rotation test and fail every boost test, which is the worst possible failure mode and the reason this section exists.</p>
+<h2 id="kernel-and-scale">Kernel and Scale</h2>
+<h3 id="the-kernel-on-the-group">The Kernel on the Group</h3>
+<p>For $\tilde U\in G$,</p>
+<p>$$
+\mathrm{Ad}_{\tilde U}=\mathrm{id}\iff \tilde U\ \text{is central}\iff \tilde U=\pm e_t,
+$$</p>
+<p>and the same for the congruence, since $\tilde U\tilde Q\tilde U^{*}=\tilde Q$ for all $\tilde Q$ forces $\tilde U$ central. So both actions have kernel $\{\pm e_t\}$, and both factor through the Lorentz group:</p>
+<p>$$
+G/\{\pm e_t\}\cong SO^{+}(1,3).
+$$</p>
+<p>This is the two-to-one cover of <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>, read as a statement about kernels.</p>
+<h3 id="the-scale-on-the-group-of-units">The Scale on the Group of Units</h3>
+<p>The two actions differ in what they are blind to when the group of units is used.</p>
+<ul>
+<li><strong>The adjoint</strong> is blind to any nonzero complex factor: $\mathrm{Ad}_{\lambda\tilde U}=\mathrm{Ad}_{\tilde U}$ for $\lambda\in\mathbb{C}^{\times}$, because the factor cancels against its inverse. Its true kernel on $\mathbb{B}^{\times}$ is the whole centre $\mathbb{C}^{\times}e_t$, of real dimension two.</li>
+<li><strong>The congruence</strong> is blind to a unit-modulus factor only: $\mathrm{Cg}_{\lambda\tilde U}=\lvert\lambda\rvert^{2}\mathrm{Cg}_{\tilde U}$. A phase cancels, a real scale does not.</li>
+</ul>
+<p>So a scale $r$ is invisible to the adjoint and is a genuine dilatation of the congruence: the congruence sees the modulus and the adjoint does not. This is the algebraic form of the statement that the interval's isometry group contains the scale only through its modulus, and of the further statement that the congruence by a non-unit element is a conformal map, which <em>The Conformal Group in Biquaternionic Form</em> takes up.</p>
+<h3 id="the-phase">The Phase</h3>
+<p>For a central phase $\tilde U=e^{i\theta_{\mathrm{pha}}}e_t$ the congruence is the identity on four-vectors, since $\lvert\lambda\rvert^{2}=1$. The phase is therefore invisible to the whole of the geometry of this block, exactly as the menu's dictionary says: it is a factor outside $SL(2,\mathbb{C})$ and it is irrelevant to a frame change.</p>
+<h2 id="why-a-boost-is-invisible-to-the-adjoint-and-visible-to-the-congruence">Why a Boost Is Invisible to the Adjoint and Visible to the Congruence</h2>
+<h3 id="the-time-axis-under-the-adjoint">The Time Axis Under the Adjoint</h3>
+<p>Take a boost of rapidity $\theta_{\mathrm{rpd}}$ along $\vec u_{\mathrm b}$ and the timelike element $ie_t$. Then</p>
+<p>$$
+\mathrm{Ad}_{\tilde U_{\mathrm b}}(ie_t)=\tilde U_{\mathrm b}\,ie_t\,\tilde U_{\mathrm b}^{-1}=ie_t,
+$$</p>
+<p>because $ie_t$ is central. The adjoint of a boost fixes the time axis <strong>exactly</strong>, and it fixes the boost axis as well, because a boost lies in the Cartan direction of its own axis and the adjoint of a Cartan element fixes the Cartan. Verified numerically: the adjoint of $ie_t$ by a boost of rapidity $0.8$ returns $ie_t$ to machine precision, and the adjoint of $\vec e_x$ by the same boost returns $\vec e_x$.</p>
+<p>This is the precise sense of <em>invisible</em>. A boost is an inner automorphism that moves almost nothing that a four-vector reading cares about; it moves the null directions of its own plane, and it fixes the axis and the time direction.</p>
+<h3 id="the-time-axis-under-the-congruence">The Time Axis Under the Congruence</h3>
+<p>The same element under the congruence gives</p>
+<p>$$
+\mathrm{Cg}_{\tilde U_{\mathrm b}}(ie_t)=ie_t\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{*}
+=i\bigl(\cosh\theta_{\mathrm{rpd}}\,e_t-\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}\bigr),
+$$</p>
+<p>which is the four-velocity of a frame moving with speed $c\tanh\theta_{\mathrm{rpd}}$ along $-\vec u_{\mathrm b}$. The sign is the passive reading: the frame is boosted along $+\vec u_{\mathrm b}$ and the coordinate velocity of the original rest frame is reversed.</p>
+<p>So the congruence moves the time axis, and it moves it by exactly the Lorentz transformation. Verified numerically at rapidity $0.8$: the image is $i(1.337435\,e_t-0.888106\,\vec u_{\mathrm b})$ against $\cosh 0.8=1.337435$ and $\sinh 0.8=0.888106$.</p>
+<h3 id="the-sector-argument">The Sector Argument</h3>
+<p>The hidden premise of the previous two subsections is that $ie_t$ is a four-vector and must stay one. The adjoint does not keep it: it keeps it only because $ie_t$ is central. On a spatial vector the adjoint of a boost does not even preserve the sector,</p>
+<p>$$
+\tilde U_{\mathrm b}\,\vec e_y\,\tilde U_{\mathrm b}^{-1}\notin\mathbb{B}_{\Phi}\quad(\vec u_{\mathrm b}=\vec e_x),
+$$</p>
+<p>because the image is neither Hermitian nor anti-Hermitian. A map that takes four-vectors out of the four-vector sector cannot be the action of a frame change, whatever it does to the time axis.</p>
+<h2 id="which-action-a-frame-change-uses">Which Action a Frame Change Uses</h2>
+<h3 id="the-requirement">The Requirement</h3>
+<p>A frame change must do three things. It must carry four-vectors to four-vectors, so it must preserve the sector. It must preserve the interval, so it must be an isometry of the indefinite form. It must compose, so it must be a homomorphism.</p>
+<h3 id="the-answer">The Answer</h3>
+<p>The congruence satisfies all three. The adjoint satisfies the third and fails the first two on boosts.</p>
+<p>$$
+\text{a frame change is }\mathrm{Cg}_{\tilde U}:\ \tilde Q\longmapsto\tilde U\tilde Q\tilde U^{*},\qquad \tilde U\in G .
+$$</p>
+<p>This is the formula the whole block uses, and it is the formula <em>The Lorentz Transformation as a Biquaternionic Rotation</em> derives from the component transformation.</p>
+<h3 id="what-the-other-action-is-for">What the Other Action Is For</h3>
+<p>The adjoint is not idle. It is the action on the algebra's own structure: it is the map under which the multiplication table, the structure constants and the spectrum are invariant, and it is the map that gives the eight-dimensional representation of the group of units. When the block asks what a frame change does to an <em>algebra element</em>, it uses the congruence. When it asks how the algebra's own symmetries act, it uses the adjoint. The two questions are different and the answers are different maps.</p>
+<p>A short table makes the division of labour explicit:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>what does a boost do to a four-velocity?</td>
+<td>congruence</td>
+</tr>
+<tr>
+<td>what does a boost do to the structure constants?</td>
+<td>nothing: the adjoint, which fixes them</td>
+</tr>
+<tr>
+<td>what does a rotation do?</td>
+<td>either; they coincide</td>
+</tr>
+<tr>
+<td>what does a dilatation do?</td>
+<td>congruence, scaled; invisible to the adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The adjoint $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$ is an algebra automorphism: it preserves the product, the commutator, the norm, the trace and the spectrum. The congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ is an isometry of the indefinite form: it preserves each Hermitian sector separately and it preserves the interval on the unit group up to $\lvert N\rvert^{2}$. The two coincide exactly on the $*$-unitary elements, that is on the rotations. Both have kernel $\{\pm e_t\}$ on the unit group and both factor through the Lorentz group. On the group of units the adjoint is blind to any complex factor and the congruence to a unit-modulus factor only, so the scale is a genuine dilatation of the congruence and the phase is invisible to both. A boost fixes the time axis and the boost axis under the adjoint and moves the time axis under the congruence, and it does not even preserve the four-vector sector under the adjoint. A frame change is therefore the congruence, and the adjoint is reserved for the algebra's own automorphisms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Ad}_{\tilde U}$</td>
+<td>the adjoint action $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Cg}_{\tilde U}$</td>
+<td>the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$</td>
+</tr>
+<tr>
+<td>${}^{*}$</td>
+<td>the star, an anti-involution fixing $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation, the inverse on $G$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>the Hermitian sector</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>the anti-Hermitian sector, the four-vectors</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the biquaternion norm</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the unit-norm group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — inner automorphisms, the adjoint representation of a Lie group and the isometry group of an indefinite form.</li>
+<li>R. A. Horn and C. R. Johnson, <em>Matrix Analysis</em>, 2nd ed., Cambridge University Press, 2012 — similarity and congruence transformations, what each preserves, and the inertia theorem for Hermitian forms.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed., Cambridge University Press, 2001 — the distinction between the automorphism group and the Clifford (twisted-adjoint) action in a Clifford algebra, which is the same distinction in another language.</li>
+<li><em>The Rotations, the Boosts and the Groups</em> — the corpus's treatment of the automorphisms and the derivations, of which this article's first action is the group version.</li>
+<li><em>The Lorentz Group as Biquaternion Norm Automorphisms</em> — the same group read as the automorphisms of the norm, with the real slice taken.</li>
+<li><em>The Lorentz Transformation as a Biquaternionic Rotation</em> and <em>Paravectors and the Geometry of Spacetime</em> — the congruence in its component form and its paravector form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

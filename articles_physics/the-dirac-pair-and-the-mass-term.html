@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Dirac Pair and the Mass Term — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-dirac-pair-and-the-mass-term"><strong>The Dirac Pair and the Mass Term</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A single Weyl spinor is a spin-$\tfrac12$ field of one chirality. It cannot carry a mass, because a mass term pairs the field with a second field and a single spinor has no second field to pair with. The Dirac spinor is that second field added: the direct sum of the two inequivalent spinor representations, of complex dimension four, and the mass is the bilinear that couples the two halves.</p>
+<p>This article states the two Weyl spinors and their actions, forms the Dirac pair, shows why the mass term couples the halves and why the coupling is a parity-respecting bilinear, fixes the chirality grading and its relation to helicity, and states the Majorana option and the sense in which it is a different pairing.</p>
+<p>The article assumes <em>The Two Commuting Complex Triples</em> and <em>P, T and the Representation Labels</em> for the representation labels, <em>The Matrix Model: What It Sees and What It Hides</em> for the algebra acting on a spinor, and the corpus's field articles for the equations. It does not restate the corpus's conventions for the spinor module, which are fixed in <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em>; the mass's algebraic shape is settled in <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>, and this article defers to it.</p>
+<h2 id="the-two-weyl-spinors">The Two Weyl Spinors</h2>
+<h3 id="the-two-inequivalent-representations">The Two Inequivalent Representations</h3>
+<p>The two spinor representations of the Lorentz algebra are</p>
+<p>$$
+(\tfrac12,0)\ \text{and}\ (0,\tfrac12),
+$$</p>
+<p>both of complex dimension two, and they are <strong>inequivalent</strong>: no change of basis takes one to the other. They are conjugate to one another, so complex conjugation exchanges them, and that exchange is what parity does.</p>
+<h3 id="the-two-actions">The Two Actions</h3>
+<p>On the first, the rotation generators act by $\tfrac12i\vec\sigma$ and the boost generators by $\tfrac12\vec\sigma$; on the second the signs of the boost part are reversed. So the two spinors differ by the sign of the boost, which is the statement that they are conjugate representations and not equivalent ones.</p>
+<p>In the algebra, the first is the defining module $V_{1/2}=\mathbb{C}^{2}$ and the second is its conjugate $\overline{V_{1/2}}$. The algebra acts on the first by left multiplication, and the second is reached by complex conjugation. The corpus reserves the bar for complex conjugation and the star for the Hermitian conjugation built from it, and the exchange of the two chiralities on the module is what the corpus calls charge conjugation there; this article keeps the names apart and writes "complex conjugation" when it means the bar.</p>
+<h3 id="why-two-and-not-one">Why Two and Not One</h3>
+<p>A single Weyl spinor is a perfectly good representation. What it is not is a representation that contains its own conjugate, so a term pairing it with itself is not available without an extra structure. That is the whole reason the framework carries a <strong>pair</strong>: not because one spinor is insufficient to describe a massless particle, but because a mass needs two.</p>
+<h3 id="the-corpuss-statement">The Corpus's Statement</h3>
+<p>The survey states the point in one sentence: the framework carries a Dirac pair rather than a single Weyl spinor, and the mass term couples the two chiralities. This article is the working out of that sentence.</p>
+<h2 id="the-dirac-spinor-as-a-pair">The Dirac Spinor as a Pair</h2>
+<h3 id="the-direct-sum">The Direct Sum</h3>
+<p>$$
+\Psi=\begin{pmatrix}\xi\\ \eta\end{pmatrix},
+\qquad
+\xi\in(\tfrac12,0),\quad \eta\in(0,\tfrac12),
+$$</p>
+<p>of complex dimension $2+2=4$. The direct sum is a representation, and it is the smallest representation that contains both chiralities.</p>
+<h3 id="the-algebras-version">The Algebra's Version</h3>
+<p>The Dirac spinor is also an element of the algebra itself:</p>
+<p>$$
+\mathbb{B}\cong M_2(\mathbb{C})\cong\mathbb{C}^{2}\otimes\mathbb{C}^{2*}\cong\mathbb{C}^{4},
+$$</p>
+<p>so the four complex dimensions of the algebra are the four of the Dirac spinor. In that reading $\xi$ is the column index and $\eta$ the row index, and the two chiralities are the two tensor factors' transformations. That is why the algebra's regular representation is Dirac and not Weyl.</p>
+<h3 id="the-dirac-matrices">The Dirac Matrices</h3>
+<p>In the chiral basis the matrices are built from the two off-diagonal blocks,</p>
+<p>$$
+\gamma^{0}=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\qquad
+\gamma^{\eta}=\begin{pmatrix}0&\sigma_\eta\\-\sigma_\eta&0\end{pmatrix},
+$$</p>
+<p>with the $2\times2$ blocks acting on the two spinors. The chiral basis is the one in which the grading is diagonal, and it is the basis adapted to the pair.</p>
+<h3 id="the-verification">The Verification</h3>
+<p>The chiral algebra is checked directly: $\{\gamma^{5},\gamma^{\mu}\}=0$ for all four $\mu$, $\gamma^{5\,2}=1$, and $\gamma^{5}$ is diagonal with eigenvalues $(-1,-1,+1,+1)$ — the upper block of $\Psi$ carrying $-1$ and the lower block $+1$ in the convention of this article. All three statements hold exactly in the $4\times4$ realisation.</p>
+<h2 id="the-mass-term">The Mass Term</h2>
+<h3 id="the-coupling">The Coupling</h3>
+<p>$$
+m\,\Psi^{\dagger}\gamma^{0}\Psi
+=m\bigl(\xi^{\dagger}\eta+\eta^{\dagger}\xi\bigr)
+=2m\,\mathrm{Re}\bigl(\xi^{\dagger}\eta\bigr).
+$$</p>
+<p>The bilinear is off-diagonal in the two halves: it pairs $\xi$ with $\eta$ and $\eta$ with $\xi$, and it never pairs a half with itself. The verification: with $\xi=(1,0)$ and $\eta=(0.3+0.2i,0.5)$ the bilinear $\Psi^{\dagger}\gamma^{0}\Psi$ is $0.600000000$, and $2\mathrm{Re}(\xi^{\dagger}\eta)$ is $0.600000000$.</p>
+<p>So the mass is a <strong>coupling</strong> and not a self-energy: it has no diagonal part at all.</p>
+<h3 id="why-parity-allows-it">Why Parity Allows It</h3>
+<p>Parity exchanges the two chiralities, so a bilinear that pairs them is parity-invariant, while a bilinear that paired one with itself would not be. That is the group-theoretic reason a Dirac mass is allowed: the term is a singlet of the full Lorentz group including parity, and it is built from one field of each chirality.</p>
+<p>The converse is the reason a <em>single</em> Weyl spinor cannot have a Dirac mass: there is no second chirality in the field content to pair with, and the only available self-pairing is the antilinear one of the Majorana option.</p>
+<h3 id="the-two-equations">The Two Equations</h3>
+<p>The coupled system in the corpus's notation is</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L,
+\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+$$</p>
+<p>with $k_m=mc/\hbar$ the mass wave number. Each equation is first order and each carries the other chirality on its right-hand side: the mass is the term that converts one into the other as the field propagates.</p>
+<p>That is the algebraic form of "a massive particle's chirality flips as it moves": the free equation is a rotation of the pair, and its rate is $k_m$.</p>
+<h3 id="the-mass-as-a-frequency">The Mass as a Frequency</h3>
+<p>The mass wave number is the frequency of that rotation, and the rotation's period is the Compton wavelength. So the mass is not a coupling constant in the usual sense but a <em>rate</em>: a massless field's two halves propagate independently, and a massive field's two halves rotate into each other with a fixed frequency. In the massless limit the frequency goes to zero and the two halves decouple.</p>
+<h3 id="what-the-mass-is-not">What the Mass Is Not</h3>
+<p>It is not a deformation of either half and it is not a fifth component. It is a bilinear in the pair, and its value is empirical: the framework does not derive it, as the corpus's article on the two kinds of mass states plainly.</p>
+<h2 id="chirality">Chirality</h2>
+<h3 id="the-projectors">The Projectors</h3>
+<p>$$
+P_{\pm}=\tfrac12\bigl(1\pm\gamma^{5}\bigr),
+\qquad
+P_{\pm}^{2}=P_{\pm},\quad P_{+}P_{-}=0,\quad P_{+}+P_{-}=1,
+$$</p>
+<p>and</p>
+<p>$$
+P_{+}\Psi=\begin{pmatrix}0\\ \eta\end{pmatrix},
+\qquad
+P_{-}\Psi=\begin{pmatrix}\xi\\ 0\end{pmatrix}
+$$</p>
+<p>in the convention above. The projectors are the chirality projectors, and their eigenvalues $\pm1$ are the chirality.</p>
+<h3 id="chirality-and-helicity">Chirality and Helicity</h3>
+<p>Chirality is a property of the representation; helicity is the projection of the spin on the momentum. For a <strong>massless</strong> particle they coincide, because the momentum is null and the little group's rotation is the same as the chirality's generator. For a <strong>massive</strong> particle they do not: a boost can overtake the spin, and the helicity flips while the chirality does not.</p>
+<p>That is why the two words must not be used interchangeably, and why the block's statement "the mass couples the two chiralities" is stronger than "the mass couples the two helicities".</p>
+<h3 id="the-massless-limit">The Massless Limit</h3>
+<p>As $k_m\to0$ the two equations decouple:</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi_R=0,
+\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0,
+$$</p>
+<p>and each half is separately a good field. So the Weyl spinors are the massless limit of the pair, and the pair is the massive completion. The limit is continuous in the equations and discontinuous in the particle content: a massless particle has one helicity, a massive one has two.</p>
+<h3 id="the-particle-content">The Particle Content</h3>
+<p>A Dirac field describes two spin states of a particle and two of its antiparticle, and the mass does not change that count. What the mass changes is the <em>identity</em> of the states: a massive particle's spin can be oriented either way about its momentum, while a massless one's cannot be flipped without changing its chirality. So the count of states is the same at every mass and the labels of the states are not.</p>
+<h2 id="the-majorana-option">The Majorana Option</h2>
+<h3 id="the-antilinear-condition">The Antilinear Condition</h3>
+<p>A Majorana spinor is one that equals its own charge conjugate:</p>
+<p>$$
+\Psi=\Psi^{c},
+$$</p>
+<p>which is a <strong>reality condition</strong> and therefore antilinear. It reduces the four complex components to four real ones, and it is available only when the conjugation is an involution on the field's space and commutes with the equation.</p>
+<h3 id="what-it-buys">What It Buys</h3>
+<p>With the condition imposed, the mass term becomes a self-pairing: the field is paired with its own conjugate, and no second field is needed. So a Majorana mass is possible for a single Weyl spinor, and that is the option the Dirac mass does not have.</p>
+<p>The corpus's precise statement is that the <strong>Dirac mass is linear</strong> and pairs no field with its own conjugate, while the <strong>Majorana mass is antilinear</strong> and pairs a field with its own conjugate, and that the Majorana condition's reality space is four real dimensional and preserves the mass shell. So the Majorana option is physical and not a formal curiosity.</p>
+<h3 id="why-both-options-exist">Why Both Options Exist</h3>
+<p>Both exist because the algebra carries more than one conjugation. The linear one gives the Dirac pairing of two halves; the antilinear ones give the self-pairing. Which one a given fermion uses is empirical — the neutrino is the case where the question is open — and the framework supplies the algebraic distinction without deciding the assignment.</p>
+<p>That is the honest boundary, and the corpus draws it explicitly: the framework does not derive the masses and does not decide which kind a given fermion carries.</p>
+<h3 id="the-caution">The Caution</h3>
+<p>The corpus's article on the two kinds of mass records a retired equation that used the algebra's real structure as though it were a mass on the module, and it records that the equation failed on the dispersion relation. The lesson is that the two real structures live on different spaces: the algebra's and the module's. This article therefore states the Majorana condition as a condition on the module and does not import the algebra's involution into it.</p>
+<h2 id="where-the-equation-goes">Where the Equation Goes</h2>
+<p>This article stops at the carrier and the coupling. The equation itself — the plane-wave solutions, the spin sums, the non-relativistic reduction and the interpretation of the four components — is <em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em>, which takes the pair and the mass term proved here as its starting point. The division is deliberate: what is representation theory belongs here, and what is a computation with solutions belongs there.</p>
+<h2 id="summary">Summary</h2>
+<p>A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma^{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $k_m=mc/\hbar$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\xi\in(\tfrac12,0)$, $\eta\in(0,\tfrac12)$</td>
+<td>the two Weyl spinors</td>
+</tr>
+<tr>
+<td>$\Psi=(\xi,\eta)$</td>
+<td>the Dirac pair</td>
+</tr>
+<tr>
+<td>$\gamma^{5}$</td>
+<td>the chirality grading, $\mathrm{diag}(-1,-1,+1,+1)$</td>
+</tr>
+<tr>
+<td>$P_{\pm}=\tfrac12(1\pm\gamma^{5})$</td>
+<td>the chirality projectors</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>the mass wave number</td>
+</tr>
+<tr>
+<td>$\Psi^{c}$</td>
+<td>the charge conjugate</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §5.4–5.5 — the Dirac and Majorana masses and their reality conditions.</li>
+<li>P. B. Pal, "Dirac, Majorana and Weyl fermions", <em>American Journal of Physics</em> 79 (2011) 485 — the three options and the relations between them.</li>
+<li><em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em> — the corpus's separation of the Dirac and Majorana pairings.</li>
+<li><em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em> — the conjugation that the Majorana condition uses.</li>
+<li><em>Chiral Fermions in the Biquaternion Framework</em> — chirality in the algebra's own terms.</li>
+<li><em>P, T and the Representation Labels</em> — the exchange of the two spinor representations under parity.</li>
+<li><em>The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit</em> — the equation, its solutions and the non-relativistic reduction, which take this article's pair and mass term as their starting point.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

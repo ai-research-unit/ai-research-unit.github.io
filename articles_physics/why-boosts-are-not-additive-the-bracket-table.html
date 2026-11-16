@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Boosts Are Not Additive: The Bracket Table — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-boosts-are-not-additive-the-bracket-table"><strong>Why Boosts Are Not Additive: The Bracket Table</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Two boosts do not compose to a boost. Their product is a boost times a rotation, and the rotation is not small: it grows like the product of the two rapidities and vanishes only when the two directions are collinear. That rotation is the Thomas–Wigner rotation, and in this algebra it is a single term of a product.</p>
+<p>This article prints the bracket table of the six generators, proves the identity $[\tilde X_\alpha,\tilde X_\beta]=2\vec e_\alpha\times\vec e_\beta$ that the table encodes, computes the product of two boosts exactly, identifies the rotation factor's axis and angle, and evaluates the angle in the two regimes a reader needs.</p>
+<p>The article assumes <em>The Six Generators and Their Commutators</em> for the table's derivation and sign conventions, <em>When the Axes Commute: The Normal Transformations</em> for the case in which the rotation vanishes, and <em>A Frame Is a Boost Times a Rotation: The Cartan Word</em> for the decomposition. It feeds <em>The Four Kinds of Frame Transformation</em> and the relativistic-velocity articles of the corpus.</p>
+<h2 id="the-bracket-table">The Bracket Table</h2>
+<h3 id="the-six-generators">The Six Generators</h3>
+<p>$$
+J_\eta=\tfrac12\vec e_\eta,\qquad K_\eta=\tfrac12 i\vec e_\eta,\qquad \eta\in\{x,y,z\},
+$$</p>
+<p>the rotation and boost generators, anti-Hermitian in the corpus's convention: $J_\eta^{*}=-J_\eta$ and $K_\eta^{*}=-K_\eta$. Their brackets are stated in <em>The Six Generators and Their Commutators</em> and are reproduced here because the rest of the article reads the table.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$[\cdot,\cdot]$</th>
+<th>$J_b$</th>
+<th>$K_b$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_a$</td>
+<td>$\epsilon_{abc}J_c$</td>
+<td>$\epsilon_{abc}K_c$</td>
+</tr>
+<tr>
+<td>$K_a$</td>
+<td>$\epsilon_{abc}K_c$</td>
+<td>$-\epsilon_{abc}J_c$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three blocks say three different things:</p>
+<ul>
+<li>$[J,J]=\epsilon J$: rotations close into a Lie algebra, the compact $\mathfrak{so}(3)$.</li>
+<li>$[J,K]=\epsilon K$: the boosts form a vector under rotations, so a rotation carries a boost direction into another boost direction.</li>
+<li>$[K,K]=-\epsilon J$: <strong>the commutator of two boosts is a rotation</strong>, with a minus sign relative to the rotation algebra.</li>
+</ul>
+<h3 id="reading-the-table">Reading the Table</h3>
+<p>The third block is the whole content of "boosts are not additive". Its antisymmetry in the middle index means the bracket of two boosts is a rotation about the axis perpendicular to both — which is the direction of the vector product. The minus sign is what makes the real span of the $K$'s a hyperbolic rather than a circular geometry: the subalgebra spanned by the boosts alone is not closed, and if it were closed with a plus sign the boosts would form a compact group and rapidity would be periodic.</p>
+<h3 id="why-the-table-is-all-there-is">Why the Table Is All There Is</h3>
+<p>The six generators span $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{C}$ and $\mathfrak{so}(1,3)$ over $\mathbb{R}$, and the table is the complete set of structure constants in that basis. Every statement in this article is read from it, and no other input is used.</p>
+<h2 id="the-algebraic-identity">The Algebraic Identity</h2>
+<h3 id="the-statement">The Statement</h3>
+<p>For the vector units of the algebra,</p>
+<p>$$
+[\vec e_\alpha,\vec e_\beta]=2\,\vec e_\alpha\times\vec e_\beta,
+\qquad
+\vec e_\alpha\times\vec e_\beta=\sum_\gamma\epsilon_{\alpha\beta\gamma}\vec e_\gamma .
+$$</p>
+<p>The identity is the quaternion relation $\vec i\vec j=\vec k$ written in the corpus's basis, and it holds for any two real vectors $\vec a,\vec b$:</p>
+<p>$$
+[\vec a,\vec b]=2\,\vec a\times\vec b .
+$$</p>
+<h3 id="the-proof">The Proof</h3>
+<p>Write $\vec a\vec b=-\vec a\cdot\vec b+\vec a\times\vec b$, which is the decomposition of a quaternion product into its scalar and vector parts. Then</p>
+<p>$$
+[\vec a,\vec b]=\vec a\vec b-\vec b\vec a=2\,\vec a\times\vec b,
+$$</p>
+<p>because the scalar parts cancel and the vector products are antisymmetric.</p>
+<h3 id="the-table-from-the-identity">The Table From the Identity</h3>
+<p>With $J_a=\tfrac12\vec e_a$:</p>
+<p>$$
+[J_a,J_b]=\tfrac14[\vec e_a,\vec e_b]=\tfrac12\epsilon_{abc}\vec e_c=\epsilon_{abc}J_c .
+$$</p>
+<p>With $K_a=\tfrac12 i\vec e_a$:</p>
+<p>$$
+[K_a,K_b]=\tfrac14 i^{2}[\vec e_a,\vec e_b]=-\tfrac14\cdot2\epsilon_{abc}\vec e_c=-\epsilon_{abc}J_c ,
+$$</p>
+<p>and the mixed bracket</p>
+<p>$$
+[J_a,K_b]=\tfrac14 i[\vec e_a,\vec e_b]=\tfrac i2\epsilon_{abc}\vec e_c=\epsilon_{abc}K_c .
+$$</p>
+<p>So the whole table is the one identity plus the factor $i$.</p>
+<h3 id="the-sign">The Sign</h3>
+<p>Three signs chain together and a reader must keep them apart:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sign</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$+2$ in $[\vec e_\alpha,\vec e_\beta]=2\vec e_\alpha\times\vec e_\beta$</td>
+<td>the algebra's orientation</td>
+</tr>
+<tr>
+<td>$-$ in $[K_a,K_b]=-\epsilon_{abc}J_c$</td>
+<td>the $i^{2}=-1$ of the boost generators</td>
+</tr>
+<tr>
+<td>$-$ in the product's rotation axis being along $-\vec u_1\times\vec u_2$</td>
+<td>the order of the factors, as computed below</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third is a convention about which boost comes first, and it flips when the order of the two boosts is exchanged. The first two are fixed by the corpus's basis and are not conventions of this article.</p>
+<h2 id="why-two-boosts-compose-to-a-rotation">Why Two Boosts Compose to a Rotation</h2>
+<h3 id="the-product">The Product</h3>
+<p>Let $\tilde B_i=\cosh a_i+i\sinh a_i\vec u_i$ with $a_i=\tfrac12\theta_{\mathrm{rpd},i}$ the half-rapidities and $\vec u_i$ unit real vectors that make an angle $\theta$. Then</p>
+<p>$$
+\tilde B_1\tilde B_2=\cosh a_1\cosh a_2+i\sinh a_1\cosh a_2\vec u_1+i\cosh a_1\sinh a_2\vec u_2-\sinh a_1\sinh a_2\,\vec u_1\vec u_2,
+$$</p>
+<p>and $\vec u_1\vec u_2=-\cos\theta+\vec u_1\times\vec u_2$ with $\cos\theta=\vec u_1\cdot\vec u_2$. Collecting,</p>
+<p>$$
+\tilde B_1\tilde B_2=\underbrace{\bigl(\cosh a_1\cosh a_2+\cos\theta\sinh a_1\sinh a_2\bigr)}_{\text{scalar}}
++\underbrace{\bigl(-\sinh a_1\sinh a_2\,\vec u_1\times\vec u_2\bigr)}_{\text{real vector}}
++i\underbrace{\bigl(\sinh a_1\cosh a_2\vec u_1+\cosh a_1\sinh a_2\vec u_2\bigr)}_{\text{imaginary vector}} .
+$$</p>
+<h3 id="the-three-parts">The Three Parts</h3>
+<p>The three parts are exactly the three pieces the word needs:</p>
+<ul>
+<li>the <strong>scalar</strong> part is real and positive, and it is $\cosh\frac{\theta_{\mathrm{rpd},12}}{2}\cos\frac{\theta_{\mathrm{wgn}}}{2}$, the product of the resulting boost's half-rapidity factor and the rotation's half-angle factor;</li>
+<li>the <strong>real vector</strong> part is a real vector proportional to $\vec u_1\times\vec u_2$, and it is the rotation;</li>
+<li>the <strong>imaginary vector</strong> part is the resulting boost's direction.</li>
+</ul>
+<p>A product of two boosts is therefore never a boost: the real vector part is nonzero exactly when $\vec u_1\times\vec u_2\neq0$ and both rapidities are nonzero, which is the statement of the bracket table read off a product.</p>
+<h3 id="the-rotation">The Rotation</h3>
+<p>The rotation's axis is along $\vec u_1\times\vec u_2$ — or, with the sign above, along $-\vec u_1\times\vec u_2$ — and its size is measured by the real vector part. The exact statement is</p>
+<p>$$
+\cos\tfrac{\theta_{\mathrm{wgn}}}{2}=\frac{S}{\sqrt{S^{2}+\lvert\vec v\rvert^{2}}},
+\qquad
+\tan\tfrac{\theta_{\mathrm{wgn}}}{2}=\frac{\lvert\vec v\rvert}{S},
+\qquad
+\cosh\theta_{\mathrm{rpd},12}=\cosh\theta_{\mathrm{rpd},1}\cosh\theta_{\mathrm{rpd},2}+\cos\theta\,\sinh\theta_{\mathrm{rpd},1}\sinh\theta_{\mathrm{rpd},2},
+$$</p>
+<p>with $S$ the scalar part of the product, $\vec v$ its real vector part, and $\theta_{\mathrm{rpd},12}$ the rapidity of the resulting boost. The form is not an ansatz: writing the product as $\tilde R\tilde B_{12}$, the rotation's half-angle carries all of $\vec v$ and the boost's half-rapidity all of the imaginary part, so $\tan\frac{\theta_{\mathrm{wgn}}}{2}=\lvert\vec v\rvert/S$ and $\cosh^{2}\frac{\theta_{\mathrm{rpd},12}}{2}=S^{2}+\lvert\vec v\rvert^{2}$. The formula is verified numerically against a polar decomposition of the matrix product to $10^{-10}$ on random pairs, and the axis comes out anti-parallel to $\vec u_1\times\vec u_2$ to machine precision.</p>
+<h3 id="the-simpler-statement">The Simpler Statement</h3>
+<p>The formula above is exact but opaque. The statement a reader should carry is:</p>
+<blockquote>
+<p>two boosts along different directions compose to a boost plus a rotation about the axis perpendicular to both directions, and the rotation angle is of order $\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}$.</p>
+</blockquote>
+<p>That is the bracket table with the parameters put back, and it is all the physics the exact formula is used for in this block.</p>
+<h2 id="the-power-series">The Power Series</h2>
+<h3 id="the-word-near-the-identity">The Word Near the Identity</h3>
+<p>The word of the block is $\tilde U_{\mathrm{lor}}=\tilde U_\Psi\tilde u_{\mathrm r}$ of <em>A Frame Is a Boost Times a Rotation: The Cartan Word</em>, with $\tilde U_\Psi=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)$ and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$. Both factors are exponentials of algebra elements, so a product of two frames is a product of two exponentials, and the bracket table is the statement about that product. Write $\tilde U_1=e^{\tilde X}$ and $\tilde U_2=e^{\tilde Y}$ with $\tilde X,\tilde Y$ in the algebra.</p>
+<h3 id="the-middle-product-re-split">The Middle Product Re-Split</h3>
+<p>The product $e^{\tilde X}e^{\tilde Y}$ is not $e^{\tilde X+\tilde Y}$. The correct statement is the Baker–Campbell–Hausdorff series,</p>
+<p>$$
+\ln\bigl(e^{\tilde X}e^{\tilde Y}\bigr)
+=\tilde X+\tilde Y+\tfrac12[\tilde X,\tilde Y]
++\tfrac1{12}\bigl[\tilde X,[\tilde X,\tilde Y]\bigr]
+-\tfrac1{12}\bigl[\tilde Y,[\tilde X,\tilde Y]\bigr]+\ldots
+$$</p>
+<p>The series answers the question "does the product close on the same set". Its first two terms are the naive addition of the parameters; its third term is the first correction, and the correction is a commutator. So the failure of additivity is not an accident of the parametrisation: it is the first term of the series after the linear one.</p>
+<h3 id="the-first-correction-for-two-boosts">The First Correction for Two Boosts</h3>
+<p>Take two boosts, $\tilde X=i a\vec u_1$ and $\tilde Y=i b\vec u_2$ with $a=\tfrac12\theta_{\mathrm{rpd},1}$ and $b=\tfrac12\theta_{\mathrm{rpd},2}$; this is $\tilde U_\Psi$ at two different axes. Then</p>
+<p>$$
+[\tilde X,\tilde Y]=(ia)(ib)\,[\vec u_1,\vec u_2]=-2ab\,\vec u_1\times\vec u_2 ,
+$$</p>
+<p>a real vector and therefore a rotation generator. Its coefficient is $ab\sin\theta$, and exponentiating a rotation generator of coefficient $m$ rotates through $2m$; so the first correction is a rotation through</p>
+<p>$$
+2ab\sin\theta=\tfrac12\,\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}\sin\theta .
+$$</p>
+<p>That is exactly the leading term of the Thomas–Wigner angle obtained below from the exact product, and the agreement checks both computations: the series and the closed form are the same statement at different orders.</p>
+<p>The series is verified numerically in the block's matrix model. With $a=b=10^{-3}$ and perpendicular axes, the residual $\lVert e^{\tilde X}e^{\tilde Y}-\exp(\tilde X+\tilde Y+\tfrac12[\tilde X,\tilde Y])\rVert$ is $3.3\times10^{-10}$; with $a=b=10^{-2}$ it is $3.4\times10^{-7}$, larger by the expected factor $10^{3}$, so the residual is $O(a^{3})$ and not $O(a^{2})$. The rotation part of $e^{\tilde X}e^{\tilde Y}$, extracted by a polar decomposition, comes out $4.99167\times10^{-3}$ at $a=b=0.05$ against $2a^{2}=5.0\times10^{-3}$.</p>
+<h3 id="the-three-rows-read-off-the-series">The Three Rows Read Off the Series</h3>
+<ul>
+<li>$[\mathfrak k,\mathfrak k]\subset\mathfrak k$: two real vectors give a real vector, $[\vec u_1,\vec u_2]=2\vec u_1\times\vec u_2$, so two rotations compose to a rotation, and the rotations are a subgroup.</li>
+<li>$[\mathfrak k,\mathfrak p]\subset\mathfrak p$: a real vector with an imaginary one gives an imaginary one, $[\vec u_1,i\vec u_2]=2i\,\vec u_1\times\vec u_2$, so a conjugate of a boost by a rotation is a boost, which is why a boost axis can be turned.</li>
+<li>$[\mathfrak p,\mathfrak p]\subset\mathfrak k$: two imaginary vectors give a real one, so two boosts compose to a boost and a rotation. This is the row that has no analogue in a product of groups, and it is the whole of the Thomas–Wigner effect.</li>
+</ul>
+<h3 id="why-the-third-row-forbids-a-subgroup">Why the Third Row Forbids a Subgroup</h3>
+<p>Because $[\mathfrak p,\mathfrak p]\subset\mathfrak k$ is not zero, $\exp(\mathfrak p)$ is not closed under multiplication: a product of two boosts is a boost times a rotation, and the rotation is trivial only when the axes are collinear or one rapidity vanishes. So the boost set is a submanifold and not a subgroup — by the Cartan decomposition $G=KP$ it is a section of $G\to G/K$, diffeomorphic to the hyperboloid $G/K$ of <em>Velocity Space as Hyperbolic Geometry in Biquaternionic Form</em>. A reader who expects the boosts to be a subgroup will also expect rapidities to add, and both expectations fail for the same bracket.</p>
+<h2 id="the-thomaswigner-rotation">The Thomas–Wigner Rotation</h2>
+<h3 id="the-physical-setting">The Physical Setting</h3>
+<p>A particle is boosted along one direction and then along another. The composition of the two boosts is a boost and a rotation, so the particle's spin is rotated relative to the frame that the naive addition of the two rapidities would produce. That rotation is the Thomas–Wigner rotation, and it is the reason the spin precession of a particle in a circular accelerator is not the naive relativistic correction.</p>
+<h3 id="the-algebras-version">The Algebra's Version</h3>
+<p>In this algebra the rotation is not an effect of a spinor representation and not an effect of the order of operators. It is the real vector part of a product of two real-quaternion-and-imaginary-quaternion elements, it is visible in the scalar algebra, and it is computed by multiplying two elements of a group.</p>
+<p>That is worth stressing because the same rotation is usually derived from the composition law of Lorentz matrices, where it appears as a messy matrix product, or from the algebra of the $\vec K$'s, where it appears as a minus sign. Here the two derivations are one line each and they are the same line.</p>
+<h3 id="the-failure-of-the-addition-picture">The Failure of the "Addition" Picture</h3>
+<p>If boosts added, the rapidity vector of the product would be $\vec\theta_{\mathrm{rpd},1}+\vec\theta_{\mathrm{rpd},2}$ and there would be no rotation, where $\vec\theta_{\mathrm{rpd},i}=\theta_{\mathrm{rpd},i}\vec u_i$. The composition is instead</p>
+<p>$$
+\vec\theta_{\mathrm{rpd},12}\neq\vec\theta_{\mathrm{rpd},1}+\vec\theta_{\mathrm{rpd},2},
+$$</p>
+<p>with the difference of order $\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}$, and the missing piece is exactly the rotation. So the failure of additivity and the presence of the rotation are one fact, and the bracket $[K,K]\neq0$ is its statement.</p>
+<h2 id="the-magnitude">The Magnitude</h2>
+<h3 id="the-small-rapidity-limit">The Small-Rapidity Limit</h3>
+<p>For small rapidities,</p>
+<p>$$
+\theta_{\mathrm{wgn}}=\tfrac12\,\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}\,\sin\theta+O(\theta^{3}),
+$$</p>
+<p>where $\theta$ is the angle between the two boost directions. The formula is verified numerically: at $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=10^{-3}$ the computed angle agrees with the formula to six significant figures, and at $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=0.05$ to four.</p>
+<p>The factor $\tfrac12$ is what the exact formula gives in the limit, and the limit is one line: $\lvert\vec v\rvert=\sinh\frac{\theta_{\mathrm{rpd},1}}{2}\sinh\frac{\theta_{\mathrm{rpd},2}}{2}\sin\theta\approx\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{4}\sin\theta$ while $S\to1$, so $\tan\frac{\theta_{\mathrm{wgn}}}{2}\approx\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{4}\sin\theta$ and the angle is twice that. The same factor appears from the commutator, because the bracket of two boost generators is the rotation generator and the BCH series puts one half in front of it.</p>
+<h3 id="the-two-ways-it-vanishes">The Two Ways It Vanishes</h3>
+<p>$\theta_{\mathrm{wgn}}$ vanishes when $\sin\theta=0$, that is when the directions are collinear; and it vanishes to first order when either rapidity is small. Both are the bracket table: the first is $\vec u_1\times\vec u_2=0$, the second is $\sinh a_i=0$.</p>
+<h3 id="the-large-rapidity-limit">The Large-Rapidity Limit</h3>
+<p>For equal large rapidities the angle tends to the angle between the directions:</p>
+<p>$$
+\theta_{\mathrm{wgn}}\longrightarrow\theta\qquad(\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}\to\infty).
+$$</p>
+<p>This is exact in the limit and approached quickly: at $\theta_{\mathrm{rpd},1}=\theta_{\mathrm{rpd},2}=10$ the computed angle is $1.570615$ against $\pi/2=1.570796$, and at rapidity $50$ the ratio $\theta_{\mathrm{wgn}}/\theta$ is one to sixty digits. So the rotation saturates at the geometric angle and cannot exceed $\pi$, which it cannot anyway because it is an angle.</p>
+<p>The two limits do not commute. If one rapidity is held small while the other grows, the angle tends to the small rapidity itself times a geometric factor, not to $\theta$: with $\theta_{\mathrm{rpd},1}=50$, $\theta_{\mathrm{rpd},2}=0.1$, $\theta=\pi/2$, the computed angle is $0.09983$. So "the large-rapidity limit" is a statement about both rapidities growing together, and a reader who takes one limit at a time gets a different answer.</p>
+<h3 id="why-the-order-matters">Why the Order Matters</h3>
+<p>Exchanging the two boosts does not give the inverse rotation; it gives a rotation about the same axis with a different angle, because the composition law is not symmetric. So "the Thomas–Wigner rotation of $B_1$ followed by $B_2$" and "of $B_2$ followed by $B_1$" are different rotations, and a formula that treats the pair as unordered is wrong. The asymmetry is visible in the product formula: the imaginary vector part weights the two directions by $\sinh a_1\cosh a_2$ and $\cosh a_1\sinh a_2$, and swapping the labels swaps the weights.</p>
+<h2 id="summary">Summary</h2>
+<p>The bracket table has three blocks; the third, $[K_a,K_b]=-\epsilon_{abc}J_c$, is the statement that two boosts compose to a boost times a rotation. The table follows from the single identity $[\vec a,\vec b]=2\vec a\times\vec b$ plus the factor $i$ in the boost generators. The product of two boosts has a real scalar part, an imaginary vector part that is the new boost direction, and a real vector part proportional to $\vec u_1\times\vec u_2$ that is the rotation. That rotation is the Thomas–Wigner rotation; its axis is along $\vec u_1\times\vec u_2$, its exact angle is fixed by $\tan\frac{\theta_{\mathrm{wgn}}}{2}=\lvert\vec v\rvert/S$ with $\vec v$ the product's real vector part and $S$ its scalar part, and to leading order $\theta_{\mathrm{wgn}}=\tfrac12\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}\sin\theta$. Boosts fail to add because the bracket of two boost generators is a rotation, and the failure is not small.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_\eta=\tfrac12\vec e_\eta$</td>
+<td>rotation generator</td>
+</tr>
+<tr>
+<td>$K_\eta=\tfrac12 i\vec e_\eta$</td>
+<td>boost generator</td>
+</tr>
+<tr>
+<td>$\epsilon_{abc}$</td>
+<td>the alternating symbol</td>
+</tr>
+<tr>
+<td>$a_i=\tfrac12\theta_{\mathrm{rpd},i}$</td>
+<td>half-rapidity of the $i$-th boost</td>
+</tr>
+<tr>
+<td>$\vec u_i$, $\theta$</td>
+<td>boost direction and angle between the two directions</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{wgn}}$</td>
+<td>the Thomas–Wigner rotation angle</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd},12}$</td>
+<td>rapidity of the product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. D. Jackson, <em>Classical Electrodynamics</em>, 3rd ed., Wiley, 1999, §11.7 — the Thomas precession derived from the composition of Lorentz transformations, with the sign convention of the rotation made explicit.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §2.4 and §5.5 — the Wigner rotation in the representation theory of the Lorentz group.</li>
+<li>L. H. Thomas, "The motion of the spinning electron", <em>Nature</em> 117 (1926) 514 — the original observation that the composition of boosts is not a boost.</li>
+<li>E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", <em>Annals of Mathematics</em> 40 (1939) 149 — the rotation that appears when a boost is followed by another.</li>
+<li><em>The Six Generators and Their Commutators</em> — the table's derivation and signs.</li>
+<li><em>When the Axes Commute: The Normal Transformations</em> — the exact vanishing condition.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

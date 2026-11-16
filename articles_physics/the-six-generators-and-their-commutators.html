@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Six Generators and Their Commutators — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-six-generators-and-their-commutators"><strong>The Six Generators and Their Commutators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants, computes the invariant bilinear form and its signature, and defines the quadratic Casimir. It closes with the question a reader will ask on seeing the table for the third time: why does the same table appear in every display?</p>
+<p>The answer is that the table is a statement about the algebra and not about a representation. Every faithful representation reproduces it, and the differences between the displays are differences of basis, of dimension and of real form, never of bracket.</p>
+<p>The article assumes <em>The Isomorphisms and Their Dimensions</em> for the traceless part and its dimensions, <em>Algebra and Element Conventions</em> for the star, and <em>The Two Actions of One Group: Adjoint and Congruence</em> for the congruence that the four-vector display uses. It hands the two-triple rewriting to <em>The Two Commuting Complex Triples</em> and the Casimir eigenvalues to <em>The Two Casimirs of the Lorentz Algebra</em>.</p>
+<h2 id="the-generators-as-elements-of-the-algebra">The Generators as Elements of the Algebra</h2>
+<h3 id="the-three-rotations">The Three Rotations</h3>
+<p>$$
+J_\eta=\tfrac12\vec e_\eta,\qquad \eta=x,y,z .
+$$</p>
+<p>Each is a pure vector with real coefficients, so each is anti-Hermitian, $J_\eta^{*}=-J_\eta$. As a rotor generator, $J_\eta$ exponentiates to the rotation of <em>The Group of Unit-Norm Biquaternions</em>,</p>
+<p>$$
+\exp(\theta_{\mathrm{axr}}J_{\vec u})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u ,
+$$</p>
+<p>and the factor $\tfrac12$ in the generator is the half-angle of the rotor, seen infinitesimally.</p>
+<h3 id="the-three-boosts">The Three Boosts</h3>
+<p>$$
+K_\eta=\tfrac12 i\vec e_\eta,\qquad \eta=x,y,z .
+$$</p>
+<p>Each is a pure vector with imaginary coefficients, so each is Hermitian, $K_\eta^{*}=K_\eta$. It exponentiates to the boost,</p>
+<p>$$
+\exp(\theta_{\mathrm{rpd}}K_{\vec u})=\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u ,
+$$</p>
+<p>with the rapidity $\theta_{\mathrm{rpd}}$ and $\tanh\theta_{\mathrm{rpd}}=v/c$.</p>
+<h3 id="the-two-kinds-in-one-table">The Two Kinds, in One Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$J_\eta$</th>
+<th>$K_\eta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>element</td>
+<td>$\tfrac12\vec e_\eta$</td>
+<td>$\tfrac12 i\vec e_\eta$</td>
+</tr>
+<tr>
+<td>under the star</td>
+<td>anti-Hermitian</td>
+<td>Hermitian</td>
+</tr>
+<tr>
+<td>sector</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>exponential is</td>
+<td>a rotation, compact, periodic</td>
+<td>a boost, non-compact, monotone</td>
+</tr>
+<tr>
+<td>trace of the square</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac12$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the signature of the invariant form.</p>
+<h3 id="why-these-and-not-others">Why These and Not Others</h3>
+<p>The six are a basis of the traceless part: three complex directions $\vec e_\eta$ read as six real directions $\vec e_\eta$ and $i\vec e_\eta$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.</p>
+<h2 id="the-commutator-table">The Commutator Table</h2>
+<h3 id="the-nine-brackets">The Nine Brackets</h3>
+<p>Direct multiplication in the algebra gives, for cyclic $(i,j,k)=(x,y,z)$,</p>
+<p>$$
+[J_i,J_j]=J_k,\qquad [J_i,K_j]=K_k,\qquad [K_i,K_j]=-J_k .
+$$</p>
+<p>Written out in full, with the antisymmetry understood:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$J_x$</th>
+<th>$J_y$</th>
+<th>$J_z$</th>
+<th>$K_x$</th>
+<th>$K_y$</th>
+<th>$K_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_x$</td>
+<td>$0$</td>
+<td>$J_z$</td>
+<td>$-J_y$</td>
+<td>$0$</td>
+<td>$K_z$</td>
+<td>$-K_y$</td>
+</tr>
+<tr>
+<td>$J_y$</td>
+<td>$-J_z$</td>
+<td>$0$</td>
+<td>$J_x$</td>
+<td>$-K_z$</td>
+<td>$0$</td>
+<td>$K_x$</td>
+</tr>
+<tr>
+<td>$J_z$</td>
+<td>$J_y$</td>
+<td>$-J_x$</td>
+<td>$0$</td>
+<td>$K_y$</td>
+<td>$-K_x$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$K_x$</td>
+<td>$0$</td>
+<td>$-K_z$</td>
+<td>$K_y$</td>
+<td>$0$</td>
+<td>$-J_z$</td>
+<td>$J_y$</td>
+</tr>
+<tr>
+<td>$K_y$</td>
+<td>$K_z$</td>
+<td>$0$</td>
+<td>$-K_x$</td>
+<td>$J_z$</td>
+<td>$0$</td>
+<td>$-J_x$</td>
+</tr>
+<tr>
+<td>$K_z$</td>
+<td>$-K_y$</td>
+<td>$K_x$</td>
+<td>$0$</td>
+<td>$-J_y$</td>
+<td>$J_x$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-three-rows">The Three Rows</h3>
+<p>The table has three blocks, and each block is a statement of its own.</p>
+<ul>
+<li>$[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$: the rotations close. They form a subalgebra, and the corresponding subgroup is the compact $SU(2)$.</li>
+<li>$[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$: the boost directions transform as a vector under the rotations. This is the statement that a rotated boost is a boost in the rotated direction, and it is why the boost manifold is a symmetric space.</li>
+<li>$[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian signature; with a plus the algebra would be $\mathfrak{so}(4)$.</li>
+</ul>
+<p>Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K$; <em>Why Boosts Are Not Additive: The Bracket Table</em> is the article that reads the third row physically.</p>
+<h3 id="the-structure-constants">The Structure Constants</h3>
+<p>Write $[T_a,T_b]=f_{ab}{}^{c}T_c$ with $T_a$ running over $J_x,J_y,J_z,K_x,K_y,K_z$. The nonzero constants are</p>
+<p>$$
+f_{ij}{}^{k}=\epsilon_{ijk},\qquad f_{i,j+3}{}^{k+3}=\epsilon_{ijk},\qquad f_{i+3,j+3}{}^{k}=-\epsilon_{ijk},
+$$</p>
+<p>with $\epsilon_{ijk}$ the Levi-Civita symbol and all indices cyclic in $x,y,z$. Two properties follow at once and are used in the invariant-form computation:</p>
+<ul>
+<li><strong>Antisymmetry</strong>, $f_{ab}{}^{c}=-f_{ba}{}^{c}$, which is the antisymmetry of the commutator.</li>
+<li><strong>The Jacobi identity</strong>, which the table satisfies because it is a commutator table in an associative algebra. There is nothing to prove: any associator identity would be a theorem of the algebra, and the algebra is associative.</li>
+</ul>
+<h3 id="the-verification">The Verification</h3>
+<p>The table is checked by direct multiplication on all thirty-six ordered pairs, and the check is structural: the six generators are the traceless part of an associative algebra, so the table holds by construction. What a numerical check can catch is a <em>mis-transcription</em> — a wrong sign in one entry — and the check is done that way, on the $2\times2$ images, with exact arithmetic on the integer entries.</p>
+<h2 id="why-the-table-is-the-lorentz-table">Why the Table Is the Lorentz Table</h2>
+<h3 id="the-rotation-block">The Rotation Block</h3>
+<p>The first block is the rotation algebra: three generators with $[J_i,J_j]=\epsilon_{ijk}J_k$, which is $\mathfrak{su}(2)$ up to the factor of $i$ that the anti-Hermitian convention absorbs. No other three-dimensional algebra has that table.</p>
+<h3 id="the-boost-block">The Boost Block</h3>
+<p>The second and third blocks say that the boosts are a three-dimensional vector space on which the rotations act by the vector representation, and that the bracket of two boosts is a rotation. Those two statements, with the sign of the third block, are the definition of $\mathfrak{so}(1,3)$ as the algebra of the Lorentz group.</p>
+<h3 id="the-alternative-that-fails">The Alternative That Fails</h3>
+<p>Had the third block read $[K_i,K_j]=+J_k$, the table would be the table of $\mathfrak{so}(4)$, the Euclidean rotation algebra of four dimensions. Both tables are tables of <em>real forms of the same complex algebra</em>, and the sign is what decides which real form. A reader who "fixes" the sign to remove the minus gets a compact group and a positive-definite metric, and no light cone.</p>
+<h3 id="the-signature-check-done-independently">The Signature Check, Done Independently</h3>
+<p>The identification is confirmed by the invariant form rather than by the table's shape. The form's signature is $(3,3)$ for this table and $(6,0)$ for the version with the plus sign, and the two are distinguishable by a computation that does not use the identification at all.</p>
+<h2 id="the-invariant-bilinear-form">The Invariant Bilinear Form</h2>
+<h3 id="the-trace-form">The Trace Form</h3>
+<p>The simplest invariant form is read from the $2\times2$ image:</p>
+<p>$$
+\langle T_a,T_b\rangle_{\mathrm{tr}}:=\operatorname{Tr}\bigl(\mathsf{M}_2(T_a)\mathsf{M}_2(T_b)\bigr).
+$$</p>
+<p>Direct computation gives</p>
+<p>$$
+\langle J_i,J_j\rangle_{\mathrm{tr}}=-\tfrac12\delta_{ij},\qquad
+\langle J_i,K_j\rangle_{\mathrm{tr}}=0,\qquad
+\langle K_i,K_j\rangle_{\mathrm{tr}}=+\tfrac12\delta_{ij}.
+$$</p>
+<p>So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because the trace of a product is invariant under the adjoint action, $\operatorname{Tr}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=\operatorname{Tr}(\tilde X\tilde Y)$, which is the invariance computed in <em>The Two Actions of One Group: Adjoint and Congruence</em>.</p>
+<h3 id="the-killing-form">The Killing Form</h3>
+<p>The Killing form is</p>
+<p>$$
+B(T_a,T_b)=\operatorname{tr}\bigl(\mathrm{ad}_{T_a}\mathrm{ad}_{T_b}\bigr),
+$$</p>
+<p>with the trace taken in the eight-dimensional adjoint representation. Computing it from the structure constants of the previous section gives</p>
+<p>$$
+B(J_i,J_j)=-4\delta_{ij},\qquad B(J_i,K_j)=0,\qquad B(K_i,K_j)=+4\delta_{ij},
+$$</p>
+<p>a form proportional to the trace form, with the ratio $8$. Two forms on a simple algebra are proportional, and the factor $8$ is the ratio of the two normalisations. The determinant of the matrix of the form in this basis is</p>
+<p>$$
+(-4)^{3}(+4)^{3}=-4096,
+$$</p>
+<p>and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and its signature is $(3,3)$.</p>
+<h3 id="what-the-signature-means">What the Signature Means</h3>
+<p>A non-degenerate form of signature $(3,3)$ on a six-dimensional real Lie algebra is the signature of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.</p>
+<p>The physical statement is that the group's invariant form has a Lorentzian signature because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.</p>
+<h2 id="the-quadratic-casimir">The Quadratic Casimir</h2>
+<h3 id="the-definition">The Definition</h3>
+<p>The quadratic Casimir of the algebra, in the anti-Hermitian convention of this block, is</p>
+<p>$$
+C=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr),
+$$</p>
+<p>where $\vec J^{2}=\sum_\eta J_\eta J_\eta$ and $\vec K^{2}=\sum_\eta K_\eta K_\eta$ are sums of products inside the universal enveloping algebra. A second, independent invariant exists and is written in <em>The Two Casimirs of the Lorentz Algebra</em>; this article needs only the first.</p>
+<p><strong>Why the sign is what it is.</strong> In the physicist's Hermitian convention the generators are $\mathcal{J}_\eta=iJ_\eta$ and $\mathcal{K}_\eta=iK_\eta$, and $\mathcal{J}^{2}-\mathcal{K}^{2}=(i)^{2}(\vec J^{2}-\vec K^{2})=\vec K^{2}-\vec J^{2}$. So the same Casimir is written</p>
+<p>$$
+C=\tfrac12\bigl(\mathcal{J}^{2}-\mathcal{K}^{2}\bigr)\quad\text{(Hermitian generators)}
+=\tfrac12\bigl(\vec K^{2}-\vec J^{2}\bigr)\quad\text{(anti-Hermitian generators)} .
+$$</p>
+<p>A formula copied from a book that uses the other convention will be off by an overall sign, and the sign is a convention and not a result.</p>
+<h3 id="the-eigenvalue-on-the-defining-representation">The Eigenvalue on the Defining Representation</h3>
+<p>On the $2\times2$ image, $J_\eta=\tfrac12\mathsf{M}_2(\vec e_\eta)$ satisfies $J_\eta^{2}=-\tfrac14I_2$, so $\vec J^{2}=-\tfrac34I_2$; and $K_\eta^{2}=+\tfrac14I_2$, so $\vec K^{2}=+\tfrac34I_2$. Hence</p>
+<p>$$
+C=\tfrac12\bigl(\tfrac34+\tfrac34\bigr)I_2=\tfrac34 I_2 .
+$$</p>
+<p>The value $\tfrac34$ is $m(m+1)$ at $m=\tfrac12$, which is the statement that the defining representation is the $(\tfrac12,0)$ carrier of the block. <em>The Two Casimirs of the Lorentz Algebra</em> computes the same number and the second Casimir on the same carrier.</p>
+<h3 id="what-the-casimir-is-for">What the Casimir Is For</h3>
+<p>A Casimir is constant on each irreducible representation, so it is the label of the representation and not a property of the element. The block uses it three times: to name the finite carriers, to separate $(\tfrac12,0)$ from $(0,\tfrac12)$, and to compare the Lorentz labels with the Poincaré labels of mass and spin. None of those uses appears here; this article only fixes the normalisation.</p>
+<h2 id="why-the-same-table-appears-in-every-display">Why the Same Table Appears in Every Display</h2>
+<h3 id="the-two-dimensional-display">The Two-Dimensional Display</h3>
+<p>The $2\times2$ image of the generators is a pair of complex matrices per direction. The bracket of the images is the image of the bracket, because $\mathsf{M}_2$ is an algebra isomorphism, so the table holds there entry for entry.</p>
+<h3 id="the-four-dimensional-display">The Four-Dimensional Display</h3>
+<p>The congruence action of the group on the material sector $\mathbb{B}_{\Phi}$ is a real four-dimensional representation, and its derived representation carries the same table with real $4\times4$ matrices. The matrices are different, the constants are the same.</p>
+<h3 id="the-eight-dimensional-display">The Eight-Dimensional Display</h3>
+<p>The adjoint action on the whole algebra is an eight-dimensional representation, and it carries the same table again, in an eight-dimensional matrix form. It is not irreducible — it is the six-dimensional adjoint plus two trivial central directions — but the table on the six directions is unchanged.</p>
+<h3 id="the-invariance-argument">The Invariance Argument</h3>
+<p>The reason is one sentence long and worth stating precisely.</p>
+<p><strong>Every faithful representation of a Lie algebra is a homomorphism of Lie algebras.</strong> A homomorphism preserves brackets. So the table is carried to the table by every faithful representation, and the only things that can differ between displays are the size of the matrices, the field, the basis and the real form.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>display</th>
+<th>carrier</th>
+<th>dimension over $\mathbb{R}$</th>
+<th>what it is for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\times2$ image</td>
+<td>$\mathbb{C}^{2}$</td>
+<td>$4$ real, $2$ complex</td>
+<td>the defining module, spinors</td>
+</tr>
+<tr>
+<td>congruence</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$4$</td>
+<td>four-vectors, the interval</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>$\mathbb{B}$</td>
+<td>$8$</td>
+<td>the algebra's own symmetry</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-corollary-for-this-block">The Corollary for This Block</h3>
+<p>A reader who meets the table in the four-vector display and again in the two-triple display and again in the Casimir computation is meeting one object three times. The differences between the articles are the differences between what each display is <em>for</em>, and the table is the one invariant that all of them share. That is why it is printed in full once, here, and cited afterwards.</p>
+<h2 id="summary">Summary</h2>
+<p>The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have signature $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$J_\eta=\tfrac12\vec e_\eta$</td>
+<td>the rotation generators, anti-Hermitian</td>
+</tr>
+<tr>
+<td>$K_\eta=\tfrac12 i\vec e_\eta$</td>
+<td>the boost generators, Hermitian</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$, $\mathfrak{p}$</td>
+<td>the spans of the $J$ and of the $K$</td>
+</tr>
+<tr>
+<td>$f_{ab}{}^{c}$</td>
+<td>the structure constants, $[T_a,T_b]=f_{ab}{}^{c}T_c$</td>
+</tr>
+<tr>
+<td>$\langle\cdot,\cdot\rangle_{\mathrm{tr}}$</td>
+<td>the trace form $\operatorname{Tr}(\mathsf{M}_2(T_a)\mathsf{M}_2(T_b))$</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Killing form</td>
+</tr>
+<tr>
+<td>$C=\tfrac12(\vec K^{2}-\vec J^{2})$</td>
+<td>the quadratic Casimir in the anti-Hermitian convention</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$</td>
+<td>rapidity and rotation angle</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — the Killing form, its signature, and the Cartan decomposition read from it.</li>
+<li>B. C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>, 2nd ed., Springer, 2015 — structure constants, the Jacobi identity and the Casimir element of the universal enveloping algebra.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §2.4 — the Lorentz generators, the commutators in the physicist's Hermitian convention, and the dictionary of signs.</li>
+<li>W. Greiner and B. Müller, <em>Quantum Mechanics: Symmetries</em>, 2nd ed., Springer, 1994 — the same table derived in the rotation-plus-boost form with every sign displayed.</li>
+<li><em>Why Boosts Are Not Additive: The Bracket Table</em> — the physical reading of the third block.</li>
+<li><em>The Two Commuting Complex Triples</em> and <em>The Two Casimirs of the Lorentz Algebra</em> — the rewriting of this table in the complex basis and the invariants built from it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

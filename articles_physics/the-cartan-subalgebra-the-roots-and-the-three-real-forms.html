@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cartan Subalgebra, the Roots and the Three Real Forms — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-cartan-subalgebra-the-roots-and-the-three-real-forms"><strong>The Cartan Subalgebra, the Roots and the Three Real Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complexified Lorentz algebra has a two-dimensional Cartan subalgebra, four roots arranged as two orthogonal pairs, and a Weyl group of order four. That much is the root system $A_1\times A_1$, and it is a small, completely explicit object. What it does <em>not</em> decide is which real algebra one is talking about, because three different real algebras share the complexification: $\mathfrak{so}(4)$, $\mathfrak{so}(1,3)$ and $\mathfrak{so}(2,2)$.</p>
+<p>This article separates the two questions. The root system is a property of the complex algebra: it is the same for all three forms. The real form is a property of a real slice, and it decides which of the six directions are compact, which is to say which of the two triples are compact and whether the physical group has a light cone at all.</p>
+<p>The article assumes <em>The Six Generators and Their Commutators</em> for the table and the Killing form, and <em>The Two Commuting Complex Triples</em> for the split into two summands. It hands the exponential and the global decomposition to <em>The Exponential Map from Algebra to Group</em> and the finite carriers to <em>The Finite-Dimensional Representations and Their Unitarity Defect</em>.</p>
+<h2 id="the-cartan-subalgebra">The Cartan Subalgebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p>A Cartan subalgebra $\mathfrak{h}$ of a semisimple complex Lie algebra is a maximal abelian subalgebra consisting of semisimple elements. For $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ it is two-dimensional, and one convenient choice is</p>
+<p>$$
+\mathfrak{h}=\operatorname{span}_{\mathbb{C}}\{J_z,K_z\}.
+$$</p>
+<p>That the span is abelian is read from the table: $[J_z,K_z]=0$. That it is maximal is the dimension count of the next subsection.</p>
+<h3 id="why-dimension-two">Why Dimension Two</h3>
+<p>The rank of $\mathfrak{sl}(2,\mathbb{C})$ is one, and the rank of a direct sum is the sum of the ranks, so the rank of the complexified Lorentz algebra is two. The two directions are one from each summand:</p>
+<p>$$
+\mathfrak{h}=\mathfrak{h}_+\oplus\mathfrak{h}_-,
+\qquad \mathfrak{h}_\pm=\operatorname{span}_{\mathbb{C}}\{J_z\pm iK_z\}.
+$$</p>
+<p>The two lines are the Cartan of the self-dual triple and the Cartan of the anti-self-dual one, and they are complex lines, so the real dimension of $\mathfrak{h}$ is four and its complex dimension two.</p>
+<h3 id="the-three-other-choices">The Three Other Choices</h3>
+<p>Any rotation of the $z$ axis gives another Cartan, and any boost direction gives another. All Cartans are conjugate under the group, so the choice is a choice of frame and not of algebra. The block fixes the $z$ direction because the eigenvalue computations of the next two articles are done in it.</p>
+<h2 id="the-roots">The Roots</h2>
+<h3 id="the-definition-of-a-root">The Definition of a Root</h3>
+<p>A root is a linear functional $\alpha:\mathfrak{h}\to\mathbb{C}$, not zero, for which there is a nonzero $E_\alpha$ with</p>
+<p>$$
+[H,E_\alpha]=\alpha(H)E_\alpha\quad\text{for all }H\in\mathfrak{h}.
+$$</p>
+<p>The set of roots is the root system, and the root spaces $E_\alpha$ are the eigenspaces.</p>
+<h3 id="the-four-roots">The Four Roots</h3>
+<p>With $J^\pm=J_x\pm iJ_y$ and $K^\pm=K_x\pm iK_y$, the brackets against the Cartan are</p>
+<p>$$
+[J_z,J^{\pm}]=\mp iJ^{\pm},\qquad
+[K_z,J^{\pm}]=\mp iJ^{\pm},\qquad
+[J_z,K^{\pm}]=\mp iK^{\pm},\qquad
+[K_z,K^{\pm}]=\mp iK^{\pm},
+$$</p>
+<p>so the four root vectors $J^+,J^-,K^+,K^-$ carry the four roots</p>
+<p>$$
+\alpha_1=(H_1\mapsto-i,\ H_2\mapsto 0),\quad
+\alpha_2=(H_1\mapsto+i,\ H_2\mapsto 0),
+$$
+$$
+\beta_1=(H_1\mapsto 0,\ H_2\mapsto-i),\quad
+\beta_2=(H_1\mapsto 0,\ H_2\mapsto+i),
+$$</p>
+<p>with $H_1=J_z$ and $H_2=K_z$. The signs $\mp i$ are the corpus's anti-Hermitian convention; in the physicist's Hermitian convention every generator is multiplied by $i$ and the roots become $\pm1$, which is the more familiar display. The two conventions differ by the factor $i$ throughout and nothing in this article depends on which is used.</p>
+<h3 id="the-root-spaces">The Root Spaces</h3>
+<p>Each root space is one-dimensional, spanned by the root vector named above. The four vectors together with the two Cartan elements span the six-dimensional algebra, so the root decomposition is</p>
+<p>$$
+\mathfrak{so}(1,3)_{\mathbb{C}}=\mathfrak{h}\oplus\mathbb{C}J^{+}\oplus\mathbb{C}J^{-}\oplus\mathbb{C}K^{+}\oplus\mathbb{C}K^{-}.
+$$</p>
+<p>That is a direct sum of vector spaces and not of algebras: the root vectors do not commute with each other, and their brackets return Cartan elements.</p>
+<h3 id="why-the-roots-are-not-real-here">Why the Roots Are Not Real Here</h3>
+<p>The values $\pm i$ are imaginary because the generator $J_z$ is anti-Hermitian. A compact generator has imaginary eigenvalues, and that is the finite-dimensional trace of compactness. In the split picture the Cartan element is not compact and the corresponding root values are real. The point is taken up in §<em>The Three Real Forms</em>, because it is exactly the point at which the root system fails to decide the real structure.</p>
+<h2 id="the-root-system">The Root System</h2>
+<h3 id="the-two-pairs">The Two Pairs</h3>
+<p>The four roots are $\pm\alpha$ and $\pm\beta$, with $\alpha=(H_1\mapsto-i,H_2\mapsto0)$ and $\beta=(H_1\mapsto0,H_2\mapsto-i)$. Each pair is a line through the origin in the two-dimensional complex span of the roots.</p>
+<h3 id="the-span-is-two-dimensional">The Span Is Two-Dimensional</h3>
+<p>The two lines are distinct and neither is zero, so they span the two-dimensional space of linear functionals on $\mathfrak{h}$. That is the statement that the rank is two, read dually.</p>
+<h3 id="the-pairing">The Pairing</h3>
+<p>$$
+(\alpha,\beta)=0,
+$$</p>
+<p>with the inner product induced by the Killing form. Indeed $\alpha$ is supported on $H_1$ and $\beta$ on $H_2$, and $B(H_1,H_2)=0$ because the two Cartan directions lie in the two different summands, which are orthogonal under the Killing form by the same computation that gave $B(J_i,K_j)=0$ in <em>The Six Generators and Their Commutators</em>.</p>
+<h3 id="the-inner-products-on-the-lines">The Inner Products on the Lines</h3>
+<p>$$
+(\alpha,\alpha)\neq0,\qquad(\beta,\beta)\neq0,
+$$</p>
+<p>and the two values are equal because the two summands are isomorphic. So the root system is two orthogonal lines of equal length:</p>
+<p>$$
+A_1\times A_1 .
+$$</p>
+<p>The two lines are not at $60^{\circ}$ or $45^{\circ}$ or any other angle: they are orthogonal, and that orthogonality is what makes the algebra a direct sum rather than a simple algebra such as $A_2$ or $B_2$.</p>
+<h3 id="what-the-shape-decides">What the Shape Decides</h3>
+<p>The shape of the root system decides the representation theory: two independent lines give two independent highest weights, hence the pair $(m,n)$. It does not decide the real form, because the real form is a real slice and the roots are complex linear functionals.</p>
+<h2 id="the-weyl-group">The Weyl Group</h2>
+<h3 id="the-reflections">The Reflections</h3>
+<p>For each root $\alpha$ the reflection</p>
+<p>$$
+s_\alpha(\lambda)=\lambda-2\frac{(\lambda,\alpha)}{(\alpha,\alpha)}\alpha
+$$</p>
+<p>is an automorphism of the root system. On a root system of two orthogonal equal lines the two reflections act as</p>
+<p>$$
+s_\alpha(\alpha)=-\alpha,\quad s_\alpha(\beta)=\beta,
+\qquad
+s_\beta(\beta)=-\beta,\quad s_\beta(\alpha)=\alpha .
+$$</p>
+<h3 id="the-group">The Group</h3>
+<p>The two reflections commute and each has order two, so</p>
+<p>$$
+W\cong\mathbb{Z}_2\times\mathbb{Z}_2,
+$$</p>
+<p>of order four. It acts on the two-dimensional span of the roots by independent sign changes, which is also the action of the group of diagonal matrices with entries $\pm1$ on the two labels.</p>
+<h3 id="the-action-on-the-labels">The Action on the Labels</h3>
+<p>The Weyl group acts on a weight $(m,n)$ by</p>
+<p>$$
+s_\alpha:(m,n)\longmapsto(-m-1,\,n),\qquad s_\beta:(m,n)\longmapsto(m,\,-n-1),
+$$</p>
+<p>the affine action with the shift by $\rho$. On the <em>Casimir</em> labels, which are $m(m+1)$ and $n(n+1)$, both reflections act trivially, and that is why the two Casimirs are Weyl invariant. On the chiral label, which is $m(m+1)-n(n+1)$, they also act trivially; the chirality is not a Weyl-group effect.</p>
+<h3 id="what-the-weyl-group-is-not">What the Weyl Group Is Not</h3>
+<p>The Weyl group is not the Lorentz group, and it is not the rotation group. It is the symmetry of the root system, of order four, and its elements are not exponentials of anything in the algebra. In particular the map $(m,n)\mapsto(n,m)$ is <em>not</em> a Weyl reflection: it is the outer automorphism that exchanges the two summands, and it is not inner. This is the algebraic reason the two chiral spinors are not related by a Lorentz transformation.</p>
+<h2 id="the-three-real-forms">The Three Real Forms</h2>
+<h3 id="what-a-real-form-is">What a Real Form Is</h3>
+<p>A real form of a complex Lie algebra $\mathfrak{g}$ is a real Lie algebra $\mathfrak{g}_0$ with</p>
+<p>$$
+\mathfrak{g}_0\otimes_{\mathbb{R}}\mathbb{C}\cong\mathfrak{g}.
+$$</p>
+<p>Equivalently it is the fixed-point set of a conjugate-linear involution $\sigma$ of $\mathfrak{g}$, the <strong>conjugation</strong>. Two real forms can be non-isomorphic and still have the same complexification, which is the situation here.</p>
+<h3 id="the-compact-form-math68">The Compact Form: $\mathfrak{so}(4)$</h3>
+<p>The real span of the six generators with the brackets of the table <strong>with the sign of the boost–boost block reversed</strong>,</p>
+<p>$$
+[K_i,K_j]=+J_k,
+$$</p>
+<p>is $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimension six and compact. Its Killing form is negative definite, its Cartan is compact, its roots are imaginary, and every finite-dimensional representation is equivalent to a unitary one.</p>
+<h3 id="the-lorentz-form-math71">The Lorentz Form: $\mathfrak{so}(1,3)$</h3>
+<p>The real span of the same six with</p>
+<p>$$
+[K_i,K_j]=-J_k
+$$</p>
+<p>is $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ read as a real algebra. Its Killing form has signature $(3,3)$, its Cartan has one compact and one non-compact direction, and <em>as a real algebra it is simple</em>: it is not a direct sum of two real three-dimensional algebras. This is the form of this block.</p>
+<h3 id="the-split-form-math75">The Split Form: $\mathfrak{so}(2,2)$</h3>
+<p>$$
+\mathfrak{so}(2,2)\cong\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R}),
+$$</p>
+<p>the real form in which both summands are split. Its Cartan is entirely non-compact, its roots are real, its Killing form has signature $(4,2)$ — computed in the defining four-vector representation, where the six generators give eigenvalues $-2,-2,+2,+2,+2,+2$ and the two negatives are the two compact rotations — and it is the isometry algebra of a metric with two time and two space directions.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>real algebra</th>
+<th>compact part</th>
+<th>Killing signature $(p,q)$</th>
+<th>Cartan</th>
+<th>finite reps unitary?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{so}(4)$</td>
+<td>$\mathfrak{su}(2)\oplus\mathfrak{su}(2)$</td>
+<td>all six</td>
+<td>$(0,6)$</td>
+<td>compact</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(1,3)$</td>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$</td>
+<td>three, the $J$</td>
+<td>$(3,3)$</td>
+<td>one compact, one not</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(2,2)$</td>
+<td>$\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R})$</td>
+<td>two, the two rotations</td>
+<td>$(4,2)$</td>
+<td>split</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>This table is the answer to a question that the root system cannot answer. The root system of all three is $A_1\times A_1$; the table's rows differ in the real slice, and the differences are visible in the signature of the Killing form and in which Cartan directions are compact.</p>
+<h3 id="the-fourth-real-form-for-completeness">The Fourth Real Form, for Completeness</h3>
+<p>The list of real forms of $A_1\times A_1$ contains one more algebra, $\mathfrak{su}(2)\oplus\mathfrak{sl}(2,\mathbb{R})$, whose Killing signature is $(2,4)$. It is not of the form $\mathfrak{so}(p,q)$ with $p+q=4$, so it is not the isometry algebra of any metric on a four-dimensional real vector space, and the block does not use it. The menu's "three real forms" are the three $\mathfrak{so}(p,q)$'s, and they are the three metrics on $\mathbb{R}^{4}$ up to overall sign.</p>
+<h2 id="the-compact-and-the-split-picture">The Compact and the Split Picture</h2>
+<h3 id="the-compact-picture">The Compact Picture</h3>
+<p>In $\mathfrak{so}(4)$ all six generators are rotations of a Euclidean four-space: the three $J$ rotate the $xy$, $yz$ and $zx$ planes and the three $K$ rotate the $xt$, $yt$ and $zt$ planes, and there is no distinguished time direction. The group is $SO(4)$, compact, and every direction in the algebra is conjugate to every other up to the two-block structure. Root values are imaginary, the Casimirs are positive, the exponential map's fibres are the usual ones of a compact group.</p>
+<h3 id="the-split-picture">The Split Picture</h3>
+<p>In $\mathfrak{so}(2,2)$ the two time-like directions of the metric (2,2) mean there are two families of "boosts", one in each time direction, and the compact part is two-dimensional. Root values are real, and the group contains hyperbolic directions in both summands.</p>
+<h3 id="the-mixed-picture-and-the-physical-one">The Mixed Picture and the Physical One</h3>
+<p>$\mathfrak{so}(1,3)$ is the mixed case: one compact triple and one non-compact. The physics lives here because there is exactly one time direction, and that single fact has three consequences that the block uses constantly.</p>
+<ul>
+<li>There is a light cone: a non-degenerate null cone in the four-vector module, of <em>The Null Cone: The Massless Boundary</em>.</li>
+<li>There is a compact maximal subgroup: the rotations, so that angular momentum has discrete spectrum.</li>
+<li>There is a non-compact direction: the boosts, so that a boost has no periodic return and rapidity is unbounded.</li>
+</ul>
+<p>None of the three holds in $\mathfrak{so}(4)$, and the third does not hold in the same way in $\mathfrak{so}(2,2)$.</p>
+<h3 id="how-the-star-sees-the-form">How the Star Sees the Form</h3>
+<p>A real form <em>is</em> a conjugation, so the star is not an extra structure on top of the real form: it is the real form, written as an involution. Its restriction distinguishes the three cases.</p>
+<ul>
+<li>On $\mathfrak{so}(1,3)$ the star's anti-fixed part in the algebra is the three-dimensional span of the $J$ and its fixed part is the span of the $K$. The star therefore names the Cartan decomposition, and the three non-compact directions are the ones it fixes.</li>
+<li>On $\mathfrak{so}(4)$ the form is the fixed set of its own conjugation and $\dim\mathfrak{k}=6$: the span of the $K$ is not a non-compact piece but three more rotation planes, conjugate to the span of the $J$.</li>
+<li>On $\mathfrak{so}(2,2)$ the conjugation is a third involution and $\dim\mathfrak{k}=2$: two compact directions and four non-compact ones, matching the two time-like directions of the (2,2) metric.</li>
+</ul>
+<p>The reader who wants the rule in one line: the star's fixed part in the algebra is the non-compact part, and the compact part is the anti-fixed part. That sentence is true for $\mathfrak{so}(1,3)$ and it is the sense in which this block's star encodes the Lorentzian signature.</p>
+<h2 id="which-form-this-block-uses">Which Form This Block Uses</h2>
+<h3 id="the-answer">The Answer</h3>
+<p>$\mathfrak{so}(1,3)$, real dimension six, with the bracket table of <em>The Six Generators and Their Commutators</em> and the minus sign in the boost–boost block.</p>
+<p>Three statements about it are used so often that they belong here in one place.</p>
+<ul>
+<li><strong>It is simple as a real algebra.</strong> $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ has no proper ideals, so the Lorentz algebra is not a direct sum of two real pieces. Only after complexification does it split.</li>
+<li><strong>Its complexification splits.</strong> $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$, which is what makes $(m,n)$ a pair of labels.</li>
+<li><strong>Its compact real form is $\mathfrak{so}(4)$.</strong> So the compact picture is available as a computational device, and it is used exactly where a compact group is easier: the Peter–Weyl theorem, the Weyl unitarian trick, and the convergence of the exponential's fibres.</li>
+</ul>
+<h3 id="what-follows-for-the-reader">What Follows for the Reader</h3>
+<p>Every formula in the block that mentions $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a formula about the complexification or about the compact form, and never a formula about the Lorentz group. The block writes $\mathrm{SL}(2,\mathbb{C})$ for the group, $\mathfrak{so}(1,3)$ for the real algebra, $\mathfrak{so}(1,3)_{\mathbb{C}}$ for the complexification, $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ for the compact form, and it keeps them apart.</p>
+<h2 id="summary">Summary</h2>
+<p>The complexified Lorentz algebra has a two-dimensional Cartan subalgebra, four roots $\pm\alpha$ and $\pm\beta$ spanning a two-dimensional space, and the root system $A_1\times A_1$: two orthogonal lines of equal length. The reflections in the two lines generate a Weyl group $\mathbb{Z}_2\times\mathbb{Z}_2$, which acts trivially on the Casimir labels. The root system is common to three real forms: the compact $\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, the Lorentz form $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$, and the split $\mathfrak{so}(2,2)\cong\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R})$. A real form is a real slice with the same complexification, equivalently the fixed set of a conjugation, and the star is that conjugation. The block uses $\mathfrak{so}(1,3)$, which is simple as a real algebra, splits only after complexification, and has $\mathfrak{so}(4)$ as its compact real form.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{h}$</td>
+<td>the Cartan subalgebra, spanned by $J_z$ and $K_z$</td>
+</tr>
+<tr>
+<td>$\alpha,\beta$</td>
+<td>the two positive roots</td>
+</tr>
+<tr>
+<td>$J^\pm=J_x\pm iJ_y$, $K^\pm=K_x\pm iK_y$</td>
+<td>the root vectors</td>
+</tr>
+<tr>
+<td>$A_1\times A_1$</td>
+<td>the root system, two orthogonal equal lines</td>
+</tr>
+<tr>
+<td>$W\cong\mathbb{Z}_2\times\mathbb{Z}_2$</td>
+<td>the Weyl group</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$, $\mathfrak{so}(1,3)$, $\mathfrak{so}(2,2)$</td>
+<td>the three real forms</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>the conjugation defining a real form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>J. E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em>, Springer, 1972 — Cartan subalgebras, root systems, Weyl groups and real forms, with $A_1\times A_1$ worked out.</li>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — real forms of a complex semisimple algebra, the classification of $\mathfrak{so}(p,q)$, and the Killing form's signature.</li>
+<li>A. Knapp, <em>Lie Groups Beyond an Introduction</em>, 2nd ed., Birkhäuser, 2002 — real forms, conjugations, and the relation between compact and non-compact pictures.</li>
+<li>R. Gilmore, <em>Lie Groups, Lie Algebras, and Some of Their Applications</em>, Wiley, 1974 — the $\mathfrak{so}(4)$, $\mathfrak{so}(1,3)$, $\mathfrak{so}(2,2)$ triad in the physicist's notation.</li>
+<li><em>The Six Generators and Their Commutators</em> — the table and the Killing form whose signature separates the forms.</li>
+<li><em>The Exponential Map from Algebra to Group</em> — the group-level consequences of compactness and its absence.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

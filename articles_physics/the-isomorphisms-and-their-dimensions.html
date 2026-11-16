@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Isomorphisms and Their Dimensions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-isomorphisms-and-their-dimensions"><strong>The Isomorphisms and Their Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Four statements are needed before any physics of this block can be written, and they are four because they count dimensions differently. The biquaternion algebra is a complex algebra isomorphic to the $2\times2$ complex matrices. Its traceless part, read under the commutator, is a real Lie algebra of dimension six, and that algebra is the Lorentz algebra. The whole algebra under the commutator is a larger real Lie algebra, and it is not a Lorentz algebra. The complexification of the Lorentz algebra is a six-dimensional complex algebra that splits into two copies of the three-dimensional complex algebra of traceless matrices.</p>
+<p>These are not four ways of saying one thing. They are four different objects with four different dimensions, and every error in this neighbourhood comes from running them into a single chain. This article keeps them apart, gives the dimension of each, and states which convention the block uses where a convention has to be chosen.</p>
+<p>The article assumes the base of <em>Algebra and Element Conventions</em> and the $2\times2$ isomorphism of <em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>. It proves the four statements, it verifies the one that needs a computation, and it says what no statement depends on.</p>
+<h2 id="three-kinds-of-structure-on-one-vector-space">Three Kinds of Structure on One Vector Space</h2>
+<h3 id="the-vector-space">The Vector Space</h3>
+<p>The biquaternion algebra is the real vector space $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, given the multiplication of the quaternions and the central scalar $i$. As a complex vector space it has the four basis elements $e_t,\vec e_x,\vec e_y,\vec e_z$, and the scalar $i$ is a complex number, not a fifth basis element. So</p>
+<p>$$
+\dim_{\mathbb{C}}\mathbb{B}=4,\qquad \dim_{\mathbb{R}}\mathbb{B}=8 .
+$$</p>
+<p>The two numbers are both correct and they describe the same set. A basis over $\mathbb{R}$ is $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$, eight elements.</p>
+<h3 id="the-three-structures">The Three Structures</h3>
+<p>On that one vector space three structures are defined, and only the first is an algebra in the sense of a bilinear product.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>the operation</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>associative algebra</td>
+<td>the biquaternion product $\tilde Q\tilde P$</td>
+<td>$\mathbb{B}$ itself</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>the commutator $[\tilde Q,\tilde P]=\tilde Q\tilde P-\tilde P\tilde Q$ on all of $\mathbb{B}$</td>
+<td>$\mathfrak{gl}(2,\mathbb{C})$ read as a real Lie algebra</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>the same commutator restricted to the traceless part</td>
+<td>$\mathfrak{so}(1,3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The word <em>algebra</em> in this block therefore always needs its adjective. The associative algebra is where the rotors live. The two Lie algebras are where the generators live, and only the second of them is the Lorentz algebra.</p>
+<h2 id="the-associative-isomorphism">The Associative Isomorphism</h2>
+<h3 id="the-statement">The Statement</h3>
+<p>$$
+\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\;\cong\;M_2(\mathbb{C}),
+$$</p>
+<p>as associative algebras over $\mathbb{C}$, and the isomorphism is written $\mathsf{M}_2$ in this block.</p>
+<p>The tensor product is the precise form of a claim that is easy to say loosely: a biquaternion is a quaternion with complex coefficients, and a quaternion is a real four-dimensional algebra. Tensoring the quaternions with the complex numbers over the reals gives a complex four-dimensional algebra, and a complex four-dimensional algebra that is simple and central is a matrix algebra.</p>
+<h3 id="the-map">The Map</h3>
+<p>The isomorphism is written here once, because every entry of this block uses it. In the basis above,</p>
+<p>$$
+\mathsf{M}_2(\tilde Q)=
+\begin{pmatrix}
+Q_t-iQ_z & -iQ_x-Q_y\\
+-iQ_x+Q_y & Q_t+iQ_z
+\end{pmatrix},
+$$</p>
+<p>and the four unit images are read off by setting one coefficient to one:</p>
+<p>$$
+\mathsf{M}_2(e_t)=I_2,\qquad
+\mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_y)=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad
+\mathsf{M}_2(\vec e_z)=\begin{pmatrix}-i&0\\0&i\end{pmatrix}.
+$$</p>
+<p>Each of the three vector images squares to $-I_2$, which is what $\vec e_\eta^2=-e_t$ demands, and the three satisfy the quaternion relations among themselves. The three are $-i$ times the Pauli matrices of <em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>; this block does not print those arrays, and the three matrices above are the display of record.</p>
+<h3 id="why-the-assignment-is-forced">Why the Assignment Is Forced</h3>
+<p>The assignment of the three vector images is not a choice among equally good alternatives.</p>
+<ul>
+<li>$\vec e_\eta^2=-e_t$ forces the factor, because a real symmetric matrix squares to $+I_2$ and only an imaginary one squares to $-I_2$.</li>
+<li>$\vec e_x\vec e_y=\vec e_z$ fixes the relative sign of the three.</li>
+<li>The trace must vanish on vectors, and the three Pauli matrices, though traceless, are Hermitian, so a Hermitian image would put a real number where the algebra has $i$.</li>
+</ul>
+<p>A reviewer must not "correct" the assignment by making the three images real, and must not negate all three. The first destroys the sector dictionary, and the second destroys the multiplication.</p>
+<h3 id="what-the-isomorphism-is-not">What the Isomorphism Is Not</h3>
+<p>It is an isomorphism of associative algebras and nothing more. It is not an isomorphism of algebras with the corpus's involution ${}^{*}$: the star of an element is <strong>not</strong> the conjugate transpose of its image, and conjugating the entries of $\mathsf{M}_2(\tilde Q)$ on their own maps no element of the algebra to any element of the algebra. The three involutions are carried by explicit formulas, which <em>Element and Operator Representations: The Three Actions</em> records and this block uses.</p>
+<p>The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of <em>The Matrix Model: What It Sees and What It Hides</em>.</p>
+<h3 id="the-determinant-is-the-norm">The Determinant Is the Norm</h3>
+<p>$$
+\det\mathsf{M}_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=N(\tilde Q).
+$$</p>
+<p>The identity is checked by multiplying the two diagonal entries, and it is the reason the numerical practice of this block runs through matrices: the algebra's quadratic form, its invertibility criterion, its group of units and its unit-norm group are all read from one determinant. Checking it on a hundred random elements gives agreement to machine precision, better than $10^{-14}$.</p>
+<p>The form $N$ is <strong>complex</strong>. On the element $e_t+i\vec e_x$ it takes the value $1-i^{2}=2$, and on $e_t+\vec e_x$ it takes the value $2$ as well, while the Minkowski interval of the corresponding four-vector is $1-1=0$ in the second case. The two forms are different functions, and they agree only on the slice named in the next article.</p>
+<h2 id="the-traceless-part-under-the-commutator">The Traceless Part Under the Commutator</h2>
+<h3 id="the-subspace">The Subspace</h3>
+<p>$$
+\mathfrak{sl}(2,\mathbb{C})=\{\tilde X\in\mathbb{B}:\operatorname{Tr}\mathsf{M}_2(\tilde X)=0\}.
+$$</p>
+<p>Since $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t$, the traceless part is the set of elements with vanishing scalar part, that is the pure biquaternions. As a complex vector space it is spanned by $\vec e_x,\vec e_y,\vec e_z$, so</p>
+<p>$$
+\dim_{\mathbb{C}}\mathfrak{sl}(2,\mathbb{C})=3,\qquad \dim_{\mathbb{R}}\mathfrak{sl}(2,\mathbb{C})=6 .
+$$</p>
+<p>The second number is the one this block needs: six is the number of Lorentz generators, three rotations and three boosts.</p>
+<h3 id="closure-and-the-table">Closure and the Table</h3>
+<p>The traceless part is closed under the commutator, because the trace of a commutator vanishes in any associative algebra. Its six real generators are</p>
+<p>$$
+J_\eta=\tfrac12\vec e_\eta,\qquad K_\eta=\tfrac12 i\vec e_\eta,\qquad \eta=x,y,z,
+$$</p>
+<p>and direct multiplication gives</p>
+<p>$$
+[J_i,J_j]=\epsilon_{ijk}J_k,\qquad [J_i,K_j]=\epsilon_{ijk}K_k,\qquad [K_i,K_j]=-\epsilon_{ijk}J_k .
+$$</p>
+<p>The table is the Lorentz algebra. <em>The Six Generators and Their Commutators</em> derives it in full, writes the structure constants in the form the block uses and computes the invariant form; here the table is needed only to identify the object.</p>
+<h3 id="why-this-is-the-lorentz-algebra">Why This Is the Lorentz Algebra</h3>
+<p>Two independent warrants.</p>
+<p><strong>The dimension and the bracket.</strong> Six generators with the bracket above are $\mathfrak{so}(1,3)$: the three $J$ close as a rotation algebra, and the three $K$ transform as a vector under it, which is exactly the action of rotations on the boost generators of the Lorentz group.</p>
+<p><strong>The invariant form.</strong> The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with signature $(3,3)$, which is the signature of $\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has signature $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.</p>
+<p><strong>The misreading to avoid.</strong> The table has $[K_i,K_j]=-\epsilon_{ijk}J_k$ and not $+\epsilon_{ijk}J_k$. A plus sign gives $\mathfrak{so}(4)$, the Euclidean algebra, which is the algebra of a different real form of the same complex algebra. <em>The Cartan Subalgebra, the Roots and the Three Real Forms</em> puts the three real forms side by side and states which slice of the complex algebra each one is.</p>
+<h3 id="the-generators-are-anti-hermitian">The Generators Are Anti-Hermitian</h3>
+<p>With the corpus's involution $\vec e_\eta^{*}=-\vec e_\eta$ and $i^{*}=-i$. Hence</p>
+<p>$$
+J_\eta^{*}=-J_\eta,\qquad K_\eta^{*}=K_\eta .
+$$</p>
+<p>The rotations are anti-Hermitian and the boosts are Hermitian in this convention. This is a convention of the generator and not a statement about the group. Its consequences are that the structure constants above are real, that no explicit factor of $i$ appears in the bracket table, and that a Casimir written with the corpus's generators may differ in sign from the same Casimir written with the physicist's Hermitian generators $i\vec J$ and $i\vec K$. <em>The Two Casimirs of the Lorentz Algebra</em> states both forms and the dictionary between them.</p>
+<h2 id="the-whole-algebra-under-the-bracket">The Whole Algebra Under the Bracket</h2>
+<h3 id="the-statement-for-math69">The Statement for $\mathfrak{gl}(2,\mathbb{C})$</h3>
+<p>$$
+\mathbb{B}\ \text{under }[-,-]\;\cong\;\mathfrak{gl}(2,\mathbb{C})\ \text{as a real Lie algebra},\qquad \dim_{\mathbb{R}}=8 .
+$$</p>
+<h3 id="the-decomposition">The Decomposition</h3>
+<p>The scalar part is central: $[e_t,\tilde X]=0$ and $[ie_t,\tilde X]=0$ for every $\tilde X$. So the algebra splits as a direct sum of Lie algebras,</p>
+<p>$$
+\mathfrak{gl}(2,\mathbb{C})=\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}\,e_t,
+$$</p>
+<p>with the second summand of real dimension two, spanned by $e_t$ and $ie_t$, and abelian. The traceless part is the Lorentz algebra of the previous section; the centre is not.</p>
+<h3 id="why-it-is-not-a-lorentz-algebra">Why It Is Not a Lorentz Algebra</h3>
+<p>Three reasons, each sufficient.</p>
+<ul>
+<li><strong>Dimension.</strong> Eight against six. A Lie algebra isomorphism preserves the dimension of the underlying real vector space.</li>
+<li><strong>Centre.</strong> The centre is two-dimensional and nontrivial. The Lorentz algebra is semisimple, so its centre is zero.</li>
+<li><strong>The invariant form.</strong> The Killing form of the eight-dimensional algebra is degenerate, with the two central directions in its radical, while the Lorentz algebra's form is non-degenerate.</li>
+</ul>
+<p>The statement matters because the adjoint action of the group on the algebra is an eight-dimensional representation, and a computation that reads it as a Lorentz representation of dimension eight gets the wrong decomposition. The correct reading is the six-dimensional adjoint plus two trivial directions, which is what <em>The Two Commuting Complex Triples</em> uses.</p>
+<h3 id="what-the-centre-does-physically">What the Centre Does Physically</h3>
+<p>The two central directions are the scale and the phase of a biquaternion, $r$ and $e^{i\theta_{\mathrm{pha}}}$. Neither is a Lorentz transformation. They are the two factors that must be divided out before a biquaternion is a frame change, which is why <em>A Frame Is a Boost Times a Rotation: The Cartan Word</em> removes them first and only then splits.</p>
+<h2 id="the-complexification">The Complexification</h2>
+<h3 id="the-statement-for-the-complexification">The Statement for the Complexification</h3>
+<p>$$
+\mathfrak{so}(1,3)_{\mathbb{C}}\;\cong\;\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C}),
+$$</p>
+<p>as complex Lie algebras, of complex dimension six and real dimension twelve.</p>
+<h3 id="reading-the-symbols">Reading the Symbols</h3>
+<p>This is the statement most often written wrongly, because the same letters appear on both sides with different meanings. The two meanings are:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>as written</th>
+<th>complex dimension</th>
+<th>real dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$</td>
+<td>the traceless part as a <strong>real</strong> Lie algebra</td>
+<td>—</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>the traceless part as a <strong>complex</strong> Lie algebra</td>
+<td>$3$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(1,3)_{\mathbb{C}}$</td>
+<td>the complexification of the real Lorentz algebra</td>
+<td>$6$</td>
+<td>$12$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The identity $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ is an isomorphism of <strong>real</strong> Lie algebras. The identity $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ is an isomorphism of <strong>complex</strong> Lie algebras, and its two summands are two copies of the three-dimensional complex algebra. The subscript decides which statement is meant, and a sentence that drops the subscript is a sentence that cannot be checked.</p>
+<p>Why the complexification doubles: the traceless part is already a complex vector space, and complexifying a complex Lie algebra regarded as real gives two copies, one for $+i$ and one for $-i$. The two copies are the self-dual and the anti-self-dual bivectors.</p>
+<h3 id="what-the-summands-are">What the Summands Are</h3>
+<p>Every traceless element splits into a self-dual and an anti-self-dual part under the Hodge star on bivectors. On the algebra side the split is written by the two triples</p>
+<p>$$
+\vec J_{\pm}=\tfrac12\bigl(\vec J\pm i\vec K\bigr),
+$$</p>
+<p>and each triple closes as a complex rotation algebra while commuting with the other. <em>The Two Commuting Complex Triples</em> proves the closure and the commutation, and warns that the two triples are not the real $\mathfrak{su}(2)$ inside $\mathfrak{so}(1,3)$.</p>
+<h3 id="why-the-representation-theory-lives-here">Why the Representation Theory Lives Here</h3>
+<p>An irreducible finite-dimensional representation of the complexified algebra is a tensor product of one representation of the first summand with one of the second, and each summand's irreducible representations are labelled by a half-integer. The label is therefore a pair $(m,n)$, and that pair is the whole classification. <em>The Finite-Dimensional Representations and Their Unitarity Defect</em> gives the dimensions and the tensor products; <em>The Two Casimirs of the Lorentz Algebra</em> gives the two numbers that name the pair.</p>
+<p>The summands are also what the two chiralities mean. The first summand's fundamental representation is $(\tfrac12,0)$ and the second's is $(0,\tfrac12)$, and those two are the two Weyl spinors. The pair $(m,n)$ is not a pair of spins of one object; it is one label for each of the two independent complex algebras.</p>
+<h2 id="why-no-physical-prediction-depends-on-the-pauli-convention">Why No Physical Prediction Depends on the Pauli Convention</h2>
+<h3 id="the-convention">The Convention</h3>
+<p>The convention is the one printed above: which of the three vector images carries which sign, and the overall factor $-i$. It is fixed by the algebra and by the requirement that the sector dictionary survives, so within this corpus there is no freedom left. Between this corpus and another book there is freedom, and the article must say why it does not matter.</p>
+<h3 id="the-argument">The Argument</h3>
+<p>A physical prediction is a number computed from a frame transformation and a physical object. Three transformations of the bookkeeping leave every such number unchanged.</p>
+<ul>
+<li><strong>Relabelling the three axes.</strong> A rotation of the names $x,y,z$ permutes the three images and the three Pauli matrices with them. The multiplication table is preserved up to the same permutation, and no scalar invariant sees it.</li>
+<li><strong>An overall unitary change of the module.</strong> Conjugating every image by one fixed unitary matrix $S$ gives another isomorphism $\mathsf{M}_{2,\mathrm{S}}=S\mathsf{M}_2S^{-1}$, with the same determinant, the same trace and the same bracket. Only the entries change, and no entry is physical.</li>
+<li><strong>The sign of $i$.</strong> Sending $i\to-i$ sends the algebra to its opposite, replaces $\mathsf{M}_2(\tilde Q)$ by its transpose and reverses the sign of every commutator. That would change the bracket table, so this one is <strong>not</strong> free: the corpus fixes the sign of $i$ once, in <em>Algebra and Element Conventions</em>, and every article inherits it.</li>
+</ul>
+<p>So the convention is a choice of coordinates on a space of representations, and physical predictions are invariant under the choices that remain. What is not invariant is the bracket table, and the table is what the next articles compute.</p>
+<h2 id="summary">Summary</h2>
+<p>The four statements, with their dimensions, in the order in which a reader needs them:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>the object</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})$</td>
+<td>associative complex algebra</td>
+<td>$\dim_{\mathbb{C}}=4$, $\dim_{\mathbb{R}}=8$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(1,3)$</td>
+<td>real Lie algebra, traceless part under $[-,-]$</td>
+<td>$\dim_{\mathbb{R}}=6$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$ under $[-,-]\cong\mathfrak{gl}(2,\mathbb{C})$</td>
+<td>real Lie algebra, whole algebra</td>
+<td>$\dim_{\mathbb{R}}=8$, centre of dimension $2$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$</td>
+<td>complex Lie algebra</td>
+<td>$\dim_{\mathbb{C}}=6$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The determinant of the image is the algebra's complex quadratic form and not the interval. The traceless part is the Lorentz algebra because its bracket table is the Lorentz table and because its Killing form has signature $(3,3)$. The complexification splits, and the split is where the label $(m,n)$ comes from. The Pauli convention is fixed here, and no prediction depends on the part of it that could have been otherwise.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$\mathsf{M}_2$</td>
+<td>the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)$</td>
+<td>the biquaternion norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$</td>
+<td>the traceless part as a real Lie algebra, the Lorentz algebra</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(2,\mathbb{C})$</td>
+<td>the whole algebra under the commutator</td>
+</tr>
+<tr>
+<td>$J_\eta=\tfrac12\vec e_\eta$</td>
+<td>the rotation generators, anti-Hermitian</td>
+</tr>
+<tr>
+<td>$K_\eta=\tfrac12 i\vec e_\eta$</td>
+<td>the boost generators, Hermitian</td>
+</tr>
+<tr>
+<td>$\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$</td>
+<td>the two complex triples</td>
+</tr>
+<tr>
+<td>$(m,n)$</td>
+<td>the pair of half-integers labelling an irreducible finite-dimensional representation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>B. C. Hall, <em>Lie Groups, Lie Algebras, and Representations: An Elementary Introduction</em>, 2nd ed., Springer, 2015 — the isomorphisms of the classical algebras and the real forms, with the dimension bookkeeping done carefully.</li>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — the Killing form, semisimplicity, and the real forms of a complex simple algebra.</li>
+<li>W. Fulton and J. Harris, <em>Representation Theory: A First Course</em>, Springer, 1991 — the complexification of $\mathfrak{sl}(2,\mathbb{C})$ and the origin of the pair of half-integer labels.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed., Cambridge University Press, 2001 — the identification of the biquaternions with the $2\times2$ complex matrices and the place of the Pauli matrices in it.</li>
+<li><em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em>, and <em>Algebra and Element Conventions</em> — the corpus's own statements of the map and of the base.</li>
+<li><em>The Six Generators and Their Commutators</em>, <em>The Two Commuting Complex Triples</em>, <em>The Cartan Subalgebra, the Roots and the Three Real Forms</em> — the articles that carry each of the four statements into its consequences.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

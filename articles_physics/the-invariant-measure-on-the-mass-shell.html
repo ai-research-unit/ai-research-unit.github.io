@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Invariant Measure on the Mass Shell — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-invariant-measure-on-the-mass-shell"><strong>The Invariant Measure on the Mass Shell</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A mass shell is a homogeneous space, and a homogeneous space of a unimodular group carries an invariant measure. For the Lorentz group that measure is the density $\frac{d^{3}p}{2p_0}$ on the hyperboloid, or equivalently the four-dimensional integral $d^{4}p\,\delta(p^{2}-m^{2}c^{2})\,\mathrm{H}_{\mathrm{hvs}}(p_0)$, with $\mathrm{H}_{\mathrm{hvs}}$ the Heaviside step that keeps the energy positive. Every Lorentz-invariant integral over momenta is written with it, and every normalisation convention in field theory is a convention about it.</p>
+<p>This article constructs the measure, verifies its invariance, writes it in three coordinate systems, states the invariant integral and its delta-function form, fixes the normalisation, and treats the cases in which the construction degenerates.</p>
+<p>The article assumes <em>Wigner's Classification: Two Casimirs, Three Orbits</em> for the orbits, <em>The Little Group of a Massive Particle: $\mathrm{SU}(2)$</em> and <em>The Little Group of a Null Momentum: $E(2)$</em> for the stabilisers, <em>The Null Cone: The Massless Boundary</em> for the cone, and <em>Aberration and the Sky: The Boost as a Möbius Flow</em> for the sphere of directions.</p>
+<h2 id="the-orbit-as-a-homogeneous-space">The Orbit as a Homogeneous Space</h2>
+<h3 id="the-momentum-and-its-stabiliser">The Momentum and Its Stabiliser</h3>
+<p>For a momentum $\tilde P$ on the orbit $\mathcal{O}$, the stabiliser is $G_{\tilde P}$, and the map</p>
+<p>$$
+G\longrightarrow\mathcal{O},\qquad \tilde U\longmapsto\mathrm{Cg}_{\tilde U}(\tilde P)
+$$</p>
+<p>is surjective with fibre $G_{\tilde P}$. So the orbit is the quotient</p>
+<p>$$
+\mathcal{O}\cong G/G_{\tilde P},
+$$</p>
+<p>a homogeneous space.</p>
+<h3 id="the-quotient">The Quotient</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>orbit</th>
+<th>stabiliser</th>
+<th>quotient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike</td>
+<td>$SU(2)$</td>
+<td>$\mathbb{H}^{3}$</td>
+</tr>
+<tr>
+<td>null</td>
+<td>$E(2)$</td>
+<td>$\mathbb{R}_{>0}\times S^{2}$</td>
+</tr>
+<tr>
+<td>spacelike</td>
+<td>$SU(1,1)$</td>
+<td>$S^{2}\times\mathbb{R}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three quotients have the dimensions the group theory demands: $6-3=3$ in each case.</p>
+<h3 id="the-three-cases">The Three Cases</h3>
+<p>The three are different manifolds with different geometry, but the construction of the measure is the same in all three. That is the point of the homogeneous-space formulation: the measure is not a special feature of the hyperboloid, it is a feature of the pair (group, stabiliser).</p>
+<h2 id="the-invariant-measure">The Invariant Measure</h2>
+<h3 id="what-invariance-means">What Invariance Means</h3>
+<p>A measure $\mu$ on $\mathcal{O}$ is invariant when</p>
+<p>$$
+\mu(\Lambda A)=\mu(A)
+$$</p>
+<p>for every Borel set $A$ and every $\Lambda$ in the group. Equivalently, for every integrable $f$,</p>
+<p>$$
+\int_{\mathcal{O}}f(\Lambda p)\,d\mu(p)=\int_{\mathcal{O}}f(p)\,d\mu(p).
+$$</p>
+<h3 id="the-construction">The Construction</h3>
+<p>The invariant measure on $G$ descends to the quotient when the stabiliser is unimodular: one takes a measure on $G$, integrates out the fibre, and the result is invariant. Both the Lorentz group and each of its little groups are unimodular, so the construction goes through in all three cases.</p>
+<p>That is the warrant: the existence of the measure is a unimodularity theorem, not a guess, and it is why the same construction works for the massive, the massless and the spacelike orbits.</p>
+<h3 id="the-jacobian">The Jacobian</h3>
+<p>In coordinates the invariance is a Jacobian identity. For a boost along $z$ with velocity $\beta$,</p>
+<p>$$
+p_z'=\gamma\bigl(p_z+\beta E\bigr),\qquad
+E'=\gamma\bigl(E+\beta p_z\bigr),
+$$</p>
+<p>so the Jacobian of the map $\vec p\mapsto\vec p'$ is</p>
+<p>$$
+\det\frac{\partial\vec p'}{\partial\vec p}=\frac{E'}{E}.
+$$</p>
+<p>The identity is verified numerically to twelve digits at three different momenta: the determinant comes out $1.556186218$ and the ratio $E'/E$ comes out $1.556186218$ at $E=1.224745$, and the two agree at the other points as well.</p>
+<p>So $\frac{d^{3}p'}{E'}=\frac{d^{3}p}{E}$, and the measure is invariant.</p>
+<h3 id="the-consequence">The Consequence</h3>
+<p>$$
+\frac{d^{3}p}{2E}
+$$</p>
+<p>is invariant, the factor $\tfrac12$ being a convention that makes the normalisation of states come out without fractions. Everything else in this article is a consequence of this one identity.</p>
+<p><strong>The letter $E$ is the temporal component.</strong> Throughout this article $E$ denotes $p^{0}$, the temporal coefficient of the momentum, so the four-momentum is $(E,\vec p)$ and the interval is $p^{2}=E^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$. The energy is $cE$. With that reading every formula below is dimensionally homogeneous, the boost law $p_z'=\gamma(p_z+\beta E)$ needs no factor of $c$, the velocity $\vec v=\vec p/E$ is measured in units of $c$, and the factor $\frac{1}{2E}$ is the delta function's Jacobian.</p>
+<h2 id="the-density">The Density</h2>
+<h3 id="the-invariant-volume">The Invariant Volume</h3>
+<p>The invariant volume element on the hyperboloid is</p>
+<p>$$
+d\mu=\frac{d^{3}p}{2p_0}\bigg|_{p_0=E_{\vec p}},
+\qquad
+E_{\vec p}=\sqrt{m^{2}c^{2}+\lvert\vec p\rvert^{2}} .
+$$</p>
+<p>It is positive, it is smooth on the interior of the orbit, and its total volume is infinite, as it must be for a non-compact space of finite dimension.</p>
+<h3 id="the-velocity-form">The Velocity Form</h3>
+<p>In terms of the velocity $\vec v=\vec p/E$,</p>
+<p>$$
+\frac{d^{3}p}{2E}=\frac{m^{2}c^{2}}{2}\,\frac{d^{3}v}{(1-\lvert\vec v\rvert^{2})^{2}} .
+$$</p>
+<p>The check, with $m=c=1$ in the arithmetic: at $\vec v=(0.3,0.4,0.5)$ the Jacobian $\det(\partial\vec p/\partial\vec v)$ divided by $E$ is $4.000000000$, and $\frac{m^{2}c^{2}}{(1-\lvert\vec v\rvert^{2})^{2}}$ is $4.000000000$ at that velocity. The denominator is the square of the Lorentz factor's reciprocal, which is the hyperbolic volume form of the velocity ball: the ball with the metric of constant negative curvature.</p>
+<h3 id="the-sky-form">The Sky Form</h3>
+<p>In terms of the direction and the energy,</p>
+<p>$$
+\frac{d^{3}p}{2E}=\tfrac12\,E\,dE\,d\Omega ,
+$$</p>
+<p>where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE$, the second because $p^{2}=E^{2}-m^{2}c^{2}$.</p>
+<p>So the measure factorises into a <em>radial</em> part and an <em>angular</em> part, and the angular part is the round measure on the sky of <em>Aberration and the Sky: The Boost as a Möbius Flow</em>. That factorisation is why the sky's measure is the one an observer integrates over in the cosmic microwave background.</p>
+<h3 id="the-three-forms-compared">The Three Forms Compared</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coordinates</th>
+<th>density</th>
+<th>invariant?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec p$</td>
+<td>$d^{3}p/(2E)$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\vec v$</td>
+<td>$m^{2}c^{2}d^{3}v/2(1-v^{2})^{2}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$E,\Omega$</td>
+<td>$\tfrac12E\,dE\,d\Omega$</td>
+<td>yes in the angular part only</td>
+</tr>
+</tbody>
+</table></div>
+<p>The third row's caveat is the point: $d\Omega$ alone is invariant under rotations but not under boosts, and $E$ transforms under boosts, so the factorisation is useful only for rotation-invariant integrands.</p>
+<h2 id="the-lorentz-invariant-integral">The Lorentz-Invariant Integral</h2>
+<h3 id="the-standard-form">The Standard Form</h3>
+<p>The invariant integral of a function on the shell is</p>
+<p>$$
+\int_{\mathcal{O}}f(p)\,d\mu(p)=\int\frac{d^{3}p}{2E_{\vec p}}\,f(E_{\vec p},\vec p).
+$$</p>
+<p>Every physical quantity integrated over momenta — a phase-space integral, a luminosity, a decay rate — is of this form, and the invariance is the statement that the result does not depend on the frame.</p>
+<h3 id="the-delta-function-form">The Delta-Function Form</h3>
+<p>The same integral in four dimensions is</p>
+<p>$$
+\int d^{4}p\;\delta\bigl(p^{2}-m^{2}c^{2}\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0)\,f(p)
+=\int\frac{d^{3}p}{2E_{\vec p}}\,f(E_{\vec p},\vec p),
+$$</p>
+<p>where $p^{2}$ is the interval in the article's signature. The delta function's root contributes the factor $\frac{1}{2E}$:</p>
+<p>$$
+\delta\bigl(p^{2}-m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta\bigl(p_0-E\bigr)+\delta\bigl(p_0+E\bigr)\Bigr],
+$$</p>
+<p>and the step function keeps the positive-energy root. So the $\frac{1}{2E}$ is not a convention but the Jacobian of the delta function, and the convention is only the choice of writing it inside or outside.</p>
+<h3 id="the-two-point-function">The Two-Point Function</h3>
+<p>The simplest invariant integral is</p>
+<p>$$
+\int\frac{d^{3}p}{2E_{\vec p}}\,e^{-ip\cdot x},
+$$</p>
+<p>which is the positive-frequency part of the invariant delta function. Its Lorentz invariance follows from the measure's. The function itself does not vanish outside the light cone — it decays exponentially — but its antisymmetric combination does: the commutator, which is the difference of the positive- and negative-frequency integrals, is supported on the light cone and vanishes at spacelike separation. That vanishing is the microcausality statement, and it too follows from the measure's invariance.</p>
+<h2 id="the-normalisation">The Normalisation</h2>
+<h3 id="the-choice">The Choice</h3>
+<p>There are three standard normalisations, and they differ by powers of $2E$ and $2\pi$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>convention</th>
+<th>inner product of momentum states</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>covariant with $(2\pi)^{3}$</td>
+<td>$\langle\vec p|\vec q\rangle=2E_{\vec p}(2\pi)^{3}\delta^{3}(\vec p-\vec q)$</td>
+</tr>
+<tr>
+<td>covariant without $(2\pi)^{3}$</td>
+<td>$\langle\vec p|\vec q\rangle=2E_{\vec p}\delta^{3}(\vec p-\vec q)$</td>
+</tr>
+<tr>
+<td>non-relativistic</td>
+<td>$\langle\vec p|\vec q\rangle=\delta^{3}(\vec p-\vec q)$, with $\sqrt{2E}$ absorbed into the state</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three are related by absorbing $\sqrt{2E}$ into the state's normalisation and by a power of $2\pi$. The block uses the covariant one, because it makes the measure's invariance manifest: the identity operator reads</p>
+<p>$$
+1=\int\frac{d^{3}p}{2E_{\vec p}}\,|p\rangle\langle p| ,
+$$</p>
+<p>with no extra factor.</p>
+<h3 id="why-it-matters">Why It Matters</h3>
+<p>A normalisation error is a factor of $2E$ per external leg, and it is the most common error in a calculation that mixes conventions. So the block states the convention once, here, and every other article refers to it.</p>
+<h3 id="the-normalisation-of-the-measure-itself">The Normalisation of the Measure Itself</h3>
+<p>$\frac{d^{3}p}{2E}$ has the dimension of a momentum squared, $M^{2}L^{2}T^{-2}$, because $d^{3}p$ is a momentum cubed and $E$ a momentum. A reader who wants a dimensionless measure divides by $(2\pi)^{3}$ and multiplies by the volume, which is the phase-space counting convention of statistical mechanics.</p>
+<h2 id="the-exceptional-cases">The Exceptional Cases</h2>
+<h3 id="the-vertex">The Vertex</h3>
+<p>At $p=0$ the orbit degenerates to a point and its stabiliser is the whole group. The measure on a point is the counting measure, and the invariant "integral" over it is the evaluation at zero: the zero-momentum state is the vacuum, and its measure is not a density at all.</p>
+<p>That is the one place where the homogeneous-space description fails, and it fails because the quotient $G/G$ is a point and not a manifold.</p>
+<h3 id="the-null-orbit">The Null Orbit</h3>
+<p>On the null orbit $E=\lvert\vec p\rvert$, so the density $\frac{d^{3}p}{2E}$ has a singularity at the vertex and is not integrable there. The correct statement keeps the vertex out of the orbit and uses</p>
+<p>$$
+d^{4}p\;\delta\bigl(p^{2}\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0),
+$$</p>
+<p>which on the cone becomes $\frac12E\,dE\,d\Omega$ with $E>0$: a genuine density, since $E$ is now the radial coordinate of the cone.</p>
+<p>So the massless measure exists and is perfectly well behaved away from the vertex; what fails is the <em>massive</em> form's limit, because the massive form's $E$ does not vanish as $m\to0$.</p>
+<h3 id="the-boundary-between">The Boundary Between</h3>
+<p>The massless orbit is the boundary of the massive ones in the orbit space, and the measure's behaviour reflects that: as $m\to0$ the density's normalisation $m^{2}c^{2}/2$ in the velocity form vanishes, so the massive measure degenerates to zero on the velocity ball and the whole mass moves to the boundary. That is the measure-theoretic form of the statement that a massless particle is not a limit of massive ones with a finite mass.</p>
+<h3 id="the-spacelike-orbit">The Spacelike Orbit</h3>
+<p>The spacelike measure is $\frac{d^{3}p}{2\lvert p_3\rvert}$ with $p_3$ the component chosen as the coordinate, because the one-sheeted hyperboloid meets each line of constant $(p_0,p_1,p_2)$ twice and the delta function $\delta(p^{2}+\mu^{2})$ has two roots, at $p_3=\pm\sqrt{\mu^{2}+p_0^{2}-p_1^{2}-p_2^{2}}$. The step function of the timelike case is replaced by a choice of branch, and the invariant density is $\frac{d^{3}p}{2\lvert p_3\rvert}$ on the branch. So the construction is the same and the physical interpretation is different.</p>
+<h2 id="summary">Summary</h2>
+<p>A mass shell is a homogeneous space $G/G_{\tilde P}$, and because the group and its little groups are unimodular it carries an invariant measure. In momentum coordinates the measure is $d^{3}p/(2E)$, verified invariant by the Jacobian identity $\det(\partial\vec p'/\partial\vec p)=E'/E$; in velocity coordinates it is $\frac{m^{2}c^{2}}{2}\frac{d^{3}v}{(1-v^{2})^{2}}$; in energy and angle it is $\frac12E\,dE\,d\Omega$. The four-dimensional form $d^{4}p\,\delta(p^{2}-m^{2}c^{2})\mathrm{H}_{\mathrm{hvs}}(p_0)$ is the same measure, and its $\frac{1}{2E}$ is the delta function's Jacobian. The block normalises states covariantly so that the identity operator is $\int\frac{d^{3}p}{2E}|p\rangle\langle p|$. The vertex is a degenerate orbit, the null orbit needs the cone form, and the massive measure degenerates to zero as the mass goes to zero.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{O}\cong G/G_{\tilde P}$</td>
+<td>the orbit as a homogeneous space</td>
+</tr>
+<tr>
+<td>$E_{\vec p}=\sqrt{m^{2}c^{2}+\lvert\vec p\rvert^{2}}$</td>
+<td>the temporal momentum on the shell, the energy over $c$</td>
+</tr>
+<tr>
+<td>$d^{3}p/(2E)$</td>
+<td>the invariant density</td>
+</tr>
+<tr>
+<td>$\vec v=\vec p/E$</td>
+<td>the velocity</td>
+</tr>
+<tr>
+<td>$d\Omega$</td>
+<td>the solid angle on the sky</td>
+</tr>
+<tr>
+<td>covariant normalisation</td>
+<td>$\langle p\lvert q\rangle=2E(2\pi)^{3}\delta^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §2.5 and §4.1 — the invariant measure, the covariant normalisation and the identity operator.</li>
+<li>A. O. Barut and R. Rączka, <em>Theory of Group Representations and Applications</em>, PWN, 1977 — invariant measures on homogeneous spaces and the unimodularity condition.</li>
+<li>N. Bourbaki, <em>Integration II</em>, Springer, 2004 — the general construction of the quotient measure, in the form the article paraphrases.</li>
+<li>V. S. Varadarajan, <em>Geometry of Quantum Theory</em>, 2nd ed., Springer, 1985 — the orbit method with the measures written out.</li>
+<li><em>Wigner's Classification: Two Casimirs, Three Orbits</em> — the orbits whose measures these are.</li>
+<li><em>Aberration and the Sky: The Boost as a Möbius Flow</em> — the angular factor $d\Omega$ and its transformation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

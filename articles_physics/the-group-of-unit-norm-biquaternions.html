@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Group of Unit-Norm Biquaternions — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-group-of-unit-norm-biquaternions"><strong>The Group of Unit-Norm Biquaternions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The group of this block is the set of biquaternions of unit norm. It is the spinor group of the restricted Lorentz group, it is the group of $2\times2$ complex matrices of determinant one, and it is the manifold on which the two decompositions of the block are defined. This article states what the set is, proves that it is a group, gives its two descriptions, counts its dimension twice, identifies its compact part, and describes the exponential chart together with the set on which the chart ceases to be one-to-one.</p>
+<p>The group is the object the rest of the block acts with. The next two articles take its two actions; the two after that take its Lie algebra; the decompositions take its polar and spectral structure. Everything here is therefore load-bearing, and the article is written to be used rather than admired.</p>
+<p>The article assumes <em>The Isomorphisms and Their Dimensions</em> for the map and for the dimensions of the algebra, and <em>Norm and Pairing Conventions</em> for the norm, the modulus and the quaternion conjugation. The parametrisation of a boost and of a rotation is taken from <em>The Lorentz Transformation as a Biquaternionic Rotation</em> and is not re-derived.</p>
+<h2 id="the-group-as-a-set">The Group as a Set</h2>
+<h3 id="the-defining-condition">The Defining Condition</h3>
+<p>$$
+G=\{\tilde U\in\mathbb{B}:\langle\tilde U\rangle_{\natural}=e_t\}
+=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\},
+$$</p>
+<p>where $\natural$ is the quaternion conjugation, $\tilde U^{\natural}=U_t-U_x\vec e_x-U_y\vec e_y-U_z\vec e_z$, and $\langle\tilde U\rangle_{\natural}=U_t^{2}+U_x^{2}+U_y^{2}+U_z^{2}$ is the quaternionic norm of <em>Norm and Pairing Conventions</em>.</p>
+<p>The condition is <strong>complex</strong>: $\langle\tilde U\rangle_{\natural}=1$ is one equation over $\mathbb{C}$, that is two real equations, on eight real coordinates. It is not the condition $\lvert\langle\tilde U\rangle_{\natural}\rvert=1$, which would define a different and larger set. A reader who replaces the norm by its modulus gets the group of biquaternions whose norm is a unit complex number, and that set is not the Lorentz group.</p>
+<p>Under the isomorphism the condition is $\det\mathsf{M}_2(\tilde U)=1$, so</p>
+<p>$$
+G\cong SL(2,\mathbb{C}).
+$$</p>
+<h3 id="closure">Closure</h3>
+<p>Let $\tilde U,\tilde V\in G$. The norm is multiplicative,</p>
+<p>$$
+\langle\tilde U\tilde V\rangle_{\natural}=\langle\tilde U\rangle_{\natural}\langle\tilde V\rangle_{\natural}=e_t,
+$$</p>
+<p>so $\tilde U\tilde V\in G$. The multiplicativity is not an accident of this norm: it is the multiplicativity of the determinant under the isomorphism, and it is the single algebraic fact on which the group structure rests.</p>
+<h3 id="the-inverse">The Inverse</h3>
+<p>$$
+\tilde U^{-1}=\tilde U^{\natural},
+$$</p>
+<p>because the norm is central: $\tilde U\tilde U^{\natural}=\langle\tilde U\rangle_{\natural}=e_t$ and equally $\tilde U^{\natural}\tilde U=e_t$. The quaternion conjugate is therefore the group inverse on $G$, and it is a two-sided inverse rather than a one-sided one for exactly that reason. On a boost, $\tilde U_{\mathrm b}(\vec u_{\mathrm b},\theta_{\mathrm{rpd}})^{-1}=\tilde U_{\mathrm b}(\vec u_{\mathrm b},-\theta_{\mathrm{rpd}})$; on a rotation, $\tilde u_{\mathrm r}(\vec u_{\mathrm r},\theta_{\mathrm{axr}})^{-1}=\tilde u_{\mathrm r}(\vec u_{\mathrm r},-\theta_{\mathrm{axr}})$.</p>
+<h3 id="the-centre">The Centre</h3>
+<p>A central element of $G$ is a complex scalar $\lambda$ with $\lambda^{2}=1$, so</p>
+<p>$$
+Z(G)=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z}.
+$$</p>
+<p>That group is the kernel of the double cover and the reason every conjugation is blind to the sign of the rotor. <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em> is the article that reads it physically.</p>
+<h3 id="what-the-set-is-not">What the Set Is Not</h3>
+<p>The unit-norm set is not compact, and it is not the group of units. The group of units is $\mathbb{B}^{\times}=\{\tilde Q:\langle\tilde Q\rangle_{\natural}\neq0\}\cong GL_2(\mathbb{C})$, of real dimension eight, and $G$ is the kernel of the norm inside it. The distinction matters in <em>The Two Actions of One Group: Adjoint and Congruence</em>, where one action is defined for all of $\mathbb{B}^{\times}$ and the other is not.</p>
+<h2 id="two-descriptions-of-one-element">Two Descriptions of One Element</h2>
+<h3 id="the-first-description-by-the-unit-norm">The First Description: By the Unit Norm</h3>
+<p>One complex equation, as above. Its advantage is that it uses nothing but the algebra: no axis, no frame, no decomposition. Its disadvantage is that it says nothing about what the element does.</p>
+<h3 id="the-second-description-by-a-hermitian-pair-of-factors">The Second Description: By a Hermitian Pair of Factors</h3>
+<p>Every element of $G$ is a product of a Hermitian factor and a unitary one,</p>
+<p>$$
+\tilde U=\tilde H\tilde K,\qquad
+\tilde H=\tilde H^{*},\quad \operatorname{Tr}\mathsf{M}_2(\tilde H)>0,\quad \det\mathsf{M}_2(\tilde H)=1,
+\qquad \tilde K^{*}\tilde K=e_t,
+$$</p>
+<p>and the pair is unique. The Hermitian factor is a positive Hermitian matrix of determinant one; the unitary factor is a $*$-unitary biquaternion of determinant one, which is to say a unitary $2\times2$ matrix of determinant one.</p>
+<p>Three facts about this description are needed later, and each is proved in <em>A Frame Is a Boost Times a Rotation: The Cartan Word</em>.</p>
+<ul>
+<li>The Hermitian factor is a pure boost: it is $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$.</li>
+<li>The unitary factor is a pure rotation: it is $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$.</li>
+<li>Positivity is what makes the pair unique, and positivity of a Hermitian matrix of determinant one is an open condition, so the pair varies smoothly.</li>
+</ul>
+<p>So the second description of an element of the group is <strong>a boost and a rotation</strong>, and the second description of the group is the product of the two sets. The product is not direct: the sets intersect in $\{\pm e_t\}$, which is why the word is written $P\cdot K$ and not $P\times K$.</p>
+<h3 id="the-two-columns-as-a-spinor-pair">The Two Columns as a Spinor Pair</h3>
+<p>A third description is worth recording because it is the one <em>The Spinor Module in Biquaternionic Form and Its Lorentz Action</em> uses. The image of an element is a matrix of determinant one,</p>
+<p>$$
+\mathsf{M}_2(\tilde U)=\bigl(\xi\ \ \eta\bigr),
+$$</p>
+<p>whose columns $\xi,\eta$ are two spinors. The determinant condition becomes</p>
+<p>$$
+\det\bigl(\xi\ \ \eta\bigr)=1,
+$$</p>
+<p>which is the statement that the two spinors are paired to one by the antisymmetric Hermitian form of the module. An element of the group is therefore also a <strong>Hermitian pair of spinors</strong>, and the group is the set of such pairs. This description is the one that makes the one-sided action on spinors and the two-sided action on four-vectors different actions of the same object.</p>
+<h3 id="why-the-descriptions-agree">Why the Descriptions Agree</h3>
+<p>The three descriptions are one element read three ways:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>description</th>
+<th>the data</th>
+<th>what it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unit norm</td>
+<td>one complex equation on eight real coordinates</td>
+<td>the set, with no frame</td>
+</tr>
+<tr>
+<td>Hermitian pair of factors</td>
+<td>a positive Hermitian factor and a unitary factor</td>
+<td>the boost and the rotation, and the Cartan word</td>
+</tr>
+<tr>
+<td>Hermitian pair of spinors</td>
+<td>two columns with pairing one</td>
+<td>the module and its two chiral halves</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-dimension-count">The Dimension Count</h2>
+<h3 id="six-real-dimensions">Six Real Dimensions</h3>
+<p>$G$ has real dimension six and complex dimension three.</p>
+<p>The count from the defining condition: eight real coordinates, two real equations, so $8-2=6$. The count from the isomorphism: $SL(2,\mathbb{C})$ is the determinant-one locus in $M_2(\mathbb{C})$, which has four complex entries and one complex equation, so complex dimension three and real dimension six.</p>
+<h3 id="three-plus-three">Three Plus Three</h3>
+<p>The count from the second description: the boosts contribute three parameters, the rapidity vector $\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, and the rotations contribute three, the axis-angle vector $\theta_{\mathrm{axr}}\vec u_{\mathrm r}$. The sum is six, and it is a genuine sum and not a product of independent sets, because the pair is unique once positivity is imposed.</p>
+<p>The two parametrisations are therefore coordinates and not just labels. Every element of the group is a boost of some rapidity along some direction followed by a rotation of some angle about some axis, and no information is thrown away in saying so.</p>
+<h3 id="why-the-algebra-has-eight-and-the-group-six">Why the Algebra Has Eight and the Group Six</h3>
+<p>This is the one count that readers get wrong, and the two answers are different for two different reasons.</p>
+<ul>
+<li>The <strong>associative algebra</strong> $\mathbb{B}$ has real dimension eight. The group is cut out of it by the norm condition, which is one complex equation, so the group has six. The two directions lost are the scale $r$ and the central phase $\theta_{\mathrm{pha}}$: a unit-norm element has neither, and every element of the group of units is a positive scale times a central phase times an element of $G$.</li>
+<li>The <strong>Lie algebra</strong> of $G$ has real dimension six, and it is the traceless part. It is <em>not</em> the associative algebra under the commutator, which has eight; the two extra directions are the centre, and the centre exponentiates to the scale and to the phase, neither of which lies in $G$.</li>
+</ul>
+<p>So "the group is six-dimensional while the algebra is eight" is true of the associative algebra and false of the Lie algebra, and a sentence that does not say which is meant cannot be checked.</p>
+<h2 id="the-compact-subgroup-and-the-non-compact-direction">The Compact Subgroup and the Non-Compact Direction</h2>
+<h3 id="the-compact-subgroup">The Compact Subgroup</h3>
+<p>The $*$-unitary elements of $G$ form the maximal compact subgroup,</p>
+<p>$$
+K=\{\tilde K\in G:\tilde K^{*}\tilde K=e_t\}\cong SU(2),
+$$</p>
+<p>of real dimension three. Because the elements of $K$ have real quaternion coefficients, $K=SL(2,\mathbb{C})\cap\mathbb{B}_{H}$: the compact part of the group is the group of unit real quaternions, which is the rotation group's double cover. On $K$ the norm condition and the $*$-unitarity condition coincide, which is why rotations are both unit-norm and unitary.</p>
+<h3 id="the-non-compact-direction">The Non-Compact Direction</h3>
+<p>The complement of $K$ in the group is where the boosts live. The set of positive Hermitian elements of unit norm,</p>
+<p>$$
+P=\{\tilde H\in G:\tilde H^{*}=\tilde H,\ \operatorname{Tr}\mathsf{M}_2(\tilde H)>0\},
+$$</p>
+<p>is a closed submanifold of dimension three, diffeomorphic to $\mathbb{R}^{3}$ through the rapidity vector, and it is not a subgroup: the product of two of its elements is generally not Hermitian. It is the symmetric space $G/K$, and the identification is the polar decomposition.</p>
+<h3 id="the-shape-of-the-group">The Shape of the Group</h3>
+<p>Three consequences, each of which is used later.</p>
+<ul>
+<li><strong>It retracts onto $SU(2)$.</strong> Every element is uniquely a positive Hermitian factor times a unitary one, so the group is homeomorphic to $\mathbb{R}^{3}\times SU(2)$ and deformation-retracts onto $SU(2)\cong S^{3}$. It is therefore connected and simply connected, and its fundamental group is trivial. That triviality is what makes the double cover of the Lorentz group a cover of a simply connected group.</li>
+<li><strong>It is not compact.</strong> The rapidity is unbounded. A compact group has a finite invariant measure of finite total mass, and this one does not: the measure on the boosts grows like $\sinh^{2}\theta_{\mathrm{rpd}}$. <em>The Invariant Measure on the Mass Shell</em> is the article that uses the growth.</li>
+<li><strong>Its two ends.</strong> Because the boosts are a vector space, the group has one end, and the Lorentz group obtained by quotienting by $\{\pm e_t\}$ has one end as well. This is the topological reason a boost cannot be continuously undone by rotations alone.</li>
+</ul>
+<h2 id="the-exponential-chart">The Exponential Chart</h2>
+<h3 id="the-chart">The Chart</h3>
+<p>$$
+\exp:\mathfrak{sl}(2,\mathbb{C})\longrightarrow G,\qquad
+\exp(\tilde X)=\sum_{n\ge0}\frac{\tilde X^{n}}{n!},
+$$</p>
+<p>with $\mathfrak{sl}(2,\mathbb{C})$ the traceless part, of real dimension six. The chart is <strong>not</strong> onto the group: it misses one conjugacy class, the class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and <em>The Exponential Map from Algebra to Group</em> proves both the exclusion and the fact that every element of the group is a product of two exponentials. This article records what the chart is, and the other states what it covers.</p>
+<p>For a pure generator the series closes, because every traceless element satisfies a quadratic,</p>
+<p>$$
+\exp(a\vec u)=\cos a+\sin a\,\vec u\quad(\vec u^{2}=-e_t),
+\qquad
+\exp(ia\vec u)=\cosh a+\sinh a\,\vec u\quad(\vec u^{2}=-e_t),
+$$</p>
+<p>and these two lines are the rotation and the boost of the block in exponential form. With the half-angle convention, a rotation of angle $\theta_{\mathrm{axr}}$ is $\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ and a boost of rapidity $\theta_{\mathrm{rpd}}$ is $\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$.</p>
+<h3 id="where-it-stops-being-one-to-one">Where It Stops Being One-to-One</h3>
+<p>The chart is a local diffeomorphism away from its cut and it covers the group except for one conjugacy class, but it is not injective, and the failure has a shape.</p>
+<ul>
+<li><strong>The axes meet at the far point.</strong> With a fixed axis, the rotation family is $\tilde u_{\mathrm r}(\theta_{\mathrm{axr}})=\cos\tfrac{\theta_{\mathrm{axr}}}{2}+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, so $\theta_{\mathrm{axr}}$ and $\theta_{\mathrm{axr}}+4\pi$ give the same element and $\theta_{\mathrm{axr}}+2\pi$ gives its negative. The chart is one-to-one on $0\le\theta_{\mathrm{axr}}<4\pi$ along each fixed axis, and the two ends coincide.</li>
+<li><strong>One element, every axis.</strong> At $\theta_{\mathrm{axr}}=2\pi$ every axis gives the same element, $-e_t$. The sphere of radius $\pi$ in the rotation part of the algebra therefore collapses to a point of the group, and the chart is not injective on any neighbourhood of that sphere.</li>
+<li><strong>The identity is not isolated in the fibre.</strong> $\exp(2\pi k\,\vec u)=e_t$ and $\exp((2k+1)\pi\,\vec u)=-e_t$ for every integer $k$ and every unit $\vec u$, so the fibre over each of the two central elements contains a whole family of spheres.</li>
+<li><strong>The rapidity is injective but unbounded.</strong> Along a fixed boost axis the map $\theta_{\mathrm{rpd}}\mapsto\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ is injective on $\mathbb{R}$, since $\cosh$ and $\sinh$ are injective on the pair. The non-injectivity of the chart is entirely the compact direction's.</li>
+</ul>
+<h3 id="why-the-fibre-matters-physically">Why the Fibre Matters Physically</h3>
+<p>An exponential coordinate is a set of six numbers that a laboratory could in principle dial: three rapidities and three rotation angles. The fibre is the statement that the dials do not determine the element uniquely, and it is the same statement as the two-to-one cover seen at the level of coordinates. A rotation by $2\pi$ returns $-e_t$ and not $e_t$; a rotation by $4\pi$ returns $e_t$. The physical interferometric signature of that sign is the subject of <em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>.</p>
+<p>The practical rule for this block: an exponential coordinate is used where a <em>path</em> is what is meant — a continuous motion of a frame — and never where an element alone is meant.</p>
+<h3 id="the-reconstruction-check">The Reconstruction Check</h3>
+<p>The chart is used numerically throughout the block, and the check that it is being used correctly is the round trip. On four elements — a rotation by $0.7$, a boost of rapidity $0.9$, their product, and a random unit-norm element — computing a traceless logarithm and exponentiating again returns the element to $2\times10^{-16}$. The two central elements $\pm e_t$ are on the cut locus and need the analytic values $\exp(0)=e_t$ and $\exp(\operatorname{diag}(i\pi,-i\pi))=-e_t$; a naive numerical logarithm fails there, and that failure is the visible face of the excluded conjugacy class. The branches and the cut are the subject of <em>The Exponential Map from Algebra to Group</em>; the point here is that a numerical reader can trust the chart away from the cut.</p>
+<h2 id="summary">Summary</h2>
+<p>The group of unit-norm biquaternions is the set of elements whose quaternionic norm is exactly $1$, a complex condition, and it is $SL(2,\mathbb{C})$. It is closed under multiplication because the norm is multiplicative, its inverse is the quaternion conjugate, and its centre is $\{\pm e_t\}$. It has two descriptions: one complex equation, or a unique pair of a positive Hermitian factor and a unitary factor, which is the pair of a boost and a rotation. Its real dimension is six, three plus three; the associative algebra has eight because the group is cut out by two real conditions, and the Lie algebra has six because it is the traceless part. Its compact subgroup is $SU(2)$, the rotations; the boosts form the non-compact symmetric space $G/K\cong\mathbb{R}^{3}$; the group retracts onto $S^{3}$ and is simply connected. The exponential chart is locally one-to-one, covers the group except for one conjugacy class, and fails to be one-to-one exactly along the compact direction, where a $2\pi$ turn returns the negative of the identity and every axis meets at one point.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde U$</td>
+<td>an element of $G$, a unit-norm biquaternion</td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation, $\tilde U^{\natural}=U_t-U_x\vec e_x-U_y\vec e_y-U_z\vec e_z$</td>
+</tr>
+<tr>
+<td>$\langle\tilde U\rangle_{\natural}$</td>
+<td>the quaternionic norm, $U_t^{2}+U_x^{2}+U_y^{2}+U_z^{2}$</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the unit-norm group, $\cong SL(2,\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>the maximal compact subgroup, $\cong SU(2)$, the rotations</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the positive Hermitian elements of unit norm, the boosts</td>
+</tr>
+<tr>
+<td>$\tilde H\tilde K$</td>
+<td>the polar pair, boost times rotation</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
+<td>rapidity and boost axis</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$</td>
+<td>rotation angle and axis</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — $SL(2,\mathbb{C})$, its maximal compact subgroup, the Cartan decomposition and the symmetric space $G/K$.</li>
+<li>B. C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>, 2nd ed., Springer, 2015 — the matrix exponential, its surjectivity on $SL(2,\mathbb{C})$ and the structure of its fibres.</li>
+<li>S. Lang, <em>$SL_2(\mathbb{R})$</em>, Addison-Wesley, 1975 — the same group and its decompositions treated as a working object, with the topology done explicitly.</li>
+<li>P. Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed., Cambridge University Press, 2001 — the unit-norm biquaternions as a Clifford group and the identification with $SL(2,\mathbb{C})$.</li>
+<li><em>The Lorentz Group in Biquaternionic Form — Structure and Representations</em>, §<em>The Group of Unit-Norm Biquaternions</em> — the survey's own statement of the closure, the inverse and the dimension.</li>
+<li><em>The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form</em>, <em>The Exponential Map from Algebra to Group</em>, <em>A Frame Is a Boost Times a Rotation: The Cartan Word</em> — the three articles that take this group apart.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

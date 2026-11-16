@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$P$, $T$ and the Representation Labels — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-math1-and-the-representation-labels"><strong>$P$, $T$ and the Representation Labels</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Poincaré algebra has two Casimirs: the momentum squared and the Pauli–Lubanski scalar. Their eigenvalues are the two labels of a one-particle representation, the mass and the spin, and the pair $(m,j)$ names the representation up to unitary equivalence. On the null cone one combination degenerates and the labels become $(0,h)$, the mass and the helicity.</p>
+<p>The title names the two discrete operations that act on those labels. This article states both Casimirs, computes them on the two orbits, reads them as little-group labels, and then says what parity and time reversal do to the labelling and what they do not do.</p>
+<p>The article assumes <em>Wigner's Classification: Two Casimirs, Three Orbits</em> for the orbit picture, <em>The Little Group of a Massive Particle: $\mathrm{SU}(2)$</em> and <em>The Little Group of a Null Momentum: $E(2)$</em> for the stabilisers, <em>The Two Casimirs of the Lorentz Algebra</em> for the Lorentz part, and <em>The Null Cone: The Massless Boundary</em> for the cone. The corpus's Pauli–Lubanski conventions, including the sign of the invariant, are those of <em>The Determination of the Possible Spins in Biquaternionic Form</em>, and this article follows them.</p>
+<h2 id="the-poincare-algebra">The Poincaré Algebra</h2>
+<h3 id="what-is-added-to-the-lorentz-algebra">What Is Added to the Lorentz Algebra</h3>
+<p>The Poincaré algebra is the Lorentz algebra together with four translation generators $\tilde P_\mu$:</p>
+<p>$$
+[\tilde M_{\mu\nu},\tilde P_\rho]=\text{(the Lorentz action on a vector)},
+\qquad
+[\tilde P_\mu,\tilde P_\nu]=0 .
+$$</p>
+<p>The translations commute, so the algebra is not simple, and its Casimirs are not the Casimirs of the Lorentz part alone. That is the whole structural difference, and it is what makes the labels physical: a Lorentz Casimir alone labels a representation of the homogeneous group, and a particle needs a momentum.</p>
+<h3 id="the-casimirs">The Casimirs</h3>
+<p>Two independent Casimir operators exist:</p>
+<p>$$
+C_1=\tilde P^{2}=\tilde P_\mu\tilde P^{\mu},
+\qquad
+C_2=\tilde W^{2}=-\tilde W_\mu\tilde W^{\mu},
+$$</p>
+<p>with $\tilde W_\mu$ the Pauli–Lubanski vector defined below. "Casimir" means commuting with all ten generators, so their eigenvalues are constant on an irreducible module.</p>
+<h3 id="why-there-are-exactly-two">Why There Are Exactly Two</h3>
+<p>The Poincaré algebra has rank two after the translations are included: the momentum's length and one further invariant built from the Lorentz generators. The count is the same count that gives the Lorentz algebra's two Casimirs in <em>The Two Casimirs of the Lorentz Algebra</em>, with one of them promoted to the momentum and the other replaced by the Pauli–Lubanski scalar.</p>
+<h2 id="the-first-casimir-the-mass">The First Casimir: The Mass</h2>
+<h3 id="the-momentum-squared">The Momentum Squared</h3>
+<p>$C_1=p^{2}$ is the invariant length of the four-momentum. Its sign separates the three orbits:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$p^{2}$</th>
+<th>orbit</th>
+<th>physical name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$>0$</td>
+<td>the hyperboloid</td>
+<td>massive</td>
+</tr>
+<tr>
+<td>$=0$</td>
+<td>the cone, minus the vertex</td>
+<td>massless</td>
+</tr>
+<tr>
+<td>$<0$</td>
+<td>the other hyperboloid</td>
+<td>tachyonic</td>
+</tr>
+</tbody>
+</table></div>
+<p>The block treats the first two; the third is the same algebra with the sign of the invariant flipped and is not a physical orbit of a stable particle.</p>
+<h3 id="the-two-sign-conventions-of-the-slices">The Two Sign Conventions of the Slices</h3>
+<p>The corpus writes the norm of a four-momentum in two ways because it works on two real slices.</p>
+<ul>
+<li>On the <strong>Hermitian</strong> slice, where the norm is the interval $q_t^{2}-\lvert\vec q\rvert^{2}$ of <em>The Null Cone: The Massless Boundary</em>, a timelike momentum has norm $+m^{2}c^{2}$. This is the convention this article uses for $C_1$ and $C_2$, and it is the one the other articles of the block use, so that the rest momentum is $\tilde P_{\mathrm{rest}}=mc\,e_t$ and $p^{2}=+m^{2}c^{2}$.</li>
+<li>On the <strong>material</strong> slice the four-momentum has $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$, the convention of <em>The Determination of the Possible Spins in Biquaternionic Form</em>; the two readings differ by the sign of the norm.</li>
+</ul>
+<p>Both are statements about $p^{2}$; the difference is the sign of the norm on the slice, and a formula transplanted from one slice to the other needs a sign. Nothing in the labelling depends on which is used, because the labels are the eigenvalues of Casimirs and not the norms themselves.</p>
+<h3 id="the-shell">The Shell</h3>
+<p>$C_1=m^{2}c^{2}$ defines the mass shell: a three-dimensional hyperboloid in momentum space for $m\neq0$, and the cone for $m=0$. The shell is the orbit, and the label $m$ is the orbit's name.</p>
+<h2 id="the-paulilubanski-vector">The Pauli–Lubanski Vector</h2>
+<h3 id="the-definition">The Definition</h3>
+<p>$$
+\tilde W_\mu=\tfrac12\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\tilde M^{\nu\rho}\tilde P^{\sigma}.
+$$</p>
+<p>It is the contraction of the Lorentz generators with the momentum, weighted by the alternating symbol; equivalently, it is the spin part of the angular momentum projected onto the momentum.</p>
+<h3 id="the-three-properties">The Three Properties</h3>
+<ul>
+<li>$\tilde W_\mu\tilde P^{\mu}=0$: the vector is orthogonal to the momentum, identically, because the alternating symbol is antisymmetric in a pair and $P^{\sigma}P^{\mu}$ is symmetric.</li>
+<li>$[\tilde W_\mu,\tilde P_\nu]=0$: the Pauli–Lubanski vector is translation invariant, since it is built from $P$ bilinearly after the contraction.</li>
+<li>$[\tilde W_\mu,\tilde W_\nu]$ is proportional to $\epsilon_{\mu\nu\rho\sigma}\tilde W^{\rho}\tilde P^{\sigma}$, so the $\tilde W$'s close among themselves only on a fixed momentum shell.</li>
+</ul>
+<p>The second property is what makes $C_2$ a Casimir: a quantity built from $P$ and $M$ that commutes with $P$ and whose square commutes with $M$ is central.</p>
+<h3 id="the-scalar">The Scalar</h3>
+<p>$C_2=-\sum_\mu\tilde W_\mu\tilde W^{\mu}$ is the invariant content of the vector. On the rest frame of a massive particle,</p>
+<p>$$
+W_0=0,\qquad \vec W=\pm mc\vec S,
+$$</p>
+<p>with the sign fixed by the orientation convention of $\epsilon$, so</p>
+<p>$$
+C_2=m^{2}c^{2}\lvert\vec S\rvert^{2}=\hbar^{2}m^{2}c^{2}s(s+1).
+$$</p>
+<p>The computation is verified in the spin-$\tfrac12$ representation of the Lorentz algebra: with $\tilde P=(mc,0,0,0)$, the four Pauli–Lubanski generators come out as $W_0=0$ and $\vec W=-mc\vec J$, and $C_2=\tfrac34\hbar^{2}m^{2}c^{2}$, which is $s(s+1)$ at $s=\tfrac12$.</p>
+<h3 id="why-math51-is-the-spin">Why $C_2$ Is the Spin</h3>
+<p>$\vec W/(mc)$ is the spin vector in the rest frame, so $C_2/(m^{2}c^{2})$ is the Casimir of the rest-frame rotation group. That is the content of the next section's little-group reading, and it is the reason the spin label is not an independent input: it is what $C_2$ measures.</p>
+<h2 id="the-two-labels">The Two Labels</h2>
+<h3 id="the-pair-math55">The Pair $(m,j)$</h3>
+<p>An irreducible unitary module of the Poincaré group of positive mass is labelled by</p>
+<p>$$
+(m,j),\qquad m>0,\quad j\in\{0,\tfrac12,1,\tfrac32,\dots\},
+$$</p>
+<p>and the module has dimension $2j+1$ times the dimension of the momentum space's orbit measure. The two numbers are the eigenvalues of the two Casimirs:</p>
+<p>$$
+C_1=m^{2}c^{2},\qquad C_2=\hbar^{2}m^{2}c^{2}j(j+1).
+$$</p>
+<h3 id="the-rest-frame">The Rest Frame</h3>
+<p>In the rest frame the momentum is $(mc,\vec 0)$ and the little group is the rotation group; the module restricts to the spin-$j$ representation of $SU(2)$, of dimension $2j+1$. So the label $j$ is the spin of the rest-frame state, and the momentum label is the orbit.</p>
+<h3 id="the-counting">The Counting</h3>
+<p>$$
+\underbrace{2}_{\text{continuous labels}}=\underbrace{1}_{\text{mass}}+\underbrace{1}_{\text{spin}},
+$$</p>
+<p>and the spin's one parameter is discrete. The rest of the representation is the orbit: three momentum parameters, of which the mass fixes one combination and the little group acts on the rest.</p>
+<h2 id="the-massless-case">The Massless Case</h2>
+<h3 id="the-proportionality">The Proportionality</h3>
+<p>On the cone, $\tilde W_\mu\tilde P^{\mu}=0$ and $\tilde W$ is orthogonal to a null vector, so $\tilde W$ is either proportional to $\tilde P$ or spacelike. The physical (finite-dimensional) case is the proportional one:</p>
+<p>$$
+\tilde W_\mu=h\,\tilde P_\mu ,
+$$</p>
+<p>with $h$ a constant on the module. Then $C_2=-\sum\tilde W_\mu\tilde W^{\mu}=h^{2}\cdot 0=0$, so the second Casimir <em>vanishes</em> on the massless orbit and the label $h$ is not read from it.</p>
+<h3 id="the-helicity">The Helicity</h3>
+<p>$h$ is the <strong>helicity</strong>: the component of the spin along the momentum, in units of $\hbar$. It is invariant under the little group $E(2)$'s compact part and fixed by the requirement that the two null rotations act trivially. The massless labels are</p>
+<p>$$
+(0,h),\qquad h\in\{0,\pm\tfrac12,\pm1,\dots\},
+$$</p>
+<p>and parity, if it is a symmetry, requires both $h$ and $-h$ in the spectrum.</p>
+<h3 id="the-fold">The Fold</h3>
+<p>The label space folds along the cone: for $m>0$ the two Casimirs are independent, and for $m=0$ one of them is identically zero and the other carries a label that has no massive analogue. So the massless labelling is not the $m\to0$ limit of the massive one, and a reader who tries to take the limit term by term will find that the multiplicities diverge: the little group has grown from $SU(2)$ to $E(2)$.</p>
+<h3 id="the-other-massless-case">The Other Massless Case</h3>
+<p>The second possibility, $\tilde W$ spacelike, gives the "continuous spin" representations: infinitely many states per momentum, labelled by a continuous parameter. They are unitary and they are not realised in nature. The block names them and does not use them.</p>
+<h2 id="pt-and-the-labels">PT and the Labels</h2>
+<h3 id="the-two-operations">The Two Operations</h3>
+<p>Parity reverses the spatial momentum and leaves the energy; time reversal reverses both the momentum and the spin. Neither is in the connected Lorentz group, so neither is an element whose action the block's group theory supplies; both are discrete operations that act on the label set.</p>
+<h3 id="what-pt-does-to-the-labels">What PT Does to the Labels</h3>
+<p>$PT$ leaves the momentum invariant, so it preserves $C_1$. It reverses the spin vector, so it preserves $C_2$ as well, since a Casimir is quadratic in the spin. On the labels,</p>
+<p>$$
+PT:(m,j)\longmapsto(m,j),\qquad (0,h)\longmapsto(0,-h).
+$$</p>
+<p>The second entry is the interesting one: on the massless orbit the second Casimir is zero and the label $h$ is a <em>linear</em> function of the spin, so the discrete operation that reverses the spin reverses the helicity, while on the massive orbit the label is quadratic and survives.</p>
+<p>That is the precise sense in which PT "does nothing to the labels" and the precise sense in which it does something: the Casimir labels are untouchable, and the helicity is not a Casimir label.</p>
+<h3 id="what-it-does-not-do">What It Does Not Do</h3>
+<p>$PT$ does not identify two inequivalent representations, and it does not make the labelling ambiguous. It maps a representation to another one, and the map happens to be the identity on the massive labels and the flip on the massless ones. A statement that PT "doubles the spectrum" is a statement about which representations are realised in a PT-symmetric theory, not about the labelling.</p>
+<h2 id="the-little-group-reading">The Little-Group Reading</h2>
+<h3 id="the-stabiliser">The Stabiliser</h3>
+<p>The little group of a momentum $\tilde P$ is</p>
+<p>$$
+G_{\tilde P}=\{\tilde U\in G:\mathrm{Cg}_{\tilde U}(\tilde P)=\tilde P\},
+$$</p>
+<p>the stabiliser under the congruence of <em>The Two Actions of One Group: Adjoint and Congruence</em>. For a timelike momentum it is isomorphic to $SU(2)$; for a null momentum it is the double cover of $E(2)$.</p>
+<h3 id="the-labels-as-little-group-labels">The Labels as Little-Group Labels</h3>
+<p>A representation of the Poincaré group is a representation of the little group, induced to the whole group. So the labels are little-group labels:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>orbit</th>
+<th>little group</th>
+<th>label</th>
+<th>what it names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timelike</td>
+<td>$SU(2)$</td>
+<td>$j$</td>
+<td>the spin, dimension $2j+1$</td>
+</tr>
+<tr>
+<td>null</td>
+<td>$E(2)$</td>
+<td>$h$</td>
+<td>the helicity, one state per sign</td>
+</tr>
+<tr>
+<td>spacelike</td>
+<td>$SU(1,1)$</td>
+<td>continuous</td>
+<td>not physical</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="why-the-two-readings-agree">Why the Two Readings Agree</h3>
+<p>The Casimir reading says the labels are the eigenvalues of central operators. The little-group reading says they are the labels of the stabiliser's representations. They agree because a Casimir restricted to the stabiliser is a Casimir of the stabiliser: $C_2$ becomes $m^{2}c^{2}\vec S^{2}$ on the rest frame, which is the $SU(2)$ Casimir, and on the cone it collapses to zero while the helicity becomes the label of $E(2)$'s compact part.</p>
+<h3 id="the-consistency-of-the-block">The Consistency of the Block</h3>
+<p>The two readings are used in different articles of the block for different purposes: the Casimir reading gives the value, the little-group reading gives the count of states. Neither is more fundamental, and the block's statements about "the two labels" always mean the pair $(m,j)$ or its massless substitute.</p>
+<h2 id="summary">Summary</h2>
+<p>The Poincaré algebra has two Casimirs, $C_1=p^{2}$ and $C_2=-\sum_\mu W_\mu W^{\mu}$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$C_1=\tilde P^{2}$</td>
+<td>the momentum Casimir</td>
+</tr>
+<tr>
+<td>$C_2=-\sum_\mu\tilde W_\mu\tilde W^{\mu}$</td>
+<td>the Pauli–Lubanski Casimir</td>
+</tr>
+<tr>
+<td>$\mathcal{C}_{1,2}$</td>
+<td>the Casimirs of the Lorentz algebra, a different pair</td>
+</tr>
+<tr>
+<td>$\tilde W_\mu$</td>
+<td>the Pauli–Lubanski vector</td>
+</tr>
+<tr>
+<td>$(m,j)$</td>
+<td>the massive labels</td>
+</tr>
+<tr>
+<td>$(0,h)$</td>
+<td>the massless labels</td>
+</tr>
+<tr>
+<td>$G_{\tilde P}$</td>
+<td>the little group of the momentum</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>helicity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", <em>Annals of Mathematics</em> 40 (1939) 149 — the two Casimirs and the orbit classification.</li>
+<li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §2.4–2.6 — the Pauli–Lubanski vector, the little groups and the helicity labels.</li>
+<li>Y. Ohnuki, <em>Unitary Representations of the Poincaré Group and Relativistic Wave Equations</em>, World Scientific, 1988 — the induced-representation construction with the Casimir eigenvalues computed explicitly.</li>
+<li><em>The Determination of the Possible Spins in Biquaternionic Form</em> — the corpus's Pauli–Lubanski conventions and the sign of the invariant.</li>
+<li><em>Wigner's Classification: Two Casimirs, Three Orbits</em> — the orbit picture in this block.</li>
+<li><em>The Little Group of a Null Momentum: $E(2)$</em> — the stabiliser that produces the helicity label.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
