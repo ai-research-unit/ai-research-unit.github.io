@@ -342,7 +342,7 @@ $$</p>
 </tr>
 <tr>
 <td>the seven data $(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$</td>
-<td>seven named data, eight real numbers once each unit vector is counted by two angles; six on the unit group, one scale, one phase</td>
+<td>seven named data, eight real numbers once each unit vector is counted by two angles; six on the group of invertibles, one scale, one phase</td>
 </tr>
 <tr>
 <td>$[\tilde U_{\mathrm b},\tilde u_{\mathrm r}]=0$</td>
@@ -399,7 +399,7 @@ $$</p>
 <pre><code>entry 3  isomorphisms ──→ entry 4  matrix model ──→ entry 11 generators ──→ entry 13 Casimirs
       │                        │                            │
       ↓                        ↓                            ↓
-entry 5  portal ──→ entry 6  unit group ──→ entry 16 Cartan word ──→ entry 19 normal axes
+entry 5  portal ──→ entry 6  group of invertibles ──→ entry 16 Cartan word ──→ entry 19 normal axes
                                                     │
                                                     ↓
 entry 10 cover ──→ entry 24 spinor ──→ entry 27 self-dual ──→ entry 29 non-unitarity
@@ -970,7 +970,7 @@ entry 10 cover ──→ entry 24 spinor ──→ entry 27 self-dual ──→ 
 <p><strong>4. The Matrix Model.</strong> The object is the $2\times2$ array. The claim is that the model is a faithful display that loses exactly two things: the distinction between the scale and the phase, which are both a modulus, and the distinction between the two walls, which both become a degenerate determinant. It must not claim that the matrix is the algebra.</p>
 <p><strong>13. The Two Casimirs of the Lorentz Algebra.</strong> The object is a label. The claim is that two numbers classify an irreducible representation and that the two numbers are the Casimirs of the two $\mathfrak{su}(2)$ halves. Verified: with $\vec J_{\pm}=(\vec J\pm i\vec K)/2$ the two triples commute and each closes as $\mathfrak{su}(2)$; $\vec J^{2}-\vec K^{2}=2(\vec J_{+}^{2}+\vec J_{-}^{2})$ and $(\vec J\cdot\vec K+\vec K\cdot\vec J)/2=i(\vec J_{+}^{2}-\vec J_{-}^{2})$, both invariant; on the vector representation $(\tfrac12,\tfrac12)$ the first has the eigenvalue $-2\cdot\tfrac32$ in the sign convention of the check and the second has eigenvalue $0$. The article must fix its own normalization, because the factors $2$ and $i$ are conventional, and the review's form $m(m+1)\pm n(n+1)$ is that pair only after the factor is fixed. It must also say what the two Casimirs cannot do: they do not separate $(\tfrac12,0)$ from $(0,\tfrac12)$ unless the sign of one of them is used, and they are not the Poincar\'e Casimirs.</p>
 <p><strong>14. The Cartan Subalgebra, the Roots and the Three Real Forms.</strong> The object is the signature. The claim is that the Lorentz algebra, the Euclidean algebra and the split algebra are three real slices of one complex algebra, and that the physical choice of signature is a choice of slice. This is the article that makes <em>The SO(4) Route</em> intelligible. It must not claim that the three slices are equivalent physically.</p>
-<p><strong>15. The Exponential Map from Algebra to Group.</strong> The object is the group element reached from the identity. The claim is that the exponential is surjective and that the elements needing two generators are exactly the non-normal ones in the unit group. It carries the logarithm, the branch and the fibre. Verified: $\lVert\exp\log A-A\rVert\le1.1\times10^{-15}$ on five elements, including the Jordan one.</p>
+<p><strong>15. The Exponential Map from Algebra to Group.</strong> The object is the group element reached from the identity. The claim is that the exponential is surjective and that the elements needing two generators are exactly the non-normal ones in the group of invertibles. It carries the logarithm, the branch and the fibre. Verified: $\lVert\exp\log A-A\rVert\le1.1\times10^{-15}$ on five elements, including the Jordan one.</p>
 <p><strong>28. $P$, $T$ and the Representation Labels.</strong> The object is the label under a reflection. The claim is that parity exchanges $(m,n)$ with $(n,m)$, which is why the Dirac pair is the minimal parity-invariant fermion and why chirality is not defined for the full group. Everything else about the discrete symmetries is already written: the operators in <em>The Reflection and the Rotation in Biquaternionic Form</em>, charge conjugation in <em>Antilinear Structure and the Two Kinds of Mass</em>, the combined statement in <em>The CPT Theorem</em>, and the order-four quotient — which is the four components of $O(1,3)$ — in <em>Parra's Four Options</em>. This entry adds the exchange of labels and nothing else.</p>
 <p><strong>32. Wigner's Classification.</strong> The object is a momentum. The claim is that mass is the orbit and spin is the little-group label, and that the algebra's finite carriers are not the physical modules. It separates what the corpus proves — the sign of $P^{2}$ from the Casimir, the little-group structure, the weight — from what it imports, the unitary representation theory of the little groups. The spacelike orbit is a closing subsection, not an entry of its own: $SU(1,1)$, the continuous series, and the plain statement that no tachyon is observed.</p>
 <p><strong>33. The Little Group of a Massive Particle.</strong> The object is the rest frame. The claim is that the stabiliser of a timelike momentum is $SU(2)$ and that the boost is the transport whose failure to be a homomorphism is the Wigner rotation. It is the article the Thomas exercise assumes.</p>
@@ -1132,7 +1132,7 @@ entry 10 cover ──→ entry 24 spinor ──→ entry 27 self-dual ──→ 
 </tr>
 </tbody>
 </table></div>
-<p>The survey has <strong>ten</strong> substantive sections between its introduction and its summary: Rotors, the group of unit-norm biquaternions, the group of units and its representations, the non-closure of the boosts, the Lie algebra, the two $\mathrm{SU}(2)$ halves, the finite-dimensional representations, where the algebra sits, the two-to-one cover, and the $*$-unitary representations. Its summary, its table of notation and its further reading are back matter and stay in the portal. The tenth row of the table above is therefore a subsection of the tenth section, not a section, and it is accounted for separately.</p>
+<p>The survey has <strong>ten</strong> substantive sections between its introduction and its summary: Rotors, the group of unit-norm biquaternions, the group of invertibles and its representations, the non-closure of the boosts, the Lie algebra, the two $\mathrm{SU}(2)$ halves, the finite-dimensional representations, where the algebra sits, the two-to-one cover, and the $*$-unitary representations. Its summary, its table of notation and its further reading are back matter and stay in the portal. The tenth row of the table above is therefore a subsection of the tenth section, not a section, and it is accounted for separately.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -1145,7 +1145,7 @@ entry 10 cover ──→ entry 24 spinor ──→ entry 27 self-dual ──→ 
 <tr>
 <td>become one article each</td>
 <td>7</td>
-<td>unit-norm group, group of units, boosts, Lie algebra, two $\mathrm{SU}(2)$ halves, where the algebra sits, $*$-unitary</td>
+<td>unit-norm group, group of invertibles, boosts, Lie algebra, two $\mathrm{SU}(2)$ halves, where the algebra sits, $*$-unitary</td>
 </tr>
 <tr>
 <td>becomes two articles</td>

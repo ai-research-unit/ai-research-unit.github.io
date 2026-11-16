@@ -78,18 +78,18 @@ $$</p>
 <p>The reason a separate name and a separate article are needed is that the even part of the algebra and the odd part behave differently, and the difference is exactly the sign. On an even element the factors $\alpha(x)$ and $x$ coincide and the signed inner conjugation is the inner conjugation, an algebra automorphism; on an odd element the two differ by $-1$, so the signed inner conjugation is the inner conjugation composed with the sign, a map that is multiplicative only up to that sign, yet still bijective, still preserving the parity grading, and on the space of vectors the one that returns the reflection. The inner conjugation and the signed inner conjugation therefore agree on $\mathrm{Cl}^0$ and differ on $\mathrm{Cl}^1$, and only the signed one has the kernel and the action on $V$ on which the pin and spin groups are built.</p>
 <p>The Clifford algebra, its parity grading and the three intrinsic involutions $\alpha$, $r$ and $x^{\natural}=\alpha(x^{r})$ are from <em>Clifford Algebras</em> and <em>Clifford Algebras in Finite Dimensions</em>. The general two-sided family, its five members, its value at the unit, its parity and its composition law are <em>The Family of Two-Sided Operators on a Clifford Algebra</em>, and nothing of that general theory is re-derived here. The restriction to the quadratic space, the Clifford group $\Gamma(V,\mathfrak{Q})$ and the groups cut out of it by the Clifford norm are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>; the one-sided factors of the operator are <em>One-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>, and its role on a module is <em>Pin Representations and Clifford Modules with Signed Inner Conjugation</em>; and the reason the signed member is not a second independent structure, with the cancellation of two odd signs and the graded decomposition of the algebra, is <em>The Grading of the Clifford Algebra with Signed Inner Conjugation</em>. The base is a field $F$ of characteristic not $2$, with $q$ a non-degenerate quadratic form on the finite-dimensional space $V$ and $B$ its polar form.</p>
 <h2 id="the-operator-and-the-parity-sign">The Operator and the Parity Sign</h2>
-<p><strong>Definition.</strong> Let $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be a unit. The <strong>signed inner conjugation</strong> by $x$ is the $F$-linear map</p>
+<p><strong>Definition.</strong> Let $x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}$ be an invertible element. The <strong>signed inner conjugation</strong> by $x$ is the $F$-linear map</p>
 <p>$$
 \mathrm{Ad}^{\alpha}_x:\mathrm{Cl}(V,\mathfrak{Q})\longrightarrow\mathrm{Cl}(V,\mathfrak{Q}),\qquad \mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}.
 $$</p>
-<p>It is the operator of <em>The Family of Two-Sided Operators on a Clifford Algebra</em> attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the unit group alone, because the right factor is the inverse.</p>
+<p>It is the operator of <em>The Family of Two-Sided Operators on a Clifford Algebra</em> attached to the pair $\theta=\alpha$, $c=(\ )^{-1}$, and it is defined on the group of invertibles alone, because the right factor is the inverse.</p>
 <p><strong>Proposition (the parity sign).</strong> Let $x$ be homogeneous of degree $k$ and let $\varepsilon_x=(-1)^{k}$, so that $\alpha(x)=\varepsilon_x\,x$. Then</p>
 <p>$$
 \boxed{\;\mathrm{Ad}^{\alpha}_x=\varepsilon_x\,\mathrm{Ad}_x\;},
 $$</p>
 <p>where $\mathrm{Ad}_x(y)=x\,y\,x^{-1}$ is the inner conjugation. In particular $\mathrm{Ad}^{\alpha}_x=\mathrm{Ad}_x$ when $x$ is even, and $\mathrm{Ad}^{\alpha}_x=-\mathrm{Ad}_x$ when $x$ is odd.</p>
 <p><em>Proof.</em> The grade involution multiplies the degree-$k$ part by $(-1)^k$, so $\alpha(x)=\varepsilon_x x$; substituting into the definition gives $\mathrm{Ad}^{\alpha}_x(y)=\varepsilon_x x\,y\,x^{-1}$, and $\varepsilon_x$ is central because it is a scalar.</p>
-<p><strong>Proposition (value at the unit and parity).</strong> For every unit $x$ one has $\mathrm{Ad}^{\alpha}_x(1)=\varepsilon_x$, that is $+1$ on the even part and $-1$ on the odd part, and $\mathrm{Ad}^{\alpha}_x$ preserves the parity grading, $\mathrm{Ad}^{\alpha}_x(\mathrm{Cl}^i)\subseteq\mathrm{Cl}^i$.</p>
+<p><strong>Proposition (value at the unit and parity).</strong> For every invertible $x$ one has $\mathrm{Ad}^{\alpha}_x(1)=\varepsilon_x$, that is $+1$ on the even part and $-1$ on the odd part, and $\mathrm{Ad}^{\alpha}_x$ preserves the parity grading, $\mathrm{Ad}^{\alpha}_x(\mathrm{Cl}^i)\subseteq\mathrm{Cl}^i$.</p>
 <p><em>Proof.</em> The value at the unit is $\alpha(x)x^{-1}=\varepsilon_x x\,x^{-1}=\varepsilon_x$. For the grading, each of the maps $\alpha$ and $\mathrm{Ad}_x$ preserves the degree modulo two, and a scalar multiple does not change that.</p>
 <p><strong>Remark.</strong> The value at the unit is the whole difference. On the even part of the algebra the inner conjugation and the signed inner conjugation are the same automorphism, which is why a rotation, carried by an even element, is described by either of them; on the odd part they differ by the sign $-1$, and it is the odd part that carries the reflections.</p>
 <h2 id="the-automorphism-and-its-sign">The Automorphism and Its Sign</h2>
@@ -97,7 +97,7 @@ $$</p>
 <p>$$
 \mathrm{Ad}^{\alpha}_x\circ\mathrm{Ad}^{\alpha}_z=\mathrm{Ad}^{\alpha}_{xz},\qquad x,z\in\mathrm{Cl}(V,\mathfrak{Q})^{\times}.
 $$</p>
-<p>So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the unit group to the group of $F$-linear bijections of $\mathrm{Cl}(V,\mathfrak{Q})$, with image isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/F^{\times}$.</p>
+<p>So $x\mapsto\mathrm{Ad}^{\alpha}_x$ is a homomorphism from the group of invertibles to the group of $F$-linear bijections of $\mathrm{Cl}(V,\mathfrak{Q})$, with image isomorphic to $\mathrm{Cl}(V,\mathfrak{Q})^{\times}/F^{\times}$.</p>
 <p><em>Proof.</em> For the composition, $\mathrm{Ad}^{\alpha}_x\bigl(\mathrm{Ad}^{\alpha}_z(y)\bigr)=\alpha(x)\bigl(\alpha(z)\,y\,z^{-1}\bigr)x^{-1}=\alpha(xz)\,y\,(xz)^{-1}$. Taking $z=x^{-1}$ gives the inverse. The kernel is computed in the next section.</p>
 <p><strong>Proposition (multiplicativity, with the sign).</strong> Let $x$ be homogeneous of degree $k$ and $\varepsilon_x=(-1)^{k}$. Then for all $y,z$,</p>
 <p>$$
@@ -113,13 +113,13 @@ $$</p>
 <p><strong>Remark.</strong> The two propositions together say precisely what kind of object the signed inner conjugation is: an automorphism of the algebra on the even part, and a twisted automorphism on the odd part. It is not an inner automorphism in the ordinary sense when $x$ is odd, since $\mathrm{Ad}^{\alpha}_x=-\mathrm{Ad}_x$ and $-\mathrm{Ad}_x$ is not multiplicative; it is what the geometric layer needs, because the reflection formula carries the same minus.</p>
 <h2 id="the-kernel-and-the-centre">The Kernel and the Centre</h2>
 <p>The inner conjugation and the signed inner conjugation have different kernels, and that difference is the second place where the minus is load-bearing.</p>
-<p><strong>Proposition.</strong> The kernel of the inner conjugation on the unit group is the group of units of the centre,</p>
+<p><strong>Proposition.</strong> The kernel of the inner conjugation on the group of invertibles is the group of invertibles of the centre,</p>
 <p>$$
 \ker\mathrm{Ad}=\{\,x\in\mathrm{Cl}(V,\mathfrak{Q})^{\times} : xy=yx\ \text{for all } y\,\}=Z\bigl(\mathrm{Cl}(V,\mathfrak{Q})\bigr)^{\times},
 $$</p>
 <p>which is $F^{\times}\cdot1$ when $\dim V$ is even and $F^{\times}\cdot1\cup F^{\times}\omega$ when $\dim V$ is odd, where $\omega$ is the volume element.</p>
-<p><em>Proof.</em> $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is a unit because $\omega^{2}=\pm1$, a nonzero scalar.</p>
-<p><strong>Proposition.</strong> The kernel of the signed inner conjugation on the unit group is the group of nonzero scalars,</p>
+<p><em>Proof.</em> $\mathrm{Ad}_x=\mathrm{id}$ says $xy=yx$ for every $y$. The centre of a Clifford algebra of a non-degenerate form is $F$ in even dimension and $F\oplus F\omega$ with $\omega$ odd in odd dimension; a central element of odd dimension is invertible because $\omega^{2}=\pm1$, a nonzero scalar.</p>
+<p><strong>Proposition.</strong> The kernel of the signed inner conjugation on the group of invertibles is the group of nonzero scalars,</p>
 <p>$$
 \boxed{\;\ker\mathrm{Ad}^{\alpha}=F^{\times}\cdot1\;} ,
 $$</p>
@@ -169,7 +169,7 @@ $$</p>
 </table></div>
 <p>The second row is the reflection $\rho_{e_1}$ and the first its negative, and the values at the unit are $+1$ and $-1$ respectively.</p>
 <h3 id="the-volume-element">The Volume Element</h3>
-<p>In the same algebra the volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=1$, so it is a unit and $\alpha(\omega)=-\omega$. Hence</p>
+<p>In the same algebra the volume element $\omega=e_1e_2e_3$ is odd, central and satisfies $\omega^{2}=1$, so it is invertible and $\alpha(\omega)=-\omega$. Hence</p>
 <p>$$
 \mathrm{Ad}_{\omega}=\mathrm{id},\qquad \mathrm{Ad}^{\alpha}_{\omega}=-\mathrm{id},\qquad N(\omega)=\omega\bar\omega=\omega^{2}=1 .
 $$</p>
@@ -181,7 +181,7 @@ $$</p>
 $$</p>
 <p>which is the half-turn of the plane $\mathrm{span}(e_1,e_2)$: the rotation carried by the rotor, with no sign to correct.</p>
 <h3 id="a-split-signature">A Split Signature</h3>
-<p>In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not a unit and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $\mathfrak{Q}(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.</p>
+<p>In $\mathrm{Cl}_{1,1}(\mathbb{R})\cong M_2(\mathbb{R})$ with $e_1^{2}=1$ and $e_2^{2}=-1$, take $x=e_1+e_2$, an odd element with $x^{2}=0$. Then $x$ is not invertible and no member of the family is defined at $x$; the isotropic vector $e_1+e_2$ is exactly the element that the reflection formula cannot use, since $\mathfrak{Q}(e_1+e_2)=0$. The example isolates the invertibility hypothesis, which is the only hypothesis that the two inverse members share.</p>
 <h2 id="summary">Summary</h2>
 <p>The <strong>signed inner conjugation</strong> is the two-sided operator $\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$, the member of the family of <em>The Family of Two-Sided Operators on a Clifford Algebra</em> whose left factor carries the grade involution and whose right factor is the inverse. Its whole behaviour is governed by the parity sign: with $\varepsilon_x=(-1)^{k}$ on the degree-$k$ part,</p>
 <p>$$
@@ -208,7 +208,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Ad}_x(y)=x\,y\,x^{-1}$</td>
-<td>Inner conjugation, defined on the units</td>
+<td>Inner conjugation, defined on the invertibles</td>
 </tr>
 <tr>
 <td>$\mathrm{Ad}^{\alpha}_x(y)=\alpha(x)\,y\,x^{-1}$</td>
@@ -244,7 +244,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Gamma(V,\mathfrak{Q})$</td>
-<td>Clifford group, the units with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$</td>
+<td>Clifford group, the invertibles with $\mathrm{Ad}^{\alpha}_x(V)\subseteq V$</td>
 </tr>
 </tbody>
 </table></div>

@@ -499,7 +499,7 @@ $$
 \mathsf{M}_{\mathrm{pau},4L}(\tilde Q)=L(\tilde Q)=I_2\otimes\mathsf{M}_2(\tilde Q),
 $$
 so its four blocks are $\mathsf{M}_2(\tilde Q)$, $0$, $0$, $\mathsf{M}_2(\tilde Q)$.</p>
-<p><strong>The four left matrices.</strong> Each is the image of a unit,
+<p><strong>The four left matrices.</strong> Each is the image of an invertible element,
 $$
 L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},\qquad
 L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -825,7 +825,7 @@ iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\qquad
 iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y},\qquad
 -iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}\;}
 $$
-Each is a unit multiple of a basis operator; the left factor is a unit and the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §<em>The Legacy Pauli Gamma Formulation</em>; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too.</p>
+Each is an invertible multiple of a basis operator; the left factor is invertible and the right factor a spatial unit, written $\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(k)=y$. For the first and the last the left factor is $e_t$, so the basis operator collapses to a single right multiplication, $iR_{\mathrm{pau},\vec e_x}$ and $-iR_{\mathrm{pau},\vec e_z}$, and the two spellings are the same operator. In the Peirce frame the five are monomial matrices, written out in §<em>The Legacy Pauli Gamma Formulation</em>; in the axis-free frame they are $i$ times real signed permutation matrices, displayed there too.</p>
 <p><strong>The anticommutation relations.</strong>
 $$
 \{iL_{\mathrm{pau},e_\mu}R_{\mathrm{pau},\vec e_{\nu(\mu)}},iL_{\mathrm{pau},e_\nu}R_{\mathrm{pau},\vec e_{\nu(\nu)}}\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
@@ -1058,7 +1058,7 @@ $$
 \mathsf{M}_2(\tilde Q_1\tilde Q_2)=\mathsf{M}_2(\tilde Q_1)\mathsf{M}_2(\tilde Q_2),
 $$
 and it is the reading every numerical check in the corpus is performed with.</p>
-<p><strong>The four unit images.</strong> The images of the units are fixed once, because every article depends on them agreeing:
+<p><strong>The four unit images.</strong> The images of the invertibles are fixed once, because every article depends on them agreeing:
 $$
 \mathsf{M}_2(e_t)=I_2,\qquad
 \mathsf{M}_2(\vec e_x)=\begin{pmatrix}0&-i\\-i&0\end{pmatrix}=-i\sigma_1,\qquad
@@ -1082,7 +1082,7 @@ $$
 \det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
 \operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
 $$
-The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of units and the unit-norm group are read from it.</p>
+The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of invertibles and the unit-norm group are read from it.</p>
 <h3 id="the-bridge-to-the-math759-displays">The Bridge to the $4\times4$ Displays</h3>
 <p><strong>The block.</strong> In the Pauli frame the left regular matrix is $I_2\otimes\mathsf{M}_2(\tilde Q)$, so the $2\times2$ image is the block of the $4\times4$ display, and the right regular matrix is $\mathsf{M}_2(\tilde Q)^{\mathsf T}\otimes I_2$, the same block transposed in the other slot. This is the whole reason the Peirce frame earns its root: it turns a $4\times4$ operator into a $2\times2$ matrix written twice.</p>
 <p><strong>The frame moves the block, not the image.</strong> In the axis-free frame the same operator reads

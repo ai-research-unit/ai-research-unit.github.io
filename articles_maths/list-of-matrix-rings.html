@@ -71,7 +71,7 @@
         <h1 id="list-of-matrix-rings"><strong>List of Matrix Rings</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article lists the matrix rings $M_n(R)$ over the commutative rings and the matrix algebras over the fields, together with the rings and the algebras that are not of that form. The matrix ring is the model object of the subject: it is the algebra by which the associative theory is tested, it carries a basis — the matrix units — whose multiplication table is the clearest display of a non-commutative structure, and over a field it is simple, central and finite-dimensional. Every entry points to the article that introduces the object.</p>
-<p>The list is a proper subclass of <em>List of Algebras</em>: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals; the matrix rings over a commutative ring and over a division ring lie beyond that scope, and this one carries them together with the matrix algebras, with the matrix units, the centre, the units and the ideals of each, and beside them the rings and algebras that are not a matrix ring.</p>
+<p>The list is a proper subclass of <em>List of Algebras</em>: that article carries the algebras over a field of the corpus with their dimension, their centre and their ideals; the matrix rings over a commutative ring and over a division ring lie beyond that scope, and this one carries them together with the matrix algebras, with the matrix units, the centre, the invertibles and the ideals of each, and beside them the rings and algebras that are not a matrix ring.</p>
 <p>A ring-theoretic point governs the naming throughout. The object is a <strong>matrix ring</strong> when the row reads $M_n(R)$ over a commutative ring or $M_n(D)$ over a division ring, and a <strong>matrix algebra</strong> when the row reads it over a field and the algebra structure is what matters; the article that introduces the object is <em>Matrix Algebras</em>, and the rows for $M_n(R)$ and its structure point there whatever name the row uses.</p>
 <p>This article introduces nothing and proves nothing. It records examples and non-examples side by side, a non-example being a ring that is not a matrix ring in the sense of the list, with the failure named and the article that records it.</p>
 <h2 id="the-matrix-ring-and-its-matrix-units">The Matrix Ring and Its Matrix Units</h2>
@@ -124,7 +124,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The units satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of the matrix ring trivial over a field, and the products $E_{ij}E_{kl}$ with $j \neq k$ vanish, which is why the matrix ring is never a domain for $n \geq 2$.</p>
+<p>The invertibles satisfy $E_{ij} = E_{ik}E_{kj}$ for every $k$, which is the identity that makes the ideal theory of the matrix ring trivial over a field, and the products $E_{ij}E_{kl}$ with $j \neq k$ vanish, which is why the matrix ring is never a domain for $n \geq 2$.</p>
 <h2 id="the-matrix-algebras-over-a-field">The Matrix Algebras over a Field</h2>
 <p>Over a field the matrix ring is simple, its left ideals are the sets of matrices whose rows lie in a subspace, and its regular module is a direct sum of copies of the unique simple module.</p>
 <div class="table-scroll"><table>
@@ -159,8 +159,8 @@ $$</p>
 </tbody>
 </table></div>
 <p>Over a field the two-sided ideal structure is trivial, so a proper nonzero two-sided ideal is the one thing a matrix algebra does not have; the left ideals are not trivial, and they are classified by the subspaces of the row space.</p>
-<h2 id="the-centre-the-units-and-the-ideals">The Centre, the Units and the Ideals</h2>
-<p>The data that distinguish $M_n(R)$ from a general ring are the scalar centre, the determinant criterion for a unit, and the trace; all three are computed from the matrix units.</p>
+<h2 id="the-centre-the-invertibles-and-the-ideals">The Centre, the Invertibles and the Ideals</h2>
+<p>The data that distinguish $M_n(R)$ from a general ring are the scalar centre, the determinant criterion for an invertible element, and the trace; all three are computed from the matrix units.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -177,7 +177,7 @@ $$</p>
 </tr>
 <tr>
 <td>The unit criterion</td>
-<td>$A$ is a unit if and only if $\det A \in R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$</td>
+<td>$A$ is invertible if and only if $\det A \in R^\times$, with $A^{-1} = (\det A)^{-1}\operatorname{adj}(A)$</td>
 <td><em>Matrix Algebras</em></td>
 </tr>
 <tr>
@@ -217,7 +217,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The determinant criterion is the reason the units of a matrix ring are computable: over a field they are the invertible matrices, and over a general commutative ring the determinant may be a nonzero nonunit, as for $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$.</p>
+<p>The determinant criterion is the reason the invertibles of a matrix ring are computable: over a field they are the invertible matrices, and over a general commutative ring the determinant may be a nonzero nonunit, as for $\operatorname{diag}(2,1) \in M_2(\mathbb{Z})$.</p>
 <h2 id="tensor-products-and-products-of-matrix-rings">Tensor Products and Products of Matrix Rings</h2>
 <p>Matrix rings are closed under the tensor product, and they are the factors of the Wedderburn–Artin decomposition of a semisimple ring; a product of two or more of them is again a ring but not again a single matrix ring.</p>
 <div class="table-scroll"><table>
@@ -425,7 +425,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{GL}_n(k)$, $\mathrm{PGL}_n(k)$</td>
-<td>the units and the projective general linear group</td>
+<td>the invertibles and the projective general linear group</td>
 </tr>
 <tr>
 <td>$\operatorname{End}_R(R^n)$</td>

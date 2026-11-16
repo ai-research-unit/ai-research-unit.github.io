@@ -104,8 +104,8 @@ $$</p>
 $$</p>
 <p>It is not additive: $\det(A+B)\ne\det A+\det B$ in general.</p>
 <p><strong>Proof.</strong> Each of the $5!$ terms in the Leibniz formula contains exactly one entry from each of the five rows and columns, so the degree is $5$; the multiplicativity is the standard theorem of determinants; the identity has determinant $1$. For the failure of additivity, take $A=B=I$: $\det(2I)=32\ne2=\det I+\det I$.</p>
-<p><strong>Corollary.</strong> The determinant is a <strong>multiplicative form</strong> of degree $5$: it is a polynomial that converts the algebra product into the product of scalars. The zero set is the set of non-units.</p>
-<p><strong>Proof.</strong> $\det(AB)=\det A\det B$ and $\det A\ne0$ iff $A$ is invertible; the zero set is the complement of the unit group.</p>
+<p><strong>Corollary.</strong> The determinant is a <strong>multiplicative form</strong> of degree $5$: it is a polynomial that converts the algebra product into the product of scalars. The zero set is the set of non-invertibles.</p>
+<p><strong>Proof.</strong> $\det(AB)=\det A\det B$ and $\det A\ne0$ iff $A$ is invertible; the zero set is the complement of the group of invertibles.</p>
 <h3 id="the-norm-of-a-matrix">The Norm of a Matrix</h3>
 <p><strong>Definition.</strong> The <strong>determinant norm</strong> of $A$ is $N(A)=\det A$.</p>
 <p><strong>Proposition.</strong> The determinant norm is multiplicative and homogeneous of degree $5$, but it is not a norm in the analytic sense: it takes complex values, it is not positive, and it is not subadditive.</p>
@@ -233,7 +233,7 @@ $$</p>
 <h3 id="no-null-cone">No Null Cone</h3>
 <p><strong>Theorem.</strong> The Frobenius form is positive definite, so it has no null cone; the only null vector is zero. The singular set $\Sigma$ is not a null cone of the Frobenius form.</p>
 <p><strong>Proof.</strong> $\langle A,A\rangle_F=0$ implies $A=0$; $\Sigma$ contains nonzero matrices (the nilpotents), so it is not the null set.</p>
-<p><strong>Corollary.</strong> The determinant zero set and the isotropic cone of the trace pairing are different hypersurfaces. The first is the set of non-units; the second is the set of matrices with $\operatorname{tr}(A^2)=0$.</p>
+<p><strong>Corollary.</strong> The determinant zero set and the isotropic cone of the trace pairing are different hypersurfaces. The first is the set of non-invertibles; the second is the set of matrices with $\operatorname{tr}(A^2)=0$.</p>
 <p><strong>Proof.</strong> The determinant vanishes on every singular matrix; $\operatorname{tr}(A^2)$ vanishes on the nilpotents and on many other matrices; the two equations are different.</p>
 <h3 id="the-norms-zero-set">The Norm's Zero Set</h3>
 <p><strong>Proposition.</strong> The zero set of the determinant norm is $\Sigma$; the norm is not positive, and its zero set is the singular set. The Frobenius norm and the operator norm have zero set $\{0\}$.</p>

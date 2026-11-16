@@ -200,7 +200,7 @@ $$</p>
 <p>(Closure implies $K_2=\mathrm{id}$.) Suppose $K_2=\varsigma$. Then $1\star(1\star x)=\varsigma(\varsigma(x))=x$, so $L_1\circ L_1$ is the identity, while $L_z(\lambda x')=K_1(z)\varsigma(\lambda x')=\varsigma(\lambda)L_z(x')$ for every $z$, and $\varsigma\neq\mathrm{id}$; the identity is therefore not a left multiplication.</p>
 <p><strong>Theorem (the first slot rules the right unit).</strong> With the hypotheses and notation of the previous theorem, $1$ is a right unit for $\star$ if and only if $K_1=\mathrm{id}$.</p>
 <p><em>Proof.</em> $x\star 1=K_1(x)K_2(1)=K_1(x)$, since $\varsigma(1)=1$; this is $x$ for every $x$ if and only if $K_1=\mathrm{id}$.</p>
-<p><strong>Corollary (the units, in the two slots).</strong> $1$ is a left unit for the two settings whose second slot is trivial and a right unit for the two whose first slot is trivial, so exactly one of the four has a two-sided unit. These are the four unit entries of the property table of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> and of its §<em>Identities and Units</em>, where a left unit is called a left identity, and the reason for them is the two slots.</p>
+<p><strong>Corollary (the units, in the two slots).</strong> $1$ is a left unit for the two settings whose second slot is trivial and a right unit for the two whose first slot is trivial, so exactly one of the four has a two-sided unit. These are the four unit entries of the property table of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em> and of its §<em>Identities and Invertibles</em>, where a left unit is called a left identity, and the reason for them is the two slots.</p>
 <p><strong>Theorem (associativity needs both slots trivial, in $\mathbb{B}$).</strong> In $\mathbb{B}$ the product $\star_{K_1K_2}$ is associative if and only if $K_1=\mathrm{id}$ and $K_2=\mathrm{id}$.</p>
 <p><em>Proof.</em> The product $\star_{\mathrm{id}\,\mathrm{id}}$ is the multiplication of the associative algebra $\mathbb{B}$. For the converse, each of the other three settings is excluded by a triple of <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Failure of Associativity</em>: $(\tilde Q_1,\tilde Q_2,\tilde Q_3)=(-\vec e_y,-\vec e_y,\vec e_y)$ at the setting $({}^{\natural},\mathrm{id})$, $(-\vec e_z,\vec e_y,\vec e_y)$ at $(\mathrm{id},{}^{*})$, and $(-\vec e_z,\vec e_z,e_t)$ at $({}^{\natural},{}^{*})$, the two sides differing by the sign of a single basis element in each case.</p>
 <p><strong>Remark (the first two theorems are theorems about the family, the third is not).</strong> The two slot theorems hold in any $A$ of the definition, because their proofs use only that $\varsigma$ is conjugate-linear and not linear and that $\natural$ is an anti-automorphism. Associativity is not read on the slots: when both anti-involutions are the identity the four settings coincide, and with them associativity, so no rule stated in the two slots alone can hold for the whole family at once. Associativity is therefore decided in $\mathbb{B}$, by the triples above, and it remains the row of the property table that the slots do not read.</p>
@@ -332,7 +332,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Example (the four forms at one unit).</strong> For $\tilde Q_4=(1+i)e_t+\vec e_x$, a unit with $\langle\tilde Q_4\rangle_{\natural}=1+2i$, the four operators evaluated at $e_t$ give</p>
+<p><strong>Example (the four forms at one unit).</strong> For $\tilde Q_4=(1+i)e_t+\vec e_x$, an invertible element with $\langle\tilde Q_4\rangle_{\natural}=1+2i$, the four operators evaluated at $e_t$ give</p>
 <p>$$
 \tilde Q_4^{2}=(-1+2i)e_t+2(1+i)\vec e_x,\quad
 \tilde Q_4\tilde Q_4^{\natural}=(1+2i)e_t,\quad
@@ -366,7 +366,7 @@ $$</p>
 <p>The products do not supply 1, and they supply the <em>repertoire</em> of 2 without choosing from it. That is the sense in which the operator is chosen by the modeller: given the algebra with its product, one chooses $\natural$, or $\bar{\cdot}$, or ${}^{*}$, or none, and therefore the operator.</p>
 <h2 id="one-element-four-operators">One Element, Four Operators</h2>
 <h3 id="the-four-operators-of-math312">The Four Operators of $\vec e_x$</h3>
-<p>Fix the element $\tilde Q_4=\vec e_x$, a unit with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:</p>
+<p>Fix the element $\tilde Q_4=\vec e_x$, an invertible element with $\langle \vec e_x\rangle_{\natural}=-e_t$, so that $\vec e_x^{-1}=-\vec e_x$. Read it through the four insertions, using the inverse of the conjugated element in the right factor:</p>
 <p>$$
 \begin{aligned}
 \text{no insertion:}\quad & L_{\vec e_x}R_{\vec e_x^{-1}} & \tilde Q_2&\longmapsto \vec e_x\tilde Q_2 \vec e_x^{-1},\\
@@ -411,7 +411,7 @@ $$</p>
 <h3 id="the-sign-is-invisible-on-the-centre-and-on-even-parameters">The Sign Is Invisible on the Centre and on Even Parameters</h3>
 <p><strong>Proposition.</strong> If $\tilde Q_4$ is central, $\tilde Q_4=a_0e_t$, then the sign insertion changes nothing, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}=L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$. If $\tilde Q_4\in V$ is a vector, the sign insertion negates the operator, $L_{\tilde Q_4^{\natural}}R_{\tilde Q_4^{-1}}=-L_{\tilde Q_4}R_{\tilde Q_4^{-1}}$.</p>
 <p><em>Proof.</em> $\natural$ fixes the centre and negates $V$; left multiplication and right multiplication commute.</p>
-<p><strong>Theorem (the determinant table).</strong> For a unit $\tilde Q_4$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then</p>
+<p><strong>Theorem (the determinant table).</strong> For an invertible element $\tilde Q_4$ let $d$ be the determinant of the operator restricted to $V$ for the four insertions, in the order (none, sign on the left, star on the right, both). Then</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>

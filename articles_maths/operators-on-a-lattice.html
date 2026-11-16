@@ -74,7 +74,7 @@
 those operations are the <strong>operators</strong> of the lattice. This article studies them. It defines the
 lattice maps — the join-preserving, the meet-preserving and the fully preserving ones — and shows
 where the three notions separate; it collects the endomorphisms of a lattice into a monoid whose
-group of units is the automorphism group; it reads a <strong>congruence</strong> as the kernel of a
+group of invertibles is the automorphism group; it reads a <strong>congruence</strong> as the kernel of a
 lattice homomorphism, constructs the quotient, and proves the first isomorphism theorem for
 lattices; and it studies the family of congruences as a lattice in its own right, distributive by
 the theorem of Funayama and Nakayama, and reads the lattice back through its operator layer.</p>
@@ -87,7 +87,7 @@ order-theoretic completeness of <em>Order Theory and Lattices</em> and is not th
 later part. No <strong>form</strong> and no linear structure appears. And the group-theoretic analogue of the
 theory — normal subgroups, congruence relations on a group and the quotient group — is not used
 here; it belongs to <em>Groups</em>, in this Part, and the comparison is drawn only at the points where the
-lattice case is genuinely different. A group occurs here only as the group of units of a monoid, as
+lattice case is genuinely different. A group occurs here only as the group of invertibles of a monoid, as
 in <em>Sets, Functions and Relations</em>; its systematic theory is <em>Groups</em>. The operators that only
 preserve an <em>order</em> and not the
 operations are the subject of <em>Operators on a Poset</em>, in this category, and the operators of a
@@ -154,14 +154,14 @@ and $h(1_L) = 1_M$. The constant maps are then homomorphisms only in the degener
 bounded homomorphisms, while the theory of congruences below works with the unital notions.</p>
 <h3 id="the-endomorphism-monoid">The Endomorphism Monoid</h3>
 <p><strong>Definition.</strong> The set of lattice endomorphisms of $L$, written $\operatorname{End}(L)$, is a monoid
-under composition, with identity $\mathrm{id}_L$; its group of units is the <strong>automorphism group</strong>
+under composition, with identity $\mathrm{id}_L$; its group of invertibles is the <strong>automorphism group</strong>
 $\operatorname{Aut}(L)$.</p>
 <p><strong>Proposition.</strong> $\operatorname{End}(L)$ is a monoid, and $\operatorname{Aut}(L)$ is a group.</p>
 <p><strong>Proof.</strong> The composite of two lattice homomorphisms is a lattice homomorphism: $h(g(x \vee y)) =
 h(g(x) \vee g(y)) = h(g(x)) \vee h(g(y))$, and dually for the meet. Composition is associative and
 $\mathrm{id}_L$ is a two-sided identity by <em>Sets, Functions and Relations</em>. A unit of the monoid is
 a bijective endomorphism with inverse in the monoid; by the proposition above that inverse is a
-lattice homomorphism, so the units are exactly the automorphisms, and they form a group.</p>
+lattice homomorphism, so the invertibles are exactly the automorphisms, and they form a group.</p>
 <p>The monoid of join-preserving maps and the monoid of meet-preserving maps are defined the same way;
 each contains $\operatorname{End}(L)$, and each is closed under composition.</p>
 <p><strong>Notation.</strong> $\operatorname{End}_\vee(L)$ and $\operatorname{End}_\wedge(L)$ denote the monoids of
@@ -322,7 +322,7 @@ lattice here is the algebraic half of it.</p>
 <h2 id="summary">Summary</h2>
 <p>A lattice map may preserve the join, the meet, or both; a join-preserving map is monotone, and the
 three notions are distinct, as the diamond $M_3$ shows. The lattice endomorphisms form the monoid
-$\operatorname{End}(L)$, whose group of units is the automorphism group $\operatorname{Aut}(L)$;
+$\operatorname{End}(L)$, whose group of invertibles is the automorphism group $\operatorname{Aut}(L)$;
 the constants are endomorphisms, so the monoid is large and its units are few.</p>
 <p>A congruence of a lattice is an equivalence relation compatible with the meet and the join; it is
 exactly the kernel of a lattice homomorphism, the quotient $L/\vartheta_{\mathrm{cng}}$ carries a unique lattice
@@ -363,7 +363,7 @@ kernel–image correspondence is the algebraic content of the first isomorphism 
 </tr>
 <tr>
 <td>$\operatorname{Aut}(L)$</td>
-<td>Automorphism group of $L$, the group of units of $\operatorname{End}(L)$</td>
+<td>Automorphism group of $L$, the group of invertibles of $\operatorname{End}(L)$</td>
 </tr>
 <tr>
 <td>$\vartheta_{\mathrm{cng}}$</td>

@@ -122,7 +122,7 @@ $$</p>
 </tr>
 <tr>
 <td>Existence</td>
-<td>every unit has a decomposition</td>
+<td>every invertible element has a decomposition</td>
 </tr>
 <tr>
 <td>Uniqueness</td>
@@ -148,7 +148,7 @@ $$</p>
 </table></div>
 <p>The plan is as follows. The analytic facts and the four components are recalled (§<em>The Analytic Setting</em>); the definition, the component sign, the exponent and its components, the factors and the single exponential are given (§<em>The Decomposition</em>); existence and uniqueness are proved (§<em>Existence and Uniqueness</em>); the logarithm, its domain and its fibre are read (§<em>The Logarithm</em>); the group law is stated (§<em>The Group Law</em>); the matrix picture is given (§<em>The Matrix Picture</em>); the three polar forms are compared (§<em>The Three Polar Decompositions</em>); the coordinates and the volume element are described (§<em>The Exponential Coordinates</em>); the numerical cases are collected in <em>Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers</em>. The logarithm is not derived again: §<em>The Exponent and Its Components</em> quotes the formula of <em>Split-Complex Elementary Functions</em>.</p>
 <h2 id="the-analytic-setting">The Analytic Setting</h2>
-<p>The decomposition rests on the exponential and the logarithm of <em>Split-Complex Elementary Functions</em>, and on the geometry of the four components of the unit group.</p>
+<p>The decomposition rests on the exponential and the logarithm of <em>Split-Complex Elementary Functions</em>, and on the geometry of the four components of the group of invertibles.</p>
 <h3 id="the-exponential-and-the-logarithm">The Exponential and the Logarithm</h3>
 <p>The exponential of $X=x+jy$ is</p>
 <p>$$
@@ -191,7 +191,7 @@ $$</p>
 </table></div>
 <p>These are the statements of <em>Split-Complex Elementary Functions</em>, §<em>The Exponential</em> and §<em>The Logarithm</em>. The present article adds the extension of the logarithm from $F$ to the four components, and the discrete factor that records the component.</p>
 <h3 id="the-four-components">The Four Components</h3>
-<p>The group of units is ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:</p>
+<p>The group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$. Its four components are the future cone and the past cone, where $\langle Q\rangle_{*}>0$, and the two spacelike wedges, where $\langle Q\rangle_{*}<0$:</p>
 <p>$$
 F=\{q>\lvert q'\rvert\},\qquad
 P=\{q<-\lvert q'\rvert\},\qquad
@@ -255,7 +255,7 @@ $$</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}/F\cong(\mathbb{Z}/2\mathbb{Z})^{2}.
 $$</p>
-<p>The group of units is therefore</p>
+<p>The group of invertibles is therefore</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$</p>
@@ -421,7 +421,7 @@ q'_{\log}=
 $$</p>
 <p><strong>Existence.</strong> §<em>The Four Components</em> gives $\epsilon$ with $\epsilon Q\in F$. §<em>The Exponent and Its Components</em> gives a number $Q_{\log}$ with $\exp(Q_{\log})=\epsilon Q$. Then $Q=\epsilon\exp(Q_{\log})=r\epsilon\exp(\theta j)$.</p>
 <p><strong>Uniqueness.</strong> Suppose $Q=\epsilon_1\exp(Q_{1\log})=\epsilon_2\exp(Q_{2\log})$ with $\epsilon_i\in\{\pm1,\pm j\}$ and $Q_{i\log}\in\mathbb{C}_{\mathrm{spl}}$. Multiplying by $\epsilon_i$ gives $\epsilon_iQ=\exp(Q_{i\log})\in F$ for $i=1,2$. The four components are disjoint, so $\epsilon_1Q$ and $\epsilon_2Q$ lie in the same component only if $\epsilon_1=\epsilon_2$. Then $\exp(Q_{1\log})=\exp(Q_{2\log})$, and the injectivity of the exponential gives $Q_{1\log}=Q_{2\log}$. The coordinates of the exponent give $r=\exp(q_{\log})$ and $\theta=q'_{\log}$.</p>
-<p>The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of units, not the set of nonzero elements. The parameters and their ranges are collected in one table.</p>
+<p>The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q:\langle Q\rangle_{*}\neq0\}$. On the null cone $\langle Q\rangle_{*}=0$ the modulus vanishes and no decomposition exists. The element $1+j$ is nonzero but has no decomposition; the domain is the group of invertibles, not the set of nonzero elements. The parameters and their ranges are collected in one table.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -497,7 +497,7 @@ $$</p>
 \exp^{-1}(Q)=\{Q_{\log}\},
 $$</p>
 <p>and for $Q\notin F$ it is empty. In particular the fibre is not a lattice and there is no period: the kernel is $\{0\}$.</p>
-<p>The quotient of the group of units by the image is</p>
+<p>The quotient of the group of invertibles by the image is</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^\times/\exp(\mathbb{C}_{\mathrm{spl}})={\mathbb{C}_{\mathrm{spl}}}^\times/F\cong(\mathbb{Z}/2\mathbb{Z})^2.
 $$</p>
@@ -616,7 +616,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-modulusunit-form">The Modulus–Unit Form</h3>
-<p>The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}_{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of units. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.</p>
+<p>The modulus–unit form is $Q=ru$ with $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u=Q/r$. It is unique on ${\mathbb{C}_{\mathrm{spl}}}^\times$, uses the square root of the absolute norm, and is the product decomposition of the group of invertibles. Its unit factor has norm $\operatorname{sgn}\langle Q\rangle_{*}$, so it lies on one of the four branches.</p>
 <h3 id="the-rational-chart-form">The Rational-Chart Form</h3>
 <p>The rational-chart form writes the unit factor by the Cayley chart</p>
 <p>$$
@@ -653,7 +653,7 @@ $$</p>
 <td>transcendental</td>
 </tr>
 <tr>
-<td>Global on the units</td>
+<td>Global on the invertibles</td>
 <td>yes</td>
 <td>no</td>
 <td>yes</td>
@@ -775,7 +775,7 @@ $$</p>
 </tr>
 <tr>
 <td>Existence</td>
-<td>every unit has a decomposition</td>
+<td>every invertible element has a decomposition</td>
 </tr>
 <tr>
 <td>Uniqueness</td>

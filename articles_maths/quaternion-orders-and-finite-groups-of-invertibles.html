@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quaternion Orders and Finite Groups of Units — Biquaternion Universe</title>
+  <title>Quaternion Orders and Finite Groups of Invertibles — Biquaternion Universe</title>
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,9 +68,9 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="quaternion-orders-and-finite-groups-of-units"><strong>Quaternion Orders and Finite Groups of Units</strong></h1>
+        <h1 id="quaternion-orders-and-finite-groups-of-invertibles"><strong>Quaternion Orders and Finite Groups of Invertibles</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the <strong>orders</strong>. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the unit groups that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their unit groups, the classification of the finite subgroups of the sphere, the McKay correspondence, and the complex order of the integral biquaternions, whose unit group is infinite; the topological group of units of the whole algebra is the article before it, and the finite groups are read here once.</p>
+<p>The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the <strong>orders</strong>. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the groups of invertibles that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their groups of invertibles, the classification of the finite subgroups of the sphere, the McKay correspondence, and the complex order of the integral biquaternions, whose group of invertibles is infinite; the topological group of invertibles of the whole algebra is the article before it, and the finite groups are read here once.</p>
 <h2 id="the-quaternion-orders">The Quaternion Orders</h2>
 <p><strong>Definition (order).</strong> An <strong>order</strong> of $\mathbb{H}$ is a subring $\mathcal O$ that is a lattice, that is a finitely generated abelian group spanning $\mathbb{H}$ over $\mathbb{R}$, and on which the norm is integral.</p>
 <p><strong>Proposition (the Lipschitz order).</strong> The <strong>Lipschitz order</strong></p>
@@ -84,17 +84,17 @@ $$</p>
 \mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega
 $$</p>
 <p>is a subring of $\mathbb{H}$, a lattice of rank $4$, with $\mathcal L\subseteq\mathcal H$ of index $2$; its norm is again integral, and it is a maximal order.</p>
-<h2 id="the-groups-of-units">The Groups of Units</h2>
-<p><strong>Theorem (the two unit groups).</strong> The units of the Lipschitz order are the eight elements</p>
+<h2 id="the-groups-of-invertibles">The Groups of Invertibles</h2>
+<p><strong>Theorem (the two groups of invertibles).</strong> The invertibles of the Lipschitz order are the eight elements</p>
 <p>$$ \boxed{\; \mathcal L^\times=\{\pm1,\pm i,\pm j,\pm k\}=Q_8 \;} ,$$</p>
-<p>the quaternion group of order eight; the units of the Hurwitz order are the twenty-four elements</p>
+<p>the quaternion group of order eight; the invertibles of the Hurwitz order are the twenty-four elements</p>
 <p>$$ \boxed{\; \mathcal H^\times=\{\pm1,\pm i,\pm j,\pm k\}\cup\bigl\{\tfrac12(\pm1\pm i\pm j\pm k)\bigr\}=2T \;} ,$$</p>
 <p>the binary tetrahedral group of order twenty-four.</p>
-<p><em>Proof.</em> An element of an order is a unit exactly when its norm is $1$, the inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.</p>
-<p><strong>Remark (the unit groups are finite, against the group of units of the algebra).</strong> The group of units of the whole algebra, $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, is infinite and is <em>The Quaternion Unit Group as a Topological Group</em>, above this article in this category; the orders cut it down to the finite groups of the theorem. The two are different objects, and the group of units of the algebra is stated once, there.</p>
-<p><strong>Remark (the two indices).</strong> The lattices have index $2$, but the unit groups have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.</p>
+<p><em>Proof.</em> An element of an order is invertible exactly when its norm is $1$, the inverse $\tilde q^{\natural}/\langle\tilde q\rangle_{\natural}$ then lying in the order; the elements of norm one in $\mathcal L$ are the eight signed units, forming $Q_8$; the elements of norm one in $\mathcal H$ are those eight together with the sixteen half-integer elements $\tfrac12(\pm1\pm i\pm j\pm k)$, whose norm is $\tfrac14(1+1+1+1)=1$; the set of twenty-four is closed under the product, so it is a group.</p>
+<p><strong>Remark (the groups of invertibles are finite, against the group of invertibles of the algebra).</strong> The group of invertibles of the whole algebra, $\mathbb{H}^\times=\mathbb{H}\setminus\{0\}$, is infinite and is <em>The Quaternion Group of Invertibles as a Topological Group</em>, above this article in this category; the orders cut it down to the finite groups of the theorem. The two are different objects, and the group of invertibles of the algebra is stated once, there.</p>
+<p><strong>Remark (the two indices).</strong> The lattices have index $2$, but the groups of invertibles have index $24/8=3$: the Lipschitz units are a proper subgroup of index three in the Hurwitz units, so the two notions of index do not agree.</p>
 <h3 id="the-elements-of-order-six">The Elements of Order Six</h3>
-<p>The Lipschitz unit group is a $2$-group and the Hurwitz unit group is not. A half-integral unit
+<p>The Lipschitz group of invertibles is a $2$-group and the Hurwitz group of invertibles is not. A half-integral unit
 $$
 Q=\tfrac12(s_0e_t+s_1\vec e_x+s_2\vec e_y+s_3\vec e_z),\qquad s_\mu=\pm1,
 $$
@@ -102,7 +102,7 @@ satisfies $Q^2=-Q^{\natural}$ when $s_0=+1$, so $Q^3=-e_t$ and $Q$ has order six
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>unit group</th>
+<th>group of invertibles</th>
 <th>order $1$</th>
 <th>order $2$</th>
 <th>order $3$</th>
@@ -140,7 +140,7 @@ satisfies $Q^2=-Q^{\natural}$ when $s_0=+1$, so $Q^3=-e_t$ and $Q$ has order six
 <li>the binary icosahedral group $2I$ of order $120$.</li>
 </ul>
 <p>Each is the preimage of a finite rotation group of three-dimensional space; the covering is two-to-one exactly when the group contains the centre $\{\pm e_t\}$, which holds in every family except the cyclic groups of odd order.</p>
-<p>The centre of $S^3$ is $\{\pm e_t\}$ by <em>The Quaternion Unit Group as a Topological Group</em>, and the cover of the rotation group is two-to-one exactly when $\pm e_t$ lies in the group.</p>
+<p>The centre of $S^3$ is $\{\pm e_t\}$ by <em>The Quaternion Group of Invertibles as a Topological Group</em>, and the cover of the rotation group is two-to-one exactly when $\pm e_t$ lies in the group.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -183,7 +183,7 @@ satisfies $Q^2=-Q^{\natural}$ when $s_0=+1$, so $Q^3=-e_t$ and $Q$ has order six
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the orders give the first two families).</strong> The Lipschitz units $Q_8$ are the binary dihedral group $2D_2$ of order eight, and the Hurwitz units $2T$ are the binary tetrahedral group; the binary octahedral and binary icosahedral groups are finite subgroups of $S^3$ that are not the unit group of an order of the simple form above, and they are the remaining two Platonic cases.</p>
+<p><strong>Remark (the orders give the first two families).</strong> The Lipschitz units $Q_8$ are the binary dihedral group $2D_2$ of order eight, and the Hurwitz units $2T$ are the binary tetrahedral group; the binary octahedral and binary icosahedral groups are finite subgroups of $S^3$ that are not the group of invertibles of an order of the simple form above, and they are the remaining two Platonic cases.</p>
 <h2 id="the-mckay-correspondence">The McKay Correspondence</h2>
 <p><strong>Theorem (the correspondence).</strong> The five families of the classification correspond to the five simply laced Dynkin diagrams:</p>
 <div class="table-scroll"><table>
@@ -210,14 +210,14 @@ satisfies $Q^2=-Q^{\natural}$ when $s_0=+1$, so $Q^3=-e_t$ and $Q$ has order six
 </table></div>
 <p>the correspondence assigning to a finite subgroup the affine Dynkin diagram of the components of the representation of its double by the fundamental representation.</p>
 <h2 id="the-complex-order">The Complex Order</h2>
-<p>The integral biquaternions are the order $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal L'$ in $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the biquaternions with Gaussian-integer coordinates. Its group of units is <strong>infinite</strong>, and the reason is the nilpotent directions of the complex algebra. A pure biquaternion $P$ with $\langle P\rangle_{\natural}=0$ satisfies $P^2=0$, so for every integer $k$ the element $e_t+kP$ is a unit with inverse $e_t-kP$ and powers
+<p>The integral biquaternions are the order $\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal L'$ in $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the biquaternions with Gaussian-integer coordinates. Its group of invertibles is <strong>infinite</strong>, and the reason is the nilpotent directions of the complex algebra. A pure biquaternion $P$ with $\langle P\rangle_{\natural}=0$ satisfies $P^2=0$, so for every integer $k$ the element $e_t+kP$ is invertible with inverse $e_t-kP$ and powers
 $$
 (e_t+kP)^n=e_t+nkP ,
 $$
-and the unit group contains the infinite cyclic subgroup generated by $e_t+P$. Such a direction exists integrally: $P=\vec e_x+i\vec e_y$ is null and has Gaussian-integer coefficients.</p>
-<p>The element $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ is null exactly when $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$. On the real slice the norm $\langle\cdot\rangle_{\natural}=\sum_\mu q_\mu^2$ is definite, so no null direction exists there and the real orders have finite unit groups; the infinite unit group of the complex order is carried by the null cone, which the complexification adds. The finite unit groups are therefore the real ones.</p>
+and the group of invertibles contains the infinite cyclic subgroup generated by $e_t+P$. Such a direction exists integrally: $P=\vec e_x+i\vec e_y$ is null and has Gaussian-integer coefficients.</p>
+<p>The element $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ is null exactly when $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$. On the real slice the norm $\langle\cdot\rangle_{\natural}=\sum_\mu q_\mu^2$ is definite, so no null direction exists there and the real orders have finite groups of invertibles; the infinite group of invertibles of the complex order is carried by the null cone, which the complexification adds. The finite groups of invertibles are therefore the real ones.</p>
 <h2 id="summary">Summary</h2>
-<p>The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ is a lattice subring with integral norm and unit group the quaternion group $Q_8$ of order eight; the Hurwitz order $\mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega$ with $\omega=\tfrac12(1+i+j+k)$, $\omega^{2}=\omega-1$, contains $\mathcal L$ with index two, is maximal, and has unit group the binary tetrahedral group $2T$ of order twenty-four. The finite subgroups of the unit sphere $S^3$ are the cyclic groups, the binary dihedral groups, and the binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$; under the McKay correspondence they are the simply laced Dynkin diagrams. The integral biquaternions over the Gaussian integers have an infinite group of units, generated along the null direction $\vec e_x+i\vec e_y$, so the finite unit groups are the real ones.</p>
+<p>The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ is a lattice subring with integral norm and group of invertibles the quaternion group $Q_8$ of order eight; the Hurwitz order $\mathcal H=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}\omega$ with $\omega=\tfrac12(1+i+j+k)$, $\omega^{2}=\omega-1$, contains $\mathcal L$ with index two, is maximal, and has group of invertibles the binary tetrahedral group $2T$ of order twenty-four. The finite subgroups of the unit sphere $S^3$ are the cyclic groups, the binary dihedral groups, and the binary tetrahedral, octahedral and icosahedral groups of orders $24$, $48$ and $120$; under the McKay correspondence they are the simply laced Dynkin diagrams. The integral biquaternions over the Gaussian integers have an infinite group of invertibles, generated along the null direction $\vec e_x+i\vec e_y$, so the finite groups of invertibles are the real ones.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -241,7 +241,7 @@ and the unit group contains the infinite cyclic subgroup generated by $e_t+P$. S
 </tr>
 <tr>
 <td>$Q_8$, $2T$</td>
-<td>the unit groups, of orders $8$ and $24$</td>
+<td>the groups of invertibles, of orders $8$ and $24$</td>
 </tr>
 <tr>
 <td>$C_n$, $2D_n$, $2T$, $2O$, $2I$</td>
@@ -253,18 +253,18 @@ and the unit group contains the infinite cyclic subgroup generated by $e_t+P$. S
 </tr>
 <tr>
 <td>$\mathbb{Z}[i]\otimes_{\mathbb{Z}}\mathcal L'$</td>
-<td>the integral biquaternions; infinite unit group</td>
+<td>the integral biquaternions; infinite group of invertibles</td>
 </tr>
 <tr>
 <td>$P=\vec e_x+i\vec e_y$, $P^2=0$</td>
-<td>the nilpotent generator of the infinite unit group</td>
+<td>the nilpotent generator of the infinite group of invertibles</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="norm-and-invertibility-in-the-quaternion-algebra.html">Norm and Invertibility in the Quaternion Algebra</a>, for the norm and the inverse</li>
-<li><a href="the-quaternion-unit-group-as-a-topological-group.html">The Quaternion Unit Group as a Topological Group</a>, for the group of units of the algebra and the sphere</li>
+<li><a href="the-quaternion-group-of-invertibles-as-a-topological-group.html">The Quaternion Group of Invertibles as a Topological Group</a>, for the group of invertibles of the algebra and the sphere</li>
 <li><a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, for the rotation groups of the quotients</li>
 </ul>
       </div>

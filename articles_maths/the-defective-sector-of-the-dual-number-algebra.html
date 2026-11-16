@@ -108,20 +108,20 @@ $$</p>
 <p>$$
 S = R\cdot1 = \{a : a\in R\},
 $$</p>
-<p>a subalgebra isomorphic to $R$. Its units are $R^\times$, and its only non-unit is the origin. The algebra is the disjoint union</p>
+<p>a subalgebra isomorphic to $R$. Its units are $R^\times$, and its only non-invertible is the origin. The algebra is the disjoint union</p>
 <p>$$
 \mathbb{C}_{\mathrm{dln},R} = S \sqcup D,
 $$</p>
 <p>of the semisimple stratum and the defective sector.</p>
-<p><em>Proof.</em> The semisimple locus is $\{b=0\}$ by the theorem of the preceding section, and that is $R\cdot1$. It is closed under addition and multiplication and contains $1$, so it is a subalgebra isomorphic to $R$. Its unit group is $R^\times$ because $a$ is invertible in $R$ exactly when $a\neq0$, and the only element that is not a unit is $0$. The disjoint-union statement is the partition into $b=0$ and $b\neq0$.</p>
+<p><em>Proof.</em> The semisimple locus is $\{b=0\}$ by the theorem of the preceding section, and that is $R\cdot1$. It is closed under addition and multiplication and contains $1$, so it is a subalgebra isomorphic to $R$. Its group of invertibles is $R^\times$ because $a$ is invertible in $R$ exactly when $a\neq0$, and the only element that is not invertible is $0$. The disjoint-union statement is the partition into $b=0$ and $b\neq0$.</p>
 <p><strong>Corollary (the two defective strata).</strong> The defective sector splits into two strata:</p>
 <p>$$
 D_0 = D\cap\mathrm{M} = \mathrm{M}\setminus\{0\} = \{b\varepsilon : b\neq0\},
 \qquad
 D_1 = D\cap(\mathbb{C}_{\mathrm{dln},R})^\times = \{a+b\varepsilon : a\neq0,\ b\neq0\}.
 $$</p>
-<p>The stratum $D_0$ is the <strong>nilpotent stratum</strong>; its elements are the non-zero nilpotents, they are non-units and zero divisors, and they satisfy $Q^2=0$. The stratum $D_1$ is the <strong>unipotent stratum</strong>; its elements are units, and each is $Q=a(1+s\varepsilon)$ with $s=b/a\neq0$, where $1+s\varepsilon$ is a unipotent element with $(1+s\varepsilon-1)^2=0$.</p>
-<p><em>Proof.</em> The intersection of $D$ with $\mathrm{M}$ is $\{a=0,b\neq0\}$; these are exactly the non-zero elements of the maximal ideal, and they square to zero. The intersection with the unit group is $\{a\neq0,b\neq0\}$, since the units are $a\neq0$; dividing by $a$ gives the unipotent form, and $(s\varepsilon)^2=0$.</p>
+<p>The stratum $D_0$ is the <strong>nilpotent stratum</strong>; its elements are the non-zero nilpotents, they are non-invertibles and zero divisors, and they satisfy $Q^2=0$. The stratum $D_1$ is the <strong>unipotent stratum</strong>; its elements are invertible, and each is $Q=a(1+s\varepsilon)$ with $s=b/a\neq0$, where $1+s\varepsilon$ is a unipotent element with $(1+s\varepsilon-1)^2=0$.</p>
+<p><em>Proof.</em> The intersection of $D$ with $\mathrm{M}$ is $\{a=0,b\neq0\}$; these are exactly the non-zero elements of the maximal ideal, and they square to zero. The intersection with the group of invertibles is $\{a\neq0,b\neq0\}$, since the invertibles are $a\neq0$; dividing by $a$ gives the unipotent form, and $(s\varepsilon)^2=0$.</p>
 <p><strong>The three strata.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -165,8 +165,8 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Corollary (the origin).</strong> The origin is the unique semisimple non-unit. It is the vertex of the maximal ideal, the point at which the nilpotent stratum is punctured, and it is not defective. The defect of the maximal ideal is therefore $\mathrm{M}\setminus\{0\}$, not $\mathrm{M}$.</p>
-<p><em>Proof.</em> The semisimple elements are $a$ with $b=0$, and such an element is a non-unit exactly when $a=0$. The remaining statements are the definitions of $D_0$ and of the origin.</p>
+<p><strong>Corollary (the origin).</strong> The origin is the unique semisimple non-invertible. It is the vertex of the maximal ideal, the point at which the nilpotent stratum is punctured, and it is not defective. The defect of the maximal ideal is therefore $\mathrm{M}\setminus\{0\}$, not $\mathrm{M}$.</p>
+<p><em>Proof.</em> The semisimple elements are $a$ with $b=0$, and such an element is a non-invertible exactly when $a=0$. The remaining statements are the definitions of $D_0$ and of the origin.</p>
 <h2 id="the-jordan-type-and-the-non-uniqueness-of-the-eigenbasis">The Jordan Type and the Non-Uniqueness of the Eigenbasis</h2>
 <p><strong>Off the real axis there is one eigenvector line and one Jordan chain; the line is canonical, the chain is not.</strong></p>
 <p><strong>Theorem (the Jordan form).</strong> Let $Q=a+b\varepsilon$ with $b\neq0$. In the basis $(\varepsilon,b^{-1})$ the matrix of $L_Q$ is</p>
@@ -210,13 +210,13 @@ $$</p>
 <p>both ends isomorphic to $R[X]/(X-a)$, which does not split. The defect is the non-splitting.</p>
 <p><em>Proof.</em> A splitting would give a submodule $S$ complementary to $R\varepsilon$, hence a one-dimensional $R$-subspace $S=Rv$ with $v\notin R\varepsilon$ and $Qv=av$. But $\ker(L_Q-a)=R\varepsilon$, so no such $v$ exists. Hence the sequence does not split, and $M_Q$ is not semisimple.</p>
 <h2 id="relation-to-the-polar-decomposition">Relation to the Polar Decomposition</h2>
-<p><strong>The polar decomposition of a unit separates its scale and sign, which are blind to the defect, from its parabolic angle, which is the defect coordinate.</strong></p>
+<p><strong>The polar decomposition of an invertible element separates its scale and sign, which are blind to the defect, from its parabolic angle, which is the defect coordinate.</strong></p>
 <p><strong>Theorem (the polar form).</strong> Every unit $Q=a+b\varepsilon$, with $a\neq0$, has a unique representation</p>
 <p>$$
 Q = r\,u\,\exp(s\varepsilon), \qquad r=|a|>0, \quad u=\operatorname{sgn}(a)\in\{\pm1\}, \quad s=\frac{b}{a},
 $$</p>
 <p>where $\exp(s\varepsilon)=1+s\varepsilon$. This is the polar decomposition of <em>Dual-Numbers Polar Decomposition</em>.</p>
-<p><strong>Proposition (the defect is the parabolic angle).</strong> For a unit $Q$ the following are equivalent:</p>
+<p><strong>Proposition (the defect is the parabolic angle).</strong> For an invertible element $Q$ the following are equivalent:</p>
 <ol>
 <li>$Q$ is semisimple;</li>
 <li>$Q$ lies on the real axis;</li>
@@ -273,7 +273,7 @@ $$</p>
 \mathcal N_0=\{Q_t=0,\ B^2=0\}=\{\tilde Q : \vec Q^2=0\}.
 $$</p>
 <p>It contains the origin, which is scalar and semisimple, and the non-zero nilpotents, which are defective. The defect is therefore not the whole nilpotent cone: it is the cone with its vertex removed. The same statement holds in the dual algebra, where the maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective punctured line $\mathrm{M}\setminus\{0\}$. The vertex is the one point at which the defect disappears.</p>
-<p><strong>The unipotent stratum.</strong> The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ consists of units, and every element of it is defective. The same is true in $\mathbb{C}_{\mathrm{dln}}$: the stratum $D_1$ consists of units and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.</p>
+<p><strong>The unipotent stratum.</strong> The defect in $\mathbb{B}$ is not confined to the nilpotent cone. The unipotent stratum $\vec Q\neq0$, $Q_t\neq0$ consists of invertibles, and every element of it is defective. The same is true in $\mathbb{C}_{\mathrm{dln}}$: the stratum $D_1$ consists of invertibles and every element of it is defective. In both algebras the defect has the same two parts, a nilpotent one and a unipotent one, separated by the scalar part.</p>
 <p><strong>The correspondence.</strong> The table records the matching.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -316,9 +316,9 @@ $$</p>
 <p><strong>The differences.</strong> Three differences are differences of dimension. The biquaternion defect sits inside the proper hypersurface $\mathcal S$ of a four-complex-dimensional algebra, and there are spectrally regular biquaternions off $\mathcal S$; the dual defect is the complement of a real line in a two-real-dimensional algebra, and there are no spectrally regular elements. The biquaternion defect has Jordan type $(2,2)$ on a four-dimensional space with a two-dimensional eigenspace; the dual defect has type $(2)$ on a two-dimensional space with a one-dimensional eigenspace. The semisimple stratum in $\mathbb{B}$ is the centre $\mathbb{C}e_t$; in $\mathbb{C}_{\mathrm{dln}}$ it is the real axis $R\cdot1$, which is not the centre because the algebra is commutative. What the cases share is the local structure: the algebra generated at a defective dual point is $R[Q]=R[X]/(X^2)$, with $Q-a=b\varepsilon$ nilpotent and non-zero, and at a defective biquaternion point it is $\mathbb{C}[\vec Q]=\mathbb{C}[X]/(X^2)$ on each of the two blocks; the defect is the single Jordan block of that local algebra.</p>
 <p><em>Proof.</em> The biquaternion strata and Jordan types are <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>, §<em>The Three Strata</em>; the dual strata and types are the theorems of this article. The dimension counts are those of $\mathcal S$ (one complex equation in four complex coordinates) and of $D$ (the complement of a real line in the real plane).</p>
 <h2 id="summary">Summary</h2>
-<p>The defective sector of the dual-number algebra is $D=\{a+b\varepsilon:b\neq0\}=\mathbb{C}_{\mathrm{dln}}\setminus R\cdot1$, not the maximal ideal. The maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective nilpotent stratum $\mathrm{M}\setminus\{0\}$; the defect is carried by the nilpotent part $b\varepsilon$, and $D$ is its preimage under $Q\mapsto b\varepsilon$. The semisimple stratum is the real axis $R\cdot1$, a subalgebra isomorphic to $R$ whose only non-unit is the origin. The defective sector splits into the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, with $Q^2=0$, $m_Q=X^2$ and Jordan type $J_2(0)$, and the unipotent stratum $D_1=\{a\neq0,b\neq0\}$, with $Q=a(1+s\varepsilon)$, $s=b/a\neq0$, $m_Q=(X-a)^2$ and Jordan type $J_2(a)$.</p>
+<p>The defective sector of the dual-number algebra is $D=\{a+b\varepsilon:b\neq0\}=\mathbb{C}_{\mathrm{dln}}\setminus R\cdot1$, not the maximal ideal. The maximal ideal $\mathrm{M}$ contains the semisimple origin and the defective nilpotent stratum $\mathrm{M}\setminus\{0\}$; the defect is carried by the nilpotent part $b\varepsilon$, and $D$ is its preimage under $Q\mapsto b\varepsilon$. The semisimple stratum is the real axis $R\cdot1$, a subalgebra isomorphic to $R$ whose only non-invertible is the origin. The defective sector splits into the nilpotent stratum $D_0=\mathrm{M}\setminus\{0\}$, with $Q^2=0$, $m_Q=X^2$ and Jordan type $J_2(0)$, and the unipotent stratum $D_1=\{a\neq0,b\neq0\}$, with $Q=a(1+s\varepsilon)$, $s=b/a\neq0$, $m_Q=(X-a)^2$ and Jordan type $J_2(a)$.</p>
 <p>Off the real axis the eigenspace is the line $R\varepsilon$, the generalized eigenspace is everything, and the operator is the single block $J_2(a)$ in the basis $(\varepsilon,b^{-1})$. There is no eigenbasis; the eigenvector line is canonical but the Jordan chain is not, the general basis being $(\lambda\varepsilon,\lambda b^{-1}+\mu\varepsilon)$ with $\lambda\neq0$. In the module picture, $M_Q$ is $R[X]/(X-a)\oplus R[X]/(X-a)$ when $b=0$ and the indecomposable $R[X]/((X-a)^2)$ when $b\neq0$; the defect is the non-splitting of $0\to R\varepsilon\to M_Q\to\mathbb{C}_{\mathrm{dln}}/R\varepsilon\to0$.</p>
-<p>The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parabolic angle: $r=|a|$ and $u=\operatorname{sgn}(a)$ are blind to it, and $Q$ is defective exactly when $s\neq0$; it is defined on the unit group and fails on the nilpotent stratum, where the scale vanishes. The biquaternion cone has the same three strata, with the origin of its nilpotent cone as the semisimple vertex; the dual algebra is the two-dimensional local model of one Jordan block, with type $(2)$ in place of $(2,2)$.</p>
+<p>The polar decomposition $Q=ru\exp(s\varepsilon)$ exposes the defect as the parabolic angle: $r=|a|$ and $u=\operatorname{sgn}(a)$ are blind to it, and $Q$ is defective exactly when $s\neq0$; it is defined on the group of invertibles and fails on the nilpotent stratum, where the scale vanishes. The biquaternion cone has the same three strata, with the origin of its nilpotent cone as the semisimple vertex; the dual algebra is the two-dimensional local model of one Jordan block, with type $(2)$ in place of $(2,2)$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -386,7 +386,7 @@ $$</p>
 </tr>
 <tr>
 <td>$r=\lvert a\rvert$, $u=\operatorname{sgn}(a)$, $s=b/a$</td>
-<td>the polar data of a unit</td>
+<td>the polar data of an invertible element</td>
 </tr>
 </tbody>
 </table></div>

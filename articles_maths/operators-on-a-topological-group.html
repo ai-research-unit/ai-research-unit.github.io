@@ -77,7 +77,7 @@
 <h3 id="the-operator-layer">The Operator Layer</h3>
 <p><strong>Definition.</strong> A <strong>continuous operator</strong> on $G$ is a continuous map $G \to G$. The continuous operators form a monoid $\operatorname{Map}_c(G)$ under composition, with identity the identity map, and the invertible elements of this monoid are exactly the homeomorphisms of $G$ onto itself, which form the group $\operatorname{Homeo}(G)$.</p>
 <p><strong>Proof.</strong> The composite of two continuous maps is continuous, and composition is associative with identity $\mathrm{id}$; a continuous map with a continuous inverse is by definition a homeomorphism, and a homeomorphism is continuous and invertible in the monoid.</p>
-<p>The passage from the monoid to its group of units is the first structural statement of the operator layer: an operator is <strong>invertible</strong> exactly when it is a homeomorphism, which is the topological form of the algebraic statement that a bijective operator is a permutation.</p>
+<p>The passage from the monoid to its group of invertibles is the first structural statement of the operator layer: an operator is <strong>invertible</strong> exactly when it is a homeomorphism, which is the topological form of the algebraic statement that a bijective operator is a permutation.</p>
 <p><strong>Definition.</strong> A <strong>continuous automorphism</strong> of $G$ is a group automorphism that is continuous; the continuous automorphisms form a subgroup $\operatorname{Aut}_c(G)$ of $\operatorname{Aut}(G)$ and a subgroup of $\operatorname{Homeo}(G)$. The <strong>inner automorphisms</strong> $\operatorname{Ad}_g(x) = gxg^{-1}$ form a normal subgroup $\operatorname{Inn}(G) \subseteq \operatorname{Aut}_c(G)$.</p>
 <p><strong>Proposition.</strong> $\operatorname{Aut}_c(G) = \operatorname{Aut}(G) \cap \operatorname{Homeo}(G)$, and $\operatorname{Inn}(G) \subseteq \operatorname{Aut}_c(G)$ with the assignment $g \mapsto \operatorname{Ad}_g$ a continuous homomorphism $G \to \operatorname{Aut}_c(G)$ when the latter carries the topology of uniform convergence on compacta.</p>
 <p><strong>Proof.</strong> An automorphism that is a homeomorphism has a continuous inverse, so it is a continuous automorphism; conversely a continuous automorphism is a continuous bijection and its inverse is continuous, by <em>Topological Groups</em>. The inner automorphism $\operatorname{Ad}_g = L_g R_{g^{-1}}$ is a homeomorphism and an automorphism, and $\operatorname{Ad}_{gh} = \operatorname{Ad}_g \operatorname{Ad}_h$; continuity in $g$ is the continuity of the evaluation map $(g,x) \mapsto gxg^{-1}$ on $G\times G$ together with the definition of the function-space topology.</p>
@@ -143,7 +143,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{Homeo}(G)$</td>
-<td>the group of homeomorphisms of $G$, the units of $\operatorname{Map}_c(G)$</td>
+<td>the group of homeomorphisms of $G$, the invertibles of $\operatorname{Map}_c(G)$</td>
 </tr>
 <tr>
 <td>$\operatorname{Aut}(G)$, $\operatorname{Aut}_c(G)$</td>

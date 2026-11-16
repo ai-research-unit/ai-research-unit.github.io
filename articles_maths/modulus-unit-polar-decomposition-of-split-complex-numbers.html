@@ -75,8 +75,8 @@
 Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}_{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$</p>
 <p>with $r$ the <strong>modulus</strong> and $u$ the <strong>unit factor</strong>. It is the algebraic member of the polar decompositions of $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>.</p>
-<p>The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of units is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.</p>
-<p>The article defines the norm and the two regimes (§<em>The Two Factors</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), describes the group of units and its maximal compact subgroup (§<em>The Group of Units and the Unit Set</em>), records the two axes (§<em>The Two Axes</em>), gives the matrix picture (§<em>The Matrix Picture</em>), computes examples (§<em>Worked Examples</em>) and compares the family (§<em>The Other Algebras</em>).</p>
+<p>The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.</p>
+<p>The article defines the norm and the two regimes (§<em>The Two Factors</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), describes the group of invertibles and its maximal compact subgroup (§<em>The Group of Invertibles and the Unit Set</em>), records the two axes (§<em>The Two Axes</em>), gives the matrix picture (§<em>The Matrix Picture</em>), computes examples (§<em>Worked Examples</em>) and compares the family (§<em>The Other Algebras</em>).</p>
 <p>The conventions and the symbols are those of <em>Split-Complex Algebra</em>, <em>Norm and Invertibility in the General Split-Complex Algebra</em> and <em>Algebra and Element Conventions</em>; the notation is collected in §<em>Summary of Notation</em>. The rational and exponential coordinates are the subjects of <em>Rational-Chart Polar Decomposition of Split-Complex Numbers</em> and <em>Exponential Polar Decomposition of Split-Complex Numbers</em>. Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-two-factors">The Two Factors</h2>
 <h3 id="the-norm-and-the-modulus">The Norm and the Modulus</h3>
@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 r = \sqrt{\lvert Q_+Q_-\rvert}.
 $$</p>
-<p>The modulus vanishes on the null cone, so it is not a norm: $r(1+j)=0$ while $1+j\neq0$. It is a multiplicative size on the group of units.</p>
+<p>The modulus vanishes on the null cone, so it is not a norm: $r(1+j)=0$ while $1+j\neq0$. It is a multiplicative size on the group of invertibles.</p>
 <h3 id="the-unit-factor-and-the-unit-set">The Unit Factor and the Unit Set</h3>
 <p>The <strong>unit factor</strong> of an invertible element is</p>
 <p>$$
@@ -149,7 +149,7 @@ $$</p>
 <p>$$
 \langle u\rangle_{*} = -1: \quad u = \pm j\exp(\theta j) = \pm\bigl(\sinh\theta + j\cosh\theta\bigr).
 $$</p>
-<p>The sign in front of the exponential is the branch sign, and $\theta$ is a coordinate on the branch, not a periodic angle. The phrase <strong>unit factor</strong> names the unit elements for the norm in view, the split norm $N$. It is not the <strong>group of units</strong> ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in <em>Norm and Unitary Conventions</em>, §<em>The Unitary Convention</em>.</p>
+<p>The sign in front of the exponential is the branch sign, and $\theta$ is a coordinate on the branch, not a periodic angle. The phrase <strong>unit factor</strong> names the unit elements for the norm in view, the split norm $N$. It is not the <strong>group of invertibles</strong> ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$, which is the wider set of invertible elements; the two senses of the word are kept apart throughout, as in <em>Norm and Unitary Conventions</em>, §<em>The Unitary Convention</em>.</p>
 <h3 id="the-count-of-the-parameters">The Count of the Parameters</h3>
 <p>The decomposition has two real parameters on each component: the modulus $r>0$ and the branch coordinate $\theta\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.</p>
 <h2 id="existence-and-uniqueness">Existence and Uniqueness</h2>
@@ -157,9 +157,9 @@ $$</p>
 <p><strong>Existence.</strong> Put $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u = Q/r$. Since $\langle Q\rangle_{*}\neq0$, $r>0$. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = \operatorname{sign}\langle Q\rangle_{*}$, so $\lvert \langle u\rangle_{*}\rvert = 1$. Hence $Q = ru$ with $r>0$ and $\lvert \langle u\rangle_{*}\rvert = 1$.</p>
 <p><strong>Uniqueness.</strong> Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert \langle u\rangle_{*}\rvert = \lvert \langle u_1\rangle_{*}\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert \langle Q\rangle_{*}\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.</p>
 <p>The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a <strong>regime</strong>, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.</p>
-<h2 id="the-group-of-units-and-the-unit-set">The Group of Units and the Unit Set</h2>
+<h2 id="the-group-of-invertibles-and-the-unit-set">The Group of Invertibles and the Unit Set</h2>
 <h3 id="the-idempotent-coordinates-and-the-components">The Idempotent Coordinates and the Components</h3>
-<p>The group of units is ${\mathbb{C}_{\mathrm{spl}}}^\times = \{Q : \langle Q\rangle_{*}\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and</p>
+<p>The group of invertibles is ${\mathbb{C}_{\mathrm{spl}}}^\times = \{Q : \langle Q\rangle_{*}\neq0\}$. In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$ the multiplication is componentwise and</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}^\times \times \mathbb{R}^\times, \qquad Q \longmapsto (Q_+,Q_-).
 $$</p>
@@ -185,13 +185,13 @@ $$</p>
 <h3 id="the-maximal-compact-subgroup">The Maximal Compact Subgroup</h3>
 <p><strong>Theorem.</strong> The maximal compact subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.</p>
 <p><strong>Proof.</strong> Let $K\subset{\mathbb{C}_{\mathrm{spl}}}^\times$ be compact and let $Q = r\epsilon\exp(\theta j)$ be its polar form. The modulus $r : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\theta : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\theta(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\theta=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.</p>
-<p>The contrast with the complex case is exact. There the group of units is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.</p>
+<p>The contrast with the complex case is exact. There the group of invertibles is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.</p>
 <h3 id="the-deformation-retraction">The Deformation Retraction</h3>
 <p>The unit set ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ is a subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$, because the product of two elements of norm $\pm1$ has norm $\pm1$, and the inverse of such an element has the same norm. The map</p>
 <p>$$
 H : [0,1]\times{\mathbb{C}_{\mathrm{spl}}}^\times \longrightarrow {\mathbb{C}_{\mathrm{spl}}}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
 $$</p>
-<p>is continuous, fixes every point of ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of units therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\theta j)\mapsto \epsilon\exp((1-t)\theta j)$ contracts each branch to its vertex, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.</p>
+<p>is continuous, fixes every point of ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of invertibles therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\theta j)\mapsto \epsilon\exp((1-t)\theta j)$ contracts each branch to its vertex, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.</p>
 <h2 id="the-two-axes">The Two Axes</h2>
 <h3 id="the-hermitian-and-anti-hermitian-directions">The Hermitian and Anti-Hermitian Directions</h3>
 <p>Conjugation fixes the real axis and negates the split-imaginary axis. An element $\nu$ is <strong>Hermitian</strong> if $\bar\nu = \nu$ and <strong>anti-Hermitian</strong> if $\bar\nu = -\nu$. The Hermitian elements are the real axis $\mathbb{R}$, and the anti-Hermitian elements are $j\mathbb{R}$. On the real axis the norm is $q^2$, positive definite; on the split-imaginary axis it is $-q'^2$, negative definite. Every nonzero element of either axis is invertible. The modulus lies on the positive real axis. The unit set meets the real axis at $\pm1$, where $N=1$, and the split-imaginary axis at $\pm j$, where $N=-1$. Thus $j$ is a unit direction of negative norm.</p>
@@ -258,7 +258,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every unit group is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.</p>
+<p>In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every group of invertibles is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="multiplication-by-j">Multiplication by j</h3>
 <p>In the real basis $\{1,j\}$ a split-complex number is the pair $(q,q')$, and multiplication by $Q = q+jq'$ is the linear map</p>
@@ -271,7 +271,7 @@ $$</p>
 $$</p>
 <p>so the norm is the determinant and the modulus is the square root of the absolute determinant, $r = \sqrt{\lvert\det M_Q\rvert}$.</p>
 <h3 id="the-matrix-of-a-unit">The Matrix of a Unit</h3>
-<p>For a unit $u = x+yj$ the matrix is</p>
+<p>For an invertible element $u = x+yj$ the matrix is</p>
 <p>$$
 M_u = x\,I + y\,K = \begin{pmatrix} x & y \\ y & x \end{pmatrix}, \qquad \lvert x^2-y^2\rvert = 1.
 $$</p>
@@ -521,12 +521,12 @@ $$</p>
 <p>The split column is the only one in which the norm is indefinite and the unit set has four components. The complex and quaternion columns are definite and their unit sets are compact and connected, a circle and a three-sphere. The split column has a non-empty null cone, a non-compact unit set, and a maximal compact subgroup of four points.</p>
 <h2 id="summary">Summary</h2>
 <p>Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\theta j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\theta\in\mathbb{R}$.</p>
-<p>The group of units splits as</p>
+<p>The group of invertibles splits as</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^\times \cong \mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2\mathbb{Z})^2,
 $$</p>
 <p>the first factor the modulus, the second the hyperbolic angle, the last the four components. The maximal compact subgroup is $\{\pm1,\pm j\}\cong(\mathbb{Z}/2)^2$, discrete of order four, and it is a deformation retract of the group. There is no continuous compact factor: the complex circle has become four points.</p>
-<p>Both axes are definite: the real axis has positive norm, the split-imaginary axis negative norm. The anti-Hermitian direction $j$ has square $+1$, so the unit factor is hyperbolic; there is no square root of $-1$, no trigonometric unit factor and no compact one-parameter group. The matrix of a unit is symmetric and generally not orthogonal; the matrix polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite component, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.</p>
+<p>Both axes are definite: the real axis has positive norm, the split-imaginary axis negative norm. The anti-Hermitian direction $j$ has square $+1$, so the unit factor is hyperbolic; there is no square root of $-1$, no trigonometric unit factor and no compact one-parameter group. The matrix of an invertible element is symmetric and generally not orthogonal; the matrix polar decomposition is $(M_Q,I)$ on the identity component, $(-M_Q,-I)$ on the opposite component, and $(\lvert M_Q\rvert,\text{reflection})$ on the spacelike region.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -582,7 +582,7 @@ $$</p>
 </tr>
 <tr>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$</td>
-<td>the group of units</td>
+<td>the group of invertibles</td>
 </tr>
 <tr>
 <td>$({\mathbb{C}_{\mathrm{spl}}}^\times)_0 = \{q>\lvert q'\rvert\}$</td>
@@ -598,7 +598,7 @@ $$</p>
 </tr>
 <tr>
 <td>$M_u = xI+yK$</td>
-<td>the matrix of a unit, symmetric, generally not orthogonal</td>
+<td>the matrix of an invertible element, symmetric, generally not orthogonal</td>
 </tr>
 <tr>
 <td>$O(1,1)$</td>

@@ -76,7 +76,7 @@
 $$</p>
 <p>and the embedding is multiplicative. This article is the complex model of the quaternion category: the model of size two over $\mathbb{C}$, distinguished from its companion pair $M_4(\mathbb{R})_{\mathbb{H}_L}$, of size four over $\mathbb{R}$.</p>
 <p><strong>Why the complex field is unavoidable.</strong> There is no faithful $2\times2$ real model. A faithful real representation of degree two would embed a four-dimensional algebra into a four-dimensional algebra and hence be an isomorphism, and $M_2(\mathbb{R})$ has zero divisors while $\mathbb{H}$ does not. So the quaternion category is the first in Part VI where the model needs a larger scalar field, and the price is that the model is an embedding and not an isomorphism: the image has real dimension four inside the eight real dimensions of $M_2(\mathbb{C})$.</p>
-<p><strong>What the embedding costs and what it buys.</strong> It costs surjectivity, and with it the free ride of the split-quaternion category, where every matrix statement was a statement about the algebra. Here the image is a proper subspace, so each statement below has to be checked to stay inside it: multiplicativity, the adjugate, the inverse and the two-sided structure all do, and the spectral projectors do not — they are images of the complexified algebra and are named as such in §<em>The Spectral Projectors</em>. It buys three things the split case does not have. The determinant is positive definite, so there is no null cone and every nonzero element is a unit. The projectors are Hermitian, so the spectral theorem applies to the complexification and the eigenlines are orthogonal. And the eigenvalues are always a conjugate pair, so every element is diagonalisable over $\mathbb{C}$ and never defective.</p>
+<p><strong>What the embedding costs and what it buys.</strong> It costs surjectivity, and with it the free ride of the split-quaternion category, where every matrix statement was a statement about the algebra. Here the image is a proper subspace, so each statement below has to be checked to stay inside it: multiplicativity, the adjugate, the inverse and the two-sided structure all do, and the spectral projectors do not — they are images of the complexified algebra and are named as such in §<em>The Spectral Projectors</em>. It buys three things the split case does not have. The determinant is positive definite, so there is no null cone and every nonzero element is invertible. The projectors are Hermitian, so the spectral theorem applies to the complexification and the eigenlines are orthogonal. And the eigenvalues are always a conjugate pair, so every element is diagonalisable over $\mathbb{C}$ and never defective.</p>
 <p><strong>One contrast to keep in view.</strong> In the split-quaternion algebra an idempotent exists over $\mathbb{R}$, because a pure vector can have square $+e_t$. In the quaternion algebra no pure vector has square $+e_t$, so the algebra has no nontrivial idempotent at all; the idempotents appear only in the complexified algebra, and they are the images of $\tfrac12(e_t\pm iu)$ with $u$ a pure unit quaternion, whose square is $+e_t$ because the extra scalar $i$ is available. This single difference governs the spectral section.</p>
 <p><strong>Boundaries.</strong> The algebra and its multiplication table are <em>Quaternion Algebra</em>; the conjugation, the norm and invertibility are <em>Quaternion Norm and Invertibility</em> and <em>The Quaternion Conjugation and the Involutions</em>; the spectrum is <em>Spectral Theory of the Quaternions</em>; the modules are <em>Quaternion Linear Representations</em>, which cite this article for the module of the model. The regular model, of size four over $\mathbb{R}$, is <em>$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation</em>. The operators of this model are the companion article <em>$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators</em>. The biquaternion counterpart is <em>$M_2(\mathbb{C})$ Pauli Representation</em>, whose display is the same array over $\mathbb{C}$; this model is its real slice, §<em>The Real Slice of the Biquaternion Display</em>.</p>
 <p><strong>Conventions.</strong> The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with</p>
@@ -182,7 +182,7 @@ $$</p>
 <p><strong>The image is closed.</strong> The product of two matrices of the displayed shape is again of that shape, so the image is a subalgebra; it is not an ideal, since $M_2(\mathbb{C})$ is simple and the image is proper.</p>
 <p><strong>What the product sees.</strong> The product of the model is the matrix product, and the four-real-dimensional image is closed under it. The failure is elsewhere: the image is not closed under complex scalar multiplication. For $A$ in the image and $\lambda\in\mathbb{C}$ not real, $\lambda A$ is not in the image unless $A=0$, because the shape ties the second row to the conjugate of the first. So the image is an $\mathbb{R}$-subspace and not a $\mathbb{C}$-subspace, and that is the exact sense in which the model is four-real-dimensional inside eight.</p>
 <p><strong>The matrix units.</strong> The algebra is a division algebra, so it has no nontrivial idempotent and therefore no system of matrix units: the Peirce decomposition of the split-quaternion category has no counterpart here. What replaces it is the pair of idempotents of the complexified algebra, $\tfrac12(e_t\pm iu)$, of the next-but-one section; they are not elements of $\mathbb{H}$.</p>
-<p><strong>The two products that differ.</strong> In the split-quaternion category the model is an isomorphism, so $\mathsf{M}_2(\tilde q\tilde p)$ and $\mathsf{M}_2(\tilde p\tilde q)$ are two matrices with the same spectrum, and everything about them is read off the spectrum. Here the same is true and stronger: the two products are conjugate to each other, because $\tilde p\tilde q=\tilde q^{-1}(\tilde q\tilde p)\tilde q$ for a unit $\tilde q$, so they have the same trace and the same determinant identically and not merely numerically.</p>
+<p><strong>The two products that differ.</strong> In the split-quaternion category the model is an isomorphism, so $\mathsf{M}_2(\tilde q\tilde p)$ and $\mathsf{M}_2(\tilde p\tilde q)$ are two matrices with the same spectrum, and everything about them is read off the spectrum. Here the same is true and stronger: the two products are conjugate to each other, because $\tilde p\tilde q=\tilde q^{-1}(\tilde q\tilde p)\tilde q$ for an invertible element $\tilde q$, so they have the same trace and the same determinant identically and not merely numerically.</p>
 <h2 id="the-trace">The Trace</h2>
 <p><strong>Theorem (the trace).</strong> For every quaternion,</p>
 <p>$$
@@ -194,7 +194,7 @@ $$</p>
 \mathsf{M}_2(V)=\mathfrak{su}(2)=\{A\in\mathsf{M}_2(\mathbb{H}):\operatorname{tr}A=0\},
 $$</p>
 <p>spanned by the three images of $\vec e_x,\vec e_y,\vec e_z$, which are anti-Hermitian. So the traceless part of the image is a three-dimensional real space of anti-Hermitian matrices, and the scalar part is recovered as $\tfrac12\operatorname{tr}$.</p>
-<p><strong>The trace is real and it is not a criterion.</strong> The trace of a matrix in the image is real, whatever the element, because the two diagonal entries are conjugate. It is blind to the three vector coordinates, so it separates the elements by $q_t$ alone: $e_t+2\vec e_x$ and $e_t-3\vec e_y$ have the same trace and different norms. Its role is to split the image into the scalar line and the traceless part, and the second is the Lie algebra of the unit group.</p>
+<p><strong>The trace is real and it is not a criterion.</strong> The trace of a matrix in the image is real, whatever the element, because the two diagonal entries are conjugate. It is blind to the three vector coordinates, so it separates the elements by $q_t$ alone: $e_t+2\vec e_x$ and $e_t-3\vec e_y$ have the same trace and different norms. Its role is to split the image into the scalar line and the traceless part, and the second is the Lie algebra of the group of invertibles.</p>
 <p><strong>The trace form.</strong> The bilinear form $\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$ restricted to the image has the Gram matrix</p>
 <p>$$
 \operatorname{tr}\bigl(\mathsf{M}_2(\tilde e_\mu)\mathsf{M}_2(\tilde e_\nu)\bigr)=\operatorname{diag}(2,-2,-2,-2),
@@ -235,7 +235,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The unit criterion.</strong> An element is a unit exactly when its matrix is invertible, which here is exactly when it is nonzero; the group of units is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, and its image is $\mathsf{M}_2(\mathbb{H})\setminus\{0\}$. The determinant is multiplicative, so the units of norm one form the subgroup of matrices of determinant one inside the image, which is the group $SU(2)$ of the section on the norms.</p>
+<p><strong>The unit criterion.</strong> An element is invertible exactly when its matrix is invertible, which here is exactly when it is nonzero; the group of invertibles is $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, and its image is $\mathsf{M}_2(\mathbb{H})\setminus\{0\}$. The determinant is multiplicative, so the invertibles of norm one form the subgroup of matrices of determinant one inside the image, which is the group $SU(2)$ of the section on the norms.</p>
 <p><strong>What the determinant hides.</strong> A definite determinant cannot show the difference between the quaternion algebra and the matrix algebra in the way the indefinite one did, because on a definite form all nonzero vectors look alike. The structures that the split case read off the null cone — the minimal left ideals, the rulings, the projective geometry — have no counterpart here; what replaces them is the spectral decomposition, which the split case could not make uniform precisely because its discriminant changes sign.</p>
 <h2 id="the-spectral-projectors">The Spectral Projectors</h2>
 <p><strong>The characteristic polynomial.</strong> The matrix of the image is $\begin{pmatrix}z&w\\-\overline{w}&\overline{z}\end{pmatrix}$, so</p>
@@ -342,7 +342,7 @@ $$</p>
 <td>$\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$</td>
 <td>$\operatorname{diag}(2,-2,-2,-2)$</td>
 <td>$(1,3)$</td>
-<td>conjugation by units</td>
+<td>conjugation by invertibles</td>
 </tr>
 <tr>
 <td>Frobenius form</td>
@@ -353,7 +353,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The determinant form is Euclidean.</strong> Its Gram matrix is the identity in the basis of the four units, so it is the ordinary Euclidean form of $\mathbb{R}^{4}$ under the coordinates $(q_t,q_x,q_y,q_z)$, and its group of isometries is $O(4)$. Multiplicativity then says that the model embeds the units into $O(4)$ up to scale, which is the double cover $SU(2)\to SO(3)$ operating on the pure part.</p>
+<p><strong>The determinant form is Euclidean.</strong> Its Gram matrix is the identity in the basis of the four units, so it is the ordinary Euclidean form of $\mathbb{R}^{4}$ under the coordinates $(q_t,q_x,q_y,q_z)$, and its group of isometries is $O(4)$. Multiplicativity then says that the model embeds the invertibles into $O(4)$ up to scale, which is the double cover $SU(2)\to SO(3)$ operating on the pure part.</p>
 <p><strong>The trace form is Minkowski.</strong> Its Gram matrix is $\operatorname{diag}(2,-2,-2,-2)$, of signature $(1,3)$, and it is invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$. It is the form of the Minkowski space of signature $(1,3)$ that the quaternion algebra acts on by Lorentz transformations, and it is <strong>not</strong> the determinant form.</p>
 <p><strong>The Frobenius form is a Hermitian metric.</strong> $\operatorname{tr}(A^{\dagger}B)$ is a positive definite Hermitian form on $M_2(\mathbb{C})$, its restriction to the image is $2$ times the Euclidean form, and it is the inner product with respect to which the conjugate transpose is the adjoint. The three forms therefore play three different roles: the determinant is algebraic and multiplicative, the trace form is the invariant of the group action, and the Frobenius form is the metric of the matrix space.</p>
 <p><strong>The absence of a Hermitian structure on the algebra.</strong> The product and the norm do not make $\mathbb{H}$ a complex Hilbert space, because the scalar field is $\mathbb{R}$; what the model shows is that the complex structure $A\mapsto iA$ does not preserve the image, so the complex Hermitian metric of $M_2(\mathbb{C})$ restricts to a real Euclidean metric and no more.</p>
@@ -471,7 +471,7 @@ $$</p>
 <li>There is no faithful real model of degree two, and the least real degree is four; the image has real dimension four inside eight.</li>
 <li>Left and right multiplication stay inside the image and are two commuting copies of the algebra in $M_4(\mathbb{R})$, related by $R_{\tilde q}=C L_{\tilde q^{*}}C$ with $C$ the conjugate transpose, intersecting in the scalars.</li>
 <li>The trace is $2q_t$ and the traceless part is the three-dimensional space of anti-Hermitian matrices.</li>
-<li>The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is a unit and the rank is two or zero.</li>
+<li>The determinant is the norm $N$, positive definite, with no null cone; every nonzero element is invertible and the rank is two or zero.</li>
 <li>The discriminant is $-4\lVert\vec v\rVert^{2}$, so the eigenvalues are the conjugate pair $q_t\pm i\lVert\vec v\rVert$ and every non-scalar element is diagonalisable.</li>
 <li>The spectral projectors are $\tfrac12(I_2\mp i\mathsf{M}_2(u))$, Hermitian, rank one, orthogonal, they are the images of the idempotents $\tfrac12(e_t\mp iu)$ of the complexified algebra, and $P_\pm$ belongs to $\lambda_\pm$.</li>
 <li>The adjugate is the conjugate transpose, every element of the image is conformal normal, and $\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{>0}\cdot SU(2)$.</li>
@@ -541,7 +541,7 @@ $$</p>
 </tr>
 <tr>
 <td>$SU(2)$</td>
-<td>the units of norm one, that is $\mathsf{M}_2(\mathbb{H})\cap SL_2(\mathbb{C})$</td>
+<td>the invertibles of norm one, that is $\mathsf{M}_2(\mathbb{H})\cap SL_2(\mathbb{C})$</td>
 <td><em>Quaternion Exponential and Lie Group Structure</em></td>
 </tr>
 <tr>

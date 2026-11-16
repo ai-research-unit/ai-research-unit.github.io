@@ -86,7 +86,7 @@ $$</p>
 u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
 $$</p>
 <p>with $\breve r$ the modulus and $u$ the unit factor. The decomposition is the exponential form of the modulus–unit polar decomposition of <em>Modulus–Unit Polar Decomposition of Reduced Biquaternions</em>, which writes every invertible reduced biquaternion as $\breve Q=\breve r u$ with $\breve r$ in the cone $P$ and $u$ in the torus $T^2$.</p>
-<p>The exponential and the logarithm are those of <em>Reduced Biquaternion Elementary Functions</em>: the exponential is a homomorphism onto the unit group, with kernel the rank-two lattice $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$, and the logarithm is its multivalued inverse. §<em>The Analytic Setting</em> states them in the form used below, and they are not derived again. What the article owns is the decomposition itself, its existence and uniqueness, the matrix picture and the exponential coordinates.</p>
+<p>The exponential and the logarithm are those of <em>Reduced Biquaternion Elementary Functions</em>: the exponential is a homomorphism onto the group of invertibles, with kernel the rank-two lattice $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}$, and the logarithm is its multivalued inverse. §<em>The Analytic Setting</em> states them in the form used below, and they are not derived again. What the article owns is the decomposition itself, its existence and uniqueness, the matrix picture and the exponential coordinates.</p>
 <p>The algebra is the product $\mathbb{C}\times\mathbb{C}$ in the two complex components</p>
 <p>$$
 C_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
@@ -129,7 +129,7 @@ $$</p>
 </tr>
 <tr>
 <td>Existence</td>
-<td>every unit has a decomposition</td>
+<td>every invertible element has a decomposition</td>
 </tr>
 <tr>
 <td>Uniqueness</td>
@@ -176,7 +176,7 @@ $$</p>
 </tr>
 <tr>
 <td>Image</td>
-<td>the unit group ${\mathbb{B}_{\mathrm{red}}}^\times=\{N\neq0\}$</td>
+<td>the group of invertibles ${\mathbb{B}_{\mathrm{red}}}^\times=\{N\neq0\}$</td>
 </tr>
 <tr>
 <td>Kernel</td>
@@ -184,7 +184,7 @@ $$</p>
 </tr>
 <tr>
 <td>Logarithm</td>
-<td>exists for every unit, unique modulo the kernel</td>
+<td>exists for every invertible element, unique modulo the kernel</td>
 </tr>
 <tr>
 <td>Principal domain</td>
@@ -224,7 +224,7 @@ $$</p>
 <p>$$
 N=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=C_+C_-,
 $$</p>
-<p>and an element is a unit exactly when both components are nonzero. The table records the change.</p>
+<p>and an element is invertible exactly when both components are nonzero. The table records the change.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -321,7 +321,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The real dimension is four, the real dimension of the group of units. The coordinates separate into the modulus pair $(\rho,\theta_{\mathrm{rpd}})$ and the phase pair $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$.</p>
+<p>The real dimension is four, the real dimension of the group of invertibles. The coordinates separate into the modulus pair $(\rho,\theta_{\mathrm{rpd}})$ and the phase pair $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$.</p>
 <h2 id="the-decomposition">The Decomposition</h2>
 <h3 id="the-definition">The Definition</h3>
 <p><strong>Definition.</strong> An <strong>exponential polar decomposition</strong> of $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$ is a writing</p>
@@ -469,7 +469,7 @@ $$</p>
 \qquad
 \theta_{\mathrm{phb}}=\tfrac12(\theta_+-\theta_-).
 $$</p>
-<p>The real dimensions are $2$ for the modulus and $2$ for the torus, and they add to the real dimension $4$ of the group of units.</p>
+<p>The real dimensions are $2$ for the modulus and $2$ for the torus, and they add to the real dimension $4$ of the group of invertibles.</p>
 <h3 id="one-exponential">One Exponential</h3>
 <p>Because the algebra is commutative and the exponents commute,</p>
 <p>$$
@@ -501,8 +501,8 @@ $$</p>
 D=\Bigl\{\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}:\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R},\ \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi\Bigr\}
 
 $$</p>
-<p>onto the unit group ${\mathbb{B}_{\mathrm{red}}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.</p>
-<p><strong>Existence.</strong> Let $\breve Q$ be a unit, so $C_+\neq0$ and $C_-\neq0$. Put</p>
+<p>onto the group of invertibles ${\mathbb{B}_{\mathrm{red}}}^\times$; the boundary of the diamond is taken half-open, so that each pair of angles $(\theta_+,\theta_-)\in(-\pi,\pi]^2$ has exactly one representative.</p>
+<p><strong>Existence.</strong> Let $\breve Q$ be an invertible element, so $C_+\neq0$ and $C_-\neq0$. Put</p>
 <p>$$
 \rho=\sqrt{\lvert C_+C_-\rvert},
 \qquad
@@ -568,12 +568,12 @@ $$</p>
 </table></div>
 <h2 id="the-logarithm">The Logarithm</h2>
 <h3 id="the-general-logarithm">The General Logarithm</h3>
-<p>A <strong>logarithm</strong> of a unit $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. In the components it is</p>
+<p>A <strong>logarithm</strong> of an invertible element $\breve Q$ is an element $\breve Q_{\log}$ with $\exp\breve Q_{\log}=\breve Q$. In the components it is</p>
 <p>$$
 \breve Q_{\log}=\frac{\log C_++\log C_-}{2}
 +j\,\frac{\log C_+-\log C_-}{2},
 $$</p>
-<p>with an independent complex logarithm of each component. This is the <strong>global formula</strong> of <em>Reduced Biquaternion Elementary Functions</em>, §<em>The Logarithm</em>, written in the components. A logarithm exists exactly when both components are nonzero, that is exactly when $\breve Q$ is a unit. The general solution is</p>
+<p>with an independent complex logarithm of each component. This is the <strong>global formula</strong> of <em>Reduced Biquaternion Elementary Functions</em>, §<em>The Logarithm</em>, written in the components. A logarithm exists exactly when both components are nonzero, that is exactly when $\breve Q$ is invertible. The general solution is</p>
 <p>$$
 \breve Q_{\log}=\operatorname{Log}\breve Q+2\pi i k+\pi i(1+j)l,
 \qquad k,l\in\mathbb{Z},
@@ -613,7 +613,7 @@ $$</p>
 \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert
 =\max\bigl(\lvert\operatorname{Arg}C_+\rvert,\lvert\operatorname{Arg}C_-\rvert\bigr)\le\pi.
 $$</p>
-<p>The principal logarithm therefore lies in the principal diamond, and by §<em>Existence and Uniqueness</em> it is the unique logarithm there. It is defined on the whole unit group.</p>
+<p>The principal logarithm therefore lies in the principal diamond, and by §<em>Existence and Uniqueness</em> it is the unique logarithm there. It is defined on the whole group of invertibles.</p>
 <p>The principal logarithm is real-analytic on the complement of the two walls</p>
 <p>$$
 W_+=\{C_+\in(-\infty,0)\},
@@ -621,12 +621,12 @@ W_+=\{C_+\in(-\infty,0)\},
 W_-=\{C_-\in(-\infty,0)\},
 $$</p>
 <p>each of real dimension three, and it is discontinuous across them. A branch that continued analytically across a wall would have to continue by a period and would not be single-valued. The walls are the exact analogue of the negative real axis of $\mathbb{C}$; there is one wall for each component.</p>
-<p>The two walls are not the zero divisors. The zero divisors are the two real two-planes $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, on which $C_-=0$ or $C_+=0$; they lie in the closures of the walls. The walls are larger: a unit with $C_+=-1$ and $C_-=-2$ lies on both and has a perfectly good logarithm,</p>
+<p>The two walls are not the zero divisors. The zero divisors are the two real two-planes $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, on which $C_-=0$ or $C_+=0$; they lie in the closures of the walls. The walls are larger: An invertible element with $C_+=-1$ and $C_-=-2$ lies on both and has a perfectly good logarithm,</p>
 <p>$$
 \operatorname{Log}\breve Q=\frac{\ln2}{2}+i\pi-\frac{\ln2}{2}j,
 $$</p>
 <p>because both components are negative reals, with principal argument $\pi$.</p>
-<p>No continuous single-valued branch exists on the whole unit group, because the unit group has fundamental group $\mathbb{Z}^2$; the obstruction is the kernel lattice, not a failure of local invertibility. The exponential is a covering map onto the unit group, and the logarithm is its multivalued inverse.</p>
+<p>No continuous single-valued branch exists on the whole group of invertibles, because the group of invertibles has fundamental group $\mathbb{Z}^2$; the obstruction is the kernel lattice, not a failure of local invertibility. The exponential is a covering map onto the group of invertibles, and the logarithm is its multivalued inverse.</p>
 <h3 id="the-kernel-and-the-fibre">The Kernel and the Fibre</h3>
 <p>The kernel of the exponential is the set of exponents with $\rho=1$, $\theta_{\mathrm{rpd}}=0$ and $u=1$, that is the set of $i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}$ with $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\in\Lambda$. In the algebra,</p>
 <p>$$
@@ -634,7 +634,7 @@ $$</p>
 =\bigl\{\pi i(k(1+j)+l(1-j)):k,l\in\mathbb{Z}\bigr\}.
 $$</p>
 <p>It is a rank-two lattice, generated by $2\pi i$ and $\pi i(1+j)$. The scalar period $2\pi i$ and the split period $2\pi ij$ generate only the sublattice of index two in the kernel. The two half-periods $\pi i(1+j)$ and $\pi i(1-j)$ are independent generators.</p>
-<p>The fibre of the exponential over a unit $\breve Q$ is</p>
+<p>The fibre of the exponential over an invertible element $\breve Q$ is</p>
 <p>$$
 \exp^{-1}(\breve Q)=\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^2.
 $$</p>
@@ -642,7 +642,7 @@ $$</p>
 <h3 id="the-exponent-and-the-logarithm">The Exponent and the Logarithm</h3>
 <p>On this algebra the exponent is a logarithm of the element, and the two objects coincide: the decomposition $\breve Q=\exp\breve Q_{\log}$ says exactly that $\breve Q_{\log}\in\exp^{-1}(\breve Q)$. The polar data $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are the representative of that fibre in the principal diamond, so the uniqueness is uniqueness modulo the lattice $\Lambda$. There is no discrete factor as in the split-complex case, and no canonical word distinct from the logarithm as in the biquaternion case; the exponent is the logarithm, read in the coordinates of the modulus and the torus.</p>
 <h2 id="the-group-law">The Group Law</h2>
-<p>The exponential is a homomorphism from the additive group of the algebra to the multiplicative group of the units:</p>
+<p>The exponential is a homomorphism from the additive group of the algebra to the multiplicative group of the invertibles:</p>
 <p>$$
 \exp(\breve Q_{1\log}+\breve Q_{2\log})=\exp\breve Q_{1\log}\,\exp\breve Q_{2\log},
 \qquad
@@ -656,7 +656,7 @@ $$</p>
 \qquad
 (\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})=(\theta_{\mathrm{pha},1}+\theta_{\mathrm{pha},2},\ \theta_{\mathrm{phb},1}+\theta_{\mathrm{phb},2})\ \text{modulo}\ \Lambda.
 $$</p>
-<p>The radii multiply, the boosts add, and the phases add on the torus. In the components the law is the pair of complex laws $C_\pm(\breve Q_1\breve Q_2)=C_\pm(\breve Q_1)C_\pm(\breve Q_2)$. The group of units is therefore</p>
+<p>The radii multiply, the boosts add, and the phases add on the torus. In the components the law is the pair of complex laws $C_\pm(\breve Q_1\breve Q_2)=C_\pm(\breve Q_1)C_\pm(\breve Q_2)$. The group of invertibles is therefore</p>
 <p>$$
 \boxed{\;{\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2\;},
 $$</p>
@@ -862,7 +862,7 @@ $$</p>
 <td>transcendental</td>
 </tr>
 <tr>
-<td>Global on the units</td>
+<td>Global on the invertibles</td>
 <td>yes</td>
 <td>no</td>
 <td>yes</td>
@@ -909,7 +909,7 @@ $$</p>
 P=\{\exp(\ln\rho+j\theta_{\mathrm{rpd}}):\ln\rho\in\mathbb{R},\ \theta_{\mathrm{rpd}}\in\mathbb{R}\}
 =\{\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}):\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R}\}.
 $$</p>
-<p>The product $P\times T^2$ is the unit group, and the exponential is the universal covering</p>
+<p>The product $P\times T^2$ is the group of invertibles, and the exponential is the universal covering</p>
 <p>$$
 \mathbb{R}^2\times\mathbb{R}^2\longrightarrow P\times T^2
 $$</p>
@@ -954,7 +954,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Domain</td>
-<td>the units $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$, that is $C_+C_-\neq0$</td>
+<td>the invertibles $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$, that is $C_+C_-\neq0$</td>
 </tr>
 <tr>
 <td>Components</td>
@@ -978,7 +978,7 @@ $$</p>
 </tr>
 <tr>
 <td>Existence</td>
-<td>every unit has a decomposition</td>
+<td>every invertible element has a decomposition</td>
 </tr>
 <tr>
 <td>Uniqueness</td>
@@ -1090,11 +1090,11 @@ $$</p>
 \exp(Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown})
 =\exp(Q_{\log\blacktriangle})\bigl(\cosh Q_{\log\blacktriangledown}+j\sinh Q_{\log\blacktriangledown}\bigr),
 $$</p>
-<p>and it is a homomorphism. It is surjective onto the unit group and its kernel is the lattice</p>
+<p>and it is a homomorphism. It is surjective onto the group of invertibles and its kernel is the lattice</p>
 <p>$$
 2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2,
 $$</p>
-<p>generated by $2\pi i$ and $\pi i(1+j)$. The scalar and split periods $2\pi i$ and $2\pi ij$ generate a sublattice of index two. The logarithm exists for every unit and is unique only modulo this lattice; the principal diamond is a fundamental domain of area $2\pi^2$, and the exponential is a bijection from the product of the two real lines with the diamond onto the units.</p>
+<p>generated by $2\pi i$ and $\pi i(1+j)$. The scalar and split periods $2\pi i$ and $2\pi ij$ generate a sublattice of index two. The logarithm exists for every invertible element and is unique only modulo this lattice; the principal diamond is a fundamental domain of area $2\pi^2$, and the exponential is a bijection from the product of the two real lines with the diamond onto the invertibles.</p>
 <p>The group law is addition in the exponential coordinates,</p>
 <p>$$
 {\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2
@@ -1275,8 +1275,8 @@ $$</p>
 <li><a href="reduced-biquaternion-elementary-functions.html">Reduced Biquaternion Elementary Functions</a>, for the exponential and the logarithm as functions, the kernel and the principal domain.</li>
 <li><a href="modulus-unit-polar-decomposition-of-reduced-biquaternions.html">Modulus–Unit Polar Decomposition of Reduced Biquaternions</a>, for the modulus, the torus and the uniqueness of the pair.</li>
 <li><a href="rational-chart-polar-decomposition-of-reduced-biquaternions.html">Rational-Chart Polar Decomposition of Reduced Biquaternions</a>, for the rational coordinate on the torus.</li>
-<li><a href="reduced-biquaternion-lie-group-and-exponential-structure.html">Reduced Biquaternion Lie Group and Exponential Structure</a>, for the kernel, the covering and the group of units.</li>
-<li><a href="the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html">The Group of Units of the Algebra of the Reduced Biquaternions</a>, for the topology of the unit group.</li>
+<li><a href="reduced-biquaternion-lie-group-and-exponential-structure.html">Reduced Biquaternion Lie Group and Exponential Structure</a>, for the kernel, the covering and the group of invertibles.</li>
+<li><a href="the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html">The Group of Invertibles of the Algebra of the Reduced Biquaternions</a>, for the topology of the group of invertibles.</li>
 <li><a href="exponential-polar-decomposition-of-complex-numbers.html">Exponential Polar Decomposition of Complex Numbers</a>, for the one-coordinate exponential.</li>
 <li><a href="exponential-polar-decomposition-of-split-complex-numbers.html">Exponential Polar Decomposition of Split-Complex Numbers</a>, for the hyperbolic exponential.</li>
 <li><em>Exponential Polar Decomposition of Biquaternions</em>, for the noncommutative counterpart.</li>

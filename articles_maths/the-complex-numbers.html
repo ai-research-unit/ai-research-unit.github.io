@@ -164,12 +164,12 @@ $$</p>
 \mathbb{Z}[i] = \{q + i q' : q, q' \in \mathbb{Z}\} \subseteq \mathbb{C},
 $$</p>
 <p>with the <strong>norm</strong> $\langle q+i q'\rangle_{*} = q^2 + q'^2 = (q+i q')(q-i q')$.</p>
-<p><strong>Proposition.</strong> $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of units is $\{\pm 1, \pm i\}$; and the norm is multiplicative.</p>
+<p><strong>Proposition.</strong> $\mathbb{Z}[i]$ is a subring of $\mathbb{C}$ and an integral domain; its field of fractions is $\mathbb{Q}(i)$; its group of invertibles is $\{\pm 1, \pm i\}$; and the norm is multiplicative.</p>
 <p><strong>Proof.</strong> Closure under the ring operations is immediate from the addition and multiplication formulas for $\mathbb{C}$, and the norm is the restriction of $Q \mapsto Q\bar Q$, which is multiplicative and vanishes only at $0$; hence there are no zero divisors. Every quotient lies in $\mathbb{Q}(i)$, since</p>
 <p>$$
 \frac{q_1+i q'_1}{q_2+i q'_2} = \frac{(q_1+i q'_1)(q_2-i q'_2)}{q_2^2+(q'_2)^2} \in \mathbb{Q}(i) \quad (q_2+i q'_2 \neq 0),
 $$</p>
-<p>so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is a unit if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.</p>
+<p>so $\operatorname{Frac}(\mathbb{Z}[i]) \subseteq \mathbb{Q}(i)$; conversely $\mathbb{Q} \subseteq \operatorname{Frac}(\mathbb{Z}[i])$ and $i \in \operatorname{Frac}(\mathbb{Z}[i])$, so $\mathbb{Q}(i) \subseteq \operatorname{Frac}(\mathbb{Z}[i])$. Finally $Q$ is invertible if and only if $\langle Q\rangle_{*} = 1$, since $QU = 1$ gives $\langle Q\rangle_{*}\langle U\rangle_{*} = 1$ with both norms nonnegative integers; $q^2 + q'^2 = 1$ has the solutions $(\pm1,0), (0,\pm1)$.</p>
 <h3 id="euclidean-structure">Euclidean Structure</h3>
 <p><strong>Theorem.</strong> $\mathbb{Z}[i]$ is a Euclidean domain for the norm $\langle\cdot\rangle_{*}$, hence a principal ideal domain and a unique factorization domain.</p>
 <p><strong>Proof.</strong> Let $Q_1, Q_2 \in \mathbb{Z}[i]$ with $Q_2 \neq 0$. Then $Q_1/Q_2 = Q_1\bar Q_2/\langle Q_2\rangle_{*}$ has rational coordinates, since $\bar Q_2 \in \mathbb{Z}[i]$ and $\langle Q_2\rangle_{*} \in \mathbb{Z}\setminus\{0\}$; choose integers $m, n$ with</p>

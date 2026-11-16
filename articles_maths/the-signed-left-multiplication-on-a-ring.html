@@ -119,7 +119,7 @@ $$</p>
 $$</p>
 <p>In particular the product of two signed left multiplications is a plain left multiplication, and the product of one of each is a signed one.</p>
 <h3 id="comparison-with-the-reflection-and-the-two-sided-operator">Comparison with the reflection and the two-sided operator</h3>
-<p><strong>Proposition.</strong> For a unit $u$ the reflection of <em>Reflections as Signed Two-Sided Operators on a Ring</em> factors through the signed left multiplication:</p>
+<p><strong>Proposition.</strong> For an invertible element $u$ the reflection of <em>Reflections as Signed Two-Sided Operators on a Ring</em> factors through the signed left multiplication:</p>
 <p>$$
 r_u(x) = u\,\alpha(x)\,u^{-1} = T_u\bigl(R_{u^{-1}}(x)\bigr) = \bigl(T_u \circ R_{u^{-1}}\bigr)(x),
 $$</p>
@@ -138,8 +138,8 @@ $$</p>
 <p>$$
 \boxed{\;T_a^{-1} = T_{\alpha(a)^{-1}} = T_{\alpha(a^{-1})}\;}.
 $$</p>
-<p><strong>Proof.</strong> If $T_a$ is bijective then $T_a(1) = a$ has a two-sided inverse by surjectivity and $a$ is not a zero divisor by injectivity, so $a$ is a unit. Conversely, $T_a T_{\alpha(a^{-1})}(x) = a\alpha(\alpha(a^{-1})\alpha(x)) = a\,a^{-1}\alpha^2(x) = x$, and the opposite composite is computed the same way; so $T_a$ is invertible with that inverse. The two displayed forms of the inverse agree because $\alpha(a^{-1}) = \alpha(a)^{-1}$.</p>
-<p><strong>Corollary.</strong> The signed left multiplications by the units form, together with the plain left multiplications by the units, the two-sided version of the unit group's one-sided action: $T_u = L_u\alpha$ and $T_u^{-1} = T_{\alpha(u)^{-1}}$, so $u \mapsto T_u$ is a map from $A^\times$ onto a set of invertible operators with the composition $T_uT_v = L_{u\alpha(v)}$.</p>
+<p><strong>Proof.</strong> If $T_a$ is bijective then $T_a(1) = a$ has a two-sided inverse by surjectivity and $a$ is not a zero divisor by injectivity, so $a$ is invertible. Conversely, $T_a T_{\alpha(a^{-1})}(x) = a\alpha(\alpha(a^{-1})\alpha(x)) = a\,a^{-1}\alpha^2(x) = x$, and the opposite composite is computed the same way; so $T_a$ is invertible with that inverse. The two displayed forms of the inverse agree because $\alpha(a^{-1}) = \alpha(a)^{-1}$.</p>
+<p><strong>Corollary.</strong> The signed left multiplications by the invertibles form, together with the plain left multiplications by the invertibles, the two-sided version of the group of invertibles's one-sided action: $T_u = L_u\alpha$ and $T_u^{-1} = T_{\alpha(u)^{-1}}$, so $u \mapsto T_u$ is a map from $A^\times$ onto a set of invertible operators with the composition $T_uT_v = L_{u\alpha(v)}$.</p>
 <h3 id="the-elements-fixed-by-a-signed-left-multiplication">The elements fixed by a signed left multiplication</h3>
 <p><strong>Proposition.</strong> For $a \in A$ the fixed set</p>
 <p>$$
@@ -165,7 +165,7 @@ $$</p>
 <p>so $T_u^2$ is the negation of the identity and $T_u$ is not an involution; the reflection $r_u = T_uR_{u^{-1}}$ nevertheless satisfies $r_u^2 = \operatorname{conj}_{u\alpha(u)} = \operatorname{conj}_{-I} = \mathrm{id}$, because $-I$ is central.</p>
 <p><strong>(d) The graded action on a module.</strong> When $M$ is a graded module over a graded ring and the action is required to respect the grading, the operators that occur are precisely the signed left multiplications $T_a$ with $a$ homogeneous, the case of <em>The Graded Action on a Module over a Ring</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>For a ring $A$ with a grade involution $\alpha$, the <strong>signed left multiplication</strong> by $a$ is $T_a(x) = a\alpha(x) = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}$. It is additive in its parameter with $T_a(1) = a$ and injective in $a$, and it recovers the plain left multiplication as $L_a = T_a\circ\alpha$, so that the two families coincide exactly when $\alpha = \mathrm{id}$. It is not a ring endomorphism but a <strong>twisted</strong> one: $T_a(xy) = T_a(x)\alpha(y)$. Its compositions are $T_aT_b = L_{a\alpha(b)}$, $T_aL_b = T_{a\alpha(b)}$ and $L_bT_a = T_{ba}$, so the plain and signed left multiplications together form a monoid, the twisted semidirect product $A \rtimes A$, and the reflection and the signed two-sided factor through it as $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$ and $r_u = T_uR_{u^{-1}}$. The kernel of $T_a$ is $\alpha^{-1}(\ell(a))$, its image is the left ideal $Aa$, and it is invertible exactly when $a$ is a unit, with inverse $T_{\alpha(a)^{-1}}$.</p>
+<p>For a ring $A$ with a grade involution $\alpha$, the <strong>signed left multiplication</strong> by $a$ is $T_a(x) = a\alpha(x) = L_a\circ\alpha = \alpha\circ L_{\alpha(a)}$. It is additive in its parameter with $T_a(1) = a$ and injective in $a$, and it recovers the plain left multiplication as $L_a = T_a\circ\alpha$, so that the two families coincide exactly when $\alpha = \mathrm{id}$. It is not a ring endomorphism but a <strong>twisted</strong> one: $T_a(xy) = T_a(x)\alpha(y)$. Its compositions are $T_aT_b = L_{a\alpha(b)}$, $T_aL_b = T_{a\alpha(b)}$ and $L_bT_a = T_{ba}$, so the plain and signed left multiplications together form a monoid, the twisted semidirect product $A \rtimes A$, and the reflection and the signed two-sided factor through it as $\mathcal{T}^{\alpha}_{a,b} = T_aR_b$ and $r_u = T_uR_{u^{-1}}$. The kernel of $T_a$ is $\alpha^{-1}(\ell(a))$, its image is the left ideal $Aa$, and it is invertible exactly when $a$ is invertible, with inverse $T_{\alpha(a)^{-1}}$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -213,7 +213,7 @@ $$</p>
 </tr>
 <tr>
 <td>$T_a^{-1} = T_{\alpha(a)^{-1}}$</td>
-<td>Inverse on the units</td>
+<td>Inverse on the invertibles</td>
 </tr>
 <tr>
 <td>$\mathcal{T}^{\alpha}_{a,b} = T_aR_b$, $r_u = T_uR_{u^{-1}}$</td>

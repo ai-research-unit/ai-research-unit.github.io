@@ -118,8 +118,8 @@ $$</p>
 <h2 id="the-results-in-brief">The Results in Brief</h2>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>An eigenvalue is a scalar for which a left ideal is proper, and the criterion turns that into one equation.</strong></p>
-<p>$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not a unit}\iff(\lambda-Q_t)^2+B^2=0 .$$</p>
-<p><strong>The proof uses no matrix.</strong> If $\tilde Q-\lambda e_t$ is a unit, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
+<p>$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not invertible}\iff(\lambda-Q_t)^2+B^2=0 .$$</p>
+<p><strong>The proof uses no matrix.</strong> If $\tilde Q-\lambda e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
 <p>$$
 (\tilde Q-\lambda e_t)(\tilde Q-\lambda e_t)^{\natural}=\bigl((\lambda-Q_t)^2+B^2\bigr)e_t ,
 $$</p>
@@ -444,7 +444,7 @@ $$</p>
 <p>$$
 (e\mathbb{B}e')(e\mathbb{B}e')=e\mathbb{B}(e'e)\mathbb{B}e'=0 .
 $$</p>
-<p><strong>For a unit the additive split has a multiplicative form.</strong></p>
+<p><strong>For an invertible element the additive split has a multiplicative form.</strong></p>
 <p>$$
 \tilde Q=\tilde Q_s\tilde U,\qquad \tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon,\qquad \tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon .
 $$</p>
@@ -487,7 +487,7 @@ $$</p>
 <h3 id="the-similarity-classification">The Similarity Classification</h3>
 <p><strong>Similar elements have the same spectrum, and off the cone the converse holds.</strong></p>
 <p>$$
-\tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{a unit})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
+\tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{an invertible element})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
 $$</p>
 <p>and off the cone the class is determined by the unordered pair $\{\lambda_+,\lambda_-\}$. On the cone the spectrum is the singleton $\{Q_t\}$ and carries no information beyond the scalar part: exactly two classes share it, the central class and the Jordan class.</p>
 <h3 id="the-worked-cases">The Worked Cases</h3>
@@ -814,7 +814,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The spectrum is $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, and the discriminant of the characteristic polynomial is $-4B^2$.</li>
-<li>An eigenvalue is a scalar for which $\tilde Q-\lambda e_t$ is not a unit; the criterion needs no module and no matrix.</li>
+<li>An eigenvalue is a scalar for which $\tilde Q-\lambda e_t$ is not invertible; the criterion needs no module and no matrix.</li>
 <li>$B^2\neq0$ is equivalent to distinct eigenvalues, semisimplicity and diagonalisability; $B^2=0$ is the spectral-degenerate cone.</li>
 <li>The characteristic polynomial has two coefficients and the minimal polynomial separates the four types; two pairs of types share a characteristic polynomial.</li>
 <li>Off the cone the root $\vec Z=-i\vec Q/B$ exists, the spectral idempotents are the Lagrange idempotents, and each eigenspace is a right ideal of complex dimension two.</li>
@@ -902,7 +902,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <p><strong>In the mathematics corpus.</strong> The six articles of the source table, and inside them <em>The Spectral Criterion</em>, which states the eigenvalue problem without a module, and <em>The Three Strata</em>, which is the normal-form table of the cone.</p>
 <p><strong>In this category.</strong> <em>The Modules: What the Algebra Acts On</em> supplies the right ideals that are the eigenspaces and the two spinor spaces that are the columns. <em>The Four Forms and the Four Norms</em> supplies the norm whose vanishing is the cone $\Sigma_{01}$ and the positivity the cone lacks. <em>The H Norm</em> and <em>The N Norm</em> carry the two conditions that the sector table keeps apart.</p>
-<p><strong>The sources of this entry.</strong> <a href="exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a> is the diabolic–exceptional table and the square-root law. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> is the Doppler pair and the warning that two eigenvalues are not two particles. <a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a> is the independence of the cone from invertibility. <a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a> treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.</p>
+<p><strong>The sources of this entry.</strong> <a href="exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a> is the diabolic–exceptional table and the square-root law. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> is the Doppler pair and the warning that two eigenvalues are not two particles. <a href="the-group-of-invertibles-the-cone-and-the-orders.html">The Group of Invertibles, the Cone and the Orders</a> is the independence of the cone from invertibility. <a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a> treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.</p>
       </div>
     </main>
   </div>

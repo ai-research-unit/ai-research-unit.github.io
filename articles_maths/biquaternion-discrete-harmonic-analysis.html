@@ -116,7 +116,7 @@ $$</p>
 W_N(n, \ell) = \cos\theta\, e_t - i\sin\theta\,\tilde{Ζ} .
 $$</p>
 <p><em>Proof.</em> The powers of $\tilde{Ζ}$ alternate in pairs, $\tilde{Ζ}^{2k}=e_t$ and $\tilde{Ζ}^{2k+1}=\tilde{Ζ}$, so the exponential series splits into the even part $\cos\theta\,e_t$ and the odd part $-i\sin\theta\,\tilde{Ζ}$, the cosine and the sine being the ordinary functions of the real argument.</p>
-<p><strong>The kernel is a unit, at every root and every pair of indices.</strong> Both factors of the closed form lie in $\mathbb{C}[\tilde{Ζ}]$, which is commutative, and their product is $(\cos^2\theta+\sin^2\theta)e_t$; the inverse is the closed form with the sign of the sine reversed,</p>
+<p><strong>The kernel is invertible, at every root and every pair of indices.</strong> Both factors of the closed form lie in $\mathbb{C}[\tilde{Ζ}]$, which is commutative, and their product is $(\cos^2\theta+\sin^2\theta)e_t$; the inverse is the closed form with the sign of the sine reversed,</p>
 <p>$$
 W_N(n, \ell)^{-1} = \cos\theta\, e_t + i\sin\theta\,\tilde{Ζ} = W_N(n, -\ell).
 $$</p>
@@ -129,7 +129,7 @@ $$</p>
 <p>$$
 \langle W_N(n, \ell)\rangle_{\natural} = W_N^{2} = e^{\mp 4\pi i n\ell/N} e_t ,
 $$</p>
-<p>a unit and not $e_t$. So the kernel is a unit at every root, and what fails at the central root is the identification of the inverse with a conjugation, not the invertibility.</p>
+<p>A unit element and not $e_t$. So the kernel is of norm one at every root, and what fails at the central root is the identification of the inverse with a conjugation, not the invertibility.</p>
 <h3 id="the-peirce-form-of-the-kernel">The Peirce Form of the Kernel</h3>
 <p>Substituting $\tilde{Ζ}=\tilde\Pi_+-\tilde\Pi_-$ in the closed form, or applying the exponential to each idempotent, gives the form the rest of the article uses.</p>
 <p><strong>Proposition (the Peirce form).</strong> For every $n$ and $\ell$,</p>
@@ -137,7 +137,7 @@ $$</p>
 W_N(n, \ell) = e^{-2\pi i n\ell/N}\,\tilde\Pi_+ + e^{+2\pi i n\ell/N}\,\tilde\Pi_- .
 $$</p>
 <p><em>Proof.</em> The two idempotents are orthogonal and their sum is the unit, so the exponential acts on each by the scalar attached to it, $\exp(-2\pi i\theta\tilde{Ζ})\tilde\Pi_\pm=\exp(\mp 2\pi i\theta)\tilde\Pi_\pm$, because $\tilde{Ζ}\tilde\Pi_\pm=\pm\tilde\Pi_\pm$; the two terms add.</p>
-<p>Three consequences are read off at once. <strong>The kernel is a pair of conjugate unit complex numbers</strong>, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. <strong>The kernel is never a zero divisor</strong>, since each of its two Peirce coordinates is a nonzero complex number: it stays a unit and never approaches the null cone, at any root and any index.</p>
+<p>Three consequences are read off at once. <strong>The kernel is a pair of conjugate unit complex numbers</strong>, $e^{-2\pi i n\ell/N}$ on the component of $\tilde\Pi_+$ and its conjugate on the component of $\tilde\Pi_-$, which is the form in which the transform factorizes. <strong>The kernel is never a zero divisor</strong>, since each of its two Peirce coordinates is a nonzero complex number: it stays an invertible element and never approaches the null cone, at any root and any index.</p>
 <h2 id="the-roots-of-one">The Roots of One</h2>
 <h3 id="the-classification">The Classification</h3>
 <p>The classification is quoted, because it belongs to the root theory and not to harmonic analysis.</p>
@@ -272,10 +272,10 @@ $$</p>
 <h3 id="consequences-for-the-transform">Consequences for the Transform</h3>
 <ul>
 <li><strong>The transform is a bijection, at every root and for every sequence.</strong> The inverse formula is an identity in the algebra and uses no hypothesis on the samples.</li>
-<li><strong>Pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone.</strong> A convolution is undone by dividing the transform pointwise by the transform of the kernel, and that division exists at the frequency $\ell$ exactly when $F[\ell]$ is a unit.</li>
+<li><strong>Pointwise division by the spectrum is defined exactly on the sequences whose spectrum avoids the null cone.</strong> A convolution is undone by dividing the transform pointwise by the transform of the kernel, and that division exists at the frequency $\ell$ exactly when $F[\ell]$ is invertible.</li>
 </ul>
 <h3 id="structural-interpretation">Structural Interpretation</h3>
-<p>The vanishing norm is a genuinely biquaternionic feature: it does not arise in the complex or quaternion transforms, whose algebras are division algebras, and in $\mathbb{B}$ the units are the complement of the null cone, so division is available off the cone and nowhere on it.</p>
+<p>The vanishing norm is a genuinely biquaternionic feature: it does not arise in the complex or quaternion transforms, whose algebras are division algebras, and in $\mathbb{B}$ the invertibles are the complement of the null cone, so division is available off the cone and nowhere on it.</p>
 <h3 id="the-open-question">The Open Question</h3>
 <p>Which sequences have a spectrum free of zero divisors is not decided by the norms of the samples. Each Peirce coordinate of $F[\ell]$ is a complex discrete transform, so $\ell\mapsto\langle F[\ell]\rangle_{\natural}$ is one trigonometric polynomial in $\omega=e^{2\pi i\ell/N}$, of degree at most $2(N-1)$; the question is a count of its real zeros, and it is not settled here.</p>
 <h2 id="the-two-dimensional-transform">The Two-Dimensional Transform</h2>
@@ -301,7 +301,7 @@ $$</p>
 <p>$$
 \mathcal{X}[f](\tilde{Q}) = \sum_{n=0}^{\infty} f_n \tilde{Q}^{-n}, \qquad \tilde{Q} \in \mathbb{B}^{\times},
 $$</p>
-<p>the generating function of the sequence, and the variable ranges over the units of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the central root $\tilde{Ζ}=e_t$ of the transform pair above.</p>
+<p>the generating function of the sequence, and the variable ranges over the invertibles of $\mathbb{B}$ because its negative powers occur in the definition. Substituting $\tilde{Q} = \exp(s)$ turns the sum into $\sum_n f_n \exp(-ns)$, the discrete Laplace transform of the sequence, and the region of convergence discussed below is the analogue of the half-plane of the continuous theory. Evaluating the transform at the $N$-th roots of unity instead, $\tilde{Q} = \exp(2\pi i \ell/N)$, returns the ordinary complex discrete Fourier transform of the periodisation of the sequence, which is the central root $\tilde{Ζ}=e_t$ of the transform pair above.</p>
 <p>The sample $f_n$ is written on the <strong>left</strong> of the variable, so the variable plays the role that the kernel played above. This is the mirror image of the convention of the transform pair, and it is not neutral: the rules below move powers of $\tilde{Q}$ through the sequence, and with the variable placed on the left the $\tilde A$-scaling rule would require every sample to commute with $\tilde A$. The two conventions are interconverted by the quaternion conjugate. Writing</p>
 <p>$$
 \mathcal{Y}[f](\tilde{Q}) = \sum_{n=0}^{\infty} \tilde{Q}^{-n} f_n

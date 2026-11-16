@@ -79,7 +79,7 @@
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$</p>
 <p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition, computes the closed forms, and reads the word against the spectral decomposition.</p>
-<p>The existence of the word is a property of the group of units alone. The second invariant, the vector form $B^2=Q_x^2+Q_y^2+Q_z^2$, decides only its shape. Off the wall $B^2\neq0$ the element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis, and the polar factors are diagonal in it exactly when the element is normal. On the wall the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, its minimal polynomial is a square, and its two angles are locked by $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.</p>
+<p>The existence of the word is a property of the group of invertibles alone. The second invariant, the vector form $B^2=Q_x^2+Q_y^2+Q_z^2$, decides only its shape. Off the wall $B^2\neq0$ the element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis, and the polar factors are diagonal in it exactly when the element is normal. On the wall the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, its minimal polynomial is a square, and its two angles are locked by $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.</p>
 <p>The article assumes <em>The Polar Decomposition of an N-Regular Biquaternion</em> for the modulus–unit theorem, <em>Biquaternion Elementary Functions</em> for the exponential and the logarithm, and <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector. The numerical cases are in <em>Worked Examples of Exponential Polar Decomposition on the N-Regular Sector</em>.</p>
 <p><strong>The plan.</strong> The word, its two unit factors and the seven data are boxed and proved in §<em>The Result in Terms of the Coordinates</em>, which also gives the boxes in the coordinates of the wall. The domain is fixed in §<em>The Domain</em>, with the normal form that the wall imposes. The word and its component form are stated in §<em>The Decomposition</em>. The spectral reading occupies §<em>The Spectral Reading</em>, with the eigenbasis, the normal case and the non-normal case. §<em>The Unipotent Unit Factor</em> and §<em>The Two Strata</em> prove the rigidity on the wall: the scalar constraint, the orthogonal frame and the closed form. Existence and uniqueness are proved in §<em>Existence and Uniqueness</em>. The logarithm, the group law, the matrix picture, the exponential coordinates and the two walls follow. The summary collects the formulas of both cases in one table.</p>
 <h2 id="the-result-in-terms-of-the-coordinates">The Result in Terms of the Coordinates</h2>
@@ -192,7 +192,7 @@ $$</p>
 \vec u_{\mathrm r}=\frac{\vec e_x+\vec e_y}{\sqrt2}.
 $$</p>
 <h3 id="the-boxes-at-the-wall">The Boxes at the Wall</h3>
-<p>The general boxes are stated for every unit. On the wall the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ evaluates them in closed shape, and the theorem below is that evaluation.</p>
+<p>The general boxes are stated for every invertible element. On the wall the normal form $\tilde Q=Q_t(e_t+\vec\Upsilon)$ evaluates them in closed shape, and the theorem below is that evaluation.</p>
 <p><strong>Setting.</strong> Use the normal form of §<em>The Domain</em>, $\tilde Q=Q_t(e_t+\vec\Upsilon)$, and write</p>
 <p>$$
 \vec\Upsilon=\vec A+i\vec B,\qquad \vec A,\vec B\in\mathbb R^3,\qquad a=\lVert\vec A\rVert.
@@ -326,17 +326,17 @@ $$</p>
 <li>$N\neq0$ and $B^2\neq0$.</li>
 <li>The two eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct and nonzero.</li>
 <li>The minimal polynomial $X^2-2Q_tX+N$ is squarefree with nonzero constant term.</li>
-<li>The element is a unit and its spectrum has two distinct points.</li>
+<li>The element is invertible and its spectrum has two distinct points.</li>
 <li>With $\Rho$ the principal square root of $N$ and $\tilde U=\tilde Q/\Rho$, the scalar part of $\tilde U$ is not $\pm1$.</li>
 </ol>
-<p><em>Proof.</em> The characteristic polynomial is $X^2-2Q_tX+N$. Its discriminant is $4(Q_t^2-N)=-4B^2$, so it is squarefree exactly when $B^2\neq0$, and its constant term is nonzero exactly when $N\neq0$. The eigenvalues are $Q_t\pm iB$, distinct and nonzero under the same two conditions. The element is a unit because $N\neq0$. A scalar has $B^2=0$, but $B^2=0$ also allows the non-scalar Jordan elements; the spectral condition is the distinctness, not the non-scalarity. For the last item, $\operatorname{Sc}\tilde U=Q_t/\Rho$, hence</p>
+<p><em>Proof.</em> The characteristic polynomial is $X^2-2Q_tX+N$. Its discriminant is $4(Q_t^2-N)=-4B^2$, so it is squarefree exactly when $B^2\neq0$, and its constant term is nonzero exactly when $N\neq0$. The eigenvalues are $Q_t\pm iB$, distinct and nonzero under the same two conditions. The element is invertible because $N\neq0$. A scalar has $B^2=0$, but $B^2=0$ also allows the non-scalar Jordan elements; the spectral condition is the distinctness, not the non-scalarity. For the last item, $\operatorname{Sc}\tilde U=Q_t/\Rho$, hence</p>
 <p>$$
 \bigl(\operatorname{Sc}\tilde U\bigr)^2=\frac{Q_t^2}{N},
 \qquad
 B^2=N-Q_t^2=N\Bigl(1-\bigl(\operatorname{Sc}\tilde U\bigr)^2\Bigr),
 $$</p>
 <p>so $B^2\neq0$ is equivalent to $\operatorname{Sc}\tilde U\notin\{1,-1\}$.</p>
-<p>The last description separates the two nonzero-$N$ sectors: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of units, and the wall is the union of the two hyperplanes.</p>
+<p>The last description separates the two nonzero-$N$ sectors: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of invertibles, and the wall is the union of the two hyperplanes.</p>
 <h3 id="geometry">Geometry</h3>
 <p>The sector is the complement of the union $NB^2=0$ of the null cone and the spectral cone. It is open and dense in $\mathbb{B}$, of complex dimension $4$ and real dimension $8$. It is not a subgroup: $e_t$ has $B^2=0$ and lies outside, and the scalar line $\mathbb{C}^{\times}e_t$ lies entirely outside. It contains the pure vectors with $B^2\neq0$, such as $\vec e_x+\vec e_y$, for which $Q_t=0$ and the two eigenvalues are opposite. It also contains every Hermitian element with $B^2<0$ and $N\neq0$, such as $\sqrt2\,e_t+i\vec e_x$.</p>
 <p>The sector is connected, and it is not simply connected; the loop $t\mapsto e_t+\varepsilon e^{2\pi it}\vec e_x$ winds around the spectral cone. The topology is not used below beyond the parameter count.</p>
@@ -478,7 +478,7 @@ $$</p>
 +\underbrace{1+2}_{\theta_{\mathrm{axr}},\vec u_{\mathrm r}}
 =8,
 $$</p>
-<p>the real dimension of the group of units. The word is a coordinate system on that group, cut by the ranges of the two angles and of the phase. The two axes are points of $S^2$.</p>
+<p>the real dimension of the group of invertibles. The word is a coordinate system on that group, cut by the ranges of the two angles and of the phase. The two axes are points of $S^2$.</p>
 <h2 id="the-spectral-reading">The Spectral Reading</h2>
 <h3 id="the-eigenbasis">The Eigenbasis</h3>
 <p>Let $\tilde Q\in\Sigma_{11}$, and fix a square root $B$ of $B^2$. Define</p>
@@ -863,7 +863,7 @@ $$</p>
 $$</p>
 <p>of real dimensions $1+1+3+3=8$. The boost exponent is in $\mathfrak{p}$ and the rotor exponent in $\mathfrak{k}$.</p>
 <h3 id="the-single-logarithm">The Single Logarithm</h3>
-<p>A <strong>single logarithm</strong> of $\tilde Q$ is an element $\operatorname{Log}\tilde Q$ with $\exp(\operatorname{Log}\tilde Q)=\tilde Q$. Since $\mathbb{B}\cong M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm, the exponential is surjective onto the units. A single logarithm is related to the Cartan logarithm by</p>
+<p>A <strong>single logarithm</strong> of $\tilde Q$ is an element $\operatorname{Log}\tilde Q$ with $\exp(\operatorname{Log}\tilde Q)=\tilde Q$. Since $\mathbb{B}\cong M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm, the exponential is surjective onto the invertibles. A single logarithm is related to the Cartan logarithm by</p>
 <p>$$
 \operatorname{Log}\tilde Q=\ln r+i\theta_{\mathrm{pha}}+\operatorname{Log}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),
 $$</p>
@@ -888,7 +888,7 @@ $$</p>
 r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$</p>
-<p>The word is a section of that map, not of the exponential. It is a global coordinate system on the group of units, and its domain is the complement of the null cone.</p>
+<p>The word is a section of that map, not of the exponential. It is a global coordinate system on the group of invertibles, and its domain is the complement of the null cone.</p>
 <h3 id="the-exact-logarithm-at-the-wall">The Exact Logarithm at the Wall</h3>
 <p>The special feature of the sector is that the true logarithm is not a transcendental object: the unipotent factor has a truncated logarithm.</p>
 <p><strong>Theorem (the exact logarithm).</strong> For $\tilde Q=Q_t(e_t+\vec\Upsilon)\in\Sigma_{10}$,</p>
@@ -932,7 +932,7 @@ $$</p>
 =\frac{i\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{4}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r},
 $$</p>
 <p>with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$.</p>
-<p>On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every unit $\vec u_{\mathrm r}$.</p>
+<p>On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every invertible $\vec u_{\mathrm r}$.</p>
 <h2 id="the-group-law">The Group Law</h2>
 <p>The product of two words is</p>
 <p>$$
@@ -1100,7 +1100,7 @@ $$</p>
 <p>The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $r e^{\theta_{\mathrm{rpd}}/2}$ and $r e^{-\theta_{\mathrm{rpd}}/2}$. The polar factors are the positive and $*$-unitary factors of the block, and the $*$-unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.</p>
 <p>The spectral reading is degenerate in the matrix picture: the matrix has no eigenbasis, the two eigenvalues coincide, and the diagonal form does not exist. The polar decomposition still exists, because it is the Cartan decomposition of $SL(2,\mathbb{C})$, which does not require diagonalizability. This is the matrix form of the contrast between the two cases.</p>
 <h2 id="the-exponential-coordinates">The Exponential Coordinates</h2>
-<p>The parameters $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ and the two axes are coordinates on the group of units. Their ranges make the map a bijection up to the axis degeneracies. The coordinate lines are the four one-parameter families:</p>
+<p>The parameters $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ and the two axes are coordinates on the group of invertibles. Their ranges make the map a bijection up to the axis degeneracies. The coordinate lines are the four one-parameter families:</p>
 <ul>
 <li>the <strong>scale line</strong> $r\mapsto r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a half-line;</li>
 <li>the <strong>phase circle</strong> $\theta_{\mathrm{pha}}\mapsto r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a circle cut to a half-open interval by the branch;</li>
@@ -1111,7 +1111,7 @@ $$</p>
 <p>$$
 SL(2,\mathbb{C})\simeq\mathbb{R}^3\times S^3.
 $$</p>
-<p>The group of units retracts onto $U(2)$, and $U(2)\cong U(1)\times SU(2)$ as a space, so</p>
+<p>The group of invertibles retracts onto $U(2)$, and $U(2)\cong U(1)\times SU(2)$ as a space, so</p>
 <p>$$
 \mathbb{B}^{\times}\simeq S^1\times S^3.
 $$</p>
@@ -1184,7 +1184,7 @@ $$</p>
 \qquad
 \theta_{\mathrm{rpd}}>0,
 $$</p>
-<p>with $R>0$, $|\omega|=1$ and unit axes. Every member is a unit, with modulus $R e^{-\theta_{\mathrm{rpd}}/2}$, and its word has rapidity $\theta_{\mathrm{rpd}}$. The limit is</p>
+<p>with $R>0$, $|\omega|=1$ and unit axes. Every member is invertible, with modulus $R e^{-\theta_{\mathrm{rpd}}/2}$, and its word has rapidity $\theta_{\mathrm{rpd}}$. The limit is</p>
 <p>$$
 \tilde Q(\theta_{\mathrm{rpd}})\longrightarrow
 \frac{R\omega}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
@@ -1206,7 +1206,7 @@ $$</p>
 <p><strong>Proposition (the word survives the spectral wall, the eigenbasis does not).</strong> Let $\tilde Q_k\in\Sigma_{11}$ converge to $\tilde Q_0\in\Sigma_{10}$ with $N_0\neq0$ and $\vec Q_0\neq0$, so that the limit lies in the Jordan part. Then $\tilde U_k\to\tilde U_0$, $\tilde U_{\mathrm b,k}\to\tilde U_{\mathrm b,0}$ and $\tilde u_{\mathrm r,k}\to\tilde u_{\mathrm r,0}$, so the word converges to the word of $\tilde Q_0$. The root $\vec{Ζ}_k$ diverges in norm, and no spectral idempotent of $\tilde Q_k$ converges to a nonzero idempotent.</p>
 <p><em>Proof.</em> The modulus is continuous in $N$ away from zero, and the Cartan factors are continuous functions of $\tilde U$; this gives the convergence of the word. The root satisfies $|\vec{Ζ}_k|=|\vec Q_k|/|B_k|\to\infty$ because $\vec Q_k\to\vec Q_0\neq0$ and $B_k\to0$. An idempotent of the form $(e_t\pm\vec{Ζ}_k)/2$ is unbounded, so it has no finite limit.</p>
 <p>At the scalar line the limit is different. If $\tilde Q_0=Q_0e_t$ is a nonzero scalar, then $\vec Q_0=0$, the root is $0/0$, and its limit depends on the path: the family $Q_k=1+\epsilon_k\vec e_x$ has $\vec{Ζ}_k=-i\vec e_x$, so the idempotents converge to nonzero idempotents of the ambient algebra even though the limit is scalar. The eigenvalues coalesce, but the eigenbasis need not diverge. The proposition is therefore stated for the Jordan part, which is the part of the wall that the sector meets transversally.</p>
-<p>The contrast is the exact content of the difference between the two articles. The polar decomposition is a decomposition of the group of units, and it is continuous across the spectral wall. The spectral decomposition is a decomposition of the element, and it degenerates there. The sector $\Sigma_{11}$ is the open set on which both exist; its wall $B^2=0$ is where only the polar one survives.</p>
+<p>The contrast is the exact content of the difference between the two articles. The polar decomposition is a decomposition of the group of invertibles, and it is continuous across the spectral wall. The spectral decomposition is a decomposition of the element, and it degenerates there. The sector $\Sigma_{11}$ is the open set on which both exist; its wall $B^2=0$ is where only the polar one survives.</p>
 <h3 id="the-wall-from-inside">The Wall From Inside</h3>
 <p>The sector is closed under inversion but not under multiplication. It is a complex hypersurface of $\mathbb{B}$, not an open set: its closure is the spectral cone $B^2=0$, and the points of that closure with $N=0$ form the nilpotent stratum $\Sigma_{00}$.</p>
 <h3 id="the-nilpotent-stratum">The Nilpotent Stratum</h3>
@@ -1398,7 +1398,7 @@ $$</p>
 <td>$r,\theta_{\mathrm{pha}},U_t$</td>
 </tr>
 <tr>
-<td>The last row is the statement of the section: the spectral reading is defined on the open sector, the polar reading is defined on the whole group of units.</td>
+<td>The last row is the statement of the section: the spectral reading is defined on the open sector, the polar reading is defined on the whole group of invertibles.</td>
 <td></td>
 <td></td>
 </tr>
@@ -1566,7 +1566,7 @@ $$</p>
 <ul>
 <li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html">Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</a>, for the dictionary between the word and the eigenvalue data, and its limit on the Jordan part.</li>
 <li><a href="worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html">Worked Examples of Exponential Polar Decomposition on the N-Regular Sector</a>, for the numerical cases off the wall and on it, the normal and non-normal comparison, and the defect tables.</li>
-<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus–unit theorem and the group of units.</li>
+<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus–unit theorem and the group of invertibles.</li>
 <li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the eigenbasis, the Peirce corners and the spinors.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the normal forms and the two strata of the wall.</li>
 <li><a href="the-spectrum.html">The Spectrum</a>, for the four sectors and the discriminants.</li>

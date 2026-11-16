@@ -79,7 +79,7 @@ Q=\lambda_+\Pi_+ + \lambda_-\Pi_-,
 \lambda_-=q-q'=Q_-,
 $$</p>
 <p>Here the coefficients $\lambda_\pm$ are the eigenvalues and the idempotents $\Pi_\pm$ are the eigenprojections. The eigenvalues are therefore the idempotent coordinates, and their values are displayed with them throughout. The article is the two-dimensional commutative counterpart of <em>The Biquaternion Eigenvalue Decomposition</em> and the real analogue of <em>Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion</em>. The general definition, the existence theorem and the uniqueness theorem are those of <em>The Eigenvalue Decomposition of an Element</em>. The split-complex content is that, in the distinct case, the eigenprojections are the standard idempotents $\Pi_\pm$, that these idempotents are central, and that the Peirce decomposition relative to either of them is the decomposition of the whole algebra. There is no vector part, the generator $j$ is part of the presentation rather than a root extracted from the element, and there is no continuous family of idempotents: the algebra has exactly four idempotents, and the nontrivial pair is unique.</p>
-<p><strong>The results.</strong> The spectrum of $Q=q+jq'$ is $\{q+q',q-q'\}$, and in the distinct case $q'\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{R}\times\mathbb{R}$, and the unit group is $\mathbb{R}^\times\times\mathbb{R}^\times$. The idempotents form an eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$ are the spinor spaces: a spinor is a single real coefficient on one of them, and after complexification a single complex coefficient.</p>
+<p><strong>The results.</strong> The spectrum of $Q=q+jq'$ is $\{q+q',q-q'\}$, and in the distinct case $q'\neq0$ the two eigenprojections are the standard idempotents $\Pi_\pm=\tfrac12(1\pm j)$. They are central and independent of $Q$, the eigenvalue decomposition is the direct-product decomposition $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$ read on the element, and the Peirce decomposition relative to $\Pi_+$ has two vanishing off-diagonal corners. The polynomial calculus is the componentwise calculus on $\mathbb{R}\times\mathbb{R}$, and the group of invertibles is $\mathbb{R}^\times\times\mathbb{R}^\times$. The idempotents form an eigenbasis of the multiplication operator, with eigenvalues $\lambda_+$ and $\lambda_-$. The scalar regime has a repeated eigenvalue, the zero-divisor regime keeps a two-term decomposition with one zero eigenvalue, and there is no nilpotent regime. The two minimal ideals $S_\pm=\mathbb{R}\Pi_\pm$ are the spinor spaces: a spinor is a single real coefficient on one of them, and after complexification a single complex coefficient.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -133,7 +133,7 @@ $$</p>
 <td>$S_\pm=\mathbb{R}\Pi_\pm$, two real lines; one real spinor coordinate per Peirce copy</td>
 </tr>
 <tr>
-<td>Unit group</td>
+<td>Group of invertibles</td>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
 </tr>
 </tbody>
@@ -607,8 +607,8 @@ P^{-1}[L_Q]_{(1,j)}P=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$
 The matrix $[L_Q]_{(1,j)}$ is symmetric, and it is conformal for the split form $g=\operatorname{diag}(1,-1)$: $[L_Q]_{(1,j)}^{T}g[L_Q]_{(1,j)}=\langle Q\rangle_{*}g$. The eigenbasis diagonalises it. The vanishing of the off-diagonal entries is the matrix statement that the Peirce decomposition has no mixed part.</p>
 <p><strong>Nilpotents in the matrix model.</strong> Since the image of the Peirce model is the diagonal subalgebra, no nonzero nilpotent matrix is in it: a diagonal matrix with square zero is zero. The matrix units $E_{12}$ and $E_{21}$ are square-zero in $M_2(\mathbb{R})$, but they are not in the image of $\mathbb{C}_{\mathrm{spl}}$. The absence is the matrix form of the reducedness of the algebra.</p>
-<h2 id="powers-polynomial-calculus-and-the-group-of-units">Powers, Polynomial Calculus, and the Group of Units</h2>
-<p><strong>The eigenvalue decomposition carries the polynomial calculus, the inverse and the group isomorphism of the unit group.</strong></p>
+<h2 id="powers-polynomial-calculus-and-the-group-of-invertibles">Powers, Polynomial Calculus, and the Group of Invertibles</h2>
+<p><strong>The eigenvalue decomposition carries the polynomial calculus, the inverse and the group isomorphism of the group of invertibles.</strong></p>
 <p>For any polynomial $f\in\mathbb{R}[X]$, the idempotent writing $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ gives</p>
 <p>$$
 f(Q)=f(\lambda_+)\Pi_+ + f(\lambda_-)\Pi_-
@@ -620,7 +620,7 @@ Q^n=\lambda_+^n\Pi_+ + \lambda_-^n\Pi_-
 =(q+q')^n\Pi_+ + (q-q')^n\Pi_-,
 \qquad n\geq0.
 $$</p>
-<p>When $Q$ is a unit, both eigenvalues are nonzero, and the formula extends to negative powers:</p>
+<p>When $Q$ is invertible, both eigenvalues are nonzero, and the formula extends to negative powers:</p>
 <p>$$
 Q^{-1}=\lambda_+^{-1}\Pi_+ + \lambda_-^{-1}\Pi_-
 =\frac{1}{q+q'}\Pi_+ + \frac{1}{q-q'}\Pi_-.
@@ -630,13 +630,13 @@ $$</p>
 Q^{-1}=\frac{\bar Q}{\langle Q\rangle_{*}},
 $$</p>
 <p>since $\bar Q=\lambda_-\Pi_+ + \lambda_+\Pi_-$ and $\langle Q\rangle_{*}=\lambda_+\lambda_-$.</p>
-<p><strong>The group of units.</strong> The map</p>
+<p><strong>The group of invertibles.</strong> The map</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^\times\longrightarrow\mathbb{R}^\times\times\mathbb{R}^\times,
 \qquad
 Q\longmapsto(\lambda_+,\lambda_-)=(q+q',q-q')
 $$</p>
-<p>is an isomorphism of groups: multiplication is coordinatewise, and $Q$ is a unit if and only if both eigenvalues are nonzero, that is, if and only if $\lambda_+\lambda_-=\langle Q\rangle_{*}\neq0$. The identity is $1=(1,1)$, corresponding to $\Pi_++\Pi_-$. The inverse is the componentwise inverse displayed above.</p>
+<p>is an isomorphism of groups: multiplication is coordinatewise, and $Q$ is invertible if and only if both eigenvalues are nonzero, that is, if and only if $\lambda_+\lambda_-=\langle Q\rangle_{*}\neq0$. The identity is $1=(1,1)$, corresponding to $\Pi_++\Pi_-$. The inverse is the componentwise inverse displayed above.</p>
 <p>The results are collected in the table.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -660,7 +660,7 @@ $$</p>
 <tr>
 <td>Inverse</td>
 <td>$Q^{-1}=\lambda_+^{-1}\Pi_++\lambda_-^{-1}\Pi_-$</td>
-<td>$Q$ a unit</td>
+<td>$Q$ an invertible element</td>
 </tr>
 <tr>
 <td>Unit criterion</td>
@@ -668,7 +668,7 @@ $$</p>
 <td>—</td>
 </tr>
 <tr>
-<td>Group of units</td>
+<td>Group of invertibles</td>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
 <td>—</td>
 </tr>
@@ -744,7 +744,7 @@ $$</p>
 <p>The lattice $L$ is a coordinate lattice, not an intrinsic invariant of $Q$. Nor does it arise as the kernel of an exponential: the split-complex exponential is injective (<em>Split-Complex Exponential and Lie Group Structure</em>, §<em>The Exponential Map: Image and Kernel</em>). This is a difference from the biquaternion parity-matched lattice, where the corresponding lattice is the kernel of the exponential on the diagonal part.</p>
 <h3 id="the-hyperbolic-polar-form">The Hyperbolic Polar Form</h3>
 <p><strong>On the identity component the decomposition is the hyperbolic polar form $Q=r(\cosh t+j\sinh t)$.</strong></p>
-<p>Let $Q$ be a unit with $\langle Q\rangle_{*}>0$ and $q>0$, so that $Q$ lies in the identity component of ${\mathbb{C}_{\mathrm{spl}}}^\times$. Then $\lambda_+=q+q'>0$ and $\lambda_-=q-q'>0$. Put</p>
+<p>Let $Q$ be an invertible element with $\langle Q\rangle_{*}>0$ and $q>0$, so that $Q$ lies in the identity component of ${\mathbb{C}_{\mathrm{spl}}}^\times$. Then $\lambda_+=q+q'>0$ and $\lambda_-=q-q'>0$. Put</p>
 <p>$$
 r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}=\sqrt{\lambda_+\lambda_-}>0,
 \qquad
@@ -844,7 +844,7 @@ Q=q\Pi_+ + q\Pi_-=\lambda_+\Pi_+ + \lambda_-\Pi_-,
 $$</p>
 <p>Every complete orthogonal pair of nontrivial idempotents gives such a writing, but the algebra has only one nontrivial pair, $\{\Pi_+,\Pi_-\}$. The nontrivial two-term refinement is therefore unique even though the eigenvalue is repeated. This is in contrast with the biquaternion scalar regime, where every complete orthogonal pair gives a two-term writing and the pair is not determined by the element.</p>
 <h3 id="the-zero-divisor-regime">The Zero-Divisor Regime</h3>
-<p><strong>A nonzero zero divisor has one zero eigenvalue and one nonzero eigenvalue, and it admits an eigenvalue decomposition even though it is not a unit.</strong></p>
+<p><strong>A nonzero zero divisor has one zero eigenvalue and one nonzero eigenvalue, and it admits an eigenvalue decomposition even though it is not invertible.</strong></p>
 <p>Suppose $\langle Q\rangle_{*}=q^2-q'^2=0$ with $Q\neq0$. Then $q'=\pm q$ and $q\neq0$, so</p>
 <p>$$
 Q=q(1\pm j)=2q\,\Pi_\pm.
@@ -860,7 +860,7 @@ Q=2q\,\Pi_+ + 0\cdot\Pi_-=\lambda_+\Pi_+ + \lambda_-\Pi_-,
 \qquad
 \lambda_+=2q,\quad \lambda_-=0,
 $$</p>
-<p>even though it is not a unit. This is not a failure of the eigenvalue decomposition: it is the case in which one eigenvalue vanishes. The element is semisimple, with minimal polynomial $X(X-2q)$: this is $X(X-\lambda_+)$ for $Q=2q\Pi_+$ and $X(X-\lambda_-)$ for $Q=2q\Pi_-$.</p>
+<p>even though it is not invertible. This is not a failure of the eigenvalue decomposition: it is the case in which one eigenvalue vanishes. The element is semisimple, with minimal polynomial $X(X-2q)$: this is $X(X-\lambda_+)$ for $Q=2q\Pi_+$ and $X(X-\lambda_-)$ for $Q=2q\Pi_-$.</p>
 <h3 id="the-nilpotent-regime">The Nilpotent Regime</h3>
 <p><strong>There are no nonzero nilpotent elements, so there is no Jordan-block regime.</strong></p>
 <p>The algebra $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ is a product of fields, hence reduced: it has <strong>no nonzero nilpotent elements</strong>. Indeed, if $Q^2=0$ then $\lambda_+^2=\lambda_-^2=0$, so $\lambda_+=\lambda_-=0$ and $Q=0$. Therefore the nilpotent (Jordan-block) regime of the biquaternion case has no analogue here. Every element of $\mathbb{C}_{\mathrm{spl}}$ has a squarefree minimal polynomial and is semisimple: $p_Q=(X-\lambda_+)(X-\lambda_-)$ for $q'\neq0$ (which is $X(X-2q)$ in the zero-divisor subcase, where $\{\lambda_+,\lambda_-\}=\{2q,0\}$), and $X-q=X-\lambda_+$ for $q'=0$. The only failure of distinct eigenvalues is the scalar case $q'=0$, where $\lambda_+=\lambda_-=q$.</p>
@@ -951,7 +951,7 @@ $$</p>
 <td>$f(Q)=f(\lambda_+)\Pi_++f(\lambda_-)\Pi_-$</td>
 </tr>
 <tr>
-<td>Group of units</td>
+<td>Group of invertibles</td>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
 </tr>
 </tbody>
@@ -1104,14 +1104,14 @@ $$</p>
 <td>$\lambda_+$ on the first coordinate, $\lambda_-$ on the second</td>
 </tr>
 <tr>
-<td>Unit group</td>
+<td>Group of invertibles</td>
 <td>$\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
 <td>$\cong\mathbb{C}^\times\times\mathbb{C}^\times$</td>
 <td>$\mathbb{B}^\times$; eigenvalue map surjective, not injective, not a homomorphism</td>
 </tr>
 </tbody>
 </table></div>
-<p>Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion unit group, which is no longer a product. The last rows record the spinor content: one real coefficient per Peirce copy for the split-complex algebra, one complex coefficient per Peirce copy for the reduced biquaternion algebra, and two complex coefficients per Peirce copy, forming a complex plane, for the biquaternion algebra.</p>
+<p>Read down a column for one algebra and across a row for one concept. The rows down to the eigenprojections follow one pattern; the rows below them record where the algebras part: whether the idempotents depend on the element and whether they are central, the two mixed square-zero lines of the biquaternion Peirce decomposition, and the biquaternion group of invertibles, which is no longer a product. The last rows record the spinor content: one real coefficient per Peirce copy for the split-complex algebra, one complex coefficient per Peirce copy for the reduced biquaternion algebra, and two complex coefficients per Peirce copy, forming a complex plane, for the biquaternion algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1207,7 +1207,7 @@ $$</p>
 </tr>
 <tr>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q\in\mathbb{C}_{\mathrm{spl}}:\langle Q\rangle_{*}\neq0\}$</td>
-<td>Group of units, characterised by $\lambda_+\lambda_-\neq0$</td>
+<td>Group of invertibles, characterised by $\lambda_+\lambda_-\neq0$</td>
 </tr>
 <tr>
 <td>$L=\{(m/2,n/2):m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$</td>

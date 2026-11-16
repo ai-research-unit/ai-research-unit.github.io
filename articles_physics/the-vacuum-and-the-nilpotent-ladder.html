@@ -113,7 +113,7 @@ $$</p>
 <td><a href="../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a></td>
 </tr>
 <tr>
-<td>the quaternionic norm, the null cone, its pure stratum and the unit group</td>
+<td>the quaternionic norm, the null cone, its pure stratum and the group of invertibles</td>
 <td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
 </tr>
 <tr>
@@ -217,7 +217,7 @@ e^{\theta\tilde Q}=e_t+\theta\tilde Q,\qquad
 N\bigl(e^{\theta\tilde Q}\bigr)=1,\qquad
 \bigl\langle e^{\theta\tilde Q}\bigr\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}.
 $$</p>
-<p><strong>The flow is a shear and not a rotation.</strong> Its matrix is unipotent: every eigenvalue is $1$, the determinant is $1$, and the matrix is not the identity. The Hermitian norm grows without bound in $\theta$, polynomially and not exponentially. So the element generates a flow that is a unit at every parameter and that is never a bounded one.</p>
+<p><strong>The flow is a shear and not a rotation.</strong> Its matrix is unipotent: every eigenvalue is $1$, the determinant is $1$, and the matrix is not the identity. The Hermitian norm grows without bound in $\theta$, polynomially and not exponentially. So the element generates a flow that is invertible at every parameter and that is never a bounded one.</p>
 <p><strong>No nilpotent is an exponential.</strong> The norm of every exponential is $e^{2X_t}$ and the norm of every element of the stratum is zero, so the stratum is disjoint from the image of the exponential and no nilpotent has a logarithm.</p>
 <h3 id="the-products">The Products</h3>
 <p><strong>The stratum is not closed under multiplication, and where the product goes is decided by one scalar.</strong></p>
@@ -428,7 +428,7 @@ $$</p>
 \qquad
 \lVert\vec\Upsilon\rVert^{2}=\sum_k\lvert\Upsilon_k\rvert^{2},
 $$</p>
-<p><strong>checked to $1.8\times10^{-15}$ over fifty elements.</strong> The norm is a quadratic polynomial in the parameter with a positive quadratic coefficient, so the flow is a unit at every $\theta$ — its quaternionic norm is one — and it is never a bounded unit. The two notions of unit separate here, and this is the stratum where they separate furthest: the quaternionic norm is constant and the Hermitian norm is unbounded.</p>
+<p><strong>checked to $1.8\times10^{-15}$ over fifty elements.</strong> The norm is a quadratic polynomial in the parameter with a positive quadratic coefficient, so the flow is invertible at every $\theta$ — its quaternionic norm is one — and it is never a bounded unit. The two notions of unit separate here, and this is the stratum where they separate furthest: the quaternionic norm is constant and the Hermitian norm is unbounded.</p>
 <p><strong>Conjugation by the flow preserves the norm of every element.</strong></p>
 <p>$$
 N\bigl(e^{\theta\tilde Q}\tilde X e^{-\theta\tilde Q}\bigr)=N(\tilde X),
@@ -663,8 +663,8 @@ B^{2}(q\,e_t)=0\ \text{for every }q,\qquad
 N(q\,e_t)=q^{2}.
 $$</p>
 <p><strong>So the scalar line is entirely inside the spectral stratum and meets this stratum at one point.</strong> Every scalar has $B^{2}=0$, and the scalar is null only at $q=0$. The line is therefore $\Sigma_{01}\cap\mathbb{B}_{C}=\mathbb{C}e_t$ as a set with its origin attached here: the two degenerate strata share exactly the zero element.</p>
-<p><strong>The identity is not the vacuum, and the scalar line is where the confusion is possible.</strong> Along the line the two conditions separate cleanly: the vector square vanishes everywhere and the norm vanishes at one point. The identity $e_t$ sits at $q=1$ with norm one and is a unit; the origin sits at $q=0$ with norm zero and is not. The line contains both, and the stratum's material share is the second and not the first.</p>
-<p><strong>The reading is that a four-momentum chart's own scalar axis is the boundary of the stratum and not part of it.</strong> The axis is where the vector square cannot fail; the stratum is where it does. A chart that followed the scalar axis to find the vacuum would find $e_t$ on the way, and $e_t$ is a unit of the algebra and not an element of the stratum.</p>
+<p><strong>The identity is not the vacuum, and the scalar line is where the confusion is possible.</strong> Along the line the two conditions separate cleanly: the vector square vanishes everywhere and the norm vanishes at one point. The identity $e_t$ sits at $q=1$ with norm one and is invertible; the origin sits at $q=0$ with norm zero and is not. The line contains both, and the stratum's material share is the second and not the first.</p>
+<p><strong>The reading is that a four-momentum chart's own scalar axis is the boundary of the stratum and not part of it.</strong> The axis is where the vector square cannot fail; the stratum is where it does. A chart that followed the scalar axis to find the vacuum would find $e_t$ on the way, and $e_t$ is invertible in the algebra and not an element of the stratum.</p>
 <p><strong>The boundary.</strong> The line is a line of scalars and not a physical trajectory. Its points have no direction and no mode, and the reading is a statement about where the two strata meet.</p>
 <h2 id="the-spin">The Spin</h2>
 <p><strong>An element has no spin; a carrier does.</strong> The question is well posed only after an action is named, and here, as on the massless stratum, it has three answers.</p>
@@ -695,7 +695,7 @@ $$</p>
 <p><strong>The boundary.</strong> The statement is about the two predicates and not about physics. A physical object whose two descriptions fail at once is not thereby simpler or more fundamental; the algebra says only that the descriptions fail together.</p>
 <h3 id="i10at-the-vacuum-is-the-additive-zero">I.10.at — The Vacuum Is the Additive Zero</h3>
 <p><strong>Read:</strong> the origin as the unique semisimple element of the stratum, with minimal polynomial $X$, both multiplications zero, and every idempotent commuting with it.</p>
-<p><strong>The zero element is not the identity, and the difference is the whole content of the word.</strong> The identity $e_t$ is a unit with norm one, vector square zero and spectrum $\{1\}$; it lives on the scalar line of the other degenerate stratum. The origin has norm zero, rank zero and spectrum $\{0\}$. Calling the origin the vacuum and calling $e_t$ the vacuum are two different statements, and only the first is on the stratum.</p>
+<p><strong>The zero element is not the identity, and the difference is the whole content of the word.</strong> The identity $e_t$ is invertible with norm one, vector square zero and spectrum $\{1\}$; it lives on the scalar line of the other degenerate stratum. The origin has norm zero, rank zero and spectrum $\{0\}$. Calling the origin the vacuum and calling $e_t$ the vacuum are two different statements, and only the first is on the stratum.</p>
 <p><strong>The reading is that the vacuum is the element with no scale, no mode and no direction.</strong> It is the additive zero of the chart, so it is the value of a field that vanishes, and it is the only element of the stratum that a four-momentum can take.</p>
 <p><strong>The weakness of the reading is worth stating plainly.</strong> Nothing in the algebra distinguishes the additive zero of a momentum chart from the additive zero of any other chart, so <em>vacuum</em> names a role that the zero element plays in a chart and not a structure that the algebra supplies. The stratum's real content is the nilpotent cone, and the apex is a point of it added for completeness.</p>
 <p><strong>The boundary.</strong> The word is a reading of the zero element inside a chart. It does not name a state, an energy, a density or a stability, and no theorem here concerns the stability of anything.</p>
@@ -718,9 +718,9 @@ $$</p>
 <p><strong>The boundary.</strong> The statement is about the linear map on the algebra. It is not a statement about a scattering process, a decay or an irreversibility, and no arrow of time is supplied.</p>
 <h3 id="i10aw-the-flow-is-a-shear-not-a-rotation">I.10.aw — The Flow Is a Shear, Not a Rotation</h3>
 <p><strong>Read:</strong> $e^{\theta\tilde Q}=e_t+\theta\tilde Q$, with every eigenvalue $1$, determinant $1$, and $\langle e^{\theta\tilde Q}\rangle_{*}=1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$.</p>
-<p><strong>The one-parameter group generated by a nilpotent is unipotent.</strong> It fixes every direction of its own plane, shifts the rest by a multiple of the parameter, and has no scale and no angle. The Hermitian norm grows as a quadratic polynomial, so the group is a unit at every parameter and is never a bounded one.</p>
+<p><strong>The one-parameter group generated by a nilpotent is unipotent.</strong> It fixes every direction of its own plane, shifts the rest by a multiple of the parameter, and has no scale and no angle. The Hermitian norm grows as a quadratic polynomial, so the group is invertible at every parameter and is never a bounded one.</p>
 <p><strong>The reading is that the stratum supplies a translation and not a rotation.</strong> A rotation has a period and a bounded norm; a boost has an exponential norm; a shear has a polynomial norm and no period. The three behaviours are three different words, and the stratum settles which one it is by a single computation.</p>
-<p><strong>The separation of the two notions of unit is the sharpest statement in the section.</strong> The quaternionic norm of the flow is exactly one at every parameter, and its Hermitian norm is unbounded. A reader who uses one word <em>unitary</em> for both will conclude that the stratum is unitary; a reader who keeps them apart will see that it is a unit in the multiplicative group and not in the Hermitian one.</p>
+<p><strong>The separation of the two notions of unit is the sharpest statement in the section.</strong> The quaternionic norm of the flow is exactly one at every parameter, and its Hermitian norm is unbounded. A reader who uses one word <em>unitary</em> for both will conclude that the stratum is unitary; a reader who keeps them apart will see that it is invertible in the multiplicative group and not in the Hermitian one.</p>
 <p><strong>The shear preserves the norm, so it moves the stratum within itself.</strong> Conjugation by $e^{\theta\tilde Q}$ leaves $N$ of every element unchanged and maps nilpotents to nilpotents. It is a symmetry of the cone and not a motion off it, and it is the reason the stratum's own geometry is thin: the group that preserves it acts on it transitively up to scale.</p>
 <p><strong>The boundary.</strong> A shear on the algebra is not a physical transformation of a system. The word <em>parabolic</em> names a conjugacy type and not a process, and nothing here is a statement about a physical flow.</p>
 <h3 id="i10ax-the-null-field-is-the-object-of-the-stratum">I.10.ax — The Null Field Is the Object of the Stratum</h3>
@@ -838,7 +838,7 @@ $$</p>
 </tr>
 <tr>
 <td>the Hermitian norm</td>
-<td>$1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$; a unit at every parameter and never a bounded one</td>
+<td>$1+\theta^{2}\lVert\vec\Upsilon\rVert^{2}$; an invertible element at every parameter and never a bounded one</td>
 </tr>
 <tr>
 <td>no logarithm</td>
@@ -963,8 +963,8 @@ $$</p>
 <li><a href="the-rest-frame-and-the-exceptional-point.html">The Rest Frame and the Exceptional Point</a>, for the stratum on which the modulus exists and the eigenbasis does not.</li>
 <li><a href="the-region-of-mass-in-motion.html">Mass in Motion: The Region of Both Invariants</a>, for the open stratum and the two-mode picture.</li>
 <li><a href="the-partition-two-invariants-and-four-regimes.html">The Partition: Two Invariants and Four Regimes</a>, for the arrangement of the four strata and the statement that the two conditions are independent.</li>
-<li><a href="the-carriers-the-spin-and-the-closure.html">The Carriers, the Spin and the Closure</a>, for the reach of each carrier on each stratum.</li>
-<li><a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a>, for the cone whose apex is this stratum's material share.</li>
+<li><a href="from-the-spin-to-the-carriers-and-the-closures.html">From the Spin to the Carriers and the Closures</a>, for the reach of each carrier on each stratum.</li>
+<li><a href="the-group-of-invertibles-the-cone-and-the-orders.html">The Group of Invertibles, the Cone and the Orders</a>, for the cone whose apex is this stratum's material share.</li>
 <li><a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the letters, the signatures and the two norms used throughout.</li>
 </ul>
       </div>

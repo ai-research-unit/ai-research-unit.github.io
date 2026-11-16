@@ -75,12 +75,12 @@
 <hr />
 <h1 id="part-i-fields-and-their-basic-theory">Part I: Fields and Their Basic Theory</h1>
 <h2 id="1-definition-of-a-field">1. Definition of a Field</h2>
-<p>A <strong>field</strong> is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is a unit. Equivalently, $F$ is a set with two operations such that $(F,+)$ is an abelian group, $(F \setminus \{0\}, \cdot)$ is an abelian group, and multiplication distributes over addition:
+<p>A <strong>field</strong> is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is invertible. Equivalently, $F$ is a set with two operations such that $(F,+)$ is an abelian group, $(F \setminus \{0\}, \cdot)$ is an abelian group, and multiplication distributes over addition:
 $$
 a(b+c) = ab + ac
 $$
-for all $a, b, c \in F$. The multiplicative group $F \setminus \{0\}$ is written $F^\times$. The condition $1 \neq 0$ excludes the zero ring, in which "every nonzero element is a unit" holds vacuously.</p>
-<p><strong>Criterion in terms of ideals.</strong> A commutative ring $R$ with $1 \neq 0$ is a field if and only if its only ideals are $0$ and $R$: if $a \neq 0$ and $(a) = R$ then $ab = 1$, while a non-unit generates a proper nonzero ideal. Since $I$ is maximal in $R$ exactly when $R/I$ is a field (<em>Rings</em>, §6), this gives the standard construction of fields as quotients. For $R = F$ a field, $F[x]$ is a principal ideal domain, so
+for all $a, b, c \in F$. The multiplicative group $F \setminus \{0\}$ is written $F^\times$. The condition $1 \neq 0$ excludes the zero ring, in which "every nonzero element is invertible" holds vacuously.</p>
+<p><strong>Criterion in terms of ideals.</strong> A commutative ring $R$ with $1 \neq 0$ is a field if and only if its only ideals are $0$ and $R$: if $a \neq 0$ and $(a) = R$ then $ab = 1$, while a non-invertible generates a proper nonzero ideal. Since $I$ is maximal in $R$ exactly when $R/I$ is a field (<em>Rings</em>, §6), this gives the standard construction of fields as quotients. For $R = F$ a field, $F[x]$ is a principal ideal domain, so
 $$
 F[x]/(f) \text{ is a field} \iff f \text{ is irreducible over } F.
 $$
@@ -109,14 +109,14 @@ This one mechanism produces every concrete extension in Part II and every explic
 <p><strong>(f)</strong> For any integral domain $R$, its <strong>field of fractions</strong> $\operatorname{Frac}(R)$ is the smallest field containing $R$; thus $\operatorname{Frac}(\mathbb{Z}) = \mathbb{Q}$ and $\operatorname{Frac}(\mathbb{F}_p[x]) = \mathbb{F}_p(x)$.</p>
 <p><strong>(g)</strong> The algebraic numbers $\overline{\mathbb{Q}}$, the real algebraic numbers, and the constructible numbers; the first is algebraically closed, the second is real closed (§18), and the third is not algebraically closed.</p>
 <h2 id="5-non-examples">5. Non-Examples</h2>
-<p><strong>(a)</strong> $\mathbb{Z}$ is an integral domain but not a field: $2$ is not a unit.</p>
+<p><strong>(a)</strong> $\mathbb{Z}$ is an integral domain but not a field: $2$ is not invertible.</p>
 <p><strong>(b)</strong> For composite $n$, $\mathbb{Z}/n\mathbb{Z}$ has zero divisors, for instance $2 \cdot 3 = 0$ in $\mathbb{Z}/6\mathbb{Z}$; it is a field exactly when $n$ is prime.</p>
 <p><strong>(c)</strong> $F[x]$ is never a field, since $\deg(xg) \neq 0$ for every nonzero $g \in F[x]$; likewise $\mathbb{Z}[x]$ is not a field.</p>
 <p><strong>(d)</strong> For $n \geq 2$, the matrix ring $M_n(F)$ is neither commutative nor free of zero divisors.</p>
 <p><strong>(e)</strong> A division ring that is not commutative is not a field. By Wedderburn's little theorem every finite division ring is a field, so every <strong>skew field</strong> is infinite (<em>Rings</em>, §13).</p>
 <p><strong>(f)</strong> The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ are commutative but have zero divisors.</p>
 <p><strong>(g)</strong> If $f$ is reducible, then $F[x]/(f)$ is not a field: $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R} \times \mathbb{R}$, and $\mathbb{F}_2[x]/(x^2+1)$ fails since $x^2+1 = (x+1)^2$ over $\mathbb{F}_2$.</p>
-<p><strong>(h)</strong> The ring of integers $\mathcal{O}_K$ of a number field $K$ has field of fractions $K$ but is not a field unless $K = \mathbb{Q}$; for example $\mathbb{Z}[\sqrt2]$, in which $2$ is not a unit.</p>
+<p><strong>(h)</strong> The ring of integers $\mathcal{O}_K$ of a number field $K$ has field of fractions $K$ but is not a field unless $K = \mathbb{Q}$; for example $\mathbb{Z}[\sqrt2]$, in which $2$ is not invertible.</p>
 <hr />
 <h1 id="part-ii-field-extensions">Part II: Field Extensions</h1>
 <h2 id="6-extensions-and-degree">6. Extensions and Degree</h2>

@@ -167,7 +167,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The four are units, and the table already shows the two opposite behaviours the algebra mixes: $\vec e_x$ is a complex structure, of determinant $+1$, while $\vec e_y$ and $\vec e_z$ are reflections, of determinant $-1$.</p>
+<p>The four are invertible, and the table already shows the two opposite behaviours the algebra mixes: $\vec e_x$ is a complex structure, of determinant $+1$, while $\vec e_y$ and $\vec e_z$ are reflections, of determinant $-1$.</p>
 <h2 id="the-left-and-the-right-matrices">The Left and the Right Matrices</h2>
 <p><strong>Definition.</strong> The algebra acts on itself by left and right multiplication, $L_{\tilde q}(\tilde x)=\tilde q\tilde x$ and $R_{\tilde q}(\tilde x)=\tilde x\tilde q$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ these are $4\times4$ real matrices, and in the model they read</p>
 <p>$$
@@ -187,7 +187,7 @@ $$</p>
 \operatorname{rank}L_{\tilde q}=2\operatorname{rank}M_{\tilde q},\qquad
 \operatorname{rank}R_{\tilde q}=2\operatorname{rank}M_{\tilde q},
 $$</p>
-<p>so the left and right matrices share the rank, and that rank is $4$ on the units, $2$ on the nonzero zero divisors and $0$ at the origin. The trace is $\operatorname{tr}L_{\tilde q}=2\operatorname{tr}M_{\tilde q}=4q_t$.</p>
+<p>so the left and right matrices share the rank, and that rank is $4$ on the invertibles, $2$ on the nonzero zero divisors and $0$ at the origin. The trace is $\operatorname{tr}L_{\tilde q}=2\operatorname{tr}M_{\tilde q}=4q_t$.</p>
 <p><strong>What the two copies buy.</strong> They give the two-sided operators for free: an operator $X\mapsto AXB$ is $L_AR_B$, and the whole of $\operatorname{End}_{\mathbb{R}}(\mathbb{H}_{\mathrm{spl}})$ is spanned by the sixteen products $L_{e_\mu}R_{e_\nu}$. The companion article develops that span, its cone of single products and its length; here only the two one-sided families are needed.</p>
 <h2 id="the-product">The Product</h2>
 <p><strong>Theorem (multiplicativity).</strong> For all $\tilde q,\tilde p$,</p>
@@ -226,7 +226,7 @@ $$</p>
 \mathsf{M}_2(V)=\mathfrak{sl}_2(\mathbb{R})=\{X\in M_2(\mathbb{R}):\operatorname{tr}X=0\},
 $$</p>
 <p>the three-dimensional space of traceless matrices, spanned by $J$, $K$ and $D$. The scalar part is therefore recovered from the matrix as half the trace, and the projection onto the scalar line is $\tilde q\mapsto\tfrac12\operatorname{tr}\mathsf{M}_2(\tilde q)\,e_t$.</p>
-<p><strong>What the trace sees and does not see.</strong> The trace is insensitive to the sign of the vector part, and it cannot separate a zero divisor from a unit: $\operatorname{tr}\mathsf{M}_2(\vec e_y)=0$ and $\operatorname{tr}\mathsf{M}_2(\vec e_x+\vec e_y)=0$, although the first is a unit of norm $-1$ and the second is a zero divisor of norm $0$. The determinant, below, is the invariant that separates them.</p>
+<p><strong>What the trace sees and does not see.</strong> The trace is insensitive to the sign of the vector part, and it cannot separate a zero divisor from an invertible element: $\operatorname{tr}\mathsf{M}_2(\vec e_y)=0$ and $\operatorname{tr}\mathsf{M}_2(\vec e_x+\vec e_y)=0$, although the first is a unit of norm $-1$ and the second is a zero divisor of norm $0$. The determinant, below, is the invariant that separates them.</p>
 <h2 id="the-determinant">The Determinant</h2>
 <p><strong>Theorem (the determinant).</strong> For every split quaternion,</p>
 <p>$$
@@ -269,7 +269,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>and the middle stratum is the null cone $\{\langle\tilde q\rangle_{\natural}=0\}\setminus\{0\}$, a cone over a doubly ruled quadric. The rank is the distance from invertibility: rank two exactly on the units, rank one exactly on the nonzero zero divisors.</p>
-<p><strong>Multiplicativity and the unit criterion.</strong> $\det(\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p))=\det\mathsf{M}_2(\tilde q)\det\mathsf{M}_2(\tilde p)$ because the model is multiplicative, and an element is a unit exactly when its matrix is invertible, that is exactly when $\det\neq0$ and $\langle\tilde q\rangle_{\natural}\neq0$. The equivalence is the matrix form of the theorem of <em>Split-Quaternion Norm and Invertibility</em>, and it is the reason the algebra has zero divisors at all: the form is indefinite, so it vanishes on a cone and not only at the origin.</p>
+<p><strong>Multiplicativity and the unit criterion.</strong> $\det(\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p))=\det\mathsf{M}_2(\tilde q)\det\mathsf{M}_2(\tilde p)$ because the model is multiplicative, and an element is invertible exactly when its matrix is invertible, that is exactly when $\det\neq0$ and $\langle\tilde q\rangle_{\natural}\neq0$. The equivalence is the matrix form of the theorem of <em>Split-Quaternion Norm and Invertibility</em>, and it is the reason the algebra has zero divisors at all: the form is indefinite, so it vanishes on a cone and not only at the origin.</p>
 <p><strong>The two rulings.</strong> A rank-one matrix is an outer product $uv^{\mathsf T}$ with $u,v\neq0$, and the pair $(u,v)$ is defined up to a common scalar. The zero divisors are therefore the projectivised pairs,</p>
 <p>$$
 \{uv^{\mathsf T}\}\;\cong\;\mathbb{P}^1(\mathbb{R})\times\mathbb{P}^1(\mathbb{R}),
@@ -326,7 +326,7 @@ $$</p>
 <p>$$
 \operatorname{adj}\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q^{\natural}),
 $$</p>
-<p>and consequently $\mathsf{M}_2(\tilde q)^{-1}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$ on the units.</p>
+<p>and consequently $\mathsf{M}_2(\tilde q)^{-1}=\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$ on the invertibles.</p>
 <p><strong>Proof.</strong> The adjugate of $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ is $\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$, which on the dictionary matrix is $\begin{pmatrix}q_t+q_z&-(q_y-q_x)\\-(q_x+q_y)&q_t-q_z\end{pmatrix}$, and that is the dictionary matrix of $\tilde q^{\natural}$.</p>
 <p><strong>The identity is polynomial.</strong> The relation $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\langle\tilde q\rangle_{\natural}I$ holds for every element, invertible or not, because both sides are polynomial in the four coordinates. On the zero divisors it reads $AB=0$ with $A,B\neq0$, which is the matrix form of the zero-divisor cone.</p>
 <p><strong>The transpose.</strong> The transpose is not the conjugation. On the dictionary matrix,</p>
@@ -334,7 +334,7 @@ $$</p>
 \mathsf{M}_2(\tilde q)^{\mathsf T}=\mathsf{M}_2\bigl(q_te_t-q_x\vec e_x+q_y\vec e_y+q_z\vec e_z\bigr),
 $$</p>
 <p>so the transpose corresponds to the linear involution that negates the coefficient of $\vec e_x$ alone and fixes $\vec e_y$ and $\vec e_z$. That involution is an <strong>anti</strong>-automorphism, $\sigma(\tilde q\tilde p)=\sigma(\tilde p)\sigma(\tilde q)$, and not an automorphism, since $\sigma(\vec e_x)\sigma(\vec e_y)=-\vec e_z$ while $\sigma(\vec e_x\vec e_y)=\vec e_z$. The transpose is therefore the model of the reversal, and the three distinguished involutions of the algebra become three different matrix operations: the conjugation is the adjugate, the involution negating $\vec e_x$ is the transpose, and the involution negating all three vectors is the inverse up to the norm.</p>
-<p><strong>The shear of the inverse.</strong> On a unit the inverse is $\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$, and its determinant is $1/\langle\tilde q\rangle_{\natural}$, of either sign. So the units of the algebra form the group $\{X:\det X\neq0\}=GL_2(\mathbb{R})$, and the units of norm one form $SL_2(\mathbb{R})$, the double cover of the identity component of the Lorentz group that <em>Split-Quaternion Rotations and the Lorentz Group</em> develops.</p>
+<p><strong>The shear of the inverse.</strong> On an invertible element the inverse is $\mathsf{M}_2(\tilde q^{\natural})/\langle\tilde q\rangle_{\natural}$, and its determinant is $1/\langle\tilde q\rangle_{\natural}$, of either sign. So the invertibles of the algebra form the group $\{X:\det X\neq0\}=GL_2(\mathbb{R})$, and those of norm one form $SL_2(\mathbb{R})$, the double cover of the identity component of the Lorentz group that <em>Split-Quaternion Rotations and the Lorentz Group</em> develops.</p>
 <h2 id="the-norms">The Norms</h2>
 <p><strong>Four forms.</strong> The model carries four natural forms, and only one of them is the determinant.</p>
 <div class="table-scroll"><table>
@@ -378,7 +378,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The trace form.</strong> $\operatorname{tr}(XY)$ is invariant under left and right multiplication by units, because $\operatorname{tr}(AXA^{-1}Y)=\operatorname{tr}(XY)$, and its Gram matrix on the basis $(I,J,K,D)$ is $\operatorname{diag}(2,-2,2,2)$, of signature $(3,1)$. It is not the determinant form: the two differ on the vector part, where the trace form is negative on $\vec e_x$ and positive on $\vec e_y,\vec e_z$, the opposite of the norm.</p>
+<p><strong>The trace form.</strong> $\operatorname{tr}(XY)$ is invariant under left and right multiplication by invertibles, because $\operatorname{tr}(AXA^{-1}Y)=\operatorname{tr}(XY)$, and its Gram matrix on the basis $(I,J,K,D)$ is $\operatorname{diag}(2,-2,2,2)$, of signature $(3,1)$. It is not the determinant form: the two differ on the vector part, where the trace form is negative on $\vec e_x$ and positive on $\vec e_y,\vec e_z$, the opposite of the norm.</p>
 <p><strong>The Killing form.</strong> On the traceless part, which is $\mathfrak{sl}_2(\mathbb{R})$, the Killing form of the Lie algebra is $B(X,Y)=4\operatorname{tr}(XY)$, of signature $(2,1)$, negative on $J$ and positive on $K$ and $D$. Its light cone is the cone of nilpotent directions, which is the parabolic stratum of the spectral trichotomy read as a Lie-theoretic object.</p>
 <p><strong>The Frobenius form.</strong> $\operatorname{tr}(X^{\mathsf T}X)=\sum X_{ij}^2$ is positive definite and is the Euclidean structure of $\mathbb{R}^4$ under the vectorisation; it is invariant under conjugation by orthogonal matrices and under nothing else. It is the form a numerical computation uses, and it is not an invariant of the algebra.</p>
 <p><strong>The absence.</strong> There is no form that is both positive definite and multiplicative, and there cannot be: a multiplicative form vanishing only at the origin would make the algebra a division algebra, and the algebra has zero divisors. The signature $(2,2)$ of the determinant is the exact measure of that failure.</p>
@@ -453,7 +453,7 @@ $$</p>
 \mathbb{H}_{\mathrm{spl}}\tilde x=\{X:\operatorname{Im}X\subseteq L\},
 $$</p>
 <p>and the line $L$ depends only on the ideal. Such a set is two-dimensional, spanned by $u\zeta_1^{\mathsf T}$ and $u\zeta_2^{\mathsf T}$ for a generator $u$ of $L$, so it is a minimal left ideal; the minimal left ideals are therefore parametrised by the lines of $\mathbb{R}^2$, that is by $\mathbb{P}^1(\mathbb{R})$, and the same argument on the right gives the minimal right ideals, parametrised by the lines of the dual, which is again $\mathbb{P}^1(\mathbb{R})$.</p>
-<p><strong>The action.</strong> The units act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of ${\mathbb{H}_{\mathrm{spl}}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is</p>
+<p><strong>The action.</strong> The invertibles act on the set of minimal left ideals by left multiplication, $g\cdot L=gL$, so the action of ${\mathbb{H}_{\mathrm{spl}}}^{\times}=GL_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ is the defining action on lines. Its kernel is the centre $\mathbb{R}^{\times}I$, because a matrix fixing every line is scalar, so the effective group is</p>
 <p>$$
 \mathrm{PGL}_2(\mathbb{R})=\operatorname{Aut}(\mathbb{H}_{\mathrm{spl}}),
 $$</p>
@@ -463,7 +463,7 @@ $$</p>
 t\longmapsto\frac{at+b}{ct+d},
 $$</p>
 <p>the Möbius transformation of the projective line, and the point $t=-d/c$ is sent to the line at infinity. The two fixed points of the transformation are the eigendirections of the matrix, which are real in the split case, double in the parabolic case and complex conjugate in the complex case; the trichotomy of the spectral projectors is therefore the trichotomy of Möbius transformations into hyperbolic, parabolic and elliptic.</p>
-<p><strong>The Lorentz reading.</strong> The subgroup $SL_2(\mathbb{R})$ of the units of norm one acts on $\mathbb{P}^1(\mathbb{R})$ through $\mathrm{PGL}_2(\mathbb{R})$, and this action is the action of the identity component of $SO(2,1)$ on the boundary circle of the hyperbolic plane. The three types of Möbius transformation are then the three conjugacy classes of Lorentz transformations in three dimensions, and the null cone of the algebra is the light cone of that group. This is the reason the split-quaternion algebra, and not the quaternion algebra, is the algebra of the Lorentz group in $2+1$ dimensions.</p>
+<p><strong>The Lorentz reading.</strong> The subgroup $SL_2(\mathbb{R})$ of the invertibles of norm one acts on $\mathbb{P}^1(\mathbb{R})$ through $\mathrm{PGL}_2(\mathbb{R})$, and this action is the action of the identity component of $SO(2,1)$ on the boundary circle of the hyperbolic plane. The three types of Möbius transformation are then the three conjugacy classes of Lorentz transformations in three dimensions, and the null cone of the algebra is the light cone of that group. This is the reason the split-quaternion algebra, and not the quaternion algebra, is the algebra of the Lorentz group in $2+1$ dimensions.</p>
 <p><strong>The cross-ratio.</strong> The action of $\mathrm{PGL}_2(\mathbb{R})$ on $\mathbb{P}^1(\mathbb{R})$ preserves the cross-ratio of four points, and the cross-ratio is the complete invariant of a quadruple under the action. In the algebra, a quadruple of minimal left ideals is a quadruple of zero divisors up to scalar, and the cross-ratio is the invariant that no product and no norm can see.</p>
 <h2 id="summary">Summary</h2>
 <ol>
@@ -471,12 +471,12 @@ $$</p>
 <li>The left and right matrices are the two commuting copies $M_{\tilde q}\otimes I$ and $I\otimes M_{\tilde q}^{\mathsf T}$ inside $M_4(\mathbb{R})$, of rank $2\operatorname{rank}M_{\tilde q}$ each.</li>
 <li>The product is the matrix product, the image is the whole matrix algebra, and the Peirce corners are a full system of matrix units.</li>
 <li>The trace is twice the scalar part, and the traceless part is $\mathfrak{sl}_2(\mathbb{R})$.</li>
-<li>The determinant is the norm $\langle\tilde q\rangle_{\natural}$, of signature $(2,2)$; the units are the nonsingular matrices and the zero divisors are the rank-one matrices, that is the Segre quadric.</li>
+<li>The determinant is the norm $\langle\tilde q\rangle_{\natural}$, of signature $(2,2)$; the invertibles are the nonsingular matrices and the zero divisors are the rank-one matrices, that is the Segre quadric.</li>
 <li>The spectral trichotomy is decided by the sign of $q_y^2+q_z^2-q_x^2$, and the centraliser is $\mathbb{R}\times\mathbb{R}$, the dual numbers or $\mathbb{C}$ accordingly.</li>
 <li>The conjugation is the adjugate, the transpose is the reversal, and the inverse is the conjugate divided by the norm.</li>
 <li>Four forms coexist: the determinant form of signature $(2,2)$, the trace form of signature $(3,1)$, the positive definite Frobenius form and the Killing form of signature $(2,1)$.</li>
 <li>The subspaces are matrix conditions, and the two isotropic planes are the copies of $\mathbb{C}$ and of the split-complex numbers.</li>
-<li>The minimal left ideals are the lines of $\mathbb{R}^2$, the units act by Möbius transformations, and $\mathrm{PGL}_2(\mathbb{R})$ acts faithfully.</li>
+<li>The minimal left ideals are the lines of $\mathbb{R}^2$, the invertibles act by Möbius transformations, and $\mathrm{PGL}_2(\mathbb{R})$ acts faithfully.</li>
 </ol>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

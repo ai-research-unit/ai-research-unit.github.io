@@ -75,7 +75,7 @@ structures is a <strong>homomorphism</strong> when it carries every relation of 
 corresponding relation of the target. The maps of a structure into itself are its <strong>endomorphisms</strong>;
 they compose, so they form a monoid, and the elements of that monoid that are invertible are the
 automorphisms of the structure. This article develops that operator layer for relational structures:
-the endomorphism monoid and its group of units, the <strong>automorphism group</strong> and its action on the
+the endomorphism monoid and its group of invertibles, the <strong>automorphism group</strong> and its action on the
 underlying set, the <strong>embeddings</strong> and the <strong>strong endomorphisms</strong>, the kernel of a strong
 homomorphism and the first isomorphism theorem, and the special case of a single relation.</p>
 <p>The article presupposes the language of <em>Sets, Functions and Relations</em> — sets, relations, the
@@ -91,7 +91,7 @@ beside it; both are instances of the present theory, and the article says so rat
 them. The <strong>converse</strong> relation and the operator it defines belong to <em>The Converse Relation as an
 Operator</em>, in this group; it is used here only to describe the inverse image of a relation. Finally,
 the systematic theory of <strong>groups</strong> is <em>Groups</em>, in this Part, and the theory of a group acting on a
-set is <em>Transformation Groups</em>; here the only group that occurs is the group of units of an
+set is <em>Transformation Groups</em>; here the only group that occurs is the group of invertibles of an
 endomorphism monoid, and its action is computed from the monoid.</p>
 <h2 id="relational-structures-and-their-maps">Relational Structures and Their Maps</h2>
 <h3 id="structures-and-homomorphisms">Structures and Homomorphisms</h3>
@@ -152,7 +152,7 @@ strong by definition. For the necessity of strength, let $A = \{1,2\}$ with $R =
 homomorphism: the only pair of $R$ maps to $(u,v) \in S$. It is not strong, because $(f(1), f(1)) =
 (u,u) \in S$ while $(1,1) \notin R$.</p>
 <h2 id="the-endomorphism-monoid">The Endomorphism Monoid</h2>
-<h3 id="composition-and-units">Composition and Units</h3>
+<h3 id="composition-and-invertibles">Composition and Invertibles</h3>
 <p>Fix a relational structure $\mathcal{A} = (A, (R_i))$ and let $\operatorname{End}(\mathcal{A})$ be
 the set of homomorphisms $\mathcal{A} \to \mathcal{A}$, the <strong>endomorphisms</strong> of $\mathcal{A}$.</p>
 <p><strong>Proposition.</strong> $\operatorname{End}(\mathcal{A})$ is a monoid under composition, with identity
@@ -166,21 +166,21 @@ by <em>Sets, Functions and Relations</em>.</p>
 also an endomorphism; equivalently, by the proposition above, an endomorphism that is an
 isomorphism $\mathcal{A} \to \mathcal{A}$. The set of automorphisms is written
 $\operatorname{Aut}(\mathcal{A})$.</p>
-<p><strong>Theorem.</strong> $\operatorname{Aut}(\mathcal{A})$ is the group of units of the monoid
+<p><strong>Theorem.</strong> $\operatorname{Aut}(\mathcal{A})$ is the group of invertibles of the monoid
 $\operatorname{End}(\mathcal{A})$.</p>
 <p><strong>Proof.</strong> If $f \in \operatorname{End}(\mathcal{A})$ has a two-sided inverse $g \in
 \operatorname{End}(\mathcal{A})$, then $f$ is bijective as a function and $g$ is its inverse
 function; so $f$ is a bijective endomorphism with endomorphic inverse, that is, an automorphism. If
-$f$ is an automorphism, its inverse function is an endomorphism, so $f$ is a unit. The units of a
-monoid always form a group under the monoid operation: the identity is a unit, a product of units is
-a unit, and a unit has an inverse that is a unit. The set $\operatorname{Aut}(\mathcal{A})$ is
-therefore a group, and it is the group of units of $\operatorname{End}(\mathcal{A})$.</p>
+$f$ is an automorphism, its inverse function is an endomorphism, so $f$ is invertible. The invertibles of a
+monoid always form a group under the monoid operation: the identity is invertible, a product of invertibles is
+an invertible element, and an invertible element has an inverse that is invertible. The set $\operatorname{Aut}(\mathcal{A})$ is
+therefore a group, and it is the group of invertibles of $\operatorname{End}(\mathcal{A})$.</p>
 <p>The systematic theory of a group, and of a group acting on a set, is <em>Groups</em> and <em>Transformation
-Groups</em>, in this Part; here a group is used only as the group of units of a monoid, and the action
+Groups</em>, in this Part; here a group is used only as the group of invertibles of a monoid, and the action
 below is computed directly from the composition of maps.</p>
 <p><strong>Corollary.</strong> A bijective endomorphism of $\mathcal{A}$ need not be an automorphism: by the last
 proposition of the previous subsection a bijective homomorphism $\mathcal{A} \to \mathcal{A}$ may
-fail to be strong, and then its inverse function is not an endomorphism, so it is not a unit of
+fail to be strong, and then its inverse function is not an endomorphism, so it is not invertible of
 $\operatorname{End}(\mathcal{A})$.</p>
 <h3 id="the-automorphism-group-and-its-action">The Automorphism Group and Its Action</h3>
 <p>Because $\operatorname{Aut}(\mathcal{A})$ is a group of bijections of $A$, it is a subgroup of the
@@ -324,7 +324,7 @@ relation into the corresponding one, a strong homomorphism carries each relation
 sense that the source relation is the inverse image of the target relation, an embedding is an
 injective strong homomorphism, and an isomorphism is a bijective one.</p>
 <p>The endomorphisms of a structure form a monoid $\operatorname{End}(\mathcal{A})$ under composition
-with identity $\mathrm{id}_A$, and its group of units is the automorphism group
+with identity $\mathrm{id}_A$, and its group of invertibles is the automorphism group
 $\operatorname{Aut}(\mathcal{A})$, a subgroup of the symmetric group of the domain. A bijective
 endomorphism need not be an automorphism; it is one exactly when it is strong. The automorphism
 group acts on the domain, the orbits partition it, and every relation of the structure is a union of
@@ -374,7 +374,7 @@ homomorphisms while irreflexivity and antisymmetry are reflected by strong ones.
 </tr>
 <tr>
 <td>$\operatorname{Aut}(\mathcal{A})$</td>
-<td>Automorphism group, the group of units of $\operatorname{End}(\mathcal{A})$</td>
+<td>Automorphism group, the group of invertibles of $\operatorname{End}(\mathcal{A})$</td>
 </tr>
 <tr>
 <td>$\operatorname{sym}(A)$</td>

@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="dual-numbers-norm-and-invertibility"><strong>Dual-Numbers Norm and Invertibility</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article studies the norm of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathrm{M} = (\varepsilon)$. The goal here is to define the norm and the Euclidean form, to establish the criterion for invertibility, to describe the group of units and its structure, and to record the three-way classification of the elements.</p>
+<p>This article studies the norm of the dual-number algebra and the invertibility of its elements. It follows the base article <em>Dual-Numbers Algebra</em>, which fixed the ring $\mathbb{C}_{\mathrm{dln},R} = R[\varepsilon]/(\varepsilon^2)$, the two conjugations, the two distinguished submodules and the maximal ideal $\mathrm{M} = (\varepsilon)$. The goal here is to define the norm and the Euclidean form, to establish the criterion for invertibility, to describe the group of invertibles and its structure, and to record the three-way classification of the elements.</p>
 <p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked, and concrete instances appear only where a statement would otherwise be misread. Throughout, $R$ is a commutative ring with identity in which $2$ is invertible, the algebra is $\mathbb{C}_{\mathrm{dln},R}$, and $\mathbb{C}_{\mathrm{spl}}$ denotes the split complex algebra $\mathbb{R}[j]$, $j^2 = +1$. A general dual number is written</p>
 <p>$$
 Q = q + \varepsilon q', \qquad q, q' \in R,
@@ -128,8 +128,8 @@ $$</p>
 r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|
 $$</p>
 <p>is a continuous multiplicative real size function on the units, normalised on the real scalars, and it is invariant under the parabolic one-parameter subgroup, $r(Q(1 + t\varepsilon)) = r(Q)$ for every $t \in \mathbb{R}$. It is the unique such function with that invariance.</p>
-<p><strong>Proof.</strong> Multiplicativity is $\langle Q_1 Q_2\rangle = \langle Q_1\rangle\langle Q_2\rangle$ together with $r = \sqrt{\langle\cdot\rangle_{*}}$, and continuity is the continuity of $q \mapsto |q|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Q(1 + t\varepsilon) = q + (q' + tq)\varepsilon$ has the same real part $q$, so $r(Q(1 + t\varepsilon)) = |q| = r(Q)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every unit is $q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q^{-1}q'$; the shear invariance gives $r(q + \varepsilon q') = r(q)$, so $r$ is determined on the whole unit group by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
-<p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the units the norm supplies a genuine positive scale via $r = \sqrt{\langle\cdot\rangle_{*}}$, and it is the only scale fixed by the shear, the square root being the square root of a square.</p>
+<p><strong>Proof.</strong> Multiplicativity is $\langle Q_1 Q_2\rangle = \langle Q_1\rangle\langle Q_2\rangle$ together with $r = \sqrt{\langle\cdot\rangle_{*}}$, and continuity is the continuity of $q \mapsto |q|$. At a real scalar $\lambda$ one has $r(\lambda) = \sqrt{\lambda^2} = |\lambda|$. For the shear invariance, $Q(1 + t\varepsilon) = q + (q' + tq)\varepsilon$ has the same real part $q$, so $r(Q(1 + t\varepsilon)) = |q| = r(Q)$. For uniqueness, by <em>Shears and Parabolic Rotations</em> every invertible element is $q(1 + s\varepsilon)$ with $q \in \mathbb{R}^\times$ and $s = q^{-1}q'$; the shear invariance gives $r(q + \varepsilon q') = r(q)$, so $r$ is determined on the whole group of invertibles by its values on the real scalars, and the normalisation fixes those to be $|\cdot|$.</p>
+<p>So the multiplicative scale on the units reduces to the absolute value of the real part: on the invertibles the norm supplies a genuine positive scale via $r = \sqrt{\langle\cdot\rangle_{*}}$, and it is the only scale fixed by the shear, the square root being the square root of a square.</p>
 <p><strong>Remark (the shear condition is needed).</strong> Invariance under the shear is not automatic, and without it the scale is not unique. For each real $c$, the function</p>
 <p>$$
 \rho_c(q + \varepsilon q') = |q|\,\exp\!\Bigl(c\,\frac{q'}{q}\Bigr)
@@ -214,9 +214,9 @@ $$</p>
 <p><strong>Theorem.</strong> Let $Q = q + \varepsilon q' \in \mathbb{C}_{\mathrm{dln},R}$. The following are equivalent.</p>
 <ol>
 <li>$Q$ is invertible.</li>
-<li>$q$ is a unit of $R$.</li>
-<li>$\langle Q\rangle = q^2$ is a unit of $R$.</li>
-<li>The residue class of $Q$ in the quotient ring $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M} \cong R$ is a unit of $R$.</li>
+<li>$q$ is invertible in $R$.</li>
+<li>$\langle Q\rangle = q^2$ is invertible in $R$.</li>
+<li>The residue class of $Q$ in the quotient ring $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M} \cong R$ is invertible in $R$.</li>
 </ol>
 <p>Over a field, the criterion reads: $Q$ is invertible if and only if $q \neq 0$, that is, if and only if $\langle Q\rangle \neq 0$.</p>
 <p><strong>Proof.</strong> If $q \in R^\times$, set $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Then</p>
@@ -234,16 +234,16 @@ $$</p>
 <p>This is the degeneration of the complex formula $Q^{-1} = \bar Q/\langle Q\rangle_{*}$: the conjugate is $\bar Q = q - \varepsilon q'$ and the "modulus squared" is $\langle Q\rangle = q^2$, so $\bar Q/\langle Q\rangle = (q - \varepsilon q')/q^2$, which is the inverse above.</p>
 <p><strong>Corollary.</strong> If $Q$ is invertible then so is $\bar Q$, and $\overline{Q^{-1}} = (\bar Q)^{-1}$.</p>
 <p><strong>Proof.</strong> Direct from the formula.</p>
-<h2 id="the-group-of-units">The Group of Units</h2>
+<h2 id="the-group-of-invertibles">The Group of Invertibles</h2>
 <h3 id="definition_3">Definition</h3>
-<p><strong>Definition.</strong> The <strong>group of units</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
+<p><strong>Definition.</strong> The <strong>group of invertibles</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
 <p>$$
 (\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}.
 $$</p>
 <p>It is a group under multiplication with identity $1$.</p>
 <h3 id="basic-properties_1">Basic Properties</h3>
-<p><strong>Proposition.</strong> Over a field, the group of units is the complement of the maximal ideal, $(\mathbb{C}_{\mathrm{dln},k})^\times = \mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{C}_{\mathrm{dln}}$ with exactly two connected components, distinguished by the sign of the real part.</p>
-<p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $q \neq 0$. Over a general commutative ring the unit group is the smaller set $\{q + \varepsilon q' : q \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{q \neq 0\}$ being the complement of a line. The map $Q \mapsto \operatorname{sgn}(q)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{q > 0\}$ and $\{q < 0\}$ are each homeomorphic to a half-plane and hence connected.</p>
+<p><strong>Proposition.</strong> Over a field, the group of invertibles is the complement of the maximal ideal, $(\mathbb{C}_{\mathrm{dln},k})^\times = \mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$, and over $R = \mathbb{R}$ it is an open, dense subset of the plane $\mathbb{C}_{\mathrm{dln}}$ with exactly two connected components, distinguished by the sign of the real part.</p>
+<p><strong>Proof.</strong> Over a field the complement statement is the invertibility criterion $q \neq 0$. Over a general commutative ring the group of invertibles is the smaller set $\{q + \varepsilon q' : q \in R^\times\}$, the preimage of $R^\times$ under $\operatorname{Re}$. Openness and density over $\mathbb{R}$ follow from $\{q \neq 0\}$ being the complement of a line. The map $Q \mapsto \operatorname{sgn}(q)$ is a continuous surjection onto $\{\pm 1\}$ that is multiplicative, so there are at least two components; $\{q > 0\}$ and $\{q < 0\}$ are each homeomorphic to a half-plane and hence connected.</p>
 <h3 id="the-structure-as-a-semidirect-product">The Structure as a Semidirect Product</h3>
 <p><strong>Theorem.</strong> Let $R$ be a commutative ring with $2$ invertible. The map</p>
 <p>$$
@@ -255,7 +255,7 @@ $$</p>
 \mathrm{J}(q_1,s)\mathrm{J}(q_2,t) = q_1(1 + s\varepsilon)\,q_2(1 + t\varepsilon) = q_1 q_2\bigl(1 + (s + t)\varepsilon\bigr) = \mathrm{J}\bigl(q_1 q_2,\, s + t\bigr),
 $$</p>
 <p>using $\varepsilon^2 = 0$ and the commutativity of $R$.</p>
-<p>So the group of units is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{C}_{\mathrm{dln},R}$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
+<p>So the group of invertibles is the <strong>direct product</strong> $R^\times \times (R, +)$. Read as a semidirect product $R^\times \ltimes (R, +)$, the action of $R^\times$ on $(R, +)$ is trivial — because $\mathbb{C}_{\mathrm{dln},R}$ is commutative, the conjugation action of the first factor on the shear group $1 + \mathrm{M}$ is trivial — so the semidirect structure degenerates to the direct product:</p>
 <p>$$
 \boxed{\;
 (\mathbb{C}_{\mathrm{dln},R})^\times \cong R^\times \times (R, +)
@@ -265,7 +265,7 @@ $$</p>
 <p>$$
 1 \longrightarrow (1 + \mathrm{M}) \longrightarrow (\mathbb{C}_{\mathrm{dln},R})^\times \longrightarrow R^\times \longrightarrow 1
 $$</p>
-<p>is split by $q \mapsto q$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of units is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
+<p>is split by $q \mapsto q$, and its kernel $1 + \mathrm{M} = \{1 + s\varepsilon\}$ is the <strong>shear group</strong>, isomorphic to $(R, +)$ through $s \mapsto 1 + s\varepsilon$. Over $\mathbb{R}$ the group of invertibles is $\mathbb{R}^\times \times \mathbb{R}$: abelian, two-dimensional, with two contractible components.</p>
 <h3 id="the-norm-one-group">The Norm-One Group</h3>
 <p><strong>Definition.</strong> The <strong>norm-one group</strong> is $H = \{Q \in \mathbb{C}_{\mathrm{dln},\mathbb{R}} : \langle Q\rangle = 1\}$.</p>
 <p><strong>Proposition.</strong> $H = \{q + \varepsilon q' : q = \pm 1\}$ is the union of the two parallel lines of real part $\pm 1$; its identity component is $H_0 = 1 + \mathrm{M}$, the shear group.</p>
@@ -308,7 +308,7 @@ $$</p>
 <h3 id="the-real-submodule">The Real Submodule</h3>
 <p>An element of $R_{\mathbb{C}_{\mathrm{dln}}}$ is $Q = q$ with $q' = 0$, and $\langle Q\rangle = q^2$. Over a field, every nonzero element of $R_{\mathbb{C}_{\mathrm{dln}}}$ is invertible, and $R_{\mathbb{C}_{\mathrm{dln}}}$ is a subalgebra isomorphic to the field; it is the unique subalgebra of $\mathbb{C}_{\mathrm{dln},R}$ that is a division algebra.</p>
 <h3 id="the-infinitesimal-submodule">The Infinitesimal Submodule</h3>
-<p>An element of $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}} = \mathrm{M}$ is $Q = \varepsilon q'$ with $q = 0$, and $\langle Q\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-unit; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
+<p>An element of $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}} = \mathrm{M}$ is $Q = \varepsilon q'$ with $q = 0$, and $\langle Q\rangle = 0$. Hence <strong>every</strong> element of the infinitesimal submodule is a non-invertible; the invertible elements meet $\mathrm{M}$ in the empty set, and the zero divisors are exactly $\mathrm{M} \setminus \{0\}$.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
 <p>Over a field $k$ the distribution is as follows, the units being read off from $R^\times = k^\times$ and the zero-divisor column from the criterion of <em>Dual-Numbers Zero Divisors</em>.</p>
 <div class="table-scroll"><table>
@@ -344,7 +344,7 @@ $$</p>
 <p>$$
 \mathbb{C}_{\mathrm{dln},R} = R_{\mathbb{C}_{\mathrm{dln}}} \oplus \varepsilon R_{\mathbb{C}_{\mathrm{dln}}}, \qquad Q = q + \varepsilon q',
 $$</p>
-<p>the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility depends only on the component in the real submodule. This is why the group of units is a direct product: the multiplicative structure of $\mathbb{C}_{\mathrm{dln},R}$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
+<p>the norm reads $\langle Q\rangle = (\operatorname{Re} Q)^2$, and invertibility depends only on the component in the real submodule. This is why the group of invertibles is a direct product: the multiplicative structure of $\mathbb{C}_{\mathrm{dln},R}$ is that of $R$ on the real submodule, with the infinitesimal submodule carried along as a nilpotent, invisible addition. In the dual algebra only one nontrivial conjugation exists, and the distribution collapses to the two-row table above.</p>
 <h2 id="comparison-with-the-split-complex-case">Comparison with the Split Complex Case</h2>
 <p>The three norms of the family are</p>
 <p>$$
@@ -354,14 +354,14 @@ $$</p>
 $$</p>
 <p>for the complex numbers, the split complex numbers $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ and the dual numbers. They are the three real binary quadratic forms of rank two, two and one respectively: positive-definite, indefinite non-degenerate, and degenerate.</p>
 <ul>
-<li>In $\mathbb{C}$ the norm never vanishes away from the origin, and every nonzero element is a unit; the norm-one group is the circle.</li>
+<li>In $\mathbb{C}$ the norm never vanishes away from the origin, and every nonzero element is invertible; the norm-one group is the circle.</li>
 <li>In the split complex $\mathbb{C}_{\mathrm{spl}}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.</li>
 <li>In $\mathbb{C}_{\mathrm{dln}}$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.</li>
 </ul>
 <p>The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.</p>
 <h2 id="summary">Summary</h2>
-<p>The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the units; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.</p>
-<p>A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is a unit of $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of units is $\mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{C}_{\mathrm{dln},k})^\times \to k^\times \to 1$, and since $\mathbb{C}_{\mathrm{dln},k}$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{C}_{\mathrm{dln},k}$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
+<p>The norm $\langle Q\rangle = Q\bar Q = q^2$ of the dual-number algebra is a degenerate multiplicative quadratic form of rank one, depending only on the real part, with radical the maximal ideal $\mathrm{M} = (\varepsilon)$. It fails to be a norm in the analytic sense, and the Euclidean form $q^2 + q'^2$ is the positive-definite but non-multiplicative quantity that carries the topology. The continuous multiplicative real size function on the units, normalised on the real scalars and invariant under the parabolic one-parameter subgroup, is $r(Q) = \sqrt{\langle Q\rangle_{*}} = |q|$, the multiplicative scale on the invertibles; without the shear-invariance requirement the normalised multiplicative size functions form the one-parameter family $\rho_c = |q|\exp(c\,q'/q)$.</p>
+<p>A dual number $Q = q + \varepsilon q'$ is invertible if and only if its real part is invertible in $R$; over a field, if and only if $q \neq 0$, equivalently if and only if $\langle Q\rangle \neq 0$. The inverse is $Q^{-1} = q^{-1} - q^{-2}\varepsilon q'$. Over a field the group of invertibles is $\mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$; it is the split extension $1 \to (1 + \mathrm{M}) \to (\mathbb{C}_{\mathrm{dln},k})^\times \to k^\times \to 1$, and since $\mathbb{C}_{\mathrm{dln},k}$ is commutative the extension is the direct product $k^\times \times (k, +)$ with the shear group $1 + \mathrm{M}$ as second factor. The elements of $\mathbb{C}_{\mathrm{dln},k}$ over a field fall into three classes: the invertible elements, the zero element, and the zero divisors $\mathrm{M} \setminus \{0\}$; the algebra is therefore not a division algebra, in contrast to $\mathbb{R}$ and $\mathbb{C}$. The invertible elements occupy the real submodule and avoid the infinitesimal submodule entirely, and this asymmetry of the two eigenspaces of dual conjugation is the shape the norm imposes on the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -433,7 +433,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(\mathbb{C}_{\mathrm{dln},k})^\times = \mathbb{C}_{\mathrm{dln},k} \setminus \mathrm{M}$</td>
-<td>Group of units, over a field $k$</td>
+<td>Group of invertibles, over a field $k$</td>
 </tr>
 <tr>
 <td>$1 + \mathrm{M}$</td>

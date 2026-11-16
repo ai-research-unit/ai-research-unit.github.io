@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-signed-inner-conjugation-on-a-clifford-algebra"><strong>The Signed Inner Conjugation on a Clifford Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The signed two-sided operators of <em>Two-Sided Operators with the Signed Product</em> become a family of conjugations when the two parameters are a unit and its inverse. The <strong>signed two-sided operator</strong> is</p>
+<p>The signed two-sided operators of <em>Two-Sided Operators with the Signed Product</em> become a family of conjugations when the two parameters are invertible and its inverse. The <strong>signed two-sided operator</strong> is</p>
 <p>$$
 \Sigma_x(y) = T^{\alpha}_{x,\,x^{-1}}(y) = x\,\alpha(y)\,x^{-1},
 $$</p>
@@ -78,7 +78,7 @@ $$</p>
 <p>The article has three parts. It fixes the signed two-sided operator, its relation to the inner conjugation and to the twisted conjugation, and the value at the unit, which is the grade involution. It computes the composition, and finds that the product of <strong>two</strong> signed two-sided operators is not signed but is an ordinary inner conjugation, the two grade involutions cancelling – the two-sided form of the coset structure of the parent family. And it reads the versor action: a versor acts on the quadratic space by an isometry, the odd versors give the reflections, the even ones give minus a rotation, and the products generate the orthogonal group.</p>
 <p>The ordinary two-sided operator and the twisted conjugation are <em>The Two-Sided Operator on a Clifford Algebra</em>; the signed family and its composition laws are <em>Two-Sided Operators with the Signed Product</em>; the signed inner conjugation $\alpha(x)yx^{-1}$, whose left factor carries the sign, is <em>Two-Sided Operators on a Clifford Algebra with Signed Inner Conjugation</em>; the versors, the reflections and the groups are <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em> and <em>The Two-Sided Operators and the Spin Group</em>. Those are cited. The base is a field $F$ of characteristic not $2$, $q$ is non-degenerate and $\alpha$ is the grade involution.</p>
 <h2 id="the-signed-two-sided-operator">The Signed Two-Sided Operator</h2>
-<p><strong>Definition.</strong> For a unit $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the <strong>signed two-sided operator</strong> by $x$ is</p>
+<p><strong>Definition.</strong> For an invertible element $x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times}$ the <strong>signed two-sided operator</strong> by $x$ is</p>
 <p>$$
 \Sigma_x(y) = x\,\alpha(y)\,x^{-1}, \qquad y \in \mathrm{Cl}(V,\mathfrak{Q}).
 $$</p>
@@ -95,14 +95,14 @@ $$</p>
 \Sigma_x \circ \Sigma_z = L_{x\alpha(z)}R_{\ \alpha(z)^{-1}x^{-1}} = \mathrm{Ad}_{x\,\alpha(z)} .
 $$</p>
 <p>So the composite of two signed two-sided operators is an <strong>ordinary inner conjugation</strong>, with parameter $x\alpha(z)$; the two grade involutions cancel, exactly as for the general signed product.</p>
-<p><strong>Proof.</strong> By the composition law of <em>Two-Sided Operators with the Signed Product</em>, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are a unit and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.</p>
+<p><strong>Proof.</strong> By the composition law of <em>Two-Sided Operators with the Signed Product</em>, $T^{\alpha}_{x,x^{-1}}\circ T^{\alpha}_{z,z^{-1}} = L_{x\alpha(z)}R_{\ \alpha(z^{-1})x^{-1}}$; and $\alpha(z^{-1}) = \alpha(z)^{-1}$, while $\bigl(x\alpha(z)\bigr)^{-1} = \alpha(z)^{-1}x^{-1}$, so the parameters are invertible and its inverse and the result is the inner conjugation $\mathrm{Ad}_{x\alpha(z)}$.</p>
 <p><strong>Corollary (the group generated).</strong> The signed two-sided operators generate together with their products the group</p>
 <p>$$
 \{\, \mathrm{Ad}_y : y \in \mathrm{Cl}(V,\mathfrak{Q})^{\times} \,\} \cup \{\, \Sigma_x : x \in \mathrm{Cl}(V,\mathfrak{Q})^{\times} \,\},
 $$</p>
 <p>in which the signed two-sided operators form the nontrivial coset of the inner conjugations, since $\Sigma_x = \mathrm{Ad}_x\alpha$ and $\alpha$ is not an inner conjugation. No signed two-sided operator is the identity, and the square of one is the inner conjugation $\Sigma_x^{2} = \mathrm{Ad}_{x\alpha(x)}$.</p>
 <p><strong>Proof.</strong> $\Sigma_x\Sigma_z = \mathrm{Ad}_{x\alpha(z)}$ is the composition law; $\Sigma_x = \mathrm{Ad}_x\alpha$ is the first proposition, and $\alpha$ is an automorphism but not of the form $\mathrm{Ad}_y$, because it does not fix the odd part; the square is the law with $z = x$, giving $x\alpha(x)$.</p>
-<p><strong>Remark (the value at the unit and the odd part).</strong> $\Sigma_x(1) = 1$ for every unit, so unlike the general signed two-sided operator the signed two-sided operator is not detected by the unit; what distinguishes it from the ordinary inner conjugation is the odd part. Precisely, $\Sigma_x = \mathrm{Ad}_x\circ\alpha$ agrees with the inner conjugation on the even part, $\Sigma_x = \mathrm{Ad}_x$ on $\mathrm{Cl}^{0}$, and equals its negative on the odd part, $\Sigma_x = -\mathrm{Ad}_x$ on $\mathrm{Cl}^{1}$; this holds for every unit $x$, whatever its parity, and it is the sharp statement of the cancellation in the composition law.</p>
+<p><strong>Remark (the value at the unit and the odd part).</strong> $\Sigma_x(1) = 1$ for every invertible element, so unlike the general signed two-sided operator the signed two-sided operator is not detected by the unit; what distinguishes it from the ordinary inner conjugation is the odd part. Precisely, $\Sigma_x = \mathrm{Ad}_x\circ\alpha$ agrees with the inner conjugation on the even part, $\Sigma_x = \mathrm{Ad}_x$ on $\mathrm{Cl}^{0}$, and equals its negative on the odd part, $\Sigma_x = -\mathrm{Ad}_x$ on $\mathrm{Cl}^{1}$; this holds for every invertible $x$, whatever its parity, and it is the sharp statement of the cancellation in the composition law.</p>
 <h2 id="the-reflections-and-the-versor-action">The Reflections and the Versor Action</h2>
 <p><strong>Theorem (the reflections).</strong> Let $a \in V$ with $\mathfrak{Q}(a) \neq 0$. Then $\Sigma_a$ restricted to $V$ is the reflection in $a^{\perp}$:</p>
 <p>$$

@@ -80,13 +80,13 @@
 $$</p>
 <p>for all $x, y \in A$. The set of all such maps is a group under composition, written $\operatorname{Aut}_R(A)$, with identity the identity map. If $A$ is unital and the automorphisms are required to be unital, $\sigma(1_A) = 1_A$, the resulting subgroup is written $\operatorname{Aut}_{\mathrm{un},R}(A)$; over a unital algebra multiplicativity already forces $\sigma(1_A) = 1_A$, so the two groups coincide there. Indeed $e = \sigma(1_A)$ satisfies $e^2 = \sigma(1_A \cdot 1_A) = e$, and since $\sigma$ is surjective there is $a$ with $\sigma(a) = 1_A$, whence $\sigma(a) = \sigma(a \cdot 1_A) = \sigma(a)e = e$, so $a = 1_A$ by injectivity and $e = 1_A$.</p>
 <p><strong>Proposition.</strong> Every algebra automorphism maps the centre onto itself, and it preserves idempotents, units, zero divisors and the lattice of two-sided ideals.</p>
-<p><em>Proof.</em> The centre statement is proved in <em>Centre, Units, Zero Divisors and Division Algebras</em>: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is a unit then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$.</p>
+<p><em>Proof.</em> The centre statement is proved in <em>Centre, Invertibles, Zero Divisors and Division Algebras</em>: $\sigma$ restricts to an automorphism of $Z(A)$. If $e^2 = e$ then $\sigma(e)^2 = \sigma(e)$; if $u$ is invertible then $\sigma(u)^{-1} = \sigma(u^{-1})$; if $zw = 0$ then $\sigma(z)\sigma(w) = 0$; and if $I$ is a two-sided ideal then $\sigma(I)$ is one, with inverse the same statement for $\sigma^{-1}$.</p>
 <h3 id="inner-automorphisms">Inner Automorphisms</h3>
 <p><strong>Definition.</strong> Let $A$ be unital and associative, and let $u \in A^\times$. The <strong>inner automorphism</strong> determined by $u$ is</p>
 <p>$$
 \iota_u(x) = uxu^{-1}, \qquad x \in A.
 $$</p>
-<p><strong>Proposition.</strong> For every unit $u$, the map $\iota_u$ is an algebra automorphism, and</p>
+<p><strong>Proposition.</strong> For every invertible $u$, the map $\iota_u$ is an algebra automorphism, and</p>
 <p>$$
 \iota_u \circ \iota_v = \iota_{uv}, \qquad \iota_u^{-1} = \iota_{u^{-1}}, \qquad \iota_1 = \mathrm{id}.
 $$</p>
@@ -100,12 +100,12 @@ $$</p>
 <p>$$
 \boxed{\;\operatorname{Inn}_R(A) \;\cong\; A^\times / Z(A)^\times\;}.
 $$</p>
-<p><em>Proof.</em> The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ a unit this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.</p>
+<p><em>Proof.</em> The inner automorphism $\iota_u$ is the identity exactly when $ux = xu$ for all $x$, that is, when $u \in Z(A)$; with $u$ an invertible element this is $u \in Z(A)^\times$. The first isomorphism theorem for groups gives the displayed isomorphism.</p>
 <p><strong>Proposition.</strong> $\operatorname{Inn}_R(A)$ is a normal subgroup of $\operatorname{Aut}_R(A)$, and for $\sigma \in \operatorname{Aut}_R(A)$,</p>
 <p>$$
 \sigma \circ \iota_u \circ \sigma^{-1} = \iota_{\sigma(u)}.
 $$</p>
-<p><em>Proof.</em> Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is a unit, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality.</p>
+<p><em>Proof.</em> Compute on $x$: $(\sigma \iota_u \sigma^{-1})(x) = \sigma(u\,\sigma^{-1}(x)\,u^{-1}) = \sigma(u)\,x\,\sigma(u)^{-1} = \iota_{\sigma(u)}(x)$, using multiplicativity of $\sigma$ and $\sigma^{-1}$. Since $\sigma(u)$ is invertible, $\sigma \operatorname{Inn}\sigma^{-1} \subseteq \operatorname{Inn}$; applying this to $\sigma^{-1}$ gives equality.</p>
 <p><strong>Definition.</strong> The <strong>outer automorphism group</strong> is the quotient</p>
 <p>$$
 \operatorname{Out}_R(A) = \operatorname{Aut}_R(A)/\operatorname{Inn}_R(A).
@@ -188,7 +188,7 @@ $$</p>
 <p>where $\delta(x)$ and $\varepsilon(x)$ were interchanged by associativity. Antisymmetry is immediate, and the Jacobi identity is the identity of operators on the composition of linear maps: for endomorphisms $u,v,w$ of any module, $[u,[v,w]] + [v,[w,u]] + [w,[u,v]] = 0$.</p>
 <p>Associativity of $A$ is needed in the displayed expansion, at the point where the middle terms regroup. The derivation space is also a module over the centre: for $z \in Z(A)$ and $\delta \in \operatorname{Der}_R(A)$, the map $z\delta$ is a derivation because $z$ may be moved past $\delta(x)$ and past $x$.</p>
 <p><strong>Example.</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{R}) = 0$ and $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}) = 0$: a derivation of a field extension vanishes on the ground field and, for $\mathbb{C}$, is forced to vanish on $i$ by $0 = \delta(i^2) = 2i\,\delta(i)$. More generally $\operatorname{Der}_K(K) = 0$ for any field $K$ and ground field $K$ itself.</p>
-<p><strong>Example (the split complex numbers revisited).</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is a unit, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}_{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}_{\mathrm{dln}}$ has both.</p>
+<p><strong>Example (the split complex numbers revisited).</strong> $\operatorname{Der}_{\mathbb{R}}(\mathbb{C}_{\mathrm{spl}})$ is zero. If $\delta$ is a derivation then $0 = \delta(j^2) = j\delta(j) + \delta(j)j = 2j\,\delta(j)$, and $j$ is invertible, so $\delta(j) = 0$ and $\delta = 0$. Thus $\mathbb{C}_{\mathrm{spl}}$ has automorphisms but no infinitesimal automorphisms, while $\mathbb{C}_{\mathrm{dln}}$ has both.</p>
 <h3 id="inner-derivations">Inner Derivations</h3>
 <p><strong>Definition.</strong> Let $A$ be associative, and for $a \in A$ define</p>
 <p>$$
@@ -244,7 +244,7 @@ $$</p>
 <p><strong>Proposition (the automorphisms of the dual-number algebra).</strong> Let $\varepsilon^2 = 0$ and let $\varphi = \mathrm{id} + \varepsilon\delta$ be an $R[\varepsilon]$-algebra automorphism of $A[\varepsilon]$. Then $\delta$ is a derivation of $A$.</p>
 <p><em>Proof.</em> Write $\varphi(x) = x + \varepsilon\delta(x)$ and expand $\varphi(xy) = \varphi(x)\varphi(y)$; the terms containing $\varepsilon^2$ vanish, and the coefficient of $\varepsilon$ is $\delta(xy) = \delta(x)y + x\delta(y)$.</p>
 <p>The proposition is the algebraic form of the statement that the infinitesimal automorphisms of $A$ are its derivations. The analytic form, in which a differentiable family $\varphi_t$ of automorphisms with $\varphi_0 = \mathrm{id}$ is differentiated at $t = 0$, is the same computation read with the derivative of Part III, where the limit is available.</p>
-<p><strong>Theorem (inner derivations exponentiate to inner automorphisms).</strong> Let $a \in A$ and suppose $\exp(a)$ is a unit of $A$. Then</p>
+<p><strong>Theorem (inner derivations exponentiate to inner automorphisms).</strong> Let $a \in A$ and suppose $\exp(a)$ is invertible in $A$. Then</p>
 <p>$$
 \boxed{\;\exp(\mathrm{ad}_a) = \iota_{\exp(a)}, \qquad \text{that is, } \exp(\mathrm{ad}_a)(x) = \exp(a)\,x\,\exp(-a)\;}.
 $$</p>
@@ -282,11 +282,11 @@ $$</p>
 </tr>
 <tr>
 <td>$A^\times$</td>
-<td>Group of units of $A$</td>
+<td>Group of invertibles of $A$</td>
 </tr>
 <tr>
 <td>$\iota_u(x) = uxu^{-1}$</td>
-<td>Inner automorphism by a unit $u$</td>
+<td>Inner automorphism by an invertible element $u$</td>
 </tr>
 <tr>
 <td>$\operatorname{Inn}_R(A) \cong A^\times/Z(A)^\times$</td>

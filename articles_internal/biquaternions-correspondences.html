@@ -383,7 +383,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}^{\times}$</td>
-<td>the group of units</td>
+<td>the group of invertibles</td>
 <td>$\{\tilde Q:N(\tilde Q)\neq0\}$, the $\natural$-regular set</td>
 <td>level set</td>
 </tr>
@@ -958,6 +958,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The tables collect the correspondences in one place and keep the level of each one visible. At the element level the biquaternion algebra is $M_2(\mathbb{C})$, its two real forms are $\mathbb{B}^{\sigma_{\mathrm{split}}}$ and $\mathbb{B}_H$, and the six subspaces carry the six classical readings: the centre is the trace line, the vector part is the traceless part and the Lorentz algebra, the quaternion subspace is $\mathbb{H}$ and $\mathfrak{u}(2)$ and $\mathbb{R}^{4}$, the antiquaternion subspace is $i\mathbb{H}$, the Hermitian subspace is $H_2(\mathbb{C})$ and $\mathbb{R}^{1,3}$ and the scene of the Hermitian pair, and the anti-Hermitian subspace is $\mathfrak{u}(2)$ and $\mathbb{R}^{3,1}$. The three readings of $\mathfrak{sl}(2,\mathbb{C})$ appear as $\mathbb{B}_H\cap\mathbb{B}_V$, as $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$, and as $\mathbb{B}_V$ read over $\mathbb{R}$.</p>
 <p>At the group level there is one group with four names and one quotient. The group is $G=\{\tilde U:N(\tilde U)=1\}$; it is $SL(2,\mathbb{C})$ under $\mathsf{M}_2$, it is $Sp(2,\mathbb{C})$ as the same set, and it is $Spin(1,3)$ as the same set read through the Clifford algebra. Its quotient by $\{\pm e_t\}$ is $SO^{+}(1,3)=G/\{\pm e_t\}$, and that is the only row of the five that is not $G$: the covering is two-to-one, $\pi_1(G)=0$, $\pi_1(SO^{+}(1,3))=\mathbb{Z}_2$, and the two are therefore not isomorphic. The compact core is $SU(2)=G\cap\mathbb{B}_H$, the split units are $SL(2,\mathbb{R})$ with quotient $SO^{+}(2,1)$, and the Lorentz row of the group table is a quotient row: the operators $\mathrm{Hp}_{\tilde U}$ with $N(\tilde U)=1$, of determinant one, with kernel $\{\pm e_t\}$. At the operator level the endomorphism algebra is $M_4(\mathbb{C})$, the two real forms are the operators commuting with coefficient conjugation and the operators commuting with right quaternion multiplication, and the two-sided pairs give $\mathfrak{so}(4)$, $\mathfrak{so}(2,2)$ and $\mathfrak{so}(4,\mathbb{C})$ from the pure quaternions, from the traceless split elements, and from the vector part.</p>
+<p>Table 7 takes the other axis and asks who uses each row: it names the theory, the symbols of the trade, and the object in biquaternion letters, and it records the three absences — colour, ten dimensions and the Virasoro algebra — each with its reason.</p>
 <p>The failures are as instructive as the successes. $\mathfrak{so}(4)$ and $\mathfrak{so}(2,2)$ are not subspaces of $\mathbb{B}$ but pairs of operators, $\mathfrak{su}(n)$ for $n\geq3$ does not fit at all, $\mathbb{B}_{\Psi}$ is a Jordan algebra and not a Lie algebra, $\mathbb{B}_{\Phi}$ is the other way round, and $\mathfrak{sl}(4,\mathbb{C})$ is one dimension too large for two-sided multiplication to reach.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -1022,6 +1023,246 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h2 id="table-7-correspondences-in-physics-theories">Table 7 — Correspondences in Physics Theories</h2>
+<p>The tables above say where each group and each subspace sits in the algebra. This one says who uses it. The fourth column is added, and it is the point of the table: it names the same object in biquaternion letters, always inside $\mathbb{B}$ or inside its operator layer, never in a matrix model. The groups of the second column are written as physics writes them; the fourth column says what they are here.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Theory or sector</th>
+<th>Symbols in play</th>
+<th>What they do there</th>
+<th>Biquaternion interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Foundations</strong> — special relativity</td>
+<td>$SO^{+}(1,3)$, $SL(2,\mathbb{C})$</td>
+<td>boost and rotate a four-momentum</td>
+<td>$\mathrm{Hp}_{\tilde U}$ on $\mathbb{B}_{\Psi}$, with $\tilde U\in\mathbb{B}^{\times}_1$</td>
+</tr>
+<tr>
+<td>— relativistic quantum mechanics, Dirac equation</td>
+<td>$\gamma^{\mu}$, chiral projectors</td>
+<td>the first-order wave equation of a four-component spinor</td>
+<td>the four $\gamma$'s are the four units $e_t,i\vec e_x,i\vec e_y,i\vec e_z$; the two chiral halves are the two columns of the left-regular copy; a Dirac spinor is a pair of them</td>
+</tr>
+<tr>
+<td>— Weyl and Majorana spinors</td>
+<td>$\sigma^{\mu}$, $i\sigma_2$</td>
+<td>the two inequivalent two-dimensional representations and charge conjugation</td>
+<td>left and right are the module and its conjugate; the conjugation matrix is the unit $\vec e_y$, and $\sigma_{\mathrm{tr}}=\operatorname{Ad}_{\vec e_y}\circ\natural$ is the transpose that builds it</td>
+</tr>
+<tr>
+<td>— massless little group, helicity</td>
+<td>$U(1)$</td>
+<td>the phase of a circular polarization</td>
+<td>the stabiliser of a null ray is the central circle; it fixes every ray of the null cone of $\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td>— massive little group, spin</td>
+<td>$SU(2)$</td>
+<td>the spin of a massive particle</td>
+<td>$\mathbb{B}_H\cap\mathbb{B}^{\times}_1$, the stabiliser of $e_t$ in $G$</td>
+</tr>
+<tr>
+<td>— quantum mechanics of spin</td>
+<td>Pauli matrices, $SU(2)$</td>
+<td>the spin-$\tfrac12$ operators and the Bloch sphere the Pauli matrices are the images of the units $\vec e_k$ up to the factor $i$; the Bloch sphere and the celestial sphere are the same $\mathbb{CP}^1$, the projectivised null cone</td>
+<td></td>
+</tr>
+<tr>
+<td>— discrete symmetries</td>
+<td>$C$, $P$, $T$</td>
+<td>parity, time reversal, charge conjugation</td>
+<td>the three conjugations $\natural$, $\bar{\ }$, $*$; on $\mathbb{B}_{\Psi}$ the product $PT=*$ is the identity, which is why $\pm e_t$ is the element $PT$ of $SO(1,3)$</td>
+</tr>
+<tr>
+<td><strong>Classical fields</strong> — electromagnetism</td>
+<td>Riemann–Silberstein vector $\vec E+i\vec B$</td>
+<td>six real field components in three complex ones</td>
+<td>an element of $\mathbb{B}_V$, and $\nabla\times\vec F=i\partial_t\vec F$ with $\nabla\cdot\vec F=0$</td>
+</tr>
+<tr>
+<td>— self-dual fields, instantons</td>
+<td>$\Lambda^2_\pm$, $SU(2)$ instantons</td>
+<td>the splitting of a two-form and the BPST solution</td>
+<td>$\mathbb{B}_V$ is the self-dual three-space, the adjoint of $SL(2,\mathbb{C})$; $Spin(4)=Sp(1)\times Sp(1)$ is the two-sided action on $\mathbb{B}_H$</td>
+</tr>
+<tr>
+<td>— Yang–Mills</td>
+<td>$SU(N)$ connections</td>
+<td>a local internal symmetry</td>
+<td>only $SU(2)$ fits: $\mathfrak{su}(2)\subset\mathbb{B}_H$, and $\mathbb{B}_H\cong\mathfrak{u}(2)$</td>
+</tr>
+<tr>
+<td>— Standard Model, gauge group</td>
+<td>$SU(3)\times SU(2)\times U(1)$</td>
+<td>the gauge group of matter</td>
+<td>partial: $\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y=\mathfrak{u}(2)=\mathbb{B}_H$; $U(1)_Y$ is the central circle; $SU(3)_c$ is absent from $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>— Standard Model, chiral matter</td>
+<td>left-handed doublets, right-handed singlets</td>
+<td>the asymmetric assignment of the fermions</td>
+<td>the asymmetry is the two-column split; a doublet is one column, a singlet the other</td>
+</tr>
+<tr>
+<td>— Higgs mechanism</td>
+<td>$SU(2)$ doublet, $i\sigma_2\Phi^{*}$</td>
+<td>the invariant that gives the masses</td>
+<td>the doublet is one column, and the invariant is the unit $\vec e_y$; breaking is the choice of a timelike direction, $e_t$</td>
+</tr>
+<tr>
+<td>— QED</td>
+<td>$U(1)_{\mathrm{em}}$</td>
+<td>the phase of the electron field</td>
+<td>the central circle $\{\omega e_t\}$, which is exactly the kernel of $\mathrm{Hp}$ on $\mathbb{B}^{\times}$</td>
+</tr>
+<tr>
+<td>— grand unification</td>
+<td>$SU(5)$, $SO(10)$, $E_6$</td>
+<td>one group for the three couplings</td>
+<td>absent: no rank-2 semisimple subgroup, the centre being $\mathbb{C}$; at the operator layer $Spin(6)\cong SU(4)$ is available</td>
+</tr>
+<tr>
+<td><strong>Quantum field theory</strong> — spin sums, Feynman rules</td>
+<td>$\sum u\bar u=\not p+m$</td>
+<td>the projector onto on-shell spinors</td>
+<td>$\not p+m$ is the image of $\tilde P+me_t$, and the mass shell is $N(\tilde P)=m^{2}$</td>
+</tr>
+<tr>
+<td>— $\mathcal{N}=1$ supersymmetry</td>
+<td>$\{Q_\alpha,\bar Q_{\dot\beta}\}=2\sigma^{\mu}_{\alpha\dot\beta}P_\mu$</td>
+<td>the fermionic generators of the super-Poincaré algebra</td>
+<td>the right side is the image of a real momentum: the momentum is an element $\tilde P=p_0e_t+i\vec p$ of $\mathbb{B}_{\Psi}$, with $N(\tilde P)=p_0^{2}-\lvert\vec p\rvert^{2}$; masslessness is $N=0$, the zero-divisor cone</td>
+</tr>
+<tr>
+<td>— supergravity</td>
+<td>gravitino, Rarita–Schwinger</td>
+<td>local supersymmetry of the graviton</td>
+<td>a spinor carrying one vector index; the frame group is $\mathbb{B}^{\times}_1$</td>
+</tr>
+<tr>
+<td>— two-dimensional conformal field theory</td>
+<td>$SL(2,\mathbb{C})$, Virasoro</td>
+<td>the global conformal symmetry and the infinite algebra</td>
+<td>the global part is $\mathbb{B}^{\times}/\mathbb{C}^{\times}=PSL(2,\mathbb{C})$; Virasoro is infinite-dimensional and has no biquaternion model</td>
+</tr>
+<tr>
+<td>— $\mathcal{N}=4$ Yang–Mills, integrability</td>
+<td>$\mathfrak{psu}(2,2\mid4)$, its $SL(2)$ sector</td>
+<td>anomalous dimensions as a spin chain</td>
+<td>the real form $\mathfrak{sl}(2,\mathbb{R})$ is $\mathbb{B}^{\sigma_{\mathrm{split}}}\cap\mathbb{B}_V$</td>
+</tr>
+<tr>
+<td>— twistor theory</td>
+<td>$\mathbb{CP}^{3}$, $PSL(2,\mathbb{C})$</td>
+<td>null lines and the incidence relation</td>
+<td>a twistor is an element of $\mathbb{B}$ read as a complex four-space; its two Weyl halves are the two columns; the incidence is left multiplication</td>
+</tr>
+<tr>
+<td>— celestial holography</td>
+<td>$PSL(2,\mathbb{C})$ as the celestial group</td>
+<td>Möbius action on the sphere of directions</td>
+<td>the celestial sphere is the projectivised null cone of $\mathbb{B}_{\Psi}$, that is $\mathbb{CP}^{1}$</td>
+</tr>
+<tr>
+<td>— on-shell methods, spinor helicity</td>
+<td>$\lvert p\rangle$, $\lvert p]$, little group $U(1)$</td>
+<td>massless amplitudes from two spinors</td>
+<td>a massless momentum is a null element, a product $\tilde\lambda\tilde\lambda^{*}$ on the zero-divisor cone of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td><strong>Gravity</strong> — general relativity, two-spinor formalism</td>
+<td>Newman–Penrose, $\Psi_0,\dots,\Psi_4$</td>
+<td>the Weyl tensor in spinor components</td>
+<td>the Weyl spinor is a section of $\mathrm{Sym}^{4}$ of the defining module; $\Psi_4$ is the component with every index on one chiral side</td>
+</tr>
+<tr>
+<td>— gravitational waves, polarization</td>
+<td>$E$ and $B$ modes, spin weight $2$</td>
+<td>the two polarization states</td>
+<td>spin weight $2$ is the central circle acting on $\mathrm{Sym}^{2}$ of the defining module</td>
+</tr>
+<tr>
+<td>— black holes, Kerr</td>
+<td>complex null tetrad, Newman–Janis</td>
+<td>the metric from a null frame</td>
+<td>the tetrad is a basis of the null cone of $\mathbb{B}_{\Psi}$; the algebra is used through the two-sided action there</td>
+</tr>
+<tr>
+<td>— three-dimensional gravity, AdS$_3$, BTZ</td>
+<td>$SL(2,\mathbb{R})\times SL(2,\mathbb{R})$</td>
+<td>Chern–Simons and the WZW model</td>
+<td>the two-sided action on $\mathbb{B}^{\sigma_{\mathrm{split}}}$, with kernel $\{\pm(e_t,e_t)\}$, giving $SO^{+}(2,2)$</td>
+</tr>
+<tr>
+<td>— Chern–Simons, the self-dual formulation of gravity</td>
+<td>$SL(2,\mathbb{C})$ connection</td>
+<td>the Ashtekar connection</td>
+<td>a connection valued in $\mathbb{B}_V$, the self-dual three-space</td>
+</tr>
+<tr>
+<td>— loop quantum gravity, spin foams</td>
+<td>$SU(2)$ spin networks, $SL(2,\mathbb{C})$ vertex</td>
+<td>areas, volumes, the Lorentzian vertex amplitude</td>
+<td>$SU(2)=\mathbb{B}_H\cap\mathbb{B}^{\times}_1$ for the space; $\mathbb{B}^{\times}_1$ and its principal series for the Lorentzian vertex</td>
+</tr>
+<tr>
+<td>— Euclidean quantum gravity</td>
+<td>$Spin(4)=SU(2)\times SU(2)$</td>
+<td>the rotation group of the Euclidean section</td>
+<td>$Sp(1)\times Sp(1)$, the two-sided action on $\mathbb{B}_H$, quotient by $\{\pm(e_t,e_t)\}$</td>
+</tr>
+<tr>
+<td><strong>Strings</strong> — worldsheet</td>
+<td>$SL(2,\mathbb{C})$ on $\mathbb{CP}^{1}$</td>
+<td>the global conformal symmetry of the sphere</td>
+<td>$PSL(2,\mathbb{C})=\mathbb{B}^{\times}/\mathbb{C}^{\times}$</td>
+</tr>
+<tr>
+<td>— target space</td>
+<td>$Spin(1,9)$, sixteen-component spinors</td>
+<td>ten-dimensional spinors and their $\mathcal{N}$ count</td>
+<td>absent: $\mathbb{B}$ reaches $Spin(1,3)$ and $Spin(4)$ only; a ten-dimensional spinor needs a larger algebra</td>
+</tr>
+<tr>
+<td>— four-dimensional compactification</td>
+<td>$\mathcal{N}=1$ supergravity, moduli</td>
+<td>the effective theory below the compactification scale</td>
+<td>exactly the biquaternion layer, and nothing more</td>
+</tr>
+<tr>
+<td>— M-theory</td>
+<td>$Spin(1,10)$, thirty-two-component spinors</td>
+<td>eleven dimensions</td>
+<td>absent, for the same reason</td>
+</tr>
+<tr>
+<td><strong>AdS/CFT</strong> — the correspondence</td>
+<td>$\mathfrak{so}(2,4)\cong\mathfrak{su}(2,2)$, $\mathfrak{so}(3,2)\cong\mathfrak{sp}(4,\mathbb{R})$</td>
+<td>the isometries of the two sides</td>
+<td>the two-dimensional case is the split form; the higher cases leave $\mathbb{B}$ for the operator layer</td>
+</tr>
+<tr>
+<td><strong>Condensed matter and information</strong> — spin systems, quantum gates</td>
+<td>$SU(2)$, the Clifford group, $\mathbb{CP}^{1}$</td>
+<td>spin, Majorana modes, the Bloch sphere, gate synthesis</td>
+<td>$SU(2)=\mathbb{B}_H\cap\mathbb{B}^{\times}_1$; the pure states are the projectivised null cone; Majorana modes are the two columns</td>
+</tr>
+<tr>
+<td><strong>Engineering</strong> — attitude, robotics, computer vision</td>
+<td>rotors</td>
+<td>pose, interpolation, transformation of frames</td>
+<td>$\tilde q\tilde X\tilde q^{\natural}$ with $\tilde q\in Sp(1)$, the quaternion rotor of <em>Biquaternion Rotations and Lorentz Transformations</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How to read the fourth column.</strong> Every entry is inside the algebra or inside its operator layer. The second column is written in the notation of the trade, where a symmetry is a matrix and a spinor is a column; the fourth column names the same object without leaving $\mathbb{B}$. Two translations do most of the work: a Hermitian element of $\mathbb{B}_{\Psi}$ is a four-momentum, and a null one, an element of the zero-divisor cone, is a massless four-momentum; and the central circle is the phase that the Lorentz action cannot see, which is why it is available as a gauge phase.</p>
+<p><strong>The one absence that matters for particle physics.</strong> The Standard Model gauge algebra is twelve-dimensional and $\mathbb{B}_H$ is four-dimensional. Colour therefore does not fit: the maximal compact subgroup of $\mathbb{B}^{\times}$ is $U(2)$, of real dimension four, and $SU(3)$ needs eight, so no $SU(3)$ sits inside the algebra at all, and the centre of $\mathbb{B}$ being $\mathbb{C}$ forbids a rank-2 semisimple factor outright. What does fit is $\mathfrak{u}(2)=\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y$ as a real subspace, and with it the whole electroweak layer, the Higgs invariant, and the chiral split. Colour reappears one level up: in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, whose maximal compact subgroup is $U(4)$, the block $SU(3)\oplus U(1)$ sits inside $U(3)\subset U(4)$. The biquaternion algebra is an electroweak algebra, not a Standard Model algebra.</p>
+<p><strong>The two other absences, and their reason.</strong> The target space of string theory needs $Spin(1,9)$ and M-theory needs $Spin(1,10)$; $\mathbb{B}$ is four-dimensional and reaches only the Lorentzian and the Euclidean four-dimensional spin groups. Two-dimensional conformal field theory needs the Virasoro algebra, which is infinite-dimensional; $\mathbb{B}$ is finite-dimensional and supplies only its three-dimensional global part. In both cases the limit is the dimension of the algebra and not the taste of the author.</p>
+<p><strong>What the four verified entries rest on.</strong> The massive little group: $Sp(1)$ fixes $e_t$ to $4.4\times10^{-16}$, and all $100$ sampled complex units fail, the smallest failure being $0.26$; the family $a(1+ic)$ has $N=(1+ic)^{2}\neq1$ unless $c=0$, so the stabiliser is exactly $\mathbb{B}_H\cap\mathbb{B}^{\times}_1$. The Pauli map: for $\tilde P=p_0e_t+i\vec p$ the matrix $\mathsf{M}_2(\tilde P)$ is Hermitian to $0$, its determinant is $p_0^{2}-\lvert\vec p\rvert^{2}$ to $3.6\times10^{-15}$, and the on-shell identity $\det\mathsf{M}_2(\tilde P)=m^{2}$ holds to $2.7\times10^{-15}$ over $100$ momenta. The three-dimensional gravity pair: $X\mapsto AXB^{-1}$ preserves $\det X$, the form of signature $(2,2)$, to $1.1\times10^{-13}$, with kernel $\{\pm(I,I)\}$. Maxwell: $\nabla\times\vec F=i\partial_t\vec F$ to $1.2\times10^{-10}$ and $\nabla\cdot\vec F=0$ exactly, on a plane wave.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Classification of the Structures of the Biquaternion Algebra</em> for the two real structures, the one complex structure and the six subspaces.</li>

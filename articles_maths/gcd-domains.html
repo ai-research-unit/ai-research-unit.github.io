@@ -85,15 +85,15 @@ $$</p>
 <p><strong>(a)</strong> If $\gcd(a,b)$ exists for a pair not both zero, it is unique up to associates.</p>
 <p><strong>(b)</strong> $\gcd(a, 0) = a$ for $a \neq 0$, and $\gcd(a, b) = \gcd(b, a)$.</p>
 <p><strong>(c)</strong> If $u \in R^{\times}$ then $\gcd(ua, b) \sim \gcd(a,b)$, and $a \mid b$ if and only if $\gcd(a,b) \sim a$.</p>
-<p><strong>Proof.</strong> (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in <em>Integral Domains</em>. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by a unit permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates.</p>
+<p><strong>Proof.</strong> (a) If $d$ and $d'$ are both greatest common divisors then $d \mid d'$ and $d' \mid d$, so $d \sim d'$ by the proposition on associates in <em>Integral Domains</em>. (b) Every element divides $0$, and $a \mid a$. (c) Multiplication by an invertible element permutes the common divisors; and if $a \mid b$ then $a$ is a common divisor of $a$ and $b$ divisible by every common divisor, while $\gcd(a,b) \mid a$ with both being common divisors forces the two to be associates.</p>
 <p><strong>Definition.</strong> An integral domain $R$ is a <strong>GCD domain</strong> if every pair of elements of $R$, not both zero, has a greatest common divisor in $R$.</p>
-<p><strong>Definition.</strong> Two elements $a, b \in R$, not both zero, are <strong>coprime</strong> if their only common divisors are units; when $\gcd(a,b)$ exists this says $\gcd(a,b) \sim 1$.</p>
+<p><strong>Definition.</strong> Two elements $a, b \in R$, not both zero, are <strong>coprime</strong> if their only common divisors are invertible; when $\gcd(a,b)$ exists this says $\gcd(a,b) \sim 1$.</p>
 <h3 id="divisibility-properties-of-the-gcd">Divisibility Properties of the gcd</h3>
 <p><strong>Proposition.</strong> Let $a, b, c \in R$, with $\gcd(a,b)$ and $\gcd(ca, cb)$ existing and $c \neq 0$. Then</p>
 <p>$$
 \boxed{\;\gcd(ca, cb) \sim c \cdot \gcd(a,b)\;} .
 $$</p>
-<p><strong>Proof.</strong> Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is a unit and $e \sim cd$.</p>
+<p><strong>Proof.</strong> Put $d = \gcd(a,b)$ and $e = \gcd(ca,cb)$. Since $cd \mid ca$ and $cd \mid cb$, the defining property of $e$ gives $cd \mid e$, say $e = c d f$. Now $e \mid ca$ and $e \mid cb$, that is, $cdf \mid ca$ and $cdf \mid cb$; cancelling $c$ by the domain hypothesis, $df \mid a$ and $df \mid b$. Hence $df \mid d$ by the defining property of $d$, so $f$ is invertible and $e \sim cd$.</p>
 <p><strong>Corollary.</strong> Let $d = \gcd(a,b)$ with $a, b$ not both zero, and write $a = da'$, $b = db'$. Then $a'$ and $b'$ have no common divisor outside $R^{\times}$; that is, $\gcd(a',b') \sim 1$. Moreover, if $\gcd(a', b) \sim 1$ and $\gcd(a', c) \sim 1$, then $\gcd(a', bc) \sim 1$.</p>
 <p><strong>Proof.</strong> Since $d = \gcd(da', db') \sim d \cdot \gcd(a',b')$ by the proposition, cancelling $d$ gives $1 \sim \gcd(a',b')$. For the second statement, coprimality is multiplicative in a GCD domain: if $\gcd(x, y) \sim 1$ and $\gcd(x, z) \sim 1$ then $\gcd(x, yz) \sim 1$, because a common divisor of $x$ and $yz$ is coprime to $z$ and therefore divides $y$ by the standard Euclid property of a GCD domain, that a divisor of a product coprime to one factor divides the other; the property is cited from the literature. The coprimality of $a'$ must be with $b$ and not merely with $b'$: for $a = 12$, $b = 18$, $d = 6$ one has $a' = 2$, $b' = 3$ and $\gcd(2,3) = 1$, while $\gcd(2, 18) = 2$.</p>
 <p><strong>Remark.</strong> The proposition is the reason a GCD domain behaves as if its elements had prime decompositions, even when they do not: every pair can be reduced to a coprime pair by dividing out the gcd. What a GCD domain does <strong>not</strong> supply is a factorisation of an element into irreducibles, and this is exactly what the strengthening to a unique factorisation domain adds. The class in which the reduction is accompanied by unique factorisation into irreducibles is <em>Unique Factorisation Domains</em>, below this article in this category.</p>
@@ -125,7 +125,7 @@ $$</p>
 <h2 id="the-two-incomparable-strengthenings">The Two Incomparable Strengthenings</h2>
 <h3 id="unique-factorisation-domains-forward">Unique Factorisation Domains, Forward</h3>
 <p><strong>Proposition.</strong> Every unique factorisation domain is a GCD domain.</p>
-<p><strong>Proof.</strong> In a unique factorisation domain every nonzero non-unit is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are <em>Unique Factorisation Domains</em>, below this article in this category.</p>
+<p><strong>Proof.</strong> In a unique factorisation domain every nonzero non-invertible is a product of primes, and the gcd of two nonzero elements is the product of the primes occurring in both factorisations, each taken to the smaller exponent; this element divides both and is divisible by every common divisor, since a common divisor has a factorisation whose prime factors occur in both factorisations with exponents no larger. The details, together with the definition of unique factorisation, are <em>Unique Factorisation Domains</em>, below this article in this category.</p>
 <p>That article also supplies the standard example that is a unique factorisation domain without being either a Bézout domain or a principal ideal domain, namely $\mathbb{Z}[x]$.</p>
 <h3 id="bezout-domains-forward">Bézout Domains, Forward</h3>
 <p><strong>Proposition.</strong> Let $R$ be an integral domain and $a, b \in R$ not both zero. Then $\gcd(a,b)$ exists and satisfies $(a,b) = (\gcd(a,b))$ if and only if the ideal $(a) + (b)$ is principal.</p>
@@ -163,8 +163,8 @@ $$</p>
 2 = 6 - 4 = 6 - (10 - 6) = 2 \cdot 6 - 10 = 2(46 - 4 \cdot 10) - 10 = 2 \cdot 46 - 9 \cdot 10 = 47 \cdot 46 - 9 \cdot 240 .
 $$</p>
 <p>So the Bézout combination is $2 = 240 \cdot (-9) + 46 \cdot 47$, and the identity is verified by expanding $47 \cdot 46 - 9 \cdot 240 = 2162 - 2160 = 2$.</p>
-<p><strong>Corollary.</strong> Let $a, b \in R$ be nonzero. If there exist $x, y$ with $ax + by = 1$, then every common divisor of $a$ and $b$ is a unit, so $1$ is a greatest common divisor of $a$ and $b$. Conversely, if $\gcd(a,b) = d$ is a Bézout combination $d = ax + by$ and $d$ is a unit, then $a(xd^{-1}) + b(yd^{-1}) = 1$.</p>
-<p><strong>Proof.</strong> A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is a unit. Conversely, multiply the identity by $d^{-1}$.</p>
+<p><strong>Corollary.</strong> Let $a, b \in R$ be nonzero. If there exist $x, y$ with $ax + by = 1$, then every common divisor of $a$ and $b$ is invertible, so $1$ is a greatest common divisor of $a$ and $b$. Conversely, if $\gcd(a,b) = d$ is a Bézout combination $d = ax + by$ and $d$ is invertible, then $a(xd^{-1}) + b(yd^{-1}) = 1$.</p>
+<p><strong>Proof.</strong> A common divisor of $a$ and $b$ divides $ax + by = 1$, hence is invertible. Conversely, multiply the identity by $d^{-1}$.</p>
 <hr />
 <h2 id="a-domain-that-is-not-a-gcd-domain">A Domain That Is Not a GCD Domain</h2>
 <p>The rung is strict: a domain need not have greatest common divisors.</p>
@@ -172,7 +172,7 @@ $$</p>
 <ul>
 <li>The elements $2$ and $1 + \sqrt{-5}$ both divide $6$, since $6 = 2 \cdot 3 = (1+\sqrt{-5})(1-\sqrt{-5})$, and both divide $2(1+\sqrt{-5})$.</li>
 <li>Neither divides the other: $2 \nmid 1+\sqrt{-5}$, and $1+\sqrt{-5} \nmid 2$ since $N(1+\sqrt{-5}) = 6$ does not divide $N(2) = 4$.</li>
-<li>The elements of $R$ of norm dividing $36 = N(6)$ are the associates of $1, 2, 3, 6$, of $1 \pm \sqrt{-5}$, of $2 \pm \sqrt{-5}$ and of $4 \pm 2\sqrt{-5}$: a norm $a^2 + 5b^2$ dividing $36$ leaves $b = 0$ with $a \in \{\pm 1, \pm 2, \pm 3, \pm 6\}$, $b = \pm 1$ with $a \in \{\pm 1, \pm 2\}$, and $b = \pm 2$ with $a = \pm 4$. Among these, the divisors of $6$ up to units are $1, 2, 3, 6, 1+\sqrt{-5}, 1-\sqrt{-5}$: the elements $4 \pm 2\sqrt{-5}$ and $2 \pm \sqrt{-5}$ do not divide $6$, since $6/(4+2\sqrt{-5}) = (2-\sqrt{-5})/3 \notin R$ and $6/(2+\sqrt{-5}) = (4-2\sqrt{-5})/3 \notin R$.</li>
+<li>The elements of $R$ of norm dividing $36 = N(6)$ are the associates of $1, 2, 3, 6$, of $1 \pm \sqrt{-5}$, of $2 \pm \sqrt{-5}$ and of $4 \pm 2\sqrt{-5}$: a norm $a^2 + 5b^2$ dividing $36$ leaves $b = 0$ with $a \in \{\pm 1, \pm 2, \pm 3, \pm 6\}$, $b = \pm 1$ with $a \in \{\pm 1, \pm 2\}$, and $b = \pm 2$ with $a = \pm 4$. Among these, the divisors of $6$ up to invertibles are $1, 2, 3, 6, 1+\sqrt{-5}, 1-\sqrt{-5}$: the elements $4 \pm 2\sqrt{-5}$ and $2 \pm \sqrt{-5}$ do not divide $6$, since $6/(4+2\sqrt{-5}) = (2-\sqrt{-5})/3 \notin R$ and $6/(2+\sqrt{-5}) = (4-2\sqrt{-5})/3 \notin R$.</li>
 <li>A greatest common divisor $d$ of $6$ and $2(1+\sqrt{-5})$ would divide $6$ and be divisible by both $2$ and $1+\sqrt{-5}$. From the list, the divisors of $6$ divisible by $2$ are the associates of $2$ and of $6$; of these only $6$ is divisible by $1+\sqrt{-5}$, since $2/(1+\sqrt{-5}) = (1-\sqrt{-5})/3 \notin R$. Hence $d$ would be an associate of $6$.</li>
 <li>But $6$ does not divide $2(1+\sqrt{-5})$, since $N(6) = 36$ does not divide $N(2(1+\sqrt{-5})) = 24$.</li>
 </ul>
@@ -197,7 +197,7 @@ $$</p>
 </tr>
 <tr>
 <td>$R^{\times}$</td>
-<td>Group of units</td>
+<td>Group of invertibles</td>
 </tr>
 <tr>
 <td>$a \mid b$</td>

@@ -78,7 +78,7 @@
 \quad
 \Pi_\pm=\tfrac12(1\pm j),
 $$</p>
-<p>with $\lambda_\pm$ the complex eigenvalues and $\Pi_\pm$ the fixed central idempotents. The <strong>exponential polar decomposition</strong> of <em>Exponential Polar Decomposition of Reduced Biquaternions</em> writes a unit $\breve Q$ as</p>
+<p>with $\lambda_\pm$ the complex eigenvalues and $\Pi_\pm$ the fixed central idempotents. The <strong>exponential polar decomposition</strong> of <em>Exponential Polar Decomposition of Reduced Biquaternions</em> writes an invertible element $\breve Q$ as</p>
 <p>$$
 \breve Q=\exp(\breve Q_{\log})
 =\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
@@ -86,7 +86,7 @@ $$</p>
 \breve Q_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}},
 $$</p>
 <p>with $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$ and $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ modulo the lattice $\Lambda$. This article states the dictionary between the two writings. It repeats no proof from the three source articles: the spectrum and the idempotents are those of the eigenvalue article, and the exponential, the logarithm and the polar word are those of the elementary and polar articles.</p>
-<p>The two decompositions answer different questions. The spectral writing separates $\breve Q$ into its two complex components $\lambda_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with fixed directions $\Pi_\pm$. The polar writing separates it into a modulus $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ and a torus factor $u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$, which carry the two real scales $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$ and the two phases $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$. The dictionary is a change of coordinates on the unit group: the two complex numbers $\lambda_\pm$ are replaced by the four real numbers $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$, and the product and ratio of the eigenvalues give the sum and difference of the two phases.</p>
+<p>The two decompositions answer different questions. The spectral writing separates $\breve Q$ into its two complex components $\lambda_+=Q_{\blacktriangle}+Q_{\blacktriangledown}$ and $\lambda_-=Q_{\blacktriangle}-Q_{\blacktriangledown}$, with fixed directions $\Pi_\pm$. The polar writing separates it into a modulus $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ and a torus factor $u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$, which carry the two real scales $\rho_\pm=\rho e^{\pm\theta_{\mathrm{rpd}}}$ and the two phases $\theta_\pm=\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$. The dictionary is a change of coordinates on the group of invertibles: the two complex numbers $\lambda_\pm$ are replaced by the four real numbers $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$, and the product and ratio of the eigenvalues give the sum and difference of the two phases.</p>
 <p><strong>The results.</strong> The eigenvalues are recovered from the polar data by</p>
 <p>$$
 \lambda_+=\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}},
@@ -109,7 +109,7 @@ $$</p>
 \qquad
 \theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
 $$</p>
-<p>with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The first two formulas give the modulus and the boost; the last two give the two phases, and the principal diamond selects the representative. The dictionary is a bijection on the unit group, and the exponential's lattice is the spectral ambiguity of the two complex logarithms.</p>
+<p>with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The first two formulas give the modulus and the boost; the last two give the two phases, and the principal diamond selects the representative. The dictionary is a bijection on the group of invertibles, and the exponential's lattice is the spectral ambiguity of the two complex logarithms.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -164,7 +164,7 @@ $$</p>
 </tr>
 <tr>
 <td>Common domain</td>
-<td>the units, $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$</td>
+<td>the invertibles, $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$</td>
 </tr>
 <tr>
 <td>Spectral domain</td>
@@ -286,7 +286,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-common-domain">The Common Domain</h3>
-<p>The spectral decomposition exists for every $\breve Q$, including the zero divisors and the zero element. The polar decomposition exists exactly on the units. The two conditions that separate the regimes are</p>
+<p>The spectral decomposition exists for every $\breve Q$, including the zero divisors and the zero element. The polar decomposition exists exactly on the invertibles. The two conditions that separate the regimes are</p>
 <p>$$
 Q_{\blacktriangledown}\neq0\quad\text{(distinct eigenvalues)},
 \qquad
@@ -327,7 +327,7 @@ $$</p>
 <p>The spectral domain is strictly larger than the polar domain. The gap is exactly the null set $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$: the nonzero zero divisors and the zero element, on which the eigenvalue decomposition survives and the logarithm does not.</p>
 <h2 id="the-dictionary">The Dictionary</h2>
 <h3 id="the-eigenvalues-from-the-polar-parameters">The Eigenvalues from the Polar Parameters</h3>
-<p>Let $\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$ be a unit. Since $\breve Q\Pi_\pm=\lambda_\pm\Pi_\pm$, $j\Pi_+=\Pi_+$ and $j\Pi_-=-\Pi_-$, the eigenvalue on $\Pi_+$ is the coefficient of $\Pi_+$:</p>
+<p>Let $\breve Q=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$ be an invertible element. Since $\breve Q\Pi_\pm=\lambda_\pm\Pi_\pm$, $j\Pi_+=\Pi_+$ and $j\Pi_-=-\Pi_-$, the eigenvalue on $\Pi_+$ is the coefficient of $\Pi_+$:</p>
 <p>$$
 \lambda_+=\rho e^{i\theta_{\mathrm{pha}}}\bigl(\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\theta_{\mathrm{phb}}+i\sin\theta_{\mathrm{phb}}\bigr)
 =\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}}e^{i\theta_{\mathrm{phb}}}
@@ -385,7 +385,7 @@ Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=\rho^2e^{2i\theta_{\mathrm{pha}}},
 $$</p>
 <p>The polar parameters are therefore the polar coordinates of the product and the ratio, with the branch fixed by the principal diamond. This is the exact structural difference from the split-complex case: the modulus of the ratio is a positive real number and carries only the boost; here it is a nonzero complex number and carries the boost and one phase.</p>
 <h3 id="the-polar-parameters-from-the-eigenvalues">The Polar Parameters from the Eigenvalues</h3>
-<p>For a unit $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the boost are</p>
+<p>For an invertible element $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$, the modulus and the boost are</p>
 <p>$$
 \rho=\sqrt{\lvert\lambda_+\lambda_-\rvert}=\sqrt{\lvert Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\rvert},
 \qquad
@@ -398,7 +398,7 @@ $$</p>
 \theta_{\mathrm{phb}}=\tfrac12\bigl(\operatorname{Arg}\lambda_+-\operatorname{Arg}\lambda_-\bigr),
 $$</p>
 <p>so that $\theta_{\mathrm{pha}}+\theta_{\mathrm{phb}}=\operatorname{Arg}\lambda_+$ and $\theta_{\mathrm{pha}}-\theta_{\mathrm{phb}}=\operatorname{Arg}\lambda_-$. The principal diamond contains the pair: $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert=\max(\lvert\operatorname{Arg}\lambda_+\rvert,\lvert\operatorname{Arg}\lambda_-\rvert)\le\pi$. The formulas for $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$ use the individual arguments, not the argument of the product or of the ratio: the latter are defined only modulo $2\pi$ and their halves only modulo $\pi$, which is the lattice ambiguity.</p>
-<p><strong>Proposition (the dictionary).</strong> On the unit group, the map</p>
+<p><strong>Proposition (the dictionary).</strong> On the group of invertibles, the map</p>
 <p>$$
 \boxed{\;
 (\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})\longmapsto
@@ -632,7 +632,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The product and the ratio determine $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$ only modulo $\pi$; the individual arguments fix the representative in the principal diamond, and then the dictionary is a bijection. There is no continuous free direction once the individual arguments are used: the eigenprojections are fixed, so the four polar parameters are coordinates on the unit group, not a section of a larger word map.</p>
+<p>The product and the ratio determine $\theta_{\mathrm{pha}}$ and $\theta_{\mathrm{phb}}$ only modulo $\pi$; the individual arguments fix the representative in the principal diamond, and then the dictionary is a bijection. There is no continuous free direction once the individual arguments are used: the eigenprojections are fixed, so the four polar parameters are coordinates on the group of invertibles, not a section of a larger word map.</p>
 <h2 id="the-regimes">The Regimes</h2>
 <p>The spectral regimes of the eigenvalue article and the polar coordinates fit together as follows.</p>
 <div class="table-scroll"><table>
@@ -655,7 +655,7 @@ $$</p>
 <td>Zero divisor</td>
 <td>$Q_{\blacktriangledown}\neq0$, $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$</td>
 <td>$\lambda_+\neq\lambda_-$, one zero</td>
-<td>none: not a unit</td>
+<td>none: not an invertible element</td>
 </tr>
 <tr>
 <td>Scalar nonzero</td>
@@ -734,7 +734,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-fibre">The Fibre</h3>
-<p>For a unit $\breve Q$, the fibre of the exponential is</p>
+<p>For an invertible element $\breve Q$, the fibre of the exponential is</p>
 <p>$$
 \exp^{-1}(\breve Q)=\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^2.
 $$</p>

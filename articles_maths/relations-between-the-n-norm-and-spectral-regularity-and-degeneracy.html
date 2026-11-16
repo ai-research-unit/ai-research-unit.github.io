@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between the N Norm and Spectral Regularity and Degeneracy</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries many quadratic conditions on one element; this article compares two of them. The <strong>quaternionic norm</strong> $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-units, and its zero locus is the <strong>null cone</strong> $\mathcal{N}$. The <strong>square of the vector part</strong> $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the <strong>spectral-degenerate cone</strong> $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em> and <em>The Spectrum</em>; this article compares them.</p>
+<p>The biquaternion algebra carries many quadratic conditions on one element; this article compares two of them. The <strong>quaternionic norm</strong> $\langle\tilde Q\rangle_{\natural}=Q_t^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$, is multiplicative; it vanishes exactly on the non-invertibles, and its zero locus is the <strong>null cone</strong> $\mathcal{N}$. The <strong>square of the vector part</strong> $B^2$ carries no scalar term and is not multiplicative; it vanishes exactly when the two eigenvalues of $\tilde Q$ coincide, and its zero locus is the <strong>spectral-degenerate cone</strong> $\mathcal S$. The first condition decides invertibility, the second decides whether the spectrum is separated. The two are studied one at a time in <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em> and <em>The Spectrum</em>; this article compares them.</p>
 <p>The comparison is organised by the pair of predicates $(N\neq0,\ B^2\neq0)$. The pair cuts $\mathbb{B}$ into four <strong>sectors</strong>, and the same four sectors are the four degeneration patterns of the characteristic polynomial. Each sector is treated in its own article: <em>The N-Regular, Spectrally Regular Sector</em>, <em>The N-Regular, Spectrally Degenerate Sector</em>, <em>The N-Degenerate, Spectrally Regular Sector</em> and <em>The N-Degenerate, Spectrally Degenerate Sector</em>. The index $i$ in $\Sigma_{ij}$ is the norm and the index $j$ the spectrum; the four articles are ordered $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$, the units first and the null cone second.</p>
 <p><strong>Naming.</strong> $\mathcal N$ is the <strong>null cone of the quaternionic norm</strong>, qualified at first use and then the null cone. $\mathcal S$ is the <strong>spectral-degenerate cone</strong> and is never called a null cone, because $B^2$ is not a norm on $\mathbb{B}$. The norm $N$ is complex-valued: it is the determinant of the matrix model and an algebraic norm, not a positive norm. An element is <strong>norm-regular</strong> when $N\neq0$ and <strong>norm-degenerate</strong> when $N=0$; it is <strong>spectrally regular</strong> when $B^2\neq0$ and <strong>spectrally degenerate</strong> when $B^2=0$. The adjective is written in full wherever the two could collide.</p>
 <p><strong>Conventions.</strong> Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^2=-e_t$ and complex coefficients. The conjugation is the $\mathbb{C}$-linear quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$, an anti-involution of order two fixing the centre. The vector part is $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and</p>
@@ -203,7 +203,7 @@ $$</p>
 <p><em>Proof.</em> Two witnesses.</p>
 <ul>
 <li><strong>A zero divisor with distinct eigenvalues.</strong> Let $\tilde Q=e_t+i\vec e_x$. Then $N=1+i^2=0$, so $\tilde Q\in\mathcal N$, and $B^2=i^2=-1\neq0$, so $\tilde Q\notin\mathcal S$. Its eigenvalues are $1\pm i\cdot i$, that is $0$ and $2$; they are distinct, and the spectral decomposition exists, with the idempotents $\tilde Q/2$ and $e_t-\tilde Q/2$.</li>
-<li><strong>A unit with a repeated eigenvalue.</strong> Let $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $B^2=1+i^2=0$, so $\tilde Q\in\mathcal S$, and $N=1+1+i^2=1\neq0$, so $\tilde Q\notin\mathcal N$. Its only eigenvalue is $1$, its minimal polynomial is $(X-1)^2$, and it is a unit with no two-term spectral decomposition.</li>
+<li><strong>an invertible element with a repeated eigenvalue.</strong> Let $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $B^2=1+i^2=0$, so $\tilde Q\in\mathcal S$, and $N=1+1+i^2=1\neq0$, so $\tilde Q\notin\mathcal N$. Its only eigenvalue is $1$, its minimal polynomial is $(X-1)^2$, and it is invertible with no two-term spectral decomposition.</li>
 </ul>
 <p>The first is in $\Sigma_{01}$, the second in $\Sigma_{10}$.</p>
 <p><strong>Theorem (the intersection is the nilpotent cone).</strong></p>
@@ -274,7 +274,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the two mixed sectors).</strong> $\Sigma_{10}$ and $\Sigma_{01}$ are the independence witnesses: $\Sigma_{10}$ is a unit with no eigenbasis, $\Sigma_{01}$ is a zero divisor with a full one. Neither cone contains the other, and these are the sectors that show it.</p>
+<p><strong>Remark (the two mixed sectors).</strong> $\Sigma_{10}$ and $\Sigma_{01}$ are the independence witnesses: $\Sigma_{10}$ is invertible with no eigenbasis, $\Sigma_{01}$ is a zero divisor with a full one. Neither cone contains the other, and these are the sectors that show it.</p>
 <p><strong>Theorem (the norm does not separate the strata).</strong> Let $Q_t\neq0$ and let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. The scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^2$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^2$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^2$. At the other degenerate sector the same happens: the origin and a non-zero nilpotent share the norm $0$, the trace $0$ and the characteristic polynomial $X^2$, and differ in the minimal polynomial, $X$ against $X^2$.</p>
 <p><em>Proof.</em> The element $\vec\Upsilon$ is pure and square-zero, so $N(Q_te_t+\vec\Upsilon)=Q_t^2$ and the trace is $2Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$. The nilpotent case is the same computation at $Q_t=0$.</p>
 <p><strong>Corollary (the norm does not see the strata).</strong> At fixed $Q_t$ the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm, and the origin and every non-zero nilpotent have norm $0$. The norm therefore cannot distinguish the scalar line from the Jordan part, nor the origin from the non-zero nilpotents.</p>
@@ -292,7 +292,7 @@ $$</p>
 <tr>
 <td>norm</td>
 <td>$N$</td>
-<td>$2$: the unit group $\Sigma_{11}\cup\Sigma_{10}$ and the null cone $\Sigma_{01}\cup\Sigma_{00}$</td>
+<td>$2$: the group of invertibles $\Sigma_{11}\cup\Sigma_{10}$ and the null cone $\Sigma_{01}\cup\Sigma_{00}$</td>
 </tr>
 <tr>
 <td>characteristic polynomial</td>
@@ -307,7 +307,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The count is of degeneration types, not of values: the characteristic polynomial and the minimal polynomial take infinitely many values, and the table counts the patterns into which those values fall.</p>
-<p><em>Proof.</em> The norm separates the units from the non-units. The characteristic polynomial determines the sector by the root pattern of §<em>The Two Conditions in One Quadratic</em>, and each of the four patterns occurs. The minimal polynomial is $p_{\tilde Q}$ on $\Sigma_{11}$ and $\Sigma_{01}$; it is $X-Q_t$ on $\Sigma_{10}^{\mathrm{s}}$, $(X-Q_t)^2$ on $\Sigma_{10}^{\mathrm{J}}$, $X$ at the origin and $X^2$ on the non-zero nilpotents.</p>
+<p><em>Proof.</em> The norm separates the invertibles from the non-invertibles. The characteristic polynomial determines the sector by the root pattern of §<em>The Two Conditions in One Quadratic</em>, and each of the four patterns occurs. The minimal polynomial is $p_{\tilde Q}$ on $\Sigma_{11}$ and $\Sigma_{01}$; it is $X-Q_t$ on $\Sigma_{10}^{\mathrm{s}}$, $(X-Q_t)^2$ on $\Sigma_{10}^{\mathrm{J}}$, $X$ at the origin and $X^2$ on the non-zero nilpotents.</p>
 <p><strong>Corollary (the sector is the type of the characteristic polynomial).</strong> The partition of $\mathbb{B}$ by the root pattern of $p_{\tilde Q}$ is the partition into the four sectors; the full polynomial refines it by the values of $Q_t$ and $N$.</p>
 <p><strong>Corollary (completeness off the cone).</strong> Off $\mathcal S$ the characteristic polynomial is a complete invariant of the similarity class. On $\mathcal S$ exactly two similarity classes share each characteristic polynomial: the scalar class and the Jordan class, or the origin and the nilpotent class at $Q_t=0$. The minimal polynomial separates them.</p>
 <p><em>Proof.</em> This is <em>The Spectrum</em>, §<em>The Similarity Classification</em>. Off $\mathcal S$ the eigenvalues are distinct, so the element is diagonalisable with that spectrum. On $\mathcal S$ the scalar class is central and the Jordan class has minimal polynomial $(X-Q_t)^2$.</p>
@@ -369,10 +369,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Corollary (the two sharpest witnesses).</strong> $\Sigma_{10}^{\mathrm{J}}$ is a unit with a polar decomposition and no eigenbasis; $\Sigma_{01}$ is a zero divisor with an eigenbasis and no polar decomposition. The two failures are independent, and they occur in opposite mixed sectors. The comparison factor by factor is <em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>.</p>
+<p><strong>Corollary (the two sharpest witnesses).</strong> $\Sigma_{10}^{\mathrm{J}}$ is invertible with a polar decomposition and no eigenbasis; $\Sigma_{01}$ is a zero divisor with an eigenbasis and no polar decomposition. The two failures are independent, and they occur in opposite mixed sectors. The comparison factor by factor is <em>Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion</em>.</p>
 <h2 id="the-two-operator-loci">The Two Operator Loci</h2>
 <p><strong>Theorem (the rank of left multiplication).</strong> The left multiplication $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ has complex rank $4$ on $\Sigma_{11}\cup\Sigma_{10}$, rank $2$ on $\Sigma_{01}$ and on $\Sigma_{00}\setminus\{0\}$, and rank $0$ at the origin.</p>
-<p><em>Proof.</em> If $N\neq0$ then $\tilde Q$ is a unit and $L_{\tilde Q}$ is invertible. If $N=0$ and $\tilde Q\neq0$, the rank is $2$ by <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Annihilators</em>. At the origin the map is zero.</p>
+<p><em>Proof.</em> If $N\neq0$ then $\tilde Q$ is invertible and $L_{\tilde Q}$ is invertible. If $N=0$ and $\tilde Q\neq0$, the rank is $2$ by <em>The Four General Products and Their Relations over the Biquaternion Algebra</em>, §<em>The Annihilators</em>. At the origin the map is zero.</p>
 <p><strong>Definition (the two-sided operator).</strong> The <strong>two-sided operator</strong> of $\tilde Q$ is the $\mathbb{C}$-linear operator</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},
@@ -383,7 +383,7 @@ $$</p>
 <p>$$
 \mathrm{Sd}_{\tilde Q}(\tilde Q^{\natural})=\tilde Q\tilde Q^{\natural}\tilde Q^{*}=N\tilde Q^{*}=0.
 $$</p>
-<p>At the origin the operator is zero. Off the origin on the null cone, $\tilde Q$ has rank one in the matrix model; writing $\mathsf M_2(\tilde Q)=uv^{*}$ for column vectors $u,v$, with $v^{*}u=0$ because $\tilde Q^2=0$, gives $\mathrm{Sd}_{\tilde Q}(\tilde X)=(v^{*}\tilde Xv)\,uu^{*}$, so the image is the line $\mathbb{C}\tilde Q\tilde Q^{*}$ and the rank is one. Conversely, if $N\neq0$ then $\tilde Q$ is a unit and $\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}$.</p>
+<p>At the origin the operator is zero. Off the origin on the null cone, $\tilde Q$ has rank one in the matrix model; writing $\mathsf M_2(\tilde Q)=uv^{*}$ for column vectors $u,v$, with $v^{*}u=0$ because $\tilde Q^2=0$, gives $\mathrm{Sd}_{\tilde Q}(\tilde X)=(v^{*}\tilde Xv)\,uu^{*}$, so the image is the line $\mathbb{C}\tilde Q\tilde Q^{*}$ and the rank is one. Conversely, if $N\neq0$ then $\tilde Q$ is invertible and $\mathrm{Sd}_{\tilde Q}^{-1}=\mathrm{Sd}_{\tilde Q^{-1}}$.</p>
 <p><strong>Definition (the inner derivation).</strong> The <strong>inner derivation</strong> of $\tilde Q$ is</p>
 <p>$$
 \mathrm{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q.
@@ -509,7 +509,7 @@ $$</p>
 </tr>
 <tr>
 <td>$L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$</td>
-<td>left multiplication; rank $4$ on the units, $2$ on the non-zero null elements, $0$ at the origin</td>
+<td>left multiplication; rank $4$ on the invertibles, $2$ on the non-zero null elements, $0$ at the origin</td>
 </tr>
 <tr>
 <td>$\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$</td>
@@ -523,7 +523,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the multiplicative norm, the null cone, its pure and non-pure strata, the unit group and the zero divisors.</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the multiplicative norm, the null cone, its pure and non-pure strata, the group of invertibles and the zero divisors.</li>
 <li><a href="the-spectrum.html">The Spectrum</a>, for the spectral criterion, the characteristic polynomial, the spectral-degenerate cone, the vertex and its complement, the spectral decomposition and the eigenbasis.</li>
 <li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for $\Sigma_{11}$, the complement of the union of the two cones.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for $\Sigma_{10}$, the scalar line and the Jordan part.</li>

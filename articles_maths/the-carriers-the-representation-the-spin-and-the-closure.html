@@ -117,11 +117,11 @@ $$</p>
 (Q_te_t+\vec Q)^{*}=\bar Q_te_t-\bar{\vec Q},\qquad (XY)^{*}=Y^{*}X^{*}.
 $$</p>
 <p>An element is <strong>Hermitian</strong> when $X^{*}=X$ and <strong>anti-Hermitian</strong> when $X^{*}=-X$.</p>
-<p><strong>The norm and the units.</strong> The <strong>norm</strong> is</p>
+<p><strong>The norm and the invertibles.</strong> The <strong>norm</strong> is</p>
 <p>$$
 N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2,
 $$</p>
-<p>multiplicative, and vanishing exactly on the elements without an inverse. An element is <strong>invertible</strong> when $N(\tilde Q)\ne0$. An element is a <strong>unit</strong> when $XX^{*}=e_t$; the units form the group $G=\mathrm U(2)$, of real dimension $4$. Every unit is invertible, since $X^{-1}=X^{*}$; the converse fails, and $2e_t$ is invertible without being a unit.</p>
+<p>multiplicative, and vanishing exactly on the elements without an inverse. An element is <strong>invertible</strong> when $N(\tilde Q)\ne0$. An element is of norm one when $XX^{*}=e_t$; the invertibles form the group $G=\mathrm U(2)$, of real dimension $4$. Every unit is invertible, since $X^{-1}=X^{*}$; the converse fails, and $2e_t$ is invertible without being an invertible element.</p>
 <p><strong>The rotor.</strong> A <strong>unit real axis</strong> is a real pure element $\vec u_{\mathrm r}$ with $(\vec u_{\mathrm r},\vec u_{\mathrm r})=1$ for the positive definite form on $\mathfrak{k}$. For a real angle $\theta_{\mathrm{axr}}$ the <strong>rotor</strong> is</p>
 <p>$$
 \tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
@@ -131,7 +131,7 @@ $$</p>
 <p>$$
 L_X(Y)=XY,\qquad R_X(Y)=YX,\qquad \operatorname{ad}_X(Y)=XY-YX,\qquad \operatorname{Ad}_u(Y)=uYu^{*},
 $$</p>
-<p>the last one for $uu^{*}=e_t$. The first two are left and right multiplication, the third is the commutator, the fourth is the conjugation by a unit.</p>
+<p>the last one for $uu^{*}=e_t$. The first two are left and right multiplication, the third is the commutator, the fourth is the conjugation by an invertible element.</p>
 <h2 id="the-rotation-action">The Rotation Action</h2>
 <p><strong>The rotation group.</strong> A <strong>rotation</strong> of the pure part is a real-linear map $R:\mathfrak{k}\to\mathfrak{k}$ that preserves the form and has determinant $1$. The rotations form the group $SO(\mathfrak{k})$, the usual group of spatial rotations.</p>
 <p><strong>Definition (real representation).</strong> Let $H$ be a group and $V$ a real vector space. A <strong>real representation</strong> of $H$ on $V$ is a map $\varrho:H\to GL_\mathbb{R}(V)$ with</p>
@@ -230,7 +230,7 @@ $$</p>
 <p>$$
 \Phi_Q=N(Q)\operatorname{Ad}_Q,\qquad \Theta_Q=\operatorname{Ad}_Q\iff Q^{*}Q\ \text{is central},
 $$</p>
-<p>and on the group of units, $Q^{*}=Q^{-1}$, both reduce to conjugation by the inverse. The second equivalence is the one that matters here: $\Theta_Q$ is conjugation by the inverse exactly on $G$, and it is not multiplicative off it.</p>
+<p>and on the group of invertibles, $Q^{*}=Q^{-1}$, both reduce to conjugation by the inverse. The second equivalence is the one that matters here: $\Theta_Q$ is conjugation by the inverse exactly on $G$, and it is not multiplicative off it.</p>
 <p><strong>The rotor and the boost.</strong> The two types of element behave differently, and the difference is read off $N$ and the two conjugations.</p>
 <p>For a rotor $\tilde u_{\mathrm r}$, the coefficients are real, so $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$ and $N(\tilde u_{\mathrm r})=1$. Both operators are the same operator, and each is conjugation by the inverse.</p>
 <p>For a boost $\tilde U_{\mathrm b}=\cosh\tfrac\phi2\,e_t+i\sinh\tfrac\phi2\,\vec n$ with real unit $\vec n$, the element is Hermitian, $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$, and it is not the inverse of itself. But its norm is</p>
@@ -309,7 +309,7 @@ $$</p>
 <h3 id="the-fixed-line">The Fixed Line</h3>
 <p>This is the carrier of $s=0$.</p>
 <p><strong>The subspace.</strong> The real line $\mathbb{R}e_t$, of real dimension $1$.</p>
-<p><strong>The action.</strong> The conjugation acts trivially, because $ue_tu^{*}=e_t$ for every unit $u$. The line is fixed pointwise, and it is the carrier of the trivial action.</p>
+<p><strong>The action.</strong> The conjugation acts trivially, because $ue_tu^{*}=e_t$ for every invertible $u$. The line is fixed pointwise, and it is the carrier of the trivial action.</p>
 <p><strong>The operator.</strong> $\varrho(A)=0$.</p>
 <p><strong>The spectrum.</strong> $\{0\}$, with multiplicity $1$.</p>
 <p><strong>Dimension, spin, full turn.</strong> $\dim_\mathbb{R}=1$, $s=0$, and $2s+1=1$. The full turn has operator $\varrho(-e_t)=\mathrm{id}$, so the sign is $+1$.</p>
@@ -367,12 +367,12 @@ $$</p>
 \beta(e_t,Y)=Q_t(Y),\qquad \beta(ie_t,Y)=i\,Q_t(Y).
 $$</p>
 <p><em>Proof.</em> The coordinate display is the polar form of the sum of four squares, and the two evaluations are that display at $X=e_t$ and at $X=ie_t$, whose coordinates are $(1,0,0,0)$ and $(i,0,0,0)$.</p>
-<p><strong>Lemma (the form is invariant).</strong> For a unit $u$ and elements $X,Y$, $\beta(uXu^{*},uYu^{*})=\beta(X,Y)$.</p>
+<p><strong>Lemma (the form is invariant).</strong> For an invertible element $u$ and elements $X,Y$, $\beta(uXu^{*},uYu^{*})=\beta(X,Y)$.</p>
 <p><em>Proof.</em> The norm is multiplicative and $N(uu^{*})=N(e_t)=1$, so $N(uZu^{*})=N(Z)$ for every $Z$. Apply this to $Z=X+Y$, to $Z=X$ and to $Z=Y$ in the definition of $\beta$.</p>
 <p><strong>Theorem (the multiplication carriers).</strong> Up to isomorphism there is one simple left $\mathbb{B}$-module, of complex dimension $2$: every minimal left ideal is a copy of it, and every left ideal is a sum of copies.</p>
 <p><em>Proof.</em> A minimal left ideal is $S=\mathbb{B}e$ for a primitive idempotent $e$, and two such ideals are isomorphic as left modules whenever their idempotents are conjugate, which for a full matrix algebra is always. Let $W$ be a simple left module. It is a quotient of the regular module $\mathbb{B}$, hence $\mathbb{B}/M$ for a maximal left ideal $M$, and every such quotient is a minimal left ideal up to a sum of minimal ones. All the minimal ones are copies of one module, so the simple module is unique up to isomorphism. Its complex dimension is $2$, since $\mathbb{B}$ is the algebra of endomorphisms of a two-dimensional complex space and the minimal left ideals are its columns.</p>
 <p><strong>Theorem (the conjugation carriers).</strong> Up to isomorphism there are exactly two: the centre, the trivial module of complex dimension $1$, and the traceless part, the adjoint module of complex dimension $3$.</p>
-<p><em>Proof.</em> Let $W\subseteq\mathbb{B}$ be nonzero and invariant under $\operatorname{Ad}_u$ for every unit $u$. Since $\beta(e_t,Y)=Q_t(Y)$, the orthogonal complement of the centre is the traceless part,</p>
+<p><em>Proof.</em> Let $W\subseteq\mathbb{B}$ be nonzero and invariant under $\operatorname{Ad}_u$ for every invertible $u$. Since $\beta(e_t,Y)=Q_t(Y)$, the orthogonal complement of the centre is the traceless part,</p>
 <p>$$
 \mathbb{B}=\mathbb{B}_C\perp\mathbb{B}_V,\qquad \mathbb{B}_V=\{X:Q_t(X)=0\},
 $$</p>
@@ -382,7 +382,7 @@ W=(W\cap\mathbb{B}_C)\oplus(W\cap\mathbb{B}_V).
 $$</p>
 <p>An irreducible $W$ is therefore one of these two summands. The centre is a complex line, hence irreducible. The traceless part is irreducible by the criterion: its weights at the axis are $\{+1,0,-1\}$, simple and spaced by one. Two summands, both irreducible, and no third.</p>
 <p><strong>Corollary (three and not four).</strong> Up to isomorphism the carriers of $\mathbb{B}$ are three: the trivial module of complex dimension $1$, the module of a minimal left ideal of complex dimension $2$, and the adjoint module of complex dimension $3$. One comes from multiplication and two from conjugation, and there is no fourth, because a carrier is irreducible for one of the two actions and both actions are now classified.</p>
-<p><strong>Remark (what is counted).</strong> The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of units by automorphisms. No third action is used anywhere in this group of articles. Left and right multiplication give the same types, because the algebra is a full matrix algebra, and the derived form of the conjugation is the bracket.</p>
+<p><strong>Remark (what is counted).</strong> The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of invertibles by automorphisms. No third action is used anywhere in this group of articles. Left and right multiplication give the same types, because the algebra is a full matrix algebra, and the derived form of the conjugation is the bracket.</p>
 <p><strong>Remark (copies are not types).</strong> $S_+$ and $S_-$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, not a count of types, and it is the reason the weight string of the whole algebra repeats.</p>
 <h2 id="the-spin-table">The Spin Table</h2>
 <div class="table-scroll"><table>
@@ -460,11 +460,11 @@ $$</p>
 <p><strong>The axis.</strong> The axis is a parameter. The spectrum does not depend on it, by the lemma of <em>The Rotation Action</em>, and the spin therefore does not depend on it. The answer is a property of the carrier and not of a direction.</p>
 <p><strong>The angle.</strong> The spin is read from the generator at the identity, so no angle enters it. The angle enters once, at $\theta_{\mathrm{axr}}=2\pi$, in the theorem of the full turn. The halved angle of the rotor is not used to define the weights; it is the reason the exponent in the full turn is $2\pi\lambda$.</p>
 <p><strong>The complex structure.</strong> $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_+$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.</p>
-<p><strong>The norm.</strong> The norm is used three times. It identifies the rotor as a unit, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of <em>Three and No More</em>, where it does the work that the trace form does in a treatment by matrices. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.</p>
+<p><strong>The norm.</strong> The norm is used three times. It identifies the rotor as an invertible element, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of <em>Three and No More</em>, where it does the work that the trace form does in a treatment by matrices. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.</p>
 <p><strong>No array.</strong> No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.</p>
 <p><strong>What is read from an element.</strong> Only the scalar part and the vector part are used, read off the coefficients. No pairing of the algebra with itself is needed for the spectra, and no invariant of a linear operator is taken; the spectra are read from the action of the axis and from eigenvectors that are written out. The one pairing used in this article is the polar form $\beta$ of the norm, and it is used once, in <em>Three and No More</em>.</p>
 <p><strong>Regularity.</strong> No decomposition into regular and degenerate parts is assumed. The idempotent is degenerate by construction, since $\tilde\Pi_+\ne e_t$, and the plane is built from it. The construction therefore does not assume that the algebra is a division algebra: $\mathbb{B}$ is not one, and the existence of a nontrivial idempotent is exactly the failure.</p>
-<p><strong>The classification.</strong> The statement that there are three carriers and no more is proved in <em>Three and No More</em>, from the polar form of the norm and from the compactness of the group of units. It is not quoted, and the proof writes no array.</p>
+<p><strong>The classification.</strong> The statement that there are three carriers and no more is proved in <em>Three and No More</em>, from the polar form of the norm and from the compactness of the group of invertibles. It is not quoted, and the proof writes no array.</p>
 <h2 id="the-closure-of-a-carrier">The Closure of a Carrier</h2>
 <p>A carrier carries a spin $s$. The closure places it in a subspace of $\mathbb{B}$. A carrier is a module, the question asks for subspaces, and the two are not the same object: the passage from one to the other is a step of its own. The step is a <strong>closure</strong>: to a carrier, attach a real subspace of $\mathbb{B}$ in which it sits and on which the action is defined.</p>
 <p><strong>Definition (closure).</strong> Let $W$ be a carrier with representation space $V_W$. A <strong>closure</strong> of $W$ is a real subspace $\overline{W}\subseteq\mathbb{B}$ that contains $V_W$, is invariant under the action of $W$, and is the smallest subspace of $\mathbb{B}$ with a further property, named by the rule of the case.</p>
@@ -515,7 +515,7 @@ $$</p>
 </table></div>
 <h3 id="the-centre">The Centre</h3>
 <p><strong>The space.</strong> $\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t)$, of real dimension $2$.</p>
-<p><strong>Why it is the closure of the line.</strong> The line is fixed pointwise by the conjugation, and the fixed space of the conjugation is exactly the centre: $uXu^{*}=X$ for every unit $u$ holds only for the central elements. The line is real and the property named for it is being complex, so the closure takes the smallest complex subspace containing it, which is $\mathbb{C}e_t$: the line together with $ie_t$. That the result is the whole fixed space, and not merely a complex line through $e_t$, is a theorem about the conjugation and not a part of the rule.</p>
+<p><strong>Why it is the closure of the line.</strong> The line is fixed pointwise by the conjugation, and the fixed space of the conjugation is exactly the centre: $uXu^{*}=X$ for every invertible $u$ holds only for the central elements. The line is real and the property named for it is being complex, so the closure takes the smallest complex subspace containing it, which is $\mathbb{C}e_t$: the line together with $ie_t$. That the result is the whole fixed space, and not merely a complex line through $e_t$, is a theorem about the conjugation and not a part of the rule.</p>
 <p><strong>The carrier inside.</strong> Every element of the centre is fixed, so the space carries the trivial carrier with multiplicity two: the lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ are two copies of it, and they are the real and imaginary parts of one complex line. The spin is $s=0$.</p>
 <h3 id="the-bispinor-spaces">The Bispinor Spaces</h3>
 <p><strong>The first step, and why it is forced.</strong> No real subspace of $\mathbb{B}$ of dimension $2$ is invariant under the whole rotation group. The plane $\Sigma$ is invariant under the rotations about its axis and under no others, and the smallest real subspace containing it and invariant under all of them has dimension $4$, which is $S_+=\mathbb{B}\tilde\Pi_+$.</p>
@@ -564,7 +564,7 @@ $$</p>
 <p><strong>The three steps.</strong> The article proceeds in three steps, and the order is the whole point. In Parts A and B the three spins $0,\tfrac12,1$ are derived from the rotor group: $s=\tfrac12$ from the Casimir of the single-rotor generators, and $s\in\{0,1\}$ from the pair acting on two sides by the addition rule. In <em>The Carriers</em> each spin is then read as a subspace of $\mathbb{B}$ of real dimension $2s+1$, the dimension and the action forcing the assignment. In <em>The Closure of a Carrier</em> each carrier is placed in a subspace of $\mathbb{B}$ by a rule named for that carrier. <em>Three and No More</em> proves that the list of three spins is complete, and <em>The Quadratic Element</em> reads the same three values $s(s+1)$ from one central element of the algebra.</p>
 <p><strong>What is established.</strong> Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases and covering every carrier, because the list is complete and the completeness is proved; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; the quadratic element, whose values on the three carriers are $s(s+1)$; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.</p>
 <p><strong>What it means.</strong> The three numbers $1,2,3$ are the real dimensions of three carriers, and the label $s$ is the largest weight of each, so the identity that relates them relates two counts of the same nature. The closure then places each carrier in the algebra, at the cost of one complex structure, one transverse direction, one second idempotent, and one fixed line.</p>
-<p><strong>Limitations.</strong> The article studies the conjugation by the units with $uu^{*}=e_t$. It does not study the conjugation by the general invertible elements, which does not preserve the pure part. It does not study products of carriers, or the bracket as a structure. And it states the closure of the three carriers only.</p>
+<p><strong>Limitations.</strong> The article studies the conjugation by the invertibles with $uu^{*}=e_t$. It does not study the conjugation by the general invertible elements, which does not preserve the pure part. It does not study products of carriers, or the bracket as a structure. And it states the closure of the three carriers only.</p>
 <p><strong>Two questions left open.</strong> The first is whether the identity $2s+1=\dim_\mathbb{R}$ can be proved without the classification, by an argument that does not run through the list; the quadratic element is a second reading of the three numbers and not such a proof. The second is whether the bispinor family has a canonical member, that is, whether the axis can be fixed by a condition internal to the algebra; on the three carriers the axis is a free parameter, and nothing in the algebra singles one out.</p>
 <h2 id="appendix">Appendix</h2>
 <h3 id="a1-conventions">A.1 Conventions</h3>
@@ -610,7 +610,7 @@ $$</p>
 </tr>
 <tr>
 <td>$G=\mathrm U(2)$</td>
-<td>the units, $uu^{*}=e_t$</td>
+<td>the invertibles, $uu^{*}=e_t$</td>
 </tr>
 <tr>
 <td>$Sp(1)$</td>
@@ -667,7 +667,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="a2-the-operator-identities">A.2 The Operator Identities</h3>
-<p><strong>Proposition (the elementary identities).</strong> For elements $X,Y$ and a unit $u$:</p>
+<p><strong>Proposition (the elementary identities).</strong> For elements $X,Y$ and an invertible element $u$:</p>
 <ol>
 <li>$L_XL_Y=L_{XY}$ and $R_XR_Y=R_{YX}$.</li>
 <li>$\operatorname{ad}_X=L_X-R_X$.</li>
@@ -722,14 +722,14 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-spin-zero-centre-subspace.html">Introduction to the Spin-Zero Centre Subspace</a>, for the line and the centre taken on their own, with the proof that the fixed space is exactly the centre and that no other complex line is invariant</li>
-<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors</a>, for the plane, the two spinor spaces and the infinite family of bispinor spaces</li>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors Spaces</a>, for the plane, the two spinor spaces and the infinite family of bispinor spaces</li>
 <li><a href="the-spin-one-anti-hermitian-subspace.html">Introduction to the Spin-One Anti-Hermitian Subspace</a>, for the vector part, the cross product operator and the split $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$</li>
 <li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the idempotents, the minimality and the splitting of the algebra</li>
 <li><a href="the-peirce-basis-of-the-biquaternion-algebra.html">The Peirce Basis of the Biquaternion Algebra</a>, for the basis, the gauge and the system of matrix units</li>
 <li><a href="the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the four corners and the diagonal part</li>
 <li><a href="the-regular-module.html">The Regular Module in the Biquaternion Algebra</a>, for the algebra read as a module over itself</li>
 <li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the centre, the pure part and the two Hermitian halves</li>
-<li><a href="representations-of-groups.html">Representations of Groups</a>, for complete reducibility by averaging, which is what compactness of the group of units supplies</li>
+<li><a href="representations-of-groups.html">Representations of Groups</a>, for complete reducibility by averaging, which is what compactness of the group of invertibles supplies</li>
 <li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the rotor, the two-to-one cover and the comparison of the two two-sided actions</li>
 <li><a href="operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the glyphs $L_X$, $R_X$, $\operatorname{Ad}_u$ and $\operatorname{ad}_X$</li>
 <li><a href="matrix-representations-conventions.html">Matrix Representations Conventions</a>, for the rule that no array is written in a symbol, and the basis-free form of an operator</li>

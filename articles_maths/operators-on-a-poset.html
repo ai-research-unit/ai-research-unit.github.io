@@ -76,7 +76,7 @@ the order forward; the <strong>antitone</strong> maps, which reverse it; and the
 the order forward and have a best possible two-sided inverse in the sense of a <strong>Galois connection</strong>.
 The monotone maps form a monoid under composition, and the article examines that monoid: it contains
 the identity and every constant map, its pointwise order makes it a lattice when the poset is a
-lattice, and its group of units is the automorphism group treated in <em>The Order Automorphism Group</em>,
+lattice, and its group of invertibles is the automorphism group treated in <em>The Order Automorphism Group</em>,
 in this group. The antitone maps are organised by the parity of the composite, so that the monotone
 and antitone maps together form a monoid in which the monotone maps have index at most two. The
 residuated maps are the left adjoints, and a Galois connection is exactly a residuated map together
@@ -87,13 +87,13 @@ monotone maps and the Galois connection, whose definition and elementary propert
 there and used here — and <em>Sets, Functions and Relations</em> — sets, functions, relations and their
 direct image. The monotone maps of a lattice are the subject of <em>Operators on a Lattice</em>, where the
 preservation of the two operations is the point; the closure and interior operators are the subject of
-<em>Closure Operators and the Consequence Operator</em>; the group of units of the monoid of monotone maps is
+<em>Closure Operators and the Consequence Operator</em>; the group of invertibles of the monoid of monotone maps is
 the subject of <em>The Order Automorphism Group</em>; the converse of a relation, which is the residual of the
 direct image in the power-set case, is the subject of <em>The Converse Relation as an Operator</em>. All four
 articles are in this group, and this article supplies the monoid in which they sit.</p>
 <p>Three boundaries are observed. No <strong>topology</strong> is used: the order and the composition of maps are the
 only tools, and the continuity of a map of a later part is not meant. The theory of <strong>groups</strong> is
-<em>Groups</em>, in this Part, and only the group of units of a monoid is used. The adjoint of an operator in
+<em>Groups</em>, in this Part, and only the group of invertibles of a monoid is used. The adjoint of an operator in
 the involutive sense, and the reading of the converse as an adjoint, belong to the <code>* Operator Theory</code>
 group of this category, and are named only; the Galois connection here is the plain order-theoretic
 adjunction of <em>Order Theory and Lattices</em> and carries no involution. Nothing linear and no <strong>form</strong> is
@@ -112,7 +112,7 @@ functions is associative and $\mathrm{id}_P$ is monotone, so it is a monoid; and
 a map $P \to P$.</p>
 <p><strong>Proposition (constants and identity).</strong> For every $k \in P$ the constant map $\kappa_k : x \mapsto
 k$ is monotone, so $\operatorname{End}(P)$ contains all $\lvert P \rvert$ constants; every constant is
-idempotent, and $\kappa_k$ is a unit of the monoid only when $P$ has one element. The identity is
+idempotent, and $\kappa_k$ is invertible in the monoid only when $P$ has one element. The identity is
 monotone, and it is the only monotone map that is also a two-sided identity for composition.</p>
 <p><strong>Proof.</strong> A constant map is monotone because the conclusion $k \leq k$ holds for all $x \leq y$. It
 is idempotent because $\kappa_k \circ \kappa_k = \kappa_k$. A two-sided inverse of $\kappa_k$ would be
@@ -142,7 +142,7 @@ the pointwise order when $P$ is an antichain, and are comparable when $P$ is a c
 <p><strong>Proof.</strong> Two constants $\kappa_k, \kappa_l$ satisfy $\kappa_k \leq \kappa_l$ pointwise exactly when
 $k \leq l$; so they are comparable exactly when $k$ and $l$ are, which for a chain is always and for an
 antichain only when $k = l$.</p>
-<h3 id="idempotents-retractions-and-the-units">Idempotents, Retractions and the Units</h3>
+<h3 id="idempotents-retractions-and-the-invertibles">Idempotents, Retractions and the Invertibles</h3>
 <p><strong>Definition.</strong> A map $e \in \operatorname{End}(P)$ is <strong>idempotent</strong> if $e \circ e = e$; its <strong>image</strong>
 $e(P)$ is then the set of its fixed points, and $e$ is a <strong>retraction</strong> of $P$ onto $e(P)$.</p>
 <p><strong>Proposition.</strong> Let $e \in \operatorname{End}(P)$ be idempotent. The image $e(P)$ is a subposet of
@@ -154,11 +154,11 @@ Operators and the Consequence Operator</em>, in this group.</p>
 $e(e(x)) = e(x)$ by idempotence; so $e$ fixes its image. If $e$ preserves $\wedge$ and $\vee$ then
 $e(x) \vee e(y) = e(x \vee y) \in e(P)$ and similarly for the meet, so the image is closed under the
 operations.</p>
-<p><strong>Theorem.</strong> The group of units of $\operatorname{End}(P)$ is the order automorphism group
+<p><strong>Theorem.</strong> The group of invertibles of $\operatorname{End}(P)$ is the order automorphism group
 $\operatorname{Aut}(P)$, so a monotone map is invertible in the monoid exactly when it is an order
 automorphism.</p>
 <p><strong>Proof.</strong> A two-sided inverse of a map is its inverse function, and $f^{-1}$ is monotone exactly when
-$f$ is an order isomorphism; so the units are the order automorphisms. The group is treated in <em>The
+$f$ is an order isomorphism; so the invertibles are the order automorphisms. The group is treated in <em>The
 Order Automorphism Group</em>, in this group.</p>
 <h2 id="antitone-maps">Antitone Maps</h2>
 <h3 id="definition-and-the-parity-monoid">Definition and the Parity Monoid</h3>

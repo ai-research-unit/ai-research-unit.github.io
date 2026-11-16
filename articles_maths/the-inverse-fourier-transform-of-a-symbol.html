@@ -79,12 +79,12 @@ $$</p>
 <p>$$
 \mathcal{F}^{-1}[v](x)=(2\pi)^{-n}\int_{\mathbb{R}^n}e^{i\zeta\cdot x}\,v(\zeta)\,d\zeta .
 $$</p>
-<p><strong>The three regimes.</strong> The reciprocal $\sigma^{-1}$ is defined at a frequency exactly when $\sigma(\zeta)$ is a unit, and there are three cases. If $\sigma$ is a unit everywhere and $\lVert L_{\sigma(\zeta)^{-1}}\rVert$ is bounded on $\mathbb{R}^n$, the reciprocal is a bounded multiplier and the solution obeys an $L^2$ bound with no constant in it beyond the sup of the multiplier. If $\sigma$ is a unit everywhere but the reciprocal grows polynomially, the multiplier is tempered and the solution exists in the space of tempered distributions, with a loss of smoothness read from the growth. If the symbol is not a unit somewhere, the reciprocal is defined off the zero set, is unbounded near it, and the product $\sigma^{-1}\mathcal{F}[f]$ is a division problem; that is the case this article is about, and its three themes — poles, growth, counting — live there.</p>
+<p><strong>The three regimes.</strong> The reciprocal $\sigma^{-1}$ is defined at a frequency exactly when $\sigma(\zeta)$ is invertible, and there are three cases. If $\sigma$ is invertible everywhere and $\lVert L_{\sigma(\zeta)^{-1}}\rVert$ is bounded on $\mathbb{R}^n$, the reciprocal is a bounded multiplier and the solution obeys an $L^2$ bound with no constant in it beyond the sup of the multiplier. If $\sigma$ is invertible everywhere but the reciprocal grows polynomially, the multiplier is tempered and the solution exists in the space of tempered distributions, with a loss of smoothness read from the growth. If the symbol is not invertible somewhere, the reciprocal is defined off the zero set, is unbounded near it, and the product $\sigma^{-1}\mathcal{F}[f]$ is a division problem; that is the case this article is about, and its three themes — poles, growth, counting — live there.</p>
 <p><strong>The status of the five results.</strong> The adjugate description of the reciprocal, and with it the order of the pole at a point of the zero set, is proved here from scratch; it is the article's own contribution and it is complete. The Plancherel identity is proved here for $A_{\mathbb{C}}$-valued functions by reduction to the scalar identity of <em>Real and Complex Analysis</em> of Rudin, which is quoted with its constant. The Paley–Wiener correspondence between the support of a function and the exponential type of its transform is proved in the direction that needs nothing but the integral, and in the converse direction under the translate estimate that belongs to the theorem itself; that estimate is quoted, and the reduction from the scalar case to the $A_{\mathbb{C}}$-valued case is proved here. The growth rate that a pole forces on the kernel is proved in one frequency variable; in $n\ge2$ it is labelled <em>programme</em>, because the zero set is then a hypersurface and there is no isolated pole to take a residue at. The stationary phase asymptotics are quoted from Hörmander with their hypotheses and applied in one model case; the degenerate case is left open. The argument principle is quoted from Ahlfors in the scalar form, and the section that uses it says plainly why it does not transfer.</p>
 <p><strong>Boundaries.</strong> The general inversion theory, the transform of a general tempered distribution and the two-sided inversion formula are <em>The Fourier Operator</em>; the symbol, its zero set and the rank on it are <em>The Fourier Transform and the Symbol of a Differential Operator</em>; the distributional reading of the transform is <em>Distributions and Fundamental Solutions</em>; the global equation $P(D)u=f$ on $\mathbb{R}^n$ is <em>The Fundamental Solution Operator</em>. This article takes all four as given, and adds only the analysis of one object, the kernel of the reciprocal of the symbol. Nothing here is about variable coefficients.</p>
 <p><strong>The trap, stated at once.</strong> Three integers are in play and they are different. The order of the operator is $m$. The degree of $\det L_\sigma$ is $dm$, by the proposition of <em>The Fourier Transform and the Symbol of a Differential Operator</em>. The order of the pole of the reciprocal at a point of the zero set is a third number, $k$, which is at least one and at most $dm$, and which is usually neither of the other two. <strong>The pole order is not the order of the operator, and it is not the degree of the symbol.</strong> The whole of §<em>The Reciprocal as an Adjugate</em> is the separation of the three.</p>
 <h2 id="the-multiplier-and-the-inverse-integral">The Multiplier and the Inverse Integral</h2>
-<p><strong>Definition (the multiplier and its kernel).</strong> Let $\Omega\subseteq\mathbb{R}^n$ be the open set on which $\sigma$ is a unit. The <strong>reciprocal multiplier</strong> is the $A_{\mathbb{C}}$-valued function $m_\sigma(\zeta)=\sigma(\zeta)^{-1}$ on $\Omega$, and the <strong>kernel of the symbol</strong> is its inverse transform,</p>
+<p><strong>Definition (the multiplier and its kernel).</strong> Let $\Omega\subseteq\mathbb{R}^n$ be the open set on which $\sigma$ is invertible. The <strong>reciprocal multiplier</strong> is the $A_{\mathbb{C}}$-valued function $m_\sigma(\zeta)=\sigma(\zeta)^{-1}$ on $\Omega$, and the <strong>kernel of the symbol</strong> is its inverse transform,</p>
 <p>$$
 \kappa_\sigma=\mathcal{F}^{-1}\big[m_\sigma\big],
 $$</p>
@@ -147,7 +147,7 @@ $$</p>
 <p>for any Hermitian inner product on $A_{\mathbb{C}}$ used to form the two norms.</p>
 <p><em>Proof.</em> Choose a complex basis $e_1,\dots,e_d$ of $A_{\mathbb{C}}$ and write $f=\sum_j f_j e_j$ with scalar $f_j$. The transform is entrywise, so $\mathcal{F}[f]=\sum_j\mathcal{F}[f_j]e_j$. Expanding the squared norm of the right side gives $\sum_{j,k}g_{jk}\int\mathcal{F}[f_j]\overline{\mathcal{F}[f_k]}$, where $g_{jk}$ are the entries of the Gram matrix of the inner product. Each scalar Plancherel identity reads $\int\mathcal{F}[f_j]\overline{\mathcal{F}[f_k]}=(2\pi)^n\int f_j\overline{f_k}$, and the same is true of the pair in the other order, so the cross terms are $(2\pi)^n$ times the corresponding cross terms of $\lVert f\rVert_2^2$. Summing with the weights $g_{jk}$ gives the identity. The constant does not depend on the basis, nor on the inner product, because both sides are computed with the same weights.</p>
 <p><strong>Corollary (the unitary normalisation).</strong> The operator $\mathcal{U}=(2\pi)^{-n/2}\mathcal{F}$ is an isometry of $L^2(\mathbb{R}^n;A_{\mathbb{C}})$ onto itself, and it extends from $L^1\cap L^2$ to the whole of $L^2$ by continuity. The constant $(2\pi)^{n/2}$ is exactly what the inversion formula carries, and it is the whole content of the phrase "unitary up to a constant".</p>
-<p><strong>Corollary (the stability bound, with the constants cancelled).</strong> Suppose $\sigma$ is a unit everywhere and $M=\sup_{\zeta}\lVert L_{\sigma(\zeta)^{-1}}\rVert<\infty$, the norm on the right being the operator norm on $A_{\mathbb{C}}$. Then the solution of the transformed equation obeys</p>
+<p><strong>Corollary (the stability bound, with the constants cancelled).</strong> Suppose $\sigma$ is invertible everywhere and $M=\sup_{\zeta}\lVert L_{\sigma(\zeta)^{-1}}\rVert<\infty$, the norm on the right being the operator norm on $A_{\mathbb{C}}$. Then the solution of the transformed equation obeys</p>
 <p>$$
 \lVert u\rVert_2\le M\,\lVert f\rVert_2 .
 $$</p>
@@ -155,7 +155,7 @@ $$</p>
 <p><strong>Remark (what the bound does and does not say).</strong> It is sharp for a constant scalar symbol, where equality holds. It says nothing when $M$ is infinite, which is the third regime, and nothing about smoothness, which is controlled by the growth of $m_\sigma$ at infinity and not by its size: how large the multiplier is and how fast it grows are separate questions, and only the first is about the zero set.</p>
 <h2 id="the-reciprocal-as-an-adjugate">The Reciprocal as an Adjugate</h2>
 <h3 id="the-element">The element</h3>
-<p><strong>Proposition (the reciprocal is an adjugate over a determinant).</strong> Let $a\in A_{\mathbb{C}}$ be a unit. Then</p>
+<p><strong>Proposition (the reciprocal is an adjugate over a determinant).</strong> Let $a\in A_{\mathbb{C}}$ be an invertible element. Then</p>
 <p>$$
 L_{a^{-1}}=(\det L_a)^{-1}\operatorname{adj}(L_a),
 $$</p>
@@ -230,7 +230,7 @@ $$</p>
 <p>$$
 \frac{d}{d\zeta}\log\det L_{\sigma(\zeta)}=\operatorname{tr}\big(L_{\sigma(\zeta)^{-1}}\,L_{\sigma'(\zeta)}\big)
 $$</p>
-<p>at every point where $\sigma$ is a unit, so the logarithmic derivative of the determinant is a trace and the argument principle applies to $\det L_\sigma$ along a contour. It counts the zeros of the determinant, with multiplicity, inside the contour.</p>
+<p>at every point where $\sigma$ is invertible, so the logarithmic derivative of the determinant is a trace and the argument principle applies to $\det L_\sigma$ along a contour. It counts the zeros of the determinant, with multiplicity, inside the contour.</p>
 <p><strong>Proposition (the count on a generic complex line).</strong> Let $\sigma$ have degree $m$ and let $\zeta=\zeta_0+\lambda v$ with $v\in\mathbb{C}^n$ be a complex line. Then the restriction of $\det L_\sigma$ to the line is a polynomial in $\lambda$ of degree at most $dm$, of degree exactly $dm$ for all $v$ outside a proper algebraic subset of $\mathbb{C}^n$, and it has $dm$ zeros counted with multiplicity.</p>
 <p><em>Proof.</em> The determinant is a polynomial of degree $dm$ in $\zeta$, by the proposition of <em>The Fourier Transform and the Symbol of a Differential Operator</em>; substituting an affine line gives a polynomial in $\lambda$ of degree at most $dm$, and its top coefficient is the value at $v$ of the top-degree homogeneous part of $\det L_\sigma$, which is a nonzero polynomial in $v$ and therefore vanishes only on a proper algebraic subset. For the remaining $v$ the degree is $dm$, and the fundamental theorem of algebra gives $dm$ zeros with multiplicity.</p>
 <p><strong>Why the count is not a count of obstructions.</strong> The proposition is true and it is not the theorem one wants, for four reasons, and they are the four the section is for.</p>
@@ -322,7 +322,7 @@ $$</p>
 </tr>
 <tr>
 <td>$m_\sigma$</td>
-<td>The reciprocal multiplier $\sigma^{-1}$, defined where $\sigma$ is a unit</td>
+<td>The reciprocal multiplier $\sigma^{-1}$, defined where $\sigma$ is invertible</td>
 </tr>
 <tr>
 <td>$\kappa_\sigma$</td>
@@ -386,7 +386,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega$</td>
-<td>The open set of frequencies at which $\sigma$ is a unit</td>
+<td>The open set of frequencies at which $\sigma$ is invertible</td>
 </tr>
 <tr>
 <td>$\xi$</td>

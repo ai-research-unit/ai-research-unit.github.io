@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_6(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its unit group is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.</p>
+<p>$M_6(\mathbb{C})$ is the algebra of complex $6\times6$ matrices, of complex dimension $36$ and real dimension $72$. It has centre $\mathbb{C}I_6$, it is simple, its commutator subspace is the trace-zero hyperplane $\mathfrak{sl}_6$, and its group of invertibles is $GL_6(\mathbb{C})$, of dimension $36$, with projective quotient $PGL_6(\mathbb{C})$, of dimension $35$.</p>
 <p>This article fixes the ambient algebra: the matrix units, the trace and the determinant, the centre, the simplicity, the commutator subalgebra, the real structure of Hermitian and anti-Hermitian parts, and the two-sided module structure. It is the foundation on which the frame of <em>The Frame, the Simple Nilpotents and the Gauge of $M_6(\mathbb{C})$</em> and the coordinates of <em>The Element, the Coordinates and the Trace of $M_6(\mathbb{C})$</em> are built.</p>
 <p>No form and no topology are used here. The positive definite trace form is <em>The Involution and the Hermitian Structure of $M_6(\mathbb{C})$</em>; the exponential and the Lie group are <em>The Exponential and the Lie Group of $M_6(\mathbb{C})$</em>; the modules are <em>The Modules and the Minimal Left Ideals of $M_6(\mathbb{C})$</em>.</p>
 <h2 id="the-algebra">The Algebra</h2>
@@ -93,8 +93,8 @@ $$</p>
 (AB)_{ij}=\sum_{k=1}^{6}A_{ik}B_{kj}.
 $$</p>
 <p><strong>Proof.</strong> Multiply the two sums and apply the rule; the only surviving terms have matching inner indices.</p>
-<h3 id="the-unit-group">The Unit Group</h3>
-<p><strong>Definition.</strong> $GL_6(\mathbb{C})=\{A\in M_6(\mathbb{C}):\det A\neq0\}$ is the unit group, and $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times I_6$ is the projective linear group.</p>
+<h3 id="the-group-of-invertibles">The Group of Invertibles</h3>
+<p><strong>Definition.</strong> $GL_6(\mathbb{C})=\{A\in M_6(\mathbb{C}):\det A\neq0\}$ is the group of invertibles, and $PGL_6(\mathbb{C})=GL_6(\mathbb{C})/\mathbb{C}^\times I_6$ is the projective linear group.</p>
 <p><strong>Proposition.</strong> $GL_6(\mathbb{C})$ is a complex Lie group of dimension $36$, and $PGL_6(\mathbb{C})$ is a complex Lie group of dimension $35$.</p>
 <p><strong>Proof.</strong> $GL_6$ is the open set $\det\neq0$ in the affine space $M_6\cong\mathbb{C}^{36}$, so it has dimension $36$. The centre $\mathbb{C}^\times I_6$ is a closed subgroup of dimension one acting freely, so the quotient has dimension $35$.</p>
 <p><strong>Proposition (the conjugation action).</strong> $GL_6$ acts on $M_6$ by $A\mapsto gAg^{-1}$. The scalars act trivially, so the action factors through $PGL_6$, and the kernel of the action is exactly $\mathbb{C}^\times I_6$.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>$$
 E_{ki}AE_{jl}=A_{ij}E_{kl}\in J,
 $$</p>
-<p>because $J$ is a two-sided ideal. Since $A_{ij}\neq0$, every matrix unit $E_{kl}$ lies in $J$, and the units span $M_6$. So $J=M_6$.</p>
+<p>because $J$ is a two-sided ideal. Since $A_{ij}\neq0$, every matrix unit $E_{kl}$ lies in $J$, and the invertibles span $M_6$. So $J=M_6$.</p>
 <p><strong>Corollary (the left ideals).</strong> The six spaces</p>
 <p>$$
 L_j=M_6E_{jj}=\left\{\sum_i a_{ij}E_{ij}:a_{ij}\in\mathbb{C}\right\}

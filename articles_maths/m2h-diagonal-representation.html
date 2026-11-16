@@ -88,7 +88,7 @@ with two ordinary quaternions as coordinates. The algebra is semisimple and <str
 $$
 \mathsf M(\tilde Q)=\begin{pmatrix}\tilde Q_{+}&0\\ 0&\tilde Q_{-}\end{pmatrix}\in M_{2}(\mathbb{H}),
 $$
-a faithful image of real dimension eight inside the sixteen of $M_{2}(\mathbb{H})$. The matrix is diagonal because $j$ is a unit of the algebra and not a nilpotent and not a distinct conjugate: multiplying by $j$ permutes nothing, it only flips the sign of the second coordinate, so the two off-diagonal blocks of the multiplication table vanish identically.</p>
+a faithful image of real dimension eight inside the sixteen of $M_{2}(\mathbb{H})$. The matrix is diagonal because $j$ is invertible in the algebra and not a nilpotent and not a distinct conjugate: multiplying by $j$ permutes nothing, it only flips the sign of the second coordinate, so the two off-diagonal blocks of the multiplication table vanish identically.</p>
 <p><strong>What the model shows.</strong> The block diagonal form is the semisimplicity made visible: the algebra is a product, the module is a direct sum, and every computation separates into two independent quaternionic computations. The determinant is the product of the two reduced norms, $N(\tilde Q_{+})N(\tilde Q_{-})$, a nonnegative real, and it vanishes exactly on the zero divisors, which are the elements with one vanishing block. The trace is a <strong>quaternion</strong> and not a real, it is not central, and only its scalar part is an invariant. The spectrum is a pair of quaternions and not a family of scalars, and the block diagonalisation is the spectral theorem. And the four fixed subspaces of the conjugations are <strong>block conditions</strong>: equal blocks, conjugate blocks, and their negatives.</p>
 <p><strong>Why there is no matrix algebra.</strong> The algebra is not isomorphic to any full matrix algebra, because a full matrix algebra is simple and this one is not. The best possible model is the diagonal subalgebra, and it is genuinely smaller than the ambient: the off-diagonal corners are empty, the system of matrix units is degenerate, and the element that would fill them does not exist. That absence is the one thing this category has that no other category of the block has, and the article is organised around it.</p>
 <p><strong>The boundaries.</strong> The algebra, its conjugations and its four fixed subspaces are <em>Split-Biquaternion Algebra</em>; the norms and the invertibility criterion are <em>Split-Biquaternion Norm and Invertibility</em>; the zero divisors are <em>Split-Biquaternion Zero Divisors</em>; the ideals and the Peirce decomposition are <em>Split-Biquaternion Ideals and Peirce Decomposition</em>; the involution lattice is <em>Split-Biquaternion Involution Lattice</em>; the four-vector is <em>Split-Biquaternion Four-Vector Element Representation</em>; the linear representations are <em>Split-Biquaternion Linear Representations</em>; the operators are <em>$M_{2}(\mathbb{H})$ Diagonal Representation : Operators</em>. The section on the absence of a matrix representation of <em>Split-Biquaternion Algebraic Element Representations</em> is absorbed here as the frame section, and that article is retired.</p>
@@ -139,7 +139,7 @@ $$
 b=0,\qquad c=0 .
 $$
 The test is <strong>linear</strong> and it is stricter than any determinantal condition: the model is a subspace of codimension eight, and there is no question of a rank condition because the image never leaves the diagonal. This is the only category of the block in which even the span of the family falls short of the ambient, and the reason is that the algebra is not simple.</p>
-<p><strong>The centraliser.</strong> The matrices of $M_{2}(\mathbb{H})$ commuting with every diagonal matrix are the diagonal matrices, because the blocks are division rings and a nonzero off-diagonal entry would have to annihilate a unit. So
+<p><strong>The centraliser.</strong> The matrices of $M_{2}(\mathbb{H})$ commuting with every diagonal matrix are the diagonal matrices, because the blocks are division rings and a nonzero off-diagonal entry would have to annihilate an invertible element. So
 $$
 \mathsf M(\mathbb{B}_{\mathrm{spl}})'=\mathsf M(\mathbb{B}_{\mathrm{spl}}),\qquad \mathsf M(\mathbb{B}_{\mathrm{spl}})''=\mathsf M(\mathbb{B}_{\mathrm{spl}}),
 $$
@@ -309,12 +309,12 @@ each block contributing $0$ or $1$ because each block is a division ring, and th
 $$
 \operatorname{rank}_{\mathbb{R}}\mathsf L_{\tilde Q}\in\{0,4,8\}.
 $$
-The three values are attained: $0$ at the zero element, $4$ on the union of the two punctured ideals, and $8$ on the units. This ladder of three separated values, with no intermediate rank, is the parametrisation of the singular set of the category: a quaternion is invertible unless it is zero, so a block is either full or empty.</p>
-<p><strong>The unit group.</strong> The determinant is nonzero exactly when both blocks are nonzero, so
+The three values are attained: $0$ at the zero element, $4$ on the union of the two punctured ideals, and $8$ on the invertibles. This ladder of three separated values, with no intermediate rank, is the parametrisation of the singular set of the category: a quaternion is invertible unless it is zero, so a block is either full or empty.</p>
+<p><strong>The group of invertibles.</strong> The determinant is nonzero exactly when both blocks are nonzero, so
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times}\cong\mathbb{H}^{\times}\times\mathbb{H}^{\times}\cong\bigl(SU(2)\times\mathbb{R}_{>0}\bigr)^{2},
 $$
-of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the unit group is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.</p>
+of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the group of invertibles is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.</p>
 <h2 id="the-spectral-projectors">The Spectral Projectors</h2>
 <p><strong>The two central idempotents are the spectrum, and the block diagonalisation is the primary spectral statement.</strong></p>
 <p><strong>The theorem.</strong> For every $\tilde Q$, the model is already diagonal, and the diagonalisation theorem of the category is the trivial one:
@@ -518,7 +518,7 @@ whose null cone is the light cone. On the <strong>Hermitian subspace</strong> $\
 <td>$4$, two components</td>
 </tr>
 <tr>
-<td>the units</td>
+<td>the invertibles</td>
 <td>both blocks nonzero</td>
 <td>$\tilde Q_{\pm}\neq0$</td>
 <td>rank $8$</td>

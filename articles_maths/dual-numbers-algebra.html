@@ -172,11 +172,11 @@ $$</p>
 <li>$\mathrm{M} = (\varepsilon)$ is a nilpotent ideal of index two, and $\mathrm{M}^2 = 0$.</li>
 <li>The quotient $\mathbb{C}_{\mathrm{dln},R} / \mathrm{M}$ is isomorphic to $R$.</li>
 <li>Over a field $k$, $\mathrm{M}$ is the <strong>unique</strong> maximal ideal of $\mathbb{C}_{\mathrm{dln},k}$, so $\mathbb{C}_{\mathrm{dln},k}$ is local with residue field $k$. Over a general commutative ring $R$ the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ are the ideals $\mathrm{P} + \mathrm{M} = \mathrm{P} \oplus R\varepsilon$ for $\mathrm{P}$ maximal in $R$; hence $\mathbb{C}_{\mathrm{dln},R}$ is local if and only if $R$ is local.</li>
-<li>The element $q + \varepsilon q'$ is invertible if and only if $q \in R^\times$ (see the group of units below); over a field this says: every element not in $\mathrm{M}$ is invertible.</li>
+<li>The element $q + \varepsilon q'$ is invertible if and only if $q \in R^\times$ (see the group of invertibles below); over a field this says: every element not in $\mathrm{M}$ is invertible.</li>
 </ul>
 <p>The maximal ideal is the obstruction to the algebra being a field, and it is the source of the nilpotence in the algebra.</p>
-<h2 id="the-group-of-units">The Group of Units</h2>
-<p><strong>Theorem (group of units).</strong> The <strong>group of units</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
+<h2 id="the-group-of-invertibles">The Group of Invertibles</h2>
+<p><strong>Theorem (group of invertibles).</strong> The <strong>group of invertibles</strong> of $\mathbb{C}_{\mathrm{dln},R}$ is</p>
 <p>$$
 \boxed{\;
 (\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}
@@ -190,7 +190,7 @@ $$</p>
 <p>$$
 (q + \varepsilon q')^{-1} = \frac{1}{q} - \frac{q'}{q^2} \varepsilon.
 $$</p>
-<p>The group of units is an extension of $R^\times$ by the additive group $R$:</p>
+<p>The group of invertibles is an extension of $R^\times$ by the additive group $R$:</p>
 <p>$$
 1 \to R \to (\mathbb{C}_{\mathrm{dln},R})^\times \to R^\times \to 1,
 $$</p>
@@ -221,7 +221,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The dual number algebra $\mathbb{C}_{\mathrm{dln},R}$ is the two-dimensional free $R$-module with basis $1$, $\varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $Q = q + \varepsilon q'$, with $q$ its real part and $q'$ its infinitesimal part.</p>
 <p>Dual conjugation is the involution sending $q + \varepsilon q'$ to $q - \varepsilon q'$. Its fixed points form the real submodule $R_{\mathbb{C}_{\mathrm{dln}}}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{C}_{\mathrm{dln}}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.</p>
-<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{C}_{\mathrm{dln},k}$ is local; over a general commutative ring the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $q + \varepsilon q'$ is a unit exactly when its real part $q$ is a unit of $R$, so the group of units is $\{q + \varepsilon q' : q \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
+<p>The algebra is characterised by its ideal $(\varepsilon)$. The ideal $\mathrm{M} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathrm{M}^2 = 0$, and the quotient $\mathbb{C}_{\mathrm{dln},R}/\mathrm{M}$ is $R$. Over a field it is the unique maximal ideal, so $\mathbb{C}_{\mathrm{dln},k}$ is local; over a general commutative ring the maximal ideals of $\mathbb{C}_{\mathrm{dln},R}$ correspond to those of $R$, and the algebra is local exactly when the base ring is. The element $q + \varepsilon q'$ is invertible exactly when its real part $q$ is invertible in $R$, so the group of invertibles is $\{q + \varepsilon q' : q \in R^\times\}$; the scale and the norm that measure this are a distance and are developed in <em>Dual-Numbers Norm and Invertibility</em>. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian, while the derivations form a free $R$-module of rank one.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -293,7 +293,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(\mathbb{C}_{\mathrm{dln},R})^\times = \{q + \varepsilon q' : q \in R^\times\}$</td>
-<td>Group of units</td>
+<td>Group of invertibles</td>
 </tr>
 </tbody>
 </table></div>

@@ -123,9 +123,9 @@ $$</p>
 <p>$$
 N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=Q_t^{2}+B^{2},
 $$</p>
-<p>the algebraic norm of the quaternionic form. It is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, and it vanishes exactly at $0$ and on the zero divisors, so it decides invertibility: $\tilde Q$ is a unit exactly when $N(\tilde Q)\neq0$, with $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$.</p>
+<p>the algebraic norm of the quaternionic form. It is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, and it vanishes exactly at $0$ and on the zero divisors, so it decides invertibility: $\tilde Q$ is invertible exactly when $N(\tilde Q)\neq0$, with $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$.</p>
 <p><strong>It cannot carry weights.</strong> The quaternionic norm takes complex values, and its realified form has signature $(4,4)$: it is indefinite, and the zero-divisor cone is its isotropic cone. So it is not a norm in the sense of a Hilbert space, and no weight can be read from it. The Hermitian norm is definite and is the one the decomposition uses. The algebra therefore has two norms of different character — one definite and not multiplicative, one multiplicative and not definite — and no single form is both; the whole structure of this article comes from that split.</p>
-<p><strong>The two normalisations differ.</strong> A singular vector of the decomposition is an element of Hermitian norm one, $\lVert\tilde U\rVert=1$, and that is <strong>not</strong> the unit condition $N(\tilde U)=1$ of <em>Norm and Unitary Conventions</em>. The gap is not small: the four units are orthonormal, and $N(\vec e_x)=-1$. An element of Hermitian norm one is a unit exactly when $N(\tilde U)\neq0$, and its two weights obey $\lvert N(\tilde U)\rvert\leq1$ with equality exactly when they agree, as §<em>The Weights of One Multiplier</em> shows. Orthonormality therefore says nothing about the multiplicative character of an element: the four units are orthonormal and their quaternionic norms are $1,-1,-1,-1$. This is the first place where the decomposition and the algebra part company, and it is not a defect of the decomposition: the weights are the numbers that carry the multiplicative information the normalisation drops.</p>
+<p><strong>The two normalisations differ.</strong> A singular vector of the decomposition is an element of Hermitian norm one, $\lVert\tilde U\rVert=1$, and that is <strong>not</strong> the unit condition $N(\tilde U)=1$ of <em>Norm and Unitary Conventions</em>. The gap is not small: the four units are orthonormal, and $N(\vec e_x)=-1$. An element of Hermitian norm one is invertible exactly when $N(\tilde U)\neq0$, and its two weights obey $\lvert N(\tilde U)\rvert\leq1$ with equality exactly when they agree, as §<em>The Weights of One Multiplier</em> shows. Orthonormality therefore says nothing about the multiplicative character of an element: the four units are orthonormal and their quaternionic norms are $1,-1,-1,-1$. This is the first place where the decomposition and the algebra part company, and it is not a defect of the decomposition: the weights are the numbers that carry the multiplicative information the normalisation drops.</p>
 <h2 id="the-endomorphisms">The Endomorphisms</h2>
 <h3 id="the-ambient-space">The Ambient Space</h3>
 <p><strong>The space.</strong> An <strong>endomorphism</strong> is a complex-linear map $F:\mathbb{B}\to\mathbb{B}$. The endomorphisms form the complex algebra $\operatorname{End}(\mathbb{B})$ under composition, of complex dimension sixteen, with identity $\mathrm{I}_4$. Every endomorphism is determined by its four values on the four units, and its matrix in the coefficient basis is the array of those values, $[F]_{\mathcal{E}}$ with $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
@@ -306,7 +306,7 @@ F=\Bigl(\sum_{k\le4}\mathcal P_{\tilde U_k,e_k}\Bigr)
 \;}
 $$</p>
 <p>with no array anywhere. The first factor sends the unit $e_k$ to the $k$-th left vector, the third sends it to the $k$-th right vector, and the middle multiplies that unit by the weight. The two outer factors are unitary operators; the middle is self-adjoint and positive, and its trace is the sum of the weights, because each $\mathcal P_{e_k,e_k}$ is a projector of rank one. The middle factor is the <strong>scale in the basis of the units</strong>, and $\sum_k\mathcal P_{e_k,e_k}=\mathrm I_4$, so the four projectors split the identity.</p>
-<p><strong>The units are the natural middle.</strong> Any orthonormal family serves as the middle family, with the two outer factors changed accordingly, so the choice is not forced by the theorem. The units are the one family that needs no preparation, and the one that the multiplication permutes, up to a sign and a factor $i$. The display therefore reads the form and the multiplication in the same basis, which is what a factorisation written in the algebra should do.</p>
+<p><strong>The invertibles are the natural middle.</strong> Any orthonormal family serves as the middle family, with the two outer factors changed accordingly, so the choice is not forced by the theorem. The invertibles are the one family that needs no preparation, and the one that the multiplication permutes, up to a sign and a factor $i$. The display therefore reads the form and the multiplication in the same basis, which is what a factorisation written in the algebra should do.</p>
 <p><strong>Why the middle is a sum and not an element.</strong> The four weights of a two-sided operator are the four products $\rho_i(\tilde Q_1)\rho_j(\tilde Q_2)$ of the weights of its two multipliers (§<em>The Weights of Two Multipliers</em>), and every such rectangle satisfies</p>
 <p>$$
 \rho_1\rho_4=\rho_2\rho_3 ,
@@ -456,7 +456,7 @@ $$
 \tfrac12\,\mathrm{vec}(A_{\tilde U_1})\,\overline{\mathrm{vec}(A_{\tilde U_2})}^{\mathsf T},
 $$
 a rank-one array, and the two-sided family has the matrices $A_1\otimes A_2^{\mathsf T}$. A rank-one array is a Kronecker product of two $2\times2$ arrays exactly when each of its two vectors is a single tensor, because $\mathrm{vec}(A_1)$ is a single tensor exactly when $A_1$ has rank one, and the Kronecker factorisation is unique up to the rescaling $(A_1,A_2)\mapsto(\lambda A_1,\lambda^{-1}A_2)$. The condition is therefore that $A_{\tilde U_1}$ and $A_{\tilde U_2}$ both have rank one, that is $N(\tilde U_1)=N(\tilde U_2)=0$.</p>
-<p><strong>The count.</strong> A rank-one endomorphism is a line in $\mathbb{B}$ together with a nonzero functional, which is six complex parameters; a product of two zero divisors is a pair of projective points of the zero-divisor cone, two parameters each, which is four. The products are therefore a proper subvariety of the rank-one endomorphisms, of codimension two, and the generic atom of a decomposition is not a product: the singular vectors of a generic endomorphism are units, and the criterion then excludes it. What the product gives is not the atom but the weights, the rank pattern and the two-sided operator, which are the subject of the rest of this section.</p>
+<p><strong>The count.</strong> A rank-one endomorphism is a line in $\mathbb{B}$ together with a nonzero functional, which is six complex parameters; a product of two zero divisors is a pair of projective points of the zero-divisor cone, two parameters each, which is four. The products are therefore a proper subvariety of the rank-one endomorphisms, of codimension two, and the generic atom of a decomposition is not a product: the singular vectors of a generic endomorphism are invertible, and the criterion then excludes it. What the product gives is not the atom but the weights, the rank pattern and the two-sided operator, which are the subject of the rest of this section.</p>
 <p><strong>Two normalisations of one atom, when the atom is a product.</strong> Such an atom is written both as $\mathcal P_{\tilde U_1,\tilde U_2}$ and as $L_{\tilde Q_1}R_{\tilde Q_2}$, and the two writings normalise differently: the first by the Hermitian norm, the second by the product, in which the multipliers are recovered from the operator up to the rescaling $(\tilde Q_1,\tilde Q_2)\mapsto(\lambda\tilde Q_1,\lambda^{-1}\tilde Q_2)$ and each of them has one weight zero. The first presentation depends on the form, the second on the multiplication, and the weights are the letters that translate between them: by the product rule of the next subsection the four weights of the atom are $\rho_1(\tilde Q_1)\rho_1(\tilde Q_2)$ and three zeros, so an atom that is a product carries exactly one positive weight.</p>
 <h3 id="the-weights-of-one-multiplier">The Weights of One Multiplier</h3>
 <p><strong>The two weights of an element.</strong> For the left multiplier $L_{\tilde Q}$ the positive operator is $L_{\tilde Q}^{*}L_{\tilde Q}=L_{\tilde Q^{*}\tilde Q}$, so the weights of the operator are the square roots of the eigenvalues of the left multiplication by the Hermitian element $\tilde Q^{*}\tilde Q$. That multiplication has four eigenvalues and they come in two pairs, because in the $2\times2$ model the matrix $\mathsf M_2(\tilde Q)\mathsf M_2(\tilde Q)^{\mathsf H}$ has two eigenvalues and each is repeated. The two numbers, counted once each, are the <strong>weights of the element</strong>, written $\rho_1(\tilde Q)\geq\rho_2(\tilde Q)\geq0$, and the weights of the operator are</p>
@@ -476,7 +476,7 @@ $$</p>
 \rho_{1,2}(\tilde Q)=\sqrt{\ \langle\tilde Q,\tilde Q\rangle_{*}\pm\sqrt{\langle\tilde Q,\tilde Q\rangle_{*}^{2}-\bigl\lvert N(\tilde Q)\bigr\rvert^{2}}\ } ,
 $$</p>
 <p>so the pair of weights is the pair of the two norms rewritten, the sum of the squares reading the definite norm and the product the multiplicative one. The radicand is non-negative because the numbers $\rho_1^{2}$ and $\rho_2^{2}$ have the sum and the product displayed.</p>
-<p><strong>The three cases.</strong> An element is a unit, a zero divisor, or zero, and the weights say which:</p>
+<p><strong>The three cases.</strong> An element is invertible, a zero divisor, or zero, and the weights say which:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -488,7 +488,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>a unit, $N\neq0$</td>
+<td>an invertible element, $N\neq0$</td>
 <td>$\rho_1\geq\rho_2>0$</td>
 <td>$\rho_1,\rho_1,\rho_2,\rho_2$</td>
 <td>$4$</td>
@@ -507,7 +507,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The middle row is the reason the two normalisations differ: a zero divisor has a positive Hermitian norm and a vanishing multiplicative norm, so it is a good singular vector and not a unit. The degeneracy of the weights is exactly the vanishing of $N$, and the invertibility of the element and the invertibility of its left multiplier are one condition, which is a coincidence of the form and the product and not a tautology.</p>
+<p>The middle row is the reason the two normalisations differ: a zero divisor has a positive Hermitian norm and a vanishing multiplicative norm, so it is a good singular vector and not an invertible element. The degeneracy of the weights is exactly the vanishing of $N$, and the invertibility of the element and the invertibility of its left multiplier are one condition, which is a coincidence of the form and the product and not a tautology.</p>
 <p><strong>Three worked elements.</strong> At $\tilde Q=e_t+\vec e_x+i\vec e_y$ the two norms are $\langle\tilde Q,\tilde Q\rangle_{*}=3$ and $N(\tilde Q)=1$, the radicand is $9-1=8$, and</p>
 <p>$$
 \rho_1(\tilde Q)=1+\sqrt2 ,\qquad \rho_2(\tilde Q)=\sqrt2-1 ,
@@ -535,20 +535,20 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>a unit</td>
-<td>a unit</td>
+<td>an invertible element</td>
+<td>an invertible element</td>
 <td>four positive</td>
 <td>$4$</td>
 </tr>
 <tr>
-<td>a unit</td>
+<td>an invertible element</td>
 <td>a zero divisor</td>
 <td>two positive, two zero</td>
 <td>$2$</td>
 </tr>
 <tr>
 <td>a zero divisor</td>
-<td>a unit</td>
+<td>an invertible element</td>
 <td>two positive, two zero</td>
 <td>$2$</td>
 </tr>
@@ -591,7 +591,7 @@ $$</p>
 <p>$$
 \bigl\langle\!\bigl\langle L_{e_\mu}R_{e_\nu},L_{e_\rho}R_{e_\kappa}\bigr\rangle\!\bigr\rangle=4\,\delta_{\mu\rho}\delta_{\nu\kappa},
 $$</p>
-<p>because in the model the basis operators are the sixteen Kronecker products $\mathsf M_2(e_\mu)\otimes\mathsf M_2(e_\nu)^{\mathsf T}$, the four $\mathsf M_2(e_\mu)$ are mutually orthogonal with $\operatorname{tr}\bigl(\mathsf M_2(e_\mu)\mathsf M_2(e_\rho)^{\mathsf H}\bigr)=2\delta_{\mu\rho}$, and a Kronecker product of two orthogonal families is orthogonal, with the product of the two normalisations. Sixteen mutually orthogonal operators of norm two in a space of dimension sixteen are a basis, and each of them has rank four, since both multipliers are units.</p>
+<p>because in the model the basis operators are the sixteen Kronecker products $\mathsf M_2(e_\mu)\otimes\mathsf M_2(e_\nu)^{\mathsf T}$, the four $\mathsf M_2(e_\mu)$ are mutually orthogonal with $\operatorname{tr}\bigl(\mathsf M_2(e_\mu)\mathsf M_2(e_\rho)^{\mathsf H}\bigr)=2\delta_{\mu\rho}$, and a Kronecker product of two orthogonal families is orthogonal, with the product of the two normalisations. Sixteen mutually orthogonal operators of norm two in a space of dimension sixteen are a basis, and each of them has rank four, since both multipliers are invertible.</p>
 <p><strong>Two facts that coexist.</strong> The ambient space has an orthogonal basis all of whose members are invertible, while the cone on which the decomposition lives is made of rank-one operators and is nowhere near a subspace. The two facts do not contradict one another, a basis of a space being rarely a set of rank-one elements, and their coexistence is what makes the biquaternion algebra a good place to read a decomposition: it has a multiplicative basis and a rank-one cone at the same time, and the weights of an element are read from the weights of its multipliers.</p>
 <h3 id="what-the-decomposition-is-not">What the Decomposition Is Not</h3>
 <p><strong>Not a decomposition of an element.</strong> The four terms are operators and the weights are numbers attached to a map: the decomposition is of an endomorphism. The Peirce decomposition is of an element, into the four corners cut by a pair of complementary idempotents, and it carries idempotents and no weights (<em>The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra</em>). The number four appears in both and does not mean the same thing: here it is the complex dimension of the space, which bounds the number of terms; there it is the number of corners, which comes from the algebra being a $2\times2$.</p>

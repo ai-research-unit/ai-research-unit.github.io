@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="relations-between-the-split-norm-and-spectral-regularity-and-degeneracy"><strong>Relations between the Split Norm and Spectral Regularity and Degeneracy</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>An element $q=t+bj$ carries two quadratic conditions. The <strong>split norm</strong> $q\bar q=t^2-b^2$ is the determinant of left multiplication and the product of the eigenvalues; it vanishes exactly on the non-units. The <strong>spectral condition</strong> $b^2$ is a quarter of the discriminant and the square of half the eigenvalue difference; it vanishes exactly when the eigenvalues coincide. This article compares them, proves that neither implies the other, and reads the four combinations as four sectors. The mixed sectors are the point: a zero divisor with distinct eigenvalues, and a unit with a repeated one.</p>
+<p>An element $q=t+bj$ carries two quadratic conditions. The <strong>split norm</strong> $q\bar q=t^2-b^2$ is the determinant of left multiplication and the product of the eigenvalues; it vanishes exactly on the non-invertibles. The <strong>spectral condition</strong> $b^2$ is a quarter of the discriminant and the square of half the eigenvalue difference; it vanishes exactly when the eigenvalues coincide. This article compares them, proves that neither implies the other, and reads the four combinations as four sectors. The mixed sectors are the point: a zero divisor with distinct eigenvalues, and an invertible element with a repeated one.</p>
 <p><strong>Notation.</strong> An element is $q=t+bj$, its conjugate is $\bar q=t-bj$, and the idempotents are $e_\pm=\tfrac12(1\pm j)$. The idempotent coordinates are $u=t+b$ and $v=t-b$, so that $q=ue_+ +ve_-$, the eigenvalues are $\lambda_+=u$ and $\lambda_-=v$, the split norm is $q\bar q=uv$, and $b=(u-v)/2$. The split norm is indefinite and is not a length. The corpus writes the same element $Q=q+jq'$, with its $q,q'$ equal to $t,b$ here and its $\Pi_\pm$ equal to the $e_\pm$.</p>
 <h2 id="the-two-conditions-in-one-quadratic">The Two Conditions in One Quadratic</h2>
 <p><strong>Definition (the two conditions).</strong> The <strong>split norm</strong> of $q$ is $q\bar q=t^2-b^2$; the element is <strong>norm-regular</strong> when the norm is non-zero and <strong>norm-degenerate</strong> when it is zero. The <strong>spectral condition</strong> is $b^2$; the element is <strong>spectrally regular</strong> when $b\neq0$ and <strong>spectrally degenerate</strong> when $b=0$.</p>
@@ -92,8 +92,8 @@ $$</p>
 <p><em>Proof.</em> The conjugation is an automorphism and the algebra is commutative: $(q_1q_2)\overline{(q_1q_2)}=q_1q_2\bar q_2\bar q_1=q_1\bar q_1q_2\bar q_2$.</p>
 <p><strong>Proposition (the spectral condition is not multiplicative).</strong> The elements $q_1=2+j$ and $q_2=-2+j$ have $b^2=1$, and $q_1q_2=-3$ has $b^2=0$.</p>
 <p><em>Proof.</em> Direct computation: $(2+j)(-2+j)=-4+2j-2j+1=-3$.</p>
-<p><strong>Corollary (the unit criterion).</strong> For $q\neq0$, $q$ is a unit exactly when $q\bar q\neq0$; then $q^{-1}=\bar q/(q\bar q)$. If the norm vanishes, $q$ is a zero divisor.</p>
-<p><em>Proof.</em> The product $q\bar q$ is real and equals $\bar q q$, so the formula gives an inverse when the denominator is non-zero. When it vanishes and $q\neq0$, the element is a non-unit in a finite-dimensional algebra, hence a zero divisor.</p>
+<p><strong>Corollary (the invertibility criterion).</strong> For $q\neq0$, $q$ is invertible exactly when $q\bar q\neq0$; then $q^{-1}=\bar q/(q\bar q)$. If the norm vanishes, $q$ is a zero divisor.</p>
+<p><em>Proof.</em> The product $q\bar q$ is real and equals $\bar q q$, so the formula gives an inverse when the denominator is non-zero. When it vanishes and $q\neq0$, the element is a non-invertible in a finite-dimensional algebra, hence a zero divisor.</p>
 <h2 id="independence-of-the-two-conditions">Independence of the Two Conditions</h2>
 <p><strong>Theorem (independence).</strong> The two conditions are <strong>independent</strong>: neither implication $q\bar q=0\Rightarrow b=0$ and $b=0\Rightarrow q\bar q=0$ holds, and all four combinations occur.</p>
 <p><em>Proof.</em> Two witnesses.</p>
@@ -125,7 +125,7 @@ $$</p>
 <li>$q$ is spectrally regular.</li>
 </ol>
 <p>Each admits the two-term spectral decomposition $q=2t\,e_\pm +0\cdot e_\mp$.</p>
-<p><em>Proof.</em> (1)$\iff$(2): $t^2-b^2=(t-b)(t+b)$, and $q\neq0$ excludes $t=b=0$. (2)$\iff$(3): if $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. (3)$\iff$(4): $e_\pm$ are eigenvectors with eigenvalues $2t$ and $0$, distinct because $t\neq0$. (4)$\iff$(6): the spectrum has two elements exactly when $b\neq0$. (3)$\iff$(5): if $q=2t e_+$ then $qe_-=0$ with $e_-\neq0$, and symmetrically; conversely a zero divisor is a non-unit, so $q\bar q=0$ by the unit criterion.</p>
+<p><em>Proof.</em> (1)$\iff$(2): $t^2-b^2=(t-b)(t+b)$, and $q\neq0$ excludes $t=b=0$. (2)$\iff$(3): if $b=t$, then $q=t(1+j)=2t e_+$; if $b=-t$, then $q=t(1-j)=2t e_-$. (3)$\iff$(4): $e_\pm$ are eigenvectors with eigenvalues $2t$ and $0$, distinct because $t\neq0$. (4)$\iff$(6): the spectrum has two elements exactly when $b\neq0$. (3)$\iff$(5): if $q=2t e_+$ then $qe_-=0$ with $e_-\neq0$, and symmetrically; conversely a zero divisor is a non-invertible, so $q\bar q=0$ by the unit criterion.</p>
 <p><strong>Corollary (the annihilators).</strong> On the null cone,</p>
 <p>$$
 \operatorname{ann}(2t e_+)=\mathbb{R}e_-,\qquad
@@ -135,7 +135,7 @@ $$</p>
 <p><strong>Corollary (the zero-divisor set).</strong> The zero-divisor set is exactly $\Sigma_{01}$, the two null lines with the origin removed. It has real dimension one and four connected components, the rays determined by the sign of $t$; its closure is $\mathcal{N}=\{q\bar q=0\}$.</p>
 <p><em>Proof.</em> The theorem identifies the zero divisors with the non-zero null elements. Each punctured line has the rays $t>0$ and $t<0$.</p>
 <h2 id="the-real-axis-minus-the-origin">The Real Axis Minus the Origin</h2>
-<p><strong>The real axis minus the origin is the sector of units with a repeated eigenvalue: the norm is positive and the spectrum is a singleton.</strong></p>
+<p><strong>The real axis minus the origin is the sector of invertibles with a repeated eigenvalue: the norm is positive and the spectrum is a singleton.</strong></p>
 <p><strong>Theorem (the real axis).</strong> For $q=t$ with $t\neq0$, one has $q\bar q=t^2>0$, $q^{-1}=1/t$, $\sigma(q)=\{t\}$, and minimal polynomial $X-t$. The element is norm-regular and spectrally degenerate, with the one-term spectral decomposition $q=t\cdot1$.</p>
 <p><em>Proof.</em> The norm is $t^2$, and $1/t$ is the inverse. The characteristic polynomial is $(X-t)^2$, whose only root is $t$; the minimal polynomial is $X-t$ because $q-t=0$.</p>
 <p><strong>Corollary.</strong> The sector $\Sigma_{10}$ is exactly $\mathbb{R}^{\times}$, with the two components $\mathbb{R}_{>0}$ and $\mathbb{R}_{<0}$.</p>
@@ -244,8 +244,8 @@ $$</p>
 <p>The sign of $j^2$ separates the definite norm and complex spectrum of $\mathbb{C}$ from the indefinite norm and real spectrum of $\mathbb{C}_{\mathrm{spl}}$.</p>
 <h2 id="summary">Summary</h2>
 <p>The split norm $q\bar q=t^2-b^2$ is the determinant of $L_q$ and the product of the eigenvalues; it decides invertibility. The spectral condition $b^2$ is a quarter of the discriminant; it decides whether the spectrum is separated. Both sit in $p_q(X)=X^2-2tX+q\bar q$: the norm as constant term, $4b^2$ as discriminant.</p>
-<p>The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of units with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.</p>
-<p>The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigma_{00}$. The norm separates units from non-units, the spectral condition regular from degenerate spectra, and the characteristic polynomial the four sectors. The minimal polynomial adds nothing: it reproduces the same four types, unlike the biquaternion case, where it refines the degenerate cone into three strata. The plane is the unique algebra of the table with four non-empty sectors and no defective element.</p>
+<p>The conditions are independent: $1+j$ has zero norm and eigenvalues $2,0$; $2$ has non-zero norm and repeated eigenvalue $2$. The null lines $t=\pm b$ are the zero divisors; the real axis minus the origin is the group of invertibles with repeated eigenvalue $t$; the origin is the unique element degenerate for both and is not a zero divisor.</p>
+<p>The four combinations are $\Sigma_{11}$, $\Sigma_{01}$, $\Sigma_{10}$ and $\Sigma_{00}$. The norm separates units from non-invertibles, the spectral condition regular from degenerate spectra, and the characteristic polynomial the four sectors. The minimal polynomial adds nothing: it reproduces the same four types, unlike the biquaternion case, where it refines the degenerate cone into three strata. The plane is the unique algebra of the table with four non-empty sectors and no defective element.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

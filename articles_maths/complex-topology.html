@@ -70,14 +70,14 @@
       <div class="article-body">
         <h1 id="complex-topology"><strong>Complex Topology</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of units. It uses the algebra and the two distinguished subspaces of <em>Complex Algebra</em> and <em>The Group of Involutions and the Two Subspaces of the Complex Space</em>, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of <em>Complex Norm and Invertibility</em>, and the Lie-group structure and exponential of <em>Complex Exponential and Lie Group Structure</em>. No physics is invoked and no new result is claimed.</p>
-<p>The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of units is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the units and their connectedness are the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.</p>
+<p>This article collects the topology of the complex algebra $\mathbb{C}$ as a space and of its group of invertibles. It uses the algebra and the two distinguished subspaces of <em>Complex Algebra</em> and <em>The Group of Involutions and the Two Subspaces of the Complex Space</em>, the norm $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ and the invertibility criterion of <em>Complex Norm and Invertibility</em>, and the Lie-group structure and exponential of <em>Complex Exponential and Lie Group Structure</em>. No physics is invoked and no new result is claimed.</p>
+<p>The complex case is the simplest in the family and the whole of its topology is the topology of the plane and the circle. The algebra itself is $\mathbb{R}^2$, hence contractible; the group of invertibles is the punctured plane, homotopy equivalent to the unit circle, with fundamental group $\mathbb{Z}$. No richer topology is available here: the definiteness of the norm and the emptiness of the zero-divisor class rule out the higher sphere, the null cone and its link. The group structure of the invertibles and their connectedness are the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>; this article owns the ambient space and its distinguished subsets, the unit circle and its homotopy, and the punctured plane.</p>
 <h2 id="the-algebra-as-a-topological-space">The Algebra as a Topological Space</h2>
 <p>The map</p>
 <p>$$
 Q = q+i q' \longmapsto (q,q')
 $$</p>
-<p>is a linear isometry of $(\mathbb{C}, |\cdot|)$ onto the Euclidean plane $\mathbb{R}^2$. The topology of $\mathbb{C}$ is therefore the Euclidean topology of $\mathbb{R}^2$; multiplication is bilinear, hence continuous, so $\mathbb{C}$ is a topological algebra over $\mathbb{R}$; and inversion is continuous on the units, so $\mathbb{C}^\times$ is a topological group.</p>
+<p>is a linear isometry of $(\mathbb{C}, |\cdot|)$ onto the Euclidean plane $\mathbb{R}^2$. The topology of $\mathbb{C}$ is therefore the Euclidean topology of $\mathbb{R}^2$; multiplication is bilinear, hence continuous, so $\mathbb{C}$ is a topological algebra over $\mathbb{R}$; and inversion is continuous on the invertibles, so $\mathbb{C}^\times$ is a topological group.</p>
 <p><strong>Theorem (contractibility).</strong> $\mathbb{C}$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}) = 0$ for all $n \ge 1$.</p>
 <p><strong>Proof.</strong> The straight-line homotopy</p>
 <p>$$
@@ -101,8 +101,8 @@ $$</p>
 <p><strong>Proposition.</strong> $S^1 = \mathrm{U}(1)$ is a compact, connected, abelian topological group whose underlying space is a manifold of dimension $1$, isomorphic to $SO(2)$ and to $\mathbb{R}/2\pi\mathbb{Z}$.</p>
 <p><strong>Proof.</strong> It is the kernel of the norm on $\mathbb{C}^\times$, hence a subgroup; it is closed and bounded in $\mathbb{C} \cong \mathbb{R}^2$, hence compact; the parametrisation $t \mapsto \exp(it)$ exhibits it as the continuous image of the connected group $\mathbb{R}$ with kernel $2\pi\mathbb{Z}$, so it is connected and isomorphic to $\mathbb{R}/2\pi\mathbb{Z}$; and it acts on the plane by rotations, giving $\mathrm{U}(1) \cong SO(2)$.</p>
 <p>The compactness is exactly the multiplicativity of the complex norm together with the definiteness of the form: the unit sphere is a group because $\sqrt{\langle Q_1Q_2\rangle_{*}} = \sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}}$ and the definite form makes the level set bounded. This is the base case of the theorem that the unit sphere of a normed division algebra with associative multiplication carries a Lie-group structure; the smooth structure that structure needs is the subject of the companion article <em>Complex Exponential and Lie Group Structure</em>, and only the group and its topology are used here. The cases are $S^0$, $S^1$, $S^3$, the finite list of spheres that carry such a structure, and $S^1$ is the complex member.</p>
-<h2 id="the-group-of-units">The Group of Units</h2>
-<p>The <strong>group of units</strong> is</p>
+<h2 id="the-group-of-invertibles">The Group of Invertibles</h2>
+<p>The <strong>group of invertibles</strong> is</p>
 <p>$$
 \mathbb{C}^\times = \{Q : \langle Q\rangle_{*} \neq 0\} = \mathbb{C} \setminus \{0\},
 $$</p>
@@ -125,7 +125,7 @@ $$</p>
 $$</p>
 <p>traversed once round the circle; the integer attached to a closed loop is its <strong>winding number</strong> about the origin, and the identification $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$ is the statement that the winding number classifies loops up to homotopy. This is the topological form of the argument principle of <em>Complex Analysis</em>, and it is why the contour integral $\oint dQ/Q = 2\pi i$ is the nontrivial residue.</p>
 <h2 id="the-punctured-plane-and-its-fundamental-group">The Punctured Plane and Its Fundamental Group</h2>
-<p>The punctured plane is the group of units, and it is the standard example of a space that is connected but not simply connected.</p>
+<p>The punctured plane is the group of invertibles, and it is the standard example of a space that is connected but not simply connected.</p>
 <ul>
 <li><strong>Path-connected.</strong> Every $Q \neq 0$ joins to the circle by the rescaling $t \mapsto Q/\bigl(\sqrt{\langle Q\rangle_{*}}\bigr)^{\,t}$, and any two points of the circle join by an arc; the concatenation is a path from $Q$ to $1$ through nonzero elements.</li>
 <li><strong>Not simply connected.</strong> The loop $\gamma(t) = \exp(2\pi i t)$ is not null-homotopic, its winding number being $1 \neq 0$; equivalently there is no continuous branch of the argument $\arg : \mathbb{C}^\times \to \mathbb{R}$.</li>
@@ -136,7 +136,7 @@ p : \mathbb{R} \times \mathbb{R}_{>0} \longrightarrow \mathbb{C}^\times, \qquad 
 $$</p>
 <p>is a homeomorphism onto $\mathbb{C}^\times$ after the identification $(\theta + 2\pi, r) \sim (\theta, r)$; equivalently the exponential $\exp : \mathbb{C} \to \mathbb{C}^\times$ is a universal covering map of $\mathbb{C}^\times$, with deck transformation group the kernel $2\pi i\,\mathbb{Z}$ generated by $Q \mapsto Q + 2\pi i$. The <strong>universal cover</strong> of $\mathbb{C}^\times$ is therefore contractible, being a half-plane product, and the covering is the universal one because $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$ acts freely and transitively on the fibres. This is the logarithmic-coordinate picture of <em>Complex Exponential and Lie Group Structure</em> read topologically.</p>
 <h2 id="the-boundary-of-the-polar-decomposition">The Boundary of the Polar Decomposition</h2>
-<p>The polar parametrisation of the group of units,</p>
+<p>The polar parametrisation of the group of invertibles,</p>
 <p>$$
 \Phi : \mathbb{R}_{>0} \times \mathbb{R} \longrightarrow \mathbb{C}^\times, \qquad \Phi(r, \theta) = r \exp(i\theta),
 $$</p>
@@ -148,7 +148,7 @@ $$</p>
 <p>the <strong>Riemann sphere</strong>, and $\mathbb{C}^\times$ becomes the sphere with two points removed, $\mathbb{C}^\times \cong S^2 \setminus \{0,\infty\}$, a cylinder. The point $\infty$ is the topological completion of the unbounded direction of the plane; it is a single point, not the many-pointed boundary that the indefinite form would produce, and the companion article <em>Complex Analysis</em> develops the function theory on it. The sphere is the best compact model of $\mathbb{C}$; there is no compact model underlying the group structure of $\mathbb{C}^\times$, which is non-compact and only has the circle as its compact core.</p>
 <h2 id="summary">Summary</h2>
 <p>The complex algebra $\mathbb{C} \cong \mathbb{R}^2$ is contractible, hence path-connected and simply connected, with $\pi_n(\mathbb{C}) = 0$ for all $n \ge 1$; the two distinguished subspaces are contractible copies of the line. The unit circle $S^1 = \{\sqrt{\langle Q\rangle_{*}} = 1\} = \{\langle Q\rangle_{*} = 1\}$ is a compact, connected, abelian topological group isomorphic to $\mathrm{U}(1) \cong SO(2) \cong \mathbb{R}/2\pi\mathbb{Z}$; it is a group because the norm is definite and multiplicative, so that the Euclidean unit sphere and the norm-one level set coincide.</p>
-<p>The group of units is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $Q \mapsto Q/\sqrt{\langle Q\rangle_{*}}$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto \exp(2\pi i t)$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has <strong>no boundary</strong>, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.</p>
+<p>The group of invertibles is the punctured plane $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$, a connected, non-compact topological group whose underlying space is a manifold of real dimension $2$, which deformation retracts onto $S^1$ by $Q \mapsto Q/\sqrt{\langle Q\rangle_{*}}$. Hence $\pi_1(\mathbb{C}^\times) \cong \mathbb{Z}$, generated by $t \mapsto \exp(2\pi i t)$ with the winding number as its invariant, and $\pi_n(\mathbb{C}^\times) = 0$ for $n \ge 2$; the universal cover is contractible and the covering is $\exp$. The polar parametrisation covers all of $\mathbb{C}^\times$ up to the identification $\theta \sim \theta + 2\pi$, and it has <strong>no boundary</strong>, since the only non-polar point is the single origin and the angular circle is compact. There is no null cone and no link, because the norm is definite and the zero-divisor class is empty; the only distinguished subset beside the unit circle is the one-point compactification $\mathbb{C} \cup \{\infty\} \cong S^2$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -180,7 +180,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$</td>
-<td>the group of units, the punctured plane; $\simeq S^1$</td>
+<td>the group of invertibles, the punctured plane; $\simeq S^1$</td>
 </tr>
 <tr>
 <td>$\pi(Q) = Q/\sqrt{\langle Q\rangle_{*}}$</td>

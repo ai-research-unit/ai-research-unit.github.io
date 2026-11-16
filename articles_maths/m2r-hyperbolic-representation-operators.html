@@ -190,7 +190,7 @@ $$</p>
 <p><strong>The three factors and their roles.</strong> The scale acts as $r$ and not as $r^{2}$; the sign is a discrete diagonal sign; the boost acts as $e^{\pm\theta_{\mathrm{rpd}}}$ on the two Peirce lines, with opposite exponents. All three are visible to the one-sided operator, and this is the whole of the polar content of the category:</p>
 <ul>
 <li>the modulus is the geometric mean of the absolute values of the two eigenvalues;</li>
-<li>the sign is the pair $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$, which is the component label of the unit group;</li>
+<li>the sign is the pair $(\operatorname{sgn}\lambda_+,\operatorname{sgn}\lambda_-)$, which is the component label of the group of invertibles;</li>
 <li>the boost is the half-difference of their logarithms, $\theta_{\mathrm{rpd}}=\tfrac12\ln\lvert\lambda_+/\lambda_-\rvert$.</li>
 </ul>
 <p><strong>The exponent is the full angle.</strong> The eigenvalues of the boost are $e^{\pm\theta_{\mathrm{rpd}}}$, not $e^{\pm\theta_{\mathrm{rpd}}/2}$, and the polar word writes $\theta_{\mathrm{rpd}}$ and not $\theta_{\mathrm{rpd}}/2$. The reason is that the two exponents are the two eigenvalue logarithms, and the eigenvalues are the idempotent coordinates $\lambda_\pm = r e^{\pm\theta_{\mathrm{rpd}}}$, which are <em>linear</em> in the polar data. A half angle would require $\lambda_\pm = r e^{\pm\theta_{\mathrm{rpd}}/2}$, that is $Q = r\exp(\tfrac{\theta_{\mathrm{rpd}}}{2}j)$, which is a different element. So the category has no half angle in its spectrum, and the geometric half angle that appeared in the model article was the axis of a Euclidean reflection, not a weight.</p>
@@ -201,7 +201,7 @@ Q=r\epsilon\,e^{\theta_{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\cosh
 Q=r\epsilon\,j\,e^{\theta_{\mathrm{rpd}} j}:\quad M_Q=r\epsilon\begin{pmatrix}\sinh\theta_{\mathrm{rpd}}&\cosh\theta_{\mathrm{rpd}}\\ \cosh\theta_{\mathrm{rpd}}&\sinh\theta_{\mathrm{rpd}}\end{pmatrix}.
 $$</p>
 <p>The first is the boost, the second the boost composed with the reflection $J$; the two families are the two components of $O(1,1)$ with positive and negative determinant, and the sign $\epsilon=\pm1$ multiplies both.</p>
-<p><strong>The one-parameter subgroup.</strong> $t\mapsto M_{\exp(tj)}$ is a homomorphism $\mathbb{R}\to SO^{+}(1,1)$, injective, and its image is the identity component of the units. So the exponential of the algebra is the exponential of the operator, and the polar word is a statement about a one-parameter subgroup of the ambient's conformal group.</p>
+<p><strong>The one-parameter subgroup.</strong> $t\mapsto M_{\exp(tj)}$ is a homomorphism $\mathbb{R}\to SO^{+}(1,1)$, injective, and its image is the identity component of the invertibles. So the exponential of the algebra is the exponential of the operator, and the polar word is a statement about a one-parameter subgroup of the ambient's conformal group.</p>
 <h2 id="the-two-sided-operator">The Two-Sided Operator</h2>
 <p><strong>Definition and collapse.</strong> For a pair $(Q,P)$,</p>
 <p>$$
@@ -218,7 +218,7 @@ $$</p>
 \mathrm{Sd}_Q(X)=QX\bar Q=\langle Q\rangle_{*}\,X .
 $$</p>
 <p><strong>Proof.</strong> $Q\bar Q=\langle Q\rangle_{*}$ is central, so it commutes past $X$.</p>
-<p><strong>The reading, and the inversion.</strong> $\mathrm{Sd}_Q$ is a <strong>scalar operator</strong>, equal to the norm. It is multiplicative, $\mathrm{Sd}_Q\circ\mathrm{Sd}_P=\mathrm{Sd}_{QP}$, and it is not faithful: it depends on $Q$ only through the norm, so its fibres are the level sets of $\langle\cdot\rangle_{*}$, which are the hyperbola branches. On the units the image is the group of nonzero scalar operators, of dimension one, and the kernel is the hyperbola $\{\langle Q\rangle_{*}=1\}$.</p>
+<p><strong>The reading, and the inversion.</strong> $\mathrm{Sd}_Q$ is a <strong>scalar operator</strong>, equal to the norm. It is multiplicative, $\mathrm{Sd}_Q\circ\mathrm{Sd}_P=\mathrm{Sd}_{QP}$, and it is not faithful: it depends on $Q$ only through the norm, so its fibres are the level sets of $\langle\cdot\rangle_{*}$, which are the hyperbola branches. On the invertibles the image is the group of nonzero scalar operators, of dimension one, and the kernel is the hyperbola $\{\langle Q\rangle_{*}=1\}$.</p>
 <p><strong>Why it collapses.</strong> $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{Ad}_Q$, where $\operatorname{Ad}_Q$ is the inner automorphism of the algebra; and the inner automorphism group of a commutative algebra is trivial. So the two-sided operator is the norm times the identity, and the whole of its non-triviality is the scalar. In the biquaternion category the same formula produced a Lorentz transformation, because the algebra was not commutative and the inner automorphisms were a three-dimensional group. Here there is nothing to conjugate.</p>
 <p><strong>What the two-sided operator forgets.</strong> The boost. Two elements on the same hyperbola have the same two-sided operator; in particular $Q$ and $Q^{-1}$ have the same norm $1$ and the same two-sided operator, the identity, while their one-sided operators are inverse boosts. So the two-sided operator is strictly less informative than the one-sided operator, which is the inversion announced in the introduction: in the non-commutative categories the two-sided operator carried the vector action and the one-sided operator the spinor one; here the one-sided operator carries everything and the two-sided operator carries one number.</p>
 <p><strong>The ambient form is not scalar.</strong> The formula $X\mapsto QX\bar Q$ defines an operator on the ambient as well, and there it is <strong>not</strong> a scalar: its matrix is the Kronecker display of the next section, of eigenvalues $\lambda_+^{2}$, $N$, $N$, $\lambda_-^{2}$. So the collapse to a scalar is a statement about the carrier, not about the formula. The carrier is the algebra, the algebra is the image of the model, and the two-sided operator never leaves the image; on the endomorphisms it does leave, and there it acts by a double boost. This is the one place in the category where the two-sided operator says something the one-sided operator does not.</p>
@@ -273,7 +273,7 @@ $$</p>
 </tr>
 <tr>
 <td>rank</td>
-<td>$2$ on units, $1$ on the null lines, $0$ at the origin</td>
+<td>$2$ on the invertibles, $1$ on the null lines, $0$ at the origin</td>
 <td>$4$, $2$, $1$ or $0$, the product of the two carrier ranks</td>
 </tr>
 <tr>
@@ -299,7 +299,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The reading.</strong> Both operators are conformal, for $g$ on the carrier and for $g\otimes g$ on the ambient; both have determinants that are squares; and both have a rank ladder. The ladder of the display is $\{0,1,2,4\}$ and the value $3$ is missing — a rank-three product of two rank-$\le2$ factors is impossible.</p>
-<p><strong>The zero-divisor case in full.</strong> Let $Q$ be null and nonzero, $Q=\lambda_+\Pi_+$, and let $P$ be a unit. Then</p>
+<p><strong>The zero-divisor case in full.</strong> Let $Q$ be null and nonzero, $Q=\lambda_+\Pi_+$, and let $P$ be an invertible element. Then</p>
 <p>$$
 M_Q=\lambda_+\rho_+,\qquad \operatorname{rank}=1,\qquad M_{QP}=\lambda_+\lambda_+(P)\,\rho_+,
 $$</p>
@@ -311,19 +311,19 @@ $$</p>
 <p><strong>The explicit shape.</strong> In the spectral frame the display is diagonal, so every rank statement is a statement about the number of non-zero products $\lambda_i(Q)\lambda_j(P)$. That is the whole of the stratification of this category: the strata are indexed by the pair of subsets of $\{+,-\}$ on which the two factors vanish, and there are four such strata, against the continuum of a matrix algebra.</p>
 <h2 id="the-pair-as-a-semigroup">The Pair as a Semigroup</h2>
 <p><strong>Composition.</strong> $L_{Q}R_{P}L_{Q'}R_{P'}=L_{QQ'}R_{P'P}$: the composition is the multiplication of the four factors in any order. So the map $(Q,P)\mapsto L_{Q}R_{P}$ is a homomorphism of the monoid $\mathbb{C}_{\mathrm{spl}}\times\mathbb{C}_{\mathrm{spl}}$ onto the monoid $(\mathbb{C}_{\mathrm{spl}},\cdot)$, with kernel the rescaling.</p>
-<p><strong>The units.</strong> The invertible members are those with $QP$ a unit, and the group is</p>
+<p><strong>The invertibles.</strong> The invertible members are those with $QP$ an invertible element, and the group is</p>
 <p>$$
 {\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2},
 $$</p>
-<p>of dimension two and four components. The group of two-sided operators is therefore the unit group of the algebra, and not the seven-dimensional product of the two one-sided groups of the quaternion category.</p>
+<p>of dimension two and four components. The group of two-sided operators is therefore the group of invertibles of the algebra, and not the seven-dimensional product of the two one-sided groups of the quaternion category.</p>
 <p><strong>The automorphisms of the algebra.</strong> The only automorphisms are the identity and the conjugation $j\mapsto-j$: as an $\mathbb{R}$-algebra, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\times\mathbb{R}$ and an automorphism is a permutation of the two idempotents. The group is $\mathbb{Z}/2\mathbb{Z}$, and its non-trivial element swaps the two Peirce lines and the two null lines.</p>
-<p><strong>The conjugation is outer in the algebra and inner in the ambient.</strong> The conjugation is not inner in $\mathbb{C}_{\mathrm{spl}}$, since the algebra is commutative and its unit group is abelian. But on the model it <em>is</em> implemented by an ambient inner automorphism,</p>
+<p><strong>The conjugation is outer in the algebra and inner in the ambient.</strong> The conjugation is not inner in $\mathbb{C}_{\mathrm{spl}}$, since the algebra is commutative and its group of invertibles is abelian. But on the model it <em>is</em> implemented by an ambient inner automorphism,</p>
 <p>$$
 \mathsf{M}_2(\bar Q)=g\,\mathsf{M}_2(Q)\,g^{-1},\qquad g=\operatorname{diag}(1,-1),\quad g^{2}=I_2,
 $$</p>
 <p>with $g$ a reflection of the plane, of determinant $-1$ and not in the image. So the Galois twist of the algebra is the conjugation by a matrix outside the algebra: the twist is outer where it lives and inner where it is represented. This is a sharper statement than the complex case, where the implementer was the transpose and not a conjugation at all.</p>
 <p><strong>The reading.</strong> The three groups — the automorphisms of the algebra, the inner automorphisms of the ambient, the conformal group of the form — are here three different objects of orders $2$, $4$ and infinite, and the model displays all three. In the quaternion category the first two coincided, which is why that category had a single operator layer.</p>
-<p><strong>The absence of a cover.</strong> Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the <em>ambient</em> do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{C}_{\mathrm{spl}})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the unit group of the algebra, of dimension two and four components. The inner automorphisms of the <em>algebra</em>, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.</p>
+<p><strong>The absence of a cover.</strong> Two facts have to be separated, because it is easy to conflate them. The inner automorphisms of the <em>ambient</em> do act on the family, but by moving it: $U\mathsf{M}_2(\mathbb{C}_{\mathrm{spl}})U^{-1}=\mathbb{R}[UJU^{-1}]$ is a conjugate copy of the algebra, and the stabiliser of the model is the group of invertibles of the algebra, of dimension two and four components. The inner automorphisms of the <em>algebra</em>, which is the group that the operator layer is about, are trivial, because the algebra is commutative. So there is no circle and no line acting on the algebra, no double cover inside the model, and no spin representation. The identity component of the conformal group is the boost line, which is simply connected; the abstract double cover $\mathrm{Spin}(1,1)\to SO^{+}(1,1)$ exists, but it is not realised by matrices of the image, because that would need a half-angle action and the spectrum has none.</p>
 <h2 id="the-cone-and-the-coefficient-matrix">The Cone and the Coefficient Matrix</h2>
 <p><strong>The parametrisation.</strong></p>
 <p>$$
@@ -356,7 +356,7 @@ $$</p>
 <p>$$
 \operatorname{rank}M_Q\in\{0,1,2\},\qquad \operatorname{rank}c(M_Q)=1\quad(M_Q\neq0).
 $$</p>
-<p>The two ranks differ exactly on the units, where the first is two and the second one, and they coincide exactly on the null lines, where the first has dropped to one. That is the opposite of the complex category, where the operator rank never dropped and the two ranks differed at every non-zero element.</p>
+<p>The two ranks differ exactly on the invertibles, where the first is two and the second one, and they coincide exactly on the null lines, where the first has dropped to one. That is the opposite of the complex category, where the operator rank never dropped and the two ranks differed at every non-zero element.</p>
 <p><strong>The table.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -415,14 +415,14 @@ $$</p>
 <li><strong>The doubling.</strong> The ambient two-sided operator doubles the rapidity on the two pure corners and kills it on the two mixed ones, and this is the only place in the block where a hyperbolic angle is doubled. It is the analogue of the $2\theta$ of the complex category, and it is the trace of the two-sided formula that the non-commutative categories make into a group action.</li>
 <li><strong>The faithfulness ladder.</strong> $\Theta$ sees the norm, $K$ sees the pair up to the simultaneous sign, $M$ sees the element; so the model separates three levels of information that the quaternion models cannot separate, because there all three are the same group.</li>
 </ul>
-<p><strong>What it does not buy: a group action.</strong> In the biquaternion category the two-sided operator is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the units is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the unit group on the algebra is the multiplication, which is the one-sided layer.</p>
+<p><strong>What it does not buy: a group action.</strong> In the biquaternion category the two-sided operator is the vector action and its image is $CO^{+}(1,3)$, a six-dimensional group acting on a four-dimensional space. Here the image on the invertibles is the ray of the identity, of dimension one, and it acts trivially on the algebra. So the two-sided family carries no action of a group on the carrier; what it carries is a scalar, and the action of the group of invertibles on the algebra is the multiplication, which is the one-sided layer.</p>
 <p><strong>What it does not buy: the half angle and the cover.</strong> The biquaternion has a half angle in the one-sided spectrum, hence a double cover and a spinor action. Here the spectrum is $\{\lambda_+,\lambda_-\}=\{r e^{\pm\theta_{\mathrm{rpd}}}\}$, the exponent is the full angle, and no cover appears. A square root of the operator exists exactly on the cone where both coordinates are non-negative, and it is a real square root and not a lift: so the half angle exists on a cone of the algebra and is not a representation-theoretic object.</p>
 <p><strong>What it does not buy: nilpotents.</strong> There is no nilpotent in the algebra, so there is no Jordan block, no maximal ideal of the form $(X^{2})$, and no unipotent one-parameter subgroup. The whole nilpotent apparatus of the reduced biquaternion category — the Jordan decomposition, the non-semisimple sector, the $\Sigma_{00}$ stratum — is empty here, and it is empty for the reason $x^{2}-1$ has distinct roots.</p>
 <p><strong>The residue.</strong> What remains of the operator layer, and it is not nothing: the conformal identity, the boost group, the rank ladder $\{0,1,2\}$, the four strata of the display, and the faithfulness ladder. These are the operators of the category, and they are all one-sided or tensor-square statements. The two-sided formula, which was the engine of the non-commutative categories, is here a restatement.</p>
 <h2 id="summary">Summary</h2>
 <ol>
 <li>The carrier is $\mathbb{C}_{\mathrm{spl}}$ of dimension two, the ambient is $M_2(\mathbb{R})$ of dimension four, and the one-sided family is the two-dimensional algebra of hyperbolic matrices.</li>
-<li>The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the units, $1$ on the null lines and $0$ at the origin.</li>
+<li>The one-sided operator is faithful, self-adjoint for both the trace and the Frobenius forms, and conformal for the split form with factor the norm; its rank is $2$ on the invertibles, $1$ on the null lines and $0$ at the origin.</li>
 <li>The polar word $Q=r\epsilon\exp(\theta_{\mathrm{rpd}} j)$ reads $M_Q=rM_\epsilon\exp(\theta_{\mathrm{rpd}} J)$, with eigenvalues $r\epsilon_\pm e^{\pm\theta_{\mathrm{rpd}}}$; the angle is full, the sign is a discrete label, and no cover appears.</li>
 <li>The two-sided operator depends on the pair only through the product, $L_{Q}R_{P}=M_{QP}$, so the two-sided family is the algebra and the parametrisation has two-dimensional fibres.</li>
 <li>The two-sided operator is a scalar on the carrier, $\mathrm{Sd}_Q=\langle Q\rangle_{*}\operatorname{id}$, because the inner automorphism group of a commutative algebra is trivial; it is faithful only up to the norm, and it forgets the boost entirely.</li>
@@ -494,7 +494,7 @@ $$</p>
 </tr>
 <tr>
 <td>$SO^{+}(1,1)$</td>
-<td>the boost group, the identity component of the units</td>
+<td>the boost group, the identity component of the invertibles</td>
 <td><em>Exponential Polar Decomposition of Split-Complex Numbers</em></td>
 </tr>
 </tbody>

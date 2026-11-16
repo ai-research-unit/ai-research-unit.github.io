@@ -189,7 +189,7 @@ $$</p>
 <p>The spectral decomposition exists in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$, and in the scalar case $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, including the zero element. The polar decomposition exists on all units. The two domains overlap but neither contains the other:</p>
 <ul>
 <li>a <strong>zero divisor</strong> with $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has two distinct eigenvalues and a two-term spectral decomposition, but no polar word;</li>
-<li>a <strong>Jordan element</strong> with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is a unit and has a polar word.</li>
+<li>a <strong>Jordan element</strong> with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is invertible and has a polar word.</li>
 </ul>
 <p>The table records the regimes of <em>The Spectrum</em>, §<em>The Two Cases</em>, with the polar status added; the zero element is separated from the scalar regime.</p>
 <div class="table-scroll"><table>
@@ -236,14 +236,14 @@ $$</p>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$</td>
 <td>one eigenvalue $0$</td>
 <td>no</td>
-<td>no: not a unit</td>
+<td>no: not an invertible element</td>
 </tr>
 <tr>
 <td>Zero</td>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$</td>
 <td>the eigenvalue $0$</td>
 <td>one-term, $\tilde Q=0$</td>
-<td>no: not a unit</td>
+<td>no: not an invertible element</td>
 </tr>
 </tbody>
 </table></div>
@@ -876,13 +876,13 @@ $$</p>
 <td>Nilpotent</td>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$</td>
 <td>$\lambda_\pm=0$; no decomposition</td>
-<td>none: not a unit</td>
+<td>none: not an invertible element</td>
 </tr>
 <tr>
 <td>Zero</td>
 <td>$Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q=0$, $Q_t=0$</td>
 <td>$\lambda_\pm=0$; the zero element</td>
-<td>none: not a unit</td>
+<td>none: not an invertible element</td>
 </tr>
 </tbody>
 </table></div>
@@ -904,7 +904,7 @@ $$</p>
 \qquad
 \Bigl(\frac{\vec Q}{Q_t}\Bigr)^2=0.
 $$</p>
-<p>The matrix model is a Jordan block with the repeated eigenvalue $Q_t$, and there is no two-term idempotent decomposition: the eigenprojection is not defined. The element is nevertheless a unit, and it has a polar word. Its unit factor is unipotent,</p>
+<p>The matrix model is a Jordan block with the repeated eigenvalue $Q_t$, and there is no two-term idempotent decomposition: the eigenprojection is not defined. The element is nevertheless an invertible element, and it has a polar word. Its unit factor is unipotent,</p>
 <p>$$
 \tilde U=e_t+\frac{\vec Q}{Q_t},
 \qquad
@@ -982,7 +982,7 @@ $$</p>
 <h3 id="the-kernel-and-the-fibre">The Kernel and the Fibre</h3>
 <p>The exponential of $\mathbb{B}$ is not injective. Its kernel is the set of exponents that exponentiate to the identity; by <em>Biquaternion Elementary Functions</em>, §<em>The Exponential</em>, it consists of the diagonalisable elements whose eigenvalues lie in $2\pi i\mathbb{Z}$, and it is not a subgroup. In spectral terms:</p>
 <ul>
-<li>in the distinct case, the logarithms of a unit are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_++n\tilde\Pi_-)$, a copy of $\mathbb{Z}^2$;</li>
+<li>in the distinct case, the logarithms of an invertible element are $\operatorname{Log}\tilde Q+2\pi i(m\tilde\Pi_++n\tilde\Pi_-)$, a copy of $\mathbb{Z}^2$;</li>
 <li>in the scalar case, the logarithms are the translate $\operatorname{Log}Q_t\,e_t+\ker\exp$ of the whole kernel by the scalar logarithm, because every kernel element may be added;</li>
 <li>in the Jordan case, the logarithm is discrete, one point for each choice of the scalar logarithm;</li>
 <li>on the zero-divisor and nilpotent boundary there is no logarithm.</li>

@@ -70,8 +70,8 @@
       <div class="article-body">
         <h1 id="one-sided-operators-on-the-n-regular-sector"><strong>One-Sided Operators on the N-Regular Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two, and the split is the primary one for the operators: $N\neq0$ is the unit group $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, open and dense of real dimension eight, and $N=0$ is the null cone, closed of real dimension six. This article treats the first half.</p>
-<p>Throughout, $\tilde Q$ lies in the <strong>N-regular sector</strong>, so $N\neq0$ and $\tilde Q$ is a unit. The biquaternion algebra acts on itself by left and right multiplication. For a parameter $\tilde Q$ the two <strong>one-sided operators</strong> are</p>
+<p>The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two, and the split is the primary one for the operators: $N\neq0$ is the group of invertibles $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, open and dense of real dimension eight, and $N=0$ is the null cone, closed of real dimension six. This article treats the first half.</p>
+<p>Throughout, $\tilde Q$ lies in the <strong>N-regular sector</strong>, so $N\neq0$ and $\tilde Q$ is invertible. The biquaternion algebra acts on itself by left and right multiplication. For a parameter $\tilde Q$ the two <strong>one-sided operators</strong> are</p>
 <p>$$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$</p>
@@ -144,10 +144,10 @@ $$</p>
 <p><strong>(b)</strong> $L_{\tilde Q}\circ L_{\tilde Q'}=L_{\tilde Q\tilde Q'}$ and $R_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'\tilde Q}$;</p>
 <p><strong>(c)</strong> $L_{\tilde Q}\circ R_{\tilde Q'}=R_{\tilde Q'}\circ L_{\tilde Q}$;</p>
 <p><strong>(d)</strong> the parameter maps $\tilde Q\mapsto L_{\tilde Q}$ and $\tilde Q\mapsto R_{\tilde Q}$ are injective;</p>
-<p><strong>(e)</strong> $L_{\tilde Q}$ and $R_{\tilde Q}$ are invertible exactly when $\tilde Q$ is a unit, with $L_{\tilde Q}^{-1}=L_{\tilde Q^{-1}}$ and $R_{\tilde Q}^{-1}=R_{\tilde Q^{-1}}$.</p>
-<p><em>Proof.</em> (a) The product is $\mathbb{C}$-bilinear. (b) and (c) are associativity. (d) $L_{\tilde Q}=0$ forces $\tilde Q=L_{\tilde Q}(e_t)=0$, and $R_{\tilde Q}=0$ forces $\tilde Q=R_{\tilde Q}(e_t)=0$. (e) $L_{\tilde Q}L_{\tilde Q^{-1}}=L_{e_t}=\mathrm{id}$ and $R_{\tilde Q}R_{\tilde Q^{-1}}=R_{e_t}=\mathrm{id}$; a non-unit is a zero divisor, so it cannot be invertible.</p>
+<p><strong>(e)</strong> $L_{\tilde Q}$ and $R_{\tilde Q}$ are invertible exactly when $\tilde Q$ is invertible, with $L_{\tilde Q}^{-1}=L_{\tilde Q^{-1}}$ and $R_{\tilde Q}^{-1}=R_{\tilde Q^{-1}}$.</p>
+<p><em>Proof.</em> (a) The product is $\mathbb{C}$-bilinear. (b) and (c) are associativity. (d) $L_{\tilde Q}=0$ forces $\tilde Q=L_{\tilde Q}(e_t)=0$, and $R_{\tilde Q}=0$ forces $\tilde Q=R_{\tilde Q}(e_t)=0$. (e) $L_{\tilde Q}L_{\tilde Q^{-1}}=L_{e_t}=\mathrm{id}$ and $R_{\tilde Q}R_{\tilde Q^{-1}}=R_{e_t}=\mathrm{id}$; a non-invertible is a zero divisor, so it cannot be invertible.</p>
 <p><strong>Remark (multiplicativity).</strong> The map $\tilde Q\mapsto L_{\tilde Q}$ is multiplicative into $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, but a single $L_{\tilde Q}$ is rarely an algebra endomorphism: $L_{\tilde Q}(\tilde X\tilde Y)=\tilde Q\tilde X\tilde Y$ while $L_{\tilde Q}(\tilde X)L_{\tilde Q}(\tilde Y)=\tilde Q\tilde X\tilde Q\tilde Y$, so multiplicativity forces $\tilde Q$ to be a central idempotent. In $\mathbb{B}$ the central idempotents are $0$ and $e_t$, so the only nonzero multiplicative left multiplication is the identity. The representation property is the composition law (b), not the multiplicativity of each $L_{\tilde Q}$.</p>
-<p><strong>Remark (linear versus quadratic).</strong> The map $\tilde Q\mapsto L_{\tilde Q}$ is linear and faithful. The map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is quadratic, and on the unit group its kernel is $U(1)$, as the companion article proves. The one-sided operator carries the whole parameter; the two-sided operator carries the parameter up to a central phase. This is the first reason the phase is visible one-sided and invisible two-sided.</p>
+<p><strong>Remark (linear versus quadratic).</strong> The map $\tilde Q\mapsto L_{\tilde Q}$ is linear and faithful. The map $\tilde Q\mapsto\mathrm{Sd}_{\tilde Q}$ is quadratic, and on the group of invertibles its kernel is $U(1)$, as the companion article proves. The one-sided operator carries the whole parameter; the two-sided operator carries the parameter up to a central phase. This is the first reason the phase is visible one-sided and invisible two-sided.</p>
 <p><strong>Remark (left translation, not conjugation).</strong> $L_{\tilde Q}$ is a left translation of the algebra. It is an automorphism only for a central parameter. The two-sided operator is an inner conjugation only when $\tilde Q\tilde Q^{*}=e_t$, where the right factor is the inverse; for a general invertible element it is a congruence by $\tilde U_{\mathrm b}$ and a conjugation by $\tilde u_{\mathrm r}$. The two-sided article treats that distinction in full.</p>
 <h3 id="the-factorisation-through-the-polar-word">The Factorisation Through the Polar Word</h3>
 <p><strong>Proposition.</strong> With $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,</p>
@@ -361,7 +361,7 @@ $$</p>
 \tilde X\tilde Q^{*}=-\tilde Q\tilde X .
 $$</p>
 <p>Taking $\tilde X=ie_t$ gives $i\tilde Q^{*}=-i\tilde Q$, hence $\tilde Q^{*}=-\tilde Q$. Taking $\tilde X=\vec e_x$ gives $\vec e_x(-\tilde Q)=-\tilde Q\vec e_x$, that is $\vec e_x\tilde Q=\tilde Q\vec e_x$; the same holds with $\vec e_y$ and $\vec e_z$. An anti-Hermitian element commuting with the three vector units is a purely imaginary scalar, by the same coefficient argument. The converse is immediate.</p>
-<p><strong>Corollary (the only one-sided Lorentz transformations).</strong> Among the units, the real scalars are the only left multiplications that preserve $\mathbb{B}_{\Phi}$, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore gives no nontrivial real Lorentz transformation of $\mathbb{B}_{\Phi}$; the real Lorentz group is the image of the two-sided operator, not of the one-sided operator.</p>
+<p><strong>Corollary (the only one-sided Lorentz transformations).</strong> Among the invertibles, the real scalars are the only left multiplications that preserve $\mathbb{B}_{\Phi}$, and among them the only isometries of $g$ are $\pm\mathrm{id}$. The one-sided action therefore gives no nontrivial real Lorentz transformation of $\mathbb{B}_{\Phi}$; the real Lorentz group is the image of the two-sided operator, not of the one-sided operator.</p>
 <h2 id="the-pure-central-phase-of-math293">The Pure Central Phase of $\pi/2$</h2>
 <h3 id="the-operator">The Operator</h3>
 <p><strong>Definition.</strong> The <strong>pure central phase of $\pi/2$</strong> is the factor $P=\exp(i\pi/2)=i$, and its operator is</p>
@@ -521,17 +521,17 @@ $$</p>
 <p>The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.</p>
 <h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
 <p><strong>Proposition.</strong> Let $\tilde Q\in\mathbb{B}$.</p>
-<p><strong>(a)</strong> The parameter map $\tilde Q\mapsto L_{\tilde Q}$ is injective. The operator $L_{\tilde Q}$ is injective exactly when $\tilde Q$ is a unit.</p>
-<p><strong>(b)</strong> For a unit $\tilde Q$, $L_{\tilde Q}$ is a bijection of $\mathbb{B}$.</p>
+<p><strong>(a)</strong> The parameter map $\tilde Q\mapsto L_{\tilde Q}$ is injective. The operator $L_{\tilde Q}$ is injective exactly when $\tilde Q$ is invertible.</p>
+<p><strong>(b)</strong> For an invertible element $\tilde Q$, $L_{\tilde Q}$ is a bijection of $\mathbb{B}$.</p>
 <p><strong>(c)</strong> For a nonzero null $\tilde Q$, the operator $L_{\tilde Q}$ has complex rank two, its kernel is the right annihilator $\{\tilde X:\tilde Q\tilde X=0\}$ of complex dimension two, and its image is the right ideal $\tilde Q\mathbb{B}$ of complex dimension two.</p>
 <p><strong>(d)</strong> For $\tilde Q=0$ the operator is zero.</p>
-<p><em>Proof.</em> (a) Injectivity of the parameter map is (d) of the first proposition. If $\tilde Q$ is a unit, $L_{\tilde Q}^{-1}=L_{\tilde Q^{-1}}$. If $\tilde Q$ is a nonzero null element, $\mathsf M_2(\tilde Q)$ has rank one, so the kernel of $X\mapsto\mathsf M_2(\tilde Q)X$ is the two-dimensional space of matrices whose columns lie in the kernel of $\mathsf M_2(\tilde Q)$, and the image is the two-dimensional space of matrices whose columns lie in the image. (b) is (e) of the first proposition. (c) is the matrix computation just given. (d) is immediate.</p>
-<p><strong>Proposition (the image on the group of units).</strong> The restriction of $\tilde Q\mapsto L_{\tilde Q}$ to $\mathbb{B}^{\times}$ is a faithful representation whose image is a subgroup of $GL_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}^{\times}$. As a complex Lie group,</p>
+<p><em>Proof.</em> (a) Injectivity of the parameter map is (d) of the first proposition. If $\tilde Q$ is invertible, $L_{\tilde Q}^{-1}=L_{\tilde Q^{-1}}$. If $\tilde Q$ is a nonzero null element, $\mathsf M_2(\tilde Q)$ has rank one, so the kernel of $X\mapsto\mathsf M_2(\tilde Q)X$ is the two-dimensional space of matrices whose columns lie in the kernel of $\mathsf M_2(\tilde Q)$, and the image is the two-dimensional space of matrices whose columns lie in the image. (b) is (e) of the first proposition. (c) is the matrix computation just given. (d) is immediate.</p>
+<p><strong>Proposition (the image on the group of invertibles).</strong> The restriction of $\tilde Q\mapsto L_{\tilde Q}$ to $\mathbb{B}^{\times}$ is a faithful representation whose image is a subgroup of $GL_{\mathbb{C}}(\mathbb{B})$ isomorphic to $\mathbb{B}^{\times}$. As a complex Lie group,</p>
 <p>$$
 \boxed{\;\mathbb{B}^{\times}\cong GL(2,\mathbb{C})\;},
 $$</p>
 <p>of complex dimension four and real dimension eight. The kernel is trivial.</p>
-<p><em>Proof.</em> The map is injective by (a) and multiplicative by the composition law, so it is a faithful representation. The algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ identifies the units with $GL(2,\mathbb{C})$.</p>
+<p><em>Proof.</em> The map is injective by (a) and multiplicative by the composition law, so it is a faithful representation. The algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ identifies the invertibles with $GL(2,\mathbb{C})$.</p>
 <p><strong>Corollary (the contrast with the two-sided operator).</strong> The two-sided image is the conformal Lorentz group $CO^{+}(1,3)$, of real dimension seven, with kernel $U(1)$. The one-sided image is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, of real dimension eight, with trivial kernel. The missing dimension is the phase: the one-sided action sees it, the two-sided action quotients by it.</p>
 <p>The following table collects the comparison. The rank is the complex rank of the operator on $\mathbb{B}$.</p>
 <div class="table-scroll"><table>
@@ -546,7 +546,7 @@ $$</p>
 <tr>
 <td>parameter map</td>
 <td>linear, faithful</td>
-<td>quadratic; kernel $U(1)$ on the units</td>
+<td>quadratic; kernel $U(1)$ on the invertibles</td>
 </tr>
 <tr>
 <td>scale</td>
@@ -569,12 +569,12 @@ $$</p>
 <td>$r^{8}$</td>
 </tr>
 <tr>
-<td>image on the units</td>
+<td>image on the invertibles</td>
 <td>$\cong GL(2,\mathbb{C})$, real dimension $8$</td>
 <td>$\cong CO^{+}(1,3)$, real dimension $7$</td>
 </tr>
 <tr>
-<td>kernel on the units</td>
+<td>kernel on the invertibles</td>
 <td>trivial</td>
 <td>$U(1)$</td>
 </tr>
@@ -672,7 +672,7 @@ $$</p>
 $$</p>
 <p>Their left multiplication matrices are not unipotent. Their product is the unipotent matrix above. The example shows the same contrast as the element-level article: the factors are diagonalizable, the product is not.</p>
 <h3 id="the-image-and-the-kernel-of-the-nilpotent-part">The Image and the Kernel of the Nilpotent Part</h3>
-<p>Because $\tilde Q$ is a unit, $L_{\tilde Q}$ is invertible: its image is the whole algebra and its kernel is zero. The interesting image and kernel are those of $L_{\vec\Upsilon}$, not of $L_{\tilde Q}$.</p>
+<p>Because $\tilde Q$ is invertible, $L_{\tilde Q}$ is invertible: its image is the whole algebra and its kernel is zero. The interesting image and kernel are those of $L_{\vec\Upsilon}$, not of $L_{\tilde Q}$.</p>
 <p>The image of $L_{\vec\Upsilon}$ is the left ideal generated by $\vec\Upsilon$,</p>
 <p>$$
 \operatorname{im}L_{\vec\Upsilon}=\mathbb{B}\vec\Upsilon
@@ -738,7 +738,7 @@ $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
 so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is $S\otimes S^{*}$; $L$ acts on each copy of $S$ and is $2\rho$, two copies of the Weyl spinor. The spectral form of the half-spin and of the doubling is in the companion article.</p>
-<p>The image of the one-sided action on the units is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, of real dimension eight, with trivial kernel. The image of the two-sided action is $CO^{+}(1,3)$, of real dimension seven, with kernel $U(1)$. The missing dimension is the phase. On the null cone the one-sided operator has rank two and image the right ideal $\tilde Q\mathbb{B}$; the two-sided operator has rank one and image the line $\mathbb{C}\tilde Q\tilde Q^{*}$.</p>
+<p>The image of the one-sided action on the invertibles is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, of real dimension eight, with trivial kernel. The image of the two-sided action is $CO^{+}(1,3)$, of real dimension seven, with kernel $U(1)$. The missing dimension is the phase. On the null cone the one-sided operator has rank two and image the right ideal $\tilde Q\mathbb{B}$; the two-sided operator has rank one and image the line $\mathbb{C}\tilde Q\tilde Q^{*}$.</p>
 <p>The one-sided multiplication is a left translation of the algebra. The two-sided operator is the product of a left translation and a right translation, and it is that product which gives the real Lorentz transformations. The phase is the clearest witness: one-sided it is the exchange of the two real forms, two-sided it is the identity.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -843,11 +843,11 @@ so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is 
 </tr>
 <tr>
 <td>$GL(2,\mathbb{C})$</td>
-<td>the image of the one-sided action on the units</td>
+<td>the image of the one-sided action on the invertibles</td>
 </tr>
 <tr>
 <td>$CO^{+}(1,3)$</td>
-<td>the image of the two-sided action on the units</td>
+<td>the image of the two-sided action on the invertibles</td>
 </tr>
 <tr>
 <td>$U(1)$</td>

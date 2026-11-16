@@ -79,7 +79,7 @@ $$</p>
 <p>$$
 \langle Q\rangle = Q\bar Q = (a + b\varepsilon)(a - b\varepsilon) = a^2,
 $$</p>
-<p>where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate quadratic form of rank one, multiplicative, with radical the maximal ideal $\mathrm{M} = (\varepsilon) = \{a = 0\}$; it vanishes exactly on $\mathrm{M}$ and is non-zero exactly on the units. These facts are those of <em>Dual-Numbers Norm and Invertibility</em>. The <strong>characteristic polynomial</strong> of $Q$ is the characteristic polynomial of $L_Q$; it is computed below. The matrix-element representation $\mathsf{M}_2$ of <em>Dual-Numbers Matrix Element Representation</em> is used only to compare conventions, and the eigenvalue decomposition of a general element is <em>The Eigenvalue Decomposition of an Element</em>. The companion articles <em>The Defective Sector of the Dual-Number Algebra</em> and <em>Relations between the Dual Norm and Spectral Degeneracy</em> take up the defect and the comparison with the norm.</p>
+<p>where $\bar Q = a - b\varepsilon$ is dual conjugation. The norm is a degenerate quadratic form of rank one, multiplicative, with radical the maximal ideal $\mathrm{M} = (\varepsilon) = \{a = 0\}$; it vanishes exactly on $\mathrm{M}$ and is non-zero exactly on the invertibles. These facts are those of <em>Dual-Numbers Norm and Invertibility</em>. The <strong>characteristic polynomial</strong> of $Q$ is the characteristic polynomial of $L_Q$; it is computed below. The matrix-element representation $\mathsf{M}_2$ of <em>Dual-Numbers Matrix Element Representation</em> is used only to compare conventions, and the eigenvalue decomposition of a general element is <em>The Eigenvalue Decomposition of an Element</em>. The companion articles <em>The Defective Sector of the Dual-Number Algebra</em> and <em>Relations between the Dual Norm and Spectral Degeneracy</em> take up the defect and the comparison with the norm.</p>
 <h2 id="the-eigenvalue-problem">The Eigenvalue Problem</h2>
 <p><strong>An eigenvalue is a scalar for which the translate $Q-\lambda$ has a non-zero kernel, and the criterion is the invertibility criterion of the algebra.</strong></p>
 <p><strong>Definition (eigenvalue).</strong> A scalar $\lambda\in R$ is an <strong>eigenvalue</strong> of $Q$ if there is a non-zero $v\in\mathbb{C}_{\mathrm{dln},R}$ with</p>
@@ -91,8 +91,8 @@ $$</p>
 E_\lambda(Q) = \ker L_{Q-\lambda} = \{v : (Q-\lambda)v = 0\},
 $$</p>
 <p>where $L_A(v) = Av$ is left multiplication. The <strong>spectrum</strong> $\sigma(Q)$ is the set of eigenvalues.</p>
-<p><strong>Proposition (the eigenvalue criterion).</strong> A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not a unit of $\mathbb{C}_{\mathrm{dln},R}$.</p>
-<p><em>Proof.</em> If $Q-\lambda$ is a unit and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not a unit, then its real part $a-\lambda$ vanishes, because the units of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and</p>
+<p><strong>Proposition (the eigenvalue criterion).</strong> A scalar $\lambda$ is an eigenvalue of $Q$ if and only if $Q-\lambda$ is not invertible of $\mathbb{C}_{\mathrm{dln},R}$.</p>
+<p><em>Proof.</em> If $Q-\lambda$ is invertible and $(Q-\lambda)v = 0$, then $v = (Q-\lambda)^{-1}(Q-\lambda)v = 0$, so no non-zero eigenvector exists. Conversely, if $Q-\lambda$ is not invertible, then its real part $a-\lambda$ vanishes, because the invertibles of $\mathbb{C}_{\mathrm{dln},R}$ are exactly the elements with non-zero real part. Hence $Q-\lambda = b\varepsilon$, and</p>
 <p>$$
 (Q-\lambda)\varepsilon = b\varepsilon^2 = 0
 $$</p>
@@ -371,7 +371,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="dual-numbers-algebra.html">Dual-Numbers Algebra</a>, for the algebra, the two conjugations, the maximal ideal and the group of units.</li>
+<li><a href="dual-numbers-algebra.html">Dual-Numbers Algebra</a>, for the algebra, the two conjugations, the maximal ideal and the group of invertibles.</li>
 <li><a href="dual-numbers-norm-and-invertibility.html">Dual-Numbers Norm and Invertibility</a>, for the norm, its degeneracy, the Euclidean form and the invertibility criterion.</li>
 <li><a href="m2r-triangular-representation.html">$M_2(R)$ Triangular Representation</a>, for the matrix model, the characteristic polynomial and the transpose convention.</li>
 <li><a href="dual-numbers-linear-representations.html">Dual-Numbers Linear Representations</a>, for the regular representation in the basis $(1,\varepsilon)$.</li>

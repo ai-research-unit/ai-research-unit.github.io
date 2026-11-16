@@ -162,15 +162,15 @@ each character with multiplicity one.</p>
 </tbody>
 </table></div>
 <p><strong>The idempotent coordinates are the universal representation.</strong> Every other reading is the pair $(Q_{+},Q_{-})$ written in another alphabet: the four-vector splits each of $Q_{+}$ and $Q_{-}$ into two reals, the matrix puts them on the diagonal, the other algebraic representations formalise the isomorphism $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$, the polar writes each in polar form, and the operator representation is the regular representation of the same pair. A statement is written in the representation that makes it shortest, and the <strong>two characters $\lambda_+,\lambda_-$ are the two coordinates of the universal one</strong>.</p>
-<h2 id="the-representations-of-the-unit-group">The Representations of the Unit Group</h2>
-<p><strong>The units are $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, an abelian group all of whose irreducible complex representations are one-dimensional.</strong></p>
-<p><strong>Theorem.</strong> $U=Q_{+}\Pi_++Q_{-}\Pi_-$ is a unit if and only if $\langle U\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; the unit group is
+<h2 id="the-representations-of-the-group-of-invertibles">The Representations of the Group of Invertibles</h2>
+<p><strong>The invertibles are $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, an abelian group all of whose irreducible complex representations are one-dimensional.</strong></p>
+<p><strong>Theorem.</strong> $U=Q_{+}\Pi_++Q_{-}\Pi_-$ is invertible if and only if $\langle U\rangle_{\mathrm{ts}}=Q_{+}Q_{-}\neq0$, that is $Q_{+}\neq0$ and $Q_{-}\neq0$; the group of invertibles is
 $$
 \boxed{\;{\mathbb{B}_{\mathrm{red}}}^{\times}\cong\mathbb{C}^{\times}\times\mathbb{C}^{\times}\cong (S^{1}\times S^{1})\times(\mathbb{R}_{>0}\times\mathbb{R}_{>0})\;},
 $$
 connected and abelian.</p>
 <p><em>Proof.</em> The criterion is that of <em>Norm and Invertibility in the Algebra of the Reduced Biquaternions</em>, and the decomposition $\mathbb{C}^{\times}\cong S^{1}\times\mathbb{R}_{>0}$ by modulus and argument gives the display; a product of connected sets is connected and abelian.</p>
-<p><strong>Corollary (the characters).</strong> The irreducible complex representations of the unit group are the one-dimensional characters
+<p><strong>Corollary (the characters).</strong> The irreducible complex representations of the group of invertibles are the one-dimensional characters
 $$
 \chi_{m,n}(U)=Q_{+}^{m}Q_{-}^{n},\qquad (m,n)\in\mathbb{Z}^{2},
 $$
@@ -178,7 +178,7 @@ extending the two characters of the algebra; the full group of continuous charac
 $$
 U\mapsto Q_{+}^{m}|Q_{+}|^{it}Q_{-}^{n}|Q_{-}|^{is},\qquad (m,n)\in\mathbb{Z}^{2},\ (t,s)\in\mathbb{R}^{2},
 $$
-with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>abelian</strong>, so every irreducible representation is one-dimensional; there is no representation of dimension greater than one, against the non-abelian unit group of the biquaternion algebra and its higher-dimensional representations.</p>
+with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>abelian</strong>, so every irreducible representation is one-dimensional; there is no representation of dimension greater than one, against the non-abelian group of invertibles of the biquaternion algebra and its higher-dimensional representations.</p>
 <p><em>Proof.</em> An abelian group has only one-dimensional irreducible complex representations, by Schur's lemma. The characters $\chi_{m,n}$ are the holomorphic ones, the two integers being the exponents on the two factors; adjoining the two real exponents of the moduli gives the continuous character group, because the continuous characters of $\mathbb{C}^{\times}$ are $z\mapsto z^{m}|z|^{it}$.</p>
 <h2 id="the-relation-to-the-split-biquaternions-and-to-the-biquaternions">The Relation to the Split Biquaternions and to the Biquaternions</h2>
 <p><strong>The reduced biquaternions are the commutative member of the semisimple family; the split biquaternions are its non-commutative member and the biquaternions the simple member.</strong></p>
@@ -190,7 +190,7 @@ with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>
 <th>structure</th>
 <th>simple modules</th>
 <th>division ring of a simple</th>
-<th>unit group</th>
+<th>group of invertibles</th>
 <th>regular representation</th>
 </tr>
 </thead>
@@ -226,7 +226,7 @@ with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>
 <p><strong>Corollary (the smallest simples).</strong> The reduced algebra has the smallest simple modules of the three, of complex dimension one over the commutative base; its representation theory is therefore the product of two copies of the representation theory of $\mathbb{C}$, the simplest member of the family. All three algebras are semisimple, the reduced and the split biquaternion by being products, the biquaternion by being a full matrix algebra; none of the three needs the theory of modules over a non-semisimple ring.</p>
 <p><em>Proof.</em> The two product cases are semisimple as products of division algebras, and the matrix algebra is semisimple by Wedderburn; the simples of the reduced algebra are one-dimensional because each factor is a field, and a module over a field is a vector space.</p>
 <h2 id="summary">Summary</h2>
-<p>The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}_{\mathrm{red}}$; the simple modules are exactly the two characters $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$ and $\lambda_-(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{-}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The unit group is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.</p>
+<p>The reduced biquaternion algebra is commutative, associative and unital, and it is the direct product of two copies of $\mathbb{C}$; its representation theory is therefore the simplest of the corpus. A representation is a module; the regular representation $\breve Q\mapsto L_{\breve Q}$ is faithful with image $\{L_{\breve Q}\}\cong\mathbb{B}_{\mathrm{red}}$; the simple modules are exactly the two characters $\lambda_+(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{+}$ and $\lambda_-(Q_{+}\Pi_++Q_{-}\Pi_-)=Q_{-}$, of complex dimension one, and every module is a direct sum of copies of them. The regular representation is $\lambda_+\oplus\lambda_-$, each with multiplicity one, its non-zero submodules are the two idempotent lines, and those two lines are the minimal ideals and the zero divisors. Schur's lemma gives $\operatorname{End}(\lambda_{i})=\mathbb{C}$ and no intertwiner between $\lambda_+$ and $\lambda_-$. The element is written in the six representations of the table, the idempotent coordinates being the universal one and the two characters its two coordinates. The group of invertibles is $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, abelian and connected, with the one-dimensional characters $\chi_{m,n}$ and no higher-dimensional irreducible representation; the multiplication has zero divisors and is not a division algebra. As a module over itself the algebra has composition length two, with the same two simple factors in the readings over $\mathbb{C}$ of rank two and over $\mathbb{R}$ of rank four, and the comparison of the three algebras places it as the commutative member of the semisimple family, against the non-commutative split biquaternions $\mathbb{H}\oplus\mathbb{H}$ and the simple biquaternions $M_{2}(\mathbb{C})$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -254,11 +254,11 @@ with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>
 </tr>
 <tr>
 <td>${\mathbb{B}_{\mathrm{red}}}^{\times}$</td>
-<td>the unit group, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$</td>
+<td>the group of invertibles, $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$</td>
 </tr>
 <tr>
 <td>$\chi_{m,n}(U)=Q_{+}^{m}Q_{-}^{n}$</td>
-<td>the holomorphic characters of the unit group</td>
+<td>the holomorphic characters of the group of invertibles</td>
 </tr>
 </tbody>
 </table></div>
@@ -267,7 +267,7 @@ with character group $\mathbb{Z}^{2}\times\mathbb{R}^{2}$. The group is <strong>
 <li><a href="reduced-biquaternion-space.html">Reduced Biquaternion Space</a>, for the multiplication and the isomorphism $\mathbb{C}\oplus\mathbb{C}$.</li>
 <li><a href="introduction-to-the-algebra-of-the-reduced-biquaternions.html">Introduction to the Algebra of the Reduced Biquaternions</a>, for the algebra read as an algebra.</li>
 <li><a href="ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html">Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions</a>, for the idempotent coordinates and the minimal ideals.</li>
-<li><a href="the-group-of-units-of-the-algebra-of-the-reduced-biquaternions.html">The Group of Units of the Algebra of the Reduced Biquaternions</a>, for the unit group and its complement.</li>
+<li><a href="the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html">The Group of Invertibles of the Algebra of the Reduced Biquaternions</a>, for the group of invertibles and its complement.</li>
 <li><a href="m2c-reduced-representation-operators.html">$M_2(\mathbb{C})$ Reduced Representation : Operators</a>, for the multiplication operators of the four products.</li>
 <li><a href="the-category-of-modules.html">The Category of Modules</a>, for the non-commutative companion and the one simple module of dimension two.</li>
 <li><a href="split-biquaternion-linear-representations.html">Split-Biquaternion Element Representation Theory</a>, for the non-commutative semisimple companion with its two four-dimensional simple modules.</li>

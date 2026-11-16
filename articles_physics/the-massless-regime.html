@@ -74,7 +74,7 @@
 <p>$$
 \Sigma_{01}=\{N=0,\ B^{2}\neq0\},\qquad N=Q_t^{2}+B^{2},\qquad B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}.
 $$</p>
-<p><strong>The two predicates are the ones the partition entry named, and here they give opposite answers.</strong> The norm fails: the element is a zero divisor, it has no inverse, and it lies on the wall of the unit group. The vector square holds: the two eigenvalues are distinct, the eigenbasis exists, and the Peirce decomposition attached to the element is unique.</p>
+<p><strong>The two predicates are the ones the partition entry named, and here they give opposite answers.</strong> The norm fails: the element is a zero divisor, it has no inverse, and it lies on the wall of the group of invertibles. The vector square holds: the two eigenvalues are distinct, the eigenbasis exists, and the Peirce decomposition attached to the element is unique.</p>
 <p><strong>The first claim is that the failure is a single failure.</strong> Every element of the stratum is a non-zero complex multiple of a primitive idempotent, $\tilde Q=\kappa\tilde\Pi$ with $\kappa=2Q_t\neq0$; every spectral description survives because the two eigenvalues $\kappa$ and $0$ are distinct; and every description that needs a magnitude fails, because the magnitude is zero. One predicate is false and the other is true, and the descriptions divide exactly along that line.</p>
 <p><strong>The second claim is that when the norm is gone the trace normalises.</strong> On a null line no modulus is available, so the usual normalisation $\tilde Q/\sqrt N$ has no value. It is replaced by $\tilde\Pi=\tilde Q/(2Q_t)$, and the replacement is canonical: each null line that is not a nilpotent line contains exactly one idempotent. So the stratum carries a section of its own projectivisation, and the section is not a choice.</p>
 <p><strong>The third claim is that the direction is the whole frame content.</strong> The idempotent is the direction, the coefficient is a complex scale, and the stratum is a $\mathbb{C}^{\times}$-bundle over the null quadric with the nilpotent conic removed. On the material slice the base is the celestial sphere and the fibre is the energy. There is no third datum, and nothing inside a direction is distinguished.</p>
@@ -133,7 +133,7 @@ $$</p>
 <td><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a></td>
 </tr>
 <tr>
-<td>the multiplicative norm, the unit group and the null cone</td>
+<td>the multiplicative norm, the group of invertibles and the null cone</td>
 <td><a href="../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a></td>
 </tr>
 </tbody>
@@ -323,8 +323,8 @@ $$</p>
 \mathcal N\setminus\Sigma_{01}=\Sigma_{00}=\{\tilde Q^{2}=0\}.
 $$</p>
 <p><strong>The removed part is the set of nilpotent directions and the apex.</strong> At those points $Q_t=0$, the idempotent $\tilde Q/(2Q_t)$ is undefined, and the direction is not a projector but a null flag. So the stratum's boundary inside the cone is exactly the locus on which its own parametrisation fails, which is not true of the previous stratum and is the reason the two mixed strata behave so differently.</p>
-<p><strong>The stratum is connected and it is homogeneous.</strong> It is a single orbit of $\mathbb{C}^{\times}\times\mathbb{B}^{\times}$ acting by scaling and inner automorphisms, because the unit group acts transitively on the primitive idempotents. So no element of the stratum is distinguished from any other except by the value of $\kappa$, and the value of $\kappa$ is fixed by the element.</p>
-<p><strong>The stratum lies on the boundary of the unit group.</strong> A path in $\Sigma_{11}$ that reaches $N=0$ lands in $\Sigma_{01}$ unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$. So the stratum is what a massive element becomes when its mass goes to zero without its momentum going to zero, and the doubly degenerate stratum is what it becomes when both go.</p>
+<p><strong>The stratum is connected and it is homogeneous.</strong> It is a single orbit of $\mathbb{C}^{\times}\times\mathbb{B}^{\times}$ acting by scaling and inner automorphisms, because the group of invertibles acts transitively on the primitive idempotents. So no element of the stratum is distinguished from any other except by the value of $\kappa$, and the value of $\kappa$ is fixed by the element.</p>
+<p><strong>The stratum lies on the boundary of the group of invertibles.</strong> A path in $\Sigma_{11}$ that reaches $N=0$ lands in $\Sigma_{01}$ unless it also reaches $B=0$, in which case it lands in $\Sigma_{00}$. So the stratum is what a massive element becomes when its mass goes to zero without its momentum going to zero, and the doubly degenerate stratum is what it becomes when both go.</p>
 <h2 id="the-idempotent_1">The Idempotent</h2>
 <h3 id="the-scale-and-the-direction">The Scale and the Direction</h3>
 <p><strong>The element factors, and the factorisation is unique.</strong></p>
@@ -344,14 +344,14 @@ B^{2}(\tilde\Pi)=-\tfrac14,\qquad
 \operatorname{Sc}\tilde\Pi'=\tfrac12,\qquad
 N(\tilde\Pi')=0 .
 $$</p>
-<p><strong>The two idempotents of the pair are both null, and their sum is a unit.</strong></p>
+<p><strong>The two idempotents of the pair are both null, and their sum is invertible.</strong></p>
 <p>$$
 e_t=\tilde\Pi+\tilde\Pi',\qquad
 N(e_t)=1,\qquad
 N(\tilde\Pi)=N(\tilde\Pi')=0,\qquad
 \tilde\Pi\tilde\Pi'=0 .
 $$</p>
-<p>So the identity of the algebra is the sum of two null idempotents, and neither summand is degenerate in the spectral sense. The null cone contains the pieces of a unit and not the unit; that is the whole difference between this stratum and the open one.</p>
+<p>So the identity of the algebra is the sum of two null idempotents, and neither summand is degenerate in the spectral sense. The null cone contains the pieces of an invertible element and not the unit; that is the whole difference between this stratum and the open one.</p>
 <h3 id="trace-one-and-norm-zero">Trace One and Norm Zero</h3>
 <p><strong>The two invariants measure different things, and the idempotent separates them.</strong></p>
 <div class="table-scroll"><table>
@@ -487,10 +487,10 @@ $$</p>
 N\bigl(e^{X}\bigr)=e^{2X_t}\qquad\text{for every }X\in\mathbb{B}.
 $$</p>
 <p><strong>The identity is a determinant identity.</strong> In the $2\times2$ matrix image the norm is the determinant and the scalar part is half the trace, so $N(e^{X})=\det(e^{X})=e^{\operatorname{tr}X}=e^{2X_t}$. It is exact, it holds for every element, and it was checked over thirty random elements to $3.4\times10^{-13}$.</p>
-<p><strong>So the stratum is disjoint from the image of the exponential.</strong> Every exponential is a unit with a non-zero norm; every element of the stratum has zero norm; hence no element of the stratum is the exponential of anything. A massless element has a flow — the exponential is defined on it — but it is not itself a flow's endpoint.</p>
-<p><strong>The same statement forbids one-parameter subgroups in the cone.</strong> A subgroup of the unit group is a set $\{e^{\theta X}\}$, and every member of it has norm $e^{2\theta X_t}\neq0$. So the null cone contains no one-parameter subgroup, and the stratum contains no curve through the identity. A ray is a generator, and no finite amount of it is a ray.</p>
+<p><strong>So the stratum is disjoint from the image of the exponential.</strong> Every exponential is invertible with a non-zero norm; every element of the stratum has zero norm; hence no element of the stratum is the exponential of anything. A massless element has a flow — the exponential is defined on it — but it is not itself a flow's endpoint.</p>
+<p><strong>The same statement forbids one-parameter subgroups in the cone.</strong> A subgroup of the group of invertibles is a set $\{e^{\theta X}\}$, and every member of it has norm $e^{2\theta X_t}\neq0$. So the null cone contains no one-parameter subgroup, and the stratum contains no curve through the identity. A ray is a generator, and no finite amount of it is a ray.</p>
 <h3 id="the-flow-leaves-the-cone">The Flow Leaves the Cone</h3>
-<p><strong>The exponential of a null element is a rotation with a scale, and it is a unit.</strong></p>
+<p><strong>The exponential of a null element is a rotation with a scale, and it is invertible.</strong></p>
 <p>$$
 e^{\theta\tilde Q}=e^{\theta Q_t}\left(\cos(\theta B)e_t+\sin(\theta B)\,\vec U\right),\qquad
 \vec U=\frac{\vec Q}{B},\qquad
@@ -556,7 +556,7 @@ N(\tilde Q_2\tilde Q)=N(\tilde Q_2)N(\tilde Q)=0
 \qquad\Longrightarrow\qquad
 \Sigma_{01}\cdot\Sigma_{01}\subseteq\mathcal N .
 $$</p>
-<p><strong>So the sector is closed on the cone and not closed in itself.</strong> A product of two null elements is null, hence lies in one of the two strata of the cone, and the product is never a unit. Over three hundred random pairs the product landed in the stratum three hundred times, which is the generic answer and not the only one.</p>
+<p><strong>So the sector is closed on the cone and not closed in itself.</strong> A product of two null elements is null, hence lies in one of the two strata of the cone, and the product is never an invertible element. Over three hundred random pairs the product landed in the stratum three hundred times, which is the generic answer and not the only one.</p>
 <p><strong>All three outcomes occur, and the two exceptional ones need special pairs.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -589,7 +589,7 @@ $$</p>
 \tilde\Pi_{+}\tilde\Pi'=bE_{12}=\frac{b}{2}\left(\vec e_x+i\vec e_y\right),
 $$</p>
 <p>a non-zero nilpotent of index two: $N=0$, $B^{2}=0$, and the square vanishes. Computed for $b=1.7$: the product had $N=0$, $B^{2}=0$ and square zero, while both factors were idempotents of norm zero.</p>
-<p><strong>The generic product is in the stratum and the exceptional products are in the closure.</strong> That is the same pattern as the previous stratum's products, with one difference: there the product could not leave the unit group, and here it cannot leave the cone. The two sectors are closed in different directions, and each closure is the multiplicative version of its own predicate.</p>
+<p><strong>The generic product is in the stratum and the exceptional products are in the closure.</strong> That is the same pattern as the previous stratum's products, with one difference: there the product could not leave the group of invertibles, and here it cannot leave the cone. The two sectors are closed in different directions, and each closure is the multiplicative version of its own predicate.</p>
 <h3 id="sums-are-not-products">Sums Are Not Products</h3>
 <p><strong>Addition leaves the cone immediately.</strong></p>
 <p>$$
@@ -759,7 +759,7 @@ $$</p>
 <p><strong>Read:</strong> the two annihilator planes, the vanishing of $\tilde Q\tilde Q^{\natural}$, and the identity $N(e^{X})=e^{2X_t}$.</p>
 <p><strong>The element annihilates, and it is annihilated by an element other than itself.</strong> It is a zero divisor, so it has no inverse; and the exponential never lands on the cone, so it has no logarithm. Both failures have the same cause: the norm is zero, and the norm is what the inverse inverts and what the exponential produces.</p>
 <p><strong>The reading is that a massless element is a generator and never a finite transformation.</strong> The exponential is defined on the element and gives the flow, but no element's exponential gives the element back. So the ray has a direction in time and no position; it can be integrated and it cannot be exponentiated.</p>
-<p><strong>The strongest form of the statement is about subgroups.</strong> The null cone contains no one-parameter subgroup, so no flow stays on the cone for an interval. A massless element generates a family that leaves the cone at once, and the family is a family of units.</p>
+<p><strong>The strongest form of the statement is about subgroups.</strong> The null cone contains no one-parameter subgroup, so no flow stays on the cone for an interval. A massless element generates a family that leaves the cone at once, and the family is a family of invertibles.</p>
 <p><strong>The boundary.</strong> <em>One-way</em> is a reading of non-invertibility. The algebra supplies the kernel and the image; it does not supply an arrow of time, and no theorem here is a statement about irreversibility.</p>
 <h3 id="i10am-the-flow-is-unitary-and-the-polar-word-is-not">I.10.am — The Flow Is Unitary and the Polar Word Is Not</h3>
 <p><strong>Read:</strong> $\langle e^{\theta\tilde Q}\rangle_{*}=\lvert e^{\theta Q_t}\rvert^{2}(\lvert\cos\rvert^{2}+\lvert\sin\rvert^{2}\lVert\vec U\rVert^{2})$, equal to one on the material null slice.</p>
@@ -795,7 +795,7 @@ $$</p>
 <p><strong>Read:</strong> $\overline{\Sigma_{01}}=\mathcal N$, the divergence of $\tilde Q/\sqrt N$, and the connectivity of the stratum.</p>
 <p><strong>A path in the open stratum that reaches $N=0$ lands here.</strong> The element has a limit: it converges to a null element with a non-zero vector square. The modulus has no limit: it tends to zero, and the unit factor built from it diverges.</p>
 <p><strong>The reading is that two objects have two different limits.</strong> The element is continuous in the limit, and the description is not. A physical statement that is phrased in the description — a polar decomposition, a normalised state, a modulus and a phase — does not survive the limit even though the object it describes does.</p>
-<p><strong>The stratum is where the limit lands, and the doubly degenerate stratum is where it lands if the momentum also vanishes.</strong> So the boundary of the unit group has two pieces, and only one of them keeps the spectral description. A path that reaches both walls at once loses everything at once.</p>
+<p><strong>The stratum is where the limit lands, and the doubly degenerate stratum is where it lands if the momentum also vanishes.</strong> So the boundary of the group of invertibles has two pieces, and only one of them keeps the spectral description. A path that reaches both walls at once loses everything at once.</p>
 <p><strong>The boundary.</strong> The reading is about a limit of elements in the algebra. It does not supply a limiting procedure for a theory, and it does not say that a massless theory is the limit of a massive one in any sense beyond the pointwise one.</p>
 <h2 id="the-limits">The Limits</h2>
 <p><strong>The massless reading needs the material slice.</strong> <em>Massless</em> names the part of the stratum that the material sector reaches, where $N$ is the interval and $B^{2}$ is the momentum squared. In the full algebra the stratum is the null cone minus the spectral cone, and $Q_t$ is a complex number with no energy reading.</p>
@@ -913,7 +913,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <p><strong>In this category.</strong> <a href="the-partition-two-invariants-and-four-regimes.html">The Partition: Two Invariants and Four Regimes</a> is the parent entry and states the two predicates and the four strata. <a href="the-region-of-mass-in-motion.html">Mass in Motion: The Region of Both Invariants</a> reads the open stratum, whose wall at $N=0$ is this entry. <a href="the-rest-frame-and-the-exceptional-point.html">The Rest Frame and the Exceptional Point</a> reads the other mixed stratum, which fails in the opposite description: there the modulus survives and the eigenbasis does not. <a href="the-vacuum-and-the-nilpotent-ladder.html">The Vacuum and the Nilpotent Ladder</a> reads the intersection of the two cones, which is this stratum's boundary and the part of the cone the apex and the nilpotent directions contribute; it is the entry that follows this one in the menu.</p>
 <p><strong>Mathematics.</strong> <a href="../articles_maths/the-n-degenerate-spectrally-regular-sector.html">The N-Degenerate, Spectrally Regular Sector</a> is the source; <a href="../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a> owns the eigenbasis and the Peirce data on the whole spectrally regular part, <a href="../articles_maths/the-null-quadric-and-its-projective-geometry.html">The Null Quadric and Its Projective Geometry</a> owns the rulings and the base of the bundle, and <a href="../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html">The Polar Decomposition of an N-Degenerate Biquaternion</a> states where the modulus has no value.</p>
-<p><strong>The sources of this entry.</strong> <a href="the-unit-group-the-cone-and-the-orders.html">The Unit Group, the Cone and the Orders</a> owns the cone, its rulings and the projective base. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> owns the four-momentum chart and the light-cone frequencies. <a href="the-carriers-the-spin-and-the-closure.html">The Carriers, the Spin and the Closure</a> owns the reach of the three carriers, which §<em>The Reach of the Three Carriers</em> summarises. <a href="the-massless-fluid-the-one-wave-where-both-charts-fail.html">The Massless Fluid: The One Wave Where Both Charts Fail</a> is the place where both descriptions fail at once, and the natural continuation of §<em>The Limits</em>. <a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a> fixes the letters and the signatures. The divergence of the polar word in the limit is stated here, in §<em>The Massless Limit Is a Limit in the Element Only</em>.</p>
+<p><strong>The sources of this entry.</strong> <a href="the-group-of-invertibles-the-cone-and-the-orders.html">The Group of Invertibles, the Cone and the Orders</a> owns the cone, its rulings and the projective base. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> owns the four-momentum chart and the light-cone frequencies. <a href="from-the-spin-to-the-carriers-and-the-closures.html">From the Spin to the Carriers and the Closures</a> owns the reach of the three carriers, which §<em>The Reach of the Three Carriers</em> summarises. <a href="the-massless-fluid-the-one-wave-where-both-charts-fail.html">The Massless Fluid: The One Wave Where Both Charts Fail</a> is the place where both descriptions fail at once, and the natural continuation of §<em>The Limits</em>. <a href="norm-and-pairing-conventions.html">Norm and Pairing Conventions</a> fixes the letters and the signatures. The divergence of the polar word in the limit is stated here, in §<em>The Massless Limit Is a Limit in the Element Only</em>.</p>
       </div>
     </main>
   </div>

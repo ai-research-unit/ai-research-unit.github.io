@@ -70,9 +70,9 @@
       <div class="article-body">
         <h1 id="ring-and-field-automorphisms"><strong>Ring and Field Automorphisms</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by a unit, and these are the inner automorphisms.</p>
+<p>An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by an invertible element, and these are the inner automorphisms.</p>
 <p>This article studies automorphism groups of rings and of fields, the fixed subrings and fixed fields they determine, and the arithmetic automorphism supplied by the Frobenius map. It separates the commutative theory, in which conjugation is trivial, from the noncommutative theory of inner automorphisms, and it records the boundary where the two diverge.</p>
-<p>Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from <em>Galois Theory</em>; the vocabulary of units, zero divisors and idempotents is from <em>Rings</em>.</p>
+<p>Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from <em>Galois Theory</em>; the vocabulary of invertibles, zero divisors and idempotents is from <em>Rings</em>.</p>
 <hr />
 <h2 id="automorphisms-of-a-ring">Automorphisms of a Ring</h2>
 <h3 id="definition-and-basic-properties">Definition and Basic Properties</h3>
@@ -89,12 +89,12 @@ $$</p>
 <p><strong>(e)</strong> If $R$ is an integral domain, then $\sigma$ extends uniquely to an automorphism of $\operatorname{Frac}(R)$, and $\operatorname{Aut}(R) \leq \operatorname{Aut}(\operatorname{Frac}(R))$.</p>
 <p><strong>Proof.</strong> (a) $\sigma(u)\sigma(u^{-1}) = \sigma(1) = 1$. (b) $\sigma(0) = \sigma(0+0)$ forces $\sigma(0)=0$, and injectivity gives the rest. (c) $\sigma(e)^2 = \sigma(e^2) = \sigma(e)$; $\sigma(x)^n = \sigma(x^n)$; the additive order of $1$ is preserved. (d) $\sigma(I)$ is an additive subgroup and for $r \in R$, $r\sigma(i) = \sigma(\sigma^{-1}(r) i) \in \sigma(I)$; the quotient induced by $\sigma$ is $R/\sigma^{-1}(\mathrm{P}) \cong R/\mathrm{P}$, so primality and maximality are preserved. (e) The universal property of the fraction field applies to $\sigma : R \to \operatorname{Frac}(R)$.</p>
 <h3 id="inner-automorphisms-and-the-noncommutative-case">Inner Automorphisms and the Noncommutative Case</h3>
-<p><strong>Definition.</strong> Let $R$ be a ring, not necessarily commutative, with unit group $R^\times$. For $u \in R^\times$ the <strong>inner automorphism</strong> (or <strong>conjugation</strong>) by $u$ is</p>
+<p><strong>Definition.</strong> Let $R$ be a ring, not necessarily commutative, with group of invertibles $R^\times$. For $u \in R^\times$ the <strong>inner automorphism</strong> (or <strong>conjugation</strong>) by $u$ is</p>
 <p>$$
 \operatorname{conj}_u : R \to R, \qquad \operatorname{conj}_u(r) = u r u^{-1}.
 $$</p>
 <p>The set $\operatorname{Inn}(R) = \{\operatorname{conj}_u : u \in R^\times\}$ is a subgroup of $\operatorname{Aut}(R)$ called the <strong>inner automorphism group</strong>, and the quotient $\operatorname{Out}(R) = \operatorname{Aut}(R)/\operatorname{Inn}(R)$ is the <strong>outer automorphism group</strong>.</p>
-<p><strong>Proposition.</strong> The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of units of the centre. Hence</p>
+<p><strong>Proposition.</strong> The map $R^\times \to \operatorname{Aut}(R)$, $u \mapsto \operatorname{conj}_u$, is a group homomorphism with kernel $Z(R)^\times$, the group of invertibles of the centre. Hence</p>
 <p>$$
 \boxed{\;\operatorname{Inn}(R) \cong R^\times / Z(R)^\times, \qquad \operatorname{Inn}(R) \trianglelefteq \operatorname{Aut}(R)\;}.
 $$</p>
@@ -218,7 +218,7 @@ $$</p>
 <p><strong>Remark.</strong> In a commutative ring every anti-automorphism is an automorphism, so the distinction is only visible noncommutatively, and the matrix transpose above is the standard instance. The rigidity of the automorphisms of a central simple algebra — the Skolem–Noether theorem, that every such automorphism is inner — belongs to the algebra layer and is treated in <em>Automorphisms and Derivations of Algebras</em> and <em>Central Simple Algebras and the Brauer Group</em>.</p>
 <hr />
 <h2 id="summary">Summary</h2>
-<p>The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by a unit is the identity there; for a general ring the automorphisms induced by conjugation by units are the <strong>inner</strong> automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.</p>
+<p>The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that preserves units, zero divisors, idempotents, nilpotents, characteristic, ideals, and prime and maximal ideals, and that acts on the lattice of ideals; for a domain it embeds in $\operatorname{Aut}(\operatorname{Frac}(R))$. For a commutative ring the inner automorphism group is trivial, $\operatorname{Inn}(R) = 1$, since conjugation by an invertible element is the identity there; for a general ring the automorphisms induced by conjugation by invertibles are the <strong>inner</strong> automorphisms, and they form a normal subgroup $\operatorname{Inn}(R) \cong R^\times/Z(R)^\times$ of $\operatorname{Aut}(R)$.</p>
 <p>For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.</p>
 <p>Anti-automorphisms reverse multiplication; complex conjugation is the standard involutive example in the commutative case, where it coincides with an automorphism, and the matrix transpose is the standard genuinely noncommutative one. The rigidity of the automorphisms of a central simple algebra is treated in the algebra layer.</p>
 <div class="table-scroll"><table>
@@ -348,7 +348,7 @@ $$</p>
 </tr>
 <tr>
 <td>$Z(A)$, $A^\times$</td>
-<td>Centre and unit group of an algebra $A$</td>
+<td>Centre and group of invertibles of an algebra $A$</td>
 </tr>
 </tbody>
 </table></div>

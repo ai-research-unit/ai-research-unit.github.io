@@ -105,7 +105,7 @@ $$</p>
 \Pi_+ = \varphi^{-1}(1,0) = \tfrac12(1+j), \qquad \Pi_- = \varphi^{-1}(0,1) = \tfrac12(1-j),
 $$</p>
 <p>and it reads the multiplication as $Q = Q_+\Pi_+ + Q_-\Pi_-$ with $Q_\pm = q \pm q'$.</p>
-<h2 id="the-idempotents-and-the-split-units">The Idempotents and the Split Units</h2>
+<h2 id="the-idempotents-and-the-split-invertibles">The Idempotents and the Split Invertibles</h2>
 <p><strong>Theorem.</strong> The idempotents of $\mathbb{C}_{\mathrm{spl}}$ are exactly $0$, $1$, $\Pi_+$ and $\Pi_-$. The two nontrivial ones satisfy</p>
 <p>$$
 \Pi_+^2 = \Pi_+, \qquad \Pi_-^2 = \Pi_-, \qquad \Pi_+\Pi_- = 0, \qquad \Pi_+ + \Pi_- = 1 ,
@@ -113,20 +113,20 @@ $$</p>
 <p>and they are central.</p>
 <p><strong>Proof.</strong> The image under $\varphi$ of an idempotent is an idempotent pair $(u,v)$ of $\mathbb{R}\oplus\mathbb{R}$, and an idempotent of a field is $0$ or $1$, so $u,v \in \{0,1\}$ and the four pairs give the four elements listed. The relations are read coordinatewise from the definition of $\varphi$, and centrality is commutativity.</p>
 <p>So the algebra has exactly two nontrivial idempotents, orthogonal and complete. This is the property that a field can never have: a field has only the two trivial idempotents, because an idempotent $e$ satisfies $e(e-1) = 0$ and a field is an integral domain. The complex field therefore has no nontrivial idempotent, and its analogue of the split decomposition is the single field copy. The idempotents are also the primitive zero divisors, $\Pi_\pm^2 = \Pi_\pm$, and each annihilates the opposite line; the full description is <em>Square Roots of One and the Idempotents of the Split-Complex Algebra</em>, and <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
-<p><strong>Corollary (the units).</strong> An element is invertible exactly when both idempotent coordinates are nonzero,</p>
+<p><strong>Corollary (the invertibles).</strong> An element is invertible exactly when both idempotent coordinates are nonzero,</p>
 <p>$$
 \boxed{\;{\mathbb{C}_{\mathrm{spl}}}^\times = \{Q : Q_+ \neq 0,\; Q_- \neq 0\} \;\cong\; \mathbb{R}^\times \times \mathbb{R}^\times\;},
 $$</p>
 <p>and the inverse is componentwise, $Q^{-1} = Q_+^{-1}\Pi_+ + Q_-^{-1}\Pi_-$.</p>
-<p><strong>Proof.</strong> The element $Q$ is a unit iff $\varphi(Q) = (Q_+,Q_-)$ is a unit of $\mathbb{R}\oplus\mathbb{R}$, and a pair is a unit iff both of its coordinates are nonzero.</p>
-<p>The group of units is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the unit group is $\mathbb{C}^\times$, connected; in $\mathbb{C}_{\mathrm{spl}}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $Q_+$ and $Q_-$. The norm, the criterion $\langle Q\rangle_{*} \neq 0$ and the components are <em>Norm and Invertibility in the General Split-Complex Algebra</em>, where the group of units is treated as a Lie group.</p>
+<p><strong>Proof.</strong> The element $Q$ is invertible iff $\varphi(Q) = (Q_+,Q_-)$ is invertible in $\mathbb{R}\oplus\mathbb{R}$, and a pair is invertible iff both of its coordinates are nonzero.</p>
+<p>The group of invertibles is thus a direct product of two copies of the multiplicative group of the base. In the field $\mathbb{C}$ the group of invertibles is $\mathbb{C}^\times$, connected; in $\mathbb{C}_{\mathrm{spl}}$ it is $\mathbb{R}^\times\times\mathbb{R}^\times$, which has four connected components, indexed by the signs of $Q_+$ and $Q_-$. The norm, the criterion $\langle Q\rangle_{*} \neq 0$ and the components are <em>Norm and Invertibility in the General Split-Complex Algebra</em>, where the group of invertibles is treated as a Lie group.</p>
 <h2 id="reduced-not-a-field">Reduced, Not a Field</h2>
-<p>Two multiplicative properties sit side by side and pull in opposite directions: $\mathbb{C}_{\mathrm{spl}}$ has no nonzero nilpotent, and yet not every nonzero element is a unit.</p>
+<p>Two multiplicative properties sit side by side and pull in opposite directions: $\mathbb{C}_{\mathrm{spl}}$ has no nonzero nilpotent, and yet not every nonzero element is invertible.</p>
 <p><strong>Theorem (reduced).</strong> There is no nonzero nilpotent in $\mathbb{C}_{\mathrm{spl}}$; the only square-zero element is $0$, and the nilradical vanishes.</p>
 <p><strong>Proof.</strong> Under $\varphi$ a power becomes the pair of powers, $\varphi(Q^n) = (Q_+^n, Q_-^n)$, so $Q^n = 0$ iff $Q_+^n = 0$ and $Q_-^n = 0$, which forces $Q_+ = Q_- = 0$ over the field $\mathbb{R}$; hence $Q = 0$.</p>
-<p><strong>Theorem (not a field).</strong> $\mathbb{C}_{\mathrm{spl}}$ is not an integral domain and not a field: it has zero divisors, $\Pi_+\Pi_- = 0$ with both factors nonzero, and the nonzero non-units are exactly its zero divisors.</p>
-<p><strong>Proof.</strong> The product $\Pi_+\Pi_- = 0$ is the displayed relation, with $\Pi_+,\Pi_- \neq 0$, so $\mathbb{C}_{\mathrm{spl}}$ has zero divisors. In a commutative ring every nonzero non-unit of a finite-dimensional algebra over a field is a zero divisor, since multiplication by it is a singular $\mathbb{R}$-linear map with nonzero kernel; and conversely a zero divisor is not a unit. The criterion in idempotent coordinates is that $Q$ is a non-unit iff $Q_+Q_- = 0$, that is iff it lies on the null cone $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
-<p>So the non-units of $\mathbb{C}_{\mathrm{spl}}$ are precisely the null cone, origin included: the two lines through the origin. The pair of theorems is the whole distance between the split-complex algebra and a field: reducedness says that the failure of invertibility is never caused by nilpotence, and the zero divisors say that it is caused instead by the splitting of the algebra into two field copies, each of which can be switched off independently.</p>
+<p><strong>Theorem (not a field).</strong> $\mathbb{C}_{\mathrm{spl}}$ is not an integral domain and not a field: it has zero divisors, $\Pi_+\Pi_- = 0$ with both factors nonzero, and the nonzero non-invertibles are exactly its zero divisors.</p>
+<p><strong>Proof.</strong> The product $\Pi_+\Pi_- = 0$ is the displayed relation, with $\Pi_+,\Pi_- \neq 0$, so $\mathbb{C}_{\mathrm{spl}}$ has zero divisors. In a commutative ring every nonzero non-invertible of a finite-dimensional algebra over a field is a zero divisor, since multiplication by it is a singular $\mathbb{R}$-linear map with nonzero kernel; and conversely a zero divisor is not invertible. The criterion in idempotent coordinates is that $Q$ is a non-invertible iff $Q_+Q_- = 0$, that is iff it lies on the null cone $\mathcal{N} = \mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is <em>Zero Divisors of the Split-Complex Algebra</em>.</p>
+<p>So the non-invertibles of $\mathbb{C}_{\mathrm{spl}}$ are precisely the null cone, origin included: the two lines through the origin. The pair of theorems is the whole distance between the split-complex algebra and a field: reducedness says that the failure of invertibility is never caused by nilpotence, and the zero divisors say that it is caused instead by the splitting of the algebra into two field copies, each of which can be switched off independently.</p>
 <h2 id="semisimple-not-simple">Semisimple, Not Simple</h2>
 <p><strong>Theorem (not simple).</strong> The only two-sided ideals of $\mathbb{C}_{\mathrm{spl}}$ are $\{0\}$, $\mathbb{R}\Pi_+$, $\mathbb{R}\Pi_-$ and $\mathbb{C}_{\mathrm{spl}}$. The two nontrivial proper ideals are minimal and maximal, and they are the two idempotent lines.</p>
 <p><strong>Proof.</strong> The classification is <em>Ideals and Peirce Decomposition of the Split-Complex Algebra</em>: each of $\mathbb{R}\Pi_+$ and $\mathbb{R}\Pi_-$ is an ideal because $Q(\lambda\Pi_+) = \lambda Q_+\Pi_+$, and any nonzero ideal containing an element with both coordinates nonzero contains a unit and is the whole ring, while an ideal supported on one coordinate is contained in the corresponding line. The proof is by the criterion of invertibility above.</p>
@@ -162,7 +162,7 @@ $$</p>
 <p>The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{C}_{\mathrm{spl}}$, the left regular representation on $\mathbb{C}_{\mathrm{spl}}\oplus\mathbb{C}_{\mathrm{spl}}$, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are <em>The Matrix Element Representations of the Split-Complexoid</em>, and the element reading of the regular matrix is <em>Split-Complex Regular Element Representation</em>.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-complex algebra $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[x]/(x^2-1)$ is the two-dimensional commutative associative unital $\mathbb{R}$-algebra generated by an element of square $+1$. Its defining polynomial splits, and by the Chinese remainder theorem it is the product of two copies of its base, $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$, the isomorphism being $Q\mapsto(Q_+,Q_-)$ with $Q_\pm = q\pm q'$.</p>
-<p>Four properties single it out. It is <strong>reduced</strong>: it has no nonzero nilpotent, and $0$ is its only square-zero element. It is <strong>not a field</strong>: its nonzero non-units are its zero divisors, the null cone $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$. It has exactly <strong>two nontrivial idempotents</strong> $\Pi_\pm$, central, orthogonal and complete, which a field cannot have. And it is <strong>semisimple and not simple</strong>: its only two-sided ideals are $\{0\}$, the two lines $\mathbb{R}\Pi_\pm$ and $\mathbb{C}_{\mathrm{spl}}$, and its radical vanishes.</p>
+<p>Four properties single it out. It is <strong>reduced</strong>: it has no nonzero nilpotent, and $0$ is its only square-zero element. It is <strong>not a field</strong>: its nonzero non-invertibles are its zero divisors, the null cone $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$. It has exactly <strong>two nontrivial idempotents</strong> $\Pi_\pm$, central, orthogonal and complete, which a field cannot have. And it is <strong>semisimple and not simple</strong>: its only two-sided ideals are $\{0\}$, the two lines $\mathbb{R}\Pi_\pm$ and $\mathbb{C}_{\mathrm{spl}}$, and its radical vanishes.</p>
 <p>The consequences for the classes of element are that the positively defined classes grow and the negatively defined ones do not: the zero divisors are present and the idempotents are non-trivial because of the splitting, while the nilpotents and the square-zero elements of the plain product remain the single element $0$, and the roots of $+1$ gain the non-scalar pair $\pm j$ while the roots of $-1$ vanish. The regular representation degenerates to the commutative subalgebra $\left\{\begin{pmatrix}q&q'\\q'&q\end{pmatrix}\right\}$ of $M_2(\mathbb{R})$, isomorphic to the diagonal subalgebra, with determinant $q^2-q'^2$ and trace $2q$: a commutative algebra equal to its own commutant, and the $4\times4$ model adds nothing. Against the complex field, a field and simple with no idempotent but the trivial ones, the split-complex algebra is the product-of-fields case, the minimal one in which the zero divisors and the non-trivial idempotents of the family appear.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -199,11 +199,11 @@ $$</p>
 </tr>
 <tr>
 <td>${\mathbb{C}_{\mathrm{spl}}}^\times = \{Q_+ \neq 0, Q_- \neq 0\}$</td>
-<td>Group of units, $\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
+<td>Group of invertibles, $\cong\mathbb{R}^\times\times\mathbb{R}^\times$</td>
 </tr>
 <tr>
 <td>$\mathcal{N} = \{Q_+Q_- = 0\}$</td>
-<td>Null cone, the set of nonzero non-units</td>
+<td>Null cone, the set of nonzero non-invertibles</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(Q) = \begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$</td>
@@ -220,7 +220,7 @@ $$</p>
 <li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for reduced rings, semisimplicity, the Jacobson radical and idempotents.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for products of fields, Peirce decompositions and the structure of finite-dimensional algebras.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra as a Clifford algebra and its place among the low-dimensional real algebras.</li>
-<li>Benson Farb and R. Keith Dennis, <em>Noncommutative Algebra</em> (Springer, 1993), for units, zero divisors and the structure of finite-dimensional algebras over a field.</li>
+<li>Benson Farb and R. Keith Dennis, <em>Noncommutative Algebra</em> (Springer, 1993), for invertibles, zero divisors and the structure of finite-dimensional algebras over a field.</li>
 </ul>
       </div>
     </main>

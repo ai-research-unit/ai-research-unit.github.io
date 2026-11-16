@@ -90,7 +90,7 @@ of complex dimension two: half of the ambient over $\mathbb{C}$ and half of it o
 $$
 \operatorname{rank}L_{\breve Q}\in\{0,1,2\},\qquad \operatorname{rank}_{\mathbb{R}}L_{\breve Q}\in\{0,2,4\},
 $$
-with $0$ at the zero element, $1$ exactly on the two punctured ideals, that is on the zero divisors, and $2$ exactly on the units. Unlike the dual-number category, where the rank-one stratum was a single line, here there are <strong>two</strong> rank-one strata, the two ideals minus the origin, and they are disjoint: this is the rank statement of the two components of the singular locus.</p>
+with $0$ at the zero element, $1$ exactly on the two punctured ideals, that is on the zero divisors, and $2$ exactly on the invertibles. Unlike the dual-number category, where the rank-one stratum was a single line, here there are <strong>two</strong> rank-one strata, the two ideals minus the origin, and they are disjoint: this is the rank statement of the two components of the singular locus.</p>
 <p><strong>The two-sided family.</strong> For the pair $(\breve Q,\breve P)$ the two-sided operator is
 $$
 L_{\breve Q}R_{\breve P}(\breve X)=\breve Q\breve X\breve P=L_{\breve Q\breve P}(\breve X),
@@ -165,7 +165,7 @@ again inside the family, because the tessarine sign is $\mathbb{C}$-linear and m
 $$
 L_{\breve Q}^{*}L_{\breve Q}=\mathrm I\iff |Q_{+}|=|Q_{-}|=1,
 $$
-so the isometry group of the family is the <strong>two-torus</strong> $T^{2}$, of real dimension two, contained in the unit group $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ as its compact retract. For the transpose form,
+so the isometry group of the family is the <strong>two-torus</strong> $T^{2}$, of real dimension two, contained in the group of invertibles $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$ as its compact retract. For the transpose form,
 $$
 L_{\breve Q}^{\mathsf T}L_{\breve Q}=\mathrm I\iff Q_{\blacktriangle}Q_{\blacktriangledown}=0,\ Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}=1,
 $$
@@ -217,7 +217,7 @@ each of complex dimension two, one hyperplane taken from each factor: $\{Q=0\}$,
 $$
 \beta^{-1}(\breve R)=\{(\breve Q,\breve P):\breve Q\breve P=\breve R\},
 $$
-which is a torsor over the unit group: if $(\breve Q_{0},\breve P_{0})$ is one solution then every solution is $(u\breve Q_{0},u^{-1}\breve P_{0})$ with $u$ a unit, so the fibre is a copy of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, of complex dimension two, retracting onto the torus $T^{2}$. The dimension count is
+which is a torsor over the group of invertibles: if $(\breve Q_{0},\breve P_{0})$ is one solution then every solution is $(u\breve Q_{0},u^{-1}\breve P_{0})$ with $u$ an invertible element, so the fibre is a copy of $\mathbb{C}^{\times}\times\mathbb{C}^{\times}$, of complex dimension two, retracting onto the torus $T^{2}$. The dimension count is
 $$
 4=\dim_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm{red}}\times\mathbb{B}_{\mathrm{red}}\bigr)=\dim_{\mathbb{C}}\operatorname{im}\beta+\dim_{\mathbb{C}}\text{fibre}=2+2,
 $$
@@ -231,19 +231,19 @@ the two entries of the diagonal form in the frame, so the spectral theory of the
 $$
 L_{\breve Q}R_{\breve P}\,L_{\breve Q'}R_{\breve P'}=L_{\breve Q\breve P\breve Q'}R_{\breve P'}=L_{\breve Q}R_{\breve P\breve Q'\breve P'},
 $$
-so the composite is again a two-sided operator, the family is a <strong>subalgebra</strong> of the ambient and not only a subspace, and the composition is associative because the multiplication is. The semigroup is commutative, has the identity $L_{1}R_{1}=\mathrm I_{2}$, and contains the zero operator: it is a commutative monoid with zero, and its group of units is the unit group of the algebra.</p>
+so the composite is again a two-sided operator, the family is a <strong>subalgebra</strong> of the ambient and not only a subspace, and the composition is associative because the multiplication is. The semigroup is commutative, has the identity $L_{1}R_{1}=\mathrm I_{2}$, and contains the zero operator: it is a commutative monoid with zero, and its group of invertibles is the group of invertibles of the algebra.</p>
 <p><strong>The rank of the composite.</strong> Since $L_{\breve Q}R_{\breve P}=L_{\breve Q\breve P}$,
 $$
 \operatorname{rank}\bigl(L_{\breve Q}R_{\breve P}L_{\breve Q'}R_{\breve P'}\bigr)\le\operatorname{rank}L_{\breve Q}R_{\breve P},
 $$
-with equality when $\breve Q'\breve P'$ is a unit; so the rank is nonincreasing along a product and drops exactly when the second parameter falls into a zero divisor. The two rank-one strata are the minimal nonzero ones, and the products that stay in them are products whose second parameter stays in the same ideal, which makes each ideal a two-sided semigroup of rank-one operators.</p>
+with equality when $\breve Q'\breve P'$ is invertible; so the rank is nonincreasing along a product and drops exactly when the second parameter falls into a zero divisor. The two rank-one strata are the minimal nonzero ones, and the products that stay in them are products whose second parameter stays in the same ideal, which makes each ideal a two-sided semigroup of rank-one operators.</p>
 <h2 id="the-two-sided-operator">The Two-Sided Operator</h2>
 <p><strong>Two two-sided operators, the plain one and the modulus one, and the second is the one that produces a cone.</strong></p>
 <p><strong>The plain two-sided operator.</strong> For a parameter $\breve Q$ and a variable $\breve X$,
 $$
 \mathrm{Sd}_{\breve Q}(\breve X)=\breve Q\breve X\breve Q=\breve Q^{2}\breve X=L_{\breve Q^{2}}(\breve X),
 $$
-so the two-sided operators are exactly the left multiplications by the squares, and the map $\breve Q\mapsto\mathrm{Sd}_{\breve Q}$ is the composition of the squaring map with the model. Its <strong>kernel is trivial</strong>: $\mathrm{Sd}_{\breve Q}=0$ means $Q_{+}^{2}=Q_{-}^{2}=0$ means $\breve Q=0$. It is <strong>not injective</strong>, because the squaring map is not: $\mathrm{Sd}_{\breve Q}=\mathrm{Sd}_{\breve Q'}$ exactly when $\breve Q'^{2}=\breve Q^{2}$, that is when $Q'_{\pm}=\pm Q_{\pm}$ with the two signs independent, so the fibre is the four-element group $\{\pm1,\pm j\}$ acting by multiplication and the two-sided operator of a unit has four preimages. In the dual-number category the kernel was trivial for the same reason, $q^{2}=0$ implying $q=0$ over a field of characteristic zero, and there the fibre was the pair $\pm Q$.</p>
+so the two-sided operators are exactly the left multiplications by the squares, and the map $\breve Q\mapsto\mathrm{Sd}_{\breve Q}$ is the composition of the squaring map with the model. Its <strong>kernel is trivial</strong>: $\mathrm{Sd}_{\breve Q}=0$ means $Q_{+}^{2}=Q_{-}^{2}=0$ means $\breve Q=0$. It is <strong>not injective</strong>, because the squaring map is not: $\mathrm{Sd}_{\breve Q}=\mathrm{Sd}_{\breve Q'}$ exactly when $\breve Q'^{2}=\breve Q^{2}$, that is when $Q'_{\pm}=\pm Q_{\pm}$ with the two signs independent, so the fibre is the four-element group $\{\pm1,\pm j\}$ acting by multiplication and the two-sided operator of an invertible element has four preimages. In the dual-number category the kernel was trivial for the same reason, $q^{2}=0$ implying $q=0$ over a field of characteristic zero, and there the fibre was the pair $\pm Q$.</p>
 <p><strong>The image of the plain two-sided operator.</strong> The set $\{\mathrm{Sd}_{\breve Q}\}$ is $\{L_{\breve R}:\breve R\text{ a square}\}$, which is not a linear subspace: the squares of an algebra of the form $\mathbb{C}\times\mathbb{C}$ are the elements with both idempotent coordinates... every element is a square, because every complex number has a square root, so the squaring map is <strong>surjective</strong> and the image of the plain two-sided operator is the whole family. This is the semisimple face of the same fact that made the two-sided operator of the dual-number category a strict family: there $q^{2}$ could not reach the elements with a prescribed linear term.</p>
 <p><strong>The modulus two-sided operator.</strong> The bar-two-sided-operator
 $$
@@ -271,7 +271,7 @@ which is the Kronecker product of two matrices of the image. Since each factor i
 $$
 \operatorname{tr}\mathsf K=4Q_{\blacktriangle}P_{\blacktriangle},\qquad \det\mathsf K=\bigl(\langle\breve Q\rangle_{\mathrm{ts}}\langle\breve P\rangle_{\mathrm{ts}}\bigr)^{2},\qquad \operatorname{rank}\mathsf K\in\{0,1,2,4\},
 $$
-the trace being the product of the two traces, the determinant the square of the product of the two determinants because the Kronecker product of two $2\times2$ matrices has determinant $\det^{2}\det^{2}$, and the rank the product of the two ranks. The rank $4$ is attained exactly when the two parameters are units, the rank $1$ when both are on zero divisors, and the intermediate values $2$ when one is a unit and the other is not: four values, so the second rank of the article is not vacuous.</p>
+the trace being the product of the two traces, the determinant the square of the product of the two determinants because the Kronecker product of two $2\times2$ matrices has determinant $\det^{2}\det^{2}$, and the rank the product of the two ranks. The rank $4$ is attained exactly when the two parameters are invertible, the rank $1$ when both are on zero divisors, and the intermediate values $2$ when one is invertible and the other is not: four values, so the second rank of the article is not vacuous.</p>
 <p><strong>The multiplicative property.</strong> The display is a representation of the product semigroup,
 $$
 \mathsf K(\breve Q,\breve P)\,\mathsf K(\breve Q',\breve P')=\mathsf K(\breve Q\breve Q',\breve P\breve P'),
@@ -334,7 +334,7 @@ Hence the length takes the two values $0$ and $1$ on the family and has no value
 <td>$1$</td>
 </tr>
 <tr>
-<td>$L_{\breve Q}$ with $\breve Q$ a unit</td>
+<td>$L_{\breve Q}$ with $\breve Q$ an invertible element</td>
 <td>$2$</td>
 <td>$4$</td>
 <td>$1$</td>
@@ -364,11 +364,11 @@ the nontrivial one being the tessarine sign. In the model,
 $$
 J\,\mathsf M(\breve Q)\,J=\mathsf M(\breve Q_{\mathrm{ts}}),\qquad J=\begin{pmatrix}1&0\\ 0&-1\end{pmatrix}\notin\mathsf M(\mathbb{B}_{\mathrm{red}}),
 $$
-so the automorphism is induced by a conjugation with an element of $GL_{2}(\mathbb{C})$ that is <strong>not</strong> in the family. The other conjugations by units of the family are trivial, because the family is commutative, so the map
+so the automorphism is induced by a conjugation with an element of $GL_{2}(\mathbb{C})$ that is <strong>not</strong> in the family. The other conjugations by invertibles of the family are trivial, because the family is commutative, so the map
 $$
 N\bigl(\mathsf M(\mathbb{B}_{\mathrm{red}})\bigr)/\mathsf M({\mathbb{B}_{\mathrm{red}}}^{\times})\ \longrightarrow\ \operatorname{Aut}_{\mathbb{C}}\bigl(\mathbb{B}_{\mathrm{red}}\bigr)
 $$
-from the normaliser quotient onto the automorphism group is an isomorphism, and the normaliser is generated by the units of the family and $J$. The outer automorphism is therefore inner in the ambient and outer in the algebra — the same phenomenon as in the dual-number category, where the automorphisms were conjugation by diagonal matrices, with the difference that here the group is of order two and not a continuum.</p>
+from the normaliser quotient onto the automorphism group is an isomorphism, and the normaliser is generated by the invertibles of the family and $J$. The outer automorphism is therefore inner in the ambient and outer in the algebra — the same phenomenon as in the dual-number category, where the automorphisms were conjugation by diagonal matrices, with the difference that here the group is of order two and not a continuum.</p>
 <p><strong>The derivations.</strong> A derivation of $\mathbb{B}_{\mathrm{red}}$ is zero, because the algebra is a finite product of fields and an étale algebra has no derivations, and in the model
 $$
 \mathsf M\bigl(D(\breve Q)\bigr)=[N,\mathsf M(\breve Q)]\ \text{for all }\breve Q\ \Longrightarrow\ N\in\mathsf M(\mathbb{B}_{\mathrm{red}})',

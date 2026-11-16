@@ -95,11 +95,11 @@ $$</p>
 <p><strong>Corollary.</strong> $T_a$ is injective if and only if $a\ne0$, and its image is the ideal $\alpha(a)*\mathcal{A}=a*\mathcal{A}$. The family $\{T_a\}$ is closed under products into unsigned left multiplications, and it is commutative exactly when $a*\alpha(b)=b*\alpha(a)$ for all $a,b$, which fails: for $a=\delta_2$, $b=\varepsilon$ one has $a*\alpha(b)=\delta_2$ while $b*\alpha(a)=\lambda\delta_2$.</p>
 <p><strong>Proof.</strong> $T_a=L_a\alpha$ is the composite of the invertible $\alpha$ with $L_a$, and $L_a$ is injective with image $a*\mathcal{A}$ because $\mathcal{A}$ is an integral domain. The commutativity computation is the displayed example.</p>
 <h3 id="invertibility">Invertibility</h3>
-<p><strong>Theorem.</strong> $T_a$ is invertible if and only if $a$ is a unit of $\mathcal{A}$, that is, if and only if $a(1)\ne0$, and then
+<p><strong>Theorem.</strong> $T_a$ is invertible if and only if $a$ is invertible in $\mathcal{A}$, that is, if and only if $a(1)\ne0$, and then
 $$
 T_a^{-1}=\alpha L_{a^{-1}}=T_{\alpha(a^{-1})}.
 $$</p>
-<p><strong>Proof.</strong> $\alpha$ is invertible and $L_a$ is invertible exactly for $a$ a unit; the inverse of the composite $L_a\alpha$ is $\alpha^{-1}L_a^{-1}=\alpha L_{a^{-1}}$, and $\alpha L_{a^{-1}}=L_{\alpha(a^{-1})}\alpha=T_{\alpha(a^{-1})}$.</p>
+<p><strong>Proof.</strong> $\alpha$ is invertible and $L_a$ is invertible exactly for $a$ an invertible element; the inverse of the composite $L_a\alpha$ is $\alpha^{-1}L_a^{-1}=\alpha L_{a^{-1}}$, and $\alpha L_{a^{-1}}=L_{\alpha(a^{-1})}\alpha=T_{\alpha(a^{-1})}$.</p>
 <h2 id="the-adjoint-and-the-conditions">The Adjoint and the Conditions</h2>
 <h3 id="the-adjoint">The adjoint</h3>
 <p><strong>Theorem (the signed adjoint).</strong> With respect to the form of the category,
@@ -112,7 +112,7 @@ $$
 $$
 One has $T_a^*T_a=\alpha\,\mathrm{Sd}_aL_a\,\alpha$ and $T_aT_a^*=L_a\mathrm{Sd}_aL_{\alpha(a)}$; in particular the two products are unequal in general although each is a product of a multiplication and its transpose.</p>
 <p><strong>Proof.</strong> $\alpha^*=\alpha$ and $L_c^*=\mathrm{Sd}_c$ give $(L_a\alpha)^*=\alpha L_a^*=\alpha\mathrm{Sd}_a$. The explicit formula is the definition of $\mathrm{Sd}_a$ multiplied by $\lambda$. The two products are computed from the first display; the product $L_a\mathrm{Sd}_aL_{\alpha(a)}$ is not equal to $L_{\alpha(a)}\mathrm{Sd}_aL_a$ in general.</p>
-<p><strong>Corollary (comparison with the ring formula).</strong> In the noncommutative ring of the earlier article the adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)=\sigma\alpha(a)$; here the adjoint is the transposed multiplication $\mathrm{Sd}_a$ composed with the grade involution, and it is not a signed left multiplication unless $\alpha(a)$ is a unit. The discrepancy is the commutativity of the algebra together with the failure of the two structures (involution on the elements, adjoint on the operators) to coincide except in the degenerate augmentation form.</p>
+<p><strong>Corollary (comparison with the ring formula).</strong> In the noncommutative ring of the earlier article the adjoint of the signed left multiplication by $a$ is the signed left multiplication by $\delta(a)=\sigma\alpha(a)$; here the adjoint is the transposed multiplication $\mathrm{Sd}_a$ composed with the grade involution, and it is not a signed left multiplication unless $\alpha(a)$ is invertible. The discrepancy is the commutativity of the algebra together with the failure of the two structures (involution on the elements, adjoint on the operators) to coincide except in the degenerate augmentation form.</p>
 <h3 id="self-adjointness-isometry-and-unitarity">Self-adjointness, isometry and unitarity</h3>
 <p><strong>Theorem.</strong> The signed left multiplication $T_a$ satisfies the following.
 $$
@@ -129,7 +129,7 @@ and $T_a$ is an isometry if and only if $\mathrm{Sd}_aL_a=\mathrm{id}$, which ho
 <h2 id="failure-of-the-degenerate-cases">Failure of the Degenerate Cases</h2>
 <p>The signed left multiplication fails to be a genuinely signed operator over the commutative algebra in four ways. First, $T_a=L_a\alpha=\alpha L_{\alpha(a)}$ is a composite of the fixed automorphism $\alpha$ with an unsigned multiplication, so the sign contains no information beyond the value of $\alpha$. Second, the adjoint is $\alpha\mathrm{Sd}_a$, not a signed left multiplication, so the signed adjoint formula of the ring theory does not transfer. Third, the products of two signed left multiplications are unsigned, $T_aT_b=L_{a*\alpha(b)}$, and the family is not commutative; the twisted product $\star$ is the correct product, and it is isomorphic to the original one through $\alpha$. Fourth, self-adjointness and unitarity hold only for the scalar multiples of $\alpha$, so the class of distinguished signed left multiplications is as small as possible. These are the boundary cases of the general theory, collected because they are the reason the signed family over a commutative algebra is a family of examples rather than a family of structures.</p>
 <h2 id="summary">Summary</h2>
-<p>For $a$ in the algebra of arithmetic functions the signed left multiplication is $T_a(f)=a*\alpha(f)=L_a\alpha=\alpha L_{\alpha(a)}$, with $\alpha T_a=L_{\alpha(a)}$ and $T_a\alpha=L_a$; the twisted product $a\star b=a*\alpha(b)$ is associative, $\alpha$ is an isomorphism $(\mathcal{A},\star)\to(\mathcal{A},*)$, and $T_aT_b=L_{a*\alpha(b)}$, so products of signed left multiplications are unsigned and the family is not commutative. The operator is invertible exactly for $a$ a unit, with $T_a^{-1}=\alpha L_{a^{-1}}$; its adjoint for the coefficient form is $(T_a)^*=\alpha\mathrm{Sd}_a$, with $(T_a)^*g(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$; it is self-adjoint exactly for $a=\gamma\varepsilon$ with $\gamma$ real, unitary exactly for $a=\gamma\varepsilon$ with $|\gamma|=1$, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$ with $|\gamma|=1$. The operator is injective for every nonzero $a$ because the algebra is an integral domain, and the signed adjoint formula of the noncommutative ring theory fails.</p>
+<p>For $a$ in the algebra of arithmetic functions the signed left multiplication is $T_a(f)=a*\alpha(f)=L_a\alpha=\alpha L_{\alpha(a)}$, with $\alpha T_a=L_{\alpha(a)}$ and $T_a\alpha=L_a$; the twisted product $a\star b=a*\alpha(b)$ is associative, $\alpha$ is an isomorphism $(\mathcal{A},\star)\to(\mathcal{A},*)$, and $T_aT_b=L_{a*\alpha(b)}$, so products of signed left multiplications are unsigned and the family is not commutative. The operator is invertible exactly for $a$ an invertible element, with $T_a^{-1}=\alpha L_{a^{-1}}$; its adjoint for the coefficient form is $(T_a)^*=\alpha\mathrm{Sd}_a$, with $(T_a)^*g(k)=\lambda(k)\sum_m\overline{a(m)}g(mk)$; it is self-adjoint exactly for $a=\gamma\varepsilon$ with $\gamma$ real, unitary exactly for $a=\gamma\varepsilon$ with $|\gamma|=1$, and an isometry exactly when $\mathrm{Sd}_aL_a=\mathrm{id}$, which holds for $a=\gamma\delta_p$ with $|\gamma|=1$. The operator is injective for every nonzero $a$ because the algebra is an integral domain, and the signed adjoint formula of the noncommutative ring theory fails.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -157,7 +157,7 @@ and $T_a$ is an isometry if and only if $\mathrm{Sd}_aL_a=\mathrm{id}$, which ho
 </tr>
 <tr>
 <td>$T_a^{-1}=\alpha L_{a^{-1}}$</td>
-<td>Inverse for a unit</td>
+<td>Inverse for an invertible element</td>
 </tr>
 <tr>
 <td>$(T_a)^*=\alpha\mathrm{Sd}_a$</td>

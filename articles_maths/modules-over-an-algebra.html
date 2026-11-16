@@ -150,7 +150,7 @@ f(m+m')=f(m)+f(m'), \qquad f(am)=a f(m)
 $$</p>
 <p>for all $a \in A$ and $m,m' \in M$. Since $A$ is an $R$-algebra, every $A$-linear map is $R$-linear, but the converse fails, and the gap between the two notions is not covered here. The <strong>kernel</strong> $\ker f$ and <strong>image</strong> $\operatorname{im} f$ are submodules of $M$ and $N$; $f$ is injective if and only if $\ker f=0$; the <strong>cokernel</strong> is $N/\operatorname{im} f$; and $f$ is an <strong>isomorphism</strong> if it is bijective, in which case the inverse is automatically $A$-linear and we write $M \cong N$.</p>
 <p>The set $\operatorname{Hom}_A(M,N)$ of $A$-linear maps is an abelian group under pointwise addition, with zero the zero map. It carries no natural left $A$-module structure when $A$ is noncommutative: the attempt $(af)(m)=a f(m)$ fails to be $A$-linear, since $(af)(bm)=a f(bm)=ab f(m)$ while $b(af)(m)=ba f(m)$, and these differ unless $a$ and $b$ commute. What is available is a module structure over the centre. If $z \in Z(A)$ then $(zf)(m)=f(zm)$ defines the same map as $(zf)(m)=z f(m)$, and this makes $\operatorname{Hom}_A(M,N)$ a module over $Z(A)$, hence in particular an $R$-module. More generally, if ${}_B M_A$ is a $(B,A)$-bimodule then $\operatorname{Hom}_A(M,N)$ is a left $B$-module by $(bf)(m)=f(bm)$, the bimodule axiom providing the $A$-linearity of $bf$.</p>
-<p>The <strong>endomorphism ring</strong> $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of units is the <strong>automorphism group</strong> $\operatorname{Aut}_A(M)$. Both are studied .</p>
+<p>The <strong>endomorphism ring</strong> $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of invertibles is the <strong>automorphism group</strong> $\operatorname{Aut}_A(M)$. Both are studied .</p>
 <h3 id="the-isomorphism-theorems">The isomorphism theorems</h3>
 <p>For left $A$-modules the three isomorphism theorems hold by the same coset arguments as for groups and rings:</p>
 <p><strong>(a)</strong> $M/\ker f \cong \operatorname{im} f$ for every $f \in \operatorname{Hom}_A(M,N)$.</p>
@@ -169,7 +169,7 @@ $$</p>
 \boxed{\;A_{\mathrm{opp}} \xrightarrow{\ \sim\ } \operatorname{End}_A({}_A A), \qquad a \longmapsto (b \mapsto b a)\;}.
 $$</p>
 <p><em>Proof.</em> For $a \in A$, the map $R_a(b)=ba$ is $A$-linear because $R_a(c b)=(c b)a=c(ba)=c R_a(b)$. It is additive, and $R_a \circ R_{a'}=R_{a'a}$, so $a \mapsto R_a$ is a ring homomorphism $A_{\mathrm{opp}}\to\operatorname{End}_A(A)$. It is injective, since $R_a(1_A)=a$; and it is surjective, since for any $f \in \operatorname{End}_A(A)$ and $b \in A$ one has $f(b)=f(b 1_A)=b f(1_A)=R_{f(1_A)}(b)$.</p>
-<p>Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A_{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of units of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by units, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.</p>
+<p>Taking units gives $\operatorname{Aut}_A({}_A A) \cong (A_{\mathrm{opp}})^{\times} \cong A^{\times}$, the group of invertibles of $A$, under the same map; the inverse of $R_a$ is $R_{a^{-1}}$. Thus the automorphisms of the left regular module are exactly the right multiplications by invertibles, a fact that is invisible over a commutative base ring and is the first sign of the asymmetry of the noncommutative case.</p>
 <h2 id="annihilators-cyclic-modules-and-simple-modules">Annihilators, Cyclic Modules and Simple Modules</h2>
 <p>For $m \in M$, the <strong>annihilator</strong> is the set</p>
 <p>$$
@@ -249,7 +249,7 @@ $$</p>
 </tr>
 <tr>
 <td>$A^{\times}$</td>
-<td>group of units of $A$</td>
+<td>group of invertibles of $A$</td>
 </tr>
 <tr>
 <td>$Z(A)$</td>

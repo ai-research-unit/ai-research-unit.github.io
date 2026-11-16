@@ -103,13 +103,13 @@ $$</p>
 <p>$$
 \tilde Q_1\tilde Q_2=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2.
 $$</p>
-<p>The general plain bilinear product, $\tilde Q_1\tilde Q_2$, is the multiplication of the two elements as they stand: scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, <strong>associative</strong>, and $e_t$ is a unit on both sides. It is the only associative product of the twelve.</p>
+<p>The general plain bilinear product, $\tilde Q_1\tilde Q_2$, is the multiplication of the two elements as they stand: scalar part $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ and vector part $Q_{1t}\vec Q_2+Q_{2t}\vec Q_1+\vec Q_1\times\vec Q_2$. It is $\mathbb{C}$-bilinear, <strong>associative</strong>, and $e_t$ is invertible on both sides. It is the only associative product of the twelve.</p>
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-quaternionic-bilinear-product-gqa">The General Quaternionic Bilinear Product (gqa)</h3>
 <p>$$
 \tilde Q_1^{\natural}\tilde Q_2=\bigl[Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2-Q_{2t}\vec Q_1-\vec Q_1\times\vec Q_2.
 $$</p>
-<p>The general quaternionic bilinear product, $\tilde Q_1^{\natural}\tilde Q_2$, is the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, <strong>not associative</strong>, and $e_t$ is a unit on the <strong>left</strong> only. Its exchange is the quaternion conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.</p>
+<p>The general quaternionic bilinear product, $\tilde Q_1^{\natural}\tilde Q_2$, is the general plain bilinear product with the first factor read through ${}^{\natural}$. It is $\mathbb{C}$-bilinear, <strong>not associative</strong>, and $e_t$ is invertible on the <strong>left</strong> only. Its exchange is the quaternion conjugation of its value, $\tilde Q_2^{\natural}\tilde Q_1=(\tilde Q_1^{\natural}\tilde Q_2)^{\natural}$.</p>
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-plain-sesquilinear-product-gps">The General Plain Sesquilinear Product (gps)</h3>
 <p>$$
@@ -120,7 +120,7 @@ $$
 \tilde Q_1\tilde Q_2^{*}=\bigl(\overline{\tilde Q}_2\tilde Q_1^{\natural}\bigr)^{\natural},\qquad
 \tilde Q_2\tilde Q_1^{*}=\bigl(\overline{\tilde Q}_1\tilde Q_2^{\natural}\bigr)^{\natural}.
 $$
-It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second; it is <strong>not associative</strong>, and $e_t$ is a unit on the <strong>right</strong> only.</p>
+It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, $\mathbb{C}$-linear in the first argument and conjugate-linear in the second; it is <strong>not associative</strong>, and $e_t$ is invertible on the <strong>right</strong> only.</p>
 <p>Its values fill the whole space $\mathbb{B}$.</p>
 <h3 id="the-general-quaternionic-sesquilinear-product-gqs">The General Quaternionic Sesquilinear Product (gqs)</h3>
 <p>$$
@@ -138,7 +138,7 @@ It is sesquilinear over $(\mathbb{C},\bar{\cdot})$, <strong>not associative</str
 <p>$$
 \tfrac12\bigl(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1\bigr)=\bigl[Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr]+Q_{1t}\vec Q_2+Q_{2t}\vec Q_1.
 $$</p>
-<p>The Jordan product $\tilde Q_1\bullet\tilde Q_2$, the general plain bilinear product with the cross term dropped. It is commutative, $e_t$ is a unit on both sides, and it satisfies the <strong>Jordan identity</strong>; it is the only one of the four symmetric parts that does, and it is the only part of the eight that has a unit at all. The identity is not put to the four general products, which are neither symmetrisations nor antisymmetrisations; the counts over the parts are in §<em>The Counts of the Failures</em>.</p>
+<p>The Jordan product $\tilde Q_1\bullet\tilde Q_2$, the general plain bilinear product with the cross term dropped. It is commutative, $e_t$ is invertible on both sides, and it satisfies the <strong>Jordan identity</strong>; it is the only one of the four symmetric parts that does, and it is the only part of the eight that has a unit at all. The identity is not put to the four general products, which are neither symmetrisations nor antisymmetrisations; the counts over the parts are in §<em>The Counts of the Failures</em>.</p>
 <h3 id="the-symmetric-quaternionic-bilinear-product-sqa">The Symmetric Quaternionic Bilinear Product (sqa)</h3>
 <p>The symmetric quaternionic bilinear product, $\tilde Q_1\bullet_{\natural}\tilde Q_2$, is the symmetric part of the general quaternionic bilinear product above.</p>
 <p>$$
@@ -356,7 +356,7 @@ of each of the four families, have no scalar part; the scalar part plus the vect
 is its product.</p>
 <p>Six of the twelve are $\mathbb{C}$-bilinear, the three operations of each of the two bilinear families, and the remaining six are the six sesquilinear operations of the two sesquilinear families. In the two bilinear families the symmetric part is commutative and the antisymmetric part is alternating, with zero diagonal; in the two sesquilinear families the same two symmetries hold <strong>up to the coefficientwise conjugation</strong>, the symmetric part being conjugate-commutative, $s(\tilde Q_1,\tilde Q_2)=\overline{s(\tilde Q_2,\tilde Q_1)}$, and the antisymmetric part conjugate-alternating, $\mathfrak{a}(\tilde Q_1,\tilde Q_2)=-\overline{\mathfrak{a}(\tilde Q_2,\tilde Q_1)}$. The algebraic norm of the two sesquilinear antisymmetric parts is the vector part of the square and does not vanish in general. These symmetries hold by the definitions alone, for every product.</p>
 <p><strong>Remark (the two classifications of the table are independent).</strong> The rows of the table above are the slot settings and the columns are the readings. The rows carry the slot calculus of <em>Introduction to the Operators of the Biquaternion Algebra</em>, §<em>The Table of the Slots</em> — the second slot fixes whether the operation is a composition and the first fixes what the form reads — and the columns fix the algebraic norm alone, the square of an element. Neither classification refines the other: a row property such as associativity holds for $\tilde Q_1\tilde Q_2$ alone and cuts across the columns, and the norm of a column is not read from the row. The twelve names record both.</p>
-<p><strong>Remark (the one unital non-associative structure).</strong> $\tilde Q_1\bullet\tilde Q_2$ is commutative and has $e_t$ as a unit on both sides, and it is not associative: it is the symmetrisation $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, and the symmetrisation of an associative product need not be associative. Among the twelve it is the only structure that is unital without being associative, and its algebraic norm is the plain one, $\tilde Q_1\bullet\tilde Q_1=\tilde Q_1^{2}$.</p>
+<p><strong>Remark (the one unital non-associative structure).</strong> $\tilde Q_1\bullet\tilde Q_2$ is commutative and has $e_t$ as an invertible element on both sides, and it is not associative: it is the symmetrisation $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$, and the symmetrisation of an associative product need not be associative. Among the twelve it is the only structure that is unital without being associative, and its algebraic norm is the plain one, $\tilde Q_1\bullet\tilde Q_1=\tilde Q_1^{2}$.</p>
 <h3 id="the-reconstruction-product-by-product">The Reconstruction, Product by Product</h3>
 <p>Each product is the sum of its two parts, one identity to a product:</p>
 <p>$$

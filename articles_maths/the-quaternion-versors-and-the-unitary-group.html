@@ -70,16 +70,16 @@
       <div class="article-body">
         <h1 id="the-quaternion-versors-and-the-unitary-group"><strong>The Quaternion Versors and the Unitary Group</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The versors are the quaternions of norm one. They form the unit sphere $S^3$, a compact Lie group of dimension three, and the group is at once Hamilton's group of the versors, the symplectic group $\mathrm{Sp}(1)$ and the special unitary group $SU(2)$. It is the compact group of the algebra: the group of units is a positive scale times it, and its two-sided action on the algebra gives the double covers of $SO(3)$ and of $SO(4)$.</p>
+<p>The versors are the quaternions of norm one. They form the unit sphere $S^3$, a compact Lie group of dimension three, and the group is at once Hamilton's group of the versors, the symplectic group $\mathrm{Sp}(1)$ and the special unitary group $SU(2)$. It is the compact group of the algebra: the group of invertibles is a positive scale times it, and its two-sided action on the algebra gives the double covers of $SO(3)$ and of $SO(4)$.</p>
 <p>The article proves the group structure and the identification with $SU(2)$, computes the Lie algebra and the exponential, states the two double covers with their kernels, and then reads the unitary group of the algebra from the two forms: the definite form has the versors for its $\mathbb{H}$-linear isometry group, and the indefinite form has none beyond the two signs, so the indefinite unitary group is large as a real group and trivial as a group of the algebra. The article ends with the matrix model, where the versors are the intersection of the algebra with $\mathrm{U}(2)$, and with the maximal torus and the Weyl group.</p>
-<p>The group of units and the topology of the sphere are <a href="the-quaternion-unit-group-as-a-topological-group.html">The Quaternion Unit Group as a Topological Group</a> and <a href="quaternion-topology.html">Quaternion Topology</a>; the rotation action is <a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, cited and not restated.</p>
+<p>The group of invertibles and the topology of the sphere are <a href="the-quaternion-group-of-invertibles-as-a-topological-group.html">The Quaternion Group of Invertibles as a Topological Group</a> and <a href="quaternion-topology.html">Quaternion Topology</a>; the rotation action is <a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, cited and not restated.</p>
 <h2 id="the-versors-and-the-unit-sphere">The Versors and the Unit Sphere</h2>
 <p><strong>Definition.</strong> A <strong>versor</strong> is a quaternion of norm one, $\tilde u\tilde u^{\natural}=e_t$; the set of the versors is the unit sphere $S^3=\{N=1\}$.</p>
 <p><strong>Theorem (the versors form a group).</strong> $S^3$ is closed under the product and the inverse, and it is a subgroup of $\mathbb{H}^{\times}$; it is the kernel of the homomorphism $N\colon\mathbb{H}^{\times}\to\mathbb{R}_{>0}$.</p>
 <p><em>Proof.</em> $N(\tilde u\tilde v)=N(\tilde u)N(\tilde v)=1$ and $N(\tilde u^{-1})=1$; the inverse of a versor is its conjugate, which is a versor. The multiplicativity of $N$ is the statement that the map is a homomorphism, and the kernel is the sphere. Verified on products of random versors.</p>
-<p><strong>Corollary (the group of units).</strong> $\mathbb{H}^{\times}=\mathbb{R}_{>0}\times S^3$, the scale and the versor being unique, and $S^3$ is a deformation retract of the group of units.</p>
+<p><strong>Corollary (the group of invertibles).</strong> $\mathbb{H}^{\times}=\mathbb{R}_{>0}\times S^3$, the scale and the versor being unique, and $S^3$ is a deformation retract of the group of invertibles.</p>
 <p><em>Proof.</em> Every non-zero $\tilde q$ is $r\tilde u$ with $r=\lvert\tilde q\rvert>0$ and $\tilde u=\tilde q/r$; the retraction is the normalisation, and the homotopy is the linear interpolation of the scale. Verified by computing the two factors.</p>
-<p><strong>Remark (the sphere is the whole compact part).</strong> The versors are the only elements of norm one, and they are all of them: the sphere is the level set of the norm and the compact subgroup of the group of units. <strong>The algebra has exactly one compact group of positive dimension, and it is the group of its versors.</strong></p>
+<p><strong>Remark (the sphere is the whole compact part).</strong> The versors are the only elements of norm one, and they are all of them: the sphere is the level set of the norm and the compact subgroup of the group of invertibles. <strong>The algebra has exactly one compact group of positive dimension, and it is the group of its versors.</strong></p>
 <h2 id="the-lie-group-structure">The Lie Group Structure</h2>
 <p><strong>Theorem (the Lie algebra).</strong> $S^3$ is a Lie group of dimension three, and its Lie algebra is the vector subspace $\operatorname{Vect}(\mathbb{H})$ with the bracket
 $$
@@ -111,7 +111,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 <p><strong>Theorem (the definite form).</strong> $U_{\mathbb{H}}(N)=S^3$: the $\mathbb{H}$-linear isometries of the quaternion norm are the right multiplications by the versors, and the group is compact of dimension three.</p>
 <p><em>Proof.</em> An $\mathbb{H}$-linear $f$ is the right multiplication by $\tilde g=f(e_t)$; the condition $N(\tilde q\tilde g)=N(\tilde q)$ for all $\tilde q$ is $N(\tilde g)=1$, since $N$ is multiplicative. So the group is the versor group, acting on the right. Verified on random versors.</p>
 <p><strong>Theorem (the indefinite form).</strong> $U_{\mathbb{H}}(P)=\{\pm e_t\}$: the only $\mathbb{H}$-linear isometries of the plain form are the two signs, so the indefinite form has no continuous group of the algebra.</p>
-<p><em>Proof.</em> With $f$ the right multiplication by $\tilde g$, the condition is $P(\tilde q\tilde g)=P(\tilde q)$ for all $\tilde q$. At $\tilde q=e_t$ it gives $P(\tilde g)=1$, that is $g_t^2-\lvert\vec g\rvert^2=1$. At a pure unit $\tilde q=\vec n$ it gives $P(\vec n\tilde g)=P(\vec n)=-1$, and the scalar part of $(\vec n\tilde g)^2$ is $2\langle\vec g,\vec n\rangle^2-g_t^2-\lvert\vec g\rvert^2$, so the condition reads $\langle\vec g,\vec n\rangle^2=\lvert\vec g\rvert^2$ for every unit $\vec n$, which forces $\vec g=0$ and then $g_t=\pm1$. Verified numerically: the two signs satisfy the condition and no other candidate does.</p>
+<p><em>Proof.</em> With $f$ the right multiplication by $\tilde g$, the condition is $P(\tilde q\tilde g)=P(\tilde q)$ for all $\tilde q$. At $\tilde q=e_t$ it gives $P(\tilde g)=1$, that is $g_t^2-\lvert\vec g\rvert^2=1$. At a pure unit $\tilde q=\vec n$ it gives $P(\vec n\tilde g)=P(\vec n)=-1$, and the scalar part of $(\vec n\tilde g)^2$ is $2\langle\vec g,\vec n\rangle^2-g_t^2-\lvert\vec g\rvert^2$, so the condition reads $\langle\vec g,\vec n\rangle^2=\lvert\vec g\rvert^2$ for every invertible $\vec n$, which forces $\vec g=0$ and then $g_t=\pm1$. Verified numerically: the two signs satisfy the condition and no other candidate does.</p>
 <p><strong>Remark (the two readings of the contrast).</strong> The real isometry group of $P$ is the large non-compact $O(1,3)$ of <a href="the-p-isometry-group-and-its-cartan-decomposition.html">The P Isometry Group and Its Cartan Decomposition</a>, and almost none of it commutes with the algebra; the real isometry group of $N$ is the compact $O(4)$, and its $\mathbb{H}$-linear part is the versor group. <strong>The definite form has a unitary group of the algebra and it is the versors; the indefinite form has none, and the contrast is the sharpest measure of what the definite form does for the algebra.</strong></p>
 <h2 id="the-matrix-model-and-math108">The Matrix Model and $\mathrm{U}(2)$</h2>
 <p><strong>Theorem (the intersection with $\mathrm{U}(2)$).</strong> In the model $\mathbb{H}\subset M_2(\mathbb{C})$, the versor group is $\mathbb{H}\cap U(2)=SU(2)$, and $U(2)$ is the central product of $SU(2)$ with the circle of the scalar phases, a circle that leaves the algebra.</p>
@@ -169,7 +169,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 <td>$4$</td>
 <td>no</td>
 <td>no</td>
-<td>the units</td>
+<td>the invertibles</td>
 </tr>
 <tr>
 <td>$O(4)$</td>
@@ -194,9 +194,9 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 </tr>
 </tbody>
 </table></div>
-<p><strong>Remark (the reading of the table).</strong> The versor group is the only compact group of the algebra itself; the rotation groups are its quotients, the spin groups its products, the groups of units its cone, and the isometry groups of the two forms are the two ways of enlarging it, one compact and one not. <strong>The compact column contains the versors and their quotients; the non-compact column contains the units and the isometries of the indefinite form; and the unitary group of the algebra is the single group of the first column.</strong></p>
+<p><strong>Remark (the reading of the table).</strong> The versor group is the only compact group of the algebra itself; the rotation groups are its quotients, the spin groups its products, the groups of invertibles its cone, and the isometry groups of the two forms are the two ways of enlarging it, one compact and one not. <strong>The compact column contains the versors and their quotients; the non-compact column contains the invertibles and the isometries of the indefinite form; and the unitary group of the algebra is the single group of the first column.</strong></p>
 <h2 id="summary">Summary</h2>
-<p>The versors are the quaternions of norm one; they form the sphere $S^3$, a compact connected simply connected Lie group of dimension three, which is the kernel of the norm and the compact part of the group of units.</p>
+<p>The versors are the quaternions of norm one; they form the sphere $S^3$, a compact connected simply connected Lie group of dimension three, which is the kernel of the norm and the compact part of the group of invertibles.</p>
 <p>Its Lie algebra is the vector subspace with the bracket $2\vec u\times\vec v$, isomorphic to $\mathfrak{so}(3)$; its exponential is the quaternion exponential of a pure element, surjective with kernel the spheres $2\pi kS^2$.</p>
 <p>It is $\mathrm{Sp}(1)$, $SU(2)$ and $\mathrm{Spin}(3)$, its centre is $\{\pm e_t\}$, and its two-sided action gives the double covers of $SO(3)$ and $SO(4)$, the second with kernel of order two, so that $\mathrm{Spin}(4)=S^3\times S^3$.</p>
 <p>The $\mathbb{H}$-linear isometry group of the definite form is the versor group; that of the indefinite form is the two signs, so the indefinite form has no continuous unitary group of the algebra.</p>
@@ -239,7 +239,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-quaternion-unit-group-as-a-topological-group.html">The Quaternion Unit Group as a Topological Group</a> for the group of units and its topology.</li>
+<li><a href="the-quaternion-group-of-invertibles-as-a-topological-group.html">The Quaternion Group of Invertibles as a Topological Group</a> for the group of invertibles and its topology.</li>
 <li><a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a> and <a href="four-dimensional-rotations.html">Four-Dimensional Rotations</a> for the two double covers.</li>
 <li><a href="m2c-h-standard-representation.html">The M2C-H Standard Representation</a> for the matrix model and the identification with $SU(2)$.</li>
 <li><a href="the-p-isometry-group-and-its-cartan-decomposition.html">The P Isometry Group and Its Cartan Decomposition</a> for the indefinite isometry group.</li>

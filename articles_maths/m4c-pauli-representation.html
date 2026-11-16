@@ -202,7 +202,7 @@ c&d&0&0\\
 $$
 The matrix is block diagonal with two equal blocks. The first block acts on the pair $(\tilde\Pi_+,\vec\Upsilon_+)$ and the second on the pair $(\vec\Upsilon_-,\tilde\Pi_-)$. One block on its own is §<em>The Left and Right Matrices</em> of <em>$M_2(\mathbb{C})$ Pauli Representation</em>, which continues this article at the element size. The sum of the first and fourth columns is the coordinate column of $\tilde Q$ in the Peirce frame, $(a,c,b,d)^{\mathsf T}$; neither column alone recovers the element.</p>
 <p><strong>Why the block repeats.</strong> The left action preserves the splitting $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$, because $\tilde Q\tilde X\tilde\Pi_+=\tilde Q(\tilde X\tilde\Pi_+)$ stays in the first summand and likewise for the second. Each summand has complex dimension two, and on each the action is the same block $A$, written in the pairs $(\tilde\Pi_+,\vec\Upsilon_+)$ and $(\vec\Upsilon_-,\tilde\Pi_-)$. The two blocks are therefore equal, and their equality is the statement $L(\tilde Q)=\mathrm I_2\otimes\mathsf M_2(\tilde Q)$.</p>
-<p><strong>The four left matrices.</strong> The four matrices are the images of the units under the left matrix map,
+<p><strong>The four left matrices.</strong> The four matrices are the images of the invertibles under the left matrix map,
 $$
 L_{\mathrm{pau},e_t}=\mathsf{M}_{4L}(e_t)=\mathrm I_4,\qquad
 L_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4L}(\vec e_x)=\begin{pmatrix}0&-i&0&0\\-i&0&0&0\\0&0&0&-i\\0&0&-i&0\end{pmatrix},
@@ -224,7 +224,7 @@ L_{\mathrm{pau}}(\tilde Q)=
 \end{pmatrix}.
 $$
 The trace is $8+4i=4(2+i)$, and the determinant is $117+44i=(11+2i)^2$, with $\langle\tilde Q\rangle_{\natural}=11+2i$.</p>
-<p><strong>The product of two left matrices.</strong> Write the quaternion product of two units as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ with $\varepsilon=\pm1$ and $e_{\mu\nu}$ a unit. Then
+<p><strong>The product of two left matrices.</strong> Write the quaternion product of two units as $e_\mu e_\nu=\varepsilon e_{\mu\nu}$ with $\varepsilon=\pm1$ and $e_{\mu\nu}$ an invertible element. Then
 $$
 L_{\mathrm{pau},e_\mu} L_{\mathrm{pau},e_\nu}=\varepsilon L_{\mathrm{pau},e_{\mu\nu}},
 $$
@@ -264,7 +264,7 @@ R(\tilde Q_1\tilde Q_2)=R(\tilde Q_2)R(\tilde Q_1),\qquad
 L(\tilde Q_1)R(\tilde Q_2)=R(\tilde Q_2)L(\tilde Q_1).
 $$
 The two identities are the two ways of reading the associative law: the first is $(\tilde X\tilde Q_1)\tilde Q_2=\tilde X(\tilde Q_1\tilde Q_2)$ read on the right, the second is $\tilde Q_1\tilde X\tilde Q_2$ read from either side.</p>
-<p><strong>The four right matrices.</strong> The four matrices are the images of the units under the right matrix map,
+<p><strong>The four right matrices.</strong> The four matrices are the images of the invertibles under the right matrix map,
 $$
 R_{\mathrm{pau},e_t}=\mathsf{M}_{4R}(e_t)=\mathrm I_4,\qquad
 R_{\mathrm{pau},\vec e_x}=\mathsf{M}_{4R}(\vec e_x)=\begin{pmatrix}0&0&-i&0\\0&0&0&-i\\-i&0&0&0\\0&-i&0&0\end{pmatrix},
@@ -514,7 +514,7 @@ $$
 \qquad
 \begin{pmatrix}-i&-i\\1&-1\end{pmatrix},
 $$
-which are the two blocks of $C_{\Pi}^{-1}$, read transposed: that array lists the units by columns and not by rows. This is why the two arrays have four zeros in each off-block position: the idempotents never mix with the nilpotents.</p>
+which are the two blocks of $C_{\Pi}^{-1}$, read transposed: that array lists the invertibles by columns and not by rows. This is why the two arrays have four zeros in each off-block position: the idempotents never mix with the nilpotents.</p>
 <p><strong>The same dictionary on a column.</strong> A coordinate column changes by the same two arrays,
 $$
 q_e=C_{\Pi}\,p,\qquad p=C_{\Pi}^{-1}q_e,
@@ -663,7 +663,7 @@ and $C_{\Pi}^{-1}L_{\mathrm{axf}}(\tilde Q)C_{\Pi}$ returns the first. The block
 <p><strong>(f) The off-diagonal slots are lines.</strong> $\vec\Upsilon_+$ spans the one-dimensional space $\tilde\Pi_-\mathbb{B}\tilde\Pi_+$ and $\vec\Upsilon_-$ spans $\tilde\Pi_+\mathbb{B}\tilde\Pi_-$, and both are nilpotent.</p>
 <p><strong>(g) The stitch is a pure swap.</strong> $R(\tilde Q)=\mathsf P L(\tilde Q)^{\mathsf T}\mathsf P$ with $\mathsf P^2=\mathrm I_4$: no signs and no diagonal factor.</p>
 <p><strong>(h) The switch is half a swap.</strong> The Gram matrix of the plain product in this frame is $\tfrac12\mathsf P$, so $C_{\Pi}^{\mathsf T}DC_{\Pi}=\tfrac12\mathsf P$ and the two frames differ by a swap and a factor two.</p>
-<p><strong>(i) The invariants of a unit are trivial.</strong> $\operatorname{Tr}L_{\mathrm{pau},e_\mu}=4\delta_{\mu t}$ and $\det L_{\mathrm{pau},e_\mu}=1$, and the same on the right.</p>
+<p><strong>(i) The invariants of an invertible element are trivial.</strong> $\operatorname{Tr}L_{\mathrm{pau},e_\mu}=4\delta_{\mu t}$ and $\det L_{\mathrm{pau},e_\mu}=1$, and the same on the right.</p>
 <p><strong>(j) The transpose is two copies of $\sigma_2$.</strong> $L(\tilde Q)^{\mathsf T}=C_LL(\tilde Q^{\natural})C_L$ and $R(\tilde Q)^{\mathsf T}=C_RR(\tilde Q^{\natural})C_R$.</p>
 <p><strong>One root, ten readings.</strong> Properties (d) and (e) are the root: the idempotents are its two halves, and the split $\mathbb{B}=\mathbb{B}\tilde\Pi_+\oplus\mathbb{B}\tilde\Pi_-$ is the reason the block repeats. Properties (a), (b), (c) and (i) are one fact about the block, that $\mathsf M_2$ is a unitary monomial array of determinant one. Property (f) is the Peirce table of §<em>The Root and the Peirce Frame</em>. Properties (g) and (h) are the same swap, read on the two matrices. Property (j) is $\sigma_2$, the only Pauli matrix that is imaginary and antisymmetric. The ten are one frame seen ten ways.</p>
 <p><strong>What the entries cannot be.</strong> No entry of the sixteen is real except $0$ and $\pm1$, and those occur only in $L_{\mathrm{pau},\vec e_y}$ and $R_{\mathrm{pau},\vec e_y}$. The frame vectors are complex, so the display of a real element is not real: the real slice $\mathbb{H}\subset\mathbb{B}$ does not land in $M_4(\mathbb{R})$ here, and the quaternion block of §<em>The Six Subspaces</em> is the shape $A_{\mathbb{H}}(a,b)$ and not the entrywise real shape. This is the price of the tensor display, and the coefficient basis pays it in the other currency: it keeps the entries real and gives up the idempotents.</p>

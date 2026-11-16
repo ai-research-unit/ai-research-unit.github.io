@@ -71,7 +71,7 @@
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_n(\mathbb{R})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The matrix algebra $M_n(\mathbb{R})$ is the algebra of $n\times n$ real matrices, and it is the split real form of $M_n(\mathbb{C})$: same matrix units, same trace, same determinant, and a different geometry.</strong> Every construction of the complex category reads here, and three things change. The transpose is one of two inequivalent involutions. The spectrum need not lie in the base field. The trace form is indefinite.</p>
-<p>The article fixes the algebra, its matrix units, its trace and determinant, its centre, its transpose, its trace form and its unit group, and closes with the case $n=2$. It assumes only linear algebra over $\mathbb{R}$, and defers the embedding in $M_n(\mathbb{C})$ to <em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> and the spectral theory to <em>The Real Spectrum: Real Roots and Conjugate Pairs</em>.</p>
+<p>The article fixes the algebra, its matrix units, its trace and determinant, its centre, its transpose, its trace form and its group of invertibles, and closes with the case $n=2$. It assumes only linear algebra over $\mathbb{R}$, and defers the embedding in $M_n(\mathbb{C})$ to <em>The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</em> and the spectral theory to <em>The Real Spectrum: Real Roots and Conjugate Pairs</em>.</p>
 <p>Throughout $n\ge2$; the transpose is written ${}^{\mathsf T}$ and the identity is $\mathrm{I}$.</p>
 <h2 id="the-algebra-and-the-matrix-units">The Algebra and the Matrix Units</h2>
 <p><strong>The algebra is the real vector space of $n\times n$ arrays with the matrix product.</strong> Write $E_{ij}$ for the array with $1$ in the entry $(i,j)$ and $0$ elsewhere. The $n^{2}$ arrays $E_{ij}$ are a basis over $\mathbb{R}$, and the product is</p>
@@ -92,7 +92,7 @@ $$</p>
 $$</p>
 <p>so it is a polynomial in the entries with integer coefficients, and $\det(AB)=\det A\det B$. Both are invariant under conjugation: $\operatorname{tr}(SAS^{-1})=\operatorname{tr}A$ and $\det(SAS^{-1})=\det A$.</p>
 <p><strong>The rank is the dimension of the image.</strong> For $A\in M_n(\mathbb{R})$ the rank $\operatorname{rk}A$ is $\dim\operatorname{im}A$, equal to the largest order of a nonvanishing minor, and $\operatorname{rk}_{\mathbb{C}}A=\operatorname{rk}_{\mathbb{R}}A$ because the minors are the same real polynomials. The eigenvalues do not survive in the same way; <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial over $\mathbb{R}$</em> treats that.</p>
-<p><strong>The determinant cuts the algebra into two open halves.</strong> The zero set $\Sigma=\{A:\det A=0\}$ is a hypersurface of dimension $n^{2}-1$ and its complement is the unit group. Since $\mathbb{R}^{\times}$ has two components, so does the complement; over $\mathbb{C}$ it is connected.</p>
+<p><strong>The determinant cuts the algebra into two open halves.</strong> The zero set $\Sigma=\{A:\det A=0\}$ is a hypersurface of dimension $n^{2}-1$ and its complement is the group of invertibles. Since $\mathbb{R}^{\times}$ has two components, so does the complement; over $\mathbb{C}$ it is connected.</p>
 <h2 id="the-centre-and-the-simplicity">The Centre and the Simplicity</h2>
 <p><strong>The centre is $\mathbb{R}\mathrm{I}$.</strong> If $A$ commutes with every matrix unit then $AE_{ij}=E_{ij}A$ for all $i,j$. Comparing the entry $(i,j)$ on both sides gives $A_{ii}=A_{jj}$ and $A_{ij}=0$ for $i\ne j$; hence $A=\lambda\mathrm{I}$ with $\lambda\in\mathbb{R}$.</p>
 <p><strong>The algebra is simple, and the proof is the same line as over $\mathbb{C}$.</strong> Let $J$ be a nonzero two-sided ideal and let $A\in J$ be nonzero, with $A_{kl}\ne0$. Then for all $i,j$,</p>
@@ -136,8 +136,8 @@ $$</p>
 <p>The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$ forces $\operatorname{tr}(SK)=0$. So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the signature is the pair of their dimensions. Measured on the basis of matrix units it is $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$.</p>
 <p><strong>The form is indefinite for every $n\ge2$, and the null cone is nontrivial.</strong> The antisymmetric half is nonempty as soon as $n\ge2$, so there are elements of negative square. Isotropic elements exist too: every nonzero nilpotent has $\operatorname{tr}(N^{2})=0$, and $E_{12}$ is one.</p>
 <p><strong>No form on $M_n(\mathbb{R})$ is both definite and invariant.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. <em>The Trace Form and Its Indefinite Signature</em> and <em>The Hilbert–Schmidt Form: Definite but Not Invariant</em> prove the two halves of the statement.</p>
-<h2 id="the-unit-group-and-the-two-components">The Unit Group and the Two Components</h2>
-<p><strong>The unit group is $\mathrm{GL}_n(\mathbb{R})$, of dimension $n^{2}$.</strong> It is the complement of $\Sigma$, open and dense, and a group under the product. The determinant is a surjective homomorphism</p>
+<h2 id="the-group-of-invertibles-and-the-two-components">The Group of Invertibles and the Two Components</h2>
+<p><strong>The group of invertibles is $\mathrm{GL}_n(\mathbb{R})$, of dimension $n^{2}$.</strong> It is the complement of $\Sigma$, open and dense, and a group under the product. The determinant is a surjective homomorphism</p>
 <p>$$
 \det:\mathrm{GL}_n(\mathbb{R})\longrightarrow\mathbb{R}^{\times},
 $$</p>
@@ -150,7 +150,7 @@ $$</p>
 <p><strong>The whole algebra is the split quaternions.</strong> The matrices $\mathrm{I}$, $J$, $H=\operatorname{diag}(1,-1)$ and $P=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ are a basis of $M_2(\mathbb{R})$, with $J^{2}=-\mathrm{I}$, $H^{2}=P^{2}=\mathrm{I}$ and $HP=-JH$. The multiplication table is that of $\mathbb{H}_{\mathrm{spl}}$ in <em>Split-Quaternion Algebra</em>, so $M_2(\mathbb{R})\cong\mathbb{H}_{\mathrm{spl}}$. The division algebra $\mathbb{H}$ is not a real matrix algebra: $M_2(\mathbb{R})$ has zero divisors.</p>
 <p><strong>The trace form at $n=2$ has signature $(3,1)$.</strong> The symmetric part is three-dimensional and positive definite; the antisymmetric part is one-dimensional, spanned by $J$, with $\operatorname{tr}(J^{2})=-2$. This is the form of signature $(3,1)$ of <em>Split-Quaternion Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The unit group has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.</p>
+<p>$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -194,7 +194,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{GL}_n(\mathbb{R})$, $\mathrm{SL}_n(\mathbb{R})$</td>
-<td>the unit group and its determinant-one subgroup</td>
+<td>the group of invertibles and its determinant-one subgroup</td>
 </tr>
 <tr>
 <td>$\Sigma=\{\det=0\}$</td>

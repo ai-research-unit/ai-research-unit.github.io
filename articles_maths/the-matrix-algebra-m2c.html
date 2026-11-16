@@ -71,7 +71,7 @@
         <h1 id="the-matrix-algebra-math0"><strong>The Matrix Algebra $M_2(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The algebra $M_2(\mathbb{C})$ is the algebra of $2\times2$ complex matrices, and everything in it is decided by four matrix units and one product rule.</strong></p>
-<p>This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the unit group and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>, the real matrices to <em>The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$</em>, and the ideal theory to <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em>.</p>
+<p>This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the group of invertibles and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$</em>, the real matrices to <em>The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$</em>, and the ideal theory to <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em>.</p>
 <p>No quadratic form is used in the proofs. The trace pairing is recorded as symmetric and nondegenerate, nothing more; its signature is <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>.</p>
 <h2 id="the-algebra">The Algebra</h2>
 <p><strong>Definition.</strong> $M_2(\mathbb{C})$ is the set of $2\times2$ arrays of complex numbers with the entrywise sum and the product $(AB)_{ij}=\sum_{k}a_{ik}b_{kj}$. The <strong>matrix units</strong> $E_{ij}$ have a $1$ in position $(i,j)$ and $0$ elsewhere.</p>
@@ -108,10 +108,10 @@ $$</p>
 <p><strong>Theorem (simplicity).</strong> The only two-sided ideals are $0$ and the algebra.</p>
 <p><strong>Proof.</strong> Let $I\neq0$ and $0\neq A\in I$ with $a_{ij}\neq0$. Then $E_{ii}AE_{jj}=a_{ij}E_{ij}\in I$, so $E_{ij}\in I$, and $E_{ki}E_{ij}E_{jl}=E_{kl}\in I$ for all $k,l$.</p>
 <p><strong>Corollary.</strong> The algebra is central simple. Every automorphism is inner and every derivation is inner, by Skolem–Noether and Noether; the proofs are <em>The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</em>.</p>
-<p><strong>The algebra is not a division algebra.</strong> Every off-diagonal unit is a nonzero nilpotent, $E_{12}^{2}=0$, so there are zero divisors and the non-units are exactly the singular matrices.</p>
-<h2 id="the-unit-group-and-the-projective-group">The Unit Group and the Projective Group</h2>
+<p><strong>The algebra is not a division algebra.</strong> Every off-diagonal unit is a nonzero nilpotent, $E_{12}^{2}=0$, so there are zero divisors and the non-invertibles are exactly the singular matrices.</p>
+<h2 id="the-group-of-invertibles-and-the-projective-group">The Group of Invertibles and the Projective Group</h2>
 <p><strong>Proposition.</strong> $GL_2(\mathbb{C})=\{\det\neq0\}$ is a complex algebraic group of complex dimension $4$. The determinant maps it onto $\mathbb{C}^{\times}$, with kernel $SL_2(\mathbb{C})$ of complex dimension $3$.</p>
-<p><strong>Proof.</strong> The unit group is the complement of a hypersurface in $\mathbb{C}^{4}$; the determinant is polynomial, multiplicative and onto, since $\operatorname{diag}(d,1)$ has determinant $d$; its kernel is a hypersurface, of dimension $3$.</p>
+<p><strong>Proof.</strong> The group of invertibles is the complement of a hypersurface in $\mathbb{C}^{4}$; the determinant is polynomial, multiplicative and onto, since $\operatorname{diag}(d,1)$ has determinant $d$; its kernel is a hypersurface, of dimension $3$.</p>
 <p><strong>Proposition.</strong> $PGL_2(\mathbb{C})=GL_2(\mathbb{C})/\mathbb{C}^{\times}I\cong SL_2(\mathbb{C})/\{\pm I\}$, of complex dimension $3$.</p>
 <p><strong>Proof.</strong> Multiply a class by $\lambda$ with $\lambda^{2}=(\det A)^{-1}$ to reach determinant $1$; two such representatives differ by a scalar of square $1$.</p>
 <p><strong>The action.</strong> $PGL_2$ acts by $[g]\cdot A=gAg^{-1}$, and the orbits are the conjugacy classes, classified by $(\operatorname{tr},\det)$ in <em>The Spectrum of a $2\times2$ Matrix</em>. On the projective line the action is the Möbius action, which is strictly three-transitive.</p>
@@ -150,7 +150,7 @@ $$</p>
 <p>$$
 \boxed{\;E_{ij}E_{kl}=\delta_{jk}E_{il},\qquad \dim_{\mathbb{C}}=4,\qquad \dim_{\mathbb{R}}=8.\;}
 $$</p>
-<p>Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is the only commutator-vanishing functional up to scale, the determinant is multiplicative, and the two are the coefficients of $\chi_A=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. The rank takes the values $0,1,2$ on strata of dimensions $0,3,4$, and the singular set is the determinant hypersurface of real codimension two. The unit group is $GL_2(\mathbb{C})$ of dimension $4$, and $PGL_2(\mathbb{C})\cong SL_2(\mathbb{C})/\{\pm I\}$ has dimension $3$. Over $\mathbb{R}$ the algebra is $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$. It is the biquaternion algebra under $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\operatorname{tr}=2Q_t$ and $\det=N$.</p>
+<p>Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is the only commutator-vanishing functional up to scale, the determinant is multiplicative, and the two are the coefficients of $\chi_A=\lambda^{2}-(\operatorname{tr}A)\lambda+\det A$. The rank takes the values $0,1,2$ on strata of dimensions $0,3,4$, and the singular set is the determinant hypersurface of real codimension two. The group of invertibles is $GL_2(\mathbb{C})$ of dimension $4$, and $PGL_2(\mathbb{C})\cong SL_2(\mathbb{C})/\{\pm I\}$ has dimension $3$. Over $\mathbb{R}$ the algebra is $\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$. It is the biquaternion algebra under $\mathsf M_2(\vec e_k)=-i\sigma_k$, with $\operatorname{tr}=2Q_t$ and $\det=N$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -180,7 +180,7 @@ $$</p>
 <td>no; $E_{12}^{2}=0$</td>
 </tr>
 <tr>
-<td>Unit group</td>
+<td>Group of invertibles</td>
 <td>$GL_2(\mathbb{C})$, dimension $4$</td>
 </tr>
 <tr>
