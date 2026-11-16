@@ -1,8 +1,8 @@
-# __The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion__
+# __The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector__
 
 ## Introduction
 
-Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with *Spectrally Degenerate*.
+Throughout this article $\tilde Q$ lies in the N-regular sector, so $N\neq0$. Off the wall, $B^2\neq0$, the element lies in $\Sigma_{11}$ and the eigenbasis is available; on the wall, $B^2=0$, it lies in $\Sigma_{10}$ and a Jordan chain replaces the eigenbasis. The body of the article reads the pairing off the wall, and §*On the Wall* carries the same regrouping to $\Sigma_{10}$.
 
 Every element of $\Sigma_{11}$ is the ordered product of a positive real scale, a central phase and two unit factors,
 
@@ -21,7 +21,7 @@ $$
 
 This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec{Ζ}=-i\vec U$ is the pure root of $+1$ that *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the eigenbasis, with its two nilpotents — carries the four basis elements and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
 
-The pairing is **partial**: its second factor is a single exponential only where the axis $\vec U=\vec Q/B$ is defined, which requires the vector part to be non-null. It is partial in both the factorisation and the construction, unlike the quaternion pairing, which is partial in the construction only. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*.
+The pairing is **partial**: its second factor is a single exponential only where the axis $\vec U=\vec Q/B$ is defined, which requires the vector part to be non-null. It is partial in both the factorisation and the construction, unlike the quaternion pairing, which is partial in the construction only. There are two partial pairings: this one, and the quaternion pairing, in which the scale is grouped with the rotor; the third grouping, in which the scale is grouped with the boost and the phase with the rotor, is not partial and is *The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector*.
 
 **The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and its two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It inserts, between the two factors and the existence theorem, the eigenbasis and the two spinor spaces, where the Hamilton data are the diagonal values. It adds a second half, the **root reading**, which reads the same word at the roots of one and collects the four-factor form, the two-exponent form, the single exponential and the idempotent exponential in one table. The first half is the Hamilton representation itself; the second is the same representation at the elements where the non-central factors close. The two halves are related by $\vec{Ζ}=-i\vec U$: multiplying the axis by $-i$ gives the pure root of $+1$ attached to the element. The four factors are taken from *The Polar Decomposition of an N-Regular Biquaternion*, and the exponential and the logarithm from *Biquaternion Elementary Functions*; the imported proofs are cited rather than repeated. No physics is invoked.
 
@@ -258,7 +258,7 @@ The two senses of partial are separated in the table.
 
 The Hamilton row is partial in both senses: its single exponential needs the axis $\vec U=\vec Q/B$, so it fails where the vector part is null, and the factorisation fails with it. The quaternion row is partial in its construction only; the Cartan row in neither.
 
-The two partial domains are not nested, and the Cartan domain contains both; *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*, §*The Domains and the Witnesses* records the exact cover of the complement of the null cone.
+The two partial domains are not nested, and the Cartan domain contains both; *The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector*, §*The Domains and the Witnesses* records the exact cover of the complement of the null cone.
 
 ### What This Pairing Carries
 
@@ -339,7 +339,7 @@ $$
 | $\mathcal H$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | Hermitian, in $\mathbb{B}_{\Psi}$ | $\frac{\theta_{\mathrm{rpd}}^2}{4}e_t$ | the boost $\tilde U_{\mathrm b}$ |
 | $\mathcal R$ | $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | real pure, in $\mathbb{B}_{\Phi}\cap\mathbb{B}_{V}$ | $-\frac{\theta_{\mathrm{axr}}^2}{4}e_t$ | the rotor $\tilde u_{\mathrm r}$ |
 
-The Hermitian exponent is the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta_{\mathrm{axr}}}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which *The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* reads at the level of the element.
+The Hermitian exponent is the real $\frac{\theta_{\mathrm{rpd}}}{2}$ times the Hermitian root $i\vec u_{\mathrm b}$ of $+e_t$, and the real pure exponent the real $\frac{\theta_{\mathrm{axr}}}{2}$ times the root $\vec u_{\mathrm r}$ of $-e_t$. On the exponents, the two non-central factors are the two halves of the Hermitian split of the exponent, which *The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector* reads at the level of the element.
 
 **The root on the exponents.** On the root set the rotor is pure, so $\theta_{\mathrm{axr}}=\pi$ and the rotor exponent is the same quarter turn $\mathcal R=\frac{\pi}{2}\vec u_{\mathrm r}$ for every root; the roots are separated by the rapidity inside $\mathcal H$ and by the two directions, and the closing condition $\tilde{Ζ}^2=e_t$ is exactly their orthogonality,
 
@@ -491,7 +491,136 @@ $$
 
 and the same two directions, with their angles and the central dial, give the general element.
 
-## Worked Examples
+## On the Wall
+
+The root $\vec U=\vec Q/B$ does not exist on the wall, and the angle loses its continuous part. The pairing is not abandoned there: the root is replaced by the nilpotent direction of the element and the angle by the exact logarithm. The sections below state the failure, give the exact replacement, take the limit from the open sector, and work the examples.
+
+### The Root and Its Failure
+
+The regular pairing needs three things: $B\neq0$, a choice of square root $B$, and the root $\vec U=\vec Q/B$ with $\vec U^2=-e_t$. On $\Sigma_{10}$ the vector part is null, $B^2=0$, so the second and third fail. The vector part is not a complex multiple of a root of $-e_t$; it is a nilpotent,
+
+$$
+\vec Q=Q_t\vec\Upsilon,
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+\vec\Upsilon\neq0
+$$
+
+on the Jordan part. There is no unit axis parallel to it, because its length is zero.
+
+The angle fails in the same way. In the regular sector $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$; on the wall $\sin\Theta=0$ and $\cos\Theta=\pm1$, so $\Theta$ is a multiple of $\pi$ and carries no continuous information. The exponent $\vec U\Theta$ is a product of a divergent root and a vanishing angle, and its limit depends on the path.
+
+### The Degenerate Hamilton Form
+
+The exact replacement is read from the normal form. Let
+
+$$
+\tilde Q=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+Q_t\neq0,
+\qquad
+\Rho^2=Q_t^2,
+\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+$$
+
+Then $Q_t=\varepsilon\Rho$ and
+
+$$
+\tilde Q=\Rho\bigl(\varepsilon e_t+\varepsilon\vec\Upsilon\bigr).
+$$
+
+Since $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, the element is
+
+$$
+\boxed{\;
+\tilde Q=\Rho\exp\Bigl(\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}\Bigr).
+\;}
+$$
+
+The exponent has a nilpotent noncentral part $\vec\Upsilon$ and a central part $0$ or $i\pi$. The central part is the sign: for $\varepsilon=+1$ it is absent, and for $\varepsilon=-1$ it is the principal logarithm of $-1$.
+
+**Theorem (the degenerate Hamilton form).** Every element of $\Sigma_{10}$ is the product of its complex modulus $\Rho$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.
+
+*Proof.* The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\Rho$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\Rho=\operatorname{Log}\tilde U$, which is unique in the branch of *Exponential Polar Decomposition on the N-Regular Sector*, §*The Exact Logarithm*.
+
+The first factor is the complex modulus, as in the regular pairing. The second factor is not the exponential of a root times an angle; it is the exponential of a nilpotent, and its noncentral part is the logarithm of a unipotent element.
+
+### The Limit From the Regular Sector
+
+Approach the wall along a regular family with $B\neq0$. The root $\vec U=\vec Q/B$ diverges as $B\to0$, and the angle obeys $\sin\Theta=B/\Rho\to0$. The limit of the product $\vec U\Theta$ depends on the sign $\varepsilon=Q_t/\Rho$.
+
+For $\varepsilon=+1$, $\cos\Theta\to1$ and $\Theta\sim B/\Rho$. Then
+
+$$
+\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\Rho}=\vec\Upsilon,
+\qquad
+\exp(\vec U\Theta)\longrightarrow\exp(\vec\Upsilon)=e_t+\vec\Upsilon.
+$$
+
+For $\varepsilon=-1$, $\cos\Theta\to-1$ and $\Theta\to\pi$ while $\sin\Theta=B/\Rho$. Then
+
+$$
+\vec U\Theta=\frac{\vec Q}{B}\bigl(\pi+O(B)\bigr)
+=\pi\frac{\vec Q}{B}+O(1),
+$$
+
+which diverges. The root-angle product has no finite limit, and the Hamilton pairing fails at the wall on this side. The exact form above is the replacement in both cases: it keeps the central sign and the nilpotent exponent together, and it does not require the divergent root.
+
+The limit shows what survives and what does not. The modulus survives, the exponential survives, and the nilpotent direction survives. The root does not survive, and the angle does not survive as a continuous parameter. This is the same phenomenon as the survival of the polar word and the failure of the eigenbasis on the wall.
+
+### Worked Examples at the Wall
+
+#### The Standard Jordan Element
+
+Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\Rho=1$, $\varepsilon=1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The degenerate Hamilton form is
+
+$$
+\tilde Q=\exp(\vec e_x+i\vec e_y)=e_t+\vec e_x+i\vec e_y,
+$$
+
+because the square of the exponent vanishes. The regular root does not exist: $B=0$. The single exponential is exact, and its exponent is the logarithm of the element.
+
+#### The Negative Jordan Element
+
+Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\Rho=1$, $\varepsilon=-1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The form is
+
+$$
+\tilde Q=\exp\bigl(\vec e_x+i\vec e_y+i\pi\bigr)
+=-\exp(\vec e_x+i\vec e_y)
+=-e_t-\vec e_x-i\vec e_y.
+$$
+
+The central $i\pi$ is the sign of the scalar part. It is the only difference from the previous case, and it is the reason the degenerate pairing needs the exact logarithm rather than the regular root.
+
+#### The Scalar Line
+
+On the scalar line $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. The form is
+
+$$
+\tilde Q=\Rho\exp\Bigl(i\pi\frac{1-\varepsilon}{2}\Bigr),
+$$
+
+which is $\Rho$ for $\varepsilon=+1$ and $-\Rho$ for $\varepsilon=-1$. This is the scalar limit of the Hamilton pairing: the root and the angle disappear, and only the modulus and the sign remain.
+
+### What the Wall Changes
+
+| Property | Regular sector | Degenerate sector |
+|---|---|---|
+| modulus | $\Rho=\sqrt{N}$ | the same |
+| exponent | $\vec U\Theta$, $\vec U^2=-e_t$ | $\vec\Upsilon+i\pi(1-\varepsilon)/2$, $\vec\Upsilon^2=0$ |
+| root | $\vec U=\vec Q/B$ | none |
+| angle | $\Theta$ with $\sin\Theta=B/\Rho$ | none; replaced by the exact logarithm |
+| exponent type | complex multiple of a root of $-e_t$ | nilpotent plus a central sign |
+| uniqueness | unique up to the branch of $B$ | unique in the branch of the logarithm |
+| survives the wall | the root diverges | the exponent is finite and exact |
+
+The Hamilton pairing is therefore the one pairing of the three that does not survive the wall as a pairing. The quaternion pairing survives as a regrouping, and the Cartan pairing survives as the polar decomposition of the unit group. The Hamilton pairing survives only after the root is replaced by the nilpotent direction, which is a different object.
+
+## Worked Examples off the Wall
 
 The examples are collected in the table, with the status of the pairing and the Hamilton data. The subsections give the computations.
 
@@ -629,7 +758,20 @@ The second half reads the same word at a root of one, $\tilde{Ζ}^2=e_t$. Apart 
 | $i\vec u_{\mathrm n}$ | $-e_t$ | $i\vec u_{\mathrm n}$ | boost trivial | $0$ | $\tfrac{\pi}{2}\vec u_{\mathrm n}$ | yes |
 | non-Hermitian | $-e_t$ | $i\tilde U_{\mathrm b}\,\vec u_{\mathrm r}$ | $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\pi}{2}\vec u_{\mathrm r}$ | no |
 
-The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent.
+The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the real pure $\mathcal R=\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, add exactly on the aligned words, where the two axes are parallel or one factor is central. Elsewhere the sum is corrected by the Baker–Campbell–Hausdorff series, whose leading term is half the bracket $[\mathcal H,\mathcal R]=i\frac{\theta_{\mathrm{rpd}}\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The product is nevertheless a single exponential on the whole domain, with the complex multiple $\Theta\vec U$ of a root of $-e_t$ as its exponent. At the wall the root is gone and the single exponential survives as $\exp(\vec\Upsilon)$, a nilpotent whose square vanishes.
+
+### At the Wall
+
+| Item | Value |
+|---|---|
+| regular form | $\tilde Q=\Rho\exp(\vec U\Theta)$ |
+| degenerate form | $\tilde Q=\Rho\exp(\vec\Upsilon+i\pi(1-\varepsilon)/2)$ |
+| exponent | nilpotent $\vec\Upsilon$ plus central $0$ or $i\pi$ |
+| modulus | $\Rho$, the complex square root of $N$ |
+| sign | $\varepsilon=Q_t/\Rho=\pm1$ |
+| root | does not exist at $B=0$ |
+| limit | $\vec U\Theta\to\vec\Upsilon$ for $\varepsilon=+1$; diverges for $\varepsilon=-1$ |
+| exactness | $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$ |
 
 ## Summary of Notation
 
@@ -679,8 +821,8 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.
 - [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the four exponentials, the existence and uniqueness of the word, and the logarithms that fix the branches.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §*The Algorithm* of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Order of the Factors* of that article, for the exponents $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §*The Single Exponential* above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.
-- [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the quaternion grouping, the other partial pairing, and the comparison of the two domains.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.
+- [The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the quaternion grouping, the other partial pairing, and the comparison of the two domains.
+- [The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector](the-cartan-hermitian-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.
 - [Idempotents](idempotents.html), for the classification of the roots of one and the halving map to the idempotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html) and [Hermitian Idempotents and the Peirce Decomposition](hermitian-idempotents-and-the-peirce-decomposition.html), for the Peirce pieces into which a root of one splits the algebra through its halving idempotents.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems $Q_\mu = q_\mu+iq'_\mu$ used to read the coordinates of a root.

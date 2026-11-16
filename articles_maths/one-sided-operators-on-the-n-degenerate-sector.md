@@ -1,7 +1,10 @@
 # __One-Sided Operators on the N-Degenerate Sector__
+
 ## Introduction
 
 The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two. This article treats the second half, the **null cone** $N=0$, a closed set of real dimension six and real codimension two.
+
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$. Two forms are used and they must be kept apart: the quaternionic norm $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$, which vanishes on the null cone, and the Hermitian norm $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$, which does not. The matrix model $\mathsf M_2$ sends $e_t$ to $I_2$ and $\vec e_k$ to $-i\sigma_k$, and it is multiplicative.
 
 The biquaternion algebra acts on itself by left and right multiplication,
 
@@ -692,7 +695,7 @@ The phase $e^{i\beta}$ is carried by $\tilde Q_0$ and by $L_{\tilde\nu}$; the sc
 
 The element modulus is zero, while the operator has rank two and non-zero singular value $2a$. The vanishing of the norm says that the element is a null vector and that both multiplications have a non-trivial kernel; it does not say that the operator is zero. The spectral degeneration $B^{2}=0$ makes the operator nilpotent; the norm degeneration makes its rank two. The two defects are independent.
 
-## The Eigenbasis and the Two Slots on the Idempotent Multiples
+## The Eigenbasis and the Two Spinor Spaces on the Idempotent Multiples
 
 Since $B^{2}\neq0$, the eigenbasis of *The Eigenbasis of a Spectrally Regular Biquaternion* exists. Its spectral projectors are $\tilde\Pi$ and $\tilde\Pi'$, and the Peirce form of $\tilde Q$ is
 
@@ -979,8 +982,9 @@ The norm fixes the rank and the spectral condition fixes the defect, on both str
 
 ## Summary of Notation
 
-| symbol | meaning |
+| Symbol | Meaning |
 |---|---|
+| $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$ | the quaternionic norm $Q_t^{2}+B^{2}$, zero on the null cone, and the Hermitian norm $\operatorname{Sc}(\tilde Q\tilde Q^{*})$, positive there |
 | $\tilde Q=c\tilde\Pi$ | an element of $\Sigma_{01}$ |
 | $\tilde\Pi'=e_t-\tilde\Pi$ | the complementary idempotent |
 | $\tilde{Ζ}=2\tilde\Pi-e_t$ | the pure root of $e_t$ |
@@ -1008,8 +1012,8 @@ The norm fixes the rank and the spectral condition fixes the defect, on both str
 
 ## Further Reading
 
-- [The Hermitian Pair on the N-Degenerate Sector](the-hermitian-pair-on-the-n-degenerate-sector.html), for the two-sided operator on the same two strata.
+- [Two-Sided Operators on the N-Degenerate Sector](two-sided-operators-on-the-n-degenerate-sector.html), for the two-sided operator on the same two strata.
 - [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential off the null cone, where the four-factor word exists.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor polar pair used throughout.
-- [Introduction to the Operators of the Four Sectors](introduction-to-the-operators-of-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.
+- [Introduction to the Operators on the Four Sectors](introduction-to-the-operators-on-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html) and [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the element-level descriptions of $\Sigma_{01}$ and $\Sigma_{00}$.

@@ -321,7 +321,7 @@ A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the
 - [The Rotor Group via 4×4 Real Matrices](the-rotor-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the two isoclinic copies of $S^3$ in $SO(4)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the biquaternion algebra and their relation to the spin group.
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the identity $2s+1=\dim$.
-- [The Hermitian Pair on the N-Regular Sector](the-hermitian-pair-on-the-n-regular-sector.html), for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.
+- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.
 - [The Pin and Spin Groups of the Quaternion Algebra](the-pin-and-spin-groups-of-the-quaternion-algebra.html), for the Clifford description of the same groups.
 - I. R. Porteous, *Clifford Algebras and the Classical Groups*, ch. 13 and 16, for the spin groups, the double covers and $Spin(4)\cong S^3\times S^3$.
 - S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, ch. II and III, for the Casimir element and the addition rule for the labels of a compact group.

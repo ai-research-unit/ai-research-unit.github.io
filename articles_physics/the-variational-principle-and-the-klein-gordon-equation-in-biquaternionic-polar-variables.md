@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the polar word into the Klein–Gordon action and reads the result. The word is the one of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *Exponential Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion*:
+This article substitutes the polar word into the Klein–Gordon action and reads the result. The word is the one of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *Exponential Polar Decomposition on the N-Regular Sector*:
 
 $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},

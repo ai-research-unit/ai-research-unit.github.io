@@ -10,7 +10,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *The Hermitian Pair on the N-Regular Sector*.
+The two-sided operator of the polar decomposition is the product of the left action of $\tilde Q$ and the right action of $\tilde Q^{*}$, $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its theory is *Two-Sided Operators on the N-Regular Sector*.
 
 **What the norm decides, and what the vector form decides.** Inside the N-regular sector the second condition $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ cuts one wall, and the two sides of the wall behave differently in exactly one way. Everything global is fixed by $N$ alone: both operators are invertible, both have rank four, both have the whole algebra as image and zero as kernel, and the parameter map is faithful. The wall $B^{2}=0$ changes only the **eigenvalue count and the Jordan type**: off the wall there are two distinct eigenvalues and a semisimple operator, on the wall one repeated eigenvalue, and on the Jordan part of the wall two Jordan blocks of size two. That is the whole difference, and it is the reason the wall is a part of this article and not an article of its own.
 
@@ -883,7 +883,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 ## Further Reading
 
-- [The Hermitian Pair on the N-Regular Sector](the-hermitian-pair-on-the-n-regular-sector.html), for the two-sided operator, the factor-by-factor doubling rule and the cancellation of the phase.
+- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the two-sided operator, the factor-by-factor doubling rule and the cancellation of the phase.
 - [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential, the half-spin theorem and the weights.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.

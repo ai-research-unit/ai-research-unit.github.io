@@ -1,4 +1,4 @@
-# __The Hermitian Pair on the N-Regular Sector__
+# __Two-Sided Operators on the N-Regular Sector__
 
 ## Introduction
 
@@ -585,7 +585,7 @@ and the two-sided operator is the composition of the positive operator $\mathrm{
 
 ## The Boundary: the Null Cone
 
-The null cone $N=0$ is the subject of *The Hermitian Pair on the N-Degenerate Sector*. Only the two identities that connect the operator on the cone to the operator on the sector are recorded here. On the cone the polar word does not exist, but the two-sided operator does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The two-sided operator therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
+The null cone $N=0$ is the subject of *Two-Sided Operators on the N-Degenerate Sector*. Only the two identities that connect the operator on the cone to the operator on the sector are recorded here. On the cone the polar word does not exist, but the two-sided operator does. If $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, the matrix $\mathsf M_2(\tilde Q)$ is a nonzero $2\times2$ matrix of determinant zero, hence of complex rank one. The two-sided operator therefore has complex rank one, and its image is the complex line spanned by $\tilde Q\tilde Q^{*}$: writing $\mathsf M_2(\tilde Q)=uv^{*}$ with column $u$ and row $v^{*}$,
 
 $$
 \mathsf M_2(\tilde Q)\,X\,\mathsf M_2(\tilde Q)^{*}
@@ -674,8 +674,8 @@ On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\math
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
-- [The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-cartan-hermitian-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
-- [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) and [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the two partial two-factor groupings.
+- [The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector](the-cartan-hermitian-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
+- [The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html) and [The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the two partial two-factor groupings.
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the two-sided operator as a product of the two regular maps, its spectrum, determinant, trace and rank.
 - [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the two-sided operator as a completely positive map and its rank-one place among the completely positive maps.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.

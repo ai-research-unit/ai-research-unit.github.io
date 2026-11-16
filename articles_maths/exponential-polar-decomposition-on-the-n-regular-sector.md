@@ -1070,7 +1070,7 @@ $$
 
 The logarithm is the sum of the scalar logarithm and the nilpotent vector part. The period $2\pi ik\,e_t$ can be added to the scalar logarithm, and no other ambiguity is present on the Jordan part: the logarithm is unique modulo the central periods, because the nilpotent part is fixed by $\tilde Q$.
 
-The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operators on the N-Regular Sector* and of *The Hermitian Pair on the N-Regular Sector*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
+The operator form of this single exponent is in §*The Exponential at the Wall* of *One-Sided Operators on the N-Regular Sector* and of *Two-Sided Operators on the N-Regular Sector*: the exponential of the left multiplication is the shear $\exp(L_{\tilde Q})=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$, and the two-sided operator is the null rotation $\mathrm{Sd}_{\tilde Q}=|Q_t|^2e^{A+B}$.
 
 ### The Formal Exponent and the Defect at the Wall
 
@@ -1502,7 +1502,7 @@ The last row is the statement of the section: the spectral reading is defined on
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the normal forms and the two strata of the wall.
 - [The Spectrum](the-spectrum.html), for the four sectors and the discriminants.
 - [One-Sided Operators on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator form of the exact logarithm on the wall.
-- [The Hermitian Pair on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the two-sided operator form.
+- [Two-Sided Operators on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the two-sided operator form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the fibre.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition and the Baker–Campbell–Hausdorff series.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

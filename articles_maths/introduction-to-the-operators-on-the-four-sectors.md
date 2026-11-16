@@ -1,4 +1,4 @@
-# __Introduction to the Operators of the Four Sectors__
+# __Introduction to the Operators on the Four Sectors__
 
 ## Introduction
 
@@ -125,9 +125,9 @@ The polar word carries three operators on the algebra: the left multiplication $
 
 ## Further Reading
 
-- [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html) and [The Hermitian Pair on the N-Regular Sector](the-hermitian-pair-on-the-n-regular-sector.html), for the unit case: the four factors, the half-spin, the doubling rule, the conformal image, and the wall $B^{2}=0$ with the Jordan types $2+2$ and $3+1$.
+- [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html) and [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the unit case: the four factors, the half-spin, the doubling rule, the conformal image, and the wall $B^{2}=0$ with the Jordan types $2+2$ and $3+1$.
 - [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html) and [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the operator exponential, the doubling of the exponents, and the shear and the null rotation at the wall.
-- [One-Sided Operators on the N-Degenerate Sector](one-sided-operators-on-the-n-degenerate-sector.html) and [The Hermitian Pair on the N-Degenerate Sector](the-hermitian-pair-on-the-n-degenerate-sector.html), for the null cone: the rank-one polar pair, the oblique projection on $\Sigma_{01}$ and the single chain on $\Sigma_{00}$.
+- [One-Sided Operators on the N-Degenerate Sector](one-sided-operators-on-the-n-degenerate-sector.html) and [Two-Sided Operators on the N-Degenerate Sector](two-sided-operators-on-the-n-degenerate-sector.html), for the null cone: the rank-one polar pair, the oblique projection on $\Sigma_{01}$ and the single chain on $\Sigma_{00}$.
 - [Operators Acting on One Side](operators-acting-on-one-side.html), for $L$ and $R$ frame-free, the two laws, the rank trichotomy $4,2,0$ and the commutant.
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the two-sided operator as an operator, its multiplicativity, its norm and its parameter modulo the central phase.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the polar word itself.

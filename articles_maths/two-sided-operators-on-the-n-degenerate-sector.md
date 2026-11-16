@@ -1,7 +1,8 @@
-# __The Hermitian Pair on the N-Degenerate Sector__
+# __Two-Sided Operators on the N-Degenerate Sector__
+
 ## Introduction
 
-This article treats the Hermitian pair on the **null cone** $N=\langle\tilde Q\rangle_{\natural}=0$, the closed set of real codimension two. It is the vector-side companion of *One-Sided Operators on the N-Degenerate Sector*.
+This article treats the two-sided operator, the Hermitian pair $\mathrm{Sd}_{\tilde Q}$, on the **null cone** $N=\langle\tilde Q\rangle_{\natural}=0$, the closed set of real codimension two. It is the two-sided companion of *One-Sided Operators on the N-Degenerate Sector*, the same polar pair read on two sides.
 
 The two-sided operator is the Hermitian congruence
 
@@ -34,7 +35,7 @@ The plan is the following. §*The Polar Pair* describes the polar pair on both s
 
 On the null cone the spectral decomposition fails and the polar pair survives. The two strata differ in what the partial isometry is: a scalar times an idempotent on $\Sigma_{01}$, a nilpotent on $\Sigma_{00}$. The positive factor is a rank-one Hermitian projection scaled by $2a$ in both cases.
 
-The conventions are those of the companion article. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$, the Hermitian norm is $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$, and the quaternionic norm is $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$.
+The conventions, including the two forms, are those of the companion article.
 
 The matrix model $\mathsf M_2$ sends $e_t$ to $I_2$ and $\vec e_k$ to $-i\sigma_k$; it is multiplicative, and
 
@@ -917,8 +918,9 @@ The norm fixes the rank and the image; the spectral condition fixes the eigenval
 
 ## Summary of Notation
 
-| symbol | meaning |
+| Symbol | Meaning |
 |---|---|
+| $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$ | the quaternionic norm $Q_t^{2}+B^{2}$, zero on the null cone, and the Hermitian norm $\operatorname{Sc}(\tilde Q\tilde Q^{*})$, positive there |
 | $\tilde Q=c\tilde\Pi$ | an element of $\Sigma_{01}$ |
 | $\mathrm{Sd}_{\tilde Q}$ | the two-sided operator $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
 | $\kappa=2\langle\tilde\Pi\rangle_{*}$ | the obliqueness, $\kappa\ge1$ |
@@ -944,4 +946,4 @@ The norm fixes the rank and the image; the spectral condition fixes the eigenval
 - [One-Sided Operators on the N-Degenerate Sector](one-sided-operators-on-the-n-degenerate-sector.html), for the one-sided companion on the same two strata.
 - [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the exponential of the two-sided operator off the null cone.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor polar pair used here.
-- [Introduction to the Operators of the Four Sectors](introduction-to-the-operators-of-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.
+- [Introduction to the Operators on the Four Sectors](introduction-to-the-operators-on-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.

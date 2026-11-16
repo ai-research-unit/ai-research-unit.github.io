@@ -102,7 +102,7 @@ L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\,L_{\vec u_
 \mathrm{Sd}_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\theta_{\mathrm{rpd}}
 \; }.
 $$
-A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Two-Sided Operator* of *The Hermitian Pair on the N-Regular Sector* and §*The Pure Factors and the Full Spin* of *The Two-Sided Exponential on the N-Regular Sector*.
+A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator, and the vector representation is the two-sided one. The spectral form of the same statement is in §*The Spectrum of the Two-Sided Operator* of *Two-Sided Operators on the N-Regular Sector* and §*The Pure Factors and the Full Spin* of *The Two-Sided Exponential on the N-Regular Sector*.
 
 The following table collects the pure factors. The last column is the nontrivial factor in the spectrum of the two-sided operator, that is, in the products $\lambda_i\bar\lambda_j$.
 

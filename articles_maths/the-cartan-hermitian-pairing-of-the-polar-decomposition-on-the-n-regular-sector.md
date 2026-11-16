@@ -1,8 +1,8 @@
-# __The Cartan Hermitian Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion__
+# __The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector__
 
 ## Introduction
 
-Throughout this article $\tilde Q$ lies in the N-regular, spectrally regular sector $\Sigma_{11}$, so $N\neq0$ and $B^2\neq0$. The sector condition is the domain on which the eigenbasis and the companion constructions are those of the regular case; the wall $B^2=0$ is treated in the companion article of the same title with *Spectrally Degenerate*.
+Throughout this article $\tilde Q$ lies in the N-regular sector, so $N\neq0$. Off the wall, $B^2\neq0$, the element lies in $\Sigma_{11}$ and the eigenbasis is available; on the wall, $B^2=0$, it lies in $\Sigma_{10}$ and a Jordan chain replaces the eigenbasis. The body of the article reads the pairing off the wall, and §*On the Wall* carries the same regrouping to $\Sigma_{10}$.
 
 Every element of $\Sigma_{11}$ is the ordered product of a positive real scale, a central phase and two unit factors,
 
@@ -34,7 +34,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 | classical limit | the matrix polar decomposition |
 | position among the three | the only total pairing, and the only pairing whose two factors are of the two involutive kinds |
 
-The other two pairings are partial: *The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
+The other two pairings are partial: *The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
 
 The article assumes the algebra and the domain of the polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
 
@@ -376,7 +376,127 @@ with two pure real unit quaternions $\hat\theta_{\mathrm{pha}}$ and $\hat\beta$ 
 
 The mathematics of the pairing is the same in both places; what the corpus adds is the split of the modulus into a scale and a phase, the branch, and the uniqueness.
 
-## Worked Examples
+## On the Wall
+
+The pairing needs no root, no angle and no eigenbasis, so it passes the wall unchanged. What the wall adds is a rigidity of the product: the element is unipotent up to its scalar, while the two factors are not. The sections below state the pairing on $\Sigma_{10}$, read the unipotence, separate the two signs, work one example, and compare with the other two pairings.
+
+### The Pairing at the Wall
+
+**Theorem (the Cartan pairing on $\Sigma_{10}$).** Let $\tilde Q\in\Sigma_{10}$ and let $\Rho$ be its modulus. Then
+
+$$
+\tilde Q=\tilde H\tilde V,
+\qquad
+\tilde H=r\tilde U_{\mathrm b},
+\qquad
+\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r},
+$$
+
+with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
+
+*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition on the N-Regular Sector*.
+
+The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the $*$-unitary group.
+
+#### The Matrix Form
+
+In the matrix model,
+
+$$
+\mathsf M(\tilde Q)=\mathsf M(\tilde H)\,\mathsf M(\tilde V),
+$$
+
+with $\mathsf M(\tilde H)$ positive definite of determinant $r^2$ and $\mathsf M(\tilde V)$ $*$-unitary. The matrix factorization is the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$. It does not require diagonalizability, which is why it survives on the Jordan part.
+
+### The Unipotent Product
+
+The element is unipotent up to its scalar. Let
+
+$$
+\tilde U=\frac{\tilde Q}{\Rho}=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),
+\qquad
+\vec\Upsilon^2=0,
+\qquad
+\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+$$
+
+Then
+
+$$
+\bigl(\tilde U-\varepsilon e_t\bigr)^2=\vec\Upsilon^2=0,
+$$
+
+so $\tilde U$ is $\varepsilon$ times a unipotent element. The product of the Cartan factors is
+
+$$
+\tilde H\tilde V=\Rho\tilde U=Q_t\bigl(e_t+\vec\Upsilon\bigr),
+$$
+
+which is $Q_t$ times a unipotent element. This is the sector condition in the pairing.
+
+**Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\theta_{\mathrm{rpd}}/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{axr}}/2)}$. Their product has the double eigenvalue $\varepsilon$.
+
+*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta_{\mathrm{axr}}/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\theta_{\mathrm{pha}}}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
+
+The factors are diagonalizable, and the product is not. They cannot commute: if they did, their product would be normal and hence diagonalizable, contradicting the non-scalar Jordan block. The non-commutativity of $\tilde H$ and $\tilde V$ is therefore exactly the defect of the element, read in the Cartan pairing.
+
+### The Two Signs
+
+The sign $\varepsilon$ is the scalar part of the unit factor. It is the only discrete datum of the pairing that the spectrum also carries. The two cases are:
+
+| Case | $\operatorname{Sc}\tilde U$ | $\tilde H$ | $\tilde V$ | $\tilde H\tilde V$ |
+|---|---|---|---|---|
+| positive | $+1$ | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
+| negative | $-1$ | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $Q_t(e_t+\vec\Upsilon)$ |
+
+The factors have the same shape in both cases; the sign is carried by the scalar $Q_t$ and by the branch of $\Rho$. The pairing does not need a separate sign convention.
+
+### A Worked Example at the Wall
+
+Take
+
+$$
+\tilde Q=e_t+\vec e_x+i\vec e_y.
+$$
+
+The Cartan factors are
+
+$$
+\tilde H=\sqrt2\,e_t+i\frac{\vec e_y+\vec e_z}{\sqrt2},
+\qquad
+\tilde V=\frac{e_t+\vec e_x}{\sqrt2}.
+$$
+
+The positive factor has determinant one and eigenvalues $\sqrt2$ and $1/\sqrt2$; the $*$-unitary factor has determinant one and eigenvalues $e^{\pm i\pi/4}$. Their product is
+
+$$
+\tilde H\tilde V
+=\left(\sqrt2\,e_t+i\frac{\vec e_y+\vec e_z}{\sqrt2}\right)\frac{e_t+\vec e_x}{\sqrt2}
+=e_t+\vec e_x+i\vec e_y,
+$$
+
+which is unipotent:
+
+$$
+\bigl(\tilde H\tilde V-e_t\bigr)^2
+=\bigl(\vec e_x+i\vec e_y\bigr)^2=0.
+$$
+
+The factors do not commute. Their commutator is nonzero, and its size measures the Jordan defect. The example is the smallest one in which the Cartan pairing is nontrivial: the positive factor is not scalar and the $*$-unitary factor is not central, while the product is defective.
+
+### What the Wall Changes
+
+| Property | Cartan pairing | Quaternion pairing | Hamilton pairing |
+|---|---|---|---|
+| first factor | positive Hermitian | real quaternion modulus | complex modulus |
+| second factor | $*$-unitary | exponential of a real quaternion | exponential of a root times an angle |
+| survives $\Sigma_{10}$ | yes, without change | yes, with orthogonal data | no, the root fails |
+| product on $\Sigma_{10}$ | unipotent up to $Q_t$ | regrouping of the same word | exact exponential of a nilpotent |
+| spectral input | none | none | root and angle |
+
+The Cartan pairing is the one that needs no spectral data at all. It is defined by the Hermitian structure alone, and the sector condition appears only in the unipotence of the product.
+
+## Worked Examples off the Wall
 
 The examples are collected in the table, with the two factors and the norm of the first. The subsections give the computations.
 
@@ -453,7 +573,27 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element
 
 The Cartan pairing groups the scale with the boost into the Hermitian positive factor $\tilde Q_H=r\tilde U_{\mathrm b}$ and the phase with the rotor into the $*$-unitary factor $\tilde Q_0=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$. The first is the positive square root of $\tilde Q\tilde Q^{*}$, the second is $\tilde Q_H^{-1}\tilde Q$, and the pairing solves the single equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$. Both factors are functions of the element alone, and both are defined on the whole complement of the null cone. The Hamilton pairing is partial in both senses; the quaternion pairing is partial in its construction only; the Cartan pairing is total in both.
 
-The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\theta_{\mathrm{pha}}\,e_t+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group.
+The pairing is Hermitian because the exponents of its factors lie in the two involutive subspaces: $\ln\tilde Q_H=\ln r\,e_t+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ is Hermitian and $\ln\tilde Q_0=i\theta_{\mathrm{pha}}\,e_t+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ is anti-Hermitian. This is the Cartan decomposition $\mathfrak{gl}(2,\mathbb{C})=\mathfrak{u}(2)\oplus\mathfrak{p}$. The factors themselves are not the sectors: the anti-Hermitian object is the logarithm of the second factor, not the second factor. In the unit-norm case the scale and the phase are trivial and the pairing becomes the Cartan decomposition $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the unit group. At the wall the two factors keep their form and only their product becomes unipotent, with $\operatorname{Sc}\tilde U=\pm1$.
+
+### At the Wall
+
+| Item | Value |
+|---|---|
+| factorization | $\tilde Q=\tilde H\tilde V$ |
+| positive factor | $\tilde H=r\tilde U_{\mathrm b}$, determinant $r^2$ |
+| $*$-unitary factor | $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, determinant $e^{2i\theta_{\mathrm{pha}}}$ |
+| product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
+| factor eigenvalues | $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{axr}}/2)}$ |
+| product eigenvalue | $\varepsilon$, double |
+| commutator | nonzero on the Jordan part |
+| availability | all of $\Sigma_{10}$ |
+
+### What the Pairing Shows
+
+- The Cartan factorization is the polar decomposition of the unit group; it does not use the eigenbasis.
+- The product is unipotent, but the factors are not; the defect is carried by their commutator.
+- The phase sits with the rotor, not with the scale; this is the difference from the Hamilton pairing.
+- The pairing survives the wall without a limit process.
 
 ## Summary of Notation
 
@@ -486,7 +626,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the principal branch that fix the two exponents of the pairing.
 - [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
-- [The Hamilton Root Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-hamilton-root-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html) and [The Quaternion Pairing of the Polar Decomposition of an N-Regular, Spectrally Regular Biquaternion](the-quaternion-pairing-of-the-polar-decomposition-of-an-n-regular-spectrally-regular-biquaternion.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
+- [The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html) and [The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
 - [Hermitian and Anti-Hermitian Elements](hermitian-and-anti-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and the structure of the $*$-unitary elements.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.
