@@ -200,11 +200,11 @@ $$</p>
 Ξ_{dip} = -\frac{1}{4\pi\epsilon_0}\,\frac{\mathrm{Sc}\!\left(\tilde{p}\,\vec u\right)}{r^2},
 $$</p>
 <p>because $\mathrm{Sc}(\tilde{p}\vec u) = -\vec p\cdot\vec u$ for pure real vectors.</p>
-<p><strong>The dipole interaction.</strong> The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E_{\Psi}$ one has $\tilde{p}\tilde E_{\Psi} = -\vec p\cdot\vec E + \vec p\times\vec E$, so</p>
+<p><strong>The dipole interaction.</strong> The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E_{\Phi}$ — the electric field is real, so anti-Hermitian and material, its informational reading being $i\tilde E_{\Phi}$ — one has $\tilde{p}\tilde E_{\Phi} = -\vec p\cdot\vec E + \vec p\times\vec E$, so</p>
 <p>$$
--\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E_{\Psi}\right)e_t = \tfrac12\left(\tilde{p}\tilde E_{\Psi} + \tilde E_{\Psi}\tilde{p}\right).
+-\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E_{\Phi}\right)e_t = \tfrac12\left(\tilde{p}\tilde E_{\Phi} + \tilde E_{\Phi}\tilde{p}\right).
 $$</p>
-<p>The pairing is the <strong>symmetrized product</strong> of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E_{\Psi}) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$.</p>
+<p>The pairing is the <strong>symmetrized product</strong> of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E_{\Phi}) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Phi})$.</p>
 <p>The dipole is thus the first non-trivial multipole for which the moment is an algebra element and the moment–field coupling is an algebra product — the monopole is the trivial case, a scalar whose coupling $ϙΞ(0) = (qe_t)(Ξ e_t)$ is an algebra product too. The dipole is the model for what the algebra can do; the quadrupole is where that stops.</p>
 <h2 id="the-quadrupole-tensor-and-its-interaction">The Quadrupole Tensor and Its Interaction</h2>
 <h3 id="the-moment-as-a-tensor">The Moment as a Tensor</h3>
@@ -246,7 +246,7 @@ $$</p>
 $$</p>
 <p><strong>It is a scalar.</strong> Like every interaction energy, $W_{quad}$ is a single number, hence an element of the centre $\mathbb{B}_{C}$. The algebra has no difficulty with the <em>value</em> of the quadrupole interaction. Its difficulty is with the <em>moment</em>, and that is the subject of the next section.</p>
 <h2 id="why-the-quadrupole-is-not-an-algebra-element">Why the Quadrupole Is Not an Algebra Element</h2>
-<h3 id="the-product-of-two-vectors-stops-at-math188">The Product of Two Vectors Stops at $D^{(1)}$</h3>
+<h3 id="the-product-of-two-vectors-stops-at-math189">The Product of Two Vectors Stops at $D^{(1)}$</h3>
 <p>The biquaternion product of two spatial vectors is fixed by the quaternion relations. For pure real vectors $\vec q, \vec v$,</p>
 <p>$$
 \vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v,
@@ -263,7 +263,7 @@ D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)} ,
 \qquad 3\times 3 = 1 + 3 + 5 ,
 $$</p>
 <p>and the quaternion product projects onto the first two summands, discarding the third. A quadrupole is precisely a symmetric traceless tensor, so it is precisely what the product discards.</p>
-<h3 id="the-algebra-contains-only-math197-and-math198">The Algebra Contains Only $D^{(0)}$ and $D^{(1)}$</h3>
+<h3 id="the-algebra-contains-only-math198-and-math199">The Algebra Contains Only $D^{(0)}$ and $D^{(1)}$</h3>
 <p>The same conclusion follows from the structure of the algebra itself. Under the rotor-conjugation action of the rotation group, $\mathbb{B}$ decomposes into the centre, spanned by $e_t$, and the vector part, spanned by $\vec e_x, \vec e_y, \vec e_z$. The centre is invariant, so it is $D^{(0)}$; the vector part transforms as a vector, so it is $D^{(1)}$:</p>
 <p>$$
 \mathbb{B} = D^{(0)}\oplus D^{(1)} \quad\text{(as a complex representation of the rotations)},
@@ -285,7 +285,7 @@ $$</p>
 <p>The algebra is a <strong>value algebra</strong> of finite dimension, and it carries exactly the spin-$0$ and spin-$1$ content of a scalar and a three-vector. The multipole tower is a property of the <strong>field space</strong>, which is infinite-dimensional. The two are different objects, and no finite algebra can play the role of the infinite-dimensional function space. The closing article of this sequence turns that observation into a general statement.</p>
 <h2 id="summary">Summary</h2>
 <p>The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.</p>
-<p>The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are <strong>elements of the algebra</strong>, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is <strong>not</strong> an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.</p>
+<p>The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are <strong>elements of the algebra</strong>, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Phi})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is <strong>not</strong> an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.</p>
 <p>The quadrupole <strong>interaction</strong> is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial R_i\partial R_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.</p>
 <p>The multipole tower is infinite because the angular structure of a field on the sphere is infinite-dimensional; the algebra is finite because it is the value algebra of a two-state, four-vector structure. The first order at which the difference shows is the quadrupole.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
