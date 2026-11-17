@@ -4,7 +4,7 @@
 
 Throughout this article $\tilde Q$ lies in the N-regular sector, so $N\neq0$. Off the wall, $B^2\neq0$, the element lies in $\Sigma_{11}$ and the eigenbasis is available; on the wall, $B^2=0$, it lies in $\Sigma_{10}$ and a Jordan chain replaces the eigenbasis. The body of the article reads the pairing off the wall, and §*On the Wall* carries the same regrouping to $\Sigma_{10}$.
 
-Every element of $\Sigma_{11}$ is the complete polar decomposition, the ordered product of a positive real scale, a central phase and two unit factors,
+Every element of $\Sigma_{11}$ carries the complete polar decomposition, the ordered product of a positive real scale, a central phase and two unit factors,
 
 $$
 \tilde{Q} = r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}

@@ -137,6 +137,20 @@ At the real argument the pair is the rotation and at the imaginary argument the 
 
 **The letter carries no second role.** The uses that once shared it have glyphs of their own: the involution, the automorphism and the orbit map are $\mathrm{J}$; the curvature of a connection is $\Omega$; the two-sided operator is $\mathrm{Sd}$; the congruence relation is $\vartheta_{\mathrm{cng}}$; the symplectic potential is $\varpi$; the theta function is $\vartheta_{\mathrm{thf}}$. A subscript on $\theta$ names the angle's own coordinate and does not make the letter an index of another kind: $p_\theta$ and $A_\theta$ are the momentum and the potential along the angular coordinate.
 
+## The Polar Words
+
+**A polar word is a factorisation of an element, and the corpus uses three.** The modulus–unit pair $\tilde Q=\Rho\tilde U$ holds off the algebraic null cone, with $\Rho$ the principal square root of the norm and $\tilde U$ of norm one. The Cartan pair $\tilde Q=\tilde Q_H\tilde Q_0$ holds on every element too, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry.
+
+**The four-factor word has one name and it is the complete polar decomposition.** On the regular elements $\langle\tilde Q\rangle_{\natural}\neq0$ the pair refines into
+
+$$
+\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+$$
+
+with the scale $r>0$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one and the unit real quaternion rotor $\tilde u_{\mathrm r}$. The name belongs to this word alone: the pair is the *polar decomposition*, and *complete* marks the refinement into four factors, one per slot, $1+1+3+3$ real parameters. The word is defined and proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*.
+
+**The three pairings of the word are regroupings of it, and each carries its own name.** The quaternion pairing, the Hamilton root pairing and the Cartan Hermitian pairing bracket the four factors into a product of two; none of them is a second decomposition, and none of them is called complete.
+
 ## The Remarkable Subspaces of Biquaternions
 
 The eight real parameters of a general element group into **remarkable subspaces**: the centre, the vector subspace, the quaternion and antiquaternion halves, and the Hermitian and anti-Hermitian halves. Each is cut out by a conjugation:

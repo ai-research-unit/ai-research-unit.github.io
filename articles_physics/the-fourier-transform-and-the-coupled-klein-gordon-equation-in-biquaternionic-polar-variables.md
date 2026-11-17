@@ -47,7 +47,7 @@ $$
 \;}
 $$
 
-which is the squared reading. **The chart is the chart of the squared equation and of nothing else**, and this is a statement about the functional's structure rather than about the complete polar decomposition's parameters.
+which is the squared reading. **The chart is the chart of the squared equation and of nothing else**, and this is a statement about the functional's structure rather than about the parameters of the complete polar decomposition.
 
 **The corollary is that no choice of word changes it.** The word is a bijection from eight parameters to the invertibles, so a substitution into the squared operator returns the squared operator. **A different chart of the same functional is still a chart of the same functional**, and the fork is not a fork about coordinates.
 

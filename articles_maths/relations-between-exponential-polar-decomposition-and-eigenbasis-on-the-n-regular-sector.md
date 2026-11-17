@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **exponential polar decomposition** splits the unit factor of the complete polar decomposition into a boost and a rotor, and multiplies the result by the modulus. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
+An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **exponential polar decomposition** splits the unit factor into a boost and a rotor, and multiplies the result by the modulus. The word it writes is the complete polar decomposition. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
 
 The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Off the wall the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct, the eigenprojections $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ exist, and they depend on the element. There the eigenvalues fix the modulus and the phase, and the two eigenvalues of the unit factor; the eigenprojections carry the remaining polar data. On the wall the two eigenvalues coalesce at $Q_t$, the eigenprojections diverge, and no eigenbasis exists. The spectral reading does not vanish; it collapses to a Jordan chain, and the spectrum fixes only two numbers, the scalar part $Q_t$ and the sign $\varepsilon$ of the unit factor.
 

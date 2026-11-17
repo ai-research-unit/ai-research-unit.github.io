@@ -26,7 +26,7 @@ and that the four brackets are of four types. **The limit is an ordering of thes
 
 **What is not new.** The semiclassical Dirac equation's WKB structure, the polarisation condition, the BMT equation and the Thomas precession are standard. Added here: the ordering of the parent's four brackets against one parameter, the statement that the rotor's ordering follows from the spin's dependence on the momentum, and the exactness of the current and the spin as limits of nothing.
 
-**The restriction.** The word exists only for an $N$-regular element, $N(\tilde\Xi)\neq0$, and the parent's boxed statement says so. The limit is defined on that domain and nowhere else, and a node is where both the word and the spin's axis lose their meaning.
+**The restriction.** The complete polar decomposition exists only for an $N$-regular element, $N(\tilde\Xi)\neq0$, and the parent's boxed statement says so. The limit is defined on that domain and nowhere else, and a node is where both the word and the spin's axis lose their meaning.
 
 **Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ and the boost and rotor real units; $S=\hbar\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=mc/\hbar$; $\rho=r^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln r\rvert$.
 

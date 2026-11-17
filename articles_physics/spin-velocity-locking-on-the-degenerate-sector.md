@@ -17,7 +17,7 @@ so a field that fixes its spin angle has no freedom left in its rapidity. The ve
 
 **What the article does not claim.** It does not claim that the sector is realised by any solution of the Dirac equation; it describes the sector and leaves the question of which fields lie on it to the corpus's dynamics. It does not claim that the lock extends off the sector; it holds only where $B^{2}=0$. It does not claim that the lock is a consequence of the field equation; it is a consequence of the algebraic condition.
 
-**The lemma it uses is proved in the companion.** The closed form of $B^{2}$ on the complete polar decomposition is [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html)'s, and this article quotes it. What this article adds is what the lemma does to the fluid.
+**The lemma it uses is proved in the companion.** The closed form of $B^{2}$ is that of [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html), and this article quotes it. What this article adds is what the lemma does to the fluid.
 
 ## The Sector
 

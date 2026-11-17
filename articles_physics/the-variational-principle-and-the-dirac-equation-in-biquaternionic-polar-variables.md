@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Dirac Equation in Biquaternionic Polar Variables* substitutes the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out.
+*The Dirac Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out.
 
 The action is the element-form companion's:
 

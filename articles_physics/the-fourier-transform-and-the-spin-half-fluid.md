@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**A mode of the Dirac field occupies one of the complete polar decomposition's four brackets and leaves the other three constant, so the fluid it carries is a rigid body in uniform translation with a fixed orientation.** The scale is a constant, the boost is a constant, the rotor is a constant, and the phase alone carries the wave number. The density, the velocity, the vorticity, the spin direction and the magnetisation current are then one number and four zeros, and the four zeros are the finding.
+**A mode of the Dirac field occupies one of the four brackets of the complete polar decomposition and leaves the other three constant, so the fluid it carries is a rigid body in uniform translation with a fixed orientation.** The scale is a constant, the boost is a constant, the rotor is a constant, and the phase alone carries the wave number. The density, the velocity, the vorticity, the spin direction and the magnetisation current are then one number and four zeros, and the four zeros are the finding.
 
 **The article's claim is that the three varying data of this fluid are all inter-mode.** The vorticity, the spin precession and the Gordon magnetisation current vanish at a mode and appear only in a superposition. The frozen-frame sector is [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html)'s degenerate case, a dust; this article's statement is stronger and narrower: **the frozen-frame sector is the set of modes, so the sector the fluid degenerates into is exactly the sector the Fourier basis diagonalises.**
 
