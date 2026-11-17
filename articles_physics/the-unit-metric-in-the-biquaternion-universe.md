@@ -54,7 +54,7 @@ $$
 
 and the four units are pairwise orthogonal, since $\mathrm{Sc}(e_x^\natural e_y)=-\mathrm{Sc}(\vec e_x\vec e_y)=-\mathrm{Sc}(\vec e_z)=0$. A base of four unit vectors, mutually orthogonal, has the identity as its Gram matrix. Nothing was chosen here: the base was given, the product was given, and the matrix came out.
 
-**It has no free parameter.** A symmetric $4\times4$ real matrix has ten independent entries. Here four are fixed at $+1$ by the norms of the four units, six at $0$ by their orthogonality, and every one of the ten by the multiplication. There is no signature to pick, no scale to fix and no convention to declare.
+**It has no free parameter.** A symmetric $4\times4$ real matrix has ten independent entries. Here four are fixed at $+1$ by the norms of the four units, six at $0$ by their orthogonality, and every one of the ten by the multiplication. There is no sign to pick, no scale to fix and no convention to declare.
 
 **A frame carries a coordinate, not a metric.** Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{B}_{\Phi}$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.
 
@@ -119,9 +119,9 @@ One positive direction and three negative, $(1,3)$. The mirror of the material c
 
 ### The general reading
 
-On $\mathbb{B}$ the four coefficients are complex and the value of the norm is complex. On the real-quaternion subspace $\mathbb{B}_{H}$, where the coefficients are real, it is $q_t^2+q_x^2+q_y^2+q_z^2$, positive definite, signature $(4,0)$: the ordinary Euclidean form.
+On $\mathbb{B}$ the four coefficients are complex and the value of the norm is complex. On the real-quaternion subspace $\mathbb{B}_{H}$, where the coefficients are real, it is $q_t^2+q_x^2+q_y^2+q_z^2$, positive definite: the ordinary Euclidean form.
 
-| reading | coordinate | interval | signature |
+| reading | coordinate | interval | signs |
 |---|---|---|---|
 | $\mathbb{B}$ | $Q_\mu\in\mathbb{C}$ | complex in general | none until a sector is imposed |
 | $\mathbb{B}_{H}$ | $q_\mu\in\mathbb{R}$ | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ |
@@ -144,7 +144,7 @@ The answer has three steps.
 
 **Therefore the sign is checkable in one and not in the other.** In the unit scheme a reader checks the minus by squaring: $(i r'_t)^2=-{r'_{t}}^2$, and $i^2=-1$ is arithmetic. In the absorbed scheme the minus is an entry of an array, and the reader can only check it against the author's declaration. One of the two can be audited by a reader who does not trust the author.
 
-**What the signature still is.** The interval on $\mathbb{B}_{\Phi}$ has signature $(3,1)$ and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ has signature $(4,0)$, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
+**What the signs still are.** The interval on $\mathbb{B}_{\Phi}$ has one negative direction and three positive, and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ is positive definite, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
 
 ## What the Choice Buys
 
@@ -259,7 +259,7 @@ There is one metric in the series, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, 
 
 The order of the two objects is inverted with respect to the textbook. The interval is a norm, a product of the element with its own conjugate, and the metric is read off afterwards. That removes an input and, with it, the freedom to mistype one.
 
-The Lorentzian interval follows from the same metric, with the sign delivered by the coordinate rather than by the metric. With $Q_t=i q'_t$ the norm is $(i r'_t)^2+r_x^2+r_y^2+r_z^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: the minus is the square of the $i$ in the coordinate, the real form has signature $(3,1)$, and the coefficient tuple is still $\delta_{\mu\nu}$. The informational reading gives the mirror, $h_t^2-(h'_{x})^2-(h'_{y})^2-(h'_{z})^2$, with signature $(1,3)$, from the same metric and a different coordinate.
+The Lorentzian interval follows from the same metric, with the sign delivered by the coordinate rather than by the metric. With $Q_t=i q'_t$ the norm is $(i r'_t)^2+r_x^2+r_y^2+r_z^2=-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: the minus is the square of the $i$ in the coordinate, the real form has one negative direction, and the coefficient tuple is still $\delta_{\mu\nu}$. The informational reading gives the mirror, $h_t^2-(h'_{x})^2-(h'_{y})^2-(h'_{z})^2$, with the signs exchanged, from the same metric and a different coordinate.
 
 The alternative is stated and refused. Absorbing the $i$ into a metric on the material sector gives $g=\mathrm{diag}(-1,1,1,1)$, which is $-\varepsilon$, and it recovers the Clifford metric after $\gamma\mapsto i\gamma$. It is equivalent, and it is the textbooks' language. It is refused because it relocates the $i$ into an object instead of removing it, because it makes a frame carry a metric again, because it replaces one substitution by a congruence law, because it brings back the index machinery, because it makes the minus un-auditable, because it removes the anchor of the material reading, and because it opens the door to a mixed text whose symptom is a time term of $+{r'_{t}}^2$.
 
@@ -277,8 +277,8 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $i r'_t$ an
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, the square of the units; not a metric |
 | $Q_t=i q'_t$, $Q_\eta=q_\eta$ | The material coordinate; the source of the minus of the interval |
 | $Q_t=q_t$, $Q_\eta=i q'_\eta$ | The informational coordinate; the $i$ on the three space slots |
-| $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | The material interval, signature $(3,1)$ |
-| $h_t^2-(h'_{x})^2-(h'_{y})^2-(h'_{z})^2$ | The informational interval, signature $(1,3)$ |
+| $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ | The material interval, one negative direction |
+| $h_t^2-(h'_{x})^2-(h'_{y})^2-(h'_{z})^2$ | The informational interval, one positive direction |
 | $g=\mathrm{diag}(-1,1,1,1)$ | The absorbed metric of the rejected alternative; equal to $-\varepsilon_\mu\delta_{\mu\nu}$ |
 | $\gamma_\mu$, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ | The Clifford map of the series; $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$ |
 | $\gamma'_\mu=i\gamma_\mu$ | The generators that give $+2g_{\mu\nu}$; the $i$ inside the array |
@@ -289,6 +289,6 @@ The series therefore keeps the metric $1,1,1,1$ and keeps the $i$ of $i r'_t$ an
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover), for the interval and the union of space and time.
 - Paul A. M. Dirac, *The Principles of Quantum Mechanics*, 4th edition (Oxford, 1958), for the gamma algebra in the form the textbooks inherited.
 - Charles W. Misner, Kip S. Thorne, John A. Wheeler, *Gravitation* (Freeman, 1973), §2.3 and §3.1, for the metric as the leading object and for the fate of the $i h_t$ convention.
-- David Hestenes, *Space-Time Algebra*, 2nd edition (Birkhäuser, 2015), for the school that puts the signature into the frame and the generators rather than into a coefficient, the nearest systematic contrast to the choice made here.
+- David Hestenes, *Space-Time Algebra*, 2nd edition (Birkhäuser, 2015), for the school that puts the signs into the frame and the generators rather than into a coefficient, the nearest systematic contrast to the choice made here.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 11 and 18, for the complex structure of spacetime and the place of the metric among the structures.
 - The corpus articles cited above: [Frame and Metric Conventions](frame-and-metric-conventions.html), [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), [Why Complexify Spacetime?](why-complexify-spacetime.html), [Four-Vectors and the Interval](four-vectors-and-the-interval.html), [Product and Form Conventions](product-and-form-conventions.html), [Index and Notation Conventions](index-and-notation-conventions.html), [Matrix Representations Conventions](matrix-representations-conventions.html), and [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the conventions, the frames, the sector readings and the curved case.

@@ -54,7 +54,7 @@ $$
 T = -\tfrac12 m\,\vec v^2 = \tfrac12 m\,\langle \vec v\rangle_{\natural} = \tfrac12 m|\vec v|^2 e_t ,
 $$
 
-which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_\mu^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian signature. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
+which is the biquaternion norm of the velocity, up to the mass. The sign is the same algebraic fact — $\vec e_\mu^2 = -e_t$ — that gives the real three-space its Euclidean-square norm and the material sector its Lorentzian sign pattern. In the central-scalar limit, where the velocities are small and the vectors are real, the biquaternion norm of a vector is its positive Euclidean square, and the kinetic energy is a positive central scalar.
 
 ## The Definition of the Central-Scalar Limit
 

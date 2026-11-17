@@ -345,7 +345,7 @@ The table collects the invariants. The first five rows hold for any element; the
 | Object | On $\tilde Q$ | On $i\tilde Q$ | Relation |
 | --- | --- | --- | --- |
 | doubled scalar part $2\,\mathrm{Sc}$ | $2Q_t$ | $2iQ_t$ | multiplied by $i$ |
-| quaternionic norm $\langle\cdot\rangle_{\natural}$ | interval, signature $(3,1)$ | its negative, signature $(1,3)$ | sign reversed |
+| quaternionic norm $\langle\cdot\rangle_{\natural}$ | interval, inertia $(3,1)$ | its negative, inertia $(1,3)$ | sign reversed |
 | determinant of the $2\times2$ image | $\langle\tilde Q\rangle_{\natural}$ | $-\langle\tilde Q\rangle_{\natural}$ | sign reversed |
 | spectrum | $\lambda_{\pm}$ | $i\lambda_{\pm}$ | quarter turn |
 | Hermitian form $\langle\cdot\rangle_{*}$ | positive definite, $(4,0)$ | positive definite, $(4,0)$ | preserved |
@@ -562,7 +562,7 @@ $$
 \tilde X_\Phi=i x'_t\,e_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z,
 $$
 
-with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde X_\Phi\rangle_{\natural}=-{x'_{t}}^{2}+x_x^{2}+x_y^{2}+x_z^{2}$, of signature $(3,1)$; its zero set is the light cone; its group of invertibles acts by rotor conjugation and gives the Lorentz group, boosts included. Twice the scalar part is twice the temporal coefficient, and on the four-momentum it reads $2\,\mathrm{Sc}\,\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.
+with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde X_\Phi\rangle_{\natural}=-{x'_{t}}^{2}+x_x^{2}+x_y^{2}+x_z^{2}$, of inertia $(3,1)$; its zero set is the light cone; its group of invertibles acts by rotor conjugation and gives the Lorentz group, boosts included. Twice the scalar part is twice the temporal coefficient, and on the four-momentum it reads $2\,\mathrm{Sc}\,\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.
 
 ## The Informational Reading
 
@@ -572,7 +572,7 @@ $$
 \tilde H_\Psi=h_t\,e_t+i\bigl(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z\bigr),
 $$
 
-with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Twice its scalar part is twice the temporal coefficient, and on a state normalised to one it reads $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the Hermitian pairing $2\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*})$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
+with the real time coefficient and the three imaginary space coefficients. Its norm is of inertia $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Twice its scalar part is twice the temporal coefficient, and on a state normalised to one it reads $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the Hermitian pairing $2\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*})$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.
 
 ## The Switch at Work
 
@@ -760,7 +760,7 @@ $$
 r'_t\,e_t+\vec r .
 $$
 
-The first image carries one factor of $i$, now on the space slots, and its quadratic form is $h_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signature to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of signature $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
+The first image carries one factor of $i$, now on the space slots, and its quadratic form is $h_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signature to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of inertia $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
 
 ### Why the One-Slot Map Cannot Be Multiplicative
 

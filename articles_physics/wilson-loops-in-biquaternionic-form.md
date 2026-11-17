@@ -159,7 +159,7 @@ $$
 \langle W(C)\rangle = \frac{\displaystyle\int\mathcal{D}\tilde{A}_{\Phi}\;W(C)\,\exp(iS[\tilde{A}_{\Phi}])}{\displaystyle\int\mathcal{D}\tilde{A}_{\Phi}\;\exp(iS[\tilde{A}_{\Phi}])},
 $$
 
-with the gauge fixing of the preceding article and, where needed, the ghost and envelope structure. Its asymptotic behaviour for large loops is the standard diagnostic of confinement, and the two laws below are quoted in Euclidean signature, where the exponent is real and negative; the free-theory average of the preceding section was written in Minkowski signature, where the same perimeter divergence appears as a phase. A **perimeter law**,
+with the gauge fixing of the preceding article and, where needed, the ghost and envelope structure. Its asymptotic behaviour for large loops is the standard diagnostic of confinement, and the two laws below are quoted in the Euclidean case, where the exponent is real and negative; the free-theory average of the preceding section was written in the Lorentzian sign pattern, where the same perimeter divergence appears as a phase. A **perimeter law**,
 
 $$
 \langle W(C)\rangle \sim \exp(-\kappa\,\mathrm{perim}(C)) ,

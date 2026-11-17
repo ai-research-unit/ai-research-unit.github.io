@@ -462,7 +462,7 @@ $$
 \gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta\vec e_\eta}R_{\mathrm{axf},\vec e_y\vec e_y}=-L_{\mathrm{axf},-e_t}R_{\mathrm{axf},-e_t}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}.
 $$
 
-The timelike generator squares to the identity and the three spatial ones to minus the identity, so the frame has the signature $(+,-,-,-)$. The mixed products vanish for the same reason: in $\{\gamma_0,\gamma_j\}$ the left factors $e_t$ and $\vec e_j$ commute while the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, and in $\{\gamma_i,\gamma_j\}$, $i\neq j$, the right factor $\vec e_y$ is common while the left factors $\vec e_i$ and $\vec e_j$ anticommute.
+The timelike generator squares to the identity and the three spatial ones to minus the identity, so the frame has the inertia $(+,-,-,-)$. The mixed products vanish for the same reason: in $\{\gamma_0,\gamma_j\}$ the left factors $e_t$ and $\vec e_j$ commute while the right factors $\vec e_y\vec e_x$ and $\vec e_x\vec e_y$ cancel, and in $\{\gamma_i,\gamma_j\}$, $i\neq j$, the right factor $\vec e_y$ is common while the left factors $\vec e_i$ and $\vec e_j$ anticommute.
 
 One product of all four is worth writing out, because it fixes the sign of the chirality basis operator:
 

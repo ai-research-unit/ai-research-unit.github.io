@@ -53,7 +53,7 @@ $$
 \langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_\eta\rangle = 0, \qquad \langle i\vec e_j,i\vec e_\eta\rangle = \delta_{j\eta},
 $$
 
-so the Hermitian form is the positive definite Euclidean form of signature $(4,0)$ in the coefficients. The **dual cone** is
+so the Hermitian form is the positive definite Euclidean form of inertia $(4,0)$ in the coefficients. The **dual cone** is
 
 $$
 C_+^{*} = \bigl\{\tilde H_\Psi : \langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*}=\mathrm{Sc}(\tilde H_\Psi\tilde{E}_{\Psi}^{*})\geq0 \ \text{ for all } \tilde{E}_{\Psi}\in C_+\bigr\},

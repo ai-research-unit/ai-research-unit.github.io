@@ -176,7 +176,7 @@ and these three coincidences are the only ones on the complex space.
 | $\tilde Q_1\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | $(4,0)$ | $(4,0)$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $(1,3)$ | $(1,3)$ |
 
-**Two are definite on each sector and two are indefinite on each,** and that is the first dial read at the level of signatures. **One is definite on every subspace and one has signature $(8,0)$ on the whole space,** and that is the plain sesquilinear form, whose square root is the topological norm.
+**Two are definite on each sector and two are indefinite on each,** and that is the first dial read at the level of signatures. **One is definite on every subspace and one has inertia $(8,0)$ on the whole space,** and that is the plain sesquilinear form, whose square root is the topological norm.
 
 ### The Degeneracy of the Twelve on the Real Part
 
@@ -243,7 +243,7 @@ $$
 \langle\tilde Q,\tilde Q\rangle>0\ \ (\tilde Q\in\mathbb{B}_{\Psi},\ \tilde Q\neq0).
 $$
 
-**So the form of the composition says which half an element belongs to and measures neither half.** The metric of the material sector is the quaternionic form, of signature $(3,1)$; the plain form is its negative on the same sector, of signature $(0,4)$.
+**So the form of the composition says which half an element belongs to and measures neither half.** The metric of the material sector is the quaternionic form, of inertia $(3,1)$; the plain form is its negative on the same sector, of inertia $(0,4)$.
 
 **The physical reading is a warning about an easy mistake.** A reader who takes the form of the product as the metric of spacetime gets a Euclidean four-space with no cone, and then has to import the cone from somewhere else. The algebra supplies both forms at the two settings of the first dial, and the step between them is that dial: a reflection that negates the three vector coordinates and fixes the scalar direction.
 
@@ -251,7 +251,7 @@ $$
 
 ### I.6.d — Probability: the Only Definite Form, and a Square That Carries Rank
 
-**Read:** the plain sesquilinear product has the Hermitian form as its scalar part, and that form is positive definite of signature $(8,0)$ on the real algebra, and definite on every subspace.
+**Read:** the plain sesquilinear product has the Hermitian form as its scalar part, and that form is positive definite of inertia $(8,0)$ on the real algebra, and definite on every subspace.
 
 **Its square is the rank-bearing Hermitian element.**
 
@@ -349,7 +349,7 @@ $$
 
 ### I.6.h — Gauge: an Indefinite Form Is a Constraint, Not a State
 
-**Read:** the quaternionic sesquilinear product has the Krein form as its scalar part, Hermitian and indefinite, of signature $(2,6)$ on the real algebra and $(1,3)$ on each four-dimensional real-type subspace.
+**Read:** the quaternionic sesquilinear product has the Krein form as its scalar part, Hermitian and indefinite, of inertia $(2,6)$ on the real algebra and $(1,3)$ on each four-dimensional real-type subspace.
 
 $$
 \langle\tilde Q\rangle_{\natural*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}.

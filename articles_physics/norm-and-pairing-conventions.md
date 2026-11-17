@@ -36,7 +36,7 @@ defined modulo $2\pi$; the angle is real because it is an argument, and the bran
 
 **The four algebraic norms.** Each pair gives one norm, the diagonal of its form. **One bracket, two arities:** the bracket names the form when it carries two arguments and the algebraic norm when it carries one, so the plain bracket is the form $\langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ and the norm $\langle\tilde{Q}\rangle = \langle\tilde{Q},\tilde{Q}\rangle$, and the same holds for the Hermitian, the quaternionic and the Krein. Read with one argument, the value lies in $\mathbb{C}$ for the two bilinear norms and in $\mathbb{R}$ for the two sesquilinear norms, because a sesquilinear form has a real diagonal. The quaternionic norm has a second spelling, as the central element $\tilde{Q}\tilde{Q}^{\natural}=\langle\tilde{Q}\rangle_{\natural}e_t$; an article that writes $\langle\tilde{Q}\rangle_{\natural}=c\,e_t$ uses that spelling, with $\langle\tilde{Q}\rangle_{\natural}$ still the scalar coefficient $c$, and the two spellings name one value. The four names are those of the four forms with *norm* in place of *form*:
 
-| bracket | form | letter | algebraic norm | value | realified signature | role |
+| bracket | form | letter | algebraic norm | value | realified inertia | role |
 |---|---|---|---|---|---|---|
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | plain | $P$ | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | complex cone |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$ | quaternionic | $N$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | multiplicative; zero-divisor cone |
@@ -54,7 +54,7 @@ The quaternionic norm is the determinant in the $2\times2$ image and is the mult
 | the general plain sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | $H$ | the Hermitian norm $\langle\tilde{Q}\rangle_{*}$ |
 | the general quaternionic sesquilinear | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*}$ | $\mathrm{Kr}$ | the Krein norm $\langle\tilde{Q}\rangle_{\natural*}$ |
 
-**The base bar is the square root of the Hermitian norm.** Of the four norms one is real and non-negative on every element, the Hermitian norm $H(\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ of signature $(8,0)$. Its root is the base norm of the corpus:
+**The base bar is the square root of the Hermitian norm.** Of the four norms one is real and non-negative on every element, the Hermitian norm $H(\tilde{Q})=\sum_\mu\lvert Q_\mu\rvert^{2}$ of inertia $(8,0)$. Its root is the base norm of the corpus:
 
 $$
 \lVert\tilde{Q}\rVert=\bigl(\langle\tilde{Q}\rangle_{*}\bigr)^{1/2}=\Bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\Bigr)^{1/2}.

@@ -203,7 +203,7 @@ and the cross term is generally non-zero. The interval of an element is not the 
 
 ### I.1.c — The Imaginary Time Is the Signature
 
-**Read:** the factor $i$ in $i r'_t$ is what makes the temporal displacement count with the opposite sign to the spatial ones, because $i^2=-1$. The Lorentzian signature of the material sector is therefore not an independent axiom. It is what the norm becomes on the slice that carries the central $i$ in its time slot.
+**Read:** the factor $i$ in $i r'_t$ is what makes the temporal displacement count with the opposite sign to the spatial ones, because $i^2=-1$. The Lorentzian sign pattern of the material sector is therefore not an independent axiom. It is what the norm becomes on the slice that carries the central $i$ in its time slot.
 
 **The four signatures are one form on four slices.**
 
@@ -375,7 +375,7 @@ $$
 
 - The section establishes eight objects: the algebra, the element, the four conjugations, the six subspaces, the mirror, the square, the cone and the roots.
 - One element carries two ledgers, the material four-coordinate and the informational label, and the two are its Hermitian projections. The norm does not split between them.
-- The Lorentzian signature follows from the placement of the central $i$ in the time slot of one sector, not from an independent axiom.
+- The Lorentzian sign pattern follows from the placement of the central $i$ in the time slot of one sector, not from an independent axiom.
 - The six subspaces are the fixed and anti-fixed spaces of four maps; three of those maps with the identity form a Klein four-group and carry $P$, $T$, $PT$; the fourth carries $C$ and is not a group element.
 - There are exactly three decompositions, one for each pairing of the four coordinate blocks.
 - Every intersection of two distinct subspaces is one block or zero: a shared vector block is agreement on a space, a shared scalar block agreement on a time, and the three empty pairs are the three decompositions.

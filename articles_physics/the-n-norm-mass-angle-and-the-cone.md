@@ -28,7 +28,7 @@ $$
 
 **The entry is in three parts, and the title names them.** The **mass** is the scale $r$, the modulus of the norm. The **angle** is the phase $\varkappa$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
 
-**The strongest objection is that a complex norm cannot be a physical mass.** The objection is right about the algebra and wrong about the reading. On the whole algebra the norm is a complex quadratic form, its zero set is a complex cone, and no mass is defined there. On the material sector the norm is real and indefinite, a quadratic form of signature $(3,1)$, and its level sets are the mass shells. The mass is a level set on a sector, not a value on the algebra, and this entry says so before it uses the word.
+**The strongest objection is that a complex norm cannot be a physical mass.** The objection is right about the algebra and wrong about the reading. On the whole algebra the norm is a complex quadratic form, its zero set is a complex cone, and no mass is defined there. On the material sector the norm is real and indefinite, a quadratic form of inertia $(3,1)$, and its level sets are the mass shells. The mass is a level set on a sector, not a value on the algebra, and this entry says so before it uses the word.
 
 **A second objection is that a decomposition that exists only off the cone cannot describe the massless case, which is the case physics cares most about.** The answer is that the entry has two decompositions and gives each its domain. The four-factor word is the description of the massive element. The two-factor pair is the description of everything, and on the cone it is the description of the massless element: a rank-one amplitude and a rank-one frame. Neither is a limit of the other, and the passage between them is the content of the two walls.
 
@@ -75,7 +75,7 @@ $$
 N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=Q_t^{2}+B^{2}.
 $$
 
-**It is a quadratic form of the eight real coordinates with complex coefficients, and it is not a length.** The Hermitian norm of the previous entry is a sum of squared moduli and is positive definite. The quaternionic norm is a sum of squares and is not: on the real quaternion subspace it is the Euclidean form of signature $(4,0)$, on the pure imaginary line it is negative definite, and on the material sector it is the Minkowski form of signature $(3,1)$. One formula, four signatures.
+**It is a quadratic form of the eight real coordinates with complex coefficients, and it is not a length.** The Hermitian norm of the previous entry is a sum of squared moduli and is positive definite. The quaternionic norm is a sum of squares and is not: on the real quaternion subspace it is the Euclidean form of inertia $(4,0)$, on the pure imaginary line it is negative definite, and on the material sector it is the Minkowski form of inertia $(3,1)$. One formula, four signatures.
 
 **The identity of the norm is the reason it decides invertibility.**
 
@@ -502,7 +502,7 @@ $$
 
 **A free parameter of the algebra becomes a label on the sector.** The phase of a biquaternion is one continuous parameter of the group of invertibles. On the material sector it takes exactly two values, and the two values are the two halves of the light cone. The complex structure of the algebra is, on that sector, the choice between a length and a mass.
 
-**The physical interpretation is that the difference between a displacement and a four-momentum is a phase of $i$.** The same quadratic form reads as a proper length on a spacelike vector and as minus a mass squared on a timelike one, and the object that changes between the two readings is the phase of the modulus. This is the precise sense in which the mass is imaginary in a metric of signature $(3,1)$: the modulus of the interval is $im$ and not $m$.
+**The physical interpretation is that the difference between a displacement and a four-momentum is a phase of $i$.** The same quadratic form reads as a proper length on a spacelike vector and as minus a mass squared on a timelike one, and the object that changes between the two readings is the phase of the modulus. This is the precise sense in which the mass is imaginary in a metric of inertia $(3,1)$: the modulus of the interval is $im$ and not $m$.
 
 **The boundary.** The phase is a property of the element's norm and not of a state. The reading is available only on the material sector, and it needs the sector before it can be stated. Nothing is claimed about the phase of a general biquaternion, which is continuous and unconstrained.
 

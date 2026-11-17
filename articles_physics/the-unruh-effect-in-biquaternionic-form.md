@@ -430,7 +430,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material-sector coordinate $\in\mathbb{B}_{\Phi}$ |
-| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm, signature $(3,1)$ on $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm, inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ |
 | $R=\{x>|r'_{t}|\}$ | Right Rindler wedge; $L$ its mirror |
 | $\rho,\eta$ | Rindler radius and Rindler time, $x=\rho\cosh\eta$, $r'_{t}=\rho\sinh\eta$ |
 | $\tau$ | Proper time along the accelerated orbit, $cd\tau=\rho\,d\eta$ |

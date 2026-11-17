@@ -150,7 +150,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2) = Q_{1t}Q_{2t} - Q_{1x}Q_{2x} - Q_{1y}Q_{2y} - Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2-x^2-y^2-z^2$, signature $(0,4)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2-x^2-y^2-z^2$, inertia $(0,4)$.
 
 The **quaternionic form** applies the quaternion conjugation to the first argument and the identity to the second:
 
@@ -158,7 +158,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2) = Q_{1t}Q_{2t} + Q_{1x}Q_{2x} + Q_{1y}Q_{2y} + Q_{1z}Q_{2z},
 $$
 
-$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(3,1)$.
+$\mathbb{C}$-**bilinear** in both arguments; on $\mathbb{B}_{\Phi}$ it is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, inertia $(3,1)$.
 
 The **Hermitian form** applies the identity to the first argument and the Hermitian conjugation to the second:
 
@@ -166,7 +166,7 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} + Q_{1x}\bar{Q}_{2x} + Q_{1y}\bar{Q}_{2y} + Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2+r_x^2+r_y^2+r_z^2$, signature $(4,0)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2+r_x^2+r_y^2+r_z^2$, inertia $(4,0)$.
 
 The **Krein form** applies the quaternion conjugation to the first argument and the Hermitian conjugation to the second:
 
@@ -174,17 +174,17 @@ $$
 \langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural*} = \mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2^{*}) = Q_{1t}\bar{Q}_{2t} - Q_{1x}\bar{Q}_{2x} - Q_{1y}\bar{Q}_{2y} - Q_{1z}\bar{Q}_{2z},
 $$
 
-$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2-x^2-y^2-z^2$, signature $(1,3)$.
+$\mathbb{C}$-**sesquilinear**, linear in the first argument and antilinear in the second; on $\mathbb{B}_{\Phi}$ it is ${r'_{t}}^2-x^2-y^2-z^2$, inertia $(1,3)$.
 
 Each form is the scalar part of its own product. The Hermitian form is the pairing that carries probability; the plain form is its restriction to $\mathbb{B}_{\Psi}$ and the primary computational form on the sector; the other two are read by choosing the conjugation of a slot, and the trace is a reading of the Hermitian form in the $2\times2$ image.
 
 **The four formulas are written on the biquaternion glyph, whose two marks are independent; when one mark degenerates the brackets collapse two-and-two, and in the reduced biquaternions no mark degenerates and the four remain distinct.** Each table below gives only the brackets that survive on the layer, with the norm they carry.
 
-**One table per lower layer.** Each table reads the brackets that survive on the layer's own glyph. The **algebraic norm** is the diagonal of the form, the **signature** is that of the real quadratic form with the positive directions counted first, and the **role** records what the bracket does: the definite bracket carries the topology and the multiplicative one the invertibility criterion.
+**One table per lower layer.** Each table reads the brackets that survive on the layer's own glyph. The **algebraic norm** is the diagonal of the form, the **inertia** is that of the real quadratic form with the positive directions counted first, and the **role** records what the bracket does: the definite bracket carries the topology and the multiplicative one the invertibility criterion.
 
 **The complex numbers $\mathbb{C}$**, $Q=q+iq'$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'^2$ | $(1,1)$ | anisotropic; real part indefinite |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | $(2,0)$ | definite; multiplicative; topology |
@@ -193,12 +193,12 @@ In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The pla
 
 **The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$**, $Q=q+jq'$, $j^2=+1$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign; the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign; the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
 
 **The reduced biquaternions $\mathbb{B}_{\mathrm{red}}$**, $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with complex $Q_{\blacktriangle},Q_{\blacktriangledown}$; the marks are the bar and the tessarine sign ${}_{\mathrm{ts}}$, and ${}^{*}=\bar{\cdot}\circ{}_{\mathrm{ts}}$.
 
@@ -213,7 +213,7 @@ The tessarine bracket carries the algebra and the tessarine-Hermitian bracket ca
 
 **The quaternions $\mathbb{H}$**, $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with real coefficients and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | plain, also Krein | $q_t^2-q_x^2-q_y^2-q_z^2$ | $(1,3)$ | indefinite; not multiplicative |
 | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$ | quaternionic, also Hermitian | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | definite; multiplicative; topology |
@@ -222,7 +222,7 @@ The coefficients are real and the only non-trivial involution is the quaternion 
 
 **The split-quaternions $\mathbb{H}_{\mathrm{spl}}$**, the same glyph over the units $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | plain, also Krein | $q_t^2-q_x^2+q_y^2+q_z^2$ | $(3,1)$ | indefinite; not multiplicative |
 | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$ | quaternionic, also Hermitian | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | multiplicative; indefinite; zero divisors |
@@ -247,7 +247,7 @@ and the unit is normalised by it, $\langle e_t\rangle_{*} = 1$. The form is posi
 $$
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}),
 $$
-of signature $(4,0)$ there, and its restriction to $\mathbb{B}_{\Phi}$ is minus the plain form, of signature $(0,4)$. A state is normalised by the form against the unit,
+of inertia $(4,0)$ there, and its restriction to $\mathbb{B}_{\Phi}$ is minus the plain form, of inertia $(0,4)$. A state is normalised by the form against the unit,
 
 $$
 \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \tfrac12\langle e_t\rangle_{*},
@@ -299,9 +299,9 @@ $$
 \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle, \qquad \langle\lambda\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \lambda\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} .
 $$
 
-Throughout the series a signature is written $(n,m)$ with the **positive** directions counted first, so that a form with four negative directions is $(0,4)$. A signature here belongs to a form. The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signature to state.
+Throughout the series an inertia is written $(n,m)$ with the **positive** directions counted first, so that a form with four negative directions is $(0,4)$. An inertia here belongs to a form. The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signs to state.
 
-**Where the four are proved and named.** The classification of the four, their Gram matrices, their signatures, their isometry groups, their Witt classes, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, with its twin *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
+**Where the four are proved and named.** The classification of the four, their Gram matrices, their inertias, their isometry groups, their Witt classes, and their reading as Hermitian forms over the algebra with respect to their own involutions are *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*, with its twin *Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint*.
 
 **What is forced and what is chosen.** The two bilinear forms are $\mathbb{C}$-bilinear in both slots and the two sesquilinear forms are linear in the first slot and sesquilinear in the second. That is not a choice but a consequence of the $\mathbb{C}$-linearity of the quaternion sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$; its verification is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. Multiplication by $i$ reverses the sign of the two bilinear forms and leaves the two sesquilinear forms unchanged, since the centrality of $i$ puts either a factor $i^2 = -1$ on both slots or on neither.
 
@@ -309,7 +309,7 @@ Throughout the series a signature is written $(n,m)$ with the **positive** direc
 
 The twelve products are one construction. Two slots, each read plain or through its conjugation, give four general products; the exchange of the two arguments within the class of the product gives a symmetric and an antisymmetric part to each. Each product is written by its two slots and the conjugation each one carries, $\tilde Q_1\tilde Q_2$, $\tilde Q_1^{\natural}\tilde Q_2$, $\tilde Q_1\tilde Q_2^{*}$ and $\tilde Q_1^{\natural}\tilde Q_2^{*}$ for the general products, the same four with the bullet $\bullet$ for their symmetric parts and with the wedge $\wedge$ for their antisymmetric parts, the class carried by the subscript. The general product is the sum of its symmetric and its antisymmetric part. The bare interchange of the two arguments is not the class-preserving exchange, so the two antisymmetrisations are not one operation; on the reduced biquaternion space four of the twelve products coincide.
 
-The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the quaternion sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $\mathrm{Kr}$, with the signature convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
+The four forms are the four maps read on two arguments. The identity gives the plain bilinear form $B$, the quaternion sign the quaternionic form $N$, the star the Hermitian form $H$ and the flat sign the Krein form $\mathrm{Kr}$, with the inertia convention and the pairwise sign rule that make the table consistent. Each lower layer has its own table, and where a mark degenerates the brackets collapse two and two rather than becoming a different convention.
 
 The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_*=1$, a normalised state has $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_*=\tfrac12$, and the Born weight is a ratio of pairings. Its type is decided by the second argument. The article closes by separating the conventions that are chosen from the assignments that are forced by the algebra.
 
@@ -332,5 +332,5 @@ The Hermitian form is the one that carries probability: $\langle e_t,e_t\rangle_
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra, the basis, the element glyphs and the conjugations these conventions assume.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms read on the diagonal of these forms and for the unitary convention.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the same products read on the gradient.
-- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), companion article, for the proofs, the signature convention and the pairwise sign rule.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), companion article, for the proofs, the inertia convention and the pairwise sign rule.
 - [Conventions in Mathematics](../articles_maths/algebra-and-element-conventions.html), for the same forms on the lower layers.

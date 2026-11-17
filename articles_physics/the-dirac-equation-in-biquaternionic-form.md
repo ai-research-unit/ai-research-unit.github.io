@@ -317,7 +317,7 @@ $$
 ds^2 = \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,d\tilde{R}_\Phi^{\natural} = (i\,dr'_t)^2 + dr_x^2 + dr_y^2 + dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2.
 $$
 
-This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $i r'_t$ convention.
+This is the biquaternion form of the Minkowski interval. The Lorentzian sign pattern emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $i r'_t$ convention.
 
 ### The Four-Velocity
 

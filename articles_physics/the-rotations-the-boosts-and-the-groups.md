@@ -462,7 +462,7 @@ The generators are inner, so every one-parameter group of automorphisms of the a
 
 ### The Envelope and the Two Slots
 
-The algebra is the even part of the Clifford algebra of a four-dimensional space of signature $(1,3)$:
+The algebra is the even part of the Clifford algebra of a four-dimensional space of inertia $(1,3)$:
 
 $$
 \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\zeta,\qquad \mathrm{Cl}^{+}=\mathbb{B},

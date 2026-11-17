@@ -365,7 +365,7 @@ $$
 \gamma_\eta^2=i^2L_{\mathrm{axf},\vec e_\eta^2}R_{\mathrm{axf},\vec e_y^2}=(-1)(-1)(-1)I_4=-I_4,
 $$
 
-so the frame carries the Lorentzian signature. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five basis operators satisfy
+so the frame carries the Lorentzian sign pattern. With $\mu,\nu\in\{0,1,2,3\}$ in this section only, the five basis operators satisfy
 
 $$
 \{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad \varepsilon=(1,-1,-1,-1),\qquad

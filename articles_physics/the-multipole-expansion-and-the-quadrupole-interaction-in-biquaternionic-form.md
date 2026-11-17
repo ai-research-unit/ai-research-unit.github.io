@@ -12,7 +12,7 @@ $$
 \mathbb{B}_{\Phi} = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
 $$
 
-with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has signature $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The biquaternionic gradient is
+with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has inertia $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The biquaternionic gradient is
 
 $$
 \tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,

@@ -196,7 +196,7 @@ $$
 [X\,|\,Y]=2\,\mathrm{Sc}\bigl(\tilde X^{*}\tilde U_{\mathrm{ax}}\tilde Y\bigr).
 $$
 
-The form is Hermitian, and on a value it has signature $(1,1)$: one direction is positive and one is negative. It is invariant under the elements that fix the direction,
+The form is Hermitian, and on a value it has inertia $(1,1)$: one direction is positive and one is negative. It is invariant under the elements that fix the direction,
 
 $$
 [X\,|\,Y]\ \text{invariant}
@@ -362,7 +362,7 @@ $$
 
 and the same four steps give $\gamma_0\gamma_1\gamma_2\gamma_3=-i\Gamma$, that is $\gamma_5=i\gamma_0\gamma_1\gamma_2\gamma_3$ with $\Gamma$ the chirality basis operator.
 
-The dictionary is complex-linear: the five basis operators are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the signature $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
+The dictionary is complex-linear: the five basis operators are a complex frame, and their sixteen products are the sixteen-element Clifford basis. What the frame does **not** fix is the real slice. Both $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ are real forms of the same complex algebra $\mathrm{Cl}_{4}(\mathbb{C})\cong M_4(\mathbb{C})$, and they are not isomorphic to one another. The signs in the display above are the ones that make $\vec e_x,\vec e_y,\vec e_z$ spacelike bivectors, that is the inertia $(1,3)$; the other choice of signs describes the other real form, and the complex frame cannot tell the two apart. The choice is made once, in [Matrix Representations: Conventions](matrix-representations-conventions.html), and it is held throughout the series.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

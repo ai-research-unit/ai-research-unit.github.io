@@ -275,12 +275,11 @@ def sitemap_urls():
 
 
 def write_sitemaps():
-    """Write one sitemap per mirror.
+    """Write one sitemap per mirror into the source folder, then mirror them.
 
     A sitemap is only valid for the host that serves it, so the three mirrors
-    cannot share one file. All three land in the same deploy folder and each
-    host serves the whole set; a crawler reads the one whose <loc> entries
-    match the host it came from and ignores the other two.
+    cannot share one file. The source copies are the reference; the deploy
+    folder gets a copy of each so the hosts can serve them.
     """
     urls = sitemap_urls()
     for name, host in SITEMAPS:
@@ -293,7 +292,10 @@ def write_sitemaps():
             lines.append(f"    <lastmod>{lastmod}</lastmod>")
             lines.append("  </url>")
         lines.append("</urlset>")
-        (DEPLOY / name).write_text("\n".join(lines) + "\n", encoding="utf-8")
+        out = SRC / name
+        out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+        if DEPLOY.is_dir():
+            shutil.copy(out, DEPLOY / name)
         print(f"Wrote {name} ({len(urls)} urls)")
 
 

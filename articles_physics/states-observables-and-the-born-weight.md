@@ -27,7 +27,7 @@ $$
 
 and for a measurement along a unit axis $\vec u$ it is the analyser transmission law $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$. Reality, positivity and normalisation follow from the algebra. That these numbers are observed frequencies does not.
 
-**The fourth claim is that the two forms of the sector divide the work.** The Hermitian form, positive definite of signature $(4,0)$, supplies the probabilities. The quaternionic norm, indefinite of signature $(1,3)$, supplies the geometry and the mixedness. On the state slice the second is
+**The fourth claim is that the two forms of the sector divide the work.** The Hermitian form, positive definite of inertia $(4,0)$, supplies the probabilities. The quaternionic norm, indefinite of inertia $(1,3)$, supplies the geometry and the mixedness. On the state slice the second is
 
 $$
 N(\tilde{Ϛ}_\Psi)=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr)=\tfrac12 S_{\mathrm{lin}}(\tilde{Ϛ}_\Psi),
@@ -180,9 +180,9 @@ $$
 \mathrm{Kr}(\tilde H_\Psi)=h_t^{2}-\lvert\vec h_\Psi\rvert^{2}=N(\tilde H_\Psi).
 $$
 
-**The two survivors are different forms and they answer different questions.** The Hermitian form is positive definite of signature $(4,0)$, with Gram matrix the identity in the sector's basis. The quaternionic norm is indefinite of signature $(1,3)$, with the signs $+,-,-,-$ in the same basis. The first is a Euclidean structure on the sector; the second is a Minkowski structure. The plain form and the K norm add nothing new here, and the sector is one of the subspaces where the four forms collapse pairwise.
+**The two survivors are different forms and they answer different questions.** The Hermitian form is positive definite of inertia $(4,0)$, with Gram matrix the identity in the sector's basis. The quaternionic norm is indefinite of inertia $(1,3)$, with the signs $+,-,-,-$ in the same basis. The first is a Euclidean structure on the sector; the second is a Minkowski structure. The plain form and the K norm add nothing new here, and the sector is one of the subspaces where the four forms collapse pairwise.
 
-| form | value on $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ | signature | what it defines on the sector |
+| form | value on $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ | Inertia | what it defines on the sector |
 | --- | --- | --- | --- |
 | Hermitian $\langle\cdot,\cdot\rangle_{*}$ | $h_{1t}h_{2t}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ | $(4,0)$ | the probabilities |
 | plain $\langle\cdot,\cdot\rangle$ | the same | $(4,0)$ | the same, without the star |
@@ -892,7 +892,7 @@ The normalised state of a momentum is the four-velocity over $c$, up to the fact
 
 ## Summary
 
-**The sector is one real four-space with two quadratic forms.** The Hermitian form is positive definite of signature $(4,0)$ and supplies the probabilities; the quaternionic norm is indefinite of signature $(1,3)$ and supplies the geometry, the cone and the mixedness. The other two forms of the algebra collapse onto these two on this sector.
+**The sector is one real four-space with two quadratic forms.** The Hermitian form is positive definite of inertia $(4,0)$ and supplies the probabilities; the quaternionic norm is indefinite of inertia $(1,3)$ and supplies the geometry, the cone and the mixedness. The other two forms of the algebra collapse onto these two on this sector.
 
 **An observable is an element, and its spectrum is two real numbers.** Every Hermitian element factors through the two idempotents of its own axis, with eigenvalues $h_t\pm\lvert\vec h_\Psi\rvert$. Positivity is $h_t\ge\lvert\vec h_\Psi\rvert$, and the order is the order of the cone.
 

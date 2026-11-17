@@ -164,7 +164,7 @@ $$
 S_0=\sum_{a,b}\tilde{Ξ}_{a}^{\dagger}M_{ab}\tilde{Ξ}_{b} ,
 $$
 
-where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In Euclidean signature the kernel is the pair with $+k_m$, and in Minkowski signature the same pair with $-k_m$ times $-i$; the operator is the same in both, the continuation moving the coordinate and not the operator, and the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\Box-k_m^{2}$ up to that constant. The Gaussian Berezin integral is the determinant:
+where $M$ is the matrix of the bilinear, the right multiplication by $i\vec e_x$ in the adjoint being the involution just noted. In the Euclidean case the kernel is the pair with $+k_m$, and in the Lorentzian sign pattern the same pair with $-k_m$ times $-i$; the operator is the same in both, the continuation moving the coordinate and not the operator, and the factor $-i$ is a field-independent constant of unit modulus, so in Minkowski the determinant is that of $\Box-k_m^{2}$ up to that constant. The Gaussian Berezin integral is the determinant:
 
 $$
 \boxed{\;\int\prod_ad\tilde{Ξ}_{a}^{\dagger}\,d\tilde{Ξ}_{a}\;\exp(-\tilde{Ξ}^{\dagger}M\tilde{Ξ})=\det M\;}.

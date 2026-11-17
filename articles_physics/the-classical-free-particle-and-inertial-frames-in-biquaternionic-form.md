@@ -37,7 +37,7 @@ $$
 \langle d\tilde R_\Phi\rangle_{\natural} = d\tilde R_\Phi\,(d\tilde R_\Phi)^{\natural} = (i\,dr'_t)^2 +dr_x^2+dr_y^2+dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2 ,
 $$
 
-whose Lorentzian signature is a consequence of $i^2 = -1$ rather than an independent postulate. A worldline is **timelike**, **null** or **spacelike** according to whether $\langle d\tilde R_\Phi\rangle_{\natural}$ is negative, zero or positive along it. The null directions are the zero divisors of the algebra, and they form the light cone of the material sector.
+whose Lorentzian sign pattern is a consequence of $i^2 = -1$ rather than an independent postulate. A worldline is **timelike**, **null** or **spacelike** according to whether $\langle d\tilde R_\Phi\rangle_{\natural}$ is negative, zero or positive along it. The null directions are the zero divisors of the algebra, and they form the light cone of the material sector.
 
 ### The Four-Velocity and the Parameter Along the Worldline
 

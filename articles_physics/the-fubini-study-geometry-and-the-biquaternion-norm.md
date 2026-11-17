@@ -38,7 +38,7 @@ Two symmetric forms live on the same four-dimensional real space, and the whole 
 $$
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}\bigr)=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}
 $$
-is positive definite, of signature $(4,0)$, the Euclidean pairing on $\mathbb{R}^4$, and it is the Hilbert–Schmidt pairing of the matrix model up to the dimension: $\operatorname{tr}\bigl(M(\tilde{H}_{\Psi,1})M(\tilde{H}_{\Psi,2})\bigr)=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}$.
+is positive definite, of inertia $(4,0)$, the Euclidean pairing on $\mathbb{R}^4$, and it is the Hilbert–Schmidt pairing of the matrix model up to the dimension: $\operatorname{tr}\bigl(M(\tilde{H}_{\Psi,1})M(\tilde{H}_{\Psi,2})\bigr)=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}$.
 
 **The biquaternion norm and its polarization.**
 $$
@@ -46,7 +46,7 @@ $$
 \qquad
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural}=\tfrac12\bigl(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural}+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\bigr)=\bigl(h_{t,1}h_{t,2}-\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}\bigr)e_t,
 $$
-is indefinite, of signature $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
+is indefinite, of inertia $(1,3)$; its future cone is the positivity cone of the states, and its boundary is the pure states.
 
 The two forms are the two ingredients of the geometry. The Hermitian form is positive definite and therefore measures *overlap*; the biquaternion norm is indefinite, vanishes on the pure states, and therefore cannot measure *length* on them directly. The point of the article is that the biquaternion norm nevertheless determines the length, through its second variation on the null boundary. That is a standard feature of a quadratic form at a null direction — the first variation vanishes, and the second variation carries the geometry — and here it is the whole content of the Fubini–Study metric.
 

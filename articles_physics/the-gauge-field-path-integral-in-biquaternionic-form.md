@@ -251,7 +251,7 @@ The gauge-fixing condition itself has a natural biquaternionic form. The gauge s
 
 **Imported, and left visible.** The functional-integral framework itself (the subcategory on generalities); the Faddeev–Popov trick and the delta-functional insertion; the Nakanishi–Lautrup auxiliary field and the Gaussian average over the gauge-fixing function; the Gaussian evaluation of the quadratic integral and the determinant factors; the ghost representation of the non-abelian determinant, with the Grassmann envelope; the gauge-parameter independence of amplitudes, which is the standard Ward-identity statement; and the non-abelian construction in its detail.
 
-**Not supplied.** The choice of gauge-fixing condition and of the gauge parameter; the gauge group; the odd coordinates; the continuation to Euclidean signature and the convergence of the integral, which are properties of the general framework; and any empirical content. The path integral makes the gauge fixing a change of variables and thereby exhibits its unphysical character; it does not derive the gauge field or the gauge group.
+**Not supplied.** The choice of gauge-fixing condition and of the gauge parameter; the gauge group; the odd coordinates; the continuation to the Euclidean case and the convergence of the integral, which are properties of the general framework; and any empirical content. The path integral makes the gauge fixing a change of variables and thereby exhibits its unphysical character; it does not derive the gauge field or the gauge group.
 
 ## Open Questions
 

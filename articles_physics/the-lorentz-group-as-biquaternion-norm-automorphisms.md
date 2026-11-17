@@ -21,7 +21,7 @@ for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
 - **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det\mathsf M_2$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
-- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
+- **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the automorphisms preserving the slice are the real orthogonal maps of inertia $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of Hermitian pairs $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
 
@@ -75,7 +75,7 @@ $$
 \langle\tilde{Q}^{\natural}\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural},
 $$
 
-so the form is real on the Hermitian and anti-Hermitian slices. This is what will allow the complex form to restrict to a real form of Minkowski signature.
+so the form is real on the Hermitian and anti-Hermitian slices. This is what will allow the complex form to restrict to a real form with the Minkowski signs.
 
 **Automorphisms of the form.** An automorphism of $(\mathbb{B},N)$ is an invertible $\mathbb{C}$-linear map $T$ with
 
@@ -165,16 +165,16 @@ $$
 \boxed{\ \langle\tilde R_\Phi\rangle_{\natural} = (i r'_t)^2 + r_x^2 + r_y^2 + r_z^2 = -{r'_t}^2 +r_x^2+r_y^2+r_z^2\ }\ .
 $$
 
-The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_\eta=r_\eta$, is therefore the level-2 Minkowski interval of the series, of signature $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
+The restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, read in the real coordinates $R_t=i r'_t$, $R_\eta=r_\eta$, is therefore the level-2 Minkowski interval of the series, of inertia $(3,1)$. The same computation on the other distinguished slices gives the full picture of the form's real restrictions:
 
-| Slice | General element | $\langle\cdot\rangle_{\natural}$ | Signature |
+| Slice | General element | $\langle\cdot\rangle_{\natural}$ | Inertia |
 |---|---|---|---|
 | $\mathbb{B}_{H}$ | $a_0e_t + \vec a$, $a_\mu\in\mathbb{R}$ | $a_0^2+\vec a^2$ | $(4,0)$, positive definite |
 | $\mathbb{B}_{iH}$ | $i(a_0e_t+\vec a)$ | $-(a_0^2+\vec a^2)$ | $(0,4)$, negative definite |
 | $\mathbb{B}_{\Phi}$ | $i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | $-{r'_t}^2+r_x^2+r_y^2+r_z^2$ | $(3,1)$, timelike $r'_t$ direction |
 | $\mathbb{B}_{\Psi}$ | $h_t\,e_t+i\vec h_\Psi$ | $h_t^2-\vec h_\Psi^{2}$ | $(1,3)$, the mirror of $\mathbb{B}_{\Phi}$ |
 
-The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms of both signatures; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
+The complex form $\mathrm{diag}(+1,+1,+1,+1)$ has real forms with either sign pattern; the two Hermitian-type slices carry the Minkowski real form, the real-quaternion slice the Euclidean one, and the two are exchanged by multiplication by $i$. The physical slice is $\mathbb{B}_{\Phi}$.
 
 The real structure is not decoration: it is what tells the complex group which real form of the algebra is physical. A $\mathbb{C}$-linear automorphism of the complexification need not map $\mathbb{B}_{\Phi}$ to itself. The automorphisms that do are the ones the physical theory uses.
 
@@ -328,7 +328,7 @@ S^2 := \sigma\sigma^{*} = \bigl(|\vec p|^2-|\vec q|^2\bigr)^2 + \bigl(2\,\vec p\
 = \bigl(|\vec p|^2+|\vec q|^2\bigr)^2 - \bigl|2\,\vec p\times\vec q\bigr|^2 = T^2-|\vec X|^2 ,
 $$
 
-the middle equality being the **Lagrange identity** $(\vec p\cdot\vec q)^2+|\vec p\times\vec q|^2=|\vec p|^2|\vec q|^2$. This is the source's central formula, and it identifies $S^2=\sigma\sigma^*$ — an invariant of the algebra automorphisms, computed from the complex 3-vector — with a Minkowski interval in the coordinates $(T,\vec X)$, which are **bilinear** in the complex coordinates of the primary space. The reality and the Lorentzian signature of the interval are not assumed anywhere: they are consequences of the bilinearity and of the identity.
+the middle equality being the **Lagrange identity** $(\vec p\cdot\vec q)^2+|\vec p\times\vec q|^2=|\vec p|^2|\vec q|^2$. This is the source's central formula, and it identifies $S^2=\sigma\sigma^*$ — an invariant of the algebra automorphisms, computed from the complex 3-vector — with a Minkowski interval in the coordinates $(T,\vec X)$, which are **bilinear** in the complex coordinates of the primary space. The reality and the Lorentzian signs of the interval are not assumed anywhere: they are consequences of the bilinearity and of the identity.
 
 **The rotation and boost pieces.** Under a **real** rotation of $x$ — the real subgroup of $SO(3,\mathbb{C})$ — the coordinates transform as
 
@@ -458,7 +458,7 @@ This is what makes each combination close on itself with the same structure cons
 
 ## What the Algebra Supplies and What Is Standard
 
-**Supplied by the algebra.** The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the signature table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the Hermitian pairs; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
+**Supplied by the algebra.** The fact that the biquaternion norm is multiplicative, and therefore that it is the algebra's own quadratic structure; the determinant realization $N = \det$, which turns the automorphism problem into a problem about $M_2(\mathbb{C})$; the restriction of the complex form to the real slices, with the inertia table; the identification of the automorphisms preserving the material slice with $O(1,3)$, and of the identity component with the Hermitian pairs; and the infinitesimal algebra with its rotation-boost split and its minus sign on the boost-boost bracket.
 
 **Standard mathematics transcribed.** The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathrm{SO}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.
 
@@ -472,7 +472,7 @@ This is what makes each combination close on itself with the same structure cons
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
-3. **Real forms and the two sectors.** Both $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{B}_{H}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Informational Sector: States, Observables and Probability*.
+3. **Real forms and the two sectors.** Both $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ restrict the form to a Lorentzian inertia — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{B}_{H}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Informational Sector: States, Observables and Probability*.
 
 4. **The biquaternion norm and curved spacetime.** The automorphism characterization is pointwise and flat. Whether it globalizes to a bundle of algebra automorphisms over a curved base, and what plays the role of the form there, is the same open question the foundational articles record for the whole framework.
 
@@ -568,7 +568,7 @@ where $\sigma=z_1^2+z_2^2+z_3^2$. On that route the Minkowski form is induced fr
 | $\alpha=\arg\sigma$ | Lorentz-invariant geometric phase of the diagonal route |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) slices |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ | Real-quaternion, imaginary-quaternion, complex scalar subalgebras |
-| $\langle\tilde Q\rangle_\natural$, $Q_t=i q'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, signature $(3,1)$ |
+| $\langle\tilde Q\rangle_\natural$, $Q_t=i q'_t$ | Level-2 Minkowski interval, the restriction of $\langle\cdot\rangle_{\natural}$ to $\mathbb{B}_{\Phi}$, inertia $(3,1)$ |
 | $O(1,3)$, $SO^+(1,3)$ | Lorentz group; restricted (proper orthochronous) Lorentz group |
 | $\tilde U_{\mathrm{lor}}$, $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1$ | Unit-norm biquaternion (Lorentz rotor) |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Hermitian pair; the automorphism of the slice |

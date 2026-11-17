@@ -13,7 +13,7 @@ The purpose is not to derive new physics. The purpose is to rewrite the establis
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The interval on the material sector has signature $(3,1)$, the minus carried by the $i$ of $R_t=i r'_t$, so that $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The interval on the material sector has inertia $(3,1)$, the minus carried by the $i$ of $R_t=i r'_t$, so that $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
 
 ## The Four-Position
 
@@ -51,7 +51,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = Q_t^2 + |\vec Q|^2 = -{r'_{t}}^2 + r_x^2 + r_y^2 + r_z^2,
 $$
 
-which is a real scalar of signature $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.
+which is a real scalar of inertia $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.
 
 The interval is invariant under the Lorentz group, which in the biquaternion framework is the group of **rotor conjugations** (see the companion article on the Lorentz transformation).
 

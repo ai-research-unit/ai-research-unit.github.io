@@ -55,7 +55,7 @@ $$
 - It is the real companion of the plain norm $P=Q_t^{2}-B^{2}$, in the sense that the two have the same inertia and the K norm is the plain one read on moduli.
 - It is not multiplicative in either direction: two null elements can have the regular product $2e_t$, and the regular element $e_t+\tfrac12\vec e_x$ has a square of value $-7/16$.
 - Both conjugations preserve it, quaternionic and Hermitian alike; no algebra multiplication preserves it except a scalar of modulus one.
-- Its realified signature is $(2,6)$, and its signature as a form on $\mathbb{C}^{4}$ is $(1,3)$: positive on the centre, negative on the vector subspace.
+- Its realified inertia is $(2,6)$, and its signature as a form on $\mathbb{C}^{4}$ is $(1,3)$: positive on the centre, negative on the vector subspace.
 
 ### The Two Sectors
 

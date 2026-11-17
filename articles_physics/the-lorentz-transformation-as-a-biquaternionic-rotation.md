@@ -28,7 +28,7 @@ $$
 ds^2 = (i\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2.
 $$
 
-This is the **Euclidean** quadratic form in the four real variables $(x_0, x_1, x_2, x_3)$. The Lorentzian signature has been absorbed into the **complex structure** of the time coordinate.
+This is the **Euclidean** quadratic form in the four real variables $(x_0, x_1, x_2, x_3)$. The Lorentzian sign pattern has been absorbed into the **complex structure** of the time coordinate.
 
 The group that preserves this form on $\mathbb{R}^4$ is the rotation group $SO(4)$. When the coordinates are complex — as they are when $x_0= i r'_t$ with $r'_t$ real — the group becomes $SO(4, \mathbb{C})$, the group of complex rotations preserving the **general plain bilinear form**
 
@@ -50,7 +50,7 @@ The statement "the Lorentz transformation is a rotation" requires care, because 
 
 **2. The bilinear form is complex.** The quantity preserved by the rotation is the general plain bilinear form $(x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$, which is the biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$. On the real slice, this form can be negative (timelike intervals), positive (spacelike intervals), or zero (null intervals).
 
-**3. The Euclidean form is only apparent.** The Euclidean appearance of the metric $ds^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$ is a consequence of using the imaginary coordinate $x_0= i r'_t$. On the real slice, the metric is still Lorentzian, because the coordinate $x_0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian signature for a complex structure.
+**3. The Euclidean form is only apparent.** The Euclidean appearance of the metric $ds^2 = (x_0)^2 + (x_1)^2 + (x_2)^2 + (x_3)^2$ is a consequence of using the imaginary coordinate $x_0= i r'_t$. On the real slice, the metric is still Lorentzian, because the coordinate $x_0$ is constrained to be imaginary. The "Euclidean" character is a formal device that trades the Lorentzian sign pattern for a complex structure.
 
 The biquaternion algebra $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ is the natural home of these complex rotations: it contains the rotor biquaternions that generate them, and its complex structure encodes the imaginary rotation angles.
 

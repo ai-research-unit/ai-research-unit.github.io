@@ -6,7 +6,7 @@ The local complex structure of the framework identifies the temporal direction w
 $$
 \langle d\tilde{Q}\rangle_{\natural}=(i\,dr'_t)^2+dr_x^2+dr_y^2+dr_z^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2,
 $$
-of signature $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The form is the unit form: in the length coordinate the temporal coefficient is $1$ and the cone is the $45^\circ$ cone. The medium enters through the conversion $t'=r'_t/c$ with $c=1/\sqrt{\epsilon\mu}$, and in seconds the same form is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$ (*The Local Complex Structure and the Speed of Light*).
+of inertia $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The form is the unit form: in the length coordinate the temporal coefficient is $1$ and the cone is the $45^\circ$ cone. The medium enters through the conversion $t'=r'_t/c$ with $c=1/\sqrt{\epsilon\mu}$, and in seconds the same form is $-c^2\,d{t'}^2+dr_x^2+dr_y^2+dr_z^2$ (*The Local Complex Structure and the Speed of Light*).
 
 That construction is announced as a **metric**, and the word invites a specific identification that the parent articles leave open. A medium with refractive index $n$ already has a well-known effective geometry: the **optical metric** of Gordon (1923), in which light rays are null geodesics and the medium's index and motion are absorbed into the geometry. The parent article states the caution explicitly: the local structure of the framework "is isotropic and is written in the local rest frame of the material; the constitutive relations of a moving or anisotropic medium carry more data than the local complex structure, and their geometric interpretation is a separate question" (*Electromagnetism in Media — The Local Complex Structure at Work*).
 
@@ -111,7 +111,7 @@ Read further, the conformal factor is a **dilaton** shape: the scene at each poi
 
 The framework's local complex structure produces at each point the unit interval $-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$, which in the clock time $t'=r'_t/c$ reads $-c^2d{t'}^2+dr_x^2+dr_y^2+dr_z^2$ with $c=1/\sqrt{\epsilon\mu}$. This article identifies it with the optical metric of the medium: in the static case $g^{\mathrm J}$ is exactly Gordon's metric $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$ with $v$ at rest, the identification being $n=c_0/c$, and and the null cone of the algebra, read in the clock time, is the optical-metric cone of aperture $c=1/n$.
 
-Three boundaries mark where the framework's single scalar runs out, and one of them is more than a boundary. The moving medium has off-diagonal drag terms $g^{\mathrm{J}}_{ti}\neq0$ that the framework's metric cannot carry, because the local structure rescales the imaginary axis without rotating it; the four-velocity must be imported. A birefringent or anisotropic medium has two indices, and one scalar cannot carry them, so those cases belong to the chiral article and not to the metric interpretation. And $\epsilon\mu<0$ — a plasma or a metal below cutoff — flips the sign of $c^2$, turns the metric Riemannian of signature $(4,0)$, and turns the imaginary time direction real: the dielectric sign selects between the Lorentzian and the Wick-rotated phases of the local complex structure.
+Three boundaries mark where the framework's single scalar runs out, and one of them is more than a boundary. The moving medium has off-diagonal drag terms $g^{\mathrm{J}}_{ti}\neq0$ that the framework's metric cannot carry, because the local structure rescales the imaginary axis without rotating it; the four-velocity must be imported. A birefringent or anisotropic medium has two indices, and one scalar cannot carry them, so those cases belong to the chiral article and not to the metric interpretation. And $\epsilon\mu<0$ — a plasma or a metal below cutoff — flips the sign of $c^2$, turns the metric Riemannian of inertia $(4,0)$, and turns the imaginary time direction real: the dielectric sign selects between the Lorentzian and the Wick-rotated phases of the local complex structure.
 
 The interpretation adds no prediction and no gravity. It is a repackaging of Gordon's optical metric in which the conformal factor is the scale of the algebra, and its content is that the framework's light cone is the medium's light cone, its one free number is the medium's index, and its Euclidean phase is the medium's $\epsilon\mu<0$.
 
@@ -130,7 +130,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $g^{\mathrm{J}}_{\mu\nu}=\delta_{\mu\nu}+(1-1/n^2)v_\mu v_\nu$, $\sum_\mu v_\mu v_\mu=-1$ | Gordon's optical metric |
 | $g^{\mathrm{J}}_{ti}$ | Drag terms; zero for a static medium, nonzero for a moving one |
 | $\epsilon(\omega)=\epsilon_0(1-\omega_p^2/\omega^2)$ | Ideal plasma permittivity; negative below $\omega_p$ |
-| $\epsilon\mu<0$, $g^{\mathrm J}$ of signature $(4,0)$ | Euclidean phase; $c$ imaginary, imaginary time real |
+| $\epsilon\mu<0$, $g^{\mathrm J}$ of inertia $(4,0)$ | Euclidean phase; $c$ imaginary, imaginary time real |
 | $n_\pm(\omega)$ | Two indices of a chiral (birefringent) medium |
 
 ## Further Reading

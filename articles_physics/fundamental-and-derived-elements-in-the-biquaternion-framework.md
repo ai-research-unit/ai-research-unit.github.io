@@ -230,7 +230,7 @@ $$
 \mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}
 $$
 
-is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,f$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
+is an orthogonal decomposition of inertia $(4,4)$ for $\mathrm{Re}\,f$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
 **The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, the reduction formula gives
 

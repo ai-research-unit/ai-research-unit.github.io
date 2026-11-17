@@ -31,7 +31,7 @@
 | mathematical content | source article |
 | --- | --- |
 | the fixed line, the two propositions on the fixed space, the character theorem, the trivial action and the two numbers, the multiplicity two, the exclusion of a Peirce corner | [Introduction to the Spin-Zero Centre Subspace](../articles_maths/the-spin-zero-centre-subspace.html) |
-| the norm $\lambda^{2}$ on the centre, the null locus, the two real forms of signature $(1,1)$, the isotropic lines, the polar form $\lambda\mu$ | [The Spin-Zero Centre Subspace and N Norm Regularity](../articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.html) |
+| the norm $\lambda^{2}$ on the centre, the null locus, the two real forms of inertia $(1,1)$, the isotropic lines, the polar form $\lambda\mu$ | [The Spin-Zero Centre Subspace and N Norm Regularity](../articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.html) |
 | the double eigenvalue, the degenerate cone, the centre as the part of the cone with vanishing vector part, the sector $\Sigma_{10}$ | [The Spin-Zero Centre Subspace and Spectral Regularity](../articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string, the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the two predicates, the four sectors and the placement of the carriers among them | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
@@ -58,7 +58,7 @@
 
 **The polar form.** $\lambda=re^{i\vartheta}$ gives $N=r^{2}e^{2i\vartheta}$, so the amplitude is the square root of $\lvert N\rvert$ and the phase is half the argument of $N$.
 
-**The two real forms.** The real part of $N$ has signature $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines $N=\pm2i$ and not zero.
+**The two real forms.** The real part of $N$ has inertia $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines $N=\pm2i$ and not zero.
 
 **The phase.** A central phase preserves the centre for every angle and preserves the material sector only for $\pm1$.
 
@@ -162,7 +162,7 @@ $$
 N(\lambda e_t)=(a^{2}-b^{2})+2iab ,
 $$
 
-and the real part is a form of signature $(1,1)$: positive on $\mathbb{R}e_t$, negative on $\mathbb{R}(ie_t)$, and vanishing on the two lines $a=\pm b$, that is on $\mathbb{R}(e_t\pm ie_t)$. On those lines the norm itself is not zero but $\pm2i$, verified exactly. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one real form; the complex norm has no isotropic line in the centre.
+and the real part is a form of inertia $(1,1)$: positive on $\mathbb{R}e_t$, negative on $\mathbb{R}(ie_t)$, and vanishing on the two lines $a=\pm b$, that is on $\mathbb{R}(e_t\pm ie_t)$. On those lines the norm itself is not zero but $\pm2i$, verified exactly. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one real form; the complex norm has no isotropic line in the centre.
 
 **The eigenvalue.** Every element of the algebra satisfies $X^{2}-2Q_tX+N(X)e_t=0$, whose roots are $\lambda_{\pm}=Q_t\pm iB$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$. On the centre $B^{2}=0$ identically, so
 
@@ -363,7 +363,7 @@ the radial field $h$ has the mass $m_h^{2}=2\beta v^{2}$ and the angular field h
 
 The carrier of spin zero is the real line $\mathbb{R}e_t$, of real dimension one, and its closure is the centre $\mathbb{C}e_t$, of real dimension two. The adjoint action of every unit fixes the line pointwise, the generator is the zero operator, the spectrum is $\{0\}$ with multiplicity one on the line and two on the closure, the spin is $0$, the identity $2s+1=\dim_\mathbb{R}$ reads $1=1$, and a full turn has operator $+1$. The centre is the only invariant complex line, and the character theorem that proves it needs the invariance of the norm and the connectedness of the group of invertibles.
 
-The two predicates are extreme and opposite. The norm is $N(\xi e_t)=\xi^{2}$, whose zero locus in the centre is the origin alone, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. Its real part has signature $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, on which the norm is $\pm2i$ and not zero. The vector part vanishes identically, so the two eigenvalues coincide and the whole centre is spectrally degenerate. Away from the origin the carrier lies in $\Sigma_{10}$: a mass and no spectrum.
+The two predicates are extreme and opposite. The norm is $N(\xi e_t)=\xi^{2}$, whose zero locus in the centre is the origin alone, so every nonzero central element is invertible and the centre is a copy of the complex field inside the algebra. Its real part has inertia $(1,1)$ with the isotropic lines $\mathbb{R}(e_t\pm ie_t)$, on which the norm is $\pm2i$ and not zero. The vector part vanishes identically, so the two eigenvalues coincide and the whole centre is spectrally degenerate. Away from the origin the carrier lies in $\Sigma_{10}$: a mass and no spectrum.
 
 The closure adds one real dimension and it is the phase. In the polar form the amplitude is the carrier and the angle is the added direction, and $N=r^{2}e^{2i\vartheta}$ makes the phase of the norm twice the phase of the field. A central phase preserves the centre for every angle; the material sector keeps only $\pm1$. Charge is the phase, and the centre is the carrier that carries a continuous one.
 

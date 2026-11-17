@@ -28,7 +28,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
 $$
 
-has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.
+has inertia $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.
 
 **The material sector $\mathbb{B}_{\Phi}$.** An element has the form
 
@@ -42,7 +42,7 @@ $$
 \langle\tilde R_\Phi\rangle_{\natural} = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2
 $$
 
-has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
+has inertia $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.
 
 **The informational sector $\mathbb{B}_{\Psi}$.** An element has the form
 
@@ -56,7 +56,7 @@ $$
 \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - (h'_x)^2 - (h'_y)^2 - (h'_z)^2
 $$
 
-has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
+has inertia $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
 
 The three subspaces are distinct, and each has its own algebraic and analytic character. The specific form of the differential operators on each subspace — the gradient, the d'Alembertian, and the square of the gradient — has been developed in the companion articles on the biquaternion analysis.
 
@@ -146,7 +146,7 @@ $$
 
 The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the continued field. This is the standard procedure, expressed in the biquaternion framework as a change of the reality condition on one field.
 
-So the Wick rotation is a **change of real slice**: it is available where the deformation of the coefficient crosses no singularity, and it is unavailable where one is crossed. Its biquaternion content is that $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{H}$ are the two real structures of one algebra, related by $W^{2}=T$. The change is not an artefact of the calculation, and a medium can produce it: when $\epsilon\mu<0$ the scale $c^2=1/(\epsilon\mu)$ is negative, the interval takes the signature $(4,0)$, and the imaginary time direction becomes real (*The Effective Optical Metric of the Local Complex Structure*).
+So the Wick rotation is a **change of real slice**: it is available where the deformation of the coefficient crosses no singularity, and it is unavailable where one is crossed. Its biquaternion content is that $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{H}$ are the two real structures of one algebra, related by $W^{2}=T$. The change is not an artefact of the calculation, and a medium can produce it: when $\epsilon\mu<0$ the scale $c^2=1/(\epsilon\mu)$ is negative, the interval takes the inertia $(4,0)$, and the imaginary time direction becomes real (*The Effective Optical Metric of the Local Complex Structure*).
 
 ## Why the Change Works: the Properties of $\mathbb{B}_{H}$
 
@@ -248,9 +248,9 @@ The interpretation organizes the applications into a split between those that tr
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{V}$, $\mathbb{B}_{iH}$ | The centre, the vector subspace, and the remaining four-dimensional subspace; not involved in the Wick rotation |
-| $\mathbb{B}_{H}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
-| $\mathbb{B}_{\Psi}$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
-| $\mathbb{B}_{\Phi}$ | Material sector: signature $(3, 1)$, hyperbolic |
+| $\mathbb{B}_{H}$ | Quaternion subspace: inertia $(4, 0)$, elliptic |
+| $\mathbb{B}_{\Psi}$ | Informational sector: inertia $(1, 3)$, mirror hyperbolic |
+| $\mathbb{B}_{\Phi}$ | Material sector: inertia $(3, 1)$, hyperbolic |
 | $q_t, q_x, q_y, q_z$ | Real parameters on $\mathbb{B}_{H}$, on $e_t, \vec e_x, \vec e_y, \vec e_z$; the rotated point has $q_t = c\tau$ |
 | $(h_t)\,e_t + r_x\,\vec e_x + r_y\,\vec e_y + r_z\,\vec e_z$ | The same element in physical coordinates; $q_t = h_t$ and $(q_x,q_y,q_z)=(r_x,r_y,r_z)$ |
 | $r'_t, r_x, r_y, r_z$ | Real parameters on $\mathbb{B}_{\Phi}$, on $ie_t, \vec e_x, \vec e_y, \vec e_z$ |

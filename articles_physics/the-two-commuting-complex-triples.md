@@ -144,7 +144,7 @@ $$
 \star M_{0i}=\tfrac12\epsilon_{ijk}M_{jk},\qquad \star M_{jk}=-\epsilon_{jki}M_{0i},
 $$
 
-which satisfies $\star^{2}=-1$ on real bivectors. The sign of the square is the Lorentzian signature's: in Euclidean signature the star squares to $+1$ and there is no splitting, which is why the self-dual decomposition is a Lorentzian phenomenon and why *The SO(4) Route to the Euclidean Frame* has to say what replaces it.
+which satisfies $\star^{2}=-1$ on real bivectors. The sign of the square is the Lorentzian sign pattern's: in the Euclidean case the star squares to $+1$ and there is no splitting, which is why the self-dual decomposition is a Lorentzian phenomenon and why *The SO(4) Route to the Euclidean Frame* has to say what replaces it.
 
 ### The Projections
 
@@ -223,7 +223,7 @@ The two triples are a computational device and not a statement of compactness. T
 
 ## Summary
 
-The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structure constants $\epsilon_{ijk}$ and commute with each other, so the complexified Lorentz algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$. The $i$ in their definition is the coefficient field's, not the algebra's central scalar; with the central scalar the combination vanishes. The triples are the self-dual and anti-self-dual eigenspaces of the Hodge star, whose square is $-1$ in Lorentzian signature. The adjoint representation is the two central directions plus $(1,0)\oplus(0,1)$, each triple carrying spin one. The triples are not the real $\mathfrak{su}(2)$ inside the Lorentz algebra but its complexification, and the real form decides unitarity: the compact real form is $\mathfrak{so}(4)$ and the Lorentz algebra is not it.
+The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structure constants $\epsilon_{ijk}$ and commute with each other, so the complexified Lorentz algebra is $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$. The $i$ in their definition is the coefficient field's, not the algebra's central scalar; with the central scalar the combination vanishes. The triples are the self-dual and anti-self-dual eigenspaces of the Hodge star, whose square is $-1$ in Lorentzian sign pattern. The adjoint representation is the two central directions plus $(1,0)\oplus(0,1)$, each triple carrying spin one. The triples are not the real $\mathfrak{su}(2)$ inside the Lorentz algebra but its complexification, and the real form decides unitarity: the compact real form is $\mathfrak{so}(4)$ and the Lorentz algebra is not it.
 
 ## Summary of Notation
 

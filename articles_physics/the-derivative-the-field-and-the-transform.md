@@ -70,9 +70,9 @@ $$
 
 **The integral.** The fundamental solution is $G_{\mathrm{fn}}(\tilde R)=\tilde R^{\natural}/\|\tilde R\|^{4}$, homogeneous of degree $-3$, with $\tilde\nabla G_{\mathrm{fn}}=2\pi^{2}\delta_0e_t$ distributionally. The Cauchy formula holds on $\mathbb{B}_{H}$, and its consequences are the mean value property, the maximum principle, Liouville's theorem, the identity theorem, the Cauchy estimates and a residue theorem.
 
-**The signatures.** $\Box$ restricted to a remarkable subspace is $e_t$ times the operator of the norm of that subspace: $\Delta_4$ of signature $(4,0)$ on $\mathbb{B}_{H}$, $-\Delta_4$ of signature $(0,4)$ on $\mathbb{B}_{iH}$, and the wave operator of signature $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$. The operator is elliptic exactly on the subspaces that contain no zero divisor.
+**The signatures.** $\Box$ restricted to a remarkable subspace is $e_t$ times the operator of the norm of that subspace: $\Delta_4$ of inertia $(4,0)$ on $\mathbb{B}_{H}$, $-\Delta_4$ of inertia $(0,4)$ on $\mathbb{B}_{iH}$, and the wave operator of inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$. The operator is elliptic exactly on the subspaces that contain no zero divisor.
 
-**The group.** $\mathbb{B}^{\times}$ is a real Lie group of dimension eight, $\mathbb{B}^{\times}_1$ of dimension six, and $S^{3}$ of dimension three. The exponential is a local diffeomorphism at the identity and is not surjective onto $\mathbb{B}^{\times}_1$. The Killing form has signature $(3,3)$ and radical the centre.
+**The group.** $\mathbb{B}^{\times}$ is a real Lie group of dimension eight, $\mathbb{B}^{\times}_1$ of dimension six, and $S^{3}$ of dimension three. The exponential is a local diffeomorphism at the identity and is not surjective onto $\mathbb{B}^{\times}_1$. The Killing form has inertia $(3,3)$ and radical the centre.
 
 **The functions.** Every direct elementary function of $\tilde Q$ lies in $\mathbb{C}[\tilde Q]$, with two regimes set by the complex norm of the vector part: the oscillatory regime with two eigenvalues, and the nilpotent regime where every series truncates. The identities of one variable survive; the addition formulas of two variables fail.
 
@@ -334,7 +334,7 @@ $$
 \mathrm{U}(2)=S^{3}\cdot\mathrm{U}(1)\cong\bigl(SU(2)\times U(1)\bigr)/\{\pm(1,1)\}.
 $$
 
-**The Lie algebra.** The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$, with radical the centre $\mathbb{C}e_t$ and signature $(3,3)$ on the scalar-free part: negative on the compact subalgebra and positive on $i$ times it.
+**The Lie algebra.** The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$, with radical the centre $\mathbb{C}e_t$ and inertia $(3,3)$ on the scalar-free part: negative on the compact subalgebra and positive on $i$ times it.
 
 **The failure of surjectivity.** The exponential is surjective onto the compact $S^{3}$ and not surjective onto $\mathbb{B}^{\times}_1$. The obstruction is a non-semi-simple element with the repeated eigenvalue $-1$, the same obstruction as in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 
@@ -448,7 +448,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 ### III.1.k — The Two Real Directions Are Rotation and Boost
 
-**The object.** The trace-free part of the Lie algebra, its two real directions, the compact subalgebra and $i$ times it, and the Killing form of signature $(3,3)$.
+**The object.** The trace-free part of the Lie algebra, its two real directions, the compact subalgebra and $i$ times it, and the Killing form of inertia $(3,3)$.
 
 **The warrant.** The generators $i\vec e_k$ are anti-Hermitian and the generators $\vec e_k$ are Hermitian; the first family is the non-compact direction, the second the compact one; the Killing form is negative on the compact subalgebra and positive on $i$ times it. The norm-one group is $SL(2,\mathbb{C})$ with centre $\{\pm e_t\}$, and modulo the centre it is the Lorentz group.
 
@@ -496,7 +496,7 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 
 **The integral carries the source.** The fundamental solution of the gradient is $\tilde R^{\natural}/\|\tilde R\|^{4}$ with distributional gradient $2\pi^{2}\delta_0e_t$; the Cauchy formula holds on the quaternion subspace and its regular case is a boundary integral alone; the mean value property, the maximum principle, Liouville's theorem and a residue theorem follow. A free field has no volume term, so strength enters only through the failure of regularity.
 
-**The exponential is the transform.** The group of invertibles is a Lie group of dimension eight, the norm-one group of dimension six, the unit quaternions of dimension three; the exponential is a local diffeomorphism and not surjective; the Killing form has signature $(3,3)$ with radical the centre. The two real directions of the trace-free part are the rotations and the boosts, and the group of the norm modulo its centre is the Lorentz group.
+**The exponential is the transform.** The group of invertibles is a Lie group of dimension eight, the norm-one group of dimension six, the unit quaternions of dimension three; the exponential is a local diffeomorphism and not surjective; the Killing form has inertia $(3,3)$ with radical the centre. The two real directions of the trace-free part are the rotations and the boosts, and the group of the norm modulo its centre is the Lorentz group.
 
 **The elementary functions are the flows written out.** Every direct function lies in $\mathbb{C}[\tilde Q]$, with an oscillatory and a nilpotent regime; the identities of one variable survive and the addition formulas of two fail; the special functions that arise from the analysis are its kernels.
 
@@ -536,9 +536,9 @@ with the parity-matched lattice $\ker\exp\cap\mathbb{C}[\tilde Q]=\{\pi im\,e_t+
 | the exponential | $\exp$ | the series and its closed form; the transform of this entry |
 | the complex norm | $B$ | $\sqrt{Q_x^{2}+Q_y^{2}+Q_z^{2}}$, the discriminant of $\mathbb{C}[\tilde Q]$ |
 | the eigenvalues | $\lambda_\pm$ | $Q_t\pm iB$ in the oscillatory regime |
-| the material sector | $\mathbb{B}_{\Phi}$ | signature $(3,1)$, hyperbolic |
-| the informational sector | $\mathbb{B}_{\Psi}$ | signature $(1,3)$, hyperbolic |
-| the quaternion subspace | $\mathbb{B}_{H}$ | signature $(4,0)$, elliptic |
+| the material sector | $\mathbb{B}_{\Phi}$ | inertia $(3,1)$, hyperbolic |
+| the informational sector | $\mathbb{B}_{\Psi}$ | inertia $(1,3)$, hyperbolic |
+| the quaternion subspace | $\mathbb{B}_{H}$ | inertia $(4,0)$, elliptic |
 
 ## Further Reading
 

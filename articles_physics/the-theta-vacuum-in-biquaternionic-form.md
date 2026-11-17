@@ -222,7 +222,7 @@ its abelian density is $\mathrm{Sc}(\tilde F\star\tilde F)=I_2=\vec E\cdot\vec B
 | $S_{\mathrm{vac}}=\theta_{\mathrm{vac}} Ϙ$ | Topological term; a total derivative |
 | $\vert\theta_{\mathrm{vac}}\rangle=\sum_Ϙ \exp(i\theta_{\mathrm{vac}} Ϙ)\vert Ϙ\rangle$ | $\theta_{\mathrm{vac}}$ vacuum; central weighting |
 | $\mathcal{F}=\tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar e_\mu e_\nu$ | Non-abelian curvature in biquaternion form |
-| $\star$ | Hodge dual on two-forms; $\star^2=-1$ in Lorentzian signature, $+1$ in Euclidean |
+| $\star$ | Hodge dual on two-forms; $\star^2=-1$ in Lorentzian sign pattern, $+1$ in Euclidean |
 | $\flat=-{}^{*}$ | Real structure; sign on the sectors; charge-conjugation shape |
 | $\bar\theta_{\mathrm{vac}}=\theta_{\mathrm{vac}}+\arg\det M$ | Physical angle with a chiral fermion |
 | $\eta$ | Eta invariant; the phase of a determinant family |

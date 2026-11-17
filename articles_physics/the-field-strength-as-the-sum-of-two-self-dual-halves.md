@@ -68,7 +68,7 @@ $$
 \star^{2}=-1 .
 $$
 
-The dual is therefore a complex structure on the six-dimensional bivector space, and its eigenvalues are $\pm i$. The minus sign is the Lorentzian signature's: in four Euclidean dimensions the dual's square is $+1$ and the split becomes $\pm1$ rather than $\pm i$.
+The dual is therefore a complex structure on the six-dimensional bivector space, and its eigenvalues are $\pm i$. The minus sign is the Lorentzian sign pattern's: in four Euclidean dimensions the dual's square is $+1$ and the split becomes $\pm1$ rather than $\pm i$.
 
 ### On the Algebra's Vector Part
 

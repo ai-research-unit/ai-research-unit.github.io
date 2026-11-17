@@ -33,9 +33,9 @@ $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}.
 $$
 
-On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_\eta^{*}=\tilde Q_\eta$ and the form equals the plain form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$; it is positive definite, of signature $(4,0)$ on the sector and $(8,0)$ on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The **scalar part** is the form against the unit, $\mathrm{Sc}(\tilde H_\Psi)=\langle\tilde H_\Psi,e_t\rangle_{*}$, and the matrix image carries twice that value, $2c h_t$.
+On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde Q_\eta^{*}=\tilde Q_\eta$ and the form equals the plain form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$; it is positive definite, of inertia $(4,0)$ on the sector and $(8,0)$ on the whole algebra. The unit has $\langle e_t\rangle_{*}=1$. The **scalar part** is the form against the unit, $\mathrm{Sc}(\tilde H_\Psi)=\langle\tilde H_\Psi,e_t\rangle_{*}$, and the matrix image carries twice that value, $2c h_t$.
 
-**Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of signature $(1,3)$ on $\mathbb{B}_{\Psi}$:
+**Biquaternion norm.** The biquaternion norm of $\mathbb{B}$ restricts to a real quadratic form of inertia $(1,3)$ on $\mathbb{B}_{\Psi}$:
 
 $$
 \langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = (h_t^2 - |\vec h_\Psi|^2) e_t.
@@ -53,7 +53,7 @@ $$
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}.
 $$
 
-It is symmetric and positive definite, of signature $(4,0)$: the **Euclidean** pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical **Hermitian form** of the algebra, $\langle\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, because $\tilde{H}_{\Psi,2}^{*}=\tilde{H}_{\Psi,2}$ there. In the $2\times2$ image the same value appears multiplied by two.
+It is symmetric and positive definite, of inertia $(4,0)$: the **Euclidean** pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical **Hermitian form** of the algebra, $\langle\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, because $\tilde{H}_{\Psi,2}^{*}=\tilde{H}_{\Psi,2}$ there. In the $2\times2$ image the same value appears multiplied by two.
 
 **The biquaternion norm.** The biquaternion norm is the quadratic form
 
@@ -61,7 +61,7 @@ $$
 \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2,
 $$
 
-of signature $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.
+of inertia $(1,3)$. It is the Lorentzian quadratic form whose future light cone defines the state space, and it is the diagonal of the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ below, $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural}$. It is a quadratic form; it is not a third bilinear form.
 
 **The polarization of the biquaternion norm.** The bilinear form associated with the biquaternion norm is obtained by symmetrizing the product $\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural}$:
 
@@ -85,7 +85,7 @@ $$
 \boxed{\;\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\;}.
 $$
 
-This is the **Lorentzian** bilinear form, of signature $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the **Krein form** $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}^{\natural}\tilde{H}_{\Psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{H}_{\Psi,1}^{\natural} = \bar{\tilde H_\Psi}_1$ and $\tilde{H}_{\Psi,2}^{*} = \tilde{H}_{\Psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde H_\Psi}_1\tilde{H}_{\Psi,2}) = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.
+This is the **Lorentzian** bilinear form, of inertia $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the **Krein form** $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}^{\natural}\tilde{H}_{\Psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{H}_{\Psi,1}^{\natural} = \bar{\tilde H_\Psi}_1$ and $\tilde{H}_{\Psi,2}^{*} = \tilde{H}_{\Psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde H_\Psi}_1\tilde{H}_{\Psi,2}) = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.
 
 The antisymmetric combination contains the vector part:
 
@@ -97,7 +97,7 @@ This is not a symmetric bilinear form; it is the antisymmetric part of the produ
 
 **Summary of the two forms.** On $\mathbb{B}_{\Psi}$ two of the four forms of the algebra remain distinct, one Euclidean and one Lorentzian:
 
-| Form | Expression | Signature |
+| Form | Expression | Inertia |
 |---|---|---|
 | Hermitian form (the plain form on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | $(4,0)$, Euclidean |
 | Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | $(1,3)$, Lorentzian |
@@ -596,7 +596,7 @@ $$
 
 separates a $*$-unitary factor $\tilde{W}_{\Psi}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\Psi,\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
-**The shared imaginary unit.** The $i$ of the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian signature of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
+**The shared imaginary unit.** The $i$ of the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian sign pattern of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
 
 **What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 
@@ -671,7 +671,7 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = \tfrac12(h_t + \vec r\cdot\vec h_\Psi)$, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ | Hermitian form on a state |
 | $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = h_t + \vec r\cdot\vec h_\Psi$ | Born rule, the normalised Hermitian form |
 | $\mathrm{Sc}(\tilde H_\Psi) = h_t$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec r\cdot\vec h_\Psi$ | Scalar part, the value of the Hermitian form |
-| $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = h_t^2 - |\vec h_\Psi|^2$ | Biquaternion norm, signature $(1,3)$ |
+| $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = h_t^2 - |\vec h_\Psi|^2$ | Biquaternion norm, inertia $(1,3)$ |
 | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | Polarization of the biquaternion norm |
 | $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Commutator |
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ | Projective measurement |

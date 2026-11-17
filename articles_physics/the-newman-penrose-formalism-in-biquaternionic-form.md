@@ -24,7 +24,7 @@ $$
 \langle \tilde Q_1, \tilde Q_2\rangle_{\natural} \;=\; \mathrm{Sc}\big(\tilde Q_1\tilde Q_2^{\natural}\big) \;=\; -c^2r'_{1t}r'_{2t} + r_{1x}r_{2x} + r_{1y}r_{2y} + r_{1z}r_{2z} ,
 $$
 
-of signature $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
+of inertia $(3,1)$ in the read list's counting — three positive directions and one negative. The matrix realization is the $\mathbb{C}$-algebra isomorphism
 
 $$
 \mathsf{M}_2 : \mathbb{B} \longrightarrow M_2(\mathbb{C}), \qquad
@@ -44,7 +44,7 @@ l\cdot m = l\cdot\bar m = n\cdot m = n\cdot\bar m = 0,
 \tag{1}
 $$
 
-where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{\Phi}$. This is the normalization appropriate to the signature $(3,1)$ with $\varepsilon=(1,-1,-1,-1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
+where $\cdot$ is the general quaternionic bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ of the material sector, the interval, extended $\mathbb{C}$-bilinearly to $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}_{\Phi}$. This is the normalization appropriate to the inertia $(3,1)$ with $\varepsilon=(1,-1,-1,-1)$ that the read list uses; with the opposite metrical convention one takes $l\cdot n = +1$ and $m\cdot\bar m = -1$. Fixed once here, the convention (1) is held throughout.
 
 Two features of (1) are worth naming because they are the source of most sign errors in this subject. First, the tetrad is **not** an orthonormal frame: its legs are null, so the metric in tetrad components is off-diagonal, and the completeness relation that inverts (1) carries the off-diagonal signs. Second, $l$ and $n$ are real four-vectors while $m$ and $\bar m$ are complex conjugates; the tetrad is a basis of the complexified material sector, of complex dimension four, not of the real $\mathbb{B}_{\Phi}$.
 
@@ -331,7 +331,7 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 | $\mathbb{B}_{H}$ | real-quaternion subspace |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$ |
 | $\mathrm{Sc}$, $\mathrm{Tr}$ | scalar part and trace |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval, of signature $(3,1)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | the general quaternionic bilinear form on $\mathbb{B}_{\Phi}$, the interval, of inertia $(3,1)$ |
 | $Ξ$ | matrix realization $\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ |
 | $S$, $\bar S$ | spinor module and its conjugate, $S\cong\mathbb{C}^2$ |
 | $\mathrm{sym}^4 S$ | self-dual Weyl spinors, complex dimension $5$ |

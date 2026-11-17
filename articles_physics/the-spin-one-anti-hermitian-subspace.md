@@ -12,7 +12,7 @@
 
 **The fourth claim is that the closure is the material sector.** The subspace $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ is of real dimension four, it is carried onto itself by the whole group, and the direction that was added is the central generator $ie_t$ and not the identity. The identity $e_t$ lies in the other half. So the closure is not the triple with a label attached: it is the triple with one more generator, and the group needs that generator to close.
 
-**The fifth claim is that the two invariants are real on the closure, and that this is what the sector buys.** The norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$, a real form of signature $(3,1)$ that is positive definite on the carrier and negative definite on the added line. The square of the vector part is $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, so the spectrally degenerate locus of the sector is the added line alone. One invariant measures the mass and the other measures the motion, both are real numbers, and no other carrier has that.
+**The fifth claim is that the two invariants are real on the closure, and that this is what the sector buys.** The norm is $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$, a real form with the signs $(3,1)$, positive definite on the carrier and negative definite on the added line. The square of the vector part is $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, so the spectrally degenerate locus of the sector is the added line alone. One invariant measures the mass and the other measures the motion, both are real numbers, and no other carrier has that.
 
 **The sixth claim is that the carrier is the only one that lives entirely in the doubly regular region.** Every nonzero element of the triple has $N\neq0$ and $B^{2}\neq0$, so the triple without its origin is contained in $\Sigma_{11}$, the region the corpus names mass in motion. The centre is confined to $\Sigma_{10}$ and the plane to $\Sigma_{01}$; the triple is the third and the last of the three, and it completes the sequence in which the two predicates are repaired one at a time.
 
@@ -24,14 +24,14 @@
 
 **The letters.** The algebra is $\mathbb{B}$, real of dimension eight, units $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; the central imaginary is $i$; an element is $\tilde Q=Q_te_t+\vec Q$ with complex coefficients $Q_\mu=q_\mu+iq'_\mu$. The pure part is $\mathfrak{k}$, an element of it is written $\vec v$ with $\lvert\vec v\rvert^{2}=v_x^{2}+v_y^{2}+v_z^{2}$, and the cross product is $\times$. The star ${}^{*}$ is the Hermitian conjugation, the bar $\bar{\cdot}$ the coefficient conjugation, and ${}^{\natural}$ the natural conjugation. The norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, $B$ is its polar form, and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ is the square of the vector part. The sectors are $\mathbb{B}_\Phi=\{X^{*}=-X\}$ and $\mathbb{B}_\Psi=\{X^{*}=X\}$. A rotation generator is $A(\vec u)=\tfrac12\vec u$; a rotor is $\tilde u_{\mathrm r}=\cos\tfrac{\theta}{2}e_t+\sin\tfrac{\theta}{2}\vec u$; a Lorentz rotor is $\tilde U_{\mathrm{lor}}$ with $N(\tilde U_{\mathrm{lor}})=1$, and a boost is $\cosh\tfrac{\phi}{2}e_t+i\sinh\tfrac{\phi}{2}\vec u_{\mathrm b}$. The four sectors of the two predicates are written $\Sigma_{ij}$.
 
-**Boundaries.** The subspace, the closure and the weights are *Introduction to the Spin-One Anti-Hermitian Subspace*; the norm, the signature and the cone are *The Spin-One Anti-Hermitian Subspace and N Norm Regularity*; the predicate, the spectrum and the degenerate line are *The Spin-One Anti-Hermitian Subspace and Spectral Regularity*; the four sectors inside the closure are *The Spin-One Anti-Hermitian Subspace and the Sectors*; the list of three carriers and the closure rules are *From the Spin to the Carriers and the Closures*; the bracket and its Lie algebra are *Lie Algebras of Sesqualgebras*; the product's two halves are *The Vector Parts of the Products over the Biquaternion Algebra*; the rotor and the double cover are *Biquaternion Rotations and Lorentz Transformations*. The physics is taken from *Four-Vectors and the Interval*, *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *The Third Polarization and the Self-Dual Split of the Massive Field Strength*, *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, *The Generalized Bloch Ball for Spin 1*, *Maxwell's Equations in the Biquaternionic Formulation*, *Mass in Motion: The Region of Both Invariants*, *The Gauge Principle in Biquaternionic Form* and *The Gauge Group Ceiling*. No dynamics, no gauge principle and no quantization appear below.
+**Boundaries.** The subspace, the closure and the weights are *Introduction to the Spin-One Anti-Hermitian Subspace*; the norm, the signs and the cone are *The Spin-One Anti-Hermitian Subspace and N Norm Regularity*; the predicate, the spectrum and the degenerate line are *The Spin-One Anti-Hermitian Subspace and Spectral Regularity*; the four sectors inside the closure are *The Spin-One Anti-Hermitian Subspace and the Sectors*; the list of three carriers and the closure rules are *From the Spin to the Carriers and the Closures*; the bracket and its Lie algebra are *Lie Algebras of Sesqualgebras*; the product's two halves are *The Vector Parts of the Products over the Biquaternion Algebra*; the rotor and the double cover are *Biquaternion Rotations and Lorentz Transformations*. The physics is taken from *Four-Vectors and the Interval*, *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, *The Third Polarization and the Self-Dual Split of the Massive Field Strength*, *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, *The Generalized Bloch Ball for Spin 1*, *Maxwell's Equations in the Biquaternionic Formulation*, *Mass in Motion: The Region of Both Invariants*, *The Gauge Principle in Biquaternionic Form* and *The Gauge Group Ceiling*. No dynamics, no gauge principle and no quantization appear below.
 
 ## The Source Table
 
 | mathematical content | source article |
 | --- | --- |
 | the vector part, the adjoint action, the closure, the generator and the three weights | [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_maths/the-spin-one-anti-hermitian-subspace.html) |
-| the norm $\lvert\vec v\rvert^{2}-\lambda^{2}$, the signature $(3,1)$, the orthogonality and the null cone | [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html) |
+| the norm $\lvert\vec v\rvert^{2}-\lambda^{2}$, the signs $(3,1)$, the orthogonality and the null cone | [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html) |
 | the square $B^{2}=\lvert\vec v\rvert^{2}$, the spectrum $i(\lambda\pm\lvert\vec v\rvert)$ and the degenerate line | [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html) |
 | the four sectors inside the closure and the reach of the carrier | [The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string and the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
@@ -55,7 +55,7 @@
 
 **The closure.** The material sector $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension $4$, invariant under the whole group and a Lie algebra under the bracket.
 
-**The two invariants.** $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$ and $B^{2}(i\lambda+\vec v)=\lvert\vec v\rvert^{2}$; the first is of signature $(3,1)$ and the second is non-negative.
+**The two invariants.** $N(i\lambda+\vec v)=\lvert\vec v\rvert^{2}-\lambda^{2}$ and $B^{2}(i\lambda+\vec v)=\lvert\vec v\rvert^{2}$; the first has the signs $(3,1)$ and the second is non-negative.
 
 **The spectrum.** $\operatorname{spec}(i\lambda+\vec v)=\{i(\lambda+\lvert\vec v\rvert),\,i(\lambda-\lvert\vec v\rvert)\}$, purely imaginary, degenerate exactly on the line $\mathbb{R}(ie_t)$.
 
@@ -294,7 +294,7 @@ $$
 
 **And then the mass removes another.** For the massless field the gauge freedom removes one more, and two polarizations remain. So the sequence of counts is $4\to3\to2$: four components in the potential, three physical states for a massive boson, two for a massless one. Each step is an equation rather than a convention, and the entry states the chain because it is the cleanest statement of what the carrier and the closure are for.
 
-**The sector is not the carrier's double.** A reader might think that the fourth dimension is a second copy of the carrier. It is not: the added dimension is a different object, of a different signature, carrying a different weight string, and fixed by the rotations. The closure adds a singlet and the carrier is the triplet; the two are not interchangeable and the entry names them separately everywhere.
+**The sector is not the carrier's double.** A reader might think that the fourth dimension is a second copy of the carrier. It is not: the added dimension is a different object, of different signs, carrying a different weight string, and fixed by the rotations. The closure adds a singlet and the carrier is the triplet; the two are not interchangeable and the entry names them separately everywhere.
 
 **The reach is different for the two.** The distinction is not only dimensional. The triple without its origin lies entirely in $\Sigma_{11}$, while the sector meets all four sectors: the line away from the origin is in $\Sigma_{10}$, the cone away from the origin is in $\Sigma_{01}$, the origin is in $\Sigma_{00}$, and the interior is in $\Sigma_{11}$. So the triple is the carrier of one regime and the sector is the carrier of the classification. That is the subject of a later section.
 
@@ -318,7 +318,7 @@ $$
 
 so the norm of a sector element is the sum of the norms of its two pieces and the two pieces never interfere.
 
-**The signature, and where the indefiniteness comes from.** The form has signature $(3,1)$: positive on the three dimensions of the triple and negative on the one dimension of the line. Neither summand is indefinite. Each is definite, one with each sign, and the indefiniteness of the closure is created by adding them. This is worth stating plainly, because the Lorentzian signature is usually presented as a property of the whole space and here it is visibly a property of an addition.
+**The signs, and where the indefiniteness comes from.** The form has the signs $(3,1)$: positive on the three dimensions of the triple and negative on the one dimension of the line. Neither summand is indefinite. Each is definite, one with each sign, and the indefiniteness of the closure is created by adding them. This is worth stating plainly, because the Lorentzian sign pattern is usually presented as a property of the whole space and here it is visibly a property of an addition.
 
 **The square of the vector part.** The other invariant is
 
@@ -365,7 +365,7 @@ verified to $1.8\times10^{-15}$ over one hundred random elements. Both lie on th
 | $N(i\vec k)=-\lvert\vec v\rvert^{2}$ | $0$ |
 | least $N$ on the unit sphere of $\mathfrak{k}$ | $1$, exactly |
 
-## The Signature, and the Sign of One Term
+## The Signs, and the Sign of One Term
 
 **One sign and its cause.** The interval of the closure is indefinite because one term carries $i$,
 
@@ -381,11 +381,11 @@ $$
 N(\lambda+i\vec v)=\lambda^{2}-\lvert\vec v\rvert^{2},
 $$
 
-of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instead of an imaginary one. Both halves are equally indefinite and both carry a cone; what differs is which triple is real, and the carrier is the real one. The corpus chooses the anti-Hermitian half because the triple is real there, and it records the choice.
+of the signs $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instead of an imaginary one. Both halves are equally indefinite and both carry a cone; what differs is which triple is real, and the carrier is the real one. The corpus chooses the anti-Hermitian half because the triple is real there, and it records the choice.
 
 **What the convention does not change.** The dimensions, the bracket, the weights, the invariance of the sector under the group and the two-to-one cover are the same on both halves. What the convention changes is the sign of the norm, and with it the causal reading. So the entry states the interval as a consequence of the placement rather than as a consequence of the algebra.
 
-**The physics of the choice.** The Lorentzian signature is what makes the light cone exist, and the light cone is what makes the causal structure, the mass shell and the speed limit exist. All of that follows from one sign, and the sign follows from one placement of $i$. This is the closest the framework comes to deriving the signature, and the entry states the limit: it derives the signature from the convention, not the convention from anything.
+**The physics of the choice.** The Lorentzian signs are what make the light cone exist, and the light cone is what makes the causal structure, the mass shell and the speed limit exist. All of that follows from one sign, and the sign follows from one placement of $i$. This is the closest the framework comes to deriving the signs, and the entry states the limit: it derives the signs from the convention, not the convention from anything.
 
 **The spectrum on the two halves.** The predicate is the same on both halves, since it is decided by $B^{2}$ and that is $\lvert\vec v\rvert^{2}$ on the one and $-\lvert\vec v\rvert^{2}$ on the other, vanishing in both cases exactly where the vector part does. What moves is the location of the spectrum: imaginary on the anti-Hermitian half, real on the Hermitian one. So the predicate that classifies the element does not read the axis on which its eigenvalues lie, and the two halves are the sharpest illustration of that separation in the corpus.
 
@@ -441,7 +441,7 @@ of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instea
 
 **No dynamics.** The entry writes the carrier, the closure and the two invariants, and it writes no field equation. The Proca equation, the Lorenz condition and the mass shell are cited as the objects that use the carrier, and the derivation is *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. Nothing here is derived from a Lagrangian and no solution is written.
 
-**The placement of the central imaginary is a convention.** The signature $(3,1)$ is a consequence of writing the time slot as $i\lambda$ and not a consequence of the algebra. The other half of the algebra gives $(1,3)$ with the same construction, and the entry states the choice rather than deriving it. A reader who wants a Euclidean four-space can have one by moving the $i$, and the carrier of the spin is unaffected.
+**The placement of the central imaginary is a convention.** The signs $(3,1)$ are a consequence of writing the time slot as $i\lambda$ and not a consequence of the algebra. The other half of the algebra gives $(1,3)$ with the same construction, and the entry states the choice rather than deriving it. A reader who wants a Euclidean four-space can have one by moving the $i$, and the carrier of the spin is unaffected.
 
 **The identification of the triple with the three spin states is an interpretation.** The algebra supplies a three-dimensional carrier with the weight string $(1,0,-1)$ and a group acting by the adjoint representation. That the three weights are the three polarizations of a vector particle is a physical reading, supported by the corpus's Proca and Maxwell articles, and it is not a theorem of the algebra.
 
@@ -471,7 +471,7 @@ of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instea
 
 **The closure.** $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension four, invariant under the whole group to $8.9\times10^{-16}$, a Lie algebra $\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, and $1\oplus0$ under the rotations. The added direction is the central generator $ie_t$ and not the identity.
 
-**The two invariants.** $N=\lvert\vec v\rvert^{2}-\lambda^{2}$, of signature $(3,1)$, positive definite on the triple and negative definite on the line, the two summands orthogonal; $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, with $\{B^{2}=0\}=\mathbb{R}(ie_t)$ on the sector.
+**The two invariants.** $N=\lvert\vec v\rvert^{2}-\lambda^{2}$, of the signs $(3,1)$, positive definite on the triple and negative definite on the line, the two summands orthogonal; $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, with $\{B^{2}=0\}=\mathbb{R}(ie_t)$ on the sector.
 
 **The spectrum.** $\{i(\lambda+\lvert\vec v\rvert),i(\lambda-\lvert\vec v\rvert)\}$ to $1.8\times10^{-15}$, purely imaginary, degenerate exactly on the added line. The cone is $\lvert\vec v\rvert=\lvert\lambda\rvert$ and meets the degenerate line only at the origin.
 
@@ -511,7 +511,7 @@ of signature $(1,3)$, with a real spectrum $\lambda\pm\lvert\vec v\rvert$ instea
 ## Further Reading
 
 - [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_maths/the-spin-one-anti-hermitian-subspace.html), for the subspace, the closure and the generator.
-- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the interval, the signature and the cone.
+- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the interval, the signs and the cone.
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the spectrum and the degenerate line.
 - [The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html), for the four regions inside the closure.
 - [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html), for the list of three and the closure rules.

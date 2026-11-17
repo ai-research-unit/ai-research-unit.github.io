@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion framework reads the Lorentzian signature of spacetime as a consequence of a complex structure rather than as an independent postulate. The minus sign in the Minkowski interval
+The biquaternion framework reads the Lorentzian sign pattern of spacetime as a consequence of a complex structure rather than as an independent postulate. The minus sign in the Minkowski interval
 $$
 ds^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2
 $$
@@ -29,7 +29,7 @@ This $J_{\mathbb{B}}$ is defined on all of $\mathbb{B}$ and is the same everywhe
 The question of this article is whether $J_{\mathbb{B}}$ — or any other complex structure — is a complex structure **on spacetime**. Three distinct levels must be kept apart, because a statement at one level is easily mistaken for a statement at another.
 
 1. **The algebra $\mathbb{B}$.** Here $J_{\mathbb{B}}$ is a complex structure, globally and exactly.
-2. **Spacetime, the material sector $\mathbb{B}_{\Phi}$.** This is a four-dimensional *real* vector space carrying the biquaternion norm of signature $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
+2. **Spacetime, the material sector $\mathbb{B}_{\Phi}$.** This is a four-dimensional *real* vector space carrying the biquaternion norm of inertia $(3,1)$. Here the question is whether a complex structure exists that is compatible with that form.
 3. **The complexified local tangent space.** Here multiplication by $i$ is again a complex structure, but on a larger space; it is not a structure *on* the real tangent space.
 
 A local statement can be true while the corresponding global statement is false, and the two are not interchangeable. The next two sections separate the levels.
@@ -62,13 +62,13 @@ so a vector and its image under $J$ are orthogonal. Taking $\tilde Q_3=\tilde{Q}
 $$
 \langle J\tilde{Q},J\tilde{Q}\rangle_{\natural}=\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
 $$
-Hence on the two-dimensional plane $\mathrm{span}\{\tilde{Q},J\tilde{Q}\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has signature $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
+Hence on the two-dimensional plane $\mathrm{span}\{\tilde{Q},J\tilde{Q}\}$, whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, the form is definite with the sign of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$: the plane has inertia $(2,0)$ or $(0,2)$, never $(1,1)$. The orthogonal complement of a $J$-invariant plane is itself $J$-invariant, because for $\tilde Q_3$ orthogonal to the plane and $Z$ in the plane,
 $$
 \langle J\tilde Q_3,Z\rangle_{\natural}=\langle J^2\tilde Q_3,JZ\rangle_{\natural}=-\langle\tilde Q_3,JZ\rangle_{\natural}=0,
 $$
-using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{B}_{\Phi}$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
+using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The biquaternion norm of $\mathbb{B}_{\Phi}$ has inertia $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
-The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.
+The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of inertia $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the inertia $(3,1)$ is exactly the excluded case.
 
 The way out is not to look for a better $J$ but to change the space: **complexify**. On the complexified tangent space the form is complex, and multiplication by $i$ is a complex structure there. This is what the $i r'_t$ notation does, and it is why the framework complexifies spacetime rather than placing a real $J$ on it. The distinction is not pedantic: a complex structure on the complexified tangent space is a different object from a complex structure on spacetime compatible with the Minkowski metric, and the second does not exist. Calling $i r'_t$ "a complex structure on spacetime" is the conflation this article is written to avoid.
 
@@ -172,9 +172,9 @@ The medium interpretation extends in three directions. First, $\log\lvert\langle
 
 ## Summary
 
-The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
+The Lorentzian sign pattern of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
 
-A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{B}_{\Phi}$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{B}_{\Phi}$ has signature $(3,1)$. The $i r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant conversion.
+A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{B}_{\Phi}$ compatible with its biquaternion norm — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the biquaternion norm of $\mathbb{B}_{\Phi}$ has inertia $(3,1)$. The $i r'_t$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant conversion.
 
 A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with no factor in the map, $r'_t\mapsto i r'_t e_t$, and the *unit* of the temporal coordinate is local, $r'_t=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\,t'$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the unit varies, and because $c$ is real and positive the variation is a rescaling of the time axis and not a rotation of it. At each point the induced quadratic form is the unit form $-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$; read in seconds it is $-c^2dt'^2+dr_x^2+dr_y^2+dr_z^2$, the local Minkowski metric with $c$ as its one varying entry.
 
@@ -208,7 +208,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local conversion of the temporal unit.
 - [Why Complexify Spacetime?](why-complexify-spacetime.html), for the $i r'_t$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the biquaternion norm of signature $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the biquaternion norm of inertia $(3,1)$, the basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, and the zero-divisor light cone.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the complementary sector and the exchange $i\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}$ by multiplication by $i$.
 - [A Brief History of Biquaternions in Physics](a-brief-history-of-biquaternions-in-physics.html), for the displacement of the $i r'_t$ convention and its relation to the abandonment of the complex formalism.
 - [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html), the parent article, for the medium conventions, the local and spectral conversion $c(\omega)$, and the boundaries of the structure near absorption.

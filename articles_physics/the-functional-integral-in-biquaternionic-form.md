@@ -160,7 +160,7 @@ $$
 S_E[\xi] = \int d^4r_E\;\tfrac12\Big(\partial/\partial R_\mu\xi\,\partial/\partial R_\mu\xi + m^2\xi^2\Big)
 = \tfrac12\int d^4r_E\;\xi\big(-\Delta_E + m^2\big)\xi ,
 $$
-with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box+k_m^{2}$ continued to Euclidean signature, with $\Box=\sum_\mu\partial^2/\partial R_\mu^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, which becomes $k_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
+with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_{\mathrm{eu}}^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box+k_m^{2}$ continued to the Euclidean case, with $\Box=\sum_\mu\partial^2/\partial R_\mu^2$; the wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ has biquaternion norm $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, which becomes $k_{\mathrm{eu}}^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$.
 
 **The Gaussian result.** The free generating functional is
 $$

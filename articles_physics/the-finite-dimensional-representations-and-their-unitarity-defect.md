@@ -123,7 +123,7 @@ such a form exists exactly when the representation is **self-conjugate**, that i
 | $(m,m)$ | yes | exists, indefinite for $m>0$ |
 | $(m,n)$, $m\neq n$ | no | does not exist |
 
-So $(1,1)$, the four-vector, carries the Minkowski form, of signature $(1,3)$ or $(3,1)$; $(1,0)$ carries none, and its invariant bilinear form is the antisymmetric $\epsilon$ on its two components.
+So $(1,1)$, the four-vector, carries the Minkowski form, of inertia $(1,3)$ or $(3,1)$; $(1,0)$ carries none, and its invariant bilinear form is the antisymmetric $\epsilon$ on its two components.
 
 ### Its Inertia
 

@@ -4,7 +4,7 @@
 
 **A product of two biquaternions returns a biquaternion, and its scalar part returns a complex number.** Each of the four general products of the previous entry therefore carries one function of two elements, and the four functions are the four forms. Read at their two equal arguments the four forms give four functions of one element, and those are the four algebraic norms. The two arities are the two bracket shapes, $\langle\tilde Q_1,\tilde Q_2\rangle$ for the form and $\langle\tilde Q\rangle$ for the norm.
 
-**Every proof here is written on the coordinates.** The four forms are evaluated on the coordinates, and their signatures are those of real quadratic forms in the eight real coordinates. The multiplicativity of the quaternionic norm comes from Lagrange's identity on the cross product, and the criterion of invertibility from an explicit inverse. Neither argument leaves the algebra.
+**Every proof here is written on the coordinates.** The four forms are evaluated on the coordinates, and their inertias are those of real quadratic forms in the eight real coordinates. The multiplicativity of the quaternionic norm comes from Lagrange's identity on the cross product, and the criterion of invertibility from an explicit inverse. Neither argument leaves the algebra.
 
 **The single idea is that two properties single out two of the four, and the two properties are different.** The quaternionic norm is the multiplicative one. The Hermitian norm is the definite one. No function is both, and the reason is the zero divisors that the complexification creates.
 
@@ -14,17 +14,17 @@
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| the four forms, their brackets, their values on a basis, their signatures, their null sets, the two slots, the four algebraic norms, multiplicativity and definiteness, the qualified regular and degenerate pairs | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| the four forms, their brackets, their values on a basis, their inertias, their null sets, the two slots, the four algebraic norms, multiplicativity and definiteness, the qualified regular and degenerate pairs | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the twelve operations and their scalar parts, the symmetrisation that keeps a form and the antisymmetrisation that kills it, the distinction over $\mathbb{C}$ and the coincidence over $\mathbb{R}$ | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) |
 | the four general products whose scalar parts the four forms are, the identities among the four scalar parts | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
-| the restriction of the four forms and the four norms to the six remarkable subspaces, the signatures, the definiteness on each | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
+| the restriction of the four forms and the four norms to the six remarkable subspaces, the inertias, the definiteness on each | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | the $\natural$-regular and $\natural$-degenerate partition, the group of invertibles, the null cone, the criterion of invertibility | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the Krein partition, the two sectors of the Krein norm, the indefinite geometry | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | the algebraic norm of a form and its distinction from the topological norm | [The Norm Defined by a Form](../articles_maths/the-norm-defined-by-a-form.html) |
 | the one topological norm of the space and its square root | [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html) |
 | the unqualified *regular* and *degenerate*, which are spectral and not norm-theoretic | [The Spectrum](../articles_maths/the-spectrum.html) |
 
-**The rows are the order of the entry.** The four forms first, because they are the objects. Then the count of the four, which is one lemma. Then the signatures, which are what a restriction can change. Then the groups, which are what a form preserves. Then the four cuts, which are what a norm separates. The readings come last, and each names the section of mathematics it rests on.
+**The rows are the order of the entry.** The four forms first, because they are the objects. Then the count of the four, which is one lemma. Then the inertias, which are what a restriction can change. Then the groups, which are what a form preserves. Then the four cuts, which are what a norm separates. The readings come last, and each names the section of mathematics it rests on.
 
 ## Notational Conventions
 
@@ -54,7 +54,7 @@ The bracket is not the modulus and it is not Hermitian: $(\vec Q,\vec Q)$ is a c
 
 ## The Four Forms
 
-The four forms are the scalar parts of the four general products, one to each reading of the two slots. Each is written on the coordinates of a pair, with its values on the basis and the signature of its realification.
+The four forms are the scalar parts of the four general products, one to each reading of the two slots. Each is written on the coordinates of a pair, with its values on the basis and the inertia of its realification.
 
 ### The Plain Form
 
@@ -64,7 +64,7 @@ $$
 P(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2),
 $$
 
-the scalar part of the general plain bilinear product. It is symmetric, $\mathbb{C}$-bilinear and complex-valued. Its values on the basis are the signs $\langle\vec e_\mu,\vec e_\nu\rangle=\varepsilon_\mu\delta_{\mu\nu}$, written $\mathrm E$, and its realification is of signature $(4,4)$. It is non-degenerate.
+the scalar part of the general plain bilinear product. It is symmetric, $\mathbb{C}$-bilinear and complex-valued. Its values on the basis are the signs $\langle\vec e_\mu,\vec e_\nu\rangle=\varepsilon_\mu\delta_{\mu\nu}$, written $\mathrm E$, and its realification is of inertia $(4,4)$. It is non-degenerate.
 
 Its null set is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, of real dimension six. That cone is neither the zero-divisor cone nor the null cone of the algebra, and it cuts across the invertibles and the non-invertibles alike. On the anti-Hermitian subspace its algebraic norm is negative definite, and on the Hermitian subspace positive definite.
 
@@ -76,7 +76,7 @@ $$
 N(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
-the scalar part of the general quaternionic bilinear product. It is the plain form read through the quaternion conjugation of the first slot, and it differs from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its values on the basis are all $+1$, written $\mathrm I_4$, and its realification is of signature $(4,4)$. It is non-degenerate.
+the scalar part of the general quaternionic bilinear product. It is the plain form read through the quaternion conjugation of the first slot, and it differs from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its values on the basis are all $+1$, written $\mathrm I_4$, and its realification is of inertia $(4,4)$. It is non-degenerate.
 
 Its null set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q\rangle_{\natural}=0\}$, of real dimension six, which is the null cone of the algebra. The conjugation of the first slot is what gives the square the positive sign on the vector part, and that sign is the whole difference between the two bilinear forms.
 
@@ -88,7 +88,7 @@ $$
 H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2}),
 $$
 
-the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$, and sesquilinear in the second slot. Its values on the basis are all $+1$, and its realification is of signature $(8,0)$.
+the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$, and sesquilinear in the second slot. Its values on the basis are all $+1$, and its realification is of inertia $(8,0)$.
 
 Its algebraic norm is real and positive definite, $\langle\tilde Q,\tilde Q\rangle_{*}>0$ for $\tilde Q\neq0$, and it is the square of the Euclidean norm, $\langle\tilde Q\rangle_{*}=\lVert\tilde Q\rVert^{2}$. It is non-degenerate, and its null set is the origin alone, so it has no cone. It is the only one of the four that is definite at the two equal arguments.
 
@@ -100,7 +100,7 @@ $$
 \mathrm{Kr}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})=Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2}),
 $$
 
-the scalar part of the general quaternionic sesquilinear product. It is the Hermitian form read through the quaternion conjugation of the first slot, and it differs from it by the sign of the vector part alone. It is conjugate-symmetric and sesquilinear, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(2,6)$.
+the scalar part of the general quaternionic sesquilinear product. It is the Hermitian form read through the quaternion conjugation of the first slot, and it differs from it by the sign of the vector part alone. It is conjugate-symmetric and sesquilinear, its values on the basis are the signs $\mathrm E$, and its realification is of inertia $(2,6)$.
 
 Its algebraic norm is real and indefinite, and it is the difference of the two contents of the centre–vector split,
 
@@ -112,14 +112,14 @@ It is non-degenerate, and its null set is the real cone $\mathcal K=\{\lvert Q_t
 
 ## The Table of the Four Forms
 
-| Full form name | Reduced name | Letter | Bracket | Expression with $\mathrm{Sc}$ | Coordinates | On the basis | Signature over $\mathbb{R}$ | Null set | Values land in |
+| Full form name | Reduced name | Letter | Bracket | Expression with $\mathrm{Sc}$ | Coordinates | On the basis | Inertia over $\mathbb{R}$ | Null set | Values land in |
 |---|---|---|---|---|---|---|---|---|---|
 | The general plain bilinear form | **Plain Form** | $P$ | $\langle\cdot,\cdot\rangle$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | $Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$ | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
 | The general quaternionic bilinear form | **Quaternionic Form** | $N$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | $Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero-divisor cone | $\mathbb{C}$ |
 | The general plain sesquilinear form | **Hermitian Form** | $H$ | $\langle\cdot,\cdot\rangle_{*}$ | $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $Q_{1t}\overline{Q_{2t}}+(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
 | The general quaternionic sesquilinear form | **Krein Form** | $\mathrm{Kr}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$, the Krein cone | $\mathbb{R}$ |
 
-**The table separates the four by their letter, their bracket, the product under $\mathrm{Sc}$, their values on the basis, the signature of the realification and the null set.** The last column divides them into two and two: the two bilinear forms land in $\mathbb{C}$, and the two sesquilinear forms land in $\mathbb{R}$. The star in the second slot is what makes an algebraic norm real.
+**The table separates the four by their letter, their bracket, the product under $\mathrm{Sc}$, their values on the basis, the inertia of the realification and the null set.** The last column divides them into two and two: the two bilinear forms land in $\mathbb{C}$, and the two sesquilinear forms land in $\mathbb{R}$. The star in the second slot is what makes an algebraic norm real.
 
 ## Why the Other Eight Operations Add No Form
 
@@ -163,7 +163,7 @@ of real dimensions $12$, $12$, $16$ and $16$.
 **What each slot decides.**
 
 - The **second slot** decides whether the form is a **composition** or a **pairing**. Read without the star the form is bilinear and symmetric and can be iterated; read with the star it is sesquilinear and conjugate-symmetric and can only be evaluated. This is the slot that separates the two bilinear forms from the two sesquilinear ones, and it is what makes the algebraic norm of a sesquilinear form real.
-- The **first slot** decides the **signs on the basis** and the **signature**, and through them the **definiteness on each subspace**. Read as it stands the form is $P$ or $H$; read through the quaternion conjugation it is $N$ or $\mathrm{Kr}$. Since the quaternion conjugation multiplies the vector part by $-1$, the first slot flips the coefficients of the vector part and so turns the signs $\mathrm E$ into the plus signs $\mathrm I_4$.
+- The **first slot** decides the **signs on the basis** and the **inertia**, and through them the **definiteness on each subspace**. Read as it stands the form is $P$ or $H$; read through the quaternion conjugation it is $N$ or $\mathrm{Kr}$. Since the quaternion conjugation multiplies the vector part by $-1$, the first slot flips the coefficients of the vector part and so turns the signs $\mathrm E$ into the plus signs $\mathrm I_4$.
 
 ## What the Four Forms Separate
 
@@ -171,7 +171,7 @@ of real dimensions $12$, $12$, $16$ and $16$.
 
 *Proof.* At $\tilde Q_1=\vec e_x$ and $\tilde Q_2=\vec e_x+i\vec e_x$ the four values are $-(1+i)$, $1+i$, $1-i$ and $-(1-i)$, four different complex numbers.
 
-**The second slot gives the symmetry, and the first slot gives the signature.** The four fall into two pairs by symmetry, $\{P,N\}$ bilinear and $\{H,\mathrm{Kr}\}$ sesquilinear, and into two other pairs by their signs on the basis, $\{P,\mathrm{Kr}\}$ of signs $\mathrm E$ and $\{N,H\}$ of signs $\mathrm I_4$. The two divisions are independent, and their product is the four: each form is the intersection of one symmetry with one set of signs, which is the two-by-two grid of the two slots.
+**The second slot gives the symmetry, and the first slot gives the inertia.** The four fall into two pairs by symmetry, $\{P,N\}$ bilinear and $\{H,\mathrm{Kr}\}$ sesquilinear, and into two other pairs by their signs on the basis, $\{P,\mathrm{Kr}\}$ of signs $\mathrm E$ and $\{N,H\}$ of signs $\mathrm I_4$. The two divisions are independent, and their product is the four: each form is the intersection of one symmetry with one set of signs, which is the two-by-two grid of the two slots.
 
 **The four collapse to two on real elements.** For real $\tilde Q_1,\tilde Q_2$ the coefficientwise conjugation is the identity, so $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\langle\tilde Q_1,\tilde Q_2\rangle$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$. On the real part of the space the four forms are the two, and only the complex structure separates them.
 
@@ -187,7 +187,7 @@ of real dimensions $12$, $12$, $16$ and $16$.
 
 ## The Four Norms
 
-The four norms are the four forms read at their two equal arguments. Each is written on the coordinates of one element, with its values on the basis and the signature of its realification.
+The four norms are the four forms read at their two equal arguments. Each is written on the coordinates of one element, with its values on the basis and the inertia of its realification.
 
 ### The Plain Norm
 
@@ -197,7 +197,7 @@ $$
 P(\tilde Q)=\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
 $$
 
-the plain form read at two equal arguments. It is complex-valued and $\mathbb{C}$-quadratic, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(4,4)$.
+the plain form read at two equal arguments. It is complex-valued and $\mathbb{C}$-quadratic, its values on the basis are the signs $\mathrm E$, and its realification is of inertia $(4,4)$.
 
 Its null set is the complex cone, of real dimension six. It is not multiplicative, and it decides no invertibility: the unit $e_t+\vec e_x$ has norm zero and the zero divisor $e_t+i\vec e_x$ has norm $2$. The square, its idempotents, its Peirce decomposition, its roots and its cone are properties of the product, which comes before the form.
 
@@ -209,7 +209,7 @@ $$
 N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
-the quaternionic form read at two equal arguments. It is complex-valued, its values on the basis are all $+1$, and its realification is of signature $(4,4)$.
+the quaternionic form read at two equal arguments. It is complex-valued, its values on the basis are all $+1$, and its realification is of inertia $(4,4)$.
 
 Its null set is the zero-divisor cone $\mathcal N$, of real dimension six, and the norm is the reason the algebra has zero divisors at all.
 
@@ -263,7 +263,7 @@ $$
 H(\tilde Q)=\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2},
 $$
 
-the Hermitian form read at two equal arguments. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of signature $(8,0)$.
+the Hermitian form read at two equal arguments. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of inertia $(8,0)$.
 
 Its null set is the origin alone, so it has no cone. It is the one norm of the four whose square root is the topological norm, and that root gives the distance, the balls, the convergence, the bounded operators and the completion of the space. It is not multiplicative, and the section after next proves that no definite function on this algebra is.
 
@@ -275,20 +275,20 @@ $$
 \mathrm{Kr}(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-the Krein form read at two equal arguments. It is real-valued and indefinite, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(2,6)$.
+the Krein form read at two equal arguments. It is real-valued and indefinite, its values on the basis are the signs $\mathrm E$, and its realification is of inertia $(2,6)$.
 
 It is the difference of the two contents of the centre–vector split, so its null set is the real cone $\mathcal K$, of real dimension seven. It is not multiplicative. Its two value-one sets have different topologies: on $\{\mathrm{Kr}=1\}$ the vector part is free and the set is $S^{1}\times\mathbb{R}^{6}$, while on $\{\mathrm{Kr}=-1\}$ the scalar part is free and the set is $\mathbb{R}^{2}\times S^{5}$, so no level set of the norm is a sphere.
 
 ## The Table of the Four Norms
 
-| Full norm name | Reduced name | Letter | Norm | Expression with $\mathrm{Sc}$ | Coordinates | On the basis | Signature over $\mathbb{R}$ | Null set | Values land in |
+| Full norm name | Reduced name | Letter | Norm | Expression with $\mathrm{Sc}$ | Coordinates | On the basis | Inertia over $\mathbb{R}$ | Null set | Values land in |
 |---|---|---|---|---|---|---|---|---|---|
 | The general plain bilinear algebraic norm | **Plain Norm** | $P$ | $\langle\cdot\rangle$ | $\mathrm{Sc}(\tilde Q^{2})$ | $\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
 | The general quaternionic bilinear algebraic norm | **Quaternionic Norm** | $N$ | $\langle\cdot\rangle_{\natural}$ | $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)$ | $\sum_\mu Q_\mu^{2}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero-divisor cone | $\mathbb{C}$ |
 | The general plain sesquilinear algebraic norm | **Hermitian Norm** | $H$ | $\langle\cdot\rangle_{*}$ | $\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | $\sum_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
 | The general quaternionic sesquilinear algebraic norm | **Krein Norm** | $\mathrm{Kr}$ | $\langle\cdot\rangle_{\natural*}$ | $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})$ | $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$, the Krein cone | $\mathbb{R}$ |
 
-**The table separates the four by their letter, the product under $\mathrm{Sc}$, their coordinates, their values on the basis, the signature of the realification and the null set.** Multiplicativity singles out the quaternionic norm and definiteness singles out the Hermitian one, so the quaternionic norm answers *when is the element invertible* and the Hermitian one answers *what is the distance*. The plain and the Krein norms are the two indefinite remainders, one complex and one real, and each is the sign-flipped twin of a working norm: the plain is the quaternionic with the sign of the vector part reversed, the Krein is the Hermitian with the same reversal. The four words of the category attach to the letters: the plain norm is the *pairing* read on the diagonal, the quaternionic the *interval*, the Hermitian the *weight* and the Krein the *volume*.
+**The table separates the four by their letter, the product under $\mathrm{Sc}$, their coordinates, their values on the basis, the inertia of the realification and the null set.** Multiplicativity singles out the quaternionic norm and definiteness singles out the Hermitian one, so the quaternionic norm answers *when is the element invertible* and the Hermitian one answers *what is the distance*. The plain and the Krein norms are the two indefinite remainders, one complex and one real, and each is the sign-flipped twin of a working norm: the plain is the quaternionic with the sign of the vector part reversed, the Krein is the Hermitian with the same reversal. The four words of the category attach to the letters: the plain norm is the *pairing* read on the diagonal, the quaternionic the *interval*, the Hermitian the *weight* and the Krein the *volume*.
 
 ## What the Four Norms Separate
 
@@ -395,7 +395,7 @@ $$
 
 **The identities are statements about forms.** They do not say that the four products agree on a sector; the products are the subject of the previous entry, and they do not.
 
-**The signature of each restriction follows at once.**
+**The inertia of each restriction follows at once.**
 
 | sector | $P$ | $N$ | $H$ | $\mathrm{Kr}$ |
 |---|---|---|---|---|
@@ -404,7 +404,7 @@ $$
 
 *Proof.* On $\mathbb{B}_\Phi$ the quaternionic norm is $N=-{q'_t}^{2}+q_x^{2}+q_y^{2}+q_z^{2}$, one negative direction and three positive ones; the plain norm is its negative, the Hermitian norm is the sum of the four squares, and the Krein norm is ${q'_t}^{2}-q_x^{2}-q_y^{2}-q_z^{2}$. On $\mathbb{B}_\Psi$ the quaternionic norm is $N={q_t}^{2}-{q'_x}^{2}-{q'_y}^{2}-{q'_z}^{2}$, and the other three follow by the identities above.
 
-**On the six remarkable subspaces the division is sharper.** The Krein form is positive definite of signature $(2,0)$ on the centre and negative definite of signature $(0,6)$ on the vector subspace. The two bilinear forms are of signature $(1,1)$ on the centre and $(3,3)$ on the vector subspace. The Hermitian form is definite on all six. The restriction table of *Remarkable Subspaces and the Four General Products, Forms and Norms* carries the whole list.
+**On the six remarkable subspaces the division is sharper.** The Krein form is positive definite, $(2,0)$, on the centre and negative definite, $(0,6)$, on the vector subspace. The two bilinear forms are $(1,1)$ on the centre and $(3,3)$ on the vector subspace. The Hermitian form is definite on all six. The restriction table of *Remarkable Subspaces and the Four General Products, Forms and Norms* carries the whole list.
 
 ## The Alternating Companion of the Two Sesquilinear Forms
 
@@ -472,7 +472,7 @@ the Minkowski pairing of the two four-vectors multiplied by $i$, with $\vec q$ a
 
 ### I.7.c — The Weight Is the Only Measure That Can Be Normalised
 
-**Read:** the Hermitian norm is positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$, of signature $(8,0)$ on the real algebra, and its square root is the Euclidean norm.
+**Read:** the Hermitian norm is positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$, of inertia $(8,0)$ on the real algebra, and its square root is the Euclidean norm.
 
 **A probability needs a positive number that can be divided by its total.** A state needs a sphere to live on. A limit needs a topology. The three requirements are one requirement, and the Hermitian norm is the only one of the four that meets it: a norm of the coefficient space gives distance, balls, convergence, bounded operators and a completion.
 
@@ -498,17 +498,17 @@ $$
 N(\tilde R_\Phi)=-{q'_t}^{2}+q_x^{2}+q_y^{2}+q_z^{2},
 $$
 
-of signature $(3,1)$, with the null cone as its zero set and the hyperboloids $N=-m^{2}c^{2}$ as its level sets. One function, two readings: a scale on the algebra, an interval on the sector.
+of inertia $(3,1)$, with the null cone as its zero set and the hyperboloids $N=-m^{2}c^{2}$ as its level sets. One function, two readings: a scale on the algebra, an interval on the sector.
 
 **The boundary.** The interval is real on the four-dimensional real-type subspaces and complex on the centre and the vector subspace. The mass shell is a level set on a sector, and it is not a value of the form on the algebra.
 
-### I.7.e — The Interval Is a Signature, Not a Letter
+### I.7.e — The Interval Is a Pair of Counts, Not a Letter
 
 **Read:** the letter that carries the interval is decided by the imaginary unit, and the arithmetic is one line.
 
 **A norm written $\sum_\mu Q_\mu^{2}$ gives a plus for a real coordinate and a minus for an imaginary one.** In $\mathbb{B}_\Phi$ the scalar coordinate is imaginary and the three vector coordinates are real, so $N=-{q'_t}^{2}+q_x^{2}+q_y^{2}+q_z^{2}$: one time direction and three space directions. In $\mathbb{B}_\Psi$ the three vector coordinates are imaginary and the scalar one is real, so $N={q_t}^{2}-{q'_x}^{2}-{q'_y}^{2}-{q'_z}^{2}$: the same split with the other sign. On the real quaternions no coordinate is imaginary, $\sum_\mu Q_\mu^{2}$ is a sum of four squares, and the minus must come from the sign data of the plain form, $P=t^{2}-q_x^{2}-q_y^{2}-q_z^{2}$.
 
-**The metric is a signature and the alphabet is a convention.** A theory that puts its spacetime in the material sector reads the interval off the quaternionic norm. A theory that works on the real grade reads the same interval off the plain norm. The two are not two metrics: one is $\sum_\mu Q_\mu^{2}$ on a slice with an imaginary time coordinate, and the other is the sign data of the plain form on a slice with none.
+**The interval is a pair of counts and the alphabet is a convention.** A theory that puts its spacetime in the material sector reads the interval off the quaternionic norm. A theory that works on the real grade reads the same interval off the plain norm. The two are not two metrics: one is $\sum_\mu Q_\mu^{2}$ on a slice with an imaginary time coordinate, and the other is the sign data of the plain form on a slice with none.
 
 **Multiplication by the central $i$ exchanges the sectors and reverses the two bilinear norms.**
 
@@ -524,7 +524,7 @@ $$
 
 **The double bookkeeping is where a sign is lost in print.** On the material sector $P=-H$ and $\mathrm{Kr}=-N$, so each measure is minus its partner there; a sign dropped in that bookkeeping turns a metric into a weight without changing a symbol.
 
-**The boundary.** The observation is about signatures on real subspaces. On the whole algebra over $\mathbb{C}$ both bilinear forms are neutral, of signature $(4,4)$, and the interval of a sector is a restriction and not a global object.
+**The boundary.** The observation is about inertias on real subspaces. On the whole algebra over $\mathbb{C}$ both bilinear forms are neutral, of inertia $(4,4)$, and the interval of a sector is a restriction and not a global object.
 
 ### I.7.f — The Mass Shell Is a Level Set
 
@@ -546,7 +546,7 @@ So the mass shell is a level set of a symmetric function of the two spectral val
 
 ### I.7.g — The Volume Is a Signed Content
 
-**Read:** the Krein norm is real and indefinite, of signature $(2,6)$ on the algebra, and it is the difference of the two contents of the centre–vector split.
+**Read:** the Krein norm is real and indefinite, of inertia $(2,6)$ on the algebra, and it is the difference of the two contents of the centre–vector split.
 
 **The reading is a signed content.** The Hermitian norm adds the squared moduli of the coordinates; the Krein norm adds them with a minus on the three vector coordinates. The first counts the content of the element, the second counts the difference between its temporal content and its spatial content, and the surface where the two balance is the cone $\mathcal K=\{\lvert Q_t\rvert=\lvert\vec Q\rvert\}$, of real dimension seven.
 
@@ -584,7 +584,7 @@ and the signed measure is the weight with the quaternion conjugate inserted in t
 
 **Read:** the four isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $\mathrm{U}(4)$ and $\mathrm{U}(1,3)$, of real dimensions $12$, $12$, $16$ and $16$.
 
-**A measure is known by what preserves it, and the two properties that matter physically are compactness and signature.** The unitary group $\mathrm{U}(4)$ is compact; the indefinite unitary group $\mathrm{U}(1,3)$ is not; the complex orthogonal group is complex and imposes no reality condition.
+**A measure is known by what preserves it, and the two properties that matter physically are compactness and inertia.** The unitary group $\mathrm{U}(4)$ is compact; the indefinite unitary group $\mathrm{U}(1,3)$ is not; the complex orthogonal group is complex and imposes no reality condition.
 
 **Compactness is the difference between a probability theory and an indefinite one.** A compact group has a finite invariant volume and a discrete set of representations. A non-compact one has neither, and it keeps a distinguished time direction instead. The passage from $\mathrm{U}(4)$ to $\mathrm{U}(1,3)$ is the passage from a state space to a constrained one, and it is decided by the sign data and by nothing else.
 
@@ -623,7 +623,7 @@ $$
 
 **The two cones that are easy to confuse are the zero-divisor cone and the Krein cone.** They have dimensions six and seven, they are both real and both invariant, but the Krein cone contains invertible elements and the zero-divisor cone does not, so a statement about one is not a statement about the other.
 
-**The boundary.** A zero set is a set. The entry does not claim that every element of the wall is a physical light ray, and it does not derive the signature from the cone; the direction is the other way.
+**The boundary.** A zero set is a set. The entry does not claim that every element of the wall is a physical light ray, and it does not derive the signs from the cone; the direction is the other way.
 
 ### I.7.l — The Area Belongs to the Complex Subspaces
 
@@ -637,9 +637,9 @@ $$
 
 ## The Limits
 
-**The four words are a naming and not a theorem.** The algebra proves that four forms exist, that they are distinct, that their signatures are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$, that one of them is multiplicative and another definite, and that no function is both. It does not prove that these are the four quantities a physical theory evaluates.
+**The four words are a naming and not a theorem.** The algebra proves that four forms exist, that they are distinct, that their inertias are $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$, that one of them is multiplicative and another definite, and that no function is both. It does not prove that these are the four quantities a physical theory evaluates.
 
-**Three levels of signature are kept apart throughout.** The values on a basis, a realified signature and a restricted signature are three statements about the same form, and the entry names the level whenever a signature is quoted. The interval of a physical sector is a restriction.
+**Three levels of inertia are kept apart throughout.** The values on a basis, a realified inertia and a restricted inertia are three statements about the same form, and the entry names the level whenever an inertia is quoted. The interval of a physical sector is a restriction.
 
 **Two senses of norm are kept apart.** The algebraic norm is a map into the ring, complex for the two bilinear forms and real for the two sesquilinear ones; the topological norm is the one positive square root, $\lVert\tilde Q\rVert^{2}=H(\tilde Q)$. A norm is not a distance until a positivity is declared.
 
@@ -653,8 +653,8 @@ $$
 
 - A form is the scalar part of a product, and an algebraic norm is that form at two equal arguments; one letter serves the two arities, and the two arities obey different laws.
 - The twelve operations carry four forms and no more: the symmetrisation keeps the scalar part of its family and the antisymmetrisation kills it, so the four general products and their symmetric parts carry the four forms two by two and the four antisymmetric parts carry the zero form.
-- The four forms are $P=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $N=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $H=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\mathrm{Kr}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with the values on a basis $\mathrm E$, $\mathrm I_4$, $\mathrm I_4$ and $\mathrm E$ and the realified signatures $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$.
-- The second slot decides whether the value is complex or real, and with it whether the form can supply a measure. The first slot decides the signs on the basis, the signature and the definiteness on each subspace. The two divisions are independent, and their product is the four.
+- The four forms are $P=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $N=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $H=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ and $\mathrm{Kr}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, with the values on a basis $\mathrm E$, $\mathrm I_4$, $\mathrm I_4$ and $\mathrm E$ and the realified inertias $(4,4)$, $(4,4)$, $(8,0)$ and $(2,6)$.
+- The second slot decides whether the value is complex or real, and with it whether the form can supply a measure. The first slot decides the signs on the basis, the inertia and the definiteness on each subspace. The two divisions are independent, and their product is the four.
 - Every one of the four is the plain form with a conjugation inserted in one slot or in both; the two real forms are those whose second slot is an adjoint.
 - Read on the diagonal, the four forms give the four norms $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, each attained by two operations, the general product and the symmetrisation of its family.
 - The quaternionic norm is the multiplicative one. Multiplicativity is proved from Lagrange's identity on the cross product, with the inverse $\tilde Q^{\natural}/N(\tilde Q)$ and the criterion of invertibility.
@@ -663,7 +663,7 @@ $$
 - Each letter gives a qualified pair: a biquaternion is regular for $P$, $\natural$, $H$ or $\mathrm{Kr}$ when the value is non-zero, and degenerate when it is zero. Only the quaternionic pair is the partition into invertibles and non-invertibles; the plain and the Krein cuts vanish on invertible elements, and the Hermitian cut is the origin alone.
 - On the material sector the four restrictions are $(0,4)$, $(3,1)$, $(4,0)$ and $(1,3)$, and on the informational sector they are $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$, with $P=-H$ and $\mathrm{Kr}=-N$ on the first and $P=H$ and $\mathrm{Kr}=N$ on the second.
 - The four isometry groups are $O_4(\mathbb{C})$, $O_4(\mathbb{C})$, $\mathrm{U}(4)$ and $\mathrm{U}(1,3)$, of real dimensions $12$, $12$, $16$ and $16$, and the quaternion conjugation lies in all four.
-- The interval is a signature and not a letter: it is the plain norm, of signature $(1,3)$, on the real quaternions and the quaternionic norm, of signature $(3,1)$, on the material sector, because $\sum_\mu Q_\mu^{2}$ takes a minus from an imaginary coordinate while the plain norm takes it from the sign data.
+- The interval is a pair of counts and not a letter: it is the plain norm, of inertia $(1,3)$, on the real quaternions and the quaternionic norm, of inertia $(3,1)$, on the material sector, because $\sum_\mu Q_\mu^{2}$ takes a minus from an imaginary coordinate while the plain norm takes it from the sign data.
 - Multiplication by the central $i$ exchanges the two sectors and reverses both bilinear norms while leaving both real measures unchanged.
 - On real coefficients the four collapse to two, $P=\mathrm{Kr}$ and $N=H$, so a real computation cannot tell the plain pairing from the signed content, nor the quaternionic norm from the Hermitian one.
 - The imaginary part of a sesquilinear form is an alternating form: it is non-degenerate on the two complex subspaces, of ranks $2$ and $6$, and it vanishes on the four real-type ones.
@@ -672,15 +672,15 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\langle\tilde Q_1,\tilde Q_2\rangle$, $P$ | the plain form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, symmetric, values on a basis $\mathrm E$, signature $(4,4)$ |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $N$ | the quaternionic form, the interval, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, signature $(4,4)$ |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $H$ | the Hermitian form, the weight, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, signature $(8,0)$ |
-| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, $\mathrm{Kr}$ | the Krein form, the volume, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, signature $(2,6)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle$, $P$ | the plain form, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, symmetric, values on a basis $\mathrm E$, inertia $(4,4)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $N$ | the quaternionic form, the interval, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, inertia $(4,4)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $H$ | the Hermitian form, the weight, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, inertia $(8,0)$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, $\mathrm{Kr}$ | the Krein form, the volume, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, inertia $(2,6)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | one expression, two arities: two arguments give the form, one gives the algebraic norm; $K_1$ is the identity or ${}^{\natural}$, $K_2$ the identity or ${}^{*}$ |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the quaternion conjugation, which the first slot applies |
 | $\mathrm E$, $\mathrm I_4$ | the two sets of values on a basis; $\mathrm E$ carries the signs, $\mathrm I_4$ the plus signs |
 | $P(\tilde Q)$, $N(\tilde Q)$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | the four norms, with values in $\mathbb{C}$, $\mathbb{C}$, $\mathbb{R}$, $\mathbb{R}$ |
-| $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the realified signatures of the four norms |
+| $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the realified inertias of the four norms |
 | $\mathcal N$, $\mathcal K$, the complex cone | the null sets of $N$, of $\mathrm{Kr}$ and of $P$; that of $H$ is $\{0\}$ |
 | regular for a letter, degenerate for a letter | the value under $P$, $N$, $H$ or $\mathrm{Kr}$ is non-zero, respectively zero; only the $N$ pair is the partition into invertibles and non-invertibles |
 | $O_4(\mathbb{C})$, $\mathrm{U}(4)$, $\mathrm{U}(1,3)$ | the isometry groups, of real dimensions $12$, $16$ and $16$ |

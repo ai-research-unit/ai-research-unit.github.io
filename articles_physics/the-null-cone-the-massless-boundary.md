@@ -36,7 +36,7 @@ $$
 N=\det\mathsf{M}_2(\tilde Q)=q_t^{2}-(q_x^{2}+q_y^{2}+q_z^{2}),
 $$
 
-the interval of signature $(1,3)$. This is the **informational** representative of a four-vector. The **material** representative is $\tilde P_\Phi=i\tilde P_\Psi$, and the multiplication by $i$ flips the sign of the norm:
+the interval of inertia $(1,3)$. This is the **informational** representative of a four-vector. The **material** representative is $\tilde P_\Phi=i\tilde P_\Psi$, and the multiplication by $i$ flips the sign of the norm:
 
 $$
 N(\tilde P_\Phi)=-N(\tilde P_\Psi)=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},

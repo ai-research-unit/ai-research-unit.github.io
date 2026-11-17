@@ -237,7 +237,7 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State, $\lvert\vec r\rvert\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure state (Hermitian idempotent, rank one, zero divisor) |
 | $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Observable (general Hermitian element) |
-| $\langle\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
+| $\langle\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural}$ | Biquaternion norm, inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$ |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
 | $2\,\mathrm{Sc}(\tilde Q)$ | Doubled scalar part |

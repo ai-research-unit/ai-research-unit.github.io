@@ -206,7 +206,7 @@ $$
 [K_i,K_j]=-J_k
 $$
 
-is $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ read as a real algebra. Its Killing form has signature $(3,3)$, its Cartan has one compact and one non-compact direction, and *as a real algebra it is simple*: it is not a direct sum of two real three-dimensional algebras. This is the form of this block.
+is $\mathfrak{so}(1,3)\cong\mathfrak{sl}(2,\mathbb{C})$ read as a real algebra. Its Killing form has inertia $(3,3)$, its Cartan has one compact and one non-compact direction, and *as a real algebra it is simple*: it is not a direct sum of two real three-dimensional algebras. This is the form of this block.
 
 ### The Split Form: $\mathfrak{so}(2,2)$
 
@@ -214,11 +214,11 @@ $$
 \mathfrak{so}(2,2)\cong\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R}),
 $$
 
-the real form in which both summands are split. Its Cartan is entirely non-compact, its roots are real, its Killing form has signature $(4,2)$ — computed in the defining four-vector representation, where the six generators give eigenvalues $-2,-2,+2,+2,+2,+2$ and the two negatives are the two compact rotations — and it is the isometry algebra of a metric with two time and two space directions.
+the real form in which both summands are split. Its Cartan is entirely non-compact, its roots are real, its Killing form has inertia $(4,2)$ — computed in the defining four-vector representation, where the six generators give eigenvalues $-2,-2,+2,+2,+2,+2$ and the two negatives are the two compact rotations — and it is the isometry algebra of a metric with two time and two space directions.
 
 ### The Table
 
-| form | real algebra | compact part | Killing signature $(p,q)$ | Cartan | finite reps unitary? |
+| form | real algebra | compact part | Killing inertia $(p,q)$ | Cartan | finite reps unitary? |
 |---|---|---|---|---|---|
 | $\mathfrak{so}(4)$ | $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$ | all six | $(0,6)$ | compact | yes |
 | $\mathfrak{so}(1,3)$ | $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ | three, the $J$ | $(3,3)$ | one compact, one not | no |
@@ -258,7 +258,7 @@ A real form *is* a conjugation, so the star is not an extra structure on top of 
 - On $\mathfrak{so}(4)$ the form is the fixed set of its own conjugation and $\dim\mathfrak{k}=6$: the span of the $K$ is not a non-compact piece but three more rotation planes, conjugate to the span of the $J$.
 - On $\mathfrak{so}(2,2)$ the conjugation is a third involution and $\dim\mathfrak{k}=2$: two compact directions and four non-compact ones, matching the two time-like directions of the (2,2) metric.
 
-The reader who wants the rule in one line: the star's fixed part in the algebra is the non-compact part, and the compact part is the anti-fixed part. That sentence is true for $\mathfrak{so}(1,3)$ and it is the sense in which this block's star encodes the Lorentzian signature.
+The reader who wants the rule in one line: the star's fixed part in the algebra is the non-compact part, and the compact part is the anti-fixed part. That sentence is true for $\mathfrak{so}(1,3)$ and it is the sense in which this block's star encodes the Lorentzian sign pattern.
 
 ## Which Form This Block Uses
 

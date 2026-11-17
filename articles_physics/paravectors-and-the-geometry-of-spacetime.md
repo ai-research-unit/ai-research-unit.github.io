@@ -53,7 +53,7 @@ $$
 \langle p\rangle_{\natural}=p_t^2-\vec p\cdot\vec p .
 $$
 
-The norm is a number and the product is the number times $e_t$; the article keeps that distinction throughout. On a paravector the norm is real, and it is the Minkowski form of signature $(+,-,-,-)$ of the informational sector $\mathbb{B}_{\Psi}$. The material sector carries the same form with the opposite overall sign: for $\tilde Q=ip\in\mathbb{B}_{\Phi}$,
+The norm is a number and the product is the number times $e_t$; the article keeps that distinction throughout. On a paravector the norm is real, and it is the Minkowski form of inertia $(+,-,-,-)$ of the informational sector $\mathbb{B}_{\Psi}$. The material sector carries the same form with the opposite overall sign: for $\tilde Q=ip\in\mathbb{B}_{\Phi}$,
 
 $$
 \langle\tilde Q\rangle_{\natural}=\langle i\,p\rangle_{\natural}=i^2\langle p\rangle_{\natural}=-\left(p_t^2-\vec p\cdot\vec p\right),

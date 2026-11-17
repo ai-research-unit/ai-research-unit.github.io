@@ -131,7 +131,7 @@ Two independent warrants.
 
 **The dimension and the bracket.** Six generators with the bracket above are $\mathfrak{so}(1,3)$: the three $J$ close as a rotation algebra, and the three $K$ transform as a vector under it, which is exactly the action of rotations on the boost generators of the Lorentz group.
 
-**The invariant form.** The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with signature $(3,3)$, which is the signature of $\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has signature $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.
+**The invariant form.** The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with inertia $(3,3)$, which is the signature of $\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has inertia $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.
 
 **The misreading to avoid.** The table has $[K_i,K_j]=-\epsilon_{ijk}J_k$ and not $+\epsilon_{ijk}J_k$. A plus sign gives $\mathfrak{so}(4)$, the Euclidean algebra, which is the algebra of a different real form of the same complex algebra. *The Cartan Subalgebra, the Roots and the Three Real Forms* puts the three real forms side by side and states which slice of the complex algebra each one is.
 
@@ -244,7 +244,7 @@ The four statements, with their dimensions, in the order in which a reader needs
 | $\mathbb{B}$ under $[-,-]\cong\mathfrak{gl}(2,\mathbb{C})$ | real Lie algebra, whole algebra | $\dim_{\mathbb{R}}=8$, centre of dimension $2$ |
 | $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ | complex Lie algebra | $\dim_{\mathbb{C}}=6$ |
 
-The determinant of the image is the algebra's complex quadratic form and not the interval. The traceless part is the Lorentz algebra because its bracket table is the Lorentz table and because its Killing form has signature $(3,3)$. The complexification splits, and the split is where the label $(m,n)$ comes from. The Pauli convention is fixed here, and no prediction depends on the part of it that could have been otherwise.
+The determinant of the image is the algebra's complex quadratic form and not the interval. The traceless part is the Lorentz algebra because its bracket table is the Lorentz table and because its Killing form has inertia $(3,3)$. The complexification splits, and the split is where the label $(m,n)$ comes from. The Pauli convention is fixed here, and no prediction depends on the part of it that could have been otherwise.
 
 ## Summary of Notation
 

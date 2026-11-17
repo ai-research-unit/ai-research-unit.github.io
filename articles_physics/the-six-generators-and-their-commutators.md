@@ -81,7 +81,7 @@ The table has three blocks, and each block is a statement of its own.
 
 - $[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$: the rotations close. They form a subalgebra, and the corresponding subgroup is the compact $SU(2)$.
 - $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$: the boost directions transform as a vector under the rotations. This is the statement that a rotated boost is a boost in the rotated direction, and it is why the boost manifold is a symmetric space.
-- $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian signature; with a plus the algebra would be $\mathfrak{so}(4)$.
+- $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian sign pattern; with a plus the algebra would be $\mathfrak{so}(4)$.
 
 Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K$; *Why Boosts Are Not Additive: The Bracket Table* is the article that reads the third row physically.
 
@@ -138,7 +138,7 @@ $$
 \langle K_i,K_j\rangle_{\mathrm{tr}}=+\tfrac12\delta_{ij}.
 $$
 
-So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because twice the scalar part of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
+So the form is diagonal in this basis with three negative and three positive entries: inertia $(3,3)$. It is invariant because twice the scalar part of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
 
 ### The Killing Form
 
@@ -164,9 +164,9 @@ and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and it
 
 ### What the Signature Means
 
-A non-degenerate form of signature $(3,3)$ on a six-dimensional real Lie algebra is the signature of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.
+A non-degenerate form of inertia $(3,3)$ on a six-dimensional real Lie algebra is the signature of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.
 
-The physical statement is that the group's invariant form has a Lorentzian signature because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.
+The physical statement is that the group's invariant form has a Lorentzian sign pattern because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.
 
 ## The Quadratic Casimir
 
@@ -235,7 +235,7 @@ A reader who meets the table in the four-vector display and again in the two-tri
 
 ## Summary
 
-The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have signature $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.
+The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.
 
 ## Summary of Notation
 

@@ -75,7 +75,7 @@ $$
 T^{\mu}{}_{\mu}=mc^{2}\Omega .
 $$
 
-**The pressure follows from the energy density and the mass density together.** In the frame the flow defines, and in the interval signature $(+,-,-,-)$ of the corpus, $T^{0}{}_{0}=\epsilon$ and $\sum_jT^{j}{}_{j}=3p$, so the trace is $\epsilon-3p$ and
+**The pressure follows from the energy density and the mass density together.** In the frame the flow defines, and in the interval inertia $(+,-,-,-)$ of the corpus, $T^{0}{}_{0}=\epsilon$ and $\sum_jT^{j}{}_{j}=3p$, so the trace is $\epsilon-3p$ and
 
 $$
 p=\tfrac13\bigl(\epsilon-mc^{2}\Omega\bigr).

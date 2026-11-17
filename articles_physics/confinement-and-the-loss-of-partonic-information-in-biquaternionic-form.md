@@ -66,7 +66,7 @@ $$
 I(C) := -\log\bigl|\langle W(C)\rangle\bigr| .
 $$
 
-The definition reads the decay of the loop's modulus, so it is the **Euclidean** cost: it is taken in the signature in which the perimeter and area laws above hold as written, with real exponents. In Minkowski signature the rectangular loop is $\exp(-iTV(L))$, a pure phase whose modulus is exactly one for real $V(L)$, so the cost as defined would vanish on it identically. The two are related by the analytic continuation $T\to -iT$ (the Minkowski $T$), which turns the phase into the decay and the decay back into the phase. The information cost and the potential are the same quantity read in the two signatures, and the scaling analysis below is made in the Euclidean one.
+The definition reads the decay of the loop's modulus, so it is the **Euclidean** cost: it is taken in the signature in which the perimeter and area laws above hold as written, with real exponents. In the Lorentzian sign pattern the rectangular loop is $\exp(-iTV(L))$, a pure phase whose modulus is exactly one for real $V(L)$, so the cost as defined would vanish on it identically. The two are related by the analytic continuation $T\to -iT$ (the Minkowski $T$), which turns the phase into the decay and the decay back into the phase. The information cost and the potential are the same quantity read in the two signatures, and the scaling analysis below is made in the Euclidean one.
 
 Then the two laws read
 

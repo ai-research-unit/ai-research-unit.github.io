@@ -258,7 +258,7 @@ Two objects describe the same topological transition, in two different signature
 
 | | Instanton | Sphaleron |
 |---|---|---|
-| Signature | Euclidean | Minkowski, static |
+| Inertia | Euclidean | Minkowski, static |
 | Character | A solution of the equations of motion | A saddle point, not a solution |
 | What it gives | The tunnelling amplitude $e^{-S_E}$ | The barrier height $E_{\mathrm{sph}}$ |
 | Size | Localised in all four directions | Localised in three |
@@ -268,7 +268,7 @@ Two objects describe the same topological transition, in two different signature
 **Why the framework hosts the instanton and not the sphaleron.**
 
 - **The instanton is where self-duality is available.** [The instanton article](instantons-and-solitons-in-biquaternionic-form.html) establishes that the BPST solution is characterised by $F=\tilde F$, and that self-duality is the condition the biquaternion structure makes natural — the Hodge star and the quaternion multiplication interact in exactly the way that lets a self-dual connection be written algebraically. [The ADHM article](the-adhm-construction-and-biquaternion-instanton-data.html) then classifies them by quaternionic linear data. That machinery has no analogue for a non-self-dual object.
-- **The sphaleron solves a different equation.** It extremises the energy functional at fixed Chern–Simons number, which is a constrained variational problem, and the resulting configuration is *not* self-dual — it cannot be, since a self-dual configuration in Minkowski signature is either trivial or complex. So there is no algebraic shortcut and the solution must be found numerically, by Ansatz and shooting. That is a computation the framework cannot perform, not because the algebra is inadequate but because the object is not algebraic in the way the instanton is.
+- **The sphaleron solves a different equation.** It extremises the energy functional at fixed Chern–Simons number, which is a constrained variational problem, and the resulting configuration is *not* self-dual — it cannot be, since a self-dual configuration in the Lorentzian sign pattern is either trivial or complex. So there is no algebraic shortcut and the solution must be found numerically, by Ansatz and shooting. That is a computation the framework cannot perform, not because the algebra is inadequate but because the object is not algebraic in the way the instanton is.
 - **The consequence, stated plainly.** The framework's whole topological apparatus — the $\theta$ vacuum, the winding number, the instanton gas, the ADHM data — is a Euclidean apparatus. The sphaleron is the Minkowski counterpart, and the corpus's claim about topology in $\mathbb{B}$ therefore stops at the barrier rather than crossing it.
 
 **What the corpus does supply of the sphaleron's physics.** Three things, and they are not nothing:

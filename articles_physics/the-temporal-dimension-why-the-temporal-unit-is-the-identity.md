@@ -82,7 +82,7 @@ $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_\eta^2$, and the difference between them — the Lorentzian signature — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_\eta$ contribute $Q_\eta^2$.
+a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_\eta^2$, and the difference between them — the Lorentzian sign pattern — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_\eta$ contribute $Q_\eta^2$.
 
 The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signature is the value placed on the temporal coefficient.
 
@@ -146,7 +146,7 @@ $$
 \boxed{\;\langle\tilde Q_+\rangle_{\natural} = (h_t)^2 - {h'_{x}}^2 - {h'_{y}}^2 - {h'_{z}}^2\;},
 $$
 
-of signature $(1,3)$: the temporal direction is the single positive one and the three spatial directions are the negative ones. This is the reverse of the material sector, where the temporal direction is the negative one; the reversal is the reversal of who carries the $i$.
+of inertia $(1,3)$: the temporal direction is the single positive one and the three spatial directions are the negative ones. This is the reverse of the material sector, where the temporal direction is the negative one; the reversal is the reversal of who carries the $i$.
 
 The second is the Hermitian form, which on the sector is the plain form and carries the probability,
 
@@ -189,7 +189,7 @@ The reading is offered as a physical interpretation of the algebraic placement, 
 The temporal dimension of the biquaternion framework reads in three ways, and the three readings are the three placements of one letter.
 
 - **The scalar-dimension reading.** $e_t = 1$ says that the temporal direction is the scalar direction: the identity of the algebra, the axis the rotations share and leave alone, the coefficient a boost mixes with space. Time is the direction along which an element is a number rather than a vector, and the framework's time is a scalar coordinate rather than one of four peers. The reading is the article's own and is the algebraic content of the base.
-- **The imaginary-coefficient reading.** On the material sector the temporal coefficient is $i r'_t$, and the imaginary unit is the source of the Lorentzian signature and the mark of a coordinate that is measured but not touched. The reading is *The Material Sector: Four-Vectors, Interval and Lorentz Action*'s and is repeated here because the storage reading is its mirror. Boundary: the mathematics fixes the placement of the $i$; the reading of the placement as the difference between time and space is an interpretation.
+- **The imaginary-coefficient reading.** On the material sector the temporal coefficient is $i r'_t$, and the imaginary unit is the source of the Lorentzian sign pattern and the mark of a coordinate that is measured but not touched. The reading is *The Material Sector: Four-Vectors, Interval and Lorentz Action*'s and is repeated here because the storage reading is its mirror. Boundary: the mathematics fixes the placement of the $i$; the reading of the placement as the difference between time and space is an interpretation.
 - **The storage reading.** On the informational sector the temporal coefficient is $h_t$, real, the single positive direction of the sector's biquaternion norm and a positive direction of its probability form, and the article reads it as the direction along which the sector's records are held: the record can be touched and recovered because $h_t$ is real, and the elapsed time cannot because $i r'_t$ is imaginary. Boundary: the reading inherits the informational-sector hypothesis, adds no dynamics, and does not claim an arrow.
 
 The three readings are independent of one another and rest on one algebraic fact each: the three properties of $e_t$ among the basis units, the imaginary coefficient of the material element, and the real coefficient of the informational one.
