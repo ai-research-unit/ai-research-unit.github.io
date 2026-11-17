@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Informational Norm: Impurity, Entropy and the Mirror of Mass — Biquaternion Universe</title>
-  <meta name="description" content="The claim. One expression,, measures the interval on the material sector and the impurity of a state on the informational one. It is the same expression…">
+  <meta name="description" content="The claim. One form,, measures the interval on the material sector and the impurity of a state on the informational one. It is the same algebraic…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,12 +71,13 @@
       <div class="article-body">
         <h1 id="the-informational-norm-impurity-entropy-and-the-mirror-of-mass"><strong>The Informational Norm: Impurity, Entropy and the Mirror of Mass</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The claim.</strong> One expression, $N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, measures the interval on the material sector and the impurity of a state on the informational one. It is the same expression on both, it is real on both once a sector is fixed, and it is indefinite on both. What changes between the sectors is not the form. It is the coordinate the form is read on.</p>
-<p><strong>What it measures on a state.</strong> $N=\tfrac14(1-r^{2})$ on the unit-weight slice. It is zero exactly on the pure states, it is largest at the maximally mixed state, and the entropy of the state is a function of it and of nothing else, on the slice. High $N$ means low information: the quantity is a deficit and not a content.</p>
-<p><strong>Why it is not a probability.</strong> $N$ vanishes on nonzero elements and changes sign on them. A probability needs positivity, and $N$ has none. The positive-definite form of the sector is the Hermitian norm $\mathcal H=\sum_\mu\lvert Q_\mu\rvert^{2}$, and it is the one that carries probabilities. On the slice the two are affinely related, so no number is lost by using either, but the names must not be exchanged.</p>
-<p><strong>The structural reason it is the ledger entry.</strong> $N$ is the determinant of the $2\times2$ complex image of the element. A determinant multiplies under composition and is invariant under congruence by a unit-determinant element. $N$ does both, $\mathcal H$ does neither, and that is the whole reason the conservation law is written with $N$.</p>
-<p><strong>What this article is.</strong> An internal consolidation of the informational side of $N$: the form, the state slice, the four readings the corpus gives of it, the multiplicativity that makes it a ledger entry, the duality with mass, two traps, and a statement of what is forced by the algebra and what is a dictionary. It is an audit, and the corpus is unchanged by it.</p>
-<p><strong>What was recomputed for it, and what passed.</strong> The identity $N=\det\rho(\tilde Q)$ and $N(AB)=N(A)N(B)$ on two hundred random biquaternions, zero failures, worst error $7.1\times10^{-14}$. The invariance $N(U\tilde QU^{*})=N(\tilde Q)$ under $UU^{*}=e_t$ on one hundred draws, zero failures. The state-slice table at four radii, against the closed forms for the linear entropy, the spectral entropy and the concurrence, exact. The multiplicativity failure of $\mathcal H$, two hundred of two hundred, worst error $186$.</p>
+<p><strong>The claim.</strong> One form, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, measures the interval on the material sector and the impurity of a state on the informational one. It is the same algebraic expression on both, it is real on both once a sector is fixed, and it is indefinite on both. What changes between the sectors is not the expression. It is the real four-plane it is read on, and that plane is fixed by which coefficient carries the one $i$.</p>
+<p><strong>The symbol.</strong> The corpus writes the quaternionic norm $\langle\cdot\rangle_{\natural}$; this article writes $N$ for it, as the physics articles do, and the two names are one object. $N$ is the norm before any representation is chosen, and it is read in $\langle\cdot\rangle_{\natural}$ and not in a word that belongs to an array.</p>
+<p><strong>What it measures on a state.</strong> $N=\tfrac14(1-r^{2})$ on the normalised slice. It is zero exactly on the pure states, it is largest at the maximally mixed state, and the entropy of the state is a function of it and of nothing else. High $N$ means low information: the quantity is a deficit and not a content.</p>
+<p><strong>Why it is not a probability.</strong> $N$ vanishes on nonzero elements and changes sign on them. A probability needs positivity, and $N$ has none. The positive-definite form of the sector is the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, with $\mathcal H=\sum_\mu\lvert Q_\mu\rvert^{2}$ on the real coefficients, and it is the one that carries probabilities. On the slice the two are affinely related, so no number is lost by using either, but the names must not be exchanged.</p>
+<p><strong>Why it is the ledger entry.</strong> $N$ multiplies under composition, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and it is unchanged by congruence with an element of norm one. The sum of squares does neither. Multiplicativity is the property that separates the norm from the doubled scalar part, and it is the whole reason the conservation law is written with $N$.</p>
+<p><strong>What this article is.</strong> An internal consolidation of the informational side of $N$: the form and the two sectors, the state slice, the four readings the corpus gives of it, the multiplicativity that makes it a ledger entry, the duality with mass, two traps, and a statement of what is forced by the algebra and what is a dictionary. It is an audit, and the corpus is unchanged by it.</p>
+<p><strong>What was recomputed for it, and what passed.</strong> The multiplicativity $N(AB)=N(A)N(B)$ on two hundred random biquaternions, zero failures, worst error $7.1\times10^{-14}$. The invariance $N(U\tilde QU^{*})=N(\tilde Q)$ under $UU^{*}=e_t$ on one hundred draws, zero failures, worst error $7.7\times10^{-13}$. The identity $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ on two hundred draws, zero failures, worst error $2.0\times10^{-15}$. The state-slice table at four radii, against the closed forms for the linear entropy, the spectral entropy and the concurrence, exact. The multiplicativity failure of $\mathcal H$, two hundred of two hundred, worst error $186$.</p>
 <h2 id="the-form-and-the-mirror">The Form, and the Mirror</h2>
 <h3 id="the-informational-sector">The Informational Sector</h3>
 <p><strong>An element of $\mathbb{B}_{\Psi}$ is Hermitian: its scalar part is real and its vector part is purely imaginary.</strong> Write</p>
@@ -85,9 +86,15 @@
 $$</p>
 <p>with the factor $i$ on the vector part in the Hermitian basis. The quaternionic norm is then</p>
 <p>$$
-N(\tilde Q_\Psi)=\tilde Q_\Psi\tilde Q_\Psi^{\natural}=h_t^{2}-\lvert\vec h\rvert^{2},
+N(\tilde Q_\Psi)=\langle\tilde Q_\Psi\rangle_{\natural}=h_t^{2}-\lvert\vec h\rvert^{2},
 $$</p>
-<p>a real quadratic form of inertia $(1,3)$: one positive direction, the scalar one, and three negative ones.</p>
+<p>a real form of inertia $(1,3)$: one positive direction, the scalar one, and three negative ones. The full triple is $(1,3,0)$, the third entry counting null directions, and it is zero here.</p>
+<p><strong>The excess carries the same count as one integer.</strong> With $\sigma=n-m$,</p>
+<p>$$
+\sigma(\mathbb{B}_{\Psi})=1-3=-2,\qquad \sigma(\mathbb{B}_{\Phi})=3-1=+2 .
+$$</p>
+<p>The sign of $\sigma$ is the sector label. Neither number is a property of the metric, and neither is written on it.</p>
+<h3 id="the-material-sector">The Material Sector</h3>
 <p><strong>The same expression on the material sector is the interval.</strong> There the element is anti-Hermitian and reads</p>
 <p>$$
 \tilde P_\Phi=i\frac{E}{c}\,e_t+\vec p,\qquad \vec p\in\mathbb{R}^{3},
@@ -96,9 +103,10 @@ $$</p>
 <p>$$
 N(\tilde P_\Phi)=\Bigl(i\frac{E}{c}\Bigr)^{2}+\lvert\vec p\rvert^{2}=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}=-p^{2}.
 $$</p>
-<p>The inertia there is $(3,1)$.</p>
-<p><strong>The minus belongs to the coordinate and not to a metric.</strong> There is one metric in the series, $\delta_{\mu\nu}=(1,1,1,1)$, and the expression $\sum_\mu Q_\mu^{2}$ is the same on both sectors. What differs is which coefficient carries the $i$: the scalar one on the material side, the vector ones on the informational side. The corpus states the point in <em>Frame and Metric Conventions</em>: the minus <em>is the square of the $i$ in $Q_t=i q'_t$, written once in the coordinate and read once here</em>.</p>
-<h3 id="the-switch-is-multiplication-by-math32">The Switch Is Multiplication by $i$</h3>
+<p>The inertia there is $(3,1)$, that is $(3,1,0)$.</p>
+<p><strong>The minus belongs to the coordinate and not to a metric.</strong> There is one metric in the series, $\delta_{\mu\nu}=(1,1,1,1)$ with four coefficients $+1$, and the expression $\sum_\mu Q_\mu^{2}$ is the same on both sectors. What differs is which coefficient carries the $i$: the scalar one on the material side, the vector ones on the informational side. The corpus states the rule in <em>Frame and Metric Conventions</em>: the minus <em>is the square of the one $i$ of $Q_t=i q'_t$, which is $i^2=-1$ on the time slot</em>.</p>
+<p><strong>The word that used to name a count of signs is retired.</strong> <em>Frame and Metric Conventions</em> gives it a rule of its own, the ninth: an object with four equal coefficients has nothing to sign, the count of directions is the <strong>inertia</strong> $(n,m,r)$ of a form, and the single integer is the <strong>excess</strong> $\sigma=n-m$. A sentence that gives the metric a count has attached the count to the wrong object. This article therefore writes inertia and excess, and no other word for a count of directions.</p>
+<h3 id="the-switch-is-multiplication-by-math47">The Switch Is Multiplication by $i$</h3>
 <p><strong>The two sectors are exchanged by the central imaginary.</strong> For any element,</p>
 <p>$$
 N(i\tilde Q)=i^{2}N(\tilde Q)=-N(\tilde Q),
@@ -108,27 +116,29 @@ $$</p>
 \tilde P_\Psi=i\tilde P_\Phi\quad\Longrightarrow\quad N(\tilde P_\Psi)=-N(\tilde P_\Phi)=+m^{2}c^{2}.
 $$</p>
 <p><strong>The mirror statement, in words.</strong> An informational element carries the mass squared of its material mirror, with a plus sign. On shell the material element has $N=-m^{2}c^{2}$ and its mirror has $N=+m^{2}c^{2}$. The two are one number and one sign, and the sign says which sector the element lives in.</p>
-<p><strong>The corpus's own phrasing.</strong> <em>Energy and Information</em> writes that the quaternionic form <em>is indefinite on both sectors and changes signature from $(3,1)$ on $\mathbb{B}_{\Phi}$ to $(1,3)$ on $\mathbb{B}_{\Psi}$</em>. That is the statement of this section, in the vocabulary of forms.</p>
-<p><strong>One precision, because the loose reading is a real trap.</strong> It is not one fixed real quadratic form carrying two inertias on one space; Sylvester's law forbids that. It is one algebraic expression, $\sum_\mu Q_\mu^{2}$, read on two different real four-planes, related by multiplication by $i$, which reverses its sign. "The same form" is correct about the expression and about the algebra; "the same form with the opposite signature" is correct about the value and needs the sign-switch to be exact.</p>
+<p><strong>The corpus's own phrasing.</strong> <em>Energy and Information</em> writes that the quaternionic form <em>is indefinite on both sectors and has inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$</em>. That is the statement of this section, in the vocabulary of forms.</p>
+<p><strong>One precision, because the loose reading is a real trap.</strong> It is not one fixed real quadratic form carrying two inertias on one space; Sylvester's law forbids that. It is one algebraic expression, $\sum_\mu Q_\mu^{2}$, read on two different real four-planes related by multiplication by $i$, which reverses its sign. The correct sentences are <em>the form has inertia $(1,3)$ on $\mathbb{B}_{\Psi}$</em> and <em>the switch is $N(i\tilde Q)=-N(\tilde Q)$</em>. A sentence that says the metric changes anything has named the wrong carrier: the metric is one, and the sign is on the coordinate.</p>
 <h2 id="why-it-is-not-the-probability-norm">Why It Is Not the Probability Norm</h2>
 <p><strong>$N$ is indefinite, and that is disqualifying.</strong> A form that carries a probability must be non-negative on every element of the cone and zero only at the origin. $N$ fails both: it vanishes on every nonzero zero divisor, and it takes both signs on the sector.</p>
 <p><strong>The zero set is not a measure-zero accident.</strong> On $\mathbb{B}_{\Psi}$ the condition $N=0$ is $h_t=\lvert\vec h\rvert$, a cone of real dimension three. Every element of that cone is nonzero and every one has $N=0$. A probability that is zero on a three-dimensional set of nonzero states is not a probability.</p>
-<p><strong>The positive form is the Hermitian one.</strong> $\mathcal H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ is positive definite on the whole algebra, and it is the form that carries the Born weight. The corpus states the division of labour plainly: <em>The plain and the quaternionic forms are not positive, so neither can be carried by a positive factor at all.</em></p>
+<p><strong>The positive form is the Hermitian one.</strong> $\mathcal H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ is positive definite on the whole algebra, of inertia $(4,0)$, and it is the form that carries the Born weight. The corpus states the division of labour plainly: <em>The plain and the quaternionic forms are not positive, so neither can be carried by a positive factor at all.</em></p>
 <p><strong>On the slice the two forms differ by a constant and a sign.</strong></p>
 <p>$$
 \mathcal H=\tfrac14(1+r^{2}),\qquad N=\tfrac14(1-r^{2}),\qquad \mathcal H+N=\tfrac12 .
 $$</p>
 <p><strong>That sum is the whole content of the "two names" warning.</strong> The two forms are affinely related on the slice, so a computation may use either and be right about the number. But $\mathcal H$ rises where information rises and $N$ rises where information falls, and a sentence that swaps the names inverts the physics while keeping the arithmetic.</p>
 <h2 id="the-state-slice">The State Slice</h2>
-<p><strong>A state is an element of the unit-weight slice of the cone.</strong></p>
+<p><strong>A state is a positive element whose doubled scalar part is one.</strong></p>
 <p>$$
-\tilde\varrho_\Psi=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \lvert\vec r\rvert\le1,\qquad \operatorname{Tr}\tilde\varrho_\Psi=1 .
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad \lvert\vec r\rvert\le1,\qquad 2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1 .
 $$</p>
+<p>The number $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi$ is the normalisation. An element is read in $\mathrm{Sc}$; the factor two is the dimension of the $2\times2$ image, where the same number is the matrix trace. The word <em>trace</em> in this series belongs to that image, and a sentence that applies it to an element has moved the factor onto the wrong object.</p>
 <p>Its two eigenvalues are $\lambda_\pm=\tfrac12(1\pm\lvert\vec r\rvert)$, and their product is the norm:</p>
 <p>$$
-\lambda_+\lambda_-=\tfrac14\bigl(1-r^{2}\bigr)=N(\tilde\varrho_\Psi).
+\lambda_+\lambda_-=\tfrac14\bigl(1-r^{2}\bigr)=N(\tilde{Ϛ}_\Psi).
 $$</p>
 <p><strong>The product of the eigenvalues is the reason for everything that follows.</strong> $N$ is large exactly when the two eigenvalues are both far from zero, that is, when the state is far from pure. $N$ is zero exactly when one eigenvalue vanishes, that is, when the state is a rank-one idempotent.</p>
+<p><strong>The product also explains why the norm carries no factor while the normalisation carries two.</strong> A sum of diagonal entries is twice the scalar part, because the image is two-dimensional; a product of eigenvalues is the norm itself, because no dimension count enters a product. The asymmetry is the point of the convention, and it is why the entropy formula below has no factor to dispose of.</p>
 <h3 id="the-table">The Table</h3>
 <p><strong>Four radii, recomputed.</strong></p>
 <div class="table-scroll"><table>
@@ -137,7 +147,7 @@ $$</p>
 <th>$\lvert\vec r\rvert$</th>
 <th>$N$</th>
 <th>$\mathcal H$</th>
-<th>$\operatorname{Tr}$</th>
+<th>$2\,\mathrm{Sc}$</th>
 <th>$S_{\mathrm{lin}}=2N$</th>
 <th>concurrence $2\sqrt N$</th>
 <th>$S_{\mathrm{vN}}$</th>
@@ -182,11 +192,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Every entry is a closed form and every one checks.</strong> The fifth column is $2N$; the sixth is $2\sqrt N$; the last is the binary entropy at $\lambda_+=\tfrac12(1+r)$. The table is generated by one radius, and the four columns are four readings of it.</p>
+<p><strong>Every entry is a closed form and every one checks.</strong> The fifth column is $2N$; the sixth is $2\sqrt N$; the last is the binary entropy at $\lambda_+=\tfrac12(1+r)$. The table is generated by one radius, and the columns are four readings of it.</p>
 <h3 id="the-four-readings">The Four Readings</h3>
 <p><strong>The first reading is mixedness.</strong> The linear entropy is a multiple of $N$:</p>
 <p>$$
-S_{\mathrm{lin}}=1-\operatorname{Tr}\tilde\varrho_\Psi^{2}=1-\tfrac12\bigl(1+r^{2}\bigr)=\tfrac12\bigl(1-r^{2}\bigr)=2N .
+S_{\mathrm{lin}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}\bigr)=\tfrac12\bigl(1-r^{2}\bigr)=2N .
 $$</p>
 <p>The spectral entropy is a function of $N$ alone on the slice. With $\lambda_+=\tfrac12\bigl(1+\sqrt{1-4N}\bigr)$,</p>
 <p>$$
@@ -195,10 +205,10 @@ $$</p>
 <p>where $h$ is the binary entropy. The square root is real because $N\le\tfrac14$ on the slice, and $\tfrac14$ is the value at the centre of the ball. <strong>$N$ fixes the entropy.</strong> The converse also holds on the slice, because the map is monotone and one-to-one.</p>
 <p><strong>The second reading is entanglement.</strong> For the reduced state of one copy of a pure pair, the concurrence is</p>
 <p>$$
-\mathcal{C}=2\sqrt{N(\tilde\varrho_\Psi)} .
+\mathcal{C}=2\sqrt{N(\tilde{Ϛ}_\Psi)} .
 $$</p>
 <p>A maximally entangled pair gives $N=\tfrac14$ and $\mathcal{C}=1$; a product state gives $N=0$ and $\mathcal{C}=0$. The mixedness of a half and the entanglement of the whole are one number.</p>
-<p><strong>The third reading is the boundary.</strong> $N=0$ is exactly the pure states, which are the idempotents, which are the zero divisors, which are the null cone of the sector. The pure states form a two-sphere. <strong>The same surface is the light cone on the material side and the set of pure states on the informational one</strong>, and no third object is needed to explain either.</p>
+<p><strong>The third reading is the boundary.</strong> $N=0$ is exactly the pure states, which are the idempotents, which are the zero divisors, which are the null elements of the sector. The condition is written as a norm condition, $\{\langle\tilde Q\rangle_{\natural}=0\}$, and that set is the zero-divisor cone. The pure states form a two-sphere. <strong>The same surface is the light cone on the material side and the set of pure states on the informational one</strong>, and no third object is needed to explain either.</p>
 <p><strong>The fourth reading is thermal.</strong> The Gibbs state of a Hamiltonian $\tilde H_\Psi=h_t e_t+i\vec h_\Psi$ is the state whose radius vector is</p>
 <p>$$
 \vec r=-\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr)\vec u_\Psi,\qquad \beta=\frac{1}{k_BT},
@@ -208,32 +218,31 @@ $$</p>
 N=\tfrac14\bigl(1-\tanh^{2}(\beta\lvert\vec h\rvert)\bigr)=\frac{1}{4\cosh^{2}(\beta\lvert\vec h\rvert)} .
 $$</p>
 <p>$N$ is then monotone in the temperature, decreasing from $\tfrac14$ at $T=\infty$ to $0$ at $T=0$. The radius is the magnetisation; the low-temperature saturation is the approach to the boundary, which no finite temperature reaches; and the high-temperature expansion $\lvert\vec r\rvert\approx\lvert\vec h\rvert/(k_BT)$ is Curie's law. <strong>The three thermal statements — monotonicity in $T$, saturation, and Curie — are one formula read at three temperatures.</strong></p>
-<p><strong>A fifth reading, in the corpus, is decoherence.</strong> A state entangled with an environment and then traced over moves inward: the purity falls, $2N$ rises, $S(N)$ rises with it. The boundary is where the environment has learned nothing and the interior is where it has.</p>
+<p><strong>A fifth reading, in the corpus, is decoherence.</strong> A state entangled with an environment and then traced over moves inward: the purity falls, $2N$ rises, $S(N)$ rises with it. The boundary is where the environment has learned nothing and the interior is where it has. The word <em>trace</em> here belongs to the partial trace of the environment's module, which is the carrier the convention asks for.</p>
 <h3 id="the-direction">The Direction</h3>
 <p><strong>High $N$ means low information.</strong> The corpus is explicit: the quaternionic norm is <em>the impurity that the informational side reads as information</em>, and the entropy is <em>the information the state fails to hold</em>. $N$ is a deficit. Every sentence in this article must be read with that sign, and the table above is the arithmetic of it.</p>
-<h2 id="why-math128-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
-<p><strong>The structural fact is that $N$ is a determinant.</strong> $\mathbb{B}\cong M_2(\mathbb{C})$, and the image of $\tilde Q$ under the standard representation is</p>
+<h2 id="why-math151-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
+<p><strong>The structural fact is multiplicativity.</strong> For two elements,</p>
 <p>$$
-\rho(\tilde Q)=Q_t I+i\bigl(Q_x\sigma_x+Q_y\sigma_y+Q_z\sigma_z\bigr),
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
 $$</p>
-<p>whose determinant is $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=N(\tilde Q)$. Recomputed on two hundred random biquaternions, the identity held with worst error $1.99\times10^{-15}$.</p>
-<p><strong>Three consequences follow from the determinant and from nothing else.</strong></p>
-<p><strong>The first is multiplicativity.</strong> $\det\rho(AB)=\det\rho(A)\det\rho(B)$, so</p>
+<p>which is the property the norm has before any representation is chosen, and the property that $2\,\mathrm{Sc}$ does not have. Two hundred random biquaternions: zero failures, worst error $7.1\times10^{-14}$. <strong>The information of a composite is the product of the norms of its parts</strong>, exactly as the mass of a total four-momentum is the norm of the sum and not the sum of the masses.</p>
+<p><strong>One bridge to the matrix model, named as a bridge.</strong> The $2\times2$ image is</p>
 <p>$$
-N(AB)=N(A)N(B).
+\mathsf M_2(\tilde Q)=Q_tI_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
 $$</p>
-<p>Two hundred random biquaternions: zero failures, worst error $7.1\times10^{-14}$. <strong>The information of a composite is the product of the norms of its parts</strong>, exactly as the mass of a total four-momentum is the norm of the sum and not the sum of the masses. The numerical check is illustrative; the proof is the determinant.</p>
-<p><strong>The second is invariance under every reversible motion.</strong> For $U$ with $UU^{*}=e_t$, so that $N(U)=1$,</p>
+<p>and the determinant of that array is the norm with no factor, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The identity is stated once, in <em>Matrix Representations Conventions</em>, and used afterwards as a bridge; outside it the word <em>determinant</em> is not applied to an element. Here it is the reason multiplicativity is forced, because the determinant of a product of arrays is the product of the determinants. Two hundred random draws: zero failures, worst error $2.0\times10^{-15}$.</p>
+<p><strong>Invariance under every reversible motion follows from the same property.</strong> For $U$ with $UU^{*}=e_t$, so that $N(U)=1$,</p>
 <p>$$
 N\bigl(U\tilde QU^{*}\bigr)=N(U)N(\tilde Q)N(U^{*})=N(\tilde Q).
 $$</p>
 <p>One hundred random draws, zero failures, worst error $7.7\times10^{-13}$. $N$ survives every $*$-unitary congruence. The material statement of the same fact is that $N$ survives every congruence by an element of norm one, and the group of those elements is the Lorentz group read as the norm automorphisms of the sector.</p>
-<p><strong>The third is that $\mathcal H$ has none of this.</strong> The sum of squares is not a determinant of the same object and does not multiply:</p>
+<p><strong>The doubled scalar part has none of this.</strong> A sum of squares is not multiplicative:</p>
 <p>$$
 \mathcal H(AB)\neq\mathcal H(A)\mathcal H(B).
 $$</p>
-<p>Two hundred of two hundred random pairs fail. In one draw $\mathcal H(A)=9.79$ and $\mathcal H(B)=19.98$, so the product of the norms is $195.6$, while the norm of the product is $9.47$. <strong>That is why the conservation law is written with $N$ and not with $\mathcal H$</strong>, and why the entropy — a function of $N$ — is the quantity a composite carries and a reversible motion preserves.</p>
-<p><strong>One object, three properties.</strong> $N$ is the determinant of the $2\times2$ image, it is invariant under the reversible motions of its sector, and it multiplies under composition. No fourth fact is needed to make it a ledger entry.</p>
+<p>Two hundred of two hundred random pairs fail. In one draw $\mathcal H(A)=9.79$ and $\mathcal H(B)=19.98$, so the product of the norms is $195.6$, while the norm of the product is $9.47$. <strong>That is why the conservation law is written with $N$ and not with the sum of squares</strong>, and why the entropy — a function of $N$ — is the quantity a composite carries and a reversible motion preserves.</p>
+<p><strong>One object, two properties.</strong> $N$ multiplies under composition and it is invariant under the reversible motions of its sector. Nothing further is needed to make it a ledger entry, and no count of diagonal entries is involved anywhere.</p>
 <h2 id="the-duality">The Duality</h2>
 <p><strong>One pair of operations, with the roles exchanged.</strong></p>
 <div class="table-scroll"><table>
@@ -248,15 +257,15 @@ $$</p>
 <tr>
 <td>the element</td>
 <td>four-momentum $\tilde P_\Phi$</td>
-<td>state $\tilde\varrho_\Psi$</td>
+<td>state $\tilde{Ϛ}_\Psi$</td>
 </tr>
 <tr>
-<td>trace</td>
+<td>$2\,\mathrm{Sc}$</td>
 <td>$2iE/c$, free (the frame)</td>
 <td>$1$, fixed (normalisation)</td>
 </tr>
 <tr>
-<td>norm $N$</td>
+<td>the norm $N$</td>
 <td>$-m^{2}c^{2}$, fixed</td>
 <td>$\tfrac14(1-r^{2})$, free</td>
 </tr>
@@ -272,13 +281,13 @@ $$</p>
 </tr>
 <tr>
 <td>invariant under</td>
-<td>unit-norm congruence</td>
+<td>congruence of norm one</td>
 <td>$*$-unitary conjugation</td>
 </tr>
 <tr>
 <td>additive</td>
-<td>the trace</td>
-<td>the trace</td>
+<td>$2\,\mathrm{Sc}$</td>
+<td>$2\,\mathrm{Sc}$</td>
 </tr>
 <tr>
 <td>multiplicative</td>
@@ -287,16 +296,16 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two columns are the same two lines of algebra with the names swapped.</strong> On the material side the norm is pinned and the trace runs: a particle has a definite mass and a frame-dependent energy. On the informational side the trace is pinned and the norm runs: every state has unit total probability and the information varies from state to state.</p>
+<p><strong>The two columns are the same two lines of algebra with the names swapped.</strong> On the material side the norm is pinned and the doubled scalar part runs: a particle has a definite mass and a frame-dependent energy. On the informational side that number is pinned and the norm runs: every state has unit total probability and the information varies from state to state.</p>
 <p><strong>The slogan the corpus uses for the swap is exact.</strong> Mass is what the frame cannot move; information is what the frame leaves free.</p>
 <h2 id="two-traps">Two Traps</h2>
 <p><strong>The first trap is reading $N=0$ on $\mathbb{B}_{\Psi}$ as massless.</strong> It is not. $N=0$ on the informational sector means pure. <em>Massless</em> names the null cone of the material sector, and the two cones are different subsets of different sectors even though they are written with the same equation. The corpus warns at the site: <em>Nullness here is nullness for the quaternionic norm of this algebra. It is not a statement that a pure state has zero energy, zero probability or zero norm for the Hermitian form, whose value on an idempotent is $\tfrac12$.</em> Confusing the two produces the false statement that a pure state is trivial.</p>
-<p><strong>The second trap is reading $N$ off the unit-weight slice.</strong> Off the slice $N$ is a quadratic form with a scale: doubling the state multiplies $N$ by four and does not touch the purity. The impurity reading needs the slice, or the scale-free ratio</p>
+<p><strong>The second trap is reading $N$ off the normalised slice.</strong> Off the slice $N$ is a form with a scale: doubling the state multiplies $N$ by four and does not touch the purity. The impurity reading needs the slice $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$, or the scale-free ratio</p>
 <p>$$
-\frac{N}{(\operatorname{Tr}/2)^{2}} ,
+\frac{N}{\bigl(\mathrm{Sc}\,\tilde{Ϛ}_\Psi\bigr)^{2}} ,
 $$</p>
 <p>which is $\tfrac14(1-r^{2})$ on every positive multiple of the state and is therefore a property of the state and not of the representative.</p>
-<p><strong>This also settles an apparent conflict between two uses of one letter.</strong> $N=-m^{2}c^{2}$ is a mass squared in the material normalisation and $N=\tfrac14(1-r^{2})$ is an impurity at most $\tfrac14$ in the informational one. They are not two definitions. They are one expression, read on two slices, in two sectors, with two different things held fixed.</p>
+<p><strong>This also settles an apparent conflict between two uses of one letter.</strong> $N=-m^{2}c^{2}$ is a mass squared in the material reading and $N=\tfrac14(1-r^{2})$ is an impurity at most $\tfrac14$ in the informational one. They are not two definitions. They are one form, read on two planes, in two sectors, with two different objects held fixed.</p>
 <h2 id="the-sign-as-classifier">The Sign as Classifier</h2>
 <p><strong>On the state cone the three signs are three verdicts.</strong> Positivity of the state is $h_t\ge\lvert\vec h\rvert$, which is $N\ge0$.</p>
 <div class="table-scroll"><table>
@@ -324,14 +333,14 @@ $$</p>
 <p><strong>This is the mirror of the material reading.</strong> A physical particle has $N<0$ there, because the mass shell is $N=-m^{2}c^{2}$. The same cone, read from the other side: the interior of the material cone is the region of negative $N$ and the interior of the state cone is the region of positive $N$.</p>
 <h2 id="what-is-forced-and-what-is-dictionary">What Is Forced and What Is Dictionary</h2>
 <p><strong>Four statements are forced by the algebra, and no physical reading enters.</strong></p>
-<p><strong>The first.</strong> $N$ is the determinant of the $2\times2$ image, and therefore multiplicative, and therefore invariant under congruence by a unit-norm element. This is algebra, and the numerical checks confirm it rather than establish it.</p>
-<p><strong>The second.</strong> On the unit-weight slice, $N=\tfrac14(1-r^{2})=\lambda_+\lambda_-$, zero exactly at the idempotents and maximal at the centre. This follows from the eigenvalues of a $2\times2$ Hermitian matrix.</p>
+<p><strong>The first.</strong> $N$ is multiplicative, and therefore invariant under congruence by an element of norm one. This is algebra, and the numerical checks confirm it rather than establish it.</p>
+<p><strong>The second.</strong> On the normalised slice, $N=\tfrac14(1-r^{2})=\lambda_+\lambda_-$, zero exactly at the idempotents and maximal at the centre. This follows from the eigenvalues of a $2\times2$ Hermitian matrix.</p>
 <p><strong>The third.</strong> The spectral entropy is a function of $N$ on the slice, by the monotone change of variable $\lambda_+=\tfrac12(1+\sqrt{1-4N})$.</p>
 <p><strong>The fourth.</strong> Multiplication by $i$ reverses the sign of $N$ and exchanges the two inertias. This is $i^{2}=-1$ and the centrality of $i$.</p>
 <p><strong>Four further statements are readings, and the corpus says so at the sites.</strong> The identification of $N$ with <em>impurity</em> is a name for the eigenvalue product. The thermal reading requires the identification $\beta=1/(k_BT)$ and the Gibbs construction. The concurrence formula imports the standard two-qubit expression for a pure pair; the framework computes the reduced state's norm and does not by itself define an entanglement measure. And the identification of $\mathbb{B}_{\Psi}$ with the state space of a physical theory is the programme's step, not the algebra's.</p>
 <p><strong>A reader who wants the algebra and not the programme can keep the first four and drop the last four.</strong> Everything in §<em>The State Slice</em> survives the drop except the words <em>entropy in the thermodynamic sense</em>, <em>temperature</em> and <em>entanglement</em>.</p>
 <h2 id="the-audit">The Audit</h2>
-<p><strong>No contradiction was found between this article and the corpus.</strong> The passages that state the same object were read at the sites, and they agree:</p>
+<p><strong>No contradiction was found between this article and the corpus after the restructuring.</strong> The passages that state the same object were read at the sites, and they agree:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -342,11 +351,11 @@ $$</p>
 <tbody>
 <tr>
 <td><em>Energy and Information</em></td>
-<td>the form is indefinite on both sectors and changes from $(3,1)$ to $(1,3)$; the informational reading is the impurity</td>
+<td>the form is indefinite on both sectors, with inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$; the informational reading is the impurity; the four-row duality table, with $2\,\mathrm{Sc}$ in place of a trace</td>
 </tr>
 <tr>
 <td><em>States, Observables and the Born Weight</em></td>
-<td>$S_{\mathrm{lin}}=2N$; the spectral entropy $S(r)$; the eigenvalue product $\tfrac14(1-r^{2})$; the four readings; the nullness warning</td>
+<td>$S_{\mathrm{lin}}=2\,\mathrm{Sc}(\tilde{Ϛ}-\tilde{Ϛ}^{2})=2N$; the spectral entropy; the eigenvalue product $\tfrac14(1-r^{2})$; the four readings; the nullness warning</td>
 </tr>
 <tr>
 <td><em>What the Biquaternion Algebra Cannot Do</em></td>
@@ -354,29 +363,81 @@ $$</p>
 </tr>
 <tr>
 <td><em>The Unit Metric in the Biquaternion Universe</em></td>
-<td>one metric $\delta_{\mu\nu}=(1,1,1,1)$; the sign delivered by the coordinate</td>
+<td>one metric $\delta_{\mu\nu}=(1,1,1,1)$; the sign delivered by the coordinate; <em>there is no sign to pick</em></td>
 </tr>
 <tr>
 <td><em>Frame and Metric Conventions</em></td>
-<td>the minus is the square of the $i$ and not a signature</td>
+<td>one metric of four equal coefficients; rule 9, with the inertia $(n,m,r)$ and the excess $\sigma=n-m$</td>
+</tr>
+<tr>
+<td><em>Algebra and Element Conventions</em></td>
+<td>an element is read in $\mathrm{Sc}$ and in $\langle\cdot\rangle_{\natural}$; <em>the word trace belongs to a matrix</em>; the determinant identity stated once and used as a bridge</td>
+</tr>
+<tr>
+<td><em>Norm and Pairing Conventions</em></td>
+<td>the normalised state has matrix trace one; the factor two cancels in the pairing formula; the condition $\langle\tilde Q\rangle_{\natural}=0$ is the zero-divisor cone</td>
 </tr>
 <tr>
 <td><em>The N Norm: Mass, Angle and the Cone</em></td>
-<td>the mass is a level set of $N$ on a sector and not a value on the algebra</td>
+<td>the mass is a level set of the norm on a sector, and the sector's form has inertia $(3,1)$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>One wording caution, and it is the only one.</strong> The phrase <em>the same quadratic form with the opposite signature</em> is true of the expression and of the value, and false if read as one fixed real form with two inertias on one space. The exact statement is: one expression $\sum_\mu Q_\mu^{2}$, two real four-planes related by multiplication by $i$, and $N(i\tilde Q)=-N(\tilde Q)$.</p>
-<p><strong>A second caution, about the entropy formula.</strong> $S=h\bigl((1+\sqrt{1-4N})/2\bigr)$ is a function of $N$ alone <em>on the unit-weight slice</em>. Off the slice $N$ carries a scale and the formula needs the ratio of §<em>Two Traps</em>. The corpus states the same restriction in its own words when it calls normalisation <em>a choice of scale</em> and the weight <em>a quotient of two pairings</em>.</p>
+<p><strong>The conventions this article obeys, and where each comes from.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the convention</th>
+<th>the rule</th>
+<th>the source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one metric, $\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>no count of directions is ever carried by the metric</td>
+<td><em>Frame and Metric Conventions</em>, rule 9</td>
+</tr>
+<tr>
+<td>inertia $(n,m,r)$, excess $\sigma=n-m$</td>
+<td>the count names a form, positive directions counted first</td>
+<td><em>Frame and Metric Conventions</em>, rule 9</td>
+</tr>
+<tr>
+<td>an element is read in $\mathrm{Sc}$</td>
+<td>the word <em>trace</em> takes its carrier from a matrix, a tensor, an operator or a module, never from an element</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>an element is read in $\langle\cdot\rangle_{\natural}$</td>
+<td>the word <em>determinant</em> belongs to an array; the identity with the determinant of the image is stated once and used as a bridge</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>the zero-divisor cone</td>
+<td>written as $\{\langle\tilde Q\rangle_{\natural}=0\}$, not as a vanishing determinant</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>multiplicativity</td>
+<td>the property that separates the norm from the doubled scalar part</td>
+<td><em>Norm and Pairing Conventions</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three wording cautions, and they are matters of naming, not of physics.</strong></p>
+<p><strong>The first.</strong> A sentence that says the form <em>has inertia $(1,3)$ on $\mathbb{B}_{\Psi}$</em> is correct. A sentence that says the metric, the interval or the norm <em>has</em> a count is not, because those objects take no such word. The count belongs to the form read on a plane.</p>
+<p><strong>The second.</strong> The entropy formula $S=h\bigl((1+\sqrt{1-4N})/2\bigr)$ is a function of $N$ alone <em>on the normalised slice</em>. Off the slice $N$ carries a scale and the formula needs the ratio of §<em>Two Traps</em>.</p>
+<p><strong>The third.</strong> The doubled scalar part and the norm are affinely related on the slice and must not be exchanged in words, because one rises with information and the other falls.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>One expression, $N=\sum_\mu Q_\mu^{2}$, is the interval on the material sector and the impurity on the informational one.</strong> On the state slice $N=\tfrac14(1-r^{2})=\lambda_+\lambda_-$, zero exactly on the pure states and maximal at the centre.</p>
-<p><strong>It cannot be a probability.</strong> It is indefinite and vanishes on a three-dimensional cone of nonzero elements. The positive form of the sector is $\mathcal H=\sum_\mu\lvert Q_\mu\rvert^{2}=\tfrac14(1+r^{2})$, and the two are affinely related on the slice.</p>
+<p><strong>One form, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, is the interval on the material sector and the impurity on the informational one.</strong> On the state slice $N=\tfrac14(1-r^{2})=\lambda_+\lambda_-$, zero exactly on the pure states and maximal at the centre.</p>
+<p><strong>It cannot be a probability.</strong> It is indefinite and vanishes on a three-dimensional cone of nonzero elements. The positive form of the sector is the Hermitian form, of inertia $(4,0)$, and the two are affinely related on the slice.</p>
 <p><strong>The entropy is a function of $N$ alone on the slice</strong>, through $\lambda_+=\tfrac12(1+\sqrt{1-4N})$. The linear entropy is $2N$, the concurrence is $2\sqrt N$, and the thermal state gives $N=1/(4\cosh^{2}\beta\lvert\vec h\rvert)$.</p>
-<p><strong>$N$ is a determinant</strong>, so it multiplies under composition and is invariant under $*$-unitary congruence. $\mathcal H$ does neither. That is why $N$ is the ledger entry.</p>
+<p><strong>$N$ is multiplicative and invariant under congruence of norm one.</strong> The doubled scalar part is neither. That is why $N$ is the ledger entry, and the factor two belongs to the normalisation alone.</p>
 <p><strong>The direction is a deficit.</strong> High $N$ is low information. The purity, the positivity of a state and the saturation of the magnetisation are the same statement about the same number.</p>
-<p><strong>The duality is one pair of operations with the roles exchanged.</strong> Material: norm fixed, trace free. Informational: trace fixed, norm free.</p>
-<p><strong>Two traps, both named in the corpus.</strong> $N=0$ on $\mathbb{B}_{\Psi}$ is pure and not massless; and $N$ reads as an impurity only on the unit-weight slice, or as the scale-free ratio.</p>
-<p><strong>Four statements are forced and four are readings.</strong> The determinant, the eigenvalue product, the fact that the entropy is a function of $N$ on the slice, and the sign reversal under $i$ are algebra. Impurity, temperature, entanglement and the identification of the sector with a physical state space are the programme's.</p>
+<p><strong>The duality is one pair of operations with the roles exchanged.</strong> Material: norm fixed, doubled scalar part free. Informational: doubled scalar part fixed, norm free.</p>
+<p><strong>Two traps, both named in the corpus.</strong> $N=0$ on $\mathbb{B}_{\Psi}$ is pure and not massless; and $N$ reads as an impurity only on the normalised slice, or as the scale-free ratio.</p>
+<p><strong>Four statements are forced and four are readings.</strong> Multiplicativity, the eigenvalue product, the fact that the entropy is a function of $N$ on the slice, and the sign reversal under $i$ are algebra. Impurity, temperature, entanglement and the identification of the sector with a physical state space are the programme's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -387,32 +448,44 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
-<td>the quaternionic norm; the determinant of the $2\times2$ image</td>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the quaternionic norm; written $N$ in this article; the element-level reading</td>
 </tr>
 <tr>
 <td>$\mathcal H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$</td>
-<td>the Hermitian norm; positive definite; carries the probability</td>
+<td>the Hermitian form on the real coefficients; positive definite, inertia $(4,0)$; carries the probability</td>
 </tr>
 <tr>
-<td>$h_t e_t+i\vec h$</td>
+<td>$\mathrm{Sc}\,\tilde Q$</td>
+<td>the scalar part of an element; the element-level reading where an array would be read in a trace</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}\,\tilde Q$</td>
+<td>the normalisation; equal to the matrix trace of $\mathsf M_2(\tilde Q)$, the factor two being the dimension of the image</td>
+</tr>
+<tr>
+<td>$\tilde Q_\Psi=h_t e_t+i\vec h$</td>
 <td>a Hermitian element of $\mathbb{B}_{\Psi}$; $h_t$ and $\vec h$ real</td>
 </tr>
 <tr>
 <td>$N=h_t^{2}-\lvert\vec h\rvert^{2}$</td>
-<td>the norm on the informational sector; real, inertia $(1,3)$</td>
+<td>the norm on the informational sector; real, inertia $(1,3)$, excess $-2$</td>
+</tr>
+<tr>
+<td>$\tilde P_\Phi=iE/c\,e_t+\vec p$</td>
+<td>the four-momentum of the material sector</td>
 </tr>
 <tr>
 <td>$-E^{2}/c^{2}+\lvert\vec p\rvert^{2}$</td>
-<td>the norm on the material sector; real, inertia $(3,1)$</td>
+<td>the norm there; real, inertia $(3,1)$, excess $+2$</td>
 </tr>
 <tr>
 <td>$N(i\tilde Q)=-N(\tilde Q)$</td>
 <td>the switch between the sectors</td>
 </tr>
 <tr>
-<td>$\tilde\varrho_\Psi=\tfrac12(e_t+i\vec r)$</td>
-<td>a state; $\lvert\vec r\rvert\le1$; trace one</td>
+<td>$\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec r)$</td>
+<td>a state; $\lvert\vec r\rvert\le1$; $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$</td>
 </tr>
 <tr>
 <td>$N=\tfrac14(1-r^{2})=\lambda_+\lambda_-$</td>
@@ -423,7 +496,7 @@ $$</p>
 <td>the purity on the slice</td>
 </tr>
 <tr>
-<td>$S_{\mathrm{lin}}=2N$</td>
+<td>$S_{\mathrm{lin}}=2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2})=2N$</td>
 <td>the linear entropy</td>
 </tr>
 <tr>
@@ -439,8 +512,12 @@ $$</p>
 <td>the Gibbs state; $N=1/(4\cosh^{2}\beta\lvert\vec h\rvert)$</td>
 </tr>
 <tr>
-<td>$N/(\operatorname{Tr}/2)^{2}$</td>
+<td>$N/(\mathrm{Sc}\,\tilde{Ϛ}_\Psi)^{2}$</td>
 <td>the scale-free impurity, valid off the slice</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde Q)=Q_tI_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$</td>
+<td>the $2\times2$ image; $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, stated once in <em>Matrix Representations Conventions</em></td>
 </tr>
 </tbody>
 </table></div>
@@ -450,8 +527,10 @@ $$</p>
 <li><a href="../articles_physics/states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for $S_{\mathrm{lin}}=2N$, the four readings, the Gibbs state and the nullness warning.</li>
 <li><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do</a>, for the pure state as a zero divisor and the mixed state as invertible.</li>
 <li><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a>, for the one metric and the sign delivered by the coordinate.</li>
+<li><a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a>, for rule 9, the inertia $(n,m,r)$ and the excess $\sigma$.</li>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the reading of an element in $\mathrm{Sc}$ and in $\langle\cdot\rangle_{\natural}$.</li>
+<li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the normalised state and the factor two.</li>
 <li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the mass as a level set of the norm.</li>
-<li><a href="../articles_physics/the-null-cone-the-massless-boundary.html">The Null Cone: The Massless Boundary</a>, for the material side of the same cone.</li>
 </ul>
       </div>
     </main>

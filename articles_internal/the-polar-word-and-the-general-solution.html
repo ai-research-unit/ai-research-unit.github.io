@@ -84,7 +84,7 @@ $$</p>
 <p><strong>Why the note is needed.</strong> A display with an amplitude, a phase, a boost and a rotor reads like an ansatz. Madelung's substitution $\tilde\Xi=A\,e^{iS/\hbar}e_t$ is an ansatz: it names a class of fields and it drops six parameters. The word names no class and drops nothing. The reader who takes it for an ansatz takes it for a solution, and then asks how a solution can be a change of coordinates.</p>
 <p><strong>The four questions answered here.</strong> First, in what sense the word is a parametrization and not a solution. Second, in what sense the propagator formula is the general solution. Third, how the two connect: the composition $\tilde Q\tilde\Xi$, read back in the chart. Fourth, whether the two unit factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are the identity, when they are, and why the propagator's own boost is the identity.</p>
 <p><strong>What was checked, and how.</strong> Every statement below was recomputed on a hundred random cases in a biquaternion arithmetic independent of the corpus's formulas. The word was rebuilt from the four coordinates and compared with the element; the flow was applied and the coordinates were re-extracted; the derivative laws were checked against finite differences. The residuals are collected in §<em>The Checks</em>.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$; $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ is the quaternionic norm and $N(\tilde X)=\langle\tilde X\rangle_{\natural}$ its value, the determinant. The Hamiltonian is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^{3}$, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. Time is $t'$ and the parent's material length is $r'_t=c\,t'$; the note uses $t'$ only. The two frequencies that recur are</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$, and $2\,\mathrm{Sc}$ is the trace of the $2\times2$ image; $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ is the quaternionic norm and $N(\tilde X)=\langle\tilde X\rangle_{\natural}$ its value, which is the determinant of the image. The Hamiltonian is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t\in\mathbb{R}$ and $\vec h_\Psi\in\mathbb{R}^{3}$, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. Time is $t'$ and the parent's material length is $r'_t=c\,t'$; the note uses $t'$ only. The two frequencies that recur are</p>
 <p>$$
 \omega_t=\frac{h_t}{\hbar},
 \qquad
@@ -270,7 +270,7 @@ $$</p>
 <p>$$
 |\langle\tilde\Xi(t')\rangle_{\natural}|=r^{2},
 \qquad
-\rho(t')=\mathrm{Tr}\bigl(\tilde\Xi(t')^{\dagger}\tilde\Xi(t')\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}.
+\rho(t')=2\,\mathrm{Sc}\bigl(\tilde\Xi(t')^{\dagger}\tilde\Xi(t')\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}.
 $$</p>
 <p>The first gives $r$, the second gives $\theta_{\mathrm{rpd}}$ once $r$ is known. Both are unchanged in the flow, to $10^{-15}$ in the checks. The six that move are the ones no norm reads, which is the statement that the rotor and the axes are frame data.</p>
 <h3 id="33-the-derivative-laws">3.3 The derivative laws</h3>
@@ -317,7 +317,7 @@ $$</p>
 <p>to $2.9\times10^{-15}$. The rotor does not run; the frame does. This is the precise content of "the rotor is carried by the propagator's rotor".</p>
 <h3 id="34-the-one-line-answer-to-how-do-you-get-from-1-to-2">3.4 The one-line answer to "how do you get from (1) to (2)"</h3>
 <p><strong>You do not derive one from the other, because they are different kinds of object.</strong> (1) is a chart; (2) is a flow. The link is the composition: take the word at $t'=0$, multiply on the left by $\tilde Q(t')$, and read the product back in the chart. The result is (1) with the five evolved parameters of §3.1. In that sense (2) is (1) at time zero plus the propagator, re-expressed in the coordinates of (1).</p>
-<h2 id="4-are-math198-and-math199-equal-to-one">4. Are $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ Equal to One?</h2>
+<h2 id="4-are-math199-and-math200-equal-to-one">4. Are $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ Equal to One?</h2>
 <h3 id="41-no-and-the-flow-says-exactly-how-they-move">4.1 No, and the flow says exactly how they move</h3>
 <p><strong>They are not the identity in general, and the flow does not set them to the identity.</strong> It transforms them:</p>
 <p>$$
@@ -342,7 +342,7 @@ $$</p>
 <p><strong>The sign of the rotor is the branch of the angle.</strong> With $\alpha$ in $(-\pi/2,\pi/2]$, a central field whose argument lies outside the strip needs $\tilde u_{\mathrm r}=-e_t$. The sign is not a physical datum; it is the half-turn branch of the double cover, and it is the same ambiguity as $\alpha\mapsto\alpha+\pi$ in §1.3.</p>
 <p><strong>The central class is not invariant under a general Hamiltonian.</strong> If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi$ has a vector part, so a central field leaves the centre at once. The class is invariant exactly when $\tilde H_\Psi$ is central, that is when $\vec h_\Psi=0$. In the check, a central field evolved with $h_t=0.3$ and $\vec h_\Psi=(0.2,0,0)$ acquired a vector part of norm $0.304$ in time $0.9$, while the same field evolved with $\vec h_\Psi=0$ stayed central to machine precision.</p>
 <p><strong>So the answer to "are they one?" is: only for the fields whose word has collapsed, and those fields are not stable under the flow unless the Hamiltonian is central too.</strong></p>
-<h3 id="43-the-propagators-boost-is-math220-for-a-structural-reason">4.3 The propagator's boost is $e_t$, for a structural reason</h3>
+<h3 id="43-the-propagators-boost-is-math221-for-a-structural-reason">4.3 The propagator's boost is $e_t$, for a structural reason</h3>
 <p><strong>The propagator's word has no boost at all.</strong> The reason is the exponent. With $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ Hermitian,</p>
 <p>$$
 -i\frac{\tilde H_\Psi}{\hbar}=-\frac{i h_t}{\hbar}\,e_t+\frac{\vec h_\Psi}{\hbar}.
@@ -418,7 +418,7 @@ $$</p>
 <p><strong>The table reads as the laws say.</strong> The scale and the rapidity do not move in the first ten digits. The phase advances by exactly $0.62\times0.8=0.496$ per step, which is $-\omega_t\Delta t'$. Both axes move, and the rotor angle moves by $0.7915$ and $0.8358$ over the two steps, not by the $2\omega_\Psi\Delta t'=0.908$ that the additive law would give. The two invariants are constant: $|\langle\tilde\Xi\rangle_{\natural}|=0.6931810730$ and $\rho=4.4200000000$ at all three times.</p>
 <h2 id="6-where-each-statement-comes-from">6. Where Each Statement Comes From</h2>
 <p><strong>Hermitian versus anti-Hermitian.</strong> The equation's generator is $-i\tilde H_\Psi/\hbar$. Hermitian elements exponentiate to $*$-unitary ones, so the flow preserves the Hermitian norm. Inside the word, the boost is the Hermitian factor and the rotor is the real unitary one, and the two behave differently because they sit in the two sectors: $\tilde U_{\Psi,\mathrm b}\in\mathbb{B}_{\Psi}$ and $\tilde u_{\mathrm r}$ in the real quaternion subalgebra.</p>
-<p><strong>Why the real rotor cancels in both norms.</strong> The rotor satisfies $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=e_t$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and it commutes with the central factor because it is real. So it cancels in $\langle\tilde X\rangle_{\natural}$ and in $\mathrm{Tr}(\tilde X^{\dagger}\tilde X)$. That is why neither norm reads it: the quaternionic norm sees the scale and the phase, and the Hermitian norm sees the scale and the boost.</p>
+<p><strong>Why the real rotor cancels in both norms.</strong> The rotor satisfies $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=e_t$ and $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and it commutes with the central factor because it is real. So it cancels in $\langle\tilde X\rangle_{\natural}$ and in $2\,\mathrm{Sc}(\tilde X^{\dagger}\tilde X)$. That is why neither norm reads it: the quaternionic norm sees the scale and the phase, and the Hermitian norm sees the scale and the boost.</p>
 <p><strong>Why conjugation preserves the rapidity.</strong> $\tilde u_Q\tilde U_{\Psi,\mathrm b}\tilde u_Q^{\natural}$ has the same $e_t$ coefficient as $\tilde U_{\Psi,\mathrm b}$, namely $\cosh(\theta_{\mathrm{rpd}}/2)$, and the same vector coefficient up to the rotation of $\vec u_{\mathrm b}$. Rapidity is a scalar under conjugation; the axis is a vector.</p>
 <p><strong>Why the central phase is the only scalar that runs.</strong> The central factor is $e^{i\alpha}$, and the only central datum in the Hamiltonian is $h_t$. So the phase can run at $\omega_t$ and at nothing else. The gap is carried by the vector part, and the vector part can only move the frame. That is the two-rate structure in one sentence.</p>
 <p><strong>How this meets the path integral.</strong> The path-integral articles write the evolution operator as $\tilde Q(r'_t)=\exp(-ik'_t r'_t)e_t$ and the position kernel as $Ke_t$, a scalar times $e_t$, and they say so explicitly because their Hamiltonian is central. That is this note's $\tilde Q$ in the case $\vec h_\Psi=0$: the rotor $\tilde u_Q$ is $e_t$, the word of the propagator is a phase alone, and the kernel is a scalar. With $\vec h_\Psi\neq0$ the same object carries the rotor, the word does not collapse, and the kernel is no longer a scalar times $e_t$ but a matrix element of a non-central element. The two treatments agree on the central case and differ only in what the rotor does.</p>
@@ -617,7 +617,7 @@ $$</p>
 <td>The propagator's phase</td>
 </tr>
 <tr>
-<td>$\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$</td>
+<td>$\rho=2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)$</td>
 <td>The Hermitian norm (density)</td>
 </tr>
 <tr>
