@@ -36,9 +36,9 @@ Each coefficient is a complex number, $Q_\mu=q_\mu+iq'_\mu$ with $q_\mu,q'_\mu$ 
 $$
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
-Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=iq'_t$, the value is $-{q_t'}^{2}+q_x^2+q_y^2+q_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=q_t$ and $Q_k=iq'_k$, it is $q_t^2-{q_x'}^{2}-{q_y'}^{2}-{q_z'}^{2}$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=iq'_t$.
+Every coefficient is $+1$, and the value is complex in general. The tuple is a coefficient tuple; a pair of counts appears only when a sector is imposed. On $\mathbb{B}_{\Phi}$, with $Q_t=iq'_t$, the value is $-{q_t'}^{2}+q_x^2+q_y^2+q_z^2$; on $\mathbb{B}_{\Psi}$, with $Q_t=q_t$ and $Q_k=iq'_k$, it is $q_t^2-{q_x'}^{2}-{q_y'}^{2}-{q_z'}^{2}$. The metric is $\delta_{\mu\nu}=(1,1,1,1)$, and on $\mathbb{B}_{\Phi}$ the interval is still the plain sum $\sum_\mu Q_\mu^2$, read on the complex coefficient $Q_t=iq'_t$.
 
-**The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{B}_{\Phi}$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real signature appears only when a sector is imposed. A Lorentzian signature is not a property of this frame.
+**The general frame, and its form is Euclidean.** The $\mathbb{B}$ frame is the frame of the biquaternion universe itself, not of one sector of it; the $\mathbb{B}_{\Phi}$ frame is this one read on a sector. Its form is $\sum_\mu Q_\mu^2$, with all four coefficients $+1$. On real coefficients that is the ordinary Euclidean metric: positive definite, with no direction singled out by a sign. The coefficients are complex in general, so the form is the complexified Euclidean form; a real pair of counts appears only when a sector is imposed. A Lorentzian reading is not a property of this frame.
 
 **The metric is the identity, and it is the same in both frames.** It is $\delta_{\mu\nu}=(1,1,1,1)$, so the interval is the plain sum $\sum_\mu Q_\mu^2$ and no direction is singled out by a sign. No array enters the frame: the arrays belong to *Matrix Representations Conventions*, and the squares of their four values are the same in both frames. What separates the two frames is the coordinate that reads an interval, not the squares.
 
@@ -62,7 +62,7 @@ with $q'_t,q_k$ real. On the material case $Q_t=ix_0$ and $Q_k=x_k$ for $k=1,2,3
 $$
 -x_0^2+x_1^2+x_2^2+x_3^2 ,
 $$
-with one minus on the time term and none on the space. The minus is not a signature: it is the square of the $i$ in $Q_t=iq'_t$, written once in the coordinate and read once here. The sign is now explicit in the coordinate, and no metric is written. The frame fixes the interval; it does not offer a choice of interval. Read on $\mathbb{B}_{\Phi}$, this is the interval of the two real sectors; on $\mathbb{B}_{\Psi}$ the same form is read on the informational coordinate, where the minuses sit on the space.
+with one minus on the time term and none on the space. The minus is not counted as a property of the metric: it is the square of the $i$ in $Q_t=iq'_t$, written once in the coordinate and read once here. The sign is now explicit in the coordinate, and no metric is written. The frame fixes the interval; it does not offer a choice of interval. Read on $\mathbb{B}_{\Phi}$, this is the interval of the two real sectors; on $\mathbb{B}_{\Psi}$ the same form is read on the informational coordinate, where the minuses sit on the space.
 
 **The squares are the same in both frames.**
 $$
@@ -118,7 +118,7 @@ and it is linear over the complex field in either frame. The two squares are $\g
 
 ## The Rules
 
-Eight rules follow.
+Nine rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
 2. **One product, one coordinate.** A product is read in one frame's coordinate, and the coordinate fixes the interval. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, and it is the same in both frames. The matrices carry no frame and are never relabelled.
@@ -127,7 +127,9 @@ Eight rules follow.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The one metric has real coefficients.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates, and the article gives it. The frame is named on the coordinate and no metric is written, because the substitution carries the interval at once. A display is read only in the frame that produced it. The substitution does not touch the matrices.
-8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-(q'_t)^2+q_x^2+q_y^2+q_z^2$: one minus, the square of the one $i$ of $Q_t=iq'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, not a signature, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
+8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-(q'_t)^2+q_x^2+q_y^2+q_z^2$: one minus, the square of the one $i$ of $Q_t=iq'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
+
+9. **The word *signature* is not used, and the metric has no signature to carry.** There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, its four coefficients are $+1$, and an object with four equal coefficients has nothing to sign. The signs a reader meets belong to the coordinate, $i^2=-1$ in $Q_t=iq'_t$, and to the plain weight $\varepsilon$ of the product; neither is carried by the metric. What is counted is named directly. The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and the integer $\sigma=n-m$ is the **excess** of the positive over the negative directions. A metric, an interval and a norm therefore take no such word at all, and a sentence that needs one is a sentence that has attached a count to the wrong object.
 
 **The plain weight is not a metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 

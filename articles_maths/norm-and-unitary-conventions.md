@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The norm is the form at its two equal arguments. This article owns the one-argument reading: the letters of the four norms, the qualified regular and the qualified degenerate, the six layer tables that record the form, the algebraic norm, the realified signature and the role of each bracket, and the unitary convention that fixes what *norm one* means layer by layer.
+The norm is the form at its two equal arguments. This article owns the one-argument reading: the letters of the four norms, the qualified regular and the qualified degenerate, the six layer tables that record the form, the algebraic norm, the realified inertia and the role of each bracket, and the unitary convention that fixes what *norm one* means layer by layer.
 
 The norm is not one object across the layers. The complex, split-complex, dual, reduced biquaternion, quaternion and biquaternion layers do not share a norm, and a glyph such as $U$ names no set by itself. The article therefore fixes the condition layer by layer before it fixes the glyph, and the tables are read as one row per bracket that survives on the layer.
 
@@ -18,11 +18,11 @@ The order is: the norm reading of the four letters, the qualified regular and de
 
 **The four formulas are written on the biquaternion glyph, whose two marks are independent; when one mark degenerates the brackets collapse two-and-two, and in the reduced biquaternions no mark degenerates and the four remain distinct.** Each table below gives only the brackets that survive on the layer, with the norm they carry.
 
-**One table per layer.** Each table reads the brackets that survive on the layer's own glyph. The **algebraic norm** is the diagonal of the form, the **realified signature** is that of the real quadratic form with the positive directions counted first, and the **role** records what the bracket does: the definite bracket carries the topology and the multiplicative one the invertibility criterion.
+**One table per layer.** Each table reads the brackets that survive on the layer's own glyph. The **algebraic norm** is the diagonal of the form, the **realified inertia** is that of the real quadratic form with the positive directions counted first, and the **role** records what the bracket does: the definite bracket carries the topology and the multiplicative one the invertibility criterion.
 
 **The complex numbers $\mathbb{C}$**, $Q=q+iq'$.
 
-| bracket | form | algebraic norm | realified signature | role |
+| bracket | form | algebraic norm | realified inertia | role |
 |---|---|---|---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}$, $\operatorname{Re}\langle Q\rangle=q^2-q'^2$ | $(1,1)$ | anisotropic; real part indefinite |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2+q'^2$ | $(2,0)$ | definite; multiplicative; topology |
@@ -31,12 +31,12 @@ In $\mathbb{C}$ the star bracket is definite and multiplicative at once. The pla
 
 **The split-complex numbers $\mathbb{C}_{\mathrm{spl}}$**, $Q=q+jq'$, $j^2=+1$.
 
-| bracket | form | algebraic norm | realified signature | role |
+| bracket | form | algebraic norm | realified inertia | role |
 |---|---|---|---|---|
 | $\langle Q_1,Q_2\rangle=Q_1Q_2$ | plain, also quaternionic | $\langle Q\rangle=Q^2\in\mathbb{C}_{\mathrm{spl}}$, $\operatorname{Re}\langle Q\rangle=q^2+q'^2$ | $(2,0)$ | definite; topology; not multiplicative |
 | $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ | Hermitian, also Krein | $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2$ | $(1,1)$ | multiplicative; invertibility; null cone |
 
-The two brackets exchange their signatures with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the invertibles and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
+The two brackets exchange their inertias with the sign of the square of the coefficient unit: $i^2=-1$ makes the real part of the plain norm indefinite and the star norm definite, while $j^2=+1$ does the reverse. Definite and multiplicative are split across the two brackets, and no single bracket is both, since $(1+j)(1-j)=0$ with $1\pm j\neq0$. The topological norm is therefore $\sqrt{\operatorname{Re}\langle Q\rangle}$, with no modulus sign, and the scale of the polar factor is $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, which is multiplicative on the invertibles and is not a norm. Over the dual numbers $\mathbb{C}_{\mathrm{dln}}$ the square of the coefficient unit vanishes and both brackets realify to the rank-one form $q^2$; the algebraic norm is degenerate, and the topology is the Euclidean form $q^2+q'^2$ of the coefficient plane, which is not one of the brackets.
 
 **The modulus of an element is a square root of its algebraic norm**: $\sqrt{\langle Q\rangle_{*}}$ over $\mathbb{C}$ and $\mathbb{C}_{\mathrm{dln}}$, and $\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ over the indefinite $\mathbb{C}_{\mathrm{spl}}$; the modulus is defined through the algebraic norm.
 
@@ -69,7 +69,7 @@ The tessarine bracket carries the algebra and the tessarine-Hermitian bracket ca
 
 **The quaternions $\mathbb{H}$**, $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ with real coefficients and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | plain, also Krein | $q_t^2-q_x^2-q_y^2-q_z^2$ | $(1,3)$ | indefinite; not multiplicative |
 | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$ | quaternionic, also Hermitian | $q_t^2+q_x^2+q_y^2+q_z^2$ | $(4,0)$ | definite; multiplicative; topology |
@@ -78,7 +78,7 @@ The coefficients are real and the only non-trivial involution is the quaternion 
 
 **The split-quaternions $\mathbb{H}_{\mathrm{spl}}$**, the same glyph over the units $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=+e_t$.
 
-| bracket | form | algebraic norm | signature | role |
+| bracket | form | algebraic norm | inertia | role |
 |---|---|---|---|---|
 | $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ | plain, also Krein | $q_t^2-q_x^2+q_y^2+q_z^2$ | $(3,1)$ | indefinite; not multiplicative |
 | $\langle\tilde q_1,\tilde q_2\rangle_{\natural}=\mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2)$ | quaternionic, also Hermitian | $q_t^2+q_x^2-q_y^2-q_z^2$ | $(2,2)$ | multiplicative; indefinite; zero divisors |
@@ -87,14 +87,14 @@ The collapse of the names is the same. The quaternionic norm is the split-quater
 
 **The biquaternions $\mathbb{B}$**, $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the marks $\bar{\cdot}$ and ${}^{\natural}$ are independent, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$.
 
-| bracket | form | algebraic norm | value | realified signature | role |
+| bracket | form | algebraic norm | value | realified inertia | role |
 |---|---|---|---|---|---|
 | $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | plain | $Q_t^2-Q_x^2-Q_y^2-Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | complex cone |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$ | quaternionic | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ | $\mathbb{C}$ | $(4,4)$ | multiplicative; zero-divisor cone |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(8,0)$ | definite; topology |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | Krein | $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$ | $\mathbb{R}$ | $(2,6)$ | indefinite |
 
-The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The signature column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}_{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
+The quaternionic norm is the determinant in the $2\times2$ image and is the multiplicative one, vanishing exactly on the zero-divisor cone; the Hermitian norm is the definite one and carries the topology; the plain and the Krein norms are the remaining two, complex and indefinite respectively. The inertia column is that of the realified form on the eight real parameters; on the material sector the restrictions are those stated above. The split-biquaternion layer $\mathbb{B}_{\mathrm{spl}}$ keeps the same four brackets, its coefficients being split-complex instead of complex, so the two bilinear norms take split-complex values and the two sesquilinear ones stay real.
 
 **The one-line rule.** Write the bracket with the intrinsic conjugation of the layer: the star in $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$ and $\mathbb{C}_{\mathrm{dln}}$, where the intrinsic conjugation is the identity; the quaternion conjugation in $\mathbb{H}$ and $\mathbb{H}_{\mathrm{spl}}$, where the bar is the identity; the tessarine sign in $\mathbb{B}_{\mathrm{red}}$; and both marks, all four brackets, in $\mathbb{B}$ and $\mathbb{B}_{\mathrm{spl}}$.
 
@@ -167,7 +167,7 @@ Outside them the letter keeps a single shape for a single meaning, and the font 
 
 The four letters $P$, $N$, $H$ and $\mathrm{Kr}$ name the four algebraic norms with one argument, beside the four forms with two. A biquaternion is **regular for a letter** when the value of that letter is non-zero, and **degenerate for that letter** when it is zero; only $N$ decides invertibility, so the $N$-regular elements are the invertibles and the $N$-degenerate ones the non-invertibles, while the other three pairs are not a partition into invertible and singular.
 
-The six layer tables give, for each layer, only the brackets that survive on its glyph. The **algebraic norm** is the diagonal of the form, the **realified signature** is that of the real quadratic form with the positive directions counted first, and the **role** records whether the bracket carries the topology or the invertibility criterion. In $\mathbb{C}$ the star bracket is definite and multiplicative at once; in the split-complex numbers the two exchange their signatures and no bracket is both; in the quaternion and biquaternion layers the Hermitian bracket is the definite one and the quaternionic norm the multiplicative one; in the reduced biquaternions no mark degenerates and the four remain distinct.
+The six layer tables give, for each layer, only the brackets that survive on its glyph. The **algebraic norm** is the diagonal of the form, the **realified inertia** is that of the real quadratic form with the positive directions counted first, and the **role** records whether the bracket carries the topology or the invertibility criterion. In $\mathbb{C}$ the star bracket is definite and multiplicative at once; in the split-complex numbers the two exchange their inertias and no bracket is both; in the quaternion and biquaternion layers the Hermitian bracket is the definite one and the quaternionic norm the multiplicative one; in the reduced biquaternions no mark degenerates and the four remain distinct.
 
 **Norm one** is fixed layer by layer: $\{\pm1\}$ over the reals, the unit circle over the complex numbers, the unit hyperbola over the split-complex numbers, the two lines $\pm1+\mathrm{M}$ over the dual numbers, the group of invertibles of the layer over the quaternion and biquaternion algebras. The glyphs $u$, $\tilde u$, $U$ and $\tilde U$ mark a unit element, not a unitary one: the unitary condition is a different condition, stated in §*The Unitary Convention*, and the heading keeps its old name because the corpus cites it by that name.
 
@@ -179,7 +179,7 @@ The reservation of $U$ and $u$ is local to the layers of the biquaternion family
 |---|---|
 | $P(\tilde Q)$, $N(\tilde Q)$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | The plain, quaternionic, Hermitian and Krein algebraic norms, the forms with one argument |
 | regular for a letter, degenerate for a letter | the value under $P$, $N$, $H$ or $\mathrm{Kr}$ is non-zero, respectively zero |
-| $\operatorname{Re}\langle Q\rangle$ | The realified form, whose signature is tabulated layer by layer |
+| $\operatorname{Re}\langle Q\rangle$ | The realified form, whose inertia is tabulated layer by layer |
 | $U$, $\tilde U$, $\tilde u$, $\vec u$ | A norm-one element of a layer, and its pure case; not a unitary element |
 | $\mathrm{U}(n)$ | The unitary group, upright roman, outside the layers |
 | $\mathsf{U}(R)$ | The group of invertibles of a ring, sans-serif |

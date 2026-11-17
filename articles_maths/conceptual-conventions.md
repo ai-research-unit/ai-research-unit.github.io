@@ -16,11 +16,11 @@ Each concept below is used somewhere in the corpus, and each one brings somethin
 
 - **The Pauli matrices $\sigma_k$.** *The defect:* the array carries a preferred axis, and neither the algebra nor the sentence names it. Isotropy is measured, so the axis is a defect and not a notation.
 - **The gamma matrices $\gamma_\mu$.** *The defect:* the five basis operators carry a preferred frame, and with it a preferred axis, and the frame is not named. Isotropy is measured, so the frame is a defect and not a notation.
-- **A Clifford algebra as a foundation.** *The defect:* it starts from a quadratic form, so a metric is imposed on the algebra before the algebra is read. The biquaternion algebra carries its own form, the norm $\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and the sector fixes the signature. A metric supplied from outside is a preferred datum, and nothing in the algebra asks for one.
+- **A Clifford algebra as a foundation.** *The defect:* it starts from a quadratic form, so a metric is imposed on the algebra before the algebra is read. The biquaternion algebra carries its own form, the norm $\tilde Q\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and the sector fixes the signs. A metric supplied from outside is a preferred datum, and nothing in the algebra asks for one.
 
 **The kinds of defect.** A defect is one of three kinds, and each kind has a test that can be run on a sentence.
 
-The first is a **missing datum**. The sentence uses an axis, a dimension, a signature, a root or a basis without naming it. The test is covariance. Rotate the algebra, read the sentence again, and compare. If it comes back unchanged it is a fact about the algebra. If it comes back changed it is a fact about the page, and a fact about the page has to say which page.
+The first is a **missing datum**. The sentence uses an axis, a dimension, an inertia, a root or a basis without naming it. The test is covariance. Rotate the algebra, read the sentence again, and compare. If it comes back unchanged it is a fact about the algebra. If it comes back changed it is a fact about the page, and a fact about the page has to say which page.
 
 The second is **a part printed as the whole**. A half, an ideal, a column or a sector is written as though it were the algebra. The test is a count. Name the other piece and ask where it went. If it was dropped, the sentence describes a part and claims a whole.
 

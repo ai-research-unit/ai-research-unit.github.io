@@ -118,7 +118,7 @@ and it is linear over the complex field in either frame. The two squares are $\g
 
 ## The Rules
 
-Eight rules follow.
+Nine rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
 2. **One product, one coordinate.** A product is read in one frame's coordinate, and the coordinate fixes the interval. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, and it is the same in both frames. The matrices carry no frame and are never relabelled.
@@ -128,6 +128,8 @@ Eight rules follow.
 6. **$Q_t=i q'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=i q'_t$ in the coordinates, and the article gives it. The frame is named on the coordinate and no metric is written, because the substitution carries the interval at once. A display is read only in the frame that produced it. The substitution does not touch the matrices.
 8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$: one minus, the square of the one $i$ of $Q_t=i q'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, not a declared sign, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
+
+9. **The word *signature* is not used, and the metric has no signature to carry.** There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, its four coefficients are $+1$, and an object with four equal coefficients has nothing to sign. The signs a reader meets belong to the coordinate, $i^2=-1$ in $Q_t=iq'_t$, and to the plain weight $\varepsilon$ of the product; neither is carried by the metric. What is counted is named directly. The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and the integer $\sigma=n-m$ is the **excess** of the positive over the negative directions. A metric, an interval and a norm therefore take no such word at all, and a sentence that needs one is a sentence that has attached a count to the wrong object.
 
 **The plain weight is not a metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_\eta^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
 

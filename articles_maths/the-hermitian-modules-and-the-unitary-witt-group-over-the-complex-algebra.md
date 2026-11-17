@@ -8,7 +8,7 @@ The article proves the freedom, exhibits the canonical form and the unitary grou
 
 The field property that makes every module free is *The Specificities of the Complex Algebra*; the two forms are *The Two Forms and the Two Algebraic Norms of the Complex Space*; the cone is *The Positivity and the Ray of Squares of the Complex Space*; the general theory of the two-sided operators on a Hermitian module is *Bilinear Operators on a Hermitian Module with Hermitian Adjoint*, and the general Witt theory is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*.
 
-**Interpretation.** The algebra is $\mathbb{C}$ with the bar, and ${}^{*}=\bar{\cdot}$ is the conjugation. The free module of rank $n$ is $\mathbb{C}^{n}$ with the coordinatewise action, and its elements are $x=(x_1,\dots,x_n)$, $y=(y_1,\dots,y_n)$. A Hermitian form is written $h(x,y)=\sum_{k}x_ky_k^{*}$, and a general one is $h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$ with $G$ a Hermitian matrix. The inertia of $h$ is the triple $(n,m,r)$ of positive, negative and zero directions, and the signature is $\sigma=n-m$.
+**Interpretation.** The algebra is $\mathbb{C}$ with the bar, and ${}^{*}=\bar{\cdot}$ is the conjugation. The free module of rank $n$ is $\mathbb{C}^{n}$ with the coordinatewise action, and its elements are $x=(x_1,\dots,x_n)$, $y=(y_1,\dots,y_n)$. A Hermitian form is written $h(x,y)=\sum_{k}x_ky_k^{*}$, and a general one is $h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$ with $G$ a Hermitian matrix. The inertia of $h$ is the triple $(n,m,r)$ of positive, negative and zero directions, and the excess is $\sigma=n-m$.
 
 ## The Hermitian Modules
 
@@ -50,7 +50,7 @@ The field property that makes every module free is *The Specificities of the Com
 
 ## The Classification by Inertia
 
-**Definition.** The **inertia** of a Hermitian form is the triple $(n,m,r)$ of the numbers of positive, negative and zero eigenvalues of its Gram matrix; the **rank** is $n+m$ and the **signature** is $\sigma=n-m$.
+**Definition.** The **inertia** of a Hermitian form is the triple $(n,m,r)$ of the numbers of positive, negative and zero eigenvalues of its Gram matrix; the **rank** is $n+m$ and the **excess** is $\sigma=n-m$, the positive count less the negative one.
 
 **Theorem (Sylvester's law).** Two Hermitian forms over the algebra are congruent exactly when they have the same inertia. Every form is congruent to $\mathrm{diag}(1_{n},-1_{m},0_{r})$.
 
@@ -102,7 +102,7 @@ A Hermitian module over the complex algebra is a complex vector space with a Her
 |---|---|
 | $h(x,y)=\sum_{k}x_ky_k^{*}$ | the canonical Hermitian form on $\mathbb{C}^{n}$ |
 | $h_{G}(x,y)=\sum_{k,l}x_kG_{kl}y_l^{*}$ | the Hermitian form of the Hermitian matrix $G$ |
-| $(n,m,r)$, $\sigma=n-m$ | the inertia and the signature of a Hermitian form |
+| $(n,m,r)$, $\sigma=n-m$ | the inertia and the excess of a Hermitian form |
 | $\mathrm{U}(n)$ | the unitary group, the automorphism group of the canonical form |
 | $H=\mathrm{diag}(1,-1)$ | the hyperbolic plane, of inertia zero and of Witt class zero |
 | $W(\mathbb{C},{}^{*})\cong\mathbb{Z}$ | the unitary Witt group, computed by the inertia |
