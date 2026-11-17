@@ -7,14 +7,14 @@ Quantum thermodynamics is the thermodynamics of systems whose state is a density
 The interpretation rests on one formula, inherited from the companion articles:
 
 $$
-\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}).
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}).
 $$
 
-The trace is **twice the scalar part** in the $2\times2$ image. This is not a convenience of notation, but it is also not an intrinsic operation on the biquaternion algebra: $\mathrm{Sc}$ is defined on $\mathbb{B}$, while $\mathrm{Tr}=\mathrm{tr}\circ\mathsf{M}_2$ requires the representation. The partition function and every thermal average are computed by taking the scalar part of a product and doubling it; the trace is the matrix reading, and it is used last, at normalisation.
+The scalar part is defined on the algebra itself, and no step below needs the $2\times2$ representation. The partition function and every thermal average are computed by taking the scalar part of a product; the factor $2$ appears once, in the partition function, where it counts the two levels of a single biquaternion.
 
 Two structural facts follow and are developed below. First, the Gibbs state of a qubit is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ — a point in the Bloch ball — and its thermodynamic functionals are scalars extracted from $\mathbb{B}_{\Psi}$-valued objects. Second, the free energy is the additive real scalar carried by the **modular Hamiltonian** $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$, which also lies in $\mathbb{B}_{\Psi}$; and the temperature $\beta$ that parametrises the state measures a displacement along the imaginary-time direction of the material sector $\mathbb{B}_{\Phi}$, as the companion articles on the KMS condition and on the partition function record.
 
-The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the Hermitian form, with the trace as the final reading at normalisation. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
+The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the Hermitian form, with the scalar part as the final reading. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
 
 ## The Gibbs State and the Convergence of $Z$
 
@@ -22,12 +22,12 @@ At inverse temperature $\beta$ a quantum system with Hamiltonian $\tilde H_\Psi$
 
 $$
 \tilde{Ϛ}_{\Psi,\beta}=\frac{1}{Z}\,\exp(-\beta H),\qquad
-Z(\beta)=\mathrm{Tr}\big(\exp(-\beta H)\big),
+Z(\beta)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big),
 $$
 
-provided the trace converges. The convergence condition is part of the content, because when it fails the state does not exist.
+provided the partition sum converges. The convergence condition is part of the content, because when it fails the state does not exist.
 
-For a **finite-level** system the trace is a finite sum of exponentials, so $Z$ is an entire function of $\beta$ and the Gibbs state exists for every real $\beta$. A single biquaternion is a two-level system, and $n$ of them span $M_{2^n}(\mathbb{C})$; this is the case in which the framework's exact computations live, and it is why no restriction appears on the closed formulas below.
+For a **finite-level** system the partition sum is a finite sum of exponentials, so $Z$ is an entire function of $\beta$ and the Gibbs state exists for every real $\beta$. A single biquaternion is a two-level system, and $n$ of them span $M_{2^n}(\mathbb{C})$; this is the case in which the framework's exact computations live, and it is why no restriction appears on the closed formulas below.
 
 For a system whose spectrum is unbounded above and bounded below — the generic many-body case — convergence depends on the real part of $\beta$. With eigenvalues $E_n\to+\infty$,
 
@@ -44,7 +44,7 @@ $$
 \qquad \vec u_\Psi=\frac{\vec h_\Psi}{|\vec h_\Psi|},
 $$
 
-an element of $\mathbb{B}_{\Psi}$. Applying the Hermitian form, with its trace reading at normalisation, to $\tilde{H}_{\Psi,1}=e_t$ and $\tilde{H}_{\Psi,2}=\exp(-\beta H)$ gives
+an element of $\mathbb{B}_{\Psi}$. Applying the Hermitian form to $\tilde{H}_{\Psi,1}=e_t$ and $\tilde{H}_{\Psi,2}=\exp(-\beta H)$, and doubling, gives
 
 $$
 \boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)\;},
@@ -57,20 +57,20 @@ $$
 \vec r=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi.
 $$
 
-Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,\beta})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself the trace formula. The state lies in the Bloch ball, with $|\vec r|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
+Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself a statement about the scalar part. The state lies in the Bloch ball, with $|\vec r|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
 
 ## Thermodynamic Quantities as Functionals of the State
 
-Every thermodynamic quantity of the canonical ensemble is a functional of the Gibbs state, and in the framework each is a scalar extracted by the Hermitian form, with the trace as its final reading at normalisation:
+Every thermodynamic quantity of the canonical ensemble is a functional of the Gibbs state, and in the framework each is a scalar extracted by the Hermitian form:
 
-- internal energy: $E[\tilde{Ϛ}_{\Psi}]=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative only when $\tilde H_\Psi\ge0$;
-- entropy: $S[\tilde{Ϛ}_{\Psi}]=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, whose trace reading is $-\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$;
+- internal energy: $E[\tilde{Ϛ}_{\Psi}]=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$; the star is inert on $\mathbb{B}_{\Psi}$, and the unstarred scalar part is real, and non-negative only when $\tilde H_\Psi\ge0$;
+- entropy: $S[\tilde{Ϛ}_{\Psi}]=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$;
 - free energy: $F[\tilde{Ϛ}_{\Psi}]=E[\tilde{Ϛ}_{\Psi}]-\tfrac1\beta S[\tilde{Ϛ}_{\Psi}]$;
 - heat capacity: $C=\partial E/\partial T$.
 
 The entropy functional needs the logarithm, which exists on $\mathbb{B}$ but is multivalued. The companion exercise on entanglement entropy establishes that $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ is correct in the interior of the Bloch ball when the principal branch is used, and that the logarithm — hence the formula written this way — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension, not a value the logarithm takes. This edge is kept visible rather than smoothed over, and it returns in the variational section below.
 
-For the qubit the Hermitian form, read through the trace at the end, evaluates each functional explicitly. With $r_x=\beta|\vec h_\Psi|$ and $\vec r=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
+For the qubit the Hermitian form evaluates each functional explicitly. With $r_x=\beta|\vec h_\Psi|$ and $\vec r=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
 
 $$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\tfrac12\big(h_t+\vec r\cdot\vec h_\Psi\big)=\tfrac12\big(h_t-|\vec h_\Psi|\tanh r_x\big),
@@ -99,18 +99,18 @@ The **heat capacity** is a fluctuation. Differentiating $E$ at fixed spectrum,
 $$
 C=\frac{\partial E}{\partial T}=k_B\,\beta^2\,\mathrm{Var}(\tilde H_\Psi),
 \qquad
-\mathrm{Var}(\tilde H_\Psi)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})-\big(\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2 .
+\mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2 .
 $$
 
-Since $\tilde{H}_\Psi^2=(h_t^2+|\vec h_\Psi|^2)e_t+2ic h_t\vec h_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form, with the trace reading last:
+Since $\tilde{H}_\Psi^2=(h_t^2+|\vec h_\Psi|^2)e_t+2ic h_t\vec h_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form:
 
 $$
 \mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2=|\vec h_\Psi|^2\,\mathrm{sech}^2x .
 $$
 
-Hence $C=x^2\mathrm{sech}^2x$ in units of $k_B$: the two-level **Schottky heat capacity**. It is non-negative because a variance is, and it vanishes at both ends of the temperature range, with a maximum $C_{\max}=0.439229$ at $x=1.199679$, the root of $x\tanh x=1$. The framework adds nothing to the value; it supplies the route, since both $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ and $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})$ are scalar extractions.
+Hence $C=x^2\mathrm{sech}^2x$ in units of $k_B$: the two-level **Schottky heat capacity**. It is non-negative because a variance is, and it vanishes at both ends of the temperature range, with a maximum $C_{\max}=0.439229$ at $x=1.199679$, the root of $x\tanh x=1$. The framework adds nothing to the value; it supplies the route, since both $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})$ are scalar extractions.
 
-**Numerical check on an independently chosen case.** Take $h_t=0.4$, $\vec h_\Psi=(0.5,0.2,-0.6)$, $\beta=0.8$. Then $|\vec h_\Psi|=0.8062258$, $x=0.6449806$, and the eigenvalues are $h_t\pm|\vec h_\Psi|=1.2062258$ and $-0.4062258$. The Hermitian form gives, with the trace reading last,
+**Numerical check on an independently chosen case.** Take $h_t=0.4$, $\vec h_\Psi=(0.5,0.2,-0.6)$, $\beta=0.8$. Then $|\vec h_\Psi|=0.8062258$, $x=0.6449806$, and the eigenvalues are $h_t\pm|\vec h_\Psi|=1.2062258$ and $-0.4062258$. The Hermitian form gives,
 
 $$
 Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-0.32)\cosh(0.6449806)=1.7649944,
@@ -125,11 +125,11 @@ The Gibbs state is not merely the state obtained by exponentiating the Hamiltoni
 Consider the free-energy functional on states,
 
 $$
-\mathcal F[\tilde{Ϛ}_{\Psi}]=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\frac{1}{\beta}S[\tilde{Ϛ}_{\Psi}]
-=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})+\frac{1}{\beta}\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}),
+\mathcal F[\tilde{Ϛ}_{\Psi}]=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\frac{1}{\beta}S[\tilde{Ϛ}_{\Psi}]
+=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})+\frac{2}{\beta}\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}),
 $$
 
-with $S[\tilde{Ϛ}_{\Psi}]=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$. Extremise $\mathcal F[\tilde{Ϛ}_{\Psi}]-\mu\,(\mathrm{Tr}\tilde{Ϛ}_{\Psi}-1)$ over Hermitian elements of $\mathbb{B}_{\Psi}$. The variation gives
+with $S[\tilde{Ϛ}_{\Psi}]=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$. Extremise $\mathcal F[\tilde{Ϛ}_{\Psi}]-\mu\,(2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}-1)$ over Hermitian elements of $\mathbb{B}_{\Psi}$. The variation gives
 
 $$
 \tilde H_\Psi+\frac{1}{\beta}\big(\log\tilde{Ϛ}_{\Psi}+e_t\big)-\mu\,e_t=0,
@@ -138,10 +138,10 @@ $$
 hence $\log\tilde{Ϛ}_{\Psi}=-\beta\tilde H_\Psi+(\mu\beta-1)e_t$ and
 
 $$
-\tilde{Ϛ}_{\Psi}=\frac{\exp(-\beta H)}{Z},\qquad Z=\mathrm{Tr}\,\exp(-\beta H).
+\tilde{Ϛ}_{\Psi}=\frac{\exp(-\beta H)}{Z},\qquad Z=2\,\mathrm{Sc}\,\exp(-\beta H).
 $$
 
-The stationary point is the Gibbs state, and it is a minimum: $\mathcal F$ is convex, because $-\tfrac1\beta S$ is convex ($S$ is concave) while $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ is linear. The minimum value is the free energy,
+The stationary point is the Gibbs state, and it is a minimum: $\mathcal F$ is convex, because $-\tfrac1\beta S$ is convex ($S$ is concave) while $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ is linear. The minimum value is the free energy,
 
 $$
 \min_{\tilde{Ϛ}_{\Psi}}\mathcal F[\tilde{Ϛ}_{\Psi}]=\mathcal F[\tilde{Ϛ}_{\Psi,\beta}]=-\frac{1}{\beta}\log Z .
@@ -176,7 +176,7 @@ $$
 
 All four identities hold for the explicit qubit functions of the preceding section. On the case checked above they hold numerically: $S=A+\beta E$ and $F=E-S/\beta$ to $10^{-31}$, while finite differences reproduce $\partial S/\partial E=\beta=0.8$ and $\partial F/\partial T=-S$ to eight digits. The same relations hold for the four-level product Hamiltonian.
 
-In the framework each of $A$, $E$, $S$, $F$ is a scalar obtained by the Hermitian form from an $\mathbb{B}_{\Psi}$-valued object, with the trace as the final reading at normalisation: $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, and $F=-\beta^{-1}A$ with $A=\log Z=\mathrm{Sc}(H_{\mathrm{modular}}-\beta\tilde H_\Psi)$, the scalar part of the modular Hamiltonian once the Hamiltonian's own scalar part is removed (next section). The Legendre structure itself is standard thermodynamics; the framework's contribution is that every member of the chain is a scalar extraction from $\mathbb{B}_{\Psi}$.
+In the framework each of $A$, $E$, $S$, $F$ is a scalar obtained by the Hermitian form from an $\mathbb{B}_{\Psi}$-valued object: $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, and $F=-\beta^{-1}A$ with $A=\log Z=\mathrm{Sc}(H_{\mathrm{modular}}-\beta\tilde H_\Psi)$, the scalar part of the modular Hamiltonian once the Hamiltonian's own scalar part is removed (next section). The Legendre structure itself is standard thermodynamics; the framework's contribution is that every member of the chain is a scalar extraction from $\mathbb{B}_{\Psi}$.
 
 ## Low- and High-Temperature Limits
 
@@ -243,7 +243,7 @@ lies in $\mathbb{B}_{\Psi}$ — it is Hermitian by construction. The last equali
 
 The framework adds an **interpretation** with three components.
 
-First, the computational spine is algebraic: in the $2\times2$ image the trace is twice the scalar part, so the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar from a product of $\mathbb{B}_{\Psi}$ elements, with the trace read last. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}))^2]$, shows the interpretation at work.
+First, the computational spine is algebraic: the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar part from a product of $\mathbb{B}_{\Psi}$ elements, and the only factor that is not algebraic is the $2$ that counts the two levels. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}))^2]$, shows the interpretation at work.
 
 Second, the state is geometric: the Gibbs state is the point $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
 
@@ -253,13 +253,13 @@ The framework does **not** produce a new thermodynamic law. The Gibbs state, the
 
 ## Summary
 
-Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z$, read through the Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$. The partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta H))=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$ for a qubit, and every thermal average is twice a scalar part.
+Quantum thermodynamics in biquaternionic form is the thermodynamics of the Gibbs state $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z$, read through the Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, and the normalisation of a state is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$. The partition function is $Z=2\,\mathrm{Sc}(\exp(-\beta H))=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)$ for a qubit, and every thermal average is twice a scalar part.
 
 The Gibbs state exists only when $Z$ converges: always for a finite-level system, and in the half-plane $\mathrm{Re}\,\beta>0$ for a spectrum unbounded above. The infinite-temperature boundary $\beta\to0$ is where the condition matters, and it separates the qubit ($Z\to2$) from the oscillator ($Z\to\infty$).
 
-The thermodynamic functionals of the state are the internal energy $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, the entropy $S=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_t-|\vec h_\Psi|\tanh r_x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $r_x=\beta|\vec h_\Psi|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
+The thermodynamic functionals of the state are the internal energy $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, the entropy $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_t-|\vec h_\Psi|\tanh r_x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $r_x=\beta|\vec h_\Psi|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
 
-The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$.
+The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$.
 
 The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{B}_{\Psi}$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{B}_{\Phi}$.
 
@@ -275,13 +275,13 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian (observable) |
-| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading at normalisation (computational spine) |
-| $Z=\mathrm{Tr}(\exp(-\beta H))$ | Partition function |
+| $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Scalar part of a product (computational spine) |
+| $Z=2\,\mathrm{Sc}(\exp(-\beta H))$ | Partition function |
 | $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z=\tfrac12(e_t+i\vec r)$ | Gibbs state |
 | $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
 | $r_x=\beta|\vec h_\Psi|$ | Thermal parameter |
-| $E=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x$ | Internal energy |
-| $S=-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=\log2+\log\cosh x-x\tanh x$ | Entropy (units of $k_B$) |
+| $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x$ | Internal energy |
+| $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=\log2+\log\cosh x-x\tanh x$ | Entropy (units of $k_B$) |
 | $F=E-S/\beta=h_t-(\log2+\log\cosh x)/\beta$ | Free energy |
 | $C=\partial E/\partial T=k_B\beta^2\mathrm{Var}(\tilde H_\Psi)=r_x^2\mathrm{sech}^2x$ | Heat capacity (Schottky form) |
 | $A(\beta)=\log Z$, $S=A+\beta E$, $F=E-TS$ | Legendre structure |

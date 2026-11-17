@@ -415,7 +415,7 @@ The reason is exactly the one identified in the entangled-subsystems article: th
 The reduced state $\tilde{Ϛ}_{\Psi,1}=\tilde{Ϛ}_{\Psi,2}=\tfrac{1}{2}e_t$ is the maximally mixed qubit state, the centre of the Bloch ball. Its purity and entropy are the standard ones:
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2)=\mathrm{Tr}\!\left(\tfrac{1}{4}e_t\right)=\tfrac{1}{4}\cdot2=\tfrac{1}{2},\qquad
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)=2\,\mathrm{Sc}\!\left(\tfrac{1}{4}e_t\right)=2\cdot\tfrac{1}{4}=\tfrac{1}{2},\qquad
 S(\tilde{Ϛ}_{\Psi,1})=-\tfrac12\log\tfrac12-\tfrac12\log\tfrac12=\log 2 .
 $$
 

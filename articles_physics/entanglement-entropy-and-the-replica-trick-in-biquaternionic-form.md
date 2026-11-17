@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Entanglement entropy** is the von Neumann entropy of the reduced state of a subsystem, $S_A=-\mathrm{Tr}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\,\rho_{AB}$. It is not a quantity one computes directly in a field theory: the reduced density matrix of a region does not exist as a density matrix, the local algebra being type III, and $S_A$ is ultraviolet divergent. The **replica trick** is the standard method for computing it anyway. One computes the moments $Z_n=\mathrm{Tr}\,\rho_A^n$ for positive integers $n$ — which are well defined, and in a field theory are partition functions on an $n$-sheeted cover — and then continues analytically to $n\to1$, where
+**Entanglement entropy** is the von Neumann entropy of the reduced state of a subsystem, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\,\rho_{AB}$. It is not a quantity one computes directly in a field theory: the reduced density matrix of a region does not exist as a density matrix, the local algebra being type III, and $S_A$ is ultraviolet divergent. The **replica trick** is the standard method for computing it anyway. One computes the moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n$ for positive integers $n$ — which are well defined, and in a field theory are partition functions on an $n$-sheeted cover — and then continues analytically to $n\to1$, where
 $$
 S_A=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
 $$
@@ -12,7 +12,7 @@ This article asks what entanglement entropy and the replica trick are in the biq
 
 1. **Entanglement entropy of a biquaternion state is an entropy of a biquaternion state.** For a bipartition of a state of the tensor power $\mathbb{B}^{\otimes m}$, the reduced state $\rho_A$ is again a biquaternion-algebra element of the appropriate tensor power, and when it is a single-mode state it is a Bloch-ball state whose entropy is the closed form of the relative-entropy companion article.
 
-2. **The replica moments are explicit.** The integer moments $Z_n=\mathrm{Tr}\,\rho_A^n=\sum_i\lambda_i^n$ are the power sums of the reduced state's eigenvalues, and the replica trick's analytic continuation is the continuation of a finite sum of exponentials. The entropic content is the same as in the field: $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{n=1}$.
+2. **The replica moments are explicit.** The integer moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n=\sum_i\lambda_i^n$ are the power sums of the reduced state's eigenvalues, and the replica trick's analytic continuation is the continuation of a finite sum of exponentials. The entropic content is the same as in the field: $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{n=1}$.
 
 3. **The replica geometry is the tensor power and its shift.** The $n$-sheeted cover of the field-theoretic replica trick is replaced, in the framework, by the tensor power $\mathbb{B}^{\otimes n}$ and the cyclic permutation of the replicas; the moment $Z_n$ is the expectation of the replica shift in the $n$-fold state, and for $n=2$ it is the swap expectation that computes the purity.
 
@@ -28,15 +28,15 @@ $$
 $$
 be the reduced state of $A$. The **entanglement entropy** of the bipartition is the von Neumann entropy of the reduced state,
 $$
-S_A=-\mathrm{Tr}\big(\rho_A\log\rho_A\big)=S(\rho_A).
+S_A=-2\,\mathrm{Sc}\big(\rho_A\log\rho_A\big)=S(\rho_A).
 $$
 It vanishes if and only if $\rho_{AB}$ is a product across the bipartition; it is symmetric, $S_A=S_B$ when $\rho_{AB}$ is pure; and it is basis-independent. The **Rényi entropies** of order $n>0$, $n\ne1$, are
 $$
-S_n=\frac{1}{1-n}\log\mathrm{Tr}\big(\rho_A^n\big)=\frac{1}{1-n}\log Z_n,
+S_n=\frac{1}{1-n}\log\Bigl(2\,\mathrm{Sc}\big(\rho_A^n\big)\Bigr)=\frac{1}{1-n}\log Z_n,
 \qquad
-Z_n=\mathrm{Tr}\big(\rho_A^n\big),
+Z_n=2\,\mathrm{Sc}\big(\rho_A^n\big),
 $$
-and the von Neumann entropy is their limit as $n\to1$. The moments $Z_n$ are called the **replica moments**; $Z_1=1$; $Z_2=\mathrm{Tr}\rho_A^2$ is the purity, $1/Z_2$ being the participation ratio; and the Rényi entropies are non-increasing in $n$, with $S_n\to S_0=\log\mathrm{rank}\,\rho_A$ as $n\to0$ and $S_n\to S_\infty=-\log\lambda_{\max}$ as $n\to\infty$.
+and the von Neumann entropy is their limit as $n\to1$. The moments $Z_n$ are called the **replica moments**; $Z_1=1$; $Z_2=2\,\mathrm{Sc}\rho_A^2$ is the purity, $1/Z_2$ being the participation ratio; and the Rényi entropies are non-increasing in $n$, with $S_n\to S_0=\log\mathrm{rank}\,\rho_A$ as $n\to0$ and $S_n\to S_\infty=-\log\lambda_{\max}$ as $n\to\infty$.
 
 ### The Entropy as the Limit of the Rényi Entropies
 
@@ -50,7 +50,7 @@ $$
 =\frac{\frac{d}{dn}\log Z_n\big|_{n=1}}{\frac{d}{dn}(1-n)\big|_{n=1}}
 =-\frac{\left.\frac{dZ_n}{dn}\right|_{n=1}}{1}
 =-\sum_i\lambda_i\log\lambda_i
-=-\mathrm{Tr}\big(\rho_A\log\rho_A\big)=S_A,
+=-2\,\mathrm{Sc}\big(\rho_A\log\rho_A\big)=S_A,
 $$
 using $\left.\frac{dZ_n}{dn}\right|_{n=1}=\sum_i\lambda_i\log\lambda_i$. Hence
 $$
@@ -62,7 +62,7 @@ The derivation uses only that $\rho_A$ has a finite spectrum, so it holds verbat
 
 ### The Field-Theoretic Trick
 
-In a quantum field theory the reduced density matrix of a region does not exist, but the moments $Z_n=\mathrm{Tr}\rho_A^n$ do. They are the partition functions of the theory on an $n$-sheeted cover of spacetime: the region $A$ is the branch locus, the $n$ sheets are the replicas, and the trace over the field configurations joining them cyclically is exactly the $n$-th moment of the reduced state. The entropies are then
+In a quantum field theory the reduced density matrix of a region does not exist, but the moments $Z_n=2\,\mathrm{Sc}\rho_A^n$ do. They are the partition functions of the theory on an $n$-sheeted cover of spacetime: the region $A$ is the branch locus, the $n$ sheets are the replicas, and the trace over the field configurations joining them cyclically is exactly the $n$-th moment of the reduced state. The entropies are then
 $$
 S_n=\frac{1}{1-n}\log\frac{Z_n}{Z_1^n},
 \qquad
@@ -105,7 +105,7 @@ This is the finite-dimensional image of the $n$-sheeted cover: the sheets are th
 
 The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the **swap** $\mathbb F_{AA_{\mathrm r}}$ on the two copies of $A$, and
 $$
-Z_2=\mathrm{Tr}\big(\rho_A^2\big)
+Z_2=2\,\mathrm{Sc}\big(\rho_A^2\big)
 =\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
 $$
 where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
@@ -125,7 +125,7 @@ $$
 $$
 so the two reduced states have the same spectrum, $S_A=S_B$, and the same replica moments $Z_n=\sum_i\lambda_i^n$. In the biquaternion framework the bipartite algebra $\mathbb{B}\otimes\mathbb{B}$ has complex dimension sixteen and the modules on which pure states live are smaller; for a two-qubit pure state the Schmidt decomposition has at most two terms, which is why the worked example below has two eigenvalues and why the reduced state is a Bloch-ball state.
 
-The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_{\Psi,A}=\exp(-K)$ and $Z_n=\mathrm{Tr}\,\exp(-nK)$, and writing $F(T)=-T\log\mathrm{Tr}\,\exp(-K/T)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{B}_{\Psi}$ element.
+The **entanglement spectrum** is the set $\{-\log\lambda_i\}$, the spectrum of the modular Hamiltonian of the reduced state, by the first-law companion article. Its spacing controls the entanglement, and its two limits are the two extreme cases: a product state has one Schmidt coefficient equal to one and the rest zero, so the entanglement spectrum is a single level at zero and $S_A=0$; a maximally entangled state has all nonzero coefficients equal, so the spectrum is degenerate and $S_A$ is maximal. The replica moments are the power sums of $\exp(-\varepsilon_i)$ with $\varepsilon_i$ the entanglement energies, so the Rényi entropies are free-energy differences of the entanglement spectrum: with $\tilde{Ϛ}_{\Psi,A}=\exp(-K)$ and $Z_n=2\,\mathrm{Sc}\,\exp(-nK)$, and writing $F(T)=-T\log\bigl(2\,\mathrm{Sc}\,\exp(-K/T)\bigr)$ for the free energy of the spectrum at temperature $T$, one has $S_n=\frac{n}{n-1}\big[F(1/n)-F(1)\big]$ — the standard interpretation, available in the framework because the entanglement spectrum is the spectrum of an ordinary $\mathbb{B}_{\Psi}$ element.
 
 ## Worked Example: a Two-Qubit Biquaternion State
 
@@ -182,7 +182,7 @@ The table displays the three regimes: near the product state ($\theta=0.2$, $r_A
 
 ### The Replica Shift at Higher $n$
 
-For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $\mathrm{Tr}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
+For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $2\,\mathrm{Sc}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
 
 ### A Second Example: the W State
 
@@ -224,7 +224,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 ## Summary
 
-Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-\mathrm{Tr}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=\mathrm{Tr}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
+Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=2\,\mathrm{Sc}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
 
 In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
 
@@ -238,11 +238,11 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; $n$ replicas |
 | $\rho_A=\mathrm{Tr}_B\rho_{AB}$ | Reduced state |
-| $S_A=S(\rho_A)=-\mathrm{Tr}(\rho_A\log\rho_A)$ | Entanglement entropy |
-| $Z_n=\mathrm{Tr}(\rho_A^n)$ | Replica moment |
+| $S_A=S(\rho_A)=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ | Entanglement entropy |
+| $Z_n=2\,\mathrm{Sc}(\rho_A^n)$ | Replica moment |
 | $S_n=\frac{1}{1-n}\log Z_n$ | Rényi entropy of order $n$ |
 | $S_A=-\frac{d}{dn}\log Z_n\big|_{n=1}$ | Replica-trick representation of $S_A$ |
 | $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |

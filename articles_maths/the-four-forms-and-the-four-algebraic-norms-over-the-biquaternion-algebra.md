@@ -22,20 +22,9 @@ The definition is the one of *Introduction to the Mathematical Corpus*: the form
 
 ## The Four Forms
 
-The four forms are the scalar parts of the four general products, one to each pair of slots:
+The four forms are the scalar parts of the four general products, one to each pair of slots. Each is written on the coordinates of a pair, with its Gram matrix and its signature.
 
-$$
-\boxed{\;
-P(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\qquad
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\qquad
-H(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\qquad
-\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})
-\;}.
-$$
-
-Each is written on the coordinates of a pair, with its Gram matrix and its signature.
-
-### The General Plain Bilinear Form
+### The Plain Form
 
 **The plain form, written $P$.**
 
@@ -45,17 +34,17 @@ $$
 
 the scalar part of the general plain bilinear product. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set, the set of $\tilde Q$ with $\langle\tilde Q,\tilde Q\rangle=0$, is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$, of real dimension six, and it is neither the zero-divisor cone nor the null cone. On the anti-Hermitian subspace its algebraic norm is negative definite, and on the Hermitian subspace positive definite.
 
-### The General Quaternionic Bilinear Form
+### The Quaternionic Form
 
 **The quaternionic form, written $N$.**
 
 $$
-\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
+N(\tilde Q_1,\tilde Q_2)=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2),
 $$
 
 the scalar part of the general quaternionic bilinear product: the same form as $\langle\cdot,\cdot\rangle$ read through the quaternion conjugation of the first slot, differing from it by the sign of the vector part alone. It is symmetric, $\mathbb{C}$-bilinear and complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. It is non-degenerate. Its null set is the zero-divisor cone $\mathcal N=\{\langle\tilde Q,\tilde Q\rangle_{\natural}=0\}$, of real dimension six, the null cone. Its algebraic norm is the quadratic form $Q_t^{2}+(\vec Q,\vec Q)$, and the pair of the first slot is what gives the square the positive sign on the vector part.
 
-### The General Plain Sesquilinear Form, the Hermitian Form
+### The Hermitian Form
 
 **The Hermitian form, written $H$.**
 
@@ -65,7 +54,7 @@ $$
 
 the scalar part of the general plain sesquilinear product. It is conjugate-symmetric, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\overline{\langle\tilde Q_2,\tilde Q_1\rangle_{*}}$, sesquilinear in the second slot, and its algebraic norm is real and positive definite, $\langle\tilde Q_2,\tilde Q_2\rangle_{*}>0$ for $\tilde Q_2\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. It is non-degenerate, and its null set is the origin alone, so it has no cone. Its algebraic norm is the square of the unique topological norm of the space, $\lVert\tilde Q_2\rVert^{2}$.
 
-### The General Quaternionic Sesquilinear Form, the Krein Form
+### The Krein Form
 
 **The Krein form, written $\mathrm{Kr}$.**
 
@@ -190,7 +179,7 @@ Each algebraic norm is the diagonal of its form:
 $$
 \boxed{\;
 P(\tilde Q)=\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
-\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
+N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
 H(\tilde Q)=\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
 \mathrm{Kr}(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}
 \;}.
@@ -198,7 +187,7 @@ $$
 
 Each is written on the coordinates of one element, with its value ring, its Gram matrix and its signature.
 
-### The General Plain Bilinear Algebraic Norm
+### The Plain Algebraic Norm
 
 **The plain norm, written $P$.**
 
@@ -208,7 +197,7 @@ $$
 
 the general plain bilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}(\tilde Q_1\tilde Q_2)=Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $\langle\tilde Q\rangle=0$, already the complex quadric of §*The Four Forms*, above. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
 
-### The General Quaternionic Bilinear Algebraic Norm
+### The Quaternionic Algebraic Norm
 
 **The quaternionic norm, written $N$.**
 
@@ -229,7 +218,7 @@ $$
 
 The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *N-Regularity and N-Degeneracy in the Biquaternion Algebra*: an element is invertible if and only if $\langle\tilde Q\rangle_{\natural}\neq0$, and the group of invertibles is the norm-one group $\{\langle\tilde Q\rangle_{\natural}=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 
-### The General Plain Sesquilinear Algebraic Norm
+### The Hermitian Algebraic Norm
 
 **The Hermitian norm, written $H$.**
 
@@ -241,7 +230,7 @@ the general plain sesquilinear algebraic norm $\langle\tilde Q_1,\tilde Q_2\rang
 
 The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm of *Topology in the Space of Biquaternions*. It is not multiplicative.
 
-### The General Quaternionic Sesquilinear Algebraic Norm
+### The Krein Algebraic Norm
 
 **The Krein norm, written $\mathrm{Kr}$.**
 
@@ -325,7 +314,7 @@ The empty sector is the proposition. The other three sectors are the two single-
 
 ## Regular and Degenerate Biquaternions
 
-**Definition (the qualified regular and the qualified degenerate).** Let $\Phi$ be one of the four letters $P$, $N$, $H$, $\mathrm{Kr}$. A biquaternion is **$\Phi$-regular** when $\Phi(\tilde Q)\neq0$, and **$\Phi$-degenerate** when $\Phi(\tilde Q)=0$. In full, an **$\natural$-regular biquaternion** has $\langle\tilde Q\rangle_{\natural}\neq0$, an **$\natural$-degenerate biquaternion** has $\langle\tilde Q\rangle_{\natural}=0$, and the same definition holds for $P$, $H$ and $\mathrm{Kr}$.
+**Definition (the qualified regular and the qualified degenerate).** A biquaternion is **regular for a letter** when the value of that letter is non-zero, and **degenerate for a letter** when the value is zero. An **$\natural$-regular biquaternion** has $\langle\tilde Q\rangle_{\natural}\neq0$, a **$P$-regular** one has $P(\tilde Q)\neq0$, and the $H$ and $\mathrm{Kr}$ cases read the same way.
 
 The four conditions are polynomial equations on the eight real coordinates, homogeneous of degree two: two real equations for the complex-valued $P$ and $N$, one for the real-valued $H$ and $\mathrm{Kr}$, and each defines a cone with apex the origin. Written out,
 
@@ -340,7 +329,7 @@ $$
 
 **The four degenerate sets.** The $P$-degenerate set is the complex cone $\{P=0\}$, of real dimension $6$. The $\natural$-degenerate set is the zero-divisor cone $\mathcal N$, of real dimension $6$. The $\mathrm{Kr}$-degenerate set is the real cone $\mathcal K$, of real dimension $7$. The $H$-degenerate set is the origin alone: $H$ is a sum of four non-negative terms, so it vanishes only where every coefficient vanishes.
 
-| Letter | $\Phi$-degenerate set | $\dim_{\mathbb R}$ | Contains a unit | Equals the non-invertibles |
+| Letter | degenerate set | $\dim_{\mathbb R}$ | Contains a unit | Equals the non-invertibles |
 |---|---|---|---|---|
 | $P$ | the complex cone $\{P=0\}$ | $6$ | yes | no |
 | $N$ | $\mathcal N$, the origin together with the zero divisors | $6$ | no | **yes** |
@@ -353,9 +342,9 @@ $$
 
 **Remark (the four sets are distinct).** The unit $e_t+\vec e_x$ is $P$-degenerate and $\mathrm{Kr}$-degenerate, not $\natural$-degenerate; the zero divisor $e_t+i\vec e_x$ is $\natural$-degenerate and $\mathrm{Kr}$-degenerate, with $P(e_t+i\vec e_x)=1-i^{2}=2$; the zero divisor $\vec e_x+i\vec e_y$ is $P$-degenerate and $\natural$-degenerate, with $\mathrm{Kr}(\vec e_x+i\vec e_y)=-(1+1)=-2$; and $\sqrt2 e_t+\vec e_x+i\vec e_y$ is $\mathrm{Kr}$-degenerate, with $P=N=2$. The $H$-degenerate set is the origin alone. The four sets are therefore pairwise distinct.
 
-**Remark (the zero element).** The origin is $\Phi$-degenerate for all four letters, and it is neither an invertible element nor a zero divisor. A degenerate biquaternion is therefore not the same object as a zero divisor for any letter; the $N$ case is the closest, its set being the origin together with the zero divisors.
+**Remark (the zero element).** The origin is degenerate for all four letters, and it is neither an invertible element nor a zero divisor. A degenerate biquaternion is therefore not the same object as a zero divisor for any letter; the $N$ case is the closest, its set being the origin together with the zero divisors.
 
-**Remark (the existing names).** $\natural$-regular and $\natural$-degenerate are the qualified pair of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* read at $\Phi=N$, the two halves of its partition of $\mathbb{B}$ into the group of invertibles and the null cone. $\mathrm{Kr}$-regular and $\mathrm{Kr}$-degenerate are the **Krein-regular** and **Krein-degenerate** of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, whose halves are *The Kr-Regular Sector* and *The Kr-Degenerate Sector*. The $P$ and $H$ qualifiers are the same construction on the other two letters, named here to close the four; neither decides invertibility.
+**Remark (the existing names).** $\natural$-regular and $\natural$-degenerate are the qualified pair of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* read at $N$, the two halves of its partition of $\mathbb{B}$ into the group of invertibles and the null cone. $\mathrm{Kr}$-regular and $\mathrm{Kr}$-degenerate are the **Krein-regular** and **Krein-degenerate** of *Kr-Regularity and Degeneracy in the Biquaternion Algebra*, whose halves are *The Kr-Regular Sector* and *The Kr-Degenerate Sector*. The $P$ and $H$ qualifiers are the same construction on the other two letters, named here to close the four; neither decides invertibility.
 
 **Remark (the unqualified words).** **Regular** without a letter is **spectrally regular**, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}\neq0$, of *The Spectrum*, and **degenerate** without a letter is **spectrally degenerate**, $B^{2}=0$. The letter is therefore never omitted when the four algebraic norms are meant.
 
@@ -372,7 +361,7 @@ The same two slots read on the groups that preserve the four forms: the second s
 
 Read at their two equal arguments, the four forms give the four algebraic norms $\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ and $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, each attained by two operations, the general product and its symmetrisation of the same family, while the four antisymmetrisations carry the vanishing algebraic norm. $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural}$ are complex-valued and $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ real-valued. $\langle\cdot\rangle_{\natural}$ is the multiplicative one, the reduced norm and the criterion of invertibility; $\langle\cdot\rangle_{*}$ is the definite one, and its square root is the unique topological norm of the space; $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\natural*}$ are the two indefinite ones of the plain and of the Krein form. Multiplicativity and definiteness are held by no single one of the four, and the zero divisors are the reason.
 
-The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter gives a qualified pair: a $\Phi$-regular biquaternion is one with $\Phi(\tilde Q)\neq0$ and a $\Phi$-degenerate one has $\Phi(\tilde Q)=0$. Only the $N$ pair is the unit partition — $\natural$-regular is the group of invertibles, $\natural$-degenerate the origin together with the zero divisors — while $P$ and $\mathrm{Kr}$ vanish on the invertibles and $H$ vanishes only at the origin.
+The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter gives a qualified pair: a biquaternion is regular for that letter when the value is non-zero, and degenerate when it is zero. Only the $N$ pair is the unit partition — $\natural$-regular is the group of invertibles, $\natural$-degenerate the origin together with the zero divisors — while $P$ and $\mathrm{Kr}$ vanish on the invertibles and $H$ vanishes only at the origin.
 
 ## Summary of Notation
 
@@ -394,8 +383,8 @@ The four carry the letters $P$, $N$, $H$ and $\mathrm{Kr}$, and each letter give
 | $\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the general quaternionic sesquilinear algebraic norm, the Krein Norm |
 | $P$, $N$, $H$, $\mathrm{Kr}$ | the letters of the plain, the quaternionic, the Hermitian and the Krein form and norm; one letter, two arities |
 | $P(\tilde Q)$, $\langle\tilde Q\rangle_{\natural}$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | the four algebraic norms, the diagonals of the four forms |
-| $\Phi$-regular, $\Phi$-degenerate | $\Phi(\tilde Q)\neq0$ and $\Phi(\tilde Q)=0$ for $\Phi\in\{P,N,H,\mathrm{Kr}\}$; the $N$ pair alone is the partition into the invertibles and non-invertibles |
-| $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$ | one bracket, two arities: two arguments give the form, one argument the algebraic norm |
+| regular for a letter, degenerate for a letter | the value under $P$, $N$, $H$ or $\mathrm{Kr}$ is non-zero, respectively zero; the $N$ pair alone is the partition into the invertibles and non-invertibles |
+| $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$ | one function, two arities: two arguments give the form, one gives the algebraic norm; $K_1$ is the identity or ${}^{\natural}$, $K_2$ the identity or ${}^{*}$ |
 | $\lVert\tilde Q\rVert$ | the Euclidean norm, the square root of $\langle\cdot\rangle_{*}$, the unique topological norm |
 
 ## Further Reading

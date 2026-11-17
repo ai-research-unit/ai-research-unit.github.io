@@ -27,7 +27,7 @@ and the source article's ledger is that the eight real parameters are the eight 
 
 *Second, the density decouples from the field's norm.* The free article could write $r=\sqrt{-A_\mu A^\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **The scale is a coordinate of the chart and not a property of the field**, and the density the fluid carries is a choice of the chart's normalisation.
 
-*Third, the constraint and the divergence are two different statements.* The trace of the coupled equation forces the covariant Lorenz condition, exactly and blindly to the frame; the *ordinary* divergence is then not zero, and its value is the field's own amplitude.
+*Third, the constraint and the divergence are two different statements.* The scalar part of the coupled equation forces the covariant Lorenz condition, exactly and blindly to the frame; the *ordinary* divergence is then not zero, and its value is the field's own amplitude.
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0
@@ -43,7 +43,7 @@ $$
 
 **Position in the block.** This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
 ## The Word and the Two Restorations
 
@@ -145,7 +145,7 @@ $$
 
 the cross terms cancelling and $\vec e_\eta^{2}=-e_t$ supplying the second sign. **Both identities are exact for complex coefficients** and were checked to machine precision, the second against $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ over random draws of the eight parameters.
 
-**The consequence on the constraint surface.** The trace of the coupled equation is the covariant Lorenz condition, so the ordinary divergence is fixed:
+**The consequence on the constraint surface.** The scalar part of the coupled equation is the covariant Lorenz condition, so the ordinary divergence is fixed:
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
@@ -185,7 +185,7 @@ $$
 \qquad c_s=c,
 $$
 
-and that the field-strength part is traceless, transverse-anisotropic and invisible to the word. **The coupled stress has the same shape with $A$ complex and $F$ the covariant field strength**, and the qualitative behaviour of both parts is unchanged: the mass term is the stiff part and the field-strength part is the part the word cannot see.
+and that the field-strength part has no scalar part, is transverse-anisotropic and is invisible to the word. **The coupled stress has the same shape with $A$ complex and $F$ the covariant field strength**, and the qualitative behaviour of both parts is unchanged: the mass term is the stiff part and the field-strength part is the part the word cannot see.
 
 **The plane wave is where the free article measured the split, and its numbers are the ones that carry over.** On a mode with the wave number along one axis and a transverse potential, its stress came out $T_{00}=0.0777$, $T_{11}=0.1014$, $T_{33}=-0.1153$, so $T_{11}/T_{00}=1.30$ where the mass term alone would give $1$. **The anisotropy is the field-strength part's, and the coupling's extra bilinear term in $F$ only adds to it**, since that term is built from the same $F$ and enters the stress quadratically.
 
@@ -199,7 +199,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 
 **The free article's massless limit removes the fluid, and the reason is that the Lorenz condition was the mass's gift.** With $A_\mu=ru_\mu$ the free condition is continuity, and continuity came from taking the divergence of $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$: at $m=0$ there is nothing on the right and the Lorenz condition is a gauge choice rather than a constraint. **So the free fluid's incompressibility evaporates at $m=0$ and the fluid reading goes with it.**
 
-**The coupled case has the same limit and a different residue.** For $m>0$ the trace of the equation forces the covariant Lorenz condition and the ordinary divergence is the amplitude of §*The Lorenz Condition Is No Longer the Continuity Equation*. At $m=0$ the equation is $\tilde\nabla_{\mathrm{gco}}\tilde F=0$, whose divergence gives no constraint on the potential; the covariant Lorenz condition becomes one gauge choice among many. **The compressibility statement therefore degrades in the same way as the free one**: it is a statement about a gauge, and a gauge is not a fluid property.
+**The coupled case has the same limit and a different residue.** For $m>0$ the scalar part of the equation forces the covariant Lorenz condition and the ordinary divergence is the amplitude of §*The Lorenz Condition Is No Longer the Continuity Equation*. At $m=0$ the equation is $\tilde\nabla_{\mathrm{gco}}\tilde F=0$, whose divergence gives no constraint on the potential; the covariant Lorenz condition becomes one gauge choice among many. **The compressibility statement therefore degrades in the same way as the free one**: it is a statement about a gauge, and a gauge is not a fluid property.
 
 **The residue that survives is the charge current.** The Noether current of the phase symmetry is conserved for every $m$, including zero, and it does not vanish on the complex field. **So the massless charged vector fluid keeps a conserved current, a density and a flow, and loses its constraint**: it is a fluid in the sense of having a current and a stress, and not in the sense of having an incompressibility.
 
@@ -217,7 +217,7 @@ and that the field-strength part is traceless, transverse-anisotropic and invisi
 4. **The density is not the field's norm.** $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial.
 5. **The scale is the amplitude and not the density.** The velocity and the vorticity are independent of $r$ and the stress is quadratic in it, and $r$ is fixed by a normalisation convention only.
 6. **The domain is $r=0$ and nothing else.** The free fluid's lightlike wall is gone, and the failure of the chart is a codimension-two set rather than a hypersurface.
-7. **The covariant Lorenz condition is forced and blind to the frame.** The trace of the equation is the condition, and it is a relation among the scale and phase brackets, the connection's temporal slot and the modulus.
+7. **The covariant Lorenz condition is forced and blind to the frame.** The scalar part of the equation is the condition, and it is a relation among the scale and phase brackets, the connection's temporal slot and the modulus.
 8. **The ordinary divergence is the amplitude.** $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\vartheta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\vartheta_{\mathrm{pha}}$.
 9. **The charged vector fluid is compressible.** The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift through the Lorenz condition.
 10. **The stiff equation of state survives as a formula.** $\epsilon=p=\frac12m^{2}r^{2}$ on the sector where the field strength vanishes, and it dies as a constitutive law because $r$ is a coordinate and not an invariant.
@@ -284,7 +284,7 @@ The density is not the field's norm. $\tilde A\tilde A^{\natural}=r^{2}e^{2i\var
 
 There are three currents and only one is conserved: the response $m^{2}\tilde A$, the direction $\tilde A/r$, and the charge bilinear, which vanishes on the real slice.
 
-The covariant Lorenz condition is forced by the trace and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$. **The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.**
+The covariant Lorenz condition is forced by the scalar part and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$. **The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.**
 
 The stiff equation of state survives as a formula on the sector where the field strength vanishes and dies as a constitutive law, because its variable is a coordinate. The field's own stress is in the fluid's stress, and the massless limit keeps the current and loses the constraint.
 

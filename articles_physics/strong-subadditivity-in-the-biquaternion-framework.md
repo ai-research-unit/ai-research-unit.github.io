@@ -114,7 +114,7 @@ $$
 $$
 and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with trace one. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the trace that enters it: on a factor, for elements $\tilde Q_1$ and $\tilde Q_2$ of the two factors, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1\cdot2\,\mathrm{Sc}(\tilde Q_2)$, so the biquaternion trace $2\,\mathrm{Sc}$ is exactly the normalization that makes the discarded factor contribute its expectation.
 
-Two structural facts are worth recording at this point, both consequences of the Hermitian GNS companion article's trace. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,\mathrm{Tr}(\tilde Q_2)=\tilde Q_1$ for every normalized $\tilde Q_2$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde Q_1\otimes\tilde Q_2)=S(\tilde Q_1)+S(\tilde Q_2)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
+Two structural facts are worth recording at this point, both consequences of the Hermitian GNS companion article's state functional. First, on a product the partial trace is the identity on the rest, $\mathrm{Tr}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,2\,\mathrm{Sc}(\tilde Q_2)=\tilde Q_1$ for every normalized $\tilde Q_2$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde Q_1\otimes\tilde Q_2)=S(\tilde Q_1)+S(\tilde Q_2)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
 
 ## Strong Subadditivity from Monotonicity of Relative Entropy
 
@@ -304,7 +304,7 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; many-mode algebra |
 | $\mathrm{Tr}(A_1^{(1)}\otimes\cdots\otimes A_n^{(1)})=\prod_i\mathrm{Tr}(\tilde Q_i)$ | Product trace; $\mathrm{Tr}(e_t^{\otimes n})=2^n$ |
 | $\rho_{AB},\rho_{BC},\rho_B$ | Reduced states (partial traces) |

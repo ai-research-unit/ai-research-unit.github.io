@@ -8,17 +8,17 @@ $$
 $$
 The reconstruction is the precise sense in which a state and a representation are two views of one object.
 
-This article carries the construction out for the biquaternion algebra $\mathbb{B}$ in the **Hermitian form** used throughout the corpus. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ with $\tilde{Ϛ}_{\Psi}$ Hermitian; the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is a Hermitian element; and every parameter of the modular flow is $*$-unitary, so its inverse *is* its Hermitian adjoint. The modular operator is built from the Hermitian exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$. No inverse of a general element is written anywhere in the construction.
+This article carries the construction out for the biquaternion algebra $\mathbb{B}$ in the **Hermitian form** used throughout the corpus. The state is the Hermitian pairing with a density matrix, $\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ with $\tilde{Ϛ}_{\Psi}$ Hermitian; the modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is a Hermitian element; and every parameter of the modular flow is $*$-unitary, so its inverse *is* its Hermitian adjoint. The modular operator is built from the Hermitian exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$. No inverse of a general element is written anywhere in the construction.
 
 The finite dimensionality of $\mathbb{B}$ removes every technical obstruction and makes the construction explicit. States are density matrices, the Hilbert space is the algebra itself with the Hermitian inner product, the representation is left multiplication, and the cyclic vector is the class of the identity.
 
-- **Established, and recomputed below.** For a state given by a density matrix $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$, the Hermitian GNS Hilbert space is
+- **Established, and recomputed below.** For a state given by a density matrix $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$, the Hermitian GNS Hilbert space is
 $$
 \mathcal{H}_{\tilde{Ϛ}_{\Psi}} \;=\; \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
-\mathcal{N}_{\tilde{Ϛ}_{\Psi}} = \big\{\tilde Q_3 : \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*} \tilde Q_3)=0\big\},
+\mathcal{N}_{\tilde{Ϛ}_{\Psi}} = \big\{\tilde Q_3 : 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*} \tilde Q_3)=0\big\},
 \qquad
-\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
+\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}} = 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
 $$
 with $\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)[\tilde Q_1] = [\tilde Q_3\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$. Its dimension depends on the state:
 $$
@@ -58,15 +58,15 @@ so an operator that has zero expectation of its square acts as zero on the recon
 
 ## The States of the Biquaternion Algebra
 
-Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional is given by a density matrix. Writing $\mathsf{M}_2$ for the isomorphism and $\mathrm{Tr}$ for the algebra trace,
+Because $\mathbb{B}$ is finite-dimensional, every positive normalized functional is given by a density matrix. Writing $\mathsf{M}_2$ for the isomorphism,
 
-> **Proposition.** $\omega$ is a state on $\mathbb{B}$ if and only if there is $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $\tilde{Ϛ}_{\Psi}\ge 0$ and $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ such that
+> **Proposition.** $\omega$ is a state on $\mathbb{B}$ if and only if there is $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $\tilde{Ϛ}_{\Psi}\ge 0$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ such that
 > $$
-> \omega(\tilde Q_3) \;=\; \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\big) \qquad \text{for all } \tilde Q_3\in\mathbb{B},
+> \omega(\tilde Q_3) \;=\; 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\big) \qquad \text{for all } \tilde Q_3\in\mathbb{B},
 > $$
-> the value being the real number $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3)$ whenever $\tilde Q_3$ is Hermitian.
+> the value being real whenever $\tilde Q_3$ is Hermitian.
 
-The state is a **Hermitian pairing**: the density matrix is Hermitian, the observable is Hermitian, and the trace of their product is real. This is the pairing the whole construction uses; the indefinite algebra norm plays no part in it.
+The state is a **Hermitian pairing**: the density matrix is Hermitian, the observable is Hermitian, and the scalar part of their product is real. This is the pairing the whole construction uses; the indefinite algebra norm plays no part in it.
 
 The positivity of $\tilde{Ϛ}_{\Psi}$ as an element of the $C^*$-algebra means positivity of the matrix $\mathsf{M}_2(\tilde{Ϛ}_{\Psi})$. A state is thus an element of the algebra — a fact that has no analogue for the field algebras, whose states are functionals on an infinite-dimensional algebra and not elements of it.
 
@@ -75,25 +75,25 @@ $$
 \tilde{Ϛ}_{\Psi} = \tfrac12\big(e_t + i\vec r\big),
 \qquad \vec r\in\mathbb{R}^3,
 $$
-the positivity conditions are $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ and the eigenvalues $\tfrac12(1\pm|\vec r|)\ge 0$, so
+the positivity conditions are $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ and the eigenvalues $\tfrac12(1\pm|\vec r|)\ge 0$, so
 $$
 \tilde{Ϛ}_{\Psi} \text{ a state} \iff |\vec r|\le 1 .
 $$
 Three cases are the ones that matter below.
 
 1. **Pure states: $|\vec r|=1$.** Then $\tilde{Ϛ}_{\Psi} = \tilde\Pi(\vec u_r)$ is a minimal idempotent, with $\vec u_r=\vec r/|\vec r|$, and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$. These are the vacua of the previous article, and there are as many as there are unit vectors: the Bloch sphere.
-2. **The trace state: $\vec r=0$.** Then $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde Q_3) = \tfrac12\mathrm{Tr}(\tilde Q_3)$ is the normalized algebra trace. It is the unique tracial state of $\mathbb{B}$.
+2. **The trace state: $\vec r=0$.** Then $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde Q_3) = \mathrm{Sc}(\tilde Q_3)$ is the scalar part. It is the unique tracial state of $\mathbb{B}$.
 3. **Mixed states: $0<|\vec r|<1$.** Then $\tilde{Ϛ}_{\Psi}^2\ne\tilde{Ϛ}_{\Psi}$, the state is a nontrivial convex combination of two pure states, and its spectral projectors are distinct.
 
 ## The GNS Data of a State of $\mathbb{B}$
 
-Specialize the general construction. With $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ the inner product is
+Specialize the general construction. With $\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ the inner product is
 $$
-\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}} \;=\; \omega\big(\tilde Q_3^{*}\tilde Q_1\big) \;=\; \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*} \tilde Q_1\big),
+\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}} \;=\; \omega\big(\tilde Q_3^{*}\tilde Q_1\big) \;=\; 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*} \tilde Q_1\big),
 $$
 and the radical, the Hilbert space, the representation, and the cyclic vector are
 $$
-\boxed{\;\mathcal{N}_{\tilde{Ϛ}_{\Psi}} = \big\{\tilde Q_3 : \mathrm{Tr}(\tilde{Ϛ}_{\Psi} \tilde Q_3^{*}\tilde Q_3)=0\big\},
+\boxed{\;\mathcal{N}_{\tilde{Ϛ}_{\Psi}} = \big\{\tilde Q_3 : 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi} \tilde Q_3^{*}\tilde Q_3)=0\big\},
 \qquad
 \mathcal{H}_{\tilde{Ϛ}_{\Psi}} = \mathbb{B}/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
@@ -103,25 +103,25 @@ $$
 $$
 It is convenient to compute the Gram matrix of the basis $\{e_t,\vec e_x,\vec e_y,\vec e_z\}$,
 $$
-G_{j\eta} = \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
+G_{j\eta} = 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\, e_j^{*} \vec e_\eta\big),
 $$
 with $e_j,\vec e_\eta$ ranging over the basis; its rank is $\dim_{\mathbb{C}}\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$.
 
 **The vacuum state.** Take $\tilde{Ϛ}_{\Psi} = \tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, the state of the previous article. Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Then for any $\tilde Q_3$, using $\tilde{Ϛ}_{\Psi} = \tilde{Ϛ}_{\Psi}^2$,
 $$
-\langle \tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}} = \mathrm{Tr}\big(\tilde\Pi_+\tilde Q_3^{*}\tilde Q_3\big) = \mathrm{Tr}\big(\tilde Q_3 \tilde\Pi_+\tilde Q_3^{*}\big) = 2\,\mathrm{Sc}\big(\tilde Q_3 \tilde\Pi_+\tilde Q_3^{*}\big) \ge 0,
+\langle \tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}} = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde Q_3^{*}\tilde Q_3\big) = 2\,\mathrm{Sc}\big(\tilde Q_3 \tilde\Pi_+\tilde Q_3^{*}\big) \ge 0,
 $$
 and it vanishes exactly when $\tilde Q_3 \tilde\Pi_+=0$, i.e. when the image of $\tilde Q_3$ is annihilated by the projector. That is precisely the condition that the class $[\tilde Q_3]$ corresponds to $\tilde Q_3\tilde\Pi_+$, so the quotient is the image:
 $$
 \boxed{\;\mathcal{H}_{\tilde\Pi_+} \;\cong\; \mathbb{B}\tilde\Pi_+ \;\cong\; \mathbb{C}^2\;}.
 $$
-Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of *The Biquaternion Vacuum as a Minimal Idempotent*. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $\mathrm{Tr}(\tilde\Pi_+\tilde Q_3^{*}\tilde Q_1)$ sees only the first column of the matrices.
+Evaluating the Gram matrix of the four basis elements in this state gives rank two: two of the four directions of the algebra are distinguished as pure-gauge, and the physical Hilbert space is the minimal left ideal — the one-particle module of *The Biquaternion Vacuum as a Minimal Idempotent*. The same conclusion follows from $\mathsf{M}_2(\tilde\Pi_+)=\mathrm{diag}(1,0)$: the inner product $2\,\mathrm{Sc}(\tilde\Pi_+\tilde Q_3^{*}\tilde Q_1)$ sees only the first column of the matrices.
 
 **The trace state.** Take $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$. Then
 $$
-\langle \tilde Q_3,\tilde Q_1\rangle_{\mathrm{tr}} = \tfrac12\mathrm{Tr}\big(\tilde Q_3^{*}\tilde Q_1\big),
+\langle \tilde Q_3,\tilde Q_1\rangle_{\mathrm{tr}} = \mathrm{Sc}\big(\tilde Q_3^{*}\tilde Q_1\big),
 $$
-the Hilbert–Schmidt inner product, whose radical is trivial: $\mathrm{Tr}(\tilde Q_3^{*}\tilde Q_3)=\langle \mathsf{M}_2(\tilde Q_3)\rangle_* = 0$ only for $\tilde Q_3=0$. Hence
+the Hilbert–Schmidt inner product, whose radical is trivial: $2\,\mathrm{Sc}(\tilde Q_3^{*}\tilde Q_3)=\langle \mathsf{M}_2(\tilde Q_3)\rangle_* = 0$ only for $\tilde Q_3=0$. Hence
 $$
 \mathcal{H}_{\mathrm{tr}} \;\cong\; \mathbb{B} \;\cong\; \mathbb{C}^4,
 \qquad
@@ -131,7 +131,7 @@ the **regular representation**, of complex dimension four. The Gram matrix of th
 
 **The general state.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}_{\Psi}}$ and using the eigenvectors of $\tilde{Ϛ}_{\Psi}$,
 $$
-\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \lambda_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
+2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \lambda_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
 $$
 which vanishes if and only if $\tilde Q_3$ annihilates the range of $\tilde{Ϛ}_{\Psi}$. The radical therefore has dimension $2(2-\mathrm{rank}\,\tilde{Ϛ}_{\Psi})$ and
 $$
@@ -139,7 +139,7 @@ $$
 $$
 so the dimension is $2$ for the pure boundary ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=1$) and $4$ throughout the interior of the Bloch ball ($\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$). The GNS space jumps in dimension exactly on crossing from the interior to the pure boundary.
 
-**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\eta}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
+**Numerical check.** Working with explicit $2\times2$ complex matrices and computing the rank of the Gram matrix $G_{j\eta}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,e_j^{*}\vec e_\eta)$ by row reduction: the vacuum state $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ gives rank $2$; the trace state $\tilde{Ϛ}_{\Psi}=\tfrac12 e_t$ gives rank $4$; and mixed states with eigenvalue pairs $(0.9,0.1)$ and $(0.6,0.4)$ give rank $4$ in both cases, confirming that the dimension is governed by the rank of $\tilde{Ϛ}_{\Psi}$ and not by how mixed the state is.
 
 Three structural consequences follow, and they are the content of the construction for this framework.
 
@@ -149,13 +149,13 @@ Three structural consequences follow, and they are the content of the constructi
 
 **The annihilation operator is in the radical.** For the vacuum state,
 $$
-\omega_0\big(\vec\Upsilon_y \vec\Upsilon_x\big) = \mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0
+\omega_0\big(\vec\Upsilon_y \vec\Upsilon_x\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0
 \quad\Longrightarrow\quad
 \pi_{\tilde\Pi_+}(\vec\Upsilon_x)\,\Omega_{\tilde\Pi_+} = [\vec\Upsilon_x] = 0 ,
 $$
 so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Upsilon_x$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
+The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
 
 ## The Modular Structure in Hermitian Form
 
@@ -217,7 +217,7 @@ Numerically, for a full-rank Hermitian $\tilde{Ϛ}_{\Psi}$ with eigenvalues $(0.
 
 This is the Hermitian form of the finite-dimensional Tomita–Takesaki structure. The ordinary statements are recovered without change of value: the flow $\sigma_t$ is the modular automorphism group, $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}$ is its positive generator, and $J_{\tilde{Ϛ}_{\Psi}}$ is the modular conjugation. What changes is the writing: the state enters only through the Hermitian modular Hamiltonian $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}$, and the two factors $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$ are Hermitian functions of $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}$, so no non-Hermitian element is used at any point.
 
-The **modular Hamiltonian** carries the thermal interpretation. For the Gibbs state of a Hamiltonian $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ one has $\tilde{Ϛ}_{\Psi} = \exp(-\beta H)/Z$ with $Z=\mathrm{Tr}\exp(-\beta H)$ and therefore
+The **modular Hamiltonian** carries the thermal interpretation. For the Gibbs state of a Hamiltonian $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ one has $\tilde{Ϛ}_{\Psi} = \exp(-\beta H)/Z$ with $Z=2\,\mathrm{Sc}\exp(-\beta H)$ and therefore
 $$
 H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}} = \beta\tilde H_\Psi + (\log Z)\,e_t,
 $$
@@ -229,7 +229,7 @@ Two limits deserve a line. For the **pure vacuum** state $\tilde{Ϛ}_{\Psi}=\til
 
 One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynamics: the **trace state**
 $$
-\tau(\tilde Q_3) \;=\; \tfrac12 \mathrm{Tr}(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
+\tau(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
 $$
 It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a $*$-unitary $\tilde Q$ the invariance reads
 $$
@@ -273,7 +273,7 @@ $$
 
 is linear, positive, and normalised on the convolution algebra of $G$, and the GNS construction applied to it returns $L^2(G^{\vee},\mu)$, with the convolution algebra acting by multiplication by the Fourier transform and the constant function as cyclic vector. Fourier inversion *is* the reconstruction, so "a normalised positive functional is a state" and "a normalised positive-definite function is the Fourier transform of a measure" are two interpretations of one theorem. The positivity that this article assumes of a state and the positive definiteness that the classical theorem assumes of a characteristic function are therefore one condition, and a state of a translation-invariant theory need not be exhibited as an element of an algebra at all: the measure is the state, and the density matrix is its transform.
 
-**Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde Q_3,\tilde Q_1\rangle_\omega = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
+**Where the framework departs from it.** A state is $\mathbb{C}$-valued, and the framework's own harmonic analysis does not deliver one directly. The transform of a measure in the biquaternion algebra is $\mathbb{B}$-valued, and the algebra's norm is not positive definite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — so a biquaternion-valued transform of a measure is not a positive-definite function and the classical theorem has no source there. That object *is* positive definite under a definite Hermitian pairing, and the pairing is the one this article already uses, $\langle \tilde Q_3,\tilde Q_1\rangle_\omega = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1)$. The measure route and the GNS route therefore meet on the Hermitian pairing, and the biquaternion norm is used by neither. The computation is in *Biquaternion Continuous Harmonic Analysis*, in the section on the transform of a measure; the quaternion statement, where the norm is definite and the classical positivity does hold, is in *Quaternion Harmonic Analysis*.
 
 ## What Is Established and What Is Interpretation
 
@@ -304,7 +304,7 @@ For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian GNS
 $$
 \mathcal{H}_{\tilde{Ϛ}_{\Psi}} = \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
-\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
+\langle \tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
 \qquad
 \pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1],
 \qquad
@@ -315,7 +315,7 @@ For the **vacuum** $\tilde{Ϛ}_{\Psi}=\tilde\Pi_+$ the dimension is two, the spa
 
 The construction carries the finite-dimensional Hermitian Tomita–Takesaki structure: the modular Hamiltonian is $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, the modular flow is $\sigma_t(\tilde Q_3)=U_t\tilde Q_3U_t^{*}$ with $U_t=e^{-itH_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}}$, the modular operator is $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=L_{e^{-H_{\mathrm{modular}}}}R_{e^{H_{\mathrm{modular}}}}$, and the modular conjugation satisfies $J_{\tilde{Ϛ}_{\Psi}}^2=1$ and $J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}J_{\tilde{Ϛ}_{\Psi}}\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}=1$. The parameters are Hermitian ($H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}$) or $*$-unitary ($U_t=e^{-itH_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}}$ and $\mathcal{M}_{\tilde{\mathrm{Ϛ}}_{\Psi}}^{it}$), so their inverses are their adjoints; the two exponentials $e^{-H_{\mathrm{modular}}}$ and $e^{H_{\mathrm{modular}}}$ are both Hermitian functions of $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}$. For a Gibbs state $H_{\mathrm{modular},\tilde{Ϛ}_{\Psi}}=\beta\tilde H_\Psi+(\log Z)e_t$. The modular structure exists on the interior of the Bloch ball where the state is invertible and degenerates on the pure boundary, where the state is a zero divisor.
 
-A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2(G^{\vee},\mu)$, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}\tilde Q_1)$, which is the inner product this article uses.
+A state has a second description, from harmonic analysis. For an abelian group a continuous normalised positive-definite function is the Fourier transform of a unique probability measure, the same function is the state functional on the convolution algebra, and its GNS reconstruction is $L^2(G^{\vee},\mu)$, with Fourier inversion as the reconstruction. The biquaternion-valued transform of a measure is not such a function, because the algebra's norm is indefinite — the norm of the central imaginary unit is $\langle i\rangle_{\natural}=-1$ — and the definite object is the Hermitian pairing $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}\tilde Q_1)$, which is the inner product this article uses.
 
 The Hermitian GNS construction supplies the bridge from the vacuum state of *The Biquaternion Vacuum as a Minimal Idempotent* to the operator-algebraic tools of the articles that follow: the reconstructed module carries the mode algebra, the cyclic vector carries the contraction, and the modular Hamiltonian carries the thermal structure.
 
@@ -327,11 +327,11 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, central |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
-| $\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |
+| $\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |
 | $\xi_{\mathrm{scl}}$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\xi_{\mathrm{scl}}=\int\xi\,d\mu$; the state $\omega_{\mathrm{scl},\xi}(f)=\int f\xi_{\mathrm{scl}}$ on the convolution algebra has GNS space $L^2(G^{\vee},\mu)$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
-| $\tau(\tilde Q_3)=\tfrac12\mathrm{Tr}(\tilde Q_3)$ | Trace state; unique tracial state; Bloch centre |
+| $\tau(\tilde Q_3)=\mathrm{Sc}(\tilde Q_3)$ | Trace state; unique tracial state; Bloch centre |
 | $\langle\tilde Q_3,\tilde Q_1\rangle_\omega=\omega(\tilde Q_3^{*}\tilde Q_1)$ | GNS inner product |
 | $\mathcal{N}_\omega=\{\tilde Q_3:\omega(\tilde Q_3^{*}\tilde Q_3)=0\}$ | Radical of the state |
 | $\mathcal{H}_\omega=\mathbb{B}/\mathcal{N}_\omega$ | GNS Hilbert space |

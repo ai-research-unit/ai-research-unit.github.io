@@ -16,7 +16,7 @@ This article asks what the modular Hamiltonian and the first law of entanglement
 $$
 \delta S=\delta\langle H_{\mathrm{modular},0}\rangle-S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0}),
 $$
-where $\delta S=S(\tilde{Ϛ}_{\Psi})-S(\tilde{Ϛ}_{\Psi,0})$ and $\delta\langle H_{\mathrm{modular},0}\rangle=\mathrm{Tr}((\tilde{Ϛ}_{\Psi}-\tilde{Ϛ}_{\Psi,0})H_{\mathrm{modular},0}^{*})$. The deficit is exactly the relative entropy, which vanishes quadratically to leading order in the perturbation and is non-negative. The first law $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
+where $\delta S=S(\tilde{Ϛ}_{\Psi})-S(\tilde{Ϛ}_{\Psi,0})$ and $\delta\langle H_{\mathrm{modular},0}\rangle=2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi}-\tilde{Ϛ}_{\Psi,0})H_{\mathrm{modular},0}^{*})$. The deficit is exactly the relative entropy, which vanishes quadratically to leading order in the perturbation and is non-negative. The first law $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle$ is therefore exact to first order, and the framework's closed-form relative entropy makes the correction term explicit at every order.
 
 3. **The relation is verified on a perturbation.** Taking the reference state $\vec r_0=(0.3,-0.2,0.4)$ and the displacement $\vec v=(0.12,0.18,-0.07)$, at $s=0.05$ the two sides of the law differ by the relative entropy $-7.314\times10^{-5}$, and at $s=0.3$ by $-2.619\times10^{-3}$; the identity $\delta S-\delta\langle H_{\mathrm{modular},0}\rangle=-S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0})$ holds to machine precision at both steps, the discrepancy being below $2\times10^{-15}$.
 
@@ -34,9 +34,9 @@ a self-adjoint (generally unbounded) operator affiliated with $M$, so that the m
 $$
 H_{\mathrm{modular},\sigma}=-\log\sigma,
 $$
-a Hermitian element of the algebra, so that $\sigma=\exp(-H_{\mathrm{modular},\sigma})$ and $\mathrm{Tr}(\exp(-H_{\mathrm{modular},\sigma}))=1$. Three properties are used below.
+a Hermitian element of the algebra, so that $\sigma=\exp(-H_{\mathrm{modular},\sigma})$ and $2\,\mathrm{Sc}(\exp(-H_{\mathrm{modular},\sigma}))=1$. Three properties are used below.
 
-- **It is the state's logarithm.** $\sigma$ and $H_{\mathrm{modular},\sigma}$ carry the same information; the entropy is $S(\sigma)=\mathrm{Tr}(\sigma H_{\mathrm{modular},\sigma})=\langle H_{\mathrm{modular},\sigma}\rangle_\sigma$, the state's modular energy.
+- **It is the state's logarithm.** $\sigma$ and $H_{\mathrm{modular},\sigma}$ carry the same information; the entropy is $S(\sigma)=2\,\mathrm{Sc}(\sigma H_{\mathrm{modular},\sigma})=\langle H_{\mathrm{modular},\sigma}\rangle_\sigma$, the state's modular energy.
 - **It is defined by the state.** Different states have different modular Hamiltonians, and the difference of two modular Hamiltonians is the logarithm of the relative modular operator of the relative-entropy companion article.
 - **It generates the modular flow.** The commutation relation $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_1)|_{r'_t=0}=-i[H_{\mathrm{modular},\sigma},\tilde Q_1]$ of the thermal-time companion article makes $H_{\mathrm{modular},\sigma}$ the generator of the state's own time.
 
@@ -50,14 +50,14 @@ $$
 $$
 Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{B}_{\Phi}$.
 
-The expectation of $H_{\mathrm{modular},0}$ in an arbitrary state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ is the biquaternion trace of a product. With $\cos\gamma=\vec u_r\cdot\vec {u_r}_0$,
+The expectation of $H_{\mathrm{modular},0}$ in an arbitrary state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ is the scalar part of a product, doubled. With $\cos\gamma=\vec u_r\cdot\vec {u_r}_0$,
 $$
 \langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}
-=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,H_{\mathrm{modular},0}\big)
+=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,H_{\mathrm{modular},0}\big)
 =-\tfrac12\log\frac{1-r_0^2}{4}
 -r\,\mathrm{artanh}(r_0)\cos\gamma ,
 $$
-which is identically real, as the trace of two Hermitian elements must be. At $\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi,0}$ it reduces to
+which is identically real, as the scalar part of a product of two Hermitian elements must be. At $\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi,0}$ it reduces to
 $$
 S(\tilde{Ϛ}_{\Psi,0})=\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi,0}}
 =-\tfrac12\log\frac{1-r_0^2}{4}
@@ -65,18 +65,18 @@ S(\tilde{Ϛ}_{\Psi,0})=\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi,0
 $$
 which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
 
-Note that $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}$ is **linear** in the state $\tilde{Ϛ}_{\Psi}$: it is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$, the plain form of $\tilde{Ϛ}_{\Psi}$ with the fixed element, read as the trace pairing $H_{\mathrm{modular},0}$. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
+Note that $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}$ is **linear** in the state $\tilde{Ϛ}_{\Psi}$: it is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$, the plain form of $\tilde{Ϛ}_{\Psi}$ with the fixed element, read in the scalar part. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
 
 ## The First Law of Entanglement
 
 ### Statement
 
-Let $\sigma$ be a reference state with modular Hamiltonian $H_{\mathrm{modular},\sigma}=-\log\sigma$, and let $\rho$ be a state in a neighbourhood of $\sigma$, with $\delta\rho=\rho-\sigma$ of trace zero. Define
+Let $\sigma$ be a reference state with modular Hamiltonian $H_{\mathrm{modular},\sigma}=-\log\sigma$, and let $\rho$ be a state in a neighbourhood of $\sigma$, with $\delta\rho=\rho-\sigma$ of zero scalar part. Define
 $$
 \delta S=S(\rho)-S(\sigma),\qquad
 \delta\langle H_{\mathrm{modular},\sigma}\rangle
-=\mathrm{Tr}\big(\rho H_{\mathrm{modular},\sigma}\big)-\mathrm{Tr}\big(\sigma H_{\mathrm{modular},\sigma}\big)
-=\mathrm{Tr}\big(\delta\rho\,H_{\mathrm{modular},\sigma}\big).
+=2\,\mathrm{Sc}\big(\rho H_{\mathrm{modular},\sigma}\big)-2\,\mathrm{Sc}\big(\sigma H_{\mathrm{modular},\sigma}\big)
+=2\,\mathrm{Sc}\big(\delta\rho\,H_{\mathrm{modular},\sigma}\big).
 $$
 The **first law of entanglement** is the statement
 $$
@@ -89,13 +89,13 @@ that is, to first order in the perturbation the entropy change equals the change
 The assertion is the first-order shadow of an identity that is exact and, in the framework, closed-form. For two faithful states $\rho$ and $\sigma$,
 $$
 S(\rho\|\sigma)
-=\mathrm{Tr}\big(\rho\log\rho\big)-\mathrm{Tr}\big(\rho\log\sigma\big)
-=-S(\rho)+\mathrm{Tr}\big(\rho H_{\mathrm{modular},\sigma}\big),
+=2\,\mathrm{Sc}\big(\rho\log\rho\big)-2\,\mathrm{Sc}\big(\rho\log\sigma\big)
+=-S(\rho)+2\,\mathrm{Sc}\big(\rho H_{\mathrm{modular},\sigma}\big),
 $$
-using $\log\sigma=-H_{\mathrm{modular},\sigma}$ and $S(\rho)=-\mathrm{Tr}(\rho\log\rho)$. Subtracting the same quantity in the reference state, $S(\sigma)=\mathrm{Tr}(\sigma H_{\mathrm{modular},\sigma})$, gives
+using $\log\sigma=-H_{\mathrm{modular},\sigma}$ and $S(\rho)=-2\,\mathrm{Sc}(\rho\log\rho)$. Subtracting the same quantity in the reference state, $S(\sigma)=2\,\mathrm{Sc}(\sigma H_{\mathrm{modular},\sigma})$, gives
 $$
 S(\rho\|\sigma)
-=-\big[S(\rho)-S(\sigma)\big]+\mathrm{Tr}\big((\rho-\sigma)H_{\mathrm{modular},\sigma}\big),
+=-\big[S(\rho)-S(\sigma)\big]+2\,\mathrm{Sc}\big((\rho-\sigma)H_{\mathrm{modular},\sigma}\big),
 $$
 and therefore
 $$
@@ -107,7 +107,7 @@ $$
 $$
 with equality exactly at the reference state. The first law is the statement that the relative entropy — the gap — has no linear term, so the inequality is saturated to first order.
 
-The proof is two lines and uses only that $H_{\mathrm{modular},\sigma}=-\log\sigma$ and that $S(\rho\|\sigma)=\mathrm{Tr}(\rho\log\rho)-\mathrm{Tr}(\rho\log\sigma)$. In the biquaternion framework every quantity in it is computable in closed form: $\delta S$ from the entropy formula, $\delta\langle H_{\mathrm{modular},\sigma}\rangle$ from the expectation above, and $S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0})$ from the boxed relative-entropy formula of the companion article.
+The proof is two lines and uses only that $H_{\mathrm{modular},\sigma}=-\log\sigma$ and that $S(\rho\|\sigma)=2\,\mathrm{Sc}(\rho\log\rho)-2\,\mathrm{Sc}(\rho\log\sigma)$. In the biquaternion framework every quantity in it is computable in closed form: $\delta S$ from the entropy formula, $\delta\langle H_{\mathrm{modular},\sigma}\rangle$ from the expectation above, and $S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0})$ from the boxed relative-entropy formula of the companion article.
 
 ### Verification on a Perturbation
 
@@ -168,13 +168,13 @@ The splitting vanishes at the trace state, where the entanglement Hamiltonian is
 $$
 \tilde{Ϛ}_{\Psi,0}=\exp(-H_{\mathrm{modular},0})
 $$
-holds exactly, so the state is the thermal state of its own entanglement Hamiltonian at unit modular temperature, and the trace condition $\mathrm{Tr}\,\tilde{Ϛ}_{\Psi,0}=1$ is the normalisation of that thermal state. The framework's entanglement Hamiltonian is thus an ordinary $\mathbb{B}_{\Psi}$ element with a two-point spectrum, and the first law relates the entropy of the state to its expectation; the field-theoretic entanglement Hamiltonian of a region is the infinite-dimensional analogue of this object, with continuous spectrum and a geometric generator.
+holds exactly, so the state is the thermal state of its own entanglement Hamiltonian at unit modular temperature, and the normalisation $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi,0}=1$ is the normalisation of that thermal state. The framework's entanglement Hamiltonian is thus an ordinary $\mathbb{B}_{\Psi}$ element with a two-point spectrum, and the first law relates the entropy of the state to its expectation; the field-theoretic entanglement Hamiltonian of a region is the infinite-dimensional analogue of this object, with continuous spectrum and a geometric generator.
 
 ## Why the Law Is Exact to First Order
 
 The framework's terms make the mechanism transparent, and it is worth stating because it is the reason the law is universal.
 
-**The modular energy is linear in the state.** The quantity $\delta\langle H_{\mathrm{modular},0}\rangle=\mathrm{Tr}(\delta\rho\,H_{\mathrm{modular},0})$ is the Hermitian form of the perturbation with a fixed algebra element, read through the trace. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
+**The modular energy is linear in the state.** The quantity $\delta\langle H_{\mathrm{modular},0}\rangle=2\,\mathrm{Sc}(\delta\rho\,H_{\mathrm{modular},0})$ is the Hermitian form of the perturbation with a fixed algebra element, read in the scalar part. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
 
 **The relative entropy has no linear term.** As the relative-entropy companion article records, the second-order term of $S(\rho\|\rho_0)$ near $\rho=\rho_0$ is the Kubo–Mori–Bogoliubov metric of the reference state. There is no linear term, by the positivity and the stationarity of the relative entropy at coincidence. The first law is the statement of that vanishing, and the framework's closed form exhibits it: the boxed relative entropy is quadratic in $\delta\vec r$ near $\vec r=\vec r_0$.
 
@@ -184,7 +184,7 @@ The framework's terms make the mechanism transparent, and it is worth stating be
 
 The name "entanglement Hamiltonian" comes from the case in which $\sigma=\mathrm{Tr}_{\bar A}\,\tilde{Ξ}$ is the reduced state of a subsystem $A$ of a larger system. Then $H_{\mathrm{modular},A}=-\log\sigma_A$ is an operator on $A$'s Hilbert space, and
 $$
-\sigma_A=\frac{\exp(-H_{\mathrm{modular},A})}{\mathrm{Tr}\,\exp(-H_{\mathrm{modular},A})},
+\sigma_A=\frac{\exp(-H_{\mathrm{modular},A})}{2\,\mathrm{Sc}\,\exp(-H_{\mathrm{modular},A})},
 $$
 so the reduced state is the thermal state of its own entanglement Hamiltonian. In the biquaternion framework the reduced states of the tensor powers $\mathbb{B}^{\otimes n}$ are the partial traces of the strong-subadditivity companion article, and the entanglement Hamiltonian of a subsystem is
 $$
@@ -246,14 +246,14 @@ The mechanism is that the modular energy is linear in the state while the relati
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |
 | $\mathcal{M}_\sigma=S^*S$ | Modular operator of the state $\sigma$ |
 | $H_{\mathrm{modular},\sigma}=-\log\mathcal{M}_\sigma$ | Modular Hamiltonian |
 | $H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}$ | Modular Hamiltonian of a biquaternion state $\in\mathbb{B}_{\Psi}$ |
 | $r_0=|\vec r_0|$, $b=\mathrm{artanh}(r_0)$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$ | Reference-state data |
-| $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$ | Modular energy of $\tilde{Ϛ}_{\Psi}$ |
+| $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$ | Modular energy of $\tilde{Ϛ}_{\Psi}$ |
 | $\delta S=S(\tilde{Ϛ}_{\Psi})-S(\tilde{Ϛ}_{\Psi,0})$ | Entropy change |
-| $\delta\langle H_{\mathrm{modular},0}\rangle=\mathrm{Tr}((\tilde{Ϛ}_{\Psi}-\tilde{Ϛ}_{\Psi,0})H_{\mathrm{modular},0}^{*})$ | Modular-energy change |
+| $\delta\langle H_{\mathrm{modular},0}\rangle=2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi}-\tilde{Ϛ}_{\Psi,0})H_{\mathrm{modular},0}^{*})$ | Modular-energy change |
 | $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle-S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,0})$ | Exact identity; first law to first order |
 | $H_{\mathrm{modular},A}=-\log\tilde{Ϛ}_{\Psi,A}$ | Entanglement Hamiltonian of the subsystem $A$ |
 

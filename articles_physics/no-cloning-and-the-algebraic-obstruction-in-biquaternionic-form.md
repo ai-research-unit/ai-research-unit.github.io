@@ -4,16 +4,16 @@
 
 The no-cloning theorem states that an unknown quantum state cannot be copied: there is no physical process that takes one copy of an arbitrary state and produces two, each identical to the original. The theorem is the reason quantum information is not merely classical information carried by quantum systems, and it is the origin of quantum key distribution, of the security of quantum money, and of the impossibility of amplifying a quantum signal by copying it.
 
-The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be $*$-unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read as the trace pairing,
+The theorem is usually proved by an inner-product argument: a cloning transformation that worked for all states would have to be $*$-unitary, unitarity preserves inner products, but the inner product of two cloned outputs is the square of the input inner product, and a number equals its own square only when it is zero or one. This article presents the theorem in the biquaternion framework and isolates the operational meaning of "inner product" there. In the algebra the inner product of two rays is carried by the **normalised Hermitian form of their idempotents**, read in the scalar part,
 
 $$
-\bigl|\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) \in [0,1],
+\bigl|\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) \in [0,1],
 $$
 
 whose endpoints are the orthogonal and coincident cases. A cloning transformation must preserve this pairing, because it is an overlap and overlaps are preserved by the $*$-unitary evolution of the algebra; and it must simultaneously replace the pairing by its square, because two independent copies have an overlap that is the product of the two single-copy overlaps. The obstruction is therefore
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2},
+2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = \Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2},
 $$
 
 which forces the pairing to be $0$ or $1$: **cloning is possible exactly for sets of mutually orthogonal states, and for no others.** The two states are then perfectly distinguishable, and copying them is a classical operation.
@@ -26,7 +26,7 @@ The article develops both interpretations, then treats approximate cloning, wher
 
 ### Cloning as a map on states
 
-A **cloning machine** for a family of states $\{\tilde{Ϛ}_{\Psi,x}\}$ is a physical process, described in the framework by a completely positive trace-preserving map
+A **cloning machine** for a family of states $\{\tilde{Ϛ}_{\Psi,x}\}$ is a physical process, described in the framework by a completely positive map that preserves the scalar part
 
 $$
 Ξ : \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} \longrightarrow \mathbb{B}_{\Psi} \otimes \mathbb{B}_{\Psi} ,
@@ -37,7 +37,7 @@ $$
 
 where $\tilde{Ϛ}_{\Psi,0}$ is a fixed blank state. The process is required to be **universal** if it works for every state of the defining module, and **state-independent** in the sense that the same $Ξ$ and the same blank serve every input.
 
-Two features of $Ξ$ are immediate from the framework. It is **affine on the state space**: a convex combination of inputs maps to the corresponding convex combination of outputs, because a channel is linear on the cone and preserves the trace,
+Two features of $Ξ$ are immediate from the framework. It is **affine on the state space**: a convex combination of inputs maps to the corresponding convex combination of outputs, because a channel is linear on the cone and preserves the scalar part,
 
 $$
 Ξ\bigl((t\tilde{Ϛ}_{\Psi,1}+(1-t)\tilde{Ϛ}_{\Psi,2})\otimes\tilde{Ϛ}_{\Psi,0}\bigr)
@@ -80,13 +80,13 @@ $$
 = \langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\,\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle = \langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle^2 .
 $$
 
-Equating the two evaluations gives $\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle=\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle^2$, so $\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read as the trace pairing — the modulus squared of the inner product —
+Equating the two evaluations gives $\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle=\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle^2$, so $\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\in\{0,1\}$. In terms of the **normalised Hermitian form of the idempotents**, read in the scalar part — the modulus squared of the inner product —
 
 $$
-\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)
-= \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2}
+\boxed{\;2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)
+= \Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2}
 \qquad\Longrightarrow\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}\;}.
+2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}\;}.
 $$
 
 The pairing is $1$ only for $\tilde{Ξ}=\xi_{\mathrm{alt}}$ up to phase, and $0$ only for orthogonal states.
@@ -97,7 +97,7 @@ The conclusion is the no-cloning theorem in the framework's terms:
 
 > A deterministic, universal cloning process exists for a set of pure states if and only if the states are pairwise orthogonal. For any two non-orthogonal rays of the defining module, no $*$-unitary $\tilde Q$ on $\mathbb{B}\otimes\mathbb{B}$ maps $|\tilde{Ξ}\rangle\otimes|0\rangle$ to $|\tilde{Ξ}\rangle\otimes|\tilde{Ξ}\rangle$ for both.
 
-The normalised Hermitian form, read through the trace, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
+The normalised Hermitian form, read through the scalar part, is the algebra's measure of distinguishability: it is $1$ for coincident rays, $0$ for orthogonal rays, and strictly between for all others. Cloning would require it to be idempotent under squaring, and on the interval $[0,1]$ only the endpoints satisfy $x=x^2$. The obstruction is thus a statement about the range of the normalised Hermitian form: **a state space whose distinguishability takes intermediate values cannot be cloned.** The maximally mixed state and the pure states are the endpoints of the pairing's range; it is precisely the interior of the range that forbids cloning.
 
 ### A concrete pair
 
@@ -110,7 +110,7 @@ $$
 \bigl|\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = \tfrac12 .
 $$
 
-The normalised Hermitian form, read through the trace, is $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning $*$-unitary would have to send both $|\tilde{Ξ}\rangle|0\rangle\mapsto|\tilde{Ξ}\rangle|\tilde{Ξ}\rangle$ and $|\xi_{\mathrm{alt}}\rangle|0\rangle\mapsto|\xi_{\mathrm{alt}}\rangle|\xi_{\mathrm{alt}}\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no $*$-unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
+The normalised Hermitian form, read through the scalar part, is $2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = \tfrac12$, strictly inside $(0,1)$. A cloning $*$-unitary would have to send both $|\tilde{Ξ}\rangle|0\rangle\mapsto|\tilde{Ξ}\rangle|\tilde{Ξ}\rangle$ and $|\xi_{\mathrm{alt}}\rangle|0\rangle\mapsto|\xi_{\mathrm{alt}}\rangle|\xi_{\mathrm{alt}}\rangle$, preserving the overlap $\tfrac{1}{\sqrt2}$ while the two-copy overlap would be $\tfrac12$; the unitarity would demand $\tfrac{1}{\sqrt2} = \tfrac12$, which is false. In the idempotent form, it would demand $\tfrac12 = \tfrac14$. Hence no $*$-unitary clones even this elementary pair. This computation was verified directly: the two-copy overlap was computed as $1/2$ against the one-copy overlap $1/\sqrt2\approx 0.7071$, and they differ.
 
 ### Cloning versus copying
 
@@ -173,21 +173,21 @@ gives $\langle\tilde{Ξ}|\tilde{Ϛ}_{\Psi,\text{out},1}|\tilde{Ξ}\rangle = 5/6$
 
 ### Comparison with measurement and preparation
 
-A classical strategy is to measure the input and prepare two copies of the best guess of the state. For a qubit the optimal single-shot estimate of a uniformly random pure state has fidelity $2/3$, so this strategy achieves $F = 2/3 = 0.6667$, strictly below $5/6$. The quantum cloner's advantage is real and comes from producing clones that are correlated with the input more strongly than any measurement allows. The numbers $5/6$ and $2/3$ are standard; the framework transcribes the cloner into its tensor-product notation, and the reduction of the fidelity to the normalised Hermitian form, read through the trace, is the only translation involved.
+A classical strategy is to measure the input and prepare two copies of the best guess of the state. For a qubit the optimal single-shot estimate of a uniformly random pure state has fidelity $2/3$, so this strategy achieves $F = 2/3 = 0.6667$, strictly below $5/6$. The quantum cloner's advantage is real and comes from producing clones that are correlated with the input more strongly than any measurement allows. The numbers $5/6$ and $2/3$ are standard; the framework transcribes the cloner into its tensor-product notation, and the reduction of the fidelity to the normalised Hermitian form, read through the scalar part, is the only translation involved.
 
-### The fidelity as the normalised Hermitian form, read through the trace
+### The fidelity as the normalised Hermitian form, read through the scalar part
 
-The fidelity is the normalised Hermitian form, read through the trace: for a pure target state $\tilde\Pi(\tilde{Ξ})$ and an output state $\tilde{Ϛ}_{\Psi,\text{out}}$,
+The fidelity is the normalised Hermitian form, read through the scalar part: for a pure target state $\tilde\Pi(\tilde{Ξ})$ and an output state $\tilde{Ϛ}_{\Psi,\text{out}}$,
 
 $$
-F = \langle\tilde{Ξ}|\tilde{Ϛ}_{\Psi,\text{out}}|\tilde{Ξ}\rangle = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\,\tilde{Ϛ}_{\Psi,\text{out}}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde{Ϛ}_{\Psi,\text{out}}\bigr),
+F = \langle\tilde{Ξ}|\tilde{Ϛ}_{\Psi,\text{out}}|\tilde{Ξ}\rangle = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\,\tilde{Ϛ}_{\Psi,\text{out}}\bigr),
 $$
 
 the same pairing that gives the Born rule. The no-cloning obstruction and its approximate version are therefore both statements about this pairing: perfect cloning would require the pairing of input and clone to attain its maximum $1$ for every input, while the optimal cloner attains $5/6$ uniformly.
 
 ## No-Cloning and No-Signalling
 
-There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, would give faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the plain form of the algebra, read as the trace pairing, is a **relational** quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.
+There is a physical argument for the obstruction that complements the algebraic one and explains why the theorem must hold if relativity does. Suppose a universal cloner existed. Given one copy of a state drawn from a set of non-orthogonal alternatives, one could produce many copies and then measure a different observable on each copy; with enough copies the state could be identified with arbitrarily small error. Cloning would thus convert a single copy into a statistical sample, making non-orthogonal states distinguishable. But distinguishability of non-orthogonal states, combined with shared entanglement, would give faster-than-light signalling: Alice, sharing an entangled pair with Bob, could choose which of two non-orthogonal ensembles to prepare on her half, and Bob could then determine her choice from his half alone. The algebraic obstruction of this article is therefore not an accident of the framework; it is a necessary feature of any theory whose joint distributions on spacelike-separated systems are consistent, which is exactly the content of the companion articles on the correlation function and the CHSH inequality. In the framework's terms: the plain form of the algebra, read in the scalar part, is a **relational** quantity between two subsystems, and no local operation on one subsystem alone may convert it into information about which state the other holds.
 
 ## Related No-Go Theorems
 
@@ -205,10 +205,10 @@ In the framework's terms, all three are the statement that the normalised Hermit
 
 **What it does.**
 
-- It expresses the distinguishability of two rays as the normalised Hermitian form of their idempotents, read as the trace pairing, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
-- It gives the algebraic obstruction as the requirement $\mathrm{Tr}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}) = (\mathrm{Tr}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
+- It expresses the distinguishability of two rays as the normalised Hermitian form of their idempotents, read in the scalar part, and shows that it lies in $[0,1]$, with the endpoints corresponding to orthogonal and coincident states.
+- It gives the algebraic obstruction as the requirement $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}) = (2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sp}}\tilde\Pi_{\xi_{\mathrm{alt}}}^{*}))^2$, whose only solutions on the pairing's range are $0$ and $1$; that is, universal cloning is possible exactly for orthogonal families.
 - It identifies the deeper obstruction as linearity: physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, while the cloning target is quadratic.
-- It expresses the fidelity of approximate cloning as the normalised Hermitian form, read through the trace, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
+- It expresses the fidelity of approximate cloning as the normalised Hermitian form, read through the scalar part, and transcribes the optimal cloner into the tensor-product algebra, verifying the value $5/6$.
 
 **What it does not.**
 
@@ -231,23 +231,23 @@ In the framework's terms, all three are the statement that the normalised Hermit
 
 ## Summary
 
-The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the normalised Hermitian form of their idempotents, read as the trace pairing,
+The no-cloning theorem states that no physical process copies an unknown quantum state. In the biquaternion framework the distinguishability of two rays is the normalised Hermitian form of their idempotents, read in the scalar part,
 
 $$
-\bigl|\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = \mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) \in [0,1],
+\bigl|\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\bigr|^2 = 2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) \in [0,1],
 $$
 
 and a cloning $*$-unitary would have to preserve this pairing, because it is an overlap, while the pairing of two independent copies is its square. Equating the two requires
 
 $$
-\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = \Bigl(\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2},
+2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr) = \Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2},
 \qquad\text{hence}\qquad
-\mathrm{Tr}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}.
+2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\in\{0,1\}.
 $$
 
 Perfect universal cloning is therefore possible exactly for pairwise orthogonal families, where the states are classical alternatives; for any two non-orthogonal rays of the defining module it is impossible. Equivalently, the cloning target $\tilde{Ϛ}_{\Psi}\mapsto\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$ is quadratic while every physical evolution is affine on the cone slice of $\mathbb{B}_{\Psi}$, and the mismatch is the obstruction.
 
-Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the trace $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
+Approximate cloning quantifies the failure. The optimal universal qubit cloner — the Bužek–Hillery machine, transcribed into the tensor-product algebra and verified here — clones every state with fidelity $5/6$, above the best measurement-and-preparation fidelity $2/3$; the fidelity is the normalised Hermitian form, read through the scalar part $2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ of input and output. The companion no-go theorems (no-deleting, no-broadcasting) are the same obstruction in the mirror or in the mixed-state setting.
 
 ## Summary of Notation
 
@@ -257,12 +257,12 @@ Approximate cloning quantifies the failure. The optimal universal qubit cloner �
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$; $i$ | Quaternion units; central imaginary |
 | $\tilde\Pi(\tilde{Ξ})$ | Rank-one idempotent of a pure state |
-| $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = |\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle|^2$ | Trace reading of the Hermitian form (distinguishability) |
+| $2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = |\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle|^2$ | The Hermitian form, read in the scalar part (distinguishability) |
 | $\tilde Q$ | Cloning $*$-unitary, $\tilde Q\tilde Q^{*} = e_t\otimes e_t$ |
-| $Ξ$ | Cloning channel, completely positive trace preserving |
+| $Ξ$ | Cloning channel, completely positive and scalar-part preserving |
 | $Ξ(\tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi,0}) = \tilde{Ϛ}_{\Psi}\otimes\tilde{Ϛ}_{\Psi}$ | Cloning requirement |
-| $\mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = (\mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}))^2$ | Algebraic obstruction |
-| $F = \mathrm{Tr}(\tilde\Pi(\tilde{Ξ})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ | Cloning fidelity |
+| $2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}) = (2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde\Pi(\xi_{\mathrm{alt}})^{*}))^2$ | Algebraic obstruction |
+| $F = 2\,\mathrm{Sc}(\tilde\Pi(\tilde{Ξ})\tilde{Ϛ}_{\Psi,\text{out}}^{*})$ | Cloning fidelity |
 | $F = 5/6$ | Bužek–Hillery optimal universal fidelity |
 | $F = 2/3$ | Measurement-and-preparation fidelity |
 | $|\tilde{Ξ}(\theta,\theta_{\mathrm{azm}})\rangle$ | Test superposition family |
