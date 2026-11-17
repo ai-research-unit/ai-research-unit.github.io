@@ -4,7 +4,7 @@
 
 **This article separates two statements about mass that are easy to run together, and the earlier version of this article ran them together.** The first is about a fluid that exists. The second is about what is left when the fluid's own variables have gone to zero or to infinity. **They are not the same statement, and the difference is not a matter of emphasis: in the first the fluid equations hold everywhere, and in the second there is no fluid at all.**
 
-**At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=r^{2}$; the four-velocity is invertible at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
+**At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=\varrho^{2}$; the four-velocity is invertible at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
 
 **At zero mass, on the label cone, the fluid description stops.** The word has no value, the logarithm does not exist, the generator diverges, the inverse does not exist, and the density, the quantum potential and the stress are either zero or divergent there. **What remains is a direction, an intensity and the sign of the energy**: a null current, not a fluid. **Calling that object a fluid at zero density is a manner of speaking, and the earlier version of this article used it as though the cone were an inhabited state of the fluid.**
 
@@ -42,7 +42,7 @@ The first-order rung has the algebra-valued symbol $\Sigma(\tilde K_\Phi)$, an e
 
 ## Two Charts, Two Domains
 
-**The fluid chart is a chart on values.** Given $\tilde\Xi$, it extracts $r$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$ and the two axes. The extraction is total off the value cone and undefined on it, because the word needs $r^{2}=\lvert N(\tilde\Xi)\rvert$ and the norm vanishes there.
+**The fluid chart is a chart on values.** Given $\tilde\Xi$, it extracts $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$ and the two axes. The extraction is total off the value cone and undefined on it, because the word needs $\varrho^{2}=\lvert N(\tilde\Xi)\rvert$ and the norm vanishes there.
 
 **The Fourier chart is a chart on labels.** Given a mode, it names a point $\tilde K_\Phi$ and writes the mode's weight as the reciprocal of the symbol at that point. The extraction is total off the pole set and undefined on it, because the reciprocal needs $\mathcal N(\tilde K_\Phi)\neq0$ and the symbol vanishes there.
 
@@ -53,7 +53,7 @@ The first-order rung has the algebra-valued symbol $\Sigma(\tilde K_\Phi)$, an e
 | variable | the value $\tilde\Xi(X)$ | the label $\tilde K_\Phi$ |
 | fails when | $N(\tilde\Xi)=0$ | the symbol has no inverse |
 | the set | the value cone, real codimension two | the pole set, real codimension one |
-| what is lost | the word: $r$, the phase, the velocity | the weight: the reciprocal symbol |
+| what is lost | the word: $\varrho$, the phase, the velocity | the weight: the reciprocal symbol |
 | what survives | the pair $\bigl(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*}\bigr)$ | a least-squares inverse, and the homogeneous solutions |
 
 **The two "what survives" entries are the useful ones.** A failure of a chart is not a failure of the object: the field keeps its two numbers, and the operator keeps its kernel. **The corner is the place where those two survivals are the same set.**
@@ -86,14 +86,14 @@ $$
 | the family | family one: the four-momentum | family two: the field |
 | --- | --- | --- |
 | what is varied | $m$, at fixed energy $E$ | $m$, at fixed density and fixed shape |
-| the element | $\tilde P_\Phi$, with $r=mc$ | $\tilde\Xi$, with $r$ the field's own scale |
+| the element | $\tilde P_\Phi$, with $\varrho=mc$ | $\tilde\Xi$, with $\varrho$ the field's own scale |
 | the set it approaches | the label cone, since $N(\tilde P_\Phi)=-m^{2}c^{2}\to0$ | none: $N(\tilde\Xi)$ does not contain $m$ |
 | $\rho_{\mathrm{num}}$ | $m^{2}c^{2}\to0$ | fixed by the field |
 | $\gamma=E/(mc^{2})$ | $\to\infty$ | $\to\infty$ |
 | $Q_{\mathrm{qnt}}$ | $\propto1/m$ | $\propto1/m$ |
 | what the fluid loses | the rest frame | the quantum layer |
 
-**The fourth row is the correction the reader is owed.** The field does not thin as its mass vanishes: $\rho_{\mathrm{num}}=r^{2}$ is the field's own scale, and the mass is a parameter of the equation and not of the value. **A fixed field keeps its density at every mass**, and what the vanishing mass destroys is the quantum layer, not the density.
+**The fourth row is the correction the reader is owed.** The field does not thin as its mass vanishes: $\rho_{\mathrm{num}}=\varrho^{2}$ is the field's own scale, and the mass is a parameter of the equation and not of the value. **A fixed field keeps its density at every mass**, and what the vanishing mass destroys is the quantum layer, not the density.
 
 ### The Momentum's Approach, and the Frame That Pays
 
@@ -112,10 +112,10 @@ $$
 
 ### The Field's Approach, and the Quantum Layer
 
-**Family two holds the field fixed and varies the mass, and the mass appears in exactly one place: as $1/m$ in the quantum potential.** Since $\Box_\Phi r/r$ is a functional of the shape alone,
+**Family two holds the field fixed and varies the mass, and the mass appears in exactly one place: as $1/m$ in the quantum potential.** Since $\Box_\Phi\varrho/\varrho$ is a functional of the shape alone,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r}\ \propto\ \frac{1}{m},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\varrho}{\varrho}\ \propto\ \frac{1}{m},
 \qquad
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}\ \propto\ \frac{1}{m},
 $$
@@ -133,7 +133,7 @@ and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. **So the whole
 **The force is the exception, and it is the whole of the physics.** The acceleration law is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and $\gamma^{-1}=m/E$ cancels the $1/m$:
 
 $$
-\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\nabla\Bigl(\frac{\Box_\Phi r}{r}\Bigr),
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\nabla\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr),
 $$
 
 **which contains no mass at all.** At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.
@@ -159,7 +159,7 @@ $$
 | $\gamma$, and with it the rest frame | $E/(mc^{2})$ at $m=0$ |
 | the three-velocity | its limit is $c$, and there is no frame in which to measure it |
 | the four-factor word | $N=0$ |
-| the logarithm and the generator | $\ln r\to-\infty$ against a divergent rapidity |
+| the logarithm and the generator | $\ln\varrho\to-\infty$ against a divergent rapidity |
 | the inverse | $\tilde Q^{\natural}/N$ at $N=0$ |
 
 **The first row decides the question, and it is not a limit.** At $m=0$ the amplitude is not driven to zero by a path: it is forced into the kernel of a null symbol, and the kernel is the right ideal $\tilde\Pi\mathbb{B}$, every element of which has $N=0$. **The field is null because the equation says so at $m=0$, not because a family of fields shrank.**
@@ -174,7 +174,7 @@ $$
 
 **The earlier version of this article printed a $\gamma$ and a $\lvert\vec v\rvert$ among the quantities of the corner.** Both are family one's, they are limits and not values, and the table has been corrected. **The correction is the whole difference between a fluid approaching a wall and the wall itself.**
 
-**This is neither a failure of the reading nor a defect of the algebra.** $\rho_{\mathrm{num}}$, $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $r$ and of $m$, and at the corner $r=0$ and $m=0$: a quantity whose definition divides by either has no value there. **No change of chart produces a fluid where the fluid's own variables have gone**, which is why the corner is examined here as the end of a limit and not as a state.
+**This is neither a failure of the reading nor a defect of the algebra.** $\rho_{\mathrm{num}}$, $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $\varrho$ and of $m$, and at the corner $\varrho=0$ and $m=0$: a quantity whose definition divides by either has no value there. **No change of chart produces a fluid where the fluid's own variables have gone**, which is why the corner is examined here as the end of a limit and not as a state.
 
 ## The Label Chart at Zero Mass
 
@@ -273,7 +273,7 @@ $$
 | $\gamma$ | no value |
 | $\lvert\vec v\rvert$ | no value |
 
-**The first four rows are values and the last two are not, and the split is the whole table.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is defined at the corner, which is why the corner is describable at all; every ratio that divides by $r$ is not, which is why the corner is not a state of the fluid. **The two rows that are not values are family one's, and they were printed here in an earlier version as though they were.**
+**The first four rows are values and the last two are not, and the split is the whole table.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is defined at the corner, which is why the corner is describable at all; every ratio that divides by $\varrho$ is not, which is why the corner is not a state of the fluid. **The two rows that are not values are family one's, and they were printed here in an earlier version as though they were.**
 
 **The wave does not move its own state, up to the overall phase.** The amplitude is a fixed projector, so every value of the field is that projector up to a phase and a scale: **the only thing that changes along the world line is the phase $e^{i\theta}$**, and a change of phase changes nothing that this article measures, since $N$ and $\langle\cdot\rangle_{*}$ are both invariant under it. That is the algebraic content of a mode with no rest frame.
 

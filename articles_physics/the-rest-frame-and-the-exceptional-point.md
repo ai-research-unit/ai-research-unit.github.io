@@ -348,7 +348,7 @@ $$
 \lambda_+=\lambda_-=i\,mc .
 $$
 
-**What survives is a scale and a phase, and neither carries an orientation.** The scale is the mass; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
+**What survives is a scale and a phase, and neither carries an orientation.** The scale is $mc$, the mass times the speed of light; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
 
 **The frame is therefore not a function of the momentum.** A momentum at rest does not select a frame; every frame is equally available, and the two-term writing is a choice made from outside. This is stronger than the statement that the writing is not unique: the operator has no preferred basis at all, because it has all of them.
 
@@ -759,7 +759,7 @@ so the modulus exists and the word continues into a phase, a Hermitian factor an
 
 **The semisimple face of the stratum is a carrier and not a slice.** So the rest frame is a property of the algebra's centre, and the centre's defining property is that it commutes with everything. An element that commutes with everything acts as one number on every module and multiplies every component of a state by the same factor.
 
-**The reading is that rest is a global phase and a scale, and that both are unobservable in a single element.** The scale is the mass; the phase is the causal label; a uniform phase on a state module is not observable on a ray. So the content of a rest frame is the mass and the sign of the energy, and nothing else.
+**The reading is that rest is a global phase and a scale, and that both are unobservable in a single element.** The scale is $mc$; the phase is the causal label; a uniform phase on a state module is not observable on a ray. So the content of a rest frame is the mass and the sign of the energy, and nothing else.
 
 **The centre also collects the whole singular locus of the spectral cone.** The vertex of the cone is where the two eigenvalues meet and where the gradient of $B^{2}$ vanishes; that vertex is this carrier. So the stratum's only singularity and its semisimple face are the same set, which is why the split into two regimes is geometric and not arithmetic.
 
