@@ -6,7 +6,7 @@
 
 This article writes that protocol in the biquaternion language of the companion articles. The protocol is worth writing out because it is the one place in the framework where four of its constructions meet at once, and where the difference between them is forced into the open:
 
-- the **state** is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the $2\times2$ image);
+- the **state** is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight in the $2\times2$ image);
 - the **entangled resource** is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but *not* $*$-unitary;
 - the **Bell measurement** is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;
 - the **corrections** are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
@@ -50,8 +50,8 @@ It is worth stating explicitly which algebra each object belongs to, because the
 
 | Object | Algebra | Algebraic type |
 |---|---|---|
-| $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the image); $\mathbb{B}_{\Psi}$ |
-| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of unit scalar part; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
+| $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight in the image); $\mathbb{B}_{\Psi}$ |
+| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of unit weight; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $S_1,S_3$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian involutions; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi_\epsilon\otimes e_t$ | $\mathbb{B}^{\otimes3}$ | Hermitian idempotent on factors $(1,2)$ |
 | $\tilde Q_\epsilon$ | $\mathbb{B}$ | $*$-Unitary (Hermitian Pauli); a gate |
@@ -172,7 +172,7 @@ $$
 
 Two consequences follow immediately by contracting and reducing.
 
-**The probabilities are uniform.** Contracting both sides, and using $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)=1$ and $2\,\mathrm{Sc}(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})=1$,
+**The probabilities are uniform.** Contracting both sides, with $8\,\mathrm{Sc}$ the normalisation on the triple and $4\,\mathrm{Sc}$ the weight on the two-qubit factors,
 
 $$
 \boxed{\;p_\epsilon=8\,\mathrm{Sc}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}_{\Psi}^{(0)}\right]=\tfrac14\;},
@@ -180,7 +180,7 @@ $$
 
 for each of the four outcomes. The outcome distribution is uniform and independent of $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$: the record alone carries no information about the state. The state is transferred to Bob's qubit by the projection itself, and the record's only role is to tell him which Pauli image he now holds and hence which correction to apply.
 
-**Bob's conditional state.** Since $4\,\mathrm{Sc}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is
+**Bob's conditional state.** Since $4\,\mathrm{Sc}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $4\,\mathrm{Sc}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is
 
 $$
 4\,\mathrm{Sc}_{12}\!\left[(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\,\tilde{Ϛ}_{\Psi}^{(0)}\,(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\right]

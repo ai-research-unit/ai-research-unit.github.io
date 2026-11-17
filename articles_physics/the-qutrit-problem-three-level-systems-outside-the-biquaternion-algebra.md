@@ -189,7 +189,7 @@ Three prices are paid for this construction, and they are worth stating plainly.
 - **A larger algebra.** The algebra grows from $\mathbb{B}\cong M_2(\mathbb{C})$ to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$: complex dimension $4$ to $16$. The qutrit's ten-real-dimensional block of operators involving the third level exists, but in $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, not in $\mathbb{B}$.
 - **A changed notion of elementary.** In $\mathbb{B}$ the observable algebra, the state space and the biquaternion norm are all properties of one algebra element. In the tensor square the qutrit's observables are elements of a sector selected by a projector, and the sector is not closed under multiplication by the whole algebra — $P_{\mathrm{sym}}xP_{\mathrm{sym}}$ is a qutrit operator for every $x$, but the intermediate objects are four-dimensional.
 
-The last point is the one that controls the geometry. The state space of the qutrit is the positive unit-trace part of the projected sector, and it is not the trace-one slice of a cone in $\mathbb{B}_{\Psi}$; its boundary is cut by the cubic $\det\rho=0$, and the largest ball it contains has half the radius of the pure-state sphere. The cone picture, which was exact for the qubit, is what the third level costs.
+The last point is the one that controls the geometry. The state space of the qutrit is the positive unit-trace part of the projected sector, and it is not the unit-weight slice of a cone in $\mathbb{B}_{\Psi}$; its boundary is cut by the cubic $\det\rho=0$, and the largest ball it contains has half the radius of the pure-state sphere. The cone picture, which was exact for the qubit, is what the third level costs.
 
 ### Comparison with the standard qutrit formalism
 

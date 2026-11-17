@@ -560,21 +560,21 @@ $$
 
 ### I.11.i — The Pure State Is Doubly Null
 
-**Read:** the coincidence $\mathrm{Kr}=N$ on the informational sector, the determinant form of the value on the trace-one slice, and the identification of the doubly null set with the Peirce lines.
+**Read:** the coincidence $\mathrm{Kr}=N$ on the informational sector, the determinant form of the value on the unit-weight slice, and the identification of the doubly null set with the Peirce lines.
 
-**On the informational sector the K value is the algebraic norm, and on the trace-one slice the algebraic norm is the determinant.** For a state $\tfrac12(e_t+i\vec r)$ with $\vec r$ real and $\lvert\vec r\rvert\le1$,
+**On the informational sector the K value is the algebraic norm, and on the unit-weight slice the algebraic norm is the determinant.** For a state $\tfrac12(e_t+i\vec r)$ with $\vec r$ real and $\lvert\vec r\rvert\le1$,
 
 $$
 \mathrm{Kr}=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 $$
 
-**so the three K strata are the three classes of the state space.** Positive is the interior of the Bloch ball, the mixed states. Null is the sphere $\lvert\vec r\rvert=1$, the pure states. Negative is the exterior, the set of trace-one Hermitian elements that are not positive and therefore are not states.
+**so the three K strata are the three classes of the state space.** Positive is the interior of the Bloch ball, the mixed states. Null is the sphere $\lvert\vec r\rvert=1$, the pure states. Negative is the exterior, the set of unit-weight Hermitian elements that are not positive and therefore are not states.
 
 **The reading is that the weight measures mixedness, and that a pure state has none of it.** The value is largest at the maximally mixed state $\tfrac12e_t$, where it is $\tfrac14$, and it vanishes exactly on the pure states. A pure state is a zero divisor and a doubly null element at once, and the third statement is that it is spectrally regular: on the doubly null set $B^{2}=-Q_t^{2}\neq0$, so the two eigenvalues are distinct.
 
 **The three statements are one.** The purity, the vanishing of the weight and the vanishing of the algebraic norm are the vanishing of the determinant. The spectral regularity is the statement that a rank-one two-by-two matrix has eigenvalues one and zero, which never coincide. So the entry's coincidences are the coincidences of the determinant.
 
-**The boundary.** The state slice and the Bloch ball are the informational sector's reading, and the entry uses them as given. That a pure state has no weight is a statement about the determinant, and the name *mixedness* is a reading of the determinant on the trace-one slice.
+**The boundary.** The state slice and the Bloch ball are the informational sector's reading, and the entry uses them as given. That a pure state has no weight is a statement about the determinant, and the name *mixedness* is a reading of the determinant on the unit-weight slice.
 
 ### I.11.j — The Weight Is Not a Spectral Quantity
 
@@ -608,7 +608,7 @@ $$
 
 **The reading is that this is the price of a Lorentzian state space, and it is paid in one coin.** A definite form gives a convex cone, a norm and a normalisable state; it also gives no time direction. An indefinite form gives the time direction and loses the convexity. A theory that wants both must carry two forms and use each for what it can do.
 
-**The algebra is explicit about which form does which.** The Hermitian norm supplies the amplitude, the topological size and the trace-one slice; the polar decomposition, the Born weight and the Bloch ball all follow it. The K norm supplies the signature, the side of the cone and the isometry group; the indefinite geometry and the $J$-adjoint follow it. Neither can do the other's work, and the entry's two partitions are the statement of that division.
+**The algebra is explicit about which form does which.** The Hermitian norm supplies the amplitude, the topological size and the unit-weight slice; the polar decomposition, the Born weight and the Bloch ball all follow it. The K norm supplies the signature, the side of the cone and the isometry group; the indefinite geometry and the $J$-adjoint follow it. Neither can do the other's work, and the entry's two partitions are the statement of that division.
 
 **The boundary.** Nothing here says that a physical state space is indefinite. It says that if one is, its positivity cone is not convex, and that the algebra contains exactly one form for each of the two roles. The choice of which form is the probability is a reading, and the entry makes it in favour of the Hermitian one.
 

@@ -208,10 +208,10 @@ $$
 
 Multiplying the three equations and using $\epsilon_j^2 = 1$ gives $\epsilon_1\epsilon_2\epsilon_3 = +1$. Conversely, if $\epsilon_1\epsilon_2\epsilon_3 = +1$, multiplying by $\epsilon_1$ gives $\epsilon_2\epsilon_3 = \epsilon_1$, and similarly for the other two cyclic triples. So idempotency holds if and only if $\epsilon_1\epsilon_2\epsilon_3 = +1$.
 
-*Normalisation.* Twice the scalar part is
+*Normalisation.* Four times the scalar part is
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\bigl(2\,\mathrm{Sc}(\vec e_j)\bigr)^2 = \frac{1}{4}\cdot 4 = 1,
+4\,\mathrm{Sc}(\tilde\Pi_\epsilon) = \frac{1}{4}\sum_{j\in\{t,x,y,z\}}\bigl(2\,\mathrm{Sc}(\vec e_j)\bigr)^2 = \frac{1}{4}\cdot 4 = 1,
 $$
 
 because $2\,\mathrm{Sc}(e_t) = 2$ and $2\,\mathrm{Sc}(\vec e_j) = 0$ for $j \in \{x,y,z\}$.
@@ -319,7 +319,7 @@ $$
 
 with a sign pattern satisfying $\epsilon_1\epsilon_2\epsilon_3 = +1$. This is the algebraic characterization of the Bell basis: four idempotents, differing only by the sign pattern of the three vector-vector terms.
 
-**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ is the tensor-product Hermitian form between the state idempotent and the observable, read as the $4\times4$ trace of the tensor product $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$. The normalised Hermitian form, read through the trace, is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
+**2. The correlation function is a bilinear pairing.** The correlation function $E(\vec u_x, \vec u_y) = 4\,\mathrm{Sc}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ is the tensor-product Hermitian form between the state idempotent and the observable, read as four times the scalar part on the tensor product $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$. The normalised Hermitian form, read through the trace, is the same algebraic operation that gives the Born rule (Exercise: Measuring Spin Along an Arbitrary Direction) and the expectation value (Exercise: Spin Precession in a Magnetic Field).
 
 **3. The sign pattern encodes the correlation matrix.** In the standard formulation, the correlation matrix $T$ is computed by expanding the Bell projector in the Pauli-string basis and reading off the coefficients. In the biquaternion formulation, the same coefficients appear directly as the signs $\epsilon_j$ in the idempotent. The matrix $T$ is $-\mathrm{diag}(\epsilon_1,\epsilon_2,\epsilon_3)$.
 
@@ -364,7 +364,7 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $|Ξ^{\pm}\rangle_{*}, |\tilde{Ξ}^{\pm}\rangle$ | The four Bell states |
 | $\tilde\Pi_\epsilon = \tfrac{1}{4}(e_t\otimes e_t + \sum_j \epsilon_j\,\vec e_j\otimes \vec e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
 | $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
-| $E(\vec u_x, \vec u_y) = \mathrm{Tr}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ | Correlation function |
+| $E(\vec u_x, \vec u_y) = 4\,\mathrm{Sc}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ | Correlation function, four times the scalar part |
 | $T_{j\eta} = \langle\tilde{Ξ}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 

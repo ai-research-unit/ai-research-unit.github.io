@@ -333,7 +333,7 @@ $$
 
 **The two families behave differently.** A pure zero divisor annihilates itself on both sides and squares to zero; a non-pure one does not square to zero, its two annihilators are distinct planes, and its conjugate is the line they share. A product with a zero divisor is never an invertible element, so reaching the cone is irreversible: multiplication cannot leave it.
 
-**The boundary.** On the informational sector the same cone is not a causal horizon. Its trace-one slice bounds the state space and that boundary is the set of pure states. One set, two readings, and the entry says which one it is using.
+**The boundary.** On the informational sector the same cone is not a causal horizon. Its unit-weight slice bounds the state space and that boundary is the set of pure states. One set, two readings, and the entry says which one it is using.
 
 ### I.1.l — The Roots Are the Mass Shell and the Frame
 

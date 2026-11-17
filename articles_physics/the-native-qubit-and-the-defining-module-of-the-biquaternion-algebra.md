@@ -179,7 +179,7 @@ $$
 \qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\vec r|\bigr),
 $$
 
-when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_t$ when $\vec r=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\vec u_r$ and $-\vec u_r$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
+when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_t$ when $\vec r=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\vec u_r$ and $-\vec u_r$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the unit-weight positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
 
 ## The Geometry of the Module
 

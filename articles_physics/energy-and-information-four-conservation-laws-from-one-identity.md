@@ -633,7 +633,7 @@ The fixed number is the one that two observers agree on. The free number is the 
 
 That number is the same four times. The norm separates the four states without error, and the entropy is a monotone function of it. So on this side the number identifies nothing and the norm identifies everything.
 
-**A part and a whole.** Take a Bell pair. The joint state is pure: $2\,\mathrm{Sc}=1$, norm zero, entropy zero. Either factor alone is maximally mixed: $2\,\mathrm{Sc}=1$, norm $0.25$, entropy one bit. The number is one for the part and one for the whole, so it does not distinguish them.
+**A part and a whole.** Take a Bell pair. The joint state is pure: $4\,\mathrm{Sc}=1$, norm zero, entropy zero. Either factor alone is maximally mixed: $2\,\mathrm{Sc}=1$, norm $0.25$, entropy one bit. The number is one for the part and one for the whole, so it does not distinguish them.
 
 The norm does distinguish them, and in the direction opposite to the material one. The whole is pure and the parts are not. The information of the pair sits in the correlation, which neither factor holds, and the norm of a factor is not a function of the norm of the whole.
 

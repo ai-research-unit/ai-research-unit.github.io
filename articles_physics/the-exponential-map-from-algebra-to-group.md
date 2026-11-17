@@ -25,17 +25,19 @@ $$
 
 convergent for every $\tilde X$ because the algebra is finite-dimensional and the norm is submultiplicative. Under the isomorphism $\mathsf{M}_2$ it is the matrix exponential, since $\mathsf{M}_2$ is an algebra isomorphism and preserves sums and products.
 
-### The Trace Formula
+### The Determinant of the Exponential
+
+In the $2\times2$ image the Jacobi identity is the trace of the image,
 
 $$
-\det\exp(\tilde X)=e^{\operatorname{tr}\tilde X}.
+\det\exp(\tilde X)=e^{2\,\mathrm{Sc}\tilde X}.
 $$
 
-For a traceless $\tilde X$ this reads $\det\exp(\tilde X)=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.
+For a scalar-free $\tilde X$ this reads $\det\exp(\tilde X)=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.
 
 ### Cayley–Hamilton in Two Dimensions
 
-Every $2\times2$ matrix satisfies its characteristic polynomial. For traceless $\tilde X$,
+Every $2\times2$ matrix satisfies its characteristic polynomial. For scalar-free $\tilde X$,
 
 $$
 \tilde X^{2}=-\det(\tilde X)\,e_t,

@@ -122,7 +122,7 @@ The identification is confirmed by the invariant form rather than by the table's
 
 ## The Invariant Bilinear Form
 
-### The Trace Form
+### The Invariant Form
 
 The simplest invariant form is read from the $2\times2$ image:
 

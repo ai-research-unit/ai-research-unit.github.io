@@ -230,14 +230,16 @@ $$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t.
 $$
 
-The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
+The word *trace* is used for the image and for nothing else in the series: an element is read in $\mathrm{Sc}$, and *traceless* on an element is written *scalar-free*. The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
 
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}},
 \qquad 2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}=1\iff\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12 .
 $$
 
-A normalised state therefore has trace one; the factor $2$ belongs in the definition of the trace and cancels in the probability. Dropping it from the trace or inserting it in the ratio are the two opposite mistakes.
+A normalised state therefore has matrix trace one; the factor $2$ belongs in the definition of the trace and cancels in the probability. Dropping it from the trace or inserting it in the ratio are the two opposite mistakes.
+
+**The pairing formula.** The ratio is called the *pairing formula* in the exercises and in the summaries: two elements in, one normalised number out, with the star on the second slot. It is the Born weight written as a pairing, and it carries no trace word, because neither slot is a matrix. Where a table says *pairing formula*, this ratio is meant.
 
 ### The Domains of the Three Pairings
 

@@ -883,7 +883,7 @@ $$
 \det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural},\qquad
 \operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t .
 $$
-The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of invertibles and the unit-norm group are read from it.
+The trace in that display is the trace of the image, and the corpus uses the word for the image alone: an element is read in $\operatorname{Sc}$. The determinant is multiplicative, which is what makes the matrix model compute every norm in the corpus; the invertibility criterion, the group of invertibles and the unit-norm group are read from it.
 
 ### The Bridge to the $4\times4$ Displays
 

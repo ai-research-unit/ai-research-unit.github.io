@@ -252,13 +252,13 @@ The verification was run on the state that was chosen for its genericity and on 
 
 ## The Reduction Formula and the Gibbs Form
 
-The plain form, read as the reduction formula, inherited from the read list,
+The Gibbs form needs one identity, the reduction of the Hermitian form to the plain form on the sector,
 $$
-2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}^{}\big|_{\text{plain form}}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}),
+2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}),
 \qquad
 2\,\mathrm{Sc}(e_t)=2,
 $$
-is what makes the statement "the state is thermal with respect to $\tilde H_{\Psi,\mathrm{modular}}$" computable, for two reasons.
+where the second equality holds because $\tilde H_{\Psi,2}^{*}=\tilde H_{\Psi,2}$ in $\mathbb{B}_{\Psi}$. This identity is what makes the statement "the state is thermal with respect to $\tilde H_{\Psi,\mathrm{modular}}$" computable, for two reasons.
 
 First, since $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, the exponential $\exp(-\tilde H_{\Psi,\mathrm{modular}})=\tilde{Ϛ}_{\Psi}$ also lies in $\mathbb{B}_{\Psi}$, and its doubled scalar part is:
 $$

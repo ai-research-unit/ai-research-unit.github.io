@@ -115,6 +115,8 @@ and a form on two points is written with two arguments, $H(Q_1,Q_2)$, as *Produc
 
 **A point of the space is not written $z$.** The articles of the Duo-Complex Numbers category write a point as $Q$ and do not use $z$ for it, in agreement with *Several Complex Variables*, which writes a point of $\mathbb{C}^n$ as $Q$. The glyph of the point and the glyph of the complex element are the same, and the pair tells them apart: a bare $Q$ with no triangle is the complex number $Q=q+iq'$, and a point is always written as the pair.
 
+**The word *trace* belongs to a matrix.** The algebra is fixed before any representation is chosen. An element has a scalar part, $\operatorname{Sc}\tilde Q$, and a trace exists only on an image, where $\operatorname{tr}\mathsf M_2(\tilde Q)=2\operatorname{Sc}\tilde Q$. The corpus writes *trace* only when a matrix, an operator or a module carries it, and the sentence says which. The element-level reading is $\operatorname{Sc}$, and the name *scalar-free* replaces *traceless* on an element. The *trace form* of the classification articles is the trace form of that image, $\beta(\tilde Q_1,\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$, and the factor $2$ is the dimension of the image; it cancels in every ratio.
+
 ## The Angle
 
 **An angle is real, and it is written $\theta$.** A rotation enters the algebra as $\exp(i\theta)$, so the $i$ belongs to the exponential and not to the angle. The glyph $\theta$ therefore carries a real number, and a subscript names which angle it is: $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{rat}}$ the rotation angle of an evolution. One glyph, one case, and no second letter spent on the imaginary reading.
@@ -154,7 +156,7 @@ $$
 \mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V},
 $$
 
-the centre with the traceless part.
+the centre with the scalar-free part.
 
 **The centre and the vector subspace carry a glyph each.** The centre is written with the tilde-free coefficient of $e_t$, $Q_te_t$, a complex scalar times the unit; the vector subspace is written $\vec Q$, the pure element, with the arrow and without the tilde.
 

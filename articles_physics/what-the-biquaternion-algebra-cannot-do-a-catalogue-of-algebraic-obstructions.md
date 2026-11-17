@@ -359,7 +359,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 Two clarifications prevent the catalogue from being read as a refutation of the framework.
 
-**It does not say that the algebra's positive results are withdrawn.** The state space as the trace-one slice of the future cone, the transition probability as the normalised Hermitian form, read through the trace, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
+**It does not say that the algebra's positive results are withdrawn.** The state space as the unit-weight slice of the future cone, the transition probability as the normalised Hermitian form, read through the trace, the Fubini–Study metric as the second variation of the biquaternion norm, the Kähler structure, the unitarity theorem and the identification of the centre as the classical sector all stand; they are the content of the preceding articles of the subcategory. The obstructions concern what those structures cannot additionally be asked to do, and every one of them is stated with its remedy.
 
 **Most of the obstructions are shared with ordinary complex quantum physics, and only some are peculiar to the biquaternion setting.** The distinction matters for any assessment of the framework, and it is worth tabulating.
 

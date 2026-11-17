@@ -231,9 +231,9 @@ $$
 | --- | --- | --- |
 | material $\mathbb{B}_{\Phi}$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ | the interval |
 | informational $\mathbb{B}_{\Psi}$ | $q_t^2-\lvert\vec q'\rvert^2$ | the causal type |
-| trace-one state | $\tfrac14(1-\lvert\vec r\rvert^2)$ | the mixedness |
+| unit-weight state | $\tfrac14(1-\lvert\vec r\rvert^2)$ | the mixedness |
 
-**One zero set, three meanings.** The determinant vanishes on the light cone, on the boundary of the state space and on the set of pure states, and these are three descriptions of one locus in three slices. Purity is affine in the determinant on the trace-one slice.
+**One zero set, three meanings.** The determinant vanishes on the light cone, on the boundary of the state space and on the set of pure states, and these are three descriptions of one locus in three slices. Purity is affine in the determinant on the unit-weight slice.
 
 **Invertibility becomes a determinant.** An element is invertible exactly when $N\neq0$, so in the image an invertible element is a matrix of non-zero determinant and the cone of zero divisors is the vanishing set of the determinant. At size four the determinant is $N^2$ and the zero set is unchanged.
 

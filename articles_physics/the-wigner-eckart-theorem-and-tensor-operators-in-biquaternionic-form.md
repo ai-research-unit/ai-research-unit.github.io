@@ -246,7 +246,7 @@ which was verified numerically at $\theta=0,\pi/4,\pi/3,\pi/2$ (in units of $\hb
 
 The general lesson is the one the counting predicts: the product of two rank-$1$ operators decomposes into ranks $2$, $1$ and $0$ according to $1\otimes1=2\oplus1\oplus0$, so the antisymmetric combination gives a rank-$1$ operator and the trace gives a rank-$0$ operator. Higher ranks require longer products; each factor of the product costs one more factor of the algebra, since a single factor carries only ranks $0$ and $1$.
 
-## The Trace Form and the Born Rule
+## The Pairing and the Born Rule
 
 The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde\Pi$ and an observable $\tilde H_\Psi$,
 
@@ -256,7 +256,7 @@ $$
 
 the pairing formula of the companion articles. A matrix element $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.
 
-The trace form has one practical consequence worth stating. Because the reduced matrix element is $m$-independent, it can be extracted from any single nonzero matrix element; the pairing formula then gives it as a trace, avoiding the need to fix a basis of the multiplet. In the framework this is the natural way to state the theorem, since $\mathrm{Tr}$ and $\mathrm{Sc}$ are the two invariant pairings the algebra carries, and it keeps the reduction on the algebraic side of the ledger. The price is that the Clebsch–Gordan coefficients remain imported: the trace gives the reduced element, but the geometric factor is still the rotation group's.
+The pairing has one practical consequence worth stating. Because the reduced matrix element is $m$-independent, it can be extracted from any single nonzero matrix element; the pairing formula then gives it as a trace, avoiding the need to fix a basis of the multiplet. In the framework this is the natural way to state the theorem, since the trace of the image and the scalar part carry the same invariant pairing, differing by the dimension, and it keeps the reduction on the algebraic side of the ledger. The price is that the Clebsch–Gordan coefficients remain imported: the trace gives the reduced element, but the geometric factor is still the rotation group's.
 
 ## What Is Algebraic and What Is Imported
 

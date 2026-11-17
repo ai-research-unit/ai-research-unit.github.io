@@ -105,7 +105,7 @@ $$
  e_t\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$
 
-with outcomes of probability $p_\pm = 2\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$
+with outcomes of probability $p_\pm = 4\,\mathrm{Sc}[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}]$ at normalisation, and conditional states of $A$
 
 $$
 \tilde{Ϛ}_{\Psi,A|\pm} = \frac{2\,\mathrm{Sc}_B\bigl[(e_t\otimes\tilde{\Pi}_{1,2})\tilde{Ϛ}_{\Psi,AB}(e_t\otimes\tilde{\Pi}_{1,2})\bigr]}{p_\pm}.

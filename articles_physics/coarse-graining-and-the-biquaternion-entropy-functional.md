@@ -62,7 +62,7 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}^{\natural} = \left(\tfrac{1}{2}\right)^2 + \left(\tfrac{i r_1}{2}\right)^2 + \left(\tfrac{i r_2}{2}\right)^2 + \left(\tfrac{i r_3}{2}\right)^2 = \tfrac{1}{4}\left(1 - |\vec r|^2\right)e_t .
 $$
 
-This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the trace-one slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{B}_{\Psi}$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
+This single identity carries the geometry of the state space. The biquaternion norm is **positive** in the interior of the Bloch ball, **zero** on its boundary, and **negative** outside it, so that the state space is exactly the unit-weight slice of the future cone of the biquaternion norm. The boundary of the state space is the **zero-divisor cone**: the pure states are the elements of $\mathbb{B}_{\Psi}$ that fail to be invertible. The biquaternion norm therefore measures how far inside the cone a state lies, and its vanishing is the algebraic statement of purity.
 
 Two further identities follow from the multiplication table and are used throughout. Squaring the state gives
 

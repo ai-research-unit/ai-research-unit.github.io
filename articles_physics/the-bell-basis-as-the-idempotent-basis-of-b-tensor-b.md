@@ -10,7 +10,7 @@ $$
 
 The companion *Exercise: The Correlation Function of the Bell States* then wrote all four Bell states as idempotents $\tilde\Pi_\epsilon$ of $\mathbb{B}\otimes\mathbb{B}$ and computed their correlation functions.
 
-This article develops the structure that those two articles use but do not make explicit: **the four Bell states form a distinguished idempotent basis of the two-qubit algebra.** Each Bell state is an idempotent, Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The four are pairwise orthogonal, of unit scalar part, and sum to the identity $e_t\otimes e_t$ of the algebra. They are, at the same time, the joint eigen-idempotents of two commuting Hermitian involutions — the **stabiliser operators** of the Bell basis — and the reduction of each is the maximally mixed qubit state $\tfrac{1}{2}e_t$.
+This article develops the structure that those two articles use but do not make explicit: **the four Bell states form a distinguished idempotent basis of the two-qubit algebra.** Each Bell state is an idempotent, Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The four are pairwise orthogonal, of unit weight, and sum to the identity $e_t\otimes e_t$ of the algebra. They are, at the same time, the joint eigen-idempotents of two commuting Hermitian involutions — the **stabiliser operators** of the Bell basis — and the reduction of each is the maximally mixed qubit state $\tfrac{1}{2}e_t$.
 
 The mathematics is standard finite-dimensional algebra, recomputed here in the language of $\mathbb{B}\otimes\mathbb{B}$. The article claims no physics beyond the companion articles. What it makes visible is a structural fact: the two-qubit algebra carries a canonical, discrete idempotent basis whose members are the four Bell states; and the Bell states are singled out from the continuum of maximally entangled states by a particular **tensor structure** — by being diagonal in the tensor-product basis.
 
@@ -39,7 +39,7 @@ $$
 \mathrm{Sc}_1(a\otimes b)=b\,\mathrm{Sc}(a),
 $$
 
-extended linearly; the reductions are $2\,\mathrm{Sc}_2$ and $2\,\mathrm{Sc}_1$, one factor of $2$ for the collapsed two-level factor. The Hermitian elements of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ are the observables and states of the two-qubit system; in particular, a **pure state** is an idempotent of $\mathbb{B}\otimes\mathbb{B}$ that is Hermitian and of unit scalar part, $4\,\mathrm{Sc}(\tilde\Pi)=1$.
+extended linearly; the reductions are $2\,\mathrm{Sc}_2$ and $2\,\mathrm{Sc}_1$, one factor of $2$ for the collapsed two-level factor. The Hermitian elements of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ are the observables and states of the two-qubit system; in particular, a **pure state** is an idempotent of $\mathbb{B}\otimes\mathbb{B}$ that is Hermitian and of unit weight, $4\,\mathrm{Sc}(\tilde\Pi)=1$.
 
 Throughout, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
 
@@ -133,7 +133,7 @@ There are exactly four such triples, and they correspond to the four Bell states
 | $\lvertΞ^{-}\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_t\otimes e_t+\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ |
 | $\lvert\tilde{Ξ}^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_t\otimes e_t-\vec e_x\otimes \vec e_x-\vec e_y\otimes \vec e_y+\vec e_z\otimes \vec e_z)$ |
 
-The first row is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ already fixed by the entangled-subsystems article; the other three rows are its companions. *Exercise: The Correlation Function of the Bell States* verified that each $\tilde\Pi_\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3=+1$ is idempotent and of unit scalar part, so we do not repeat that computation. Two further properties are worth recording.
+The first row is the singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ already fixed by the entangled-subsystems article; the other three rows are its companions. *Exercise: The Correlation Function of the Bell States* verified that each $\tilde\Pi_\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3=+1$ is idempotent and of unit weight, so we do not repeat that computation. Two further properties are worth recording.
 
 **The $\tilde\Pi_\epsilon$ are Hermitian.** For $\mu\in\{x,y,z\}$ the Hermitian conjugate of $\vec e_\mu$ is $-\vec e_\mu$, so
 
@@ -219,7 +219,7 @@ $$
 \epsilon_1=-s_1,\qquad \epsilon_2=s_1s_3,\qquad \epsilon_3=-s_3 .
 $$
 
-The identity $\epsilon_1\epsilon_2\epsilon_3=(-s_1)(s_1s_3)(-s_3)=s_1^2s_3^2=+1$ is then automatic. We have therefore proved, in one step, that the four Bell idempotents of the previous section are pairwise orthogonal, sum to the identity, and are Hermitian of unit scalar part. In detail:
+The identity $\epsilon_1\epsilon_2\epsilon_3=(-s_1)(s_1s_3)(-s_3)=s_1^2s_3^2=+1$ is then automatic. We have therefore proved, in one step, that the four Bell idempotents of the previous section are pairwise orthogonal, sum to the identity, and are Hermitian of unit weight. In detail:
 
 - **Orthogonality:** $\tilde\Pi_\epsilon \tilde\Pi_{\varkappa}=\delta_{\epsilon\varkappa}\tilde\Pi_\epsilon$, because distinct joint spectral projectors of a family of commuting Hermitian operators are orthogonal.
 - **Completeness:** $\sum_\epsilon \tilde\Pi_\epsilon=e_t\otimes e_t$, the resolution of the identity.
@@ -304,7 +304,7 @@ $$
 \tilde{Q}=\sum_{\mu,\nu\in\{t,x,y,z\}}Q_{\mu\nu}\,e_\mu\otimes e_\nu,
 $$
 
-the Bell idempotents are precisely those **idempotents of unit scalar part** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
+the Bell idempotents are precisely those **idempotents of unit weight** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
 
 $$
 \tilde\Pi_\epsilon=\tfrac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,e_\mu\otimes e_\mu,\qquad \epsilon_t=1 .
@@ -312,13 +312,13 @@ $$
 
 There are no cross terms $e_\mu\otimes e_\nu$ with $\mu\neq\nu$. This is the "particular tensor structure" of the Bell states: the two tensor factors carry matched indices throughout, so the element is a sum of correlated pairs rather than of arbitrary products. In particular, $\tilde\Pi_\epsilon$ is invariant under the tensor flip $\tau(e_\mu\otimes e_\nu)=e_\nu\otimes e_\mu$.
 
-A natural question is how many idempotents of this diagonal form **of unit scalar part** there are. Let
+A natural question is how many idempotents of this diagonal form **of unit weight** there are. Let
 
 $$
 \tilde\Pi=\tfrac{1}{4}\left(\lambda_0\,e_t\otimes e_t+\lambda_1\,\vec e_x\otimes \vec e_x+\lambda_2\,\vec e_y\otimes \vec e_y+\lambda_3\,\vec e_z\otimes \vec e_z\right).
 $$
 
-Imposing $\tilde\Pi^2=\tilde\Pi$ and $4\,\mathrm{Sc}(\tilde\Pi)=1$ determines the coefficients completely. The scalar part gives $\lambda_0=1$. The coefficient of $e_t\otimes e_t$ in $\tilde\Pi^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $\vec e_\lambda\otimes \vec e_\lambda$ (for $\lambda\in\{x,y,z\}$, where $\{\nu,\mu,\lambda\}=\{x,y,z\}$) is $\tfrac{1}{16}\left(2\lambda_\lambda+2\lambda_\nu\lambda_\mu\right)$, which must equal $\tfrac14\lambda_\lambda$, so $\lambda_\nu\lambda_\mu=\lambda_\lambda$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_\mu=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents **of unit scalar part**, and they are the four Bell idempotents. No other diagonal idempotent of unit scalar part exists.
+Imposing $\tilde\Pi^2=\tilde\Pi$ and $4\,\mathrm{Sc}(\tilde\Pi)=1$ determines the coefficients completely. The scalar part gives $\lambda_0=1$. The coefficient of $e_t\otimes e_t$ in $\tilde\Pi^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $\vec e_\lambda\otimes \vec e_\lambda$ (for $\lambda\in\{x,y,z\}$, where $\{\nu,\mu,\lambda\}=\{x,y,z\}$) is $\tfrac{1}{16}\left(2\lambda_\lambda+2\lambda_\nu\lambda_\mu\right)$, which must equal $\tfrac14\lambda_\lambda$, so $\lambda_\nu\lambda_\mu=\lambda_\lambda$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_\mu=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents **of unit weight**, and they are the four Bell idempotents. No other diagonal idempotent of unit weight exists.
 
 ### The Bell idempotents inside the continuum of maximally entangled states
 
@@ -421,7 +421,7 @@ $$
 
 So each Bell idempotent is maximally entangled in the precise sense of the previous section: its reduction is maximally mixed, its reduced purity is $\tfrac12$ (the minimum for a qubit), and its reduced entropy is $\log 2$ (the maximum). The computation is the same for all four states and reproduces, for the singlet, the result $\tilde{Ϛ}_{\Psi,1}=\tfrac12e_t$ of the entangled-subsystems article and of *Exercise: The Reduced State of an Entangled Subsystem*.
 
-Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only diagonal-form idempotents of unit scalar part; and their reductions are all the maximally mixed state $\tfrac{1}{2}e_t$. The Bell basis is thus a canonical object of the tensor-product algebra, singled out by the tensor structure and the stabiliser spectrum, and maximally entangled like every pure state in the surrounding continuum.
+Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only diagonal-form idempotents of unit weight; and their reductions are all the maximally mixed state $\tfrac{1}{2}e_t$. The Bell basis is thus a canonical object of the tensor-product algebra, singled out by the tensor structure and the stabiliser spectrum, and maximally entangled like every pure state in the surrounding continuum.
 
 ## A Remark on the Status of the Tensor Product
 
@@ -448,7 +448,7 @@ one for each of the four admissible sign triples.
 
 The article established the following structure.
 
-- **Idempotent basis.** The four $\tilde\Pi_\epsilon$ are Hermitian idempotents of unit scalar part, pairwise orthogonal, summing to the identity: $\tilde\Pi_\epsilon \tilde\Pi_{\varkappa}=\delta_{\epsilon\varkappa}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon=e_t\otimes e_t$. They form a maximal orthogonal family of minimal idempotents — an idempotent basis — of the two-qubit algebra, whose span is a Cartan subalgebra of dimension four.
+- **Idempotent basis.** The four $\tilde\Pi_\epsilon$ are Hermitian idempotents of unit weight, pairwise orthogonal, summing to the identity: $\tilde\Pi_\epsilon \tilde\Pi_{\varkappa}=\delta_{\epsilon\varkappa}\tilde\Pi_\epsilon$ and $\sum_\epsilon \tilde\Pi_\epsilon=e_t\otimes e_t$. They form a maximal orthogonal family of minimal idempotents — an idempotent basis — of the two-qubit algebra, whose span is a Cartan subalgebra of dimension four.
 - **Stabiliser eigenbasis.** The commuting Hermitian involutions $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$ (corresponding to $\sigma_1\otimes\sigma_1$ and $\sigma_3\otimes\sigma_3$) form a complete set of commuting observables whose joint spectrum is non-degenerate; the $\tilde\Pi_\epsilon$ are its joint eigen-idempotents, with eigenvalues $(-\epsilon_1,-\epsilon_3)$. Each $\tilde\Pi_\epsilon$ is conjugation-invariant under $S_1$ and $S_3$, and its stabiliser group is the Klein four-group generated by the sign-corrected $S_1$ and $S_3$.
 - **Diagonal tensor structure.** The Bell idempotents are exactly the idempotents of diagonal tensor form $\tfrac14\sum_\mu\epsilon_\mu\,e_\mu\otimes e_\mu$. There are exactly four of them, and the sign matrix whose rows are $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ is Hadamard. A generic maximally entangled state is a continuum and is not diagonal; the Bell basis is the discrete, canonical family selected by the diagonal structure.
 - **Maximal mixedness.** The reduction of every Bell idempotent is the maximally mixed state, $2\,\mathrm{Sc}_1(\tilde\Pi_\epsilon)=2\,\mathrm{Sc}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$, of purity $\tfrac12$ and entropy $\log 2$. The four states are locally indistinguishable; their distinction resides entirely in the correlated tensor terms, i.e. in the signs $\epsilon$.

@@ -999,10 +999,11 @@ which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli d
 
 **No frame is needed.** The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the two $4\times4$ displays, which read operators on the algebra.
 
-**The trace is the trace of this image.** The Hermitian form is defined on the algebra and needs no matrix. The trace is defined only here, on the image, and it is a reading of the Hermitian form in this presentation, not a second pairing. The corpus writes
+**The trace is the trace of this image.** The Hermitian form is defined on the algebra and needs no matrix. The trace is defined only here, on the image, and it is a reading of the Hermitian form in this presentation, not a second pairing. The matrix articles abbreviate
 $$
-\operatorname{Tr}(\tilde Q):=\operatorname{Tr}\mathsf{M}_2(\tilde Q).
+\operatorname{Tr}(\tilde Q):=\operatorname{Tr}\mathsf{M}_2(\tilde Q),
 $$
+and the abbreviation is local to them; outside the matrix category the same number is written $2\,\mathrm{Sc}\tilde Q$, because there the element has no trace and only a scalar part.
 $$
 2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*}),\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q),
 $$

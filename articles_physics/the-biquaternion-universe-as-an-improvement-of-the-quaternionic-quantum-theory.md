@@ -328,7 +328,7 @@ where $\mathbb{H}_{\mathrm{spl}}$ is the split quaternion algebra ($\mathbb{H}_{
 
 ### The Two-State Structure
 
-The natural home of the quaternionic theory was a single system with $SU(2)$ symmetry, and that is the biquaternion theory's exact finite content. The Hermitian sector $\mathbb{B}_{\Psi}$ is the observable algebra of one two-state system, the states are the trace-one elements of its positive cone, the state space is the Bloch ball, the imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the three axes of the Bloch vector, and the Born rule is the pairing $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ on the defining module $S\cong\mathbb{C}^{2}$. Nothing of the quaternionic theory's two-state content is lost; it is made the exact finite content of the successor. This is owned by *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
+The natural home of the quaternionic theory was a single system with $SU(2)$ symmetry, and that is the biquaternion theory's exact finite content. The Hermitian sector $\mathbb{B}_{\Psi}$ is the observable algebra of one two-state system, the states are the unit-weight elements of its positive cone, the state space is the Bloch ball, the imaginary units $\vec e_x,\vec e_y,\vec e_z$ are the three axes of the Bloch vector, and the Born rule is the pairing $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ on the defining module $S\cong\mathbb{C}^{2}$. Nothing of the quaternionic theory's two-state content is lost; it is made the exact finite content of the successor. This is owned by *The Native Qubit and the Defining Module of the Biquaternion Algebra*.
 
 ### The Scalar Field Is an Input, and the Corpus Says Which Input
 

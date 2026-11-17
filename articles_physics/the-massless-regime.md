@@ -316,7 +316,7 @@ $$
 
 So the identity of the algebra is the sum of two null idempotents, and neither summand is degenerate in the spectral sense. The null cone contains the pieces of an invertible element and not the unit; that is the whole difference between this stratum and the open one.
 
-### Trace One and Norm Zero
+### Unit Weight and Norm Zero
 
 **The two invariants measure different things, and the idempotent separates them.**
 
@@ -331,7 +331,7 @@ So the identity of the algebra is the sum of two null idempotents, and neither s
 
 **This is the table to consult whenever a reader wants one of the invariants to be a probability.** Twice the scalar part of the idempotent is one, so the idempotent is a state in the sense of having unit weight; its norm is zero, so the norm is not that weight. Both statements are about the same element, and they are not in conflict: the norm is a multiplicative invariant of the algebra and the trace is an additive one.
 
-### Normalise by the Trace
+### Normalise by the Weight
 
 **The usual normalisation needs a modulus, and the modulus is zero.**
 
@@ -783,7 +783,7 @@ whose scalar piece is a line inside the centre and whose vector piece is $i$ tim
 
 **The boundary.** The reading is of the spectrum. A zero eigenvalue in this algebra is one frozen mode of one element, not an empty state and not a second particle.
 
-### I.10.aj — Normalise by the Trace When the Norm Is Gone
+### I.10.aj — Normalise by the Weight When the Norm Is Gone
 
 **Read:** $\tilde\Pi=\tilde Q/(2Q_t)$, $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, and the uniqueness of the idempotent on each null line.
 
@@ -797,7 +797,7 @@ whose scalar piece is a line inside the centre and whose vector piece is $i$ tim
 
 **The boundary.** The word *weight* is a reading of the scalar part. Off the material slice $\kappa$ is a complex number with no energy interpretation.
 
-### I.10.ak — Trace One and Norm Zero: the Norm Is Not a Probability
+### I.10.ak — Unit Weight and Norm Zero: the Norm Is Not a Probability
 
 **Read:** $\operatorname{Sc}\tilde\Pi=\tfrac12$, $N(\tilde\Pi)=0$, $\operatorname{rank}\tilde\Pi=1$.
 

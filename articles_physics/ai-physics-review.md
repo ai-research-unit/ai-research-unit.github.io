@@ -145,7 +145,7 @@ $$
 
 The factor $2$ is the dimension of the image. It is not a property of the form, and it is why the corpus states every identity on the algebra with $2\,\mathrm{Sc}$ and never with the matrix symbol: the factor is carried explicitly, so it cannot be lost.
 
-**The state.** $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$. Its matrix reading is $\operatorname{tr}\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=1$, the normalised of a density matrix. The algebraic condition is the same statement and does not need the matrix.
+**The state.** $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$. Its matrix reading is $\operatorname{tr}\mathsf{M}_2(\tilde{Ϛ}_{\Psi})=1$, the trace of a normalised density matrix. The algebraic condition is the same statement and does not need the matrix.
 
 **The star is not optional in the pairing.** The form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ is the Hermitian conjugation in the second slot, and that star is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$, where both arguments are Hermitian, $\tilde Q_2^{*}=\tilde Q_2$ and the star acts as the identity, but it is written in every probability formula: it names the form that is positive definite on the whole algebra, and the plain form is the restriction to the sector.
 
@@ -157,7 +157,7 @@ $$
 
 This is the Hermitian form, not a fifth form. It is used only at normalisation; the Born weight itself is stated in the quantum section as the normalised Hermitian form.
 
-**What the doubled scalar part is not.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde H_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\ge0$ for $\tilde{Ϛ}_{\Psi},\tilde H_\Psi\ge0$; that non-negativity is the reason the star belongs in the probability reading.
+**What the matrix trace does not supply.** It is not defined on $\mathbb{B}$ before a representation is chosen; $\mathrm{Sc}$ is. Its factor is the dimension of the representation, while $\mathrm{Sc}$ and the Hermitian form do not depend on it. The matrix trace of a positive product is the Hilbert–Schmidt inner product, and on the algebra it reads $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^{1/2}\tilde H_\Psi\tilde{Ϛ}_{\Psi}^{1/2})\ge0$ for $\tilde{Ϛ}_{\Psi},\tilde H_\Psi\ge0$; that non-negativity is the reason the star belongs in the probability reading.
 
 ### One operation, three uses
 
@@ -350,7 +350,7 @@ The project keeps its own list of proven obstructions. These are the ones that c
 10. **A form that multiplies and a form that does not are two different tools.** A metric is the first; a probability is the second. Reading a probability off the multiplicative form, or a metric off the definite one, is the error that the framework exists to avoid.
 11. **"The framework is only a rewriting of standard physics" is half right.** Most of the corpus is indeed standard physics restated, and that part is evidence about the language and not about the world. The word to reject is only: the new results above are not rewritings.
 12. **"Observable" has two senses, and only one is Hermitian.** The word names the Hermitian representative $iA\in\mathbb{B}_{\Psi}$, whose eigenvalues are the readings. The object observed is the **material element** $A\in\mathbb{B}_{\Phi}$, a four-vector or a field. Calling the material element an observable — reading it in the classical sense of a quantity that simply has a value — is a change of dictionary, not of algebra: the two writings differ by the central $i$ and generate the same numbers.
-13. **The matrix trace is a reading, not an intrinsic operation.** $\mathrm{Sc}$ is defined on $\mathbb{B}$ without a representation: it is the coefficient of $e_t$. A trace is defined only on a matrix, and so only after the image is chosen. In $\mathsf{M}_2$ the identity $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ holds because $\mathsf{M}_2(e_t)=I_2$, and the factor is the dimension of the image. Normalisation in the algebra is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$; "normalised" is the name that condition takes for the image matrix.
+13. **The matrix trace is a reading, not an intrinsic operation.** $\mathrm{Sc}$ is defined on $\mathbb{B}$ without a representation: it is the coefficient of $e_t$. A trace is defined only on a matrix, and so only after the image is chosen. In $\mathsf{M}_2$ the identity $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ holds because $\mathsf{M}_2(e_t)=I_2$, and the factor is the dimension of the image. Normalisation in the algebra is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$. On the image the same condition is the unit trace of a density matrix.
 
 ## Summary
 

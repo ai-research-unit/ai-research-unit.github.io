@@ -506,7 +506,7 @@ So the subspace $\mathbb{B}_{\Psi}$ carries the states and observables; the subs
 
 The companion article listed ten structural requirements for a comprehensive quantum theory. We now assess the biquaternion framework against each.
 
-**1. State space.** The states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part), i.e., the Bloch ball. This is a canonical object of the algebra, not a postulate.
+**1. State space.** The states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight), i.e., the Bloch ball. This is a canonical object of the algebra, not a postulate.
 
 **2. Observables.** The observables are the Hermitian elements of $\mathbb{B}_{\Psi}$. The spectral decomposition is in terms of idempotents. Each Hermitian element is the representative $iA$ of a **material element** $A\in\mathbb{B}_{\Phi}$, the object observed; the readings are the eigenvalues of $iA$.
 
@@ -647,7 +647,7 @@ The idempotent formalism raises several questions.
 
 ## Summary
 
-Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The **states** are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part), i.e., the Bloch ball, the **pure states** are the idempotents (the Bloch sphere), and the **observables** are the general Hermitian elements. The **Born rule** is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, the **dynamics** is rotor conjugation by $*$-unitary biquaternions, and **measurement** is the two-sided operation $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$.
+Quantum physics in the biquaternion framework is built on the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra. The **states** are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight), i.e., the Bloch ball, the **pure states** are the idempotents (the Bloch sphere), and the **observables** are the general Hermitian elements. The **Born rule** is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, the **dynamics** is rotor conjugation by $*$-unitary biquaternions, and **measurement** is the two-sided operation $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$.
 
 The framework reproduces the standard qubit formalism for the states, observables, Born rule, dynamics, and measurement, with the structural advantages that states and observables live in the same space, the Born rule is a consequence of the Hermitian form, measurement is an algebraic operation, and the positivity condition on states is a biquaternion-norm condition.
 

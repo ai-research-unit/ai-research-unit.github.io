@@ -217,7 +217,7 @@ and these are mutually unbiased: their overlaps are products of the single-qubit
 The Bell idempotents $\tilde\Pi_\epsilon$ of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* form an idempotent basis of the two-qubit algebra. Their overlap with the product (computational) idempotents is
 
 $$
-2\,\mathrm{Sc}\bigl(\tilde\Pi_\epsilon\,\tilde\Pi_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
+4\,\mathrm{Sc}\bigl(\tilde\Pi_\epsilon\,\tilde\Pi_{\mathrm{prod}}\bigr) = \tfrac{1}{2},
 $$
 
 not $\tfrac14$. For example $|\langleΞ^{+}|\tilde{Ξ}\rangle\otimes|\tilde{Ξ}\rangle|^2 = \tfrac12$ for any product state. Hence **the Bell basis is not mutually unbiased with respect to the product basis**, and the two cannot belong to one complete set of MUBs. This is an instructive negative statement: the idempotent basis that the algebra singles out as maximally entangled is also the basis that is maximally *biased* with respect to the product bases. The two natural structures of $\mathbb{B}\otimes\mathbb{B}$ — maximal entanglement and mutual unbiasedness — do not coincide, and the framework exhibits both without identifying them.
@@ -284,7 +284,7 @@ The overlap matrix of the six pure states has identity blocks on the diagonal an
 | $2\,\mathrm{Sc}(\tilde\Pi_s(\vec u_j)\tilde\Pi_{s_2}(\vec u_\eta)^{*}) = \tfrac12$ ($j\neq k$) | Unbiasedness of the coordinate bases |
 | $\tilde{Ϛ}_{\Psi} = \sum_b\sum_i p_i^{(b)}\tilde\Pi_i^{(b)} - e_t$ | Reconstruction from a complete MUB set |
 | $\tilde\Pi_\epsilon$ | Bell idempotents (maximally entangled basis) |
-| $2\,\mathrm{Sc}(\tilde\Pi_\epsilon \tilde\Pi_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
+| $4\,\mathrm{Sc}(\tilde\Pi_\epsilon \tilde\Pi_{\mathrm{prod}}) = \tfrac12$ | Bell basis is biased relative to the product basis |
 
 ## Further Reading
 

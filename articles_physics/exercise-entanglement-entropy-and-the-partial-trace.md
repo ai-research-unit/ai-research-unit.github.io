@@ -134,7 +134,7 @@ Since $h$ is strictly concave on $[0,1]$, its maximum over the admissible range 
 
 ### The biquaternion form of the worked family
 
-The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of unit scalar part. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. Equivalently, $\sigma_\eta\mapsto i \vec e_\eta$.
+The two-qubit state space is $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, and the pure state $|\tilde{Ξ}_{\theta}\rangle$ corresponds to a Hermitian idempotent $\tilde\Pi_\theta$ of unit weight. To write it in the tensor basis, expand the joint density in Pauli strings and translate with the isomorphism of the companion articles, $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. Equivalently, $\sigma_\eta\mapsto i \vec e_\eta$.
 
 For the state $|\tilde{Ξ}_{\theta}\rangle=\cos\theta\,|\uparrow\uparrow\rangle+\sin\theta\,|\downarrow\downarrow\rangle$, the Pauli-string coefficients $\mathrm{Ric}_{\mu\nu}=\langle\sigma_\mu\otimes\sigma_\nu\rangle$, with $\sigma_t=I_2$ and $\mu,\nu\in\{t,x,y,z\}$, are
 

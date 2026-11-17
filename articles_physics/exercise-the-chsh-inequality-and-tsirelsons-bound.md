@@ -246,7 +246,7 @@ $$
 H_{ab} = (i\vec a_1)\otimes(i\vec b_1),
 $$
 
-and the correlation is the tensor-product Hermitian form, read as the Hermitian pairing $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\, H_{ab}^{*})$.
+and the correlation is the tensor-product Hermitian form, read as the Hermitian pairing $E(\vec a_1,\vec b_1)=4\,\mathrm{Sc}(\tilde\Pi_\epsilon\, H_{ab}^{*})$.
 
 Assembling the four settings, the **CHSH element** is
 
@@ -460,7 +460,7 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ | Alice's and Bob's measurement directions |
 | $A_1=\vec a_1\cdot\boldsymbol{\sigma},\ A_2=\vec a_2\cdot\boldsymbol{\sigma},\ B_1=\vec b_1\cdot\boldsymbol{\sigma},\ B_2=\vec b_2\cdot\boldsymbol{\sigma}$ | Single-qubit observables, spectrum $\{\pm1\}$ |
 | $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_j\epsilon_j\,\vec e_j\otimes\vec e_j)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
-| $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\,((i\vec a_1)\otimes(i\vec b_1)))=-\sum_j\epsilon_j a_{1j}b_{1j}$ | Correlation function |
+| $E(\vec a_1,\vec b_1)=4\,\mathrm{Sc}(\tilde\Pi_\epsilon\,((i\vec a_1)\otimes(i\vec b_1)))=-\sum_j\epsilon_j a_{1j}b_{1j}$ | Correlation function |
 | $T_{j\eta}=\langle\sigma_j\otimes\sigma_\eta\rangle=-\epsilon_j\delta_{j\eta}$ | Correlation matrix of a Bell state |
 | $S=E(\vec a_1,\vec b_1)-E(\vec a_1,\vec b_2)+E(\vec a_2,\vec b_1)+E(\vec a_2,\vec b_2)$ | CHSH combination |
 | $S=A_1\otimes B_1-A_1\otimes B_2+A_2\otimes B_1+A_2\otimes B_2$ | Bell operator |

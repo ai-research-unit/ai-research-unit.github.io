@@ -273,7 +273,7 @@ $$
 
 **Read:** the central element $e^{i\theta}e_t$ maps to the scalar matrix $e^{i\theta}\mathrm I_2$, which multiplies the element, multiplies the determinant by $e^{2i\theta}$, multiplies a state by $e^{i\theta}$, and acts trivially in the two-sided operator.
 
-**A state is a ray and not a vector.** The scalar matrix does not preserve the trace-one slice, because it multiplies it by a phase; so the phase is not a property of the state and the state is an equivalence class. The map $\varsigma\mapsto\varsigma\varsigma^{\dagger}$ from unit spinors to rank-one Hermitian matrices of trace one has the phase circle as its fibre, and the bundle
+**A state is a ray and not a vector.** The scalar matrix does not preserve the unit-weight slice, because it multiplies it by a phase; so the phase is not a property of the state and the state is an equivalence class. The map $\varsigma\mapsto\varsigma\varsigma^{\dagger}$ from unit spinors to rank-one Hermitian matrices of trace one has the phase circle as its fibre, and the bundle
 
 $$
 U(1)\hookrightarrow S^{3}\longrightarrow S^{2}

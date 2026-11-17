@@ -231,7 +231,7 @@ One state of $\mathbb{B}$ is distinguished by the algebra rather than by a dynam
 $$
 \tau(\tilde Q_3) \;=\; \mathrm{Sc}(\tilde Q_3).
 $$
-It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a $*$-unitary $\tilde Q$ the invariance reads
+The name is the one a matrix algebra gives its tracial state, and here the trace of the $2\times2$ image over $2$ is the scalar part, $\operatorname{tr}(\mathsf M_2\tilde Q_3)/2=\mathrm{Sc}(\tilde Q_3)$. It is the unique tracial state — the unique state with $\tau(\tilde Q_3\tilde Q_1)=\tau(\tilde Q_1\tilde Q_3)$ for all $\tilde Q_3,\tilde Q_1$ — and it is invariant under every inner automorphism; for a $*$-unitary $\tilde Q$ the invariance reads
 $$
 \tau(\tilde U\tilde Q_3\tilde U^{*})=\tau(\tilde Q_3).
 $$
