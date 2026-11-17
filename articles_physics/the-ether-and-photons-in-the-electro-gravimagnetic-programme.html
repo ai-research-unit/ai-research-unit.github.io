@@ -99,9 +99,11 @@ time-carrying gradient.</p>
 <p>The programme's postulate is the companion article's, and the first thing this paper does with it is
 to read it as an ontology. The postulate is</p>
 <p>$$
-\vec\nabla_{+,\Phi}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}},
+\vec\nabla_{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}},
 \qquad
-\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\vec\nabla_\Phi ,
+\vec\nabla_{+} = \partial/\partial \tau + i\vec\nabla_\Phi ,
+\qquad
+\vec\nabla_{-} = \partial/\partial \tau - i\vec\nabla_\Phi ,
 \qquad
 \tilde J_{\Phi,\mathrm{eg}} = i\rho + \vec J ,
 $$</p>
@@ -147,25 +149,23 @@ $$</p>
 <p>so that $\partial/\partial \tau \to -i\omega$. Substituting into the postulate gives the programme's <strong>photon
 equation</strong>,</p>
 <p>$$
-\boxed{\;\vec\nabla_\Phi^{-}_{\Phi,\omega}\tilde{Ξ} = i\,\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega),
-\qquad
-\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi\;}
+\boxed{\;\bigl(\omega-\vec\nabla_\Phi\bigr)\tilde{Ξ} = i\,\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\;}
 $$</p>
 <p>in which the frequency of the field plays the part the mass plays in a massive wave equation. The
-$\omega$-gradients are the corpus's complex gradients with the time dependence divided out,
-$\vec\nabla_\Phi^{+}_{\Phi,\omega} = i\,D_{-}$ and $\vec\nabla_\Phi^{-}_{\Phi,\omega} = i\,D_{+}$ at fixed frequency, so the
+two $\omega$-gradients are the corpus's complex gradients with the time dependence divided out,
+$\omega+\vec\nabla_\Phi = i\,D_{-}$ and $\omega-\vec\nabla_\Phi = i\,D_{+}$ at fixed frequency, so the
 photon equation is the EGM postulate and nothing further; the factor of $i$ is the paper's
 convention and not a new term. Both the dictionary above and the factorisation below were recomputed,
 the dictionary exactly and the factorisation to the finite-difference floor.</p>
 <p>The second fact is the factorisation. Because $\vec\nabla_\Phi\circ\vec\nabla_\Phi = -\Delta_\Phi$,</p>
 <p>$$
-\boxed{\;\vec\nabla_\Phi^{-}_{\Phi,\omega}\circ\,\vec\nabla_\Phi^{+}_{\Phi,\omega}
-= \vec\nabla_\Phi^{+}_{\Phi,\omega}\circ\,\vec\nabla_\Phi^{-}_{\Phi,\omega}
+\boxed{\;\bigl(\omega-\vec\nabla_\Phi\bigr)\circ\bigl(\omega+\vec\nabla_\Phi\bigr)
+= \bigl(\omega+\vec\nabla_\Phi\bigr)\circ\bigl(\omega-\vec\nabla_\Phi\bigr)
 = \omega^{2} + \Delta_\Phi\;}
 $$</p>
 <p>the scalar Helmholtz operator. So a first-order operator here has a second-order inverse: the
 biamplitude of a photon solves a Helmholtz equation, and, conversely, every Helmholtz potential
-generates a solution of the photon equation by the single application of $\vec\nabla_\Phi^{+}_{\Phi,\omega}$. This
+generates a solution of the photon equation by the single application of $\omega+\vec\nabla_\Phi$. This
 is the same factorisation the harmonic article records for the charge–current field, applied on the
 other side of the postulate, and it carries the same cost. The Helmholtz equation is an eigenvalue
 equation only when a boundary condition is supplied, the programme supplies none, and <strong>the frequency
@@ -192,7 +192,7 @@ $\omega$-gradient to the source convolved with this kernel gives the <strong>pho
 monochromatic source,</p>
 <p>$$
 \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)
-= i\,\vec\nabla_\Phi^{+}_{\Phi,\omega}\left\{\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
+= i\,\bigl(\omega+\vec\nabla_\Phi\bigr)\left\{\tilde J_{\Phi,\mathrm{eg}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega) * \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\right\},
 $$</p>
 <p>so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
@@ -225,9 +225,9 @@ density.</p>
 <h2 id="free-photons-as-plane-waves">Free Photons as Plane Waves</h2>
 <p>The free photon equation is the homogeneous one,</p>
 <p>$$
-\vec\nabla_\Phi^{-}_{\Phi,\omega}\tilde{Ξ} = 0 ,
+\bigl(\omega-\vec\nabla_\Phi\bigr)\tilde{Ξ} = 0 ,
 $$</p>
-<p>and because of the factorisation every solution of it is $\vec\nabla_\Phi^{+}_{\Phi,\omega}$ applied to a Helmholtz
+<p>and because of the factorisation every solution of it is $\omega+\vec\nabla_\Phi$ applied to a Helmholtz
 potential. Taking the plane potentials $\xi_{j} = \exp(i\theta_{\mathrm{spa}})\vec e_{j}$, with the spatial angle $\theta_{\mathrm{spa}}=(\vec k_\Phi,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because the wave vector and the position are real vectors, and with
 $\|\vec k_\Phi\| = \omega$ and $e_t = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,</p>
@@ -390,10 +390,9 @@ reads its monochromatic solutions as <strong>photons</strong>. The programme's o
 line: take the classical biquaternion form of Maxwell's equations, whose field biquaternion is
 required to have no scalar part, and <strong>drop that restriction</strong>; the returned scalar part is the ether
 density and the vector part carries the electric and gravimagnetic fields. The algebra is the
-companion articles': the postulate $\vec\nabla_{+,\Phi}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the monochromatic reduction
-$\vec\nabla_\Phi^{-}_{\Phi,\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$ with
-$\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$, and the factorisation
-$\vec\nabla_\Phi^{-}_{\Phi,\omega}\circ\vec\nabla_\Phi^{+}_{\Phi,\omega} = \omega^{2} + \Delta_\Phi$, which makes the first-order
+companion articles': the postulate $\vec\nabla_{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the monochromatic reduction
+$\bigl(\omega-\vec\nabla_\Phi\bigr)\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$, and the factorisation
+$\bigl(\omega-\vec\nabla_\Phi\bigr)\circ\bigl(\omega+\vec\nabla_\Phi\bigr) = \omega^{2} + \Delta_\Phi$, which makes the first-order
 photon equation invertible by the outgoing Helmholtz kernel
 $\tilde{Ξ} = -\exp(\,i\omega r)/(4\pi r)$. The kernel gives the <strong>elementary photon</strong> of a concentrated
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
@@ -438,8 +437,8 @@ clearest statement of what the programme assumes.</p>
 <td>Charge–current biquaternion of the programme; not the corpus four-current</td>
 </tr>
 <tr>
-<td>$\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\vec\nabla_\Phi$</td>
-<td>Mutual complex gradients of the postulate</td>
+<td>$\vec\nabla_{+} = \partial/\partial \tau + i\vec\nabla_\Phi$, $\vec\nabla_{-} = \partial/\partial \tau - i\vec\nabla_\Phi$</td>
+<td>The two complex gradients of the postulate, written one by one</td>
 </tr>
 <tr>
 <td>$\vec\nabla_\Phi = \vec e_x\,\partial/\partial r_x+\vec e_y\,\partial/\partial r_y+\vec e_z\,\partial/\partial r_z$</td>
@@ -450,19 +449,19 @@ clearest statement of what the programme assumes.</p>
 <td>The square of $\vec\nabla_\Phi$</td>
 </tr>
 <tr>
-<td>$\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$</td>
-<td>The paper's $\omega$-gradients; $\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = iD_{\mp}$ at fixed frequency</td>
+<td>$\omega+\vec\nabla_\Phi$, $\omega-\vec\nabla_\Phi$</td>
+<td>The paper's two $\omega$-gradients, written out; they are $iD_{-}$ and $iD_{+}$ at fixed frequency</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)$</td>
 <td>Biamplitude, $\tilde{A}_{\Phi}(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \tilde{Ξ}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\omega)\exp(-i\theta_{\mathrm{mat}})$</td>
 </tr>
 <tr>
-<td>$\vec\nabla_\Phi^{-}_{\Phi,\omega}\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$</td>
+<td>$\bigl(\omega-\vec\nabla_\Phi\bigr)\tilde{Ξ} = i\tilde J_{\Phi,\mathrm{eg}}$</td>
 <td>The photon equation</td>
 </tr>
 <tr>
-<td>$\vec\nabla_\Phi^{-}_{\Phi,\omega}\circ\vec\nabla_\Phi^{+}_{\Phi,\omega} = \omega^{2} + \Delta_\Phi$</td>
+<td>$\bigl(\omega-\vec\nabla_\Phi\bigr)\circ\bigl(\omega+\vec\nabla_\Phi\bigr) = \omega^{2} + \Delta_\Phi$</td>
 <td>Helmholtz factorisation of the photon equation</td>
 </tr>
 <tr>
@@ -521,7 +520,7 @@ clearest statement of what the programme assumes.</p>
   Applied Physics</em> <strong>7</strong>(1) (2020) 96–101, doi:10.14445/23500301/IJAP-V7I1P114, the paper recorded
   here.</li>
 <li><a href="the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.html">The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis</a>, for the programme's field
-  theory, its postulate $\vec\nabla_{+,\Phi}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
+  theory, its postulate $\vec\nabla_{+}\tilde{A}_{\Phi} = \tilde J_{\Phi,\mathrm{eg}}$, the magnetic-charge–mass hypothesis, its
   Newton-law analogues and its empirical claims.</li>
 <li><a href="harmonic-elementary-particles-and-the-periodic-system-of-atoms.html">Harmonic Elementary Particles and the Periodic System of Atoms</a>, for the same factorisation applied
   to the charge–current field, the Helmholtz potentials and the place of a free frequency in the
