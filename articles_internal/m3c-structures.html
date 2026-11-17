@@ -255,6 +255,20 @@
 <td>$3$</td>
 <td>$n(n-1)/2$</td>
 </tr>
+<tr>
+<td>$\mathfrak{so}_n$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$n(n-1)/2$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sp}_n$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>—</td>
+<td>$n(n+1)/2$, $n$ even</td>
+</tr>
 </tbody>
 </table></div>
 <p><strong>Every formula of the table is evaluated in this article.</strong> The row that changes character at $n=3$ is the parabolic row: at $n=2$ there are two parabolics, the Borel and the algebra, and the second is not proper; at $n=3$ there are four, and two of them are proper and maximal.</p>
@@ -420,7 +434,7 @@ $$</p>
 $$</p>
 <p><strong>The Borel is maximal solvable and its derived algebra is the nilradical.</strong> $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ and $[\mathfrak{n}_+,\mathfrak{n}_+]=\mathbb{C}E_{13}$, so the derived series is $\mathfrak{b}\supset\mathfrak{n}_+\supset\mathbb{C}E_{13}\supset0$ and the algebra is solvable of derived length $3$; no larger subalgebra is solvable, because any element with a nonzero subdiagonal entry generates $\mathfrak{n}_-$ by bracketing.</p>
 <p><strong>The dimension count is the first place where $n=3$ beats $n=2$.</strong> At $n=2$ the derived series of $\mathfrak{b}$ has two steps; at $n=3$ it has three, and the strictly upper-triangular part is no longer abelian.</p>
-<h3 id="the-root-system-of-type-math274">The Root System of Type $A_2$</h3>
+<h3 id="the-root-system-of-type-math284">The Root System of Type $A_2$</h3>
 <p><strong>The root vectors are the off-diagonal matrix units.</strong> For a diagonal $H=\operatorname{diag}(c_{1},c_{2},c_{3})$,</p>
 <p>$$
 [H,E_{ij}]=(c_{i}-c_{j})E_{ij},
@@ -443,7 +457,7 @@ $$</p>
 \rho=\tfrac12\left(\alpha_{1}+\alpha_{2}+(\alpha_{1}+\alpha_{2})\right)=\alpha_{1}+\alpha_{2}=\varepsilon_{1}-\varepsilon_{3}.
 $$</p>
 <p>At rank one $\rho$ was $0$; here it is a root, which happens for $A_{2}$ and is one of the small coincidences of the low-rank cases.</p>
-<h2 id="the-weight-spaces">The Weight Spaces</h2>
+<h3 id="the-weight-spaces">The Weight Spaces</h3>
 <p><strong>The adjoint representation has weight $0$ of multiplicity $2$ and each root of multiplicity $1$.</strong></p>
 <p>$$
 \mathfrak{sl}_3=\mathfrak{h}\oplus\bigoplus_{\alpha\in\Phi}\mathfrak{g}_{\alpha},\qquad 8=2+6 .
@@ -513,6 +527,10 @@ $$</p>
 $$</p>
 <p>with weights $2\varepsilon_{i}$ and $\varepsilon_{i}+\varepsilon_{j}$ on the symmetric part, and $\varepsilon_{j}+\varepsilon_{k}$ on the alternating part. On $\mathfrak{sl}_3$ the alternating weights read $-\varepsilon_{i}$, so $\Lambda^{2}\mathbb{C}^{3}\cong\mathbb{C}^{3*}$, and the traceless part of the tensor square gives the adjoint, $3\otimes3^{*}=8\oplus1$.</p>
 <p><strong>The weights of the standard module are the fundamental weights up to a shift.</strong> The projection of $\varepsilon_{1}$ is $\omega_{1}$, the projection of $\varepsilon_{2}$ is $\omega_{2}-\omega_{1}$ and the projection of $\varepsilon_{3}$ is $-\omega_{2}$; the three sum to $0$, as they must.</p>
+<h2 id="the-classical-subalgebras-inside">The Classical Subalgebras Inside</h2>
+<p><strong>The orthogonal algebra is three-dimensional and is a copy of $\mathfrak{sl}_{2}$.</strong> A skew matrix has trace zero, so $\mathfrak{so}_{3}\subset\mathfrak{sl}_{3}$; its dimension is $n(n-1)/2=3$, and the Killing form has rank $3$ on it, so it is simple of type $B_{1}=A_{1}$.</p>
+<p><strong>The isomorphism is visible in the exterior square.</strong> $\Lambda^{2}\mathbb{C}^{3}\cong(\mathbb{C}^{3})^{*}$ has dimension $3$, and the map $u\wedge v\mapsto uv^{\mathsf T}-vu^{\mathsf T}$ carries it isomorphically onto $\mathfrak{so}_{3}$. So the standard module and its dual are the two spin modules of $\mathfrak{so}_{3}$, and the coincidence is a statement about the order three, not about the family.</p>
+<p><strong>No symplectic algebra exists at odd order.</strong> An alternating form needs an even dimension, so there is no $\mathfrak{sp}_{3}$; of the two families only the orthogonal one appears, and it is $\mathfrak{so}_{3}\cong\mathfrak{sl}_{2}$.</p>
 <h2 id="the-borel-and-the-parabolic-subalgebras">The Borel and the Parabolic Subalgebras</h2>
 <p><strong>The triangular decomposition is the root decomposition cut in two,</strong></p>
 <p>$$
@@ -574,7 +592,7 @@ $$</p>
 <p>of dimension $7$ each: a Levi factor of dimension $5$ and a nilradical of dimension $2$.</p>
 <p><strong>The two are Lie-isomorphic but not conjugate.</strong> The map $X\mapsto-X^{\mathsf T}$ is an automorphism of $\mathfrak{gl}_3$ that exchanges upper and lower triangular shapes, and after conjugation by the reversal matrix it carries $\mathfrak{p}_{1}$ to $\mathfrak{p}_{2}$. This is the outer automorphism of the Dynkin diagram of $A_{2}$, the one that swaps the two nodes; it is the only place in the ladder below $n=3$ where a diagram automorphism appears.</p>
 <p><strong>The codimension of a parabolic is the dimension of its flag variety.</strong> The values $3,2,2,0$ are $9-6$, $9-7$, $9-7$, $9-9$, and they match the dimensions in the last column of the table, which is the general statement $T(\mathrm{GL}_3/P)=\mathfrak{gl}_3/\mathfrak{p}$.</p>
-<h2 id="the-flag-variety">The Flag Variety</h2>
+<h2 id="the-flag-varieties">The Flag Varieties</h2>
 <p><strong>A complete flag is a chain,</strong></p>
 <p>$$
 0\subset V_{1}\subset V_{2}\subset\mathbb{C}^{3},\qquad \dim V_{1}=1,\ \dim V_{2}=2,
@@ -591,7 +609,7 @@ $$</p>
 $$</p>
 <p>of dimension $2$ each, dual to each other. So the flag variety of order three is a $\mathbb{P}^{2}$-bundle over $\mathbb{P}^{2}$, and the fibre over a plane is the projective line of lines inside it; the dimension count $2+1=3$ is the same statement.</p>
 <p><strong>The partial flag varieties of $\mathbb{C}^{3}$ are four in number,</strong> matching the four parabolics: the point, the two projective planes, and the complete flag variety. At order two the list was the point and the projective line.</p>
-<h2 id="the-weyl-group-and-the-bruhat-decomposition">The Weyl Group and the Bruhat Decomposition</h2>
+<h2 id="the-weyl-group-and-the-schubert-cells">The Weyl Group and the Schubert Cells</h2>
 <p><strong>The Weyl group is the symmetric group $S_{3}$, of order $6$.</strong> It is generated by the two reflections $s_{1},s_{2}$ with $(s_{1}s_{2})^{3}=1$, which is the Coxeter presentation of the triangle group, and it acts on the plane of the root system.</p>
 <p><strong>The Weyl group is not the full symmetry group of the hexagon.</strong> The six roots form a hexagon, but $W$ permutes the three lines through opposite roots, and $-1$ is not in $W$: the acting group is the symmetry group of the triangle, of order $6$, which sits inside the symmetry group of the hexagon, of order $12$, as a subgroup of index $2$.</p>
 <p><strong>The Weyl group is realised inside the group as the normaliser of the torus.</strong> The matrices normalising the diagonal torus are exactly the monomial matrices, and</p>
@@ -612,6 +630,8 @@ $$</p>
 <p>$$
 [3]!_{q}=(1+q)(1+q+q^{2})=1+2q+2q^{2}+q^{3}.
 $$</p>
+<p><strong>The open cell is the big cell.</strong> For $w=w_{0}$ the reversal, $X_{w_{0}}$ is the set of flags transverse to the coordinate flag, the set of $g$ with $\mathbb{C}^{k}\cap g\mathbb{C}^{k}=0$ for $k=1,2$; it is dense, of dimension $3$, and its complement is the union of the two Schubert divisors, the varieties attached to the two elements of length $2$.</p>
+<h2 id="the-betti-numbers">The Betti Numbers</h2>
 <p><strong>The cells give the Betti numbers directly.</strong> The closures $\bar X_{w}$ are the Schubert varieties, the classes $[\bar X_{w}]$ form a basis of $H^{*}(\mathcal{F};\mathbb{Z})$, and the Betti numbers are $1,2,2,1$ in degrees $0,2,4,6$, with Euler characteristic $6=|W|$.</p>
 <p><strong>The cohomology ring is the coinvariant algebra,</strong></p>
 <p>$$
@@ -622,9 +642,9 @@ $$</p>
 [\textstyle 3\choose 2]_{q}=1+q+q^{2},
 $$</p>
 <p>so $\mathrm{Gr}(2,3)$ has three Schubert cells, of dimensions $0,1,2$, and Euler characteristic $3$.</p>
-<p><strong>The open cell is the big cell.</strong> For $w=w_{0}$ the reversal, $X_{w_{0}}$ is the set of flags transverse to the coordinate flag, the set of $g$ with $\mathbb{C}^{k}\cap g\mathbb{C}^{k}=0$ for $k=1,2$; it is dense, of dimension $3$, and its complement is the union of the two Schubert divisors, the varieties attached to the two elements of length $2$.</p>
 <h2 id="the-group">The Group</h2>
 <p><strong>The invertible elements form $\mathrm{GL}_3(\mathbb{C})$, of complex dimension $9$ and real dimension $18$.</strong> It is connected, and the determinant is a surjection onto $\mathbb{C}^{\times}$ with kernel the special linear group, of dimension $8$.</p>
+<h3 id="the-subgroups">The Subgroups</h3>
 <p><strong>The special linear group is simply connected, and its centre is $\mu_{3}$.</strong> With $\omega=e^{2\pi i/3}$ the centre is the three scalar matrices $\{I,\omega I,\omega^{2}I\}$, and the projective group is the quotient,</p>
 <p>$$
 \mathrm{PGL}_3(\mathbb{C})=\mathrm{SL}_3(\mathbb{C})/\mu_{3},
@@ -634,9 +654,16 @@ $$</p>
 \pi_{1}(\mathrm{GL}_3)=\mathbb{Z},\qquad \pi_{1}(\mathrm{SL}_3)=0,\qquad \pi_{1}(\mathrm{PGL}_3)=\mathbb{Z}/3 .
 $$</p>
 <p><strong>The fundamental group of the projective group is the lattice quotient.</strong> Its order $3$ is the index of the root lattice in the weight lattice, which is $\det$ of the Cartan matrix; the identity $|P/Q|=|Z(\mathrm{SL}_3)|$ holds at every order and is computed here by two different methods.</p>
+<h3 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h3>
+<p><strong>Every invertible matrix is a unitary matrix times a positive Hermitian one.</strong> $A=UP$ with $U^{*}U=I$ and $P=P^{*}>0$, uniquely, and $P=\sqrt{A^{*}A}$. So the group retracts onto its maximal compact subgroup,</p>
+<p>$$
+\mathrm{GL}_3(\mathbb{C})\simeq\mathrm{U}(3),\qquad \pi_{1}=\mathbb{Z},\quad \pi_{2}=0,\quad \pi_{3}=\mathbb{Z},
+$$</p>
+<p>and the manifold is $\mathrm{U}(3)\times\operatorname{Herm}^{>0}_{3}$, of real dimensions $9+9$.</p>
+<p><strong>The compact form at the algebra level is the skew-Hermitian part.</strong> $\mathfrak{gl}_3(\mathbb{C})=\mathfrak{u}(3)\oplus i\mathfrak{u}(3)$ over $\mathbb{R}$, and $\mathfrak{u}(3)$ has real dimension $n^{2}=9$; the traceless parts give the same split for $\mathfrak{sl}_3$ and $\mathfrak{su}(3)$.</p>
+<h3 id="the-automorphisms-and-the-derivations">The Automorphisms and the Derivations</h3>
 <p><strong>The automorphism group of the algebra is the projective group.</strong> Every automorphism of $M_3(\mathbb{C})$ is inner, by Skolem–Noether, and two inner automorphisms agree exactly when their matrices differ by a scalar.</p>
 <p><strong>The derivations are the traceless matrices.</strong> Every derivation is inner and $\operatorname{ad}_X$ depends only on the traceless part of $X$, so the space of derivations is $\mathfrak{sl}_3(\mathbb{C})$, of dimension $8$.</p>
-<p><strong>The group is homotopy equivalent to $\mathrm{U}(3)$.</strong> The polar decomposition retracts $\mathrm{GL}_3(\mathbb{C})$ onto the unitary group, so the homotopy groups of the group are those of $\mathrm{U}(3)$: $\pi_{1}=\mathbb{Z}$, $\pi_{2}=0$, $\pi_{3}=\mathbb{Z}$.</p>
 <h2 id="the-finite-subgroups">The Finite Subgroups</h2>
 <p><strong>The clean classification stops at order two.</strong> The finite subgroups of $\mathrm{SL}_2(\mathbb{C})$ are the five binary polyhedral families, by Klein, and the McKay correspondence reads them as the affine Dynkin diagrams. At order three there is no such list: the classification of the finite subgroups of $\mathrm{SL}_3(\mathbb{C})$ is not known in general, and the known results cover the subgroups containing no quasi-reflections.</p>
 <p><strong>Every finite subgroup is conjugate into $\mathrm{U}(3)$.</strong> Averaging the standard Hermitian form over the group gives an invariant positive-definite form, so a finite subgroup of $\mathrm{GL}_3(\mathbb{C})$ is conjugate to a subgroup of the compact group, and the finite subgroups are the finite groups of unitary matrices.</p>
@@ -806,10 +833,10 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m2c-structures.html">The Structures of $M_2(\mathbb{C})$</a></li>
-<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform version, of which this article is the case $n=3$., for the previous rung, where the root system is $A_1$ and the flag variety is a projective line.</li>
-<li><a href="m4c-structures.html">The Structures of $M_4(\mathbb{C})$</a>, for the next rung, where $\mathfrak{so}_4$ and $\mathfrak{sp}_4$ appear and $A_3=D_3$.</li>
-<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a>, for the base case of the ladder.</li>
+<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a>, for the base case, where the layers collapse to two subspaces.</li>
+<li><a href="m2c-structures.html">The Structures of $M_2(\mathbb{C})$</a>, for the first non-commutative order, where a zero row is a right ideal.</li>
+<li><a href="m4c-structures.html">The Structures of $M_4(\mathbb{C})$</a>, for $A_3=D_3$, the two real forms and the Klein quadric.</li>
+<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform statement in $n$, of which the rungs above are the cases $n=1,\dots,4$.</li>
 <li><a href="../articles_maths/the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the product, the trace, the determinant and the rank at order three.</li>
 <li><a href="../articles_maths/the-modules-and-the-minimal-left-ideals-of-m3c.html">The Modules and the Minimal Left Ideals of $M_3(\mathbb{C})$</a>, for the column ideals and the module structure.</li>
 <li><a href="../articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m3c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_3(\mathbb{C})$</a>, for the orbits and the quotient.</li>

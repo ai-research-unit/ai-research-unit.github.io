@@ -172,7 +172,7 @@
 <td>$9$</td>
 </tr>
 <tr>
-<td>maximal commutative</td>
+<td>maximal commutative subalgebras</td>
 <td>$\lfloor n^{2}/4\rfloor+1$</td>
 <td>$1$</td>
 <td>$2$</td>
@@ -289,7 +289,7 @@
 <td>$120$</td>
 </tr>
 <tr>
-<td>parabolics</td>
+<td>parabolic subalgebras</td>
 <td>$2^{n-1}$</td>
 <td>$1$</td>
 <td>$2$</td>
@@ -298,7 +298,7 @@
 <td>$16$</td>
 </tr>
 <tr>
-<td>flag variety</td>
+<td>complete flag variety</td>
 <td>$n(n-1)/2$</td>
 <td>$0$</td>
 <td>$1$</td>
@@ -332,6 +332,24 @@
 <td>$8$</td>
 <td>$15$</td>
 <td>$24$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}_n$</td>
+<td>$n(n-1)/2$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sp}_n$</td>
+<td>$n(n+1)/2$, $n$ even</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>—</td>
+<td>$10$</td>
+<td>—</td>
 </tr>
 <tr>
 <td>$\mathrm{U}(n)$, real</td>
@@ -373,6 +391,9 @@ $$</p>
 $$</p>
 <p>so the quotient is an affine space of dimension $n$ and the map $A\mapsto(c_1,\dots,c_n)$ is the characteristic polynomial. This is the Chevalley–Shephard–Todd statement for $S_n$.</p>
 <h2 id="the-ideals">The Ideals</h2>
+<h3 id="the-two-sided-ideals">The Two-Sided Ideals</h3>
+<p><strong>The two-sided ideals are only $0$ and the algebra.</strong> A nonzero two-sided ideal contains some $E_{ij}$ and then every $E_{kl}=E_{ki}E_{ij}E_{jl}$, so it is the whole algebra; the algebra is simple.</p>
+<h3 id="the-left-and-the-right-ideals">The Left and the Right Ideals</h3>
 <p><strong>The left ideals are the sets killing a subspace,</strong></p>
 <p>$$
 L_U=\{A\in M_n(\mathbb{C}):U\subseteq\ker A\},\qquad \dim L_U=n(n-\dim U),
@@ -457,7 +478,7 @@ $$</p>
 \mathfrak{n}_+^{[k]}=\operatorname{span}\{E_{ij}:j-i\ge k\},\qquad \dim\mathfrak{n}_+^{[k]}=\frac{(n-k)(n-k+1)}{2},
 $$</p>
 <p>so the dimensions are $\binom{n}{2},\binom{n-1}{2},\dots,1,0$ and the algebra $\mathfrak{b}$ is solvable of derived length $n$. At $n=3$ the series is $3,1,0$; at $n=4$ it is $6,3,1,0$.</p>
-<h3 id="the-root-system-of-type-math375">The Root System of Type $A_{n-1}$</h3>
+<h3 id="the-root-system-of-type-math391">The Root System of Type $A_{n-1}$</h3>
 <p><strong>The roots are the differences of the diagonal functionals,</strong></p>
 <p>$$
 \Phi=\{\varepsilon_{i}-\varepsilon_{j}:i\neq j\},\qquad |\Phi|=n(n-1),\qquad |\Phi^{+}|=\frac{n(n-1)}{2},
@@ -488,6 +509,54 @@ $$</p>
 <p>with $\lambda=\sum a_{k}\omega_{k}$ and $\rho$ the half-sum of the positive roots. The small values at $n=4$ are $1,4,6,4,10,15,20$, as in the previous article.</p>
 <p><strong>The two basic modules are the standard one and its dual,</strong> of dimensions $n$ each; they are non-isomorphic for $n\ge2$ and exchanged by the diagram automorphism when $n\ge3$.</p>
 <p><strong>The exterior powers are the modules $\Lambda^{k}\mathbb{C}^{n}$, of dimension $\binom{n}{k}$, with highest weight $\omega_{k}$.</strong> Their weights are the sums $\varepsilon_{i_{1}}+\cdots+\varepsilon_{i_{k}}$ over increasing tuples, each of multiplicity one.</p>
+<h2 id="the-classical-subalgebras-inside">The Classical Subalgebras Inside</h2>
+<p><strong>The orthogonal algebra has dimension $n(n-1)/2$ and sits inside $\mathfrak{sl}_n$.</strong> It is the fixed set of $X\mapsto-X^{\mathsf T}$, it is simple for $n\ge3$ except at $n=4$, and it is of type $B_{(n-1)/2}$ for odd $n$ and $D_{n/2}$ for even $n$.</p>
+<p><strong>The symplectic algebra exists only at even order, with dimension $n(n+1)/2$.</strong> It is the fixed set of the symplectic involution, of type $C_{n/2}$, and it is simple for $n\ge2$.</p>
+<p><strong>The dimensions separate the families and the types separate the dimensions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim\mathfrak{sl}_n$</th>
+<th>$\dim\mathfrak{so}_n$</th>
+<th>$\dim\mathfrak{sp}_n$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$8$</td>
+<td>$3$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$15$</td>
+<td>$6$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$24$</td>
+<td>$10$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$35$</td>
+<td>$15$</td>
+<td>$21$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four coincidences hold and no more.</strong> $A_{1}=B_{1}=C_{1}$ gives $\mathfrak{so}_{3}\cong\mathfrak{sl}_{2}\cong\mathfrak{sp}_{2}$; $D_{2}=A_{1}\times A_{1}$ gives $\mathfrak{so}_{4}\cong\mathfrak{sl}_{2}\oplus\mathfrak{sl}_{2}$; $B_{2}=C_{2}$ gives $\mathfrak{so}_{5}\cong\mathfrak{sp}_{4}$, a coincidence that crosses the orders; $D_{3}=A_{3}$ gives $\mathfrak{so}_{6}\cong\mathfrak{sl}_{4}$.</p>
+<p><strong>Beyond those four, the families are distinct at every order.</strong> The coincidences are accidents of rank at most three, and the table is the whole message: no two columns agree from $n=6$ onwards.</p>
 <h2 id="the-borel-and-the-parabolic-subalgebras">The Borel and the Parabolic Subalgebras</h2>
 <p><strong>A subalgebra containing the Borel is a sum of the Cartan, all positive root spaces, and a set of negative root spaces closed under addition.</strong> The closed sets are exactly the subsets of the simple roots, so the subalgebras containing the Borel are indexed by subsets of $\{\alpha_{1},\dots,\alpha_{n-1}\}$, and there are $2^{n-1}$ of them.</p>
 <p><strong>Equivalently, they are indexed by the compositions of $n$.</strong> A composition $(b_{1},\dots,b_{k})$ of $n$ gives the block upper-triangular algebra of block sizes $b_{1},\dots,b_{k}$, and</p>
@@ -543,7 +612,7 @@ $$</p>
 </table></div>
 <p><strong>There are $n-1$ maximal parabolics, one for each node of the Dynkin diagram.</strong> At $n=3$ there are two, at $n=4$ there are three, and at $n=5$ there are four. Each is obtained by omitting one node, and the corresponding flag variety is the Grassmannian of the matching dimension.</p>
 <p><strong>The diagram automorphism acts on the maximal parabolics by $k\mapsto n-k$.</strong> So it fixes the middle one when $n$ is even and swaps the pairs otherwise.</p>
-<h2 id="the-flag-varieties-and-the-grassmannians">The Flag Varieties and the Grassmannians</h2>
+<h2 id="the-flag-varieties">The Flag Varieties</h2>
 <p><strong>The complete flag variety is the quotient by the Borel subgroup,</strong></p>
 <p>$$
 \mathcal{F}=\mathrm{GL}_n(\mathbb{C})/B,\qquad \dim_{\mathbb{C}}\mathcal{F}=n^{2}-\frac{n(n+1)}{2}=\frac{n(n-1)}{2},
@@ -624,7 +693,7 @@ $$</p>
 <p><strong>The distribution is symmetric about $\binom{n}{2}/2$, because $\ell(w)+\ell(ww_{0})=\binom{n}{2}$.</strong> This is the combinatorial shadow of Poincaré duality, and it is the reason the top Betti number equals the bottom one.</p>
 <p><strong>The cells pair up under $w\mapsto ww_{0}$.</strong> So the flag variety has one closed point, one open cell, and $n-1$ divisors, the Schubert varieties attached to the elements of length $\binom{n}{2}-1$, which are the inversions of a single adjacent transposition short of the longest element.</p>
 <p><strong>Nothing in this section depends on $n$ except the numbers.</strong> The Bruhat decomposition, the length function, the cell structure and the pairing are uniform; $n$ enters only through the cardinality of $S_n$ and the maximum length.</p>
-<h2 id="the-betti-numbers-and-the-cohomology-ring">The Betti Numbers and the Cohomology Ring</h2>
+<h2 id="the-betti-numbers">The Betti Numbers</h2>
 <p><strong>The cells are all of even real dimension, so the boundary maps vanish and the homology is free on the cells.</strong></p>
 <p>$$
 b_{2k}=m(n,k),\qquad b_{\text{odd}}=0,\qquad H_{*}(\mathcal{F};\mathbb{Z})\cong\mathbb{Z}^{\oplus n!}.
@@ -649,6 +718,7 @@ $$</p>
 <p>$$
 \dim\mathrm{GL}_n=n^{2},\qquad \dim\mathrm{SL}_n=n^{2}-1,\qquad \dim T=n,\qquad \dim B=\frac{n(n+1)}{2}.
 $$</p>
+<h3 id="the-subgroups">The Subgroups</h3>
 <p><strong>The centres are the scalar subgroups,</strong></p>
 <p>$$
 Z(\mathrm{GL}_n)=\mathbb{C}^{\times}I,\qquad Z(\mathrm{SL}_n)=\mu_{n}=\{\omega I:\omega^{n}=1\},
@@ -660,7 +730,7 @@ $$</p>
 $$</p>
 <p><strong>The order $n$ of the last group is the determinant of the Cartan matrix,</strong> as stated in the root section; the identity is a lattice identity, not a coincidence of small order.</p>
 <p><strong>The exponential map is surjective onto $\mathrm{GL}_n(\mathbb{C})$ but not injective.</strong> Every invertible complex matrix has a logarithm, so $\exp$ is onto; it is not injective, because $2\pi i I$ maps to $I$. At the level of the compact form the exponential is onto $\mathrm{U}(n)$ and has the lattice $2\pi i\mathbb{Z}^{n}$ in its kernel after restriction to a Cartan.</p>
-<h2 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h2>
+<h3 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h3>
 <p><strong>Every invertible matrix is a rotation followed by a stretch,</strong></p>
 <p>$$
 A=UP,\qquad U^{*}U=I,\qquad P=P^{*}>0,\qquad P=\sqrt{A^{*}A},
@@ -684,7 +754,7 @@ A=U\Sigma V^{*},\qquad \Sigma=\operatorname{diag}(\sigma_{1},\dots,\sigma_{n})\g
 $$</p>
 <p>for square $A$, and for rectangular $A\in M_{m\times n}$ the same formula holds with $\Sigma$ of size $m\times n$. Substituting $P=V\Sigma V^{*}$ into $A=UP$ and setting $\tilde U=UV$ recovers the SVD, so the polar decomposition is the SVD with the two unitary factors merged into one.</p>
 <p><strong>The polar decomposition and the SVD carry the topological content.</strong> $U$ is the retraction onto the compact form, $\Sigma$ is the set of invariants of the action of $\mathrm{U}(n)\times\mathrm{U}(n)$ on $M_{m\times n}$, and the singular values are the eigenvalues of $\sqrt{A^{*}A}$, so they are the invariant functions of the double coset space.</p>
-<h2 id="the-automorphisms-and-the-derivations">The Automorphisms and the Derivations</h2>
+<h3 id="the-automorphisms-and-the-derivations">The Automorphisms and the Derivations</h3>
 <p><strong>Every derivation of $M_n(\mathbb{C})$ is inner.</strong></p>
 <p>$$
 \operatorname{Der}(M_n)=\operatorname{ad}\mathfrak{gl}_n\cong\mathfrak{sl}_n,\qquad \dim=n^{2}-1,
@@ -701,37 +771,6 @@ $$</p>
 $$</p>
 <p>with the second factor generated by $X\mapsto-X^{\mathsf T}$, the diagram automorphism. So $\mathfrak{sl}_n$ has a nontrivial outer automorphism for $n\ge3$, even though $M_n$ as an associative algebra has none. The slogan <em>all automorphisms are inner</em> is true for the algebra and false for its traceless Lie algebra.</p>
 <p><strong>The two statements are compatible because the diagram automorphism is not conjugation by a matrix.</strong> No invertible $S$ gives $SXS^{-1}=-X^{\mathsf T}$ for all traceless $X$; the map is an involution of the Lie bracket that does not come from the associative product.</p>
-<h2 id="the-real-forms-and-the-involution-layer">The Real Forms and the Involution Layer</h2>
-<p><strong>The real forms of $M_n(\mathbb{C})$ are $M_n(\mathbb{R})$ and, when $n$ is even, $M_{n/2}(\mathbb{H})$.</strong></p>
-<p>$$
-M_n(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_n(\mathbb{C}),\qquad M_{k}(\mathbb{H})\otimes_{\mathbb{R}}\mathbb{C}\cong M_{2k}(\mathbb{C}).
-$$</p>
-<p><strong>So there is one real form for odd $n$ and two for even $n$.</strong> The quaternion algebra has real dimension $4$, so $M_k(\mathbb{H})$ has real dimension $4k^{2}$ and complexifies to order $2k$; a complex module of odd dimension has no quaternionic structure.</p>
-<p><strong>The complex-linear involutions come in one or two classes.</strong></p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$n$</th>
-<th>classes of $A\mapsto Q^{-1}A^{\mathsf T}Q$</th>
-<th>representatives</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>odd</td>
-<td>$1$</td>
-<td>$Q=I$, the transpose</td>
-</tr>
-<tr>
-<td>even</td>
-<td>$2$</td>
-<td>$Q=I$ and $Q$ alternating</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>The second class exists exactly when an alternating form exists.</strong> A non-degenerate bilinear form is symmetric or alternating, an alternating form needs even dimension, and the two classes are not conjugate because an inner automorphism would carry one form to a scalar multiple of the other.</p>
-<p><strong>The fixed subspaces are the symmetry algebras of the two forms.</strong> For $Q$ symmetric the fixed set is $\{X:QX^{\mathsf T}Q^{-1}=X\}$, the algebra preserving the quadratic form, of dimension $n(n+1)/2$; for $Q$ alternating it is the symplectic algebra, of dimension $n(n+1)/2$ as well, with the sign convention $X\mapsto-Q^{-1}X^{\mathsf T}Q$ so that the fixed set is the Lie algebra and not its negative.</p>
-<p><strong>The conjugate-linear involutions give the real forms and the Hermitian structure.</strong> $A\mapsto\bar A$ fixes $M_n(\mathbb{R})$; the quaternionic conjugation fixes $M_{n/2}(\mathbb{H})$ when $n$ is even; $A\mapsto A^{*}$ is a conjugate-linear anti-automorphism whose fixed set is $\operatorname{Herm}_n$, of real dimension $n^{2}$, and it is not a subalgebra because it reverses the product.</p>
 <h2 id="the-finite-subgroups">The Finite Subgroups</h2>
 <p><strong>Every finite subgroup of $\mathrm{GL}_n(\mathbb{C})$ is conjugate into $\mathrm{U}(n)$.</strong> Averaging any positive-definite Hermitian form over the group gives an invariant one, and the group then preserves that form, so it is conjugate to a group of unitary matrices. So the finite subgroups are the finite groups of unitary matrices, and the question is a question about compact groups.</p>
 <p><strong>The classification is known only in low order.</strong></p>
@@ -796,6 +835,37 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The monomial groups are the full normalisers of the torus.</strong> The normaliser $N(T)$ consists of the monomial matrices, of order $m^{n}n!$ over the $m$-th roots of unity, and $N(T)/T\cong S_{n}$, which is the Weyl group statement again.</p>
+<h2 id="the-involution-layer">The Involution Layer</h2>
+<p><strong>The real forms of $M_n(\mathbb{C})$ are $M_n(\mathbb{R})$ and, when $n$ is even, $M_{n/2}(\mathbb{H})$.</strong></p>
+<p>$$
+M_n(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_n(\mathbb{C}),\qquad M_{k}(\mathbb{H})\otimes_{\mathbb{R}}\mathbb{C}\cong M_{2k}(\mathbb{C}).
+$$</p>
+<p><strong>So there is one real form for odd $n$ and two for even $n$.</strong> The quaternion algebra has real dimension $4$, so $M_k(\mathbb{H})$ has real dimension $4k^{2}$ and complexifies to order $2k$; a complex module of odd dimension has no quaternionic structure.</p>
+<p><strong>The complex-linear involutions come in one or two classes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>classes of $A\mapsto Q^{-1}A^{\mathsf T}Q$</th>
+<th>representatives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>odd</td>
+<td>$1$</td>
+<td>$Q=I$, the transpose</td>
+</tr>
+<tr>
+<td>even</td>
+<td>$2$</td>
+<td>$Q=I$ and $Q$ alternating</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The second class exists exactly when an alternating form exists.</strong> A non-degenerate bilinear form is symmetric or alternating, an alternating form needs even dimension, and the two classes are not conjugate because an inner automorphism would carry one form to a scalar multiple of the other.</p>
+<p><strong>The fixed subspaces are the symmetry algebras of the two forms.</strong> For $Q$ symmetric the fixed set is $\{X:QX^{\mathsf T}Q^{-1}=X\}$, the algebra preserving the quadratic form, of dimension $n(n+1)/2$; for $Q$ alternating it is the symplectic algebra, of dimension $n(n+1)/2$ as well, with the sign convention $X\mapsto-Q^{-1}X^{\mathsf T}Q$ so that the fixed set is the Lie algebra and not its negative.</p>
+<p><strong>The conjugate-linear involutions give the real forms and the Hermitian structure.</strong> $A\mapsto\bar A$ fixes $M_n(\mathbb{R})$; the quaternionic conjugation fixes $M_{n/2}(\mathbb{H})$ when $n$ is even; $A\mapsto A^{*}$ is a conjugate-linear anti-automorphism whose fixed set is $\operatorname{Herm}_n$, of real dimension $n^{2}$, and it is not a subalgebra because it reverses the product.</p>
 <h2 id="the-quantum-deformation">The Quantum Deformation</h2>
 <p><strong>The algebra $M_n(\mathbb{C})$ has a one-parameter deformation as a coordinate ring, and the enveloping algebra of $\mathfrak{sl}_n$ has one as a Hopf algebra.</strong> Both are called quantum groups, and neither is a group.</p>
 <p><strong>The quantum matrix algebra $\mathcal{O}_{q}(M_n)$ keeps the generators $t_{ij}$ and replaces commutativity by the $R$-matrix relations,</strong></p>
@@ -822,7 +892,7 @@ q=\exp\left(\frac{2\pi i}{k+h^{\vee}}\right),\qquad h^{\vee}=n\ \text{for}\ A_{n
 $$</p>
 <p>where $h^{\vee}$ is the dual Coxeter number. The exponent is a fraction; writing it as a product of $2\pi i k$ and $h^{\vee}$ is a different and meaningless expression.</p>
 <p><strong>The deformation is a deformation and not a replacement.</strong> Every structure of the previous sections is the $q=1$ limit: the root system, the Weyl group, the Borel, the flag variety. What the deformation adds is a braiding, and the braiding is what produces knot invariants and the Jones polynomial through the Markov trace of a braid-group representation.</p>
-<h2 id="what-changes-as-math695-grows">What Changes as $n$ Grows</h2>
+<h2 id="what-changes-as-math754-grows">What Changes as $n$ Grows</h2>
 <p><strong>Five facts are independent of $n$, and they are the skeleton.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -876,11 +946,11 @@ $$</p>
 <td>$n(n-1)/2$</td>
 </tr>
 <tr>
-<td>flag variety</td>
+<td>complete flag variety</td>
 <td>$n(n-1)/2$</td>
 </tr>
 <tr>
-<td>maximal commutative</td>
+<td>maximal commutative subalgebras</td>
 <td>$\lfloor n^{2}/4\rfloor+1$</td>
 </tr>
 </tbody>
@@ -903,7 +973,7 @@ $$</p>
 <td>$n!$</td>
 </tr>
 <tr>
-<td>parabolics</td>
+<td>parabolic subalgebras</td>
 <td>$2^{n-1}$</td>
 </tr>
 <tr>
@@ -1018,8 +1088,8 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a>, for the base case, where every layer collapses.</li>
-<li><a href="m2c-structures.html">The Structures of $M_2(\mathbb{C})$</a>, for the order where the first root system and the first projective line appear.</li>
+<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a>, for the base case, where the layers collapse to two subspaces.</li>
+<li><a href="m2c-structures.html">The Structures of $M_2(\mathbb{C})$</a>, for the first non-commutative order, where a zero row is a right ideal.</li>
 <li><a href="m3c-structures.html">The Structures of $M_3(\mathbb{C})$</a>, for $A_2$, the hexagon and the three-dimensional flag variety.</li>
 <li><a href="m4c-structures.html">The Structures of $M_4(\mathbb{C})$</a>, for $A_3=D_3$, the two real forms and the Klein quadric.</li>
 <li><a href="../articles_maths/the-matrix-algebra-m3c.html">The Matrix Algebra $M_3(\mathbb{C})$</a>, for the product, the trace and the determinant at a small order.</li>

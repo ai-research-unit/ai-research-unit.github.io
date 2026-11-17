@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Structures of $M_2(\mathbb{C})$ — Biquaternion Universe</title>
-  <meta name="description" content="is four complex dimensions wide and carries eight layers of structure, and the layers have different dimensions, different operations and different…">
+  <meta name="description" content="is four complex dimensions wide and carries fifteen layers of structure, and the layers have different dimensions, different operations and different…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-structures-of-math0"><strong>The Structures of $M_2(\mathbb{C})$</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>$M_2(\mathbb{C})$ is four complex dimensions wide and carries eight layers of structure, and the layers have different dimensions, different operations and different vocabularies.</strong> The algebra has dimension four, its centre one, its maximal commutative subalgebras two, its Lie algebra four, its group four. A sentence about $M_2(\mathbb{C})$ is exact only when the layer is named.</p>
+<p><strong>$M_2(\mathbb{C})$ is four complex dimensions wide and carries fifteen layers of structure, and the layers have different dimensions, different operations and different vocabularies.</strong> The algebra has dimension four, its centre one, its maximal commutative subalgebras two, its Lie algebra four, its group four. A sentence about $M_2(\mathbb{C})$ is exact only when the layer is named.</p>
 <p><strong>One confusion is systematic, and this article settles it first: the set of matrices with a zero row is a right ideal, not a left one.</strong> The set with a zero column is the left ideal. The two sets differ, the transpose exchanges them, and $E_{21}E_{11}=E_{21}$ is the one-line witness.</p>
 <p><strong>The article is an inventory, one section per layer.</strong> Each layer is defined, its dimension is stated, and the result is carried by a proof, a computation, or a link to the article that proves it. The companion articles hold the long arguments; this one holds the map.</p>
 <h2 id="the-inventory">The Inventory</h2>
@@ -194,9 +194,45 @@
 <td>$4$</td>
 <td>left multiplication on the algebra</td>
 </tr>
+<tr>
+<td>parabolic subalgebras</td>
+<td>the algebra and the Borel</td>
+<td>$2$</td>
+<td>the compositions of $2$</td>
+</tr>
+<tr>
+<td>complete flag variety</td>
+<td>$\mathbb{P}^{1}$</td>
+<td>$1$</td>
+<td>the chains $0\subset V_{1}\subset\mathbb{C}^{2}$</td>
+</tr>
+<tr>
+<td>Weyl group</td>
+<td>$S_{2}$</td>
+<td>$2$</td>
+<td>the swap of the two diagonal entries</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}_2$</td>
+<td>$\mathbb{C}J$</td>
+<td>$1$</td>
+<td>skew matrices, abelian</td>
+</tr>
+<tr>
+<td>$\mathfrak{sp}_2$</td>
+<td>$\mathfrak{sl}_2(\mathbb{C})$</td>
+<td>$3$</td>
+<td>the symplectic condition, which is tracelessness</td>
+</tr>
+<tr>
+<td>Betti numbers</td>
+<td>$1,1$</td>
+<td>—</td>
+<td>$b_{0}=b_{2}=1$</td>
+</tr>
 </tbody>
 </table></div>
-<p><strong>The eight layers are not redundant descriptions of one object.</strong> A subspace can be a subalgebra and not an ideal, an ideal and not a unital subalgebra, a Lie subalgebra and not an associative subalgebra. The dimensions in the table differ, and every difference is a place where a statement can be true on one layer and false on the next.</p>
+<p><strong>The layers are not redundant descriptions of one object.</strong> A subspace can be a subalgebra and not an ideal, an ideal and not a unital subalgebra, a Lie subalgebra and not an associative subalgebra. The dimensions in the table differ, and every difference is a place where a statement can be true on one layer and false on the next.</p>
 <h2 id="the-associative-algebra">The Associative Algebra</h2>
 <p><strong>The algebra is the set of arrays with the entrywise sum and the matrix product, and four matrices span it.</strong></p>
 <p>$$
@@ -252,7 +288,8 @@ $$</p>
 <p>and they are the two invariant functions under conjugation that generate the rest. Their difference from the biquaternion side is only the carrier: $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q$ and $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_\natural$.</p>
 <h3 id="central-simplicity">Central Simplicity</h3>
 <p><strong>The algebra is central simple of degree two.</strong> It is simple as a ring, its centre is the scalars, and its dimension over the centre is $4=2^{2}$. Equivalently $M_2(\mathbb{C})\cong\operatorname{End}_{\mathbb{C}}(\mathbb{C}^{2})$, and the transpose is an anti-isomorphism onto the opposite algebra.</p>
-<h2 id="the-two-sided-ideals">The Two-Sided Ideals</h2>
+<h2 id="the-ideals">The Ideals</h2>
+<h3 id="the-two-sided-ideals">The Two-Sided Ideals</h3>
 <p><strong>There are exactly two: $0$ and the algebra.</strong></p>
 <p><strong>Proof.</strong> Let $I\neq0$ be a two-sided ideal and let $A\in I$ with $A_{ij}\neq0$. For any $p,q$,</p>
 <p>$$
@@ -260,7 +297,7 @@ E_{pq}=\frac{1}{A_{ij}}\,E_{pi}\,A\,E_{jq}\in I,
 $$</p>
 <p>because the product keeps the $(p,q)$-entry $A_{ij}$ and kills the others. The matrix units span, so $I=M_2(\mathbb{C})$.</p>
 <p><strong>The consequence is that the algebra has no proper quotient.</strong> Every nonzero two-sided ideal is the whole algebra, so the only quotients are $0$ and $M_2(\mathbb{C})$, and every nonzero element generates the unit ideal. This is what the word <em>simple</em> means, and it is decided by the identity $E_{ij}=E_{ik}E_{kj}$: a two-sided ideal that contains one entry of one matrix contains every matrix unit.</p>
-<h2 id="the-left-ideals-and-why-a-zero-row-is-not-one">The Left Ideals, and Why a Zero Row Is Not One</h2>
+<h3 id="the-left-and-the-right-ideals">The Left and the Right Ideals</h3>
 <p><strong>A left ideal is a subspace stable under multiplication on the left, $M_2(\mathbb{C})L\subseteq L$.</strong> The right ideals are defined by $RM_2(\mathbb{C})\subseteq R$, and the two-sided ideals are the subspaces that are both.</p>
 <p><strong>The left ideals are the sets that kill a fixed subspace,</strong></p>
 <p>$$
@@ -333,7 +370,7 @@ E_{21}\,E_{11}=E_{21},
 $$</p>
 <p>where $E_{11}$ has a zero bottom row and the product does not. So left multiplication by $E_{21}$ carries the set outside itself.</p>
 <p><strong>The transpose exchanges the two families.</strong> $\operatorname{im}A^{\mathsf T}=(\ker A)^{\perp}$, so $A\in L_U$ exactly when $A^{\mathsf T}\in R_{U^{\perp}}$. The two families are therefore the same list read through an anti-isomorphism, and that is why a statement about a left ideal does not transfer to the right side until the transpose is named.</p>
-<h3 id="the-socle-and-the-modules">The Socle and the Modules</h3>
+<h3 id="the-socle">The Socle</h3>
 <p><strong>The socle is the whole algebra, of complex dimension $4$.</strong> The minimal left ideals are the columns $M_2P$ with $P$ of rank one, and two of them already span, as the split of the regular module below shows; so the regular module is semisimple and equals its socle.</p>
 <p><strong>The union of the minimal left ideals is not the socle.</strong> A rank-one element $uv^{\mathsf T}$ kills the hyperplane $v^{\perp}$ and lies in $L_{v^{\perp}}$, so the union of the pencil is the set of elements of rank at most one, of complex dimension $3$. That set is not a subspace: $E_{11}+E_{22}=I$ has rank $2$. The socle is the sum of the minimal left ideals, and the sum is the algebra. This is the one place in the inventory where the union and the sum must be kept apart.</p>
 <p><strong>Each minimal left ideal is a copy of $\mathbb{C}^{2}$ as a left module, and the regular module splits,</strong></p>
@@ -468,7 +505,45 @@ $$</p>
 </table></div>
 <p><strong>The Borel subalgebra is the upper-triangular one, and it is maximal solvable.</strong> Its derived algebra is $\mathfrak{n}_+$, of dimension $1$, so the derived series reaches $0$ in two steps; no larger subalgebra is solvable, because any element with a nonzero entry in position $(2,1)$ generates $\mathfrak{n}_-$ by bracketing and then $\mathfrak{h}$.</p>
 <p><strong>The 2-dimensional row is not a single conjugacy class.</strong> The Cartan algebra is abelian and contains no nonzero nilpotent; the column algebra $\mathbb{C}\{E_{11},E_{21}\}$ is solvable and not abelian, because $[E_{11},E_{21}]=-E_{21}$; the dual-number algebra is abelian and contains the nilpotent line $\mathbb{C}N$, so it is not conjugate to $\mathfrak{h}$.</p>
-<h2 id="the-group-and-its-subgroups">The Group and Its Subgroups</h2>
+<h3 id="the-weight-spaces">The Weight Spaces</h3>
+<p><strong>The adjoint module has three weights, one of them of multiplicity two.</strong></p>
+<p>$$
+\mathfrak{gl}_2=\mathfrak{h}_{0}\oplus\mathfrak{g}_{\alpha}\oplus\mathfrak{g}_{-\alpha},\qquad 4=2+1+1,
+$$</p>
+<p>and on $\mathfrak{sl}_2$ the zero weight drops to multiplicity one, so $3=1+1+1$. The weights of the standard module are $\varepsilon_{1}$ and $\varepsilon_{2}$, each of multiplicity one, and they are the two vertices of a segment; the dual module has weights $-\varepsilon_{1}$ and $-\varepsilon_{2}$.</p>
+<p><strong>The root $\alpha=\varepsilon_{1}-\varepsilon_{2}$ is the difference of the two weights.</strong> So the adjoint weights are $0$ and $\pm\alpha$, and the module $\operatorname{Sym}^{k}\mathbb{C}^{2}$ has weights $k\varepsilon_{1},(k-1)\varepsilon_{1}+\varepsilon_{2},\dots,k\varepsilon_{2}$, one for each of its $k+1$ dimensions.</p>
+<p><strong>The Weyl vector is half the root.</strong> $\rho=\tfrac12(\varepsilon_{1}-\varepsilon_{2})=\tfrac12\alpha$, and the Weyl dimension formula returns $k+1$ for the module of highest weight $k\omega$, which is $\operatorname{Sym}^{k}\mathbb{C}^{2}$.</p>
+<h2 id="the-classical-subalgebras-inside">The Classical Subalgebras Inside</h2>
+<p><strong>The orthogonal algebra is one-dimensional and abelian.</strong> The condition $X^{\mathsf T}J+JX=0$ with $J$ the rotation by a right angle gives the line $\mathbb{C}J$, so $\mathfrak{so}_{2}=\mathbb{C}J\cong\mathbb{C}$ as a Lie algebra, of dimension $1$.</p>
+<p><strong>The symplectic algebra is the traceless algebra.</strong> For $2\times2$ matrices the same condition $X^{\mathsf T}J+JX=0$ is equivalent to $\operatorname{tr}X=0$, so $\mathfrak{sp}_{2}=\mathfrak{sl}_{2}$, of dimension $3$.</p>
+<p><strong>The two families are the two ends of order two.</strong> $\mathfrak{so}_{2}$ sits inside $\mathfrak{sl}_{2}$ as a line, and $\mathfrak{sp}_{2}$ is all of it; the coincidence fails at order three, where $\mathfrak{so}_{3}\cong\mathfrak{sl}_{2}$ and no symplectic algebra exists.</p>
+<h2 id="the-borel-and-the-parabolic-subalgebras">The Borel and the Parabolic Subalgebras</h2>
+<p><strong>There are two parabolics, and the only proper one is the Borel.</strong> The compositions of $2$ are $(2)$ and $(1,1)$, of dimensions $4$ and $3$; the first is the algebra and the second is the upper-triangular algebra, so $2^{n-1}=2$ parabolic subalgebras and one of them is proper.</p>
+<p><strong>The nilradical is one line and the derived length is two.</strong> $\mathfrak{n}_{+}=\mathbb{C}E_{12}$, of dimension $n(n-1)/2=1$, and the derived series is $\mathfrak{b}\supset\mathfrak{n}_{+}\supset0$.</p>
+<p><strong>Order two is the only order where the Borel is the only proper parabolic.</strong> At $n=3$ the two maximal parabolics are proper and distinct from the Borel; here there is no room for an intermediate block size, so the Borel is the whole proper part of the parabolic list.</p>
+<h2 id="the-flag-varieties">The Flag Varieties</h2>
+<p><strong>The complete flag variety is the projective line.</strong></p>
+<p>$$
+\mathcal{F}=\mathrm{GL}_2(\mathbb{C})/B=\mathbb{P}^{1},\qquad \dim=4-3=1=n(n-1)/2 .
+$$</p>
+<p><strong>The partial flags are the point and the line.</strong> $\mathrm{Gr}(1,2)=\mathbb{P}^{1}$, of dimension $k(n-k)=1$ for $k=1$, and $\mathrm{Gr}(2,2)$ is a point; the complete flag variety is again $\mathbb{P}^{1}$. So the whole list at order two is one point and one projective line.</p>
+<p><strong>The bundle statement is exact and degenerate at once.</strong> $\mathcal{F}\to\mathrm{Gr}(1,2)$ is an isomorphism, because a line in a plane has a unique complement inside the plane, so the fibre is a point in this case only.</p>
+<h2 id="the-weyl-group-and-the-schubert-cells">The Weyl Group and the Schubert Cells</h2>
+<p><strong>The Weyl group is $S_{2}$, of order $2$.</strong> It is generated by the single reflection $s_{1}$, which swaps the two diagonal entries, and the Coxeter presentation is $s_{1}^{2}=1$.</p>
+<p><strong>The Bruhat decomposition has two cells.</strong></p>
+<p>$$
+\mathrm{GL}_2(\mathbb{C})=B\sqcup B s_{1}B,\qquad \mathcal{F}=X_{1}\sqcup X_{s_{1}},\qquad X_{s_{1}}\cong\mathbb{C}^{1},
+$$</p>
+<p>the closed cell being the base point and the open cell its complement, of dimension $1$.</p>
+<p><strong>The Mahonian numbers are $1,1$.</strong> The $q$-factorial is $(1)(1+q)=1+q$, the maximum length is $\binom{2}{2}=1$, and the two counts match the two cells.</p>
+<h2 id="the-betti-numbers">The Betti Numbers</h2>
+<p><strong>The flag variety is a sphere, so there are two non-zero Betti numbers.</strong></p>
+<p>$$
+b_{0}=b_{2}=1,\qquad P(t)=1+t^{2},\qquad \chi(\mathcal{F})=2=2! .
+$$</p>
+<p><strong>The coinvariant algebra is $\mathbb{Z}[x_{1},x_{2}]/(e_{1},e_{2})$, of rank $2$.</strong> It is generated by two elements of degree $2$ modulo the two elementary symmetric functions, and its Hilbert series is $1+t^{2}$.</p>
+<p><strong>The rank is the product of the degrees.</strong> The invariant ring of $S_{2}$ is $\mathbb{C}[e_{1},e_{2}]$ with degrees $1$ and $2$, and $1\cdot2=2!=2$, which is the Euler characteristic computed above.</p>
+<h2 id="the-group">The Group</h2>
 <p><strong>Taking the invertible elements gives $\mathrm{GL}_2(\mathbb{C})$, of complex dimension $4$ and real dimension $8$.</strong> It is connected, and the determinant is a surjection onto $\mathbb{C}^{\times}$ with kernel the special linear group:</p>
 <p>$$
 1\longrightarrow \mathrm{SL}_2(\mathbb{C})\longrightarrow \mathrm{GL}_2(\mathbb{C})\xrightarrow{\ \det\ }\mathbb{C}^{\times}\longrightarrow 1 .
@@ -529,7 +604,15 @@ $$</p>
 \mathrm{PGL}_2(\mathbb{C})=\mathrm{GL}_2(\mathbb{C})/\mathbb{C}^{\times}I\cong\mathrm{SL}_2(\mathbb{C})/\{\pm I\}\cong\mathrm{SO}_3(\mathbb{C}),
 $$</p>
 <p>of dimension $3$. It is also the automorphism group of the algebra: every automorphism of $M_2(\mathbb{C})$ is inner, by the Skolem–Noether theorem, and two inner automorphisms agree exactly when their matrices differ by a scalar.</p>
+<h3 id="the-polar-decomposition-and-the-compact-form">The Polar Decomposition and the Compact Form</h3>
+<p><strong>Every invertible matrix is a unitary matrix times a positive Hermitian one.</strong></p>
+<p>$$
+A=UP,\qquad U\in\mathrm{U}(2),\qquad P=P^{*}>0,\qquad P=\sqrt{A^{*}A},
+$$</p>
+<p>and the pair is unique because $A$ is invertible. The factor $P$ is the positive square root of $A^{*}A$, and $U=AP^{-1}$ is unitary.</p>
+<p><strong>The decomposition retracts the group onto the compact form.</strong> So $\mathrm{GL}_2(\mathbb{C})\simeq\mathrm{U}(2)$, the fundamental group is $\pi_{1}=\mathbb{Z}$, and the manifold is the product $\mathrm{U}(2)\times\operatorname{Herm}^{>0}_{2}$ of real dimensions $4+4$.</p>
 <p><strong>The compact real form is $\mathrm{U}(2)$, and its determinant-one part is $\mathrm{SU}(2)\cong S^{3}$.</strong> These are real subgroups and not complex ones. Inside $\mathrm{GL}_2(\mathbb{C})$ they form the fixed set of the anti-automorphism $A\mapsto(A^{*})^{-1}$, whose fixed-set equation is $AA^{*}=I$.</p>
+<h3 id="the-automorphisms-and-the-derivations">The Automorphisms and the Derivations</h3>
 <p><strong>The derivations are the traceless matrices.</strong> Every derivation of $M_2(\mathbb{C})$ is inner, $\delta_X(A)=[X,A]$, and the inner derivations $\operatorname{ad}_X$ depend only on the traceless part of $X$, so the space of derivations is $\mathfrak{sl}_2(\mathbb{C})$, of dimension $3$. The coincidence of the dimensions of $\mathrm{PGL}_2$ and $\mathfrak{sl}_2$ is the tangent and the algebra of the same automorphism group.</p>
 <h2 id="the-finite-subgroups">The Finite Subgroups</h2>
 <p><strong>The finite subgroups of $\mathrm{SL}_2(\mathbb{C})$ form five families, and they are the binary polyhedral groups.</strong></p>
@@ -683,9 +766,10 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a></li>
-<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform version, of which this article is the case $n=2$., for the base case of the ladder, where most of these layers collapse.</li>
-<li><a href="m3c-structures.html">The Structures of $M_3(\mathbb{C})$</a>, for the next rung, where the root system becomes $A_2$ and the flag variety becomes three-dimensional.</li>
+<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a>, for the base case, where the layers collapse to two subspaces.</li>
+<li><a href="m3c-structures.html">The Structures of $M_3(\mathbb{C})$</a>, for $A_2$, the hexagon and the three-dimensional flag variety.</li>
+<li><a href="m4c-structures.html">The Structures of $M_4(\mathbb{C})$</a>, for $A_3=D_3$, the two real forms and the Klein quadric.</li>
+<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform statement in $n$, of which the rungs above are the cases $n=1,\dots,4$.</li>
 <li><a href="../articles_maths/the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the product, the trace, the determinant and the rank.</li>
 <li><a href="../articles_maths/the-ideals-the-centre-and-the-simplicity-of-m2c.html">The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</a>, for the classification of the left and right ideals and the socle.</li>
 <li><a href="../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the same ideals in the biquaternion carrier.</li>
