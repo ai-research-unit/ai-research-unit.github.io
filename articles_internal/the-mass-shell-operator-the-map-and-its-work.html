@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mass-Shell Operator: One Map, Two Slots, and Its Work in the Corpus — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The corpus has one mass-shell operator, and it is a real-valued map on the material sector with one free slot and one fixed datum:">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-mass-shell-operator-one-map-two-slots-and-its-work-in-the-corpus"><strong>The Mass-Shell Operator: One Map, Two Slots, and Its Work in the Corpus</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The corpus has one mass-shell operator, and it is a real-valued map on the material sector with one free slot and one fixed datum:</p>
+<p>$$
+\boxed{\;\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}c^{2},\qquad
+\tilde Q_{\Phi}\in\mathbb{B}_{\Phi},\qquad N(\tilde P_{\Phi})=-m^{2}c^{2}\;}
+$$</p>
+<p>The free slot is the element at which the operator is read. The fixed datum is the particle's own momentum, $\tilde P_{\Phi}=m\tilde V_{\Phi}$ with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ and $m$ an inserted constant of the species. The second equality holds because the norm is multiplicative: $N(m\tilde V_{\Phi})=m^{2}N(\tilde V_{\Phi})=-m^{2}c^{2}$.</p>
+<p><strong>Why a map and not a formula.</strong> A formula equates numbers. A map has a domain, an argument and a value, and the operator's entire content is that $\mathcal{M}(\tilde Q_{\Phi})=0$ is one equation in the four real coefficients of $\tilde Q_{\Phi}$. That sentence cannot be written about a symbol with no argument. When the corpus wrote $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}c^{2}$ it named the fixed datum in the argument position, and the equation $\mathcal{M}=0$ then read as a statement about $m$ rather than about the free element. The repair is two slots and two letters, and it changes no number.</p>
+<p><strong>What this article decides.</strong> It fixes the definition and its domain; shows that the two slots cannot be identified and what happens when they are; lists the six places the corpus uses the map and what each one takes from it; states what the map does not do; and records the name collision with the modular operator.</p>
+<p><strong>What was recomputed.</strong> The identity $N(\tilde V_{\Phi})=-c^{2}$ on a unit material velocity; $N(\tilde P_{\Phi})=-m^{2}c^{2}$ to $1.7\times10^{-16}$; the equality of the two writings of the map on one hundred random material elements, worst error $4.4\times10^{-16}$; the vanishing of the map on one hundred constructed on-shell momenta, worst $2.1\times10^{-15}$; its non-vanishing on one hundred off-shell momenta, smallest value $0.0796$ and no zero; real-valuedness on one hundred elements, largest imaginary part $0$; the sign law on one hundred elements balanced between the three regions, thirty-four spacelike, thirty-three inside the shell, thirty-three beyond it, no violation; the scaling law at three values of the scale; multiplicativity of the norm on one hundred random pairs, worst error $3.1\times10^{-15}$; the quotient writing $m^{2}c^{2}\bigl(1-N(\tilde Q_{\Phi}\tilde P_{\Phi}^{-1})\bigr)$, equal to the map to $4.4\times10^{-15}$; the failure of additivity, by $9.9$ on a sample pair; the approach of $\mathcal{M}D_F$ to the identity, $8.8\times10^{-9}$ at $\epsilon=10^{-8}$; the extraction of a residue $2.3$ from a model propagator at steps $\pm10^{-6}$; and positivity of the Euclidean operator at one hundred grid points. Units $c=1$ and mass $m=0.7$ except where a dimension is at issue.</p>
+<h2 id="the-map">The Map</h2>
+<p><strong>The domain is the material sector and the value is real there.</strong> The material element carries an imaginary temporal coefficient and three real spatial ones, $\tilde Q_{\Phi}=iq'_te_t+\vec Q_{\Phi}$ with $q'_t=E/c$. Its norm is</p>
+<p>$$
+N(\tilde Q_{\Phi})=\tilde Q_{\Phi}\tilde Q_{\Phi}^{\natural}=\Bigl(\frac{iE}{c}\Bigr)^{2}+\vec p^{\,2}=-\frac{E^{2}}{c^{2}}+\vec p^{\,2},
+$$</p>
+<p>real, of inertia $(3,1)$. The map is therefore a real function of four real numbers, and its level sets are hypersurfaces.</p>
+<p><strong>Developed.</strong> With every coefficient written,</p>
+<p>$$
+\mathcal{M}(\tilde Q_{\Phi})=-\frac{E^{2}}{c^{2}}+\vec p^{\,2}+m^{2}c^{2}=\frac{\vec p^{\,2}c^{2}+m^{2}c^{4}-E^{2}}{c^{2}} .
+$$</p>
+<p>The numerator is the residual of the dispersion relation, and the operator is that residual with the two terms carrying one dimension, $\mathrm{M}^{2}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$. It is central, so it multiplies every component of a field by the same number and commutes with the two sectors.</p>
+<p><strong>The two slots are of different kinds.</strong> A parameter is not a variable, and the semicolon is the corpus's way of saying so.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot</th>
+<th>glyph</th>
+<th>status</th>
+<th>fixed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>free argument</td>
+<td>$\tilde Q_{\Phi}\in\mathbb{B}_{\Phi}$</td>
+<td>ranges over the sector</td>
+<td>the question asked</td>
+</tr>
+<tr>
+<td>fixed datum</td>
+<td>$\tilde P_{\Phi}=m\tilde V_{\Phi}$</td>
+<td>one element per species</td>
+<td>the particle, through $m$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What is legitimate and what is not.</strong> The norm is multiplicative and never additive, so the map is a difference of norms and cannot be rewritten as one norm.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>writing</th>
+<th>status</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})$</td>
+<td>correct</td>
+<td>two norms, two arguments</td>
+</tr>
+<tr>
+<td>$N(\tilde Q_{\Phi})+m^{2}c^{2}$</td>
+<td>correct, and equal</td>
+<td>$N(\tilde P_{\Phi})=-m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>$N(\tilde Q_{\Phi}-\tilde P_{\Phi})$</td>
+<td>wrong</td>
+<td>the norm is not additive and not linear</td>
+</tr>
+<tr>
+<td>$m^{2}c^{2}\bigl(1-N(\tilde Q_{\Phi}\tilde P_{\Phi}^{-1})\bigr)$</td>
+<td>legal but obscure</td>
+<td>by multiplicativity it equals the map, verified to $4.4\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$N+m^{2}c^{2}$</td>
+<td>ill-formed</td>
+<td>the norm is a function; written bare it has no value</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the defect that cost the corpus its argument.</strong> A bare norm symbol is not a number, and an expression containing one accepts whichever element the reader has in mind. Until this repair the conventions entry wrote the norm without its argument, in the two forms $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ and "the shell value is $N=-m^{2}c^{2}$": it equated an element with a function-with-a-hole, then supplied a second element without naming it. Both forms are quoted here as specimens and appear nowhere else in this article.</p>
+<h2 id="the-zero-set">The Zero Set</h2>
+<p><strong>The shell is a level set, and the level is the mass term.</strong> $\mathcal{M}(\tilde Q_{\Phi})=0$ is</p>
+<p>$$
+-\frac{E^{2}}{c^{2}}+\vec p^{\,2}+m^{2}c^{2}=0\iff E^{2}=\vec p^{\,2}c^{2}+m^{2}c^{4}\iff E=\pm E_{\vec p},
+$$</p>
+<p>one real equation in four real variables: a three-dimensional set, two sheets, asymptotic to the light cone and meeting the axis at $E=\pm mc^{2}$. Computed on one hundred constructed momenta the largest residual is $2.1\times10^{-15}$; on one hundred off-shell momenta the smallest value is $0.0796$ and the count of zeros is zero.</p>
+<p><strong>Four values fix the map completely, and each is a physical statement.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>point</th>
+<th>value</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q_{\Phi}=0$</td>
+<td>$+m^{2}c^{2}$</td>
+<td>the map is not identically zero</td>
+</tr>
+<tr>
+<td>on the shell</td>
+<td>$0$</td>
+<td>the dispersion relation</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\Phi}=2\tilde P_{\Phi}$</td>
+<td>$-3m^{2}c^{2}=-1.47$</td>
+<td>doubled momentum, three levels below</td>
+</tr>
+<tr>
+<td>spacelike, $\vec p^{\,2}=1$, $E=0$</td>
+<td>$+1.49$</td>
+<td>outside the light cone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The scaling law is one line.</strong> Because the norm is homogeneous of degree two, $\tilde Q_{\Phi}=\lambda\tilde P_{\Phi}$ gives</p>
+<p>$$
+\mathcal{M}(\lambda\tilde P_{\Phi})=(1-\lambda^{2})\,m^{2}c^{2},
+$$</p>
+<p>verified at $\lambda=\tfrac12,2,3$ as $+0.3675$, $-1.47$ and $-3.92$. The whole one-parameter family of radial departures from the shell is therefore known in closed form, and the sign changes exactly at the shell.</p>
+<p><strong>The sign is one inequality, and it is not the timelike-spacelike split.</strong> $\mathcal{M}>0$ where $N(\tilde Q_{\Phi})>-m^{2}c^{2}$, which is the spacelike region <strong>together with</strong> the timelike interior of the shell; $\mathcal{M}<0$ only in the timelike region beyond the shell, where $E^{2}>\vec p^{\,2}c^{2}+m^{2}c^{4}$. On one hundred elements balanced between the three regions the classification held without exception: thirty-four spacelike positive, thirty-three inside the shell positive, thirty-three beyond it negative. The statement "negative on the timelike side" is false for the interior half of that side.</p>
+<p><strong>The massless case is the cone.</strong> At $m=0$ the map is $N(\tilde Q_{\Phi})$ itself and its zero set is the material light cone, which is the material part of the zero-divisor set of the algebra. The massless limit is therefore the boundary of the shell and not a limiting value of a formula.</p>
+<p><strong>The map cannot be made to vanish by choosing $m$.</strong> The temptation is to read the shell equation as a definition of the mass, $m^{2}c^{2}=-N(\tilde Q_{\Phi})$, at whatever element is in hand. Substituting that into the map returns</p>
+<p>$$
+m^{2}c^{2}:=-N(\tilde Q_{\Phi})
+\quad\Longrightarrow\quad
+\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde Q_{\Phi})=0\ \text{ at every element}.
+$$</p>
+<p>That is an identity, and it says nothing: the level has been replaced by a function of the point, so the equation is satisfied before any physics enters. Evaluated at one hundred test points the return is zero to the last bit. The conventions state the reason the substitution is unavailable: no scale is derived by the algebra, and $c$, $\hbar$, $k_B$, $G$, $m$ and $ϙ$ are inserted where the structure requires one. $m$ is an input; the shell is an equation for the free element.</p>
+<p><strong>The signature of that error is visible in the notation.</strong> In the correct writing the mass slot is the number $m^{2}c^{2}$, with no argument. In the collapsed reading the same slot becomes $N(\tilde Q_{\Phi})$, a function of the free element. Whenever a "mass" in a denominator carries an argument, the level set has been replaced by the point and the operator has lost its content.</p>
+<h2 id="use-1-the-propagator">Use 1: The Propagator</h2>
+<p><strong>The propagator is the inverse of the map.</strong> In momentum space</p>
+<p>$$
+D_F(\tilde Q_{\Phi})=\frac{1}{\mathcal{M}(\tilde Q_{\Phi})-i\epsilon},
+$$</p>
+<p>so the pole set is the zero set of the map and nothing else. The product $\mathcal{M}D_F=\mathcal{M}/(\mathcal{M}-i\epsilon)$ tends to one off the pole; computed at $\mathcal{M}=-1.1425$ with $\epsilon=10^{-8}$ the deviation is $8.8\times10^{-9}$. On the pole the product is the residue.</p>
+<p><strong>The residue is read in the map's own variable.</strong> For a two-point function $D(\mathcal{M})=Z/\mathcal{M}+c_0+c_1\mathcal{M}+\cdots$,</p>
+<p>$$
+Z=\lim_{\mathcal{M}\to0}\mathcal{M}\,D_F,
+$$</p>
+<p>and a symmetric step $\delta=\pm10^{-6}$ gives $\delta D(\delta)=2.3000004$ and $2.2999996$ for $Z=2.3$, whose mean is $2.300000$ to the last digit. There is no other variable in which the residue is defined: the pole is a level of $\mathcal{M}$, not a level of $E$ or of $\vec p$ separately.</p>
+<p><strong>Centrality is what makes one factor enough.</strong> $\mathcal{M}(\tilde Q_{\Phi})$ is a complex number, hence central, so it commutes with the left and right multiplications of the algebra and multiplies all four complex components of a biquaternion field identically. On real momenta it is also real, so it commutes with the conjugation $\flat=-{}^{*}$ and does not mix the two sectors. A single scalar factor therefore amputates a leg of a scalar field with no internal index disturbed.</p>
+<p><strong>The free field fixes the normalization.</strong> For $Z=1$ the amputated two-point function is exactly $1$: amputation removes the only propagator the free theory had, so the free S-matrix is the identity. The overall sign is a convention: relative to the standard wave operator the map carries a factor $-1$ per leg, which is a choice about external states and not a physical difference.</p>
+<h2 id="use-2-amputation-and-the-reduction-formula">Use 2: Amputation and the Reduction Formula</h2>
+<p><strong>The map is the symbol of the wave operator, up to a sign.</strong> The kinetic operator $-\Box_{\Phi}+k_m^{2}$ with $k_m=mc/\hbar$ has momentum symbol $\mathcal{M}(\tilde Q_{\Phi})$, and the action's operator $\Box_{\Phi}-k_m^{2}$ has symbol $-\mathcal{M}(\tilde Q_{\Phi})$. Amputation in momentum space is multiplication by the inverse propagator, equivalently by the negative of the wave operator's symbol.</p>
+<p><strong>In the reduction formula the map appears once per leg.</strong> Each external leg is Fourier transformed, amputated by $\mathcal{M}(\tilde Q_{\Phi,j})$ on its own momentum, put on the shell by taking $\mathcal{M}(\tilde Q_{\Phi,j})\to0$, and divided by $\sqrt Z$. The on-shell condition is the zero set of the same map that performed the amputation, which is why one symbol serves both steps.</p>
+<p><strong>The spin case uses the map twice.</strong> For a field with spin the amputation is the action $\mathcal{A}_p-mc$ on the element, and the second-order operator of the pair is</p>
+<p>$$
+(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)\tilde{\Xi}=-\bigl(N(\tilde Q_{\Phi})+m^{2}c^{2}\bigr)\tilde{\Xi}=-\mathcal{M}(\tilde Q_{\Phi})\,\tilde{\Xi},
+$$</p>
+<p>so the pole of every leg still sits on the same level set, while the residue is the numerator $\mathcal{A}_p+mc$, which the propagator article identifies as the spin sum over the two solutions. The map supplies the pole; the dynamics supplies the residue. Confusing the two is the error that makes an operator look like an amplitude.</p>
+<h2 id="use-3-the-shell-measure-and-phase-space">Use 3: The Shell Measure and Phase Space</h2>
+<p><strong>The invariant measure is the delta function of the map.</strong> The on-shell integral is</p>
+<p>$$
+\int d^{4}p\;\delta\bigl(\mathcal{M}(\tilde Q_{\Phi})\bigr)\,H_{\mathrm{hvs}}(p_0)\,f(p)
+=\int d^{4}p\;\delta\bigl(N(\tilde Q_{\Phi})+m^{2}c^{2}\bigr)H_{\mathrm{hvs}}(p_0)\,f(p),
+$$</p>
+<p>and the delta resolves into the two sheets with the Jacobian $1/(2E)$,</p>
+<p>$$
+\delta\bigl(N(\tilde Q_{\Phi})+m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta(p_0-E)+\delta(p_0+E)\Bigr],
+$$</p>
+<p>so the familiar $\frac{1}{2E}$ is a Jacobian and not a convention. <strong>Invariance is inherited from the level set.</strong> The map depends on the element only through $N(\tilde Q_{\Phi})$, and $\mathcal{M}=0$ is one equation in the four coefficients, so the set it cuts is the hyperboloid on which the interval takes its fixed value and the measure carried on that set is the hyperboloid's own, not a frame-dependent density. The invariant-measure article constructs it as the homogeneous-space measure of the shell and records the $\frac{1}{2E}$ as the Jacobian of the delta function.</p>
+<p><strong>The dimension of the delta function is the inverse of the map's.</strong> $\mathcal{M}$ carries $\mathrm{M}^{2}\,\mathrm{L}^{2}\,\mathrm{T}^{-2}$, so $\delta(\mathcal{M})$ carries the inverse, and the product with $d^{4}p$ is dimensionless in the standard normalization. A delta function of a bare norm symbol would have the same dimension and no defined argument; the dimension check alone does not catch the error, which is why the argument must be written.</p>
+<h2 id="use-4-the-determinant-the-effective-action-and-the-thermal-free-energy">Use 4: The Determinant, the Effective Action and the Thermal Free Energy</h2>
+<p><strong>One loop is a trace of a logarithm of the map.</strong> At a mode the fluctuation operator is central and equal to the map, $S^{(2)}=\kappa\,e_t$ with $\kappa=\mathcal{M}(\tilde Q_{\Phi})$. On the two-complex-dimensional module its determinant is the square of the single value,</p>
+<p>$$
+\det\bigl(S^{(2)}\bigr)\Big|_{\text{module}}=\kappa^{2},\qquad \Gamma_1=\tfrac12\,\mathrm{Tr}\log S^{(2)},\qquad \log Z=-\tfrac12\,\mathrm{Tr}\log\mathcal{M},
+$$</p>
+<p>so the one-loop effective action is a functional of the same object that defines the propagator, and the factor two is the module's dimension rather than a convention. The functional determinant article states the central case in exactly this form.</p>
+<p><strong>The Euclidean operator is a different map with the same skeleton.</strong> The analytic continuation replaces the indefinite norm by the definite Hermitian form on the same element,</p>
+<p>$$
+\mathcal{M}_E(\tilde P_{\Phi,E})=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^{2}=k_{\mathrm{eu}}^{2}+m^{2}>0,
+$$</p>
+<p>positive at every grid point, minimum $m^{2}=0.49$ at $k_{\mathrm{eu}}=0$. The Lorentzian map has a zero set and therefore a pole; the Euclidean map has neither. <strong>That difference is the whole content of the Wick rotation at this level:</strong> the rotation changes the norm from indefinite to definite, so it changes a level set into a strictly positive function.</p>
+<p><strong>Thermally the consequence is analyticity.</strong> Because $\mathcal{M}_E>0$ on the Matsubara grid, $D_E=1/\mathcal{M}_E$ is bounded and real-analytic there, the Gaussian converges, and the free energy is a sum over modes with no pole and no prescription. The thermal formalism therefore needs the definite operator and states the Lorentzian one only to identify what was continued.</p>
+<h2 id="use-5-the-off-shellness-variable">Use 5: The Off-Shellness Variable</h2>
+<p><strong>The map is the natural measure of distance from the shell.</strong> The dimensionless ratio</p>
+<p>$$
+\frac{\mathcal{M}(\tilde Q_{\Phi})}{m^{2}c^{2}}=1-\lambda^{2}\quad\text{on}\quad \tilde Q_{\Phi}=\lambda\tilde P_{\Phi}
+$$</p>
+<p>is zero on the shell, positive inside it and outside the light cone, and negative beyond it. No other scalar in the corpus has these properties: $E$ alone changes under a boost, $\vec p^{\,2}$ alone is not frame-independent, and the norm alone is not zero on the shell. The map depends on the frame only through the norm, vanishes exactly on the shell, and carries the mass term as its unit.</p>
+<p><strong>It is the expansion variable of the two-point function.</strong> The regular part of $D_F$ is written $c_0+c_1\mathcal{M}+c_2\mathcal{M}^{2}+\cdots$, and the residue is the coefficient of $\mathcal{M}^{-1}$. Any truncation scheme stated in the corpus in terms of "distance from the shell" is a truncation in this variable, whether or not the symbol is used.</p>
+<h2 id="use-6-a-numerical-test-of-any-momentum-routine">Use 6: A Numerical Test of Any Momentum Routine</h2>
+<p><strong>One line decides whether a momentum is on shell.</strong> Evaluate $\mathcal{M}$ on the element and require machine zero; then evaluate it off shell and require the opposite. The test is frame-independent, and dimensionless after division by $m^{2}c^{2}$.</p>
+<p><strong>The test has two failure modes, and both are visible in this review.</strong> The first is a bare norm symbol: the expression accepts whichever element the reader supplies, so the test can be run on the fixed datum and pass vacuously, returning zero for every momentum in the world. The second is a wrong dispersion relation: with $E_{\vec p}=\sqrt{\vec p^{\,2}+m^{2}}$ in place of $\sqrt{\vec p^{\,2}c^{2}+m^{2}c^{4}}$ no momentum can reach the level set, and the test fails for reasons that look like arithmetic. Both were present in the corpus; the first in the notation of the operator, the second in the opening line of the reduction article, which read $E_{\vec p}=\sqrt{\vec p^{\,2}+m^{2}}$.</p>
+<h2 id="what-the-map-does-not-do">What the Map Does Not Do</h2>
+<p><strong>It does not define the mass.</strong> $m$ is inserted, one number per species, and the level set is not a definition of its label. Reading the level set as a definition is the collapse, and the collapse is empty.</p>
+<p><strong>It is not additive.</strong> $\mathcal{M}(\tilde Q_{\Phi,1}+\tilde Q_{\Phi,2})\neq\mathcal{M}(\tilde Q_{\Phi,1})+\mathcal{M}(\tilde Q_{\Phi,2})$, because the norm is quadratic and multiplicative rather than linear. A sum of two momenta is not a difference of two levels.</p>
+<p><strong>It is not a real function on the whole algebra.</strong> Off both sectors the norm is complex, the level sets have codimension two, and they separate nothing, so no shell and no mass can be read. The domain restriction to $\mathbb{B}_{\Phi}$ is what makes $\mathcal{M}=0$ a hypersurface; it is not a convenience.</p>
+<p><strong>It does not determine the residue.</strong> The residue is $Z$ for a scalar and $\mathcal{A}_p+mc$ for a field with spin. Those are dynamical; the map supplies only the pole.</p>
+<p><strong>Its sign is a convention at the level of the wave operator.</strong> The map is fixed; the factor $-1$ per leg between "inverse propagator" and "wave operator's symbol" is a choice about external states.</p>
+<h2 id="the-name-collision">The Name Collision</h2>
+<p><strong>The glyph $\mathcal{M}$ carries several objects in the corpus, and only one of them is this map.</strong> The others are subscripted or contextual, and the rule that keeps them apart is the conventions' own: a named object takes a calligraphic letter and a subscript that spells it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>glyph</th>
+<th>object</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{M}(\tilde Q_{\Phi})$</td>
+<td>the mass-shell operator</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{\mathrm{mod}}$</td>
+<td>the modular operator of Tomita–Takesaki</td>
+<td>fifteen articles</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{\omega,\xi_{\mathrm{alt}}}$</td>
+<td>the Araki relative modular operator</td>
+<td>relative entropy</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{ij}$</td>
+<td>the charge inertia tensor</td>
+<td>Larmor precession</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{\text{vac}}$</td>
+<td>the vacuum manifold</td>
+<td>the vacuum as an idempotent</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_E$</td>
+<td>the Euclidean mass-shell operator</td>
+<td>Matsubara, thermal</td>
+</tr>
+<tr>
+<td>$\mathcal{M}$</td>
+<td>the carrier module over the internal algebra, and an algebra of observables</td>
+<td>CCM independence, confinement</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(\dots)$</td>
+<td>a scattering amplitude, in the standard notation</td>
+<td>electroweak gauge fixing, Compton</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two that must never be confused are the mass-shell operator and the amplitude.</strong> They are written with the same letter and with an argument list, and one is a real central scalar while the other is a complex number for a process. The mass-shell operator always has the argument $\tilde Q_{\Phi}$ and always the offset $m^{2}c^{2}$; the amplitude never does.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde Q)=\tilde Q\tilde Q^{\natural}$</td>
+<td>the quaternionic norm; complex on $\mathbb{B}$, real on each sector; always written with its argument</td>
+</tr>
+<tr>
+<td>$\tilde Q_{\Phi}\in\mathbb{B}_{\Phi}$</td>
+<td>the free material element, the argument of the map; not the particle's momentum</td>
+</tr>
+<tr>
+<td>$\tilde P_{\Phi}=m\tilde V_{\Phi}$</td>
+<td>the particle's own momentum, fixed; $N(\tilde P_{\Phi})=-m^{2}c^{2}$; the letter is never generic</td>
+</tr>
+<tr>
+<td>$\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$</td>
+<td>the fixed norm of the velocity element, the same for every particle</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>the mass, an inserted constant of the species; never a function of the argument</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})$</td>
+<td>the mass-shell operator; $=N(\tilde Q_{\Phi})+m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(\tilde Q_{\Phi})=0$</td>
+<td>the mass shell, a three-dimensional level set, two sheets</td>
+</tr>
+<tr>
+<td>$\mathcal{M}(\lambda\tilde P_{\Phi})=(1-\lambda^{2})m^{2}c^{2}$</td>
+<td>the radial scaling law</td>
+</tr>
+<tr>
+<td>$D_F=1/(\mathcal{M}-i\epsilon)$</td>
+<td>the propagator, with the pole on the zero set</td>
+</tr>
+<tr>
+<td>$Z=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$</td>
+<td>the residue, hence the wave-function renormalization</td>
+</tr>
+<tr>
+<td>$\delta(\mathcal{M})$</td>
+<td>the on-shell measure; $1/(2E)$ is its Jacobian</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_E=k_{\mathrm{eu}}^{2}+m^{2}$</td>
+<td>the Euclidean continuation, positive with no zero set</td>
+</tr>
+<tr>
+<td>$\mathcal{M}/(m^{2}c^{2})$</td>
+<td>the dimensionless off-shellness of an element</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>, for the operator's definition at the head of the findings, the amputation per leg, and the dimensional form of $E_{\vec p}$.</li>
+<li><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a>, for $D_F=1/(\mathcal{M}-i\epsilon)$ and the Feynman shift as a deformation of the scalar.</li>
+<li><a href="../articles_physics/the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>, for $\log Z=-\tfrac12\mathrm{Tr}\log\mathcal{M}$.</li>
+<li><a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>, for the kinetic operator's symbol.</li>
+<li><a href="../articles_physics/the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>, for the relative sign of the source kernel and the classical field.</li>
+<li><a href="../articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.html">The Matsubara Thermal Formalism in Biquaternionic Form</a>, for $\mathcal{M}_E=k_{\mathrm{eu}}^{2}+m^{2}$ and the analyticity of the thermal propagator.</li>
+<li><a href="../articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>, for $\delta\bigl(N(\tilde Q_{\Phi})+m^{2}c^{2}\bigr)$ and the $\frac{1}{2E}$ Jacobian.</li>
+<li><a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, for why the mass is readable on the material sector and nowhere else.</li>
+<li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the multiplicativity of the norm and the level sets as shells.</li>
+<li><a href="mass-definition-and-interpretations.html">Mass: The Definition, the Representatives and the Limits</a>, for the single definition of the mass and the six readings of it.</li>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the $\tilde P_{\Phi}$ and $\tilde Q_{\Phi}$ rows and the operator's dimension.</li>
+<li><a href="../articles_physics/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>, for the material part $\tilde Q_{\Phi}$ and the informational part $\tilde Q_{\Psi}$ of a general element.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

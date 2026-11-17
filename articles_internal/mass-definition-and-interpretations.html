@@ -76,7 +76,7 @@
 \boxed{\;m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;}\ ,
 $$</p>
 <p>with $\tilde P_{\Phi}=i(E/c)e_t+\vec p_{\Phi}$. On an element off both sectors the norm is complex, its level sets have codimension two, and no real $m$ can be read. Everything else the corpus says about mass is a reading of that one value, and each reading names the representative it uses.</p>
-<p><strong>Why the question is live.</strong> Several articles write that the mass is Hermitian, or that it lies in $\mathbb{B}_{\Psi}$. Others put the mass shell on $\mathbb{B}_{\Phi}$ and write $\delta(N+m^{2}c^{2})$. Read as two definitions, the two families contradict. Read as a value and a geometry, they agree, and this article shows the separation.</p>
+<p><strong>Why the question is live.</strong> Several articles write that the mass is Hermitian, or that it lies in $\mathbb{B}_{\Psi}$. Others put the mass shell on $\mathbb{B}_{\Phi}$ and write $\delta\big(N(\tilde Q_{\Phi})+m^{2}c^{2}\big)$. Read as two definitions, the two families contradict. Read as a value and a geometry, they agree, and this article shows the separation.</p>
 <p><strong>What this article decides.</strong> It fixes the canonical definition, shows why there is no whole-algebra version rather than a discarded rival, separates the value from the geometry, and tabulates the six readings the corpus gives of mass with the domain each one needs.</p>
 <p><strong>What was recomputed.</strong> The determinant identity $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$ and the multiplicativity $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$ on one hundred random biquaternions, worst errors $3.7\times10^{-15}$ and $4.3\times10^{-14}$; the two on-shell values $N(\tilde P_{\Phi})=-m^{2}c^{2}$ and $N(i\tilde P_{\Phi})=+m^{2}c^{2}$; the spectra of both representatives; the failure of mass to compose on a pair of timelike material momenta; the multiplicativity of the modulus on the same pair; the connectivity of the complement of the zero-divisor set on one hundred pairs of invertible matrices; and the crossing of $N=0$ on a segment between a timelike and a spacelike material element.</p>
 <h2 id="the-norm-and-the-three-domains">The Norm, and the Three Domains</h2>
@@ -176,7 +176,12 @@ $$</p>
 <p><strong>A shell is a boundary, and a boundary in $n$ dimensions has $n-1$.</strong> Mass is the label of a shell, so the definition is available exactly when the level sets of the norm are hypersurfaces that separate momentum space into an on-shell side and an off-shell side. Whether they do is a fact about the level sets and not a choice of wording.</p>
 <p><strong>On $\mathbb{B}$ the level sets have codimension two.</strong> The coefficients are complex, so the real space is eight dimensional, and $N=\lambda$ is one complex equation, that is two real equations. The set $\{N=0\}$ is six dimensional. Its complement is the set of invertible elements, and that set is connected: any two invertible matrices are joined by a path on which $\lvert\det\rvert$ stays away from zero, verified on one hundred pairs with the smallest $\lvert\det\rvert$ along the paths $0.4095$.</p>
 <p><strong>A codimension-two set separates nothing.</strong> The complement of the zero-divisor set is one connected piece, so there is no inside and no outside of a mass shell in $\mathbb{B}$, and no region that a value of $N$ could label. The massless condition on $\mathbb{B}$ is not a wall but an obstacle that can be walked around.</p>
-<p><strong>Inside a sector the level sets have codimension one.</strong> There the four coefficients are real and $N$ is real, so $\{N=-m^{2}c^{2}\}$ is one real equation in four real variables, a three-dimensional surface. It separates: a straight line from the timelike element with $N=-24$ to the spacelike one with $N=+15$ crosses $N=0$. That is a shell, and a shell can carry a label.</p>
+<p><strong>Inside a sector the level sets have codimension one.</strong> There the four coefficients are real and $N$ is real, so $\{N(\tilde Q_{\Phi})=-m^{2}c^{2}\}$ is one real equation in four real variables, a three-dimensional surface. It separates: a straight line from the timelike element with $N=-24$ to the spacelike one with $N=+15$ crosses $N=0$. That is a shell, and a shell can carry a label.</p>
+<p><strong>The shell and its operator.</strong> A level set is described by the function that vanishes on it, and in the corpus that function is the mass-shell operator. Write it with both arguments visible:
+$$
+\mathcal{M}(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})-N(\tilde P_{\Phi})=N(\tilde Q_{\Phi})+m^{2}c^{2},
+$$
+where $\tilde Q_{\Phi}$ is a free element of $\mathbb{B}_{\Phi}$ and $\tilde P_{\Phi}=m\tilde V_{\Phi}$ is the particle's own momentum, held fixed with $N(\tilde P_{\Phi})=-m^{2}c^{2}$. The two terms are one function read at two elements, which is why the operator is a difference of norms and not a norm of a difference: $N$ is multiplicative and never additive. At $\tilde Q_{\Phi}=\tilde P_{\Phi}$ it returns $N(\tilde P_{\Phi})-N(\tilde P_{\Phi})=0$, and that equality is the whole of the statement that the shell is a level set. Were $m$ replaced by a function of $\tilde Q_{\Phi}$, through $m^{2}c^{2}=-N(\tilde Q_{\Phi})$, the same formula would return zero at every element and would describe nothing; the definition keeps $m$ fixed precisely so that the zero set stays one equation in four unknowns.</p>
 <p><strong>So the sector is what makes $m$ a number.</strong> A real $m$ labels a surface, and the surface must separate. Inside a sector it does; on the complex level sets it does not.</p>
 <p><strong>The six failures are six faces of the same count.</strong> Each is one way the mass stops being a number when $N$ is complex.</p>
 <div class="table-scroll"><table>
@@ -210,7 +215,7 @@ $$</p>
 </tr>
 <tr>
 <td>a shell measure</td>
-<td>$\delta(N+m^{2}c^{2})$ needs a real argument and a real zero</td>
+<td>$\delta\big(N(\tilde Q_{\Phi})+m^{2}c^{2}\big)$ needs a real argument and a real zero</td>
 <td>a delta on a complex argument is undefined</td>
 </tr>
 <tr>
@@ -347,11 +352,11 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde P_{\Phi}=i(E/c)e_t+\vec p_{\Phi}$</td>
-<td>the material four-momentum; $N=-m^{2}c^{2}$ on shell</td>
+<td>the material four-momentum; $N(\tilde P_{\Phi})=-m^{2}c^{2}$ on shell</td>
 </tr>
 <tr>
 <td>$i\tilde P_{\Phi}$</td>
-<td>its informational reading, $-p_te_t+i\vec p_{\Phi}$ with $p_t=E/c$; $N=+m^{2}c^{2}$ on shell</td>
+<td>its informational reading, $-p_te_t+i\vec p_{\Phi}$ with $p_t=E/c$; $N(i\tilde P_{\Phi})=+m^{2}c^{2}$ on shell</td>
 </tr>
 <tr>
 <td>$m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$</td>
@@ -366,7 +371,7 @@ $$</p>
 <td>the modulus reading; defined on all of $\mathbb{B}$ and multiplicative</td>
 </tr>
 <tr>
-<td>$\delta(N+m^{2}c^{2})$</td>
+<td>$\delta\big(N(\tilde Q_{\Phi})+m^{2}c^{2}\big)$</td>
 <td>the shell measure; needs $N$ real, hence a sector</td>
 </tr>
 <tr>
@@ -393,7 +398,7 @@ $$</p>
 <li><a href="../articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a>, for the mass as an operator and the degenerate single-mass case.</li>
 <li><a href="../articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a>, for $Z(\mathbb{B})=\mathbb{R}e_t\oplus\mathbb{R}ie_t$ and the parameters as real multiples of $e_t$.</li>
 <li><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a>, for the one metric and the sign carried by the coordinate.</li>
-<li><a href="../articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>, for $\delta(N+m^{2}c^{2})$.</li>
+<li><a href="../articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>, for $\delta\big(N(\tilde Q_{\Phi})+m^{2}c^{2}\big)$.</li>
 <li><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a>, for the dilation that rescales the mass.</li>
 <li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>, for the massless limit as the return of the gauge symmetry.</li>
 <li><a href="../articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, for the mass density as a coefficient.</li>
