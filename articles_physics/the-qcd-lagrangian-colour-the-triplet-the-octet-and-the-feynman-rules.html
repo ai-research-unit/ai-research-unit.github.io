@@ -293,7 +293,7 @@ $$</p>
 </tr>
 <tr>
 <td>Quark $ij$</td>
-<td>$\dfrac{i\left(m-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu\right)_{ij}}{k^2-m^2+i\epsilon}$</td>
+<td>$\dfrac{i\left(\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu+m\right)_{ij}}{k^2-m^2+i\epsilon}$</td>
 </tr>
 <tr>
 <td>Ghost $ab$</td>
@@ -314,7 +314,7 @@ $$</p>
 <tr>
 <td>Quark–gluon</td>
 <td>$T^a_{ij}$</td>
-<td>$-ig_s\varepsilon_\mu\gamma_\mu$</td>
+<td>$ig_s\varepsilon_\mu\gamma_\mu$</td>
 </tr>
 <tr>
 <td>Three-gluon</td>
@@ -341,9 +341,9 @@ $$</p>
 <h2 id="the-three-vertices-derived">The Three Vertices Derived</h2>
 <p><strong>The quark–gluon vertex, in one line.</strong> The interaction term in the quark piece is</p>
 <p>$$
--g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
++g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
 $$</p>
-<p>with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $-ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.</p>
+<p>with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.</p>
 <p><strong>The three-gluon vertex, in three lines.</strong> Expanding $-\frac14\sum GG$ and keeping the terms with one field strength linear in the field and two powers of the field,</p>
 <p>$$
 \mathcal{L}_3=-g_s\sum_{a,b,c}f^{abc}\left(\partial_\mu G^a_\nu\right)G^b_\mu G^c_\nu .
@@ -355,7 +355,7 @@ $$</p>
 <p>and the tensor is totally antisymmetric under the exchange of any two legs together with their momenta, which is the statement that the three gluons enter symmetrically.</p>
 <p><strong>The check that fixes the sign.</strong> The rule above reproduces the tree-level Ward identity</p>
 <p>$$
-p_1^\alpha\,\Gamma_{\alpha\beta\gamma}(p_1,p_2,p_3)=g_sf^{abc}\Big[\Pi_{\beta\gamma}(p_2)-\Pi_{\beta\gamma}(p_3)\Big] ,
+\sum_\alpha p_{1\alpha}\,\Gamma_{\alpha\beta\gamma}(p_1,p_2,p_3)=g_sf^{abc}\Big[\Pi_{\beta\gamma}(p_2)-\Pi_{\beta\gamma}(p_3)\Big] ,
 \qquad
 \Pi_{\mu\nu}(k)=k_\mu k_\nu-k^2\delta_{\mu\nu} ,
 $$</p>
@@ -621,7 +621,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\gamma_\mu$</td>
-<td>Dirac matrices, written low; the quark propagator is $i(m_f-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu)/(k^2-m_f^2+i\epsilon)$</td>
+<td>Dirac matrices, written low; the quark propagator is $i(\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu+m_f)/(k^2-m_f^2+i\epsilon)$</td>
 </tr>
 <tr>
 <td>$m_f$</td>

@@ -79,7 +79,7 @@
 +\frac{i}{A_{\mathrm{mhv}}^{2}}\left[\frac{1}{c^{2}}\frac{\partial}{\partial t}\left(A_{\mathrm{mhv}}^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial t}\right)-\nabla\cdot\left(A_{\mathrm{mhv}}^{2}\nabla\theta_{\mathrm{pha}}\right)\right]=0 .
 $$</p>
 <p>This is the <strong>parent identity</strong>. It is not an approximation: it holds for every solution of the Dirac square of the chiral pair, at every value of every parameter, and every display in the article is read from it.</p>
-<p><strong>The parameter.</strong> $\epsilon=\dfrac{1}{k_{\Phi}L}=\dfrac{\hbar}{p\,L}$, where $k_{\Phi}$ is the phase wave number of the state and $L$ is the length over which the amplitude varies. The non-quantum limit is</p>
+<p><strong>The parameter.</strong> $\epsilon=\dfrac{1}{k_{\Phi}L}=\dfrac{\hbar}{\lvert\vec p\rvert\,L}$, where $k_{\Phi}$ is the phase wave number of the state and $L$ is the length over which the amplitude varies. The non-quantum limit is</p>
 <p>$$
 \epsilon\ll1\qquad\text{that is}\qquad L\gg\lambda_{\Phi} ,
 $$</p>
@@ -201,7 +201,7 @@ $$</p>
 <p>The third length is not in the algebra. $L$ is the length over which the amplitude varies by order itself, $\left\lvert\nabla\ln A_{\mathrm{mhv}}\right\rvert\sim1/L$. It is a property of the state. Nothing in the model supplies it, and the limit needs it.</p>
 <p>The parameter of the limit is the ratio of the first to the third:</p>
 <p>$$
-\boxed{\;\epsilon:=\frac{\lambda_{\Phi}}{L}=\frac{1}{k_{\Phi}L}=\frac{\hbar}{p\,L}\;}
+\boxed{\;\epsilon:=\frac{\lambda_{\Phi}}{L}=\frac{1}{k_{\Phi}L}=\frac{\hbar}{\lvert\vec p\rvert\,L}\;}
 $$</p>
 <p>The non-quantum limit is $\epsilon\to0$, that is $L\gg\lambda_{\Phi}$: the amplitude varies slowly over many reduced wavelengths, the phase dominates, and the quantum potential is suppressed. <strong>If instead $\epsilon\gg1$, the amplitude varies faster than the phase and the ray picture fails.</strong> That regime is not a limit of the article; it is its domain of invalidity.</p>
 <p>If the amplitude also varies in time, on a coordinate scale $L_{t}$ read as $r'_{t}=ct$, then two gradients compete and the parameter is the larger of two ratios,</p>
@@ -682,7 +682,7 @@ $$</p>
 Q:=-\frac{\hbar^{2}}{2m}\frac{\Delta A_{\mathrm{mhv}}}{A_{\mathrm{mhv}}},
 $$</p>
 <p>which is the corpus's phase equation with the quantum potential added. The identification is not an analogy: same expression, same coefficient, obtained by the same reduction.</p>
-<p>The size of $Q$ against the kinetic term is the parameter squared, and the computation is one line. The mass cancels between $Q$ and the kinetic term, $\hbar^{2}/m$ against $p^{2}/m$, and what is left is a ratio of $\hbar^{2}$ to $p^{2}$, which is $\lambda_{\Phi}^{2}$ by the definition of $\lambda_{\Phi}$ in §1.3:</p>
+<p>The size of $Q$ against the kinetic term is the parameter squared, and the computation is one line. The mass cancels between $Q$ and the kinetic term, $\hbar^{2}/m$ against $\lvert\vec p\rvert^{2}/m$, and what is left is a ratio of $\hbar^{2}$ to $\lvert\vec p\rvert^{2}$, which is $\lambda_{\Phi}^{2}$ by the definition of $\lambda_{\Phi}$ in §1.3:</p>
 <p>$$
 \frac{\left\lvert Q\right\rvert}{\left\lvert\nabla\sigma\right\rvert^{2}/2m}
 =\frac{\hbar^{2}\left\lvert\Delta A_{\mathrm{mhv}}/A_{\mathrm{mhv}}\right\rvert}{\left\lvert\nabla\sigma\right\rvert^{2}}
@@ -694,8 +694,8 @@ $$</p>
 <p>The truncated phase equation drops a term of size $\epsilon^{2}$ times the kinetic scale. To turn that into a phase error, integrate it along a ray of length $L$:</p>
 <p>$$
 \frac{\delta S}{\hbar}=\frac{1}{\hbar}\int\left\lvert Q\right\rvert dt
-=\frac{1}{\hbar}\,\epsilon^{2}\frac{p^{2}}{2m}\frac{L}{v}
-=\epsilon^{2}\frac{p\,L}{2\hbar}
+=\frac{1}{\hbar}\,\epsilon^{2}\frac{\lvert\vec p\rvert^{2}}{2m}\frac{L}{v}
+=\epsilon^{2}\frac{\lvert\vec p\rvert\,L}{2\hbar}
 =\frac{\epsilon^{2}k_{\Phi}L}{2}
 =\frac{\epsilon}{2},
 $$</p>
