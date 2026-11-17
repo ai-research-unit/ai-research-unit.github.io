@@ -129,7 +129,7 @@ and every invertible element has an exponential parametrisation $\tilde{Q} = \ex
 
 **Proof.** Apply the polar form and the logarithm of a nonzero quaternion in each half.
 
-Under this parametrisation the norm-one group is the exponential image of the traceless-with-unit-sign part, and the hyperbolic central factor is the exponential of the central line $\mathbb{R} j$. The partial failure of a single global polar form with a split complex scalar — as opposed to the componentwise form above — is exactly the zero divisor phenomenon.
+Under this parametrisation the norm-one group is the exponential image of the scalar-free-with-unit-sign part, and the hyperbolic central factor is the exponential of the central line $\mathbb{R} j$. The partial failure of a single global polar form with a split complex scalar — as opposed to the componentwise form above — is exactly the zero divisor phenomenon.
 
 ## Comparison with the Biquaternion Case
 

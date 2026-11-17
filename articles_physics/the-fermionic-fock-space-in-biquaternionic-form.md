@@ -191,7 +191,7 @@ The one-mode identity $(-1)^{N_{\mathrm{mode}}}=i\vec u$ is the parents' stateme
 
 **The sign convention.** With $N_{\mathrm{mode}}$ the number operator of a mode, $(-1)^{N_{\mathrm{mode}}}$ is the parent's one-mode parity, multiplication by $i\vec u$ at the direction the mode declares, which is $\frac{2\,\vec u\,\tilde{S}_{\Psi}}{\hbar}$. The parity is thus both a state-space grading and an element of the algebra's informational sector, for one mode and at a declared direction; for the field, the tensor product over modes is not an element of $\mathbb{B}$, and the grading is external, the open item recorded by the companion article *The Spin–Statistics Theorem in Biquaternionic Form*.
 
-## The Inner Product, States and the Trace Pairing
+## The Inner Product, States and the Hermitian Pairing
 
 The Fock space is a Hilbert space under the Hermitian form induced from $S$: the one-particle form extends to $\Lambda S$ by the rule that distinct occupation numbers are orthogonal and the norm of a basis vector is one. The extensions of $a_{\mathrm{fop}}$ and $a_{\mathrm{fop}}^{\dagger}$ to $\Lambda S$ are adjoint with respect to this form, which is the sense in which the Fock construction is $*$-unitary.
 
@@ -230,7 +230,7 @@ Second, the trace reading is the *algebraic* trace on $\mathbb{B}$, which for th
 **Open.**
 
 - **The infinite-mode grading.** For the field the grading is external to $\mathbb{B}$; whether an extension of the algebra carries it is the open question the spin–statistics companion records, and it is open here too.
-- **The trace pairing off the finite algebra.** The Born rule as a scalar-part ratio is a finite-algebra statement; its extension to the field's Fock space is treated by the GNS and KMS companions and is not settled here.
+- **The Hermitian pairing off the finite algebra.** The Born rule as a scalar-part ratio is a finite-algebra statement; its extension to the field's Fock space is treated by the GNS and KMS companions and is not settled here.
 - **The Lorentz content of the field's Fock space.** The tensor tower is written down mode by mode; its decomposition into irreducible massive representations of the full Poincaré group — the usual multi-particle classification — is standard and is not redone here.
 
 ## Companion Articles

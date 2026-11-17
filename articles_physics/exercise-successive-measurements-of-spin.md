@@ -107,7 +107,7 @@ with $\vec u_x = \sin\theta_1\, \vec e_x + \cos\theta_1\, \vec e_z$ and $\vec u_
 
 ### Step 3: The joint probability
 
-The joint probability of the two measurements both yielding spin-up is the product of the two normalised Hermitian forms, each with its trace reading taken last:
+The joint probability of the two measurements both yielding spin-up is the product of the two normalised Hermitian forms, each with its scalar reading taken last:
 
 $$
 p(+,+) = \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} \cdot \frac{\langle\tilde\Pi_{\vec u_y},\tilde\Pi_{\vec u_x}\rangle_{*}}{\langle\tilde\Pi_{\vec u_x},e_t\rangle_{*}}.
@@ -205,7 +205,7 @@ The first factor is the Born rule for the initial measurement; the second factor
 **2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
 
 
-**4. The geometry enters through the algebra.** The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.
+**4. The geometry enters through the algebra.** The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the pairing formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.
 
 **5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduction formula corresponds exactly to $2\,\mathrm{Sc}(P_{\vec u_y}P_{\vec u_x})$ for rank-one projectors. But seeing the same result emerge from the algebra is a useful sanity check on the framework.
 
@@ -215,7 +215,7 @@ The first factor is the Born rule for the initial measurement; the second factor
 |---|---|---|---|
 | Physical process | Single measurement | Time evolution | Successive measurements |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents |
-| Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas |
+| Rule used | Pairing formula | Pairing formula + rotor conjugation | Product of pairing formulas |
 | Result | $\cos^2(\theta/2)$ | $(\frac{\hbar}{2})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ |
 
 These exercises illustrate three fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), and **sequential measurement** (Exercise: Successive Measurements of Spin). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.
@@ -227,7 +227,7 @@ We have solved a third exercise in quantum physics — the joint probability of 
 In the **standard formulation**, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.
 
 
-The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised Hermitian form, read through the trace, and the joint probability is the product of the trace formulas.
+The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised Hermitian form, read through the trace, and the joint probability is the product of the pairing formulas.
 
 ## Summary of Notation
 

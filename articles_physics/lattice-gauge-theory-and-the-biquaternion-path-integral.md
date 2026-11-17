@@ -83,7 +83,7 @@ The elementary gauge-covariant object on the lattice is the **plaquette**, the p
 $$
 \tilde U_{\mu\nu}(n)=\tilde U_\mu(n)\,\tilde U_\nu(n+\vec u_\mu)\,\tilde U_\mu(n+\vec u_\nu)^{-1}\,\tilde U_\nu(n)^{-1}.
 $$
-It is a unit quaternion, its trace is gauge invariant, and it is the lattice representative of the curvature. Expanding the links at small $a$ and collecting the leading term,
+It is a unit quaternion, twice its scalar part is gauge invariant, and it is the lattice representative of the curvature. Expanding the links at small $a$ and collecting the leading term,
 $$
 \boxed{\;\tilde U_{\mu\nu}(n)=\exp\!\big(ia^2\kappa\,F_{\mu\nu}(n)+O(a^3)\big)\;},
 $$
@@ -195,7 +195,7 @@ $$
 $$
 an identity that was checked numerically from the series of the modified Bessel functions, and whose exact one-plaquette form is $I_0(\beta)/I_1(\beta)-2/\beta$, equal to $I_2(\beta)/I_1(\beta)$ by the Bessel recurrence. Both statements agree at leading order: for the framework's $SU(2)$ the plaquette average begins at $\beta/4$, so that the string tension begins at $\sigma a^2=-\ln(\beta/4)+O(1)$.
 
-The area law is the statement of **confinement** in the lattice formulation: the potential between two static fundamental charges grows linearly with their separation, $V(r)\sim\sigma r$, so the charges are never separated to infinity at finite energy cost. The result is a strong-coupling result, established by expansion, and it is stable as $\beta$ increases until the deconfinement transition; the existence of the transition and the continuum scaling of $\sigma$ are the standard lattice results, cited below. What the framework supplies here is not the analysis but the carrier: the lattice variables are unit quaternions, the plaquette is their product around a square, the trace is $2\mathrm{Re}(\tilde U_0)$, and the group is the compact factor of the algebra. The confinement result is a statement about that group.
+The area law is the statement of **confinement** in the lattice formulation: the potential between two static fundamental charges grows linearly with their separation, $V(r)\sim\sigma r$, so the charges are never separated to infinity at finite energy cost. The result is a strong-coupling result, established by expansion, and it is stable as $\beta$ increases until the deconfinement transition; the existence of the transition and the continuum scaling of $\sigma$ are the standard lattice results, cited below. What the framework supplies here is not the analysis but the carrier: the lattice variables are unit quaternions, the plaquette is their product around a square, twice its scalar part is $2\mathrm{Re}(\tilde U_0)$, and the group is the compact factor of the algebra. The confinement result is a statement about that group.
 
 ### The Reading of Confinement
 

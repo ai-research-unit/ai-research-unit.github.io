@@ -255,7 +255,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 ## Open Questions
 
-1. **Does the framework select the normalization of the renormalization scale?** The framework's biquaternion norm and trace form define a natural pairing, and the companion articles note that a preferred normalization of the biquaternion norm is not fixed. Whether that pairing selects a preferred $\mu$, or a preferred relation between $\mu$ and the vacuum scale, is not shown here.
+1. **Does the framework select the normalization of the renormalization scale?** The framework's biquaternion norm and plain form define a natural pairing, and the companion articles note that a preferred normalization of the biquaternion norm is not fixed. Whether that pairing selects a preferred $\mu$, or a preferred relation between $\mu$ and the vacuum scale, is not shown here.
 
 2. **Is the one-loop coefficient $B$ observable?** The coefficient is fixed by the field content once the charges and the quartic coupling are fixed, but the charges and the quartic coupling are parameters. Whether the framework's trace structure constrains their ratio — and hence the size of the radiative correction — is open.
 

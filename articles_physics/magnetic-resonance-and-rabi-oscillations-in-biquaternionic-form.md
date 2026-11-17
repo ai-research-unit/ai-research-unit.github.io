@@ -8,7 +8,7 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
 
 1. **The drive is a pair of Hermitian elements with time-dependent real coefficients.** The transverse coupling is built from $\tilde{S}_{\Psi,1} =\frac{\hbar}{2}i\vec e_x$ and $\tilde{S}_{\Psi,2} =\frac{\hbar}{2}i\vec e_y$, both in $\mathbb{B}_{\Psi}$; the total Hamiltonian remains in $\mathbb{B}_{\Psi}$ for all times. No element of the material sector enters the spin dynamics.
 2. **The rotating frame is a rotor.** The transformation that removes the Larmor precession is conjugation by the unit real quaternion $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)\in\mathbb{B}_{H}$, the same one-parameter rotor that the spin-precession exercise uses. The frame is not an approximation; it is an exact change of description.
-3. **The effective Hamiltonian is static and traceless**,
+3. **The effective Hamiltonian is static and scalar-free**,
    $$
    \tilde{H}_{\Psi,R} = -\frac{\hbar}{2}\Big[(\omega_0-\omega)\,i\vec e_z + \omega_1\,i\vec e_x\Big] \in  \mathbb{B}_{\Psi},
    $$

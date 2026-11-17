@@ -57,7 +57,7 @@
 
 **An interpretation is a sentence, not a metaphor.** It names a physical object, process or quantity and identifies it with the mathematical structure: *the norm is the interval*, *the minimal Hermitian idempotent is the pure state*, *the two-sided operator is the change of frame*. Several interpretations of one result are allowed, and they are distinguished by the sector, the regime or the question they answer. The label is the reader's protection: it says which reading is meant at that point.
 
-**Every interpretation carries its boundary.** The boundary says what it does not claim: which object it does not identify, which regime it does not cover, which number it does not predict. The zero-divisor cone is the light cone on the material sector; on the informational sector its trace-one slice is the boundary of the state space, and that boundary is the set of pure states. One set, two readings, two boundaries — and the article says which one it is using.
+**Every interpretation carries its boundary.** The boundary says what it does not claim: which object it does not identify, which regime it does not cover, which number it does not predict. The zero-divisor cone is the light cone on the material sector; on the informational sector its unit-weight slice is the boundary of the state space, and that boundary is the set of pure states. One set, two readings, two boundaries — and the article says which one it is using.
 
 **An interpretation does not derive the physics from the algebra.** It identifies which physical object the algebraic structure is. The dynamics belongs to the other physics categories of the corpus.
 

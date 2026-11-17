@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Four statements are needed before any physics of this block can be written, and they are four because they count dimensions differently. The biquaternion algebra is a complex algebra isomorphic to the $2\times2$ complex matrices. Its traceless part, read under the commutator, is a real Lie algebra of dimension six, and that algebra is the Lorentz algebra. The whole algebra under the commutator is a larger real Lie algebra, and it is not a Lorentz algebra. The complexification of the Lorentz algebra is a six-dimensional complex algebra that splits into two copies of the three-dimensional complex algebra of traceless matrices.
+Four statements are needed before any physics of this block can be written, and they are four because they count dimensions differently. The biquaternion algebra is a complex algebra isomorphic to the $2\times2$ complex matrices. Its scalar-free part, read under the commutator, is a real Lie algebra of dimension six, and that algebra is the Lorentz algebra. The whole algebra under the commutator is a larger real Lie algebra, and it is not a Lorentz algebra. The complexification of the Lorentz algebra is a six-dimensional complex algebra that splits into two copies of the three-dimensional complex algebra of traceless matrices.
 
 These are not four ways of saying one thing. They are four different objects with four different dimensions, and every error in this neighbourhood comes from running them into a single chain. This article keeps them apart, gives the dimension of each, and states which convention the block uses where a convention has to be chosen.
 
@@ -28,7 +28,7 @@ On that one vector space three structures are defined, and only the first is an 
 |---|---|---|
 | associative algebra | the biquaternion product $\tilde Q\tilde P$ | $\mathbb{B}$ itself |
 | Lie algebra | the commutator $[\tilde Q,\tilde P]=\tilde Q\tilde P-\tilde P\tilde Q$ on all of $\mathbb{B}$ | $\mathfrak{gl}(2,\mathbb{C})$ read as a real Lie algebra |
-| Lie algebra | the same commutator restricted to the traceless part | $\mathfrak{so}(1,3)$ |
+| Lie algebra | the same commutator restricted to the scalar-free part | $\mathfrak{so}(1,3)$ |
 
 The word *algebra* in this block therefore always needs its adjective. The associative algebra is where the rotors live. The two Lie algebras are where the generators live, and only the second of them is the Lorentz algebra.
 
@@ -240,7 +240,7 @@ The four statements, with their dimensions, in the order in which a reader needs
 | statement | the object | dimension |
 |---|---|---|
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | associative complex algebra | $\dim_{\mathbb{C}}=4$, $\dim_{\mathbb{R}}=8$ |
-| $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(1,3)$ | real Lie algebra, traceless part under $[-,-]$ | $\dim_{\mathbb{R}}=6$ |
+| $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(1,3)$ | real Lie algebra, scalar-free part under $[-,-]$ | $\dim_{\mathbb{R}}=6$ |
 | $\mathbb{B}$ under $[-,-]\cong\mathfrak{gl}(2,\mathbb{C})$ | real Lie algebra, whole algebra | $\dim_{\mathbb{R}}=8$, centre of dimension $2$ |
 | $\mathfrak{so}(1,3)_{\mathbb{C}}\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$ | complex Lie algebra | $\dim_{\mathbb{C}}=6$ |
 
@@ -253,7 +253,7 @@ The determinant of the image is the algebra's complex quadratic form and not the
 | $\mathbb{B}$ | the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\to M_2(\mathbb{C})$ |
 | $N(\tilde Q)$ | the biquaternion norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
-| $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ | the traceless part as a real Lie algebra, the Lorentz algebra |
+| $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ | the scalar-free part as a real Lie algebra, the Lorentz algebra |
 | $\mathfrak{gl}(2,\mathbb{C})$ | the whole algebra under the commutator |
 | $J_\eta=\tfrac12\vec e_\eta$ | the rotation generators, anti-Hermitian |
 | $K_\eta=\tfrac12 i\vec e_\eta$ | the boost generators, Hermitian |

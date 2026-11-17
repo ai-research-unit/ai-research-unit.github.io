@@ -199,7 +199,7 @@ j^R_\mu = \tilde U^{*}\partial/\partial R_{1,\mu}\,\tilde U ,
 j^L_\mu = \partial/\partial R_{1,\mu}\,\tilde U\,\tilde U^{*} .
 $$
 
-Each is a one-form valued in the Lie algebra $\mathrm{SU}(2)$, because differentiating $\tilde Q^{*}\tilde Q = e_t$ gives $\overline{\partial/\partial R_{1,\mu}\,\tilde Q}\,\tilde Q + \tilde Q^{*}\partial/\partial R_{1,\mu}\,\tilde Q=0$, so $j^R_\mu$ is anti-Hermitian and traceless. The Lagrangian is built from $j^R_\mu$,
+Each is a one-form valued in the Lie algebra $\mathrm{SU}(2)$, because differentiating $\tilde Q^{*}\tilde Q = e_t$ gives $\overline{\partial/\partial R_{1,\mu}\,\tilde Q}\,\tilde Q + \tilde Q^{*}\partial/\partial R_{1,\mu}\,\tilde Q=0$, so $j^R_\mu$ is anti-Hermitian and scalar-free. The Lagrangian is built from $j^R_\mu$,
 
 $$
 \mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{j^R_\mu}\,j^R_\mu\right),
@@ -284,7 +284,7 @@ where $\Lambda$ is the scale of the sector that was integrated out — in the fr
 
 ## Open Questions
 
-1. **Does the framework fix the normalisation of $f$?** The decay constant is the order parameter in units of the kinetic term; whether the framework's biquaternion norm or trace form fixes a preferred relation between $f$ and the vacuum value $v_0$, beyond the linear-model matching $f = \sqrt2\,v_0$, is not shown.
+1. **Does the framework fix the normalisation of $f$?** The decay constant is the order parameter in units of the kinetic term; whether the framework's biquaternion norm or plain form fixes a preferred relation between $f$ and the vacuum value $v_0$, beyond the linear-model matching $f = \sqrt2\,v_0$, is not shown.
 
 2. **Is the unit quaternion the only non-abelian target available?** The framework's compact group is $SU(2)$; whether higher-rank targets can be built inside $\mathbb{B}$ or one of its modules — and hence whether an $SU(3)$ flavour sigma model is available — is not settled. The Standard Model agenda's flavour discussion bears on this.
 

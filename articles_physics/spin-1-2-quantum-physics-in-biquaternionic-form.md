@@ -13,7 +13,7 @@ The consequence is a **structural identification**:
 
 This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
-The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{B}_{\Psi}$ with the observables is given, and the idempotents with the states. Then the plain form is stated as the Born rule, with the trace formula as its $2\times2$ reading. Then the relation to the four-vector space $\mathbb{B}_{\Phi}$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
+The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{B}_{\Psi}$ with the observables is given, and the idempotents with the states. Then the plain form is stated as the Born rule, with the pairing formula as its $2\times2$ reading. Then the relation to the four-vector space $\mathbb{B}_{\Phi}$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
 
 The conventions are those of the companion articles: the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the four fixed-point subspaces are $\mathbb{C}_\mathbb{B}, \mathbb{H}_\mathbb{B}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$.
 
@@ -149,7 +149,7 @@ The identification of $\mathbb{B}_{\Psi}$ with the observables is direct.
 
 **Basis.** The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{B}_{\Psi}$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
 
-**The identity and the traceless part.** The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z)$ maps to the traceless part $h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
+**The identity and the traceless part.** The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z)$ maps to the scalar-free part $h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
 
 ## The Idempotents as Pure States
 

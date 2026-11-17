@@ -36,7 +36,7 @@ The companion articles supply the pieces:
 - Companion article *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner angle, its momentum dependence, and its holonomy.
 - Companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *Quantum Physics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its trace reading, and the Hermitian sector.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its scalar reading, and the Hermitian sector.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little group and the Casimir invariants.
 
 ## The Spin Entropy of a State
@@ -136,7 +136,7 @@ $$
 N\!\left(\frac{\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}}{2\,\mathrm{Sc}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})}\right)
 = \frac{\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}{2\,\mathrm{Sc}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})^2} .
 $$
-For the maximally mixed state the trace is $\cosh\theta_{\mathrm{rpd}}$, and the normalized element has
+For the maximally mixed state twice the scalar part is $\cosh\theta_{\mathrm{rpd}}$, and the normalized element has
 $$
 N = \frac{1/4}{\cosh^2\theta_{\mathrm{rpd}}}, \qquad
 |\vec r| = \sqrt{1-4N} = \tanh\theta_{\mathrm{rpd}} ,

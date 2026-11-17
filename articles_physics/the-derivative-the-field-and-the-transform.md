@@ -334,7 +334,7 @@ $$
 \mathrm{U}(2)=S^{3}\cdot\mathrm{U}(1)\cong\bigl(SU(2)\times U(1)\bigr)/\{\pm(1,1)\}.
 $$
 
-**The Lie algebra.** The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$, with radical the centre $\mathbb{C}e_t$ and signature $(3,3)$ on the trace-free part: negative on the compact subalgebra and positive on $i$ times it.
+**The Lie algebra.** The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$, with radical the centre $\mathbb{C}e_t$ and signature $(3,3)$ on the scalar-free part: negative on the compact subalgebra and positive on $i$ times it.
 
 **The failure of surjectivity.** The exponential is surjective onto the compact $S^{3}$ and not surjective onto $\mathbb{B}^{\times}_1$. The obstruction is a non-semi-simple element with the repeated eigenvalue $-1$, the same obstruction as in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 

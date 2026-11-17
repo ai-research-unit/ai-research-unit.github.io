@@ -178,7 +178,7 @@ A bivector is self-dual when $\star F=iF$ and anti-self-dual when $\star F=-iF$.
 
 ### The Eight-Dimensional Adjoint
 
-The adjoint action of the algebra on itself is eight-dimensional over $\mathbb{R}$. Its complexification splits as the two central directions plus the traceless part, and the traceless part splits into the two triples. So
+The adjoint action of the algebra on itself is eight-dimensional over $\mathbb{R}$. Its complexification splits as the two central directions plus the scalar-free part, and the scalar-free part splits into the two triples. So
 
 $$
 \mathbb{B}\ \text{under }[-,-]\ \cong\ (0,0)\oplus(0,0)\oplus(1,0)\oplus(0,1),
@@ -198,7 +198,7 @@ The signs of the two Casimirs are a convention of the generators, and *The Two C
 
 ### Why the Adjoint Is Not the Vector
 
-A frequent error is to identify the adjoint with the four-vector $(\tfrac12,\tfrac12)$ because both have "four" or "six" in them. The adjoint is six-dimensional and traceless, and it is $(1,0)\oplus(0,1)$; the four-vector is four-dimensional and is $(\tfrac12,\tfrac12)$, and it is the module $\mathbb{B}_\Phi$ under the congruence. The two representations are different, and the numbers $1+1$ and $\tfrac12+\tfrac12$ are what tell them apart.
+A frequent error is to identify the adjoint with the four-vector $(\tfrac12,\tfrac12)$ because both have "four" or "six" in them. The adjoint is six-dimensional and scalar-free, and it is $(1,0)\oplus(0,1)$; the four-vector is four-dimensional and is $(\tfrac12,\tfrac12)$, and it is the module $\mathbb{B}_\Phi$ under the congruence. The two representations are different, and the numbers $1+1$ and $\tfrac12+\tfrac12$ are what tell them apart.
 
 ## Why the Real Form Decides Unitarity
 

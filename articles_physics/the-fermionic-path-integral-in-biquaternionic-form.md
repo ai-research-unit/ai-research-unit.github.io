@@ -78,7 +78,7 @@ in which the gradient acts from the left, the mass acts from the right through $
 
 ### The Algebra Bilinear
 
-With $\mathrm{Sc}$ the trace pairing and $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic form of the conventions, the action is the integral of the density above,
+With $\mathrm{Sc}$ the scalar pairing and $\langle\cdot,\cdot\rangle_{\natural}$ the quaternionic form of the conventions, the action is the integral of the density above,
 
 $$
 S=\int \mathrm{Sc}\big(\bar{\tilde{Ξ}}_{L}\,\tilde\nabla_\Phi\tilde{Ξ}_{R}+\bar{\tilde{Ξ}}_{R}\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}\big)-m\!\!\int\mathrm{Sc}\big(\bar{\tilde{Ξ}}_{L}\tilde{Ξ}_{L}+\bar{\tilde{Ξ}}_{R}\tilde{Ξ}_{R}\big),

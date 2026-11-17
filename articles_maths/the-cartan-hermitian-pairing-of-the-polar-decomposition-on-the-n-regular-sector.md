@@ -145,7 +145,7 @@ $$
 \det\mathsf{M}_2(\tilde Q_H) = \langle\tilde Q_H\rangle_{\natural} = r^{2}\,\langle\tilde U_{\mathrm b}\rangle_{\natural} = r^{2} > 0 ,
 $$
 
-which is the squared scale and is positive. The scalar part of $\tilde Q_H$ carries the scale, and the traceless part carries the rapidity and the axis of the boost.
+which is the squared scale and is positive. The scalar part of $\tilde Q_H$ carries the scale, and the scalar-free part carries the rapidity and the axis of the boost.
 
 ### The Scale and the Boost
 

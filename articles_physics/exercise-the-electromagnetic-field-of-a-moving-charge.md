@@ -393,7 +393,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde U_{\Psi,\mathrm b} = \cosh\frac{\theta_{\mathrm{rpd},b}}{2}+i\sinh\frac{\theta_{\mathrm{rpd},b}}{2}\vec u$ | Boost rotor; carries lab to the frame moving with $+\vec v_b$ |
 | $\tilde{F}_2 = \tilde U_{\Psi,\mathrm b}^{\natural}\tilde{F}\tilde U_{\Psi,\mathrm b}$ | Boost transformation of the field (similarity, not conjugation) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading
 
@@ -401,7 +401,7 @@ The further reading of this exercise is the parent and companion articles of thi
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the null retarded separation sits.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace, the conjugation action, and the trace formula.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace, the conjugation action, and the pairing formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the gradient, the field strength, the potential and source, and the retarded solution.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the biquaternion norm, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
 - [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.

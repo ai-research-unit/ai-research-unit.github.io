@@ -159,7 +159,7 @@ and the Lie algebra of the Lorentz group uses both sectors. Nothing in the secto
 
 **This is the first place where the sector's physics is thinner than it looks.** A four-vector is a generator of spatial rotations, and the temporal component is a label that rotations do not touch. The Lorentz boosts, which are what mix the temporal component into the spatial ones, are not in the sector's bracket at all; they are the action of the sector's Hermitian complement. The entry returns to this in §*The Lorentz Action*.
 
-**The sector sits in the six-subspace decomposition as one of the two Hermitian halves.** The other half is $\mathbb{B}_{\Psi}$, the fixed space of ${}^{*}$ itself, with basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The two halves intersect in $\{0\}$ and span the algebra, and the central imaginary exchanges them. The remaining four subspaces of the six-subspace list are the centre, the quaternion layer, the vector subspace and the trace-free part; the entry uses only the two halves and the two blocks inside $\mathbb{B}_{\Phi}$.
+**The sector sits in the six-subspace decomposition as one of the two Hermitian halves.** The other half is $\mathbb{B}_{\Psi}$, the fixed space of ${}^{*}$ itself, with basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$. The two halves intersect in $\{0\}$ and span the algebra, and the central imaginary exchanges them. The remaining four subspaces of the six-subspace list are the centre, the quaternion layer, the vector subspace and the scalar-free part; the entry uses only the two halves and the two blocks inside $\mathbb{B}_{\Phi}$.
 
 ## The Interval
 

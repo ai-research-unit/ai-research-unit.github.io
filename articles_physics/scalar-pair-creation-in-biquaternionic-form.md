@@ -250,7 +250,7 @@ The standard realizations are worth naming for orientation. Cosmological particl
 - **The intrinsic background.** The background is taken to be a classical central-valued field. Whether the framework supplies a dynamical background — a scalar condensate with its own equation of motion — and whether the back-reaction on the metric or on the field is expressible in the algebra, is not settled.
 - **The intrinsic Bogoliubov theory.** Whether the Bogoliubov group has a native realization in the framework's algebraic structures, beyond the standard Fock-space squeezing, is the subject of the companion article *Bogoliubov Transformations in Biquaternionic Form*; the scalar sector by itself offers no native ladder to realize it.
 - **The choice of vacuum.** In a time-dependent background the in- and out-vacua differ, and the framework inherits the standard ambiguity of the vacuum in curved or time-dependent settings. Whether the framework's complex structure selects a preferred vacuum is open.
-- **The back-reaction and the energy.** The energy density of the created pairs, and its back-reaction on the background, are standard questions; whether the trace formula of the informational sector gives them a finite-dimensional interpretation is not shown.
+- **The back-reaction and the energy.** The energy density of the created pairs, and its back-reaction on the background, are standard questions; whether the pairing formula of the informational sector gives them a finite-dimensional interpretation is not shown.
 - **Empirical content.** Whether scalar pair creation in the framework makes a prediction distinguishing it from standard scalar field theory in the same background is open.
 
 ## Summary

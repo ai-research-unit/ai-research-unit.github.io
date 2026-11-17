@@ -206,7 +206,7 @@ The eigenvalues are $e^{\pm i\pi/2}=\pm i$, purely imaginary. So the half-turn i
 
 Since $\sin b=\sin\tfrac{\pi}{2}=1$, a half-turn commutes with a boost only when the axes are collinear. So the half-turn is **not** an exception to the commutation criterion, and a reader who expects it to be should check the algebra rather than the geometry. What commutes with everything is the rotation by $2\pi$, which is $-e_t$ and central.
 
-This is the one place where the menu's "exceptional case where a rotation is by $\pi$" needs a convention stated. In the half-angle convention of this corpus the central rotation is by $2\pi$; the rotation by $\pi$ is exceptional for a different and more useful reason, namely that its rotor is traceless and a pure real quaternion. Both statements are true; they are statements about different elements.
+This is the one place where the menu's "exceptional case where a rotation is by $\pi$" needs a convention stated. In the half-angle convention of this corpus the central rotation is by $2\pi$; the rotation by $\pi$ is exceptional for a different and more useful reason, namely that its rotor is scalar-free and a pure real quaternion. Both statements are true; they are statements about different elements.
 
 ### The Reading
 
@@ -214,7 +214,7 @@ The half-turn's rotor being a generator means that a half-turn can be written as
 
 ## Summary
 
-A boost and a rotation commute exactly when their axes are collinear, or when one factor is the identity. The exact commutator is $2i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The elements that admit such a word are the normal elements, $\tilde U\tilde U^{*}=\tilde U^{*}\tilde U$, which are exactly the elements that a unitary diagonalises; they form a four-dimensional manifold, not a subgroup, fibred over the axis line. On a normal element the spectrum is $\{e^{(\theta_{\mathrm{rpd}}\pm i\theta_{\mathrm{axr}})/2}\}$ and carries both parameters, losing only the axis. The half-turn is exceptional because its rotor is a pure real quaternion, traceless, with spectrum $\pm i$; it is not an exception to the commutation criterion, and the element that commutes with everything is the rotation by $2\pi$.
+A boost and a rotation commute exactly when their axes are collinear, or when one factor is the identity. The exact commutator is $2i\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta_{\mathrm{axr}}}{2}(\vec u_{\mathrm b}\times\vec u_{\mathrm r})$. The elements that admit such a word are the normal elements, $\tilde U\tilde U^{*}=\tilde U^{*}\tilde U$, which are exactly the elements that a unitary diagonalises; they form a four-dimensional manifold, not a subgroup, fibred over the axis line. On a normal element the spectrum is $\{e^{(\theta_{\mathrm{rpd}}\pm i\theta_{\mathrm{axr}})/2}\}$ and carries both parameters, losing only the axis. The half-turn is exceptional because its rotor is a pure real quaternion, scalar-free, with spectrum $\pm i$; it is not an exception to the commutation criterion, and the element that commutes with everything is the rotation by $2\pi$.
 
 ## Summary of Notation
 

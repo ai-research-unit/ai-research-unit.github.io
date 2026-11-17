@@ -72,7 +72,7 @@ Each momentum has $2j+1$ states, and each state is labelled by the eigenvalue of
 |---|---|---|
 | $0$ | $1$ | the centre $Z=\mathbb{C}e_t$ |
 | $\tfrac12$ | $2$ | the Peirce planes $S_\pm$ |
-| $1$ | $3$ | the traceless part $V$ |
+| $1$ | $3$ | the scalar-free part $V$ |
 
 The table is the carrier list of *The Determination of the Possible Spins in Biquaternionic Form*: the algebra's own modules realise the first three spins of the little group and no more, because the regular module is four-dimensional.
 

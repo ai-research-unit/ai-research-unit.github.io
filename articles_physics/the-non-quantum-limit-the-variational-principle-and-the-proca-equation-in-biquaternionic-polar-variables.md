@@ -40,7 +40,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 **The frame's terms.** The boost's connection enters the kinetic term through the covariant derivative, so the action is the free scalar action of the amplitude plus a sigma-model term for the frame. **The parent's two boxed equations are exactly the two variations of this display.**
 
-**The constraint.** The Lorenz condition is the trace of the equation, $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which in the chart is one real equation among four. **It is a constraint on the frame and on the amplitude together**, and it is the chart's version of the transversality of a massive vector field.
+**The constraint.** The Lorenz condition is the scalar part of the equation, $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which in the chart is one real equation among four. **It is a constraint on the frame and on the amplitude together**, and it is the chart's version of the transversality of a massive vector field.
 
 ## The Truncation and Its Error
 

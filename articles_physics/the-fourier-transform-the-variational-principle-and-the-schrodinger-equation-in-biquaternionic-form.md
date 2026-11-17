@@ -128,9 +128,9 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **What the identity is not.** It is not a proof that the equation is variational for a complex root. For a root that is neither Hermitian nor anti-Hermitian the kinetic term's scalar part has an imaginary piece, the boundary term does not vanish with a real variation, and the argument fails at the first line.
 
-**The vanishing of the bracket is the equation.** Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. **The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form**: it is a trace pairing, and it needs no positivity.
+**The vanishing of the bracket is the equation.** Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. **The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form**: it is a Hermitian pairing, and it needs no positivity.
 
-**Why the trace pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
+**Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
 ## Parseval Is the Noether Charge's Transform
 

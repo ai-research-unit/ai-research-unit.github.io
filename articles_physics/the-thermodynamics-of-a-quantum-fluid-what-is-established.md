@@ -114,7 +114,7 @@ $$
 
 **The category holds one modular-Hamiltonian article, and a second remains in *Biquaternion Quantum Fields*.**
 
-[The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) is the category's article: the generator of the modular flow, its verification in the algebra, the trace formula and the Gibbs form. **The second, [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), sits in the neighbouring section and has not been merged into this one.** The ledger states the fact and does not move the article: **moving an entry is a menu decision and this article does not make menu decisions.**
+[The Modular Hamiltonian in Biquaternionic Form](the-modular-hamiltonian-in-biquaternionic-form.html) is the category's article: the generator of the modular flow, its verification in the algebra, the pairing formula and the Gibbs form. **The second, [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), sits in the neighbouring section and has not been merged into this one.** The ledger states the fact and does not move the article: **moving an entry is a menu decision and this article does not make menu decisions.**
 
 **Why the split matters for the ledger.** The first law of entanglement is the thermal statement closest to the fluid layer's Gibbs–Duhem relation, and a reader who follows the category's chain from the modular Hamiltonian to the equation of state will not find it. **The gap is a shelf arrangement and not a mathematical one**, and the ledger records it as the category's one structural debt.
 
@@ -138,7 +138,7 @@ $$
 | 8 | The KMS Condition and the Biquaternion Framework | framework | the condition on the material sector |
 | 9 | The Local Thermal Structure: k_B as the Scale of Imaginary Time | framework | a pointwise period, not a pointwise metric |
 | 10 | Thermal Time and the Modular Flow in the Biquaternion Framework | framework | the modular flow and the thermal time hypothesis |
-| 11 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde K$ generates the flow; the trace is a scalar part |
+| 11 | The Modular Hamiltonian in Biquaternionic Form | framework | $\tilde K$ generates the flow; the weight is twice the scalar part |
 | 12 | The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework | framework | the construction in Hermitian data |
 | 13 | Curved-Spacetime KMS and Modular Flow | **transcription** | $\beta=\beta(x)$ on a Killing horizon |
 | 14 | Covariant Local Equilibrium and Tolman Temperature | **transcription** | the rigidity condition; Tolman quoted |

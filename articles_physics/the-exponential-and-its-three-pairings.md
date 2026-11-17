@@ -136,7 +136,7 @@ $$
 L^{2}=R\omega(a-ib)\,L ,
 $$
 
-so $L$ is $R\omega(a-ib)$ times a minimal idempotent when $a-ib\neq0$, and a nilpotent when $a=b=0$. The second case is the rotor that anticommutes with the boost axis, and the trace is the whole of the test. **Verified:** both identities hold exactly on four rotor orientations, and at $\tilde u_{\mathrm r}=\vec e_x$ with $\vec u_{\mathrm b}=\vec e_z$ the limit is $\tfrac{1}{2}(\vec e_x+i\vec e_y)$ with $L^{2}=0$ identically.
+so $L$ is $R\omega(a-ib)$ times a minimal idempotent when $a-ib\neq0$, and a nilpotent when $a=b=0$. The second case is the rotor that anticommutes with the boost axis, and twice the scalar part is the whole of the test. **Verified:** both identities hold exactly on four rotor orientations, and at $\tilde u_{\mathrm r}=\vec e_x$ with $\vec u_{\mathrm b}=\vec e_z$ the limit is $\tfrac{1}{2}(\vec e_x+i\vec e_y)$ with $L^{2}=0$ identically.
 
 **The two strata are therefore two boundary values of one family.** The same divergence, at the same rate, along the same path, reaches an idempotent or a nilpotent according to the relative orientation of the rotor and the boost axis. A statement about a boundary point of the word is a statement about a family and about that orientation, and not about the point alone.
 

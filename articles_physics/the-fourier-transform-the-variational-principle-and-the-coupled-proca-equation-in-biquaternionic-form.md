@@ -12,7 +12,7 @@
 
 **The fourth finding is that the primary constraint survives the coupling as an absent power.** The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0\eta}$ has none.
 
-**The fifth finding is the asymmetry between the two conserved quantities.** The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco}}$ and the mass is not in the gradient; the energy carries $k_m^{2}$, because the trace is the mass term. **The charge is the phase's and the energy is the scale's**, and the article states the two as one sentence about which term of the action each one comes from.
+**The fifth finding is the asymmetry between the two conserved quantities.** The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco}}$ and the mass is not in the gradient; the energy carries $k_m^{2}$, because twice the scalar part is the mass term. **The charge is the phase's and the energy is the scale's**, and the article states the two as one sentence about which term of the action each one comes from.
 
 **The denial is stated plainly.** No sector is exchanged. The action is real, the form at a mode is a complex number, and the phase is a coordinate. **There is no new equation and no new current**; the action, the equation and both currents are the parent's.
 

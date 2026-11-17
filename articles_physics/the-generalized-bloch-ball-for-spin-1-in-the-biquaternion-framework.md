@@ -46,7 +46,7 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 
 ### The operators
 
-The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the traceless part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
+The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the scalar-free part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
 \mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=i\,\hbar\,\epsilon_{\eta lm}\,ie_{m},
@@ -262,7 +262,7 @@ For the qubit the two coincide, because the Bloch ball is at once the state spac
 
 ## What the Algebra Supplies and What It Does Not
 
-**Supplies.** The spin-$1$ operators, as the adjoint action on the traceless part of $\mathbb{B}$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the idempotent $\tilde\Pi_{\mathrm{sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary trace formula.
+**Supplies.** The spin-$1$ operators, as the adjoint action on the traceless part of $\mathbb{B}$ and equivalently as the symmetric combination of two fundamental factors. The sector in which the states live, namely the symmetric face of the two-qubit state space, selected by the idempotent $\tilde\Pi_{\mathrm{sym}}$ of the two-spin problem. The coherent states, as the orbit of a fundamental idempotent, as symmetrised products of two fundamental idempotents, and as the Veronese image of the Bloch sphere. The Born rule, which reduces on the sector to the ordinary pairing formula.
 
 **Does not supply.** A cone whose trace-one slice is the state space. The qubit state space was the slice of the future cone of the biquaternion norm on $\mathbb{B}_{\Psi}$ by the hyperplane $\mathrm{Sc}=\tfrac12$; the spin-$1$ state space is eight-dimensional and the positive cone of $\mathbb{B}_{\Psi}$ is four-dimensional, so no such description is available. Nor is there a single quadratic form whose positivity region is the state space: the determinant of a $3\times3$ matrix is a cubic, and the boundary of the state space is the union of a cubic hypersurface with part of the unit sphere. The qubit's coincidence of positivity, causality, and a quadratic biquaternion norm has no spin-$1$ analogue.
 

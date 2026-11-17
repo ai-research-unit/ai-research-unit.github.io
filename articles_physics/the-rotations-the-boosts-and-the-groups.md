@@ -69,7 +69,7 @@ The six articles fall into two pairs and two singletons. The first pair is the g
 
 **The automorphisms.** $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$, of complex dimension three, all of it inner. $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})\cong\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\rtimes\mathbb{Z}/2$, of real dimension six and two components, the second the coset of complex conjugation, which is conjugate-linear and not inner.
 
-**The derivations.** $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{B}_{C}$, the traceless part, of complex dimension three; $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})=\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, because the centre admits no nonzero real derivation. The three derivations $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ satisfy $[D_1,D_2]=D_3$ and the cyclic relations, and $\exp(t\,\mathrm{ad}_{\tilde Q})=\mathrm{Ad}_{\exp(t\tilde Q)}$.
+**The derivations.** $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{B}_{C}$, the scalar-free part, of complex dimension three; $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})=\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, because the centre admits no nonzero real derivation. The three derivations $D_k=\tfrac12\mathrm{ad}_{\vec e_k}$ satisfy $[D_1,D_2]=D_3$ and the cyclic relations, and $\exp(t\,\mathrm{ad}_{\tilde Q})=\mathrm{Ad}_{\exp(t\tilde Q)}$.
 
 **The versors.** $\mathrm{Cl}_{1,3}=\mathbb{B}\oplus\mathbb{B}\zeta$ with the algebra as the even slot; the parity of the length of a versor is the parity of its reflection count; $\mathrm{Pin}(1,3)$ is not contained in $\mathbb{B}$ and $\mathrm{Spin}(1,3)=\mathbb{B}^{\times}_1$ is its whole intersection with the algebra. The volume element is the central imaginary up to sign, acts as $-\mathrm{id}$ on the Lorentzian space through the signed conjugation, and as $+\mathrm{id}$ through the two-sided operator.
 
@@ -225,7 +225,7 @@ $$
 
 with $L_{\tilde Q\tilde Q'}=L_{\tilde Q}L_{\tilde Q'}$ and $R_{\tilde Q\tilde Q'}=R_{\tilde Q'}R_{\tilde Q}$; the left one is a homomorphism, the right one an anti-homomorphism, and each is an eight-dimensional real space of operators.
 
-**A one-sided action preserves the form and not the algebra.** For $\tilde Q$ $*$-unitary, $\langle\tilde Q\tilde X,\tilde Q\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$, verified to $4.4\times10^{-15}$ over one hundred random pairs, because $\tilde Q^{*}\tilde Q=e_t$ and the Euclidean form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$ is a trace pairing. The same map fails multiplicativity on the same sample, with a defect of $18.7$ in Euclidean norm, and it does not preserve the Hermitian sectors: the left multiple of an Hermitian element has an Hermitian defect of $5.8$. So a one-sided action carries the element and neither the multiplication nor the involution: it acts on the algebra as a module and not as an algebra.
+**A one-sided action preserves the form and not the algebra.** For $\tilde Q$ $*$-unitary, $\langle\tilde Q\tilde X,\tilde Q\tilde Y\rangle_{*}=\langle\tilde X,\tilde Y\rangle_{*}$, verified to $4.4\times10^{-15}$ over one hundred random pairs, because $\tilde Q^{*}\tilde Q=e_t$ and the Euclidean form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$ is a Hermitian pairing. The same map fails multiplicativity on the same sample, with a defect of $18.7$ in Euclidean norm, and it does not preserve the Hermitian sectors: the left multiple of an Hermitian element has an Hermitian defect of $5.8$. So a one-sided action carries the element and neither the multiplication nor the involution: it acts on the algebra as a module and not as an algebra.
 
 That is the action a gauge transformation performs on a spinor. The spinor is the element, the transformation is the left factor, and the four-vector is the same element read through the congruence on the Hermitian sector. The two readings are two representations of one group, and the difference between them is the difference between $L$ and $\mathrm{Cg}$, which is the right factor.
 
@@ -433,7 +433,7 @@ $$
 \mathrm{Der}_{\mathbb{C}}(\mathbb{B})=\mathrm{ad}(\mathbb{B})\cong\mathbb{B}/\mathbb{B}_{C},
 $$
 
-the quotient by the centre, which is the traceless part $\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$, of complex dimension three and real dimension six. Verified: the Leibniz rule holds on one hundred random triples, $\mathrm{ad}_{\tilde Q}$ vanishes on $e_t$ identically, and $\mathrm{ad}_{\tilde Q}=0$ exactly for central $\tilde Q$.
+the quotient by the centre, which is the scalar-free part $\mathrm{span}_{\mathbb{C}}\{\vec e_x,\vec e_y,\vec e_z\}$, of complex dimension three and real dimension six. Verified: the Leibniz rule holds on one hundred random triples, $\mathrm{ad}_{\tilde Q}$ vanishes on $e_t$ identically, and $\mathrm{ad}_{\tilde Q}=0$ exactly for central $\tilde Q$.
 
 Over $\mathbb{R}$ the derivation space does not grow, and the reason is one line. A real derivation must carry the centre into itself, and $\mathbb{C}$ has no nonzero real derivation, since $0=D(-1)=D(i^{2})=2iD(i)$ forces $D(i)=0$. So $D$ vanishes on the centre and, the centre being central, $D(i\tilde X)=iD(\tilde X)$: every real derivation is already $\mathbb{C}$-linear, and $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})=\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.
 
@@ -875,7 +875,7 @@ The isometry group of the fourth form is $\mathrm{U}(1,3)$ of dimension sixteen,
 | $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$ | the Euclidean form; the eight basis elements are orthonormal |
 | $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})$ | automorphism group over $\mathbb{C}$ |
 | $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B})\cong\mathrm{Aut}_{\mathbb{C}}\rtimes\mathbb{Z}/2$ | automorphism group over $\mathbb{R}$; two components |
-| $\mathrm{Der}(\mathbb{B})\cong\mathbb{B}/\mathbb{B}_{C}$ | derivations; the traceless part |
+| $\mathrm{Der}(\mathbb{B})\cong\mathbb{B}/\mathbb{B}_{C}$ | derivations; the scalar-free part |
 | $\mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\zeta$ | Clifford envelope; the algebra is the even slot |
 | $\Omega=\eta_t\eta_x\eta_y\eta_z$ | volume element; $\Omega^{2}=-1$ |
 | $U_{J}(\mathbb{B})\cong\mathrm{U}(1,3)$ | Krein isometry group; real dimension $16$ |

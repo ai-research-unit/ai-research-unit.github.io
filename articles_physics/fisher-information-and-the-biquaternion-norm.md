@@ -14,7 +14,7 @@ where $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tilde{Ϛ}_{\Psi}\tilde{Ϛ}_
 
 The boundary is the **zero-divisor cone**. The reciprocity therefore says that the states of maximal information — the states in which an arbitrarily small change of the Bloch radius is detected with arbitrarily high precision — are exactly the pure states, that is, the non-invertible elements of the algebra. The analytic singularity of the logarithm used in the companion article *Coarse-Graining and the Biquaternion Entropy Functional*, the vanishing of the biquaternion norm, and the divergence of the Fisher information are three descriptions of the same locus.
 
-The article proceeds as follows. First the biquaternion norm is set down as a quadratic form on states, together with the trace pairing and the Hilbert–Schmidt distance that it induces. Then the classical Fisher information is defined and evaluated for two families: the **spectral family**, whose distribution is the pair of eigenvalues of the state, and the **measurement family** obtained by reading the state along a fixed axis. The spectral family gives the metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-|\vec r|^2)$, of rank one, whose nonzero eigenvalue is the reciprocal of the biquaternion norm; the measurement family gives the general formula. The Fisher information is then identified as the Hessian of the relative entropy, and the Fisher–Rao geometry of the Bloch ball is worked out. The article closes with the bound supplied by the quantum Fisher information, cited from the standard literature and assigned to the sibling quantum category, and with a statement of what the framework derives and what it imports.
+The article proceeds as follows. First the biquaternion norm is set down as a quadratic form on states, together with the Hermitian pairing and the Hilbert–Schmidt distance that it induces. Then the classical Fisher information is defined and evaluated for two families: the **spectral family**, whose distribution is the pair of eigenvalues of the state, and the **measurement family** obtained by reading the state along a fixed axis. The spectral family gives the metric $g_{ij} = \vec{u_r}_i\vec{u_r}_j/(1-|\vec r|^2)$, of rank one, whose nonzero eigenvalue is the reciprocal of the biquaternion norm; the measurement family gives the general formula. The Fisher information is then identified as the Hessian of the relative entropy, and the Fisher–Rao geometry of the Bloch ball is worked out. The article closes with the bound supplied by the quantum Fisher information, cited from the standard literature and assigned to the sibling quantum category, and with a statement of what the framework derives and what it imports.
 
 The treatment is **classical**. The Fisher information used here is the classical one of a family of probability distributions, and the distributions are the outcomes of a fixed classical measurement on the state. The quantum Fisher information appears only at the end, as the upper bound over all measurements; it is a standard result, it is cited as such, and its biquaternion development belongs to the sibling quantum category rather than here.
 
@@ -40,7 +40,7 @@ The biquaternion norm is a multiple of the identity because $\tilde{Ϛ}_{\Psi}$ 
 
 ### The Biquaternion Norm of a Difference
 
-The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{Ϛ}_{\Psi,2} = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the traceless element
+The biquaternion norm becomes a **metric** when it is evaluated on differences of states. For two states $\tilde{Ϛ}_{\Psi,1} = \tfrac{1}{2}(e_t+i\vec r)$ and $\tilde{Ϛ}_{\Psi,2} = \tfrac{1}{2}(e_t+i\vec s)$, the difference is the scalar-free element
 
 $$
 \tilde{Ϛ}_{\Psi,1} - \tilde{Ϛ}_{\Psi,2} = \tfrac{i}{2}\left(\vec r-\vec s\right),
@@ -54,7 +54,7 @@ $$
 = -\frac{1}{4}\left|\vec r-\vec s\right|^2 e_t .
 $$
 
-Equivalently, the trace pairing gives the Hilbert–Schmidt distance. Since $(\vec r-\vec s)^2 = -|\vec r-\vec s|^2 e_t$ for a real pure quaternion,
+Equivalently, the Hermitian pairing gives the Hilbert–Schmidt distance. Since $(\vec r-\vec s)^2 = -|\vec r-\vec s|^2 e_t$ for a real pure quaternion,
 
 $$
 \left(\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\right)^2
@@ -70,7 +70,7 @@ $$
 \left|\vec r-\vec s\right|^2 = 2\,2\,\mathrm{Sc}\!\left(\left(\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\right)^2\right) = -4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2}\rangle_{\natural}.
 $$
 
-Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the trace pairing is positive definite on $\mathbb{B}_{\Psi}$ (signature $(4,0)$), while the biquaternion norm restricted to the traceless elements $\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2} = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the trace pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
+Two remarks fix the geometry. First, the sign: a difference of two states always has zero scalar part, so its biquaternion norm is **non-positive**, and it vanishes iff the states coincide. The biquaternion norm is positive on the cone of states and negative on their tangent space, and the two facts are the same fact: the Hermitian pairing is positive definite on $\mathbb{B}_{\Psi}$ (signature $(4,0)$), while the biquaternion norm restricted to the scalar-free elements $\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2} = \tfrac{i}{2}(\vec r-\vec s)$ is negative definite, the two being related by the factor $i$ that reverses the sign of a quadratic form. Second, the constant: the Hermitian pairing and the biquaternion norm differ by the fixed factor $-\tfrac{1}{2}$ on differences, so they define the same metric up to scale, and every statement about distances below can be read in either.
 
 This is the quadratic form that the Fisher information will refine: the biquaternion norm of a difference gives a **global** distance between two states, and the Fisher information gives the **local** quadratic form whose square root is the infinitesimal distance. The reciprocity is the statement that the two are inverses rather than multiples of one another, which is why it carries information beyond the geometry.
 
@@ -160,7 +160,7 @@ $$
 \frac{1}{1-r^2} = \frac{1}{4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}},
 $$
 
-which is also its trace, since $\vec u_r$ is a unit vector. The rank and the eigenvalue were checked numerically on the interior superposition: at $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ one has $r^2 = \tfrac{1}{2}$, the matrix $\vec{u_r}_i\vec{u_r}_j/(1-r^2) = \vec u_r\vec u_r^{\!\top}/(1-r^2)$ has trace $2$, and its single nonzero eigenvalue is $2 = 1/(1-\tfrac{1}{2}) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$. Geometrically this is exactly right: the spectral distribution is invariant under rotations of the Bloch ball, so the information metric is blind to angular displacements and detects only the radial one. The state carries a sphere's worth of directions, and its own eigenvalue pair knows only the radius.
+which is also twice its scalar part, since $\vec u_r$ is a unit vector. The rank and the eigenvalue were checked numerically on the interior superposition: at $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ one has $r^2 = \tfrac{1}{2}$, the matrix $\vec{u_r}_i\vec{u_r}_j/(1-r^2) = \vec u_r\vec u_r^{\!\top}/(1-r^2)$ has trace $2$, and its single nonzero eigenvalue is $2 = 1/(1-\tfrac{1}{2}) = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural})$. Geometrically this is exactly right: the spectral distribution is invariant under rotations of the Bloch ball, so the information metric is blind to angular displacements and detects only the radial one. The state carries a sphere's worth of directions, and its own eigenvalue pair knows only the radius.
 
 The rank-one character is a property of the *classical* information and is not shared by the quantum information. The full metric of the Bloch ball — the one that measures angular displacements as well — is the **quantum Fisher information metric** $g^{\rm Q}$, which is the subject of the sibling quantum category; the classical metric is its radial shadow and is bounded above by it, the difference between the two forms being the tangential projection,
 

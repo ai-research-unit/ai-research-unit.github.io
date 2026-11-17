@@ -4,7 +4,7 @@
 
 A Lyapunov exponent is the rate at which a dynamical system loses track of its initial condition. Two trajectories that start a distance $\epsilon$ apart separate as $\epsilon\,\exp(\lambda r'_t)$, and $\lambda$ is the exponent; a positive exponent means exponential divergence, that is, sensitivity to initial conditions, and a negative exponent means exponential contraction, that is, the erasure of a distinction. The exponents are the rates in the information budget of a flow.
 
-This article computes the Lyapunov exponents of the informational sector $\mathbb{B}_{\Psi}$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$ with $|\vec r|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a traceless element of $\mathbb{B}_{\Psi}$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is
+This article computes the Lyapunov exponents of the informational sector $\mathbb{B}_{\Psi}$ of the biquaternion algebra, and locates the information loss of the framework in the sign of those exponents. The sector's state space is the Bloch ball, $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$ with $|\vec r|\le1$, and the natural measure of a tangent vector is the sector's biquaternion norm: a tangent vector to the state space is a scalar-free element of $\mathbb{B}_{\Psi}$, and its biquaternion norm is negative definite there, so $|\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}|^{1/2}$ is the length of the tangent vector. The Lyapunov exponent of a tangent vector is
 
 $$
 \lambda(v) = \lim_{r'_t\to\infty}\frac{1}{2r'_t}\log\frac{\left|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}\right|}{\left|\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}\right|},
@@ -80,7 +80,7 @@ $$
 \tilde{Ϛ}_{\Psi}(r'_t) = \tilde u(r'_t)\,\tilde{Ϛ}_{\Psi}(0)\,\tilde u(r'_t)^{*} ,
 $$
 
-and the tangent map is the same conjugation acting on the traceless part,
+and the tangent map is the same conjugation acting on the scalar-free part,
 
 $$
 \delta\tilde{Ϛ}_{\Psi}(r'_t) = \tilde u(r'_t)\,\delta\tilde{Ϛ}_{\Psi}(0)\,\tilde u(r'_t)^{*} .
@@ -177,7 +177,7 @@ so the Bloch ball shrinks in volume at rate $2\Gamma$ and the state is driven on
 
 ### The Biquaternion-Norm Exponent
 
-The tangent vector of the sector is a traceless element of $\mathbb{B}_{\Psi}$. Writing a tangent displacement as $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\,\delta\vec r$, its biquaternion norm is
+The tangent vector of the sector is a scalar-free element of $\mathbb{B}_{\Psi}$. Writing a tangent displacement as $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\,\delta\vec r$, its biquaternion norm is
 
 $$
 \langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\frac{1}{4}\left|\delta\vec r\right|^2 e_t ,
@@ -239,7 +239,7 @@ The last point locates the boundary precisely. Positive Lyapunov exponents are a
 
 ## What Is Derived and What Is Imported
 
-**Derived from the algebra.** The invariance of the biquaternion norm and the trace pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(r'_t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.
+**Derived from the algebra.** The invariance of the biquaternion norm and the scalar pairing under rotor conjugation, and therefore the vanishing of every Lyapunov exponent of a reversible flow — this is proved directly from the multiplicativity of the biquaternion norm, not assumed; the affine Bloch action of a channel semigroup and the identification of its exponents with the singular values of $L(r'_t)$; the dephasing spectrum $\{0,-\Gamma,-\Gamma\}$ and the volume contraction rate $2\Gamma$; the relation between the decay of the quadratic biquaternion norm and the vector exponent, including the exact factor of two between them; the identity $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$; and the entropy production rate of the dephasing semigroup. The numerical checks use the four-complex-coefficient representation of $\mathbb{B}$ and a transverse tangent vector, that is, a superposition-level object rather than a single plane wave.
 
 **Imported from standard dynamical-systems theory.** The definition of the Lyapunov exponent and the multiplicative ergodic theorem; the divergence identity $\sum_k\lambda_k = \langle\vec\nabla_\Phi\cdot f\rangle_{*}$; Pesin's formula $h_{\rm KS} = \sum_{\lambda_k>0}\lambda_k$; the integrability of two-dimensional Hamiltonian flows; and the trace-distance contractivity of completely positive trace-preserving maps. These are transcribed as standard.
 
@@ -255,7 +255,7 @@ $$
 
 the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\rangle_{\natural}$. Since $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2e_t$ for a tangent vector, this is the Euclidean growth rate of the Bloch displacement.
 
-**Reversible rotor flow is Lyapunov-neutral.** Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the trace pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.
+**Reversible rotor flow is Lyapunov-neutral.** Conjugation by a matrix-unitary rotor leaves the biquaternion norm and the scalar pairing invariant, so every exponent is exactly zero and no information is lost. This is the biquaternion form of the volume preservation of a Hamiltonian flow, and it agrees with the conservation of the Casimir on the coadjoint orbit.
 
 **Irreversible channel semigroups are contractions.** The affine Bloch action $\vec r\mapsto L(r'_t)\vec r+\vec t(r'_t)$ has tangent map $L(r'_t)$, whose singular values are the exponential rates; trace-distance contractivity of completely positive trace-preserving maps gives $\sigma_1(L(r'_t))\le1$, hence every exponent is non-positive. The dephasing semigroup has the spectrum $\{0,-\Gamma,-\Gamma\}$, sum $-2\Gamma$ equal to the volume contraction rate, and entropy production rate $\Gamma(r_\perp(r'_t)^2/r(r'_t))\,\mathrm{artanh}\,r(r'_t)$, with $r_\perp(r'_t)$ the instantaneous transverse component. The quadratic biquaternion norm of a transverse tangent vector decays at $\exp(-2\Gamma r'_t)$, twice the vector rate $\exp(-\Gamma r'_t)$, because the biquaternion norm is quadratic; the Lyapunov exponent $\lambda$, defined with the compensating factor $\tfrac{1}{2}$, is the vector exponent $-\Gamma$ itself.
 
@@ -271,7 +271,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\delta\vec r$ | Tangent vector (traceless element of $\mathbb{B}_{\Psi}$) |
+| $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\delta\vec r$ | Tangent vector (scalar-free element of $\mathbb{B}_{\Psi}$) |
 | $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
 | $\lambda(v) = \lim_t \tfrac{1}{2r'_t}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
 | $\lambda_1\ge\lambda_2\ge\lambda_3$ | Lyapunov spectrum |

@@ -135,7 +135,7 @@ $$
 
 with $Q_t=\tfrac12\operatorname{tr}A$ and the three other coordinates read off the traceless part.
 
-**Proposition.** In these coordinates $\det A=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and the traceless part satisfies $A_{0}^{2}=-(Q_x^{2}+Q_y^{2}+Q_z^{2})I$.
+**Proposition.** In these coordinates $\det A=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ and the scalar-free part satisfies $A_{0}^{2}=-(Q_x^{2}+Q_y^{2}+Q_z^{2})I$.
 
 **Proof.** The determinant is the algebraic norm $N$ of the biquaternion, and the traceless part is $-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, whose square is $-(Q_x^{2}+Q_y^{2}+Q_z^{2})I$ because the three Pauli matrices anticommute and each squares to $I$.
 

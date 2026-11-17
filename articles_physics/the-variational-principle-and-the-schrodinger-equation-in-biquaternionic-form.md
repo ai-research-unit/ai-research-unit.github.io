@@ -107,7 +107,7 @@ $$
 \qquad\text{for every }\delta\tilde\Xi^{*}\in\mathbb{B},
 $$
 
-and the bracket vanishes as an element of $\mathbb{B}$. The implication uses the non-degeneracy of the pairing $(X,Y)\mapsto\mathrm{Sc}(XY)$ on $\mathbb{B}$, which is the trace pairing of $\mathbb{B}\cong M_2(\mathbb{C})$: if $\mathrm{Sc}(XE)=0$ for every $X\in\mathbb{B}$, then $E=0$, as one sees by taking $X=E^{*}$, which gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum that vanishes only for $E=0$. Hence
+and the bracket vanishes as an element of $\mathbb{B}$. The implication uses the non-degeneracy of the pairing $(X,Y)\mapsto\mathrm{Sc}(XY)$ on $\mathbb{B}$, which is the plain pairing of $\mathbb{B}\cong M_2(\mathbb{C})$: if $\mathrm{Sc}(XE)=0$ for every $X\in\mathbb{B}$, then $E=0$, as one sees by taking $X=E^{*}$, which gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum that vanishes only for $E=0$. Hence
 
 $$
 i\hbar\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi.
@@ -270,7 +270,7 @@ $$
 
 with $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ Hermitian and $\tilde\Xi\in\mathbb{B}$ one general element. The action is real because both densities are Hermitian and the scalar part of a Hermitian element is real. The pairing is the Hermitian form $\mathrm{Sc}(\cdot^{*}\cdot)$, which is the form for which left multiplication by $\tilde H_\Psi$ is Hermitian.
 
-The variation of $\tilde\Xi^{*}$ returns the equation, and the non-degeneracy of the trace pairing makes the return exact. The two writings are one functional: the reality of the action puts the central $i$ on the derivative and forces a Hermitian coupling, and the generator writing is the same term written with $\tilde H_\Phi=-i\tilde H_\Psi$. The centrality of $i$ is what makes the two readings coincide, and the parent's counterexample with $\vec e_z$ shows that no non-central root does.
+The variation of $\tilde\Xi^{*}$ returns the equation, and the non-degeneracy of the Hermitian pairing makes the return exact. The two writings are one functional: the reality of the action puts the central $i$ on the derivative and forces a Hermitian coupling, and the generator writing is the same term written with $\tilde H_\Phi=-i\tilde H_\Psi$. The centrality of $i$ is what makes the two readings coincide, and the parent's counterexample with $\vec e_z$ shows that no non-central root does.
 
 Two symmetries give two currents. The phase rotation gives $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, the parent's density up to the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention. The time translation, in the constant setting, gives $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, the parent's energy. Each conservation is one line from the equation and its conjugate. There is no spin current, because the equation has no spin.
 

@@ -279,7 +279,7 @@ Hence the length takes the two values $0$ and $1$ on the family and has no value
 | $0$ | $0$ | $0$ | $0$ |
 | $L_{\Pi_{+}}$, $L_{\Pi_{-}}$, and their scalar multiples | $1$ | $1$ inside | $1$ |
 | $L_{\breve Q}$ with $\breve Q$ an invertible element | $2$ | $4$ | $1$ |
-| $\sigma_{3}$, the traceless diagonal | — | — | no length |
+| $\sigma_{3}$, the scalar-free diagonal | — | — | no length |
 | $i\sigma_{2}$, the quarter turn | — | — | no length |
 
 So the two ranks are proportional and not unrelated, which is the opposite of the quaternion category, where the operator rank was one or four and the coefficient rank ranged over $0,\dots,4$ independently. The proportionality is the semisimplicity again: the model is a direct sum of two scalar blocks, so every rank is a count of blocks.

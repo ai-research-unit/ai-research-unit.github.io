@@ -32,7 +32,7 @@ since the Legendre transform of a sum of independent functionals is the sum of t
 $$
 \Gamma[\tilde{Ξ}_{\mathrm{cl}}] = S[\tilde{Ξ}_{\mathrm{cl}}] +\frac{\hbar}{2}\,\mathrm{Tr}\log  S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] + O(\hbar^{2}),
 $$
-where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module, and the trace is the trace pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
+where $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is the second variation of the action about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module, and the trace is taken in the scalar pairing; the determinant is the subject of *The Functional Determinant in Biquaternionic Form*.
 - **The vacuum condition.** The classical field that extremizes $\Gamma$ is the theory's vacuum expectation value, and in the framework the tree-level vacuum is a **minimal idempotent** of $\mathbb{B}_{\Psi}$, selected by the sign of the quadratic term, as *The Biquaternion Vacuum as a Minimal Idempotent* establishes. The effective-action version of that statement is that the vacuum minimizes the effective potential on the manifold of normalizable states.
 
 The article proceeds as follows. The next section defines the connected functional and its derivatives. A section defines the classical field and the Legendre transform, with the convexity in the real form. A section gives the effective action and the loop expansion, and a section the sector factorization. A section treats the effective potential and its relation to the vacuum, and a section the one-loop term and the determinant. A section separates what is established from what is interpretation, and the article closes with open questions.
@@ -126,7 +126,7 @@ The tree term is the classical action. The one-loop term is the functional deter
 $$
 \boxed{\;\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\;},
 $$
-evaluated on the module, with $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the operator of the quadratic fluctuations about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module and the trace is the trace pairing of the algebra, so the one-loop effective action is the logarithm of a determinant of $\mathbb{B}$-module operators. This is the object that the next article computes.
+evaluated on the module, with $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the operator of the quadratic fluctuations about the classical field. In the biquaternion framework $S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ is an operator on the module and the trace is taken in the scalar pairing of the algebra, so the one-loop effective action is the logarithm of a determinant of $\mathbb{B}$-module operators. This is the object that the next article computes.
 
 **Standard, and transcribed.** The loop expansion, the identification of $\Gamma$ as the 1PI generator, and the form of $\Gamma_1$ are standard field theory (Weinberg, Peskin–Schroeder, Zinn-Justin) and are not rebuilt here. The biquaternion content is the module on which $S^{(2)}$ acts and the plain form used to define its logarithm.
 

@@ -252,7 +252,7 @@ $$
 
 For a plane wave of momentum $\hbar\,\vec k_\Phi$ the current is $\vec J =\frac{\hbar\,\rho\,\vec k_\Phi}{m}= \rho\,\vec v_g$, as it must be. For a general packet, $\vec J = \rho\,\vec v_g$ holds only where the packet is locally monochromatic, which is the usual situation for a broad packet.
 
-The current is a **material-sector** object in the following sense: it is built from the plain form of the spinor with its gradient, read as the trace pairing, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{B}_{\Phi}$; the density is the trace of a Hermitian element of $\mathbb{B}_{\Psi}$. The continuity equation thus pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current, exactly as the sector assignment of the framework requires.
+The current is a **material-sector** object in the following sense: it is built from the plain form of the spinor with its gradient, read as the plain pairing, and it is a real spatial vector, hence the spatial part of an element of $\mathbb{B}_{\Phi}$; the density is twice the scalar part of a Hermitian element of $\mathbb{B}_{\Psi}$. The continuity equation thus pairs an $\mathbb{B}_{\Psi}$ density with an $\mathbb{B}_{\Phi}$ current, exactly as the sector assignment of the framework requires.
 
 ### The Gaussian packet
 

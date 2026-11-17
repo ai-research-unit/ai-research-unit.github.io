@@ -290,7 +290,7 @@ The massless limit takes the count to two in every case, because the gauge symme
 
 ## Open Questions
 
-1. **The projector from the algebra alone.** The traceless projector is built from the frame basis operators. Is there a biquaternion expression of the projection — an operation on the tensor product $V\otimes S$ using only the algebra's structure — that does not pass through the frame basis operators, in the way the adjoint action expresses the spin-one projection without them?
+1. **The projector from the algebra alone.** The scalar-free projector is built from the frame basis operators. Is there a biquaternion expression of the projection — an operation on the tensor product $V\otimes S$ using only the algebra's structure — that does not pass through the frame basis operators, in the way the adjoint action expresses the spin-one projection without them?
 
 2. **The massless ghosts and the sector split.** The ghosts of the massless Rarita–Schwinger field are spinor-valued and commuting. In which sector do they live, and does the sector split organize the ghost spectrum of higher-spin gauge fields in a way that differs from the vector case?
 

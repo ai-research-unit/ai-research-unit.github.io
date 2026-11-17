@@ -157,7 +157,7 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 **The overall sign is a convention.** The relative sign of the two terms is the parent's, fixed by positive energy. **The article's coefficients are quoted with that sign**, and a reader who uses the opposite convention will find every coefficient negated and every vanishing unchanged.
 
-**The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and the trace is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
+**The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and twice the scalar part is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
 
 ## Open Questions
 

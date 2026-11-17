@@ -139,7 +139,7 @@ $$
 \tilde q_{\log} = \log \sqrt{\langle\tilde q\rangle_{\natural}} + \log\big(\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\big) ,
 $$
 
-the second term being an element of $V$ obtained from the logarithm of the traceless part.
+the second term being an element of $V$ obtained from the logarithm of the scalar-free part.
 
 **Theorem (Existence and Branch).** The derivative of the exponential at $\tilde q$ is invertible if and only if no two roots of the characteristic polynomial of $\tilde q$ differ by a nonzero multiple of $2\pi\mathrm{i}$. The roots are $\operatorname{Sc}(\tilde q) \pm \sqrt{-\langle\operatorname{Vec} \tilde q\rangle_{\natural}}$, so they are complex conjugate when $\langle\operatorname{Vec} \tilde q\rangle_{\natural} > 0$ and real when $\langle\operatorname{Vec} \tilde q\rangle_{\natural} \leq 0$. The condition therefore reads
 

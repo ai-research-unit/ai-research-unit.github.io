@@ -219,16 +219,16 @@ The material element is read through the factor $i$, not through the untwisted p
 
 The sharpest positive content of the split is not on the algebra but on its Lie algebra, where the material summand becomes a subalgebra and the split becomes a genuine $\mathbb{Z}_2$ grading.
 
-**Traceless parts.** Let $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ denote the traceless elements of the two sectors. The traceless elements, those whose doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$ vanishes, are exactly those with vanishing scalar part along $e_t$:
+**Scalar-free parts.** Let $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ denote the scalar-free elements of the two sectors. The scalar-free elements, those whose doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$ vanishes, are exactly those with vanishing scalar part along $e_t$:
 $$
 \mathbb{B}_{\Psi}^{0} = \mathrm{span}_\mathbb{R}\{i\vec e_x, i\vec e_y, i\vec e_z\}, \qquad
 \mathbb{B}_{\Phi}^{0} = \mathrm{span}_\mathbb{R}\{\vec e_x, \vec e_y, \vec e_z\}.
 $$
-These six elements span the traceless part of $\mathbb{B}$, and the traceless part is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$, which acts as the Lorentz algebra. Hence
+These six elements span the scalar-free part of $\mathbb{B}$, and the scalar-free part is the Lie algebra $\mathrm{SL}(2,\mathbb{C})$, which acts as the Lorentz algebra. Hence
 $$
 \mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0},
 $$
-with $\mathbb{B}_{\Psi}^{0}$ Hermitian (traceless) and $\mathbb{B}_{\Phi}^{0}$ anti-Hermitian (traceless).
+with $\mathbb{B}_{\Psi}^{0}$ Hermitian (scalar-free) and $\mathbb{B}_{\Phi}^{0}$ anti-Hermitian (scalar-free).
 
 **The brackets.** With $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ for $\mu,\nu\in\{1,2,3\}$ and $\mu\neq\nu$, the commutators close on the two summands as
 $$
@@ -252,7 +252,7 @@ with even part $\mathbb{B}_{\Phi}^{0}$ and odd part $\mathbb{B}_{\Psi}^{0}$.
 
 **The Cartan involution.** The involution that effects this grading is $\flat = -{}^{*}$ restricted to real-linear combinations: it acts as $+1$ on $\mathbb{B}_{\Phi}^{0}$ and $-1$ on $\mathbb{B}_{\Psi}^{0}$, and on the Lie algebra it is a linear involution because the combinations are real. It is the **Cartan involution** of $\mathrm{SL}(2,\mathbb{C})$, its fixed subalgebra is the compact $\mathrm{SU}(2)$ of rotations, and its $(-1)$-eigenspace is the non-compact complement of boosts. The material-informational split restricted to the generators is the Cartan decomposition of the Lorentz algebra, and the compact/non-compact dichotomy — the reason the Lorentz group is non-compact while the rotation group is compact — is the sector dichotomy.
 
-**Consequence for the framework.** Two conclusions follow, one negative and one positive. Negatively, the subalgebra property holds only on the traceless part; it does not extend to the sectors themselves, because the trace directions $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ are central and their products stay in the centre, while the products of the non-central parts leave the sectors. Positively, on the generators the split is exactly a $\mathbb{Z}_2$ grading with a compact even part, and this is the algebraic locus of the interaction between the relativistic and the quantum structures: a boost is an informational generator, a rotation is a material one, and the failure of the boosts to close — the bracket $[\text{boost},\text{boost}] = \text{rotation}$ — is the algebraic origin of the Thomas–Wigner rotation and of the non-commutativity of the boosts. The next three articles of this subcategory are computations of that failure and of its information-theoretic consequences.
+**Consequence for the framework.** Two conclusions follow, one negative and one positive. Negatively, the subalgebra property holds only on the scalar-free part; it does not extend to the sectors themselves, because the trace directions $e_t\in\mathbb{B}_{\Psi}$ and $ie_t\in\mathbb{B}_{\Phi}$ are central and their products stay in the centre, while the products of the non-central parts leave the sectors. Positively, on the generators the split is exactly a $\mathbb{Z}_2$ grading with a compact even part, and this is the algebraic locus of the interaction between the relativistic and the quantum structures: a boost is an informational generator, a rotation is a material one, and the failure of the boosts to close — the bracket $[\text{boost},\text{boost}] = \text{rotation}$ — is the algebraic origin of the Thomas–Wigner rotation and of the non-commutativity of the boosts. The next three articles of this subcategory are computations of that failure and of its information-theoretic consequences.
 
 ## The Physical Reading
 
@@ -275,7 +275,7 @@ The decomposition $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ into a
 
 The split does not satisfy the standard algebraic realisation of a superselection structure. The centre is $Z(\mathbb{B}) = \mathbb{C}e_t$, its only central idempotents are $0$ and $e_t$, and $\mathbb{B}$ is central simple; the defining module is the unique simple module and is irreducible. There is consequently no central-projection decomposition into non-interfering branches, and the framework has no intrinsic superselection sectors of the standard kind. The centre itself is graded by the split, into the informational real scalar $e_t$ and the material imaginary scalar $ie_t$; the latter is the algebra's only non-trivial central charge, and because it acts as a scalar on the module it labels nothing.
 
-The sharpest positive content of the split is on the Lie algebra. The traceless parts furnish the Cartan decomposition
+The sharpest positive content of the split is on the Lie algebra. The scalar-free parts furnish the Cartan decomposition
 $$
 \mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}, \qquad
 [\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0},\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}]\subseteq\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}, \qquad
@@ -302,8 +302,8 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Doubled scalar part |
 | $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | Congruence (physical operation) |
 | $\mathbb{B}_{\Psi}^{0}\cup\mathbb{B}_{\Phi}^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{B}_{\Psi}^{0}\oplus\mathbb{B}_{\Phi}^{0}$ |
-| $\mathbb{B}_{\Phi}^{0}\cong\mathrm{SU}(2)$ | Material traceless part, compact rotations |
-| $\mathbb{B}_{\Psi}^{0}$ | Informational traceless part, non-compact boosts |
+| $\mathbb{B}_{\Phi}^{0}\cong\mathrm{SU}(2)$ | Material scalar-free part, compact rotations |
+| $\mathbb{B}_{\Psi}^{0}$ | Informational scalar-free part, non-compact boosts |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

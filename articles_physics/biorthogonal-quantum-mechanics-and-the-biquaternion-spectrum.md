@@ -132,7 +132,7 @@ $$
 =2\operatorname{Sc}\left(\tilde\Pi_-^*\tilde\Pi_+\right).
 $$
 
-The Gram form on the span of the two projectors, taken in the trace pairing $\langle X,Y\rangle=2\operatorname{Sc}(X^*Y)$, therefore has the value $\kappa$ on the diagonal and $1-\kappa$ off it. It is positive definite with eigenvalues $1$ and $\lVert\rho\rVert^2$: the eigenvalue $1$ is the completeness relation $\tilde\Pi_++\tilde\Pi_-=e_t$, the other is the norm deficit. The projectors are orthogonal exactly when $\kappa=1$; otherwise their overlap $1-\kappa$ is minus the excess.
+The Gram form on the span of the two projectors, taken in the Hermitian pairing $\langle X,Y\rangle=2\operatorname{Sc}(X^*Y)$, therefore has the value $\kappa$ on the diagonal and $1-\kappa$ off it. It is positive definite with eigenvalues $1$ and $\lVert\rho\rVert^2$: the eigenvalue $1$ is the completeness relation $\tilde\Pi_++\tilde\Pi_-=e_t$, the other is the norm deficit. The projectors are orthogonal exactly when $\kappa=1$; otherwise their overlap $1-\kappa$ is minus the excess.
 
 Near the cone, with $\lVert\vec Q\rVert^2$ fixed and $\lvert B^2\rvert\to0$,
 

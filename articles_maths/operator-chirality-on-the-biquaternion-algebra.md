@@ -250,7 +250,7 @@ The **basis operator the older reading took for the definition** is the case tha
 
 One hypothesis must not be dropped in that computation, because it is false without it. The statement that $R_u$ has spectrum $+i,+i,-i,-i$ and trace zero for **any** $u$ with $u^2=-e_t$ fails at the central element $ie_t$, which satisfies the square condition and gives $R_{ie_t}=i\mathrm I$, a spectrum of $+i$ four times and a trace of $4i$. Tracelessness is the missing hypothesis, and it is what makes $R_u$ behave as a chirality element rather than as a scalar in disguise.
 
-The basis operator acts on the algebra as well as on the operator space, and that action is where the two component letters come from. For a traceless $u$ with $u^2=-e_t$ every element splits,
+The basis operator acts on the algebra as well as on the operator space, and that action is where the two component letters come from. For a scalar-free $u$ with $u^2=-e_t$ every element splits,
 
 $$
 \tilde X=\tilde X_L+\tilde X_R,\qquad R_u\tilde X_L=i\tilde X_L,\qquad R_u\tilde X_R=-i\tilde X_R,

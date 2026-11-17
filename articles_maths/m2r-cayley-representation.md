@@ -136,7 +136,7 @@ $$
 \operatorname{tr}\mathsf{M}_2(Q)=0\iff Q\in i\mathbb{R}_{\mathbb{C}} .
 $$
 
-The trace is therefore a projection of the algebra onto its real part, and the traceless subspace of the image is the imaginary line, of dimension one. Compare the quaternion models, where the trace was $2q_t$ or $4q_t$ and the traceless subspace was the three-dimensional pure part: the pattern is the same and the dimension is minimal.
+The trace is therefore a projection of the algebra onto its real part, and the scalar-free subspace of the image is the imaginary line, of dimension one. Compare the quaternion models, where the trace was $2q_t$ or $4q_t$ and the scalar-free subspace was the three-dimensional pure part: the pattern is the same and the dimension is minimal.
 
 **The trace form.** For the two basis elements,
 

@@ -213,7 +213,7 @@ A concrete worked family locates the obstruction exactly. The **quantum quaterni
 
 ### Clifford enlargements and octonionic doubling
 
-The biquaternion algebra sits inside the Clifford family: $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, and the Dirac article of the series uses the Clifford algebra of the spacetime metric. Enlarging to $\mathrm{Cl}_{n,m}$ with more generators, or taking the complexification as a Clifford algebra in more dimensions, produces algebras of matrices over $\mathbb{R},\mathbb{C},\mathbb{H}$ of larger size, with no finite-dimensional faithful module of the same two-component kind. Such enlargements lie beyond the algebra in the sense that the state module, the two sectors, and the trace pairing all change dimension and structure.
+The biquaternion algebra sits inside the Clifford family: $\mathbb{H}\cong\mathrm{Cl}_{0,2}$ and $\mathrm{Cl}_{0,3}\cong\mathbb{H}\oplus\mathbb{H}$, and the Dirac article of the series uses the Clifford algebra of the spacetime metric. Enlarging to $\mathrm{Cl}_{n,m}$ with more generators, or taking the complexification as a Clifford algebra in more dimensions, produces algebras of matrices over $\mathbb{R},\mathbb{C},\mathbb{H}$ of larger size, with no finite-dimensional faithful module of the same two-component kind. Such enlargements lie beyond the algebra in the sense that the state module, the two sectors, and the scalar pairing all change dimension and structure.
 
 The Cayley–Dickson doubling gives a sharper boundary. Doubling $\mathbb{C}$ gives $\mathbb{H}$, and doubling $\mathbb{H}$ gives the **octonions** $\mathbb{O}$, which are non-associative:
 
@@ -221,7 +221,7 @@ $$
 (xy)z\ne x(yz) \qquad \text{for some } x,y,z\in\mathbb{O}.
 $$
 
-The biquaternion framework uses associativity at every step — the module action, the trace, the conjugation identities, and the factorisation $\tilde H_\Psi=h_t\,e_t$ of a central operator all presuppose it. A non-associative enlargement therefore lies beyond the algebra not by a matter of convenience but by a structural obstruction: the trace pairing and the module action are not defined without associativity. The octonions are the first Cayley–Dickson algebra to fail this, and they mark the boundary.
+The biquaternion framework uses associativity at every step — the module action, the trace, the conjugation identities, and the factorisation $\tilde H_\Psi=h_t\,e_t$ of a central operator all presuppose it. A non-associative enlargement therefore lies beyond the algebra not by a matter of convenience but by a structural obstruction: the scalar pairing and the module action are not defined without associativity. The octonions are the first Cayley–Dickson algebra to fail this, and they mark the boundary.
 
 ### Infinite-dimensional and non-$*$-unitary extensions
 
@@ -245,7 +245,7 @@ The three boundaries can be stated compactly.
 | Octonionic doubling | No | Non-associativity destroys the module action and the trace |
 | Field-theoretic / dissipative algebra | No | No finite trace; non-$*$-unitary evolution |
 
-The table is the article's answer: envelope squeezing is available, module squeezing is not, and every operation that deforms, contracts, enlarges, or completes the algebra takes it outside the class where the biquaternion norm, the sectors, and the trace pairing are defined.
+The table is the article's answer: envelope squeezing is available, module squeezing is not, and every operation that deforms, contracts, enlarges, or completes the algebra takes it outside the class where the biquaternion norm, the sectors, and the scalar pairing are defined.
 
 ## Open Questions
 
@@ -265,7 +265,7 @@ Squeezing the **module** is beyond the spin-0 reach: a central $*$-unitary canno
 
 Contracting the algebra by $E_2=\epsilon \vec e_y$, $E_3=\epsilon \vec e_z$ degenerates the biquaternion norm: $[E_2,E_3]=2\epsilon^2E_1$ and $\langle E_2\rangle_{\natural}=\epsilon^2e_t$ vanish together as $\epsilon\to0$ (verified at $\epsilon=1,0.1,0.01$), and the limit contains nilpotent zero divisors. In the split algebra with $I^2=-1$, $J^2=+1$, the elements $1+J$ and $1+\mathcal{Q}_{\mathrm{op}}$ are zero divisors, $(1+J)(1-J)=(1+K)(1-K)=0$, verified exactly in the representation $I=i\sigma_z$, $J=\sigma_x$.
 
-q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $q\to1$ (verified at $q=1.2,1.01,1.001$), lie beyond the algebra because no invariant quadratic form of the framework's kind survives. Clifford enlargements change the module and trace pairing; the octonionic doubling is non-associative and therefore destroys the module action and the trace; and the field-theoretic and dissipative algebras have no finite trace or no $*$-unitary evolution. Envelope squeezing is inside the algebra; module squeezing, contractions, deformations, enlargements, and completions are beyond it, each for a definite structural reason.
+q-deformations, with $[J_+,J_-]=\frac{q^{2J_3}-q^{-2J_3}}{q-q^{-1}}\to2J_3$ as $q\to1$ (verified at $q=1.2,1.01,1.001$), lie beyond the algebra because no invariant quadratic form of the framework's kind survives. Clifford enlargements change the module and scalar pairing; the octonionic doubling is non-associative and therefore destroys the module action and the trace; and the field-theoretic and dissipative algebras have no finite trace or no $*$-unitary evolution. Envelope squeezing is inside the algebra; module squeezing, contractions, deformations, enlargements, and completions are beyond it, each for a definite structural reason.
 
 ## Summary of Notation
 

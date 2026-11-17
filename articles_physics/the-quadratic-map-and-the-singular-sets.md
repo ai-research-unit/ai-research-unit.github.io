@@ -6,7 +6,7 @@
 
 **The first claim is that one step of the map is a step and not a small motion, and that the algebra settles this before any physics does.** The differential of the square at $\tilde Q$ is $\tilde Q_2\mapsto\tilde Q\tilde Q_2+\tilde Q_2\tilde Q$, which is the Jordan product with $\tilde Q$ and not a derivation, and no one-parameter group has it as its time-one map. A derivation of $\mathbb{B}$ is a commutator; the differential of the square is an anticommutator. **The step is graded by the symmetric product and the generator by the antisymmetric one, and the two are different operators.** Everything below is read from the identities of the step, and nothing is read from a generator, because there is none.
 
-**The second claim is that the singular set of the step is a set the corpus had already named.** The derivative fails to be invertible exactly where the biquaternion norm vanishes or where the trace vanishes, and inside the material sector the norm-zero set is the light cone. Verified: the determinant of the differential at $\tilde Q$ is $16\,N(\tilde Q)\,Q_t^{2}$, to $1.0\times10^{-12}$ on one hundred random elements, so it vanishes on the cone and on the traceless hyperplane and nowhere else. **The locus where a step of the discrete dynamics cannot be undone is the light cone plus the zero-trace slice.**
+**The second claim is that the singular set of the step is a set the corpus had already named.** The derivative fails to be invertible exactly where the biquaternion norm vanishes or where the trace vanishes, and inside the material sector the norm-zero set is the light cone. Verified: the determinant of the differential at $\tilde Q$ is $16\,N(\tilde Q)\,Q_t^{2}$, to $1.0\times10^{-12}$ on one hundred random elements, so it vanishes on the cone and on the scalar-free hyperplane and nowhere else. **The locus where a step of the discrete dynamics cannot be undone is the light cone plus the zero-trace slice.**
 
 **The third claim is that the state space of the qubit lies inside the filled set, and that the pure states are exactly its boundary.** A normalised positive Hermitian element $\tilde{Ϛ}_{\Psi}=\tfrac12e_t+i\vec w$ with $\lvert\vec w\rvert\le\tfrac12$ has spectral radius $\tfrac12+\lvert\vec w\rvert\le1$, and the equality holds exactly on the sphere $\lvert\vec w\rvert=\tfrac12$, which is the set of pure states. Verified: one hundred sampled mixed states lie at spectral radius at most $0.987$, one hundred sampled pure states at radius $1$ to $6.7\times10^{-16}$, and the Julia set of the parameter zero is the level set of radius one. **The Bloch sphere is the trace of the Julia set through the state space, and the interior of the Bloch ball is inside the filled set.** The step with no parameter contracts every mixed state to zero and leaves every pure state fixed, so the pure states are the only survivors of the parameterless iteration.
 
@@ -39,7 +39,7 @@
 
 3. **The critical set is the light cone plus the traceless slice.** The determinant of the differential is $16\,NQ_t^{2}$, so the step is locally invertible exactly off $\mathscr{Z}\cup\{\tilde Q: Q_t=0\}$, and $\mathscr{Z}\cap\mathbb{B}_{\Phi}$ is the light cone.
 
-4. **The spin-one carrier lies on the critical set.** The triple $\mathfrak{k}$ is traceless, so $dF$ is singular on the whole carrier of spin one. Verified: the determinant vanishes to machine precision on one hundred random elements of $\mathfrak{k}$.
+4. **The spin-one carrier lies on the critical set.** The triple $\mathfrak{k}$ is scalar-free, so $dF$ is singular on the whole carrier of spin one. Verified: the determinant vanishes to machine precision on one hundred random elements of $\mathfrak{k}$.
 
 5. **On the cone the step preserves the complex line and moves only the scale.** $Q^{2}=2Q_tQ$ on $\mathscr{Z}$, to $9.9\times10^{-16}$ on one hundred cone elements, so a lightlike element keeps its direction forever and its size obeys the single real recursion $\mu\mapsto\mu^{2}$ in the variable $\mu=2Q_t$.
 
@@ -119,11 +119,11 @@ $$
 \Sigma(\mathbb{B})=\{\tilde Q : \det dF_{\tilde C}\big|_{\tilde Q}=0\}=\mathscr{Z}\cup\mathbb{B}_{V}, \qquad \mathbb{B}_{V}=\{\tilde Q: Q_t=0\},
 $$
 
-the union of the zero-divisor cone and the traceless subspace. The two components are different objects. The first is the cone of non-invertible elements; the second is a linear subspace of complex dimension three, the set of matrices of trace zero, on which the two eigenvalues of $\mathsf{M}(\tilde Q)$ are opposite.
+the union of the zero-divisor cone and the scalar-free subspace. The two components are different objects. The first is the cone of non-invertible elements; the second is a linear subspace of complex dimension three, the set of matrices of trace zero, on which the two eigenvalues of $\mathsf{M}(\tilde Q)$ are opposite.
 
 **The first component is the light cone, inside the material sector.** On a material element $\tilde R_{\Phi}=i\lambda e_t+\vec r$ with $\lambda$ and $\vec r$ real the norm is $-\lambda^{2}+\lvert\vec r\rvert^{2}$, so the equation $N=0$ is the equation $\lvert\vec r\rvert=\lvert\lambda\rvert$, which is the light cone of the interval of signature $(1,3)$ (*The Light Cone as the Biquaternion Zero-Divisor Cone*, *The Material Sector: Four-Vectors, Interval and Lorentz Action*). **The component of the critical set that meets the material sector is the physical light cone, and it is not put there by hand: it is the zero set of the algebra's own quadratic form.**
 
-**The second component contains the carrier of spin one.** The traceless subspace $\mathbb{B}_{V}$ is the complex span of the three units $\vec e_x,\vec e_y,\vec e_z$, so it contains the real triple $\mathfrak{k}$ on which the adjoint action of the rotation group acts as the vector representation (*Introduction to the Spin-One Anti-Hermitian Subspace*). Verified: the determinant of the differential vanishes to machine precision on one hundred random real vectors and on one hundred random complex vectors of $\mathbb{B}_{V}$.
+**The second component contains the carrier of spin one.** The scalar-free subspace $\mathbb{B}_{V}$ is the complex span of the three units $\vec e_x,\vec e_y,\vec e_z$, so it contains the real triple $\mathfrak{k}$ on which the adjoint action of the rotation group acts as the vector representation (*Introduction to the Spin-One Anti-Hermitian Subspace*). Verified: the determinant of the differential vanishes to machine precision on one hundred random real vectors and on one hundred random complex vectors of $\mathbb{B}_{V}$.
 
 **The spin-one carrier therefore sits on the singular set of the step.** The rotations move the triple among itself, and every element of it is a point where the step has no local inverse. **The carrier of the integer spin is exactly a component of the locus where the discrete dynamics degenerates**, and this is a statement about the algebra and not about a physical field: the triple is where the derivative of the square loses rank, not where a field is large.
 
@@ -347,7 +347,7 @@ The biquaternion quadratic map is a discrete rule on the algebra and not a flow:
 | $\tilde Q=Q_te_t+\vec Q$ | a biquaternion, complex coefficients |
 | $N(\tilde Q)=Q_t^{2}+(\vec Q,\vec Q)$ | the biquaternion norm |
 | $\mathscr{Z}=\{\tilde Q\neq0: N(\tilde Q)=0\}$ | the zero-divisor cone |
-| $\mathbb{B}_{V}=\{\tilde Q: Q_t=0\}$ | the traceless subspace, the pure bivectors |
+| $\mathbb{B}_{V}=\{\tilde Q: Q_t=0\}$ | the scalar-free subspace, the pure bivectors |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | the material and the informational sectors |
 | $F_{\tilde C}(\tilde Q)=\tilde Q^{2}+\tilde C$ | the quadratic family, $\tilde C$ the parameter |
 | $\mathsf{M}(\tilde Q)=Q_tI-i\vec Q\cdot\vec\sigma$ | the matrix model |

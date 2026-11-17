@@ -72,7 +72,7 @@ Before the decomposition can be read correctly, it is necessary to separate thre
 
 ### As a Rotation Module: $\mathbb{B} = D^{(0)}\oplus D^{(1)}$
 
-The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde{U}\in\mathbb{B}_{H}$ a real unit quaternion. Under this action the centre $\mathbb{B}_{C} = \{Q_te_t\}$ is pointwise fixed and the traceless part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
+The rotation group acts on $\mathbb{B}$ by rotor conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ with $\tilde{U}\in\mathbb{B}_{H}$ a real unit quaternion. Under this action the centre $\mathbb{B}_{C} = \{Q_te_t\}$ is pointwise fixed and the scalar-free part $\mathrm{SL}_2(\mathbb{C}) = \{Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z\}$ transforms as a vector:
 
 $$
 \boxed{\;\mathbb{B} = D^{(0)}\oplus D^{(1)} \qquad\text{(as a complex rotation module)},
@@ -122,7 +122,7 @@ The three roles can be summarised in one line each: the algebra *as a value spac
 
 ### The Product
 
-From the three roles above, the product of two elements of $\mathbb{B}$ stays in $\mathbb{B}$ — that is what it means to be an algebra — and, restricted to the traceless part, it maps $D^{(1)}\otimes D^{(1)}$ onto $D^{(0)}\oplus D^{(1)}$. The truncation is visible in the symmetrization identities for pure vectors $\vec q, \vec v$:
+From the three roles above, the product of two elements of $\mathbb{B}$ stays in $\mathbb{B}$ — that is what it means to be an algebra — and, restricted to the scalar-free part, it maps $D^{(1)}\otimes D^{(1)}$ onto $D^{(0)}\oplus D^{(1)}$. The truncation is visible in the symmetrization identities for pure vectors $\vec q, \vec v$:
 
 $$
 \tfrac12\left(\vec q\vec v + \vec v\vec q\right) = -(\vec q\cdot\vec v)\,e_t \in D^{(0)} ,

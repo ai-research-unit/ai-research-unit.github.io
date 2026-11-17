@@ -14,7 +14,7 @@ The answer to the second part is a qualified **not yet**. The framework expresse
 
 The article is organized as follows. Section 2 presents the operational criterion in the paper's own terms. Section 3 gives the criterion in the framework's language: idempotent/$*$-unitary on the two partitions. Section 4 maps the paper's four subsets (I, IIa, IIb, III) to the framework's algebra. Section 5 discusses the *fundamental versus derived* distinction that the framework suggests but the operational criterion does not require. Section 6 states what the framework adds and what remains open. Section 7 concludes.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of the matrix image of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $2\,\mathrm{Sc}(\tilde Q)$. Two-qubit states live in $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, with the tensor-product trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
 
 ## The Operational Criterion
 
@@ -38,7 +38,7 @@ Korolkova, Sánchez-Soto, and Leuchs emphasize five consequences:
 
 4. **Wave phenomena are not the criterion.** The wave equation, superposition, interference and diffraction are shared by the classical and the quantum descriptions of light, and the analogy between them has been pushed a long way: classical non-separability has been used to simulate Bell-inequality violations and a number of quantum information protocols. None of it relocates the boundary. The paper's reason is stated in its conclusion. Quantum physics is first and foremost about the interaction between a system and a measurement apparatus, not about the wave properties of the system taken by itself.
 
-5. **Enhanced metrology is not the criterion.** A classically non-separable beam that correlates its transverse spatial mode with its polarization has been used to demonstrate enhancement in a number of metrology tasks. The temptation is to read the enhancement as a quantum signature, and it is the temptation this series is most exposed to, because the informational sector is built on the Born-rule Hermitian form, read as the trace pairing, and the very statistics that metrology exploits. The paper blocks it: the advantage comes from the increased parameter space and from a form of classical parallelism, not from a quantum resource. A measurement advantage is a fact about a protocol; by itself it does not relocate the boundary.
+5. **Enhanced metrology is not the criterion.** A classically non-separable beam that correlates its transverse spatial mode with its polarization has been used to demonstrate enhancement in a number of metrology tasks. The temptation is to read the enhancement as a quantum signature, and it is the temptation this series is most exposed to, because the informational sector is built on the Born-rule Hermitian form, read as the Hermitian pairing, and the very statistics that metrology exploits. The paper blocks it: the advantage comes from the increased parameter space and from a form of classical parallelism, not from a quantum resource. A measurement advantage is a fact about a protocol; by itself it does not relocate the boundary.
 
 The criterion is offered in this general form, not as a rule about optics alone. The paper places classical non-separability inside the wider class of classical wave emulations of quantum features — a class that includes, explicitly, the optical platforms used for analogue-gravity experiments — and proposes the operational test as the discriminator for all of them. The shape of the argument is the one this series already uses elsewhere: a structure that resembles a phenomenon is not the phenomenon. The algebra is structurally sufficient for relativity and for the qubit without thereby being nature's (*A Brief History of Biquaternions in Physics*, on the gap between containing a structure and having used it).
 
@@ -75,7 +75,7 @@ $$
 p(i,j) = \mathrm{Tr}\!\left(\bigl(\tilde\Pi_A^{(i)}\otimes \tilde\Pi_B^{(j)}\bigr)\circ \tilde{Ϛ}_{\Psi}\right),
 $$
 
-where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the trace pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the trace pairing. The result is a **statistical correlation** between the two outcomes.
+where $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are the idempotents corresponding to the measurement outcomes. The joint distribution is the normalised Hermitian form of the state with a **product of two idempotents**, read as the Hermitian pairing. The pattern is exactly the one used in *Exercise: The CHSH Inequality and Tsirelson's Bound*, question 4: the Born rule applied twice, with the joint probability being the tensor-product Hermitian form of the state with the joint idempotent, read as the Hermitian pairing. The result is a **statistical correlation** between the two outcomes.
 
 **Classical non-separability: one idempotent, one $*$-unitary.** A bipartite state $\tilde{Ϛ}_{\Psi}$ on $\mathbb{B}\otimes\mathbb{B}$ undergoes one $*$-unitary filtering operation on partition $A$ and one projective measurement on partition $B$. The conditional probability of outcome $j$ given filter setting $k$ is
 
@@ -83,13 +83,13 @@ $$
 p(j\mid k) = \mathrm{Tr}\!\left(\bigl(e_t\otimes \tilde\Pi_B^{(j)}\bigr)\circ\bigl(\tilde Q_A^{(k)}\otimes e_t\bigr)\circ \tilde{Ϛ}_{\Psi}\circ\bigl(\tilde Q_A^{(k){}^{*}}\otimes e_t\bigr)\right),
 $$
 
-using the cyclicity of the trace. This is a **single trace formula**, preceded by a $*$-unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
+using the cyclicity of the trace. This is a **single pairing formula**, preceded by a $*$-unitary conjugation. For the classical non-separable states of interest — those in which the excitation is not attached to either partition — the trace over partition $A$ collapses, because $\tilde Q_A^{(k)}$ acts only on $A$ and the trace is cyclic:
 
 $$
 p(j\mid k) = \mathrm{Tr}_{\mathbb{B}}\!\left(\tilde\Pi_B^{(j)}\,\tilde{Ϛ}_{\Psi,B}\right), \qquad \tilde{Ϛ}_{\Psi,B} = \mathrm{Tr}_A \tilde{Ϛ}_{\Psi}.
 $$
 
-The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_{\Psi,B}$ is pure — which makes $\tilde{Ϛ}_{\Psi}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this trace formula.
+The conditional probability is therefore **independent of the filter setting** $k$, and it equals $1$ only when the reduced state $\tilde{Ϛ}_{\Psi,B}$ is pure — which makes $\tilde{Ϛ}_{\Psi}$ separable. The general formula above gives the conditional probability for any state and any pair of operations, but it does not by itself reproduce the deterministic filter-outcome correlation of the classical configuration: that correlation is a feature of the one-idempotent-one-$*$-unitary setup itself, not a consequence of this pairing formula.
 
 The distinction in the framework's notation is therefore:
 
@@ -107,7 +107,7 @@ The paper's Figure 1 partitions non-separable states into nested subsets accordi
 
 ### Subset I: Two objects
 
-Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{B}_{\Psi}^{(A)} \otimes \mathbb{B}_{\Psi}^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the trace pairing.
+Two distinct excitations, one in each partition. The joint state is a non-separable element of $\mathbb{B}_{\Psi}^{(A)} \otimes \mathbb{B}_{\Psi}^{(B)}$, and each factor carries its own excitation structure. Both idempotents $\tilde\Pi_A^{(i)}$ and $\tilde\Pi_B^{(j)}$ are physically meaningful, and the joint probability is the tensor-product Hermitian form, read as the Hermitian pairing.
 
 The prototypical examples are the two-particle singlet and the two-photon polarization singlet. In the framework, the singlet is the idempotent
 
@@ -115,7 +115,7 @@ $$
 \tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right),
 $$
 
-and the joint probability is the normalised Hermitian form, read as the normalised Hermitian form with $\tilde\Pi_A(\vec a)\otimes \tilde\Pi_B(\vec b)$, read as the trace pairing, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
+and the joint probability is the normalised Hermitian form, read as the normalised Hermitian form with $\tilde\Pi_A(\vec a)\otimes \tilde\Pi_B(\vec b)$, read as the Hermitian pairing, where $\vec a$ and $\vec b$ are unit vectors along the two measured directions. This is the case treated in *Exercise: Entanglement Entropy and the Partial Trace*.
 
 ### Subset IIa: Single excitation split by a beam splitter
 

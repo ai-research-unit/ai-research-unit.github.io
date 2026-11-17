@@ -275,7 +275,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## What the Algebra Supplies and What It Imports
 
-**Supplied by the algebra, and recomputed here.** The material sector $\mathbb{B}_{\Phi}$ as the value space of the potential; the field strength $\tilde{F}$ with vanishing scalar part and its gauge-invariant character; the d'Alembertian $\Box$ as a central real scalar operator, so that it acts componentwise and commutes with the sector decomposition; the divergence operation $(\tilde\nabla_\Phi)^{\natural}$ and its scalar part, which turn the biquaternion field equation into the Lorenz condition by the vanishing of $\mathrm{Sc}(\tilde{F})$; the biquaternion norm as the unique invariant mass term available at this order, so that the mass term is central and does not mix the sectors; the complex coordinate $Q_\mu$, in which the polarization completeness relation and the projector take their stated form; and the trace formula, in which the positive-definite norm of the three-polarization Fock space is expressed.
+**Supplied by the algebra, and recomputed here.** The material sector $\mathbb{B}_{\Phi}$ as the value space of the potential; the field strength $\tilde{F}$ with vanishing scalar part and its gauge-invariant character; the d'Alembertian $\Box$ as a central real scalar operator, so that it acts componentwise and commutes with the sector decomposition; the divergence operation $(\tilde\nabla_\Phi)^{\natural}$ and its scalar part, which turn the biquaternion field equation into the Lorenz condition by the vanishing of $\mathrm{Sc}(\tilde{F})$; the biquaternion norm as the unique invariant mass term available at this order, so that the mass term is central and does not mix the sectors; the complex coordinate $Q_\mu$, in which the polarization completeness relation and the projector take their stated form; and the pairing formula, in which the positive-definite norm of the three-polarization Fock space is expressed.
 
 **Interpretation, not derivation.** The interpretation of the three polarizations as the three states of a spin-one particle, and of the massless limit as the appearance of a gauge symmetry that removes one of them, is the standard interpretation of the Proca theory, and the framework is consistent with it. The algebra does not force the spin interpretation on its own; that comes from the adjoint action of the rotation group on the material sector, which the integer-spin construction of this subcategory develops from the same adjoint action.
 
@@ -283,7 +283,7 @@ The longitudinal polarization makes the point concretely. At $\mu\neq0$ its norm
 
 ## Open Questions
 
-1. **A biquaternion origin for the mass term.** The mass term is the biquaternion norm of the material vector times a parameter. Is there an algebraic reason for the biquaternion norm rather than some other central invariant — the trace pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.
+1. **A biquaternion origin for the mass term.** The mass term is the biquaternion norm of the material vector times a parameter. Is there an algebraic reason for the biquaternion norm rather than some other central invariant — the scalar pairing, the scalar part of a bilinear, a self-interaction term — or is the choice fixed only by the requirement that the equation be linear and second order? The same question arises for the Klein–Gordon field, and the two answers should be the same answer.
 
 2. **The second-class bracket in the algebra's own terms.** The Dirac bracket is standard, but it is defined by the constraint matrix $\mathcal{K}_{\mathrm{con}}$ and is not written in the algebra's operations. Is there a biquaternionic construction — a projection, a trace, a scalar-part pairing — that produces the reduced three-dimensional phase space directly, in the way that $\mathrm{Sc}(\tilde{\pi})\approx0$ writes the primary constraint?
 
@@ -332,7 +332,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},r}^{\dagger}(\vec p)$ | Mode operators with $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |
 | $:H:=\int d^3p/(2\pi\hbar)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$ | Normal-ordered Hamiltonian |
 | $D_{\mu\nu}(p)=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$ | Proca propagator; residue is the polarization projector |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading
 

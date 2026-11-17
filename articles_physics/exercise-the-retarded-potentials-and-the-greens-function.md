@@ -334,7 +334,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $r'_t - R$ | Retarded time |
 | $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | Gauge scalar; $S = 0$ is the Lorenz gauge |
 | $\vec u_R = \vec R/R$, $\vec\beta = \vec v/c$ | Unit retarded separation; dimensionless velocity (radiation article) |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading
 
@@ -342,7 +342,7 @@ The further reading of this exercise is the parent and companion articles of thi
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace and the trace formula.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian subspace and the pairing formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the direct parent: the potential equation and the normalisation of the four-current.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the field strength built from the potential by differentiation, and its biquaternion norm.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html) — the covariance of the four-potential, inherited here unchanged.

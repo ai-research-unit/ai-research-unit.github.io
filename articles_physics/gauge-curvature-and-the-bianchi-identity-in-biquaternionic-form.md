@@ -83,7 +83,7 @@ a genuinely non-abelian curvature, nonzero and non-central. The reduction to a s
 $$
 F_{\mathrm g,\mu\nu} = \tilde U\,F_{\mu\nu}\,\tilde U^{-1},
 $$
-which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\mu\nu})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational trace formula.
+which was verified both for an infinitesimal local $\tilde U = e_t + \varepsilon g$ with $g\in\mathrm{SU}(2)$ and for a finite constant $SU(2)$ element; in each case the residual vanished exactly. The trace $\mathrm{Tr}(F_{\mu\nu})$ is invariant — here it vanishes identically, since $\mathrm{SL}(2,\mathbb{C})$ elements are traceless — but the component is not: it is rotated by the group, and only gauge-invariant polynomials in $F$ are observables. Here and below $\mathrm{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ factor, not the informational pairing formula.
 
 ## The Covariant Derivative on the Curvature: Two-Sided, Not One-Sided
 
@@ -111,7 +111,7 @@ Finally, this gauge connection must not be confused with the gravitational conne
 $$
 D_\mu\tilde{Q} = \partial/\partial R_\mu\,\tilde{Q} + \vec\Gamma_\mu\tilde{Q} + \tilde{Q}\vec\Gamma_\mu^{*} ,
 $$
-because the infinitesimal Lorentz action on $\mathbb{B}_{\Phi}$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ and is one-sided; the gravitational connection lives in the six-dimensional traceless subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
+because the infinitesimal Lorentz action on $\mathbb{B}_{\Phi}$ is $G\tilde{Q} + \tilde{Q}G^{*}$, not the commutator; the two differ precisely for the boosts. The gauge connection lives in $\mathrm{SU}(2)\subset\mathbb{B}_{\Phi}$ and is one-sided; the gravitational connection lives in the six-dimensional scalar-free subspace and is two-sided. They share a name and nothing else, and no relation between them is asserted.
 
 ## The Bianchi Identity
 
@@ -337,5 +337,5 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html) — the two-sided gravitational connection $D_\mu\tilde{Q}=\partial/\partial R_\mu\,\tilde{Q}+\vec\Gamma_\mu\tilde{Q}+\tilde{Q}\vec\Gamma_\mu^{*}$, distinct from the one-sided gauge connection of this article.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector and the trace formula distinguished here from the matrix trace.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector and the pairing formula distinguished here from the matrix trace.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) and [Quaternion Algebra](../articles_maths/quaternion-algebra.html) — the multiplication rule, the conjugations, and the centre used throughout.

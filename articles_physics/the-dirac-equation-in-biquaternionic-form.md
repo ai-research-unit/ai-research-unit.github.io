@@ -577,7 +577,7 @@ $$
 $$
 Away from the scalars the two maps differ, and that difference is where the phases the corpus computes from a change of side come from. Neither map replaces the other.
 
-**The value uses an invertible element.** The second use of the letters is the split $\tilde X=\tilde X_L+\tilde X_R$, and it does use a chosen element. The element is the frame's third unit $\vec e_z$, a traceless unit with $\vec e_z^2=-e_t$, and the letters name the two eigenspaces of the right multiplier,
+**The value uses an invertible element.** The second use of the letters is the split $\tilde X=\tilde X_L+\tilde X_R$, and it does use a chosen element. The element is the frame's third unit $\vec e_z$, a scalar-free unit with $\vec e_z^2=-e_t$, and the letters name the two eigenspaces of the right multiplier,
 $$
 R_{\vec e_z}\tilde X_L=-i\tilde X_L,\qquad R_{\vec e_z}\tilde X_R=+i\tilde X_R ,
 $$

@@ -113,7 +113,7 @@ the middle image is spanned by $\sigma_1$ and $\sigma_3$, since $[J,\sigma_1]=-2
 
 **The triangular complement fails already at $n=2$.** With $X=J$ and $P=E_{12}$ the commutator is $E_{22}-E_{11}$, which is diagonal and therefore not in $UT_2$. The failure at the smallest case is the same failure as at every case, and it cannot be repaired by choosing a different complement of dimension $3$: the criterion tests a bracket, and the bracket of the anti-Hermitian line with the triangular algebra always reaches the diagonal.
 
-**The Cartan form at $n=2$ is the Euclidean form on three dimensions.** Since $\mathfrak{sl}_2$ is three-dimensional and $\mathfrak{so}(2)$ is one-dimensional, the complement is two-dimensional and the definite form is $4\sum X_{ij}^{2}$ on the traceless part. The biquaternion reading of the pair is the one of *Coda: $n=2$ and the Biquaternion Algebra*: the subalgebra is the rotation direction, the complement the two stretch directions, and the pair is the model of every later symmetric space.
+**The Cartan form at $n=2$ is the Euclidean form on three dimensions.** Since $\mathfrak{sl}_2$ is three-dimensional and $\mathfrak{so}(2)$ is one-dimensional, the complement is two-dimensional and the definite form is $4\sum X_{ij}^{2}$ on the scalar-free part. The biquaternion reading of the pair is the one of *Coda: $n=2$ and the Biquaternion Algebra*: the subalgebra is the rotation direction, the complement the two stretch directions, and the pair is the model of every later symmetric space.
 
 ## Summary
 

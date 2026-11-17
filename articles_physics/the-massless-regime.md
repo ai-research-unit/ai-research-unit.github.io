@@ -329,7 +329,7 @@ So the identity of the algebra is the sum of two null idempotents, and neither s
 
 **In the matrix model the idempotent is a rank-one projector with trace one.** Its image is one-dimensional, its kernel is three-dimensional, and its determinant vanishes. So the four numbers are one number and one rank: the projector is normalised by its trace and annihilated by its determinant.
 
-**This is the table to consult whenever a reader wants one of the invariants to be a probability.** The trace of the idempotent is one, so the idempotent is a state in the sense of having unit weight; its norm is zero, so the norm is not that weight. Both statements are about the same element, and they are not in conflict: the norm is a multiplicative invariant of the algebra and the trace is an additive one.
+**This is the table to consult whenever a reader wants one of the invariants to be a probability.** Twice the scalar part of the idempotent is one, so the idempotent is a state in the sense of having unit weight; its norm is zero, so the norm is not that weight. Both statements are about the same element, and they are not in conflict: the norm is a multiplicative invariant of the algebra and the trace is an additive one.
 
 ### Normalise by the Trace
 

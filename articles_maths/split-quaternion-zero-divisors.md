@@ -103,7 +103,7 @@ $$
 
 Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.
 
-**Proof.** Write $\tilde q = q_t + \vec v$ with $q_t \in S$ and $\vec v \in V$. Since $\vec e_x, \vec e_y, \vec e_z$ are traceless and the product of two distinct generators is the third with a sign, the square is
+**Proof.** Write $\tilde q = q_t + \vec v$ with $q_t \in S$ and $\vec v \in V$. Since $\vec e_x, \vec e_y, \vec e_z$ are scalar-free and the product of two distinct generators is the third with a sign, the square is
 
 $$
 \tilde q^2 = q_t^2 + 2q_t\vec v + \vec v^2 = q_t^2 + 2q_t\vec v - \langle \vec v\rangle_{\natural},
@@ -138,7 +138,7 @@ The zero divisors are distributed over the distinguished subspaces as follows. T
 
 The table is completed by the following observations.
 
-**The vector subspace.** On $V$ the zero divisors are exactly the lightlike vectors, and by *Nonzero Nilpotents* they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the traceless part and does not hold in the whole algebra.
+**The vector subspace.** On $V$ the zero divisors are exactly the lightlike vectors, and by *Nonzero Nilpotents* they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the scalar-free part and does not hold in the whole algebra.
 
 **The idempotents.** The idempotents $\tilde\pi_{1,2} = \tfrac12(1 \pm \vec e_y)$ are zero divisors with $\tilde\pi_1 \tilde\pi_2 = 0$; they are not nilpotent, since $\tilde\pi_{1,2}^2 = \tilde\pi_{1,2} \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
 

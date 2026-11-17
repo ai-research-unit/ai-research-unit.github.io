@@ -46,7 +46,7 @@ with the rapidity $\theta_{\mathrm{rpd}}$ and $\tanh\theta_{\mathrm{rpd}}=v/c$.
 | under the star | anti-Hermitian | Hermitian |
 | sector | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ |
 | exponential is | a rotation, compact, periodic | a boost, non-compact, monotone |
-| trace of the square | $-\tfrac12$ | $+\tfrac12$ |
+| twice the scalar part of the square | $-\tfrac12$ | $+\tfrac12$ |
 
 The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the signature of the invariant form.
 
@@ -138,7 +138,7 @@ $$
 \langle K_i,K_j\rangle_{\mathrm{tr}}=+\tfrac12\delta_{ij}.
 $$
 
-So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because the trace of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
+So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because twice the scalar part of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
 
 ### The Killing Form
 

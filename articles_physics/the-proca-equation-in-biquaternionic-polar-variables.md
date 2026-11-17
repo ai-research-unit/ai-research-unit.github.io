@@ -35,7 +35,7 @@ $$
 
 and for a spacelike one the same expression with the frame conjugated by $\hat u$ and one term added. The central bracket of the Dirac word is absent identically in both branches, and the scalar bracket is exactly the gradient of $\ln r$. That absence is the polar form of the source article's central statement that the Proca field is real: a real four-vector has no phase to differentiate.
 
-*Third, the equation separates into a scale equation and a transport equation.* Multiplying the Proca equation by $\tilde A_\Phi^{-1}$ and splitting into scalar and traceless parts gives
+*Third, the equation separates into a scale equation and a transport equation.* Multiplying the Proca equation by $\tilde A_\Phi^{-1}$ and splitting into scalar and scalar-free parts gives
 
 $$
 \bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
@@ -222,7 +222,7 @@ $$
 \boxed{\;\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0\;}
 $$
 
-where the second display is an equation in the traceless part of $\mathbb{B}$, that is, a Hermitian-vector equation with three real components, and the first is one real equation. Four real equations in all, for four parameters: the count is exact, and that is the sense in which the polar form of the material sector is a chart and not a reduction.
+where the second display is an equation in the scalar-free part of $\mathbb{B}$, that is, a Hermitian-vector equation with three real components, and the first is one real equation. Four real equations in all, for four parameters: the count is exact, and that is the sense in which the polar form of the material sector is a chart and not a reduction.
 
 **Why the traceless equation subtracts a trace.** The Maurer–Cartan term $\sum_\mu(\partial_\mu\Gamma_\mu+\Gamma_\mu^2)$ is not traceless: its scalar part is $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)$, and that piece is already the source of the first equation. Splitting the identity into scalar and traceless parts therefore requires the subtraction, and the second display without it would carry a scalar component that duplicates the first. The cross term needs no correction, because $\mathrm{Sc}(\Gamma_\mu)=0$ identically. The two displays together are the identity, and neither alone is.
 

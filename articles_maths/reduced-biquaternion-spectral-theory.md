@@ -28,7 +28,7 @@ $$
 $$
 are the **reduced trace** and the **reduced determinant**. The element is singular exactly when $0\in\sigma(\breve Q)$, that is when $Q_{+}=0$ or $Q_{-}=0$, which is the zero-divisor condition $\langle \breve Q\rangle_{\mathrm{ts}}=0$.
 
-*Proof.* In the basis $1,j$ the matrix of $L_{\breve Q}$ is $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$, whose characteristic polynomial is $(\lambda-Q_{\blacktriangle})^{2}-Q_{\blacktriangledown}^{2}=(\lambda-Q_{\blacktriangle}-Q_{\blacktriangledown})(\lambda-Q_{\blacktriangle}+Q_{\blacktriangledown})=(\lambda-Q_{+})(\lambda-Q_{-})$; the trace is $2Q_{\blacktriangle}$ and the determinant $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$, and the algebra is commutative, so left and right multiplications coincide.
+*Proof.* In the basis $1,j$ the matrix of $L_{\breve Q}$ is $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$, whose characteristic polynomial is $(\lambda-Q_{\blacktriangle})^{2}-Q_{\blacktriangledown}^{2}=(\lambda-Q_{\blacktriangle}-Q_{\blacktriangledown})(\lambda-Q_{\blacktriangle}+Q_{\blacktriangledown})=(\lambda-Q_{+})(\lambda-Q_{-})$; the scalar part is $Q_{\blacktriangle}$ and the determinant $Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$, and the algebra is commutative, so left and right multiplications coincide.
 
 **Corollary (the diagonal model).** In the idempotent basis $\Pi_+,\Pi_-$ the operator $L_{\breve Q}$ is diagonal,
 $$

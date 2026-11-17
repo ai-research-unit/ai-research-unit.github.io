@@ -292,7 +292,7 @@ The three two-dimensional cases separate by two elementary elements, and the sep
 - The *degenerate* case is $\operatorname{span}\{I,N_{+},\sigma_3\}$ with $N_{+}=\sigma_1+J=i\vec e_x+\vec e_y$ (not to be confused with the nilpotent $N=\tfrac12(i\vec e_x-\vec e_y)$ of the Lie layer), and $N_{+}^2=\sigma_1^2+J^2+\sigma_1J+J\sigma_1=I-I+\sigma_3-\sigma_3=0$, so it too contains a nonzero nilpotent and the nilpotent count does not separate it from the indefinite case. What separates them is the other direction: the indefinite case contains $J$, which satisfies $J\circ J=-I$, and the degenerate case contains no element at all with square $-I$. Indeed an element $aI+bN_{+}+c\sigma_3$ squares to $(a^2+c^2)I+2abN_{+}+2ac\sigma_3$, because $N_{+}\sigma_3+\sigma_3N_{+}=\operatorname{tr}(N_{+}\sigma_3)I=0$, and its scalar part $a^2+c^2$ is never $-1$. The degenerate algebra is therefore a third type and not a copy of either of the other two.
 
 
-**Remark (idempotents).** The Jordan algebra $\mathbb{R}I\oplus V$ has a nontrivial idempotent exactly when $V$ contains an element $U$ with $Q(U)>0$. For then $W=U/\sqrt{Q(U)}$ satisfies $W^{2}=I$, and $P=\tfrac12(I+W)$ satisfies $P\circ P=\tfrac14(I+2W+W^{2})=\tfrac12(I+W)=P$ and $P\neq0,I$; conversely an idempotent $P\neq0,I$ has trace $1$ and the traceless part $2P-I$ has square $I$ and positive $Q$. The split three-dimensional algebra therefore has idempotents and the algebra $H_2(\mathbb{R})$ has them too, while a Jordan algebra whose form is negative definite on $V$ has only $0$ and $I$. The count of idempotents is the coarsest invariant of the layer, and it is the one used in the comparison of the eleventh section.
+**Remark (idempotents).** The Jordan algebra $\mathbb{R}I\oplus V$ has a nontrivial idempotent exactly when $V$ contains an element $U$ with $Q(U)>0$. For then $W=U/\sqrt{Q(U)}$ satisfies $W^{2}=I$, and $P=\tfrac12(I+W)$ satisfies $P\circ P=\tfrac14(I+2W+W^{2})=\tfrac12(I+W)=P$ and $P\neq0,I$; conversely an idempotent $P\neq0,I$ has trace $1$ and the scalar-free part $2P-I$ has square $I$ and positive $Q$. The split three-dimensional algebra therefore has idempotents and the algebra $H_2(\mathbb{R})$ has them too, while a Jordan algebra whose form is negative definite on $V$ has only $0$ and $I$. The count of idempotents is the coarsest invariant of the layer, and it is the one used in the comparison of the eleventh section.
 
 ## Associative Subalgebras of the Compact Form
 
@@ -346,7 +346,7 @@ $$
 M_2(\tilde Q^{*})=M_2(\tilde Q)^{\dagger},
 $$
 
-for every biquaternion $\tilde Q$, so $A^{\dagger}=-A$ reads $\tilde Q^{*}=-\tilde Q$ and the traceless condition reads $Q_t=0$. Hence $\mathfrak u(2)$ is the anti-Hermitian subspace, which is $\mathbb{B}_{\Phi}$, and $\mathfrak{su}(2)$ is its traceless part, the real pure quaternions. The partner subspace is the Hermitian one, $\mathbb{B}_{\Psi}$, and every biquaternion splits as
+for every biquaternion $\tilde Q$, so $A^{\dagger}=-A$ reads $\tilde Q^{*}=-\tilde Q$ and the traceless condition reads $Q_t=0$. Hence $\mathfrak u(2)$ is the anti-Hermitian subspace, which is $\mathbb{B}_{\Phi}$, and $\mathfrak{su}(2)$ is its scalar-free part, the real pure quaternions. The partner subspace is the Hermitian one, $\mathbb{B}_{\Psi}$, and every biquaternion splits as
 
 $$
 \tilde Q=\tfrac12\bigl(\tilde Q-\tilde Q^{*}\bigr)+\tfrac12\bigl(\tilde Q+\tilde Q^{*}\bigr),
@@ -372,7 +372,7 @@ $$
 \tilde Q^{*}=-\tilde Q\ \Longrightarrow\ (i\tilde Q)^{*}=+i\tilde Q ,
 $$
 
-so $i\,\mathfrak{su}(2)$ is the Hermitian traceless subspace, spanned by $i\vec e_x,i\vec e_y,i\vec e_z$, and it meets $\mathfrak{su}(2)$ only at $0$. The two halves fill the vector subspace:
+so $i\,\mathfrak{su}(2)$ is the Hermitian scalar-free subspace, spanned by $i\vec e_x,i\vec e_y,i\vec e_z$, and it meets $\mathfrak{su}(2)$ only at $0$. The two halves fill the vector subspace:
 
 $$
 \mathbb{B}_V=\mathfrak{su}(2)\oplus i\,\mathfrak{su}(2),

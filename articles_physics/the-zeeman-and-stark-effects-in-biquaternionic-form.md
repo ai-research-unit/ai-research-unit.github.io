@@ -6,7 +6,7 @@ If an atom is placed in a static magnetic field, its energy levels split; the sp
 
 This article treats both effects in the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the read-list articles. The effects themselves are standard and are reproduced exactly. What the article establishes is the algebraic structure of the two couplings and the reason their leading behaviours differ:
 
-1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{H}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $h_t\,e_t + i\vec h_\Psi$ with a real vector part, and both are traceless when the permanent diagonal moment vanishes.
+1. **Both couplings are Hermitian elements of $\mathbb{B}_{\Psi}$.** The Zeeman coupling is $\tilde{H}_{\Psi,Z} = -\gamma B\,\tilde{S}_{\Psi,3} = -\frac{\hbar\,\omega_{L}}{2}i\vec e_z$; the Stark coupling in a two-level truncation is $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x$. Both are of the form $h_t\,e_t + i\vec h_\Psi$ with a real vector part, and both are scalar-free when the permanent diagonal moment vanishes.
 2. **The Zeeman splitting is linear and isotropic.** A spin-1/2 in a field $\vec B = B\vec u$ has energies $\pm\frac{\hbar\,\omega_{L}}{2}$ for every direction $\vec u$; the splitting $\hbar\,\omega_{L}$ depends on $|\vec B|$ only, and the field direction selects the eigenbasis, not the eigenvalues.
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\delta E = -\frac{d^{2}\,E^{2}}{\hbar\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
@@ -60,7 +60,7 @@ $$
 \boxed{\;\delta E_{\mathrm{Zeeman}} =\hbar|\omega_L| =\hbar|\gamma|B\;},
 $$
 
-linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a traceless Hermitian element of $\mathbb{B}_{\Psi}$ has eigenvalues $\pm|\vec h_\Psi|$, and $|\vec h_\Psi|$ depends on the magnitude of the vector part alone.
+linear in the field and independent of its direction. The direction $\vec u$ enters only through the two eigenstates $\tilde\Pi_{1,2}(\vec u)$: rotating the field rotates the eigenbasis on the Bloch sphere but leaves the two energy levels fixed. This is a clean algebraic statement: a scalar-free Hermitian element of $\mathbb{B}_{\Psi}$ has eigenvalues $\pm|\vec h_\Psi|$, and $|\vec h_\Psi|$ depends on the magnitude of the vector part alone.
 
 For an electron, $\gamma = -\frac{g_{e}\,\mu_{B}}{\hbar}$ with $g_e\approx2.0023$; the two levels are separated by $\hbar|\omega_L| = g_e\mu_B B$. The magnitude of the splitting, and with it the numerical value of the gyromagnetic ratio, is external data: the algebra supplies the two-dimensional spectral structure and the isotropy, not the value of $\gamma$. The spin g-factor close to 2 is a relativistic (Dirac) result and belongs to the relativistic companion series; the orbital g-factor and the Landé factor for coupled $L$–$S$ systems belong to the companion article *Angular Momentum and Spin in Biquaternionic Form*.
 
@@ -117,7 +117,7 @@ $$
 \tilde H_\Psi = -E\,d\,i\vec e_x .
 $$
 
-This is a traceless Hermitian element with $\vec h_\Psi = (-dE,0,0)$, so its eigenvalues are
+This is a scalar-free Hermitian element with $\vec h_\Psi = (-dE,0,0)$, so its eigenvalues are
 
 $$
 \boxed{\;E_\pm = \pm\,dE\;},
@@ -125,7 +125,7 @@ $$
 
 a **linear** Stark splitting. The eigenstates are $\tilde\Pi_{1,2}(\vec u_x)$, the equal superpositions of the two parity eigenstates, which carry opposite permanent dipole moments $\pm d$ along $\vec u_x$ and are therefore shifted linearly by the field. This is the situation of the hydrogen $n=2$ manifold, where the $2s$ and $2p$ states are degenerate and the Stark effect is linear; the degeneracy is what permits a permanent dipole moment to exist in the field direction.
 
-In the algebra the linear Stark effect is nothing but the spectral decomposition of a traceless Hermitian element with a vector part along the field axis: $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x = -dE\,(\tilde\Pi_1(\vec u_x)-\tilde\Pi_2(\vec u_x))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
+In the algebra the linear Stark effect is nothing but the spectral decomposition of a scalar-free Hermitian element with a vector part along the field axis: $\tilde{H}_{\Psi,S} = -dE\,i\vec e_x = -dE\,(\tilde\Pi_1(\vec u_x)-\tilde\Pi_2(\vec u_x))$, so the two eigenvalues are $\mp dE$ and the two eigenstates are the two idempotents of the field axis. The essential input is the degeneracy; without it the two idempotents are not degenerate and the linear splitting is modified, as the next subsection shows.
 
 ### Quadratic Stark and the Polarizability
 

@@ -105,7 +105,7 @@ $$
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 
-**Proof.** $\exp(2\pi k\vec\zeta) = \cos(2\pi k) + \sin(2\pi k)\vec\zeta = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is traceless with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\zeta$ with $\vec\zeta$ a root of $-1$ (or $\tilde q = 0$).
+**Proof.** $\exp(2\pi k\vec\zeta) = \cos(2\pi k) + \sin(2\pi k)\vec\zeta = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $\exp(\tilde q) = 1$ for real $\tilde q$, then $\tilde q$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde q$ is scalar-free with $\tilde q^2 = -(2\pi k)^2$, i.e. $\tilde q = 2\pi k\,\vec\zeta$ with $\vec\zeta$ a root of $-1$ (or $\tilde q = 0$).
 
 Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -167,7 +167,7 @@ These are the elliptic, hyperbolic and parabolic one-parameter subgroups of the 
 
 ## The Lie Algebra and the Lorentz Group
 
-The Lie algebra of the group of invertibles is $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{GL}_2(\mathbb{R})$; the Lie algebra of $U = SL_2(\mathbb{R})$ is the traceless part $V \cong \mathrm{SL}_2(\mathbb{R})$; and the adjoint action on $V$ identifies these with the Lorentz Lie algebra:
+The Lie algebra of the group of invertibles is $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{GL}_2(\mathbb{R})$; the Lie algebra of $U = SL_2(\mathbb{R})$ is the scalar-free part $V \cong \mathrm{SL}_2(\mathbb{R})$; and the adjoint action on $V$ identifies these with the Lorentz Lie algebra:
 
 $$
 \operatorname{Lie}(U) = V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1),
@@ -191,7 +191,7 @@ The exponential has the closed form displayed above, with the sign of $\langle \
 |---|---|---|
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra, $\cong M_2(\mathbb{R})$ | *Split-Quaternion Algebra* |
 | $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2 - \tilde q_2\tilde q_1$ | the commutator making the algebra a Lie algebra | this article |
-| $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | the traceless elements under the bracket | *Split-Quaternion Scalar and Vector Subspaces* |
+| $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$ | the scalar-free elements under the bracket | *Split-Quaternion Scalar and Vector Subspaces* |
 | ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N \neq 0\}$ | the group of invertibles, $\cong GL_2(\mathbb{R})$, two components | this article |
 | $U = \{N=1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group | *Split-Quaternion Norm and Invertibility* |
 | $\vec e_y U = \{N=-1\}$ | the other component of the group of invertibles | this article |

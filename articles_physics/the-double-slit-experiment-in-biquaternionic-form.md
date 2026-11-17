@@ -340,14 +340,14 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, its two sectors, and the local complex structure.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the anti-Hermitian sector and the four-vectors.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector, its idempotents, and the trace formula.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector, its idempotents, and the pairing formula.
 - [Quantum Physics in Biquaternionic Form](quantum-physics-in-biquaternionic-form.html) — states, observables, the Born rule, and the measurement update.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html) — the wave function as a spinor in a Peirce carrier, a minimal left ideal here, and the central imaginary as the complex structure.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html) — the phase $\exp(i\theta_{\mathrm{act}})$ as a central $*$-unitary, its exponent in $\mathbb{B}_{\Phi}$, and the measure/paths gap.
 - [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the state space as a slice of the biquaternion-norm cone.
 - [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html) — the dephasing channel and the destruction of coherence.
 - [The Measurement Problem in Algebraic Form](the-measurement-problem-in-algebraic-form.html) — the mixture versus the realised outcome.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the trace formula and its comparison with the standard postulate.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the pairing formula and its comparison with the standard postulate.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html) — the spin degree of freedom used in the spinor-valued routes.
 - [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html) — the $i\epsilon$ direction shared with the phase exponent.
 - [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html) — the transfer $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ that turns the phase into a decaying weight.

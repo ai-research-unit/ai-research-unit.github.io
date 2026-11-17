@@ -145,7 +145,7 @@ where $[\,\cdot\,]_\nu$ is the coefficient of $e_\nu$. **Every term is built fro
 
 ## The Loop Invariant: a Holonomy and a Phase
 
-**The circulation of the spin-half fluid is not a number, and that is what distinguishes it from the scalar one.** Integrate the velocity around a closed loop. Because $\tilde V_\Phi$ is built from the frame, the integral is the trace of the frame's transport around the loop, and the transport is an element of the Lorentz group:
+**The circulation of the spin-half fluid is not a number, and that is what distinguishes it from the scalar one.** Integrate the velocity around a closed loop. Because $\tilde V_\Phi$ is built from the frame, the integral is twice the scalar part of the frame's transport around the loop, and the transport is an element of the Lorentz group:
 
 $$
 \oint\tilde V_\Phi\cdot\mathrm{d}\vec l

@@ -172,7 +172,7 @@ and the weight is $\exp(-S_E)$. Four terms and every one of them positive. **The
 
 ## Open Questions
 
-1. **The Jacobian's regularisation.** Whether the product $\prod_x r(x)$ admits a subtraction that is natural to the framework — from the trace form, or from the biquaternion norm, or from the real structure — rather than the lattice's, is not settled. The chart makes the question one-dimensional per point, which may make it easier; it does not answer it.
+1. **The Jacobian's regularisation.** Whether the product $\prod_x r(x)$ admits a subtraction that is natural to the framework — from the plain form, or from the biquaternion norm, or from the real structure — rather than the lattice's, is not settled. The chart makes the question one-dimensional per point, which may make it easier; it does not answer it.
 
 2. **The winding sectors.** The angle is compact, so the field space splits by the winding of $\theta_{\mathrm{pha}}$ on a closed surface. Whether the polar integral in a fixed winding sector is a distinct object, and whether the sectors are summed with phases, is not treated. The variational companion's circulation is the classical shadow of the same question.
 

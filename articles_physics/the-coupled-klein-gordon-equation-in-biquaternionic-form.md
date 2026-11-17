@@ -339,7 +339,7 @@ The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\
 | $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-slot covariant derivative |
 | $\tilde\nabla_{\mathrm{gco}}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}$ | The covariant gradient and its quaternion conjugate |
 | $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$ | The covariant d'Alembertian |
-| $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength; a pure vector, traceless |
+| $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength; a pure vector, scalar-free |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Its components; $[D_\mu,D_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$ |
 | (E1), (E2) | $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$; $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ |
 | $S_{\mathrm{c}}$, $S_{\mathrm{a}}$ | The slot-summed action (adopted); the algebra-invariant action (recorded) |

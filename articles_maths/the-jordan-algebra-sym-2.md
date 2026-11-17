@@ -4,7 +4,7 @@
 
 **The symmetric matrices of order two, with the product $X\circ Y=\tfrac12(XY+YX)$, form a Jordan algebra of dimension $3$, and it is the spin factor $\mathbb{R}\oplus V$ of a two-dimensional Euclidean plane.**
 
-The article proves the Jordan axioms, identifies the generic trace with $\operatorname{tr}$ and the generic norm with $\det$, proves the Cayley–Hamilton identity in the Jordan form, shows that the algebra has no nilpotents, computes its automorphism group as $\mathrm{O}(2)$ and its idempotents as the circle of traceless involutions, and identifies it as the spin factor of the traceless plane. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*, *The Symmetric and Antisymmetric Parts of a Product at $n=2$* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
+The article proves the Jordan axioms, identifies the generic trace with $\operatorname{tr}$ and the generic norm with $\det$, proves the Cayley–Hamilton identity in the Jordan form, shows that the algebra has no nilpotents, computes its automorphism group as $\mathrm{O}(2)$ and its idempotents as the circle of scalar-free involutions, and identifies it as the spin factor of the traceless plane. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*, *The Symmetric and Antisymmetric Parts of a Product at $n=2$* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
 
 It defers the Peirce decomposition relative to an idempotent to *The Peirce Decomposition of $\operatorname{Sym}_2$ as a Jordan Algebra* and the comparison with the wrong product on the same space to *$UT_2$ as a Linear Model of $\operatorname{Sym}_2$: Same Space, Wrong Product*.
 
@@ -116,7 +116,7 @@ $$
 
 **Theorem.** For $g\in\mathrm{O}(2)$ the map $\Phi_{g}(X)=gXg^{\mathsf T}$ is an automorphism of the Jordan algebra, and every automorphism is of this form.
 
-**Proof.** The map is linear, respects the symmetrised product because $g$ is invertible, and multiplies the norm by $\det(g)^{2}=1$. For the converse, an automorphism preserves the unit and the trace form, hence permutes the idempotents and acts on the traceless plane as an orthogonal map, which gives $g$ up to sign.
+**Proof.** The map is linear, respects the symmetrised product because $g$ is invertible, and multiplies the norm by $\det(g)^{2}=1$. For the converse, an automorphism preserves the unit and the trace form, hence permutes the idempotents and acts on the scalar-free plane as an orthogonal map, which gives $g$ up to sign.
 
 **Corollary.** $\operatorname{Aut}(\operatorname{Sym}_2)\cong\mathrm{O}(2)$, of dimension $1$, and the kernel of $g\mapsto\Phi_{g}$ is $\{\pm I\}$.
 
@@ -136,11 +136,11 @@ $$
 
 **Proof.** $X^{2}=X$ is the idempotent condition; with $X=\tfrac12(I+u)$ one computes $X^{2}=\tfrac14(I+2u+u^{2})$, which equals $X$ exactly when $u^{2}=I$.
 
-**Corollary.** The rank-one idempotents form the circle of traceless involutions, and the two primitive idempotents of a frame are orthogonal and sum to $I$.
+**Corollary.** The rank-one idempotents form the circle of scalar-free involutions, and the two primitive idempotents of a frame are orthogonal and sum to $I$.
 
 **Proof.** The traceless involutions are the matrices of the form $\tfrac12(I+u)$ with $u^{2}=I$, which is the unit circle in the traceless plane; the complementary idempotent is $\tfrac12(I-u)$.
 
-**The Jordan frame.** A pair $e,f$ of orthogonal idempotents with $e+f=I$ is a Jordan frame, and at order two every frame is of this form for an invertible element traceless $u$.
+**The Jordan frame.** A pair $e,f$ of orthogonal idempotents with $e+f=I$ is a Jordan frame, and at order two every frame is of this form for an invertible element scalar-free $u$.
 
 **Proof.** $f=I-e$ is the only complement of a given primitive idempotent in a two-dimensional algebra with unit.
 
@@ -148,7 +148,7 @@ $$
 
 $\operatorname{Sym}_2(\mathbb{R})$ with the product $X\circ Y=\tfrac12(XY+YX)$ is a commutative Jordan algebra of dimension $3$, with unit $I$, satisfying the Jordan identity. Its generic trace is $\operatorname{tr}$ and its generic norm is $\det$, the Cayley–Hamilton identity reads $X\circ X-\operatorname{tr}(X)X+\det(X)I=0$, and the bilinear form $\operatorname{tr}(X\circ Y)$ is associative and positive definite.
 
-In the coordinates $\alpha I+u$ the product is the spin factor product of the scalars with the traceless plane, the norm is $\alpha^{2}+\det u$, and the algebra is formally real with no nilpotent element. Its automorphism group is $\mathrm{O}(2)$, with $\pm I$ acting trivially, and its idempotents are $0$, $I$ and the circle $\tfrac12(I+u)$ with $u$ a traceless involution.
+In the coordinates $\alpha I+u$ the product is the spin factor product of the scalars with the traceless plane, the norm is $\alpha^{2}+\det u$, and the algebra is formally real with no nilpotent element. Its automorphism group is $\mathrm{O}(2)$, with $\pm I$ acting trivially, and its idempotents are $0$, $I$ and the circle $\tfrac12(I+u)$ with $u$ a scalar-free involution.
 
 ## Summary of Notation
 

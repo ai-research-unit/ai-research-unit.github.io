@@ -160,7 +160,7 @@ $$
 \boxed{\;H(\tilde U\tilde Q\tilde V)=H(\tilde Q)\quad(\tilde U,\tilde V\ *\text{-unitary})\;}
 $$
 
-**The proof is the definition read twice.** $(\tilde U\tilde Q\tilde V)(\tilde U\tilde Q\tilde V)^{*}=\tilde U\tilde Q\tilde V\tilde V^{*}\tilde Q^{*}\tilde U^{*}=\tilde U\tilde Q\tilde Q^{*}\tilde U^{*}$, and the trace of a unitary conjugate is the trace of the original. The scalar part is half the trace, so it is unchanged.
+**The proof is the definition read twice.** $(\tilde U\tilde Q\tilde V)(\tilde U\tilde Q\tilde V)^{*}=\tilde U\tilde Q\tilde V\tilde V^{*}\tilde Q^{*}\tilde U^{*}=\tilde U\tilde Q\tilde Q^{*}\tilde U^{*}$, and twice the scalar part of a unitary conjugate is twice the scalar part of the original. The scalar part is half of that, so it is unchanged.
 
 **The converse is the part that makes the norm canonical.** An element $\tilde V$ that preserves $H$ on the right for every $\tilde Q$ is $*$-unitary: if $\tilde Q\tilde V$ has the same H-norm as $\tilde Q$ for all $\tilde Q$, then $\tilde V\tilde V^{*}=e_t$. A numerical check on a hundred random non-unitary elements found a counterexample for every one of them, so the group of H-isometries is exactly $U(\mathbb{B})$ and not a larger group.
 

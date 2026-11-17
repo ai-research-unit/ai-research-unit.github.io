@@ -211,7 +211,7 @@ So the matrices of one element over all frames are one conjugacy class and not o
 
 ### I.2.c — The Trace Is the Clock and the Traceless Part Is the Motion
 
-**Read:** the trace sees the scalar part only, and the traceless part of the image is the vector part.
+**Read:** the trace sees the scalar part only, and the scalar-free part of the image is the vector part.
 
 $$
 2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad 2\,\mathrm{Sc}M=0\iff\tilde Q\in\mathbb{B}_{V} .

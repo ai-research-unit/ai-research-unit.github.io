@@ -549,7 +549,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
 | $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Biquaternion norm, $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 | $M$ | Black-hole mass |
 | $r_s=2GM/c^2$ | Schwarzschild radius |
 | $f=1-r_s/r$ | Metric function |

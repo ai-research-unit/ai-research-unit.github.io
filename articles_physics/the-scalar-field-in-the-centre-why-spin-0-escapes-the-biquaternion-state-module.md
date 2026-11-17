@@ -26,7 +26,7 @@ The conventions are those of the series: the algebra and the element glyphs of *
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the carrier, the two halves, the Lorentz action, and the invariant forms.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the Dirac field and its scalar bilinears.
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the four-vectors, and the biquaternion norm.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pure states, and the trace formula.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pure states, and the pairing formula.
 
 ## The Carrier of States and the Spin It Carries
 
@@ -85,7 +85,7 @@ $$
 
 the **centre** of the algebra. The result was confirmed independently by solving the condition over the eight real coordinates of $\tilde{Q}$: the system has rank six and nullity two, so the solution space is the real two-dimensional subspace spanned by $e_t$ and $ie_t$, as stated.
 
-The algebraic statement is therefore exact: **the elements of $\mathbb{B}$ that are invariant under the conjugation action of the rotation subgroup are precisely the central elements.** The traceless part transforms instead as the adjoint action, so under rotations the algebra separates into the centre, which is spin $0$, and the traceless part, which is spin $1$, while the carrier of states carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the centre.
+The algebraic statement is therefore exact: **the elements of $\mathbb{B}$ that are invariant under the conjugation action of the rotation subgroup are precisely the central elements.** The scalar-free part transforms instead as the adjoint action, so under rotations the algebra separates into the centre, which is spin $0$, and the traceless part, which is spin $1$, while the carrier of states carries spin $\tfrac{1}{2}$. A spin-$0$ field has no alternative but the centre.
 
 ### The Centre Is a Subalgebra and Not a Module
 

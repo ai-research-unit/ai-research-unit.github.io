@@ -320,7 +320,7 @@ the $i$ being what puts the vector part in the imaginary-vector direction that m
 
 ### The spin sum is one written action
 
-Averaging over the electron spin replaces the spin biquaternion by its trace part, $\tilde{Ϛ}_{\Psi,e}\to\tfrac12 e_t$ for the unpolarized ensemble, so the spin-dependent terms of the amplitude integrate to zero. The corresponding statement on the state side is the completeness relation of the plane waves, and written out it is one action on a biquaternion.
+Averaging over the electron spin replaces the spin biquaternion by its scalar part, $\tilde{Ϛ}_{\Psi,e}\to\tfrac12 e_t$ for the unpolarized ensemble, so the spin-dependent terms of the amplitude integrate to zero. The corresponding statement on the state side is the completeness relation of the plane waves, and written out it is one action on a biquaternion.
 
 Write $D(p)$ for the action that sends a biquaternion $\tilde{Ξ}$ to
 $$

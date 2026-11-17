@@ -186,7 +186,7 @@ The claim must not be overread, and the following are not asserted.
 | Item | Status |
 |---|---|
 | $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $2\,\mathrm{Sc}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
-| Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
+| Scalar part of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | A bounded pair satisfying the relation, at any dimension | Impossible; $[Q,P^n]=i\,\hbar\,nP^{n-1}$ forces $2\lVert Q\rVert\lVert P\rVert\ge \hbar\,n$ for every $n$ |
 | The Weyl form as a rewriting of the commutator form | Not equivalent; exponentiation needs the Baker–Campbell–Hausdorff formula, which needs bounded arguments |
@@ -229,7 +229,7 @@ The claim must not be overread, and the following are not asserted.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ | Biquaternion algebra |
-| $\mathcal{A}$ | Internal algebra: $\mathbb{B}$ with its sectors, the plain form and its trace reading, brackets and $*$-unitary group |
+| $\mathcal{A}$ | Internal algebra: $\mathbb{B}$ with its sectors, the plain form and its scalar reading, brackets and $*$-unitary group |
 | $\mathcal{M}$ | Carrier, a module over $\mathcal{A}$; its dimension is the domain's choice, finite or infinite |
 | $e_t,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |

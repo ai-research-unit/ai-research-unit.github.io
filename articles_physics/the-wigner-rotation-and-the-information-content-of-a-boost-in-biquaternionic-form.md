@@ -275,7 +275,7 @@ The information interpretation of the holonomy is the sharpest statement availab
 
 ## The Boost in the Two Sectors
 
-The structural companion's split reads the Wigner rotation sharply. The boost generators are the pure elements $i\vec e_\eta$ of the traceless **informational** sector, while the rotation they generate lies in the traceless **material** sector,
+The structural companion's split reads the Wigner rotation sharply. The boost generators are the pure elements $i\vec e_\eta$ of the scalar-free **informational** sector, while the rotation they generate lies in the scalar-free **material** sector,
 $$
 \tilde U_{\mathrm{Wig}} = \cos\frac{\theta_{\mathrm{wgn}}}{2}e_t + \sin\frac{\theta_{\mathrm{wgn}}}{2}\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r}\cdot\mathbf{e}\in\mathbb{B}_{\Phi}^{0} .
 $$

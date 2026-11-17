@@ -20,7 +20,7 @@ $$
 \vec{Ζ}=i\vec e_z,\qquad \vec{Ζ}^2=e_t,\qquad \vec{Ζ}^{\natural}=\vec{Ζ} ,
 $$
 
-which is Hermitian, traceless and of square $e_t$. It gives the two idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\pm i\vec e_z)$ and the two mixed units $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the four together are the Peirce frame
+which is Hermitian, scalar-free and of square $e_t$. It gives the two idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})=\tfrac12(e_t\pm i\vec e_z)$ and the two mixed units $\vec\Upsilon_\pm=\tfrac12(i\vec e_x\pm\vec e_y)$, and the four together are the Peirce frame
 
 $$
 \mathcal{P}=(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-).

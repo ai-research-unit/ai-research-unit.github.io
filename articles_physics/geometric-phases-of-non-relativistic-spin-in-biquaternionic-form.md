@@ -20,7 +20,7 @@ The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\h
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the pure-state idempotents.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its trace reading, and the Hermitian sector.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the plain form and its scalar reading, and the Hermitian sector.
 - Companion article *Exercise: Spin Precession in a Magnetic Field*, for the Larmor precession used for the cyclic evolution.
 
 ## The Two Phases

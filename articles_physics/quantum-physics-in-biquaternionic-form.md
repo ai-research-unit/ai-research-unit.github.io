@@ -200,7 +200,7 @@ $$
 
 The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\tilde\Pi_{1,2}(\vec u_\Psi)$. So every Hermitian element of $\mathbb{B}_{\Psi}$ has a spectral decomposition in terms of idempotents.
 
-**Observables with no scalar part.** The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the traceless observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_\Psi)$.
+**Observables with no scalar part.** The Hermitian elements $i\vec h_\Psi$ (with $h_t = 0$) are the analogs of the scalar-free observables of the qubit (the Pauli matrices). They have eigenvalues $\pm|\vec h_\Psi|$ and eigenvectors $\tilde\Pi_{1,2}(\vec u_\Psi)$.
 
 ### Compatibility
 

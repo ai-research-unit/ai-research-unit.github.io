@@ -287,7 +287,7 @@ The light cone is the zero set of the determinant on the material sector, and it
 | $\lVert\cdot\rVert_{\mathrm{op}}$ | the operator norm of the matrix display, equal on $\mathbb{B}_{\Psi}$ to the order-unit norm |
 | $\sqrt{H}$ | the corpus's Euclidean norm, not a JB-norm |
 | $N=\langle\cdot\rangle_{\natural}$ | the determinant of the Jordan algebra |
-| $\langle\cdot,\cdot\rangle_{*}$ | the trace form on $\mathbb{B}_{\Psi}$, half the trace pairing |
+| $\langle\cdot,\cdot\rangle_{*}$ | the Hermitian form on $\mathbb{B}_{\Psi}$, half the Hermitian pairing |
 | $U_{\tilde Q}$ | the quadratic representation, $U_{\tilde Q}\tilde P=\tilde Q\tilde P\tilde Q$ |
 | $\{x,y,z\}$ | the Jordan triple product, complex-bilinear |
 | $\{x,y,z\}_{\mathrm{C}^{*}}$ | the C\*-triple product, conjugate-linear in the middle slot |

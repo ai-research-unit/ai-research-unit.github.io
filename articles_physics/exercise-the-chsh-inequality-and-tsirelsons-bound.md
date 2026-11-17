@@ -246,7 +246,7 @@ $$
 H_{ab} = (i\vec a_1)\otimes(i\vec b_1),
 $$
 
-and the correlation is the tensor-product Hermitian form, read as the trace pairing $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\, H_{ab}^{*})$.
+and the correlation is the tensor-product Hermitian form, read as the Hermitian pairing $E(\vec a_1,\vec b_1)=\mathrm{Tr}(\tilde\Pi_\epsilon\, H_{ab}^{*})$.
 
 Assembling the four settings, the **CHSH element** is
 

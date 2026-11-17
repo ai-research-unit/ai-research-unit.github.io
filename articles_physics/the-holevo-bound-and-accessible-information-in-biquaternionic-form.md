@@ -255,7 +255,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 **Algebraic, or made precise here.**
 
-- The ensemble and the measurement are both families of positive elements of $\mathbb{B}_{\Psi}$, paired by the trace formula; the outcome probabilities are the Born rule.
+- The ensemble and the measurement are both families of positive elements of $\mathbb{B}_{\Psi}$, paired by the pairing formula; the outcome probabilities are the Born rule.
 - The average state is an element of $\mathbb{B}_{\Psi}$, and for a qubit its entropy is a function of its biquaternion norm, so the Holevo quantity of a pure-state ensemble is a biquaternion-norm function.
 - The Holevo quantity is the quantum mutual information of the classical-quantum state, $I(X:Q)=\xi$; the measurement is a channel onto a commutative subalgebra, and the bound is data processing.
 - The maximal Holevo quantity of a qubit is $\log2$, attained by an orthogonal pure-state ensemble of maximal entropy average.
@@ -269,7 +269,7 @@ which is smaller than $\log2$ for $r<1$, rises to the saturated value $\log2$ at
 
 ## Open Questions
 
-**1. A biquaternion-norm inequality.** The Holevo quantity of a pure-state ensemble is $H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$, and the bound is $I_{\mathrm{acc}}\leq H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the trace pairing, without passing through the general data-processing inequality?
+**1. A biquaternion-norm inequality.** The Holevo quantity of a pure-state ensemble is $H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$, and the bound is $I_{\mathrm{acc}}\leq H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$. Is there a direct algebraic proof of the bound for a qubit that uses only the biquaternion norm and the Hermitian pairing, without passing through the general data-processing inequality?
 
 **2. Many-qubit ensembles.** For $n$ qubits the average state lives in $\mathbb{B}_{\Psi}^{\otimes n}$ and its entropy is no longer a function of a single norm. What replaces the biquaternion-norm interpretation of $\xi$, and is there a tensor-product biquaternion norm that controls it?
 

@@ -219,7 +219,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | Covariant wavevector; the one substitution |
 | $\kappa_t,\vec\kappa$ | Its components; $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; $\vartheta_{\mathrm{gau}}=ϙ\Lambda/\hbar$ |
-| $\tilde F$ | Curvature of the connection; traceless, so blind to the constraint |
+| $\tilde F$ | Curvature of the connection; scalar-free, so blind to the constraint |
 | $k_m=mc/\hbar$ | Mass wave number |
 
 ## Further Reading

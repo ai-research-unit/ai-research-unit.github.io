@@ -332,7 +332,7 @@ Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent 
 
 **Open.**
 
-- **The intrinsic Lagrangian and pairing.** The field is an element and the bilinears are scalar parts of element products, but whether a $\mathbb{B}$-intrinsic Lagrangian with a trace pairing leads to the same normal-ordered observables, or to a theory inequivalent to the parent's, is not settled. The parent leaves it open and this article does not close it.
+- **The intrinsic Lagrangian and pairing.** The field is an element and the bilinears are scalar parts of element products, but whether a $\mathbb{B}$-intrinsic Lagrangian with a scalar pairing leads to the same normal-ordered observables, or to a theory inequivalent to the parent's, is not settled. The parent leaves it open and this article does not close it.
 - **The grading on the field.** The parity grading is realized in $\mathbb{B}$ only for one mode; for the field it is external, because the mode algebra is infinite-dimensional and does not embed in $\mathbb{B}$. Whether some enlarged structure carries it inside is open.
 - **The current.** The physical current needs the fixed units of the frame, $\vec e_\eta$ before the field and $\vec e_z$ after it in the spatial components; whether a bilinear exists that is conserved and carries no fixed unit is open, as the minimal-coupling companion states.
 - **Empirical content.** Whether the quantized field written in biquaternion form differs from the standard one in any observable is the framework's standing open question, and nothing here changes it.

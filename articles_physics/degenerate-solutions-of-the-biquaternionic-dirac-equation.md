@@ -90,7 +90,7 @@ The third object is the pair's own letters. They name **two components related b
 
 The third object cannot be the second, and the reason is one associativity step.
 
-*Theorem.* Let $u$ be a traceless element with $u^{2}=-e_t$ and let $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ be definite-value parts under it, that is $R_u\tilde\Xi_{L}=i\tilde\Xi_{L}$ and $R_u\tilde\Xi_{R}=-i\tilde\Xi_{R}$. If $k_m\neq0$, then the pair holds only for $\tilde\Xi_{L}=\tilde\Xi_{R}=0$.
+*Theorem.* Let $u$ be a scalar-free element with $u^{2}=-e_t$ and let $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ be definite-value parts under it, that is $R_u\tilde\Xi_{L}=i\tilde\Xi_{L}$ and $R_u\tilde\Xi_{R}=-i\tilde\Xi_{R}$. If $k_m\neq0$, then the pair holds only for $\tilde\Xi_{L}=\tilde\Xi_{R}=0$.
 
 *Proof.* Left multiplication keeps a value, because a left multiplier acts before the right multiplier that tests the value: if $\tilde Xu=-i\tilde X$ then $(\tilde A\tilde X)u=\tilde A(\tilde Xu)=-i\tilde A\tilde X$. The gradient is an element and multiplies on the left, so $\tilde\nabla_\Phi\tilde\Xi_{R}$ carries the value $-i$ wherever $\tilde\Xi_{R}$ does. The right side of the first line is $k_m\tilde\Xi_{L}$, of value $+i$, and the central coefficient does not move a value. Two definite-value elements of opposite value are equal only if both vanish, so the first line forces both sides to zero and then forces both components to vanish. The same argument applies to the second line, and it holds at each point of the field's domain, with no plane-wave assumption.
 
@@ -419,14 +419,14 @@ The letters $L$ and $R$ are the pair's two components and are fixed by the equat
 | $\lambda=2Q_t$ | The non-zero eigenvalue of a $\Sigma_{01}$ element; the companion's $c$ |
 | $\tilde\Pi=\tilde\Xi/\lambda$ | The idempotent of a $\Sigma_{01}$ element |
 | $A=e_t+(i/k_m)\tilde K_{\Phi}$ | The momentum factor; $\tilde\Xi_{0}=A\tilde\Xi_{0,R}$ |
-| $u$, $R_u$ | A declared traceless unit with $u^{2}=-e_t$, and its right multiplier |
+| $u$, $R_u$ | A declared scalar-free unit with $u^{2}=-e_t$, and its right multiplier |
 
 ## Further Reading
 
 - *The Dirac Equation in Biquaternionic Form*, for the chiral pair, the one-sided and two-sided forms, and the argument that the pair's letters name two components and not two values. This article takes the equation from there and adds no term to it.
 - *The Dirac Equation in Biquaternionic Polar Variables*, for the word whose domain this article leaves, and for the two families of fields on the cone, the parts of definite value and the one-sided plane waves.
 - *The Meaning of N Regularity and Degeneracy*, for the cone, its two strata, its two sectors, and the component forms of $\Sigma_{01}$ and $\Sigma_{00}$ that this article restates.
-- *Operator Chirality on the Biquaternion Algebra*, for the operator label, for the decomposition by a declared traceless unit, and for the list of objects that are offered as a home for chirality and are not one.
+- *Operator Chirality on the Biquaternion Algebra*, for the operator label, for the decomposition by a declared scalar-free unit, and for the list of objects that are offered as a home for chirality and are not one.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the null fields of the algebra and the reading of a degenerate spinor as a direction without a frame.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, second edition 2001), for the structure of the zero divisors of a Clifford algebra and the rank-one idempotents that this article's two sectors are.
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the massive and massless plane waves, the mass shell, and the two branches of the frequency.

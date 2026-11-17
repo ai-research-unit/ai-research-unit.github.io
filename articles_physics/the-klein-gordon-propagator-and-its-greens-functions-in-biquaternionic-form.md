@@ -404,7 +404,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 ## Open Questions
 
-1. **The kernel's normalisation in the interacting theory.** The free kernels are fixed by the free equation up to an overall constant, which this article fixes by the convention $(\Box-k_m^{2})G=-\delta^{(4)}$. Whether the interacting theory's field normalization, and with it the constant in front of the commutator, is fixed by the framework's trace formula or only by the standard canonical quantization is not settled here.
+1. **The kernel's normalisation in the interacting theory.** The free kernels are fixed by the free equation up to an overall constant, which this article fixes by the convention $(\Box-k_m^{2})G=-\delta^{(4)}$. Whether the interacting theory's field normalization, and with it the constant in front of the commutator, is fixed by the framework's pairing formula or only by the standard canonical quantization is not settled here.
 
 2. **The general Green's function of the biquaternionic operator.** The operator $\Box$ is treated here only in its central, scalar reduction, which is all a spin-$0$ field can see. Whether the gradient's action on the material and informational sectors with their full non-central structure admits sector-valued Green's functions with closed forms analogous to the Bessel form above, and whether those mix the sectors, is not settled by the scalar case and is not considered here.
 
@@ -463,7 +463,7 @@ The algebra's contribution is the identification of the singular loci with the b
 | $J_1,K_1$ | Bessel and modified Bessel functions |
 | $\mathrm{H}_{\mathrm{hvs}}(r'_t),\mathrm{sgn}(r'_t)$ | Heaviside step and sign functions |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading
 

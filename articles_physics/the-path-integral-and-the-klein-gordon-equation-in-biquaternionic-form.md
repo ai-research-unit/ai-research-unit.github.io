@@ -58,7 +58,7 @@ $$
 S[\tilde{Ξ}]=\int d^4r\left[-\frac{1}{2}\sum_\mu\mathrm{Sc}\!\left(\partial/\partial R_\mu\,\tilde{Ξ}^{*}\,\partial/\partial R_\mu\,\tilde{Ξ}\right)-\frac{1}{2}\,k_m^{2}\,\mathrm{Sc}\!\left(\tilde{Ξ}^{*}\tilde{Ξ}\right)\right]\in\mathbb{B}_{C} .
 $$
 
-The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the trace formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
+The action is central because every ingredient in it is: the field is central, the derivatives act coefficient-wise, the metric contraction is a real number, and the trace is the pairing formula's scalar projection. It is also real, since the kinetic and mass terms are Hermitian.
 
 The equation of motion follows by variation. For a variation $\delta\tilde{Ξ}$ vanishing at the boundary,
 
@@ -270,7 +270,7 @@ Four statements summarise what the framework contributes to the Klein–Gordon p
 
 ## Open Questions
 
-1. **The measure.** *Open for the author.* The functional measure $\mathcal{D}\tilde{Ξ}$ is defined here as the formal limit of the lattice measure, and the lattice measure is Lebesgue measure on the central-valued field at each site. Whether the framework supplies a canonical measure from its own structure — from the trace form, or from the biquaternion norm, or from the real structure $\flat$ — rather than inheriting the Lebesgue measure, is not settled here.
+1. **The measure.** *Open for the author.* The functional measure $\mathcal{D}\tilde{Ξ}$ is defined here as the formal limit of the lattice measure, and the lattice measure is Lebesgue measure on the central-valued field at each site. Whether the framework supplies a canonical measure from its own structure — from the plain form, or from the biquaternion norm, or from the real structure $\flat$ — rather than inheriting the Lebesgue measure, is not settled here.
 
 2. **Interactions.** The article has treated only the free Gaussian and the one-loop expansion about a source. A quartic interaction $\lambda|\xi|^4$ is central and preserves the centrality of every object; whether the framework's trace form suggests a preferred normalisation of the coupling, or a preferred class of interactions, is not considered.
 
@@ -327,7 +327,7 @@ The semiclassical expansion about a source has the classical Klein–Gordon equa
 | $G$, $G_E$ | Two-point kernels, $(\Box-k_m^{2})G=-\delta^{(4)}$ and $(-\Delta_E+k_m^{2})G_E=\delta^{(4)}$ |
 | $A$, $A^{-1}$ | Lattice quadratic form and its inverse (lattice propagator) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading
 

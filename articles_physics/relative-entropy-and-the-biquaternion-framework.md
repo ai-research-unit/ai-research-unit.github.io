@@ -110,7 +110,7 @@ $$
 \tilde{Ϛ}_{\Psi,1}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \tilde{Ϛ}_{\Psi,2}=\tfrac12\big(e_t+i\vec s\cdot\mathbf e\big)
 $$
-be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde{Ϛ}_{\Psi,2}$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the trace formula,
+be two states, with $|\vec r|,|\vec s|\le1$ and $\log\tilde{Ϛ}_{\Psi,2}$ existing, so that $|\vec s|<1$. The von Neumann entropy of a biquaternion state follows from the logarithm above and the pairing formula,
 $$
 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\big)
 =\tfrac12\log\frac{1-|\vec r|^2}{4}+|\vec r|\,\mathrm{artanh}|\vec r|,
@@ -119,7 +119,7 @@ so that
 $$
 S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artanh}|\vec r| .
 $$
-At $\vec r=0$ this returns $\log2$, the entropy of the maximally mixed qubit state, and at $|\vec r|\to1$ it tends to $0$, the entropy of a pure state. For the cross term, the trace formula gives
+At $\vec r=0$ this returns $\log2$, the entropy of the maximally mixed qubit state, and at $|\vec r|\to1$ it tends to $0$, the entropy of a pure state. For the cross term, the pairing formula gives
 $$
 \mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,2}\big)
 =\tfrac12\log\frac{1-|\vec s|^2}{4}
@@ -285,5 +285,5 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 - M. Takesaki, *Theory of Operator Algebras II* (Springer, 2003), for the Connes cocycle and the relative modular condition.
 - Companion article [The Hermitian GNS Construction in the Biquaternion Framework](the-hermitian-gns-construction-in-the-biquaternion-framework.html), for the states of $\mathbb{B}$, the Bloch ball, and the modular Hamiltonian.
 - Companion article [The Hermitian Tomita–Takesaki Theory under the Biquaternion Framework](the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.html), for the modular operator $\mathcal{M}_{\mathrm{mod}}$ and the modular flow.
-- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state space, the trace formula, and the pure-state idempotents.
+- Companion article [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the state space, the pairing formula, and the pure-state idempotents.
 - Companion article [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector and its zero-divisor cone.

@@ -207,7 +207,7 @@ r'_\parallel=\frac{r_\parallel+\tanh\theta_{\mathrm{rpd}}}{1+r_\parallel\tanh\th
 \vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta_{\mathrm{rpd}}+r_\parallel\sinh\theta_{\mathrm{rpd}}},
 $$
 
-with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. The congruence is therefore a flow of the ball onto itself, not a symmetry of it: it preserves the ball but not the radius, while the compact subgroup preserves both. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-$*$-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the $*$-unitary group and by no larger one.
+with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. The congruence is therefore a flow of the ball onto itself, not a symmetry of it: it preserves the ball but not the radius, while the compact subgroup preserves both. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-$*$-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the Hermitian pairing, on which the Born rule rests, is preserved exactly by the $*$-unitary group and by no larger one.
 
 The congruence is nevertheless the correct action on the spinor ray and on the pure-state idempotents considered as elements of the algebra. The resolution of the apparent conflict is to distinguish two objects that the non-relativistic formalism identifies: the **spinor** of a particle and the **spin state** of a particle at definite momentum. They transform by different formulas, and the second is the physically observable one.
 
@@ -269,15 +269,15 @@ $$
 $$
 and the Born pairing $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$. The four-momentum is the material element $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$, with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
-**Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
+**Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the scalar-free anti-Hermitian elements, the pure vectors
 $$
 \tfrac12 \vec e_\eta\in\mathbb{B}_{\Phi}^{0},
 $$
-and the boost generators are the traceless Hermitian ones, the pure elements
+and the boost generators are the scalar-free Hermitian ones, the pure elements
 $$
 \tfrac12 i \vec e_\eta\in\mathbb{B}_{\Psi}^{0},
 $$
-and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_\eta] = -\epsilon_{j\eta l}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{B}_{\Psi}$ and its *frame generators* are the Hermitian traceless elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{B}_{\Phi}$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
+and $[\tfrac12 i\vec e_j,\tfrac12 i\vec e_\eta] = -\epsilon_{j\eta l}\tfrac12\vec e_l$: the commutator of two boosts is a rotation. The relativistic qubit's *observables* are the Hermitian elements of $\mathbb{B}_{\Psi}$ and its *frame generators* are the Hermitian scalar-free elements of the same sector, while its *rotations* — the compact operations and the material generators — lie in $\mathbb{B}_{\Phi}$. This is the Cartan decomposition of the structural companion read on the qubit: the informational sector supplies the boosts and the observables, the material sector supplies the rotations, and the bracket $[\text{boost},\text{boost}] = \text{rotation}$ is the algebraic source of the Wigner rotation.
 
 ## Summary
 

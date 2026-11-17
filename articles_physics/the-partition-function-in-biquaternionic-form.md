@@ -59,7 +59,7 @@ $$
 
 It is a complex number for a general biquaternion and a **real** number when $\tilde Q\in\mathbb{B}_{\Psi}$. The scalar part is thus a **scalar extraction**: it retains the $e_t$ coefficient and annihilates the three vector directions $\vec e_x,\vec e_y,\vec e_z$.
 
-On $\mathbb{B}_{\Psi}$ this extraction is the plain form used throughout the corpus, read as the trace pairing. Writing
+On $\mathbb{B}_{\Psi}$ this extraction is the plain form used throughout the corpus, read as the plain pairing. Writing
 
 $$
 \tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1},\qquad \tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2},\qquad c r_{t,1},c r_{t,2}\in\mathbb{R},\ \ \vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3,

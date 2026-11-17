@@ -118,4 +118,4 @@ The ambiguity is not removable: a continuous choice of a rotor is possible only 
 - Brian C. Hall, *Lie Groups, Lie Algebras, and Representations* (Springer, 2015), for covering maps of matrix groups.
 - [The Exponential of $\operatorname{Skew}_2$: the Single Rotation Plane](the-exponential-of-skew-2-the-single-rotation-plane.html), for the Euler formula that produces the rotors.
 - [Normal $2\times2$ Matrices and the Common Spectral Theorem](normal-2x2-matrices-and-the-common-spectral-theorem.html), for the unitary diagonalisation used in the uniqueness proof.
-- [The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents](the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html), for the traceless Hermitian space on which the rotor acts.
+- [The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents](the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html), for the scalar-free Hermitian space on which the rotor acts.

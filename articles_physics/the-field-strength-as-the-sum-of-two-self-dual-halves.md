@@ -28,7 +28,7 @@ So the two-form's six real components are exactly the six real numbers an observ
 
 ### The Carrier in the Algebra
 
-The bivector space is the vector part of $\mathbb{B}$: the six-dimensional real space spanned by the products $\vec e_\eta\vec e_\chi$, equivalently the traceless part of the algebra, equivalently the Lorentz Lie algebra itself. The corpus's field-strength biquaternion
+The bivector space is the vector part of $\mathbb{B}$: the six-dimensional real space spanned by the products $\vec e_\eta\vec e_\chi$, equivalently the scalar-free part of the algebra, equivalently the Lorentz Lie algebra itself. The corpus's field-strength biquaternion
 
 $$
 \tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H

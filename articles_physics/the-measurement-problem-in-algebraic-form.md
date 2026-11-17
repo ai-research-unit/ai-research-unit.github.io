@@ -46,7 +46,7 @@ $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}\left(e_t \pm i\,\vec u\right), \qquad \vec u \text{ a unit pure real quaternion},
 $$
 
-with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$ (scalar part one half), $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$; in the $2\times2$ image it is the trace formula
+with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$ (scalar part one half), $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$; in the $2\times2$ image it is the pairing formula
 
 $$
 p_\pm = \frac{2\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec r\right),
@@ -226,7 +226,7 @@ The reformulation does not, and is not presented as, resolving the measurement p
 - **Select an outcome.** No element of $\mathbb{B}_{\Psi}$ and no operation in the algebra makes the realised outcome a function of the state. The statistics are determined; the outcome is not. This is the selection problem, restated and not solved.
 - **Derive the preferred basis.** The pointer direction $\vec u$ is an input; the framework represents einselection's structure but not its dynamics.
 - **Fix the cut.** The choice of acting element is the framework's form of the cut, and it is not derived.
-- **Explain probability.** The trace formula gives the numbers; it does not explain why they are frequencies or why a deterministic formalism has probabilities. This is the same division of labour as in the Born-rule article.
+- **Explain probability.** The pairing formula gives the numbers; it does not explain why they are frequencies or why a deterministic formalism has probabilities. This is the same division of labour as in the Born-rule article.
 - **Terminate the regress.** Enlarging to a tensor product with a record relocates the selection demand; it does not satisfy it.
 - **Distinguish the standard interpretations.** The framework is compatible with a structural interpretation and is not committed to Copenhagen, many-worlds, relational, or collapse interpretations; nothing in the algebra decides among them. In particular, the algebra contains both the $*$-unitary and the idempotent descriptions of a measurement, and it does not say which describes the world.
 - **Predict anything new.** As with the rest of the framework, the empirical content of standard quantum physics is reproduced, and the question of a distinguishing prediction is open. A reformulation with the same predictions cannot settle an empirical dispute.

@@ -45,7 +45,7 @@ so the **vacuum idempotent** is the complementary one
 $$
 \boxed{\;\vert 0\rangle\langle 0\vert=e_t-\tilde\Pi_-=\tfrac12\big(e_t+i\vec e_z\big)=\tilde\Pi_+\in\mathbb{B}_{\Psi}\;}.
 $$
-Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ is then the trace formula
+Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. The vacuum state is therefore realized, for one mode, as a pure-state idempotent of the informational sector, and the fermion parity is the Hermitian element $(-1)^F=e_t-2\tilde\Pi_-=i\vec e_z$. A vacuum expectation value of an observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ is then the pairing formula
 $$
 \langle\tilde H_\Psi\rangle_{0}=2\,\mathrm{Sc}\big(|0\rangle_{*}\langle 0|\,\tilde H_\Psi\big)=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde H_\Psi\big),
 $$
@@ -257,7 +257,7 @@ Both routes give $-\frac{\pi^{2}\,\hbar\,c}{240\,a^{4}}$, and both were recomput
 
 | Feature | Status in the framework | Where it comes from |
 |---|---|---|
-| Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$; trace formula |
+| Vacuum state (one fermionic mode) | Native | idempotent $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)\in\mathbb{B}_{\Psi}$; pairing formula |
 | Vacuum expectation values (one mode) | Native | $\langle\tilde H_\Psi\rangle_0=2\,\mathrm{Sc}(\tilde\Pi_+\tilde H_\Psi^{*})$ |
 | Fermion parity of the vacuum | Native | $(-1)^F=i\vec e_z$ |
 | Zero-point energy as a central scalar | Native (interpretation) | trace part of $\tilde H_\Psi$; commutes |

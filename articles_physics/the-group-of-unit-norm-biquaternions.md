@@ -173,7 +173,7 @@ $$
 \exp(\tilde X)=\sum_{n\ge0}\frac{\tilde X^{n}}{n!},
 $$
 
-with $\mathfrak{sl}(2,\mathbb{C})$ the traceless part, of real dimension six. The chart is **not** onto the group: it misses one conjugacy class, the class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and *The Exponential Map from Algebra to Group* proves both the exclusion and the fact that every element of the group is a product of two exponentials. This article records what the chart is, and the other states what it covers.
+with $\mathfrak{sl}(2,\mathbb{C})$ the scalar-free part, of real dimension six. The chart is **not** onto the group: it misses one conjugacy class, the class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and *The Exponential Map from Algebra to Group* proves both the exclusion and the fact that every element of the group is a product of two exponentials. This article records what the chart is, and the other states what it covers.
 
 For a pure generator the series closes, because every traceless element satisfies a quadratic,
 

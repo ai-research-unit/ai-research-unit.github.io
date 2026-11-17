@@ -49,7 +49,7 @@
 **What it costs.** Nothing is said about states. The slot is a property of an operator, and §*The Dirac Equation Reads the Sides* shows how that property reaches the equation.
 
 ## The Operator That Realises the Split
-**The object.** Take a single element $u$ of the algebra, traceless and with $u^2=-e_t$. The basis operator is
+**The object.** Take a single element $u$ of the algebra, scalar-free and with $u^2=-e_t$. The basis operator is
 $$
 -iR_u:\quad \tilde X\mapsto-i\tilde Xu .
 $$
@@ -203,7 +203,7 @@ The limit is stated once and it is not small: the two values of the basis operat
 | left slot, right slot, both slots, no single side | operator chirality, the membership in one of the two images |
 | $\tilde\nabla$ | the biquaternion gradient, acting by left multiplication |
 | $\tilde\nabla^{\natural}$ | its quaternion conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
-| $u$ | a traceless element with $u^2=-e_t$ |
+| $u$ | a scalar-free element with $u^2=-e_t$ |
 | $-iR_u$ | the basis operator that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |
 | $P_\pm=\tfrac12(\mathrm I\mp iR_u)$ | the projectors onto the two values |

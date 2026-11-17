@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The biquaternion algebra carries three carriers and no fourth. The centre $\mathbb{B}_{C}$ carries spin $0$, the minimal left ideals carry spin $\tfrac12$, and the material sector carries spin $1$ on its traceless part. That list is complete, and this article says why it is complete and what lies beyond it.
+The biquaternion algebra carries three carriers and no fourth. The centre $\mathbb{B}_{C}$ carries spin $0$, the minimal left ideals carry spin $\tfrac12$, and the material sector carries spin $1$ on its scalar-free part. That list is complete, and this article says why it is complete and what lies beyond it.
 
 **The list is complete for a reason that has nothing to do with dimensions.** The algebra is simple, and a simple algebra has one simple module. The carriers are three and the simple module is one, so the third carrier cannot be a module at all: it is the adjoint action, and the centre is the fixed line of that same action. The completeness of the list is therefore the completeness of the isotypic decomposition of the two actions the algebra has — left multiplication and conjugation — and each of the two contributes what it contributes: the left action one carrier, the adjoint action two.
 
@@ -52,7 +52,7 @@ $$
 \mathbb{B} = \mathbb{B}_{C} \oplus \mathbb{B}_{V},
 $$
 
-into the scalars and the traceless part, which is the decomposition under conjugation and carries the scalar and vector representations respectively. The two decompositions have different transformation characters, and keeping them apart is what keeps the module content (spin one-half) distinct from the conjugation content (spin zero and spin one). Both are carriers; only the first is a module.
+into the scalars and the scalar-free part, which is the decomposition under conjugation and carries the scalar and vector representations respectively. The two decompositions have different transformation characters, and keeping them apart is what keeps the module content (spin one-half) distinct from the conjugation content (spin zero and spin one). Both are carriers; only the first is a module.
 
 ### Every module is a sum of copies of the defining module
 
@@ -264,7 +264,7 @@ This is the algebra-level form of the catalogue statement. There is no tension b
 
 The catalogue has three entries, and the reason is a decomposition and not a dimension count.
 
-**The two actions and their isotypic components.** The algebra has two multiplications that make a subspace invariant. Left multiplication gives the regular module $\mathbb{B}\cong2S$, whose irreducible summands are the two minimal left ideals; so the left action contributes one carrier, of spin $\tfrac12$, in two copies. Conjugation gives the adjoint module $\mathbb{B}\cong Z\oplus V$, whose isotypic components are the centre and the traceless part; so the adjoint action contributes two carriers, of spins $0$ and $1$. Two actions, three isotypic components, three carriers. A fourth carrier would need a third action or a fourth isotypic component, and the algebra has neither.
+**The two actions and their isotypic components.** The algebra has two multiplications that make a subspace invariant. Left multiplication gives the regular module $\mathbb{B}\cong2S$, whose irreducible summands are the two minimal left ideals; so the left action contributes one carrier, of spin $\tfrac12$, in two copies. Conjugation gives the adjoint module $\mathbb{B}\cong Z\oplus V$, whose isotypic components are the centre and the scalar-free part; so the adjoint action contributes two carriers, of spins $0$ and $1$. Two actions, three isotypic components, three carriers. A fourth carrier would need a third action or a fourth isotypic component, and the algebra has neither.
 
 **The dimension count agrees and is weaker.** The representation spaces have dimensions $1$, $2$ and $3$, and $1+2+3=6>4=\dim_{\mathbb{C}}\mathbb{B}$, so no single module holds all three. That count is a consequence, not the reason: it is the reason no *one* action carries all three spins, and the reason there are three carriers is the decomposition above.
 
@@ -274,11 +274,11 @@ The catalogue has three entries, and the reason is a decomposition and not a dim
 
 ### The adjoint action and the spin-one carrier
 
-The companion spin-one article exhibits the spin-one structure inside $\mathbb{B}$: the inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q})=[\vec e_\eta,\tilde{Q}]$, act on the traceless part of the algebra as a three-dimensional angular momentum, and the traceless part is four real dimensions less its scalar line, that is, exactly the carrier of spin one.
+The companion spin-one article exhibits the spin-one structure inside $\mathbb{B}$: the inner derivations $D_\eta = \tfrac12\mathrm{ad}_{\vec e_\eta}a$, with $\mathrm{ad}_{\vec e_\eta}a(\tilde{Q})=[\vec e_\eta,\tilde{Q}]$, act on the scalar-free part of the algebra as a three-dimensional angular momentum, and the scalar-free part is four real dimensions less its scalar line, that is, exactly the carrier of spin one.
 
-**The carrier and the module are different objects, and both exist.** The traceless part is not a submodule of $\mathbb{B}$ under left multiplication — the product of an arbitrary element with a traceless element is not traceless — and it is a subcarrier under conjugation. Nothing follows about its spin from the first fact, because the spin is read from the action that makes it a carrier. Under the definition the corpus uses, the adjoint action is the carrier, and its dimension gives $s=1$.
+**The carrier and the module are different objects, and both exist.** The scalar-free part is not a submodule of $\mathbb{B}$ under left multiplication — the product of an arbitrary element with a scalar-free element is not scalar-free — and it is a subcarrier under conjugation. Nothing follows about its spin from the first fact, because the spin is read from the action that makes it a carrier. Under the definition the corpus uses, the adjoint action is the carrier, and its dimension gives $s=1$.
 
-**The bimodule reading.** The conjugation action $\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a bimodule action, and a bimodule over $\mathbb{B}$ is a module over $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$; correspondingly, the traceless part is the product $S\otimes\bar S$ with its trivial summand removed. This is a true and useful statement about where the carrier comes from. It is not a reason to deny it the name carrier: the carrier of a field is the subspace the field transforms in, and the traceless part is that subspace.
+**The bimodule reading.** The conjugation action $\tilde{U}\tilde{Q}\tilde{U}^{*}$ is a bimodule action, and a bimodule over $\mathbb{B}$ is a module over $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$; correspondingly, the scalar-free part is the product $S\otimes\bar S$ with its trivial summand removed. This is a true and useful statement about where the carrier comes from. It is not a reason to deny it the name carrier: the carrier of a field is the subspace the field transforms in, and the scalar-free part is that subspace.
 
 **Why the restriction to $G$ matters for the label.** The trace survives only because $\tilde{U}^{*}=\tilde{U}^{-1}$ in $G$. A general Lorentz element does not preserve it: it sends $\lambda e_t$ to $\lambda\tilde{U}\tilde{U}^{*}$, which is not a multiple of $e_t$. Under the full Lorentz group $\mathbb{B}$ is irreducible, carrying the four-vector $(\tfrac12,\tfrac12)$. The split $Z\oplus V$ is therefore a split under the rotations, not under the Lorentz group, as the companion article on the Lorentz representations records; the spin is a rotation label, and the carrier that holds it is a rotation carrier.
 
@@ -326,7 +326,7 @@ The interpretation gives the module count of this article a second form. The mod
 
 ## Summary
 
-The biquaternion algebra is $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, a simple algebra, and it carries three carriers: the centre $\mathbb{B}_{C}$ with spin $0$, the minimal left ideals $S_\pm$ with spin $\tfrac12$, and the material sector $\mathbb{B}_{\Phi}$ with spin $1$ on its traceless part. Two actions produce them — left multiplication, which gives the ideals, and conjugation, which gives the centre and the traceless part — and there is no third action, so there is no fourth carrier.
+The biquaternion algebra is $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$, a simple algebra, and it carries three carriers: the centre $\mathbb{B}_{C}$ with spin $0$, the minimal left ideals $S_\pm$ with spin $\tfrac12$, and the material sector $\mathbb{B}_{\Phi}$ with spin $1$ on its scalar-free part. Two actions produce them — left multiplication, which gives the ideals, and conjugation, which gives the centre and the traceless part — and there is no third action, so there is no fourth carrier.
 
 A **module** over the algebra carries only spin one-half. Every finite-dimensional module is a direct sum of copies of the two-dimensional $S$, by Artin–Wedderburn and Schur, so a module's rotation content is a multiple of spin one-half. The dimension argument alone is insufficient to exclude the four-vector, whose dimension four is even but whose weight content is $1\oplus0$; the weight argument decides it. The correct conclusion is not that the algebra has no spin one — it has, as the adjoint carrier — but that a module has none.
 

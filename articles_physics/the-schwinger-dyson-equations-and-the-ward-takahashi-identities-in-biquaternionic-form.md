@@ -209,7 +209,7 @@ For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is a
 
 ## Open Questions
 
-1. **A measure the algebra can formulate.** The identities rest on the invariance of $\mathcal{D}\tilde{Ξ}$, and the algebra carries no measure. Is there a finitely generated or algebraic measure on $\mathbb{B}$-valued configurations — a Gaussian weight fixed by the trace form and the central kinetic operator — whose translation invariance is algebraic rather than analytic, and does it reproduce the identities of this article without the analytic premise?
+1. **A measure the algebra can formulate.** The identities rest on the invariance of $\mathcal{D}\tilde{Ξ}$, and the algebra carries no measure. Is there a finitely generated or algebraic measure on $\mathbb{B}$-valued configurations — a Gaussian weight fixed by the plain form and the central kinetic operator — whose translation invariance is algebraic rather than analytic, and does it reproduce the identities of this article without the analytic premise?
 
 2. **The contact terms and the sector split.** The contact terms are delta functions at coincident points, and the fields carry the sector split $\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. Does the split organise the contact terms into two families — a sector-diagonal one for the central kinetic operator and a sector-mixing one for the Dirac mass — and does the mixing family account for the axial anomaly's structure?
 
@@ -245,7 +245,7 @@ The algebra's contribution is specific and limited. It supplies the functional d
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\flat=-{}^{*}$ | Anti-Hermitian conjugation |
 | $\langle\tilde Q,\tilde Q_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q^{*}\tilde Q_1)$ | Real bilinear form; source pairing |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $2\,\mathrm{Sc}(e_t)=2$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $2\,\mathrm{Sc}(e_t)=2$ | Pairing formula |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, series convention |
 | $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ | Quadratic operator |
 | $a$ | colour index of the gauge algebra, written low |

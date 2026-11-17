@@ -159,7 +159,7 @@ has $B^2=4\neq0$. The cone $\mathcal S$ is a discriminant locus attached to the 
 
 **Theorem (the norm does not separate the strata).** Let $Q_t\neq0$ and let $\vec\Upsilon\neq0$ with $\vec\Upsilon^2=0$. The scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm $Q_t^2$, the same trace $2Q_t$, and therefore the same characteristic polynomial $(X-Q_t)^2$. Their minimal polynomials are $X-Q_t$ and $(X-Q_t)^2$. At the other degenerate sector the same happens: the origin and a non-zero nilpotent share the norm $0$, the trace $0$ and the characteristic polynomial $X^2$, and differ in the minimal polynomial, $X$ against $X^2$.
 
-*Proof.* The element $\vec\Upsilon$ is pure and square-zero, so $N(Q_te_t+\vec\Upsilon)=Q_t^2$ and the trace is $2Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$. The nilpotent case is the same computation at $Q_t=0$.
+*Proof.* The element $\vec\Upsilon$ is pure and square-zero, so $N(Q_te_t+\vec\Upsilon)=Q_t^2$ and the scalar part is $Q_t$. The scalar satisfies $\tilde Q-Q_te_t=0$; the Jordan element satisfies $(\tilde Q-Q_te_t)^2=0$ and $\tilde Q-Q_te_t\neq0$. The nilpotent case is the same computation at $Q_t=0$.
 
 **Corollary (the norm does not see the strata).** At fixed $Q_t$ the scalar $Q_te_t$ and the Jordan element $Q_te_t+\vec\Upsilon$ have the same norm, and the origin and every non-zero nilpotent have norm $0$. The norm therefore cannot distinguish the scalar line from the Jordan part, nor the origin from the non-zero nilpotents.
 

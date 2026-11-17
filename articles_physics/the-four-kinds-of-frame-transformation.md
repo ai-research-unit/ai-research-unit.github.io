@@ -169,7 +169,7 @@ The last two rows are the ones worth stating: the parabolic case is the one in w
 |---|---|
 | elliptic | a rotation generator $J_\eta$, real coefficients in the exponent |
 | hyperbolic | a boost generator $K_\eta$, imaginary coefficients in the exponent |
-| parabolic | a **null** linear combination, $\tilde X$ traceless and nilpotent |
+| parabolic | a **null** linear combination, $\tilde X$ scalar-free and nilpotent |
 | loxodromic | a sum of a rotation and a boost generator about the same axis |
 
 Only the last row needs two generators, and only the third needs a generator outside the six: the six are a basis, but a null combination of them is not one of the six.

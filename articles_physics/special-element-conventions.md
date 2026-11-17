@@ -114,11 +114,11 @@ The standard pair of nilpotents is $\vec{\Upsilon}_1$ and $\vec{\Upsilon}_2$, th
 
 **The word, on a spinor.** Spinor chirality is the value: which eigenspace of the chirality operator an element occupies, left-handed or right-handed. It is a property of a field and not of an operator, and it is the reading a physicist gives the bare word. The two words are not rivals. A field's spinor chirality is read with the operator chirality of the operator that splits it: the operator's side says how it acts, the field's value says which half it lives in. A value needs an axis, because the eigenspaces are the ideals of a declared $\vec u$; a side needs none.
 
-**One basis operator that realises the split.** The side is the convention, and one operator shows it. For any traceless $u$ with $u^2=-e_t$ the operator
+**One basis operator that realises the split.** The side is the convention, and one operator shows it. For any scalar-free $u$ with $u^2=-e_t$ the operator
 $$
 -iR_u:\quad \tilde Q\mapsto-i\tilde Qu
 $$
-is a pure right multiplier; it squares to the identity, its trace is zero, and its two eigenspaces are of equal size. It is therefore an example of the right slot, and an example is never the definition of the label. Choose another $u$ and the basis operator changes while every label of every operator stays where it was.
+is a pure right multiplier; it squares to the identity, its scalar part is zero, and its two eigenspaces are of equal size. It is therefore an example of the right slot, and an example is never the definition of the label. Choose another $u$ and the basis operator changes while every label of every operator stays where it was.
 
 **The glyph is a name for one such basis operator.** Where the corpus prints the basis operator of the third direction it writes $\mathsf{V}_{\mathrm{vol}}=-iR_{\vec e_z}$, and the subscript names that one operator and carries no part of the label. The definition of that operator and its gamma arrays are in *Operator Chirality on the Biquaternion Algebra* and *Matrix Representations Conventions*, §*The Legacy Pauli Gamma Formulation*; the gamma display prints the same operator as $\gamma_5$, whose index belongs to that display and to no other.
 

@@ -22,7 +22,7 @@ with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $k_m=mc/\hb
 
 *Second, the field strength carries the connection, unlike the Dirac case.* The Proca equation contains $\tilde F$, and $\tilde F$ is built from the covariant gradient, so the connection enters the equation twice: once through the derivative and once through the field strength. In the Dirac equation the field strength is not in the equation at all, and the coupling enters once. The extra term is $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_{\Phi}^{\natural}\tilde A)$, it is bilinear in the two potentials, and it is the algebra's form of the commutator term that a non-abelian field strength carries.
 
-*Third, the Lorenz condition survives, and it survives in covariant form.* The second-order operator $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$ is the sum of the squared components plus the curvature, and the curvature term is a pure vector, so it has no scalar part. The trace of the coupled equation therefore forces $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ exactly, with no term to spare. What is not forced is the *ordinary* divergence: the covariant condition differs from it by a term bilinear in the connection.
+*Third, the Lorenz condition survives, and it survives in covariant form.* The second-order operator $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$ is the sum of the squared components plus the curvature, and the curvature term is a pure vector, so it has no scalar part. The scalar part of the coupled equation therefore forces $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ exactly, with no term to spare. What is not forced is the *ordinary* divergence: the covariant condition differs from it by a term bilinear in the connection.
 
 *Fourth, the carrier now has a central phase, so the field now has a charge.* The free Proca field is real, the central imaginary leaves the material sector, and the free article's conclusion is that there is no second current. A complex field has the phase, the phase is a symmetry of the coupled equation, and the Noether current exists. That current is the source the inhomogeneous Maxwell equation needs, and its existence is the reason the free article could not supply one.
 
@@ -46,7 +46,7 @@ $$
 \vec e_x\,\vec e_x=-e_t .
 $$
 
-The right side is real and central, so it is neither anti-Hermitian nor Hermitian-traceless; it is outside $\mathbb{B}_\Phi$. A hundred random products of material-sector elements leave the sector in every case, and the reason is structural: $\mathbb{B}_\Phi$ is a real subspace of dimension four in an algebra of real dimension eight, and it is closed under multiplication only by central *real* scalars.
+The right side is real and central, so it is neither anti-Hermitian nor Hermitian and scalar-free; it is outside $\mathbb{B}_\Phi$. A hundred random products of material-sector elements leave the sector in every case, and the reason is structural: $\mathbb{B}_\Phi$ is a real subspace of dimension four in an algebra of real dimension eight, and it is closed under multiplication only by central *real* scalars.
 
 **The obstruction is the coupling.** The gauge principle's minimal substitution is $\tilde\nabla_\Phi\mapsto\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ acting on the field from the left. The added element lies in $\mathbb{B}_\Phi$, so the coupled derivative of a material field is a sum of a material element and a product of two material elements. The first is in the sector, the second is not, and the equation cannot be posed inside the sector.
 
@@ -200,7 +200,7 @@ $$
 
 with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\mu}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
 
-**The trace of the equation therefore forces the constraint.** Applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the equation and taking the scalar part,
+**The scalar part of the equation therefore forces the constraint.** Applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the equation and taking the scalar part,
 
 $$
 k_m^2\,\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)
@@ -219,7 +219,7 @@ $$
 
 **The two readings of that line.** The left reading is the covariant Lorenz condition, and it is the one the equation forces. The right reading is the ordinary divergence, and it is *not* zero: it is fixed by the potential, slot by slot, since $\mathrm{Sc}(\tilde A_\Phi^{\natural}\tilde A)$ is one scalar built from the two potentials. For a purely electric constant potential the right side is $\frac{ϙ a}{\hbar}a'_t$ in the article's units, so even a constant electrostatic potential moves the ordinary divergence.
 
-**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is traceless. The trace sees only $\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the traceless part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
+**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is scalar-free. The trace sees only $\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the traceless part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
 
 **A check on a lattice.** Applying the composite to a random pure-vector field on a periodic lattice gives a scalar part of size $3\times10^{-13}$ in the free case and $4\times10^{-13}$ in a background with constant field strength — the same number, which is the numerical form of the statement that the curvature does not enter the trace. The same computation with the cross terms of the composite deleted — that is, with the algebra's units treated as commuting — gives zero identically, which locates the whole effect in the non-commutativity of the units.
 

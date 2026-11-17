@@ -113,7 +113,7 @@ the Gaussian integration of $\delta\tilde{Ξ}$ gives the one-loop effective acti
 $$
 \Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \tfrac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}] ,
 $$
-where $\mathrm{Tr}$ is the trace pairing. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
+where $\mathrm{Tr}$ is the trace on the module. The determinant and the effective action are thus the same object, and the determinant's regularization is the effective action's regularization.
 
 **The free case.** For the free biquaternion scalar, $S^{(2)}=W_{\mathrm{kinetic}}$ is central and mode-diagonal, and
 $$
@@ -143,7 +143,7 @@ The determinant's variation is the trace of the propagator against the variation
 $$
 \frac{\delta}{\delta\xi}\log\det S^{(2)}[\xi] = \mathrm{Tr}\left( \big(S^{(2)}[\xi]\big)^{-1}\,\frac{\delta S^{(2)}[\xi]}{\delta\xi}\right),
 $$
-where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\xi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is the trace pairing. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
+where $\xi$ is a background field and $(S^{(2)})^{-1}$ is the propagator. This is the identity that makes the determinant the generating functional of one-loop bubbles: differentiating $\log\det$ any number of times produces the connected one-loop graphs with insertions of $\delta S^{(2)}/\delta\xi$. In the biquaternion framework the inverse is the propagator of *The Feynman Propagator in Biquaternionic Form*, taken on the module, and the trace is taken on the module. The identity is standard and is recorded because it is the practical route by which the framework's determinants are computed: one computes the propagator and integrates the trace, rather than the product.
 
 ## Regularization
 

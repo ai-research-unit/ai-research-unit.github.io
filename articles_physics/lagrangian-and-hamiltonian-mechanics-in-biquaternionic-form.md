@@ -16,7 +16,7 @@ The conventions are those of the read list. The biquaternion algebra is $\mathbb
 
 The companion articles supply the pieces:
 - Companion article *The Material Sector: Four-Vectors, Interval and Lorentz Action*, for the material sector, the biquaternion norm, and the four-vectors.
-- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the trace formula, and the conjugation action.
+- Companion article *The Informational Sector: States, Observables and Probability*, for the Hermitian sector, the pairing formula, and the conjugation action.
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the classical bracket conventions and the boundary between the classical and quantum brackets.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor and the Hamiltonian flow on the coadjoint orbit.
 - Companion article *The Harmonic Oscillator in Biquaternionic Form*, for the phase plane and the sector structure of a mode.

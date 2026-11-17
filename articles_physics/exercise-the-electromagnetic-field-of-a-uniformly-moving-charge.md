@@ -427,7 +427,7 @@ The further reading of this exercise is the parent and companion articles of thi
 
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html) — the algebra, the two sectors, and the local complex structure.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the four-vectors, the biquaternion norm, and the zero-divisor cone on which the retarded separation sits.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector, the conjugation action, and the trace formula.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector, the conjugation action, and the pairing formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the gradient, the field strength, the potential and source, and the retarded solution.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html) — the invariants $I_1,I_2$ and the null/zero-divisor characterization of radiation used in Problem 6.
 - [Radiation from Accelerated Charges in Biquaternionic Form](radiation-from-accelerated-charges-in-biquaternionic-form.html) — the theory article: the retarded solution and the Liénard–Wiechert potential.

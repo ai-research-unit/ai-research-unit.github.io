@@ -59,7 +59,7 @@ The closed form is checked against the series on random traceless complex matric
 
 ### The Compact Case
 
-When $\Rho$ is real and nonzero, write $\tilde X=\Rho\hat X$ with $\hat X$ traceless and $\hat X^{2}=-e_t$. Then
+When $\Rho$ is real and nonzero, write $\tilde X=\Rho\hat X$ with $\hat X$ scalar-free and $\hat X^{2}=-e_t$. Then
 
 $$
 \exp(\tilde X)=\cos\Rho+\sin\Rho\,\hat{\tilde X},
@@ -91,7 +91,7 @@ The statements of the two subsections are the statement of the single formula, r
 | $\Rho=i\vartheta$ | $i\vartheta\vec u_{\mathrm b}$, $\vec u_{\mathrm b}^{2}=-e_t$ | $\cosh\vartheta+\sinh\vartheta\,\vec u_{\mathrm b}$ | boost by $2\vartheta$ |
 | $\Rho=0$ | nilpotent | $e_t+\tilde X$ | a wall element |
 
-The third row is the degenerate case: a nonzero traceless nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\det\tilde X=0$.
+The third row is the degenerate case: a nonzero scalar-free nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\det\tilde X=0$.
 
 ### The Half-Angle Convention
 
@@ -99,9 +99,9 @@ The factor $\tfrac12$ in the generators of *The Six Generators and Their Commuta
 
 ## What the Closed Form Parametrises
 
-### The Three Cases of a Traceless Element
+### The Three Cases of a Scalar-Free Element
 
-Every traceless $\tilde X$ is one of three kinds, and the value of $\Rho^{2}$ decides which.
+Every scalar-free $\tilde X$ is one of three kinds, and the value of $\Rho^{2}$ decides which.
 
 - $\Rho^{2}\neq0$: the two eigenvalues are $\pm\Rho$ and are distinct, so $\tilde X$ is diagonalisable and the exponential is conjugate to $\operatorname{diag}(e^{\Rho},e^{-\Rho})$.
 - $\Rho^{2}=0$ with $\tilde X\neq0$: $\tilde X$ is nilpotent, and the exponential is $e_t+\tilde X$, a unipotent element with a nonzero nilpotent part.
@@ -133,7 +133,7 @@ $$
 the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.
 
 - If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.
-- So $\tilde X$ has equal eigenvalues; being traceless, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.
+- So $\tilde X$ has equal eigenvalues; being scalar-free, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.
 
 Both cases exhausted, $\tilde A$ is not an exponential. The argument uses only the trace and the eigenvalues, and it is exact.
 
@@ -193,7 +193,7 @@ $$
 \operatorname{tr}\log\tilde Q=\log\det\tilde Q+2\pi i k .
 $$
 
-That freedom is precisely what allows the full algebra's exponential to be onto while the traceless one is not: a logarithm with any trace can be shifted to trace zero only if the shift does not change the exponential, and the shift by $2\pi i\,\mathrm{diag}(1,0)$ changes it. The obstruction is at once a trace statement and a conjugation statement, and they are the same statement.
+That freedom is precisely what allows the full algebra's exponential to be onto while the scalar-free one is not: a logarithm with any trace can be shifted to trace zero only if the shift does not change the exponential, and the shift by $2\pi i\,\mathrm{diag}(1,0)$ changes it. The obstruction is at once a trace statement and a conjugation statement, and they are the same statement.
 
 ### The Reconstruction Check
 
@@ -209,7 +209,7 @@ $$
 d(\exp)_{\tilde X}=e^{\tilde X}\cdot\frac{e^{\operatorname{ad}_{\tilde X}}-1}{\operatorname{ad}_{\tilde X}},
 $$
 
-so it is singular exactly where $\operatorname{ad}_{\tilde X}$ has an eigenvalue in $2\pi i\mathbb{Z}\setminus\{0\}$. For traceless $\tilde X$ the eigenvalues of $\operatorname{ad}_{\tilde X}$ are $0,\pm2\Rho$, so the criterion becomes
+so it is singular exactly where $\operatorname{ad}_{\tilde X}$ has an eigenvalue in $2\pi i\mathbb{Z}\setminus\{0\}$. For scalar-free $\tilde X$ the eigenvalues of $\operatorname{ad}_{\tilde X}$ are $0,\pm2\Rho$, so the criterion becomes
 
 $$
 2\Rho\in2\pi i\mathbb{Z}\setminus\{0\},
@@ -258,13 +258,13 @@ Cartan coordinates are not exponential coordinates: the product of two exponenti
 
 ## Summary
 
-The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{2\,\mathrm{Sc}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
+The exponential of a scalar-free biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{2\,\mathrm{Sc}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde X$ | a traceless element of the algebra |
+| $\tilde X$ | a scalar-free element of the algebra |
 | $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\det\tilde X$ | the complex modulus of the generator |
 | $\hat{\tilde X}$ | an invertible element generator, $\hat X^{2}=\pm e_t$ |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | rapidity and rotation angle, twice the arguments |

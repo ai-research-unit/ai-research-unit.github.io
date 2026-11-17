@@ -239,7 +239,7 @@ giving the field equations $\nabla A = BE^{+}$ and $\nabla B = AE$, which collap
 
 1. **Which representation of $SU(2)$ can the scalar occupy?** The framework's canonical scalar is central and therefore an $SU(2)$ singlet, which cannot break $SU(2)$. Is there a biquaternion-valued scalar field in a non-trivial representation — the adjoint $\tilde{Ξ}\mapsto U\tilde{Ξ}U^{-1}$, or a field valued in the spinor module $S$ — that the algebra naturally supplies, and does it have a potential that can be minimized off the symmetric point? This is the prerequisite for a non-abelian Higgs mechanism.
 
-2. **The electroweak quantum numbers.** No hypercharge assignment, doublet structure, or $SU(2)_L\times \mathrm{U}(1)_Y$ action is derived in this series. Is there a biquaternionic origin for them — for instance a decomposition of the traceless subspace of $\mathbb{B}$ that separates the neutral and charged directions — or must they be imposed from outside? The present article deliberately does not invent them.
+2. **The electroweak quantum numbers.** No hypercharge assignment, doublet structure, or $SU(2)_L\times \mathrm{U}(1)_Y$ action is derived in this series. Is there a biquaternionic origin for them — for instance a decomposition of the scalar-free subspace of $\mathbb{B}$ that separates the neutral and charged directions — or must they be imposed from outside? The present article deliberately does not invent them.
 
 3. **The reality condition on the connection.** The non-abelian article leaves open the Hermitian-conjugation class of the non-abelian connection under the $i r'_t$ derivative. Its resolution is a prerequisite for the non-abelian covariant derivative, and hence for the non-abelian kinetic term, and hence for the non-abelian mass.
 
@@ -325,7 +325,7 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) — the free scalar equation whose gauging and vacuum this article uses.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html) — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector and the trace formula.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) — the Hermitian sector and the pairing formula.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html) — the abelian potential and field strength that the gauge field mass modifies.
 - [The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism](the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.html) — the left/right matter-representation question that the non-abelian scalar inherits.
 - [Canonical Quantization of the Biquaternion Maxwell Field](canonical-quantization-of-the-biquaternion-maxwell-field.html) — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.

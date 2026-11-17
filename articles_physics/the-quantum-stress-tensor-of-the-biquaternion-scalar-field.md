@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The energy, the energy flux and the stress of the biquaternion scalar field assemble into one Hermitian element, and the quantum potential is the trace of the amplitude stress inside it.** The element is
+**The energy, the energy flux and the stress of the biquaternion scalar field assemble into one Hermitian element, and the quantum potential is twice the scalar part of the amplitude stress inside it.** The element is
 
 $$
 \tilde\Sigma_{\Psi}=w_{\mathrm{fl}}\,e_t+\frac{i}{c}\,\vec S_{\mathrm P},

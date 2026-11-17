@@ -98,7 +98,7 @@ $$
 \boxed{\;\vec r \;\longmapsto\; \vec r_2 = (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u\;}.
 $$
 
-The component of $\vec r$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $2\langle i\vec e_\eta,\tilde{Ϛ}_{\Psi}\rangle_{*}$ of the two traceless observables $i\vec e_\eta$ with $\vec e_\eta\perp\vec u$.
+The component of $\vec r$ along $\vec u$ is untouched; the transverse component is multiplied by $1-p$. In the eigenbasis of $\vec u$, this is exactly the statement that the diagonal entries of the density matrix — the **populations** — are preserved, while the off-diagonal entries — the **coherences** — are scaled by $1-p$. Equivalently, the coherence is the pair of transverse Bloch components, which are the expectation values $2\langle i\vec e_\eta,\tilde{Ϛ}_{\Psi}\rangle_{*}$ of the two scalar-free observables $i\vec e_\eta$ with $\vec e_\eta\perp\vec u$.
 
 ### Composition, and the Failure of Idempotency
 

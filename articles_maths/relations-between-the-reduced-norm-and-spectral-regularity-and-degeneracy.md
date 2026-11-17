@@ -43,7 +43,7 @@ $$
 $$
 p_{\breve Q}(X)=X^{2}-(Q_++Q_-)X+Q_+Q_-=X^{2}-2Q_\blacktriangle X+\nu(\breve Q).
 $$
-Its constant term is the reduced norm, its discriminant is $\Delta(\breve Q)$, and its trace is $Q_++Q_-=2Q_\blacktriangle$. The reduced norm is multiplicative,
+Its constant term is the reduced norm, its discriminant is $\Delta(\breve Q)$, and its scalar part is $Q_\blacktriangle=\tfrac12(Q_++Q_-)$. The reduced norm is multiplicative,
 $$
 \nu(\breve Q_1\breve Q_2)=\nu(\breve Q_1)\nu(\breve Q_2),
 $$
@@ -144,7 +144,7 @@ and the types are counted in the table.
 $$
 p_{\breve Q}(X)=X^{2}-(Q_++Q_-)X+\nu(\breve Q),
 $$
-of discriminant $\Delta(\breve Q)=\delta(\breve Q)^{2}$. The constant term is the reduced norm, the discriminant is the square of the eigenvalue difference, and the trace is the coefficient that the pair $(\nu,\delta)$ retains only up to sign.
+of discriminant $\Delta(\breve Q)=\delta(\breve Q)^{2}$. The constant term is the reduced norm, the discriminant is the square of the eigenvalue difference, and twice the scalar part is the coefficient that the pair $(\nu,\delta)$ retains only up to sign.
 
 **Remark (the minimal polynomial does not refine the chain).** The minimal polynomial is $X-Q_+$ on the scalar line $\Sigma_{10}\cup\Sigma_{00}$ and $(X-Q_+)(X-Q_-)$ on its complement $\Sigma_{11}\cup\Sigma_{01}$. It therefore separates two types, not four, and it does not split any sector. This is the effect of semisimplicity: the biquaternion algebra refines the four sectors into six strata by the minimal polynomial, because its scalar line splits into a scalar and a Jordan part and its origin splits into the origin and the nonzero nilpotents (*Relations between the N Norm and Spectral Regularity and Degeneracy*, §*The Chain of Invariants*). In the reduced algebra those defective parts are empty.
 
