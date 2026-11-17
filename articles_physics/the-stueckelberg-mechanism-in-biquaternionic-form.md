@@ -134,7 +134,7 @@ $$
 $$
 has a vector propagator of the Proca form with a gauge-dependent longitudinal part,
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right),
+D_{\mu\nu}(p)=-\frac{i}{N+\mu^{2}}\left(\delta_{\mu\nu}+\frac{(\zeta-1)p_\mu p_\nu}{N+\zeta\mu^{2}}\right),
 $$
 which reduces to the Proca propagator of the companion article as $\zeta\to\infty$, and a scalar with an $\zeta$-dependent mass $\zeta\mu^2$. The gauge parameter interpolates between the unitary gauge at $\zeta\to\infty$ (the scalar mass becomes infinite and the scalar decouples, leaving the Proca propagator) and the Landau gauge at $\zeta=0$ (the scalar mass vanishes). The physical amplitudes are independent of $\zeta$, which is the statement that the scalar and the longitudinal vector together carry one physical mode; the demonstration is the abelian case of the gauge-parameter independence recorded in the gauge-field path-integral companion. One feature distinguishes the abelian case from the non-abelian one and is worth recording: the Faddeev–Popov determinant of an abelian gauge fixing is field independent, so the Stueckelberg model has **no ghost**. The scalar $\xi$ and the longitudinal vector are the only unphysical modes, and they cancel among themselves in the gauge-parameter dependence; in the non-abelian case the determinant is field dependent, the ghosts are dynamical, and the cancellation involves the ghost fields in addition. The framework's Stueckelberg mechanism therefore has the simplest possible unphysical sector: one scalar, no ghosts.
 
@@ -245,7 +245,7 @@ $$
 $$
 is gauge invariant for any $\Gamma$. Expanded and canonically normalized it is a massless vector, a massless scalar and a derivative mixing of strength $\mu$; the scalar's equation is the divergence of the vector's equation, so the scalar is the longitudinal mode. In the unitary gauge $\xi=0$ the Lagrangian reduces to Proca with three polarizations; in the $R_\zeta$ gauge $G=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\zeta\mu^2\xi=0$ the scalar has an $\zeta$-dependent mass and the vector propagator
 $$
-D_{\mu\nu}(p)=\frac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\frac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right)
+D_{\mu\nu}(p)=-\frac{i}{N+\mu^{2}}\left(\delta_{\mu\nu}+\frac{(\zeta-1)p_\mu p_\nu}{N+\zeta\mu^{2}}\right)
 $$
 has a gauge-dependent longitudinal part, with physical amplitudes independent of $\zeta$. The count is five fields, one gauge symmetry and one mass-term constraint, leaving three.
 
@@ -271,7 +271,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\xi=0$ | $*$-Unitary (Stueckelberg) gauge; reduces to Proca |
 | $G=\langle\tilde\nabla_\Phi,\tilde A_{\Phi}\rangle_{\natural}-\zeta\mu^2\xi$ | $R_\zeta$ gauge-fixing condition |
 | $\xi=\xi_{\mathrm{scl}}/\mu$ | Canonical normalization of the scalar |
-| $D_{\mu\nu}(p)=\dfrac{i}{p^2-\mu^2}\left(\delta_{\mu\nu}-\dfrac{(\zeta-1)p_\mu p_\nu}{p^2-\zeta\mu^2}\right)$ | Vector propagator in the $R_\zeta$ gauge; Proca at $\zeta\to\infty$ |
+| $D_{\mu\nu}(p)=-\dfrac{i}{N+\mu^{2}}\left(\delta_{\mu\nu}+\dfrac{(\zeta-1)p_\mu p_\nu}{N+\zeta\mu^{2}}\right)$ | Vector propagator in the $R_\zeta$ gauge; Proca at $\zeta\to\infty$ |
 | $m_\xi^2=\zeta\mu^2$ | Gauge-dependent scalar mass |
 | $V=\beta(\xi^*\xi-v^2/2)^2$, $\vert\xi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=\frac{ϙ\,v}{\hbar}$ | Higgs origin of the mass; $\kappa=\frac{ϙ}{\hbar}$ |

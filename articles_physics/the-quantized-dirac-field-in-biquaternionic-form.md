@@ -313,11 +313,10 @@ a modified Bessel function of the second kind, nonzero for every $\vec r_{12}\ne
 **The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, the momentum-space two-point function of the propagator companion is the map
 
 $$
-S_F(p):\ \tilde{X}\,\longmapsto\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_\eta  i\vec e_\eta\tilde X\vec e_y p_{\eta}+m\,\tilde X\bigr)}{p^2-m^{2}\,c^{2}+i\epsilon}
-=-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_\eta  i\vec e_\eta\tilde X\vec e_y p_{\eta}+m\,\tilde X\bigr)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}.
+S_F(p):\ \tilde{X}\,\longmapsto-\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_\eta  i\vec e_\eta\tilde X\vec e_y p_{\eta}+m\,\tilde X\bigr)}{N+m^{2}\,c^{2}-i\epsilon}.
 $$
 
-Distributing the outer $i$ of the first form with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_\eta\vec e_\eta\tilde X\vec e_y p_\eta+i m\,c\tilde X$. The numerator is $(\mathcal{D}_p+mc)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
+Distributing the outer $i$ with $i^2=-1$ gives the equivalent numerator $-\tilde X\vec e_x p_0+\sum_\eta\vec e_\eta\tilde X\vec e_y p_\eta+i m\,c\tilde X$. The numerator is $(\mathcal{D}_p+mc)\tilde X$, the momentum symbol of the display above together with the mass, the mass term being the multiplication by $m$ and not a separate operator. The denominator is the deformed mass-shell scalar, and the deformation $-i\epsilon\,e_t$ lies in the centre and along the $i r'_t$ axis of the material sector. The two-point function of the operator field is thus an operator-valued distribution whose biquaternion form is the mass-shell condition with the Feynman shift; the companion article's finding — that the algebra supplies the axis of the deformation but not its orientation — is inherited unchanged, and this article adds nothing to it.
 
 ## What Is Standard and What Is the Algebra's
 

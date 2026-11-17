@@ -163,13 +163,13 @@ $$
 up to the field-independent factors, so that the two-point function is the inverse of $K$,
 
 $$
-\boxed{\;D_{\mu\nu}(p) = \frac{1}{p^2}\left(\delta_{\mu\nu}+\frac{(1-\zeta)p_\mu p_\nu}{p^2}\right)\;},
+\boxed{\;D_{\mu\nu}(p) = \frac{-1}{N}\left(\delta_{\mu\nu}-\frac{(1-\zeta)p_\mu p_\nu}{N}\right)\;},
 $$
 
 the momentum-space propagator. The residue structure is worth separating into its two pieces. The first is the **transverse projector**
 
 $$
-P_{\mu\nu} = \delta_{\mu\nu}+\frac{p_\mu p_\nu}{p^2},
+P_{\mu\nu} = \delta_{\mu\nu}-\frac{p_\mu p_\nu}{N},
 $$
 
 which is idempotent, has trace three off shell, and annihilates $p_\nu$:

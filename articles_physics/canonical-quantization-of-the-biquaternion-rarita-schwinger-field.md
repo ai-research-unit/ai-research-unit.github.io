@@ -239,7 +239,7 @@ The field is quantized with anticommutators, not commutators, and the reason is 
 The momentum-space propagator is the inverse of the quadratic form that the field equation and the constraint define on the traceless subspace. It is of the general form
 
 $$
-G_{\mu\nu}(p) = -\frac{i}{p^2-\hbar^2k_m^2}\Bigl[\bigl(\mathcal{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
+G_{\mu\nu}(p) = \frac{i}{N+\hbar^{2}k_m^{2}}\Bigl[\bigl(\mathcal{D}_p+ mc\bigr)\Pi_{\mu\nu} + \text{(lower-spin terms)}\Bigr] ,
 $$
 
 where the transverse projector $\Pi_{\mu\nu}$ is the one of the completeness relation and the lower-spin terms are the parts that the constraint removes; in the standard covariant form the propagator carries the gauge-fixing dependence of the massless case and a $p_\mu p_\nu$ term whose coefficient involves $1/m^2$ for the massive case. The detailed form, including the dependence on the gauge-fixing parameter and the $D$-dimensional continuation, is the standard result and is cited below; the framework's contribution is the identification of the trace part of the projector with the algebra's traceless projector and the interpretation of the lower-spin terms as the removed $\left(\tfrac12\right)$ component.
@@ -387,7 +387,7 @@ $$
 $$
 \sum_{r=1}^{4}\zeta_{\mu,r}\bar\zeta_{\nu,r}=(\gamma\cdot p+mc)\Pi_{\mu\nu},
 \qquad
-G_{\mu\nu}(p)=-\frac{i}{p^2-\hbar^2k_m^2}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
+G_{\mu\nu}(p)=\frac{i}{N+\hbar^{2}k_m^{2}}\Bigl[(\gamma\cdot p+mc)\Pi_{\mu\nu}+\text{(lower-spin terms)}\Bigr].
 $$
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
