@@ -99,13 +99,13 @@ $$</p>
 <p><strong>The temporal slot carries the sign and the sign is the sibling's.</strong> The coordinate is $R_t=ir_t'$, so the temporal derivative is $\partial/\partial R_t=-i\partial/\partial r_t'$, and the temporal slot of the symbol is $+ik_t'$ because the plane wave's phase carries $-k_t'r_t'$.</p>
 <p><strong>The parent's action is quoted once and not re-derived.</strong> It is</p>
 <p>$$
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$</p>
 <p>with</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 \qquad
 k_m=\frac{mc}{\hbar},
 $$</p>
@@ -235,10 +235,10 @@ $$</p>
 <h2 id="the-curvature-is-the-term-that-cannot-be-a-number">The Curvature Is the Term That Cannot Be a Number</h2>
 <p><strong>At a varying connection the symbol does not exist, and what replaces it is an operator whose one unfamiliar term is the curvature.</strong> The parent's identity is</p>
 <p>$$
-(\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde\nabla_{\mathrm{gco}}
-=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
+=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F ,
 \qquad
-\bigl[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
+\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
 $$</p>
 <p>and it is the parent's, checked there to $1.1\times10^{-5}$ on a test function.</p>
 <p><strong>The curvature's element type is the obstruction, and it is a type statement rather than a size statement.</strong> $\tilde F$ is a two-form, which in this algebra is a pure vector: it has no scalar part, so</p>
@@ -248,7 +248,7 @@ $$</p>
 <p>measured as a residual of $0.0\times10^{0}$. <strong>A pure vector is $\natural$-antisymmetric, and a $\natural$-antisymmetric element cannot be in the centre</strong>: its commutator with a generic element was $4.43$ for a curvature component of size $0.9$ against a random complex element of unit scale.</p>
 <p><strong>So the composed operator is a central scalar exactly when the added term vanishes.</strong> With $\tilde F=0$ the operator is a multiple of the identity, as §<em>The Second Variation Is One Number, for a New Reason</em> measures. With $\tilde F\neq0$ it is not, and the compatibility condition</p>
 <p>$$
-\Bigl(\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+\Bigl(\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
 $$</p>
 <p>is an equation between elements and not an equation between numbers. <strong>That is the precise sense in which the zero-pole relation stops</strong>: the free article's relation is between a number and its inverse, and here one of the two is not a number.</p>
 <p><strong>The two-way statement, with its qualifier.</strong> The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-k_m^{2}$. <strong>A connection with $\tilde F\neq0$ has no gauge in which the number exists</strong>, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".</p>
@@ -309,7 +309,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$</td>
 <td>The parent's covariant derivative</td>
 </tr>
 <tr>

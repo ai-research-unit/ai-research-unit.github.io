@@ -80,7 +80,7 @@
 $$
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.</li>
+has the Euler–Lagrange equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.</li>
 <li><strong>The static central solution.</strong> A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.</li>
 <li><strong>The field energy.</strong> The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.</li>
 <li><strong>The reduction to the central-force problem.</strong> A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.</li>
@@ -123,16 +123,16 @@ $$</p>
 <p>$$
 \frac{\partial\mathcal{L}}{\partial\xi}-\partial/\partial R_\mu\,\frac{\partial\mathcal{L}}{\partial(\partial/\partial R_\mu\,\xi)}=0
 \quad\Longrightarrow\quad
--(k_m)^{2}\xi+g\rho+\Box\xi=0 ,
+-(k_m)^{2}\xi+g\rho+\Box_\Phi\xi=0 ,
 $$</p>
 <p>that is,</p>
 <p>$$
-\boxed{\;\left(\Box-(k_m)^{2}\right)\tilde{Ξ}=-g\rho\,e_t\;}.
+\boxed{\;\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ}=-g\rho\,e_t\;}.
 $$</p>
-<p>The operator $\Box-(k_m)^{2}$ is a <strong>central scalar</strong> differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.</p>
+<p>The operator $\Box_\Phi-(k_m)^{2}$ is a <strong>central scalar</strong> differential operator with real coefficients, so it acts on the field by acting on the single component: the biquaternion-valued field equation and the ordinary scalar equation say the same thing. This is the first place the centre is used. For a biquaternion-valued field with all four components active, the same operator would act componentwise and produce four decoupled scalar equations, none of which mixes the components; a genuinely multi-component field requires a noncentral operator, and the framework's only such operators are the module-theoretic ones described in the companion articles. The scalar field is the case in which the central operator and the single component match.</p>
 <p>The free field obeys</p>
 <p>$$
-\left(\Box-(k_m)^{2}\right)\tilde{Ξ}=0 ,
+\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ}=0 ,
 $$</p>
 <p>the biquaternionic Klein–Gordon equation of the companion article, here read as a <strong>classical</strong> wave equation. Its wave operator is the biquaternion norm of the gradient, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, which is the algebraic content the biquaternion writing makes visible. Because the equation is second order in time, the field and its time derivative are the two pieces of initial data, exactly as for any classical wave field.</p>
 <h2 id="plane-waves-and-the-range-of-the-field">Plane Waves and the Range of the Field</h2>
@@ -152,7 +152,7 @@ $$</p>
 <p>$$
 \left(\Delta_\Phi-(k_m)^{2}\right)\xi=-g\rho .
 $$</p>
-<p>The operator $\Delta-(k_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:</p>
+<p>The operator $\Delta_\Phi-(k_m)^{2}$ is the inverse of a screened Poisson operator, and its Green's function decays exponentially:</p>
 <p>$$
 G_\mu(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=\frac{\exp(-r/\hbar/(mc))}{4\pi r}, \qquad
 \left(\Delta_\Phi-(mc/\hbar)^{2}\right)G_\mu=-\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) ,
@@ -186,7 +186,7 @@ $$</p>
 <h3 id="the-energy-density">The Energy Density</h3>
 <p>The stress–energy tensor of the central scalar field is that of a real scalar field, computed in the companion article <em>Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</em>. Its energy density is</p>
 <p>$$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\nabla\xi)^2+\tfrac12(k_m)^{2}\xi^2>0 ,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2>0 ,
 $$</p>
 <p>positive for every field configuration, and its conservation is the statement $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial x_\mu=0$ on shell, in the $\mathbb{B}_{\Phi}$ frame with $\varepsilon=(1,-1,-1,-1)$, the indices low and the weight in the sum. The three terms are the kinetic, gradient and mass contributions; all three are central scalars, and their positivity is what fixes the sign of the action above. For a <strong>static</strong> field the kinetic term vanishes and the energy is stored in the gradient and in the mass term, and the momentum density vanishes, $T_{tj}=0$: a static central scalar field carries energy but no momentum, which is the field-theoretic statement that it is a static central configuration.</p>
 <h3 id="the-energy-of-the-static-field">The Energy of the Static Field</h3>
@@ -196,11 +196,11 @@ A=\frac{gQ}{4\pi},
 $$</p>
 <p>the gradient energy outside a sphere of radius $a$ is</p>
 <p>$$
-E_{\text{field}}(a)=\int_{r>a}\tfrac12(\nabla\xi)^2\,d^3r
+E_{\text{field}}(a)=\int_{r>a}\tfrac12(\vec\nabla_\Phi\xi)^2\,d^3r
 =2\pi A^2\int_a^{\infty}\frac{dr}{r^2}
 =\frac{2\pi A^2}{a}=\frac{g^2Ϙ^2}{8\pi a},
 $$</p>
-<p>using $\nabla\xi=-A\vec u_r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is <strong>positive</strong>, as it must be; and it <strong>diverges as $a\to0$</strong>, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.</p>
+<p>using $\vec\nabla_\Phi\xi=-A\vec u_r/r^2$. The result is exact and was checked by direct integration. It has two features worth naming. It is <strong>positive</strong>, as it must be; and it <strong>diverges as $a\to0$</strong>, so the field energy of a point source is infinite. The massive case has the same short-distance divergence, since the Yukawa field still behaves as $A/r$ as $r\to0$; the exponential only cuts off the long-distance tail.</p>
 <p>The divergence is the classical self-energy of the point-source idealization and not a property of the framework. A source of finite extent gives a finite field energy, and the self-energy is one of the standard reasons a point particle cannot be treated as a structureless classical object in a field theory. In the present article the source is prescribed, so the divergence does not affect the dynamics of the test source in the field, which is finite; it is recorded because it bounds the sense in which the static solution is physical.</p>
 <h2 id="the-test-particle-and-the-reduction-to-the-central-force-problem">The Test Particle and the Reduction to the Central-Force Problem</h2>
 <h3 id="the-interaction-energy">The Interaction Energy</h3>
@@ -212,13 +212,13 @@ $$</p>
 <p>the sign following from the Hamiltonian sign $H_{\text{int}}=-L_{\text{int}}$ and the convention that like sources attract. The interaction energy is negative and increases to zero at infinity: the configuration is bound, and the massless limit is the inverse-square attraction</p>
 <p>$$
 E(r)=-\frac{\kappa}{r}, \qquad
-\vec F=-\nabla E=-\frac{\kappa}{r^2}\,\vec u_r,
+\vec F=-\vec\nabla_\Phi E=-\frac{\kappa}{r^2}\,\vec u_r,
 $$</p>
 <p>which is exactly the inverse-square force of the central-force articles, with $\kappa>0$ for attraction.</p>
 <h3 id="why-the-force-is-central">Why the Force Is Central</h3>
 <p>The force is central for an algebraic reason. The field $\tilde{Ξ}=\xi(r)e_t$ is valued in the centre and is therefore invariant under the rotation group, and its gradient transforms as a vector:</p>
 <p>$$
-\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\nabla E(r)=g_{\mathrm h_t}\,\nabla\xi(r)=g_{\mathrm h_t}\,\frac{d\xi}{dr}\,\vec u_r ,
+\vec F(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)=-\vec\nabla_\Phi E(r)=g_{\mathrm h_t}\,\vec\nabla_\Phi\xi(r)=g_{\mathrm h_t}\,\frac{d\xi}{dr}\,\vec u_r ,
 $$</p>
 <p>a real vector parallel to the position, pointing inward because $\frac{d\xi}{dr}<0$ for the attractive field. In the algebra's criterion, $[\vec r,\vec F]=0$, so the force commutes with the position and the angular momentum $\vec L=\vec r\times\vec p=\tfrac12[\vec r,\vec p]$ is conserved. The potential energy $E(r)e_t$ is a <strong>central scalar</strong>, an element of the centre, so the whole configuration is a central-scalar configuration in the sense of the companion article <em>The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</em>: scalar data in the centre, configuration a real vector in the material sector, no vector direction of the informational sector occupied. The field-theoretic origin of a central force is therefore the centrality of the field's value space, not an assumption about the force law.</p>
 <h3 id="which-central-force-results-apply">Which Central-Force Results Apply</h3>
@@ -299,14 +299,14 @@ $$</p>
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(mc/\hbar)^{2}\xi^2+g\rho\,\xi\right]d^4r,
 \qquad \hbar/(mc),
 $$</p>
-<p>has the field equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and has range $\hbar/(mc)$.</p>
+<p>has the field equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box_\Phi$ central and scalar. The free field is dispersive with $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and has range $\hbar/(mc)$.</p>
 <p>A static point source of strength $Ϙ$ produces the Yukawa field</p>
 <p>$$
 \tilde{Ξ}=\frac{gQ\,\exp(-r/\hbar/(mc))}{4\pi r}\,e_t,
 \qquad\text{whose massless limit is}\qquad
 \tilde{Ξ}=\frac{gQ}{4\pi r}\,e_t .
 $$</p>
-<p>The static field's energy density is $T_{tt}=\tfrac12(\nabla\xi)^2+\tfrac12(k_m)^{2}\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
+<p>The static field's energy density is $T_{tt}=\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2>0$, and the massless field's energy outside a sphere of radius $a$ is $E_{\text{field}}=2\pi A^2/a$ with $A=gQ/(4\pi)$, positive and divergent at a point source.</p>
 <p>A test source of coupling $g_{\mathrm t}$ has the central potential energy</p>
 <p>$$
 E(r)=-\frac{\kappa \exp(-r/\hbar/(mc))}{r}, \qquad \kappa=\frac{g\,g_{\mathrm t}Ϙ}{4\pi}>0,
@@ -359,7 +359,7 @@ $$</p>
 <td>Real scalar Lagrangian</td>
 </tr>
 <tr>
-<td>$(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$</td>
+<td>$(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$</td>
 <td>Field equation with source</td>
 </tr>
 <tr>
@@ -383,7 +383,7 @@ $$</p>
 <td>Source velocity over $c$, retarded distance, retarded time</td>
 </tr>
 <tr>
-<td>$T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\nabla\xi)^2+\tfrac12(k_m)^{2}\xi^2$</td>
+<td>$T_{tt}=\tfrac12\left(\partial\xi/\partial r'_t\right)^{2}/c^2+\tfrac12(\vec\nabla_\Phi\xi)^2+\tfrac12(k_m)^{2}\xi^2$</td>
 <td>Energy density, positive</td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ $$</p>
 <td>Central interaction energy; $\kappa>0$ attractive</td>
 </tr>
 <tr>
-<td>$\vec F=-\nabla E=g_{\mathrm h_t}\,\nabla\xi=g_{\mathrm h_t}\,(d\xi/dr)\,\vec u_r$</td>
+<td>$\vec F=-\vec\nabla_\Phi E=g_{\mathrm h_t}\,\vec\nabla_\Phi\xi=g_{\mathrm h_t}\,(d\xi/dr)\,\vec u_r$</td>
 <td>Central force on the test source (inward)</td>
 </tr>
 <tr>

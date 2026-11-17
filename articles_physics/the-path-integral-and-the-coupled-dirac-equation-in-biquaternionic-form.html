@@ -74,11 +74,11 @@
 <p><em>The Path Integral and the Dirac Equation in Biquaternionic Form</em> constructs the sum over worldlines that produces the free Dirac propagator. This article constructs the same sum for the <strong>coupled</strong> pair, with the gradient replaced by the covariant derivative of <em>The Gauge Principle in Biquaternionic Form</em>. The weight is $e^{iS/\hbar}$, the output is the propagator, and the question is what the connection does to the sum over histories.</p>
 <p><strong>The coupled pair, and the covariant derivative.</strong></p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$</p>
 <p>with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is <em>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</em>, and the solutions in a constant potential are <em>The Coupled Dirac Equation in Biquaternionic Form</em>. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.</p>
 <p><strong>The finding, in one sentence.</strong> The worldline integral sorts the connection into two objects and gives each a separate home: the one-form $A_\Phi$ enters the phase, and the curvature $F$ enters the spin factor. That split is the path-integral statement of the type table of <em>The Coupled Dirac Equation in Biquaternionic Polar Variables</em>, and it is why the polar reading finds the connection unable to turn the rotor while the spin still precesses in a background.</p>
@@ -105,9 +105,9 @@ $$</p>
 <p>and this is the corpus's sign and not the textbook sign. <em>The Coupled Dirac Equation in Biquaternionic Form</em> records the reason: the parent's opposite convention $\partial_\mu-\frac{iϙ}{\hbar}A_\mu$ is the same coupling with the opposite sign of $ϙ$, and this article inherits the gauge principle's sign and does not flip it. A reader who carries $+q\!\int\!A\cdot\mathrm{d}x$ from a textbook has the same physics and the opposite charge, and the free article's §<em>The Spin Factor in a Background Field</em> writes exactly that with a generic $q$: it is this article's term with $q=-ϙ$.</p>
 <p><strong>The two kernels.</strong> The propagator is the pair $\mathcal S_L,\mathcal S_R$ of <em>The Path Integral and the Dirac Equation in Biquaternionic Form</em>, now satisfying the two lines with the covariant operators,</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
+\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
 $$</p>
 <p>Each is an element of $\mathbb{B}$ and not a scalar, and the two are the conjugates of each other in the sense of the free article. The kernel is B-valued in the coupled case for the same reason as in the free case, and nothing about that changes here.</p>
 <h2 id="the-worldline-of-the-coupled-pair">The Worldline of the Coupled Pair</h2>
@@ -123,7 +123,7 @@ $$</p>
 $$</p>
 <p>with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x(\tau)$, so the gauge term does not reach them: it is a functional of the material trajectory alone.</p>
 <p><strong>The gauge term is central, and that is the whole of its algebraic behaviour.</strong> $S_{\mathrm{gco}}$ is a real number for every path. Its exponential is therefore a central element of modulus one, and multiplying the weight by a central element cannot reorder the path-ordered spin factor, cannot rescale it, and cannot rotate it. The connection multiplies the weight of a history; it does not enter the history's algebra. That one sentence is the worldline form of the polar companion's type table, and every statement below is a consequence of it.</p>
-<p><strong>The two lines of the pair see conjugate gauge terms.</strong> The $L$ line's operator is $\tilde\nabla_{\mathrm{gco}}^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$. The two kernels therefore carry</p>
+<p><strong>The two lines of the pair see conjugate gauge terms.</strong> The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$. The two kernels therefore carry</p>
 <p>$$
 S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_\eta A_\eta\,\mathrm{d}r_\eta\bigr),
 \qquad
@@ -200,7 +200,7 @@ $$</p>
 <h2 id="the-checkerboard-with-a-connection">The Checkerboard With a Connection</h2>
 <p><strong>The discrete model takes the coupling without approximation.</strong> In Feynman's checkerboard, described in <em>The Path Integral and the Dirac Equation in Biquaternionic Form</em>, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon k_m$ for each corner. Minimal coupling adds one factor per step,</p>
 <p>$$
-\exp\Bigl(-\frac{iϙ}{\hbar}\tilde A_\Phi\cdot\Delta\tilde R_\Phi\Bigr)
+\exp\Bigl(-\frac{iϙ}{\hbar}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
 \ \text{per directed step},
 $$</p>
 <p>and leaves the corner weight alone. The corner is the mass insertion. <strong>The mass term carries no derivative, so the substitution that dresses the steps cannot reach it</strong>, and it is invariant under the local central phase without help — which is why the coupling is a repair of the kinetic term alone in <em>The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form</em>. <strong>The corner is untouched and the step is dressed</strong>, and that is the discrete image of the sorting of the connection into the phase.</p>
@@ -254,11 +254,11 @@ $$</p>
 <td>Biquaternion algebra; its material (anti-Hermitian) sector, the home of $\tilde R_\Phi$ and $\tilde A_\Phi$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
 <td>Covariant derivative, acting from the left, central per component in the abelian case</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{iϙ}{\hbar}\tilde A_\Phi^{\natural}$</td>
+<td>$(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{iϙ}{\hbar}\tilde A_\Phi^{\natural}$</td>
 <td>Its quaternion conjugate, the $L$ line's operator</td>
 </tr>
 <tr>

@@ -123,7 +123,7 @@ $$</p>
 <p><strong>Corollary (the general shape of a derived functor).</strong> The construction specialises to the derived functors of homological algebra: on chain complexes with the projective model structure, the total left derived functor of $-\otimes_R M$ is $\operatorname{Tor}_*^R(-,M)$ and the total right derived functor of $\operatorname{Hom}_R(-,N)$ is $\operatorname{Ext}^*_R(-,N)$, the functors of the planned <em>Ext and Tor</em> of Part I. The model-category framework thus accounts for the existence and the universal property of the derived functors that the algebraic articles construct by resolutions.</p>
 <p><strong>Remark.</strong> This is the point at which the homotopical algebra of the present article and the homological algebra of Part I meet: the resolutions of Part I are the cofibrant replacements of the projective model structure, the long exact sequences are the long exact sequences of a cofibre sequence, and the derived category is the homotopy category. The details are the subject of <em>Derived Categories</em>, written in parallel.</p>
 <h3 id="simplicial-sets">Simplicial Sets</h3>
-<p><strong>Definition.</strong> The category $\Delta$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A <strong>simplicial set</strong> is a functor $\Delta_{\mathrm{opp}} \to \mathbf{Set}$; a <strong>simplicial object</strong> in a category $\mathcal{C}$ is a functor $\Delta_{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.</p>
+<p><strong>Definition.</strong> The category $\Delta_\Phi$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A <strong>simplicial set</strong> is a functor $\Delta_{\mathrm{opp}} \to \mathbf{Set}$; a <strong>simplicial object</strong> in a category $\mathcal{C}$ is a functor $\Delta_{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.</p>
 <p><strong>Theorem (geometric realisation).</strong> There is a Quillen adjunction $|\!-\!| \dashv \operatorname{Sing}$ between simplicial sets with the Quillen model structure and topological spaces with the Quillen model structure, where $|\Delta_n|$ is the standard simplex of <em>Simplicial and Singular Homology</em> and $\operatorname{Sing}(X)_n = \operatorname{Hom}_{\mathbf{Top}}(\Delta_n, X)$. The derived functors give equivalences of homotopy categories</p>
 <p>$$
 \boxed{\;\operatorname{Ho}(\mathbf{sSet}) \simeq \operatorname{Ho}(\mathbf{Top})\;},
@@ -138,7 +138,7 @@ $$</p>
 <p><strong>Theorem (existence of localisations).</strong> Let $\mathcal{C}$ be a left proper, combinatorial model category and $S$ a set of morphisms. Then the left Bousfield localisation $L_S\mathcal{C}$ exists and is again combinatorial and left proper, and it is the universal model category under $\mathcal{C}$ in which the morphisms of $S$ become weak equivalences. This is Smith's theorem, and it is the technical device by which the stable homotopy category of spectra, constructed as a localisation of the category of spectra with the levelwise structure, is obtained from a simpler model structure; the construction and the resulting stable homotopy category are not covered here.</p>
 <p><strong>Example (localisations at a set of primes and at the rationals).</strong> Localising the model category of spaces at the maps $S^{n+1}\to S^{n+1}$ of degree $p$ for a prime $p$ makes the $p$-local spheres into the local objects, and the resulting homotopy category is that of $p$-local spaces; localising at the maps of degree $m$ for all $m\neq0$ gives the rational homotopy category, in which the homotopy groups are rational vector spaces and the algebraic models of Quillen and Sullivan apply. In each case the localisation exists by the theorem, and the localised category is where the corresponding invariant lives.</p>
 <h3 id="monoidal-and-enriched-structure">Monoidal and Enriched Structure</h3>
-<p><strong>Definition.</strong> A <strong>monoidal model category</strong> is a model category with a symmetric monoidal structure, a unit object, and the <strong>pushout-product axiom</strong>: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A <strong>simplicial model category</strong> is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.</p>
+<p><strong>Definition.</strong> A <strong>monoidal model category</strong> is a model category with a symmetric monoidal structure, a unit object, and the <strong>pushout-product axiom</strong>: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box_\Phi j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A <strong>simplicial model category</strong> is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.</p>
 <p><strong>Theorem.</strong> Let $\mathcal{C}$ be a monoidal model category.</p>
 <ol>
 <li>The homotopy category $\operatorname{Ho}(\mathcal{C})$ inherits a symmetric monoidal structure, and the monoids and the modules over a monoid may be defined homotopically: a <strong>monoid</strong> is a monoid object in $\operatorname{Ho}(\mathcal{C})$ together with a multiplication that is associative up to coherent homotopy, and the resulting homotopy theory of monoids and their modules is the homotopical algebra of the structures of Part I's <em>Algebras</em> and <em>Differential Graded Algebras</em>, carried out at the level of homotopy.</li>
@@ -192,7 +192,7 @@ $$</p>
 <td>Total left and right derived functors of a Quillen adjunction</td>
 </tr>
 <tr>
-<td>$\Delta$, $\mathbf{sSet}$, $\operatorname{Sing}$, $|\!-\!|$</td>
+<td>$\Delta_\Phi$, $\mathbf{sSet}$, $\operatorname{Sing}$, $|\!-\!|$</td>
 <td>Simplex category, simplicial sets, singular functor, geometric realisation</td>
 </tr>
 <tr>
@@ -216,7 +216,7 @@ $$</p>
 <td>Function complex in a simplicial model category; $\pi_0\operatorname{Map}(X,Y) = \operatorname{Ho}(\mathcal{C})(X,Y)$</td>
 </tr>
 <tr>
-<td>Pushout-product $i\Box j$</td>
+<td>Pushout-product $i\Box_\Phi j$</td>
 <td>Axiom making the monoidal structure homotopy invariant</td>
 </tr>
 <tr>

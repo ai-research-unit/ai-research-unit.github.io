@@ -78,9 +78,9 @@ $$
 $$
 separates the classical derivative of a piecewise smooth function from the layer its jump creates, where $\{\partial/\partial x_j u\}$ is the classical derivative away from the surface and $[u]$ is the jump. The <strong>jump conditions</strong> of a differential equation are the equations obtained by collecting the layers in $Pu=f$, and the <strong>characteristic</strong> of the principal symbol in the normal direction decides whether a jump is possible at all.</p>
 <p>The article is organised as follows. The surface delta and the coarea formula are established first; the jump formula and its corollaries for the gradient, the divergence and the rotor follow; the layer expansion of a distribution supported on a surface is then given, with the single and double layers as its first terms. The surface differential operators and the two layer identities are treated next, and the article closes with the jump conditions of first- and second-order equations, with the Rankine–Hugoniot condition of a conservation law, and with the trace problem that decides when a restriction to the surface exists.</p>
-<p>Throughout, $S \subseteq \mathbb{R}^n$ is a hypersurface of class $C^2$, $n \ge 2$, described near a point by a defining function $\varphi$ with $S = \{\varphi = 0\}$ and $\nabla\varphi \neq 0$ on $S$. The unit normal is
+<p>Throughout, $S \subseteq \mathbb{R}^n$ is a hypersurface of class $C^2$, $n \ge 2$, described near a point by a defining function $\varphi$ with $S = \{\varphi = 0\}$ and $\tilde\nabla_\Phi\varphi \neq 0$ on $S$. The unit normal is
 $$
-n = \frac{\nabla\varphi}{|\nabla\varphi|},
+n = \frac{\tilde\nabla_\Phi\varphi}{|\tilde\nabla_\Phi\varphi|},
 $$
 oriented so that $\varphi$ increases across $S$ in the direction of $n$. The <strong>jump</strong> of a function across $S$ is
 $$
@@ -97,23 +97,23 @@ $$
 where $dS$ is the surface measure of $S$. It is a positive measure on $\mathbb{R}^n$ of order $0$, its support is exactly $S$, and it is singular with respect to Lebesgue measure.</p>
 <p>A distribution of order zero supported on a hypersurface is integration against a measure carried by that hypersurface, by the structure theorem of <em>Distributions and Fundamental Solutions</em>; $\delta_S$ is the case in which the measure is the surface measure itself, and a general such measure is $g\,\delta_S$ for a density $g$ on $S$.</p>
 <h3 id="the-coarea-formula">The Coarea Formula</h3>
-<p><strong>Proposition (the surface delta as a composed delta).</strong> Let $\varphi$ be a defining function of $S$ with $\nabla\varphi \neq 0$ on $S$. Then
+<p><strong>Proposition (the surface delta as a composed delta).</strong> Let $\varphi$ be a defining function of $S$ with $\tilde\nabla_\Phi\varphi \neq 0$ on $S$. Then
 $$
-\delta_S = |\nabla\varphi|\,\delta \circ \varphi,
+\delta_S = |\tilde\nabla_\Phi\varphi|\,\delta \circ \varphi,
 $$
 where $\delta$ is the delta on the real line and $\delta \circ \varphi$ is the distribution $\psi \mapsto \langle \delta, \psi \rangle$ composed with $\varphi$.</p>
 <p><em>Proof.</em> The coarea formula applied to the level sets of $\varphi$ states that for $\psi \in C_c^\infty(\mathbb{R}^n)$
 $$
-\int_{\mathbb{R}^n} \psi(x)\,\delta(\varphi(x))\,dx = \int_{\mathbb{R}} \delta(t)\left(\int_{\{\varphi = t\}} \frac{\psi}{|\nabla\varphi|}\, dS_t\right) dt = \int_S \frac{\psi}{|\nabla\varphi|}\, dS,
+\int_{\mathbb{R}^n} \psi(x)\,\delta(\varphi(x))\,dx = \int_{\mathbb{R}} \delta(t)\left(\int_{\{\varphi = t\}} \frac{\psi}{|\tilde\nabla_\Phi\varphi|}\, dS_t\right) dt = \int_S \frac{\psi}{|\tilde\nabla_\Phi\varphi|}\, dS,
 $$
-because the coarea measure of the level set $\{\varphi = t\}$ is $dS_t/|\nabla\varphi|$. Multiplying both sides by $|\nabla\varphi|$ gives the stated identity.</p>
-<p>The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\varphi(x) = |x| - 1$ and $|\nabla\varphi| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.</p>
+because the coarea measure of the level set $\{\varphi = t\}$ is $dS_t/|\tilde\nabla_\Phi\varphi|$. Multiplying both sides by $|\tilde\nabla_\Phi\varphi|$ gives the stated identity.</p>
+<p>The identity is the reason a surface is described by a distribution at all: it converts the codimension-one geometry into a one-dimensional delta composed with the defining function, and it is the form in which a surface is entered into a differential operator. Its normalisation is the thing to check: for the unit sphere in $\mathbb{R}^3$, with $\varphi(x) = |x| - 1$ and $|\tilde\nabla_\Phi\varphi| = 1$, the pairing of $\delta_S$ with the constant $1$ is the area $4\pi$.</p>
 <h3 id="the-chain-rule-with-the-heaviside-function">The Chain Rule with the Heaviside Function</h3>
 <p><strong>Proposition.</strong> Let $H(t) = \mathbf{1}_{t>0}$ be the Heaviside function. Then, in $\mathcal{D}'(\mathbb{R}^n)$,
 $$
-\partial/\partial x_j H(\varphi) = n_j\,\delta_S, \qquad \nabla H(\varphi) = n\,\delta_S .
+\partial/\partial x_j H(\varphi) = n_j\,\delta_S, \qquad \tilde\nabla_\Phi H(\varphi) = n\,\delta_S .
 $$</p>
-<p><em>Proof.</em> The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial/\partial x_j H(\varphi) = \varphi_j\,(\delta \circ \varphi)$. By the proposition above, $\delta \circ \varphi = \delta_S/|\nabla\varphi|$, so $\partial/\partial x_j H(\varphi) = \varphi_j \delta_S/|\nabla\varphi| = n_j \delta_S$.</p>
+<p><em>Proof.</em> The chain rule for the composition of a distribution with a smooth function whose gradient does not vanish gives $\partial/\partial x_j H(\varphi) = \varphi_j\,(\delta \circ \varphi)$. By the proposition above, $\delta \circ \varphi = \delta_S/|\tilde\nabla_\Phi\varphi|$, so $\partial/\partial x_j H(\varphi) = \varphi_j \delta_S/|\tilde\nabla_\Phi\varphi| = n_j \delta_S$.</p>
 <p>Thus $H(\varphi)$ is the indicator of the side $\{\varphi > 0\}$, its gradient is the <strong>normal layer</strong> $n\,\delta_S$, and the two-sided classical derivative of $H(\varphi)$ is zero. The layer is exactly the term produced by the discontinuity of the indicator, and the formula is the building block of the jump formula below.</p>
 <h2 id="the-jump-formula">The Jump Formula</h2>
 <h3 id="piecewise-smooth-functions">Piecewise Smooth Functions</h3>
@@ -137,7 +137,7 @@ The first two terms are $\{\partial/\partial x_j u\}$ and the last is $(u^{+} - 
 <h3 id="the-gradient-the-divergence-and-the-rotor">The Gradient, the Divergence and the Rotor</h3>
 <p><strong>Corollary.</strong> For a piecewise smooth scalar $u$ and a piecewise smooth vector field $A$,
 $$
-\nabla u = \{\nabla u\} + [u]\,n\,\delta_S,
+\tilde\nabla_\Phi u = \{\tilde\nabla_\Phi u\} + [u]\,n\,\delta_S,
 $$
 $$
 \mathrm{div}\,A = \{\mathrm{div}\,A\} + (n \cdot [A])\,\delta_S,
@@ -161,7 +161,7 @@ $$</p>
 $$
 \langle g\,\delta_S, \psi \rangle = \int_S g\,\psi\, dS .
 $$
-The <strong>double layer</strong> of density $g$ is the distribution $g\,\partial/\partial n\delta_S$, where $\partial/\partial n = n \cdot \nabla$ is the normal derivative, with
+The <strong>double layer</strong> of density $g$ is the distribution $g\,\partial/\partial n\delta_S$, where $\partial/\partial n = n \cdot \tilde\nabla_\Phi$ is the normal derivative, with
 $$
 \langle g\,\partial/\partial n\delta_S, \psi \rangle = -\int_S \bigl(g\,\partial/\partial n \psi + \psi\,\partial/\partial n g\bigr) dS .
 $$</p>
@@ -181,15 +181,15 @@ with $g_k \in \mathcal{D}'(\mathbb{R}^{n-1})$; this is the structure theorem app
 <h3 id="the-laplacian-of-a-piecewise-smooth-function">The Laplacian of a Piecewise Smooth Function</h3>
 <p><strong>Example.</strong> Let $S = \{x_n = 0\}$ locally and let $u$ be piecewise smooth across it. Then
 $$
-\Delta u = \{\Delta u\} + [\partial/\partial n u]\,\delta_S + [u]\,\partial/\partial n\delta_S .
+\Delta_\Phi u = \{\Delta_\Phi u\} + [\partial/\partial n u]\,\delta_S + [u]\,\partial/\partial n\delta_S .
 $$</p>
 <p><em>Proof.</em> Apply $\partial/\partial x_j$ to the jump formula and sum over $j$. The term $\partial/\partial x_j([u]n_j\delta_S)$ is $[u]\partial/\partial n\delta_S$ when the density $[u]$ is extended constantly along $n$, and the term $[\partial/\partial x_j u]n_j\delta_S$ is $[\partial/\partial n u]\delta_S$. The remaining contributions vanish in the flat coordinates in which $n$ is constant.</p>
-<p>This is the layer decomposition of a second-order operator. For $\Delta u = f$ with $f$ continuous across $S$, the double-layer and single-layer coefficients must vanish separately, giving $[u] = 0$ and $[\partial/\partial n u] = 0$: a piecewise harmonic function with a continuous Laplacian is continuous together with its normal derivative. If $f = g\delta_S$ has a single-layer source, the double layer still vanishes and the single-layer condition reads $[\partial/\partial n u] = g$. This is the distributional form of the transmission conditions of an interface.</p>
+<p>This is the layer decomposition of a second-order operator. For $\Delta_\Phi u = f$ with $f$ continuous across $S$, the double-layer and single-layer coefficients must vanish separately, giving $[u] = 0$ and $[\partial/\partial n u] = 0$: a piecewise harmonic function with a continuous Laplacian is continuous together with its normal derivative. If $f = g\delta_S$ has a single-layer source, the double layer still vanishes and the single-layer condition reads $[\partial/\partial n u] = g$. This is the distributional form of the transmission conditions of an interface.</p>
 <h2 id="surface-differential-operators">Surface Differential Operators</h2>
 <h3 id="the-tangential-gradient-and-the-surface-divergence">The Tangential Gradient and the Surface Divergence</h3>
 <p><strong>Definition.</strong> The <strong>tangential projection</strong> at a point of $S$ is $P = \mathrm{I} - n \otimes n$, the orthogonal projection onto the tangent space. For a smooth function $f$ on a neighbourhood of $S$, the <strong>tangential gradient</strong> is
 $$
-\nabla_S f = P\,\nabla f = \nabla f - (\partial/\partial n f)\,n .
+\nabla_S f = P\,\tilde\nabla_\Phi f = \tilde\nabla_\Phi f - (\partial/\partial n f)\,n .
 $$
 For a vector field $a$ tangent to $S$ (so $a \cdot n = 0$), the <strong>surface divergence</strong> $\mathrm{div}_S\,a$ is the scalar function on $S$ defined by the integration by parts
 $$
@@ -256,7 +256,7 @@ $$
 $$
 where the displayed first term is the double layer. If $n$ is non-characteristic, then $[u] = 0$, and the single-layer condition then determines $[\partial/\partial n u]$ in terms of the lower-order coefficients and the source; if $n$ is characteristic, the double-layer coefficient vanishes and the leading condition on $[u]$ disappears.</p>
 <p><em>Proof.</em> Apply $\partial^2/\partial x_j\partial x_k$ to the jump formula and contract with $a_{jk}$. The double layer $\partial/\partial n\delta_S$ arises from the second derivative of the single layer, and its coefficient is $\sum_{jk}a_{jk}n_jn_k[u] = \sigma_P(n)[u]$; the single layer $\delta_S$ collects the first derivatives of $u$ and the lower-order coefficients.</p>
-<p>The wave operator $\Box = \partial^2/\partial t^2 - c^2\Delta$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the null cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial/\partial n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.</p>
+<p>The wave operator $\Box_\Phi = \partial^2/\partial t^2 - c^2\Delta_\Phi$ on $\mathbb{R} \times \mathbb{R}^3$ has $\sigma_\Box_\Phi(\nu) = \nu_t^2 - c^2|\nu|^2$, whose zero set is the null cone $|\nu_t| = c|\nu|$. A surface of constant phase is characteristic exactly when it moves at the speed $c$. On a non-characteristic surface a piecewise solution is continuous, with its normal derivative fixed by the source; on a characteristic surface the continuity is not forced at leading order, and the jumps are the waves that travel on the cone. The elliptic Laplacian has $\sigma_\Delta_\Phi(\nu) = |\nu|^2 \neq 0$ for every real $\nu \neq 0$, so every surface is non-characteristic and both $[u]$ and $[\partial/\partial n u]$ vanish for a continuous source; the example of the previous section is the flat-coordinate form of this statement.</p>
 <h3 id="the-rankinehugoniot-condition">The Rankine–Hugoniot Condition</h3>
 <p><strong>Theorem (Rankine–Hugoniot).</strong> Let $u$ be a piecewise smooth solution of the conservation law
 $$
@@ -329,7 +329,7 @@ $$
 $$
 where the product on the right is the algebra's and the transform is the coefficientwise one of <em>Biquaternion Continuous Harmonic Analysis</em>. The second rule is why the algebra-valued transform is entrywise on the sum of two fields and not on their convolution: the product that survives is the non-commutative one. This is the algebra-valued case of the convolution theorem the harmonic-analysis articles develop, and it is the rule the shifted-gradient solution constructions of the electromagnetism articles use when they convolve a scalar potential with a source.</p>
 <h2 id="summary">Summary</h2>
-<p>A distribution supported on a hypersurface $S$ is built from the surface delta $\delta_S$ and its normal derivatives. The surface delta is defined by integration over $S$ and equals $|\nabla\varphi|\,\delta\circ\varphi$ for a defining function $\varphi$, by the coarea formula; its normal derivative is the double layer, and every distribution supported on $S$ is locally a finite sum of layers $\partial^k/\partial n^k(g_k\delta_S)$, the single layer being the term of order zero and the double layer the term of order one.</p>
+<p>A distribution supported on a hypersurface $S$ is built from the surface delta $\delta_S$ and its normal derivatives. The surface delta is defined by integration over $S$ and equals $|\tilde\nabla_\Phi\varphi|\,\delta\circ\varphi$ for a defining function $\varphi$, by the coarea formula; its normal derivative is the double layer, and every distribution supported on $S$ is locally a finite sum of layers $\partial^k/\partial n^k(g_k\delta_S)$, the single layer being the term of order zero and the double layer the term of order one.</p>
 <p>A piecewise smooth function $u$ has a classical derivative away from $S$ and a jump $[u]$ across it, and the jump formula $\partial/\partial x_j\,u = \{\partial/\partial x_j\,u\} + [u]n_j\delta_S$ relates them. Its corollaries are the layer decomposition of the gradient, of the divergence, $\mathrm{div}\,A = \{\mathrm{div}\,A\} + (n\cdot[A])\delta_S$, and of the rotor, $\mathrm{rot}\,A = \{\mathrm{rot}\,A\} + n\times[A]\delta_S$, together with the jump of a product $[uv] = u^{+}[v] + [u]v^{-}$. The divergence and the rotor see the normal and the tangential parts of the jump, and the singular parts are the surface charge and the surface current.</p>
 <p>The surface operators $\nabla_S$, $\mathrm{div}_S$ and $\mathrm{rot}_S$ are the intrinsic operators of $S$, defined by integration by parts and Stokes' theorem. A tangential simple layer is differentiated into a tangential simple layer, $\mathrm{div}(a\delta_S) = (\mathrm{div}_S\,a)\delta_S$, whereas a normal layer is differentiated into a double layer, $\mathrm{div}(n\delta_S) = \partial/\partial n\delta_S + (\mathrm{div}_S\,n)\delta_S$; this is why surface charges and surface currents are simple layers and double layers arise only from the normal direction or from a second derivative.</p>
 <p>The jump conditions of a linear operator are read from the singular part of $Pu$, whose highest layer carries the principal symbol evaluated on the normal. A non-characteristic surface forces the jump to vanish; a characteristic surface admits the jumps in the kernel of $\sigma_P(n)$, and for a second-order operator the double-layer condition is the continuity of the solution. The nonlinear instance is the Rankine–Hugoniot condition $[u]\nu_t + \sum_j[f_j(u)]\nu_{x_j} = 0$ of a conservation law. The traces on which all of this rests exist for Sobolev functions above the threshold $s = 1/2$ and, for a distribution, exactly when its wavefront set avoids the conormal bundle of $S$.</p>
@@ -344,7 +344,7 @@ where the product on the right is the algebra's and the transform is the coeffic
 <tbody>
 <tr>
 <td>$S$, $\varphi$, $n$</td>
-<td>hypersurface, defining function with $S = \{\varphi = 0\}$, unit normal $\nabla\varphi/\lvert\nabla\varphi\rvert$</td>
+<td>hypersurface, defining function with $S = \{\varphi = 0\}$, unit normal $\tilde\nabla_\Phi\varphi/\lvert\nabla\varphi\rvert$</td>
 </tr>
 <tr>
 <td>$H$</td>

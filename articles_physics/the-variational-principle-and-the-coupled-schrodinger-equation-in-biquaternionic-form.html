@@ -84,7 +84,7 @@ $$</p>
 <p><em>Second, the connection enters the action in one place and the variation puts it in two.</em> The action carries the connection inside $D_\eta$ and inside $ϙ\varphi$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§<em>The Variation</em>).</p>
 <p><em>Third, the local phase transformation leaves the action invariant exactly, with no boundary term.</em> The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§<em>Gauge Invariance of the Action</em>).</p>
 <p><strong>What is not claimed.</strong> The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.</p>
-<p><strong>Conventions.</strong> The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.</p>
+<p><strong>Conventions.</strong> The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.</p>
 <h2 id="the-coupled-action">The Coupled Action</h2>
 <p><strong>The kinetic term is Hermitian.</strong> Write $K=\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)$. Then</p>
 <p>$$
@@ -125,7 +125,7 @@ $$</p>
 <p>$$
 \tilde\Xi\longmapsto\lambda\tilde\Xi,
 \qquad
-\vec A\longmapsto\vec A-\nabla\Gamma,
+\vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
 \varphi\longmapsto\varphi+\partial_{t'}\Gamma .
 $$</p>
@@ -175,7 +175,7 @@ $$</p>
 e=\frac{\hbar^{2}}{2m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
 $$</p>
 <p>which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and <strong>it is conserved for a time-independent connection</strong>: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.</p>
-<p><strong>What the article does not do.</strong> It does not print the local energy flux. The local conservation law $\partial_{t'}e+\nabla\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.</p>
+<p><strong>What the article does not do.</strong> It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.</p>
 <p><strong>The positivity.</strong> The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.</p>
 <h2 id="the-lorentz-force">The Lorentz Force</h2>
 <p><strong>The statement.</strong> The divergence of the stress tensor of the coupled field is the Lorentz force density,</p>
@@ -184,7 +184,7 @@ $$</p>
 \qquad
 \mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
 $$</p>
-<p>with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.</p>
+<p>with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.</p>
 <p><strong>The status of the statement.</strong> It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §<em>The Noether Currents</em> already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §<em>Open Questions</em> lists it as the check that would close the article's variational ledger.</p>
 <p><strong>What the identity would show.</strong> That the field's momentum is not conserved, that the rate at which it is not conserved is the Lorentz force, and that the force is the sum of an electric part from the potential's gradient and a magnetic part from the current crossed with the field. The free article has no such statement because a free field has no force to feel.</p>
 <h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
@@ -294,7 +294,7 @@ $$</p>
 <td>The gauge function and factor</td>
 </tr>
 <tr>
-<td>$\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$</td>
+<td>$\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$</td>
 <td>The fields of the connection</td>
 </tr>
 </tbody>

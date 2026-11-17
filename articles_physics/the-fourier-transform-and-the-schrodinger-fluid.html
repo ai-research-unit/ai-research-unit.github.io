@@ -77,14 +77,14 @@
 <p><strong>Position in the block.</strong> This is the Fourier companion of <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> and of <a href="the-lagrangian-of-the-schrodinger-fluid.html">The Lagrangian of the Schrödinger Fluid</a>. Its charged companion is <a href="the-fourier-transform-and-the-charged-schrodinger-fluid.html">The Fourier Transform and the Charged Schrödinger Fluid</a>. The four Fourier articles of the scalar rung are followed by the four of the spinor and vector rungs, and §<em>What the Transform Leaves, Rung by Rung</em> states what the four share.</p>
 <p><strong>What the article does not do.</strong> It adds no solution and no equation. The transform is the one of <a href="the-derivative-the-field-and-the-transform.html">The Derivative, the Field and the Transform</a>, the word and the pair are the polar parent's, and the only new object is the reading of $Q$ as a cross term.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is</p>
+<p>The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\vec\nabla_\Phi S/m$, and the quantum potential is</p>
 <p>$$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho}
-=-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho}
+=-\frac{\hbar^{2}}{4m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$</p>
 <p>The transform is the transform of <a href="the-derivative-the-field-and-the-transform.html">The Derivative, the Field and the Transform</a>, with the symbol rule of <a href="the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</a>:</p>
 <p>$$
-\nabla\longmapsto i\vec k,
+\vec\nabla_\Phi\longmapsto i\vec k,
 \qquad
 \frac{\partial}{\partial t'}\longmapsto-i\omega,
 \qquad
@@ -110,7 +110,7 @@ Q=0,
 \qquad
 \sigma^{Q}_{ij}=0 ,
 $$</p>
-<p>the last because $\nabla\ln\rho_{\mathrm{num}}$ vanishes identically when the scale is constant. <strong>The density is blind to the wave number and the velocity is read from the wave number alone</strong>; neither statement needs the other, and no cancellation occurs in either.</p>
+<p>the last because $\vec\nabla_\Phi\ln\rho_{\mathrm{num}}$ vanishes identically when the scale is constant. <strong>The density is blind to the wave number and the velocity is read from the wave number alone</strong>; neither statement needs the other, and no cancellation occurs in either.</p>
 <p><strong>The four checks are one check.</strong> Each of the four quantities above is a functional of the scale and of its derivatives. A constant scale has vanishing derivatives of every order, so every such functional vanishes. The quantum potential, the quantum stress and the quantum force are therefore zero at a mode for one reason and not three.</p>
 <p><strong>The mode has no node, and that is a statement about the modulus and not about the phase.</strong></p>
 <p>$$
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>The precise statement is that $Q$ is homogeneous of degree zero in the amplitude and non-additive in the density.</strong> A common rescaling of all amplitudes leaves $Q$ unchanged, because $Q$ depends on $\ln\rho_{\mathrm{num}}$ and a constant addend to the logarithm differentiates away. Setting one amplitude to zero does not continuously reduce $Q$ to the other's: it reduces $Q$ to zero or to the other's value, with a discontinuous dependence on the amplitudes at the boundary. <strong>So $Q$ is a property of the set of amplitudes and not of any one of them</strong>, which is what the word "interference" states in one word.</p>
 <p><strong>The size of what the interference adds is a number, and it is quadratic in the separation.</strong> Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,</p>
 <p>$$
-\Bigl\langle\frac{\nabla^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+\Bigl\langle\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
 $$</p>
 <p><strong>The two powers are the content of the formula</strong>: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. <strong>The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$</strong>, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.</p>
 <p><strong>The stated objection, and the answer.</strong> The objection is that the decomposition into modes is a choice of basis, so a statement about "interference" is a statement about the basis and not about the fluid. The objection is correct about the basis and it does not touch the result: the basis is the basis of the plain waves, the plain waves are what a mode is, and the result is that in that basis the quantum layer has no diagonal part. <strong>The invariance of the statement is the invariance of the Fourier support</strong>: a single point of support cannot carry a functional of the density's curvature, because a single point has a constant density, and that is a fact about points and not about bases.</p>
@@ -177,7 +177,7 @@ $$</p>
 <p>around a loop that links a nodal line of winding $n$. A mode has no such loop, so the quantum of circulation is invisible to every single mode. <strong>The quantum $h/m$ is a statement about a pair of modes and not about a wave.</strong></p>
 <p><strong>The vorticity does not follow the same rule, and the difference is worth stating.</strong> The velocity is $\hbar\nabla\theta/m$, so</p>
 <p>$$
-\nabla\times\vec v=\frac{\hbar}{m}\nabla\times\nabla\theta=0
+\vec\nabla_\Phi\times\vec v=\frac{\hbar}{m}\vec\nabla_\Phi\times\nabla\theta=0
 $$</p>
 <p>wherever the phase is twice differentiable — at a mode and at every superposition alike. <strong>The vorticity vanishes identically at every order of superposition</strong>, and what a superposition supplies is not a vorticity but a place where the phase is not a function, that is a node. The fluid is irrotational everywhere the flow is defined, and the rotation it does carry is a circulation around a hole in its domain. That is the precise sense in which this rung's rotation is topological and not local, and it contrasts with the spinor rung, where the vorticity is a local quantity read off a frame.</p>
 <h2 id="what-the-transform-leaves-rung-by-rung">What the Transform Leaves, Rung by Rung</h2>
@@ -263,11 +263,11 @@ $$</p>
 <td>The density; constant at a mode</td>
 </tr>
 <tr>
-<td>$\vec v=\nabla S/m=\hbar\vec k/m$</td>
+<td>$\vec v=\vec\nabla_\Phi S/m=\hbar\vec k/m$</td>
 <td>The velocity; constant at a mode</td>
 </tr>
 <tr>
-<td>$Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$</td>
+<td>$Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$</td>
 <td>The quantum potential; zero at a mode</td>
 </tr>
 <tr>
@@ -291,7 +291,7 @@ $$</p>
 <td>The winding of a loop around a nodal line</td>
 </tr>
 <tr>
-<td>$\nabla\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$</td>
+<td>$\vec\nabla_\Phi\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$</td>
 <td>The symbol rule</td>
 </tr>
 <tr>

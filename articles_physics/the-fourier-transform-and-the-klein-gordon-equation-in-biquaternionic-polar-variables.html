@@ -82,7 +82,7 @@
 <p><strong>The seed is quoted once.</strong> On the material sector $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so</p>
 <p>$$
 \tilde\nabla_\Phi S_{\tilde\Xi}
-=-i\frac{\partial S_{\tilde\Xi}}{\partial r_t'}e_t+\nabla S_{\tilde\Xi}
+=-i\frac{\partial S_{\tilde\Xi}}{\partial r_t'}e_t+\vec\nabla_\Phi S_{\tilde\Xi}
 =i\frac{E}{c}e_t+\vec p
 =\tilde P_\Phi,
 \qquad
@@ -94,7 +94,7 @@ $$</p>
 <p>$$
 \left(\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
 $$</p>
 <p>with $\rho_{\mathrm{num}}=\varrho^{2}$.</p>
 <p><strong>The bookkeeping is stated once.</strong> $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$, $\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}$, and the phase is $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$ for a positive-frequency plane wave.</p>
@@ -132,7 +132,7 @@ $$</p>
 <p><strong>The residue is a functional and not a coefficient.</strong> A symbol is a function of $\tilde K_\Phi$ alone; $\Box_\Phi \varrho/\varrho$ depends on the solution, so two fields with the same wave number and different amplitudes have different equations. <strong>That is what "no symbol" means in this case</strong>: not that the operator is unknown, but that the operator is different for every field it is applied to.</p>
 <h2 id="the-transport-equation-has-no-symbol">The Transport Equation Has No Symbol</h2>
 <p><strong>Finding 4.</strong> The transport equation is quadratic in the amplitude, and it has no symbol either, for a second reason.</p>
-<p><strong>The reason is the density.</strong> The equation is $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\nabla S$ are products of two fields, so their transforms are convolutions. <strong>A symbol represents a product by a product; here the product is inside the operator</strong>, and no multiplication at one wave number can stand for it.</p>
+<p><strong>The reason is the density.</strong> The equation is $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\vec\nabla_\Phi S$ are products of two fields, so their transforms are convolutions. <strong>A symbol represents a product by a product; here the product is inside the operator</strong>, and no multiplication at one wave number can stand for it.</p>
 <p><strong>The two equations fail differently and the difference is worth keeping.</strong> The amplitude equation fails because its coefficient depends on the solution; the transport equation fails because it is nonlinear in the amplitude. The first failure is a coefficient problem and the second is a superposition problem, and the polar pair has one of each. <strong>That is why the polar form has neither a symbol nor a linearization that would produce one.</strong></p>
 <p><strong>The polar variational parent sharpens the second failure.</strong> Its momenta are genuine Legendre conjugates to the polar parameters, and its Hamiltonian structure is well defined. That structure is not a symbol: a Legendre transform between a field and its conjugate momentum is a transform on the <em>field's</em> variables at each point, and the wave number is not among those variables. <strong>The parent's canonical momenta are not Fourier momenta</strong>, and no reading of them as such is available.</p>
 <h2 id="the-legendre-denial">The Legendre Denial</h2>

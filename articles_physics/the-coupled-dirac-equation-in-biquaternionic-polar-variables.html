@@ -79,11 +79,11 @@ $$</p>
 <p>with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.</p>
 <p><strong>The equation.</strong> The coupled pair is</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
 $$</p>
 <p>Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.</p>
 <p><strong>Three things are established, and they are local statements.</strong></p>
@@ -96,7 +96,7 @@ $$</p>
 <p>Differentiate the word and divide by it, as the parent does, and add the connection. Because $\tilde A_\Phi$ is central per component, the two operations commute with the split.</p>
 <p><strong>The logarithmic derivative, coupled.</strong></p>
 <p>$$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
@@ -214,9 +214,9 @@ $$</p>
 <p>$$
 \tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)+\frac{ϙ}{\hbar}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
 $$</p>
-<p><strong>The invariant is the curvature.</strong> Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco}}$ restricted to its vector part; the operator identity of the covariant-derivative article gives</p>
+<p><strong>The invariant is the curvature.</strong> Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ restricted to its vector part; the operator identity of the covariant-derivative article gives</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
 $$</p>
 <p>and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of <em>Maxwell's Equations in the Biquaternionic Formulation</em>.</p>
 <p><strong>What the chart's invariants are, in one list.</strong> The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.</p>
@@ -254,7 +254,7 @@ $$</p>
 <p><strong>The word's range under gauge transformations.</strong> A gauge transformation with a singular $\Lambda$ carries the word out of its chart's range at the singular set. Whether the range restrictions have a physical reading, or whether they are an artefact of the chart, is not settled here.</p>
 <p><strong>The relative phase and the chart's parameter count.</strong> The mass breaks the relative phase of the two parts (§<em>The Field and Its Phase Symmetry</em> of the element companion), and the word has no parameter for that phase. Whether the absence is a genuine statement — that the relative phase is not a degree of freedom of the N-regular set — or a limitation of the chosen bijection is open.</p>
 <h2 id="summary">Summary</h2>
-<p>The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.</p>
+<p>The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.</p>
 <p>The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.</p>
 <p>The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.</p>
 <p>The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.</p>
@@ -295,7 +295,7 @@ $$</p>
 <td>Potential biquaternion; material sector; coefficients central in the abelian case</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
 <td>Covariant derivative, left action</td>
 </tr>
 <tr>

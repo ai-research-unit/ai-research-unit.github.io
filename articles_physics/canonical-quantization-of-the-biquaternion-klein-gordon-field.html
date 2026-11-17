@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="canonical-quantization-of-the-biquaternion-kleingordon-field"><strong>Canonical Quantization of the Biquaternion Klein–Gordon Field</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em> closes on a two-fold defect. The equation $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
+<p>The companion article <em>The Klein–Gordon Equation in Biquaternionic Form</em> closes on a two-fold defect. The equation $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
 <p>Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.</p>
 <ul>
 <li><strong>The standard part.</strong> The Lagrangian, the Legendre transform, the equal-time commutators, the mode expansion, the mode algebra, the Hamiltonian, the normal-ordering constant and the conserved charge are textbook quantum field theory, transcribed into the notation of this series. None of it is new, and none of it depends on the biquaternion structure beyond the kinematical conventions already fixed by the companion articles.</li>
@@ -101,7 +101,7 @@ $$</p>
 $$</p>
 <p>Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is</p>
 <p>$$
-\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2 .
+\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2 .
 $$</p>
 <p>The <strong>conjugate momentum</strong> is</p>
 <p>$$
@@ -111,7 +111,7 @@ $$</p>
 <p>and the Legendre transform is <strong>regular</strong>: $\pi$ determines $\partial\xi/\partial r'_t$ and conversely, so the phase space is the full space of pairs $(\xi,\pi)$ and no constraint appears. This is the first point of contrast with the two parent quantizations. The Dirac field carried a <strong>second-class</strong> constraint, $\pi-i\tilde{Ξ}^{\dagger}\approx0$, because its equation is first order in time; the Maxwell field carried two <strong>first-class</strong> constraints, $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$, because its potential is a gauge field. The scalar field carries neither. Its equation is second order, so the momentum is independent, and its field is single-component, so there is no gauge redundancy to remove. The canonical structure is therefore taken over from the classical theory without modification — which is the technical reason the quantization below is a transcription with no obstruction and no new structure.</p>
 <p>The equation of motion obtained by varying the action is the parent's biquaternion Klein–Gordon equation,</p>
 <p>$$
-\left(\Box-k_m^{2}\right)\tilde{Ξ}=0 ,
+\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0 ,
 $$
 with $k_m=mc/\hbar$ the mass wave number.</p>
 <h2 id="the-field-as-a-central-valued-object">The Field as a Central-Valued Object</h2>
@@ -136,7 +136,7 @@ k_{t}^{\prime}=\frac{\omega}{c},
 =\frac{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}}{\hbar^{2}}
 =-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2} .
 $$</p>
-<p>Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central <strong>scalar</strong> of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.</p>
+<p>Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central <strong>scalar</strong> of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.</p>
 <h2 id="equal-time-commutation-relations">Equal-Time Commutation Relations</h2>
 <p>Quantization promotes the classical field and its momentum to operators $\xi_{\mathrm{fop}}$, $\xi_{\mathrm{fop}}^{\dagger}$, $\pi_{\mathrm{fop}}$, $\pi_{\mathrm{fop}}^{\dagger}$ and imposes equal-time brackets. Because the field is complex, $\xi$ and $\xi^\dagger$ are independent, and the canonical relations are</p>
 <p>$$
@@ -204,7 +204,7 @@ $$</p>
 <h2 id="the-hamiltonian-momentum-and-charge">The Hamiltonian, Momentum and Charge</h2>
 <p>The Hamiltonian density is the time–time component of the canonical energy–momentum tensor; with $\xi_{\mathrm{fop}}$ carrying an inverse length and $r'_t$ a length, the density needs one factor $\hbar\,c$ to be an energy,</p>
 <p>$$
-H=\hbar c\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
+H=\hbar c\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\vec\nabla_\Phi\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
 $$</p>
 <p>Substituting the mode expansion and using the commutators gives, before normal ordering,</p>
 <p>$$
@@ -306,7 +306,7 @@ $$</p>
 <td>Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$</td>
 </tr>
 <tr>
-<td>$\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$</td>
+<td>$\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$</td>
 <td>Biquaternionic gradient</td>
 </tr>
 <tr>

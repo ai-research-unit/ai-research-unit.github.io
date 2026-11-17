@@ -321,7 +321,7 @@ T_{00}^{\rm BR}=\mathcal E=E\,j_0=E\,\operatorname{Sc}\big(\tilde{Ξ}^*\tilde{Ξ
 $$</p>
 <p>and its mixed components give the momentum density</p>
 <p>$$
-\vec P=\frac{1}{2i}\Big(\operatorname{Sc}\big(\tilde{Ξ}^*\nabla\tilde{Ξ}\big)-\operatorname{Sc}\big((\nabla\tilde{Ξ})^{*}\tilde{Ξ}\big)\Big)+\frac12\nabla\times\vec S .
+\vec P=\frac{1}{2i}\Big(\operatorname{Sc}\big(\tilde{Ξ}^*\vec\nabla_\Phi\tilde{Ξ}\big)-\operatorname{Sc}\big((\vec\nabla_\Phi\tilde{Ξ})^{*}\tilde{Ξ}\big)\Big)+\frac12\vec\nabla_\Phi\times\vec S .
 $$</p>
 <p>Compare this with the spin term of the Gordon identity: the spin contribution to the momentum density carries the coefficient $\tfrac12$, while the spin contribution to the electric current carries $1$. The spin-density gradient is therefore <strong>twice as effective</strong> at producing an electric current as at contributing to the linear momentum, and that factor of two is the Dirac value $g=2$ seen from the angular-momentum side.</p>
 <p>The canonical (non-symmetric) tensor is the same expression with one pair of terms instead of two,</p>
@@ -332,11 +332,11 @@ T_{\mu\nu}^{\rm canonical}
 $$</p>
 <p>and it does not contain the bound spin-momentum term; that term is restored by the antisymmetric part of the Belinfante improvement. Integrating, the spin contribution to the total angular momentum is</p>
 <p>$$
-\int\vec r\times\big(\tfrac12\nabla\times\vec S\big)\,d^3r=\int\vec S\,d^3r,
+\int\vec r\times\big(\tfrac12\vec\nabla_\Phi\times\vec S\big)\,d^3r=\int\vec S\,d^3r,
 $$</p>
 <p>so the division by two is necessary for angular momentum and its absence is the statement of $g=2$ in the current.</p>
 <h3 id="spin-in-maxwells-equations">Spin in Maxwell's equations</h3>
-<p>The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\vec P=\vec P_{\rm free}+\vec P_{\rm bound}$ with $\vec P_{\rm bound}=\tfrac12\nabla\times\vec S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\vec S=\frac{\mu_0}{2i\omega}\vec H^{*}\times\vec H$ or $\vec S=\frac{\epsilon_0}{2i\omega}\vec E^{*}\times\vec E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.</p>
+<p>The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\vec P=\vec P_{\rm free}+\vec P_{\rm bound}$ with $\vec P_{\rm bound}=\tfrac12\vec\nabla_\Phi\times\vec S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\vec S=\frac{\mu_0}{2i\omega}\vec H^{*}\times\vec H$ or $\vec S=\frac{\epsilon_0}{2i\omega}\vec E^{*}\times\vec E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.</p>
 <h2 id="the-biquaternion-reading">The Biquaternion Reading</h2>
 <h3 id="the-split-is-central-versus-bivector">The split is central versus bivector</h3>
 <p>The one algebraic structure that the decomposition exhibits is the split of a product of two generators into its symmetric and antisymmetric parts: the <strong>symmetric</strong> part, one number per pair of indices, and in the algebra's terms the central direction; and the <strong>bivector</strong> part, antisymmetric, and in the algebra's terms the six directions $\vec e_\eta$ and $i\vec e_\eta$. The Gordon decomposition says that on shell the current splits in exactly this way. The convection term is the central direction, and the spin term is the bivector direction. This is the same identification the companion article on the anomalous magnetic moment records: the anomaly multiplies a bivector and is therefore an informational-sector object, while the tree-level convection term is central.</p>

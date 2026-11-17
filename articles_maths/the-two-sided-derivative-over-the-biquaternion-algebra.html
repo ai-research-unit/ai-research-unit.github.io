@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-two-sided-derivative-over-the-biquaternion-algebra-rank-one-gradients-the-complex-eikonal-and-the-linear-sector"><strong>The Two-Sided Derivative over the Biquaternion Algebra: Rank-One Gradients, the Complex Eikonal and the Linear Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The corpus differentiates a biquaternion-valued function in one way only. It writes the element-valued operator $\tilde\nabla=\sum_{\mu}e_\mu\,\partial/\partial Q_\mu$, imposes $\tilde\nabla F=0$, and calls the solutions <strong>regular</strong>; the definitions, the integral theory and the Fueter comparison are <em>Biquaternion Regular Functions</em>, <em>Fueter Theory for Biquaternions</em> and <em>Biquaternion Analysis</em>. The convention is not arbitrary, because the obvious alternative does not work: the quotient $\bigl(F(\tilde Z+\tilde H)-F(\tilde Z)\bigr)/\tilde H$ is ambiguous in a noncommutative algebra and undefined at the zero divisors, and the corpus records both failures in §<em>The Problem of Differentiability</em> of <em>Biquaternion Analysis</em>.</p>
+<p>The corpus differentiates a biquaternion-valued function in one way only. It writes the element-valued operator $\tilde\nabla_\Phi=\sum_{\mu}e_\mu\,\partial/\partial Q_\mu$, imposes $\tilde\nabla_\Phi F=0$, and calls the solutions <strong>regular</strong>; the definitions, the integral theory and the Fueter comparison are <em>Biquaternion Regular Functions</em>, <em>Fueter Theory for Biquaternions</em> and <em>Biquaternion Analysis</em>. The convention is not arbitrary, because the obvious alternative does not work: the quotient $\bigl(F(\tilde Z+\tilde H)-F(\tilde Z)\bigr)/\tilde H$ is ambiguous in a noncommutative algebra and undefined at the zero divisors, and the corpus records both failures in §<em>The Problem of Differentiability</em> of <em>Biquaternion Analysis</em>.</p>
 <p>There is a third definition, and it is neither of those two. Instead of dividing by $\tilde H$, it asks the <strong>differential</strong> to factorise, so that the derivative is not a quotient but a pair of multipliers:</p>
 <p>$$
 dF=L\,dZ\,R .
@@ -85,17 +85,17 @@ $$</p>
 <p>$$
 F'(\tilde Z_0)=\lim_{\tilde H\to0}\frac{F(\tilde Z_0+\tilde H)-F(\tilde Z_0)}{\tilde H},
 $$</p>
-<p>and it fails for two independent reasons. The first is that the quotient is ambiguous: $\tilde H^{-1}\Delta F$ and $\Delta F\,\tilde H^{-1}$ are different elements, so there are two derivatives and no reason to prefer either. The second is that $\tilde H^{-1}$ need not exist: the zero divisors have vanishing norm $N(\tilde H)=\tilde H\tilde H^{\natural}=0$ with $\tilde H\neq0$, so the limit cannot even be taken along those directions. <em>Biquaternion Analysis</em> develops both failures and adopts the operator route in consequence.</p>
+<p>and it fails for two independent reasons. The first is that the quotient is ambiguous: $\tilde H^{-1}\Delta_\Phi F$ and $\Delta_\Phi F\,\tilde H^{-1}$ are different elements, so there are two derivatives and no reason to prefer either. The second is that $\tilde H^{-1}$ need not exist: the zero divisors have vanishing norm $N(\tilde H)=\tilde H\tilde H^{\natural}=0$ with $\tilde H\neq0$, so the limit cannot even be taken along those directions. <em>Biquaternion Analysis</em> develops both failures and adopts the operator route in consequence.</p>
 <p>A third and subtler failure is worth naming, because it is the one the two-sided form repairs. The quotient presupposes that a derivative is a <strong>single element</strong> and that differentiability is the existence of that element. In a noncommutative algebra the differential is a linear map, and a linear map need not be a multiplication by an element on either side. The two-sided form drops the presupposition and keeps the invariant differential.</p>
 <h3 id="the-operator-form">The Operator Form</h3>
 <p>The corpus's definition is the operator one. For $F$ of class $C^1$ on an open set of a four-dimensional real subspace, the function is <strong>regular</strong> when</p>
 <p>$$
-\tilde\nabla F=0,\qquad \tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla_\Phi F=0,\qquad \tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 $$</p>
-<p>with the quaternion conjugate $\tilde\nabla^{\natural}=\sum_{\mu}\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Two properties matter here and both are immediate from the definition.</p>
+<p>with the quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu}\varepsilon_\mu e_\mu\,\partial/\partial Q_\mu$ and $\varepsilon=(1,-1,-1,-1)$. Two properties matter here and both are immediate from the definition.</p>
 <p><strong>It is linear, and linear over the centre.</strong> If $F_1$ and $F_2$ are regular then so is $\alpha F_1+\beta F_2$ for constants $\alpha,\beta\in\mathbb{C}$, and the solution set is a complex vector space.</p>
 <p><strong>It is scale covariant.</strong> If $F$ is regular then $\lambda F$ is regular for every $\lambda\in\mathbb{C}$, with no condition on $\lambda$. The equation cannot distinguish one amplitude from another, since it contains no term that is not proportional to $F$ or to a derivative of $F$.</p>
-<p>The second-order operator it defines is scalar, $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box=\sum_\mu\partial^2/\partial Q_\mu^2$, and every regular function is harmonic, $\Box F=0$.</p>
+<p>The second-order operator it defines is scalar, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi=\sum_\mu\partial^2/\partial Q_\mu^2$, and every regular function is harmonic, $\Box_\Phi F=0$.</p>
 <h3 id="the-two-sided-form">The Two-Sided Form</h3>
 <p><strong>Definition.</strong> Let $\Omega$ be open in $\mathbb{B}$ and let $F:\Omega\to\mathbb{B}$ be of class $C^1$ in the four complex coordinates. The function <strong>admits a two-sided derivative</strong> at $\tilde Z\in\Omega$ when there are elements $L(\tilde Z),R(\tilde Z)\in\mathbb{B}$, neither zero, with</p>
 <p>$$
@@ -129,7 +129,7 @@ $$</p>
 </tr>
 <tr>
 <td>Operator</td>
-<td>$\tilde\nabla F=0$</td>
+<td>$\tilde\nabla_\Phi F=0$</td>
 <td>yes</td>
 <td>no</td>
 <td>a complex vector space, infinite-dimensional</td>
@@ -167,11 +167,11 @@ $$</p>
 <h3 id="the-gradient-is-a-zero-divisor">The Gradient Is a Zero Divisor</h3>
 <p><strong>Proposition 2.</strong> For any $C^1$ function $\Sigma$ of the four coordinates,</p>
 <p>$$
-\det\mathsf D\Sigma=\tfrac14\,N\bigl(\nabla\Sigma\bigr),
+\det\mathsf D\Sigma=\tfrac14\,N\bigl(\tilde\nabla_\Phi\Sigma\bigr),
 $$</p>
 <p>with the norm read in the Cartesian coordinates of complexified Minkowski space,</p>
 <p>$$
-N\bigl(\nabla\Sigma\bigr)=\left(\frac{\partial\Sigma}{\partial z_0}\right)^2-\left(\frac{\partial\Sigma}{\partial z_1}\right)^2-\left(\frac{\partial\Sigma}{\partial z_2}\right)^2-\left(\frac{\partial\Sigma}{\partial z_3}\right)^2,
+N\bigl(\tilde\nabla_\Phi\Sigma\bigr)=\left(\frac{\partial\Sigma}{\partial z_0}\right)^2-\left(\frac{\partial\Sigma}{\partial z_1}\right)^2-\left(\frac{\partial\Sigma}{\partial z_2}\right)^2-\left(\frac{\partial\Sigma}{\partial z_3}\right)^2,
 $$</p>
 <p>and the coordinates given by</p>
 <p>$$
@@ -180,11 +180,11 @@ $$</p>
 <p>The first is the scalar coordinate $Q_t$; the other three are $-i$ times the vector coordinates, $z_k=-iQ_k$, which is why the all-plus sum $\sum_\mu(\partial\Sigma/\partial Q_\mu)^2$ and the indefinite sum above are one form written in two frames.</p>
 <p><em>Proof.</em> The chain rule gives $\partial/\partial\upsilon=\tfrac12(\partial/\partial z_0+\partial/\partial z_3)$, $\partial/\partial v=\tfrac12(\partial/\partial z_0-\partial/\partial z_3)$, $\partial/\partial w=\tfrac12(\partial/\partial z_1+i\,\partial/\partial z_2)$ and $\partial/\partial p=\tfrac12(\partial/\partial z_1-i\,\partial/\partial z_2)$. Writing $a_\mu:=\partial\Sigma/\partial z_\mu$, the four entries of $\mathsf D\Sigma$ are therefore $\tfrac12(a_0+a_3)$, $\tfrac12(a_0-a_3)$, $\tfrac12(a_1+ia_2)$ and $\tfrac12(a_1-ia_2)$, and the determinant is the difference of two products of sums and differences:</p>
 <p>$$
-\det\mathsf D\Sigma=\tfrac14(a_0+a_3)(a_0-a_3)-\tfrac14(a_1+ia_2)(a_1-ia_2)=\tfrac14\left(a_0^2-a_3^2-a_1^2-a_2^2\right)=\tfrac14N(\nabla\Sigma),
+\det\mathsf D\Sigma=\tfrac14(a_0+a_3)(a_0-a_3)-\tfrac14(a_1+ia_2)(a_1-ia_2)=\tfrac14\left(a_0^2-a_3^2-a_1^2-a_2^2\right)=\tfrac14N(\tilde\nabla_\Phi\Sigma),
 $$</p>
 <p>the sign of the last two terms being the one the factor $i$ supplies.</p>
 <p>The identity was verified here on 100 generic complex points, with a largest residual of $1.4\times10^{-14}$ — round-off, since the identity is algebraic once the derivatives are known.</p>
-<p><strong>Corollary.</strong> The two-sided condition on a component is $N(\nabla\Sigma)=0$. The biquaternion gradient of every component is therefore a <strong>zero divisor or zero</strong>, since $N$ is the determinant of the matrix model and the determinant is the biquaternion norm.</p>
+<p><strong>Corollary.</strong> The two-sided condition on a component is $N(\tilde\nabla_\Phi\Sigma)=0$. The biquaternion gradient of every component is therefore a <strong>zero divisor or zero</strong>, since $N$ is the determinant of the matrix model and the determinant is the biquaternion norm.</p>
 <h3 id="the-four-equivalent-forms">The Four Equivalent Forms</h3>
 <p>The four forms say one thing. The first is the algebraic one, the second the metric one, the third the one the corpus names, and the fourth the one a differential geometer would write.</p>
 <div class="table-scroll"><table>
@@ -208,12 +208,12 @@ $$</p>
 </tr>
 <tr>
 <td>Norm</td>
-<td>$N(\nabla\Sigma)=0$</td>
+<td>$N(\tilde\nabla_\Phi\Sigma)=0$</td>
 <td><em>Norm and Unitary Conventions</em></td>
 </tr>
 <tr>
 <td>Cone</td>
-<td>$\nabla\Sigma$ lies on the zero-divisor cone</td>
+<td>$\tilde\nabla_\Phi\Sigma$ lies on the zero-divisor cone</td>
 <td><em>Zero Divisors and Invertibles in the Biquaternion Algebra</em>; <em>The Topology of the Zero-Divisor Cone</em></td>
 </tr>
 </tbody>
@@ -228,31 +228,31 @@ $$</p>
 <p>This is the <strong>complex eikonal</strong> of complexified Minkowski space. It is first order, because it involves the first derivatives only, and quadratic, because it involves their squares. The determinant identity is a chain-rule computation. What the algebra supplies is the arrangement: four coordinates in a two-by-two array, so that the determinant of the first derivatives is a quadratic form in four variables and reads as a metric.</p>
 <h3 id="the-characteristic-reading">The Characteristic Reading</h3>
 <p>The eikonal has a second reading that ties it to the corpus's operator, and the tie is exact.</p>
-<p>The principal symbol of $\tilde\nabla$ at a covector $\zeta$ is the matrix $S(\zeta)=\sum_{\mu}\zeta_\mu\mathsf M_2(e_\mu)$. Its determinant is the norm,</p>
+<p>The principal symbol of $\tilde\nabla_\Phi$ at a covector $\zeta$ is the matrix $S(\zeta)=\sum_{\mu}\zeta_\mu\mathsf M_2(e_\mu)$. Its determinant is the norm,</p>
 <p>$$
 \det S(\zeta)=N(\zeta)=\sum_{\mu}\zeta_\mu^2,
 $$</p>
-<p>because the determinant of the matrix model is the biquaternion norm. The <strong>characteristic set</strong> of $\tilde\nabla$, that is, the set of covectors at which the symbol is singular, is therefore the zero-divisor cone, and the eikonal is the statement that the symbol is singular <strong>at the gradient</strong>:</p>
+<p>because the determinant of the matrix model is the biquaternion norm. The <strong>characteristic set</strong> of $\tilde\nabla_\Phi$, that is, the set of covectors at which the symbol is singular, is therefore the zero-divisor cone, and the eikonal is the statement that the symbol is singular <strong>at the gradient</strong>:</p>
 <p>$$
-N(\nabla\Sigma)=0\quad\Longleftrightarrow\quad \det S(\nabla\Sigma)=0 .
+N(\tilde\nabla_\Phi\Sigma)=0\quad\Longleftrightarrow\quad \det S(\tilde\nabla_\Phi\Sigma)=0 .
 $$</p>
 <p>So the two-sided condition says that the gradient of every component is a characteristic covector of the corpus's own operator. This is the precise sense in which the two definitions are not rivals: they are built on the same cone.</p>
 <h3 id="what-the-eikonal-is-not">What the Eikonal Is Not</h3>
 <p>Four statements belong here, because each is a natural over-reading.</p>
-<p><strong>It does not imply $\Box\Sigma=0$ — but the programme's own solutions satisfy both.</strong> Both halves of that sentence are needed, and separating them is the sharpest statement in this section.</p>
+<p><strong>It does not imply $\Box_\Phi\Sigma=0$ — but the programme's own solutions satisfy both.</strong> Both halves of that sentence are needed, and separating them is the sharpest statement in this section.</p>
 <p><em>The eikonal alone does not make a function harmonic.</em> The d'Alembertian is built from the same symbol, but a symbol that vanishes at the gradient says nothing about the divergence of the gradient. In the null coordinates $\upsilon,v,w,p$ the two read</p>
 <p>$$
 \frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}=\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p},
 \qquad
-\Box\Sigma=4\left(\frac{\partial^2\Sigma}{\partial\upsilon\partial v}-\frac{\partial^2\Sigma}{\partial w\partial p}\right),
+\Box_\Phi\Sigma=4\left(\frac{\partial^2\Sigma}{\partial\upsilon\partial v}-\frac{\partial^2\Sigma}{\partial w\partial p}\right),
 $$</p>
 <p>so a witness is any function whose four derivatives are non-zero, whose separated products agree and whose d'Alembertian does not vanish:</p>
 <p>$$
 \Sigma=\sqrt{\upsilon v}+\sqrt{wp},\qquad
 \frac{\partial\Sigma}{\partial\upsilon}\frac{\partial\Sigma}{\partial v}=\tfrac14=\frac{\partial\Sigma}{\partial w}\frac{\partial\Sigma}{\partial p},\qquad
-\Box\Sigma=(\upsilon v)^{-1/2}-(wp)^{-1/2}\neq0 .
+\Box_\Phi\Sigma=(\upsilon v)^{-1/2}-(wp)^{-1/2}\neq0 .
 $$</p>
-<p>The quantity $\lvert\Box\Sigma\rvert$ vanishes only where $\upsilon v=wp$, a codimension-one locus and not the domain. Checked at 20 random complex points: the eikonal held to $6\times10^{-14}$, the finite-difference floor, and the smallest value of $\lvert\Box\Sigma\rvert$ was $0.64$.</p>
+<p>The quantity $\lvert\Box_\Phi\Sigma\rvert$ vanishes only where $\upsilon v=wp$, a codimension-one locus and not the domain. Checked at 20 random complex points: the eikonal held to $6\times10^{-14}$, the finite-difference floor, and the smallest value of $\lvert\Box_\Phi\Sigma\rvert$ was $0.64$.</p>
 <p><em>The class the programme actually uses satisfies both.</em> The reason is that the rank-one factor is not an arbitrary pair of spinors but the twistor spinor itself. Write $\kappa_0=wG+\upsilon$ and $\kappa_1=vG+p$, let $\Pi_1=\partial\Pi/\partial\kappa_0$ and $\Pi_2=\partial\Pi/\partial\kappa_1$, and differentiate $\Pi(G,\kappa_0,\kappa_1)=0$ in each coordinate, with $\partial\Pi/\partial\upsilon=\Pi_1$, $\partial\Pi/\partial w=G\Pi_1$, $\partial\Pi/\partial p=\Pi_2$ and $\partial\Pi/\partial v=G\Pi_2$. The four derivatives of $G$ come out in closed form, and the ratio within each pair gives the two first-order relations</p>
 <p>$$
 \frac{\partial G}{\partial w}=G\,\frac{\partial G}{\partial\upsilon},\qquad \frac{\partial G}{\partial v}=G\,\frac{\partial G}{\partial p} ,
@@ -263,29 +263,29 @@ $$</p>
 0=\frac{\partial}{\partial w}\left(\frac{\partial G}{\partial v}-G\frac{\partial G}{\partial p}\right)-\frac{\partial}{\partial v}\left(\frac{\partial G}{\partial w}-G\frac{\partial G}{\partial\upsilon}\right)
 =\left(\frac{\partial G}{\partial v}\frac{\partial G}{\partial\upsilon}-\frac{\partial G}{\partial w}\frac{\partial G}{\partial p}\right)+G\left(\frac{\partial^2G}{\partial\upsilon\partial v}-\frac{\partial^2G}{\partial w\partial p}\right),
 $$</p>
-<p>and the bracket is the eikonal, so the second term vanishes: $G\,\Box G=0$. On the quadratic Kerr generating function $\Pi=wG^2+(\upsilon-v+2ia)G-p$ the four derivatives are exact rational functions of the coordinates. Substituting them into $\Box G=4\left(\partial^2G/\partial\upsilon\partial v-\partial^2G/\partial w\partial p\right)$, with the chain rule through the hidden dependence on $G$, and simplifying returns zero identically; the first-order relations and the eikonal likewise close to zero, and hold numerically at 45 working digits to $6\times10^{-32}$ and $2\times10^{-32}$. The second derivative is settled symbolically and not numerically, because a second difference cannot distinguish a vanishing $\Box G$ from one of the order of the step size.</p>
+<p>and the bracket is the eikonal, so the second term vanishes: $G\,\Box_\Phi G=0$. On the quadratic Kerr generating function $\Pi=wG^2+(\upsilon-v+2ia)G-p$ the four derivatives are exact rational functions of the coordinates. Substituting them into $\Box_\Phi G=4\left(\partial^2G/\partial\upsilon\partial v-\partial^2G/\partial w\partial p\right)$, with the chain rule through the hidden dependence on $G$, and simplifying returns zero identically; the first-order relations and the eikonal likewise close to zero, and hold numerically at 45 working digits to $6\times10^{-32}$ and $2\times10^{-32}$. The second derivative is settled symbolically and not numerically, because a second difference cannot distinguish a vanishing $\Box_\Phi G$ from one of the order of the step size.</p>
 <p>The consequence is worth stating plainly, because it cuts against the obvious reading of a nonlinear equation. <strong>The nonlinearity of the eikonal is inert on the solution class the programme constructs.</strong> The class is generated by an algebraic constraint, the constraint forces the gradient to factorise through the spinor, and the factorisation delivers the eikonal and the wave equation together. What the equation is not, is the source of the linearity: the linear equation is not a short-wavelength limit of the eikonal here, it is a consequence of the algebraic constraint that defines the class. The algebrodynamical article records the same mechanism from the field side, where $\ln G$ is harmonic and its second derivatives are the electromagnetic strengths.</p>
-<p><strong>It is homogeneous of degree two, so it is scale covariant componentwise.</strong> For any function $\Sigma$ and any constant $\lambda$, $N(\nabla(\lambda\Sigma))=\lambda^2N(\nabla\Sigma)$, so a component may be rescaled freely. The condition does not by itself fix an amplitude.</p>
+<p><strong>It is homogeneous of degree two, so it is scale covariant componentwise.</strong> For any function $\Sigma$ and any constant $\lambda$, $N(\tilde\nabla_\Phi(\lambda\Sigma))=\lambda^2N(\tilde\nabla_\Phi\Sigma)$, so a component may be rescaled freely. The condition does not by itself fix an amplitude.</p>
 <p><strong>It is not additive.</strong> For two gradients $g_1,g_2$ with $N(g_1)=N(g_2)=0$, the norm of the sum is the polar form, $N(g_1+g_2)=2\langle g_1,g_2\rangle$, which does not vanish in general. On 100 random pairs of complex null gradients normalised to $\sum_\mu\lvert g_\mu\rvert^2=1$, the smallest value of $\lvert N(g_1+g_2)\rvert$ was $0.063$ against a median of $0.96$, so the failure is neither rare nor small. The solution set of the eikonal is not a vector space, and this is the structural difference from the operator form that no choice of notation can remove.</p>
 <p><strong>It is conformally invariant, and this needs no weight.</strong> The condition is homogeneous of degree two in the gradient, so under a conformal rescaling of the metric $N\mapsto\Omega^{-2}N$ and the zero set is unchanged. The solution set of the eikonal is therefore preserved by the full conformal group of the four-dimensional complex space, not only by the group of complex rotations, and it is preserved without attaching a conformal weight to $\Sigma$; the operator condition is conformally covariant only with a weight on $F$.</p>
 <h2 id="the-general-solution">The General Solution</h2>
 <h3 id="the-reduction-to-one-twistor-coordinate">The Reduction to One Twistor Coordinate</h3>
 <p>The rank-one criterion can be solved rather than merely imposed, and the solution is algebraic. The construction takes two steps, with two remarks after them.</p>
-<p><strong>Functions of one coordinate.</strong> If $G$ is any function satisfying the eikonal and $f$ is any holomorphic function of one variable, then $\Sigma=f(G)$ satisfies it too, because the chain rule gives $N(\nabla\Sigma)=f'(G)^2N(\nabla G)$ and the square of the derivative multiplies a zero. The class is therefore closed under composition with a holomorphic function.</p>
+<p><strong>Functions of one coordinate.</strong> If $G$ is any function satisfying the eikonal and $f$ is any holomorphic function of one variable, then $\Sigma=f(G)$ satisfies it too, because the chain rule gives $N(\tilde\nabla_\Phi\Sigma)=f'(G)^2N(\tilde\nabla_\Phi G)$ and the square of the derivative multiplies a zero. The class is therefore closed under composition with a holomorphic function.</p>
 <p><strong>The implicit construction.</strong> Let $\Pi(G,\kappa_0,\kappa_1)$ be any holomorphic function of three arguments, and let $G$ be defined implicitly by</p>
 <p>$$
 \Pi\bigl(G,\;wG+\upsilon,\;vG+p\bigr)=0 .
 $$</p>
-<p>Then $G$ satisfies the complex eikonal wherever the composite derivative $\Delta$ below is non-zero, and the proof is the implicit function theorem rather than a computation. Write $\Pi_1,\Pi_2$ for the derivatives of $\Pi$ in its second and third arguments and differentiate the defining equation in $\upsilon$:</p>
+<p>Then $G$ satisfies the complex eikonal wherever the composite derivative $\Delta_\Phi$ below is non-zero, and the proof is the implicit function theorem rather than a computation. Write $\Pi_1,\Pi_2$ for the derivatives of $\Pi$ in its second and third arguments and differentiate the defining equation in $\upsilon$:</p>
 <p>$$
 \Pi_G\,\frac{\partial G}{\partial\upsilon}+\Pi_1\left(w\,\frac{\partial G}{\partial\upsilon}+1\right)+\Pi_2\,v\,\frac{\partial G}{\partial\upsilon}=0 ,
 $$</p>
-<p>and the same in the other three variables. With $\Delta:=\Pi_G+w\Pi_1+v\Pi_2$, the derivative of the composite $\Pi(G,wG+\upsilon,vG+p)$ with respect to $G$ at fixed coordinates, the four solutions are</p>
+<p>and the same in the other three variables. With $\Delta_\Phi:=\Pi_G+w\Pi_1+v\Pi_2$, the derivative of the composite $\Pi(G,wG+\upsilon,vG+p)$ with respect to $G$ at fixed coordinates, the four solutions are</p>
 <p>$$
-\frac{\partial G}{\partial\upsilon}=-\frac{\Pi_1}{\Delta},\qquad \frac{\partial G}{\partial w}=-\frac{G\Pi_1}{\Delta},\qquad \frac{\partial G}{\partial v}=-\frac{G\Pi_2}{\Delta},\qquad \frac{\partial G}{\partial p}=-\frac{\Pi_2}{\Delta} ,
+\frac{\partial G}{\partial\upsilon}=-\frac{\Pi_1}{\Delta_\Phi},\qquad \frac{\partial G}{\partial w}=-\frac{G\Pi_1}{\Delta_\Phi},\qquad \frac{\partial G}{\partial v}=-\frac{G\Pi_2}{\Delta_\Phi},\qquad \frac{\partial G}{\partial p}=-\frac{\Pi_2}{\Delta_\Phi} ,
 $$</p>
 <p>so that $\partial G/\partial w=G\,\partial G/\partial\upsilon$ and $\partial G/\partial v=G\,\partial G/\partial p$ <strong>identically</strong>, for every $\Pi$ and with no numerical error at all. Multiplying the first relation by $\partial G/\partial p$ and the second by $\partial G/\partial\upsilon$ gives $\partial G/\partial\upsilon\,\partial G/\partial v=\partial G/\partial w\,\partial G/\partial p$, the eikonal; cross-differentiating the two gives the wave equation. This is the classical reduction of the eikonal to an arbitrary function of three variables, and the relations were checked against a Newton solve as well: on 37 of 40 random quartics the solve converged and the differentiated $G$ reproduced them to $1.4\times10^{-9}$ relative, the accuracy of the difference.</p>
-<p><strong>The solutions and the branch set.</strong> Resolving $\Pi=0$ for $G$ gives the solution, two-valued for the quadratic $\Pi$ of the Kerr example and multivalued in general. The resolution fails where $\Delta=0$, and that locus is the branch set of $G$: the caustic of the congruence, the locus on which the derivative of the component is infinite, and, in the programme, the locus identified with a particle. Solving $\Pi=0$ together with $\Delta=0$ gives it in closed form. That the construction yields every almost-everywhere analytic solution is the programme's claim, on the authority of its earlier work on the eikonal, and is not established here.</p>
+<p><strong>The solutions and the branch set.</strong> Resolving $\Pi=0$ for $G$ gives the solution, two-valued for the quadratic $\Pi$ of the Kerr example and multivalued in general. The resolution fails where $\Delta_\Phi=0$, and that locus is the branch set of $G$: the caustic of the congruence, the locus on which the derivative of the component is infinite, and, in the programme, the locus identified with a particle. Solving $\Pi=0$ together with $\Delta_\Phi=0$ gives it in closed form. That the construction yields every almost-everywhere analytic solution is the programme's claim, on the authority of its earlier work on the eikonal, and is not established here.</p>
 <p><strong>The count.</strong> The arbitrary datum is the function $\Pi$ of three arguments, and the composed $f$ adds no freedom, since it is one function of one argument. That is the count a single first-order equation in four variables requires, which is the reason the construction is a reduction of the eikonal rather than a family of special solutions inside it.</p>
 <p>The three arguments of $\Pi$ are the independent components of a projective twistor in the affine gauge $\psi_0=1$: with $\pi=(1,G)$ the two components $\kappa_0,\kappa_1$ are those of $\omega=Z\pi$, so the pair $(\omega,\pi)$ obeys the Klein–Penrose incidence relation and $\Pi=0$ is an equation on a twistor. <em>Twistor Theory and Biquaternions</em> writes the same relation as $\omega=i\,x\pi$, the factor $i$ being the corpus's rescaling of the vector coordinates; the reading of $G$ as a projective spinor ratio is there as well and is not repeated.</p>
 <h3 id="what-the-class-contains">What the Class Contains</h3>
@@ -307,7 +307,7 @@ $$</p>
 <tr>
 <td>$f(G)$ for holomorphic $f$, $G$ resolved from $\Pi$</td>
 <td>yes</td>
-<td>chain rule, with $N(\nabla G)=0$</td>
+<td>chain rule, with $N(\tilde\nabla_\Phi G)=0$</td>
 </tr>
 <tr>
 <td>$\upsilon$, $v$, $w$, $p$</td>
@@ -341,8 +341,8 @@ $$</p>
 <h3 id="three-things-called-linear">Three Things Called Linear</h3>
 <p>The word linear is used of three different objects in this neighbourhood, and they are not the same object. The distinction is the reason the phrase "the linear sector" needs a definition rather than an appeal to intuition.</p>
 <p><strong>Linear multipliers.</strong> If $L$ and $R$ are constrained to be constants, the condition $dF=L\,dZ\,R$ is solved by the affine maps $F=L\,\tilde Z\,R+\tilde C$ and by nothing else, since the differential of any other function depends on $\tilde Z$. The constant-multiplier case is a finite-dimensional family, not a solution space of a differential equation, and it is not the corpus's linear theory.</p>
-<p><strong>A linear equation.</strong> The corpus's condition $\tilde\nabla F=0$ is linear in $F$ with constant coefficients, and its solution space is infinite-dimensional. This is the object the phrase refers to in this article.</p>
-<p><strong>A linearisation.</strong> Linearising the eikonal about one of its solutions gives $2\langle\nabla\Sigma,\nabla\delta\Sigma\rangle=0$, the polar form of the quadratic form taken between the gradient of the solution and the gradient of the perturbation. It is first order with <strong>variable</strong> coefficients, the coefficients being the gradient of the solution, and it is the transport equation along the rays. This is neither of the other two. It has the degree of the corpus's condition and none of its constancy, and it is not the wave equation, which is second order; on the two-sided class the wave equation comes from the twistor constraint rather than from a linearisation, as §<em>What the Eikonal Is Not</em> shows.</p>
+<p><strong>A linear equation.</strong> The corpus's condition $\tilde\nabla_\Phi F=0$ is linear in $F$ with constant coefficients, and its solution space is infinite-dimensional. This is the object the phrase refers to in this article.</p>
+<p><strong>A linearisation.</strong> Linearising the eikonal about one of its solutions gives $2\langle\nabla\Sigma,\tilde\nabla_\Phi\delta\Sigma\rangle=0$, the polar form of the quadratic form taken between the gradient of the solution and the gradient of the perturbation. It is first order with <strong>variable</strong> coefficients, the coefficients being the gradient of the solution, and it is the transport equation along the rays. This is neither of the other two. It has the degree of the corpus's condition and none of its constancy, and it is not the wave equation, which is second order; on the two-sided class the wave equation comes from the twistor constraint rather than from a linearisation, as §<em>What the Eikonal Is Not</em> shows.</p>
 <p>The three are separated once and for all by that list: constants in the multipliers, constant coefficients in the equation, and constant coefficients nowhere.</p>
 <h3 id="the-same-equations-and-the-same-cone">The Same Equations and the Same Cone</h3>
 <p>Set the two conditions side by side. The comparison is a table of counts, and the counts are what make the relation exact.</p>
@@ -357,7 +357,7 @@ $$</p>
 <tbody>
 <tr>
 <td>Equation</td>
-<td>$\tilde\nabla F=0$</td>
+<td>$\tilde\nabla_\Phi F=0$</td>
 <td>$\det\mathsf D\Sigma=0$ per component</td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ $$</p>
 <tr>
 <td>Characteristic set</td>
 <td>$N(\zeta)=0$</td>
-<td>$N(\nabla\Sigma)=0$</td>
+<td>$N(\tilde\nabla_\Phi\Sigma)=0$</td>
 </tr>
 <tr>
 <td>Linear in $F$</td>
@@ -388,7 +388,7 @@ $$</p>
 <tr>
 <td>Solutions obey a linear equation</td>
 <td>that equation</td>
-<td>yes, $\Box\Sigma=0$ on the twistor class</td>
+<td>yes, $\Box_\Phi\Sigma=0$ on the twistor class</td>
 </tr>
 <tr>
 <td>Solution set</td>
@@ -402,15 +402,15 @@ $$</p>
 <p>Two witnesses settle the containment question, one for each direction.</p>
 <p><strong>A two-sided function that is not regular.</strong> Take $F=\tilde Z$, the identity. Then $dF=dZ$, so the two-sided condition holds with $L=R=e_t$, and every component has a constant gradient of rank one. But</p>
 <p>$$
-\tilde\nabla\tilde Z=\sum_{\mu}e_\mu\frac{\partial}{\partial Q_\mu}\sum_{\nu}Q_\nu e_\nu=\sum_{\mu}e_\mu e_\mu=e_t-3e_t=-2e_t\neq0,
+\tilde\nabla_\Phi\tilde Z=\sum_{\mu}e_\mu\frac{\partial}{\partial Q_\mu}\sum_{\nu}Q_\nu e_\nu=\sum_{\mu}e_\mu e_\mu=e_t-3e_t=-2e_t\neq0,
 $$</p>
 <p>so the identity is not regular. The two-sided class is not contained in the regular class.</p>
-<p><strong>A regular function that is not two-sided.</strong> Take the single-plane holomorphic function $F=A^2$ with $A=Q_t+\vec e_xQ_x$, which is regular by the single-plane criterion of <em>Biquaternion Regular Functions</em>, its dependence on two of the four variables reducing $\tilde\nabla F=0$ to the Cauchy–Riemann equation in $A$. Its scalar component is $\Sigma=Q_t^2-Q_x^2=z_0^2+z_1^2$, whose array has $\partial\Sigma/\partial\upsilon=\partial\Sigma/\partial v=z_0$ and $\partial\Sigma/\partial w=\partial\Sigma/\partial p=z_1$, so $\det\mathsf D\Sigma=z_0^2-z_1^2$ and the determinant vanishes only on the two planes $z_0=\pm z_1$. The regular class is not contained in the two-sided class.</p>
+<p><strong>A regular function that is not two-sided.</strong> Take the single-plane holomorphic function $F=A^2$ with $A=Q_t+\vec e_xQ_x$, which is regular by the single-plane criterion of <em>Biquaternion Regular Functions</em>, its dependence on two of the four variables reducing $\tilde\nabla_\Phi F=0$ to the Cauchy–Riemann equation in $A$. Its scalar component is $\Sigma=Q_t^2-Q_x^2=z_0^2+z_1^2$, whose array has $\partial\Sigma/\partial\upsilon=\partial\Sigma/\partial v=z_0$ and $\partial\Sigma/\partial w=\partial\Sigma/\partial p=z_1$, so $\det\mathsf D\Sigma=z_0^2-z_1^2$ and the determinant vanishes only on the two planes $z_0=\pm z_1$. The regular class is not contained in the two-sided class.</p>
 <p>So the two conditions are genuinely independent. What they share is the cone and the count; what separates them is the degree, and with the degree everything that follows from linearity.</p>
 <h2 id="summary">Summary</h2>
-<p>The corpus differentiates by an operator, $\tilde\nabla F=0$. The alternative is to require the differential to factorise, $dF=L\,dZ\,R$, and it needs no inverse, so neither noncommutativity nor the zero divisors obstruct it. For each component the condition is that the two-by-two array of its four coordinate derivatives has rank at most one; the determinant of that array is a quarter of the norm of the biquaternion gradient, so the condition is $N(\nabla\Sigma)=0$, the complex eikonal, and it says that the gradient of every component is a zero divisor.</p>
-<p>The two conditions have the same number of complex equations, four, and the same characteristic cone, the zero-divisor cone, since the determinant of the symbol matrix of $\tilde\nabla$ is the norm. They differ in degree: one is linear in the first derivatives and one is quadratic. Neither contains the other, and the identity $\tilde Z$ and the single-plane holomorphic function $A^2$ are the two witnesses.</p>
-<p>The eikonal is scale covariant componentwise, conformally invariant without a weight, and not additive; its solutions are generated, on the programme's account, by an arbitrary function of three twistor arguments, with the coordinate resolved from an implicit equation and an arbitrary holomorphic function of it composed on the outside; its branch set is the locus $\Delta=0$. The solution class the programme actually constructs satisfies $\Box\Sigma=0$ as well, because the rank-one factor is the twistor spinor and the two first-order relations that the algebraic constraint imposes multiply to the eikonal and cross-differentiate to the wave equation. The failure of additivity is therefore what a quadratic condition costs, and it is the only thing it costs: the linear space survives, and the nonlinearity is inert on the class.</p>
+<p>The corpus differentiates by an operator, $\tilde\nabla_\Phi F=0$. The alternative is to require the differential to factorise, $dF=L\,dZ\,R$, and it needs no inverse, so neither noncommutativity nor the zero divisors obstruct it. For each component the condition is that the two-by-two array of its four coordinate derivatives has rank at most one; the determinant of that array is a quarter of the norm of the biquaternion gradient, so the condition is $N(\tilde\nabla_\Phi\Sigma)=0$, the complex eikonal, and it says that the gradient of every component is a zero divisor.</p>
+<p>The two conditions have the same number of complex equations, four, and the same characteristic cone, the zero-divisor cone, since the determinant of the symbol matrix of $\tilde\nabla_\Phi$ is the norm. They differ in degree: one is linear in the first derivatives and one is quadratic. Neither contains the other, and the identity $\tilde Z$ and the single-plane holomorphic function $A^2$ are the two witnesses.</p>
+<p>The eikonal is scale covariant componentwise, conformally invariant without a weight, and not additive; its solutions are generated, on the programme's account, by an arbitrary function of three twistor arguments, with the coordinate resolved from an implicit equation and an arbitrary holomorphic function of it composed on the outside; its branch set is the locus $\Delta_\Phi=0$. The solution class the programme actually constructs satisfies $\Box_\Phi\Sigma=0$ as well, because the rank-one factor is the twistor spinor and the two first-order relations that the algebraic constraint imposes multiply to the eikonal and cross-differentiate to the wave equation. The failure of additivity is therefore what a quadratic condition costs, and it is the only thing it costs: the linear space survives, and the nonlinearity is inert on the class.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -453,11 +453,11 @@ $$</p>
 <td>The two-by-two array of the four coordinate derivatives of a component $\Sigma$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla$, $\tilde\nabla^{\natural}$</td>
+<td>$\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$</td>
 <td>The biquaternionic gradient and its quaternion conjugate</td>
 </tr>
 <tr>
-<td>$\Box$</td>
+<td>$\Box_\Phi$</td>
 <td>The d'Alembertian, $\sum_\mu\partial^2/\partial Q_\mu^2$</td>
 </tr>
 <tr>
@@ -473,7 +473,7 @@ $$</p>
 <td>The generating function, the projective coordinate and the two twistor components</td>
 </tr>
 <tr>
-<td>$\Delta$</td>
+<td>$\Delta_\Phi$</td>
 <td>The derivative $\Pi_G+w\Pi_1+v\Pi_2$ of the composite $\Pi(G,wG+\upsilon,vG+p)$</td>
 </tr>
 <tr>
@@ -487,7 +487,7 @@ $$</p>
 <li><a href="biquaternion-analysis.html">Biquaternion Analysis</a>, for the metric structure, the two obstructions to the quotient derivative and the adoption of the operator route.</li>
 <li><a href="biquaternion-regular-functions.html">Biquaternion Regular Functions</a>, for the definition of regularity, single-plane holomorphy and the shifted operator.</li>
 <li><a href="fueter-theory-for-biquaternions.html">Fueter Theory for Biquaternions</a>, for the Fueter construction, the axial extension and the slice approach.</li>
-<li><a href="the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a>, for the symbol of $\tilde\nabla$, the Clifford relation and the enveloping operator algebra.</li>
+<li><a href="the-first-order-root-of-the-biquaternion-d-alembertian.html">The First-Order Root of the Biquaternion D'Alembertian</a>, for the symbol of $\tilde\nabla_\Phi$, the Clifford relation and the enveloping operator algebra.</li>
 <li><a href="zero-divisors-and-invertibles.html">Zero Divisors and Invertibles in the Biquaternion Algebra</a>, for the criterion $N=0$ and the two families of the cone.</li>
 <li><a href="the-topology-of-the-zero-divisor-cone.html">The Topology of the Zero-Divisor Cone</a>, for the cone as a topological object and its Lorentzian slices.</li>
 <li><a href="remarkable-subspaces-and-the-analysis.html">Remarkable Subspaces and the Analysis</a>, for the restriction of the operator to each real form and the elliptic and hyperbolic cases.</li>

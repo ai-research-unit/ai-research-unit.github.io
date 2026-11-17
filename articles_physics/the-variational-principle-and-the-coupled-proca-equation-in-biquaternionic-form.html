@@ -74,11 +74,11 @@
 <p>This article asks what action has the coupled Proca equation as its Euler–Lagrange equation, and what the action's symmetries give. It is the variational companion of <em>The Coupled Proca Equation in Biquaternionic Form</em>, its polar companion is <em>The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables</em>, and its free counterpart is <em>The Variational Principle and the Proca Equation in Biquaternionic Form</em>.</p>
 <p><strong>The equation.</strong> The coupled Proca equation is</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
 \qquad
-\tilde F=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$</p>
 <p>with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=mc/\hbar$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.</p>
 <p><strong>The action.</strong></p>
@@ -129,7 +129,7 @@ $$</p>
 <h2 id="the-variation">The Variation</h2>
 <p><strong>The Euler–Lagrange equation.</strong> Vary $\tilde A$ and $\tilde A^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once in the field term and not at all in the mass term. The result is</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}\tilde F-k_m^{2}\tilde A=0,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F-k_m^{2}\tilde A=0,
 $$</p>
 <p>the coupled Proca equation. The two terms of the action produce the two terms of the equation and nothing else: the variation of the field term produces the derivative of the field strength, the variation of the mass term produces the mass term, and the antisymmetrization of the field strength is what makes the first survive while the second is untouched.</p>
 <p><strong>The count.</strong> The equation is four complex equations for four complex components, which is eight real equations for eight real components. The action is real, so the variation with respect to the eight real directions of $\tilde A$ and the variation with respect to the eight of $\tilde A^{*}$ are not independent constraints; the pair gives the four complex equations and their four conjugates, and the conjugate set is the same set. That is the standard count for a complex field and it is worth stating because the free article's count is four and not eight.</p>
@@ -143,11 +143,11 @@ $$</p>
 \qquad\text{for general }|\lambda|=1 ,
 $$</p>
 <p>and the drift over random draws is of the same order as the term itself. So the free article's field term is not the charged field's field term. The mass term has no such difficulty, and the asymmetry between the two terms is exact and is the article's first finding in its sharpest form.</p>
-<p><strong>What the algebra offers instead.</strong> Two covariant gradients give two halves, $\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ and its companion $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$, and the pairing of one with the conjugate of the other <em>is</em> invariant:</p>
+<p><strong>What the algebra offers instead.</strong> Two covariant gradients give two halves, $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ and its companion $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$, and the pairing of one with the conjugate of the other <em>is</em> invariant:</p>
 <p>$$
 \mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\overline{\tilde F'}\,\bigr),
 \qquad
-\tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}\tilde A\bigr),
+\tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr),
 $$</p>
 <p>to $10^{-15}$ over random draws, because both halves acquire the same $\lambda$ and the conjugate half acquires $\bar\lambda$. That is the object a charged field term must be built from.</p>
 <p><strong>What is not settled.</strong> The invariant pairing's normalization is not the free article's, and on the material slice it does not reduce to $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ with a constant ratio: the ratio varies with the configuration. So the article cannot state the coupled field term in a form that is simultaneously invariant, real, of the Maxwell normalization, and reducing to the free one on the material slice. Something has to give, and the honest statement is that the algebra's single field strength is not the right carrier for a complex bivector's Lagrangian.</p>
@@ -156,7 +156,7 @@ $$</p>
 <p><strong>Two symmetries, two currents.</strong> The action is invariant under the phase and under translations when the connection is constant, and the two invariances give two currents. The article computes each as the standard Noether charge and checks conservation on solutions.</p>
 <p><strong>The charge current.</strong> Under $\tilde A\mapsto e^{i\alpha}\tilde A$, $\tilde A^{*}\mapsto e^{-i\alpha}\tilde A^{*}$ with $\alpha$ a constant central angle, the Lagrangian is invariant: the mass term by the computation above, the field term because it is quadratic in the field and the two factors carry opposite phases <em>in the material sector</em>, where $\tilde F$ is a real slice object. The Noether charge is</p>
 <p>$$
-j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\mu}\tilde A\bigr)
+j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A\bigr)
 $$</p>
 <p>with the covariant derivative in the charge, and its conservation,</p>
 <p>$$
@@ -166,7 +166,7 @@ $$</p>
 <p>follows from the equation and its conjugate. The current is the source of the inhomogeneous Maxwell equation, which is the free article's "source that the free equation does not have".</p>
 <p><strong>The energy–momentum.</strong> Under a translation $R_\mu\mapsto R_\mu+\epsilon_\mu$ with constant connection, the action is invariant and the stress tensor is</p>
 <p>$$
-T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
+T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
 $$</p>
 <p>symmetric on solutions, conserved on solutions, and positive in energy for the free slice. The article does not re-derive the standard algebra of it; the free article does, and the coupling changes only the derivatives in it.</p>
 <p><strong>The trace.</strong> On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_\mu T_{\mu\mu}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.</p>
@@ -174,7 +174,7 @@ $$</p>
 <h2 id="the-constraint-from-the-action">The Constraint from the Action</h2>
 <p><strong>The constraint is not imposed and it is not lost.</strong> Varying the action gives the equation; the scalar part of the equation is the covariant Lorenz condition</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0 .
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 .
 $$</p>
 <p>The element-form article proves that the curvature does not enter this trace, because the second-order operator is the sum of the squared covariant components plus a pure vector. In the variational reading, that fact has a name: the constraint is the variation with respect to the <em>longitudinal</em> part of the field, and the action's dependence on that part is through the mass term alone, because the field term depends on it only through a total derivative.</p>
 <p><strong>The free article's reading, and why it changes.</strong> The free article reads the constraint as the statement that the mass term breaks the gauge symmetry: vary along a pure gradient, the field term does not move, the mass term does, and the equation therefore carries a longitudinal part. On the coupled carrier the mass term does not break the symmetry, and the same computation gives a different answer: the variation along a pure gauge direction vanishes for both terms, so the constraint is not the residue of a broken symmetry. It is the statement that the longitudinal part of the field is determined by the transverse part through the mass, and it is the same statement in both cases with a different bookkeeping.</p>
@@ -244,15 +244,15 @@ $$</p>
 <td>Connection, an element of $\mathbb{B}_\Phi$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
 <td>Covariant derivative, left action</td>
 </tr>
 <tr>
-<td>$\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$</td>
+<td>$\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$</td>
 <td>Field strength; one half of the complex bivector</td>
 </tr>
 <tr>
-<td>$\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$</td>
+<td>$\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$</td>
 <td>The companion half; the invariant pairing uses it</td>
 </tr>
 <tr>
@@ -268,7 +268,7 @@ $$</p>
 <td>The two terms of the Lagrangian density</td>
 </tr>
 <tr>
-<td>$j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$</td>
+<td>$j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$</td>
 <td>Charge current</td>
 </tr>
 <tr>

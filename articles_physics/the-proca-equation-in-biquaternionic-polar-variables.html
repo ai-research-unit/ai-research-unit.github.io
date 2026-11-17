@@ -269,14 +269,14 @@ $$</p>
 <h2 id="the-lorenz-condition-in-polar-variables">The Lorenz Condition in Polar Variables</h2>
 <p><strong>The condition is one scalar equation.</strong> On the timelike branch the scalar part of the conjugate gradient is</p>
 <p>$$
-S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\nabla\cdot\vec A ,
+S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec A ,
 $$</p>
 <p>and substituting the word gives, with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$,</p>
 <p>$$
 S=\varepsilon\Bigl[c\,\frac{\partial \varrho}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
-+\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 .
++\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0 .
 $$</p>
-<p>The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.</p>
+<p>The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\vec\nabla_\Phi\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.</p>
 <p><strong>What it is.</strong> The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_\mu=A_\mu/\varrho$ one has $A_\mu=\varrho u_\mu$ and $S=\sum_\mu\partial_\mu(ru_\mu)$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is <a href="the-spin-one-fluid.html">The Spin-One Fluid</a>'s, and it is exact.</p>
 <p><strong>What it is not.</strong> It is not the first member of a <em>pair</em>. In the scalar Madelung case the phase equation is the continuity equation for $\rho_{\mathrm{num}}=\varrho^2$ and the modulus equation is the Hamilton–Jacobi equation with the quantum potential, and the pair closes because the field is one complex function. Here the field is a real four-vector: its modulus and its direction are not a complex function, the divergence stands alone, and there is no second conserved density to pair it with — the modulus equation carries the rapidity's gradient as a source and not a potential's gradient as a guidance term. The polar form makes that explicit rather than assuming it.</p>
 <p><strong>Why the condition is implied and not imposed.</strong> The element form proves that the divergence of the Proca equation forces $S=0$, and the proof does not use the polar variables. The polar display is therefore a reading of an equation that is already there, and the count is consistent: four parameters, four field equations, one of which is the Lorenz condition and three of which are dynamical.</p>

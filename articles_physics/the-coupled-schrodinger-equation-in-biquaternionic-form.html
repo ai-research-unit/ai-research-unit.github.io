@@ -82,7 +82,7 @@ $$</p>
 <p>with $h_t$ and $\vec h_\Psi$ fixed numbers. A fixed Hamiltonian has no room for a background that acts at the position of the field: the equation says what the field does under one operator, and there is nowhere for a second field to enter.</p>
 <p>This article puts the electromagnetic connection into that equation. The replacement is one rule, the ordinary derivative becomes a covariant one,</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,\frac{\varphi}{c}\,e_t+\vec A,
 $$</p>
@@ -145,7 +145,7 @@ $$</p>
 <p>$$
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
 \qquad\text{that is}\qquad
-\vec A\longmapsto\vec A-\nabla\Gamma,
+\vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
 \varphi\longmapsto\varphi+\partial_{t'}\Gamma .
 $$</p>
@@ -202,7 +202,7 @@ $$</p>
 =-\frac{1}{m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\Big(\frac{1}{2m}\sum_\eta\big(-i\hbar D_\eta\big)^{2}-\big(i\hbar D_t\big)\Big)\tilde\Xi\Big],
 $$</p>
 <p>so the right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part: it vanishes on every solution and the continuity equation is exact off shell. The same identity in the free case is the free article's, with $D_\eta\to\partial_\eta$.</p>
-<p><strong>Gauge invariance.</strong> Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\eta\mapsto A_\eta-\partial_\eta\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\eta\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\nabla\Gamma$, and with the connection in place the shift is absorbed.</p>
+<p><strong>Gauge invariance.</strong> Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\eta\mapsto A_\eta-\partial_\eta\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\eta\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.</p>
 <p><strong>The charge current, and the source.</strong> Multiplying by $ϙ$ gives the charge density $\rho_{\mathrm{chg}}:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,</p>
 <p>$$
 \tilde\nabla_\Phi\tilde F=-\mu\,\tilde J,
@@ -305,7 +305,7 @@ $$</p>
 <td>The electric potential, so that $ϙ\varphi$ is an energy</td>
 </tr>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
 <td>The covariant derivative</td>
 </tr>
 <tr>
@@ -342,7 +342,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Gamma$</td>
-<td>The gauge function; $\vec A\mapsto\vec A-\nabla\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$</td>
+<td>The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$</td>
 </tr>
 </tbody>
 </table></div>

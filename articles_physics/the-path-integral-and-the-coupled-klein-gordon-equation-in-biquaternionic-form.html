@@ -72,7 +72,7 @@
         <h1 id="the-path-integral-and-the-coupled-kleingordon-equation-in-biquaternionic-form"><strong>The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>This article puts the coupled scalar action into the functional integral.</strong> <em>The Path Integral and the Klein–Gordon Equation in Biquaternionic Form</em> defines the integral over central-valued fields and evaluates the free Gaussian. <em>The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form</em> supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.</p>
-<p><strong>The substitution.</strong> Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.</p>
+<p><strong>The substitution.</strong> Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.</p>
 <p><strong>The finding is one sentence, and the article is its unfolding.</strong> The exponent splits into three terms — the free one, a term linear in the potential times the current, and a term quadratic in the potential with no derivative — and the third term is what makes the sum gauge invariant, so the integral cannot be built from the current alone.</p>
 <p><strong>Four consequences follow, and each is stated exactly or checked.</strong></p>
 <ul>
@@ -85,17 +85,17 @@
 <h2 id="conventions">Conventions</h2>
 <p>The algebra and the pairing are the free companion's: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}(\cdot^{*}\cdot)$ Hermitian. The covariant derivative and its conjugate are</p>
 <p>$$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 $$</p>
 <p>with $\natural$ on the invertibles and never on the connection's coefficients, which are scalars. Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$ for the slot's coefficient, so that the covariant derivative is $\partial_\mu+c_\mu$ acting coefficient-wise. The material convention of the coupled companions is $A_t=i a'_t$ with $a'_t$ real and $\vec A$ real, so $c_t$ is real and the three $c_\eta$ are imaginary.</p>
 <p><strong>The action and the weight.</strong> The variational companion's matter action,</p>
 <p>$$
-S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{\hbar}{2}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},t}\tilde\Xi\Bigr]-\sum_{\eta=1}^{3}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\eta}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\eta}\tilde\Xi\Bigr]-k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+S_{\mathrm{gco}}[\tilde\Xi,\tilde A]=\frac{\hbar}{2}\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde\Xi\Bigr]-\sum_{\eta=1}^{3}\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\eta}\tilde\Xi\Bigr]-k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
 $$</p>
 <p>is the exponent, in the free companion's normalisation and with the covariant derivative in every slot, with the weight $\exp(iS_{\mathrm{gco}}/\hbar)$. The temporal slot enters with $+$ and the three spatial ones with $-$, which is the material metric written out. The connection is held fixed in the integral over the field, and the field is held fixed in the integral over the connection; this article treats the first.</p>
-<p><strong>Which operator the exponent gives.</strong> The variational companion shows that the covariant square of a central field is not central: $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{iϙ}{\hbar}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term avoids that difficulty by being a sum of squared moduli of one slot each, $\sum_\mu\mathrm{Sc}\bigl[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$, and this is the form the exponent carries. <strong>The exponent's form fixes the quadratic form, and a Gaussian inverts its quadratic form</strong>: by parts that is the paired operator of §<em>The Quadratic Form and the Operator It Inverts</em>, whereas the companion's stated equation is built on $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$, and the two operators differ whenever $\bar c_\mu\ne-c_\mu$. The article follows the exponent and records the difference.</p>
+<p><strong>Which operator the exponent gives.</strong> The variational companion shows that the covariant square of a central field is not central: $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)=\bigl(\sum_\mu D_\mu^{2}\xi\bigr)e_t+\frac{iϙ}{\hbar}\xi\tilde F$, with a vector part that no central field can carry. The action's kinetic term avoids that difficulty by being a sum of squared moduli of one slot each, $\sum_\mu\mathrm{Sc}\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$, and this is the form the exponent carries. <strong>The exponent's form fixes the quadratic form, and a Gaussian inverts its quadratic form</strong>: by parts that is the paired operator of §<em>The Quadratic Form and the Operator It Inverts</em>, whereas the companion's stated equation is built on $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$, and the two operators differ whenever $\bar c_\mu\ne-c_\mu$. The article follows the exponent and records the difference.</p>
 <h2 id="the-exponent-splits-into-three-terms">The Exponent Splits into Three Terms</h2>
 <p><strong>The identity.</strong> For one slot and one central coefficient,</p>
 <p>$$
@@ -110,7 +110,7 @@ S_{\mathrm{gco}}=S_{0}+\int\mathrm{d}^{4}x\;\Bigl[2\,\mathrm{Re}\sum_\mu\bar c_\
 $$</p>
 <p>with $S_0$ the free action. <strong>The three terms are the free action, the current times the potential, and the potential squared.</strong></p>
 <p><strong>The split is checked as an identity.</strong> On a seven-site chain with a random complex field and random coefficients of the material signs, the difference of the two sides, slot by slot and summed over the four slots, is $4\times10^{-16}$ relative to the sum, which is the arithmetic of the same quantity computed twice. The identity is exact and the number only locates it.</p>
-<p><strong>The middle term is the current.</strong> The variational companion writes the current as $J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$, and for a central field with the covariant derivative's coefficient $c_\mu$ the comparison gives</p>
+<p><strong>The middle term is the current.</strong> The variational companion writes the current as $J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$, and for a central field with the covariant derivative's coefficient $c_\mu$ the comparison gives</p>
 <p>$$
 2\,\mathrm{Re}\bigl(\bar c_\mu\Xi^{*}\partial_\mu\Xi\bigr)=-\frac{ϙ}{\hbar}A_\mu J_\mu
 $$</p>
@@ -164,7 +164,7 @@ $$</p>
 <p><strong>The curvature coupling needs a measure that does not factorise.</strong> The covariant square's vector part is $\frac{iϙ}{\hbar}\xi\tilde F$, linear in the field and in the field strength. Its scalar part is exactly $\sum_\mu D_\mu^{2}\xi$ and its vector part is the field strength term: on a grid with a constant field strength the scalar part agrees with $\sum_\mu D_\mu^{2}\xi$ to $1.8\times10^{-16}$ and the vector part agrees with $\frac{ϙ}{\hbar}\xi\,\mathrm{Vect}\tilde F$ to $5\times10^{-4}$, the residual being the difference scheme. <strong>The vector part is not small and it is not central</strong>, so a theory that carries it must integrate over the non-central directions.</p>
 <p><strong>What the article concludes about the fork.</strong> The integral over central fields is the standard theory and it is the one the action selects. The integral over $\mathbb{B}$ with the covariant square in the exponent would be a different theory, and whether it is admissible is the equation companion's open question, not this article's. <strong>The integral's contribution is to say that the two theories differ in their measure and not only in their operator.</strong></p>
 <h2 id="the-semiclassical-expansion">The Semiclassical Expansion</h2>
-<p><strong>The classical field and the source.</strong> With a source the stationary point of the exponent is $\Box_{\mathrm{gco}}\tilde\Xi-k_m^{2}\tilde\Xi=-\tilde J$, the coupled equation with a source, and the expansion about it separates into the classical action, a vanishing linear term, and the quadratic fluctuation. The one-loop factor is $[\det(\Box_{\mathrm{gco}}-k_m^{2})]^{-1/2}$ for the squared reading and $[\det(\text{paired}-k_m^{2})]^{-1/2}$ for the integral's, and the two differ by the term of §<em>The Quadratic Form and the Operator It Inverts</em>.</p>
+<p><strong>The classical field and the source.</strong> With a source the stationary point of the exponent is $\Box_{\mathrm{gco},\Phi}\tilde\Xi-k_m^{2}\tilde\Xi=-\tilde J$, the coupled equation with a source, and the expansion about it separates into the classical action, a vanishing linear term, and the quadratic fluctuation. The one-loop factor is $[\det(\Box_{\mathrm{gco},\Phi}-k_m^{2})]^{-1/2}$ for the squared reading and $[\det(\text{paired}-k_m^{2})]^{-1/2}$ for the integral's, and the two differ by the term of §<em>The Quadratic Form and the Operator It Inverts</em>.</p>
 <p><strong>Everything remains central.</strong> The classical field is central, the fluctuation operator's coefficients are central, the determinant is a central scalar, and the effective action is the Legendre transform of a central functional. <strong>The coupling changes no object's type</strong>, which is the free companion's verdict and the coupled companion's, and the integral adds no exception.</p>
 <p><strong>The background-field reading.</strong> The determinant depends on the connection only through the covariant operator, so its variation with respect to $A_\mu$ is the current's two-point function and the same Ward identity holds at every order. The article states this and does not compute it; the one-loop determinant of a charged scalar in a background is a standard object and the algebra adds nothing to it.</p>
 <h2 id="what-the-integral-adds-and-does-not-add">What the Integral Adds and Does Not Add</h2>
@@ -210,7 +210,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$</td>
 <td>The covariant derivative; coefficients central</td>
 </tr>
 <tr>
@@ -230,7 +230,7 @@ $$</p>
 <td>The free action</td>
 </tr>
 <tr>
-<td>$J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$</td>
+<td>$J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$</td>
 <td>The current; the coefficient of the exponent's linear term</td>
 </tr>
 <tr>
@@ -250,7 +250,7 @@ $$</p>
 <td>The paired operator; the Gaussian's inverse</td>
 </tr>
 <tr>
-<td>$\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$</td>
+<td>$\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$</td>
 <td>The equation's operator; the squared reading</td>
 </tr>
 <tr>

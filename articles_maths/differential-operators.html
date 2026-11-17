@@ -105,13 +105,13 @@ $$</p>
 </tr>
 <tr>
 <td>Laplacian</td>
-<td>$\Delta = \sum_{i=1}^n\partial^2/\partial x_i^2$</td>
+<td>$\Delta_\Phi = \sum_{i=1}^n\partial^2/\partial x_i^2$</td>
 <td>$2$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>Helmholtz-type</td>
-<td>$-\Delta + c(x)$</td>
+<td>$-\Delta_\Phi + c(x)$</td>
 <td>$2$</td>
 <td>yes if $c$ is real</td>
 </tr>
@@ -123,13 +123,13 @@ $$</p>
 </tr>
 <tr>
 <td>heat</td>
-<td>$\partial/\partial t - \Delta$</td>
+<td>$\partial/\partial t - \Delta_\Phi$</td>
 <td>$2$</td>
 <td>yes</td>
 </tr>
 <tr>
 <td>wave</td>
-<td>$\Box = \partial^2/\partial t^2 - \Delta$</td>
+<td>$\Box_\Phi = \partial^2/\partial t^2 - \Delta_\Phi$</td>
 <td>$2$</td>
 <td>yes</td>
 </tr>
@@ -141,7 +141,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The Cauchy–Riemann operator is complex, and it is the first-order operator whose square is the Laplacian in the plane, $\bar\partial\,\partial = \tfrac14\Delta$; the general construction of an operator from a frame of an algebra is <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
+<p>The Cauchy–Riemann operator is complex, and it is the first-order operator whose square is the Laplacian in the plane, $\bar\partial\,\partial = \tfrac14\Delta_\Phi$; the general construction of an operator from a frame of an algebra is <em>Regularity and the Cauchy–Riemann Operator</em>.</p>
 <p><strong>Definition.</strong> If $L_1$ and $L_2$ have orders $m_1$ and $m_2$, their <strong>composition</strong> $L_1L_2$ is the operator $u \mapsto L_1(L_2u)$, of order at most $m_1+m_2$, and their <strong>sum</strong> $L_1+L_2$ is the termwise sum, of order at most $\max(m_1,m_2)$. An operator $L$ is a <strong>left factor</strong> of $M$ if $M = LN$ for some operator $N$; the composition is associative and distributive over the sum, and the identity operator is the single term with $a_0=1$.</p>
 <p><strong>Proposition (order of a composition).</strong> If $M = L_1L_2$ and $a^{1}_{\alpha}$, $a^{2}_{\alpha}$ are the leading coefficients of $L_1$, $L_2$, then the leading coefficient of $M$ at order $m_1+m_2$ is the product $\sum_{|\alpha|=m_1,|\beta|=m_2,\alpha+\beta=\gamma}a^1_\alpha a^2_\beta$; in particular, if both leading parts are nowhere-vanishing in the sense of the next section, the order of $M$ is exactly $m_1+m_2$.</p>
 <p><em>Proof.</em> In a product of two monomials $a_\alpha\partial^\alpha\cdot b_\beta\partial^\beta$ the Leibniz rule produces terms $a_\alpha b_\beta\partial^{\alpha+\beta}$ together with lower-order terms in which at least one derivative falls on $b_\beta$; only the highest-order part $\alpha+\beta$ has order $m_1+m_2$ and its coefficient is the product of the two leading coefficients. The statement about exact order follows because the product of two functions that do not vanish anywhere does not vanish anywhere.</p>
@@ -173,7 +173,7 @@ $$</p>
 \sigma_m(x,\zeta)\neq0 \qquad \text{for every } \zeta\in\mathbb{R}^n,\ \zeta\neq0 ,
 $$</p>
 <p>and <strong>elliptic on $\Omega$</strong> if it is elliptic at every point of $\Omega$. The <strong>characteristic set</strong> of $L$ at $x$ is the zero set $\{\zeta : \sigma_m(x,\zeta)=0\}$ of the principal symbol, and a vector in it is a <strong>characteristic vector</strong>. For a real principal symbol the equation $\sigma_m(x,\zeta)=0$ is the characteristic equation of <em>Partial Differential Equations</em>.</p>
-<p><strong>Proposition (the two model cases).</strong> The Laplacian $\Delta$ is elliptic, with $\sigma_2(x,\zeta) = |\zeta|^2$; the wave operator $\Box = \partial^2/\partial t^2-\Delta$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\zeta : \zeta_t^2 = |\zeta_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.</p>
+<p><strong>Proposition (the two model cases).</strong> The Laplacian $\Delta_\Phi$ is elliptic, with $\sigma_2(x,\zeta) = |\zeta|^2$; the wave operator $\Box_\Phi = \partial^2/\partial t^2-\Delta_\Phi$ on $\mathbb{R}^{1+n}$ is not elliptic, and its characteristic set at every point is the cone $\{\zeta : \zeta_t^2 = |\zeta_x|^2\}$. The product of two elliptic operators is elliptic, by the product rule for the principal symbols.</p>
 <p><em>Proof.</em> For the Laplacian, $\sigma_2(x,\zeta) = \sum_i\zeta_i^2$, which vanishes only at $\zeta=0$; for the wave operator, $\sigma_2(x,\zeta) = \zeta_t^2 - |\zeta_x|^2$, whose zero set is the stated cone; the product statement is the multiplicativity of the principal symbol and the fact that a product of nonzero complex numbers is nonzero.</p>
 <p>The symbol is defined on the frequencies at a point; the invariant reading, in which $\zeta$ is a covector and the symbol lives on the cotangent bundle, is not available until the manifold is introduced, and it is <em>Differential Operators on a Manifold</em> that gives it. What the symbol decides in the flat setting — the classification of a second-order operator and the existence of a parametrix in the elliptic case — is used in <em>Partial Differential Equations</em> and <em>Distributions and Fundamental Solutions</em> respectively, and is not repeated here.</p>
 <h2 id="the-transpose-and-the-formal-adjoint">The Transpose and the Formal Adjoint</h2>
@@ -217,13 +217,13 @@ $$</p>
 <td>no</td>
 </tr>
 <tr>
-<td>$\Delta$</td>
-<td>$\Delta$</td>
+<td>$\Delta_\Phi$</td>
+<td>$\Delta_\Phi$</td>
 <td>yes</td>
 </tr>
 <tr>
-<td>$-\Delta + c$ with $c$ real</td>
-<td>$-\Delta + c$</td>
+<td>$-\Delta_\Phi + c$ with $c$ real</td>
+<td>$-\Delta_\Phi + c$</td>
 <td>yes</td>
 </tr>
 <tr>
@@ -237,8 +237,8 @@ $$</p>
 <td>yes</td>
 </tr>
 <tr>
-<td>$\partial/\partial t - \Delta$</td>
-<td>$-\partial/\partial t - \Delta$</td>
+<td>$\partial/\partial t - \Delta_\Phi$</td>
+<td>$-\partial/\partial t - \Delta_\Phi$</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -258,12 +258,12 @@ $$</p>
 <p>$$
 \boxed{\;\langle Lu,v\rangle = \langle u, L^{\dagger}v\rangle\;} ,
 $$</p>
-<p>and the minimal realisation of $L$ is contained in the adjoint of the maximal realisation of $L^{\dagger}$. The equality $\mathcal{D}(L)=\mathcal{D}(L^{\dagger})$ and $L = L^{\dagger}$ holds for some choice of boundary condition but not for the maximal realisation alone: the expression $-\Delta$ on a bounded domain is symmetric on $C_c^\infty(\Omega)$ and has distinct self-adjoint extensions differing in their boundary conditions.</p>
+<p>and the minimal realisation of $L$ is contained in the adjoint of the maximal realisation of $L^{\dagger}$. The equality $\mathcal{D}(L)=\mathcal{D}(L^{\dagger})$ and $L = L^{\dagger}$ holds for some choice of boundary condition but not for the maximal realisation alone: the expression $-\Delta_\Phi$ on a bounded domain is symmetric on $C_c^\infty(\Omega)$ and has distinct self-adjoint extensions differing in their boundary conditions.</p>
 <p><em>Proof.</em> The pairing identity is the defining identity of the formal adjoint, and it passes to $v\in\mathcal{D}_{\max}(L)$ by density of the test functions because both sides are continuous in the graph norm. The inclusion of the minimal realisation in the adjoint of the maximal one is the statement that a compactly supported test function is annihilated by every boundary term, so that the adjoint, defined by the pairing and free of boundary conditions on the test side, contains it. The failure of self-adjointness for the maximal realisation is the failure of the boundary term to vanish; the self-adjoint extensions and the boundary conditions that select them are constructed in <em>The Adjoint Boundary Condition</em>, and the case of the Sturm–Liouville expression is <em>Self-Adjoint Sturm–Liouville Operators</em>, both below.</p>
 <p>The distinction between the expression and the operator is the one the rest of the category is built on. The three articles that follow it in this group take the expression and read from it an operator: <em>The Green Operator</em> inverts it under a boundary condition, <em>The Resolvent Operator</em> inverts it at a complex parameter, and <em>The Fundamental Solution Operator</em> inverts it on the whole space by convolution.</p>
 <h2 id="summary">Summary</h2>
 <p>A differential equation is read through its operator $L = \sum_{|\alpha|\le m}a_\alpha\partial^\alpha$ on an open set of $\mathbb{R}^n$, an expression that is linear and local and is determined by its coefficient family. Its order is the highest number of derivatives, its principal part the sum of the terms of highest order, and its symbol the polynomial $\sigma_L(x,\zeta)=\sum_{|\alpha|\le m}a_\alpha(x)\zeta^\alpha$ whose degree is the order and whose top part is the principal symbol. The symbol composes by the Leibniz rule, $\sigma_{L_1L_2}=\sum_\gamma\frac{1}{\gamma!}\partial^\gamma_\zeta\sigma_1\,\partial^\gamma_x\sigma_2$, with the product of the principal symbols as its principal part, and the operator is elliptic when its principal symbol vanishes only at $\zeta=0$; the Laplacian is elliptic with principal symbol $|\zeta|^2$, and the wave operator is not, its characteristic set being the cone $\zeta_t^2=|\zeta|^2$.</p>
-<p>The transpose $L^{t}=\sum(-1)^{|\alpha|}\partial^\alpha(a_\alpha\,\cdot\,)$ and the formal adjoint $L^{\dagger}=\sum(-1)^{|\alpha|}\partial^\alpha(\bar a_\alpha\,\cdot\,)$ are the operators defined by the integration by parts of $\int (Lu)v$ and $\int (Lu)\bar v$ against compactly supported test functions, and they are characterised by those identities. The formation of the formal adjoint is an involution, it reverses products and is additive, and an operator is formally self-adjoint when it equals it: the Laplacian and the real divergence form with symmetric matrix are, the first derivative and the heat operator are not. The formal adjoint is an expression and not yet an operator adjoint; the passage requires the choice of a domain, and it is the domain and not the expression that decides self-adjointness, the maximal realisation of $-\Delta$ on a bounded domain having distinct self-adjoint restrictions given by distinct boundary conditions.</p>
+<p>The transpose $L^{t}=\sum(-1)^{|\alpha|}\partial^\alpha(a_\alpha\,\cdot\,)$ and the formal adjoint $L^{\dagger}=\sum(-1)^{|\alpha|}\partial^\alpha(\bar a_\alpha\,\cdot\,)$ are the operators defined by the integration by parts of $\int (Lu)v$ and $\int (Lu)\bar v$ against compactly supported test functions, and they are characterised by those identities. The formation of the formal adjoint is an involution, it reverses products and is additive, and an operator is formally self-adjoint when it equals it: the Laplacian and the real divergence form with symmetric matrix are, the first derivative and the heat operator are not. The formal adjoint is an expression and not yet an operator adjoint; the passage requires the choice of a domain, and it is the domain and not the expression that decides self-adjointness, the maximal realisation of $-\Delta_\Phi$ on a bounded domain having distinct self-adjoint restrictions given by distinct boundary conditions.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

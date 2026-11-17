@@ -86,17 +86,17 @@ $$</p>
 \boxed{\;-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = (D - i\partial/\partial r'_t)(D + i\partial/\partial r'_t)\;},
 \tag{1}
 $$</p>
-<p>where $\Delta = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$ is the three-dimensional Laplacian. The two orderings agree because $D$ and $\partial/\partial r'_t$ commute. The operators $D \pm i\partial/\partial r'_t$ are the <strong>parabolic Dirac operators</strong> of the source; the name is inherited from the quaternionic-analysis literature that uses these first-order perturbations of $D$, and it refers to the first-order perturbation, not to a parabolic (heat-type) symbol: the factorisation is of the <strong>hyperbolic</strong> wave operator.</p>
+<p>where $\Delta_\Phi = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$ is the three-dimensional Laplacian. The two orderings agree because $D$ and $\partial/\partial r'_t$ commute. The operators $D \pm i\partial/\partial r'_t$ are the <strong>parabolic Dirac operators</strong> of the source; the name is inherited from the quaternionic-analysis literature that uses these first-order perturbations of $D$, and it refers to the first-order perturbation, not to a parabolic (heat-type) symbol: the factorisation is of the <strong>hyperbolic</strong> wave operator.</p>
 <p>The mechanism is the sign of the quaternion square. With $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = -\vec e_\nu \vec e_\mu$ for $\mu \neq \nu$, the square of $D$ is a scalar,</p>
 <p>$$
-D^2 = \sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu = -\sum_{\mu=1}^{3}\partial^2/\partial R_\mu^2 e_t = -\Delta e_t,
+D^2 = \sum_{\mu,\nu=1}^{3} \vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu = -\sum_{\mu=1}^{3}\partial^2/\partial R_\mu^2 e_t = -\Delta_\Phi e_t,
 \tag{2}
 $$</p>
 <p>because the antisymmetric part $\sum_{\mu\neq \nu} \vec e_\mu \vec e_\nu\,\partial^2/\partial R_\mu\partial R_\nu$ vanishes by the symmetry of the mixed partials. The two sign choices of the first-order factor then produce the second time derivative, $(i\partial/\partial r'_t)(-i\partial/\partial r'_t) = +\partial^2/\partial {r'_{t}}^2$, and (1) follows. Formulas (1) and (2) were recomputed exactly; see the closing section.</p>
 <h3 id="the-dictionary-with-the-corpus">The Dictionary with the Corpus</h3>
 <p>The factorisation (1) is the <strong>real-time twin</strong> of the corpus's elliptic factorisation. The corpus's biquaternionic gradient is</p>
 <p>$$
-\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z,
+\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z,
 $$</p>
 <p>so that its spatial part is exactly the source's $D$, and the corpus's second-order operator is</p>
 <p>$$
@@ -111,7 +111,7 @@ $$</p>
 -\Delta_\Phi + \partial^2/\partial {r'_{t}}^2 = (D + i\partial/\partial r'_t)(D - i\partial/\partial r'_t) = -(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = -\Box_\Phi.
 \tag{3}
 $$</p>
-<p>The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box$ carries $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic case throughout, so the null set of $\Box$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of <em>Biquaternion Analysis</em> are consequently not available, and the source does not use them.</p>
+<p>The sign in (3) is the entire difference between the two interpretations, and it is the difference the corpus already records as the Wick rotation: the corpus's $\Box_\Phi$ carries $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$ and is elliptic on the Euclidean slice, while the source's $-\Delta_\Phi + \partial^2/\partial {r'_{t}}^2$ carries a real time and is hyperbolic. The source works in the hyperbolic case throughout, so the null set of $\Box_\Phi$ is the light cone and the operator is not elliptic; the elliptic tools (maximum principle, mean value property, Liouville) of <em>Biquaternion Analysis</em> are consequently not available, and the source does not use them.</p>
 <h2 id="the-kernel-as-a-div-curl-system">The Kernel as a Div-Curl System</h2>
 <h3 id="the-generalized-div-curl-system">The Generalized Div-Curl System</h3>
 <p>Let $w = g + iv$ be a biquaternion-valued function on $\Omega \times (0,\infty)$, split into its real and imaginary quaternionic parts, and each of those into scalar and vector parts:</p>
@@ -161,7 +161,7 @@ $$</p>
 \mathcal{F}(w)(\vec k_\Phi,r'_t) = \int_{\mathbb{R}^3} \exp\bigl(-2\pi i\langle \vec k_\Phi,r_x\rangle\bigr) w(r_x,r'_t)\,dx,
 \tag{8}
 $$</p>
-<p>with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\nabla w)(\vec k_\Phi) = 2\pi i \vec k_\Phi\,\mathcal{F}(w)(\vec k_\Phi)$ (<em>Biquaternion Continuous Harmonic Analysis</em>, <em>The Gradient</em>). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z = \vec k_\Phi$ for the frequency vector, gives the linear equation</p>
+<p>with inversion by $\mathcal{F}(w)(-x)$ and the differentiation rule $\mathcal{F}(\vec\nabla_\Phi w)(\vec k_\Phi) = 2\pi i \vec k_\Phi\,\mathcal{F}(w)(\vec k_\Phi)$ (<em>Biquaternion Continuous Harmonic Analysis</em>, <em>The Gradient</em>). Applying (8) to the equation $DΞ = \mp i\partial/\partial r'_tΞ$ of the kernel, using $k_{\Phi x}\vec e_x + k_{\Phi y}\vec e_y + k_{\Phi z}\vec e_z = \vec k_\Phi$ for the frequency vector, gives the linear equation</p>
 <p>$$
 2\pi i \vec k_\Phi\,\mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) \pm i\partial/\partial r'_t \mathcal{F}(Ξ_\pm)(\vec k_\Phi,r'_t) = 0.
 $$</p>
@@ -284,18 +284,18 @@ $$</p>
 </tr>
 <tr>
 <td>$D = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$</td>
-<td>Moisil–Teodorescu operator (the source's); the corpus's spatial part $\vec{\nabla}$ of $\tilde\nabla_\Phi$</td>
+<td>Moisil–Teodorescu operator (the source's); the corpus's spatial part $\vec\nabla_\Phi$ of $\tilde\nabla_\Phi$</td>
 </tr>
 <tr>
 <td>$D \pm i\partial/\partial r'_t$</td>
 <td>The parabolic Dirac operators of the source; $D - i\partial/\partial r'_t = \tilde\nabla_\Phi$ and $D + i\partial/\partial r'_t = -(\tilde\nabla_\Phi)^{\natural}$, a sector identity that carries no $c$</td>
 </tr>
 <tr>
-<td>$\Delta = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$</td>
-<td>Three-dimensional Laplacian; $D^2 = -\Delta e_t$</td>
+<td>$\Delta_\Phi = \partial^2/\partial R_x^2 + \partial^2/\partial R_y^2 + \partial^2/\partial R_z^2$</td>
+<td>Three-dimensional Laplacian; $D^2 = -\Delta_\Phi e_t$</td>
 </tr>
 <tr>
-<td>$\nabla, \mathrm{div}, \mathrm{rot}$</td>
+<td>$\vec\nabla_\Phi, \mathrm{div}, \mathrm{rot}$</td>
 <td>Gradient, divergence, curl; $\mathrm{rot}$ is the source's $\mathrm{curl}$</td>
 </tr>
 <tr>

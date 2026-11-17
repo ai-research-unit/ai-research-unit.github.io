@@ -119,14 +119,14 @@ $$</p>
 =\frac{\hbar}{m}\oint\nabla\theta_{\mathrm{phs}}\cdot d\vec l
 =\frac{2\pi\hbar\,n}{m},
 $$</p>
-<p>where the third equality uses $\nabla S_{\tilde\Xi}=\hbar\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is</p>
+<p>where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is</p>
 <p>$$
 \kappa_{1}=\frac{2\pi\hbar}{m}=\frac{2\pi c}{k_m},
 $$</p>
 <p>the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.</p>
-<p><strong>The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral.</strong> $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is <a href="the-spin-zero-fluid.html">The Spin-Zero Fluid</a>'s qualification. At the first-order rung the two integrals coincide, $\vec v=\nabla S/m$ with no factor, and <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> reads the statement on $\vec v$ directly.</p>
+<p><strong>The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral.</strong> $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is <a href="the-spin-zero-fluid.html">The Spin-Zero Fluid</a>'s qualification. At the first-order rung the two integrals coincide, $\vec v=\vec\nabla_\Phi S/m$ with no factor, and <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> reads the statement on $\vec v$ directly.</p>
 <h3 id="the-loops-independence-checked">The loop's independence, checked</h3>
-<p><strong>The circulation was checked numerically on a vortex profile at three radii and three windings.</strong> Take the phase angle $\theta_{\mathrm{phs}}=n\arctan(r_y/r_x)$ and an amplitude that vanishes on the axis, $f(r)=Ar\exp(-r^{2}/2\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$. The circulation of $\nabla\theta_{\mathrm{phs}}$ was evaluated by a polygonal quadrature of $4000$ chords on circles of radius $0.3$, $0.8$ and $2.0$:</p>
+<p><strong>The circulation was checked numerically on a vortex profile at three radii and three windings.</strong> Take the phase angle $\theta_{\mathrm{phs}}=n\arctan(r_y/r_x)$ and an amplitude that vanishes on the axis, $f(r)=Ar\exp(-r^{2}/2\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$. The circulation of $\vec\nabla_\Phi\theta_{\mathrm{phs}}$ was evaluated by a polygonal quadrature of $4000$ chords on circles of radius $0.3$, $0.8$ and $2.0$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -161,12 +161,12 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. <strong>The exactness is structural and not a coincidence of the mesh</strong>: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\nabla\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.</p>
+<p>The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. <strong>The exactness is structural and not a coincidence of the mesh</strong>: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\vec\nabla_\Phi\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.</p>
 <h3 id="the-sign-and-the-orientation">The sign, and the orientation</h3>
 <p><strong>The sign of the charge is the orientation of the loop and nothing else.</strong> Reversing the loop reverses the sign of $\kappa$ and leaves $\lvert n\rvert$ unchanged, as the third row of the table shows. The physical content is the pair $(\lvert n\rvert,\text{direction})$, and a convention that fixes the direction of the loop fixes the sign. This article adopts no convention beyond the right-handed one of the frame, and no statement below depends on it.</p>
 <h2 id="the-node-under-the-current-and-the-stress">The Node under the Current and the Stress</h2>
 <h3 id="the-current-is-regular-where-the-velocity-is-not">The current is regular where the velocity is not</h3>
-<p><strong>The velocity diverges at the node and the current does not, because the density vanishes faster.</strong> With a phase winding $n$ the gradient of the phase is $\nabla\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is</p>
+<p><strong>The velocity diverges at the node and the current does not, because the density vanishes faster.</strong> With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is</p>
 <p>$$
 \lvert\vec v\rvert=\frac{\hbar\lvert n\rvert}{m\,r},
 $$</p>
@@ -180,14 +180,14 @@ $$</p>
 <h3 id="the-quantum-energy-is-finite-at-the-node">The quantum energy is finite at the node</h3>
 <p><strong>The quantum potential diverges at the node while the quantum energy stays finite and negative.</strong> The quantum potential is fixed by the corpus's sign convention,</p>
 <p>$$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$</p>
 <p>and for the linear core, with no dependence on the axial coordinate, the box is the transverse Laplacian,</p>
 <p>$$
-\Box\lVert\tilde\Xi\rVert=\frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
+\Box_\Phi\lVert\tilde\Xi\rVert=\frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
 =\frac{A}{r},
 \qquad
-\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
+\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
 \qquad
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{1}{r^{2}} .
 $$</p>
@@ -204,11 +204,11 @@ $$</p>
 <p>$$
 \tilde\Xi=f(r)\,e^{in\varphi}\,e^{-ik_t r'_t}\,e_t
 $$</p>
-<p>with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\hbar c\,k_t$. The action is $S_{\tilde\Xi}=\hbar(n\varphi-k_t r'_t)$, so $\nabla S_{\tilde\Xi}=\hbar n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\hbar k_t$.</p>
-<p>The transport equation is satisfied identically. It reads $\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.</p>
+<p>with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\hbar c\,k_t$. The action is $S_{\tilde\Xi}=\hbar(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\hbar k_t$.</p>
+<p>The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.</p>
 <p>The amplitude equation is one ordinary differential equation in $r$. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_t}^{2}$ and the phase above, the polar form's first equation becomes</p>
 <p>$$
-k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box f}{f},
+k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box_\Phi f}{f},
 \qquad\text{that is}\qquad
 \frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
 =\left(k_m^{2}-k_t^{2}\right)f+\frac{n^{2}}{r^{2}}f .
@@ -370,7 +370,7 @@ $$</p>
 <td>Mass wave number</td>
 </tr>
 <tr>
-<td>$Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$</td>
+<td>$Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$</td>
 <td>Quantum potential</td>
 </tr>
 <tr>
@@ -378,7 +378,7 @@ $$</p>
 <td>Quantum energy density</td>
 </tr>
 <tr>
-<td>$\Box$</td>
+<td>$\Box_\Phi$</td>
 <td>D'Alembertian of the material sector</td>
 </tr>
 <tr>

@@ -74,7 +74,7 @@
 <p>This article writes the action of the coupled Klein–Gordon theory in the coordinates of the complete polar decomposition and varies it. It is the polar companion of <em>The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form</em>, and it continues <em>The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables</em>, whose bracket form of the kinetic term, metric, Legendre analysis and Jacobian argument it takes over. Its subject is the one thing the coupling changes in that structure, and the one thing it leaves alone.</p>
 <p><strong>The action.</strong> With the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and the covariant bracket</p>
 <p>$$
-\mathcal A^{\mathrm{gco}}_\mu=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
+\mathcal A^{\mathrm{gco}}_\mu=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
 $$</p>
 <p>the action is the free polar action with the bracket replaced:</p>
 <p>$$
@@ -113,11 +113,11 @@ $$</p>
 S=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\tfrac{ϙ}{\hbar}a'_t\bigr)^{2}-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\bigr\rvert^{2}\Bigr]
 +\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}-k_m^{2}\varrho^{2}\Bigr\},
 $$</p>
-<p>which is the free polar article's central action with $\partial_{r'_t}\theta_{\mathrm{pha}}\mapsto\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and $\nabla\theta_{\mathrm{pha}}\mapsto\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$ and with the amplitude's two terms untouched. The signs of the two shifts are the metric's, and they are the same two signs the element companion records for the four-momentum shift.</p>
+<p>which is the free polar article's central action with $\partial_{r'_t}\theta_{\mathrm{pha}}\mapsto\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and $\vec\nabla_\Phi\theta_{\mathrm{pha}}\mapsto\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$ and with the amplitude's two terms untouched. The signs of the two shifts are the metric's, and they are the same two signs the element companion records for the four-momentum shift.</p>
 <p><strong>The two interaction terms, written out.</strong> Expanding the phase's bracket,</p>
 <p>$$
 \varrho^{2}\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-\varrho^{2}\bigl\lvert\nabla\theta_{\mathrm{pha}}\bigr\rvert^{2}
--\frac{2ϙ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\nabla\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
+-\frac{2ϙ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
 +\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
 $$</p>
 <p>so the interaction is a term linear in the potential multiplying the free phase rate, plus a term quadratic in the potential with no phase. The first is the one a "current times potential" presentation writes; the second is the one it does not, and it is the term that makes the action invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$, $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$. The chart therefore shows the coupling's second order in the potential as a separate object, and the article records this as its third result.</p>
@@ -130,7 +130,7 @@ $$</p>
 <p>which is Madelung's action with the mechanical four-momentum. The free polar article cites Madelung (1927) and Takabayasi (1952) for the $\vec A=0$ case; the coupled case is the standard Madelung action of a charged scalar, and the article does not claim it as new. What the biquaternionic form supplies is the <em>derivation</em>: the action is not postulated as a hydrodynamic functional but obtained by substituting the word into the element action, so the two functions are the field's scale and the field's phase and not auxiliary variables.</p>
 <p><strong>The equations.</strong> Varying $\theta_{\mathrm{pha}}$ — equivalently $S_{\tilde\Xi}$ — gives</p>
 <p>$$
-\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
+\vec\nabla_\Phi\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
 -\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)\Bigr)=0,
 $$</p>
 <p>which is the transport equation; varying $\varrho$ gives</p>
@@ -152,16 +152,16 @@ c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙ c\,a'_t\bigr),
 $$</p>
 <p>with $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the free polar article's "charge is the phase rate times the density" with the mechanical phase rate. The article does not call $\rho_{\mathrm{num}}$ a momentum: in a second-order action the momentum conjugate to $\theta_{\mathrm{pha}}$ is proportional to $\partial_{r'_t}\theta_{\mathrm{pha}}$ and not to $\varrho^{2}$, and the statement that the density <em>is</em> the momentum belongs to the first-order cases, where the action's kinetic term is $-\rho\dot\theta$.</p>
 <p><strong>The sign.</strong> On the negative-frequency branch $E$ is negative, the bracket can change sign where the potential is large, and the charge density follows. So the potential shifts the boundary between the two signs but does not remove the sign change; the free article's two defects are one defect, and the coupling does not address it. The positive definiteness of $\rho_{\mathrm{num}}$ is a statement about the number density and not about the charge.</p>
-<p><strong>The gauge invariance.</strong> Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\nabla S_{\tilde\Xi}-q\vec A$ is invariant, and the charge is invariant. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.</p>
+<p><strong>The gauge invariance.</strong> Under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$, the bracket $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$ is invariant, the bracket $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$ is invariant, and the charge is invariant. The invariance is a two-line computation in the chart, and it is the same statement as the element companion's cancellation between the two terms of a bilinear. The chart's version is the sharper one for the charge, because the charge is one product and the cancellation is inside one bracket.</p>
 <p><strong>What the pairing of the two branches gives.</strong> Complex conjugation sends $\theta_{\mathrm{pha}}\to-\theta_{\mathrm{pha}}$ and leaves the connection alone; the charge changes sign and the action is unchanged, because the action is even in $\partial\theta$ except for the linear interaction term, and that term changes sign with the phase. So the conjugate branch is the antiparticle's chart, with the opposite charge and the same mass shell, and the potential's contribution to the charge reverses with it. The statement is the free article's, and the coupling's only addition is that the potential enters the charge.</p>
 <h2 id="the-vorticity-and-the-flux">The Vorticity and the Flux</h2>
-<p><strong>The action's statement.</strong> The chart's current is $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$, and its vorticity is the curl of a gradient plus the curl of the potential. Varying the action in the phase gives the transport equation, and the transport equation is the statement that this current is divergenceless; so the action knows the current and not its curl. The curl is a consequence of the current's definition and not of the equation:</p>
+<p><strong>The action's statement.</strong> The chart's current is $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$, and its vorticity is the curl of a gradient plus the curl of the potential. Varying the action in the phase gives the transport equation, and the transport equation is the statement that this current is divergenceless; so the action knows the current and not its curl. The curl is a consequence of the current's definition and not of the equation:</p>
 <p>$$
-\nabla\times\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)=ϙ\vec B .
+\vec\nabla_\Phi\times\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)=ϙ\vec B .
 $$</p>
 <p><strong>The circulation.</strong> Integrating along a closed loop,</p>
 <p>$$
-\oint\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\cdot\mathrm{d}\vec l=2\pi\hbar\,n+ϙ\Phi_B ,
+\oint\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)\cdot\mathrm{d}\vec l=2\pi\hbar\,n+ϙ\Phi_B ,
 $$</p>
 <p>with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechanical circulation is quantized up to the flux, and the chart's exact statement of the Aharonov–Bohm structure is that the flux enters the phase's bookkeeping and not the field's.</p>
 <p><strong>Why the action does not see it.</strong> A circulation is a property of a closed loop and the action is a functional of functions; the loop's statement is a consequence of the phase's being single valued, which the action's variations do not test. The article states the consequence and records that it is not an equation of motion: it is a boundary condition on the phase's winding, and the free article's nodal-set structure is where it is analysed.</p>
@@ -255,7 +255,7 @@ $$</p>
 <td>The coupling</td>
 </tr>
 <tr>
-<td>$\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\nabla S_{\tilde\Xi}-q\vec A$</td>
+<td>$\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A$</td>
 <td>The mechanical four-momentum</td>
 </tr>
 <tr>
@@ -263,8 +263,8 @@ $$</p>
 <td>The quantum potential; unchanged</td>
 </tr>
 <tr>
-<td>$\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$</td>
-<td>The mechanical current; $\nabla\times=\rho_{\mathrm{chg}}\vec B$</td>
+<td>$\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$</td>
+<td>The mechanical current; $\vec\nabla_\Phi\times=\rho_{\mathrm{chg}}\vec B$</td>
 </tr>
 <tr>
 <td>$2\pi\hbar n+ϙ\Phi_B$</td>

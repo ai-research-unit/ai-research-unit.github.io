@@ -101,7 +101,7 @@ $$</p>
 $$</p>
 <p><strong>On a particle the norm is $-k_{m}^{2}$.</strong> <em>The Three Wavenumbers of a Particle</em> writes the same identity as $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_{m}^{2}$, that is $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, the mass shell read as a right triangle. Off shell the product is another number — at $k_{\Phi}=3$, $k_{t}^{\prime}=4$ it is $-7$ — so the article writes $-k_{m}^{2}$ exactly where the field is on shell and keeps the quadratic form elsewhere.</p>
 <p><strong>The identification is exact up to the constant and the sign of the transform convention</strong>, which is the hedge <em>Derivatives, Fields and Transforms</em> states for the symbol and does not attempt to remove: the same transform written with $2\pi$ and with the opposite exponent moves the constant and flips the sign, and none of the statements below depends on which is chosen.</p>
-<p><strong>The whole of the corpus's wave-number notation rests on that one centrality.</strong> $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is a number at each wave number, so a differential equation whose only non-constant object is $\Box$ becomes an equation between numbers. Centrality, however, is not the boundary of the method; constancy is. A constant coefficient passes through the transform whether it is central or not, and the norm of the resulting multiplier is central even when the multiplier is not, so a constant non-central potential translates the shell instead of destroying the algebra. The boundary is stated in the section <em>Where the Transcription Stops</em>.</p>
+<p><strong>The whole of the corpus's wave-number notation rests on that one centrality.</strong> $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ is a number at each wave number, so a differential equation whose only non-constant object is $\Box_\Phi$ becomes an equation between numbers. Centrality, however, is not the boundary of the method; constancy is. A constant coefficient passes through the transform whether it is central or not, and the norm of the resulting multiplier is central even when the multiplier is not, so a constant non-central potential translates the shell instead of destroying the algebra. The boundary is stated in the section <em>Where the Transcription Stops</em>.</p>
 <p><strong>Two qualifications, both standard.</strong> A coefficient that varies in space has a convolution for an image, and that is the limit of the method rather than a defect of it. And the transform is not a dynamics: it carries an equation to an equivalent equation, and it says nothing about which of the two descriptions a laboratory realises.</p>
 <h2 id="two-forms-two-descriptions">Two Forms, Two Descriptions</h2>
 <p><strong>The algebra carries two quadratic structures, and they are distinct objects.</strong> That distinctness is what makes this a claim rather than a definition. The textbook has the transform and the dispersion relation. The algebra has, in addition, a definite form on the field itself, and it also has a form on the derivative whose level sets are the dispersion surfaces.</p>
@@ -114,11 +114,11 @@ $$</p>
 $$</p>
 <p>and the current is the antisymmetric bilinear carrying one gradient,</p>
 <p>$$
-\vec J=\frac{\hbar}{2\,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+\vec J=\frac{\hbar}{2\,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla_\Phi\tilde\Xi-\left(\vec\nabla_\Phi\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
 $$</p>
 <p>The pair satisfies</p>
 <p>$$
-c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0 ,
+c\,\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot\vec J=0 ,
 $$</p>
 <p>with $r'_t=c\,t$ a length, as the corpus's phase $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ requires. The factor $c$ in front of the time derivative is not decoration: $r'_t$ is a length, so $c\,\partial_{r'_t}$ is a time derivative, and with $\vec J$ carrying a velocity beside $\rho$ both terms come out as $\lvert\tilde\Xi\rvert^{2}$ per unit time. Articles that absorb the $c$ into $\vec J$ write the law without it in front of the derivative; the identity in the next section is the same either way, because it is the statement that the current is orthogonal to the four-wave-number and does not depend on how the current is normalised.</p>
 <p><strong>It cannot be the quaternion norm, because the quaternion norm vanishes on the state module.</strong> The state module lies on the zero-divisor cone, so $\langle\tilde\Xi\rangle_{\natural}=0$ for every state while $2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)>0$. Checked on the idempotent $\tilde\Pi_1$ and on $\tilde\Pi_1(1+a\tilde e_x)$: the determinant, which is the quaternion norm, is $0$ in both cases, while the doubled scalar part is $1.000000$, $1.090000$ and $3.890000$ at $a=0,\ 0.3,\ 1.7$. <strong>A count built on the quaternion norm would count nothing</strong>, and that is the precise sense in which the two arms of the duality rest on two different forms.</p>
@@ -134,9 +134,9 @@ $$</p>
 <p>$$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi ,
 $$</p>
-<p>and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:</p>
+<p>and its symbol is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$. The centrality is one line: an element and its quaternion conjugate have opposite vector parts, so their product is $(a+\vec v)(a-\vec v)=a^{2}+\lvert\vec v\rvert^{2}$, a complex scalar for every element of $\mathbb{B}$, not only for $\tilde K_{\Phi}$. That is why $\Box_\Phi$ is a scalar operator and not merely a scalar part. A wave equation is the statement that this form takes a fixed value:</p>
 <p>$$
-\left(\Box-k_{m}^{2}\right)\tilde F=0
+\left(\Box_\Phi-k_{m}^{2}\right)\tilde F=0
 \quad\longleftrightarrow\quad
 \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}
 \quad\longleftrightarrow\quad
@@ -171,8 +171,8 @@ $$</p>
 </tr>
 <tr>
 <td>differential statement</td>
-<td>$ c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0 $</td>
-<td>$ \left(\Box-k_{m}^{2}\right)\tilde F=0 $</td>
+<td>$ c\,\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot\vec J=0 $</td>
+<td>$ \left(\Box_\Phi-k_{m}^{2}\right)\tilde F=0 $</td>
 </tr>
 <tr>
 <td>transformed statement</td>
@@ -201,7 +201,7 @@ $$</p>
 <h2 id="the-switch">The Switch</h2>
 <p><strong>The transform carries one row of the table to the other in one step.</strong> Take the continuity equation and transform in space and time together. In the kernel of <em>Derivatives, Fields and Transforms</em>, the derivatives become $-i\omega$ and $+i\vec k_{\Phi}$, so</p>
 <p>$$
-c\,\partial_{r'_t}\rho+\vec\nabla\cdot\vec J=0
+c\,\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot\vec J=0
 \quad\longmapsto\quad
 -i\omega\,\tilde\rho+i\vec k_{\Phi}\cdot\tilde{\vec J}=0
 \quad\Longleftrightarrow\quad
@@ -212,7 +212,7 @@ $$</p>
 <p><strong>The image carries the frequency $\omega$, not $k_{t}^{\prime}$.</strong> The conjugate of $r'_t$ is $k_{t}^{\prime}=\omega/c$, and the $c$ in front of the derivative is what turns it into $\omega$; the intermediate display above keeps both factors so that the bookkeeping is visible. In four-vector form the statement is that the current is orthogonal to $(\omega,\vec k_{\Phi})$, the four-wave-number written with each component in its own units.</p>
 <p><strong>The derivative has become a dot product.</strong> The transformed continuity equation says that the four-current $(\tilde\rho,\tilde{\vec J})$ is orthogonal to the four-wave-number $(\omega,\vec k_{\Phi})$ in the metric of inertia $(+1,-1,-1,-1)$, at each point of the wave-number plane separately. Written as a ratio it is $\omega\tilde\rho=\vec k_{\Phi}\cdot\tilde{\vec J}$, or $\tilde{\vec J}=\tilde\rho\,(\omega/\lvert\vec k_{\Phi}\rvert^{2})\vec k_{\Phi}$ on a single mode, which is the statement that the current follows the wave at the phase velocity. There is no derivative left and no integral left. Take the wave equation and transform it, and</p>
 <p>$$
-\left(\Box-k_{m}^{2}\right)\tilde F=0
+\left(\Box_\Phi-k_{m}^{2}\right)\tilde F=0
 \quad\longmapsto\quad
 \left(-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}\right)\tilde F=0 .
 $$</p>
@@ -227,7 +227,7 @@ i\,\hbar\,c\partial_{r'_t}\tilde\Xi=\tilde H_{\Psi}\tilde\Xi ,
 $$</p>
 <p>which with $r'_t=c\,t$ and $\hbar=m\,c/k_{m}$ reads $i\hbar\,\partial_{t}\psi=H\psi$. For the scalar case with a constant potential,</p>
 <p>$$
-i\hbar\,\partial_{t}\psi=-\frac{\hbar^{2}}{2m}\nabla^{2}\psi+V\psi
+i\hbar\,\partial_{t}\psi=-\frac{\hbar^{2}}{2m}\vec\nabla_\Phi^{2}\psi+V\psi
 \quad\longmapsto\quad
 \hbar\,\omega=\frac{\hbar^{2}k^{2}}{2m}+V .
 $$</p>
@@ -246,9 +246,9 @@ $$</p>
 <p><strong>This is the one place in the corpus where the wave arm is not a level set of a norm.</strong> The symbol above is affine: one term linear in $k_{t}^{\prime}$ beside a term quadratic in $k_{\Phi}$. Every quaternion norm is homogeneous of degree two in all four slots, so no element of $\mathbb{B}$ has that symbol as its norm, and the Schrödinger operator cannot be written as $\tilde K\tilde K^{\natural}$ for any single $\tilde K$. The exact root of the relativistic condition is $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$, and the parabola touches the hyperbola to second order with the quartic error $-k_{\Phi}^{4}/(8k_{m}^{3})$: at $k_{\Phi}/k_{m}=0.01$ the exact difference is $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ from the leading term, a relative agreement of $5\times10^{-5}$. The surface is therefore strictly timelike and touches the light cone nowhere. <strong>The particle arm survives untouched; the wave arm becomes a level set of an affine symbol, and reading that level set as a mass shell is an approximation whose first correction is quartic.</strong></p>
 <p><strong>The statement is exact and it is also a warning.</strong> The relation $E=p^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.</p>
 <p><strong>Three checks, on periodic data with $N=64$ samples and the modes $k_{\Phi}=2$ and $k_{\Phi}=6$.</strong> The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}k_{\Phi}^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $k_{\Phi,0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=k_{\Phi,0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial k_{\Phi}=k_{\Phi,0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.</p>
-<p><strong>One check with the mass kept, on a torus where the three numbers are commensurate.</strong> Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box-k_{m}^{2}$ vanishes on it exactly: $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-16=-k_{m}^{2}$, so $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box-k_{m}^{2}$ on it, while the mode's own norm is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-64$ and $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.</p>
+<p><strong>One check with the mass kept, on a torus where the three numbers are commensurate.</strong> Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box_\Phi-k_{m}^{2}$ vanishes on it exactly: $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-16=-k_{m}^{2}$, so $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box_\Phi-k_{m}^{2}$ on it, while the mode's own norm is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-64$ and $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.</p>
 <p><strong>The last check is the classical relation in motion.</strong> The centroid moves at the group velocity because the dispersion relation is quadratic, and a quadratic dispersion relation is the statement $E=p^{2}/(2m)$ differentiated. A reader who wants the classical equation back does not need to take a limit; the derivation is one differentiation of the algebraic relation the transform already produced.</p>
-<p><strong>The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.</strong> Take the Klein–Gordon equation $\left(\Box-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,</p>
+<p><strong>The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.</strong> Take the Klein–Gordon equation $\left(\Box_\Phi-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,</p>
 <p>$$
 \tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{m}^{2}
 \quad\Longleftrightarrow\quad
@@ -306,7 +306,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The boundary has rungs, and its rung is the degree.</strong> "Varying in space" is not one case but a ladder, because a polynomial coefficient of degree $n$ multiplies the transformed equation by a polynomial in $k_\Phi$ of degree $n$, and multiplication by a power of the wave number is a derivative: the image of the operator is a differential operator in $k_\Phi$ of order $n$, and a finite-order equation in the wave number is closed by a finite recursion. Degree zero is the free equation and the whole of this article. Degree one is the Dirac oscillator, whose operator in the wave number is $\partial_{k_\Phi}$, which generates translations of the transform: <strong>a constant potential translates the symbol and a linear potential translates the state, and the two facts are one derivative apart</strong>, which is why a linear potential shifts every level by the same amount and none of the spacings. Degree two is the harmonic oscillator, whose second-order equation in the wave number closes a three-term recursion and whose solutions are the Hermite functions.</p>
-<p><strong>Off the ladder nothing closes, and the corpus's choice of method follows from the rung it is standing on.</strong> A coefficient that is not a polynomial has an image of infinite order: $1/r$ transforms to a multiple of $1/k_\Phi^{2}$, which is multiplication by $(-\Delta)^{-1}$, so no recursion terminates — which is why the Coulomb problem of the series goes to the Duru–Kleinert transformation and not to the transform. The same order governs regularity from the other end. Multiplying a transform by $(ik_\Phi)^{m}$ lowers the order of its decay by $m$ and can never raise it, so a polynomial symbol makes a field rougher by exactly its degree and never smoother, and a shock needs the convolution that no polynomial supplies.</p>
+<p><strong>Off the ladder nothing closes, and the corpus's choice of method follows from the rung it is standing on.</strong> A coefficient that is not a polynomial has an image of infinite order: $1/r$ transforms to a multiple of $1/k_\Phi^{2}$, which is multiplication by $(-\Delta_\Phi)^{-1}$, so no recursion terminates — which is why the Coulomb problem of the series goes to the Duru–Kleinert transformation and not to the transform. The same order governs regularity from the other end. Multiplying a transform by $(ik_\Phi)^{m}$ lowers the order of its decay by $m$ and can never raise it, so a polynomial symbol makes a field rougher by exactly its degree and never smoother, and a shock needs the convolution that no polynomial supplies.</p>
 <p><strong>The fourth row is the boundary of the method, and it is a boundary rather than a defect.</strong> A field strength is a derivative of a potential, so it is the varying case, and the transform has no multiplier to offer for it. That is why the transform cannot produce a Lorentz force, and why the corpus sends uniform data to the transform and varying data to the eikonal. The first two rows are its ordinary case: the mass is central, the potential in the examples is constant, and the field strength, where it appears in an equation rather than as a source, is a constant element.</p>
 <p><strong>The fifth row is the useful one.</strong> A coefficient periodic with period $q$ cells does not produce a convolution of unbounded support; it produces a $q\times q$ matrix, because the periodicity folds the wave number onto a finite set of representatives. That is why lattice problems stay solvable in wave-number space and why the reciprocal lattice is finite at each flux. It is the place where a varying coefficient still gives a finite algebraic problem rather than a convolution, and it is the reason the corpus can treat a lattice at all.</p>
 <h2 id="when-the-wave-dies">When the Wave Dies</h2>
@@ -416,7 +416,7 @@ $$</p>
 <td>$4.4\times10^{-17}$</td>
 </tr>
 <tr>
-<td>$\Box\mapsto-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$</td>
+<td>$\Box_\Phi\mapsto-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$</td>
 <td>massless cone, random modes</td>
 <td>$1.0\times10^{-13}$</td>
 </tr>
@@ -483,10 +483,10 @@ $$</p>
 </tr>
 <tr>
 <td>$ (\tilde\nabla_\Phi)^{\natural} $</td>
-<td>its conjugate, whose product with it is $\Box$</td>
+<td>its conjugate, whose product with it is $\Box_\Phi$</td>
 </tr>
 <tr>
-<td>$ \Box $</td>
+<td>$ \Box_\Phi $</td>
 <td>the d'Alembertian in the material coordinates</td>
 </tr>
 <tr>

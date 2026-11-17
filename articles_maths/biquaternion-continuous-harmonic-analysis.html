@@ -297,7 +297,7 @@ $$</p>
 <h2 id="the-relation-to-the-differential-operators">The Relation to the Differential Operators</h2>
 <p>The continuous Fourier transform is the natural tool for analysing the differential operators of the analysis article. This is the main structural content of the continuous theory.</p>
 <h3 id="the-gradient">The Gradient</h3>
-<p>Let $\tilde{\nabla}$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:</p>
+<p>Let $\tilde\nabla_\Phi$ be the biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:</p>
 <p>$$
 \mathcal{F}[\partial/\partial Q_t F_{\mathrm{fn}}](\omega) = 2\pi i\,\tilde{Ζ}\,\omega \, \mathcal{F}[F_{\mathrm{fn}}](\omega),
 $$</p>
@@ -308,23 +308,23 @@ $$</p>
 $$</p>
 <p>where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conjugate to $Q_t, Q_x, Q_y, Q_z$. The structural fact is that the gradient becomes a biquaternion-valued multiplier.</p>
 <h3 id="the-dalembertian">The d'Alembertian</h3>
-<p>The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the four-dimensional Laplacian of the analysis article, a scalar operator, and it commutes with the Fourier transform. One sign convention governs every symbol below: the symbol of $\partial_\mu$ is $2\pi i\tilde{Ζ}\omega_\mu$, so the symbol of $\partial_\mu^2$ is $-(2\pi\omega_\mu)^{2}e_t$, the sign being carried by $\tilde{Ζ}^{2}=e_t$. Under the transform,</p>
+<p>The d'Alembertian $\Box_\Phi = \partial^2/\partial Q_t^2 + \Delta_\Phi$ is the four-dimensional Laplacian of the analysis article, a scalar operator, and it commutes with the Fourier transform. One sign convention governs every symbol below: the symbol of $\partial_\mu$ is $2\pi i\tilde{Ζ}\omega_\mu$, so the symbol of $\partial_\mu^2$ is $-(2\pi\omega_\mu)^{2}e_t$, the sign being carried by $\tilde{Ζ}^{2}=e_t$. Under the transform,</p>
 <p>$$
-\boxed{\; \mathcal{F}[\Box F_{\mathrm{fn}}](\omega) = -(2\pi)^2 \left(\omega_0^2 + \omega_1^2 + \omega_2^2 + \omega_3^2\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) \;}.
+\boxed{\; \mathcal{F}[\Box_\Phi F_{\mathrm{fn}}](\omega) = -(2\pi)^2 \left(\omega_0^2 + \omega_1^2 + \omega_2^2 + \omega_3^2\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) \;}.
 $$</p>
-<p>The multiplier is a negative scalar and it vanishes only at $\omega=0$: $\Box$ is elliptic, and a solution of $\Box F_{\mathrm{fn}}=0$ whose transform is a function has transform supported at the origin. <strong>The operator whose symbol vanishes on a cone is the hyperbolic one</strong>, $\partial_t^2-\Delta$, with symbol</p>
+<p>The multiplier is a negative scalar and it vanishes only at $\omega=0$: $\Box_\Phi$ is elliptic, and a solution of $\Box_\Phi F_{\mathrm{fn}}=0$ whose transform is a function has transform supported at the origin. <strong>The operator whose symbol vanishes on a cone is the hyperbolic one</strong>, $\partial_t^2-\Delta_\Phi$, with symbol</p>
 <p>$$
 -4\pi^2 \left(\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2\right),
 $$</p>
-<p>whose zero set is the <strong>null cone</strong> $\omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2$; the transform of a solution is supported there. The two operators differ by the sign of $\Delta$, and that sign is the sign $\tilde{Ζ}^{2}=e_t$ supplies through the square of the imaginary scalar.</p>
+<p>whose zero set is the <strong>null cone</strong> $\omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2$; the transform of a solution is supported there. The two operators differ by the sign of $\Delta_\Phi$, and that sign is the sign $\tilde{Ζ}^{2}=e_t$ supplies through the square of the imaginary scalar.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
-<p>The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
+<p>The square of the gradient $\tilde\nabla_\Phi^2 = (\partial^2/\partial Q_t^2 - \Delta_\Phi) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a biquaternion-valued operator. Under the transform, it becomes multiplication by</p>
 <p>$$
 \left(-(2\pi \omega_0)^2 + (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) e_t - 2 \sum_k \vec e_k (2\pi \omega_0)(2\pi \omega_k),
 $$</p>
 <p>which is the square of the gradient symbol $2\pi i\tilde{Ζ}(\omega_0 e_t + \sum_k\omega_k\vec e_k)$, a biquaternion-valued multiplier, when $\tilde{Ζ}$ commutes with $\vec\omega$.</p>
 <h3 id="the-convective-derivative">The Convective Derivative</h3>
-<p>The convective derivative $\tilde{D} = \tilde Q_3^{\natural} \tilde{\nabla}$ becomes multiplication by the biquaternion</p>
+<p>The convective derivative $\tilde{D} = \tilde Q_3^{\natural} \tilde\nabla_\Phi$ becomes multiplication by the biquaternion</p>
 <p>$$
 \tilde Q_3^{\natural} \cdot 2\pi i\tilde{Ζ} (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
 $$</p>
@@ -419,7 +419,7 @@ $$</p>
 <p><strong>Divisibility of the spectrum.</strong> The transform is invertible for every integrable $f$, so what is open is whether a spectrum can avoid the null cone, that is whether a convolution can be undone pointwise.</p>
 </li>
 <li>
-<p><strong>The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.</strong> The transform of a solution is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
+<p><strong>The support of the transform of solutions of $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$.</strong> The transform of a solution is supported on a set determined by the symbol of the gradient. What is the structure of this set?</p>
 </li>
 <li>
 <p><strong>Plancherel for the other roots.</strong> The isometry is stated for the Hermitian roots; for the other pure roots the transform preserves the Peirce norm $\lVert\tilde\Pi_+f\rVert^{2}+\lVert\tilde\Pi_-f\rVert^{2}$ and no Euclidean one, and the sharp form of the loss is open.</p>
@@ -441,7 +441,7 @@ $$</p>
 <p>The continuous biquaternion Fourier transform is defined by the kernel $W(t, \omega) = \exp(-2\pi i\tilde{Ζ}\omega t)$, where $\tilde{Ζ}$ is a root of $1$ in $\mathbb{B}$. The root of $1$ is the parameter, not a root of $-1$: the scalar $i$ in the exponent carries the sign, and the algebra element carries only the square $e_t$.</p>
 <p>The roots of $1$ are the central pair $\pm e_t$ and the pure elements $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ})=-1$, so the parameter has two families and no third. The root is an idempotent pair through the halving map, the kernel is a pair of conjugate unit complex numbers on the two Peirce ideals, and the transform is a pair of ordinary complex transforms there, that is four scalar complex transforms.</p>
 <p>The transform is invertible for every integrable function, whatever values it takes; the inverse uses $W^{-1}$ and not the quaternion conjugation, which inverts only for a pure root. It satisfies the Riemann–Lebesgue lemma, the inversion theorem and the Plancherel theorem for the Hermitian roots, and it factorises into four complex Fourier transforms.</p>
-<p>The convolution theorem holds under the centrality of the kernel on the values, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian a negative scalar multiplier vanishing only at the origin, the hyperbolic operator $\partial_t^2 - \Delta$ a multiplier vanishing on the null cone, and the convective derivative a biquaternion-valued multiplier depending on its parameter.</p>
+<p>The convolution theorem holds under the centrality of the kernel on the values, with the non-commutativity requiring careful placement of the kernel. The transform diagonalizes the constant-coefficient differential operators: the gradient becomes a biquaternion-valued multiplier, the d'Alembertian a negative scalar multiplier vanishing only at the origin, the hyperbolic operator $\partial_t^2 - \Delta_\Phi$ a multiplier vanishing on the null cone, and the convective derivative a biquaternion-valued multiplier depending on its parameter.</p>
 <p>The vanishing-norm issue does not obstruct the inversion: what a zero-divisor value obstructs is the pointwise division of a spectrum.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

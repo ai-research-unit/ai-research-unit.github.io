@@ -73,32 +73,32 @@
 <h2 id="introduction">Introduction</h2>
 <p>The d'Alembertian of the biquaternion algebra is the scalar second-order operator</p>
 <p>$$
-\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\nabla\bigr)
+\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
 =\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial Q_\mu^2}
-=\frac{\partial^2}{\partial Q_t^2}+\Delta_Q ,
+=\frac{\partial^2}{\partial Q_t^2}+\Delta_\Phi ,
 $$</p>
 <p>the quaternionic norm of the gradient. On the material sector, where $Q_t=iq'_t$, the same operator is</p>
 <p>$$
-\Box=-\frac{\partial^2}{\partial (q'_t)^2}+\Delta .
+\Box_\Phi=-\frac{\partial^2}{\partial (q'_t)^2}+\Delta_\Phi .
 $$</p>
 <p>Every derivative in this article is the corpus gradient. With the units $e_t,\vec e_x,\vec e_y,\vec e_z$ and the coordinates $Q_\mu$,</p>
 <p>$$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial Q_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},
 \qquad
-\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi ,
 $$</p>
-<p>with $\Delta_Q=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$ and $\varepsilon=(1,-1,-1,-1)$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. No other letter names it.</p>
-<p>This article asks for a first-order operator $D$ whose square is $\Box-\lambda$, or for a factorisation of $\Box-\lambda$ into two first-order operators. The two answers differ. A <strong>single square</strong> is one first-order operator $D$ with $D^2=(\Box-\lambda)e_t$, where both $D$ and its coefficients are read in the algebra; if it existed, its kernel would sit inside the second-order solution space. A <strong>factorisation</strong> is a product $D_-D_+$ of two first-order operators, each a left multiplication by an element with derivative coefficients, whose product is $(\Box-\lambda)e_t$. At $\lambda=0$ the algebra supplies it with $D_+=\tilde\nabla$ and $D_-=\tilde\nabla^{\natural}$. When the two factors are distinct, the two first-order equations together are equivalent to the second-order equation.</p>
-<p><strong>The results.</strong> The algebra admits the factorisation and not the single square. A scalar square needs four elements of $\mathbb{B}$ that anticommute pairwise, with squares $+e_t$ and $-e_t$ in the ratio one to three. The algebra supplies the three of the minus sign, the spatial units $\vec e_k$, and no fourth: the three generate $\mathbb{B}$, and an element that anticommutes with all three is zero. The obstruction sits in the second order, where the zero-order term cannot reach, so no constant-coefficient first-order operator with element coefficients has a scalar square. The gradient is the first-order operator of the algebra. Its square carries a vector remainder, while its product with the conjugate is $\Box$. The free equation stays first order in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair</p>
+<p>with $\Delta_\Phi=\sum_{k\in\{x,y,z\}}\partial^2/\partial Q_k^2$ and $\varepsilon=(1,-1,-1,-1)$. The gradient is an element with derivative coefficients, and it multiplies its argument on the left. No other letter names it.</p>
+<p>This article asks for a first-order operator $D$ whose square is $\Box_\Phi-\lambda$, or for a factorisation of $\Box_\Phi-\lambda$ into two first-order operators. The two answers differ. A <strong>single square</strong> is one first-order operator $D$ with $D^2=(\Box_\Phi-\lambda)e_t$, where both $D$ and its coefficients are read in the algebra; if it existed, its kernel would sit inside the second-order solution space. A <strong>factorisation</strong> is a product $D_-D_+$ of two first-order operators, each a left multiplication by an element with derivative coefficients, whose product is $(\Box_\Phi-\lambda)e_t$. At $\lambda=0$ the algebra supplies it with $D_+=\tilde\nabla_\Phi$ and $D_-=(\tilde\nabla_\Phi)^{\natural}$. When the two factors are distinct, the two first-order equations together are equivalent to the second-order equation.</p>
+<p><strong>The results.</strong> The algebra admits the factorisation and not the single square. A scalar square needs four elements of $\mathbb{B}$ that anticommute pairwise, with squares $+e_t$ and $-e_t$ in the ratio one to three. The algebra supplies the three of the minus sign, the spatial units $\vec e_k$, and no fourth: the three generate $\mathbb{B}$, and an element that anticommutes with all three is zero. The obstruction sits in the second order, where the zero-order term cannot reach, so no constant-coefficient first-order operator with element coefficients has a scalar square. The gradient is the first-order operator of the algebra. Its square carries a vector remainder, while its product with the conjugate is $\Box_\Phi$. The free equation stays first order in one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$. The massive equation is the chiral pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 \qquad \lambda=m^2 .
 $$</p>
-<p>On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ each line of the pair, composed with its partner, is $\Box I$, and the mass is the coupling of the two lines, so that eliminating one part returns $(\Box-m^2)$ on the other.</p>
+<p>On the doubled carrier $\mathbb{B}\oplus\mathbb{B}$ each line of the pair, composed with its partner, is $\Box_\Phi I$, and the mass is the coupling of the two lines, so that eliminating one part returns $(\Box_\Phi-m^2)$ on the other.</p>
 <p><strong>The two matrix sizes.</strong> The biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ (<em>The Polarized Module of the Biquaternion Algebra</em>). A field of this article is an element of that algebra, four complex dimensions. The gradient takes values in the algebra, and the d'Alembertian is its scalar norm. The operator algebra $\mathrm{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ is the algebra of maps of that field; it is not a second representation of $\mathbb{B}$, and this article uses no matrix carrier. A first-order root with matrix coefficients would be a map outside the algebra and outside the one-sided calculus.</p>
 <p>The article is mathematics. The d'Alembertian is the norm of the gradient; the mass is the name of the shift parameter, and no other physical interpretation is used. <strong>The two letters are the two factors.</strong> In this article $L$ and $R$ name the field of the first factor and the field of the second, which are related by left multiplications and therefore carry one and the same value of the chirality test; they name the two <em>values</em> of that test in the two-sided writing of the physics corpus, where the operator carries a right slot as well. The two uses of the letters are told apart by the operator, not by the letters. The conventions are those of <em>Algebra and Element Conventions</em> and <em>Operator and Calculus Conventions</em>; the calculus is one-sided, and every equation is written on the left.</p>
 <h2 id="the-dalembertian-and-its-symbol">The D'Alembertian and Its Symbol</h2>
@@ -108,7 +108,7 @@ $$</p>
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z=\sum_{\mu\in\{t,x,y,z\}}Q_\mu e_\mu ,
 $$</p>
 <p>with complex coefficients $Q_\mu$. The gradient and its conjugate are the two operators of the introduction. On the material sector, where $Q_t=iq'_t$, the derivative along the fourth coordinate reads $\partial/\partial Q_t=-i\,\partial/\partial q'_t$.</p>
-<p>The d'Alembertian is scalar: it multiplies by $e_t$ and acts coefficient by coefficient. <strong>The d'Alembertian is not the partner operator.</strong> The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_Q$, a different operator, and its root is a different problem. This article treats $\Box$ only. The two operators are distinguished in <em>Operator and Calculus Conventions</em>, and the distinction is fixed by the form, not by a choice of sign.</p>
+<p>The d'Alembertian is scalar: it multiplies by $e_t$ and acts coefficient by coefficient. <strong>The d'Alembertian is not the partner operator.</strong> The plain bilinear norm of the gradient is $\partial^2/\partial Q_t^2-\Delta_\Phi$, a different operator, and its root is a different problem. This article treats $\Box_\Phi$ only. The two operators are distinguished in <em>Operator and Calculus Conventions</em>, and the distinction is fixed by the form, not by a choice of sign.</p>
 <h3 id="the-symbol">The Symbol</h3>
 <p>On a plane wave $\exp\bigl(i(q_0x_0-\vec q\cdot\vec x)\bigr)$, where $x_0=q'_t$ and $x_k=Q_k$, the substitution is $\partial/\partial Q_t\mapsto q_0$ and $\partial/\partial Q_k\mapsto-iq_k$. The symbol of the gradient is left multiplication by the element</p>
 <p>$$
@@ -120,25 +120,25 @@ $$</p>
 <p>$$
 \tilde K^{\natural}\tilde K=\tilde K\tilde K^{\natural}=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)e_t .
 $$</p>
-<p>The same expression is the symbol of $\Box$, because $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla$. The square of the symbol is not scalar:</p>
+<p>The same expression is the symbol of $\Box_\Phi$, because $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$. The square of the symbol is not scalar:</p>
 <p>$$
 \tilde K^2=\bigl(q_0^2+\lvert\vec q\rvert^2\bigr)e_t-2iq_0\vec q .
 $$</p>
 <p>The mass shell is the quadric $q_0^2-\lvert\vec q\rvert^2=\lambda$; at $\lambda=0$ it is the null cone of the quaternionic norm.</p>
-<p><strong>The zero divisor on the cone.</strong> Off the cone, $\tilde K$ is invertible, with inverse $\tilde K^{\natural}/(\tilde K^{\natural}\tilde K)$, and the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ is invertible. On the cone the norm vanishes and $\tilde K$ is a zero divisor. In the representation $\mathbb{B}\cong M_2(\mathbb{C})$ the determinant of an element is its quaternionic norm, so a nonzero null element is a matrix of rank one, and left multiplication by a rank-one matrix has rank two. For a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ therefore has rank two and a two-dimensional kernel. The free equation $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$ has a nonzero plane-wave solution exactly on the cone, and it selects two of the four complex dimensions there.</p>
+<p><strong>The zero divisor on the cone.</strong> Off the cone, $\tilde K$ is invertible, with inverse $\tilde K^{\natural}/(\tilde K^{\natural}\tilde K)$, and the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ is invertible. On the cone the norm vanishes and $\tilde K$ is a zero divisor. In the representation $\mathbb{B}\cong M_2(\mathbb{C})$ the determinant of an element is its quaternionic norm, so a nonzero null element is a matrix of rank one, and left multiplication by a rank-one matrix has rank two. For a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ therefore has rank two and a two-dimensional kernel. The free equation $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$ has a nonzero plane-wave solution exactly on the cone, and it selects two of the four complex dimensions there.</p>
 <h3 id="the-square-of-the-gradient">The Square of the Gradient</h3>
 <p>Because the partial derivatives commute,</p>
 <p>$$
-\tilde\nabla^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_Q+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k}.
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial Q_t^2}-\Delta_\Phi+2\sum_k\vec e_k\frac{\partial^2}{\partial Q_t\,\partial Q_k}.
 $$</p>
-<p>The square is the partner operator plus the mixed term, and both separate it from $\Box$. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial Q_t\partial Q_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.</p>
+<p>The square is the partner operator plus the mixed term, and both separate it from $\Box_\Phi$. The three spatial units anticommute in pairs and square to $-e_t$, so the spatial part of the square is scalar. The time unit does not join them: $e_t$ is the identity of the algebra, so it commutes with every spatial unit, and the two orders of $\partial^2/\partial Q_t\partial Q_k$ add instead of cancelling. The time coefficient of the gradient is the identity, and nothing anticommutes with the identity.</p>
 <p>On the material sector, where $Q_t=ix_0$ and $\partial/\partial Q_t=-i\,\partial/\partial x_0$, the same operator is</p>
 <p>$$
-\tilde\nabla^2=\Box-2\Delta-2i\sum_k\vec e_k\frac{\partial^2}{\partial x_0\,\partial x_k}.
+\tilde\nabla_\Phi^2=\Box_\Phi-2\Delta_\Phi-2i\sum_k\vec e_k\frac{\partial^2}{\partial x_0\,\partial x_k}.
 $$</p>
 <p><strong>The product with the conjugate is scalar.</strong> Read on the invertibles, the two operators differ only by the sign of the three spatial terms, and the product is central because $\varepsilon_\mu e_\mu^2=\varepsilon_\mu^2e_t=e_t$ for every $\mu$:</p>
 <p>$$
-\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi .
 $$</p>
 <h2 id="the-clifford-obstruction">The Clifford Obstruction</h2>
 <h3 id="the-three-spatial-units">The Three Spatial Units</h3>
@@ -157,21 +157,21 @@ $$</p>
 <p>so $a_t=a_x=0$. The anticommutator with $\vec e_y$ then gives $a_y=0$, and $X=a_z\vec e_z$ commutes with $\vec e_z$, so $a_z=0$. Hence $X=0$.</p>
 <p>The proposition is stated for the three spatial units. It holds for every quaternionic triple: if $b_k$ satisfy $b_k^2=-e_t$ and pairwise anticommutation, they generate $\mathbb{B}$, and an element that anticommutes with all three lies in the commutant of $\mathbb{B}$, which is $\mathbb{C}e_t$; since $e_t$ commutes, it is zero.</p>
 <h3 id="no-single-square">No Single Square</h3>
-<p><strong>Theorem.</strong> Let $D=\sum_\mu a_\mu\partial/\partial Q_\mu+b$ with $a_\mu,b\in\mathbb{B}$ constant. Then $D^2$ is not $(\Box-\lambda)e_t$ for any $\lambda\in\mathbb{C}$.</p>
+<p><strong>Theorem.</strong> Let $D=\sum_\mu a_\mu\partial/\partial Q_\mu+b$ with $a_\mu,b\in\mathbb{B}$ constant. Then $D^2$ is not $(\Box_\Phi-\lambda)e_t$ for any $\lambda\in\mathbb{C}$.</p>
 <p><em>Proof.</em> Because the partial derivatives commute, the second-order part of $D^2$ is</p>
 <p>$$
 \frac12\sum_{\mu,\nu}\bigl(a_\mu a_\nu+a_\nu a_\mu\bigr)\frac{\partial^2}{\partial Q_\mu\partial Q_\nu}.
 $$</p>
-<p>Matching it to $(\Box-\lambda)e_t=\sum_\mu\partial^2/\partial Q_\mu^2-\lambda e_t$ gives</p>
+<p>Matching it to $(\Box_\Phi-\lambda)e_t=\sum_\mu\partial^2/\partial Q_\mu^2-\lambda e_t$ gives</p>
 <p>$$
 a_\mu a_\nu+a_\nu a_\mu=2\delta_{\mu\nu}e_t .
 $$</p>
 <p>In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $c_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.</p>
 <p>The same argument covers the material-sector inertia. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one inertia exists exactly when one of the opposite inertia does.</p>
 <h3 id="the-carrier-is-four-dimensional">The Carrier Is Four-Dimensional</h3>
-<p>A field that carries the four units is an element of $\mathbb{B}$, four complex dimensions. The gradient has four coefficients, one per unit, and it acts on the four coefficients of the field. A field whose value is one complex number has no first-order equation of the series: $\tilde\nabla\tilde{Ξ}=0$ reads</p>
+<p>A field that carries the four units is an element of $\mathbb{B}$, four complex dimensions. The gradient has four coefficients, one per unit, and it acts on the four coefficients of the field. A field whose value is one complex number has no first-order equation of the series: $\tilde\nabla_\Phi\tilde{Ξ}=0$ reads</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}=\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial Q_\mu}=0,
+\tilde\nabla_\Phi\tilde{Ξ}=\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial Q_\mu}=0,
 $$</p>
 <p>and the four units are independent, so all four partial derivatives vanish and the field is constant.</p>
 <p>The carrier of a first-order operator with element coefficients is therefore $\mathbb{B}$, and it is not enlarged by the root. The root changes the action, not the carrier. A larger carrier would require coefficients that are maps of the carrier, not elements of $\mathbb{B}$; those maps lie outside the one-sided calculus, and this article does not use them.</p>
@@ -179,29 +179,29 @@ $$</p>
 <h3 id="the-two-factors">The Two Factors</h3>
 <p>The product of the gradient and its conjugate is the d'Alembertian:</p>
 <p>$$
-\tilde\nabla^{\natural}\tilde\nabla=\tilde\nabla\tilde\nabla^{\natural}=\Box .
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi .
 $$</p>
-<p>The identity is exact, and it is the whole factorisation of $\Box$ that the algebra supplies. Each factor is left multiplication by an element with derivative coefficients, and the product is composition on the field: the right factor acts first, the left factor acts on the result, and no derivative acts on a coefficient, since all coefficients are constant. The factorisation has two factors, and neither is a root by itself: the square of either one alone carries the vector remainder of §<em>The Square of the Gradient</em>. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.</p>
+<p>The identity is exact, and it is the whole factorisation of $\Box_\Phi$ that the algebra supplies. Each factor is left multiplication by an element with derivative coefficients, and the product is composition on the field: the right factor acts first, the left factor acts on the result, and no derivative acts on a coefficient, since all coefficients are constant. The factorisation has two factors, and neither is a root by itself: the square of either one alone carries the vector remainder of §<em>The Square of the Gradient</em>. That is the sense in which the root exists: as a pair of first-order operators, not as one operator.</p>
 <h3 id="the-pair-as-two-lines">The Pair, as Two Lines</h3>
 <p>The two equations of the massive case are two lines on $\mathbb{B}\oplus\mathbb{B}$, and they are never gathered into one letter. Write $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$; then</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
-<p>and each line composed with the conjugate of the other is $\Box I$, so eliminating one part returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$ on the other. Each line is a map of the doubled carrier and not an element of $\mathbb{B}$.</p>
+<p>and each line composed with the conjugate of the other is $\Box_\Phi I$, so eliminating one part returns $\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$ on the other. Each line is a map of the doubled carrier and not an element of $\mathbb{B}$.</p>
 <h3 id="the-chiral-pair">The Chiral Pair</h3>
 <p>The two parts are two fields, $\tilde{Ξ}_{\mathrm{sp},L}$ and $\tilde{Ξ}_{\mathrm{sp},R}$, written together as $\tilde{Ξ}_{\mathrm{sp}}=(\tilde{Ξ}_{\mathrm{sp},L},\tilde{Ξ}_{\mathrm{sp},R})$; each is an element of $\mathbb{B}$ and no relation between them is assumed in advance. The massive equation is the pair</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R} .
 $$</p>
-<p>Substituting the first relation into the second gives $\tilde\nabla^{\natural}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, that is</p>
+<p>Substituting the first relation into the second gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, that is</p>
 <p>$$
-\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R} ,
+\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R} ,
 $$</p>
-<p>and the first relation then defines $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$. Each part satisfies the shifted d'Alembertian, and the pair is a bijection with the second-order solutions of one part, not a new restriction. At $m=0$ the two relations decouple: $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=0$ and $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.</p>
+<p>and the first relation then defines $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$. Each part satisfies the shifted d'Alembertian, and the pair is a bijection with the second-order solutions of one part, not a new restriction. At $m=0$ the two relations decouple: $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=0$.</p>
 <p>The two labels $L$ and $R$ are the two slots of the pair. They are not the eigenspaces of a chirality: the chirality is the right action</p>
 <p>$$
 \tilde{Ξ}\longmapsto-i\tilde{Ξ}\vec e_z=i\tilde{Ξ}\omega ,
@@ -221,7 +221,7 @@ $$</p>
 \det\begin{pmatrix}-m&\tilde K\\ \tilde K^{\natural}&-m\end{pmatrix}
 =\bigl(q_0^2-\lvert\vec q\rvert^2-m^2\bigr)^4 ,
 $$</p>
-<p>the fourth power of the symbol of $\Box-m^2$. The fourth power is the inertia of the doubled carrier: eliminating one block leaves the Schur complement $(q_0^2-\lvert\vec q\rvert^2-m^2)$ times the four-dimensional identity.</p>
+<p>the fourth power of the symbol of $\Box_\Phi-m^2$. The fourth power is the inertia of the doubled carrier: eliminating one block leaves the Schur complement $(q_0^2-\lvert\vec q\rvert^2-m^2)$ times the four-dimensional identity.</p>
 <p>The determinant of the left action of $\tilde K$ on $\mathbb{B}$ is the square of its quaternionic norm,</p>
 <p>$$
 \det\bigl(\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}\bigr)
@@ -241,17 +241,17 @@ $$</p>
 <tbody>
 <tr>
 <td>one complex number</td>
-<td>$\tilde\nabla\tilde{Ξ}=0$, which forces $\partial\tilde{Ξ}/\partial Q_\mu=0$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}=0$, which forces $\partial\tilde{Ξ}/\partial Q_\mu=0$</td>
 <td>no, it forces a constant</td>
 </tr>
 <tr>
 <td>element of $\mathbb{B}$, massless</td>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$</td>
-<td>yes, one factor of $\Box$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$</td>
+<td>yes, one factor of $\Box_\Phi$</td>
 </tr>
 <tr>
 <td>element of $\mathbb{B}$, massive</td>
-<td>the pair $\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>the pair $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
 <td>yes, the pair</td>
 </tr>
 </tbody>
@@ -260,17 +260,17 @@ $$</p>
 <h2 id="worked-examples">Worked Examples</h2>
 <p><strong>A plane wave.</strong> Let $\tilde{Ξ}(x)=\exp\bigl(i(q_0x_0-\vec q\cdot\vec x)\bigr)v$ with $v\in\mathbb{B}$ constant. Then</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}=\tilde K\tilde{Ξ},
+\tilde\nabla_\Phi\tilde{Ξ}=\tilde K\tilde{Ξ},
 \qquad
-\Box\tilde{Ξ}=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)\tilde{Ξ} .
+\Box_\Phi\tilde{Ξ}=\bigl(q_0^2-\lvert\vec q\rvert^2\bigr)\tilde{Ξ} .
 $$</p>
 <p>The free equation has a nonzero solution exactly when $\tilde K$ is a zero divisor, that is on the cone $q_0^2-\lvert\vec q\rvert^2=0$. At a nonzero null covector the map $\tilde{Ξ}\mapsto\tilde K\tilde{Ξ}$ has rank two, and the solution space is two-dimensional.</p>
-<p><strong>A constant element.</strong> A constant $v\in\mathbb{B}$ satisfies $\tilde\nabla v=0$ and $\Box v=0$. The example shows that the free equation has a nontrivial kernel already at $\lambda=0$. The constant part of the kernel is all of $\mathbb{B}$, the degenerate case of the cone at $q=0$; at a nonzero null covector the kernel is two-dimensional, one state of each chirality.</p>
-<p><strong>Promotion of a solution.</strong> Let $\tilde{Ξ}_{\mathrm{sp},R}$ solve $(\Box-m^2)\tilde{Ξ}_{\mathrm{sp},R}=0$ with $m\ne0$, and put $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}$. Then</p>
+<p><strong>A constant element.</strong> A constant $v\in\mathbb{B}$ satisfies $\tilde\nabla_\Phi v=0$ and $\Box_\Phi v=0$. The example shows that the free equation has a nontrivial kernel already at $\lambda=0$. The constant part of the kernel is all of $\mathbb{B}$, the degenerate case of the cone at $q=0$; at a nonzero null covector the kernel is two-dimensional, one state of each chirality.</p>
+<p><strong>Promotion of a solution.</strong> Let $\tilde{Ξ}_{\mathrm{sp},R}$ solve $(\Box_\Phi-m^2)\tilde{Ξ}_{\mathrm{sp},R}=0$ with $m\ne0$, and put $\tilde{Ξ}_{\mathrm{sp},L}=m^{-1}\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}$. Then</p>
 <p>$$
-\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
+\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L},
 \qquad
-\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac1m\Box\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=\frac1m\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},R},
 $$</p>
 <p>so the pair is satisfied. The example exhibits the bijection between the solutions of the shifted d'Alembertian on one part and the solutions of the pair.</p>
 <p><strong>The determinant.</strong> For the symbol $\tilde K$, the determinant of the left action is $(q_0^2-\lvert\vec q\rvert^2)^2$, and the determinant of the pair, written as the block array and shifted by $m$, is $(q_0^2-\lvert\vec q\rvert^2-m^2)^4$. At $q=(2,1,0,0)$ the norm is $3$, the first determinant is $9$, and at $m=1$ the second determinant is $(3-1)^4=16$.</p>
@@ -313,7 +313,7 @@ $$</p>
 <td>kernel dimension $0$</td>
 </tr>
 <tr>
-<td>the square of the array $\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix}$ minus $\Box I$, on $100$ random covectors</td>
+<td>the square of the array $\begin{pmatrix}0&\tilde K\\ \tilde K^{\natural}&0\end{pmatrix}$ minus $\Box_\Phi I$, on $100$ random covectors</td>
 <td>$3.6\times10^{-15}$</td>
 </tr>
 <tr>
@@ -328,10 +328,10 @@ $$</p>
 </table></div>
 <p>The numerical checks are checks of polynomial identities at random points. The proof is the algebra of the preceding sections; the numbers guard against a sign or factor error in the transcription.</p>
 <h2 id="summary">Summary</h2>
-<p>The d'Alembertian $\Box=\partial^2/\partial Q_t^2+\Delta_Q=-\partial^2/\partial(q'_t)^2+\Delta$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra admits no single first-order root: a scalar square needs four elements that anticommute pairwise, one of square $+e_t$ and three of square $-e_t$, the algebra supplies the three spatial units, and no fourth element anticommutes with all three. The obstruction sits in the second order, where the zero-order term cannot reach.</p>
-<p>The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla\tilde{Ξ}_{\mathrm{sp}}=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.</p>
-<p>The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla^2$, so no scalar shift makes the gradient square to $\Box$. The mass acts instead as the coupling of the two parts, and the pair carries it: each line composed with its partner is $\Box I$, so eliminating one member returns $\Box\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, and the pair and the second-order equation on one part are equivalent.</p>
-<p>The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair written as an array is the fourth power of the symbol of $\Box-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.</p>
+<p>The d'Alembertian $\Box_\Phi=\partial^2/\partial Q_t^2+\Delta_\Phi=-\partial^2/\partial(q'_t)^2+\Delta_\Phi$ is the quaternionic norm of the gradient and a scalar second-order operator. The algebra admits no single first-order root: a scalar square needs four elements that anticommute pairwise, one of square $+e_t$ and three of square $-e_t$, the algebra supplies the three spatial units, and no fourth element anticommutes with all three. The obstruction sits in the second order, where the zero-order term cannot reach.</p>
+<p>The first-order operator of the algebra is the gradient. Its square is not scalar, because $e_t$ is the identity and commutes with the three spatial units, so the mixed derivatives add. Its product with the conjugate is $\Box_\Phi$, and that product is the factorisation of the d'Alembertian that the algebra supplies. The free equation is first order in one field, $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp}}=0$; at a nonzero null covector it selects two of the four complex dimensions of the second-order solution space, one state of each chirality.</p>
+<p>The mass is a central scalar, and a central scalar commutes with every derivative. A scalar zero-order term therefore changes only the constant term of a square; it cannot remove the vector remainder of $\tilde\nabla_\Phi^2$, so no scalar shift makes the gradient square to $\Box_\Phi$. The mass acts instead as the coupling of the two parts, and the pair carries it: each line composed with its partner is $\Box_\Phi I$, so eliminating one member returns $\Box_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m^2\tilde{Ξ}_{\mathrm{sp},R}$, and the pair and the second-order equation on one part are equivalent.</p>
+<p>The determinant of the left action of the symbol is the square of the quaternionic norm, and the determinant of the pair written as an array is the fourth power of the symbol of $\Box_\Phi-m^2$. A determinant identity is not a square root. The results are a classification of form, and no mass, coupling or dynamics is predicted.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -346,16 +346,16 @@ $$</p>
 <td>the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
 </tr>
 <tr>
-<td>$\tilde\nabla=\sum_\mu e_\mu\partial/\partial Q_\mu$</td>
+<td>$\tilde\nabla_\Phi=\sum_\mu e_\mu\partial/\partial Q_\mu$</td>
 <td>the biquaternionic gradient, an element with derivative coefficients, acting on the left</td>
 </tr>
 <tr>
-<td>$\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$</td>
-<td>its quaternion conjugate, the second factor of $\Box$</td>
+<td>$(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial Q_\mu$</td>
+<td>its quaternion conjugate, the second factor of $\Box_\Phi$</td>
 </tr>
 <tr>
-<td>$\Box=\langle\tilde\nabla\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla)$</td>
-<td>the d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_Q$</td>
+<td>$\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)$</td>
+<td>the d'Alembertian, $\partial^2/\partial Q_t^2+\Delta_\Phi$</td>
 </tr>
 <tr>
 <td>$\mathrm{Sc}$</td>
@@ -398,8 +398,8 @@ $$</p>
 <td>the identity map of the carrier, an operator and not an element</td>
 </tr>
 <tr>
-<td>$\tilde\nabla\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $\tilde\nabla^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
-<td>the pair, as two lines on $\mathbb{B}\oplus\mathbb{B}$; each line composed with its partner is $\Box I$</td>
+<td>$\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{sp},R}=m\tilde{Ξ}_{\mathrm{sp},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{sp},L}=m\tilde{Ξ}_{\mathrm{sp},R}$</td>
+<td>the pair, as two lines on $\mathbb{B}\oplus\mathbb{B}$; each line composed with its partner is $\Box_\Phi I$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z$</td>

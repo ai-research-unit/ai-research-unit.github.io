@@ -94,7 +94,7 @@
 <p><strong>Proof sketch (Henkin construction).</strong> It suffices to prove the second form. Extend the language by countably many new constant symbols $c_0, c_1, \ldots$, one for each formula, and enumerate all formulas of the enlarged language. Build a maximal consistent theory $T^* \supseteq T$ in the enlarged language by going through the enumeration and adding, at each stage, either $\varphi$ or $\neg\varphi$, whichever keeps the theory consistent; such a choice is always possible, since if both choices were inconsistent then $T$ would prove $\neg\varphi$ and $\varphi$. When the formula added at a stage is $\exists x\,\psi(x)$, add also $\psi(c_i)$ for a constant $c_i$ that has not yet appeared, which is the <strong>witness</strong> of the existential statement; consistency is preserved because the constant is fresh. The resulting $T^*$ is maximal, consistent, and has witnesses. Form the <strong>term model</strong> whose elements are the closed terms of the enlarged language modulo the equivalence $t \sim s$ iff $T^* \vdash t = s$, and interpret the symbols in the evident way. Satisfaction is proved by induction on formulas using the maximality and the witnesses, so that $\mathcal{M} \models T^*$ and hence $\mathcal{M} \models T$.</p>
 <p>The completeness theorem has a sharp form: if $T$ is recursively axiomatised, a derivation can be found <strong>effectively</strong> from a proof of unsatisfiability, and the set of valid sentences of a countable language is a computably enumerable set. This is the point at which logic meets computability, and it is the reason the undecidability results below are stated as statements about enumerable sets.</p>
 <h3 id="compactness">Compactness</h3>
-<p><strong>Theorem (compactness).</strong> Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta \models \varphi$ for some finite $\Delta \subseteq T$.</p>
+<p><strong>Theorem (compactness).</strong> Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta_\Phi \models \varphi$ for some finite $\Delta_\Phi \subseteq T$.</p>
 <p><strong>Proof.</strong> Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\varphi\}$.</p>
 <p>Compactness is the most used theorem of model theory, and the corpus uses it in the form of the existence of nonstandard models: the theory of arithmetic together with the sentences $c > 0, c > 1, c > 2, \ldots$ for a new constant $c$ is finitely satisfiable, hence satisfiable, giving a model of arithmetic containing an element larger than every numeral.</p>
 <h3 id="the-lowenheimskolem-theorems">The Löwenheim–Skolem Theorems</h3>
@@ -111,13 +111,13 @@
 $$</p>
 <p>The machine operates on a <strong>tape</strong>, a function $\mathbb{Z} \to \Gamma$ that is blank outside a finite set, with a <strong>head</strong> at a position; a <strong>configuration</strong> is a triple (state, tape, head position). At each step, if the machine is in state $q$ reading symbol $a$, and $\delta(q,a) = (q', b, D)$, it writes $b$, moves the head one cell in direction $D$, and enters state $q'$. The machine <strong>halts</strong> when it reaches $q_{\mathrm{h}}$, and the output is the content of the tape.</p>
 <p>The input is written on the tape as a block of $1$s with the head at its left end, and the machine is started in $q_0$. A partial function $f : \mathbb{N}^k \dashrightarrow \mathbb{N}$ is <strong>Turing-computable</strong> if there is a machine which, started on the input written in unary with the arguments separated by blanks, halts with the value of $f$ written in unary precisely when $f$ is defined at that input.</p>
-<p><strong>Example (successor).</strong> Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\Box, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \Box) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.</p>
-<p><strong>Example (addition).</strong> Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\Box, 1\}$, with</p>
+<p><strong>Example (successor).</strong> Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\Box_\Phi, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \Box_\Phi) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.</p>
+<p><strong>Example (addition).</strong> Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\Box_\Phi, 1\}$, with</p>
 <p>$$
-\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\Box)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
+\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\Box_\Phi)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
 $$</p>
 <p>$$
-\delta(q_1,\Box)=(q_2,\Box,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\Box,R).
+\delta(q_1,\Box_\Phi)=(q_2,\Box_\Phi,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\Box_\Phi,R).
 $$</p>
 <p>Started on $1^n 1^m$ with the head at the left end, the machine scans the first block in $q_0$, replaces the separating blank by a $1$, scans the second block in $q_1$, steps left onto the last $1$, and erases it in $q_2$. The tape then holds $1^n\,1\,1^{m-1} = 1^{n+m}$, and the cases $n = 0$ and $m = 0$ are read from the same instructions, a block of length $0$ being simply absent. Thus the machine computes addition.</p>
 <h3 id="recursive-functions">Recursive Functions</h3>
@@ -223,7 +223,7 @@ $$</p>
 <td>$\varphi$ is satisfied in every model of $T$</td>
 </tr>
 <tr>
-<td>$T$, $\Delta$</td>
+<td>$T$, $\Delta_\Phi$</td>
 <td>Theory (set of sentences); finite subtheory</td>
 </tr>
 <tr>

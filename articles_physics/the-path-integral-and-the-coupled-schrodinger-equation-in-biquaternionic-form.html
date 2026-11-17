@@ -78,13 +78,13 @@
 <p><em>Third, the constant background is exactly solvable and the two shifts are the whole of the coupling there.</em> The kernel is the free kernel times a phase factor in the potential and a translation factor in the vector potential, and the dispersion is $E+ϙ\varphi=(\vec p-q\vec A)^{2}/2m$. The composition of the shifted kernels is verified to $2.3\times10^{-12}$.</p>
 <p><strong>What is not claimed.</strong> No new prediction, no new solution, no new particle. The integral is the standard one of non-relativistic scalar electrodynamics. What the algebra contributes is that the connection is one central operator read in four slots, that the measure is flat and stays flat, and that the determinant's power is unchanged by the coupling — the first-order $\det^{-1}$ of the free companion, not a new power.</p>
 <p><strong>The two settings are again kept apart, and the coupling has a different face in each.</strong> In the constant setting the coupling is a shift of two numbers, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, and the integral's exponent is the free exponent with the shifted numbers. In the operator setting the coupling is a covariant Laplacian and a potential, and the integral is the free integral with three extra terms. No result is transferred between them.</p>
-<p><strong>Conventions.</strong> The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that</p>
+<p><strong>Conventions.</strong> The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that</p>
 <p>$$
 D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
 \qquad
 D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta,
 \qquad
-\vec\pi=-i\hbar\vec\nabla-q\vec A,
+\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A,
 $$</p>
 <p>with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\varphi$. The charge $ϙ$ is minus the electric charge of the older convention, and its value is inserted, not derived.</p>
 <h2 id="the-exponent">The Exponent</h2>
@@ -119,7 +119,7 @@ $$</p>
 \qquad
 \varphi\mapsto\varphi-\partial_{t'}\Gamma,
 \qquad
-\vec A\mapsto\vec A+\vec\nabla\Gamma,
+\vec A\mapsto\vec A+\vec\nabla_\Phi\Gamma,
 $$</p>
 <p>which is the standard transformation with the sign convention of $D_t$ and $D_\eta$ above.</p>
 <p><strong>The measure is invariant because the Jacobian is one.</strong> At each point the transformation multiplies the two real coordinates of the central field by a rotation matrix of unit determinant, so $\mathcal{D}\tilde\Xi\,\mathcal{D}\tilde\Xi^{*}$ is unchanged. This is the sharpest difference from a lattice formulation: the phase is a modulus-one number at every point, so a finite transformation costs an invertible element Jacobian and nothing else.</p>
@@ -190,7 +190,7 @@ $$</p>
 <td>Covariant spatial derivative</td>
 </tr>
 <tr>
-<td>$\vec\pi=-i\hbar\vec\nabla-q\vec A$</td>
+<td>$\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A$</td>
 <td>Mechanical momentum</td>
 </tr>
 <tr>

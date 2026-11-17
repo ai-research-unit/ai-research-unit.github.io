@@ -78,7 +78,7 @@
 &\langle p_{n+1}\cdots p_{n+m}|S|p_1\cdots p_n\rangle\\[2pt]
 &\quad=\Big[\prod_{j=n+1}^{n+m}\int d^4r_j\,\exp(i\theta_{\mathrm{pwp},j})\Big]
 \Big[\prod_{i=1}^{n}\int d^4r_i\,\exp(-i\theta_{\mathrm{pwp},i})\Big]\\[2pt]
-&\quad\qquad\times\Big[\prod_{j=1}^{n+m}\big(\Box_{\Phi,j}-m^2\big)\Big]
+&\quad\qquad\times\Big[\prod_{j=1}^{n+m}\big(\Box_{\Phi}-m^2\big)\Big]
 \big\langle 0\big|T\,\tilde{Ξ}(x_1)\cdots\tilde{Ξ}(x_{n+m})\big|0\big\rangle\Big|_{\text{on shell}},
 \end{aligned}
 \;}
@@ -116,7 +116,7 @@ where $\tilde{Ξ}_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-functio
 $$
 \langle f|S|i\rangle
 = \Big[\prod_{\text{legs}}\int d^4r_j\,\exp(\pm ip_j\cdot x_j)\Big]
-\Big[\prod_{\text{legs}}\big(\Box_{\Phi,j}-m^2\big)\Big]
+\Big[\prod_{\text{legs}}\big(\Box_{\Phi}-m^2\big)\Big]
 G^{(n+m)}(x_1,\dots,x_{n+m})\Big|_{\text{on shell}} ,
 $$
 the sign being $+$ on an outgoing leg and $-$ on an incoming one, with one factor $Z^{-1/2}$ per leg. Each external leg is Fourier-transformed with its plane-wave phase and acted on by the wave operator, and the result is evaluated with all external momenta <strong>on the mass shell</strong>. The amputated correlator is defined off the shell as well; what requires the shell is the identification of its residue with an S-matrix element.</p>
@@ -140,7 +140,7 @@ so that, off the shell and with the prescription removed,
 $$
 \boxed{\;\lim_{\epsilon\to0^{+}}\mathcal{M}(\tilde Q_{\Phi})\,D_F(\tilde Q_{\Phi}) = \lim_{\epsilon\to0^{+}}\frac{N(\tilde Q_{\Phi})+m^{2}\,c^{2}}{N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon} = 1 \qquad (\mathcal{M}\neq0)\;}
 $$
-and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box-k_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.</p>
+and with the prescription kept the same product is $1$ up to $O(\epsilon/\mathcal{M})$. Multiplying a correlation function by $\mathcal{M}(\tilde Q_{\Phi})$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of an algebra-valued function by the central scalar $\mathcal{M}(\tilde Q_{\Phi})$. The normalization is the propagator article's. Its Klein–Gordon Green's function is $G_F=1/(\vec p^{\,2}+m^2-p_0^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$, which satisfies $(\Box_\Phi-k_m^{2})G_F=-\delta^{(4)}$ and whose free-field residue is $+1$; the textbook normalization $-1/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}-i\epsilon)$ is its negative.</p>
 <p><strong>The centrality is a real centrality.</strong> Because $\mathcal{M}(\tilde Q_{\Phi})$ is central, the amputation commutes with the left and right multiplications of the algebra and does not disturb any internal index; it multiplies every component of the field by the same complex number. On real momenta $\mathcal{M}=N(\tilde Q_{\Phi})+m^{2}\,c^{2}$ is also <strong>real</strong>, and a real central scalar commutes with the conjugation $\flat=-{}^{*}$,
 $$
 \big(\mathcal{M}\tilde{Ξ}\big)^{\flat} = \bar{\mathcal{M}}\,\tilde{Ξ}^{\flat} = \mathcal{M}\,\tilde{Ξ}^{\flat},
@@ -410,7 +410,7 @@ verified as $-0.490000=-m^2c^2$ in units of $m^2c^2$, for $m=0.7$, $\vec p=(0.3,
 </tr>
 <tr>
 <td>$-(N(\tilde Q_{\Phi})+m^{2}\,c^{2})=-\mathcal{M}(\tilde Q_{\Phi})$</td>
-<td>Symbol of the wave operator $(\Box-k_m^{2})$; amputation uses $\mathcal{M}$</td>
+<td>Symbol of the wave operator $(\Box_\Phi-k_m^{2})$; amputation uses $\mathcal{M}$</td>
 </tr>
 <tr>
 <td>$Z=\lim_{N(\tilde Q_{\Phi})\to-m^{2}c^{2}}(N(\tilde Q_{\Phi})+m^{2}\,c^{2})D_F(\tilde Q_{\Phi})=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$</td>
