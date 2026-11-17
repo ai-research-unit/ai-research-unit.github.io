@@ -303,8 +303,8 @@ and the same holds for $\tilde{Ϛ}^2$, for $\tilde\Pi\tilde H_\Psi^{*}$, for $\t
 <p><strong>The heaviest physics files are the entanglement files.</strong> <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> carries $48$, <em>Exercise: Entanglement Entropy and the Partial Trace</em> $43$, <em>Exercise: The Reduced State of an Entangled Subsystem</em> $41$, <em>States, Observables and the Born Weight</em> $40$. The first three are also the files where the partial trace is used, so they carry both the sites that go and the sites that stay, and they are the files where the two must be kept apart.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <p><strong>The test is local.</strong> Look at the argument of the symbol. If it is $\mathsf M_2(\cdot)$, $L$, $R$, $\mathrm{ad}$, $T_a$, $\lambda_a$, $\gamma_\mu$, $\Gamma_\mu$, $S^{(2)}$, $U_\Box$, or a matrix letter declared as one in the same article, the symbol stays. If it is an element of $\mathbb{B}$ — $\tilde Q$, $\tilde{Ϛ}_\Psi$, $\tilde\Pi$, $\tilde\Xi$, $\tilde X$ — the symbol goes and the argument becomes $2$ times its scalar part.</p>
-<p><strong>The second test is the article's working object.</strong> An article that works inside $\mathbb{B}^{\otimes n}\cong M_{2^n}$ has matrix arguments already: its states are $x\otimes y$, its trace is $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$, and its Bell idempotents are orthonormal with respect to that pairing. The rewrite is available there too, and it is $\mathrm{Tr}(x\otimes y)=4\,\mathrm{Sc}(x)\mathrm{Sc}(y)$ or $2^n\,\mathrm{Sc}$, but no article wants to read $2^n\,\mathrm{Sc}$ in every line of a stabiliser computation. So the trace on a tensor power stays, and the test is not the argument alone but the argument together with the space the article computes in.</p>
-<p><strong>The family counts were computed by argument pattern, and the second test moves them.</strong> The states family was counted at $816$ sites by looking for $\tilde{Ϛ}$, $\tilde\Pi$ and $\rho$ in the argument. On the eleven files read here, $353$ sites were opened and $219$ were replaced: a little under two in three. The five tensor-power files supply most of the survivors, and they are the largest files in the family. The purge is therefore smaller than the family count and better targeted: what goes is the reading of a single algebra element, and what stays is the trace of a matrix that the article names.</p>
+<p><strong>The second test is the space, and it decides the factor.</strong> On a single algebra element the reading is $\mathrm{Sc}$ and the trace is $2\,\mathrm{Sc}$. On a tensor power the reading is still $\mathrm{Sc}$ and the trace is $2^n\,\mathrm{Sc}$, one factor of $2$ per collapsed factor. A partial trace is the same rule applied to a subset of the factors, and it is written $2\,\mathrm{Sc}_2$ with $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$. So the family count by argument pattern was right and the earlier reading of it was wrong: no site is exempt because its argument sits in $\mathbb{B}^{\otimes n}$. The argument decides that a site is a trace of algebra elements, and the space decides only how many factors of $2$ the rewrite carries.</p>
+<p><strong>The factor is the number of levels, and it is never a guess.</strong> $2$ for one biquaternion, $2^n$ for $n$ of them, $\dim\mathcal H_2$ for a partial trace over a factor of dimension $\dim\mathcal H_2$. Every rewrite in this session writes that factor out, and a rewrite that leaves it implicit is the defect the pass repairs.</p>
 <p><strong>Why the test is not the article title.</strong> A title is a coarse proxy. <em>The Bell Basis</em> is not about matrices, and it uses the partial trace, which stays. <em>The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$</em> is about matrices, and every site in it stays. So the title decides the wholesale exemptions and the argument decides the individual sites.</p>
 <p><strong>What "about matrices" exempts in Part VI.</strong> The seven categories <em>The Matrix Algebras $M_n(\mathbb{R})$</em>, <em>The Matrix Algebras $M_n(\mathbb{C})$</em>, <em>$M_2(\mathbb{C})$</em>, <em>$M_3(\mathbb{C})$</em>, <em>$M_4(\mathbb{C})$</em>, <em>$M_5(\mathbb{C})$</em> and <em>$M_6(\mathbb{C})$</em> hold $352$ files and $3\,148$ symbols, and they are the only place where the trace is the subject. The $22$ representation articles of the system categories hold $363$ more, and their titles name the matrix: <em>The $M_2(\mathbb{C})$ Pauli Representation</em>, <em>The $M_4(\mathbb{R})$ Left and Right Regular Representation</em>, and their siblings.</p>
 <p><strong>What "about matrices" exempts in physics.</strong> Six files carry <em>matrix</em> in the title and $45$ symbols between them, of which <em>Matrix Representations Conventions</em> carries $34$. That article is the one place in physics where the bridge $\operatorname{Tr}=\mathrm{tr}\circ\mathsf M_2$ is stated and used, and it stays as it is.</p>
@@ -327,7 +327,7 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <p><strong>Third objection: $1\,626$ sites is a large risk.</strong> The risk is bounded by the fact that the substitution is per family and each family is one identity. The seven families of §<em>The Senses</em> are seven substitutions, and the eight traps of §<em>The Sites That Need Reading</em> are the complete list of places where the substitution changes the formula and not only the symbol. The verification is a grep and a build.</p>
 <p><strong>Fourth objection: the purge removes the only linear functional the algebra has.</strong> The algebra keeps its linear functional: it is $\mathrm{Sc}$, which is $\tfrac12\operatorname{Trd}$. What the purge removes is the second name for it. The trace form $\operatorname{tr}(XY)$ stays, because a form is not a functional and $2\,\mathrm{Sc}(XY)$ is a form only after one has decided which product is meant.</p>
 <h2 id="the-senses">The Senses</h2>
-<p><strong>Twelve substitutions cover the corpus.</strong> The table gives each family with a site from the corpus, the rewrite, and the factor that the rewrite must carry.</p>
+<p><strong>Fourteen substitutions cover the corpus.</strong> The table gives each family with a site from the corpus, the rewrite, and the factor that the rewrite must carry.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -410,16 +410,29 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <td>$\mathrm{Sc}(\tilde U\tilde X\tilde U^{*})=\mathrm{Sc}\tilde X$</td>
 <td>none</td>
 </tr>
+<tr>
+<td>partial trace</td>
+<td>$\operatorname{Tr}_2(a\otimes b)=a\operatorname{Tr}(b)$</td>
+<td>$\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$, reduction $2\,\mathrm{Sc}_2$</td>
+<td>$2$ per collapsed factor</td>
+</tr>
+<tr>
+<td>tensor power</td>
+<td>$Z_n=\operatorname{Tr}[\rho^{\otimes n}\mathsf C_n]$</td>
+<td>$Z_n=2^n\,\mathrm{Sc}[\rho^{\otimes n}\mathsf C_n]$</td>
+<td>$2^n$</td>
+</tr>
 </tbody>
 </table></div>
-<p><strong>Three rows lose the factor, eight keep it and one doubles it.</strong> The Born ratio loses it because both sides carry it. The commutator and the invariance lose it because the identity that proves them is the cyclicity of $\mathrm{Sc}$, which has no factor. The variance gains a $4$ because the squared term squares the factor.</p>
-<p><strong>No row grows except the variance.</strong> The commutator and the Born ratio each lose a symbol and gain nothing. The variance gains a $4$, and it is the one row that a substitution cannot produce: it is the first entry of §<em>The Sites That Need Reading</em>.</p>
+<p><strong>Three rows lose the factor, eight keep one factor of $2$, and three carry a different one.</strong> The Born ratio loses it because both sides carry it. The commutator and the invariance lose it because the identity that proves them is the cyclicity of $\mathrm{Sc}$, which has no factor. The variance gains a $4$ because the squared term squares the factor. The partial trace pays a $2$ for each factor it collapses, and the tensor power pays $2^n$.</p>
+<p><strong>Three rows grow, and each grows for a reason that is visible in the algebra.</strong> The variance gains a $4$ because the squared term squares the factor, the partial trace gains a $2$ per collapsed factor, and the tensor power gains $2^n$. The variance is the one row that a plain substitution cannot produce, and it is the first entry of §<em>The Sites That Need Reading</em>.</p>
 <h2 id="the-survivors">The Survivors</h2>
-<p><strong>Five families of traces stay, and each has a reason that no rewrite can supply.</strong></p>
-<h3 id="the-partial-trace-and-the-tensor-factor">The Partial Trace and the Tensor Factor</h3>
-<p><strong>The carrier is a tensor factor.</strong> $\operatorname{Tr}_2$ acts on $\mathcal{H}_1\otimes\mathcal{H}_2$ and returns an operator on $\mathcal{H}_1$. The corpus uses it $106$ times, all of them in the entanglement files, and it writes $\operatorname{Tr}_\mathbb{B}$ for the factor trace $131$ times more. With the tensor law $\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\operatorname{Tr}(y)$ at $59$ sites, the family is $296$ sites.</p>
-<p><strong>The factor is the dimension of the factor that is summed.</strong> It is not $2$ and it is not $4$; it is $\dim\mathcal{H}_2$ in the formula and $\dim V$ in a representation. A rewrite to a scalar part would have to guess which factor is summed, and there is no scalar part on a tensor product.</p>
-<p><strong>The label is required.</strong> Every surviving site names the factor in the same sentence: the second factor, the algebra factor, the first factor. A bare $\operatorname{Tr}$ in these files is the defect that the pass repairs.</p>
+<p><strong>Four families of traces stay, and the partial trace is not one of them.</strong></p>
+<h3 id="the-partial-trace-is-rewritten">The Partial Trace Is Rewritten</h3>
+<p><strong>The carrier is a tensor factor, and the factor is still a count of levels.</strong> $\operatorname{Tr}_2$ acts on $\mathcal H_1\otimes\mathcal H_2$ and returns an operator on $\mathcal H_1$; it is $\dim\mathcal H_2$ times the scalar part in the second factor. The rewrite is $\mathrm{Sc}_2$ with the rule $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$, and the reduction is $2\,\mathrm{Sc}_2$ for a qubit factor, $\mathrm{Sc}_2$ on a tensor power.</p>
+<p><strong>The label is kept, and it moves to the scalar part.</strong> Where the corpus writes $\operatorname{Tr}_2$ the pass writes $\mathrm{Sc}_2$, so the sentence still names the factor and the arithmetic still shows which factor was summed. The $106$ partial-trace sites and the $59$ tensor-law sites of the earlier count are rewrites, not survivors, and the tensor law becomes $\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\operatorname{Tr}(y)\mapsto4\,\mathrm{Sc}(x)\mathrm{Sc}(y)$ on two biquaternion factors.</p>
+<p><strong>The replica moments were the test case.</strong> $Z_n=\operatorname{Tr}[(\rho_{AB})^{\otimes n}\mathsf C_n]$ becomes $Z_n=2^n\,\mathrm{Sc}[(\rho_{AB})^{\otimes n}\mathsf C_n]$, and the $n=2$ swap form becomes $Z_2=4\,\mathrm{Sc}[(\rho_{AB}\otimes\rho_{A'B'})\mathbb F_{AA'}]$. Both were recomputed on the two-qubit family at $\theta=0.4$: the swap form and $2\,\mathrm{Sc}(\rho_A^2)$ both give $0.7427001194$, and $\cos^4\theta+\sin^4\theta$ agrees to all digits. On $100$ random products, $2\,\mathrm{Sc}_2$ and the matrix partial trace differ by $9.9\times10^{-16}$.</p>
+<p><strong>What does not change is the rule for the factor.</strong> The exponent is the number of factors collapsed, and a partial trace over a factor of dimension $d$ pays $d$. The article that collapses one factor of a two-level system writes $2$; the article that collapses none writes $2^n$.</p>
 <h3 id="the-gauge-trace">The Gauge Trace</h3>
 <p><strong>The carrier is the representation.</strong> $\operatorname{Tr}_R(T^aT^b)=T(R)\delta^{ab}$ and $\operatorname{Tr}(F\wedge F)$ count the dimension of a gauge factor, and the anomaly coefficients are linear in those dimensions. The family is $265$ sites in physics.</p>
 <p><strong>The factor is the Dynkin index.</strong> It is $\tfrac12$ for the fundamental of $\mathrm{SU}(2)$ and it is not $2$. <em>Anomalies and Anomaly Cancellation</em> says explicitly that its trace is the matrix trace on the gauge factor and not the informational trace, and the pass keeps that sentence and every site it governs.</p>
@@ -454,7 +467,7 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <p><strong>The survivor words are counted, in the $264$ files.</strong> <em>traceless</em> $336$, <em>traces</em> $122$, <em>trace-preserving</em> $62$, <em>trace-one</em> $48$, <em>traced</em> $25$, <em>tracelessness</em> $23$, <em>trace-reversal</em> $20$, <em>trace-reversed</em> $16$, <em>trace-free</em> $15$. Most of the $336$ are tensor statements and stay. The $48$ uses of <em>trace-one</em> are the normalisation of a state, and they are the largest single rename: <em>unit scalar part</em>.</p>
 <p><strong>The rename is the reason the passes are file by file.</strong> A symbol can be substituted by a pattern; a word cannot, because the same word carries the surviving senses in the same file. This is the cost of §<em>The Cost</em>, and it is larger than the symbol count suggests.</p>
 <h2 id="the-record">The Record</h2>
-<p><strong>Twelve files are migrated, and the two tests of §<em>The Criterion</em> decided every site.</strong></p>
+<p><strong>Seventeen files are migrated, and the two tests of §<em>The Criterion</em> decided every site.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -468,14 +481,20 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <tr>
 <td><em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em></td>
 <td>$48$</td>
-<td>$46$</td>
-<td>the tensor trace and the factor traces</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Exercise: Entanglement Entropy and the Partial Trace</em></td>
+<td>$43$</td>
+<td>$7$</td>
+<td>the density-matrix route, where $\rho$ and $M$ are matrices</td>
 </tr>
 <tr>
 <td><em>Exercise: The Reduced State of an Entangled Subsystem</em></td>
 <td>$41$</td>
-<td>$20$</td>
-<td>the partial trace $\mathrm{Tr}_2$, and the matrix trace of the standard step</td>
+<td>$11$</td>
+<td>the same matrix route</td>
 </tr>
 <tr>
 <td><em>States, Observables and the Born Weight</em></td>
@@ -486,11 +505,23 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <tr>
 <td><em>Strong Subadditivity</em></td>
 <td>$38$</td>
-<td>$35$</td>
-<td>the tensor trace and the partial traces</td>
+<td>$13$</td>
+<td>the trace on $\rho_{AB}$, the CPTP maps, the matrix partial trace</td>
+</tr>
+<tr>
+<td><em>Two Spin-Half Particles</em></td>
+<td>$36$</td>
+<td>$0$</td>
+<td>nothing</td>
 </tr>
 <tr>
 <td><em>Quantum Physics in Biquaternionic Form</em></td>
+<td>$35$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>The Berry Phase and Geometric Phases</em></td>
 <td>$35$</td>
 <td>$0$</td>
 <td>nothing</td>
@@ -504,8 +535,8 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <tr>
 <td><em>Entanglement Entropy and the Replica Trick</em></td>
 <td>$28$</td>
-<td>$9$</td>
-<td>the partial trace and the replica moments</td>
+<td>$0$</td>
+<td>nothing</td>
 </tr>
 <tr>
 <td><em>Quantum Thermodynamics in Biquaternionic Form</em></td>
@@ -516,14 +547,26 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 <tr>
 <td><em>Quantum Teleportation</em></td>
 <td>$25$</td>
-<td>$23$</td>
-<td>the trace on $\mathbb{B}^{\otimes3}$</td>
+<td>$0$</td>
+<td>nothing</td>
 </tr>
 <tr>
 <td><em>The Modular Hamiltonian and the First Law</em></td>
 <td>$24$</td>
-<td>$1$</td>
-<td>one partial trace</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Entangled Subsystems</em></td>
+<td>$23$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Exercise: Two Spins in the Singlet State</em></td>
+<td>$23$</td>
+<td>$0$</td>
+<td>nothing</td>
 </tr>
 <tr>
 <td><em>No-Cloning and the Algebraic Obstruction</em></td>
@@ -539,12 +582,13 @@ and everywhere else the number is written and the symbol is not. Canonicity is a
 </tr>
 </tbody>
 </table></div>
-<p><strong>Twelve files, $354$ sites, $220$ replaced and $134$ kept.</strong> Every file kept its line count, its heading count and its table-row count, and the build produced its tables.</p>
-<p><strong>Seven files are single-element articles, and the symbol left all of them.</strong> In these the state, the observable, the effect and the projector are elements of $\mathbb{B}_\Psi$, every product is read in $\mathrm{Sc}$, and the only trace left is the partial trace, which is a map and not a reading.</p>
-<p><strong>Five files are tensor-power articles, and the symbol stayed in them almost everywhere.</strong> <em>The Bell Basis</em> keeps $46$ of $48$: its states are elements of $\mathbb{B}\otimes\mathbb{B}$, and its story is the orthonormality of four idempotents with respect to $\mathrm{Tr}(XY)$. <em>Quantum Teleportation</em> keeps $23$ of $25$: its arena is $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, and the three partial traces need the full trace to be defined. The rewrites that did land in these files are the single-element ones: the purity of a reduced state, and the notation rows that still carried the bridge.</p>
-<p><strong>The strongest finding of the session is that the family is not a family.</strong> The states family was counted site by site in the argument, and the argument is the same in both kinds of article. What differs is the space: $\mathrm{Sc}$ is the natural reading of one element, and $\mathrm{Tr}$ is the natural reading of a tensor power, where it factorises and $2^n\mathrm{Sc}$ does not.</p>
+<p><strong>Seventeen files, $514$ sites, $483$ replaced and $31$ kept.</strong> Every file kept its line count, its heading count and its table-row count, and the build produced its tables.</p>
+<p><strong>Fourteen files reached zero.</strong> In these the state, the observable, the effect and the projector are elements, every product is read in $\mathrm{Sc}$, and no argument needs a matrix trace.</p>
+<p><strong>Three files keep sites, and every one of them keeps a matrix.</strong> The two exercises of the partial trace keep the standard solution: $\rho$ and $M$ are declared $4\times4$ and $2\times4$ matrices there, and the trace of a matrix is the matrix trace. <em>Strong Subadditivity</em> keeps the same: its density operators $\rho_{AB}$ and its completely positive maps are matrices on a Hilbert space, and its element-level contractions are now written $8\,\mathrm{Sc}$ on the three factors.</p>
+<p><strong>The finding of the session is that the space decides the factor and not the verdict.</strong> <em>The Bell Basis</em> was read as a tensor-power article that had to keep $\mathrm{Tr}(XY)$; it does not. Its four idempotents are elements, $4\,\mathrm{Sc}(\Pi_i\Pi_j)=\delta_{ij}\mathbb{1}_4$ says the same thing, and the arithmetic is shorter. What a tensor power changes is the factor of $2$, one per collapsed factor, and never the decision to keep the symbol.</p>
 <p><strong>The pilot still carries every rewrite of §<em>The Senses</em>.</strong> The Born ratio, the purity, the entropy, the linear entropy, the variance, the unit, the normalisation and the commutator all stand in it, and the identities were re-checked after the edit: the entropy in the form $-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ against $-\sum_i\lambda_i\log\lambda_i$ on $100$ random states, residual $6.7\times10^{-16}$, and the purity and the linear entropy exactly.</p>
 <p><strong>The variance is the trap that was checked hardest, in <em>Quantum Thermodynamics</em>.</strong> The rewrite is $\mathrm{Var}=\mathrm{Tr}(\tilde{Ϛ}\tilde H^2)-(\mathrm{Tr}(\tilde{Ϛ}\tilde H))^2\mapsto2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H))^2$, and the square doubles the factor rather than cancelling it. On $100$ random states the rewritten variance equals the matrix variance exactly, residual $0$, and the partition function $2\,\mathrm{Sc}\exp(-\beta H)$ equals the sum over levels to $2.3\times10^{-13}$.</p>
+<p><strong>Where the corpus stands after the session.</strong> $1\,693$ symbols remain in the $253$ physics articles that still carry one, and $7\,853$ in the repository, where the matrix-algebra categories hold the great majority. The pass continues down the list of §<em>The Cost</em>, heaviest first.</p>
 <h2 id="the-strategy">The Strategy</h2>
 <p><strong>Pass 0: freeze the dictionary.</strong> This article is the dictionary. No article is edited until §<em>The Senses</em> and §<em>The Sites That Need Reading</em> are fixed, because both are the reference the later passes are checked against.</p>
 <p><strong>Pass 1: the bridge lines.</strong> The $59$ bridge sites of the form $\operatorname{Tr}=2\,\mathrm{Sc}$, and nothing else. The symbol is deleted and the number kept, except in the two definition lines. This pass is first because it fixes what every later pass means by the word.</p>

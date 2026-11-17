@@ -140,24 +140,24 @@ $$</p>
 \tilde\Pi_{\mathrm{singlet}} = \frac{1}{4}\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right).
 $$</p>
 <h3 id="step-2-the-reduced-state_1">Step 2: The reduced state</h3>
-<p>The state of particle 1 alone is the <strong>partial trace</strong> of $\tilde\Pi_{\mathrm{singlet}}$ over the second factor:</p>
+<p>The state of particle 1 alone is the <strong>partial scalar part</strong> of $\tilde\Pi_{\mathrm{singlet}}$ in the second factor:</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}}).
+\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}}).
 $$</p>
-<p>The partial trace on $\mathbb{B}\otimes\mathbb{B}$ is defined on the elementary tensor products by</p>
+<p>The operator $\mathrm{Sc}_2$ is the scalar part in the second factor, defined on the elementary tensor products by</p>
 <p>$$
-\mathrm{Tr}_2(a\otimes b) = a \cdot 2\,\mathrm{Sc}(b),
+\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b),
 $$</p>
-<p>and extended by linearity.</p>
+<p>and extended by linearity. The factor $2$ in front of the reduction is the trace of a single qubit, $2\,\mathrm{Sc}(e_t)=2$, paid once when the second factor is collapsed.</p>
 <h3 id="step-3-the-computation_1">Step 3: The computation</h3>
-<p>We compute the partial trace term by term.</p>
+<p>We compute the contraction term by term.</p>
 <p><strong>First term.</strong> $\frac{1}{4}e_t\otimes e_t$ contributes</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot 2\,\mathrm{Sc}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
+2\,\mathrm{Sc}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot 2\,\mathrm{Sc}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
 $$</p>
 <p><strong>Remaining terms.</strong> For $k \in \{x,y,z\}$, the term $\frac{1}{4}\vec e_\eta\otimes \vec e_\eta$ contributes</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_\eta\otimes \vec e_\eta\right) = \frac{1}{4}\vec e_\eta \cdot 2\,\mathrm{Sc}(\vec e_\eta) = \frac{1}{4}\vec e_\eta \cdot 0 = 0,
+2\,\mathrm{Sc}_2\!\left(\frac{1}{4}\vec e_\eta\otimes \vec e_\eta\right) = \frac{1}{4}\vec e_\eta \cdot 2\,\mathrm{Sc}(\vec e_\eta) = \frac{1}{4}\vec e_\eta \cdot 0 = 0,
 $$</p>
 <p>since $\mathrm{Sc}(\vec e_\eta) = 0$ for the pure quaternion units.</p>
 <p>Summing the contributions,</p>
@@ -198,9 +198,9 @@ $$</p>
 <p>$$
 \tilde\Pi_{\mathrm{prod}} = \tilde\Pi_1 \otimes \tilde\Pi_1,
 $$</p>
-<p>with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial trace,</p>
+<p>with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial scalar part,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot 2\,\mathrm{Sc}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
+\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot 2\,\mathrm{Sc}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
 $$</p>
 <p>using $2\,\mathrm{Sc}(\tilde\Pi_1) = 1$ for a normalised idempotent.</p>
 <p>So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec r = \vec e_z$ and purity $1$. The purity and entropy are</p>
@@ -234,7 +234,7 @@ $$</p>
 </table></div>
 <p>The contrast is the operational signature of entanglement: <strong>product states have pure reduced states; entangled states have mixed reduced states</strong>. The more entangled the joint state, the more mixed the reduced state.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The reduced state is obtained by a partial trace.</strong> The partial trace $\mathrm{Tr}_2$ is a linear map $\mathbb{B}\otimes\mathbb{B} \to \mathbb{B}$, defined on elementary tensors by $\mathrm{Tr}_2(a\otimes b) = a\cdot 2\,\mathrm{Sc}(b)$. This is the biquaternion form of the standard partial trace.</p>
+<p><strong>1. The reduced state is obtained by a partial scalar part.</strong> The map $\mathrm{Sc}_2$ is linear from $\mathbb{B}\otimes\mathbb{B}$ to $\mathbb{B}$, with $\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$, and the reduction is $2\,\mathrm{Sc}_2$. The factor $2$ is the trace of the discarded factor, so nothing beyond $\mathrm{Sc}$ and a count of levels is used.</p>
 <p><strong>2. The reduced state of an entangled subsystem is mixed.</strong> The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive elements of unit scalar part. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.</p>
 <p><strong>3. The entanglement is encoded in the tensor-product structure.</strong> The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.</p>
 <p><strong>4. The purity and entropy are natural functions on $\mathbb{B}_{\Psi}$.</strong> Both the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)$ and the entropy $-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ are expressed in terms of the scalar part on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.</p>
@@ -339,11 +339,11 @@ $$</p>
 <td>Singlet idempotent</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}_2(a\otimes b) = a\cdot 2\,\mathrm{Sc}(b)$</td>
-<td>Partial trace over the second factor</td>
+<td>$\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$</td>
+<td>Scalar part in the second factor; the reduction is $2\,\mathrm{Sc}_2$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi,1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{singlet}})$</td>
+<td>$\tilde{Ϛ}_{\Psi,1} = 2\,\mathrm{Sc}_2(\tilde\Pi_{\mathrm{singlet}})$</td>
 <td>Reduced state of particle 1</td>
 </tr>
 <tr>

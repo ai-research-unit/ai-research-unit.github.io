@@ -334,6 +334,55 @@ $$</p>
 <p><strong>The real-linear embedding splits the trace.</strong> The algebra's complex trace is $4b_0$ in the regular carrier. The Dirac carrier is real-linear, and its matrix trace is $4\operatorname{Re}b_0$; the axial trace is $4i\operatorname{Im}b_0$; the sum is the regular trace. The odd sector has zero trace in both.</p>
 <p><strong>Why the pair is needed.</strong> The anomaly and the chiral statements need the vector and axial parts separately. Using the regular trace as if it were the axial trace adds $4\operatorname{Re}b_0$ to $4i\operatorname{Im}b_0$. The article <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em> states the identity, the two coordinates that carry the pair, and the vanishing on the odd sector.</p>
 <p><strong>The sharpest illustration.</strong> For $b=i$, $\operatorname{Tr}_\Delta(i)=0$ and $\operatorname{Tr}_{\Delta,5}(i)=4i$, while $\operatorname{Tr}_{\mathrm{reg}}(i)=4i$. The vector trace does not see the central imaginary; the axial trace sees only it. A reader who assumes that the matrix trace is complex-linear in the Dirac carrier predicts $4i$ for the vector trace and gets the anomaly wrong.</p>
+<h2 id="after-the-pass-what-the-rewritten-articles-say-instead">After the Pass: What the Rewritten Articles Say Instead</h2>
+<p><strong>A reader who meets a migrated article meets $\mathrm{Sc}$ where the older text had $\operatorname{Tr}$.</strong> The change is a spelling of rule 1 and rule 2, not a change of mathematics. The substitution is fixed, and it is worth writing out once.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>argument of the old symbol</th>
+<th>the migrated text</th>
+<th>the factor</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one element $\tilde X$ of $\mathbb{B}$</td>
+<td>$2\,\mathrm{Sc}(\tilde X)$</td>
+<td>$2$</td>
+<td>the $2\times2$ image</td>
+</tr>
+<tr>
+<td>two factors $x\otimes y$</td>
+<td>$4\,\mathrm{Sc}(x)\,\mathrm{Sc}(y)$</td>
+<td>$4$</td>
+<td>the product of two carriers</td>
+</tr>
+<tr>
+<td>$n$ factors</td>
+<td>$2^n\,\mathrm{Sc}(\cdots)$</td>
+<td>$2^n$</td>
+<td>one factor of $2$ per factor collapsed</td>
+</tr>
+<tr>
+<td>a partial trace in the factor $B$</td>
+<td>$2\,\mathrm{Sc}_B(\cdots)$</td>
+<td>$2$</td>
+<td>the dimension of the discarded factor</td>
+</tr>
+<tr>
+<td>a matrix $M$, $\rho$, $U$, a generator, a field strength</td>
+<td>unchanged</td>
+<td>$1$</td>
+<td>the argument is already an array</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The factor is the whole content of the rewrite.</strong> Deleting $\operatorname{Tr}$ and writing $\mathrm{Sc}$ alone would halve every entropy, every purity and every normalisation. The pass therefore writes the factor out on every line, and a line without one is a defect.</p>
+<p><strong>The four forms survive the pass unchanged, because they were half-traces all along.</strong> $P(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is what remains of $\operatorname{Tr}(\tilde Q_1\tilde Q_2)$ after the factor $2$ is absorbed, and the other three forms sit the conjugation in the first slot, the second or both. So a migrated article that writes $2\,\mathrm{Sc}(\tilde X\tilde Y)$ writes twice the plain form, and the four norms $P$, $N$, $H$ and $\mathrm{Kr}$ are read off the same product with the conjugation moved.</p>
+<p><strong>The pass does not touch a matrix.</strong> Where the article declares a $4\times4$ density matrix, a coefficient matrix or a generator of a representation, the symbol stays and the carrier is the array itself. The two exercises on the partial trace keep their matrix solutions for exactly this reason, and <em>Strong Subadditivity</em> keeps the trace on $\rho_{AB}$.</p>
+<p><strong>The surviving uses are therefore findable.</strong> After the pass the string <code>\operatorname{Tr}\tilde</code> returns nothing in the migrated articles, and every remaining occurrence of a trace symbol in those files has a matrix or another named carrier in its argument.</p>
+<p><strong>The migration is recorded file by file.</strong> <em>Trace Migration: The Purge of the Informational Trace</em>, the internal companion, holds the substitution map, the traps, the per-file counts and the order of the passes. This article holds the reading that makes the map correct.</p>
 <h2 id="the-rules">The Rules</h2>
 <p>The corpus is consistent when the following nine rules are kept. Each rule is a sentence that can be checked against an article.</p>
 <ol>
@@ -429,6 +478,30 @@ $$</p>
 <td>the endomorphism $T^\mu{}_\nu$</td>
 <td>$\operatorname{tr}(T^\mu{}_\nu)$</td>
 <td>$1$</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}$</td>
+<td>one element of $\mathbb{B}$</td>
+<td>$2Q_t$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$4\,\mathrm{Sc}$</td>
+<td>two factors $x\otimes y$</td>
+<td>$4x_ty_t$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$2^n\,\mathrm{Sc}$</td>
+<td>the tensor power $\mathbb{B}^{\otimes n}$</td>
+<td>$2^n$ times the scalar part</td>
+<td>$2^n$</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}_B$</td>
+<td>a tensor factor</td>
+<td>reduction onto the rest</td>
+<td>$2$</td>
 </tr>
 <tr>
 <td>$\operatorname{tr}(XY)$</td>
