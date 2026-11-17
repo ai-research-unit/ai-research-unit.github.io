@@ -176,14 +176,14 @@ $$</p>
 (\psi D)^{\natural}=D^{\natural}\,\psi^{\natural}.
 $$</p>
 <p>Read forwards, conjugating a right action gives a left action of the conjugated operator. Read backwards, using $\natural^{2}=\mathrm{id}$, a right action is the conjugate of a left action — the two lines of the statement above.</p>
-<p><strong>In matrix form it is one congruence.</strong> With $N=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,</p>
+<p><strong>In matrix form it is one congruence.</strong> With $\mathsf C=\operatorname{diag}(1,-1,-1,-1)$ the matrix of $\natural$ on a coordinate column,</p>
 <p>$$
-N\,R_D\,N=L_{D^{\natural}},
+\mathsf C\,R_D\,\mathsf C=L_{D^{\natural}},
 \qquad
-N\,L_D\,N=R_{D^{\natural}},
+\mathsf C\,L_D\,\mathsf C=R_{D^{\natural}},
 \qquad\text{both at residual }0 .
 $$</p>
-<p>$N$ is the change of basis that exchanges the two families, and $N^{\mathsf T}N=I$, $\det N=-1$.</p>
+<p>$\mathsf C$ is the change of basis that exchanges the two families, and $\mathsf C^{\mathsf T}\mathsf C=I$, $\det\mathsf C=-1$.</p>
 <p><strong>On an equation.</strong> Take $\psi D=m\chi$ with $m$ central, so $m^{\natural}=m$, and conjugate both sides:</p>
 <p>$$
 D^{\natural}\,\psi^{\natural}=m\,\chi^{\natural}.
@@ -496,13 +496,13 @@ $$</p>
 \tilde\nabla\tilde\nabla^{\natural}\Psi_L=m^{2}\Psi_L,
 $$</p>
 <p>that is $(\Box-m^{2})\Psi_R=0$ and $(\Box-m^{2})\Psi_L=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.</p>
-<p><strong>The symbol.</strong> On a plane wave the gradient acts as left multiplication by the momentum element, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^{2}-\lvert\vec p\rvert^{2}=p^{2}$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,</p>
+<p><strong>The symbol.</strong> On a plane wave the gradient acts as left multiplication by the momentum element, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^{2}-\lvert\vec p\rvert^{2}$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,</p>
 <p>$$
 \tilde K\,w_R=m\,w_L,
 \qquad
 \tilde K^{\natural}\,w_L=m\,w_R,
 $$</p>
-<p>and the two lines share one condition. Composing them returns $\tilde K^{\natural}\tilde K\,w=p^{2}w$, so the symbol is singular exactly on $p^{2}=m^{2}$ and nowhere else.</p>
+<p>and the two lines share one condition. Composing them returns $\tilde K^{\natural}\tilde K\,w=\bigl(p_t^{2}-\lvert\vec p\rvert^{2}\bigr)w$, so the symbol is singular exactly on $p_t^{2}-\lvert\vec p\rvert^{2}=m^{2}$ and nowhere else.</p>
 <p><strong>The inverse is one scalar and two kernels.</strong> With $G$ the Green's function of the d'Alembertian, $(\Box-m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels</p>
 <p>$$
 S_L=i\bigl(\tilde\nabla+m\bigr)G,
@@ -538,8 +538,8 @@ $$</p>
 (\tilde Q_1\tilde Q_2)\overleftarrow{\tilde\nabla}=\sum_{\mu\in\{t,x,y,z\}}\Bigl(\frac{\partial\tilde Q_1}{\partial R_\mu}\tilde Q_2+\tilde Q_1\frac{\partial\tilde Q_2}{\partial R_\mu}\Bigr)e_\mu ,
 $$</p>
 <p>with the unit after the bracket. It does not pass to the left of $\tilde Q_2$: that is a commutation with the units, allowed only when $\tilde Q_2$ is central. Nor is the rule $\sum_\mu(\partial\tilde Q_1/\partial R_\mu)e_\mu\tilde Q_2$, which differs from the first term by the defect $\sum_\mu(\partial\tilde Q_1/\partial R_\mu)[\tilde Q_2,e_\mu]$. That is the case §<em>The Two Sides and the Renaming Theorem</em> excludes, and the case the integration articles meet. There the derivative is named $\vec\nabla^{R}$ after the factor it differentiates, and the name is a position, not a second operator.</p>
-<p><strong>The slots.</strong> The transposition is the exchange of the two slots of a basis operator, read on a differential operator. In the language of <em>Operator Chirality on the Biquaternion Algebra</em>, §<em>Conjugation Exchanges the Sides</em>, the map that carries a left multiplier to a right multiplier is $\mathsf C$, the conjugation written as a congruence, $\mathsf C L(a^{\natural})\mathsf C=R(a)$, which in the axis-free frame is the switch $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$ and is the $N$ of the matrix form above. A left action of the gradient and a right action of the same gradient therefore have arrays that agree up to that sign and that order, which is where the phases of the two sides come from.</p>
-<p><strong>What it is not.</strong> Not a transpose without conjugation: $N$ is not the identity, and $N^{\mathsf T}N=I$ with $\det N=-1$ make the congruence a congruence and not a similarity. Not the adjoint either: the dagger carries the integration by parts and the boundary term, while $\natural$ carries the invertibles alone at fixed coordinate; the two agree on the gradient, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and part on a general element.</p>
+<p><strong>The slots.</strong> The transposition is the exchange of the two slots of a basis operator, read on a differential operator. In the language of <em>Operator Chirality on the Biquaternion Algebra</em>, §<em>Conjugation Exchanges the Sides</em>, the map that carries a left multiplier to a right multiplier is $\mathsf C$, the conjugation written as a congruence, $\mathsf C L(a^{\natural})\mathsf C=R(a)$, which in the axis-free frame is the switch $\mathsf D=\operatorname{diag}(1,-1,-1,-1)$ and is the $\mathsf C$ of the matrix form above. A left action of the gradient and a right action of the same gradient therefore have arrays that agree up to that sign and that order, which is where the phases of the two sides come from.</p>
+<p><strong>What it is not.</strong> Not a transpose without conjugation: $\mathsf C$ is not the identity, and $\mathsf C^{\mathsf T}\mathsf C=I$ with $\det\mathsf C=-1$ make the congruence a congruence and not a similarity. Not the adjoint either: the dagger carries the integration by parts and the boundary term, while $\natural$ carries the invertibles alone at fixed coordinate; the two agree on the gradient, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and part on a general element.</p>
 <p><strong>Verified.</strong> On random polynomial fields in the four coordinates the boxed line holds at residual $0.0$, the reconstruction from the conjugate at $0.0$, the chiral instance at $0.0$, and the product rule above at $0.0$; on $\tilde Q_1=x\vec e_x$ and $\tilde Q_2=\vec e_y$ the naive rule returns $-\vec e_y$ where the product rule returns $+\vec e_y$. The anti-automorphism it uses holds at residual $1.0\times10^{-15}$ over $200$ random pairs; the automorphism that would be needed if the units were not reversed fails at $2.7\times10^{1}$.</p>
 <h2 id="summary">Summary</h2>
 <p>An operator acting by multiplication <strong>is</strong> the element it multiplies by, so its glyph is the glyph of that element and the marks are read on it as on the element. The named operators take an upright capital and carry the element in the subscript: left multiplication $L_{\tilde Q}$, right multiplication $R_{\tilde Q}$, the two-sided $L_{\tilde Q_1}R_{\tilde Q_2}$, the two-sided operator $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, the inner derivation $\operatorname{ad}_{\tilde Q}$ and the automorphism $\operatorname{Ad}_{\tilde Q}$. The two-sided operator with no qualifier is the bilinear one, and it is quadratic in $\tilde Q$, not bilinear. The side of an action is position, $D\psi$ against $\psi D$; the two are exchanged by the quaternion conjugation, $(\psi D)^{\natural}=D^{\natural}\psi^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation.</p>
