@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the polar word into the coupled Proca action and reads what the substitution makes visible. It is the polar companion of *The Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, it depends on *The Coupled Proca Equation in Biquaternionic Polar Variables* for the word and the brackets, and its free counterpart is *The Variational Principle and the Proca Equation in Biquaternionic Polar Variables*.
+This article substitutes the complete polar decomposition into the coupled Proca action and reads what the substitution makes visible. It is the polar companion of *The Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, it depends on *The Coupled Proca Equation in Biquaternionic Polar Variables* for the word and the brackets, and its free counterpart is *The Variational Principle and the Proca Equation in Biquaternionic Polar Variables*.
 
 **The action and the substitution.** The element-form action is
 
@@ -13,7 +13,7 @@ $$
 and the substitution is the four-factor word
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
 with eight real parameters. The word is a bijection onto the N-regular set, so the eight parameters are coordinates on the carrier's units and the substitution loses nothing and adds no constraint.
@@ -58,7 +58,7 @@ with $q$ the eight parameters, $G$ the chart's metric built from the frame, and 
 **The connection's only entry.** The action depends on the connection through the shift of the four-momentum, so in the chart
 
 $$
-\partial_\mu\vartheta_{\mathrm{pha}}\longmapsto\partial_\mu\vartheta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu
+\partial_\mu\theta_{\mathrm{pha}}\longmapsto\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu
 $$
 
 in the phase slot and in the phase slot alone, with the other seven parameters' gradients untouched. That is one substitution, in one coordinate, and it is what the classical $E\mapsto E+ϙc\,a'_t$, $\vec p\mapsto\vec p-q\vec A$ becomes when the phase is a coordinate. The polar companion states the same thing as the identity $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$.
@@ -71,9 +71,9 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **The count.** Eight parameters, eight equations, and each equation is second order. The two equations that the free article displays — one real equation for the modulus and one traceless equation for the frame — are the free case's reduction, and the coupling adds the connection's shift to the phase equation and to the others through it.
 
-**The modulus equation.** The variation with respect to $r$ gives the equation whose free form is a Klein–Gordon equation with a source quadratic in the frame's connection. The coupling does not change its structure: $r$ is a real scalar, the connection is central, and the only effect is through the $\vartheta_{\mathrm{pha}}$ dependence that the phase's equation carries.
+**The modulus equation.** The variation with respect to $r$ gives the equation whose free form is a Klein–Gordon equation with a source quadratic in the frame's connection. The coupling does not change its structure: $r$ is a real scalar, the connection is central, and the only effect is through the $\theta_{\mathrm{pha}}$ dependence that the phase's equation carries.
 
-**The phase equation.** The variation with respect to $\vartheta_{\mathrm{pha}}$ is the chart's version of the constraint. It is not a constraint on the parameters: it is an equation of motion for the phase, and its content is the conservation of the object the phase's momentum is made of. That is the difference between this chart and the first-order charts, and the article states it plainly: in a first-order theory the phase's variation gives a *constraint*, because the phase's velocity appears linearly; in a second-order theory it gives an *equation*, because the phase's velocity appears squared and its momentum is a genuine momentum.
+**The phase equation.** The variation with respect to $\theta_{\mathrm{pha}}$ is the chart's version of the constraint. It is not a constraint on the parameters: it is an equation of motion for the phase, and its content is the conservation of the object the phase's momentum is made of. That is the difference between this chart and the first-order charts, and the article states it plainly: in a first-order theory the phase's variation gives a *constraint*, because the phase's velocity appears linearly; in a second-order theory it gives an *equation*, because the phase's velocity appears squared and its momentum is a genuine momentum.
 
 **The frame equations.** The variations with respect to the rapidity, the two boost angles, the rotor angle and the two rotor angles are the frame's equations. They are the chart's version of the traceless part of the element form's equation, they carry the curvature, and the article states their structure and not their explicit form: six equations, coupled through the metric, with the connection entering only through the phase.
 
@@ -85,7 +85,7 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 $$
 \lambda\tilde A
-=r\,e^{i(\vartheta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+=r\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 exactly, with the other seven parameters fixed: the gauge transformation is the translation of one coordinate. The numerical check is exact to $10^{-16}$.
@@ -94,16 +94,16 @@ exactly, with the other seven parameters fixed: the gauge transformation is the 
 
 **The two-term structure of the invariance.** The mass term is invariant under a constant phase translation because it does not depend on the phase at all in the chart: the phase cancels in $\tilde A^{*}\tilde A^{\natural}$. The field term is invariant because it depends on the phase's gradient and a constant translation does not move a gradient. So in the chart the two invariants have visibly different reasons, and the element form's single computation splits into two.
 
-**The range caveat.** A finite translation may carry $\vartheta_{\mathrm{pha}}$ outside $(-\pi/2,\pi/2]$, and the word's first factor is then not in the chart's normal form. The field is unaffected and the chart is; the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The polar companion makes the same remark for the same reason.
+**The range caveat.** A finite translation may carry $\theta_{\mathrm{pha}}$ outside $(-\pi/2,\pi/2]$, and the word's first factor is then not in the chart's normal form. The field is unaffected and the chart is; the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The polar companion makes the same remark for the same reason.
 
 **What the chart does not need.** A Lagrange multiplier for the Lorenz condition. The condition is the trace of the equation and it is a consequence, not a constraint to be imposed, and in the chart it is the statement that the divergence of the word vanishes. A formulation that imposed it with a multiplier would be imposing an equation that the variation already gives, and the article records the redundancy rather than using it.
 
 ## The Currents in the Chart
 
-**The charge is the momentum conjugate to the phase.** The action depends on $\vartheta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
+**The charge is the momentum conjugate to the phase.** The action depends on $\theta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
 
 $$
-\varrho=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\vartheta_{\mathrm{pha}})}
+\varrho=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\theta_{\mathrm{pha}})}
 =\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},t}\tilde A\bigr),
 $$
 
@@ -158,17 +158,17 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, phase, boost, rotor |
-| $q=(\ln r,\vartheta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})$ | The eight parameters |
-| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ |
-| $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
+| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, phase, boost, rotor |
+| $q=(\ln r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})$ | The eight parameters |
+| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,r^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $G^{ab}(q)$ | The chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
 | $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
-| $\partial_\mu\vartheta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |
-| $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\vartheta_{\mathrm{pha}}$ |
-| $\varrho=\partial\mathcal{L}/\partial(\partial_{r'_t}\vartheta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
+| $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |
+| $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
+| $\varrho=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 
@@ -180,7 +180,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free word, its branches and its two brackets.
 - [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the first-order companion and its constrained system.
 - [The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the standard Madelung case and the contrast.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its parameter count.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its parameter count.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the frame's brackets as fluid variables.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor, the frame and the sigma-model reading of the kinetic term.

@@ -318,7 +318,7 @@ $$
 r=1,\quad \theta_{\mathrm{pha}}=0,\quad \tilde u_{\mathrm r}=e_t,
 $$
 
-with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the word has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.
+with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the complete polar decomposition has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.
 
 **The scale collapse.** Write the rotor on the two idempotents of its axis, $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec e_x)$:
 

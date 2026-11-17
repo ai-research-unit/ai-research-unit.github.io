@@ -39,7 +39,7 @@ $$
 | the four forms and the four algebraic norms, the Gram matrices and the definiteness of each | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the topological norm as the square root of the Hermitian norm and its uniqueness | [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html) |
 | the restriction of the polar factors to the six remarkable subspaces | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
-| the positive definite refinement and its four factors, on the complement of the cone | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the positive definite refinement and its four factors, on the complement of the cone | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the closed forms on the two sectors of the cone, where the second factor is rank one | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 
 ## The Results in Brief
@@ -248,7 +248,7 @@ $$
 \tilde{Ϛ}_{\Psi,Q}=\tfrac12\bigl(e_t+i\tanh\Xi\ \vec u_{\mathrm b}\bigr),
 $$
 
-with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. The phase, the rotor angle and the rotor axis do not appear, and neither does the scale. Three of the four factors of the polar word leave no trace in the state; the fourth is the state.
+with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. The phase, the rotor angle and the rotor axis do not appear, and neither does the scale. Three of the four factors of the complete polar decomposition leave no trace in the state; the fourth is the state.
 
 **The purity is a function of the rapidity alone.**
 

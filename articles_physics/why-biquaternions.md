@@ -171,7 +171,7 @@ $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-a scale, a central phase, a boost and a spatial rotor ([The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html)). The derivative of the word separates into four brackets with no remainder, and in the scalar case the four collapse to two: a continuity equation for the density and a Hamilton–Jacobi equation with a quantum potential. That pair is Madelung's, and its relativistic form is the spin-zero case of Takabayasi's hydrodynamics ([The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html)).
+a scale, a central phase, a boost and a spatial rotor ([The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)). The derivative of the word separates into four brackets with no remainder, and in the scalar case the four collapse to two: a continuity equation for the density and a Hamilton–Jacobi equation with a quantum potential. That pair is Madelung's, and its relativistic form is the spin-zero case of Takabayasi's hydrodynamics ([The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html)).
 
 The scalar pair closes because there is nothing else to close. A scalar field has no frame to vary: its word is a scale and an angle, so its derivative has two brackets and the equation relates them. The Dirac field has four factors, and the four brackets are the subject of the next section.
 
@@ -197,7 +197,7 @@ Where the other side of the multiplication does appear is the mass, and only the
 
 ### The word and its four brackets
 
-With the field written in the polar word, the derivative takes the form
+With the field written in the complete polar decomposition, the derivative takes the form
 
 $$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
@@ -468,7 +468,7 @@ The corpus articles, in the order in which this article uses them:
 - [What the Biquaternion Algebra Cannot Do](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html). O17 on the declared direction and O22 on the chirality-blindness of multiplication.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html). The parity list, and what a test would have to be.
 - [Conceptual Conventions](conceptual-conventions.html). The status of the $2+2$ split and of the algebra's own structures.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html). The word, its domain and its four factors.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html). The word, its domain and its four factors.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html). The two-factor decomposition that survives on the cone.
 
 The literature:

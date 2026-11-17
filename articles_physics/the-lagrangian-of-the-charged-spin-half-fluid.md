@@ -33,7 +33,7 @@ and the first term is central imaginary while the second is Hermitian with a rea
 | boost | Hermitian | the rapidity's connection | $ϙ\vec A/\hbar$ in the spatial slots |
 | rotor | real vector | $\vec\omega_{\mathrm r}$'s connection | $0$ |
 
-**The two zeros are the article's first result and they are structural.** The scale is real and the connection has no real scalar part; the rotor is a real vector and the connection has no real vector part. **No cancellation occurs and no small parameter is used**: the two brackets the coupling cannot reach are the two factors of the word that carry the fluid's density and its spin.
+**The two zeros are the article's first result and they are structural.** The scale is real and the connection has no real scalar part; the rotor is a real vector and the connection has no real vector part. **No cancellation occurs and no small parameter is used**: the two brackets the coupling cannot reach are the two factors of the complete polar decomposition that carry the fluid's density and its spin.
 
 **This is the type argument of the block's charged articles, in its most economical form.** The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.
 

@@ -213,4 +213,4 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 - [Relativistic Mechanics from the Dirac Wave](relativistic-mechanics-from-the-dirac-wave.html), for the velocity's transport, the Lorentz force and the precession.
 - [The Non-Quantum Limit and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), the scalar companion, where order zero is a mass shell and nothing else.
 - [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.

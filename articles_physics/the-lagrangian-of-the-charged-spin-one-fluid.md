@@ -64,7 +64,7 @@ $$
 
 and the right-hand side is not zero, is imaginary, and carries the carrier's phase. **That is the precise sense in which the condition ceases to be continuity**: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.
 
-**The block's display is this statement in the algebra.** [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. **Read as a continuity equation it says that the fluid's density is not conserved by the flow**, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
+**The block's display is this statement in the algebra.** [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. **Read as a continuity equation it says that the fluid's density is not conserved by the flow**, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.
 
 **Three consequences, and the article states them as losses.**
 
@@ -138,7 +138,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 | $k_m=mc/\hbar$ | Mass wave number |
 | $ϙ$ | Coupling; minus the electric charge |
 | $\lambda=\exp(iϙ\Gamma/\hbar)$ | The external gauge element; a symmetry |
-| $\vartheta_{\mathrm{pha}}$ | The carrier's phase; appears squared in the divergence |
+| $\theta_{\mathrm{pha}}$ | The carrier's phase; appears squared in the divergence |
 | $\mathcal L_{\mathrm{gco}}$ | The Lagrangian density in the fluid variables with the connection |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
@@ -148,4 +148,4 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 - Wolfgang Pauli, "Relativistic field theories of elementary particles," *Reviews of Modern Physics* **13** (1941) 203–232, for the constraint counting of a massive vector field and the fate of its gauge freedom.
 - John R. Oppenheimer and Julian S. Schwinger, "On the interaction of mesotrons and nuclear particles," *Physical Review* **60** (1941) 150, for the constraint structure of a massive vector coupled to an external field.
 - Friedrich W. Hehl, "On the kinematics of the torsion of space-time," *Foundations of Physics* **15** (1985) 451–471, for a unit vector's covariant vorticity, its transversality and its rank.
-- The companion articles: [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the equations and the divergence $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$; [The Lagrangian of the Spin-One Fluid](the-lagrangian-of-the-spin-one-fluid.html), the free rung where the condition is continuity; and [The Lagrangian of the Charged Spin-Half Fluid](the-lagrangian-of-the-charged-spin-half-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.
+- The companion articles: [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), the same action in the chart and the branch's role; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), the equations and the divergence $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$; [The Lagrangian of the Spin-One Fluid](the-lagrangian-of-the-spin-one-fluid.html), the free rung where the condition is continuity; and [The Lagrangian of the Charged Spin-Half Fluid](the-lagrangian-of-the-charged-spin-half-fluid.html), the rung where the coupling reaches neither the density's nor the spin's norm.

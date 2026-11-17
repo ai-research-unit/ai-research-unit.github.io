@@ -453,7 +453,7 @@ which is the two-term writing read as an algebra homomorphism. It is the exact a
 
 ### The Modulus Is Zero
 
-**The polar word begins with a square root that does not exist.**
+**The complete polar decomposition begins with a square root that does not exist.**
 
 $$
 \Rho=\sqrt{N}=0,\qquad

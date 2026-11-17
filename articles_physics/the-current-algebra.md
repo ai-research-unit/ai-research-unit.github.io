@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch.** The bilinears of the word are the current, the spin and the quaternionic norm. The current is $\rho\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho\frac{\hbar}{2}i\hat s$ and it reads the scale and the rotor. The norm is $\Rho^{2}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
+**The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch.** The bilinears of the complete polar decomposition are the current, the spin and the quaternionic norm. The current is $\rho\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho\frac{\hbar}{2}i\hat s$ and it reads the scale and the rotor. The norm is $\Rho^{2}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
 
 **The phase and the spin therefore never meet in one bilinear.** That sentence is the structural fact of this article. A current cannot carry spin information and a spin cannot carry phase information, not because the field is arranged that way but because the two factors are of types that no single quadratic product can reach at once. The algebra's own candidate for a current, $i\tilde\Xi\tilde\Xi^{*}$, does not repair this: it cancels the rotor and keeps the boost, so it is a second reading of the same two factors with the spatial part reversed.
 

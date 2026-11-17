@@ -14,7 +14,7 @@ $$
 
 and the same article states what the pair does not need: no column, no anticommuting array, no separate state space, no Peirce decomposition, no chiral projector, no Clifford algebra, no second-order equation. The minimal left ideal is not on that list: the idempotent is a polynomial in the frame's third unit, so the ideal is a carrier and not a definition. The field is the element, the operator is the element, and the multiplication is the algebra's own. The subscript `sp` is the corpus's caret for the spinor role, beside `scl` for the scalar role and `fop` for the field operator, as the caret table of *Algebra and Element Conventions* fixes it.
 
-This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form it takes in *Exponential Polar Decomposition on the N-Regular Sector*:
+This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *Exponential Polar Decomposition on the N-Regular Sector*:
 
 $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -41,7 +41,7 @@ The word has eight real parameters against the element's eight real components, 
 **The domain is the whole of the first qualification of this article.** In the corpus's vocabulary, an element is $N$-regular when $N\neq0$ and $N$-degenerate when $N=0$, and $N$ is the determinant (*The Meaning of N-Regularity and Degeneracy*). The word is a parametrisation of the group of invertibles, so
 
 $$
-\boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular},\;}
+\boxed{\;\text{the complete polar decomposition of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular},\;}
 $$
 
 and it fails on every $N$-degenerate element. There is no third case and no extension of the word to $N=0$. Every statement of this article is therefore a statement about the $N$-regular field, and a field that reaches the zero-divisor cone has no polar form at all. §*Where the Word Ends* says which fields those are and what survives there.
@@ -83,7 +83,7 @@ The value is not operator chirality. Operator chirality is the side on which an 
 
 ### The Word
 
-The four factors and their types are those of *The Polar Decomposition of an N-Regular Biquaternion*, and this article repeats none of their theory.
+The four factors and their types are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, and this article repeats none of their theory.
 
 | # | factor | range | type |
 | --- | --- | --- | --- |
@@ -533,4 +533,4 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 - Walter Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 1990), for the Dirac equation, its current and the structure the pair reproduces.
 - Claude Daviau, "Équations de Dirac et de Maxwell en algèbre de Clifford," *Annales de la Fondation Louis de Broglie* **39** (2014), for a field read as an element with eight real parameters, which is the count this article uses.
 
-- The companion articles: [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same word applied to the non-relativistic equation; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the scalar relativistic equation; [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word; [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form, the sign $\varepsilon$ and the rigidity constraint of $\Sigma_{10}$; and [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
+- The companion articles: [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the same word applied to the non-relativistic equation; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the scalar relativistic equation; [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word; [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form, the sign $\varepsilon$ and the rigidity constraint of $\Sigma_{10}$; and [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.

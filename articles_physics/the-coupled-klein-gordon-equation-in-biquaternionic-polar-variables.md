@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the polar word into the coupled Klein–Gordon equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Klein–Gordon Equation in Biquaternionic Form*, and it depends on that article for the equation, on *The Klein–Gordon Equation in Biquaternionic Polar Variables* for the word, the pair of real equations and the quantum potential, and on *The Polar Decomposition of an N-Regular Biquaternion* for the word itself.
+This article substitutes the complete polar decomposition into the coupled Klein–Gordon equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Klein–Gordon Equation in Biquaternionic Form*, and it depends on that article for the equation, on *The Klein–Gordon Equation in Biquaternionic Polar Variables* for the word, the pair of real equations and the quantum potential, and on *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word itself.
 
 **The substitution.**
 
@@ -302,7 +302,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 - [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the action in the chart and the charge as a momentum.
 - [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the free polar action and its metric.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the same type statement in the vector sector.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Spin-Zero Fluid](the-spin-zero-fluid.html), for the hydrodynamic reading of the pair.

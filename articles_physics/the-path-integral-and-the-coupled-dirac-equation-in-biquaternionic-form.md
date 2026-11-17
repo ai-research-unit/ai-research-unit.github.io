@@ -274,7 +274,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 
 ## Further Reading
 
-- [The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for this kernel read in the polar word.
+- [The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for this kernel read in the complete polar decomposition.
 - [The Path Integral and the Dirac Equation in Biquaternionic Form](the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html), for the free construction this article couples: the pair, the spin factor, the checkerboard and the measure.
 - [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html), for the action used here and for the current that the action produces.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the equation, the covariance proof, and the constant-potential solutions.

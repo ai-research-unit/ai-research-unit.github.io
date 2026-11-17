@@ -28,7 +28,7 @@ so the proper density is the Euclidean size divided by the fluid's own Lorentz f
 
 **The two cases.** An element is **$N$-regular** when $N(\tilde Q)\neq0$, which is exactly when it is invertible; it is **$N$-degenerate** when $N(\tilde Q)=0$ with $\tilde Q\neq0$, which is a zero divisor [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html). The degenerate set is the **null cone** $\mathcal N$, one complex equation and therefore two real equations, of real codimension two.
 
-**The polar word.** On the regular elements, and only there, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ the central phase, $\tilde U_{\Psi,\mathrm b}$ the **boost factor**, $\tilde u_{\mathrm r}$ the rotor [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html). With $\vec u_{\mathrm b}$ a real unit pure quaternion, $\vec u_{\mathrm b}^{2}=-e_t$, the boost factor is
+**The complete polar decomposition.** On the regular elements, and only there, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ the central phase, $\tilde U_{\Psi,\mathrm b}$ the **boost factor**, $\tilde u_{\mathrm r}$ the rotor [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html). With $\vec u_{\mathrm b}$ a real unit pure quaternion, $\vec u_{\mathrm b}^{2}=-e_t$, the boost factor is
 
 $$
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
@@ -198,7 +198,7 @@ $$
 
 ## On the Cone the Ratio Has No Value
 
-**The polar word exists exactly on the $N$-regular set**, so on the cone the ratio $\langle\tilde\Xi\rangle_{*}/\lvert N(\tilde\Xi)\rvert$ is not merely large: it has no value. **It diverges along every approach to a nonzero point of the cone**, that is along every path on which the limiting Euclidean size is nonzero; a path whose amplitude also goes to zero can give any ratio at all, and carries no information, because it leaves the field's own value as well as the chart. The two numbers behave in opposite ways at fixed field size:
+**The complete polar decomposition exists exactly on the $N$-regular set**, so on the cone the ratio $\langle\tilde\Xi\rangle_{*}/\lvert N(\tilde\Xi)\rvert$ is not merely large: it has no value. **It diverges along every approach to a nonzero point of the cone**, that is along every path on which the limiting Euclidean size is nonzero; a path whose amplitude also goes to zero can give any ratio at all, and carries no information, because it leaves the field's own value as well as the chart. The two numbers behave in opposite ways at fixed field size:
 
 $$
 \rho_{\mathrm{num}}=\lvert N\rvert\longrightarrow0,

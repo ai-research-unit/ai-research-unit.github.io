@@ -250,7 +250,7 @@ $$
 
 **Corollary (the norm deficit).** $\lVert\vec U\rVert^2=\lVert\vec Q\rVert^2/\lvert B\rvert^2\ge1$, with equality exactly when $\vec U$ is real, that is, exactly when $\tilde Q$ is normal.
 
-*Proof.* $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if they do, $Q_k=\varkappa_{\mathrm{phs}} r_k$ with $r_k\in\mathbb{R}$ and $\varkappa_{\mathrm{phs}}^2$ that argument, so $B=\pm\varkappa_{\mathrm{phs}} R$ with $R^2=\sum_kr_k^2$ and $\vec U=\pm(r_x,r_y,r_z)/R$ is real of Euclidean norm one. Since normality is exactly the reality of $\vec U$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*), this is the equality case.
+*Proof.* $\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality; if they do, $Q_k=e^{i\theta_{\mathrm{pha}}}r_k$ with $r_k\in\mathbb{R}$ and $2\theta_{\mathrm{pha}}$ that argument, so $B=\pm e^{i\theta_{\mathrm{pha}}}R$ with $R^2=\sum_kr_k^2$ and $\vec U=\pm(r_x,r_y,r_z)/R$ is real of Euclidean norm one. Since normality is exactly the reality of $\vec U$ (*The Biquaternion Eigenvalue Decomposition*, §*The Hermitian Case*), this is the equality case.
 
 **Corollary (bounded and unbounded flows).** If $B$ is real and $\operatorname{Re}Q_t=0$, the Hermitian norm is bounded between $1$ and $\lVert\vec U\rVert^2$. If $\operatorname{Re}Q_t\neq0$ it is unbounded on one side. If $\operatorname{Im}B\neq0$ it is unbounded on both sides.
 

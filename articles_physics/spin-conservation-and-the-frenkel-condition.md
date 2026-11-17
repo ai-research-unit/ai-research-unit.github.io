@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The spin tensor's conservation law is the rotor's equation of motion read in components, and the Frenkel condition is the statement that the spin has no component along the momentum.** Both statements are framework content: the algebra supplies the first through the rotor's logarithmic derivative, and it supplies the second through the fact that the polar word carries the spin in a rotation and not in a boost.
+**The spin tensor's conservation law is the rotor's equation of motion read in components, and the Frenkel condition is the statement that the spin has no component along the momentum.** Both statements are framework content: the algebra supplies the first through the rotor's logarithmic derivative, and it supplies the second through the fact that the complete polar decomposition carries the spin in a rotation and not in a boost.
 
 **The conservation law.** With the spin element $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ of [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and with the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ — a real vector part, which is what the polar decomposition's fourth factor supplies — the rotor's own equation of motion is
 

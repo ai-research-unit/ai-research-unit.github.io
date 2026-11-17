@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the polar word into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Dirac Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Dirac Equation in Biquaternionic Polar Variables* for the word and the four brackets, and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* for the connection.
+This article substitutes the complete polar decomposition into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Dirac Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Dirac Equation in Biquaternionic Polar Variables* for the word and the four brackets, and *The Covariant Derivative and Gauge Connection in Biquaternionic Form* for the connection.
 
 **The substitution.** Write
 

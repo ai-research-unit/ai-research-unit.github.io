@@ -12,7 +12,7 @@
 
 *The field strength is the vorticity plus a baroclinic term.* Exactly, $F_{\mu\nu}=\partial_\mu r\,u_\nu-\partial_\nu r\,u_\mu+r\,\omega_{\mu\nu}$, so the vorticity is what is left of the field strength when the density gradient is subtracted. The spin-1 field is therefore the one case of the three in which the fluid's vorticity and the field's own spin are two readouts of one tensor.
 
-**What the word cannot see is the spin, and that is the sharpest contrast with the spinor case.** The Dirac word carries eight parameters and the rotor is one of them, so the spin is in the fluid by construction. The Proca word carries four and none of them is an orientation: the spin lives in the complex structure of $\mathbb{B}_\Phi$, which the word does not touch. A fluid whose variables do not contain the spin cannot have a spin transport law, and this one does not.
+**What the complete polar decomposition cannot see is the spin, and that is the sharpest contrast with the spinor case.** The Dirac word carries eight parameters and the rotor is one of them, so the spin is in the fluid by construction. The Proca word carries four and none of them is an orientation: the spin lives in the complex structure of $\mathbb{B}_\Phi$, which the word does not touch. A fluid whose variables do not contain the spin cannot have a spin transport law, and this one does not.
 
 **The article is a reading and not a derivation.** The word, its two branches, the logarithmic derivative, the two polar equations and the Lorenz display are the polar article's. What is added here is the fluid identification, the Euler equation, the decomposition of the field strength, the equation of state, and the comparison with the other two fluid articles of the block.
 

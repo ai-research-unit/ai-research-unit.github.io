@@ -89,7 +89,7 @@ $$
 
 **The freedom is the freedom to move a curl from one term to the other.** Adding $\sum_\nu\partial_\nu A_{\mu\nu}$ to the first term with $A$ antisymmetric and subtracting it from the second leaves the current unchanged, because the two additions cancel identically. Different choices of $A$ give different convection momenta and different spin currents, with the same $J_{\Phi}$.
 
-**The polar word makes one choice and calls it the frame.** With $P_{\Phi}=m\tilde V_{\Phi}$ and the density $\rho$, the convection term is the word's current and the spin term is what remains. That is a definite split, and it is the one the corpus uses. It is not the only one, and the article says so because a reader comparing two formulations will otherwise take a difference of convention for a difference of physics.
+**The complete polar decomposition makes one choice and calls it the frame.** With $P_{\Phi}=m\tilde V_{\Phi}$ and the density $\rho$, the convection term is the word's current and the spin term is what remains. That is a definite split, and it is the one the corpus uses. It is not the only one, and the article says so because a reader comparing two formulations will otherwise take a difference of convention for a difference of physics.
 
 **What the freedom cannot touch is the total angular momentum.** The improvement moves the spin's contribution between the orbital and the intrinsic parts and leaves the sum fixed. That is the Belinfante statement, and it is the reason the corpus can say that its own separation of the two parts by construction is a simplification rather than a loss.
 

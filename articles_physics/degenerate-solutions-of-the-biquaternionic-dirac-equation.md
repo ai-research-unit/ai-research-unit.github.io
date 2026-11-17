@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Dirac Equation in Biquaternionic Polar Variables* reads the Dirac equation through the polar word of the field, and that word exists exactly on the $N$-regular elements. Its domain is the open set $N\neq0$ and its boundary is the cone $N=0$. This article takes the boundary as its subject. It asks what a solution of the Dirac equation looks like when the norm of the field vanishes at a point, and what the equation has to say about such a field.
+*The Dirac Equation in Biquaternionic Polar Variables* reads the Dirac equation through the complete polar decomposition of the field, and that decomposition exists exactly on the $N$-regular elements. Its domain is the open set $N\neq0$ and its boundary is the cone $N=0$. This article takes the boundary as its subject. It asks what a solution of the Dirac equation looks like when the norm of the field vanishes at a point, and what the equation has to say about such a field.
 
 Three results organise the answer, and each corrects a guess that comes naturally.
 

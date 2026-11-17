@@ -273,7 +273,7 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 - [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), for the chart's reading of the coupling without the action.
 - [The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-schrodinger-equation-in-biquaternionic-form.html), for the element-form action and the current as the connection's derivative.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the free flow.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word's bijection on which the closure rests.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word's bijection on which the closure rests.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator's two slots.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation that becomes the chart's gauge direction.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same chart in the spinor case, where the connection reaches all four brackets.

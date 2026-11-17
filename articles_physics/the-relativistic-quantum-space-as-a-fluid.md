@@ -74,7 +74,7 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) and [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) and [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
 
 ### The four variables
 
@@ -125,7 +125,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 **The word is a parametrisation of the invertibles of the algebra, so it exists exactly on the invertibles.** The quaternionic norm is the determinant of the $2\times2$ image, and the invertibles are the elements of nonzero norm,
 
 $$
-\boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular}.\;}
+\boxed{\;\text{the complete polar decomposition of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular}.\;}
 $$
 
 The complement is the zero-divisor cone, a complex hypersurface: two real conditions, of real codimension two and of measure zero. There is no third case and no extension of the word to $N=0$.

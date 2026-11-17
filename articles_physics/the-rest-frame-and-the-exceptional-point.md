@@ -35,7 +35,7 @@ $$
 | the characteristic polynomial, the repeated eigenvalue and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
 | the two predicates, the independence of the cones and the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the Peirce corners, the corner rule and the off-diagonal nilpotents | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
-| the modulus, the unit factor and the polar word on the whole N-regular part | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the modulus, the unit factor and the polar word on the whole N-regular part | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the multiplicative norm, the group of invertibles and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the rank of left and right multiplication, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the exponential and the logarithm in the degenerate regimes | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |

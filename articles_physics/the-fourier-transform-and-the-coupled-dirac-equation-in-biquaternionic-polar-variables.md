@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**In momentum space the coupled Dirac equation separates into two things: what every wave number does on its own, and what the connection does to the set of wave numbers.** *The Coupled Dirac Equation in Biquaternionic Polar Variables* writes the same equation in the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and reads the momentum, the velocity and the spin transport in a background. This article transforms that equation and asks which of its terms are diagonal in the mode label.
+**In momentum space the coupled Dirac equation separates into two things: what every wave number does on its own, and what the connection does to the set of wave numbers.** *The Coupled Dirac Equation in Biquaternionic Polar Variables* writes the same equation in the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and reads the momentum, the velocity and the spin transport in a background. This article transforms that equation and asks which of its terms are diagonal in the mode label.
 
 **The finding is a count.** The kinetic term and the mass term are both diagonal in momentum, in every setting. The kinetic term is diagonal because a derivative is a multiplier at each wave number, and that is a property of the derivative and not of the coefficients. The mass term is diagonal in momentum and off-diagonal in the part label, because it is a constant central coefficient multiplying one part into the other. **The coupling is the only source of mode mixing**, and it mixes exactly when $\tilde A_\Phi$ depends on position.
 

@@ -55,7 +55,7 @@ a copy of the complex line embedded as the scalar part, and it is the centre of 
 
 Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do not commute: $\vec e_x \vec e_y = \vec e_z = -\vec e_y \vec e_x$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{Ζ}$ with $\tilde{Ζ}^2 = -e_t$: either $\tilde{Ζ} = \pm i$ (the central roots), or $\tilde{Ζ} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_x^2 + Q_y^2 + Q_z^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\vec u \in \mathbb{B}_{H}$ (the real quaternion subalgebra $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$), with $|\vec u| = 1$, so $\vec u^2 = -e_t$ and $\vec u^{*} = -\vec u \in \mathbb{B}_{\Phi}$. They are the roots of $-1$ that the algebra itself carries, and each is the axis a rotor turns about. Both $\vec u$ and $i$ square to $-e_t$ and are anti-Hermitian, but $i$ is central and $\vec u$ is not.
 
-The two appear side by side in the polar word of the field,
+The two appear side by side in the complete polar decomposition of the field,
 
 $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},

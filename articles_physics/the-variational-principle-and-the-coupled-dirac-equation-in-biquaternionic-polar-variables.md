@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article substitutes the polar word into the coupled action of *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form* and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.
+This article substitutes the complete polar decomposition into the coupled action of *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form* and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.
 
 **The substitution.** The word
 

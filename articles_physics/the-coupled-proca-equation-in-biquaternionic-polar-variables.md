@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This article substitutes the polar word into the coupled Proca equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Proca Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Proca Equation in Biquaternionic Polar Variables* for the free word and the two brackets, and *The Polar Decomposition of an N-Regular Biquaternion* for the word that the complex carrier requires.
+This article substitutes the complete polar decomposition into the coupled Proca equation and reads what the substitution makes visible. It is the polar companion of *The Coupled Proca Equation in Biquaternionic Form*, and it depends on three articles: the element form of the coupled equation for the equation, *The Proca Equation in Biquaternionic Polar Variables* for the free word and the two brackets, and *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word that the complex carrier requires.
 
 **The substitution.**
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-with $r>0$, $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
+with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
 
 **The word is not the free article's word, and the difference is the article's first point.** The free Proca field is real, its word has two factors and four parameters, and it splits into two branches according to the sign of the Minkowski square. The coupled field is complex, its square is not a sign, the branch split has nothing to split, and the word that replaces it has four factors and eight parameters. The two factors the free word had to drop — the central phase and the rotor — return with the charge, and §*The Word* proves that in the algebra rather than asserting it.
 
@@ -18,7 +18,7 @@ with $r>0$, $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\
 
 *First, the coupling enters the logarithmic derivative as one central scalar per slot.* Because each component of the connection is a central scalar, $\frac{iϙ}{\hbar}A_\mu$ passes through $\tilde A^{-1}$ and joins the logarithmic derivative without disturbing its types. It merges with the two central brackets — the scale and the phase — and it cannot reach either of the two frame brackets. That is a statement of type and not of size: a central scalar cannot produce a real vector part and cannot produce a Hermitian vector.
 
-*Second, the gauge transformation is a translation of one parameter.* Multiplication of the field by a central unit multiplies the word and acts on $\vartheta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the gauge group, and the connection's whole content in the chart is that one coordinate is not physical.
+*Second, the gauge transformation is a translation of one parameter.* Multiplication of the field by a central unit multiplies the word and acts on $\theta_{\mathrm{pha}}$ alone. Infinitesimally that is exact with every other parameter fixed; the check is exact to machine precision. The chart therefore linearises the gauge group, and the connection's whole content in the chart is that one coordinate is not physical.
 
 *Third, the equation in the chart is second order and not first order, and that is where this article parts company with the Dirac and Schrödinger companions.* Those fields are first order in the material time, their actions are first order, and the chart exposes a constrained system whose momenta partly vanish. The Proca field is second order in the material time, its action is second order, and no momentum vanishes identically. The chart therefore has no primary constraint to exhibit, and the honest statement of this article is that the polar form of the coupled Proca theory is a change of coordinates on a second-order problem and not a constraint analysis.
 
@@ -47,14 +47,14 @@ with the rapidity signed on the spacelike branch and the axis locked to the dire
 **The norm of the word.** The quaternionic norm of the coupled word is the phase squared times the scale squared:
 
 $$
-\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}},
+\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}},
 $$
 
 exactly, for every value of the other six parameters. The check is exact to machine precision on random draws. Two consequences follow and they are the article's structural core.
 
 **The N-regular set is $r>0$ and nothing else.** The norm vanishes only at $r=0$, so the chart's domain is the open half-line in $r$ times the six angular parameters, and the zero-divisor cone is the boundary $r=0$. The free article's cone was reached by a lightlike four-vector and it was a genuine boundary of the field; here it is the origin of the polar chart and only that.
 
-**The phase is the argument of the norm, and that is why the charge exists.** For a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$. For a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\vartheta_{\mathrm{pha}}$, a continuous coordinate. The free field's discrete sign and the coupled field's continuous phase are the same slot of the same word, read on the two carriers; the charge is what that slot becomes when it can move continuously.
+**The phase is the argument of the norm, and that is why the charge exists.** For a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$. For a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. The free field's discrete sign and the coupled field's continuous phase are the same slot of the same word, read on the two carriers; the charge is what that slot becomes when it can move continuously.
 
 **The two branches are gone and nothing replaces them.** The free article's branch split is the sign of the norm, and the coupled norm has no sign. There is no third word and no second chart: the four-factor word covers the whole N-regular set of $\mathbb{B}$, both the elements whose Minkowski square is positive and those whose square is negative and those whose square is neither, because the square is now a complex number and complex numbers have no sign.
 
@@ -66,7 +66,7 @@ $$
 \tilde A^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde A
 =\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
 =\frac{\partial\ln r}{\partial R_\mu}
-+i\frac{\partial\vartheta_{\mathrm{pha}}}{\partial R_\mu}
++i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}\Big|_{\text{frame}}
 +\frac{i\,ϙ}{\hbar}A_\mu .
 $$
@@ -77,7 +77,7 @@ The last written term is the frame's share, and the point of the display is that
 
 $$
 \tilde A^{-1}\partial_\mu\tilde A
-=\frac{\partial_\mu r}{r}+i\partial_\mu\vartheta_{\mathrm{pha}}
+=\frac{\partial_\mu r}{r}+i\partial_\mu\theta_{\mathrm{pha}}
 +\tilde u^{-1}\Gamma_\mu\tilde u+\rho_\mu .
 $$
 
@@ -93,7 +93,7 @@ $$
 \hbar\vec\kappa=\vec p-q\vec A,
 $$
 
-with $E=-\hbar c\,\partial\vartheta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\vartheta_{\mathrm{pha}}$ the free readings. The scalar and vector potentials are the two slots of one element, so the two classical substitutions are one substitution and no relative sign can be chosen. That is the coupled Dirac article's statement in the bosonic case, and it holds here for the same reason: the connection is one element and its slots are the algebra's.
+with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ the free readings. The scalar and vector potentials are the two slots of one element, so the two classical substitutions are one substitution and no relative sign can be chosen. That is the coupled Dirac article's statement in the bosonic case, and it holds here for the same reason: the connection is one element and its slots are the algebra's.
 
 **What the type statement does not say.** It does not say that the potential cannot affect the frame. It says that the potential cannot affect the frame *at the level of the logarithmic derivative*, that is, not through the additive term. The frame responds to the potential through the equation, because the equation relates the brackets to each other and a shift in one moves the others. The distinction is the difference between the coupling's location and its consequences, and the free Dirac polar article makes the same distinction for the spin.
 
@@ -104,20 +104,20 @@ with $E=-\hbar c\,\partial\vartheta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\h
 **The exact infinitesimal statement.** Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\lambda\tilde A$. Then
 
 $$
-\tilde A_2=r\,e^{i(\vartheta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde A_2=r\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
 \tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-so the gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
+so the gauge transformation is the translation of $\theta_{\mathrm{pha}}$ by $\vartheta_{\mathrm{gau}}$ with the other seven parameters fixed. The identity is exact and the numerical check is exact to $10^{-16}$.
 
 **Why it is exact.** $\lambda$ is central, so it passes to the left through the whole word and multiplies the leftmost factor; and the leftmost factor is the phase factor, whose argument is additive. No other factor is touched, because no other factor carries a central scalar.
 
 **What it says about the connection.** For a pure-gauge connection, $A_\mu=\partial_\mu\Lambda$, the added term is $\frac{iϙ}{\hbar}\partial_\mu\Lambda$, so
 
 $$
-i\frac{\partial\vartheta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
-=i\frac{\partial}{\partial R_\mu}\Bigl(\vartheta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr),
+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
+=i\frac{\partial}{\partial R_\mu}\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr),
 $$
 
 and the whole effect of the potential is absorbed by a reparameterisation of one coordinate. That is the polar statement of gauge invariance, and it is a statement about the angle and not about the field.
@@ -195,20 +195,20 @@ which is the statement that the covariant divergence of the word vanishes. The e
 The coupled Proca field is written
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is the single line that shows it.
+with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is the single line that shows it.
 
-The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\vartheta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
+The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\theta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
-| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ |
-| $\vartheta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge-dependent coordinate |
+| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
+| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ |
+| $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge-dependent coordinate |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |
@@ -226,7 +226,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free two-factor word, the two branches and the two brackets.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four-factor word and its parameter count.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the same type statement in the first-order sector.

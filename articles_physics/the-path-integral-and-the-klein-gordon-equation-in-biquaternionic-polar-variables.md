@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The integral is the companion's, and this article is a reading of it.** *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the functional integral over central-valued fields, evaluates the free Gaussian on a lattice, and identifies its two-point function with the propagator. This article substitutes the polar word into that integral and reads where each factor of the word lands.
+**The integral is the companion's, and this article is a reading of it.** *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the functional integral over central-valued fields, evaluates the free Gaussian on a lattice, and identifies its two-point function with the propagator. This article substitutes the complete polar decomposition into that integral and reads where each factor of the word lands.
 
 **The word on a central field is two functions and a sign.** The boost factor has neither rapidity nor axis to carry and is $e_t$; the rotor has neither angle nor axis and is the sign that the branch of the modulus deposits. What survives is the scale $r$ and the angle $\theta_{\mathrm{pha}}$, both central. The collapse is the companion article's, *The Klein–Gordon Equation in Biquaternionic Polar Variables*, §*The collapse of the word*, and none of its theory is repeated here.
 

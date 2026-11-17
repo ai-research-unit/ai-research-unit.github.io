@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The integral is the companion's, and this article is a reading of it.** *The Path Integral and the Schrödinger Equation in Biquaternionic Form* defines the functional integral over elements of $\mathbb{B}$, evaluates the generating functional, and identifies the two-point function with the propagator. This article substitutes the polar word into that integral and reads where each factor of the word lands. It adds no integral and changes no value.
+**The integral is the companion's, and this article is a reading of it.** *The Path Integral and the Schrödinger Equation in Biquaternionic Form* defines the functional integral over elements of $\mathbb{B}$, evaluates the generating functional, and identifies the two-point function with the propagator. This article substitutes the complete polar decomposition into that integral and reads where each factor of the word lands. It adds no integral and changes no value.
 
 **The word on the fields that matter here is two functions and a sign.** For a central field the boost factor has neither rapidity nor axis to carry and is $e_t$, and the rotor is the sign the branch of the modulus deposits, so the word collapses to $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$. The collapse is the companion article's, *The Schrödinger Equation in Biquaternionic Polar Variables*, §*The Central Field*, and none of its theory is repeated here. The general element is treated once, in §*The Word of the General Element*, where it is needed to say what the chart does not show.
 

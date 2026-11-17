@@ -31,14 +31,14 @@ $$
 The coupled word is the parent's:
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U\,\tilde u ,
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U\,\tilde u ,
 \qquad
 \tilde U=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\Bigr) ,
 \qquad
 \tilde u=\exp\Bigl(i\frac{\phi_{\mathrm{rot}}}{2}\hat n_{\mathrm{ax}}\Bigr) ,
 $$
 
-with $r>0$ the scale, $\vartheta_{\mathrm{pha}}$ the phase, and the boost and the rotor contributing three angles each. **Eight parameters for eight real components**, and the parent's N-regular set is $r>0$ with nothing else excluded. The parent's two exact mass-term statements are quoted:
+with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, and the boost and the rotor contributing three angles each. **Eight parameters for eight real components**, and the parent's N-regular set is $r>0$ with nothing else excluded. The parent's two exact mass-term statements are quoted:
 
 $$
 \mathrm{Sc}\bigl(\tilde u^{-2}\tilde U^{-2}\bigr)\ \text{is the general value} ,
@@ -74,7 +74,7 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 ## The Branch Disappears and the Cone Collapses
 
-**The free chart's branch label is the sign of a real norm and the coupled norm has no sign.** The parent's own summary is exact: for a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$; for a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\vartheta_{\mathrm{pha}}$, a continuous coordinate. **The discrete label and the continuous phase are one slot**, and the coupling is what turns the one into the other.
+**The free chart's branch label is the sign of a real norm and the coupled norm has no sign.** The parent's own summary is exact: for a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$; for a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. **The discrete label and the continuous phase are one slot**, and the coupling is what turns the one into the other.
 
 **In frequency space the same statement is a statement about the quadratic form's reality.** The free amplitude's invariant $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ is real and indefinite, so it has a sign and a zero set; the coupled amplitude's form is complex, so it has neither. **No sign means no branch; no zero set means no cone**, and the two losses are one loss.
 
@@ -96,13 +96,13 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 ## The Symbol Is Blind to the Coordinate
 
-**A gauge transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion.** The parent's identity is $\tilde A\mapsto\lambda\tilde A$ with $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\vartheta_{\mathrm{pha}}\mapsto\vartheta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. **On the symbol the same transformation is $\pi_\mu\mapsto\pi_\mu+\hbar\partial_\mu\vartheta_{\mathrm{gau}}$**, a translation of the argument, and the obstruction $F$ is unchanged.
+**A gauge transformation moves one coordinate of the chart and one argument of the symbol, and the two motions are the same motion.** The parent's identity is $\tilde A\mapsto\lambda\tilde A$ with $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ central, and its effect on the word's first factor is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}}$. **On the symbol the same transformation is $\pi_\mu\mapsto\pi_\mu+\hbar\partial_\mu\vartheta_{\mathrm{gau}}$**, a translation of the argument, and the obstruction $F$ is unchanged.
 
 **So the symbol's dependence on the gauge parameter is exhausted by its argument.** Write $\sigma_{\mathrm{gco}}(\pi)$ for the symbol as a function of the shifted momentum; then under a gauge transformation $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\hbar\,\mathrm{d}\vartheta)$ and no other change occurs. **The symbol is a function and the transformation is an argument shift**, which is the frequency-space form of "the gauge group acts on the chart by one coordinate's motion and on the equation by nothing".
 
 **The consequence is that no gauge-invariant quantity can be built from the symbol's value at one momentum.** A quantity built from $\sigma_{\mathrm{gco}}(\pi)$ alone moves with $\pi$; a gauge-invariant quantity must be built from the obstruction or from a difference of symbols at two momenta. **That is the frequency-space statement of the parent's "the field strength is the gauge-invariant object"**, and the article's contribution is to say that the symbol's invariant content is its curvature term.
 
-**The blindness has a cost that the parent's chart makes visible.** The chart's phase coordinate is a coordinate of the field and not a degree of freedom of the equation: two words differing only in $\vartheta_{\mathrm{pha}}$ describe the same physics, and the chart therefore overcounts the physical parameters by one. **In frequency space the overcount is the argument shift's redundancy**, and the article's ledger of three absences is that overcount read three ways.
+**The blindness has a cost that the parent's chart makes visible.** The chart's phase coordinate is a coordinate of the field and not a degree of freedom of the equation: two words differing only in $\theta_{\mathrm{pha}}$ describe the same physics, and the chart therefore overcounts the physical parameters by one. **In frequency space the overcount is the argument shift's redundancy**, and the article's ledger of three absences is that overcount read three ways.
 
 ## Three Absences, One Reality
 
@@ -110,7 +110,7 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 | | free chart | coupled chart | frequency space |
 | --- | --- | --- | --- |
-| phase bracket | zero identically | $\partial_\mu\vartheta_{\mathrm{pha}}$ | imaginary part of the symbol is the curvature |
+| phase bracket | zero identically | $\partial_\mu\theta_{\mathrm{pha}}$ | imaginary part of the symbol is the curvature |
 | charge | none | from the phase's Noether current | the phase is a coordinate, so it has a conjugate |
 | gauge freedom | none | the phase's motion | the argument shift of the symbol |
 | branch label | the sign of a real norm | none, the norm is complex | the cone collapses to a point |
@@ -166,7 +166,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 | --- | --- |
 | $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
-| $r,\ \vartheta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
+| $r,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F-\pi_\mu\pi_\nu$ | The coupled symbol; Hermitian, complex |
 | $\frac{i\varkappa}{\hbar}F^{(\Phi)}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |

@@ -24,7 +24,7 @@ with $\beta=\lvert\vec v\rvert/c$, $\vec\omega_{\mathrm r}$ the rotor's body ang
 
 ## The Kinetic Term
 
-**The computation is the polar companion's and its result is one line.** Substituting the word into $\frac{\hbar c}{2}\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R]$ and keeping the temporal slots gives
+**The computation is the polar companion's and its result is one line.** Substituting the complete polar decomposition into $\frac{\hbar c}{2}\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R]$ and keeping the temporal slots gives
 
 $$
 \mathcal L_{\mathrm{kin}}=\hbar c\,r^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr),

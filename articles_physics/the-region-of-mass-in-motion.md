@@ -36,7 +36,7 @@ $$
 | the multiplicative norm, the group of invertibles and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the spectral criterion, the eigenvalues and the spectral-degenerate cone | [The Spectrum](../articles_maths/the-spectrum.html) |
 | the two predicates, the independence of the cones, the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
-| the modulus, the unit factor and the three pairings of the polar word | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the modulus, the unit factor and the three pairings of the complete polar decomposition | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the rank of left multiplication, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the scalar line and the Jordan part, which are the wall $B^{2}=0$ | [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) |
 | the scaled idempotents, which are the wall $N=0$ | [The N-Degenerate, Spectrally Regular Sector](../articles_maths/the-n-degenerate-spectrally-regular-sector.html) |

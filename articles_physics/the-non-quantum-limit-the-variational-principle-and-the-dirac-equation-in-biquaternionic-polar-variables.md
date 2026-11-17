@@ -26,7 +26,7 @@ with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direct
 
 **The restriction.** The word exists where $N(\tilde\Xi)\neq0$, and the action is written for the central class's complement — the eight parameters with the frame. The limit is defined on that domain.
 
-**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
+**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
 
 ## The Action and the One-Form
 

@@ -20,7 +20,7 @@
 
 **The sign, stated once.** The parent's coupling is $ϙ$ with $ϙ=-q$; its action carries $+ϙ\varphi\,r^{2}$, which is $-q\varphi\,r^{2}$ here, and its covariant gradient is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, which is $(\vec\nabla_\Phi S-q\vec A)/\hbar$ here. Every display below uses $q$, the electric charge, and $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
+**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
 
 ## The Action and Its Orders
 

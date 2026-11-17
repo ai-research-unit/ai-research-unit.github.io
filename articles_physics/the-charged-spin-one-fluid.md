@@ -15,7 +15,7 @@ $$
 with the field strength built from the *covariant* gradients, $\tilde F=\frac12(\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco}}\tilde A)_{V}$. **The field strength therefore carries a term bilinear in the potential**, $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$, and the equation is nonlinear in the field in a way the free one was not. The word is the four-factor decomposition
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad r>0,
 $$
 
@@ -25,7 +25,7 @@ and the source article's ledger is that the eight real parameters are the eight 
 
 *First, the carrier doubles and the free branches are the real slice.* The free word was a scale, a direction and a discrete sign; the coupled word is a scale, a continuous phase, a boost and a rotor. **The discrete sign of the free fluid is the real slice of the continuous phase**, and the rotor is a parameter the free word had no room for.
 
-*Second, the density decouples from the field's norm.* The free article could write $r=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **The scale is a coordinate of the chart and not a property of the field**, and the density the fluid carries is a choice of the chart's normalisation.
+*Second, the density decouples from the field's norm.* The free article could write $r=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $r^{2}e^{2i\theta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **The scale is a coordinate of the chart and not a property of the field**, and the density the fluid carries is a choice of the chart's normalisation.
 
 *Third, the constraint and the divergence are two different statements.* The scalar part of the coupled equation forces the covariant Lorenz condition, exactly and blindly to the frame; the *ordinary* divergence is then not zero, and its value is the field's own amplitude.
 
@@ -34,7 +34,7 @@ $$
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
 =-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural
-=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\vartheta_{\mathrm{pha}}} .
+=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
 **The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift.** With the coupling the expansion is the amplitude.
@@ -50,7 +50,7 @@ $$
 **The free word is the coupled word's real slice, and the slice's discreteness is the phase's collapse.** The free article's decomposition is a scale, a direction and a sign, $A_\mu=\varepsilon\,r\,u_\mu$ with $r=\sqrt{-A^{2}}$ and $\varepsilon=\pm1$; the coupled one is
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 whose phase is continuous and whose last factor is a rotor. **Two parameters are restored and one is lost**: the phase replaces the sign, the rotor is new, and the identification of the scale with the norm is what is lost.
@@ -64,7 +64,7 @@ whose phase is continuous and whose last factor is a rotor. **Two parameters are
 **The natural norm is the other invariant and it is frame-blind.** The computation is two lines and was checked to machine precision:
 
 $$
-\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}},
+\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}},
 $$
 
 because the central phase passes through $^{\natural}$ unchanged, and $\tilde U\tilde U^{\natural}=1$ and $\tilde u\tilde u^{\natural}=1$ for a Hermitian unit and a real unit. **So the phase enters the natural norm squared and the frame does not enter it at all**, which is exactly the opposite of the mass term's invariant.
@@ -81,11 +81,11 @@ $$
 
 and nothing else. The phase, the rapidity, the axis and the rotor are angles and cannot degenerate; a nonzero complex four-vector always has a word.
 
-**That is a genuine gain and it is worth stating precisely.** For a *complex* four-vector, the condition for the word to exist is that the vector be non-zero, and the zero set of a complex four-vector is a codimension-two set in spacetime. **The lightlike condition of the real case is the extra requirement that the invariant length vanish**, and a complex field's "length" $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is not forced to vanish by the field's vanishing.
+**That is a genuine gain and it is worth stating precisely.** For a *complex* four-vector, the condition for the complete polar decomposition to exist is that the vector be non-zero, and the zero set of a complex four-vector is a codimension-two set in spacetime. **The lightlike condition of the real case is the extra requirement that the invariant length vanish**, and a complex field's "length" $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is not forced to vanish by the field's vanishing.
 
 **The consequence for the fluid reading is that the wall becomes an origin.** The free article's most uncomfortable feature — a fluid whose density exists on both sides of a surface where the reading fails, with a discrete sign flipping at the crossing — is replaced by a fluid that exists wherever the field does not vanish and has no sign at all. **The price is that the free article's clean statement "the density never vanishes, the chart fails first" is reversed**: the density can vanish, and where it does the chart fails.
 
-**What the discrete sign becomes.** The free article's $\varepsilon=\pm1$ is the sign of the component along the chosen branch; in the coupled word it is the real slice of $e^{i\vartheta_{\mathrm{pha}}}$, that is, the value of the phase at $\vartheta_{\mathrm{pha}}\in\{0,\pi\}$. **So the free fluid's two branches are two points of one circle**, and the free article's branch flip is the phase's passage through $\pi/2$.
+**What the discrete sign becomes.** The free article's $\varepsilon=\pm1$ is the sign of the component along the chosen branch; in the coupled word it is the real slice of $e^{i\theta_{\mathrm{pha}}}$, that is, the value of the phase at $\theta_{\mathrm{pha}}\in\{0,\pi\}$. **So the free fluid's two branches are two points of one circle**, and the free article's branch flip is the phase's passage through $\pi/2$.
 
 **A note on what the shrinking does not buy.** It does not make the fluid globally a fluid: $r=0$ is still a failure of the chart, and a solution with a zero is still not readable there. **It makes the failure generic rather than structural**, and for a fluid reading that is the right kind of failure: a density that vanishes at a point is an ordinary thing, a density that disappears on a wall is not.
 
@@ -96,7 +96,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 | candidate | what it is | its behaviour |
 | --- | --- | --- |
 | $r$ | the chart's scale | positive, arbitrary, fixed only by a normalisation convention |
-| $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ | the natural norm | complex; frame-blind; independent of the rotor and the rapidity |
+| $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ | the natural norm | complex; frame-blind; independent of the rotor and the rapidity |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ | the mass term's invariant | real; equals $r^{2}$ only where the rotor is trivial; rapidity-independent when the axes are collinear |
 
 **The first is a coordinate, the second is complex, and the third is frame-dependent.** A density must be one positive real number per event, and none of the three is.
@@ -115,11 +115,11 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 **The response is $m^{2}\tilde A$, and it is what the free article's current became.** In the free case the equation $\sum_\nu\partial_\nu F_{\nu\mu}=m^{2}A_\mu$ made $m^{2}A_\mu$ the source of the field strength's divergence, and the Lorenz condition made it conserved; the article therefore identified the field, the current and the response. **With the coupling the equation sources $m^{2}\tilde A$ by the *covariant* divergence**, $\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A$, so the response is no longer conserved by the Lorenz condition alone: the connection's own term sits between them. **The fluid's own field acts on its own current**, and that is the self-interaction the free case could not have.
 
-**The direction is $\tilde A/r$, and it is the generalisation of the free velocity.** In the free case $A_\mu/r=u_\mu$ was the unit flow and the current at once. Here $\tilde A/r=e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
+**The direction is $\tilde A/r$, and it is the generalisation of the free velocity.** In the free case $A_\mu/r=u_\mu$ was the unit flow and the current at once. Here $\tilde A/r=e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a unit element whose boost is the flow, and it is conserved by nothing: its divergence is the divergence of the word, which is the constraint plus whatever the frame contributes.
 
 **The charge current is the bilinear, and it is the only one of the three the free case did not have.** It is the current the phase symmetry of the complex field guarantees, and it **vanishes identically on the real slice**, which is why the free article never met it. The parent's ledger says the chart's expression for it is longer than the element form's without being more informative, and the article takes that as given: what matters for the fluid is that it exists and that it is the conserved one.
 
-**The three coincide only on the real slice, and that is the whole of the difference.** With $\vartheta_{\mathrm{pha}}\in\{0,\pi\}$ and the rotor trivial, the response is proportional to the direction, the charge current vanishes, and the free article's identification is recovered. **Off the slice the response and the direction differ by the phase and the rotor, and the conserved current is neither.** So the coupling does not add a term to the free fluid's current; it separates one object into three.
+**The three coincide only on the real slice, and that is the whole of the difference.** With $\theta_{\mathrm{pha}}\in\{0,\pi\}$ and the rotor trivial, the response is proportional to the direction, the charge current vanishes, and the free article's identification is recovered. **Off the slice the response and the direction differ by the phase and the rotor, and the conserved current is neither.** So the coupling does not add a term to the free fluid's current; it separates one object into three.
 
 **What a reader should take from the count.** A fluid whose current is its field needs no constitutive law for the current, because the field is already the unknown. A fluid whose current is a bilinear needs one, and the coupling does not supply it: the charge current is determined by the field, and the field is determined by the equation, so the fluid reading is closed in principle. **What is lost is the free article's economy, not its consistency.**
 
@@ -143,27 +143,27 @@ $$
 =\tilde A\tilde A^{\natural},
 $$
 
-the cross terms cancelling and $\vec e_\eta^{2}=-e_t$ supplying the second sign. **Both identities are exact for complex coefficients** and were checked to machine precision, the second against $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ over random draws of the eight parameters.
+the cross terms cancelling and $\vec e_\eta^{2}=-e_t$ supplying the second sign. **Both identities are exact for complex coefficients** and were checked to machine precision, the second against $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ over random draws of the eight parameters.
 
 **The consequence on the constraint surface.** The scalar part of the coupled equation is the covariant Lorenz condition, so the ordinary divergence is fixed:
 
 $$
 \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
 =-\frac{iϙ}{\hbar}\,\tilde A\tilde A^{\natural}
-=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\vartheta_{\mathrm{pha}}} .
+=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
 **The display is the article's headline.** The ordinary divergence of the potential — which the free article set to zero and read as the continuity of the current — is now the field's own natural norm, times $iϙ/\hbar$. **It is not a continuity equation and it is not zero: the fluid's expansion is its amplitude.**
 
-**Two real statements, and neither is the free one.** Writing $\vartheta_{\mathrm{pha}}$ out,
+**Two real statements, and neither is the free one.** Writing $\theta_{\mathrm{pha}}$ out,
 
 $$
-\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=+\frac{ϙ}{\hbar}r^{2}\sin 2\vartheta_{\mathrm{pha}},
+\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=+\frac{ϙ}{\hbar}r^{2}\sin 2\theta_{\mathrm{pha}},
 \qquad
-\mathrm{Im}\,\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=-\frac{ϙ}{\hbar}r^{2}\cos 2\vartheta_{\mathrm{pha}},
+\mathrm{Im}\,\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=-\frac{ϙ}{\hbar}r^{2}\cos 2\theta_{\mathrm{pha}},
 $$
 
-so the two real combinations of the divergence are a sine and a cosine of twice the phase, weighted by the scale squared. **The free case is $\vartheta_{\mathrm{pha}}\in\{0,\pi\}$ and $ϙ=0$**, where both vanish; either condition alone is enough, which is why the free identification looked robust and was not.
+so the two real combinations of the divergence are a sine and a cosine of twice the phase, weighted by the scale squared. **The free case is $\theta_{\mathrm{pha}}\in\{0,\pi\}$ and $ϙ=0$**, where both vanish; either condition alone is enough, which is why the free identification looked robust and was not.
 
 **What the constraint still says, and what it no longer says.** The covariant condition $\mathrm{Sc}(\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde A)=0$ survives, and it is the parent's statement that the constraint is blind to the frame: it is a relation among the scale and phase brackets, the connection's temporal slot and the modulus. **What dies is the reading**: the free article could say that the constraint removes one parameter and leaves three helicities, and that the removed parameter is the density's own flow; the coupled constraint removes a combination of the scale, the phase and the potential, and the count it leaves is the count of a complex four-vector's polar data.
 
@@ -211,14 +211,14 @@ and that the field-strength part has no scalar part, is transverse-anisotropic a
 
 **Twelve statements, each one line, and each with its reason. This is what the charged spin-one fluid is.**
 
-1. **The word has eight parameters.** A scale, a continuous phase, a boost and a rotor; the free word's four parameters are the real slice $\vartheta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial.
+1. **The word has eight parameters.** A scale, a continuous phase, a boost and a rotor; the free word's four parameters are the real slice $\theta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial.
 2. **The phase is physical and the rotor is new.** The free case's discrete sign is the phase's collapse to two points, and the rotor is a factor the free decomposition had no room for.
 3. **Three currents, and only one is conserved.** The response $m^{2}\tilde A$, the direction $\tilde A/r$, and the charge bilinear; the third is conserved and vanishes on the real slice.
-4. **The density is not the field's norm.** $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial.
+4. **The density is not the field's norm.** $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial.
 5. **The scale is the amplitude and not the density.** The velocity and the vorticity are independent of $r$ and the stress is quadratic in it, and $r$ is fixed by a normalisation convention only.
 6. **The domain is $r=0$ and nothing else.** The free fluid's lightlike wall is gone, and the failure of the chart is a codimension-two set rather than a hypersurface.
 7. **The covariant Lorenz condition is forced and blind to the frame.** The scalar part of the equation is the condition, and it is a relation among the scale and phase brackets, the connection's temporal slot and the modulus.
-8. **The ordinary divergence is the amplitude.** $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\vartheta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\vartheta_{\mathrm{pha}}$.
+8. **The ordinary divergence is the amplitude.** $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\theta_{\mathrm{pha}}$.
 9. **The charged vector fluid is compressible.** The free article's incompressibility is the $ϙ=0$ case, and it was the mass's gift through the Lorenz condition.
 10. **The stiff equation of state survives as a formula.** $\epsilon=p=\frac12m^{2}r^{2}$ on the sector where the field strength vanishes, and it dies as a constitutive law because $r$ is a coordinate and not an invariant.
 11. **The field's own stress is in the fluid's stress.** The field strength is dynamical and its part of the stress is present, which is the opposite of the two companion articles, where the gauge field's stress is external.
@@ -254,7 +254,7 @@ and that the field-strength part has no scalar part, is transverse-anisotropic a
 
 **The forward arrow is exact and it is now a bijection on a bigger set.** Every nowhere-zero complex four-vector has a word, so the $N$-regular set of the free case is replaced by the punctured space, and the bijection is on the punctured space modulo nothing. **That is the strongest forward statement in the block**, and it is bought by the doubling of the carrier.
 
-**The reverse arrow takes the word's eight parameters and one equation.** Given the word, the field is $r e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and it solves the coupled equation iff the two polar equations of the parent hold; the constraint is one of them. **The extra structure that makes the fluid a medium is now the connection's self-action** — the field is both the medium's state and the force on it.
+**The reverse arrow takes the word's eight parameters and one equation.** Given the word, the field is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and it solves the coupled equation iff the two polar equations of the parent hold; the constraint is one of them. **The extra structure that makes the fluid a medium is now the connection's self-action** — the field is both the medium's state and the force on it.
 
 | | the word's data | what the reverse map needs beyond it | the medium it makes |
 | --- | --- | --- | --- |
@@ -268,7 +268,7 @@ and that the field-strength part has no scalar part, is transverse-anisotropic a
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_\mu A_\mu^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
+**Established.** The word's eight parameters and the real slice. The two invariants: $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ exactly, checked to machine precision, and the parent's numbers for $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The three-current split, with the charge current vanishing on the real slice. The identity $\sum_\mu A_\mu^{2}=\tilde A\tilde A^{\natural}$, checked symbolically in all sixteen products and against random draws of the eight parameters. The divergence statement $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}\tilde A\tilde A^{\natural}$ on the constraint surface, with its two real parts. The failure of the free incompressibility, which is that statement with $ϙ\ne0$. The survival of the stiff formula on the $F=0$ sector and its failure as a law. The massless limit's structure.
 
 **Interpretation.** That $r$ is an amplitude rather than a density is a reading of the homogeneity of the fluid formulas, and it is a reading and not a theorem. That the three currents "separate one object into three" is a way of describing the real slice's collapse, and the collapse itself is the fact. That the self-interaction term is what makes the vector fluid the block's richest medium is an assessment and not a result.
 
@@ -276,15 +276,15 @@ and that the field-strength part has no scalar part, is transverse-anisotropic a
 
 ## Summary
 
-The coupled Proca equation is $\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=r e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Proca equation is $\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ and $\tilde F$ built from covariant gradients, and the word is $\tilde A=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The carrier doubles: eight parameters for eight real components, the free word is the real slice, and the rotor is a factor the free word lacked. The domain shrinks to $r=0$: the free fluid's lightlike wall is gone, and the chart fails only where the field vanishes.
 
-The density is not the field's norm. $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex and the mass term's invariant is $r^{2}$ only where the rotor is trivial; the scale is an amplitude.
+The density is not the field's norm. $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex and the mass term's invariant is $r^{2}$ only where the rotor is trivial; the scale is an amplitude.
 
 There are three currents and only one is conserved: the response $m^{2}\tilde A$, the direction $\tilde A/r$, and the charge bilinear, which vanishes on the real slice.
 
-The covariant Lorenz condition is forced by the scalar part and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$. **The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.**
+The covariant Lorenz condition is forced by the scalar part and is blind to the frame; the ordinary divergence is the amplitude, $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$. **The free article's incompressibility was the mass's gift and is the $ϙ=0$ case.**
 
 The stiff equation of state survives as a formula on the sector where the field strength vanishes and dies as a constitutive law, because its variable is a coordinate. The field's own stress is in the fluid's stress, and the massless limit keeps the current and loses the constraint.
 
@@ -292,11 +292,11 @@ The stiff equation of state survives as a formula on the sector where the field 
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
+| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
 | $r>0$ | The scale; the amplitude, not the density |
-| $\vartheta_{\mathrm{pha}}$ | The phase; the free case's discrete sign is its real slice |
+| $\theta_{\mathrm{pha}}$ | The phase; the free case's discrete sign is its real slice |
 | $\tilde U_{\Psi,\mathrm b},\ \tilde u_{\mathrm r}$ | The boost and the rotor |
-| $\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ | The natural norm |
+| $\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ | The natural norm |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ | The mass term's invariant; $r^{2}$ only where the rotor is trivial |
 | $\tilde F$ | The covariant field strength, with a term bilinear in the potential |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; the field itself |

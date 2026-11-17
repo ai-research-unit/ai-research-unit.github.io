@@ -14,7 +14,7 @@ $$
 \tilde\Xi_{\mathrm D}=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
 $$
 
-with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is central per component**, so it commutes with the split of the word into a scale, an angle, a boost and a rotor, and its effect is confined by type rather than by size. That single fact decides every question the article asks.
+with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is central per component**, so it commutes with the split of the complete polar decomposition into a scale, an angle, a boost and a rotor, and its effect is confined by type rather than by size. That single fact decides every question the article asks.
 
 **Three things are established.**
 

@@ -2,23 +2,23 @@
 
 ## Introduction
 
-**The integral is the coupled element companion's, and this article reads it in the word.** *The Path Integral and the Coupled Proca Equation in Biquaternionic Form* puts the connection into the free integral, changes the carrier from four real components to eight, and shows that the three–one split survives. This article substitutes the word into that enlarged integral and asks what the enlargement buys.
+**The integral is the coupled element companion's, and this article reads it in the complete polar decomposition.** *The Path Integral and the Coupled Proca Equation in Biquaternionic Form* puts the connection into the free integral, changes the carrier from four real components to eight, and shows that the three–one split survives. This article substitutes the word into that enlarged integral and asks what the enlargement buys.
 
 **The answer is that the coupling restores the two coordinates the free chart lacks.** The free Proca chart has four parameters and no central angle, so the free article could say that the weight has no chart coordinate. The coupled carrier is $\mathbb{B}$, whose word has eight parameters, and the word is
 
 $$
-\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}=H\,\Omega ,
+\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}=H\,\Omega ,
 \qquad
 H=r\,\tilde U_{\Psi,\mathrm b}\ \text{Hermitian},
 \qquad
-\Omega=e^{i\vartheta_{\mathrm{pha}}}\tilde u_{\mathrm r}\ \text{$*$-unitary}.
+\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\ \text{$*$-unitary}.
 $$
 
 **The free field's values are the anti-Hermitian elements $iH$ and $H\hat u$, and the coupling adds $\Omega$ to both.** So the phase and the rotor are exactly what the enlargement is, and the free chart is a slice of the coupled one.
 
 **Four findings.**
 
-*First, the mass term separates into a magnitude and a rotation.* On the free slice $\langle\tilde A_\Phi\rangle_\natural=\mp r^{2}$ and the sign is the branch's. On the coupled carrier $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: **the modulus is the free scale and the argument is twice the phase.** The phase therefore enters the mass term as a rotation and not as a magnitude, and the invariant the coupled action uses, $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, is real and phase-blind — $0.4465451904$ at two different phases.
+*First, the mass term separates into a magnitude and a rotation.* On the free slice $\langle\tilde A_\Phi\rangle_\natural=\mp r^{2}$ and the sign is the branch's. On the coupled carrier $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$: **the modulus is the free scale and the argument is twice the phase.** The phase therefore enters the mass term as a rotation and not as a magnitude, and the invariant the coupled action uses, $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, is real and phase-blind — $0.4465451904$ at two different phases.
 
 *Second, the measure's radial power is seven and not three.* The chart's Jacobian is $r^{7}$ times an angular factor, verified by the homogeneity test: doubling $r$ multiplies the Jacobian determinant by $128$, the exponent fitted is $7.000000$. **The radial power is the carrier's dimension less one**, so the coupling adds four angular directions and no radial one, and the mass term's $r^{2}$ still completes the Gaussian — now to $a^{-4}$, which is eight components' worth.
 
@@ -28,7 +28,7 @@ $$
 
 **What the article does not do.** It does not produce a second integral, does not evaluate the coupled kernel, and does not decide the gauge-fixing question for a dynamical connection. It reads the enlarged integral and says what the enlargement is.
 
-**Conventions.** The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=r\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\vartheta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. **The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set**, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
+**Conventions.** The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=r\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. **The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set**, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
 
 ## The Word of the Enlarged Carrier
 
@@ -52,15 +52,15 @@ which is the free article's $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$ recove
 
 $$
 \langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=H\Omega\Omega^{\natural}H^{\natural}
-=H\,e^{2i\vartheta_{\mathrm{pha}}}H^{\natural}
-=r^{2}e^{2i\vartheta_{\mathrm{pha}}} .
+=H\,e^{2i\theta_{\mathrm{pha}}}H^{\natural}
+=r^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
-The rotor has cancelled, because $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=1$; the phase has doubled, because $\natural$ is $\mathbb{C}$-linear and passes $i$ through unchanged. The check at $r=0.9$ gave $0.66852185+0.45736040\,i$ at $\vartheta_{\mathrm{pha}}=0.3$, against $r^{2}\cos0.6=0.668522$ and $r^{2}\sin0.6=0.457360$.
+The rotor has cancelled, because $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural}=1$; the phase has doubled, because $\natural$ is $\mathbb{C}$-linear and passes $i$ through unchanged. The check at $r=0.9$ gave $0.66852185+0.45736040\,i$ at $\theta_{\mathrm{pha}}=0.3$, against $r^{2}\cos0.6=0.668522$ and $r^{2}\sin0.6=0.457360$.
 
 **The modulus is the free scale and the argument is twice the phase, and no rotor appears.** That is the chart's reading of the coupled equation article's "the carrier that closes is the carrier on which the mass term is invariant": the closure is the right multiplication by $\Omega$, and the mass term built from it sees $\Omega\Omega^{\natural}$, which is a pure phase. **The mass term is rotor-blind and phase-covariant**, and it is the phase's double that appears.
 
-**The invariant the coupled action uses is the real one, and it is phase-blind.** $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=\mathrm{Sc}(\Omega^{-1}H^{2}\Omega^{\natural})$ is real and independent of $\vartheta_{\mathrm{pha}}$: the value $0.4465451904$ was obtained at $\vartheta_{\mathrm{pha}}=0$ and at $\vartheta_{\mathrm{pha}}=0.6$, identical to ten digits. **So the chart shows why the coupled action must be written with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and not with $\langle\tilde A\rangle_\natural$ alone**: the latter carries a phase, and only the former is invariant.
+**The invariant the coupled action uses is the real one, and it is phase-blind.** $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=\mathrm{Sc}(\Omega^{-1}H^{2}\Omega^{\natural})$ is real and independent of $\theta_{\mathrm{pha}}$: the value $0.4465451904$ was obtained at $\theta_{\mathrm{pha}}=0$ and at $\theta_{\mathrm{pha}}=0.6$, identical to ten digits. **So the chart shows why the coupled action must be written with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and not with $\langle\tilde A\rangle_\natural$ alone**: the latter carries a phase, and only the former is invariant.
 
 **The branch sign has no place on the enlarged carrier, and this is the sharpest difference between the two charts.** The free chart's mass term is $\mp\frac12k_m^{2}r^{2}$, with the sign decided by the branch; the coupled chart's modulus is $r^{2}$ with no sign to decide, and what remains of the sign is the argument. **A discrete label of the free chart becomes a continuous angle of the coupled one**, and the doubling of the carrier is what allows it.
 
@@ -86,9 +86,9 @@ which is the $a^{-4}$ an eight-component Gaussian carries. **The radial power pl
 
 **The phase's circle is the charge's coordinate, and the free chart's missing angle is the free field's reality.** The free carrier has $\Omega=i$: a fixed unitary element and not a variable. So the free field's "no phase" is the statement that the unitary factor is frozen, and the coupled field's charge is the statement that it is free. **One coordinate, one charge, and the chart names it.**
 
-**The gauge transformation is a shift of that coordinate by a function of the point.** $\tilde A\mapsto e^{iϙ\Gamma/\hbar}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\vartheta_{\mathrm{pha}}\mapsto\vartheta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ and nothing else changes. **The scale, the rapidity and the rotor are untouched**, which is the chart's version of the statement that the gauge group acts on the phase alone.
+**The gauge transformation is a shift of that coordinate by a function of the point.** $\tilde A\mapsto e^{iϙ\Gamma/\hbar}\tilde A$ multiplies the unitary factor on the left by a central phase, so $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ and nothing else changes. **The scale, the rapidity and the rotor are untouched**, which is the chart's version of the statement that the gauge group acts on the phase alone.
 
-**The mass term is invariant under the shift in the modulus and not in the argument.** $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ rotates by $e^{2iϙ\Gamma/\hbar}$ under the transformation, so its modulus is invariant and its argument is not. **The invariant length is the modulus, and this is why the coupled action's mass term is the real pairing and not the biquaternionic norm.** The chart shows both faces of one fact.
+**The mass term is invariant under the shift in the modulus and not in the argument.** $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ rotates by $e^{2iϙ\Gamma/\hbar}$ under the transformation, so its modulus is invariant and its argument is not. **The invariant length is the modulus, and this is why the coupled action's mass term is the real pairing and not the biquaternionic norm.** The chart shows both faces of one fact.
 
 **The current is the response to the connection and it is conserved by the measure's flatness.** The exponent's derivative with respect to the connection's scalar part is the density, and its derivative with respect to the vector part is the current; the current's conservation follows from the invariance of the measure and does not need the equation of motion. **The chart's contribution is that the invariance is a coordinate shift**, so the conservation is exact at every step of any regulator.
 
@@ -96,11 +96,11 @@ which is the $a^{-4}$ an eight-component Gaussian carries. **The radial power pl
 
 **The divergence's square is displayed in the coupled chart exactly as in the free one, with the covariant divergence in it.** The exponent's second piece is $-\frac12S_{\mathrm{gco}}^{2}$ with $S_{\mathrm{gco}}=\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$, and its saddle is $S_{\mathrm{gco}}=0$, the covariant Lorenz condition. **The mechanism is the free article's: a quadratic entry makes an equation and not a delta.**
 
-**The saddle's chart is a full eight-parameter word and its constraint is one of the eight.** The classical field is $\tilde A^{\mathrm{cl}}=-P_{\mathrm{gco}}^{-1}\tilde J$, a general element, so its word is $(r,\vartheta_{\mathrm{pha}},u,\vartheta_1,\vartheta_2,\psi_1,\psi_2,\psi_3)$ with the covariant condition restricting the combination that the covariant divergence measures. **The chart therefore reads the saddle completely**, which the free chart could not do for the kernel.
+**The saddle's chart is a full eight-parameter word and its constraint is one of the eight.** The classical field is $\tilde A^{\mathrm{cl}}=-P_{\mathrm{gco}}^{-1}\tilde J$, a general element, so its word is $(r,\theta_{\mathrm{pha}},u,\vartheta_1,\vartheta_2,\psi_1,\psi_2,\psi_3)$ with the covariant condition restricting the combination that the covariant divergence measures. **The chart therefore reads the saddle completely**, which the free chart could not do for the kernel.
 
 **The mass is untouched by the coupling, and the chart shows where the coupling does act.** The free article's ghost is the eigenvalue $-k_m^{2}$; the coupled article shows it is unchanged; the chart's version is that the constraint is deformed and the mass term's magnitude is not. **One term of the exponent is covariantised and one is not**, and the reason is that the mass term has no derivative to covariantise.
 
-**What the chart cannot see is the ghost itself.** It is a property of a momentum mode and the chart is a chart of a field value. **The chart's nearest object is the argument $2\vartheta_{\mathrm{pha}}$ of the mass term**, and the two are different objects; the article does not conflate them.
+**What the chart cannot see is the ghost itself.** It is a property of a momentum mode and the chart is a chart of a field value. **The chart's nearest object is the argument $2\theta_{\mathrm{pha}}$ of the mass term**, and the two are different objects; the article does not conflate them.
 
 ## What Composes and What Does Not
 
@@ -114,9 +114,9 @@ which is the $a^{-4}$ an eight-component Gaussian carries. **The radial power pl
 
 ## What the Polar Reading Adds and Does Not Add
 
-**Adds, first, the factorisation $\tilde A=H\Omega$ as the exact content of the carrier change.** The free chart is $iH$; the coupling adds $\Omega=e^{i\vartheta_{\mathrm{pha}}}\tilde u_{\mathrm r}$; the phase is the charge and the rotor is the direction. **The four parameters the coupling adds are named, and the free chart is exhibited as a factor of the coupled one.**
+**Adds, first, the factorisation $\tilde A=H\Omega$ as the exact content of the carrier change.** The free chart is $iH$; the coupling adds $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$; the phase is the charge and the rotor is the direction. **The four parameters the coupling adds are named, and the free chart is exhibited as a factor of the coupled one.**
 
-**Adds, second, the mass term's separation into magnitude and rotation.** $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the modulus is the free scale, the argument is twice the phase, and the rotor is invisible. **The free chart's branch sign becomes the coupled chart's angle**, and the invariant the coupled action uses is phase-blind.
+**Adds, second, the mass term's separation into magnitude and rotation.** $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$: the modulus is the free scale, the argument is twice the phase, and the rotor is invisible. **The free chart's branch sign becomes the coupled chart's angle**, and the invariant the coupled action uses is phase-blind.
 
 **Adds, third, the radial power's rule.** $r^{3}$ on four components, $r^{7}$ on eight, with the homogeneity exponent measured at $7.000000$ and the isometry of the unitary factor checked to the last digit. **The scale's weight is set by the carrier's dimension, and the exponent's linearity decides whether the Jacobian cancels or completes.**
 
@@ -140,9 +140,9 @@ which is the $a^{-4}$ an eight-component Gaussian carries. **The radial power pl
 
 ## Summary
 
-The coupled Proca integral's chart is the eight-parameter word, and it factorises exactly as $\tilde A=H\Omega$ with $H=r\tilde U_{\Psi,\mathrm b}$ Hermitian and $\Omega=e^{i\vartheta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ $*$-unitary. The free field's values are $iH$ and $H\hat u$, so the coupling adds the phase and the rotor, and those two are the charge and the direction.
+The coupled Proca integral's chart is the eight-parameter word, and it factorises exactly as $\tilde A=H\Omega$ with $H=r\tilde U_{\Psi,\mathrm b}$ Hermitian and $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ $*$-unitary. The free field's values are $iH$ and $H\hat u$, so the coupling adds the phase and the rotor, and those two are the charge and the direction.
 
-The mass term is $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the modulus is the free scale, the argument is twice the phase, and the rotor cancels. The invariant the coupled action uses, $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, is real and phase-blind, $0.4465451904$ at two different phases. The free chart's branch sign therefore becomes the coupled chart's angle.
+The mass term is $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$: the modulus is the free scale, the argument is twice the phase, and the rotor cancels. The invariant the coupled action uses, $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, is real and phase-blind, $0.4465451904$ at two different phases. The free chart's branch sign therefore becomes the coupled chart's angle.
 
 The measure's radial power is seven, measured at a homogeneity exponent of $7.000000$; right multiplication by $\Omega$ is an isometry and was checked to the last digit; and the mass term's $r^{2}$ completes the Gaussian to $a^{-4}$, which is eight components' worth. The phase's circle is integrated at every point, its translation is the gauge transformation, and the flat measure's unit Jacobian is why the invariance is exact.
 
@@ -154,14 +154,14 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 | --- | --- |
 | $\tilde A=H\Omega$ | The word of the enlarged carrier |
 | $H=r\tilde U_{\Psi,\mathrm b}$ | Hermitian modulus; four parameters |
-| $\Omega=e^{i\vartheta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $*$-unitary phase; four parameters |
+| $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $*$-unitary phase; four parameters |
 | $iH$, $H\hat u$ | The free field's values; the anti-Hermitian slice |
-| $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ | The mass term's magnitude and rotation |
+| $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ | The mass term's magnitude and rotation |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ | The invariant length; real and phase-blind |
 | $r^{7}$ | The coupled chart's radial power |
 | $r^{3}$ | The free chart's radial power |
 | $\int_0^\infty r^{7}\mathrm{d}r\,e^{-ar^{2}}=3/a^{4}$ | Eight components' worth of Gaussian weight |
-| $\vartheta_{\mathrm{pha}}\mapsto\vartheta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ | The gauge transformation as a coordinate shift |
+| $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ | The gauge transformation as a coordinate shift |
 | $S_{\mathrm{gco}}=\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
 | $-k_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
 

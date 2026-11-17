@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The claim of this article is that the biquaternion polar word and Takabayasi's tensor formulation of 1957 are the same fluid described in two languages, and that the correspondence is exact on the domain where both are defined.** Takabayasi's *Relativistic Hydrodynamics of the Dirac Matter* replaces the spinor and the gamma matrices by a set of real tensor fields — a density, a velocity, a spin vector, a momentum and one internal angle. The polar word writes the same field as one element of $\mathbb{B}$ decomposed into four factors. Every variable of the tensor system is a factor of the word or a component of one.
+**The claim of this article is that the biquaternion polar word and Takabayasi's tensor formulation of 1957 are the same fluid described in two languages, and that the correspondence is exact on the domain where both are defined.** Takabayasi's *Relativistic Hydrodynamics of the Dirac Matter* replaces the spinor and the gamma matrices by a set of real tensor fields — a density, a velocity, a spin vector, a momentum and one internal angle. The polar word writes the same field as one element of $\mathbb{B}$ decomposed into four factors. Every variable of the tensor system is a factor of the complete polar decomposition or a component of one.
 
 **The article is a comparison and not a derivation.** The word, its four brackets, its current and its spin are [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). Takabayasi's system is his. What is new here is the mapping between them, the reason each row of the mapping holds, and the ledger of what the comparison buys.
 

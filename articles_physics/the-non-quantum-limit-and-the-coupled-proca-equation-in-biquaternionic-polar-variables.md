@@ -2,19 +2,19 @@
 
 ## Introduction
 
-**The finding, in one sentence.** The coupled Proca field lives on the complex carrier, so the word regains a phase, and with the phase the non-quantum limit returns: order zero is the mechanical mass shell with a transverse polarisation, and the amplitude is the envelope.
+**The finding, in one sentence.** The coupled Proca field lives on the complex carrier, so the complete polar decomposition regains a phase, and with the phase the non-quantum limit returns: order zero is the mechanical mass shell with a transverse polarisation, and the amplitude is the envelope.
 
 **Why the phase returns, and it is the article's hinge.** The free Proca field is real and a phase rotates the material sector off itself. The covariant derivative's connection makes the field complex, and $\mathbb{B}$ is closed under multiplication by $i$, so **the phase is available exactly when the field is complex**. The parent states it and the norm shows it:
 
 $$
-\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}
+\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}
 $$
 
-exactly, for every value of the other six parameters. **The phase is the argument of the norm, and that is why the charge exists**: for a real field the norm is real and its argument is a sign; here the argument is $2\vartheta_{\mathrm{pha}}$.
+exactly, for every value of the other six parameters. **The phase is the argument of the norm, and that is why the charge exists**: for a real field the norm is real and its argument is a sign; here the argument is $2\theta_{\mathrm{pha}}$.
 
 **What that restores, listed.** An eikonal, because there is a fast angle to differentiate; a wavevector and therefore a momentum; a guidance equation; a criterion; and a quantum potential whose size can be estimated. **Everything the free companion found absent is present here**, and not because a potential was added but because the carrier changed.
 
-**The word's eight parameters.** $r>0$, $\vartheta_{\mathrm{pha}}$, the rapidity, the boost's axis (two angles), and the rotor's three angles: **eight real parameters for eight real components**, with the chart's domain $r>0$ and the cone at $r=0$.
+**The word's eight parameters.** $r>0$, $\theta_{\mathrm{pha}}$, the rapidity, the boost's axis (two angles), and the rotor's three angles: **eight real parameters for eight real components**, with the chart's domain $r>0$ and the cone at $r=0$.
 
 **Order zero, in the language of field theory.** For a complex massive vector field the leading order is the mass shell $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}$ together with the transversality of the polarisation, $\kappa\cdot\tilde A_0=0$, which is the Lorenz condition read at leading order. **Three polarisations and one mass shell**, and the frame's unit carries the polarisation.
 
@@ -26,24 +26,24 @@ exactly, for every value of the other six parameters. **The phase is the argumen
 
 **The restriction.** The word is defined for $r>0$; the cone is $r=0$; the limit is a statement on that domain.
 
-**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the word $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the word $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
 ## The Word, the Norm and the Four Brackets
 
-**The word.** $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complex carrier, with $r>0$ and the frame a full unit rather than a boost. **The count is eight and it matches the components**, and the N-regular set is $r>0$ and nothing else, because the norm vanishes only at $r=0$.
+**The word.** $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complex carrier, with $r>0$ and the frame a full unit rather than a boost. **The count is eight and it matches the components**, and the N-regular set is $r>0$ and nothing else, because the norm vanishes only at $r=0$.
 
 **What the two extra factors carry.** The phase carries the oscillation and therefore the momentum; the rotor carries the polarisation's transverse part. **Without them the real chart put the oscillation in the amplitude and had nothing to rotate**, which is the free companion's finding seen from the other side.
 
 **The logarithmic derivative, four brackets again.**
 
 $$
-\tilde A^{-1}\partial_\mu\tilde A=\partial_\mu\ln r+i\,\partial_\mu\vartheta_{\mathrm{pha}}
+\tilde A^{-1}\partial_\mu\tilde A=\partial_\mu\ln r+i\,\partial_\mu\theta_{\mathrm{pha}}
 +\bigl(\text{the boost's connection}\bigr)+\bigl(\text{the rotor's connection}\bigr),
 $$
 
 with the same four types as the Dirac chart: real central, central imaginary, Hermitian, real vector part. **The limit's order structure is therefore the Dirac family's**, and the reason is that the carrier admits the same four factors.
 
-**The gauge transformation is a phase translation.** For $A_\mu=\partial_\mu\Lambda$ the covariant derivative acts as $i\partial_\mu(\vartheta_{\mathrm{pha}}+\frac{q}{\hbar}\Lambda)$, so **the entire effect of a pure gauge potential is a reparameterisation of one coordinate** — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
+**The gauge transformation is a phase translation.** For $A_\mu=\partial_\mu\Lambda$ the covariant derivative acts as $i\partial_\mu(\theta_{\mathrm{pha}}+\frac{q}{\hbar}\Lambda)$, so **the entire effect of a pure gauge potential is a reparameterisation of one coordinate** — the parent's section title and the reason the criterion must be written on the mechanical phase gradient.
 
 **The chart's tetrad.** The second-order operator reads
 
@@ -65,13 +65,13 @@ so **the equation is the free one written in the field's own frame**, the four u
 
 | bracket | order | what it carries |
 |---|---|---|
-| $i\partial_\mu\vartheta_{\mathrm{pha}}$ | $0$ | the mechanical wavevector |
+| $i\partial_\mu\theta_{\mathrm{pha}}$ | $0$ | the mechanical wavevector |
 | $\partial_\mu\ln r$ | $1$ | the envelope's transport |
 | the boost's connection | $1$ | the velocity's transport |
 | the rotor's connection | $1$ | the polarisation's transport |
 | products of two of the above | $2$ | the curvature |
 
-**Why the amplitude can be an envelope here and could not be in the free chart.** The oscillation is in the phase, so the amplitude is free to be slowly varying: a plane wave with constant amplitude is a solution, $r=\text{const}$ and $\vartheta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega r'_{t}$. **In the real chart no such solution exists**, because a real field satisfying $(\Box_\Phi-k_m^{2})A=0$ must oscillate through zero, and the oscillation then falls on the amplitude.
+**Why the amplitude can be an envelope here and could not be in the free chart.** The oscillation is in the phase, so the amplitude is free to be slowly varying: a plane wave with constant amplitude is a solution, $r=\text{const}$ and $\theta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega r'_{t}$. **In the real chart no such solution exists**, because a real field satisfying $(\Box_\Phi-k_m^{2})A=0$ must oscillate through zero, and the oscillation then falls on the amplitude.
 
 **That is the whole difference between the two Proca articles, and it is one sentence.** *A complex field's fast variable is continuous and a real field's is discrete, and only the continuous one can be differentiated into a wavevector.*
 
@@ -128,7 +128,7 @@ $$
 
 ## Verification
 
-**The norm was checked to be exact.** $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ for every value of the six frame angles, and the parent reports the check at machine precision on random draws. **The N-regular set is therefore $r>0$**, since the norm vanishes only at $r=0$.
+**The norm was checked to be exact.** $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ for every value of the six frame angles, and the parent reports the check at machine precision on random draws. **The N-regular set is therefore $r>0$**, since the norm vanishes only at $r=0$.
 
 **The constant-amplitude solution was checked to exist.** A complex plane wave $\tilde A=A_0e^{i(\vec k\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and constant $\tilde U$ satisfies the equation when $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$ and $\kappa\cdot A_0=0$, and its scale is constant. **No real solution has a constant scale**, because a real field satisfying the same equation must cross zero. **The existence of a slow envelope is therefore a property of the complex carrier.**
 
@@ -140,7 +140,7 @@ $$
 
 ## Summary
 
-The coupled Proca field lives on the complex carrier, so the word regains the phase and the rotor, and the norm's argument is the phase: $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$. **The phase's availability is the reason the charge exists and the reason a non-quantum limit exists.**
+The coupled Proca field lives on the complex carrier, so the word regains the phase and the rotor, and the norm's argument is the phase: $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$. **The phase's availability is the reason the charge exists and the reason a non-quantum limit exists.**
 
 Order zero is the mechanical mass shell together with the transverse polarisation, $\kappa\cdot\tilde A_0=0$: three states and one shell. Order one carries the density, the velocity and the polarisation, all read in the field's own tetrad. Order two is the amplitude's and the frame's curvature, and here — unlike the free real chart — its size is $\epsilon^{2}$ because the amplitude is an envelope.
 
@@ -150,10 +150,10 @@ Order zero is the mechanical mass shell together with the transverse polarisatio
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
+| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
 | $r>0$ | The scale; the template's amplitude |
-| $\vartheta_{\mathrm{pha}}$; $S=\hbar\vartheta_{\mathrm{pha}}$ | The phase; the action |
-| $\langle\tilde A\rangle_\natural=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ | The norm; the phase as its argument |
+| $\theta_{\mathrm{pha}}$; $S=\hbar\theta_{\mathrm{pha}}$ | The phase; the action |
+| $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ | The norm; the phase as its argument |
 | $\tilde A^{-1}e_\mu^{\natural}\tilde A$ | The field's own tetrad |
 | $\kappa_t$, $\vec\kappa$; $\vec\pi=\hbar\vec\kappa$ | The covariant wavevector's slots; the mechanical momentum |
 | $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ | The covariant Lorenz constraint |

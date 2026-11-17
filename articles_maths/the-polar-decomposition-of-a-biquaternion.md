@@ -24,7 +24,7 @@ The article works in the algebra throughout. It gives the coordinate formula for
 
 The article treats the general case, on the whole algebra. It does not treat the refinement of the two factors into a scale, a central phase, a Hermitian boost and a unit real quaternion; nor the exponential polar decomposition; nor the spectral decomposition. Those are separate articles. The two factors here are the general ones, and the finer words are separate objects, not a rewriting of this pair.
 
-Off the cone the pair is the Cartan pair of the group of invertibles: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Polar Decomposition of an N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
+Off the cone the pair is the Cartan pair of the group of invertibles: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Complete Polar Decomposition of an N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
 The conventions and the symbols are those of *Algebra and Element Conventions*; the symbols are collected in §*Summary of Notation*. The product is the plain product, the conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the two algebraic norms are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 

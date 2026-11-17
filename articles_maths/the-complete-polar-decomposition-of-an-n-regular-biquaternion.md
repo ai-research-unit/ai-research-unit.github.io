@@ -1,4 +1,4 @@
-# __The Polar Decomposition of an N-Regular Biquaternion__
+# __The Complete Polar Decomposition of an N-Regular Biquaternion__
 
 ## Introduction
 
@@ -22,11 +22,13 @@ $$
 \Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-The four factors are the **scale** $r>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$ of modulus one, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
+The four factors are the **scale** $r>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$, the exponential of a real angle $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
 
 $$
 \boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
+
+**The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
 
 The two levels are collected in the table.
 
@@ -83,16 +85,16 @@ and the other root $-\Rho$ lies outside it. On $\mathcal H$ the root is a functi
 **The scale and the phase.** The polar coordinates of the modulus on $\mathcal H$ are
 
 $$
-r=\lvert\Rho\rvert=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad e^{i\theta_{\mathrm{pha}}}=\frac{\Rho}{\lvert\Rho\rvert},\qquad \lverte^{i\theta_{\mathrm{pha}}}\rvert=1 .
+r=\lvert\Rho\rvert=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad \theta_{\mathrm{pha}}=\arg\Rho,\qquad \lvert e^{i\theta_{\mathrm{pha}}}\rvert=1 .
 $$
 
-The phase lies in the half of the unit circle cut by the branch,
+The phase factor lies in the half of the unit circle cut by the branch, and the angle lies in the strip that parametrises it,
 
 $$
-e^{i\theta_{\mathrm{pha}}}\in\{e^{i\theta_{\mathrm{pha}}}\in\mathbb C:\lverte^{i\theta_{\mathrm{pha}}}\rvert=1,\ \operatorname{Re}e^{i\theta_{\mathrm{pha}}}>0\}\cup\{i\},
+e^{i\theta_{\mathrm{pha}}}\in\{z\in\mathbb C:\lvert z\rvert=1,\ \operatorname{Re}z>0\}\cup\{i\},\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
 $$
 
-it takes the value $1$ on the positive real axis and $i$ on the positive imaginary axis, and it never takes the values $-1$ or $-i$.
+The angle vanishes on the positive real axis, takes the value $\pi/2$ on the positive imaginary axis, and never takes the values $\pi$ or $-\pi/2$.
 
 **The unit factor.** Put
 
@@ -141,7 +143,7 @@ The two factors of the previous section are each the product of two.
 The modulus splits into the scale and the phase,
 
 $$
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad r>0,\qquad \lverte^{i\theta_{\mathrm{pha}}}\rvert=1 .
+\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
 $$
 
 The two are central and commute with every element. They carry the norm between them,
@@ -219,7 +221,7 @@ with the four factors of the table.
 | factor | value | defining equation | real dimension | type |
 |---|---|---|---|---|
 | $r$ | scale | $r=\lvert\Rho\rvert$, $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ | $1$ | positive real, central |
-| $e^{i\theta_{\mathrm{pha}}}$ | central phase | $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ | $1$ | unit complex scalar, central |
+| $\theta_{\mathrm{pha}}$ | central phase angle | $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ | $1$ | real angle, central |
 | $\tilde U_{\mathrm b}$ | boost | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$ | $3$ | Hermitian positive definite, norm one |
 | $\tilde u_{\mathrm r}$ | rotor | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ | $3$ | unit real quaternion, $SU(2)$ |
 
@@ -235,7 +237,7 @@ Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $e^{i\theta_{
 
 ### The branch cut
 
-The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $e^{i\theta_{\mathrm{pha}}}$ and $\tilde u_{\mathrm r}$ both change sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
+The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\theta_{\mathrm{pha}}$ advances by $\pi$ and $\tilde u_{\mathrm r}$ changes sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
 
 ## The Group of Invertibles
 
@@ -250,7 +252,7 @@ is a bijection: it is injective by the uniqueness theorem, and it is surjective 
 The map is not a group homomorphism. The scale is multiplicative, and the phase is multiplicative only up to a sign,
 
 $$
-r(\tilde Q_1\tilde Q_2)=r(\tilde Q_1)r(\tilde Q_2),\qquad e^{i\theta_{\mathrm{pha}}}(\tilde Q_1\tilde Q_2)=\varepsilon\,e^{i\theta_{\mathrm{pha}}}e^{i\theta_{\mathrm{pha}}},\qquad \varepsilon=\pm1,
+r(\tilde Q_1\tilde Q_2)=r(\tilde Q_1)r(\tilde Q_2),\qquad \theta_{\mathrm{pha}}(\tilde Q_1\tilde Q_2)\equiv\theta_{\mathrm{pha}}(\tilde Q_1)+\theta_{\mathrm{pha}}(\tilde Q_2)\pmod{\pi},
 $$
 
 with $\varepsilon=-1$ exactly when the product $\Rho_1\Rho_2$ leaves the principal half-plane. The sign is central, so it can be absorbed by the phase or by the rotor. The factors multiply, but the parameters of the boost and of the rotor do not add: after the multiplication the middle product $\tilde u_{\mathrm r,1}\tilde U_{\mathrm b,2}$ has to be split again.
@@ -258,7 +260,7 @@ with $\varepsilon=-1$ exactly when the product $\Rho_1\Rho_2$ leaves the princip
 **Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the $*$-unitary group $U(2)$, the set of words with $r=1$ and $\tilde U_{\mathrm b}=e_t$,
 
 $$
-U(2)=\{e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}:\lverte^{i\theta_{\mathrm{pha}}}\rvert=1,\ \tilde u_{\mathrm r}\in SU(2)\}.
+U(2)=\{e^{i\theta}\,\tilde u_{\mathrm r}:\theta\in\mathbb R,\ \tilde u_{\mathrm r}\in SU(2)\}.
 $$
 
 *Proof.* The compact part of the word is the phase times the rotor, and both are $*$-unitary, so their product is $*$-unitary; the scale and the boost are positive and non-compact. Conversely, if $V$ is $*$-unitary, then $\det V$ is a unit complex number; choose $e^{i\theta_{\mathrm{pha}}}$ in the branch with $e^{2i\theta_{\mathrm{pha}}}=\det V$, and $K=e^{-i\theta_{\mathrm{pha}}}V$ is $*$-unitary of determinant one, hence a unit real quaternion. Any compact subgroup has a bounded scale, hence scale one, and a bounded boost; the boost is trivial on it, since the powers of an eigenvalue $\lambda\neq1$ are unbounded or tend to zero. Hence a compact subgroup lies in $U(2)$, which is compact and therefore maximal.
@@ -370,7 +372,7 @@ The positive factor is the scale times the boost, of determinant $r^{2}$; the $*
 | factor | matrix | the determinant of the image | action |
 |---|---|---|---|
 | scale | $rI$, $r>0$ | $r^{2}$ | dilation of ratio $r$ |
-| central phase | $e^{i\theta_{\mathrm{pha}}} I$, $\lverte^{i\theta_{\mathrm{pha}}}\rvert=1$ | $e^{2i\theta_{\mathrm{pha}}}$ | central multiplication |
+| central phase | $e^{i\theta_{\mathrm{pha}}} I$ | $e^{2i\theta_{\mathrm{pha}}}$ | central multiplication |
 | boost | $M_{\mathrm b}$, Hermitian positive | $1$ | congruence $X\mapsto M_{\mathrm b}XM_{\mathrm b}^{\dagger}$ |
 | rotor | $M_{\mathrm r}\in SU(2)$ | $1$ | conjugation $X\mapsto M_{\mathrm r}XM_{\mathrm r}^{-1}$ |
 
@@ -447,7 +449,7 @@ The four factors are computed in five steps.
 
 2. **The modulus.** Compute $\Rho$ from the branch formula of §*The Two Factors*. The result satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ and lies in $\mathcal H$.
 
-3. **The scale and the phase.** Put $r=\lvert\Rho\rvert$ and $e^{i\theta_{\mathrm{pha}}}=\Rho/r$.
+3. **The scale and the phase.** Put $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\arg\Rho$, so that $e^{i\theta_{\mathrm{pha}}}=\Rho/r$.
 
 4. **The unit factor.** Put $\tilde U=\tilde Q/\Rho$ and check $\langle\tilde U\rangle_{\natural}=1$.
 
@@ -485,7 +487,7 @@ $$
 so $\lvert N\rvert=2$, $a=0$, $b=2$, and the principal root is $\Rho=1+i$. The scale and the phase are
 
 $$
-r=\sqrt2,\qquad e^{i\theta_{\mathrm{pha}}}=\frac{1+i}{\sqrt2}.
+r=\sqrt2,\qquad \theta_{\mathrm{pha}}=\frac{\pi}{4},\qquad e^{i\theta_{\mathrm{pha}}}=\frac{1+i}{\sqrt2}.
 $$
 
 The unit factor is
@@ -512,7 +514,7 @@ The four factors are collected in the table.
 | factor | value | quaternionic norm |
 |---|---|---|
 | $r$ | $\sqrt2$ | $r^{2}=2$ |
-| $e^{i\theta_{\mathrm{pha}}}$ | $(1+i)/\sqrt2$ | $e^{2i\theta_{\mathrm{pha}}}=i$ |
+| $\theta_{\mathrm{pha}}$ | $\pi/4$ | $e^{2i\theta_{\mathrm{pha}}}=i$ |
 | $\tilde U_{\mathrm b}$ | $(3e_t-i\vec e_x+i\vec e_y+i\vec e_z)/\sqrt6$ | $1$ |
 | $\tilde u_{\mathrm r}$ | $\sqrt{2/3}\,e_t+\vec e_x/\sqrt6+\vec e_y/\sqrt6$ | $1$ |
 
@@ -528,7 +530,7 @@ The polar decomposition of an $\natural$-regular biquaternion is the modulus–u
 | Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary |
 | modulus–unit | $\tilde Q=\Rho\tilde U$, $\Rho\in\mathcal H$, $\langle\tilde U\rangle_{\natural}=1$ |
 | modulus | $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$, $\Rho\in\mathcal H$ |
-| scale and phase | $r=\lvert\Rho\rvert$, $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
+| scale and phase | $r=\lvert\Rho\rvert$, $\theta_{\mathrm{pha}}=\arg\Rho$, with $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
 | boost | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$, Hermitian positive definite, norm one |
 | rotor | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$, unit real quaternion |
 | word | $\tilde Q=re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
@@ -550,7 +552,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, complex and nonzero |
 | $\Rho$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
 | $r$ | the scale, $\lvert\Rho\rvert$ |
-| $e^{i\theta_{\mathrm{pha}}}$ | the central phase, $\Rho/r$ |
+| $\theta_{\mathrm{pha}}$ | the central phase angle, $\arg\Rho$, with $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
 | $\tilde U$ | the unit factor, $\tilde Q/\Rho$, of norm one |
 | $\tilde U_{\mathrm b}$ | the boost, $(\tilde U\tilde U^{*})^{1/2}$ |
 | $\tilde u_{\mathrm r}$ | the rotor, $\tilde U_{\mathrm b}^{-1}\tilde U$ |

@@ -129,7 +129,7 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 
 ### The Word Off the Cone
 
-Off the null cone the two polar factors refine into the four factors of the polar word. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
+Off the null cone the two polar factors refine into the four factors of the complete polar decomposition. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
 
 $$
 \tilde M_{\mathrm{kraus}}=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},

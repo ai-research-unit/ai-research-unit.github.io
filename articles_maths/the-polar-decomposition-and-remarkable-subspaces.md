@@ -4,13 +4,13 @@
 
 **The subject.** This article reads the polar decomposition against the six remarkable subspaces of the algebra.
 
-The four-factor word is that of *The Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
+The four-factor word is the **complete polar decomposition** of *The Complete Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
 
 $$
-\tilde{Q} = r\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\tilde{Q} = r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-with the positive real scale $r$, the central phase $\omega$ of modulus one on the branch $\arg\omega\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
+with the positive real scale $r$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
 
 The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is $*$-unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
@@ -18,19 +18,19 @@ The algebra carries six **remarkable subspaces**, defined in *Subspaces and Deco
 
 **The approach.** The article establishes four things, in this order. The four blocks and the exponent of each factor are identified. The blocks are put against the Clifford grades and against the six subspaces, which are their sums two by two. The incidence of the exponents with the subspaces is tabulated, with the polar data each subspace carries. The two products of the series — of two boosts, and of the word of a pure vector — are computed, and the domain and the conjugations of the word close the account.
 
-**The result, in one sentence.** The four exponents of a generic polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the polar word fails on a subspace exactly on the origin or its nonzero zero divisors.
+**The result, in one sentence.** The four exponents of a generic complete polar decomposition lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of them, and the complete polar decomposition fails on a subspace exactly on the origin or its nonzero zero divisors.
 
 Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_te_t-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.
 
-The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the polar word is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
+The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the complete polar decomposition is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
+The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Complete Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
 ## The Four Exponents of the Word
 
-Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta_{\mathrm{pha}}=\arg\omega$, and the square of the root decides the character of the factor. The four factors and their exponents are
+Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta_{\mathrm{pha}}$, and the square of the root decides the character of the factor. The four factors and their exponents are
 
 $$
 \boxed{\; \tilde{Q}=r\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
@@ -80,7 +80,7 @@ $$
 1+1+3+3 = 8 = \dim_{\mathbb{R}}\mathbb{B} ,
 $$
 
-and it is the same statement as the independence of the four factors in *The Polar Decomposition of an N-Regular Biquaternion*.
+and it is the same statement as the independence of the four factors in *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 Because the four exponents lie in the four blocks and the four blocks add to the algebra, **the four exponents of a generic polar word are linearly independent**: they occupy one direction in each block, so they span a real four-dimensional subspace of $\mathbb{B}$, one dimension in each block, and the word is generated, block by block, by one scalar, one pseudoscalar, one Clifford vector and one bivector generator, in the grade notation of the next section.
 
@@ -569,7 +569,7 @@ The two products of the series are the product of two boosts, which is a boost t
 | $\tilde{Q} = r \omega \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
 | $r$, $\omega$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\Rho = r\omega = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
-| $\theta_{\mathrm{pha}}$ | the phase angle, $\theta_{\mathrm{pha}}=\arg\omega\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
+| $\theta_{\mathrm{pha}}$ | the phase angle, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
 | $\ln r$, $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
 | $A_1 = \mathbb{R}e_t$ | the real scalar block, home of the scale exponent |
 | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar block, home of the phase exponent |
@@ -595,7 +595,7 @@ The two products of the series are the product of two boosts, which is a boost t
 ## Further Reading
 
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their closed forms, the count $1+1+3+3$, the order of the factors and the branch of the modulus.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, their closed forms, the count $1+1+3+3$, the order of the factors and the branch of the modulus.
 - [The Polar Decomposition of a Biquaternion](the-polar-decomposition-of-a-biquaternion.html), for the two-factor pair on the whole algebra, its uniqueness, its continuity and its behaviour at the null cone and at the origin.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the closed forms of the pair on the two sectors of the cone.
 - *The Polar Decomposition in Subspaces*, for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost has rapidity $\theta_{\mathrm{rpd}}$ and the sign $-i$, where the maths series has rapidity $\tfrac{\theta_{\mathrm{rpd}}}{2}$ and the sign $+i$ in the same closed form, so for the same element the parameter of the maths series is twice the one used there; the sign of the imaginary unit is the orientation of the axis and carries nothing more.

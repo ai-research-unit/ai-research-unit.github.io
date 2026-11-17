@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article works sixteen numerical cases of the exponential polar decomposition in the N-regular sector. Eight are off the wall, with $B^2\neq0$; eight are on it, with $B^2=0$. Every case is an element
+This article works sixteen numerical cases of the exponential form of the complete polar decomposition in the N-regular sector. Eight are off the wall, with $B^2\neq0$; eight are on it, with $B^2=0$. Every case is an element
 
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,
@@ -1462,6 +1462,6 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 - [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs, the spectral reading and the rigidity of the word.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the dictionary between the word and the eigenvalue data, and its collapse on the Jordan part.
 - [Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html), for the same sixteen cases read in the eigenbasis and in the Jordan chain.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm.
 - [Algebra and Element Conventions](algebra-and-element-conventions.html), for the notation.

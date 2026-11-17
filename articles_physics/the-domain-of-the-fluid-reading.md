@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The polar word exists exactly on the elements of nonzero norm, and that set is not the whole algebra.** The word is a parametrisation of the invertibles, so it is defined where the element is invertible and nowhere else. The complement is the zero-divisor cone: the set of elements whose quaternionic norm vanishes. On the cone the field is not zero, the density is usually not zero, and the chart nevertheless fails. That is the article's subject.
+**The complete polar decomposition exists exactly on the elements of nonzero norm, and that set is not the whole algebra.** The word is a parametrisation of the invertibles, so it is defined where the element is invertible and nowhere else. The complement is the zero-divisor cone: the set of elements whose quaternionic norm vanishes. On the cone the field is not zero, the density is usually not zero, and the chart nevertheless fails. That is the article's subject.
 
 **The cone is a complex hypersurface and not a real one.** The norm is a complex number, so its vanishing is two real conditions on eight real parameters and the cone has six real dimensions. It is the set of singular matrices in the algebra's matrix representation, and its real codimension is two. The word "cone" is exact: the set is invariant under multiplication by any central scalar.
 

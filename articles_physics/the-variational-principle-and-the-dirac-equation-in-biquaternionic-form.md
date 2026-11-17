@@ -16,7 +16,7 @@ with $\tilde\Xi=\tilde\Xi_L+\tilde\Xi_R$ one element of $\mathbb{B}$ and the two
 
 The answer is one action, the pair as its variation, the electric current and the energy-momentum tensor with their chiral partner, and one structural statement that the element form could not make on its own. The structural statement is that the two-part form is a factorization that the two operators force: $\tilde\nabla_\Phi$ acts on one part and $(\tilde\nabla_\Phi)^{\natural}$ on the other, a first-order functional gives each operator one slot, and the mass is the only term that can couple two slots. It is not that a one-element action is impossible; it is that a one-element action cannot be the pair's.
 
-**This is the element-form variational principle.** The polar-form one is the companion article. The two differ more than the Schrödinger pair do, because the polar word carries a boost and a rotor and the polar action therefore carries the constraints that the element action does not.
+**This is the element-form variational principle.** The polar-form one is the companion article. The two differ more than the Schrödinger pair do, because the complete polar decomposition carries a boost and a rotor and the polar action therefore carries the constraints that the element action does not.
 
 **The equation is the parent's.** Nothing here is a new prediction and nothing here is a new solution. What is added is the action, the currents, and the reason the split is forced.
 

@@ -20,7 +20,7 @@ $$
 \tilde A_\Phi=i\,a'_t\,e_t+\vec A,
 $$
 
-with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. **The connection is central per component in the abelian case**, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ is a central operator, it commutes with the word, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
+with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. **The connection is central per component in the abelian case**, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
 
 **Three things are established.**
 

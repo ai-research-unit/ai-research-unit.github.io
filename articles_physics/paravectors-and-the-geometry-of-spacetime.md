@@ -410,7 +410,7 @@ Rotors compose by multiplication and the composite is a norm-one element whose p
 | $\tilde U_{\Psi,\mathrm b}$ | Frame rotor, a Hermitian unit paravector |
 | $\tilde V_{\Phi,\mathrm p}=\tilde U_{\Psi,\mathrm b}^{2}$ | Proper velocity, unimodular, $\gamma(e_t+\beta i\vec u_v)$ |
 | $\tilde V_{\Phi}=ic\,\tilde V_{\Phi,\mathrm p}^{\natural}$ | Four-velocity, in $\mathbb{B}_{\Phi}$ |
-| $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor of the polar word |
+| $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-vector factor of the complete polar decomposition |
 | $p_\parallel,\ p_\perp$ | Coplanar and orthogonal parts relative to the boost plane |
 | $p\mapsto\tilde V_{\Phi,\mathrm p}p_\parallel+p_\perp$ | The boost rule |
 | $\mathbb{B}_{V}$ | Pure subspace, the biparavectors |

@@ -8,13 +8,13 @@
 
 **The second finding is that the free fluid's incompressibility is the statement that the constraint is label-local.** At $ϙ=0$ the right-hand side vanishes identically and the constraint becomes a multiplier on both sides; **the mass's gift is therefore a locality in the momentum space**, which is the sharpest form the fluid article's sentence can take.
 
-**The third finding is that the mode basis of the charged spin-one fluid is a basis of the chart and not of the field.** The chart's scale is an amplitude and not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex and the invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **An amplitude at a label is therefore a coordinate**, and the transform's support is a property of the description.
+**The third finding is that the mode basis of the charged spin-one fluid is a basis of the chart and not of the field.** The chart's scale is an amplitude and not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex and the invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **An amplitude at a label is therefore a coordinate**, and the transform's support is a property of the description.
 
 **Position in the block.** This is the charged companion of [The Fourier Transform and the Spin-One Fluid](the-fourier-transform-and-the-spin-one-fluid.html) and the Fourier companion of [The Charged Spin-One Fluid: Three Currents and a Compressibility](the-charged-spin-one-fluid.html). It closes the eight Fourier articles of the fluid block.
 
 ## Conventions
 
-The charged spin-one fluid's: $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
+The charged spin-one fluid's: $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
 
 $$
 \tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
@@ -37,7 +37,7 @@ $$
 \qquad\Longrightarrow\qquad
 \mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
 =-\frac{iϙ}{\hbar}\langle\tilde A\rangle_{\natural}
-=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\vartheta_{\mathrm{pha}}} .
+=-\frac{iϙ}{\hbar}\,r^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
 
 **Transform the two sides and they have different shapes.**
@@ -76,7 +76,7 @@ $$
 **The chart's scale is not the field's norm, and the momentum space shows what that costs.**
 
 $$
-\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}},
+\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}},
 \qquad
 \mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}\ \text{only where the rotor is trivial}.
 $$
@@ -136,7 +136,7 @@ The coupled Proca constraint has two halves with different shapes in the momentu
 
 At $ϙ=0$ the right-hand side vanishes and the constraint becomes a multiplier on both sides, so the free fluid's incompressibility is a locality in the momentum space. The mass is what makes the right-hand side vanish, and a vanishing right-hand side is a diagonal condition; that is the sharpest form of the fluid article's claim that the incompressibility was the mass's gift.
 
-The chart's scale is not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ is complex. An amplitude at a label is therefore a coordinate, and the mode basis of this fluid is a basis of the description and not of the field — the only rung of the five in which the transform does not see the field.
+The chart's scale is not the field's norm, because $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex. An amplitude at a label is therefore a coordinate, and the mode basis of this fluid is a basis of the description and not of the field — the only rung of the five in which the transform does not see the field.
 
 What survives is the response $m^{2}\tilde A$, whose support is the field's, and the direction $\tilde A/r$. Conservation is the vanishing of a divergence, hence a diagonal statement, so the mode basis sees the response and cannot see which current is conserved.
 
@@ -147,11 +147,11 @@ Across the eight Fourier articles the invisible object is always either a produc
 | Symbol | Meaning |
 |---|---|
 | $ϙ$ | The coupling |
-| $\tilde A=r\,e^{i\vartheta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The eight-parameter word |
+| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The eight-parameter word |
 | $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+iϙ\tilde A_\Phi/\hbar$ | The covariant derivative |
 | $\tilde F$ | The field strength, built from covariant gradients |
 | $k_m=mc/\hbar$ | The mass wave number |
-| $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-(iϙ/\hbar)r^{2}e^{2i\vartheta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
+| $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-(iϙ/\hbar)r^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
 | $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ | The covariant constraint; a multiplier |
 | $\tilde K_\Phi$ | The label, the transform's variable |
 | $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ | The amplitude at a label, with no hat on the transform |

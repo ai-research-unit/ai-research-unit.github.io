@@ -22,7 +22,7 @@ $$
 
 the four being the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ collected in $\Rho$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ about the real unit axis $\vec u_{\mathrm b}$, and the rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$ about the real unit axis $\vec u_{\mathrm r}$. This article reads the two-sided operator one factor at a time and answers one question: **what does each factor do to the operator?** The answer is read one factor at a time, and the phase does nothing.
 
-The article is the vector-side companion of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operators on the N-Regular Sector*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential on the N-Regular Sector*.
+The article is the vector-side companion of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*. There the same word acts by left multiplication on the spinor module and all four factors are visible: the scale and the phase form the twist $\chi(\Rho)=\Rho$, and the boost and the rotor form the norm-one operator. Here the action is the two-sided operator on the algebra, the phase is invisible, and the boost and the rotor are the only factors that act on a vector by a Lorentz transformation. The one-sided companion is *One-Sided Operators on the N-Regular Sector*: there the same word is read through a single left or right multiplication, the phase is visible, and the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are exchanged at $\theta_{\mathrm{pha}}=\tfrac{\pi}{2}$. The exponent reading of the two slots is in *The Two-Sided Exponential on the N-Regular Sector*.
 
 The plan is the following. §*The Two-Sided Operator of the Word* proves the multiplicativity and the closed form $\mathrm{Sd}_{\tilde Q}=r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$. §*The Scale* to §*The Rotor* take the four factors in the order of the word. §*The Eigenbasis and the Two Spinor Slots* reads the two-sided operator as a two-slot operator, computes its spectrum as the four products $\lambda_i\bar\lambda_j$, and identifies the four products. §*The Image and the Kernel* identifies the image as the conformal Lorentz group and the kernel as the central unit circle. §*The Wall $B^{2}=0$* treats the unipotent case, its $3+1$ Jordan structure and its fixed directions. §*The Boundary: the Null Cone* records the comparison with the N-degenerate article. The article closes with the summary, the notation and the readings.
 
@@ -50,7 +50,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}Q_\mu^{2},\qquad \tilde Q\tilde Q^{\natural}=\langle\tilde Q\rangle_{\natural}\,e_t ,
 $$
 
-and the **domain** of the polar word is $\langle\tilde Q\rangle_{\natural}\neq0$. The word is
+and the **domain** of the complete polar decomposition is $\langle\tilde Q\rangle_{\natural}\neq0$. The word is
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
@@ -202,7 +202,7 @@ On the unit circle $|\lambda|=1$ the two such operators are equal, so the whole 
 
 - the norm, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$;
 - the determinant, $\det\mathsf M_2(\tilde Q)=\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$;
-- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\theta_{\mathrm{pha}})$, the twist $\chi(\Rho)=\Rho$ of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*.
+- the module, where left multiplication by $\tilde Q$ acts on the spinor module by the scalar $\Rho=r\exp(i\theta_{\mathrm{pha}})$, the twist $\chi(\Rho)=\Rho$ of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*.
 
 The first two are quadratic in $\Rho$ and see $2\theta_{\mathrm{pha}}$; the third is linear and sees $\theta_{\mathrm{pha}}$; the two-sided operator multiplies by $\Rho$ on the left and by $\bar\Rho$ on the right and sees $0$.
 
@@ -439,7 +439,7 @@ $$ L^{T}G_-L=r^{4}G_-,\qquad \det L=r^{8}, $$
 
 so the form is multiplied by $r^{4}$ and the volume by $r^{8}$; the causal type is preserved and the transformation is a similarity of ratio $r^{2}$.
 
-**Remark (what the image is not).** The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the two-sided operator sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and of this article.
+**Remark (what the image is not).** The image is not the $*$-unitary group and not $GL(2,\mathbb{C})$. The $*$-unitary group acts on the spinor module and sees the phase; the two-sided operator sees only the conformal Lorentz group. The two readings of the same word are the subject of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Operator Reading: the Twist*, and of this article.
 
 ## The Wall $B^{2}=0$: the Unipotent Case
 
@@ -672,10 +672,10 @@ On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\math
 - [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the operator exponential, the doubling rule and the cancellation of the phase.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
-- [The Cartan Hermitian Pairing of the Polar Decomposition on the N-Regular Sector](the-cartan-hermitian-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
-- [The Quaternion Pairing of the Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html) and [The Hamilton Root Pairing of the Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-polar-decomposition-on-the-n-regular-sector.html), for the two partial two-factor groupings.
+- [The Cartan Hermitian Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
+- [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html) and [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), for the two partial two-factor groupings.
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the two-sided operator as a product of the two regular maps, its spectrum, determinant, trace and rank.
 - [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html), for the two-sided operator as a completely positive map and its rank-one place among the completely positive maps.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.

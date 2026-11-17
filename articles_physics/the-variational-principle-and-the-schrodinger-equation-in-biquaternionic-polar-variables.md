@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Schrödinger Equation in Biquaternionic Polar Variables* substitutes the polar word of the field into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out. The action in element form is the companion's, *The Variational Principle and the Schrödinger Equation in Biquaternionic Form*:
+*The Schrödinger Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition of the field into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out. The action in element form is the companion's, *The Variational Principle and the Schrödinger Equation in Biquaternionic Form*:
 
 $$
 S[\tilde\Xi,\tilde\Xi^{*}]=\int \mathrm{d}t'\;\mathrm{Sc}\Bigl[\frac{i\hbar}{2}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\bigr)-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\Bigr],
@@ -427,7 +427,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 - [The Variational Principle and the Schrödinger Equation in Biquaternionic Form](the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-form.html), the companion, for the element-form action, its two currents and its two settings.
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the two norms, the four brackets and the flow that this article re-derives.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the equation, the carrier and the centrality of $i$.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word as a bijection on the invertibles.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word as a bijection on the invertibles.
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for Madelung's pair read as the first term of a series.
 - [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting in which the central pair is solved.

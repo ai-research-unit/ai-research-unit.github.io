@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the biquaternionic Schrödinger equation in the polar variables of the $N$-regular element. The general element's word has all four factors: the field's rapidity is a constant of the motion and the axis of the field's own boost precesses (§*The Equation in Polar Variables*), so the boost is not trivial in general. The central class is the separate case, in which the word collapses to $r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ and the equation separates into two exact real equations: a continuity equation for $\rho=r^{2}$ and a quantum Hamilton–Jacobi equation with quantum potential $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$. That is Madelung's pair, exact and not an approximation, away from the nodal set. The general solution of the constant-element case is the propagator $\tilde Q(t')\tilde\Xi(0)$, and the polar word is the lens on it; the central collapse is the Madelung reading of that lens.
+This article writes the biquaternionic Schrödinger equation in the polar variables of the $N$-regular element. The general element's word has all four factors: the field's rapidity is a constant of the motion and the axis of the field's own boost precesses (§*The Equation in Polar Variables*), so the boost is not trivial in general. The central class is the separate case, in which the word collapses to $r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ and the equation separates into two exact real equations: a continuity equation for $\rho=r^{2}$ and a quantum Hamilton–Jacobi equation with quantum potential $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$. That is Madelung's pair, exact and not an approximation, away from the nodal set. The general solution of the constant-element case is the propagator $\tilde Q(t')\tilde\Xi(0)$, and the complete polar decomposition is the lens on it; the central collapse is the Madelung reading of that lens.
 
 The Schrödinger equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Schrödinger Equation in Biquaternionic Form* writes it as
 
@@ -18,7 +18,7 @@ and states what the equation does not need: no column, no minimal left ideal, no
 
 The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamiltonian times the interval over $\hbar$. The exponent $-i\tilde H_\Psi t'/\hbar$ is anti-Hermitian, not the Hamiltonian, and that is what makes it unitary: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
 
-This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the polar word of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form it takes in *Exponential Polar Decomposition on the N-Regular Sector*:
+This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *Exponential Polar Decomposition on the N-Regular Sector*:
 
 $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -358,7 +358,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 ## Further Reading
 
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the equation, its solution and the axis-free array.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
 - [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), for the exponential form used here.
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the two relativistic equations.

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the integral: a sum over worldlines, each carrying the phase $e^{iS/\hbar}$ and an algebra-valued spin factor, whose result is the propagator of the chiral pair. This article writes the same integral in the polar word.
+*The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the integral: a sum over worldlines, each carrying the phase $e^{iS/\hbar}$ and an algebra-valued spin factor, whose result is the propagator of the chiral pair. This article writes the same integral in the complete polar decomposition.
 
-The word is the parametrisation $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ of *The Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Dirac Equation in Biquaternionic Polar Variables*. It is a bijection from eight real parameters onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral. It is the companion's integral read in other coordinates, as *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables* is the element action read in other coordinates.
+The word is the parametrisation $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ of *The Complete Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Dirac Equation in Biquaternionic Polar Variables*. It is a bijection from eight real parameters onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral. It is the companion's integral read in other coordinates, as *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables* is the element action read in other coordinates.
 
 Two objects are read: the weight of one path, and the kernel that the sum of the weights produces. The weight is central. The kernel is not. The whole difference between this reading and the reading of the Schrödinger path integral lies in that one fact, and the article returns to it at every section.
 
@@ -313,7 +313,7 @@ None of this is a new integral. It is the companion's integral read in the coord
 - [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the polar action, the four vanishing momenta and the mass relation.
 - [The Path Integral and the Schrödinger Equation in Biquaternionic Form](the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form.html), for the central kernel and the van Vleck kernel of the scalar case.
 - [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the scalar kernel that the first-order operator acts on.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its bijection.
 - F. A. Berezin and M. S. Marinov, "Particle spin dynamics as the Grassmann variant of classical mechanics," *Annals of Physics* **104** (1977) 336–362, for the odd variables of the worldline.
 - L. Brink, P. Di Vecchia and P. Howe, "A Lagrangian formulation of the classical and quantum dynamics of spinning particles," *Nuclear Physics B* **118** (1977) 76–94, for the supersymmetric worldline.
 - J. H. Van Vleck, "The correspondence principle in the statistical interpretation of quantum mechanics," *Proceedings of the National Academy of Sciences* **14** (1928) 178–188, for the fluctuation determinant.

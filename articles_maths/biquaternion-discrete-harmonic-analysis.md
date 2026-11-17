@@ -532,7 +532,7 @@ The algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\ma
 
 The convolution theorem is the sharpest contrast with the theorem of this article. The convolution here is commutative, the kernel needs no side convention, and the product in the frequency domain is the transform of the convolution for either type; the paper reports that for the quaternion transform the corresponding identity holds only in a restricted one-side form, which is consistent with the one-sided theorem proved above for $\mathbb{B}$ and with its loss of commutativity.
 
-The price is the vanishing-norm phenomenon of the previous section, which the commutative algebra has as well: the norm is the determinant, it vanishes on two ideals, and the transform has no single magnitude to be stationary in. The applications the paper gives are to colour, where the four dimensions are matched to a three-dimensional colour space; the redundancy is removed by a **simplified polar form**, treated with the other polar forms of the family in *The Polar Decomposition of an N-Regular Biquaternion*.
+The price is the vanishing-norm phenomenon of the previous section, which the commutative algebra has as well: the norm is the determinant, it vanishes on two ideals, and the transform has no single magnitude to be stationary in. The applications the paper gives are to colour, where the four dimensions are matched to a three-dimensional colour space; the redundancy is removed by a **simplified polar form**, treated with the other polar forms of the family in *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 
 ## Open Questions

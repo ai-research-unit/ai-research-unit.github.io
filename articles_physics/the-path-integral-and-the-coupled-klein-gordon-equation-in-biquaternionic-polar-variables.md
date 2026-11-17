@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The integral is the companion's and this article reads it in the chart.** *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form* builds the functional integral over central fields with the covariant derivative in the exponent, splits that exponent into three terms, and identifies the operator the Gaussian inverts. This article substitutes the polar word and reads where the connection lands.
+**The integral is the companion's and this article reads it in the chart.** *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form* builds the functional integral over central fields with the covariant derivative in the exponent, splits that exponent into three terms, and identifies the operator the Gaussian inverts. This article substitutes the complete polar decomposition and reads where the connection lands.
 
 **The word on a central field is a scale and an angle.** The boost and the rotor have nothing to carry and are $e_t$ and $\pm e_t$. So the chart has two functions per point, the measure has one Jacobian per point, and the connection has only two objects it can touch. The collapse is the polar equation article's and is not re-derived.
 

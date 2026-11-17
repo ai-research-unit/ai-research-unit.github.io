@@ -347,7 +347,7 @@ $$
 
 **Proposition 5 (the norm deficit).** $\lVert\tilde{Ζ}\rVert^2\ge1$, with equality exactly when $\tilde{Ζ}$ is Hermitian, that is, exactly when $\tilde Q$ is normal. Writing the root in real and imaginary parts, $\tilde{Ζ}=\vec p+i\vec p'$, the deficit is $2\lVert\vec p\rVert^2$.
 
-*Proof.* $\lvert B\rvert^2=\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares $Q_k^2$ have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality, since $\lVert\tilde{Ζ}\rVert^2=\lVert\vec Q\rVert^2/\lvert B\rvert^2$. If the arguments agree, $Q_k=\varkappa_{\mathrm{phs}} r_k$ with $r_k\in\mathbb{R}$, so $B=\pm\varkappa_{\mathrm{phs}}R$ with $R^2=\sum_kr_k^2$ and the root is Hermitian; the converse is immediate. The second form of the deficit follows from $(\tilde{Ζ},\tilde{Ζ})=\lVert\vec p\rVert^2-\lVert\vec p'\rVert^2=-1$.
+*Proof.* $\lvert B\rvert^2=\lvert B^2\rvert=\lvert\sum_kQ_k^2\rvert\le\sum_k\lvert Q_k\rvert^2$, with equality exactly when the non-zero squares $Q_k^2$ have one argument. Dividing by $\lvert B\rvert^2$ gives the inequality, since $\lVert\tilde{Ζ}\rVert^2=\lVert\vec Q\rVert^2/\lvert B\rvert^2$. If the arguments agree, $Q_k=e^{i\theta_{\mathrm{pha}}}r_k$ with $r_k\in\mathbb{R}$, so $B=\pm e^{i\theta_{\mathrm{pha}}}R$ with $R^2=\sum_kr_k^2$ and the root is Hermitian; the converse is immediate. The second form of the deficit follows from $(\tilde{Ζ},\tilde{Ζ})=\lVert\vec p\rVert^2-\lVert\vec p'\rVert^2=-1$.
 
 The three quantities $Q_t$, $B$ and $\lVert\tilde{Ζ}\rVert^2$ govern the norm independently.
 

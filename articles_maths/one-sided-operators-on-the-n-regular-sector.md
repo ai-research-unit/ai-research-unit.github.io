@@ -14,7 +14,7 @@ The two-sided operator of the polar decomposition is the product of the left act
 
 **What the norm decides, and what the vector form decides.** Inside the N-regular sector the second condition $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ cuts one wall, and the two sides of the wall behave differently in exactly one way. Everything global is fixed by $N$ alone: both operators are invertible, both have rank four, both have the whole algebra as image and zero as kernel, and the parameter map is faithful. The wall $B^{2}=0$ changes only the **eigenvalue count and the Jordan type**: off the wall there are two distinct eigenvalues and a semisimple operator, on the wall one repeated eigenvalue, and on the Jordan part of the wall two Jordan blocks of size two. That is the whole difference, and it is the reason the wall is a part of this article and not an article of its own.
 
-**The polar word.** The article reads the operators through the polar word
+**The complete polar decomposition.** The article reads the operators through it
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -887,7 +887,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 - [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential, the half-spin theorem and the weights.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
 - [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the four exponents read against the six remarkable subspaces and the sector blocks, and §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the infinitesimal split of the rotor and the boost.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The $4\times4$ Diagonalising Matrix*, for the left and right regular representations and their eigenvalues.
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the Lorentz group in biquaternionic form and the double cover.

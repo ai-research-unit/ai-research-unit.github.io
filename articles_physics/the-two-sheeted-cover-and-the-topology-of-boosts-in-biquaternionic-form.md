@@ -45,7 +45,7 @@ $$
 B_{\mathrm{right}}=\sqrt{\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}}
 =\tilde u_{\mathrm r}^{-1}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}\neq\tilde U_{\Psi,\mathrm b}.
 $$
-The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor and differ in the boost: the rapidity magnitude is the same, the axis is $\tilde u_{\mathrm r}^{-1}\vec u\,\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the word. A **pure boost** of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$ is
+The two words are the left and the right polar decompositions of the same rotor. They share the rotation factor and differ in the boost: the rapidity magnitude is the same, the axis is $\tilde u_{\mathrm r}^{-1}\vec u\,\tilde u_{\mathrm r}$. Only the rotation factor and the Wigner angle are independent of the complete polar decomposition. A **pure boost** of rapidity $\theta_{\mathrm{rpd}}$ along the unit real vector $\vec u$ is
 
 $$
 B(\theta_{\mathrm{rpd}},\vec u) = \cosh\frac{\theta_{\mathrm{rpd}}}{2} + i\,\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u,

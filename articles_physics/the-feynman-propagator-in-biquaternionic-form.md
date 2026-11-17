@@ -258,7 +258,7 @@ This is the physical content of the $i\epsilon$, and it is exactly the content t
 
 ## The Biquaternion Form of the Prescription
 
-The Feynman denominator has a compact biquaternion form. With the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, where $E$ denotes the timelike component, the same $p_0$ the contour integral runs over, and its quaternion conjugate $\tilde P_{\Phi}^{\natural}=iE\,e_t-\vec p$, the quaternion product is
+The Feynman denominator has a compact biquaternion form. With the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, where $E$ is the energy and $p_0=E/c$ is the variable the contour integral runs over, the quaternion conjugate is $\tilde P_{\Phi}^{\natural}=i(E/c)\,e_t-\vec p$, and the quaternion product is
 
 $$
 \tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=(iE/c)^2+\vec p^2=-E^{2}/c^{2}+\vec p^{\,2}=N .
@@ -288,10 +288,10 @@ The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$: a 
 One caveat belongs here, because it is the kind of sign that hides in prose. The Feynman term is **added to the scalar** $\mathcal{M}(\tilde P_{\Phi})$, and as an element it is anti-Hermitian. Displacing the four-momentum biquaternion is a different operation. With $\tilde P_{\Phi}\to\tilde P_{\Phi}+\delta e_t$,
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;\longmapsto\;N+2iE\delta+\delta^2 ,
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;\longmapsto\;N+2i(E/c)\delta+\delta^2 ,
 $$
 
-so reproducing the term requires $\delta=-\epsilon/(2E)$, which is **real**: the equivalent displacement of the momentum runs along the Hermitian direction, not the material one. The two readings agree on the pole positions to first order in $\epsilon$ and disagree on which sector the deformation lives in. The article's claim is the first: $\tilde P_{\Phi}$ is not displaced, the central scalar is, and it is that added term which lies in $\mathbb{B}_{\Phi}$. Read as a displacement of the momentum, the $i\epsilon$ would sit in the informational sector, because $\tilde P_{\Phi}$ carries its energy through $i$.
+so reproducing the term requires $\delta=-\epsilon c/(2E)$, which is **real**: the equivalent displacement of the momentum runs along the Hermitian direction, not the material one. The two readings agree on the pole positions to first order in $\epsilon$ and disagree on which sector the deformation lives in. The article's claim is the first: $\tilde P_{\Phi}$ is not displaced, the central scalar is, and it is that added term which lies in $\mathbb{B}_{\Phi}$. Read as a displacement of the momentum, the $i\epsilon$ would sit in the informational sector, because $\tilde P_{\Phi}$ carries its energy through $i$.
 
 The algebra therefore does three things here, and it is worth separating them:
 

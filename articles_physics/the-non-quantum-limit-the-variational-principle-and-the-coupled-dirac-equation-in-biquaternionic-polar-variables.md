@@ -39,7 +39,7 @@ $$
 
 **The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
 ## The Coupling's Reach
 

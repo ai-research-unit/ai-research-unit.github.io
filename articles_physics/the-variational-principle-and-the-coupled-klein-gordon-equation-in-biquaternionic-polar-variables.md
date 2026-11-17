@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the action of the coupled Klein–Gordon theory in the coordinates of the polar word and varies it. It is the polar companion of *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, and it continues *The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables*, whose bracket form of the kinetic term, metric, Legendre analysis and Jacobian argument it takes over. Its subject is the one thing the coupling changes in that structure, and the one thing it leaves alone.
+This article writes the action of the coupled Klein–Gordon theory in the coordinates of the complete polar decomposition and varies it. It is the polar companion of *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, and it continues *The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables*, whose bracket form of the kinetic term, metric, Legendre analysis and Jacobian argument it takes over. Its subject is the one thing the coupling changes in that structure, and the one thing it leaves alone.
 
 **The action.** With the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and the covariant bracket
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the Proca field in the polar variables of the material sector. It is the polar companion of *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, and it depends on three articles: that element form for the equation and the Lorenz condition, *The Dirac Equation in Biquaternionic Polar Variables* for the word and the logarithmic derivative, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* for the carrier and its complex structure.
+This article writes the Proca field in the polar variables of the material sector. It is the polar companion of *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, and it depends on three articles: that element form for the equation and the Lorenz condition, *The Dirac Equation in Biquaternionic Polar Variables* for the complete polar decomposition and the logarithmic derivative, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* for the carrier and its complex structure.
 
 **The substitution is not the Schrödinger substitution.** The polar word of the scalar and spinor equations,
 

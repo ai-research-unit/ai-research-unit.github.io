@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The limit in one sentence.** Take the polar word of the parent, count one spatial derivative of the phase as order one and one spatial derivative of the scale as order $\epsilon$, and the exact pair the parent prints separates into three orders: the Hamilton–Jacobi equation, the transport equation, and the quantum potential.
+**The limit in one sentence.** Take the complete polar decomposition of the parent, count one spatial derivative of the phase as order one and one spatial derivative of the scale as order $\epsilon$, and the exact pair the parent prints separates into three orders: the Hamilton–Jacobi equation, the transport equation, and the quantum potential.
 
 **The parent prints the pair, and this article orders it.** [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html) writes the field as the four-factor word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and prints, boxed, the two exact real equations that the central field obeys. Nothing below re-derives them. Each term of that pair is assigned a power of one parameter, and the limit is the statement of which powers survive.
 
@@ -261,7 +261,7 @@ The cost is one restriction. The pair is closed on the central class, that class
 - [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter, the criterion and the difference between the limit and the approximation.
 - [The Non-Quantum Limit, the Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), the same limit taken on the parent's action.
 - [The Non-Quantum Limit and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), where the second order restores a mass shell.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word and its factors.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), for the nodal set where the action is multivalued.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the pair the parent prints.
 - David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential and the guidance equation it defines.

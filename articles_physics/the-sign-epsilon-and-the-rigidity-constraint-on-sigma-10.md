@@ -30,7 +30,7 @@ $$
 N(\tilde\Xi)=\Rho^{2}=r^{2}e^{2i\theta_{\mathrm{pha}}}.
 $$
 
-**It is computed from the word and it is not a parameter of the word.** The word has eight parameters; $\varepsilon$ is a function of four of them, the rapidity, the rotor's angle and the two axes' mutual orientation. So a reader who met $\varepsilon$ in the spinor literature as a branch index chosen by a representation should note the difference: here nothing is chosen.
+**It is computed from the complete polar decomposition and it is not a parameter of the word.** The word has eight parameters; $\varepsilon$ is a function of four of them, the rapidity, the rotor's angle and the two axes' mutual orientation. So a reader who met $\varepsilon$ in the spinor literature as a branch index chosen by a representation should note the difference: here nothing is chosen.
 
 ### The Display
 

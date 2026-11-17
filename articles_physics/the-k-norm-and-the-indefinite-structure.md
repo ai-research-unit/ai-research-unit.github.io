@@ -43,7 +43,7 @@ $$
 | the rank of the one-sided multiplications, the two-sided operator and the polar decomposition | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the four products and their relations, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the minimal Hermitian idempotents, the Peirce lines and their normal form | [Hermitian Idempotents and the Peirce Decomposition](../articles_maths/hermitian-idempotents-and-the-peirce-decomposition.html) |
-| the modulus, its branch and its failure at the algebraic null cone | [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html) |
+| the modulus, its branch and its failure at the algebraic null cone | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 
 **The first row owns the partition.** The other rows supply what the entry uses and does not build: the topology of the two regions, the strata of the null set, the inertia of the form, the bridge to the definite companion, the group that preserves the value, the six restrictions, and the operator theory that follows the algebraic norm instead of the value.
 

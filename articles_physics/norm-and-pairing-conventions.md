@@ -6,7 +6,7 @@ These are the conventions of the norms and of the pairings. The norm of a form i
 
 The order follows the reading. The four norms are named by one letter each, with two arities; the qualified words regular and degenerate are fixed; the unitary convention fixes what norm one means in each layer and separates it from the star-unitary condition. The polar word follows, with its four factors and its domain, the two norms it is read against, the four objects called a boost, the four-momentum, the trace and the normalised state, and the three pairings with their non-nested domains.
 
-The article states conventions only; the existence and uniqueness of the word are proved in *The Polar Decomposition of an N-Regular Biquaternion*, and the pairings in *The Polar Decomposition and Its Three Pairings*.
+The article states conventions only; the existence and uniqueness of the word are proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*, and the pairings in *The Polar Decomposition and Its Three Pairings*.
 
 **No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
 
@@ -150,7 +150,7 @@ The series writes one polar word and reads it in three bracketings. The word, it
 
 ### The Word and Its Factors
 
-**The domain.** The word exists on the complement of the zero-divisor cone, $\langle\tilde Q\rangle_{\natural}\neq0$, and on no larger set. The existence and uniqueness are those of *The Polar Decomposition of an N-Regular Biquaternion*.
+**The domain.** The word exists on the complement of the zero-divisor cone, $\langle\tilde Q\rangle_{\natural}\neq0$, and on no larger set. The existence and uniqueness are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 **The word.** Every element off the cone is the ordered product
 
@@ -283,7 +283,7 @@ The trace of the $2\times2$ image is $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the fact
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | The Hermitian norm, real and non-negative |
 | $\lVert\tilde Q\rVert$ | The base norm, the square root of the Hermitian norm; bare on an element, and replaced by $\langle\mathsf M\rangle_*^{1/2}$ on a matrix |
 | $Ξ$-regular, $Ξ$-degenerate | $Ξ(\tilde Q)\neq0$ and $Ξ(\tilde Q)=0$; only the $N$ pair is the unit partition |
-| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
+| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the complete polar decomposition; $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\Psi,\mathrm b}$, $\mathcal B_{\Psi}$ | The frame rotor and the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ |
 | $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}$ | The Born weight, a ratio in which the factor two cancels |
@@ -294,4 +294,4 @@ The trace of the $2\times2$ image is $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the fact
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the four forms whose diagonals are these norms.
 - [Conventions of the Matrix Models](matrix-representations-conventions.html), for the $2\times2$ image whose trace is used here.
 - [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the domains and the proofs.
-- [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html), for the existence and uniqueness of the word.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the existence and uniqueness of the word.

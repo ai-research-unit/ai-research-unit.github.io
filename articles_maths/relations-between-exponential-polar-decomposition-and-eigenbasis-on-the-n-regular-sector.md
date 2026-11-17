@@ -2,7 +2,7 @@
 
 ## Introduction
 
-An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **exponential polar decomposition** splits the unit factor into a boost and a rotor, and multiplies the result by the modulus. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
+An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **exponential polar decomposition** splits the unit factor of the complete polar decomposition into a boost and a rotor, and multiplies the result by the modulus. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
 
 The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Off the wall the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct, the eigenprojections $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ exist, and they depend on the element. There the eigenvalues fix the modulus and the phase, and the two eigenvalues of the unit factor; the eigenprojections carry the remaining polar data. On the wall the two eigenvalues coalesce at $Q_t$, the eigenprojections diverge, and no eigenbasis exists. The spectral reading does not vanish; it collapses to a Jordan chain, and the spectrum fixes only two numbers, the scalar part $Q_t$ and the sign $\varepsilon$ of the unit factor.
 
@@ -66,17 +66,17 @@ r>0,\quad
 \lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1.
 $$
 
-The factors are the scale $r$, the phase $\omega=e^{i\theta_{\mathrm{pha}}}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *Exponential Polar Decomposition on the N-Regular Sector*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
+The factors are the scale $r$, the central phase $e^{i\theta_{\mathrm{pha}}}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *Exponential Polar Decomposition on the N-Regular Sector*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
 
 | Polar item | Value |
 |---|---|
 | Domain | $\mathbb{B}^\times=\{\tilde Q:Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0\}$ |
-| Decomposition | $\tilde Q=r\omega\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| Decomposition | $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | Scalar factor | $r>0$ |
-| Phase | $\omega=e^{i\theta_{\mathrm{pha}}}$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
+| Phase | $e^{i\theta_{\mathrm{pha}}}$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
 | Boost | $\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}$, $\theta_{\mathrm{rpd}}\ge0$ |
 | Rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ |
-| Unit factor | $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=Q/(r\omega)$ |
+| Unit factor | $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=Q/(r\,e^{i\theta_{\mathrm{pha}}})$ |
 | Parameters | $1+1+(1+2)+(1+2)=8$ real |
 
 ### The Common Domain
@@ -217,7 +217,7 @@ $$
 
 The trace of the matrix model is twice the scalar part, and the trace is the sum of the eigenvalues; the second identity follows.
 
-The formula is the exact obstruction to reading the polar word from the eigenvalues. The right-hand side depends on the three real numbers $\theta_{\mathrm{rpd}}/2\ge0$, $\theta_{\mathrm{axr}}/2\in[0,\pi]$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\in[-1,1]$, but only through their two real combinations $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)$ and $(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh(\theta_{\mathrm{rpd}}/2)\sin(\theta_{\mathrm{axr}}/2)$. One real degree of freedom among the three is invisible to $\operatorname{Sc}\tilde U$, and therefore to the eigenvalues. The two axes are invisible to $\operatorname{Sc}\tilde U$ as well; the eigenprojections carry the complex line of $\vec U$, four real parameters, which encodes both the missing degree and the directions.
+The formula is the exact obstruction to reading the complete polar decomposition from the eigenvalues. The right-hand side depends on the three real numbers $\theta_{\mathrm{rpd}}/2\ge0$, $\theta_{\mathrm{axr}}/2\in[0,\pi]$ and $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\in[-1,1]$, but only through their two real combinations $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)$ and $(\vec u_{\mathrm b}\cdot\vec u_{\mathrm r})\sinh(\theta_{\mathrm{rpd}}/2)\sin(\theta_{\mathrm{axr}}/2)$. One real degree of freedom among the three is invisible to $\operatorname{Sc}\tilde U$, and therefore to the eigenvalues. The two axes are invisible to $\operatorname{Sc}\tilde U$ as well; the eigenprojections carry the complex line of $\vec U$, four real parameters, which encodes both the missing degree and the directions.
 
 | Quantity | Depends on | Determined by $\lambda_\pm$? |
 |---|---|---|
@@ -1084,7 +1084,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [The Spectrum](the-spectrum.html), for the four sectors, the discriminants, and the degenerate cone.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
-- [The Polar Decomposition of an N-Regular Biquaternion](the-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.
 - [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
 - [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the commutative four-dimensional analogue.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

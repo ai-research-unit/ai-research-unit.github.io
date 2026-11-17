@@ -2,7 +2,7 @@
 
 ## Introduction
 
-*The Path Integral and the Coupled Dirac Equation in Biquaternionic Form* constructs the sum over worldlines for the coupled pair, with the gauge term in the exponent and the spin factor in the weight. This article writes the same integral in the polar word and reads where the connection lands.
+*The Path Integral and the Coupled Dirac Equation in Biquaternionic Form* constructs the sum over worldlines for the coupled pair, with the gauge term in the exponent and the spin factor in the weight. This article writes the same integral in the complete polar decomposition and reads where the connection lands.
 
 **The word is the corpus's, and it is a bijection.** Write
 
