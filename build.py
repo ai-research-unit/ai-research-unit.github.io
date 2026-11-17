@@ -278,12 +278,17 @@ def menu_order(menu_md, folder):
 def sitemap_urls():
     """Every public page of the site, as (deploy path, source file) pairs.
 
-    The internal collection stays out: no menu links it, and it holds drafts.
-    Physics comes before maths, and inside each collection the order is the
-    menu's. An article that no menu links goes last, by name, so it is still
-    listed.
+    The order is editorial, not alphabetical: the three entry pages, then the
+    physics corpus, then the maths corpus, then the two menu pages that index
+    them. Inside a collection the order is the menu's. The internal collection
+    stays out: no menu links it, and it holds drafts.
+
+    An article that no menu links goes last within its collection, by name, so
+    it is still listed.
     """
-    urls = [(out_name, SRC / md_name) for md_name, out_name, _ in ROOT_PAGES]
+    root = {out: (SRC / md) for md, out, _ in ROOT_PAGES}
+    head = ["index.html", "disclaimer.html", "contact.html"]
+    urls = [(out, root[out]) for out in head if out in root]
     for coll in ordered_collections():
         if coll["name"] == "internal":
             continue
@@ -293,6 +298,7 @@ def sitemap_urls():
         for f in files:
             rel = f.relative_to(coll["src"]).with_suffix(".html").as_posix()
             urls.append((f"{coll['src'].name}/{rel}", f))
+    urls += [(out, src) for out, src in root.items() if out not in head]
     return urls
 
 
