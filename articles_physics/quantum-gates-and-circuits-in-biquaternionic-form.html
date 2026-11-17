@@ -71,9 +71,9 @@
       <div class="article-body">
         <h1 id="quantum-gates-and-circuits-in-biquaternionic-form"><strong>Quantum Gates and Circuits in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive element normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) with Bloch vector $\vec r$.</p>
+<p>A quantum gate is a reversible operation on a quantum state. In the biquaternion framework the state of a qubit is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, namely a positive element normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) with Bloch vector $\vec s_{\Psi}$.</p>
 <p>$$
-\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3,
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec s_{\Psi}\right), \qquad \vec s_{\Psi} \in \mathbb{R}^3,
 $$</p>
 <p>and a gate is a <strong>single element of the algebra</strong> acting on it by conjugation:</p>
 <p>$$
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \boxed{\;\mathcal{U} \;=\; \{\tilde Q \in \mathbb{B} : \tilde Q\tilde Q^{*} = e_t\} \;\cong\; \mathrm{U}(2)\;},
 $$</p>
-<p>acting on a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ by <strong>rotor conjugation</strong></p>
+<p>acting on a state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ by <strong>rotor conjugation</strong></p>
 <p>$$
 Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi}) = \tilde Q\,\tilde{Ϛ}_{\Psi}\,\tilde Q^{*} .
 $$</p>
@@ -174,11 +174,11 @@ $$</p>
 \boxed{\;\mathrm{U}(2)/\mathrm{U}(1) \;\cong\; PU(2) \;\cong\; SO(3)\;},
 $$</p>
 <p>acting on the Bloch ball by rotations. This is the algebraic form of the unobservability of the global phase: two unitaries that differ by a central phase define the same gate.</p>
-<p><strong>The action on the Bloch vector.</strong> Writing the state as $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$, a gate acts as</p>
+<p><strong>The action on the Bloch vector.</strong> Writing the state as $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, a gate acts as</p>
 <p>$$
-\vec r \;\longmapsto\; R(\tilde Q)\,\vec r, \qquad R(\tilde Q) \in SO(3),
+\vec s_{\Psi} \;\longmapsto\; R(\tilde Q)\,\vec s_{\Psi}, \qquad R(\tilde Q) \in SO(3),
 $$</p>
-<p>a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.</p>
+<p>a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec s_{\Psi}|$ is preserved, and with it the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec s_{\Psi}|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec s_{\Psi}|)$. A gate rotates the Bloch ball rigidly; it never contracts it.</p>
 <p><strong>Rotation gates.</strong> The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta_{\mathrm{axr}}$,</p>
 <p>$$
 \tilde u_{\mathrm r}(\theta_{\mathrm{axr}}) = \cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t + \sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
@@ -190,7 +190,7 @@ $$</p>
 <p>$$
 \tilde Q = \pm\, i\vec u_{\mathrm r}, \qquad \vec u_{\mathrm r} \text{ a unit pure real quaternion},
 $$</p>
-<p>since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^{*} = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{B}_{\Psi}$, and as rotations they are the <strong>$\pi$-rotations</strong> of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec r\mapsto 2(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r} - \vec r$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.</p>
+<p>since $(i\vec u_{\mathrm r})^{*} = -i\vec u_{\mathrm r}^{*} = i\vec u_{\mathrm r}$ and $(i\vec u_{\mathrm r})^2 = -\vec u_{\mathrm r}^2 = e_t$. They lie in $\mathbb{B}_{\Psi}$, and as rotations they are the <strong>$\pi$-rotations</strong> of the Bloch sphere: conjugation by $i\vec u_{\mathrm r}$ sends $\vec s_{\Psi}\mapsto 2(\vec u_{\mathrm r}\cdot\vec s_{\Psi})\vec u_{\mathrm r} - \vec s_{\Psi}$. The Pauli gates and the Hadamard gate below are of this type; the phase and $T$ gates are not.</p>
 <p>A caution about representatives. A gate is a coset $\tilde Q\cdot \mathrm{U}(1)$; the representative can be chosen Hermitian only when the gate is an involution. Membership of the representative in $\mathbb{B}_{\Psi}$ or in $\mathbb{B}_{H}$ is therefore a property of the chosen representative, not an invariant of the gate. The one representative-independent statement is the factorisation $\tilde Q = \exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$: <strong>every gate is a central phase times a rotation, and no gate is anything else.</strong></p>
 <h2 id="the-standard-single-qubit-gate-set">The Standard Single-Qubit Gate Set</h2>
 <p>Under the isomorphism $\vec e_\eta \mapsto -i\sigma_\eta$, the image of $i \vec e_\eta$ is $\sigma_\eta$. The standard gate set therefore reads as follows. In each row the second column is a biquaternion representative; a representative differing by a central phase gives the same gate.</p>
@@ -200,7 +200,7 @@ $$</p>
 <th>Gate</th>
 <th>Biquaternion representative</th>
 <th>Matrix image</th>
-<th>Action on $\vec r=(r_1,r_2,r_3)$</th>
+<th>Action on $\vec s_{\Psi}=(r_1,r_2,r_3)$</th>
 </tr>
 </thead>
 <tbody>
@@ -451,7 +451,7 @@ $$</p>
 <p>$$
 Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi}) = (1-p)\tilde{Ϛ}_{\Psi} + p\left(\tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 + \tilde\Pi_2\tilde{Ϛ}_{\Psi}\tilde\Pi_2\right),
 $$</p>
-<p>which acts on the Bloch vector as $\vec r\mapsto(1-p)\vec r + p(\vec u_{\mathrm r}\cdot\vec r)\vec u_{\mathrm r}$. Its Bloch matrix is $\operatorname{diag}(1-p,1-p,1)$ in the eigenbasis of $\vec u_{\mathrm r}$, of determinant $(1-p)^2$. A gate acts by a rotation, whose Bloch matrix has determinant $+1$ and is orthogonal; hence for $0<p\leq 1$ the dephasing map <strong>is not a gate</strong>, and no representative of it is a single $*$-unitary conjugation. It is the canonical irreversible channel, and the companion article on decoherence analyses its effect on idempotency in detail.</p>
+<p>which acts on the Bloch vector as $\vec s_{\Psi}\mapsto(1-p)\vec s_{\Psi} + p(\vec u_{\mathrm r}\cdot\vec s_{\Psi})\vec u_{\mathrm r}$. Its Bloch matrix is $\operatorname{diag}(1-p,1-p,1)$ in the eigenbasis of $\vec u_{\mathrm r}$, of determinant $(1-p)^2$. A gate acts by a rotation, whose Bloch matrix has determinant $+1$ and is orthogonal; hence for $0<p\leq 1$ the dephasing map <strong>is not a gate</strong>, and no representative of it is a single $*$-unitary conjugation. It is the canonical irreversible channel, and the companion article on decoherence analyses its effect on idempotency in detail.</p>
 <p><strong>The same idempotents, used coherently and incoherently.</strong> The sharpest contrast is between two objects built from the same complementary idempotents:</p>
 <p>$$
 \tilde{Q}_{\tilde Q} = \tilde\Pi_1\otimes e_t + \tilde\Pi_2\otimes\tilde Q \quad\text{(a gate)},
@@ -529,7 +529,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$</td>
 <td>State of a qubit</td>
 </tr>
 <tr>

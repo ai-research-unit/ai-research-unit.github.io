@@ -91,19 +91,19 @@ $$</p>
 <p>$$
 \mathcal{E} = \bigl\{p_x,\ \tilde{Ϛ}_{\Psi,x}\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
+\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\vec s_{\Psi},x\bigr), \quad |\vec r_x|\leq1 .
 $$</p>
 <p>The <strong>average state</strong> is the convex combination</p>
 <p>$$
-\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\bar{\vec r}\bigr),
-\qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
+\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\bar{\vec s_{\Psi}}\bigr),
+\qquad \bar{\vec s_{\Psi}} = \sum_x p_x\,\vec r_x ,
 $$</p>
-<p>which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
+<p>which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec s}_{\Psi}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,</p>
 <p>$$
-S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
+S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec s}_{\Psi}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$</p>
-<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{Ϛ}_{\Psi,x}) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.</p>
+<p>as follows from the spectrum $\tfrac12(1\pm|\bar{\vec s}_{\Psi}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{Ϛ}_{\Psi,x}) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.</p>
 <h3 id="measurements-as-povms">Measurements as POVMs</h3>
 <p>A <strong>measurement</strong> with outcome label $y$ is a <strong>positive operator-valued measure</strong>: a family of Hermitian elements</p>
 <p>$$
@@ -129,7 +129,7 @@ S\!\left(\sum_x p_x\tilde{Ϛ}_{\Psi,x}\right) \;\geq\; \sum_x p_x\,S(\tilde{Ϛ}_
 $$</p>
 <p>which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_{\Psi,x}) = 0$, and the Holevo quantity is simply the entropy of the average state,</p>
 <p>$$
-\boxed{\;\xi = S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+\boxed{\;\xi = S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec s}_{\Psi}|}{2}\right)
 = H\bigl(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural}\bigr)\;},
 $$</p>
 <p>a function of the biquaternion norm of the average state alone. This is the case of greatest interest, because a source of pure states is what a preparation device most naturally produces and because the maximal accessible information is achieved with pure states.</p>
@@ -196,7 +196,7 @@ $$</p>
 p_0 = p_1 = \tfrac12, \qquad
 \tilde{Ϛ}_{\Psi,0} = \tilde\Pi_1(\vec u_z), \qquad \tilde{Ϛ}_{\Psi,1} = \tilde\Pi_2(\vec u_z) .
 $$</p>
-<p>The average state is $\tilde{Ϛ}_{\Psi}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so</p>
+<p>The average state is $\tilde{Ϛ}_{\Psi}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec s_{\Psi}} = 0$ and biquaternion norm $\tfrac14 e_t$, so</p>
 <p>$$
 \xi = S(\tfrac12 e_t) = \log 2 .
 $$</p>
@@ -310,7 +310,7 @@ $$</p>
 <td>Central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi,x} = \tfrac12(e_t + i\vec r_x)$</td>
+<td>$\tilde{Ϛ}_{\Psi,x} = \tfrac12(e_t + i\vec s_{\Psi},x)$</td>
 <td>Ensemble state</td>
 </tr>
 <tr>
@@ -334,7 +334,7 @@ $$</p>
 <td>Holevo quantity</td>
 </tr>
 <tr>
-<td>$S(\tilde{Ϛ}_{\Psi}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$</td>
+<td>$S(\tilde{Ϛ}_{\Psi}) = h\!\left(\tfrac{1+|\vec s_{\Psi}|}{2}\right)$</td>
 <td>Von Neumann entropy of a qubit state</td>
 </tr>
 <tr>
@@ -342,7 +342,7 @@ $$</p>
 <td>Entropy as a function of the biquaternion norm</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$</td>
+<td>$\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec s}_{\Psi}|^2)e_t$</td>
 <td>Biquaternion norm of the average state</td>
 </tr>
 <tr>

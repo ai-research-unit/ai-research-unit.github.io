@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Exponential Polar Decomposition of $M_3(\mathbb{C})$ — Biquaternion Universe</title>
+  <title>The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates — Biquaternion Universe</title>
   <meta name="description" content="Every invertible factors as with Hermitian; this is the left polar decomposition written in exponential form. The Hermitian factor is unique, the -unitary…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-exponential-polar-decomposition-of-math0"><strong>The Exponential Polar Decomposition of $M_3(\mathbb{C})$</strong></h1>
+        <h1 id="the-polar-decomposition-of-math0-in-exponential-coordinates"><strong>The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every invertible $A\in M_3(\mathbb{C})$ factors as $A=e^{H}e^{iK}$ with $H,K$ Hermitian; this is the left polar decomposition $A=P'U'$ written in exponential form.</strong> The Hermitian factor $H$ is unique, the $*$-unitary factor $e^{iK}$ is unique, and $K$ is unique modulo $2\pi$. The factorisation is different from the right polar decomposition $A=UP=e^{iK'}e^{H'}$: the two share the $*$-unitary factor, and their positive factors are conjugate by it. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.</p>
 <p>The decomposition is the global Cartan decomposition</p>
@@ -113,7 +113,7 @@ $$</p>
 <p>The left polar is the positive-$*$-unitary order $P'U'$; the right polar is the $*$-unitary-positive order $UP$.</p>
 <h2 id="the-exponential-form">The Exponential Form</h2>
 <p><strong>The Hermitian logarithms.</strong> Every positive definite $P'$ has a unique Hermitian logarithm $P'=e^{H}$ with $H=H^{*}=\log P'$. Every $*$-unitary $U'$ has a Hermitian logarithm $U'=e^{iK}$ with $K=K^{*}$, defined modulo the eigenvalues of $K$ shifted by $2\pi$; the principal logarithm chooses the eigenvalues in $(-\pi,\pi]$.</p>
-<p><strong>Theorem (exponential polar decomposition).</strong> Every invertible $A$ can be written as</p>
+<p><strong>Theorem (polar decomposition).</strong> Every invertible $A$ can be written as</p>
 <p>$$
 A=e^{H}e^{iK},
 $$</p>
@@ -133,7 +133,7 @@ $$</p>
 <p>The Hermitian factors commute, and the eigenvalues of $A$ are $e^{\lambda_k+i\theta_k}$.</p>
 <p><strong>Proof.</strong> A normal matrix is unitarily diagonalisable, $A=V\operatorname{diag}(\alpha_1,\alpha_2,\alpha_3)V^{*}$ with $\alpha_k\neq0$. Write $\alpha_k=e^{\lambda_k+i\theta_k}$ with $\lambda_k=\log|\alpha_k|$ and $\theta_k=\arg\alpha_k$. Then $H=V\operatorname{diag}(\lambda_k)V^{*}$ and $K=V\operatorname{diag}(\theta_k)V^{*}$ are Hermitian and give the factorisation.</p>
 <h2 id="the-normal-case">The Normal Case</h2>
-<p><strong>Theorem.</strong> For invertible $A$ with exponential polar decomposition $A=e^{H}e^{iK}$, the following are equivalent:</p>
+<p><strong>Theorem.</strong> For invertible $A$ with polar decomposition $A=e^{H}e^{iK}$, the following are equivalent:</p>
 <ol>
 <li>$A$ is normal: $AA^{*}=A^{*}A$;</li>
 <li>$H$ and $K$ commute: $[H,K]=0$;</li>
@@ -160,7 +160,7 @@ AA^{*}=\begin{pmatrix}5&2&0\\2&1&0\\0&0&9\end{pmatrix},
 $$</p>
 <p>and the two matrices differ in the $(1,1)$, $(1,2)$, $(2,1)$ and $(2,2)$ entries.</p>
 <h2 id="the-cartan-decomposition">The Cartan Decomposition</h2>
-<p><strong>The group decomposition.</strong> The exponential polar decomposition is the left Cartan decomposition</p>
+<p><strong>The group decomposition.</strong> The polar decomposition is the left Cartan decomposition</p>
 <p>$$
 GL_3(\mathbb{C})=\exp(\operatorname{Herm}_3)\,U(3),
 $$</p>
@@ -222,9 +222,9 @@ A=e^{H'}e^{iK}=e^{iK}e^{H}.
 $$</p>
 <p><strong>Verification.</strong> The right form is $A=UP=e^{iK}e^{H}$; the left form is $A=P'U=e^{H'}e^{iK}$. The two Hermitian exponents are conjugate, $H'=UHU^{*}$, and they do not commute with $K$; the matrix $A$ is not normal.</p>
 <h2 id="the-singular-case">The Singular Case</h2>
-<p><strong>No exponential polar for singular matrices.</strong> If $A$ is singular, it has no factorisation $A=e^{H}e^{iK}$ with $H,K$ Hermitian, because $e^{H}$ is positive definite and $e^{iK}$ is $*$-unitary, so their product is invertible. The exponential polar decomposition exists exactly on $GL_3(\mathbb{C})$.</p>
+<p><strong>No exponential coordinates for singular matrices.</strong> If $A$ is singular, it has no factorisation $A=e^{H}e^{iK}$ with $H,K$ Hermitian, because $e^{H}$ is positive definite and $e^{iK}$ is $*$-unitary, so their product is invertible. The polar decomposition exists exactly on $GL_3(\mathbb{C})$.</p>
 <p><strong>The polar decomposition survives.</strong> The right polar decomposition $A=UP$ exists for every $A$, with $P$ positive semidefinite and $U$ a partial isometry; the left polar decomposition $A=P'U'$ exists with $P'=(AA^{*})^{1/2}$ positive semidefinite and $U'$ a partial isometry. The exponential form requires the invertibility of $P$ and $P'$.</p>
-<p><strong>The limit.</strong> For a family $A(\epsilon)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(\epsilon)=\log P(\epsilon)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The exponential polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.</p>
+<p><strong>The limit.</strong> For a family $A(\epsilon)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(\epsilon)=\log P(\epsilon)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.</p>
 <p><strong>Example.</strong> The singular matrix</p>
 <p>$$
 A_0=\operatorname{diag}(1,0,0)
@@ -236,15 +236,15 @@ A_\epsilon=\operatorname{diag}(1,\epsilon,\epsilon)
 \qquad \epsilon>0 .
 $$</p>
 <p>The Hermitian factor is $H_\epsilon=\operatorname{diag}(0,\log\epsilon,\log\epsilon)$, which tends to $-\infty$ on the second and third coordinates, and the $*$-unitary factor is $I$. The limit $A_0$ is singular and is not itself an exponential.</p>
-<p><strong>The singular values.</strong> In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The exponential polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.</p>
+<p><strong>The singular values.</strong> In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.</p>
 <h2 id="the-root-the-frame-and-the-gauge">The Root, the Frame and the Gauge</h2>
-<p><strong>The root.</strong> A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the exponential polar decomposition is</p>
+<p><strong>The root.</strong> A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the polar decomposition is</p>
 <p>$$
 H=e^{iK},\qquad
 K=\frac{2\pi}{3}\big(P_2+2P_3\big),
 $$</p>
 <p>where $P_k$ is the projector for $\omega_k$, with $\omega_1=1$. The Hermitian factor is $I$ and the Hermitian exponent is $0$. For a non-normal root the Hermitian factor is $P=(H^{*}H)^{1/2}\neq I$ and the phase factor is the $*$-unitary $(H^{*}H)^{-1/2}H$; the root is not $*$-unitary. The idempotents $P_k$ themselves are never $*$-unitary.</p>
-<p><strong>The frame.</strong> For a frame $S\in GL_3$ the exponential polar decomposition separates the phases from the stretching:</p>
+<p><strong>The frame.</strong> For a frame $S\in GL_3$ the polar decomposition separates the phases from the stretching:</p>
 <p>$$
 S=e^{H}e^{iK},\qquad
 H=\log(SS^{*})^{1/2},\quad e^{iK}=(SS^{*})^{-1/2}S .
@@ -258,16 +258,16 @@ E_{13}\mapsto e^{t_1-t_3}E_{13}.
 $$</p>
 <p>The Hermitian exponent of the frame is the real part of $t$ in the appropriate trivialisation; the phase exponent is the imaginary part. The idempotents are invariant under the gauge, so they do not appear in $H$ or $K$ as gauge-dependent factors.</p>
 <h2 id="comparison-with-the-split-case">Comparison with the Split Case</h2>
-<p><strong>The complex case.</strong> Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{>0}(3)$ is definite and convex, and every invertible matrix has the exponential polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.</p>
+<p><strong>The complex case.</strong> Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{>0}(3)$ is definite and convex, and every invertible matrix has the polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.</p>
 <p><strong>The split real cases.</strong> In the real split algebras of the biquaternion series the exponential is not surjective onto the invertible group, and the polar decomposition carries an indefinite factor: the split-complex exponential misses the negative real axis, and the split-quaternion exponential misses matrices with a negative eigenvalue and a nontrivial Jordan block. The positive cone is replaced by an indefinite cone, and the polar factors can change sign.</p>
-<p><strong>The reason.</strong> The difference is the spectrum. Over $\mathbb{C}$ every nonzero complex number has a logarithm, so every invertible Jordan block has a logarithm; over $\mathbb{R}$ a negative eigenvalue has no real logarithm, and the indefinite norm allows null directions that the definite Hermitian cone does not have. The complex algebra has no null cone in the trace form, and the exponential polar decomposition is global on $GL_3$.</p>
+<p><strong>The reason.</strong> The difference is the spectrum. Over $\mathbb{C}$ every nonzero complex number has a logarithm, so every invertible Jordan block has a logarithm; over $\mathbb{R}$ a negative eigenvalue has no real logarithm, and the indefinite norm allows null directions that the definite Hermitian cone does not have. The complex algebra has no null cone in the trace form, and the polar decomposition is global on $GL_3$.</p>
 <p><strong>The biquaternion case.</strong> At $n=2$ the theorem is the same: every invertible $A\in M_2(\mathbb{C})$ is $e^{H}e^{iK}$ with $H,K$ Hermitian $2\times2$ matrices. The biquaternion algebra is the $n=2$ case of the same complex matrix theorem; the split real forms are different real sections of the same complex group.</p>
 <h2 id="summary">Summary</h2>
-<p>Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the exponential polar decomposition</p>
+<p>Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the polar decomposition</p>
 <p>$$
 A=e^{H}e^{iK},
 $$</p>
-<p>with $H$ Hermitian unique and $K$ Hermitian modulo $2\pi$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^{*}$, $H'=U^{*}HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_3=\exp(\operatorname{Herm}_3)U(3)$, the other global form being $GL_3=U(3)\exp(\operatorname{Herm}_3)$; both are diffeomorphisms, with real dimensions $18=9+9$. The exponential polar decomposition exists exactly on $GL_3$; it degenerates at the singular set, where the Hermitian logarithm diverges. Over $\mathbb{C}$ the exponential is surjective and the positive cone is definite, in contrast with the split real cases.</p>
+<p>with $H$ Hermitian unique and $K$ Hermitian modulo $2\pi$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^{*}$, $H'=U^{*}HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_3=\exp(\operatorname{Herm}_3)U(3)$, the other global form being $GL_3=U(3)\exp(\operatorname{Herm}_3)$; both are diffeomorphisms, with real dimensions $18=9+9$. The polar decomposition exists exactly on $GL_3$; it degenerates at the singular set, where the Hermitian logarithm diverges. Over $\mathbb{C}$ the exponential is surjective and the positive cone is definite, in contrast with the split real cases.</p>
 <p>$$
 \boxed{\ A=e^{H}e^{iK}=P'U',\quad P'=(AA^{*})^{1/2},\quad U'=P'^{-1}A,\quad H=H^{*},\quad K=K^{*},\quad [H,K]=0\iff A\text{ normal}.\ }
 $$</p>
@@ -292,7 +292,7 @@ $$</p>
 <td>$U'=U$, $P'=UPU^{*}$</td>
 </tr>
 <tr>
-<td>Exponential polar</td>
+<td>Exponential coordinates</td>
 <td>$A=e^{H}e^{iK}$</td>
 </tr>
 <tr>

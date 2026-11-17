@@ -129,13 +129,13 @@ $$</p>
 <p>$$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
 $$</p>
-<p><strong>The weight.</strong> With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,</p>
+<p><strong>The weight.</strong> With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ and $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,</p>
 <p>$$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=h_t+\vec r\cdot\vec h_\Psi.
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi.
 $$</p>
-<p>The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.</p>
+<p>The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec s_{\Psi}\cdot\vec u)$, which lies in $[0,1]$ when $|\vec s_{\Psi}|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.</p>
 <h4 id="the-quaternionic-form-the-interval">The quaternionic form: the interval</h4>
 <p><strong>The form.</strong> The quaternionic form applies the quaternion conjugation to the first slot,</p>
 <p>$$
@@ -254,7 +254,7 @@ with real $h_t,\vec h_\Psi$, and its spectrum is $h_t+\lvert\vec h_\Psi\rvert$ a
 $$
 \boxed{\;p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=h_t+\vec r\cdot\vec h_\Psi\;}.
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi\;}.
 $$</p>
 </li>
 <li>
@@ -264,9 +264,9 @@ $$
 $$
 parametrised by the unit sphere — the Bloch sphere — and the mixed states are the positive elements with $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r), \qquad \lvert\vec r\rvert \le 1,
+\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi}), \qquad \lvert\vec s_{\Psi}\rvert \le 1,
 $$
-with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde{\Pi}\rangle_{\natural} = 0$.</p>
+with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec s_{\Psi}\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde{\Pi}\rangle_{\natural} = 0$.</p>
 </li>
 <li>
 <p><strong>The non-commutativity has exactly the quantum pattern.</strong> The product of two Hermitian elements is Hermitian exactly when the two commute. The commutator of two Hermitian elements is anti-Hermitian, hence an element of $\mathbb{B}_{\Phi}$. Therefore $i$ times a commutator is again Hermitian, hence again an observable. That is the pattern of the quantum commutator and of the generator of a dynamics. Equivalently, $\mathbb{B}_{\Psi}$ closes under the anticommutator and not under the commutator: it is a Jordan algebra, as an algebra of observables is, while the Lie algebra sits in the other sector.</p>
@@ -320,11 +320,11 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as
 </tr>
 <tr>
 <td>The congruence is not a channel</td>
-<td>$\tilde{Ϛ}_{\Psi}\mapsto\tilde{U}\tilde{Ϛ}_{\Psi}\tilde{U}^{*}$ <strong>preserves the biquaternion norm and not the doubled scalar part</strong>, so it is not a state transformation: a channel cannot rescale that number, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec r = \tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ the rapidity</td>
+<td>$\tilde{Ϛ}_{\Psi}\mapsto\tilde{U}\tilde{Ϛ}_{\Psi}\tilde{U}^{*}$ <strong>preserves the biquaternion norm and not the doubled scalar part</strong>, so it is not a state transformation: a channel cannot rescale that number, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec s_{\Psi} = \tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ the rapidity</td>
 </tr>
 <tr>
 <td>The entropy is the biquaternion norm</td>
-<td>$\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)$, so the von Neumann entropy is a function of the biquaternion norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the $*$-unitary group that acts on states, and it is a complete invariant of that orbit</td>
+<td>$\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec s_{\Psi}\rvert^2)$, so the von Neumann entropy is a function of the biquaternion norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the $*$-unitary group that acts on states, and it is a complete invariant of that orbit</td>
 </tr>
 <tr>
 <td>Spin one is the adjoint action</td>
@@ -557,7 +557,7 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as
 <td>Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$</td>
+<td>$\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert\le1$</td>
 <td>State: positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading; the Bloch ball</td>
 </tr>
 <tr>

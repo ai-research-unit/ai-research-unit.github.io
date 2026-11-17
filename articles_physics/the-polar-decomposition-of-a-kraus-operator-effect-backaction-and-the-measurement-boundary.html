@@ -75,7 +75,7 @@
 <p>The thesis is one sentence. <strong>Every Kraus operator factors as $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$, with $\tilde M_{\mathrm{kraus},H}$ Hermitian positive semidefinite and $\tilde M_{\mathrm{kraus},0}$ a partial isometry; the positive factor is the outcome's strength, the partial isometry is its backaction, and the effect is the squared strength conjugated by the backaction, $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$.</strong> Three consequences follow. A one-Kraus channel is trace preserving exactly when the strength is trivial, $\tilde M_{\mathrm{kraus},H}=e_t$, and then the channel is $*$-unitary. A sharp outcome has a rank-one amplitude on the null cone, where the strength is a scaled projection and the backaction a partial isometry. And the reversibility of a channel is its Kraus rank, not the strength of any single term: a channel can be a sum of terms whose individual polar factors are $*$-unitary and still be irreversible.</p>
 <p>The distinction between one Kraus operator, an instrument, and a channel is the source of most misreadings: the polar decomposition is always available for one operator, while the one-Kraus unitarity and the multi-Kraus irreversibility are statements about a channel.</p>
 <p>This article is the pilot of the polar programme in the physics corpus: the object is the Kraus operator of a measurement outcome, the examples are two-dimensional, and every numerical claim is checked in the matrix model. It does not derive the measurement postulate or classify channels; it tests the grammar of the generalized Cartan pairing on the object where that grammar has the most work to do.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{H}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The doubled scalar part is $2\,\mathrm{Sc}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}\in\mathbb{R}^{3}$ and $|\vec s_{\Psi}|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{H}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The doubled scalar part is $2\,\mathrm{Sc}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.</p>
 <h2 id="the-results-it-uses">The Results It Uses</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -303,8 +303,8 @@ r^{2}e^{+\theta_{\mathrm{rpd},w}}\quad\text{and}\quad r^{2}e^{-\theta_{\mathrm{r
 $$</p>
 <p>Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta_{\mathrm{rpd},w}>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.</p>
 <h3 id="the-boost-as-a-bias">The Boost as a Bias</h3>
-<p>The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.</p>
-<p>The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}_{\Psi}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec r$,</p>
+<p>The rotor and the boost are not the same kind of factor. On a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ the rotor acts by conjugation, which fixes the scalar part and rotates the Bloch vector by $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$: the trace is one, the radius is unchanged, and the state stays on its sphere.</p>
+<p>The boost changes the trace, mixes the scalar and parallel parts, and leaves the transverse part alone. Writing $\tilde{Ϛ}_{\Psi}=a e_t+i\vec b$ with $a=\tfrac12$ and $\vec b=\tfrac12\vec s_{\Psi}$,</p>
 <p>$$
 a_2=a\cosh\theta_{\mathrm{rpd},w}+b_\parallel\sinh\theta_{\mathrm{rpd},w},
 \qquad
@@ -314,11 +314,11 @@ b_{\parallel,2}=b_\parallel\cosh\theta_{\mathrm{rpd},w}+a\sinh\theta_{\mathrm{rp
 $$</p>
 <p>Normalising by $a_2$ gives the action on the Bloch ball,</p>
 <p>$$
-r'_\parallel=\frac{r_\parallel+\tanh\theta_{\mathrm{rpd},w}}{1+r_\parallel\tanh\theta_{\mathrm{rpd},w}},
+r'_\parallel=\frac{s_\parallel+\tanh\theta_{\mathrm{rpd},w}}{1+s_\parallel\tanh\theta_{\mathrm{rpd},w}},
 \qquad
-\vec r'_\perp=\frac{\vec r_\perp}{\cosh\theta_{\mathrm{rpd},w}+r_\parallel\sinh\theta_{\mathrm{rpd},w}},
+\vec s_{\Psi}'_\perp=\frac{\vec s_{\Psi,\perp}}{\cosh\theta_{\mathrm{rpd},w}+s_\parallel\sinh\theta_{\mathrm{rpd},w}},
 $$</p>
-<p>with $r_\parallel=\vec r\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta_{\mathrm{rpd},w}$, and it is not a rotation of the ball.</p>
+<p>with $s_\parallel=\vec s_{\Psi}\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta_{\mathrm{rpd},w}$, and it is not a rotation of the ball.</p>
 <h3 id="the-contraction-bound">The Contraction Bound</h3>
 <p>An outcome is admissible when its effect lies below the identity. The eigenvalues above make this one inequality:</p>
 <p>$$
@@ -554,8 +554,8 @@ $$</p>
 <td>quaternion basis, $\vec e_\eta^{2}=-e_t$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$</td>
-<td>state, $\lvert\vec r\rvert\leq1$</td>
+<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$</td>
+<td>state, $\lvert\vec s_{\Psi}\rvert\leq1$</td>
 </tr>
 <tr>
 <td>$\tilde M_{\mathrm{kraus}}$, $\tilde M_{\mathrm{kraus},y}$, $\tilde M_{\mathrm{kraus},l}$</td>

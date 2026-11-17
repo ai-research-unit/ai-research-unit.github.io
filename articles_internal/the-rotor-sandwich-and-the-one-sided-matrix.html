@@ -168,7 +168,7 @@ $$</p>
 <p><strong>Proof 1, by columns: the direct one.</strong> The product $P=L_{\mathrm{axf}}(\tilde u)R_{\mathrm{axf}}(\tilde u^{\natural})$ is the matrix of the composite map $Q\mapsto\tilde uQ\tilde u^{\natural}$, because $L$ is the matrix of $Q\mapsto\tilde uQ$ and $R$ the matrix of $Q\mapsto Q\tilde u^{\natural}$. A matrix is determined by the images of the basis elements, so take the $\mu$-th column of $P$ to be the coefficient column of $\tilde u\,e_{\mu}\,\tilde u^{\natural}$.</p>
 <p>For $\mu=t$: $\tilde u\,e_t\,\tilde u^{\natural}=\tilde u\tilde u^{\natural}=\lvert\tilde u\rvert^{2}e_t=e_t$, whose column is $(1,0,0,0)^{\mathsf T}$.</p>
 <p>For $\mu=x,y,z$: $\tilde u\,\vec e_{\mu}\,\tilde u^{\natural}=M(\tilde u)\vec e_{\mu}$ by the definition of $M$ as the matrix of the sandwich on the vector part. Its coefficient column is $(0,\ M\vec e_{\mu})^{\mathsf T}$, that is, column $\mu$ of the block $\operatorname{diag}(1,M)$.</p>
-<p>The four columns match the four columns of $\operatorname{diag}(1,M)$, and the identity follows. $\square$</p>
+<p>The four columns match the four columns of $\operatorname{diag}(1,M)$, and the identity follows.</p>
 <p>This proof uses no algebra identity. It only uses that a matrix is fixed by its columns, and that the sandwich fixes $e_t$ and acts on the vector part as $M$. It also shows where the two-sidedness goes: the two factors are the matrices of the two one-sided halves of the sandwich, and their product is the matrix of the whole.</p>
 <p><strong>Proof 2, by blocks: the algebraic one.</strong> Multiply the two block forms,</p>
 <p>$$
@@ -181,10 +181,10 @@ a\vec w-B\vec w & \vec w\vec w^{\mathsf T}+B^{2}
 \end{pmatrix},
 \qquad B=a\mathrm I_3+[\vec w]_{\times}.
 $$</p>
-<p>Top-left: $a^{2}+\lvert\vec w\rvert^{2}=1$. Top-right: $a\vec w^{\mathsf T}-\vec w^{\mathsf T}\bigl(a\mathrm I_3+[\vec w]_{\times}\bigr)=-\vec w^{\mathsf T}[\vec w]_{\times}=0$, because $[\vec w]_{\times}$ is antisymmetric. Bottom-left: $a\vec w-\bigl(a\mathrm I_3+[\vec w]_{\times}\bigr)\vec w=-[\vec w]_{\times}\vec w=0$, because $\vec w\times\vec w=0$. Bottom-right: $B^{2}=a^{2}\mathrm I_3+2a[\vec w]_{\times}+[\vec w]_{\times}^{2}$, and $[\vec w]_{\times}^{2}=\vec w\vec w^{\mathsf T}-\lvert\vec w\rvert^{2}\mathrm I_3$, so $B^{2}+\vec w\vec w^{\mathsf T}=\bigl(a^{2}-\lvert\vec w\rvert^{2}\bigr)\mathrm I_3+2\vec w\vec w^{\mathsf T}+2a[\vec w]_{\times}=M$. $\square$</p>
+<p>Top-left: $a^{2}+\lvert\vec w\rvert^{2}=1$. Top-right: $a\vec w^{\mathsf T}-\vec w^{\mathsf T}\bigl(a\mathrm I_3+[\vec w]_{\times}\bigr)=-\vec w^{\mathsf T}[\vec w]_{\times}=0$, because $[\vec w]_{\times}$ is antisymmetric. Bottom-left: $a\vec w-\bigl(a\mathrm I_3+[\vec w]_{\times}\bigr)\vec w=-[\vec w]_{\times}\vec w=0$, because $\vec w\times\vec w=0$. Bottom-right: $B^{2}=a^{2}\mathrm I_3+2a[\vec w]_{\times}+[\vec w]_{\times}^{2}$, and $[\vec w]_{\times}^{2}=\vec w\vec w^{\mathsf T}-\lvert\vec w\rvert^{2}\mathrm I_3$, so $B^{2}+\vec w\vec w^{\mathsf T}=\bigl(a^{2}-\lvert\vec w\rvert^{2}\bigr)\mathrm I_3+2\vec w\vec w^{\mathsf T}+2a[\vec w]_{\times}=M$.</p>
 <p><strong>Which proof to use.</strong> Proof 1 is shorter and explains the result: the scalar slot holds $1$ because the sandwich fixes the scalar unit, and the vector block holds $M$ because the sandwich is $M$ there. Proof 2 is the one that produces the closed form, because the bottom-right block $B^{2}+\vec w\vec w^{\mathsf T}$ is the compact formula waiting to be simplified.</p>
 <p><strong>Numerical check.</strong> Proof 1 was checked on two hundred random rotors, comparing the four columns of $P$ with the coefficient columns of $\tilde u\,e_{\mu}\,\tilde u^{\natural}$, largest entry of the residual $2.2\times10^{-16}$. The resulting block form was checked against $M$ with residual $4.4\times10^{-16}$.</p>
-<h2 id="four-ways-to-read-math95-off-the-rotors-arrays">Four Ways to Read $M$ off the Rotor's Arrays</h2>
+<h2 id="four-ways-to-read-math93-off-the-rotors-arrays">Four Ways to Read $M$ off the Rotor's Arrays</h2>
 <p><strong>From the blocks of $L$.</strong> Let $B=a\mathrm I_3+[\vec w]_{\times}$ be the bottom-right block of $L_{\mathrm{axf}}(\tilde u)$, and $\vec w$ the bottom-left column. Then</p>
 <p>$$
 M(\tilde u)=B^{2}+\vec w\vec w^{\mathsf T},
@@ -335,7 +335,7 @@ R=\begin{pmatrix}1&0&0&0\\0&1&0&0\\0&0&1&0\\0&0&0&1\end{pmatrix},
 \qquad
 M=\begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}.
 $$</p>
-<h3 id="a-quarter-turn-about-math216">A Quarter Turn about $\vec e_z$</h3>
+<h3 id="a-quarter-turn-about-math214">A Quarter Turn about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac{\sqrt2}{2}(e_t+\vec e_z)$, so $a=w_z=\tfrac{\sqrt2}{2}$.</p>
 <p>$$
 A=\begin{pmatrix}e^{-i\pi/4}&0\\0&e^{i\pi/4}\end{pmatrix}
@@ -375,7 +375,7 @@ LR=
 $$</p>
 <p>Every entry is an integer. The square roots of the two factors cancel.</p>
 <p><strong>The similarity.</strong> $A(-i\sigma_1)A^{-1}=-i\sigma_2$, which is the first column of $M$ read in the Pauli frame: the image of the first basis element is the second.</p>
-<h3 id="a-half-turn-about-math230">A Half Turn about $\vec e_z$</h3>
+<h3 id="a-half-turn-about-math228">A Half Turn about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\vec e_z$, so $a=0$ and $w_z=1$.</p>
 <p>$$
 A=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
@@ -396,7 +396,7 @@ LR=
 \end{pmatrix}.
 $$</p>
 <p>The rotation sends $\vec e_x\mapsto-\vec e_x$ and $\vec e_y\mapsto-\vec e_y$. Its trace is $-1=1+2\cos\pi$.</p>
-<h3 id="a-quarter-turn-about-math239">A Quarter Turn about $\vec e_x$</h3>
+<h3 id="a-quarter-turn-about-math237">A Quarter Turn about $\vec e_x$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\tfrac{\sqrt2}{2}(e_t+\vec e_x)$.</p>
 <p>$$
 A=\tfrac{\sqrt2}{2}\begin{pmatrix}1&-i\\-i&1\end{pmatrix},
@@ -421,7 +421,7 @@ $$</p>
 M=\begin{pmatrix}1&0&0\\0&0&-1\\0&1&0\end{pmatrix}.
 $$</p>
 <p>Each of the two arrays is block diagonal in the planes $(e_t,\vec e_x)$ and $(\vec e_y,\vec e_z)$, with its own $2\times2$ block repeated twice: $L$ repeats $\tfrac{\sqrt2}{2}\begin{pmatrix}1&-1\\1&1\end{pmatrix}$ and $R$ repeats its transpose. The rotation turns the $(y,z)$ plane and fixes $x$.</p>
-<h3 id="a-half-turn-about-math251">A Half Turn about $\vec e_x$</h3>
+<h3 id="a-half-turn-about-math249">A Half Turn about $\vec e_x$</h3>
 <p><strong>Rotor.</strong> $\tilde u=\vec e_x$, with $\tilde u^{2}=-e_t$.</p>
 <p>$$
 A=-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},
@@ -568,7 +568,7 @@ R=-\mathrm I_4,
 M=\mathrm I_3 .
 $$</p>
 <p>The three matrices of the rotor have changed sign and the matrix of the rotation has not. This is the double cover, printed.</p>
-<h3 id="a-general-angle-about-math295">A General Angle about $\vec e_z$</h3>
+<h3 id="a-general-angle-about-math293">A General Angle about $\vec e_z$</h3>
 <p><strong>Rotor.</strong> $\tilde u=c\,e_t+s\,\vec e_z$ with $c=\cos\frac{\theta}{2}$ and $s=\sin\frac{\theta}{2}$.</p>
 <p>$$
 A=\begin{pmatrix}e^{-i\theta/2}&0\\0&e^{i\theta/2}\end{pmatrix},

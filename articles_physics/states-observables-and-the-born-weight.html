@@ -77,28 +77,28 @@
 \qquad
 \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi,
 \qquad
-\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec r\bigr),
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec s_{\Psi}\bigr),
 \qquad
-h_t\in\mathbb{R},\ \ \vec h_\Psi,\vec r\in\mathbb{R}^{3}.
+h_t\in\mathbb{R},\ \ \vec h_\Psi,\vec s_{\Psi}\in\mathbb{R}^{3}.
 $$</p>
 <p><strong>The first claim is that a state is an element and not a vector.</strong> The state is a positive element of the sector, normalised against the unit, and its four real numbers are the slice of a cone at unit weight. The unit ball that these numbers fill is the Bloch ball, its boundary is the pure states, and its centre is the maximally mixed state. The state vector of the standard formalism is a different object in the same algebra, and the map between them loses exactly one thing: a central phase.</p>
 <p><strong>The second claim is that the observable is an element of the same space.</strong> An observable is a Hermitian element $h_t e_t+i\vec h_\Psi$, and its two eigenvalues are $h_t\pm\lvert\vec h_\Psi\rvert$. State and observable are therefore two points of one real four-dimensional space, paired by one symmetric positive form. Nothing here is an operator on a Hilbert space, and the pairing is symmetric between its two slots.</p>
 <p><strong>The third claim is that the Born weight is that pairing, normalised.</strong> For a state and an observable the weight is</p>
 <p>$$
 p=\frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}
-=h_t+\vec r\cdot\vec h_\Psi,
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi,
 $$</p>
-<p>and for a measurement along a unit axis $\vec u$ it is the analyser transmission law $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$. Reality, positivity and normalisation follow from the algebra. That these numbers are observed frequencies does not.</p>
+<p>and for a measurement along a unit axis $\vec u$ it is the analyser transmission law $p_\pm=\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$. Reality, positivity and normalisation follow from the algebra. That these numbers are observed frequencies does not.</p>
 <p><strong>The fourth claim is that the two forms of the sector divide the work.</strong> The Hermitian form, positive definite of inertia $(4,0)$, supplies the probabilities. The quaternionic norm, indefinite of inertia $(1,3)$, supplies the geometry and the mixedness. On the state slice the second is</p>
 <p>$$
-N(\tilde{Ϛ}_\Psi)=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr)=\tfrac12 S_{\mathrm{lin}}(\tilde{Ϛ}_\Psi),
+N(\tilde{Ϛ}_\Psi)=\tfrac14\bigl(1-\lvert\vec s_{\Psi}\rvert^{2}\bigr)=\tfrac12 S_{\mathrm{lin}}(\tilde{Ϛ}_\Psi),
 $$</p>
 <p>so the interval of a state is half its linear entropy, and the cone of the norm is the boundary of the ball.</p>
 <p><strong>The fifth claim is that no physical state is spacelike.</strong> The positivity condition $h_t\ge\lvert\vec h_\Psi\rvert$ is the condition that the state lie inside or on the future cone of the norm, and the pure states are exactly its null elements. The state space is therefore a causal region of the sector, and the statement that a state has a positive weight is the statement that it lies in the future cone. A state outside the cone would have a negative eigenvalue, and there are no such states.</p>
 <p><strong>The sixth claim is that the state space is a slice, and that the slice is not Lorentz-invariant.</strong> Positivity is preserved by every invertible congruence, normalisation only by the unitary group, and the state space is their intersection: it is preserved by $U(2)$ and by nothing larger. A boost maps the unit-scalar slice to a different hyperplane, and a mixed state that is carried by a boost and renormalised has a different Bloch radius. The pure states survive because they are rays; the mixed ones do not.</p>
 <p><strong>The seventh claim is that this sector and the previous one are one space read twice.</strong> The preparation dictionary $\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ maps a material four-vector to an informational element, and after normalisation a momentum gives the state</p>
 <p>$$
-\vec r=-\frac{\vec v}{c},
+\vec s_{\Psi}=-\frac{\vec v}{c},
 \qquad
 N(\tilde{Ϛ}_\Psi)=\tfrac14\Bigl(\frac{mc^{2}}{E}\Bigr)^{2},
 \qquad
@@ -256,12 +256,12 @@ $$</p>
 </table></div>
 <p><strong>Two of the four forms collapse on this sector and two do not.</strong> The plain form equals the Hermitian form because the star is the identity here, and the K norm equals the quaternionic norm for the same reason. The sector therefore carries two distinct real quadratic forms, one positive definite and one indefinite, and the whole entry is an account of which question each of them answers.</p>
 <p><strong>The observable has two numbers per axis and one overall.</strong> Its eigenvalues are $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$, its mean is the scalar part, and its spread is the length of the vector part. No other data is needed, because the spectral theorem for this sector is the completeness of two idempotents.</p>
-<p><strong>The state has one radius and one direction.</strong> Its eigenvalues are $\tfrac12(1\pm\lvert\vec r\rvert)$, so the direction is the axis of the spectral decomposition and the radius is the mixedness. A state with a given radius is determined up to a rotation of the axis, and the axis is what a measurement along that axis reads with certainty.</p>
-<p><strong>The weight is one bilinear expression.</strong> For the state and the observable of the two displays above it is $h_t+\vec r\cdot\vec h_\Psi$, and the projection case is $p_\pm=\tfrac12(1\pm\vec u\cdot\vec r)$. The scalar part of the observable is the state-independent offset, and the vector part is what the state can predict.</p>
+<p><strong>The state has one radius and one direction.</strong> Its eigenvalues are $\tfrac12(1\pm\lvert\vec s_{\Psi}\rvert)$, so the direction is the axis of the spectral decomposition and the radius is the mixedness. A state with a given radius is determined up to a rotation of the axis, and the axis is what a measurement along that axis reads with certainty.</p>
+<p><strong>The weight is one bilinear expression.</strong> For the state and the observable of the two displays above it is $h_t+\vec s_{\Psi}\cdot\vec h_\Psi$, and the projection case is $p_\pm=\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$. The scalar part of the observable is the state-independent offset, and the vector part is what the state can predict.</p>
 <p><strong>The variance is the transverse component.</strong> For the same pair,</p>
 <p>$$
 \bigl\langle\tilde H_\Psi^{2}\bigr\rangle-\bigl\langle\tilde H_\Psi\bigr\rangle^{2}
-=\lvert\vec h_\Psi\rvert^{2}\Bigl(1-\bigl(\vec r\cdot\vec u_\Psi\bigr)^{2}\Bigr),
+=\lvert\vec h_\Psi\rvert^{2}\Bigl(1-\bigl(\vec s_{\Psi}\cdot\vec u_\Psi\bigr)^{2}\Bigr),
 $$</p>
 <p>which vanishes exactly when the state is pure and the two axes coincide. The noise of a measurement is the part of the observable that the state cannot predict, and it is not a property of either alone.</p>
 <p><strong>The geometry of the boundary is the algebra's own.</strong> The Fubini–Study line element of the pure states is a quarter of the round metric of the sphere, the complex structure is the commutator, and the symplectic area is finite. The factor of a quarter is the half-angle of the double cover, and the entry states it where it computes it.</p>
@@ -395,25 +395,25 @@ $$</p>
 <h2 id="the-state-and-the-slice">The State and the Slice</h2>
 <p><strong>A state is a positive element at unit weight.</strong> The state of the sector is</p>
 <p>$$
-\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec r\bigr),
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec s_{\Psi}\bigr),
 \qquad
 \langle\tilde{Ϛ}_\Psi,e_t\rangle_{*}=\tfrac12\langle e_t,e_t\rangle_{*}=\tfrac12,
 \qquad
 \mathrm{Sc}(\tilde{Ϛ}_\Psi)=\tfrac12,
 \qquad
-\lvert\vec r\rvert\le1 .
+\lvert\vec s_{\Psi}\rvert\le1 .
 $$</p>
-<p>The normalisation is one real condition, the positivity is one inequality, and the parametrisation by $\vec r$ is the solution of both. The four real numbers of a general sector element are reduced to three by the normalisation, and the inequality confines those three to a ball. The ball is the <strong>Bloch ball</strong>, and the state space of the sector is it.</p>
-<p><strong>The eigenvalues are the radius and the sign of the radius.</strong> The eigenvalue formula of the previous section, applied at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec r\rvert$, gives</p>
+<p>The normalisation is one real condition, the positivity is one inequality, and the parametrisation by $\vec s_{\Psi}$ is the solution of both. The four real numbers of a general sector element are reduced to three by the normalisation, and the inequality confines those three to a ball. The ball is the <strong>Bloch ball</strong>, and the state space of the sector is it.</p>
+<p><strong>The eigenvalues are the radius and the sign of the radius.</strong> The eigenvalue formula of the previous section, applied at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec s_{\Psi}\rvert$, gives</p>
 <p>$$
-\tilde{Ϛ}_\Psi=\frac{1+r}{2}\,\tilde\Pi_1(\vec u_r)+\frac{1-r}{2}\,\tilde\Pi_2(\vec u_r),
+\tilde{Ϛ}_\Psi=\frac{1+r}{2}\,\tilde\Pi_1(\vec u_s)+\frac{1-r}{2}\,\tilde\Pi_2(\vec u_s),
 \qquad
-r=\lvert\vec r\rvert,
+r=\lvert\vec s_{\Psi}\rvert,
 \qquad
-\vec u_r=\frac{\vec r}{r},
+\vec u_s=\frac{\vec s_{\Psi}}{r},
 $$</p>
 <p>so the spectrum of a state is $\tfrac12(1\pm r)$. Both eigenvalues are non-negative exactly when $r\le1$, and their sum is one. The state's two eigenvalues therefore carry one number between them, and that number is the radius.</p>
-<p><strong>The boundary is the pure states and it is a sphere.</strong> At $r=1$ one eigenvalue is one and the other is zero, the state is an idempotent, and the idempotents of the sector are exactly the elements $\tilde\Pi_1(\vec u)$ of the two-sphere. At $r=0$ the state is $\tfrac12 e_t$, both eigenvalues are $\tfrac12$, and no measurement prefers either outcome. Between them the state is mixed, and the direction $\vec u_r$ is the axis along which the state is most definite: the outcome along that axis has probability $\tfrac12(1+r)$, which decreases with the mixedness.</p>
+<p><strong>The boundary is the pure states and it is a sphere.</strong> At $r=1$ one eigenvalue is one and the other is zero, the state is an idempotent, and the idempotents of the sector are exactly the elements $\tilde\Pi_1(\vec u)$ of the two-sphere. At $r=0$ the state is $\tfrac12 e_t$, both eigenvalues are $\tfrac12$, and no measurement prefers either outcome. Between them the state is mixed, and the direction $\vec u_s$ is the axis along which the state is most definite: the outcome along that axis has probability $\tfrac12(1+r)$, which decreases with the mixedness.</p>
 <p><strong>Purity is twice the Hermitian norm.</strong> The scalar part of the square of the state is the standard measure, and in the sector it is the Hermitian form twice,</p>
 <p>$$
 P(\tilde{Ϛ}_\Psi)=2\langle\tilde{Ϛ}_\Psi,\tilde{Ϛ}_\Psi\rangle_{*}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi^{2}\bigr)=\tfrac12\bigl(1+r^{2}\bigr),
@@ -430,7 +430,7 @@ S_{\mathrm{lin}}(\tilde{Ϛ}_\Psi)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi-\tilde{Ϛ}
 $$</p>
 <p>The identity is worth separating from its consequences. The form that defines the cone of the sector is the same form that measures how mixed a state is, up to the factor two. A pure state has $N=0$ and the maximally mixed state has $N=\tfrac14$, its largest value on the slice. The two facts — that the cone cuts out the state space and that the form measures mixedness — are one fact, because both are governed by the product of the two eigenvalues, $\lambda_+\lambda_-=\tfrac14(1-r^{2})$.</p>
 <p><strong>The state is a zero divisor exactly when it is pure.</strong> An element of the algebra has an inverse exactly when its norm is not zero, so the states with $N\ne0$ are invertible and the states with $N=0$ are the zero divisors. The pure states are therefore the null elements of the sector, and the boundary of the ball is the intersection of the sector with the zero-divisor cone of the algebra. A mixed state has an inverse in the algebra; a pure state does not.</p>
-<p><strong>The centre of the ball is the state with no direction.</strong> At $\vec r=0$ the state is $\tfrac12e_t$, a central element, and its spectrum is degenerate. It is fixed by every rotor, no measurement distinguishes it, and it carries the maximal entropy $\log2$ of the ball. It is also the state of maximal $N$ on the slice, so the directionless state is the one furthest from the cone's boundary as the sector's own form measures distance.</p>
+<p><strong>The centre of the ball is the state with no direction.</strong> At $\vec s_{\Psi}=0$ the state is $\tfrac12e_t$, a central element, and its spectrum is degenerate. It is fixed by every rotor, no measurement distinguishes it, and it carries the maximal entropy $\log2$ of the ball. It is also the state of maximal $N$ on the slice, so the directionless state is the one furthest from the cone's boundary as the sector's own form measures distance.</p>
 <p><strong>The unit-scalar condition is a slice, and the slice is affine.</strong> The positive cone is a cone; the set $\{\mathrm{Sc}=\tfrac12\}$ is a hyperplane that does not pass through the apex; their intersection is a convex body, and for this sector the body is a ball. Nothing in the algebra selects the value $\tfrac12$: the condition could be $\mathrm{Sc}=\tau$ for any $\tau>0$, and the rescaled element $\tilde{Ϛ}_\Psi/(2\tau)$ is the same state. The value fixes the scale and is a convention, and the next section shows that the convention cancels from every probability.</p>
 <p><strong>The ball is the convex hull of its boundary.</strong> Every state is a convex combination of two orthogonal pure states, by the spectral decomposition, with weights $\tfrac12(1\pm r)$. The pure states are the extreme points of the convex set, and the decomposition of a given mixed state is unique up to the exchange of the two. The convex structure of the state space is therefore read from the algebra: the extreme points are the idempotents, and convexity is the assertion that a mixture of two preparations is again a preparation.</p>
 <p><strong>A state is a positive functional, and the element is its representative.</strong> The element defines the functional</p>
@@ -463,25 +463,25 @@ $$</p>
 \langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_\Psi}
 =\frac{\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_\Psi,e_t\rangle_{*}}
 =\frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}
-=h_t+\vec r\cdot\vec h_\Psi .
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi .
 $$</p>
-<p>The last equality is the whole content of the formula in the sector's coordinates: the weight is the scalar part of the observable plus the projection of its direction on the state's radius vector. The normalisation appears as a ratio, so the value of $\tau$ cancels, and the weight depends on the state only through $\vec r$.</p>
-<p><strong>The derivation is three lines.</strong> With $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=h_te_t+i\vec h_\Psi$,</p>
+<p>The last equality is the whole content of the formula in the sector's coordinates: the weight is the scalar part of the observable plus the projection of its direction on the state's radius vector. The normalisation appears as a ratio, so the value of $\tau$ cancels, and the weight depends on the state only through $\vec s_{\Psi}$.</p>
+<p><strong>The derivation is three lines.</strong> With $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$ and $\tilde H_\Psi=h_te_t+i\vec h_\Psi$,</p>
 <p>$$
-\tilde{Ϛ}_\Psi\tilde H_\Psi=\tfrac12\Bigl[\bigl(h_t-\vec r\cdot\vec h_\Psi\bigr)e_t+i\bigl(h_t\vec r+\vec h_\Psi\bigr)-\vec r\times\vec h_\Psi\Bigr],
+\tilde{Ϛ}_\Psi\tilde H_\Psi=\tfrac12\Bigl[\bigl(h_t-\vec s_{\Psi}\cdot\vec h_\Psi\bigr)e_t+i\bigl(h_t\vec s_{\Psi}+\vec h_\Psi\bigr)-\vec s_{\Psi}\times\vec h_\Psi\Bigr],
 $$</p>
-<p>whose scalar part is $\tfrac12(h_t-\vec r\cdot\vec h_\Psi)$; and the star in the numerator is the identity on the sector, so the numerator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$ and the denominator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi)=\tfrac12$. The quotient is $h_t+\vec r\cdot\vec h_\Psi$. The sign that appears in the product and disappears in the quotient is the sign of the cross-product term, and it cancels because the term is a real pure quaternion with no scalar part.</p>
+<p>whose scalar part is $\tfrac12(h_t-\vec s_{\Psi}\cdot\vec h_\Psi)$; and the star in the numerator is the identity on the sector, so the numerator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi)$ and the denominator is $\mathrm{Sc}(\tilde{Ϛ}_\Psi)=\tfrac12$. The quotient is $h_t+\vec s_{\Psi}\cdot\vec h_\Psi$. The sign that appears in the product and disappears in the quotient is the sign of the cross-product term, and it cancels because the term is a real pure quaternion with no scalar part.</p>
 <p><strong>A measurement along an axis is the case of two idempotents.</strong> For the observable $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$, whose eigenvalues are one and zero and whose axis is $\vec u$, the weight is</p>
 <p>$$
 p_+=\frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}
-=\tfrac12\bigl(1+\vec u\cdot\vec r\bigr),
+=\tfrac12\bigl(1+\vec u\cdot\vec s_{\Psi}\bigr),
 \qquad
-p_-=\tfrac12\bigl(1-\vec u\cdot\vec r\bigr),
+p_-=\tfrac12\bigl(1-\vec u\cdot\vec s_{\Psi}\bigr),
 \qquad
 p_++p_-=1 .
 $$</p>
-<p>The two weights add to one because the two idempotents add to the unit, $\tilde\Pi_1+\tilde\Pi_2=e_t$, and the pairing is linear in its first slot. This is the <strong>analyser transmission law</strong>: the fraction of a beam transmitted by an analyser along $\vec u$ when the preparation is along $\vec r$.</p>
-<p><strong>Written in the angle between the two axes it is the half-angle law.</strong> With $\vec u\cdot\vec r=r\cos\theta$, where $\theta$ is the angle between the measurement axis and the state's axis,</p>
+<p>The two weights add to one because the two idempotents add to the unit, $\tilde\Pi_1+\tilde\Pi_2=e_t$, and the pairing is linear in its first slot. This is the <strong>analyser transmission law</strong>: the fraction of a beam transmitted by an analyser along $\vec u$ when the preparation is along $\vec s_{\Psi}$.</p>
+<p><strong>Written in the angle between the two axes it is the half-angle law.</strong> With $\vec u\cdot\vec s_{\Psi}=r\cos\theta$, where $\theta$ is the angle between the measurement axis and the state's axis,</p>
 <p>$$
 p_+=\tfrac12\bigl(1+r\cos\theta\bigr),
 \qquad
@@ -503,13 +503,13 @@ $$</p>
 =\frac{i\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi A\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)},
 $$</p>
 <p>and the numerator is purely imaginary, so the factor $i$ makes the weight real. The pairing of a state with an observable is thus the pairing of an informational element with a material one, and the factor $i$ is what converts the second into a reading. The two senses of the word <em>observable</em> — the element of the sector and the material element it mirrors — are separated by one multiplication.</p>
-<p><strong>The weight of the square gives the variance.</strong> For the square $\tilde H_\Psi^{2}=(h_t^{2}+\lvert\vec h_\Psi\rvert^{2})e_t+2h_t i\vec h_\Psi$, whose weight is $h_t^{2}+\lvert\vec h_\Psi\rvert^{2}+2h_t\vec r\cdot\vec h_\Psi$,</p>
+<p><strong>The weight of the square gives the variance.</strong> For the square $\tilde H_\Psi^{2}=(h_t^{2}+\lvert\vec h_\Psi\rvert^{2})e_t+2h_t i\vec h_\Psi$, whose weight is $h_t^{2}+\lvert\vec h_\Psi\rvert^{2}+2h_t\vec s_{\Psi}\cdot\vec h_\Psi$,</p>
 <p>$$
 \bigl\langle\tilde H_\Psi^{2}\bigr\rangle_{\tilde{Ϛ}_\Psi}-\bigl\langle\tilde H_\Psi\bigr\rangle_{\tilde{Ϛ}_\Psi}^{2}
 =\bigl(1-r^{2}\cos^{2}\theta\bigr)\lvert\vec h_\Psi\rvert^{2},
 $$</p>
 <p>which is non-negative and which vanishes exactly when $r=1$ and $\cos^{2}\theta=1$, that is, when the state is the pure state on the observable's own axis. The variance is the part of the observable that the state cannot predict, and the two factors in it are the two reasons for failing to predict: a direction that is not the observable's, and a radius below one. A mixed state therefore has a variance on every axis, including its own, where the residue is $(1-r^{2})\lvert\vec h_\Psi\rvert^{2}$. <strong>Only a pure state can be an eigenstate of anything.</strong></p>
-<p><strong>Two checks on the arithmetic.</strong> The first is the pure case at $\vec r=\vec u_\Psi$, where $p_+=1$ and the variance is zero. The second is the mixed case at $\vec r=0$, where $p_+=\tfrac12$ and the variance is $\lvert\vec h_\Psi\rvert^{2}$, its largest value. A computation in the algebra confirms both formulas on random states and observables to machine precision, and the identity $\lambda_+\lambda_-=h_t^{2}-\lvert\vec h_\Psi\rvert^{2}$ ties the variance to the two eigenvalues.</p>
+<p><strong>Two checks on the arithmetic.</strong> The first is the pure case at $\vec s_{\Psi}=\vec u_\Psi$, where $p_+=1$ and the variance is zero. The second is the mixed case at $\vec s_{\Psi}=0$, where $p_+=\tfrac12$ and the variance is $\lvert\vec h_\Psi\rvert^{2}$, its largest value. A computation in the algebra confirms both formulas on random states and observables to machine precision, and the identity $\lambda_+\lambda_-=h_t^{2}-\lvert\vec h_\Psi\rvert^{2}$ ties the variance to the two eigenvalues.</p>
 <p><strong>The matrix trace is a reading, and it adds nothing.</strong> In the two-by-two image the matrix trace of the product is the pairing twice, and the normalised state has matrix trace one, so the weight becomes the familiar ratio of matrix traces. The factor two is the dimension of the image and cancels in the ratio; it is not a normalisation constant of the form. The symmetry of that trace, $\operatorname{tr}(AB)=\operatorname{tr}(BA)$ on the image, is the symmetry of the pairing on Hermitian arguments, and it is what allows the state to be written on either side.</p>
 <p><strong>What is derived and what is not is worth stating in one place.</strong> The algebra fixes the pairing, the idempotents and the cone. From these, the weight is real, non-negative and normalised, the two outcomes of a projective measurement add to one, and the variance is non-negative. Nothing else entered: no inner product was chosen, no Hilbert space was assumed, no frequency argument was used. What is not derived is that the weights are observed frequencies. That identification is the Born rule, and it is a postulate here as it is in the standard formalism. The framework's claim is narrower and it is exact: the <em>structure</em> of the assignment is forced by the algebra, and the empirical link is not.</p>
 <p><strong>The non-uniqueness is real and it is stated.</strong> A reading through the matrix trace could equally be written with the plain form, because the two coincide on the sector; the star is kept because it names the pairing that is positive definite on the whole algebra and because it survives the extension to maps. A reading could also be normalised by any positive functional, but only the scalar part is invariant under the unitary action, and that invariance is what makes the weight frame-independent within the compact group. The alternatives are therefore not equivalent: they differ in what they preserve.</p>
@@ -528,7 +528,7 @@ $$</p>
 <p><strong>The projections are the extreme points.</strong> At $a=\tfrac12$ and $\lvert\vec w\rvert=\tfrac12$ the effect is $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$, an idempotent, and no idempotent lies in the interior of the interval. The interval is therefore the convex hull of the projections plus the two endpoints, and the projections are the measurements with a definite outcome. The effect algebra of the sector is the interval of its own order, and the projection lattice is the two-sphere of axes together with zero and the unit.</p>
 <p><strong>A general resolution of the unit is a measurement.</strong> A finite family $\{\tilde E_{\Psi,k}\}$ with $\tilde E_{\Psi,k}\ge0$ and $\sum_k\tilde E_{\Psi,k}=e_t$ is a <strong>POVM</strong>, and the weight of the $k$-th outcome is</p>
 <p>$$
-p_k=\frac{\mathrm{Sc}\bigl(\tilde E_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_k+\vec w_k\cdot\vec r,
+p_k=\frac{\mathrm{Sc}\bigl(\tilde E_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_k+\vec w_k\cdot\vec s_{\Psi},
 \qquad
 \sum_k a_k=1,
 \qquad
@@ -541,7 +541,7 @@ $$</p>
 \qquad
 0\le\eta\le1,
 \qquad
-p_\pm=\tfrac12\bigl(1\pm\eta\,\vec u\cdot\vec r\bigr),
+p_\pm=\tfrac12\bigl(1\pm\eta\,\vec u\cdot\vec s_{\Psi}\bigr),
 $$</p>
 <p>is a POVM for every $\eta$ in the range, because $a=\tfrac12$ and $\lvert\vec w\rvert=\eta/2\le\tfrac12$. It is projective only at $\eta=1$, since</p>
 <p>$$
@@ -554,7 +554,7 @@ $$</p>
 \qquad
 k=0,1,2,
 $$</p>
-<p>are a POVM with weights $p_k=\tfrac13(1+\vec u_k\cdot\vec r)$. No two of them are orthogonal and none of them is a projection, so the measurement has three outcomes and no orthonormal basis. The projection lattice of a two-dimensional carrier cannot supply three orthogonal alternatives, and the interval supplies them without an enlargement.</p>
+<p>are a POVM with weights $p_k=\tfrac13(1+\vec u_k\cdot\vec s_{\Psi})$. No two of them are orthogonal and none of them is a projection, so the measurement has three outcomes and no orthonormal basis. The projection lattice of a two-dimensional carrier cannot supply three orthogonal alternatives, and the interval supplies them without an enlargement.</p>
 <p><strong>What the interval does not supply is the state after the measurement.</strong> The weight is a statistic of the preparation and the effect alone. The update of the state requires a family of maps, $\tilde{Ϛ}_\Psi\mapsto\sum_k\tilde M_{\mathrm{kraus},k}\tilde{Ϛ}_\Psi\tilde M_{\mathrm{kraus},k}^{*}$ with $\sum_k\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}=e_t$, and the Kraus operators are not determined by the effect they implement. Two instruments with the same POVM can update the state differently, so the interval answers "how often" and not "what then".</p>
 <p><strong>The dilation is the algebraic reason the interval is enough.</strong> Every POVM on this carrier has a projective realisation on a larger algebra, $\mathbb{B}\otimes_{\mathbb{C}}M_k(\mathbb{C})\cong M_{2k}(\mathbb{C})$, and the enlargement is by a factor that the tensor product supplies. The interval of the small algebra is therefore not an approximation to a projective measurement on the same algebra; it is the shadow of a projective measurement on a larger one, and the shadow is exact.</p>
 <h2 id="the-geometry-of-the-slice">The Geometry of the Slice</h2>
@@ -593,7 +593,7 @@ d_{\mathrm{FS}}=\arccos\bigl\lvert\cos\tfrac{\theta}{2}\bigr\rvert=\frac{\theta}
 D\bigl(\tilde\Pi_1(\vec u_1),\tilde\Pi_1(\vec u_2)\bigr)=\sin d_{\mathrm{FS}} .
 $$</p>
 <p>Two pure states at a right angle on the sphere are therefore at a Fubini–Study distance of $\pi/4$ and at a trace distance of $1/\sqrt{2}$, and orthogonal states are at a distance of $\pi/2$ and trace distance one. The geometry and the statistics are the same numbers in two parametrisations.</p>
-<p><strong>The interior metric is not the one the norm gives.</strong> The flat form $-\tfrac14\lvert d\vec r\rvert^{2}$ that the quaternionic norm supplies on the interior is not the Bures metric, whose boundary restriction is the Fubini–Study metric. The algebra's own form therefore gives the boundary exactly and the flat geometry everywhere, and it does not single out the metrically distinguished interior. That is a limit of what the norm does, and it is stated in the article on the Fubini–Study geometry rather than glossed here. The Bures metric is nevertheless a closed geometric object once it is granted: it is the round metric of a hemisphere of radius $\tfrac12$ whose pole is the maximally mixed state and whose equator is the pure-state sphere, so latitude is purity and the interior is not a flat ball. The flat form and that hemisphere agree on the angular part at every radius and differ in the radial coefficient alone.</p>
+<p><strong>The interior metric is not the one the norm gives.</strong> The flat form $-\tfrac14\lvert d\vec s_{\Psi}\rvert^{2}$ that the quaternionic norm supplies on the interior is not the Bures metric, whose boundary restriction is the Fubini–Study metric. The algebra's own form therefore gives the boundary exactly and the flat geometry everywhere, and it does not single out the metrically distinguished interior. That is a limit of what the norm does, and it is stated in the article on the Fubini–Study geometry rather than glossed here. The Bures metric is nevertheless a closed geometric object once it is granted: it is the round metric of a hemisphere of radius $\tfrac12$ whose pole is the maximally mixed state and whose equator is the pure-state sphere, so latitude is purity and the interior is not a flat ball. The flat form and that hemisphere agree on the angular part at every radius and differ in the radial coefficient alone.</p>
 <p><strong>The slice is the base of a cone, and the cone is defined by the product.</strong> The state set of this article is fixed by two conditions, the positivity of the matrix $\tilde\rho$ and the normalisation to unit weight. Read in the Hermitian sector they are one object. The positivity is membership in the cone of squares $C$ of the symmetrised plain product, which is $t\geq\lvert\vec s\rvert$ on $\tilde\rho=te_t+i\vec s$, and the normalisation cuts that cone with the affine hyperplane $2\,\mathrm{Sc}\tilde\rho=2t=1$. The state set is therefore the base of a symmetric cone. Its extreme points are its rank-one idempotents $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$, which is why the pure states fill the sphere and not the ball, and the Born weight is a positive functional normalised at the order unit $e_t$. The reading is <em>The Biquaternion Algebra as a JB-Algebra</em>, and what it supplies here is the reason why the three facts of this section — the slice, the sphere of pure states and the positivity of the weight — are one fact and not three.</p>
 <h2 id="the-flow-and-the-centre">The Flow and the Centre</h2>
 <p><strong>The state changes by conjugation, and the conjugation is by an invertible element of the algebra.</strong> The action of the algebra on its own sector is</p>
@@ -668,18 +668,18 @@ $$</p>
 2\,\mathrm{Sc}\tilde H_\Psi=\frac{E}{c},
 \qquad
 \tilde{Ϛ}_\Psi=\frac{\tilde H_\Psi}{2\,\mathrm{Sc}\tilde H_\Psi}
-=\tfrac12\Bigl(e_t+i\vec r\Bigr),
+=\tfrac12\Bigl(e_t+i\vec s_{\Psi}\Bigr),
 \qquad
-\vec r=-\frac{\vec v}{c}.
+\vec s_{\Psi}=-\frac{\vec v}{c}.
 $$</p>
 <p>The state's radius is $\beta=\lvert\vec v\rvert/c$ and its axis is the direction of motion reversed. The reversed sign is the convention of the $-i$ in the dictionary; the magnitude is not a convention.</p>
-<p><strong>The positivity of the state and the causality of the momentum are one condition.</strong> The state is positive exactly when $\lvert\vec r\rvert\le1$, which is $\lvert\vec v\rvert\le c$, which is $E\ge\lvert\vec p\rvert c$, which is the statement that the four-momentum is future timelike or null. A spacelike momentum gives an element with $\lvert\vec r\rvert>1$, which is not a state, and a past-pointing momentum gives a negative scalar part. <strong>The state space is the future cone of the material sector</strong>, and the ball's boundary is the light cone:</p>
+<p><strong>The positivity of the state and the causality of the momentum are one condition.</strong> The state is positive exactly when $\lvert\vec s_{\Psi}\rvert\le1$, which is $\lvert\vec v\rvert\le c$, which is $E\ge\lvert\vec p\rvert c$, which is the statement that the four-momentum is future timelike or null. A spacelike momentum gives an element with $\lvert\vec s_{\Psi}\rvert>1$, which is not a state, and a past-pointing momentum gives a negative scalar part. <strong>The state space is the future cone of the material sector</strong>, and the ball's boundary is the light cone:</p>
 <p>$$
-\lvert\vec r\rvert<1\ \leftrightarrow\ \text{timelike},
+\lvert\vec s_{\Psi}\rvert<1\ \leftrightarrow\ \text{timelike},
 \qquad
-\lvert\vec r\rvert=1\ \leftrightarrow\ \text{null, a pure state},
+\lvert\vec s_{\Psi}\rvert=1\ \leftrightarrow\ \text{null, a pure state},
 \qquad
-\lvert\vec r\rvert>1\ \leftrightarrow\ \text{spacelike, no state} .
+\lvert\vec s_{\Psi}\rvert>1\ \leftrightarrow\ \text{spacelike, no state} .
 $$</p>
 <p><strong>The interval of the state is the inverse Lorentz factor.</strong> Applied to the state's radius,</p>
 <p>$$
@@ -692,7 +692,7 @@ $$</p>
 <p><strong>The state is the four-velocity, and the dictionary is invertible.</strong> Inverting the display above,</p>
 <p>$$
 \tilde R_\Phi=2i\,\tilde H_\Psi
-=i\,e_t-\vec r
+=i\,e_t-\vec s_{\Psi}
 =\frac{\tilde V_\Phi}{c},
 \qquad
 \tilde V_\Phi=ic\,e_t+\vec v .
@@ -756,7 +756,7 @@ $$</p>
 <p><strong>The correspondence explains the asymmetry of the two preserved groups.</strong> The material sector's element is classified by the quaternionic norm, which is preserved by $U(1)\cdot SL(2,\mathbb{C})$, so a four-momentum's causal class is a Lorentz invariant. The informational element's state space is a unit-scalar slice, which is preserved only by $U(2)$, so the purity of a state is not a Lorentz invariant. In the correspondence the two statements are the same statement: the radius of the ball is the velocity, and a boost changes the velocity. A boost cannot change whether a vector is timelike, and it can change how mixed a state is, because those are the two readings of one cone, and the boost acts on the cone and not on the slice.</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <h3 id="i12m-the-state-is-a-ray-and-not-a-vector">I.12.m — The State Is a Ray and Not a Vector</h3>
-<p><strong>Read:</strong> the state $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec r)$, the idempotents $\tilde\Pi_1(\vec u)$, and the preparation dictionary.</p>
+<p><strong>Read:</strong> the state $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$, the idempotents $\tilde\Pi_1(\vec u)$, and the preparation dictionary.</p>
 <p><strong>The two objects that the standard formalism calls a state are different here, and only one of them is in this sector.</strong> A state vector is an element of the spinor module; the state of this entry is an element of the sector. The map between them is the rank-one construction, $\xi\mapsto\xi\xi^{*}$, and it is not injective: two spinors that differ by a central phase give the same idempotent. The phase is the one thing the map loses, and it is lost because it is central.</p>
 <p><strong>The algebra explains why the phase is unobservable and not merely unobserved.</strong> A weight is a ratio of scalar parts, and a central phase multiplies both factors of the product, so it cancels. The loss is not an imperfection of the description; it is the statement that the sector's objects are the ones a bilinear pairing can see. A state, in this framework, is what remains of a preparation when the pairing has been applied.</p>
 <p><strong>A superposition is therefore not a state in this sector either.</strong> The sum of two idempotents is not an idempotent, and the state that a superposition produces is the diagonal of the interference pattern, which is one point of the ball. The interference itself lives in the module and not in the sector, and the sector sees only its square.</p>
@@ -770,7 +770,7 @@ $$</p>
 <h3 id="i12o-the-weight-of-a-state-is-its-linear-entropy">I.12.o — The Weight of a State Is Its Linear Entropy</h3>
 <p><strong>Read:</strong> $S_{\mathrm{lin}}=2N$ on the slice, the spectral entropy $S(r)$, and the eigenvalue product $\lambda_+\lambda_-=\tfrac14(1-r^{2})$.</p>
 <p><strong>One quantity measures mixedness, and it is the form that also measures the interval.</strong> The identity $S_{\mathrm{lin}}=2N$ is not a coincidence of two definitions: both sides are functions of $\lambda_+\lambda_-$, and the product of the eigenvalues is the norm of the state. The consequence is that every statement about mixedness is a statement about the position of the state in the cone, and conversely.</p>
-<p><strong>The first reading is thermal.</strong> The Gibbs state of a Hamiltonian $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ is the state whose radius vector is $\vec r=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, with $\beta=1/(k_BT)$. The radius is the magnetisation, its saturation at low temperature is the approach to the boundary, and at high temperature the expansion of the hyperbolic tangent gives $\lvert\vec r\rvert\approx\lvert\vec h_\Psi\rvert/(k_BT)$, which is Curie's law. The centre of the ball is the infinite-temperature state, and the boundary is unreachable at any finite temperature.</p>
+<p><strong>The first reading is thermal.</strong> The Gibbs state of a Hamiltonian $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ is the state whose radius vector is $\vec s_{\Psi}=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, with $\beta=1/(k_BT)$. The radius is the magnetisation, its saturation at low temperature is the approach to the boundary, and at high temperature the expansion of the hyperbolic tangent gives $\lvert\vec s_{\Psi}\rvert\approx\lvert\vec h_\Psi\rvert/(k_BT)$, which is Curie's law. The centre of the ball is the infinite-temperature state, and the boundary is unreachable at any finite temperature.</p>
 <p><strong>The second reading is entanglement.</strong> For a pure state of two carrier copies, the reduced state of one copy is a state of this sector, and its concurrence is $\mathcal{C}=2\sqrt{N(\tilde{Ϛ}_\Psi)}$. A maximally entangled pair has $N=\tfrac14$ and $\mathcal{C}=1$; a product state has $N=0$ and $\mathcal{C}=0$. The mixedness of a half and the entanglement of the whole are the same number, and the factor two is the one that appears throughout the sector.</p>
 <p><strong>The third reading is decoherence.</strong> A state that is entangled with an environment and then traced over is a state of this sector, and the partial trace is a map that moves it inward. The purity falls, the linear entropy $2N$ rises, and the entropy $S(r)$ rises with it. The boundary is where the environment has learned nothing; the interior is where it has.</p>
 <p><strong>Boundary.</strong> The concurrence formula uses the standard two-qubit expression for a pure pair and is quoted as a reading of $N$; the framework computes the reduced state's norm and does not by itself define an entanglement measure. The thermal reading requires the identification of $\beta$ with an inverse temperature, which is the standard Gibbs construction. Neither reading adds a dynamical law to the algebra.</p>
@@ -781,10 +781,10 @@ $$</p>
 <p><strong>The physical content is that a preparation has an intensity and a shape, and only the shape is a state.</strong> A beam of particles with twice the flux has twice the scalar part and the same state. The intensity is what the scalar part measures, and the shape is what the radius vector measures. The sector keeps both, and the ratio throws the first away.</p>
 <p><strong>Boundary.</strong> The statement concerns the sector's own normalisation. It does not say that normalisation is physically meaningless in a theory with a superselection rule on particle number, where the normalisation can be fixed by the superselection charge; the sector has no such charge.</p>
 <h3 id="i12q-the-born-weight-is-an-analyser-transmission">I.12.q — The Born Weight Is an Analyser Transmission</h3>
-<p><strong>Read:</strong> $p_+=\tfrac12(1+\vec u\cdot\vec r)$, the half-angle form $\cos^{2}(\theta/2)$, and the two-projector decomposition.</p>
-<p><strong>The weight is the law of an analyser.</strong> A preparation along $\vec r$ meets an analyser along $\vec u$, and the transmitted fraction is $\tfrac12(1+\vec u\cdot\vec r)$. The law interpolates between certainty at $\vec u=\vec r$ and impossibility at $\vec u=-\vec r$, with equal transmission at a right angle. Every two-outcome measurement of the sector is an instance of it, because every two-outcome projective measurement is a pair of idempotents on some axis.</p>
+<p><strong>Read:</strong> $p_+=\tfrac12(1+\vec u\cdot\vec s_{\Psi})$, the half-angle form $\cos^{2}(\theta/2)$, and the two-projector decomposition.</p>
+<p><strong>The weight is the law of an analyser.</strong> A preparation along $\vec s_{\Psi}$ meets an analyser along $\vec u$, and the transmitted fraction is $\tfrac12(1+\vec u\cdot\vec s_{\Psi})$. The law interpolates between certainty at $\vec u=\vec s_{\Psi}$ and impossibility at $\vec u=-\vec s_{\Psi}$, with equal transmission at a right angle. Every two-outcome measurement of the sector is an instance of it, because every two-outcome projective measurement is a pair of idempotents on some axis.</p>
 <p><strong>The half in the angle is the double cover, and it is visible in the formula.</strong> The analyser is set by an axis of the three-space, and the state is set by an axis too, but the natural angle of the transmission law is half the angle between them. A rotation of the analyser by $\pi$ returns the same analyser and exchanges the two outcomes; a rotation of the state by $2\pi$ returns the same state. The two-to-one geometry of the sphere over the ray space is what the half-angle records.</p>
-<p><strong>The formula contains both a classical and a quantum term, and the split is the radius.</strong> Written as $p_+=\tfrac12+\tfrac12\vec r\cdot\vec u$, the first term is the unbiased guess and the second is the correlation between the preparation and the analyser. For a state at the centre the second term vanishes and the analyser transmits half of everything; for a pure state the second term is the whole of the classical Malus correlation. Mixedness is the dilution of the correlation and nothing else.</p>
+<p><strong>The formula contains both a classical and a quantum term, and the split is the radius.</strong> Written as $p_+=\tfrac12+\tfrac12\vec s_{\Psi}\cdot\vec u$, the first term is the unbiased guess and the second is the correlation between the preparation and the analyser. For a state at the centre the second term vanishes and the analyser transmits half of everything; for a pure state the second term is the whole of the classical Malus correlation. Mixedness is the dilution of the correlation and nothing else.</p>
 <p><strong>Boundary.</strong> This is the algebraic analogue of the Malus law, not a derivation of the electromagnetic law of the same form. The electromagnetic statement concerns the intensity of a classical field through a polariser; the statement here concerns the frequency of an outcome for a state. They agree in form because both are quadratic in a projection, and the agreement is not evidence that the two objects are the same.</p>
 <h3 id="i12r-the-observable-and-the-state-are-one-space">I.12.r — The Observable and the State Are One Space</h3>
 <p><strong>Read:</strong> both objects as elements of $\mathbb{B}_{\Psi}$, the symmetric pairing, and the identity $\tilde H_\Psi=iA$.</p>
@@ -801,7 +801,7 @@ $$</p>
 <h3 id="i12t-an-effect-is-a-measurement-of-finite-resolution">I.12.t — An Effect Is a Measurement of Finite Resolution</h3>
 <p><strong>Read:</strong> the interval $[0,e_t]$, the conditions $\lvert\vec w\rvert\le\min(a,1-a)$, the sharpness $\eta$, and the trine POVM.</p>
 <p><strong>The interval is the set of measurements, and its interior is the set of imperfect ones.</strong> The two endpoints are the never and the always; the boundary circle at $a=\tfrac12,\lvert\vec w\rvert=\tfrac12$ is the set of perfect analysers; and everything between is an analyser with finite contrast. The parameter $\eta$ names the contrast, and the identity $\tilde E_+^{2}-\tilde E_+=\tfrac14(\eta^{2}-1)e_t$ says that the effect is a projection exactly at unit contrast.</p>
-<p><strong>A finite-resolution measurement is not a defective perfect one.</strong> The two outcomes of an unsharp analyser overlap, and the overlap is a property of the apparatus and not of the state. The weight $p_\pm=\tfrac12(1\pm\eta\vec u\cdot\vec r)$ shows the two roles separately: $\eta$ belongs to the measurement and $\vec r$ to the preparation, and the product is what the experiment reads. No improvement of the preparation can raise $\eta$.</p>
+<p><strong>A finite-resolution measurement is not a defective perfect one.</strong> The two outcomes of an unsharp analyser overlap, and the overlap is a property of the apparatus and not of the state. The weight $p_\pm=\tfrac12(1\pm\eta\vec u\cdot\vec s_{\Psi})$ shows the two roles separately: $\eta$ belongs to the measurement and $\vec s_{\Psi}$ to the preparation, and the product is what the experiment reads. No improvement of the preparation can raise $\eta$.</p>
 <p><strong>The three-outcome measurement is the case that no basis supplies.</strong> Three effects at $120^\circ$ sum to the unit and none is a projection, so the measurement has three exclusive alternatives and no orthonormal family of three exists in a two-dimensional carrier. The interval supplies the alternatives without enlarging the carrier, and the dilation supplies the projective realisation on a larger one.</p>
 <p><strong>Boundary.</strong> The interval gives the statistic and not the update. The post-measurement state needs Kraus operators, which the interval does not determine, and two instruments with the same effects can update differently. The entry states the statistic and refers the update to the channel article.</p>
 <h3 id="i12u-the-metric-is-a-quarter-of-the-sphere">I.12.u — The Metric Is a Quarter of the Sphere</h3>
@@ -829,7 +829,7 @@ $$</p>
 <p><strong>The physical reading is that spin is not a Lorentz-covariant notion in this sense.</strong> The normalised state of a system is defined with respect to a frame, and a change of frame changes the normalisation and the mixedness. What is covariant is the ray, which is the boundary, and that is why the celestial sphere of the previous entry is the Lorentz-covariant object while the ball is not. The Wigner rotation is the residue of the same fact: the little group acts on the state, and the boost moves it between slices.</p>
 <p><strong>Boundary.</strong> The statement is about the normalised state space, not about the algebra's Lorentz action, which is perfectly well defined on the whole sector. Any element transforms, and the transformed element is still in the sector; what fails is that the transformed element is again a state of unit weight.</p>
 <h3 id="i12y-the-ball-is-the-velocity-space">I.12.y — The Ball Is the Velocity Space</h3>
-<p><strong>Read:</strong> $\tilde R_\Phi=2i\tilde H_\Psi=ie_t-\vec r=\tilde V_\Phi/c$, and $N(\tilde{Ϛ}_\Psi)=\tfrac14\gamma^{-2}$.</p>
+<p><strong>Read:</strong> $\tilde R_\Phi=2i\tilde H_\Psi=ie_t-\vec s_{\Psi}=\tilde V_\Phi/c$, and $N(\tilde{Ϛ}_\Psi)=\tfrac14\gamma^{-2}$.</p>
 <p><strong>The dictionary makes the ball the set of velocities.</strong> Inverting the preparation map turns a normalised state into a four-velocity over $c$, and the inverse is defined on the whole ball. The centre is the rest frame, the boundary is the speed of light, and the radius is the speed fraction. The positivity of the state and the causal bound on a velocity are the same inequality, and this is the entry's sharpest structural statement.</p>
 <p><strong>Velocity space is hyperbolic, and the ball is its Klein model.</strong> The composition of boosts along one axis is the addition law $r'=(r+\tanh\theta)/(1+r\tanh\theta)$, so the radius is the hyperbolic tangent of the rapidity. The Euclidean ball with the radius as coordinate is therefore the Klein model of hyperbolic three-space, and a boost is a hyperbolic translation. The pure states are the sphere at infinity.</p>
 <p><strong>The mixedness of the state of a particle is its time-dilation factor.</strong> The linear entropy is $\tfrac12\gamma^{-2}$, so the state is pure for a massless particle, maximally mixed at rest, and mixed in proportion to $mc^{2}/E$. Entropy, purity and rapidity are three names for one coordinate of the same ball, and the coordinate is the velocity.</p>
@@ -846,9 +846,9 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The sector is one real four-space with two quadratic forms.</strong> The Hermitian form is positive definite of inertia $(4,0)$ and supplies the probabilities; the quaternionic norm is indefinite of inertia $(1,3)$ and supplies the geometry, the cone and the mixedness. The other two forms of the algebra collapse onto these two on this sector.</p>
 <p><strong>An observable is an element, and its spectrum is two real numbers.</strong> Every Hermitian element factors through the two idempotents of its own axis, with eigenvalues $h_t\pm\lvert\vec h_\Psi\rvert$. Positivity is $h_t\ge\lvert\vec h_\Psi\rvert$, and the order is the order of the cone.</p>
-<p><strong>A state is an element of the same cone at unit weight.</strong> It is $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$, its eigenvalues are $\tfrac12(1\pm r)$, its purity is $\tfrac12(1+r^{2})$, and its mixedness is the norm: $S_{\mathrm{lin}}=2N$.</p>
+<p><strong>A state is an element of the same cone at unit weight.</strong> It is $\tfrac12(e_t+i\vec s_{\Psi})$ with $\lvert\vec s_{\Psi}\rvert\le1$, its eigenvalues are $\tfrac12(1\pm r)$, its purity is $\tfrac12(1+r^{2})$, and its mixedness is the norm: $S_{\mathrm{lin}}=2N$.</p>
 <p><strong>The pure states are the null elements and the boundary of the ball.</strong> They are the idempotents, the zero divisors of the sector, and the extreme points of the convex set. The centre is the maximally mixed state and the fixed point of every rotor.</p>
-<p><strong>The Born weight is the normalised Hermitian pairing.</strong> It is $h_t+\vec r\cdot\vec h_\Psi$, and for a projector it is $\tfrac12(1+\vec u\cdot\vec r)$. Reality, positivity and normalisation follow from the algebra; that the numbers are frequencies does not.</p>
+<p><strong>The Born weight is the normalised Hermitian pairing.</strong> It is $h_t+\vec s_{\Psi}\cdot\vec h_\Psi$, and for a projector it is $\tfrac12(1+\vec u\cdot\vec s_{\Psi})$. Reality, positivity and normalisation follow from the algebra; that the numbers are frequencies does not.</p>
 <p><strong>The variance is the part of the observable the state cannot predict.</strong> It is $\lvert\vec h_\Psi\rvert^{2}(1-r^{2}\cos^{2}\theta)$, with a transverse term and a mixedness term, and only a pure state has an eigenstate.</p>
 <p><strong>The effects are the interval between zero and the unit.</strong> The projections are its extreme points, a general resolution of the unit is a POVM, and the sharpness $\eta$ names the resolution of a two-outcome measurement. The interval gives statistics and not the post-measurement state.</p>
 <p><strong>The geometry is the algebra's own.</strong> The boundary is the projective line with the Fubini–Study metric, a quarter of the round sphere; the complex structure is the commutator; the symplectic area is $\pi$, which is $2\pi$ times the spin.</p>
@@ -892,13 +892,13 @@ $$</p>
 </tr>
 <tr>
 <td>the state</td>
-<td>$\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec r)$</td>
-<td>positive, unit weight, $\lvert\vec r\rvert\le1$</td>
+<td>$\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_{\Psi})$</td>
+<td>positive, unit weight, $\lvert\vec s_{\Psi}\rvert\le1$</td>
 </tr>
 <tr>
 <td>the Bloch radius</td>
 <td>$r$</td>
-<td>$\lvert\vec r\rvert$, the mixedness, $\tanh\rho$</td>
+<td>$\lvert\vec s_{\Psi}\rvert$, the mixedness, $\tanh\rho$</td>
 </tr>
 <tr>
 <td>the rapidity of the state</td>
@@ -933,12 +933,12 @@ $$</p>
 <tr>
 <td>the Born weight</td>
 <td>$\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_\Psi}$</td>
-<td>$h_t+\vec r\cdot\vec h_\Psi$</td>
+<td>$h_t+\vec s_{\Psi}\cdot\vec h_\Psi$</td>
 </tr>
 <tr>
 <td>the weight of a projector</td>
 <td>$p_\pm$</td>
-<td>$\tfrac12(1\pm\vec u\cdot\vec r)$</td>
+<td>$\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$</td>
 </tr>
 <tr>
 <td>the variance</td>
@@ -1002,13 +1002,13 @@ $$</p>
 </tr>
 <tr>
 <td>the state of a momentum</td>
-<td>$\vec r=-\vec v/c$</td>
+<td>$\vec s_{\Psi}=-\vec v/c$</td>
 <td>radius $\beta$, axis reversed</td>
 </tr>
 <tr>
 <td>the velocity of a state</td>
 <td>$\tilde V_\Phi/c=2i\tilde H_\Psi$</td>
-<td>$ie_t-\vec r$, the inverse dictionary</td>
+<td>$ie_t-\vec s_{\Psi}$, the inverse dictionary</td>
 </tr>
 </tbody>
 </table></div>
@@ -1019,7 +1019,7 @@ $$</p>
 <p><strong>The previous entry of the section.</strong> <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> is the material sector read as spacetime, and its §<em>The Lorentz Action</em> is the action that the last section of this entry reads on the ball.</p>
 <p><strong>The relativistic qubit.</strong> <a href="the-relativistic-qubit-in-biquaternionic-form.html">The Relativistic Qubit in Biquaternionic Form</a> treats the module, the rays, the celestial sphere and the little group, and it states the failure of the state space to be Lorentz-invariant.</p>
 <p><strong>The measurement.</strong> <a href="the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a> is where the update that the interval does not supply is constructed.</p>
-<p><strong>The thermodynamics.</strong> <a href="quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a> owns the Gibbs state and the Bloch vector $\vec r=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$ quoted in §<em>The Interpretations</em>.</p>
+<p><strong>The thermodynamics.</strong> <a href="quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a> owns the Gibbs state and the Bloch vector $\vec s_{\Psi}=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$ quoted in §<em>The Interpretations</em>.</p>
 <p><strong>The standard background.</strong> The density-operator formalism and the Born rule are treated in Nielsen and Chuang, <em>Quantum Computation and Quantum Information</em>, and in Peres, <em>Quantum Theory: Concepts and Methods</em>; the effect algebra and the POVM formalism in Busch, Grabowski and Lahti, <em>Operational Quantum Physics</em>; and the geometry of the state space in Bengtsson and Życzkowski, <em>Geometry of Quantum States</em>.</p>
 <p><strong>The mathematics.</strong> The Squares and the Positive Cone of the Biquaternion Sesqualgebra owns the cone, <a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a> owns the restrictions, and <a href="../articles_maths/effect-algebras-and-orthomodular-lattices.html">Effect Algebras and Orthomodular Lattices</a> owns the interval.</p>
       </div>

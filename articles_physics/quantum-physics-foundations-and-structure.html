@@ -175,9 +175,9 @@ $$</p>
 <p>where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alpha, \beta$ are complex numbers, determined up to a global phase.</p>
 <p>A <strong>mixed state</strong> of a qubit is a density matrix</p>
 <p>$$
-\rho = \frac{1}{2}\left(I + \vec r\cdot\boldsymbol{\sigma}\right),
+\rho = \frac{1}{2}\left(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma}\right),
 $$</p>
-<p>where $\vec r = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the <strong>Bloch vector</strong>, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:</p>
+<p>where $\vec s_{\Psi} = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the <strong>Bloch vector</strong>, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:</p>
 <p>$$
 \sigma_1 = \begin{pmatrix} 0 & 1 \ 1 & 0 \end{pmatrix}, \quad
 \sigma_2 = \begin{pmatrix} 0 & -i \ i & 0 \end{pmatrix}, \quad
@@ -185,20 +185,20 @@ $$</p>
 $$</p>
 <p>The <strong>positivity</strong> of $\rho$ is equivalent to the condition</p>
 <p>$$
-\boxed{\;|\vec r| \leq 1\;}.
+\boxed{\;|\vec s_{\Psi}| \leq 1\;}.
 $$</p>
-<p>The state is <strong>pure</strong> if and only if $|\vec r| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\vec r = 0$, i.e., $\rho = I/2$.</p>
+<p>The state is <strong>pure</strong> if and only if $|\vec s_{\Psi}| = 1$, and <strong>mixed</strong> otherwise. The <strong>maximally mixed state</strong> has $\vec s_{\Psi} = 0$, i.e., $\rho = I/2$.</p>
 <h3 id="the-bloch-sphere">The Bloch Sphere</h3>
 <p>The set of pure states of a qubit is in one-to-one correspondence with the unit sphere</p>
 <p>$$
-S^2 = \{\vec r \in \mathbb{R}^3 : |\vec r| = 1\}.
+S^2 = \{\vec s_{\Psi} \in \mathbb{R}^3 : |\vec s_{\Psi}| = 1\}.
 $$</p>
-<p>This is the <strong>Bloch sphere</strong>. Each point on the sphere corresponds to a unique pure state, and the vector $\vec r$ is the direction along which the spin is definite (spin-up in the direction $\vec r$).</p>
+<p>This is the <strong>Bloch sphere</strong>. Each point on the sphere corresponds to a unique pure state, and the vector $\vec s_{\Psi}$ is the direction along which the spin is definite (spin-up in the direction $\vec s_{\Psi}$).</p>
 <p>The set of all states (pure and mixed) is the <strong>Bloch ball</strong> of radius one:</p>
 <p>$$
-B^3 = \{\vec r \in \mathbb{R}^3 : |\vec r| \leq 1\}.
+B^3 = \{\vec s_{\Psi} \in \mathbb{R}^3 : |\vec s_{\Psi}| \leq 1\}.
 $$</p>
-<p>The centre $\vec r = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.</p>
+<p>The centre $\vec s_{\Psi} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.</p>
 <p>The Bloch sphere provides a geometric representation of a qubit that is both intuitive and useful. Rotations of the sphere correspond to $*$-unitary operations on the qubit (up to a sign), and the distance between two points corresponds to the distinguishability of the corresponding states.</p>
 <h3 id="pauli-matrices-and-observables">Pauli Matrices and Observables</h3>
 <p>The <strong>Pauli matrices</strong> form a basis for the traceless Hermitian operators on $\mathbb{C}^2$. Any Hermitian operator $A$ on $\mathbb{C}^2$ can be written as</p>
@@ -206,17 +206,17 @@ $$</p>
 A = a_0\, I + \vec a\cdot\boldsymbol{\sigma},
 $$</p>
 <p>where $a_0 \in \mathbb{R}$ is the trace part and $\vec a \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\vec a|$.</p>
-<p>The <strong>expectation value</strong> of $A$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ is</p>
+<p>The <strong>expectation value</strong> of $A$ in a state $\rho = \tfrac{1}{2}(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma})$ is</p>
 <p>$$
-\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \vec a\cdot\vec r.
+\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \vec a\cdot\vec s_{\Psi}.
 $$</p>
 <p>This is the standard formula for the expectation value of a qubit observable.</p>
 <h3 id="the-born-rule-for-a-qubit">The Born Rule for a Qubit</h3>
-<p>For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities</p>
+<p>For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities</p>
 <p>$$
-p_\pm = \frac{1}{2}\left(1 \pm a_{\mathrm{fop}}\cdot\vec r\right),
+p_\pm = \frac{1}{2}\left(1 \pm a_{\mathrm{fop}}\cdot\vec s_{\Psi}\right),
 $$</p>
-<p>where $a_{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a_{\mathrm{fop}}$ and the Bloch vector $\vec r$.</p>
+<p>where $a_{\mathrm{fop}} = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $a_{\mathrm{fop}}$ and the Bloch vector $\vec s_{\Psi}$.</p>
 <p>After the measurement with outcome $+$, the state collapses to the pure state</p>
 <p>$$
 \rho_2 = \frac{1}{2}\left(I + a_{\mathrm{fop}}\cdot\boldsymbol{\sigma}\right),
@@ -395,8 +395,8 @@ $$</p>
 <td>Pauli matrices</td>
 </tr>
 <tr>
-<td>$\vec r$</td>
-<td>Bloch vector, $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$</td>
+<td>$\vec s_{\Psi}$</td>
+<td>Bloch vector, $\rho = \tfrac{1}{2}(I + \vec s_{\Psi}\cdot\boldsymbol{\sigma})$</td>
 </tr>
 <tr>
 <td>$S^2$, $B^3$</td>

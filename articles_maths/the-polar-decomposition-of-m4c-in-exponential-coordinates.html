@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Exponential Polar Decomposition of $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <title>The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates — Biquaternion Universe</title>
   <meta name="description" content="Every invertible factors as with Hermitian; this is the left polar decomposition written in exponential form. The Hermitian factor is unique, the -unitary…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,10 +69,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-exponential-polar-decomposition-of-math0"><strong>The Exponential Polar Decomposition of $M_4(\mathbb{C})$</strong></h1>
+        <h1 id="the-polar-decomposition-of-math0-in-exponential-coordinates"><strong>The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Every invertible $A\in M_4(\mathbb{C})$ factors as $A=e^H e^{iK}$ with $H,K$ Hermitian; this is the left polar decomposition $A=P'U'$ written in exponential form.</strong> The Hermitian factor $H$ is unique, the $*$-unitary factor $e^{iK}$ is unique, and the eigenvalues of $K$ are determined modulo $2\pi\mathbb{Z}$. The factorisation is different from the right polar decomposition $A=UP=e^{iK'}e^{H'}$: the two share the $*$-unitary factor, and their positive factors are conjugate by it. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.</p>
-<p>The article proves the exponential polar decomposition, relates it to the right polar decomposition, characterises the normal case, describes the Cartan decomposition and the singular case, and compares it with the chiral decomposition of the mass block.</p>
+<p>The article proves the polar decomposition, relates it to the right polar decomposition, characterises the normal case, describes the Cartan decomposition and the singular case, and compares it with the chiral decomposition of the mass block.</p>
 <p>The right polar decomposition is <em>The Polar Decomposition of $M_4(\mathbb{C})$</em>; the exponential is <em>The Exponential and the Lie Group of $M_4(\mathbb{C})$</em>; the chiral mass block is <em>The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$</em>; the spectral theory is <em>Spectral Theory and the Spectral Projectors of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-left-polar-decomposition">The Left Polar Decomposition</h2>
 <p><strong>Theorem (left polar decomposition).</strong> Every invertible $A\in M_4(\mathbb{C})$ has a unique decomposition</p>
@@ -126,7 +126,7 @@ $$</p>
 U'=e^{iK},\qquad K=K^*,
 $$</p>
 <p>whose eigenvalues are determined modulo $2\pi\mathbb{Z}$. The principal logarithm chooses the eigenvalues in $(-\pi,\pi]$.</p>
-<p><strong>Theorem (exponential polar decomposition).</strong> Every invertible $A$ can be written as</p>
+<p><strong>Theorem (polar decomposition).</strong> Every invertible $A$ can be written as</p>
 <p>$$
 A=e^H e^{iK},
 $$</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>because $P=U^*P'U=U^*e^HU=e^{U^*HU}$. The two exponential forms share the $*$-unitary factor and differ by the conjugation of the Hermitian factor.</p>
 <p><strong>Example.</strong> For a positive definite Hermitian $A=P$, the left and right polar decompositions are $A=P\cdot I$; the exponential form is $A=e^H$ with $K=0$. For a $*$-unitary $A=U$, the decomposition is $A=I\cdot U$; the exponential form is $A=e^{iK}$. For a scalar $A=re^{i\theta}$ with $r>0$, $A=e^{\log r}e^{i\theta}$, the two Hermitian factors are real scalars and commute.</p>
 <h2 id="the-normal-case">The Normal Case</h2>
-<p><strong>Theorem.</strong> For invertible $A$ with exponential polar decomposition $A=e^H e^{iK}$, the following are equivalent:</p>
+<p><strong>Theorem.</strong> For invertible $A$ with polar decomposition $A=e^H e^{iK}$, the following are equivalent:</p>
 <ol>
 <li>$A$ is normal: $AA^*=A^*A$;</li>
 <li>$H$ and $K$ commute: $[H,K]=0$;</li>
@@ -164,7 +164,7 @@ $$</p>
 <p>The Hermitian factors are simultaneously diagonalisable, and the eigenvalues of $A$ are $e^{\lambda_k+i\theta_k}$.</p>
 <p><strong>The non-normal case.</strong> For a non-normal $A$, the Hermitian factors do not commute, and the left and right exponential forms are genuinely different. The commutator $[H,K]$ is the obstruction to the two orderings coinciding.</p>
 <h2 id="the-cartan-decomposition">The Cartan Decomposition</h2>
-<p><strong>The group decomposition.</strong> The exponential polar decomposition is the <strong>left Cartan decomposition</strong></p>
+<p><strong>The group decomposition.</strong> The polar decomposition is the <strong>left Cartan decomposition</strong></p>
 <p>$$
 GL_4(\mathbb{C})=\exp(\operatorname{Herm}_4)\,U(4),
 $$</p>
@@ -186,7 +186,7 @@ $$</p>
 <p>$$
 \mathfrak{gl}_4=\operatorname{Herm}_4\oplus\mathfrak{u}(4),
 $$</p>
-<p>the Cartan decomposition with Cartan involution $\theta(X)=-X^*$. The exponential polar decomposition is the global form of the decomposition of the group, and the right polar decomposition is the other global form.</p>
+<p>the Cartan decomposition with Cartan involution $\theta(X)=-X^*$. The polar decomposition is the global form of the decomposition of the group, and the right polar decomposition is the other global form.</p>
 <p><strong>The symmetric space.</strong> The quotient</p>
 <p>$$
 GL_4/U(4)\cong P_+
@@ -194,17 +194,17 @@ $$</p>
 <p>is the symmetric space of positive definite Hermitian matrices; the exponential map $\operatorname{Herm}_4\to P_+$ is a diffeomorphism. The left polar gives the trivialization $GL_4\cong P_+\times U(4)$, $g=P'U'\mapsto(P',U')$; the right polar gives the other trivialization $g=UP\mapsto(P,U)$. The two trivializations differ by the conjugation action of $U(4)$ on $P_+$.</p>
 <p><strong>The uniqueness of the decomposition.</strong> The factors $P'$ and $U'$ are unique. The exponent $K$ is not: different Hermitian logarithms of $U'$ differ by a Hermitian matrix whose eigenvalues lie in $2\pi\mathbb{Z}$ and which commutes with $U'$.</p>
 <h2 id="the-singular-case">The Singular Case</h2>
-<p><strong>No exponential polar for singular matrices.</strong> If $A$ is singular, it has no factorisation $A=e^He^{iK}$ with $H,K$ Hermitian, because $e^H$ is invertible and $e^{iK}$ is $*$-unitary, so their product is invertible. The exponential polar decomposition exists exactly on $GL_4$.</p>
+<p><strong>No exponential coordinates for singular matrices.</strong> If $A$ is singular, it has no factorisation $A=e^He^{iK}$ with $H,K$ Hermitian, because $e^H$ is invertible and $e^{iK}$ is $*$-unitary, so their product is invertible. The polar decomposition exists exactly on $GL_4$.</p>
 <p><strong>The polar decomposition survives.</strong> The right polar decomposition $A=UP$ exists for every $A$, with $P$ positive semidefinite and $U$ a partial isometry; the left polar decomposition $A=P'U'$ exists with $P'=(AA^*)^{1/2}$ positive semidefinite and $U'$ a partial isometry. The exponential form requires the invertibility of $P$ and $P'$.</p>
-<p><strong>The limit.</strong> For a family $A(t)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(t)=\log P(t)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The exponential polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.</p>
-<p><strong>The singular values.</strong> The singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$ in the right exponential form $A=e^{iK'}e^{H'}$. The exponential polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value, the logarithm diverges.</p>
+<p><strong>The limit.</strong> For a family $A(t)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(t)=\log P(t)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.</p>
+<p><strong>The singular values.</strong> The singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$ in the right exponential form $A=e^{iK'}e^{H'}$. The polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value, the logarithm diverges.</p>
 <h2 id="the-chiral-mass-block">The Chiral Mass Block</h2>
 <p><strong>The chiral decomposition.</strong> For the mass block $M\in M_2(\mathbb{C})$ of the rank-two split,</p>
 <p>$$
 M=U_L\Sigma U_R^*,
 $$</p>
-<p>with $U_L,U_R\in U(2)$ and $\Sigma$ diagonal nonnegative. This is the singular value decomposition of the block, not the exponential polar decomposition of the full algebra.</p>
-<p><strong>The relation.</strong> The full algebra's exponential polar decomposition applies to the $4\times4$ matrix; the chiral decomposition applies to the $2\times2$ mass block and uses two independent unitaries, one for each chirality. The two decompositions answer different questions: the exponential polar is the Cartan decomposition of $GL_4$; the chiral polar is the singular value decomposition of a map between the two chiral planes.</p>
+<p>with $U_L,U_R\in U(2)$ and $\Sigma$ diagonal nonnegative. This is the singular value decomposition of the block, not the polar decomposition of the full algebra.</p>
+<p><strong>The relation.</strong> The full algebra's polar decomposition applies to the $4\times4$ matrix; the chiral decomposition applies to the $2\times2$ mass block and uses two independent unitaries, one for each chirality. The two decompositions answer different questions: the form in exponential coordinates is the Cartan decomposition of $GL_4$; the chiral polar is the singular value decomposition of a map between the two chiral planes.</p>
 <p><strong>The exponential form of the mass block.</strong> For invertible $M$, the left polar decomposition is</p>
 <p>$$
 M=e^{H_M}e^{iK_M},
@@ -216,14 +216,14 @@ $$</p>
 A=e^He^{iK},\qquad H,K\in\operatorname{Herm}_2,
 $$</p>
 <p>with $H$ unique and $K$ unique modulo the choice of Hermitian logarithm. The left polar decomposition is $A=P'U'$ with $P'=(AA^*)^{1/2}$; the right polar is $A=UP$ with $P=(A^*A)^{1/2}$; the $*$-unitary factors agree and the positive factors are conjugate.</p>
-<p><strong>The normal case.</strong> For $M_2$, the exponential polar factors commute exactly when $A$ is normal; the spectral form is $A=Ve^{\Lambda}e^{i\Theta}V^*$ with $V\in U(2)$.</p>
-<p><strong>The comparison.</strong> The full algebra's exponential polar decomposition is the $4\times4$ version; the biquaternion algebra's is the $2\times2$ version. The positive definite cone and the $*$-unitary group are the same objects of the respective dimensions; the Cartan decomposition is the same theorem.</p>
+<p><strong>The normal case.</strong> For $M_2$, the exponential factors commute exactly when $A$ is normal; the spectral form is $A=Ve^{\Lambda}e^{i\Theta}V^*$ with $V\in U(2)$.</p>
+<p><strong>The comparison.</strong> The full algebra's polar decomposition is the $4\times4$ version; the biquaternion algebra's is the $2\times2$ version. The positive definite cone and the $*$-unitary group are the same objects of the respective dimensions; the Cartan decomposition is the same theorem.</p>
 <h2 id="summary">Summary</h2>
-<p>Every invertible $A\in M_4(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^*)^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^H$ and $U'=e^{iK}$ gives the exponential polar decomposition</p>
+<p>Every invertible $A\in M_4(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^*)^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^H$ and $U'=e^{iK}$ gives the polar decomposition</p>
 <p>$$
 A=e^He^{iK},
 $$</p>
-<p>with $H$ Hermitian unique and $K$ Hermitian with eigenvalues determined modulo $2\pi\mathbb{Z}$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^*$, $H'=U^*HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_4=\exp(\operatorname{Herm}_4)U(4)$, the other global form being $GL_4=U(4)\exp(\operatorname{Herm}_4)$; both are diffeomorphisms $P_+\times U(4)\to GL_4$ and $U(4)\times P_+\to GL_4$. The exponential polar decomposition exists exactly on $GL_4$; it degenerates at the singular set, where the Hermitian logarithm diverges. The chiral mass block uses the singular value decomposition $M=U_L\Sigma U_R^*$, not the full algebra's exponential polar decomposition.</p>
+<p>with $H$ Hermitian unique and $K$ Hermitian with eigenvalues determined modulo $2\pi\mathbb{Z}$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^*$, $H'=U^*HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_4=\exp(\operatorname{Herm}_4)U(4)$, the other global form being $GL_4=U(4)\exp(\operatorname{Herm}_4)$; both are diffeomorphisms $P_+\times U(4)\to GL_4$ and $U(4)\times P_+\to GL_4$. The polar decomposition exists exactly on $GL_4$; it degenerates at the singular set, where the Hermitian logarithm diverges. The chiral mass block uses the singular value decomposition $M=U_L\Sigma U_R^*$, not the full algebra's polar decomposition.</p>
 <p>$$
 \boxed{\ A=e^He^{iK}=P'U',\quad P'=(AA^*)^{1/2},\quad U'=P'^{-1}A,\quad H=H^*,\quad K=K^*,\quad [H,K]=0\iff A\text{ normal}. }
 $$</p>
@@ -248,7 +248,7 @@ $$</p>
 <td>$U'=U$, $P'=UPU^*$</td>
 </tr>
 <tr>
-<td>Exponential polar</td>
+<td>Exponential coordinates</td>
 <td>$A=e^He^{iK}$</td>
 </tr>
 <tr>

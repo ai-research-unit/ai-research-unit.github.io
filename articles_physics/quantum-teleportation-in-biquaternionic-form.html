@@ -93,11 +93,11 @@
 </ul>
 <p>The arena is therefore $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, with the scalar part a product of factor scalar parts, $\mathrm{Sc}(x\otimes y\otimes z)=\mathrm{Sc}(x)\mathrm{Sc}(y)\mathrm{Sc}(z)$, so that a full contraction of the three factors carries $2^3=8$ and a contraction of two of them carries $4$. The unknown state is written</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12\left(e_t+i\vec r\right),
+\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12\left(e_t+i\vec s_{\Psi}\right),
 \qquad
-\vec r=\sum_{\eta=1}^{3}r_\eta\,\vec e_\eta,\qquad |\vec r|\leq 1 ,
+\vec s_{\Psi}=\sum_{\eta=1}^{3}r_\eta\,\vec e_\eta,\qquad |\vec s_{\Psi}|\leq 1 ,
 $$</p>
-<p>with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maximally mixed. The initial three-qubit state is the single element</p>
+<p>with $|\vec s_{\Psi}|=1$ exactly when the state is pure and $\vec s_{\Psi}=0$ when it is maximally mixed. The initial three-qubit state is the single element</p>
 <p>$$
 \tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} ,
 \qquad
@@ -364,7 +364,7 @@ $$</p>
 <p>A source in the literature (Obojska, <em>Journal of Physics Communications</em> <strong>4</strong> (2020) 055018) proposes the same two directions as future work: a special $*$-unitary operation acting on biquaternions that reproduces teleportation, and an understanding of how rotations in $\mathbb{C}^4$ influence entanglement. The second is the subject of the companion articles on frame-dependent entanglement and on the Bell basis; the first is what this article carries out, for the Bell resource.</p>
 <h2 id="summary">Summary</h2>
 <p>Quantum teleportation in the biquaternion framework is the following chain of algebraic statements.</p>
-<p>The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, whose reductions are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec r)\in\mathbb{B}_{\Psi}$, and the initial state is $\tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.</p>
+<p>The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, whose reductions are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec s_{\Psi})\in\mathbb{B}_{\Psi}$, and the initial state is $\tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.</p>
 <p>Alice measures the pair $(1,2)$ with the four Bell idempotents $\tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t$, equivalently with the commuting stabiliser observables $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, whose outcome pair is $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$. The teleportation identity</p>
 <p>$$
 \left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}_{\Psi}^{(0)}\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)
@@ -402,7 +402,7 @@ $$</p>
 <td>Scalar imaginary, $i^2=-1$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec s_{\Psi})$</td>
 <td>Unknown single-qubit state</td>
 </tr>
 <tr>

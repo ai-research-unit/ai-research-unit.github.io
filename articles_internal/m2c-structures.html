@@ -118,9 +118,9 @@
 </tr>
 <tr>
 <td>socle</td>
-<td>the elements of rank at most one</td>
-<td>$3$</td>
-<td>the union of the minimal left ideals</td>
+<td>the whole algebra</td>
+<td>$4$</td>
+<td>the sum of the minimal left ideals, which is $M_2(\mathbb{C})$</td>
 </tr>
 <tr>
 <td>maximal commutative subalgebras</td>
@@ -334,7 +334,8 @@ $$</p>
 <p>where $E_{11}$ has a zero bottom row and the product does not. So left multiplication by $E_{21}$ carries the set outside itself.</p>
 <p><strong>The transpose exchanges the two families.</strong> $\operatorname{im}A^{\mathsf T}=(\ker A)^{\perp}$, so $A\in L_U$ exactly when $A^{\mathsf T}\in R_{U^{\perp}}$. The two families are therefore the same list read through an anti-isomorphism, and that is why a statement about a left ideal does not transfer to the right side until the transpose is named.</p>
 <h3 id="the-socle-and-the-modules">The Socle and the Modules</h3>
-<p><strong>The socle is the set of elements of rank at most one, of complex dimension $3$.</strong> Every minimal left ideal consists of elements of rank at most one; conversely a rank-one element $uv^{\mathsf T}$ kills the hyperplane $v^{\perp}$ and lies in $L_{v^{\perp}}$. The socle is the union of the pencil of minimal left ideals, and any two of them meet at $0$.</p>
+<p><strong>The socle is the whole algebra, of complex dimension $4$.</strong> The minimal left ideals are the columns $M_2P$ with $P$ of rank one, and two of them already span, as the split of the regular module below shows; so the regular module is semisimple and equals its socle.</p>
+<p><strong>The union of the minimal left ideals is not the socle.</strong> A rank-one element $uv^{\mathsf T}$ kills the hyperplane $v^{\perp}$ and lies in $L_{v^{\perp}}$, so the union of the pencil is the set of elements of rank at most one, of complex dimension $3$. That set is not a subspace: $E_{11}+E_{22}=I$ has rank $2$. The socle is the sum of the minimal left ideals, and the sum is the algebra. This is the one place in the inventory where the union and the sum must be kept apart.</p>
 <p><strong>Each minimal left ideal is a copy of $\mathbb{C}^{2}$ as a left module, and the regular module splits,</strong></p>
 <p>$$
 M_2(\mathbb{C})\cong\mathbb{C}^{2}\oplus\mathbb{C}^{2},
@@ -622,7 +623,7 @@ $$</p>
 <p><strong>The answer is that the layers differ in dimension and in the operation preserved.</strong> The centre has dimension $1$ and the algebra $4$; the Cartan algebra has dimension $2$ and the Borel $3$; the projective group has dimension $3$ and the group $4$. An intersection of two layers is not a layer: the diagonal algebra is an associative subalgebra and a Lie subalgebra at once, but it is not an ideal; the left ideal $L_{\mathbb{C}e_{2}}$ is an associative subalgebra without identity and a Lie subalgebra; and a line $\mathbb{C}X$ is always a Lie subalgebra, while it is an associative subalgebra only when $X^{2}$ is a multiple of $X$.</p>
 <p><strong>The second answer is that the layers are related by named maps.</strong> The exponential carries the Lie algebra to the group; the adjoint carries the group to the automorphisms of the algebra; the commutator is the bracket read on the associative product; the trace is the linear functional that vanishes on commutators. A statement is transferred along those maps or not at all, and the maps are the content of the companion articles.</p>
 <h2 id="summary">Summary</h2>
-<p>$M_2(\mathbb{C})$ has complex dimension $4$, and each layer of structure on it has its own dimension: the centre $1$, the maximal commutative subalgebras $2$, the Cartan algebra $2$, the Borel $3$, $\mathfrak{sl}_2$ $3$, the group $4$, the torus $2$, the Borel subgroup $3$, the socle $3$, the projective group $3$.</p>
+<p>$M_2(\mathbb{C})$ has complex dimension $4$, and each layer of structure on it has its own dimension: the centre $1$, the maximal commutative subalgebras $2$, the Cartan algebra $2$, the Borel $3$, $\mathfrak{sl}_2$ $3$, the group $4$, the torus $2$, the Borel subgroup $3$, the socle $4$, the projective group $3$.</p>
 <p>The two-sided ideals are only $0$ and the algebra; the left ideals are the sets killing a fixed subspace and form three levels with a projective line in the middle; the right ideals are the sets with image inside a fixed subspace and are the transpose of the left ones. The set with a zero row is a right ideal, not a left one, and $E_{21}E_{11}=E_{21}$ proves it.</p>
 <p>The Lie algebra is $\mathfrak{sl}_2\oplus\mathbb{C}I$, with a Cartan algebra of dimension $2$, a Borel of dimension $3$ and roots $\pm\alpha$. The group is $\mathrm{GL}_2$, with maximal torus of dimension $2$, Borel subgroup of dimension $3$, special linear group of dimension $3$ and projective group of dimension $3$. The finite subgroups of the special linear group are the five binary polyhedral groups, of orders $n$, $4n$, $24$, $48$ and $120$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -682,6 +683,9 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
+<li><a href="m1c-structures.html">The Structures of $M_1(\mathbb{C})$</a></li>
+<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform version, of which this article is the case $n=2$., for the base case of the ladder, where most of these layers collapse.</li>
+<li><a href="m3c-structures.html">The Structures of $M_3(\mathbb{C})$</a>, for the next rung, where the root system becomes $A_2$ and the flag variety becomes three-dimensional.</li>
 <li><a href="../articles_maths/the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the product, the trace, the determinant and the rank.</li>
 <li><a href="../articles_maths/the-ideals-the-centre-and-the-simplicity-of-m2c.html">The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</a>, for the classification of the left and right ideals and the socle.</li>
 <li><a href="../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the same ideals in the biquaternion carrier.</li>

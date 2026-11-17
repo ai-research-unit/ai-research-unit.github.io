@@ -104,7 +104,7 @@ The division by $\lVert P^{n-1}\rVert$ is legitimate: $\lVert P^{n-1}\rVert=\lVe
 <h2 id="the-trace-obstruction-in-the-framework">The Trace Obstruction in the Framework</h2>
 <p>In the framework the obstruction is immediate and is worth stating in its own notation, because it is the technical content behind the word <em>independent</em>.</p>
 <p><strong>Theorem.</strong> There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$.</p>
-<p><strong>Proof.</strong> Write $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
+<p><strong>Proof.</strong> Write $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$
@@ -113,7 +113,7 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Ph
 <p><strong>The scope of the theorem.</strong> The same argument applies in every finite-dimensional module of $\mathbb{B}$, since the trace there is cyclic as well. The obstruction is therefore not a quirk of the algebra's particular dimension. It is a statement about every finite-dimensional carrier: the relation cannot be assembled from finitely many levels.</p>
 <h2 id="the-framework-has-no-position-operator">The Framework Has No Position Operator</h2>
 <p>Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.</p>
-<p><strong>What $\mathbb{B}_{\Psi}$ is.</strong> The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.</p>
+<p><strong>What $\mathbb{B}_{\Psi}$ is.</strong> The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\leq1$, the Bloch ball, with the pure states on the boundary.</p>
 <p><strong>An internal algebra.</strong> The algebra describes <strong>internal</strong> degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.</p>
 <p><strong>The spin analogy, stated exactly.</strong> In ordinary quantum mechanics the spin operators are finite-dimensional matrices, and they satisfy $[S_i,S_j]=i\,\hbar\sum_\eta\epsilon_{ij\eta}S_\eta$ but not the canonical relation. Nobody describes spin as failing the canonical relation, because spin is not a position variable and the relation is not about spin. The framework is in the position of the spin algebra rather than in the position of a failed oscillator. Its $\mathbb{B}_{\Psi}$ is the same kind of object: a finite-dimensional observable algebra attached to a system the configuration space of which is described elsewhere, or not at all.</p>
 <p><strong>What the framework does have.</strong> It has the rotation bracket, the state space, the Born pairing, the $*$-unitary dynamics on its state module, and the Fourier transform. None of these is a position operator, and none of them requires one. That is the whole content of the word <em>internal</em>.</p>
@@ -341,7 +341,7 @@ which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi 
 <td>Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$</td>
 </tr>
 <tr>
-<td>$\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$</td>
+<td>$\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$</td>
 <td>General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$</td>
 </tr>
 <tr>
@@ -413,7 +413,7 @@ which is the Weyl law with the parameters in $\mathbb{Z}/N$: the exponent $2\pi 
 <td>Matrix model of $\mathbb{B}$</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$</td>
+<td>$\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$</td>
 <td>State, the Bloch ball</td>
 </tr>
 </tbody>

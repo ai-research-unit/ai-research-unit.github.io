@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Structures of $M_1(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="is itself, and at order one the layers of structure collapse to their smallest possible values: one dimension for the algebra, zero for the traceless…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-structures-of-math0"><strong>The Structures of $M_1(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>$M_1(\mathbb{C})$ is $\mathbb{C}$ itself, and at order one the layers of structure collapse to their smallest possible values: one dimension for the algebra, zero for the traceless part, two levels in the lattice of subspaces, and a group whose subgroup lattice is not small at all.</strong></p>
+<p><strong>The algebra layer collapses at every point.</strong> The commutator vanishes identically, so there are no roots; the only idempotents are $0$ and $1$, so there is no frame, no Peirce decomposition and no nilpotent; the only ideals are the two trivial ones, so a left ideal and a right ideal coincide and the distinction that matters at order two does not exist.</p>
+<p><strong>The group layer does not collapse.</strong> The group is $\mathbb{C}^{\times}$, and $\mathbb{C}^{\times}$ contains the circle, the positive ray, the torsion group $\mathbb{Q}/\mathbb{Z}$ and a continuum of dense subgroups. The asymmetry is the point: the Lie algebra $\mathfrak{gl}_1(\mathbb{C})$ has two subspaces, and the group $\mathrm{GL}_1(\mathbb{C})$ has a rich lattice of subgroups.</p>
+<p><strong>The article is the base case of the ladder, in the format of <em>The Structures of $M_2(\mathbb{C})$</em>.</strong> Every formula of the general order is evaluated at $n=1$, and every degenerate value is named.</p>
+<h2 id="the-inventory">The Inventory</h2>
+<p>The table lists the layers with their values at $n=1$ and at $n=2$. Dimensions are complex unless the row says otherwise.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>layer</th>
+<th>at $n=1$</th>
+<th>dimension</th>
+<th>at $n=2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>algebra</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>centre</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>two-sided ideals</td>
+<td>$0$ and $\mathbb{C}$</td>
+<td>—</td>
+<td>two</td>
+</tr>
+<tr>
+<td>left ideals</td>
+<td>$0$ and $\mathbb{C}$</td>
+<td>$0,1$</td>
+<td>$0,2,4$</td>
+</tr>
+<tr>
+<td>right ideals</td>
+<td>$0$ and $\mathbb{C}$</td>
+<td>$0,1$</td>
+<td>$0,2,4$</td>
+</tr>
+<tr>
+<td>socle</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>maximal commutative subalgebras</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>$\mathfrak{gl}_1(\mathbb{C})$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>simple part $\mathfrak{sl}_n$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Cartan subalgebra</td>
+<td>$\mathfrak{gl}_1(\mathbb{C})$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Borel subalgebra</td>
+<td>$\mathfrak{gl}_1(\mathbb{C})$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>group</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>maximal torus</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Borel subgroup</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>special linear group</td>
+<td>$\{1\}$</td>
+<td>$0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>projective group</td>
+<td>$\{1\}$</td>
+<td>$0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>regular module</td>
+<td>$\mathbb{C}$</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>positive roots</td>
+<td>none</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The seven general formulas give the degenerate value at every line.</strong> The dimension of the algebra is $n^{2}=1$; the traceless part is $n^{2}-1=0$; the Borel has $n(n+1)/2=1$; the number of positive roots is $n(n-1)/2=0$; the maximal torus and the maximal commutative subalgebra have dimension $n=1$; the lattice of left ideals has $n+1=2$ levels; the minimal left ideal has dimension $n=1$. All seven pass the test at $n=1$, and the socle formula $n^{2}$ passes too, which is the plainest form of the identity $\operatorname{soc}(M_n)=M_n$.</p>
+<h2 id="the-associative-algebra">The Associative Algebra</h2>
+<p><strong>The algebra is the field $\mathbb{C}$.</strong> A $1\times1$ matrix is one complex number, the product is the product of numbers, and the map that reads the single entry is an isomorphism of $\mathbb{C}$-algebras. The dimension is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$.</p>
+<p><strong>The matrix unit is the unit.</strong> There is one matrix unit $E_{11}$, it equals $I$, and the product rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$ reads $E_{11}E_{11}=E_{11}$. There is no off-diagonal unit, so the corner machinery of order two has no input.</p>
+<p><strong>The algebra is a field, so the rank takes two values.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rank</th>
+<th>set</th>
+<th>complex dimension</th>
+<th>equation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$A=0$</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$\mathbb{C}^{\times}$</td>
+<td>$1$</td>
+<td>$\det A\neq0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The trace, the determinant and the identity coincide,</strong></p>
+<p>$$
+\operatorname{tr}A=\det A=A,\qquad \chi_A(\lambda)=\lambda-A .
+$$</p>
+<p><strong>The equality is forced by the size.</strong> For a $1\times1$ matrix the sum of the diagonal entries and the product of the eigenvalues are the same number, because there is one entry and one eigenvalue.</p>
+<p><strong>There are no zero divisors and no nilpotents.</strong> $AB=0$ forces $A=0$ or $B=0$, and $A^{2}=0$ forces $A=0$. So the two failure modes that make order two interesting are both absent.</p>
+<p><strong>The idempotents are $0$ and $1$.</strong> From $A^{2}=A$ one gets $A(A-1)=0$, and the absence of zero divisors gives $A=0$ or $A=1$. So there is no nontrivial idempotent, no Peirce decomposition, no frame, and no gauge: the three data of <em>The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$</em> have no analogue at order one.</p>
+<p><strong>The algebra is the unique division algebra over $\mathbb{C}$.</strong> A finite-dimensional division algebra $D$ over an algebraically closed field $k$ equals $k$: an element $a\notin k$ generates a finite extension $k(a)$, which is $k$ because $k$ is algebraically closed, a contradiction. So $M_n(\mathbb{C})$ is a division algebra exactly at $n=1$, and the Brauer group of $\mathbb{C}$ is trivial.</p>
+<h3 id="the-centre">The Centre</h3>
+<p><strong>The centre is the whole algebra.</strong> Every element commutes with every element, because multiplication is commutative, so $Z(M_1(\mathbb{C}))=\mathbb{C}$, of dimension $1$. The centrality is exact and vacuous at once: the algebra is central simple of degree $1$, and the dimension over the centre is $1=1^{2}$.</p>
+<h2 id="the-two-sided-ideals-and-the-collapse-of-the-sides">The Two-Sided Ideals and the Collapse of the Sides</h2>
+<p><strong>Every subspace is an ideal, and there are two of them.</strong></p>
+<p><strong>Proof.</strong> The subspaces of a one-dimensional space are $0$ and the space. Both are stable under multiplication by any element, so both are left ideals, right ideals and two-sided ideals.</p>
+<p><strong>The collapse is the structural fact of order one.</strong> At order two the left ideals are the sets killing a subspace and the right ideals are the sets with image in a subspace, and the two lists differ. At order one the two definitions coincide, because a linear map $\mathbb{C}\to\mathbb{C}$ either is zero or is injective and surjective. So the correction that governs order two has no content here, and the transpose, which exchanges the two families at order two, is the identity.</p>
+<p><strong>The algebra is simple and the socle is the whole algebra.</strong> There is no proper quotient except the zero ring, and the algebra as a left module over itself is simple, so the socle is $\mathbb{C}$ and the general formula $n^{2}$ gives $1$. The union of the minimal left ideals is the whole algebra too, because there is one minimal left ideal, and at order one the union and the sum coincide.</p>
+<p><strong>The regular module is simple of length $1$.</strong> The algebra is a one-dimensional module over itself, with endomorphism ring $\mathbb{C}$. So $M_1(\mathbb{C})$ is a single copy of the simple module, against the two copies of order two.</p>
+<h2 id="the-maximal-commutative-subalgebras">The Maximal Commutative Subalgebras</h2>
+<p><strong>The only maximal commutative subalgebra is the algebra.</strong> Every subalgebra is commutative, and the only subalgebras are $0$ and $\mathbb{C}$, so the maximal one is $\mathbb{C}$ itself, of dimension $1=n$.</p>
+<p><strong>The bound of order two holds in the degenerate form.</strong> At order two a commutative subalgebra has dimension at most $2$, and the bound is attained by the diagonal algebra. At order one the bound is $n=1$ and it is attained by the algebra.</p>
+<p><strong>Maximal commutative and Cartan coincide here.</strong> At order two the dual-number algebra is maximal commutative and not a Cartan subalgebra, because its normaliser is the Borel and is larger than itself. At order one there is nothing larger than the algebra, so the whole algebra is self-normalising, abelian, and Cartan.</p>
+<h3 id="over-math143-the-answer-changes">Over $\mathbb{R}$ the Answer Changes</h3>
+<p><strong>As an $\mathbb{R}$-algebra, $\mathbb{C}$ has proper subalgebras.</strong> $\mathbb{R}$ itself is a subalgebra of real dimension $1$ inside the real dimension $2$, and it is not an ideal. So the statement <em>the only subalgebras are $0$ and the algebra</em> is a statement about $\mathbb{C}$-subalgebras, and it must say so.</p>
+<p><strong>The subrings are richer still.</strong> $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, the algebraic numbers and the algebraic integers are subrings of $\mathbb{C}$, and none of them is a $\mathbb{C}$-subalgebra. The distinction is the one that separates a subalgebra from a subring.</p>
+<h2 id="the-lie-algebra">The Lie Algebra</h2>
+<p><strong>The bracket vanishes and the Lie algebra is abelian.</strong></p>
+<p>$$
+[a,b]=ab-ba=0\qquad\text{for all }a,b\in\mathbb{C}.
+$$</p>
+<p><strong>So every subspace is a Lie subalgebra, and there are two.</strong> A subspace of an abelian Lie algebra is automatically closed under the bracket, so the Lie subalgebras are $0$ and $\mathfrak{gl}_1(\mathbb{C})$. The word <em>abelian</em> is not a description of a large family here: it is a description of a one-dimensional algebra whose only subspaces are the two trivial ones.</p>
+<p><strong>The simple part is zero.</strong> $\mathfrak{sl}_1(\mathbb{C})$ is the set of elements of trace zero, and the only such element is $0$. So the split of order two, $\mathfrak{gl}_2=\mathfrak{sl}_2\oplus\mathbb{C}I$, degenerates to $\mathfrak{gl}_1=\mathbb{C}I$, with no simple summand.</p>
+<p><strong>The Killing form vanishes identically.</strong> The adjoint map $\operatorname{ad}_a$ is the zero endomorphism of a one-dimensional space, so $\kappa(a,b)=\operatorname{tr}(\operatorname{ad}_a\operatorname{ad}_b)=0$ for all $a,b$. The form is degenerate, its radical is the whole algebra, and the algebra is not semisimple. It is reductive, but only because its centre is everything.</p>
+<p><strong>The trace form takes over, and it is non-degenerate.</strong> $\langle a,b\rangle=\operatorname{tr}(ab)=ab$, so $\langle a,b\rangle=0$ for all $b$ forces $a=0$. The trace form separates the elements where the Killing form does not, which is the same division of labour as at order two.</p>
+<p><strong>The Cartan subalgebra, the Borel subalgebra and the algebra are the same object.</strong> The algebra is abelian, hence nilpotent, hence solvable, hence its own Cartan subalgebra and its own Borel subalgebra. Their common dimension is $1$, which is $n(n+1)/2=1$ for the Borel and $n=1$ for the Cartan.</p>
+<p><strong>There are no roots.</strong> A root is an eigenvalue of $\operatorname{ad}_H$ on the complement of the Cartan algebra, and the complement is zero. The root system of $\mathfrak{gl}_1$ is empty, the Weyl group is trivial, and the count $n(n-1)/2=0$ is the count of positive roots at rank zero.</p>
+<h2 id="the-group-and-its-subgroups">The Group and Its Subgroups</h2>
+<p><strong>The invertible elements are the nonzero complex numbers.</strong></p>
+<p>$$
+\mathrm{GL}_1(\mathbb{C})=\{z\in\mathbb{C}:z\neq0\}=\mathbb{C}^{\times},
+$$</p>
+<p>of complex dimension $1$ and real dimension $2$. The complement of the group in the algebra is the single point $0$, so the group is open and dense in the algebra.</p>
+<p><strong>The determinant sequence is exact and short.</strong></p>
+<p>$$
+1\longrightarrow \mathrm{SL}_1(\mathbb{C})=\{1\}\longrightarrow \mathbb{C}^{\times}\xrightarrow{\ \det\ }\mathbb{C}^{\times}\longrightarrow 1,
+$$</p>
+<p>where the determinant is the identity map. So $\mathrm{SL}_1(\mathbb{C})$ is the trivial group and $\mathrm{PGL}_1(\mathbb{C})=\mathbb{C}^{\times}/\mathbb{C}^{\times}=\{1\}$.</p>
+<p><strong>The triviality of the projective group is the triviality of the automorphism group.</strong> Every automorphism of $\mathbb{C}$ as a $\mathbb{C}$-algebra is the identity, because it is $\mathbb{C}$-linear and fixes $1$; and every derivation is zero, because $\mathbb{C}$ over $\mathbb{C}$ is algebraic of degree one. So $\operatorname{Aut}(M_1(\mathbb{C}))=1$ and $\operatorname{Der}(M_1(\mathbb{C}))=0$, against $\mathrm{PGL}_2$ of dimension $3$ and $\mathfrak{sl}_2$ of dimension $3$ at order two.</p>
+<p><strong>Three automorphisms must be kept apart.</strong> The identity is the only $\mathbb{C}$-algebra automorphism. The conjugation $z\mapsto\bar z$ is a continuous field automorphism and not $\mathbb{C}$-linear. And the field $\mathbb{C}$ has further automorphisms, constructed from a transcendence basis, which are not continuous; none of them is a $\mathbb{C}$-algebra map.</p>
+<h3 id="the-exponential">The Exponential</h3>
+<p><strong>The exponential is a surjection with kernel $2\pi i\mathbb{Z}$,</strong></p>
+<p>$$
+\exp:\mathbb{C}\longrightarrow\mathbb{C}^{\times},\qquad \ker\exp=2\pi i\mathbb{Z},
+$$</p>
+<p>and it is the universal covering map. So</p>
+<p>$$
+\mathbb{C}^{\times}\cong\mathbb{C}/2\pi i\mathbb{Z},
+$$</p>
+<p>as complex Lie groups. The map is surjective and never zero, which is the one-dimensional face of the statement that $\exp$ is surjective onto $\mathrm{GL}_n(\mathbb{C})$.</p>
+<h3 id="the-polar-decomposition">The Polar Decomposition</h3>
+<p><strong>Every nonzero complex number is a positive modulus times a unit phase,</strong></p>
+<p>$$
+z=r\,e^{i\theta},\qquad r=|z|>0,\quad \theta\in\mathbb{R}/2\pi\mathbb{Z},
+$$</p>
+<p>and the pair $(r,\theta)$ is unique. So</p>
+<p>$$
+\mathbb{C}^{\times}\cong\mathbb{R}_{>0}\times S^{1},
+$$</p>
+<p>as real Lie groups: a factor $\mathbb{R}_{>0}$, diffeomorphic to $\mathbb{R}$ through the logarithm, and a factor $S^{1}$. This is the Cartan decomposition of $\mathrm{GL}_1(\mathbb{C})$, with $S^{1}=\mathrm{U}(1)$ the maximal compact subgroup.</p>
+<p><strong>The homotopy type is the circle's.</strong> $\mathbb{C}^{\times}$ retracts onto $S^{1}$, so $\pi_1(\mathbb{C}^{\times})=\mathbb{Z}$, $\pi_0$ is trivial, and the higher homotopy groups vanish. The group is connected and not simply connected, and its universal cover is $\mathbb{C}$.</p>
+<h2 id="the-subgroups-of-math218">The Subgroups of $\mathbb{C}^{\times}$</h2>
+<p><strong>The group layer is where order one is not small, and the subgroups deserve their own section.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>subgroup</th>
+<th>definition</th>
+<th>real dimension</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S^{1}=\mathrm{U}(1)$</td>
+<td>$\lvert z\rvert=1$</td>
+<td>$1$</td>
+<td>compact factor, rotations</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{>0}$</td>
+<td>$z>0$ real</td>
+<td>$1$</td>
+<td>non-compact factor, scalings</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^{\times}$</td>
+<td>$z$ real, $z\neq0$</td>
+<td>$1$</td>
+<td>$\{\pm1\}\times\mathbb{R}_{>0}$</td>
+</tr>
+<tr>
+<td>$\mu_n$</td>
+<td>$z^{n}=1$</td>
+<td>$0$</td>
+<td>finite cyclic of order $n$</td>
+</tr>
+<tr>
+<td>$\mu_\infty$</td>
+<td>every root of unity</td>
+<td>$0$</td>
+<td>torsion group $\mathbb{Q}/\mathbb{Z}$, dense in $S^{1}$</td>
+</tr>
+<tr>
+<td>$\lambda^{\mathbb{Z}}$</td>
+<td>$\exp(\lambda k)$, $k\in\mathbb{Z}$</td>
+<td>$0$</td>
+<td>discrete spiral; inside $S^{1}$, and dense there, when $\lambda=2\pi i\alpha$ with $\alpha$ irrational</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The circle is the maximal compact subgroup.</strong> It is closed, compact, connected, of real dimension $1$, and it is the fixed set of the anti-holomorphic involution $z\mapsto 1/\bar z$. Its Lie algebra is $i\mathbb{R}$, the purely imaginary line, which is the compact real form of $\mathfrak{gl}_1(\mathbb{C})$.</p>
+<p><strong>The positive ray is the non-compact factor.</strong> It is closed, not compact, isomorphic to $(\mathbb{R},+)$ through the logarithm, and it is the exponential of the real line $\mathbb{R}\subset\mathbb{C}$.</p>
+<p><strong>Every finite subgroup is cyclic.</strong> A finite subgroup $G\subset\mathbb{C}^{\times}$ of order $N$ satisfies $g^{N}=1$ for every $g\in G$, by Lagrange, so $G$ lies in the set of roots of $z^{N}=1$. That set has exactly $N$ elements, and $G$ already has $N$, so $G$ is the full set of $N$-th roots of unity. This is the general fact that a finite subgroup of the multiplicative group of a field is cyclic.</p>
+<p><strong>The torsion subgroup is $\mathbb{Q}/\mathbb{Z}$ and it is dense in the circle.</strong> The union of the $\mu_n$ is the set of roots of unity, it is a torsion group, and it is isomorphic to $\mathbb{Q}/\mathbb{Z}$ through $k/n\mapsto e^{2\pi ik/n}$. Its closure is all of $S^{1}$, because every arc contains a root of unity of sufficiently high order.</p>
+<p><strong>Dense subgroups exist beyond the torsion.</strong> For an irrational $\alpha$ the group $\{e^{2\pi i\alpha k}:k\in\mathbb{Z}\}$ is infinite cyclic and dense in $S^{1}$, because the multiples of $\alpha$ are equidistributed modulo $1$. For a complex $\lambda$ with a nonzero real part the image $\exp(\lambda\mathbb{Z})$ leaves the circle and is a discrete spiral whose moduli grow or decay geometrically, so that group is discrete and closed in $\mathbb{C}^{\times}$.</p>
+<p><strong>The lattice of subgroups of $\mathbb{C}^{\times}$ is large and is not classified.</strong> It contains copies of $\mathbb{Q}$, of $\mathbb{Z}^{r}$ for every finite $r$, and of divisible groups of every countable rank inside $S^{1}$. This abundance is the reason the group layer cannot be inferred from the Lie algebra layer: $\mathfrak{gl}_1(\mathbb{C})$ is one line, and its exponentials generate all of it.</p>
+<h2 id="the-finite-subgroups">The Finite Subgroups</h2>
+<p><strong>At order one the five families of the binary polyhedral classification collapse to one.</strong></p>
+<p><strong>The finite subgroups of $\mathrm{SL}_1(\mathbb{C})=\{1\}$ are only the trivial group.</strong> So the cyclic, binary dihedral, binary tetrahedral, binary octahedral and binary icosahedral families, of orders $n$, $4n$, $24$, $48$ and $120$ at order two, have the single member $\{1\}$ here.</p>
+<p><strong>The finite subgroups of $\mathrm{GL}_1(\mathbb{C})$ are the cyclic groups $\mu_n$.</strong> They are all abelian, all contained in the circle, and all normal. There is no nonabelian finite subgroup at order one, because the group itself is abelian.</p>
+<p><strong>The Klein and McKay classification has no content at order one.</strong> The five groups act on $\mathbb{C}^{2}$ through their two-dimensional representations, and a one-dimensional carrier supports only the cyclic actions. So the table of <em>The Structures of $M_2(\mathbb{C})$</em> has one row here, and the Dynkin diagrams behind it degenerate to $\tilde A_{n-1}$ alone.</p>
+<h2 id="the-character-group-and-the-ladder">The Character Group and the Ladder</h2>
+<p><strong>$\mathrm{GL}_1(\mathbb{C})$ is the multiplicative group $\mathbb{G}_m$, and its character group is $\mathbb{Z}$.</strong></p>
+<p>$$
+\mathbb{G}_m=\operatorname{Spec}\mathbb{C}[t,t^{-1}],\qquad X^{\bullet}(\mathbb{G}_m)=\mathbb{Z},\qquad z\mapsto z^{k}\ (k\in\mathbb{Z}).
+$$</p>
+<p>The coordinate ring is $\mathbb{C}[t,t^{-1}]$, the characters are the monomials, and the character group is free of rank $1$.</p>
+<p><strong>This is the atom of the root datum of order two.</strong> The maximal torus of $\mathrm{GL}_2(\mathbb{C})$ is $\mathbb{G}_m\times\mathbb{G}_m$, its character group is $\mathbb{Z}^{2}$, and the two roots are the characters $\pm(\varepsilon_1-\varepsilon_2)$ with $\varepsilon_k$ the projection onto the $k$-th factor. So the root of order two is built from two copies of the order-one object and one subtraction.</p>
+<p><strong>The ladder is consistent at both ends.</strong> At $n=1$ the dimension of the torus is $1$ and the character group has rank $1$; at $n=2$ the dimension is $2$ and the rank is $2$. The root system is empty at $n=1$ and $A_1$ at $n=2$, which is $n(n-1)/2=0$ and $1$.</p>
+<h2 id="the-involution-layer">The Involution Layer</h2>
+<p><strong>The five involutions of order two collapse to two classes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>involution</th>
+<th>fixed set</th>
+<th>dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$z\mapsto z$</td>
+<td>$\mathbb{C}$</td>
+<td>$1$ complex</td>
+</tr>
+<tr>
+<td>$z\mapsto\bar z$</td>
+<td>$\mathbb{R}$</td>
+<td>$1$ real</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The transpose is the identity.</strong> For a $1\times1$ matrix $A^{\mathsf T}=A$, so the transpose involution fixes every element and its fixed set is the algebra, not a symmetric subspace of dimension $3$. The symplectic involution $JA^{\mathsf T}J^{-1}$ is the identity too, since there is no matrix $J$ at order one. So the two complex-linear involutions of order two reduce to the identity.</p>
+<p><strong>The conjugate transpose and the conjugation are the same map.</strong> $A^{*}=\bar A$ at order one, and the fixed set is $\mathbb{R}$. The two conjugate-linear involutions of order two, $A\mapsto\bar A$ and $A\mapsto J\bar AJ^{-1}$, are one map here.</p>
+<p><strong>So the two real forms of order two become one.</strong> $M_2(\mathbb{R})$ and $\mathbb{H}$ are the two real forms of $M_2(\mathbb{C})$. At order one there is one real form, $\mathbb{R}$ itself, and no quaternion form, because $\mathbb{H}$ has real dimension $4$ and $M_1(\mathbb{C})$ has real dimension $2$.</p>
+<h2 id="the-strongest-objection">The Strongest Objection</h2>
+<p><strong>The objection is that the article has nothing to say: at order one every structure is the algebra or the zero, and a list of the two is short.</strong></p>
+<p><strong>The answer is that the group layer is not the algebra layer.</strong> $\mathfrak{gl}_1(\mathbb{C})$ has two subspaces and $\mathbb{C}^{\times}$ has a continuum of subgroups, dense ones included. A reader who assumes the layers scale together gets the group layer wrong by the whole lattice of subgroups, and the error is not small: the torsion group $\mathbb{Q}/\mathbb{Z}$ is dense, the circle is the maximal compact, the positive ray is the non-compact factor, and none of these is visible in the Lie algebra.</p>
+<p><strong>The second answer is that the degenerate values are the tests of the general formulas.</strong> The dimension $n(n+1)/2$ of the Borel, the count $n(n-1)/2$ of positive roots, the dimension $n^{2}-1$ of the traceless part, the $n+1$ levels of the lattice of left ideals and the dimension $n^{2}$ of the socle must all be checked at $n=1$, and each gives its known value. The formulas pass, and passing is a check on the formulas and not on the algebra.</p>
+<p><strong>The third answer is that the order-one case fixes the meaning of <em>sides</em>.</strong> At order one a left ideal and a right ideal are the same set, so no example of a proper one-sided ideal exists. At order two the zero-row set is a right ideal and not a left one. The two facts together are what make the left-right correction of the order-two article a real statement and not a symmetry of language.</p>
+<h2 id="summary">Summary</h2>
+<p>$M_1(\mathbb{C})$ is $\mathbb{C}$. It has complex dimension $1$ and real dimension $2$; its only subspaces are $0$ and itself, so its only subalgebras, ideals of either side, Lie subalgebras and Lie ideals are those same two; its only idempotents are $0$ and $1$, so it has no Peirce decomposition, no frame and no nilpotent.</p>
+<p>Its Lie algebra is abelian, of dimension $1$, with $\mathfrak{sl}_1=0$, vanishing Killing form, and Cartan and Borel subalgebras equal to itself. Its group is $\mathbb{C}^{\times}$, of real dimension $2$, with $\mathrm{SL}_1=\{1\}$ and $\mathrm{PGL}_1=\{1\}$; the exponential is the universal cover with kernel $2\pi i\mathbb{Z}$, and the polar decomposition gives $\mathbb{C}^{\times}\cong\mathbb{R}_{>0}\times S^{1}$ with $\pi_1=\mathbb{Z}$.</p>
+<p>The subgroups of $\mathbb{C}^{\times}$ are the substance of the order-one case: the circle, the positive ray, the roots of unity forming $\mathbb{Q}/\mathbb{Z}$, and dense cyclic groups. Every finite subgroup is cyclic, so the five binary polyhedral families collapse to $\mu_n$ alone, and every finite subgroup lies in the circle.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{11}=I$</td>
+<td>the single matrix unit, equal to the identity</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^{\times}$</td>
+<td>the group of nonzero complex numbers, equal to $\mathrm{GL}_1(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mu_n$</td>
+<td>the group of $n$-th roots of unity</td>
+</tr>
+<tr>
+<td>$\mu_\infty$</td>
+<td>the torsion subgroup of $\mathbb{C}^{\times}$, isomorphic to $\mathbb{Q}/\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$S^{1}=\mathrm{U}(1)$</td>
+<td>the unit circle, the maximal compact subgroup</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{>0}$</td>
+<td>the positive real ray, the non-compact factor</td>
+</tr>
+<tr>
+<td>$\mathbb{G}_m$</td>
+<td>$\mathrm{GL}_1$ as an algebraic group, with character group $\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>the Killing form, identically zero on $\mathfrak{gl}_1(\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m2c-structures.html">The Structures of $M_2(\mathbb{C})$</a></li>
+<li><a href="mnc-structures.html">The Structures of general order, $M_n(\mathbb{C})$</a>, for the uniform version of this inventory, of which this article is the case $n=1$., for the same inventory at the first order where the layers separate.</li>
+<li><a href="m3c-structures.html">The Structures of $M_3(\mathbb{C})$</a>, for the order where the root system becomes $A_2$.</li>
+<li><a href="../articles_maths/the-matrix-algebra-m2c.html">The Matrix Algebra $M_2(\mathbb{C})$</a>, for the product rule and the trace that specialise here to one entry.</li>
+<li><a href="../articles_maths/the-ideals-the-centre-and-the-simplicity-of-m2c.html">The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$</a>, for the left-right distinction that vanishes at order one.</li>
+<li><a href="../articles_maths/complex-exponential-and-lie-group-structure.html">Complex Exponential and Lie Group Structure</a>, for the exponential and its kernel.</li>
+<li><a href="../articles_maths/polar-decomposition-of-complex-numbers.html">Polar Decomposition of Complex Numbers</a>, for the modulus-phase split used above.</li>
+<li><a href="../articles_maths/the-peirce-decomposition-and-the-corner-recursion-of-m2c.html">The Peirce Decomposition and the Corner Recursion of $M_2(\mathbb{C})$</a>, for the corner isomorphism with $M_1(\mathbb{C})=\mathbb{C}$.</li>
+<li><a href="../articles_maths/the-killing-form-of-sl-2-and-its-three-signatures.html">The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias</a>, for the form that vanishes here and is non-degenerate one order higher.</li>
+<li><a href="../articles_maths/roots-of-unity-and-the-lagrange-idempotents-of-mnc.html">Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</a>, for the roots of unity inside the matrix algebras.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for simple algebras and the theorem that a finite-dimensional division algebra over an algebraically closed field is the field.</li>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972), for the root systems and for the degenerate case of rank zero.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

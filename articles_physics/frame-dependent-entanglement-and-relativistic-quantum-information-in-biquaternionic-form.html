@@ -177,11 +177,11 @@ rotations about a common axis $\vec u_{\mathrm r}$ by opposite angles, and the c
 $$
 \boxed{\;\tilde{Ϛ}_{\Psi,A} \ \longmapsto\ \tfrac12\bigl(\tilde U_{\mathrm{Wig},A,+}\tilde{Ϛ}_{\Psi,A}\tilde U_{\mathrm{Wig},A,+}^{*} + \tilde U_{\mathrm{Wig},A,-}\tilde{Ϛ}_{\Psi,A}\tilde U_{\mathrm{Wig},A,-}^{*}\bigr)\;}.
 $$
-Writing the Bloch vector of $\tilde{Ϛ}_{\Psi,A}$ as $\vec r = r_\parallel\vec u_{\mathrm r} + \vec r_\perp$, the two rotated copies differ only in the sign of the rotation and their average is
+Writing the Bloch vector of $\tilde{Ϛ}_{\Psi,A}$ as $\vec s_{\Psi} = s_\parallel\vec u_{\mathrm r} + \vec s_{\Psi,\perp}$, the two rotated copies differ only in the sign of the rotation and their average is
 $$
-r_\parallel \ \longmapsto\ r_\parallel, \qquad \vec r_\perp \ \longmapsto\ \cos\theta_{\mathrm{wgn}}\ \vec r_\perp ,
+s_\parallel \ \longmapsto\ s_\parallel, \qquad \vec s_{\Psi,\perp} \ \longmapsto\ \cos\theta_{\mathrm{wgn}}\ \vec s_{\Psi,\perp} ,
 $$
-so the channel is the <strong>dephasing about the Wigner axis</strong>: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\theta_{\mathrm{wgn}}$. The Bloch radius of a pure initial state becomes $r_{\mathrm{red}} = \sqrt{\cos^2\theta_{\mathrm{wgn}}\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec r$ and $\vec u_{\mathrm r}$; for $\vec r\perp\vec u_{\mathrm r}$ it is exactly $\cos\theta_{\mathrm{wgn}}$, and for $\vec r\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
+so the channel is the <strong>dephasing about the Wigner axis</strong>: the Bloch component along $\vec u_{\mathrm r}$ survives and the transverse components are damped by $\cos\theta_{\mathrm{wgn}}$. The Bloch radius of a pure initial state becomes $r_{\mathrm{red}} = \sqrt{\cos^2\theta_{\mathrm{wgn}}\,\sin^2\Theta + \cos^2\Theta}$, where $\Theta$ is the angle between $\vec s_{\Psi}$ and $\vec u_{\mathrm r}$; for $\vec s_{\Psi}\perp\vec u_{\mathrm r}$ it is exactly $\cos\theta_{\mathrm{wgn}}$, and for $\vec s_{\Psi}\parallel\vec u_{\mathrm r}$ it is $1$ and the state is unchanged. The von Neumann entropy of the dephased single-qubit state is the binary entropy of the reduced radius,
 $$
 S(\tilde{Ϛ}_{\Psi,A,2}) = h\!\left(\frac{1+r_{\mathrm{red}}}{2}\right), \qquad h(p) = -p\log_2 p - (1-p)\log_2(1-p),
 $$

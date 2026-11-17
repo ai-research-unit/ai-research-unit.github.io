@@ -76,9 +76,9 @@
 \boxed{\;Q_{\min} = k_B T \log 2\;}
 $$</p>
 <p>of heat into an environment at temperature $T$. It is the bridge between the informational and the material descriptions of a physical process. It is also the reason the two descriptions cannot be kept apart: a memory is a physical system, its logical states are physical states, and the reset of those states has a thermodynamic price.</p>
-<p>This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The <strong>material sector</strong> $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The <strong>informational sector</strong> $\mathbb{B}_{\Psi}$ is the Hermitian subspace; its states are $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$, and it carries the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>,</p>
+<p>This article writes the exchange in the biquaternion framework. The two sides of the exchange are the framework's two sectors. The <strong>material sector</strong> $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace; it carries energy and momentum, and its four-vector is the natural carrier of heat. The <strong>informational sector</strong> $\mathbb{B}_{\Psi}$ is the Hermitian subspace; its states are $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, and it carries the entropy functional of the companion article <em>Coarse-Graining and the Biquaternion Entropy Functional</em>,</p>
 <p>$$
-\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right) = h(|\vec r|),
+\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right) = h(|\vec s_{\Psi}|),
 $$</p>
 <p>which is a function of the sector's biquaternion norm. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of <strong>rank two</strong> in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.</p>
 <p>The biquaternion content of the article is structural. The two ledgers of the exchange are the biquaternion norms of the two sectors, and the two biquaternion norms are exchanged by the central factor $i$: for every element, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does <strong>not</strong> supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.</p>
@@ -113,11 +113,11 @@ $$</p>
 <p>$$
 \tilde{Ϛ}_{\Psi} = p_+\,\tilde\Pi_1(\vec u) + p_-\,\tilde\Pi_2(\vec u), \qquad p_\pm \ge 0, \quad p_+ + p_- = 1 .
 $$</p>
-<p>Its Bloch vector is $\vec r = (p_+ - p_-)\vec u$, of length $|\vec r| = |p_+ - p_-| \le 1$, and its entropy functional is</p>
+<p>Its Bloch vector is $\vec s_{\Psi} = (p_+ - p_-)\vec u$, of length $|\vec s_{\Psi}| = |p_+ - p_-| \le 1$, and its entropy functional is</p>
 <p>$$
 \mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\right) = -p_+\log p_+ - p_-\log p_- = h(|p_+ - p_-|).
 $$</p>
-<p>The state is genuinely <strong>classical</strong>: it is a mixture of two orthogonal idempotents with no coherence between them, so its information content is the Shannon entropy of its pointer distribution and nothing else. The maximally ignorant bit has $p_\pm = \tfrac{1}{2}$, $\vec r = 0$, and $\mathcal{S} = \log 2$; a definite bit has $|p_+ - p_-| = 1$, $\vec r$ on the sphere, and $\mathcal{S} = 0$.</p>
+<p>The state is genuinely <strong>classical</strong>: it is a mixture of two orthogonal idempotents with no coherence between them, so its information content is the Shannon entropy of its pointer distribution and nothing else. The maximally ignorant bit has $p_\pm = \tfrac{1}{2}$, $\vec s_{\Psi} = 0$, and $\mathcal{S} = \log 2$; a definite bit has $|p_+ - p_-| = 1$, $\vec s_{\Psi}$ on the sphere, and $\mathcal{S} = 0$.</p>
 <h3 id="the-material-ledger">The Material Ledger</h3>
 <p>The material sector carries energy and momentum. Its four-vector is</p>
 <p>$$
@@ -150,10 +150,10 @@ $$</p>
 $$</p>
 <p>which discards the state entirely and returns the fixed idempotent, scaled by the doubled scalar part; on the states of the sector, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by</p>
 <p>$$
-\vec r \longmapsto \vec u,
+\vec s_{\Psi} \longmapsto \vec u,
 $$</p>
 <p>a constant map, which drives every state to the same point of the sphere.</p>
-<p>The reset is <strong>not</strong> the limit of the dephasing flow, and the distinction is worth drawing because the two are easily conflated. Dephasing preserves the axial component $\vec u\cdot\vec r$ and converges only to the projection $\vec r\mapsto(\vec u\cdot\vec r)\vec u$ onto the pointer diameter, so it never moves a state that points the other way; a state with $\vec r = -\tfrac{1}{2}\vec u$, for instance, is fixed by full dephasing and is sent to $+\vec u$ by the reset. The reset is instead the $r'_t\to\infty$ limit of a <strong>non-unital</strong> contraction semigroup — the amplitude-damping, or thermalising, semigroup whose stationary state is $\tilde\Pi_1(\vec u)$ — and it is precisely the non-unitality, absent from dephasing, that lets it move the state off the diameter and change the axial component.</p>
+<p>The reset is <strong>not</strong> the limit of the dephasing flow, and the distinction is worth drawing because the two are easily conflated. Dephasing preserves the axial component $\vec u\cdot\vec s_{\Psi}$ and converges only to the projection $\vec s_{\Psi}\mapsto(\vec u\cdot\vec s_{\Psi})\vec u$ onto the pointer diameter, so it never moves a state that points the other way; a state with $\vec s_{\Psi} = -\tfrac{1}{2}\vec u$, for instance, is fixed by full dephasing and is sent to $+\vec u$ by the reset. The reset is instead the $r'_t\to\infty$ limit of a <strong>non-unital</strong> contraction semigroup — the amplitude-damping, or thermalising, semigroup whose stationary state is $\tilde\Pi_1(\vec u)$ — and it is precisely the non-unitality, absent from dephasing, that lets it move the state off the diameter and change the axial component.</p>
 <p>The map is linear, completely positive, trace-preserving and idempotent, but it is <strong>not unital</strong>: it sends the maximally mixed state to a pure state, $\mathcal{E}_{\vec u}(e_t/2) = \tilde\Pi_1(\vec u) \neq e_t/2$. It is therefore not a coarse-graining in the sense of the companion article, whose conditional expectations fix the maximally mixed state; it is the composition of the pointer coarse-graining with a reset, and the non-unital character is exactly what allows it to <strong>lower</strong> the entropy of the memory. The deficit is not created or destroyed by the map; it is exported to the environment, where it appears as the heat of the following section.</p>
 <p>The map is <strong>rank two</strong>: it has a Kraus representation with two operators. In the pointer basis they are</p>
 <p>$$
@@ -171,8 +171,8 @@ $$</p>
 \delta\mathcal{S} = -\log 2 = -0.6931471806 ,
 $$</p>
 <p>using $h(0) = \log 2$.</p>
-<p><strong>A biased bit.</strong> For a classical bit with $|\vec r| = |p_+ - p_-| \ne 0$, the removal is $\delta\mathcal{S} = -h(|\vec r|)$, less than a full bit.</p>
-<p><strong>A superposition.</strong> For the interior state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y))$, with $\vec r = \tfrac{1}{2}(\vec e_x+\vec e_y)$ and $|\vec r| = 1/\sqrt{2}$, the functional gives $\mathcal{S} = 0.4164955307$ and erasure to any idempotent gives</p>
+<p><strong>A biased bit.</strong> For a classical bit with $|\vec s_{\Psi}| = |p_+ - p_-| \ne 0$, the removal is $\delta\mathcal{S} = -h(|\vec s_{\Psi}|)$, less than a full bit.</p>
+<p><strong>A superposition.</strong> For the interior state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(\tilde\Pi_1(\vec e_x) + \tilde\Pi_1(\vec e_y))$, with $\vec s_{\Psi} = \tfrac{1}{2}(\vec e_x+\vec e_y)$ and $|\vec s_{\Psi}| = 1/\sqrt{2}$, the functional gives $\mathcal{S} = 0.4164955307$ and erasure to any idempotent gives</p>
 <p>$$
 \delta\mathcal{S} = -0.4164955307 .
 $$</p>
@@ -287,7 +287,7 @@ $$</p>
 <td>Central scalar imaginary; exchanges the sectors</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$</td>
+<td>$\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec s_{\Psi})$</td>
 <td>State of the informational sector</td>
 </tr>
 <tr>
@@ -311,7 +311,7 @@ $$</p>
 <td>Sector exchange of the quadratic form</td>
 </tr>
 <tr>
-<td>$\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = h(|\vec r|)$</td>
+<td>$\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = h(|\vec s_{\Psi}|)$</td>
 <td>Entropy functional (nats)</td>
 </tr>
 <tr>
