@@ -9,7 +9,7 @@
 **The one thing the coupling does to the word, and it is one line.** The gauge element is central, so it acts on one factor and only one: the angle is translated and the other seven parameters are inert,
 
 $$
-r\longmapsto r,
+\varrho\longmapsto \varrho,
 \qquad
 \theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{q}{\hbar}\Gamma,
 \qquad
@@ -30,23 +30,23 @@ The scale, the rapidity, the two axes and the density are invariant, and the two
 
 **The restriction is the free one, and the coupling does not remove it.** The parent's pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and that class is invariant only under a central Hamiltonian. The limit is therefore defined on the central class here as it is in the free companion, and for the same reason.
 
-**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ with $\varphi=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+iq\tilde A_\Phi/\hbar$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
+**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ with $\varphi=c\,a'_{t}$; the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+iq\tilde A_\Phi/\hbar$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $q$ the electric charge, real; $\Delta_\Phi$ the Laplacian of the material sector.
 
 ## The Two Equations and Where the Connection Sits
 
 **The parent's pair, in the article's letters.**
 
 $$
-\partial_{t'}\bigl(r^{2}\bigr)+\vec\nabla_\Phi\cdot\Bigl(r^{2}\frac{\vec\nabla_\Phi S-q\vec A}{m}\Bigr)=0,
+\partial_{t'}\bigl(\varrho^{2}\bigr)+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\nabla_\Phi S-q\vec A}{m}\Bigr)=0,
 \qquad
 \partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\varphi+Q=0,
 $$
 
-with $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$. The first is the covariant continuity equation and the second the quantum Hamilton–Jacobi equation of the coupled field.
+with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The first is the covariant continuity equation and the second the quantum Hamilton–Jacobi equation of the coupled field.
 
 **The connection appears in three places and nowhere else.** In the transport it replaces the canonical gradient by the kinetic momentum. In the Hamilton–Jacobi equation it does the same in the kinetic term and it adds the potential energy $q\varphi$. In the quantum potential it does not appear at all.
 
-**Why the third of those is exact and not an ordering accident.** $Q$ is built from the scale $r$ and its ordinary Laplacian. The scale is invariant under the gauge group, its Laplacian is invariant, and no derivative of the potential reaches it, because the covariant derivative acts on the phase and the frame and the scale is neither. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
+**Why the third of those is exact and not an ordering accident.** $Q$ is built from the scale $\varrho$ and its ordinary Laplacian. The scale is invariant under the gauge group, its Laplacian is invariant, and no derivative of the potential reaches it, because the covariant derivative acts on the phase and the frame and the scale is neither. **The quantum potential is the free one, term for term**, and the parent states it as its first finding.
 
 **The two invariants the limit works with.**
 
@@ -65,7 +65,7 @@ The first is the mechanical momentum and the second the kinetic energy, and both
 $$
 \epsilon=\frac{1}{\pi_{\Phi}L},
 \qquad
-L^{-1}=\lvert\vec\nabla_\Phi\ln r\rvert .
+L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert .
 $$
 
 **A criterion on the canonical gradient would fail gauge invariance, and the failure is not cosmetic.** Under $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+q\Gamma/\hbar$ and $\vec A\to\vec A+\vec\nabla_\Phi\Gamma$, the canonical gradient shifts by $q\vec\nabla_\Phi\Gamma$ while $\vec\pi$ does not. A parameter defined on the canonical gradient would therefore change value under a gauge transformation, and a limit whose smallness depends on the gauge is not a statement about the field.
@@ -75,8 +75,8 @@ $$
 | object | order in $\epsilon$ | kept by the limit | kept by the first correction |
 |---|---|---|---|
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | $0$ | yes | yes |
-| $\hbar\,\vec\nabla_\Phi\ln r$ | $1$ | no | yes |
-| $\hbar^{2}\,\Delta_\Phi r/r$ | $2$ | no | no |
+| $\hbar\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no | yes |
+| $\hbar^{2}\,\Delta_\Phi \varrho/\varrho$ | $2$ | no | no |
 
 **Nothing in the table mentions the potential's strength.** The connection contributes no parameter: $q\vec A$ enters the leading term, and a large potential shifts the leading term without changing its order. **The coupling changes the value of the eikonal and never its size**, and that is why the accuracy of the limit is the free accuracy.
 
@@ -129,7 +129,7 @@ Two cancellations carry it: the mixed derivatives of $S$ commute, and the flow r
 **The transport equation is exact and the limit does not touch it.**
 
 $$
-\frac{\partial r^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(r^{2}\frac{\vec\pi}{m}\Bigr)=0 ,
+\frac{\partial \varrho^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\pi}{m}\Bigr)=0 ,
 $$
 
 the density carried by the kinetic velocity. In the free case the carrier was $\vec\nabla_\Phi S/m$; here it is $\vec\pi/m$, and that is the whole change.
@@ -161,12 +161,12 @@ for a loop bounding a surface that no node crosses. The equation is exact and it
 **The deleted term is the same function as in the free case.**
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi r}{r},
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 with the ordinary Laplacian and no potential in it. The coupling does not enter, and the reason is one sentence long: the covariant derivative acts on the phase, the quantum potential is built from the scale, and the scale is inert under the gauge group.
 
-**Its size is therefore the free size.** With $r=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(\pi_{\Phi}\sigma)$,
+**Its size is therefore the free size.** With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(\pi_{\Phi}\sigma)$,
 
 $$
 \frac{\lvert Q\rvert}{\mathcal E}=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert ,
@@ -198,7 +198,7 @@ were compared with the three components of $\frac{d\vec\pi}{dt'}-q(\vec E+\vec v
 
 **The vorticity was checked by direct differentiation.** $\vec\nabla_\Phi\times(\vec\nabla_\Phi S-q\vec A)=-q\vec\nabla_\Phi\times\vec A$ because the curl of a gradient vanishes identically, and this is an identity and not an approximation.
 
-**The quantum potential was checked for invariance.** $Q$ contains $r$ and $\Delta_\Phi r$ only; under the gauge transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
+**The quantum potential was checked for invariance.** $Q$ contains $\varrho$ and $\Delta_\Phi \varrho$ only; under the gauge transformation the word's factors transform as the parent states, the scale is unchanged, and $Q$ is unchanged term for term.
 
 **The circulation was checked against the parent's letters.** The parent writes $\oint\vec\pi\cdot\mathrm{d}\vec l=2\pi\hbar n+ϙ\Phi_{B}$ with $ϙ=-q$; the display here is the same statement in the article's letters.
 
@@ -218,8 +218,8 @@ Order two is the free quantum potential, with the free size and the free non-uni
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
-| $r>0$ | The scale; the density is $r^{2}$ on the central field |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
+| $\varrho>0$ | The scale; the density is $\varrho^{2}$ on the central field |
 | $\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$ | The central angle; the action |
 | $\varepsilon e_{t}$ | The rotor on the central field |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection; $\varphi$ the scalar potential |
@@ -227,7 +227,7 @@ Order two is the free quantum potential, with the free size and the free non-uni
 | $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}-q\varphi$ | Kinetic energy |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$ | The parameter |
-| $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ | Quantum potential; the free one |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the free one |
 | $\Phi_{B}$ | Magnetic flux through a surface the loop bounds |
 
 ## Further Reading

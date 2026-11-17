@@ -4,39 +4,39 @@
 
 **The integral is the companion's, and this article is a reading of it.** *The Path Integral and the Schrödinger Equation in Biquaternionic Form* defines the functional integral over elements of $\mathbb{B}$, evaluates the generating functional, and identifies the two-point function with the propagator. This article substitutes the complete polar decomposition into that integral and reads where each factor of the word lands. It adds no integral and changes no value.
 
-**The word on the fields that matter here is two functions and a sign.** For a central field the boost factor has neither rapidity nor axis to carry and is $e_t$, and the rotor is the sign the branch of the modulus deposits, so the word collapses to $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$. The collapse is the companion article's, *The Schrödinger Equation in Biquaternionic Polar Variables*, §*The Central Field*, and none of its theory is repeated here. The general element is treated once, in §*The Word of the General Element*, where it is needed to say what the chart does not show.
+**The word on the fields that matter here is two functions and a sign.** For a central field the boost factor has neither rapidity nor axis to carry and is $e_t$, and the rotor is the sign the branch of the modulus deposits, so the word collapses to $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$. The collapse is the companion article's, *The Schrödinger Equation in Biquaternionic Polar Variables*, §*The Central Field*, and none of its theory is repeated here. The general element is treated once, in §*The Word of the General Element*, where it is needed to say what the chart does not show.
 
-**The article's finding is that the chart separates the two roles the element's components play in the integral.** The angle is the coordinate that the weight depends on, and the density enters the exponent linearly and is therefore a multiplier rather than an amplitude. Three consequences follow and they are the body of the article: the chart's measure is flat in the density, because the Jacobian of $n=r^{2}$ is exactly what the first-order kinetic term needs; the integral over the phase is a Gaussian whose saddle is the continuity equation, and the integral over the density is an exact delta in the constant setting; and the kernel's word is a scale, an angle and — in the constant setting only — a rotor, with the scale reading the van Vleck determinant and the angle the classical action over $\hbar$ plus the Maslov constant.
+**The article's finding is that the chart separates the two roles the element's components play in the integral.** The angle is the coordinate that the weight depends on, and the density enters the exponent linearly and is therefore a multiplier rather than an amplitude. Three consequences follow and they are the body of the article: the chart's measure is flat in the density, because the Jacobian of $n=\varrho^{2}$ is exactly what the first-order kinetic term needs; the integral over the phase is a Gaussian whose saddle is the continuity equation, and the integral over the density is an exact delta in the constant setting; and the kernel's word is a scale, an angle and — in the constant setting only — a rotor, with the scale reading the van Vleck determinant and the angle the classical action over $\hbar$ plus the Maslov constant.
 
 **What the article does not do.** It does not produce a second integral, does not define the continuum measure, does not decide the second-quantisation question, and does not evaluate a kernel that the element companion has not already evaluated. The reading is exact where the algebra is exact, and the article says at each step which statements are identities and which are formal.
 
-**Conventions.** The chart is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r\ge0$ real, $\theta_{\mathrm{pha}}$ central real modulo $\pi$, $\tilde U_{\Psi,\mathrm b}$ a Hermitian unit of rapidity $\theta_{\mathrm{rpd}}$ about the axis $\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}$ a real rotor. For a central field $\theta_{\mathrm{rpd}}=0$, $\vec u_{\mathrm b}$ is empty, and $\tilde u_{\mathrm r}=\varepsilon e_t$ with $\varepsilon=\pm1$ the branch sign. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=r^{2}$ for a central field, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n=2r^{2}$ is twice it; this article uses $n$ and $r^{2}$ interchangeably, and states which. The algebra, the sectors, the pairing, the action and the $i\epsilon$ are the element companion's.
+**Conventions.** The chart is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho\ge0$ real, $\theta_{\mathrm{pha}}$ central real modulo $\pi$, $\tilde U_{\Psi,\mathrm b}$ a Hermitian unit of rapidity $\theta_{\mathrm{rpd}}$ about the axis $\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}$ a real rotor. For a central field $\theta_{\mathrm{rpd}}=0$, $\vec u_{\mathrm b}$ is empty, and $\tilde u_{\mathrm r}=\varepsilon e_t$ with $\varepsilon=\pm1$ the branch sign. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ for a central field, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n=2\varrho^{2}$ is twice it; this article uses $n$ and $\varrho^{2}$ interchangeably, and states which. The algebra, the sectors, the pairing, the action and the $i\epsilon$ are the element companion's.
 
 ## The Exponent in the Chart
 
-**The action is one identity away from the chart's form.** Substituting $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i\hbar\tilde\Xi^{*}\dot{\tilde\Xi})=-\hbar r^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_\eta\tilde\Xi)^{*}\partial_\eta\tilde\Xi)=(\partial_\eta r)^{2}+r^{2}(\partial_\eta\theta_{\mathrm{pha}})^{2}$ gives
+**The action is one identity away from the chart's form.** Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i\hbar\tilde\Xi^{*}\dot{\tilde\Xi})=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_\eta\tilde\Xi)^{*}\partial_\eta\tilde\Xi)=(\partial_\eta \varrho)^{2}+\varrho^{2}(\partial_\eta\theta_{\mathrm{pha}})^{2}$ gives
 
 $$
-\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\hbar\,r^{2}\,\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Bigl((\vec\nabla r)^{2}+r^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2}\Bigr)-V\,r^{2}\Bigr],\;}
+\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Bigl((\vec\nabla \varrho)^{2}+\varrho^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2}\Bigr)-V\,\varrho^{2}\Bigr],\;}
 $$
 
 which is the polar variational companion's central-field action and is not a new object. Both halves of the identity were checked on analytic fields at four points: the temporal one to a relative $1.4\times10^{-16}$ and the spatial one to $2.1\times10^{-16}$. There is no approximation in either, because each is the real part of a product of two complex numbers.
 
-**Three features of the exponent are the whole of the article.** The time derivative multiplies the density and not the scale's time derivative: there is no $(\partial_{t'}r)^{2}$ term anywhere, which is the chart's way of saying that the action is first order. The density appears linearly in the kinetic term and in the potential term. And the angle appears only through its derivatives, so it carries no potential of its own and no mass.
+**Three features of the exponent are the whole of the article.** The time derivative multiplies the density and not the scale's time derivative: there is no $(\partial_{t'}\varrho)^{2}$ term anywhere, which is the chart's way of saying that the action is first order. The density appears linearly in the kinetic term and in the potential term. And the angle appears only through its derivatives, so it carries no potential of its own and no mass.
 
-**The absence of a scale rate is the chart's sharpest statement.** In the Klein–Gordon chart the same substitution produces $\dot r^{2}\cosh\theta_{\mathrm{rpd}}$ and $r^{2}\sinh^{2}\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}^{2}$, so the scale has a rate and the two are coupled; in the Schrödinger chart the scale has no rate at all and the angle's rate is weighted by it. That is the difference between a second-order and a first-order equation, seen in two lines, and it is why the two charts' measures behave differently.
+**The absence of a scale rate is the chart's sharpest statement.** In the Klein–Gordon chart the same substitution produces $\dot \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $\varrho^{2}\sinh^{2}\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}^{2}$, so the scale has a rate and the two are coupled; in the Schrödinger chart the scale has no rate at all and the angle's rate is weighted by it. That is the difference between a second-order and a first-order equation, seen in two lines, and it is why the two charts' measures behave differently.
 
 ## The Density Is the Coordinate of the Measure
 
-**The measure of the chart is the flat measure in the density, exactly.** The element measure is flat in the eight real coordinates; on a central field the two that matter are the real and imaginary parts of $\tilde\Xi$, and polar coordinates on them carry $r\,dr\,d\theta_{\mathrm{pha}}$. With $n=r^{2}$,
+**The measure of the chart is the flat measure in the density, exactly.** The element measure is flat in the eight real coordinates; on a central field the two that matter are the real and imaginary parts of $\tilde\Xi$, and polar coordinates on them carry $\varrho\,d\varrho\,d\theta_{\mathrm{pha}}$. With $n=\varrho^{2}$,
 
 $$
-r\,dr=\tfrac12\,dn,
+\varrho\,d\varrho=\tfrac12\,dn,
 $$
 
-so the chart's measure is $\prod_k\tfrac12\,dn_k\,d\theta_{\mathrm{pha},k}$: flat in the density and flat in the angle, with a constant $\tfrac12$ per site and no $n$-dependent weight anywhere. The quadrature $\int_0^{\infty}r\,dr\,e^{-ar^{2}}=\frac{1}{2a}$ against the exact $\frac{1}{2a}$ reproduces the value to a relative $1.8\times10^{-10}$, and the identity is of course exact.
+so the chart's measure is $\prod_k\tfrac12\,dn_k\,d\theta_{\mathrm{pha},k}$: flat in the density and flat in the angle, with a constant $\tfrac12$ per site and no $n$-dependent weight anywhere. The quadrature $\int_0^{\infty}\varrho\,d\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a}$ against the exact $\frac{1}{2a}$ reproduces the value to a relative $1.8\times10^{-10}$, and the identity is of course exact.
 
-**The cancellation is not an accident and it is not available to the second-order chart.** The factor $r$ is the Jacobian of the pair $(r,\theta)$ relative to the Cartesian pair, and the first-order kinetic term is linear in $n=r^{2}$; the two exponents of $r$ match, one from the measure and one from the exponent. A second-order kinetic term is quadratic in $r$ and needs no Jacobian, so in the Klein–Gordon chart the substitution $u=r^{2}$ leaves $du/(2\sqrt{u})$, a weight that the exponent does not supply and that the measure cannot drop. **The measure problem of the Klein–Gordon chart therefore has no counterpart here**, and the reason is the order in time and not the algebra.
+**The cancellation is not an accident and it is not available to the second-order chart.** The factor $\varrho$ is the Jacobian of the pair $(\varrho,\theta)$ relative to the Cartesian pair, and the first-order kinetic term is linear in $n=\varrho^{2}$; the two exponents of $\varrho$ match, one from the measure and one from the exponent. A second-order kinetic term is quadratic in $\varrho$ and needs no Jacobian, so in the Klein–Gordon chart the substitution $u=\varrho^{2}$ leaves $du/(2\sqrt{u})$, a weight that the exponent does not supply and that the measure cannot drop. **The measure problem of the Klein–Gordon chart therefore has no counterpart here**, and the reason is the order in time and not the algebra.
 
 **What the cancellation does not buy.** The product over sites is still an infinite product, and the lattice cutoff is still the definition. The claim is narrow and it is the only one made: the chart introduces no weight of its own, so a reading in the density and the angle is a reading of the same measure, site for site, and not of a measure deformed by the coordinates.
 
@@ -45,7 +45,7 @@ so the chart's measure is $\prod_k\tfrac12\,dn_k\,d\theta_{\mathrm{pha},k}$: fla
 **The exponent is linear in the angle's rate and quadratic in its gradient, so the angle's integral is a Gaussian with a source.** Integrating $-\hbar\int n\dot\theta$ by parts turns it into $+\hbar\int\theta\,\dot n$, and the angle then appears quadratically through $(\vec\nabla\theta)^{2}$ and linearly through $\dot n$. The integral over the angle is therefore a Gaussian whose source is the density's rate:
 
 $$
-\int\mathcal{D}\theta\;\exp\Bigl(\frac{i}{\hbar}\int dt'\,d^{3}x\;\bigl[\hbar\,\theta\,\dot n-\frac{\hbar^{2}}{2m}r^{2}(\vec\nabla\theta)^{2}\bigr]\Bigr)
+\int\mathcal{D}\theta\;\exp\Bigl(\frac{i}{\hbar}\int dt'\,d^{3}x\;\bigl[\hbar\,\theta\,\dot n-\frac{\hbar^{2}}{2m}\varrho^{2}(\vec\nabla\theta)^{2}\bigr]\Bigr)
 =\det\Bigl(-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla\Bigr)^{-1/2}\exp\Bigl(\frac{i}{\hbar}S_{\mathrm{eff}}[n]\Bigr),
 $$
 
@@ -61,7 +61,7 @@ $$
 
 **The Gaussian's determinant is not one, and the article says so.** The integration leaves a determinant of the operator $-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla$, which depends on the density and which is the chart's fluctuation factor. It is not evaluated here, and it is the object that the element form calls the first-order determinant, read in the chart.
 
-**The delta is exact in the constant setting.** When the Hamiltonian is a constant element and the field is uniform in space, the exponent is $-\hbar r^{2}\dot\theta_{\mathrm{pha}}-h_t r^{2}$ with no gradient term at all, so the integral over the density is exactly a delta:
+**The delta is exact in the constant setting.** When the Hamiltonian is a constant element and the field is uniform in space, the exponent is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-h_t \varrho^{2}$ with no gradient term at all, so the integral over the density is exactly a delta:
 
 $$
 \int_0^{\infty}dn\;\exp\Bigl(-\frac{i}{\hbar}\,n\bigl(\hbar\dot\theta_{\mathrm{pha}}+h_t\bigr)\Bigr)=2\pi\hbar\,\delta\bigl(\hbar\dot\theta_{\mathrm{pha}}+h_t\bigr),
@@ -91,7 +91,7 @@ with the sign the branch of $(2\pi i\,r'_t)^{-3/2}$. For a constant element the 
 
 ## The Word of the General Element
 
-**The general element's word does not collapse, and the integral's weight does not use it.** For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\theta_{\mathrm{rpd}}\neq0$ the chart's action carries the cross term $-\hbar r^{2}\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\sinh\theta_{\mathrm{rpd}}\,a$, and the polar variational companion shows that dropping it leaves a system with no solutions for a general field. The integral over the general element is therefore the integral over all four factors, and the chart's reading of it is the variational companion's Lagrangian with the word's eight parameters as the coordinates.
+**The general element's word does not collapse, and the integral's weight does not use it.** For $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\theta_{\mathrm{rpd}}\neq0$ the chart's action carries the cross term $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\sinh\theta_{\mathrm{rpd}}\,a$, and the polar variational companion shows that dropping it leaves a system with no solutions for a general field. The integral over the general element is therefore the integral over all four factors, and the chart's reading of it is the variational companion's Lagrangian with the word's eight parameters as the coordinates.
 
 **What the flow does to the word, the integral inherits.** The parent polar companion's five statements hold along every configuration: the scale is constant, the rapidity is constant, the phase runs at minus the mean, the rotor's angle at the gap, and every carried direction precesses at the gap. Those are consequences of the central Hamiltonian and they are the same statement in the integral, read as the saddle's flow.
 
@@ -109,7 +109,7 @@ with the sign the branch of $(2\pi i\,r'_t)^{-3/2}$. For a constant element the 
 
 ## What the Polar Reading Adds and Does Not Add
 
-**Adds, first, the separation of roles.** The angle is the coordinate the weight depends on; the density enters the exponent linearly and is the multiplier of continuity; and the measure is flat in the density because the Jacobian of $n=r^{2}$ is what the first-order term needs. None of the three is visible in the element form, where one equation carries both.
+**Adds, first, the separation of roles.** The angle is the coordinate the weight depends on; the density enters the exponent linearly and is the multiplier of continuity; and the measure is flat in the density because the Jacobian of $n=\varrho^{2}$ is what the first-order term needs. None of the three is visible in the element form, where one equation carries both.
 
 **Adds, second, the exact measure statement.** The chart's measure carries no weight of its own, and the Klein–Gordon chart's does. The difference is the order in time, and it is the only place in this set of four articles where a measure question is answered rather than deferred.
 
@@ -133,7 +133,7 @@ with the sign the branch of $(2\pi i\,r'_t)^{-3/2}$. For a constant element the 
 
 ## Summary
 
-The polar reading of the Schrödinger functional integral is the substitution $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element companion's integral, and its content is the separation of the two coordinates' roles. The exponent is $-\hbar r^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}((\vec\nabla r)^{2}+r^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2})-Vr^{2}$, verified as an identity to $10^{-16}$; there is no scale rate, which is the first-order structure in the chart's letters. The measure is flat in the density, because $r\,dr=\frac12dn$ cancels the Jacobian against the exponent's linearity, and the Klein–Gordon chart's weight has no counterpart here.
+The polar reading of the Schrödinger functional integral is the substitution $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element companion's integral, and its content is the separation of the two coordinates' roles. The exponent is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}((\vec\nabla \varrho)^{2}+\varrho^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2})-V\varrho^{2}$, verified as an identity to $10^{-16}$; there is no scale rate, which is the first-order structure in the chart's letters. The measure is flat in the density, because $\varrho\,d\varrho=\frac12dn$ cancels the Jacobian against the exponent's linearity, and the Klein–Gordon chart's weight has no counterpart here.
 
 Integrating the angle gives a Gaussian whose saddle is the continuity equation with $\vec v=\hbar\vec\nabla\theta_{\mathrm{pha}}/m$, and a determinant of $-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla$; integrating the density gives, in the constant setting, an exact delta on the parent's phase rate $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, verified through the regulated form $\sqrt{\pi/\epsilon}\exp(-\Omega^{2}/4\epsilon)$ to $2.8\times10^{-5}$. The two Madelung equations are the two constraints of the chart's integral, each obtained by eliminating the other variable.
 
@@ -143,12 +143,12 @@ The kernel's word is scale = van Vleck, angle = classical action over $\hbar$ pl
 
 | Symbol | Meaning |
 | --- | --- |
-| $r$, $\theta_{\mathrm{pha}}$ | Scale and central angle of the field |
+| $\varrho$, $\theta_{\mathrm{pha}}$ | Scale and central angle of the field |
 | $\varepsilon$ | Branch sign of the modulus; the trivial rotor |
-| $n=r^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density, and the chart's natural coordinate |
+| $n=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density, and the chart's natural coordinate |
 | $\rho=2n$ | The parent's density, twice $n$ |
-| $-\hbar r^{2}\dot\theta_{\mathrm{pha}}$ | The first-order kinetic term; no scale rate |
-| $r\,dr=\frac12dn$ | The Jacobian's cancellation |
+| $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ | The first-order kinetic term; no scale rate |
+| $\varrho\,d\varrho=\frac12dn$ | The Jacobian's cancellation |
 | $\vec v=\hbar\vec\nabla\theta_{\mathrm{pha}}/m$ | Flow velocity of the continuity saddle |
 | $\det(-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla)^{-1/2}$ | The angle integral's fluctuation factor |
 | $2\pi\hbar\,\delta(\hbar\dot\theta_{\mathrm{pha}}+h_t)$ | The density integral, constant setting |

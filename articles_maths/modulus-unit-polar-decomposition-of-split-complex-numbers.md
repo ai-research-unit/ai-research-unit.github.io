@@ -5,10 +5,10 @@
 This article treats the **modulus–unit polar decomposition** of a split-complex number: the writing
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}_{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
+Q = \varrho\,u, \qquad \varrho \in \mathbb{R}, \quad \varrho > 0, \qquad u \in \mathbb{C}_{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
-with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
+with $\varrho$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
 
 The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of inertia $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.
 
@@ -45,29 +45,29 @@ The **null cone** is the pair of lines $q = \pm q'$, equivalently $\mathbb{R}\Pi
 On the invertible set $\langle Q\rangle_{*}\neq0$ the **modulus** is
 
 $$
-r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
+\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert q^2-q'^2\rvert} > 0 .
 $$
 
 It is a positive square root of a non-negative real, with no sign or branch choice. It is multiplicative, because the norm is,
 
 $$
-r(QB) = r(Q)r(B).
+\varrho(QB) = \varrho(Q)\varrho(B).
 $$
 
 In the idempotent coordinates $Q = Q_+\Pi_+ + Q_-\Pi_-$, with $Q_\pm = q\pm q'$, the norm is the product $\langle Q\rangle_{*} = Q_+Q_-$, so the modulus is the geometric mean
 
 $$
-r = \sqrt{\lvert Q_+Q_-\rvert}.
+\varrho = \sqrt{\lvert Q_+Q_-\rvert}.
 $$
 
-The modulus vanishes on the null cone, so it is not a norm: $r(1+j)=0$ while $1+j\neq0$. It is a multiplicative size on the group of invertibles.
+The modulus vanishes on the null cone, so it is not a norm: $\varrho(1+j)=0$ while $1+j\neq0$. It is a multiplicative size on the group of invertibles.
 
 ### The Unit Factor and the Unit Set
 
 The **unit factor** of an invertible element is
 
 $$
-u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{r^2} = \operatorname{sign}\langle Q\rangle_{*} \in \{\pm1\}.
+u = \frac{Q}{\varrho}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{\varrho^2} = \operatorname{sign}\langle Q\rangle_{*} \in \{\pm1\}.
 $$
 
 The **unit set** is therefore
@@ -90,17 +90,17 @@ The sign in front of the exponential is the branch sign, and $\theta$ is a coord
 
 ### The Count of the Parameters
 
-The decomposition has two real parameters on each component: the modulus $r>0$ and the branch coordinate $\theta\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.
+The decomposition has two real parameters on each component: the modulus $\varrho>0$ and the branch coordinate $\theta\in\mathbb{R}$. The count matches the complex case, $2=1+1$; the range differs. On the circle the angle is a point of $\mathbb{R}/2\pi\mathbb{Z}$; on a branch the hyperbolic angle is a point of $\mathbb{R}$. The unit factor is one parameter and one discrete label.
 
 ## Existence and Uniqueness
 
 **Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition.
 
-**Existence.** Put $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u = Q/r$. Since $\langle Q\rangle_{*}\neq0$, $r>0$. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = \operatorname{sign}\langle Q\rangle_{*}$, so $\lvert \langle u\rangle_{*}\rvert = 1$. Hence $Q = ru$ with $r>0$ and $\lvert \langle u\rangle_{*}\rvert = 1$.
+**Existence.** Put $\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}$ and $u = Q/\varrho$. Since $\langle Q\rangle_{*}\neq0$, $\varrho>0$. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/\varrho^2 = \operatorname{sign}\langle Q\rangle_{*}$, so $\lvert \langle u\rangle_{*}\rvert = 1$. Hence $Q = ru$ with $\varrho>0$ and $\lvert \langle u\rangle_{*}\rvert = 1$.
 
-**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r,r_1>0$ and $\lvert \langle u\rangle_{*}\rvert = \lvert \langle u_1\rangle_{*}\rvert = 1$. Taking absolute values of the norm gives $r^2 = \lvert \langle Q\rangle_{*}\rvert = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
+**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $\varrho,r_1>0$ and $\lvert \langle u\rangle_{*}\rvert = \lvert \langle u_1\rangle_{*}\rvert = 1$. Taking absolute values of the norm gives $\varrho^2 = \lvert \langle Q\rangle_{*}\rvert = r_1^2$. Both are positive, so $\varrho = r_1$. Dividing, $u = Q/\varrho = u_1$.
 
-The pair $(r,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
+The pair $(\varrho,u)$ is unique, with no sign or branch ambiguity. The sign of the norm is a **regime**, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$, so the modulus is always positive and the sign is carried by the unit factor. A negative real has positive modulus and unit factor $-1$; $j$ has modulus $1$ and unit factor $j$. The decomposition is defined exactly on ${\mathbb{C}_{\mathrm{spl}}}^\times = \{\langle Q\rangle_{*}\neq0\}$; on the null cone the modulus vanishes and the unit factor does not exist.
 
 ## The Group of Invertibles and the Unit Set
 
@@ -125,10 +125,10 @@ the future cone of the indefinite form. It is the image of the exponential, trea
 Every invertible element can be written in the normal form
 
 $$
-\boxed{\;Q = r\,\epsilon\,\exp(\theta j), \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \theta \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}\;}.
+\boxed{\;Q = \varrho\,\epsilon\,\exp(\theta j), \qquad \varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \quad \theta \in \mathbb{R}, \quad \epsilon \in \{\pm1,\pm j\}\;}.
 $$
 
-The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(r,\theta)$ is the continuous part, and the triple $(r,\theta,\epsilon)$ is unique. The multiplication law is
+The discrete factor $\epsilon$ records the component: $\epsilon = 1$ on the identity component, $\epsilon = -1$ on the opposite component, $\epsilon = j$ on the upper spacelike component and $\epsilon = -j$ on the lower spacelike component. The pair $(\varrho,\theta)$ is the continuous part, and the triple $(\varrho,\theta,\epsilon)$ is unique. The multiplication law is
 
 $$
 \boxed{\;(r_1,\theta_1,\epsilon_1)(r_2,\theta_2,\epsilon_2) = (r_1r_2,\ \theta_1+\theta_2,\ \epsilon_1\epsilon_2)\;},
@@ -137,16 +137,16 @@ $$
 with $\epsilon_1\epsilon_2$ computed in the four-element group $\{\pm1,\pm j\}$, where $j^2 = 1$. Hence the polar decomposition read as a map is a group isomorphism
 
 $$
-\boxed{\;{\mathbb{C}_{\mathrm{spl}}}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (r,\theta,\epsilon)\;}.
+\boxed{\;{\mathbb{C}_{\mathrm{spl}}}^\times \longrightarrow \mathbb{R}_{>0} \times \mathbb{R} \times (\mathbb{Z}/2\mathbb{Z})^2, \qquad Q \longmapsto (\varrho,\theta,\epsilon)\;}.
 $$
 
-Equivalently, the map $(Q_+,Q_-)\mapsto(r,\theta,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $r=\sqrt{\lvert Q_+Q_-\rvert}$ and $\theta=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.
+Equivalently, the map $(Q_+,Q_-)\mapsto(\varrho,\theta,\operatorname{sign}Q_+,\operatorname{sign}Q_-)$ with $\varrho=\sqrt{\lvert Q_+Q_-\rvert}$ and $\theta=\tfrac12\ln\lvert Q_+/Q_-\rvert$ is a diffeomorphism of $\mathbb{R}^\times\times\mathbb{R}^\times$ onto $\mathbb{R}_{>0}\times\mathbb{R}\times(\mathbb{Z}/2)^2$. The first factor is the scale, the second is the hyperbolic angle or rapidity, and the last two are the branch signs. The angle has no period: the unit factor ranges over a line, not over a circle.
 
 ### The Maximal Compact Subgroup
 
 **Theorem.** The maximal compact subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the four-element group $\{\pm1,\pm j\}$, isomorphic to $(\mathbb{Z}/2\mathbb{Z})^2$.
 
-**Proof.** Let $K\subset{\mathbb{C}_{\mathrm{spl}}}^\times$ be compact and let $Q = r\epsilon\exp(\theta j)$ be its polar form. The modulus $r : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $r(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\theta : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\theta(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $r=1$ and $\theta=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
+**Proof.** Let $K\subset{\mathbb{C}_{\mathrm{spl}}}^\times$ be compact and let $Q = \varrho\epsilon\exp(\theta j)$ be its polar form. The modulus $\varrho : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}_{>0}$ is a continuous homomorphism, so $\varrho(K)$ is a compact subgroup of $\mathbb{R}_{>0}$, and the only such subgroup is $\{1\}$. The angle $\theta : {\mathbb{C}_{\mathrm{spl}}}^\times\to\mathbb{R}$ is also a continuous homomorphism, so $\theta(K)$ is a compact subgroup of the additive group $\mathbb{R}$, which is $\{0\}$. Hence $\varrho=1$ and $\theta=0$ on $K$, and $K\subset\{\pm1,\pm j\}$. That four-element set is itself a compact subgroup, so it is the maximal one.
 
 The contrast with the complex case is exact. There the group of invertibles is $\mathbb{C}^\times\cong\mathbb{R}_{>0}\times\mathrm{U}(1)$, and the maximal compact subgroup is the circle $\mathrm{U}(1)$, connected and one-dimensional. Here the maximal compact subgroup is discrete of order four. There is no continuous compact factor: every compact subgroup lies in the four-element group.
 
@@ -155,7 +155,7 @@ The contrast with the complex case is exact. There the group of invertibles is $
 The unit set ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ is a subgroup of ${\mathbb{C}_{\mathrm{spl}}}^\times$, because the product of two elements of norm $\pm1$ has norm $\pm1$, and the inverse of such an element has the same norm. The map
 
 $$
-H : [0,1]\times{\mathbb{C}_{\mathrm{spl}}}^\times \longrightarrow {\mathbb{C}_{\mathrm{spl}}}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{r(Q)}\Bigr)Q,
+H : [0,1]\times{\mathbb{C}_{\mathrm{spl}}}^\times \longrightarrow {\mathbb{C}_{\mathrm{spl}}}^\times, \qquad H(t,Q) = \Bigl((1-t)+\frac{t}{\varrho(Q)}\Bigr)Q,
 $$
 
 is continuous, fixes every point of ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at every $t$, is the identity at $t=0$, and lands in ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ at $t=1$. The group of invertibles therefore deformation retracts onto the unit set. The unit set has four components, each homeomorphic to a line; a second retraction $\epsilon\exp(\theta j)\mapsto \epsilon\exp((1-t)\theta j)$ contracts each branch to its vertex, so ${\mathbb{C}_{\mathrm{spl}}}^\times$ deformation retracts onto $\{\pm1,\pm j\}$ and has the homotopy type of four points. In the complex case the same construction retracts $\mathbb{C}^\times$ onto the circle, which is already the maximal compact subgroup; here the first retract is the non-compact unit set of four branches, and a second retraction is needed.
@@ -211,7 +211,7 @@ $$
 \det M_Q = q^2-q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
-so the norm is the determinant and the modulus is the square root of the absolute determinant, $r = \sqrt{\lvert\det M_Q\rvert}$.
+so the norm is the determinant and the modulus is the square root of the absolute determinant, $\varrho = \sqrt{\lvert\det M_Q\rvert}$.
 
 ### The Matrix of a Unit
 
@@ -258,7 +258,7 @@ On the identity component the matrix is already positive definite, and the polar
 Take $Q = 5+3j$. Then $\langle Q\rangle_{*} = 25-9 = 16>0$, so
 
 $$
-r = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad \langle u\rangle_{*} = 1.5625-0.5625 = 1.
+\varrho = 4, \qquad u = \frac{5+3j}{4} = 1.25+0.75j, \qquad \langle u\rangle_{*} = 1.5625-0.5625 = 1.
 $$
 
 The angle is fixed by $\tanh\theta = q'/q = 3/5$, hence
@@ -280,7 +280,7 @@ In the idempotent coordinates $Q_+ = 8$ and $Q_- = 2$, the modulus is the geomet
 Take $Q = 1+2j$. Then $\langle Q\rangle_{*} = 1-4 = -3<0$, so
 
 $$
-r = \sqrt3 = 1.7320508075688772, \qquad u = \frac{1+2j}{\sqrt3} = 0.5773502691896258 + 1.1547005383792517\,j,
+\varrho = \sqrt3 = 1.7320508075688772, \qquad u = \frac{1+2j}{\sqrt3} = 0.5773502691896258 + 1.1547005383792517\,j,
 $$
 
 and $\langle u\rangle_{*} = 1/3 - 4/3 = -1$. Here $u = j\exp(\theta j)$ with
@@ -295,7 +295,7 @@ so that $\sinh\theta = 1/\sqrt3$ and $\cosh\theta = 2/\sqrt3$. The element $Q$ c
 
 The following table applies the decomposition to elements of the four components and to the null cone.
 
-| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u$ | $\langle u\rangle_{*}$ | $\epsilon$ | $\theta$ |
+| $Q$ | $\langle Q\rangle_{*}$ | $\varrho$ | $u$ | $\langle u\rangle_{*}$ | $\epsilon$ | $\theta$ |
 |---|---|---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $+1$ | $1$ | $0$ |
 | $-2$ | $4$ | $2$ | $-1$ | $+1$ | $-1$ | $0$ |
@@ -327,7 +327,7 @@ The split column is the only one in which the norm is indefinite and the unit se
 
 ## Summary
 
-Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/r$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\theta j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\theta\in\mathbb{R}$.
+Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert}>0$ and unit factor $u = Q/\varrho$ satisfying $\lvert \langle u\rangle_{*}\rvert = 1$. The sign of the norm is a regime, forced by $\operatorname{sign}\langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}$; the unit factor has norm $+1$ in the timelike regime and $-1$ in the spacelike one. The unit set has four components, each a branch, parametrised as $\epsilon\exp(\theta j)$ with $\epsilon\in\{\pm1,\pm j\}$ and $\theta\in\mathbb{R}$.
 
 The group of invertibles splits as
 
@@ -349,8 +349,8 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | the idempotents, $Q = Q_+\Pi_++Q_-\Pi_-$ |
 | $Q_\pm = q\pm q'$ | the idempotent coordinates |
-| $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
-| $u = Q/r$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
+| $\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
+| $u = Q/\varrho$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $\epsilon$ | the component sign, an element of $\{\pm1,\pm j\}$ |
 | $\theta$ | the hyperbolic angle or rapidity, $\theta\in\mathbb{R}$ |
 | ${\mathbb{C}_{\mathrm{spl}}}^{(\pm1)}$ | the unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$, four branches |

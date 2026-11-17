@@ -7,9 +7,9 @@
 **The action.** The covariant Proca action with the complex word substituted,
 
 $$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu r\bigr)^{2}
-+\tfrac12r^{2}\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}
--\tfrac12k_m^{2}r^{2}\,\mathcal{V}
+S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu \varrho\bigr)^{2}
++\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}
+-\tfrac12k_m^{2}\varrho^{2}\,\mathcal{V}
 +\text{(the frame's terms)}\Bigr\},
 $$
 
@@ -25,17 +25,17 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **What is not new.** The covariant Proca action, the minimal substitution, the transverse polarisation and the Madelung-like pair are standard. Added here: the comparison of the two Proca deletions in one ledger, the exactness statement on constant envelopes, and the reading of the free/coupled split as a split of carriers.
 
-**The restriction.** The word is defined for $r>0$; the limit is a statement on the chart's domain; the cone is $r=0$.
+**The restriction.** The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.
 
-**Conventions.** Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+**Conventions.** Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
 ## The Blocks
 
 | block | derivative count | order |
 |---|---|---|
-| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu r)^{2}$ | two on the amplitude | $2$ |
-| $\tfrac12r^{2}\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}$ | two on the phase | $0$ |
-| $-\tfrac12k_m^{2}r^{2}\mathcal V$ | none, but depends on the frame | $0$ |
+| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu \varrho)^{2}$ | two on the amplitude | $2$ |
+| $\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}$ | two on the phase | $0$ |
+| $-\tfrac12k_m^{2}\varrho^{2}\mathcal V$ | none, but depends on the frame | $0$ |
 | the frame's terms | two on the frame's connections | $2$ |
 
 **One order-two block is deleted and one is kept.** The amplitude's is deleted; the frame's is kept, because the frame's connection is the velocity and the polarisation and its transport is the limit's order one. **So the deletion is one block and not "the curvatures"**: the amplitude's curvature goes and the frame's stays.
@@ -62,7 +62,7 @@ $$
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V ,
 $$
 
-the mass shell with the frame factor on the right. **Keeping the block would add $\Box_\Phi r/r$ to the right**, which is the quantum potential and is order two.
+the mass shell with the frame factor on the right. **Keeping the block would add $\Box_\Phi \varrho/\varrho$ to the right**, which is the quantum potential and is order two.
 
 **Varying the frame.** The polarisation's transport, from the frame's own terms and from $\mathcal V$'s dependence on the angles. **The parent does not display the general invariant length in closed form in the six angles**, so the variation is exact as an Euler–Lagrange equation and not as a formula.
 
@@ -74,8 +74,8 @@ the mass shell with the frame factor on the right. **Keeping the block would add
 
 | action | carrier | deleted block | ratio to kept blocks | exact on |
 |---|---|---|---|---|
-| free Proca | real | $\tfrac12(\partial r)^{2}$ | order one | nothing |
-| coupled Proca | complex | $\tfrac12(\partial r)^{2}$ | $\epsilon^{2}$ | constant envelopes |
+| free Proca | real | $\tfrac12(\partial \varrho)^{2}$ | order one | nothing |
+| coupled Proca | complex | $\tfrac12(\partial \varrho)^{2}$ | $\epsilon^{2}$ | constant envelopes |
 
 **The same block, two verdicts, and the difference is the word's second factor.** A complex word's phase absorbs the oscillation, so the amplitude's gradient is a slow gradient; a real word has no phase and the amplitude's gradient is the oscillation itself.
 
@@ -101,13 +101,13 @@ the mass shell with the frame factor on the right. **Keeping the block would add
 
 ## Verification
 
-**The orders were checked from the blocks.** The amplitude's kinetic term carries two derivatives on $r$; the phase's bracket carries two on the phase and none on the scale; the mass term carries none. **The counts are an inspection and they are exact.**
+**The orders were checked from the blocks.** The amplitude's kinetic term carries two derivatives on $\varrho$; the phase's bracket carries two on the phase and none on the scale; the mass term carries none. **The counts are an inspection and they are exact.**
 
-**The amplitude block's vanishing was checked on a plane wave.** For constant $A_0$ and constant $\tilde U$ the word's scale is $r=\lvert A_0\rvert$, so $\partial_\mu r=0$ and the block vanishes identically. **The truncated action is then the full action**, which is the exactness claim.
+**The amplitude block's vanishing was checked on a plane wave.** For constant $A_0$ and constant $\tilde U$ the word's scale is $\varrho=\lvert A_0\rvert$, so $\partial_\mu \varrho=0$ and the block vanishes identically. **The truncated action is then the full action**, which is the exactness claim.
 
 **The pair's transport was checked to be unchanged by the deletion.** The deleted block contains no phase and no potential, so both functional derivatives with respect to $\theta_{\mathrm{pha}}$ are the same expression. **No rearrangement is needed.**
 
-**The mass shell was checked to follow from the amplitude's variation.** With the kinetic block deleted, the variation gives $\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi r/r$. **The two differ by the deleted block and by nothing else.**
+**The mass shell was checked to follow from the amplitude's variation.** With the kinetic block deleted, the variation gives $\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. **The two differ by the deleted block and by nothing else.**
 
 **What was not checked.** No closed form for $\mathcal V$ in the six angles was derived, and no solution of the order-one system was integrated. **The first omission is the parent's and is recorded as such.**
 
@@ -125,8 +125,8 @@ The three variations give the covariant transport, the mass shell with the frame
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
-| $r>0$, $\rho=r^{2}$ | The scale; the density |
+| $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
+| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
 | $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+qA_\mu/\hbar$ | The mechanical phase gradient |
 | $\hbar\vec\kappa=\vec\pi$, $\hbar c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
 | $\mathcal V$ | The invariant length's frame factor; not closed in the six angles |

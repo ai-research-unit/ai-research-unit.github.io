@@ -5,7 +5,7 @@
 **This entry reads the polar-decomposition subsection of the mathematical category.** Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
 
 $$
-\boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
@@ -28,7 +28,7 @@ $$
 
 **The third objection is that the degenerate sector is empty of content because it has no eigenbasis.** It has no eigenbasis and it has a lock. On $\Sigma_{10}$ the rapidity is a function of the spin angle, the two axes are orthogonal, and the element is the scalar part times a unipotent written in an orthogonal frame. A sector with one angle of freedom instead of two is a sector with a prediction, and the corpus reads that prediction as the rest frame and the exceptional point.
 
-**The letters.** The algebra is $\mathbb{B}$; the element is $\tilde Q=Q_te_t+\vec Q$; the norms are $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ and $B^{2}=\langle\vec Q,\vec Q\rangle_{\natural}$; the modulus is $\Rho=\sqrt N=r e^{i\theta_{\mathrm{pha}}}$; the unit factor is $\tilde U=\tilde Q/\Rho$. The two unit factors are the **boost** $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}$ and the **rotor** $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The sectors are $\Sigma_{11}$ for $N\neq0$, $B^{2}\neq0$ and $\Sigma_{10}$ for $N\neq0$, $B^{2}=0$. The three pairings are named by their first factor: quaternion, Hamilton, Cartan.
+**The letters.** The algebra is $\mathbb{B}$; the element is $\tilde Q=Q_te_t+\vec Q$; the norms are $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ and $B^{2}=\langle\vec Q,\vec Q\rangle_{\natural}$; the modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$; the unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The two unit factors are the **boost** $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}$ and the **rotor** $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}$. The eigenvalues are $\lambda_\pm=Q_t\pm iB$. The sectors are $\Sigma_{11}$ for $N\neq0$, $B^{2}\neq0$ and $\Sigma_{10}$ for $N\neq0$, $B^{2}=0$. The three pairings are named by their first factor: quaternion, Hamilton, Cartan.
 
 **Boundaries.** The complete polar decomposition, with its four factors, is the subject of *The Complete Polar Decomposition of an N-Regular Biquaternion*; the exponential and the logarithm are *Biquaternion Elementary Functions*; the spectrum is *Spectral Regularity and Degeneracy in the Biquaternion Algebra*; the sectors are the four sector articles. The physical dictionary of the pairings is the companion entry *The Polar Decomposition and Its Three Pairings*, and the readings below are carried at length in the archived articles named with each. This entry states the decomposition, its two sectors, its three pairings and its two actions. It does not select a pairing, it does not derive a dynamics, and it does not claim that the word is conserved.
 
@@ -55,9 +55,9 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 
 ## The Results in Brief
 
-**The word.** Every element with $N\neq0$ is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and two real unit axes. The word is unique up to the directions where an axis is undefined.
+**The word.** Every element with $N\neq0$ is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and two real unit axes. The word is unique up to the directions where an axis is undefined.
 
-**The seven data.** $r=\sqrt{|N|}$, $\theta_{\mathrm{pha}}=\tfrac12\operatorname{Arg}N$, $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVert^{2}/|N|$, the boost axis from the imaginary parts of the cross products, and the rotor recovered from $\tilde Q$, the boost and the phase. Verified: on three random elements of $\Sigma_{11}$ the reconstructed element differs from the original by at most $1.5\times10^{-16}$, and the two unit factors have norm one to $1\times10^{-16}$.
+**The seven data.** $\varrho=\sqrt{|N|}$, $\theta_{\mathrm{pha}}=\tfrac12\operatorname{Arg}N$, $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVert^{2}/|N|$, the boost axis from the imaginary parts of the cross products, and the rotor recovered from $\tilde Q$, the boost and the phase. Verified: on three random elements of $\Sigma_{11}$ the reconstructed element differs from the original by at most $1.5\times10^{-16}$, and the two unit factors have norm one to $1\times10^{-16}$.
 
 **The parameter count.** $1+1+(1+2)+(1+2)=8$, the real dimension of the group of invertibles. The word is a chart on that group, not on the algebra.
 
@@ -65,11 +65,11 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 
 **The normal case.** The two polar factors commute with $\tilde Q$ exactly when $\tilde Q$ is normal; then the eigenbasis is a polar basis, the two axes are parallel, and the word collapses to a single exponential. Verified: for a normal element both commutators vanish at $4.5\times10^{-16}$; for the non-normal example they are $1.7$ and $1.0$ in Euclidean norm.
 
-**The non-normal gap.** The spectrum determines $\{r,\theta_{\mathrm{pha}},U_t\}$ and stops. The rapidity, the angle and the axes are three further unknowns for one complex equation, and the worked example exhibits two different words with the same spectrum.
+**The non-normal gap.** The spectrum determines $\{\varrho,\theta_{\mathrm{pha}},U_t\}$ and stops. The rapidity, the angle and the axes are three further unknowns for one complex equation, and the worked example exhibits two different words with the same spectrum.
 
 **The rigid sector.** On $\Sigma_{10}$ the normal form is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, the unit factor is $\varepsilon(e_t+\vec\Upsilon)$, the angles satisfy $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, the axes are orthogonal on the Jordan part, and the closed form reduces the four parameters to one complex number, one angle and a frame.
 
-**The three pairings.** Quaternion: $\tilde Q=\tilde q\exp(i\tilde\Theta)$ with $\tilde q=r\tilde u_{\mathrm r}$ a real quaternion. Hamilton: $\tilde Q=\Rho\exp(\vec U\Theta)$ with $\Rho$ central and $\vec U$ a root of $-e_t$. Cartan: $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$ Hermitian positive and $\tilde Q_0$ $*$-unitary.
+**The three pairings.** Quaternion: $\tilde Q=\tilde q\exp(i\tilde\Theta)$ with $\tilde q=\varrho\tilde u_{\mathrm r}$ a real quaternion. Hamilton: $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ central and $\vec U$ a root of $-e_t$. Cartan: $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$ Hermitian positive and $\tilde Q_0$ $*$-unitary.
 
 **The domains.** The Cartan pairing and the word exist on the whole complement of the null cone. Hamilton needs $B^{2}\neq0$ as well. The quaternion factorisation needs $N\neq0$ and its construction needs the real quaternion part of $\tilde Q$ invertible.
 
@@ -93,9 +93,9 @@ The first is the reduced product $\tilde Q\tilde Q^{\natural}$ and the second is
 
 **The sector of this entry is the union of two of the four.** On $\Sigma_{11}$ and $\Sigma_{10}$ the norm does not vanish, so the element is invertible and a modulus exists; the two sectors differ in whether the vector part is null. The other two sectors have $N=0$: the element is a zero divisor, there is no modulus, and no word exists. The entry's boundary is therefore the null cone, and the spectral cone $B^{2}=0$ is an internal wall.
 
-**Five descriptions of the regular sector.** $N\neq0$ with $B^{2}\neq0$ is equivalent to each of: the two eigenvalues $Q_t\pm iB$ distinct and nonzero; the minimal polynomial $X^{2}-2Q_tX+N$ squarefree with nonzero constant term; the element an invertible element with two spectral points; and, with $\tilde U=\tilde Q/\Rho$, the scalar part of $\tilde U$ not equal to $\pm1$. The last is the one that separates the two sectors most clearly: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of invertibles.
+**Five descriptions of the regular sector.** $N\neq0$ with $B^{2}\neq0$ is equivalent to each of: the two eigenvalues $Q_t\pm iB$ distinct and nonzero; the minimal polynomial $X^{2}-2Q_tX+N$ squarefree with nonzero constant term; the element an invertible element with two spectral points; and, with $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, the scalar part of $\tilde U$ not equal to $\pm1$. The last is the one that separates the two sectors most clearly: they are the two sides of the pair of hyperplanes $\operatorname{Sc}\tilde U=\pm1$ in the group of invertibles.
 
-**The parameter count is the chart's dimension.** The data are $\ln r$, $\theta_{\mathrm{pha}}$, the rapidity with a point of $S^{2}$, and the angle with a point of $S^{2}$, which is $1+1+3+3=8$, the real dimension of the algebra. The word is therefore a coordinate system on the group of invertibles and not a constraint on the element.
+**The parameter count is the chart's dimension.** The data are $\ln \varrho$, $\theta_{\mathrm{pha}}$, the rapidity with a point of $S^{2}$, and the angle with a point of $S^{2}$, which is $1+1+3+3=8$, the real dimension of the algebra. The word is therefore a coordinate system on the group of invertibles and not a constraint on the element.
 
 ### The Word
 
@@ -117,7 +117,7 @@ The rotor has no $i$ in front, so its exponent squares negative and the exponent
 
 | wall | equation | stratum | what happens to the word | what happens to the eigenbasis |
 | --- | --- | --- | --- | --- |
-| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $r\to0$, $\theta_{\mathrm{rpd}}\to\infty$ | none exists |
+| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$ | none exists |
 | spectral cone | $B^{2}=0$ | $\Sigma_{10}\cup\Sigma_{00}$ | finite limit, the word of the limit | idempotents diverge |
 
 **The two walls fail in opposite directions.** Approaching the null cone along the standard family
@@ -148,9 +148,9 @@ so $L$ is $R\omega(a-ib)$ times a minimal idempotent when $a-ib\neq0$, and a nil
 
 ### The Two Eigenvalues and the Two Modes
 
-**The element has two spectral points and the flow has two rates.** $\lambda_\pm=Q_t\pm iB$, and the unit factor's eigenvalues are $\mu_\pm=\lambda_\pm/\Rho$ with $\mu_+\mu_-=1$. The exponents of the two modes are opposite, because the product of the eigenvalues is the norm and the norm of the unit factor is one: whatever one mode gains in modulus the other loses.
+**The element has two spectral points and the flow has two rates.** $\lambda_\pm=Q_t\pm iB$, and the unit factor's eigenvalues are $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$. The exponents of the two modes are opposite, because the product of the eigenvalues is the norm and the norm of the unit factor is one: whatever one mode gains in modulus the other loses.
 
-**A flow with two opposite rates is a boost, a rotation, or a mixture.** When $Q_t/\Rho$ is real the two eigenvalues are complex conjugates of unit modulus and the flow is a rotation; when $Q_t/\Rho$ is real and greater than one the eigenvalues are real reciprocals and the flow is a boost; in general the two eigenvalues have both a modulus ratio and an argument difference, and the flow is a rotation composed with a dilation. The three cases are the three types of the regular sector, and the type is fixed by a single complex number.
+**A flow with two opposite rates is a boost, a rotation, or a mixture.** When $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is real the two eigenvalues are complex conjugates of unit modulus and the flow is a rotation; when $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is real and greater than one the eigenvalues are real reciprocals and the flow is a boost; in general the two eigenvalues have both a modulus ratio and an argument difference, and the flow is a rotation composed with a dilation. The three cases are the three types of the regular sector, and the type is fixed by a single complex number.
 
 **The pair of exponents is the two-mode description.** One mode advances and one retreats, at rates that are equal in magnitude exactly when the element is normal. The difference of the rates is the rapidity and the sum of the argument changes is the rotation; the equality of the magnitudes is the Hermitian condition on the unit factor. This is why a single exponential can carry only a boost or only a rotation and not both: a single exponential has one axis, and two independent rates need two.
 
@@ -182,7 +182,7 @@ Its norm is $1$, its vector form is $\frac14$, and it is non-normal because $\ve
 
 **The gap is the whole point of the comparison.** The normal-case formula, which reads the rapidity from the ratio of the moduli, gives $\log(2.081019/0.480534)=1.465715$ and an angle of $1.350$. The true values are $1.763$ and $1.571$. Both words have the same spectrum, both are legitimate, and only one belongs to the element. The eigenbasis is not a polar basis and the spectrum does not know the difference.
 
-**The count of real data makes the gap structural.** The spectrum and the eigenprojectors together determine the element, and they are eight real data. The word is another eight. They share four — $r$, $\theta_{\mathrm{pha}}$, and the complex $U_t$ — and the remaining four are the same four only in the normal case, where the eigenprojectors are the polar axes. Off that set the two parametrizations are transverse, and the normal set is the intersection: $Q_t+\omega\vec u$ with two complex scalars and a unit vector, of real dimension $6$, not open in the sector.
+**The count of real data makes the gap structural.** The spectrum and the eigenprojectors together determine the element, and they are eight real data. The word is another eight. They share four — $\varrho$, $\theta_{\mathrm{pha}}$, and the complex $U_t$ — and the remaining four are the same four only in the normal case, where the eigenprojectors are the polar axes. Off that set the two parametrizations are transverse, and the normal set is the intersection: $Q_t+\omega\vec u$ with two complex scalars and a unit vector, of real dimension $6$, not open in the sector.
 
 ## The Degenerate Case: The Flow That Cannot Be Split
 
@@ -198,10 +198,10 @@ and the writing is unique because $Q_t$ is the scalar part. The unipotent factor
 
 **The sector splits into two strata.** The scalar line $\vec\Upsilon=0$ is the set of nonzero complex scalars, closed in the sector and of measure zero. The Jordan part $\vec\Upsilon\neq0$ is open and dense, with minimal polynomial $(X-Q_t)^{2}$ and geometric multiplicity one. The two strata are the two possible Jordan forms of an element with a single eigenvalue.
 
-**The unit factor is $\pm$unipotent.** With $\Rho=\pm Q_t$ the principal square root,
+**The unit factor is $\pm$unipotent.** With $\varrho\,e^{i\theta_{\mathrm{pha}}}=\pm Q_t$ the principal square root,
 
 $$
-\tilde U=\tilde Q/\Rho=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),\qquad \varepsilon=Q_t/\Rho=\pm1,
+\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varepsilon\bigl(e_t+\vec\Upsilon\bigr),\qquad \varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1,
 $$
 
 so the unit factor is unipotent up to a sign and the sign is the only trace of the scalar part that survives in it. Its scalar part is exactly $\varepsilon$.
@@ -266,27 +266,27 @@ and the exponential inverts it: $\exp(Q_t(e_t+\vec\Upsilon))=e^{Q_t}(e_t+Q_t\vec
 
 | pairing | first factor | second factor | norm of the first | norm of the second |
 | --- | --- | --- | --- | --- |
-| Hamilton | $\Rho=r e^{i\theta_{\mathrm{pha}}}$, a complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\Rho^{2}$ | $e_t$ |
-| quaternion | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion | $\exp(i\tilde\Theta)=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $r^{2}$ | $e^{2i\theta_{\mathrm{pha}}}$ |
-| Cartan | $\tilde Q_H=r\tilde U_{\mathrm b}$, Hermitian positive | $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, $*$-unitary | $r^{2}$ | $e^{2i\theta_{\mathrm{pha}}}$ |
+| Hamilton | $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$, a complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | $e_t$ |
+| quaternion | $\tilde q=\varrho\tilde u_{\mathrm r}$, a real quaternion | $\exp(i\tilde\Theta)=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}$ | $e^{2i\theta_{\mathrm{pha}}}$ |
+| Cartan | $\tilde Q_H=\varrho\tilde U_{\mathrm b}$, Hermitian positive | $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, $*$-unitary | $\varrho^{2}$ | $e^{2i\theta_{\mathrm{pha}}}$ |
 
-The three rows split the same norm $\Rho^{2}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ in three ways. The Hamilton row puts the whole norm in a central first factor and leaves a unit second factor. The other two put the scale in the first factor and the phase in the second, and differ in the kind of the first factor.
+The three rows split the same norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ in three ways. The Hamilton row puts the whole norm in a central first factor and leaves a unit second factor. The other two put the scale in the first factor and the phase in the second, and differ in the kind of the first factor.
 
 **The first factor's kind is the pairing's contribution.** A complex scalar is invariant under every conjugation; a real quaternion is a spatial frame; a Hermitian positive element is an amplitude. The three pairings are therefore three answers to the question *what of an element survives a motion of the algebra*, and the answers differ because the motions differ.
 
-**The three first factors are three readings of one element and not three summands of it.** Their real dimensions are $4$, $2$ and $4$, which add to $10$ against the algebra's $8$, and the redundancy is exactly the scale $r$, which all three carry. The three identities $\tilde Q=\tilde q\exp(i\tilde\Theta)=\Rho\exp(\vec U\Theta)=\tilde Q_H\tilde Q_0$ are each the whole element written three times, so no statement of the form $\tilde Q=\tilde q+\Rho+\tilde Q_H$ exists and no conservation law attaches to a factor.
+**The three first factors are three readings of one element and not three summands of it.** Their real dimensions are $4$, $2$ and $4$, which add to $10$ against the algebra's $8$, and the redundancy is exactly the scale $\varrho$, which all three carry. The three identities $\tilde Q=\tilde q\exp(i\tilde\Theta)=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)=\tilde Q_H\tilde Q_0$ are each the whole element written three times, so no statement of the form $\tilde Q=\tilde q+\varrho\,e^{i\theta_{\mathrm{pha}}}+\tilde Q_H$ exists and no conservation law attaches to a factor.
 
 ### The Quaternion Pairing
 
 **The scale joins the rotor and the phase joins the boost.**
 
 $$
-\tilde Q=\tilde q\exp(i\tilde\Theta),\qquad \tilde q=r\tilde u_{\mathrm r},\qquad \exp(i\tilde\Theta)=e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde Q=\tilde q\exp(i\tilde\Theta),\qquad \tilde q=\varrho\tilde u_{\mathrm r},\qquad \exp(i\tilde\Theta)=e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
 The rotor is moved to the left, past the central phase, next to the scale; the boost is conjugated by the rotor so that the two non-central factors can stand together on the right as one exponential of a real quaternion. The modulus is an ordinary quaternion in its polar form and the exponent has scalar part $\theta_{\mathrm{pha}}$ and pure part $\tfrac12\theta_{\mathrm{rpd}}\vec u_{\mathrm b}'$ with the boost axis rotated by the rotor.
 
-**Verified.** On four random elements of $\Sigma_{11}$ the product $\tilde q\exp(i\tilde\Theta)$ reproduces $\tilde Q$ to $1.8\times10^{-15}$, the modulus is a real quaternion to $3\times10^{-16}$ in its imaginary part, and $N(\tilde q)=r^{2}$ to $2\times10^{-15}$.
+**Verified.** On four random elements of $\Sigma_{11}$ the product $\tilde q\exp(i\tilde\Theta)$ reproduces $\tilde Q$ to $1.8\times10^{-15}$, the modulus is a real quaternion to $3\times10^{-16}$ in its imaginary part, and $N(\tilde q)=\varrho^{2}$ to $2\times10^{-15}$.
 
 **The pairing is partial in its construction only.** The factorisation inherits the word and exists wherever the word does. The construction, which reads $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ from the real and imaginary quaternion parts, needs $\tilde q_r$ invertible, and $\tilde q_r$ is the real part of the *element*, not of the modulus. The witness is $i\vec e_x+i\vec e_y$: its norm is $-2$, so the factorisation exists, and its real part is $0$, so the construction does not.
 
@@ -295,7 +295,7 @@ The rotor is moved to the left, past the central phase, next to the scale; the b
 **The scale joins the phase and the boost joins the rotor.**
 
 $$
-\tilde Q=\Rho\exp(\vec U\Theta),\qquad \Rho=\sqrt N,\qquad \vec U=\vec Q/B,\qquad \vec U^{2}=-e_t,\qquad \cos\Theta=Q_t/\Rho,\quad \sin\Theta=B/\Rho .
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta),\qquad \varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N,\qquad \vec U=\vec Q/B,\qquad \vec U^{2}=-e_t,\qquad \cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}}),\quad \sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}}) .
 $$
 
 This is the representation of the classical biquaternion literature, and its axis is a root of $-e_t$; the pure root of $+1$ that the kernel of the Fourier section uses is $\vec Z=-i\vec U$, and the two are the same axis read at two squares. The angle is complex, and its real part is half the rotation while its imaginary part is half the rapidity only when the two axes are aligned.
@@ -309,10 +309,10 @@ This is the representation of the classical biquaternion literature, and its axi
 **The scale joins the boost and the phase joins the rotor.**
 
 $$
-\tilde Q=\tilde Q_H\tilde Q_0,\qquad \tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}=r\tilde U_{\mathrm b},\qquad \tilde Q_0=\tilde Q_H^{-1}\tilde Q=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}.
+\tilde Q=\tilde Q_H\tilde Q_0,\qquad \tilde Q_H=\sqrt{\tilde Q\tilde Q^{*}}=\varrho\tilde U_{\mathrm b},\qquad \tilde Q_0=\tilde Q_H^{-1}\tilde Q=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}.
 $$
 
-The first factor is Hermitian and positive, the second is $*$-unitary, and the two exponents lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra: $\ln\tilde Q_H=\ln r\,e_t+i\tfrac12\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ in the Hermitian sector, $\ln\tilde Q_0=i\theta_{\mathrm{pha}}e_t+\tfrac12\theta_{\mathrm{axr}}\vec u_{\mathrm r}$ in the anti-Hermitian one.
+The first factor is Hermitian and positive, the second is $*$-unitary, and the two exponents lie in the two summands of the Cartan decomposition of the algebra as a real Lie algebra: $\ln\tilde Q_H=\ln \varrho\,e_t+i\tfrac12\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ in the Hermitian sector, $\ln\tilde Q_0=i\theta_{\mathrm{pha}}e_t+\tfrac12\theta_{\mathrm{axr}}\vec u_{\mathrm r}$ in the anti-Hermitian one.
 
 **Verified.** On random elements $\tilde Q_H$ is Hermitian to $0$, $\tilde Q_H^{2}=\tilde Q\tilde Q^{*}$ to $8.9\times10^{-16}$, $\tilde Q_0\tilde Q_0^{*}=e_t$ to $6.6\times10^{-16}$ and the product reproduces $\tilde Q$ to $4.0\times10^{-16}$.
 
@@ -401,7 +401,7 @@ Three cases exhaust the word. If $A^{*}=A$ the two slots carry the same exponent
 
 | factor | exponent | kind | one-slot output | two-slot output |
 | --- | --- | --- | --- | --- |
-| scale $r$ | $\ln r$ | real scalar | $\ln r$ | $2\ln r$, a dilation $r^{2}$ |
+| scale $\varrho$ | $\ln \varrho$ | real scalar | $\ln \varrho$ | $2\ln \varrho$, a dilation $\varrho^{2}$ |
 | phase $e^{i\theta_{\mathrm{pha}}}$ | $i\theta_{\mathrm{pha}}$ | imaginary scalar | $\theta_{\mathrm{pha}}$ | $0$ |
 | boost $\tilde U_{\mathrm b}$ | $i\tfrac12\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ | imaginary vector | $\tfrac12\theta_{\mathrm{rpd}}$ | $\theta_{\mathrm{rpd}}$, a rapidity |
 | rotor $\tilde u_{\mathrm r}$ | $\tfrac12\theta_{\mathrm{axr}}\vec u_{\mathrm r}$ | real vector | $\tfrac12\theta_{\mathrm{axr}}$ | $\theta_{\mathrm{axr}}$, a rotation |
@@ -452,7 +452,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ### III.3.a — The Word Is a Flow Split into Rate and Frame
 
-**The object.** $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the three bracketings of its four factors.
+**The object.** $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the three bracketings of its four factors.
 
 **The warrant.** The four factors are unique off the null cone, the parameter count is the real dimension of the group, and the three bracketings exhaust the ways of pairing four ordered factors.
 
@@ -462,7 +462,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ### III.3.b — The Two Modes Are the Two Directions of the Same Flow
 
-**The object.** $\lambda_\pm=Q_t\pm iB$ and the exponents $\mu_\pm=\lambda_\pm/\Rho$ with $\mu_+\mu_-=1$.
+**The object.** $\lambda_\pm=Q_t\pm iB$ and the exponents $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ with $\mu_+\mu_-=1$.
 
 **The warrant.** The two eigenvalues are distinct on $\Sigma_{11}$, their product is the norm, and the unit factor's eigenvalues are their ratios to the modulus, so the two modes are reciprocal.
 
@@ -472,9 +472,9 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ### III.3.c — The Mass Is the Modulus, and the Modulus Is the Only Invariant
 
-**The object.** $\Rho=\sqrt N=r e^{i\theta_{\mathrm{pha}}}$ in the Hamilton pairing.
+**The object.** $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$ in the Hamilton pairing.
 
-**The warrant.** $\Rho$ is central, so it commutes with every element and is untouched by a conjugation; the quaternion and Cartan first factors are not central and do change under conjugation; and $\lambda_+\lambda_-=\Rho^{2}=N$.
+**The warrant.** $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, so it commutes with every element and is untouched by a conjugation; the quaternion and Cartan first factors are not central and do change under conjugation; and $\lambda_+\lambda_-=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$.
 
 **The reading.** The pairing that isolates the invariant is the one whose first factor is central, and it is the only one. For a four-momentum the modulus is the mass: the product of the two light-cone combinations, the one number that a change of frame cannot move. The energy is not that number — it is a component, it is the trace, and the trace is frame-dependent. The phase of the modulus carries the causal character when the norm is real: $0$ for a spacelike element, $\pi/2$ for a timelike one, undefined for a null one; and $\tfrac12\arg N$ in general. *The Hamilton Pairing: Mass as Modulus and the Complex Angle* carries the reading and its boundaries, and *The N Norm: Mass, Angle and the Cone* supplies the norm's own dictionary.
 
@@ -492,9 +492,9 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ### III.3.e — The Quaternion Modulus Is the Spatial Frame
 
-**The object.** $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion, and $\exp(i\tilde\Theta)$ with a real quaternion exponent.
+**The object.** $\tilde q=\varrho\tilde u_{\mathrm r}$, a real quaternion, and $\exp(i\tilde\Theta)$ with a real quaternion exponent.
 
-**The warrant.** The rotor is a real quaternion of norm one, $r$ is real and positive, so the first factor lies in the real quaternion algebra, which is the algebra of spatial rotations; and the boost is conjugated by the rotor into the exponent.
+**The warrant.** The rotor is a real quaternion of norm one, $\varrho$ is real and positive, so the first factor lies in the real quaternion algebra, which is the algebra of spatial rotations; and the boost is conjugated by the rotor into the exponent.
 
 **The reading.** The first factor is the frame: a scale and an orientation, with no phase and no boost. The second factor carries the phase and the boost, with the boost axis expressed in the rotated frame. The pairing is therefore the one that answers *in which frame is this element described* before answering anything else, and it is the natural pairing for a polarization or a triad. It is also the only pairing whose modulus is an ordinary quaternion, which is why it is the one that reduces, for a real quaternion, to the classical polar form.
 
@@ -546,7 +546,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ## Summary
 
-**The word is a coordinate chart on the group of invertibles.** $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with eight real parameters, unique up to the directions where an axis vanishes, verified to $1.5\times10^{-16}$ on random elements of the regular sector.
+**The word is a coordinate chart on the group of invertibles.** $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with eight real parameters, unique up to the directions where an axis vanishes, verified to $1.5\times10^{-16}$ on random elements of the regular sector.
 
 **Two sectors, two shapes.** On $\Sigma_{11}$ the element has two distinct eigenvalues and a two-mode flow with reciprocal exponents. On $\Sigma_{10}$ it is a scalar times a unipotent, the eigenvalues coincide, the angles are tied by $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, the axes are orthogonal, and the closed form reduces four parameters to one complex number, one angle and a frame.
 
@@ -575,8 +575,8 @@ The second row is the truncation, and it is the reason the degenerate sector has
 | the quaternionic norm | $N$ | $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, complex and multiplicative |
 | the vector form | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | the Euclidean norm | $\lVert\tilde Q\rVert^{2}$ | $\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ |
-| the modulus | $\Rho$ | $\sqrt N=r e^{i\theta_{\mathrm{pha}}}$, $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
-| the unit factor | $\tilde U$ | $\tilde Q/\Rho$ |
+| the modulus | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\sqrt N=\varrho e^{i\theta_{\mathrm{pha}}}$, $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
+| the unit factor | $\tilde U$ | $\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | the boost | $\tilde U_{\mathrm b}$ | $\exp(i\tfrac12\theta_{\mathrm{rpd}}\vec u_{\mathrm b})$, Hermitian, positive |
 | the rotor | $\tilde u_{\mathrm r}$ | $\exp(\tfrac12\theta_{\mathrm{axr}}\vec u_{\mathrm r})$, a real quaternion |
 | the rapidity | $\theta_{\mathrm{rpd}}$ | real, non-negative, with axis $\vec u_{\mathrm b}\in S^{2}$ |
@@ -585,10 +585,10 @@ The second row is the truncation, and it is the reason the degenerate sector has
 | the regular sector | $\Sigma_{11}$ | $N\neq0$ and $B^{2}\neq0$ |
 | the degenerate sector | $\Sigma_{10}$ | $N\neq0$ and $B^{2}=0$ |
 | the null vector | $\vec\Upsilon$ | $\vec Q/Q_t$ on $\Sigma_{10}$, with $\vec\Upsilon^{2}=0$ |
-| the sign | $\varepsilon$ | $Q_t/\Rho=\pm1$ on $\Sigma_{10}$ |
-| the quaternion modulus | $\tilde q$ | $r\tilde u_{\mathrm r}$, a real quaternion |
+| the sign | $\varepsilon$ | $Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ on $\Sigma_{10}$ |
+| the quaternion modulus | $\tilde q$ | $\varrho\tilde u_{\mathrm r}$, a real quaternion |
 | the Hamilton axis | $\vec U$ | $\vec Q/B$, a root of $-e_t$ |
-| the Hamilton angle | $\Theta$ | complex, with $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$ |
+| the Hamilton angle | $\Theta$ | complex, with $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | the amplitude | $\tilde Q_H$ | $\sqrt{\tilde Q\tilde Q^{*}}$, Hermitian positive |
 | the frame | $\tilde Q_0$ | $\tilde Q_H^{-1}\tilde Q$, $*$-unitary |
 | the one-sided operator | $L_{\tilde Q},R_{\tilde Q}$ | left and right multiplication, a representation |

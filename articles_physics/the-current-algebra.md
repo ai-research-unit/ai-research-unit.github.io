@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch.** The bilinears of the complete polar decomposition are the current, the spin and the quaternionic norm. The current is $\rho\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho\frac{\hbar}{2}i\hat s$ and it reads the scale and the rotor. The norm is $\Rho^{2}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
+**The word has four factors, the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch.** The bilinears of the complete polar decomposition are the current, the spin and the quaternionic norm. The current is $\rho\tilde V_{\Phi}$ and it reads the scale and the boost. The spin is $\rho\frac{\hbar}{2}i\hat s$ and it reads the scale and the rotor. The norm is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and it reads the scale and the phase. Each reads two of the four factors, none reads three, and between them they read all four exactly once except for the scale, which appears in all three.
 
 **The phase and the spin therefore never meet in one bilinear.** That sentence is the structural fact of this article. A current cannot carry spin information and a spin cannot carry phase information, not because the field is arranged that way but because the two factors are of types that no single quadratic product can reach at once. The algebra's own candidate for a current, $i\tilde\Xi\tilde\Xi^{*}$, does not repair this: it cancels the rotor and keeps the boost, so it is a second reading of the same two factors with the spatial part reversed.
 
@@ -12,11 +12,11 @@
 
 ## The Three Bilinears
 
-**The word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ real, the phase central, the boost Hermitian positive of unit natural norm and the rotor real unitary.** [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) states the word and its eight parameters; this article takes it and asks what a quadratic product of the field can see.
+**The word is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ real, the phase central, the boost Hermitian positive of unit natural norm and the rotor real unitary.** [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html) states the word and its eight parameters; this article takes it and asks what a quadratic product of the field can see.
 
 **A bilinear is a product of the element with a conjugate of itself.** There are two conjugations in use. The natural conjugation $\natural$ inverts an invertible element and leaves the central $i$ alone. The star conjugation $*$ is $\natural$ composed with coefficient conjugation, so it fixes a Hermitian factor, conjugates the central $i$ and inverts a real rotor. The two are the corpus's pair, and their difference is what makes two bilinears out of one product.
 
-*Proposition.* With the word as above, and with $\rho=r^{2}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$,
+*Proposition.* With the word as above, and with $\rho=\varrho^{2}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$,
 
 $$
 \tilde J_{\Phi}=\rho\tilde V_{\Phi},
@@ -30,7 +30,7 @@ $$
 \langle\tilde\Xi\rangle_{\natural}=\rho\,e^{2i\theta_{\mathrm{pha}}}.
 $$
 
-*Proof.* The rotor and the boost are invertible, so each cancels against its own inverse in the natural product, and the central part squares: $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$. The current is the density times the boost's inverse square by the polar article's proposition, and the spin is the density times the rotor's image of the declared axis, likewise. Both are quoted there and neither is re-derived here.
+*Proof.* The rotor and the boost are invertible, so each cancels against its own inverse in the natural product, and the central part squares: $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The current is the density times the boost's inverse square by the polar article's proposition, and the spin is the density times the rotor's image of the declared axis, likewise. Both are quoted there and neither is re-derived here.
 
 **The three displays are three different extractions of one product, and the difference is which factor survives.** In the norm the two frames cancel and the centre survives. In the current the rotor and the phase cancel and the boost survives. In the spin the boost and the phase cancel and the rotor survives. Each extraction kills exactly the two factors it does not read, and the killing is by a conjugation that inverts them.
 
@@ -38,7 +38,7 @@ $$
 
 **The current is invariant under the phase and under the rotor, and the invariance is exact.** Shifting $\theta_{\mathrm{pha}}$ by any angle multiplies the element by a central phase and leaves $\tilde J_{\Phi}$ unchanged, because the current is built from the density and the frame and neither contains a central factor. Replacing the rotor by any other rotor leaves it unchanged for the same reason.
 
-**Checked on a generic element.** At $r=1.3$, $\theta_{\mathrm{pha}}=0.4$, $\theta_{\mathrm{rpd}}=0.9$, $\vec u_{\mathrm b}=\vec e_x$, $\theta_{\mathrm{axr}}=1.2$, $\vec u_{\mathrm r}=\vec e_y$ and $c=1$, the current is $\tilde J_{\Phi}=2.42192\,i\,e_t+1.73481\,\vec e_x$. A shift of the phase by $0.77$ changes every component by $0$, and a change of the rotor angle by $0.5$ changes every component by $0$. The two zeros are exact and not small.
+**Checked on a generic element.** At $\varrho=1.3$, $\theta_{\mathrm{pha}}=0.4$, $\theta_{\mathrm{rpd}}=0.9$, $\vec u_{\mathrm b}=\vec e_x$, $\theta_{\mathrm{axr}}=1.2$, $\vec u_{\mathrm r}=\vec e_y$ and $c=1$, the current is $\tilde J_{\Phi}=2.42192\,i\,e_t+1.73481\,\vec e_x$. A shift of the phase by $0.77$ changes every component by $0$, and a change of the rotor angle by $0.5$ changes every component by $0$. The two zeros are exact and not small.
 
 **The current's own norm is fixed by the density alone.** From $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=i^{2}c^{2}\tilde U_{\Psi,\mathrm b}^{-2}\tilde U_{\Psi,\mathrm b}^{2}=-c^{2}$,
 
@@ -58,7 +58,7 @@ so the current is a timelike element of fixed square and the density is its modu
 
 ### The Norm Reads the Scale and the Phase
 
-**The norm is invariant under both frames and it is the only bilinear that sees the phase.** The boost and the rotor are invertible in natural norm one, so they cancel; what remains is $r^{2}e^{2i\theta_{\mathrm{pha}}}$.
+**The norm is invariant under both frames and it is the only bilinear that sees the phase.** The boost and the rotor are invertible in natural norm one, so they cancel; what remains is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$.
 
 **The phase enters doubled, and the range of the phase is a consequence.** The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$. Two consequences follow and both are used below: the modulus $\rho$ is unchanged by a shift of the phase through a half turn, and the norm's argument traverses a full turn while the phase traverses a half turn. The range $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ that the polar articles use is not a convention chosen for convenience: it is the range that makes the map from the phase to the norm's argument a bijection.
 
@@ -79,7 +79,7 @@ $$
 
 **The temporal slots agree and the spatial parts are opposite.** Comparing the two displays term by term, the temporal slot of $i\tilde\Xi\tilde\Xi^{*}$ is $i\rho\cosh\theta_{\mathrm{rpd}}$ and the temporal slot of $\tilde J_{\Phi}$ is $ic\gamma\rho$; they agree up to the speed $c$. The spatial slot of the first is $-\rho\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and of the second $+c\rho\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$; they are opposite.
 
-**Checked on an element with its boost along $\vec e_x$.** With $r=1.3$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0.89997$ and a trivial rotor, the display gives $i\tilde\Xi\tilde\Xi^{*}=2.42192\,i\,e_t-1.73481\,\vec e_x$ with vanishing $y$ and $z$ slots, and the current gives $2.42192\,i\,c\,e_t+1.73481\,c\,\vec e_x$ with the same two slots empty. The temporal entries are in the ratio $+1/c$ and the $x$ entries in the ratio $-1/c$; at $c=1$ the ratios are $+1$ and $-1$. The reversal is exact, and the agreement is in the slots where both objects are non-zero — a ratio taken in a slot where both vanish says nothing.
+**Checked on an element with its boost along $\vec e_x$.** With $\varrho=1.3$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0.89997$ and a trivial rotor, the display gives $i\tilde\Xi\tilde\Xi^{*}=2.42192\,i\,e_t-1.73481\,\vec e_x$ with vanishing $y$ and $z$ slots, and the current gives $2.42192\,i\,c\,e_t+1.73481\,c\,\vec e_x$ with the same two slots empty. The temporal entries are in the ratio $+1/c$ and the $x$ entries in the ratio $-1/c$; at $c=1$ the ratios are $+1$ and $-1$. The reversal is exact, and the agreement is in the slots where both objects are non-zero — a ratio taken in a slot where both vanish says nothing.
 
 **Why the sign reverses, in one line.** The star conjugation inverts the rotor and fixes the boost, so the bilinear carries the velocity twice and the spin not at all; the outer $i$ then reverses the spatial part, because a real spatial vector times $i$ is imaginary while the temporal slot is already imaginary.
 
@@ -113,7 +113,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 
 $$
 \tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi
-=\tfrac12\tilde\nabla_\Phi\ln r^{2}
+=\tfrac12\tilde\nabla_\Phi\ln \varrho^{2}
 +i\tilde\nabla_\Phi\theta_{\mathrm{pha}}
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\tilde\nabla_\Phi\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\tilde\nabla_\Phi\tilde u_{\mathrm r},
@@ -127,7 +127,7 @@ and the four terms are respectively real central, central imaginary, Hermitian a
 
 | bracket | type | zero when | supplied by |
 | --- | --- | --- | --- |
-| $\tfrac12\tilde\nabla_\Phi\ln r^{2}$ | real central | the density is constant | the norm's modulus |
+| $\tfrac12\tilde\nabla_\Phi\ln \varrho^{2}$ | real central | the density is constant | the norm's modulus |
 | $i\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | central imaginary | the phase is constant | the norm's argument |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\tilde\nabla_\Phi\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant | the current, by one derivative |
 | $\tilde u_{\mathrm r}^{-1}\tilde\nabla_\Phi\tilde u_{\mathrm r}$ | real vector | the rotor is constant | the spin, by one derivative |
@@ -168,8 +168,8 @@ The derivative of the word separates into four brackets of four types, and the b
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The element and its word |
-| $r>0$, $\rho=r^{2}$ | Amplitude and density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The element and its word |
+| $\varrho>0$, $\rho=\varrho^{2}$ | Amplitude and density |
 | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | Phase; the range that makes the norm's argument injective |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Rapidity, boost axis, Lorentz factor |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Rotor angle and axis |
@@ -178,7 +178,7 @@ The derivative of the word separates into four brackets of four types, and the b
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity |
 | $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$ | Spin element |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\tilde\nabla_\Phi$ | Algebra's derivative, $-ie_t\partial_{r'_{t}}+\nabla$ |
 
 ## Further Reading

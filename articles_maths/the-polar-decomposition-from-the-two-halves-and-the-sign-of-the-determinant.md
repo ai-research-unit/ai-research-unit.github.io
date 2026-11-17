@@ -20,7 +20,7 @@ with $Q\in\mathrm{O}(n)$ and $P\in\operatorname{Sym}_n^{>0}$.
 
 **The name comes from the scalar case.** For $n=1$ a nonzero real number is $a=(\pm1)|a|$, the product of a sign and a positive number. The polar decomposition is that identity with the sign replaced by an orthogonal matrix and the modulus by a positive definite one.
 
-**The complex analogue is the polar form of a number.** Over $\mathbb{C}$ the same theorem reads $z=\mathrm{e}^{\mathrm{i}\theta}r$ with $r>0$. Over $\mathbb{R}$ the unit circle is replaced by $\mathrm{O}(n)$, and the modulus by the cone; the whole content is that the replacement works in every dimension, and that the stretch is a function of $A^{\mathsf T}A$ alone, so it is forced by the matrix and not chosen.
+**The complex analogue is the polar form of a number.** Over $\mathbb{C}$ the same theorem reads $z=\mathrm{e}^{\mathrm{i}\theta}\varrho$ with $\varrho>0$. Over $\mathbb{R}$ the unit circle is replaced by $\mathrm{O}(n)$, and the modulus by the cone; the whole content is that the replacement works in every dimension, and that the stretch is a function of $A^{\mathsf T}A$ alone, so it is forced by the matrix and not chosen.
 
 ## Existence
 
@@ -104,7 +104,7 @@ the conjugate of $P$ by $Q$.
 
 ## The Singular Value Decomposition
 
-**Theorem.** Every $A\in M_n(\mathbb{R})$ of rank $r$ is $A=U\Sigma V^{\mathsf T}$ with $U,V\in\mathrm{O}(n)$ and $\Sigma$ diagonal with $r$ positive entries and $n-r$ zeros. If $A$ is invertible, $A=QP$ gives $U=QV$, $\Sigma$ the diagonal matrix of the eigenvalues of $P$, and $V$ the orthogonal matrix of its eigenvectors.
+**Theorem.** Every $A\in M_n(\mathbb{R})$ of rank $\varrho$ is $A=U\Sigma V^{\mathsf T}$ with $U,V\in\mathrm{O}(n)$ and $\Sigma$ diagonal with $\varrho$ positive entries and $n-\varrho$ zeros. If $A$ is invertible, $A=QP$ gives $U=QV$, $\Sigma$ the diagonal matrix of the eigenvalues of $P$, and $V$ the orthogonal matrix of its eigenvectors.
 
 *Proof.* Diagonalise the positive definite factor, $P=V\Sigma V^{\mathsf T}$ with $\Sigma=\operatorname{diag}(\sigma_1,\dots,\sigma_n)$ and $\sigma_i>0$. Then
 

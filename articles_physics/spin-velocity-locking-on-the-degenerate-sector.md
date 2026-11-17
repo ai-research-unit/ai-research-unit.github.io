@@ -33,7 +33,7 @@ so a field that fixes its spin angle has no freedom left in its rapidity. The ve
 
 | parameter | generic element | on $\Sigma_{10}$ |
 | --- | --- | --- |
-| scale $r$ | free | free |
+| scale $\varrho$ | free | free |
 | phase $\theta_{\mathrm{pha}}$ | free | free |
 | rapidity $\theta_{\mathrm{rpd}}$ | free | a function of $\theta_{\mathrm{axr}}$ |
 | boost axis $\vec u_{\mathrm b}$ | free unit vector | free unit vector |
@@ -52,12 +52,12 @@ so a field that fixes its spin angle has no freedom left in its rapidity. The ve
 *Lemma.* With $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ and the shorthand $c_b=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$, $s_b=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, $c_a=\cos\frac{\theta_{\mathrm{axr}}}{2}$, $s_a=\sin\frac{\theta_{\mathrm{axr}}}{2}$,
 
 $$
-\frac{B^{2}}{\Rho^{2}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
+\frac{B^{2}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
 \qquad
 \lvert\varepsilon\rvert^{2}=c_b^{2}c_a^{2}+\kappa^{2}s_b^{2}s_a^{2}.
 $$
 
-*Proof.* Write $\tilde\Xi=\Rho\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and multiply the two units out. With $\vec u_{\mathrm b}=\vec u$, $\vec u_{\mathrm r}=\vec v$ and $\vec w=\vec u\times\vec v$,
+*Proof.* Write $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and multiply the two units out. With $\vec u_{\mathrm b}=\vec u$, $\vec u_{\mathrm r}=\vec v$ and $\vec w=\vec u\times\vec v$,
 
 $$
 \tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}
@@ -157,7 +157,7 @@ $$
 
 **The failure is a divergence and not a jump.** As the spin angle approaches $\pi$, the rapidity grows without bound and the velocity tends to $c$. Checked directly on $B^{2}$: at $\theta_{\mathrm{axr}}=\pi$ and $\vec u_{\mathrm r}\perp\vec u_{\mathrm b}$, the value is $+1$ at $\theta_{\mathrm{rpd}}=2$, $+1$ at $8$ and $+1$ at $20$ â€” the element moves further and further from the sector as the rapidity grows, and $B^{2}$ stays at the value $1-c_b^{2}c_a^{2}=1$ that the theorem predicts.
 
-**The limit is null in the motion and not in the element.** The norm of the element is $\Rho^{2}$ for every rapidity, so the element stays an invertible element at the antipode's approach: it is the *velocity* that becomes null, not the field. That distinction matters for the reading, because it says that the sector's far end is a massless limit of the motion at a fixed element and not a massless element.
+**The limit is null in the motion and not in the element.** The norm of the element is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ for every rapidity, so the element stays an invertible element at the antipode's approach: it is the *velocity* that becomes null, not the field. That distinction matters for the reading, because it says that the sector's far end is a massless limit of the motion at a fixed element and not a massless element.
 
 **What sits at the far end is a transverse spin at the speed of light.** At $\theta_{\mathrm{axr}}=\pi$ the spin direction is $-\vec e_z$, orthogonal to the motion, and the helicity is zero. A massless particle of the standard theory has helicity $\pm1$; this limit has helicity zero, so the sector's far end is not the standard massless state. It is the chart's degeneracy, and the article records it as such.
 
@@ -184,7 +184,7 @@ with the sign the branch's, so the velocity's transport is tied to the spin's â€
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The closed form of $B^{2}/\Rho^{2}$, checked on six configurations. The theorem that $\Sigma_{10}$ is exactly the orthogonal locus with $c_b^{2}c_a^{2}=1$, proved from that form. The dimension count of six. The kinematic table, checked against the word at three spin angles. The absence of a finite rapidity at the antipode, checked at three rapidities. The helicity formula in the aligned configuration, checked at three angles.
+**Established.** The closed form of $B^{2}/(\varrho^{2}e^{2i\theta_{\mathrm{pha}}})$, checked on six configurations. The theorem that $\Sigma_{10}$ is exactly the orthogonal locus with $c_b^{2}c_a^{2}=1$, proved from that form. The dimension count of six. The kinematic table, checked against the word at three spin angles. The absence of a finite rapidity at the antipode, checked at three rapidities. The helicity formula in the aligned configuration, checked at three angles.
 
 **Interpretation.** That the sector is a fluid with one internal angle. That the fully helical state's speed of $0.9428c$ is a property of the sector rather than an artefact of the coordinates. It is not a prediction, because no solution of the Dirac equation is known to lie on the sector. That the antipode's null velocity is the chart's degeneracy rather than a massless particle. Each is argued here and none is proved.
 
@@ -209,8 +209,8 @@ The lock is a constraint on the state and not a dynamics: it ties the velocity's
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the boost and rotor axes |
 | $c_b,s_b$ | $\cosh$, $\sinh$ of half the rapidity |
 | $c_a,s_a$ | $\cos$, $\sin$ of half the rotor angle |
-| $\varepsilon=\Xi_t/\Rho$ | Scalar part relative to the modulus |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
+| $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Scalar part relative to the modulus |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 

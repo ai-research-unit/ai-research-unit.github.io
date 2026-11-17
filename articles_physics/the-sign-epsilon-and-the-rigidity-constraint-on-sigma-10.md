@@ -9,7 +9,7 @@
 **The bridge between the two is one closed form.** The square of the element's vector part, divided by the square of the modulus, is
 
 $$
-\frac{B^{2}}{\Rho^{2}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
+\frac{B^{2}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
 \qquad
 \kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r},
 $$
@@ -22,12 +22,12 @@ so $\lvert\varepsilon\rvert=1$ kills the real part and leaves the imaginary part
 
 ### The Number
 
-**The sign is the scalar part of the element divided by the modulus of its norm.** With $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ and $\Rho$ the principal square root of the quaternionic norm,
+**The sign is the scalar part of the element divided by the modulus of its norm.** With $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal square root of the quaternionic norm,
 
 $$
-\varepsilon:=\frac{\Xi_t}{\Rho},
+\varepsilon:=\frac{\Xi_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}},
 \qquad
-N(\tilde\Xi)=\Rho^{2}=r^{2}e^{2i\theta_{\mathrm{pha}}}.
+N(\tilde\Xi)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}.
 $$
 
 **It is computed from the complete polar decomposition and it is not a parameter of the word.** The word has eight parameters; $\varepsilon$ is a function of four of them, the rapidity, the rotor's angle and the two axes' mutual orientation. So a reader who met $\varepsilon$ in the spinor literature as a branch index chosen by a representation should note the difference: here nothing is chosen.
@@ -68,7 +68,7 @@ $$
 *Proposition.* With $\vec Q$ the vector part of $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and $c_b,s_b,c_a,s_a$ the half-angle sines and cosines,
 
 $$
-\frac{B^{2}}{\Rho^{2}}
+\frac{B^{2}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}
 =1-\lvert\varepsilon\rvert^{2}+2i\kappa\,c_bc_a\,s_bs_a,
 \qquad
 \lvert\varepsilon\rvert^{2}=c_b^{2}c_a^{2}+\kappa^{2}s_b^{2}s_a^{2}.
@@ -91,7 +91,7 @@ with $\lvert\vec u_{\mathrm b}\times\vec u_{\mathrm r}\rvert^{2}=1-\kappa^{2}$. 
 
 **The sector is the locus $\varepsilon=\pm1$.**
 
-*Theorem.* For a word with $r>0$, $\tilde\Xi$ lies on $\Sigma_{10}$ if and only if $\kappa=0$ and $c_b^{2}c_a^{2}=1$.
+*Theorem.* For a word with $\varrho>0$, $\tilde\Xi$ lies on $\Sigma_{10}$ if and only if $\kappa=0$ and $c_b^{2}c_a^{2}=1$.
 
 *Proof.* $B^{2}=0$ needs the real and imaginary parts of the proposition's display to vanish separately.
 
@@ -121,7 +121,7 @@ and the sector's name and the sign's two values are the same object.
 $$
 \lvert\varepsilon\rvert=1.000000,
 \qquad
-\frac{B^{2}}{\Rho^{2}}=0.468467+0.847037i,
+\frac{B^{2}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=0.468467+0.847037i,
 $$
 
 so the element is on the level set and off the sector by the whole imaginary part. The check is the article's, recomputed from the word, and it agrees with the polar article's $0.468+0.847i$ to the digits printed there.
@@ -187,7 +187,7 @@ so for every rotor angle there are at most two rapidities and for every rapidity
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That $\varepsilon$ is the scalar part over the modulus and is a function of four parameters, displayed as two cosines and a dot product. That it is complex off the orthogonal locus, real on it, and zero at $\theta_{\mathrm{axr}}=\pi$ with $\kappa=0$, checked at three rapidities. That $B^{2}/\Rho^{2}=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, checked at six random configurations. That the sector is exactly the locus $\varepsilon=\pm1$, proved from that display. That $\lvert\varepsilon\rvert=1$ is a seven-dimensional level set containing the six-dimensional sector, with the numerical counterexample $0.468467+0.847037i$. That the rigidity constraint is the sector's defining identity and has two branches.
+**Established.** That $\varepsilon$ is the scalar part over the modulus and is a function of four parameters, displayed as two cosines and a dot product. That it is complex off the orthogonal locus, real on it, and zero at $\theta_{\mathrm{axr}}=\pi$ with $\kappa=0$, checked at three rapidities. That $B^{2}/(\varrho^{2}e^{2i\theta_{\mathrm{pha}}})=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, checked at six random configurations. That the sector is exactly the locus $\varepsilon=\pm1$, proved from that display. That $\lvert\varepsilon\rvert=1$ is a seven-dimensional level set containing the six-dimensional sector, with the numerical counterexample $0.468467+0.847037i$. That the rigidity constraint is the sector's defining identity and has two branches.
 
 **Interpretation.** That the defect shows up as a tie between the frame angles. That the two sheets are not related by a symmetry. That $\varepsilon$'s inheritance from the spinor literature is a name and not a content. Each is argued here and none is proved.
 
@@ -197,7 +197,7 @@ so for every rotor angle there are at most two rapidities and for every rapidity
 
 The sign $\varepsilon$ is the element's scalar part divided by the modulus of its norm, a complex coordinate of the word and not a label. It is real on the orthogonal locus, complex off it, and it vanishes at a rotor angle of a half turn with orthogonal axes.
 
-The square of the vector part obeys $B^{2}/\Rho^{2}=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, so the modulus of the sign controls the real part and the frames' orientation controls the imaginary part.
+The square of the vector part obeys $B^{2}/(\varrho^{2}e^{2i\theta_{\mathrm{pha}}})=1-\lvert\varepsilon\rvert^{2}+2i\kappa c_bc_as_bs_a$, so the modulus of the sign controls the real part and the frames' orientation controls the imaginary part.
 
 The sector $\Sigma_{10}$ is exactly the locus $\varepsilon=\pm1$, equivalently the orthogonal locus with $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\pm1$. The surface $\lvert\varepsilon\rvert=1$ is strictly larger: it is seven-dimensional against the sector's six, and on it the sign's phase is free while the sector is where that phase is a multiple of $\pi$.
 
@@ -207,12 +207,12 @@ The rigidity constraint is therefore the sector's definition and not a consequen
 
 | Symbol | Meaning |
 |---|---|
-| $\varepsilon=\Xi_t/\Rho$ | Sign: scalar part over the modulus of the norm |
+| $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign: scalar part over the modulus of the norm |
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the boost and rotor axes |
 | $c_b,s_b$ | Half-angle hyperbolic cosine and sine of the rapidity |
 | $c_a,s_a$ | Half-angle cosine and sine of the rotor angle |
 | $B^{2}=\vec Q\cdot\vec Q$ | Square of the vector part |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm, $\Rho^{2}=N$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ |
 | $\Sigma_{10}$ | $N\neq0$, $B^{2}=0$: the defective unit |
 | $\lvert\varepsilon\rvert=1$ | Seven-dimensional level set containing the sector |
 

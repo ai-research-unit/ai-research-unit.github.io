@@ -24,7 +24,7 @@ Every factor of every column is the exponential of an element of its algebra, an
 
 $$
 \boxed{\;
-\tilde{Q} = \exp(\ln r)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)
+\tilde{Q} = \exp(\ln \varrho)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)
 \;},
 $$
 
@@ -53,7 +53,7 @@ The following table writes the word of each algebra as a product of exponentials
 | $\mathbb{C}_{\mathrm{dln}}$ | $Q = \exp(\ln\lvert q\rvert)\,\bigl(\pm\exp(\varepsilon s)\bigr)$ | the nilpotent root $\varepsilon$, parabolic; the sign is the component of the group of invertibles |
 | $\mathbb{H}$ | $\tilde q = \exp(\ln\sqrt{N})\,\exp\bigl(\mu\tfrac{\theta_{\mathrm{axr}}}{2}\bigr)$ | the cosine root $\mu$, a unit pure quaternion, trigonometric |
 | $\mathbb{H}_{\mathrm{spl}}$ | $\tilde q = \exp(\ln\sqrt{\lvert N\rvert})\,\exp(\sigma)\cdot\bigl(\exp(\tfrac{\theta_{\mathrm{axr}}}{2} \vec e_x)\bigr)\cdot(\text{optional } \vec e_y)$ | the hyperbolic exponent $\sigma\in\operatorname{span}\{\vec e_y,\vec e_z\}$ and the cosine root $\vec e_x$; the reflection $\vec e_y$ is discrete |
-| $\mathbb{B}$ | $\tilde Q = \exp(\ln r)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
+| $\mathbb{B}$ | $\tilde Q = \exp(\ln \varrho)\,\exp(i\theta_{\mathrm{pha}})\,\exp\bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\bigr)\,\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ | the hyperbolic roots $e_t$ and $i\vec u_{\mathrm b}$, the cosine roots $i$ and $\vec u_{\mathrm r}$ |
 | $\mathbb{B}_{\mathrm{spl}}$ | $\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\tfrac{\theta_+}{2}\mu_+\tilde\Pi_1+\tfrac{\theta_-}{2}\mu_-\tilde\Pi_2\bigr)$ | the hyperbolic roots $e_t$ and $j$, the cosine roots $\mu_+\tilde\Pi_1$ and $\mu_-\tilde\Pi_2$ |
 
 The table is the exponential reading of the two parametrisation tables. Three features of it are worth separating.

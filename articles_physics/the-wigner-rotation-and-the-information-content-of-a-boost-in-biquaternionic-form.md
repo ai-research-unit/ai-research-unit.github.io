@@ -100,9 +100,9 @@ Each boost is a Hamilton word of a degenerate kind. On the Hermitian axis $\vec 
 
 $$
 \tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp\!\Big(\frac{\theta_{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\Big)
-=\Rho\,e^{\vec U\Theta},
+=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\vec U\Theta},
 \qquad
-\Rho=e_t,\quad \Theta=\frac{\theta_{\mathrm{rpd}}}{2}\in\mathbb{R},
+\varrho\,e^{i\theta_{\mathrm{pha}}}=e_t,\quad \Theta=\frac{\theta_{\mathrm{rpd}}}{2}\in\mathbb{R},
 $$
 
 and on the real axis $\vec u_{\mathrm b}$ the same element reads $\Theta=i\theta_{\mathrm{rpd}}/2$. The angle is real on the Hermitian axis and imaginary on the real one; the element is the same, and the pair $(\vec U,\Theta)$ is not. The invariant content is the exponent $i\theta_{\mathrm{rpd}}\vec u_{\mathrm b}/2$.
@@ -112,7 +112,7 @@ $$
 \exp\Big(\frac{\theta_{\mathrm{rpd}}}{2}i\vec u_{\mathrm b}\Big)=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,e_t+\sinh\frac{\theta_{\mathrm{rpd}}}{2}\,\vec U,
 $$
 
-a real scalar part that grows with $\theta_{\mathrm{rpd}}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\Rho e^{\vec U\Theta}$ with $\Rho=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\theta_{\mathrm{rpd}}/2)$.
+a real scalar part that grows with $\theta_{\mathrm{rpd}}$ and a real bivector part. The scalar part is not one, so the factor is not a phase of unit modulus; calling it $\varrho\,e^{i\theta_{\mathrm{pha}}} e^{\vec U\Theta}$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}=e_t$ names the scale of the axis and hides the growth in the scalar coordinate, which is $\cosh(\theta_{\mathrm{rpd}}/2)$.
 
 **The defect.** The product of two boosts is not the exponential of the sum of their exponents, and the first correction is a compact rotation. With $\tilde{H}_{\Psi,k}=\frac{\theta_{\mathrm{rpd},k}}{2}i\vec u_k$,
 
@@ -315,7 +315,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 | $SL(2,\mathbb{C}) = SU(2)\cdot\exp(p)$ | Cartan decomposition |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b},\tilde{V}_{\Phi})$ | Wigner rotation, $\in SU(2)$ |
 | $\theta_{\mathrm{wgn}}$, $\vec u_{\mathrm r}$ | Wigner angle and axis, $\vec u_{\mathrm r}\perp\vec u_{\mathrm b},\vec u_p$ |
-| $\Rho=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\theta_{\mathrm{rpd}}/2$ | Hamilton data of a boost on the Hermitian axis |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}=e_t$, $\vec U=i\vec u_{\mathrm b}$, $\Theta=\theta_{\mathrm{rpd}}/2$ | Hamilton data of a boost on the Hermitian axis |
 | $\frac12[\tilde{H}_{\Psi,2},\tilde{H}_{\Psi,1}]=\frac{\theta_{\mathrm{rpd},1}\theta_{\mathrm{rpd},2}}{4}\vec u_1\times\vec u_2$ | First BCH defect of two boosts; the leading Wigner rotation generator |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2}\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,2},\tilde U_{\Psi,\mathrm b,1}\tilde{V}_{\Phi})\tilde U_{\mathrm{Wig}}(\tilde U_{\Psi,\mathrm b,1},\tilde{V}_{\Phi})$ | Cocycle condition |
 | $\sum_i\lvert p_{i,2}\rangle\langle p_i\rvert\otimes\tilde U_{\mathrm{Wig},i}$ | Boost as a controlled rotation |

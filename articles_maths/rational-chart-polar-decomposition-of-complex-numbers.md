@@ -5,10 +5,10 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers* writes every nonzero complex number as
 
 $$
-Q = r\,u, \qquad r = \sqrt{\langle Q\rangle_{*}} > 0, \qquad \langle u\rangle_{*} = 1,
+Q = \varrho\,u, \qquad \varrho = \sqrt{\langle Q\rangle_{*}} > 0, \qquad \langle u\rangle_{*} = 1,
 $$
 
-with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $\langle u\rangle_{*}=1$, not by a number.
+with $\varrho$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit circle. It chooses no coordinate on the circle: the unit factor is named by the equation $\langle u\rangle_{*}=1$, not by a number.
 
 This article names it. For a real number $s$ put
 
@@ -19,10 +19,10 @@ $$
 and write
 
 $$
-Q = r\,u(s) = r\,\frac{1-is}{1+is}.
+Q = \varrho\,u(s) = \varrho\,\frac{1-is}{1+is}.
 $$
 
-Nothing in the decomposition changes. The number $r$ is still the modulus, the element $u = u(s)$ is still the same unit factor, and the pair $(r,u)$ is still unique. The only new object is the real number $s$, which replaces the point of the circle by a coordinate on a line.
+Nothing in the decomposition changes. The number $\varrho$ is still the modulus, the element $u = u(s)$ is still the same unit factor, and the pair $(\varrho,u)$ is still unique. The only new object is the real number $s$, which replaces the point of the circle by a coordinate on a line.
 
 The chart is rational: $u(s)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\lvert s\rvert$ grows the unit $u(s)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real number. The decomposition therefore holds on the plane cut along the negative real axis, and it fails on the cut.
 
@@ -42,13 +42,13 @@ $$
 \langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2,
 $$
 
-which is positive off the origin. The modulus is $r = \sqrt{\langle Q\rangle_{*}}$, a positive real with no sign choice, and the unit factor is
+which is positive off the origin. The modulus is $\varrho = \sqrt{\langle Q\rangle_{*}}$, a positive real with no sign choice, and the unit factor is
 
 $$
-u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{r^2} = 1.
+u = \frac{Q}{\varrho}, \qquad \langle u\rangle_{*} = \frac{\langle Q\rangle_{*}}{\varrho^2} = 1.
 $$
 
-The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$. The pair $(r,u)$ is unique: taking norms in $Q = ru$ forces $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$.
+The unit factor lies on the unit circle $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$. The pair $(\varrho,u)$ is unique: taking norms in $Q = ru$ forces $\varrho = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/\varrho$.
 
 This is where the modulus–unit article stops. The present article adds one object, the real number $s$, and changes nothing else.
 
@@ -107,13 +107,13 @@ $$
 
 so $u(s) = (1-is)/(1+is) = u$.
 
-For a complex number $Q$ of modulus $r$ the unit factor is $u = Q/r$, and the coordinate is
+For a complex number $Q$ of modulus $\varrho$ the unit factor is $u = Q/\varrho$, and the coordinate is
 
 $$
-s = i\,\frac{u-1}{u+1} = i\,\frac{Q-r}{Q+r}.
+s = i\,\frac{u-1}{u+1} = i\,\frac{Q-\varrho}{Q+\varrho}.
 $$
 
-The second form is the one used below: it names $s$ by $Q$ alone. Its denominator vanishes exactly at $Q = -r$, the negative real axis, where the chart has no point.
+The second form is the one used below: it names $s$ by $Q$ alone. Its denominator vanishes exactly at $Q = -\varrho$, the negative real axis, where the chart has no point.
 
 ### The Bijection
 
@@ -143,17 +143,17 @@ The chart is therefore one-to-one, and its image is the circle with the single p
 
 **Theorem.** Every complex number $Q$ outside the closed negative real axis has exactly one rational-chart polar decomposition
 
-$$ \boxed{\;Q = r\,\frac{1-is}{1+is}, \qquad r > 0, \quad s \in \mathbb{R}\;}.
+$$ \boxed{\;Q = \varrho\,\frac{1-is}{1+is}, \qquad \varrho > 0, \quad s \in \mathbb{R}\;}.
 $$
 
-**Existence.** Let $Q \notin (-\infty,0]$, and put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Then $r > 0$ and $\langle u\rangle_{*} = 1$. If $u = -1$ then $Q = -r$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.
+**Existence.** Let $Q \notin (-\infty,0]$, and put $\varrho = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/\varrho$. Then $\varrho > 0$ and $\langle u\rangle_{*} = 1$. If $u = -1$ then $Q = -\varrho$ is a negative real, contrary to the hypothesis, so $u \neq -1$; the bijection then gives a real $s$ with $u = u(s)$. Hence $Q = ru(s)$.
 
-**Uniqueness.** Taking norms gives $r = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/r$; the chart is injective, so $s$ is determined by $u$.
+**Uniqueness.** Taking norms gives $\varrho = \sqrt{\langle Q\rangle_{*}}$, and then $u = Q/\varrho$; the chart is injective, so $s$ is determined by $u$.
 
-The coordinate is $s = i(Q-r)/(Q+r)$ of §*The Inverse*, and the reconstruction is exact:
+The coordinate is $s = i(Q-\varrho)/(Q+\varrho)$ of §*The Inverse*, and the reconstruction is exact:
 
 $$
-Q = r\,\frac{1-is}{1+is} = r\,\frac{1-s^2}{1+s^2} - i\,r\,\frac{2s}{1+s^2}.
+Q = \varrho\,\frac{1-is}{1+is} = \varrho\,\frac{1-s^2}{1+s^2} - i\,\varrho\,\frac{2s}{1+s^2}.
 $$
 
 ### The Domain
@@ -166,7 +166,7 @@ $$
 
 the plane cut along the closed negative real axis.
 
-The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the circle is attained exactly once. In the formula $s = i(Q-r)/(Q+r)$ the two exclusions are visible at once: the denominator vanishes at $Q = -r$, the negative real axis, and numerator and denominator both vanish at $Q = 0$, where $r = 0$ and no decomposition exists.
+The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the circle is attained exactly once. In the formula $s = i(Q-\varrho)/(Q+\varrho)$ the two exclusions are visible at once: the denominator vanishes at $Q = -\varrho$, the negative real axis, and numerator and denominator both vanish at $Q = 0$, where $\varrho = 0$ and no decomposition exists.
 
 ## The Group Law
 
@@ -255,17 +255,17 @@ $$
 so $M(s) \in SO(2)$. The decomposition of $Q$ reads, in matrices,
 
 $$
-M_Q = r\,(I-sJ)(I+sJ)^{-1},
+M_Q = \varrho\,(I-sJ)(I+sJ)^{-1},
 $$
 
 a rational expression in $s$ for the conformal matrix. At $s = 0$ the factor is the identity and at infinity it approaches $-I$; the point $-I$ is the missing one.
 
 ## Worked Examples
 
-The example $Q = 3-4i$ runs the mechanism end to end. Its modulus is $r = 5$, so its unit factor is
+The example $Q = 3-4i$ runs the mechanism end to end. Its modulus is $\varrho = 5$, so its unit factor is
 
 $$
-u = \frac{Q}{r} = 0.6-0.8i.
+u = \frac{Q}{\varrho} = 0.6-0.8i.
 $$
 
 The inverse formula in $u$ gives
@@ -277,13 +277,13 @@ $$
 and the formula in $Q$ gives the same number. The numerator and the denominator are
 
 $$
-Q-r = -2-4i, \qquad Q+r = 8-4i,
+Q-\varrho = -2-4i, \qquad Q+\varrho = 8-4i,
 $$
 
 so, multiplying above and below by the conjugate $8+4i$ of the denominator,
 
 $$
-s = i\,\frac{Q-r}{Q+r} = i\,\frac{-2-4i}{8-4i} = i\,\frac{(-2-4i)(8+4i)}{(8-4i)(8+4i)} = i\,\frac{-40i}{80} = \frac{1}{2}.
+s = i\,\frac{Q-\varrho}{Q+\varrho} = i\,\frac{-2-4i}{8-4i} = i\,\frac{(-2-4i)(8+4i)}{(8-4i)(8+4i)} = i\,\frac{-40i}{80} = \frac{1}{2}.
 $$
 
 The reconstruction closes the loop:
@@ -292,7 +292,7 @@ $$
 u\!\left(\tfrac{1}{2}\right) = \frac{1-\tfrac{i}{2}}{1+\tfrac{i}{2}} = \frac{(2-i)^2}{5} = \frac{3-4i}{5} = 0.6-0.8i, \qquad Q = 5(0.6-0.8i) = 3-4i.
 $$
 
-| $Q$ | $r = \sqrt{\langle Q\rangle_{*}}$ | $s = i(Q-r)/(Q+r)$ | $u$ | reconstruction error |
+| $Q$ | $\varrho = \sqrt{\langle Q\rangle_{*}}$ | $s = i(Q-\varrho)/(Q+\varrho)$ | $u$ | reconstruction error |
 |---|---|---|---|---|
 | $2$ | $2$ | $0$ | $1$ | $0$ |
 | $5i$ | $5$ | $-1$ | $i$ | $0$ |
@@ -316,13 +316,13 @@ The cut corresponds to the single unit factor $-1$, which neither side attains.
 
 ## Summary
 
-Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = r(1-is)/(1+is)$, with $r = \sqrt{\langle Q\rangle_{*}} > 0$ and $s = i(Q-r)/(Q+r) \in \mathbb{R}$. It is the modulus–unit decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers*, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.
+Every complex number outside the closed negative real axis has exactly one rational-chart polar decomposition $Q = \varrho(1-is)/(1+is)$, with $\varrho = \sqrt{\langle Q\rangle_{*}} > 0$ and $s = i(Q-\varrho)/(Q+\varrho) \in \mathbb{R}$. It is the modulus–unit decomposition of *Modulus–Unit Polar Decomposition of Complex Numbers*, with the same modulus and the same unit factor, and with the unit factor named by a real coordinate instead of by a point of the circle.
 
 The chart $s \mapsto u(s)$ is a bijection from $\mathbb{R}$ onto $\mathrm{U}(1)\setminus\{-1\}$. It is the stereographic projection from $-1$ onto the imaginary axis, read in the coordinate $s$ of the point $-is$. It is rational in both directions, and it sends $0$ to $1$ and $\pm1$ to $\mp i$.
 
 The group law is $s_1*s_2 = (s_1+s_2)/(1-s_1s_2)$, with identity $0$ and inverse $-s$; it has a pole at $s_1s_2 = 1$, where the product is the missing point $-1$ and the coordinate escapes to infinity. The chart is a group chunk. A second chart, $v(s) = -u(s)$, misses $+1$ and supplies $-1$, and the two cover the circle.
 
-In the matrix picture the decomposition is $M_Q = r(I-sJ)(I+sJ)^{-1}$, the Cayley transform of the line $sJ$ onto $SO(2)$ minus $-I$. The price of rationality is locality: one point of the circle, and one ray of the plane, are not covered.
+In the matrix picture the decomposition is $M_Q = \varrho(I-sJ)(I+sJ)^{-1}$, the Cayley transform of the line $sJ$ onto $SO(2)$ minus $-I$. The price of rationality is locality: one point of the circle, and one ray of the plane, are not covered.
 
 ## Summary of Notation
 
@@ -331,11 +331,11 @@ In the matrix picture the decomposition is $M_Q = r(I-sJ)(I+sJ)^{-1}$, the Cayle
 | $\mathbb{C}$ | the complex algebra, basis $1$, $i$, $i^2 = -1$ |
 | $Q$ | a complex number outside the closed negative real axis |
 | $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
-| $r = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
+| $\varrho = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
 | $u$ | the unit factor, $\langle u\rangle_{*} = 1$ |
 | $s$ | the real chart parameter of the unit factor |
 | $u(s) = (1-is)/(1+is)$ | the chart, the unit of parameter $s$ |
-| $s = i(Q-r)/(Q+r)$ | the coordinate of $Q$, a real number |
+| $s = i(Q-\varrho)/(Q+\varrho)$ | the coordinate of $Q$, a real number |
 | $\mathrm{U}(1)$ | the unit circle, a compact group |
 | $J$ | the complex structure, multiplication by $i$, $J^2 = -I$ |
 | $M(s) = (I-sJ)(I+sJ)^{-1}$ | the matrix of $u(s)$, the Cayley transform on $SO(2)$ |

@@ -7,14 +7,14 @@
 **The parent's action, and the fact that decides the whole article.**
 
 $$
-S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{r^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-r^{2}k_m\,\mathcal{V}\Bigr\},
+S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\},
 $$
 
-with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $r$ or on $\theta_{\mathrm{pha}}$. **The scale enters as $r^{2}$ in both terms and never with its own derivative.** There is no $(\partial r)^{2}$ here.
+with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. **The scale enters as $\varrho^{2}$ in both terms and never with its own derivative.** There is no $(\partial \varrho)^{2}$ here.
 
 **The consequence, stated plainly because it is the article's result.** In the Klein–Gordon and Proca families the limit is the deletion of one term — the scale's kinetic term — and the deletion changes one Euler–Lagrange equation and leaves the other. **In this family no such term exists**, so the limit cannot be a deletion, and the variational statement of it must be something else. What it is: the action's constraint structure.
 
-**The constraint structure, and why it is already the limit.** Every velocity enters linearly, so $\mathcal{L}=A_x(q)\dot q^{x}-U(q)$ with the eight coordinates $q=(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\text{two angles of }\vec u_{\mathrm b},\text{three of }\tilde u_{\mathrm r})$. The eight momenta are the components of $A$, so **three of them vanish identically and the Hessian vanishes identically**: no velocity is recoverable from a momentum. The Euler–Lagrange equations are $\Omega_{xy}\dot q^{y}=\partial_x U$ with $\Omega=\mathrm{d}A$, a closed and degenerate two-form.
+**The constraint structure, and why it is already the limit.** Every velocity enters linearly, so $\mathcal{L}=A_x(q)\dot q^{x}-U(q)$ with the eight coordinates $q=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\text{two angles of }\vec u_{\mathrm b},\text{three of }\tilde u_{\mathrm r})$. The eight momenta are the components of $A$, so **three of them vanish identically and the Hessian vanishes identically**: no velocity is recoverable from a momentum. The Euler–Lagrange equations are $\Omega_{xy}\dot q^{y}=\partial_x U$ with $\Omega=\mathrm{d}A$, a closed and degenerate two-form.
 
 **The reading that is the limit.** The vanishing momenta are the primary constraints, and their equations are the algebraic conditions — the mass shell and the polarisation of the frame. **That is order zero.** The flow $\Omega\dot q=\mathrm{d}U$ is first order in the coordinates and it transports the density, the velocity and the spin. **That is order one.** The limit is therefore the split of one first-order system into constraints and flow, and the parameter $\epsilon$ is what separates them.
 
@@ -26,16 +26,16 @@ with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direct
 
 **The restriction.** The word exists where $N(\tilde\Xi)\neq0$, and the action is written for the central class's complement — the eight parameters with the frame. The limit is defined on that domain.
 
-**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
+**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
 
 ## The Action and the One-Form
 
 **The action, with its three ingredients separated.**
 
 $$
-S=\int\mathrm{d}t'\;\Bigl\{\hbar c\,r^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r}\bigr)\Bigr]-U\Bigr\},
+S=\int\mathrm{d}t'\;\Bigl\{\hbar c\,\varrho^{2}\Bigl[\cosh\theta_{\mathrm{rpd}}\,\mathrm{d}\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\bigl(\tilde u_{\mathrm r}^{-1}\mathrm{d}\tilde u_{\mathrm r}\bigr)\Bigr]-U\Bigr\},
 \qquad
-U=\hbar c\,k_m\,r^{2}\,\mathcal{V}.
+U=\hbar c\,k_m\,\varrho^{2}\,\mathcal{V}.
 $$
 
 **The bracket is a one-form and it is the phase's momentum plus the spin's.** Its first term is the phase rate weighted by $\cosh\theta_{\mathrm{rpd}}=\gamma$; its second is the rotor's body angular velocity weighted by $\sinh\theta_{\mathrm{rpd}}=\gamma\beta$. **The two weights are the boost's two hyperbolic functions**, so the one-form is the four-velocity contracted with the two rates.
@@ -45,11 +45,11 @@ $$
 **The momenta.** $p_x=A_x(q)$, so
 
 $$
-p_{\theta_{\mathrm{pha}}}=\hbar c\,r^{2}\cosh\theta_{\mathrm{rpd}},
+p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 \qquad
-p_{\tilde u_{\mathrm r}}=-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}},
+p_{\tilde u_{\mathrm r}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}},
 \qquad
-p_{r}=p_{\theta_{\mathrm{rpd}}}=p_{\vec u_{\mathrm b}}=0 .
+p_{\varrho}=p_{\theta_{\mathrm{rpd}}}=p_{\vec u_{\mathrm b}}=0 .
 $$
 
 **Three momenta vanish and the Hessian vanishes for all eight.** The first statement is the constraint content; the second is why the equations are first order in the coordinates and not in their rates.
@@ -108,9 +108,9 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 ## Verification
 
-**The linearity was checked from the display.** Every occurrence of a velocity in the Lagrangian is linear: $\dot\theta_{\mathrm{pha}}$ enters once with the coefficient $\hbar c r^{2}\cosh\theta_{\mathrm{rpd}}$, and $\vec\omega_{\mathrm r}$ enters once through $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}$ with the coefficient $-\hbar c r^{2}\sinh\theta_{\mathrm{rpd}}$. **No velocity is squared and none appears twice**, so the Hessian vanishes and the momenta are the one-form's components.
+**The linearity was checked from the display.** Every occurrence of a velocity in the Lagrangian is linear: $\dot\theta_{\mathrm{pha}}$ enters once with the coefficient $\hbar c \varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and $\vec\omega_{\mathrm r}$ enters once through $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}$ with the coefficient $-\hbar c \varrho^{2}\sinh\theta_{\mathrm{rpd}}$. **No velocity is squared and none appears twice**, so the Hessian vanishes and the momenta are the one-form's components.
 
-**The three vanishing momenta were checked against the coordinates.** The Lagrangian contains no $\dot r$, no $\dot\theta_{\mathrm{rpd}}$ and no rate of the boost's axis, so the three conjugate momenta vanish identically. **The check is an inspection and it is exact.**
+**The three vanishing momenta were checked against the coordinates.** The Lagrangian contains no $\dot \varrho$, no $\dot\theta_{\mathrm{rpd}}$ and no rate of the boost's axis, so the three conjugate momenta vanish identically. **The check is an inspection and it is exact.**
 
 **The vanishing of the mass bilinear was checked as an identity.** The trace computation uses only $\Pi_+^{*}=\Pi_+$, cyclicity, and $\Pi_-\Pi_+=0$, so it holds for every element and not only for the word.
 
@@ -120,7 +120,7 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 ## Summary
 
-The parent's Dirac action is a one-form plus a potential: every velocity enters linearly, three momenta vanish, and the Euler–Lagrange equations are $\Omega\dot q=\mathrm{d}U$ with a closed and degenerate two-form. **The scale enters as $r^{2}$ in both terms and never with its own derivative, so there is no kinetic term to delete.**
+The parent's Dirac action is a one-form plus a potential: every velocity enters linearly, three momenta vanish, and the Euler–Lagrange equations are $\Omega\dot q=\mathrm{d}U$ with a closed and degenerate two-form. **The scale enters as $\varrho^{2}$ in both terms and never with its own derivative, so there is no kinetic term to delete.**
 
 The limit is therefore a reading and not a truncation: the vanishing momenta are the order-zero constraints — the mass shell and the polarisation of the frame — and the flow is the order-one transport of the density, the velocity and the spin. **The algebraic frame of the equation-route companion is the vanishing of three momenta**, and its three transport laws are the flow.
 
@@ -132,13 +132,13 @@ The price is exact: with no discarded term there is no accuracy estimate, and wi
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $r>0$, $\rho=r^{2}$ | The scale; the density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
+| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
 | $\theta_{\mathrm{rpd}}$, $\tilde u_{\mathrm b}$ | The boost's rapidity and axis |
 | $\vec\omega_{\mathrm r}$, $\hat n_{\mathrm{rot}}$ | The rotor's body angular velocity and axis |
 | $A_x(q)$ | The one-form whose components are the eight momenta |
-| $U=\hbar ck_m r^{2}\mathcal V$ | The mass potential |
-| $\mathcal V$ | The mass function of the frame, independent of $r$ and $\theta_{\mathrm{pha}}$ |
+| $U=\hbar ck_m \varrho^{2}\mathcal V$ | The mass potential |
+| $\mathcal V$ | The mass function of the frame, independent of $\varrho$ and $\theta_{\mathrm{pha}}$ |
 | $i\vec v$ | The fixed direction, transverse to $\vec e_z$, that the mass term requires |
 | $\Omega=\mathrm{d}A$ | The closed, degenerate two-form |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter of the ordering |

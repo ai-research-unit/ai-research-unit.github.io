@@ -27,7 +27,7 @@ with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{
 
 **What the article does not do.** It does not build a second integral, does not construct a measure over fields, and does not derive fermionic statistics. The companion's limitation carries over unchanged: the worldline integral is over commuting elements of $\mathbb{B}$, and the Grassmann character sits in the odd variables that the spin factor absorbs. It also does not evaluate the kernel for a general constant field strength; that is the Schwinger computation, and §*Open Questions* states what would be needed.
 
-**The same integral in the other coordinates is the polar companion.** *The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables* reads the kernel of this article in the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and finds where each of the four factors comes from. It constructs no second integral. Nothing below depends on that reading.
+**The same integral in the other coordinates is the polar companion.** *The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables* reads the kernel of this article in the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and finds where each of the four factors comes from. It constructs no second integral. Nothing below depends on that reading.
 
 ## Conventions
 

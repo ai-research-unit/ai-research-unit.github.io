@@ -5,10 +5,10 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Quaternions* writes every nonzero quaternion as
 
 $$
-\tilde q = r\,\tilde u_{\mathrm r}, \qquad r = \sqrt{\langle\tilde q\rangle_{\natural}} > 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
+\tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \varrho = \sqrt{\langle\tilde q\rangle_{\natural}} > 0, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1,
 $$
 
-with $r$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That article proves the pair unique and treats $\tilde u_{\mathrm r}$ as a point of the unit sphere $S^3$. It chooses no coordinate on the sphere: the unit factor is named by the equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, not by a triple of numbers.
+with $\varrho$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That article proves the pair unique and treats $\tilde u_{\mathrm r}$ as a point of the unit sphere $S^3$. It chooses no coordinate on the sphere: the unit factor is named by the equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$, not by a triple of numbers.
 
 This article names it. For a pure quaternion $\vec v = v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$ put
 
@@ -19,10 +19,10 @@ $$
 and write
 
 $$
-\tilde q = r\,u(\vec v) = r\,(1-\vec v)(1+\vec v)^{-1}.
+\tilde q = \varrho\,u(\vec v) = \varrho\,(1-\vec v)(1+\vec v)^{-1}.
 $$
 
-Nothing in the decomposition changes. The number $r$ is still the modulus, the element $u(\vec v)$ is still the same unit factor, and the pair $(r,u)$ is still unique. The only new object is the pure quaternion $\vec v$, which replaces the point of the sphere by a coordinate in the three-dimensional pure subspace.
+Nothing in the decomposition changes. The number $\varrho$ is still the modulus, the element $u(\vec v)$ is still the same unit factor, and the pair $(\varrho,u)$ is still unique. The only new object is the pure quaternion $\vec v$, which replaces the point of the sphere by a coordinate in the three-dimensional pure subspace.
 
 The chart is rational: $u(\vec v)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality. As $\sqrt{\langle \vec v\rangle_{\natural}}$ grows the unit $u(\vec v)$ approaches $-1$ without attaining it, so the one unit factor that is missed is $-1$, the unit factor of every negative real quaternion. The decomposition therefore holds on $\mathbb{H}$ cut along the negative real axis, and it fails on the cut.
 
@@ -44,13 +44,13 @@ $$
 \langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2,
 $$
 
-which is positive off the origin. The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, a positive real with no sign choice, and the unit factor is
+which is positive off the origin. The modulus is $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$, a positive real with no sign choice, and the unit factor is
 
 $$
-\tilde u_{\mathrm r} = \frac{\tilde q}{r}, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{r^2} = 1.
+\tilde u_{\mathrm r} = \frac{\tilde q}{\varrho}, \qquad \langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{\varrho^2} = 1.
 $$
 
-The unit factor lies on the unit sphere $\mathrm{Sp}(1)=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}=S^3$. The pair $(r,\tilde u_{\mathrm r})$ is unique: taking norms in $\tilde q=r\tilde u_{\mathrm r}$ forces $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$.
+The unit factor lies on the unit sphere $\mathrm{Sp}(1)=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}=S^3$. The pair $(\varrho,\tilde u_{\mathrm r})$ is unique: taking norms in $\tilde q=\varrho\tilde u_{\mathrm r}$ forces $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/\varrho$.
 
 This is where the modulus–unit article stops. The present article adds one object, the pure quaternion $\vec v$, and changes nothing else.
 
@@ -130,13 +130,13 @@ $$
 
 valid for every invertible $u\neq-1$. The two orderings of the inverse coincide in any associative algebra: the factors $1+u$ and $1-u$ are polynomials in $u$, hence commute, so $(1+u)^{-1}(1-u)=(1-u)(1+u)^{-1}$.
 
-For a quaternion $\tilde q$ of modulus $r$ the unit factor is $\tilde u_{\mathrm r}=\tilde q/r$, and the coordinate is
+For a quaternion $\tilde q$ of modulus $\varrho$ the unit factor is $\tilde u_{\mathrm r}=\tilde q/\varrho$, and the coordinate is
 
 $$
-\vec v = (1-\tilde u_{\mathrm r})(1+\tilde u_{\mathrm r})^{-1} = (r-\tilde q)(r+\tilde q)^{-1}.
+\vec v = (1-\tilde u_{\mathrm r})(1+\tilde u_{\mathrm r})^{-1} = (\varrho-\tilde q)(\varrho+\tilde q)^{-1}.
 $$
 
-The second form names $\vec v$ by $\tilde q$ alone. On the domain, its denominator vanishes exactly at $\tilde q=-r$, the negative real axis, where the chart has no point.
+The second form names $\vec v$ by $\tilde q$ alone. On the domain, its denominator vanishes exactly at $\tilde q=-\varrho$, the negative real axis, where the chart has no point.
 
 ### The Bijection
 
@@ -166,16 +166,16 @@ The chart is therefore one-to-one, and its image is the sphere with the single p
 
 **Theorem.** Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition
 
-$$ \boxed{\; \tilde q = r\,(1-\vec v)(1+\vec v)^{-1}, \qquad r>0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$
+$$ \boxed{\; \tilde q = \varrho\,(1-\vec v)(1+\vec v)^{-1}, \qquad \varrho>0, \quad \vec v\in\operatorname{Im}\mathbb{H} \;} .$$
 
-**Existence.** Let $\tilde q\notin(-\infty,0]$, and put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Then $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-r$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.
+**Existence.** Let $\tilde q\notin(-\infty,0]$, and put $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$. Then $\varrho>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}=-1$ then $\tilde q=-\varrho$ is a negative real, contrary to the hypothesis, so $\tilde u_{\mathrm r}\neq-1$; the bijection then gives a pure $\vec v$ with $\tilde u_{\mathrm r}=u(\vec v)$. Hence $\tilde q=ru(\vec v)$.
 
-**Uniqueness.** Taking norms gives $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/r$; the chart is injective, so $\vec v$ is determined by $\tilde u_{\mathrm r}$.
+**Uniqueness.** Taking norms gives $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$, and then $\tilde u_{\mathrm r}=\tilde q/\varrho$; the chart is injective, so $\vec v$ is determined by $\tilde u_{\mathrm r}$.
 
-The coordinate is $\vec v=(r-\tilde q)(r+\tilde q)^{-1}$ of §*The Inverse*, and the reconstruction is exact:
+The coordinate is $\vec v=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$ of §*The Inverse*, and the reconstruction is exact:
 
 $$
-\tilde q = r\,\frac{(1-\langle \vec v\rangle_{\natural})-2\vec v}{1+\langle \vec v\rangle_{\natural}}.
+\tilde q = \varrho\,\frac{(1-\langle \vec v\rangle_{\natural})-2\vec v}{1+\langle \vec v\rangle_{\natural}}.
 $$
 
 ### The Domain
@@ -188,7 +188,7 @@ $$
 
 the quaternion space cut along the closed negative real axis.
 
-The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the sphere is attained exactly once. In the formula $\vec v=(r-\tilde q)(r+\tilde q)^{-1}$ the two exclusions are visible at once: the denominator vanishes at $\tilde q=-r$, the negative real axis, and numerator and denominator both vanish at $\tilde q=0$, where $r=0$ and no decomposition exists. Unlike the split cases, there is no null cone and no element of vanishing norm; the cut is a ray, not a hypersurface.
+The origin is excluded because no polar decomposition of any kind exists there. The negative real axis is excluded because its unit factor is $-1$, the point the chart does not attain. Every other point of the sphere is attained exactly once. In the formula $\vec v=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$ the two exclusions are visible at once: the denominator vanishes at $\tilde q=-\varrho$, the negative real axis, and numerator and denominator both vanish at $\tilde q=0$, where $\varrho=0$ and no decomposition exists. Unlike the split cases, there is no null cone and no element of vanishing norm; the cut is a ray, not a hypersurface.
 
 ## The Group Law
 
@@ -318,7 +318,7 @@ The first chart covers every nonzero quaternion except the negative real axis; t
 
 The chart has three properties, and they are the terms of an exchange.
 
-- **It is rational.** Both $u(\vec v)$ and its inverse are ratios of polynomials; once the modulus $r$ is known, the decomposition uses field operations alone, with no transcendental function and no infinite series.
+- **It is rational.** Both $u(\vec v)$ and its inverse are ratios of polynomials; once the modulus $\varrho$ is known, the decomposition uses field operations alone, with no transcendental function and no infinite series.
 - **It is local.** It misses one point of the sphere, and therefore one ray of the quaternion space. A second chart, or the point at infinity, is needed to recover the sphere.
 - **It is unbounded.** Near the missing point the coordinate escapes to infinity, and the approach to the cut from different directions gives coordinates escaping in those directions.
 
@@ -387,7 +387,7 @@ $$
 \tilde q = e_t+2\vec e_x+3\vec e_y+4\vec e_z .
 $$
 
-The norm is $30$, so $r=\sqrt{30}=5.477225575$ and
+The norm is $30$, so $\varrho=\sqrt{30}=5.477225575$ and
 
 $$
 \tilde u_{\mathrm r}=0.182574186\,e_t+0.365148372\,\vec e_x+0.547722558\,\vec e_y+0.730296743\,\vec e_z .
@@ -399,7 +399,7 @@ $$
 \vec v=-0.308774178\,\vec e_x-0.463161266\,\vec e_y-0.617548355\,\vec e_z,
 $$
 
-with $\sqrt{\langle \vec v\rangle_{\natural}}=0.831399917$. The reconstruction $r\,u(\vec v)$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.
+with $\sqrt{\langle \vec v\rangle_{\natural}}=0.831399917$. The reconstruction $\varrho\,u(\vec v)$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.
 
 ### The Real and the Excluded Cases
 
@@ -415,7 +415,7 @@ which is consistent with $u(-\vec e_x)=\vec e_x$.
 
 The table collects the cases computed in this article.
 
-| $\tilde q$ | $r$ | $\tilde u_{\mathrm r}$ | $\vec v$ | $\sqrt{\langle \vec v\rangle_{\natural}}$ | reconstruction error |
+| $\tilde q$ | $\varrho$ | $\tilde u_{\mathrm r}$ | $\vec v$ | $\sqrt{\langle \vec v\rangle_{\natural}}$ | reconstruction error |
 |---|---|---|---|---|---|
 | $2e_t$ | $2$ | $e_t$ | $0$ | $0$ | $0$ |
 | $\vec e_x$ | $1$ | $\vec e_x$ | $-\vec e_x$ | $1$ | $0$ |
@@ -429,7 +429,7 @@ The table shows the sign rule of the chart: for a pure unit $\vec e_x$ the coord
 
 ### The Near-Cut Behaviour
 
-Take $\tilde q=-e_t+0.001\vec e_x$. Its modulus is $r=1.000000500$ and its unit factor is
+Take $\tilde q=-e_t+0.001\vec e_x$. Its modulus is $\varrho=1.000000500$ and its unit factor is
 
 $$
 \tilde u_{\mathrm r}=-0.999999500\,e_t+0.000999999\,\vec e_x .
@@ -441,11 +441,11 @@ $$
 \vec v=-2000.000500\,\vec e_x,
 $$
 
-with $\sqrt{\langle \vec v\rangle_{\natural}}=2000.000500$. The reconstruction returns $\tilde q$ to $1.1\times10^{-16}$. The example makes the cut visible: as the scalar part of $\tilde q$ approaches $-r$, the denominator $r+\tilde q$ approaches zero and the coordinate escapes along the direction of the vector part, which is the direction of approach to the cut.
+with $\sqrt{\langle \vec v\rangle_{\natural}}=2000.000500$. The reconstruction returns $\tilde q$ to $1.1\times10^{-16}$. The example makes the cut visible: as the scalar part of $\tilde q$ approaches $-\varrho$, the denominator $\varrho+\tilde q$ approaches zero and the coordinate escapes along the direction of the vector part, which is the direction of approach to the cut.
 
 ## Summary
 
-Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=r\,u(\vec v)$, with $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(r-\tilde q)(r+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.
+Every quaternion outside the closed negative real axis has exactly one rational-chart polar decomposition $\tilde q=\varrho\,u(\vec v)$, with $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ and $\vec v$ a pure quaternion. The coordinate is $\vec v=(1-u)(1+u)^{-1}=(\varrho-\tilde q)(\varrho+\tilde q)^{-1}$, and the chart is a bijection from the pure subspace onto the unit sphere minus $-1$.
 
 The chart is rational in both directions and misses the unit factor $-1$, so the decomposition is defined on $\mathbb{H}\setminus(-\infty,0]$. A second chart, $-u(\vec v)=u(\vec v^{-1})$, supplies $-1$ and misses $+1$; the two charts cover the sphere. The group law is the two-sided operator $\vec v_3=(1+\vec v_1)^{-1}(\vec v_1+\vec v_2)(1+\vec v_1\vec v_2)^{-1}(1+\vec v_1)$, which is the bare fraction conjugated by $1+\vec v_1$; the pole is $\vec v_1\vec v_2=-1$, where the product is the missing point and the coordinate escapes. In the matrix picture the chart is the Cayley transform $M(\vec v)=(I-V)(I+V)^{-1}$ into $SU(2)$.
 
@@ -457,8 +457,8 @@ The chart is rational in both directions and misses the unit factor $-1$, so the
 | $\tilde q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | a quaternion |
 | $\tilde q^{\natural}$ | the quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | the quaternion norm, positive definite |
-| $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
-| $\tilde u_{\mathrm r}=\tilde q/r$ | the unit factor |
+| $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
+| $\tilde u_{\mathrm r}=\tilde q/\varrho$ | the unit factor |
 | $\mathrm{Sp}(1)=S^3$ | the unit sphere |
 | $\vec v=v_x\vec e_x+v_y\vec e_y+v_z\vec e_z$ | a pure quaternion, the chart coordinate |
 | $u(\vec v)=(1-\vec v)(1+\vec v)^{-1}$ | the chart, a unit quaternion |

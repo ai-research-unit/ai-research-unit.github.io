@@ -26,7 +26,7 @@ $$
 
 **Seven articles put a state on the field: a Wigner function, a partition function, a thermal formalism.**
 
-[The Wigner Function in Biquaternionic Form](the-wigner-function-in-biquaternionic-form.html) defines $\tilde W_\Xi(r,\vec p)$ against the standard $x$–$p$ transform and proves that its zeroth and first moments are the density and the current. [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html) expands it in $\hbar$: the classical drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two. [The Schwinger–Keldysh Formalism in Biquaternionic Form](the-schwinger-keldysh-formalism-in-biquaternionic-form.html) supplies the non-equilibrium contour.
+[The Wigner Function in Biquaternionic Form](the-wigner-function-in-biquaternionic-form.html) defines $\tilde W_\Xi(\varrho,\vec p)$ against the standard $x$–$p$ transform and proves that its zeroth and first moments are the density and the current. [Relativistic Wigner Function and Quantum Kinetics](relativistic-wigner-function-and-quantum-kinetics.html) expands it in $\hbar$: the classical drift at order zero, $-\tfrac{\hbar^{2}}{24}V'''\partial_p^{3}W$ at order two. [The Schwinger–Keldysh Formalism in Biquaternionic Form](the-schwinger-keldysh-formalism-in-biquaternionic-form.html) supplies the non-equilibrium contour.
 
 **The thermal core of the layer is three articles.** [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) writes $Z$ in the rest frame; [Quantum Thermodynamics in Biquaternionic Form](quantum-thermodynamics-in-biquaternionic-form.html) writes the Gibbs state as a point of the Bloch ball and the free energy as the modular Hamiltonian's scalar part; [The Matsubara Thermal Formalism in Biquaternionic Form](the-matsubara-thermal-formalism-in-biquaternionic-form.html) gives the imaginary-time sum. **The layer's fourth thermal article is the transcription**: [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost and finds that $Z$ does not change.
 
@@ -203,7 +203,7 @@ The category is twenty-two articles in three layers and a ledger: the state (1 t
 |---|---|
 | $\tilde\Xi$ | The scalar field, one element of $\mathbb{B}$ |
 | $\lVert\tilde\Xi\rVert^{2}=\rho_{\mathrm{num}}$ | Proper density |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
 | $\tilde U_{\Psi,\mathrm b}$, $\tilde u_{\mathrm r}$ | Boost, rotor |
 | $\tilde V_\Phi=\tilde P_\Phi/m$ | Flow element, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}$ |
 | $\tilde V_{\Phi,\mathrm{sup}}$, $\tilde V_{\Phi,\mathrm{nrm}}$ | Condensate and normal flows |

@@ -378,7 +378,7 @@ $$
 
 **On the punctured scalar line the writing collapses to one term.** On the Jordan part no non-trivial idempotent commutes with the element, so no two-term writing exists. On the non-zero nilpotents the same failure occurs, and at the origin the trivial one-term writing $0=0\cdot e_t$ exists.
 
-**The polar side.** A writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb C$, $\Rho^{2}=N(\tilde Q)$ and $N(\tilde U)=1$ exists exactly on $\Sigma_{11}\cup\Sigma_{10}$, and the modulus is a choice of square root.
+**The polar side.** A writing $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathbb C$, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N(\tilde Q)$ and $N(\tilde U)=1$ exists exactly on $\Sigma_{11}\cup\Sigma_{10}$, and the modulus is a choice of square root.
 
 **The two failures are in opposite mixed regimes.** The Jordan part is invertible with no eigenbasis. The light-ray regime is a zero divisor with an eigenbasis. So the two descriptions fail independently, and an element can have one without the other.
 

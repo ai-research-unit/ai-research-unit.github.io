@@ -11,7 +11,7 @@ $$
 The pair has two factors, and each factor splits again into two. The element is written first as a modulus times a unit factor,
 
 $$
-\tilde Q=\Rho\,\tilde U,\qquad \Rho^{2}=\langle\tilde Q\rangle_{\natural},\qquad \langle\tilde U\rangle_{\natural}=1,
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U,\qquad \varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural},\qquad \langle\tilde U\rangle_{\natural}=1,
 $$
 
 and then each of the two is split:
@@ -23,7 +23,7 @@ $$
 The four factors are the **scale** $\varrho>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
 
 $$
-\boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
 
 **The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
@@ -32,9 +32,9 @@ The two levels are collected in the table.
 
 | reading | form | factors | real dimensions |
 |---|---|---|---|
-| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(r\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
-| modulus–unit | $\tilde Q=\Rho\tilde U=(re^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
-| complete polar decomposition | $\tilde Q=re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
+| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(\varrho\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
+| modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
+| complete polar decomposition | $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
 **Each factor is an exponential, and the word has a second face.** The boost and the rotor are exponentials of one real parameter along one real unit axis,
 
@@ -74,27 +74,27 @@ The unitarity is the sharpening: the partial isometry of the general case is now
 **The modulus.** The norm is a complex number, and it vanishes exactly on the zero-divisor cone $\mathcal N$ (*N-Regularity and N-Degeneracy in the Biquaternion Algebra*). A modulus is a square root of the norm,
 
 $$
-\Rho^{2}=\langle\tilde Q\rangle_{\natural},
+\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural},
 $$
 
 and the two roots differ by a sign, so the root is not defined by the norm alone. The branch is fixed once and for all. With $a=\operatorname{Re}\langle\tilde Q\rangle_{\natural}$ and $b=\operatorname{Im}\langle\tilde Q\rangle_{\natural}$, put
 
 $$
-\Rho=\sqrt{\frac{\lvert\langle\tilde Q\rangle_{\natural}\rvert+a}{2}}+i\,\operatorname{sgn}(b)\sqrt{\frac{\lvert\langle\tilde Q\rangle_{\natural}\rvert-a}{2}},\qquad \operatorname{sgn}(0)=+1 .
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\frac{\lvert\langle\tilde Q\rangle_{\natural}\rvert+a}{2}}+i\,\operatorname{sgn}(b)\sqrt{\frac{\lvert\langle\tilde Q\rangle_{\natural}\rvert-a}{2}},\qquad \operatorname{sgn}(0)=+1 .
 $$
 
 The root lies in the **principal half-plane**
 
 $$
-\mathcal H=\{\Rho\in\mathbb C:\operatorname{Re}\Rho>0\}\cup\{it:t>0\},
+\mathcal H=\{\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathbb C:\operatorname{Re}(\varrho\,e^{i\theta_{\mathrm{pha}}})>0\}\cup\{it:t>0\},
 $$
 
-and the other root $-\Rho$ lies outside it. On $\mathcal H$ the root is a function of the norm and is unique. The sign convention at $b=0$ places a negative real norm on the positive imaginary axis, and the root is continuous away from the negative real axis, where the branch cut lies. The branch is the only convention of the decomposition.
+and the other root $-\varrho\,e^{i\theta_{\mathrm{pha}}}$ lies outside it. On $\mathcal H$ the root is a function of the norm and is unique. The sign convention at $b=0$ places a negative real norm on the positive imaginary axis, and the root is continuous away from the negative real axis, where the branch cut lies. The branch is the only convention of the decomposition.
 
 **The scale and the phase.** The polar coordinates of the modulus on $\mathcal H$ are
 
 $$
-r=\lvert\Rho\rvert=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad \theta_{\mathrm{pha}}=\arg\Rho,\qquad \lvert e^{i\theta_{\mathrm{pha}}}\rvert=1 .
+\varrho=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}>0,\qquad \theta_{\mathrm{pha}}=\arg(\varrho\,e^{i\theta_{\mathrm{pha}}}),\qquad \lvert e^{i\theta_{\mathrm{pha}}}\rvert=1 .
 $$
 
 The phase factor lies in the half of the unit circle cut by the branch, and the angle lies in the strip that parametrises it,
@@ -108,13 +108,13 @@ The angle vanishes on the positive real axis, takes the value $\pi/2$ on the pos
 **The unit factor.** Put
 
 $$
-\tilde U=\frac{\tilde Q}{\Rho}.
+\tilde U=\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
 
-Since $\Rho$ is central and $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$, the norm is multiplicative and
+Since $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central and $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$, the norm is multiplicative and
 
 $$
-\langle\tilde U\rangle_{\natural}=\frac{\langle\tilde Q\rangle_{\natural}}{\Rho^{2}}=1 .
+\langle\tilde U\rangle_{\natural}=\frac{\langle\tilde Q\rangle_{\natural}}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=1 .
 $$
 
 The unit factor lies on the norm-one set
@@ -158,7 +158,7 @@ $$
 The two are central and commute with every element. They carry the norm between them,
 
 $$
-r^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert,\qquad e^{2i\theta_{\mathrm{pha}}}=\frac{\langle\tilde Q\rangle_{\natural}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
+\varrho^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert,\qquad e^{2i\theta_{\mathrm{pha}}}=\frac{\langle\tilde Q\rangle_{\natural}}{\lvert\langle\tilde Q\rangle_{\natural}\rvert},
 $$
 
 so the scale is the modulus of the norm and the phase is its unimodular direction, read through the branch.
@@ -223,15 +223,15 @@ Combining the two splits, with each unit factor written as an exponential of one
 
 $$
 \boxed{\;
-\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
 \;}
 $$
 
 with
 
 $$
-r>0,\qquad
+\varrho>0,\qquad
 \theta_{\mathrm{pha}}\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
 \theta_{\mathrm{rpd}}\ge0,\qquad
 \theta_{\mathrm{axr}}\in[0,2\pi],
@@ -243,8 +243,8 @@ The closed forms and the exponentials are the same four factors, and the table g
 
 | factor | closed form | exponent | range | real dimension | type |
 |---|---|---|---|---|---|
-| $r$ | $r=\lvert\Rho\rvert$ | $\ln r$ | $r>0$ | $1$ | positive real, central |
-| $e^{i\theta_{\mathrm{pha}}}$ | $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$ | $1$ | unit complex scalar, central |
+| $\varrho$ | $\varrho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}$ | $\ln \varrho$ | $\varrho>0$ | $1$ | positive real, central |
+| $e^{i\theta_{\mathrm{pha}}}$ | $e^{i\theta_{\mathrm{pha}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}/\varrho$ | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$ | $1$ | unit complex scalar, central |
 | $\tilde U_{\mathrm b}$ | $(\tilde U\tilde U^{*})^{1/2}$, or $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}\in S^{2}$ | $3$ | Hermitian positive definite, norm one |
 | $\tilde u_{\mathrm r}$ | $\tilde U_{\mathrm b}^{-1}\tilde U$, or $\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}\in S^{2}$ | $3$ | unit real quaternion, $SU(2)$ |
 
@@ -255,14 +255,14 @@ The two exponents of the unit factors lie in the two summands of the Cartan deco
 **The two readings.** The four factors regroup into the Cartan pair and into the modulus–unit pair:
 
 $$
-\boxed{\;\tilde Q_H=r\,\tilde U_{\mathrm b},\qquad \tilde Q_0=e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r},\qquad \Rho=re^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.\;}
+\boxed{\;\tilde Q_H=\varrho\,\tilde U_{\mathrm b},\qquad \tilde Q_0=e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r},\qquad \varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.\;}
 $$
 
-Indeed $\tilde Q\tilde Q^{*}=r^{2}\tilde U_{\mathrm b}^{2}$, since $e^{i\theta_{\mathrm{pha}}}$ and $\tilde u_{\mathrm r}$ are $*$-unitary, so the Hermitian square root is $r\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the $*$-unitary factor the phase and the rotor. The first is Hermitian positive definite, the second $*$-unitary, and the two are the Cartan Hermitian pairing of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
+Indeed $\tilde Q\tilde Q^{*}=\varrho^{2}\tilde U_{\mathrm b}^{2}$, since $e^{i\theta_{\mathrm{pha}}}$ and $\tilde u_{\mathrm r}$ are $*$-unitary, so the Hermitian square root is $\varrho\tilde U_{\mathrm b}$; and $\tilde Q_H^{-1}\tilde Q=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. The Hermitian factor carries the scale and the boost, and the $*$-unitary factor the phase and the rotor. The first is Hermitian positive definite, the second $*$-unitary, and the two are the Cartan Hermitian pairing of §*The Three Pairings*. The modulus–unit pair brackets the same word the other way, and the two bracketings are the two two-factor readings of the four factors.
 
 ### The branch cut
 
-The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\Rho$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\theta_{\mathrm{pha}}$ advances by $\pi$ and $\tilde u_{\mathrm r}$ changes sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
+The four separate factors are not continuous across the negative real axis of the norm, although the pair $(\tilde Q_H,\tilde Q_0)$ is. At a norm that crosses the cut, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ jumps from $i\sqrt{\lvert N\rvert}$ to $-i\sqrt{\lvert N\rvert}$, so $\theta_{\mathrm{pha}}$ advances by $\pi$ and $\tilde u_{\mathrm r}$ changes sign while their product does not. The scale, the boost, the Hermitian factor and the $*$-unitary factor are continuous there; the phase and the rotor are not. The four-factor word is therefore a decomposition of the element into four continuous functions off the cut, and into four functions that jump together on it.
 
 ## The Component Form
 
@@ -316,7 +316,7 @@ $$
 The data are
 
 $$
-\underbrace{1}_{\ln r}
+\underbrace{1}_{\ln \varrho}
 +\underbrace{1}_{\theta_{\mathrm{pha}}}
 +\underbrace{1+2}_{\theta_{\mathrm{rpd}},\vec u_{\mathrm b}}
 +\underbrace{1+2}_{\theta_{\mathrm{axr}},\vec u_{\mathrm r}}
@@ -330,12 +330,12 @@ the real dimension of the group of invertibles. The word is a coordinate system 
 **Theorem (the complete polar decomposition).** Every $\tilde Q\in\Sigma_{11}$ has a unique writing
 
 $$
-\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one, and $\tilde u_{\mathrm r}$ a unit real quaternion. Consequently it has the exponential word above; the axes are unique when $\theta_{\mathrm{rpd}}>0$ and $\theta_{\mathrm{axr}}\notin\{0,2\pi\}$.
 
-*Proof.* The modulus $\Rho$ is the principal square root of $N$, and $\tilde U=\tilde Q/\Rho$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$. The global Cartan decomposition
+*Proof.* The modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of $N$, and $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ has norm one. The matrix image of $\tilde U$ lies in $SL(2,\mathbb{C})$. The global Cartan decomposition
 
 $$
 SL(2,\mathbb{C})=P\cdot K,
@@ -345,7 +345,7 @@ P=\{\text{positive Hermitian of determinant }1\},
 K=SU(2),
 $$
 
-gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta_{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\theta_{\mathrm{axr}}\in[0,2\pi]$. The endpoint $\theta_{\mathrm{axr}}=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\Rho$, unique in the branch.
+gives a unique factorization $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\mathrm b}\in P$ and $\tilde u_{\mathrm r}\in K$. A positive Hermitian determinant-one matrix is the exponential of a unique Hermitian traceless matrix, which is $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ with $\theta_{\mathrm{rpd}}\ge0$ and a unit axis. A $*$-unitary determinant-one matrix is the exponential of an anti-Hermitian traceless matrix, which is $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\theta_{\mathrm{axr}}\in[0,2\pi]$. The endpoint $\theta_{\mathrm{axr}}=2\pi$ is the central rotor $-e_t$, where the axis is undefined. The scale and the phase are the polar coordinates of $\varrho\,e^{i\theta_{\mathrm{pha}}}$, unique in the branch.
 
 The proof uses only the invertibility of $\tilde Q$; the spectral condition $B^2\neq0$ enters only through the domain, not through the existence. This is why the theorem holds on the wall as it stands, with the same proof and the same ranges.
 
@@ -355,9 +355,9 @@ The same statement follows from the modulus–unit theorem without the matrix mo
 
 **Proposition (the modulus–unit form).** Every $\natural$-regular biquaternion has exactly one modulus–unit decomposition with modulus in $\mathcal H$, and exactly one four-factor word with that modulus.
 
-*Proof (existence).* Let $\Rho$ be the principal square root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$, and put $\tilde U=\tilde Q/\Rho$. Then $\langle\tilde U\rangle_{\natural}=1$, so $\tilde U$ is invertible and the boost and rotor of §*The Four Factors* are defined. With $r=\lvert\Rho\rvert$ and $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ the word follows by multiplication.
+*Proof (existence).* Let $\varrho\,e^{i\theta_{\mathrm{pha}}}$ be the principal square root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$, and put $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. Then $\langle\tilde U\rangle_{\natural}=1$, so $\tilde U$ is invertible and the boost and rotor of §*The Four Factors* are defined. With $\varrho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}$ and $e^{i\theta_{\mathrm{pha}}}$ the unit factor of the norm, the word follows by multiplication.
 
-*Proof (uniqueness).* Suppose $\tilde Q=\Rho\tilde U=\Rho'\tilde U'$ with $\Rho,\Rho'\in\mathcal H$ and $\langle\tilde U\rangle_{\natural}=\langle\tilde U'\rangle_{\natural}=1$. Taking norms gives $\Rho^{2}=\Rho'^{2}$, so $\Rho'=\pm\Rho$; both lie in $\mathcal H$, which contains no pair of opposite points, so $\Rho'=\Rho$. Dividing, $\tilde U'=\tilde U$. The polar decomposition of $\tilde U$ is unique: $\tilde U\tilde U^{*}$ has exactly one Hermitian positive square root, hence $\tilde U_{\mathrm b}$ is unique, and then $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unique.
+*Proof (uniqueness).* Suppose $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=\varrho\,e^{i\theta_{\mathrm{pha}}}'\tilde U'$ with $\varrho\,e^{i\theta_{\mathrm{pha}}},\varrho\,e^{i\theta_{\mathrm{pha}}}'\in\mathcal H$ and $\langle\tilde U\rangle_{\natural}=\langle\tilde U'\rangle_{\natural}=1$. Taking norms gives $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}'^{2}$, so $\varrho\,e^{i\theta_{\mathrm{pha}}}'=\pm\varrho\,e^{i\theta_{\mathrm{pha}}}$; both lie in $\mathcal H$, which contains no pair of opposite points, so $\varrho\,e^{i\theta_{\mathrm{pha}}}'=\varrho\,e^{i\theta_{\mathrm{pha}}}$. Dividing, $\tilde U'=\tilde U$. The polar decomposition of $\tilde U$ is unique: $\tilde U\tilde U^{*}$ has exactly one Hermitian positive square root, hence $\tilde U_{\mathrm b}$ is unique, and then $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is unique.
 
 The word exists exactly on the $\natural$-regular elements. On the null cone the norm vanishes, the modulus is zero, and no modulus–unit form exists; the two-factor decomposition survives and is the subject of *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
@@ -369,7 +369,7 @@ The boost axis is undefined at $\theta_{\mathrm{rpd}}=0$, where the boost is the
 
 | Parameter | Range | Unique? |
 |---|---|---|
-| $r$ | $(0,\infty)$ | yes |
+| $\varrho$ | $(0,\infty)$ | yes |
 | $\theta_{\mathrm{pha}}$ | $(-\frac{\pi}{2},\frac{\pi}{2}]$ | yes: the branch |
 | $\theta_{\mathrm{rpd}}$ | $[0,\infty)$ | yes |
 | $\vec u_{\mathrm b}$ | $S^2$ | no: undefined at $\theta_{\mathrm{rpd}}=0$ |
@@ -412,9 +412,9 @@ The sector has five equivalent descriptions.
 2. The two eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct and nonzero.
 3. The minimal polynomial $X^2-2Q_tX+N$ is squarefree with nonzero constant term.
 4. The element is invertible and its spectrum has two distinct points.
-5. With $\Rho$ the principal square root of $N$ and $\tilde U=\tilde Q/\Rho$, the scalar part of $\tilde U$ is not $\pm1$.
+5. With $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal square root of $N$ and $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, the scalar part of $\tilde U$ is not $\pm1$.
 
-*Proof.* The characteristic polynomial is $X^2-2Q_tX+N$. Its discriminant is $4(Q_t^2-N)=-4B^2$, so it is squarefree exactly when $B^2\neq0$, and its constant term is nonzero exactly when $N\neq0$. The eigenvalues are $Q_t\pm iB$, distinct and nonzero under the same two conditions. The element is invertible because $N\neq0$. A scalar has $B^2=0$, but $B^2=0$ also allows the non-scalar Jordan elements; the spectral condition is the distinctness, not the non-scalarity. For the last item, $\operatorname{Sc}\tilde U=Q_t/\Rho$, hence
+*Proof.* The characteristic polynomial is $X^2-2Q_tX+N$. Its discriminant is $4(Q_t^2-N)=-4B^2$, so it is squarefree exactly when $B^2\neq0$, and its constant term is nonzero exactly when $N\neq0$. The eigenvalues are $Q_t\pm iB$, distinct and nonzero under the same two conditions. The element is invertible because $N\neq0$. A scalar has $B^2=0$, but $B^2=0$ also allows the non-scalar Jordan elements; the spectral condition is the distinctness, not the non-scalarity. For the last item, $\operatorname{Sc}\tilde U=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, hence
 
 $$
 \bigl(\operatorname{Sc}\tilde U\bigr)^2=\frac{Q_t^2}{N},
@@ -458,17 +458,17 @@ and it is invertible, with inverse $e_t-\vec\Upsilon$.
 
 ### The Unit Factor at the Wall
 
-The modulus is the principal square root of $N=Q_t^2$. Since $Q_t^2$ has the two square roots $\pm Q_t$, the modulus is $\Rho=\pm Q_t$, and the unit factor is
+The modulus is the principal square root of $N=Q_t^2$. Since $Q_t^2$ has the two square roots $\pm Q_t$, the modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\pm Q_t$, and the unit factor is
 
 $$
-\tilde U=\frac{\tilde Q}{\Rho}
-=\frac{Q_t}{\Rho}\bigl(e_t+\vec\Upsilon\bigr)
+\tilde U=\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}
+=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\bigl(e_t+\vec\Upsilon\bigr)
 =\varepsilon\bigl(e_t+\vec\Upsilon\bigr),
 \qquad
-\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+\varepsilon=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1.
 $$
 
-The sign $\varepsilon$ is fixed by the branch of the modulus. It is $+1$ when $\Rho=Q_t$ and $-1$ when $\Rho=-Q_t$. The unit factor is therefore $\pm$unipotent, and the sign is the only trace of the scalar part that survives in it.
+The sign $\varepsilon$ is fixed by the branch of the modulus. It is $+1$ when $\varrho\,e^{i\theta_{\mathrm{pha}}}=Q_t$ and $-1$ when $\varrho\,e^{i\theta_{\mathrm{pha}}}=-Q_t$. The unit factor is therefore $\pm$unipotent, and the sign is the only trace of the scalar part that survives in it.
 
 ## The Result in Terms of the Coordinates
 
@@ -485,8 +485,8 @@ On the sector $N\neq0$ and $B^2\neq0$. Here $\operatorname{Arg}$ is the principa
 **Theorem (the word and its seven data).** Every $\tilde Q$ of the sector is
 
 $$
-\boxed{\;\tilde Q=r e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
+\boxed{\;\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
 with the two unit factors
@@ -535,11 +535,11 @@ $$
 \boxed{\;\vec u_{\mathrm r}=\frac{e^{-i\theta_{\mathrm{pha}}}\bigl(C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\bigr)}{\bigl\lVert C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\bigr\rVert}\;}
 $$
 
-The boost axis is undefined when $\theta_{\mathrm{rpd}}=0$; the rotor axis is undefined when $\theta_{\mathrm{axr}}\in\{0,2\pi\}$. The vector $\mathrm{Vect}\tilde u_{\mathrm r}$ is the vector part of $\tilde u_{\mathrm r}$. At $\theta_{\mathrm{rpd}}=0$ the boost is $e_t$, and the box for $\tilde u_{\mathrm r}$ reduces to $\tilde u_{\mathrm r}=\tilde Q/\Rho$.
+The boost axis is undefined when $\theta_{\mathrm{rpd}}=0$; the rotor axis is undefined when $\theta_{\mathrm{axr}}\in\{0,2\pi\}$. The vector $\mathrm{Vect}\tilde u_{\mathrm r}$ is the vector part of $\tilde u_{\mathrm r}$. At $\theta_{\mathrm{rpd}}=0$ the boost is $e_t$, and the box for $\tilde u_{\mathrm r}$ reduces to $\tilde u_{\mathrm r}=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.
 
 *Proof.*
 
-**The modulus.** By the modulus–unit theorem, $\Rho$ is the principal square root of $N$. Write $\Rho=re^{i\theta_{\mathrm{pha}}}$ with $r>0$ and $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$. Then $r^2=|\Rho|^2=|N|$ and $2\theta_{\mathrm{pha}}\equiv\operatorname{Arg}N\pmod{2\pi}$. The range of $\theta_{\mathrm{pha}}$ selects the representative, so $r=\sqrt{|N|}$ and $\theta_{\mathrm{pha}}=\frac12\operatorname{Arg}N$.
+**The modulus.** By the modulus–unit theorem, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of $N$. Write $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ with $\varrho>0$ and $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$. Then $\varrho^2=|\varrho\,e^{i\theta_{\mathrm{pha}}}|^2=|N|$ and $2\theta_{\mathrm{pha}}\equiv\operatorname{Arg}N\pmod{2\pi}$. The range of $\theta_{\mathrm{pha}}$ selects the representative, so $\varrho=\sqrt{|N|}$ and $\theta_{\mathrm{pha}}=\frac12\operatorname{Arg}N$.
 
 **The product $\tilde Q\tilde Q^*$.** With $\tilde Q^*=\bar Q_t-\bar{\vec Q}$,
 
@@ -565,10 +565,10 @@ $$
 
 with $\vec a$ the vector of the box.
 
-**The boost.** The unit factor is $\tilde U=\tilde Q/\Rho$, so
+**The boost.** The unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, so
 
 $$
-\tilde U\tilde U^*=\frac{\tilde Q\tilde Q^*}{|\Rho|^2}
+\tilde U\tilde U^*=\frac{\tilde Q\tilde Q^*}{|\varrho\,e^{i\theta_{\mathrm{pha}}}|^2}
 =\frac{\lVert\tilde Q\rVert^2}{|N|}\,e_t+i\vec a.
 $$
 
@@ -590,10 +590,10 @@ Comparing the scalar parts gives $\cosh\theta_{\mathrm{rpd}}=\lVert\tilde Q\rVer
 
 $$
 \tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U
-=\frac{1}{\Rho}\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t-i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\tilde Q.
+=\frac{1}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\Bigl(\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t-i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\tilde Q.
 $$
 
-Substituting the half-angle values, and using $\Rho=re^{i\theta_{\mathrm{pha}}}$ and $r^2=|N|$, gives the box for $\tilde u_{\mathrm r}$.
+Substituting the half-angle values, and using $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ and $\varrho^2=|N|$, gives the box for $\tilde u_{\mathrm r}$.
 
 **The angles.** By the existence theorem, $\tilde u_{\mathrm r}$ is a unit real quaternion. Write $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\theta_{\mathrm{axr}}\in[0,2\pi]$, so $\operatorname{Sc}\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}$ and $\mathrm{Vect}\tilde u_{\mathrm r}=\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ with $\sin\frac{\theta_{\mathrm{axr}}}{2}\ge0$. For a real unit vector $u$ and a complex vector $\tilde V$ with scalar part $\tilde V_t$, one has $u\tilde V=\tilde V_tu-u\cdot\tilde V+u\times\tilde V$. Applying this to the box for $\tilde u_{\mathrm r}$ gives, with $D=\vec u_{\mathrm b}\cdot\vec Q$,
 
@@ -605,7 +605,7 @@ $$
 
 Taking the real part of the scalar part gives the box for $\theta_{\mathrm{axr}}$. Taking the norm of the vector part gives $\sin\frac{\theta_{\mathrm{axr}}}{2}=\lVert C\vec Q-iS(Q_t\vec u_{\mathrm b}+\vec u_{\mathrm b}\times\vec Q)\rVert/|N|$, and $\vec u_{\mathrm r}=\mathrm{Vect}\tilde u_{\mathrm r}/\sin\frac{\theta_{\mathrm{axr}}}{2}$ is the box for $\vec u_{\mathrm r}$.
 
-**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/\Rho$, which is the word.
+**The assembly.** The boost box gives $\tilde U_{\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and the rotor box gives $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$; their product is $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, which is the word.
 
 **Check.** For
 
@@ -613,7 +613,7 @@ $$
 \tilde Q=\Bigl(1-\frac{i}{2}\Bigr)e_t+\frac{1+i}{\sqrt2}\vec e_x+\frac{1}{\sqrt2}\vec e_y+\frac{i}{2}\vec e_z,
 $$
 
-one has $N=1$ and $\lVert\tilde Q\rVert^2=3$, hence $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
+one has $N=1$ and $\lVert\tilde Q\rVert^2=3$, hence $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\vec a=2\sqrt2\,\vec e_x$ and $\vec u_{\mathrm b}=\vec e_x$. The boxes give
 
 $$
 \tilde U_{\mathrm b}=\sqrt2\,e_t+i\vec e_x,
@@ -647,8 +647,8 @@ since $Q_t^{-1}=(q_t-iq'_t)/(q_t^2+q_t'^2)$ and $\vec\Upsilon=\vec Q\,Q_t^{-1}$.
 **Theorem (the word and its seven data).** On the Jordan part $a>0$, every $\tilde Q$ of the sector is
 
 $$
-\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=r e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
+\boxed{\;\tilde Q=Q_t(e_t+\vec\Upsilon)=\varrho e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
 with the two unit factors
@@ -658,16 +658,16 @@ $$
 \tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r}\;}
 $$
 
-and with the seven data determined by $Q_t,Q_x,Q_y,Q_z$. Here $\Rho$ is the principal square root of $Q_t^2$, that is, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part.
+and with the seven data determined by $Q_t,Q_x,Q_y,Q_z$. Here $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of $Q_t^2$, that is, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part.
 
 $$
-\boxed{\;r=|Q_t|,\qquad
-\Rho=\begin{cases}Q_t,&\operatorname{Re}Q_t>0\ \text{or}\ \bigl(\operatorname{Re}Q_t=0,\ \operatorname{Im}Q_t>0\bigr),\\[2pt]-Q_t,&\text{otherwise},\end{cases}\qquad
-\varepsilon=\frac{Q_t}{\Rho}=\pm1\;}
+\boxed{\;\varrho=|Q_t|,\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\begin{cases}Q_t,&\operatorname{Re}Q_t>0\ \text{or}\ \bigl(\operatorname{Re}Q_t=0,\ \operatorname{Im}Q_t>0\bigr),\\[2pt]-Q_t,&\text{otherwise},\end{cases}\qquad
+\varepsilon=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1\;}
 $$
 
 $$
-\boxed{\;\theta_{\mathrm{pha}}=\arg\Rho=\begin{cases}\arg Q_t,&\varepsilon=+1,\\[2pt]\arg(-Q_t),&\varepsilon=-1,\end{cases}\;}
+\boxed{\;\theta_{\mathrm{pha}}=\arg(\varrho\,e^{i\theta_{\mathrm{pha}}})=\begin{cases}\arg Q_t,&\varepsilon=+1,\\[2pt]\arg(-Q_t),&\varepsilon=-1,\end{cases}\;}
 $$
 
 $$
@@ -692,7 +692,7 @@ On the scalar line $a=0$ one has $\vec\Upsilon=0$, $\theta_{\mathrm{rpd}}=0$, an
 
 *Proof.*
 
-**The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\Rho^2=Q_t^2$, hence $\Rho=\pm Q_t$. The principal branch selects the sign displayed, and $r=|\Rho|=|Q_t|$, $\varepsilon=Q_t/\Rho=\pm1$. Writing $\Rho=re^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg\Rho$, with the principal argument in $(-\pi,\pi]$; since $\Rho=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.
+**The modulus and the sign.** Since $N=Q_t^2$, the modulus satisfies $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=Q_t^2$, hence $\varrho\,e^{i\theta_{\mathrm{pha}}}=\pm Q_t$. The principal branch selects the sign displayed, and $\varrho=|\varrho\,e^{i\theta_{\mathrm{pha}}}|=|Q_t|$, $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$. Writing $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ gives $\theta_{\mathrm{pha}}=\arg(\varrho\,e^{i\theta_{\mathrm{pha}}})$, with the principal argument in $(-\pi,\pi]$; since $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varepsilon Q_t$, this is the box for $\theta_{\mathrm{pha}}$.
 
 **The structure of $\vec\Upsilon$.** With $\vec\Upsilon=\vec A+i\vec B$,
 
@@ -846,20 +846,20 @@ The two signs of $B$ exchange $\vec{Ζ}$ with $-\vec{Ζ}$, $\tilde\Pi_+$ with $\
 
 ### The Unit Factor on the Eigenlines
 
-Since $\tilde U=\tilde Q/\Rho$ and $\Rho$ is central,
+Since $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central,
 
 $$
 \tilde U=\mu_+\tilde\Pi_++\mu_-\tilde\Pi_-,
 \qquad
-\mu_\pm=\frac{\lambda_\pm}{\Rho}.
+\mu_\pm=\frac{\lambda_\pm}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
 
 The two eigenvalues of the unit factor satisfy
 
 $$
-\mu_+\mu_-=\frac{N}{\Rho^2}=1,
+\mu_+\mu_-=\frac{N}{\varrho^{2}e^{2i\theta_{\mathrm{pha}}}}=1,
 \qquad
-\mu_++\mu_-=\frac{2Q_t}{\Rho}=2\operatorname{Sc}\tilde U,
+\mu_++\mu_-=\frac{2Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=2\operatorname{Sc}\tilde U,
 \qquad
 \mu_+\neq\mu_-.
 $$
@@ -870,18 +870,18 @@ $$
 \boxed{\mu_\pm=U_t\pm i\sqrt{1-U_t^2}}.
 $$
 
-The spectrum of $\tilde U$ therefore depends on $\tilde Q$ only through the single complex number $U_t=Q_t/\Rho$. The two eigenvalues are distinct because $B^2\neq0$, and their product is one.
+The spectrum of $\tilde U$ therefore depends on $\tilde Q$ only through the single complex number $U_t=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The two eigenvalues are distinct because $B^2\neq0$, and their product is one.
 
 The spectral data of the element and of the unit factor are related by
 
 $$
-\lambda_\pm=\Rho\mu_\pm,
+\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\mu_\pm,
 \qquad
-N=\Rho^2,
+N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},
 \qquad
-Q_t=\Rho U_t,
+Q_t=\varrho\,e^{i\theta_{\mathrm{pha}}} U_t,
 \qquad
-B^2=\Rho^2(1-U_t^2).
+B^2=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}(1-U_t^2).
 $$
 
 The last identity is the spectral form of the defining condition: the sector $B^2\neq0$ is the locus $U_t^2\neq1$, and the spectral cone $B^2=0$ is the locus $U_t=\pm1$.
@@ -918,7 +918,7 @@ In this case the common axis is $\pm i\vec{Ζ}$ whenever it is defined, and
 
 $$
 \boxed{\;
-\tilde Q=r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(\frac{\theta_{\mathrm{axr}}+i\theta_{\mathrm{rpd}}}{2}\vec u\Bigr),
+\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\exp\Bigl(\frac{\theta_{\mathrm{axr}}+i\theta_{\mathrm{rpd}}}{2}\vec u\Bigr),
 \qquad
 \vec u=\pm i\vec{Ζ},
 \;}
@@ -938,11 +938,11 @@ $$
 \theta_{\mathrm{axr}}=2\arg\mu_+\pmod{2\pi}.
 $$
 
-*Proof.* The equivalence of 1 and 2 is the lemma, with the rank-one condition on the complex vector $\vec Q$. If $\tilde Q$ is normal then $\tilde U$ is normal, because $\tilde U=\tilde Q/\Rho$ and $\Rho$ is central. The Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$ is a function of $\tilde U\tilde U^*$, hence commutes with $\tilde U$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ commutes with $\tilde U$ as well. Both commute with $\tilde Q=\Rho\tilde U$, which gives 3. Conversely, if the two factors commute with $\tilde Q$, they commute with $\tilde U$ and with each other, so
+*Proof.* The equivalence of 1 and 2 is the lemma, with the rank-one condition on the complex vector $\vec Q$. If $\tilde Q$ is normal then $\tilde U$ is normal, because $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central. The Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$ is a function of $\tilde U\tilde U^*$, hence commutes with $\tilde U$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ commutes with $\tilde U$ as well. Both commute with $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$, which gives 3. Conversely, if the two factors commute with $\tilde Q$, they commute with $\tilde U$ and with each other, so
 
 $$
-\tilde Q\tilde Q^*=|\Rho|^2\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}
-=|\Rho|^2\tilde U_{\mathrm b}^2
+\tilde Q\tilde Q^*=|\varrho\,e^{i\theta_{\mathrm{pha}}}|^2\tilde U_{\mathrm b}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^*\tilde U_{\mathrm b}
+=|\varrho\,e^{i\theta_{\mathrm{pha}}}|^2\tilde U_{\mathrm b}^2
 =\tilde Q^*\tilde Q,
 $$
 
@@ -1003,12 +1003,12 @@ The comparison is a count of real data.
 
 | Data | Real dimension | Determines |
 |---|---|---|
-| $N$, $B^2$ | $4$ | $r,\theta_{\mathrm{pha}},U_t$ |
+| $N$, $B^2$ | $4$ | $\varrho,\theta_{\mathrm{pha}},U_t$ |
 | spectrum $\{\lambda_+,\lambda_-\}$ | $4$ | the same, in spectral form |
 | eigenprojectors $\tilde\Pi_\pm$ | $4$ | the eigenlines; the polar axes only in the normal case |
-| word $(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | $8$ | the element |
+| word $(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | $8$ | the element |
 
-The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(r,\theta_{\mathrm{pha}},U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.
+The spectrum and the eigenprojectors together determine the element. The polar word is another eight data. The two parametrizations share the four data $(\varrho,\theta_{\mathrm{pha}},U_t)$; the spectrum determines the remaining data only in the normal case, where the eigenprojectors are the polar axes. In the non-normal case the eigenprojectors do not determine the polar axes, and the spectrum does not determine the two angles.
 
 The spectral decomposition is a diagonalization over $\mathbb{C}$: it writes $\tilde Q$ as two complex multiples of two idempotents. The polar decomposition is a Cartan decomposition over $\mathbb{R}$: it writes $\tilde Q$ as a positive Hermitian factor times a $*$-unitary factor. The two agree on the scalar factor and on the eigenvalues of $\tilde Q$, and on nothing else in the non-normal case.
 
@@ -1145,11 +1145,11 @@ $$
 The word is
 
 $$
-\tilde Q=r e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t
+\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t
 =Q_te_t.
 $$
 
-The sign $\varepsilon$ is fixed by the branch: if $\Rho=Q_t$ then $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=0$; if $\Rho=-Q_t$ then $\varepsilon=-1$ and $\theta_{\mathrm{axr}}=2\pi$. The axes are undefined, because the boost and the rotor are central. The scalar line is the normal locus of the sector: a normal element with a single eigenvalue is a scalar, and every scalar is normal.
+The sign $\varepsilon$ is fixed by the branch: if $\varrho\,e^{i\theta_{\mathrm{pha}}}=Q_t$ then $\varepsilon=+1$ and $\theta_{\mathrm{axr}}=0$; if $\varrho\,e^{i\theta_{\mathrm{pha}}}=-Q_t$ then $\varepsilon=-1$ and $\theta_{\mathrm{axr}}=2\pi$. The axes are undefined, because the boost and the rotor are central. The scalar line is the normal locus of the sector: a normal element with a single eigenvalue is a scalar, and every scalar is normal.
 
 ### The Jordan Part
 
@@ -1226,20 +1226,20 @@ The sector retracts onto the scalar line, because the nilpotent part can be cont
 The group of invertibles is the $\natural$-regular set, $\mathbb B^{\times}=\mathbb B\setminus\mathcal N$, the complement of the zero-divisor cone. The decomposition read as a map
 
 $$
-\Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\Rho,\tilde U),
+\Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),\qquad \Phi(\tilde Q)=(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U),
 $$
 
-is a bijection: it is injective by the uniqueness theorem, and it is surjective because for $(\Rho,\tilde U)\in\mathcal H\times SL_2(\mathbb C)$ the element $\Rho\tilde U$ has norm $\Rho^{2}$, whose principal root is $\Rho$. Under the matrix model it is the factorisation of an invertible matrix into a complex scalar and a matrix of determinant one.
+is a bijection: it is injective by the uniqueness theorem, and it is surjective because for $(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U)\in\mathcal H\times SL_2(\mathbb C)$ the element $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ has norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, whose principal root is $\varrho\,e^{i\theta_{\mathrm{pha}}}$. Under the matrix model it is the factorisation of an invertible matrix into a complex scalar and a matrix of determinant one.
 
 The map is not a group homomorphism. The scale is multiplicative, and the phase is multiplicative only up to a sign,
 
 $$
-r(\tilde Q_1\tilde Q_2)=r(\tilde Q_1)r(\tilde Q_2),\qquad \theta_{\mathrm{pha}}(\tilde Q_1\tilde Q_2)\equiv\theta_{\mathrm{pha}}(\tilde Q_1)+\theta_{\mathrm{pha}}(\tilde Q_2)\pmod{\pi},
+\varrho(\tilde Q_1\tilde Q_2)=\varrho(\tilde Q_1)\varrho(\tilde Q_2),\qquad \theta_{\mathrm{pha}}(\tilde Q_1\tilde Q_2)\equiv\theta_{\mathrm{pha}}(\tilde Q_1)+\theta_{\mathrm{pha}}(\tilde Q_2)\pmod{\pi},
 $$
 
 The moduli and the phases multiply. The unit factors do not: after the multiplication the middle product $\tilde u_{\mathrm r,1}\tilde U_{\mathrm b,2}$ has to be split again, and §*The Group Law* gives the correction.
 
-**Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the $*$-unitary group $U(2)$, the set of words with $r=1$ and $\tilde U_{\mathrm b}=e_t$,
+**Proposition (the maximal compact subgroup).** The maximal compact subgroup of $\mathbb B^{\times}$ is the $*$-unitary group $U(2)$, the set of words with $\varrho=1$ and $\tilde U_{\mathrm b}=e_t$,
 
 $$
 U(2)=\{e^{i\theta}\,\tilde u_{\mathrm r}:\theta\in\mathbb R,\ \tilde u_{\mathrm r}\in SU(2)\}.
@@ -1253,26 +1253,26 @@ The compact part has two circular directions, and they are not interchangeable. 
 
 ### The Homotopy Type
 
-Forgetting the branch, the map $\tilde Q\mapsto(\Rho,\tilde U)$ is a bijection onto $\mathbb{C}^{\times}\times\mathrm{SL}_2(\mathbb{C})$, and it is not a homeomorphism: on the cut the phase jumps by $-1$ and the rotor changes sign. The positive cone is homeomorphic to $\mathbb{R}^{3}$ and the rotor group is $S^{3}$, so $\mathrm{SL}_2(\mathbb{C})\simeq\mathbb{R}^{3}\times S^{3}$, and $U(2)\cong U(1)\times SU(2)$ as a space gives $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+Forgetting the branch, the map $\tilde Q\mapsto(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U)$ is a bijection onto $\mathbb{C}^{\times}\times\mathrm{SL}_2(\mathbb{C})$, and it is not a homeomorphism: on the cut the phase jumps by $-1$ and the rotor changes sign. The positive cone is homeomorphic to $\mathbb{R}^{3}$ and the rotor group is $S^{3}$, so $\mathrm{SL}_2(\mathbb{C})\simeq\mathbb{R}^{3}\times S^{3}$, and $U(2)\cong U(1)\times SU(2)$ as a space gives $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
 ### The Coordinate Lines
 
 The parameters are coordinates on the group, and their ranges make the word map a bijection up to the axis degeneracies. The coordinate lines are four one-parameter families:
 
-- the **scale line** $r\mapsto r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a half-line;
-- the **phase circle** $\theta_{\mathrm{pha}}\mapsto r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a circle cut to a half-open interval by the branch;
-- the **boost hyperbola** $\theta_{\mathrm{rpd}}\mapsto r e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\tilde u_{\mathrm r}$, a non-compact ray;
-- the **rotor arc** $\theta_{\mathrm{axr}}\mapsto r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, a great semicircle from $e_t$ to $-e_t$.
+- the **scale line** $\varrho\mapsto \varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a half-line;
+- the **phase circle** $\theta_{\mathrm{pha}}\mapsto \varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a circle cut to a half-open interval by the branch;
+- the **boost hyperbola** $\theta_{\mathrm{rpd}}\mapsto \varrho e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\tilde u_{\mathrm r}$, a non-compact ray;
+- the **rotor arc** $\theta_{\mathrm{axr}}\mapsto \varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, a great semicircle from $e_t$ to $-e_t$.
 
 ### The Conformal Factor
 
 Under the two-sided operator $\tilde QX\tilde Q^{*}$, the quaternionic norm of $X$ is multiplied by
 
 $$
-r^{4}=\exp(4\ln r)=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^{2},
+\varrho^{4}=\exp(4\ln \varrho)=\bigl\lvert\langle\tilde Q\rangle_{\natural}\bigr\rvert^{2},
 $$
 
-so lengths are multiplied by $r^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert$. The scale exponent is a quarter of the logarithm of the conformal factor; the phase, the boost and the rotor are isometries of the form.
+so lengths are multiplied by $\varrho^{2}=\lvert\langle\tilde Q\rangle_{\natural}\rvert$. The scale exponent is a quarter of the logarithm of the conformal factor; the phase, the boost and the rotor are isometries of the form.
 
 ## The Two Halves
 
@@ -1296,7 +1296,7 @@ $$
 \tilde U_{\mathrm b}=a\,e_t+i\vec w,\qquad a\in\mathbb R,\quad \vec w\in\mathbb R^{3},\qquad a^{2}-\lvert\vec w\rvert^{2}=1 .
 $$
 
-The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is $*$-unitary, that is, on the elements $re^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
+The boost is the only factor whose vector part lies in the second half, and it is the factor that carries the indefiniteness: its scalar part is at least one and its vector part is tied to it by the norm-one condition. The boost is trivial exactly when the unit factor is $*$-unitary, that is, on the elements $\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$; in particular it is trivial on both halves.
 
 This is the precise sense in which the biquaternion case is the complexification of the quaternion one. The scale and the rotor are the quaternion polar decomposition; the complex scalar adds the phase, one compact direction, and the second half adds the boost, three non-compact ones.
 
@@ -1307,21 +1307,21 @@ The four factors can be bracketed in three ways. Each bracketing is a **pairing*
 ### The quaternion pairing
 
 $$
-\tilde Q=\bigl(r\tilde u_{\mathrm r}\bigr)\bigl(e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr).
+\tilde Q=\bigl(\varrho\tilde u_{\mathrm r}\bigr)\bigl(e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr).
 $$
 
-The first factor is the real quaternion $r\tilde u_{\mathrm r}$: a positive scale times a unit real quaternion. The second is the phase times the boost carried into the rotor frame. The pairing is partial: its construction divides by the part of $\tilde Q$ whose four coefficients are real, so it is available only where that part is nonzero.
+The first factor is the real quaternion $\varrho\tilde u_{\mathrm r}$: a positive scale times a unit real quaternion. The second is the phase times the boost carried into the rotor frame. The pairing is partial: its construction divides by the part of $\tilde Q$ whose four coefficients are real, so it is available only where that part is nonzero.
 
 ### The Hamilton root pairing
 
 $$
-\tilde Q=(re^{i\theta_{\mathrm{pha}}})\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr)=\Rho\,\tilde U .
+\tilde Q=(\varrho e^{i\theta_{\mathrm{pha}}})\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr)=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U .
 $$
 
 The first factor is the complex modulus. The second is the unit factor, read on the root of $-e_t$ parallel to the vector part. With $\tilde Q=Q_te_t+\vec Q$, $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ and $B$ a chosen square root of $B^{2}$,
 
 $$
-\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta,\qquad \vec U=\frac{\vec Q}{B},\qquad \cos\Theta=\frac{Q_t}{\Rho},\qquad \sin\Theta=\frac{B}{\Rho}.
+\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta,\qquad \vec U=\frac{\vec Q}{B},\qquad \cos\Theta=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}},\qquad \sin\Theta=\frac{B}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
 
 The pairing is partial: the normalisation divides by $B$, so the vector part must be non-null, $B^{2}\neq0$.
@@ -1329,7 +1329,7 @@ The pairing is partial: the normalisation divides by $B$, so the vector part mus
 ### The Cartan Hermitian pairing
 
 $$
-\tilde Q=\bigl(r\tilde U_{\mathrm b}\bigr)\bigl(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
+\tilde Q=\bigl(\varrho\tilde U_{\mathrm b}\bigr)\bigl(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\bigr)=\tilde Q_H\,\tilde Q_0 .
 $$
 
 The first factor is Hermitian positive definite, the second $*$-unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
@@ -1338,9 +1338,9 @@ The three pairings are collected in the table.
 
 | pairing | first factor | second factor | available when |
 |---|---|---|---|
-| quaternion | $r\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
-| Hamilton root | $\Rho$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
-| Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
+| quaternion | $\varrho\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
+| Hamilton root | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
+| Cartan Hermitian | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 
 The two partial domains are not nested, and the Cartan domain contains both. The elements of the $\natural$-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
 
@@ -1381,7 +1381,7 @@ of real dimensions $1+1+3+3=8$. The boost exponent is in $\mathfrak{p}$ and the 
 A **single logarithm** of $\tilde Q$ is an element $\operatorname{Log}\tilde Q$ with $\exp(\operatorname{Log}\tilde Q)=\tilde Q$. Since $\mathbb{B}\cong M_2(\mathbb{C})$ and every invertible complex matrix has a logarithm, the exponential is surjective onto the invertibles. A single logarithm is related to the Cartan logarithm by
 
 $$
-\operatorname{Log}\tilde Q=\ln r+i\theta_{\mathrm{pha}}+\operatorname{Log}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),
+\operatorname{Log}\tilde Q=\ln \varrho+i\theta_{\mathrm{pha}}+\operatorname{Log}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr),
 $$
 
 where the last term is a logarithm inside $\mathfrak{gl}(2,\mathbb{C})$, not inside $\mathfrak{sl}(2,\mathbb{C})$; its trace may be a nonzero multiple of $2\pi i$.
@@ -1389,7 +1389,7 @@ where the last term is a logarithm inside $\mathfrak{gl}(2,\mathbb{C})$, not ins
 The **formal exponent** is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln \varrho+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
 $$
 
 It is not the single logarithm in general. The **log defect** is the Baker–Campbell–Hausdorff correction, whose first term is
@@ -1409,9 +1409,9 @@ The exponential is not injective. Its kernel contains the central periods $2\pi 
 The polar parameters do not cut the fibre of the exponential to one point: the four exponents sum to the formal exponent, which is not a logarithm. What they cut to one point, up to the axis degeneracies, is the fibre of the **word map**
 
 $$
-(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})
+(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})
 \longmapsto
-r e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+\varrho e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
@@ -1450,16 +1450,16 @@ The operator form of this single exponent is in §*The Exponential at the Wall* 
 The **formal exponent** is the sum of the four exponents,
 
 $$
-\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
+\tilde Q_{\log}=\ln \varrho+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}.
 $$
 
 It is not the logarithm. The true logarithm is
 
 $$
-\operatorname{Log}\tilde Q=\ln r+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
+\operatorname{Log}\tilde Q=\ln \varrho+i\theta_{\mathrm{pha}}+i\pi\frac{1-\varepsilon}{2}+\vec\Upsilon,
 $$
 
-because $Q=\Rho\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\Rho+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\Rho+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
+because $Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\operatorname{Log}\tilde U=\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}$, so $\operatorname{Log}\tilde Q=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+\operatorname{Log}\tilde U$; equivalently, $\log Q_t=\log\varrho\,e^{i\theta_{\mathrm{pha}}}+i\pi\frac{1-\varepsilon}{2}$ and the unipotent part adds $\vec\Upsilon$. The **log defect** is therefore explicit:
 
 $$
 \boxed{\;
@@ -1482,7 +1482,7 @@ $$
 
 with the sign of $\varepsilon$; the exact log defect also contains the nonlinear terms $\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}-\frac{\theta_{\mathrm{rpd}}}{2}$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}-\frac{\theta_{\mathrm{axr}}}{2}$.
 
-On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln r+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln r+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\Rho$ for every invertible $\vec u_{\mathrm r}$.
+On the scalar line the cross term is absent, and the formal exponent is a logarithm: for $\varepsilon=+1$ it is $\ln \varrho+i\theta_{\mathrm{pha}}$, and for $\varepsilon=-1$ it is $\ln \varrho+i\theta_{\mathrm{pha}}+\pi\vec u_{\mathrm r}$, whose exponential is $-\varrho\,e^{i\theta_{\mathrm{pha}}}$ for every invertible $\vec u_{\mathrm r}$.
 
 ## The Group Law
 
@@ -1579,20 +1579,20 @@ and the norm-one group is the special linear group.
 The word becomes
 
 $$
-M=r\,e^{i\theta_{\mathrm{pha}}}\,M_{\mathrm b}\,M_{\mathrm r},\qquad M_{\mathrm b}=M_{\mathrm b}^{\dagger},\quad M_{\mathrm b}>0,\quad \det M_{\mathrm b}=1,\quad M_{\mathrm r}\in SU(2),
+M=\varrho\,e^{i\theta_{\mathrm{pha}}}\,M_{\mathrm b}\,M_{\mathrm r},\qquad M_{\mathrm b}=M_{\mathrm b}^{\dagger},\quad M_{\mathrm b}>0,\quad \det M_{\mathrm b}=1,\quad M_{\mathrm r}\in SU(2),
 $$
 
 and the matrix polar decomposition groups it into two:
 
 $$
-M=P\,V,\qquad P=(MM^{\dagger})^{1/2}=r\,M_{\mathrm b},\qquad V=e^{i\theta_{\mathrm{pha}}}\,M_{\mathrm r}.
+M=P\,V,\qquad P=(MM^{\dagger})^{1/2}=\varrho\,M_{\mathrm b},\qquad V=e^{i\theta_{\mathrm{pha}}}\,M_{\mathrm r}.
 $$
 
-The positive factor is the scale times the boost, of determinant $r^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant $e^{2i\theta_{\mathrm{pha}}}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
+The positive factor is the scale times the boost, of determinant $\varrho^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant $e^{2i\theta_{\mathrm{pha}}}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
 
 | factor | matrix | the determinant of the image | action |
 |---|---|---|---|
-| scale | $rI$, $r>0$ | $r^{2}$ | dilation of ratio $r$ |
+| scale | $rI$, $\varrho>0$ | $\varrho^{2}$ | dilation of ratio $\varrho$ |
 | central phase | $e^{i\theta_{\mathrm{pha}}} I$ | $e^{2i\theta_{\mathrm{pha}}}$ | central multiplication |
 | boost | $M_{\mathrm b}$, Hermitian positive | $1$ | congruence $X\mapsto M_{\mathrm b}XM_{\mathrm b}^{\dagger}$ |
 | rotor | $M_{\mathrm r}\in SU(2)$ | $1$ | conjugation $X\mapsto M_{\mathrm r}XM_{\mathrm r}^{-1}$ |
@@ -1615,7 +1615,7 @@ of real dimensions $4$ and $4$. The scale and the boost lie in $\mathfrak H$; th
 
 ### The Singular Values
 
-The two scales of the matrix are $r e^{\theta_{\mathrm{rpd}}/2}$ and $r e^{-\theta_{\mathrm{rpd}}/2}$, each with multiplicity one in the regular sector. Their product is $r^2=|\Rho|^2$, and their ratio is $e^{\theta_{\mathrm{rpd}}}$. The determinant is $N=\Rho^2$, of modulus $r^2$.
+The two scales of the matrix are $\varrho e^{\theta_{\mathrm{rpd}}/2}$ and $\varrho e^{-\theta_{\mathrm{rpd}}/2}$, each with multiplicity one in the regular sector. Their product is $\varrho^2=|\varrho\,e^{i\theta_{\mathrm{pha}}}|^2$, and their ratio is $e^{\theta_{\mathrm{rpd}}}$. The determinant is $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$, of modulus $\varrho^2$.
 
 ### The Picture at the Wall
 
@@ -1631,7 +1631,7 @@ $$
 \mathcal N\neq0.
 $$
 
-The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $r e^{\theta_{\mathrm{rpd}}/2}$ and $r e^{-\theta_{\mathrm{rpd}}/2}$. The polar factors are the positive and $*$-unitary factors of the block, and the $*$-unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.
+The matrix is $Q_t$ times a single unipotent Jordan block. Its eigenvalue is $Q_t$, with algebraic multiplicity two and geometric multiplicity one; its determinant is $Q_t^2$; its two singular values are $\varrho e^{\theta_{\mathrm{rpd}}/2}$ and $\varrho e^{-\theta_{\mathrm{rpd}}/2}$. The polar factors are the positive and $*$-unitary factors of the block, and the $*$-unitary factor is the rotor. The sign $\varepsilon$ is the sign of the scalar part of the unit block.
 
 The spectral reading is degenerate in the matrix picture: the matrix has no eigenbasis, the two eigenvalues coincide, and the diagonal form does not exist. The polar decomposition still exists, because it is the Cartan decomposition of $SL(2,\mathbb{C})$, which does not require diagonalizability. This is the matrix form of the contrast between the two cases.
 
@@ -1640,25 +1640,25 @@ The spectral reading is degenerate in the matrix picture: the matrix has no eige
 The word also acts. On the module $S=\mathbb{C}^2$ left multiplication is
 
 $$
-\psi\longmapsto\mathsf M(\tilde Q)\,\psi=\Rho\,\mathsf M(\tilde U)\,\psi ,
+\psi\longmapsto\mathsf M(\tilde Q)\,\psi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathsf M(\tilde U)\,\psi ,
 $$
 
-with $\mathsf M(\tilde U)\in SL_2(\mathbb{C})$. The scalar $\Rho$ needs no module of its own: by Schur's lemma the centre acts on a simple module by a scalar, so the scale and the phase multiply the module instead of enlarging it. They produce a one-dimensional representation of the scaling group,
+with $\mathsf M(\tilde U)\in SL_2(\mathbb{C})$. The scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}$ needs no module of its own: by Schur's lemma the centre acts on a simple module by a scalar, so the scale and the phase multiply the module instead of enlarging it. They produce a one-dimensional representation of the scaling group,
 
 $$
-\chi(\Rho)=\Rho ,
+\chi(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varrho\,e^{i\theta_{\mathrm{pha}}} ,
 $$
 
-and the module on which the general element acts is the spinor module **twisted by $\chi$**, written $S\otimes\chi$. The norm-one case $\Rho=1$ is the untwisted case; the untwisted operators are the norm-one elements, the double cover of the Lorentz group.
+and the module on which the general element acts is the spinor module **twisted by $\chi$**, written $S\otimes\chi$. The norm-one case $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$ is the untwisted case; the untwisted operators are the norm-one elements, the double cover of the Lorentz group.
 
-A **spinor** is a vector of the module, not the operator and not the rotor. The word writes the operator as $\Rho\tilde U$; the spinor is what that operator acts on. The distinction matters because the operator has more factors than the module can distinguish: the module sees the scale and the phase only through the single scalar $\Rho$.
+A **spinor** is a vector of the module, not the operator and not the rotor. The word writes the operator as $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$; the spinor is what that operator acts on. The distinction matters because the operator has more factors than the module can distinguish: the module sees the scale and the phase only through the single scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}$.
 
 ### The Labels of the Twisted Representations
 
 A character of the scaling group is
 
 $$
-\chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=re^{i\theta_{\mathrm{pha}}},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
+\chi_{a,b}(A)=A^{a}\bar A^{b},\qquad A=\varrho e^{i\theta_{\mathrm{pha}}},\quad a,b\in\mathbb{C},\quad a-b\in\mathbb{Z},
 $$
 
 the last condition making the character single-valued on $\mathbb{C}^{\times}$. The irreducible smooth finite-dimensional modules of the group of invertibles are
@@ -1675,7 +1675,7 @@ $$
 
 The defining module of $GL_2(\mathbb{C})$ is $(\tfrac12,0)_{(1,0)}$: a spinor is multiplied by $A$, which is a square root of the determinant character, since $\det(AI)=A^{2}$.
 
-Reality and unitarity read off the character. Complex conjugation exchanges the two factors and conjugates the character, $\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)}$, so a module is self-conjugate exactly when $j=j'$ and $b=a$. And $\lvert\chi_{a,b}(A)\rvert=r^{\mathrm{Re}(a+b)}$, so the twist is $*$-unitary exactly when $\mathrm{Re}(a+b)=0$; even then the norm-one part contributes no nontrivial finite-dimensional $*$-unitary representation, which is the non-unitarity recorded for $SL_2(\mathbb{C})$ in the rotations article.
+Reality and unitarity read off the character. Complex conjugation exchanges the two factors and conjugates the character, $\overline{(j,j')_{(a,b)}}=(j',j)_{(b,a)}$, so a module is self-conjugate exactly when $j=j'$ and $b=a$. And $\lvert\chi_{a,b}(A)\rvert=\varrho^{\mathrm{Re}(a+b)}$, so the twist is $*$-unitary exactly when $\mathrm{Re}(a+b)=0$; even then the norm-one part contributes no nontrivial finite-dimensional $*$-unitary representation, which is the non-unitarity recorded for $SL_2(\mathbb{C})$ in the rotations article.
 
 ### What the Algebra Carries
 
@@ -1683,7 +1683,7 @@ The algebra is four-dimensional over $\mathbb{C}$, and its natural self-actions 
 
 - **Left multiplication.** $\mathbb{B}\cong S\oplus S$ as a left module, so $L$ carries two copies of $(\tfrac12,0)_{(1,0)}$.
 - **Right multiplication.** $\mathbb{B}\cong S^{*}\oplus S^{*}$ with $S^{*}\cong S$, so $R$ carries two copies of the same chirality, twisted the same way. Neither one-sided action produces the opposite handedness.
-- **The two-sided operator.** It is irreducible on the algebra and carries $(\tfrac12,\tfrac12)_{(1,1)}$, the four-vector scaled by $r^{2}$.
+- **The two-sided operator.** It is irreducible on the algebra and carries $(\tfrac12,\tfrac12)_{(1,1)}$, the four-vector scaled by $\varrho^{2}$.
 - **Nothing higher.** The modules of $M_2(\mathbb{C})$ are direct sums of copies of $S$, so every irreducible summand is the spinor and the dimension is even. The modules $(1,0)$, $(1,1)$ and $(\tfrac32,0)$ are not of that form. The tower is generated by the symmetric powers of $S$ and of $\bar S$, built in the tensor category.
 
 The regular modules themselves are *The Category of Modules*; the two-sided operator that carries the four-vector is *Two-Sided Operators on the N-Regular Sector*.
@@ -1694,11 +1694,11 @@ The four factors are computed in five steps.
 
 1. **The norm.** Compute $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$. If it is zero, stop: the element is $\natural$-degenerate and has no four-factor word.
 
-2. **The modulus.** Compute $\Rho$ from the branch formula of §*The Two Factors*. The result satisfies $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$ and lies in $\mathcal H$.
+2. **The modulus.** Compute $\varrho\,e^{i\theta_{\mathrm{pha}}}$ from the branch formula of §*The Two Factors*. The result satisfies $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$ and lies in $\mathcal H$.
 
-3. **The scale and the phase.** Put $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\arg\Rho$, so that $e^{i\theta_{\mathrm{pha}}}=\Rho/r$.
+3. **The scale and the phase.** Put $\varrho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}$ and $\theta_{\mathrm{pha}}=\tfrac12\arg\langle\tilde Q\rangle_{\natural}$, so that $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of the norm.
 
-4. **The unit factor.** Put $\tilde U=\tilde Q/\Rho$ and check $\langle\tilde U\rangle_{\natural}=1$.
+4. **The unit factor.** Put $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and check $\langle\tilde U\rangle_{\natural}=1$.
 
 5. **The boost and the rotor.** Compute $\tilde U\tilde U^{*}$ and $s=\operatorname{Sc}(\tilde U\tilde U^{*})$, then
 
@@ -1712,7 +1712,7 @@ The four factors are computed in five steps.
     $$
     \tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*},\qquad
     \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t,\qquad
-    r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}=\tilde Q .
+    \varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}=\tilde Q .
     $$
 
 The five steps use one square root of a complex number and one of a real number, and no spectral decomposition.
@@ -1731,10 +1731,10 @@ $$
 \langle\tilde Q\rangle_{\natural}=(1+i)^{2}+1+i^{2}=2i+1-1=2i,
 $$
 
-so $\lvert N\rvert=2$, $a=0$, $b=2$, and the principal root is $\Rho=1+i$. The scale and the phase are
+so $\lvert N\rvert=2$, $a=0$, $b=2$, and the principal root is $\varrho\,e^{i\theta_{\mathrm{pha}}}=1+i$. The scale and the phase are
 
 $$
-r=\sqrt2,\qquad \theta_{\mathrm{pha}}=\frac{\pi}{4},\qquad e^{i\theta_{\mathrm{pha}}}=\frac{1+i}{\sqrt2}.
+\varrho=\sqrt2,\qquad \theta_{\mathrm{pha}}=\frac{\pi}{4},\qquad e^{i\theta_{\mathrm{pha}}}=\frac{1+i}{\sqrt2}.
 $$
 
 The unit factor is
@@ -1760,12 +1760,12 @@ The four factors are collected in the table.
 
 | factor | value | quaternionic norm |
 |---|---|---|
-| $r$ | $\sqrt2$ | $r^{2}=2$ |
+| $\varrho$ | $\sqrt2$ | $\varrho^{2}=2$ |
 | $\theta_{\mathrm{pha}}$ | $\pi/4$ | $e^{2i\theta_{\mathrm{pha}}}=i$ |
 | $\tilde U_{\mathrm b}$ | $(3e_t-i\vec e_x+i\vec e_y+i\vec e_z)/\sqrt6$ | $1$ |
 | $\tilde u_{\mathrm r}$ | $\sqrt{2/3}\,e_t+\vec e_x/\sqrt6+\vec e_y/\sqrt6$ | $1$ |
 
-The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=r\tilde U_{\mathrm b}$, of norm $r^{2}=2$, and the $*$-unitary factor is $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, of norm $e^{2i\theta_{\mathrm{pha}}}=i$; their product has norm $2i$, the norm of the element.
+The checks hold: $\tilde U_{\mathrm b}^{2}=\tilde U\tilde U^{*}$, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$, and $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q$. The Hermitian factor is $\tilde Q_H=\varrho\tilde U_{\mathrm b}$, of norm $\varrho^{2}=2$, and the $*$-unitary factor is $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, of norm $e^{2i\theta_{\mathrm{pha}}}=i$; their product has norm $2i$, the norm of the element.
 
 The example is on the wall, $B^{2}=1+i^{2}=0$: it is an element of $\Sigma_{10}$, and its word is the unipotent case of §*The Unipotent Unit Factor*. An off-wall case is checked in §*The Result in Terms of the Coordinates*, and sixteen further cases, off the wall and on it, are in *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -1775,7 +1775,7 @@ The sector is the complement of the union of two cones.
 
 | Wall | Equation | Stratum | What happens to the word |
 |---|---|---|---|
-| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $r\to0$, $\theta_{\mathrm{rpd}}\to\infty$ |
+| null cone | $N=0$ | $\Sigma_{01}\cup\Sigma_{00}$ | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$ |
 | spectral cone | $B^2=0$ | $\Sigma_{10}\cup\Sigma_{00}$ | word finite, eigenbasis degenerates |
 
 The two cones meet at $\Sigma_{00}$, the nilpotent stratum. The two walls behave differently, and the difference is the subject of this section.
@@ -1860,15 +1860,15 @@ The complete polar decomposition of an $\natural$-regular biquaternion is the mo
 |---|---|
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 | Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0$, $\tilde Q_H$ positive definite, $\tilde Q_0$ $*$-unitary |
-| modulus–unit | $\tilde Q=\Rho\tilde U$, $\Rho\in\mathcal H$, $\langle\tilde U\rangle_{\natural}=1$ |
-| modulus | $\Rho^{2}=\langle\tilde Q\rangle_{\natural}$, $\Rho\in\mathcal H$ |
-| scale and phase | $r=\lvert\Rho\rvert$, $\theta_{\mathrm{pha}}=\arg\Rho$, with $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
+| modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$, $\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathcal H$, $\langle\tilde U\rangle_{\natural}=1$ |
+| modulus | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$, $\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathcal H$ |
+| scale and phase | $\varrho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}$, $\theta_{\mathrm{pha}}=\tfrac12\arg\langle\tilde Q\rangle_{\natural}$ |
 | boost | $\tilde U_{\mathrm b}=(\tilde U\tilde U^{*})^{1/2}$, Hermitian positive definite, norm one |
 | rotor | $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$, unit real quaternion |
-| word | $\tilde Q=re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
+| word | $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | dimensions | $8=2+6=1+1+3+3$ |
-| two readings | $\tilde Q_H=r\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
-| spinor module | $S\otimes\chi$ with $\chi(\Rho)=\Rho$; the irreducible modules $(j,j')_{(a,b)}$, $a-b\equiv2j+2j'\pmod2$ |
+| two readings | $\tilde Q_H=\varrho\tilde U_{\mathrm b}$, $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
+| spinor module | $S\otimes\chi$ with $\chi(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varrho\,e^{i\theta_{\mathrm{pha}}}$; the irreducible modules $(j,j')_{(a,b)}$, $a-b\equiv2j+2j'\pmod2$ |
 | group of invertibles | $SL_2(\mathbb C)\cong H^{3}\times S^{3}$ |
 | group of invertibles | $\mathbb B^{\times}\cong GL_2(\mathbb C)$, maximal compact $U(2)$, fundamental group $\mathbb Z$ |
 | pairings | quaternion, Hamilton root, Cartan Hermitian; the first two partial, the last total |
@@ -1876,14 +1876,14 @@ The complete polar decomposition of an $\natural$-regular biquaternion is the mo
 | component form | $\tilde U=(c_{\mathrm b}c_{\mathrm r}-is_{\mathrm b}s_{\mathrm r}c)e_t+is_{\mathrm b}c_{\mathrm r}\vec u_{\mathrm b}+c_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm r}+is_{\mathrm b}s_{\mathrm r}\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ |
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
 | eigenbasis | $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
-| unit-factor eigenvalues | $\mu_\pm=\lambda_\pm/\Rho=U_t\pm i\sqrt{1-U_t^2}$ |
+| unit-factor eigenvalues | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})=U_t\pm i\sqrt{1-U_t^2}$ |
 | normal case | $\mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}$, axes $\pm i\vec{Ζ}$ |
 | normal criterion | $\vec Q\times\overline{\vec Q}=0$ |
 | spectral wall | $B^2=0\iff U_t=\pm1$ |
-| explicit data | §*The Result in Terms of the Coordinates*: boxes for $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ |
+| explicit data | §*The Result in Terms of the Coordinates*: boxes for $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\tilde U_{\mathrm b},\tilde u_{\mathrm r},\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ |
 | domain, wall | $N\neq0$, $B^2=0$ |
 | normal form | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ |
-| unit factor, wall | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $\varepsilon=Q_t/\Rho=\pm1$ |
+| unit factor, wall | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ |
 | scalar constraint | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$ |
 | axis constraint | $\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ |
 | Jordan part | $\theta_{\mathrm{rpd}}>0$, $\theta_{\mathrm{axr}}\notin\{0,\pi,2\pi\}$, $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ |
@@ -1903,10 +1903,10 @@ The complete polar decomposition of an $\natural$-regular biquaternion is the mo
 | diagonal in the eigenbasis | always | exactly when normal |
 | survives $B^2\to0$ | no on the Jordan part | yes |
 | real dimension | $8$ | $8$ |
-| shared data | $r,\theta_{\mathrm{pha}},U_t$ | $r,\theta_{\mathrm{pha}},U_t$ |
+| shared data | $\varrho,\theta_{\mathrm{pha}},U_t$ | $\varrho,\theta_{\mathrm{pha}},U_t$ |
 The last row is the statement of the article: the spectral reading is defined on the open sector, the polar reading is defined on the whole group of invertibles.
 
-The four statements to carry away are these. On the $\natural$-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor $*$-unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\Rho$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\Rho)=\Rho$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
+The four statements to carry away are these. On the $\natural$-regular set the general pair sharpens, the Hermitian factor becoming positive definite and the isometry factor $*$-unitary. The pair then splits twice, the modulus into a scale and a phase and the unit factor into a boost and a rotor, and the four factors fill the eight dimensions of the algebra. The regroupings of the four factors give the two-factor readings and the three pairings, of which the Cartan Hermitian pairing is the general polar decomposition itself. Read on the spinor module $S=\mathbb{C}^{2}$, left multiplication acts by the scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the norm-one operator $\tilde U$; the scale and the phase enter through the character $\chi(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varrho\,e^{i\theta_{\mathrm{pha}}}$, and the irreducible modules are the $(j,j')_{(a,b)}$ with $a-b\equiv2j+2j'\pmod2$.
 
 ### What the Sector Shows
 
@@ -1925,19 +1925,19 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 |---|---|
 | $\tilde Q$ | an $\natural$-regular biquaternion |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, complex and nonzero |
-| $\Rho$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
-| $r$ | the scale, $\lvert\Rho\rvert$ |
-| $\theta_{\mathrm{pha}}$ | the central phase angle, $\arg\Rho$, with $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
-| $\tilde U$ | the unit factor, $\tilde Q/\Rho$, of norm one |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
+| $\varrho$ | the scale, $\varrho$ |
+| $\theta_{\mathrm{pha}}$ | the central phase angle, $\arg(\varrho\,e^{i\theta_{\mathrm{pha}}})$, with $e^{i\theta_{\mathrm{pha}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}/\varrho$ |
+| $\tilde U$ | the unit factor, $\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, of norm one |
 | $\tilde U_{\mathrm b}$ | the boost, $(\tilde U\tilde U^{*})^{1/2}$ |
 | $\tilde u_{\mathrm r}$ | the rotor, $\tilde U_{\mathrm b}^{-1}\tilde U$ |
-| $\tilde Q_H$ | the Hermitian factor, $r\tilde U_{\mathrm b}$ |
+| $\tilde Q_H$ | the Hermitian factor, $\varrho\tilde U_{\mathrm b}$ |
 | $\tilde Q_0$ | the $*$-unitary factor, $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
 | $s$ | $\operatorname{Sc}(\tilde U\tilde U^{*})$ |
 | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | $H^{3}$ | the Hermitian positive elements of norm one |
 | $S$ | the spinor module $\mathbb{C}^{2}$ |
-| $\chi$, $\chi_{a,b}$ | the characters $\chi(\Rho)=\Rho$ and $\chi_{a,b}(A)=A^{a}\bar A^{b}$ |
+| $\chi$, $\chi_{a,b}$ | the characters $\chi(\varrho\,e^{i\theta_{\mathrm{pha}}})=\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $\chi_{a,b}(A)=A^{a}\bar A^{b}$ |
 | $(j,j')_{(a,b)}$ | the irreducible module $V_j\boxtimes V_{j'}\otimes\chi_{a,b}$ |
 | $\mathcal H$ | the principal half-plane of the modulus |
 | Symbol | Meaning |
@@ -1947,8 +1947,8 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $N=\langle\tilde Q\rangle_{\natural}$ | the reduced product $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | $B^2$ | the vector form $Q_x^2+Q_y^2+Q_z^2$ |
 | $\Sigma_{11}$ | the N-regular, spectrally regular sector |
-| $\Rho=r e^{i\theta_{\mathrm{pha}}}$ | the modulus, principal square root of $N$ |
-| $\tilde U=\tilde Q/\Rho$ | the unit factor |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ | the modulus, principal square root of $N$ |
+| $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the unit factor |
 | $\tilde U_{\mathrm b},\tilde u_{\mathrm r}$ | the Hermitian positive factor and the rotor, $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | $\theta_{\mathrm{rpd}}$ | the rapidity |
 | $\theta_{\mathrm{axr}}$ | the rotor angle |
@@ -1957,7 +1957,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\vec{Ζ}=-i\vec Q/B$ | the root of one carried by the element |
 | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the spectral idempotents |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
-| $\mu_\pm=\lambda_\pm/\Rho$ | the eigenvalues of the unit factor |
+| $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor |
 | $\tilde H,\tilde K$ | the Cartan pair |
 | $\tilde Q_{\log}$ | the formal exponent |
 | $\mathsf M(\tilde Q)$ | the matrix $Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z$ |
@@ -1970,7 +1970,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction on the wall, $\vec\Upsilon^2=0$ |
 | $\vec A=\operatorname{Re}\vec\Upsilon$, $\vec B=\operatorname{Im}\vec\Upsilon$ | the real and imaginary parts, $\vec A\cdot\vec B=0$ |
 | $a=\lVert\vec A\rVert=\lVert\vec B\rVert$ | the common length on the wall |
-| $\varepsilon=Q_t/\Rho=\pm1$ | the sign of the unit factor on the wall |
+| $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | the sign of the unit factor on the wall |
 | $Q_\mu=q_\mu+iq'_\mu$ | the eight real coordinates |
 | $\vec q=(q_x,q_y,q_z)$, $\vec q'=(q'_x,q'_y,q'_z)$ | the real and imaginary vector coordinates |
 | $\sigma=\vec\Upsilon_1\cdot\vec\Upsilon_2$ | the invariant of a product on the wall |

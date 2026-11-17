@@ -7,10 +7,10 @@ This article substitutes the complete polar decomposition into the coupled Proca
 **The substitution.**
 
 $$
-\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
 
 **The word is not the free article's word, and the difference is the article's first point.** The free Proca field is real, its word has two factors and four parameters, and it splits into two branches according to the sign of the Minkowski square. The coupled field is complex, its square is not a sign, the branch split has nothing to split, and the word that replaces it has four factors and eight parameters. The two factors the free word had to drop — the central phase and the rotor — return with the charge, and §*The Word* proves that in the algebra rather than asserting it.
 
@@ -31,8 +31,8 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0
 $$
 \tilde A_\Phi=
 \begin{cases}
-\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}), & \langle\tilde A_\Phi\rangle_\natural=-r^{2}<0,\\[2pt]
-r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u)\,, & \langle\tilde A_\Phi\rangle_\natural=+r^{2}>0,
+\varepsilon\,i\,\varrho\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}), & \langle\tilde A_\Phi\rangle_\natural=-\varrho^{2}<0,\\[2pt]
+\varrho\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u)\,, & \langle\tilde A_\Phi\rangle_\natural=+\varrho^{2}>0,
 \end{cases}
 $$
 
@@ -47,14 +47,14 @@ with the rapidity signed on the spacelike branch and the axis locked to the dire
 **The norm of the word.** The quaternionic norm of the coupled word is the phase squared times the scale squared:
 
 $$
-\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}},
+\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},
 $$
 
 exactly, for every value of the other six parameters. The check is exact to machine precision on random draws. Two consequences follow and they are the article's structural core.
 
-**The N-regular set is $r>0$ and nothing else.** The norm vanishes only at $r=0$, so the chart's domain is the open half-line in $r$ times the six angular parameters, and the zero-divisor cone is the boundary $r=0$. The free article's cone was reached by a lightlike four-vector and it was a genuine boundary of the field; here it is the origin of the polar chart and only that.
+**The N-regular set is $\varrho>0$ and nothing else.** The norm vanishes only at $\varrho=0$, so the chart's domain is the open half-line in $\varrho$ times the six angular parameters, and the zero-divisor cone is the boundary $\varrho=0$. The free article's cone was reached by a lightlike four-vector and it was a genuine boundary of the field; here it is the origin of the polar chart and only that.
 
-**The phase is the argument of the norm, and that is why the charge exists.** For a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$. For a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. The free field's discrete sign and the coupled field's continuous phase are the same slot of the same word, read on the two carriers; the charge is what that slot becomes when it can move continuously.
+**The phase is the argument of the norm, and that is why the charge exists.** For a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$. For a complex field the norm is a complex number of modulus $\varrho^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. The free field's discrete sign and the coupled field's continuous phase are the same slot of the same word, read on the two carriers; the charge is what that slot becomes when it can move continuously.
 
 **The two branches are gone and nothing replaces them.** The free article's branch split is the sign of the norm, and the coupled norm has no sign. There is no third word and no second chart: the four-factor word covers the whole N-regular set of $\mathbb{B}$, both the elements whose Minkowski square is positive and those whose square is negative and those whose square is neither, because the square is now a complex number and complex numbers have no sign.
 
@@ -65,7 +65,7 @@ exactly, for every value of the other six parameters. The check is exact to mach
 $$
 \tilde A^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde A
 =\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
-=\frac{\partial\ln r}{\partial R_\mu}
+=\frac{\partial\ln \varrho}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}\Big|_{\text{frame}}
 +\frac{i\,ϙ}{\hbar}A_\mu .
@@ -77,7 +77,7 @@ The last written term is the frame's share, and the point of the display is that
 
 $$
 \tilde A^{-1}\partial_\mu\tilde A
-=\frac{\partial_\mu r}{r}+i\partial_\mu\theta_{\mathrm{pha}}
+=\frac{\partial_\mu \varrho}{\varrho}+i\partial_\mu\theta_{\mathrm{pha}}
 +\tilde u^{-1}\Gamma_\mu\tilde u+\rho_\mu .
 $$
 
@@ -104,7 +104,7 @@ with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar
 **The exact infinitesimal statement.** Let $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ be a constant central unit and let $\tilde A_2=\lambda\tilde A$. Then
 
 $$
-\tilde A_2=r\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
+\tilde A_2=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,
 \tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,
 \tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
@@ -146,13 +146,13 @@ that is: the second-order operator becomes the first-order brackets contracted w
 *The rotor is what costs.* With the rotor trivial the length is the square of the scale,
 
 $$
-\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=\varrho^{2}
 \qquad\text{whenever } \theta_{\mathrm{axr}}=0,
 $$
 
 for every rapidity and every boost axis, to $10^{-14}$ over random draws. The reason is that the boost is a Lorentz transformation of the four-vector and the invariant length is Lorentz invariant, so the rapidity cannot enter.
 
-*The rapidity costs nothing when the two axes are collinear.* With the rotor engaged and its axis parallel or antiparallel to the boost's axis, the ratio $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$ is independent of the rapidity: it is $0.7648$ at rapidity $0$, $2$, and $5$ alike for $\theta_{\mathrm{axr}}=0.7$. With the axes perpendicular the same angle gives $0.7648$ at zero rapidity, $0.7010$ at rapidity $1$, and $0.4401$ at rapidity $2$.
+*The rapidity costs nothing when the two axes are collinear.* With the rotor engaged and its axis parallel or antiparallel to the boost's axis, the ratio $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/\varrho^{2}$ is independent of the rapidity: it is $0.7648$ at rapidity $0$, $2$, and $5$ alike for $\theta_{\mathrm{axr}}=0.7$. With the axes perpendicular the same angle gives $0.7648$ at zero rapidity, $0.7010$ at rapidity $1$, and $0.4401$ at rapidity $2$.
 
 **What the chart does not give.** The general value is not displayed here as a closed expression in the six angles: it is the scalar part of a product of four units, and its interpolation between the two limits above is the frame's business rather than the scale's. What the chart does give is the division: the mass term is the one object in the action that sees the frame's non-Lorentz part, and it sees it only through the angle between the rotor's axis and the boost's.
 
@@ -184,7 +184,7 @@ which is the statement that the covariant divergence of the word vanishes. The e
 
 ## Open Questions
 
-**Whether the chart's mass-term formula has a closed form in all six angular parameters.** The article states the exact reduction to $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ and the exact value $r^{2}$ on the trivial-rotor slice. The general expression is a product of two unit elements' squares and it is not displayed; whether it factorises into a rapidity part and an angle part is not settled here.
+**Whether the chart's mass-term formula has a closed form in all six angular parameters.** The article states the exact reduction to $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ and the exact value $\varrho^{2}$ on the trivial-rotor slice. The general expression is a product of two unit elements' squares and it is not displayed; whether it factorises into a rapidity part and an angle part is not settled here.
 
 **Whether the constraint is the whole constraint.** The trace of the equation is one real equation. Whether the traceless part of the equation, together with it, is equivalent to the four real equations of the element form in every configuration — and not merely on the Lorenz surface — is the chart's version of the free article's question about the two displays, and it is not answered here.
 
@@ -195,19 +195,19 @@ which is the statement that the covariant divergence of the word vanishes. The e
 The coupled Proca field is written
 
 $$
-\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is the single line that shows it.
+with eight real parameters and the word a bijection onto the N-regular set. The free field's two-factor word is the real slice of this one: the phase and the rotor are the two factors that reality removes and the charge restores, and the norm $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ is the single line that shows it.
 
-The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\theta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $r^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
+The connection is central per slot, so it merges with the scale and the phase brackets and cannot touch the boost or the rotor; the four-momentum shift $\hbar c\kappa_t=E+ϙca'_t$, $\hbar\vec\kappa=\vec p-q\vec A$ is one substitution in one element. The gauge transformation is the translation of $\theta_{\mathrm{pha}}$ alone, exact infinitesimally. The equation is second order, the chart exhibits no primary constraint, and that is the difference between this sector and the first-order sectors of the Schrödinger and Dirac companions. The mass term is $\varrho^{2}$ exactly when the rotor is trivial, because the boost is a Lorentz transformation and the rotor is not.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
-| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ |
+| $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
+| $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge-dependent coordinate |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |

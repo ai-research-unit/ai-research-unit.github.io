@@ -20,17 +20,17 @@ with $\beta=\lvert\vec v\rvert/c$, $\vec\omega_{\mathrm r}$ the rotor's body ang
 
 **Position in the block.** This is the variational companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) and the fifth of the eight articles of this layer. It is the first in which the canonical structure is not trivial, and the first in which the particle setting is a real restriction: the block's vorticity is a spatial gradient of the frame and the closed form below has no spatial gradient anywhere.
 
-**Conventions.** $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=r^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
+**Conventions.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-dirac-equation-in-biquaternionic-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
 
 ## The Kinetic Term
 
 **The computation is the polar companion's and its result is one line.** Substituting the complete polar decomposition into $\frac{\hbar c}{2}\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R]$ and keeping the temporal slots gives
 
 $$
-\mathcal L_{\mathrm{kin}}=\hbar c\,r^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr),
+\mathcal L_{\mathrm{kin}}=\hbar c\,\varrho^{2}\bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr),
 $$
 
-and the two factors are the fluid's: $r^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{chg}}$ and $\sinh\theta_{\mathrm{rpd}}/\cosh\theta_{\mathrm{rpd}}=\beta$. Factoring $r^{2}\cosh\theta_{\mathrm{rpd}}$ out of the bracket,
+and the two factors are the fluid's: $\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{chg}}$ and $\sinh\theta_{\mathrm{rpd}}/\cosh\theta_{\mathrm{rpd}}=\beta$. Factoring $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ out of the bracket,
 
 $$
 \mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr).
@@ -48,11 +48,11 @@ $$
 
 | momentum | value | fluid reading |
 | --- | --- | --- |
-| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,r^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho_{\mathrm{chg}}$ | the charge density; the phase is canonical in every frame |
-| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | the charge density times $\beta$, along the boost axis in the body frame |
+| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho_{\mathrm{chg}}$ | the charge density; the phase is canonical in every frame |
+| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | the charge density times $\beta$, along the boost axis in the body frame |
 | $p_{\theta_{\mathrm{rpd}}}$ | $0$ | the rapidity is not canonical |
 | $p_{u_{\mathrm b}}$ | $0$ | the velocity's direction is not canonical |
-| $p_{r}$ | $0$ | the density is not canonical |
+| $p_{\varrho}$ | $0$ | the density is not canonical |
 
 **The middle row is the one the block's articles could not state.** $\vec p_{\mathrm{spin}}$ is a closed form and not a projector: it is a vector, its magnitude is $\hbar c\rho_{\mathrm{chg}}\beta$, and its direction is $\vec n_{\mathrm{rot}}$. **The canonical spin is therefore locked to the flow's direction, and the lock is through the frame's rotor**: $\vec n_{\mathrm{rot}}$ is the boost axis carried into the body frame, so it is the velocity's direction as the spin's own frame sees it.
 
@@ -88,7 +88,7 @@ $$
 
 **What the particle setting cannot see is the vorticity, and the reason is structural.** The block's central result is that the spin-half fluid's vorticity is the antisymmetrised gradient of the frame: a spatial derivative. The closed form above has no spatial derivative anywhere — the only derivative is the rotor's rate $\vec\omega_{\mathrm r}$, which is a body-frame angular velocity and not a gradient. **A homogeneous action cannot produce a gradient-sourced vorticity**, and no manipulation of the closed form will: the two objects are derivatives with respect to different arguments.
 
-**The operator setting's action must therefore contain the frame's spatial gradients, and its structure is determined by what the block already knows.** [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html) writes the operator action with the gradient terms collected as "terms in $\nabla r$, $\nabla\theta_{\mathrm{rpd}}$, $\nabla\theta_{\mathrm{axr}}$" and does not compute them. What the block's vorticity statement fixes is their content: the antisymmetrised gradient of the frame is the spin connection's field strength, so the gradient terms are the spin connection's kinetic term, and the vorticity is its curl. **The block's sentence "the vorticity is sourced by the frame's gradients" and the statement "the gradient terms are the spin connection's" are the same statement**, and the second is the one a variational formulation can use.
+**The operator setting's action must therefore contain the frame's spatial gradients, and its structure is determined by what the block already knows.** [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html) writes the operator action with the gradient terms collected as "terms in $\nabla \varrho$, $\nabla\theta_{\mathrm{rpd}}$, $\nabla\theta_{\mathrm{axr}}$" and does not compute them. What the block's vorticity statement fixes is their content: the antisymmetrised gradient of the frame is the spin connection's field strength, so the gradient terms are the spin connection's kinetic term, and the vorticity is its curl. **The block's sentence "the vorticity is sourced by the frame's gradients" and the statement "the gradient terms are the spin connection's" are the same statement**, and the second is the one a variational formulation can use.
 
 **The honest boundary.** This article does not compute those terms. It states the closed form of the particle setting, the canonical table that follows from it, the location of the non-closure, and the structure the operator setting must have. **A reader looking for the full field-theoretic Lagrangian of the spin-half fluid will find the particle setting's exact result and the operator setting's programme, and the two are not the same article.**
 
@@ -126,8 +126,8 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
-| $\rho_{\mathrm{num}}=r^{2}$ | Proper density; not canonical |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; not canonical |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the phase's canonical weight |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$ | Lorentz factor and speed, $\beta=\lvert\vec v\rvert/c$ |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction; a unit vector |

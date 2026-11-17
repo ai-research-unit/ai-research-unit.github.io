@@ -5,10 +5,10 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Split-Complex Numbers* writes every split-complex number of nonzero norm as
 
 $$
-Q = r\,u, \qquad r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \qquad \lvert \langle u\rangle_{*}\rvert = 1,
+Q = \varrho\,u, \qquad \varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \qquad \lvert \langle u\rangle_{*}\rvert = 1,
 $$
 
-with $r$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit set $\{\langle u\rangle_{*}=1\}\cup\{N=-1\}$, the union of two hyperbolas. It chooses no coordinate on the hyperbola: the unit factor is named by the equation $\lvert \langle u\rangle_{*}\rvert=1$, not by a number.
+with $\varrho$ the modulus and $u$ the unit factor. That article proves the pair unique and treats $u$ as a point of the unit set $\{\langle u\rangle_{*}=1\}\cup\{N=-1\}$, the union of two hyperbolas. It chooses no coordinate on the hyperbola: the unit factor is named by the equation $\lvert \langle u\rangle_{*}\rvert=1$, not by a number.
 
 This article names it. For a real number $s$ put
 
@@ -19,10 +19,10 @@ $$
 and write
 
 $$
-Q = r\,\epsilon\,u(s) = r\,\epsilon\,\frac{1-sj}{1+sj}, \qquad \epsilon\in\{1,\pm j\},
+Q = \varrho\,\epsilon\,u(s) = \varrho\,\epsilon\,\frac{1-sj}{1+sj}, \qquad \epsilon\in\{1,\pm j\},
 $$
 
-with $s\neq\pm1$. The decomposition is the same one; only the name of the unit factor changes. The number $r$ is still the modulus, the product $\epsilon u(s)$ is still the same unit factor, of norm $\operatorname{sign}\langle Q\rangle_{*}$, and the pair $(r,\epsilon u(s))$ is still unique. The only new object is the real number $s$, which replaces the point of the hyperbola by a coordinate on a line. The factor $\epsilon$ is not new either: it is the component label fixed by the modulus–unit article, and it is needed because the chart is a coordinate on the hyperbola $\langle u\rangle_{*}=1$ alone.
+with $s\neq\pm1$. The decomposition is the same one; only the name of the unit factor changes. The number $\varrho$ is still the modulus, the product $\epsilon u(s)$ is still the same unit factor, of norm $\operatorname{sign}\langle Q\rangle_{*}$, and the pair $(\varrho,\epsilon u(s))$ is still unique. The only new object is the real number $s$, which replaces the point of the hyperbola by a coordinate on a line. The factor $\epsilon$ is not new either: it is the component label fixed by the modulus–unit article, and it is needed because the chart is a coordinate on the hyperbola $\langle u\rangle_{*}=1$ alone.
 
 The chart is rational: $u(s)$ and its inverse are ratios of polynomials. The price is locality, and it is higher than in the complex case. The parametrisation has two poles, at $s=\pm1$, where the denominator $1-s^2$ vanishes; they are the two null directions, the points at infinity of the hyperbola. As $\lvert s\rvert$ grows, $u(s)$ approaches $-1$ without attaining it, so the one unit factor missed on $\langle u\rangle_{*}=1$ is $-1$, the unit factor of every negative real number. The timelike decomposition therefore holds on the plane cut along the negative real axis. In the spacelike region the discrete factor $j$ or $-j$ moves the chart to the hyperbola $\langle u\rangle_{*}=-1$; each fixed sign misses a single ray, $Q=-rj$ for $j$ and $Q=rj$ for $-j$, and the two signs together cover the spacelike region without a cut.
 
@@ -39,10 +39,10 @@ Every numerical value displayed below was recomputed in double precision.
 Let $Q = q+jq'$ with $q,q'\in\mathbb{R}$ and norm $\langle Q\rangle_{*}=q^2-q'^2$. On the invertible set $\langle Q\rangle_{*}\neq0$ the modulus and unit factor are
 
 $$
-r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \qquad u = \frac{Q}{r}, \qquad \langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}\in\{\pm1\}.
+\varrho = \sqrt{\lvert \langle Q\rangle_{*}\rvert} > 0, \qquad u = \frac{Q}{\varrho}, \qquad \langle u\rangle_{*} = \operatorname{sign}\langle Q\rangle_{*}\in\{\pm1\}.
 $$
 
-The pair $(r,u)$ is unique, and the decomposition is $Q=ru$. The modulus is positive in both regimes; the sign of the norm is carried by the unit factor. The null cone $\langle Q\rangle_{*}=0$ is excluded, and the modulus vanishes there.
+The pair $(\varrho,u)$ is unique, and the decomposition is $Q=ru$. The modulus is positive in both regimes; the sign of the norm is carried by the unit factor. The null cone $\langle Q\rangle_{*}=0$ is excluded, and the modulus vanishes there.
 
 The unit set $\{\lvert \langle Q\rangle_{*}\rvert=1\}$ has four components. Every unit can be written as
 
@@ -117,10 +117,10 @@ $$
 For a general timelike element $Q$ the inverse reads
 
 $$
-s = -\frac{q'}{r+q}, \qquad r = \sqrt{q^2-q'^2},
+s = -\frac{q'}{\varrho+q}, \qquad \varrho = \sqrt{q^2-q'^2},
 $$
 
-because $u=Q/r$ has coordinates $(q/r,q'/r)$. The denominator $r+q$ vanishes exactly when $q=-r$ and $q'=0$, that is on the negative real axis.
+because $u=Q/\varrho$ has coordinates $(q/\varrho,q'/\varrho)$. The denominator $\varrho+q$ vanishes exactly when $q=-\varrho$ and $q'=0$, that is on the negative real axis.
 
 ### The Bijection
 
@@ -163,31 +163,31 @@ The three intervals $(-\infty,-1)$, $(-1,1)$ and $(1,\infty)$ map to the three o
 **Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ and $Q$ not on the negative real axis has a unique decomposition
 
 $$
-\boxed{\;Q = r\,\epsilon\,u(s), \qquad r>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\}\;},
+\boxed{\;Q = \varrho\,\epsilon\,u(s), \qquad \varrho>0, \quad \epsilon\in\{1,j,-j\}, \quad s\in\mathbb{R}\setminus\{\pm1\}\;},
 $$
 
 with $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The decomposition is defined exactly on $\{\langle Q\rangle_{*}\neq0\}\setminus\mathbb{R}_{<0}$.
 
-**Timelike regime.** Let $\langle Q\rangle_{*}>0$. Put $r=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/r$, so $\langle u\rangle_{*}=1$. If $u\neq-1$, let $s$ be the inverse of §*The Inverse* and write
+**Timelike regime.** Let $\langle Q\rangle_{*}>0$. Put $\varrho=\sqrt{\langle Q\rangle_{*}}$ and $u=Q/\varrho$, so $\langle u\rangle_{*}=1$. If $u\neq-1$, let $s$ be the inverse of §*The Inverse* and write
 
 $$
-Q = r\,u(s), \qquad s = -\frac{q'}{r+q} \in \mathbb{R}\setminus\{\pm1\}.
+Q = \varrho\,u(s), \qquad s = -\frac{q'}{\varrho+q} \in \mathbb{R}\setminus\{\pm1\}.
 $$
 
-The decomposition is unique: $r$ is forced by the modulus, $u$ by $Q/r$, and $s$ by the inverse chart. The condition $u\neq-1$ is exactly $Q\neq-r$, the negative real axis. On that axis the unit factor is $-1$, the missing point, and no finite $s$ exists. As $s\to\pm\infty$ the element $r u(s)$ tends to $-r$, so the cut is the point at infinity of the chart.
+The decomposition is unique: $\varrho$ is forced by the modulus, $u$ by $Q/\varrho$, and $s$ by the inverse chart. The condition $u\neq-1$ is exactly $Q\neq-\varrho$, the negative real axis. On that axis the unit factor is $-1$, the missing point, and no finite $s$ exists. As $s\to\pm\infty$ the element $\varrho u(s)$ tends to $-\varrho$, so the cut is the point at infinity of the chart.
 
 The two timelike components are distinguished by the sign of $q$. For $q>0$ the parameter lies in $(-1,1)$; for $q<0$ it lies in $(-\infty,-1)\cup(1,\infty)$. The chart covers both components, but the negative branch is cut at its vertex.
 
-**Spacelike regime.** Let $\langle Q\rangle_{*}<0$. Put $r=\sqrt{-\langle Q\rangle_{*}}$ and choose the discrete factor according to the sign of $q'$:
+**Spacelike regime.** Let $\langle Q\rangle_{*}<0$. Put $\varrho=\sqrt{-\langle Q\rangle_{*}}$ and choose the discrete factor according to the sign of $q'$:
 
 $$
 \epsilon = \begin{cases} j, & q'>0,\\ -j, & q'<0. \end{cases}
 $$
 
-Then $u=\epsilon Q/r$ has norm $1$, and $u\neq-1$. Define $s$ by the inverse chart and write
+Then $u=\epsilon Q/\varrho$ has norm $1$, and $u\neq-1$. Define $s$ by the inverse chart and write
 
 $$
-Q = r\,\epsilon\,u(s).
+Q = \varrho\,\epsilon\,u(s).
 $$
 
 The factor $j$ maps the chart to the upper spacelike component and the factor $-j$ to the lower one. Both factors give norm $-1$, because $\langle j\rangle_{*}=-1$. The parameter $s$ lies in $(-1,1)$ in both cases, since $u$ has positive real part. The spacelike region has no cut: each of its two components is covered by one chart and one discrete factor.
@@ -211,7 +211,7 @@ The components and the parameter ranges are collected in the following table.
 | component | condition | $\epsilon$ | range of $s$ | excluded |
 |---|---|---|---|---|
 | timelike future | $\langle Q\rangle_{*}>0$, $q>0$ | $1$ | $(-1,1)$ | none |
-| timelike past | $\langle Q\rangle_{*}>0$, $q<0$ | $1$ | $(-\infty,-1)\cup(1,\infty)$ | $Q=-r$ |
+| timelike past | $\langle Q\rangle_{*}>0$, $q<0$ | $1$ | $(-\infty,-1)\cup(1,\infty)$ | $Q=-\varrho$ |
 | spacelike upper | $\langle Q\rangle_{*}<0$, $q'>0$ | $j$ | $(-1,1)$ | none |
 | spacelike lower | $\langle Q\rangle_{*}<0$, $q'<0$ | $-j$ | $(-1,1)$ | none |
 
@@ -329,16 +329,16 @@ The matrix $M(s)$ is **not orthogonal** for $s\neq0$. For $\lvert s\rvert<1$ it 
 
 This is the point at which the complex template must not be copied. In the complex case the Cayley matrix is a rotation, $M(s)\in SO(2)$, and it is orthogonal; the algebraic chart and the matrix polar chart coincide. In the split case the Cayley matrix is a symmetric Lorentz transformation, not an orthogonal one. It preserves the indefinite form, not the Euclidean one, and its Euclidean polar factor is a sign $\pm I$; the negative-norm matrices $K M(s)$ have a reflection instead, as described in *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*The Matrix Polar Decomposition*.
 
-The matrix of a general element is $M_Q=rM(\epsilon)M(s)$, with $M(\epsilon)\in\{I,-I,K,-K\}$. The determinant is $\langle Q\rangle_{*}=r^2\langle \epsilon\rangle_{*}$, positive in the timelike regime and negative in the spacelike one. The Cayley chart is thus a rational chart on the algebraic unit factor, not on the orthogonal factor.
+The matrix of a general element is $M_Q=rM(\epsilon)M(s)$, with $M(\epsilon)\in\{I,-I,K,-K\}$. The determinant is $\langle Q\rangle_{*}=\varrho^2\langle \epsilon\rangle_{*}$, positive in the timelike regime and negative in the spacelike one. The Cayley chart is thus a rational chart on the algebraic unit factor, not on the orthogonal factor.
 
 ## Worked Examples
 
 ### A Generic Split-Complex Number
 
-Take $Q=5+3j$. Then $\langle Q\rangle_{*}=16$, $r=4$, and $u=1.25+0.75j$. The inverse chart gives
+Take $Q=5+3j$. Then $\langle Q\rangle_{*}=16$, $\varrho=4$, and $u=1.25+0.75j$. The inverse chart gives
 
 $$
-s = -\frac{q'}{r+q} = -\frac{3}{4+5} = -\frac13.
+s = -\frac{q'}{\varrho+q} = -\frac{3}{4+5} = -\frac13.
 $$
 
 The reconstruction is
@@ -357,10 +357,10 @@ with eigenvalues $2$ and $1/2$, both positive. The parameter lies in $(-1,1)$, a
 
 ### The Spacelike Components
 
-Take $Q=1+2j$. Then $\langle Q\rangle_{*}=-3$, $r=\sqrt3$, and $q'>0$, so $\epsilon=j$. The unit factor is
+Take $Q=1+2j$. Then $\langle Q\rangle_{*}=-3$, $\varrho=\sqrt3$, and $q'>0$, so $\epsilon=j$. The unit factor is
 
 $$
-u = \frac{jQ}{r} = \frac{2+j}{\sqrt3} = \frac{2}{\sqrt3}+\frac{1}{\sqrt3}j,
+u = \frac{jQ}{\varrho} = \frac{2+j}{\sqrt3} = \frac{2}{\sqrt3}+\frac{1}{\sqrt3}j,
 $$
 
 The inverse chart applies to $u$, whose coordinates are $(2/\sqrt3,1/\sqrt3)$:
@@ -381,7 +381,7 @@ For $Q=-1-2j$ the factor is $-j$ and the same $u$ and $s$ occur; for $Q=-1+2j$ t
 
 The following table applies the chart to the four components, to the cut and to the null cone.
 
-| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $\epsilon$ | $u$ | $s$ | reconstruction |
+| $Q$ | $\langle Q\rangle_{*}$ | $\varrho$ | $\epsilon$ | $u$ | $s$ | reconstruction |
 |---|---|---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $1$ | $0$ | $2$ |
 | $j$ | $-1$ | $1$ | $j$ | $1$ | $0$ | $j$ |
@@ -398,7 +398,7 @@ The reconstruction error is at most $9\times10^{-16}$ in double precision for th
 
 ### The Cut in the Plane
 
-The negative real axis is the set $Q=-r$, $r>0$. Its unit factor is $-1$, and its parameter is the point at infinity of the chart. In the timelike past component the parameter ranges over $(-\infty,-1)$ on one side of the cut and $(1,\infty)$ on the other; the two ranges meet at $s=\pm\infty$, which is the same missing point. The chart therefore sees the cut as a single point at infinity, not as a line. This is the precise sense in which the rational chart is local: it is a chart on the hyperbola minus one point, and the missing point is the cut.
+The negative real axis is the set $Q=-\varrho$, $\varrho>0$. Its unit factor is $-1$, and its parameter is the point at infinity of the chart. In the timelike past component the parameter ranges over $(-\infty,-1)$ on one side of the cut and $(1,\infty)$ on the other; the two ranges meet at $s=\pm\infty$, which is the same missing point. The chart therefore sees the cut as a single point at infinity, not as a line. This is the precise sense in which the rational chart is local: it is a chart on the hyperbola minus one point, and the missing point is the cut.
 
 ## Summary
 
@@ -408,9 +408,9 @@ $$
 u(s) = \frac{1-sj}{1+sj} = \frac{1+s^2}{1-s^2} - \frac{2s}{1-s^2}j, \qquad s\neq\pm1,
 $$
 
-is a bijection from $\mathbb{R}\setminus\{\pm1\}$ onto $\{\langle u\rangle_{*}=1\}\setminus\{-1\}$, with inverse $s=-y/(1+x)$ for $u=x+yj$ and $s=-q'/(r+q)$ for a timelike element $Q=q+jq'$. The two poles $s=\pm1$ are the null directions, the points at infinity of the hyperbola; the missing point is $u=-1$, the vertex of the negative branch.
+is a bijection from $\mathbb{R}\setminus\{\pm1\}$ onto $\{\langle u\rangle_{*}=1\}\setminus\{-1\}$, with inverse $s=-y/(1+x)$ for $u=x+yj$ and $s=-q'/(\varrho+q)$ for a timelike element $Q=q+jq'$. The two poles $s=\pm1$ are the null directions, the points at infinity of the hyperbola; the missing point is $u=-1$, the vertex of the negative branch.
 
-Every invertible split-complex number off the negative real axis has a unique rational-chart decomposition $Q=r\epsilon u(s)$, with $r>0$, $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The negative real axis is the cut. The spacelike components have no cut because the two signs of $j$ are available. The chart law is $s_1*s_2=(s_1+s_2)/(1+s_1s_2)$, with identity $0$, inverse $-s$ and pole at $s_1s_2=-1$, where the product is $-1$. The second chart $v(s)=-u(s)=u(1/s)$ supplies the missing $-1$; together with the two signs of $j$ it covers the four components of the unit set.
+Every invertible split-complex number off the negative real axis has a unique rational-chart decomposition $Q=\varrho\epsilon u(s)$, with $\varrho>0$, $\epsilon=1$ in the timelike regime and $\epsilon=\pm j$ in the spacelike regime, the sign chosen by the sign of $q'$. The negative real axis is the cut. The spacelike components have no cut because the two signs of $j$ are available. The chart law is $s_1*s_2=(s_1+s_2)/(1+s_1s_2)$, with identity $0$, inverse $-s$ and pole at $s_1s_2=-1$, where the product is $-1$. The second chart $v(s)=-u(s)=u(1/s)$ supplies the missing $-1$; together with the two signs of $j$ it covers the four components of the unit set.
 
 The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, and preserves the indefinite form; it is not orthogonal in general. Its image is $SO(1,1)\setminus\{-I\}$, and its Euclidean polar factor is a sign $\pm I$. The rational chart is the algebraic chart on the unit factor, not the orthogonal chart of the matrix.
 
@@ -421,8 +421,8 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, $j^2=+1$ |
 | $Q=q+jq'$ | a split-complex number |
 | $\langle Q\rangle_{*}=q^2-q'^2$ | the norm |
-| $r=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |
-| $u=Q/r$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
+| $\varrho=\sqrt{\lvert \langle Q\rangle_{*}\rvert}$ | the modulus |
+| $u=Q/\varrho$ | the unit factor, $\lvert \langle u\rangle_{*}\rvert=1$ |
 | $u(s)=(1-sj)/(1+sj)$ | the rational chart on $\{\langle u\rangle_{*}=1\}$ |
 | $s$ | the rational parameter, $s\neq\pm1$ |
 | $v(s)=-u(s)=u(1/s)$ | the second chart, missing $+1$ |

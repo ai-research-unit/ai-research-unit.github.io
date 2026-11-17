@@ -271,7 +271,7 @@ with the exponential derivatives of *Analysis on $M_5$*. At $(0,0)$ the derivati
 
 **Proof.** The spectral theorem for $S$; the $KAK$ decomposition of $e^S$.
 
-**Remark.** **The polar decomposition in exponential coordinates is the group-level analogue of the polar form of a complex number.** A complex number is $re^{i\theta}$; a matrix is $e^Se^{iH}$, with $S$ the logarithm of the modulus and $H$ the phase. The noncommutativity makes the order matter: the right and left forms differ, and the $*$-unitary logarithm is periodic. The $KAK$ and Iwasawa decompositions are the finer coordinate systems adapted to the torus and the Borel.
+**Remark.** **The polar decomposition in exponential coordinates is the group-level analogue of the polar form of a complex number.** A complex number is $\varrho e^{i\theta}$; a matrix is $e^Se^{iH}$, with $S$ the logarithm of the modulus and $H$ the phase. The noncommutativity makes the order matter: the right and left forms differ, and the $*$-unitary logarithm is periodic. The $KAK$ and Iwasawa decompositions are the finer coordinate systems adapted to the torus and the Borel.
 
 ## Summary
 

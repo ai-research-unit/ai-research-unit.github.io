@@ -15,11 +15,11 @@
 The polar word, on the general field,
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-r>0,
+\varrho>0,
 \qquad
-\rho_{\mathrm{num}}=r^{2},
+\rho_{\mathrm{num}}=\varrho^{2},
 \qquad
 S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}},
 $$
@@ -58,7 +58,7 @@ $$
 
 | bracket | what the mode does with it | what the fluid would read from it |
 | --- | --- | --- |
-| the scale, $\ln r$ | constant | the density $\rho_{\mathrm{num}}=r^{2}$ |
+| the scale, $\ln \varrho$ | constant | the density $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | the central phase, $\theta_{\mathrm{pha}}$ | carries $-i\theta_{\mathrm{pwp}}$ | the action, and nothing else |
 | the boost, $\theta_{\mathrm{rpd}}$ and its axis | constant | the velocity $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ |
 | the rotor, $\theta_{\mathrm{axr}}$ and its axis | constant | the spin direction $\vec s$ |
@@ -157,10 +157,10 @@ A mode's loop invariant is the identity. The transport's Lorentz element is ther
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The four-factor word |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The four-factor word |
 | $\theta_{\mathrm{pwp}}=k_t'r_t'-\vec k_\Phi\cdot\vec r$ | The phase of a mode |
 | $\tilde w(\vec k_\Phi)$ | The spinor carrier's element at a mode |
-| $\rho_{\mathrm{num}}=r^{2}$ | The proper density |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | The proper density |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | The number current |
 | $M_{\mu\nu}$ | The magnetisation bilinear |

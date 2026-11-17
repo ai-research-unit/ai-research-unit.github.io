@@ -446,7 +446,7 @@ $$
 
 **The singular set of the map $X\mapsto\tilde QX\tilde Q^{*}$ is therefore the algebraic null cone, on which it loses three-quarters of its rank, and that set is not the K null set.** A negative zero divisor is a singular case for the operator and a regular case for the value; a null unit is the reverse. The two failures are different, and the entry keeps them apart.
 
-**The polar decomposition exists exactly on the group of invertibles, so the K norm adds no condition.** The modulus requires $\Rho^{2}=N(\tilde Q)$ with $\Rho\neq0$, which is the algebraic condition and nothing more. On the positive region the decomposition therefore exists throughout, and on the negative region it exists exactly off the zero divisors.
+**The polar decomposition exists exactly on the group of invertibles, so the K norm adds no condition.** The modulus requires $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N(\tilde Q)$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$, which is the algebraic condition and nothing more. On the positive region the decomposition therefore exists throughout, and on the negative region it exists exactly off the zero divisors.
 
 **The K adjoint is defined everywhere, and it is where the form enters the operator theory.**
 

@@ -13,12 +13,12 @@ $$
 and the word of the material sector is piecewise,
 
 $$
-\tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}\ \ (\langle\tilde A_\Phi\rangle_\natural<0),
+\tilde A_\Phi=\varepsilon\,i\,\varrho\,\tilde U_{\Psi,\mathrm b}\ \ (\langle\tilde A_\Phi\rangle_\natural<0),
 \qquad
-\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\,\hat u\ \ (\langle\tilde A_\Phi\rangle_\natural>0),
+\tilde A_\Phi=\varrho\,\tilde U_{\Psi,\mathrm b}\,\hat u\ \ (\langle\tilde A_\Phi\rangle_\natural>0),
 $$
 
-with $r>0$, $\varepsilon=\pm1$, and $\tilde U_{\Psi,\mathrm b}$ the boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\hat u_{\mathrm b}$. On the timelike branch the parameters are $r$ and the boost's three; on the spacelike branch they are $r$, the signed rapidity and the direction $\hat u$. Two branches, four parameters each.
+with $\varrho>0$, $\varepsilon=\pm1$, and $\tilde U_{\Psi,\mathrm b}$ the boost of rapidity $\theta_{\mathrm{rpd}}$ and axis $\hat u_{\mathrm b}$. On the timelike branch the parameters are $\varrho$ and the boost's three; on the spacelike branch they are $\varrho$, the signed rapidity and the direction $\hat u$. Two branches, four parameters each.
 
 **Three things are established, and their status differs.**
 
@@ -35,7 +35,7 @@ and the mass term is a pure power of the modulus,
 
 $$
 -\tfrac12\,k_m^2\langle\tilde A_\Phi\rangle_\natural=
-\begin{cases}+\tfrac12\,k_m^2\,r^2, & \text{timelike},\\[2pt] -\tfrac12\,k_m^2\,r^2, & \text{spacelike}.\end{cases}
+\begin{cases}+\tfrac12\,k_m^2\,\varrho^2, & \text{timelike},\\[2pt] -\tfrac12\,k_m^2\,\varrho^2, & \text{spacelike}.\end{cases}
 $$
 
 The sign of the mass term in the chart **is** the branch: it is the causal character of the four-vector, read as the sign of the term. This is the article's cleanest new statement.
@@ -64,11 +64,11 @@ $$
 
 and the field term is the full quadratic minus the scalar square. The subtraction is the projection that the element form performs silently: $\tilde F$ is the antisymmetric part, and $\mathrm{Sc}(\tilde F^2)$ is the part of the full square that survives it. The identity is exact, holds for every element of $\mathbb{B}$ and not only on shell, and is verified by direct multiplication.
 
-**The mass term.** On the timelike branch the norm is $-r^2$, because $(\varepsilon ir\tilde U)(\varepsilon ir\tilde U)^{\natural}=\varepsilon^2i^2r^2\tilde U\tilde U^{\natural}=-r^2$; on the spacelike branch it is $+r^2$, because $(r\tilde U\hat u)(r\tilde U\hat u)^{\natural}=r^2\tilde U\hat u\hat u^{\natural}\tilde U^{\natural}=r^2\tilde U(-\hat u)(-\hat u)\tilde U^{\natural}=r^2$. Hence
+**The mass term.** On the timelike branch the norm is $-\varrho^2$, because $(\varepsilon i\varrho\tilde U)(\varepsilon i\varrho\tilde U)^{\natural}=\varepsilon^2i^2\varrho^2\tilde U\tilde U^{\natural}=-\varrho^2$; on the spacelike branch it is $+\varrho^2$, because $(\varrho\tilde U\hat u)(\varrho\tilde U\hat u)^{\natural}=\varrho^2\tilde U\hat u\hat u^{\natural}\tilde U^{\natural}=\varrho^2\tilde U(-\hat u)(-\hat u)\tilde U^{\natural}=\varrho^2$. Hence
 
 $$
 -\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural=
-\begin{cases}+\tfrac12k_m^2r^2, & \text{timelike},\\[2pt]-\tfrac12k_m^2r^2, & \text{spacelike}.\end{cases}
+\begin{cases}+\tfrac12k_m^2\varrho^2, & \text{timelike},\\[2pt]-\tfrac12k_m^2\varrho^2, & \text{spacelike}.\end{cases}
 $$
 
 **The sign is the branch.** In the element form the mass term is indefinite, because $\langle\tilde A_\Phi\rangle_\natural$ is indefinite. In the chart it becomes a definite power of one positive parameter, and its sign is a property of the branch. For a timelike field the scale enters the Lagrangian with the sign of a positive mass term and the scale equation has the standard massive form; for a spacelike field the sign is reversed. Nothing in the element form displays this, because nothing in the element form distinguishes the two branches.
@@ -81,7 +81,7 @@ $$
 
 with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.
 
-**The parameters.** On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(r,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(r,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
+**The parameters.** On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
 ## The Euler–Lagrange Equations
 
@@ -93,12 +93,12 @@ $$
 
 and the Jacobian $\partial\Phi/\partial q^i$ is invertible on the branch. So the Euler–Lagrange equations in the chart vanish if and only if the element-form equation holds, and their content is the field equation and nothing else. This is an identity of the calculus, not a claim about the algebra, and it is what makes the polar variational principle exact.
 
-**The singularity bounds the argument, and it is the chart's.** On the timelike branch $r=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $\varepsilon=\mathrm{sign}\,a'_t$ are single-valued, but $\hat u_{\mathrm b}$ is not: it is $\vec A$ divided by its length, and at $\vec A=0$ — the pure scalar-potential line — the axis is undefined and the Jacobian degenerates. The field is perfectly regular there; the coordinates are not. So the change-of-variables identity holds on the branch minus that line, and a solution that crosses it needs a patching of the frame rather than a continuation of the chart. On the spacelike branch there is no such line, because a spacelike four-vector has $\vec A\neq0$, and the chart's only failure there is the light cone of field values, where the branch itself ends.
+**The singularity bounds the argument, and it is the chart's.** On the timelike branch $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $\varepsilon=\mathrm{sign}\,a'_t$ are single-valued, but $\hat u_{\mathrm b}$ is not: it is $\vec A$ divided by its length, and at $\vec A=0$ — the pure scalar-potential line — the axis is undefined and the Jacobian degenerates. The field is perfectly regular there; the coordinates are not. So the change-of-variables identity holds on the branch minus that line, and a solution that crosses it needs a patching of the frame rather than a continuation of the chart. On the spacelike branch there is no such line, because a spacelike four-vector has $\vec A\neq0$, and the chart's only failure there is the light cone of field values, where the branch itself ends.
 
 **The explicit form.** Performing the differentiation gives the two displays of the polar article. The scalar part of the transformed equation is
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0,
 \qquad
 \Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu},
 $$
@@ -107,7 +107,7 @@ and the scalar-free part is
 
 $$
 \sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)
-+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 ,
++2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0 ,
 $$
 
 the subtraction of $\mathrm{Sc}(\Gamma_\mu^2)$ being what makes the display traceless: without it the term $\sum_\mu\Gamma_\mu^2$ would repeat the source of the scalar equation.
@@ -115,12 +115,12 @@ the subtraction of $\mathrm{Sc}(\Gamma_\mu^2)$ being what makes the display trac
 Both are exactly the equations that the direct substitution of the word into the field equation gives, which is the content of the change-of-variables argument: the variational route and the substitution route are the same route. For a fixed boost axis the pair reduces to
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)r+\tfrac14r\sum_\mu\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)^2=0,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\tfrac14\varrho\sum_\mu\Bigl(\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)^2=0,
 \qquad
-\sum_\mu\frac{\partial}{\partial R_\mu}\Bigl(r^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0 ,
+\sum_\mu\frac{\partial}{\partial R_\mu}\Bigl(\varrho^2\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}\Bigr)=0 ,
 $$
 
-which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2r$ on the timelike branch, as the branch's sign of the mass term requires.
+which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2\varrho$ on the timelike branch, as the branch's sign of the mass term requires.
 
 **What the variation of the middle piece does.** The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.
 
@@ -135,7 +135,7 @@ $$
 
 an outer product of four vectors in three dimensions. Its rank is therefore at most three, and it is exactly three wherever the four vectors $\partial\vec A/\partial q^i$ span $\mathbb{R}^3$, which they do at a generic point of the branch. So there is one null direction, and the chart has one primary constraint.
 
-**The null direction is the scalar potential.** The four derivatives of $\vec A=-r\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ along the branch are not independent: the combination that changes $r$ and $\theta_{\mathrm{rpd}}$ while holding the product $r\sinh\frac{\theta_{\mathrm{rpd}}}{2}$ fixed leaves $\vec A$ unchanged and changes $a'_t=r\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. That combination is the null vector, and it is exactly the direction in which the field changes by the gradient of a function of time — the primary constraint $\pi^0=0$ of the vector field, written in the chart's letters.
+**The null direction is the scalar potential.** The four derivatives of $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ along the branch are not independent: the combination that changes $\varrho$ and $\theta_{\mathrm{rpd}}$ while holding the product $\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}$ fixed leaves $\vec A$ unchanged and changes $a'_t=\varrho\cosh\frac{\theta_{\mathrm{rpd}}}{2}$. That combination is the null vector, and it is exactly the direction in which the field changes by the gradient of a function of time — the primary constraint $\pi^0=0$ of the vector field, written in the chart's letters.
 
 **The Lorenz condition is the secondary constraint.** Preserving the primary constraint in time produces the Lorenz condition, which in the chart is the single scalar equation displayed in the polar article. So the pair is second class, the physical count is three, and the chart's four parameters lose one on shell. That is the same count as the polarizations, and the same count as the element form's.
 
@@ -150,14 +150,14 @@ an outer product of four vectors in three dimensions. Its rank is therefore at m
 
 The chart's gain is the first row: the boost is parametrized, not constrained, so its unit condition costs nothing, and the count it saves is one, not three. The second row is not a comparison at all — the material sector has no spin direction — and it is there exactly to say that the three multipliers usually quoted for Takabayasi are the price of a spin, not the price of a frame. The chart's non-gain is the third and fourth rows: the vector field's own constraints are untouched, and any claim that the polar form removes them would be false. This is the honest ledger, and it is the opposite of the Schrödinger case, where the *action* is first order and the constraints are the momenta's vanishing.
 
-**Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $r$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
+**Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $\varrho$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
 
 ## The Lorenz Condition in the Chart
 
 **One equation on four parameters.** The chart's form of the condition is
 
 $$
-S=\varepsilon\Bigl[c\,\partial_{r'_t}r-s\,\hat u_{\mathrm b}\cdot\nabla r
+S=\varepsilon\Bigl[c\,\partial_{r'_t}\varrho-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
 +\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0,
 $$
 
@@ -175,7 +175,7 @@ with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{
 - The explicit separation of the element-form Lagrangian into curl, scalar square and mass, with the middle piece identified as what the projection removes and as the term whose variation carries the Lorenz condition.
 - The exactness of the chart's variational principle, with the change-of-variables argument making the equivalence a matter of calculus.
 - The correct count: no multipliers for the unit conditions, one primary and one secondary constraint for the vector field, three physical parameters on shell.
-- The fixed-axis reduction of the two Euler–Lagrange equations to a massive scale equation with a rapidity-gradient source and a conservation law with density $r^2$.
+- The fixed-axis reduction of the two Euler–Lagrange equations to a massive scale equation with a rapidity-gradient source and a conservation law with density $\varrho^2$.
 
 **Does not add.**
 
@@ -200,7 +200,7 @@ $$
 \mathcal{L}=\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)^2\Bigr]-\tfrac12S^2-\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural ,
 $$
 
-with the mass term $+\tfrac12k_m^2r^2$ on the timelike branch and $-\tfrac12k_m^2r^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.
+with the mass term $+\tfrac12k_m^2\varrho^2$ on the timelike branch and $-\tfrac12k_m^2\varrho^2$ on the spacelike one: the sign of the mass term is the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass; the middle piece is what the element form's projection removes, and its variation carries the Lorenz condition.
 
 The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations are the transformed field equation: the scale equation with the frame's quadratic source and the frame transport, which is what the polar article's direct substitution gives. The chart needs no Lagrange multiplier for the normalization of the boost, in contrast with the tensor formulation of the spin-$\tfrac12$ field, whose multipliers belong to its unit spin direction and its unit velocity — but it does not remove the vector field's own constraints: the Hessian has rank three, its null direction is the scalar potential at fixed vector potential, and the Lorenz condition is the secondary constraint. Four parameters, four equations, three physical parameters on shell.
 
@@ -214,9 +214,9 @@ The chart is a diffeomorphism onto the branch, so its Euler–Lagrange equations
 | $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathrm{Sc}$, $\mathrm{Vect}$, ${}^{\natural}$, ${}^{*}$ | Scalar part, vector part, quaternion and Hermitian conjugations |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
-| $\tilde A_\Phi=\varepsilon ir\tilde U_{\Psi,\mathrm b}$ | Timelike branch of the word |
-| $\tilde A_\Phi=r\tilde U_{\Psi,\mathrm b}\hat u$ | Spacelike branch, boost axis locked to $\hat u$ |
-| $r>0$, $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$, $\hat u$ | Modulus, rapidity, boost axis, direction |
+| $\tilde A_\Phi=\varepsilon i\varrho\tilde U_{\Psi,\mathrm b}$ | Timelike branch of the word |
+| $\tilde A_\Phi=\varrho\tilde U_{\Psi,\mathrm b}\hat u$ | Spacelike branch, boost axis locked to $\hat u$ |
+| $\varrho>0$, $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$, $\hat u$ | Modulus, rapidity, boost axis, direction |
 | $\varepsilon=\pm1$ | Sign of the scalar potential, timelike branch |
 | $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ | Frame bracket (Maurer–Cartan form) |
 | $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | Lorenz scalar |

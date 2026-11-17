@@ -7,7 +7,7 @@ This article computes the polar decomposition of eight quaternions, one after an
 Each case is read from the four real coordinates $q_t,q_x,q_y,q_z$. The modulus, the angle and the axis are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
 $$
-\tilde q=\exp(\ln r+\theta\vec n)=r\exp(\theta\vec n).
+\tilde q=\exp(\ln \varrho+\theta\vec n)=\varrho\exp(\theta\vec n).
 $$
 
 The eight cases cover the identity, the two pure rotors, the pure scale, the scale and rotor on one axis, two products that exhibit the cross term, and a generic element.
@@ -30,7 +30,7 @@ $$
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
 
-The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
+The modulus is $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/\varrho)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
 
 The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
@@ -43,16 +43,16 @@ The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\
 For $\tilde q=q_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ the four coordinates are the real numbers $q_t,q_x,q_y,q_z$. The modulus is the positive square root
 
 $$
-r=\sqrt{q_t^2+q_x^2+q_y^2+q_z^2},
+\varrho=\sqrt{q_t^2+q_x^2+q_y^2+q_z^2},
 $$
 
 and the unit factor is
 
 $$
-\tilde u_{\mathrm r}=\frac{\tilde q}{r}.
+\tilde u_{\mathrm r}=\frac{\tilde q}{\varrho}.
 $$
 
-The radicand is positive for every nonzero quaternion, so there is no branch choice and no null cone. The element lies on the unit sphere exactly when $r=1$. The four real dimensions split as $1+3$: one for the scale and three for the sphere $S^3$ of unit factors.
+The radicand is positive for every nonzero quaternion, so there is no branch choice and no null cone. The element lies on the unit sphere exactly when $\varrho=1$. The four real dimensions split as $1+3$: one for the scale and three for the sphere $S^3$ of unit factors.
 
 The biquaternion modulus is the principal square root of the complex number $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and carries a phase $\theta_{\mathrm{pha}}$; here the radicand is a positive real, so the modulus is a positive real and the phase is absent. This is the first structural difference between the two articles.
 
@@ -63,7 +63,7 @@ The unit factor is written
 $$
 \tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta,
 \qquad
-\theta=\arccos\frac{q_t}{r}\in[0,\pi],
+\theta=\arccos\frac{q_t}{\varrho}\in[0,\pi],
 $$
 
 with the axis
@@ -74,11 +74,11 @@ $$
 
 when $\vec q\neq0$. The unit factor is a rotor: it lies on $S^3$, and its two-sided operator rotates by $2\theta$ about $\vec n$.
 
-There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a $*$-unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the $*$-unitary factor is the whole unit factor. The two objects of the decomposition are the scale $r$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.
+There is no Hermitian factor to split off. In the biquaternion case the unit factor factors as $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, a Hermitian positive factor and a $*$-unitary factor, with two angles and two axes. Here the Hermitian factor is the identity and the $*$-unitary factor is the whole unit factor. The two objects of the decomposition are the scale $\varrho$ and the rotor $\tilde u_{\mathrm r}$; the axis is a coordinate of the rotor, not a third factor.
 
 | object | formula | range |
 |---|---|---|
-| scale | $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | $(0,\infty)$ |
+| scale | $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ | $(0,\infty)$ |
 | rotor $\tilde u_{\mathrm r}$ | $\cos\theta+\vec n\sin\theta$ | $S^3$ |
 | axis $\vec n$ | $\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ | $S^2$, undefined at $\vec q=0$ |
 
@@ -97,7 +97,7 @@ $$
 the element is
 
 $$
-\tilde q=r\bigl(c\,e_t+s\,\vec n\bigr).
+\tilde q=\varrho\bigl(c\,e_t+s\,\vec n\bigr).
 $$
 
 This is the two-term form: the scalar term and the axis term. The biquaternion component form has four terms, the scalar term, the boost axis, the rotor axis and the cross term, because it carries two axes. A single quaternion has one axis, so the cross term has no room to appear.
@@ -118,7 +118,7 @@ The four terms are the scalar term corrected by the angle between the axes, the 
 The exponent read from the polar data is
 
 $$
-\tilde q_{\log}=\ln r+\theta\vec n,
+\tilde q_{\log}=\ln \varrho+\theta\vec n,
 \qquad
 \tilde q=\exp(\tilde q_{\log}).
 $$
@@ -133,7 +133,7 @@ $$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
 
 with the second term read as $0$ when $\vec q=0$.
 
-Off the real axis the general logarithms are $\log\tilde q+2\pi k\vec n$, $k\in\mathbb{Z}$. On the positive real axis they are $\ln r+2\pi k\vec n$ with $k\ge0$ and $\vec n\in S^2$, the value $k=0$ giving the principal exponent $\ln r$. On the negative real axis they are $\ln r+(2k+1)\pi\vec n$ with $k\ge0$ and $\vec n\in S^2$; none has vector length below $\pi$, so there is no principal exponent.
+Off the real axis the general logarithms are $\log\tilde q+2\pi k\vec n$, $k\in\mathbb{Z}$. On the positive real axis they are $\ln \varrho+2\pi k\vec n$ with $k\ge0$ and $\vec n\in S^2$, the value $k=0$ giving the principal exponent $\ln \varrho$. On the negative real axis they are $\ln \varrho+(2k+1)\pi\vec n$ with $k\ge0$ and $\vec n\in S^2$; none has vector length below $\pi$, so there is no principal exponent.
 
 The **formal exponent** of a factorized word is the sum of the exponents of its factors; for a single element it is the polar exponent $\tilde q_{\log}$.
 
@@ -168,12 +168,12 @@ q_t-iq_z & -iq_x-q_y\\
 \end{pmatrix}.
 $$
 
-Its determinant is $r^2$, its eigenvalues are $q_t\pm i\lvert\vec q\rvert$, and both have modulus $r$. The matrix is normal and satisfies $\mathsf M(\tilde q)\mathsf M(\tilde q)^{\dagger}=r^2I$, so its polar decomposition is
+Its determinant is $\varrho^2$, its eigenvalues are $q_t\pm i\lvert\vec q\rvert$, and both have modulus $\varrho$. The matrix is normal and satisfies $\mathsf M(\tilde q)\mathsf M(\tilde q)^{\dagger}=\varrho^2I$, so its polar decomposition is
 
 $$
-\mathsf M(\tilde q)=r\,U,
+\mathsf M(\tilde q)=\varrho\,U,
 \qquad
-U=\frac{\mathsf M(\tilde q)}{r}\in SU(2).
+U=\frac{\mathsf M(\tilde q)}{\varrho}\in SU(2).
 $$
 
 The positive factor is the scalar matrix $rI$, and the $*$-unitary factor is the matrix of the rotor. In the exponential form, with $N=-i\vec n\cdot\vec\sigma$,
@@ -183,17 +183,17 @@ N^2=-I,
 \qquad
 N^{\dagger}=-N,
 \qquad
-\mathsf M(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
-=r\bigl(\cos\theta\,I+\sin\theta\,N\bigr).
+\mathsf M(\tilde q)=\exp\bigl(\ln \varrho\,I+\theta N\bigr)
+=\varrho\bigl(\cos\theta\,I+\sin\theta\,N\bigr).
 $$
 
 | factor | matrix | the determinant of the image | eigenvalues |
 |---|---|---|---|
-| element | $\mathsf M(\tilde q)$ | $r^2$ | $q_t\pm i\lvert\vec q\rvert$ |
-| scale | $rI$ | $r^2$ | $r,r$ |
+| element | $\mathsf M(\tilde q)$ | $\varrho^2$ | $q_t\pm i\lvert\vec q\rvert$ |
+| scale | $rI$ | $\varrho^2$ | $\varrho,\varrho$ |
 | rotor | $\mathsf M(\tilde u_{\mathrm r})$ | $1$ | $e^{\pm i\theta}$ |
 
-The two singular values of $\mathsf M(\tilde q)$ are both $r$. In the biquaternion case they are $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.
+The two singular values of $\mathsf M(\tilde q)$ are both $\varrho$. In the biquaternion case they are $\varrho e^{\pm\theta_{\mathrm{rpd}}/2}$ and the determinant carries the phase; here the rapidity and the phase are absent, and the two scales coincide.
 
 ### The Boundary
 
@@ -201,10 +201,10 @@ The quaternion norm is definite, so there is no null cone. Every nonzero quatern
 
 | element | unit factor | logarithms | principal |
 |---|---|---|---|
-| $r>0$ | $e_t$ | $\ln r+2\pi k\vec n$, $k\ge0$, $\vec n\in S^2$ | $\ln r$ |
-| $-r<0$ | $-e_t$ | $\ln r+(2k+1)\pi\vec n$, $k\ge0$, $\vec n\in S^2$ | none |
+| $\varrho>0$ | $e_t$ | $\ln \varrho+2\pi k\vec n$, $k\ge0$, $\vec n\in S^2$ | $\ln \varrho$ |
+| $-\varrho<0$ | $-e_t$ | $\ln \varrho+(2k+1)\pi\vec n$, $k\ge0$, $\vec n\in S^2$ | none |
 
-At $k=0$ the first row is the single value $\ln r$ for every $\vec n$. The exponential has critical spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, whose image is the nonzero real axis; the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ is the domain of uniqueness. The kernel is the union of the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=2\pi k$, together with the origin; it is not a subgroup. The boundary family is computed in §*The Real Axis Family*.
+At $k=0$ the first row is the single value $\ln \varrho$ for every $\vec n$. The exponential has critical spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, whose image is the nonzero real axis; the principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ is the domain of uniqueness. The kernel is the union of the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=2\pi k$, together with the origin; it is not a subgroup. The boundary family is computed in §*The Real Axis Family*.
 
 ## The Eight Cases
 
@@ -225,7 +225,7 @@ $$
 **Polar data.** The modulus is one and the unit factor is the identity:
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta=0,
 \qquad
@@ -259,7 +259,7 @@ $$
 **Polar data.** The modulus is one and the unit factor is half a turn:
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta=\frac{\pi}{2},
 \qquad
@@ -297,7 +297,7 @@ $$
 **Polar data.** The modulus is one and
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta=\frac{\pi}{4},
 \qquad
@@ -339,7 +339,7 @@ $$
 **Polar data.** The modulus is two and the unit factor is the identity:
 
 $$
-r=2,
+\varrho=2,
 \qquad
 \theta=0,
 \qquad
@@ -373,7 +373,7 @@ $$
 **Polar data.** The modulus is five and
 
 $$
-r=5,
+\varrho=5,
 \qquad
 \theta=\arccos\frac35=0.9272952180,
 \qquad
@@ -420,7 +420,7 @@ $$
 **Polar data.** The modulus is one and
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta=\frac{\pi}{2},
 \qquad
@@ -479,7 +479,7 @@ $$
 **Polar data.** The modulus is one and
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta=\arccos\Bigl(-\frac{1}{\sqrt2}\Bigr)=\frac{3\pi}{4}=2.3561944902,
 \qquad
@@ -546,7 +546,7 @@ $$
 **Polar data.** The modulus and angle are
 
 $$
-r=\sqrt{30}=5.4772255751,
+\varrho=\sqrt{30}=5.4772255751,
 \qquad
 \theta=\arccos\frac{1}{\sqrt{30}}=1.3871923165,
 $$
@@ -595,7 +595,7 @@ $$
 
 At $\delta=0$ the element is $-2e_t$, the angle is $\pi$, the axis is free, and there is no principal exponent. The table gives the approach.
 
-| $\delta$ | $q_t$ | $q_x$ | $r$ | $\theta$ |
+| $\delta$ | $q_t$ | $q_x$ | $\varrho$ | $\theta$ |
 |---|---|---|---|---|
 | $0.5$ | $-1.7551651238$ | $0.9588510772$ | $2$ | $2.6415926536$ |
 | $0.1$ | $-1.9900083306$ | $0.1996668333$ | $2$ | $3.0415926536$ |
@@ -628,13 +628,13 @@ $$
 =-0.8582161857+0.3629497063\,(\vec e_x+\vec e_y),
 $$
 
-which is not $e_t$. The kernel is not a subgroup. The fibre over a non-real element is a line, the fibre over the positive real axis is the translate $\ln r+\ker\exp$, and the fibre over the open negative real axis is a union of spheres.
+which is not $e_t$. The kernel is not a subgroup. The fibre over a non-real element is a line, the fibre over the positive real axis is the translate $\ln \varrho+\ker\exp$, and the fibre over the open negative real axis is a union of spheres.
 
 ## Summary
 
 ### Main Results
 
-| Case | $\tilde q$ | $q_t$ | $q_x^2+q_y^2+q_z^2$ | $r$ | $\theta$ | $\vec n$ | rotation $2\theta$ |
+| Case | $\tilde q$ | $q_t$ | $q_x^2+q_y^2+q_z^2$ | $\varrho$ | $\theta$ | $\vec n$ | rotation $2\theta$ |
 |---|---|---|---|---|---|---|---|
 | $1$ | $e_t$ | $1$ | $0$ | $1$ | $0$ | — | $0$ |
 | $2$ | $\vec e_x$ | $0$ | $1$ | $1$ | $\pi/2$ | $\vec e_x$ | $\pi$ |
@@ -647,7 +647,7 @@ which is not $e_t$. The kernel is not a subgroup. The fibre over a non-real elem
 
 ### The Factors
 
-| Case | scale $r$ | rotor $\tilde u_{\mathrm r}$ | axis $\vec n$ | rotation $2\theta$ |
+| Case | scale $\varrho$ | rotor $\tilde u_{\mathrm r}$ | axis $\vec n$ | rotation $2\theta$ |
 |---|---|---|---|---|
 | $1$ | $1$ | $e_t$ | — | $0$ |
 | $2$ | $1$ | $\vec e_x$ | $\vec e_x$ | $\pi$ |
@@ -686,7 +686,7 @@ The **word** is the factorized exponential constructed in the case: one exponent
 | $7$ | $\frac{3\pi}{4}\vec e_z$ | $1.1\times10^{-16}$ |
 | $8$ | $\ln\sqrt{30}+\arccos\frac{1}{\sqrt{30}}\,\vec n$ | $1.1\times10^{-15}$ |
 
-Off the real axis the other logarithms are obtained by adding $2\pi k\vec n$. On the positive real axis they are $\ln r+2\pi k\vec n$ with $k\ge0$ and $\vec n\in S^2$; on the negative real axis they are $\ln r+(2k+1)\pi\vec n$ with $k\ge0$ and $\vec n\in S^2$, and none is principal.
+Off the real axis the other logarithms are obtained by adding $2\pi k\vec n$. On the positive real axis they are $\ln \varrho+2\pi k\vec n$ with $k\ge0$ and $\vec n\in S^2$; on the negative real axis they are $\ln \varrho+(2k+1)\pi\vec n$ with $k\ge0$ and $\vec n\in S^2$, and none is principal.
 
 ### What the Cases Show
 
@@ -697,7 +697,7 @@ Off the real axis the other logarithms are obtained by adding $2\pi k\vec n$. On
 - Case 7 is the non-parallel product. The word is a product of rotors at $45^\circ$, and the element has the negative scalar $-1/\sqrt2$. The polar data give the axis $\vec e_z$ and the exponent $\frac{3\pi}{4}\vec e_z$; the formal exponent misses the element by $1/\sqrt2$. The angle is $3\pi/4<\pi$, so the principal logarithm exists. The negative scalar is the scalar part of the product, not a point on the branch cut.
 - Case 8 is the generic non-invertible. The modulus is $\sqrt{30}$, all four coordinates are nonzero, and the axis has all three components. The formal exponent is the true logarithm, so the defect is zero.
 - The defect is zero when the word is a single factor, in cases 1 to 5 and 8; it is nonzero when two rotors about different axes are multiplied, in cases 6 and 7. The cross term is the defect. This is how the quaternion article mirrors the biquaternion defect without a second axis inside one element.
-- The open negative real axis is the branch cut. The polar word exists there, but the principal exponent does not, and the axis is free. The general logarithms form the spheres of radii $(2k+1)\pi$ at scalar height $\ln r$; the first is the sphere of radius $\pi$. The kernel is a union of spheres and is not a subgroup.
+- The open negative real axis is the branch cut. The polar word exists there, but the principal exponent does not, and the axis is free. The general logarithms form the spheres of radii $(2k+1)\pi$ at scalar height $\ln \varrho$; the first is the sphere of radius $\pi$. The kernel is a union of spheres and is not a subgroup.
 
 ### The Two Algebras
 
@@ -706,13 +706,13 @@ The two architectures compare as follows.
 | feature | biquaternion case | quaternion case |
 |---|---|---|
 | coordinates | $Q_t,Q_x,Q_y,Q_z\in\mathbb{C}$ | $q_t,q_x,q_y,q_z\in\mathbb{R}$ |
-| modulus | $re^{i\theta_{\mathrm{pha}}}$, principal square root | $r>0$ |
+| modulus | $\varrho e^{i\theta_{\mathrm{pha}}}$, principal square root | $\varrho>0$ |
 | unit factor | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, Hermitian times $*$-unitary | $\tilde u_{\mathrm r}$, a rotor |
 | angles and axes | $\theta_{\mathrm{rpd}},\theta_{\mathrm b}$; $\vec u_{\mathrm b},\vec u_{\mathrm r}$ | $\theta$; $\vec n$ |
-| polar word | $re^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln r+\theta\vec n)$ |
+| polar word | $\varrho e^{i\theta_{\mathrm{pha}}}\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$ | $\exp(\ln \varrho+\theta\vec n)$ |
 | defect of one element's polar word | the cross term when the axes are non-parallel | zero |
 | boundary | the null cone, where no polar word exists | the open negative real axis, where no principal exponent exists |
-| matrix scales | $re^{\pm\theta_{\mathrm{rpd}}/2}$ | $r,r$ |
+| matrix scales | $\varrho e^{\pm\theta_{\mathrm{rpd}}/2}$ | $\varrho,\varrho$ |
 
 The quaternion case is the definite compact companion of the biquaternion case: the phase, the rapidity, the Hermitian factor and the second axis are absent, and the four-factor word of the biquaternion case collapses to one exponential for a single element. What survives is the noncommutativity, and it appears in the product of two elements rather than in the decomposition of one.
 
@@ -725,12 +725,12 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 | $q_t,q_x,q_y,q_z$ | the four real coordinates |
 | $\tilde q^{\natural}=q_te_t-\vec q$ | the quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=q_t^2+q_x^2+q_y^2+q_z^2$ | the quaternion norm |
-| $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
-| $\theta=\arccos(q_t/r)\in[0,\pi]$ | the exponent angle, half the rotation angle |
+| $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
+| $\theta=\arccos(q_t/\varrho)\in[0,\pi]$ | the exponent angle, half the rotation angle |
 | $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ | the axis, undefined when $\vec q=0$ |
 | $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$ | the rotor, the unit factor |
 | $2\theta$ | the rotation angle of the two-sided operator |
-| $\tilde q_{\log}=\ln r+\theta\vec n$ | the exponent |
+| $\tilde q_{\log}=\ln \varrho+\theta\vec n$ | the exponent |
 | $\log\tilde q$ | the principal logarithm on $\mathbb{H}\setminus(-\infty,0]$ |
 | $D(\tilde h)$ | the defect of a candidate exponent |
 | $\ker\exp=\{0\}\cup\bigcup_{k\ge1}\{\vec v:\langle\vec v\rangle_{\natural}=(2\pi k)^2\}$ | the kernel, not a subgroup |

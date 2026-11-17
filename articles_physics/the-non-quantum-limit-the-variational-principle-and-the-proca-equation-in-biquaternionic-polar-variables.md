@@ -7,22 +7,22 @@
 **The action and the two terms that decide the article.**
 
 $$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu r\bigr)^{2}-\tfrac12k_m^{2}r^{2}+\text{(the frame's terms)}\Bigr\},
+S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu \varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2}+\text{(the frame's terms)}\Bigr\},
 $$
 
-in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\varepsilon_\mu$ the metric signs of the material sector. **The first and second terms are the amplitude's kinetic term and the mass term**, and the frame's terms carry the boost's connection.
+in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, with $\varepsilon_\mu$ the metric signs of the material sector. **The first and second terms are the amplitude's kinetic term and the mass term**, and the frame's terms carry the boost's connection.
 
-**Why the two terms are the same size, in one line.** For a real plane wave $r=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ with $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$, the kinetic term is $\omega^{2}r^{2}\tan^{2}$ and the mass term is $k_m^{2}r^{2}$, so their ratio is $\omega^{2}/k_m^{2}$ up to the tangent. **The ratio is of order one**, so neither term dominates and no truncation of the pair is controlled.
+**Why the two terms are the same size, in one line.** For a real plane wave $\varrho=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ with $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$, the kinetic term is $\omega^{2}\varrho^{2}\tan^{2}$ and the mass term is $k_m^{2}\varrho^{2}$, so their ratio is $\omega^{2}/k_m^{2}$ up to the tangent. **The ratio is of order one**, so neither term dominates and no truncation of the pair is controlled.
 
 **What that does to the standard story.** In the Klein–Gordon family the deleted term is one derivative order above the kept ones, so the limit is an expansion and its error is a power of $\epsilon$. **Here the two terms carry the same two derivatives, one on the amplitude and one from the mass**, and there is no order difference to exploit. **The truncation's error is of the same size as the truncated term's content.**
 
-**The variational reason, stated once.** The Proca action's amplitude sector is $(\Box_\Phi-k_m^{2})r$ and both terms come from the same operator. **A term that is half of an operator cannot be dropped from the operator's own equation**, and the variational principle makes this visible because both terms appear as separate blocks with the same derivative count.
+**The variational reason, stated once.** The Proca action's amplitude sector is $(\Box_\Phi-k_m^{2})\varrho$ and both terms come from the same operator. **A term that is half of an operator cannot be dropped from the operator's own equation**, and the variational principle makes this visible because both terms appear as separate blocks with the same derivative count.
 
 **What the article establishes, in four sentences.** The Proca action, with the real word substituted, has an amplitude sector whose two terms are the amplitude's Laplacian and the mass term, both of order $k_m^{2}$. For a solution the two are comparable, so the non-quantum truncation is not a controlled approximation in this family. The variational route's contribution is therefore negative and precise: it quantifies the obstruction the local-form companion found by order counting. What survives variationally is the frame's sector and the Lorenz constraint, and those are the chart's genuine content.
 
 **What is not new.** The Proca action's decomposition into an amplitude and a frame, the Lorenz constraint as a trace, and the fact that a massive vector field's amplitude oscillates are standard. Added here: the statement that the two amplitude blocks carry the same derivative count, and the reading of the variational route as the place where the family's obstruction is quantified rather than merely observed.
 
-**The restriction.** The word is defined for $r>0$ on one branch; the boundary is the lightlike set where the norm vanishes.
+**The restriction.** The word is defined for $\varrho>0$ on one branch; the boundary is the lightlike set where the norm vanishes.
 
 **Conventions.** Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$.
 
@@ -32,8 +32,8 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 | block | derivative count | order in $k_m$ |
 |---|---|---|
-| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu r)^{2}$ | two, on the amplitude | $k_m^{2}$ |
-| $-\tfrac12k_m^{2}r^{2}$ | none | $k_m^{2}$ |
+| $\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu \varrho)^{2}$ | two, on the amplitude | $k_m^{2}$ |
+| $-\tfrac12k_m^{2}\varrho^{2}$ | none | $k_m^{2}$ |
 | the frame's terms | two, on the boost's connection | $k_m^{2}$ |
 
 **All three carry $k_m^{2}$ and two derivatives**, and that is the whole of the difficulty: there is no hierarchy among them.
@@ -44,7 +44,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 ## The Truncation and Its Error
 
-**What a non-quantum limit would delete.** The amplitude's kinetic term, by analogy with every other family. **What remains is $-\tfrac12k_m^{2}r^{2}$ plus the frame's terms**, that is an algebraic amplitude and a dynamical frame.
+**What a non-quantum limit would delete.** The amplitude's kinetic term, by analogy with every other family. **What remains is $-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms**, that is an algebraic amplitude and a dynamical frame.
 
 **Why that is not an approximation here.** The deleted term is of the same size as the kept one for every solution, as the ratio $\omega^{2}/k_m^{2}$ shows. **An approximation whose discarded term equals the retained term is not an approximation**, and the article's claim is exactly this and no more.
 
@@ -52,9 +52,9 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 | family | deleted term | size ratio to the kept terms | controlled |
 |---|---|---|---|
-| Klein–Gordon | $(\partial r)^{2}$ | $\epsilon^{2}$ or $\delta^{2}$ | yes |
+| Klein–Gordon | $(\partial \varrho)^{2}$ | $\epsilon^{2}$ or $\delta^{2}$ | yes |
 | Dirac | the frame's gradients | $\epsilon^{2}$ | yes |
-| free Proca | $(\partial r)^{2}$ | of order one | no |
+| free Proca | $(\partial \varrho)^{2}$ | of order one | no |
 
 **The third row is the article's result**, and the second row's entry is the reason the Dirac family could be treated at all: there the deleted terms are gradients of a frame that follows the momentum.
 
@@ -88,9 +88,9 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 ## Verification
 
-**The derivative counts were checked from the display.** The amplitude's kinetic term carries two derivatives on $r$; the mass term carries none; the frame's terms carry two on the connection. **The counts are an inspection and they are exact.**
+**The derivative counts were checked from the display.** The amplitude's kinetic term carries two derivatives on $\varrho$; the mass term carries none; the frame's terms carry two on the connection. **The counts are an inspection and they are exact.**
 
-**The size ratio was checked on a real plane wave.** With $r=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ and the Proca dispersion, the kinetic density is $\tfrac12\omega^{2}\lvert\vec A_0\rvert^{2}\sin^{2}(\omega t')$ and the mass density is $\tfrac12k_m^{2}\lvert\vec A_0\rvert^{2}\cos^{2}(\omega t')$; the ratio is $\omega^{2}\tan^{2}/k_m^{2}$, which is of order one at every time and unbounded near the zeros of the cosine. **The claim that the two are comparable holds at every time and fails only more strongly near the nodes.**
+**The size ratio was checked on a real plane wave.** With $\varrho=\lvert\vec A_0\rvert\lvert\cos(\omega t')\rvert$ and the Proca dispersion, the kinetic density is $\tfrac12\omega^{2}\lvert\vec A_0\rvert^{2}\sin^{2}(\omega t')$ and the mass density is $\tfrac12k_m^{2}\lvert\vec A_0\rvert^{2}\cos^{2}(\omega t')$; the ratio is $\omega^{2}\tan^{2}/k_m^{2}$, which is of order one at every time and unbounded near the zeros of the cosine. **The claim that the two are comparable holds at every time and fails only more strongly near the nodes.**
 
 **The constraint was checked to be the trace.** Contracting the equation with the invertibles and taking the scalar part returns $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which is one real equation. **The count matches the parent's.**
 
@@ -98,7 +98,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i r\tilde U$, with $\va
 
 ## Summary
 
-With the real word substituted, the Proca action's amplitude sector is $\tfrac12(\partial r)^{2}-\tfrac12k_m^{2}r^{2}$ plus the frame's terms, and both amplitude blocks carry two derivatives and a factor $k_m^{2}$.
+With the real word substituted, the Proca action's amplitude sector is $\tfrac12(\partial \varrho)^{2}-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms, and both amplitude blocks carry two derivatives and a factor $k_m^{2}$.
 
 For a real plane wave the two blocks are comparable at every time, with a ratio $\omega^{2}/k_m^{2}$ of order one. **So the non-quantum truncation, which would delete the amplitude's kinetic term, is not a controlled approximation in this family**, and the variational route's contribution is the precise form of that statement.
 
@@ -111,7 +111,7 @@ The comparison with the other families is the ledger: the Klein–Gordon and Dir
 | Symbol | Meaning |
 |---|---|
 | $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ | The real material four-vector |
-| $r>0$ | The scale; $r^{2}=\mp\langle\tilde A_\Phi\rangle_\natural$ by branch |
+| $\varrho>0$ | The scale; $\varrho^{2}=\mp\langle\tilde A_\Phi\rangle_\natural$ by branch |
 | $\tilde U_{\Psi,\mathrm b}$ | The boost |
 | $\Gamma_\mu$ | The frame's connection |
 | $\varepsilon_\mu$ | The metric signs of the material sector |

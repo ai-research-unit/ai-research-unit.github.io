@@ -280,7 +280,7 @@ The maps of the layer are the bar, the tessarine sign, the star that is their co
 
 ## The Polar Words
 
-**A polar word is a factorisation of an element, and its names are fixed here.** The modulus–unit pair $\tilde Q=\Rho\tilde U$ holds off the algebraic null cone, with $\Rho$ the principal square root of the norm and $\tilde U$ of norm one. The Cartan pair $\tilde Q=\tilde Q_H\tilde Q_0$ holds on every element, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry.
+**A polar word is a factorisation of an element, and its names are fixed here.** The modulus–unit pair $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ holds off the algebraic null cone, with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal square root of the norm and $\tilde U$ of norm one. The Cartan pair $\tilde Q=\tilde Q_H\tilde Q_0$ holds on every element, with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry.
 
 **The four-factor refinement has one name and it is the complete polar decomposition.** On the regular elements $\langle\tilde Q\rangle_{\natural}\neq0$ the pair refines into
 
@@ -290,7 +290,7 @@ $$
 
 with the scale $r>0$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one and the unit real quaternion rotor $\tilde u_{\mathrm r}$. The plain name is kept for the pair: *the polar decomposition* is the two-factor word, and *complete* marks the refinement into four factors, one per slot, $1+1+3+3$ real parameters. The word is defined and proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
-**A qualifier names the form the word is written in, and never the number of factors.** *Modulus–unit* names the pair with $\Rho$ first; *exponential* names the logarithm form $\tilde Q=\exp(\tilde X)$; *rational-chart* names the coordinates in which the unit factor is a ratio of polynomials, with one unit missed. The adjective *complete* is the one exception, and it counts factors.
+**A qualifier names the form the word is written in, and never the number of factors.** *Modulus–unit* names the pair with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ first; *exponential* names the logarithm form $\tilde Q=\exp(\tilde X)$; *rational-chart* names the coordinates in which the unit factor is a ratio of polynomials, with one unit missed. The adjective *complete* is the one exception, and it counts factors.
 
 **The three pairings of the word are regroupings of it, and each carries its own name.** The quaternion pairing, the Hamilton root pairing and the Cartan Hermitian pairing bracket the four factors into a product of two; none of them is a second decomposition, and none of them is called complete.
 

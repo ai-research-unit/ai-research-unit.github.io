@@ -10,7 +10,7 @@
 
 *First, the weight has no chart coordinate.* The weight $\exp(iS/\hbar)e_t$ is central and $*$-unitary; the chart's coordinates are those of an anti-Hermitian element. **The chart is a chart of the carrier, and the weight does not live in the carrier.** So the sentence the scalar chart can say — every path has scale one — has no Proca analogue, and the Maslov phase, which lives in the centre, is invisible to this chart.
 
-*Second, the measure does not cancel and it does not have to.* The chart's volume element is $r^{3}\sinh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $r^{3}\cosh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, and the mass term supplies $r^{2}$ on both. The radial integral is then $\int_0^\infty r^{3}\mathrm{d}r\,e^{-ar^{2}}=\frac{1}{2a^{2}}$, which is the power a four-component Gaussian carries. **The radial power is one less than the carrier's dimension, and the mass term completes the count.**
+*Second, the measure does not cancel and it does not have to.* The chart's volume element is $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, and the mass term supplies $\varrho^{2}$ on both. The radial integral is then $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$, which is the power a four-component Gaussian carries. **The radial power is one less than the carrier's dimension, and the mass term completes the count.**
 
 *Third, the constraint is displayed and not imposed.* The action's divergence term $-\frac12S^{2}$ is one of the chart's three pieces, and its variation produces the Lorenz condition. In the integral the divergences are therefore integrated over as Gaussian directions whose saddle is the condition. **The constraint is a saddle, and not a multiplier.** That is the sharp difference from the scalar chart, where the phase was a multiplier and the density's integral was a delta.
 
@@ -21,22 +21,22 @@
 **Conventions.** The algebra and the pairing are the element companion's. The word is
 
 $$
-\tilde A_\Phi=\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}\ \ (\langle\tilde A_\Phi\rangle_\natural<0),
+\tilde A_\Phi=\varepsilon\,i\,\varrho\,\tilde U_{\Psi,\mathrm b}\ \ (\langle\tilde A_\Phi\rangle_\natural<0),
 \qquad
-\tilde A_\Phi=r\,\tilde U_{\Psi,\mathrm b}\,\hat u\ \ (\langle\tilde A_\Phi\rangle_\natural>0),
+\tilde A_\Phi=\varrho\,\tilde U_{\Psi,\mathrm b}\,\hat u\ \ (\langle\tilde A_\Phi\rangle_\natural>0),
 $$
 
-with $r>0$, $\varepsilon=\pm1$, $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$ the boost of rapidity $2u$ about the unit axis $\hat u_{\mathrm b}$, and $\hat u$ a real unit vector. The parameters are $(r,u,\vartheta_1,\vartheta_2)$ on each branch: four for four components. **The chart's statements and its two branches are the polar equation article's**, and this article cites them rather than deriving them.
+with $\varrho>0$, $\varepsilon=\pm1$, $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$ the boost of rapidity $2u$ about the unit axis $\hat u_{\mathrm b}$, and $\hat u$ a real unit vector. The parameters are $(\varrho,u,\vartheta_1,\vartheta_2)$ on each branch: four for four components. **The chart's statements and its two branches are the polar equation article's**, and this article cites them rather than deriving them.
 
 ## The Word of a Value
 
-**The chart is a bijection and its two branches are the two signs of the Minkowski form.** The norm of the timelike branch is $-r^{2}$:
+**The chart is a bijection and its two branches are the two signs of the Minkowski form.** The norm of the timelike branch is $-\varrho^{2}$:
 
 $$
-(\varepsilon ir\tilde U_{\Psi,\mathrm b})(\varepsilon ir\tilde U_{\Psi,\mathrm b})^{\natural}=\varepsilon^{2}i^{2}r^{2}\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=-r^{2},
+(\varepsilon i\varrho\tilde U_{\Psi,\mathrm b})(\varepsilon i\varrho\tilde U_{\Psi,\mathrm b})^{\natural}=\varepsilon^{2}i^{2}\varrho^{2}\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural}=-\varrho^{2},
 $$
 
-because the boost is a $\natural$-unit. The norm of the spacelike branch is $+r^{2}$, for the same reason with $\hat u\hat u^{\natural}=+1$. Both computations were checked on random values: the timelike branch gave $-0.810000000000$ for $r=0.9$, the spacelike branch $+0.810000000000$, and the anti-Hermiticity $\tilde A_\Phi^{*}+\tilde A_\Phi=0$ held exactly rather than to a tolerance.
+because the boost is a $\natural$-unit. The norm of the spacelike branch is $+\varrho^{2}$, for the same reason with $\hat u\hat u^{\natural}=+1$. Both computations were checked on random values: the timelike branch gave $-0.810000000000$ for $\varrho=0.9$, the spacelike branch $+0.810000000000$, and the anti-Hermiticity $\tilde A_\Phi^{*}+\tilde A_\Phi=0$ held exactly rather than to a tolerance.
 
 **The lightlike set is outside both branches and it is of measure zero.** Where $\langle\tilde A_\Phi\rangle_\natural=0$ the field is a zero divisor of $\mathbb{B}$ and has no polar reading at all. The set is a cone in four dimensions, so its four-volume is zero and the chart misses nothing that the integral can see. **This is the material sector's version of the scalar chart's nodal set**, and the mechanism is the same: the excluded set is where the chart's coordinates fail, and it carries no weight.
 
@@ -52,7 +52,7 @@ $$
 
 a central $*$-unitary element: scale one, angle $S/\hbar$, trivial boost, trivial rotor. The chart's coordinates describe an element of $\mathbb{B}_\Phi$, whose scalar part is a coefficient of $ie_t$ and whose vector part is real. **A central element is neither anti-Hermitian nor Hermitian-traceless; it is outside the material sector entirely.**
 
-**So the chart cannot read the weight, and the scalar chart's first sentence does not survive.** There the weight and the field value lived in the same chart, so "every configuration has scale one" was a statement inside the chart. Here the weight has a scale and an angle and the chart has neither: the chart's $r$ is the magnitude of the *field value*, and the weight's modulus is one by construction. **The two scales are different objects and the chart names only one of them.**
+**So the chart cannot read the weight, and the scalar chart's first sentence does not survive.** There the weight and the field value lived in the same chart, so "every configuration has scale one" was a statement inside the chart. Here the weight has a scale and an angle and the chart has neither: the chart's $\varrho$ is the magnitude of the *field value*, and the weight's modulus is one by construction. **The two scales are different objects and the chart names only one of them.**
 
 **The consequence is that the Maslov phase is invisible.** In the scalar pair the kernel's angle was the classical action over $\hbar$ plus a central constant, and the constant was the argument of the Fresnel square root — a central object, read in the central angle's slot. Here there is no central angle's slot. **The Maslov phase of the Proca kernel exists, is central, and has no chart coordinate**; the chart's only discrete data are the branch sign $\varepsilon$ and the two halves of each branch.
 
@@ -60,29 +60,29 @@ a central $*$-unitary element: scale one, angle $S/\hbar$, trivial boost, trivia
 
 ## The Measure
 
-**The chart's volume element is $r^{3}$ times an angular factor, and the angular factor differs by branch.** Inverting the two charts gives
+**The chart's volume element is $\varrho^{3}$ times an angular factor, and the angular factor differs by branch.** Inverting the two charts gives
 
 $$
-\mathrm{d}^{4}A=r^{3}\sinh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega_{2}\ \ (\text{timelike}),
+\mathrm{d}^{4}A=\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}\ \ (\text{timelike}),
 \qquad
-\mathrm{d}^{4}A=r^{3}\cosh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega_{2}\ \ (\text{spacelike}),
+\mathrm{d}^{4}A=\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}\ \ (\text{spacelike}),
 $$
 
 with $\mathrm{d}\Omega_2$ the measure on the axis's sphere and $\mathrm{d}^{4}A=\mathrm{d}a'_t\,\mathrm{d}A_x\,\mathrm{d}A_y\,\mathrm{d}A_z$.
 
-**The $r^{3}$ was checked pointwise and the checks are exact.** The $4\times4$ Jacobian of the timelike chart at three random parameter points matched $r^{3}\sinh^{2}u\,\sin\vartheta$ to a relative $5.6\times10^{-10}$, the residual being the finite difference's step. **Three powers of $r$ against four components: the radial power is the carrier's dimension less one**, because the scale is a radial coordinate and the other three parameters are angles.
+**The $\varrho^{3}$ was checked pointwise and the checks are exact.** The $4\times4$ Jacobian of the timelike chart at three random parameter points matched $\varrho^{3}\sinh^{2}u\,\sin\vartheta$ to a relative $5.6\times10^{-10}$, the residual being the finite difference's step. **Three powers of $\varrho$ against four components: the radial power is the carrier's dimension less one**, because the scale is a radial coordinate and the other three parameters are angles.
 
 **The four pieces sum to the Cartesian integral, and the sum was checked twice.** In two dimensions, where the chart is the hyperbolic analogue of polar coordinates and the axis is a point, the four pieces — timelike with $\varepsilon=\pm1$, spacelike with $\hat u=\pm\vec e_z$ — reproduce $\pi=\int\!\!\int e^{-(a^{2}+b^{2})}\mathrm{d}a\,\mathrm{d}b$ to a relative $7.5\times10^{-11}$. In four dimensions the two branches reproduce $\pi^{2}/a^{2}=\int\mathrm{d}^{4}A\,e^{-a(a_t'^{2}+\vec A^{2})}$ to $1.6\times10^{-9}$, with the timelike part contributing $1.061070739$ and the spacelike part $4.778931874$ of the total $5.840002613$.
 
-**The measure does not cancel against the exponent, and the reason is the order in time.** The mass term is $\mp\frac12k_m^{2}r^{2}$ on the two branches, so it is a function of $r^{2}$ alone, and the radial integral is
+**The measure does not cancel against the exponent, and the reason is the order in time.** The mass term is $\mp\frac12k_m^{2}\varrho^{2}$ on the two branches, so it is a function of $\varrho^{2}$ alone, and the radial integral is
 
 $$
-\int_0^{\infty}r^{3}\mathrm{d}r\,e^{\mp\frac{i}{2\hbar}k_m^{2}r^{2}}\ \propto\ \frac{1}{(k_m^{2})^{2}} ,
+\int_0^{\infty}\varrho^{3}\mathrm{d}\varrho\,e^{\mp\frac{i}{2\hbar}k_m^{2}\varrho^{2}}\ \propto\ \frac{1}{(k_m^{2})^{2}} ,
 $$
 
-which is the $a^{-2}$ a four-component Gaussian carries. **The Jacobian's three powers and the exponent's one power of $r^{2}$ together give exactly the four components' worth of Gaussian weight.** In the scalar chart the opposite happened: the exponent was linear in $n=r^{2}$, the Jacobian $r\,\mathrm{d}r=\frac12\mathrm{d}n$ cancelled it exactly, and the measure left no trace. **A linear exponent cancels the Jacobian; a quadratic one is completed by it.**
+which is the $a^{-2}$ a four-component Gaussian carries. **The Jacobian's three powers and the exponent's one power of $\varrho^{2}$ together give exactly the four components' worth of Gaussian weight.** In the scalar chart the opposite happened: the exponent was linear in $n=\varrho^{2}$, the Jacobian $\varrho\,\mathrm{d}\varrho=\frac12\mathrm{d}n$ cancelled it exactly, and the measure left no trace. **A linear exponent cancels the Jacobian; a quadratic one is completed by it.**
 
-**The rapidity's integral is not convergent on the mass term alone, and the kinetic term is what converges it.** The mass term is flat in $u$, so $\int\mathrm{d}u\,\sinh^{2}u$ diverges; the kinetic term's dependence on $u$ is the frame's Maurer–Cartan form, and it is what supplies the falloff. **The chart's two coordinates are not on the same footing: $r$ is weighted by the mass and $u$ by the field strength**, which is the integral's version of the polar variational companion's statement that the mass fixes the scale's equation and the frame fixes the transport equation.
+**The rapidity's integral is not convergent on the mass term alone, and the kinetic term is what converges it.** The mass term is flat in $u$, so $\int\mathrm{d}u\,\sinh^{2}u$ diverges; the kinetic term's dependence on $u$ is the frame's Maurer–Cartan form, and it is what supplies the falloff. **The chart's two coordinates are not on the same footing: $\varrho$ is weighted by the mass and $u$ by the field strength**, which is the integral's version of the polar variational companion's statement that the mass fixes the scale's equation and the frame fixes the transport equation.
 
 ## The Exponent in the Chart
 
@@ -93,7 +93,7 @@ S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\Bigl[\bigl((\tilde\nabla
 \qquad S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr),
 $$
 
-and each piece has a chart reading. The first is a quadratic form in the four gradients with a metric the frame builds; the second is a square of a scalar; the third is $\mp\frac12k_m^{2}r^{2}$.
+and each piece has a chart reading. The first is a quadratic form in the four gradients with a metric the frame builds; the second is a square of a scalar; the third is $\mp\frac12k_m^{2}\varrho^{2}$.
 
 **The mass term's sign is the branch's and its magnitude is the scale's.** On the timelike branch the scale enters with the sign of a positive mass term and the scale equation has the massive form; on the spacelike branch the sign is reversed. **Nothing in the element form displays this, because the element form's mass term is indefinite and the branch is not a thing the element form can name.**
 
@@ -101,10 +101,10 @@ and each piece has a chart reading. The first is a quadratic form in the four gr
 
 ## The Two Saddles Are the Companion's Pair
 
-**Stationarity in the scale gives the scale equation.** Varying $r$ in the chart's exponent gives
+**Stationarity in the scale gives the scale equation.** Varying $\varrho$ in the chart's exponent gives
 
 $$
-\bigl(\Box_\Phi-k_m^{2}\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=0 ,
+\bigl(\Box_\Phi-k_m^{2}\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=0 ,
 $$
 
 which is the polar equation article's first equation, with the branch's sign absorbed in the mass term's sign. It is a Klein–Gordon equation for the scale with a source built from the frame's Maurer–Cartan form.
@@ -112,12 +112,12 @@ which is the polar equation article's first equation, with the branch's sign abs
 **Stationarity in the frame gives the transport equation.**
 
 $$
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^{2}-\mathrm{Sc}(\Gamma_\mu^{2})\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 ,
+\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^{2}-\mathrm{Sc}(\Gamma_\mu^{2})\Bigr)+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0 ,
 $$
 
 which is the companion's second equation, in the traceless part.
 
-**The pair is one statement and not two, and the integral exhibits it as two nested integrals.** Either order may be taken: the scale's integral at fixed frame is Gaussian in $r$, and the frame's integral at fixed scale is a theory of the rapidity with the scale as its weight. **The chart's reading is that the amplitude equation is the scale's saddle and the transport equation is the frame's saddle**, exactly as in the scalar chart, where the amplitude was the scale's saddle and the transport the angle's.
+**The pair is one statement and not two, and the integral exhibits it as two nested integrals.** Either order may be taken: the scale's integral at fixed frame is Gaussian in $\varrho$, and the frame's integral at fixed scale is a theory of the rapidity with the scale as its weight. **The chart's reading is that the amplitude equation is the scale's saddle and the transport equation is the frame's saddle**, exactly as in the scalar chart, where the amplitude was the scale's saddle and the transport the angle's.
 
 **What is missing from the pair is what the missing coordinate would have carried.** The scalar chart's pair had a continuity equation as the angle's saddle, and the continuity equation came from the phase's being a multiplier. Here there is no phase and no continuity equation: the companion says so, and calls the result a magnitude–direction decomposition rather than a fluid. **The chart's pair is a scale equation and a frame equation, and the current that a fluid reading would need does not exist**, because a real four-vector has no phase to make one.
 
@@ -153,7 +153,7 @@ which is the companion's second equation, in the traceless part.
 
 **Adds, first, the statement that the weight has no chart coordinate.** The chart is a chart of the carrier and the weight is not in the carrier, so the scalar chart's "every path has scale one" and its Maslov bookkeeping have no counterpart. **This is the sharpest difference between this pair and the two scalar pairs**, and it is a difference of sectors rather than of formulas.
 
-**Adds, second, the measure's radial power with its reason.** $r^{3}$ on four components, $r^{7}$ on eight — the radial power is the carrier's dimension less one — and the mass term's $r^{2}$ completes the Gaussian. The scalar chart's cancellation is the special case of a linear exponent; here the exponent is quadratic and the Jacobian is not cancelled but completed.
+**Adds, second, the measure's radial power with its reason.** $\varrho^{3}$ on four components, $\varrho^{7}$ on eight — the radial power is the carrier's dimension less one — and the mass term's $\varrho^{2}$ completes the Gaussian. The scalar chart's cancellation is the special case of a linear exponent; here the exponent is quadratic and the Jacobian is not cancelled but completed.
 
 **Adds, third, the Lorenz term as a displayed square whose saddle is the condition.** The constraint's mechanism differs from the scalar chart's delta, and the difference is the order in the divergence: quadratic rather than linear.
 
@@ -179,7 +179,7 @@ which is the companion's second equation, in the traceless part.
 
 The polar reading of the Proca functional integral is the substitution of the two-branch word into the element companion's integral, and its content is four statements about where the chart stops. The weight is central and the chart is anti-Hermitian, so **the weight has no chart coordinate**: the scale-one sentence and the Maslov phase belong to the scalar pair and not to this one.
 
-The measure is $r^{3}\sinh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $r^{3}\cosh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, checked pointwise to $5.6\times10^{-10}$ and summed to the Cartesian integral to $7.5\times10^{-11}$ in two dimensions and $1.6\times10^{-9}$ in four. The radial power is the carrier's dimension less one, and the mass term's $\mp\frac12k_m^{2}r^{2}$ completes the Gaussian: $r^{3}$ and $r^{2}$ give $a^{-2}$, which is four components' worth. The scalar chart's cancellation is the linear-exponent special case.
+The measure is $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the timelike branch and $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega$ on the spacelike one, checked pointwise to $5.6\times10^{-10}$ and summed to the Cartesian integral to $7.5\times10^{-11}$ in two dimensions and $1.6\times10^{-9}$ in four. The radial power is the carrier's dimension less one, and the mass term's $\mp\frac12k_m^{2}\varrho^{2}$ completes the Gaussian: $\varrho^{3}$ and $\varrho^{2}$ give $a^{-2}$, which is four components' worth. The scalar chart's cancellation is the linear-exponent special case.
 
 The divergence's square is a displayed term of the exponent and its saddle is the Lorenz condition, so the constraint is an equation and not a delta. The two saddles are the companion's scale equation and transport equation. The classical field is readable; **the kernel is not, because it is a bivector and the carrier is a four-vector**; and the product of two field values leaves the sector, so the chart has no composition law to offer.
 
@@ -187,16 +187,16 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 
 | Symbol | Meaning |
 | --- | --- |
-| $r$ | Scale of the field value; the modulus of the Minkowski square |
+| $\varrho$ | Scale of the field value; the modulus of the Minkowski square |
 | $u$ | Half the boost's rapidity; $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$ |
 | $\varepsilon=\pm1$ | Sign of the scalar potential; a label, not a coordinate |
 | $\hat u$ | Axis of the boost, or the direction of $\vec A$ on the spacelike branch |
-| $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$ | Timelike branch |
-| $\langle\tilde A_\Phi\rangle_\natural=+r^{2}$ | Spacelike branch |
-| $\mp\frac12k_m^{2}r^{2}$ | The mass term; the sign is the branch's |
-| $r^{3}\sinh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Timelike volume element |
-| $r^{3}\cosh^{2}u\,\mathrm{d}r\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Spacelike volume element |
-| $\int_0^\infty r^{3}\mathrm{d}r\,e^{-ar^{2}}=\frac{1}{2a^{2}}$ | The radial integral; four components' worth |
+| $\langle\tilde A_\Phi\rangle_\natural=-\varrho^{2}$ | Timelike branch |
+| $\langle\tilde A_\Phi\rangle_\natural=+\varrho^{2}$ | Spacelike branch |
+| $\mp\frac12k_m^{2}\varrho^{2}$ | The mass term; the sign is the branch's |
+| $\varrho^{3}\sinh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Timelike volume element |
+| $\varrho^{3}\cosh^{2}u\,\mathrm{d}\varrho\,\mathrm{d}u\,\mathrm{d}\Omega_{2}$ | Spacelike volume element |
+| $\int_0^\infty \varrho^{3}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=\frac{1}{2a^{2}}$ | The radial integral; four components' worth |
 | $-\frac12S^{2}$, $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ | The displayed Lorenz term; its saddle is $S=0$ |
 | $\Gamma_\mu=\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}$ | The frame's Maurer–Cartan form |
 | $\langle\tilde A_\Phi(x)\tilde A_\Phi(y)\rangle=i\hbar P^{-1}$ | The kernel; a bivector, outside the chart |

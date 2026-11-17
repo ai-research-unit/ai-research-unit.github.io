@@ -168,7 +168,7 @@ $$
 -k_m\,i\,\overline{\lambda F}\,\vec u=\bar\lambda\bigl(-k_m\,i\,\overline{F}\,\vec u\bigr),
 $$
 
-and $\bar\lambda\ne\lambda$ for non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**; its symmetry group is the real rescalings $F\mapsto rF$ with $r\in\mathbb{R}^{\times}$.
+and $\bar\lambda\ne\lambda$ for non-real $\lambda$. The two-sided form therefore has **no continuous central phase symmetry**; its symmetry group is the real rescalings $F\mapsto rF$ with $\varrho\in\mathbb{R}^{\times}$.
 
 **The theorem.** There is no phase to localize, so there is no covariant derivative to build, so the minimal-coupling prescription cannot be transferred to the two-sided form. Coupling that form would be a different construction and this set of articles does not attempt it.
 
@@ -310,7 +310,7 @@ A static connection gives the equation its translation and rotation symmetries, 
 **Energy.** If $\tilde A_{\Phi}$ does not depend on $r'_t$, the equation is invariant under $r'_t\mapsto r'_t+\epsilon$, and the conserved charge is
 
 $$
-E=\int\mathrm{d}^{3}r\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,i\hbar c\,\partial_{r'_t}\tilde\Xi\bigr].
+E=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,i\hbar c\,\partial_{r'_t}\tilde\Xi\bigr].
 $$
 
 On a plane wave it is $\hbar c\,\kappa_t$ in the covariant reading and $\hbar c\,\pi_t$ in the canonical one, and the two differ by $ϙA_t c$: the energy of the coupled system is the kinetic energy, and the canonical energy is the kinetic energy less the potential's share. That difference is the whole of the constant-potential shift of §*Solutions in a Constant Potential*.
@@ -318,7 +318,7 @@ On a plane wave it is $\hbar c\,\kappa_t$ in the covariant reading and $\hbar c\
 **Momentum.** If $\tilde A_{\Phi}$ does not depend on $x_\eta$, the charge is the corresponding component of
 
 $$
-\vec P=\int\mathrm{d}^{3}r\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i\hbar)\nabla\tilde\Xi\bigr],
+\vec P=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i\hbar)\nabla\tilde\Xi\bigr],
 $$
 
 and again the covariant momentum is the canonical one plus $\frac{ϙ}{\hbar}\vec A$ in units of $\hbar$. A uniform vector potential therefore shifts the momentum and not the dispersion.
@@ -326,7 +326,7 @@ and again the covariant momentum is the canonical one plus $\frac{ϙ}{\hbar}\vec
 **Angular momentum, and the gauge-covariant modification.** Under a spatial rotation the potential rotates with the field, so the conserved generator is the sum of the orbital part and the spin part, with the connection entering the orbital part through the covariant derivative:
 
 $$
-\vec J=\int\mathrm{d}^{3}r\Bigl\{\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\bigl(\vec r\times(-i\hbar\nabla_{\mathrm{gco}})\bigr)\tilde\Xi\bigr]+\vec S\Bigr\},
+\vec J=\int\mathrm{d}^{3}\varrho\Bigl\{\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\bigl(\vec r\times(-i\hbar\nabla_{\mathrm{gco}})\bigr)\tilde\Xi\bigr]+\vec S\Bigr\},
 $$
 
 where $\vec S$ is the spin of the polar companion. **The modification is not optional.** A rotation that moves the field and leaves the potential fixed is not a symmetry of the coupled equation; only the rotation that moves the potential with the field is. The covariant derivative is what makes the orbital generator transform as a vector under that rotation, and with the ordinary derivative the orbital part alone would not be conserved.
@@ -339,7 +339,7 @@ The coupled equation contains the magnetic moment, and the place it sits is fixe
 
 **The mechanism, in one sentence.** The factor of the field that carries the velocity also carries the magnetic moment, because both are read from the same boost; a substitution that acts on the gradient cannot give the two different coefficients.
 
-**The polar statement.** In the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm{b}}\tilde u_{\mathrm r}$, the velocity is the boost, $\tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm{b}}^{-2}$, and the magnetic moment is the same boost multiplied by the rotor's direction. The connection is central in each component (§*The Coupling Prescription*), so it cannot touch the rotor and it cannot touch the boost either: it multiplies the whole word. What it does is shift the phase gradient, and the phase gradient is the momentum. The magnetic coupling therefore enters as a shift of the momentum and not as a torque on the frame.
+**The polar statement.** In the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm{b}}\tilde u_{\mathrm r}$, the velocity is the boost, $\tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm{b}}^{-2}$, and the magnetic moment is the same boost multiplied by the rotor's direction. The connection is central in each component (§*The Coupling Prescription*), so it cannot touch the rotor and it cannot touch the boost either: it multiplies the whole word. What it does is shift the phase gradient, and the phase gradient is the momentum. The magnetic coupling therefore enters as a shift of the momentum and not as a torque on the frame.
 
 **The Larmor rate, read off.** A frame whose boost axis precesses in a magnetic field precesses at
 

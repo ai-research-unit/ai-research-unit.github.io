@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the biquaternionic Klein–Gordon equation in the polar variables of the $N$-regular element. On the central class the word collapses to a scale, an angle and a sign, and the equation separates into two exact real equations: a relativistic continuity equation for $\rho_{\mathrm{num}}=r^{2}$ and a relativistic quantum Hamilton–Jacobi equation with quantum potential $Q_{\mathrm{qnt}}=-\hbar^{2}\Box r/(2mr)$. The pair is the relativistic Madelung fluid, exact and not an approximation, away from the nodal set. The reading is explicit: the density is $\rho_{\mathrm{num}}=r^{2}$, the four-velocity is the phase gradient over the mass, $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$, the flow is irrotational off the nodes, and the quantum potential is the logarithmic curvature of that density, so it depends on the density and not on the phase. That fluid is Takabayasi's spin-$0$ quantum fluid, and it is the relativistic analogue of Madelung's pair. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode.
+This article writes the biquaternionic Klein–Gordon equation in the polar variables of the $N$-regular element. On the central class the word collapses to a scale, an angle and a sign, and the equation separates into two exact real equations: a relativistic continuity equation for $\rho_{\mathrm{num}}=\varrho^{2}$ and a relativistic quantum Hamilton–Jacobi equation with quantum potential $Q_{\mathrm{qnt}}=-\hbar^{2}\Box \varrho/(2m\varrho)$. The pair is the relativistic Madelung fluid, exact and not an approximation, away from the nodal set. The reading is explicit: the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the four-velocity is the phase gradient over the mass, $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$, the flow is irrotational off the nodes, and the quantum potential is the logarithmic curvature of that density, so it depends on the density and not on the phase. That fluid is Takabayasi's spin-$0$ quantum fluid, and it is the relativistic analogue of Madelung's pair. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode.
 
 The Klein–Gordon equation of this corpus is one element of $\mathbb{B}$ acted on by the algebra's own d'Alembertian. *The Klein–Gordon Equation in Biquaternionic Form* writes it as
 
@@ -17,16 +17,16 @@ and $\Box$ is central with real coefficients, so the one biquaternion equation i
 This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *The Complete Polar Decomposition of an N-Regular Biquaternion*:
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},
+\varrho\,e^{i\theta_{\mathrm{pha}}},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
 $$
 
-The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, and $\varepsilon=\Xi_t/\Rho=\pm1$, with $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ the scalar coefficient, is its branch.
+The four factors are a positive real scale, a central angle, a Hermitian positive boost and a real rotor. The word has eight real parameters against the element's eight real components, and on its domain it is a bijection: it adds no object and drops no datum. $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, and $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$, with $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ the scalar coefficient, is its branch.
 
 **The domain is $N$-regularity.** The word is a parametrisation of the group of invertibles, so it exists iff $N(\tilde\Xi)\neq0$ (*The Meaning of N-Regularity and Degeneracy*), and it fails on every $N$-degenerate element. On the central class the cone and the nodal set coincide.
 
@@ -35,15 +35,15 @@ The four factors are a positive real scale, a central angle, a Hermitian positiv
 On the scalar the word collapses. The boost has no rapidity to carry and the rotor no axis, so
 
 $$
-\boxed{\;\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}
+\boxed{\;\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}
 \qquad
 \tilde U_{\Psi,\mathrm b}=e_t,\quad
 \tilde u_{\mathrm r}=\varepsilon e_t,\quad
-r=\bigl(\langle\tilde\Xi\rangle_{*}\bigr)^{1/2},\quad
-\varepsilon=\frac{\Xi_t}{\Rho}=\pm1,
+\varrho=\bigl(\langle\tilde\Xi\rangle_{*}\bigr)^{1/2},\quad
+\varepsilon=\frac{\Xi_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1,
 $$
 
-with $r$ the amplitude and $\rho_{\mathrm{num}}=r^{2}$ the proper density. The angle carries the action, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, defined modulo $2\pi\hbar$. The action carries the subscript of the field it belongs to, as in *Relativistic Mechanics from the Dirac Wave*, because the corpus's spin $\tilde S_{\Psi,\eta}$ stands on the bare letter.
+with $\varrho$ the amplitude and $\rho_{\mathrm{num}}=\varrho^{2}$ the proper density. The angle carries the action, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, defined modulo $2\pi\hbar$. The action carries the subscript of the field it belongs to, as in *Relativistic Mechanics from the Dirac Wave*, because the corpus's spin $\tilde S_{\Psi,\eta}$ stands on the bare letter.
 
 Substituting this word into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating real from imaginary parts replaces one complex equation by two real equations. That is the whole of the construction, and the two equations are exact: no term is dropped and no order is taken.
 
@@ -51,32 +51,32 @@ Substituting this word into $\left(\Box-k_m^{2}\right)\Xi_t=0$ and separating re
 
 **The mass shell carries a quantum term.** The amplitude equation is the mass shell with the mass term shifted by the curvature of the amplitude, and the shift is the term that the companion's boxed dispersion relation leaves implicit.
 
-**The companion's box is the constant-amplitude case.** $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ holds when $\Box r=0$, and a general wave adds one term to it.
+**The companion's box is the constant-amplitude case.** $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ holds when $\Box \varrho=0$, and a general wave adds one term to it.
 
 **The two defects are one mechanism.** The current is $\tilde J_{\Phi}=(\rho_{\mathrm{num}}/m)\tilde P_{\Phi}$ with $\rho_{\mathrm{num}}>0$, so the sign of the charge is the sign of the energy and the amplitude carries neither.
 
 The sections follow that order: the field and its word, the equation in polar variables, the momentum and the current, the non-relativistic limit, the general field, and what the word does and does not add.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The Non-Quantum Limit of the Free Schrödinger Equation*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces. The gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {\varrho^{\prime}_t}^2$, with $\partial^{2}/\partial R_t^{2}=-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector, so that on that sector $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ in one length unit. The four-position is $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the four-wavevector is $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$, and the mass wave number is $k_m=mc/\hbar$. The amplitude–phase decomposition and the quantum potential are those of *The Non-Quantum Limit of the Free Schrödinger Equation*, and the phase gradient as the four-momentum is that of *Relativistic Mechanics from the Dirac Wave*. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Field and Its Word
 
 ### The collapse of the word
 
-The word is the boxed form of the introduction. On a central field two of its four factors have no data to carry: the boost has neither rapidity nor axis, so it is $e_t$, and the rotor has neither angle nor axis, so it is the sign $\varepsilon e_t$ that the branch of the modulus deposits. The two factors that survive are the scale $r$ and the angle $\theta_{\mathrm{pha}}$, and both are central, so both commute with everything in the algebra. The symbol $\Xi_t$ stays available for the coefficient, and on the centre it is the product of the two, $\Xi_t=r e^{i\theta_{\mathrm{pha}}}$. The two real functions $(r,\theta_{\mathrm{pha}})$ and the one complex function $\Xi_t$ carry the same information.
+The word is the boxed form of the introduction. On a central field two of its four factors have no data to carry: the boost has neither rapidity nor axis, so it is $e_t$, and the rotor has neither angle nor axis, so it is the sign $\varepsilon e_t$ that the branch of the modulus deposits. The two factors that survive are the scale $\varrho$ and the angle $\theta_{\mathrm{pha}}$, and both are central, so both commute with everything in the algebra. The symbol $\Xi_t$ stays available for the coefficient, and on the centre it is the product of the two, $\Xi_t=\varrho e^{i\theta_{\mathrm{pha}}}$. The two real functions $(\varrho,\theta_{\mathrm{pha}})$ and the one complex function $\Xi_t$ carry the same information.
 
 The angle carries the action, $\theta_{\mathrm{pha}}=S_{\tilde\Xi}/\hbar$, so $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is real and $\exp(i\theta_{\mathrm{pha}})$ has modulus one.
 
-**The sign is data and not a redundancy.** $\Rho$ is the principal square root of $N=\Xi_t^{2}$ and $\varepsilon=\Xi_t/\Rho=\pm1$ is its branch, so the angle of the word runs over a half-turn and the rotor's sign carries the other half. The pair $(r,\theta_{\mathrm{pha}},\varepsilon)$ is a bijection onto the nonzero complex scalars, and the three letters are read from the scalar and never chosen.
+**The sign is data and not a redundancy.** $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of $N=\Xi_t^{2}$ and $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ is its branch, so the angle of the word runs over a half-turn and the rotor's sign carries the other half. The pair $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ is a bijection onto the nonzero complex scalars, and the three letters are read from the scalar and never chosen.
 
 **The action is defined modulo $2\pi\hbar$.** A shift of the angle by a full turn leaves the field unchanged and leaves every observable below unchanged, so the action is a coordinate of the field and not a property of it. The field carries three real parameters, the scale, the angle modulo the turn and the sign, and that is the count of the one nonzero complex coefficient it replaces.
 
 ### Where the Word Ends: the Nodal Set Is the Cone
 
-The form needs $r>0$. On the centre the quaternionic norm of the element is the square of the coefficient, $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so the two vanishing conditions coincide:
+The form needs $\varrho>0$. On the centre the quaternionic norm of the element is the square of the coefficient, $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so the two vanishing conditions coincide:
 
 $$
-r=0
+\varrho=0
 \qquad\Longleftrightarrow\qquad
 \langle\tilde\Xi\rangle_{\natural}=0 .
 $$
@@ -89,9 +89,9 @@ The failure costs nothing observable. $S_{\tilde\Xi}$ is undefined at a node bec
 
 ### The half turn, and the modulus
 
-**The angle of the word and the angle of the coefficient.** The word keeps $\theta_{\mathrm{pha}}$ in $(-\pi/2,\pi/2]$ and deposits the excess in the sign of the rotor, so the angle of the coefficient, $\arg\Xi_t$, runs over $(-\pi,\pi]$ and the two agree up to $\varepsilon$: $\arg\Xi_t=\theta_{\mathrm{pha}}$ when $\varepsilon=+1$ and $\arg\Xi_t=\theta_{\mathrm{pha}}+\pi$ when $\varepsilon=-1$. The half turn is invisible to $r$, to $\partial S_{\tilde\Xi}/\partial r'_t$, to $\nabla S_{\tilde\Xi}$ and to every observable below. It is a statement about the range of the word's angle and not about the field.
+**The angle of the word and the angle of the coefficient.** The word keeps $\theta_{\mathrm{pha}}$ in $(-\pi/2,\pi/2]$ and deposits the excess in the sign of the rotor, so the angle of the coefficient, $\arg\Xi_t$, runs over $(-\pi,\pi]$ and the two agree up to $\varepsilon$: $\arg\Xi_t=\theta_{\mathrm{pha}}$ when $\varepsilon=+1$ and $\arg\Xi_t=\theta_{\mathrm{pha}}+\pi$ when $\varepsilon=-1$. The half turn is invisible to $\varrho$, to $\partial S_{\tilde\Xi}/\partial r'_t$, to $\nabla S_{\tilde\Xi}$ and to every observable below. It is a statement about the range of the word's angle and not about the field.
 
-**The amplitude is not the polar modulus.** The polar modulus is the principal square root of $\langle\tilde\Xi\rangle_{\natural}$, which is complex, and on the centre $\lvert\Rho\rvert=r$. The four norms and their collapse on the centre are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the distinction matters here only at the nodes, where both vanish.
+**The amplitude is not the polar modulus.** The polar modulus is the principal square root of $\langle\tilde\Xi\rangle_{\natural}$, which is complex, and on the centre $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho$. The four norms and their collapse on the centre are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the distinction matters here only at the nodes, where both vanish.
 
 ## The Equation in Polar Variables
 
@@ -100,16 +100,16 @@ The failure costs nothing observable. $S_{\tilde\Xi}$ is undefined at a node bec
 The d'Alembertian of the word separates into a real and an imaginary part with no remainder, because the amplitude and the action are real and the exponential is central. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ on the material sector,
 
 $$
-\Box_\Phi\!\left(r e^{i\theta_{\mathrm{pha}}}\right)
-=e^{i\theta_{\mathrm{pha}}}\left\{\Box_\Phi r+\frac{r}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{r}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{r}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
+\Box_\Phi\!\left(\varrho e^{i\theta_{\mathrm{pha}}}\right)
+=e^{i\theta_{\mathrm{pha}}}\left\{\Box_\Phi \varrho+\frac{\varrho}{\hbar^{2}}\left[\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\right]+\frac{i}{\hbar}\left[\frac{1}{\varrho}\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{1}{\varrho}\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right]\right\}.
 $$
 
 The first two terms are real and the third is purely imaginary. The verification is one differentiation of a product: each derivative of the field returns a real term, an imaginary term and a cross term carrying both functions once, and the temporal second derivative enters with the sign that $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$ gives it.
 
-Dividing by $r e^{i\theta_{\mathrm{pha}}}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
+Dividing by $\varrho e^{i\theta_{\mathrm{pha}}}$ and using $\hbar k_m=mc$, the equation $\left(\Box-k_m^{2}\right)\Xi_t=0$ becomes the pair
 
 $$
-\boxed{\;\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r}\;}
+\boxed{\;\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho}\;}
 \qquad
 \boxed{\;\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0\;}
 $$
@@ -131,7 +131,7 @@ the factor $c$ being the algebra's own: the temporal slot of $\tilde\nabla_\Phi 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box r}{r},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box \varrho}{\varrho},
 $$
 
 which is the mass shell with the mass term shifted by the quantum potential. The shift is the only place the amplitude enters, and it enters as a curvature: $Q_{\mathrm{qnt}}$ is the d'Alembertian of the amplitude divided by the amplitude.
@@ -139,16 +139,16 @@ which is the mass shell with the mass term shifted by the quantum potential. The
 **The companion's dispersion relation, and its remainder.** Dividing by $\hbar^{2}$ and multiplying by $-1$ puts the same statement on the four-wavevector,
 
 $$
-\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\frac{\Box r}{r},
+\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\frac{\Box \varrho}{\varrho},
 $$
 
-which is the companion's $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ with one term added. The added term vanishes exactly when $\Box r=0$: a plane wave of constant amplitude satisfies that, and a wave packet, a bound state, or any field whose amplitude is not annihilated by $\Box$ does not.
+which is the companion's $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ with one term added. The added term vanishes exactly when $\Box \varrho=0$: a plane wave of constant amplitude satisfies that, and a wave packet, a bound state, or any field whose amplitude is not annihilated by $\Box$ does not.
 
-**The quantum potential is the WKB one with the Laplacian promoted.** The WKB article writes $Q=-\frac{\hbar^{2}}{2\,m}\frac{\nabla^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\nabla^{2}$ the Laplacian. Since $mc^{2}/(2k_m^{2})=\hbar^{2}/(2m)$, the coefficient is the same and $\Box$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $r e^{i\theta_{\mathrm{pha}}}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (*Relativistic Mechanics from the Dirac Wave*).
+**The quantum potential is the WKB one with the Laplacian promoted.** The WKB article writes $Q=-\frac{\hbar^{2}}{2\,m}\frac{\nabla^{2}A}{A}$ for the stationary state, with $A$ its real amplitude and $\nabla^{2}$ the Laplacian. Since $mc^{2}/(2k_m^{2})=\hbar^{2}/(2m)$, the coefficient is the same and $\Box$ replaces the Laplacian: $Q_{\mathrm{qnt}}$ is the static quantum potential with the second derivative taken in four coordinates instead of three. The term appears only because the operator is second order: a first-order operator applied to $\varrho e^{i\theta_{\mathrm{pha}}}$ returns one derivative of the amplitude and no curvature, which is why the polar form of the Dirac wave stops at the eikonal and the four-momentum (*Relativistic Mechanics from the Dirac Wave*).
 
 ### The quantum potential depends on the density alone
 
-The bracket $\Box r/r$ carries the amplitude and its second derivatives, so $Q_{\mathrm{qnt}}$ appears to need the amplitude rather than the density. It does not. With $u=\ln r$,
+The bracket $\Box \varrho/\varrho$ carries the amplitude and its second derivatives, so $Q_{\mathrm{qnt}}$ appears to need the amplitude rather than the density. It does not. With $u=\ln \varrho$,
 
 $$
 \Box_\Phi e^{u}=e^{u}\left(\Box_\Phi u+(\partial u)^{2}\right),
@@ -156,7 +156,7 @@ $$
 (\partial u)^{2}=\lvert\nabla u\rvert^{2}-\left(\frac{\partial u}{\partial r'_t}\right)^{2},
 $$
 
-so that $\Box r/r=\Box u+(\partial u)^{2}$, and with $u=\tfrac12\ln\rho_{\mathrm{num}}$,
+so that $\Box \varrho/\varrho=\Box u+(\partial u)^{2}$, and with $u=\tfrac12\ln\rho_{\mathrm{num}}$,
 
 $$
 \boxed{\;Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\left[\frac{1}{2}\Box\ln\rho_{\mathrm{num}}+\frac{1}{4}\left(\partial\ln\rho_{\mathrm{num}}\right)^{2}\right]\;}
@@ -172,7 +172,7 @@ The second equation is a conservation law in divergence form. Dividing by $m$ an
 
 For a plane wave the equation is satisfied identically, since the amplitude is constant and the action is linear. For a general wave it constrains the pair, and it is the equation that fixes the amplitude once the action is given, or the action once the amplitude is given. The two equations are not independent: each contains both functions. The amplitude equation carries the second derivatives of the amplitude and the squared gradient of the action; the transport equation is first order in each and carries them only through the products $\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}$ and $\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t$.
 
-**The divergence form is what the real amplitude buys.** With a complex amplitude the same separation leaves a source term in the transport equation, proportional to the imaginary part of the logarithm of the amplitude, and the conservation law reads as a production law. The gauge $r>0$ real is the choice that removes it.
+**The divergence form is what the real amplitude buys.** With a complex amplitude the same separation leaves a source term in the transport equation, proportional to the imaginary part of the logarithm of the amplitude, and the conservation law reads as a production law. The gauge $\varrho>0$ real is the choice that removes it.
 
 ## The Momentum and the Current
 
@@ -210,13 +210,13 @@ $$
 \boxed{\;\tilde J_{\Phi}=\frac{\rho_{\mathrm{num}}}{m}\tilde P_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}\;}
 $$
 
-**The normalisation is one chain.** With $\rho_{\mathrm{num}}=r^{2}$ and $E=-c\,\partial_{r'_t}S_{\tilde\Xi}$,
+**The normalisation is one chain.** With $\rho_{\mathrm{num}}=\varrho^{2}$ and $E=-c\,\partial_{r'_t}S_{\tilde\Xi}$,
 
 $$
-j_{r'_t}=2r^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}
-=\frac{2r^{2}}{\hbar}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}
-=-\frac{2r^{2}E}{\hbar c}
-=-2k_m\frac{r^{2}E}{mc^{2}}
+j_{r'_t}=2\varrho^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}
+=\frac{2\varrho^{2}}{\hbar}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}
+=-\frac{2\varrho^{2}E}{\hbar c}
+=-2k_m\frac{\varrho^{2}E}{mc^{2}}
 =-2k_m\,\rho_{\mathrm{chg}},
 $$
 
@@ -224,7 +224,7 @@ so the factor $2k_m$ converts a phase rate into a charge density, and the prefac
 
 The current is the density times the four-velocity, and the coefficient $\rho_{\mathrm{num}}/m$ is a positive real scalar. The charge density and the proper density differ by the factor $\gamma$: with $v'_t=\gamma c$ the temporal slot gives $\rho_{\mathrm{chg}}=(v'_t/c)\rho_{\mathrm{num}}=\gamma\rho_{\mathrm{num}}$, which is the conventions' $\rho_{\mathrm{chg}}=ϙ\gamma\rho_{\mathrm{num}}$ at $ϙ=1$. The two minus signs of the two conversions, the one in $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and the one in the temporal slot of $\tilde P_{\Phi}$, cancel, so the charge density is positive exactly when the energy is.
 
-**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $r=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=\hbar\omega$, so $\rho_{\mathrm{chg}}=r^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
+**The check on a plane wave.** With $\Xi_t=\tilde Q_{\mathrm{amp}}\exp(-i\theta_{\mathrm{pwp}})$ for a complex constant $\tilde Q_{\mathrm{amp}}$, the amplitude is $\varrho=\lvert\tilde Q_{\mathrm{amp}}\rvert$ and the energy is $E=\hbar\omega$, so $\rho_{\mathrm{chg}}=\varrho^{2}\omega/(ck_m)$, which is the companion's value. The general formula reproduces it with no separate computation.
 
 The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
@@ -237,7 +237,7 @@ $$
 =\frac{1}{m}\left[\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right],
 $$
 
-and the bracket is the transport equation. The conservation law and the imaginary part of the Klein–Gordon equation are therefore the same equation, not two equations that agree. The companion describes conservation as the scalar projection of a stronger biquaternion equation; the polar form says which part of that stronger equation the wave equation contains. The imaginary part is one real equation, and it is the scalar slot of $(\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}=0$. The three vector slots are not implied: they would be three more equations for the two functions $r$ and $S_{\tilde\Xi}$, and the wave equation does not impose them.
+and the bracket is the transport equation. The conservation law and the imaginary part of the Klein–Gordon equation are therefore the same equation, not two equations that agree. The companion describes conservation as the scalar projection of a stronger biquaternion equation; the polar form says which part of that stronger equation the wave equation contains. The imaginary part is one real equation, and it is the scalar slot of $(\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}=0$. The three vector slots are not implied: they would be three more equations for the two functions $\varrho$ and $S_{\tilde\Xi}$, and the wave equation does not impose them.
 
 ### The two defects, and one mechanism
 
@@ -245,7 +245,7 @@ The parent records that $\rho_{\mathrm{chg}}$ is not positive definite, that it 
 
 The current is a positive scalar times $\tilde P_{\Phi}$, so the sign of its temporal component is the sign of the temporal component of $\tilde P_{\Phi}$. The mass shell constrains the norm of $\tilde P_{\Phi}$ and not the sign of its time part: where the quantum term is small, the constraint is $\langle\tilde P_{\Phi}\rangle_{\natural}=-m^{2}c^{2}$, a two-sheeted hyperboloid, and the two sheets are the two branches.
 
-| branch | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ | amplitude $r$ |
+| branch | $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ | amplitude $\varrho$ |
 | --- | --- | --- | --- |
 | positive frequency | $>0$ | $>0$ | $>0$ |
 | negative frequency | $<0$ | $<0$ | $>0$ |
@@ -257,12 +257,12 @@ The transport equation cannot see the difference: it is linear in $\partial S_{\
 **The two imaginary operations, read on the action.** The companion separates multiplication by the central $i$ from complex conjugation. In these variables the first multiplies the coefficient by a quarter turn and the second reflects the action,
 
 $$
-i\,\Xi_t = r\exp\!\left(\frac{i}{\hbar}\left(S_{\tilde\Xi}+\frac{\pi\hbar}{2}\right)\right),
+i\,\Xi_t = \varrho\exp\!\left(\frac{i}{\hbar}\left(S_{\tilde\Xi}+\frac{\pi\hbar}{2}\right)\right),
 \qquad
-\Xi_t^{*}=r\exp\!\left(-\frac{iS_{\tilde\Xi}}{\hbar}\right).
+\Xi_t^{*}=\varrho\exp\!\left(-\frac{iS_{\tilde\Xi}}{\hbar}\right).
 $$
 
-Since $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$, the translation preserves the sheet of the mass shell and the reflection exchanges the sheets. The material and informational parts are the two quadratures of the one angle, $r\cos\theta_{\mathrm{pha}}$ and $r\sin\theta_{\mathrm{pha}}$, which is why multiplication by $i$ exchanges them.
+Since $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$, the translation preserves the sheet of the mass shell and the reflection exchanges the sheets. The material and informational parts are the two quadratures of the one angle, $\varrho\cos\theta_{\mathrm{pha}}$ and $\varrho\sin\theta_{\mathrm{pha}}$, which is why multiplication by $i$ exchanges them.
 
 ### The pair is Takabayasi's system
 
@@ -277,7 +277,7 @@ $$
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m}=\frac{\tilde\nabla_\Phi S_{\tilde\Xi}}{m},
 \qquad
-\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\frac{\Box_\Phi r}{r}.
+\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\frac{\Box_\Phi \varrho}{\varrho}.
 $$
 
 The coefficient is the proper density of the markers, and it is not the charge density, which is the temporal component. The flow follows the phase gradient, and the transport equation is the continuity equation of that density with that velocity. The norm in the same display is the mass shell read as a statement about the fluid: it is $-c^{2}$ exactly when the quantum term vanishes, so the flow is a unit timelike vector for a plane wave and not for a general wave. The fluid reading carries the same defect as the charge density and from the same cause: what fails is the on-shell condition, not the continuity equation, which holds whatever the amplitude does.
@@ -295,7 +295,7 @@ and the vorticity tensor vanishes for the same reason. The exception is a nodal 
 $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right)=0,
 \qquad
-\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box_\Phi r}{r}.
+\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-m^{2}c^{2}+\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho}.
 $$
 
 The second term is the whole of the quantum content. With it the fluid is not dust; without it the pair is relativistic irrotational dust, pressureless flow along the phase gradient.
@@ -314,7 +314,7 @@ E=-c\,\frac{\partial S_{\tilde\Xi}}{\partial r'_t}=mc^{2}+T_{\mathrm{kin}},
 T_{\mathrm{kin}}=-c\,\frac{\partial\sigma}{\partial r'_t},
 $$
 
-with $\sigma$ the action of the envelope and $T_{\mathrm{kin}}$ the kinetic energy. The coefficient of $r'_t$ is $mc$ and not $mc^{2}$, because $r'_t$ is a length and $mc^{2}t'=mc\,r'_t$. Dividing out $f$ and adding the rest term to the action are one operation: the companion's $f$ is the leading term of the action, and the companion's envelope $\chi$ is $r\exp(i\theta_{\mathrm{act}}/\hbar)e_t$ in these variables.
+with $\sigma$ the action of the envelope and $T_{\mathrm{kin}}$ the kinetic energy. The coefficient of $r'_t$ is $mc$ and not $mc^{2}$, because $r'_t$ is a length and $mc^{2}t'=mc\,r'_t$. Dividing out $f$ and adding the rest term to the action are one operation: the companion's $f$ is the leading term of the action, and the companion's envelope $\chi$ is $\varrho\exp(i\theta_{\mathrm{act}}/\hbar)e_t$ in these variables.
 
 The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 
@@ -328,12 +328,12 @@ $$
 2mT_{\mathrm{kin}}+\frac{T_{\mathrm{kin}}^{2}}{c^{2}}=\lvert\vec p\rvert^{2}+2mQ_{\mathrm{qnt}} .
 $$
 
-Dropping $T_{\mathrm{kin}}^{2}/c^{2}$ and dropping $\partial^{2}r/\partial {r'_{t}}^{2}$ against $\Delta r$ in $Q_{\mathrm{qnt}}$,
+Dropping $T_{\mathrm{kin}}^{2}/c^{2}$ and dropping $\partial^{2}\varrho/\partial {r'_{t}}^{2}$ against $\Delta \varrho$ in $Q_{\mathrm{qnt}}$,
 
 $$
 T_{\mathrm{kin}}=\frac{\lvert\vec p\rvert^{2}}{2m}+Q_{\mathrm{qnt}},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho},
 $$
 
 which is the WKB article's quantum Hamilton–Jacobi equation with $V=0$: the same kinetic energy, the same $\vec p=\nabla S_{\tilde\Xi}$, and the same quantum potential. The first dropped term is of relative order $T_{\mathrm{kin}}/(2mc^{2})$ and the second of order $v^{2}/c^{2}$.
@@ -368,7 +368,7 @@ $$
 \qquad\text{for each }\mu\in\{t,x,y,z\}.
 $$
 
-No equation relates $\Xi_t$ to $\Xi_x$. The solution space is a tensor product: writing $S$ for the set of complex scalar solutions, $\{\tilde\Xi:(\Box-k_m^{2})\tilde\Xi=0\}=\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, because the equation is linear with scalar coefficients and the four units are a basis. Each coefficient carries its own amplitude $\lvert\Xi_\mu\rvert>0$ and its own action $S_\mu$, and the pair of §*The Equation in Polar Variables* returns for each of them with $r$ replaced by $\lvert\Xi_\mu\rvert$ and $S_{\tilde\Xi}$ by $S_\mu$. Four complex coefficients are eight real functions, and the four complex equations are eight real equations, one pair per coefficient: nothing is missing and nothing is overdetermined.
+No equation relates $\Xi_t$ to $\Xi_x$. The solution space is a tensor product: writing $S$ for the set of complex scalar solutions, $\{\tilde\Xi:(\Box-k_m^{2})\tilde\Xi=0\}=\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, because the equation is linear with scalar coefficients and the four units are a basis. Each coefficient carries its own amplitude $\lvert\Xi_\mu\rvert>0$ and its own action $S_\mu$, and the pair of §*The Equation in Polar Variables* returns for each of them with $\varrho$ replaced by $\lvert\Xi_\mu\rvert$ and $S_{\tilde\Xi}$ by $S_\mu$. Four complex coefficients are eight real functions, and the four complex equations are eight real equations, one pair per coefficient: nothing is missing and nothing is overdetermined.
 
 **The four pairs share no content.** The four actions are unrelated, so the four momenta $\tilde P_{\Phi,\mu}=\tilde\nabla_\Phi S_\mu$ are unrelated, and a superposition may carry four different wavevectors. Within a single plane wave the four coefficients share one $\vec k$, because there is one phase and a phase has one gradient at each event; the four-way freedom lives in superpositions and not in modes.
 
@@ -390,9 +390,9 @@ $$
 \langle\tilde Q_{\mathrm{amp}}\rangle_{*}=\mathrm{Sc}\!\left(\tilde Q_{\mathrm{amp}}\tilde Q_{\mathrm{amp}}^{*}\right)=\sum_{\mu}\lvert Q_{\mathrm{amp},\mu}\rvert^{2},
 $$
 
-so a general polarization enters the density through one positive number and nothing else. The scalar case is the member $\tilde Q_{\mathrm{amp}}=Q_{\mathrm{amp},t}e_t$, and the pair of §*The Equation in Polar Variables* returns unchanged on $r=\langle\tilde Q_{\mathrm{amp}}\rangle_{*}^{1/2}\lvert g\rvert$.
+so a general polarization enters the density through one positive number and nothing else. The scalar case is the member $\tilde Q_{\mathrm{amp}}=Q_{\mathrm{amp},t}e_t$, and the pair of §*The Equation in Polar Variables* returns unchanged on $\varrho=\langle\tilde Q_{\mathrm{amp}}\rangle_{*}^{1/2}\lvert g\rvert$.
 
-**A varying frame is not available.** The algebra's polar word applies to any $N$-regular element, so $\tilde\Xi=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists for a general field; but the frame rotor and the rotor are then fields, their derivatives do not vanish, and substituting the word into the Klein–Gordon equation gives eight equations for the eight real parameters, with the derivatives of the frame entering to the same order as those of the amplitude. Two parameters are what a pair can describe, so the other six have to be constants. That is the condition $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$, and it is why the one-phase case is the polarized case.
+**A varying frame is not available.** The algebra's polar word applies to any $N$-regular element, so $\tilde\Xi=\varrho\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists for a general field; but the frame rotor and the rotor are then fields, their derivatives do not vanish, and substituting the word into the Klein–Gordon equation gives eight equations for the eight real parameters, with the derivatives of the frame entering to the same order as those of the amplitude. Two parameters are what a pair can describe, so the other six have to be constants. That is the condition $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$, and it is why the one-phase case is the polarized case.
 
 ### The charge density adds up, and the spatial current has two readings
 
@@ -431,7 +431,7 @@ The scalar slot is the additive piece. The $\vec e_x$ slot is $2i\,\mathrm{Im}(\
 
 ### The domain is larger than the nodal set
 
-For the scalar the form fails exactly where $r=0$. For a general field the condition for the element's word is $\langle\tilde\Xi\rangle_{\natural}\neq0$, which is strictly stronger. Take
+For the scalar the form fails exactly where $\varrho=0$. For a general field the condition for the element's word is $\langle\tilde\Xi\rangle_{\natural}\neq0$, which is strictly stronger. Take
 
 $$
 \tilde\Xi=\Xi_t\left(e_t+i\vec e_x\right),
@@ -446,7 +446,7 @@ The objection is stated first. For a scalar field the word is a change of coordi
 
 Three things are nevertheless not a relabelling.
 
-**The dispersion relation is a plane-wave statement, and the remainder is visible.** $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ holds for a plane wave and misses a general wave by $\Box r/r$. In the complex form the box is read as a statement about one wave; in these variables the same equation says which part belongs to the action and which to the amplitude.
+**The dispersion relation is a plane-wave statement, and the remainder is visible.** $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$ holds for a plane wave and misses a general wave by $\Box \varrho/\varrho$. In the complex form the box is read as a statement about one wave; in these variables the same equation says which part belongs to the action and which to the amplitude.
 
 **The two defects become one mechanism.** The sign of the charge is the sign of the energy, and the reason is that the current is the density times the four-velocity. That is one line in these variables and a computation in the others. It also says what a repair would cost: the coefficient $\rho_{\mathrm{num}}/m$ cannot be made negative without ceasing to be positive, so the sign cannot be removed by rewriting the current; only the sign of the energy can change it, and the sign of the energy is the branch.
 
@@ -458,7 +458,7 @@ The ledger is therefore: the equation, no; the coordinates, yes. What the coordi
 
 ## Open Questions
 
-1. **The locus where the effective mass vanishes.** The amplitude equation carries $m^{2}c^{2}-\hbar^{2}\Box r/r$. That combination can vanish and can change sign on a set of events even though $m\neq0$. Whether such a locus has a physical interpretation, or is an artefact of the variables, is not settled here. The natural guess is that it is where the de Broglie wavelength of the amplitude variation reaches the Compton length, and a guess is all it is.
+1. **The locus where the effective mass vanishes.** The amplitude equation carries $m^{2}c^{2}-\hbar^{2}\Box \varrho/\varrho$. That combination can vanish and can change sign on a set of events even though $m\neq0$. Whether such a locus has a physical interpretation, or is an artefact of the variables, is not settled here. The natural guess is that it is where the de Broglie wavelength of the amplitude variation reaches the Compton length, and a guess is all it is.
 
 2. **The nodal set.** At a node the phase is undefined, the current vanishes, and the transport equation stays meaningful while the action does not. Whether the winding of the action around a nodal line carries a topological charge, and whether that charge is an object of the algebra rather than of the phase, is taken up in *The Nodal Set and Quantized Circulation*.
 
@@ -470,17 +470,17 @@ The ledger is therefore: the equation, no; the coordinates, yes. What the coordi
 
 ## Summary
 
-The scalar case comes first: the field is central and is the one complex scalar $\Xi_t$. Its word is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ with $r>0$ real and $S_{\tilde\Xi}$ the action, so the angle $S_{\tilde\Xi}/\hbar$ is a pure number and the amplitude squared is the proper density $\rho_{\mathrm{num}}$. Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ gives two exact real equations,
+The scalar case comes first: the field is central and is the one complex scalar $\Xi_t$. Its word is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ with $\varrho>0$ real and $S_{\tilde\Xi}$ the action, so the angle $S_{\tilde\Xi}/\hbar$ is a pure number and the amplitude squared is the proper density $\rho_{\mathrm{num}}$. Substituting this form into $\left(\Box-k_m^{2}\right)\Xi_t=0$ gives two exact real equations,
 
 $$
-\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0,
 $$
 
-which together are equivalent to the one complex equation. The pair is Takabayasi's relativistic hydrodynamics of a spin-$0$ fluid, written in the one length unit of the material sector. In the momentum variables $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ the first reads $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the second is the exact relativistic analogue of the WKB transport equation. The pair reduces to the WKB pair when the action is dominated by its rest term $-mc\,r'_t$ and $\Box r$ is replaced by $\Delta r$. The quantum potential is the logarithmic curvature of the density, so it is a functional of $\rho_{\mathrm{num}}$ alone.
+which together are equivalent to the one complex equation. The pair is Takabayasi's relativistic hydrodynamics of a spin-$0$ fluid, written in the one length unit of the material sector. In the momentum variables $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ the first reads $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$, and the second is the exact relativistic analogue of the WKB transport equation. The pair reduces to the WKB pair when the action is dominated by its rest term $-mc\,r'_t$ and $\Box \varrho$ is replaced by $\Delta \varrho$. The quantum potential is the logarithmic curvature of the density, so it is a functional of $\rho_{\mathrm{num}}$ alone.
 
-The phase gradient is the four-momentum, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, and in polar variables the quaternionic norm of a gradient reads $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\Box r/r$. The boxed dispersion relation of the companion is the case $\Box r=0$, which a plane wave satisfies and a general wave does not.
+The phase gradient is the four-momentum, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}$, and in polar variables the quaternionic norm of a gradient reads $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}+\Box \varrho/\varrho$. The boxed dispersion relation of the companion is the case $\Box \varrho=0$, which a plane wave satisfies and a general wave does not.
 
 The current is $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde P_{\Phi}/m$, with $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ and $\vec j=\rho_{\mathrm{num}}\vec p/m$. Its conservation, $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})=0$, is the transport equation and not merely consistent with it. The sign defect is the sign of the energy: the mass shell is a two-sheeted hyperboloid, the density is positive on both sheets, and the charge density changes sign because the energy does. Multiplication by the central $i$ translates the action by $\pi\hbar/2$ and preserves the sheet, while complex conjugation reflects the action and exchanges the sheets.
 
@@ -504,9 +504,9 @@ The algebra's polar word degenerates on a central field: the scale is the amplit
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Four-position |
 | $\tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z$ | The biquaternion Klein–Gordon field, four complex coefficients |
 | $\Xi_\mu$ | The coefficient of $e_\mu$, a complex scalar; the scalar case is $\Xi_t$ alone |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ | The word of the scalar case, $r>0$ real, $\varepsilon=\pm1$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ real |
-| $r$ | The amplitude and the word's scale, positive; the square root of the Hermitian norm, $r=\bigl(\langle\tilde\Xi\rangle_{*}\bigr)^{1/2}$ |
-| $\rho_{\mathrm{num}}=r^{2}$ | Proper density; the amplitude squared, never a letter |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon e_t$ | The word of the scalar case, $\varrho>0$ real, $\varepsilon=\pm1$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ real |
+| $\varrho$ | The amplitude and the word's scale, positive; the square root of the Hermitian norm, $\varrho=\bigl(\langle\tilde\Xi\rangle_{*}\bigr)^{1/2}$ |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; the amplitude squared, never a letter |
 | $S_{\tilde\Xi}$ | The action, in $\mathrm{J\,s}$, defined modulo $2\pi\hbar$ |
 | $\lvert\Xi_\mu\rvert,\ S_\mu$ | Amplitude and action of a general coefficient |
 | $\theta_{\mathrm{pha}}=S_{\tilde\Xi}/\hbar$ | The phase angle, a pure number modulo $2\pi$ |
@@ -514,13 +514,13 @@ The algebra's polar word degenerates on a central field: the scale is the amplit
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}=i\frac{E}{c}e_t+\vec p$ | Four-momentum as the gradient of the action |
 | $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi S_{\tilde\Xi}/\hbar$ | Four-wavevector |
 | $k_m=mc/\hbar$ | Mass wave number |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box r}{r}$ | Relativistic quantum potential; central and real |
-| $u=\ln r$ | Logarithm of the amplitude; $Q_{\mathrm{qnt}}$ is read on $u$ |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box \varrho}{\varrho}$ | Relativistic quantum potential; central and real |
+| $u=\ln \varrho$ | Logarithm of the amplitude; $Q_{\mathrm{qnt}}$ is read on $u$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on $\tilde\Xi$ it is $\Xi_t^{2}$ |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm; on $\tilde\Xi$ it is $\rho_{\mathrm{num}}$ |
-| $\Rho$ | Polar modulus, the principal square root of $\langle\tilde\Xi\rangle_{\natural}$; complex, with $\lvert\Rho\rvert=r$ on the centre |
-| $\varepsilon=\Xi_t/\Rho=\pm1$ | Branch of the modulus; on a central field the rotor is $\varepsilon e_t$, with $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $2\pi$ for $\varepsilon=-1$ |
-| $\tilde Q=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The algebra's polar word; on the scalar case $r$ is the amplitude, $\theta_{\mathrm{pha}}$ the angle, $\tilde U_{\Psi,\mathrm b}=e_t$ and $\tilde u_{\mathrm r}=\varepsilon e_t$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Polar modulus, the principal square root of $\langle\tilde\Xi\rangle_{\natural}$; complex, with $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho$ on the centre |
+| $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | Branch of the modulus; on a central field the rotor is $\varepsilon e_t$, with $\theta_{\mathrm{axr}}=0$ for $\varepsilon=+1$ and $2\pi$ for $\varepsilon=-1$ |
+| $\tilde Q=\varrho\exp(i\theta_{\mathrm{pha}})\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The algebra's polar word; on the scalar case $\varrho$ is the amplitude, $\theta_{\mathrm{pha}}$ the angle, $\tilde U_{\Psi,\mathrm b}=e_t$ and $\tilde u_{\mathrm r}=\varepsilon e_t$ |
 | $\tilde J_{\Phi}=ic\rho_{\mathrm{chg}}\,e_t+\vec j=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Conserved four-current |
 | $\tilde V_{\Phi}=\tilde P_{\Phi}/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | Four-velocity; unit timelike for a plane wave only |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2}),\ \vec j=\rho_{\mathrm{num}}\vec p/m$ | Charge density and current density; $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ on shell |

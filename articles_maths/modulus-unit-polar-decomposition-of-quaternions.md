@@ -4,9 +4,9 @@
 
 This article treats the **modulus–unit polar decomposition** of a quaternion: the writing
 
-$$ \boxed{\; \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1 \;} ,$$
+$$ \boxed{\; \tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \varrho \in \mathbb{R}, \quad \varrho > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1 \;} ,$$
 
-with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Algebra and Element Conventions*, §*Summary of Notation*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the two-sided operator by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
+with $\varrho$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Algebra and Element Conventions*, §*Summary of Notation*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the two-sided operator by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
 
 The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the group of invertibles is abelian. The quaternion case is the first definite case in which the group of invertibles is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of invertibles, in the matrix picture and in the absence of a second continuous factor.
 
@@ -35,10 +35,10 @@ $$
 The **modulus** is its positive square root,
 
 $$
-r = \sqrt{\langle\tilde q\rangle_{\natural}} .
+\varrho = \sqrt{\langle\tilde q\rangle_{\natural}} .
 $$
 
-The radicand is non-negative and vanishes only at $\tilde q=0$, so on the nonzero quaternions the square root is a strictly positive real number, with no sign choice and no branch choice. The requirement $r>0$ is met automatically, and the modulus is forced by the norm. It is multiplicative and positively homogeneous,
+The radicand is non-negative and vanishes only at $\tilde q=0$, so on the nonzero quaternions the square root is a strictly positive real number, with no sign choice and no branch choice. The requirement $\varrho>0$ is met automatically, and the modulus is forced by the norm. It is multiplicative and positively homogeneous,
 
 $$
 \sqrt{\langle\tilde q_1\tilde q_2\rangle_{\natural}} = \sqrt{\langle\tilde q_1\rangle_{\natural}}\,\sqrt{\langle\tilde q_2\rangle_{\natural}}, \qquad \sqrt{\langle\lambda\tilde q\rangle_{\natural}} = \lvert\lambda\rvert\,\sqrt{\langle\tilde q\rangle_{\natural}} \quad (\lambda\in\mathbb{R}).
@@ -49,10 +49,10 @@ $$
 The **unit factor** is
 
 $$
-\tilde u_{\mathrm r} = \frac{\tilde q}{r} = \frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} .
+\tilde u_{\mathrm r} = \frac{\tilde q}{\varrho} = \frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} .
 $$
 
-It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/r^2 = 1$, so it lies on the **unit sphere**
+It satisfies $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \langle\tilde q\rangle_{\natural}/\varrho^2 = 1$, so it lies on the **unit sphere**
 
 $$ \boxed{\; \mathrm{Sp}(1) = \{\,\tilde u\in\mathbb{H} : \langle\tilde u\rangle_{\natural} = 1\,\} = S^3 \;} .$$
 
@@ -62,7 +62,7 @@ The phrase **unit factor** names the norm-one elements. It is not the **group of
 
 ### The Count of the Parameters
 
-A quaternion carries four real parameters. The modulus carries one, the positive real $r$. The unit factor is constrained by the single real equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ on the four parameters of $\mathbb{H}$, so it retains three real degrees of freedom. The counts add:
+A quaternion carries four real parameters. The modulus carries one, the positive real $\varrho$. The unit factor is constrained by the single real equation $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ on the four parameters of $\mathbb{H}$, so it retains three real degrees of freedom. The counts add:
 
 $$
 4 = 1+3 .
@@ -74,9 +74,9 @@ The three is the dimension of the sphere $S^3$, not a triple of scalar parameter
 
 **Theorem.** Every nonzero quaternion has exactly one modulus–unit polar decomposition.
 
-**Existence.** Put $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$. Since $\langle\tilde q\rangle_{\natural}>0$, the number $r$ is a positive real. Since the norm is homogeneous of degree two, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}/r^2=1$. Hence $\tilde q=r\tilde u_{\mathrm r}$ with $r>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$.
+**Existence.** Put $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$. Since $\langle\tilde q\rangle_{\natural}>0$, the number $\varrho$ is a positive real. Since the norm is homogeneous of degree two, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde q\rangle_{\natural}/\varrho^2=1$. Hence $\tilde q=\varrho\tilde u_{\mathrm r}$ with $\varrho>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$.
 
-**Uniqueness.** Suppose $\tilde q=r\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $r,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $r^2=\langle\tilde q\rangle_{\natural}=r'^2$. Both are positive, so $r=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/r=\tilde u_{\mathrm r}'$.
+**Uniqueness.** Suppose $\tilde q=\varrho\tilde u_{\mathrm r}=r'\tilde u_{\mathrm r}'$ with $\varrho,r'>0$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\langle\tilde u_{\mathrm r}'\rangle_{\natural}=1$. Taking norms gives $\varrho^2=\langle\tilde q\rangle_{\natural}=r'^2$. Both are positive, so $\varrho=r'$. Dividing, $\tilde u_{\mathrm r}=\tilde q/\varrho=\tilde u_{\mathrm r}'$.
 
 The pair is unique, with no sign ambiguity and no branch ambiguity. The two quaternions $\tilde q$ and $-\tilde q$ have the same modulus and opposite unit factors; the sign is carried by the unit factor, not by the modulus. This is a statement about the factorisation, not about a coordinate on the sphere: two different charts assign different parameters to the same unit factor.
 
@@ -90,7 +90,7 @@ $$
 \Phi : \mathbb{H}^{\times} \longrightarrow \mathbb{R}_{>0}\times S^3, \qquad \Phi(\tilde q) = \bigl(\sqrt{\langle\tilde q\rangle_{\natural}},\ \tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr),
 $$
 
-is a group isomorphism. It is bijective, with inverse $(r,\tilde u_{\mathrm r})\mapsto r\tilde u_{\mathrm r}$, and it is a homomorphism, because the modulus is multiplicative and positive and because the scalar modulus is central:
+is a group isomorphism. It is bijective, with inverse $(\varrho,\tilde u_{\mathrm r})\mapsto \varrho\tilde u_{\mathrm r}$, and it is a homomorphism, because the modulus is multiplicative and positive and because the scalar modulus is central:
 
 $$
 \Phi(\tilde q_1\tilde q_2) = \bigl(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}},\ \tilde q_1\tilde q_2/(\sqrt{\langle\tilde q_1\rangle_{\natural}}\sqrt{\langle\tilde q_2\rangle_{\natural}})\bigr) = \Phi(\tilde q_1)\Phi(\tilde q_2).
@@ -106,7 +106,7 @@ the product of the positive scale line and the unit sphere. The product is direc
 
 **Proposition.** The unit sphere $S^3$ is the maximal compact subgroup of $\mathbb{H}^{\times}$.
 
-**Proof.** Let $K\subset\mathbb{H}^{\times}$ be a compact subgroup. The modulus is continuous, so the image of $K$ under the modulus is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $r>1$ then $r^n\to\infty$, and if $0<r<1$ then $r^n\to0\notin\mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore the image is $\{1\}$ and $K\subset S^3$. Since $S^3$ is itself compact, it is the maximal compact subgroup.
+**Proof.** Let $K\subset\mathbb{H}^{\times}$ be a compact subgroup. The modulus is continuous, so the image of $K$ under the modulus is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $\varrho>1$ then $\varrho^n\to\infty$, and if $0<\varrho<1$ then $\varrho^n\to0\notin\mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore the image is $\{1\}$ and $K\subset S^3$. Since $S^3$ is itself compact, it is the maximal compact subgroup.
 
 ### The Deformation Retraction
 
@@ -176,12 +176,12 @@ The trigonometric row is the whole sphere $S^2$ of unit pure quaternions, not tw
 
 | subspace | elements | dimension | conjugation | norm | role |
 |---|---|---|---|---|---|
-| scalar $\mathbb{R}_{\mathbb{H}}$ | $q_t e_t$ | $1$ | fixed, Hermitian | $q_t^2\ge0$ | carries the modulus $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ |
+| scalar $\mathbb{R}_{\mathbb{H}}$ | $q_t e_t$ | $1$ | fixed, Hermitian | $q_t^2\ge0$ | carries the modulus $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ |
 | vector $\operatorname{Im}\mathbb{H}$ | $q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | $3$ | negated, anti-Hermitian | $q_x^2+q_y^2+q_z^2\ge0$ | the axis of the rotor |
 
 Both subspaces are definite, unlike the split-quaternion case, where the pure subspace carries an indefinite form. The modulus is a positive scalar, the rotor is a unit sphere, and the sphere meets the scalar axis only at the two central points.
 
-**No boundary.** If $\tilde q\neq0$ then $\langle\tilde q\rangle_{\natural}>0$, so $r>0$ and $\tilde u_{\mathrm r}=\tilde q/r$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin. This is the sharpest contrast with the split cases, where the null cone removes a whole hypersurface and the polar decomposition is defined only off it.
+**No boundary.** If $\tilde q\neq0$ then $\langle\tilde q\rangle_{\natural}>0$, so $\varrho>0$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin. This is the sharpest contrast with the split cases, where the null cone removes a whole hypersurface and the polar decomposition is defined only off it.
 
 ## The Matrix Picture
 
@@ -227,7 +227,7 @@ $$
 so $M_{\tilde u}\in SU(2)$. Conversely every matrix of $SU(2)$ is the image of a unit quaternion, because the determinant condition is the norm-one condition in these coordinates. The polar decomposition becomes the matrix factorisation
 
 $$
-M_{\tilde q}=r\,M_{\tilde u}, \qquad r=\sqrt{\det M_{\tilde q}}>0, \quad M_{\tilde u}\in SU(2).
+M_{\tilde q}=\varrho\,M_{\tilde u}, \qquad \varrho=\sqrt{\det M_{\tilde q}}>0, \quad M_{\tilde u}\in SU(2).
 $$
 
 ### The Matrix Polar Decomposition
@@ -235,16 +235,16 @@ $$
 Let $B=M_{\tilde q}$. Since $\operatorname{Mat}$ is an algebra homomorphism and $\operatorname{Mat}(\tilde q^{\natural})=B^{\dagger}$, the norm identity reads
 
 $$
-B^{\dagger}B = \operatorname{Mat}(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = r^2 I .
+B^{\dagger}B = \operatorname{Mat}(\tilde q^{\natural}\tilde q) = \langle\tilde q\rangle_{\natural}I = \varrho^2 I .
 $$
 
-The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $r$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ $*$-unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the $*$-unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.
+The matrix $B$ is therefore conformal: its columns are orthogonal and of equal length $\varrho$. The general polar decomposition of an invertible matrix is $B=PU$, with $P=(BB^{\dagger})^{1/2}$ positive definite Hermitian and $U$ $*$-unitary. Here $P=rI$ and $U=M_{\tilde u}\in SU(2)$, so the positive factor is a scalar and the $*$-unitary factor is special. The scalar factor is forced because the only positive definite Hermitian matrices in the image of $\mathbb{H}$ are the positive real multiples of the identity.
 
 | factor | matrix | the determinant of the image | action |
 |---|---|---|---|
-| modulus | $rI$, $r>0$ | $r^2$ | similarity of ratio $r$ |
+| modulus | $rI$, $\varrho>0$ | $\varrho^2$ | similarity of ratio $\varrho$ |
 | unit factor | $M_{\tilde u}\in SU(2)$ | $1$ | rotation of the sphere |
-| $\tilde q$ | $M_{\tilde q}$ | $r^2$ | conformal map |
+| $\tilde q$ | $M_{\tilde q}$ | $\varrho^2$ | conformal map |
 
 In the split cases the matrix of an invertible element is not orthogonal: the form it preserves is indefinite, so the matrix is symmetric or hyperbolic rather than $*$-unitary. The contrast is a property of the norm and not of the matrix representation.
 
@@ -261,7 +261,7 @@ $$
 The quaternion norm is $\langle\tilde q\rangle_{\natural}=1+4+9+16=30$, so the modulus is
 
 $$
-r=\sqrt{30}=5.477225575\ldots,
+\varrho=\sqrt{30}=5.477225575\ldots,
 $$
 
 and the unit factor is
@@ -270,11 +270,11 @@ $$
 \tilde u_{\mathrm r}=\frac{\tilde q}{\sqrt{30}}=0.182574186\,e_t+0.365148372\,\vec e_x+0.547722558\,\vec e_y+0.730296743\,\vec e_z .
 $$
 
-The checks are exact in the data: $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ to $2.2\times10^{-16}$, and $r\tilde u_{\mathrm r}$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.
+The checks are exact in the data: $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ to $2.2\times10^{-16}$, and $\varrho\tilde u_{\mathrm r}$ reproduces $\tilde q$ to $4.4\times10^{-16}$ in each coefficient.
 
 ### A Table of Examples
 
-| $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $\tilde u_{\mathrm r}=\tilde q/r$ | $\langle\tilde u_{\mathrm r}\rangle_{\natural}$ |
+| $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $\varrho$ | $\tilde u_{\mathrm r}=\tilde q/\varrho$ | $\langle\tilde u_{\mathrm r}\rangle_{\natural}$ |
 |---|---|---|---|---|
 | $2e_t$ | $4$ | $2$ | $e_t$ | $1$ |
 | $-3e_t$ | $9$ | $3$ | $-e_t$ | $1$ |
@@ -287,7 +287,7 @@ The second line shows that the unit factor, not the modulus, carries the sign. A
 
 ### The Reconstruction Error
 
-For the six elements of the table the reconstruction $r\tilde u_{\mathrm r}$ reproduces $\tilde q$ to double precision; the largest coefficient error is $4.4\times10^{-16}$, attained on the generic element. The decomposition is exact in exact arithmetic.
+For the six elements of the table the reconstruction $\varrho\tilde u_{\mathrm r}$ reproduces $\tilde q$ to double precision; the largest coefficient error is $4.4\times10^{-16}$, attained on the generic element. The decomposition is exact in exact arithmetic.
 
 ## The Other Algebras
 
@@ -305,7 +305,7 @@ The quaternion column is the first definite column whose unit set is neither fin
 
 ## Summary
 
-Every nonzero quaternion has exactly one modulus–unit polar decomposition $\tilde q=r\tilde u_{\mathrm r}$, with modulus $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$ and unit factor $\tilde u_{\mathrm r}=\tilde q/r$ on the unit sphere. The pair is unique with no sign or branch choice. The modulus is a positive central scale, and the unit factor is a point of $S^3=\mathrm{Sp}(1)$, a compact, connected, simply connected, non-abelian group.
+Every nonzero quaternion has exactly one modulus–unit polar decomposition $\tilde q=\varrho\tilde u_{\mathrm r}$, with modulus $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$ and unit factor $\tilde u_{\mathrm r}=\tilde q/\varrho$ on the unit sphere. The pair is unique with no sign or branch choice. The modulus is a positive central scale, and the unit factor is a point of $S^3=\mathrm{Sp}(1)$, a compact, connected, simply connected, non-abelian group.
 
 The group of invertibles splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$, the sphere being the maximal compact subgroup and a deformation retract of the whole group. The scalar line is Hermitian and carries the modulus; the pure subspace is anti-Hermitian and is the axis of the rotor. The sphere is simple modulo its centre $\{\pm1\}$, with quotient $SO(3)$, so there is no second continuous factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
 
@@ -319,8 +319,8 @@ In the matrix picture the decomposition is the polar decomposition $M_{\tilde q}
 | $\tilde q=q_t e_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$ | a quaternion, $q_t$ its scalar part, $\vec q$ its vector part |
 | $\tilde q^{\natural}=q_t e_t-\vec q$ | the quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}=\sum_\mu q_\mu^2$ | the quaternion norm, positive definite |
-| $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
-| $\tilde u_{\mathrm r}=\tilde q/r$ | the unit factor, of norm one |
+| $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus, a positive real |
+| $\tilde u_{\mathrm r}=\tilde q/\varrho$ | the unit factor, of norm one |
 | $\mathrm{Sp}(1)=S^3=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}$ | the unit sphere, a compact group |
 | $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ | the group of invertibles |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$ | the polar splitting of the group of invertibles |

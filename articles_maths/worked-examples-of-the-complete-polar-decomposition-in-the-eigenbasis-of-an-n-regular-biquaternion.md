@@ -30,10 +30,10 @@ $$
 \vec{Ζ}^2=-e_t.
 $$
 
-The two projectors are idempotent and orthogonal, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$, and $\tilde\Pi_++\tilde\Pi_-=e_t$. The eigenvalues of the unit factor $\tilde U=\tilde Q/\Rho$ are
+The two projectors are idempotent and orthogonal, $\tilde\Pi_\pm^2=\tilde\Pi_\pm$, $\tilde\Pi_+\tilde\Pi_-=0$, and $\tilde\Pi_++\tilde\Pi_-=e_t$. The eigenvalues of the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ are
 
 $$
-\mu_\pm=\frac{\lambda_\pm}{\Rho}.
+\mu_\pm=\frac{\lambda_\pm}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
 
 In the normal case $\mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}$; in the non-normal case the moduli of $\mu_\pm$ need not be $e^{\mp\theta_{\mathrm{rpd}}/2}$, and that failure is the spectral gap of the sector.
@@ -99,7 +99,7 @@ $$
 
 with product $N=1$ and sum $2Q_t=2-i$. The eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ with the vector above. The unit factor is $\tilde U=\tilde Q$ because $N=1$, so $\mu_\pm=\lambda_\pm$.
 
-The polar word has $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
+The polar word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, $\vec u_{\mathrm b}=\vec e_x$ and $\vec u_{\mathrm r}=(\vec e_x+\vec e_y)/\sqrt2$. The eigenlines are not the axes: $\vec{Ζ}$ is not parallel to $\vec e_x$ or to $(\vec e_x+\vec e_y)/\sqrt2$. The eigenvalues of $\tilde U$ have moduli $0.480534$ and $2.081019$, whose ratio is $4.331$ and whose logarithm is $1.4657$, not the rapidity $1.7627$. This is the spectral gap: the spectrum gives two complex numbers, and the word needs two angles and two axes.
 
 ### Case 3 in Full
 
@@ -117,7 +117,7 @@ $$
 \lambda_-=1.707107-1.707107i,
 $$
 
-and the eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
+and the eigenprojectors are $\tilde\Pi_\pm=\frac12(e_t\mp i\vec e_x)$. The unit factor is $\tilde U=\tilde Q$ because $N=1$, and its eigenvalues are the same. The polar word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=1.762747174$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$, and the axes coincide, $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec e_x$. In this normal case
 
 $$
 \mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}
@@ -244,7 +244,7 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 | eigenvalues | $\lambda_\pm=Q_t\pm iB$ |
 | eigenprojectors | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ |
 | eigenvector | $\vec{Ζ}=-i\vec Q/B$, $\vec{Ζ}^2=-e_t$ |
-| unit eigenvalues | $\mu_\pm=\lambda_\pm/\Rho$ |
+| unit eigenvalues | $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | normal factorisation | $\mu_\pm=e^{\mp\theta_{\mathrm{rpd}}/2}e^{\pm i\theta_{\mathrm{axr}}/2}$ |
 | non-normal gap | the moduli of $\mu_\pm$ need not be $e^{\mp\theta_{\mathrm{rpd}}/2}$ |
 | reconstruction | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ |
@@ -295,11 +295,11 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues |
 | $\vec{Ζ}=-i\vec Q/B$ | the eigenvector |
 | $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ | the eigenprojectors |
-| $\Rho$ | the modulus |
-| $\mu_\pm=\lambda_\pm/\Rho$ | the eigenvalues of the unit factor |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the modulus |
+| $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor |
 | $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ | the rapidity and the rotor angle |
 | $\vec\Upsilon=\vec Q/Q_t$ | the null vector of the normal form |
-| $\varepsilon=Q_t/\Rho=\pm1$ | the sign of the unit factor on the wall |
+| $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ | the sign of the unit factor on the wall |
 | $v,w$ | a Jordan chain, $Nw=v$ and $Nv=0$ |
 | $\mathsf M_{(v,w)}$ | the matrix in the basis $(v,w)$ |
 

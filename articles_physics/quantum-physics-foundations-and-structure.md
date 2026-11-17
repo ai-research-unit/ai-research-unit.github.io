@@ -36,7 +36,7 @@ $$
 
 where $U(r'_t, r'_{t,0})$ is the $*$-unitary evolution operator satisfying
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
+$$i\,\hbar\,c\,\frac{d}{dr'_{t}} U(r'_t, r'_{t,0}) = H\, U(r'_t, r'_{t,0}), \qquad U(r'_{t,0}, r'_{t,0}) = I,
 $$
 
 with $H$ the Hamiltonian of the system.
@@ -284,7 +284,7 @@ $$
 
 The evolution equation is the **Heisenberg equation**:
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}} A_H(r'_t) = [A_H(r'_t), H].
+$$i\,\hbar\,c\,\frac{d}{dr'_{t}} A_H(r'_t) = [A_H(r'_t), H].
 $$
 
 The two pictures are related by a $*$-unitary transformation and give the same predictions for physical quantities.

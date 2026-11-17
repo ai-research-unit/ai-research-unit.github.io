@@ -168,7 +168,7 @@ The two equations of this section are one equation in two regimes. The Schrödin
 Every element off the zero-divisor cone factors into four pieces,
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 a scale, a central phase, a boost and a spatial rotor ([The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)). The derivative of the word separates into four brackets with no remainder, and in the scalar case the four collapse to two: a continuity equation for the density and a Hamilton–Jacobi equation with a quantum potential. That pair is Madelung's, and its relativistic form is the spin-zero case of Takabayasi's hydrodynamics ([The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html)).
@@ -201,7 +201,7 @@ With the field written in the complete polar decomposition, the derivative takes
 
 $$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
-=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
+=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right],
@@ -211,7 +211,7 @@ and the four brackets are of four different types.
 
 | Bracket | Type | Zero when |
 |---|---|---|
-| $\tfrac12\partial_\mu\ln\rho$ | real central scalar | the density is constant |
+| $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | the density is constant |
 | $i\,\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
@@ -225,9 +225,9 @@ The current and the spin read different factors, and this is the most compact st
 $$
 \tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-\tilde J_{\Phi}=\rho\tilde V_{\Phi},
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi},
 \qquad
-\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\,\hat s,
+\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}.
 $$
@@ -427,14 +427,14 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $k_m=mc/\hbar$ | Mass wave number |
 | $r'_t$ | Material time coordinate, with $e_t=1$ and temporal direction $ie_t$ |
 | $R_\mu$ | The four coordinates of the material frame; indices stay low |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word: scale, phase, boost, rotor |
-| $\rho$ | Scale of the word, the modulus of the norm; $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$. Not the Hermitian density $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, which stays positive on the cone |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word: scale, phase, boost, rotor |
+| $\rho_{\mathrm{num}}$ | The number density, $\rho_{\mathrm{num}}=\varrho^{2}=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert$; the scale is $\varrho$, and $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. Not the Hermitian density $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, which stays positive on the cone |
 | $\tilde U_{\Psi,\mathrm b}$ | Boost factor, Hermitian positive |
 | $\tilde u_{\mathrm r}$ | Spatial rotor, real |
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity, $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=-c^{2}$ |
-| $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
+| $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Current |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{\hbar}{2}i\hat s$ | Spin element |
 | $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\hbar$ |
 | $\tilde F=i\sqrt{\epsilon}(\vec E+ic\vec B)$ | Field strength element |
 | $\tilde\varsigma_{\Psi}$ | State of the informational sector, positive and of trace one |

@@ -15,21 +15,21 @@
 
 **The article is a reading and not a derivation.** The covariant pair is [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field in the Operator Setting*: the covariant continuity equation, the covariant Hamilton–Jacobi equation, and the statement that the quantum potential is unchanged. This article takes them and asks what the object is in fluid words.
 
-**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=r^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta r/(2mr)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
+**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
 
 ## The Word Collapses, and the Connection Joins the Phase
 
-**The field is central**, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the covariant derivative is the free one with a central addition in each slot,
+**The field is central**, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the covariant derivative is the free one with a central addition in each slot,
 
 $$
-\tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln r+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{\varkappa}{\hbar}\varphi\Bigr),
+\tilde\Xi^{-1}D_{t'}\tilde\Xi=\partial_{t'}\ln \varrho+i\Bigl(\partial_{t'}\theta_{\mathrm{pha}}-\frac{\varkappa}{\hbar}\varphi\Bigr),
 \qquad
-\tilde\Xi^{-1}D_{\eta}\tilde\Xi=\partial_{\eta}\ln r+i\Bigl(\partial_{\eta}\theta_{\mathrm{pha}}+\frac{\varkappa}{\hbar}A_{\eta}\Bigr).
+\tilde\Xi^{-1}D_{\eta}\tilde\Xi=\partial_{\eta}\ln \varrho+i\Bigl(\partial_{\eta}\theta_{\mathrm{pha}}+\frac{\varkappa}{\hbar}A_{\eta}\Bigr).
 $$
 
 **The addition is a central imaginary number, so it has one place to go.** The logarithmic derivative splits into a real scalar, a central imaginary, a Hermitian element and a real vector; $-\frac{i\varkappa}{\hbar}\varphi$ and $+\frac{i\varkappa}{\hbar}A_\eta$ are central imaginary, so they join the second part and no other. On a central field there is no third and no fourth part to receive anything; on a general field there is, and they still receive nothing, because the addition's type does not depend on the field.
 
-**Three quantities are therefore invariant before any calculation.** The scale is: $\partial_\eta\ln r$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $r$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
+**Three quantities are therefore invariant before any calculation.** The scale is: $\partial_\eta\ln \varrho$ is untouched. The density is, because it is a function of the scale. The quantum potential is, because it is built from $\varrho$ and its ordinary Laplacian, and the gradient the connection could shift is the phase's and not the scale's. The statement is exact and it is the article's sharpest one: *the field cannot make a quantum fluid denser or its quantum pressure stronger; it can only turn the phase.*
 
 **The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.**
 
@@ -74,7 +74,7 @@ The canonical momentum is a gradient and the kinetic momentum is a gradient plus
 
 **There are two currents and they are proportional, so there is one conservation law.** The mass current is $\vec j=\rho_{\mathrm{num}}\vec v$ and the electric current is $\varkappa\vec j$; both are conserved by the same continuity equation, and the charge density is $\varkappa\rho_{\mathrm{num}}$. Nothing has to be added: a charged fluid with one species has one conservation law, and the charge's is the mass's times a constant.
 
-**The density is gauge invariant and the phase is not, and the pair respects it.** $\rho_{\mathrm{num}}=r^{2}$ is invariant because the gauge transformation is unitary and central. $\vec v$ is invariant because $\vec\pi$ is. $S$ is not, and the continuity equation does not contain it except through $\vec v$. So the conservation law is a statement about invariants and the gauge freedom never enters it.
+**The density is gauge invariant and the phase is not, and the pair respects it.** $\rho_{\mathrm{num}}=\varrho^{2}$ is invariant because the gauge transformation is unitary and central. $\vec v$ is invariant because $\vec\pi$ is. $S$ is not, and the continuity equation does not contain it except through $\vec v$. So the conservation law is a statement about invariants and the gauge freedom never enters it.
 
 **One consequence for the count.** The free article has three data at each event; the coupling adds no fourth, and it adds a redundancy: the phase is translated by an arbitrary function, so a line of chart coordinates describes one field. The polar companion calls this the one structural change the coupling makes in kind, and in fluid terms it is the statement that the velocity, not the potential, is the fluid's datum.
 
@@ -91,7 +91,7 @@ $$
 
 **With $\varkappa$ the negative of the electric charge, this is the standard force.** Writing $q=-\varkappa$, the right-hand side is $q(\vec E+\vec v\times\vec B)-\nabla Q$: the Lorentz force of a charge $q$ plus the quantum force. The two are separate objects and neither modifies the other. The Lorentz force is odd in the coupling and vanishes at $\varkappa=0$; the quantum force does not contain the coupling at all, and it is the whole of the free article's Euler equation.
 
-**The quantum force is charge-blind.** $\nabla Q$ carries $r$ and its Laplacian and nothing else, so a charged and a neutral fluid with the same density have the same quantum force at the same event. The statement is the type argument's consequence and it is worth isolating: of the two forces on a fluid element, one is the field's and one is the density's, and the field cannot reach the density's.
+**The quantum force is charge-blind.** $\nabla Q$ carries $\varrho$ and its Laplacian and nothing else, so a charged and a neutral fluid with the same density have the same quantum force at the same event. The statement is the type argument's consequence and it is worth isolating: of the two forces on a fluid element, one is the field's and one is the density's, and the field cannot reach the density's.
 
 **The inertia is still $m$ and there is still no factor of $\gamma$.** The companion's law carries $\gamma^{-1}$ because its flow variable is normalised; this one does not, and the coupling does not introduce one. A relativistic charged fluid's acceleration law has two reasons for a $\gamma$ — the normalisation and the field's part in the four-velocity — and the first-order fluid has neither.
 
@@ -145,7 +145,7 @@ with $n$ the winding of the phase. The derivation is one line: $\vec v=(\nabla S
 
 ## What the Coupling Does Not Change
 
-**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=r^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
+**Density, quantum potential and stress are untouched, and the reason is one type.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the scale's; $Q$ is the scale's Laplacian; $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ is the scale's second derivatives. The connection is central imaginary, joins the phase bracket, and cannot reach the scale. So the stress identity of the free article holds verbatim, with the same tensor and the same force:
 
 $$
 \partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\,\partial_{i}Q,
@@ -207,7 +207,7 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $\varkappa$ | Coupling; minus the electric charge, $q=-\varkappa$ |
 | $\varphi$, $\vec A$ | Scalar and vector potentials |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Action; gauge dependent |
@@ -215,9 +215,9 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\vec\pi=\nabla S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | Kinetic energy; gauge invariant |
-| $\rho_{\mathrm{num}}=r^{2}$ | Density; gauge invariant |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current; the charge current is $\varkappa\vec j$ |
-| $Q=-\hbar^{2}\Delta r/(2mr)$ | Quantum potential; unchanged by the coupling |
+| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
 | $\vec\omega=\nabla\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
 | $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | Field strengths |

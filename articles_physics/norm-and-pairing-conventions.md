@@ -155,8 +155,8 @@ The series writes one polar word and reads it in three bracketings. The word, it
 **The word.** Every element off the cone is the ordered product
 
 $$
-\tilde Q=r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
-\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta_{\mathrm{axr}}\in[0,2\pi],
+\tilde Q=\varrho\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\qquad \varrho>0,\qquad \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}],\qquad \theta_{\mathrm{rpd},w}\ge0,\qquad \theta_{\mathrm{axr}}\in[0,2\pi],
 $$
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
@@ -165,7 +165,7 @@ with the factors of the table. The order is forced: the scale and the phase are 
 
 | # | factor | glyph | range | type | action on the algebra |
 | --- | --- | --- | --- | --- | --- |
-| 1 | scale | $r$ | $r>0$ | real central scalar | dilation by $r^2$ |
+| 1 | scale | $\varrho$ | $\varrho>0$ | real central scalar | dilation by $\varrho^2$ |
 | 2 | central phase | $\exp(i\theta_{\mathrm{pha}})$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central unit | scalar multiplication |
 | 3 | boost | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})=\cosh\frac{\theta_{\mathrm{rpd},w}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, $\vec u_{\mathrm b}$ a unit real vector | Hermitian positive, $\det=1$ | congruence $X\mapsto\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})X\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd},w})^{*}$ |
 | 4 | rotor | $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ a unit real vector | real unit quaternion | conjugation $X\mapsto\tilde u_{\mathrm r}X\tilde u_{\mathrm r}^{*}$ |
@@ -178,7 +178,7 @@ The modulus is the square root of the **quaternionic** norm, and it is not the s
 
 | bracket | name | value | role in the word |
 | --- | --- | --- | --- |
-| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | quaternionic norm | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, complex | the modulus, $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch; multiplicative; vanishing is the cone |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | quaternionic norm | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, complex | the modulus, $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch; multiplicative; vanishing is the cone |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | Hermitian norm | $\lvert Q_t\rvert^2+\lvert Q_x\rvert^2+\lvert Q_y\rvert^2+\lvert Q_z\rvert^2$, real and non-negative | the total size; it carries the topology and never enters the existence condition of the word |
 
 **Two warnings.** First, a square root of the Hermitian norm is the **topological norm**, not the polar modulus: the polar modulus is complex and the topological norm is real, so the two are not interchangeable. Second, the polar articles write $E^2=\sum_\mu\lvert Q_\mu\rvert^2$ for the Hermitian norm. That $E$ is not the physical energy: for a four-momentum it is $m^2c^2\cosh 2\theta_{\mathrm{rpd}}$ in the notation below, not $m^2c^4\cosh^2\theta_{\mathrm{rpd}}$. A formula that needs the energy takes it from the four-momentum, not from this $E^2$.
@@ -203,13 +203,13 @@ The fourth factor of the word, $\tilde u_{\mathrm r}$, is a rotation and not a b
 Let $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ with $E=mc^2\cosh\theta_{\mathrm{rpd}}$ and $\vec p=mc\sinh\theta_{\mathrm{rpd}}\,\vec u_p$, so that $\theta_{\mathrm{rpd}}$ is the kinematic rapidity. Then
 
 $$
-\tilde P_{\Phi}=imc\,\mathcal B_{\Psi},\qquad \mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p},\qquad \Rho=imc,\qquad \Theta=-i\theta_{\mathrm{rpd}},\qquad \vec U=\vec u_p,
+\tilde P_{\Phi}=imc\,\mathcal B_{\Psi},\qquad \mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p},\qquad \varrho\,e^{i\theta_{\mathrm{pha}}}=imc,\qquad \Theta=-i\theta_{\mathrm{rpd}},\qquad \vec U=\vec u_p,
 $$
 
 with $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}=\lvert\vec p\rvert$, and the eigenvalues are
 
 $$
-\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\theta_{\mathrm{rpd}}}=\Rho\,e^{\pm i\Theta}.
+\lambda_\pm=Q_t\pm iB=imc\,e^{\pm\theta_{\mathrm{rpd}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\pm i\Theta}.
 $$
 
 The factor $\mathcal B_{\Psi}=e^{-i\theta_{\mathrm{rpd}}\vec u_p}$ is not a phase either, and the eigenvalues just written say so: with $\vec u_p^2=-e_t$ the argument squares to $+\theta_{\mathrm{rpd}}^2e_t$, so
@@ -257,9 +257,9 @@ The three pairings are three bracketings of the same word, and their domains dif
 
 | pairing | factorisation | factorisation exists | construction exists | witness of failure |
 | --- | --- | --- | --- | --- |
-| word | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
+| word | $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | any element of the cone |
 | quaternion | $\tilde q\,e^{i\theta_{\mathrm{rpd}}}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | $\tilde q_r\neq0$ (on this domain) | $i\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=-2$ but $\tilde q_r=0$ |
-| Hamilton | $\Rho\,e^{\vec U\Theta}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | same | $e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$ |
+| Hamilton | $\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\vec U\Theta}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ | same | $e_t+\vec e_x+i\vec e_y$: $\langle\tilde Q\rangle_{\natural}=1$ but $\langle\vec Q,\vec Q\rangle_{\natural}=0$ |
 | Cartan | $\tilde Q_H\tilde Q_0$ | $\langle\tilde Q\rangle_{\natural}\neq0$ | same | $e_t+i\vec e_x$: on the cone; the generalized form gives a partial isometry |
 
 **The domains are not nested.** The quaternion construction fails at $\tilde q_r=0$; the Hamilton pairing fails when the vector part is null; the Cartan pairing is the widest and is total off the cone. The generalized polar decomposition extends the Cartan pairing to the cone with a partial isometry, and it is *The Polar Decomposition of a Biquaternion*.
@@ -270,7 +270,7 @@ The three pairings are three bracketings of the same word, and their domains dif
 
 Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $\mathrm{Kr}$, used with two arguments for the form and with one for the norm. Regular and degenerate are qualified by the letter, because only the $N$ pair gives the unit partition, and the unqualified word regular is spectral. Norm one is fixed layer by layer by the unitary convention, and for the biquaternion layer it is $N$ and no other; the star-unitary condition is a different condition, and only $N$ decides invertibility. The letter $u$ names a unit element and nothing else.
 
-The polar word is $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and the word parameter is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$.
+The polar word is $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and the word parameter is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$.
 
 The trace of the $2\times2$ image is $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has normalised. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.
 
@@ -283,7 +283,7 @@ The trace of the $2\times2$ image is $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the fact
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | The Hermitian norm, real and non-negative |
 | $\lVert\tilde Q\rVert$ | The base norm, the square root of the Hermitian norm; bare on an element, and replaced by $\langle\mathsf M\rangle_*^{1/2}$ on a matrix |
 | $Ξ$-regular, $Ξ$-degenerate | $Ξ(\tilde Q)\neq0$ and $Ξ(\tilde Q)=0$; only the $N$ pair is the unit partition |
-| $\Rho,\Theta,\vec U,B$ | The Hamilton data of the complete polar decomposition; $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}},\Theta,\vec U,B$ | The Hamilton data of the complete polar decomposition; $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\Psi,\mathrm b}$, $\mathcal B_{\Psi}$ | The frame rotor and the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ |
 | $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}$ | The Born weight, a ratio in which the factor two cancels |

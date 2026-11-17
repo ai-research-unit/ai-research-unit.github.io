@@ -13,7 +13,7 @@ $$
 written as the four-factor word
 
 $$
-\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
@@ -57,12 +57,12 @@ The notation is the one of *Algebra and Element Conventions*.
 Given $\tilde Q$:
 
 1. Compute $N$ and $B^2=Q_x^2+Q_y^2+Q_z^2$. Every case has $N\neq0$; the cases off the wall have $B^2\neq0$ and the cases on the wall have $B^2=0$.
-2. Compute the modulus $\Rho$, the principal square root of $N$, and write $\Rho=r e^{i\theta_{\mathrm{pha}}}$ with $r>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
-3. Off the wall, compute the unit factor $\tilde U=\tilde Q/\Rho$. On the wall, compute the scalar part $Q_t$, the nilpotent direction $\vec\Upsilon=\vec Q/Q_t$, the sign $\varepsilon=Q_t/\Rho=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, and check $\vec\Upsilon^2=0$.
+2. Compute the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the principal square root of $N$, and write $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ with $\varrho>0$ and $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$.
+3. Off the wall, compute the unit factor $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. On the wall, compute the scalar part $Q_t$, the nilpotent direction $\vec\Upsilon=\vec Q/Q_t$, the sign $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ and the unit factor $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, and check $\vec\Upsilon^2=0$.
 4. Compute the Hermitian factor $\tilde U_{\mathrm b}=(\tilde U\tilde U^*)^{1/2}$, positive of norm one, and the rotor $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$.
 5. Read the boost angle and axis from $\tilde U_{\mathrm b}=c_{\mathrm b}e_t+i s_{\mathrm b}\vec u_{\mathrm b}$, and the rotor angle and axis from $\tilde u_{\mathrm r}=c_{\mathrm r}e_t+s_{\mathrm r}\vec u_{\mathrm r}$.
-6. Check $\tilde Q=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.
-7. Off the wall, compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/\Rho$.
+6. Check $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and $\langle\tilde U\rangle_{\natural}=1$.
+7. Off the wall, compute the eigen-data: $\lambda_\pm=Q_t\pm iB$, $\vec{Ζ}=-i\vec Q/B$, $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$, and $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.
 8. On the wall, check the constraints $c_{\mathrm b}c_{\mathrm r}=\varepsilon$ and $s_{\mathrm b}s_{\mathrm r}c=0$, with $c=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$, and compute the exact logarithm $\log Q_t+\vec\Upsilon$.
 9. Compute the true logarithm by the matrix logarithm, and compare its exponential with $\tilde Q$. On the wall the exact logarithm plays that role.
 10. Compute the formal exponent and its defect, in both groups.
@@ -72,7 +72,7 @@ The **defect** of a case is
 $$
 \delta=\bigl\lVert\exp(\tilde Q_{\log})-\tilde Q\bigr\rVert,
 \qquad
-\tilde Q_{\log}=\ln r+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
+\tilde Q_{\log}=\ln \varrho+i\theta_{\mathrm{pha}}+i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$
 
 where the norm is the maximum modulus of the four coordinates. Off the wall it is zero exactly in the normal cases and positive in the non-normal ones. On the wall it is zero on the scalar line and positive on the Jordan part.
@@ -86,10 +86,10 @@ The following identities hold in every case and are used below without comment.
 | $\langle\tilde U\rangle_{\natural}=1$ | the unit factor has norm one |
 | $\tilde U_{\mathrm b}^*=\tilde U_{\mathrm b}$, $\langle\tilde U_{\mathrm b}\rangle_{\natural}=1$ | the Hermitian factor is positive of norm one |
 | $\tilde u_{\mathrm r}^*=\tilde u_{\mathrm r}^{-1}$, $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$ | the rotor is $*$-unitary of norm one |
-| $\tilde Q=\Rho\tilde U$ | the modulus–unit split |
+| $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ | the modulus–unit split |
 | $[\tilde Q,\tilde Q^*]=-2\vec Q\times\overline{\vec Q}$ | normality, off the wall |
 | $\lambda_\pm=Q_t\pm iB$ | the eigenvalues, off the wall |
-| $\mu_\pm=\lambda_\pm/\Rho$ | the eigenvalues of the unit factor, off the wall |
+| $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor, off the wall |
 | $\tilde Q=Q_t(e_t+\vec\Upsilon)$, $\vec\Upsilon^2=0$ | the normal form, on the wall |
 | $\tilde U=\varepsilon(e_t+\vec\Upsilon)$, $(\tilde U-\varepsilon e_t)^2=0$ | the unit factor on the wall is $\pm$unipotent |
 | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$ | the scalar constraint, on the wall |
@@ -113,9 +113,9 @@ N=1,
 \qquad
 B^2=1,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -144,7 +144,7 @@ $$
 \tilde Q=\exp\Bigl(\frac{\pi}{2}\vec e_x\Bigr).
 $$
 
-The word has $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{axr}}=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
+The word has $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{axr}}=\pi$, $\vec u_{\mathrm r}=\vec e_x$.
 
 #### The Spectral Data
 
@@ -184,9 +184,9 @@ N=1,
 \qquad
 B^2=-1,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -258,9 +258,9 @@ N=1,
 \qquad
 B^2=\frac12+i=0.5+1i,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -337,9 +337,9 @@ N=1,
 \qquad
 B^2=\frac12,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -385,9 +385,9 @@ N=1,
 \qquad
 B^2=\frac14+i=0.25+1i,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -496,9 +496,9 @@ N=1.25+4i,
 \qquad
 B^2=1.25+2i,
 \qquad
-\Rho=1.649358004+1.212593018i,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1.649358004+1.212593018i,
 \qquad
-r=2.047135475,
+\varrho=2.047135475,
 \qquad
 \theta_{\mathrm{pha}}=0.6339557292.
 $$
@@ -606,9 +606,9 @@ N=4i,
 \qquad
 B^2=2i,
 \qquad
-\Rho=\sqrt2(1+i),
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt2(1+i),
 \qquad
-r=2,
+\varrho=2,
 \qquad
 \theta_{\mathrm{pha}}=\frac{\pi}{4}.
 $$
@@ -662,9 +662,9 @@ N=2,
 \qquad
 B^2=2,
 \qquad
-\Rho=\sqrt2,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt2,
 \qquad
-r=\sqrt2,
+\varrho=\sqrt2,
 \qquad
 \theta_{\mathrm{pha}}=0.
 $$
@@ -722,9 +722,9 @@ N=1,
 \qquad
 B^2=0,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -768,9 +768,9 @@ N=4,
 \qquad
 B^2=0,
 \qquad
-\Rho=2,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=2,
 \qquad
-r=2,
+\varrho=2,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -814,9 +814,9 @@ N=-4,
 \qquad
 B^2=0,
 \qquad
-\Rho=2i,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=2i,
 \qquad
-r=2,
+\varrho=2,
 \qquad
 \theta_{\mathrm{pha}}=\frac{\pi}{2},
 \qquad
@@ -860,9 +860,9 @@ N=1,
 \qquad
 B^2=0,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -945,9 +945,9 @@ N=1,
 \qquad
 B^2=0,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -1029,9 +1029,9 @@ N=2i,
 \qquad
 B^2=0,
 \qquad
-\Rho=1+i,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1+i,
 \qquad
-r=\sqrt2,
+\varrho=\sqrt2,
 \qquad
 \theta_{\mathrm{pha}}=\frac{\pi}{4},
 \qquad
@@ -1045,7 +1045,7 @@ $$
 #### The Polar Factors
 
 $$
-\tilde U=\tilde Q/\Rho=e_t+\frac{1-i}{2}\vec e_x+\frac{1+i}{2}\vec e_y,
+\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})=e_t+\frac{1-i}{2}\vec e_x+\frac{1+i}{2}\vec e_y,
 $$
 
 $$
@@ -1117,9 +1117,9 @@ N=1,
 \qquad
 B^2=0,
 \qquad
-\Rho=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=1,
 \qquad
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -1179,7 +1179,7 @@ $$
 \delta=1.2330607.
 $$
 
-The formal exponent has no scalar part, because $\ln r+i\theta_{\mathrm{pha}}=0$; the true logarithm has $i\pi$, the period that the word does not see.
+The formal exponent has no scalar part, because $\ln \varrho+i\theta_{\mathrm{pha}}=0$; the true logarithm has $i\pi$, the period that the word does not see.
 
 ### Case 16: A Scaled Jordan Element
 
@@ -1194,9 +1194,9 @@ N=4,
 \qquad
 B^2=0,
 \qquad
-\Rho=2,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=2,
 \qquad
-r=2,
+\varrho=2,
 \qquad
 \theta_{\mathrm{pha}}=0,
 \qquad
@@ -1217,7 +1217,7 @@ $$
 \tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
-The word is the one of case 12 with the scale $r=2$:
+The word is the one of case 12 with the scale $\varrho=2$:
 
 $$
 \theta_{\mathrm{rpd}}=1.762747174,
@@ -1291,7 +1291,7 @@ The table is the numerical form of the spectral reading. In cases 1 to 4, 7 and 
 
 ### The Scalar Line
 
-| Case | $\tilde Q$ | $Q_t$ | $\Rho$ | $\varepsilon$ | $\theta_{\mathrm{axr}}$ | $\operatorname{Log}\tilde Q$ | $\delta$ |
+| Case | $\tilde Q$ | $Q_t$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\varepsilon$ | $\theta_{\mathrm{axr}}$ | $\operatorname{Log}\tilde Q$ | $\delta$ |
 |---|---|---|---|---|---|---|---|
 | 9| $e_t$ | $1$ | $1$ | $+1$ | $0$ | $0$ | $0$ |
 | 10| $-2e_t$ | $-2$ | $2$ | $-1$ | $2\pi$ | $\ln2+i\pi$ | $0$ |
@@ -1364,7 +1364,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ### The Cases
 
-| Case | $\tilde Q$ | $N$ | $B^2$ | $\Rho$ | Normal |
+| Case | $\tilde Q$ | $N$ | $B^2$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Normal |
 |---|---|---|---|---|---|
 | 1 | $\vec e_x$ | $1$ | $1$ | $1$ | yes |
 | 2 | $\sqrt2e_t+i\vec e_x$ | $1$ | $-1$ | $1$ | yes |
@@ -1377,7 +1377,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ### The Word Data
 
-| Case | $r$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\vec u_{\mathrm b}$ | $\theta_{\mathrm{axr}}$ | $\vec u_{\mathrm r}$ |
+| Case | $\varrho$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\vec u_{\mathrm b}$ | $\theta_{\mathrm{axr}}$ | $\vec u_{\mathrm r}$ |
 |---|---|---|---|---|---|---|
 | 1 | $1$ | $0$ | $0$ | -- | $\pi$ | $\vec e_x$ |
 | 2 | $1$ | $0$ | $1.762747174$ | $\vec e_x$ | $0$ | -- |
@@ -1411,7 +1411,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ### The Word Data on the Wall
 
-| Case | $r$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\theta_{\mathrm{axr}}$ | $\vec u_{\mathrm b}$ | $\vec u_{\mathrm r}$ | $c$ |
+| Case | $\varrho$ | $\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{rpd}}$ | $\theta_{\mathrm{axr}}$ | $\vec u_{\mathrm b}$ | $\vec u_{\mathrm r}$ | $c$ |
 |---|---|---|---|---|---|---|---|
 | 9| $1$ | $0$ | $0$ | $0$ | -- | -- | -- |
 | 10| $2$ | $0$ | $0$ | $2\pi$ | -- | -- | -- |
@@ -1438,8 +1438,8 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 | $\tilde Q$ | the element of the case |
 | $N$ | the reduced product |
 | $B^2$ | the vector form |
-| $\Rho$ | the modulus, principal square root of $N$ |
-| $r,\theta_{\mathrm{pha}}$ | the polar coordinates of $\Rho$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the modulus, principal square root of $N$ |
+| $\varrho,\theta_{\mathrm{pha}}$ | the polar coordinates of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
 | $\tilde U$ | the unit factor |
 | $\tilde U_{\mathrm b}$ | the Hermitian positive factor |
 | $\tilde u_{\mathrm r}$ | the rotor |
@@ -1453,7 +1453,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 | $\tilde Q_{\log}$ | the formal exponent |
 | $\delta$ | the defect of the case |
 | $\vec\Upsilon=\vec Q/Q_t$ | the nilpotent direction on the wall |
-| $\varepsilon=Q_t/\Rho$ | the sign of the unit factor on the wall, $\pm1$ |
+| $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the sign of the unit factor on the wall, $\pm1$ |
 | $\delta$ | the defect of the case |
 | $\tilde Q_{\log}$ | the formal exponent |
 

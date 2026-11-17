@@ -86,9 +86,9 @@ An element is invertible exactly when $C_+C_-\neq0$.
 The polar word separates the element into a real-hyperbolic factor and a torus factor,
 
 $$
-\breve Q=\breve r\,u,
+\breve Q=\breve \varrho\,u,
 \qquad
-\breve r=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
+\breve \varrho=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
 \qquad
 u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}).
 $$
@@ -100,7 +100,7 @@ $$
 =\bigl(\ln\rho+i\theta_{\mathrm{pha}}\bigr)+j\bigl(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}\bigr).
 $$
 
-The factor $\breve r$ carries the two real scales $\rho e^{\pm\theta_{\mathrm{rpd}}}$ in the two complex components, and $u$ carries the two phases $\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$.
+The factor $\breve \varrho$ carries the two real scales $\rho e^{\pm\theta_{\mathrm{rpd}}}$ in the two complex components, and $u$ carries the two phases $\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$.
 
 ### The Matrix Picture
 
@@ -162,7 +162,7 @@ The two phases satisfy $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{
 
 $$
 \boxed{\;
-\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})
+\breve \varrho=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})
 =\frac{5+\sqrt{29}}{2}+j\,\frac{5-\sqrt{29}}{2}
 =5.1925824036-0.1925824036\,j
 \;},
@@ -186,7 +186,7 @@ $$
 The product of the two factors is
 
 $$
-\breve r\,u=3+4i+j(1-i),
+\breve \varrho\,u=3+4i+j(1-i),
 $$
 
 with error $1.3\times10^{-15}$, and $\exp(\operatorname{Log}\breve Q)$ reproduces the element with the same error. The matrix has determinant $-7+26i$ and the two scales $5$ and $\sqrt{29}$.
@@ -219,7 +219,7 @@ $$
 \theta_{\mathrm{phb}}=0.
 $$
 
-**The two factors.** The real-hyperbolic factor is $\breve r=\sqrt2$, and the torus factor is
+**The two factors.** The real-hyperbolic factor is $\breve \varrho=\sqrt2$, and the torus factor is
 
 $$
 u=e^{i\pi/4}=\frac{1+i}{\sqrt2}.
@@ -234,7 +234,7 @@ $$
 and
 
 $$
-\breve r\,u=\sqrt2\cdot\frac{1+i}{\sqrt2}=1+i,
+\breve \varrho\,u=\sqrt2\cdot\frac{1+i}{\sqrt2}=1+i,
 $$
 
 with error $2.2\times10^{-16}$. The matrix has determinant $2i$ and the two scales $\sqrt2$ and $\sqrt2$.
@@ -263,7 +263,7 @@ $$
 \theta_{\mathrm{phb}}=0.
 $$
 
-**The two factors.** The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=i$.
+**The two factors.** The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=i$.
 
 **The word and the check.** The exponent is
 
@@ -271,7 +271,7 @@ $$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}i,
 $$
 
-and $\breve r\,u=i$, with error $6.1\times10^{-17}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.
+and $\breve \varrho\,u=i$, with error $6.1\times10^{-17}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.
 
 ### Case 4: The Split Phase
 
@@ -303,7 +303,7 @@ $$
 \theta_{\mathrm{phb}}=\tfrac{\pi}{2}.
 $$
 
-**The two factors.** The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=ij$.
+**The two factors.** The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=ij$.
 
 **The word and the check.** The exponent is
 
@@ -311,7 +311,7 @@ $$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}ij,
 $$
 
-and $\breve r\,u=ij$, with error $6.1\times10^{-17}$. The matrix has determinant $1$ and the two scales $1$ and $1$.
+and $\breve \varrho\,u=ij$, with error $6.1\times10^{-17}$. The matrix has determinant $1$ and the two scales $1$ and $1$.
 
 ### Case 5: The Boundary of the Diamond
 
@@ -343,7 +343,7 @@ $$
 
 The point lies on the boundary of the principal diamond, where the two phases saturate it.
 
-**The two factors.** The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=j$.
+**The two factors.** The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=j$.
 
 **The word and the check.** The exponent is
 
@@ -351,7 +351,7 @@ $$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}i-\tfrac{\pi}{2}ij,
 $$
 
-and $\breve r\,u=j$, with error $1.2\times10^{-16}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.
+and $\breve \varrho\,u=j$, with error $1.2\times10^{-16}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.
 
 ### Case 6: The Hyperbolic Line
 
@@ -389,7 +389,7 @@ $$
 
 $$
 \boxed{\;
-\breve r=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j
+\breve \varrho=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j
 \;},
 $$
 
@@ -401,7 +401,7 @@ $$
 \operatorname{Log}\breve Q=j\ln2,
 $$
 
-and $\breve r\,u=\tfrac54+\tfrac34j$, with error $0$. The matrix has determinant $1$ and the two scales $2$ and $\tfrac12$. The element is a pure boost: the two phases vanish and the two scales are positive.
+and $\breve \varrho\,u=\tfrac54+\tfrac34j$, with error $0$. The matrix has determinant $1$ and the two scales $2$ and $\tfrac12$. The element is a pure boost: the two phases vanish and the two scales are positive.
 
 ### Case 7: The Central Discrete Element
 
@@ -431,7 +431,7 @@ $$
 
 The point is the corner $(\pi,0)$ of the diamond.
 
-**The two factors.** The real-hyperbolic factor is $\breve r=1$, and the torus factor is $u=-1$.
+**The two factors.** The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=-1$.
 
 **The word and the check.** The exponent is
 
@@ -439,7 +439,7 @@ $$
 \operatorname{Log}\breve Q=\pi i,
 $$
 
-and $\breve r\,u=-1$, with error $1.2\times10^{-16}$. The matrix has determinant $1$ and the two scales $1$ and $1$. The four logarithms of $-1$ and their kernel differences belong to the polar article and to the relation article; the principal one is the one above.
+and $\breve \varrho\,u=-1$, with error $1.2\times10^{-16}$. The matrix has determinant $1$ and the two scales $1$ and $1$. The four logarithms of $-1$ and their kernel differences belong to the polar article and to the relation article; the principal one is the one above.
 
 ### Case 8: The Zero Divisor
 
@@ -520,7 +520,7 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 
 ### The Reconstruction Table
 
-| Case | $\breve Q$ | $\breve r$ | $u$ | $\breve r\,u$ | Error |
+| Case | $\breve Q$ | $\breve \varrho$ | $u$ | $\breve \varrho\,u$ | Error |
 |---|---|---|---|---|---|
 | $1$ | $3+4i+j(1-i)$ | $5.1925824036-0.1925824036j$ | $0.5856953382+0.7642383454i+j(0.2143046618-0.1642383454i)$ | $3+4i+j(1-i)$ | $1.3\times10^{-15}$ |
 | $2$ | $1+i$ | $\sqrt2$ | $(1+i)/\sqrt2$ | $1+i$ | $2.2\times10^{-16}$ |
@@ -552,7 +552,7 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 | $\rho=\sqrt{\lvert C_+C_-\rvert}$ | the modulus |
 | $\theta_{\mathrm{rpd}}$ | the real boost |
 | $\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ | the two phases, in the principal diamond |
-| $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ | the real-hyperbolic factor |
+| $\breve \varrho=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ | the real-hyperbolic factor |
 | $u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}})$ | the torus factor |
 | $\operatorname{Log}\breve Q=(\ln\rho+i\theta_{\mathrm{pha}})+j(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})$ | the principal logarithm |
 | $\mathsf M(\breve Q)$ | the block matrix $\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix}$ |

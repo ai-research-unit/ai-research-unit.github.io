@@ -128,7 +128,7 @@ so it is linear in $\varphi$, linear and quadratic in $\vec A$, and has no highe
 
 **No amplitude–potential cross term.** The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\lambda$ multiplied the form by $\lvert\lambda\rvert^{2}$ to $4.5\times10^{-14}$. **So the symbol is independent of the amplitude**, and no term can couple the amplitude to the potential.
 
-**What a cross term would require.** A term in $r\vec A$ would need the symbol to depend on $r$, which the homogeneity forbids. **The absence is structural and not a cancellation**, and it is the frequency-space form of the polar parent's statement that the quantum potential is untouched by a constant potential.
+**What a cross term would require.** A term in $\varrho\vec A$ would need the symbol to depend on $\varrho$, which the homogeneity forbids. **The absence is structural and not a cancellation**, and it is the frequency-space form of the polar parent's statement that the quantum potential is untouched by a constant potential.
 
 **The exactness has a price.** It holds for a constant connection and a constant Hamiltonian, and the price is the licence of §*The Symbol Is a Model of the Bracket*. **Where the background varies, the phase is an integral of $\mathcal E$ along the path and the symbol is the integrand at one point.** That statement is the standard WKB phase, and it is a statement about a limit and not about this article's case.
 
@@ -158,7 +158,7 @@ so it is linear in $\varphi$, linear and quadratic in $\vec A$, and has no highe
 
 **The second is the gauge transformation's large version.** The commutativity of the transform and a central multiplication holds for every $\Gamma$, including one with a nonzero winding. Whether a large gauge transformation changes the spectrum of the transform is a question about the domains and not about the algebra, and it is open.
 
-**The third is the chart's flat dual under a coupling.** The free chart's dual variable $n=r^{2}$ is flat. Under a coupling the density is unchanged and the phase's rate is shifted, so the flatness survives; whether the *pair* survives when the connection varies with time is the coupled polar parent's open question.
+**The third is the chart's flat dual under a coupling.** The free chart's dual variable $n=\varrho^{2}$ is flat. Under a coupling the density is unchanged and the phase's rate is shifted, so the flatness survives; whether the *pair* survives when the connection varies with time is the coupled polar parent's open question.
 
 **The fourth is the sign of $ϙ\varphi$ in the phase's rate.** The parent fixes it and this article uses it. Whether the corpus's conventions for the charge make the sign read as positive energy for a positive charge is a conventions question, and the conventions articles are where it belongs.
 

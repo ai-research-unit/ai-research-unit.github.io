@@ -4,13 +4,13 @@
 
 **The limit in one sentence.** Take the complete polar decomposition of the parent, count one spatial derivative of the phase as order one and one spatial derivative of the scale as order $\epsilon$, and the exact pair the parent prints separates into three orders: the Hamilton–Jacobi equation, the transport equation, and the quantum potential.
 
-**The parent prints the pair, and this article orders it.** [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html) writes the field as the four-factor word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and prints, boxed, the two exact real equations that the central field obeys. Nothing below re-derives them. Each term of that pair is assigned a power of one parameter, and the limit is the statement of which powers survive.
+**The parent prints the pair, and this article orders it.** [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html) writes the field as the four-factor word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and prints, boxed, the two exact real equations that the central field obeys. Nothing below re-derives them. Each term of that pair is assigned a power of one parameter, and the limit is the statement of which powers survive.
 
-**What the polar chart settles before any parameter appears.** Three things, and none of them is available in a form-first account. The amplitude of the limit is the word's scale $r$ and not a coefficient read off a column. The density of the limit is the parent's Hermitian norm $\rho=2r^{2}\cosh\theta_{\mathrm{rpd}}$, which equals $2r^{2}$ exactly when the boost is the identity and to no order otherwise. And the frame's two brackets — the boost's connection and the rotor's — carry no derivative of a rapidly varying object, so the parameter does not order them: they are either present or absent, and the parent's own class statement says which case closes.
+**What the polar chart settles before any parameter appears.** Three things, and none of them is available in a form-first account. The amplitude of the limit is the word's scale $\varrho$ and not a coefficient read off a column. The density of the limit is the parent's Hermitian norm $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, which equals $2\varrho^{2}$ exactly when the boost is the identity and to no order otherwise. And the frame's two brackets — the boost's connection and the rotor's — carry no derivative of a rapidly varying object, so the parameter does not order them: they are either present or absent, and the parent's own class statement says which case closes.
 
-**The consequence is a restriction, and it is the article's first result.** The pair is closed on the central class, $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit therefore takes place inside the central class. A general field's word has four brackets and its pair is not closed, so there is nothing to order; the limit is not defined on it, and no truncation of the four brackets is claimed here.
+**The consequence is a restriction, and it is the article's first result.** The pair is closed on the central class, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit therefore takes place inside the central class. A general field's word has four brackets and its pair is not closed, so there is nothing to order; the limit is not defined on it, and no truncation of the four brackets is claimed here.
 
-**The criterion.** $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln r\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in *The Non-Quantum Limit of the Biquaternion Model*, and it is the same one here, with $r$ in the place of the amplitude.
+**The criterion.** $\epsilon=1/(k_{\Phi}L)$, with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L$ the length over which the scale varies, $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. The quantum potential over the kinetic energy is $\epsilon^{2}$; the scale's gradient over the phase's is $\epsilon$. The parameter is defined in *The Non-Quantum Limit of the Biquaternion Model*, and it is the same one here, with $\varrho$ in the place of the amplitude.
 
 **What the article establishes, in five sentences.** The parent's pair is exact and its two lines are ordered differently: the real line is an expansion whose third term is the quantum potential, and the imaginary line is not an expansion at all. Order zero is the Hamilton–Jacobi equation, whose characters are the classical trajectories and whose algebra form is a norm. Order one is the transport equation, which the limit does not produce and cannot spoil, and which gives $C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three. Order two is the quantum potential, and its ratio to the kinetic energy is $\epsilon^{2}$ everywhere but is not bounded on any region, which is the difference between the limit and the approximation.
 
@@ -27,33 +27,33 @@
 **The word.** The parent's display, repeated because every statement below is a statement about one of its factors:
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third factor a Hermitian positive boost and the fourth a real rotor. The parent proves the word is a bijection onto the invertibles of $\mathbb{B}$ and that the flow preserves the invertibles, so the chart is total on the generic field.
+with $\varrho>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third factor a Hermitian positive boost and the fourth a real rotor. The parent proves the word is a bijection onto the invertibles of $\mathbb{B}$ and that the flow preserves the invertibles, so the chart is total on the generic field.
 
 **The four factors are ordered differently, and the difference is the whole of this section.** The table is the article's premise.
 
 | factor | what it is | order in $\epsilon$ | why |
 |---|---|---|---|
-| $r$ | the scale | amplitude | its derivative is what the parameter measures |
+| $\varrho$ | the scale | amplitude | its derivative is what the parameter measures |
 | $\theta_{\mathrm{pha}}=S/\hbar$ | the central angle | $0$ | its gradient is the momentum, and that is the leading term |
 | $\tilde U_{\Psi,\mathrm b}$ | the boost, rapidity $\theta_{\mathrm{rpd}}$ | not ordered | a frame, and a frame's rate is not a derivative of a fast object |
 | $\tilde u_{\mathrm r}$ | the rotor, angle $\theta_{\mathrm{axr}}$ | not ordered | the same |
 
 **The last two rows are the polar statement, and they need one sentence each.** The boost's bracket in the parent's logarithmic derivative is $\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}$, a connection and not a gradient: it measures how the frame turns, and a frame that turns slowly contributes a term of the same size as the terms beside it. There is no small parameter attached to it because there is no derivative of a phase in it. The rotor's bracket is the same object in the real-vector part. So the parameter orders two of the four factors and has nothing to say about the other two.
 
-**The limit's amplitude is the scale, and the limit's density is the Hermitian norm.** The parent's two norms read different factors: the quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is
+**The limit's amplitude is the scale, and the limit's density is the Hermitian norm.** The parent's two norms read different factors: the quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is
 
 $$
-\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}
+\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}
 $$
 
-and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0$ and $\rho=2r^{2}$, so the density of the limit is the Hermitian norm evaluated where the boost is the identity. **Away from that class the two do not agree at any order**, and that is why the limit is stated there and not here.
+and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0$ and $\rho=2\varrho^{2}$, so the density of the limit is the Hermitian norm evaluated where the boost is the identity. **Away from that class the two do not agree at any order**, and that is why the limit is stated there and not here.
 
 **The class, and why it is the limit's domain.** On a central field the third and fourth brackets of the parent's identity vanish and the first two remain; the equation then separates into the parent's boxed pair. The parent also proves the class is invariant exactly under a central Hamiltonian and not in general. The limit inherits both facts: the pair it orders exists on the central class, and the class stays inside itself only for the Hamiltonian that the parent names.
 
@@ -62,15 +62,15 @@ and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0
 **The parameter is a ratio of two gradients.** The momentum acting on the word separates into a real part and an imaginary part,
 
 $$
-\tilde p\,\tilde\Xi=\Big[\vec\nabla_\Phi S-i\,\hbar\,\vec\nabla_\Phi\ln r\Big]\tilde\Xi ,
+\tilde p\,\tilde\Xi=\Big[\vec\nabla_\Phi S-i\,\hbar\,\vec\nabla_\Phi\ln \varrho\Big]\tilde\Xi ,
 $$
 
 and the two terms carry different powers of $\epsilon$:
 
 $$
-\frac{\lvert\hbar\vec\nabla_\Phi\ln r\rvert}{\lvert\vec\nabla_\Phi S\rvert}\sim\epsilon ,
+\frac{\lvert\hbar\vec\nabla_\Phi\ln \varrho\rvert}{\lvert\vec\nabla_\Phi S\rvert}\sim\epsilon ,
 \qquad
-\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi r}{r}\right\rvert\sim\epsilon^{2} .
+\frac{1}{k_{\Phi}^{2}}\left\lvert\frac{\Delta_\Phi \varrho}{\varrho}\right\rvert\sim\epsilon^{2} .
 $$
 
 **The second ratio is the quantum potential over the kinetic energy.** It is a square where the first is linear, and the two are the only ratios the pair contains: every term of the parent's boxed pair is one of the three columns below.
@@ -78,8 +78,8 @@ $$
 | object | order in $\epsilon$ | kept by the limit | kept by the first correction |
 |---|---|---|---|
 | $\vec\nabla_\Phi S$ | $0$ | yes | yes |
-| $\hbar\,\vec\nabla_\Phi\ln r$ | $1$ | no | yes |
-| $\hbar^{2}\,\Delta_\Phi r/r$ | $2$ | no | no |
+| $\hbar\,\vec\nabla_\Phi\ln \varrho$ | $1$ | no | yes |
+| $\hbar^{2}\,\Delta_\Phi \varrho/\varrho$ | $2$ | no | no |
 
 **The limit truncates one of the parent's two lines and leaves the other exact.** That asymmetry is the whole content of the pair, and it is not a stylistic choice. The real line carries the quantum potential at order two, so truncating it is a deletion. The imaginary line is a divergence, and a divergence is not a series: the transport equation is what survives when the density is written as the Hermitian norm, and no term of it is dropped at any order.
 
@@ -111,7 +111,7 @@ $$
 
 so the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are their orthogonal trajectories, and the phase gradient is the ray direction at each point.
 
-**The parent's own solution is semiclassical exactly, and this is the cleanest illustration.** The parent's constant-element case gives $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})$ with $\theta_{\mathrm{evo}}=h_{t}t'/\hbar$, whose word has $r=1$ and $\theta_{\mathrm{rpd}}=0$: the scale is constant, so $\epsilon=0$, and the limit changes nothing because there is nothing to drop. **The limit acts only where the scale varies.** For the free particle the complete integral is $S=\vec p\cdot\vec r-Et'$ with $E=\lvert\vec p\rvert^{2}/2m$, and its gradient is the constant $\vec p$.
+**The parent's own solution is semiclassical exactly, and this is the cleanest illustration.** The parent's constant-element case gives $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})$ with $\theta_{\mathrm{evo}}=h_{t}t'/\hbar$, whose word has $\varrho=1$ and $\theta_{\mathrm{rpd}}=0$: the scale is constant, so $\epsilon=0$, and the limit changes nothing because there is nothing to drop. **The limit acts only where the scale varies.** For the free particle the complete integral is $S=\vec p\cdot\vec r-Et'$ with $E=\lvert\vec p\rvert^{2}/2m$, and its gradient is the constant $\vec p$.
 
 **The separable case, for the record.** For $V=\sum_\eta V_\eta(x_\eta)$ the equation separates, $S=\sum_\eta S_\eta$, each term obeying $\frac{1}{2m}(dS_\eta/dx_\eta)^{2}+V_\eta=E_\eta$ with $\sum_\eta E_\eta=E$, so
 
@@ -126,17 +126,17 @@ The two signs are the two directions of motion, and the turning points $E_\eta=V
 **The imaginary line is the transport equation, and it is exact.** In the parent's letters,
 
 $$
-\frac{\partial r^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(r^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0 ,
+\frac{\partial \varrho^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0 ,
 $$
 
-a conservation law for the density $r^{2}$ carried by the velocity $\vec\nabla_\Phi S/m$. The limit neither produces it nor spoils it: it is the second line of the parent's pair, it holds at every order, and the truncation of the first line cannot touch it.
+a conservation law for the density $\varrho^{2}$ carried by the velocity $\vec\nabla_\Phi S/m$. The limit neither produces it nor spoils it: it is the second line of the parent's pair, it holds at every order, and the truncation of the first line cannot touch it.
 
 **The velocity is the phase gradient and not the word's boost, and the polar chart is what shows the difference.** On a central field the boost has collapsed to $e_{t}$ and carries nothing, so $\vec v=\vec\nabla_\Phi S/m$ is the whole of the velocity. On a general field the parent's current reads the scale and the boost and the rotor contributes nothing, and the limit does not apply; the two statements are consistent because the central class is where the boost contributes nothing at all.
 
-**In one dimension it integrates.** $r^{2}\,dS/dx=\text{const}$, so
+**In one dimension it integrates.** $\varrho^{2}\,dS/dx=\text{const}$, so
 
 $$
-r(x)=\frac{C}{\sqrt{\lvert p(x)\rvert}},
+\varrho(x)=\frac{C}{\sqrt{\lvert p(x)\rvert}},
 \qquad
 p(x)=\sqrt{2m\left(E-V(x)\right)} .
 $$
@@ -146,24 +146,24 @@ The wave is large where the particle moves slowly and small where it moves fast,
 **In three dimensions it gives the van Vleck determinant.**
 
 $$
-\boxed{\ r\ \propto\ \left\lvert\det\left(\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i}\,\partial x_{f}}\right)_{i,f=1}^{3}\right\rvert^{1/2}\ }
+\boxed{\ \varrho\ \propto\ \left\lvert\det\left(\frac{\partial^{2}S_{\mathrm{cl}}}{\partial x_{i}\,\partial x_{f}}\right)_{i,f=1}^{3}\right\rvert^{1/2}\ }
 $$
 
-The determinant is the Jacobian of the map from initial to final position, so $r^{2}$ is the density of the ray congruence and the amplitude measures its focusing. Where the congruence crosses itself the determinant vanishes, the amplitude diverges, and the approximation has left its region.
+The determinant is the Jacobian of the map from initial to final position, so $\varrho^{2}$ is the density of the ray congruence and the amplitude measures its focusing. Where the congruence crosses itself the determinant vanishes, the amplitude diverges, and the approximation has left its region.
 
-**Why the scale may be taken real and positive.** The parent's word has $r>0$ by construction, as the square root of the quaternionic norm's modulus, so the choice is not a gauge imposed here: a complex amplitude would leave the word's domain, and the parent's word is a bijection onto the invertibles only with $r>0$.
+**Why the scale may be taken real and positive.** The parent's word has $\varrho>0$ by construction, as the square root of the quaternionic norm's modulus, so the choice is not a gauge imposed here: a complex amplitude would leave the word's domain, and the parent's word is a bijection onto the invertibles only with $\varrho>0$.
 
 ## Order Two: the Quantum Potential and the Size of the Error
 
 **The discarded term is the quantum potential.**
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi r}{r},
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 the parent's own expression, and it is the third term of the real line and the only term the limit deletes.
 
-**Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded.** With $r=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(k_{\Phi}\sigma)$,
+**Its ratio to the kinetic energy is $\epsilon^{2}$ but is not bounded.** With $\varrho=\exp(-x^{2}/4\sigma^{2})$ and $\epsilon=1/(k_{\Phi}\sigma)$,
 
 $$
 \frac{\lvert Q\rvert}{E-V}=\epsilon^{2}\left\lvert\frac{x^{2}}{4\sigma^{2}}-\frac{1}{2}\right\rvert .
@@ -201,7 +201,7 @@ and the difference is the interference term. **The limit is not a map on the sta
 
 **Three gains, and each comes from a factor of the word rather than from a step of the analysis.**
 
-*The amplitude is identified before the limit is taken.* In a form-first account the amplitude is whatever multiplies the exponential, and the density is whatever the continuity equation makes positive. Here both are read from the word: the amplitude is the scale $r$, and the density is the Hermitian norm, which is $2r^{2}$ exactly on the central class and not otherwise. **The identification is exact or it does not exist.**
+*The amplitude is identified before the limit is taken.* In a form-first account the amplitude is whatever multiplies the exponential, and the density is whatever the continuity equation makes positive. Here both are read from the word: the amplitude is the scale $\varrho$, and the density is the Hermitian norm, which is $2\varrho^{2}$ exactly on the central class and not otherwise. **The identification is exact or it does not exist.**
 
 *The frame is excluded for a stated reason.* The boost and the rotor carry no derivative of a fast object, so the parameter does not order them: they are absent on the central class and present off it, with no intermediate case. The limit is therefore not a truncation of four brackets to two; it is the statement that two of the four are exactly zero on the class where the pair closes. **That is stronger than an approximation and it is cheaper to check.**
 
@@ -213,7 +213,7 @@ and the difference is the interference term. **The limit is not a map on the sta
 
 ## Verification
 
-**The parent's pair was checked against the equation.** With $\tilde\Xi=r\exp(iS/\hbar)$, a real $r>0$, a real $S$ and a real potential $V$, the residual of $i\hbar\partial_{t'}\tilde\Xi+\frac{\hbar^{2}}{2m}\Delta_\Phi\tilde\Xi-V\tilde\Xi$ after division by the exponential is $-r$ times the parent's real line and $\frac{\hbar}{2mr}$ times its imaginary line, identically. Evaluated in thirty-digit arithmetic at three points of a random smooth field, the largest residual was $4\times10^{-17}$.
+**The parent's pair was checked against the equation.** With $\tilde\Xi=\varrho\exp(iS/\hbar)$, a real $\varrho>0$, a real $S$ and a real potential $V$, the residual of $i\hbar\partial_{t'}\tilde\Xi+\frac{\hbar^{2}}{2m}\Delta_\Phi\tilde\Xi-V\tilde\Xi$ after division by the exponential is $-\varrho$ times the parent's real line and $\frac{\hbar}{2m\varrho}$ times its imaginary line, identically. Evaluated in thirty-digit arithmetic at three points of a random smooth field, the largest residual was $4\times10^{-17}$.
 
 **The orders were checked by substitution.** Each of the three terms of the real line was replaced by its stated power of $\epsilon$ and the collection reproduced the three orders, with no term of intermediate order appearing: the real line has exactly three orders and the imaginary line has none.
 
@@ -223,13 +223,13 @@ and the difference is the interference term. **The limit is not a map on the sta
 
 ## Summary
 
-The field is the parent's polar word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(k_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.
+The field is the parent's polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and the parent prints the exact pair its central class obeys. The limit assigns one power of $\epsilon=1/(k_{\Phi}L)$ to each spatial derivative of the scale and none to a derivative of the phase, and orders the pair's two lines by that rule.
 
-The real line has three orders. Order zero is the Hamilton–Jacobi equation, read in the algebra as $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. Order two is the quantum potential $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$, the only term the limit deletes. Order one is present as the scale's gradient, and it is what the first correction keeps.
+The real line has three orders. Order zero is the Hamilton–Jacobi equation, read in the algebra as $\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$, whose characters are the classical trajectories. Order two is the quantum potential $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$, the only term the limit deletes. Order one is present as the scale's gradient, and it is what the first correction keeps.
 
-The imaginary line is the transport equation and it is not an expansion: $\partial_{t'}r^{2}+\vec\nabla_\Phi\cdot(r^{2}\vec\nabla_\Phi S/m)=0$ holds at every order and the limit cannot spoil it. It gives $r=C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three.
+The imaginary line is the transport equation and it is not an expansion: $\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot(\varrho^{2}\vec\nabla_\Phi S/m)=0$ holds at every order and the limit cannot spoil it. It gives $\varrho=C/\sqrt{\lvert p\rvert}$ in one dimension and the van Vleck determinant in three.
 
-Three statements are the polar chart's contribution and not the analysis's. The limit's amplitude is the word's scale. The limit's density is the Hermitian norm, equal to $2r^{2}$ exactly where the boost is the identity. And the frame's two brackets are excluded by an exact statement — they carry no derivative of a fast object — rather than by an estimate.
+Three statements are the polar chart's contribution and not the analysis's. The limit's amplitude is the word's scale. The limit's density is the Hermitian norm, equal to $2\varrho^{2}$ exactly where the boost is the identity. And the frame's two brackets are excluded by an exact statement — they carry no derivative of a fast object — rather than by an estimate.
 
 The cost is one restriction. The pair is closed on the central class, that class is invariant only under a central Hamiltonian, and the limit is therefore defined there. No mass shell appears, because the equation is first order in time and its symbol constrains no second time derivative.
 
@@ -240,18 +240,18 @@ The cost is one restriction. The pair is closed on the central class, that class
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$ | Centre; real-quaternion subspace |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
-| $r>0$ | The scale; the amplitude of the limit |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
+| $\varrho>0$ | The scale; the amplitude of the limit |
 | $\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$ | The central angle; the action |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor |
 | $\varepsilon e_{t}$ | The rotor on the central class |
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
-| $\rho=2r^{2}\cosh\theta_{\mathrm{rpd}}$ | Hermitian norm; the density |
+| $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Hermitian norm; the density |
 | $\vec\nabla_\Phi S$ | Phase gradient; real quaternion in $\mathbb{B}_{H}$ |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter of the limit |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$ | The phase's wave number |
-| $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ | Quantum potential; central real scalar |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; central real scalar |
 | $\Delta_\Phi$ | The Laplacian of the material sector |
 
 ## Further Reading

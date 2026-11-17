@@ -7,10 +7,10 @@
 **The word is the corpus's, and it is a bijection.** Write
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the boost's rapidity, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ the rotor's angle. The map is a bijection onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral, as its free counterpart claims none. It reads one kernel in other coordinates.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the boost's rapidity, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ the rotor's angle. The map is a bijection onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral, as its free counterpart claims none. It reads one kernel in other coordinates.
 
 **Two objects are read, and the coupling acts on them differently.** A single history carries a central weight and a spin factor. The connection adds to the first and cannot enter the second except through the curvature. The kernel carries all four factors, and the connection acts on one of them in position space and on a different one in momentum space. The whole article is the working out of that sentence.
 
@@ -27,7 +27,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho=r^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\Rho=re^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
 
 **The coupled pair and its covariant wavevector.**
 
@@ -82,7 +82,7 @@ $$
 for every field-free potential, component by component and exactly. A central phase multiplies an element without touching its non-central part, so the word transforms as
 
 $$
-r\longmapsto r,\qquad
+\varrho\longmapsto \varrho,\qquad
 \tilde U_{\Psi,\mathrm b}\longmapsto\tilde U_{\Psi,\mathrm b},\qquad
 \tilde u_{\mathrm r}\longmapsto\pm\tilde u_{\mathrm r},\qquad
 \theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi\cdot\Delta\tilde R_\Phi .
@@ -103,7 +103,7 @@ $$
 
 Each row is exact to the printed places. **A large constant potential flips the sign of the kernel's rotor**, and the flip is a property of the chart: the same kernel read on a word whose angle range were $(-\pi,\pi]$ would carry no flip. The branch is a coordinate convention, and a coordinate convention cannot be observable.
 
-**What is gauge invariant, stated in the word.** The gauge transformation moves the angle by $ϙ\Gamma/\hbar$ and the potential by $-\tilde\nabla_\Phi\Gamma$, and it leaves the scale, the boost and the rotor at fixed gauge. So the triple $(r,\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r})$, read up to the rotor's sign, is gauge invariant, and the angle is not. The covariant wavevector is invariant, as the polar coupled article shows, and the curvature is the invariant derived from it. **The chart's gauge-dependent object is exactly one parameter of one factor**, and that is the sharpest statement the polar form makes about gauge invariance.
+**What is gauge invariant, stated in the word.** The gauge transformation moves the angle by $ϙ\Gamma/\hbar$ and the potential by $-\tilde\nabla_\Phi\Gamma$, and it leaves the scale, the boost and the rotor at fixed gauge. So the triple $(\varrho,\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r})$, read up to the rotor's sign, is gauge invariant, and the angle is not. The covariant wavevector is invariant, as the polar coupled article shows, and the curvature is the invariant derived from it. **The chart's gauge-dependent object is exactly one parameter of one factor**, and that is the sharpest statement the polar form makes about gauge invariance.
 
 **Why the sign is not a counterexample to the invariance.** A transformation with a large $\Gamma$ flips the rotor's sign and leaves everything else. That looks like the gauge transformation reaching the spin frame, and it does not: the flip is the branch's, it is undone by the same transformation read backwards, and no gauge-invariant quantity distinguishes $+\tilde u_{\mathrm r}$ from $-\tilde u_{\mathrm r}$ because both give the same spin direction $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. **The rotor is a double cover of the frame, and the branch cut is where the cover's sheet changes**, so a gauge transformation can move a kernel from one sheet to the other without moving the frame.
 
@@ -208,7 +208,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; a bijection onto the $N$-regular elements |
+| $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; a bijection onto the $N$-regular elements |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the only parameter a coupling can move |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor $\tilde u_{\mathrm r}$ |

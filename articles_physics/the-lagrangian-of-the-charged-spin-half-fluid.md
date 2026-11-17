@@ -28,7 +28,7 @@ and the first term is central imaginary while the second is Hermitian with a rea
 
 | bracket | type | what the free bracket reads | what the connection adds |
 | --- | --- | --- | --- |
-| scale | real scalar | $\partial_\mu\ln r$ | $0$ |
+| scale | real scalar | $\partial_\mu\ln \varrho$ | $0$ |
 | phase | central imaginary | $\partial_\mu\theta_{\mathrm{pha}}$ | $-ϙ a'_t/\hbar$ in the time slot |
 | boost | Hermitian | the rapidity's connection | $ϙ\vec A/\hbar$ in the spatial slots |
 | rotor | real vector | $\vec\omega_{\mathrm r}$'s connection | $0$ |
@@ -62,7 +62,7 @@ $$
 | $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\rho_{\mathrm{chg}}$ | no |
 | $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
 | $p_{\theta_{\mathrm{rpd}}}$ | $0$ | no |
-| $p_{u_{\mathrm b}}$, $p_{r}$ | $0$ | no |
+| $p_{u_{\mathrm b}}$, $p_{\varrho}$ | $0$ | no |
 
 **The invariance of the table is "no torque" stated canonically.** A torque is a change in the spin's momentum; the spin's momentum is a closed form in the rotor and the boost, and the connection is in neither, so the form is unchanged. The force is a change in the velocity's momentum, and the velocity is not canonical here at all: its momentum is zero before and after. **The asymmetry is exact: the coupling moves the one quantity that has no momentum and leaves alone the two that have.**
 
@@ -132,16 +132,16 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word, four factors |
 | $ϙ$ | Coupling; minus the electric charge |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; Hermitian, hence central-imaginary in time and Hermitian in space |
 | $\lambda=\exp(iϙ\Gamma/\hbar)$ | The gauge element; central, hence commuting with the frame |
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The velocity; an invertible element's square, norm $-c^{2}$ for every field |
-| $\rho_{\mathrm{num}}=r^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
+| $\rho_{\mathrm{num}}=\varrho^{2}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Proper and charge densities |
 | $\beta=\tanh\theta_{\mathrm{rpd}}$ | The spin's canonical weight |
 | $\mathcal R_{\mathrm{pha}}$, $\mathcal R_{\mathrm{rpd}}$ | The two covariant rates |
 | $\vec p_{\mathrm{spin}}=-\hbar c\rho_{\mathrm{chg}}\beta\vec n_{\mathrm{rot}}$ | The spin's momentum; unchanged by the coupling |
-| $p_{r}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$ | The four vanishing momenta |
+| $p_{\varrho}=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$ | The four vanishing momenta |
 | $\omega_{\mu\nu}$ | The vorticity; the frame's, not $ϙ F/m$ |
 | $\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}$ | The kinetic Lagrangian density with the connection |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

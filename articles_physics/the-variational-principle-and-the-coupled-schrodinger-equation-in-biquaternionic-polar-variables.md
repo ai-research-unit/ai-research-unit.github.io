@@ -5,16 +5,16 @@
 *The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables* computes the free polar Lagrangian exactly,
 
 $$
-L=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
--r^{2}V,
+L=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+-\varrho^{2}V,
 \qquad
 V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b}),
 $$
 
 with $\vec\Omega$ the rotor's angular velocity, $\partial_{t'}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{-1}=\frac12\vec\Omega$. It shows that four of the eight momenta vanish identically, that the Euler–Lagrange equations are exactly the eight components of the field equation in the parameter basis, and that their solutions are the parent's flow.
 
-This article puts the electromagnetic connection into that Lagrangian and asks what the chart does with it. The answer has one sentence — **the connection enters the potential and not the kinetic term, in the constant setting** — and that sentence has consequences worth four sections: the phase coefficient $-\hbar r^{2}\cosh\theta_{\mathrm{rpd}}$ is untouched, so the momenta and the constraint structure are untouched; the potential $V$ becomes the shifted potential $V_{\mathrm{gco}}$; the flow is the free flow read with the kinetic eigenvalues; and the chart acquires a gauge direction which the free chart does not have.
+This article puts the electromagnetic connection into that Lagrangian and asks what the chart does with it. The answer has one sentence — **the connection enters the potential and not the kinetic term, in the constant setting** — and that sentence has consequences worth four sections: the phase coefficient $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is untouched, so the momenta and the constraint structure are untouched; the potential $V$ becomes the shifted potential $V_{\mathrm{gco}}$; the flow is the free flow read with the kinetic eigenvalues; and the chart acquires a gauge direction which the free chart does not have.
 
 **Three findings.**
 
@@ -24,7 +24,7 @@ $$
 V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,\big((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\big),
 $$
 
-and every other term of the Lagrangian is the free one, letter for letter. The four vanishing momenta stay vanishing, the cross term $\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}(\vec\Omega\cdot\vec u_{\mathrm b})$ stays, and the phase momentum stays $-\hbar r^{2}\cosh\theta_{\mathrm{rpd}}$ (§*The Coupled Polar Lagrangian*, §*The Euler–Lagrange Equations*).
+and every other term of the Lagrangian is the free one, letter for letter. The four vanishing momenta stay vanishing, the cross term $\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}(\vec\Omega\cdot\vec u_{\mathrm b})$ stays, and the phase momentum stays $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ (§*The Coupled Polar Lagrangian*, §*The Euler–Lagrange Equations*).
 
 *Second, the shift is the whole of minimal coupling in a setting with no derivatives, and it is a shift of two numbers.* The unshifted pair $(h_t,\vec h_\Psi)$ is the canonical pair; the shifted one is the kinetic pair; the flow's two rates are built from the shifted one. So the coupled flow is the free flow with $h_t\to h_t-ϙ\varphi$ and $\vec h_\Psi\to\vec h_\Psi-q\vec A$, and no structural statement changes (§*The Euler–Lagrange Equations*).
 
@@ -49,12 +49,12 @@ and in the constant setting the spatial terms are absent: $\tilde H_\Psi$ is an 
 **Why the kinetic term cannot change.** The kinetic term is built from the field's velocities and from the field's algebraic type. The connection contributes (i) no velocity, since it is constant, and (ii) a central number in every slot, since its coefficients are scalars. A central number added to a bracket cannot create a Hermitian part or a real vector, so it cannot enter the cross term, which needs one of each; and it cannot change $\tilde U^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, which is built from the field alone. The kinetic term of the coupled Lagrangian is therefore the free one,
 
 $$
-K=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b}),
+K=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b}),
 $$
 
 with no subscript and no correction. This is the article's first finding and the reason the rest of the article is short.
 
-**The potential.** The potential term of the action is $+ϙ\varphi\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the free article's computation of $\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)=r^{2}V$ goes through with $\tilde H_\Psi\to\tilde H^{\mathrm{gco}}_\Psi$, because the shift is by a central number and the central phase cancels between the two factors as before. Hence
+**The potential.** The potential term of the action is $+ϙ\varphi\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the free article's computation of $\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)=\varrho^{2}V$ goes through with $\tilde H_\Psi\to\tilde H^{\mathrm{gco}}_\Psi$, because the shift is by a central number and the central phase cancels between the two factors as before. Hence
 
 $$
 V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,\big((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\big),
@@ -63,9 +63,9 @@ $$
 and the coupled Lagrangian is
 
 $$
-\boxed{\;L=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
--r^{2}V_{\mathrm{gco}}.\;}
+\boxed{\;L=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+-\varrho^{2}V_{\mathrm{gco}}.\;}
 $$
 
 **What the shifted potential contains.** The first term is the shifted energy times the boost's weight; the second is the shifted momentum contracted with the boost axis. So a constant potential changes the weight of $\cosh\theta_{\mathrm{rpd}}$, a constant vector potential changes the weight of $\sinh\theta_{\mathrm{rpd}}$, and neither changes the coefficient of $\dot\theta_{\mathrm{pha}}$. The $\vec A$-dependence is the term that the free Lagrangian had with $\vec h_\Psi$ alone, and it is the polar form of the statement that the vector potential is a momentum shift.
@@ -73,9 +73,9 @@ $$
 **The action, written out.**
 
 $$
-S=\int dt'\Big[-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
--r^{2}\Big((h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\Big)\Big].
+S=\int dt'\Big[-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+-\varrho^{2}\Big((h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\Big)\Big].
 $$
 
 It is a functional of the eight parameters and of the two connection numbers, it is first order in the parameters' velocities, and its only dependence on the connection is through $V_{\mathrm{gco}}$.
@@ -85,13 +85,13 @@ It is a functional of the eight parameters and of the two connection numbers, it
 **The momenta are the free ones.** Differentiating with respect to the velocities and using $\partial(\vec\Omega\cdot\vec u_{\mathrm b})/\partial\dot\theta_{\mathrm{rpd}}=0$ (the angular velocity is the rotor's own, not the boost's):
 
 $$
-p_{r}=0,
+p_{\varrho}=0,
 \qquad
 p_{\theta_{\mathrm{rpd}}}=0,
 \qquad
 p_{\vec u_{\mathrm b}}=0,
 \qquad
-p_{\theta_{\mathrm{pha}}}=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}} .
+p_{\theta_{\mathrm{pha}}}=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
 
 Four vanishing momenta and one nonzero, exactly as in the free article, and for the same reason: the Lagrangian is first order, so the velocities other than $\dot\theta_{\mathrm{pha}}$ enter only through $\vec\Omega$, which is not conjugated to any of them. **The coupling does not change the constraint structure**, and the reason is stated in §*The Coupled Polar Lagrangian*: it contributes no velocity, so it cannot create a momentum.
@@ -99,7 +99,7 @@ Four vanishing momenta and one nonzero, exactly as in the free article, and for 
 **The equations.** The Euler–Lagrange equations are the free ones with $V\to V_{\mathrm{gco}}$:
 
 $$
-\frac{d}{dt'}\big(r^{2}\cosh\theta_{\mathrm{rpd}}\big)=0,
+\frac{d}{dt'}\big(\varrho^{2}\cosh\theta_{\mathrm{rpd}}\big)=0,
 $$
 
 $$
@@ -126,12 +126,12 @@ which are the free flow's rates with the shifted numbers.
 
 ## The Central Field in the Operator Setting
 
-**The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar r^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t r^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
+**The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t \varrho^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
 
 $$
-S=\int dt'\,d^{3}x\Big[-\hbar\,r^{2}\,\dot\theta_{\mathrm{pha}}
--\frac{\hbar^{2}}{2m}\Big(|\nabla r|^{2}+r^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
--r^{2}V_{\mathrm{op}}+ϙ\varphi\,r^{2}\Big],
+S=\int dt'\,d^{3}x\Big[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}
+-\frac{\hbar^{2}}{2m}\Big(|\nabla \varrho|^{2}+\varrho^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
+-\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Big],
 $$
 
 which is the free article's Madelung action with the two covariant replacements: the phase gradient becomes the kinetic momentum over $\hbar$, and the potential energy is added. Both replacements are the same rule as everywhere else, and neither is optional.
@@ -139,30 +139,30 @@ which is the free article's Madelung action with the two covariant replacements:
 **The three coupling pieces.** Expanding the middle term separates the coupling into three parts,
 
 $$
--\frac{\hbar^{2}}{2m}r^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
-=-\frac{\hbar^{2}}{2m}r^{2}|\nabla\theta_{\mathrm{pha}}|^{2}
--\frac{\hbar ϙ}{m}r^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
--\frac{ϙ^{2}}{2m}r^{2}A^{2},
+-\frac{\hbar^{2}}{2m}\varrho^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
+=-\frac{\hbar^{2}}{2m}\varrho^{2}|\nabla\theta_{\mathrm{pha}}|^{2}
+-\frac{\hbar ϙ}{m}\varrho^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
+-\frac{ϙ^{2}}{2m}\varrho^{2}A^{2},
 $$
 
 which are the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$. The three are one object read at three orders, and the sign of the third is what makes the energy bounded below: the quadratic term is positive for every $\vec A$, so the coupled action's kinetic part is bounded below by zero, and the diamagnetism is a variational statement before it is a physical one.
 
-**The equations.** Varying $\theta_{\mathrm{pha}}$ gives the covariant continuity equation, varying $r$ the covariant Hamilton–Jacobi equation with the quantum potential, and varying the sign gives nothing because the sign is a branch. The two are the polar companion's pair,
+**The equations.** Varying $\theta_{\mathrm{pha}}$ gives the covariant continuity equation, varying $\varrho$ the covariant Hamilton–Jacobi equation with the quantum potential, and varying the sign gives nothing because the sign is a branch. The two are the polar companion's pair,
 
 $$
-\partial_{t'}r^{2}+\nabla\cdot\Big(r^{2}\,\frac{\nabla S-q\vec A}{m}\Big)=0,
+\partial_{t'}\varrho^{2}+\nabla\cdot\Big(\varrho^{2}\,\frac{\nabla S-q\vec A}{m}\Big)=0,
 \qquad
 \partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 $$
 
-with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta r/2mr$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
+with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta \varrho/2m\varrho$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
 
 **The current as the action's derivative.** The vector potential's conjugate is the current:
 
 $$
 -\frac{\partial L}{\partial\vec A}
-=\frac{\hbar^{2}}{2m}r^{2}\cdot 2\Big(\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
-=ϙ\,\frac{r^{2}\big(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{m}
+=\frac{\hbar^{2}}{2m}\varrho^{2}\cdot 2\Big(\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
+=ϙ\,\frac{\varrho^{2}\big(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{m}
 =ϙ\,\vec j,
 $$
 
@@ -170,14 +170,14 @@ which is the element-form companion's identity in the chart and is one line here
 
 **The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\nabla S$ and $\vec\pi$.
 
-**What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $r$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
+**What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
 
 ## The Gauge Direction of the Chart
 
 **The action of the gauge group on the parameters.** Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$,
 
 $$
-r\longmapsto r,
+\varrho\longmapsto \varrho,
 \qquad
 \theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Gamma,
 \qquad
@@ -192,11 +192,11 @@ $$
 
 because the factor is central and commutes with every invertible element. Seven parameters are inert and one is translated by a function.
 
-**The Lagrangian's response.** The kinetic term gains $-ϙ\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\varphi$'s coefficient are the same function of the rapidity.
+**The Lagrangian's response.** The kinetic term gains $-ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\varphi$'s coefficient are the same function of the rapidity.
 
 **What happens when the connection is held fixed.** With $\varphi$ fixed, the two gains do not cancel and the action changes by a boundary term for a time-dependent $\Gamma$. So the local transformation is not a symmetry of the fixed-background action; only its constant part is. The distinction is worth stating because it is exactly the distinction between the global symmetry that gives the charge and the local one that gives the redundancy: **the gauge direction of the chart is a direction of the coupled system's action and not of the field's action in a fixed background.**
 
-**The momentum along the gauge direction.** $p_{\theta_{\mathrm{pha}}}=-\hbar r^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is gauge invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the gauge direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
+**The momentum along the gauge direction.** $p_{\theta_{\mathrm{pha}}}=-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is gauge invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the gauge direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
 
 **What the chart's degeneracy means for the equations.** The eight parameter equations are the eight components of the field equation, and the gauge direction is not one of them: the field equation is invariant, so a family of parameters related by the gauge direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the gauge direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
 
@@ -223,21 +223,21 @@ because the factor is central and commutes with every invertible element. Seven 
 The coupled polar Lagrangian is the free one with the potential shifted,
 
 $$
-L=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
-+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
--r^{2}V_{\mathrm{gco}},
+L=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}
++\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})
+-\varrho^{2}V_{\mathrm{gco}},
 $$
 
 $$
 V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,\big((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\big).
 $$
 
-The kinetic term is untouched, because the connection is central and carries no velocity. The four momenta $p_r$, $p_{\theta_{\mathrm{rpd}}}$, $p_{\vec u_{\mathrm b}}$ vanish identically and $p_{\theta_{\mathrm{pha}}}=-\hbar r^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$; the constraint structure is the free one's. The Euler–Lagrange equations are the free ones with $V\to V_{\mathrm{gco}}$, and their solution is the free flow with $\dot\theta_{\mathrm{pha}}=-(h_t-ϙ\varphi)/\hbar$ and $\vec\Omega=2(\vec h_\Psi-q\vec A)/\hbar$: the coupling shifts the canonical pair to the kinetic pair and changes nothing else.
+The kinetic term is untouched, because the connection is central and carries no velocity. The four momenta $p_r$, $p_{\theta_{\mathrm{rpd}}}$, $p_{\vec u_{\mathrm b}}$ vanish identically and $p_{\theta_{\mathrm{pha}}}=-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$; the constraint structure is the free one's. The Euler–Lagrange equations are the free ones with $V\to V_{\mathrm{gco}}$, and their solution is the free flow with $\dot\theta_{\mathrm{pha}}=-(h_t-ϙ\varphi)/\hbar$ and $\vec\Omega=2(\vec h_\Psi-q\vec A)/\hbar$: the coupling shifts the canonical pair to the kinetic pair and changes nothing else.
 
 In the operator setting, for the central field, the action is the Madelung action with the kinetic momentum and the potential energy,
 
 $$
-S=\int dt'\,d^{3}x\Big[-\hbar r^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Big(|\nabla r|^{2}+r^{2}\big|\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\big|^{2}\Big)-r^{2}V_{\mathrm{op}}+ϙ\varphi r^{2}\Big],
+S=\int dt'\,d^{3}x\Big[-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Big(|\nabla \varrho|^{2}+\varrho^{2}\big|\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\big|^{2}\Big)-\varrho^{2}V_{\mathrm{op}}+ϙ\varphi \varrho^{2}\Big],
 $$
 
 its equations are the covariant Madelung pair, and its $\vec A$-derivative is the charge current, $-\partial L/\partial\vec A=ϙ\vec j$. The three coupling pieces are the free kinetic term, the paramagnetic term and the positive diamagnetic term.
@@ -248,9 +248,9 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,b}u_r$ | The word of the field |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,b}u_r$ | The word of the field |
 | $\tilde U_{\Psi,b}=\exp(i\theta_{\mathrm{rpd}}\vec u_b)$ | The Hermitian boost; $\vec u_b$ its axis |
-| $\theta_{\mathrm{pha}}$, $r$ | The phase and the scale |
+| $\theta_{\mathrm{pha}}$, $\varrho$ | The phase and the scale |
 | $\theta_{\mathrm{rpd}}$, $\vec u_b$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}$, $\vec u_r$ | Angle and axis of the rotor |
 | $\vec\Omega$ | The rotor's angular velocity, $\partial_{t'}\tilde u_r\tilde u_r^{-1}=\frac12\vec\Omega$ |
@@ -261,9 +261,9 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 | $V_{\mathrm{gco}}$ | The coupled polar potential |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |
 | $\varphi=c\,a'_t$, $\vec A$ | The electric and vector potentials |
-| $N=r^{2}\cosh\theta_{\mathrm{rpd}}$ | The charge; $p_{\theta_{\mathrm{pha}}}=-\hbar N$ |
+| $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The charge; $p_{\theta_{\mathrm{pha}}}=-\hbar N$ |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action of the flow |
-| $Q=-\hbar^{2}\Delta r/2mr$ | The quantum potential |
+| $Q=-\hbar^{2}\Delta \varrho/2m\varrho$ | The quantum potential |
 | $L$ | The Lagrangian; $K$ its kinetic term |
 | $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |
 

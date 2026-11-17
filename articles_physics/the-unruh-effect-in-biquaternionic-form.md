@@ -313,9 +313,9 @@ in agreement with the imaginary-time route. The two computations are independent
 The boost is invertible for every finite rapidity, so its polar word has scale one and no phase:
 
 $$
-\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-r=1,\quad \theta_{\mathrm{pha}}=0,\quad \tilde u_{\mathrm r}=e_t,
+\varrho=1,\quad \theta_{\mathrm{pha}}=0,\quad \tilde u_{\mathrm r}=e_t,
 $$
 
 with the boost factor equal to the element itself. The rapidity is twice the Hamilton angle of that factor, and the complete polar decomposition has no other content. The horizon is not a value of this word; it is the boundary of the chart in which the word is written.
@@ -333,7 +333,7 @@ e^{-\theta_{\mathrm{rpd}}/2}\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})\l
 \qquad \theta_{\mathrm{rpd}}\to\infty,
 $$
 
-with the error $e^{-\theta_{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $r=e^{-\theta_{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
+with the error $e^{-\theta_{\mathrm{rpd}}}/2$ on each coefficient. The limit is a Hermitian idempotent and therefore a null element, $\langle\tilde\Pi_+\rangle_{\natural}=0$. This is the boundary value computed in *The Massless Limit as a Boundary Value of the Polar Word*, §*The Limit at Infinite Rapidity*: the scale $\varrho=e^{-\theta_{\mathrm{rpd}}/2}$ collapses, the rapidity diverges, and the direction $e_t+i\vec e_x$ survives.
 
 **The rate.** The rapidity is not a free parameter along the orbit; it is the Rindler time. On the orbit $\rho=\text{const}$ the proper time is $\tau=\rho\eta/c$, and a boost by $\theta_{\mathrm{rpd}}$ advances $\eta$ by $\theta_{\mathrm{rpd}}$, so
 

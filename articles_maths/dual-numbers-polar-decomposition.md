@@ -31,7 +31,7 @@ of real dimension two. A polar decomposition writes every element of a group as 
 
 | Factor | Dimension | Range | Role |
 |---|---|---|---|
-| Scale | $1$ | $r > 0$ | modulus $|q|$ |
+| Scale | $1$ | $\varrho > 0$ | modulus $|q|$ |
 | Sign | $0$ | $\{\pm 1\}$ | the order-two component of $\mathbb{R}^\times$ |
 | Shear | $1$ | $s \in \mathbb{R}$ | parabolic angle $s = q'/q$ |
 
@@ -49,7 +49,7 @@ Because $\mathbb{C}_{\mathrm{dln},R}$ is commutative, every element is central, 
 
 ### The Word as Exponentials
 
-The word $Q = r\,u\,\exp(s\varepsilon)$ is a product of a scale, a sign and a shear, and the scale and the shear are exponentials:
+The word $Q = \varrho\,u\,\exp(s\varepsilon)$ is a product of a scale, a sign and a shear, and the scale and the shear are exponentials:
 
 $$
 Q = \exp(\ln\lvert q\rvert)\cdot u\cdot\exp(s\varepsilon) , \qquad u = \pm 1 , \qquad s = \frac{q'}{q} .
@@ -57,7 +57,7 @@ $$
 
 | # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
 |---|---|---|---|---|---|---|---|---|
-| 1 | $r$ | scale | $1$ | $\exp(\ln\lvert q\rvert)$ | hyperbolic | $\lvert q\rvert$ | $\lvert q\rvert > 0$ | — |
+| 1 | $\varrho$ | scale | $1$ | $\exp(\ln\lvert q\rvert)$ | hyperbolic | $\lvert q\rvert$ | $\lvert q\rvert > 0$ | — |
 | 2 | $u$ | sign | $0$ | — | discrete | $\pm1$ | $u = \pm1$ | — |
 | 3 | $\exp(s\varepsilon)$ | shear | $1$ | $\exp(s\varepsilon)$ | parabolic | $1 + s\varepsilon$ | $s = q'/q \in \mathbb{R}$ | $\varepsilon$ |
 
@@ -74,7 +74,7 @@ The norm is $\langle Q\rangle = Q\bar Q = q^2$, multiplicative and degenerate, w
 **Definition.** The **modulus** of $Q = q + \varepsilon q'$ over $\mathbb{R}$ is
 
 $$
-r(Q) = \sqrt{|\langle Q\rangle|} = \sqrt{q^2} = |q|.
+\varrho(Q) = \sqrt{|\langle Q\rangle|} = \sqrt{q^2} = |q|.
 $$
 
 The modulus takes values in $\mathbb{R}_{\ge 0}$ and is the continuous multiplicative function on the invertibles that equals $|\lambda|$ on the real scalars and is invariant under the shear group, by the theorem of *Dual-Numbers Norm and Invertibility*; those two requirements characterise it, and without the shear-invariance it is one of a one-parameter family. It is a genuine positive scale on the invertibles and vanishes on the maximal ideal.
@@ -125,39 +125,39 @@ The angle is the parameter of the shear factor: $Q = q\,\exp((q'/q)\varepsilon)$
 
 $$
 \boxed{\;
-Q = r\,u\,\exp(s\varepsilon), \qquad r > 0, \quad u \in \{\pm 1\}, \quad s \in R
+Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho > 0, \quad u \in \{\pm 1\}, \quad s \in R
 \;},
 $$
 
-with $r = |q|$, $u = \operatorname{sgn}(q)$ and $s = q^{-1}q'$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $q \neq 0$.
+with $\varrho = |q|$, $u = \operatorname{sgn}(q)$ and $s = q^{-1}q'$. Over an ordered field, in particular over $R = \mathbb{R}$, the hypothesis is simply $q \neq 0$.
 
 ### Existence
 
-Since $q$ is invertible, one has $q = r\,u$ with $r = |q| > 0$ and $u = \operatorname{sgn}(q)$, a nonzero element of an ordered ring being positive or negative, and then
+Since $q$ is invertible, one has $q = \varrho\,u$ with $\varrho = |q| > 0$ and $u = \operatorname{sgn}(q)$, a nonzero element of an ordered ring being positive or negative, and then
 
 $$
-Q = q\Bigl(1 + q^{-1}\varepsilon q'\Bigr) = r\,u\,\exp\bigl(q^{-1}\varepsilon q'\bigr),
+Q = q\Bigl(1 + q^{-1}\varepsilon q'\Bigr) = \varrho\,u\,\exp\bigl(q^{-1}\varepsilon q'\bigr),
 $$
 
 using $\exp(s\varepsilon) = 1 + s\varepsilon$. So the polar data exist for every invertible element.
 
 ### Uniqueness
 
-Suppose $r\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $r, r' > 0$ and $u, u' \in \{\pm 1\}$. Comparing real parts gives $ru = r'u'$, hence $r = r'$ and $u = u'$ by positivity and the sign; comparing infinitesimal parts gives $rus = r'u's'$, hence $s = s'$. So the data are unique.
+Suppose $\varrho\,u\,\exp(s\varepsilon) = r'\,u'\,\exp(s'\varepsilon)$ with $\varrho, r' > 0$ and $u, u' \in \{\pm 1\}$. Comparing real parts gives $ru = r'u'$, hence $\varrho = r'$ and $u = u'$ by positivity and the sign; comparing infinitesimal parts gives $rus = r'u's'$, hence $s = s'$. So the data are unique.
 
 ### The Domain and the Boundary
 
-The domain of the polar decomposition is the set of invertibles, $\mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(r, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
+The domain of the polar decomposition is the set of invertibles, $\mathbb{C}_{\mathrm{dln}} \setminus \mathrm{M}$, an open dense subset with two connected components, distinguished by the sign $u$. Its boundary is the maximal ideal $\mathrm{M}$, on which the representation fails. The polar data are the two coordinates $(\varrho, s)$ on each component together with the discrete sign: a cylinder-like pair of half-planes, the exact degeneration of the disc-like parametrisation of the complex case.
 
 ## The Algorithm
 
 Given an invertible element $Q = q + \varepsilon q'$ with $q \in R^\times$ (over a field, $q \neq 0$), the polar data are computed as follows.
 
 1. **Real part.** Read $q = \operatorname{Re} Q$.
-2. **Modulus.** Set $r = |q|$.
+2. **Modulus.** Set $\varrho = |q|$.
 3. **Sign.** Set $u = \operatorname{sgn}(q)$, so that $q = ru$.
 4. **Angle.** Set $s = q^{-1}q'$.
-5. **Reassembly.** Output $Q = r\,u\,(1 + s\varepsilon)$.
+5. **Reassembly.** Output $Q = \varrho\,u\,(1 + s\varepsilon)$.
 
 The algorithm is exact in rational arithmetic when $q$ and $q'$ are rational; no transcendental quantity is produced, because the exponential is polynomial.
 
@@ -166,7 +166,7 @@ The algorithm is exact in rational arithmetic when $q$ and $q'$ are rational; no
 Take $Q = 2 + 3\varepsilon$.
 
 1. $q = 2$.
-2. $r = |2| = 2$.
+2. $\varrho = |2| = 2$.
 3. $u = \operatorname{sgn}(2) = 1$.
 4. $s = 3/2$.
 5. $Q = 2\cdot 1\cdot(1 + \tfrac{3}{2}\varepsilon) = 2 + 3\varepsilon$.
@@ -174,7 +174,7 @@ Take $Q = 2 + 3\varepsilon$.
 Take $Q = -4 + \varepsilon$.
 
 1. $q = -4$.
-2. $r = 4$.
+2. $\varrho = 4$.
 3. $u = \operatorname{sgn}(-4) = -1$.
 4. $s = 1/(-4) = -\tfrac{1}{4}$.
 5. $Q = 4\cdot(-1)\cdot(1 - \tfrac{1}{4}\varepsilon) = -4 + \varepsilon$.
@@ -185,7 +185,7 @@ Take $Q = 3\varepsilon$. Then $q = 0$, no modulus is defined, and the polar deco
 
 | Factor | Symbol | Range | Meaning |
 |---|---|---|---|
-| Scale | $r = |q|$ | $\mathbb{R}_{>0}$ | the unique real modulus |
+| Scale | $\varrho = |q|$ | $\mathbb{R}_{>0}$ | the unique real modulus |
 | Sign | $u = \operatorname{sgn}(q)$ | $\{\pm 1\}$ | the component of the group of invertibles |
 | Shear | $\exp(s\varepsilon)$ | $1 + \mathrm{M}$ | the nilpotent central factor |
 | Parabolic angle | $s = q'/q$ | $\mathbb{R}$ | the additive shear parameter |
@@ -194,7 +194,7 @@ The scale and the sign give the real factor $q = ru$; the shear gives the nilpot
 
 ### The Scale
 
-The scale $r = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
+The scale $\varrho = |q|$ is the continuous multiplicative real size on the units normalised by $|\lambda|$ on the scalars and invariant under the shear; it is the degeneration of the complex modulus $\sqrt{a^2 + a'^2}$ and of the split-complex modulus $\sqrt{|a^2 - a'^2|}$. In the dual case the modulus loses its dependence on the second coordinate entirely, which is the analytic face of the degeneracy of the norm.
 
 ### The Central Factor
 
@@ -204,19 +204,19 @@ The factor $\exp(s\varepsilon)$ is central because the algebra is commutative, a
 
 ### The Nilpotent Elements
 
-For $Q = \varepsilon q'$ with $q' \neq 0$ the real part vanishes, $r = 0$, and no polar data exist; the polar decomposition degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
+For $Q = \varepsilon q'$ with $q' \neq 0$ the real part vanishes, $\varrho = 0$, and no polar data exist; the polar decomposition degenerates on the entirety of the punctured maximal ideal. This is the boundary of the domain.
 
 ### The Real Elements
 
-For $Q = q$ real, $q \neq 0$, the angle is $s = 0$ and $Q = r\,u\,\exp(0) = ru$; the polar form reduces to the modulus and the sign.
+For $Q = q$ real, $q \neq 0$, the angle is $s = 0$ and $Q = \varrho\,u\,\exp(0) = ru$; the polar form reduces to the modulus and the sign.
 
 ### The Pure Shears
 
-For $Q = 1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = 1$, so $Q = \exp(s\varepsilon)$; the pure shears are exactly the norm-one elements of positive real part.
+For $Q = 1 + s\varepsilon$ the modulus is $\varrho = 1$ and the sign is $u = 1$, so $Q = \exp(s\varepsilon)$; the pure shears are exactly the norm-one elements of positive real part.
 
 ### The Negative Real Axis
 
-For $Q = -1 + s\varepsilon$ the modulus is $r = 1$ and the sign is $u = -1$; the element lies in the other component of the group of invertibles, and there is no continuous way to pass between the components, since the shear parameter does not distinguish them.
+For $Q = -1 + s\varepsilon$ the modulus is $\varrho = 1$ and the sign is $u = -1$; the element lies in the other component of the group of invertibles, and there is no continuous way to pass between the components, since the shear parameter does not distinguish them.
 
 ## Relation to the Two Partial Forms
 
@@ -247,10 +247,10 @@ The dual row is the missing link between the two two-dimensional cases: it is th
 The polar decomposition of the dual-number algebra is
 
 $$
-Q = r\,u\,\exp(s\varepsilon), \qquad r = |q| > 0, \quad u = \operatorname{sgn}(q) \in \{\pm 1\}, \quad s = \frac{q'}{q},
+Q = \varrho\,u\,\exp(s\varepsilon), \qquad \varrho = |q| > 0, \quad u = \operatorname{sgn}(q) \in \{\pm 1\}, \quad s = \frac{q'}{q},
 $$
 
-for every dual number $Q = q + \varepsilon q'$ with $q \neq 0$. It has a single positive scale $r = |q|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $\exp(s\varepsilon) = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = q'/q$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of invertibles and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last case of the exponential rule — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.
+for every dual number $Q = q + \varepsilon q'$ with $q \neq 0$. It has a single positive scale $\varrho = |q|$, the continuous multiplicative real size on the units normalised on the scalars and invariant under the shear; a discrete sign $u$; and a single **nilpotent central factor** $\exp(s\varepsilon) = 1 + s\varepsilon$ whose parameter is the **parabolic angle** $s = q'/q$, additive, globally defined and without period. Because the algebra is commutative the factor is central, and because the generator is nilpotent the exponential is polynomial and the factor is a shear rather than a rotation. The representation exists and is unique for every element with invertible real part; its domain is the set of invertibles and its boundary is the maximal ideal $\mathrm{M}$, where the modulus tends to zero and the representation degenerates. The dual case is the third and last case of the exponential rule — elliptic, hyperbolic, parabolic — and the missing link of the polar series: it is the two-dimensional row with a degenerate norm and no compact phase, the common degeneration of the complex and split-complex polar forms, and the transitional two-dimensional member of the series.
 
 ## Summary of Notation
 
@@ -263,7 +263,7 @@ for every dual number $Q = q + \varepsilon q'$ with $q \neq 0$. It has a single 
 | $q = \operatorname{Re} Q$, $q' = \operatorname{Inf} Q$ | Real and infinitesimal parts |
 | $\bar{Q} = q - \varepsilon q'$ | Dual conjugation |
 | $\langle Q\rangle = Q\bar Q = q^2$ | Norm |
-| $r = |q|$ | Modulus, real size on the invertibles (shear-invariant) |
+| $\varrho = |q|$ | Modulus, real size on the invertibles (shear-invariant) |
 | $u = \operatorname{sgn}(q)$ | Sign, component of the group of invertibles |
 | $\mathrm{M} = (\varepsilon)$ | Maximal ideal, boundary of the polar domain |
 | $1 + \mathrm{M}$ | Shear group, image of $s \mapsto \exp(s\varepsilon)$ |

@@ -11,7 +11,7 @@ $$
 \qquad
 \tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
 \qquad
-\tilde\Xi_{\mathrm D}=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
+\tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
 $$
 
 with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is central per component**, so it commutes with the split of the complete polar decomposition into a scale, an angle, a boost and a rotor, and its effect is confined by type rather than by size. That single fact decides every question the article asks.
@@ -28,7 +28,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 
 **Position in the block.** This article is the charged companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html), and §*The Three Charged Fluids* compares the three.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\tilde U_{\Psi,\mathrm b}$ a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and $\tilde u_{\mathrm r}$ a rotor of angle $\theta_{\mathrm{axr}}$ about its axis. The coupling is $ϙ$, the action is $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $k_m=mc/\hbar$, and $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real. The spin direction is $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$.
 
 ## The Two Brackets the Charge Can Reach
 
@@ -245,7 +245,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 9. **The Gordon split survives.** The convection part is the chart's current; the bound magnetisation current has no explicit dependence on the connection.
 10. **The spin direction is gauge invariant and coupling-blind.** $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$; the chart shows no rotor torque, and the Larmor precession is second order, through the frame.
 11. **The coupling adds a force and not a torque.** $\sum_\nu\partial_\nu T_{\mu\nu}=-ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free article's spin term, and the second is unchanged.
-12. **The degenerate set is $r=0$ and the closure is still underdetermined.** The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
+12. **The degenerate set is $\varrho=0$ and the closure is still underdetermined.** The charge does not supply the missing spin-transport law, and the reason is that the missing law lives in the bracket the connection cannot reach.
 
 ## The Three Charged Fluids
 
@@ -255,14 +255,14 @@ so the field acts on the charge current and the spin term is the free one's. **T
 | --- | --- | --- | --- |
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
 | the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
-| the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/r$ |
+| the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/\varrho$ |
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
 | the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
-| the degenerate set | $r=0$, codimension two | $r=0$, codimension two | $r=0$; the free case's lightlike wall is gone |
+| the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
 | what the charge does | turns the vorticity into the field strength | pushes and does not torque | doubles the carrier and opens the constraint |
 
 **This article's column is the second, and it is the column in which the charge does least.** The velocity keeps its normalisation, the vorticity keeps its kind, the spin keeps its invariance and the closure keeps its underdetermination; what the charge does is shift the momentum, turn the frame, and add a force. **The reason is the type table, and the type table is the same in all three articles**: the connection is central, the central brackets are the scale and the phase, and everything a fluid does with its frame sits in the two brackets a central element cannot reach.
@@ -277,11 +277,11 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 **The forward arrow is unchanged and exact.** Any nowhere-zero solution of the coupled equation gives a density, an angle, a frame and a spin direction, and the word is a bijection on the $N$-regular set. **The connection is a datum of the equation, not of the solution**, and the arrow costs nothing.
 
-**The reverse arrow takes the frame as well as the density and the action.** Given the word's data and a connection, the field is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and it solves the coupled equation iff the mass shell and the momentum balance hold. **The extra structure is of two kinds at once: an internal degree of freedom (the orientation) and an external field (the connection)**, and that pair is what makes this fluid a Cosserat medium in a background rather than a Cosserat medium.
+**The reverse arrow takes the frame as well as the density and the action.** Given the word's data and a connection, the field is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and it solves the coupled equation iff the mass shell and the momentum balance hold. **The extra structure is of two kinds at once: an internal degree of freedom (the orientation) and an external field (the connection)**, and that pair is what makes this fluid a Cosserat medium in a background rather than a Cosserat medium.
 
 | | the word's data | what the reverse map needs beyond it | the medium it makes |
 | --- | --- | --- | --- |
-| charged scalar | $r$, $\theta_{\mathrm{pha}}$ | the energy equation, which is the Hamiltonian | a charged Madelung fluid |
+| charged scalar | $\varrho$, $\theta_{\mathrm{pha}}$ | the energy equation, which is the Hamiltonian | a charged Madelung fluid |
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
@@ -299,7 +299,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 ## Summary
 
-The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The connection is central per component. Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale is a real scalar and the rotor is a real vector part, so **the density and the spin are untouched**.
 
@@ -315,8 +315,8 @@ The spin direction is gauge invariant and coupling-blind, and the Larmor precess
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\Xi_{\mathrm D}=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
-| $r>0$ | Scale; the density is a factor of the word |
+| $\tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
+| $\varrho>0$ | Scale; the density is a factor of the word |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The angle; the only gauge-dependent parameter |
 | $\theta_{\mathrm{rpd}},\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}},\ \text{axis}$ | Angle and axis of the rotor |

@@ -34,7 +34,7 @@ $$
 
 ### The connection
 
-**The rotor's logarithmic derivative is a real vector part, and the complete polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
+**The rotor's logarithmic derivative is a real vector part, and the complete polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
 
 $$
 \tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta,
@@ -267,7 +267,7 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\tilde u_{\mathrm r}$ | Rotor of the polar word, real and unitary |
 | $\vec\Omega_\eta$ | Rotor connection, a real vector per direction |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, a unit spatial vector |
-| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\rho$ the scale, which the polar article writes as $r$ |
+| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element, with $\rho$ the scale, which the polar article writes as $\varrho$ |
 | $S_{\Psi,\eta,\lambda\nu}$ | Components of the spin current, all low |
 | $S_{\Psi,t,\lambda\nu}$ | Its temporal slot, the spin density, $\rho\tfrac{\hbar}{2}\hat s_{\lambda\nu}$ |
 | $\hat s_{\lambda\nu}=\varepsilon_{\lambda\nu\eta\zeta}\hat s_{\eta}v_{\Phi,\zeta}/c$ | The spin bivector, the dual of the direction with the flow |
@@ -276,11 +276,11 @@ The honest limits are three. The connection's equation is not derived here; the 
 | $\mathcal{F}$ | The Frenkel condition |
 | $\mathcal{W}$ | The Weyssenhoff condition |
 | $v_{\Phi,\nu}$ | Components of the flow element |
-| $\rho$ | The scale, $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$, which the polar article writes as $r$; $\rho^{2}=\rho_{\mathrm{num}}$ is the proper density, the polar article's $\rho$ |
+| $\rho$ | The scale, $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$, which the polar article writes as $\varrho$; $\rho^{2}=\rho_{\mathrm{num}}$ is the proper density, the polar article's $\rho$ |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element, four components |
 | $w_{\mathrm{fl}}$, $\vec S_{\mathrm P}$ | Energy density, momentum density |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
-| $r$, $\theta_{\mathrm{pha}}$, $\tilde U_{\Psi,\mathrm b}$ | Scale, central angle, boost |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | Polar word |
+| $\varrho$, $\theta_{\mathrm{pha}}$, $\tilde U_{\Psi,\mathrm b}$ | Scale, central angle, boost |
 | $\vec e_z$ | Frame's third direction, used by the value test |
 | $\beta_{\mathrm{vel}}=\vec v/c$, $\gamma$ | Velocity and boost factor |
 | $\gamma^{2}/(\gamma+1)$ | Thomas factor |

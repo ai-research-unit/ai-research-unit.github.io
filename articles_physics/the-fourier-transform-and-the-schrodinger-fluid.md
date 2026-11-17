@@ -14,10 +14,10 @@
 
 ## Conventions
 
-The algebra and the word are the polar article's: $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=r^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is
+The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r}
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho}
 =-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
@@ -40,7 +40,7 @@ The wave number is $\vec k=\vec p/\hbar$ and the frequency is $\omega=E/\hbar$, 
 $$
 \tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}\,e_t,
 \qquad
-r=\lvert a\rvert,
+\varrho=\lvert a\rvert,
 \qquad
 \theta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega t'+\arg a .
 $$
@@ -96,7 +96,7 @@ and the failure is not a small correction. **The check is direct.** On a grid of
 **The size of what the interference adds is a number, and it is quadratic in the separation.** Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,
 
 $$
-\Bigl\langle\frac{\nabla^{2}r}{r}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+\Bigl\langle\frac{\nabla^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
 $$
 
 **The two powers are the content of the formula**: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. **The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$**, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.
@@ -184,12 +184,12 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $a$ | The complex amplitude of a mode |
 | $\vec k=\vec p/\hbar$, $\omega=E/\hbar$ | The label of a mode |
-| $\rho_{\mathrm{num}}=r^{2}$ | The density; constant at a mode |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
 | $\vec v=\nabla S/m=\hbar\vec k/m$ | The velocity; constant at a mode |
-| $Q=-\hbar^{2}\Delta r/(2mr)$ | The quantum potential; zero at a mode |
+| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
 | $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |

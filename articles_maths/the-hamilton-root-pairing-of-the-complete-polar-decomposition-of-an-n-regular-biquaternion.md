@@ -7,16 +7,16 @@ Throughout this article $\tilde Q$ lies in the N-regular sector, so $N\neq0$. Of
 Every element of $\Sigma_{11}$ carries the complete polar decomposition, the ordered product of a positive real scale, a central phase and two unit factors,
 
 $$
-\tilde{Q} = r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-= r\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
+\tilde{Q} = \varrho\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+= \varrho\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors, algebraic and exponential, are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the phase.
+The four factors, algebraic and exponential, are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*: the scale $\varrho>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the phase.
 
-**The Hamilton root pairing** is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $\Rho = r\exp(i\theta_{\mathrm{pha}})$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec U\Theta)$ of a **root** of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec U$ is the root proportional to $\vec Q$, normalised by $\vec U^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/\Rho$ and $\sin\Theta = B/\Rho$, where $B^2 = \langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$.
+**The Hamilton root pairing** is the grouping that multiplies the scale into the phase and the boost into the rotor. The two central factors multiply into the complex modulus $\varrho\exp(i\theta_{\mathrm{pha}})$; the two unit factors multiply into the non-central factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the Lorentz transformation of the word. On the domain of the pairing that product is a single exponential $\exp(\vec U\Theta)$ of a **root** of $-e_t$. Write $\tilde Q = Q_te_t+\vec Q$ in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The axis $\vec U$ is the root proportional to $\vec Q$, normalised by $\vec U^2 = -e_t$, and $\Theta$ is the complex angle of the exponential, fixed by $\cos\Theta = Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta = B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, where $B^2 = \langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$.
 
 $$
-\tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\theta_{\mathrm{pha}}), \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp(\vec U\Theta), \qquad \varrho\,e^{i\theta_{\mathrm{pha}}} = \varrho\,\exp(i\theta_{\mathrm{pha}}), \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
 This is the **Hamilton representation** of the biquaternion literature. The name records the axis: $\vec U$ is a root of $-e_t$, and $\vec{Ζ}=-i\vec U$ is the pure root of $+1$ that *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, attaches to it. The two halves of the article read the same word at these two roots. The basis in which that root diagonalises left multiplication — the eigenbasis, with its two nilpotents — carries the four basis elements and the two spinor spaces; §*The Eigenbasis and the Spinor Spaces* fixes the vocabulary used throughout.
@@ -25,16 +25,16 @@ The pairing is **partial**: its second factor is a single exponential only where
 
 **The approach.** The article follows the skeleton shared by the three pairing articles: the results imported, the pairing and its two factors, existence and domain, the comparison of the three bracketings, and the three conjugations. It inserts, between the two factors and the existence theorem, the eigenbasis and the two spinor spaces, where the Hamilton data are the diagonal values. It adds a second half, the **root reading**, which reads the same word at the roots of one and collects the four-factor form, the two-exponent form, the single exponential and the idempotent exponential in one table. The first half is the Hamilton representation itself; the second is the same representation at the elements where the non-central factors close. The two halves are related by $\vec{Ζ}=-i\vec U$: multiplying the axis by $-i$ gives the pure root of $+1$ attached to the element. The four factors are taken from *The Complete Polar Decomposition of an N-Regular Biquaternion*, and the exponential and the logarithm from *Biquaternion Elementary Functions*; the imported proofs are cited rather than repeated. No physics is invoked.
 
-**The result.** On the complement of the null cone and of the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural}=0$, the element factors as $\Rho\exp(\vec U\Theta)$, with $\Rho$ the complex modulus, $\vec U=\vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle. The pairing is collected in the table.
+**The result.** On the complement of the null cone and of the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural}=0$, the element factors as $\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$, with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the complex modulus, $\vec U=\vec Q/B$ the root of $-1$ parallel to the vector part and $\Theta$ the complex angle. The pairing is collected in the table.
 
 | item | the Hamilton pairing |
 |---|---|
 | grouping | the scale with the phase, the boost with the rotor |
-| first factor | $\Rho=r\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$, a complex scalar |
-| second factor | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q/\Rho$, a unit element |
-| equation | $\tilde Q=\Rho\exp(\vec U\Theta)$ |
+| first factor | $\varrho\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$, a complex scalar |
+| second factor | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, a unit element |
+| equation | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ |
 | axis | $\vec U=\vec Q/B$, $B^{2}=\langle\vec Q,\vec Q\rangle_{\natural}$, $\vec U^{2}=-e_t$ |
-| angle | $\cos\Theta=Q_t/\Rho$, $\sin\Theta=B/\Rho$ |
+| angle | $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ |
 | classical limit | the quaternion polar form for a real quaternion |
 | position among the three | the only central first factor and the only unit second factor |
@@ -48,8 +48,8 @@ The article takes the following results as established and does not prove them a
 | result | established in | used here for |
 |---|---|---|
 | the four factors, their ranges and their order | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
-| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\Rho\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
-| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\Rho$, the axis $\vec U=\vec Q/B$, the root $\vec{Ζ}$ and $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
+| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
+| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the axis $\vec U=\vec Q/B$, the root $\vec{Ζ}$ and $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
 | the roots of one and their idempotents | *Idempotents*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
 | the eigenbasis, its nilpotents and the spinor spaces | *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, and *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
@@ -67,10 +67,10 @@ The classification, the hyperbolic form, the idempotent exponential and the brid
 The Hamilton representation is the pairing of the scale with the phase against the boost with the rotor:
 
 $$
-\tilde{Q} = \Rho\,\exp(\vec U\Theta), \qquad \Rho = r\,\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}, \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
+\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp(\vec U\Theta), \qquad \varrho\,e^{i\theta_{\mathrm{pha}}} = \varrho\,\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}, \qquad \exp(\vec U\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} .
 $$
 
-The modulus is the complex scalar $\Rho$ of the polar decomposition, and the exponential is the whole rotor part, boost and rotation together. The identification of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with a single exponential is the content of the construction of *The Complete Polar Decomposition of an N-Regular Biquaternion*, and it is why the Hamilton representation generalises the quaternion polar decomposition: when all four coefficients are real, $\tilde U_{\mathrm b} = e_t$, $\tilde u_{\mathrm r}$ is the unit quaternion, and the representation reduces to $\tilde Q = r\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ term by term.
+The modulus is the complex scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}$ of the polar decomposition, and the exponential is the whole rotor part, boost and rotation together. The identification of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with a single exponential is the content of the construction of *The Complete Polar Decomposition of an N-Regular Biquaternion*, and it is why the Hamilton representation generalises the quaternion polar decomposition: when all four coefficients are real, $\tilde U_{\mathrm b} = e_t$, $\tilde u_{\mathrm r}$ is the unit quaternion, and the representation reduces to $\tilde Q = \varrho\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ term by term.
 
 Both non-central factors of the complete polar decomposition are themselves exponentials of a single element, so the Hamilton factor is the single exponential of a **product of two exponentials**: the boost is $\tilde U_{\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and the rotor is $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, with the closed forms of §*The Decomposition* of *The Complete Polar Decomposition of an N-Regular Biquaternion*. Each exponent is a parameter times a root of $\pm e_t$: $i\vec u_{\mathrm b}$ is a Hermitian root of $+e_t$ and $\vec u_{\mathrm r}$ a real pure root of $-e_t$. Their product is again a single exponential because it has unit norm, and on the domain of the representation its angle and axis are read from the element as the complex $\Theta$ and the root $\vec U$; on aligned words $\Theta=\frac{\theta_{\mathrm{axr}}}{2}+\epsilon i\frac{\theta_{\mathrm{rpd}}}{2}$, while in general the two parameters do not separate. The exponent of that single exponential is a complex multiple $\Theta\vec U$ of a root of $-e_t$, and it is the sum $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}+\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ of the two exponents of the factors exactly when the two axes are parallel or one of the two factors is central, as the second half shows.
 
@@ -79,12 +79,12 @@ Both non-central factors of the complete polar decomposition are themselves expo
 **Theorem (the representation).** Let $\tilde Q=Q_te_t+\vec Q$ with $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$, and put
 
 $$
-\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}},\qquad B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}},\qquad \vec U=\frac{\vec Q}{B},\qquad \cos\Theta=\frac{Q_t}{\Rho},\qquad \sin\Theta=\frac{B}{\Rho}.
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}},\qquad B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}},\qquad \vec U=\frac{\vec Q}{B},\qquad \cos\Theta=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}},\qquad \sin\Theta=\frac{B}{\varrho\,e^{i\theta_{\mathrm{pha}}}}.
 $$
 
-Then $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$.
+Then $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}(\cos\Theta+\vec U\sin\Theta)$.
 
-The axis and the eigenvalues are those of *The Spectrum*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\Rho\exp(\pm i\Theta)$ of the spectrum. The branch of $\Rho$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
+The axis and the eigenvalues are those of *The Spectrum*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ of the spectrum. The branch of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
 
 **The axis.** The normalisation $\vec U^2=-e_t$ is what $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ provides. The axis is not an arbitrary root of $-1$ but the one parallel to the vector part, and that parallelism is what makes the representation canonical. When the vector part is null, $B=0$ and the axis does not exist; that is the domain restriction below.
 
@@ -96,28 +96,28 @@ $$
 \exp(\tilde Q)=\exp(Q_t)\bigl(\cos B\,e_t+\sin B\,\vec U\bigr),
 $$
 
-and it is not re-derived here. Its data $(\exp(Q_t),B)$ coincide with the Hamilton data $(\Rho,\Theta)$ only when $\langle\tilde Q\rangle_{\natural}=\exp(2Q_t)$ and $\Theta=B$; in general it is the logarithm, not the exponential, that recovers $(\Rho,\Theta)$ from the element (*Biquaternion Elementary Functions*, §*The Logarithm*). The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^{\times}$ in *Biquaternion Lie Group and Exponential Structure*.
+and it is not re-derived here. Its data $(\exp(Q_t),B)$ coincide with the Hamilton data $(\varrho\,e^{i\theta_{\mathrm{pha}}},\Theta)$ only when $\langle\tilde Q\rangle_{\natural}=\exp(2Q_t)$ and $\Theta=B$; in general it is the logarithm, not the exponential, that recovers $(\varrho\,e^{i\theta_{\mathrm{pha}}},\Theta)$ from the element (*Biquaternion Elementary Functions*, §*The Logarithm*). The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^{\times}$ in *Biquaternion Lie Group and Exponential Structure*.
 
 ## The First Factor: The Complex Modulus
 
 The first factor is the complex modulus of the polar decomposition,
 
 $$
-\Rho = r\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}},
-\qquad r>0,\quad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
+\varrho\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}},
+\qquad \varrho>0,\quad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
 $$
 
-It is central, so it commutes with the second factor, and it carries the whole norm, $\langle\Rho\rangle_{\natural}=\Rho^{2}$. The principal branch of the square root is the one of the polar word, so the modulus is unique; its two constituents are the scale $r$ and the phase $\exp(i\theta_{\mathrm{pha}})$.
+It is central, so it commutes with the second factor, and it carries the whole norm, $\langle\varrho\,e^{i\theta_{\mathrm{pha}}}\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The principal branch of the square root is the one of the polar word, so the modulus is unique; its two constituents are the scale $\varrho$ and the phase $\exp(i\theta_{\mathrm{pha}})$.
 
-The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\Rho\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\Rho^{2}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
+The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
 
 | aspect | value |
 |---|---|
-| formula | $\Rho=r\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$ |
+| formula | $\varrho\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$ |
 | kind | complex scalar, central |
-| modulus | $\lvert\Rho\rvert=r$, $\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$ |
-| eigenvalue reading | $\lambda_\pm=\Rho\exp(\pm i\Theta)$ |
-| conjugation | $\Rho^{\natural}=\Rho$, $\overline{\Rho}=\Rho^{*}$ |
+| modulus | $\varrho=\lvert\varrho\,e^{i\theta_{\mathrm{pha}}}\rvert$, the magnitude of the complex square root of $ |
+| eigenvalue reading | $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ |
+| conjugation | $\varrho^{\natural}=\varrho$, $\overline{\varrho}=\varrho^{*}$ |
 | role | the first factor, the only central first factor of the three |
 
 ## The Second Factor: The Lorentz Transformation
@@ -125,15 +125,15 @@ The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*
 The second factor is the whole non-central part of the polar word, the boost and the rotor multiplied,
 
 $$
-\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\Rho} ,
+\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \exp(\vec U\Theta) = \frac{\tilde{Q}}{\varrho\,e^{i\theta_{\mathrm{pha}}}} ,
 \qquad \tilde U_{\mathrm{lor}}\,\tilde U_{\mathrm{lor}}{}^{\natural} = e_t .
 $$
 
-It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz rotor**, whose congruence is the Lorentz transformation: the modulus $\Rho$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz rotor. The rotor of the bilinear two-sided operator of the physics articles is this factor, written $\tilde U$ there.
+It is a boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ times a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$; the boost alone is the Hermitian case $\tilde u_{\mathrm r}=e_t$. In the physical interpretation $\tilde U_{\mathrm{lor}}$ is the **Lorentz rotor**, whose congruence is the Lorentz transformation: the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ carries the scale and the phase, so every element of the domain is a complex scalar times a Lorentz rotor. The rotor of the bilinear two-sided operator of the physics articles is this factor, written $\tilde U$ there.
 
 | aspect | value |
 |---|---|
-| formula | $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/\Rho$ |
+| formula | $\tilde U_{\mathrm{lor}}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\exp(\vec U\Theta)=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | kind | unit-norm element, the Lorentz transformation |
 | norm | $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ |
 | constituents | the boost of rapidity $\theta_{\mathrm{rpd}}$ about $\vec u_{\mathrm b}$ and the rotor of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$ |
@@ -161,7 +161,7 @@ $$
 \tilde Q\tilde\Pi_-=\lambda_-\tilde\Pi_- ,
 $$
 
-with $\lambda_\pm=\Rho\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\Rho$ is central, $L_{\tilde U_{\mathrm{lor}}}=\Rho^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.
+with $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$. The basis is therefore an eigenbasis of the operator $L_{\tilde Q}$, with the eigenvalues $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$. The second factor of the pairing is the same operator stripped of the modulus: since $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, $L_{\tilde U_{\mathrm{lor}}}=(\varrho\,e^{i\theta_{\mathrm{pha}}})^{-1}L_{\tilde Q}$ is diagonal in the same basis, with the values $(\exp(i\Theta),\exp(i\Theta),\exp(-i\Theta),\exp(-i\Theta))$. The Hamilton modulus is thus the common factor of the two eigenvalues, $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$, of $L_{\tilde Q}$, and the Hamilton angle is half the difference of their logarithms: the pairing is the polar form of the spectrum.
 
 **The two spinor spaces.** The two Peirce carriers, which here are the minimal left ideals,
 
@@ -194,21 +194,21 @@ Both columns are acted on by the same diagonal matrix, which is the matrix form 
 
 ### The Theorem
 
-**Theorem (the Hamilton pairing).** Let $\tilde Q\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$. Then $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$ with $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$, $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$, $\vec U=\vec Q/B$, $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$. The factors are unique once the branches of $\Rho$ and $B$ are fixed.
+**Theorem (the Hamilton pairing).** Let $\tilde Q\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$. Then $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}(\cos\Theta+\vec U\sin\Theta)$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$, $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$, $\vec U=\vec Q/B$, $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The factors are unique once the branches of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $B$ are fixed.
 
 The factorisation exists whenever the four-factor word exists and the vector part is non-null, because the axis $\vec U=\vec Q/B$ must be defined. The existence of the four factors needs no separate argument; the single exponential is the construction of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Hamilton root pairing*. What the pairing adds is the reading of the two factors as a complex modulus and a single exponential.
 
 ### Uniqueness and the Branch Choices
 
-The representation is unique once two branch choices are fixed. The parameters $(\Rho,B,\vec U,\Theta)$ are not independent: $B$ is a square root of $\langle\vec Q,\vec Q\rangle_{\natural}$, $\Rho$ a square root of the norm, $\vec U=\vec Q/B$, and the angle solves $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$. The two square-root branches act as follows.
+The representation is unique once two branch choices are fixed. The parameters $(\varrho\,e^{i\theta_{\mathrm{pha}}},B,\vec U,\Theta)$ are not independent: $B$ is a square root of $\langle\vec Q,\vec Q\rangle_{\natural}$, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ a square root of the norm, $\vec U=\vec Q/B$, and the angle solves $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. The two square-root branches act as follows.
 
 | branch | replacement | compensating change | effect on $\tilde Q$ |
 |---|---|---|---|
-| $\Rho$ | $\Rho\mapsto-\Rho$ | $\Theta\mapsto\Theta+\pi$ | none: $\cos\Theta$ and $\sin\Theta$ both change sign |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}\mapsto-\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\Theta\mapsto\Theta+\pi$ | none: $\cos\Theta$ and $\sin\Theta$ both change sign |
 | $B$ | $B\mapsto-B$ | $\vec U\mapsto-\vec U$, $\Theta\mapsto-\Theta$ | none: $B\vec U$ and $\vec U\sin\Theta$ are unchanged |
 | $\Theta$ | $\Theta\mapsto\Theta+2\pi k$ | none | none |
 
-The first two rows are the branch ambiguities of the two square roots; the third is the period of the angle. The sign of the axis is the sign of $B$, and the sign of $\Theta$ follows once $\cos\Theta$ is fixed, so there is no independent sign choice for the axis or for the angle. Fixing the branches of $\Rho$ and $B$ leaves the angle modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde Q$ differ by the kernel of the exponential, and the powers inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
+The first two rows are the branch ambiguities of the two square roots; the third is the period of the angle. The sign of the axis is the sign of $B$, and the sign of $\Theta$ follows once $\cos\Theta$ is fixed, so there is no independent sign choice for the axis or for the angle. Fixing the branches of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $B$ leaves the angle modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde Q$ differ by the kernel of the exponential, and the powers inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
 
 ### The Domain
 
@@ -218,7 +218,7 @@ $$
 \left\{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0 \ \text{ and } \ \langle\vec Q,\vec Q\rangle_{\natural}\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec{Ζ}=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\Rho$ and $B$ are fixed.
+which is the complement of the union of the null cone and the quadric cone $\langle\vec Q,\vec Q\rangle_{\natural} = 0$. The second condition is independent of the first: the element $1+\vec e_x+i\vec e_y$ has $\langle\tilde Q\rangle_{\natural} = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. It is the degenerate case $B=0$, $\vec Q\neq0$ of *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*: a single Jordan block, written $Q_te_t+N$ with $N^2=0$, which has no eigenvalue decomposition. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* does not exist there, since the root $\vec{Ζ}=-i\vec U$ is undefined. The element $e_t+i\vec e_x$, on the other hand, has $\langle\vec Q,\vec Q\rangle_{\natural} = -1\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$: it has a Hamilton axis but lies on the null cone. Within its domain the representation is unique up to the period of $\Theta$ once the branches of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $B$ are fixed.
 
 ## The Three Pairings
 
@@ -228,11 +228,11 @@ The four factors can be bracketed in exactly three ways, and each bracketing is 
 
 | pairing | first factor | second factor | norm of the first factor | norm of the second factor |
 |---|---|---|---|---|
-| Hamilton | $\Rho=r\exp(i\theta_{\mathrm{pha}})$, complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\Rho^{2}$ | $e_t$ |
-| quaternion | $\tilde q=r\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde{Ξ})=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $r^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
-| Cartan | $\tilde H=r\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$, $*$-unitary | $r^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
+| Hamilton | $\varrho\exp(i\theta_{\mathrm{pha}})$, complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | $e_t$ |
+| quaternion | $\tilde q=\varrho\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde{Ξ})=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
+| Cartan | $\tilde H=\varrho\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$, $*$-unitary | $\varrho^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
 
-The three rows split the same norm $\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$ in three ways. The Hamilton row is the only one that puts the whole norm in its first factor and leaves a unit second factor. The quaternion and Cartan rows put the scale in the first factor and the phase in the second; what distinguishes them is the kind of the first factor, a real quaternion in one and a Hermitian positive element in the other. The three moduli are therefore a complex scalar, a real quaternion and a Hermitian positive element, and the four-factor word is the reference in which the scale stands alone.
+The three rows split the same norm $\varrho^{2}\exp(2i\theta_{\mathrm{pha}})$ in three ways. The Hamilton row is the only one that puts the whole norm in its first factor and leaves a unit second factor. The quaternion and Cartan rows put the scale in the first factor and the phase in the second; what distinguishes them is the kind of the first factor, a real quaternion in one and a Hermitian positive element in the other. The three moduli are therefore a complex scalar, a real quaternion and a Hermitian positive element, and the four-factor word is the reference in which the scale stands alone.
 
 ### The Domains and the Witnesses
 
@@ -262,7 +262,7 @@ The two partial domains are not nested, and the Cartan domain contains both; *Th
 
 ### What This Pairing Carries
 
-The Hamilton row is the only one whose modulus is central. Its modulus and angle are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, $\lambda_\pm=\Rho\exp(\pm i\Theta)$, read in the eigenbasis of §*The Eigenbasis and the Spinor Spaces*, and its second factor is the unit element $\tilde Q/\Rho$ itself. The pairing generalises the quaternion polar decomposition: when all four coefficients are real the boost is trivial and the word reduces to $\tilde Q=r\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ term by term.
+The Hamilton row is the only one whose modulus is central. Its modulus and angle are the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$, read in the eigenbasis of §*The Eigenbasis and the Spinor Spaces*, and its second factor is the unit element $\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ itself. The pairing generalises the quaternion polar decomposition: when all four coefficients are real the boost is trivial and the word reduces to $\tilde Q=\varrho\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ term by term.
 
 ## Behaviour Under the Three Conjugations
 
@@ -270,19 +270,19 @@ The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natu
 
 ### The Hamilton Data
 
-In $\tilde{Q} = \Rho\exp(\vec U\Theta)$ the modulus $\Rho$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\vec U$ is pure, so that $\vec U^{\natural} = -\vec U$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the coefficients of the axis as it conjugates the rest, and Hermitian conjugation does both. The axis of a conjugated element is again a root of $-1$, and it is read off the conjugate: complex conjugation carries $\vec U$ to $\bar{\vec U}$, quaternion conjugation to $-\vec U$, and Hermitian conjugation to $-\bar{\vec U}$:
+In $\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\vec U$ is pure, so that $\vec U^{\natural} = -\vec U$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the coefficients of the axis as it conjugates the rest, and Hermitian conjugation does both. The axis of a conjugated element is again a root of $-1$, and it is read off the conjugate: complex conjugation carries $\vec U$ to $\bar{\vec U}$, quaternion conjugation to $-\vec U$, and Hermitian conjugation to $-\bar{\vec U}$:
 
 $$
-(\tilde{Q})^{\natural} = \Rho\exp(-\vec U\Theta), \qquad \bar{\tilde{Q}} = \bar{\Rho}\exp(\bar{\vec U}\,\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{\Rho}\exp(-\bar{\vec U}\,\bar{\Theta}) .
+(\tilde{Q})^{\natural} = \varrho\,e^{i\theta_{\mathrm{pha}}}\exp(-\vec U\Theta), \qquad \bar{\tilde{Q}} = \bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}\exp(\bar{\vec U}\,\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}\exp(-\bar{\vec U}\,\bar{\Theta}) .
 $$
 
-| conjugation | $\Rho$ | $\vec U$ | $\Theta$ | result |
+| conjugation | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\vec U$ | $\Theta$ | result |
 |---|---|---|---|---|
-| quaternion ${}^{\natural}$ | $\Rho$ | $-\vec U$ | $\Theta$ | $\Rho\exp(-\vec U\Theta)$ |
-| complex $\bar{\cdot}$ | $\bar{\Rho}$ | $\bar{\vec U}$ | $\bar{\Theta}$ | $\bar{\Rho}\exp(\bar{\vec U}\bar{\Theta})$ |
-| Hermitian ${}^{*}$ | $\bar{\Rho}$ | $-\bar{\vec U}$ | $\bar{\Theta}$ | $\bar{\Rho}\exp(-\bar{\vec U}\bar{\Theta})$ |
+| quaternion ${}^{\natural}$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $-\vec U$ | $\Theta$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(-\vec U\Theta)$ |
+| complex $\bar{\cdot}$ | $\bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}$ | $\bar{\vec U}$ | $\bar{\Theta}$ | $\bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}\exp(\bar{\vec U}\bar{\Theta})$ |
+| Hermitian ${}^{*}$ | $\bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}$ | $-\bar{\vec U}$ | $\bar{\Theta}$ | $\bar{\varrho\,e^{i\theta_{\mathrm{pha}}}}\exp(-\bar{\vec U}\bar{\Theta})$ |
 
-The consistency of the second row is a consequence of $\langle\bar{\tilde Q}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, hence $\Rho(\bar{\tilde{Q}}) = \overline{\Rho(\tilde{Q})}$: the modulus conjugates, the angle conjugates, and the axis conjugates coefficientwise. Quaternion conjugation is the operation that reverses the axis, complex conjugation the one that reverses nothing, and Hermitian conjugation the one that does both.
+The consistency of the second row is a consequence of $\langle\bar{\tilde Q}\rangle_{\natural} = \overline{\langle\tilde Q\rangle_{\natural}}$, hence $\varrho\,e^{i\theta_{\mathrm{pha}}}(\bar{\tilde{Q}}) = \overline{\varrho\,e^{i\theta_{\mathrm{pha}}}(\tilde{Q})}$: the modulus conjugates, the angle conjugates, and the axis conjugates coefficientwise. Quaternion conjugation is the operation that reverses the axis, complex conjugation the one that reverses nothing, and Hermitian conjugation the one that does both.
 
 ## The Root Reading
 
@@ -290,7 +290,7 @@ The second half reads the same four-factor word at the elements where it closes,
 
 | reading | object | form | what it shows |
 |---|---|---|---|
-| four factors | $\tilde Q$ | $r\exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word that is bracketed |
+| four factors | $\tilde Q$ | $\varrho\exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word that is bracketed |
 | non-central root | $\tilde{Ζ}$ | $i\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the word at a root of $+1$ of norm $-e_t$ |
 | two exponents | $\mathcal H,\mathcal R$ | $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the factors are exponentials; their bracket measures the failure of additivity |
 | single exponential | $-i\tilde{Ζ}$ | $\exp(\vec U'\frac{\pi}{2})=\vec U'$ | the product is one exponential, with a real angle on the root set |
@@ -308,7 +308,7 @@ The roots of $+1$ are classified in *Idempotents*, §*The Roots of One*: they ar
 | $e_t$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}\in\{0,2\pi\}$ |
 | $-e_t$ | $i\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\vec u_{\mathrm b}\perp\vec u_{\mathrm r}$ and $\theta_{\mathrm{axr}}=\pi$ |
 
-The first row is the central pair. A root of unit norm has $r=1$ and $\theta_{\mathrm{pha}}=0$, so its word is the unit product itself, and the only roots of unit norm are $\pm e_t$. The second row is the non-central family: the norm $-e_t$ forces $\exp(2i\theta_{\mathrm{pha}})=-1$, hence $\exp(i\theta_{\mathrm{pha}})=i$, and the unit product must itself square to $-e_t$, which on the two axes is the orthogonality of the axes together with the half-turn of the rotor, $\tilde u_{\mathrm r}=\vec u_{\mathrm r}$. The family has four real parameters, the rapidity $\theta_{\mathrm{rpd}}$, the rotor axis (two) and the boost axis in the plane orthogonal to it (one), which is the dimension of the classification.
+The first row is the central pair. A root of unit norm has $\varrho=1$ and $\theta_{\mathrm{pha}}=0$, so its word is the unit product itself, and the only roots of unit norm are $\pm e_t$. The second row is the non-central family: the norm $-e_t$ forces $\exp(2i\theta_{\mathrm{pha}})=-1$, hence $\exp(i\theta_{\mathrm{pha}})=i$, and the unit product must itself square to $-e_t$, which on the two axes is the orthogonality of the axes together with the half-turn of the rotor, $\tilde u_{\mathrm r}=\vec u_{\mathrm r}$. The family has four real parameters, the rapidity $\theta_{\mathrm{rpd}}$, the rotor axis (two) and the boost axis in the plane orthogonal to it (one), which is the dimension of the classification.
 
 ### The Root From Its Coordinates
 
@@ -401,7 +401,7 @@ whose leading term is half the bracket. On 100 random pairs with the rapidity an
 | $+\frac{1}{2}[\mathcal H,\mathcal R]$ | $\le 1.0\times10^{-3}$ |
 | $+$ the two cubic terms | $\le 2.1\times10^{-5}$ |
 
-**The single exponential does not need the alignment.** The product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ has norm one and is the element $\tilde Q$ stripped of its central modulus $\Rho$, and dividing by the central $\Rho$ leaves the Hamilton axis and the complex angle unchanged, both being read from the ratio of the parts of the element. The product is therefore a single exponential with a complex number inside on the whole domain,
+**The single exponential does not need the alignment.** The product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ has norm one and is the element $\tilde Q$ stripped of its central modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, and dividing by the central $\varrho\,e^{i\theta_{\mathrm{pha}}}$ leaves the Hamilton axis and the complex angle unchanged, both being read from the ratio of the parts of the element. The product is therefore a single exponential with a complex number inside on the whole domain,
 
 $$
 \boxed{\;\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\vec U\Theta)\;},
@@ -443,10 +443,10 @@ $$
 i\pi\tilde\Pi_-=\tfrac{i\pi}{2}e_t+\tfrac{\pi}{2}\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
-The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §*The Idempotent Exponential Form of a Root*; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\Rho=i$ on the norm $-e_t$ family,
+The central part of the exponent is fixed at $\tfrac{i\pi}{2}e_t$, and the two-factor part is the last two factors of the word multiplied by the real half-turn. These are the statements of the cited article, §*The Idempotent Exponential Form of a Root*; they are recorded here because the extracted product is the second factor of the Hamilton pairing of the root: with $\varrho\,e^{i\theta_{\mathrm{pha}}}=i$ on the norm $-e_t$ family,
 
 $$
-\tilde U_{\mathrm{lor}}=\frac{\tilde{Ζ}}{\Rho}=-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde U_{\mathrm{lor}}=\frac{\tilde{Ζ}}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=-i\tilde{Ζ}=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
 ### The Hermitian Roots
@@ -478,10 +478,10 @@ $$
 **The element.** The same two non-central factors, dialled by the central scale and the central phase, are the general element of the domain,
 
 $$
-\tilde Q=r\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
+\tilde Q=\varrho\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 
-An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,r\exp(i\theta_{\mathrm{pha}})\,\tilde{Ζ}$ of it; in general the element carries its own two factors, of the same kind.
+An element whose non-central factors are those of the root is the central multiple $\tilde Q=-i\,\varrho\exp(i\theta_{\mathrm{pha}})\,\tilde{Ζ}$ of it; in general the element carries its own two factors, of the same kind.
 
 **The idempotents and the spinor spaces.** The halving map carries the root to the pair $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$, and the Peirce decomposition of *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, splits the algebra into the four corners. The eigenbasis of §*The Eigenbasis and the Spinor Spaces* completes the two idempotents by the nilpotents of the two mixed corners and reads the same split as $\mathbb{B}=S_+\oplus S_-$, the two spinor spaces. The chain is thus
 
@@ -509,7 +509,7 @@ $$
 
 on the Jordan part. There is no unit axis parallel to it, because its length is zero.
 
-The angle fails in the same way. In the regular sector $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$; on the wall $\sin\Theta=0$ and $\cos\Theta=\pm1$, so $\Theta$ is a multiple of $\pi$ and carries no continuous information. The exponent $\vec U\Theta$ is a product of a divergent root and a vanishing angle, and its limit depends on the path.
+The angle fails in the same way. In the regular sector $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$; on the wall $\sin\Theta=0$ and $\cos\Theta=\pm1$, so $\Theta$ is a multiple of $\pi$ and carries no continuous information. The exponent $\vec U\Theta$ is a product of a divergent root and a vanishing angle, and its limit depends on the path.
 
 ### The Degenerate Hamilton Form
 
@@ -522,46 +522,46 @@ $$
 \qquad
 Q_t\neq0,
 \qquad
-\Rho^2=Q_t^2,
+\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=Q_t^2,
 \qquad
-\varepsilon=\frac{Q_t}{\Rho}=\pm1.
+\varepsilon=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\pm1.
 $$
 
-Then $Q_t=\varepsilon\Rho$ and
+Then $Q_t=\varepsilon\varrho\,e^{i\theta_{\mathrm{pha}}}$ and
 
 $$
-\tilde Q=\Rho\bigl(\varepsilon e_t+\varepsilon\vec\Upsilon\bigr).
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\bigl(\varepsilon e_t+\varepsilon\vec\Upsilon\bigr).
 $$
 
 Since $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, the element is
 
 $$
 \boxed{\;
-\tilde Q=\Rho\exp\Bigl(\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}\Bigr).
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(\vec\Upsilon+i\pi\frac{1-\varepsilon}{2}\Bigr).
 \;}
 $$
 
 The exponent has a nilpotent noncentral part $\vec\Upsilon$ and a central part $0$ or $i\pi$. The central part is the sign: for $\varepsilon=+1$ it is absent, and for $\varepsilon=-1$ it is the principal logarithm of $-1$.
 
-**Theorem (the degenerate Hamilton form).** Every element of $\Sigma_{10}$ is the product of its complex modulus $\Rho$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.
+**Theorem (the degenerate Hamilton form).** Every element of $\Sigma_{10}$ is the product of its complex modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the exponential of $\vec\Upsilon+i\pi(1-\varepsilon)/2$. The factorization is unique, and the exponent is the exact logarithm of the unit factor.
 
-*Proof.* The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\Rho$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\Rho=\operatorname{Log}\tilde U$, which is unique in the branch of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Exact Logarithm at the Wall*.
+*Proof.* The normal form gives $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $Q_t=\varepsilon\varrho\,e^{i\theta_{\mathrm{pha}}}$. The exponential of a nilpotent truncates, $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$, and the central term contributes the sign. The exponent is $\operatorname{Log}\tilde Q-\log\varrho\,e^{i\theta_{\mathrm{pha}}}=\operatorname{Log}\tilde U$, which is unique in the branch of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Exact Logarithm at the Wall*.
 
 The first factor is the complex modulus, as in the regular pairing. The second factor is not the exponential of a root times an angle; it is the exponential of a nilpotent, and its noncentral part is the logarithm of a unipotent element.
 
 ### The Limit From the Regular Sector
 
-Approach the wall along a regular family with $B\neq0$. The root $\vec U=\vec Q/B$ diverges as $B\to0$, and the angle obeys $\sin\Theta=B/\Rho\to0$. The limit of the product $\vec U\Theta$ depends on the sign $\varepsilon=Q_t/\Rho$.
+Approach the wall along a regular family with $B\neq0$. The root $\vec U=\vec Q/B$ diverges as $B\to0$, and the angle obeys $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})\to0$. The limit of the product $\vec U\Theta$ depends on the sign $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$.
 
-For $\varepsilon=+1$, $\cos\Theta\to1$ and $\Theta\sim B/\Rho$. Then
+For $\varepsilon=+1$, $\cos\Theta\to1$ and $\Theta\sim B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. Then
 
 $$
-\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\Rho}=\vec\Upsilon,
+\vec U\Theta=\frac{\vec Q}{B}\Theta\longrightarrow\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\vec\Upsilon,
 \qquad
 \exp(\vec U\Theta)\longrightarrow\exp(\vec\Upsilon)=e_t+\vec\Upsilon.
 $$
 
-For $\varepsilon=-1$, $\cos\Theta\to-1$ and $\Theta\to\pi$ while $\sin\Theta=B/\Rho$. Then
+For $\varepsilon=-1$, $\cos\Theta\to-1$ and $\Theta\to\pi$ while $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. Then
 
 $$
 \vec U\Theta=\frac{\vec Q}{B}\bigl(\pi+O(B)\bigr)
@@ -576,7 +576,7 @@ The limit shows what survives and what does not. The modulus survives, the expon
 
 #### The Standard Jordan Element
 
-Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\Rho=1$, $\varepsilon=1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The degenerate Hamilton form is
+Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. Then $Q_t=1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The degenerate Hamilton form is
 
 $$
 \tilde Q=\exp(\vec e_x+i\vec e_y)=e_t+\vec e_x+i\vec e_y,
@@ -586,7 +586,7 @@ because the square of the exponent vanishes. The regular root does not exist: $B
 
 #### The Negative Jordan Element
 
-Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\Rho=1$, $\varepsilon=-1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The form is
+Take $\tilde Q=-e_t-\vec e_x-i\vec e_y$. Then $Q_t=-1$, $\varrho\,e^{i\theta_{\mathrm{pha}}}=1$, $\varepsilon=-1$ and $\vec\Upsilon=\vec e_x+i\vec e_y$. The form is
 
 $$
 \tilde Q=\exp\bigl(\vec e_x+i\vec e_y+i\pi\bigr)
@@ -601,19 +601,19 @@ The central $i\pi$ is the sign of the scalar part. It is the only difference fro
 On the scalar line $\vec\Upsilon=0$ and $\tilde Q=Q_te_t$. The form is
 
 $$
-\tilde Q=\Rho\exp\Bigl(i\pi\frac{1-\varepsilon}{2}\Bigr),
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp\Bigl(i\pi\frac{1-\varepsilon}{2}\Bigr),
 $$
 
-which is $\Rho$ for $\varepsilon=+1$ and $-\Rho$ for $\varepsilon=-1$. This is the scalar limit of the Hamilton pairing: the root and the angle disappear, and only the modulus and the sign remain.
+which is $\varrho\,e^{i\theta_{\mathrm{pha}}}$ for $\varepsilon=+1$ and $-\varrho\,e^{i\theta_{\mathrm{pha}}}$ for $\varepsilon=-1$. This is the scalar limit of the Hamilton pairing: the root and the angle disappear, and only the modulus and the sign remain.
 
 ### What the Wall Changes
 
 | Property | Regular sector | Degenerate sector |
 |---|---|---|
-| modulus | $\Rho=\sqrt{N}$ | the same |
+| modulus | $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}$ | the same |
 | exponent | $\vec U\Theta$, $\vec U^2=-e_t$ | $\vec\Upsilon+i\pi(1-\varepsilon)/2$, $\vec\Upsilon^2=0$ |
 | root | $\vec U=\vec Q/B$ | none |
-| angle | $\Theta$ with $\sin\Theta=B/\Rho$ | none; replaced by the exact logarithm |
+| angle | $\Theta$ with $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | none; replaced by the exact logarithm |
 | exponent type | complex multiple of a root of $-e_t$ | nilpotent plus a central sign |
 | uniqueness | unique up to the branch of $B$ | unique in the branch of the logarithm |
 | survives the wall | the root diverges | the exponent is finite and exact |
@@ -624,7 +624,7 @@ The Hamilton pairing is therefore the one pairing of the three that does not sur
 
 The examples are collected in the table, with the status of the pairing and the Hamilton data. The subsections give the computations.
 
-| element | Hamilton | $\Rho$ | $\Theta$ | $\vec U$ |
+| element | Hamilton | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\Theta$ | $\vec U$ |
 |---|---|---|---|---|
 | $(1+i)e_t+\vec e_x+2\vec e_y$ | yes | $2.278724+0.438842i$ | $1.080835-0.378137i$ | $0.447214\,\vec e_x+0.894427\,\vec e_y$ |
 | $1+\vec e_x+i\vec e_y$ | no | — | — | $B=0$ |
@@ -638,16 +638,16 @@ The examples are collected in the table, with the status of the pairing and the 
 Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its complete polar decomposition is
 
 $$
-r = 2.320595787, \quad \theta_{\mathrm{pha}} = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
+\varrho = 2.320595787, \quad \theta_{\mathrm{pha}} = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
 $$
 
-*The Hamilton regrouping.* The vector part is $\vec Q = \vec e_x+2\vec e_y$, so $\langle\vec Q,\vec Q\rangle_{\natural} = 5$ and $B = \sqrt{5} = 2.236067978$; the axis is $\vec U = (\vec e_x+2\vec e_y)/\sqrt{5} = 0.447213595\,\vec e_x+0.894427191\,\vec e_y$, which satisfies $\vec U^2 = -e_t$. The modulus is $\Rho = 2.278723854+0.438842117i$, and the complex angle is fixed by
+*The Hamilton regrouping.* The vector part is $\vec Q = \vec e_x+2\vec e_y$, so $\langle\vec Q,\vec Q\rangle_{\natural} = 5$ and $B = \sqrt{5} = 2.236067978$; the axis is $\vec U = (\vec e_x+2\vec e_y)/\sqrt{5} = 0.447213595\,\vec e_x+0.894427191\,\vec e_y$, which satisfies $\vec U^2 = -e_t$. The modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}} = 2.278723854+0.438842117i$, and the complex angle is fixed by
 
 $$
-\cos\Theta = \frac{Q_t}{\Rho} = 0.504639332+0.341657461i, \qquad \sin\Theta = \frac{\sqrt{5}}{\Rho} = 0.946188580-0.182219271i ,
+\cos\Theta = \frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}} = 0.504639332+0.341657461i, \qquad \sin\Theta = \frac{\sqrt{5}}{\varrho\,e^{i\theta_{\mathrm{pha}}}} = 0.946188580-0.182219271i ,
 $$
 
-so that $\tilde{Q} = \Rho(\cos\Theta+\vec U\sin\Theta)$; the identity $\exp(\vec U\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ then holds term by term, both sides being $\tilde{Q}/\Rho$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
+so that $\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}(\cos\Theta+\vec U\sin\Theta)$; the identity $\exp(\vec U\Theta) = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ then holds term by term, both sides being $\tilde{Q}/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
 
 *The two exponents.* The polar data also give the two exponents of the word,
 
@@ -669,7 +669,7 @@ Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural}
 
 ### The Element with a Vanishing Real Part
 
-Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\langle\vec Q,\vec Q\rangle_{\natural} = -2$, so $B = i\sqrt2$ and the Hamilton axis exists, $\vec U = (\vec e_x+\vec e_y)/\sqrt2$, with $\Rho = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
+Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\langle\vec Q,\vec Q\rangle_{\natural} = -2$, so $B = i\sqrt2$ and the Hamilton axis exists, $\vec U = (\vec e_x+\vec e_y)/\sqrt2$, with $\varrho\,e^{i\theta_{\mathrm{pha}}} = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
 
 $$
 \tilde Q = i\sqrt2\,\exp\Bigl(\vec U\frac{\pi}{2}\Bigr).
@@ -679,7 +679,7 @@ The real quaternion part vanishes, $\tilde q_r = 0$, so the quaternion construct
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\Rho=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$ and $\vec Q=0$, so $B=0$: the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=i$ exists but the axis and the angle do not, and the Hamilton representation is unavailable. The polar word is $i = 1\cdot\exp(i\pi/2)\cdot e_t\cdot e_t$. The element is the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*. The Cartan pairing reads $i=e_t\cdot i$; the quaternion construction also fails, since $\tilde q_r=0$.
 
 ### An Element at a Root of One
 
@@ -734,18 +734,18 @@ so that $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cos\Theta\,e_t+\sin\Theta\,
 | item | result |
 |---|---|
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$ and $\langle\vec Q,\vec Q\rangle_{\natural}\neq0$ |
-| first factor | $\Rho=r\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$, a complex scalar |
-| second factor | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q/\Rho$ |
-| equation | $\tilde Q=\Rho(\cos\Theta+\vec U\sin\Theta)$, with $\vec U=\vec Q/B$ |
-| uniqueness | the two branch choices $\Rho\mapsto-\Rho$ with $\Theta\mapsto\Theta+\pi$, and $B\mapsto-B$ with $\vec U\mapsto-\vec U$, $\Theta\mapsto-\Theta$; fixed by the branches, leaving $\Theta$ modulo $2\pi$ |
-| complex conjugation | $\Rho$, $\Theta$ and $\vec U$ all conjugate |
-| quaternion conjugation | $\Rho$ and $\Theta$ fixed, $\vec U\mapsto-\vec U$ |
-| Hermitian conjugation | $\Rho$ and $\Theta$ conjugate, $\vec U\mapsto-\bar{\vec U}$ |
+| first factor | $\varrho\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$, a complex scalar |
+| second factor | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
+| equation | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}(\cos\Theta+\vec U\sin\Theta)$, with $\vec U=\vec Q/B$ |
+| uniqueness | the two branch choices $\varrho\,e^{i\theta_{\mathrm{pha}}}\mapsto-\varrho\,e^{i\theta_{\mathrm{pha}}}$ with $\Theta\mapsto\Theta+\pi$, and $B\mapsto-B$ with $\vec U\mapsto-\vec U$, $\Theta\mapsto-\Theta$; fixed by the branches, leaving $\Theta$ modulo $2\pi$ |
+| complex conjugation | $\varrho\,e^{i\theta_{\mathrm{pha}}}$, $\Theta$ and $\vec U$ all conjugate |
+| quaternion conjugation | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $\Theta$ fixed, $\vec U\mapsto-\vec U$ |
+| Hermitian conjugation | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and $\Theta$ conjugate, $\vec U\mapsto-\bar{\vec U}$ |
 | degenerate limits | a non-scalar real quaternion gives the quaternion polar form; a complex scalar has no Hamilton representation |
 | eigenbasis and spinors | in the eigenbasis $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ the operator $L_{\tilde Q}$ is $\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$; the two spinor spaces $S_\pm=\mathbb{B}\tilde\Pi_\pm$ are the two columns of $\mathsf M_2^Q$ |
 | classical case | the polar decomposition of the ordinary quaternions |
 
-The Hamilton pairing groups the scale with the phase into the complex modulus $\Rho=r\exp(i\theta_{\mathrm{pha}})$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.
+The Hamilton pairing groups the scale with the phase into the complex modulus $\varrho\exp(i\theta_{\mathrm{pha}})$ and the boost with the rotor into the unit factor $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. Its modulus is the eigenvalue data of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*, and its second factor is the Lorentz transformation of the word. It is the only pairing whose modulus is central, and it is partial in both senses: the axis $\vec U=\vec Q/B$ needs the vector part non-null, although the four-factor grouping exists on the whole complement of the null cone.
 
 The second half reads the same word at a root of one, $\tilde{Ζ}^2=e_t$. Apart from the central pair $\pm e_t$, the non-Hermitian roots are generated by two orthogonal unit pure quaternions and one rapidity, and the Hermitian roots $i\vec u_{\mathrm n}$ are the zero-rapidity case; every root has both a two-factor form and the single exponential $\tilde{Ζ}=\exp(i\pi\tilde\Pi_-)$ of its halving idempotent.
 
@@ -764,11 +764,11 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 
 | Item | Value |
 |---|---|
-| regular form | $\tilde Q=\Rho\exp(\vec U\Theta)$ |
-| degenerate form | $\tilde Q=\Rho\exp(\vec\Upsilon+i\pi(1-\varepsilon)/2)$ |
+| regular form | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ |
+| degenerate form | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec\Upsilon+i\pi(1-\varepsilon)/2)$ |
 | exponent | nilpotent $\vec\Upsilon$ plus central $0$ or $i\pi$ |
-| modulus | $\Rho$, the complex square root of $N$ |
-| sign | $\varepsilon=Q_t/\Rho=\pm1$ |
+| modulus | $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the complex square root of $N$ |
+| sign | $\varepsilon=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})=\pm1$ |
 | root | does not exist at $B=0$ |
 | limit | $\vec U\Theta\to\vec\Upsilon$ for $\varepsilon=+1$; diverges for $\varepsilon=-1$ |
 | exactness | $\exp(\vec\Upsilon)=e_t+\vec\Upsilon$ |
@@ -777,15 +777,15 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
-| $r$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real rotor |
-| $\tilde{Q} = \Rho\exp(\vec U\Theta)$ | the Hamilton representation, the root pairing |
+| $\tilde{Q} = \varrho \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
+| $\varrho$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real rotor |
+| $\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ | the Hamilton representation, the root pairing |
 | $\tilde U_{\mathrm{lor}} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the second factor, the Lorentz rotor |
-| $\Rho = r\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar decomposition |
+| $\varrho\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the Hamilton modulus, the complex modulus of the polar decomposition |
 | $\vec U = \vec Q/B$ | the Hamilton axis, the root of $-1$ parallel to the vector part |
 | $L_{\tilde Q}$, $R_{\tilde Q}$ | left and right multiplication by $\tilde Q$ on $\mathbb{B}$; $L_{\tilde Q}$ is diagonal in the eigenbasis, $R_{\tilde Q}$ has the left ideals $S_\pm$ as eigenspaces |
 | $\vec{Ζ} = -i\vec U$ | the pure root of $+1$ attached to the axis |
-| $\lambda_\pm = Q_t\pm iB = \Rho\exp(\pm i\Theta)$ | the eigenvalues, the coefficients of the eigenvalue decomposition |
+| $\lambda_\pm = Q_t\pm iB = \varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ | the eigenvalues, the coefficients of the eigenvalue decomposition |
 | $\tilde\Pi_\pm = \frac12(e_t\pm\vec{Ζ})$ | the eigenprojections, primitive orthogonal idempotents |
 | $\vec\Upsilon_+\in\mathbb{B}_{-+}$, $\vec\Upsilon_-\in\mathbb{B}_{+-}$ | the nilpotents of the eigenbasis, normalised by $\vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-$ and $\vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+$ |
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the two spinor spaces, the Peirce carriers (minimal left ideals here), the two columns of $\mathsf M_2^Q$ |
@@ -795,7 +795,7 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 | $\langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$ | the quaternionic bilinear square of the vector part |
 | $B = \sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the length of the vector part, in the branch that fixes the axis |
 | $\tilde q_r$, $\tilde q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
-| $\tilde q=r\tilde u_{\mathrm r}$, $\tilde{Ξ}$ | the quaternion modulus and the quaternion angle of the companion pairing |
+| $\tilde q=\varrho\tilde u_{\mathrm r}$, $\tilde{Ξ}$ | the quaternion modulus and the quaternion angle of the companion pairing |
 | $Q_\mu = q_\mu+iq'_\mu$ | the four complex coefficients of $\tilde{Q}$, split into their real and imaginary parts |
 | $Ζ_\mu = \zeta_\mu+i\zeta'_\mu$ | the four complex coefficients of a root of one $\tilde{Ζ}$ |
 | $\exp(\tilde{Q})$ | the exponential; its Hamilton data $\exp(Q_t)$ and $B$ are generally not those of $\tilde{Q}$ |
@@ -817,10 +817,10 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the eigenvalues $\lambda_\pm=Q_t\pm iB$, the pure unit element $\vec U=\vec Q/B$ and the eigenprojections $\tilde\Pi_\pm$.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the eigenbasis with its nilpotents, and the two spinor spaces, on which the Hamilton parameters and the diagonal action are read.
-- [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the unit factor $\tilde U=\tilde Q/(r\exp(i\theta_{\mathrm{pha}}))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.
+- [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the unit factor $\tilde U=\tilde Q/(\varrho\exp(i\theta_{\mathrm{pha}}))$, its eigenvalues $\exp(\pm i\Theta)$ and the eigenprojections it shares with $\tilde Q$.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the powers, which fix the Hamilton parameters and carry their multivaluedness.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four exponentials, the existence and uniqueness of the word, and the logarithms that fix the branches.
-- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §*The Algorithm* of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Order of the Factors* of that article, for the exponents $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §*The Single Exponential* above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}} = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §*The Algorithm* of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Order of the Factors* of that article, for the exponents $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §*The Single Exponential* above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.
 - [The Quaternion Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-quaternion-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the quaternion grouping, the other partial pairing, and the comparison of the two domains.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.
 - [Idempotents](idempotents.html), for the classification of the roots of one and the halving map to the idempotents.

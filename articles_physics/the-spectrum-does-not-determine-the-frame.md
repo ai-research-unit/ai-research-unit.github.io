@@ -22,12 +22,12 @@ so the spectrum is determined by the single complex number $\mu=\mu_1$, the othe
 
 ### What the Two Parameters Are
 
-Write $\mu=\Rho e^{i\theta_{\mathrm{pha}}}$ with $\Rho>0$, where $\theta_{\mathrm{pha}}$ is the corpus's name for the phase of the polar form, taken modulo a full turn. Then
+Write $\mu=\varrho\,e^{i\theta_{\mathrm{pha}}}$ with $\varrho>0$, where $\theta_{\mathrm{pha}}$ is the corpus's name for the phase of the polar form, taken modulo a full turn. Then
 
-- $\Rho$ is the modulus, and $\log\Rho$ is a rapidity-like number: it measures the boost part;
+- $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the modulus, and $\log\varrho\,e^{i\theta_{\mathrm{pha}}}$ is a rapidity-like number: it measures the boost part;
 - $\theta_{\mathrm{pha}}$ is a phase, and it measures the rotation part; on a rotation it is half the rotation angle, $\theta_{\mathrm{pha}}=\theta_{\mathrm{axr}}/2$.
 
-So the spectrum, read as $(\log\Rho,\theta_{\mathrm{pha}})$, is one number of each kind: a boost magnitude and a rotation angle. That is exactly the intuition a reader brings — a Lorentz transformation has a boost magnitude and a rotation angle — and the surprise is that the intuition stops there.
+So the spectrum, read as $(\log\varrho\,e^{i\theta_{\mathrm{pha}}},\theta_{\mathrm{pha}})$, is one number of each kind: a boost magnitude and a rotation angle. That is exactly the intuition a reader brings — a Lorentz transformation has a boost magnitude and a rotation angle — and the surprise is that the intuition stops there.
 
 ### The Two Families
 
@@ -35,7 +35,7 @@ For the two families the spectrum is even smaller:
 
 | element | eigenvalues | spectral parameters |
 |---|---|---|
-| boost of rapidity $\theta_{\mathrm{rpd}}$ | $e^{\pm\theta_{\mathrm{rpd}}/2}$, real positive | the modulus only, $\log\Rho=\theta_{\mathrm{rpd}}/2$ |
+| boost of rapidity $\theta_{\mathrm{rpd}}$ | $e^{\pm\theta_{\mathrm{rpd}}/2}$, real positive | the modulus only, $\log\varrho\,e^{i\theta_{\mathrm{pha}}}=\theta_{\mathrm{rpd}}/2$ |
 | rotation of angle $\theta_{\mathrm{axr}}$ | $e^{\pm i\theta_{\mathrm{axr}}/2}$, on the unit circle | the phase only, $\theta_{\mathrm{pha}}=\theta_{\mathrm{axr}}/2$ |
 | general | $\mu$, $\mu^{-1}$ | both |
 
@@ -211,7 +211,7 @@ $$
 
 and the two angles do not fix $Q_t$ unless $c$ is known. For the element above, $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}=\sqrt2$ and $\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}=1$, so the real part is $\sqrt2\cdot\tfrac{1}{\sqrt2}=1$ and the imaginary part is $\tfrac{1}{\sqrt2}\cdot\tfrac{1}{\sqrt2}=\tfrac12$, giving $Q_t=1-\tfrac{i}{2}$ as computed. A reader who uses the parallel-axis formula $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}$ gets the real part $1$ and misses the imaginary part entirely, hence a real spectrum where the element has a complex one.
 
-So the two named angles are not functions of the spectrum. The spectrum carries $(\log\Rho,\theta_{\mathrm{pha}})$; the frame carries $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ up to the sheet. The direction between the axes is the datum that the spectrum does not carry, and the worked element is the smallest case in which its absence is visible.
+So the two named angles are not functions of the spectrum. The spectrum carries $(\log\varrho\,e^{i\theta_{\mathrm{pha}}},\theta_{\mathrm{pha}})$; the frame carries $(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ up to the sheet. The direction between the axes is the datum that the spectrum does not carry, and the worked element is the smallest case in which its absence is visible.
 
 ### The One-Parameter Family About the Boost Axis
 
@@ -272,7 +272,7 @@ The spectrum of a rotor is two eigenvalues whose product is one, that is two rea
 | symbol | meaning |
 |---|---|
 | $\mu_\pm$ | the two eigenvalues of a rotor, $\mu_+\mu_-=1$ |
-| $\Rho$, $\theta_{\mathrm{pha}}$ | modulus and phase of $\mu$, with $\theta_{\mathrm{pha}}=\theta_{\mathrm{axr}}/2$ on a rotation |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$, $\theta_{\mathrm{pha}}$ | modulus and phase of $\mu$, with $\theta_{\mathrm{pha}}=\theta_{\mathrm{axr}}/2$ on a rotation |
 | $N=Q_t^{2}+B^{2}$ | the norm, the product of the two eigenvalues |
 | $Q_t$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | scalar part and squared vector part of the rotor |
 | $\Pi_\pm$ | the eigenprojectors, Hermitian idempotents of trace one |

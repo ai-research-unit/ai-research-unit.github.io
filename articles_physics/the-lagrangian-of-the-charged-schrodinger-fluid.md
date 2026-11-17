@@ -14,14 +14,14 @@
 
 **Position in the block.** This is the variational companion of [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html) and the second of the eight articles of this layer. It is the only one of the eight whose equation is first order, and therefore the only one in which the two slots of a single covariant derivative exhaust the action's dependence on the phase, with no shell term between them.
 
-**Conventions.** Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\nabla\Gamma$. The field is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=r^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
+**Conventions.** Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\nabla\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
 
 ## The Action in the Fluid Variables
 
 **The free action's two slots are the two places the connection can go, and it goes to both.** With $S=\hbar\theta_{\mathrm{pha}}$ and $\vec\pi=\nabla S-q\vec A$,
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S-ϙ\varphi+\frac{\vec\pi^{2}}{2m}\Bigr)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}\;}
 $$
 
 **The first bracket is one object and not two.** The combination $\partial_{t'}S-ϙ\varphi$ is the time slot of the covariant derivative of the phase, and the corpus names it $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$, the kinetic energy. The spatial slot is $\vec\pi$, the kinetic momentum. **Both are gauge invariant and neither is separately meaningful**: a shift of the phase moves both, and a shift of the potential moves both back.
@@ -106,11 +106,11 @@ and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S-q\vec A$ 
 
 1. **The pair's rank in the operator setting.** The action above is written for a homogeneous field. In the inhomogeneous case the amplitude's gradient and the potential's gradient both carry spatial structure, and whether the Clebsch identification survives — that is, whether the potential remains a second potential when $\vec B$ varies — is not settled here. The block's charged article keeps its identity $\nabla\times\vec v=ϙ\vec B/m$ in general, so the rank statement survives; the *representation* is the part that may not.
 
-2. **The boundary term at the nodes.** The action is stated on $r>0$, as in the free companion. Whether the gradient energy's variation produces a boundary term at a nodal surface that requires a condition there is not addressed, and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) is where the surface itself is described.
+2. **The boundary term at the nodes.** The action is stated on $\varrho>0$, as in the free companion. Whether the gradient energy's variation produces a boundary term at a nodal surface that requires a condition there is not addressed, and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) is where the surface itself is described.
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla r)^{2}$, with $\vec\pi=\nabla S-q\vec A$.
+**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S-ϙ\varphi+\vec\pi^{2}/2m)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}$, with $\vec\pi=\nabla S-q\vec A$.
 
 **The variations.** The phase gives continuity with $\vec j=\rho_{\mathrm{num}}\vec v$; the amplitude gives $\mathcal E=\vec\pi^{2}/2m+Q$; the gradient of the second is $\mathrm{D}\vec\pi/\mathrm{D}t=-ϙ(\vec E+\vec v\times\vec B)-\nabla Q$, which is the standard Lorentz force for $q=-ϙ$.
 
@@ -124,7 +124,7 @@ and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S-q\vec A$ 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The word; the free article's, unchanged |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\varphi$, $\vec A$ | Scalar and vector potentials; gauge dependent |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
@@ -132,9 +132,9 @@ and under $\vec A\mapsto\vec A-\nabla\Gamma$ the combination $\nabla S-q\vec A$ 
 | $\vec\pi=\nabla S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\partial_{t'}S+ϙ\varphi$ | Kinetic energy; gauge invariant |
-| $\rho_{\mathrm{num}}=r^{2}$ | Density; gauge invariant |
-| $Q=-\hbar^{2}\Delta r/(2mr)$ | Quantum potential; untouched by the coupling |
-| $\mathcal E_{\mathrm{grad}}=\frac{\hbar^{2}}{2m}\int(\nabla r)^{2}$ | Gradient energy; untouched by the coupling |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
+| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | Quantum potential; untouched by the coupling |
+| $\mathcal E_{\mathrm{grad}}=\frac{\hbar^{2}}{2m}\int(\nabla \varrho)^{2}$ | Gradient energy; untouched by the coupling |
 | $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | Field strengths; gauge invariant |
 | $\phi_{\mathrm{clb}},\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ | Clebsch potentials; here $\phi_{\mathrm{clb}}=S/m$, $\alpha_{\mathrm{clb}}=ϙ/m$, $\beta_{\mathrm{clb}}$ the potential's |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |

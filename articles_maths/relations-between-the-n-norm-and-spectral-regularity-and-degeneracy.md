@@ -204,11 +204,11 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 
 *Proof.* The first two statements and the last are *The Spectrum*, §*The Spectral Decomposition*, and *The Jordan Basis of a Spectrally Degenerate Biquaternion*, §*The Three Strata*. On $\Sigma_{10}^{\mathrm{J}}$ the minimal polynomial is $(X-Q_t)^2$ and the centraliser is the algebra of dual numbers, whose only idempotents are $0$ and $e_t$.
 
-**Definition (modulus–unit polar decomposition).** A **modulus–unit polar decomposition** of $\tilde Q$ is a writing $\tilde Q=\Rho\tilde U$ with $\Rho\in\mathbb{C}$, $\Rho\neq0$, $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$.
+**Definition (modulus–unit polar decomposition).** A **modulus–unit polar decomposition** of $\tilde Q$ is a writing $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathbb{C}$, $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$.
 
 **Theorem (the polar decomposition follows the norm).** A modulus–unit polar decomposition exists exactly on $\Sigma_{11}\cup\Sigma_{10}$; the modulus is a choice of square root of $\langle\tilde Q\rangle_{\natural}$.
 
-*Proof.* If $N\neq0$, choose a square root $\Rho$ and set $\tilde U=\tilde Q/\Rho$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\Rho\neq0$ has $\Rho^2=0$; at the origin the same equation forces $\Rho=0$. This is the modulus of *The Complete Polar Decomposition of an N-Regular Biquaternion*.
+*Proof.* If $N\neq0$, choose a square root $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and set $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$; then $\langle\tilde U\rangle_{\natural}=1$. If $N=0$ and $\tilde Q\neq0$, no $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$ has $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=0$; at the origin the same equation forces $\varrho\,e^{i\theta_{\mathrm{pha}}}=0$. This is the modulus of *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 **The two decompositions in the strata.**
 
@@ -308,7 +308,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$ | the four sectors of the two predicates |
 | $\Sigma_{10}^{\mathrm{s}},\Sigma_{10}^{\mathrm{J}}$ | the scalar and Jordan strata of $\Sigma_{10}$ |
-| $\Rho,\tilde U$ | the modulus and the unit factor, $\tilde Q=\Rho\tilde U$ with $\Rho^2=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U$ | the modulus and the unit factor, $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}$ and $\langle\tilde U\rangle_{\natural}=1$ |
 | $\vec\Upsilon$ | a non-zero pure nilpotent, $\vec\Upsilon^2=0$ |
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ | left multiplication; rank $4$ on the invertibles, $2$ on the non-zero null elements, $0$ at the origin |
 | $\mathrm{Sd}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ | the two-sided operator, singular exactly on $\mathcal N$ |
@@ -327,4 +327,4 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the same four sectors read through the flow: the eigenbasis, the root and the Hermitian norm.
 
-- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\Rho=\sqrt{N}$ and its failure at $N=0$.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}$ and its failure at $N=0$.

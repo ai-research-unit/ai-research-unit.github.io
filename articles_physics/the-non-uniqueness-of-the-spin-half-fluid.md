@@ -15,12 +15,12 @@ turns into a theorem, and the continuous word does not carry it as data. The las
 
 ### The Map
 
-**The map takes the eight parameters to the element.** With $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ with a unit axis $\vec u_{\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ with a unit axis $\vec u_{\mathrm r}$,
+**The map takes the eight parameters to the element.** With $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ with a unit axis $\vec u_{\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ with a unit axis $\vec u_{\mathrm r}$,
 
 $$
-(r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})
+(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})
 \longmapsto
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}.
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}.
 $$
 
 **The count is $1+1+3+3=8$ against the eight real components of an element, so the map is a map between spaces of the same dimension.** Equality of dimension is necessary for a bijection and is not sufficient for one. What makes it a bijection here is the choice of ranges together with the complete polar decomposition's uniqueness theorem, and the two degenerate loci are where the ranges have to work.
@@ -35,13 +35,13 @@ $$
 
 ### What the Ranges Remove
 
-**Dropping $r>0$ costs one discrete identification and no more.** With $r$ allowed negative, the element at $(-r,\theta_{\mathrm{pha}}+\pi)$ is the one at $(r,\theta_{\mathrm{pha}})$, because the two central factors multiply to the same complex number:
+**Dropping $\varrho>0$ costs one discrete identification and no more.** With $\varrho$ allowed negative, the element at $(-\varrho,\theta_{\mathrm{pha}}+\pi)$ is the one at $(\varrho,\theta_{\mathrm{pha}})$, because the two central factors multiply to the same complex number:
 
 $$
-(-r)e^{i(\theta_{\mathrm{pha}}+\pi)}=r\,e^{i\theta_{\mathrm{pha}}}.
+(-\varrho)e^{i(\theta_{\mathrm{pha}}+\pi)}=\varrho\,e^{i\theta_{\mathrm{pha}}}.
 $$
 
-Checked numerically: the two parameter sets give elements differing by $3.55\times10^{-16}$ in every component, which is the floating-point zero. The range $r>0$ removes exactly this identification, and the range $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ removes the corresponding shift by a half turn.
+Checked numerically: the two parameter sets give elements differing by $3.55\times10^{-16}$ in every component, which is the floating-point zero. The range $\varrho>0$ removes exactly this identification, and the range $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ removes the corresponding shift by a half turn.
 
 **The ranges are therefore doing real work and are not cosmetic.** A formulation that allowed a signed amplitude would carry a discrete label, an element and its negative, and would have to say which one it meant. The corpus's choice, positive amplitude with the phase's range a half turn, puts the label into the sign of the Hermitian norm instead, and the next section states where it lands.
 
@@ -49,11 +49,11 @@ Checked numerically: the two parameter sets give elements differing by $3.55\tim
 
 ### The Density
 
-**Three names for densities are in use in the corpus, and they carry two distinct numbers.** The squared amplitude $\rho=r^{2}$ and the time-dilated density $\gamma\rho$. The third name, the Hermitian norm $\langle\tilde\Xi\rangle_{*}$, is numerically the same as the second: the identity $\langle\tilde\Xi\rangle_{*}=\gamma\rho$ holds on every element of the word, so no computation distinguishes them.
+**Three names for densities are in use in the corpus, and they carry two distinct numbers.** The squared amplitude $\rho=\varrho^{2}$ and the time-dilated density $\gamma\rho$. The third name, the Hermitian norm $\langle\tilde\Xi\rangle_{*}$, is numerically the same as the second: the identity $\langle\tilde\Xi\rangle_{*}=\gamma\rho$ holds on every element of the word, so no computation distinguishes them.
 
 | density | value | what it is |
 | --- | --- | --- |
-| marker density | $\rho=r^{2}$ | the scale squared; nothing conserves it on its own |
+| marker density | $\rho=\varrho^{2}$ | the scale squared; nothing conserves it on its own |
 | charge density | $\gamma\rho$ | the temporal slot of the current, $J^{0}/c$; conserved by the transport equation |
 | Hermitian norm | $\gamma\rho$ | the form $\langle\tilde\Xi\rangle_{*}$; a scalar under the algebra's conjugations, and equal to the charge density |
 
@@ -105,7 +105,7 @@ $$
 
 ## The Discrete Label
 
-**The sign $\varepsilon=\Xi_t/\Rho$ is a function of four parameters and not an independent datum.** Its display is
+**The sign $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is a function of four parameters and not an independent datum.** Its display is
 
 $$
 \varepsilon=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}
@@ -118,7 +118,7 @@ so it is complex off the orthogonal locus, it vanishes at a rotor angle of a hal
 
 **A reader who expects a branch label is not wrong, and the label has moved.** In the standard spinor treatment the sign of the energy is a label of the solution, carried outside the spinor and chosen by the representation. Here the amplitude is positive and the phase's range is a half turn, so the sign has no separate slot: it appears as the sign of the scalar part relative to the modulus, which is $\varepsilon$. The word's ranges are what put it there.
 
-**The consequence is that the word cannot be "continued" through $\varepsilon=0$ by a relabelling.** A formulation with a signed amplitude would pass through zero and change sign; this one has $r>0$ and the modulus $\Rho$ never vanishes on the $N$-regular set, so $\varepsilon$ has no zero to cross. The sign changes only on the locus where $\varepsilon$ is complex, and there it is not a sign.
+**The consequence is that the word cannot be "continued" through $\varepsilon=0$ by a relabelling.** A formulation with a signed amplitude would pass through zero and change sign; this one has $\varrho>0$ and the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ never vanishes on the $N$-regular set, so $\varepsilon$ has no zero to cross. The sign changes only on the locus where $\varepsilon$ is complex, and there it is not a sign.
 
 **The article therefore counts three choices and not four.** The density, the split and the subsidiary condition are choices; the sign is derived. That is the whole of the article's answer to the question of how many spin fluids one field admits.
 
@@ -136,7 +136,7 @@ so it is complex off the orthogonal locus, it vanishes at a rotor angle of a hal
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the map from parameters to elements is injective on the stated ranges except at $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$, where a circle of parameter choices returns one element and the fluid variables are constant on the circle. That the ranges remove the identification $(r,\theta_{\mathrm{pha}})\sim(-r,\theta_{\mathrm{pha}}+\pi)$, checked to $3.55\times10^{-16}$. That the Gordon split is defined up to a total divergence. That the sign $\varepsilon$ is a function of four parameters.
+**Established.** That the map from parameters to elements is injective on the stated ranges except at $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$, where a circle of parameter choices returns one element and the fluid variables are constant on the circle. That the ranges remove the identification $(\varrho,\theta_{\mathrm{pha}})\sim(-\varrho,\theta_{\mathrm{pha}}+\pi)$, checked to $3.55\times10^{-16}$. That the Gordon split is defined up to a total divergence. That the sign $\varepsilon$ is a function of four parameters.
 
 **Interpretation.** That the choice of density is a choice of fluid and not a renaming, since the two values $\rho$ and $\gamma\rho$ obey different equations. That the choice of subsidiary condition is a choice of spin fluid. That the sign's relocation into $\varepsilon$ is a consequence of the ranges rather than a convention. Each is argued here and none is proved.
 
@@ -146,7 +146,7 @@ so it is complex off the orthogonal locus, it vanishes at a rotor angle of a hal
 
 The word is a section of a map from eight parameters to one element. The map is injective on the stated ranges except at two loci, a vanishing rapidity and a vanishing rotor angle, where a circle of parameter choices returns one element. The fluid variables are constant on those circles, so the fibres cost the fluid nothing.
 
-The ranges do real work: a signed amplitude would identify $(r,\theta_{\mathrm{pha}})$ with $(-r,\theta_{\mathrm{pha}}+\pi)$, and the corpus's choice of a positive amplitude and a half-turn phase range removes that identification.
+The ranges do real work: a signed amplitude would identify $(\varrho,\theta_{\mathrm{pha}})$ with $(-\varrho,\theta_{\mathrm{pha}}+\pi)$, and the corpus's choice of a positive amplitude and a half-turn phase range removes that identification.
 
 On top of the word a fluid needs three choices: which density is conserved, how the current is split into a transport and a bound part, and which subsidiary condition closes the spin's transport. Each choice is constrained and none is forced. The sign $\varepsilon$ is not a fourth choice; it is a function of four parameters, and it is $\pm1$ only on the degenerate sector.
 
@@ -154,11 +154,11 @@ On top of the word a fluid needs three choices: which density is conserved, how 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The element and its word |
-| $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The ranges that make the map injective |
-| $\rho=r^{2}$, $\gamma\rho$ | Marker density and charge density |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
-| $\varepsilon=\Xi_t/\Rho$ | Sign, a function of four parameters |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The element and its word |
+| $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The ranges that make the map injective |
+| $\rho=\varrho^{2}$, $\gamma\rho$ | Marker density and charge density |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
+| $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign, a function of four parameters |
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the two axes |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\Sigma_{\mu\nu}$ | Spin generator |

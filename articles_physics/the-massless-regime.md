@@ -111,8 +111,8 @@ checked at $\kappa^{6}$ for $n=7$ to $1.9\times10^{-10}$ and at $n=2$ to $8.9\ti
 **The modulus is zero and the unit factor diverges.**
 
 $$
-\Rho=\sqrt{N}=0,\qquad
-\frac{\tilde Q}{\Rho}\ \text{undefined},\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}=0,\qquad
+\frac{\tilde Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\ \text{undefined},\qquad
 N(\tilde Q^{-1})\ \text{undefined}.
 $$
 
@@ -456,13 +456,13 @@ which is the two-term writing read as an algebra homomorphism. It is the exact a
 **The complete polar decomposition begins with a square root that does not exist.**
 
 $$
-\Rho=\sqrt{N}=0,\qquad
-\tilde Q=\Rho\,\tilde Q_1\ \text{has no solution with }N(\tilde Q_1)=1 .
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}=0,\qquad
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde Q_1\ \text{has no solution with }N(\tilde Q_1)=1 .
 $$
 
 **The failure is total and it is not repairable.** A normalisation by the norm would need $N\neq0$, and the normalisation by the trace is available instead. But the polar word is not only a normalisation: the modulus is its first factor, and every later factor is obtained by dividing by it. So the failure of the first factor removes all of them.
 
-**The physical name for the failure is the absence of a rest frame.** The modulus is the factor by which the polar word carries an element to the ray of the identity, so the value $\Rho=0$ is exactly the statement that no unit carries $\tilde Q$ to the scalar line. A null element has no frame in which it stands still, and the algebraic reason is the vanishing of the modulus and not the vanishing of the momentum.
+**The physical name for the failure is the absence of a rest frame.** The modulus is the factor by which the polar word carries an element to the ray of the identity, so the value $\varrho\,e^{i\theta_{\mathrm{pha}}}=0$ is exactly the statement that no unit carries $\tilde Q$ to the scalar line. A null element has no frame in which it stands still, and the algebraic reason is the vanishing of the modulus and not the vanishing of the momentum.
 
 **The modulus is the only failure, and it is the whole of the failure.** Everything downstream of the modulus fails with it: the inverse, the logarithm, the generator, the polar decomposition and the unit-group parametrisation. Everything upstream of it is intact: the spectrum, the idempotents, the Peirce pair, the kernels, the powers. The stratum is therefore not a place where the algebra stops working; it is a place where one input to one construction is zero.
 

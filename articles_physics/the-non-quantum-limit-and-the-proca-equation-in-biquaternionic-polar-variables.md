@@ -11,49 +11,49 @@
 $$
 \tilde A_\Phi=
 \begin{cases}
-\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}), & \langle\tilde A_\Phi\rangle_\natural=-r^{2}<0,\\[2pt]
-r\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u), & \langle\tilde A_\Phi\rangle_\natural=+r^{2}>0,
+\varepsilon\,i\,\varrho\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}), & \langle\tilde A_\Phi\rangle_\natural=-\varrho^{2}<0,\\[2pt]
+\varrho\,\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}},\hat u), & \langle\tilde A_\Phi\rangle_\natural=+\varrho^{2}>0,
 \end{cases}
 $$
 
-with $r>0$, a discrete $\varepsilon=\pm1$ on the timelike branch, a signed rapidity on the spacelike one, and the axis locked to $\vec A$ there. **Four parameters on each branch and no fifth.**
+with $\varrho>0$, a discrete $\varepsilon=\pm1$ on the timelike branch, a signed rapidity on the spacelike one, and the axis locked to $\vec A$ there. **Four parameters on each branch and no fifth.**
 
-**What that leaves of the four brackets.** Two: the scale's gradient $\partial_\mu\ln r$ and the boost's connection $\Gamma_\mu$. **There is no phase bracket and no rotor bracket**, so the chart has no momentum to read off and no spin to transport.
+**What that leaves of the four brackets.** Two: the scale's gradient $\partial_\mu\ln \varrho$ and the boost's connection $\Gamma_\mu$. **There is no phase bracket and no rotor bracket**, so the chart has no momentum to read off and no spin to transport.
 
 **The two equations the parent proves.**
 
 $$
-\bigl(\Box_\Phi-k_m^2\bigr)r+r\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0 ,
+\bigl(\Box_\Phi-k_m^2\bigr)\varrho+\varrho\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)=0 ,
 \qquad
-\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)+2\sum_\mu\frac{\partial\ln r}{\partial R_\mu}\Gamma_\mu=0 .
+\sum_\mu\Bigl(\frac{\partial\Gamma_\mu}{\partial R_\mu}+\Gamma_\mu^2-\mathrm{Sc}\bigl(\Gamma_\mu^2\bigr)\Bigr)+2\sum_\mu\frac{\partial\ln \varrho}{\partial R_\mu}\Gamma_\mu=0 .
 $$
 
 **The first is the amplitude's equation and the second is the frame's transport**, and there is no third: the two brackets are two unknowns and the two equations exhaust the chart.
 
-**Why the standard ordering fails here, in three lines.** Suppose both brackets slow. Then $\Box_\Phi r/r$ is order two, $\mathrm{Sc}(\Gamma_\mu^2)$ is order two if $\Gamma_\mu$ is order one, and the first equation reads $k_m^2=0$. **The hypothesis contradicts the equation**, so the Proca chart admits no uniformly slow regime.
+**Why the standard ordering fails here, in three lines.** Suppose both brackets slow. Then $\Box_\Phi \varrho/\varrho$ is order two, $\mathrm{Sc}(\Gamma_\mu^2)$ is order two if $\Gamma_\mu$ is order one, and the first equation reads $k_m^2=0$. **The hypothesis contradicts the equation**, so the Proca chart admits no uniformly slow regime.
 
-**The resolution, and it is the article's content.** The oscillation the other families put in a phase is here in the amplitude: for a real plane wave $\vec A=\vec A_0\cos(\vec k\cdot\vec r-\omega r'_{t})$ the scale is $r=\lvert\vec A_0\rvert\lvert\cos(\cdot)\rvert$, and $\partial_\mu\ln r$ is of order $\omega\ge k_m$. **The scale oscillates at the Compton frequency because it carries the whole of the field's oscillation.**
+**The resolution, and it is the article's content.** The oscillation the other families put in a phase is here in the amplitude: for a real plane wave $\vec A=\vec A_0\cos(\vec k\cdot\vec r-\omega r'_{t})$ the scale is $\varrho=\lvert\vec A_0\rvert\lvert\cos(\cdot)\rvert$, and $\partial_\mu\ln \varrho$ is of order $\omega\ge k_m$. **The scale oscillates at the Compton frequency because it carries the whole of the field's oscillation.**
 
-**What follows for the family.** The Proca polar chart is a constraint-analysis chart and not a semiclassical one. **Its non-quantum limit exists only patchwise**, near the extrema of $r$, and there it is the constraint pair the next section states. **The corpus's other Proca articles are not defective for this; the decomposition is.** A Proca field that has a phase is a complex one, and the coupled article's complex carrier restores it — which is why the *coupled* Proca family behaves like the Dirac family and the *free* one does not.
+**What follows for the family.** The Proca polar chart is a constraint-analysis chart and not a semiclassical one. **Its non-quantum limit exists only patchwise**, near the extrema of $\varrho$, and there it is the constraint pair the next section states. **The corpus's other Proca articles are not defective for this; the decomposition is.** A Proca field that has a phase is a complex one, and the coupled article's complex carrier restores it — which is why the *coupled* Proca family behaves like the Dirac family and the *free* one does not.
 
 **What the article establishes, in five sentences.** The free Proca word has a scale and a boost and no phase, because the field is real. Its logarithmic derivative has two brackets, and the parent's two boxed equations are the whole of the chart. The uniform slow ordering is inconsistent with the first equation, and the reason is that the amplitude carries the oscillation. The limit therefore exists only where the amplitude is near an extremum, and there it reads $\sum_\mu\mathrm{Sc}(\Gamma_\mu^2)=k_m^{2}$ — a constraint on the frame, not a mass shell on a momentum. **There are no rays, no current and no spin in this chart, and that is the family's honest statement.**
 
 **What is not new.** The frame decomposition of a real massive vector field, the two branches keyed to the norm's sign, and the constraint reading of a vector field's amplitude are standard. Added here: the observation that the Proca word's absence of phase forces the oscillation into the amplitude, the resulting inconsistency of the uniform slow ordering, and the statement that the family's limit is patchwise.
 
-**The restriction.** The word is defined where $r>0$ and on one branch at a time; the boundary is the cone $\langle\tilde A_\Phi\rangle_\natural=0$, which for a four-vector is the lightlike set.
+**The restriction.** The word is defined where $\varrho>0$ and on one branch at a time; the boundary is the cone $\langle\tilde A_\Phi\rangle_\natural=0$, which for a four-vector is the lightlike set.
 
 **Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\tilde U_{\Psi,\mathrm b}$ the boost; $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ is *not* available here and its unavailability is the finding.
 
 ## The Word and the Two Brackets
 
-**The count, branch by branch.** Timelike: $r$, the rapidity, the two angles of $\hat u_{\mathrm b}$, and the sign $\varepsilon$ — four continuous parameters and one sign for four components with a fixed sign of the norm. Spacelike: $r$, a signed rapidity and the two angles of $\hat u$ — four parameters, with $\hat u=\vec A/\lvert\vec A\rvert$ locked. **The two branches partition the real material sector along the lightlike set**, and the word is exact on each.
+**The count, branch by branch.** Timelike: $\varrho$, the rapidity, the two angles of $\hat u_{\mathrm b}$, and the sign $\varepsilon$ — four continuous parameters and one sign for four components with a fixed sign of the norm. Spacelike: $\varrho$, a signed rapidity and the two angles of $\hat u$ — four parameters, with $\hat u=\vec A/\lvert\vec A\rvert$ locked. **The two branches partition the real material sector along the lightlike set**, and the word is exact on each.
 
 **The two brackets.**
 
 $$
-\frac{\partial\tilde A_\Phi}{\partial R_\mu}=\tilde A_\Phi\Bigl(\frac{\partial\ln r}{\partial R_\mu}+\Gamma_\mu\Bigr),
+\frac{\partial\tilde A_\Phi}{\partial R_\mu}=\tilde A_\Phi\Bigl(\frac{\partial\ln \varrho}{\partial R_\mu}+\Gamma_\mu\Bigr),
 \qquad
-\Gamma_\mu=\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_\mu}-\frac{\partial\ln r}{\partial R_\mu},
+\Gamma_\mu=\tilde A_\Phi^{-1}\frac{\partial\tilde A_\Phi}{\partial R_\mu}-\frac{\partial\ln \varrho}{\partial R_\mu},
 $$
 
 with the first bracket a real central scalar and the second the boost's connection, Hermitian and with no scalar part. **Two brackets of two types**, where the Schrödinger and Dirac charts have four.
@@ -66,27 +66,27 @@ with the first bracket a real central scalar and the second the boost's connecti
 
 **The two candidate orderings, and the test.**
 
-| assignment | $\Box_\Phi r/r$ | $\mathrm{Sc}(\Gamma^2)$ | first equation reads |
+| assignment | $\Box_\Phi \varrho/\varrho$ | $\mathrm{Sc}(\Gamma^2)$ | first equation reads |
 |---|---|---|---|
-| all slow: $\partial\ln r$, $\Gamma$ of order $1$ | $2$ | $2$ | $k_m^{2}=0$ — false |
-| frame slow, scale fast: $\partial\ln r$ of order $0$ | $0$ | $2$ | balanced |
+| all slow: $\partial\ln \varrho$, $\Gamma$ of order $1$ | $2$ | $2$ | $k_m^{2}=0$ — false |
+| frame slow, scale fast: $\partial\ln \varrho$ of order $0$ | $0$ | $2$ | balanced |
 | both fast | $0$ | $0$ | balanced |
 
 **Only the rows where the scale's gradient is order zero survive**, and the reason is that the mass term sits at order zero and something must balance it.
 
-**Why the scale must be fast, said physically.** The field is real and its magnitude is what oscillates: $r^{2}=-\langle\tilde A_\Phi\rangle_\natural$ on the timelike branch, so $r$ inherits the field's own oscillation and its rate is the field's frequency. **There is no separate slow envelope**, because a real field has no phase to absorb the rapid part.
+**Why the scale must be fast, said physically.** The field is real and its magnitude is what oscillates: $\varrho^{2}=-\langle\tilde A_\Phi\rangle_\natural$ on the timelike branch, so $\varrho$ inherits the field's own oscillation and its rate is the field's frequency. **There is no separate slow envelope**, because a real field has no phase to absorb the rapid part.
 
 **The size, made explicit.** For $\vec A=\vec A_0\cos(\vec k\cdot\vec r-\omega r'_{t})$ with $\omega^{2}-\lvert\vec k\rvert^{2}=k_m^{2}$ and $\vec k\cdot\vec A_0=0$,
 
 $$
-r(t')=\lvert\vec A_0\rvert\,\lvert\cos(\omega t')\rvert,
+\varrho(t')=\lvert\vec A_0\rvert\,\lvert\cos(\omega t')\rvert,
 \qquad
-\partial_{t'}\ln r=-\omega\tan(\omega t'),
+\partial_{t'}\ln \varrho=-\omega\tan(\omega t'),
 $$
 
-which is of order $\omega$ everywhere except near the extrema, and $\omega\ge k_m$. **The local length $L=1/\lvert\vec\nabla_\Phi\ln r\rvert$ is $1/\omega$ near a zero crossing**, so the parameter $\epsilon=k_{\Phi}L$ is of order one and there is no expansion.
+which is of order $\omega$ everywhere except near the extrema, and $\omega\ge k_m$. **The local length $L=1/\lvert\vec\nabla_\Phi\ln \varrho\rvert$ is $1/\omega$ near a zero crossing**, so the parameter $\epsilon=k_{\Phi}L$ is of order one and there is no expansion.
 
-**Where a limit does exist.** At an extremum $\partial_\mu\ln r=0$ and the scale is locally stationary, so a patch around it has a slowly varying amplitude. **There the first equation reads $\Box_\Phi r/r+\sum\mathrm{Sc}(\Gamma_\mu^2)=k_m^{2}$ with the curvature now of order zero, so it is a constraint and not a smallness statement**, and the second reads the frame's transport with its density term dropped.
+**Where a limit does exist.** At an extremum $\partial_\mu\ln \varrho=0$ and the scale is locally stationary, so a patch around it has a slowly varying amplitude. **There the first equation reads $\Box_\Phi \varrho/\varrho+\sum\mathrm{Sc}(\Gamma_\mu^2)=k_m^{2}$ with the curvature now of order zero, so it is a constraint and not a smallness statement**, and the second reads the frame's transport with its density term dropped.
 
 **The honest summary of the ordering.** The Proca chart has no parameter; what it has is a set of patches, and the "limit" on a patch is the truncation of the frame's transport and the conversion of the amplitude's equation into a constraint. **That is a weaker statement than in the other families and the article says so.**
 
@@ -95,7 +95,7 @@ which is of order $\omega$ everywhere except near the extrema, and $\omega\ge k_
 **The frame's constraint.**
 
 $$
-\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=k_m^{2}-\frac{\Box_\Phi r}{r}
+\sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=k_m^{2}-\frac{\Box_\Phi \varrho}{\varrho}
 \;\longrightarrow\;
 \sum_\mu\mathrm{Sc}\bigl(\Gamma_\mu^{2}\bigr)=k_m^{2}
 \quad\text{where the amplitude's curvature is negligible} .
@@ -127,7 +127,7 @@ the parent's second equation with the density-gradient coupling deleted. **The d
 
 **The free Proca articles answer the question "what does the non-quantum limit of a massive vector field look like" with "nothing standard", and the reason is the field's reality.** That is a result and not an omission: the other three families have a phase because their fields are complex, and the phase is what a non-quantum limit feeds on.
 
-**The complex carrier changes the answer entirely.** In the coupled article the word regains the phase — $\mathbb{B}$ is closed under multiplication by $i$, so a phase-rotated material element is no longer constrained to be real — and the norm becomes $r^{2}e^{2i\theta_{\mathrm{pha}}}$. **The charge's phase is the norm's argument**, the eikonal returns, and the family behaves like the Dirac one. **The contrast between the free and coupled Proca articles is therefore not a contrast between with and without a potential: it is a contrast between a real and a complex carrier.**
+**The complex carrier changes the answer entirely.** In the coupled article the word regains the phase — $\mathbb{B}$ is closed under multiplication by $i$, so a phase-rotated material element is no longer constrained to be real — and the norm becomes $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. **The charge's phase is the norm's argument**, the eikonal returns, and the family behaves like the Dirac one. **The contrast between the free and coupled Proca articles is therefore not a contrast between with and without a potential: it is a contrast between a real and a complex carrier.**
 
 **The one statement that survives in both.** The norm's argument is where the fast variable lives: a sign for the real field and a phase for the complex one. **A real field's fast variable is discrete and a complex field's is continuous**, and the discrete one cannot carry a derivative, which is why the real chart puts the oscillation in the amplitude instead.
 
@@ -137,9 +137,9 @@ the parent's second equation with the density-gradient coupling deleted. **The d
 
 **The type argument for the absent phase was checked.** The material sector is the anti-Hermitian part of the algebra; multiplication by $i$ maps an anti-Hermitian element to a Hermitian one; so a phase factor maps the material sector off itself. **The absence of the phase is therefore a type fact and not a convention.**
 
-**The obstruction was checked on the parent's first equation.** With both brackets assumed slow, $\Box_\Phi r/r$ and $\mathrm{Sc}(\Gamma_\mu^2)$ are each of order two and the mass term is of order zero, so the equation cannot hold. **The check is an inspection of orders in one display.**
+**The obstruction was checked on the parent's first equation.** With both brackets assumed slow, $\Box_\Phi \varrho/\varrho$ and $\mathrm{Sc}(\Gamma_\mu^2)$ are each of order two and the mass term is of order zero, so the equation cannot hold. **The check is an inspection of orders in one display.**
 
-**The oscillation was checked on a real plane wave.** For $\vec A=\vec A_0\cos(\vec k\cdot\vec r-\omega r'_{t})$ with the Proca dispersion and the Lorenz condition, $r=\lvert\vec A_0\rvert\lvert\cos(\cdot)\rvert$ and $\partial_{t'}\ln r=-\omega\tan(\cdot)$, which is unbounded near the zeros and of order $\omega$ elsewhere. **The parameter $\epsilon$ is of order one**, so no expansion exists.
+**The oscillation was checked on a real plane wave.** For $\vec A=\vec A_0\cos(\vec k\cdot\vec r-\omega r'_{t})$ with the Proca dispersion and the Lorenz condition, $\varrho=\lvert\vec A_0\rvert\lvert\cos(\cdot)\rvert$ and $\partial_{t'}\ln \varrho=-\omega\tan(\cdot)$, which is unbounded near the zeros and of order $\omega$ elsewhere. **The parameter $\epsilon$ is of order one**, so no expansion exists.
 
 **What was not checked.** No solution of the two boxed equations was integrated, and the patchwise truncation's accuracy was not estimated. **The second omission is deliberate**: with no small parameter there is nothing to estimate, and that is the article's claim.
 
@@ -158,10 +158,10 @@ The complex carrier of the coupled article restores the phase, and with it the e
 | Symbol | Meaning |
 |---|---|
 | $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ | The real material four-vector |
-| $r>0$ | The scale; $r^{2}=\mp\langle\tilde A_\Phi\rangle_\natural$ by branch |
+| $\varrho>0$ | The scale; $\varrho^{2}=\mp\langle\tilde A_\Phi\rangle_\natural$ by branch |
 | $\varepsilon=\pm1$ | The sign the real field's norm argument can take |
 | $\theta_{\mathrm{rpd}}$, $\hat u_{\mathrm b}$ | The boost's rapidity and axis |
-| $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi-\partial_\mu\ln r$ | The frame's connection |
+| $\Gamma_\mu=\tilde A_\Phi^{-1}\partial_\mu\tilde A_\Phi-\partial_\mu\ln \varrho$ | The frame's connection |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
 | $k_m=mc/\hbar$ | The mass wave number; the frequency of the amplitude's oscillation |
 | $\epsilon=1/(k_{\Phi}L)$ | Not available in this chart; its unavailability is the finding |

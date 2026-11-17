@@ -105,8 +105,8 @@ The centre of the algebra is $\mathbb{B}_{C}=\mathbb{C}e_t$, two real dimensions
 On the material side the central scalar is the **mass**. For a timelike four-momentum the quaternionic norm is negative and its square root is imaginary. The Hamilton pairing writes
 
 $$
-\tilde P_{\Phi}=\Rho\,e^{\vec U\Theta},\qquad
-\Rho=\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}=imc,
+\tilde P_{\Phi}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\vec U\Theta},\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}=imc,
 $$
 
 so the mass sits on the imaginary central line. Of the three factorisations of a four-vector — quaternion, Hamilton and Cartan — this is the only one whose first factor is central. That factor commutes with every element and is unchanged by every unit-norm congruence.
@@ -122,7 +122,7 @@ so the scalar part is $\tfrac12$ on the real central line, and twice it is one. 
 
 | sector | central line | central scalar | value on the standard object |
 | --- | --- | --- | --- |
-| $\mathbb{B}_{\Phi}$ | $i\mathbb{R}e_t$ | mass $\Rho=imc$ | $\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}$ |
+| $\mathbb{B}_{\Phi}$ | $i\mathbb{R}e_t$ | mass $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$ | $\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}$ |
 | $\mathbb{B}_{\Psi}$ | $\mathbb{R}e_t$ | normalisation $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}$ | $\tfrac12$, doubled to one |
 
 The placement depends on the regime, and the dependence is a single $i$. In the non-relativistic central-scalar limit the mass and the energy are real central scalars in $\mathbb{B}_{\Psi}$, and the material time is the parameter multiplying $ie_t$. Relativistically the four-momentum is in $\mathbb{B}_{\Phi}$ and its doubled scalar part is imaginary. The two statements are the two ends of the same substitution $Q_t=ict'$: the non-relativistic limit drops the $i$, and with it the distinction between the real and the imaginary central lines. The limit is a contraction of the relativistic structure, not a second convention.
@@ -407,8 +407,8 @@ This is the corpus's spectral reading of a four-vector, and the article only rec
 The two readings combine in the Hamilton pairing,
 
 $$
-\tilde P_{\Phi}=\Rho\,e^{\vec U\Theta},\qquad
-\Rho=imc,\qquad
+\tilde P_{\Phi}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\vec U\Theta},\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}}=imc,\qquad
 \Theta=-i\theta_{\mathrm{rpd}},\qquad
 \vec U=\vec u_p,
 $$
@@ -600,7 +600,7 @@ The two sectors use the same two operations in opposite roles. The table is the 
 | $2\,\mathrm{Sc}$ | energy, $2iE/c$ | normalisation, one |
 | quaternionic norm | mass squared, $-m^2c^2$ | impurity, $\tfrac14(1-s^2)$ |
 | scalar product | $\langle\cdot,\cdot\rangle_\natural$, indefinite | $\langle\cdot,\cdot\rangle_*$, positive definite |
-| central scalar | mass $\Rho=imc$ | scalar part $\tfrac12$ |
+| central scalar | mass $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$ | scalar part $\tfrac12$ |
 | fixed by the physics | the norm (the particle's mass) | $2\,\mathrm{Sc}$ (normalisation) |
 | left free by the physics | $2\,\mathrm{Sc}$ (the frame) | the norm (the state) |
 | invariant under | unit-norm congruence | $*$-unitary conjugation |
@@ -763,7 +763,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | --- | --- | --- |
 | the doubled scalar part is the sum of the eigenvalues and the norm their product | established | the characteristic polynomial; checked on 100 elements |
 | energy is twice the scalar part of the four-momentum | established | $2\,\mathrm{Sc}\tilde P_{\Phi}=2iE/c$; checked |
-| mass is the modulus, $\Rho=imc$ | established | $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; checked |
+| mass is the modulus, $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$ | established | $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; checked |
 | $E=mc^2\cosh\theta_{\mathrm{rpd}}$ | established | the Hamilton pairing; checked |
 | the norm is preserved by unit-norm congruence | established | multiplicativity of the quaternionic norm; checked |
 | the doubled scalar part is preserved by $*$-unitary conjugation | established | cyclicity and $\tilde U^*\tilde U=e_t$; checked |
@@ -803,9 +803,9 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 
 - Conjugation by a $*$-unitary element fixes the doubled scalar part and the quaternionic norm of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
 - The algebra attaches two numbers to an element: the doubled scalar part, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
-- On $\mathbb{B}_{\Phi}$ twice the scalar part is energy, $E=-ic\,\mathrm{Sc}\,\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
+- On $\mathbb{B}_{\Phi}$ twice the scalar part is energy, $E=-ic\,\mathrm{Sc}\,\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$.
 - The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde H_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
-- The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
+- The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\varrho\,e^{i\theta_{\mathrm{pha}}} e^{\vec U\Theta}$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
 - Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
 - On $\mathbb{B}_{\Psi}$ twice the scalar part is the normalisation, $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-s^2)$; the entropy is a function of that norm alone.
 - Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the doubled scalar part and the norm, and hence the entropy. Coarse-graining preserves that number, increases the norm and increases the entropy.
@@ -828,7 +828,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 | $\langle\tilde Q_1,\tilde Q_2\rangle_\natural=\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$ | the quaternionic form |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_*=\mathrm{Sc}(\tilde Q_1\tilde Q_2^*)$ | the Hermitian form |
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ | the four-momentum |
-| $\Rho=imc$ | the mass modulus, the central scalar of the material side |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$ | the mass modulus, the central scalar of the material side |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$, $\sinh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert/(mc)$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | the state, $\lvert\vec s_{\Psi}\rvert\le1$ |
 | $S(\tilde{Ϛ}_{\Psi})=h((1+\lvert\vec s_{\Psi}\rvert)/2)$ | the von Neumann entropy |

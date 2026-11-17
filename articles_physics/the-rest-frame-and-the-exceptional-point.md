@@ -707,8 +707,8 @@ $$
 **The stratum has the polar word and lacks the eigenbasis.**
 
 $$
-\tilde Q=\Rho\,\tilde Q_1,\qquad
-\Rho=\sqrt{N}\neq0,\qquad
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde Q_1,\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}\neq0,\qquad
 N(\tilde Q_1)=1,
 $$
 
@@ -718,7 +718,7 @@ so the modulus exists and the word continues into a phase, a Hermitian factor an
 
 | description | $\Sigma_{11}$ | $\Sigma_{10}$ | $\Sigma_{01}$ |
 | --- | --- | --- | --- |
-| modulus $\Rho=\sqrt N$ | exists | exists | does not exist |
+| modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N$ | exists | exists | does not exist |
 | two-term spectral writing | unique | one term, non-unique refinement; none on the Jordan part | unique, with a zero coefficient |
 | eigenbasis | exists | does not exist | exists |
 | canonical Peirce decomposition attached to $\tilde Q$ | exists | does not exist off the scalar line | exists |

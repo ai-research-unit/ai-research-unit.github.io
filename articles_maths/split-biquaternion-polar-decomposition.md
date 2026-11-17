@@ -228,7 +228,7 @@ $$
 
 because $(\lambda \exp(j\tau))(\lambda' \exp(j\tau')) = \lambda\lambda' \exp(j(\tau+\tau'))$. The scale is the geometric mean of the two component moduli and the hyperbolic phase is half the logarithm of their ratio.
 
-This is the exact analogue of the factorisation $R = r\exp(i\theta_{\mathrm{pha}})$ of the biquaternion modulus, with the compact unit circle $\exp(i\theta_{\mathrm{pha}})$ replaced by the hyperbola $\exp(j\tau)$. The replacement is not cosmetic: $\exp(j\tau)$ is not bounded, so the phase factor here is a non-compact factor and carries a non-compact direction of the algebra.
+This is the exact analogue of the factorisation $R = \varrho\exp(i\theta_{\mathrm{pha}})$ of the biquaternion modulus, with the compact unit circle $\exp(i\theta_{\mathrm{pha}})$ replaced by the hyperbola $\exp(j\tau)$. The replacement is not cosmetic: $\exp(j\tau)$ is not bounded, so the phase factor here is a non-compact factor and carries a non-compact direction of the algebra.
 
 ### The Phase Is Central and Hyperbolic
 
@@ -427,7 +427,7 @@ $$
 \lambda = \sqrt{\rho_+\rho_-} = \sqrt{\left|\langle\tilde{Q}\rangle_{\natural}\right|} ,
 $$
 
-which is the exact analogue of the biquaternion scale $r = \sqrt{|\langle\tilde{Q}\rangle_{\natural}|}$; the difference is in the absolute value, which for a complex number is the branch-free modulus and here is the product $\rho_+\rho_-$ of two non-negative reals. Replacing $\tilde{Q}$ by $\mu\tilde{Q}$ with $\mu>0$ multiplies $\lambda$ by $\mu$ and leaves the phase and the rotor unchanged, so the scale is the only factor that changes when the whole element is dilated. Being central, it multiplies both halves equally: the scale is the diagonal part of the pair of dilations of the halves, and the hyperbolic phase is the rest.
+which is the exact analogue of the biquaternion scale $\varrho = \sqrt{|\langle\tilde{Q}\rangle_{\natural}|}$; the difference is in the absolute value, which for a complex number is the branch-free modulus and here is the product $\rho_+\rho_-$ of two non-negative reals. Replacing $\tilde{Q}$ by $\mu\tilde{Q}$ with $\mu>0$ multiplies $\lambda$ by $\mu$ and leaves the phase and the rotor unchanged, so the scale is the only factor that changes when the whole element is dilated. Being central, it multiplies both halves equally: the scale is the diagonal part of the pair of dilations of the halves, and the hyperbolic phase is the rest.
 
 ### The Hyperbolic Phase
 
@@ -611,10 +611,10 @@ $$
 \log\tilde{Q} = \left(\log\tilde{Q}_+\right)\tilde\Pi_1 + \left(\log\tilde{Q}_-\right)\tilde\Pi_2 ,
 $$
 
-with the ordinary quaternion logarithm: for $\tilde q = r\tilde u_{\mathrm r}$ with $r>0$ and a unit quaternion $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2} + \mu\sin\tfrac{\theta}{2}$, $\theta\in[0,2\pi]$, the logarithm is $\log\tilde q = \ln r + \tfrac{\theta}{2}\mu$. It is defined exactly on the invertible elements, the complement of the zero divisors, because the quaternion logarithm is defined on $\mathbb{H}\setminus\{0\}$. It is a relation and not a function: the rotation angle of a unit quaternion is determined modulo $2\pi$, and at the two central points of each half the axis is arbitrary, so that
+with the ordinary quaternion logarithm: for $\tilde q = \varrho\tilde u_{\mathrm r}$ with $\varrho>0$ and a unit quaternion $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2} + \mu\sin\tfrac{\theta}{2}$, $\theta\in[0,2\pi]$, the logarithm is $\log\tilde q = \ln \varrho + \tfrac{\theta}{2}\mu$. It is defined exactly on the invertible elements, the complement of the zero divisors, because the quaternion logarithm is defined on $\mathbb{H}\setminus\{0\}$. It is a relation and not a function: the rotation angle of a unit quaternion is determined modulo $2\pi$, and at the two central points of each half the axis is arbitrary, so that
 
 $$
-\exp\left(2\pi k\,\mu \tilde\Pi_1\right) = e_t \quad\text{for every invertible element pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln r + \pi\mu\right) = -r ,
+\exp\left(2\pi k\,\mu \tilde\Pi_1\right) = e_t \quad\text{for every invertible element pure }\mu\text{ and every }k\in\mathbb{Z} , \qquad \exp\left(\ln \varrho + \pi\mu\right) = -\varrho ,
 $$
 
 both verified to machine precision. The fibre of the exponential over $e_t$ accordingly contains a two-sphere of directions at every non-zero multiple of $2\pi$. The polar decomposition fixes a representative of the logarithm by $\lambda>0$ and $\theta_\pm\in[0,2\pi]$, the branch that the algorithm uses, and it is the only branch choice in the article.

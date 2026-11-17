@@ -608,7 +608,7 @@ which is the material sector minus its two walls: the rest point $\vec p=0$ and 
 
 **The chart was checked on a hundred random real pairs $(E,\vec p)$.** The membership rule agreed with the two predicates on all hundred, and the two walls were the only failures.
 
-**The region is not a causal class.** It contains the timelike momenta $\lvert\vec p\rvert<\lvert E\rvert/c$ and the spacelike momenta $\lvert\vec p\rvert>\lvert E\rvert/c$, and they differ only in the sign of $N$. The name *mass in motion* describes the first; the second is in the same region, with an imaginary mass, $mc=\sqrt{-N}$, and a real polar scale $r=\lvert N\rvert^{1/2}$, which on that branch is a proper length and not a mass.
+**The region is not a causal class.** It contains the timelike momenta $\lvert\vec p\rvert<\lvert E\rvert/c$ and the spacelike momenta $\lvert\vec p\rvert>\lvert E\rvert/c$, and they differ only in the sign of $N$. The name *mass in motion* describes the first; the second is in the same region, with an imaginary mass, $mc=\sqrt{-N}$, and a real polar scale $\varrho=\lvert N\rvert^{1/2}$, which on that branch is a proper length and not a mass.
 
 ### The Doppler Pair
 
@@ -644,7 +644,7 @@ $$
 | light | $\lvert\vec p\rvert=\lvert E\rvert/c$ | one eigenvalue zero | $mc=0$ | the wall, not the region |
 | spacelike | $\lvert\vec p\rvert>\lvert E\rvert/c$ | on opposite imaginary halves | imaginary $mc$ | a spacelike momentum |
 
-**The polar modulus is a different letter.** $\Rho=\sqrt N$ is real and positive on the spacelike branch, where $r=\lvert N\rvert^{1/2}$ is a proper length; on the timelike branch $\Rho=imc$ is purely imaginary and $r=mc$. The mass column above is $mc=\sqrt{-N}$, which is the reading the causal sign gives and not the modulus of the polar word.
+**One real letter, two readings, and the branch chooses.** On the spacelike branch $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N$ is real and positive, and $\varrho=\lvert N\rvert^{1/2}$ is a proper length; on the timelike branch $\varrho\,e^{i\theta_{\mathrm{pha}}}=imc$ is purely imaginary and $\varrho=mc$. The mass column above is $mc=\sqrt{-N}$, which is the reading the causal sign gives and not the modulus of the polar word.
 
 **The two branches are the same spectral type.** Both have $N\neq0$ and $B^{2}\neq0$, both have two distinct eigenvalues, and both admit the two-term writing. The difference is the position of the eigenvalues on the imaginary axis and the sign of $N$.
 
@@ -715,17 +715,17 @@ which is the invariant mass of the pair. At fixed energies it is largest for ant
 **The region is the domain of the polar word.** With the modulus
 
 $$
-\Rho=\sqrt{N}\neq0,\qquad
-\tilde Q=\Rho\,\tilde Q_1,\qquad N(\tilde Q_1)=1,
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}\neq0,\qquad
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde Q_1,\qquad N(\tilde Q_1)=1,
 $$
 
 every element of the region has a unique writing
 
 $$
-\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $r=\lvert N\rvert^{1/2}$, a central phase, a Hermitian boost and a real rotor. The check $N(\tilde Q/\Rho)=1$ closed to $1\times10^{-15}$ over a hundred elements.
+with $\varrho=\lvert N\rvert^{1/2}$, a central phase, a Hermitian boost and a real rotor. The check $N(\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}}))=1$ closed to $1\times10^{-15}$ over a hundred elements.
 
 **The region is the only stratum on which both decompositions exist.** On $\Sigma_{01}$ the modulus vanishes and the polar word fails while the spectral decomposition survives. On $\Sigma_{10}$ the modulus survives and the spectral decomposition fails, either outright on the Jordan part or by becoming a one-term non-unique writing on the scalar line. The region is where an element has both a spectrum and a frame.
 
@@ -979,7 +979,7 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | a material four-momentum |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$ |
 | $\theta_{\mathrm{rest}}$ | the rapidity that carries the momentum to rest |
-| $\Rho=\sqrt{N}$, $r=\lvert N\rvert^{1/2}$ | the modulus of the polar word |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}$, $\varrho=\lvert N\rvert^{1/2}$ | the modulus of the polar word |
 | $\theta_{\mathrm{pha}}$ | the central phase of the polar word |
 | $\langle\tilde X\rangle_{*}$ | the Hermitian norm $\operatorname{Sc}(\tilde X\tilde X^{*})$ |
 | $\vec U=\vec Q/B$ | the normalised axis |

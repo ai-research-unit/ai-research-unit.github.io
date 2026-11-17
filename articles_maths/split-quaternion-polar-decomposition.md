@@ -6,12 +6,12 @@
 This article is about the polar decomposition in the split-quaternion algebra $\mathbb{H}_{\mathrm{spl}}$, the second of the four algebras whose polar decompositions this series treats. The result is that an invertible split quaternion is the product of three factors,
 
 $$
-\tilde q = r\,b\,\tilde u_{\mathrm r},
+\tilde q = \varrho\,b\,\tilde u_{\mathrm r},
 $$
 
 namely
 
-- a positive real scale $r$ ($r \in \mathbb{R}$, $r>0$);
+- a positive real scale $\varrho$ ($\varrho \in \mathbb{R}$, $\varrho>0$);
 - an invertible element boost $b$ ($b \in \mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$, $\langle b\rangle_{\natural}=1$);
 - an orthogonal factor $\tilde u_{\mathrm r}$, a rotation in the timelike case and a reflection in the spacelike case.
 
@@ -29,11 +29,11 @@ No physics is invoked.
 
 ## The Word as Exponentials
 
-The word $\tilde q = r\,b\,\tilde u_{\mathrm r}$ is a product of three factors, and the scale and the boost are exponentials while the orthogonal factor is a rotation exponential times an optional discrete reflection:
+The word $\tilde q = \varrho\,b\,\tilde u_{\mathrm r}$ is a product of three factors, and the scale and the boost are exponentials while the orthogonal factor is a rotation exponential times an optional discrete reflection:
 
 $$
 \boxed{\;
-\tilde q = \exp(\ln r)\,\exp(\sigma)\cdot \tilde u_{\mathrm r} , \qquad r = \sqrt{\lvert \langle\tilde q\rangle_{\natural}\rvert} > 0 , \qquad \sigma\in\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}
+\tilde q = \exp(\ln \varrho)\,\exp(\sigma)\cdot \tilde u_{\mathrm r} , \qquad \varrho = \sqrt{\lvert \langle\tilde q\rangle_{\natural}\rvert} > 0 , \qquad \sigma\in\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}
 \;},
 $$
 
@@ -41,7 +41,7 @@ with $\tilde u_{\mathrm r} = \exp(\tfrac{\theta}{2}\vec e_x)$ in the timelike ca
 
 | # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
 |---|---|---|---|---|---|---|---|---|
-| 1 | $r$ | scale | $1$ | $\exp(\ln r)$ | hyperbolic | $r$ | $r = \sqrt{\lvert \langle\tilde q\rangle_{\natural}\rvert} > 0$ | $e_t$ |
+| 1 | $\varrho$ | scale | $1$ | $\exp(\ln \varrho)$ | hyperbolic | $\varrho$ | $\varrho = \sqrt{\lvert \langle\tilde q\rangle_{\natural}\rvert} > 0$ | $e_t$ |
 | 2 | $b$ | boost | $2$ | $\exp(\sigma)$ | hyperbolic | $b \in \mathrm{P}$, $\langle b\rangle_{\natural} = 1$ | $\sigma \in \operatorname{span}\{\vec e_y,\vec e_z\}$ | $\sigma/\lvert\sigma\rvert$ |
 | 3 | $\tilde u_{\mathrm r}$ | orthogonal factor | $1$ | $\exp\bigl(\tfrac{\theta}{2}\vec e_x\bigr)$ | trigonometric | $\cos\tfrac{\theta}{2} + \sin\tfrac{\theta}{2}\,\vec e_x$, times $\vec e_y$ in the spacelike case | rotation angle $\theta$, $\vec e_y$ discrete | $\vec e_x$ |
 
@@ -127,10 +127,10 @@ which is the algebra's name for $XX^{T}$ and which is symmetric and positive def
 **Definition.** Let $\tilde q \in \mathbb{H}_{\mathrm{spl}}$ with $\langle\tilde q\rangle_{\natural} \neq 0$. The **polar decomposition** of $\tilde q$ is the writing
 
 $$
-\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r \in \mathbb{R},\quad r > 0, \qquad b \in \mathbb{H}_{\mathrm{spl}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{spl}},\quad \tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1,
+\tilde q = \varrho\,b\,\tilde u_{\mathrm r} , \qquad \varrho \in \mathbb{R},\quad \varrho > 0, \qquad b \in \mathbb{H}_{\mathrm{spl}},\quad b_{\tau} = b,\quad \langle b\rangle_{\natural} = 1,\quad b \text{ positive definite}, \qquad \tilde u_{\mathrm r} \in \mathbb{H}_{\mathrm{spl}},\quad \tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1,
 $$
 
-in which $r$ is the **modulus**, $b$ the **unit boost** and $\tilde u_{\mathrm r}$ the **orthogonal factor**.
+in which $\varrho$ is the **modulus**, $b$ the **unit boost** and $\tilde u_{\mathrm r}$ the **orthogonal factor**.
 
 Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Norm and Unitary Conventions*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $\langle\cdot\rangle_{\natural}$, the boost is the level set $\langle b\rangle_{\natural}=1$ inside the positive definite elements, and the orthogonal factor has $\langle\tilde u_{\mathrm r}\rangle_{\natural}=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of invertibles** ${\mathbb{H}_{\mathrm{spl}}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
 
@@ -147,7 +147,7 @@ $$
 where the square root is the symmetric positive definite root, which exists and is unique because $\Sigma$ is symmetric positive definite; in the matrix picture this is the standard positive square root of $XX^{T}$, computed for a two-by-two matrix by
 
 $$
-\sqrt{\begin{pmatrix} p & q \\ q & r\end{pmatrix}} = \frac{1}{\sqrt{p+r+2\sqrt{pr-q^2}}}\begin{pmatrix} p+\sqrt{pr-q^2} & q \\ q & r+\sqrt{pr-q^2}\end{pmatrix},
+\sqrt{\begin{pmatrix} p & q \\ q & \varrho\end{pmatrix}} = \frac{1}{\sqrt{p+\varrho+2\sqrt{p\varrho-q^2}}}\begin{pmatrix} p+\sqrt{p\varrho-q^2} & q \\ q & \varrho+\sqrt{p\varrho-q^2}\end{pmatrix},
 $$
 
 which is the closed form of the Cayley-Hamilton square root. The element $P$ is symmetric, and its determinant is
@@ -161,7 +161,7 @@ because the determinant of the product is the product of the determinants and $\
 The modulus is the square root of that determinant,
 
 $$
-r = \sqrt{\det P} = \sqrt{|\langle\tilde q\rangle_{\natural}|} ,
+\varrho = \sqrt{\det P} = \sqrt{|\langle\tilde q\rangle_{\natural}|} ,
 $$
 
 a positive real. The absolute value is forced: for spacelike $\tilde q$ the determinant $\det X = \langle\tilde q\rangle_{\natural}$ is negative, its square root is not real, and the modulus must be taken from $|\langle\tilde q\rangle_{\natural}|$ instead. The sign that the absolute value discards is not lost; it reappears in the orthogonal factor, as the next subsection shows.
@@ -171,7 +171,7 @@ a positive real. The absolute value is forced: for spacelike $\tilde q$ the dete
 The boost is the scale-free part of the positive element,
 
 $$
-b = \frac{P}{r}, \qquad \det b = \frac{\det P}{r^2} = \frac{|\langle\tilde q\rangle_{\natural}|}{|\langle\tilde q\rangle_{\natural}|} = 1 .
+b = \frac{P}{\varrho}, \qquad \det b = \frac{\det P}{\varrho^2} = \frac{|\langle\tilde q\rangle_{\natural}|}{|\langle\tilde q\rangle_{\natural}|} = 1 .
 $$
 
 It is symmetric, positive definite, and of determinant and norm one, so it lies in the intersection of the symmetric subspace with $SL(2,\mathbb{R})$: the two conditions $b_{\tau} = b$ and $\langle b\rangle_{\natural} = 1$ of the definition are met. The set of such elements is the two-dimensional hyperbolic plane, the symmetric space of the algebra; it is the analogue of the Hermitian positive boosts of the biquaternion algebra, and it is what the quaternion algebra lacks.
@@ -181,7 +181,7 @@ It is symmetric, positive definite, and of determinant and norm one, so it lies 
 The orthogonal factor is the complement of the positive factor,
 
 $$
-\tilde u_{\mathrm r} = P^{-1}\tilde q = \frac{1}{r}\,b^{-1}\tilde q ,
+\tilde u_{\mathrm r} = P^{-1}\tilde q = \frac{1}{\varrho}\,b^{-1}\tilde q ,
 $$
 
 and it is orthogonal in the algebra's transpose sense. Indeed
@@ -202,9 +202,9 @@ so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the 
 
 **Theorem.** Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar decomposition.
 
-*Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.
+*Existence.* For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $\varrho = \sqrt{\det P}$, $b = P/\varrho$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $\varrho>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = \varrho(P/\varrho)(P^{-1}\tilde q) = \tilde q$.
 
-*Uniqueness.* Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = r^2 b^2 = r'^2 b'^2$. The element $r^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $r^2 = r'^2$, whence $r = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.
+*Uniqueness.* Suppose $\tilde q = rb\tilde u_{\mathrm r} = r'b'\tilde u_{\mathrm r}'$ with both triples admissible. Then $\tilde q\tilde q_{\tau} = \varrho^2 b^2 = r'^2 b'^2$. The element $\varrho^2b^2$ is symmetric positive definite, and its symmetric positive definite square root is unique, so $rb = r'b'$. Taking norms gives $\varrho^2 = r'^2$, whence $\varrho = r'$ because both are positive, then $b = b'$, then $\tilde u_{\mathrm r} = \tilde u_{\mathrm r}'$.
 
 The uniqueness is without sign ambiguity, as in the quaternion case, and for the same reason: the modulus is required to be positive, and that requirement pins down the square root.
 
@@ -212,7 +212,7 @@ The uniqueness is without sign ambiguity, as in the quaternion case, and for the
 
 The decomposition behaves differently on the two invertible classes, and the difference is entirely in the orthogonal factor.
 
-| class of $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $b$ | $\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}$ is |
+| class of $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $\varrho$ | $b$ | $\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}$ is |
 |---|---|---|---|---|---|
 | timelike | $>0$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | unit boost | $\langle\tilde u_{\mathrm r}\rangle_{\natural} = +1$ | a rotation, $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x$ |
 | spacelike | $<0$ | $\sqrt{-\langle\tilde q\rangle_{\natural}}$ | unit boost | $\langle\tilde u_{\mathrm r}\rangle_{\natural} = -1$ | a reflection times a rotation, $\tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\vec e_y$ |
@@ -299,7 +299,7 @@ $$
 a timelike element. The matrix is $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 3 & 0 \\ 2 & 3\end{pmatrix}$, and $\tilde q\tilde q_{\tau}$ has matrix $\begin{pmatrix} 9 & 6 \\ 6 & 13\end{pmatrix}$, whose determinant is $117-36 = 81 = \langle\tilde q\rangle_{\natural}^2$. The modulus is
 
 $$
-r = \sqrt{9} = 3 ,
+\varrho = \sqrt{9} = 3 ,
 $$
 
 the boost is
@@ -327,7 +327,7 @@ with $\langle\tilde u_{\mathrm r}\rangle_{\natural} = +1$, as the timelike class
 Take $\tilde q = 1+\vec e_x+2\vec e_y$, so $\langle\tilde q\rangle_{\natural} = 1+1-4 = -2 < 0$, a spacelike element, with $\mathsf{M}_2(\tilde q) = \begin{pmatrix} 1 & 1 \\ 3 & 1\end{pmatrix}$ and $\tilde q\tilde q_{\tau}$ of matrix $\begin{pmatrix} 2 & 4 \\ 4 & 10\end{pmatrix}$. Then
 
 $$
-r = \sqrt{2}, \qquad b = 1.414213562 + 0.707106781\,\vec e_y + 0.707106781\,\vec e_z , \qquad \sigma = 0.623225240\left(\vec e_y+\vec e_z\right),
+\varrho = \sqrt{2}, \qquad b = 1.414213562 + 0.707106781\,\vec e_y + 0.707106781\,\vec e_z , \qquad \sigma = 0.623225240\left(\vec e_y+\vec e_z\right),
 $$
 
 and
@@ -340,7 +340,7 @@ which is the reflection with zero angle: the element is rational in the sense th
 
 ### A Lightlike Element
 
-Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q_{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar decomposition exists, and none of the three factors survives.
+Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q_{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/\varrho$ is not defined. No polar decomposition exists, and none of the three factors survives.
 
 The failure is characteristic of the null cone and not of a particular element: every lightlike $\tilde q$ has $\det\mathsf{M}_2(\tilde q) = 0$, hence $\tilde q\tilde q_{\tau}$ of rank at most one, hence no positive definite square root.
 
@@ -350,7 +350,7 @@ The two decompositions differ in structure, and the difference is summarised by 
 
 | slot | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{spl}}$, timelike | $\mathbb{H}_{\mathrm{spl}}$, spacelike |
 |---|---|---|---|
-| scale $r$ | $1$ | $1$ | $1$ |
+| scale $\varrho$ | $1$ | $1$ | $1$ |
 | central phase | $0$ | $0$ | $0$ |
 | boost $b$ | $0$ | $2$ | $2$ |
 | rotor $\tilde u_{\mathrm r}$ | $3$ | $1$ | $1$ plus a discrete reflection |
@@ -369,7 +369,7 @@ Three points of the comparison are worth stating explicitly.
 Let $\tilde q$ be a split quaternion with $\langle\tilde q\rangle_{\natural}\neq0$. Then $\tilde q$ has exactly one polar decomposition
 
 $$
-\tilde q = r\,b\,\tilde u_{\mathrm r} , \qquad r = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0 ,
+\tilde q = \varrho\,b\,\tilde u_{\mathrm r} , \qquad \varrho = \sqrt{|\langle\tilde q\rangle_{\natural}|} > 0 ,
 $$
 
 in which $b$ is the unique symmetric positive definite element with $b_{\tau} = b$ and $\langle b\rangle_{\natural} = 1$, and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ is the orthogonal factor, of determinant $\operatorname{sign}\langle\tilde q\rangle_{\natural}$. The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and is the exponential of an element of $\operatorname{span}\{\vec e_y,\vec e_z\}$, with the closed form $\sigma = \operatorname{arccosh}(b_1)(b_2\vec e_y+b_3\vec e_z)/\sqrt{b_2^2+b_3^2}$. The orthogonal factor is a rotation $\cos\theta+\sin\theta\,\vec e_x$ when $\tilde q$ is timelike and a rotation times the reflection $\vec e_y$ when $\tilde q$ is spacelike. On the null cone, where $\langle\tilde q\rangle_{\natural} = 0$, no polar decomposition exists. Of the four series slots, two are filled here, the scale and the boost, together with a one-parameter rotor; the central phase is absent because the centre is $\mathbb{R}$.
@@ -385,8 +385,8 @@ in which $b$ is the unique symmetric positive definite element with $b_{\tau} = 
 | $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, of inertia $(2,2)$ |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{H}_{\mathrm{spl}} \to M_2(\mathbb{R})$ |
 | $\Sigma = \tilde q\tilde q_{\tau}$, $P = \sqrt{\Sigma}$ | the positive element and its symmetric positive definite square root |
-| $r = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |
-| $b = P/r$ | the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$ |
+| $\varrho = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |
+| $b = P/\varrho$ | the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$ |
 | $\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$ | the boost subspace, symmetric traceless images |
 | $\tilde u_{\mathrm r} = P^{-1}\tilde q$ | the orthogonal factor, $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$ |
 | timelike, spacelike, lightlike | $N > 0$, $N < 0$, $N = 0$ |

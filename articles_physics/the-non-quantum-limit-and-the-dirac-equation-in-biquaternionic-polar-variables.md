@@ -4,10 +4,10 @@
 
 **The limit in one sentence.** The word has four factors, its derivative has four brackets, and the limit assigns an order to each bracket: the phase's is order zero, the scale's and the frame's are order one, and the terms quadratic in them are order two.
 
-**The parent supplies the four brackets.** [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) proves that for $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ the derivative is $\partial_\mu\tilde\Xi=\tilde\Xi\,\mathcal A_\mu$ with
+**The parent supplies the four brackets.** [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) proves that for $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ the derivative is $\partial_\mu\tilde\Xi=\tilde\Xi\,\mathcal A_\mu$ with
 
 $$
-\mathcal A_\mu=\tfrac12\partial_\mu\ln r^{2}+i\,\partial_\mu\theta_{\mathrm{pha}}
+\mathcal A_\mu=\tfrac12\partial_\mu\ln \varrho^{2}+i\,\partial_\mu\theta_{\mathrm{pha}}
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
 $$
@@ -28,17 +28,17 @@ and that the four brackets are of four types. **The limit is an ordering of thes
 
 **The restriction.** The complete polar decomposition exists only for an $N$-regular element, $N(\tilde\Xi)\neq0$, and the parent's boxed statement says so. The limit is defined on that domain and nowhere else, and a node is where both the word and the spin's axis lose their meaning.
 
-**Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ and the boost and rotor real units; $S=\hbar\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=mc/\hbar$; $\rho=r^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln r\rvert$.
+**Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ and the boost and rotor real units; $S=\hbar\theta_{\mathrm{pha}}$; $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$; $\tilde P_\Phi=imc\,\tilde U_{\Psi,\mathrm b}^{-2}$ and $\tilde V_\Phi=\tilde P_\Phi/m=\gamma(ic\,e_{t}+\vec v)$; $k_m=mc/\hbar$; $\rho=\varrho^{2}$; $\epsilon=1/(k_{\Phi}L)$ with $k_{\Phi}=\lvert\vec p\rvert/\hbar$ and $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 
 ## The Word and the Four Brackets
 
-**The word and its existence.** $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, defined where $N(\tilde\Xi)\neq0$. **A scale, a phase, a boost and a rotor**: four factors and eight real parameters on the central class's complement.
+**The word and its existence.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, defined where $N(\tilde\Xi)\neq0$. **A scale, a phase, a boost and a rotor**: four factors and eight real parameters on the central class's complement.
 
 **The four brackets and their types, from the parent.**
 
 | term | type | what it is |
 |---|---|---|
-| $\tfrac12\partial_\mu\ln r^{2}$ | real central scalar | the density's transport |
+| $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | the density's transport |
 | $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the momentum, $\tilde K_\Phi$ |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the velocity's transport |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the spin's transport |
@@ -73,7 +73,7 @@ so the spin is the density times the image of the declared axis, and its magnitu
 
 | bracket | order | reason |
 |---|---|---|
-| $\tfrac12\partial_\mu\ln r^{2}$ | $1$ | one derivative of the scale |
+| $\tfrac12\partial_\mu\ln \varrho^{2}$ | $1$ | one derivative of the scale |
 | $i\partial_\mu\theta_{\mathrm{pha}}$ | $0$ | one derivative of the phase |
 | boost connection | $1$ | the velocity field of a slowly varying fluid |
 | rotor connection | $1$ | the spin follows the momentum, which varies at order $1$ |
@@ -146,11 +146,11 @@ with $\vec\Omega_{\mathrm{sp}}$ the precession's angular velocity, whose two con
 
 ## Order Two: What a First-Order Equation Does Not Have
 
-**The Dirac equation is first order, so its polar form carries no amplitude-curvature term of the Klein–Gordon type.** There is no $\Box_\Phi r/r$ in it, and no term that is a second derivative of the scale standing alone. **That is a structural difference between the families and not a detail**, because it means the Dirac limit's order-two content cannot be the scalar quantum potential.
+**The Dirac equation is first order, so its polar form carries no amplitude-curvature term of the Klein–Gordon type.** There is no $\Box_\Phi \varrho/\varrho$ in it, and no term that is a second derivative of the scale standing alone. **That is a structural difference between the families and not a detail**, because it means the Dirac limit's order-two content cannot be the scalar quantum potential.
 
 **What is order two is the product of two order-one brackets.** The derivative of the word is a single element $\mathcal A_\mu$; a second derivative produces $\mathcal A_\mu\mathcal A_\nu$-type products, and those are the only quadratic objects the theory has. Their scalar part is a combination of the density's gradient squared and the frame's connections squared, and their vector part is a spin-direction times a curvature.
 
-**The scalar part reproduces the Klein–Gordon quantum potential when the equation is iterated.** Applying the first-order equation twice returns a second-order equation for the two chiral parts, and the scalar part of that iteration is $-\hbar^{2}\Box_\Phi r/(2mr)$ together with the frame's contributions. **So the quantum potential is not a term of the Dirac equation: it is a term of its square**, and the corpus's statements about it in this family are statements about the iterated equation.
+**The scalar part reproduces the Klein–Gordon quantum potential when the equation is iterated.** Applying the first-order equation twice returns a second-order equation for the two chiral parts, and the scalar part of that iteration is $-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ together with the frame's contributions. **So the quantum potential is not a term of the Dirac equation: it is a term of its square**, and the corpus's statements about it in this family are statements about the iterated equation.
 
 **The spin-dependent part of order two is not in the corpus, and this article records that as a gap.** The vector part of the quadratic bracket is a spin-direction times a curvature, and it would be the spin's back-reaction on the transport laws. **No article derives it**, the spin-fluid literature has it, and a treatment that claimed the Dirac limit is complete without it would be overstating. The honest count is: the scalar part is derived, the spin transport at order one is derived, and the spin's order-two back-reaction is not.
 
@@ -166,7 +166,7 @@ with $\vec\Omega_{\mathrm{sp}}$ the precession's angular velocity, whose two con
 
 ## Verification
 
-**The logarithmic derivative was checked numerically.** With $r$, $\theta_{\mathrm{pha}}$, the boost's rapidity and axis, and the rotor's angle and axis all varying along one parameter, the element was formed, differentiated by central differences, and multiplied on the left by its inverse. The result was compared with the four brackets computed independently. **Residual below $10^{-10}$ on three test paths**, with the boost generated by $i\sinh(\theta/2)\hat u$ and the rotor by $\sin(\phi/2)\hat n$, which are the invertibles the algebra requires.
+**The logarithmic derivative was checked numerically.** With $\varrho$, $\theta_{\mathrm{pha}}$, the boost's rapidity and axis, and the rotor's angle and axis all varying along one parameter, the element was formed, differentiated by central differences, and multiplied on the left by its inverse. The result was compared with the four brackets computed independently. **Residual below $10^{-10}$ on three test paths**, with the boost generated by $i\sinh(\theta/2)\hat u$ and the rotor by $\sin(\phi/2)\hat n$, which are the invertibles the algebra requires.
 
 **The brackets' types were checked against the parent's table.** The boost's contribution has zero scalar part because the boost is invertible; the rotor's is a real vector part; the phase's is central imaginary; the scale's is real central. **All four were confirmed on the same test paths.**
 
@@ -192,8 +192,8 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $r>0$, $\rho=r^{2}$ | The scale; the density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
+| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action |
 | $\tilde U_{\Psi,\mathrm b}$ | The boost, a real unit |
 | $\tilde u_{\mathrm r}$ | The rotor, a real unit |
@@ -204,7 +204,7 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 | $\tilde J_\Phi=\rho\tilde V_\Phi$ | The current, exact |
 | $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of a slow quantity |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ | The scalar quantum potential |
+| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The scalar quantum potential |
 
 ## Further Reading
 

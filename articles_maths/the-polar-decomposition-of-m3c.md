@@ -119,9 +119,9 @@ $$
 
 The fourth equality uses that the transpose does not change the trace and that $H$ and $S$ are Hermitian and anti-Hermitian, so $H^{\mathsf T}=\bar H$ and $S^{\mathsf T}=-\bar S$. Hence $\operatorname{tr}(SH)$ is purely imaginary, $\operatorname{tr}(S^{*}H)$ is purely imaginary, and the real part of the trace form vanishes on the pair. The real part is the Riemannian metric and the imaginary part is the symplectic form.
 
-**The singular set.** The map $A\mapsto P=|A|$ is continuous everywhere and smooth away from $\det A=0$. On the singular set the rank drops and the $*$-unitary factor is not unique: the fibre over a matrix of rank $r$ is the $*$-unitary group of the kernel, of real dimension $(3-r)^{2}$. For $r=2$ the fibre is $U(1)$, of dimension $1$; for $r=1$ it is $U(2)$, of dimension $4$; for $r=0$ it is $U(3)$, of dimension $9$.
+**The singular set.** The map $A\mapsto P=|A|$ is continuous everywhere and smooth away from $\det A=0$. On the singular set the rank drops and the $*$-unitary factor is not unique: the fibre over a matrix of rank $\varrho$ is the $*$-unitary group of the kernel, of real dimension $(3-\varrho)^{2}$. For $\varrho=2$ the fibre is $U(1)$, of dimension $1$; for $\varrho=1$ it is $U(2)$, of dimension $4$; for $\varrho=0$ it is $U(3)$, of dimension $9$.
 
-**Proof.** If $A=UP$ and $A$ has rank $r$, then $P$ has rank $r$ and $\ker P=\ker A$ has dimension $3-r$. The equation $A=U'P$ holds exactly when $U'=U$ on $\operatorname{im}P$ and $U'$ is any $*$-unitary on $\ker P$; the freedom is $U(3-r)$, of real dimension $(3-r)^{2}$.
+**Proof.** If $A=UP$ and $A$ has rank $\varrho$, then $P$ has rank $\varrho$ and $\ker P=\ker A$ has dimension $3-\varrho$. The equation $A=U'P$ holds exactly when $U'=U$ on $\operatorname{im}P$ and $U'$ is any $*$-unitary on $\ker P$; the freedom is $U(3-\varrho)$, of real dimension $(3-\varrho)^{2}$.
 
 ## Worked Example
 
@@ -199,7 +199,7 @@ $$
 
 with $|u|=1$. Every $u$ on the unit circle gives a polar decomposition, because the third coordinate of $P$ is zero and the third column of $U$ never appears in $UP$. The fibre is $U(1)$, of real dimension $1=(3-2)^{2}$.
 
-**The general fibre.** For $A$ of rank $r$, the positive factor has rank $r$ and kernel of dimension $3-r$. The $*$-unitary factor is fixed on $(\ker A)^{\perp}$ and arbitrary on the kernel, so the fibre is $U(3-r)$, of real dimension $(3-r)^{2}$. The factor $P$ is always unique, even when $U$ is not.
+**The general fibre.** For $A$ of rank $\varrho$, the positive factor has rank $\varrho$ and kernel of dimension $3-\varrho$. The $*$-unitary factor is fixed on $(\ker A)^{\perp}$ and arbitrary on the kernel, so the fibre is $U(3-\varrho)$, of real dimension $(3-\varrho)^{2}$. The factor $P$ is always unique, even when $U$ is not.
 
 **The partial isometry.** When $A$ is singular, the operator $U$ defined by $U(Pa)=Aa$ is an isometry from $\operatorname{im}P$ onto $\operatorname{im}A$ and zero on $\ker A$; it is a **partial isometry**, with $U^{*}U$ the orthogonal projector onto $(\ker A)^{\perp}$ and $UU^{*}$ the orthogonal projector onto $\operatorname{im}A$. It is $*$-unitary exactly when both projections are the identity, that is, when $A$ is invertible.
 
@@ -285,7 +285,7 @@ The gauge torus $T$ acts on the frame by $S\mapsto ST$, and the two factors of t
 
 ## Summary
 
-Every $A\in M_3(\mathbb{C})$ has a polar decomposition $A=UP$, with $P=|A|=(A^{*}A)^{1/2}$ positive semidefinite and unique, and $U$ $*$-unitary when $A$ is invertible, a partial isometry in general. The factors are read from the singular value decomposition $A=W\Sigma V^{*}$: $P=V\Sigma V^{*}$ and $U=WV^{*}$. On $GL_3(\mathbb{C})$ the map $(U,P)\mapsto UP$ is a diffeomorphism $U(3)\times\operatorname{Herm}_{>0}(3)\to GL_3(\mathbb{C})$, and the real dimensions match, $9+9=18$. The decomposition is the Cartan decomposition of $GL_3(\mathbb{C})$ as a real group for the involution $\mathrm{J}(X)=-X^{*}$, and the symmetric space is the positive definite cone $\operatorname{Herm}_{>0}(3)\cong\mathbb{R}^{9}$, of rank $3$. On the singular set the factor $P$ stays unique and the $*$-unitary factor is free on the kernel: the fibre over a matrix of rank $r$ is $U(3-r)$, of real dimension $(3-r)^{2}$. For a rank-one idempotent $E=u\varphi$ the polar factors are $P=\|u\|\,\varphi^{*}\varphi/\|\varphi\|$ and $U=u\varphi/(\|u\|\,\|\varphi\|)$.
+Every $A\in M_3(\mathbb{C})$ has a polar decomposition $A=UP$, with $P=|A|=(A^{*}A)^{1/2}$ positive semidefinite and unique, and $U$ $*$-unitary when $A$ is invertible, a partial isometry in general. The factors are read from the singular value decomposition $A=W\Sigma V^{*}$: $P=V\Sigma V^{*}$ and $U=WV^{*}$. On $GL_3(\mathbb{C})$ the map $(U,P)\mapsto UP$ is a diffeomorphism $U(3)\times\operatorname{Herm}_{>0}(3)\to GL_3(\mathbb{C})$, and the real dimensions match, $9+9=18$. The decomposition is the Cartan decomposition of $GL_3(\mathbb{C})$ as a real group for the involution $\mathrm{J}(X)=-X^{*}$, and the symmetric space is the positive definite cone $\operatorname{Herm}_{>0}(3)\cong\mathbb{R}^{9}$, of rank $3$. On the singular set the factor $P$ stays unique and the $*$-unitary factor is free on the kernel: the fibre over a matrix of rank $\varrho$ is $U(3-\varrho)$, of real dimension $(3-\varrho)^{2}$. For a rank-one idempotent $E=u\varphi$ the polar factors are $P=\|u\|\,\varphi^{*}\varphi/\|\varphi\|$ and $U=u\varphi/(\|u\|\,\|\varphi\|)$.
 
 $$
 \boxed{\ A=UP,\quad P=(A^{*}A)^{1/2},\quad U=AP^{-1};\qquad GL_3(\mathbb{C})\cong U(3)\times\operatorname{Herm}_{>0}(3),\quad 18=9+9.\ }
@@ -297,7 +297,7 @@ $$
 | $U(3)$ | $9$ | $*$-unitary group |
 | $\operatorname{Herm}(3)$ | $9$ | Hermitian matrices |
 | $\operatorname{Herm}_{>0}(3)$ | $9$ | positive definite cone |
-| fibre over rank $r$ | $(3-r)^{2}$ | $U(3-r)$ |
+| fibre over rank $\varrho$ | $(3-\varrho)^{2}$ | $U(3-\varrho)$ |
 
 ## Summary of Notation
 

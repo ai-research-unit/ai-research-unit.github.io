@@ -8,7 +8,7 @@ The boundary is drawn in one paragraph and it decides everything after it. The d
 
 This article states that convention box first, proves it, and then asks two questions of the model. What does it see? It sees the trace, the determinant, the singular values and the spectrum, and those four read off the time, the modulus, the two scales and the two weights. What does it hide? It hides the separation of the scale from the central phase, because both are one modulus, and it hides the interior of each wall, because each wall collapses to one condition on the image.
 
-The article assumes *The Isomorphisms and Their Dimensions* for the map $\mathsf{M}_2$ and *Norm and Pairing Conventions* for the norm $N$ and the modulus $\Rho$. It leans on *The Lorentz Transformation as a Biquaternionic Rotation* for the physical meaning of the boost, and on *Paravectors and the Geometry of Spacetime* for the Hermitian slice.
+The article assumes *The Isomorphisms and Their Dimensions* for the map $\mathsf{M}_2$ and *Norm and Pairing Conventions* for the norm $N$ and the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$. It leans on *The Lorentz Transformation as a Biquaternionic Rotation* for the physical meaning of the boost, and on *Paravectors and the Geometry of Spacetime* for the Hermitian slice.
 
 ## The Convention Box
 
@@ -107,10 +107,10 @@ The trace carries the time and nothing else. It is blind to the vector part, and
 
 ### The Determinant as the Modulus Squared
 
-By *Norm and Pairing Conventions* the modulus $\Rho$ is a chosen square root of $N$, and the unit factor is $\tilde U=\tilde Q/\Rho$. So
+By *Norm and Pairing Conventions* the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is a chosen square root of $N$, and the unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. So
 
 $$
-\det\mathsf{M}_2(\tilde Q)=\Rho^{2},
+\det\mathsf{M}_2(\tilde Q)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},
 $$
 
 and the determinant of the matrix is the square of the modulus. This is the reason the model computes every norm in the series: the determinant is multiplicative, so the modulus of a product is the product of the moduli, and the whole polar machinery of *The Complete Polar Decomposition of an N-Regular Biquaternion* runs on one determinant.
@@ -123,10 +123,10 @@ $$
 s_{\pm}=e^{\pm\theta_{\mathrm{rpd}}/2},
 $$
 
-and in general, with modulus $\Rho$,
+and in general, with modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$,
 
 $$
-s_{\pm}=\Rho\,e^{\pm\theta_{\mathrm{rpd}}/2}.
+s_{\pm}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\pm\theta_{\mathrm{rpd}}/2}.
 $$
 
 **The check.** For $\theta_{\mathrm{rpd}}=1.7$ and $\theta_{\mathrm{axr}}=0.9$, the two singular values of the image are $2.33964685$ and $0.42741493$, against $e^{0.85}=2.33964685$ and $e^{-0.85}=0.42741493$. Their product is $1$, the modulus is $1$, and the rotation contributes nothing: singular values are invariant under the unitary factor, so they see the boost and only the boost.
@@ -220,7 +220,7 @@ The matrix model's determinant is the algebra's complex form, $\det\mathsf{M}_2(
 | $\mathsf{M}_2(\tilde Q)$ | the $2\times2$ image of the element |
 | $N(\tilde Q)=Q_t^{2}+B^{2}$ | the complex quadratic form, equal to $\det\mathsf{M}_2$ |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the squared modulus of the vector part |
-| $\Rho$ | a chosen square root of $N$, the modulus |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | a chosen square root of $N$, the modulus |
 | $q_t,\vec q$ | real four-vector coordinates, on the Hermitian slice |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | angle and axis of the rotation |
@@ -232,6 +232,6 @@ The matrix model's determinant is the algebra's complex form, $\det\mathsf{M}_2(
 - R. A. Horn and C. R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2012 — singular values, the determinant and trace as elementary symmetric functions, and the discriminant of the characteristic polynomial.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — the $2\times2$ matrix representation of the biquaternions and its relation to the Minkowski form.
 - *Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation* — the map printed here and the Hermitian slice in the corpus's own notation.
-- *Norm and Pairing Conventions* — the norm $N$, the modulus $\Rho$ and the vector part $B$.
+- *Norm and Pairing Conventions* — the norm $N$, the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the vector part $B$.
 - *Frame and Metric Conventions* — the assignment of a real four-vector to an element, which is what makes the Hermitian slice the physical one.
 - *The Isomorphisms and Their Dimensions*, *The Two Eigenvalues Are the Two Weyl Weights*, *The Spectrum Does Not Determine the Frame* — the articles that use this model and the ones that state its limits.

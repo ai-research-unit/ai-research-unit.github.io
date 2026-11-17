@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The Proca word has four parameters and two brackets, and one of its four bracket slots is empty.** *The Proca Equation in Biquaternionic Polar Variables* decomposes the potential as $\tilde A_\Phi=\varepsilon i\,r\,\tilde U$ on the timelike branch and as $\tilde A_\Phi=r\,\tilde U\,\hat u$ on the spacelike one, computes the logarithmic derivative, and tabulates four bracket slots: the scale, which is real central; the phase, which **vanishes identically on both branches**; the frame's rapidity, which is a Hermitian vector; and the frame's axis, which is a real vector. It then says the sentence that organises everything: in the material sector there is no central bracket, so there is no phase gradient, no guidance equation, and no Madelung pair.
+**The Proca word has four parameters and two brackets, and one of its four bracket slots is empty.** *The Proca Equation in Biquaternionic Polar Variables* decomposes the potential as $\tilde A_\Phi=\varepsilon i\,\varrho\,\tilde U$ on the timelike branch and as $\tilde A_\Phi=\varrho\,\tilde U\,\hat u$ on the spacelike one, computes the logarithmic derivative, and tabulates four bracket slots: the scale, which is real central; the phase, which **vanishes identically on both branches**; the frame's rapidity, which is a Hermitian vector; and the frame's axis, which is a real vector. It then says the sentence that organises everything: in the material sector there is no central bracket, so there is no phase gradient, no guidance equation, and no Madelung pair.
 
 **In frequency space that empty slot has a name, and the name is parity.** The Proca symbol is even in the four-wave-number; the Dirac symbol is odd; the Klein–Gordon scalar is even; the Schrödinger symbol is neither. **An odd symbol is what a phase bracket can live in and an even one has no room for it**, and that is the article's first finding. The parent's bracket table and the symbol's parity table are one table read in two registers.
 
@@ -31,18 +31,18 @@ $$
 The word and its parameters are the parent's:
 
 $$
-\text{timelike:}\quad \tilde A_\Phi=\varepsilon\,i\,r\,\tilde U ,
+\text{timelike:}\quad \tilde A_\Phi=\varepsilon\,i\,\varrho\,\tilde U ,
 \qquad
-\text{spacelike:}\quad \tilde A_\Phi=r\,\tilde U\,\hat u ,
+\text{spacelike:}\quad \tilde A_\Phi=\varrho\,\tilde U\,\hat u ,
 \qquad
 \tilde U=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\Bigr) ,
 $$
 
-with $r\ge0$ the scale, $\varepsilon=\pm1$ the branch label, $\theta_{\mathrm{rpd}}\ge0$ the rapidity, $\hat u_{\mathrm b}$ the boost axis and $\hat u$ a real unit vector. The parent's bracket table is quoted and not re-derived:
+with $\varrho\ge0$ the scale, $\varepsilon=\pm1$ the branch label, $\theta_{\mathrm{rpd}}\ge0$ the rapidity, $\hat u_{\mathrm b}$ the boost axis and $\hat u$ a real unit vector. The parent's bracket table is quoted and not re-derived:
 
 | bracket | type | timelike branch | spacelike branch |
 | --- | --- | --- | --- |
-| scale | real central scalar | $\partial_\mu\ln r$ | $\partial_\mu\ln r$ |
+| scale | real central scalar | $\partial_\mu\ln \varrho$ | $\partial_\mu\ln \varrho$ |
 | phase | central imaginary | $0$ identically | $0$ identically |
 | frame, rapidity part | Hermitian vector | $\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u_{\mathrm b}$ | $-\tfrac12\partial_\mu\theta_{\mathrm{rpd}}\,i\hat u$ |
 | frame, axis part | real vector | $\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\,\hat u_{\mathrm b}\partial_\mu\hat u_{\mathrm b}$ | $-\hat u\,\partial_\mu\hat u$ and the conjugated rapidity term |
@@ -127,11 +127,11 @@ which *Degenerate Solutions of the Biquaternionic Proca Equation* proves is **on
 
 **What the transform adds here is only the location.** The parent's cone is a set of field values in spacetime; on a mode it is a set of amplitudes at one wave number. **The equation is unchanged and the variety is unchanged; what changes is that the cone is now a condition on the coefficients of a superposition rather than on the value of a field at an event**, and that is why §*The Branch Is Not a Spectral Property* can be stated as a fact about quadratic forms.
 
-**The failure set is larger than the scalar chart's and the transform does not shrink it.** The parent records that in the scalar case the chart fails where $r=0$, a codimension-two set in spacetime, while here it fails on the whole light cone of field values, a family of three-dimensional surfaces. **In amplitude space the two are a point and a cone**, and the transform preserves the distinction: a point is a point and a cone is a cone.
+**The failure set is larger than the scalar chart's and the transform does not shrink it.** The parent records that in the scalar case the chart fails where $\varrho=0$, a codimension-two set in spacetime, while here it fails on the whole light cone of field values, a family of three-dimensional surfaces. **In amplitude space the two are a point and a cone**, and the transform preserves the distinction: a point is a point and a cone is a cone.
 
 ## What the Transform Does to Piecewiseness
 
-**A Fourier mode is a constant frame, so every mode sits strictly inside one branch.** The parent's plane-wave section makes this explicit: for $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with a constant timelike $\tilde A_0$, the word is $r=\lvert\cos\theta_{\mathrm{pwp}}\rvert\sqrt{-\langle\tilde A_0\rangle_\natural}$, a constant $\tilde U_{\mathrm b}$, and $\varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}}$. **The boost is fixed by the amplitude, the whole spacetime dependence sits in the scale, and the branch label flips only at the nodes.**
+**A Fourier mode is a constant frame, so every mode sits strictly inside one branch.** The parent's plane-wave section makes this explicit: for $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ with a constant timelike $\tilde A_0$, the word is $\varrho=\lvert\cos\theta_{\mathrm{pwp}}\rvert\sqrt{-\langle\tilde A_0\rangle_\natural}$, a constant $\tilde U_{\mathrm b}$, and $\varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}}$. **The boost is fixed by the amplitude, the whole spacetime dependence sits in the scale, and the branch label flips only at the nodes.**
 
 **The transform's support sees the scale and not the flip.** A plane wave's transform is supported at one wave number with an amplitude, and the amplitude's invariant sign is the branch. The node where $\varepsilon$ flips is a zero of the scale and a feature of the *superposition*, not of the mode. **So the chart's failure on the nodal surfaces is invisible to each mode and visible only in their sum**, which is the precise sense in which the transform relocates the piecewiseness.
 
@@ -144,7 +144,7 @@ which *Degenerate Solutions of the Biquaternionic Proca Equation* proves is **on
 **The parent's divergence display becomes one algebraic equation on a mode.** The parent writes
 
 $$
-S=\varepsilon\Bigl[c\,\frac{\partial r}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla r
+S=\varepsilon\Bigl[c\,\frac{\partial \varrho}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
 +\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 ,
 $$
 
@@ -197,8 +197,8 @@ What the transform does with the piecewiseness is relocate it. A Fourier mode is
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The four-wave number; $k_t'=\omega/c$ |
 | $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ | The interval in wave numbers |
 | $k_m=mc/\hbar$ | The mass wave number |
-| $\tilde A_\Phi=\varepsilon i r\tilde U$, $r\tilde U\hat u$ | The word on the timelike and spacelike branches |
-| $r,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$ | Scale, branch label, rapidity, boost axis, spacelike direction |
+| $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, $\varrho\tilde U\hat u$ | The word on the timelike and spacelike branches |
+| $\varrho,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$ | Scale, branch label, rapidity, boost axis, spacelike direction |
 | $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ | The invariant; an indefinite quadratic form on the amplitudes |
 | $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$ | The Lorenz form of a mode; the parent's $S$ up to $-i$ |
 | $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$ | The Proca symbol, quoted from the form companion |

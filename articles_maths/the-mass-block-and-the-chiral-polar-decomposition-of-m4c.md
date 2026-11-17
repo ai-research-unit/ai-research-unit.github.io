@@ -224,7 +224,7 @@ $$
 
 is the **massless locus**, a complex hypersurface of complex dimension $3$ in the four-dimensional mass block, with real codimension $2$. Its complement, the rank-two locus, is open and dense.
 
-**The orbits.** The compact gauge orbits are classified by the unordered pair $\{\sigma_1,\sigma_2\}$ of singular values. The complex gauge orbits are classified by the rank. The two classifications fit together: the complex orbit of rank $r$ contains the compact orbits with exactly $r$ positive singular values.
+**The orbits.** The compact gauge orbits are classified by the unordered pair $\{\sigma_1,\sigma_2\}$ of singular values. The complex gauge orbits are classified by the rank. The two classifications fit together: the complex orbit of rank $\varrho$ contains the compact orbits with exactly $\varrho$ positive singular values.
 
 ## The Only Coupling of the Chiralities
 

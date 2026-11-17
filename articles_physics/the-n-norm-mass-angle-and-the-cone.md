@@ -15,18 +15,18 @@ $$
 **The rule is one line, and it has a condition.**
 
 $$
-\boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
-\Rho^{2}=N(\tilde Q),\qquad r=\lvert\Rho\rvert=\lvert N(\tilde Q)\rvert^{1/2},\qquad
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N(\tilde Q),\qquad \varrho=\lvert N(\tilde Q)\rvert^{1/2},\qquad
 \theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]\;}
 $$
 
-**The condition is $\Rho\neq0$.** The word divides by the modulus, and the modulus vanishes exactly on the null cone. Off the cone the element is invertible, the four factors exist, and the decomposition is a coordinate system on the group of invertibles. On the cone the modulus is zero, the word does not exist, and what survives is the two-factor pair of the previous entry. The line between the two is the zero set of one complex number.
+**The condition is $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$.** The word divides by the modulus, and the modulus vanishes exactly on the null cone. Off the cone the element is invertible, the four factors exist, and the decomposition is a coordinate system on the group of invertibles. On the cone the modulus is zero, the word does not exist, and what survives is the two-factor pair of the previous entry. The line between the two is the zero set of one complex number.
 
 **The single idea is that the norm decides invertibility, and invertibility is the only sharp division the algebra has.** Every other partition of the corpus is finer and sits inside one of these two cases. The regular case is the group of invertibles: open, dense, connected. The degenerate case is the null cone: closed, of real codimension two, the wall of the group. Mass, the massless boundary, the reversible process and the zero divisor are four readings of this one cut.
 
 **The second idea is that the norm is complex, so the modulus is a branch, and the branch is the only convention in the decomposition.** A complex number has two square roots. One of them is chosen by a rule fixed once and for all, and with the rule fixed, all four factors are functions of the element. On the material sector the choice is not free, because there the norm is real: the modulus is either real or purely imaginary, and which one it is is exactly the timelike–spacelike distinction. The convention that looks arbitrary on the algebra is a sign pattern on the sector.
 
-**The entry is in three parts, and the title names them.** The **mass** is read off the scale $r$, the modulus of the norm: on the material sector $r=mc$, so $m=r/c$. The **angle** is the phase angle $\theta_{\mathrm{pha}}$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
+**The entry is in three parts, and the title names them.** The **mass** is read off the scale $\varrho$, the modulus of the norm: on the material sector $\varrho=mc$, so $m=\varrho/c$. The **angle** is the phase angle $\theta_{\mathrm{pha}}$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
 
 **The strongest objection is that a complex norm cannot be a physical mass.** The objection is right about the algebra and wrong about the reading. On the whole algebra the norm is a complex quadratic form, its zero set is a complex cone, and no mass is defined there. On the material sector the norm is real and indefinite, a quadratic form of inertia $(3,1)$, and its level sets are the mass shells. The mass is a level set on a sector, not a value on the algebra, and this entry says so before it uses the word.
 
@@ -55,12 +55,12 @@ $$
 - $N(\tilde Q_2\tilde Q_1)=N(\tilde Q_2)N(\tilde Q_1)$, and the inverse of an invertible element is $\tilde Q^{\natural}/N$; the norm is the determinant in the matrix model.
 - The algebra is the disjoint union of the group of invertibles $\mathbb B^{\times}=\{N\neq0\}$ and the null cone $\mathcal N=\{N=0\}$; the group is open and dense, the cone is closed of real codimension two and is its boundary.
 - The cone is the origin, the pure stratum of nilpotents of index two, and the non-pure stratum of complex multiples of idempotents; the split is by the scalar part.
-- Off the cone the element has the complete polar decomposition $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $r=\lvert N\rvert^{1/2}>0$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one and $\tilde u_{\mathrm r}$ a unit real quaternion.
+- Off the cone the element has the complete polar decomposition $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\varrho=\lvert N\rvert^{1/2}>0$, $\tilde U_{\mathrm b}$ Hermitian positive of norm one and $\tilde u_{\mathrm r}$ a unit real quaternion.
 - The four factors are the scale, the central phase, the boost and the rotor, of real dimensions $1,1,3,3$, summing to eight.
-- The modulus is the principal square root of the norm, $\Rho^{2}=N$ with $\Rho$ in the half-plane $\{\operatorname{Re}\Rho>0\}\cup\{it:t>0\}$; the branch is the only convention of the decomposition.
-- The scale is the geometric mean of the two eigenvalues and the angle is the mean of their phases: $r=\lvert\lambda_+\lambda_-\rvert^{1/2}$ and $2\theta_{\mathrm{pha}}=\arg(\lambda_+\lambda_-)$.
+- The modulus is the principal square root of the norm, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ in the half-plane $\{\operatorname{Re}(\varrho\,e^{i\theta_{\mathrm{pha}}})>0\}\cup\{it:t>0\}$; the branch is the only convention of the decomposition.
+- The scale is the geometric mean of the two eigenvalues and the angle is the mean of their phases: $\varrho=\lvert\lambda_+\lambda_-\rvert^{1/2}$ and $2\theta_{\mathrm{pha}}=\arg(\lambda_+\lambda_-)$.
 - On the material sector the norm is real, so the phase is $1$ on spacelike and $i$ on timelike four-vectors, and the scale is $mc$ in the second case and the proper length in the first.
-- The amplitude of the previous entry is recovered as $\tilde Q_H=r\tilde U_{\mathrm b}$ and the frame as $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, so the two articles are two bracketings of one word.
+- The amplitude of the previous entry is recovered as $\tilde Q_H=\varrho\tilde U_{\mathrm b}$ and the frame as $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, so the two articles are two bracketings of one word.
 - On the cone the two-factor pair survives with a rank-one amplitude $\tilde Q_H=a e_t+i\vec W/(2a)$ and $\lvert\vec W\rvert=2a^{2}$; the rank is two off the cone, one on it, and zero at the origin.
 - The rapidity of the boost is bounded by nothing and the rotor angle is periodic; as an element approaches the cone the scale collapses as $e^{-\theta/2}$ and the rapidity diverges as $e^{\theta/2}$, while the Hermitian norm stays finite.
 - The word exists on the complement of two cones, the null cone $N=0$ and the spectral cone $B^{2}=0$; the first destroys the word, the second destroys the eigenbasis.
@@ -123,19 +123,19 @@ $$
 **The norm is complex, so it has a modulus, and the modulus has a sign ambiguity.** A modulus is a square root,
 
 $$
-\Rho^{2}=N(\tilde Q),
+\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N(\tilde Q),
 $$
 
-and the two roots differ by a sign. The root is not a function of the norm until a branch is fixed. The branch that the decomposition uses places $\Rho$ in the half-plane
+and the two roots differ by a sign. The root is not a function of the norm until a branch is fixed. The branch that the decomposition uses places $\varrho\,e^{i\theta_{\mathrm{pha}}}$ in the half-plane
 
 $$
-\mathcal H=\{\Rho\in\mathbb C:\operatorname{Re}\Rho>0\}\cup\{it:t>0\},
+\mathcal H=\{\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathbb C:\operatorname{Re}(\varrho\,e^{i\theta_{\mathrm{pha}}})>0\}\cup\{it:t>0\},
 $$
 
 with the closed form
 
 $$
-\Rho=\sqrt{\frac{\lvert N\rvert+\operatorname{Re}N}{2}}
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\frac{\lvert N\rvert+\operatorname{Re}N}{2}}
 +i\operatorname{sgn}\bigl(\operatorname{Im}N\bigr)\sqrt{\frac{\lvert N\rvert-\operatorname{Re}N}{2}},
 \qquad\operatorname{sgn}(0)=+1 .
 $$
@@ -164,7 +164,7 @@ $$
 e^{i\theta_{\mathrm{pha}}}=\begin{cases}1,&N>0\quad\text{(spacelike)},\\[2pt] i,&N<0\quad\text{(timelike)},\\[2pt] \text{undefined},&N=0\quad\text{(lightlike)} .\end{cases}
 $$
 
-**The scale is the same expression in both cases and its reading is not.** On a spacelike four-vector $r$ is the proper length of the displacement. On a timelike four-vector $r$ is $mc$, because $N=-m^{2}c^{2}$ and $r=mc$; the mass is $m=r/c$. One modulus, two names, and the name is decided by the sign of the norm.
+**The scale is the same expression in both cases and its reading is not.** On a spacelike four-vector $\varrho$ is the proper length of the displacement. On a timelike four-vector $\varrho$ is $mc$, because $N=-m^{2}c^{2}$ and $\varrho=mc$; the mass is $m=\varrho/c$. One modulus, two names, and the name is decided by the sign of the norm.
 
 **The consequence is that matter sits at the endpoint of the phase interval.** The phase of a timelike four-vector is exactly $i$, which is the boundary value $\psi/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
 
@@ -214,8 +214,8 @@ so the two strata are also the two values of the second invariant on the cone.
 **On the invertibles the two-factor pair refines into four factors, and the refinement is the content of the regular case.**
 
 $$
-\boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,e^{i\theta_{\mathrm{pha}}}\,
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho\,e^{i\theta_{\mathrm{pha}}}\,
 \exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
 \exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
@@ -223,7 +223,7 @@ $$
 with the ranges
 
 $$
-r>0,\qquad
+\varrho>0,\qquad
 \theta_{\mathrm{pha}}\in\Bigl(-\frac{\pi}{2},\frac{\pi}{2}\Bigr],\qquad
 \theta_{\mathrm{rpd}}\ge0,\qquad
 \theta_{\mathrm{axr}}\in[0,2\pi],
@@ -233,7 +233,7 @@ and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit three-vectors, the **boost
 
 | factor | closed form | constraint | real dimension | type |
 | --- | --- | --- | --- | --- |
-| scale $r$ | $r$ | $r>0$ | $1$ | positive real, central |
+| scale $\varrho$ | $\varrho$ | $\varrho>0$ | $1$ | positive real, central |
 | phase | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $1$ | unit complex scalar, central |
 | boost $\tilde U_{\mathrm b}$ | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $N(\tilde U_{\mathrm b})=1$ | $3$ | Hermitian positive, norm one |
 | rotor $\tilde u_{\mathrm r}$ | $\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $N(\tilde u_{\mathrm r})=1$ | $3$ | unit real quaternion |
@@ -257,7 +257,7 @@ $$
 
 **Two worked elements show the four factors separated.**
 
-| element | $N$ | $B^{2}$ | $r$ | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{rpd}}$ | sector |
+| element | $N$ | $B^{2}$ | $\varrho$ | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{rpd}}$ | sector |
 | --- | --- | --- | --- | --- | --- | --- |
 | $e_t+\vec e_x$ | $2$ | $1$ | $\sqrt2$ | $1$ | $0$ | regular, regular |
 | $e_t+\vec e_x+i\vec e_y$ | $1$ | $0$ | $1$ | $1$ | $\operatorname{arccosh}3$ | regular, degenerate |
@@ -270,7 +270,7 @@ $$
 
 **The second line is the case the eigenbasis cannot see.** The norm is one, so the element is invertible and the word exists; but $B^{2}=0$, so the two eigenvalues coincide and the element is defective. The rapidity is $\operatorname{arccosh}3$, finite and positive: the boost is real and the word is perfectly well defined, while the spectral decomposition of the same element has collapsed. This is the sharpest single illustration in the entry of the difference between the two decompositions, and it is the subject of the next entry but two.
 
-**The third line is matter at rest in a boosted frame.** The norm is real and negative, the phase is $i$, and the scale is $mc$: $r=\sqrt3$ with $N=-3$, so $mc=\sqrt3$ and $m=\sqrt3/c$ in the units of the row. The rapidity is $\operatorname{arccosh}(5/3)$, which is not zero, so the mass is not at rest in this frame. The scale is $mc$ no matter what the boost does, and that is the content of the next section.
+**The third line is matter at rest in a boosted frame.** The norm is real and negative, the phase is $i$, and the scale is $mc$: $\varrho=\sqrt3$ with $N=-3$, so $mc=\sqrt3$ and $m=\sqrt3/c$ in the units of the row. The rapidity is $\operatorname{arccosh}(5/3)$, which is not zero, so the mass is not at rest in this frame. The scale is $mc$ no matter what the boost does, and that is the content of the next section.
 
 **The last two lines are on the cone.** The word does not exist, and the two lines differ in the second invariant: one is spectrally regular and one is not. They are the two sectors of the degenerate case, and they are read in the section after the walls.
 
@@ -280,7 +280,7 @@ $$
 
 | wall | equation | what happens | what survives |
 | --- | --- | --- | --- |
-| null cone | $N=0$ | $r\to0$, $\theta_{\mathrm{rpd}}\to\infty$ | the two-factor pair, rank one |
+| null cone | $N=0$ | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$ | the two-factor pair, rank one |
 | spectral cone | $B^{2}=0$ | the eigenvalues coalesce, $\vec Z$ diverges | the word, and the four factors |
 
 **The null cone is where the modulus vanishes and the word has no domain.** An element of the cone has no scale and no phase, because the number they are made from is zero. As an element approaches the cone from the regular side the scale and the rapidity move in opposite directions and their product stays finite:
@@ -298,7 +298,7 @@ $$
 **The Hermitian norm does not diverge and does not vanish.** Along the same family, in the notation of the previous entry,
 
 $$
-H(\tilde Q)=r^{2}\cosh\theta_{\mathrm{rpd}}=K^{2}e^{-\theta}\cosh\theta\longrightarrow\frac{K^{2}}{2},
+H(\tilde Q)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=K^{2}e^{-\theta}\cosh\theta\longrightarrow\frac{K^{2}}{2},
 $$
 
 **a finite limit that is the trace of the rank-one projection.** So one measure collapses, one diverges, and one stays finite and tends to $K^{2}/2$. The three behaviours are the three measures, and the finiteness of the middle one is why the two-factor pair survives the wall.
@@ -371,23 +371,23 @@ $$
 
 | pairing | first factor | second factor | available when |
 | --- | --- | --- | --- |
-| quaternion | $r\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $N\neq0$ and the real-coefficient part is nonzero |
-| Hamilton root | $\Rho$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta$ | $N\neq0$ and $B^{2}\neq0$ |
-| Cartan Hermitian | $r\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $N\neq0$ |
+| quaternion | $\varrho\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $N\neq0$ and the real-coefficient part is nonzero |
+| Hamilton root | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\cos\Theta+\vec U\sin\Theta$ | $N\neq0$ and $B^{2}\neq0$ |
+| Cartan Hermitian | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $N\neq0$ |
 
 **The Cartan pairing is the only one defined on the whole group of invertibles, and the reason is that it divides by nothing.** It takes the Hermitian square $\tilde Q\tilde Q^{*}$, takes the positive square root in the cone, and divides by that root. All three steps exist for every invertible element. The other two pairings divide: the quaternion pairing by the real-coefficient part, the Hamilton pairing by $B$.
 
 **The Hamilton pairing is the polar form of a complex number, written for a biquaternion.**
 
 $$
-\tilde Q=\Rho\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\bigl(\cos\Theta+\vec U\sin\Theta\bigr),
 \qquad
-\cos\Theta=\frac{Q_t}{\Rho},\qquad
-\sin\Theta=\frac{B}{\Rho},\qquad
+\cos\Theta=\frac{Q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}},\qquad
+\sin\Theta=\frac{B}{\varrho\,e^{i\theta_{\mathrm{pha}}}},\qquad
 \vec U=\frac{\vec Q}{B},
 $$
 
-**and $\Theta$ is the complex angle of the element.** Its real part is half the rotor angle and its imaginary part is half the rapidity when the two axes agree; when they do not agree the angle is complex and the axes are two. The name *root pairing* records that the modulus is a square root of the norm: the pairing is written in the variable $\Rho$, not in $N$.
+**and $\Theta$ is the complex angle of the element.** Its real part is half the rotor angle and its imaginary part is half the rapidity when the two axes agree; when they do not agree the angle is complex and the axes are two. The name *root pairing* records that the modulus is a square root of the norm: the pairing is written in the variable $\varrho\,e^{i\theta_{\mathrm{pha}}}$, not in $N$.
 
 **The two partial domains are not nested, and their union misses one class.** The quaternion pairing fails where the real-coefficient part vanishes; the Hamilton pairing fails where $B^{2}=0$. Both fail together exactly on the nonzero pure imaginary scalars,
 
@@ -399,7 +399,7 @@ $$
 
 **which are invertible with no real part and no spectral direction.** They are the exception that a reader who assumes one pairing is general will miss, and the Cartan pairing covers them.
 
-**The three pairings are three notions of magnitude and they are not interchangeable.** The modulus $\Rho$ is a square root of the product of the two eigenvalues. The norm $N$ is that product without the root. The Hermitian factor $r\tilde U_{\mathrm b}$ is the amplitude of the previous entry. A text that says *the magnitude of the biquaternion* without saying which pairing is in use says nothing, and this is the reason the corpus writes the letter: $N$ for the norm, $H$ for the weight, $\Rho$ for the modulus.
+**The three pairings are three notions of magnitude and they are not interchangeable.** The modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is a square root of the product of the two eigenvalues. The norm $N$ is that product without the root. The Hermitian factor $\varrho\tilde U_{\mathrm b}$ is the amplitude of the previous entry. A text that says *the magnitude of the biquaternion* without saying which pairing is in use says nothing, and this is the reason the corpus writes the letter: $N$ for the norm, $H$ for the weight, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ for the modulus.
 
 ## The Group of Invertibles
 
@@ -408,10 +408,10 @@ $$
 $$
 \Phi:\mathbb B^{\times}\longrightarrow\mathcal H\times SL_2(\mathbb C),
 \qquad
-\Phi(\tilde Q)=(\Rho,\tilde U),
+\Phi(\tilde Q)=(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U),
 $$
 
-**and $\Phi$ is a bijection.** Injectivity is uniqueness of the pair; surjectivity is that $\Rho\tilde U$ has norm $\Rho^{2}$ with principal root $\Rho$. In the matrix model it is the factorisation of an invertible matrix into a scalar and a matrix of determinant one.
+**and $\Phi$ is a bijection.** Injectivity is uniqueness of the pair; surjectivity is that $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ has norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with principal root $\varrho\,e^{i\theta_{\mathrm{pha}}}$. In the matrix model it is the factorisation of an invertible matrix into a scalar and a matrix of determinant one.
 
 **The norm-one part is the special linear group, and the compact part of it is a sphere and a circle.**
 
@@ -474,7 +474,7 @@ $$
 $$
 N=\lambda_+\lambda_-,
 \qquad
-r=\lvert N\rvert^{1/2}=\bigl(\lvert\lambda_+\rvert\,\lvert\lambda_-\rvert\bigr)^{1/2}.
+\varrho=\lvert N\rvert^{1/2}=\bigl(\lvert\lambda_+\rvert\,\lvert\lambda_-\rvert\bigr)^{1/2}.
 $$
 
 **The scale is the geometric mean of the two eigenvalue moduli and the norm is their product.** The two eigenvalues are the two spectral values of the element, and the mass is a symmetric function of them: it is what they share. A change of frame multiplies the two eigenvalues in opposite directions and leaves the product alone.
@@ -505,17 +505,17 @@ $$
 
 ### I.9.f — The Scale Is $mc$ and the Boost Is the Motion
 
-**Read:** on a timelike four-momentum $\tilde Q_H=r\tilde U_{\mathrm b}$ with $r=mc$, and $H=r^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Read:** on a timelike four-momentum $\tilde Q_H=\varrho\tilde U_{\mathrm b}$ with $\varrho=mc$, and $H=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **The polar factor of the previous entry separates into a scale and a boost, and the two are multiplied.** The scale is $mc$ and the boost is the motion, and the Hermitian norm is the product of the two, with the factor $\cosh\theta_{\mathrm{rpd}}$ carrying how much the motion has inflated the amplitude.
 
-**The physical interpretation is that an amplitude is not a mass.** The amplitude of the previous entry is mass times boost, and it equals the mass only in the frame where the element is at rest. The previous entry said this with the Hermitian norm; this entry says it with the norm, and the two statements are one: $\lvert N\rvert=r^{2}$ and $H=r^{2}\cosh\theta_{\mathrm{rpd}}$, so the ratio of the amplitude to the mass is the Lorentz factor.
+**The physical interpretation is that an amplitude is not a mass.** The amplitude of the previous entry is mass times boost, and it equals the mass only in the frame where the element is at rest. The previous entry said this with the Hermitian norm; this entry says it with the norm, and the two statements are one: $\lvert N\rvert=\varrho^{2}$ and $H=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, so the ratio of the amplitude to the mass is the Lorentz factor.
 
-**The boundary.** The identity $r=mc$ uses $N=-m^{2}c^{2}$, and it is a reading of the sector. That the scale is $mc$ in every frame is a property of the decomposition and not a dynamical theorem.
+**The boundary.** The identity $\varrho=mc$ uses $N=-m^{2}c^{2}$, and it is a reading of the sector. That the scale is $mc$ in every frame is a property of the decomposition and not a dynamical theorem.
 
 ### I.9.g — The Massless Limit Is a Limit of the Inverse Parameters
 
-**Read:** the family $\tilde Q(\theta)=Re^{-\theta/2}\omega\exp(i\theta\vec u_{\mathrm b}/2)\tilde u_{\mathrm r}$ converges to a null element while $r\to0$ and $\theta\to\infty$.
+**Read:** the family $\tilde Q(\theta)=Re^{-\theta/2}\omega\exp(i\theta\vec u_{\mathrm b}/2)\tilde u_{\mathrm r}$ converges to a null element while $\varrho\to0$ and $\theta\to\infty$.
 
 **The element has a limit and its factors do not.** The scale collapses and the rapidity diverges, and the product stays finite because the divergence is exponential in both directions. The Hermitian norm converges to a finite value, so the amplitude of the previous entry converges too; only the word fails, and it fails at the limit and not before it.
 
@@ -577,7 +577,7 @@ $$
 
 **The norm is not a mass on the algebra.** It is a complex quadratic form, its zero set is a complex cone, and the reading as a mass requires the material sector and the sign of the value. Outside the sector the same formula gives a number with a phase, and no mass is defined there.
 
-**The modulus is not a function of the norm until the branch is fixed.** Two conventions differ by a sign on both the phase and the rotor, and the sign is invisible in the product. Every statement of this entry that uses $\Rho$ inherits the convention, and a statement that does not survive the change of branch is a statement about the convention.
+**The modulus is not a function of the norm until the branch is fixed.** Two conventions differ by a sign on both the phase and the rotor, and the sign is invisible in the product. Every statement of this entry that uses $\varrho\,e^{i\theta_{\mathrm{pha}}}$ inherits the convention, and a statement that does not survive the change of branch is a statement about the convention.
 
 **The norm does not determine the spectrum.** The element $e_t$ and the element $\vec e_x$ both have norm one; the first has $B^{2}=0$ and the second $B^{2}=1$, and their minimal polynomials are $X-1$ and $X^{2}+1$. So the mass is coarser than the spectrum, and no argument may infer the eigenvalues from the norm.
 
@@ -605,10 +605,10 @@ The quaternionic norm is the multiplicative measure of the algebra; its vanishin
 | the split | $\mathbb B=\mathbb B^{\times}\uplus\mathcal N$, open and dense against closed of real codimension two |
 | the cone | $\{0\}\uplus\{Q_t=0\ \text{nilpotents}\}\uplus\{Q_t\neq0\ \text{idempotent multiples}\}$ |
 | the cone law | $\tilde Q^{2}=2Q_t\tilde Q$ on $\mathcal N$, and $Q_t=0\iff\tilde Q^{2}=0$ |
-| the modulus | $\Rho^{2}=N$ with $\Rho\in\mathcal H$, $r=\lvert N\rvert^{1/2}$, $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
-| the scale and the phase | $r$ the geometric mean of the eigenvalue moduli, $\theta_{\mathrm{pha}}$ the mean of their phases |
-| the word | $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, of real dimensions $1+1+3+3=8$ |
-| the two bracketings | $\tilde Q_H=r\tilde U_{\mathrm b}$ and $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
+| the modulus | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}\in\mathcal H$, $\varrho=\lvert N\rvert^{1/2}$, $e^{i\theta_{\mathrm{pha}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}/\varrho$ |
+| the scale and the phase | $\varrho$ the geometric mean of the eigenvalue moduli, $\theta_{\mathrm{pha}}$ the mean of their phases |
+| the word | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, of real dimensions $1+1+3+3=8$ |
+| the two bracketings | $\tilde Q_H=\varrho\tilde U_{\mathrm b}$ and $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
 | the amplitude law | $H=\lvert N\rvert\cosh\theta_{\mathrm{rpd}}$, so $H=\lvert N\rvert$ exactly at zero rapidity |
 | the cone pair | $\tilde Q_H=ae_t+i\vec W/(2a)$, $\lvert\vec W\rvert=2a^{2}$, $\tilde Q_0=\tilde Q/(2a)$, $H(\tilde Q_0)=\tfrac12$ |
 | the rank | $2$ off the cone, $1$ on the nonzero cone, $0$ at the origin |
@@ -636,15 +636,15 @@ The three statements to carry away are these. The quaternionic norm is the only 
 | $\mathcal N_{\mathrm p}$, $\mathcal N_{\mathrm{np}}$ | its pure stratum of nilpotents and its non-pure stratum |
 | $\mathbb B^{\times}=\{N\neq0\}$ | the group of invertibles, the regular case |
 | $\mathbb B^{\times}_{1}=\{N=1\}$ | the norm-one group, isomorphic to $SL_2(\mathbb C)$ |
-| $\Rho$ | the modulus, the principal square root of $N$ in $\mathcal H$ |
-| $r,\ \theta_{\mathrm{pha}}$ | the scale $r=\lvert\Rho\rvert$ and the phase angle, $e^{i\theta_{\mathrm{pha}}}=\Rho/r$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the modulus, the principal square root of $N$ in $\mathcal H$ |
+| $\varrho,\ \theta_{\mathrm{pha}}$ | the scale $\varrho=\lvert N\rvert^{1/2}$ and the phase angle |
 | $\theta_{\mathrm{pha}}$ | the phase angle of the modulus, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, written $\Xi$ in the previous entry |
 | $\theta_{\mathrm{axr}}$ | the rotor angle, written $\Theta$ in the previous entry |
 | $\vec u_{\mathrm b},\ \vec u_{\mathrm r}$ | the boost axis and the rotor axis, real unit three-vectors |
 | $\tilde U_{\mathrm b},\ \tilde u_{\mathrm r}$ | the boost, Hermitian positive of norm one, and the rotor, a unit real quaternion |
 | $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues, of product $N$ and of sum $2Q_t$ |
-| $\Theta$ | the Hamilton complex angle, $\cos\Theta=Q_t/\Rho$ and $\sin\Theta=B/\Rho$ |
+| $\Theta$ | the Hamilton complex angle, $\cos\Theta=Q_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ and $\sin\Theta=B/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ |
 | $a=\sqrt{H/2}$ | the cone scale, with $2a$ the norm of the rank-one amplitude |
 
 ## Further Reading

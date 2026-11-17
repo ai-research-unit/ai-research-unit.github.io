@@ -5,10 +5,10 @@
 This article treats the **modulus–unit polar decomposition** of a complex number: the writing
 
 $$
-Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
+Q = \varrho\,u, \qquad \varrho \in \mathbb{R}, \quad \varrho > 0, \qquad u \in \mathbb{C}, \quad \langle u\rangle_{*} = 1,
 $$
 
-with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is treated as a point of the unit circle, and the circle as a set and as a group.
+with $\varrho$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is treated as a point of the unit circle, and the circle as a set and as a group.
 
 The decomposition is the two-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an element of nonzero norm into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite. The modulus is a square root with no sign choice and no branch choice, the unit factor is defined at every nonzero element, and there is no boundary.
 
@@ -31,27 +31,27 @@ $$
 It is a sum of two squares, so $\langle Q\rangle_{*} > 0$ for every $Q \neq 0$ and $\langle Q\rangle_{*} = 0$ only at $Q = 0$. The **modulus** is
 
 $$
-r = \sqrt{\langle Q\rangle_{*}}.
+\varrho = \sqrt{\langle Q\rangle_{*}}.
 $$
 
-The square root is taken in the positive reals, so it is unique: there is no sign choice, and there is no branch choice, because the radicand is never negative. The requirement $r > 0$ is therefore met automatically off the origin, and the modulus is forced by the norm.
+The square root is taken in the positive reals, so it is unique: there is no sign choice, and there is no branch choice, because the radicand is never negative. The requirement $\varrho > 0$ is therefore met automatically off the origin, and the modulus is forced by the norm.
 
 The modulus is multiplicative, because the norm is:
 
-$$ \boxed{\;\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}, \qquad r(Q_1Q_2) = r(Q_1)r(Q_2)\;},
+$$ \boxed{\;\langle Q_1Q_2\rangle_{*} = \langle Q_1\rangle_{*}\langle Q_2\rangle_{*}, \qquad \varrho(Q_1Q_2) = \varrho(Q_1)\varrho(Q_2)\;},
 $$
 
-and it is homogeneous of degree one for real scalars, $r(\lambda Q) = \lvert\lambda\rvert r(Q)$.
+and it is homogeneous of degree one for real scalars, $\varrho(\lambda Q) = \lvert\lambda\rvert \varrho(Q)$.
 
 ### The Unit Factor and the Unit Circle
 
 The **unit factor** is
 
 $$
-u = \frac{Q}{r} = \frac{Q}{\sqrt{\langle Q\rangle_{*}}}.
+u = \frac{Q}{\varrho} = \frac{Q}{\sqrt{\langle Q\rangle_{*}}}.
 $$
 
-It satisfies $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = 1$, so it lies on the **unit circle**
+It satisfies $\langle u\rangle_{*} = \langle Q\rangle_{*}/\varrho^2 = 1$, so it lies on the **unit circle**
 
 $$
 \mathrm{U}(1) = \{\,u \in \mathbb{C} : \langle u\rangle_{*} = 1\,\}.
@@ -63,7 +63,7 @@ The phrase **unit factor** names the norm-one elements. It is not the **group of
 
 ### The Count of the Parameters
 
-A complex number carries two real parameters. The modulus carries one, the positive real $r$. The unit factor is constrained by the single real equation $\langle u\rangle_{*} = 1$ on the two parameters of $\mathbb{C}$, so it retains one real degree of freedom. The counts add:
+A complex number carries two real parameters. The modulus carries one, the positive real $\varrho$. The unit factor is constrained by the single real equation $\langle u\rangle_{*} = 1$ on the two parameters of $\mathbb{C}$, so it retains one real degree of freedom. The counts add:
 
 $$
 2 = 1 + 1.
@@ -75,11 +75,11 @@ The additivity is the shape of the polar decomposition in every algebra of the f
 
 **Theorem.** Every nonzero complex number $Q$ has exactly one modulus–unit polar decomposition.
 
-**Existence.** Put $r = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/r$. Since $\langle Q\rangle_{*} > 0$, the number $r$ is a positive real. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/r^2 = 1$. Hence $Q = ru$ with $r > 0$ and $\langle u\rangle_{*} = 1$.
+**Existence.** Put $\varrho = \sqrt{\langle Q\rangle_{*}}$ and $u = Q/\varrho$. Since $\langle Q\rangle_{*} > 0$, the number $\varrho$ is a positive real. Since $\langle \lambda Q\rangle_{*} = \lambda^2\langle Q\rangle_{*}$ for real $\lambda$, one has $\langle u\rangle_{*} = \langle Q\rangle_{*}/\varrho^2 = 1$. Hence $Q = ru$ with $\varrho > 0$ and $\langle u\rangle_{*} = 1$.
 
-**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $r, r_1 > 0$ and $\langle u\rangle_{*} = \langle u_1\rangle_{*} = 1$. Taking norms gives $r^2 = \langle Q\rangle_{*} = r_1^2$. Both are positive, so $r = r_1$. Dividing, $u = Q/r = u_1$.
+**Uniqueness.** Suppose $Q = ru = r_1u_1$ with $\varrho, r_1 > 0$ and $\langle u\rangle_{*} = \langle u_1\rangle_{*} = 1$. Taking norms gives $\varrho^2 = \langle Q\rangle_{*} = r_1^2$. Both are positive, so $\varrho = r_1$. Dividing, $u = Q/\varrho = u_1$.
 
-The pair $(r,u)$ is unique, with no sign ambiguity and no branch ambiguity. This is a statement about the factorisation, not about a coordinate on the circle: two different charts of $\mathrm{U}(1)$ assign different parameters to the same unit factor.
+The pair $(\varrho,u)$ is unique, with no sign ambiguity and no branch ambiguity. This is a statement about the factorisation, not about a coordinate on the circle: two different charts of $\mathrm{U}(1)$ assign different parameters to the same unit factor.
 
 ## The Group of Invertibles and the Circle
 
@@ -89,7 +89,7 @@ $$
 \Phi : \mathbb{C}^\times \longrightarrow \mathbb{R}_{>0} \times \mathrm{U}(1), \qquad \Phi(Q) = \bigl(\sqrt{\langle Q\rangle_{*}},\ Q/\sqrt{\langle Q\rangle_{*}}\bigr),
 $$
 
-is a group isomorphism. It is bijective, with inverse $(r,u) \mapsto ru$, and it is a homomorphism, because
+is a group isomorphism. It is bijective, with inverse $(\varrho,u) \mapsto ru$, and it is a homomorphism, because
 
 $$
 \Phi(Q_1Q_2) = \bigl(\sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}},\ Q_1Q_2/(\sqrt{\langle Q_1\rangle_{*}}\sqrt{\langle Q_2\rangle_{*}})\bigr) = \Phi(Q_1)\Phi(Q_2).
@@ -102,7 +102,7 @@ $$
 
 the product of the positive scale line and the circle.
 
-**The circle is the maximal compact subgroup.** Let $K \subset \mathbb{C}^\times$ be a compact subgroup. The modulus $\lvert\cdot\rvert$ is continuous, so $\lvert K\rvert$ is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $r > 1$ then $r^n \to \infty$, and if $0 < r < 1$ then $r^n \to 0 \notin \mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore $\lvert K\rvert = \{1\}$ and $K \subset \mathrm{U}(1)$. Since $\mathrm{U}(1)$ is itself compact, it is the maximal compact subgroup.
+**The circle is the maximal compact subgroup.** Let $K \subset \mathbb{C}^\times$ be a compact subgroup. The modulus $\lvert\cdot\rvert$ is continuous, so $\lvert K\rvert$ is a compact subgroup of the multiplicative group $\mathbb{R}_{>0}$. A compact subgroup of $\mathbb{R}_{>0}$ is $\{1\}$: if $\varrho > 1$ then $\varrho^n \to \infty$, and if $0 < \varrho < 1$ then $\varrho^n \to 0 \notin \mathbb{R}_{>0}$, so neither sequence can lie in a compact set. Therefore $\lvert K\rvert = \{1\}$ and $K \subset \mathrm{U}(1)$. Since $\mathrm{U}(1)$ is itself compact, it is the maximal compact subgroup.
 
 **The retraction.** The map
 
@@ -118,16 +118,16 @@ Complex conjugation fixes the real axis and negates the imaginary axis. An eleme
 
 | axis | elements | position | square | role |
 |---|---|---|---|---|
-| real | $q$, $q \in \mathbb{R}$ | Hermitian | $q^2 \ge 0$ | carries the modulus $r = \sqrt{\langle Q\rangle_{*}} > 0$ |
+| real | $q$, $q \in \mathbb{R}$ | Hermitian | $q^2 \ge 0$ | carries the modulus $\varrho = \sqrt{\langle Q\rangle_{*}} > 0$ |
 | imaginary | $it$, $t \in \mathbb{R}$ | anti-Hermitian | $-t^2 \le 0$ | the direction of the circle |
 
 The modulus lies on the positive real axis. The unit circle meets the real axis at $\pm1$ and the imaginary axis at $\pm i$.
 
-**There is no second continuous factor.** Suppose $\nu^2 = 1$. Writing $\nu = q+iq'$ gives $q^2-q'^2 = 1$ and $2qq' = 0$. If $q = 0$ then $-q'^2 = 1$, impossible; if $q' = 0$ then $q^2 = 1$, so $\nu = \pm1$. The only elements of the circle with square $+1$ are therefore $\pm1$, the two real points. A continuous factor of square $+1$ would be a connected subgroup of $\mathrm{U}(1)$ all of whose elements have square $+1$; such a subgroup lies in $\{\pm1\}$ and, being connected, is $\{1\}$. So there is no such factor. Similarly $\nu^2 = 0$ gives $q^2 = q'^2$ and $qq' = 0$, hence $\nu = 0$, so there is no nilpotent direction either. The dimension count is decisive as well: the circle is one-dimensional, so a product of two continuous factors has one factor of dimension zero, and a connected group of dimension zero is a point. The discrete sign $\pm1$ is carried by the unit factor, not by a separate factor: a negative real number has $r > 0$ and $u = -1$.
+**There is no second continuous factor.** Suppose $\nu^2 = 1$. Writing $\nu = q+iq'$ gives $q^2-q'^2 = 1$ and $2qq' = 0$. If $q = 0$ then $-q'^2 = 1$, impossible; if $q' = 0$ then $q^2 = 1$, so $\nu = \pm1$. The only elements of the circle with square $+1$ are therefore $\pm1$, the two real points. A continuous factor of square $+1$ would be a connected subgroup of $\mathrm{U}(1)$ all of whose elements have square $+1$; such a subgroup lies in $\{\pm1\}$ and, being connected, is $\{1\}$. So there is no such factor. Similarly $\nu^2 = 0$ gives $q^2 = q'^2$ and $qq' = 0$, hence $\nu = 0$, so there is no nilpotent direction either. The dimension count is decisive as well: the circle is one-dimensional, so a product of two continuous factors has one factor of dimension zero, and a connected group of dimension zero is a point. The discrete sign $\pm1$ is carried by the unit factor, not by a separate factor: a negative real number has $\varrho > 0$ and $u = -1$.
 
 **The circle is both compact factor and rotation factor.** The algebra $\mathbb{C}$ is a field, hence commutative, so every element is central. A central factor and a rotation factor cannot be separated in a commutative algebra: the same circle plays both roles. Multiplication by an invertible element is a rotation of the plane, and $\mathrm{U}(1)$ is the group of those rotations; it is also the compact factor of the polar decomposition. The coincidence is a consequence of commutativity alone.
 
-**No boundary.** If $Q \neq 0$ then $\langle Q\rangle_{*} > 0$, so $r > 0$ and $u = Q/r$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin.
+**No boundary.** If $Q \neq 0$ then $\langle Q\rangle_{*} > 0$, so $\varrho > 0$ and $u = Q/\varrho$ is defined. There is no nonzero element of vanishing norm, and the only excluded element is the origin.
 
 ## The Matrix Picture
 
@@ -143,7 +143,7 @@ $$
 \det M_Q = q^2+q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}M_Q = 2q,
 $$
 
-so the norm is the determinant and the modulus is the square root of the determinant, $r = \sqrt{\det M_Q}$.
+so the norm is the determinant and the modulus is the square root of the determinant, $\varrho = \sqrt{\det M_Q}$.
 
 For an invertible element $u$ the matrix is
 
@@ -159,16 +159,16 @@ $$
 
 The polar decomposition becomes the matrix factorisation
 
-$$ \boxed{\;M_Q = r\,M_u, \qquad r = \sqrt{\det M_Q} > 0, \quad M_u \in SO(2)\;}.
+$$ \boxed{\;M_Q = \varrho\,M_u, \qquad \varrho = \sqrt{\det M_Q} > 0, \quad M_u \in SO(2)\;}.
 $$
 
 This is the polar decomposition $M_Q = PU$ of an invertible matrix, with orthogonal factor $U = M_u$ and positive definite factor $P = rI$. The positive factor is a scalar because the family $\{qI+q'J\}$ has no other symmetric positive definite member: symmetry forces $q' = 0$, and positive definiteness then forces $q > 0$.
 
 | factor | matrix | the determinant of the image | action |
 |---|---|---|---|
-| modulus | $rI$, $r > 0$ | $r^2$ | similarity of ratio $r$ |
+| modulus | $rI$, $\varrho > 0$ | $\varrho^2$ | similarity of ratio $\varrho$ |
 | unit factor | $M_u \in SO(2)$ | $1$ | rotation |
-| $Q$ | $M_Q$ | $r^2$ | oriented similarity |
+| $Q$ | $M_Q$ | $\varrho^2$ | oriented similarity |
 
 ## Worked Examples
 
@@ -177,18 +177,18 @@ This is the polar decomposition $M_Q = PU$ of an invertible matrix, with orthogo
 Take $Q = 3+4i$. Then
 
 $$
-\langle Q\rangle_{*} = 9+16 = 25, \qquad r = 5, \qquad u = \frac{3+4i}{5} = 0.6+0.8i.
+\langle Q\rangle_{*} = 9+16 = 25, \qquad \varrho = 5, \qquad u = \frac{3+4i}{5} = 0.6+0.8i.
 $$
 
 The checks are exact in the data:
 
 $$
-\langle u\rangle_{*} = 0.6^2+0.8^2 = 0.36+0.64 = 1, \qquad r u = 5(0.6+0.8i) = 3+4i.
+\langle u\rangle_{*} = 0.6^2+0.8^2 = 0.36+0.64 = 1, \qquad \varrho u = 5(0.6+0.8i) = 3+4i.
 $$
 
 ### A Table of Examples
 
-| $Q$ | $\langle Q\rangle_{*}$ | $r$ | $u = Q/r$ | $\langle u\rangle_{*}$ |
+| $Q$ | $\langle Q\rangle_{*}$ | $\varrho$ | $u = Q/\varrho$ | $\langle u\rangle_{*}$ |
 |---|---|---|---|---|
 | $2$ | $4$ | $2$ | $1$ | $1$ |
 | $-3$ | $9$ | $3$ | $-1$ | $1$ |
@@ -201,7 +201,7 @@ The second and sixth lines show that the unit factor, not the modulus, carries t
 
 ### The Reconstruction Error
 
-For the six elements of the table the reconstruction $r u$ reproduces $Q$ exactly in double precision, with Euclidean error zero. The decomposition is exact in exact arithmetic.
+For the six elements of the table the reconstruction $\varrho u$ reproduces $Q$ exactly in double precision, with Euclidean error zero. The decomposition is exact in exact arithmetic.
 
 ## The Other Algebras
 
@@ -218,7 +218,7 @@ The complex column is the only one of the four in which the norm is definite and
 
 ## Summary
 
-Every nonzero complex number has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $r = \sqrt{\langle Q\rangle_{*}} > 0$ and unit factor $u = Q/r$ on the unit circle. The pair is unique with no sign or branch choice. The modulus is the positive square root of the definite norm; the unit factor is a point of $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$, a compact group, and the inverse of an invertible element is its conjugate.
+Every nonzero complex number has exactly one modulus–unit polar decomposition $Q = ru$, with modulus $\varrho = \sqrt{\langle Q\rangle_{*}} > 0$ and unit factor $u = Q/\varrho$ on the unit circle. The pair is unique with no sign or branch choice. The modulus is the positive square root of the definite norm; the unit factor is a point of $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$, a compact group, and the inverse of an invertible element is its conjugate.
 
 The group of invertibles splits as $\mathbb{C}^\times \cong \mathbb{R}_{>0} \times \mathrm{U}(1)$, the circle being the maximal compact subgroup and a deformation retract of the whole group. The real axis is Hermitian and carries the modulus; the imaginary axis is anti-Hermitian and is the direction of the circle. The only elements of the circle with square $+1$ are $\pm1$, so the algebra has no continuous factor of square $+1$, and because $\mathbb{C}$ is commutative the circle is at once the compact factor and the rotation factor. The norm is definite, so there is no boundary: the origin is the only excluded element.
 
@@ -232,8 +232,8 @@ In the matrix picture the decomposition is the polar decomposition $M_Q = rM_u$ 
 | $Q = q+iq'$ | a complex number, $q$ its real part, $q'$ its imaginary part |
 | $\bar{Q} = q-iq'$ | the complex conjugate |
 | $\langle Q\rangle_{*} = Q\bar{Q} = q^2+q'^2$ | the norm, positive definite |
-| $r = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
-| $u = Q/r$ | the unit factor, $\langle u\rangle_{*} = 1$ |
+| $\varrho = \sqrt{\langle Q\rangle_{*}}$ | the modulus, a positive real |
+| $u = Q/\varrho$ | the unit factor, $\langle u\rangle_{*} = 1$ |
 | $u$ | an invertible element, $\langle u\rangle_{*} = 1$, with real coordinates $\operatorname{Re}u$ and $\operatorname{Im}u$ |
 | $\mathrm{U}(1) = \{u : \langle u\rangle_{*}=1\}$ | the unit circle, a compact group |
 | $\mathbb{C}^\times = \mathbb{C}\setminus\{0\}$ | the group of invertibles |

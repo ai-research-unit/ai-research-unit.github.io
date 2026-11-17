@@ -7,19 +7,19 @@ Throughout this article $\tilde Q$ lies in the N-regular sector, so $N\neq0$. Of
 Every element of $\Sigma_{11}$ carries the complete polar decomposition, the ordered product of a positive real scale, a central phase and two unit factors,
 
 $$
-\tilde{Q} = r\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-= r\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
+\tilde{Q} = \varrho\,\exp(i\theta_{\mathrm{pha}})\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+= \varrho\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors, algebraic and exponential, are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the rotor.
+The four factors, algebraic and exponential, are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*: the scale $\varrho>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the rotor.
 
 **The quaternion pairing** is the grouping that joins the scale to the rotor and the phase to the boost, and writes the element with a real quaternion modulus $\tilde q$ and a real quaternion angle $\tilde\Theta$:
 
 $$
-\tilde{Q} = \tilde q\,\exp(i\tilde\Theta), \qquad \tilde q = r\,\tilde u_{\mathrm r}, \qquad \exp(i\tilde\Theta) = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} .
+\tilde{Q} = \tilde q\,\exp(i\tilde\Theta), \qquad \tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \exp(i\tilde\Theta) = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} .
 $$
 
-The fourth factor of the word, the rotor $\tilde u_{\mathrm r}$, is moved to the left, past the central phase, next to the scale, and the boost is conjugated by it so that the two non-central factors can stand together on the right as one exponential. The modulus $\tilde q = r\tilde u_{\mathrm r}$ is a real quaternion, and the angle is the real quaternion $\tilde\Theta = \theta_{\mathrm{pha}}+\theta_{\mathrm b}\vec u_{\mathrm b}'$, with $\theta_{\mathrm b} = \theta_{\mathrm{rpd}}/2$ half the rapidity and $\vec u_{\mathrm b}' = \tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis rotated by the rotor. The element is thus determined by the two real quaternions $\tilde q$ and $\tilde\Theta$. The split itself is made by the real quaternion part $\tilde q_r$ of the element, which the construction has to invert. The pairing is not named for the complex numbers. Its only complex object is the central phase, and $\mathbb{C}$ has a polar decomposition of its own in *Modulus–Unit Polar Decomposition of Complex Numbers*; the older name *complex representation* invited a confusion that the name here avoids. One reading of the first factor is worth stating at the outset: written $\tilde q = r\tilde u_{\mathrm r}$, the modulus $\tilde q$ is the polar decomposition of an ordinary quaternion in the sense of *Modulus–Unit Polar Decomposition of Quaternions*, with the same two factors and the same symbols. The pairing therefore carries the polar word of the quaternion algebra as its first factor, and only the second factor leaves that algebra.
+The fourth factor of the word, the rotor $\tilde u_{\mathrm r}$, is moved to the left, past the central phase, next to the scale, and the boost is conjugated by it so that the two non-central factors can stand together on the right as one exponential. The modulus $\tilde q = \varrho\tilde u_{\mathrm r}$ is a real quaternion, and the angle is the real quaternion $\tilde\Theta = \theta_{\mathrm{pha}}+\theta_{\mathrm b}\vec u_{\mathrm b}'$, with $\theta_{\mathrm b} = \theta_{\mathrm{rpd}}/2$ half the rapidity and $\vec u_{\mathrm b}' = \tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ the boost axis rotated by the rotor. The element is thus determined by the two real quaternions $\tilde q$ and $\tilde\Theta$. The split itself is made by the real quaternion part $\tilde q_r$ of the element, which the construction has to invert. The pairing is not named for the complex numbers. Its only complex object is the central phase, and $\mathbb{C}$ has a polar decomposition of its own in *Modulus–Unit Polar Decomposition of Complex Numbers*; the older name *complex representation* invited a confusion that the name here avoids. One reading of the first factor is worth stating at the outset: written $\tilde q = \varrho\tilde u_{\mathrm r}$, the modulus $\tilde q$ is the polar decomposition of an ordinary quaternion in the sense of *Modulus–Unit Polar Decomposition of Quaternions*, with the same two factors and the same symbols. The pairing therefore carries the polar word of the quaternion algebra as its first factor, and only the second factor leaves that algebra.
 
 The pairing is **partial**: its modulus is a composite object, the product of the scale and the rotor, and the pairing as constructed is available only where that object can be read from the parts of the element. The other partial pairing, the Hamilton one, groups the scale with the phase and the boost with the rotor; the third grouping, in which the scale joins the boost and the phase joins the rotor, is not partial and is *The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion*.
 
@@ -30,7 +30,7 @@ The pairing is **partial**: its modulus is a composite object, the product of th
 | item | the quaternion pairing |
 |---|---|
 | grouping | the scale with the rotor, the phase with the boost |
-| first factor | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion, the polar modulus of $\mathbb{H}$ |
+| first factor | $\tilde q=\varrho\tilde u_{\mathrm r}$, a real quaternion, the polar modulus of $\mathbb{H}$ |
 | second factor | $\exp(i\tilde\Theta)=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the exponential of a real quaternion |
 | equation | $\tilde Q=\tilde q\exp(i\tilde\Theta)$ |
 | construction | $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$, $\tilde q=\tilde q_r(\cos\tilde\Theta)^{-1}$ |
@@ -44,9 +44,9 @@ The article takes the following results as established and does not prove them a
 
 | result | established in | used here for |
 |---|---|---|
-| the four factors, their ranges and their order | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word $\tilde Q=r\exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ that is bracketed |
+| the four factors, their ranges and their order | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word $\tilde Q=\varrho\exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde q\exp(i\tilde\Theta)$ and its domain |
-| the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the first factor $\tilde q=r\tilde u_{\mathrm r}$ |
+| the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the first factor $\tilde q=\varrho\tilde u_{\mathrm r}$ |
 | the eigenvalues and the axis | *The Spectrum*, §*The Spectral Criterion* | the Hamilton row of the comparison |
 | the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Exponential* and §*The Logarithm* | the second factor $\exp(i\tilde\Theta)$ |
 
@@ -59,10 +59,10 @@ The key identity proved here is that of the construction with the polar modulus,
 The quaternion pairing is the pairing of the scale with the rotor against the phase with the boost:
 
 $$
-\tilde{Q} = \tilde q\,\exp(i\tilde\Theta), \qquad \tilde q = r\,\tilde u_{\mathrm r}, \qquad \exp(i\tilde\Theta) = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} .
+\tilde{Q} = \tilde q\,\exp(i\tilde\Theta), \qquad \tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \exp(i\tilde\Theta) = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} .
 $$
 
-The modulus is a real quaternion, of norm $\langle\tilde q\rangle_{\natural} = r^2$, and the exponential is central in its phase but not in its boost: the boost has been conjugated by the rotor, so that it can stand to the right of the modulus in the canonical order. Writing the conjugated boost as
+The modulus is a real quaternion, of norm $\langle\tilde q\rangle_{\natural} = \varrho^2$, and the exponential is central in its phase but not in its boost: the boost has been conjugated by the rotor, so that it can stand to the right of the modulus in the canonical order. Writing the conjugated boost as
 
 $$
 \tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \cosh\theta_{\mathrm b}\,e_t + i\sinh\theta_{\mathrm b}\,\vec u_{\mathrm b}', \qquad \theta_{\mathrm b} = \frac{\theta_{\mathrm{rpd}}}{2},
@@ -82,13 +82,13 @@ The pairing is stated as follows. Write $\tilde{Q} = \tilde q_r + i\tilde q_i$ w
 
 ### The Construction From the Parts
 
-The modulus $\tilde q = r\tilde u_{\mathrm r}$ of the pairing is exactly the modulus $\tilde q_r(\cos\tilde\Theta)^{-1}$ of the construction from the element's parts. The identity is not a coincidence of two constructions; it follows from the polar decomposition. Since $\tilde q = r\tilde u_{\mathrm r}$ is a real quaternion and $\exp(i\tilde\Theta)$ is the exponential of $i$ times a real quaternion, the real quaternion part of $\tilde{Q} = \tilde q\exp(i\tilde\Theta)$ is
+The modulus $\tilde q = \varrho\tilde u_{\mathrm r}$ of the pairing is exactly the modulus $\tilde q_r(\cos\tilde\Theta)^{-1}$ of the construction from the element's parts. The identity is not a coincidence of two constructions; it follows from the polar decomposition. Since $\tilde q = \varrho\tilde u_{\mathrm r}$ is a real quaternion and $\exp(i\tilde\Theta)$ is the exponential of $i$ times a real quaternion, the real quaternion part of $\tilde{Q} = \tilde q\exp(i\tilde\Theta)$ is
 
 $$
 \tilde q_r = \tilde q\,\frac{\exp(i\tilde\Theta)+\exp(-i\tilde\Theta)}{2} = \tilde q\cos\tilde\Theta ,
 $$
 
-because the complex conjugation of $\exp(i\tilde\Theta)$ is $\exp(-i\tilde\Theta)$ and the modulus $\tilde q = r\tilde u_{\mathrm r}$ is fixed by it. Hence $\tilde q = \tilde q_r(\cos\tilde\Theta)^{-1}$, which is the construction formula. The identity is therefore the equality of the modulus of the pairing with the modulus of the construction, not an agreement of two independent constructions.
+because the complex conjugation of $\exp(i\tilde\Theta)$ is $\exp(-i\tilde\Theta)$ and the modulus $\tilde q = \varrho\tilde u_{\mathrm r}$ is fixed by it. Hence $\tilde q = \tilde q_r(\cos\tilde\Theta)^{-1}$, which is the construction formula. The identity is therefore the equality of the modulus of the pairing with the modulus of the construction, not an agreement of two independent constructions.
 
 ## The First Factor: The Quaternion Modulus
 
@@ -96,18 +96,18 @@ The factor is the modulus of the ordinary quaternion, and its data are these.
 
 | aspect | value |
 |---|---|
-| formula | $\tilde q=r\tilde u_{\mathrm r}$ |
+| formula | $\tilde q=\varrho\tilde u_{\mathrm r}$ |
 | kind | real quaternion, the modulus of the polar form of $\mathbb{H}$ |
-| norm | $\langle\tilde q\rangle_{\natural}=r^{2}>0$ |
-| conjugation | $\bar{\tilde q}=\tilde q$ and $\tilde q^{\natural}=\tilde q^{*}=r\tilde u_{\mathrm r}^{\natural}$ |
+| norm | $\langle\tilde q\rangle_{\natural}=\varrho^{2}>0$ |
+| conjugation | $\bar{\tilde q}=\tilde q$ and $\tilde q^{\natural}=\tilde q^{*}=\varrho\tilde u_{\mathrm r}^{\natural}$ |
 | role | the first factor; the element itself when the second factor is trivial |
 
 ### The Two-Factor Word of the Ordinary Quaternions
 
-The modulus $\tilde q=r\tilde u_{\mathrm r}$ is not a new object. Read inside the ordinary quaternions $\mathbb{H}$, it is exactly the polar decomposition $\tilde q=r\tilde u_{\mathrm r}$ of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors*: the same positive real $r$ and the same unit factor $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$. The quaternion pairing therefore reads
+The modulus $\tilde q=\varrho\tilde u_{\mathrm r}$ is not a new object. Read inside the ordinary quaternions $\mathbb{H}$, it is exactly the polar decomposition $\tilde q=\varrho\tilde u_{\mathrm r}$ of *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors*: the same positive real $\varrho$ and the same unit factor $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$. The quaternion pairing therefore reads
 
 $$
-\tilde Q=\bigl(r\,\tilde u_{\mathrm r}\bigr)\exp(i\tilde\Theta),
+\tilde Q=\bigl(\varrho\,\tilde u_{\mathrm r}\bigr)\exp(i\tilde\Theta),
 $$
 
 the polar form of an ordinary quaternion followed by the exponential of a real quaternion; only the second factor leaves $\mathbb{H}$.
@@ -116,12 +116,12 @@ The companion articles give the unit factor two forms, and the pairing inherits 
 
 | form | formula | data | article |
 |---|---|---|---|
-| two-factor | $\tilde q=r\tilde u_{\mathrm r}$ | $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ | *Modulus–Unit Polar Decomposition of Quaternions* |
-| exponential | $\tilde q=\exp(\ln r)\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | $\mu=\operatorname{Vect}\tilde u_{\mathrm r}/\lvert\operatorname{Vect}\tilde u_{\mathrm r}\rvert$, $\theta=2\arccos(\operatorname{Sc}\tilde u_{\mathrm r})$ | *Polar Decomposition of Quaternions* |
+| two-factor | $\tilde q=\varrho\tilde u_{\mathrm r}$ | $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ | *Modulus–Unit Polar Decomposition of Quaternions* |
+| exponential | $\tilde q=\exp(\ln \varrho)\exp\bigl(\mu\tfrac{\theta}{2}\bigr)$ | $\mu=\operatorname{Vect}\tilde u_{\mathrm r}/\lvert\operatorname{Vect}\tilde u_{\mathrm r}\rvert$, $\theta=2\arccos(\operatorname{Sc}\tilde u_{\mathrm r})$ | *Polar Decomposition of Quaternions* |
 
-The nested word has the properties that the second factor lacks. Its two factors are a positive real and a unit element, so the decomposition is unique and needs no construction and no choice of branch. It is fixed by complex conjugation, $\bar{\tilde q}=\tilde q$. And it is closed under the other two conjugations in the same shape, $\tilde q^{\natural}=r\tilde u_{\mathrm r}^{\natural}$ and $\tilde q^{*}=r\tilde u_{\mathrm r}^{\natural}$, again the polar decomposition of an ordinary quaternion with the same modulus $r$ and the conjugated unit factor.
+The nested word has the properties that the second factor lacks. Its two factors are a positive real and a unit element, so the decomposition is unique and needs no construction and no choice of branch. It is fixed by complex conjugation, $\bar{\tilde q}=\tilde q$. And it is closed under the other two conjugations in the same shape, $\tilde q^{\natural}=\varrho\tilde u_{\mathrm r}^{\natural}$ and $\tilde q^{*}=\varrho\tilde u_{\mathrm r}^{\natural}$, again the polar decomposition of an ordinary quaternion with the same modulus $\varrho$ and the conjugated unit factor.
 
-The correspondence is a correspondence of objects, not of names: the modulus of the pairing is the ordinary quaternion written in the two-factor form, while the Hamilton modulus is the complex scalar $\Rho=r\exp(i\theta_{\mathrm{pha}})$, an object of the centre. This is one of the two senses, independent of domain, in which the two named pairings are complementary; the other is recorded in §*Behaviour Under the Three Conjugations*.
+The correspondence is a correspondence of objects, not of names: the modulus of the pairing is the ordinary quaternion written in the two-factor form, while the Hamilton modulus is the complex scalar $\varrho\exp(i\theta_{\mathrm{pha}})$, an object of the centre. This is one of the two senses, independent of domain, in which the two named pairings are complementary; the other is recorded in §*Behaviour Under the Three Conjugations*.
 
 ## The Second Factor: The Exponential
 
@@ -138,7 +138,7 @@ $$
 \boxed{\; \exp(i\tilde\Theta)=\tilde q^{-1}\tilde Q \;},
 $$
 
-because $\tilde q=r\tilde u_{\mathrm r}$ is invertible. The modulus carries the scale, $\langle\tilde q\rangle_{\natural}=r^{2}$, and the second factor the phase and the rotor-conjugated boost, $\langle\exp(i\tilde\Theta)\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})$; the product is the norm of the element.
+because $\tilde q=\varrho\tilde u_{\mathrm r}$ is invertible. The modulus carries the scale, $\langle\tilde q\rangle_{\natural}=\varrho^{2}$, and the second factor the phase and the rotor-conjugated boost, $\langle\exp(i\tilde\Theta)\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})$; the product is the norm of the element.
 
 | aspect | value |
 |---|---|
@@ -154,13 +154,13 @@ The exponential and the logarithm of a biquaternion are those of *Biquaternion E
 
 ### The Theorem
 
-**Theorem (the quaternion pairing).** Let $\tilde Q\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q=\tilde q\exp(i\tilde\Theta)$, with $\tilde q=r\tilde u_{\mathrm r}$ a real quaternion and $\tilde\Theta$ a real quaternion, as a regrouping of the polar word. If in addition $\tilde q_r\neq0$, the factors are $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ and $\tilde q=\tilde q_r(\cos\tilde\Theta)^{-1}$.
+**Theorem (the quaternion pairing).** Let $\tilde Q\in\mathbb{B}$ with $\langle\tilde Q\rangle_{\natural}\neq0$. Then $\tilde Q=\tilde q\exp(i\tilde\Theta)$, with $\tilde q=\varrho\tilde u_{\mathrm r}$ a real quaternion and $\tilde\Theta$ a real quaternion, as a regrouping of the polar word. If in addition $\tilde q_r\neq0$, the factors are $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ and $\tilde q=\tilde q_r(\cos\tilde\Theta)^{-1}$.
 
-The factorisation $\tilde Q=(r\tilde u_{\mathrm r})\exp(i\tilde\Theta)$ exists whenever the four-factor word exists, that is, whenever $\langle\tilde Q\rangle_{\natural}\neq0$: it is a regrouping of unique factors, so it inherits their existence and their uniqueness. The construction from the parts is a separate statement, with a smaller domain. The two are separated below.
+The factorisation $\tilde Q=(\varrho\tilde u_{\mathrm r})\exp(i\tilde\Theta)$ exists whenever the four-factor word exists, that is, whenever $\langle\tilde Q\rangle_{\natural}\neq0$: it is a regrouping of unique factors, so it inherits their existence and their uniqueness. The construction from the parts is a separate statement, with a smaller domain. The two are separated below.
 
 ### Uniqueness and the Branch
 
-The factorisation is unique because the four factors are: the two factors $\tilde q=r\tilde u_{\mathrm r}$ and $\exp(i\tilde\Theta)$ are the scale-times-rotor and the phase-times-boost of a unique word, so their product is determined by the element. The construction is determined only up to $(\tilde q,\tilde\Theta)\mapsto(-\tilde q,\tilde\Theta+\pi)$, the branch ambiguity of the tangent, since $\exp(i(\tilde\Theta+\pi))=-\exp(i\tilde\Theta)$ and the two signs cancel. The sign of $\tilde q$ is fixed by the polar word: $\tilde q=r\tilde u_{\mathrm r}$ with $r>0$, so the representative is the one whose norm is the positive scale $r$.
+The factorisation is unique because the four factors are: the two factors $\tilde q=\varrho\tilde u_{\mathrm r}$ and $\exp(i\tilde\Theta)$ are the scale-times-rotor and the phase-times-boost of a unique word, so their product is determined by the element. The construction is determined only up to $(\tilde q,\tilde\Theta)\mapsto(-\tilde q,\tilde\Theta+\pi)$, the branch ambiguity of the tangent, since $\exp(i(\tilde\Theta+\pi))=-\exp(i\tilde\Theta)$ and the two signs cancel. The sign of $\tilde q$ is fixed by the polar word: $\tilde q=\varrho\tilde u_{\mathrm r}$ with $\varrho>0$, so the representative is the one whose norm is the positive scale $\varrho$.
 
 ### The Domain
 
@@ -178,7 +178,7 @@ On the domain of the word, however, $\tilde q_r\neq0$ is also sufficient. The ta
 $$
 \langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\tilde q_r\,(e_t+iT)(e_t-iT)\,\tilde q_r^{\natural}=\tilde q_r\,(e_t+T^{2})\,\tilde q_r^{\natural}=0 .
 $$
-That failure is therefore on the null cone and nowhere else. Off the cone the tangent has a real solution, and the construction produces $\tilde q$ and $\tilde\Theta$ with $\tilde Q=\tilde q\exp(i\tilde\Theta)$. Taking norms and writing $\theta_{\mathrm{pha}}=\operatorname{Sc}\tilde\Theta$ gives $\langle\tilde Q\rangle_{\natural}=\langle\tilde q\rangle_{\natural}\exp(2i\theta_{\mathrm{pha}})=r^{2}\exp(2i\theta_{\mathrm{pha}})\neq0$, since $\tilde q$ is a nonzero real quaternion. The condition $\tilde q_r\neq0$ is therefore exactly the extra condition on the word's domain, and the set $\{\tilde q_r\neq0\}$ is not contained in the word's domain.
+That failure is therefore on the null cone and nowhere else. Off the cone the tangent has a real solution, and the construction produces $\tilde q$ and $\tilde\Theta$ with $\tilde Q=\tilde q\exp(i\tilde\Theta)$. Taking norms and writing $\theta_{\mathrm{pha}}=\operatorname{Sc}\tilde\Theta$ gives $\langle\tilde Q\rangle_{\natural}=\langle\tilde q\rangle_{\natural}\exp(2i\theta_{\mathrm{pha}})=\varrho^{2}\exp(2i\theta_{\mathrm{pha}})\neq0$, since $\tilde q$ is a nonzero real quaternion. The condition $\tilde q_r\neq0$ is therefore exactly the extra condition on the word's domain, and the set $\{\tilde q_r\neq0\}$ is not contained in the word's domain.
 
 The Hamilton domain and the quaternion construction domain are not nested either: $1+\vec e_x+i\vec e_y$ has $\tilde q_r = 1+\vec e_x \neq 0$ but no Hamilton axis, and $i\vec e_x+i\vec e_y$ has a Hamilton axis but no quaternion construction.
 
@@ -200,11 +200,11 @@ The four factors can be bracketed in exactly three ways, and each bracketing is 
 
 | pairing | first factor | second factor | norm of the first factor | norm of the second factor |
 |---|---|---|---|---|
-| Hamilton | $\Rho=r\exp(i\theta_{\mathrm{pha}})$, complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\Rho^{2}$ | $e_t$ |
-| quaternion | $\tilde q=r\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde\Theta)=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $r^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
-| Cartan | $\tilde H=r\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$, $*$-unitary | $r^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
+| Hamilton | $\varrho\exp(i\theta_{\mathrm{pha}})$, complex scalar | $\exp(\vec U\Theta)=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | $e_t$ |
+| quaternion | $\tilde q=\varrho\tilde u_{\mathrm r}$, real quaternion | $\exp(i\tilde\Theta)=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\varrho^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
+| Cartan | $\tilde H=\varrho\tilde U_{\mathrm b}$, Hermitian positive | $\tilde U=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}$, $*$-unitary | $\varrho^{2}$ | $\exp(2i\theta_{\mathrm{pha}})$ |
 
-The three rows split the same norm $\Rho^{2}=r^{2}\exp(2i\theta_{\mathrm{pha}})$ in three ways. The Hamilton row puts the whole norm in a central first factor and leaves a unit second factor. The quaternion and Cartan rows put the scale in the first factor and the phase in the second; they differ in the kind of the first factor, a real quaternion in one and a Hermitian positive element in the other. The three moduli are therefore a complex scalar, a real quaternion and a Hermitian positive element, and the four-factor word is the reference in which the scale stands alone.
+The three rows split the same norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\varrho^{2}\exp(2i\theta_{\mathrm{pha}})$ in three ways. The Hamilton row puts the whole norm in a central first factor and leaves a unit second factor. The quaternion and Cartan rows put the scale in the first factor and the phase in the second; they differ in the kind of the first factor, a real quaternion in one and a Hermitian positive element in the other. The three moduli are therefore a complex scalar, a real quaternion and a Hermitian positive element, and the four-factor word is the reference in which the scale stands alone.
 
 ### The Domains and the Witnesses
 
@@ -294,16 +294,16 @@ Two exact statements identify which classical polar form each named pairing gene
 
 | case | element | Hamilton pairing | quaternion pairing | classical form |
 |---|---|---|---|---|
-| non-scalar real quaternion | $q_te_t+\vec q$, $\vec q\neq0$ | $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}\in\mathbb{R}_{>0}$ and $\Theta$ real, $\vec U=\vec q/\lvert\vec q\rvert$ | $\tilde q=\tilde Q$, $\tilde\Theta=0$ | the quaternion polar form |
+| non-scalar real quaternion | $q_te_t+\vec q$, $\vec q\neq0$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}\in\mathbb{R}_{>0}$ and $\Theta$ real, $\vec U=\vec q/\lvert\vec q\rvert$ | $\tilde q=\tilde Q$, $\tilde\Theta=0$ | the quaternion polar form |
 | complex scalar | $ze_t$, $\operatorname{Re}z\neq0$ | unavailable, $B=0$ | $\tilde q=\lvert z\rvert e_t$, $\tilde\Theta=(\arg z)e_t$ | the complex polar form |
 
 **A real quaternion.** If all four coefficients of $\tilde{Q}$ are real and the vector part is nonzero then $\tilde{Q}\in\mathbb{B}_{H}$, the biquaternion norm $\langle\tilde Q\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, and with the principal branch of the square root
 
 $$
-\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{\Rho}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{\Rho}\in[0,1] ,
+\varrho\,e^{i\theta_{\mathrm{pha}}} = \sqrt{\langle\tilde Q\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\in[0,1] ,
 $$
 
-so both the modulus and the angle are real and $\vec U = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar decomposition of the companion articles *Modulus–Unit Polar Decomposition of Quaternions* and *Polar Decomposition of Quaternions*, in the two forms they give it: the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ with $r = \Rho$ and $\tilde u_{\mathrm r} = \exp(\vec U\Theta)$, and the exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec U$ and $\theta = 2\Theta$, the exponential article's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $\tilde q_i = 0$, hence $\tan\tilde\Theta = 0$, $\tilde\Theta = 0$ and $\tilde q = \tilde q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = r\tilde u_{\mathrm r}$ of the modulus–unit article, with $r = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/r$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the modulus–unit article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.
+so both the modulus and the angle are real and $\vec U = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar decomposition of the companion articles *Modulus–Unit Polar Decomposition of Quaternions* and *Polar Decomposition of Quaternions*, in the two forms they give it: the two-factor form $\tilde q = \varrho\tilde u_{\mathrm r}$ with $\varrho = \varrho\,e^{i\theta_{\mathrm{pha}}}$ and $\tilde u_{\mathrm r} = \exp(\vec U\Theta)$, and the exponential form $\exp(\ln \varrho)\exp(\mu\tfrac{\theta}{2})$ with $\mu = \vec U$ and $\theta = 2\Theta$, the exponential article's $\theta$ being twice the angle of the unit factor, which is $\Theta$ here. The identification is exact rather than asymptotic. The quaternion pairing is available on the same elements and is degenerate there: $\tilde q_i = 0$, hence $\tan\tilde\Theta = 0$, $\tilde\Theta = 0$ and $\tilde q = \tilde q_r = \tilde{Q}$, the element itself in the two-factor form $\tilde q = \varrho\tilde u_{\mathrm r}$ of the modulus–unit article, with $\varrho = \sqrt{\langle\tilde Q\rangle_{\natural}}$ and $\tilde u_{\mathrm r} = \tilde{Q}/\varrho$; the second factor is trivial. In this limit the two named pairings are two readings of the same two-factor word of the modulus–unit article: the quaternion pairing gives the word itself, with its second factor trivial, and the Hamilton pairing gives the exponential form of its unit factor.
 
 **A complex scalar.** If $\tilde{Q} = ze_t$ with $z\in\mathbb{C}$ and $\operatorname{Re}z\neq0$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable. This is the scalar vertex of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Boundary*: the element is semisimple with a repeated eigenvalue, and its eigenprojections are not unique. The quaternion pairing gives
 
@@ -326,12 +326,12 @@ On the wall the word is rigid: the axes are orthogonal, the unit factor is unipo
 $$
 \tilde Q=\tilde q\exp(i\tilde{Ξ}),
 \qquad
-\tilde q=r\tilde u_{\mathrm r},
+\tilde q=\varrho\tilde u_{\mathrm r},
 \qquad
 \tilde{Ξ}=\theta_{\mathrm{pha}}+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}',
 $$
 
-with $\tilde q$ a real quaternion of norm $r$ and $\tilde{Ξ}$ a real quaternion. The vector part of $\tilde{Ξ}$ is orthogonal to $\tilde q$.
+with $\tilde q$ a real quaternion of norm $\varrho$ and $\tilde{Ξ}$ a real quaternion. The vector part of $\tilde{Ξ}$ is orthogonal to $\tilde q$.
 
 *Proof.* The factorisation is the regrouping of the four factors of the word, which exists on the sector. The orthogonality is the orthogonality of the axes, transported by the rotor conjugation.
 
@@ -363,7 +363,7 @@ On the Jordan part the second equation gives $\vec u_{\mathrm b}\cdot\vec u_{\ma
 
 | Pairing datum | Word datum | Sector condition |
 |---|---|---|
-| $\tilde q=r\tilde u_{\mathrm r}$ | $r,\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ | $\lvert\tilde q\rvert=r>0$ |
+| $\tilde q=\varrho\tilde u_{\mathrm r}$ | $\varrho,\theta_{\mathrm{axr}},\vec u_{\mathrm r}$ | $\lvert\tilde q\rvert=\varrho>0$ |
 | $\operatorname{Sc}\tilde{Ξ}=\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}$ | none beyond the branch |
 | $\operatorname{Vect}\tilde{Ξ}=\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | $\theta_{\mathrm{rpd}},\vec u_{\mathrm b}$ | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$ |
 | $\cos\tilde{Ξ}=\cos\theta_{\mathrm{pha}}\cosh\frac{\theta_{\mathrm{rpd}}}{2}-\sin\theta_{\mathrm{pha}}\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$ | the phase and the boost | $\operatorname{Sc}\cos\tilde{Ξ}=\cos\theta_{\mathrm{pha}}\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ |
@@ -384,7 +384,7 @@ $$
 \tilde Q=e_t+\vec e_x+i\vec e_y.
 $$
 
-The polar data are $r=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$,
+The polar data are $\varrho=1$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{rpd}}=2\operatorname{arcosh}\sqrt2$, $\theta_{\mathrm{axr}}=\frac{\pi}{2}$,
 
 $$
 \vec u_{\mathrm b}=\frac{\vec e_y+\vec e_z}{\sqrt2},
@@ -395,7 +395,7 @@ $$
 The quaternion modulus is
 
 $$
-\tilde q=r\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
+\tilde q=\varrho\tilde u_{\mathrm r}=\frac{e_t+\vec e_x}{\sqrt2}.
 $$
 
 The conjugated axis is
@@ -469,13 +469,13 @@ The four elements are collected in the table, with the status of the factorisati
 Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its complete polar decomposition is
 
 $$
-r = 2.320595787, \quad \theta_{\mathrm{pha}} = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
+\varrho = 2.320595787, \quad \theta_{\mathrm{pha}} = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
 $$
 
 *The regrouping.* The modulus is the real quaternion
 
 $$
-\tilde q = r\tilde u_{\mathrm r} = 1.092054\,e_t + 0.915705\,\vec e_x + 1.831411\,\vec e_y ,
+\tilde q = \varrho\tilde u_{\mathrm r} = 1.092054\,e_t + 0.915705\,\vec e_x + 1.831411\,\vec e_y ,
 $$
 
 matching the modulus $\tilde q_r(\cos\tilde\Theta)^{-1}$ of the construction with $\tilde q_r = 1+\vec e_x+2\vec e_y$, and the exponent is
@@ -493,7 +493,7 @@ The two partial regroupings of the same four factors are therefore displayed on 
 Take $\tilde{Q} = 1+\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = 1+1+i^2 = 1$ and $\langle\vec Q,\vec Q\rangle_{\natural} = 1+i^2 = 0$, so the Hamilton representation does not exist: $B = 0$ and the axis is undefined. The quaternion pairing does exist, with
 
 $$
-r = 1, \qquad \theta_{\mathrm{pha}} = 0, \qquad \tilde U_{\mathrm b} = 1.414213562\,e_t + 0.707106781\,i\,\vec e_y + 0.707106781\,i\,\vec e_z, \qquad \tilde u_{\mathrm r} = 0.707106781\left(e_t+\vec e_x\right) ,
+\varrho = 1, \qquad \theta_{\mathrm{pha}} = 0, \qquad \tilde U_{\mathrm b} = 1.414213562\,e_t + 0.707106781\,i\,\vec e_y + 0.707106781\,i\,\vec e_z, \qquad \tilde u_{\mathrm r} = 0.707106781\left(e_t+\vec e_x\right) ,
 $$
 
 so that the quaternion modulus is $\tilde q = \tilde u_{\mathrm r} = 0.707106781(e_t+\vec e_x)$. The modulus computed from the parts, $\tilde q_r(\cos\tilde\Theta)^{-1}$, is the same quaternion, and this equality is the identity proved in the section on the pairing above; the element is also the non-scalar example of that section.
@@ -503,16 +503,16 @@ so that the quaternion modulus is $\tilde q = \tilde u_{\mathrm r} = 0.707106781
 Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\tilde q_r = 0$, so the construction of the quaternion pairing from the element's parts fails. The complete polar decomposition gives
 
 $$
-r = \sqrt{2}, \qquad \theta_{\mathrm{pha}} = \frac{\pi}{2}, \qquad \tilde U_{\mathrm b} = e_t, \qquad \tilde u_{\mathrm r} = \frac{\vec e_x+\vec e_y}{\sqrt{2}} ,
+\varrho = \sqrt{2}, \qquad \theta_{\mathrm{pha}} = \frac{\pi}{2}, \qquad \tilde U_{\mathrm b} = e_t, \qquad \tilde u_{\mathrm r} = \frac{\vec e_x+\vec e_y}{\sqrt{2}} ,
 $$
 
-so the Hamilton representation exists, with $B = \sqrt{-2} = i\sqrt{2}$, axis $\vec U = (\vec e_x+\vec e_y)/\sqrt2$, $\Rho = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
+so the Hamilton representation exists, with $B = \sqrt{-2} = i\sqrt{2}$, axis $\vec U = (\vec e_x+\vec e_y)/\sqrt2$, $\varrho\,e^{i\theta_{\mathrm{pha}}} = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
 
 $$
 \tilde{Q} = i\sqrt{2}\,\exp\!\left(\frac{\vec e_x+\vec e_y}{\sqrt2}\frac{\pi}{2}\right) .
 $$
 
-The quaternion pairing, on the other hand, exists with modulus $r\tilde u_{\mathrm r} = \vec e_x+\vec e_y$ and exponent $\tilde\Theta = \theta_{\mathrm{pha}} = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
+The quaternion pairing, on the other hand, exists with modulus $\varrho\tilde u_{\mathrm r} = \vec e_x+\vec e_y$ and exponent $\tilde\Theta = \theta_{\mathrm{pha}} = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
 
 ### The Scalar Imaginary
 
@@ -525,7 +525,7 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, so the elem
 | item | result |
 |---|---|
 | domain | $\langle\tilde Q\rangle_{\natural}\neq0$ for the factorisation; $\tilde q_r\neq0$ for the construction, a strictly smaller set |
-| first factor | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion |
+| first factor | $\tilde q=\varrho\tilde u_{\mathrm r}$, a real quaternion |
 | second factor | $\exp(i\tilde\Theta)=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ |
 | equation | $\tilde Q=\tilde q\exp(i\tilde\Theta)$, with $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ |
 | uniqueness | $\tilde q$ and $\exp(i\tilde\Theta)$ unique; the equation fixes the pair only up to $(-\tilde q,\tilde\Theta+\pi)$ |
@@ -535,7 +535,7 @@ Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, so the elem
 | degenerate limits | a non-scalar real quaternion gives the quaternion polar form; a complex scalar gives the complex polar form |
 | classical case | the polar decomposition of the ordinary quaternions |
 
-The quaternion pairing groups the scale with the rotor into the real quaternion modulus $\tilde q=r\tilde u_{\mathrm r}$ and the phase with the rotor-conjugated boost into the exponential $\exp(i\tilde\Theta)$. Its first factor is exactly the polar decomposition of the ordinary quaternions. The construction reads the pairing off the parts of the element, $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ and $\tilde q=\tilde q_r(\cos\tilde\Theta)^{-1}$, and the two readings of the modulus agree.
+The quaternion pairing groups the scale with the rotor into the real quaternion modulus $\tilde q=\varrho\tilde u_{\mathrm r}$ and the phase with the rotor-conjugated boost into the exponential $\exp(i\tilde\Theta)$. Its first factor is exactly the polar decomposition of the ordinary quaternions. The construction reads the pairing off the parts of the element, $\tan\tilde\Theta=\tilde q_r^{-1}\tilde q_i$ and $\tilde q=\tilde q_r(\cos\tilde\Theta)^{-1}$, and the two readings of the modulus agree.
 
 The construction needs $\tilde q_r$ invertible; the pairing itself needs only $\langle\tilde Q\rangle_{\natural}\neq0$, because it is a regrouping of the four factors, which exist on the whole complement of the null cone. This is the difference between the factorisation and the construction. The Hamilton domain and the quaternion construction domain are not nested; the Cartan pairing is the third, total in both senses.
 
@@ -546,7 +546,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 | Item | Value |
 |---|---|
 | equation | $\tilde Q=\tilde q\exp(i\tilde{Ξ})$ |
-| modulus | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion of norm $r$ |
+| modulus | $\tilde q=\varrho\tilde u_{\mathrm r}$, a real quaternion of norm $\varrho$ |
 | exponent | $\tilde{Ξ}=\theta_{\mathrm{pha}}+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$, a real quaternion |
 | sector inertia | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$, hence $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$ |
 | rigidity | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon=\pm1$ on the Jordan part |
@@ -557,30 +557,30 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
-| $r$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor, with $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ |
-| $\Rho = r\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the complex modulus of the four-factor decomposition, which is the Hamilton modulus |
+| $\tilde{Q} = \varrho \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
+| $\varrho$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor, with $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ |
+| $\varrho\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the complex modulus of the four-factor decomposition, which is the Hamilton modulus |
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |
 | $\langle\vec Q,\vec Q\rangle_{\natural} = Q_x^2+Q_y^2+Q_z^2$ | the quaternionic bilinear square of the vector part |
 | $\tilde q_r$, $\tilde q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $\vec U$, $\Theta$ | Hamilton axis, parallel to $\vec Q$, and complex angle |
 | $B = \sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ | the length of the vector part, the Hamilton axis being $\vec Q/B$ |
-| $\lambda_\pm = Q_t\pm iB = \Rho\exp(\pm i\Theta)$ | the eigenvalues of $\tilde Q$, the coefficients of its eigenvalue decomposition |
-| $\tilde q = r\tilde u_{\mathrm r}$ | quaternion modulus, the real quaternion that is the polar decomposition of the ordinary quaternions |
+| $\lambda_\pm = Q_t\pm iB = \varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ | the eigenvalues of $\tilde Q$, the coefficients of its eigenvalue decomposition |
+| $\tilde q = \varrho\tilde u_{\mathrm r}$ | quaternion modulus, the real quaternion that is the polar decomposition of the ordinary quaternions |
 | $\tilde\Theta = \theta_{\mathrm{pha}}+\theta_{\mathrm b}\vec u_{\mathrm b}'$ | quaternion angle, a real quaternion |
 | $\theta_{\mathrm b} = \theta_{\mathrm{rpd}}/2$, $\vec u_{\mathrm b}'$ | half the boost rapidity, and the rotor-rotated boost axis |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, coefficientwise and Hermitian conjugation |
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues*, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
+- [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues*, for the eigenvalues $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm of which the second factor of the pairing is built, and which carry the branch ambiguity of the construction.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four exponentials and the existence and uniqueness of the word that the pairing regroups.
-- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §*The Algorithm* of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}} = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and §*The Algorithm* of that article for the procedure itself, the factors in the coordinates of $\tilde{Q}$ and the exponents with their positions.
 - [The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-hamilton-root-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the Hamilton grouping, its complex modulus and its non-central root of $-1$, the exponential of the element, the non-uniqueness of its parameters, and the reading of the same word at the roots of one.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the third pairing of the four factors, its Hermitian and anti-Hermitian exponent split, its full domain and its identification with the matrix polar decomposition.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor Cartan form on the null cone, where the construction of this article stops, and for the positive semidefinite factor and partial isometry that replace the Cartan factors there.
-- [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html) and [Polar Decomposition of Quaternions](polar-decomposition-of-quaternions.html), for the polar decomposition $\tilde q = r\tilde u_{\mathrm r}$ of the ordinary quaternions, which is the first factor of the pairing, for its exponential form $\exp(\ln r)\exp(\mu\tfrac{\theta_{\mathrm{axr}}}{2})$, which the quaternion pairing reproduces on the real quaternions, and for the degenerate limit in which the two-factor form is read on the element itself.
+- [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html) and [Polar Decomposition of Quaternions](polar-decomposition-of-quaternions.html), for the polar decomposition $\tilde q = \varrho\tilde u_{\mathrm r}$ of the ordinary quaternions, which is the first factor of the pairing, for its exponential form $\exp(\ln \varrho)\exp(\mu\tfrac{\theta_{\mathrm{axr}}}{2})$, which the quaternion pairing reproduces on the real quaternions, and for the degenerate limit in which the two-factor form is read on the element itself.
 - [The Biquaternion Algebra](the-biquaternion-algebra.html), for the real, complex and quaternionic coordinate systems and the convention $Q_\mu = q_\mu+iq'_\mu$ used in the derivation above.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, where the four-factor word and the $*$-unitary pairings stop and the generalized pairing of the companion article begins.
 - [Polar Decomposition of Complex Numbers](polar-decomposition-of-complex-numbers.html) and [Polar Decomposition of Split-Complex Numbers](polar-decomposition-of-split-complex-numbers.html), for the two-dimensional members of the series and the rule of the exponential $\exp(\nu\theta)$ that the factors of these pairings are built from.

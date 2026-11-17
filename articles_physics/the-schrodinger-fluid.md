@@ -16,7 +16,7 @@
 
 **The article is a reading and not a derivation.** The word, the pair and the current are [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field*. This article takes them and asks what the object is in the vocabulary a fluid is described by: what its density is, what its velocity is, what accelerates it, what its vorticity is, and what plays the role of a pressure. Nothing here is a new solution, and the pair is not re-derived.
 
-**Conventions.** The algebra and the word are the polar article's: $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$ the branch. The density is $\rho_{\mathrm{num}}=r^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta r/(2mr)$. Time is $t'$; $\nabla$ and $\Delta$ are the flat spatial operators of the material sector; $\hbar$ is written explicitly and no wave number is used. Where the companion's relativistic letters appear they are the companion's: $\rho_{\mathrm{chg}}$, $\gamma$, $\tilde V_{\Phi}$.
+**Conventions.** The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$ the branch. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$. Time is $t'$; $\nabla$ and $\Delta$ are the flat spatial operators of the material sector; $\hbar$ is written explicitly and no wave number is used. Where the companion's relativistic letters appear they are the companion's: $\rho_{\mathrm{chg}}$, $\gamma$, $\tilde V_{\Phi}$.
 
 ## The Word Collapses
 
@@ -25,9 +25,9 @@
 **Two factors have no data.** The boost needs a rapidity and an axis, and a central element supplies neither, so $\tilde U_{\Psi,\mathrm b}=e_t$. The rotor needs an angle and an axis, and a central element supplies neither, so $\tilde u_{\mathrm r}=\varepsilon e_t$, a sign. The word collapses to
 
 $$
-\boxed{\;\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}
+\boxed{\;\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}
 \qquad
-\rho_{\mathrm{num}}=r^{2},\quad
+\rho_{\mathrm{num}}=\varrho^{2},\quad
 S=\hbar\theta_{\mathrm{pha}},\quad
 \varepsilon=\pm1 .
 $$
@@ -36,7 +36,7 @@ $$
 
 | datum | range | symbol | what it is |
 | --- | --- | --- | --- |
-| scale | $r>0$ | $\rho_{\mathrm{num}}=r^{2}$ | density of the markers |
+| scale | $\varrho>0$ | $\rho_{\mathrm{num}}=\varrho^{2}$ | density of the markers |
 | angle | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | $S=\hbar\theta_{\mathrm{pha}}$ | action, defined modulo $2\pi\hbar$ |
 | branch | $\varepsilon=\pm1$ | $\varepsilon$ | sign of the coefficient, deposited by the half turn |
 
@@ -58,7 +58,7 @@ $$
 with
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r}
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho}
 =-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
@@ -77,7 +77,7 @@ The first is a Hamilton–Jacobi equation with one extra term and the second is 
 **There is one density and it is both the marker density and the conserved density.**
 
 $$
-\rho_{\mathrm{num}}=r^{2}>0,
+\rho_{\mathrm{num}}=\varrho^{2}>0,
 \qquad
 \frac{\partial\rho_{\mathrm{num}}}{\partial t'}+\nabla\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)=0,
 \qquad
@@ -145,7 +145,7 @@ $$
 -\rho_{\mathrm{num}}\partial_{i}Q=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\bigl(f_{j}f_{ij}+\partial_{i}\Delta f\bigr),
 $$
 
-using $\Delta r/r=\tfrac12\Delta f+\tfrac14\lvert\nabla f\rvert^{2}$, and the two agree term by term. The identity was also checked symbolically on a general smooth density, with all three components of the divergence vanishing identically.
+using $\Delta \varrho/\varrho=\tfrac12\Delta f+\tfrac14\lvert\nabla f\rvert^{2}$, and the two agree term by term. The identity was also checked symbolically on a general smooth density, with all three components of the divergence vanishing identically.
 
 **Its trace is not the quantum potential, and that is the measure of its anisotropy.**
 
@@ -191,9 +191,9 @@ so the trace is $-\rho_{\mathrm{num}}Q$ corrected by a gradient-squared term, an
 
 ## Summary
 
-The scalar field's word collapses to a scale, an action and a branch, and the fluid carries three data at each event: the density $\rho_{\mathrm{num}}=r^{2}$, the action $S=\hbar\theta_{\mathrm{pha}}$, and the sign $\varepsilon$.
+The scalar field's word collapses to a scale, an action and a branch, and the fluid carries three data at each event: the density $\rho_{\mathrm{num}}=\varrho^{2}$, the action $S=\hbar\theta_{\mathrm{pha}}$, and the sign $\varepsilon$.
 
-The equation separates into two real equations without remainder: a Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta r/(2mr)$ and a continuity equation for $\rho_{\mathrm{num}}$. The pair is unconstrained in both directions.
+The equation separates into two real equations without remainder: a Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ and a continuity equation for $\rho_{\mathrm{num}}$. The pair is unconstrained in both directions.
 
 The density is at once the marker density and the conserved density, because the equation is first order in time and the density is a norm rather than the temporal slot of a current. There is one sheet, no sign and no antiparticle in the data.
 
@@ -213,14 +213,14 @@ Three quantities of the companion are removed: the normalisation of the four-vel
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
-| $r$ | Amplitude; $r>0$ |
-| $\rho_{\mathrm{num}}=r^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density; here also the conserved density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
+| $\varrho$ | Amplitude; $\varrho>0$ |
+| $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density; here also the conserved density |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Action |
 | $\varepsilon=\pm1$ | Branch of the modulus |
 | $\vec v=\nabla S/m$ | Three-velocity; a gradient |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current |
-| $Q=-\hbar^{2}\Delta r/(2mr)$ | Quantum potential |
+| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | Quantum potential |
 | $V$ | External potential; $V=0$ for the free field |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ |
 | $\vec\omega=\nabla\times\vec v$ | Vorticity; zero identically |

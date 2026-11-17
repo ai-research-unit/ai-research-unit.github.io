@@ -16,19 +16,19 @@
 
 **The word exists if and only if the norm does not vanish.**
 
-*Theorem.* The polar word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists on $\tilde\Xi$ if and only if $N(\tilde\Xi)\neq0$.
+*Theorem.* The polar word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists on $\tilde\Xi$ if and only if $N(\tilde\Xi)\neq0$.
 
-*Proof.* The word divides by the modulus $\Rho$, and $\Rho^{2}=N(\tilde\Xi)$. A division by $\Rho$ is a division by zero exactly where $N$ vanishes. Conversely, where $N\neq0$ the modulus is a nonzero central number and the element $\tilde\Xi/\Rho$ is invertible; the polar decomposition of an invertible element into a Hermitian boost and a real rotor is [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html)'s proposition, and it applies to every invertible element.
+*Proof.* The word divides by the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, and $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N(\tilde\Xi)$. A division by $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is a division by zero exactly where $N$ vanishes. Conversely, where $N\neq0$ the modulus is a nonzero central number and the element $\tilde\Xi/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is invertible; the polar decomposition of an invertible element into a Hermitian boost and a real rotor is [The Relativistic Quantum Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html)'s proposition, and it applies to every invertible element.
 
 **The word's existence is therefore a property of the element and not of the field's equation.** Nothing in the field equation enters the statement. The equation decides which elements occur; the algebra decides which occur in the chart.
 
 ### The Extractions That Need It
 
-**All four of the word's extractions divide by the modulus, and each fails with it.** The density is $r^{2}=\lvert N\rvert$, the velocity is the inverse square of the boost, the spin direction is the rotor's image of the declared axis, and the phase is $\tfrac12\arg N$. None is defined where $N=0$:
+**All four of the word's extractions divide by the modulus, and each fails with it.** The density is $\varrho^{2}=\lvert N\rvert$, the velocity is the inverse square of the boost, the spin direction is the rotor's image of the declared axis, and the phase is $\tfrac12\arg N$. None is defined where $N=0$:
 
 | extraction | formula | fails because |
 | --- | --- | --- |
-| density | $\rho=r^{2}$ | $r=0$ on the cone |
+| density | $\rho=\varrho^{2}$ | $\varrho=0$ on the cone |
 | phase | $\theta_{\mathrm{pha}}=\tfrac12\arg N$ | $\arg0$ is undefined |
 | velocity | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost is not extracted |
 | spin | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor is not extracted |
@@ -182,8 +182,8 @@ The domain is a condition at each event. The Klein–Gordon flow and the Dirac f
 | Symbol | Meaning |
 |---|---|
 | $N(\tilde Q)=Q_t^{2}+\vec Q\cdot\vec Q$ | Quaternionic norm |
-| $\Rho$ | Modulus, $\Rho^{2}=N$ |
-| $\rho=r^{2}$ | Density |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ |
+| $\rho=\varrho^{2}$ | Density |
 | $\tilde X\vec e_z=\pm i\tilde X$ | Element of definite value |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$ | Null wavevector |
 | $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ | Two-factor decomposition |

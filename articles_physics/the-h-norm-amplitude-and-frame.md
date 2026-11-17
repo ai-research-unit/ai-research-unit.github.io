@@ -22,7 +22,7 @@ $$
 
 **The word *frame* is used twice in the corpus and the two uses must be kept apart.** A **change of frame** is a left multiplication $\tilde Q\mapsto\tilde U\tilde Q$ by a $*$-unitary element: it is the observer's passive move, and it rotates the amplitude by conjugation. The **frame of an element** is the second polar factor $\tilde Q_0$: it is the element's own orientation, and it is what the amplitude does not contain. A left multiplication changes the first and, in a definite sense, leaves the second fixed up to the same rotation. This entry uses *the frame* for $\tilde Q_0$ and *a change of frame* for the left action, and it states which is meant whenever the distinction matters.
 
-**The H-pair is not the N-word.** The two-factor decomposition is defined everywhere and its second factor is a partial isometry. The four-factor word $r\exp(i\theta)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists only off the null cone, where the second factor is $*$-unitary and the amplitude is positive definite. The refinement is the subject of the next entry. Here the general pair is the object, and the four factors are quoted only where a result needs them.
+**The H-pair is not the N-word.** The two-factor decomposition is defined everywhere and its second factor is a partial isometry. The four-factor word $\varrho\exp(i\theta)\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ exists only off the null cone, where the second factor is $*$-unitary and the amplitude is positive definite. The refinement is the subject of the next entry. Here the general pair is the object, and the four factors are quoted only where a result needs them.
 
 **The strongest objection is that the H-norm is the Euclidean norm on $\mathbb{C}^{4}$ and therefore carries no physics.** The objection is correct about the formula and wrong about the consequence. The norm is Euclidean, and that is exactly why it is the amplitude: a probability amplitude is an element of a Hilbert space, its norm is the square root of a sum of squared moduli, and the group that preserves that norm is the unitary group and nothing larger. The physical content of $H$ is not the mass. It is the size of the state, and the reason the polar decomposition exists on the whole algebra rather than on the invertibles.
 
@@ -296,7 +296,7 @@ with the diagonal pair invariant under no further $*$-unitary motion except the 
 **The pair is a Doppler pair, and the algebra's own parametrisation shows it.**
 
 $$
-\sigma_1=r e^{\Xi/2},\qquad \sigma_2=r e^{-\Xi/2},\qquad r=\bigl\lvert N(\tilde Q)\bigr\rvert^{1/2},
+\sigma_1=\varrho e^{\Xi/2},\qquad \sigma_2=\varrho e^{-\Xi/2},\qquad \varrho=\bigl\lvert N(\tilde Q)\bigr\rvert^{1/2},
 $$
 
 with $\Xi$ the rapidity of the boost factor. The geometric mean of the two amplitudes is the square root of the mass, the ratio is $e^{\Xi}$, and the logarithm of the ratio is the rapidity. In this reading the amplitude is an element with two mode amplitudes, the mass is what the two modes share, and the boost is what separates them.
@@ -319,7 +319,7 @@ $$
 \boxed{\;H(\tilde Q)=\bigl\lvert N(\tilde Q)\bigr\rvert\cosh\Xi\;}
 $$
 
-**The identity follows from the last section in one line.** $2H=\sigma_1^{2}+\sigma_2^{2}=r^{2}(e^{\Xi}+e^{-\Xi})=2r^{2}\cosh\Xi$ and $\lvert N\rvert=r^{2}$. A check on a hundred elements built from the four-factor word confirmed it to ten digits.
+**The identity follows from the last section in one line.** $2H=\sigma_1^{2}+\sigma_2^{2}=\varrho^{2}(e^{\Xi}+e^{-\Xi})=2\varrho^{2}\cosh\Xi$ and $\lvert N\rvert=\varrho^{2}$. A check on a hundred elements built from the four-factor word confirmed it to ten digits.
 
 **Three consequences follow, and each is a statement about what the two measures are for.** The amplitude is never smaller than the modulus of the interval, because $\cosh\Xi\ge1$. The two are equal exactly when the boost is absent, which is the case of a central phase times a real quaternion. And the ratio $H/\lvert N\rvert$ is the Lorentz factor of the element's boost.
 
@@ -330,8 +330,8 @@ $$
 **The H-norm sees the scale and the boost and nothing else.**
 
 $$
-H(\tilde Q)=r^{2}\cosh\Xi,\qquad
-\lvert N(\tilde Q)\rvert=r^{2},\qquad
+H(\tilde Q)=\varrho^{2}\cosh\Xi,\qquad
+\lvert N(\tilde Q)\rvert=\varrho^{2},\qquad
 H\bigl(e^{i\theta}\tilde Q\bigr)=H(\tilde Q),\qquad
 H\bigl(\tilde Q\tilde u_{\mathrm r}\bigr)=H(\tilde Q).
 $$
@@ -542,7 +542,7 @@ The polar decomposition reads the Hermitian norm as the amplitude of an element 
 | the invariance | $H(\tilde U\tilde Q\tilde V)=H(\tilde Q)$, and $U(\mathbb{B})$ is exactly the group that does it |
 | the frame's size | $H(\tilde Q_0)=\tfrac12\operatorname{rank}\tilde Q_0$, that is $1$, $\tfrac12$ or $0$ |
 | the two singular values | $2H=\sigma_1^{2}+\sigma_2^{2}$, $\lvert N\rvert=\sigma_1\sigma_2$, $H-\lvert N\rvert=(\sigma_1-\sigma_2)^{2}/2$ |
-| the rapidity | $\sigma_{1,2}=re^{\pm\Xi/2}$ with $r^{2}=\lvert N\rvert$, so $H=\lvert N\rvert\cosh\Xi$ |
+| the rapidity | $\sigma_{1,2}=\varrho e^{\pm\Xi/2}$ with $\varrho^{2}=\lvert N\rvert$, so $H=\lvert N\rvert\cosh\Xi$ |
 | the state | $\tilde{Ϛ}_{\Psi,Q}=\tilde Q\tilde Q^{*}/(2H)=\tfrac12(e_t+i\tanh\Xi\,\vec u_{\mathrm b})$ |
 | the purity | $1-\lvert N\rvert^{2}/(2H^{2})=(1+\tanh^{2}\Xi)/2$ |
 | the composition bound | $H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)$, sharp |
@@ -565,7 +565,7 @@ The three statements to carry away are these. The Hermitian norm is the only mea
 | $\tilde\Pi_{\mathrm f}(\tilde Q)$, $\tilde\Pi_{\mathrm i}(\tilde Q)$ | the final and initial projections, the two ideals of $\tilde Q$ |
 | $a$, $\vec W$ | the scale and the real vector part of $\tilde Q\tilde Q^{*}$ |
 | $\sigma_1\ge\sigma_2\ge0$ | the two singular values, the square roots of the spectral values of $\tilde Q\tilde Q^{*}$ |
-| $r$, $\Xi$ | the scale and the rapidity of the polar word, $r^{2}=\lvert N\rvert$ and $\sigma_{1,2}=re^{\pm\Xi/2}$ |
+| $\varrho$, $\Xi$ | the scale and the rapidity of the polar word, $\varrho^{2}=\lvert N\rvert$ and $\sigma_{1,2}=\varrho e^{\pm\Xi/2}$ |
 | $\theta$, $\Theta$ | the central phase and the rotor angle of the polar word |
 | $\tilde u_{\mathrm r}$, $\vec u_{\mathrm b}$ | the rotor, a real unit quaternion, and the axis of the boost |
 | $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | the weight, the positive definite form, $\tfrac12\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$ |

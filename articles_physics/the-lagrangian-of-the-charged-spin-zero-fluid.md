@@ -6,7 +6,7 @@
 
 **Three results.**
 
-*First, the action is written in gauge-invariant variables, so its gauge invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_\mu S_{\tilde\Xi}-q A_\mu$. The action is therefore a functional of $r$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
+*First, the action is written in gauge-invariant variables, so its gauge invariance is not a symmetry but a redundancy already quotiented out.* The free action's phase $S_{\tilde\Xi}$ and the potentials appear only in the combination $\partial_\mu S_{\tilde\Xi}-q A_\mu$. The action is therefore a functional of $\varrho$ and that combination alone, and no shift of either moves it. At the first-order rung the invariance had to be checked term by term inside two brackets; here the bracket is one object and the checking is a definition.
 
 *Second, the mass shell is unchanged in form and the whole of the coupling is in the velocity.* The variation of the density returns $\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-2Q_{\mathrm{qnt}}/m$, the free display verbatim, with $V$ the mechanical velocity. The connection's spatial part enters the velocity and not the shell: the shell's right-hand side carries the density and the d'Alembertian, and the coupling cannot reach either.
 
@@ -21,16 +21,16 @@
 **One substitution, in the four-derivative of the phase, and the action is the free one written in the new variable.**
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2},
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}\Bigl[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}\Bigr]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2},
 \qquad
 V_{\Phi,\mu}=\frac{\partial_\mu S_{\tilde\Xi}-q A_\mu}{m}\;}
 $$
 
 **The structure is the free article's and the identity is exact.** Compare the two displays: the dust term, the coefficient $m\rho_{\mathrm{num}}/2$, the $c^{2}$, the gradient energy with its $\hbar^{2}/2m$ — every symbol is the free one. What is different is that $V$ is no longer a pure gradient, and the whole of the coupling is in that one word.
 
-**The coupling could not have entered anywhere else, and the reason is the type argument in its shortest form.** The connection is a central element of $\mathbb{B}_\Phi$, so it multiplies the phase factor of the word and commutes past the amplitude. A term built from $r$ and its derivatives therefore cannot contain $\tilde A_\Phi$ at all. In the action that is the second term: **the gradient energy is the unique term the coupling cannot reach, and it is the whole of the quantum sector.**
+**The coupling could not have entered anywhere else, and the reason is the type argument in its shortest form.** The connection is a central element of $\mathbb{B}_\Phi$, so it multiplies the phase factor of the word and commutes past the amplitude. A term built from $\varrho$ and its derivatives therefore cannot contain $\tilde A_\Phi$ at all. In the action that is the second term: **the gradient energy is the unique term the coupling cannot reach, and it is the whole of the quantum sector.**
 
-**The action has two arguments and they are the two gauge-invariant data of the fluid.** Write them as $r$ and $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[r,\partial_\mu r,W_\mu]$, and no other combination of the word's data survives a gauge transformation. **The free action's two arguments were $r$ and $S_{\tilde\Xi}$; the charged action's are $r$ and $W$**, and the change of variable is the whole of the coupling.
+**The action has two arguments and they are the two gauge-invariant data of the fluid.** Write them as $\varrho$ and $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[\varrho,\partial_\mu \varrho,W_\mu]$, and no other combination of the word's data survives a gauge transformation. **The free action's two arguments were $\varrho$ and $S_{\tilde\Xi}$; the charged action's are $\varrho$ and $W$**, and the change of variable is the whole of the coupling.
 
 ## The Two Variations
 
@@ -47,10 +47,10 @@ which is $\partial_\mu\tilde J_{\Phi,\mu}=0$ with $\tilde J_\Phi=\rho_{\mathrm{n
 $$
 \sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-\frac{2Q_{\mathrm{qnt}}}{m},
 \qquad
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}\Box_\Phi r}{2mr},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}\Box_\Phi \varrho}{2m\varrho},
 $$
 
-because the variation of the gradient term is the free article's and the variation of the dust term is $-\frac{m}{2}$ times the bracket. **The right-hand side is coupling-blind**, and that is the action's version of the block's statement that the quantum potential is charge-blind: it carries $r$ and its d'Alembertian, and the connection is not in it.
+because the variation of the gradient term is the free article's and the variation of the dust term is $-\frac{m}{2}$ times the bracket. **The right-hand side is coupling-blind**, and that is the action's version of the block's statement that the quantum potential is charge-blind: it carries $\varrho$ and its d'Alembertian, and the connection is not in it.
 
 **The acceleration law is the shell's gradient and carries the Lorentz force.** Differentiating the display, with $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$,
 
@@ -68,7 +68,7 @@ $$
 
 which is the block's boxed law. **The sign is fixed by the substitution's time slot**: the energy is $E^{\mathrm{mech}}=E+ϙ a'_t$, so $E=E^{\mathrm{mech}}-ϙ a'_t$ and, with $q=-ϙ$, the potential energy is $q\varphi$. The action fixes the sign in one place, and the block's article fixes it in three.
 
-**The count is two and two, as at the free rung, and the coupling does not change it.** Two fields, $r$ and $S_{\tilde\Xi}$, or equivalently $r$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: **the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.**
+**The count is two and two, as at the free rung, and the coupling does not change it.** Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: **the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.**
 
 ## The Vorticity Is the Field Strength
 
@@ -86,25 +86,25 @@ $$
 
 ## Gauge Invariance as a Redundancy
 
-**The action is written in invariant variables, and that is stronger than being invariant.** Both arguments, $r$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
+**The action is written in invariant variables, and that is stronger than being invariant.** Both arguments, $\varrho$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
 
 **The contrast with the first-order rung is instructive and it is not a difference of degree.** There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\varphi$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
 
 **What the redundancy costs and what it does not.** It removes one of the word's eight parameters from the action's arguments: $\theta_{\mathrm{pha}}$ and $a'_t$ enter only through $W_0$, so the phase and the scalar potential are one degree of freedom between them. It does not remove the current: the constant shift is a global subgroup and its Noether current is the charge current. **A redundancy and a symmetry are different objects, and the action shows both at once**: the local one is the redundancy that the variables have already absorbed, the global one is the current.
 
-**The canonical stress is gauge dependent and the physical one is not.** Computing $T_{\mu\nu}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial r$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
+**The canonical stress is gauge dependent and the physical one is not.** Computing $T_{\mu\nu}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
 
 ## What the Charge Does Not Change, and Why That Is the Article's Main Point
 
 **Three objects are exactly the free ones.**
 
-*The gradient energy.* $-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
+*The gradient energy.* $-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, unchanged, because it carries the amplitude and the connection reaches the phase.
 
-*The quantum potential and the quantum stress.* $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $r$ and its derivatives, and the block's identity $\partial_j\sigma^{Q}_{j\eta}=-\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$ is unchanged with it.
+*The quantum potential and the quantum stress.* $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $\varrho$ and its derivatives, and the block's identity $\partial_j\sigma^{Q}_{j\eta}=-\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$ is unchanged with it.
 
 *The mass shell's right-hand side.* $-c^{2}-2Q_{\mathrm{qnt}}/m$ is the free display's, and the coupling's only trace in the shell is that the velocity is mechanical.
 
-**So the coupling's entire content is one substitution in one variable, and the action states that in a form no equation-by-equation account can.** The block's charged article says the same thing in three sentences — the force becomes the Lorentz force, the quantum force stays, the density is untouched — and the action says it as one line: the variables are $(r,W)$ and only $W$ is charged.
+**So the coupling's entire content is one substitution in one variable, and the action states that in a form no equation-by-equation account can.** The block's charged article says the same thing in three sentences — the force becomes the Lorentz force, the quantum force stays, the density is untouched — and the action says it as one line: the variables are $(\varrho,W)$ and only $W$ is charged.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 
@@ -118,17 +118,17 @@ $$
 
 1. **The two signs of the charge and the two sheets.** $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=(E+ϙ a'_t)/(mc^{2})$, so the charge density's sign is the energy's, and the action's indefiniteness is inherited. Whether a single functional covers both signs, and whether the two are related by charge conjugation, is the second category's question; the action states the problem and does not solve it.
 
-2. **The boundary at a nodal surface.** As in the free companion, the chart fails at $r=0$, and here the failure is on a surface that also carries a phase singularity with a flux through it. The block's charged article states the flux quantisation; whether the action requires a boundary term there is open.
+2. **The boundary at a nodal surface.** As in the free companion, the chart fails at $\varrho=0$, and here the failure is on a surface that also carries a phase singularity with a flux through it. The block's charged article states the flux quantisation; whether the action requires a boundary term there is open.
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu r)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
+**The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
 
 **The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$.
 
 **The vorticity.** $\omega=ϙ F/m$ is an identity about the variables, so the rotation is the field's and costs no field; the rank is the field strength's.
 
-**Gauge invariance.** A redundancy already quotiented out, because the action's arguments are $r$ and $W$; the global subgroup supplies the charge current; the canonical stress is gauge dependent and the tensor in $W$ is not.
+**Gauge invariance.** A redundancy already quotiented out, because the action's arguments are $\varrho$ and $W$; the global subgroup supplies the charge current; the canonical stress is gauge dependent and the tensor in $W$ is not.
 
 **What the charge changes.** One variable. The gradient energy, the quantum potential, the quantum stress and the shell's right-hand side are the free ones.
 
@@ -136,16 +136,16 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | The word; the free article's, unchanged |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | The word; the free article's, unchanged |
 | $ϙ$ | Coupling; minus the electric charge, $q=-ϙ$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t=\varphi$ |
 | $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | Phase; gauge dependent |
 | $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$ | Mechanical four-velocity; the action's second argument |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | Mechanical momentum; $m\tilde V_\Phi$ |
-| $\rho_{\mathrm{num}}=r^{2}$ | Proper density; gauge invariant |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density; gauge invariant |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ | Charge density; the current's temporal component over $c$ |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ | Quantum potential; coupling-blind |
-| $\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\sum_\mu(\partial_\mu r)^{2}$ | Gradient energy; coupling-blind |
+| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
+| $\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; coupling-blind |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Field strength; $m\omega=ϙ F$ |
 | $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | Field strengths |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor |

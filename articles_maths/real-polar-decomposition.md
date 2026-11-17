@@ -20,10 +20,10 @@ Every numerical value displayed below is exact.
 **Definition.** Let $q \in \mathbb{R}$, $q \neq 0$. The **polar decomposition** of $q$ is the writing
 
 $$
-q = r\,\sigma, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \sigma \in \mathbb{R}, \quad \sigma^2 = 1,
+q = \varrho\,\sigma, \qquad \varrho \in \mathbb{R}, \quad \varrho > 0, \qquad \sigma \in \mathbb{R}, \quad \sigma^2 = 1,
 $$
 
-in which $r$ is the **modulus** of $q$ and $\sigma$ is its **sign factor**.
+in which $\varrho$ is the **modulus** of $q$ and $\sigma$ is its **sign factor**.
 
 The second factor is a **unit element**, an element of norm one for the norm in view (*Norm and Unitary Conventions*, §*The Unitary Convention*); the norm in view is $\langle q\rangle=q^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the **group of invertibles** $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.
 
@@ -39,19 +39,19 @@ $$
 
 It is a single square, so $\langle q\rangle > 0$ for every $q \neq 0$ and $\langle q\rangle = 0$ only at $q = 0$; the modulus is
 
-$$ \boxed{\;r = \sqrt{\langle q\rangle} = |q|\;}.
+$$ \boxed{\;\varrho = \sqrt{\langle q\rangle} = |q|\;}.
 $$
 
-Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $r > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.
+Because the norm is strictly positive off the origin, the square root is a strictly positive real number with no sign choice and no branch choice. The requirement $\varrho > 0$ is therefore met automatically and the modulus is forced. In the companion articles the corresponding object is a square root of an indefinite real form or of a complex number, and there the sign and the branch both demand attention; in $\mathbb{R}$ neither does.
 
-The modulus is multiplicative, because the norm is: $r(q_1 q_2) = r(q_1)r(q_2)$, and also $r(\lambda q_1) = |\lambda|\,r(q_1)$ for real $\lambda$.
+The modulus is multiplicative, because the norm is: $\varrho(q_1 q_2) = \varrho(q_1)\varrho(q_2)$, and also $\varrho(\lambda q_1) = |\lambda|\,\varrho(q_1)$ for real $\lambda$.
 
 ### The Sign Factor and the Two-Point Set
 
 The sign factor is
 
 $$
-\sigma = \frac{q}{r} = \frac{q}{|q|} = \operatorname{sgn} q .
+\sigma = \frac{q}{\varrho} = \frac{q}{|q|} = \operatorname{sgn} q .
 $$
 
 It lies on the **two-point set**
@@ -68,9 +68,9 @@ The sign factor is the element that acts: multiplication by $-1$ is the reflecti
 
 **Theorem.** Every nonzero real number $q$ has exactly one polar decomposition.
 
-*Existence.* Put $r = \sqrt{\langle q\rangle}$ and $\sigma = q/r$. Since $\langle q\rangle > 0$, the number $r$ is positive, and $\langle \sigma\rangle = \langle q\rangle/r^2 = 1$ because $\langle \lambda q\rangle = \lambda^2\langle q\rangle$ for real $\lambda$. Hence $q = r\sigma$ with $r > 0$ and $\sigma^2 = 1$.
+*Existence.* Put $\varrho = \sqrt{\langle q\rangle}$ and $\sigma = q/\varrho$. Since $\langle q\rangle > 0$, the number $\varrho$ is positive, and $\langle \sigma\rangle = \langle q\rangle/\varrho^2 = 1$ because $\langle \lambda q\rangle = \lambda^2\langle q\rangle$ for real $\lambda$. Hence $q = \varrho\sigma$ with $\varrho > 0$ and $\sigma^2 = 1$.
 
-*Uniqueness.* Suppose $q = r\sigma = r_1\sigma_1$ with $r, r_1 > 0$ and $\sigma^2 = \sigma_1^2 = 1$. Taking norms gives $r^2 = \langle q\rangle = r_1^2$, so $r = r_1$ because both are positive, and then $\sigma = q/r = \sigma_1$.
+*Uniqueness.* Suppose $q = \varrho\sigma = r_1\sigma_1$ with $\varrho, r_1 > 0$ and $\sigma^2 = \sigma_1^2 = 1$. Taking norms gives $\varrho^2 = \langle q\rangle = r_1^2$, so $\varrho = r_1$ because both are positive, and then $\sigma = q/\varrho = \sigma_1$.
 
 The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is a coordinate for the sign factor: the sign has no continuous coordinate at all, because the group is finite, and the discrete alternative is the whole of what the exponential can offer. This is the base case of the non-uniqueness of the exponential coordinate that appears from $\mathbb{C}$ onward, where the coordinate of the unit factor is a class modulo $2\pi$.
 
@@ -78,7 +78,7 @@ The pair of factors is therefore unique, with no sign ambiguity and no branch am
 
 ### The Word as Exponentials
 
-The word $q = r\,s$ is the product of a scale and a sign, and the scale alone is an exponential: with $r = \lvert q\rvert$ and $s = \operatorname{sgn} q$,
+The word $q = \varrho\,s$ is the product of a scale and a sign, and the scale alone is an exponential: with $\varrho = \lvert q\rvert$ and $s = \operatorname{sgn} q$,
 
 $$
 q = \exp(\ln\lvert q\rvert)\cdot s , \qquad s \in \{\pm e_t\} .
@@ -86,7 +86,7 @@ $$
 
 | # | factor | name | real dimension | exponential | case | closed form | parameter and range | unit axis |
 |---|---|---|---|---|---|---|---|---|
-| 1 | $r$ | scale | $1$ | $\exp(\ln r)$ | hyperbolic | $r$ | $\ln r \in \mathbb{R}$, $r > 0$ | — |
+| 1 | $\varrho$ | scale | $1$ | $\exp(\ln \varrho)$ | hyperbolic | $\varrho$ | $\ln \varrho \in \mathbb{R}$, $\varrho > 0$ | — |
 | 2 | $s$ | sign | $0$ | — | discrete | $\pm e_t$ | $s = \operatorname{sgn} q$ | — |
 
 The exponent follows the rule of the series: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, the trigonometric case for a root of $-e_t$, the hyperbolic for a root of $+e_t$, and the parabolic for a nilpotent root, where the series truncates to the unit plus the exponent. The sign is the one factor of the series that no exponential produces, since $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ and $-1$ lies outside it; the sign group $\{\pm e_t\}$ is the discrete boundary of the exponential reading and the whole of the compact slot in $\mathbb{R}$. The two factors commute, so the order is free, and the word is nevertheless **not** a single exponential, because no element of $\mathbb{R}$ has an exponential equal to a negative number.
@@ -111,10 +111,10 @@ The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satis
 The exponential of the real algebra is thus the positive ray alone, and the sign factor is not produced by it. The correct statement of the exponential form is therefore
 
 $$
-q = r\,\sigma = \exp(t)\,\sigma, \qquad t = \ln r \in \mathbb{R}, \qquad \sigma \in \{\pm1\} = O(1),
+q = \varrho\,\sigma = \exp(t)\,\sigma, \qquad t = \ln \varrho \in \mathbb{R}, \qquad \sigma \in \{\pm1\} = O(1),
 $$
 
-in which the continuous part is the exponential and the discrete part is the sign. The reconstruction is exact: for $q = -\tfrac{3}{4}$, $r = \tfrac{3}{4}$, $t = \ln\tfrac{3}{4}$ and $\sigma = -1$, and $\exp(t)\sigma = \tfrac{3}{4}\cdot(-1) = q$. The kernel of the exponential is trivial,
+in which the continuous part is the exponential and the discrete part is the sign. The reconstruction is exact: for $q = -\tfrac{3}{4}$, $\varrho = \tfrac{3}{4}$, $t = \ln\tfrac{3}{4}$ and $\sigma = -1$, and $\exp(t)\sigma = \tfrac{3}{4}\cdot(-1) = q$. The kernel of the exponential is trivial,
 
 $$ \boxed{\;\exp(t) = 1 \iff t = 0, \qquad \ker\exp = \{0\}\;},
 $$
@@ -129,7 +129,7 @@ Two independent dichotomies classify the directions of an algebra of the family.
 
 | factor | range | position | inertia | parameters | what it is |
 |---|---|---|---|---|---|
-| $r$ | $(0,\infty)$ | fixed | $\nu^2 = +e_t$ | $1$ | the scale, central, non-compact |
+| $\varrho$ | $(0,\infty)$ | fixed | $\nu^2 = +e_t$ | $1$ | the scale, central, non-compact |
 | $\sigma$ | $\{\pm1\}$ | fixed | $\nu^2 = +e_t$ | $0$ | the sign, central, compact and discrete |
 
 The verification is immediate in the basis: $1$ is fixed and $1^2 = +e_t$, so the scale direction has position fixed and sign $+1$; the sign direction is the same element $1$ up to the two signs, and it is fixed as well. Both rows of the table are therefore in the fixed subspace, and the anti-fixed subspace contributes nothing. Unlike the complex case, where the second factor is the anti-fixed imaginary direction, here both factors have the same position and the same inertia; they differ in the sign and in whether they carry a continuous parameter.
@@ -144,17 +144,17 @@ The four slots of the family are the scale, the central phase, the boost and the
 
 ### No Boundary
 
-The polar decomposition of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $q \neq 0$ then $\langle q\rangle > 0$, so $r > 0$ and $\sigma = q/r$ is defined; there is no element with $\langle q\rangle = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar decomposition must be restricted to a cone complement.
+The polar decomposition of $\mathbb{R}$ has no boundary: it holds on $\mathbb{R}\setminus\{0\}$ and the only excluded element is the origin. The reason is the definiteness of the norm. If $q \neq 0$ then $\langle q\rangle > 0$, so $\varrho > 0$ and $\sigma = q/\varrho$ is defined; there is no element with $\langle q\rangle = 0$ other than zero, and so there is no set on which the modulus vanishes while the element does not. The split-complex algebra is the first in the family where this fails, the first where a nonzero element can have a vanishing modulus, and the first where the polar decomposition must be restricted to a cone complement.
 
 **The parametrisation as a homeomorphism.** The parametrisation of the group of invertibles by the two factors,
 
 $$
-\Phi : \mathbb{R}_{>0} \times \{\pm1\} \longrightarrow \mathbb{R}^\times, \qquad \Phi(r, \sigma) = r\sigma,
+\Phi : \mathbb{R}_{>0} \times \{\pm1\} \longrightarrow \mathbb{R}^\times, \qquad \Phi(\varrho, \sigma) = \varrho\sigma,
 $$
 
 is a bijective local homeomorphism, and a homeomorphism onto $\mathbb{R}^\times$ because the sign coordinate is discrete and the map is continuous with continuous inverse $(|q|, \operatorname{sgn}q)$; its image is all of $\mathbb{R}^\times$. It fails to cover exactly the complement $\mathbb{R}\setminus\mathbb{R}^\times = \{0\}$, a single point rather than a hypersurface, and the sign group $\{\pm1\}$ is finite, so neither the scale variable nor the sign variable has a boundary. There is no set on which the parametrisation fails, because the norm is definite and the zero-divisor class is empty; the absence of a boundary is the mathematical content of the definiteness of $\mathbb{R}$.
 
-**The boundary as ends.** The scale coordinate $r = |q|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar decomposition is thus the single point at the end $r = 0$, where the norm vanishes.
+**The boundary as ends.** The scale coordinate $\varrho = |q|$ runs over $(0,\infty)$, whose two ends are $0$ and $+\infty$; the end at $0$ is the removed origin, and the end at $+\infty$ is one of the two ends of the line. The sign coordinate is finite, so it contributes no end. The only boundary of the polar decomposition is thus the single point at the end $\varrho = 0$, where the norm vanishes.
 
 ## The Group of Invertibles and the Sign Group
 
@@ -173,7 +173,7 @@ $$
 
 The identity component is the positive ray $\mathbb{R}_{>0} = \exp(\mathbb{R})$, and the nontrivial component is its negative $-\mathbb{R}_{>0}$. The sign group is therefore the group of components, $\{\pm1\} \cong \mathbb{R}^\times/\mathbb{R}_{>0}$, and it is identified with the orthogonal group $O(1)$ of the line. In the complex case the second factor $\mathrm{U}(1)$ is connected, so $\mathbb{C}^\times$ has one component; the passage from two components to one is the first effect of the two-dimensional definite case.
 
-Inversion in the polar coordinates reads $(r\sigma)^{-1} = r^{-1}\sigma$, inverting the scale and fixing the sign; the two components are each stable under inversion, and the fixed points of inversion are $\pm1$.
+Inversion in the polar coordinates reads $(\varrho\sigma)^{-1} = \varrho^{-1}\sigma$, inverting the scale and fixing the sign; the two components are each stable under inversion, and the fixed points of inversion are $\pm1$.
 
 ## The Matrix Picture
 
@@ -197,10 +197,10 @@ The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the **reflecti
 
 | factor | matrix | the determinant of the image | isometry type |
 |---|---|---|---|
-| $r$ | $[r]$, $r > 0$ | $r$ | similarity of ratio $r$ |
+| $\varrho$ | $[\varrho]$, $\varrho > 0$ | $\varrho$ | similarity of ratio $\varrho$ |
 | $\sigma = -1$ | $[-1]$ | $-1$ | reflection through the origin |
 | $\sigma = +1$ | $[1]$ | $1$ | identity |
-| $q = r\sigma$ | $[q]$ | $q$ | signed similarity: reflection and scaling |
+| $q = \varrho\sigma$ | $[q]$ | $q$ | signed similarity: reflection and scaling |
 
 Every nonzero real number is a signed similarity of the line, and the polar decomposition is the splitting of that signed similarity into its scaling and its reflection parts. This is the precise sense in which the real polar decomposition is the one-dimensional case of the matrix polar decomposition, where the positive definite factor is the scalar $rI$ and the orthogonal factor is $\pm I$; in the complex case the orthogonal factor is a rotation.
 
@@ -211,14 +211,14 @@ Every nonzero real number is a signed similarity of the line, and the polar deco
 Take $q = -\tfrac{3}{4}$. Then $\langle q\rangle = \tfrac{9}{16}$, so
 
 $$
-r = \sqrt{\tfrac{9}{16}} = \tfrac{3}{4}, \qquad \sigma = \frac{-3/4}{3/4} = -1, \qquad r\sigma = \tfrac{3}{4}\cdot(-1) = -\tfrac{3}{4} = q .
+\varrho = \sqrt{\tfrac{9}{16}} = \tfrac{3}{4}, \qquad \sigma = \frac{-3/4}{3/4} = -1, \qquad \varrho\sigma = \tfrac{3}{4}\cdot(-1) = -\tfrac{3}{4} = q .
 $$
 
 The modulus is positive and the sign is the nontrivial element of the sign group; the reconstruction is exact.
 
 ### The Degenerate Shapes
 
-| $q$ | $\langle q\rangle$ | $r$ | $\sigma$ | exponential coordinate |
+| $q$ | $\langle q\rangle$ | $\varrho$ | $\sigma$ | exponential coordinate |
 |---|---|---|---|---|
 | $4$ | $16$ | $4$ | $+1$ | $\ln 4$ |
 | $-\tfrac{3}{4}$ | $\tfrac{9}{16}$ | $\tfrac{3}{4}$ | $-1$ | $\ln\tfrac{3}{4}$ |
@@ -226,7 +226,7 @@ The modulus is positive and the sign is the nontrivial element of the sign group
 | $-1$ | $1$ | $1$ | $-1$ | $0$ |
 | $0$ | $0$ | — | — | — |
 
-The first two lines are a positive and a negative number: same modulus shape, opposite signs. The third and fourth lines are the two elements of the sign group itself, of modulus one; they are the fixed points of the polar decomposition, $q = \sigma$ with $r = 1$. The last line is the origin, the unique excluded element. The exponential coordinate of a positive number is its logarithm, and the sign is carried beside it; the coordinate of $-1$ is $0$ as for $+1$, because the sign is not in the image of the exponential.
+The first two lines are a positive and a negative number: same modulus shape, opposite signs. The third and fourth lines are the two elements of the sign group itself, of modulus one; they are the fixed points of the polar decomposition, $q = \sigma$ with $\varrho = 1$. The last line is the origin, the unique excluded element. The exponential coordinate of a positive number is its logarithm, and the sign is carried beside it; the coordinate of $-1$ is $0$ as for $+1$, because the sign is not in the image of the exponential.
 
 ### The Kernel of the Exponential
 
@@ -250,9 +250,9 @@ The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbo
 
 ## Summary
 
-Every nonzero real number has exactly one polar decomposition $q = r\sigma$, with modulus $r = \sqrt{\langle q\rangle} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of sign $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real group of invertibles is disconnected while the complex one is connected.
+Every nonzero real number has exactly one polar decomposition $q = \varrho\sigma$, with modulus $\varrho = \sqrt{\langle q\rangle} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of sign $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real group of invertibles is disconnected while the complex one is connected.
 
-The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $q = \exp(t)\sigma$ with $t = \ln|q|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar decomposition has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[q]$ into the scalar $[r]$ and the reflection $[\sigma]$.
+The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $q = \exp(t)\sigma$ with $t = \ln|q|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar decomposition has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[q]$ into the scalar $[\varrho]$ and the reflection $[\sigma]$.
 
 ## Summary of Notation
 
@@ -261,12 +261,12 @@ The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$:
 | $\mathbb{R}$ | the real algebra, basis $e_t = 1$, sole involution the identity |
 | $q$ | a real number |
 | $\langle q\rangle = q^2$ | the norm, positive definite |
-| $r = \sqrt{\langle q\rangle} = \lvert q\rvert$ | the modulus, a positive real |
+| $\varrho = \sqrt{\langle q\rangle} = \lvert q\rvert$ | the modulus, a positive real |
 | $\sigma = \operatorname{sgn}q = q/\lvert q\rvert$ | the sign factor, an element of $\{\pm1\}$ |
 | $\{\pm1\} = O(1) \cong \mathbb{Z}/2$ | the sign group, the orthogonal group of the line |
-| $q = r\sigma$ | the polar decomposition |
+| $q = \varrho\sigma$ | the polar decomposition |
 | $q = \exp(t)\sigma$, $t = \ln\lvert q\rvert$ | the exponential form, with the sign carried separately |
-| $\Phi(r,\sigma) = r\sigma$ | the parametrisation of the group of invertibles by scale and sign |
+| $\Phi(\varrho,\sigma) = \varrho\sigma$ | the parametrisation of the group of invertibles by scale and sign |
 | $\nu$ | the exponent direction, classified by $\nu^2 = -e_t$, $0$ or $+e_t$ |
 | $\mathbb{R}^\times = \mathbb{R}_{>0}\sqcup\mathbb{R}_{<0}$ | the group of invertibles, two components |
 | $M_q = [q]$ | the $1\times1$ Cayley matrix of multiplication by $q$ |

@@ -5,26 +5,26 @@
 This article treats the **polar decomposition** of a nonzero quaternion: the writing
 
 $$
-\tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln r+\vec v,
+\tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln \varrho+\vec v,
 $$
 
 $$
-\tilde q_{\log}=q_{\log}e_t+\vec q_{\log}, \qquad q_{\log}=\operatorname{Sc}\tilde q_{\log}=\ln r, \quad \vec q_{\log}=\operatorname{Vect}\tilde q_{\log}=\vec v,
+\tilde q_{\log}=q_{\log}e_t+\vec q_{\log}, \qquad q_{\log}=\operatorname{Sc}\tilde q_{\log}=\ln \varrho, \quad \vec q_{\log}=\operatorname{Vect}\tilde q_{\log}=\vec v,
 $$
 
-with $r>0$ the modulus, $\vec v$ the pure exponent, $q_{\log}$ the logarithmic scale, and $\vec q_{\log}$ the vector coordinate, the angle and the axis. The product of the scale and the rotor is $r\exp(\vec q_{\log})$. The exponential and the logarithm are defined and studied in *Quaternion Special Functions*, §*The Quaternion Exponential* and §*The Quaternion Logarithm*; this article does not define them again. It uses the closed form and the description of the logarithms from that article.
+with $\varrho>0$ the modulus, $\vec v$ the pure exponent, $q_{\log}$ the logarithmic scale, and $\vec q_{\log}$ the vector coordinate, the angle and the axis. The product of the scale and the rotor is $\varrho\exp(\vec q_{\log})$. The exponential and the logarithm are defined and studied in *Quaternion Special Functions*, §*The Quaternion Exponential* and §*The Quaternion Logarithm*; this article does not define them again. It uses the closed form and the description of the logarithms from that article.
 
 The decomposition is the exponential form of the modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Quaternions*, which writes every nonzero quaternion as
 
 $$
-\tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r>0, \qquad \tilde u_{\mathrm r}\in\mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
+\tilde q = \varrho\,\tilde u_{\mathrm r}, \qquad \varrho \in \mathbb{R}, \quad \varrho>0, \qquad \tilde u_{\mathrm r}\in\mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
 $$
 
-with $r$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That writing is quoted here in the same form because it is used outside this category, in *Rational-Chart Polar Decomposition of Quaternions* and in the biquaternion articles, so the symbols must agree. The unit factor is written $\tilde u_{\mathrm r}=\exp(\vec v)=\cos\theta+\vec n\sin\theta$, the rotor of the decomposition. The rational-chart form of *Rational-Chart Polar Decomposition of Quaternions* is the third presentation. The amalgamation into one exponential survives because the logarithmic scale is real and central. What does not survive is the reading of the exponent as a group coordinate: the exponential is not a homomorphism, and its kernel is not a subgroup.
+with $\varrho$ the modulus and $\tilde u_{\mathrm r}$ the unit factor. That writing is quoted here in the same form because it is used outside this category, in *Rational-Chart Polar Decomposition of Quaternions* and in the biquaternion articles, so the symbols must agree. The unit factor is written $\tilde u_{\mathrm r}=\exp(\vec v)=\cos\theta+\vec n\sin\theta$, the rotor of the decomposition. The rational-chart form of *Rational-Chart Polar Decomposition of Quaternions* is the third presentation. The amalgamation into one exponential survives because the logarithmic scale is real and central. What does not survive is the reading of the exponent as a group coordinate: the exponential is not a homomorphism, and its kernel is not a subgroup.
 
 The article states the decomposition and computes its data (§*The Decomposition*), identifies the exponent with the logarithm and separates the principal logarithm from the general one (§*The Logarithm*), proves existence and uniqueness (§*Existence and Uniqueness*), gives examples (§*Worked Examples*), and then treats the matrix picture (§*The Matrix Picture*), the comparison with the two other polar forms (§*The Three Polar Decompositions*) and the exponential coordinates (§*The Exponential Coordinates*).
 
-The symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Quaternion Algebra* and *Algebra and Element Conventions*. The modulus is written through the algebraic norm, $r=\sqrt{\langle\tilde q\rangle_{\natural}}$, and the modulus of a pure element through $\sqrt{\langle\vec v\rangle_{\natural}}$; a pure element carries the arrow. Every numerical value displayed below was recomputed in double precision.
+The symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Quaternion Algebra* and *Algebra and Element Conventions*. The modulus is written through the algebraic norm, $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$, and the modulus of a pure element through $\sqrt{\langle\vec v\rangle_{\natural}}$; a pure element carries the arrow. Every numerical value displayed below was recomputed in double precision.
 
 ## The Decomposition
 
@@ -33,8 +33,8 @@ The symbols are those of *Quaternion Algebra*, *Norm and Invertibility in the Qu
 Let $\tilde q=q_te_t+\vec q\neq0$, with $\vec q$ the vector part. The **modulus** and the **principal angle** are
 
 $$
-r=\sqrt{\langle\tilde q\rangle_{\natural}}>0, \qquad
-\theta=\arccos\frac{q_t}{r}\in[0,\pi],
+\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0, \qquad
+\theta=\arccos\frac{q_t}{\varrho}\in[0,\pi],
 $$
 
 and the **axis** is the unit pure quaternion
@@ -43,22 +43,22 @@ $$
 \vec n=\frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}}
 $$
 
-when $\vec q\neq0$. Euler's formula, $\exp(\theta\vec n)=\cos\theta+\vec n\sin\theta$, and $r=\exp(\ln r)$ give
+when $\vec q\neq0$. Euler's formula, $\exp(\theta\vec n)=\cos\theta+\vec n\sin\theta$, and $\varrho=\exp(\ln \varrho)$ give
 
-$$ \boxed{\; \tilde q=r(\cos\theta+\vec n\sin\theta)=r\exp(\theta\vec n)=\exp(\tilde q_{\log}),
-\qquad \tilde q_{\log}=\ln r+\theta\vec n \;} .$$
+$$ \boxed{\; \tilde q=\varrho(\cos\theta+\vec n\sin\theta)=\varrho\exp(\theta\vec n)=\exp(\tilde q_{\log}),
+\qquad \tilde q_{\log}=\ln \varrho+\theta\vec n \;} .$$
 
-The three expressions are the same number. The middle one is the modulus–unit form; the last one is the polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.
+The three expressions are the same number. The middle one is the modulus–unit form; the last one is the polar decomposition. The identity $\cos\theta=q_t/\varrho$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/\varrho$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.
 
 **Definition.** A **polar decomposition** of $\tilde q\in\mathbb{H}^{\times}$ is a writing
 
 $$
-\tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln r+\vec v, \quad r>0,\quad \vec v\in\operatorname{Im}\mathbb{H},
+\tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln \varrho+\vec v, \quad \varrho>0,\quad \vec v\in\operatorname{Im}\mathbb{H},
 $$
 
-equivalently $\tilde q=\exp(\ln r)\exp(\vec v)$, in which $\exp(\ln r)=r$ is the **scale** and $\exp(\vec v)$ is the **unit factor**, the rotor. The **exponent** is the logarithm $\tilde q_{\log}$, with scalar coordinate $q_{\log}=\ln r$ and vector coordinate $\vec q_{\log}=\vec v$.
+equivalently $\tilde q=\exp(\ln \varrho)\exp(\vec v)$, in which $\exp(\ln \varrho)=\varrho$ is the **scale** and $\exp(\vec v)$ is the **unit factor**, the rotor. The **exponent** is the logarithm $\tilde q_{\log}$, with scalar coordinate $q_{\log}=\ln \varrho$ and vector coordinate $\vec q_{\log}=\vec v$.
 
-Write $\vec v=\theta\vec n$ with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}\ge0$ and $\vec n$ a unit pure quaternion when $\vec v\neq0$. The **angle** is $\theta$ and the **axis** is $\vec n$. The angle is defined modulo $2\pi$, because $\exp((\theta+2\pi k)\vec n)=\exp(\theta\vec n)$; the axis is a point of the sphere $S^2$ of unit pure quaternions. The pair $(r,\exp(\vec v))$ is the modulus–unit pair.
+Write $\vec v=\theta\vec n$ with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}\ge0$ and $\vec n$ a unit pure quaternion when $\vec v\neq0$. The **angle** is $\theta$ and the **axis** is $\vec n$. The angle is defined modulo $2\pi$, because $\exp((\theta+2\pi k)\vec n)=\exp(\theta\vec n)$; the axis is a point of the sphere $S^2$ of unit pure quaternions. The pair $(\varrho,\exp(\vec v))$ is the modulus–unit pair.
 
 ### The Two Coordinates
 
@@ -66,10 +66,10 @@ The exponent has one scalar coordinate and one vector coordinate, and they play 
 
 | coordinate | formula from $\tilde q$ | range | role |
 |---|---|---|---|
-| $q_{\log}=\operatorname{Sc}\tilde q_{\log}$ | $\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ | $\mathbb{R}$ | logarithmic scale $\ln r$; one value, no branch |
+| $q_{\log}=\operatorname{Sc}\tilde q_{\log}$ | $\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ | $\mathbb{R}$ | logarithmic scale $\ln \varrho$; one value, no branch |
 | $\vec q_{\log}=\operatorname{Vect}\tilde q_{\log}$ | $\theta\vec n$, with $\theta=\arccos\bigl(q_t/\sqrt{\langle\tilde q\rangle_{\natural}}\bigr)$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ | $\operatorname{Im}\mathbb{H}$ | angle and axis; one line off the real axis, one sphere on it |
 
-The scalar coordinate is unique: it is fixed by the modulus, $q_{\log}=\ln r=\tfrac12\ln\langle\tilde q\rangle_{\natural}$, and carries the scale. The vector coordinate is a pure quaternion, not a scalar: it is the quaternion analogue of the primed coordinate $q'_{\log}$ of the complex case, and it carries both the angle and the axis. The prime is not written, because a quaternion coefficient is real and the prime marks an imaginary coordinate only. At $\vec q=0$ the axis is free: the coordinate is $0$ at $+r$ and $(2k+1)\pi\vec n$ at $-r$.
+The scalar coordinate is unique: it is fixed by the modulus, $q_{\log}=\ln \varrho=\tfrac12\ln\langle\tilde q\rangle_{\natural}$, and carries the scale. The vector coordinate is a pure quaternion, not a scalar: it is the quaternion analogue of the primed coordinate $q'_{\log}$ of the complex case, and it carries both the angle and the axis. The prime is not written, because a quaternion coefficient is real and the prime marks an imaginary coordinate only. At $\vec q=0$ the axis is free: the coordinate is $0$ at $+\varrho$ and $(2k+1)\pi\vec n$ at $-\varrho$.
 
 Read backwards, the pair gives the element:
 
@@ -83,15 +83,15 @@ The subscript is a label, not an operation: $q_{\log}$ is the scalar coordinate 
 
 The factors are read from $\tilde q$ directly:
 
-$$ \boxed{\; \exp(\ln r)=r=\sqrt{\langle\tilde q\rangle_{\natural}}, \qquad
-\exp(\vec v)=\frac{\tilde q}{r}=\frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} \;} .$$
+$$ \boxed{\; \exp(\ln \varrho)=\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}, \qquad
+\exp(\vec v)=\frac{\tilde q}{\varrho}=\frac{\tilde q}{\sqrt{\langle\tilde q\rangle_{\natural}}} \;} .$$
 
 The first is positive real; the second has norm one, $\langle\exp(\vec v)\rangle_{\natural}=1$, and lies on the unit sphere $S^3$. They recover the modulus–unit decomposition. The table records the two factors.
 
 | factor | formula | range | coordinate | parameter |
 |---|---|---|---|---|
-| scale | $\exp(q_{\log})=r$ | $(0,\infty)$ | $q_{\log}=\ln r$ | $r>0$ |
-| unit factor (rotor) | $\exp(\vec q_{\log})=\tilde q/r$ | $S^3$ | $\vec q_{\log}=\theta\vec n$ | $\theta\in[0,\pi)$, $\vec n\in S^2$ |
+| scale | $\exp(q_{\log})=\varrho$ | $(0,\infty)$ | $q_{\log}=\ln \varrho$ | $\varrho>0$ |
+| unit factor (rotor) | $\exp(\vec q_{\log})=\tilde q/\varrho$ | $S^3$ | $\vec q_{\log}=\theta\vec n$ | $\theta\in[0,\pi)$, $\vec n\in S^2$ |
 
 The real dimensions are $1$ and $3$, and they add to the real dimension $4$ of $\mathbb{H}$. The scale is non-compact; the unit factor is compact. This is the compact case of the polar decomposition: the group of invertibles retracts onto the sphere.
 
@@ -120,10 +120,10 @@ For $\tilde q=3e_t+4\vec e_x$ the rotor is $\tilde u_{\mathrm r}=0.6e_t+0.8\vec 
 The product of the two factors is one exponential:
 
 $$
-\tilde q=\exp(\ln r)\exp(\vec v)=\exp(\ln r+\vec v).
+\tilde q=\exp(\ln \varrho)\exp(\vec v)=\exp(\ln \varrho+\vec v).
 $$
 
-The amalgamation uses the fact that $\ln r$ is real and central, so it commutes with $\vec v$. It does not use a group law of the exponential, and the exponential is not a homomorphism. For two pure exponents the failure is explicit. Take $\tilde q_1=\tfrac{\pi}{2}\vec e_x$ and $\tilde q_2=\tfrac{\pi}{2}\vec e_y$. Then
+The amalgamation uses the fact that $\ln \varrho$ is real and central, so it commutes with $\vec v$. It does not use a group law of the exponential, and the exponential is not a homomorphism. For two pure exponents the failure is explicit. Take $\tilde q_1=\tfrac{\pi}{2}\vec e_x$ and $\tilde q_2=\tfrac{\pi}{2}\vec e_y$. Then
 
 $$
 \exp(\tilde q_1)\exp(\tilde q_2)=\vec e_x\vec e_y=\vec e_z,
@@ -144,19 +144,19 @@ $$
 =\tilde q_1+\tilde q_2+\tfrac12[\tilde q_1,\tilde q_2]+\cdots .
 $$
 
-The word **polar** names the two factors, not two independent exponentials. The single exponent $\tilde q_{\log}=\ln r+\vec v$ carries both the scale and the rotor. It is not a group coordinate: the product of two elements is not the exponential of the sum of their exponents.
+The word **polar** names the two factors, not two independent exponentials. The single exponent $\tilde q_{\log}=\ln \varrho+\vec v$ carries both the scale and the rotor. It is not a group coordinate: the product of two elements is not the exponential of the sum of their exponents.
 
 ### Existence and Uniqueness
 
 **Theorem.** Every $\tilde q\in\mathbb{H}^{\times}$ has a polar decomposition. The principal one, with $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$, exists exactly on $\mathbb{H}\setminus(-\infty,0]$ and is unique there. The general case is as follows.
 
-- If $\tilde q\notin\mathbb{R}$, then there are unique $r>0$, $\theta\in(0,\pi)$ and $\vec n\in S^2$ with $\tilde q=\exp(\ln r+\theta\vec n)$. Every exponent of $\tilde q$ is $\ln r+(\theta+2\pi k)\vec n$, $k\in\mathbb{Z}$.
-- If $\tilde q=r_0e_t$ with $r_0>0$, then $r=r_0$ and the angle is $0$. The exponents are $\ln r_0+2\pi k\,\vec n$ with $k\in\mathbb{Z}_{\ge0}$ and $\vec n\in S^2$, the value $k=0$ giving the principal exponent $\ln r_0$.
-- If $\tilde q=-r_0e_t$ with $r_0>0$, then $r=r_0$ and the angle is $\pi$. The exponents are $\ln r_0+(2k+1)\pi\,\vec n$ with $k\in\mathbb{Z}_{\ge0}$ and $\vec n\in S^2$. None has vector part of length below $\pi$, so there is no principal exponent.
+- If $\tilde q\notin\mathbb{R}$, then there are unique $\varrho>0$, $\theta\in(0,\pi)$ and $\vec n\in S^2$ with $\tilde q=\exp(\ln \varrho+\theta\vec n)$. Every exponent of $\tilde q$ is $\ln \varrho+(\theta+2\pi k)\vec n$, $k\in\mathbb{Z}$.
+- If $\tilde q=r_0e_t$ with $r_0>0$, then $\varrho=r_0$ and the angle is $0$. The exponents are $\ln r_0+2\pi k\,\vec n$ with $k\in\mathbb{Z}_{\ge0}$ and $\vec n\in S^2$, the value $k=0$ giving the principal exponent $\ln r_0$.
+- If $\tilde q=-r_0e_t$ with $r_0>0$, then $\varrho=r_0$ and the angle is $\pi$. The exponents are $\ln r_0+(2k+1)\pi\,\vec n$ with $k\in\mathbb{Z}_{\ge0}$ and $\vec n\in S^2$. None has vector part of length below $\pi$, so there is no principal exponent.
 
-**Existence.** Let $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/r$, so $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}\neq\pm e_t$, write $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$ with $\theta\in(0,\pi)$ and $\vec n\in S^2$. Then $\exp(\ln r+\theta\vec n)=r\tilde u_{\mathrm r}=\tilde q$. At $\tilde u_{\mathrm r}=e_t$ take $\vec v=0$; at $\tilde u_{\mathrm r}=-e_t$ take $\vec v=\pi\vec n$ for any $\vec n\in S^2$. In both cases $\exp(\vec v)=\tilde u_{\mathrm r}$ and the identity follows.
+**Existence.** Let $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\varrho$, so $\langle\tilde u_{\mathrm r}\rangle_{\natural}=1$. If $\tilde u_{\mathrm r}\neq\pm e_t$, write $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$ with $\theta\in(0,\pi)$ and $\vec n\in S^2$. Then $\exp(\ln \varrho+\theta\vec n)=\varrho\tilde u_{\mathrm r}=\tilde q$. At $\tilde u_{\mathrm r}=e_t$ take $\vec v=0$; at $\tilde u_{\mathrm r}=-e_t$ take $\vec v=\pi\vec n$ for any $\vec n\in S^2$. In both cases $\exp(\vec v)=\tilde u_{\mathrm r}$ and the identity follows.
 
-**Uniqueness.** Suppose $\exp(\ln r_1+\vec v_1)=\exp(\ln r_2+\vec v_2)$. Taking norms gives $r_1=r_2$, because $\langle\exp(\ln r+\vec v)\rangle_{\natural}=r^2$. Hence $\exp(\vec v_1)=\exp(\vec v_2)$. For a non-real element, write the common unit value as $\cos\theta+\vec n\sin\theta$ with $\theta\in(0,\pi)$. The closed form gives
+**Uniqueness.** Suppose $\exp(\ln r_1+\vec v_1)=\exp(\ln r_2+\vec v_2)$. Taking norms gives $r_1=r_2$, because $\langle\exp(\ln \varrho+\vec v)\rangle_{\natural}=\varrho^2$. Hence $\exp(\vec v_1)=\exp(\vec v_2)$. For a non-real element, write the common unit value as $\cos\theta+\vec n\sin\theta$ with $\theta\in(0,\pi)$. The closed form gives
 
 $$
 \cos\sqrt{\langle\vec v_j\rangle_{\natural}}=\cos\theta, \qquad
@@ -170,19 +170,19 @@ The data of the principal decomposition are collected in one table.
 | datum | formula |
 |---|---|
 | element | $\tilde q=q_te_t+\vec q\neq0$, $\tilde q\notin(-\infty,0]$ |
-| modulus | $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ |
-| angle | $\theta=\arccos(q_t/r)\in[0,\pi)$ |
+| modulus | $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ |
+| angle | $\theta=\arccos(q_t/\varrho)\in[0,\pi)$ |
 | axis | $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ |
-| exponent | $\tilde q_{\log}=\log\tilde q=\ln r+\theta\vec n$ |
-| scale | $\exp(\ln r)=r$ |
-| unit factor | $\exp(\theta\vec n)=\tilde q/r$ |
-| reconstruction | $\tilde q=\exp(\tilde q_{\log})=r\exp(\theta\vec n)$ |
+| exponent | $\tilde q_{\log}=\log\tilde q=\ln \varrho+\theta\vec n$ |
+| scale | $\exp(\ln \varrho)=\varrho$ |
+| unit factor | $\exp(\theta\vec n)=\tilde q/\varrho$ |
+| reconstruction | $\tilde q=\exp(\tilde q_{\log})=\varrho\exp(\theta\vec n)$ |
 
 The principal cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ is the exact domain of uniqueness. On its boundary the exponential sends the sphere of radius $\pi$ to the negative real axis, where the axis is not determined by the image.
 
 ### The Group Law
 
-The modulus–unit form gives the group law. In the coordinates $(\ln r,\tilde u_{\mathrm r})\in\mathbb{R}\times S^3$,
+The modulus–unit form gives the group law. In the coordinates $(\ln \varrho,\tilde u_{\mathrm r})\in\mathbb{R}\times S^3$,
 
 $$
 (\ln r_1,\tilde u_{\mathrm r,1})(\ln r_2,\tilde u_{\mathrm r,2})
@@ -213,10 +213,10 @@ Let $\tilde q_{\log}=q_{\log}e_t+\vec v$ be a logarithm, with $\vec v$ pure. Tak
 | element | vector part $\vec v$ | logarithms |
 |---|---|---|
 | non-real, $\tilde q\notin\mathbb{R}$ | $(\theta+2\pi k)\vec n$, $k\in\mathbb{Z}$ | one for each integer |
-| positive real, $\tilde q=r>0$ | $2\pi k\,\vec n$, $k\in\mathbb{Z}_{\ge0}$, $\vec n\in S^2$ | $0$, then a sphere for each $k\ge1$ |
-| negative real, $\tilde q=-r<0$ | $(2k+1)\pi\,\vec n$, $k\in\mathbb{Z}_{\ge0}$, $\vec n\in S^2$ | a sphere for each $k$ |
+| positive real, $\tilde q=\varrho>0$ | $2\pi k\,\vec n$, $k\in\mathbb{Z}_{\ge0}$, $\vec n\in S^2$ | $0$, then a sphere for each $k\ge1$ |
+| negative real, $\tilde q=-\varrho<0$ | $(2k+1)\pi\,\vec n$, $k\in\mathbb{Z}_{\ge0}$, $\vec n\in S^2$ | a sphere for each $k$ |
 
-In the first row $\theta=\arccos(q_t/r)\in(0,\pi)$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$. The general logarithms are therefore
+In the first row $\theta=\arccos(q_t/\varrho)\in(0,\pi)$ and $\vec n=\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$. The general logarithms are therefore
 
 $$
 \tilde q_{\log}=q_{\log}e_t+(\theta+2\pi k)\vec n,
@@ -225,14 +225,14 @@ $$
 
 for a non-real element, and the two sphere families on the real axis. Every nonzero quaternion has a logarithm, and no logarithm is unique. The ambiguity is not a translate of the kernel: the kernel is a union of spheres and the family above is a line. This is treated in §*The Kernel and the Fibre*.
 
-The two coordinates are those of §*The Two Coordinates*: $q_{\log}=\ln r$ is unique, and $\vec q_{\log}=(\theta+2\pi k)\vec n$ carries the branch. Off the real axis $\vec n=\operatorname{sgn}\tilde q$.
+The two coordinates are those of §*The Two Coordinates*: $q_{\log}=\ln \varrho$ is unique, and $\vec q_{\log}=(\theta+2\pi k)\vec n$ carries the branch. Off the real axis $\vec n=\operatorname{sgn}\tilde q$.
 
 ### The Principal Logarithm
 
 Single-valuedness is obtained by restricting the exponent to the **principal cylinder**
 
 $$
-B=\Bigl\{\ln r+\vec v:\ r>0,\ \sqrt{\langle\vec v\rangle_{\natural}}<\pi\Bigr\}.
+B=\Bigl\{\ln \varrho+\vec v:\ \varrho>0,\ \sqrt{\langle\vec v\rangle_{\natural}}<\pi\Bigr\}.
 $$
 
 The exponential maps $B$ bijectively onto $\mathbb{H}\setminus(-\infty,0]$, and its inverse is the **principal logarithm**
@@ -242,7 +242,7 @@ $$ \boxed{\; \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}
 \frac{\vec q}{\sqrt{\langle\vec q\rangle_{\natural}}},
 \qquad \tilde q\notin(-\infty,0] \;} ,$$
 
-with the second term read as $0$ when $\vec q=0$, that is, on the positive real axis. The scalar factor is the **argument** $\operatorname{Arg}\tilde q=\arccos(q_t/r)\in[0,\pi)$, so that
+with the second term read as $0$ when $\vec q=0$, that is, on the positive real axis. The scalar factor is the **argument** $\operatorname{Arg}\tilde q=\arccos(q_t/\varrho)\in[0,\pi)$, so that
 
 $$
 \log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\operatorname{Arg}\tilde q\;\vec n .
@@ -250,7 +250,7 @@ $$
 
 The inverse is discontinuous on the negative real axis, the **branch cut**. As $\tilde q\to-r_0$, the direction $\vec n$ tends to the direction of approach and the angle tends to $\pi$, so $\log\tilde q\to\ln r_0+\pi\vec n$ for whichever unit pure $\vec n$ the path selects. No value is distinguished at $\tilde q=-r_0$. On the cut itself the principal value is not defined; it is the cylinder, not the exponential, that ends there. The cylinder is a fundamental domain for the identification $\vec v\sim\vec v+2\pi k\vec n$ along each axis.
 
-| $\tilde q$ | $r$ | $\operatorname{Arg}\tilde q$ | $\log\tilde q$ |
+| $\tilde q$ | $\varrho$ | $\operatorname{Arg}\tilde q$ | $\log\tilde q$ |
 |---|---|---|---|
 | $3e_t+4\vec e_x$ | $5$ | $0.9272952180016123$ | $1.6094379124341003+0.9272952180016123\,\vec e_x$ |
 | $2e_t$ | $2$ | $0$ | $0.6931471805599453$ |
@@ -288,7 +288,7 @@ a union of two-dimensional spheres, one for each positive integer, together with
 
 **Corollary.** The kernel is not a subgroup of $(\mathbb{H},+)$. The elements $2\pi\vec e_x$ and $2\pi\vec e_y$ lie in the kernel, but their sum $2\pi(\vec e_x+\vec e_y)$ has norm $8\pi^2$, which is not the square of a multiple of $2\pi$, so the sum is not in the kernel.
 
-The fibre over a non-real element is the discrete line of §*The General Logarithm*. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln r+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives a translate of the kernel.
+The fibre over a non-real element is the discrete line of §*The General Logarithm*. It is not a translate of the kernel: the kernel is a union of spheres and the fibre is a line. The fibre over a positive real element is the translate $\ln \varrho+\ker\exp$, because $\ker\exp$ contains the origin and the spheres of radius $2\pi k$. The fibre over a negative real element is a union of spheres of radius $(2k+1)\pi$, also not a translate of the kernel. In the complex case the kernel $2\pi i\mathbb{Z}$ is a subgroup and every fibre is a coset; here only the positive real axis gives a translate of the kernel.
 
 ## Worked Examples
 
@@ -299,7 +299,7 @@ A full set of eight cases, with reconstruction and logarithm tables and the boun
 Take $\tilde q=3e_t+4\vec e_x$. Then
 
 $$
-r=\sqrt{9+16}=5, \qquad \ln r=1.6094379124341003, \qquad
+\varrho=\sqrt{9+16}=5, \qquad \ln \varrho=1.6094379124341003, \qquad
 \theta=\arccos\frac35=0.9272952180016123,
 $$
 
@@ -323,7 +323,7 @@ $$
 \tilde q=e_t+2\vec e_x+3\vec e_y+4\vec e_z .
 $$
 
-The modulus is $r=\sqrt{30}=5.477225575051661$, the scalar part of the unit factor is $1/\sqrt{30}=0.1825741858$, and
+The modulus is $\varrho=\sqrt{30}=5.477225575051661$, the scalar part of the unit factor is $1/\sqrt{30}=0.1825741858$, and
 
 $$
 \theta=\arccos\frac{1}{\sqrt{30}}=1.387192316515978, \qquad
@@ -341,7 +341,7 @@ and $\exp(\log\tilde q)$ reproduces $\tilde q$ to $1.1\times10^{-15}$ in each co
 
 ### A Table of Examples
 
-| $\tilde q$ | $r$ | $q_{\log}=\ln r$ | $\theta$ | $\vec n$ | $\vec q_{\log}=\theta\vec n$ | $\sqrt{\langle\exp(\tilde q_{\log})-\tilde q\rangle_{\natural}}$ |
+| $\tilde q$ | $\varrho$ | $q_{\log}=\ln \varrho$ | $\theta$ | $\vec n$ | $\vec q_{\log}=\theta\vec n$ | $\sqrt{\langle\exp(\tilde q_{\log})-\tilde q\rangle_{\natural}}$ |
 |---|---|---|---|---|---|---|
 | $2e_t$ | $2$ | $0.6931471805599453$ | $0$ | arbitrary | $0$ | $0$ |
 | $-e_t$ | $1$ | $0$ | $\pi$ | arbitrary; $\vec e_x$ chosen | $3.141592653589793\,\vec e_x$ | $1.2\times10^{-16}$ |
@@ -386,35 +386,35 @@ $$
 The exponential form of a quaternion reads, in matrices,
 
 $$
-M_{\tilde q}=\operatorname{Mat}(\tilde q)=\exp\bigl(\ln r\,I+\theta N\bigr)
-=r\bigl(\cos\theta\,I+\sin\theta\,N\bigr),
+M_{\tilde q}=\operatorname{Mat}(\tilde q)=\exp\bigl(\ln \varrho\,I+\theta N\bigr)
+=\varrho\bigl(\cos\theta\,I+\sin\theta\,N\bigr),
 $$
 
 with $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and $N=\operatorname{Mat}(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})$. The determinant is
 
 $$
-\det M_{\tilde q}=r^2=\langle\tilde q\rangle_{\natural},
+\det M_{\tilde q}=\varrho^2=\langle\tilde q\rangle_{\natural},
 $$
 
 as it must be, since the determinant of the exponential is the exponential of the trace.
 
-Every invertible complex $2\times2$ matrix has a polar decomposition $B=PU$ with $P$ Hermitian positive definite and $U$ $*$-unitary, and for $B=M_{\tilde q}$ the conformal identity $M_{\tilde q}M_{\tilde q}^{\dagger}=r^2I$ gives $P=rI$ and $U=M_{\tilde u_{\mathrm r}}\in SU(2)$. The positive factor is a scalar because the only positive definite Hermitian matrices in the family are the positive multiples of the identity. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $r$.
+Every invertible complex $2\times2$ matrix has a polar decomposition $B=PU$ with $P$ Hermitian positive definite and $U$ $*$-unitary, and for $B=M_{\tilde q}$ the conformal identity $M_{\tilde q}M_{\tilde q}^{\dagger}=\varrho^2I$ gives $P=rI$ and $U=M_{\tilde u_{\mathrm r}}\in SU(2)$. The positive factor is a scalar because the only positive definite Hermitian matrices in the family are the positive multiples of the identity. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $\varrho$.
 
 | factor | matrix | logarithm | the determinant of the image |
 |---|---|---|---|
-| modulus | $rI$ | $\ln r\,I$ | $r^2$ |
+| modulus | $rI$ | $\ln \varrho\,I$ | $\varrho^2$ |
 | unit factor | $M_{\tilde u_{\mathrm r}}\in SU(2)$ | $\theta N$ | $1$ |
-| $\tilde q$ | $M_{\tilde q}$ | $\ln r\,I+\theta N$ | $r^2$ |
+| $\tilde q$ | $M_{\tilde q}$ | $\ln \varrho\,I+\theta N$ | $\varrho^2$ |
 
 ### The Matrix Logarithm and the Derivative
 
 The matrix logarithm of $M_{\tilde q}$ is the matrix of the quaternion logarithm:
 
 $$
-\log M_{\tilde q}=\ln r\,I+\theta N
+\log M_{\tilde q}=\ln \varrho\,I+\theta N
 $$
 
-on the principal branch. Adding $2\pi kN$ gives another logarithm, because $\exp(2\pi kN)=I$, and at $M_{\tilde q}=-rI$ every traceless anti-Hermitian $N$ with $N^2=-I$ gives a logarithm $\ln r\,I+\pi N$. The matrix logarithm inherits exactly the ambiguity of §*Existence and Uniqueness*.
+on the principal branch. Adding $2\pi kN$ gives another logarithm, because $\exp(2\pi kN)=I$, and at $M_{\tilde q}=-rI$ every traceless anti-Hermitian $N$ with $N^2=-I$ gives a logarithm $\ln \varrho\,I+\pi N$. The matrix logarithm inherits exactly the ambiguity of §*Existence and Uniqueness*.
 
 The differential of the exponential is
 
@@ -465,13 +465,13 @@ again with multiplicity two. The map is a similarity on the first plane and a di
 
 | decomposition | formula | parameters | domain | uniqueness | functions | group reading |
 |---|---|---|---|---|---|---|
-| modulus–unit | $\tilde q=r\tilde u_{\mathrm r}$ | $r>0$, $\tilde u_{\mathrm r}\in S^3$ | $\mathbb{H}^{\times}$ | unique | square root | $\mathbb{R}_{>0}\times S^3$ |
-| rational-chart | $\tilde q=r\,(1-\vec v)(1+\vec v)^{-1}$ | $r>0$, $\vec v\in\operatorname{Im}\mathbb{H}$ | $\mathbb{H}\setminus(-\infty,0]$ | unique on the chart | rational | $\mathbb{R}_{>0}\times\mathbb{R}^3$, local |
-| exponential | $\tilde q=\exp(\ln r+\vec v)$ | $r>0$, $\vec v\in\operatorname{Im}\mathbb{H}$ | $\mathbb{H}^{\times}$ | exponent modulo $2\pi$ along the axis; unique with $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ | exponential and logarithm | not a quotient; the kernel is not a subgroup |
+| modulus–unit | $\tilde q=\varrho\tilde u_{\mathrm r}$ | $\varrho>0$, $\tilde u_{\mathrm r}\in S^3$ | $\mathbb{H}^{\times}$ | unique | square root | $\mathbb{R}_{>0}\times S^3$ |
+| rational-chart | $\tilde q=\varrho\,(1-\vec v)(1+\vec v)^{-1}$ | $\varrho>0$, $\vec v\in\operatorname{Im}\mathbb{H}$ | $\mathbb{H}\setminus(-\infty,0]$ | unique on the chart | rational | $\mathbb{R}_{>0}\times\mathbb{R}^3$, local |
+| exponential | $\tilde q=\exp(\ln \varrho+\vec v)$ | $\varrho>0$, $\vec v\in\operatorname{Im}\mathbb{H}$ | $\mathbb{H}^{\times}$ | exponent modulo $2\pi$ along the axis; unique with $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ | exponential and logarithm | not a quotient; the kernel is not a subgroup |
 
 ### The Modulus–Unit Form
 
-The modulus–unit form is $\tilde q=r\tilde u_{\mathrm r}$ with $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$. It is unique on the whole of $\mathbb{H}^{\times}$, it uses the square root of the norm, and it is the product decomposition of the group of invertibles. It is the form developed in *Modulus–Unit Polar Decomposition of Quaternions*.
+The modulus–unit form is $\tilde q=\varrho\tilde u_{\mathrm r}$ with $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\tilde u_{\mathrm r}=\tilde q/\sqrt{\langle\tilde q\rangle_{\natural}}$. It is unique on the whole of $\mathbb{H}^{\times}$, it uses the square root of the norm, and it is the product decomposition of the group of invertibles. It is the form developed in *Modulus–Unit Polar Decomposition of Quaternions*.
 
 ### The Rational-Chart Form
 
@@ -481,7 +481,7 @@ $$
 \tilde u(\vec v)=(1-\vec v)(1+\vec v)^{-1},
 $$
 
-and $\vec v\mapsto\tilde u(\vec v)$ is a bijection from the pure subspace onto $S^3\setminus\{-e_t\}$. It is rational, uses no transcendental function, and misses the single point $-e_t$, the unit factor of the negative real axis. The decomposition $\tilde q=r\,\tilde u(\vec v)$ is therefore a rational chart, not a global decomposition. It is developed in *Rational-Chart Polar Decomposition of Quaternions*.
+and $\vec v\mapsto\tilde u(\vec v)$ is a bijection from the pure subspace onto $S^3\setminus\{-e_t\}$. It is rational, uses no transcendental function, and misses the single point $-e_t$, the unit factor of the negative real axis. The decomposition $\tilde q=\varrho\,\tilde u(\vec v)$ is therefore a rational chart, not a global decomposition. It is developed in *Rational-Chart Polar Decomposition of Quaternions*.
 
 ### The Change of Coordinates
 
@@ -509,7 +509,7 @@ The three forms are three presentations of one factorisation. The modulus–unit
 Four departures from the complex template separate the quaternion case from the commutative one.
 
 - **The kernel is not a subgroup.** It is a union of spheres, not a discrete lattice, so $\mathbb{H}/\ker\exp$ is not a group.
-- **The fibres are not all cosets.** For $\tilde q\notin\mathbb{R}$ the logarithms form the line $\ln r+(\theta+2\pi k)\vec n$, not the translate $\log\tilde q+\ker\exp$.
+- **The fibres are not all cosets.** For $\tilde q\notin\mathbb{R}$ the logarithms form the line $\ln \varrho+(\theta+2\pi k)\vec n$, not the translate $\log\tilde q+\ker\exp$.
 - **The exponential has critical points.** The spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$ are critical, with the nonzero real axis as image; the complex exponential has none.
 - **The principal domain is a cylinder, not a strip.** It is $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$, whose boundary sphere maps onto the negative real axis; the complex principal strip is half-open and contains that axis. On the real axis the angle is fixed and the axis is an arbitrary point of $S^2$, whereas in $\mathbb{C}$ there is only one imaginary direction.
 
@@ -528,7 +528,7 @@ $$
 
 **Theorem.** The map $E$ is a diffeomorphism onto its image.
 
-**Proof.** The map is smooth. On the image, the inverse is $q_{\log}=\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\vec v$ the principal logarithm of §*The Principal Logarithm*; it is smooth because $\arccos$ and the quotient $\theta\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ extend smoothly across $\vec q=0$, and the remaining singular point $\tilde q=-r$ lies on the boundary $\sqrt{\langle\vec v\rangle_{\natural}}=\pi$. The differential is invertible on the open cylinder by §*The Matrix Logarithm and the Derivative*, so the inverse function theorem makes the map a local diffeomorphism; the explicit inverse makes it bijective. Hence it is a diffeomorphism.
+**Proof.** The map is smooth. On the image, the inverse is $q_{\log}=\ln\sqrt{\langle\tilde q\rangle_{\natural}}$ and $\vec v$ the principal logarithm of §*The Principal Logarithm*; it is smooth because $\arccos$ and the quotient $\theta\vec q/\sqrt{\langle\vec q\rangle_{\natural}}$ extend smoothly across $\vec q=0$, and the remaining singular point $\tilde q=-\varrho$ lies on the boundary $\sqrt{\langle\vec v\rangle_{\natural}}=\pi$. The differential is invertible on the open cylinder by §*The Matrix Logarithm and the Derivative*, so the inverse function theorem makes the map a local diffeomorphism; the explicit inverse makes it bijective. Hence it is a diffeomorphism.
 
 The coordinates $(q_{\log},\vec v)$ give three families of curves and surfaces.
 
@@ -569,27 +569,27 @@ The factor $(\sin\rho/\rho)^2$ equals one at $\rho=0$ and vanishes on the bounda
 
 ### The Harmonic Reading
 
-The complex reading does not carry over. In $\mathbb{C}$ the logarithm is holomorphic and its real part is harmonic; here the logarithm is a real-analytic map of four variables and is not quaternion-holomorphic, and the logarithmic scale is not harmonic either. With $r=\sqrt{\langle\tilde q\rangle_{\natural}}$,
+The complex reading does not carry over. In $\mathbb{C}$ the logarithm is holomorphic and its real part is harmonic; here the logarithm is a real-analytic map of four variables and is not quaternion-holomorphic, and the logarithmic scale is not harmonic either. With $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$,
 
 $$
-\Delta\ln r=\frac{2}{r^2}\neq0,
+\Delta\ln \varrho=\frac{2}{\varrho^2}\neq0,
 $$
 
-because the Laplacian is four-dimensional. The function $r^{-2}=1/\langle\tilde q\rangle_{\natural}$ is harmonic off the origin, and it is the radial harmonic function of the layer. The components of the exponential are not harmonic: the scalar component $\exp(q_{\log})\cos\rho$ has Laplacian $-2\exp(q_{\log})\sin\rho/\rho$, which is nonzero on the open principal cylinder and vanishes on the boundary spheres $\rho=\pi k$, $k\ge1$. There are therefore no harmonic conjugates of the logarithmic scale, and the exponential is not a harmonic morphism. The coordinate $q_{\log}=\ln r$ is a smooth coordinate and the map $E$ is a diffeomorphism, but the analytic structure it carries is that of the product $\mathbb{R}\times S^3$, not that of a holomorphic plane.
+because the Laplacian is four-dimensional. The function $\varrho^{-2}=1/\langle\tilde q\rangle_{\natural}$ is harmonic off the origin, and it is the radial harmonic function of the layer. The components of the exponential are not harmonic: the scalar component $\exp(q_{\log})\cos\rho$ has Laplacian $-2\exp(q_{\log})\sin\rho/\rho$, which is nonzero on the open principal cylinder and vanishes on the boundary spheres $\rho=\pi k$, $k\ge1$. There are therefore no harmonic conjugates of the logarithmic scale, and the exponential is not a harmonic morphism. The coordinate $q_{\log}=\ln \varrho$ is a smooth coordinate and the map $E$ is a diffeomorphism, but the analytic structure it carries is that of the product $\mathbb{R}\times S^3$, not that of a holomorphic plane.
 
 ## Summary
 
 Every nonzero quaternion has a polar decomposition
 
 $$
-\tilde q=\exp(\ln r+\vec v), \qquad r=\sqrt{\langle\tilde q\rangle_{\natural}}>0,
+\tilde q=\exp(\ln \varrho+\vec v), \qquad \varrho=\sqrt{\langle\tilde q\rangle_{\natural}}>0,
 $$
 
-with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and axis $\vec n\in S^2$; the unit factor is the rotor $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$, whose two-sided operator rotates by $2\theta$. The pair $(r,\theta\vec n)$ is unique off the real axis. On the positive real axis the angle is $0$ and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation has $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ and covers the quaternion space cut along the closed negative real axis. Its exponent is the principal logarithm $\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\theta\vec n$; every other logarithm is $\log\tilde q+2\pi k\vec n$ off the real axis, and a union of spheres on it.
+with pure exponent $\vec v=\theta\vec n$, angle $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$ and axis $\vec n\in S^2$; the unit factor is the rotor $\tilde u_{\mathrm r}=\cos\theta+\vec n\sin\theta$, whose two-sided operator rotates by $2\theta$. The pair $(\varrho,\theta\vec n)$ is unique off the real axis. On the positive real axis the angle is $0$ and the axis is arbitrary; on the negative real axis the angle is $\pi$ and the axis is arbitrary. The principal representation has $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ and covers the quaternion space cut along the closed negative real axis. Its exponent is the principal logarithm $\log\tilde q=\ln\sqrt{\langle\tilde q\rangle_{\natural}}+\theta\vec n$; every other logarithm is $\log\tilde q+2\pi k\vec n$ off the real axis, and a union of spheres on it.
 
 The kernel is $\{0\}\cup2\pi S^2\cup4\pi S^2\cup\cdots$, a union of spheres and not a subgroup. The exponential is therefore not a homomorphism: the bracket of two pure exponents is twice their cross product, and $\exp(\tilde q_1+\tilde q_2)\neq\exp(\tilde q_1)\exp(\tilde q_2)$ for non-commuting exponents. The group of invertibles is not $\mathbb{H}/\ker\exp$: off the real axis the fibres are lines, on the real axis they are spheres, and only the positive real axis gives cosets of the kernel. The amalgamation into one exponential survives because the logarithmic scale is central; the group law survives in the modulus–unit form, $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times S^3$.
 
-The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln r\,I+\theta N)$ with $N$ anti-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
+The differential of the exponential is invertible exactly off the spheres $\sqrt{\langle\vec v\rangle_{\natural}}=\pi k$, $k\ge1$, whose image is the nonzero real axis; its determinant is $\exp(4q_t)(\sin\theta/\theta)^2$. In the matrix picture the exponential is $\exp(\ln \varrho\,I+\theta N)$ with $N$ anti-Hermitian and $N^2=-I$, and the matrix polar decomposition of the conformal matrix has positive factor $rI$ and special $*$-unitary factor. The exponential coordinates are a diffeomorphism from the cylinder $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ onto the cut space; they are conformal from the cylinder $\mathbb{R}\times S^3$, not from the Euclidean metric on that cylinder.
 
 ## Summary of Notation
 
@@ -599,7 +599,7 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 | $\tilde q=q_te_t+\vec q$ | a quaternion, $q_t$ its scalar part, $\vec q$ its pure part |
 | $\tilde q^{\natural}=q_te_t-\vec q$ | the quaternion conjugate |
 | $\langle\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | the quaternion norm, positive definite |
-| $r=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
+| $\varrho=\sqrt{\langle\tilde q\rangle_{\natural}}$ | the modulus |
 | $\vec v=\theta\vec n$ | the pure exponent, $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$, $\vec n\in S^2$ |
 | $\exp(\tilde q)=\exp(q_t)(\cos\theta+(\vec v/\sqrt{\langle\vec v\rangle_{\natural}})\sin\theta)$ | the closed form |
 | $\ker\exp=\{0\}\cup\bigcup_{k\ge1}\{\vec v:\langle\vec v\rangle_{\natural}=(2\pi k)^2\}$ | the kernel, not a subgroup |
@@ -608,10 +608,10 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 | $\exp(4q_t)(\sin\theta/\theta)^2$ | the Jacobian determinant |
 | $\tilde u_{\mathrm r}=\exp(\vec v)$ | the rotor part, the unit factor, of norm one |
 | $\tilde q_{\log}=q_{\log}e_t+\vec q_{\log}$ | the exponent, principal when $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$ |
-| $q_{\log}=\ln r$, $\vec q_{\log}=\vec v=\theta\vec n$ | the scalar and vector coordinates of the exponent |
-| $\log\tilde q=\ln r+\theta\vec n$ | the principal logarithm, on $\mathbb{H}\setminus(-\infty,0]$ |
+| $q_{\log}=\ln \varrho$, $\vec q_{\log}=\vec v=\theta\vec n$ | the scalar and vector coordinates of the exponent |
+| $\log\tilde q=\ln \varrho+\theta\vec n$ | the principal logarithm, on $\mathbb{H}\setminus(-\infty,0]$ |
 | $N=\operatorname{Mat}(\vec n)$ | the anti-Hermitian matrix of the unit axis |
-| $M_{\tilde q}=\exp(\ln r\,I+\theta N)$ | the matrix exponential |
+| $M_{\tilde q}=\exp(\ln \varrho\,I+\theta N)$ | the matrix exponential |
 | $\mathbb{H}\setminus(-\infty,0]$ | the image of the principal coordinates |
 
 ## Further Reading

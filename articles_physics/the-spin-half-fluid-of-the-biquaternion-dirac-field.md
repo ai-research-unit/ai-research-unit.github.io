@@ -28,12 +28,12 @@ $$
 \qquad
 \rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}},
 \qquad
-r=\lvert\rho\rvert>0,
+\varrho=\lvert\rho\rvert>0,
 \qquad
 \tilde U=\frac{\tilde\Xi}{\rho},
 $$
 
-with $r$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$. **The polar article writes that density as $\rho$ and its root as $r$, so the two letters are interchanged between the two articles**: this article's $\rho$ is the polar article's $r$, and this article's $\rho_{\mathrm{num}}$ is the polar article's $\rho$. The reason for the interchange is that the density of this category is never a bare letter, while the complete polar decomposition's scale is one, and the two cannot both take $\rho$. Every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.
+with $\varrho$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}$. **The polar article writes that density as $\rho$ and its root as $\varrho$, so the two letters are interchanged between the two articles**: this article's $\rho$ is the polar article's $\varrho$, and this article's $\rho_{\mathrm{num}}$ is the polar article's $\rho$. The reason for the interchange is that the density of this category is never a bare letter, while the complete polar decomposition's scale is one, and the two cannot both take $\rho$. Every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.
 
 ## The Polar Data of the Fluid
 
@@ -287,7 +287,7 @@ The accounting explains why the spin-half fluid needs one more equation than the
 9. **The vorticity proper is rank two for every solution.** The projected part annihilates the velocity and is a two-form on three dimensions; only the raw derivative reaches higher, through the acceleration.
 10. **The vorticity has no dynamics of its own.** The frame's logarithmic derivative is flat by construction, so there is no vorticity equation, no Helmholtz transport and no conserved helicity: the vorticity is read off the frame and never transported.
 11. **A loop integral of the flow is a Lorentz holonomy and not a number.** The quantised circulation $h/m$ sits inside it as the central factor, so the scalar's circulation is the abelian shadow of a non-abelian holonomy.
-12. **The degenerate set is the nodal set**, $r=0$, of codimension two, and the frozen-frame sector is the dust the whole structure collapses to when the frame stops varying.
+12. **The degenerate set is the nodal set**, $\varrho=0$, of codimension two, and the frozen-frame sector is the dust the whole structure collapses to when the frame stops varying.
 
 ## The Three Fluids
 
@@ -295,19 +295,19 @@ The accounting explains why the spin-half fluid needs one more equation than the
 
 | | Klein–Gordon | Proca | Dirac |
 | --- | --- | --- | --- |
-| word | $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | $\varepsilon\,i\,r\,\tilde U_{\Psi,\mathrm b}$ | $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ |
+| word | $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | $\varepsilon\,i\,\varrho\,\tilde U_{\Psi,\mathrm b}$ | $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ |
 | parameters | $2$ | $4$ | $8$ |
 | real equations | $2$ | $4$ | $8$ |
-| density | $\rho_{\mathrm{num}}=r^{2}$, a bilinear | $r=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
-| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/r$, the field's direction | $ic\tilde U^{-2}$, the frame |
+| density | $\rho_{\mathrm{num}}=\varrho^{2}$, a bilinear | $\varrho=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
+| velocity | $\partial_\mu S/m$, a gradient | $A_\mu/\varrho$, the field's direction | $ic\tilde U^{-2}$, the frame |
 | continuity | the imaginary part of the wave equation | the Lorenz condition | the conservation of $\tilde J$, a separate statement |
-| force | $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, a gradient | $-\nabla\ln r-E_\mu/r$ | the divergence of the stress, antisymmetric part included |
-| vorticity | zero identically | $r\,\omega=F-\mathrm{d}r\wedge u$ | the antisymmetrised frame gradient |
+| force | $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, a gradient | $-\nabla\ln \varrho-E_\mu/\varrho$ | the divergence of the stress, antisymmetric part included |
+| vorticity | zero identically | $\varrho\,\omega=F-\mathrm{d}\varrho\wedge u$ | the antisymmetrised frame gradient |
 | spin in the word | none | none | the rotor |
-| equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}r^{2}$ | none; the spin's transport closes the system |
+| equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}\varrho^{2}$ | none; the spin's transport closes the system |
 | reverse condition | barotropic, irrotational and inviscid | none; closure is $J_\mu=m^{2}A_\mu$ | the Frenkel condition, or a free constitutive law |
 | classical medium | a Korteweg fluid | a London plasma | a Cosserat medium |
-| degenerate set | $r=0$, codimension two | the lightlike set, codimension one | $r=0$, codimension two |
+| degenerate set | $\varrho=0$, codimension two | the lightlike set, codimension one | $\varrho=0$, codimension two |
 
 **This article's column is the third, and it is the only column whose word carries an orientation.** Four rows of the table follow from that alone: the vorticity is the frame's gradient rather than a gradient's vanishing, the force is the divergence of a stress with an antisymmetric part, the equation of state is replaced by the spin's transport as the closing equation, and the classical medium is a Cosserat medium rather than a Korteweg fluid or a charged fluid. **The Dirac field is the only one of the three whose fluid has an internal degree of freedom, and the cost is that its fluid data do not determine its stress.**
 
@@ -373,10 +373,10 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
 | $\tilde\Xi=\rho\tilde U$ | The Dirac field as scale times frame element |
-| $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$ | The scale; the polar article calls it $r$ |
-| $r=\lvert\rho\rvert$ | Its modulus |
+| $\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$ | The scale; the polar article calls it $\varrho$ |
+| $\varrho=\lvert\rho\rvert$ | Its modulus |
 | $\tilde U$ | The frame element, a unit element of $\mathbb{B}$ |
-| $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=r^{2}$ | Proper density |
+| $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}$ | Proper density |
 | $\theta_{\mathrm{rpd}}$ | Rapidity of the boost |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor |
 | $\vec u_{\mathrm b}$ | Unit vector of the boost axis |

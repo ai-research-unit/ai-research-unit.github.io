@@ -12,10 +12,10 @@
 
 ## Conventions
 
-The free companion's: $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=r^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and
+The free companion's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ on the material sector, and
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi r}{r},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \tilde V_{\Phi}=\frac{\tilde P_{\Phi}}{m},
 \qquad
@@ -35,7 +35,7 @@ The symbol rule is the Schrödinger rung's, with the temporal slot written once:
 $$
 \tilde\Xi=a\,e^{i(\vec k_\Phi\cdot\vec r-k_t'r_t')}e_t,
 \qquad
-r=\lvert a\rvert,
+\varrho=\lvert a\rvert,
 \qquad
 \rho_{\mathrm{num}}=\lvert a\rvert^{2},
 \qquad
@@ -47,7 +47,7 @@ $$
 **The quantum potential vanishes at a mode for the same reason as at the rung below: the scale is constant.**
 
 $$
-\Box_\Phi r=0
+\Box_\Phi \varrho=0
 \qquad\Longrightarrow\qquad
 Q_{\mathrm{qnt}}=0 ,
 $$
@@ -176,11 +176,11 @@ The passage to the first-order rung removes the shell and with it the radius rea
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ | The central field, in its word |
 | $k_t'=\omega/c=E/(\hbar c)$, $\vec k_\Phi=\vec p/\hbar$ | The label of a mode |
 | $k_m=mc/\hbar$ | The mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime 2}$ | The d'Alembertian on the material sector |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ | The quantum potential; zero at a mode |
+| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\tilde V_\Phi=\tilde P_\Phi/m=\tilde\nabla_\Phi S_{\tilde\Xi}/m$ | The four-velocity |
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}-2Q_{\mathrm{qnt}}/m$ | Its norm; $-c^{2}$ at a mode |
 | $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\gamma=E/(mc^{2})$ | The conserved density |

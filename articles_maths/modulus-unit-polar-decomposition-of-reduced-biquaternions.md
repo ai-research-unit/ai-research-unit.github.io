@@ -6,11 +6,11 @@ This article treats the **modulus–unit polar decomposition** of a reduced biqu
 
 $$
 \boxed{\;
-\breve Q=\breve r\,u,\qquad \breve r\in P,\qquad u\in T^2
+\breve Q=\breve \varrho\,u,\qquad \breve \varrho\in P,\qquad u\in T^2
 \;},
 $$
 
-with $\breve r$ the **modulus** and $u$ the **unit factor**. The modulus is not a real number: it is an element of the **positive cone**
+with $\breve \varrho$ the **modulus** and $u$ the **unit factor**. The modulus is not a real number: it is an element of the **positive cone**
 
 $$
 P=\{\,x+jy:x>|y|\,\}
@@ -27,10 +27,10 @@ the two-dimensional group of elements whose two circular components have modulus
 The decomposition is the polar decomposition of the algebra for the coefficient conjugation. The **bar** fixes $1$ and $j$ and conjugates the complex coefficients, and the modulus is the unique positive square root
 
 $$
-\breve r=\sqrt{\breve Q\bar{\breve Q}}
+\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}
 $$
 
-taken in the cone $P$, the unit factor being $u=\breve r^{-1}\breve Q$, which satisfies $u\bar u=1$. In the complex algebra the same formulas read $r=\sqrt{Q\bar Q}$ and $u=Q/r$; the difference is that the positive square root now lives in a two-dimensional cone, not in a ray, and that the unit factor runs on a two-torus, not on a circle.
+taken in the cone $P$, the unit factor being $u=\breve \varrho^{-1}\breve Q$, which satisfies $u\bar u=1$. In the complex algebra the same formulas read $\varrho=\sqrt{Q\bar Q}$ and $u=Q/\varrho$; the difference is that the positive square root now lives in a two-dimensional cone, not in a ray, and that the unit factor runs on a two-torus, not on a circle.
 
 In the coordinates $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two circular components are the two complex numbers $Q_{+}$ and $Q_{-}$. The modulus–unit decomposition is therefore a pair of complex modulus–unit decompositions, written in the algebra. This is the source of every difference from the complex case: the modulus is doubled, the phase is doubled, the unit factor is a torus, and the failure set is the union of two real two-planes rather than the origin alone.
 
@@ -84,22 +84,22 @@ $$
 P=\{\,x+jy:x>|y|\,\}.
 $$
 
-The **modulus** is the unique element $\breve r\in P$ with
+The **modulus** is the unique element $\breve \varrho\in P$ with
 
 $$
-\breve r^2=\breve Q\bar{\breve Q}.
+\breve \varrho^2=\breve Q\bar{\breve Q}.
 $$
 
-It is the positive square root of $\breve Q\bar{\breve Q}$ in the cone, the exact analogue of $r=\sqrt{Q\bar Q}$ in $\mathbb{C}$ with the positive ray replaced by the cone $P$. Explicitly, with $q$ and $q'$ as above,
+It is the positive square root of $\breve Q\bar{\breve Q}$ in the cone, the exact analogue of $\varrho=\sqrt{Q\bar Q}$ in $\mathbb{C}$ with the positive ray replaced by the cone $P$. Explicitly, with $q$ and $q'$ as above,
 
 $$
-\breve r=\sqrt{\frac{q+\sqrt{q^2-q'^2}}{2}}
+\breve \varrho=\sqrt{\frac{q+\sqrt{q^2-q'^2}}{2}}
 +j\,\operatorname{sgn}q'\sqrt{\frac{q-\sqrt{q^2-q'^2}}{2}},
 $$
 
-and the sign convention is immaterial when $q'=0$. The two coordinates of $\breve r$ are real, so $\bar{\breve r}=\breve r$.
+and the sign convention is immaterial when $q'=0$. The two coordinates of $\breve \varrho$ are real, so $\bar{\breve \varrho}=\breve \varrho$.
 
-**Proposition (the two scales).** Write $\breve r=x+jy$ with $x,y\in\mathbb{R}$, and put
+**Proposition (the two scales).** Write $\breve \varrho=x+jy$ with $x,y\in\mathbb{R}$, and put
 
 $$
 \rho_+=x+y>0,\qquad \rho_-=x-y>0.
@@ -114,13 +114,13 @@ $$
 Conversely,
 
 $$
-\breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2}
+\breve \varrho=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2}
 =\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
 \qquad
 \rho=\sqrt{\rho_+\rho_-},\qquad \theta_{\mathrm{rpd}}=\operatorname{artanh}\frac{\rho_+-\rho_-}{\rho_++\rho_-}.
 $$
 
-*Proof.* Since $\breve r^2=q+jq'$ and $\breve r^2=(x^2+y^2)+2xyj$, one has $x^2+y^2=q$ and $2xy=q'$. Hence
+*Proof.* Since $\breve \varrho^2=q+jq'$ and $\breve \varrho^2=(x^2+y^2)+2xyj$, one has $x^2+y^2=q$ and $2xy=q'$. Hence
 
 $$
 (x+y)^2=x^2+y^2+2xy=q+q'=|Q_{+}|^2,
@@ -135,14 +135,14 @@ The modulus therefore carries two positive scales, $\rho_+$ and $\rho_-$. The re
 The **unit factor** is
 
 $$
-u=\breve r^{-1}\breve Q.
+u=\breve \varrho^{-1}\breve Q.
 $$
 
-Since $\bar{\breve r}=\breve r$ and $\breve r^2=\breve Q\bar{\breve Q}$,
+Since $\bar{\breve \varrho}=\breve \varrho$ and $\breve \varrho^2=\breve Q\bar{\breve Q}$,
 
 $$
-u\bar u=\breve r^{-1}\bar{\breve r}^{-1}\breve Q\bar{\breve Q}
-=\breve r^{-2}\breve r^2=1.
+u\bar u=\breve \varrho^{-1}\bar{\breve \varrho}^{-1}\breve Q\bar{\breve Q}
+=\breve \varrho^{-2}\breve \varrho^2=1.
 $$
 
 The set of such elements is the **unit torus**
@@ -199,13 +199,13 @@ The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the 
 
 ## Existence and Uniqueness
 
-**Theorem.** Every unit $\breve Q$ has exactly one modulus–unit polar decomposition $\breve Q=\breve r u$ with $\breve r\in P$ and $u\in T^2$.
+**Theorem.** Every unit $\breve Q$ has exactly one modulus–unit polar decomposition $\breve Q=\breve \varrho u$ with $\breve \varrho\in P$ and $u\in T^2$.
 
-**Existence.** Put $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve r^{-1}\breve Q$. The element $\breve r$ is defined because $\breve Q\bar{\breve Q}\in P$ for an invertible element, and $u\bar u=1$ by the computation of §*The Unit Factor and the Torus*. Hence $\breve Q=\breve r u$ with the two factors in the required sets.
+**Existence.** Put $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ in $P$ and $u=\breve \varrho^{-1}\breve Q$. The element $\breve \varrho$ is defined because $\breve Q\bar{\breve Q}\in P$ for an invertible element, and $u\bar u=1$ by the computation of §*The Unit Factor and the Torus*. Hence $\breve Q=\breve \varrho u$ with the two factors in the required sets.
 
-**Uniqueness.** Suppose $\breve r u=\breve r'u'$ with $\breve r,\breve r'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve r^2=\breve r'^2$, because $\bar{\breve r}=\breve r$, $\bar{\breve r}'=\breve r'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'^2+y'^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'^2-y'^2$ both equal $\sqrt{q^2-q'^2}$, so $x^2=x'^2$, $x=x'>0$, and then $y=y'$. Hence $\breve r=\breve r'$, and $u=\breve r^{-1}\breve Q=u'$.
+**Uniqueness.** Suppose $\breve \varrho u=\breve r'u'$ with $\breve \varrho,\breve r'\in P$ and $u\bar u=u'\bar u'=1$. Multiplying by the bar gives $\breve \varrho^2=\breve r'^2$, because $\bar{\breve \varrho}=\breve \varrho$, $\bar{\breve \varrho}'=\breve r'$ and $u\bar u=u'\bar u'=1$. Two elements of $P$ with the same square are equal: if $x+jy\in P$ and $x'+jy'\in P$ have square $q+jq'$, then $x^2+y^2=x'^2+y'^2=q$ and $xy=x'y'=q'/2$; the positive numbers $x^2-y^2$ and $x'^2-y'^2$ both equal $\sqrt{q^2-q'^2}$, so $x^2=x'^2$, $x=x'>0$, and then $y=y'$. Hence $\breve \varrho=\breve r'$, and $u=\breve \varrho^{-1}\breve Q=u'$.
 
-The pair $(\breve r,u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.
+The pair $(\breve \varrho,u)$ is unique. This is a statement about the factorisation, not about a coordinate on the torus: two different charts of $T^2$ assign different parameters to the same unit factor.
 
 **Corollary (the failure set).** The decomposition exists exactly on the invertibles. It fails exactly on the zero divisors
 
@@ -217,7 +217,7 @@ $$
 
 the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each of real dimension two. The failure set has real codimension two, as the origin does in $\mathbb{C}$.
 
-*Proof.* The construction uses $\breve r\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.
+*Proof.* The construction uses $\breve \varrho\in P$, which requires $q^2-q'^2>0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0$. The vanishing of $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is the vanishing of $Q_{+}Q_{-}$, the two lines named.
 
 ## The Group of Invertibles and the Torus
 
@@ -226,13 +226,13 @@ the union of the two complex lines $\mathbb{C}(1+j)$ and $\mathbb{C}(1-j)$, each
 The map
 
 $$
-\Phi:{\mathbb{B}_{\mathrm{red}}}^{\times}\longrightarrow P\times T^2,\qquad \Phi(\breve Q)=\bigl(\breve r,u\bigr),
+\Phi:{\mathbb{B}_{\mathrm{red}}}^{\times}\longrightarrow P\times T^2,\qquad \Phi(\breve Q)=\bigl(\breve \varrho,u\bigr),
 $$
 
-is a group isomorphism. It is bijective by the theorem of §*Existence and Uniqueness*, with inverse $(\breve r,u)\mapsto\breve r u$, and it is a homomorphism because the modulus of a product is the product of the moduli and the unit factor of a product is the product of the unit factors:
+is a group isomorphism. It is bijective by the theorem of §*Existence and Uniqueness*, with inverse $(\breve \varrho,u)\mapsto\breve \varrho u$, and it is a homomorphism because the modulus of a product is the product of the moduli and the unit factor of a product is the product of the unit factors:
 
 $$
-\breve r(\breve Q_1\breve Q_2)=\breve r(\breve Q_1)\breve r(\breve Q_2),\qquad
+\breve \varrho(\breve Q_1\breve Q_2)=\breve \varrho(\breve Q_1)\breve \varrho(\breve Q_2),\qquad
 u(\breve Q_1\breve Q_2)=u(\breve Q_1)u(\breve Q_2).
 $$
 
@@ -252,7 +252,7 @@ $$
 
 **Theorem.** The torus $T^2$ is the maximal compact subgroup of ${\mathbb{B}_{\mathrm{red}}}^{\times}$.
 
-*Proof.* Let $K\subset{\mathbb{B}_{\mathrm{red}}}^{\times}$ be a compact subgroup. The modulus map $\breve Q\mapsto\breve r$ is a continuous homomorphism onto $P$, so its image is a compact subgroup of $P$. A compact subgroup of $P$ is trivial: in the coordinates $(\rho,\theta_{\mathrm{rpd}})$ of $P\cong\mathbb{R}_{>0}\times\mathbb{R}$, a nontrivial element has $\theta_{\mathrm{rpd}}\neq0$ or $\rho\neq1$; its powers have $|n\theta_{\mathrm{rpd}}|\to\infty$ or $\rho^n\to0$ or $\infty$, and no such sequence stays in a compact set. Hence every element of $K$ has modulus $1$, that is $K\subset T^2$. The torus is compact, so it is maximal.
+*Proof.* Let $K\subset{\mathbb{B}_{\mathrm{red}}}^{\times}$ be a compact subgroup. The modulus map $\breve Q\mapsto\breve \varrho$ is a continuous homomorphism onto $P$, so its image is a compact subgroup of $P$. A compact subgroup of $P$ is trivial: in the coordinates $(\rho,\theta_{\mathrm{rpd}})$ of $P\cong\mathbb{R}_{>0}\times\mathbb{R}$, a nontrivial element has $\theta_{\mathrm{rpd}}\neq0$ or $\rho\neq1$; its powers have $|n\theta_{\mathrm{rpd}}|\to\infty$ or $\rho^n\to0$ or $\infty$, and no such sequence stays in a compact set. Hence every element of $K$ has modulus $1$, that is $K\subset T^2$. The torus is compact, so it is maximal.
 
 The compact factor is two-dimensional, not one-dimensional as in $\mathbb{C}$ and not zero-dimensional as in the split-complex algebra. The rank of the compact group is two.
 
@@ -262,10 +262,10 @@ The map
 
 $$
 H:[0,1]\times{\mathbb{B}_{\mathrm{red}}}^{\times}\longrightarrow{\mathbb{B}_{\mathrm{red}}}^{\times},
-\qquad H(t,\breve Q)=\bigl((1-t)\breve r+t\bigr)u
+\qquad H(t,\breve Q)=\bigl((1-t)\breve \varrho+t\bigr)u
 $$
 
-is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in $T^2$ at $t=1$. The element $(1-t)\breve r+t$ lies in $P$ for every $t$, because $P$ is convex: its coordinates are $(1-t)x+t$ and $(1-t)y$, and $|(1-t)y|<(1-t)x+t$. The group of invertibles therefore deformation retracts onto the torus. Since the group is already a product $P\times T^2$, the retraction is the projection onto the second factor followed by a linear contraction of the first.
+is continuous, fixes $T^2$ at every $t$, is the identity at $t=0$, and lands in $T^2$ at $t=1$. The element $(1-t)\breve \varrho+t$ lies in $P$ for every $t$, because $P$ is convex: its coordinates are $(1-t)x+t$ and $(1-t)y$, and $|(1-t)y|<(1-t)x+t$. The group of invertibles therefore deformation retracts onto the torus. Since the group is already a product $P\times T^2$, the retraction is the projection onto the second factor followed by a linear contraction of the first.
 
 ### The Two Circles
 
@@ -331,10 +331,10 @@ and the phases add.
 **Corollary (powers and roots).** For a positive integer $n$,
 
 $$
-\breve Q^n=\breve r^n u^n,
+\breve Q^n=\breve \varrho^n u^n,
 $$
 
-and the $n$-th roots of an invertible element have modulus $\breve r^{1/n}$ and $n^2$ choices of the unit factor. In particular a generic unit has four square roots.
+and the $n$-th roots of an invertible element have modulus $\breve \varrho^{1/n}$ and $n^2$ choices of the unit factor. In particular a generic unit has four square roots.
 
 *Proof.* The power is the repeated product. On the torus, an $n$-th root is a pair $(u_{+},u_{-})$ whose $n$-th powers are the two prescribed circular components of the target unit factor; each of the two complex equations has $n$ roots, and the choices are independent, giving $n^2$.
 
@@ -417,14 +417,14 @@ acting on $(z,w)\in\mathbb{C}^2$ by $z+jw\mapsto(Q_{\blacktriangle}z+Q_{\blacktr
 The modulus has the matrix
 
 $$
-M_{\breve r}=
+M_{\breve \varrho}=
 \begin{pmatrix}
 x&0&y&0\\
 0&x&0&y\\
 y&0&x&0\\
 0&y&0&x
 \end{pmatrix},
-\qquad \breve r=x+jy,
+\qquad \breve \varrho=x+jy,
 $$
 
 symmetric with eigenvalues $x+y=\rho_+$ and $x-y=\rho_-$, each repeated twice; it is positive definite because both are positive.
@@ -446,10 +446,10 @@ Hence $M_u$ lies in the special orthogonal group $SO(4)$. The map $u\mapsto M_u$
 The decomposition of matrices is therefore
 
 $$
-M_{\breve Q}=M_{\breve r}M_u,
+M_{\breve Q}=M_{\breve \varrho}M_u,
 $$
 
-with $M_{\breve r}$ symmetric positive definite and $M_u\in SO(4)$.
+with $M_{\breve \varrho}$ symmetric positive definite and $M_u\in SO(4)$.
 
 ### The Matrix Polar Decomposition
 
@@ -457,13 +457,13 @@ with $M_{\breve r}$ symmetric positive definite and $M_u\in SO(4)$.
 
 $$
 \boxed{\;
-M_{\breve Q}=P U,\qquad P=M_{\breve r}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u
+M_{\breve Q}=P U,\qquad P=M_{\breve \varrho}=(M_{\breve Q}M_{\breve Q}^{\mathsf T})^{1/2},\quad U=M_u
 \;},
 $$
 
 with $P$ symmetric positive definite and $U$ orthogonal. The factors are unique.
 
-*Proof.* The identity $M_{\overline{\breve Q}}=M_{\breve Q}^{\mathsf T}$ gives $M_{\breve Q}M_{\breve Q}^{\mathsf T}=M_{\breve Q\overline{\breve Q}}=M_{\breve r^2}=M_{\breve r}^2$. The matrix $M_{\breve r}$ is symmetric with positive eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$, so it is the positive square root. The matrix $M_u=M_{\breve r}^{-1}M_{\breve Q}$ is orthogonal, because $M_uM_u^{\mathsf T}=M_{\breve r}^{-1}M_{\breve Q}M_{\breve Q}^{\mathsf T}M_{\breve r}^{-1}=I$. Uniqueness is the uniqueness of the positive square root and of the polar decomposition of an invertible matrix.
+*Proof.* The identity $M_{\overline{\breve Q}}=M_{\breve Q}^{\mathsf T}$ gives $M_{\breve Q}M_{\breve Q}^{\mathsf T}=M_{\breve Q\overline{\breve Q}}=M_{\breve \varrho^2}=M_{\breve \varrho}^2$. The matrix $M_{\breve \varrho}$ is symmetric with positive eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$, so it is the positive square root. The matrix $M_u=M_{\breve \varrho}^{-1}M_{\breve Q}$ is orthogonal, because $M_uM_u^{\mathsf T}=M_{\breve \varrho}^{-1}M_{\breve Q}M_{\breve Q}^{\mathsf T}M_{\breve \varrho}^{-1}=I$. Uniqueness is the uniqueness of the positive square root and of the polar decomposition of an invertible matrix.
 
 The general polar decomposition of an invertible real $4\times4$ matrix $X$ is $X=M_+U$ with $M_+=(XX^{\mathsf T})^{1/2}$ and $U=M_+^{-1}X$. For $X=M_{\breve Q}$ the two factors collapse to the form above, because $M_{\breve Q}$ is the sum of two conformal blocks. The singular values of $M_{\breve Q}$ are $\rho_+,\rho_+,\rho_-,\rho_-$: each scale is repeated twice. The matrix is conformal exactly when $\rho_+=\rho_-$; otherwise it has two distinct singular values, and it is only block-conformal.
 
@@ -501,7 +501,7 @@ of modulus $\sqrt{49+676}=\sqrt{725}=\rho_+\rho_-$.
 The modulus is
 
 $$
-\breve r=\sqrt{\frac{q+\sqrt{725}}{2}}+j\,\operatorname{sgn}(q')\sqrt{\frac{q-\sqrt{725}}{2}}
+\breve \varrho=\sqrt{\frac{q+\sqrt{725}}{2}}+j\,\operatorname{sgn}(q')\sqrt{\frac{q-\sqrt{725}}{2}}
 =5.192582403567252-0.192582403567252\,j,
 $$
 
@@ -523,7 +523,7 @@ $$
 The modulus is
 
 $$
-\breve r=\frac{e^{\theta_{\mathrm{rpd}}}+e^{-\theta_{\mathrm{rpd}}}}{2}+j\,\frac{e^{\theta_{\mathrm{rpd}}}-e^{-\theta_{\mathrm{rpd}}}}{2}=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}=\breve Q,
+\breve \varrho=\frac{e^{\theta_{\mathrm{rpd}}}+e^{-\theta_{\mathrm{rpd}}}}{2}+j\,\frac{e^{\theta_{\mathrm{rpd}}}-e^{-\theta_{\mathrm{rpd}}}}{2}=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}=\breve Q,
 $$
 
 and the unit factor is $1$. The relative scale is
@@ -566,7 +566,7 @@ The row $1+i$ is the diagonal case: the two circular components are equal, so th
 For the generic element, the reconstruction from the displayed data gives
 
 $$
-\breve r u-(3+4i+j(1-i))
+\breve \varrho u-(3+4i+j(1-i))
 $$
 
 of Euclidean norm $1.7\times10^{-15}$ in double precision: the displayed scales round-trip to $4+3i$ and $2+5i$ up to the last bit. The reconstruction is exact in exact arithmetic, because it is the complex reconstruction in the two circular components.
@@ -590,10 +590,10 @@ The reduced biquaternion column is the only one in which the modulus is two-dime
 Every unit $\breve Q$ has exactly one modulus–unit polar decomposition
 
 $$
-\breve Q=\breve r u,\qquad \breve r=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2},\qquad u\bar u=1,
+\breve Q=\breve \varrho u,\qquad \breve \varrho=\frac{\rho_++\rho_-}{2}+j\,\frac{\rho_+-\rho_-}{2},\qquad u\bar u=1,
 $$
 
-with $\rho_+=|Q_{+}|>0$ and $\rho_-=|Q_{-}|>0$. The modulus is the positive square root $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ in the cone $P=\{x+jy:x>|y|\}$, and the unit factor is $u=\breve r^{-1}\breve Q$ on the torus $T^2=\{u:u\bar u=1\}$. The pair is unique. The decomposition exists exactly on the invertibles and fails exactly on the zero divisors, the union of the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, of real codimension two.
+with $\rho_+=|Q_{+}|>0$ and $\rho_-=|Q_{-}|>0$. The modulus is the positive square root $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ in the cone $P=\{x+jy:x>|y|\}$, and the unit factor is $u=\breve \varrho^{-1}\breve Q$ on the torus $T^2=\{u:u\bar u=1\}$. The pair is unique. The decomposition exists exactly on the invertibles and fails exactly on the zero divisors, the union of the two complex lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, of real codimension two.
 
 The group of invertibles splits as
 
@@ -608,10 +608,10 @@ The modulus is two-dimensional because the reduced norm is complex: it fixes onl
 In the matrix picture the decomposition is the polar decomposition
 
 $$
-M_{\breve Q}=M_{\breve r}M_u,
+M_{\breve Q}=M_{\breve \varrho}M_u,
 $$
 
-with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$ and orthogonal $M_u\in SO(4)$. The singular values are $\rho_+,\rho_+,\rho_-,\rho_-$, and the matrix is conformal exactly when the two scales are equal.
+with positive definite $M_{\breve \varrho}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rho_-$ and orthogonal $M_u\in SO(4)$. The singular values are $\rho_+,\rho_+,\rho_-,\rho_-$, and the matrix is conformal exactly when the two scales are equal.
 
 ## Summary of Notation
 
@@ -624,10 +624,10 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ | the reduced norm |
 | $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^2+\lvert Q_{\blacktriangledown}\rvert^2$ | the squared Euclidean norm |
 | $P=\{x+jy:x>\lvert y\rvert\}$ | the positive cone of the modulus |
-| $\breve r=\sqrt{\breve Q\bar{\breve Q}}$ | the modulus, an element of $P$ |
+| $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ | the modulus, an element of $P$ |
 | $\rho_+=\lvert Q_{+}\rvert$, $\rho_-=\lvert Q_{-}\rvert$ | the two scales |
-| $\breve r=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ | the modulus in radius and boost |
-| $u=\breve r^{-1}\breve Q$ | the unit factor |
+| $\breve \varrho=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$ | the modulus in radius and boost |
+| $u=\breve \varrho^{-1}\breve Q$ | the unit factor |
 | $T^2=\{u:u\bar u=1\}$ | the unit torus |
 | ${\mathbb{B}_{\mathrm{red}}}^{\times}\cong P\times T^2$ | the polar splitting of the group of invertibles |
 | $\mathbb{R}\{1,j\}$, $\mathbb{R}\{i,ij\}$ | the fixed and anti-fixed planes of the bar |

@@ -4,7 +4,7 @@
 
 *The Path Integral and the Dirac Equation in Biquaternionic Form* constructs the integral: a sum over worldlines, each carrying the phase $e^{iS/\hbar}$ and an algebra-valued spin factor, whose result is the propagator of the chiral pair. This article writes the same integral in the complete polar decomposition.
 
-The word is the parametrisation $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ of *The Complete Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Dirac Equation in Biquaternionic Polar Variables*. It is a bijection from eight real parameters onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral. It is the companion's integral read in other coordinates, as *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables* is the element action read in other coordinates.
+The word is the parametrisation $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ of *The Complete Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Dirac Equation in Biquaternionic Polar Variables*. It is a bijection from eight real parameters onto the $N$-regular elements, so substituting it adds nothing and drops nothing. This article therefore claims no new integral. It is the companion's integral read in other coordinates, as *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables* is the element action read in other coordinates.
 
 Two objects are read: the weight of one path, and the kernel that the sum of the weights produces. The weight is central. The kernel is not. The whole difference between this reading and the reading of the Schrödinger path integral lies in that one fact, and the article returns to it at every section.
 
@@ -20,7 +20,7 @@ What the article does not do it says at once. It does not build a second integra
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both variational articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $r>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho=r^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both variational articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
 
 The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}$ with $k_m=mc/\hbar$, and its Green kernel in momentum space has the two components
 
@@ -50,9 +50,9 @@ a central phase times the unit. It is central because both factors are, and it i
 
 $$
 e^{i\theta_{\mathrm{act}}}e_t
-=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-r=1,\quad \tilde U_{\Psi,\mathrm b}=e_t,\quad \tilde u_{\mathrm r}=(-1)^{n}e_t .
+\varrho=1,\quad \tilde U_{\Psi,\mathrm b}=e_t,\quad \tilde u_{\mathrm r}=(-1)^{n}e_t .
 $$
 
 *Proof.* The quaternionic norm of a central phase is $N=e^{2i\theta_{\mathrm{act}}}$, and its principal root is $e^{i\theta_{\mathrm{pha}}}$; the scale is the modulus of that root, which is one. The star square is $ww^{*}=e_t$, so the boost's square is $e_t$ and the boost is $e_t$. The element $(-1)^{n}$ is a rotor with $\theta_{\mathrm{axr}}=2\pi$ or $0$, and the product reconstructs the element.
@@ -67,7 +67,7 @@ The word has eight parameters, and the weight of a path carries one of them.
 
 | parameter | in the weight $e^{iS/\hbar}e_t$ | in the spin factor $\mathcal{F}[x]$ | in the pre-factor |
 | --- | --- | --- | --- |
-| scale $r$ | $1$, on every path | the factor's own scale | $A_{\mathrm{wkb}}$, the fluctuation determinant |
+| scale $\varrho$ | $1$, on every path | the factor's own scale | $A_{\mathrm{wkb}}$, the fluctuation determinant |
 | angle $\theta_{\mathrm{pha}}$ | $S/\hbar$ reduced modulo $\pi$ | the factor's own angle | the Maslov constant |
 | rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | $0$, and no axis | absent | the classical frame |
 | rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | $0$ or $2\pi$, and no axis | the factor's own rotor | the transport rotor |
@@ -92,7 +92,7 @@ and it is indefinite: positive far above the mass shell, negative just below it.
 
 | factor | value for $\mathcal S_L$ | what fixes it |
 | --- | --- | --- |
-| scale $r$ | $\bigl||\vec k|^{2}-(k'_{t}-k_m)^{2}\bigr|^{1/2}\big/\bigl|k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
+| scale $\varrho$ | $\bigl||\vec k|^{2}-(k'_{t}-k_m)^{2}\bigr|^{1/2}\big/\bigl|k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}\bigr|$ | the numerator's norm and the denominator |
 | angle $\theta_{\mathrm{pha}}$ | $0$ or $\pi/2$ | the sign of the numerator's norm times the sign of the denominator |
 | rapidity $\theta_{\mathrm{rpd}}$ and axis $\vec u_{\mathrm b}$ | the frame's rapidity, the axis reversed | the momentum's boost |
 | rotor angle $\theta_{\mathrm{axr}}$ and axis $\vec u_{\mathrm r}$ | non-trivial in $100$ of $100$ samples | the mass reversal composed with the frame |
@@ -270,7 +270,7 @@ A composition law is a statement about a product, and the polar word is a readin
 
 ## Summary
 
-A path in the Dirac integral has weight $e^{iS/\hbar}e_t$, whose word is $r=1$, $\theta_{\mathrm{pha}}=S/\hbar$ reduced into $(-\pi/2,\pi/2]$, trivial boost, and rotor $\pm e_t$. Every path has scale one, so the amplitude of the kernel comes from the measure and the spin from the spin factor.
+A path in the Dirac integral has weight $e^{iS/\hbar}e_t$, whose word is $\varrho=1$, $\theta_{\mathrm{pha}}=S/\hbar$ reduced into $(-\pi/2,\pi/2]$, trivial boost, and rotor $\pm e_t$. Every path has scale one, so the amplitude of the kernel comes from the measure and the spin from the spin factor.
 
 The kernel's word carries all four factors. Its scale is the van Vleck determinant; its angle is the action over $\hbar$ plus the Maslov constant in position space, and one of the two labels $0$ or $\pi/2$ in momentum space; its boost is the classical frame with the axis reversed; its rotor is the spin transport composed with the fixed mass reversal. The on-shell numerator factors as $2k_m\sinh(\theta_{\mathrm{rpd}}/2)\tilde U_{\Psi,\mathrm b}^{-1}\vec u_{\mathrm b}$, vanishes at rest, and has norm $4k_m^{2}\sinh^{2}(\theta_{\mathrm{rpd}}/2)$.
 
@@ -283,12 +283,12 @@ None of this is a new integral. It is the companion's integral read in the coord
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}$ | Biquaternion algebra; $e_t$ its unit; $i$ central |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ | The polar word |
-| $r>0$, $\rho=r^{2}$ | Scale and density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ | The polar word |
+| $\varrho>0$, $\rho=\varrho^{2}$ | Scale and density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The word's angle |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor $\tilde u_{\mathrm r}$ |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Principal root of the quaternionic norm |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Principal root of the quaternionic norm |
 | $N(\tilde X)=\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm; the word exists exactly when $N\neq0$ |
 | $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ | Frame factor; a four-vector carries $\mathcal B_{\Psi}$ |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |

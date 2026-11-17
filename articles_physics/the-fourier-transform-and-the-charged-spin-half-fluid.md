@@ -22,7 +22,7 @@ $$
 k_m=\frac{mc}{\hbar}.
 $$
 
-The word is $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=r^{2}$. The symbol rule is the spin-half fluid Fourier companion's.
+The word is $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, $\theta_{\mathrm{rpd}}$ the rapidity, $\theta_{\mathrm{axr}}$ the rotor's angle, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ the spin direction, and $\rho_{\mathrm{num}}=\varrho^{2}$. The symbol rule is the spin-half fluid Fourier companion's.
 
 ## The Label, and the Rotor Outside It
 
@@ -110,7 +110,7 @@ $$
 | Schrödinger | $\hbar\vec k$ | shifts it | $\vec B$ |
 | Klein–Gordon | $\hbar\tilde K_\Phi$ | shifts it | $\tilde F$ |
 | spinor | $ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ | shifts it | $\tilde F$ |
-| vector | $r\,u_\mu$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
+| vector | $\varrho\,u_\mu$ with $u$ constant | shifts it and turns the chart | the coupled field strength |
 
 **The third row is this article's, and it is the row with the least room in it.** The scalar label has four numbers and no frame; the spinor label has four numbers and is the frame; the vector label has four numbers and *is* the field. **So the spinor rung is the one rung whose label is exactly the frame**, and that is why the rotor's independence of the gauge is a counting statement there and an algebraic one elsewhere.
 

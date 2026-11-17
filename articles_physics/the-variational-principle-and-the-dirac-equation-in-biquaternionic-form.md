@@ -22,7 +22,7 @@ The answer is one action, the pair as its variation, the electric current and th
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Dirac equation in its element form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
 
 Every symbol is defined where it first appears, and §*Summary of Notation* collects them.
 
@@ -34,7 +34,7 @@ The action is
 
 $$
 \boxed{\;
-S=\frac{\hbar c}{2}\int\mathrm{d}^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{\hbar c}{2}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\,\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\,\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$
 
 Its two kinetic terms are diagonal in the parts and its mass term is off-diagonal. That arrangement is the two-component structure the equation itself has: each part carries its own derivative and the mass is what couples them.
@@ -46,8 +46,8 @@ Its two kinetic terms are diagonal in the parts and its mass term is off-diagona
 **Reality, and the reason the real part is not a truncation.** Both gradients are self-adjoint for the Hermitian pairing. The temporal term is $e_t\partial_{R_t}=-i\partial_{r'_t}$; left multiplication by an imaginary unit is antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, and $\partial_{r'_t}$ is antisymmetric under integration by parts, so the two signs cancel and the temporal term is self-adjoint. Each spatial term is a left multiplication by $\vec e_\eta$, which is antisymmetric, times the same antisymmetric derivative, and it is self-adjoint for the same reason. Hence
 
 $$
-\int\mathrm{d}^4r\;\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\nabla_\Phi\tilde\Xi\bigr]
-=\int\mathrm{d}^4r\;\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi\bigr]\ \text{up to a boundary term},
+\int\mathrm{d}^4\varrho\;\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\nabla_\Phi\tilde\Xi\bigr]
+=\int\mathrm{d}^4\varrho\;\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi\bigr]\ \text{up to a boundary term},
 $$
 
 and each side is real up to a boundary term. The $i$ inside the material time is the whole of the mechanism: it is the one factor that makes the temporal term self-adjoint without disturbing the spatial ones, so all four directions agree.
@@ -97,7 +97,7 @@ and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde
 Vary both parts, $\tilde\Xi_p\mapsto\tilde\Xi_p+\delta\tilde\Xi_p$, and take the real part. The result is
 
 $$
-\delta S=\hbar c\,\mathrm{Re}\int\mathrm{d}^4r\;\Bigl[\mathrm{Sc}\bigl(\delta\tilde\Xi_L^{*}\,r_L\bigr)+\mathrm{Sc}\bigl(\delta\tilde\Xi_R^{*}\,r_R\bigr)\Bigr],
+\delta S=\hbar c\,\mathrm{Re}\int\mathrm{d}^4\varrho\;\Bigl[\mathrm{Sc}\bigl(\delta\tilde\Xi_L^{*}\,r_L\bigr)+\mathrm{Sc}\bigl(\delta\tilde\Xi_R^{*}\,r_R\bigr)\Bigr],
 $$
 
 with the two residuals
@@ -160,7 +160,7 @@ with conservation $\sum_\mu\partial_\mu J_\mu=0$ on solutions, by the standard a
 
 **The two components have different structures and both are right.** The time component is a sum over the parts; the spatial component is a difference. The difference is not an error: the two parts carry conjugate spatial derivatives, $-\vec e_\eta\partial_\eta$ on the left and $+\vec e_\eta\partial_\eta$ on the right, and the current inherits that relative sign. In the two-component language this is the statement that one part uses $\bar\sigma$ and the other $\sigma$.
 
-**The polar reading of the same numbers.** Take the parent's polar field $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and evaluate the same two components with the two-part combinations replaced by their one-element counterparts: the sum $\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R$ by $\tilde\Xi^{*}\tilde\Xi$, and the difference $\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L$ by $\tilde\Xi^{*}\vec e_\eta\tilde\Xi$. The result is
+**The polar reading of the same numbers.** Take the parent's polar field $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and evaluate the same two components with the two-part combinations replaced by their one-element counterparts: the sum $\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R$ by $\tilde\Xi^{*}\tilde\Xi$, and the difference $\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L$ by $\tilde\Xi^{*}\vec e_\eta\tilde\Xi$. The result is
 
 $$
 J^{t}=\rho\cosh\theta_{\mathrm{rpd}}=\rho\gamma,
@@ -168,7 +168,7 @@ J^{t}=\rho\cosh\theta_{\mathrm{rpd}}=\rho\gamma,
 J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta}=\rho\gamma\,\frac{v_\eta}{c},
 $$
 
-which is the polar parent's current $\tilde J_\Phi=\rho\tilde V_\Phi$ divided by $ic$. The time component is an identity of the word: $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde U_{\Psi,\mathrm b}=\cosh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}=\cosh\theta_{\mathrm{rpd}}$, so $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=r^{2}\cosh\theta_{\mathrm{rpd}}=\rho\gamma$, and the same line gives the spatial component once the boost axis is identified with the direction of $\tilde V_\Phi$, which is the polar article's own identification.
+which is the polar parent's current $\tilde J_\Phi=\rho\tilde V_\Phi$ divided by $ic$. The time component is an identity of the word: $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde U_{\Psi,\mathrm b}=\cosh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}=\cosh\theta_{\mathrm{rpd}}$, so $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho\gamma$, and the same line gives the spatial component once the boost axis is identified with the direction of $\tilde V_\Phi$, which is the polar article's own identification.
 
 **The two readings agree in the time component and differ in the spatial one, and that is a limitation of this derivation.** The action's own Noether current is the two-part display above, and it is conserved on solutions whatever the reading. What the action does not do is decide which object of the algebra the physical current is. The two-part display and the one-element reading differ in the spatial component by the relative sign of the chiral split, and nothing in the variational derivation chooses between them. A derivation that fixed the answer would have to state what the two parts are as functionals of one field; no such statement is made here, and none is available to the author. So the current of this article is conserved and, in its spatial component, one of two objects: the action fixes its conservation and not its identification. That is weaker than a variational derivation usually delivers, and it should be read as the limit of what this action can settle.
 
@@ -229,7 +229,7 @@ The honest ledger, as in the Schrödinger companion.
 The Dirac equation of this corpus is a pair, $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$, with $k_m=mc/\hbar$. Its action is
 
 $$
-S=\frac{\hbar c}{2}\int\mathrm{d}^4r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{\hbar c}{2}\int\mathrm{d}^4\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 two diagonal kinetic terms and one off-diagonal mass. Its variation is the pair, with residuals $r_L=(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R$ and $r_R=\tilde\nabla_\Phi\tilde\Xi_R-k_m\tilde\Xi_L$ and coefficient $\hbar c$, the $\tfrac12$ of the action cancelling against the two halves of each kinetic term. Its imaginary part is a total divergence, because both gradients are self-adjoint for the pairing, so the real part carries the whole content.

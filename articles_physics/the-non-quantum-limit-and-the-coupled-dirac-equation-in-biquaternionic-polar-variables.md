@@ -30,7 +30,7 @@ with $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{
 
 **The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. Every display here uses $q$, the electric charge, $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$; the parent's $\hbar c\kappa_t=E+ϙcA_t$ is $E-q\varphi$ in these letters.
 
-**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=mc/\hbar$; $\rho=r^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde K_{\Phi,\mathrm{gco}}$ the mechanical wavevector; $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ the kinetic four-velocity; $k_m=mc/\hbar$; $\rho=\varrho^{2}$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
 ## One Addition and Two Frames
 
@@ -54,7 +54,7 @@ so **the rapidity is the kinetic one** and the four-velocity is the trajectory's
 
 ## The Criterion on the Mechanical Wavevector
 
-**The parameter.** $\epsilon=1/(\pi_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln r\rvert$. **The frame's slots are the mechanical variables**, so the momentum the criterion reads is the mechanical one.
+**The parameter.** $\epsilon=1/(\pi_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$. **The frame's slots are the mechanical variables**, so the momentum the criterion reads is the mechanical one.
 
 **Why the canonical momentum fails.** A criterion on $\vec p$ changes value under a gauge transformation, while $\vec\pi$ does not. **A limit whose validity depends on the gauge is a statement about the chart.**
 
@@ -64,7 +64,7 @@ so **the rapidity is the kinetic one** and the four-velocity is the trajectory's
 |---|---|---|
 | mechanical wavevector $\tilde K_{\Phi,\mathrm{gco}}$ | $0$ | yes |
 | the frame's connections | $1$ | yes, as transport |
-| $\hbar\nabla_\Phi\ln r$ | $1$ | no as a source, yes as a transport |
+| $\hbar\nabla_\Phi\ln \varrho$ | $1$ | no as a source, yes as a transport |
 | products of two first-order objects | $2$ | yes, as the iteration |
 
 **Nothing in it mentions the potential's strength.** A large potential moves the mechanical wavevector and its frame; it creates no parameter. **The coupling costs no accuracy**, exactly as in the scalar families.
@@ -165,8 +165,8 @@ The order structure is the free one, and the equation being first order means th
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $r>0$, $\rho=r^{2}$ | The scale; the density |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
+| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
 | $\tilde K_\Phi=i(E/\hbar c)e_{t}+\vec p/\hbar$ | The canonical wavevector |
 | $\tilde K_{\Phi,\mathrm{gco}}=i(\mathcal E/\hbar c)e_{t}+\vec\pi/\hbar$ | The mechanical wavevector |
 | $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\varphi$ | Mechanical momentum and energy |

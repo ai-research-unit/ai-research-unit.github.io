@@ -4,7 +4,7 @@
 
 This article writes the action of the coupled Klein–Gordon theory in the coordinates of the complete polar decomposition and varies it. It is the polar companion of *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, and it continues *The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables*, whose bracket form of the kinetic term, metric, Legendre analysis and Jacobian argument it takes over. Its subject is the one thing the coupling changes in that structure, and the one thing it leaves alone.
 
-**The action.** With the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and the covariant bracket
+**The action.** With the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and the covariant bracket
 
 $$
 \mathcal A^{\mathrm{gco}}_\mu=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
@@ -28,11 +28,11 @@ summed over the four slots with the metric signs of the corpus's convention. The
 
 **Scope and settings.** The connection is external and treated at the level of the action; the field is the scalar of the element companion. The central-field case is the Madelung variational principle with a potential, which is standard and closed. The general element is the eight-parameter chart, whose action is regular and whose equations are the Jacobian image of the element form's — also closed, because the free polar article's argument does not use the connection. What is *not* closed here is the same thing that is not closed in the free polar article: the explicit Jacobian in the general case. The article states what it computes and says so.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$.
 
 ## The Action in the Chart
 
-**The free bracket's four types.** The free polar article writes the kinetic term as $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A_\mu\mathcal A_\mu^{*}\big]$ with $\mathcal A_\mu$ the sum of four objects: a real central scale rate, a central imaginary phase rate, a Hermitian vector conjugated by the rotor, and a real vector part. The frame density $\tilde\Xi^{*}\tilde\Xi=r^{2}\cosh\theta_{\mathrm{rpd}}$ weights the whole thing, and the resulting metric carries $\cosh\theta_{\mathrm{rpd}}$ on the four squares and $\sinh\theta_{\mathrm{rpd}}$ on the two cross terms.
+**The free bracket's four types.** The free polar article writes the kinetic term as $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A_\mu\mathcal A_\mu^{*}\big]$ with $\mathcal A_\mu$ the sum of four objects: a real central scale rate, a central imaginary phase rate, a Hermitian vector conjugated by the rotor, and a real vector part. The frame density $\tilde\Xi^{*}\tilde\Xi=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ weights the whole thing, and the resulting metric carries $\cosh\theta_{\mathrm{rpd}}$ on the four squares and $\sinh\theta_{\mathrm{rpd}}$ on the two cross terms.
 
 **The connection's term and the slot-by-slot reading.** With $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ the kinetic term is the free one with
 
@@ -43,21 +43,21 @@ $$
 
 where the cross term collects because $A_\mu$ is central and multiplies the bracket on either side. The difference $\mathcal A_\mu^{*}-\mathcal A_\mu$ is anti-Hermitian, because the conjugate of a difference is the difference of the conjugates with the sign reversed, so $i(\mathcal A_\mu^{*}-\mathcal A_\mu)$ is Hermitian and its scalar part is real; the linear term is therefore real, and it is weighted by the anti-Hermitian part of the free bracket. The quadratic term is real by inspection and carries no field derivative. So the shift is: a real linear term, weighted by the part of the bracket that changes sign under conjugation, and a real quadratic term, which is the potential squared.
 
-**Which component of the bracket is shifted.** For a central field the anti-Hermitian part of the bracket is $2i\,\partial_\mu\theta_{\mathrm{pha}}$, the phase rate. So the linear term is $2\frac{ϙ}{\hbar}A_\mu\,r^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_\mu\theta_{\mathrm{pha}}$, the potential times the phase rate and the frame density, which is the current's slot; and in a general element the same expression holds with the phase rate replaced by the bracket's anti-Hermitian part, which also contains the boost's contribution once the rapidity is nonzero. The statement "the connection touches two of the four brackets" is a statement about the *additive* term in $\mathcal A^{\mathrm{gco}}_\mu$; the interaction is quadratic in the bracket and therefore reaches the frame through the anti-Hermitian combination, which mixes the phase rate with the rapidity. The article states both, because the distinction is the difference between $\tilde\Xi^{-1}D\tilde\Xi$ (one additive term, two types) and the Lagrangian (two terms, all types).
+**Which component of the bracket is shifted.** For a central field the anti-Hermitian part of the bracket is $2i\,\partial_\mu\theta_{\mathrm{pha}}$, the phase rate. So the linear term is $2\frac{ϙ}{\hbar}A_\mu\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_\mu\theta_{\mathrm{pha}}$, the potential times the phase rate and the frame density, which is the current's slot; and in a general element the same expression holds with the phase rate replaced by the bracket's anti-Hermitian part, which also contains the boost's contribution once the rapidity is nonzero. The statement "the connection touches two of the four brackets" is a statement about the *additive* term in $\mathcal A^{\mathrm{gco}}_\mu$; the interaction is quadratic in the bracket and therefore reaches the frame through the anti-Hermitian combination, which mixes the phase rate with the rapidity. The article states both, because the distinction is the difference between $\tilde\Xi^{-1}D\tilde\Xi$ (one additive term, two types) and the Lagrangian (two terms, all types).
 
-**Hence, slot by slot, for a central field.** Writing the central field's bracket, $\mathcal A_\mu=\partial_\mu\ln r+i\partial_\mu\theta_{\mathrm{pha}}$, the kinetic term is
+**Hence, slot by slot, for a central field.** Writing the central field's bracket, $\mathcal A_\mu=\partial_\mu\ln \varrho+i\partial_\mu\theta_{\mathrm{pha}}$, the kinetic term is
 
 $$
 \mathrm{Sc}\Bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu\bigl(\mathcal A^{\mathrm{gco}}_\mu\bigr)^{*}\Bigr]
-=r^{2}\Bigl\lvert\partial_\mu\ln r+i\,\partial_\mu\theta_{\mathrm{pha}}+\frac{i\,ϙ}{\hbar}A_\mu\Bigr\rvert^{2},
+=\varrho^{2}\Bigl\lvert\partial_\mu\ln \varrho+i\,\partial_\mu\theta_{\mathrm{pha}}+\frac{i\,ϙ}{\hbar}A_\mu\Bigr\rvert^{2},
 $$
 
 and the temporal and spatial slots read differently because $A_t=ia'_t$ is imaginary and $A_\eta$ is real:
 
 $$
-r^{2}\Bigl\lvert\partial_{r'_t}\ln r-\frac{ϙ}{\hbar}a'_t+i\,\partial_{r'_t}\theta_{\mathrm{pha}}\Bigr\rvert^{2}
+\varrho^{2}\Bigl\lvert\partial_{r'_t}\ln \varrho-\frac{ϙ}{\hbar}a'_t+i\,\partial_{r'_t}\theta_{\mathrm{pha}}\Bigr\rvert^{2}
 \quad\text{and}\quad
-r^{2}\Bigl\lvert\partial_\eta\ln r+i\Bigl(\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta\Bigr)\Bigr\rvert^{2}.
+\varrho^{2}\Bigl\lvert\partial_\eta\ln \varrho+i\Bigl(\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta\Bigr)\Bigr\rvert^{2}.
 $$
 
 In the temporal slot the connection sits with the scale; in the spatial slots it sits with the phase. The two moduli are the same function of the *mechanical* four-momentum, and §*The Central Field* writes the action in that form.
@@ -65,8 +65,8 @@ In the temporal slot the connection sits with the scale; in the spatial slots it
 **The action.** Collecting the four slots with their metric signs and the mass term,
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{r^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\tfrac{ϙ}{\hbar}a'_t\bigr)^{2}-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\bigr\rvert^{2}\Bigr]
-+\bigl(\partial_{r'_t}r\bigr)^{2}-\lvert\nabla r\rvert^{2}-k_m^{2}r^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}-\tfrac{ϙ}{\hbar}a'_t\bigr)^{2}-\bigl\lvert\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\bigr\rvert^{2}\Bigr]
++\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}-k_m^{2}\varrho^{2}\Bigr\},
 $$
 
 which is the free polar article's central action with $\partial_{r'_t}\theta_{\mathrm{pha}}\mapsto\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and $\nabla\theta_{\mathrm{pha}}\mapsto\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$ and with the amplitude's two terms untouched. The signs of the two shifts are the metric's, and they are the same two signs the element companion records for the four-momentum shift.
@@ -74,19 +74,19 @@ which is the free polar article's central action with $\partial_{r'_t}\theta_{\m
 **The two interaction terms, written out.** Expanding the phase's bracket,
 
 $$
-r^{2}\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-r^{2}\bigl\lvert\nabla\theta_{\mathrm{pha}}\bigr\rvert^{2}
--\frac{2ϙ r^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\nabla\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
-+\frac{ϙ^{2}r^{2}}{\hbar^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
+\varrho^{2}\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-\varrho^{2}\bigl\lvert\nabla\theta_{\mathrm{pha}}\bigr\rvert^{2}
+-\frac{2ϙ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\nabla\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
++\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
 $$
 
 so the interaction is a term linear in the potential multiplying the free phase rate, plus a term quadratic in the potential with no phase. The first is the one a "current times potential" presentation writes; the second is the one it does not, and it is the term that makes the action invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$, $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$. The chart therefore shows the coupling's second order in the potential as a separate object, and the article records this as its third result.
 
 ## The Central Field
 
-**The action.** With $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ and $\rho_{\mathrm{num}}=r^{2}$,
+**The action.** With $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ and $\rho_{\mathrm{num}}=\varrho^{2}$,
 
 $$
-S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\bigl(\partial_{r'_t}r\bigr)^{2}-\lvert\nabla r\rvert^{2}
+S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{\bigl(\partial_{r'_t}\varrho\bigr)^{2}-\lvert\nabla \varrho\rvert^{2}
 +\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\Bigl[\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}\Bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
@@ -99,18 +99,18 @@ $$
 -\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ a'_t\bigr)\Bigr)=0,
 $$
 
-which is the transport equation; varying $r$ gives
+which is the transport equation; varying $\varrho$ gives
 
 $$
 \bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}
-=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
-which is the amplitude equation. The two are the pair of the polar companion, and they are the polar companion's derivation read backwards: there they were obtained by separating the field equation's real and imaginary parts, here by varying two functions. The equivalence is exact and is the free polar article's central-field Jacobian, which is diagonal on the four parameters $(r,\theta_{\mathrm{pha}},\varepsilon)$ with $\varepsilon$ carrying no equation.
+which is the amplitude equation. The two are the pair of the polar companion, and they are the polar companion's derivation read backwards: there they were obtained by separating the field equation's real and imaginary parts, here by varying two functions. The equivalence is exact and is the free polar article's central-field Jacobian, which is diagonal on the four parameters $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ with $\varepsilon$ carrying no equation.
 
-**What the sign of $\varepsilon$ does in the action.** Nothing. The central action contains $r$ and $\theta_{\mathrm{pha}}$ and no factor of $\varepsilon$, because $\varepsilon^{2}=1$ and the word's sign is absorbed by the density's square. So $\varepsilon$ is a branch label and not a dynamical variable, exactly as in the free article, and the variational principle has two equations for the two functions it can vary.
+**What the sign of $\varepsilon$ does in the action.** Nothing. The central action contains $\varrho$ and $\theta_{\mathrm{pha}}$ and no factor of $\varepsilon$, because $\varepsilon^{2}=1$ and the word's sign is absorbed by the density's square. So $\varepsilon$ is a branch label and not a dynamical variable, exactly as in the free article, and the variational principle has two equations for the two functions it can vary.
 
-**Why the potential costs no regularity.** The kinetic matrix in $\partial_{r'_t}r$ and $\partial_{r'_t}S_{\tilde\Xi}$ is
+**Why the potential costs no regularity.** The kinetic matrix in $\partial_{r'_t}\varrho$ and $\partial_{r'_t}S_{\tilde\Xi}$ is
 
 $$
 \begin{pmatrix}2&0\\[2pt]0&2\rho_{\mathrm{num}}/\hbar^{2}\end{pmatrix},
@@ -126,7 +126,7 @@ $$
 c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙ c\,a'_t\bigr),
 $$
 
-with $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the free polar article's "charge is the phase rate times the density" with the mechanical phase rate. The article does not call $\rho_{\mathrm{num}}$ a momentum: in a second-order action the momentum conjugate to $\theta_{\mathrm{pha}}$ is proportional to $\partial_{r'_t}\theta_{\mathrm{pha}}$ and not to $r^{2}$, and the statement that the density *is* the momentum belongs to the first-order cases, where the action's kinetic term is $-\rho\dot\theta$.
+with $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the free polar article's "charge is the phase rate times the density" with the mechanical phase rate. The article does not call $\rho_{\mathrm{num}}$ a momentum: in a second-order action the momentum conjugate to $\theta_{\mathrm{pha}}$ is proportional to $\partial_{r'_t}\theta_{\mathrm{pha}}$ and not to $\varrho^{2}$, and the statement that the density *is* the momentum belongs to the first-order cases, where the action's kinetic term is $-\rho\dot\theta$.
 
 **The sign.** On the negative-frequency branch $E$ is negative, the bracket can change sign where the potential is large, and the charge density follows. So the potential shifts the boundary between the two signs but does not remove the sign change; the free article's two defects are one defect, and the coupling does not address it. The positive definiteness of $\rho_{\mathrm{num}}$ is a statement about the number density and not about the charge.
 
@@ -162,7 +162,7 @@ $$
 
 with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in the Chart*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
 
-**Which parameter equations are affected.** Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{ϙ^{2}r^{2}}{\hbar^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $r$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
+**Which parameter equations are affected.** Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
 
 **No constraint and no multiplier.** The free polar article's argument is that the eight parameters are coordinates on the invertibles, that the word is a bijection with a smooth inverse, and that the Euler–Lagrange equations in the parameters are the Jacobian image of the element equation — hence exact, hence no constraint, hence no multiplier. The coupling does not touch the argument: the word is the same word, the bijection is the same bijection, and the Jacobian is the same Jacobian, because the connection enters the *action* and not the *parameterisation*. So the coupled polar variational principle is exactly as closed as the free one, and the closedness is a property of the chart and not of the dynamics.
 
@@ -192,7 +192,7 @@ with the metric unchanged. The metric is unchanged because the metric is a prope
 
 **The explicit Jacobian with the connection.** The free polar article states the relation between the parameter equations and the four brackets and leaves the full Jacobian open. The coupling does not change the Jacobian, so the question is inherited rather than new; whether the connection's shift makes the correspondence triangular in a natural ordering — the phase's equation first, then the scale's, then the frame's — is not settled here.
 
-**The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's "potential" $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $r^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
+**The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's "potential" $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $\varrho^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
 
 **The operator setting.** The article treats the connection as an external field and the action as classical. In the operator setting the amplitude and the phase are fields, the quantum potential is a functional of the density, and the $\rho_{\mathrm{chg}}^{2}A^{2}$ term's renormalisation is the quantised theory's question. Whether the chart's exactness survives there in the sense of a well-defined functional integral is the path-integral article's subject and not this one's.
 
@@ -209,7 +209,7 @@ $$
 The connection's additive term is real in the temporal slot and central imaginary in the spatial ones, so it joins the scale bracket and the phase bracket and reaches neither the boost nor the rotor; the metric, the frame density and the amplitude–rapidity block are the free article's. For a central field the action is Madelung's with the mechanical four-momentum,
 
 $$
-S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}r)^{2}+\lvert\nabla r\rvert^{2}
+S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl\{-(\partial_{r'_t}\varrho)^{2}+\lvert\nabla \varrho\rvert^{2}
 +\frac{\rho_{\mathrm{num}}}{\hbar^{2}}\bigl[(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)^{2}-\lvert\nabla S_{\tilde\Xi}-q\vec A\rvert^{2}\bigr]-k_m^{2}\rho_{\mathrm{num}}\Bigr\},
 $$
 
@@ -219,17 +219,17 @@ and its two equations are the transport equation and the amplitude equation of t
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
-| $r>0$ | Scale; $\rho_{\mathrm{num}}=r^{2}$ |
+| $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
+| $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\hat u_{\mathrm r}$ | Frame parameters |
 | $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The free bracket, four types |
 | $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant bracket |
-| $r^{2}\cosh\theta_{\mathrm{rpd}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The frame density |
+| $\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The frame density |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t,\vec A$ real |
 | $ϙ$ | The coupling |
 | $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\nabla S_{\tilde\Xi}-q\vec A$ | The mechanical four-momentum |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$ | The quantum potential; unchanged |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi \varrho/\varrho$ | The quantum potential; unchanged |
 | $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\nabla\times=\rho_{\mathrm{chg}}\vec B$ |
 | $2\pi\hbar n+ϙ\Phi_B$ | The mechanical circulation |
 | $k_m=mc/\hbar$ | The mass wave number |

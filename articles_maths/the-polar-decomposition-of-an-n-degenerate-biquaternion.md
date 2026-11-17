@@ -8,9 +8,9 @@ $$
 \tilde Q=\tilde Q_H\,\tilde Q_0,
 $$
 
-with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Complete Polar Decomposition of an N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is $*$-unitary, and the pair refines into the four-factor word, the complete polar decomposition $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
+with $\tilde Q_H$ Hermitian positive semidefinite and $\tilde Q_0$ a partial isometry. The companion article *The Complete Polar Decomposition of an N-Regular Biquaternion* treated the case $\langle\tilde Q\rangle_{\natural}\neq0$, where the factors sharpen: $\tilde Q_H$ is positive definite, $\tilde Q_0$ is $*$-unitary, and the pair refines into the four-factor word, the complete polar decomposition $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$.
 
-This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\Rho\tilde U$ with $\Rho\neq0$ does not exist, and neither does the complete polar decomposition, whose product has norm $\Rho^{2}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not $*$-unitary.
+This article treats the complementary case $\langle\tilde Q\rangle_{\natural}=0$. The modulus vanishes, so the modulus–unit form $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$ with $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$ does not exist, and neither does the complete polar decomposition, whose product has norm $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=0$ and cannot represent a nonzero element. What survives is the two-factor decomposition: $\tilde Q_H$ is positive semidefinite of rank at most one, and $\tilde Q_0$ is a partial isometry that is not $*$-unitary.
 
 The article states why the modulus and the four factors fail (§*The Vanishing of the Modulus*), records the surviving pair (§*The Two-Factor Decomposition*), computes the two factors in closed form (§*The Hermitian Factor*, §*The Partial-Isometry Factor*), describes the two sectors of the null cone (§*The Two Sectors*), and gives four worked examples. The general pair, its uniqueness and the continuity of its Hermitian factor are established in *The Polar Decomposition of a Biquaternion* and are cited, not proved again.
 
@@ -21,24 +21,24 @@ The conventions and the symbols are those of *Algebra and Element Conventions*, 
 Let $\tilde Q$ be $\natural$-degenerate, $\langle\tilde Q\rangle_{\natural}=0$. The modulus of the $\natural$-regular article is a square root of the norm,
 
 $$
-\Rho^{2}=\langle\tilde Q\rangle_{\natural}=0,
+\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural}=0,
 $$
 
-so $\Rho=0$. The modulus–unit decomposition requires $\Rho\neq0$, since it divides by the modulus; at $\Rho=0$ the unit factor $\tilde Q/\Rho$ is undefined.
+so $\varrho\,e^{i\theta_{\mathrm{pha}}}=0$. The modulus–unit decomposition requires $\varrho\,e^{i\theta_{\mathrm{pha}}}\neq0$, since it divides by the modulus; at $\varrho\,e^{i\theta_{\mathrm{pha}}}=0$ the unit factor $\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is undefined.
 
 The four-factor word fails for the same reason, and the failure is visible in the norm. Its factors are constrained by
 
 $$
-r=\lvert\Rho\rvert>0,\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2],\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
+\varrho>0,\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2],\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=1,\qquad \langle\tilde u_{\mathrm r}\rangle_{\natural}=1,
 $$
 
 and the norm is multiplicative, so
 
 $$
-\bigl\langle r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}\langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde u_{\mathrm r}\rangle_{\natural}=\Rho^{2}=0 .
+\bigl\langle \varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}\langle\tilde U_{\mathrm b}\rangle_{\natural}\langle\tilde u_{\mathrm r}\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=0 .
 $$
 
-A product of norm zero cannot equal a nonzero element. At the origin the failure is stronger: $\Rho=0$ forces $r=0$, which contradicts $r>0$.
+A product of norm zero cannot equal a nonzero element. At the origin the failure is stronger: $\varrho\,e^{i\theta_{\mathrm{pha}}}=0$ forces $\varrho=0$, which contradicts $\varrho>0$.
 
 The modulus–unit form and the four-factor word therefore exist exactly on the $\natural$-regular elements. The $\natural$-degenerate elements are the null cone
 
@@ -264,7 +264,7 @@ The decomposition reads $0=0\cdot0$.
 
 ## Summary
 
-On the null cone the modulus–unit form and the four-factor word do not exist: the modulus vanishes, and the norm of the four-factor product is $\Rho^{2}=0$, so it cannot represent a nonzero element. The general pair survives.
+On the null cone the modulus–unit form and the four-factor word do not exist: the modulus vanishes, and the norm of the four-factor product is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=0$, so it cannot represent a nonzero element. The general pair survives.
 
 | item | result |
 |---|---|

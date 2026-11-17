@@ -12,7 +12,7 @@
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
+The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
 \vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,

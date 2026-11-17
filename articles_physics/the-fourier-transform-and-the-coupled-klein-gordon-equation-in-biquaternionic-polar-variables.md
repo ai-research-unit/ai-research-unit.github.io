@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word is the polar parent's, $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and on a central field it collapses to $r\,e^{i\theta_{\mathrm{pha}}}$. The connection is written anti-Hermitially, $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and the symbol rule is quoted in its derived form:
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The word is the polar parent's, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and on a central field it collapses to $\varrho\,e^{i\theta_{\mathrm{pha}}}$. The connection is written anti-Hermitially, $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, and the symbol rule is quoted in its derived form:
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
@@ -32,7 +32,7 @@ $$
 
 ## The Bracket Is One Charge Squared
 
-**The covariant bracket is one additive central term and the chart's objects are its modulus and its phase.** The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{iϙ}{\hbar}A_\mu$, so on a central field the bracket is $(\partial_\mu\ln r)+i(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu)$ and the two real equations are its real and imaginary parts. **The modulus of that bracket is the density times the mechanical four-momentum**, and the square of the modulus is the kinetic term of every functional in the family.
+**The covariant bracket is one additive central term and the chart's objects are its modulus and its phase.** The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{iϙ}{\hbar}A_\mu$, so on a central field the bracket is $(\partial_\mu\ln \varrho)+i(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu)$ and the two real equations are its real and imaginary parts. **The modulus of that bracket is the density times the mechanical four-momentum**, and the square of the modulus is the kinetic term of every functional in the family.
 
 **A modulus squared differentiates to one charge squared.** Varying $\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$ with respect to $\Xi^{*}$ returns $(\partial_{R_t}+c_t)^{2}\Xi$; that is the squared reading, and it is a statement about differentiation and not about the chart's coordinates. **Whatever coordinates the field is written in, the functional that the chart's bracket belongs to produces the same operator**, because the operator is the functional's own variation and the coordinates are a bijection.
 
@@ -123,7 +123,7 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word; on a central field, $r\,e^{i\theta_{\mathrm{pha}}}$ |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word; on a central field, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
 | $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$ | The covariant bracket: one additive central term |
 | $S_{\mathrm{p}}$ | The chart's kinetic functional, a modulus squared |
 | $\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |

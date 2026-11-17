@@ -12,7 +12,7 @@ $$
 L_{\tilde Q}(\tilde X)=\tilde Q\tilde X,\qquad R_{\tilde Q}(\tilde X)=\tilde X\tilde Q .
 $$
 
-On the null cone the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ vanishes, so the modulus–unit decomposition and the four-factor word $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ do not exist. What survives is the two-factor **polar pair**
+On the null cone the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$ vanishes, so the modulus–unit decomposition and the four-factor word $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ do not exist. What survives is the two-factor **polar pair**
 
 $$
 \tilde Q=\tilde Q_H\tilde Q_0,\qquad \tilde Q_H=\bigl(\tilde Q\tilde Q^{*}\bigr)^{1/2},\qquad \tilde Q_0=\tilde Q_H^{+}\tilde Q,
@@ -132,7 +132,7 @@ $$
 
 Finally $\tilde Q_H\tilde Q_0=2aP\tilde Q_0=2a\tilde Q_0=\tilde Q$.
 
-The pair $(\tilde Q_H,\tilde Q_0)$ is the general pair of *The Polar Decomposition of an N-Degenerate Biquaternion*, specialized to the rank-one case. It is not the modulus–unit pair: the modulus $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ is zero, while $\tilde Q_H$ is a non-zero rank-one element. The number $2a$ is the non-zero singular value of $\tilde Q$; it is not an eigenvalue in general (it coincides with $c$ when $\kappa=1$ and $c>0$).
+The pair $(\tilde Q_H,\tilde Q_0)$ is the general pair of *The Polar Decomposition of an N-Degenerate Biquaternion*, specialized to the rank-one case. It is not the modulus–unit pair: the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$ is zero, while $\tilde Q_H$ is a non-zero rank-one element. The number $2a$ is the non-zero singular value of $\tilde Q$; it is not an eigenvalue in general (it coincides with $c$ when $\kappa=1$ and $c>0$).
 
 ### The closed form on $\Sigma_{01}$
 
@@ -667,7 +667,7 @@ When $\tilde\Pi$ is Hermitian, $\kappa=1$ and $\tilde Q_0=(c/\lvert c\rvert)\til
 
 ### The modulus and the singular value
 
-The element modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The number $2a$ is not a modulus in that sense: it is the non-zero singular value of $\tilde Q$ in the matrix model, equivalently the non-zero spectral value of the Hermitian factor $\tilde Q_H$. The operator $L_{\tilde Q}$ is singular, but it is not the zero operator: it has rank two and non-zero singular value $2a$. The vanishing of $\Rho$ says that the element is a zero divisor; it does not say that the operator is nilpotent. On $\Sigma_{00}$, where $B^{2}=0$ and $Q_t=0$, the operator is nilpotent; on $\Sigma_{10}$, where $Q_t\neq0$, it is unipotent instead.
+The element modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}=0$. The number $2a$ is not a modulus in that sense: it is the non-zero singular value of $\tilde Q$ in the matrix model, equivalently the non-zero spectral value of the Hermitian factor $\tilde Q_H$. The operator $L_{\tilde Q}$ is singular, but it is not the zero operator: it has rank two and non-zero singular value $2a$. The vanishing of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ says that the element is a zero divisor; it does not say that the operator is nilpotent. On $\Sigma_{00}$, where $B^{2}=0$ and $Q_t=0$, the operator is nilpotent; on $\Sigma_{10}$, where $Q_t\neq0$, it is unipotent instead.
 
 ### The phase and the sign
 

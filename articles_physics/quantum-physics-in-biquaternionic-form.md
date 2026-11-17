@@ -126,13 +126,14 @@ where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real 
 
 The **parametrization** is by the unit sphere $S^2 \subset \mathbb{R}^3$: the direction $\vec u$ determines the idempotent $\tilde\Pi_1(\vec u)$ uniquely, and the complementary idempotent $\tilde\Pi_2(\vec u) = \tilde\Pi_1(-\vec u)$ corresponds to the opposite direction.
 
-**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\eta\mapsto-i\sigma_\eta$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state
+**Identification with standard states.** Under the series isomorphism $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ fixed by $\vec e_\eta\mapsto-i\sigma_\eta$ (*Algebra and Element Conventions*), the idempotent $\tilde\Pi_1(\vec u)$ maps to the standard pure state $|\vec u+\rangle\langle\vec u+|$, the spin-up state along direction $\vec u$. The map is computed in one line: $\mathsf{M}_2(\vec u)=-i\,\vec u\cdot\vec\sigma$, so $i\,\mathsf{M}_2(\vec u)=\vec u\cdot\vec\sigma$ and
 
 $$
-|\vec u+\rangle_{*}\langle\vec u+|,
+\mathsf{M}_2\bigl(\tilde\Pi_1(\vec u)\bigr)=\tfrac{1}{2}\left(I+\vec u\cdot\vec\sigma\right)
+=\tfrac{1}{2}\begin{pmatrix}1+u_z & u_x-i\,u_y\\ u_x+i\,u_y & 1-u_z\end{pmatrix},
 $$
 
-i.e., the spin-up state along direction $\vec u$. The set of pure states is the Bloch sphere $S^2$.
+which is the Bloch density matrix of the spin-up state along $\vec u$, reducing to $\mathsf{M}_2(\tilde\Pi_1(\vec e_z))=\operatorname{diag}(1,0)$ on the axis. The set of pure states is the Bloch sphere $S^2$.
 
 ### Mixed States
 
@@ -330,9 +331,9 @@ $$
 \tilde\Pi(r'_t) = \tilde Q(r'_t)\,\tilde\Pi(0)\,\tilde Q(r'_t)^{*},
 $$
 
-where $\tilde Q(r'_t)$ is a **$*$-unitary biquaternion**, $\tilde Q\tilde Q^{*} = e_t$, satisfying the **Schrödinger equation**
+where $r'_t=c\,t'$ is the coordinate time carried as a length (*Physics Units and Common Elements Conventions*) and $\tilde Q(r'_t)$ is a **$*$-unitary biquaternion**, $\tilde Q\tilde Q^{*} = e_t$, satisfying the **Schrödinger equation**
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde Q(r'_t) = \tilde H_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
+$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde Q(r'_t) = \tilde H_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
 $$
 
 with $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ the Hamiltonian, a Hermitian element. The glyph carries the sector and needs no abbreviation: the evolution formulas write $\tilde H_\Psi$, not a bare $H$.
@@ -340,7 +341,7 @@ with $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ the Hamilton
 **The solution.** We have $-i\tilde H_\Psi = -i h_t e_t + \vec h_\Psi$. The scalar part and the vector part commute, so
 
 $$
-\boxed{\;\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-i\theta_{\mathrm{evo}})\left(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,\vec u_\Psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})\left(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,\vec u_\Psi\right)\;},
 $$
 
 where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ (for $\vec h_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.
@@ -365,7 +366,7 @@ $$
 
 This is the **von Neumann equation**, expressed as a rotor conjugation. In differential form, it is
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde{Ϛ}_{\Psi}(r'_t) = [H, \tilde{Ϛ}_{\Psi}(r'_t)],
+$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde{Ϛ}_{\Psi}(r'_t) = [\tilde H_\Psi, \tilde{Ϛ}_{\Psi}(r'_t)],
 $$
 
 with the commutator defined in the biquaternion algebra.
@@ -374,28 +375,28 @@ with the commutator defined in the biquaternion algebra.
 
 ### The Heisenberg Picture
 
-In the **Heisenberg picture**, the state is fixed and the observables evolve:
+In the **Heisenberg picture**, the state is fixed and the observables evolve. For fixed Hermitian $\tilde O_\Psi\in\mathbb{B}_{\Psi}$, the evolved observable is
 
 $$
-\tilde H_{\Psi,\mathrm{Heis}}(r'_t) = \tilde Q(r'_t)^{*}\,\tilde H_\Psi\,\tilde Q(r'_t).
+\tilde O_\Psi(r'_t) = \tilde Q(r'_t)^{*}\,\tilde O_\Psi\,\tilde Q(r'_t).
 $$
+
+The evolved observable takes the glyph $\tilde O_\Psi$ and the Hamiltonian keeps $\tilde H_\Psi$, so that the generator and the element it moves do not share a letter.
 
 The evolution equation is the **Heisenberg equation**
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde H_{\Psi,\mathrm{Heis}}(r'_t) = [\tilde H_{\Psi,\mathrm{Heis}}(r'_t), H],
+$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi(r'_t) = [\tilde O_\Psi(r'_t), \tilde H_\Psi],
 $$
 
 where $\tilde H_\Psi$ is the Hamiltonian.
 
-**Derivation.** We compute the time derivative of $\tilde H_{\Psi,\mathrm{Heis}}(r'_t) = \tilde Q^{*}\tilde H_\Psi\tilde Q$, using the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= H\tilde Q$ and its adjoint $-i\,\hbar\,c\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}H$:
+**Derivation.** We compute the time derivative of $\tilde O_\Psi(r'_t) = \tilde Q^{*}\tilde O_\Psi\tilde Q$, using the Schrödinger equation $i\,\hbar\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$ and its adjoint $-i\,\hbar\,c\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde H_\Psi$:
 
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde H_{\Psi,\mathrm{Heis}} =i\,\hbar\,c\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde H_\Psi\tilde Q + \tilde Q^{*}\tilde H_\Psi d\tilde Q/dr'_t\right) = -\tilde Q^{*}H\tilde H_\Psi\tilde Q + \tilde Q^{*}\tilde H_\Psi H\tilde Q = \tilde Q^{*}[\tilde H_\Psi, H]\tilde Q.
+$$
+i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi =i\,\hbar\,c\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\,d\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde H_\Psi\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\tilde H_\Psi\tilde Q = \tilde Q^{*}[\tilde O_\Psi, \tilde H_\Psi]\tilde Q.
 $$
 
-Since $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ is a function of $\tilde H_\Psi$, it **commutes with $\tilde H_\Psi$**. This is what makes the last expression equal to $[\tilde H_{\Psi,\mathrm{Heis}}, \tilde Q^{*}H\tilde Q] = [\tilde H_{\Psi,\mathrm{Heis}}, H]$. So
-
-$$\frac{i\,\hbar\,c\,d}{dr'_{t}}\tilde H_{\Psi,\mathrm{Heis}}(r'_t) = [\tilde H_{\Psi,\mathrm{Heis}}(r'_t), H].
-$$
+Since $\tilde Q(r'_t) = \exp(-i\tilde H_\Psi r'_t/(\hbar\,c))$ is a function of $\tilde H_\Psi$, it **commutes with $\tilde H_\Psi$**, and so does $\tilde Q^{*}$. The last expression is therefore $[\tilde Q^{*}\tilde O_\Psi\tilde Q, \tilde H_\Psi] = [\tilde O_\Psi(r'_t), \tilde H_\Psi]$, which is the Heisenberg equation. For the choice $\tilde O_\Psi=\tilde H_\Psi$ the right-hand side vanishes: the Hamiltonian is conserved under its own flow.
 
 The two pictures are related by a $*$-unitary transformation and give the same physical predictions.
 
@@ -474,7 +475,13 @@ $$
 
 This is the standard formula $|\langle\vec u_{\mathrm p}|\vec u_{\mathrm q}\rangle_{*}|^2 = \cos^2(\theta/2)$, where $\theta$ is the angle between $\vec u_{\mathrm p}$ and $\vec u_{\mathrm q}$ on the Bloch sphere.
 
-For mixed states, the fidelity is given by the Uhlmann formula, which in the biquaternion framework is expressed in terms of the spectral decompositions.
+For mixed states the Uhlmann fidelity is $2\,\mathrm{Sc}\sqrt{\tilde{Ϛ}_{\Psi,1}^{1/2}\tilde{Ϛ}_{\Psi,2}\tilde{Ϛ}_{\Psi,1}^{1/2}}$, the matrix trace written with the scalar part of the algebra, and in two dimensions it closes. Since $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\tilde{Ϛ}_{\Psi,2}^{*})$ is the Hilbert–Schmidt overlap and the scalar part of $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ is the determinant, $\mathrm{Sc}\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac{1}{4}(1-|\vec s_{\Psi}|^2)$, the fidelity squared is
+
+$$
+F(\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2})^2 = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\tilde{Ϛ}_{\Psi,2}^{*}) + 2\sqrt{\mathrm{Sc}\bigl(\langle\tilde{Ϛ}_{\Psi,1}\rangle_{\natural}\langle\tilde{Ϛ}_{\Psi,2}\rangle_{\natural}\bigr)},
+$$
+
+which is the standard $\tfrac{1}{2}(1+\vec s_{\Psi,1}\cdot\vec s_{\Psi,2}+\sqrt{(1-|\vec s_{\Psi,1}|^2)(1-|\vec s_{\Psi,2}|^2)})$ in biquaternion letters. On pure states the second term vanishes and the expression reduces to the transition probability above; on two maximally mixed states it gives $F=1$. The star stays explicit although it is the identity on $\mathbb{B}_{\Psi}$, so that the overlap is read as the Hermitian form and not as the plain one.
 
 ## Symmetries
 
@@ -596,7 +603,7 @@ $$
 
 separates a $*$-unitary factor $\tilde{W}_{\Psi}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\Psi,\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
-**The shared imaginary unit.** The $i$ of the Schrödinger equation $\frac{i\,\hbar\,c\,d\,\tilde{Q}}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian sign pattern of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
+**The shared imaginary unit.** The $i$ of the Schrödinger equation $i\,\hbar\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian sign pattern of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
 
 **What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 
@@ -693,4 +700,6 @@ The extension to many qubits, the second-quantized version, the connection to qu
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the POVM and Kraus formalism.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Clifford algebra formulation of spin.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra approach to quantum physics.
+- S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic formulation, its scalar-product obstruction and the comparison with the complex theory.
+- D. Finkelstein, J. M. Jauch, S. Schiminovich and D. Speiser, "Foundations of quaternion quantum mechanics", *Journal of Mathematical Physics* **3** (1962) 207, for the earliest systematic quaternionic quantum theory.
 

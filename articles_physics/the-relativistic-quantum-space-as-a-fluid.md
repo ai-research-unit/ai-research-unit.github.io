@@ -67,14 +67,14 @@ Both are the subjects of their own articles ([the Klein–Gordon equation in biq
 **The factors are of four different types, and that is why the reading is a fluid and not a relabelling.** The scale is real and central, the phase is central imaginary, the boost is Hermitian positive, and the rotor is a real unit quaternion. Four algebraically distinct objects, four distinct physical roles. The word is
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
 \qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r},
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) and [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$ and $\theta_{\mathrm{axr}}\in[0,2\pi]$. The derivation is in [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) and [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html); this article takes the word as given and reads it.
 
 ### The four variables
 
@@ -82,7 +82,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 
 | factor | type | range | fluid variable | read from |
 | --- | --- | --- | --- | --- |
-| $r$ | real, positive | $r>0$ | density, $\rho_{\mathrm{num}}=r^{2}$ | the scale |
+| $\varrho$ | real, positive | $\varrho>0$ | density, $\rho_{\mathrm{num}}=\varrho^{2}$ | the scale |
 | $e^{i\theta_{\mathrm{pha}}}$ | central imaginary | $(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | action, $S=\hbar\theta_{\mathrm{pha}}$ | the phase |
 | $\tilde U_{\Psi,\mathrm b}$ | Hermitian positive | $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$ | four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost |
 | $\tilde u_{\mathrm r}$ | real unit | $\theta_{\mathrm{axr}}\in[0,2\pi]$, unit axis $\vec u_{\mathrm r}$ | spin direction, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor |
@@ -108,7 +108,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 | | scalar case | spinor case |
 | --- | --- | --- |
 | element | central, $\tilde\Xi=\Xi_t e_t$ | general, four coefficients |
-| word | $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | four factors |
+| word | $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$ | four factors |
 | data at an event | $\rho_{\mathrm{num}}$, $S$, $\varepsilon=\pm1$ | $\rho_{\mathrm{num}}$, $S$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
 | equations | two real equations from one complex one | four coupled brackets |
 | closure | closed: continuity and energy | not closed: the brackets are constrained and not determined |
@@ -206,8 +206,8 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\Xi$ | The field, one element of $\mathbb{B}$ |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm |
-| $r$ | Scale of the word; $r>0$ |
-| $\rho_{\mathrm{num}}=r^{2}$ | Proper density |
+| $\varrho$ | Scale of the word; $\varrho>0$ |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Proper density |
 | $\theta_{\mathrm{pha}}$ | Angle of the word; the action is $S=\hbar\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}$ | Rapidity of the boost |
 | $\vec u_{\mathrm b}$ | Unit axis of the boost |
@@ -222,7 +222,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde S_{\Psi}$ | The spin element, Hermitian |
 | $k_m=mc/\hbar$ | Mass wave number |
-| $\varepsilon=\Xi_t/\Rho$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ |
+| $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
 | $c$ | The limiting speed of the frame structure |
 
 ## Further Reading

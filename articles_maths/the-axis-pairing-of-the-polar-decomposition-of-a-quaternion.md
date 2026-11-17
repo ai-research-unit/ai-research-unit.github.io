@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The polar word of a quaternion is $\tilde q=r\tilde u_{\mathrm r}$, a positive scale and a versor. The **axis pairing** reads the same word with the exponent transported onto a named axis: for a unit pure quaternion $\nu$, the element is written
+The polar word of a quaternion is $\tilde q=\varrho\tilde u_{\mathrm r}$, a positive scale and a versor. The **axis pairing** reads the same word with the exponent transported onto a named axis: for a unit pure quaternion $\nu$, the element is written
 $$
 \tilde q=\tilde u_{\mathrm r}\,(a+b\nu),\qquad a,b\in\mathbb{R},
 $$
@@ -73,7 +73,7 @@ where $\theta_\nu$ is the transported angle, the angle of $\pi_\nu(\tilde q)$ in
 
 **Proposition (the transport of the angle).** The angle of the exponential form of $\tilde q$ is $\arctan\bigl(\lvert\vec q\rvert/q_t\bigr)$, and the transported angle is the same formula with the modulus of the vector part replaced by its component along the axis. So the transport replaces $\lvert\vec q\rvert$ by $\langle\vec q,\nu\rangle$ and leaves everything else unchanged.
 
-*Proof.* In the modulus-unit form $\tilde q=r(\cos\theta+\sin\theta\,\vec m)$ with $\vec m$ the unit direction of the vector part, so $\tan\theta=\lvert\vec q\rvert/q_t$; the transported formula is the ratio of the two slots. Verified numerically on general elements.
+*Proof.* In the modulus-unit form $\tilde q=\varrho(\cos\theta+\sin\theta\,\vec m)$ with $\vec m$ the unit direction of the vector part, so $\tan\theta=\lvert\vec q\rvert/q_t$; the transported formula is the ratio of the two slots. Verified numerically on general elements.
 
 **Remark (what the two slots are).** $a$ measures the scalar part of the element in the units of the projection, and $b$ measures the component of the vector part along the axis in the same units; the modulus of the pair is the modulus of the element, the argument is the angle in the plane, and the orthogonal complement is entirely absorbed by the versor. **Two real numbers and one versor: the two numbers are the coordinates of the projection, and the versor is the whole of the rest.**
 
@@ -115,8 +115,8 @@ so $a^2+b^2=5+\tfrac54=\tfrac{25}{4}$, the square of the scale. The pair is diff
 
 | | modulus-unit | rational chart | exponential | axis pairing |
 |---|---|---|---|---|
-| word | $r\tilde u_{\mathrm r}$ | $r\,u(v)$ | $r\exp(\theta\vec m)$ | $\tilde u_{\mathrm r}(a+b\nu)$ |
-| real slots | $r>0$ | the three coordinates of $v$ | $r$ and $\theta$ | $a,b$ |
+| word | $\varrho\tilde u_{\mathrm r}$ | $\varrho\,u(v)$ | $\varrho\exp(\theta\vec m)$ | $\tilde u_{\mathrm r}(a+b\nu)$ |
+| real slots | $\varrho>0$ | the three coordinates of $v$ | $\varrho$ and $\theta$ | $a,b$ |
 | unit factor | any versor | any versor | $\exp(\theta\vec m)$ | the versor orthogonal to the axis |
 | domain | all | $\mathbb{H}\setminus(-\infty,0]$ | $\mathbb{H}\setminus(-\infty,0]$ | $\mathbb{H}\setminus\nu^{\perp}$ |
 | uniqueness | yes, both factors | yes, both factors | off the real axis | off the hyperplane |

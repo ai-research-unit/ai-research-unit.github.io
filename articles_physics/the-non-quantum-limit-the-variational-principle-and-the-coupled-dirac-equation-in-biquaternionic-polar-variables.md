@@ -7,13 +7,13 @@
 **The two displays, side by side, and their difference.**
 
 $$
-S_{\mathrm{op}}=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}+\text{terms in }\nabla r,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
 $$
 
 $$
-S_{\mathrm{box}}=\int\mathrm{d}^{4}r\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}\Bigr],
+S_{\mathrm{box}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}\Bigr],
 \qquad
-\rho=r^{2}\cosh\theta_{\mathrm{rpd}} .
+\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
 
 **The parent states that the gradient terms are the quantum potential's**, in the spin-half-fluid form, and that is the whole of the article's premise. **The boxed action is the operator-setting action with those terms deleted, and the deletion is the non-quantum limit.**
@@ -39,7 +39,7 @@ $$
 
 **The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
 ## The Coupling's Reach
 
@@ -62,7 +62,7 @@ $$
 **What is deleted.**
 
 $$
-\Delta S=-\int\mathrm{d}^{4}r\;\bigl[\text{terms in }\nabla r,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\bigr],
+\Delta S=-\int\mathrm{d}^{4}\varrho\;\bigl[\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\bigr],
 $$
 
 three gradients and not eight: the phase's gradient is not among them, and neither are the rotor's angles, because those enter the one-form and not the potential.
@@ -71,7 +71,7 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 
 | deleted | order | what it was |
 |---|---|---|
-| $\lvert\nabla r\rvert^{2}$-type | $2$ | the density's curvature, the scalar quantum potential |
+| $\lvert\nabla \varrho\rvert^{2}$-type | $2$ | the density's curvature, the scalar quantum potential |
 | $\lvert\nabla\theta_{\mathrm{rpd}}\rvert^{2}$-type | $2$ | the velocity field's curvature |
 | $\lvert\nabla\theta_{\mathrm{axr}}\rvert^{2}$-type | $2$ | the spin field's curvature |
 
@@ -103,7 +103,7 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 
 ## Verification
 
-**The two displays were compared term by term.** The boxed action and the operator-setting action differ by the bracket in $\nabla r$, $\nabla\theta_{\mathrm{rpd}}$ and $\nabla\theta_{\mathrm{axr}}$, and by nothing else: the phase term, the frame potential and the mass term are identical in both. **The comparison is an inspection of the parent's own text.**
+**The two displays were compared term by term.** The boxed action and the operator-setting action differ by the bracket in $\nabla \varrho$, $\nabla\theta_{\mathrm{rpd}}$ and $\nabla\theta_{\mathrm{axr}}$, and by nothing else: the phase term, the frame potential and the mass term are identical in both. **The comparison is an inspection of the parent's own text.**
 
 **The momentum count was checked against the coordinates.** One velocity, the phase's, appears linearly in the boxed action, so seven momenta vanish or are fixed and one is the coefficient of the phase's rate. **The count matches the parent's statement of seven and two.**
 
@@ -127,11 +127,11 @@ The surviving system is a constrained one: seven momenta zero or fixed, two evol
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ | The density in the constant setting |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
+| $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density in the constant setting |
 | $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | The frame potential, including the mass function $\mathcal V$ |
 | $S_{\mathrm{op}}$, $S_{\mathrm{box}}$ | The operator-setting action; the boxed constant-setting action |
-| $\nabla r,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |
+| $\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection; $q$ its charge, the parent's $ϙ=-q$ |
 | $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\varphi$ | Mechanical momentum and energy |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(k_mL)$ | The two parameters of the deleted terms' size |

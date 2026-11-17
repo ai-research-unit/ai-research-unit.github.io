@@ -7,10 +7,10 @@
 The four-factor word is the **complete polar decomposition** of *The Complete Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
 
 $$
-\tilde{Q} = r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+\tilde{Q} = \varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-with the positive real scale $r$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
+with the positive real scale $\varrho$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, the Hermitian positive unit-norm boost $\tilde U_{\mathrm b}$ and the unit real quaternion rotor $\tilde u_{\mathrm r}$.
 
 The pair is defined on the whole algebra, with a Hermitian positive semidefinite factor and a partial isometry. On the elements of non-vanishing norm the partial isometry is $*$-unitary and splits into the phase and the rotor, which is the word above; on the null cone it does not split, and the pair is computed there in *The Polar Decomposition of an N-Degenerate Biquaternion*.
 
@@ -24,7 +24,7 @@ Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} 
 
 The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the complete polar decomposition is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The symbols $r$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\Rho = r\omega$, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Complete Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
+The symbols $\varrho$, $\omega$, $\theta_{\mathrm{pha}}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\varrho\,e^{i\theta_{\mathrm{pha}}} = \varrho\omega$, $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article *The Complete Polar Decomposition of an N-Regular Biquaternion*. The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{C}$ are the remarkable subspaces of *Subspaces and Decompositions*, which also defines the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$.
 
 No physics is invoked; the physical interpretation is cited where it clarifies the algebra.
 
@@ -33,16 +33,16 @@ No physics is invoked; the physical interpretation is cited where it clarifies t
 Each of the four factors has a single **exponent**, one real parameter times one **root** of the algebra; the phase angle is $\theta_{\mathrm{pha}}$, and the square of the root decides the character of the factor. The four factors and their exponents are
 
 $$
-\boxed{\; \tilde{Q}=r\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\boxed{\; \tilde{Q}=\varrho\,\omega\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\bigl(r,\omega,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
+\bigl(\varrho,\omega,\tilde U_{\mathrm b},\tilde u_{\mathrm r}\bigr)
 \longleftrightarrow
-\bigl(\ln r,\,i\theta_{\mathrm{pha}},\,i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\,\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr) \;}.
+\bigl(\ln \varrho,\,i\theta_{\mathrm{pha}},\,i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},\,\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr) \;}.
 $$
 
 | factor | exponent | root | square of the root | character |
 |---|---|---|---|---|
-| $r$ | $\ln r$ | $e_t$ | $+e_t$ | hyperbolic, degenerate |
+| $\varrho$ | $\ln \varrho$ | $e_t$ | $+e_t$ | hyperbolic, degenerate |
 | $\omega$ | $i\theta_{\mathrm{pha}}$ | $i$ | $-e_t$ | trigonometric, central |
 | $\tilde U_{\mathrm b}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $i\vec u_{\mathrm b}$ | $+e_t$ | hyperbolic |
 | $\tilde u_{\mathrm r}$ | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\vec u_{\mathrm r}$ | $-e_t$ | trigonometric |
@@ -65,14 +65,14 @@ The two scalar blocks $A_1,A_2$ have real dimension one, the two vector blocks $
 
 | exponent | block | the block | factor |
 |---|---|---|---|
-| $\ln r$ | $A_1 = \mathbb{R}e_t$ | the real scalar line | the scale |
+| $\ln \varrho$ | $A_1 = \mathbb{R}e_t$ | the real scalar line | the scale |
 | $i\theta_{\mathrm{pha}}$ | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar line | the central phase |
 | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block | the rotor |
 | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $B_2 = \operatorname{span}_{\mathbb{R}}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ | the imaginary vector block | the boost |
 
 **Theorem (the block reading of the polar word).** For a generic polar word, each one of the four exponents lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.
 
-**Proof.** The exponent $\ln r$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\theta_{\mathrm{pha}}$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.
+**Proof.** The exponent $\ln \varrho$ is a real multiple of $e_t$, hence in $A_1$; the exponent $i\theta_{\mathrm{pha}}$ is a real multiple of $ie_t$, hence in $A_2$; the exponent $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ has three real coordinates on $\vec e_x,\vec e_y,\vec e_z$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ has three real coordinates on $i\vec e_x,i\vec e_y,i\vec e_z$ and vanishing others, hence is in $B_2$. Since distinct blocks meet only at $0$ and the four exponents are nonzero, the assignment is a bijection between the four exponents and the four blocks.
 
 The additivity of the dimensions of the blocks is the block form of the count of the four factors,
 
@@ -92,7 +92,7 @@ Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$ in which $i\vec e_x,
 |---|---|---|---|---|
 | grade | $0$ | $1$ | $2$ | $3$ |
 | basis | $e_t$ | $i\vec e_x,i\vec e_y,i\vec e_z$ | $\vec e_x,\vec e_y,\vec e_z$ | $ie_t$ |
-| exponent it carries | $\ln r$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $i\theta_{\mathrm{pha}}$ |
+| exponent it carries | $\ln \varrho$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $i\theta_{\mathrm{pha}}$ |
 | factor | the scale | the boost | the rotor | the central phase |
 
 **The four factors of the polar word are the four Clifford grades, one factor to a grade**, and the order of the grades is not the order of the word: the word is written scale, phase, boost, rotor, which is grade $0$, grade $3$, grade $1$, grade $2$.
@@ -112,7 +112,7 @@ $$
 because $\vec e_x = -(i\vec e_y)(i\vec e_z)$, $\vec e_y = -(i\vec e_z)(i\vec e_x)$ and $\vec e_z = -(i\vec e_x)(i\vec e_y)$. The scale exponent is the scalar and the phase exponent the pseudoscalar,
 
 $$
-\ln r\in\mathbb{R} , \qquad i\theta_{\mathrm{pha}} = \theta_{\mathrm{pha}}\,ie_t ,
+\ln \varrho\in\mathbb{R} , \qquad i\theta_{\mathrm{pha}} = \theta_{\mathrm{pha}}\,ie_t ,
 $$
 
 since $ie_t = (i\vec e_x)(i\vec e_y)(i\vec e_z)$ is the product of the three generators.
@@ -142,7 +142,7 @@ The block reading of the word and the block reading of the subspaces give the in
 
 | exponent | its block | the subspaces that contain it |
 |---|---|---|
-| $\ln r$ (scale) | $A_1$ | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ |
+| $\ln \varrho$ (scale) | $A_1$ | $\mathbb{B}_{C}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$ |
 | $i\theta_{\mathrm{pha}}$ (phase) | $A_2$ | $\mathbb{B}_{C}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Phi}$ |
 | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ (boost) | $B_2$ | $\mathbb{B}_{V}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$ |
 | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ (rotor) | $B_1$ | $\mathbb{B}_{V}$, $\mathbb{B}_{H}$, $\mathbb{B}_{\Phi}$ |
@@ -155,11 +155,11 @@ Read subspace by subspace, the incidence gives the pair of exponents each subspa
 
 | subspace | the two exponents it carries | names |
 |---|---|---|
-| $\mathbb{B}_{C}$ | $\ln r$, $i\theta_{\mathrm{pha}}$ | the modulus |
+| $\mathbb{B}_{C}$ | $\ln \varrho$, $i\theta_{\mathrm{pha}}$ | the modulus |
 | $\mathbb{B}_{V}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the two axes |
-| $\mathbb{B}_{H}$ | $\ln r$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the scale and the rotor |
+| $\mathbb{B}_{H}$ | $\ln \varrho$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the scale and the rotor |
 | $\mathbb{B}_{iH}$ | $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the phase and the boost |
-| $\mathbb{B}_{\Psi}$ | $\ln r$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the hyperbolic pair |
+| $\mathbb{B}_{\Psi}$ | $\ln \varrho$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | the hyperbolic pair |
 | $\mathbb{B}_{\Phi}$ | $i\theta_{\mathrm{pha}}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the trigonometric pair |
 
 Three consequences follow at once.
@@ -183,9 +183,9 @@ The behaviour of the phase is decided by the norm alone. The phase is $\theta_{\
 | $\mathbb{B}_{H}$ | a sum of four real squares, positive definite | $0$ |
 | $\mathbb{B}_{iH}$ | minus a sum of four real squares, negative definite | $\pi/2$ |
 | $\mathbb{B}_{\Psi}$ | $\sigma^{2}-\lvert\vec w\rvert^{2}$, real indefinite | $0$ or $\pi/2$ |
-| $\mathbb{B}_{\Phi}$ | $\lvert\vec\Rho\rvert^{2}-\tau^{2}$, real indefinite | $0$ or $\pi/2$ |
+| $\mathbb{B}_{\Phi}$ | $\lvert\vec\varrho\,e^{i\theta_{\mathrm{pha}}}\rvert^{2}-\tau^{2}$, real indefinite | $0$ or $\pi/2$ |
 
-The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_t+i\vec w$ with $\sigma = \operatorname{Re}Q_t$ and $\vec w = w_x\vec e_x+w_y\vec e_y+w_z\vec e_z$ real, and an element of the anti-Hermitian subspace is $i\tau e_t+\vec\Rho$ with $\tau = \operatorname{Im}Q_t$ and $\vec\Rho$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_x^{2}+w_y^{2}+w_z^{2}$ and likewise for $\vec\Rho$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_x^{2}+Q_y^{2}+Q_z^{2}$ with complex components, the complex Euclidean square.
+The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_t+i\vec w$ with $\sigma = \operatorname{Re}Q_t$ and $\vec w = w_x\vec e_x+w_y\vec e_y+w_z\vec e_z$ real, and an element of the anti-Hermitian subspace is $i\tau e_t+\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$ with $\tau = \operatorname{Im}Q_t$ and $\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_x^{2}+w_y^{2}+w_z^{2}$ and likewise for $\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_x^{2}+Q_y^{2}+Q_z^{2}$ with complex components, the complex Euclidean square.
 
 **The phase is a free coordinate on exactly the two subspaces whose norm is complex**, the centre and the vector subspace, in the sense that it takes every value in the branch interval as the element varies; on a given element it is fixed by the norm, and it is $0$ or $\pi/2$ wherever the norm is real and nonzero, in particular on the real and imaginary lines. It is frozen on the two halves, at $0$ and at $\pi/2$, and it is a two-valued label on the two sectors, where the norm is real indefinite. The norm is complex on exactly the two subspaces that are not real forms of the algebra, which is the same pair.
 
@@ -200,7 +200,7 @@ The two non-central factors behave as follows.
 | $\mathbb{B}_{\Psi}$, $N>0$ | the normalised element, up to sign | a sign, $\pm e_t$ |
 | $\mathbb{B}_{\Psi}$, $N<0$ | a nontrivial boost, or $e_t$ on the imaginary vector subspace | a half turn |
 | $\mathbb{B}_{\Phi}$, $N>0$ | a nontrivial boost, or $e_t$ on the real vector subspace | a half turn |
-| $\mathbb{B}_{\Phi}$, $N<0$ | the element times $-i/r$ | a sign, $\pm e_t$ |
+| $\mathbb{B}_{\Phi}$, $N<0$ | the element times $-i/\varrho$ | a sign, $\pm e_t$ |
 
 Four of the rows are degenerate cases worth naming, and the derivations are those of *The Polar Decomposition in Subspaces*.
 
@@ -257,7 +257,7 @@ The two axes are two directions of the vector subspace, $\vec u_{\mathrm b}$ and
 
 The vector subspace is the one subspace on which the polar data of every element is fixed in shape. The block table gives the reason: the vector subspace is the sum $B_1\oplus B_2$ of the two blocks that carry the two non-central exponents, and nothing else. The two central coordinates vanish, and their vanishing is a condition on the two non-central factors.
 
-**Proposition (the half-turn rotor of a pure vector).** Let $\vec Q$ be an element of the vector subspace with $\langle\vec Q\rangle_{\natural}\neq0$, and let $\vec Q = \Rho\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta_{\mathrm{axr}} = \pi$; either the boost is trivial, $\theta_{\mathrm{rpd}}=0$, or its axis is orthogonal to the rotor axis.
+**Proposition (the half-turn rotor of a pure vector).** Let $\vec Q$ be an element of the vector subspace with $\langle\vec Q\rangle_{\natural}\neq0$, and let $\vec Q = \varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ be its polar word. Then the rotor is a half turn, $\theta_{\mathrm{axr}} = \pi$; either the boost is trivial, $\theta_{\mathrm{rpd}}=0$, or its axis is orthogonal to the rotor axis.
 
 **Proof.** Write the two non-central factors in their closed forms,
 
@@ -277,7 +277,7 @@ $$
 \operatorname{Sc}\bigl(\vec u_{\mathrm b}\vec u_{\mathrm r}\bigr) = -\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) .
 $$
 
-The element $\vec Q$ is pure, so $\operatorname{Sc}(\vec Q) = 0$, and the modulus $\Rho$ is central, so $\operatorname{Sc}(\tilde U_{\mathrm b}\tilde u_{\mathrm r}) = 0$ as well. The right-hand side is the sum of a real number and a purely imaginary one, so both vanish:
+The element $\vec Q$ is pure, so $\operatorname{Sc}(\vec Q) = 0$, and the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is central, so $\operatorname{Sc}(\tilde U_{\mathrm b}\tilde u_{\mathrm r}) = 0$ as well. The right-hand side is the sum of a real number and a purely imaginary one, so both vanish:
 
 $$
 \cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\cos\tfrac{\theta_{\mathrm{axr}}}{2} = 0 , \qquad \sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0 .
@@ -285,10 +285,10 @@ $$
 
 The first gives $\cos\tfrac{\theta_{\mathrm{axr}}}{2} = 0$, that is $\theta_{\mathrm{axr}} = \pi$, since $\theta_{\mathrm{axr}}\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta_{\mathrm{axr}}}{2} = 1$, gives either $\theta_{\mathrm{rpd}} = 0$ or $(\vec u_{\mathrm b},\vec u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal.
 
-**Corollary (the normalised piece of a pure vector is a root of $-1$).** With the notation of the proposition, the unit-norm part $\vec Q/\Rho$ satisfies
+**Corollary (the normalised piece of a pure vector is a root of $-1$).** With the notation of the proposition, the unit-norm part $\vec Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ satisfies
 
 $$
-\boxed{\; \left(\frac{\vec Q}{\Rho}\right)^{\natural} = -\frac{\vec Q}{\Rho} , \qquad \left(\frac{\vec Q}{\Rho}\right)^{2} = -e_t \;},
+\boxed{\; \left(\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\right)^{\natural} = -\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}} , \qquad \left(\frac{\vec Q}{\varrho\,e^{i\theta_{\mathrm{pha}}}}\right)^{2} = -e_t \;},
 $$
 
 so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the quaternion conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$, and the dot product of the two axes vanished to $2.6\times10^{-15}$ whenever the boost was nontrivial.
@@ -308,7 +308,7 @@ The domain of the polar decomposition is the complement of the null cone $\{\lan
 | $\mathbb{B}_{H}$ | $0$ alone, the norm is definite | $0$ | on the punctured subspace |
 | $\mathbb{B}_{iH}$ | $0$ alone, the norm is definite | $0$ | on the punctured subspace |
 | $\mathbb{B}_{\Psi}$ | the cone $\sigma^{2} = \lvert\vec w\rvert^{2}$ | $3$ | fails on the cone |
-| $\mathbb{B}_{\Phi}$ | the cone $\lvert\vec\Rho\rvert^{2} = \tau^{2}$ | $3$ | fails on the cone |
+| $\mathbb{B}_{\Phi}$ | the cone $\lvert\vec\varrho\,e^{i\theta_{\mathrm{pha}}}\rvert^{2} = \tau^{2}$ | $3$ | fails on the cone |
 
 **Theorem (the domain on the subspaces).** The polar decomposition exists on the whole of the punctured centre, punctured quaternion subspace and punctured anti-quaternion subspace, and it fails on the other three subspaces exactly on the origin and their nonzero zero divisors.
 
@@ -337,10 +337,10 @@ $$
 according as $\tilde Q_1^{*}=\pm\tilde Q_1$. Stability is a consequence of the involution, not of a norm-one hypothesis. The word factorises the action,
 
 $$
-\boxed{\; \mathrm{Sd}_{\tilde Q}=r^{2}\,\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}} \;},
+\boxed{\; \mathrm{Sd}_{\tilde Q}=\varrho^{2}\,\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}} \;},
 $$
 
-since the phase is central of modulus one and acts trivially, the scale multiplies every image by $r^{2}$, and the two non-central factors act in the order rotor first, boost second.
+since the phase is central of modulus one and acts trivially, the scale multiplies every image by $\varrho^{2}$, and the two non-central factors act in the order rotor first, boost second.
 
 Stability belongs to the two-sided operator and not to multiplication: a nonzero central multiplier preserves a half only when it is real, so multiplication by a non-real central scalar moves $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ out of themselves, while the two-sided operator by any central scalar is the identity.
 
@@ -378,7 +378,7 @@ $$
 \Lambda_-(\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}})=B_-(\theta_{\mathrm{rpd}},\vec u_{\mathrm b})\operatorname{diag}(1,\mathsf R(\theta_{\mathrm{axr}},\vec u_{\mathrm r})),
 $$
 
-with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $r^{2}\Lambda_-$: a linear conformal transformation, of determinant $r^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The Lorentz group and its double cover are in *Biquaternion Rotations and Lorentz Transformations*.
+with $B_-$ the $4\times4$ boost matrix and $\mathsf R$ the Rodrigues matrix. The rotation acts first. For a general element the action is $\varrho^{2}\Lambda_-$: a linear conformal transformation, of determinant $\varrho^{8}$, whose image is $CO^{+}(1,3)=\mathbb{R}_{>0}\cdot SO^{+}(1,3)$. The Lorentz group and its double cover are in *Biquaternion Rotations and Lorentz Transformations*.
 
 ### The Hermitian Half as a Congruence
 
@@ -391,7 +391,7 @@ $$
 with $G_+=\operatorname{diag}(1,-1,-1,-1)=-G_-$. The two-sided operator is a congruence of the Hermitian matrix image by the invertible matrix $\mathsf M_2(\tilde Q)$. Sylvester's law of inertia applies: rank, inertia and causal type are preserved. The determinant scales,
 
 $$
-\det\mathsf M_2\bigl(\mathrm{Sd}_{\tilde Q}(\tilde Q_+)\bigr)=r^{4}\langle\tilde Q_+\rangle_{\natural},
+\det\mathsf M_2\bigl(\mathrm{Sd}_{\tilde Q}(\tilde Q_+)\bigr)=\varrho^{4}\langle\tilde Q_+\rangle_{\natural},
 $$
 
 and the boost acts by the same formulas with the opposite cross-term signs,
@@ -401,7 +401,7 @@ a'=a\cosh\theta_{\mathrm{rpd}}+b_\parallel\sinh\theta_{\mathrm{rpd}},\qquad
 b_\parallel'=b_\parallel\cosh\theta_{\mathrm{rpd}}+a\sinh\theta_{\mathrm{rpd}}.
 $$
 
-The trace is invariant under the phase, the scale and the rotor, up to the factor $r^{2}$ of the scale, and is changed by the boost. The invariant object is the pair of the determinant scaling and the inertia, not the spectrum.
+The trace is invariant under the phase, the scale and the rotor, up to the factor $\varrho^{2}$ of the scale, and is changed by the boost. The invariant object is the pair of the determinant scaling and the inertia, not the spectrum.
 
 ### The Two Halves Are One Action
 
@@ -456,7 +456,7 @@ Every two-sided operator preserves the two halves. A general two-sided operator 
 
 The two sectors are preserved for every element. For a general unit the other four are not preserved, and the theorem below identifies exactly when they are.
 
-**Theorem (which operators preserve the whole subspace structure).** Let $\tilde Q$ be an invertible element with polar word $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\Rho=r\omega$ with $r>0$ and $\omega$ central of modulus one, $\tilde U_{\mathrm b}$ is Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ is a unit real quaternion. The following are equivalent:
+**Theorem (which operators preserve the whole subspace structure).** Let $\tilde Q$ be an invertible element with polar word $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, where $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho\omega$ with $\varrho>0$ and $\omega$ central of modulus one, $\tilde U_{\mathrm b}$ is Hermitian positive of unit norm and $\tilde u_{\mathrm r}$ is a unit real quaternion. The following are equivalent:
 
 1. the two-sided operator $\mathrm{Sd}_{\tilde Q}$ maps each of the six remarkable subspaces to itself;
 2. $\tilde U_{\mathrm b}=e_t$;
@@ -465,7 +465,7 @@ The two sectors are preserved for every element. For a general unit the other fo
 
 When they hold, $\mathrm{Sd}_{\tilde Q}=\lvert A\rvert^{2}\mathrm{Sd}_{\tilde u_{\mathrm r}}$ is a dilation composed with a rotation of the vector space, and every remarkable subspace is preserved.
 
-**Proof.** $(3)\Rightarrow(4)$: for $\tilde Q=A\tilde u_{\mathrm r}$ one has $\tilde Q\tilde Q^{*}=\lvert A\rvert^{2}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=\lvert A\rvert^{2}e_t$, since a real unit quaternion satisfies $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde Q\tilde Q^{*}=\lambda e_t$ with $\lambda>0$ then $\lvert\langle\tilde Q\rangle_{\natural}\rvert=\lambda$; the element $\tilde Q/\Rho$, with $\Rho$ the principal square root of $\langle\tilde Q\rangle_{\natural}$, has norm one and Hermitian square $e_t$, hence is a unit real quaternion $\tilde u_{\mathrm r}$, and $\tilde Q$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the word. $(3)\Rightarrow(1)$: the central factor contributes the dilation, which preserves every subspace, and $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde Q\tilde Q^{*}$ is central; that element is Hermitian positive, and a central Hermitian positive element of the algebra is a positive real multiple of $e_t$.
+**Proof.** $(3)\Rightarrow(4)$: for $\tilde Q=A\tilde u_{\mathrm r}$ one has $\tilde Q\tilde Q^{*}=\lvert A\rvert^{2}\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=\lvert A\rvert^{2}e_t$, since a real unit quaternion satisfies $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde Q\tilde Q^{*}=\lambda e_t$ with $\lambda>0$ then $\lvert\langle\tilde Q\rangle_{\natural}\rvert=\lambda$; the element $\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$, with $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal square root of $\langle\tilde Q\rangle_{\natural}$, has norm one and Hermitian square $e_t$, hence is a unit real quaternion $\tilde u_{\mathrm r}$, and $\tilde Q$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the word. $(3)\Rightarrow(1)$: the central factor contributes the dilation, which preserves every subspace, and $\mathrm{Sd}_{\tilde u_{\mathrm r}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde Q\tilde Q^{*}$ is central; that element is Hermitian positive, and a central Hermitian positive element of the algebra is a positive real multiple of $e_t$.
 
 On the unit-norm slice the operators preserving the subspace structure are those of the unit real quaternions, modulo the sign, and they form $SO(3)$, of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group, and the remaining three dimensions are the boosts, which move the centre, the vector subspace and the two halves.
 
@@ -479,7 +479,7 @@ $$
 
 so a vanishing norm stays vanishing and a non-vanishing one stays non-vanishing. The factors themselves transform as follows.
 
-| conjugation | the scale $r$ | the phase angle $\theta_{\mathrm{pha}}$ | the boost | the rotor |
+| conjugation | the scale $\varrho$ | the phase angle $\theta_{\mathrm{pha}}$ | the boost | the rotor |
 |---|---|---|---|---|
 | $\overline{\tilde{Q}}$ | unchanged | $-\theta_{\mathrm{pha}}$ | $\tilde U_{\mathrm b}^{\natural}$ | $\tilde u_{\mathrm r}$ |
 | $\tilde{Q}^{\natural}$ | unchanged | unchanged | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
@@ -489,7 +489,7 @@ so a vanishing norm stays vanishing and a non-vanishing one stays non-vanishing.
 The complex conjugation is the one that preserves the shape of the word. Its effect is the coefficientwise conjugation of each factor, and since the rotor is a real quaternion and the boost has one real and three purely imaginary coefficients,
 
 $$
-\overline{\tilde{Q}} = r\,\omega^{-1}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
+\overline{\tilde{Q}} = \varrho\,\omega^{-1}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
 $$
 
 which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its quaternion conjugate. The quaternion conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $1.1\times10^{-14}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
@@ -497,7 +497,7 @@ which is a polar word again: the scale is unchanged, the phase is reversed, the 
 The quaternion conjugation is the one that reverses the order of the two non-central factors. It keeps the modulus, since $\langle\tilde Q\rangle_{\natural}$ is invariant, and it gives
 
 $$
-\tilde{Q}^{\natural} = r\,\omega\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
+\tilde{Q}^{\natural} = \varrho\,\omega\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
 $$
 
 with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is unchanged, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified over $300$ elements, the word to $2.1\times10^{-14}$, its boost to $9.8\times10^{-15}$ and its rotor to $2.6\times10^{-15}$.
@@ -505,7 +505,7 @@ with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word 
 The Hermitian conjugation and the reversal reverse the order of the two factors and negate the phase. The Hermitian conjugate of the word is
 
 $$
-\tilde{Q}^{*} = r\,\omega^{-1}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
+\tilde{Q}^{*} = \varrho\,\omega^{-1}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
 $$
 
 verified to $1.1\times10^{-14}$ over $300$ elements: the scale is unchanged, the phase is reversed, and the two non-central factors appear in the reversed order, with the boost on the right. Read in the standard order, its boost is $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ — the same rapidity about the rotor-rotated axis — and its rotor is $\tilde u_{\mathrm r}^{-1}$, verified to $1.7\times10^{-14}$ and $3.6\times10^{-15}$.
@@ -514,7 +514,7 @@ The reversal is the Hermitian conjugate followed by the central sign, $\tilde{Q}
 
 ## Worked Examples
 
-**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\Rho = 1.2-0.5i$, so $r = 1.3$ and $\theta_{\mathrm{pha}} = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.
+**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}} = 1.2-0.5i$, so $\varrho = 1.3$ and $\theta_{\mathrm{pha}} = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_t$. The argument of $Q_t$ lies in the branch interval, so the rotor is $+e_t$ and not $-e_t$. The reconstruction error is $1.1\times10^{-16}$.
 
 **The quaternion subspace.** For $\tilde q = 0.7+1.1\vec e_x-0.4\vec e_y+0.9\vec e_z$ the norm is the positive real $2.67$, so $\theta_{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the normalised element,
 
@@ -522,17 +522,17 @@ $$
 \tilde u_{\mathrm r} = 0.428393043\,e_t+0.673189067\,\vec e_x-0.244796025\,\vec e_y+0.550791055\,\vec e_z ,
 $$
 
-of angle $\theta_{\mathrm{axr}} = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $r = 1.634013464$.
+of angle $\theta_{\mathrm{axr}} = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.609556915)$, with $\varrho = 1.634013464$.
 
 **The anti-quaternion subspace.** The same element multiplied by $i$ has norm $-2.67$, so $\theta_{\mathrm{pha}} = \pi/2$, the boost is again $e_t$, and the rotor is the same unit real quaternion; only the phase has moved, by the quarter turn.
 
-**The real vector block.** For $\vec\Rho = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $r = 1$, $\theta_{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the direction $\vec\Rho$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\theta_{\mathrm{pha}} = \pi/2$, the same boost and the same rotor.
+**The real vector block.** For $\vec\varrho\,e^{i\theta_{\mathrm{pha}}} = 0.6\vec e_x-0.8\vec e_z$ the norm is $+1$, so $\varrho = 1$, $\theta_{\mathrm{pha}} = 0$, the boost is $e_t$, and the rotor is the direction $\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$ itself, of angle $\pi$ about the axis $(0.6,0,-0.8)$: the half turn of the proposition, with a trivial boost. The same direction multiplied by $i$ has norm $-1$, hence $\theta_{\mathrm{pha}} = \pi/2$, the same boost and the same rotor.
 
-**A generic complex vector.** For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\theta_{\mathrm{pha}} = 0.387081341$. The boost has rapidity $\theta_{\mathrm{rpd}} = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta_{\mathrm{axr}} = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.
+**A generic complex vector.** For $\vec Q = (0.9+0.4i)\vec e_x+(0.2-0.7i)\vec e_y+0.5\vec e_z$ the norm is complex, $0.45+0.44i$, and the phase is free: $\varrho = 0.793325128$, $\theta_{\mathrm{pha}} = 0.387081341$. The boost has rapidity $\theta_{\mathrm{rpd}} = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta_{\mathrm{axr}} = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.
 
-**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\theta_{\mathrm{pha}} = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.
+**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_t+i\sinh0.9\,\vec u$ with $\vec u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $\varrho = 1$, $\theta_{\mathrm{pha}} = 0$, the boost equal to the element and the rotor $e_t$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_t$.
 
-**The product of two boosts.** For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $r = 1$ and $\theta_{\mathrm{pha}} = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\theta_{\mathrm{rpd}} = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta_{\mathrm{axr}}}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.
+**The product of two boosts.** For the boost of rapidity $0.7$ about $\vec e_x$ and the boost of rapidity $0.5$ about $\vec e_y$, the product has norm one, so $\varrho = 1$ and $\theta_{\mathrm{pha}} = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-\vec e_z$. The rapidity satisfies $\cosh\theta_{\mathrm{rpd}} = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta_{\mathrm{axr}}}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.
 
 ## The Legacy Pauli Gamma Formulation
 
@@ -560,17 +560,17 @@ Because each nonzero element of a block lies in exactly three of the six subspac
 
 The polar data of an element of a subspace follow from its norm. The phase is free on exactly the two subspaces whose norm is complex, the centre and the vector subspace, frozen at $0$ and $\pi/2$ on the two halves and two-valued on the two sectors. The boost is trivial on the centre and on the two halves; the rotor is a sign on the centre and on the definite branch of each sector; and the vector subspace is rigid, every one of its non-null elements having a half-turn rotor, with the boost trivial or its axis orthogonal to the rotor axis.
 
-The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor, the boost being trivial or its axis orthogonal to the rotor axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two null cones on the sectors; the polar word fails on a subspace exactly on the origin or its nonzero zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor. The word also acts: the two-sided operator $\mathrm{Sd}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ preserves both halves for every invertible element, factorises as $r^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$, sends the phase to the identity and the scale to a dilation, and reads as a proper orthochronous Lorentz transformation on the anti-Hermitian half and as a congruence on the Hermitian one. The central $i$ intertwines the two readings as an anti-isometry, the two boost matrices satisfy $B_-=DB_+D=B_+^{-1}$, and the image of the group of invertibles is $CO^{+}(1,3)$. All six remarkable subspaces are preserved exactly for the central multiples of the real unit quaternions; on the unit-norm slice those operators form $SO(3)$, and with the dilations admitted $\mathbb{R}_{>0}\times SO(3)$.
+The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor, the boost being trivial or its axis orthogonal to the rotor axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two null cones on the sectors; the polar word fails on a subspace exactly on the origin or its nonzero zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor. The word also acts: the two-sided operator $\mathrm{Sd}_{\tilde Q}(\tilde Q_1)=\tilde Q\tilde Q_1\tilde Q^{*}$ preserves both halves for every invertible element, factorises as $\varrho^{2}\mathrm{Sd}_{\tilde U_{\mathrm b}}\circ\mathrm{Sd}_{\tilde u_{\mathrm r}}$, sends the phase to the identity and the scale to a dilation, and reads as a proper orthochronous Lorentz transformation on the anti-Hermitian half and as a congruence on the Hermitian one. The central $i$ intertwines the two readings as an anti-isometry, the two boost matrices satisfy $B_-=DB_+D=B_+^{-1}$, and the image of the group of invertibles is $CO^{+}(1,3)$. All six remarkable subspaces are preserved exactly for the central multiples of the real unit quaternions; on the unit-norm slice those operators form $SO(3)$, and with the dilations admitted $\mathbb{R}_{>0}\times SO(3)$.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \omega \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
-| $r$, $\omega$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
-| $\Rho = r\omega = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
+| $\tilde{Q} = \varrho \omega \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
+| $\varrho$, $\omega$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}} = \varrho\omega = \sqrt{\langle\tilde{Q}\rangle_{\natural}}$ | the complex modulus, $\langle\tilde{Q}\rangle_{\natural}$ the biquaternion norm |
 | $\theta_{\mathrm{pha}}$ | the phase angle, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ |
-| $\ln r$, $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
+| $\ln \varrho$, $i\theta_{\mathrm{pha}}$, $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | the four exponents of the word |
 | $A_1 = \mathbb{R}e_t$ | the real scalar block, home of the scale exponent |
 | $A_2 = \mathbb{R}(ie_t)$ | the imaginary scalar block, home of the phase exponent |
 | $B_1 = \operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | the real vector block, home of the rotor exponent |
@@ -581,7 +581,7 @@ The two products of the series are the product of two boosts, which is a boost t
 | $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$ | the quaternion subspace $A_1\oplus B_1$ and the anti-quaternion subspace $A_2\oplus B_2$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | the Hermitian subspace $A_1\oplus B_2$ and the anti-Hermitian subspace $A_2\oplus B_1$ |
 | $\sigma$, $\vec w$ | the scalar and the real vector of an element $\sigma e_t+i\vec w$ of the Hermitian subspace |
-| $\tau$, $\vec\Rho$ | the scalar and the real vector of an element $i\tau e_t+\vec\Rho$ of the anti-Hermitian subspace |
+| $\tau$, $\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$ | the scalar and the real vector of an element $i\tau e_t+\vec\varrho\,e^{i\theta_{\mathrm{pha}}}$ of the anti-Hermitian subspace |
 | $\mathrm{Sp}(1)$ | the group of unit real quaternions, the rotor set |
 | $\mathcal{A}$ | the axis sphere, the unit vectors of $\mathbb{R}^3$ |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | rapidity and unit axis of the boost |

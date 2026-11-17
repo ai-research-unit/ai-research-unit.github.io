@@ -8,7 +8,7 @@ $$
 A=U|A|,\qquad |A|=(A^*A)^{1/2},
 $$
 
-where $|A|$ is positive semidefinite and $U$ is a partial isometry; if $A$ is invertible, $U$ is $*$-unitary and $|A|$ is positive definite. The decomposition is the matrix analogue of the polar form $z=re^{i\theta}$ of a complex number: the positive part $|A|$ is the modulus, the $*$-unitary part $U$ is the phase.
+where $|A|$ is positive semidefinite and $U$ is a partial isometry; if $A$ is invertible, $U$ is $*$-unitary and $|A|$ is positive definite. The decomposition is the matrix analogue of the polar form $z=\varrho e^{i\theta}$ of a complex number: the positive part $|A|$ is the modulus, the $*$-unitary part $U$ is the phase.
 
 The **singular value decomposition** is the diagonalization of the positive part:
 

@@ -24,11 +24,11 @@ with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the mate
 
 **Three things are established.**
 
-*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $r$, so $\rho_{\mathrm{num}}=r^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_\mu S_{\tilde\Xi}+ϙA_\mu$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not gauge invariant; the mechanical velocity is not a gradient and is gauge invariant.
+*First, the density is untouched and the velocity becomes mechanical.* The word is the free article's, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$, and the scale is still $\varrho$, so $\rho_{\mathrm{num}}=\varrho^{2}$. What the coupling changes is the momentum the phase rate names: the phase gradient is replaced by $\partial_\mu S_{\tilde\Xi}+ϙA_\mu$, and the velocity the fluid carries is that over the mass. The free velocity was a gradient and was not gauge invariant; the mechanical velocity is not a gradient and is gauge invariant.
 
 *Second, the vorticity becomes the field strength.* Because the mechanical one-form is a gradient plus a potential, its exterior derivative is the potential's alone, and that is $ϙF$. Everything the free article proved about the vanishing of $\omega$ survives as the statement $\vec E=\vec B=0$.
 
-*Third, the force becomes the Lorentz force and the quantum force stays.* The gradient of the coupled mass shell gives the free article's acceleration law with one term added, and the added term is $-ϙ(\vec E+\vec v\times\vec B)$ in the spatial slots. The quantum potential is in the equation exactly as it was, because it depends on $r$ and its curvature and on nothing else.
+*Third, the force becomes the Lorentz force and the quantum force stays.* The gradient of the coupled mass shell gives the free article's acceleration law with one term added, and the added term is $-ϙ(\vec E+\vec v\times\vec B)$ in the spatial slots. The quantum potential is in the equation exactly as it was, because it depends on $\varrho$ and its curvature and on nothing else.
 
 **What is not here.** No new solution, no new prediction, no new particle. The article's subject is the fluid reading of the standard minimally coupled scalar field, and its work is to say which of the free article's properties are properties of the scalar field and which are properties of the connection it is coupled to. The answer is short: the irrotationality and the gauge non-invariance of the velocity are the connection's, and the density, the quantum stress, the absence of an equation of state and the nodal set are the field's.
 
@@ -52,7 +52,7 @@ and the four terms are the free article's four brackets with the connection's sh
 
 | bracket | type | the connection's share |
 | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln r^{2}$ | real central scalar | none |
+| $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | none |
 | $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | central imaginary, with a real part | the whole slot |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | none |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none |
@@ -73,7 +73,7 @@ with $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_t$ and $\vec p=\hbar
 
 ## The Density and the Velocity
 
-**The marker density is unchanged, and the conserved density is now gauge invariant.** The word's scale is $r$ and $\rho_{\mathrm{num}}=r^{2}$ in both cases; the free article's $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ survives with the mechanical $\gamma$,
+**The marker density is unchanged, and the conserved density is now gauge invariant.** The word's scale is $\varrho$ and $\rho_{\mathrm{num}}=\varrho^{2}$ in both cases; the free article's $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ survives with the mechanical $\gamma$,
 
 $$
 c\,\rho_{\mathrm{chg}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(E+ϙc\,a'_t\bigr),
@@ -118,7 +118,7 @@ $$
 
 The first bracket vanishes because the action is a function and not a one-form, and the second is the definition of the field strength. **No term is dropped, no order is taken, and no quantum correction appears**: the quantum potential enters the *norm* of the velocity and not its curl, because it is a function of the density and the density cancels out of the velocity.
 
-**So the charged scalar fluid is irrotational exactly where the field strength vanishes.** The free article's "the vorticity vanishes identically, off the nodes" is the case $\vec E=\vec B=0$ of this display, and its qualifier is unchanged: the velocity is defined wherever $r\ne0$, and the vorticity with it.
+**So the charged scalar fluid is irrotational exactly where the field strength vanishes.** The free article's "the vorticity vanishes identically, off the nodes" is the case $\vec E=\vec B=0$ of this display, and its qualifier is unchanged: the velocity is defined wherever $\varrho\ne0$, and the vorticity with it.
 
 **The rank of the vorticity is the rank of the field strength, and that is a genuinely new ingredient.** A two-form on four dimensions has even rank, so $\omega$ has rank $0$, $2$ or $4$, and the rank is four exactly where the invariant $\vec E\cdot\vec B$ is non-zero, since $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to the convention's factor. The check was run on three configurations and the vorticity matrix's singular values were taken:
 
@@ -185,15 +185,15 @@ $$
 
 was verified to hold in both slots with no residual term. Each of the three terms has a reading: the first is the acceleration, the second is the Lorentz force with the sign the metric gives a lower index, and the third is the free article's quantum gradient, unchanged.
 
-**The Lorentz force is a force and not a stress, and that is the structural statement.** A flow whose only force is a gradient has no transverse force and therefore generates no vorticity; the free article says exactly this, and it is why the free scalar fluid cannot rotate. **The coupling adds a transverse force without adding a stress**, because the field is external: the quantum stress is computed from $r$ and its derivatives, the connection does not enter it, and the field's own stress belongs to the field. So the charged scalar fluid has a prescribed vorticity, a transverse force, and still one stress.
+**The Lorentz force is a force and not a stress, and that is the structural statement.** A flow whose only force is a gradient has no transverse force and therefore generates no vorticity; the free article says exactly this, and it is why the free scalar fluid cannot rotate. **The coupling adds a transverse force without adding a stress**, because the field is external: the quantum stress is computed from $\varrho$ and its derivatives, the connection does not enter it, and the field's own stress belongs to the field. So the charged scalar fluid has a prescribed vorticity, a transverse force, and still one stress.
 
-**The quantum potential is untouched, and the reason is worth stating.** $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ depends on the amplitude and its second derivatives. The coupling shifts the momentum and not the amplitude; the amplitude equation is the mass shell with the mechanical momentum and the same curvature term. So the third-order character of the force survives, and with it the free article's "no equation of state", which this article does not restate because nothing in it moves.
+**The quantum potential is untouched, and the reason is worth stating.** $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ depends on the amplitude and its second derivatives. The coupling shifts the momentum and not the amplitude; the amplitude equation is the mass shell with the mechanical momentum and the same curvature term. So the third-order character of the force survives, and with it the free article's "no equation of state", which this article does not restate because nothing in it moves.
 
 ## The Sign, the Threshold and the Klein Paradox
 
 **The potential moves the zero of the mechanical energy, and the charge density follows it.** On the negative-frequency branch $E<0$, and the bracket $E+ϙc\,a'_t$ changes sign where $|ϙc\,a'_t|=|E|$. **On a fixed branch the charge density can therefore be positive at large potential and negative at small**, and the surface where it vanishes is where the negative-frequency solution has become a positive-charge one.
 
-**That surface is the pair-threshold, and the article claims the kinematics and no more.** The number density $r^{2}$ never changes sign and never vanishes there; what changes sign is the charge density, which is the number density times the mechanical phase rate. So the free article's "two defects are one defect" — the sign of the charge and the indefiniteness of the density — is unchanged in structure: the coupling moves the boundary and does not remove it. **The field theory of the boundary, in which a negative-frequency branch stopped by a sufficiently strong electric potential is a pair-producing configuration, is [The Klein Paradox in Biquaternionic Form](the-klein-paradox-in-biquaternionic-form.html)'s subject**, and the present article's contribution is the fluid statement: a fluid whose charge density is a positive number density times a mechanical phase rate has a charge-sign boundary wherever that rate vanishes, and a constant potential translates the boundary without abolishing it.
+**That surface is the pair-threshold, and the article claims the kinematics and no more.** The number density $\varrho^{2}$ never changes sign and never vanishes there; what changes sign is the charge density, which is the number density times the mechanical phase rate. So the free article's "two defects are one defect" — the sign of the charge and the indefiniteness of the density — is unchanged in structure: the coupling moves the boundary and does not remove it. **The field theory of the boundary, in which a negative-frequency branch stopped by a sufficiently strong electric potential is a pair-producing configuration, is [The Klein Paradox in Biquaternionic Form](the-klein-paradox-in-biquaternionic-form.html)'s subject**, and the present article's contribution is the fluid statement: a fluid whose charge density is a positive number density times a mechanical phase rate has a charge-sign boundary wherever that rate vanishes, and a constant potential translates the boundary without abolishing it.
 
 **The gauge transformation does not move the boundary.** The bracket is gauge invariant, so the surface $E+ϙc\,a'_t=0$ is a gauge-invariant set, and the worry that the threshold is a gauge artefact is answered in one line.
 
@@ -207,7 +207,7 @@ $$
 
 and the third member is not a condition on the flow alone: **the flow and the connection are one datum, and neither determines the other.** That is what the coupling does to the correspondence, and it is a change of the domain and not of the strength of either arrow.
 
-**The two arrows are still of different strengths, and the asymmetry is now a quotient.** The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=r e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, but two triples differing by a gauge transformation give the same field. **The map is well defined on gauge orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
+**The two arrows are still of different strengths, and the asymmetry is now a quotient.** The field gives a density, an action and a mechanical momentum, exactly and with no conditions. The reverse direction takes a positive density, an action and a connection and returns $\tilde\Xi=\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, but two triples differing by a gauge transformation give the same field. **The map is well defined on gauge orbits and not on triples**, and the free article's bijection on the $N$-regular set is the $ϙ=0$ slice of a bijection on orbits. Nothing is lost and nothing is gained: the count of the field's data is unchanged, because the connection was never the field's datum.
 
 **A reader's objection, and the answer.** The objection is that the mechanical velocity is defined as the canonical one plus the potential, so "the vorticity is the field strength" is a definition and not a result. The objection is right about the definition and wrong about the content: what the display fixes is that the fluid's vorticity is *not an independent variable*, and that is a statement about the fluid and not about the letters. A free fluid could have had a vorticity of its own and did not; this one has the field's and cannot have another.
 
@@ -216,7 +216,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 **Twelve statements, each one line, and each with its reason. This is what the charged scalar fluid is.**
 
 1. **The word is unchanged and the coupling is a shift, not a parameter.** The scale, the angle and the branch; the connection enters the phase bracket, and the count of the field's data is the free article's.
-2. **The marker density is $r^{2}$ and the conserved density is the mechanical phase rate times it.** $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$, and it is gauge invariant, which the free one was not.
+2. **The marker density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it.** $c\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}(E+ϙca'_t)/m$, and it is gauge invariant, which the free one was not.
 3. **The velocity is the mechanical momentum over the mass**, and it is the only velocity the fluid has. It is invertible exactly where $Q_{\mathrm{qnt}}$ vanishes, as before.
 4. **The flow is irrotational exactly where the field strength vanishes.** $\omega=ϙF/m$, exact, with no quantum correction.
 5. **The vorticity's rank is the field strength's**: $0$, $2$ or $4$, and $4$ exactly where $\vec E\cdot\vec B\ne0$. No free fluid of the block reaches rank four with its vorticity proper.
@@ -224,9 +224,9 @@ and the third member is not a condition on the flow alone: **the flow and the co
 7. **The canonical circulation is untouched.** $\oint\vec p\cdot\mathrm{d}\vec l=2\pi\hbar n$ still comes from the nodes and the coupling does not enter it.
 8. **The force is the Lorentz force plus the free quantum gradient**, and the free acceleration law is the $ϙ=0$ case of the coupled one, term for term.
 9. **There is no new stress.** The quantum stress is the free article's Korteweg stress, unchanged, and the field's stress is the field's.
-10. **There is still no equation of state.** $Q_{\mathrm{qnt}}$ carries two derivatives of $\ln r$, and no function of the density's value produces it.
+10. **There is still no equation of state.** $Q_{\mathrm{qnt}}$ carries two derivatives of $\ln \varrho$, and no function of the density's value produces it.
 11. **The charge density's sign can change on a fixed branch**, at $|ϙca'_t|=|E|$, and the number density's cannot: the boundary moves and does not vanish.
-12. **The degenerate set is unchanged.** $r=0$, codimension two, and the connection cannot reach it because the connection cannot reach the scale.
+12. **The degenerate set is unchanged.** $\varrho=0$, codimension two, and the connection cannot reach it because the connection cannot reach the scale.
 
 ## The Three Charged Fluids
 
@@ -236,21 +236,21 @@ and the third member is not a condition on the flow alone: **the flow and the co
 | --- | --- | --- | --- |
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
 | the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
-| the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/r$ |
+| the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/\varrho$ |
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
 | the vorticity's rank | $0$, $2$ or $4$ | $2$ for the proper part | the free case's is $2$ |
 | the loop invariant | $2\pi\hbar n/m+ϙ\Phi_B/m$ | a Lorentz transformation times a phase | for $ϙ=0$ an integer; for $ϙ\ne0$, not known |
 | the force | the Lorentz force, plus a quantum potential | the Lorentz force, and no torque | the covariant divergence, self-acting |
 | the stress | the quantum potential is in it; no EOS | the antisymmetric part is in it; no EOS | its own field strength is in it; stiff on $F=0$ |
-| the degenerate set | $r=0$, codimension two | $r=0$, codimension two | $r=0$; the free case's lightlike wall is gone |
+| the degenerate set | $\varrho=0$, codimension two | $\varrho=0$, codimension two | $\varrho=0$; the free case's lightlike wall is gone |
 | what the charge does | turns the vorticity into the field strength | pushes and does not torque | doubles the carrier and opens the constraint |
 
 **This article's column is the first, and it is the only column where the charge changes the vorticity's nature.** That one fact explains four rows at once: the vorticity is a field strength rather than a frame gradient or the curl of a direction, the circulation is a winding plus a flux, the force is a Lorentz force rather than a stress divergence, and the stress is untouched because the field is external. **The scalar fluid is the one case in which the coupling is pure kinematics.**
 
 **The row that separates it from the other two is the velocity's.** Here the velocity is the mechanical momentum over the mass, a gradient plus a potential, so $\mathrm{d}V$ is exactly $F$. In the spin case the velocity is the frame, which is invertible and not a gradient, so $\mathrm{d}V$ carries the frame's logarithmic derivative and no $F$ at all; in the vector case the velocity is the field's own direction, and the free case's $\mathrm{d}V$ is $F$ minus a radial term while the charged case's is not computed in this block. **Three velocities, three curls, and only one of them is the field strength.**
 
-**Two rows are the same in all three columns and deserve a sentence.** Every one of the three fluids has a degenerate set at $r=0$ and none of them has an equation of state; those are properties of the word and not of the connection, which is why the three articles state them once and do not re-derive them.
+**Two rows are the same in all three columns and deserve a sentence.** Every one of the three fluids has a degenerate set at $\varrho=0$ and none of them has an equation of state; those are properties of the word and not of the connection, which is why the three articles state them once and do not re-derive them.
 
 ## What the Charge Does to the Correspondence
 
@@ -258,11 +258,11 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 **The forward arrow is unchanged and exact.** Any nowhere-zero solution of the coupled equation gives a positive density, an action and a mechanical momentum, by the polar substitution, and the substitution is a bijection on the $N$-regular set. The connection is a datum of the equation and not of the solution, so it costs the arrow nothing.
 
-**The reverse arrow now takes three data and returns one field.** Given $(\rho,S_{\tilde\Xi},A)$ with $\rho>0$, the field is $r e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. **The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it**, and the classical object it names is a charged fluid with a prescribed field.
+**The reverse arrow now takes three data and returns one field.** Given $(\rho,S_{\tilde\Xi},A)$ with $\rho>0$, the field is $\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. **The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it**, and the classical object it names is a charged fluid with a prescribed field.
 
 | | the word's data | what the reverse map needs beyond it | the medium it makes |
 | --- | --- | --- | --- |
-| charged scalar | $r$, $\theta_{\mathrm{pha}}$ | the energy equation, which is the Hamiltonian | a charged Madelung fluid |
+| charged scalar | $\varrho$, $\theta_{\mathrm{pha}}$ | the energy equation, which is the Hamiltonian | a charged Madelung fluid |
 | charged spin | eight parameters | the connection, and a closure of the frame's transport | a charged Cosserat medium |
 | charged vector | the same eight | the connection, which is the field itself | a self-acting compressible medium |
 
@@ -282,24 +282,24 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 ## Summary
 
-The charged Klein–Gordon equation is $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is the free article's $r e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
+The charged Klein–Gordon equation is $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
-The density is $r^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
+The density is $\varrho^{2}$ and the conserved density is the mechanical phase rate times it, gauge invariant where the free one was not. The velocity is $\tilde P^{\mathrm{mech}}/m$, an invertible element exactly where the quantum potential vanishes and no longer a gradient.
 
 The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
 
 The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
-The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gauge invariant, and the number density's sign never moves. The degenerate set is $r=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on gauge orbits rather than on triples.
+The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gauge invariant, and the number density's sign never moves. The degenerate set is $\varrho=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on gauge orbits rather than on triples.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | The word; the free article's, unchanged by the coupling |
-| $r>0$ | Scale; $\rho_{\mathrm{num}}=r^{2}$ |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon$ | The word; the free article's, unchanged by the coupling |
+| $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
 | $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
@@ -313,7 +313,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | The field strength; $\det F$ is $(\vec E\cdot\vec B)^{2}$ up to a factor |
 | $\omega_{\mu\nu}$ | The vorticity; $\omega=ϙF/m$ |
 | $\Phi_B$ | The flux through a loop; $\oint\vec A\cdot\mathrm{d}\vec l$ |
-| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ | The quantum potential; untouched by the coupling |
+| $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | The quantum potential; untouched by the coupling |
 | $k_m=mc/\hbar$ | The mass wave number |
 
 ## Further Reading

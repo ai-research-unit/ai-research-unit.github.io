@@ -58,7 +58,7 @@ Each quaternion unit satisfies $\vec e_\mu^2 = -e_t$, but the $\vec e_\mu$ do no
 The two appear side by side in the complete polar decomposition of the field,
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
@@ -77,7 +77,7 @@ i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi},
 i\,\mathbb{B}_{\Phi} = \mathbb{B}_{\Psi},
 $$
 
-so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.
+so $i$ carries $\mathbb{B}_{\Psi}$ out of itself; it is not an operator on $\mathbb{B}_{\Psi}$. The phrase "the complex structure of $\mathbb{B}_{\Psi}$", if used at all, can only mean the complex structure of the carrier: as a real vector space $\mathbb{B}_{\Psi}$ can be given some complex structure abstractly, but none is canonical, and multiplication by $i$ is not one. A reader is most likely to slip here, because the polar word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ contains both an $i$, inside the central factor, and a non-central root inside the rotor; the $i$ does not act on $\mathbb{B}_{\Psi}$, it maps it to its complement.
 
 | Object | Where it lives | Central? | Role |
 |---|---|---|---|

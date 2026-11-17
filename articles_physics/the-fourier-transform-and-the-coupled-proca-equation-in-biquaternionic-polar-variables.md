@@ -6,7 +6,7 @@
 
 **The free symbol is real and the coupled symbol is not, and that is the whole difference.** The free symbol $\sigma=(k^{2}-k_m^{2})\delta-k_\mu k_\nu$ is a real symmetric matrix, so it commutes with complex conjugation and cannot generate a phase. The coupled symbol is $-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\pi_\mu\pi_\nu$: **Hermitian with an imaginary part, and the imaginary part is the curvature.** The phase slot is therefore open in the coupled theory — but only at second order and only through the field strength, never through the potential.
 
-**The second finding is that the branch label disappears and the cone with it.** The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $r^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. **One degenerate variety becomes one point**, and the article states the collapse as a transfer of codimension and not as a loss of structure.
+**The second finding is that the branch label disappears and the cone with it.** The free chart's two branches are the two signs of a real indefinite invariant; the coupled field's norm is a complex number of modulus $\varrho^{2}$ and a complex number has no sign, so there is nothing to label. In frequency space the free amplitude cone — codimension one, three-dimensional — collapses to the origin of the chart, which is codimension eight. **One degenerate variety becomes one point**, and the article states the collapse as a transfer of codimension and not as a loss of structure.
 
 **The third finding is that the returned phase and the gauge group are one coordinate, and the symbol is blind to it.** The parent proves that a constant central unit multiplies the word's leftmost factor and that the gauge transformation is therefore the motion of one coordinate. **In frequency space the same motion shifts $\pi_\mu$ and leaves the obstruction alone**, so the symbol's dependence on the gauge parameter is a translation of its argument and nothing else. The phase is a coordinate of the field and not a degree of freedom of the symbol.
 
@@ -31,19 +31,19 @@ $$
 The coupled word is the parent's:
 
 $$
-\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U\,\tilde u ,
+\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U\,\tilde u ,
 \qquad
 \tilde U=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}\Bigr) ,
 \qquad
 \tilde u=\exp\Bigl(i\frac{\phi_{\mathrm{rot}}}{2}\hat n_{\mathrm{ax}}\Bigr) ,
 $$
 
-with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, and the boost and the rotor contributing three angles each. **Eight parameters for eight real components**, and the parent's N-regular set is $r>0$ with nothing else excluded. The parent's two exact mass-term statements are quoted:
+with $\varrho>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, and the boost and the rotor contributing three angles each. **Eight parameters for eight real components**, and the parent's N-regular set is $\varrho>0$ with nothing else excluded. The parent's two exact mass-term statements are quoted:
 
 $$
 \mathrm{Sc}\bigl(\tilde u^{-2}\tilde U^{-2}\bigr)\ \text{is the general value} ,
 \qquad
-\mathrm{Sc}\bigl(\tilde u^{-2}\tilde U^{-2}\bigr)=r^{2}\ \text{on the trivial-rotor slice} ,
+\mathrm{Sc}\bigl(\tilde u^{-2}\tilde U^{-2}\bigr)=\varrho^{2}\ \text{on the trivial-rotor slice} ,
 $$
 
 the first being the reduction to be evaluated and the second the exact value on $\hat n_{\mathrm{ax}}$'s being aligned with $\hat u_{\mathrm b}$ in the sense the parent fixes.
@@ -74,13 +74,13 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 ## The Branch Disappears and the Cone Collapses
 
-**The free chart's branch label is the sign of a real norm and the coupled norm has no sign.** The parent's own summary is exact: for a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$; for a complex field the norm is a complex number of modulus $r^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. **The discrete label and the continuous phase are one slot**, and the coupling is what turns the one into the other.
+**The free chart's branch label is the sign of a real norm and the coupled norm has no sign.** The parent's own summary is exact: for a real field the norm is real and its argument is a sign, which is the free article's $\varepsilon$; for a complex field the norm is a complex number of modulus $\varrho^{2}$ and its argument is $2\theta_{\mathrm{pha}}$, a continuous coordinate. **The discrete label and the continuous phase are one slot**, and the coupling is what turns the one into the other.
 
 **In frequency space the same statement is a statement about the quadratic form's reality.** The free amplitude's invariant $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ is real and indefinite, so it has a sign and a zero set; the coupled amplitude's form is complex, so it has neither. **No sign means no branch; no zero set means no cone**, and the two losses are one loss.
 
-**The cone's collapse is a collapse of codimension and it is the parent's N-regular set read backwards.** The free article's failure set is the lightlike cone of amplitudes, codimension one in four real dimensions; the coupled article's is $r=0$, the origin of an eight-parameter chart, codimension eight. **So the same equation that cut the free amplitude space in half cuts the coupled one to a point**, and the reason is that a complex norm's vanishing is two real conditions and the scale's is eight.
+**The cone's collapse is a collapse of codimension and it is the parent's N-regular set read backwards.** The free article's failure set is the lightlike cone of amplitudes, codimension one in four real dimensions; the coupled article's is $\varrho=0$, the origin of an eight-parameter chart, codimension eight. **So the same equation that cut the free amplitude space in half cuts the coupled one to a point**, and the reason is that a complex norm's vanishing is two real conditions and the scale's is eight.
 
-**The transfer is a transfer and not an analogy.** The free cone is $\langle\tilde A_\Phi\rangle_\natural=0$ on the material sector; the coupled failure is $r=0$, which is $\lVert\tilde A\rVert=0$ on $\mathbb{B}$. **The first is the vanishing of a real quadratic form on four components; the second is the vanishing of a quaternionic norm on eight**, and the corpus's N-regular set is defined by the second. The article's statement is that the second is the first's own equation extended to the wider carrier, and that its solution set shrinks from a cone to a point because the carrier grew.
+**The transfer is a transfer and not an analogy.** The free cone is $\langle\tilde A_\Phi\rangle_\natural=0$ on the material sector; the coupled failure is $\varrho=0$, which is $\lVert\tilde A\rVert=0$ on $\mathbb{B}$. **The first is the vanishing of a real quadratic form on four components; the second is the vanishing of a quaternionic norm on eight**, and the corpus's N-regular set is defined by the second. The article's statement is that the second is the first's own equation extended to the wider carrier, and that its solution set shrinks from a cone to a point because the carrier grew.
 
 **What does not collapse is the Lorenz condition.** The constraint is still one real equation among the eight, as the parent says, and its symbol is still the trace part, which carries no curvature. **So the article has one variety shrinking and one equation surviving**, and the two are different objects: the cone was a condition on the amplitude's character and the constraint is a condition on its divergence.
 
@@ -90,7 +90,7 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 **In frequency space the invariance is a statement about the identity.** The mass term's symbol is $-k_m^{2}\delta_{\mu\nu}$, which is a multiple of the identity in the amplitude space; a multiple of the identity commutes with every unitary and is annihilated by every generator of the phase rotation. **So the mass cannot break the phase symmetry and cannot supply the phase's equation**, and the parent's exact identity is the position-space face of that one sentence.
 
-**The mass does see the frame, and the parent's formula says how much.** $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ reduces to $r^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$, so the mass's value is the scale squared times a function of the rotor's axis and the boost's axis. **The frame's non-Lorentz part is seen only through the angle between the two axes**, and the parent states that as the mass term's one frame dependence.
+**The mass does see the frame, and the parent's formula says how much.** $\mathrm{Sc}(\tilde A^{\natural}\tilde A)$ reduces to $\varrho^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$, so the mass's value is the scale squared times a function of the rotor's axis and the boost's axis. **The frame's non-Lorentz part is seen only through the angle between the two axes**, and the parent states that as the mass term's one frame dependence.
 
 **What the mass does not see is the phase, and what the symbol does not see is the phase's coordinate.** The two statements are different: the mass's blindness is an invariance, and the symbol's blindness is a translation. **§*The Symbol Is Blind to the Coordinate* separates them**, and the separation is the reason the article has two sections rather than one.
 
@@ -154,9 +154,9 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 The coupled Proca symbol is $-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F^{(\Phi)}-\pi_\mu\pi_\nu$, Hermitian with a real symmetric part and an imaginary antisymmetric part. **The real part is the free symbol at the shifted momentum and the imaginary part is the curvature.** So the free chart's empty phase slot is filled by the coupling, and it is filled at second order and through the field strength: the symbol sees $\mathrm{d}A$ and not $A$. The symbol remains even in $\pi$ — the free article's parity table is unchanged — because both the translation and the rank-one part are quadratic.
 
-The branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite norm; the coupled norm is a complex number of modulus $r^{2}$ and has no sign. **In frequency space the free amplitude cone, codimension one, becomes the origin of an eight-parameter chart, codimension eight**: one degenerate variety becomes one point, and the parent's N-regular set $r>0$ is the collapse read backwards.
+The branch label disappears and the cone with it. The free chart's two branches are the two signs of a real indefinite norm; the coupled norm is a complex number of modulus $\varrho^{2}$ and has no sign. **In frequency space the free amplitude cone, codimension one, becomes the origin of an eight-parameter chart, codimension eight**: one degenerate variety becomes one point, and the parent's N-regular set $\varrho>0$ is the collapse read backwards.
 
-The mass is a modulus in the phase. $\mathrm{Sc}(\tilde A^{\natural}\tilde A)=r^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ is invariant under a constant central unit to fifteen digits, so the mass sees the scale and the two axes' relative angle and never the phase. **In frequency space the mass term is a multiple of the identity in the amplitude space**, and a multiple of the identity commutes with the phase rotation.
+The mass is a modulus in the phase. $\mathrm{Sc}(\tilde A^{\natural}\tilde A)=\varrho^{2}\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ is invariant under a constant central unit to fifteen digits, so the mass sees the scale and the two axes' relative angle and never the phase. **In frequency space the mass term is a multiple of the identity in the amplitude space**, and a multiple of the identity commutes with the phase rotation.
 
 The gauge transformation is the phase coordinate's motion, and on the symbol it is a translation of the argument: $\sigma_{\mathrm{gco}}(\pi)\mapsto\sigma_{\mathrm{gco}}(\pi+\hbar\,\mathrm{d}\vartheta)$ and nothing else. **So the symbol's gauge-invariant content is its obstruction**, and the constraint — the trace — carries no curvature, which is why the covariant Lorenz condition is the free one in $\pi$. The ledger closes with three gains and one loss: a bracket, a charge and a gauge freedom on one side, and the branch label on the other, and the loss is the carrier's doing and not the phase's.
 
@@ -166,13 +166,13 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 | --- | --- |
 | $\pi_\mu=\hbar k_\mu-q A_\mu$ | The shifted four-momentum; the symbol's argument |
 | $\varkappa$ | The coupling |
-| $r,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
+| $\varrho,\ \theta_{\mathrm{pha}},\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \phi_{\mathrm{rot}},\ \hat n_{\mathrm{ax}}$ | Scale, phase, rapidity, boost axis, rotor angle, rotor axis |
 | $\sigma_{\mathrm{gco}}=-\pi^{2}\delta+\frac{i\varkappa}{\hbar}F-\pi_\mu\pi_\nu$ | The coupled symbol; Hermitian, complex |
 | $\frac{i\varkappa}{\hbar}F^{(\Phi)}$ | The imaginary part; the obstruction |
 | $-4\pi^{2}$ | The trace; the constraint's symbol, free of curvature |
 | $\lambda=e^{i\vartheta_{\mathrm{gau}}}$ | The constant central unit; the gauge parameter |
-| $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $r^{2}$ on the trivial-rotor slice |
-| $r>0$ | The N-regular set; the failure set is $r=0$, codimension eight |
+| $\mathrm{Sc}(\tilde u^{-2}\tilde U^{-2})$ | The mass term's frame factor; $\varrho^{2}$ on the trivial-rotor slice |
+| $\varrho>0$ | The N-regular set; the failure set is $\varrho=0$, codimension eight |
 | $0.00\times10^{0}$ | The free symbol's parity residual; unchanged by the coupling |
 
 ## Further Reading
@@ -182,7 +182,7 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 - *The Fourier Transform and the Proca Equation in Biquaternionic Polar Variables*, for the free chart's parity table and the amplitude cone.
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the same symbol in components, and for the obstruction's failure to be a function of $\pi$.
 - *Gauge Fields and the Covariant Derivative*, for the commutator, the curvature and the square splitting.
-- *Degenerate Solutions of the Biquaternionic Proca Equation*, for the lightlike set whose complexified vanishing is the partner's $r=0$.
+- *Degenerate Solutions of the Biquaternionic Proca Equation*, for the lightlike set whose complexified vanishing is the partner's $\varrho=0$.
 - *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - *Norm and Pairing Conventions*, for the norm's argument and the Hermitian pairing.

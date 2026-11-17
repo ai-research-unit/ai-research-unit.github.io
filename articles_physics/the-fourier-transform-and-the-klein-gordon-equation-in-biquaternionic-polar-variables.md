@@ -6,9 +6,9 @@
 
 **Followed to the transform, the identity says what the transform's phase is.** The kernel of the transform is $e^{-i\theta_{\mathrm{pwp}}}$, and the phase is $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$. By the seed that angle is $S_{\tilde\Xi}/\hbar$. **So the phase of the transform is the action over $\hbar$**, and the polar word's phase is not a second object beside it.
 
-**The second finding is that the amplitude is what removes the symbol.** The transform of $r\,e^{-i\theta}$ is the transform of $r$ translated by the wave number, so the phase moves the support rigidly and the amplitude decides its shape. A single wave number survives exactly when the amplitude's transform is a single point, and that is exactly when the amplitude is constant. **No phase, however nonlinear, can spread a mode; the amplitude spreads it and the phase only moves it.**
+**The second finding is that the amplitude is what removes the symbol.** The transform of $\varrho\,e^{-i\theta}$ is the transform of $\varrho$ translated by the wave number, so the phase moves the support rigidly and the amplitude decides its shape. A single wave number survives exactly when the amplitude's transform is a single point, and that is exactly when the amplitude is constant. **No phase, however nonlinear, can spread a mode; the amplitude spreads it and the phase only moves it.**
 
-**The residue of that failure has a name in the parent.** Where the symbol fails, the amplitude equation carries $\Box_\Phi r/r$, the quantum potential. This article states what it is: the residue, a functional of the unknown that no function of the wave number can represent. The parent's own phrase for it, a curvature of the amplitude, is the right one, and the article shows that the curvature set is strictly larger than the set where a symbol exists.
+**The residue of that failure has a name in the parent.** Where the symbol fails, the amplitude equation carries $\Box_\Phi \varrho/\varrho$, the quantum potential. This article states what it is: the residue, a functional of the unknown that no function of the wave number can represent. The parent's own phrase for it, a curvature of the amplitude, is the right one, and the article shows that the curvature set is strictly larger than the set where a symbol exists.
 
 **The transform gives nothing to the polar form that it did not already have, and the article says so.** The word is a bijection, so the substitution adds no content and removes none. What the transform gives is a reading: the phase is the action, the amplitude is the spread, and the symbol is the free symbol on a fixed amplitude. That reading is the whole of the article.
 
@@ -31,15 +31,15 @@ $$
 E=-c\,\frac{\partial S_{\tilde\Xi}}{\partial r_t'} .
 $$
 
-**The word is quoted once.** $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}$ for a central field, with $r\geq0$ the amplitude, $\theta_{\mathrm{pha}}$ the phase and $S_{\tilde\Xi}=\hbar\,\theta_{\mathrm{pha}}$. The parent's amplitude equation and transport equation are
+**The word is quoted once.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}$ for a central field, with $\varrho\geq0$ the amplitude, $\theta_{\mathrm{pha}}$ the phase and $S_{\tilde\Xi}=\hbar\,\theta_{\mathrm{pha}}$. The parent's amplitude equation and transport equation are
 
 $$
-\left(\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi r}{r},
+\left(\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
 \nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
 $$
 
-with $\rho_{\mathrm{num}}=r^{2}$.
+with $\rho_{\mathrm{num}}=\varrho^{2}$.
 
 **The bookkeeping is stated once.** $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$, $\langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2}$, and the phase is $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$ for a positive-frequency plane wave.
 
@@ -63,19 +63,19 @@ $$
 
 ## The Amplitude Is What Spreads the Support
 
-**Finding 2.** For a field $r\,e^{-i\theta}$ with $\theta$ linear, the transform is the transform of $r$ translated by the wave number:
+**Finding 2.** For a field $\varrho\,e^{-i\theta}$ with $\theta$ linear, the transform is the transform of $\varrho$ translated by the wave number:
 
 $$
-\mathcal{F}\bigl[r\,e^{-i\theta}\bigr](k)=\hat r\,(k-k_\theta).
+\mathcal{F}\bigl[\varrho\,e^{-i\theta}\bigr](k)=\hat r\,(k-k_\theta).
 $$
 
 **The proof is the shift rule and nothing else.** Multiplication by a unit-modulus exponential of a linear phase is a translation of the transform's argument, so the exponential moves the support and the amplitude multiplies it. The convolution form is the general statement; the translation is the linear-phase case, and the linear-phase case is the one a mode is defined in.
 
-**The identity is measured, and the measurement is a convolution check.** For a Gaussian amplitude of width $0.6$ multiplied by a linear phase, the transform of the product equalled the transform of the amplitude alone shifted by the wave number, to $2.6\times10^{-16}$ of the peak. The coefficient at the peak equalled $\hat r(0)$, which is the mean of $r$, at $0.239365$ — the amplitude's mean and not its maximum, as the shift rule requires.
+**The identity is measured, and the measurement is a convolution check.** For a Gaussian amplitude of width $0.6$ multiplied by a linear phase, the transform of the product equalled the transform of the amplitude alone shifted by the wave number, to $2.6\times10^{-16}$ of the peak. The coefficient at the peak equalled $\hat r(0)$, which is the mean of $\varrho$, at $0.239365$ — the amplitude's mean and not its maximum, as the shift rule requires.
 
-**The counts are the same counts, and that is the article's structural point.** On a grid of $128$ samples the occupied count of the transform of $r\,e^{-i\theta}$ matched the occupied count of the transform of $r$ alone in every case tried: $1$ for a constant amplitude, $2$ for $\cos$, $49$ for a Gaussian of width $0.3$, and $128$ for a Gaussian of width $1.2$. **The phase does not appear in the count.**
+**The counts are the same counts, and that is the article's structural point.** On a grid of $128$ samples the occupied count of the transform of $\varrho\,e^{-i\theta}$ matched the occupied count of the transform of $\varrho$ alone in every case tried: $1$ for a constant amplitude, $2$ for $\cos$, $49$ for a Gaussian of width $0.3$, and $128$ for a Gaussian of width $1.2$. **The phase does not appear in the count.**
 
-**So a symbol exists for the polar theory exactly when the amplitude is constant.** A symbol is a single coefficient at a single wave number; by the shift rule the coefficients of the transform are the coefficients of $\hat r$, moved; those coefficients are one number at one point exactly when $\hat r$ is a delta, which is exactly when $r$ is constant. **The condition is on $r$ and not on $\theta$**, and it is the polar form's version of the constant-coefficient licence that the element form states as a hypothesis about $\tilde M$.
+**So a symbol exists for the polar theory exactly when the amplitude is constant.** A symbol is a single coefficient at a single wave number; by the shift rule the coefficients of the transform are the coefficients of $\hat r$, moved; those coefficients are one number at one point exactly when $\hat r$ is a delta, which is exactly when $\varrho$ is constant. **The condition is on $\varrho$ and not on $\theta$**, and it is the polar form's version of the constant-coefficient licence that the element form states as a hypothesis about $\tilde M$.
 
 **The reading of the word changes with the count.** For a constant amplitude the central word has one free entry, the phase, and the transform reads it exactly through its gradient. For a varying amplitude the word has two, and the transform reads $\hat r$, which is a function and not a number. **The amplitude is the only entry of the word that a transform cannot represent by a label.**
 
@@ -83,29 +83,29 @@ $$
 
 ## The Quantum Potential Is the Residue
 
-**Finding 3.** Where the symbol fails, the amplitude equation carries $\Box_\Phi r/r$, and that term is the residue of the failure: it is local in $r$, it is not a function of the wave number, and no symbol can contain it.
+**Finding 3.** Where the symbol fails, the amplitude equation carries $\Box_\Phi \varrho/\varrho$, and that term is the residue of the failure: it is local in $\varrho$, it is not a function of the wave number, and no symbol can contain it.
 
 **The parent's identity already displays it.** Dividing the amplitude equation by $\hbar^{2}$ and multiplying by $-1$ gives
 
 $$
-\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\frac{\Box_\Phi r}{r},
+\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
 **The result is the dispersion relation with one term added.** It is the free dispersion relation plus a term built from the amplitude, and **that term is the whole difference between the polar theory and a theory with a symbol**; the parent says exactly this when it notes that the term vanishes for a plane wave and not for a wave packet.
 
-**Its size is measured, and the measurement separates curvature from spread.** The maximum of $\lvert\Box_\Phi r/r\rvert$ was $0.000$ for a constant amplitude, $0.999$ for $\cos x$, $3.775$ for a Gaussian of width $1.2$ and $1155.53$ for a Gaussian of width $0.3$. The narrow amplitude has the large curvature, which is the expected direction: a sharper envelope has the larger second derivative relative to its own size.
+**Its size is measured, and the measurement separates curvature from spread.** The maximum of $\lvert\Box_\Phi \varrho/\varrho\rvert$ was $0.000$ for a constant amplitude, $0.999$ for $\cos x$, $3.775$ for a Gaussian of width $1.2$ and $1155.53$ for a Gaussian of width $0.3$. The narrow amplitude has the large curvature, which is the expected direction: a sharper envelope has the larger second derivative relative to its own size.
 
-**But the condition $\Box_\Phi r=0$ is strictly weaker than the condition that the amplitude be constant.** An affine amplitude in one coordinate satisfies $\Box_\Phi r=0$ and is not constant, so the quantum potential vanishes for it while its transform is a derivative of a delta rather than a delta: one point of support, but a jet at that point and not a single coefficient. **The quantum potential measures the curvature of the amplitude; a symbol needs the amplitude's flatness.** The two conditions coincide only for the constant case, and the gap between them is the reason the residue is not by itself a test for the existence of a symbol.
+**But the condition $\Box_\Phi \varrho=0$ is strictly weaker than the condition that the amplitude be constant.** An affine amplitude in one coordinate satisfies $\Box_\Phi \varrho=0$ and is not constant, so the quantum potential vanishes for it while its transform is a derivative of a delta rather than a delta: one point of support, but a jet at that point and not a single coefficient. **The quantum potential measures the curvature of the amplitude; a symbol needs the amplitude's flatness.** The two conditions coincide only for the constant case, and the gap between them is the reason the residue is not by itself a test for the existence of a symbol.
 
-**That gap is why the article states the symbol condition in §*The Amplitude Is What Spreads the Support* and not here.** A reader who looks for the symbol test in the appearance of $\Box_\Phi r/r$ will find that it disappears for amplitudes that still have no symbol. **The correct order is: constant amplitude first, quantum potential second**, and the article keeps that order.
+**That gap is why the article states the symbol condition in §*The Amplitude Is What Spreads the Support* and not here.** A reader who looks for the symbol test in the appearance of $\Box_\Phi \varrho/\varrho$ will find that it disappears for amplitudes that still have no symbol. **The correct order is: constant amplitude first, quantum potential second**, and the article keeps that order.
 
-**The residue is a functional and not a coefficient.** A symbol is a function of $\tilde K_\Phi$ alone; $\Box_\Phi r/r$ depends on the solution, so two fields with the same wave number and different amplitudes have different equations. **That is what "no symbol" means in this case**: not that the operator is unknown, but that the operator is different for every field it is applied to.
+**The residue is a functional and not a coefficient.** A symbol is a function of $\tilde K_\Phi$ alone; $\Box_\Phi \varrho/\varrho$ depends on the solution, so two fields with the same wave number and different amplitudes have different equations. **That is what "no symbol" means in this case**: not that the operator is unknown, but that the operator is different for every field it is applied to.
 
 ## The Transport Equation Has No Symbol
 
 **Finding 4.** The transport equation is quadratic in the amplitude, and it has no symbol either, for a second reason.
 
-**The reason is the density.** The equation is $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=r^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\nabla S$ are products of two fields, so their transforms are convolutions. **A symbol represents a product by a product; here the product is inside the operator**, and no multiplication at one wave number can stand for it.
+**The reason is the density.** The equation is $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\nabla S$ are products of two fields, so their transforms are convolutions. **A symbol represents a product by a product; here the product is inside the operator**, and no multiplication at one wave number can stand for it.
 
 **The two equations fail differently and the difference is worth keeping.** The amplitude equation fails because its coefficient depends on the solution; the transport equation fails because it is nonlinear in the amplitude. The first failure is a coefficient problem and the second is a superposition problem, and the polar pair has one of each. **That is why the polar form has neither a symbol nor a linearization that would produce one.**
 
@@ -117,27 +117,27 @@ $$
 
 **The denial has teeth because the two transforms can look alike.** Both are invertible, both exchange a function with a transform, and both are used to simplify an equation. What separates them is what the variables are: the Legendre transform acts on the field's own degrees of freedom and leaves the spacetime argument untouched, while the Fourier transform acts on the spacetime argument and leaves the field's degrees of freedom untouched. **The polar parameters live on the wrong side of that line.**
 
-**So the article transforms the field and not the parameters.** Every display above is a transform in $\tilde R_\Phi$, with $r$ and $\theta_{\mathrm{pha}}$ carried along as coefficients. Nothing in the article transforms $r$ or $\theta_{\mathrm{pha}}$ into conjugate partners, and nothing claims a momentum-space reading of the polar word beyond what the field's own transform supplies.
+**So the article transforms the field and not the parameters.** Every display above is a transform in $\tilde R_\Phi$, with $\varrho$ and $\theta_{\mathrm{pha}}$ carried along as coefficients. Nothing in the article transforms $\varrho$ or $\theta_{\mathrm{pha}}$ into conjugate partners, and nothing claims a momentum-space reading of the polar word beyond what the field's own transform supplies.
 
 ## Limits
 
-**The constant-amplitude case is the licence.** The polar theory has a symbol exactly when $r$ is constant, and every statement about a symbol in this article is confined to that case. For a varying amplitude there is no symbol and the article says so rather than approximating one: the parent's quantum potential is the exact residue, not a correction.
+**The constant-amplitude case is the licence.** The polar theory has a symbol exactly when $\varrho$ is constant, and every statement about a symbol in this article is confined to that case. For a varying amplitude there is no symbol and the article says so rather than approximating one: the parent's quantum potential is the exact residue, not a correction.
 
-**A central field is assumed throughout.** The word $r\,e^{i\theta}$ with a central exponential describes one coefficient of the field, and the polar parent's §*General Fields* records that a general field is four independent copies with four unrelated phases. The transform acts on each copy, the shift rule holds for each, and the four supports are translated copies of the four amplitudes' transforms. Nothing new appears, and the article does not pursue it.
+**A central field is assumed throughout.** The word $\varrho\,e^{i\theta}$ with a central exponential describes one coefficient of the field, and the polar parent's §*General Fields* records that a general field is four independent copies with four unrelated phases. The transform acts on each copy, the shift rule holds for each, and the four supports are translated copies of the four amplitudes' transforms. Nothing new appears, and the article does not pursue it.
 
 **The denial is restated as a limit.** Every transform here acts on a $\mathbb{B}$-valued function and returns one; the word is a bijection, so the substitution adds nothing and removes nothing. No step carries a field out of its sector and no step carries a polar parameter into a wave number.
 
 ## Open Questions
 
-**One question is left open, and it is whether a position-and-wave-number reading exists for the polar pair.** The failure documented here is the failure of a symbol, which is a function of the wave number alone. Whether a mixed object — a function of both the wave number and the position, in the manner of a Wigner function — can represent the polar pair's two equations, so that $\Box_\Phi r/r$ becomes a term in that object rather than a residue outside it, is not decided here. The parent's quantum potential is local in $r$, which makes the question well posed; nothing in this article answers it.
+**One question is left open, and it is whether a position-and-wave-number reading exists for the polar pair.** The failure documented here is the failure of a symbol, which is a function of the wave number alone. Whether a mixed object — a function of both the wave number and the position, in the manner of a Wigner function — can represent the polar pair's two equations, so that $\Box_\Phi \varrho/\varrho$ becomes a term in that object rather than a residue outside it, is not decided here. The parent's quantum potential is local in $\varrho$, which makes the question well posed; nothing in this article answers it.
 
 ## Summary
 
 The polar parent's identity, that the biquaternionic gradient of the action is the four-momentum, says through the transform that the transform's phase is the action over $\hbar$: $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)=S_{\tilde\Xi}/\hbar=\theta_{\mathrm{pha}}$. The transform's kernel is therefore not a construction imposed from outside; it is the field's own action, and the element form's phase is that sentence written in the other variable set. Measured: one occupied mode at the predicted index, coefficient $1.000$, every other coefficient below $5.0\times10^{-16}$.
 
-The transform of $r\,e^{-i\theta}$ with a linear phase is the transform of $r$ translated by the wave number, verified to $2.6\times10^{-16}$, and the occupied counts are the amplitude's counts: $1$, $2$, $49$ and $128$ for a constant, a cosine and two Gaussians, with the phase absent from the count. **So the phase moves the support and the amplitude is its shape**, and a symbol exists exactly when the amplitude is constant.
+The transform of $\varrho\,e^{-i\theta}$ with a linear phase is the transform of $\varrho$ translated by the wave number, verified to $2.6\times10^{-16}$, and the occupied counts are the amplitude's counts: $1$, $2$, $49$ and $128$ for a constant, a cosine and two Gaussians, with the phase absent from the count. **So the phase moves the support and the amplitude is its shape**, and a symbol exists exactly when the amplitude is constant.
 
-Where the symbol fails the amplitude equation carries $\Box_\Phi r/r$, the parent's quantum potential: $0.000$ for a constant amplitude, $0.999$ for a cosine, $3.775$ and $1155.53$ for two Gaussians. That term is a functional of the unknown and no function of the wave number can hold it. It is also a weaker test than the symbol condition, because $\Box_\Phi r=0$ holds for an amplitude affine in one coordinate, whose transform on the line is a derivative of a delta rather than a delta; **the quantum potential measures curvature and a symbol needs flatness.** The transport equation fails separately, being quadratic in the amplitude, and the polar pair therefore has one coefficient failure and one superposition failure and no symbol at either.
+Where the symbol fails the amplitude equation carries $\Box_\Phi \varrho/\varrho$, the parent's quantum potential: $0.000$ for a constant amplitude, $0.999$ for a cosine, $3.775$ and $1155.53$ for two Gaussians. That term is a functional of the unknown and no function of the wave number can hold it. It is also a weaker test than the symbol condition, because $\Box_\Phi \varrho=0$ holds for an amplitude affine in one coordinate, whose transform on the line is a derivative of a delta rather than a delta; **the quantum potential measures curvature and a symbol needs flatness.** The transport equation fails separately, being quadratic in the amplitude, and the polar pair therefore has one coefficient failure and one superposition failure and no symbol at either.
 
 ## Summary of Notation
 
@@ -146,11 +146,11 @@ Where the symbol fails the amplitude equation carries $\Box_\Phi r/r$, the paren
 | $S_{\tilde\Xi}/\hbar=\theta_{\mathrm{pha}}$ | The action's angle; the polar phase |
 | $\tilde\nabla_\Phi S_{\tilde\Xi}=\tilde P_\Phi=\hbar\tilde K_\Phi$ | The parent's seed: the gradient of the action is the four-momentum |
 | $\theta_{\mathrm{pwp}}=\mathrm{Sc}(\tilde K_\Phi\tilde R_\Phi^\natural)$ | The transform's angle; equal to $S_{\tilde\Xi}/\hbar$ |
-| $r$ | The amplitude; the only entry that spreads the support |
-| $\hat r(k-k_\theta)$ | The transform of $r\,e^{-i\theta}$; a translated amplitude transform |
-| $\Box_\Phi r/r$ | The quantum potential; the residue of the missing symbol |
-| $\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\Box_\Phi r/r$ | The amplitude equation as a shifted dispersion relation |
-| $\rho_{\mathrm{num}}=r^{2}$ | The density; the transport equation's quadratic term |
+| $\varrho$ | The amplitude; the only entry that spreads the support |
+| $\hat r(k-k_\theta)$ | The transform of $\varrho\,e^{-i\theta}$; a translated amplitude transform |
+| $\Box_\Phi \varrho/\varrho$ | The quantum potential; the residue of the missing symbol |
+| $\langle\tilde K_\Phi\rangle_\natural=-k_m^{2}+\Box_\Phi \varrho/\varrho$ | The amplitude equation as a shifted dispersion relation |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; the transport equation's quadratic term |
 | $1$, $2$, $49$, $128$ | Occupied counts of $128$ for four amplitudes |
 
 ## Further Reading

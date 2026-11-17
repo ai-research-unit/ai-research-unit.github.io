@@ -111,7 +111,7 @@ $$
 
 because $P=U^*P'U=U^*e^HU=e^{U^*HU}$. The two exponential forms share the $*$-unitary factor and differ by the conjugation of the Hermitian factor.
 
-**Example.** For a positive definite Hermitian $A=P$, the left and right polar decompositions are $A=P\cdot I$; the exponential form is $A=e^H$ with $K=0$. For a $*$-unitary $A=U$, the decomposition is $A=I\cdot U$; the exponential form is $A=e^{iK}$. For a scalar $A=re^{i\theta}$ with $r>0$, $A=e^{\log r}e^{i\theta}$, the two Hermitian factors are real scalars and commute.
+**Example.** For a positive definite Hermitian $A=P$, the left and right polar decompositions are $A=P\cdot I$; the exponential form is $A=e^H$ with $K=0$. For a $*$-unitary $A=U$, the decomposition is $A=I\cdot U$; the exponential form is $A=e^{iK}$. For a scalar $A=\varrho e^{i\theta}$ with $\varrho>0$, $A=e^{\log \varrho}e^{i\theta}$, the two Hermitian factors are real scalars and commute.
 
 ## The Normal Case
 

@@ -50,7 +50,7 @@ $$
 
 | Takabayasi | polar word | grade |
 | --- | --- | --- |
-| $\rho$, the rest density | $r^{2}$, the scale squared | identity |
+| $\rho$, the rest density | $\varrho^{2}$, the scale squared | identity |
 | $v_\mu$, the unit four-velocity | $\tilde U_{\Psi,\mathrm b}$, the Hermitian boost | identity |
 | $w_\mu$, the unit spin vector | $\tilde u_{\mathrm r}$, the real rotor | identity |
 | $k_\mu$, the momentum | $\tilde K_{\mu}/k_m$, the phase gradient in units of the mass wave number | reading, with a qualifier |
@@ -58,7 +58,7 @@ $$
 
 **Two of the rows carry a unit as well as a comparison, and the momentum row is one of them.** Takabayasi defines $k_\mu=p_\mu/(mc)$, a momentum divided by a mass, so his $k_\mu$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=mc/\hbar$, so the row reads $k_\mu=\tilde K_\mu/k_m$ and a table that equates the two loses the $\hbar$. His units also set $c=1$, which is why his $v_\mu$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
 
-**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
+**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=\varrho^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
 ### Why the count forces the fifth row
 
@@ -84,7 +84,7 @@ $$
 
 ## The Four Brackets and the Non-Closure
 
-**Differentiating the word separates the derivative into four terms of four different types.** For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,
+**Differentiating the word separates the derivative into four terms of four different types.** For $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
@@ -290,8 +290,8 @@ No experiment separates the two formulations. What separates them is the origin 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The field, in its word |
-| $r$, $\rho_{\mathrm{num}}=r^{2}$ | Scale; proper density |
+| $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The field, in its word |
+| $\varrho$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale; proper density |
 | $\theta_{\mathrm{pha}}$ | Angle of the word; $S=\hbar\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | Rapidity and unit axis of the boost |
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Angle and unit axis of the rotor |

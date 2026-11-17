@@ -178,7 +178,7 @@ The same element carries five descriptions, and they are worth setting side by s
 
 | reading | form | value | what it carries |
 | --- | --- | --- | --- |
-| word | $r\,e^{i\theta_{\mathrm{pha}}}$ | $r=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}$, $\theta_{\mathrm{pha}}=-\frac{E_{R}\,r'_{t}}{\hbar\,c}$ | the scale is the survival amplitude, the phase the oscillation |
+| word | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\varrho=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}$, $\theta_{\mathrm{pha}}=-\frac{E_{R}\,r'_{t}}{\hbar\,c}$ | the scale is the survival amplitude, the phase the oscillation |
 | central exponent | $e^{\Theta}$ | $\Theta=-\frac{iz_{\star}\,r'_{t}}{\hbar\,c}$ | the complex angle |
 | Cartan | $\tilde A_{\Phi}\tilde Q$ | $\tilde A_{\Phi}=e^{-\frac{\Gamma\,r'_{t}}{2\,\hbar\,c}}\,e_{t}$, $\tilde Q=e^{-i\theta_{\mathrm{evo}}}\,e_{t}$ | the amplitude and the phase |
 | generator | $-iz_\star$ | $-\tfrac{\Gamma}{2}e_t-iE_Re_t$ | Hermitian damping plus anti-Hermitian energy |

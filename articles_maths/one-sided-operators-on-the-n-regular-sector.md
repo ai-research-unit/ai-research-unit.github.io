@@ -17,16 +17,16 @@ The two-sided operator of the polar decomposition is the product of the left act
 **The complete polar decomposition.** The article reads the operators through it
 
 $$
-\tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
-\qquad \Rho=r\exp(i\theta_{\mathrm{pha}}),
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho\exp(i\theta_{\mathrm{pha}})\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
+\qquad \varrho\exp(i\theta_{\mathrm{pha}}),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
 The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
 
-The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\Rho^{2}$. It does not, in general, preserve the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. Its block form in the splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is
+The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. It does not, in general, preserve the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. Its block form in the splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is
 
 $$
 L_{\tilde Q}=
@@ -82,16 +82,16 @@ $$
 and it is multiplicative, $\langle\tilde Q\tilde Q'\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\langle\tilde Q'\rangle_{\natural}$. The polar word is
 
 $$
-\tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
-\Rho=r\exp(i\theta_{\mathrm{pha}}),\qquad
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\varrho\exp(i\theta_{\mathrm{pha}}),\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
 \tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $r=\lvert\Rho\rvert$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit vectors. The modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{\langle\tilde Q\rangle_{\natural}}$ on the principal branch, so $\varrho=\lvert\langle\tilde Q\rangle_{\natural}\rvert^{1/2}$ and $\theta_{\mathrm{pha}}=\tfrac12\arg \langle\tilde Q\rangle_{\natural}$. The factors satisfy
 
 $$
-\Rho^{*}=\bar\Rho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
+\varrho^{*}=\varrho,\qquad \tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b},\qquad \tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1},\qquad \langle\tilde U_{\mathrm b}\rangle_{\natural}=\langle\tilde u_{\mathrm r}\rangle_{\natural}=1 .
 $$
 
 The matrix model is $\mathsf M_2:\mathbb{B}\to M_2(\mathbb{C})$, with $\mathsf M_2(e_t)=I_2$ and $\mathsf M_2(\vec e_k)=-i\sigma_k$, the $\sigma_k$ being the Pauli matrices. It is $\mathbb{C}$-linear and satisfies $\mathsf M_2(\tilde Q^{*})=\mathsf M_2(\tilde Q)^{\dagger}$, and its determinant is the norm, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$.
@@ -130,30 +130,30 @@ The general algebra of the one-sided operators, without the polar word, is *One-
 
 ### The Factorisation Through the Polar Word
 
-**Proposition.** With $\tilde Q=\Rho\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,
+**Proposition.** With $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
-\boxed{\;L_{\tilde Q}=L_{\Rho}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},\qquad
-R_{\tilde Q}=R_{\tilde u_{\mathrm r}}\circ R_{\tilde U_{\mathrm b}}\circ R_{\Rho}\;},
+\boxed{\;L_{\tilde Q}=L_{\varrho\,e^{i\theta_{\mathrm{pha}}}}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},\qquad
+R_{\tilde Q}=R_{\tilde u_{\mathrm r}}\circ R_{\tilde U_{\mathrm b}}\circ R_{\varrho\,e^{i\theta_{\mathrm{pha}}}}\;},
 $$
 
 and the modulus acts on either side by the same scalar,
 
 $$
-L_{\Rho}=R_{\Rho}=\Rho\,\mathrm{id}.
+L_{\varrho\,e^{i\theta_{\mathrm{pha}}}}=R_{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathrm{id}.
 $$
 
-*Proof.* The identities are the composition laws (b), read on the word. The modulus is central, so $L_{\Rho}(\tilde X)=\Rho\tilde X=\tilde X\Rho=R_{\Rho}(\tilde X)$.
+*Proof.* The identities are the composition laws (b), read on the word. The modulus is central, so $L_{\varrho\,e^{i\theta_{\mathrm{pha}}}}(\tilde X)=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde X=\tilde X\varrho\,e^{i\theta_{\mathrm{pha}}}=R_{\varrho\,e^{i\theta_{\mathrm{pha}}}}(\tilde X)$.
 
 **Remark (the order).** In the left reading the rightmost factor of the word acts first: the rotor, then the boost, then the modulus. In the right reading the order is reversed: the modulus, then the boost, then the rotor, because the parameter sits on the right. The two-sided operator uses both readings: the left action of the word and the right action of its conjugate.
 
-**Remark (the complex exponent).** The modulus is a single complex scalar, $\Rho=r\exp(i\theta_{\mathrm{pha}})$. Its left multiplication is the operator $\exp(\ln r+i\theta_{\mathrm{pha}})\,\mathrm{id}$. The exponent is the complex number $\ln\Rho=\ln r+i\theta_{\mathrm{pha}}$; the real part is the scale and the imaginary part is the phase. The one-sided operator keeps both. The two-sided operator keeps only $2\ln r$ and cancels the imaginary part.
+**Remark (the complex exponent).** The modulus is a single complex scalar, $\varrho\exp(i\theta_{\mathrm{pha}})$. Its left multiplication is the operator $\exp(\ln \varrho+i\theta_{\mathrm{pha}})\,\mathrm{id}$. The exponent is the complex number $\ln\varrho\,e^{i\theta_{\mathrm{pha}}}=\ln \varrho+i\theta_{\mathrm{pha}}$; the real part is the scale and the imaginary part is the phase. The one-sided operator keeps both. The two-sided operator keeps only $2\ln \varrho$ and cancels the imaginary part.
 
 The four factors are collected in the following table. A factor **preserves** a sector when it maps the sector into itself, **exchanges** the two sectors when it maps one onto the other, and **mixes** them when some element of a sector has a nonzero component in both sectors after the multiplication.
 
 | factor | one-sided operator | sector action | factor on $\langle\tilde Q\rangle_{\natural}$ |
 |---|---|---|---|
-| scale $r$ | $r\,\mathrm{id}$ | preserves both | $r^{2}$ |
+| scale $\varrho$ | $\varrho\,\mathrm{id}$ | preserves both | $\varrho^{2}$ |
 | phase $\exp(i\theta_{\mathrm{pha}})$ | $\exp(i\theta_{\mathrm{pha}})\,\mathrm{id}$ | preserves at $\theta_{\mathrm{pha}}\equiv0\pmod{\pi}$, exchanges at $\theta_{\mathrm{pha}}\equiv\tfrac{\pi}{2}\pmod{\pi}$, mixed otherwise | $\exp(2i\theta_{\mathrm{pha}})$ |
 | boost $\tilde U_{\mathrm b}$ | $L_{\tilde U_{\mathrm b}}$ | mixes for $\theta_{\mathrm{rpd}}>0$ | $1$ |
 | rotor $\tilde u_{\mathrm r}$ | $L_{\tilde u_{\mathrm r}}$ | mixes for $\theta_{\mathrm{axr}}\not\equiv0\pmod{2\pi}$ | $1$ |
@@ -164,20 +164,20 @@ The table is justified factor by factor below; the phase row is the subject of �
 
 **Proposition.** For all $\tilde Q,\tilde X$,
 
-$$ \langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\Rho^{2}\langle \tilde X\rangle_{\natural},
+$$ \langle L_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}\langle \tilde X\rangle_{\natural},
 \qquad
 \langle R_{\tilde Q}\tilde X\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}\,\langle \tilde X\rangle_{\natural}, $$
 
 and the complex determinant and the trace of the left multiplication are
 
 $$
-\boxed{\;\det_{\mathbb{C}}L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}=\Rho^{4},\qquad
+\boxed{\;\det_{\mathbb{C}}L_{\tilde Q}=\langle\tilde Q\rangle_{\natural}^{2}=\varrho^{4}e^{4i\theta_{\mathrm{pha}}},\qquad
 \operatorname{tr}L_{\tilde Q}=4Q_t\;}.
 $$
 
 *Proof.* The norm is multiplicative. In the matrix model $L_{\tilde Q}$ is $\tilde X\mapsto\mathsf M_2(\tilde Q)\tilde X$, the left multiplication by $\mathsf M_2(\tilde Q)$ on $M_2(\mathbb{C})$, which is $\mathsf M_2(\tilde Q)\otimes I_2$; its determinant is $\det\mathsf M_2(\tilde Q)^{2}=\langle\tilde Q\rangle_{\natural}^{2}$ and its trace is $2\operatorname{tr}\mathsf M_2(\tilde Q)=4Q_t$. The right multiplication is the mirror, with the same determinant and trace.
 
-**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\Rho^{2}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form, $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$.
+**Corollary (the complex similarity).** The one-sided operator multiplies the complex quadratic form $\langle\cdot\rangle_{\natural}$ by $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. On the norm-one slice $\langle\tilde X\rangle_{\natural}=1$ it is $\mathbb{C}$-orthogonal: it preserves $N$ and has complex determinant $1$. It is not, in general, an isometry of either real form, $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$.
 
 The last clause is the subject of the next section: a complex isometry can exchange the two real forms, and the phase does exactly that.
 
@@ -533,19 +533,19 @@ $$
 
 *Proof.* The scalar $i$ is central, so the two factors commute with $\tilde X$ and with each other, and $i(-i)=1$. The block product is the same computation with the two off-diagonal exchanges.
 
-**Remark (the two readings of the same word).** The one-sided operator of the phase is $\exp(i\theta_{\mathrm{pha}})\mathrm{id}$; the two-sided operator is the identity. The one-sided operator sees the whole complex modulus $\Rho=r\exp(i\theta_{\mathrm{pha}})$; the two-sided operator sees only its modulus $r$ and the two non-central factors. The cancellation is the product of the left factor $\exp(i\theta_{\mathrm{pha}})$ and the right factor $\exp(-i\theta_{\mathrm{pha}})$; it is exact because the two scalars are central and inverse. The phase is not halved in either reading; it is either kept whole, one-sided, or cancelled whole, two-sided.
+**Remark (the two readings of the same word).** The one-sided operator of the phase is $\exp(i\theta_{\mathrm{pha}})\mathrm{id}$; the two-sided operator is the identity. The one-sided operator sees the whole complex modulus $\varrho\exp(i\theta_{\mathrm{pha}})$; the two-sided operator sees only its modulus $\varrho$ and the two non-central factors. The cancellation is the product of the left factor $\exp(i\theta_{\mathrm{pha}})$ and the right factor $\exp(-i\theta_{\mathrm{pha}})$; it is exact because the two scalars are central and inverse. The phase is not halved in either reading; it is either kept whole, one-sided, or cancelled whole, two-sided.
 
 ## The Four Factors, One-Sided
 
 ### The Scale
 
-The scale is $r=\exp(\ln r)$, positive, real and central. Its one-sided operators are
+The scale is $\varrho=\exp(\ln \varrho)$, positive, real and central. Its one-sided operators are
 
 $$
-L_r=R_r=r\,\mathrm{id}.
+L_r=R_r=\varrho\,\mathrm{id}.
 $$
 
-In the block decomposition $D_r=r\,\mathrm{id}$ and $O_r=0$: the scale preserves both sectors and multiplies every coordinate by $r$. The norm is multiplied by $r^{2}$, because it is quadratic in the element. The two-sided operator acts by $r^{2}$, once on each side. The determinant of $L_r$ is $r^{4}$ on the complex four-space and $r^{8}$ on the real eight-space. The exponent form of the comparison is in the companion.
+In the block decomposition $D_r=\varrho\,\mathrm{id}$ and $O_r=0$: the scale preserves both sectors and multiplies every coordinate by $\varrho$. The norm is multiplied by $\varrho^{2}$, because it is quadratic in the element. The two-sided operator acts by $\varrho^{2}$, once on each side. The determinant of $L_r$ is $\varrho^{4}$ on the complex four-space and $\varrho^{8}$ on the real eight-space. The exponent form of the comparison is in the companion.
 
 ### The Boost
 
@@ -622,10 +622,10 @@ The following table collects the comparison. The rank is the complex rank of the
 | | one-sided $L_{\tilde Q}$ | two-sided $\mathrm{Sd}_{\tilde Q}$ |
 |---|---|---|
 | parameter map | linear, faithful | quadratic; kernel $U(1)$ on the invertibles |
-| scale | $r$ | $r^{2}$ |
+| scale | $\varrho$ | $\varrho^{2}$ |
 | phase | $\exp(i\theta_{\mathrm{pha}})$, exchange at $\pi/2$ | $1$ |
-| norm of the image | $\Rho^{2}\langle \tilde X\rangle_{\natural}$ | $r^{4}\langle \tilde X\rangle_{\natural}$ |
-| complex determinant | $\Rho^{4}$ | $r^{8}$ |
+| norm of the image | $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}\langle \tilde X\rangle_{\natural}$ | $\varrho^{4}\langle \tilde X\rangle_{\natural}$ |
+| complex determinant | $\varrho^{4}e^{4i\theta_{\mathrm{pha}}}$ | $\varrho^{8}$ |
 | image on the invertibles | $\cong GL(2,\mathbb{C})$, real dimension $8$ | $\cong CO^{+}(1,3)$, real dimension $7$ |
 | kernel on the invertibles | trivial | $U(1)$ |
 | nonzero null parameter | rank $2$, right ideal | rank $1$, complex line |
@@ -674,7 +674,7 @@ $$
 
 The determinant is the fourth power of the scalar, not the square, because the left multiplication acts on the four-dimensional algebra. The trace is four times the scalar because the diagonal of $L_{\tilde Q}$ has the four entries $Q_t$.
 
-The polar word splits the operator into four one-sided factors. The modulus is the scalar $\Rho\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
+The polar word splits the operator into four one-sided factors. The modulus is the scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
 
 $$
 L_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\tilde X,
@@ -696,7 +696,7 @@ The one-sided operator therefore sees the defect more directly than the element.
 
 ### The Word One-Sided
 
-The polar word splits the operator into four one-sided factors. The modulus is the scalar $\Rho\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
+The polar word splits the operator into four one-sided factors. The modulus is the scalar $\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathrm{id}$. The positive factor and the rotor act by left multiplication:
 
 $$
 L_{\tilde U_{\mathrm b}}(\tilde X)=\tilde U_{\mathrm b}\tilde X,
@@ -777,7 +777,7 @@ $$
 \mathsf M_2(L_{\tilde Q}\tilde X)=\mathsf M_2(\tilde Q)\,\mathsf M_2(\tilde X)=u\,(v^{*}\mathsf M_2(\tilde X)).
 $$
 
-The image consists of the matrices $u r^{*}$ with $r^{*}$ an arbitrary row, that is, the matrices all of whose columns lie in the complex line $\mathbb{C}u$. This is a right ideal of complex dimension two, not a line. The kernel is the set of $\tilde X$ with $v^{*}\mathsf M_2(\tilde X)=0$, of complex dimension two. The rank is two.
+The image consists of the matrices $u \varrho^{*}$ with $\varrho^{*}$ an arbitrary row, that is, the matrices all of whose columns lie in the complex line $\mathbb{C}u$. This is a right ideal of complex dimension two, not a line. The kernel is the set of $\tilde X$ with $v^{*}\mathsf M_2(\tilde X)=0$, of complex dimension two. The rank is two.
 
 The two-sided operator of the same element is
 
@@ -790,13 +790,13 @@ a multiple of $uu^{*}=\mathsf M_2(\tilde Q\tilde Q^{*})$. Its image is the singl
 
 ## Summary
 
-The one-sided operators of the polar word are $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$. They are $\mathbb{C}$-linear, faithful in the parameter, and they multiply the complex norm by $\Rho^{2}$. The left multiplication factorises as
+The one-sided operators of the polar word are $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$ and $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$. They are $\mathbb{C}$-linear, faithful in the parameter, and they multiply the complex norm by $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The left multiplication factorises as
 
 $$
-L_{\tilde Q}=L_{\Rho}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
+L_{\tilde Q}=L_{\varrho\,e^{i\theta_{\mathrm{pha}}}}\circ L_{\tilde U_{\mathrm b}}\circ L_{\tilde u_{\mathrm r}},
 $$
 
-with $L_{\Rho}=\Rho\,\mathrm{id}$; the right multiplication is the mirror.
+with $L_{\varrho\,e^{i\theta_{\mathrm{pha}}}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mathrm{id}$; the right multiplication is the mirror.
 
 In the real splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ the left multiplication has the block form
 
@@ -830,7 +830,7 @@ $$
 
 the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\theta_{\mathrm{pha}})$, and the sectors are reached exactly at $\theta_{\mathrm{pha}}\equiv0$ and $\theta_{\mathrm{pha}}\equiv\pi/2$ modulo $\pi$.
 
-The scale acts as $r$, not $r^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
+The scale acts as $\varrho$, not $\varrho^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
 
 On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Upsilon}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$ and its kernel is the right annihilator, both of complex dimension two.
 
@@ -863,8 +863,8 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $L_{\tilde Q},R_{\tilde Q}$ | the left and right multiplications |
 | $\mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q}$ | the two-sided Hermitian pair |
 | $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | the complex norm |
-| $\Rho=r\exp(i\theta_{\mathrm{pha}})$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
-| $r>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
+| $\varrho\exp(i\theta_{\mathrm{pha}})$ | the complex modulus, the principal square root of $\langle\tilde Q\rangle_{\natural}$ |
+| $\varrho>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$ | the scale and the phase angle |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the Hermitian positive unit-norm boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the unit real quaternion rotor |
 | $D_{\tilde Q},O_{\tilde Q}$ | the symmetrized and antisymmetrized multiplication blocks |

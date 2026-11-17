@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-half-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin-half fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The current is $\rho\tilde V_{\Phi}$ and the spin is $\rho(\hbar/2)i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\mathrm{Sc}\,\tilde\Xi/\Rho$ is computed from the two angles and not chosen, and it equals $\pm1$ exactly on the spectrally degenerate sector $\Sigma_{10}$, where the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties them.
+This article writes the biquaternionic Dirac equation in the polar variables. The word keeps all four factors: the boost and the rotor are both non-trivial, and the equation does not close to two equations. The logarithmic derivative separates into four coupled brackets — scale, phase, boost connection, rotor connection — which the equation constrains and does not close. Those four brackets are the spin-half-fluid equations — continuity, guidance, velocity transport, spin transport — and they are the biquaternionic form of the spin-half fluid of Takabayasi and Holland, not the two-equation Madelung fluid of the scalar case. What the word settles exactly is the plane-wave case: the momentum is the phase gradient, $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$; the velocity is the boost, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$; the mass term is the four-vector factor, $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$; and the mass shell is the frame's unitarity, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$. The current is $\rho\tilde V_{\Phi}$ and the spin is $\rho(\hbar/2)i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$: the current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the phase. The general solution in free space is the Fourier superposition of plane-wave modes, and the word re-reads each mode. What the word fails on is the $N$-degenerate set, which is strictly larger than the nodal set. The sign $\varepsilon=\mathrm{Sc}\,\tilde\Xi/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is computed from the two angles and not chosen, and it equals $\pm1$ exactly on the spectrally degenerate sector $\Sigma_{10}$, where the rigidity constraint $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ ties them.
 
 The Dirac equation of this corpus is one element of $\mathbb{B}$ acting on another by left multiplication. *The Dirac Equation in Biquaternionic Form* writes it as the chiral pair
 
@@ -17,7 +17,7 @@ and the same article states what the pair does not need: no column, no anticommu
 This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *The Complete Polar Decomposition of an N-Regular Biquaternion*:
 
 $$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
 \tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
 \qquad
@@ -87,35 +87,35 @@ The four factors and their types are those of *The Complete Polar Decomposition 
 
 | # | factor | range | type |
 | --- | --- | --- | --- |
-| 1 | $r$ | $r>0$ | real central scale |
+| 1 | $\varrho$ | $\varrho>0$ | real central scale |
 | 2 | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | central phase |
 | 3 | $\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ a real unit vector | Hermitian positive, $N=1$ |
 | 4 | $\tilde u_{\mathrm r}=\cos\frac{\theta_{\mathrm{axr}}}{2}e_t+\sin\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ a real unit vector | real unit quaternion, $N=1$ |
 
 The count closes. The scale is one real number, the angle one, the boost a rapidity and a unit axis, three, and the rotor an angle and a unit axis, three. That is $1+1+3+3=8$ against four complex coefficients.
 
-**The modulus is the density and the phase, and nothing else.** The scale and the phase are one modulus, $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, and $\Rho$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part. The boost and the rotor are invertible, $\tilde U_{\Psi,\mathrm b}^{\natural}=\tilde U_{\Psi,\mathrm b}^{-1}$ and $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$, so both cancel in the norm and
+**The modulus is the density and the phase, and nothing else.** The scale and the phase are one modulus, $\varrho\,e^{i\theta_{\mathrm{pha}}}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the principal square root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$, the root with non-negative real part and, on the imaginary axis, non-negative imaginary part. The boost and the rotor are invertible, $\tilde U_{\Psi,\mathrm b}^{\natural}=\tilde U_{\Psi,\mathrm b}^{-1}$ and $\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$, so both cancel in the norm and
 
 $$
-N(\tilde\Xi)=r^{2}e^{2i\theta_{\mathrm{pha}}},
+N(\tilde\Xi)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},
 \qquad
-\Rho=r\,e^{i\theta_{\mathrm{pha}}}.
+\varrho\,e^{i\theta_{\mathrm{pha}}}.
 $$
 
 **The sign is computed and not chosen.** With $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ and the product $\vec u_{\mathrm b}\vec u_{\mathrm r}=-\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}+\vec u_{\mathrm b}\times\vec u_{\mathrm r}$, the cross product is a vector and cannot reach the scalar part, so only the dot product survives beside the two cosines:
 
 $$
-\varepsilon:=\frac{\Xi_t}{\Rho}
+\varepsilon:=\frac{\Xi_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}}
 =\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}
 -i\,\kappa\,\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2},
 \qquad \kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}.
 $$
 
-**It is complex unless the axes are orthogonal.** The second term vanishes on the locus $\kappa=0$, and also at $\theta_{\mathrm{rpd}}=0$ and at $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, where one of its factors vanishes for another reason. Off those loci $\varepsilon$ is not real, and $\Xi_t/\Rho$ is a complex number rather than a sign. **Either way it adds no parameter to the word.** The eight parameters are $r$, $\theta_{\mathrm{pha}}$, the boost's three and the rotor's three; $\varepsilon$ is a function of four of them and is not independent data.
+**It is complex unless the axes are orthogonal.** The second term vanishes on the locus $\kappa=0$, and also at $\theta_{\mathrm{rpd}}=0$ and at $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, where one of its factors vanishes for another reason. Off those loci $\varepsilon$ is not real, and $\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ is a complex number rather than a sign. **Either way it adds no parameter to the word.** The eight parameters are $\varrho$, $\theta_{\mathrm{pha}}$, the boost's three and the rotor's three; $\varepsilon$ is a function of four of them and is not independent data.
 
 **On $\Sigma_{10}$ it is $\pm1$, and the converse needs the orthogonal branch.** With $\kappa=0$ the condition $\lvert\varepsilon\rvert=1$ is $\cos^{2}(\theta_{\mathrm{axr}}/2)=\mathrm{sech}^{2}(\theta_{\mathrm{rpd}}/2)$, which is $\sin^{2}(\theta_{\mathrm{axr}}/2)=\tanh^{2}(\theta_{\mathrm{rpd}}/2)$, which is $B^{2}=0$. So on the sector $\varepsilon=\pm1$ and the sign is exact.
 
-**The converse fails when the axes are not orthogonal, and this is the one place where the two conditions separate.** $\lvert\varepsilon\rvert=1$ is one real equation on the three parameters $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ and $\kappa$, and it has solutions with $\kappa\neq0$. At $\theta_{\mathrm{rpd}}=2$, $\kappa=\tfrac12$ and $\theta_{\mathrm{axr}}=1.9356$ the display gives $\lvert\varepsilon\rvert=1.000$ together with $B^{2}/\Rho^{2}=0.468+0.847i$. So $\lvert\varepsilon\rvert=1$ does not identify the sector. The sector is identified by $B^{2}=0$, and $\varepsilon$ is $\pm1$ there and not elsewhere on the surface $\lvert\varepsilon\rvert=1$.
+**The converse fails when the axes are not orthogonal, and this is the one place where the two conditions separate.** $\lvert\varepsilon\rvert=1$ is one real equation on the three parameters $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ and $\kappa$, and it has solutions with $\kappa\neq0$. At $\theta_{\mathrm{rpd}}=2$, $\kappa=\tfrac12$ and $\theta_{\mathrm{axr}}=1.9356$ the display gives $\lvert\varepsilon\rvert=1.000$ together with $B^{2}/(\varrho^{2}e^{2i\theta_{\mathrm{pha}}})=0.468+0.847i$. So $\lvert\varepsilon\rvert=1$ does not identify the sector. The sector is identified by $B^{2}=0$, and $\varepsilon$ is $\pm1$ there and not elsewhere on the surface $\lvert\varepsilon\rvert=1$.
 
 **The sector forces the orthogonal branch, and the constraint is its definition.** The imaginary part of $B^{2}$ is $2\sinh\frac{\theta_{\mathrm{rpd}}}{2}\cosh\frac{\theta_{\mathrm{rpd}}}{2}\,\kappa\,\sin\frac{\theta_{\mathrm{axr}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}$, so $B^{2}=0$ requires $\kappa=0$ or $\theta_{\mathrm{axr}}\in\{0,\pi,2\pi\}$. The last three branches have a non-zero real part unless $\theta_{\mathrm{rpd}}=0$ with $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, and that corner is the central element. So on $\Sigma_{10}$ away from the centre the axes are orthogonal, and the sign ties the two angles by the rigidity constraint
 
@@ -138,7 +138,7 @@ Two factors have norm one and two are central, and that sentence carries the who
 
 ### The Two Norms
 
-*Proposition.* For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the factors as above,
+*Proposition.* For $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the factors as above,
 
 $$
 \langle\tilde\Xi\rangle_{\natural}=\rho\,e^{2i\theta_{\mathrm{pha}}},
@@ -147,16 +147,16 @@ $$
 \qquad
 \langle\tilde\Xi\rangle_{*}=\gamma\rho,
 \qquad
-\rho=r^{2},\quad \gamma=\cosh\theta_{\mathrm{rpd}}.
+\rho=\varrho^{2},\quad \gamma=\cosh\theta_{\mathrm{rpd}}.
 $$
 
-*Proof.* The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=r^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$.
+*Proof.* The quaternion conjugation $\natural$ acts on the $\mathbb{H}$ factor, so it leaves the central $i$ alone, inverts the real rotor and inverts the Hermitian boost. The rotor and the boost cancel against their own inverses, the central part squares, and $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The star conjugation is the coefficient conjugation composed with $\natural$; it fixes a Hermitian factor, conjugates the central $i$ and inverts the rotor, so the phases cancel, the rotors cancel, and $\tilde\Xi\tilde\Xi^{*}=\varrho^{2}\tilde U_{\Psi,\mathrm b}^{2}$. Squaring the boost gives $\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose scalar part is $\cosh\theta_{\mathrm{rpd}}$.
 
 The two norms read different things, and the whole of the physics of the density is in which one is used.
 
 | quantity | value | real? | what it reads |
 | --- | --- | --- | --- |
-| $\rho$ | $r^{2}$ | real, positive | the density |
+| $\rho$ | $\varrho^{2}$ | real, positive | the density |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho\,e^{2i\theta_{\mathrm{pha}}}$ | complex | the density and twice the angle |
 | $\tilde\Xi\tilde\Xi^{*}$ | $\rho\,\tilde U_{\Psi,\mathrm b}^{2}$ | neither | the density and the boost |
 | $\langle\tilde\Xi\rangle_{*}$ | $\gamma\rho$ | real | the density of a boosted state |
@@ -185,7 +185,7 @@ which the parent derives. Nothing in this section is new: the three relations ar
 
 Substituting the word into a first-order equation means differentiating it, and the derivative separates into four terms with no remainder.
 
-*Proposition.* For $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,
+*Proposition.* For $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$,
 
 $$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
@@ -201,7 +201,7 @@ The four brackets are of four different types, and that is the content of the di
 
 | term | type | zero when |
 | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln r^{2}$ | real central scalar | the density is constant |
+| $\tfrac12\partial_\mu\ln \varrho^{2}$ | real central scalar | the density is constant |
 | $i\partial_\mu\theta_{\mathrm{pha}}$ | central imaginary | the angle is constant |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the boost is constant |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | the rotor is constant |
@@ -402,7 +402,7 @@ So the contrast is not that the word exists off the cone and nothing exists on i
 
 ### The Boundary Value
 
-The word has boundary values on the cone. A family with $r=Re^{-\psi/2}$ and boost rapidity $\theta_{\mathrm{rpd}}=\psi$ has a limit as $\psi\to\infty$, and the limit is nonzero: the collapsing scale and the diverging boost cancel, leaving the direction $e_t+i\vec u_{\mathrm b}$ of the boost. The stratum the limit reaches is decided by the rotor: the idempotent stratum where the scalar part of the limit is nonzero, the nilpotent stratum where it vanishes (*The Massless Limit as a Boundary Value of the Polar Word*).
+The word has boundary values on the cone. A family with $\varrho=Re^{-\psi/2}$ and boost rapidity $\theta_{\mathrm{rpd}}=\psi$ has a limit as $\psi\to\infty$, and the limit is nonzero: the collapsing scale and the diverging boost cancel, leaving the direction $e_t+i\vec u_{\mathrm b}$ of the boost. The stratum the limit reaches is decided by the rotor: the idempotent stratum where the scalar part of the limit is nonzero, the nilpotent stratum where it vanishes (*The Massless Limit as a Boundary Value of the Polar Word*).
 
 Two things follow, and the second is the important one. The element has a limit, so the cone is reachable and the degenerate case is a boundary of the same theory and not a different one. The generator has no limit, and the limit is path-dependent, so the boundary value is not a value of the word: it is what the word does when its domain is exhausted.
 
@@ -434,7 +434,7 @@ $$
 \tilde V_{\Phi}=ic\,e_t+\vec v+\cdots,
 $$
 
-so the word becomes $r\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$: a scale, a phase and a rotor. That is the non-relativistic word, and it is the whole polar content of the two-component description.
+so the word becomes $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$: a scale, a phase and a rotor. That is the non-relativistic word, and it is the whole polar content of the two-component description.
 
 The velocity's first correction is second order, since $\cosh\theta_{\mathrm{rpd}}=1+\theta_{\mathrm{rpd}}^{2}/2$ and $\vec v=c\tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}=c\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$; the temporal slot therefore departs from $ic$ at order $\theta_{\mathrm{rpd}}^{2}/2$, which is the kinetic energy over $mc^{2}$. The boost is the relativistic correction and the rotor is the part that survives at every speed.
 
@@ -476,13 +476,13 @@ What the polar form does **not** add is the point of this article. It adjoins no
 
 ## Summary
 
-The polar form of the Dirac field of this corpus is $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The parameters are eight and the components are eight, so the word is a bijection, and its domain is the $N$-regular set: the polar form exists exactly where $N\neq0$ and fails on every $N$-degenerate field.
+The polar form of the Dirac field of this corpus is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$ the scale, $\theta_{\mathrm{pha}}$ the central angle, $\tilde U_{\Psi,\mathrm b}$ a Hermitian positive boost and $\tilde u_{\mathrm r}$ a real rotor. The parameters are eight and the components are eight, so the word is a bijection, and its domain is the $N$-regular set: the polar form exists exactly where $N\neq0$ and fails on every $N$-degenerate field.
 
 The field is one element and the two letters of the pair name its two parts. They are not two values, and the polar form gives the reason: an element of definite value satisfies $\tilde X(\vec e_z\pm ie_t)=0$, so it is a zero divisor and has $N=0$, which places it outside the word's domain. A split into definite-value parts would be a split into two objects on which the word is undefined.
 
 The two norms separate. The quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$ and the Hermitian norm is $\langle\tilde\Xi\rangle_{*}=\gamma\rho$, the difference being that the star conjugation fixes the Hermitian boost while the natural conjugation inverts it and leaves the central $i$ alone. The density is the modulus of the first and it is the Lorentz scalar; the Hermitian norm is its time-dilated image. The norm's argument is twice the word's angle, and the doubling is the factor of two behind zitterbewegung.
 
-The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. Read as fluid laws they are continuity, guidance, velocity transport and spin transport: a spin fluid, not a Madelung fluid. The variational companion substitutes the decomposition into the action and finds the kinetic term in closed form, $\hbar c\,r^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$ with $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ the rotor's body angular velocity and $\hat n_{\mathrm{rot}}$ the boost axis carried into the body frame. The momentum conjugate to the spin there is $-\hbar c\,r^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, so the spin is canonical only for a moving frame, and it carries no momentum at rest. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
+The derivative of the word separates into four brackets: a scale term, a phase term, a boost connection and a rotor connection. Read as fluid laws they are continuity, guidance, velocity transport and spin transport: a spin fluid, not a Madelung fluid. The variational companion substitutes the decomposition into the action and finds the kinetic term in closed form, $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$ with $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ the rotor's body angular velocity and $\hat n_{\mathrm{rot}}$ the boost axis carried into the body frame. The momentum conjugate to the spin there is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, so the spin is canonical only for a moving frame, and it carries no momentum at rest. The phase term is the four-momentum, $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_{\Phi}$; the boost is the four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$ with $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ and $\gamma=\cosh\theta_{\mathrm{rpd}}$. The inverse square appears because a four-vector is bilinear in the field. Its natural norm is $-c^{2}$, so the word's velocity is a unit timelike element for every field.
 
 The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
 
@@ -502,11 +502,11 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\tilde R_\Phi=i r'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Four-position |
 | $r'_t=c\,t^{\prime}$ | Material time, a length |
 | $k_m=mc/\hbar$ | Mass wave number; the reciprocal reduced Compton length |
-| $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
-| $r>0$, $\rho=r^{2}$ | Scale and density; real and central |
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word |
+| $\varrho>0$, $\rho=\varrho^{2}$ | Scale and density; real and central |
 | $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The word's angle; the norm's argument is $2\theta_{\mathrm{pha}}$ |
 | $\Xi_t=\mathrm{Sc}\,\tilde\Xi$ | Scalar coefficient of the field; the single complex number of the central case |
-| $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$, $\varepsilon=\Xi_t/\Rho$ | Modulus of the norm (principal square root of $\langle\tilde\Xi\rangle_{\natural}$) and its branch; $\varepsilon=\pm1$ exactly on $\Sigma_{10}$, where $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ |
+| $\varrho\,e^{i\theta_{\mathrm{pha}}}$, $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Modulus of the norm (principal square root of $\langle\tilde\Xi\rangle_{\natural}$) and its branch; $\varepsilon=\pm1$ exactly on $\Sigma_{10}$, where $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$ |
 | $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | Boost; Hermitian positive, $N=1$; rapidity $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$; $\tilde U_{\Psi,\mathrm b}^{2}=\mathcal B_{\Psi}^{-1}$ |
 | $\tilde u_{\mathrm r}$ | Rotor; real unit quaternion, $N=1$; angle $\theta_{\mathrm{axr}}$, unit axis $\vec u_{\mathrm r}$ |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; on the field $\rho e^{2i\theta_{\mathrm{pha}}}$ |

@@ -13,7 +13,7 @@ $$
 and the substitution is the four-factor word
 
 $$
-\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
+\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
 with eight real parameters. The word is a bijection onto the N-regular set, so the eight parameters are coordinates on the carrier's units and the substitution loses nothing and adds no constraint.
@@ -30,18 +30,18 @@ with eight real parameters. The word is a bijection onto the N-regular set, so t
 
 ## The Action in the Chart
 
-**The mass term is a function of the frame and the scale.** Substituting the word into the invariant length gives $r^{2}$ times a real function of the four frame angles: the central phase cancels between $\tilde A^{*}$ and $\tilde A^{\natural}$, the scale factors out, and what is left is a scalar part of the frame's four units.
+**The mass term is a function of the frame and the scale.** Substituting the word into the invariant length gives $\varrho^{2}$ times a real function of the four frame angles: the central phase cancels between $\tilde A^{*}$ and $\tilde A^{\natural}$, the scale factors out, and what is left is a scalar part of the frame's four units.
 
 **Two exact statements about it.** With the rotor trivial the function is one:
 
 $$
-\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=r^{2}
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=\varrho^{2}
 \qquad\text{when the rotor angle vanishes,}
 $$
 
 for every rapidity and every boost axis, to $10^{-14}$ over random draws. The reason is that the boost is a Lorentz transformation and the invariant length is Lorentz invariant.
 
-With the rotor engaged the value departs from $r^{2}$, and how it departs separates two cases. If the rotor's axis is parallel or antiparallel to the boost's, the ratio $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/r^{2}$ is independent of the rapidity: for $\theta_{\mathrm{axr}}=0.7$ it is $0.7648$ at rapidity $0$, $2$ and $5$ alike. If the axes are perpendicular, the same angle gives $0.7648$, $0.7010$ and $0.4401$ at rapidity $0$, $1$ and $2$. The rotor is not a Lorentz transformation — it multiplies the frame from the right and it moves the four-vector's Minkowski square — and the rapidity can only matter where the two axes are not collinear.
+With the rotor engaged the value departs from $\varrho^{2}$, and how it departs separates two cases. If the rotor's axis is parallel or antiparallel to the boost's, the ratio $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})/\varrho^{2}$ is independent of the rapidity: for $\theta_{\mathrm{axr}}=0.7$ it is $0.7648$ at rapidity $0$, $2$ and $5$ alike. If the axes are perpendicular, the same angle gives $0.7648$, $0.7010$ and $0.4401$ at rapidity $0$, $1$ and $2$. The rotor is not a Lorentz transformation — it multiplies the frame from the right and it moves the four-vector's Minkowski square — and the rapidity can only matter where the two axes are not collinear.
 
 **The field term is a quadratic form in the gradients.** Because the action is second order in the material time, the field term in the chart is a quadratic form
 
@@ -71,7 +71,7 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **The count.** Eight parameters, eight equations, and each equation is second order. The two equations that the free article displays — one real equation for the modulus and one traceless equation for the frame — are the free case's reduction, and the coupling adds the connection's shift to the phase equation and to the others through it.
 
-**The modulus equation.** The variation with respect to $r$ gives the equation whose free form is a Klein–Gordon equation with a source quadratic in the frame's connection. The coupling does not change its structure: $r$ is a real scalar, the connection is central, and the only effect is through the $\theta_{\mathrm{pha}}$ dependence that the phase's equation carries.
+**The modulus equation.** The variation with respect to $\varrho$ gives the equation whose free form is a Klein–Gordon equation with a source quadratic in the frame's connection. The coupling does not change its structure: $\varrho$ is a real scalar, the connection is central, and the only effect is through the $\theta_{\mathrm{pha}}$ dependence that the phase's equation carries.
 
 **The phase equation.** The variation with respect to $\theta_{\mathrm{pha}}$ is the chart's version of the constraint. It is not a constraint on the parameters: it is an equation of motion for the phase, and its content is the conservation of the object the phase's momentum is made of. That is the difference between this chart and the first-order charts, and the article states it plainly: in a first-order theory the phase's variation gives a *constraint*, because the phase's velocity appears linearly; in a second-order theory it gives an *equation*, because the phase's velocity appears squared and its momentum is a genuine momentum.
 
@@ -85,7 +85,7 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 $$
 \lambda\tilde A
-=r\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+=\varrho\,e^{i(\theta_{\mathrm{pha}}+\vartheta_{\mathrm{gau}})}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 exactly, with the other seven parameters fixed: the gauge transformation is the translation of one coordinate. The numerical check is exact to $10^{-16}$.
@@ -119,7 +119,7 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **Adds.**
 
-- The exact form of the mass term in the chart, with the statement that it is $r^{2}$ precisely when the rotor is trivial, and the reason: the boost is a Lorentz transformation and the rotor is not.
+- The exact form of the mass term in the chart, with the statement that it is $\varrho^{2}$ precisely when the rotor is trivial, and the reason: the boost is a Lorentz transformation and the rotor is not.
 - The statement that the connection enters the action as a shift of one gradient and cannot change the metric, which is the variational counterpart of the polar type table.
 - The absence of Lagrange multipliers for the unit conditions, as a consequence of the word being exact.
 - The charge as the momentum conjugate to the phase, in one line.
@@ -138,7 +138,7 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **The Hessian.** Whether the metric $G$ on the eight-dimensional parameter space is non-degenerate everywhere on the N-regular set — and if not, where it degenerates — is not established. The article states the count and the formal second-order structure and stops there.
 
-**The metric's signs.** Positivity of the energy in the chart requires the metric's signs and the mass term's sign to cooperate. The mass term's sign is fixed on the material slice and its chart value is $r^{2}$ there; whether the general complex case has positive energy is open, and it is the chart's form of the element form's trace question.
+**The metric's signs.** Positivity of the energy in the chart requires the metric's signs and the mass term's sign to cooperate. The mass term's sign is fixed on the material slice and its chart value is $\varrho^{2}$ there; whether the general complex case has positive energy is open, and it is the chart's form of the element form's trace question.
 
 **The field term's chart form.** The quadratic form's coefficients are not displayed. A future computation would give $G$ explicitly and would state which bracket each coefficient comes from; the article records the structure and not the table.
 
@@ -147,10 +147,10 @@ the temporal slot of the element form's current, by the chain rule and because t
 The coupled Proca action in the polar variables is
 
 $$
-S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,R\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr)\,r^{2}\Bigr],
+S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,R\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr)\,\varrho^{2}\Bigr],
 $$
 
-with $R$ the frame's own scalar, equal to one exactly when the rotor is trivial, independent of the rapidity when the two axes are collinear and dependent on it when they are not: a quadratic form in the eight gradients with a frame-built metric, a mass potential $Rr^{2}$, and a connection that shifts the phase's gradient and nothing else.
+with $R$ the frame's own scalar, equal to one exactly when the rotor is trivial, independent of the rapidity when the two axes are collinear and dependent on it when they are not: a quadratic form in the eight gradients with a frame-built metric, a mass potential $R\varrho^{2}$, and a connection that shifts the phase's gradient and nothing else.
 
 The chart needs no multipliers for the unit conditions, because the word is exact; the gauge transformation is the translation of the phase coordinate, exact infinitesimally; the charge is the momentum conjugate to that coordinate; and the system is second order, so the constrained-system structure of the first-order companions has no analogue here. What the chart does not do is simplify the field term or establish the regularity of its own metric, and the article says so.
 
@@ -158,11 +158,11 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, phase, boost, rotor |
-| $q=(\ln r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})$ | The eight parameters |
-| $r>0$ | Scale; $\langle\tilde A\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ |
+| $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, phase, boost, rotor |
+| $q=(\ln \varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})$ | The eight parameters |
+| $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
-| $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,r^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
+| $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $G^{ab}(q)$ | The chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
 | $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |

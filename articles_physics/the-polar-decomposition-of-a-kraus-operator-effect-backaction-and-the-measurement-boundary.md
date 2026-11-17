@@ -4,7 +4,7 @@
 
 A Kraus operator is the amplitude of one outcome, not the outcome itself. The probability of the outcome is the trace of the effect $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}$; the post-measurement state is the normalized image $\tilde M_{\mathrm{kraus}}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus}}^{*}$; and the element $\tilde M_{\mathrm{kraus}}$ carries both, together with a phase that the probability discards. This article asks what the polar decomposition of $\tilde M_{\mathrm{kraus}}$ says about the three objects.
 
-The thesis is one sentence. **Every Kraus operator factors as $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$, with $\tilde M_{\mathrm{kraus},H}$ Hermitian positive semidefinite and $\tilde M_{\mathrm{kraus},0}$ a partial isometry; the positive factor is the outcome's strength, the partial isometry is its backaction, and the effect is the squared strength conjugated by the backaction, $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$.** Three consequences follow. A one-Kraus channel is trace preserving exactly when the strength is trivial, $\tilde M_{\mathrm{kraus},H}=e_t$, and then the channel is $*$-unitary. A sharp outcome has a rank-one amplitude on the null cone, where the strength is a scaled projection and the backaction a partial isometry. And the reversibility of a channel is its Kraus rank, not the strength of any single term: a channel can be a sum of terms whose individual polar factors are $*$-unitary and still be irreversible.
+The thesis is one sentence. **Every Kraus operator factors as $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$, with $\tilde M_{\mathrm{kraus},H}$ Hermitian positive semidefinite and $\tilde M_{\mathrm{kraus},0}$ a partial isometry; the positive factor is the outcome's strength, the partial isometry is its backaction, and the effect is the squared strength conjugated by the backaction, $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$.** Three consequences follow. A one-Kraus channel is trace preserving exactly when the strength is trivial, $\tilde M_{\mathrm{kraus},H}=e_t$, and then the channel is $*$-unitary. A sharp outcome has a rank-one amplitude on the null cone, where the strength is a scaled projection and the backaction a partial isometry. And the reversibility of a channel is its Kraus rank, not the strength of any single term: a channel can be a sum of terms whose individual polar factors are $*$-unitary and still be irreversible.
 
 The distinction between one Kraus operator, an instrument, and a channel is the source of most misreadings: the polar decomposition is always available for one operator, while the one-Kraus unitarity and the multi-Kraus irreversibility are statements about a channel.
 
@@ -21,7 +21,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 | the rank-one Hermitian idempotents | [Idempotents](../articles_maths/idempotents.html), §*The Classification of the Idempotents* | the sharp outcome $\tilde M_{\mathrm{kraus}}=\tilde\Pi$ and the Bloch form of its projections |
 | the zero-divisor cone | [*N-Regularity and N-Degeneracy in the Biquaternion Algebra*](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Zero Divisor Set* | the boundary where the amplitude loses rank |
 | the Kraus representation and the channel dichotomy | [*Quantum Channels and the Reversible/Irreversible Dichotomy*](quantum-channels-and-the-reversible-irreversible-dichotomy.html), §*The Kraus Representation* | the instrument and channel context |
-| the effect as a Kraus square | [*POVMs and the Positive Cone in Biquaternionic Form*](povms-and-the-positive-cone-in-biquaternionic-form.html), §*The post-measurement state* | $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}$ and the Born weight |
+| the effect as a Kraus square | [*POVMs and the Positive Cone in Biquaternionic Form*](povms-and-the-positive-cone-in-biquaternionic-form.html), §*The post-measurement state* | $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}$ and the Born weight |
 
 ## The Object and the Three Levels
 
@@ -30,7 +30,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 An **instrument** is a family of completely positive maps indexed by an outcome. In the algebra it is a family of Kraus operators $\tilde M_{\mathrm{kraus},y}$ with
 
 $$
-\tilde E_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde E_{\Psi}_y=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde E_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
+\tilde{\mathcal E}_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde{\mathcal E}_{\Psi}_y=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde{\mathcal E}_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
 $$
 
 Dropping the outcome label gives the **channel**
@@ -132,9 +132,9 @@ Trace preservation of a one-Kraus channel is not the same as trace preservation 
 Off the null cone the two polar factors refine into the four factors of the complete polar decomposition. With $\tilde U_{\Psi,\mathrm b}=\exp\bigl(i\tfrac{\theta_{\mathrm{rpd},w}}{2}\vec u_{\mathrm b}\bigr)$ a positive Hermitian boost and $\tilde u_{\mathrm r}=\exp\bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\bigr)$ a unit real quaternion,
 
 $$
-\tilde M_{\mathrm{kraus}}=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde M_{\mathrm{kraus}}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
-\tilde M_{\mathrm{kraus},H}=r\tilde U_{\Psi,\mathrm b},
+\tilde M_{\mathrm{kraus},H}=\varrho\tilde U_{\Psi,\mathrm b},
 \qquad
 \tilde M_{\mathrm{kraus},0}=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}.
 $$
@@ -145,7 +145,7 @@ The grouping is the Cartan one: the scale sits with the boost and the phase with
 
 | factor | symbol | range | parameters | factor of the pair |
 | --- | --- | --- | --- | --- |
-| scale | $r$ | $r>0$ | $1$ | $\tilde M_{\mathrm{kraus},H}$ |
+| scale | $\varrho$ | $\varrho>0$ | $1$ | $\tilde M_{\mathrm{kraus},H}$ |
 | phase | $e^{i\theta_{\mathrm{pha}}}$ | $\theta_{\mathrm{pha}}\in[0,2\pi)$ | $1$ | $\tilde M_{\mathrm{kraus},0}$ |
 | boost | $\tilde U_{\Psi,\mathrm b}$ | $\theta_{\mathrm{rpd},w}\ge0$, unit $\vec u_{\mathrm b}$ | $3$ | $\tilde M_{\mathrm{kraus},H}$ |
 | rotor | $\tilde u_{\mathrm r}$ | $\theta_{\mathrm{axr}}\in[0,2\pi)$, unit $\vec u_{\mathrm r}$ | $3$ | $\tilde M_{\mathrm{kraus},0}$ |
@@ -155,15 +155,15 @@ The grouping is the Cartan one: the scale sits with the boost and the phase with
 The effect is the square of the positive factor, carried to the initial frame by the backaction:
 
 $$
-\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}
+\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}
 =\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}
-=\tilde u_{\mathrm r}^{-1}\,r^{2}\tilde U_{\Psi,\mathrm b}^{2}\,\tilde u_{\mathrm r}.
+=\tilde u_{\mathrm r}^{-1}\,\varrho^{2}\tilde U_{\Psi,\mathrm b}^{2}\,\tilde u_{\mathrm r}.
 $$
 
 The phase cancels because it is central. Since $\tilde U_{\Psi,\mathrm b}^{2}=\exp(i\theta_{\mathrm{rpd},w}\vec u_{\mathrm b})$ has eigenvalues $e^{\pm\theta_{\mathrm{rpd},w}}$, the effect has eigenvalues
 
 $$
-r^{2}e^{+\theta_{\mathrm{rpd},w}}\quad\text{and}\quad r^{2}e^{-\theta_{\mathrm{rpd},w}}.
+\varrho^{2}e^{+\theta_{\mathrm{rpd},w}}\quad\text{and}\quad \varrho^{2}e^{-\theta_{\mathrm{rpd},w}}.
 $$
 
 Its eigenvector for the larger eigenvalue is $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$, the boost axis turned back by the rotor, for $\theta_{\mathrm{rpd},w}>0$. Generically, of the eight parameters the effect keeps four — the scale, the rapidity and the composite direction $\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}$ — and loses the phase, the rotation angle and the split between the two axes. This is the quantitative form of the statement that the probability sees the strength and not the backaction.
@@ -197,12 +197,12 @@ with $s_\parallel=\vec s_{\Psi}\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\
 An outcome is admissible when its effect lies below the identity. The eigenvalues above make this one inequality:
 
 $$
-\boxed{\;\tilde E_{\Psi}\le e_t \iff r^{2}e^{\theta_{\mathrm{rpd},w}}\le1\;}
+\boxed{\;\tilde{\mathcal E}_{\Psi}\le e_t \iff \varrho^{2}e^{\theta_{\mathrm{rpd},w}}\le1\;}
 $$
 
-for $\theta_{\mathrm{rpd},w}\ge0$, which forces $r\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.
+for $\theta_{\mathrm{rpd},w}\ge0$, which forces $\varrho\le1$. The scale and the rapidity trade against each other, and a strong boost needs a small scale.
 
-The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $r=\sqrt{0.6}=0.7746$ and $\theta_{\mathrm{rpd},w}=\ln(1/0.6)=0.5108$; then $r^{2}e^{\theta_{\mathrm{rpd},w}}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.
+The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its strength has eigenvalues $0.6$ and $1$, so $\varrho=\sqrt{0.6}=0.7746$ and $\theta_{\mathrm{rpd},w}=\ln(1/0.6)=0.5108$; then $\varrho^{2}e^{\theta_{\mathrm{rpd},w}}=0.6\times1.6667=1$ exactly, and the effect has eigenvalues $0.36$ and $1$. The complement of the effect is rank one, as that example notes, and that is the same statement.
 
 ## Effects as Squares
 
@@ -211,26 +211,26 @@ The worked example of §*A Worked Unsharp Outcome* saturates the bound. Its stre
 The effect of the outcome is
 
 $$
-\boxed{\;\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}\;}.
+\boxed{\;\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}\;}.
 $$
 
-The eigenvalues of $\tilde E_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde E_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde E_{\Psi}_y=e_t$ forces each $\sigma_i\leq1$.
+The eigenvalues of $\tilde{\mathcal E}_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde{\mathcal E}_{\Psi}_y=e_t$ forces each $\sigma_i\leq1$.
 
-The formula is not $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ in general. The two agree only when $\tilde M_{\mathrm{kraus},0}$ commutes with $\tilde M_{\mathrm{kraus},H}$, and in particular when $\tilde M_{\mathrm{kraus},0}$ is a function of $\tilde M_{\mathrm{kraus},H}$. On the cone they need not agree at all: the effect and the squared strength can sit on different lines, with $\tilde M_{\mathrm{kraus},0}$ carrying one to the other.
+The formula is not $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ in general. The two agree only when $\tilde M_{\mathrm{kraus},0}$ commutes with $\tilde M_{\mathrm{kraus},H}$, and in particular when $\tilde M_{\mathrm{kraus},0}$ is a function of $\tilde M_{\mathrm{kraus},H}$. On the cone they need not agree at all: the effect and the squared strength can sit on different lines, with $\tilde M_{\mathrm{kraus},0}$ carrying one to the other.
 
 ### The Effect Does Not Determine the Split
 
 The effect determines the singular values, not the factorization. If $\tilde U_{\mathrm{gau}}$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus}}$, then
 
 $$
-\tilde M_{\mathrm{kraus}}'^{*}\tilde M_{\mathrm{kraus}}'=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde E_{\Psi},
+\tilde M_{\mathrm{kraus}}'^{*}\tilde M_{\mathrm{kraus}}'=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde{\mathcal E}_{\Psi},
 \qquad
 \tilde M_{\mathrm{kraus},H}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},H}\tilde U_{\mathrm{gau}}^{*},
 \qquad
 \tilde M_{\mathrm{kraus},0}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus},0}.
 $$
 
-The same effect therefore admits different strengths and different backactions. The canonical choice $\tilde M_{\mathrm{kraus}}=\sqrt{\tilde E}_{\Psi}$ gives $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde E}_{\Psi}$ and $\tilde M_{\mathrm{kraus},0}$ the projection onto $\operatorname{ran}\tilde E_{\Psi}$; a physical Kraus operator need not be that choice. The polar decomposition is a decomposition of the amplitude, not a decomposition of the effect. This is the precise sense in which the effect is the probability functional and the amplitude carries more.
+The same effect therefore admits different strengths and different backactions. The canonical choice $\tilde M_{\mathrm{kraus}}=\sqrt{\tilde{\mathcal E}_{\Psi}}$ gives $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde{\mathcal E}_{\Psi}}$ and $\tilde M_{\mathrm{kraus},0}$ the projection onto $\operatorname{ran}\tilde{\mathcal E}_{\Psi}$; a physical Kraus operator need not be that choice. The polar decomposition is a decomposition of the amplitude, not a decomposition of the effect. This is the precise sense in which the effect is the probability functional and the amplitude carries more.
 
 ### A Null Example Where the Two Differ
 
@@ -250,18 +250,18 @@ $$
 The effect and the squared strength are
 
 $$
-\boxed{\;\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=4\tilde\Pi_{-\vec e_z}=2e_t-2i\vec e_z,
+\boxed{\;\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=4\tilde\Pi_{-\vec e_z}=2e_t-2i\vec e_z,
 \qquad
 \tilde M_{\mathrm{kraus},H}^{2}=4\tilde\Pi_{\vec e_z}=2e_t+2i\vec e_z\;} .
 $$
 
-They are different rank-one elements, on opposite Bloch points. The partial isometry carries the initial line $\tilde\Pi_{-\vec e_z}$ to the final line $\tilde\Pi_{\vec e_z}$, and the effect sees the initial line while the squared strength sees the final one. The example is exact; the identities $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$ and $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ hold with no residual.
+They are different rank-one elements, on opposite Bloch points. The partial isometry carries the initial line $\tilde\Pi_{-\vec e_z}$ to the final line $\tilde\Pi_{\vec e_z}$, and the effect sees the initial line while the squared strength sees the final one. The example is exact; the identities $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$ and $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ hold with no residual.
 
 ## The Three Strata
 
 The four cases of the amplitude are the four rows of the table. The rank is the matrix rank of $\mathsf M_2(\tilde M_{\mathrm{kraus}})$; the projections are $\tilde\Pi_{\mathrm i}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},0}$ and $\tilde\Pi_{\mathrm f}=\tilde M_{\mathrm{kraus},0}\tilde M_{\mathrm{kraus},0}^{*}$.
 
-| stratum | $\operatorname{rank}\tilde M_{\mathrm{kraus}}$ | $\tilde M_{\mathrm{kraus},H}$ | $\tilde M_{\mathrm{kraus},0}$ | effect $\tilde E_{\Psi}$ | example |
+| stratum | $\operatorname{rank}\tilde M_{\mathrm{kraus}}$ | $\tilde M_{\mathrm{kraus},H}$ | $\tilde M_{\mathrm{kraus},0}$ | effect $\tilde{\mathcal E}_{\Psi}$ | example |
 |---|---|---|---|---|---|
 | $*$-unitary | $2$ | $e_t$ | $\tilde M_{\mathrm{kraus}}$, $*$-unitary | $e_t$ | reversible one-Kraus channel |
 | invertible, not $*$-unitary | $2$ | positive definite, $\neq e_t$ | $*$-unitary, $\neq\tilde M_{\mathrm{kraus}}$ | positive definite, $<e_t$ | unsharp outcome |
@@ -276,7 +276,7 @@ $$
 \tilde M_{\mathrm{kraus}}=\tilde\Pi=\tfrac12\left(e_t+i\vec u\right),\qquad \vec u^{2}=-e_t.
 $$
 
-It satisfies $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$ and $\langle\tilde\Pi\rangle_{\natural}=0$, so it is a zero divisor. Its polar factors are $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, because $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{+}=\tilde\Pi$. The effect is $\tilde E_{\Psi}=\tilde\Pi$, and the two projections of the partial isometry are both $\tilde\Pi$. The outcome probability for a state $\tilde{Ϛ}_{\Psi}$ is $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi)$, and the post-measurement state is $\tilde\Pi$.
+It satisfies $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$ and $\langle\tilde\Pi\rangle_{\natural}=0$, so it is a zero divisor. Its polar factors are $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, because $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{+}=\tilde\Pi$. The effect is $\tilde{\mathcal E}_{\Psi}=\tilde\Pi$, and the two projections of the partial isometry are both $\tilde\Pi$. The outcome probability for a state $\tilde{Ϛ}_{\Psi}$ is $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi)$, and the post-measurement state is $\tilde\Pi$.
 
 The sharp outcome therefore sits exactly on the null cone, and its amplitude is a partial isometry, not a $*$-unitary. The "collapse" is the rank drop: the amplitude has rank one, the effect has rank one, and the post-measurement state is a pure state. The mathematical pairing that covers it is the generalized Cartan pairing; the Cartan pairing on $\langle\tilde M_{\mathrm{kraus}}\rangle_{\natural}\neq0$ does not.
 
@@ -307,10 +307,10 @@ and the amplitude is $\tilde M_{\mathrm{kraus}}=0.692820323e_t+0.4\vec e_x+0.1i\
 The effect is
 
 $$
-\boxed{\;\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde{H}_{\Psi,0}^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z}\;},
+\boxed{\;\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde{H}_{\Psi,0}^{2}=0.68e_t-0.32i\vec e_z=0.36\tilde\Pi_{\vec e_z}+\tilde\Pi_{-\vec e_z}\;},
 $$
 
-with eigenvalues $0.36$ and $1$. The outcome is unsharp: the effect is full rank, no direction is annihilated, and the backaction is a rotation by $60^{\circ}$ about $\vec e_x$. The strength is the pair $\{0.6,1\}$; the effect sees its squares. The complement $e_t-\tilde E_{\Psi}=0.64\tilde\Pi_{\vec e_z}$ is rank one, with Kraus operator $0.8\tilde\Pi_{\vec e_z}$, which is null. The two outcomes resolve the identity: one is unsharp and invertible, the other is rank one and on the cone. The example shows the boundary in a single instrument.
+with eigenvalues $0.36$ and $1$. The outcome is unsharp: the effect is full rank, no direction is annihilated, and the backaction is a rotation by $60^{\circ}$ about $\vec e_x$. The strength is the pair $\{0.6,1\}$; the effect sees its squares. The complement $e_t-\tilde{\mathcal E}_{\Psi}=0.64\tilde\Pi_{\vec e_z}$ is rank one, with Kraus operator $0.8\tilde\Pi_{\vec e_z}$, which is null. The two outcomes resolve the identity: one is unsharp and invertible, the other is rank one and on the cone. The example shows the boundary in a single instrument.
 
 ## Channels and Kraus Rank
 
@@ -382,13 +382,13 @@ The channel-level statement is the correction that the polar programme makes to 
 | polar form | $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$, $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}}$, $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus},H}^{+}\tilde M_{\mathrm{kraus}}$ |
 | strength | the singular values $\sigma_i$, the eigenvalues of $\tilde M_{\mathrm{kraus},H}$ |
 | backaction | the partial isometry $\tilde M_{\mathrm{kraus},0}$, $*$-unitary off the cone, rank one on it |
-| effect | $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$, eigenvalues $\sigma_i^{2}$ |
-| four factors | $\tilde M_{\mathrm{kraus}}=r e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, $\tilde M_{\mathrm{kraus},H}=r\tilde U_{\Psi,\mathrm b}$, $\tilde M_{\mathrm{kraus},0}=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
-| effect in the word | eigenvalues $r^{2}e^{\pm\theta_{\mathrm{rpd},w}}$; admissible iff $r^{2}e^{\theta_{\mathrm{rpd},w}}\le1$ |
+| effect | $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$, eigenvalues $\sigma_i^{2}$ |
+| four factors | $\tilde M_{\mathrm{kraus}}=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, $\tilde M_{\mathrm{kraus},H}=\varrho\tilde U_{\Psi,\mathrm b}$, $\tilde M_{\mathrm{kraus},0}=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ |
+| effect in the word | eigenvalues $\varrho^{2}e^{\pm\theta_{\mathrm{rpd},w}}$; admissible iff $\varrho^{2}e^{\theta_{\mathrm{rpd},w}}\le1$ |
 | one-Kraus channel | $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=e_t$ iff $\tilde M_{\mathrm{kraus},H}=e_t$ and $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus}}$ $*$-unitary |
-| sharp outcome | $\tilde M_{\mathrm{kraus}}=\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde E_{\Psi}=\tilde\Pi$, on the null cone |
-| soft rank-one outcome | $\tilde M_{\mathrm{kraus}}=\sigma\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\sigma\tilde\Pi$, $\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde E_{\Psi}=\sigma^{2}\tilde\Pi$ |
-| unsharp outcome | $\tilde M_{\mathrm{kraus}}$ invertible: $\tilde M_{\mathrm{kraus},H}>0$, $\tilde M_{\mathrm{kraus},0}$ $*$-unitary, $\tilde E_{\Psi}>0$ |
+| sharp outcome | $\tilde M_{\mathrm{kraus}}=\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde{\mathcal E}_{\Psi}=\tilde\Pi$, on the null cone |
+| soft rank-one outcome | $\tilde M_{\mathrm{kraus}}=\sigma\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\sigma\tilde\Pi$, $\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde{\mathcal E}_{\Psi}=\sigma^{2}\tilde\Pi$ |
+| unsharp outcome | $\tilde M_{\mathrm{kraus}}$ invertible: $\tilde M_{\mathrm{kraus},H}>0$, $\tilde M_{\mathrm{kraus},0}$ $*$-unitary, $\tilde{\mathcal E}_{\Psi}>0$ |
 | channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
 | dephasing | two scalar strengths and two $*$-unitary backactions, minimal Kraus rank two, irreversible for $p>0$ |
 
@@ -403,8 +403,8 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}}$ | positive (strength) factor of the Kraus operator |
 | $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus},H}^{+}\tilde M_{\mathrm{kraus}}$ | partial-isometry (backaction) factor |
 | $\tilde M_{\mathrm{kraus},H}^{+}$ | Moore–Penrose inverse |
-| $\tilde E_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ | effect of the outcome |
-| $r,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta_{\mathrm{axr}}$ | scale, central phase, word rapidity, rotor angle |
+| $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}$ | effect of the outcome |
+| $\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd},w},\theta_{\mathrm{axr}}$ | scale, central phase, word rapidity, rotor angle |
 | $\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r}$ | positive Hermitian boost, unit real quaternion rotor |
 | $\tilde\Pi=\tfrac12(e_t+i\vec u)$ | rank-one Hermitian idempotent, $\vec u$ a real unit vector |
 | $\tilde\Pi_{\mathrm i}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},0}$, $\tilde\Pi_{\mathrm f}=\tilde M_{\mathrm{kraus},0}\tilde M_{\mathrm{kraus},0}^{*}$ | initial and final projections of $\tilde M_{\mathrm{kraus},0}$ |

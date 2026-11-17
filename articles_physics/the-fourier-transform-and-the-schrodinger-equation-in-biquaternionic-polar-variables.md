@@ -10,7 +10,7 @@
 
 **The fourth finding is that the phase is a character and the rotor is not.** The phase of the flow adds over intervals, exactly, for a constant Hamiltonian; the rotor multiplies. Composing a turn of $0.6$ about $\vec e_x$ with a turn of $0.9$ about $\vec e_y$ gives a turn of $1.070152$ and not of $1.5$. **The angle composes because it is a character of the time group; the rotor does not, because rotor space is a group under multiplication and not under addition.**
 
-**The fifth finding is the conjugate pair.** The parent's kinetic Lagrangian is $-\hbar\,n\,\partial_{t'}\theta_{\mathrm{pha}}$ plus a rotor term, so the phase's conjugate momentum is $-\hbar$ times the density. The pair is $(\theta_{\mathrm{pha}},n)$, and $n=r^{2}$ makes the change of variable polynomial: $r\,\mathrm{d}r=\tfrac12\mathrm{d}n$, exact, with no weight. **The dual variable of this chart is flat**, and that is a property of a first-order equation.
+**The fifth finding is the conjugate pair.** The parent's kinetic Lagrangian is $-\hbar\,n\,\partial_{t'}\theta_{\mathrm{pha}}$ plus a rotor term, so the phase's conjugate momentum is $-\hbar$ times the density. The pair is $(\theta_{\mathrm{pha}},n)$, and $n=\varrho^{2}$ makes the change of variable polynomial: $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$, exact, with no weight. **The dual variable of this chart is flat**, and that is a property of a first-order equation.
 
 **What this article is not.** It is not a second transform and not a second equation. It is the companion's symbol read in the word, and every number below is a number of the companion with a name attached.
 
@@ -18,9 +18,9 @@
 
 The algebra, the units, the caret table and the two conjugations are those of *Algebra and Element Conventions*; the symbol rule is that of *Operator and Calculus Conventions*; the two forms are those of *Norm and Pairing Conventions*; the word, its domain and the two norms are those of *The Schrödinger Equation in Biquaternionic Polar Variables*.
 
-**The word.** $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$, with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, $\tilde U_{\Psi,\mathrm b}$ the Hermitian boost of unit quaternionic norm, and $\tilde u_{\mathrm r}$ the real unit rotor. It is a bijection with the eight real components off the cone $\langle\tilde\Xi\rangle_\natural=0$.
+**The word.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$, with $\varrho>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, $\tilde U_{\Psi,\mathrm b}$ the Hermitian boost of unit quaternionic norm, and $\tilde u_{\mathrm r}$ the real unit rotor. It is a bijection with the eight real components off the cone $\langle\tilde\Xi\rangle_\natural=0$.
 
-**The two norms.** $\langle\tilde\Xi\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2r^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
+**The two norms.** $\langle\tilde\Xi\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
 
 **The symbol.** $\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(\hbar\omega-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
 
@@ -29,7 +29,7 @@ The algebra, the units, the caret table and the two conjugations are those of *A
 **The kernel is a central unit times a sign.** The transform pairs a field with $e^{-i\theta_{\mathrm{pwp}}}$, and a central element of unit modulus has the word
 
 $$
-r=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{pha}}=\theta_{\mathrm{pwp}},
 \qquad
@@ -40,7 +40,7 @@ $$
 
 **So the kernel carries one parameter and a sign.** The scale is one, the rapidity is zero, and the rotor is the branch $\pm e_t$ that the phase's half-angle forces at $\theta_{\mathrm{pha}}=\pi$. That is the same degeneration as the free propagator's word, computed in the polar parent, and the reason is the same: a central unit of modulus one can carry nothing else.
 
-**The transform therefore moves one coordinate and touches no other.** Applied to a field of word $(r,\theta_{\mathrm{pha}},\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r})$, the transform shifts the phase by the kernel's phase and multiplies the coefficients; the scale, the rapidity and the rotor are what the amplitudes carry, and the amplitudes are the transform of the field's non-central part. **The chart's reading of the transform is: the phase is the transform's variable and the other seven parameters are its data.**
+**The transform therefore moves one coordinate and touches no other.** Applied to a field of word $(\varrho,\theta_{\mathrm{pha}},\tilde U_{\Psi,\mathrm b},\tilde u_{\mathrm r})$, the transform shifts the phase by the kernel's phase and multiplies the coefficients; the scale, the rapidity and the rotor are what the amplitudes carry, and the amplitudes are the transform of the field's non-central part. **The chart's reading of the transform is: the phase is the transform's variable and the other seven parameters are its data.**
 
 **A caution about the sign.** The rotor $\pm e_t$ is not a second degree of freedom. It is the branch of the square root, and the polar parent fixes it as the sign of the modulus. A kernel's word with a negative rotor is the same kernel read on the other branch, and no physical statement distinguishes them.
 
@@ -84,7 +84,7 @@ The four add to eight, which is the algebra's real dimension, and the decomposit
 **The four brackets are these four pieces.** The polar parent's logarithmic derivative is
 
 $$
-\partial_{t'}\tilde\Xi=\tilde\Xi\Big[\tfrac12\partial_{t'}\ln r^{2}+i\partial_{t'}\theta_{\mathrm{pha}}+\tilde u_{\mathrm r}^{-1}\big(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}\big)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_{t'}\tilde u_{\mathrm r}\Big],
+\partial_{t'}\tilde\Xi=\tilde\Xi\Big[\tfrac12\partial_{t'}\ln \varrho^{2}+i\partial_{t'}\theta_{\mathrm{pha}}+\tilde u_{\mathrm r}^{-1}\big(\tilde U_{\Psi,\mathrm b}^{-1}\partial_{t'}\tilde U_{\Psi,\mathrm b}\big)\tilde u_{\mathrm r}+\tilde u_{\mathrm r}^{-1}\partial_{t'}\tilde u_{\mathrm r}\Big],
 $$
 
 and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian traceless element. **The bracket is not four equations; it is one element read in its four types.**
@@ -148,10 +148,10 @@ That is a homomorphism from the additive group of times to the circle, and it is
 **The parent's kinetic Lagrangian.** The polar variational parent computes
 
 $$
-K=-\hbar\,r^{2}\cosh\theta_{\mathrm{rpd}}\;\partial_{t'}\theta_{\mathrm{pha}}+\frac{\hbar}{2}r^{2}\sinh\theta_{\mathrm{rpd}}\,\big(\vec\Omega\cdot\vec u_{\mathrm b}\big),
+K=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\;\partial_{t'}\theta_{\mathrm{pha}}+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\big(\vec\Omega\cdot\vec u_{\mathrm b}\big),
 $$
 
-with $n=r^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$. So the coefficient of the phase's rate is $-\hbar n$, and the conjugate momentum of the phase is
+with $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$. So the coefficient of the phase's rate is $-\hbar n$, and the conjugate momentum of the phase is
 
 $$
 p_\theta=\frac{\partial K}{\partial(\partial_{t'}\theta_{\mathrm{pha}})}=-\hbar\,n .
@@ -161,27 +161,27 @@ $$
 
 **The pair is invariant in the coupled chart.** The coupled polar parent records $p_\theta=-\hbar N$ and its invariance under the gauge transformation, and the invariance is the statement that the pair survives the coupling. **The transform's variable is therefore gauge invariant as a variable**, even though the phase itself is translated.
 
-**The pair is not a pair of independent data.** On a central field $n=r^{2}$ and the two functions are the two unknowns of Madelung's pair; on a general field the rapidity enters $n$ and the density is a function of two parameters. **The conjugacy is between the phase and the density, not between the phase and the scale**, and the distinction matters as soon as the field is not central.
+**The pair is not a pair of independent data.** On a central field $n=\varrho^{2}$ and the two functions are the two unknowns of Madelung's pair; on a general field the rapidity enters $n$ and the density is a function of two parameters. **The conjugacy is between the phase and the density, not between the phase and the scale**, and the distinction matters as soon as the field is not central.
 
 **A check on the sign.** The sign of $p_\theta$ is fixed by the sign of the kinetic term, which is the parent's, and it is negative. A positive sign would reverse the sense of the phase's evolution; the article keeps the parent's sign and does not re-derive the Lagrangian.
 
 ## The Dual Variable Is Flat
 
-**The change of variable.** $n=r^{2}$, so
+**The change of variable.** $n=\varrho^{2}$, so
 
 $$
-\mathrm{d}n=2r\,\mathrm{d}r,
+\mathrm{d}n=2\varrho\,\mathrm{d}\varrho,
 \qquad
-r\,\mathrm{d}r=\tfrac12\,\mathrm{d}n .
+\varrho\,\mathrm{d}\varrho=\tfrac12\,\mathrm{d}n .
 $$
 
-The Jacobian is $2r$, polynomial in the chart's own variable, and it vanishes only at $r=0$, which is the cone. **The dual variable is flat**: no weight beyond the flat one is needed to integrate over $n$, and the equation's own variable $r$ is its square root.
+The Jacobian is $2\varrho$, polynomial in the chart's own variable, and it vanishes only at $\varrho=0$, which is the cone. **The dual variable is flat**: no weight beyond the flat one is needed to integrate over $n$, and the equation's own variable $\varrho$ is its square root.
 
 **Why this is a property of the first order.** The polar parent states the contrast in one sentence: here the density is a norm and not the temporal slot of a current, so it has no sign to lose. A norm is a square, and a square is a polynomial change of variable. **A second-order equation's density is the temporal slot of a current, its sign is the sign of the energy, and no polynomial square of the chart's amplitude produces it**; that is why the second-order chart has no flat dual.
 
 **The flat dual is not a measure statement about the algebra.** It is a statement about the pair $(\theta_{\mathrm{pha}},n)$ and its two coordinates. The algebra's own measure is not at issue, and the article does not construct one.
 
-**What the flat dual buys.** The transform in $\theta_{\mathrm{pha}}$ has $n$ as its dual variable, and the change of variable from $r$ to $n$ is exact, so the transform's normalisation is the standard one. **No weight is inserted and none is dropped**, and the check is the Jacobian line above.
+**What the flat dual buys.** The transform in $\theta_{\mathrm{pha}}$ has $n$ as its dual variable, and the change of variable from $\varrho$ to $n$ is exact, so the transform's normalisation is the standard one. **No weight is inserted and none is dropped**, and the check is the Jacobian line above.
 
 ## What the Polar Reading Adds
 
@@ -217,21 +217,21 @@ The transform's kernel is a central unit of modulus one, so its word has scale o
 
 The symbol's word fails exactly on the spectrum, because the determinant is the square of the quaternionic norm, $\det\sigma=\langle\sigma\rangle_\natural^{2}$ to $2.1\times10^{-14}$, and the norm vanishes on the cone. The four brackets of the logarithmic derivative are the four types of the algebra, of dimensions one, one, three and three; in the constant setting the symbol occupies the real central and the Hermitian traceless types, which are the mean and the gap, and the other two are empty.
 
-The phase is a character and the rotor is not: $0.6$ and $0.9$ about different axes compose to $1.070152$ and not to $1.5$, while the same axis gives $1.500000000$ exactly. The phase's conjugate momentum is $-\hbar n$, and $n=r^{2}$ gives $r\,\mathrm{d}r=\tfrac12\mathrm{d}n$: **the dual variable of this chart is flat**, and the flatness is a property of a first-order equation.
+The phase is a character and the rotor is not: $0.6$ and $0.9$ about different axes compose to $1.070152$ and not to $1.5$, while the same axis gives $1.500000000$ exactly. The phase's conjugate momentum is $-\hbar n$, and $n=\varrho^{2}$ gives $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$: **the dual variable of this chart is flat**, and the flatness is a property of a first-order equation.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 | --- | --- |
 | $\theta_{\mathrm{pwp}}=\omega t'-\vec k_\Phi\cdot\vec r$ | The plane wave's phase; the transform's exponent |
-| $r=1$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$ | The word of the transform's kernel |
+| $\varrho=1$, $\tilde U_{\Psi,\mathrm b}=e_t$, $\tilde u_{\mathrm r}=\pm e_t$ | The word of the transform's kernel |
 | $\langle\sigma\rangle_\natural=(\hbar\omega-h_t)^{2}-\lvert\vec h_\Psi\rvert^{2}$ | The symbol's quaternionic norm; the elementary determinant |
 | $\det\sigma=\langle\sigma\rangle_\natural^{2}$ | The determinant; its zeros are the cone, hence the spectrum |
 | $h_t\pm\lvert\vec h_\Psi\rvert$ | The two eigenvalues; the mean and the gap; the two rates |
 | $1+1+3+3=8$ | The four types of the bracket, and their dimensions |
 | $p_\theta=-\hbar n$ | The phase's conjugate momentum; the density |
-| $n=r^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$ | The density; the dual coordinate |
-| $r\,\mathrm{d}r=\tfrac12\mathrm{d}n$ | The flat dual; the Jacobian $2r$ |
+| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$ | The density; the dual coordinate |
+| $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$ | The flat dual; the Jacobian $2\varrho$ |
 | $\theta_{\mathrm{axr},Q}=2\lvert\vec h_\Psi\rvert t'/\hbar$ | The rotor's angle; the gap, read twice |
 
 ## Further Reading
