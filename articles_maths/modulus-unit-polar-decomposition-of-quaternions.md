@@ -6,7 +6,7 @@ This article treats the **modulus–unit polar decomposition** of a quaternion: 
 
 $$ \boxed{\; \tilde q = r\,\tilde u_{\mathrm r}, \qquad r \in \mathbb{R}, \quad r > 0, \qquad \tilde u_{\mathrm r} \in \mathbb{H}, \quad \langle\tilde u_{\mathrm r}\rangle_{\natural} = 1 \;} ,$$
 
-with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Algebra and Element Conventions*, §*Summary of Notation*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the two-sided operator by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
+with $r$ the **modulus** and $\tilde u_{\mathrm r}$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{H}$: it uses only the norm, the conjugate and the square root, and it chooses no coordinate on the unit factor. The unit factor is also called the **rotor**: a unit real quaternion is a rotor (*Algebra and Element Conventions*, §*Summary of Notation*), and the subscript $\mathrm r$ records the name. The exponential article writes it as $\tilde u_{\mathrm r}=\exp(\theta\vec n)$; the two-sided operator by it rotates by $2\theta$, so the exponent angle $\theta$ is the half-angle of the rotor (*Polar Decomposition of Quaternions*, §*The Rotor Part*). The unit factor is treated as a point of the unit sphere $S^3$, and the sphere as a set, as a manifold and as a group.
 
 The decomposition is the four-dimensional definite case of the polar decomposition of the algebras of the family. Every algebra of the family splits an invertible element into a scale and a unit factor, and the differences between the algebras lie in the unit factor: a finite set in $\mathbb{R}$, a circle in $\mathbb{C}$, a sphere in $\mathbb{H}$, a level set of an indefinite form in the split cases. The complex case is the base case because the norm is definite and the group of invertibles is abelian. The quaternion case is the first definite case in which the group of invertibles is non-abelian, and the first in which the unit set is neither finite nor a circle; both changes are visible in the group of invertibles, in the matrix picture and in the absence of a second continuous factor.
 
@@ -68,7 +68,7 @@ $$
 4 = 1+3 .
 $$
 
-The three is the dimension of the sphere $S^3$, not a triple of scalar parameters: no coordinate on the sphere has been chosen. What the three degrees of freedom are parametrised by is a separate question, answered by a chart of the sphere. The rational chart is the subject of *Rational-Chart Polar Decomposition of Quaternions*, the exponential chart the subject of *Exponential Polar Decomposition of Quaternions*, and this article chooses none.
+The three is the dimension of the sphere $S^3$, not a triple of scalar parameters: no coordinate on the sphere has been chosen. What the three degrees of freedom are parametrised by is a separate question, answered by a chart of the sphere. The rational chart is the subject of *Rational-Chart Polar Decomposition of Quaternions*, the exponential chart the subject of *Polar Decomposition of Quaternions*, and this article chooses none.
 
 ## Existence and Uniqueness
 
@@ -152,7 +152,7 @@ $$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}, \qquad 4=1+3 .
 $$
 
-The scalar line is a subalgebra. The pure subspace is not: the product of two pure quaternions has a scalar part, $\vec v\vec w=-\vec v\cdot\vec w+\vec v\times\vec w$. The modulus lies on the scalar axis, and the unit sphere meets that axis at $\pm e_t$. Every unit quaternion other than $\pm e_t$ has a nonzero vector part, and it is written $\cos\theta+\vec n\sin\theta$ with $\vec n$ a unit pure quaternion and $\theta\in(0,\pi)$; this is the axis-angle form developed in *Exponential Polar Decomposition of Quaternions*.
+The scalar line is a subalgebra. The pure subspace is not: the product of two pure quaternions has a scalar part, $\vec v\vec w=-\vec v\cdot\vec w+\vec v\times\vec w$. The modulus lies on the scalar axis, and the unit sphere meets that axis at $\pm e_t$. Every unit quaternion other than $\pm e_t$ has a nonzero vector part, and it is written $\cos\theta+\vec n\sin\theta$ with $\vec n$ a unit pure quaternion and $\theta\in(0,\pi)$; this is the axis-angle form developed in *Polar Decomposition of Quaternions*.
 
 ### The Roots of Plus One, Zero and Minus One
 

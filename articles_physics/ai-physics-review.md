@@ -95,15 +95,15 @@ $$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,\qquad\text{that is}\qquad \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12.
 $$
 
-**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,
+**The weight.** With $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ and $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,
 
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=h_t+\vec r\cdot\vec h_\Psi.
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi.
 $$
 
-The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec r\cdot\vec u)$, which lies in $[0,1]$ when $|\vec r|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
+The star is the Hermitian conjugation; it is inert here because $\tilde{Ϛ}_{\Psi}$ and $\tilde H_\Psi$ are Hermitian, and it is kept because $\langle\cdot,\cdot\rangle_{*}$ is the form that is positive definite on the whole algebra. For $\tilde H_\Psi=\tilde\Pi(\vec u)$ this is $\tfrac12(1+\vec s_{\Psi}\cdot\vec u)$, which lies in $[0,1]$ when $|\vec s_{\Psi}|\le1$, and the weights of the two outcomes $\tilde\Pi$ and $e_t-\tilde\Pi$ sum to one. This is the Born rule on the sector, and it is complete before any matrix is chosen.
 
 #### The quaternionic form: the interval
 
@@ -229,7 +229,7 @@ with real $h_t,\vec h_\Psi$, and its spectrum is $h_t+\lvert\vec h_\Psi\rvert$ a
 $$
 \boxed{\;p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-=h_t+\vec r\cdot\vec h_\Psi\;}.
+=h_t+\vec s_{\Psi}\cdot\vec h_\Psi\;}.
 $$
 
 4. **The state space is not added: it is the positive cone of the sector.** The pure states are the algebra's own idempotents,
@@ -238,9 +238,9 @@ $$
 $$
 parametrised by the unit sphere — the Bloch sphere — and the mixed states are the positive elements with $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, that is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r), \qquad \lvert\vec r\rvert \le 1,
+\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi}), \qquad \lvert\vec s_{\Psi}\rvert \le 1,
 $$
-with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde{\Pi}\rangle_{\natural} = 0$.
+with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec s_{\Psi}\rvert^2)/4 \ge 0$ as the positivity condition: the Bloch ball, exactly the convex set of states of a qubit. Nothing about the state space has to be put in by hand, and the pure states sit on the same null cone that the material sector calls the light cone, since $\langle\tilde{\Pi}\rangle_{\natural} = 0$.
 
 5. **The non-commutativity has exactly the quantum pattern.** The product of two Hermitian elements is Hermitian exactly when the two commute. The commutator of two Hermitian elements is anti-Hermitian, hence an element of $\mathbb{B}_{\Phi}$. Therefore $i$ times a commutator is again Hermitian, hence again an observable. That is the pattern of the quantum commutator and of the generator of a dynamics. Equivalently, $\mathbb{B}_{\Psi}$ closes under the anticommutator and not under the commutator: it is a Jordan algebra, as an algebra of observables is, while the Lie algebra sits in the other sector.
 
@@ -265,8 +265,8 @@ with $\det\mathsf{M}_2(\tilde{Ϛ}_{\Psi}) = (1-\lvert\vec r\rvert^2)/4 \ge 0$ as
 | The light cone | $\langle\tilde{Q}\rangle_{\natural} = 0$ is the light cone; its nonzero points are the zero divisors of $\mathbb{B}$ |
 | The state module | Left ideal $\mathbb{B}\tilde{\Pi}$ with basis $\{\tilde{\Pi},\tilde\Upsilon\}$, Gram matrix $\tfrac12I_2$, amplitudes add |
 | The oscillator obstruction | $[\tilde{Q}_1,\tilde{Q}_2] =i\,\hbar\,e_{t}$ **has no solution** with $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}_{\Psi}$: the commutator of two Hermitian elements is a pure real quaternion of zero scalar part, while $i\,\hbar\,e_{t}$ is purely scalar. The algebra therefore carries no oscillator beyond the two-level one, and the canonical commutator must be imported |
-| The congruence is not a channel | $\tilde{Ϛ}_{\Psi}\mapsto\tilde{U}\tilde{Ϛ}_{\Psi}\tilde{U}^{*}$ **preserves the biquaternion norm and not the doubled scalar part**, so it is not a state transformation: a channel cannot rescale that number, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec r = \tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ the rapidity |
-| The entropy is the biquaternion norm | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)$, so the von Neumann entropy is a function of the biquaternion norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the $*$-unitary group that acts on states, and it is a complete invariant of that orbit |
+| The congruence is not a channel | $\tilde{Ϛ}_{\Psi}\mapsto\tilde{U}\tilde{Ϛ}_{\Psi}\tilde{U}^{*}$ **preserves the biquaternion norm and not the doubled scalar part**, so it is not a state transformation: a channel cannot rescale that number, and a unital channel cannot raise the purity of a state. After normalisation it raises the Bloch radius, carrying the maximally mixed state to $\vec s_{\Psi} = \tanh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, with $\theta_{\mathrm{rpd}}$ the rapidity |
+| The entropy is the biquaternion norm | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec s_{\Psi}\rvert^2)$, so the von Neumann entropy is a function of the biquaternion norm alone, $S = h\!\left(\tfrac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)$, with $h$ the binary entropy; it is constant on every orbit of the $*$-unitary group that acts on states, and it is a complete invariant of that orbit |
 | Spin one is the adjoint action | The inner derivations of $\mathbb{B}$, the maps $X\mapsto[\tilde{Q},X]$, acting on the vector part of $\mathbb{B}_{\Phi}$ span the three-dimensional spin-one representation, with quadratic Casimir $2 = s(s+1)$ at $s = 1$, and its weight basis is the polarisation triad of a massive vector; the identification with polarisation is an interpretation, not a theorem |
 | The invariant and the normalised concurrence | The antisymmetric bilinear pairing of two spinors is exactly invariant under a boost, because the boost acts on each spinor with unit determinant. The frame dependence of entanglement enters only through the normalisation, so it appears only when the momentum is spread: the boost changes the norm that normalises the state, and not the invariant pairing |
 
@@ -384,7 +384,7 @@ Most of the corpus restates known physics in the biquaternion language, which co
 | $\Gamma_{\tilde{Q}_1}(\tilde{Q}_2) = \tilde{Q}_1\tilde{Q}_2\tilde{Q}_1^{*}$ | One action form: Lorentz transformation, evolution, measurement |
 | $\tilde{U}\tilde{U}^{\natural} = e_t$ | Unit-norm element; $SL(2,\mathbb{C})$, the Lorentz double cover |
 | $\tilde{\Pi} = \tfrac12(e_t+i\vec u_{\mathrm r})$ | Pure state: idempotent, Hermitian, null, normalised by $\langle\tilde{\Pi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading |
-| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\lvert\vec r\rvert\le1$ | State: positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading; the Bloch ball |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert\le1$ | State: positive, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$; unit matrix trace in the $2\times2$ reading; the Bloch ball |
 | $\tilde H_\Psi = h_t\,e_t+i(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z)$ | Observable: Hermitian, real spectrum $h_t\pm\lvert\vec h_\Psi\rvert$ |
 | $\tilde\Upsilon = \tfrac12(i\vec e_x+\vec e_y)$ | Nilpotent partner of the idempotent $\tilde{\Pi}$ in the state module |
 | $c$ | Speed of light; $i r'_t$ is the material time coordinate |

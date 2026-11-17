@@ -22,7 +22,7 @@
 
 **The third objection is that a match between three algebraic labels and the observed spins is a prediction.** It is not, and the mathematics does not make it. The algebra supplies the set $\{0,\tfrac12,1\}$; it does not say which particle carries which spin, and it does not say why the list is realised. The entry states the match, states its boundary, and does not lean on it.
 
-**The letters.** The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_+$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_\pm$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\varrho$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
+**The letters.** The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_+$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_\pm$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.
 
 **Boundaries.** The definition, the classification, the criterion, the quadratic element and the four closure rules are the mathematics' *From the Spin to the Carriers and the Closures*; the rotor group and the two derivations of the spins are *The Rotor Group via $4\times4$ Real Matrices*, *From the Rotor to the Spin of the Rotor* and *From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides*; the module theory behind the count is *The Category of Modules*; the Peirce basis and the corners are *The Peirce Decomposition of the Biquaternion Algebra*; the idempotents and their conjugacy are *Idempotents*; the polar form of the norm that carries the completeness proof is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the averaging argument for compact groups is *Representations of Groups*. The three carriers are read one at a time in the three entries that follow this one, *Introduction to the Spin-Zero Centre Subspace*, *Introduction to the Spin-Half Bispinors Spaces* and *Introduction to the Spin-One Anti-Hermitian Subspace*. The reading of the carrier by a field equation is *The Klein–Gordon Equation in Biquaternionic Form*, *The Dirac Equation in Biquaternionic Form* and *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. No dynamics, no action principle, no mass value and no quantum postulate appear below.
 
@@ -97,12 +97,12 @@ The **adjoint action** on the vector part $\mathfrak{k}$: the conjugation by the
 **The generator.** The generator along the axis is $A(\vec u)=\tfrac12\vec u$, a real pure element, and the representation of the rotor is its exponential,
 
 $$
-\varrho(\tilde u)=\exp\bigl(\theta\,\varrho(A(\vec u))\bigr),
+\rho_{\mathrm{rep}}(\tilde u)=\exp\bigl(\theta\,\rho_{\mathrm{rep}}(A(\vec u))\bigr),
 $$
 
 with a real operator and a real exponent. The halved angle of the rotor is not inserted into this formula; it is already in the element, since $\tilde u=\cos\tfrac\theta2+\sin\tfrac\theta2\vec u=\exp(\tfrac\theta2\vec u)$.
 
-**The weights.** The **weights** of a carrier are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of $\varrho(A(\vec u))$ on the carrier's space, counted with multiplicity; the **spin** is the largest of them. The definition is well posed for two reasons, and the mathematics proves both. The weights are real, because the three operators are real-linear with purely imaginary eigenvalues: zero on the line, the scalar $-\tfrac i2$ on the plane, and the cross product on the vector part. And the weights do not depend on the axis, because the operators at two axes are similar, the similarity being the conjugation by a rotor that carries one axis to the other.
+**The weights.** The **weights** of a carrier are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of $\rho_{\mathrm{rep}}(A(\vec u))$ on the carrier's space, counted with multiplicity; the **spin** is the largest of them. The definition is well posed for two reasons, and the mathematics proves both. The weights are real, because the three operators are real-linear with purely imaginary eigenvalues: zero on the line, the scalar $-\tfrac i2$ on the plane, and the cross product on the vector part. And the weights do not depend on the axis, because the operators at two axes are similar, the similarity being the conjugation by a rotor that carries one axis to the other.
 
 **What the definition does not use.** No angle, no array and no coordinate. The spin is read at the identity of the group, and the only place an angle enters is the full turn, where it enters as $2\pi$.
 
@@ -146,7 +146,7 @@ $$
 
 Irreducibility is the one property of a carrier that no dimension supplies. The mathematics replaces the case-by-case check by one test, and the test is worth stating on its own because it is what makes the word spin a spectral word.
 
-**The theorem.** Let $V$ be a finite-dimensional complex module for the rotation algebra, and suppose the weights of $\varrho(A(\vec u))$ on $V$ are simple and spaced by one, the largest being $s$. Then $V$ is irreducible, $s$ is its highest weight, and $\dim_\mathbb{C}V=2s+1$.
+**The theorem.** Let $V$ be a finite-dimensional complex module for the rotation algebra, and suppose the weights of $\rho_{\mathrm{rep}}(A(\vec u))$ on $V$ are simple and spaced by one, the largest being $s$. Then $V$ is irreducible, $s$ is its highest weight, and $\dim_\mathbb{C}V=2s+1$.
 
 **The proof in one paragraph.** The group is compact, so $V$ splits into irreducibles. On an irreducible the weights form one string, symmetric about zero and spaced by one: the module is generated by an eigenvector of the largest weight, and the two ladder elements built on an oriented pair completing the axis raise and lower the weight by one, or annihilate at the ends. A string that is symmetric and spaced by one contains $0$ exactly once, so the multiplicity of the weight $0$ on $V$ is the number of its summands, and the hypothesis makes that number one.
 
@@ -160,7 +160,7 @@ Irreducibility is the one property of a carrier that no dimension supplies. The 
 
 The three carriers are stated in the order of their spins, $0$, $\tfrac12$, $1$, which is also the order fixed line, spinor plane, vector part: the two rotation-invariant pieces first, the one-sided one after. Each is described by the same template: the subspace, the action, the operator, the spectrum, the dimension, the spin, and the sign of a full turn.
 
-| carrier | $\dim_\mathbb{R}$ | action | $\varrho(A(\vec u))$ | weights | $s$ | $2s+1$ | full turn |
+| carrier | $\dim_\mathbb{R}$ | action | $\rho_{\mathrm{rep}}(A(\vec u))$ | weights | $s$ | $2s+1$ | full turn |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | fixed line $\mathbb{R}e_t$ | $1$ | trivial | $0$ | $\{0\}$ | $0$ | $1$ | $+1$ |
 | spinor plane $\Sigma=\mathbb{C}\tilde\Pi_+$ | $2$ | $L$ on the circle about $\vec u$ | the scalar $-\tfrac i2$ | $\{\pm\tfrac12\}$ | $\tfrac12$ | $2$ | $-1$ |
@@ -333,7 +333,7 @@ The carrier is the vector part and the closure is the anti-Hermitian space $\mat
 
 **The axis is a frame, not a datum.** The idempotents exist at every unit axis, the spectrum does not depend on the axis, and the family of bispinor spaces is indexed by the real projective plane. The warrant is the lemma that the operators at two axes are similar and the theorem that the algebra singles out no axis. The boundary is that a choice of quantisation axis is a choice of basis; nothing in the algebra makes one axis preferred.
 
-**A full turn is $(-1)^{2s}$.** The operator of the full turn is $+\mathrm{id}$ on the integer carriers and $-\mathrm{id}$ on the half-integer one, so the half-integer carrier is an action of the double cover and the integer carriers are actions of the rotation group. The warrant is the eigenvalue $e^{2\pi i\lambda}$ at $\lambda=\pm\tfrac12$, verified as $\varrho(-e_t)=-\mathrm{id}$ on the plane to $8.7\times10^{-17}$. The boundary is that the sign is a statement about the action and not about statistics.
+**A full turn is $(-1)^{2s}$.** The operator of the full turn is $+\mathrm{id}$ on the integer carriers and $-\mathrm{id}$ on the half-integer one, so the half-integer carrier is an action of the double cover and the integer carriers are actions of the rotation group. The warrant is the eigenvalue $e^{2\pi i\lambda}$ at $\lambda=\pm\tfrac12$, verified as $\rho_{\mathrm{rep}}(-e_t)=-\mathrm{id}$ on the plane to $8.7\times10^{-17}$. The boundary is that the sign is a statement about the action and not about statistics.
 
 **Charge belongs to the closure and not to the carrier.** The centre carries every phase, since a central phase commutes with everything and preserves the complex line; the material sector carries only $\pm1$, since every other phase leaves it. The warrant is the centrality of $i$ and the reality of the sector. The boundary is that this is a statement about which phases preserve the space of values, and not about a coupling constant.
 
@@ -403,7 +403,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 | $A(\vec u)=\tfrac12\vec u$ | the generator along the axis |
 | $\tilde S_k=\tfrac12 i\vec e_k$ | the Hermitian generator of the coordinate axis |
 | $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$ | the quadratic element |
-| $\varrho$ | a representation of an action on a carrier |
+| $\rho_{\mathrm{rep}}$ | a representation of an action on a carrier |
 | $\lambda$, $s$ | a weight, and the spin, the largest weight |
 
 ## Further Reading

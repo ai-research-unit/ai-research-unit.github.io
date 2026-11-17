@@ -17,7 +17,7 @@ $$
 \varepsilon=(1,-1,-1,-1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 
@@ -186,7 +186,7 @@ $$
 \boxed{\;S\bigl(U\tilde{Ϛ}_{\Psi,1}\,U^\dagger \,\big\|\, U\tilde{Ϛ}_{\Psi,2}\,U^\dagger\bigr) = S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})\;},
 $$
 
-which was checked on explicit superpositions: with the Bloch vectors $\vec r = (0.41,-0.52,0.23)$ and $\vec s = (-0.33,0.61,0.47)$ and a rotation by $2.0$ radians about the axis $(0.55,0.31,-0.77)$ — a generic $*$-unitary of the informational sector; the central phase itself acts on $\mathbb{B}_{\Psi}$ by $|\lambda|^2 = 1$, so for the re-encoding proper the invariance is immediate — the relative entropy took the same value $1.375407856007$ before and after the rotation, agreeing to machine precision. So no distinguishability between states is destroyed by the re-encoding in which the Goldstone mode is absorbed. The relocation is information-preserving on the full description.
+which was checked on explicit superpositions: with the Bloch vectors $\vec s_{\Psi} = (0.41,-0.52,0.23)$ and $\vec s = (-0.33,0.61,0.47)$ and a rotation by $2.0$ radians about the axis $(0.55,0.31,-0.77)$ — a generic $*$-unitary of the informational sector; the central phase itself acts on $\mathbb{B}_{\Psi}$ by $|\lambda|^2 = 1$, so for the re-encoding proper the invariance is immediate — the relative entropy took the same value $1.375407856007$ before and after the rotation, agreeing to machine precision. So no distinguishability between states is destroyed by the re-encoding in which the Goldstone mode is absorbed. The relocation is information-preserving on the full description.
 
 ### Many-to-One on the Observable Description
 
@@ -291,7 +291,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $-\tfrac12 M_A^2\,\langle\tilde{A}_{\Phi}\rangle_{\natural}$ | Proca mass term |
 | $2+2 = 1+3$ | Degree-of-freedom balance; conservation |
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; invariant under the re-encoding |
-| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State of the informational sector (Bloch ball) |
 | $k_BT\ln2$ | Landauer cost of erasing a physical bit (not incurred here) |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | Trace reading of the Hermitian form; $2\,\mathrm{Sc}(e_t) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

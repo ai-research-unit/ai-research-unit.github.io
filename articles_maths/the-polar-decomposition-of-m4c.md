@@ -6,7 +6,7 @@
 
 The article proves the polar decomposition, identifies the singular value decomposition, describes the singular case and the manifold $GL_4/U(4)$, states the exponential form and the Cartan decomposition, and identifies the $*$-unitary factor as the closest $*$-unitary to $A$.
 
-The positive definite form is *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the singular values and the norms are *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*; the exponential form is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the mass-block version is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
+The positive definite form is *The Involution and the Hermitian Structure of $M_4(\mathbb{C})$*; the singular values and the norms are *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*; the exponential form is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*; the mass-block version is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*.
 
 ## The Polar Decomposition
 
@@ -250,7 +250,7 @@ $$
 
 with $K,H$ Hermitian. The factor $e^{iK}$ is $*$-unitary and $e^H$ is positive definite. The decomposition is the polar decomposition, written in exponential form.
 
-**The other order.** The **exponential polar decomposition** of *The Exponential Polar Decomposition of $M_4(\mathbb{C})$* writes an invertible $A$ as
+**The other order.** The companion article, *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*, writes an invertible $A$ as
 
 $$
 A=e^{H'}e^{iK'},
@@ -286,7 +286,7 @@ the positive definite $2\times2$ Hermitian cone, of real dimension $4$. The expo
 
 ## Summary
 
-Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\langle A\rangle_*+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the exponential polar decomposition.
+Every $A\in M_4(\mathbb{C})$ has a polar decomposition $A=UP$ with $U\in U(4)$ and $P$ positive semidefinite; $P=(A^*A)^{1/2}$ is unique, and $U$ is unique when $A$ is invertible. The singular value decomposition $A=U\Sigma V^*$ refines it, with $P=V\Sigma V^*$ and $W=UV^*$. When $A$ is singular, $U$ is $*$-unitary, uniquely determined on the range of $P$ and arbitrary on the kernel, with freedom $U(4-k)$ for rank $k$. The polar decomposition is the diffeomorphism $GL_4\cong U(4)\times P_+$, hence $GL_4/U(4)\cong P_+$, the contractible symmetric space of positive definite Hermitian matrices; it is the global Cartan decomposition of $\mathfrak{gl}_4=\mathfrak{u}(4)\oplus\operatorname{Herm}_4$ with Cartan involution $\theta(X)=-X^*$. The $*$-unitary factor is the closest $*$-unitary to $A$ in the Frobenius norm, with distance squared $\langle A\rangle_*+4-2\lVert A\rVert_*$. In exponential form $A=e^{iK}e^H$ with $K,H$ Hermitian; the other ordering $e^{H'}e^{iK'}$ is the polar decomposition in exponential coordinates.
 
 $$
 \boxed{\ A=UP,\quad P=(A^*A)^{1/2},\quad U\in U(4),\quad P\ge0,\quad GL_4/U(4)\cong P_+,\quad \dim_\mathbb{R}P_+=16. }
@@ -322,6 +322,6 @@ $$
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_4/U(4)$.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the positive definite form and the $*$-unitary group.
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the singular values and the norms.
-- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the other ordering $e^He^{iK}$.
+- [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the other ordering $e^He^{iK}$.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the chiral version.
 - [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen two-sided operators, which are signed permutation matrices and therefore orthogonal, so each is its own polar factor.

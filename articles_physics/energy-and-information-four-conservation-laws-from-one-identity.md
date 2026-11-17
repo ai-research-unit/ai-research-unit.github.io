@@ -166,7 +166,7 @@ The identity becomes four statements when the two numbers are named on the two s
 | $\mathbb{B}_{\Phi}$ | $2\,\mathrm{Sc}$ | $2iE/c$ | the $*$-unitary flow of the dynamics | energy |
 | $\mathbb{B}_{\Phi}$ | quaternionic norm | $-m^{2}c^{2}$ | the flow, and every unit-norm congruence | mass |
 | $\mathbb{B}_{\Psi}$ | $2\,\mathrm{Sc}$ | $1$ | the flow, and every map that preserves it | normalisation |
-| $\mathbb{B}_{\Psi}$ | quaternionic norm | $\tfrac14(1-\lvert\vec r\rvert^{2})$ | the reversible flow | information |
+| $\mathbb{B}_{\Psi}$ | quaternionic norm | $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ | the reversible flow | information |
 
 The four rows are the whole thesis. The material pair and the informational pair are the same two lines of algebra, with the sectors supplying the names: twice the scalar part is $2iE/c$ on one side and $1$ on the other, and the norm is $-m^{2}c^{2}$ on one side and the impurity on the other. One preservation, read twice, gives energy and mass conservation on the material side and normalisation and information conservation on the informational side.
 
@@ -257,7 +257,7 @@ $$
 =e^{2\theta_{\mathrm{evo}} h_t}\cosh\bigl(2\lvert\vec h_\Psi\rvert\theta_{\mathrm{evo}}\bigr),
 $$
 
-checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta_{\mathrm{evo}}$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
+checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec s_{\Psi}\rvert)$, and it decays when $R_t<-\lvert\vec s_{\Psi}\rvert$; the backward branch grows at rate $2(\lvert\vec s_{\Psi}\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta_{\mathrm{evo}}$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
 
 One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
 
@@ -493,9 +493,9 @@ because a unit-norm element has norm one and its star has norm one. The doubled 
 A state of the informational sector is the Hermitian element
 
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac12\bigl(e_t+i\vec r\bigr),\qquad
-\vec r=r_1\vec e_x+r_2\vec e_y+r_3\vec e_z,\qquad
-\lvert\vec r\rvert\le1 .
+\tilde{Ϛ}_{\Psi}=\tfrac12\bigl(e_t+i\vec s_{\Psi}\bigr),\qquad
+\vec s_{\Psi}=r_1\vec e_x+r_2\vec e_y+r_3\vec e_z,\qquad
+\lvert\vec s_{\Psi}\rvert\le1 .
 $$
 
 Twice its scalar part is one,
@@ -519,19 +519,19 @@ The doubled scalar part is fixed by the normalisation and says nothing about whi
 The quaternionic norm of the state is
 
 $$
-\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14\bigl(1-\lvert\vec r\rvert^2\bigr)e_t,
+\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14\bigl(1-\lvert\vec s_{\Psi}\rvert^2\bigr)e_t,
 $$
 
 a central element whose coefficient runs from $\tfrac14$ at the maximally mixed state to $0$ on the pure states. The Hermitian norm is a different number,
 
 $$
-\langle\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac14\bigl(1+\lvert\vec r\rvert^2\bigr),
+\langle\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac14\bigl(1+\lvert\vec s_{\Psi}\rvert^2\bigr),
 $$
 
 and the two are related by the purity,
 
 $$
-P(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac12\bigl(1+\lvert\vec r\rvert^2\bigr),
+P(\tilde{Ϛ}_{\Psi})=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*=\tfrac12\bigl(1+\lvert\vec s_{\Psi}\rvert^2\bigr),
 \qquad
 P+2\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=1 .
 $$
@@ -540,19 +540,19 @@ The entropy is a function of the quaternionic norm and of nothing else:
 
 $$
 S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\bigr)
-=h\!\left(\frac{1+\lvert\vec r\rvert}{2}\right)
+=h\!\left(\frac{1+\lvert\vec s_{\Psi}\rvert}{2}\right)
 =H\!\left(\langle\tilde{Ϛ}_{\Psi}\rangle_\natural\right),
 $$
 
 with $h$ the binary entropy and $H(N)=h\bigl((1+\sqrt{1-4N})/2\bigr)$. The function is increasing on $[0,\tfrac14]$, vanishes on the pure states and reaches $\log 2$ at the maximally mixed state. This is the corpus's identification: the natural invariant of the algebra and the entropy of the state are one quantity in two readings. The norm is the information in that precise sense: it fixes the entropy, and the entropy is the information the state fails to hold.
 
-| state | $\lvert\vec r\rvert$ | $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural$ | $S$ |
+| state | $\lvert\vec s_{\Psi}\rvert$ | $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural$ | $S$ |
 | --- | --- | --- | --- |
 | pure | $1$ | $0$ | $0$ |
-| mixed | $0<\lvert\vec r\rvert<1$ | $0<\tfrac14(1-r^2)<\tfrac14$ | $0\lt S\lt\log2$ |
+| mixed | $0<\lvert\vec s_{\Psi}\rvert<1$ | $0<\tfrac14(1-s^2)<\tfrac14$ | $0\lt S\lt\log2$ |
 | maximally mixed | $0$ | $\tfrac14$ | $\log2$ |
 
-There is a direction to the identification, and it is easy to get backwards. The **Hermitian** norm grows with $\lvert\vec r\rvert$ and measures purity; the **quaternionic** norm falls with $\lvert\vec r\rvert$ and measures impurity, which is the information the state fails to hold. The entropy belongs to the second, not the first. On the state slice the two are affinely related, so no number is lost, but the two names must not be exchanged.
+There is a direction to the identification, and it is easy to get backwards. The **Hermitian** norm grows with $\lvert\vec s_{\Psi}\rvert$ and measures purity; the **quaternionic** norm falls with $\lvert\vec s_{\Psi}\rvert$ and measures impurity, which is the information the state fails to hold. The entropy belongs to the second, not the first. On the state slice the two are affinely related, so no number is lost, but the two names must not be exchanged.
 
 ### Information Conservation and Invariance
 
@@ -572,7 +572,7 @@ $$
 
 This is the precise sense in which information is conserved. Conservation here is the invariance of the spectrum under a similarity, and the doubled scalar part and the norm are the two symmetric functions of the spectrum that the algebra reads.
 
-The conservation fails as soon as the dynamics is not reversible. A coarse-graining is a unital completely positive map that contracts the Bloch ball, $\lvert\vec r_Ξ\rvert\le\lvert\vec r\rvert$. The doubled scalar part survives, because the map preserves it, and the quaternionic norm increases, because the radius falls:
+The conservation fails as soon as the dynamics is not reversible. A coarse-graining is a unital completely positive map that contracts the Bloch ball, $\lvert\vec r_Ξ\rvert\le\lvert\vec s_{\Psi}\rvert$. The doubled scalar part survives, because the map preserves it, and the quaternionic norm increases, because the radius falls:
 
 $$
 2\,\mathrm{Sc}\,Ξ(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi},
@@ -598,7 +598,7 @@ The two sectors use the same two operations in opposite roles. The table is the 
 | --- | --- | --- |
 | standard object | four-momentum $\tilde P_{\Phi}$ | state $\tilde{Ϛ}_{\Psi}$ |
 | $2\,\mathrm{Sc}$ | energy, $2iE/c$ | normalisation, one |
-| quaternionic norm | mass squared, $-m^2c^2$ | impurity, $\tfrac14(1-r^2)$ |
+| quaternionic norm | mass squared, $-m^2c^2$ | impurity, $\tfrac14(1-s^2)$ |
 | scalar product | $\langle\cdot,\cdot\rangle_\natural$, indefinite | $\langle\cdot,\cdot\rangle_*$, positive definite |
 | central scalar | mass $\Rho=imc$ | scalar part $\tfrac12$ |
 | fixed by the physics | the norm (the particle's mass) | $2\,\mathrm{Sc}$ (normalisation) |
@@ -629,7 +629,7 @@ The fixed number is the one that two observers agree on. The free number is the 
 
 ### The Informational Ledger: The Norm Is a State Label
 
-**One number, four states.** Every state has doubled scalar part one. Take the family $\tilde{Ϛ}_{\Psi}=\frac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
+**One number, four states.** Every state has doubled scalar part one. Take the family $\tilde{Ϛ}_{\Psi}=\frac12(e_t+i\vec s_{\Psi})$ at $\lvert\vec s_{\Psi}\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
 
 That number is the same four times. The norm separates the four states without error, and the entropy is a monotone function of it. So on this side the number identifies nothing and the norm identifies everything.
 
@@ -639,7 +639,7 @@ The norm does distinguish them, and in the direction opposite to the material on
 
 This is the informational counterpart of the cross term in the mass of a pair. On the material side the mass of a sum is not the sum of the masses. On the informational side the information of a part is not a share of the information of the whole. In both cases the quantity that fails to add is the norm, and that is one more reason to read it as the invariant of the element rather than as a sum over parts.
 
-**One state, one coarse-graining.** Send a pure state through a depolarising map that halves the radius, $\vec r\mapsto\frac12\vec r$. The doubled scalar part stays one. The norm goes from $0$ to $0.1875$, and the entropy from $0$ to $0.811$ bit. No frame changed and no energy was exchanged. The norm moved because a distinction was lost.
+**One state, one coarse-graining.** Send a pure state through a depolarising map that halves the radius, $\vec s_{\Psi}\mapsto\frac12\vec s_{\Psi}$. The doubled scalar part stays one. The norm goes from $0$ to $0.1875$, and the entropy from $0$ to $0.811$ bit. No frame changed and no energy was exchanged. The norm moved because a distinction was lost.
 
 So the free number on this side is a state label. It moves when the state is chosen, and it moves when the dynamics is not reversible. It never moves under a change of frame, because the frame is not part of the informational action at sharp momentum.
 
@@ -649,7 +649,7 @@ The two ledgers share a shape and differ in the reason for it.
 
 On $\mathbb{B}_{\Phi}$ the group action moves one number and fixes the other. The unit-norm congruence is the Lorentz action. Its orbit through a timelike element is the mass hyperboloid, the norm names the orbit, and the doubled scalar part names the point on it. The mass is the orbit label and the energy is the orbit coordinate. The algebra supplies both the invariant and the group that moves the other number.
 
-On $\mathbb{B}_{\Psi}$ the group action fixes both numbers. The $*$-unitary conjugation preserves the doubled scalar part and the norm, and its orbit through a state is the sphere of fixed $\lvert\vec r\rvert$ in the Bloch ball. Both numbers label the orbit, and neither is a coordinate on it: the coordinates are the direction of $\vec r$. So nothing in the reversible group moves the norm. Only a map that is not invertible moves it.
+On $\mathbb{B}_{\Psi}$ the group action fixes both numbers. The $*$-unitary conjugation preserves the doubled scalar part and the norm, and its orbit through a state is the sphere of fixed $\lvert\vec s_{\Psi}\rvert$ in the Bloch ball. Both numbers label the orbit, and neither is a coordinate on it: the coordinates are the direction of $\vec s_{\Psi}$. So nothing in the reversible group moves the norm. Only a map that is not invertible moves it.
 
 The asymmetry corrects a symmetric reading of the duality. "The doubled scalar part varies" on $\mathbb{B}_{\Phi}$ means that the frame varies. "The norm varies" on $\mathbb{B}_{\Psi}$ means that the state varies, or that information was lost. The same word covers two different freedoms.
 
@@ -676,7 +676,7 @@ The last row has no partner in the informational sector, because states do not a
 | electron at $1$ GeV | $2i(1\ \mathrm{GeV})/c$ | $-0.261\ \mathrm{MeV}^2$ | — |
 | proton at $1$ GeV | $2i(1\ \mathrm{GeV})/c$, the same | $-8.80\times10^{5}\ \mathrm{MeV}^2$ | — |
 | pure qubit | $1$ | $0$ | $0$ |
-| qubit at $\lvert\vec r\rvert=\tfrac12$ | $1$ | $0.1875$ | $0.811$ |
+| qubit at $\lvert\vec s_{\Psi}\rvert=\tfrac12$ | $1$ | $0.1875$ | $0.811$ |
 | maximally mixed qubit | $1$ | $0.25$ | $1$ |
 
 Rows one and two hold the norm and vary the doubled scalar part. Rows five and six hold that number and vary the norm; rows seven to nine do the same over the whole range of the state. A number that can be held while another runs is the invariant of the pair, and each side names a different one.
@@ -713,10 +713,10 @@ $$
 \mathcal{D}_{\mathrm{disc}}=-4\frac{E^2}{c^2}+4m^2c^2=-4\lvert\vec p\rvert^2\le0 .
 $$
 
-The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$,
+The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-s^2)$,
 
 $$
-\mathcal{D}_{\mathrm{disc}}=1-(1-r^2)=r^2\ge0 .
+\mathcal{D}_{\mathrm{disc}}=1-(1-s^2)=r^2\ge0 .
 $$
 
 The eigenvalues are real and positive, and the entropy bound $0\le S\le\log2$ is the statement that they lie in $[0,1]$. The material element has a non-positive discriminant and the informational element a non-negative one. That is the spectral face of the sector split, and it is the reason the informational side carries a positive cone of states and a probability, while the material side carries the causal cone of the interval.
@@ -807,7 +807,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 - The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde H_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
 - The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
 - Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
-- On $\mathbb{B}_{\Psi}$ twice the scalar part is the normalisation, $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
+- On $\mathbb{B}_{\Psi}$ twice the scalar part is the normalisation, $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-s^2)$; the entropy is a function of that norm alone.
 - Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the doubled scalar part and the norm, and hence the entropy. Coarse-graining preserves that number, increases the norm and increases the entropy.
 - Conservation is not invariance. The doubled scalar part is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the norm is fixed by both, so mass is conserved and frame-independent.
 - The duality is the thesis: the norm is fixed and the doubled scalar part free on the material side, that number fixed and the norm free on the informational side.
@@ -830,8 +830,8 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ | the four-momentum |
 | $\Rho=imc$ | the mass modulus, the central scalar of the material side |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, $\cosh\theta_{\mathrm{rpd}}=E/(mc^{2})$, $\sinh\theta_{\mathrm{rpd}}=\lvert\vec p\rvert/(mc)$ |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | the state, $\lvert\vec r\rvert\le1$ |
-| $S(\tilde{Ϛ}_{\Psi})=h((1+\lvert\vec r\rvert)/2)$ | the von Neumann entropy |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | the state, $\lvert\vec s_{\Psi}\rvert\le1$ |
+| $S(\tilde{Ϛ}_{\Psi})=h((1+\lvert\vec s_{\Psi}\rvert)/2)$ | the von Neumann entropy |
 | $P=2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_*$ | the purity, $P+2\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=1$ |
 | $\tilde H_\Psi$ | the Hermitian Hamiltonian or observable, $\tilde H_\Psi=\tilde H_\Psi^{*}$ |
 | $\tilde\Gamma$ | the Hermitian width element, $\tilde\Gamma=\tilde\Gamma^{*}\ge0$, of the eliminated channel |

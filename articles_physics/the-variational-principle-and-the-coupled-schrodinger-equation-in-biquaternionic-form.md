@@ -175,12 +175,12 @@ which is the free article's density with the covariant gradient and the potentia
 **The statement.** The divergence of the stress tensor of the coupled field is the Lorentz force density,
 
 $$
-\partial_{t'}\mathcal P_\eta+\sum_\zeta\partial_\zeta T_{\zeta\eta}=-\varrho\big(\vec E+\vec v\times\vec B\big)_\eta,
+\partial_{t'}\mathcal P_\eta+\sum_\zeta\partial_\zeta T_{\zeta\eta}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_\eta,
 \qquad
 \mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
 $$
 
-with $\mathcal P$ the momentum density, $T$ the stress tensor, $\varrho:=ϙn$ the charge density, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\varrho$ feels $-\varrho(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
+with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
 
 **The status of the statement.** It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §*The Noether Currents* already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §*Open Questions* lists it as the check that would close the article's variational ledger.
 
@@ -246,7 +246,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $S$ | The action; $L$ its density per unit $t'$ |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current |
-| $ϙj_\eta$, $\varrho=ϙn$ | The charge current and the charge density |
+| $ϙj_\eta$, $\rho_{\mathrm{chg}}=ϙn$ | The charge current and the charge density |
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
 | $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |

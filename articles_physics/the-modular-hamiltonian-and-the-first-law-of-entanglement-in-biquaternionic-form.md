@@ -42,7 +42,7 @@ a Hermitian element of the algebra, so that $\sigma=\exp(-H_{\mathrm{modular},\s
 
 ### The Modular Hamiltonian of a Biquaternion State
 
-Let $\tilde{Ϛ}_{\Psi,0}=\tfrac12(e_t+i\vec r_0\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec {u_r}_0=\vec r_0/r_0$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
+Let $\tilde{Ϛ}_{\Psi,0}=\tfrac12(e_t+i\vec s_{\Psi,0}\cdot\mathbf e)$ be faithful, with $r_0=|\vec r_0|<1$, $\vec {u_r}_0=\vec r_0/r_0$, $\gamma_0=\vec {u_r}_0\cdot\mathbf e$, and $b=\mathrm{artanh}(r_0)$. The biquaternion logarithm of the relative-entropy companion article gives immediately
 $$
 \boxed{\;H_{\mathrm{modular},0}=-\log\tilde{Ϛ}_{\Psi,0}
 =\tfrac12\log\frac{4}{1-r_0^2}\,e_t-i\,b\,\gamma_0
@@ -50,7 +50,7 @@ $$
 $$
 Each term is Hermitian — the scalar part is real, and the vector part $-i\,b\,\gamma_0$ has $(-i\,b\,\gamma_0)^\dagger=i\,b\,\gamma_0^\dagger=i\,b\,(-\gamma_0)=-i\,b\,\gamma_0$, using $\gamma_0^\dagger=-\gamma_0$ — so the modular Hamiltonian lies in the informational sector, as the KMS and thermal-time companion articles require. It is the difference of a purely informational scalar term and an element of $i\mathbb{B}_{\Phi}$.
 
-The expectation of $H_{\mathrm{modular},0}$ in an arbitrary state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ is the scalar part of a product, doubled. With $\cos\gamma=\vec u_r\cdot\vec {u_r}_0$,
+The expectation of $H_{\mathrm{modular},0}$ in an arbitrary state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi}\cdot\mathbf e)$ is the scalar part of a product, doubled. With $\cos\gamma=\vec u_s\cdot\vec {u_r}_0$,
 $$
 \langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}
 =2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,H_{\mathrm{modular},0}\big)
@@ -63,7 +63,7 @@ S(\tilde{Ϛ}_{\Psi,0})=\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi,0
 =-\tfrac12\log\frac{1-r_0^2}{4}
 -r_0\,\mathrm{artanh}(r_0),
 $$
-which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec r}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec r}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec r\cdot\vec c$, which gives the two terms above.
+which is the entropy of the state, as the first property requires. The derivation is the product formula of the biquaternion algebra: the scalar part of $(\tfrac12e_t+i\tfrac{\vec s_{\Psi}}{2}\cdot\mathbf e)(c_0e_t+i\vec c\cdot\mathbf e)$ is $\tfrac12c_0-\vec A\cdot\vec C$ with $\vec A=i\tfrac{\vec s_{\Psi}}{2}$, $\vec C=i\vec c$, and $\vec A\cdot\vec C=-\tfrac12\vec s_{\Psi}\cdot\vec c$, which gives the two terms above.
 
 Note that $\langle H_{\mathrm{modular},0}\rangle_{\tilde{Ϛ}_{\Psi}}$ is **linear** in the state $\tilde{Ϛ}_{\Psi}$: it is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi} H_{\mathrm{modular},0}^{*})$, the plain form of $\tilde{Ϛ}_{\Psi}$ with the fixed element, read in the scalar part. This linearity is the algebraic reason the first law is exact to first order, and it is stated again below.
 
@@ -152,7 +152,7 @@ The exact form of the first law therefore reads
 $$
 \delta S=\delta\langle H_{\mathrm{modular},0}\rangle+\big\langle H_{\mathrm{modular},\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi,0}}\big\rangle_{\tilde{Ϛ}_{\Psi}},
 $$
-so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_r=\pm\vec {u_r}_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\theta$ of the closed form.
+so the first law's deficit is exactly the negative of the expectation of the **relative** modular Hamiltonian. When the two states commute — which in the biquaternion framework means that their Bloch vectors are collinear, $\vec u_s=\pm\vec {u_r}_0$ — the relative modular Hamiltonian reduces to the difference of the two modular Hamiltonians acting on the shared axis, and the relative entropy becomes the classical relative entropy of the two eigenvalue pairs. The general case is the non-commuting rotation captured by the angle $\theta$ of the closed form.
 
 ## The Entanglement Hamiltonian of a Qubit
 
@@ -176,7 +176,7 @@ The framework's terms make the mechanism transparent, and it is worth stating be
 
 **The modular energy is linear in the state.** The quantity $\delta\langle H_{\mathrm{modular},0}\rangle=2\,\mathrm{Sc}(\delta\rho\,H_{\mathrm{modular},0})$ is the Hermitian form of the perturbation with a fixed algebra element, read in the scalar part. It has no quadratic or higher terms. All nonlinearity in the relation therefore resides in $\delta S$, and the identity $\delta S=\delta\langle H_{\mathrm{modular},0}\rangle-S(\rho\|\rho_0)$ says that $\delta S$ departs from the linear form by exactly the relative entropy.
 
-**The relative entropy has no linear term.** As the relative-entropy companion article records, the second-order term of $S(\rho\|\rho_0)$ near $\rho=\rho_0$ is the Kubo–Mori–Bogoliubov metric of the reference state. There is no linear term, by the positivity and the stationarity of the relative entropy at coincidence. The first law is the statement of that vanishing, and the framework's closed form exhibits it: the boxed relative entropy is quadratic in $\delta\vec r$ near $\vec r=\vec r_0$.
+**The relative entropy has no linear term.** As the relative-entropy companion article records, the second-order term of $S(\rho\|\rho_0)$ near $\rho=\rho_0$ is the Kubo–Mori–Bogoliubov metric of the reference state. There is no linear term, by the positivity and the stationarity of the relative entropy at coincidence. The first law is the statement of that vanishing, and the framework's closed form exhibits it: the boxed relative entropy is quadratic in $\delta\vec s_{\Psi}$ near $\vec s_{\Psi}=\vec r_0$.
 
 **The deficit is a metric distance.** Because $-S(\rho\|\sigma)$ is, to second order, the negative of a metric form, the gap in the first law is the squared "distance" of the perturbation from the reference state in the state space. The inequality $\delta S\le\delta\langle H_{\mathrm{modular},0}\rangle$ is therefore the statement that entropy changes are bounded by modular-energy changes, with the bound saturated only at the reference state — the framework's form of the entanglement first law and of its positivity.
 

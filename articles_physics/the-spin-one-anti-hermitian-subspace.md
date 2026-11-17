@@ -111,7 +111,7 @@ $$
 **The generator.** A rotation rotor is $\tilde u_{\mathrm r}=\exp\bigl(\theta A(\vec u)\bigr)$ with $A(\vec u)=\tfrac12\vec u$, and the derived operator on the triple is the commutator,
 
 $$
-\varrho\bigl(A(\vec u)\bigr)(\vec v)=\bigl[\tfrac12\vec u,\vec v\bigr].
+\rho_{\mathrm{rep}}\bigl(A(\vec u)\bigr)(\vec v)=\bigl[\tfrac12\vec u,\vec v\bigr].
 $$
 
 **The identity that removes the computation.** The commutator of a half axis with a vector is the cross product with the whole axis,

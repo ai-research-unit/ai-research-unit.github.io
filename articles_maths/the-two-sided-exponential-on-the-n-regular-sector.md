@@ -79,7 +79,7 @@ e^{i\theta_{\mathrm{axr}}},\quad 1,\quad 1,\quad e^{-i\theta_{\mathrm{axr}}}.
 $$
 The two-sided operator therefore carries the full rapidity $\theta_{\mathrm{rpd}}$ and the full angle $\theta_{\mathrm{axr}}$, while the one-sided operator carries the half-rapidity and the half-angle. The phase cancels and the scale doubles.
 
-**The one-sided operator is the spinor action.** The two-sided operator has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *The One-Sided Operator Exponential on the N-Regular Sector*, §*The Exponential Polar Word on a Spinor*. The half-angle $\theta_{\mathrm{axr}}/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot; this article computes their products, which are the full angle $\theta_{\mathrm{axr}}$ and the full rapidity $\theta_{\mathrm{rpd}}$.
+**The one-sided operator is the spinor action.** The two-sided operator has no half-angle of its own: it pairs two one-sided slots, and each slot is the spinor action of *The One-Sided Operator Exponential on the N-Regular Sector*, §*The Polar Word on a Spinor*. The half-angle $\theta_{\mathrm{axr}}/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot; this article computes their products, which are the full angle $\theta_{\mathrm{axr}}$ and the full rapidity $\theta_{\mathrm{rpd}}$.
 
 | factor | one-slot pair $(\lambda_+,\lambda_-)$ | two-slot products | output |
 |---|---|---|---|
@@ -108,7 +108,7 @@ so the two-sided operator is the vector and the one-sided operator, on one slot,
 
 The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$; the four sums are $\theta_{\mathrm{axr}},0,0,-\theta_{\mathrm{axr}}$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian; the four sums are $\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}}$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
 
-**The two-sided operator has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta_{\mathrm{axr}}/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot, in *The One-Sided Operator Exponential on the N-Regular Sector*, §*The Exponential Polar Word on a Spinor*. The two-sided operator is the double of the half-spin, not a half-spin itself.
+**The two-sided operator has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta_{\mathrm{axr}}/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot, in *The One-Sided Operator Exponential on the N-Regular Sector*, §*The Polar Word on a Spinor*. The two-sided operator is the double of the half-spin, not a half-spin itself.
 
 **The two Peirce copies are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
 

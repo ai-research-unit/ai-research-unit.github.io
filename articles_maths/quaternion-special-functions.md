@@ -5,7 +5,7 @@
 
 This article introduces the quaternion special functions as the named functions that arise repeatedly in quaternion analysis, in Clifford analysis, and in the geometry of the quaternion space. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. The quaternion algebra, its norm and its conjugation are assumed from *Quaternion Algebra* and *Norm and Invertibility in the Quaternion Algebra*, and the scalar-vector decomposition is used throughout. The exponential and the logarithm are defined in §*The Quaternion Exponential and Logarithm* and used throughout; the polar decomposition that organises them is in *Exponential Polar Decomposition of Quaternions*. The functions below are built from them by the same series and integrals that define the real and complex cases. No physics is invoked.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. The quaternion algebra, its norm and its conjugation are assumed from *Quaternion Algebra* and *Norm and Invertibility in the Quaternion Algebra*, and the scalar-vector decomposition is used throughout. The exponential and the logarithm are defined in §*The Quaternion Exponential and Logarithm* and used throughout; the polar decomposition that organises them is in *Polar Decomposition of Quaternions*. The functions below are built from them by the same series and integrals that define the real and complex cases. No physics is invoked.
 
 The plan follows the dependency order: the exponential, the logarithm and the powers, then the trigonometric and hyperbolic functions and their inverses, then the functions defined by integrals and series, the gamma and beta functions, the error and Airy functions, the Bessel and hypergeometric functions and the Lambert $W$ function, and finally the monogenic functions and the structure principle. The zeta function, the incomplete gamma and beta functions, the orthogonal polynomials and the elliptic integrals are not carried to $\mathbb{H}$; the comparison with the other layers is in *Comparison of Special Functions*.
 
@@ -21,7 +21,7 @@ $$
 \exp(\tilde q) = \sum_{n=0}^\infty \frac{\tilde q^n}{n!}.
 $$
 
-The series converges absolutely for every $\tilde q$, because the quaternion norm is submultiplicative. The function is real-analytic on $\mathbb{H}$; it is not quaternion-differentiable, and its differential is computed in *Exponential Polar Decomposition of Quaternions*, §*The Matrix Logarithm and the Derivative*. It satisfies
+The series converges absolutely for every $\tilde q$, because the quaternion norm is submultiplicative. The function is real-analytic on $\mathbb{H}$; it is not quaternion-differentiable, and its differential is computed in *Polar Decomposition of Quaternions*, §*The Matrix Logarithm and the Derivative*. It satisfies
 
 $$
 \exp(\tilde q_1 + \tilde q_2) = \exp(\tilde q_1) \exp(\tilde q_2) \quad \text{when } \tilde q_1\tilde q_2 = \tilde q_2\tilde q_1,
@@ -45,7 +45,7 @@ $$
 \exp(\vec\omega \theta) = \cos\theta + \vec\omega \sin\theta.
 $$
 
-This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is a **rotor** (*Algebra and Element Conventions*, §*Summary of Notation*). The two-sided operator by this rotor rotates by $2\theta$, twice the angle in the exponent, which is the half-angle rule of *Exponential Polar Decomposition of Quaternions*, §*The Rotor Part*.
+This is a unit quaternion, and it lies on the unit sphere $\mathbb{S}^3$: it is a **rotor** (*Algebra and Element Conventions*, §*Summary of Notation*). The two-sided operator by this rotor rotates by $2\theta$, twice the angle in the exponent, which is the half-angle rule of *Polar Decomposition of Quaternions*, §*The Rotor Part*.
 
 For a general quaternion $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $\vec q \neq 0$ and $\theta = \sqrt{\langle\vec q\rangle_{\natural}}$,
 
@@ -151,7 +151,7 @@ $$
 \tilde q_{\log}=q_{\log}e_t+(\theta+2\pi m)\operatorname{sgn}\tilde q, \qquad q_{\log}=\ln\sqrt{\langle\tilde q\rangle_{\natural}}, \quad \theta=\arccos\frac{q_t}{\sqrt{\langle\tilde q\rangle_{\natural}}}, \quad m\in\mathbb{Z},
 $$
 
-which is the period formula of *Exponential Polar Decomposition of Quaternions*, §*The General Logarithm*. Every nonzero quaternion has at least one logarithm. On the real axis the set of logarithms is not discrete but a union of spheres: the positive axis has the single value $\ln r$, then one sphere of radius $2\pi k$ for each $k\ge1$, and the negative axis has one sphere of radius $(2k+1)\pi$ for each $k\ge0$.
+which is the period formula of *Polar Decomposition of Quaternions*, §*The General Logarithm*. Every nonzero quaternion has at least one logarithm. On the real axis the set of logarithms is not discrete but a union of spheres: the positive axis has the single value $\ln r$, then one sphere of radius $2\pi k$ for each $k\ge1$, and the negative axis has one sphere of radius $(2k+1)\pi$ for each $k\ge0$.
 
 The two coordinates of the logarithm are therefore as follows, with the angle and the axis that the vector coordinate carries.
 
@@ -236,7 +236,7 @@ on the domain of the principal branch. The modulus $\sqrt{\langle\tilde q\rangle
 
 ### The Derivative of the Logarithm
 
-The logarithm is smooth on its domain, and its differential at $\tilde q$ is the inverse of the differential of the exponential at $\log\tilde q$; that differential is invertible there because $\sqrt{\langle\operatorname{Vect}\log\tilde q\rangle_{\natural}}<\pi$, and the critical set of the exponential is computed in *Exponential Polar Decomposition of Quaternions*, §*The Matrix Logarithm and the Derivative*. The differential is not multiplication by $\tilde q^{-1}$. At $\tilde q=3e_t+4\vec e_x$ and in the direction $\vec e_y$,
+The logarithm is smooth on its domain, and its differential at $\tilde q$ is the inverse of the differential of the exponential at $\log\tilde q$; that differential is invertible there because $\sqrt{\langle\operatorname{Vect}\log\tilde q\rangle_{\natural}}<\pi$, and the critical set of the exponential is computed in *Polar Decomposition of Quaternions*, §*The Matrix Logarithm and the Derivative*. The differential is not multiplication by $\tilde q^{-1}$. At $\tilde q=3e_t+4\vec e_x$ and in the direction $\vec e_y$,
 
 $$
 \mathrm d\log_{\tilde q}(\vec e_y)=0.2318238045\,\vec e_y,

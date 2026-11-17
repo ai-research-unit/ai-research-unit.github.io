@@ -1,8 +1,8 @@
-# __Exponential Polar Decomposition of Split-Complex Numbers__
+# __Polar Decomposition of Split-Complex Numbers__
 
 ## Introduction
 
-This article treats the **exponential polar decomposition** of an invertible split-complex number: the writing
+This article treats the **polar decomposition** of an invertible split-complex number: the writing
 
 $$
 Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
@@ -43,10 +43,10 @@ The element $Q_{\log}$ is the logarithm of $\epsilon Q$, the element that is exp
 | Uniqueness | $\epsilon$ and $Q_{\log}$ are both unique |
 | Kernel | $\ker\exp=\{0\}$ |
 | Group | ${\mathbb{C}_{\mathrm{spl}}}^{\times}\cong(\mathbb{Z}/2\mathbb{Z})^{2}\times\mathbb{R}^{2}$ |
-| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number*, for the reading through the two real coordinates of $Q$ |
-| Worked examples | *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*, for the eight cases and the reconstruction tables |
+| Companion | *Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number*, for the reading through the two real coordinates of $Q$ |
+| Worked examples | *Worked Examples of Polar Decomposition of Split-Complex Numbers*, for the eight cases and the reconstruction tables |
 
-The plan is as follows. The analytic facts and the four components are recalled (§*The Analytic Setting*); the definition, the component sign, the exponent and its components, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved (§*Existence and Uniqueness*); the logarithm, its domain and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*. The logarithm is not derived again: §*The Exponent and Its Components* quotes the formula of *Split-Complex Elementary Functions*.
+The plan is as follows. The analytic facts and the four components are recalled (§*The Analytic Setting*); the definition, the component sign, the exponent and its components, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved (§*Existence and Uniqueness*); the logarithm, its domain and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Polar Decomposition of Split-Complex Numbers*. The logarithm is not derived again: §*The Exponent and Its Components* quotes the formula of *Split-Complex Elementary Functions*.
 
 ## The Analytic Setting
 
@@ -113,7 +113,7 @@ the discrete factor being the component and the two real coordinates being $(\ln
 
 ### The Definition
 
-**Definition.** An **exponential polar decomposition** of $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$ is a writing
+**Definition.** A **polar decomposition** of $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times$ is a writing
 
 $$
 Q=\epsilon\exp(Q_{\log}), \qquad \epsilon\in\{\pm1,\pm j\}, \quad Q_{\log}\in\mathbb{C}_{\mathrm{spl}},
@@ -150,7 +150,7 @@ $$
 Q=r\bigl(\cosh\theta+j\sinh\theta\bigr)=r\exp(\theta j)=\exp(Q_{\log}).
 $$
 
-The reconstruction is immediate from the closed form: $\exp(Q_{\log})=\exp(q_{\log})(\cosh q'_{\log}+j\sinh q'_{\log})$, and the two coordinates are $\ln r$ and $\theta$. The first form is the modulus–unit form; the last is the exponential polar decomposition, with component sign $\epsilon=1$.
+The reconstruction is immediate from the closed form: $\exp(Q_{\log})=\exp(q_{\log})(\cosh q'_{\log}+j\sinh q'_{\log})$, and the two coordinates are $\ln r$ and $\theta$. The first form is the modulus–unit form; the last is the polar decomposition, with component sign $\epsilon=1$.
 
 The exponent has two real components, and they play different roles.
 
@@ -218,7 +218,7 @@ The amalgamation uses the group law $\exp(Q_{1\log})\exp(Q_{2\log})=\exp(Q_{1\lo
 
 ## Existence and Uniqueness
 
-**Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one exponential polar decomposition
+**Theorem.** Every split-complex number $Q$ with $\langle Q\rangle_{*}\neq0$ has exactly one polar decomposition
 
 $$
 \boxed{\; Q=\epsilon\exp(Q_{\log}), \qquad Q_{\log}=q_{\log}+jq'_{\log}, \qquad
@@ -544,7 +544,7 @@ $$
 
 and there is no branch, no period, and the kernel is $\{0\}$.
 
-Every invertible split-complex number has exactly one exponential polar decomposition
+Every invertible split-complex number has exactly one polar decomposition
 
 $$
 Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta j),
@@ -581,15 +581,15 @@ In the matrix picture the exponential of $xI+yK$ is $\exp(x)(\cosh y\,I+\sinh y\
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the eight cases, the reconstruction tables and the boundary family.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the reading of the word through the two real coordinates of $Q$.
+- [Worked Examples of Polar Decomposition of Split-Complex Numbers](worked-examples-of-polar-decomposition-of-split-complex-numbers.html), for the eight cases, the reconstruction tables and the boundary family.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the reading of the word through the two real coordinates of $Q$.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.
 - [Rational-Chart Polar Decomposition of Split-Complex Numbers](rational-chart-polar-decomposition-of-split-complex-numbers.html), for the rational coordinate on the unit factor.
 - [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group law and the Lie group structure.
-- [Exponential Polar Decomposition of Complex Numbers](exponential-polar-decomposition-of-complex-numbers.html), for the case with no discrete factor.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.
+- [Polar Decomposition of Complex Numbers](polar-decomposition-of-complex-numbers.html), for the case with no discrete factor.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional case.
 - *The Complete Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative case, where the exponents do not add.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra and its exponential.

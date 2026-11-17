@@ -6,7 +6,7 @@
 
 The article classifies the left and the right ideals, exhibits the minimal left ideals as the two columns and as one line's worth of them, computes the socle, proves the simplicity and the centrality, and derives that every automorphism and every derivation is inner. It assumes *The Matrix Algebra $M_2(\mathbb{C})$* for the product, the invertibles and the trace. It defers the module reading of the minimal left ideals to *The Minimal Left Ideals of the Biquaternion Algebra* and to *The Regular Module*, and the operators on the algebra to *The Two-Sided Operators and the Segre Cone at $n=2$*.
 
-Two facts are particular to order two. The lattice of left ideals has three levels only, with a projective line of middle elements. The socle has complex dimension $3$ and is the union of the pencil of minimal left ideals.
+Two facts are particular to order two. The lattice of left ideals has three levels only, with a projective line of middle elements. The socle is the whole algebra, because the regular module is semisimple; the union of the pencil of minimal left ideals is the rank-one cone, of complex dimension $3$, and it is not the socle.
 
 ## Left and Right Ideals
 
@@ -72,13 +72,15 @@ of complex dimension $2$.
 
 **Definition.** The **socle** is the sum of all minimal left ideals.
 
-**Proposition.** The socle of $M_2(\mathbb{C})$ is the set of elements of rank at most one, of complex dimension $3$, and it is the union of the pencil of minimal left ideals.
+**Proposition.** The socle of $M_2(\mathbb{C})$ is the whole algebra, of complex dimension $4$.
 
-**Proof.** Every minimal left ideal consists of elements of rank at most one, so the socle lies in that set. Conversely an element $uv^{\mathsf T}$ of rank one kills the hyperplane $v^{\perp}$, so it lies in $L_{v^{\perp}}$. The rank-one set is the cone $\{\det=0\}$ minus the origin, of complex dimension $3$, and it is the union of the $L_U$, each of dimension $2$, any two of which meet only at $0$.
+**Proof.** The minimal left ideals are the columns $M_2P$ with $P$ of rank one, and two of them already span: $M_2E_{11}\oplus M_2E_{22}=M_2(\mathbb{C})$. So the regular module is the sum of two simple submodules, hence semisimple, hence equal to its socle; the general rule that a semisimple algebra equals its socle is the one recorded in *Simple and Semisimple Modules*.
 
-**The product of two elements of the socle stays in the socle.** For $A,B$ of rank at most one the product $AB$ has rank at most one, by $\operatorname{rank}(AB)\le\min(\operatorname{rank}A,\operatorname{rank}B)$; concretely $uv^{\mathsf T}xy^{\mathsf T}=(v^{\mathsf T}x)\,uy^{\mathsf T}$.
+**The union of the minimal left ideals is not the socle.** An element $uv^{\mathsf T}$ of rank one kills the hyperplane $v^{\perp}$, so it lies in $L_{v^{\perp}}$, and the union of the pencil $L_U$ is the set of elements of rank at most one, of complex dimension $3$. That set is not a subspace: $E_{11}+E_{22}=I$ has rank $2$. The socle is the sum of the minimal left ideals, and the sum is the algebra.
 
-**The socle is the Segre quadric.** Its projectivisation is the smooth quadric in $\mathbb{P}^{3}$ of the rank-one matrices, the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, whose two rulings are the pencil of minimal left ideals and the pencil of minimal right ideals. The quadric is the geometric object of *The Two-Sided Operators and the Segre Cone at $n=2$*.
+**The rank-one cone is closed under multiplication, which is why the confusion is easy.** For $A,B$ of rank at most one the product $AB$ has rank at most one, by $\operatorname{rank}(AB)\le\min(\operatorname{rank}A,\operatorname{rank}B)$; concretely $uv^{\mathsf T}xy^{\mathsf T}=(v^{\mathsf T}x)\,uy^{\mathsf T}$.
+
+**The Segre quadric is the projectivisation of the union, not of the socle.** The rank-one matrices form the cone on the smooth quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$ in $\mathbb{P}^{3}$, whose two rulings are the pencil of minimal left ideals and the pencil of minimal right ideals. The quadric is the geometric object of *The Two-Sided Operators and the Segre Cone at $n=2$*, and it is the union of the left ideals.
 
 ## Two-Sided Ideals and Simplicity
 
@@ -130,13 +132,13 @@ of complex dimension $2$.
 
 The left ideals of $M_2(\mathbb{C})$ are the spaces $L_U=\{A:U\subseteq\ker A\}$ and the right ideals are the spaces $R_W=\{A:\operatorname{im}A\subseteq W\}$; the transpose exchanges the two families. The lattice of left ideals has three levels: $0$, a projective line of two-dimensional minimal left ideals indexed by the hyperplanes of $\mathbb{C}^{2}$, and the algebra. The two coordinate columns are minimal left ideals, they meet at $0$ and span the algebra.
 
-The socle is the rank-one set, of complex dimension $3$, projectivised to the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The only two-sided ideals are $0$ and the algebra, the centre is $\mathbb{C}I$, and the algebra is central simple of degree $2$. Every automorphism is inner with group $PGL_2(\mathbb{C})$, every derivation is inner with space $\mathfrak{sl}_2(\mathbb{C})$, and every module is a sum of copies of $\mathbb{C}^{2}$.
+The socle is the whole algebra, because the regular module is semisimple. The union of the minimal left ideals is the rank-one set, of complex dimension $3$, projectivised to the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$. The only two-sided ideals are $0$ and the algebra, the centre is $\mathbb{C}I$, and the algebra is central simple of degree $2$. Every automorphism is inner with group $PGL_2(\mathbb{C})$, every derivation is inner with space $\mathfrak{sl}_2(\mathbb{C})$, and every module is a sum of copies of $\mathbb{C}^{2}$.
 
 | Object | At order two |
 |---|---|
 | Left ideals | $L_U=\{A:U\subseteq\ker A\}$, dimensions $0,2,4$ |
 | Minimal left ideals | one for each hyperplane of $\mathbb{C}^{2}$, a $\mathbb{P}^{1}$ of them |
-| Socle | rank $\le1$, complex dimension $3$ |
+| Socle | the whole algebra, complex dimension $4$ |
 | Two-sided ideals | $0$ and $M_2(\mathbb{C})$ |
 | Centre | $\mathbb{C}I$ |
 | $\operatorname{Aut}$ | $PGL_2(\mathbb{C})$, dimension $3$ |

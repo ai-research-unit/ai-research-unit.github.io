@@ -281,4 +281,4 @@ The polar map $U(5)\times\mathcal{P}\to GL_5$ is a diffeomorphism; the quotient 
 - [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the Hermitian spectral theorem, the square root and the functional calculus.
 - [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the Hermitian form and the $*$-unitary group.
 - [The Exponential and the Lie Group of $M_5(\mathbb{C})$](the-exponential-and-the-lie-group-of-m5c.html), for the exponential map and the Lie group.
-- [The Exponential-Polar Decomposition of $M_5(\mathbb{C})$](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.
+- [The Polar Decomposition of $M_5(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m5c-in-exponential-coordinates.html), for the combination of the exponential and the polar decomposition.

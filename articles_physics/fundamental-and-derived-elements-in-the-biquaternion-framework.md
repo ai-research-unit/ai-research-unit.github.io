@@ -212,7 +212,7 @@ $$
 
 This is the reduction formula of the framework, and it is derived, not assumed.
 
-**The bilinear form on the sectors.** Substituting the coordinate forms derived above gives the values of $f(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
+**The bilinear form on the sectors.** Substituting the coordinate forms derived above gives the values of $f(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2$ in $\mathbb{B}_{\Psi}$,
 
 $$
 f(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),

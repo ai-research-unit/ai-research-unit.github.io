@@ -231,7 +231,7 @@ $$
 | --- | --- | --- |
 | material $\mathbb{B}_{\Phi}$ | $-(q'_t)^2+\lvert\vec q\rvert^2$ | the interval |
 | informational $\mathbb{B}_{\Psi}$ | $q_t^2-\lvert\vec q'\rvert^2$ | the causal type |
-| unit-weight state | $\tfrac14(1-\lvert\vec r\rvert^2)$ | the mixedness |
+| unit-weight state | $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^2)$ | the mixedness |
 
 **One zero set, three meanings.** The determinant vanishes on the light cone, on the boundary of the state space and on the set of pure states, and these are three descriptions of one locus in three slices. Purity is affine in the determinant on the unit-weight slice.
 

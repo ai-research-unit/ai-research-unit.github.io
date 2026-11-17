@@ -386,18 +386,18 @@ so the states are the closed ball of radius $\tfrac12$ in the affine hyperplane 
 
 *Proof.* Positivity of $t\sigma_0+\vec x\cdot\vec\sigma$ with $t=\tfrac12$ is the pair of conditions $\tfrac12\ge0$ and $\det\ge0$, that is $\tfrac14-\lvert\vec x\rvert^{2}\ge0$; the rank is one exactly on the boundary, where the determinant vanishes and the trace is nonzero.
 
-**Definition.** The **Bloch vector** is $\vec r=2\vec x$, so that
+**Definition.** The **Bloch vector** is $\vec s=2\vec x$, so that
 $$
-\rho=\tfrac12\bigl(\sigma_0+\vec r\cdot\vec\sigma\bigr),\qquad \lvert\vec r\rvert\le1 .
+\rho=\tfrac12\bigl(\sigma_0+\vec s\cdot\vec\sigma\bigr),\qquad \lvert\vec s\rvert\le1 .
 $$
 
 **Proposition (purity is the unit sphere).** For every state,
 $$
-\operatorname{tr}\rho^{2}=\tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
+\operatorname{tr}\rho^{2}=\tfrac12\bigl(1+\lvert\vec s\rvert^{2}\bigr),
 $$
-so $\rho$ is pure exactly when $\lvert\vec r\rvert=1$ and maximally mixed exactly when $\vec r=0$.
+so $\rho$ is pure exactly when $\lvert\vec s\rvert=1$ and maximally mixed exactly when $\vec s=0$.
 
-*Proof.* The square of $\rho$ is $\tfrac14(\sigma_0+2\vec r\cdot\vec\sigma+\lvert\vec r\rvert^{2}\sigma_0)$ using the anticommutation and $\operatorname{tr}\sigma_j=0$ for the cross terms, and the trace of $\sigma_0$ is two; the result follows.
+*Proof.* The square of $\rho$ is $\tfrac14(\sigma_0+2\vec s\cdot\vec\sigma+\lvert\vec s\rvert^{2}\sigma_0)$ using the anticommutation and $\operatorname{tr}\sigma_j=0$ for the cross terms, and the trace of $\sigma_0$ is two; the result follows.
 
 **Theorem (the Bloch sphere is the projective line).** The boundary of the ball is $S^{2}=\mathbb{P}^{1}$, and the identification is the one of §*The Projective Line*: a pure state is a line, the line is a point of $\mathbb{P}^{1}$, and $\mathbb{P}^{1}$ is a sphere.
 
@@ -452,7 +452,7 @@ The carrier of this pair is the module $V=\mathbb{C}^{2}$, of complex dimension 
 
 A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a quadratic form of inertia $(2,2)$; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
 
-The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor of type $(\tfrac12,0)$, and its conjugate is the second module of the pair; the duality through $\omega$ makes the dual module the module itself, and a spinor produces a null vector by $u\mapsto uu^{\dagger}$, with the double cover of the Lorentz group of kernel $\{\pm I_2\}$ and the two signs of the spinor giving the same vector. On the trace-one slice the positive cone is the Bloch ball, the Bloch vector is $\vec r=2\vec x$, the purity is $\operatorname{tr}\rho^{2}=\tfrac12(1+\lvert\vec r\rvert^{2})$, and the pure states are the unit sphere, which is the projective line. The operators of the carrier, one-sided and two-sided, their composition, their length and their adjoints, are the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
+The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor of type $(\tfrac12,0)$, and its conjugate is the second module of the pair; the duality through $\omega$ makes the dual module the module itself, and a spinor produces a null vector by $u\mapsto uu^{\dagger}$, with the double cover of the Lorentz group of kernel $\{\pm I_2\}$ and the two signs of the spinor giving the same vector. On the trace-one slice the positive cone is the Bloch ball, the Bloch vector is $\vec s=2\vec x$, the purity is $\operatorname{tr}\rho^{2}=\tfrac12(1+\lvert\vec s\rvert^{2})$, and the pure states are the unit sphere, which is the projective line. The operators of the carrier, one-sided and two-sided, their composition, their length and their adjoints, are the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
 ## Summary of Notation
 
@@ -475,7 +475,7 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 | $\varkappa$ | the affine coordinate $u_{\blacktriangledown}/u_{\blacktriangle}$ |
 | $\sigma_0,\sigma_1,\sigma_2,\sigma_3$ | the Pauli basis of the Hermitian matrices |
 | $t,x,y,z$ | the Pauli coordinates, $t=\tfrac12\operatorname{tr}M$ |
-| $\vec r=2\vec x$ | the Bloch vector |
+| $\vec s=2\vec x$ | the Bloch vector |
 | $\rho$ | a state, Hermitian positive semidefinite of trace one |
 | $\Lambda(A)$ | the Lorentz transformation of $A\in\mathrm{SL}_2(\mathbb{C})$ |
 | $\ell$, $r$ | a line and a ray, that is a flag |

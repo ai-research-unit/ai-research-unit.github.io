@@ -75,7 +75,7 @@ So the naive two-sector interpretation already fails at the first step, in a way
 
 The decisive test is the canonical commutation relation, because it is the relation that makes a pair of operators an oscillator pair.
 
-Let $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ be two elements of $\mathbb{B}_{\Psi}$, with all coefficients real. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and commute, so they contribute nothing to the commutator. A direct computation gives
+Let $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2$ be two elements of $\mathbb{B}_{\Psi}$, with all coefficients real. The scalar parts $c r_{t,1}\,e_t$ and $c r_{t,2}\,e_t$ are central and commute, so they contribute nothing to the commutator. A direct computation gives
 
 $$
 \tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}=(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t+i(c r_{t,1}\vec r_{\Psi,2}+c r_{t,2}\vec r_{\Psi,1})-\vec r_{\Psi,1}\times\vec r_{\Psi,2},

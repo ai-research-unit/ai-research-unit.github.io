@@ -15,7 +15,7 @@ That identity holds on the whole sector. It is the reason the one-sided reading 
 
 **What the norm decides, and what the vector form decides.** The identity above fixes the exponential from the element on the whole sector, so the norm decides nothing new here: invertibility, the rate and the group law are the same at every point of the sector. The wall $B^{2}=0$ decides only the **shape of the one-parameter group**. Off the wall the operator is diagonalisable and the group is a torus of rotations and boosts, with the eigenvalues $e^{t\lambda_\pm}$. On the wall the operator is $Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$, the group is a line of shears, and the exponential truncates at degree one. On the wall the two polar factors survive, but their exponents are locked to the single null parameter $a$: the axes are orthogonal and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$.
 
-The plan is the following. §*The Operator Exponential* proves the identity and reads the spectrum and the rate. §*The Exponential Polar Word on a Spinor* proves the half-spin theorem. §*The Weight Relation and the Two Copies* reads the weights of $S\otimes S^{*}$. §*The Exponents of the Four Factors* collects the exponents in one table. §*The Wall $B^{2}=0$* computes the shear and the locked angles. The article closes with the summary, the notation and the readings.
+The plan is the following. §*The Operator Exponential* proves the identity and reads the spectrum and the rate. §*The Polar Word on a Spinor* proves the half-spin theorem. §*The Weight Relation and the Two Copies* reads the weights of $S\otimes S^{*}$. §*The Exponents of the Four Factors* collects the exponents in one table. §*The Wall $B^{2}=0$* computes the shear and the locked angles. The article closes with the summary, the notation and the readings.
 
 ## The Operator Exponential
 
@@ -56,7 +56,7 @@ $$
 
 The rate is the eigenvalue itself, not its square. For a central element $\tilde Q=c\,e_t$ the operator is $c\,\mathrm{id}$ and the group is $e^{tc}\,\mathrm{id}$; the two-sided companion has $e^{t\lvert c\rvert^{2}}\,\mathrm{id}$. The one-sided rate is $c$, the two-sided rate is $\lvert c\rvert^{2}$.
 
-## The Exponential Polar Word on a Spinor
+## The Polar Word on a Spinor
 
 Write the polar word as
 $$

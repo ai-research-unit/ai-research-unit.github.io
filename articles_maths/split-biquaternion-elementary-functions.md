@@ -9,7 +9,7 @@ The treatment is purely mathematical. No physics is invoked. No examples are giv
 
 The key structural fact is that the elementary functions of a split biquaternion are determined by the **idempotent decomposition** and by the **powers** of the split biquaternion. Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the elementary functions of a split biquaternion reduce to the elementary functions of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case, where the elementary functions involve a complex angle and the roots of $-1$.
 
-There is, however, a second way to compute the elementary functions, via the **exponential polar form**, which is useful when the split biquaternion is given as the exponential of another. The two approaches agree, and the article develops both.
+There is, however, a second way to compute the elementary functions, via the **exponential form**, which is useful when the split biquaternion is given as the exponential of another. The two approaches agree, and the article develops both.
 
 Throughout, a split biquaternion is written
 
@@ -69,7 +69,7 @@ $$
 
 This is the cleanest form of the exponential, and it is the reason the split biquaternion exponential is simpler than the biquaternion exponential.
 
-### Computation via the Exponential Polar Form
+### Computation via the Exponential Form
 
 The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_t e_t + \vec Q$ with $Q_t \in \mathbb{C}_{\mathrm{spl}}$ and $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$. The scalar part commutes with everything, so
 

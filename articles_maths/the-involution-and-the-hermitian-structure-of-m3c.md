@@ -76,7 +76,7 @@ is a real-linear involution of $M_{3}(\mathbb{C})$. Its $+1$ eigenspace is $\mat
 $$
 M_{3}(\mathbb{C})=\mathfrak{u}(3)\oplus\operatorname{Herm}_{3}
 $$
-is the Cartan decomposition of the real algebra. The group $GL_{3}(\mathbb{C})$ with the involution $g\mapsto(g^{*})^{-1}$ has the fixed subgroup $U(3)$, and the symmetric space $GL_{3}(\mathbb{C})/U(3)$ is the space of positive definite Hermitian matrices; this is the polar decomposition of *The Polar Decomposition of $M_3(\mathbb{C})$* and *The Exponential Polar Decomposition of $M_3(\mathbb{C})$*.
+is the Cartan decomposition of the real algebra. The group $GL_{3}(\mathbb{C})$ with the involution $g\mapsto(g^{*})^{-1}$ has the fixed subgroup $U(3)$, and the symmetric space $GL_{3}(\mathbb{C})/U(3)$ is the space of positive definite Hermitian matrices; this is the polar decomposition of *The Polar Decomposition of $M_3(\mathbb{C})$* and *The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates*.
 
 ## The Hermitian Trace Form
 

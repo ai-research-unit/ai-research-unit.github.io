@@ -19,7 +19,7 @@ Three further results complete the picture. The Fubini–Study metric is **Kähl
 $$
 \omega \;=\; -\,i\,\mathrm{Sc}\!\left(\tilde\Pi\,[\delta_1\tilde\Pi,\delta_2\tilde\Pi]\right) \;=\; \tfrac14\,\vec{u}\cdot(\delta_1\vec{u}\times\delta_2\vec{u}).
 $$
-The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec r|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
+The **geodesic distance** is $d_{\mathrm{FS}}(\tilde\Pi_1,\tilde\Pi_2) = \arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert = \theta/2$, so that the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is the sine of the Fubini–Study distance, $D = \sin d_{\mathrm{FS}}$. And on the interior the metric is the **Bures metric**, whose boundary restriction is the Fubini–Study metric; the flat quadratic form $-\tfrac14|d\vec s_{\Psi}|^2$ that the biquaternion norm also supplies is *not* that interior metric, so the biquaternion norm gives the boundary exactly and the flat geometry everywhere, but not the metrically distinguished interior.
 
 The article proceeds as follows. The state space and its two forms are recalled; the pure states are identified with the rays of the state module and with the points of $\mathbb{P}^1(\mathbb{C})$; the transition probability is computed from the normalised Hermitian form; the Fubini–Study line element is computed from the biquaternion norm in two independent ways, from the Hermitian idempotent displacement and from the spinor, and the two agree; the complex structure and the Kähler form are exhibited; geodesics and distances are collected; and the Bures extension and the limits of the algebra's own contribution are stated. What the article does not do is the informational interpretation of the same geometry, which belongs to the informational articles, and the spin-specific interpretations, which belong to the spin articles.
 
@@ -29,7 +29,7 @@ An element of the Hermitian subspace is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ wi
 $$
 \{\text{states}\}=\left\{\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}:\ \langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12,\ \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0\right\},
 \qquad
-\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r),\quad |\vec r|\leq1 ,
+\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi}),\quad |\vec s_{\Psi}|\leq1 ,
 $$
 
 Two symmetric forms live on the same four-dimensional real space, and the whole geometry of this article rests on keeping them apart.
@@ -54,9 +54,9 @@ The reader should also keep in mind what these forms are *not*. Neither is the a
 
 ## Pure States and the Projective Line
 
-The boundary of the ball is the sphere $|\vec r|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
+The boundary of the ball is the sphere $|\vec s_{\Psi}|=1$. On it the biquaternion norm vanishes and the deviation from idempotency vanishes,
 $$
-\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0,\qquad \tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14\bigl(|\vec r|^2-1\bigr)e_t=0 ,
+\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0,\qquad \tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14\bigl(|\vec s_{\Psi}|^2-1\bigr)e_t=0 ,
 $$
 so a boundary state is an idempotent with $2\,\mathrm{Sc}=1$ (normalised in the $2\times2$ image) and, in the matrix model, a rank-one projection. Writing it as
 $$
@@ -212,7 +212,7 @@ $$
 \qquad\text{so}\qquad
 J_{\vec{u}}(v)=\tfrac12\,[\vec{u},v].
 $$
-The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$, $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=-2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$, restricted to the boundary.
+The commutator is therefore the rotation by $\pi/2$ about the state axis, and the complex structure on the pure-state manifold is the algebra's own antisymmetric product. This is the same commutator that the companion article *Quantum Physics in Biquaternionic Form* records for two Hermitian observables $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$, $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=-2(\vec h_{\Psi,1}\times\vec h_{\Psi,2})$, restricted to the boundary.
 
 **The Kähler compatibility.** The metric $g(\delta_1,\delta_2)=\tfrac14\,\delta_1\vec{u}\cdot\delta_2\vec{u}$ is invariant under $J$, because $J$ is a rotation:
 $$
@@ -281,46 +281,46 @@ The first is the plain form, the second the trace distance of the companion arti
 
 The pure states are the boundary; the mixed states are the interior. The metric of the interior is not determined by the boundary metric alone, and the algebra's own favourite quadratic form does not supply it. This section states what the algebra supplies, what is standard, and where the two part company.
 
-**What the biquaternion norm supplies in the interior.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ and a displacement $\delta\tilde{Ϛ}_{\Psi}=\tfrac12 i\,\delta\vec r$, the computation of the Hermitian idempotent variation goes through unchanged,
+**What the biquaternion norm supplies in the interior.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ and a displacement $\delta\tilde{Ϛ}_{\Psi}=\tfrac12 i\,\delta\vec s_{\Psi}$, the computation of the Hermitian idempotent variation goes through unchanged,
 $$
-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac14\,|\delta\vec r|^2\,e_t,
+\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac14\,|\delta\vec s_{\Psi}|^2\,e_t,
 \qquad
--\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14\,|d\vec r|^2 ,
+-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14\,|d\vec s_{\Psi}|^2 ,
 $$
-but now for **all** displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\vec r|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.
+but now for **all** displacements, radial as well as tangential. So the biquaternion norm supplies the flat Euclidean metric $\tfrac14|d\vec s_{\Psi}|^2$ on the whole ball. On the boundary, where the radial component of a tangential displacement vanishes, this flat form restricted to the boundary is the Fubini–Study metric; in the interior it is the flat metric, not the Bures metric.
 
 **What standard physics supplies.** The metrically and statistically distinguished metric of the mixed-state space is the **Bures metric**, equivalently the quantum Fisher information. In the convention in which the Bures distance of two pure states equals their Fubini–Study distance — so that the Uhlmann transition probability of two pure states is $\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle_{*}\rvert^2$, as in the companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* — the qubit Bures line element is
 $$
-ds^2_{\mathrm{Bures}}=\frac14\left(\frac{dr^2}{1-r^2}+r^2\,d\Omega^2\right)
-=\frac14\left(|d\vec r|^2+\frac{(\vec r\cdot d\vec r)^2}{1-r^2}\right),
-\qquad r=|\vec r| .
+ds^2_{\mathrm{Bures}}=\frac14\left(\frac{ds^2}{1-s^2}+s^2\,d\Omega^2\right)
+=\frac14\left(|d\vec s_{\Psi}|^2+\frac{(\vec s_{\Psi}\cdot d\vec s_{\Psi})^2}{1-s^2}\right),
+\qquad s=|\vec s_{\Psi}| .
 $$
-This is a standard result, not an algebraic one: it is the infinitesimal form of the Uhlmann transition probability, and it is the unique metric on the ball that is monotone under stochastic maps and reduces to the Fubini–Study metric on the boundary. Two checks fix it. On the boundary $r\to1$, the radial term diverges while the angular term tends to $\tfrac14 d\Omega^2$, which is exactly the Fubini–Study metric, so the Bures metric restricts to the Fubini–Study metric on the pure states. At the centre $r=0$, the angular term vanishes and the line element is $\tfrac14|d\vec r|^2$, which agrees with the biquaternion norm's flat contribution there.
+This is a standard result, not an algebraic one: it is the infinitesimal form of the Uhlmann transition probability, and it is the unique metric on the ball that is monotone under stochastic maps and reduces to the Fubini–Study metric on the boundary. Two checks fix it. On the boundary $r\to1$, the radial term diverges while the angular term tends to $\tfrac14 d\Omega^2$, which is exactly the Fubini–Study metric, so the Bures metric restricts to the Fubini–Study metric on the pure states. At the centre $r=0$, the angular term vanishes and the line element is $\tfrac14|d\vec s_{\Psi}|^2$, which agrees with the biquaternion norm's flat contribution there.
 
 **The ball is a hemisphere.** The Bures line element has a closed geometric form, and it is worth recording because it settles what the interpolation *is*, though not why the algebra should select it. Put $r=\sin\theta$ with $\theta\in[0,\pi/2]$ and map the state to the unit vector of $\mathbb{R}^4$
 
 $$
-u(\vec r)=\bigl(\sqrt{1-r^2},\ \vec r\bigr).
+u(\vec s_{\Psi})=\bigl(\sqrt{1-s^2},\ \vec s_{\Psi}\bigr).
 $$
 
-Then $\lvert du\rvert^2=dr^2/(1-r^2)+r^2\,d\Omega^2$, so
+Then $\lvert du\rvert^2=ds^2/(1-s^2)+s^2\,d\Omega^2$, so
 
 $$
 ds^2_{\mathrm{Bures}}=\tfrac14\,\lvert du\rvert^2
 =\tfrac14\bigl(d\theta^2+\sin^2\theta\,d\Omega^2\bigr),
 $$
 
-which is the round metric of the $3$-sphere of radius $\tfrac12$ carried by the northern hemisphere $u_0=\sqrt{1-r^2}\geq0$. The maximally mixed state is the pole $u=(1,\vec 0)$, the pure states are the equator $r=1$, and the latitude is the purity. The ball **is** a hemisphere.
+which is the round metric of the $3$-sphere of radius $\tfrac12$ carried by the northern hemisphere $u_0=\sqrt{1-s^2}\geq0$. The maximally mixed state is the pole $u=(1,\vec 0)$, the pure states are the equator $r=1$, and the latitude is the purity. The ball **is** a hemisphere.
 
 The distances are the hemisphere's. On a round sphere of radius $\tfrac12$ the geodesic distance is $d=\tfrac12\arccos\langle u_1,u_2\rangle$ with $\langle u_1,u_2\rangle=\sqrt{1-r_1^2}\sqrt{1-r_2^2}+\vec r_1\cdot\vec r_2$, and the half-angle identity $\cos(2\arccos F)=2F^2-1$ turns this into $d=\arccos F$, which is the Bures angle of the convention fixed above. Checked on four hundred random pairs of states, the largest deviation being $3.1\times10^{-14}$. Three numbers follow. The distance from the maximally mixed state to purity is $\pi/4$, the distance between two orthogonal pure states is $\pi/2$, and the equator is a sphere of radius $\tfrac12$, whose metric is the $\tfrac14$ of the Fubini–Study normalisation. The last is worth naming: the factor $\tfrac14$ of the whole article is $(\tfrac12)^2$, the squared radius of this hemisphere, at the same time as it is the square of the double-cover ratio. The two readings are one fact, because the Fubini–Study normalisation of the boundary fixes the radius of the hemisphere that has that boundary.
 
 Three consequences of the picture are worth stating, because each answers a question the flat reading leaves open.
 
-*Symmetry.* A hemisphere is not homogeneous: its latitude is an invariant and its isometries are $O(3)$, acting on the direction $\vec r/r$ alone, with identity component $SO(3)\cong PU(2)$. The symmetry group of the Bures ball is therefore the unitary group modulo phase and no larger. That is the geometric reason a metric invariant under the whole congruence group, such as the canonical metric of the cone, cannot be the Bures metric: purity is a scalar invariant of the state and a transitive metric cannot respect an invariant scalar. The two candidates are separated by their symmetry groups, without a computation.
+*Symmetry.* A hemisphere is not homogeneous: its latitude is an invariant and its isometries are $O(3)$, acting on the direction $\vec s_{\Psi}/r$ alone, with identity component $SO(3)\cong PU(2)$. The symmetry group of the Bures ball is therefore the unitary group modulo phase and no larger. That is the geometric reason a metric invariant under the whole congruence group, such as the canonical metric of the cone, cannot be the Bures metric: purity is a scalar invariant of the state and a transitive metric cannot respect an invariant scalar. The two candidates are separated by their symmetry groups, without a computation.
 
-*The divergence at the boundary, restated.* Latitude is a bounded coordinate and the radial distance from the pole to the equator is the finite number $\pi/4$. What diverges as $r\to1$ is the Bloch coordinate, not the geometry: the factor $1/(1-r^2)$ is the Jacobian of $r=\sin\theta$. The phrase "the radial cost diverges at the boundary" and the hemisphere's "the equator is at finite distance" are then the same statement in two coordinate systems, and a reader who takes the first as a statement about the manifold will look for a singularity that is not there.
+*The divergence at the boundary, restated.* Latitude is a bounded coordinate and the radial distance from the pole to the equator is the finite number $\pi/4$. What diverges as $r\to1$ is the Bloch coordinate, not the geometry: the factor $1/(1-s^2)$ is the Jacobian of $r=\sin\theta$. The phrase "the radial cost diverges at the boundary" and the hemisphere's "the equator is at finite distance" are then the same statement in two coordinate systems, and a reader who takes the first as a statement about the manifold will look for a singularity that is not there.
 
-*The flat form differs in one coefficient.* The two line elements agree on **every** sphere $r=\mathrm{const}$, at every radius, since both give $\tfrac14r^2d\Omega^2$. They differ in the radial coefficient alone, $1$ against $1/(1-r^2)$. The biquaternion norm therefore reproduces the exact angular geometry at every radius and misses only the radial thickness; the radial distance from the maximally mixed state to purity is $\tfrac12$ in the flat form against $\pi/4$ in the Bures form, a ratio $2/\pi$.
+*The flat form differs in one coefficient.* The two line elements agree on **every** sphere $s=\mathrm{const}$, at every radius, since both give $\tfrac14s^2d\Omega^2$. They differ in the radial coefficient alone, $1$ against $1/(1-s^2)$. The biquaternion norm therefore reproduces the exact angular geometry at every radius and misses only the radial thickness; the radial distance from the maximally mixed state to purity is $\tfrac12$ in the flat form against $\pi/4$ in the Bures form, a ratio $2/\pi$.
 
 What the picture does not explain is why the monotone metric rather than another. The hemisphere is the form the statistically distinguished metric takes; the criterion that selects it remains monotonicity under stochastic maps, which is not an algebraic relation of $\mathbb{B}$. What changes is the status of the word *imported*: the imported object is now a closed geometric one, and its relation to the boundary metric is the relation of a hemisphere to its equator.
 
@@ -352,7 +352,7 @@ $$
 
 one quarter of the round metric of the Bloch sphere. The factor $\tfrac14$ is the square of the double-cover ratio $SU(2)\to SO(3)$. The metric is Kähler, with complex structure $J(v)=\vec{u}\times v$ supplied by the algebra commutator and symplectic form $\omega=-\,i\,\mathrm{Sc}(\tilde\Pi[\delta_1\tilde\Pi,\delta_2\tilde\Pi])=\tfrac14\mu\cdot(\delta_1\mu\times\delta_2\mu)$; the Kähler potential is $\log(1+|w|^2)$ in the stereographic coordinate. The geodesic distance is $d_{\mathrm{FS}}=\theta/2=\arccos\lvert\langle\tilde{Ξ}|\xi_{\mathrm{alt}}\rangle\rvert$, so that the transition probability is $\cos^2 d_{\mathrm{FS}}$ and the trace distance of the companion article *Exercise: The Bloch Ball and the Geometry of Mixed States* is $\sin d_{\mathrm{FS}}$.
 
-The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14|d\vec r|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.
+The interior of the ball carries the standard Bures metric, whose boundary restriction is the Fubini–Study metric and whose value at the maximally mixed state agrees with the flat metric $-\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\tfrac14|d\vec s_{\Psi}|^2$ that the biquaternion norm supplies everywhere. The biquaternion norm therefore gives the pure-state geometry exactly, and the flat geometry everywhere, but not the interpolating mixed-state metric; that interpolation is a standard statistical import, and the article says so rather than claiming it. What the algebra determines — the probability, the metric on the boundary, the Kähler structure, and the boundary metric's uniqueness up to a scale fixed by the normalisation — it determines completely; what it does not determine it leaves named.
 
 ## Summary of Notation
 
@@ -365,7 +365,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | State, $|\vec r|\leq1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | State, $|\vec s_{\Psi}|\leq1$ |
 | $\tilde\Pi(\vec{u})=\tfrac12(e_t+i\vec{u})$ | Pure state (idempotent), $|\vec{u}|=1$ |
 | $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$ | State module, $\cong\mathbb{C}^2$ |
 | $\tilde{Ξ}$, $\lvert\tilde{Ξ}\rangle_{*}$ | Spinor in the state module |

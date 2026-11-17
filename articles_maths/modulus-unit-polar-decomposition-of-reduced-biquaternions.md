@@ -34,7 +34,7 @@ taken in the cone $P$, the unit factor being $u=\breve r^{-1}\breve Q$, which sa
 
 In the coordinates $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ the two circular components are the two complex numbers $Q_{+}$ and $Q_{-}$. The modulus–unit decomposition is therefore a pair of complex modulus–unit decompositions, written in the algebra. This is the source of every difference from the complex case: the modulus is doubled, the phase is doubled, the unit factor is a torus, and the failure set is the union of two real two-planes rather than the origin alone.
 
-The decomposition is the algebraic member of the three polar decompositions of the algebra. The modulus–unit form, treated here, uses the bar, the positive square root and the unit torus, and chooses no coordinate on the torus. The rational-chart form puts the Cayley coordinate on each circle of the torus, and is developed in *Rational-Chart Polar Decomposition of Reduced Biquaternions*. The exponential form puts the Lie-algebra coordinate on the torus, and is developed in *Exponential Polar Decomposition of Reduced Biquaternions*.
+The decomposition is the algebraic member of the three polar decompositions of the algebra. The modulus–unit form, treated here, uses the bar, the positive square root and the unit torus, and chooses no coordinate on the torus. The rational-chart form puts the Cayley coordinate on each circle of the torus, and is developed in *Rational-Chart Polar Decomposition of Reduced Biquaternions*. The exponential form puts the Lie-algebra coordinate on the torus, and is developed in *Polar Decomposition of Reduced Biquaternions*.
 
 The plan is as follows. The two factors are defined (§*The Two Factors*), existence and uniqueness are proved (§*Existence and Uniqueness*), the group of invertibles and the torus are described (§*The Group of Invertibles and the Torus*), the two planes of the bar are classified (§*The Two Axes*), the matrix picture is given (§*The Matrix Picture*), examples are computed (§*Worked Examples*), and the place of the algebra in the family is recorded (§*The Other Algebras*).
 
@@ -195,7 +195,7 @@ $$
 4=2+2.
 $$
 
-The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the group of invertibles. The decomposition separates the non-compact directions from the compact ones, exactly as the complex decomposition separates the radius from the circle. What the two parameters of $u$ are parametrised by is a separate question, answered by a chart of the torus; the rational chart is the subject of *Rational-Chart Polar Decomposition of Reduced Biquaternions*, the exponential chart the subject of *Exponential Polar Decomposition of Reduced Biquaternions*, and this article chooses none.
+The cone $P$ is non-compact, the torus $T^2$ is compact, and the product is the group of invertibles. The decomposition separates the non-compact directions from the compact ones, exactly as the complex decomposition separates the radius from the circle. What the two parameters of $u$ are parametrised by is a separate question, answered by a chart of the torus; the rational chart is the subject of *Rational-Chart Polar Decomposition of Reduced Biquaternions*, the exponential chart the subject of *Polar Decomposition of Reduced Biquaternions*, and this article chooses none.
 
 ## Existence and Uniqueness
 
@@ -246,7 +246,7 @@ $$
 
 **Corollary (the real dimension and the fundamental group).** The group of invertibles is connected of real dimension four, with fundamental group $\mathbb{Z}^2$. It is not simply connected, and its universal cover is the algebra $\mathbb{B}_{\mathrm{red}}\cong\mathbb{R}^4$.
 
-*Proof.* The cone is connected and simply connected, the torus is connected with fundamental group $\mathbb{Z}^2$, and the product has the product of the fundamental groups. The algebra is contractible and the exponential of *Exponential Polar Decomposition of Reduced Biquaternions* is a covering onto the invertibles with kernel $\mathbb{Z}^2$.
+*Proof.* The cone is connected and simply connected, the torus is connected with fundamental group $\mathbb{Z}^2$, and the product has the product of the fundamental groups. The algebra is contractible and the exponential of *Polar Decomposition of Reduced Biquaternions* is a covering onto the invertibles with kernel $\mathbb{Z}^2$.
 
 ### The Maximal Compact Subgroup
 
@@ -346,7 +346,7 @@ The group of invertibles in polar form is the product of the cone and the torus,
 
 The bar fixes $1$ and $j$ and negates $i$ and $ij$, so its fixed space is the **scale plane** $\mathbb{R}\{1,j\}$ and its anti-fixed space is the **angle plane** $\mathbb{R}\{i,ij\}$.
 
-The algebra is the direct sum $\mathbb{B}_{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Exponential Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}\in\mathbb{R}\{1,j\}$ and $i\Theta=i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
+The algebra is the direct sum $\mathbb{B}_{\mathrm{red}}=\mathbb{R}\{1,j\}\oplus\mathbb{R}\{i,ij\}$, and the two planes are each of real dimension two. The modulus lies in $\mathbb{R}\{1,j\}$: it is bar-fixed and positive. The angle of the logarithm lies in $\mathbb{R}\{i,ij\}$: the exponent of *Polar Decomposition of Reduced Biquaternions* is $\breve Q_{\log}=\breve r_{\log}+i\Theta$ with $\breve r_{\log}=\ln\rho+j\theta_{\mathrm{rpd}}\in\mathbb{R}\{1,j\}$ and $i\Theta=i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}\in\mathbb{R}\{i,ij\}$. The unit factor itself is not in $\mathbb{R}\{i,ij\}$; it is the exponential of an element of $\mathbb{R}\{i,ij\}$, and it winds around the torus.
 
 ### The Roots of Plus One, Zero and Minus One
 
@@ -644,4 +644,4 @@ with positive definite $M_{\breve r}$ with eigenvalues $\rho_+,\rho_+,\rho_-,\rh
 - [Modulus–Unit Polar Decomposition of Complex Numbers](modulus-unit-polar-decomposition-of-complex-numbers.html), for the complex member of the family.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic companion.
 - [Rational-Chart Polar Decomposition of Reduced Biquaternions](rational-chart-polar-decomposition-of-reduced-biquaternions.html), for the rational coordinate on the torus.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the Lie-algebra coordinate on the torus.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the Lie-algebra coordinate on the torus.

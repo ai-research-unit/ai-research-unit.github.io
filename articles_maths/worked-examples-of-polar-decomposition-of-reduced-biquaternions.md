@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions__
+# __Worked Examples of Polar Decomposition of Reduced Biquaternions__
 
 ## Introduction
 
-This article computes the exponential polar decomposition of eight reduced biquaternions, one after another. It is the computational companion of *Exponential Polar Decomposition of Reduced Biquaternions*. The decomposition, its existence and uniqueness in the principal diamond, and the two factors are established there and in *Reduced Biquaternion Elementary Functions*; the proofs are not repeated.
+This article computes the polar decomposition of eight reduced biquaternions, one after another. It is the computational companion of *Polar Decomposition of Reduced Biquaternions*. The decomposition, its existence and uniqueness in the principal diamond, and the two factors are established there and in *Reduced Biquaternion Elementary Functions*; the proofs are not repeated.
 
 Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$. The modulus, the boost and the two phases are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
@@ -31,7 +31,7 @@ $$
 
 Their product $C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is written in full throughout. The modulus is $\rho>0$, the boost is $\theta_{\mathrm{rpd}}\in\mathbb{R}$, and the phases $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are taken in the half-open principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$, with the boundary half-open. Errors are Euclidean in the four real coefficients and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions*.
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions*.
 
 ## The Method
 
@@ -560,10 +560,10 @@ As $\delta\to0$, the modulus tends to $0$, the boost diverges, and the larger sc
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the decomposition, the principal diamond and uniqueness.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the decomposition, the principal diamond and uniqueness.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm and the kernel.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the algebraic modulus–unit form.
-- [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional companion.
+- [Worked Examples of Polar Decomposition of Split-Complex Numbers](worked-examples-of-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional companion.
 - *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative companion.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the torus.

@@ -69,7 +69,7 @@ $$
 2 = 1 + 1.
 $$
 
-The additivity is the shape of the polar decomposition in every algebra of the family. What the one degree of freedom of $u$ is parametrised by is a separate question, answered by a chart of the circle; the rational chart is the subject of *Rational-Chart Polar Decomposition of Complex Numbers*, the exponential chart the subject of *Exponential Polar Decomposition of Complex Numbers*, and this article chooses none.
+The additivity is the shape of the polar decomposition in every algebra of the family. What the one degree of freedom of $u$ is parametrised by is a separate question, answered by a chart of the circle; the rational chart is the subject of *Rational-Chart Polar Decomposition of Complex Numbers*, the exponential chart the subject of *Polar Decomposition of Complex Numbers*, and this article chooses none.
 
 ## Existence and Uniqueness
 

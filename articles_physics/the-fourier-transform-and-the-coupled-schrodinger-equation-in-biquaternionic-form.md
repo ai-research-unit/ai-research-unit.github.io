@@ -92,13 +92,13 @@ The proof is the substitution of the two shifted arguments and the cancellation 
 
 ## The Translation's Sign, Fixed by the Parent
 
-**The parent's temporal slot.** The equation has $i\hbar\partial_{t'}\tilde\Xi+ϙ\varphi\tilde\Xi$ on the left, so the phase's rate is $\hbar\omega=-\varrho\varphi$ plus the kinetic term and the symbol carries $+\varrho\varphi$. **The sign is plus, and it follows from the $+$ in the covariant time derivative.**
+**The parent's temporal slot.** The equation has $i\hbar\partial_{t'}\tilde\Xi+ϙ\varphi\tilde\Xi$ on the left, so the phase's rate is $\hbar\omega=-\rho_{\mathrm{chg}}\varphi$ plus the kinetic term and the symbol carries $+\rho_{\mathrm{chg}}\varphi$. **The sign is plus, and it follows from the $+$ in the covariant time derivative.**
 
 **Why the sign is not free.** The two signs of the two slots are one fact: the metric $i$ in $\partial/\partial R_t=-i\partial_{r'_t}$ multiplies the connection's temporal coefficient, which is itself imaginary, and the product is real with the sign the parent computes. **A convention that flips one slot and not the other breaks the gauge covariance**, and the parent's §*Gauge Covariance* would fail.
 
 **The check.** Taking the free symbol at $\omega-ϙ\varphi/\hbar$ instead gives $\hbar\omega-ϙ\varphi-\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$, which differs from the parent's equation by $2ϙ\varphi$. The difference is not a normalisation: it is a sign error that the parent's own substitution forbids.
 
-**What the sign means physically.** With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\varphi$ and the frequency shift is $+ϙ\varphi/\hbar$. **A positive potential raises the frequency**, which is the statement that the energy is $\hbar\omega=-\varrho\varphi+\ldots$ and the symbol is written with the opposite sign.
+**What the sign means physically.** With $ϙ$ the negative of the electric charge, as the parent's note says, the potential energy is $+ϙ\varphi$ and the frequency shift is $+ϙ\varphi/\hbar$. **A positive potential raises the frequency**, which is the statement that the energy is $\hbar\omega=-\rho_{\mathrm{chg}}\varphi+\ldots$ and the symbol is written with the opposite sign.
 
 **The spatial sign.** The spatial slot has $+iϙ A_\eta/\hbar$ inside $D_\eta$, and $-i\hbar D_\eta$ gives $\hbar k_\eta+ϙ A_\eta$. So the mechanical momentum is $\hbar\vec k-q\vec A$ and the symbol's wave-vector shift is $-q\vec A/\hbar$. **The two shifts have the same sign in the symbol and opposite signs in the covariant derivatives**, and that is the parent's bookkeeping read once more.
 

@@ -5,7 +5,7 @@
 For a two-state system the biquaternion framework gives a complete geometric picture of the state space: the states are the positive elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image), and that set is the intersection of the hyperplane $\{\mathrm{Sc}=\tfrac12\}$ with the future light cone of the biquaternion norm. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* establishes this as an exact statement: with
 
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad |\vec r|\le 1,
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec s_{\Psi}\right),\qquad |\vec s_{\Psi}|\le 1,
 $$
 
 the state space is the closed unit ball, purity is its boundary, and the pure states are at once the idempotents, the extreme rays of the positive cone, and the zero divisors at trace one. The Bloch ball is a canonical object of the algebra because the algebra supplies the cone.
@@ -29,10 +29,10 @@ $$
 of inertia $(1,3)$, and the positive elements of $\mathbb{B}_{\Psi}$ are exactly the elements of the closed future cone, $\langle\tilde H_\Psi\rangle_{\natural}\ge0$ with $h_t\ge0$. The normalisation hyperplane is $\mathrm{Sc}(\tilde H_\Psi)=\tfrac12$ — the trace-one hyperplane in the $2\times2$ image — and the states are the intersection of that hyperplane with the cone,
 
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec r\right),\qquad \vec r=2\vec h_\Psi,\qquad |\vec r|^2\le1 ,
+\tilde{Ϛ}_{\Psi}=\tfrac{1}{2}\left(e_t+i\vec s_{\Psi}\right),\qquad \vec s_{\Psi}=2\vec h_\Psi,\qquad |\vec s_{\Psi}|^2\le1 ,
 $$
 
-with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec r|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec r|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
+with eigenvalues $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$. Purity is the boundary condition $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-=0$, equivalently $|\vec s_{\Psi}|=1$, equivalently the idempotence of $\tilde{Ϛ}_{\Psi}$. Three structures coincide on the boundary: the extreme rays of the cone, the rank-one projections, and the zero divisors of $\mathbb{B}$ at trace one.
 
 Three features of this account are the ones that must be examined for spin $1$:
 
@@ -102,7 +102,7 @@ $$
 \rho=\tfrac{1}{3}I_3+\frac{1}{\sqrt3}\,b_a\lambda_a,\qquad \vec b=(b_1,\dots,b_8)\in\mathbb{R}^8 ,
 $$
 
-the **generalized Bloch vector** being $b_a=\tfrac{3\sqrt3}{2}\mathrm{tr}(\rho\lambda_a)$ with $\mathrm{tr}$ the normalised trace, $\mathrm{tr}(I_3)=1$. The normalisation is chosen so that the pure states lie at $|\vec b|=1$, matching the qubit convention of the companion article in which the pure states lie at $|\vec r|=1$; the standard normalisation of the literature puts the coefficient at $\tfrac12$ instead of $1/\sqrt3$ and the pure states at $|\vec b|=2/\sqrt3$, differing by the factor $\sqrt3/2$.
+the **generalized Bloch vector** being $b_a=\tfrac{3\sqrt3}{2}\mathrm{tr}(\rho\lambda_a)$ with $\mathrm{tr}$ the normalised trace, $\mathrm{tr}(I_3)=1$. The normalisation is chosen so that the pure states lie at $|\vec b|=1$, matching the qubit convention of the companion article in which the pure states lie at $|\vec s_{\Psi}|=1$; the standard normalisation of the literature puts the coefficient at $\tfrac12$ instead of $1/\sqrt3$ and the pure states at $|\vec b|=2/\sqrt3$, differing by the factor $\sqrt3/2$.
 
 Two invariants determine the spectrum of $\rho$, namely
 
@@ -291,7 +291,7 @@ The article established the following.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace; positive cone $=$ future cone of the biquaternion norm |
 | $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-\lvert\vec h_\Psi\rvert^2$ | Biquaternion norm, inertia $(1,3)$ |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Qubit state, Bloch ball $\lvert\vec r\rvert\le1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | Qubit state, Bloch ball $\lvert\vec s_{\Psi}\rvert\le1$ |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Triplet and singlet idempotents of $\mathbb{B}\otimes\mathbb{B}$ |
 | $F_\eta$ | Spin-$1$ operators, $[F_i,F_j]=i\,\hbar\,\epsilon_{ij\eta}\,F_{\eta}$ |
 | $\mathrm{ad}_{\tilde S_{\Psi,\eta}}$ | Adjoint action on the traceless part $W$ |

@@ -221,7 +221,7 @@ with $\tilde\Pi_\pm$ orthogonal idempotents, $\tilde\Pi_+\tilde\Pi_-=\tilde\Pi_-
 | origin | one term | no |
 | $\Sigma_{00}\setminus\{0\}$ | none | no |
 
-**Corollary (the two sharpest witnesses).** $\Sigma_{10}^{\mathrm{J}}$ is invertible with a polar decomposition and no eigenbasis; $\Sigma_{01}$ is a zero divisor with an eigenbasis and no polar decomposition. The two failures are independent, and they occur in opposite mixed sectors. The comparison factor by factor is *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*.
+**Corollary (the two sharpest witnesses).** $\Sigma_{10}^{\mathrm{J}}$ is invertible with a polar decomposition and no eigenbasis; $\Sigma_{01}$ is a zero divisor with an eigenbasis and no polar decomposition. The two failures are independent, and they occur in opposite mixed sectors. The comparison factor by factor is *Relations between Polar Decomposition and Eigenbasis of a Biquaternion*.
 
 ## The Two Operator Loci
 
@@ -322,7 +322,7 @@ The two decompositions follow the two conditions. The eigenbasis follows the dis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the scalar line and the Jordan part.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents and the spectrum $\{c,0\}$.
 - [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for $\Sigma_{00}$, the nilpotent cone and the origin.
-- *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the comparison of the two decompositions factor by factor.
+- *Relations between Polar Decomposition and Eigenbasis of a Biquaternion*, for the comparison of the two decompositions factor by factor.
 - [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the two-sided operator, its spectrum and its rank on the null cone.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalue decomposition, the eigenprojections and the degenerate regimes.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the same four sectors read through the flow: the eigenbasis, the root and the Hermitian norm.

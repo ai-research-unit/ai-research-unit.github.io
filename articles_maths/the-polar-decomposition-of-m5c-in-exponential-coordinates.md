@@ -1,4 +1,4 @@
-# __The Exponential-Polar Decomposition of $M_5(\mathbb{C})$__
+# __The Polar Decomposition of $M_5(\mathbb{C})$ in Exponential Coordinates__
 
 ## Introduction
 
@@ -8,7 +8,7 @@ $$
 A=e^{iH}e^{S},\qquad H=H^*,\quad S=S^*,
 $$
 
-where $e^{iH}$ is $*$-unitary and $e^S$ is positive definite. Indeed, the $*$-unitary part is $U=e^{iH}$ by the spectral theorem for $*$-unitary matrices, and the positive part is $P=e^S$ by the spectral theorem for positive definite matrices. The **exponential-polar decomposition** is the decomposition
+where $e^{iH}$ is $*$-unitary and $e^S$ is positive definite. Indeed, the $*$-unitary part is $U=e^{iH}$ by the spectral theorem for $*$-unitary matrices, and the positive part is $P=e^S$ by the spectral theorem for positive definite matrices. The **polar decomposition in exponential coordinates** is the decomposition
 
 $$
 GL_5(\mathbb{C})=U(5)\cdot\exp(i\mathfrak{u}(5)),
@@ -17,7 +17,7 @@ $$
 
 written in exponential coordinates.
 
-The decomposition is **not unique in $H$**: the $*$-unitary logarithm is defined modulo $2\pi$, because $e^{2\pi iI}=I$. The positive part $S$ is unique; the $*$-unitary part $e^{iH}$ is unique, but its logarithm $H$ is not. At the points where $e^{iH}$ has distinct eigenvalues, the exponential-polar coordinates are coordinates on $GL_5$ modulo the lattice of the $*$-unitary periods; at a repeated eigenvalue the Hermitian logarithms need not commute with $H$, and the lattice description is only local.
+The decomposition is **not unique in $H$**: the $*$-unitary logarithm is defined modulo $2\pi$, because $e^{2\pi iI}=I$. The positive part $S$ is unique; the $*$-unitary part $e^{iH}$ is unique, but its logarithm $H$ is not. At the points where $e^{iH}$ has distinct eigenvalues, the exponential coordinates are coordinates on $GL_5$ modulo the lattice of the $*$-unitary periods; at a repeated eigenvalue the Hermitian logarithms need not commute with $H$, and the lattice description is only local.
 
 The article develops the exponential form of the polar decomposition, the Cartan decomposition $G=K\exp(\mathfrak{p})$, the $KAK$ decomposition (the SVD in group form), and the Iwasawa decomposition $G=KAN$. It proves the decompositions, states the uniqueness and the Weyl-group ambiguity, and describes the geodesic polar coordinates on the symmetric space $GL_5/U(5)$. It assumes the polar decomposition, the exponential and the Lie group of the preceding articles.
 
@@ -45,7 +45,7 @@ The left and right positive parts are related by $S'=U S U^*$.
 
 **Proof.** Apply the theorem to $A^*$ and take adjoints; or use the left polar decomposition $A=P'U$ with $P'=(AA^*)^{1/2}$; the relation follows from $AA^*=UP^2U^*$.
 
-**Corollary.** The exponential-polar decomposition is the polar decomposition in exponential coordinates; the positive part is the exponential of a Hermitian matrix, the $*$-unitary part the exponential of $i$ times a Hermitian matrix.
+**Corollary.** The writing is the polar decomposition in exponential coordinates; the positive part is the exponential of a Hermitian matrix, the $*$-unitary part the exponential of $i$ times a Hermitian matrix.
 
 **Proof.** The spectral theorem for $P$ and $U$; the exponentials are the spectral functions.
 
@@ -71,11 +71,11 @@ is surjective and is a local diffeomorphism; it is not injective, and at a point
 
 **Proof.** Surjectivity is the theorem; the derivative at $(0,0)$ is $(H,S)\mapsto iH+S$, which is an isomorphism because $iH$ is anti-Hermitian, $S$ is Hermitian, and the two summands meet only at $0$. The map is the composition of the exponential on Hermitian matrices, the exponential on anti-Hermitian matrices and the group product, so it is a local diffeomorphism everywhere. The non-injectivity is $e^{2\pi iI}=I$.
 
-**Remark.** **The exponential-polar decomposition is unique in the group, not in the Lie algebra.** The group elements $e^{iH}$ and $e^S$ are unique; the Lie algebra element $H$ is not, because the exponential is not injective on the $*$-unitary directions. The positive part $S$ is unique because the exponential is injective on the Hermitian matrices. The lattice ambiguity is the price of the exponential coordinates.
+**Remark.** **The polar decomposition in exponential coordinates is unique in the group, not in the Lie algebra.** The group elements $e^{iH}$ and $e^S$ are unique; the Lie algebra element $H$ is not, because the exponential is not injective on the $*$-unitary directions. The positive part $S$ is unique because the exponential is injective on the Hermitian matrices. The lattice ambiguity is the price of the exponential coordinates.
 
 ### The Lattice Ambiguity
 
-**Proposition.** Assume $e^{iH}$ has distinct eigenvalues. The fibre of the exponential-polar map over $A=e^{iH}e^S$ is
+**Proposition.** Assume $e^{iH}$ has distinct eigenvalues. The fibre of the exponential coordinate map over $A=e^{iH}e^S$ is
 
 $$
 \{(H+2\pi D,\ S):D\text{ diagonal with integer entries in a basis diagonalizing }H\}.
@@ -83,7 +83,7 @@ $$
 
 **Proof.** $e^{i(H+2\pi D)}=e^{iH}$ for integer diagonal $D$; conversely, if $e^{iH'}=e^{iH}$ and $e^{iH}$ has distinct eigenvalues, then $H'$ and $H$ commute and differ by $2\pi$ times an integer diagonal in the common eigenbasis, by the theorem above.
 
-**Corollary.** At the points where $e^{iH}$ has distinct eigenvalues, the exponential-polar coordinates are coordinates on $GL_5$ modulo the lattice $\mathbb{Z}^5$ of the $*$-unitary periods; the positive part has no lattice.
+**Corollary.** At the points where $e^{iH}$ has distinct eigenvalues, the exponential coordinates are coordinates on $GL_5$ modulo the lattice $\mathbb{Z}^5$ of the $*$-unitary periods; the positive part has no lattice.
 
 **Proof.** The lattice is the one displayed; the positive part is unique and has no ambiguity.
 
@@ -127,7 +127,7 @@ with $U$ $*$-unitary and $S$ Hermitian. This is the polar decomposition.
 
 **Proof.** The quotient is the positive cone $\mathcal{P}$; the exponential of Hermitian matrices is a diffeomorphism onto $\mathcal{P}$; the symmetric space structure is the Cartan decomposition.
 
-**Corollary.** The exponential-polar decomposition is the global form of the Cartan decomposition; the $*$-unitary group is the compact part and the Hermitian exponential the noncompact part.
+**Corollary.** The polar decomposition in exponential coordinates is the global form of the Cartan decomposition; the $*$-unitary group is the compact part and the Hermitian exponential the noncompact part.
 
 **Proof.** The global Cartan decomposition is the polar decomposition; the exponential coordinates are the Hermitian part.
 
@@ -169,7 +169,7 @@ The diagonal entries $a_k$ are the singular values of $g$, and they are unique u
 
 **Proof.** $a_k=e^{d_k}$; the distance is $\sqrt{\sum d_k^2}$.
 
-**Remark.** **The $KAK$ decomposition is the polar decomposition of the group, read as geodesic polar coordinates.** The $K$ parts are the angular coordinates, the $A$ part the radial coordinate; the Weyl group is the ambiguity of the angles. The exponential-polar decomposition is the same picture with the $*$-unitary part written as $e^{iH}$.
+**Remark.** **The $KAK$ decomposition is the polar decomposition of the group, read as geodesic polar coordinates.** The $K$ parts are the angular coordinates, the $A$ part the radial coordinate; the Weyl group is the ambiguity of the angles. The polar decomposition in exponential coordinates is the same picture with the $*$-unitary part written as $e^{iH}$.
 
 ## The Iwasawa Decomposition
 
@@ -225,9 +225,9 @@ where $U,Q$ are $*$-unitary, $P$ is positive definite, $A$ is positive diagonal 
 
 **Proof.** The diagonal $A$ is a special positive definite matrix; the general $P$ is not diagonal.
 
-**Remark.** **The three decompositions are different coordinate systems on $GL_5$.** The polar decomposition $G=K\exp(\mathfrak{p})$ uses the positive definite cone; the $KAK$ decomposition uses the maximal torus of the cone and the Weyl group; the Iwasawa decomposition $G=KAN$ uses the Borel subgroup. The exponential-polar decomposition is the polar one written with exponentials; the $KAK$ and $KAN$ are the geodesic and the Gram–Schmidt coordinates.
+**Remark.** **The three decompositions are different coordinate systems on $GL_5$.** The polar decomposition $G=K\exp(\mathfrak{p})$ uses the positive definite cone; the $KAK$ decomposition uses the maximal torus of the cone and the Weyl group; the Iwasawa decomposition $G=KAN$ uses the Borel subgroup. The polar decomposition in exponential coordinates is the polar one written with exponentials; the $KAK$ and $KAN$ are the geodesic and the Gram–Schmidt coordinates.
 
-## The Exponential-Polar Coordinates
+## The Exponential Coordinates
 
 ### The Map
 
@@ -239,9 +239,9 @@ $$
 
 is surjective, smooth, and a local diffeomorphism at every point where the eigenvalues of $H$ have no differences in $2\pi\mathbb{Z}$; the fibre is the lattice of the $*$-unitary periods.
 
-**Proof.** Surjectivity is the exponential-polar decomposition; smoothness is the exponential. The derivative at $(H,S)$ is the composition of the derivatives of the exponential and the product. The exponential $S\mapsto e^S$ is a diffeomorphism on the Hermitian matrices; the exponential $H\mapsto e^{iH}$ is a local diffeomorphism exactly when the eigenvalues of $\operatorname{ad}_{iH}$ avoid $2\pi i\mathbb{Z}\setminus\{0\}$, i.e., when no two eigenvalues of $H$ differ by a multiple of $2\pi$. The inverse function theorem then gives the local diffeomorphism; the global ambiguity is the lattice.
+**Proof.** Surjectivity is the polar decomposition in exponential coordinates; smoothness is the exponential. The derivative at $(H,S)$ is the composition of the derivatives of the exponential and the product. The exponential $S\mapsto e^S$ is a diffeomorphism on the Hermitian matrices; the exponential $H\mapsto e^{iH}$ is a local diffeomorphism exactly when the eigenvalues of $\operatorname{ad}_{iH}$ avoid $2\pi i\mathbb{Z}\setminus\{0\}$, i.e., when no two eigenvalues of $H$ differ by a multiple of $2\pi$. The inverse function theorem then gives the local diffeomorphism; the global ambiguity is the lattice.
 
-**Corollary.** The exponential-polar coordinates are the polar coordinates of the group: the $*$-unitary directions are angular, the Hermitian directions radial.
+**Corollary.** The exponential coordinates are the polar coordinates of the group: the $*$-unitary directions are angular, the Hermitian directions radial.
 
 **Proof.** The positive part $e^S$ is the radial coordinate; the $*$-unitary part $e^{iH}$ is the angular coordinate; the lattice is the periodicity of the angles.
 
@@ -263,19 +263,19 @@ with the exponential derivatives of *Analysis on $M_5$*. At $(0,0)$ the derivati
 
 ### The Geometry
 
-**Theorem.** The exponential-polar decomposition gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$: the geodesic from $I$ to $e^S$ is $e^{tS}$, and the $*$-unitary part is the angular coordinate. The distance is $\langle S\rangle_*^{1/2}$.
+**Theorem.** The polar decomposition in exponential coordinates gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$: the geodesic from $I$ to $e^S$ is $e^{tS}$, and the $*$-unitary part is the angular coordinate. The distance is $\langle S\rangle_*^{1/2}$.
 
 **Proof.** The positive cone is the symmetric space; the geodesic from $I$ to $e^S$ is $e^{tS}$; the distance is the Frobenius norm of $S$.
 
-**Corollary.** The $KAK$ decomposition refines the exponential-polar coordinates by diagonalizing $S$: $S=KDK^*$; the radial coordinate is the diagonal $D$, and the angular coordinates are the two $*$-unitary factors.
+**Corollary.** The $KAK$ decomposition refines the exponential coordinates by diagonalizing $S$: $S=KDK^*$; the radial coordinate is the diagonal $D$, and the angular coordinates are the two $*$-unitary factors.
 
 **Proof.** The spectral theorem for $S$; the $KAK$ decomposition of $e^S$.
 
-**Remark.** **The exponential-polar decomposition is the group-level analogue of the polar form of a complex number.** A complex number is $re^{i\theta}$; a matrix is $e^Se^{iH}$, with $S$ the logarithm of the modulus and $H$ the phase. The noncommutativity makes the order matter: the right and left forms differ, and the $*$-unitary logarithm is periodic. The $KAK$ and Iwasawa decompositions are the finer coordinate systems adapted to the torus and the Borel.
+**Remark.** **The polar decomposition in exponential coordinates is the group-level analogue of the polar form of a complex number.** A complex number is $re^{i\theta}$; a matrix is $e^Se^{iH}$, with $S$ the logarithm of the modulus and $H$ the phase. The noncommutativity makes the order matter: the right and left forms differ, and the $*$-unitary logarithm is periodic. The $KAK$ and Iwasawa decompositions are the finer coordinate systems adapted to the torus and the Borel.
 
 ## Summary
 
-Every invertible matrix has the exponential-polar decomposition
+Every invertible matrix has the polar decomposition in exponential coordinates
 
 $$
 A=e^{iH}e^S,\qquad H,S\text{ Hermitian},
@@ -293,12 +293,12 @@ $$
 \boxed{\ A=e^{iH}e^S;\quad GL_5=U(5)\exp(i\mathfrak{u}(5));\quad g=K_1AK_2;\quad g=KAN.\ }
 $$
 
-The exponential-polar coordinates are the polar coordinates of the group: the positive part is radial, the $*$-unitary part angular, the lattice is the periodicity. The $KAK$ decomposition gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$; the $KAN$ decomposition gives the Gram–Schmidt coordinates. The three decompositions are different coordinate systems, related by the polar decomposition, the SVD and the QR decomposition.
+The exponential coordinates are the polar coordinates of the group: the positive part is radial, the $*$-unitary part angular, the lattice is the periodicity. The $KAK$ decomposition gives the geodesic polar coordinates on the symmetric space $GL_5/U(5)$; the $KAN$ decomposition gives the Gram–Schmidt coordinates. The three decompositions are different coordinate systems, related by the polar decomposition, the SVD and the QR decomposition.
 
 | Decomposition | Form | Factors |
 |---|---|---|
 | Polar | $A=UP$ | $U\in U(5)$, $P>0$ |
-| Exponential-polar | $A=e^{iH}e^S$ | $H,S$ Hermitian |
+| Exponential coordinates | $A=e^{iH}e^S$ | $H,S$ Hermitian |
 | Cartan | $G=K\exp(\mathfrak{p})$ | $K=U(5)$, $\mathfrak{p}=i\mathfrak{u}(5)$ |
 | $KAK$ | $g=K_1AK_2$ | $A$ positive diagonal |
 | Iwasawa | $g=KAN$ | $A$ positive diagonal, $N$ unipotent |

@@ -1,8 +1,8 @@
-# __Exponential Polar Decomposition of Quaternions__
+# __Polar Decomposition of Quaternions__
 
 ## Introduction
 
-This article treats the **exponential polar decomposition** of a nonzero quaternion: the writing
+This article treats the **polar decomposition** of a nonzero quaternion: the writing
 
 $$
 \tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln r+\vec v,
@@ -48,9 +48,9 @@ when $\vec q\neq0$. Euler's formula, $\exp(\theta\vec n)=\cos\theta+\vec n\sin\t
 $$ \boxed{\; \tilde q=r(\cos\theta+\vec n\sin\theta)=r\exp(\theta\vec n)=\exp(\tilde q_{\log}),
 \qquad \tilde q_{\log}=\ln r+\theta\vec n \;} .$$
 
-The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.
+The three expressions are the same number. The middle one is the modulus–unit form; the last one is the polar decomposition. The identity $\cos\theta=q_t/r$ follows from the definition of $\theta$, and $\sin\theta=\sqrt{\langle\vec q\rangle_{\natural}}/r$ follows from $\langle\tilde q\rangle_{\natural}=q_t^2+\langle\vec q\rangle_{\natural}$. At $\vec q=0$ the product $\vec n\sin\theta$ is read as $0$.
 
-**Definition.** An **exponential polar decomposition** of $\tilde q\in\mathbb{H}^{\times}$ is a writing
+**Definition.** A **polar decomposition** of $\tilde q\in\mathbb{H}^{\times}$ is a writing
 
 $$
 \tilde q=\exp(\tilde q_{\log}), \qquad \tilde q_{\log}=\ln r+\vec v, \quad r>0,\quad \vec v\in\operatorname{Im}\mathbb{H},
@@ -148,7 +148,7 @@ The word **polar** names the two factors, not two independent exponentials. The 
 
 ### Existence and Uniqueness
 
-**Theorem.** Every $\tilde q\in\mathbb{H}^{\times}$ has an exponential polar decomposition. The principal one, with $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$, exists exactly on $\mathbb{H}\setminus(-\infty,0]$ and is unique there. The general case is as follows.
+**Theorem.** Every $\tilde q\in\mathbb{H}^{\times}$ has a polar decomposition. The principal one, with $\sqrt{\langle\vec v\rangle_{\natural}}<\pi$, exists exactly on $\mathbb{H}\setminus(-\infty,0]$ and is unique there. The general case is as follows.
 
 - If $\tilde q\notin\mathbb{R}$, then there are unique $r>0$, $\theta\in(0,\pi)$ and $\vec n\in S^2$ with $\tilde q=\exp(\ln r+\theta\vec n)$. Every exponent of $\tilde q$ is $\ln r+(\theta+2\pi k)\vec n$, $k\in\mathbb{Z}$.
 - If $\tilde q=r_0e_t$ with $r_0>0$, then $r=r_0$ and the angle is $0$. The exponents are $\ln r_0+2\pi k\,\vec n$ with $k\in\mathbb{Z}_{\ge0}$ and $\vec n\in S^2$, the value $k=0$ giving the principal exponent $\ln r_0$.
@@ -292,7 +292,7 @@ The fibre over a non-real element is the discrete line of §*The General Logarit
 
 ## Worked Examples
 
-A full set of eight cases, with reconstruction and logarithm tables and the boundary family, is in *Worked Examples of Exponential Polar Decomposition of Quaternions*. The examples here show the generic computation and the table.
+A full set of eight cases, with reconstruction and logarithm tables and the boundary family, is in *Worked Examples of Polar Decomposition of Quaternions*. The examples here show the generic computation and the table.
 
 ### A Generic Quaternion
 
@@ -579,7 +579,7 @@ because the Laplacian is four-dimensional. The function $r^{-2}=1/\langle\tilde 
 
 ## Summary
 
-Every nonzero quaternion has an exponential polar decomposition
+Every nonzero quaternion has a polar decomposition
 
 $$
 \tilde q=\exp(\ln r+\vec v), \qquad r=\sqrt{\langle\tilde q\rangle_{\natural}}>0,
@@ -616,7 +616,7 @@ The differential of the exponential is invertible exactly off the spheres $\sqrt
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Quaternions](worked-examples-of-exponential-polar-decomposition-of-quaternions.html), for the eight cases, the reconstruction and logarithm tables, the real axis family and the product defect.
+- [Worked Examples of Polar Decomposition of Quaternions](worked-examples-of-polar-decomposition-of-quaternions.html), for the eight cases, the reconstruction and logarithm tables, the real axis family and the product defect.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 1985), for the matrix exponential, the matrix logarithm and the polar decomposition.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map of $SU(2)$ and the unit quaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition 2001), for the quaternion exponential and its relation to the rotation group.

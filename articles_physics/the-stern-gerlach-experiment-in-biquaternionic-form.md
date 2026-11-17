@@ -10,8 +10,8 @@ The findings are stated here in advance, so that the reader can hold them agains
 
 1. **The field coupling is a Hermitian element of $\mathbb{B}_{\Psi}$.** The magnetic Hamiltonian $\tilde H_\Psi = -\gamma B_z\,\tilde{S}_{\Psi,3}$ is an element of the Hermitian subspace, as are the force operator and the observable whose measurement the apparatus performs. The field does not couple to the material sector directly; it couples to the informational sector, and the material sector carries only the resulting centre-of-mass motion.
 2. **The two beams are the two idempotents of $\tilde{S}_{\Psi,3}$.** The spin part of the apparatus performs the spectral decomposition $\tilde{S}_{\Psi,3} =\frac{\hbar}{2}\tilde\Pi_1(\vec u_z) -\frac{\hbar}{2}\tilde\Pi_2(\vec u_z)$, and the two outgoing beams are the two idempotents, correlated with the two spatial directions of deflection. The force eigenvalues are the eigenvalues of $\tilde{S}_{\Psi,3}$, which is the algebraic content of space quantisation.
-3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, the two intensities are $\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1\pm r_3)$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of the product real and non-negative.
-4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec r = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
+3. **The beam intensities are the Born pair.** For an incident state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, the two intensities are $\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1\pm r_3)$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of the product real and non-negative.
+4. **The measurement destroys the transverse coherence.** The Stern–Gerlach apparatus entangles the spin with the centre-of-mass coordinate; tracing the position out leaves the spin state with its off-diagonal (transverse) Bloch components erased, $\vec s_{\Psi} = (0,0,r_3)$. The coherence that survives is exactly the component along the field, and the lost components are the ones the apparatus cannot read.
 5. **A rotated apparatus gives the $\cos^2(\theta/2)$ law**, and the rotation that carries one analyser direction into another is a rotor in the real-quaternion subspace $\mathbb{B}_{H}$ acting by conjugation.
 
 The article uses the read-list notation throughout. Throughout, the algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\eta^2 = -e_t$, the scalar imaginary is $i$, the Hermitian and anti-Hermitian subspaces are $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the observables are $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ for a unit pure real quaternion $\vec u$, and the Born weight is $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$, with $2\,\mathrm{Sc}(e_t) = 2$.
@@ -131,10 +131,10 @@ and the same computation with $\vec e_z \to -\vec e_z$ gives $\tilde{S}_{\Psi,3}
 An incident beam is in general not in an eigenstate of $\tilde{S}_{\Psi,3}$. Its spin state is a Hermitian, positive element of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image),
 
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac12\left(e_t + i\vec r\right), \qquad \vec r\in\mathbb{R}^3, \quad |\vec r|\leq 1,
+\tilde{Ϛ}_{\Psi} = \tfrac12\left(e_t + i\vec s_{\Psi}\right), \qquad \vec s_{\Psi}\in\mathbb{R}^3, \quad |\vec s_{\Psi}|\leq 1,
 $$
 
-with $\vec r$ the Bloch vector. The probabilities of the two outcomes are the normalised Hermitian form,
+with $\vec s_{\Psi}$ the Bloch vector. The probabilities of the two outcomes are the normalised Hermitian form,
 
 $$
 \boxed{\;p_\pm = \frac{\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
@@ -144,14 +144,14 @@ $$
 = \tfrac12\left(1 \pm r_3\right)\;},
 $$
 
-since $\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ}_{\Psi} = \tfrac14(e_t \pm i \vec e_z)(e_t + i\vec r)$ has scalar part $\tfrac14(1 \pm r_3)$ — using $\mathrm{Sc}(\vec e_z\vec r) = -\vec r\cdot\vec u_z = -r_3$ — and the doubled value $2\,\mathrm{Sc}(\cdot)$ is the matrix trace of the image. The two intensities sum to one, $p_+ + p_- = 1$, and they are equal for a beam polarised transversely to the field, as they must be by symmetry.
+since $\tilde\Pi_{1,2}(\vec u_z)\,\tilde{Ϛ}_{\Psi} = \tfrac14(e_t \pm i \vec e_z)(e_t + i\vec s_{\Psi})$ has scalar part $\tfrac14(1 \pm r_3)$ — using $\mathrm{Sc}(\vec e_z\vec s_{\Psi}) = -\vec s_{\Psi}\cdot\vec u_z = -r_3$ — and the doubled value $2\,\mathrm{Sc}(\cdot)$ is the matrix trace of the image. The two intensities sum to one, $p_+ + p_- = 1$, and they are equal for a beam polarised transversely to the field, as they must be by symmetry.
 
 ### Why the Resolution Is Not a Mixture
 
 It is important to state what the spectral decomposition does **not** say. Writing $\tilde{Ϛ}_{\Psi} = p_+ \tilde\Pi_1 + p_- \tilde\Pi_2$ is a decomposition of the *probabilities*, not of the *state*: the identity
 
 $$
-\tfrac12\left(e_t + i\vec r\right)
+\tfrac12\left(e_t + i\vec s_{\Psi}\right)
 = \tfrac{1+r_3}{2}\tilde\Pi_1(\vec u_z) + \tfrac{1-r_3}{2}\tilde\Pi_2(\vec u_z)
 $$
 
@@ -187,7 +187,7 @@ $$
 \qquad r_3 = |c_+|^2 - |c_-|^2 .
 $$
 
-In biquaternion form the transverse components of the Bloch vector are erased, $\vec r = (0,0,r_3)$. This is the **decoherence** induced by the measurement, and it is exactly the loss of the coherence term identified above. The framework expresses it without a separate postulate: the two idempotents are the two outcomes, the position states that label them are orthogonal, and the cross terms in the partial trace vanish.
+In biquaternion form the transverse components of the Bloch vector are erased, $\vec s_{\Psi} = (0,0,r_3)$. This is the **decoherence** induced by the measurement, and it is exactly the loss of the coherence term identified above. The framework expresses it without a separate postulate: the two idempotents are the two outcomes, the position states that label them are orthogonal, and the cross terms in the partial trace vanish.
 
 ### The Post-Measurement State
 
@@ -305,7 +305,7 @@ $$
 \tilde\Pi_{1,2}(\vec u_z) = \tfrac12\left(e_t \pm  i\vec e_z\right).
 $$
 
-The deflection of each beam is the corresponding eigenvalue, $\pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}}$, so the number of beams and their separation are the spectral data of a Hermitian element of the informational sector. For an incident state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ the intensities are the plain-form readings $p_\pm = \tfrac12(1\pm r_3)$, and the two intensities sum to one.
+The deflection of each beam is the corresponding eigenvalue, $\pm\frac{\hbar\,\gamma\,B\,L^{2}}{4\,m\,z\,v^{2}}$, so the number of beams and their separation are the spectral data of a Hermitian element of the informational sector. For an incident state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ the intensities are the plain-form readings $p_\pm = \tfrac12(1\pm r_3)$, and the two intensities sum to one.
 
 The apparatus entangles the spin with the centre-of-mass coordinate, which lives in the material sector. When the position factor is reduced over, the orthogonal spatial wavepackets erase the cross terms and the reduced spin state is $\tfrac12(e_t + ir_3\vec e_z)$: the transverse Bloch components are lost, and only the component along the field survives. The coherence that is destroyed is the term $\tfrac12 i(r_1\vec e_x + r_2\vec e_y)$; the biquaternion form of the measurement shows this without an additional decoherence postulate.
 
@@ -325,7 +325,7 @@ A rotated analyser measures $\tilde{S}_{\Psi}(\vec u) =\frac{\hbar}{2}i\vec u$ f
 | $\tilde H_\Psi = -\gamma B(z)\tilde{S}_{\Psi,3}$ | Magnetic Hamiltonian in the field $\vec B = B\vec u_z$ |
 | $\tilde{F}_3 = \gamma (dB/dz)\tilde{S}_{\Psi,3}$ | Stern–Gerlach force operator |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | Pure-state idempotent |
-| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | General (mixed) spin state; $\vec r$ the Bloch vector |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | General (mixed) spin state; $\vec s_{\Psi}$ the Bloch vector |
 | $p_\pm = 2\langle\tilde\Pi_{1,2}(\vec u_z),\tilde{Ϛ}_{\Psi}\rangle_{*} = \tfrac12(1\pm r_3)$ | Beam intensities (Born rule) |
 | $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born weight |
 | $\vec u = \sin\theta\,\vec e_x + \cos\theta\,\vec e_z$ | Rotated analyser direction |

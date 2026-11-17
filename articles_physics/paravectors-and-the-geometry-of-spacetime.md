@@ -68,7 +68,7 @@ because the norm is multiplicative and $i$ is fixed by ${}^{\natural}$. The corp
 | scalar unit $1$ | time unit | $e_t$ |
 | vector $e_\eta$, $e_\eta^2=+e_t$ | imaginary vector | $i\vec e_\eta$ |
 | paravector $p_t+p_xe_x+p_ye_y+p_ze_z$ | Hermitian element | $p_te_t+i\vec p$ |
-| material four-vector $r'_{t}+\vec r$ | element of $\mathbb{B}_{\Phi}$ | $i\,p^{\natural}$ |
+| material four-vector $r'_{t}+\vec s_{\Psi}$ | element of $\mathbb{B}_{\Phi}$ | $i\,p^{\natural}$ |
 | the source's overbar $\bar p$ | quaternion conjugation | $p^{\natural}$ |
 | the source's dagger $p^\dagger$ | Hermitian conjugation ${}^{*}$, the identity on $\mathbb{B}_{\Psi}$ | $p^{*}=p$ |
 | volume element $e_1e_2e_3$ | central imaginary | $i$ |

@@ -144,16 +144,16 @@ whose singularities are the conjugate points and whose square root is the amplit
 The spin-0 state space is the set of density operators of the two-component module, and in the framework it is the **unit-weight slice of the future light cone** of $\mathbb{B}_{\Psi}$. The pure states are the extremal points of that slice, the boundary of the Bloch ball. Writing a normalised module element as $\tilde{Ξ}=(\alpha,\beta)^T$ with $|\alpha|^2+|\beta|^2=1$, the Bloch vector is
 
 $$
-\vec r=\big(2\,\mathrm{Re}(\alpha\bar\beta),\ 2\,\mathrm{Im}(\alpha\bar\beta),\ |\alpha|^2-|\beta|^2\big),
+\vec s_{\Psi}=\big(2\,\mathrm{Re}(\alpha\bar\beta),\ 2\,\mathrm{Im}(\alpha\bar\beta),\ |\alpha|^2-|\beta|^2\big),
 $$
 
 and for a pure state it has unit length,
 
 $$
-|\vec r|^2=1 ,
+|\vec s_{\Psi}|^2=1 ,
 $$
 
-which was verified numerically for four random normalised module elements, with residuals at the level of $10^{-16}$. The mixed states have $|\vec r|<1$ and lie strictly inside. The boundary of the ball is thus the state-space image of the zero divisor cone, and the interior is the set of states whose density operator is invertible: the algebraic division property and the physical purity of a state are the same boundary. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* develops the geometry of the slice; here it supplies the state-space interpretation of the locus.
+which was verified numerically for four random normalised module elements, with residuals at the level of $10^{-16}$. The mixed states have $|\vec s_{\Psi}|<1$ and lie strictly inside. The boundary of the ball is thus the state-space image of the zero divisor cone, and the interior is the set of states whose density operator is invertible: the algebraic division property and the physical purity of a state are the same boundary. The companion article *The Bloch Ball as the Normalised Slice of the Future Light Cone* develops the geometry of the slice; here it supplies the state-space interpretation of the locus.
 
 ### Invariance of the locus under the flow
 
@@ -253,7 +253,7 @@ The table is the article's content in one view. The locus is the meeting point o
 
 The zero divisor set of $\mathbb{B}$ is $\mathcal{Z}=\{\tilde Q\ne0:\langle\tilde Q\rangle_{\natural}=0\}$, a complex cone of complex dimension $3$ minus the origin, split into the pure nilpotents ($Q_t=0$, $\tilde Q^2=0$) and the non-pure multiples of idempotents ($Q_t\ne0$, $\tilde Q^2=2Q_t\tilde Q$, $\tilde\Pi=\tilde Q/(2Q_t)$); both identities were verified exactly for $\tilde Q=\vec e_x+i\vec e_y$ and $\tilde Q=e_t+i\vec e_x$. The cone lies in $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and is absent from $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$; in $\mathbb{B}_{\Phi}$ with $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ it is the light cone.
 
-Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P_{\Phi}\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ in the same units $m\,c=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the unit-weight slice of the future light cone, the pure states with $|\vec r|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
+Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P_{\Phi}\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ in the same units $m\,c=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the unit-weight slice of the future light cone, the pure states with $|\vec s_{\Psi}|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
 
 The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ for a unit rotor and $\langle\exp(i\theta_{\mathrm{pha}})\tilde Q\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})\langle\tilde Q\rangle_{\natural}$ for a central phase, both verified to machine precision, so the $*$-unitary flow can neither create nor destroy a zero divisor. The idempotent that generates the state module is itself on the locus, $\langle\tilde\Pi\rangle_{\natural} = \langle\tilde\Pi,\tilde\Pi\rangle_{\natural}=0$ with $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi^{\natural}\tilde\Pi=0$ verified exactly, and the free solution space contains null multiples $\tilde{Ξ}=q\tilde Q$ of every solution, with $\langle \tilde{Ξ}\rangle_{\natural}=0$ identically, verified with a spreading Gaussian packet whose free-equation residual was $2\times10^{-9}$. The algebraic null cone is **not** the zero-probability locus: probabilities use the positive-definite Hermitian form $\sum_\mu|Q_\mu|^2$, which equals $2|q|^2$ for the null solution and does not vanish, so the complex cone of the algebra and the real cone of the state space and the momentum shell are different real forms of one locus and must not be identified. The locus is not a causal boundary in this subcategory, because the Schrödinger equation is parabolic and its signal cone is degenerate. The algebra's division boundary, the boundary of the non-relativistic dispersion, the boundary of the semiclassical expansion, and the boundary of the pure-state manifold are one algebraic locus read under its different real forms.
 
@@ -278,7 +278,7 @@ The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle
 | $\tilde{Ξ}=q\tilde Q$, $\langle \tilde{Ξ}\rangle_{\natural}=0$ | Null solution of the free equation for a nilpotent $\tilde Q$ |
 | $E=V(x)$ | Turning surface; $p(x)=0$ |
 | $\mathcal{V}_{\mathrm{VV}}$ | Van Vleck determinant; singular at caustics |
-| $\vec r=(2\mathrm{Re}(\alpha\bar\beta),2\mathrm{Im}(\alpha\bar\beta),|\alpha|^2-|\beta|^2)$ | Bloch vector; $|\vec r|=1$ for pure states |
+| $\vec s_{\Psi}=(2\mathrm{Re}(\alpha\bar\beta),2\mathrm{Im}(\alpha\bar\beta),|\alpha|^2-|\beta|^2)$ | Bloch vector; $|\vec s_{\Psi}|=1$ for pure states |
 | $\flat=-{}^{*}$ | The algebra's real structure |
 | $2\,\mathrm{Sc}(\tilde H_\Psi)$ | Reduction convention |
 

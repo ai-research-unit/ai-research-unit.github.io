@@ -11,7 +11,7 @@ This article treats both effects in the biquaternion algebra $\mathbb{B} = \math
 3. **The Stark effect is linear for degenerate levels and quadratic otherwise.** The linear Stark effect is the spectrum of $-dE\,i\vec e_x$ at an exact degeneracy, $\pm dE$; the quadratic Stark effect is the second-order shift of a non-degenerate pair, $\delta E = -\frac{d^{2}\,E^{2}}{\hbar\,\omega_{0}}= -\tfrac12\alpha E^2$, with $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$.
 4. **The difference is diagonal versus off-diagonal coupling.** The magnetic coupling is diagonal in the energy basis because a spin-1/2 carries a permanent magnetic dipole; the electric coupling is off-diagonal because a state of definite parity has no permanent electric dipole. The first gives a first-order (linear) shift; the second gives a second-order (quadratic) shift or, at a degeneracy, a first-order splitting between the two mixed states.
 
-The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with eigenvalues $h_t\pm|\vec h_\Psi|$, and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+The notation is the series notation: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ with eigenvalues $h_t\pm|\vec h_\Psi|$, and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the spin observable and its coupling to a field.

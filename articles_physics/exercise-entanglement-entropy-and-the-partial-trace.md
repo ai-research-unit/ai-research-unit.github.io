@@ -6,7 +6,7 @@ This article is one of a series of **worked exercises** that illustrate quantum 
 
 The immediately preceding exercise, *Exercise: The Reduced State of an Entangled Subsystem*, introduced the partial scalar part $2\,\mathrm{Sc}_2$ and computed the reduced state of the singlet. That exercise is about the **state**; it observed, in passing, that the reduced state $\tfrac12 e_t$ has von Neumann entropy $\log 2$. The present exercise is about that number. It poses the computation of the **entanglement entropy** of a general pure two-qubit state, works the solution by two routes — the Schmidt decomposition, and the reduction in $\mathbb{B}\otimes\mathbb{B}$ — and closes with further problems left to the reader. The reduced state of the singlet is used here only as a limiting case, and its computation is not repeated.
 
-The exercise applies three results of the parent articles and assumes them without rederivation: the partial scalar parts $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$ and $\mathrm{Sc}_1(a\otimes b)=b\,\mathrm{Sc}(a)$, with the reductions $2\,\mathrm{Sc}_2$ and $2\,\mathrm{Sc}_1$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{Ϛ}_{\Psi}=\lambda_+\tilde\Pi_1(\vec u_r)+\lambda_-\tilde\Pi_2(\vec u_r)$ with $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ and $S(\tilde{Ϛ}_{\Psi})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $\tilde\Pi_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Informational Sector: States, Observables and Probability* — whether the candidate entropy functional $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
+The exercise applies three results of the parent articles and assumes them without rederivation: the partial scalar parts $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$ and $\mathrm{Sc}_1(a\otimes b)=b\,\mathrm{Sc}(a)$, with the reductions $2\,\mathrm{Sc}_2$ and $2\,\mathrm{Sc}_1$, established in *Entangled Subsystems in the Biquaternion Framework* and *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*; the single-qubit spectral decomposition and entropy of *Quantum Physics in Biquaternionic Form*, namely $\tilde{Ϛ}_{\Psi}=\lambda_+\tilde\Pi_1(\vec u_s)+\lambda_-\tilde\Pi_2(\vec u_s)$ with $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$ and $S(\tilde{Ϛ}_{\Psi})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_-$; and the Bell idempotent basis $\tilde\Pi_\epsilon$ of *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The article also takes up one of the open questions of *The Informational Sector: States, Observables and Probability* — whether the candidate entropy functional $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ is correct — and reports what the recomputation gives, including the point at which the candidate's domain ends.
 
 The conventions are those of the companion articles: the algebra, the sectors and the scalar part are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, with $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$; a full contraction of the two factors pays $4$, a partial one pays $2$. Throughout, $\log$ denotes the natural logarithm, and
 
@@ -179,10 +179,10 @@ $$
 =\tfrac12\left(e_t+i\cos2\theta\,\vec e_z\right)\;}.
 $$
 
-This is a state of $\mathbb{B}_{\Psi}$ of the standard form $\tfrac12(e_t+i\vec r)$ with Bloch vector
+This is a state of $\mathbb{B}_{\Psi}$ of the standard form $\tfrac12(e_t+i\vec s_{\Psi})$ with Bloch vector
 
 $$
-\vec r=\cos2\theta\,\vec e_z,\qquad |\vec r|=|\cos2\theta| .
+\vec s_{\Psi}=\cos2\theta\,\vec e_z,\qquad |\vec s_{\Psi}|=|\cos2\theta| .
 $$
 
 The mechanism is worth naming precisely, because it corrects an interpretation that the Bell case invites. The terms that survive the reduction are those with $e_t$ in the **second** factor. For the Bell idempotents the only such term is $e_t\otimes e_t$, which is why their reduced state is scalar; but the general entangled state also carries terms $e_\mu\otimes e_t$ with $\mu\in\{x,y,z\}$, and those survive and make the reduced state non-scalar. Here the term $i\cos2\theta\,\vec e_z\otimes e_t$ is exactly what turns $\tfrac12 e_t$ into $\tfrac12(e_t+i\cos2\theta\,\vec e_z)$. The rule is not "only $e_t\otimes e_t$ survives"; it is "only terms with $e_t$ in the collapsed factor survive".
@@ -192,12 +192,12 @@ The mechanism is worth naming precisely, because it corrects an interpretation t
 The reduced state is an element of $\mathbb{B}_{\Psi}$ with Bloch vector of length $|\cos2\theta|$. The parent article *Quantum Physics in Biquaternionic Form* gives the spectral decomposition and entropy of such a state:
 
 $$
-\lambda_\pm=\tfrac12\left(1\pm|\vec r|\right),
+\lambda_\pm=\tfrac12\left(1\pm|\vec s_{\Psi}|\right),
 \qquad
 S(\tilde{Ϛ}_{\Psi})=-\lambda_+\log\lambda_+-\lambda_-\log\lambda_- .
 $$
 
-For $\theta\in[0,\tfrac{\pi}{4}]$, $\cos2\theta\ge0$, so $|\vec r|=\cos2\theta$ and
+For $\theta\in[0,\tfrac{\pi}{4}]$, $\cos2\theta\ge0$, so $|\vec s_{\Psi}|=\cos2\theta$ and
 
 $$
 \lambda_+=\tfrac{1+\cos2\theta}{2}=\cos^2\theta,\qquad
@@ -216,10 +216,10 @@ This agrees with the Schmidt route, as it must: the Schmidt coefficients of $|\t
 At the endpoints:
 
 $$
-\theta=0:\quad \tilde{Ϛ}_{\Psi,1}=\tilde\Pi_1,\quad \vec r=\vec e_z,\quad S=0;
+\theta=0:\quad \tilde{Ϛ}_{\Psi,1}=\tilde\Pi_1,\quad \vec s_{\Psi}=\vec e_z,\quad S=0;
 $$
 $$
-\theta=\tfrac{\pi}{4}:\quad \tilde{Ϛ}_{\Psi,1}=\tfrac12 e_t,\quad \vec r=0,\quad S=\log2 .
+\theta=\tfrac{\pi}{4}:\quad \tilde{Ϛ}_{\Psi,1}=\tfrac12 e_t,\quad \vec s_{\Psi}=0,\quad S=\log2 .
 $$
 
 The value at $\theta=\tfrac{\pi}{4}$ is $\log2$, the same entropy as the reduced state of the singlet computed in *Exercise: The Reduced State of an Entangled Subsystem*; here it appears as one endpoint of a continuous curve, at the maximally entangled Bell state $|Ξ^{+}\rangle$ rather than at the singlet.
@@ -229,9 +229,9 @@ The value at $\theta=\tfrac{\pi}{4}$ is $\log2$, the same entropy as the reduced
 The worked family is the special case of a general statement, which is the biquaternion form of the Schmidt theorem. Let $\tilde\Pi$ be a pure two-qubit idempotent of $\mathbb{B}\otimes\mathbb{B}$, and let
 
 $$
-\tilde{Ϛ}_{\Psi,1}=2\,\mathrm{Sc}_2(\tilde\Pi)=\tfrac12\left(e_t+i\vec r_1\right),
+\tilde{Ϛ}_{\Psi,1}=2\,\mathrm{Sc}_2(\tilde\Pi)=\tfrac12\left(e_t+i\vec s_{\Psi,1}\right),
 \qquad
-\tilde{Ϛ}_{\Psi,2}=2\,\mathrm{Sc}_1(\tilde\Pi)=\tfrac12\left(e_t+i\vec r_2\right)
+\tilde{Ϛ}_{\Psi,2}=2\,\mathrm{Sc}_1(\tilde\Pi)=\tfrac12\left(e_t+i\vec s_{\Psi,2}\right)
 $$
 
 be its reduced states. Then $\tilde{Ϛ}_{\Psi,1}$ and $\tilde{Ϛ}_{\Psi,2}$ are states of $\mathbb{B}_{\Psi}$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence
@@ -249,12 +249,12 @@ So the entanglement entropy of a pure two-qubit state is a function of a single 
 
 The parent article *The Informational Sector: States, Observables and Probability* closes its list of open questions with the following: the logarithm on $\mathbb{B}$ exists but is multivalued, the scalar part is available but is a scalar, and "a natural candidate would be $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, but this needs verification." The candidate can now be checked.
 
-Let $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ be a state with $0<|\vec r|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, both positive, and its spectral decomposition is
+Let $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ be a state with $0<|\vec s_{\Psi}|<1$. Its eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$, both positive, and its spectral decomposition is
 
 $$
-\tilde{Ϛ}_{\Psi}=\lambda_+\,\tilde\Pi_1(\vec u_r)
-+\lambda_-\,\tilde\Pi_2(\vec u_r),
-\qquad \vec u_r=\vec r/|\vec r| .
+\tilde{Ϛ}_{\Psi}=\lambda_+\,\tilde\Pi_1(\vec u_s)
++\lambda_-\,\tilde\Pi_2(\vec u_s),
+\qquad \vec u_s=\vec s_{\Psi}/|\vec s_{\Psi}| .
 $$
 
 The **principal** logarithm of the parent's elementary-functions article, applied to this element, is the spectral logarithm:
@@ -262,17 +262,17 @@ The **principal** logarithm of the parent's elementary-functions article, applie
 $$
 \log\tilde{Ϛ}_{\Psi}
 =\tfrac12\log(\lambda_+\lambda_-)\,e_t
-+\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\vec u_r
-=\log\lambda_+\,\tilde\Pi_1(\vec u_r)
-+\log\lambda_-\,\tilde\Pi_2(\vec u_r).
++\tfrac{i}{2}\log\frac{\lambda_+}{\lambda_-}\,\vec u_s
+=\log\lambda_+\,\tilde\Pi_1(\vec u_s)
++\log\lambda_-\,\tilde\Pi_2(\vec u_s).
 $$
 
-The two expressions agree because $\tfrac12(e_t\pm i\vec u_r)=\tilde\Pi_{1,2}(\vec u_r)$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
+The two expressions agree because $\tfrac12(e_t\pm i\vec u_s)=\tilde\Pi_{1,2}(\vec u_s)$ and because $\log(\lambda_+\lambda_-)=2\log R$, $\log(\lambda_+/\lambda_-)=2\Theta/i$ in the notation of that article. Multiplying and taking the scalar part,
 
 $$
 \tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}
-=\lambda_+\log\lambda_+\,\tilde\Pi_1(\vec u_r)
-+\lambda_-\log\lambda_-\,\tilde\Pi_2(\vec u_r),
+=\lambda_+\log\lambda_+\,\tilde\Pi_1(\vec u_s)
++\lambda_-\log\lambda_-\,\tilde\Pi_2(\vec u_s),
 $$
 
 since the idempotents are orthogonal. Using $\mathrm{Sc}(\tilde\Pi_{1,2})=\tfrac12$,
@@ -291,13 +291,13 @@ $$
 =S(\tilde{Ϛ}_{\Psi})\;}.
 $$
 
-**The candidate is correct**, for states in the interior of the Bloch ball, with the principal branch of the logarithm. The maximally mixed case $\vec r=0$ is the scalar case, where the same computation with $\log(\tfrac12 e_t)=\log\tfrac12\,e_t$ gives $S=\log2$; the case $|\vec r|=1$ is excluded and is discussed below. The scalar part is not an obstruction: a two-level algebra pays exactly $2$ when it is contracted, so the candidate is not an analogue of the matrix formula; it is that formula, written in the algebra.
+**The candidate is correct**, for states in the interior of the Bloch ball, with the principal branch of the logarithm. The maximally mixed case $\vec s_{\Psi}=0$ is the scalar case, where the same computation with $\log(\tfrac12 e_t)=\log\tfrac12\,e_t$ gives $S=\log2$; the case $|\vec s_{\Psi}|=1$ is excluded and is discussed below. The scalar part is not an obstruction: a two-level algebra pays exactly $2$ when it is contracted, so the candidate is not an analogue of the matrix formula; it is that formula, written in the algebra.
 
 Two qualifications belong with the verification, and neither is a defect of the formula.
 
 **The branch is load-bearing.** The biquaternion logarithm is multivalued. The genuine extra branches — an added $2\pi i n\,e_t$ in the scalar part, or a shift $\Theta\mapsto\Theta+2\pi k$ in the angle — change $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ by a purely imaginary amount, so what is branch-dependent is the *complex* value of the candidate, not its real part. The candidate must nonetheless be read with the principal branch, the one that agrees with the spectral logarithm, because that is the branch that makes $S$ real and equal to $-\sum_i\lambda_i\log\lambda_i$.
 
-**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of invertibles $\langle\tilde{Q}\rangle_{\natural}\neq0$. A pure state $\tilde{Ϛ}_{\Psi}=\tilde\Pi(\vec u_r)=\tfrac12(e_t+i\vec u_r)$ is an idempotent and a zero divisor: $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec r|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec r|\to1$, not a value the formula takes. The parent's single-qubit entropy formula escapes this limitation only in appearance: it is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{Ϛ}_{\Psi}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
+**The domain ends at the pure states.** The logarithm of a biquaternion exists exactly on the group of invertibles $\langle\tilde{Q}\rangle_{\natural}\neq0$. A pure state $\tilde{Ϛ}_{\Psi}=\tilde\Pi(\vec u_s)=\tfrac12(e_t+i\vec u_s)$ is an idempotent and a zero divisor: $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=0$. So the logarithm, and with it the candidate functional, is undefined at $|\vec s_{\Psi}|=1$. The value $S=0$ at the pure states is the continuous limit of the formula as $|\vec s_{\Psi}|\to1$, not a value the formula takes. The parent's single-qubit entropy formula escapes this limitation only in appearance: it is written in terms of the eigenvalues $\lambda_\pm$, which remain defined at the boundary, whereas the candidate is written in terms of $\log\tilde{Ϛ}_{\Psi}$, which does not. On the interior the two agree exactly; on the boundary only the eigenvalue form survives.
 
 ## A Case the Partial Trace Does Not Decide
 
@@ -399,7 +399,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $\tilde\Pi_\epsilon=\tfrac14(e_t\otimes e_t+\sum_\eta\epsilon_\eta \vec e_\eta\otimes \vec e_\eta)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $\tilde\Pi_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | General state of $\mathbb{B}_{\Psi}$, $|\vec r|\le1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | General state of $\mathbb{B}_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
 | $\tilde{Ϛ}_{\Psi,1}=2\,\mathrm{Sc}_2\tilde\Pi$ | Reduced state (Bloch vector $\vec r_1$) |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $h(p)=-p\log p-(1-p)\log(1-p)$ | Binary entropy |

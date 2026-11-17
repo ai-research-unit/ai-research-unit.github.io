@@ -21,7 +21,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\rig
 W(C) = 2\,\mathrm{Sc}\,U(C),
 $$
 
-with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{ϙ}{\hbar}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
+with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{ϙ}{\hbar}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec s_{\Psi}$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
 
 The derivative of this article is the corpus's gradient $\tilde\nabla_\Phi$, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
@@ -129,16 +129,16 @@ $$
 with $U$ the corpus's rotation rotor about $\vec u$ by $\theta$, a real unit quaternion with $U^{*}=U^{-1}$. The **accessible** state is the restriction of $\tilde{Ϛ}_{\Psi}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
 
 $$
-\vec r \;\longmapsto\; (\vec r\cdot\vec u)\,\vec u,
+\vec s_{\Psi} \;\longmapsto\; (\vec s_{\Psi}\cdot\vec u)\,\vec u,
 $$
 
 the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article [Decoherence as Idempotent Projection](decoherence-as-idempotent-projection.html). Two states that differ by a charge rotation have **the same accessible state**:
 
 $$
-\boxed{\;\vec r\cdot\vec u = (\mathsf{R}_{\vec u}(\theta)\vec r)\cdot\vec u\;},
+\boxed{\;\vec s_{\Psi}\cdot\vec u = (\mathsf{R}_{\vec u}(\theta)\vec s_{\Psi})\cdot\vec u\;},
 $$
 
-because the rotation $\mathsf{R}_{\vec u}(\theta)$ of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi,1}(\log\tilde{Ϛ}_{\Psi,1}-\log\tilde{Ϛ}_{\Psi,2})$, and it was evaluated on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
+because the rotation $\mathsf{R}_{\vec u}(\theta)$ of the Bloch vector induced by conjugation with $U$ preserves the component along $\vec u$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. The relative entropy is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi,1}(\log\tilde{Ϛ}_{\Psi,1}-\log\tilde{Ϛ}_{\Psi,2})$, and it was evaluated on explicit states: with $\vec s_{\Psi} = (0.5,-0.3,0.4)$ and a charge rotation about $\vec u = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{Ϛ}_{\Psi}\|\tilde{Ϛ}_{\Psi,\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly, both $(0,0,0.4)$.
 
 The lesson is the article's thesis in its sharpest form. A rotation by the framework's charge is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -482,8 +482,8 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\sigma$ | String tension |
 | $C_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim \exp(-iTV(L))$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
-| $\tilde{Ϛ}_{\Psi}$, $\vec r$ | State of the informational sector and its Bloch vector, *Algebra and Element Conventions* |
-| $\vec r\cdot\vec u$ | Component along the charge axis; accessible content |
+| $\tilde{Ϛ}_{\Psi}$, $\vec s_{\Psi}$ | State of the informational sector and its Bloch vector, *Algebra and Element Conventions* |
+| $\vec s_{\Psi}\cdot\vec u$ | Component along the charge axis; accessible content |
 | $\vec u\cdot\vec S$, $U$ | Charge along the axis $\vec u$ and its rotation rotor, $U^{*}=U^{-1}$ |
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, U\tilde{Q}U^{-1}$ | Colour-singlet conditional expectation; a channel that fixes its image |

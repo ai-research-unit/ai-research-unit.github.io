@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers__
+# __Worked Examples of Polar Decomposition of Split-Complex Numbers__
 
 ## Introduction
 
-This article computes the exponential polar decomposition of eight split-complex numbers, one after another. It is the computational companion of *Exponential Polar Decomposition of Split-Complex Numbers*. The decomposition, its existence and uniqueness, the component sign and the exponential and logarithm are established in that article and in *Split-Complex Elementary Functions*; no definition or proof is repeated.
+This article computes the polar decomposition of eight split-complex numbers, one after another. It is the computational companion of *Polar Decomposition of Split-Complex Numbers*. The decomposition, its existence and uniqueness, the component sign and the exponential and logarithm are established in that article and in *Split-Complex Elementary Functions*; no definition or proof is repeated.
 
 Each case is read from the two coordinates $q$ and $q'$ of $Q=q+jq'$. The modulus, the angle and the component sign are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
@@ -23,7 +23,7 @@ The eight cases cover the four open components, the pure discrete unit, the two 
 | Negative scalar | $-2$ | the same exponent as $2$, $\epsilon=-1$ |
 | Null cone | $1+j$ | $(q+q')(q-q')=0$, but no polar word |
 
-**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its word and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers*.
+**The plan.** The method is stated once (§*The Method*). The eight cases follow (§*The Eight Cases*), each with its coordinates, its polar data, its word and its check. The summary collects the results in two tables and reads the patterns across the cases (§*Summary*). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in *Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers*.
 
 ## The Method
 
@@ -565,11 +565,11 @@ As $\delta\to0$, the modulus tends to $0$, the angle diverges, and the larger co
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
-- [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the decomposition, existence, uniqueness and the component sign.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-polar-decomposition-with-eigenbasis-of-split-complex-numbers.md), for the eigenbasis, the idempotents and the spinors of the same eight cases.
+- [Polar Decomposition of Split-Complex Numbers](polar-decomposition-of-split-complex-numbers.html), for the decomposition, existence, uniqueness and the component sign.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the future cone.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the algebraic modulus–unit form.
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
 - *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative companion.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the hyperbolic functions and the split-complex exponential.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map and the four components of the group of invertibles.

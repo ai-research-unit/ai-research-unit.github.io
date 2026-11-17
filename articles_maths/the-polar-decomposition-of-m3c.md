@@ -23,7 +23,7 @@ $$
 X=\tfrac12(X-X^{*})+\tfrac12(X+X^{*}).
 $$
 
-The article proves the existence and uniqueness, identifies the factors with the singular value decomposition, works an explicit example with exact numbers, treats the singular and the idempotent cases, and explains the manifold structure. The singular values are the eigenvalues of $P$; the singular set is $\det A=0$, of real codimension $2$, and there is no null cone. The Hermitian structure is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_3(\mathbb{C})$*; the combined exponential polar form is *The Exponential Polar Decomposition of $M_3(\mathbb{C})$*; the topology is *The Topology of $M_3(\mathbb{C})$*.
+The article proves the existence and uniqueness, identifies the factors with the singular value decomposition, works an explicit example with exact numbers, treats the singular and the idempotent cases, and explains the manifold structure. The singular values are the eigenvalues of $P$; the singular set is $\det A=0$, of real codimension $2$, and there is no null cone. The Hermitian structure is *The Involution and the Hermitian Structure of $M_3(\mathbb{C})$*; the exponential is *The Exponential and the Lie Group of $M_3(\mathbb{C})$*; the combined exponential form is *The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates*; the topology is *The Topology of $M_3(\mathbb{C})$*.
 
 ## The Statement
 
@@ -318,5 +318,5 @@ $$
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the symmetric space $GL_3/U(3)$.
 - [The Involution and the Hermitian Structure of $M_3(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m3c.html), for the star and the positive cone.
 - [The Exponential and the Lie Group of $M_3(\mathbb{C})$](the-exponential-and-the-lie-group-of-m3c.html), for $P=e^{H}$ and $U=e^{iK}$.
-- [The Exponential Polar Decomposition of $M_3(\mathbb{C})$](the-exponential-polar-decomposition-of-m3c.html), for the combined form.
+- [The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m3c-in-exponential-coordinates.html), for the combined form.
 - [The Topology of $M_3(\mathbb{C})$](the-topology-of-m3c.html), for the homotopy type of $GL_3$ and $U(3)$.

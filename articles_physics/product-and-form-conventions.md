@@ -261,7 +261,7 @@ and the Born weight of an observable is the normalised Hermitian form,
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
  =\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
- =h_t+\vec r\cdot\vec h_\Psi .
+ =h_t+\vec s_{\Psi}\cdot\vec h_\Psi .
 $$
 
 The star is the Hermitian conjugation, and it is what makes the pairing positive definite on the whole algebra. On $\mathbb{B}_{\Psi}$ it is inert, since both arguments are Hermitian, and the weight is positive there by the sector's own definiteness. The weight is written with the star on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}$ alike. On $\mathbb{B}_{\Psi}$ both arguments are Hermitian, so $\tilde H_\Psi^{*}=\tilde H_\Psi$ and the star acts as the identity on them, but it is not omitted: it names the form that is positive definite everywhere. The same weight is therefore also $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the plain scalar. The plain form is the restriction of the Hermitian form to the sector, not a second definition of the weight. The Hermitian norm is the only one of the four that is positive definite on the whole algebra; the plain form is definite only on a sector, with opposite signs on the two. For a state $\tilde{Ϛ}_{\Psi}\ge0$ and an effect $0\le\tilde H_\Psi\le e_t$ the weight lies in $[0,1]$, manifestly non-negative because the form is positive definite on the whole algebra. The doubled scalar part is the final reading, at normalisation: the unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative here because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$ for the positive state and effect. The weight is therefore also $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})\in[0,1]$.
@@ -273,7 +273,7 @@ $$
 \qquad 2\,\mathrm{Sc}(\tilde Q).
 $$
 
-The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{B}_{\Psi}$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}_{\Psi}\rangle_{*}=\tfrac14(1+|\vec r|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
+The factor $2$ is the dimension of that image, not a property of the form. The order of the readings is fixed once for the series — form with star, scalar with star, plain scalar on $\mathbb{B}_{\Psi}$, trace at normalisation last — and is explained in *The Born Rule from the Hermitian Form — Derivation and Comparison*. The Hermitian norm is not the normalising functional: on a state it reads $\langle\tilde{Ϛ}_{\Psi}\rangle_{*}=\tfrac14(1+|\vec s_{\Psi}|^2)$, which varies from $\tfrac14$ to $\tfrac12$ across the Bloch ball.
 
 **In the $2\times2$ image.** The four forms are the traces of their products up to that factor,
 

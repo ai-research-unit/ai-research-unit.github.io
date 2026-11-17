@@ -50,7 +50,7 @@ In the framework the obstruction is immediate and is worth stating in its own no
 
 **Theorem.** There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$.
 
-**Proof.** Write $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2$ with $c r_{t,1},c r_{t,2}\in\mathbb{R}$ and $\vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$; the cross terms contribute the symmetric $\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$
@@ -64,7 +64,7 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Ph
 
 Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.
 
-**What $\mathbb{B}_{\Psi}$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
+**What $\mathbb{B}_{\Psi}$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_t$ and the three directions $i\vec e_x,i\vec e_y,i\vec e_z$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$. Its states are the elements $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\leq1$, the Bloch ball, with the pure states on the boundary.
 
 **An internal algebra.** The algebra describes **internal** degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.
 
@@ -236,7 +236,7 @@ The claim must not be overread, and the following are not asserted.
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
-| $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
+| $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
 | $[Q,P]=i\,\hbar\,I$ | Canonical commutation relation |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |
 | $[\pi_j,\pi_\eta]=i\,\hbar\,ϙ\varepsilon_{j\eta l}B_l$ | Field-strength commutator; a central multiple of $e_t$, hence an element of $\mathbb{B}$ |
@@ -254,7 +254,7 @@ The claim must not be overread, and the following are not asserted.
 | $XZ=\omega ZX$ | Weyl (clock-and-shift) relation; phase in place of $i\,\hbar$ |
 | $X^jZ^k=\omega^{jk}Z^kX^j$ | the $\mathbb{Z}/N$ Weyl relation, of which the pair above is the case $j=k=1$ |
 | $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ | Matrix model of $\mathbb{B}$ |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$, $|\vec r|\leq1$ | State, the Bloch ball |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State, the Bloch ball |
 
 ## Further Reading
 

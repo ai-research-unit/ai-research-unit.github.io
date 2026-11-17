@@ -44,7 +44,7 @@ $$
 = t\,Ξ(\tilde{Ϛ}_{\Psi,1}\otimes\tilde{Ϛ}_{\Psi,0}) + (1-t)\,Ξ(\tilde{Ϛ}_{\Psi,2}\otimes\tilde{Ϛ}_{\Psi,0}).
 $$
 
-And the target map $\tilde{Ϛ}_{\Psi,x}\mapsto\tilde{Ϛ}_{\Psi,x}\otimes\tilde{Ϛ}_{\Psi,x}$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_{\Psi,x}$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
+And the target map $\tilde{Ϛ}_{\Psi,x}\mapsto\tilde{Ϛ}_{\Psi,x}\otimes\tilde{Ϛ}_{\Psi,x}$ is **quadratic**: doubling the deviation of $\tilde{Ϛ}_{\Psi,x}$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec s_{\Psi}\otimes\vec s_{\Psi}$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
 
 ### The $*$-unitary form of the requirement
 

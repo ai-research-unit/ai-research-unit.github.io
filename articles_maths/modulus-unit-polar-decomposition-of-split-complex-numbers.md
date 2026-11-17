@@ -14,7 +14,7 @@ The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of inertia $(1,1)$. Three 
 
 The article defines the norm and the two regimes (§*The Two Factors*), proves existence and uniqueness (§*Existence and Uniqueness*), describes the group of invertibles and its maximal compact subgroup (§*The Group of Invertibles and the Unit Set*), records the two axes (§*The Two Axes*), gives the matrix picture (§*The Matrix Picture*), computes examples (§*Worked Examples*) and compares the family (§*The Other Algebras*).
 
-The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Algebra and Element Conventions*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
+The conventions and the symbols are those of *Split-Complex Algebra*, *Norm and Invertibility in the General Split-Complex Algebra* and *Algebra and Element Conventions*; the notation is collected in §*Summary of Notation*. The rational and exponential coordinates are the subjects of *Rational-Chart Polar Decomposition of Split-Complex Numbers* and *Polar Decomposition of Split-Complex Numbers*. Every numerical value displayed below was recomputed in double precision.
 
 ## The Two Factors
 
@@ -118,7 +118,7 @@ $$
 ({\mathbb{C}_{\mathrm{spl}}}^\times)_0 = \{Q : Q_+>0,\ Q_->0\} = \{q>\lvert q'\rvert\} = \{\langle Q\rangle_{*}>0,\ q>0\},
 $$
 
-the future cone of the indefinite form. It is the image of the exponential, treated in *Split-Complex Exponential and Lie Group Structure* and in *Exponential Polar Decomposition of Split-Complex Numbers*.
+the future cone of the indefinite form. It is the image of the exponential, treated in *Split-Complex Exponential and Lie Group Structure* and in *Polar Decomposition of Split-Complex Numbers*.
 
 ### The Polar Splitting of the Group
 

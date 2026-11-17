@@ -16,7 +16,7 @@ This article presents the driven spin-1/2 in the biquaternion algebra $\mathbb{B
 4. **Resonance is the vanishing of the longitudinal component.** At $\omega = \omega_0$ the effective field is purely transverse, the effective Hamiltonian is $\propto i\vec e_x$, and the spin precesses about the transverse axis, so the two eigenstates exchange with unit amplitude after a $\pi$-pulse.
 5. **The transition probability is the normalised Hermitian form, read through the scalar part**, $P_\downarrow(r'_t) = 2\,\mathrm{Sc}(\tilde\Pi_2(\vec u_z)\tilde{Ϛ}_{\Psi}(r'_t)^{*})$, and it equals the standard Rabi expression. The whole Rabi problem is thus a single rotor acting on an idempotent, read by the reduction formula.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ sends $e_t\mapsto I_2$, $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the spin operators and the two-level Hamiltonian.
@@ -45,7 +45,7 @@ $$
 
 Here $\omega_0$ is the Larmor frequency and $\omega_1$ is the **Rabi frequency**, the rate set by the transverse amplitude; with $\mathcal{G}_{\mathrm{gap}}$ the detuning and $\Omega$ the Rabi rate they are all angular frequencies in $\mathrm{rad\,s^{-1}}$, the clock is the material length $r'_t=c\,t$, and every phase below is $\omega r'_t/c$. Each of the three terms lies in $\mathbb{B}_{\Psi}$: the longitudinal term is a multiple of $i\vec e_z$ and the transverse terms are multiples of $i\vec e_x$ and $i\vec e_y$, each with a real time-dependent coefficient. The Hamiltonian is therefore Hermitian at every instant, and the evolution it generates preserves the biquaternion norm and the trace, as the Schrödinger article requires.
 
-The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec r(r'_t) = (\cos(\omega_0 r'_t/c), -\sin(\omega_0 r'_t/c), 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
+The choice of the $-\vec u_y$ sense for the second transverse component is the one that corotates with the Larmor precession in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a spin in a static field precesses as $\vec s_{\Psi}(r'_t) = (\cos(\omega_0 r'_t/c), -\sin(\omega_0 r'_t/c), 0)$ for a state initially along $+\vec u_x$. The field of the equation above rotates in the same sense, so the drive remains in phase with the precession; a linearly polarised drive is the sum of this circular component and its counter-rotating partner, and the rotating-wave approximation discards the latter, as discussed below.
 
 ### The Larmor Precession as a Rotor
 
@@ -194,15 +194,15 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)
 
 ## The Bloch Picture
 
-The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i\vec r(r'_t))$, with $\vec r(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
+The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i\vec s_{\Psi}(r'_t))$, with $\vec s_{\Psi}(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
-\boxed{\;d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r\;},
+\boxed{\;d\vec s_{\Psi}/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec s_{\Psi}\;},
 \qquad
 \vec\omega_{\mathrm{eff}} = (-\omega_1, 0, -\mathcal{G}_{\mathrm{gap}}),
 $$
 
-for the effective Hamiltonian $\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}i(\omega_1 \vec e_x+\mathcal{G}_{\mathrm{gap}} \vec e_z)$. This is a rigid rotation of $\vec r$ about the fixed axis $-\vec u_R$ at the rate $\Omega$. Three cases are worth separating.
+for the effective Hamiltonian $\tilde{H}_{\Psi,R} = -\frac{\hbar}{2}i(\omega_1 \vec e_x+\mathcal{G}_{\mathrm{gap}} \vec e_z)$. This is a rigid rotation of $\vec s_{\Psi}$ about the fixed axis $-\vec u_R$ at the rate $\Omega$. Three cases are worth separating.
 
 - **Resonance** ($\mathcal{G}_{\mathrm{gap}} = 0$): the rotation axis is the $x$-axis, the Bloch vector rotates in the $yz$-plane, and a spin initially along $+z$ passes through the equator and reaches $-z$ after a half-period — the $\pi$-pulse.
 - **Large detuning** ($|\mathcal{G}_{\mathrm{gap}}|\gg\omega_1$): the axis is close to $-z$, the rotation cone is narrow, and the spin remains near its initial pole, executing small oscillations of amplitude $\sim\omega_1/|\mathcal{G}_{\mathrm{gap}}|$ — the dispersive regime.
@@ -258,7 +258,7 @@ $$
 P_\downarrow(r'_t) = \frac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\,\sin^2\!\left(\frac{\Omega r'_t}{2\,c}\right),
 $$
 
-which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\mathcal{G}_{\mathrm{gap}})$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
+which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t = \pi c/\omega_1$ inverts the spin and the $\pi/2$-pulse $r'_t = \pi c/(2\omega_1)$ prepares the equal superposition. The Bloch vector obeys $d\vec s_{\Psi}/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec s_{\Psi}$ with $\vec\omega_{\mathrm{eff}} = (-\omega_1,0,-\mathcal{G}_{\mathrm{gap}})$, a rigid rotation about the fixed effective axis. The rotating-wave approximation is the discarding of the counter-rotating helicity of a linear drive; it is a statement about which rotor the drive tracks, not an algebraic identity.
 
 ## Summary of Notation
 
@@ -281,7 +281,7 @@ which reduces to $\sin^2(\omega_1r'_t/(2c))$ on resonance. The $\pi$-pulse $r'_t
 | $\vec u_R = (\omega_1\vec e_x+\mathcal{G}_{\mathrm{gap}} \vec e_z)/\Omega$ | Effective rotation axis |
 | $P_\downarrow(r'_t) = \tfrac{\omega_1^2}{\omega_1^2+\mathcal{G}_{\mathrm{gap}}^2}\sin^2\!\left(\Omega r'_t/(2c)\right)$ | Rabi transition probability |
 | $\pi/\omega_1$, $\pi/(2\omega_1)$ | $\pi$-pulse, $\pi/2$-pulse durations |
-| $d\vec r/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec r$ | Bloch equation in the rotating frame |
+| $d\vec s_{\Psi}/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec s_{\Psi}$ | Bloch equation in the rotating frame |
 
 ## Further Reading
 

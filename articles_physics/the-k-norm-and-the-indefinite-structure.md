@@ -562,13 +562,13 @@ $$
 
 **Read:** the coincidence $\mathrm{Kr}=N$ on the informational sector, the determinant form of the value on the unit-weight slice, and the identification of the doubly null set with the Peirce lines.
 
-**On the informational sector the K value is the algebraic norm, and on the unit-weight slice the algebraic norm is the determinant.** For a state $\tfrac12(e_t+i\vec r)$ with $\vec r$ real and $\lvert\vec r\rvert\le1$,
+**On the informational sector the K value is the algebraic norm, and on the unit-weight slice the algebraic norm is the determinant.** For a state $\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}$ real and $\lvert\vec s_{\Psi}\rvert\le1$,
 
 $$
-\mathrm{Kr}=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+\mathrm{Kr}=\tfrac14\bigl(1-\lvert\vec s_{\Psi}\rvert^{2}\bigr),
 $$
 
-**so the three K strata are the three classes of the state space.** Positive is the interior of the Bloch ball, the mixed states. Null is the sphere $\lvert\vec r\rvert=1$, the pure states. Negative is the exterior, the set of unit-weight Hermitian elements that are not positive and therefore are not states.
+**so the three K strata are the three classes of the state space.** Positive is the interior of the Bloch ball, the mixed states. Null is the sphere $\lvert\vec s_{\Psi}\rvert=1$, the pure states. Negative is the exterior, the set of unit-weight Hermitian elements that are not positive and therefore are not states.
 
 **The reading is that the weight measures mixedness, and that a pure state has none of it.** The value is largest at the maximally mixed state $\tfrac12e_t$, where it is $\tfrac14$, and it vanishes exactly on the pure states. A pure state is a zero divisor and a doubly null element at once, and the third statement is that it is spectrally regular: on the doubly null set $B^{2}=-Q_t^{2}\neq0$, so the two eigenvalues are distinct.
 
@@ -661,7 +661,7 @@ $$
 | the refinement | the pair $(\mathrm{Kr},N)$ has five non-empty cells of six, the empty one being positive and degenerate |
 | the six restrictions | $(2,0)$ on the centre, $(0,6)$ on the vector subspace, $(1,3)$ on each of the four remaining subspaces |
 | the sector identities | $\mathrm{Kr}=-N$ on $\mathbb{B}_{\Phi}$, $\mathrm{Kr}=+N$ on $\mathbb{B}_{\Psi}$; null is massless on both and only there |
-| the state slice | $\mathrm{Kr}=\tfrac14(1-\lvert\vec r\rvert^{2})=N$; positive mixed, null pure, negative not a state |
+| the state slice | $\mathrm{Kr}=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})=N$; positive mixed, null pure, negative not a state |
 | the operators | $L_{\tilde Q}$ of rank $4$ on the invertibles and $2$ on the zero divisors; $\mathrm{Sd}_{\tilde Q}$ invertible on the invertibles and of rank $1$ on the null cone |
 | the adjoint | the K adjoint $T^{\dagger}=JT^{*}J$ exists everywhere; the polar decomposition exists exactly on the invertibles |
 | the level sets | $\{\mathrm{Kr}=c\}$ is $\mathrm{U}(1,3)/\mathrm{U}(3)$ for $c>0$ and $\mathrm{U}(1,3)/\mathrm{U}(1,2)$ for $c<0$, both of dimension $7$ |

@@ -46,7 +46,7 @@
 
 **The closure.** The centre $\mathbb{C}e_t$, of real dimension $2$ and complex dimension one, with the two real lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$.
 
-**The action.** Trivial at every axis: $\varrho(\tilde u)=\mathrm{id}$ for every invertible element, the generator is the zero operator, and the commutator $[\tfrac12\vec u,te_t]$ vanishes identically.
+**The action.** Trivial at every axis: $\rho_{\mathrm{rep}}(\tilde u)=\mathrm{id}$ for every invertible element, the generator is the zero operator, and the commutator $[\tfrac12\vec u,te_t]$ vanishes identically.
 
 **The two numbers.** The spectrum is $\{0\}$, of multiplicity one on the line and two on the closure; the spin is $0$; $2s+1=1$ is the dimension of the carrier; a full turn has operator $+1=(-1)^{2s}$.
 
@@ -119,7 +119,7 @@ because the identity is central and $uu^{*}=e_t$. Verified on two hundred random
 **The generator.** Write a rotor as $\tilde u=\exp\bigl(\theta A(\vec u)\bigr)$ with $A(\vec u)=\tfrac12\vec u$. On a central element the commutator vanishes:
 
 $$
-\varrho\bigl(A(\vec u)\bigr)(te_t)=\tfrac12\bigl[\vec u,te_t\bigr]=0 ,
+\rho_{\mathrm{rep}}\bigl(A(\vec u)\bigr)(te_t)=\tfrac12\bigl[\vec u,te_t\bigr]=0 ,
 $$
 
 verified to $0$ on one hundred random axes. The operator of the generator is the zero operator, at every axis, with no computation beyond the centrality of $e_t$.

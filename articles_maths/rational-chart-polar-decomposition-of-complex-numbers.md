@@ -224,7 +224,7 @@ The chart has three properties, and they are the terms of an exchange.
 - **It is local.** It misses one point of the circle, and therefore one ray of the plane. A second chart, or the point at infinity, is needed to recover the circle.
 - **It is unbounded.** Near the missing point the coordinate escapes to infinity, and the two sides of the cut carry opposite signs of $s$.
 
-The modulus–unit form is global and uses a square root. The exponential form, treated in *Exponential Polar Decomposition of Complex Numbers*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.
+The modulus–unit form is global and uses a square root. The exponential form, treated in *Polar Decomposition of Complex Numbers*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.
 
 ## The Matrix Picture
 

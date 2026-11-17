@@ -737,7 +737,7 @@ The table compares the elementary functions across the three algebras; in the bi
 ## Further Reading
 
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the central idempotents and the polynomial calculus used throughout.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the polar reading of the logarithm.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the polar reading of the logarithm.
 - Walter Rudin, *Real and Complex Analysis*, 3rd edition (McGraw-Hill, 1987), for the exponential, the trigonometric functions and the logarithm of one complex variable.
 - Lars V. Ahlfors, *Complex Analysis*, 3rd edition (McGraw-Hill, 1979), for the branch structure of the logarithm and the power functions.
 - G. Baley Price, *An Introduction to Multicomplex Spaces and Functions* (Marcel Dekker, 1991), for the exponential and the elementary functions of the multicomplex algebra.

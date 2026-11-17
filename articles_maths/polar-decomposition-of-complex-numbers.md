@@ -1,8 +1,8 @@
-# __Exponential Polar Decomposition of Complex Numbers__
+# __Polar Decomposition of Complex Numbers__
 
 ## Introduction
 
-This article treats the **exponential polar decomposition** of a nonzero complex number: the writing
+This article treats the **polar decomposition** of a nonzero complex number: the writing
 
 $$
 Q = \exp(Q_{\log}), \qquad Q_{\log} = \ln r + i\theta,
@@ -39,9 +39,9 @@ $$
 Q=r(\cos\theta+i\sin\theta)=r\exp(i\theta)=\exp(Q_{\log}), \qquad Q_{\log}=\ln r+i\theta.
 $$
 
-The three expressions are the same number. The middle one is the modulus–unit form; the last one is the exponential polar decomposition.
+The three expressions are the same number. The middle one is the modulus–unit form; the last one is the polar decomposition.
 
-**Definition.** An **exponential polar decomposition** of $Q\neq0$ is a writing
+**Definition.** A **polar decomposition** of $Q\neq0$ is a writing
 
 $$
 Q=\exp(Q_{\log}), \qquad Q_{\log}=\ln r+i\theta, \quad r>0,\quad \theta\in\mathbb{R},
@@ -83,7 +83,7 @@ The word **polar** names the two factors, not two independent exponentials. The 
 
 ### Existence and Uniqueness
 
-**Theorem.** Every $Q\neq0$ has exactly one exponential polar decomposition with the principal angle,
+**Theorem.** Every $Q\neq0$ has exactly one polar decomposition with the principal angle,
 
 $$ \boxed{\;Q=\exp(\ln r)\exp(i\theta), \qquad r>0,\quad \theta\in(-\pi,\pi]\;},
 $$
@@ -286,7 +286,7 @@ $$
 \exp(xI+yJ)=\exp(xI)\exp(yJ)=\exp(x)\bigl(\cos y\,I+\sin y\,J\bigr).
 $$
 
-The exponential polar decomposition of $M_Q$ is therefore
+The polar decomposition of $M_Q$ is therefore
 
 $$
 M_Q=\exp\bigl(\ln r\,I+\theta J\bigr)
@@ -414,7 +414,7 @@ The real part $q_{\log}=\ln r$ is harmonic on $\mathbb{C}^\times$, and the imagi
 
 ## Summary
 
-Every nonzero complex number has exactly one exponential polar decomposition with the principal angle,
+Every nonzero complex number has exactly one polar decomposition with the principal angle,
 
 $$
 Q=\exp(\ln r)\exp(i\theta), \qquad

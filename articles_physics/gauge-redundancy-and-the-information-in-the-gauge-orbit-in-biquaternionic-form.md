@@ -187,7 +187,7 @@ $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi,2}}\,\|\,\tilde{Ϛ}_{\Psi,\tilde{Q}_{1,2}}) = S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\,\|\,\tilde{Ϛ}_{\Psi,\tilde{Q}_1})\;}.
 $$
 
-This is the invariance, under $*$-unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde Q\rho \tilde Q^\dagger\|\tilde Q\sigma \tilde Q^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
+This is the invariance, under $*$-unitary conjugation of both arguments, of the Umegaki relative entropy, $S(\tilde Q\rho \tilde Q^\dagger\|\tilde Q\sigma \tilde Q^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec s_{\Psi} = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
 
 Three consequences of the invariance spell out the redundancy.
 
@@ -329,7 +329,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |
 | $\tilde U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy; global obstruction |
 | $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
-| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$, $|\vec s_{\Psi}|\leq1$ | State of the informational sector (Bloch ball) |
 | $S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

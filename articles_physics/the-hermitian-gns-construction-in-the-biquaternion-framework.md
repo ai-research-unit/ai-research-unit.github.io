@@ -72,18 +72,18 @@ The positivity of $\tilde{Ϛ}_{\Psi}$ as an element of the $C^*$-algebra means p
 
 The state space of $\mathbb{B}$ is parametrized by the Bloch ball. Writing
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac12\big(e_t + i\vec r\big),
-\qquad \vec r\in\mathbb{R}^3,
+\tilde{Ϛ}_{\Psi} = \tfrac12\big(e_t + i\vec s_{\Psi}\big),
+\qquad \vec s_{\Psi}\in\mathbb{R}^3,
 $$
-the positivity conditions are $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ and the eigenvalues $\tfrac12(1\pm|\vec r|)\ge 0$, so
+the positivity conditions are $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ and the eigenvalues $\tfrac12(1\pm|\vec s_{\Psi}|)\ge 0$, so
 $$
-\tilde{Ϛ}_{\Psi} \text{ a state} \iff |\vec r|\le 1 .
+\tilde{Ϛ}_{\Psi} \text{ a state} \iff |\vec s_{\Psi}|\le 1 .
 $$
 Three cases are the ones that matter below.
 
-1. **Pure states: $|\vec r|=1$.** Then $\tilde{Ϛ}_{\Psi} = \tilde\Pi(\vec u_r)$ is a minimal idempotent, with $\vec u_r=\vec r/|\vec r|$, and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$. These are the vacua of the previous article, and there are as many as there are unit vectors: the Bloch sphere.
-2. **The trace state: $\vec r=0$.** Then $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde Q_3) = \mathrm{Sc}(\tilde Q_3)$ is the scalar part. It is the unique tracial state of $\mathbb{B}$.
-3. **Mixed states: $0<|\vec r|<1$.** Then $\tilde{Ϛ}_{\Psi}^2\ne\tilde{Ϛ}_{\Psi}$, the state is a nontrivial convex combination of two pure states, and its spectral projectors are distinct.
+1. **Pure states: $|\vec s_{\Psi}|=1$.** Then $\tilde{Ϛ}_{\Psi} = \tilde\Pi(\vec u_s)$ is a minimal idempotent, with $\vec u_s=\vec s_{\Psi}/|\vec s_{\Psi}|$, and $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$. These are the vacua of the previous article, and there are as many as there are unit vectors: the Bloch sphere.
+2. **The trace state: $\vec s_{\Psi}=0$.** Then $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$, the maximally mixed state, and $\omega_{\mathrm{tr}}(\tilde Q_3) = \mathrm{Sc}(\tilde Q_3)$ is the scalar part. It is the unique tracial state of $\mathbb{B}$.
+3. **Mixed states: $0<|\vec s_{\Psi}|<1$.** Then $\tilde{Ϛ}_{\Psi}^2\ne\tilde{Ϛ}_{\Psi}$, the state is a nontrivial convex combination of two pure states, and its spectral projectors are distinct.
 
 ## The GNS Data of a State of $\mathbb{B}$
 
@@ -129,7 +129,7 @@ $$
 $$
 the **regular representation**, of complex dimension four. The Gram matrix of the four basis elements has rank four.
 
-**The general state.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $0<|\vec r|<1$ the state has full rank, $\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}_{\Psi}}$ and using the eigenvectors of $\tilde{Ϛ}_{\Psi}$,
+**The general state.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $0<|\vec s_{\Psi}|<1$ the state has full rank, $\mathrm{rank}\,\tilde{Ϛ}_{\Psi}=2$, so the radical is trivial and the GNS space has dimension four, exactly as for the trace state. There is no intermediate value: writing $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}\cong\mathbb{B}/\mathcal{N}_{\tilde{Ϛ}_{\Psi}}$ and using the eigenvectors of $\tilde{Ϛ}_{\Psi}$,
 $$
 2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3\big) = \sum_i \lambda_i\,\big\|\tilde Q_3 e_i\big\|^2 ,
 $$
@@ -155,7 +155,7 @@ $$
 $$
 so the reconstructed vacuum vector is annihilated by the ladder operator, as it must be. The element $\vec\Upsilon_x$ is *not zero in $\mathbb{B}$*; it is a nonzero element whose class is the zero vector of $\mathcal{H}_{\tilde{Ϛ}_{\Psi}}$. The distinction is exactly the quotient by the radical, and it is why the GNS construction, not the algebra alone, is the right language for "the vacuum is annihilated".
 
-The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ with $\vec r=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ is the Bloch vector of the state, $\vec r=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
+The check that $\omega(\tilde Q_3)=\langle\Omega|\pi(\tilde Q_3)|\Omega\rangle$ is the cyclic-vector property, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\, e_t^{*} \tilde Q_3 e_t)$; it holds identically because $e_t$ is the unit and the inner product places $\tilde{Ϛ}_{\Psi}$ at the left. Numerically, the two sides agree to machine precision on each of the nine elements $e_t,\vec e_x,\vec e_y,\vec e_z,ie_t,i\vec e_x,i\vec e_y,i\vec e_z$ and $\vec\Upsilon_x$ of the chosen spanning set. The values themselves separate cleanly by Hermiticity: on the observables the state returns real numbers, $\omega_{\tilde\Pi_+}(e_t)=1$ and $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ with $\vec s_{\Psi}=(0,0,1)$, so the vacuum is unpolarized in the $\vec e_x$ and $\vec e_y$ directions and fully polarized along $\vec e_z$; on the anti-Hermitian directions it returns the purely imaginary numbers $\omega_{\tilde\Pi_+}(\vec e_z)=-i$ and $\omega_{\tilde\Pi_+}(ie_t)=i$, together with $\omega_{\tilde\Pi_+}(\vec e_x)=\omega_{\tilde\Pi_+}(\vec e_y)=\omega_{\tilde\Pi_+}(\vec\Upsilon_x)=0$. The polarization $\omega_{\tilde\Pi_+}(i\vec e_\eta)=r_\eta$ is the Bloch vector of the state, $\vec s_{\Psi}=\vec u$, and it is the same information the deterministic statement $\tilde{Ϛ}_{\Psi}\tilde{Ϛ}_{\Psi}=\tilde{Ϛ}_{\Psi}$ carries.
 
 ## The Modular Structure in Hermitian Form
 
@@ -300,7 +300,7 @@ is linear, positive, and normalised on the convolution algebra of $G$, and the G
 
 ## Summary
 
-For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian GNS construction is fully explicit. A state is a density matrix $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $|\vec r|\le1$; its GNS Hilbert space is
+For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the Hermitian GNS construction is fully explicit. A state is a density matrix $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $|\vec s_{\Psi}|\le1$; its GNS Hilbert space is
 $$
 \mathcal{H}_{\tilde{Ϛ}_{\Psi}} = \mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
@@ -329,7 +329,7 @@ The Hermitian GNS construction supplies the bridge from the vacuum state of *The
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material and informational sectors |
 | $\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3)$ | State: Hermitian pairing with a density matrix |
 | $\xi_{\mathrm{scl}}$, $\mu$ | Continuous normalised positive-definite function on an abelian group, and the probability measure of Bochner's theorem with $\xi_{\mathrm{scl}}=\int\xi\,d\mu$; the state $\omega_{\mathrm{scl},\xi}(f)=\int f\xi_{\mathrm{scl}}$ on the convolution algebra has GNS space $L^2(G^{\vee},\mu)$ |
-| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ | Density matrix of a state; $|\vec r|\le1$ |
+| $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | Density matrix of a state; $|\vec s_{\Psi}|\le1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state (minimal idempotent, Bloch sphere) |
 | $\tau(\tilde Q_3)=\mathrm{Sc}(\tilde Q_3)$ | Trace state; unique tracial state; Bloch centre |
 | $\langle\tilde Q_3,\tilde Q_1\rangle_\omega=\omega(\tilde Q_3^{*}\tilde Q_1)$ | GNS inner product |

@@ -1,4 +1,4 @@
-# __The Exponential Polar Decomposition of $M_6(\mathbb{C})$__
+# __The Polar Decomposition of $M_6(\mathbb{C})$ in Exponential Coordinates__
 
 ## Introduction
 
@@ -10,7 +10,7 @@ A=e^H e^{\mathrm iK},
 H,K\in\operatorname{Herm}_6,
 $$
 
-the **exponential polar decomposition**. It is the left polar decomposition
+the **polar decomposition**. It is the left polar decomposition
 
 $$
 A=P'U',
@@ -23,9 +23,9 @@ written in exponential form: $P'=e^H$ with $H=\log P'$, and $U'=e^{\mathrm iK}$ 
 
 The decomposition is different from the right polar decomposition $A=UP=e^{\mathrm iK'}e^{H'}$: the two share the $*$-unitary factor, and their positive factors are conjugate by it. They coincide exactly when $A$ is normal, equivalently when $[H,K]=0$.
 
-The exponential polar decomposition exists exactly on $GL_6$: both factors are invertible, so a singular matrix has no such factorisation. The polar decomposition with a partial isometry survives on the singular set, and the Hermitian factor diverges logarithmically at the boundary.
+The polar decomposition exists exactly on $GL_6$: both factors are invertible, so a singular matrix has no such factorisation. The polar decomposition with a partial isometry survives on the singular set, and the Hermitian factor diverges logarithmically at the boundary.
 
-The article assumes the polar decomposition of *The Polar Decomposition of $M_6(\mathbb{C})$*, the exponential of *The Exponential and the Lie Group of $M_6(\mathbb{C})$*, and the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*. The comparison with the rank-two case is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*.
+The article assumes the polar decomposition of *The Polar Decomposition of $M_6(\mathbb{C})$*, the exponential of *The Exponential and the Lie Group of $M_6(\mathbb{C})$*, and the chiral split of *The Two Chiralities of $M_6(\mathbb{C})$*. The comparison with the rank-two case is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$*.
 
 ## The Left Polar Decomposition
 
@@ -87,7 +87,7 @@ unique modulo $2\pi$ on each eigenspace.
 
 **Proof.** The spectral theorem for $P'>0$ gives $P'=V\operatorname{diag}(p_i)V^*$ with $p_i>0$; then $H=V\operatorname{diag}(\log p_i)V^*$. For $U'$, diagonalize unitarily with eigenvalues $e^{\mathrm i\theta_j}$; then $K=V\operatorname{diag}(\theta_j)V^*$, and the angles are determined modulo $2\pi$.
 
-**Corollary (the exponential polar decomposition).** Every invertible $A$ has
+**Corollary (the polar decomposition).** Every invertible $A$ has
 
 $$
 A=e^He^{\mathrm iK},
@@ -162,7 +162,7 @@ $$
 
 ### The Count
 
-**Theorem.** The exponential polar map
+**Theorem.** The exponential coordinate map
 
 $$
 \operatorname{Herm}_6\times\operatorname{Herm}_6\longrightarrow GL_6,
@@ -190,7 +190,7 @@ $$
 
 ### The Invertible Locus
 
-**Theorem.** The exponential polar decomposition exists exactly on $GL_6$.
+**Theorem.** The polar decomposition exists exactly on $GL_6$.
 
 **Proof.** $e^H$ is positive definite, hence invertible; $e^{\mathrm iK}$ is $*$-unitary, hence invertible; their product is invertible. Conversely, every invertible matrix has the decomposition.
 
@@ -214,11 +214,11 @@ $$
 
 **Proof.** This is *The Polar Decomposition of $M_6(\mathbb{C})$*; the exponential form requires $P>0$, which fails at the singular set, but the positive semidefinite form and the partial isometry survive.
 
-**Corollary (the two reaches).** The exponential polar decomposition reaches $GL_6$; the polar decomposition with a partial isometry reaches all of $M_6$.
+**Corollary (the two reaches).** The polar decomposition reaches $GL_6$; the polar decomposition with a partial isometry reaches all of $M_6$.
 
 **Proof.** The first is the invertibility of the factors; the second is the existence theorem for the semidefinite polar decomposition.
 
-**Remark (the boundary).** The exponential polar decomposition degenerates at the singular set: the Hermitian factor escapes to infinity, and the $*$-unitary factor loses its uniqueness. **The singular set is the boundary of the exponential polar chart.**
+**Remark (the boundary).** The polar decomposition degenerates at the singular set: the Hermitian factor escapes to infinity, and the $*$-unitary factor loses its uniqueness. **The singular set is the boundary of the exponential chart.**
 
 ## The Comparison with the Split Case
 
@@ -245,7 +245,7 @@ $$
 
 **Proof.** The SVD of a $3\times3$ matrix; the singular values are the square roots of the eigenvalues of $M^*M$.
 
-**Corollary (the two decompositions).** The full exponential polar decomposition is the Cartan decomposition of $GL_6$,
+**Corollary (the two decompositions).** The full polar decomposition is the Cartan decomposition of $GL_6$,
 
 $$
 A=e^He^{\mathrm iK},
@@ -281,7 +281,7 @@ $$
 
 **Proof.** $6^2=36$ complex, $72$ real; Hermitian $36$ real; $M_3$ has $9$ complex, $18$ real; $U(3)$ has $9$ real, the product $18$.
 
-**Corollary (the two gauge groups).** The full exponential polar has the unitary gauge $U(6)$ of dimension $36$; the chiral decomposition has the gauge $U(3)\times U(3)$ of dimension $18$, the stabilizer of the chiral split.
+**Corollary (the two gauge groups).** The full form in exponential coordinates has the unitary gauge $U(6)$ of dimension $36$; the chiral decomposition has the gauge $U(3)\times U(3)$ of dimension $18$, the stabilizer of the chiral split.
 
 **Proof.** The polar $*$-unitary factor ranges over $U(6)$; the chiral SVD uses the two unitaries of the two chiral planes.
 
@@ -291,15 +291,15 @@ $$
 
 **Proof.** The dimension is $2$ instead of $6$; the proof is identical.
 
-**Corollary (the family).** The exponential polar decomposition is the same theorem for every $n$; the $M_6$ case has the $3+3$ chiral split and the $3\times3$ mass block, the $M_4$ case the $2+2$ split and the $2\times2$ block, and the $M_2$ case the $1+1$ split of the biquaternion.
+**Corollary (the family).** The polar decomposition is the same theorem for every $n$; the $M_6$ case has the $3+3$ chiral split and the $3\times3$ mass block, the $M_4$ case the $2+2$ split and the $2\times2$ block, and the $M_2$ case the $1+1$ split of the biquaternion.
 
 **Proof.** The polar decomposition and the matrix logarithm are dimension-independent.
 
-**Remark (the split case).** The **split case** is the chiral split $3+3$: the two chiral halves are the eigenspaces of $\Gamma$, the mass block is the off-diagonal $3\times3$ block, and the chiral gauge is $U(3)\times U(3)$. The full exponential polar decomposition does not see the split; the chiral decomposition sees only the mass block. **The two decompositions are the global Cartan decomposition and the block SVD; they coexist and are not the same.**
+**Remark (the split case).** The **split case** is the chiral split $3+3$: the two chiral halves are the eigenspaces of $\Gamma$, the mass block is the off-diagonal $3\times3$ block, and the chiral gauge is $U(3)\times U(3)$. The full polar decomposition does not see the split; the chiral decomposition sees only the mass block. **The two decompositions are the global Cartan decomposition and the block SVD; they coexist and are not the same.**
 
 ## Summary
 
-Every invertible $A\in M_6(\mathbb{C})$ has the exponential polar decomposition
+Every invertible $A\in M_6(\mathbb{C})$ has the polar decomposition
 
 $$
 A=e^He^{\mathrm iK},
@@ -315,16 +315,16 @@ $$
 
 The decomposition exists exactly on $GL_6$; at the singular set the Hermitian factor diverges, the $*$-unitary factor loses its uniqueness, and the polar decomposition with a partial isometry survives.
 
-In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the SVD $M=U_L\Sigma U_R^*$ with $U_L,U_R\in U(3)$; this is the block decomposition, not the full exponential polar decomposition. The $n=2$ case is the biquaternion algebra $M_2(\mathbb{C})$.
+In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the SVD $M=U_L\Sigma U_R^*$ with $U_L,U_R\in U(3)$; this is the block decomposition, not the full polar decomposition. The $n=2$ case is the biquaternion algebra $M_2(\mathbb{C})$.
 
 | Object | Data |
 |---|---|
-| Exponential polar | $A=e^He^{\mathrm iK}$, $H,K$ Hermitian |
+| Exponential coordinates | $A=e^He^{\mathrm iK}$, $H,K$ Hermitian |
 | Left polar | $A=P'U'$, $P'=(AA^*)^{1/2}$ |
 | Right polar | $A=UP$, $P=(A^*A)^{1/2}$ |
 | Uniqueness | $H$ unique, $K$ mod $2\pi$ |
 | Reach | $GL_6$ |
-| Singular set | no exponential polar; Hermitian factor diverges |
+| Singular set | no exponential coordinates; Hermitian factor diverges |
 | Chiral split | $3+3$; mass block $3\times3$ |
 | Chiral gauge | $U(3)\times U(3)$ |
 
@@ -345,6 +345,6 @@ In the $3+3$ chiral split the mass block $M=A_{+-}\in M_3(\mathbb{C})$ has the S
 - [The Exponential and the Lie Group of $M_6(\mathbb{C})$](the-exponential-and-the-lie-group-of-m6c.html), for the matrix logarithm and the one-parameter subgroups.
 - [The Mass Block and the Chiral Polar Decomposition of $M_6(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m6c.html), for the chiral decomposition of the $3\times3$ block.
 - [The Two Chiralities of $M_6(\mathbb{C})$](the-two-chiralities-of-m6c.html), for the $3+3$ split and the chirality involution.
-- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the $2+2$ split and the $2\times2$ mass block.
+- [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the $2+2$ split and the $2\times2$ mass block.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the regular case.
-- [The Cartan Decomposition and the Cartan Involution](the-cartan-decomposition-and-the-cartan-involution.html), for the symmetric space and the exponential polar form.
+- [The Cartan Decomposition and the Cartan Involution](the-cartan-decomposition-and-the-cartan-involution.html), for the symmetric space and the exponential form.

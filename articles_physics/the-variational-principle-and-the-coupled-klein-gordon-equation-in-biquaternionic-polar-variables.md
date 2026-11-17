@@ -166,7 +166,7 @@ with the metric unchanged. The metric is unchanged because the metric is a prope
 
 **No constraint and no multiplier.** The free polar article's argument is that the eight parameters are coordinates on the invertibles, that the word is a bijection with a smooth inverse, and that the Euler–Lagrange equations in the parameters are the Jacobian image of the element equation — hence exact, hence no constraint, hence no multiplier. The coupling does not touch the argument: the word is the same word, the bijection is the same bijection, and the Jacobian is the same Jacobian, because the connection enters the *action* and not the *parameterisation*. So the coupled polar variational principle is exactly as closed as the free one, and the closedness is a property of the chart and not of the dynamics.
 
-**The Legendre transform.** The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and the $\partial_\eta\theta_{\mathrm{pha}}$ terms $\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\varrho^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
+**The Legendre transform.** The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and the $\partial_\eta\theta_{\mathrm{pha}}$ terms $\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
 
 ## What the Polar Principle Adds and What It Does Not
 
@@ -192,9 +192,9 @@ with the metric unchanged. The metric is unchanged because the metric is a prope
 
 **The explicit Jacobian with the connection.** The free polar article states the relation between the parameter equations and the four brackets and leaves the full Jacobian open. The coupling does not change the Jacobian, so the question is inherited rather than new; whether the connection's shift makes the correspondence triangular in a natural ordering — the phase's equation first, then the scale's, then the frame's — is not settled here.
 
-**The $\varrho^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's "potential" $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $r^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
+**The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's "potential" $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $r^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
 
-**The operator setting.** The article treats the connection as an external field and the action as classical. In the operator setting the amplitude and the phase are fields, the quantum potential is a functional of the density, and the $\varrho^{2}A^{2}$ term's renormalisation is the quantised theory's question. Whether the chart's exactness survives there in the sense of a well-defined functional integral is the path-integral article's subject and not this one's.
+**The operator setting.** The article treats the connection as an external field and the action as classical. In the operator setting the amplitude and the phase are fields, the quantum potential is a functional of the density, and the $\rho_{\mathrm{chg}}^{2}A^{2}$ term's renormalisation is the quantised theory's question. Whether the chart's exactness survives there in the sense of a well-defined functional integral is the path-integral article's subject and not this one's.
 
 ## Summary
 
@@ -230,7 +230,7 @@ and its two equations are the transport equation and the amplitude equation of t
 | $ϙ$ | The coupling |
 | $\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t$, $\nabla S_{\tilde\Xi}-q\vec A$ | The mechanical four-momentum |
 | $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi r/r$ | The quantum potential; unchanged |
-| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\nabla\times=\varrho\vec B$ |
+| $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\nabla S_{\tilde\Xi}-q\vec A)$ | The mechanical current; $\nabla\times=\rho_{\mathrm{chg}}\vec B$ |
 | $2\pi\hbar n+ϙ\Phi_B$ | The mechanical circulation |
 | $k_m=mc/\hbar$ | The mass wave number |
 

@@ -1,8 +1,8 @@
-# __Exponential Polar Decomposition of Reduced Biquaternions__
+# __Polar Decomposition of Reduced Biquaternions__
 
 ## Introduction
 
-This article treats the **exponential polar decomposition** of an invertible reduced biquaternion: the writing
+This article treats the **polar decomposition** of an invertible reduced biquaternion: the writing
 
 $$
 \breve Q=\exp(\breve Q_{\log})
@@ -49,10 +49,10 @@ which are a complex-linear change of coordinates on the element. The decompositi
 | Uniqueness | unique in the principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$ |
 | Kernel | $2\pi i\mathbb{Z}\oplus\pi i(1+j)\mathbb{Z}\cong\mathbb{Z}^2$ |
 | Group | ${\mathbb{B}_{\mathrm{red}}}^\times\cong\mathbb{R}^2\times T^2$ |
-| Companion | *Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion*, for the reading through the two complex components |
-| Worked examples | *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, for the eight cases and the reconstruction tables |
+| Companion | *Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion*, for the reading through the two complex components |
+| Worked examples | *Worked Examples of Polar Decomposition of Reduced Biquaternions*, for the eight cases and the reconstruction tables |
 
-The plan is as follows. The analytic facts and the two complex components are recalled (§*The Analytic Setting*); the definition, the exponent and its four real coordinates, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved in the principal domain (§*Existence and Uniqueness*); the logarithm, its principal branch and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*.
+The plan is as follows. The analytic facts and the two complex components are recalled (§*The Analytic Setting*); the definition, the exponent and its four real coordinates, the factors and the single exponential are given (§*The Decomposition*); existence and uniqueness are proved in the principal domain (§*Existence and Uniqueness*); the logarithm, its principal branch and its fibre are read (§*The Logarithm*); the group law is stated (§*The Group Law*); the matrix picture is given (§*The Matrix Picture*); the three polar forms are compared (§*The Three Polar Decompositions*); the coordinates and the volume element are described (§*The Exponential Coordinates*); the numerical cases are collected in *Worked Examples of Polar Decomposition of Reduced Biquaternions*.
 
 ## The Analytic Setting
 
@@ -127,7 +127,7 @@ and an element is invertible exactly when both components are nonzero. The table
 
 ### The Four Real Coordinates
 
-The exponential polar decomposition is the writing
+The polar decomposition is the writing
 
 $$
 C_+=\rho e^{i\theta_{\mathrm{pha}}}e^{\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}},
@@ -170,7 +170,7 @@ The real dimension is four, the real dimension of the group of invertibles. The 
 
 ### The Definition
 
-**Definition.** An **exponential polar decomposition** of $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$ is a writing
+**Definition.** A **polar decomposition** of $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times$ is a writing
 
 $$
 \breve Q=\breve r\,u,
@@ -827,7 +827,7 @@ The algebra carries two commuting complex structures: the left multiplication by
 | Principal domain | $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$ |
 | Group law | the exponent adds modulo $\Lambda$ |
 
-Every unit $\breve Q$ has exactly one exponential polar decomposition in the principal domain,
+Every unit $\breve Q$ has exactly one polar decomposition in the principal domain,
 
 $$
 \breve Q=\exp(\breve Q_{\log}),
@@ -886,7 +886,7 @@ The derivative is left multiplication by $\exp\breve Q_{\log}$; its determinant 
 
 ### Comparison with the Neighbouring Cases
 
-The table compares the three exponential polar decompositions; in the split-complex column, $\epsilon$ is the component sign.
+The table compares the three cases; in the split-complex column, $\epsilon$ is the component sign.
 
 | Feature | Split-complex | Reduced biquaternion | Biquaternion |
 |---|---|---|---|
@@ -930,15 +930,15 @@ The table compares the three exponential polar decompositions; in the split-comp
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the eight cases, the reconstruction tables and the boundary family.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the eight cases, the reconstruction tables and the boundary family.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential and the logarithm as functions, the kernel and the principal domain.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
 - [Rational-Chart Polar Decomposition of Reduced Biquaternions](rational-chart-polar-decomposition-of-reduced-biquaternions.html), for the rational coordinate on the torus.
 - [Reduced Biquaternion Lie Group and Exponential Structure](reduced-biquaternion-lie-group-and-exponential-structure.html), for the kernel, the covering and the group of invertibles.
 - [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the group of invertibles.
-- [Exponential Polar Decomposition of Complex Numbers](exponential-polar-decomposition-of-complex-numbers.html), for the one-coordinate exponential.
-- [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic exponential.
+- [Polar Decomposition of Complex Numbers](polar-decomposition-of-complex-numbers.html), for the one-coordinate exponential.
+- [Polar Decomposition of Split-Complex Numbers](polar-decomposition-of-split-complex-numbers.html), for the hyperbolic exponential.
 - *The Complete Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative counterpart.
-- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the relation with the eigenvalue decomposition.
+- [Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion](relations-between-polar-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the relation with the eigenvalue decomposition.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

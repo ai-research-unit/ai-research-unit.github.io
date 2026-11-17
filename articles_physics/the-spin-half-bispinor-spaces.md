@@ -12,10 +12,10 @@
 
 **The fourth claim is that the second closure is the algebra split by the pair of idempotents.** The two ideals $S_+$ and $S_-$ meet only at zero, each is null, and $\mathbb{B}=S_+\oplus S_-$. A field valued in both is a four-component spinor. The norm on that space is not a norm on either summand: it is the pairing $N(X_++X_-)=2B(X_+,X_-)$, so the invariant length of a bispinor is the pairing of its two chiral halves and of nothing else.
 
-**The fifth claim is that the norm measures mixedness, and that the nullity of the carrier is purity.** For a state $S_{\vec r}=\tfrac12(e_t+i\vec r)$ the norm, the failure of idempotence and the departure from the Bloch sphere are one quantity:
+**The fifth claim is that the norm measures mixedness, and that the nullity of the carrier is purity.** For a state $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$ the norm, the failure of idempotence and the departure from the Bloch sphere are one quantity:
 
 $$
-N(S_{\vec r})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),\qquad S_{\vec r}^{2}=S_{\vec r}-N(S_{\vec r})\,e_t .
+N(S_{\vec s})=\tfrac14\bigl(1-\lvert\vec s_{\Psi}\rvert^{2}\bigr),\qquad S_{\vec s}^{2}=S_{\vec s}-N(S_{\vec s})\,e_t .
 $$
 
 Verified exactly. A state is a projector precisely when its norm vanishes, so the plane consists of pure states and the vanishing norm is not a defect of the carrier but its definition. The spin-zero carrier was null-free because a complex number is not a state; the spin-half carrier is null because a pure state is a projector.
@@ -55,7 +55,7 @@ Verified exactly. A state is a projector precisely when its norm vanishes, so th
 
 **The second closure.** The bispinor space $\mathbb{B}=S_+(\vec u)\oplus S_-(\vec u)$, of real dimension $8$, which as a set is the algebra and as a decomposition is the algebra together with the pair of idempotents.
 
-**The action.** Left multiplication at every element: $\varrho(X)=L_X$, with $L_X(Y)=XY$. It preserves each ideal and does not preserve the plane.
+**The action.** Left multiplication at every element: $\rho_{\mathrm{rep}}(X)=L_X$, with $L_X(Y)=XY$. It preserves each ideal and does not preserve the plane.
 
 **The half angle.** $\vec u\tilde\Pi_+=-i\tilde\Pi_+$ and $\tilde u\tilde\Pi_+=e^{-i\theta/2}\tilde\Pi_+$, so the rotor multiplies the plane by a phase and the phase is half the rotation angle.
 
@@ -75,7 +75,7 @@ Verified exactly. A state is a projector precisely when its norm vanishes, so th
 
 **The two spinor chiralities.** Under the coefficient conjugation the two ideals are exchanged, $\bar\Pi_+=\Pi_-$, and the bar is an automorphism; under right multiplication by $-i\vec e_z$ they are the two eigenspaces, $-1$ and $+1$.
 
-**The mixedness.** $N\bigl(\tfrac12(e_t+i\vec r)\bigr)=\tfrac14(1-\lvert\vec r\rvert^{2})$ and $S^{2}=S-N(S)e_t$: the norm is the failure of a state to be pure, and it vanishes exactly on the idempotents.
+**The mixedness.** $N\bigl(\tfrac12(e_t+i\vec s_{\Psi})\bigr)=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ and $S^{2}=S-N(S)e_t$: the norm is the failure of a state to be pure, and it vanishes exactly on the idempotents.
 
 **The family.** One plane, two ideals and one pair per axis; the axes form the unit sphere and the pairs the real projective plane, so the family is infinite and no member is canonical.
 
@@ -116,7 +116,7 @@ The two real dimensions are the idempotent and the idempotent multiplied by the 
 **The action.** Left multiplication by the whole algebra,
 
 $$
-\varrho(X)=L_X,\qquad L_X(Y)=XY .
+\rho_{\mathrm{rep}}(X)=L_X,\qquad L_X(Y)=XY .
 $$
 
 The action is one-sided. This is the difference that matters and it is worth naming precisely: on the centre and on the vector part the algebra acted by conjugation, two factors, one on each side; here it acts by one factor on one side. A one-sided action is what a module is, and the spin-half carrier is the first carrier in the sequence that is a module rather than a subspace the adjoint action preserves.
@@ -245,17 +245,17 @@ The directness is one line. If $X$ lies in both, then $X=X\tilde\Pi_+$ and $X=X\
 
 **The norm on the plane is zero.** By multiplicativity, $N(\lambda\tilde\Pi_+)=\lambda^{2}N(\tilde\Pi_+)=0$ for every complex $\lambda$; the residual over one hundred random values is $7.0\times10^{-16}$ and is round-off. The statement excludes nothing: every element of the plane, including every nonzero one, is norm-degenerate. The plane meets the null cone in its entirety.
 
-**The norm is mixedness.** Let the axis be replaced by an arbitrary real vector $\vec r$ and put $S_{\vec r}=\tfrac12(e_t+i\vec r)$. This is the general element of the real three-dimensional ball of Hermitian elements of unit trace, which is the state slice of the informational sector. Its norm and its failure to be idempotent are the same quantity:
+**The norm is mixedness.** Let the axis be replaced by an arbitrary real vector $\vec s_{\Psi}$ and put $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$. This is the general element of the real three-dimensional ball of Hermitian elements of unit trace, which is the state slice of the informational sector. Its norm and its failure to be idempotent are the same quantity:
 
 $$
-N(S_{\vec r})=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
+N(S_{\vec s})=\tfrac14\bigl(1-\lvert\vec s_{\Psi}\rvert^{2}\bigr),
 \qquad
-S_{\vec r}^{2}=S_{\vec r}-N(S_{\vec r})\,e_t .
+S_{\vec s}^{2}=S_{\vec s}-N(S_{\vec s})\,e_t .
 $$
 
-The first display is exact for every real $\vec r$ — residual $0$ over one hundred random draws, of length up to $1.2$ and hence beyond the sphere as well. The second follows from the quadratic relation $S^{2}-2Q_tS+N e_t=0$ with $Q_t=\tfrac12$. So the norm vanishes exactly on the sphere $\lvert\vec r\rvert=1$, which is exactly the set of idempotents, and it grows as the state moves inward. On the sphere it is zero; at the centre of the ball, where $S=\tfrac12e_t$, it is $\tfrac14$; and the identity $S^{2}=S-N$ says that a state is a projector exactly when its norm vanishes.
+The first display is exact for every real $\vec s_{\Psi}$ — residual $0$ over one hundred random draws, of length up to $1.2$ and hence beyond the sphere as well. The second follows from the quadratic relation $S^{2}-2Q_tS+N e_t=0$ with $Q_t=\tfrac12$. So the norm vanishes exactly on the sphere $\lvert\vec s_{\Psi}\rvert=1$, which is exactly the set of idempotents, and it grows as the state moves inward. On the sphere it is zero; at the centre of the ball, where $S=\tfrac12e_t$, it is $\tfrac14$; and the identity $S^{2}=S-N$ says that a state is a projector exactly when its norm vanishes.
 
-**The scope of the identity.** This is a statement about the Hermitian slice and not about the algebra. A general element is not of the form $S_{\vec r}$, its $Q_t$ is complex, and the norm is not a real measure of anything. The identity holds where the state slice is, and the entry restricts it there deliberately: the identification of the norm with a departure from purity uses the Hermiticity of the state, and it would be a mistake to carry it to a general element.
+**The scope of the identity.** This is a statement about the Hermitian slice and not about the algebra. A general element is not of the form $S_{\vec s}$, its $Q_t$ is complex, and the norm is not a real measure of anything. The identity holds where the state slice is, and the entry restricts it there deliberately: the identification of the norm with a departure from purity uses the Hermiticity of the state, and it would be a mistake to carry it to a general element.
 
 **The spectrum on the plane.** The square of the vector part is
 
@@ -314,8 +314,8 @@ residual $0$. The identity is not an accident of the generator: on a null ideal 
 | statement | residual |
 | --- | --- |
 | $N(\lambda\tilde\Pi_+)=0$ | $7.0\times10^{-16}$ |
-| $N(S_{\vec r})=\tfrac14(1-\lvert\vec r\rvert^{2})$ | $0$ |
-| $S_{\vec r}^{2}=S_{\vec r}-N(S_{\vec r})e_t$ | $0$ |
+| $N(S_{\vec s})=\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$ | $0$ |
+| $S_{\vec s}^{2}=S_{\vec s}-N(S_{\vec s})e_t$ | $0$ |
 | $B^{2}(\lambda\tilde\Pi_+)=-\lambda^{2}/4$ | $0$ |
 | $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$ | exact |
 | $X^{2}=\lambda X$ on the plane | $0$ |
@@ -410,7 +410,7 @@ The norm says that a mass pairs the two closures; this says that the pairing doe
 
 ## The Plane Read as a State
 
-**The idempotent is a projector and a state.** In the algebra an idempotent is a projection; in the informational sector the element $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$ is a state, Hermitian, of unit trace. The two descriptions meet at the sphere: a state is a projector exactly when $\lvert\vec r\rvert=1$, and that is exactly where its norm vanishes. So the plane is a state, and the rest of the ball is not.
+**The idempotent is a projector and a state.** In the algebra an idempotent is a projection; in the informational sector the element $\tfrac12(e_t+i\vec s_{\Psi})$ with $\lvert\vec s_{\Psi}\rvert\le1$ is a state, Hermitian, of unit trace. The two descriptions meet at the sphere: a state is a projector exactly when $\lvert\vec s_{\Psi}\rvert=1$, and that is exactly where its norm vanishes. So the plane is a state, and the rest of the ball is not.
 
 **The family of carriers is the sphere.** One axis gives one idempotent and one plane. All axes give all pure states: the set of axes is the unit sphere, the set of idempotents is the unit sphere, and the set of planes is the sphere as well, since a plane determines its axis. The two-to-one correspondence axis-to-pair is the antipodal identification: $\vec u$ and $-\vec u$ give the same pair of idempotents in the opposite order. So the family of carriers of spin one half is the Bloch sphere, and the projective plane of the pairs is the sphere with antipodes identified, which is the sphere of unoriented axes.
 
@@ -424,14 +424,14 @@ $$
 
 Read physically, the first is completeness: the two outcomes are exhaustive and their weights sum to one. The second is exclusivity: the two outcomes never both occur. A complete exclusive pair of outcomes is exactly what a two-outcome measurement is, so the Peirce basis of an axis *is* a Stern–Gerlach analyser along that axis, and the algebra supplies the analyser and the algebra supplies the arithmetic of the outcomes in the same two elements.
 
-**The Born weight.** Let the analyser be $\tilde\Pi_\pm(\vec u)$ and the state $\tfrac12(e_t+i\vec r)$. The normalised pairing of the state with each outcome is
+**The Born weight.** Let the analyser be $\tilde\Pi_\pm(\vec u)$ and the state $\tfrac12(e_t+i\vec s_{\Psi})$. The normalised pairing of the state with each outcome is
 
 $$
-p_\pm=\frac{\langle\tilde\Pi_\pm(\vec u),\tfrac12(e_t+i\vec r)\rangle_{*}}{\langle\tfrac12(e_t+i\vec r),e_t\rangle_{*}}
-=\tfrac12\bigl(1\pm\vec u\cdot\vec r\bigr),
+p_\pm=\frac{\langle\tilde\Pi_\pm(\vec u),\tfrac12(e_t+i\vec s_{\Psi})\rangle_{*}}{\langle\tfrac12(e_t+i\vec s_{\Psi}),e_t\rangle_{*}}
+=\tfrac12\bigl(1\pm\vec u\cdot\vec s_{\Psi}\bigr),
 $$
 
-which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ of a state polarised along $\vec r$, and the two weights sum to one by the completeness of the pair. The formula is the archive's and is quoted, not derived here; what the entry adds is its place: the probability is the pairing of the state with an *element of the carrier's own basis*, and the carrier's axis is the analyser's axis.
+which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ of a state polarised along $\vec s_{\Psi}$, and the two weights sum to one by the completeness of the pair. The formula is the archive's and is quoted, not derived here; what the entry adds is its place: the probability is the pairing of the state with an *element of the carrier's own basis*, and the carrier's axis is the analyser's axis.
 
 **Amplitude and scale.** The plane is the projective line of one projector together with a complex scale, and the scale is the amplitude. A nonzero element of the plane is $\lambda\tilde\Pi_+$, with $\lambda$ a complex number; the state is the idempotent, and the square root of the state is the element. The complex scale is the phase of the field, and the phase is what the action multiplies by $e^{-i\theta/2}$. So the carrier holds the two things a spinor holds: a direction, which is the axis, and a phase, which is the scale.
 
@@ -447,7 +447,7 @@ which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ o
 
 1. **A spinor is the square root of a state.** The carrier is the projective line of a projector, so an element of the carrier is the amplitude of a pure state and the state is the projector it generates. The scale is the amplitude and the phase of the scale is the phase of the field. This is a reading of the algebra and not an added postulate: it is what $S^{2}=\lambda S$ and $\tilde X\tilde X^{*}$ say.
 
-2. **The nullity of the carrier is purity, not pathology.** The norm vanishes on the plane because a projector has rank one in the two-dimensional representation, and the determinant of a rank-one matrix is zero. For a general state the same norm is $\tfrac14(1-\lvert\vec r\rvert^{2})$, so it measures the departure from purity. A carrier that lives entirely in the null cone is the exact image of the statement that its elements are pure.
+2. **The nullity of the carrier is purity, not pathology.** The norm vanishes on the plane because a projector has rank one in the two-dimensional representation, and the determinant of a rank-one matrix is zero. For a general state the same norm is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, so it measures the departure from purity. A carrier that lives entirely in the null cone is the exact image of the statement that its elements are pure.
 
 3. **The half angle is the fermion sign.** The rotor acts as $e^{-i\theta/2}$ and a full turn as $-\mathrm{id}$. Nothing about this is a convention of sign: the factor of two is the map from the group of rotations to the phases on the carrier, and the minus sign at $2\pi$ is its kernel. Every statement about the double cover of the Lorentz group in the corpus is this one line read on a different carrier.
 
@@ -477,7 +477,7 @@ which is the standard formula for a spin-$\tfrac12$ measurement along $\vec u$ o
 
 **No proof of minimality from first principles.** The minimality of the ideal is proved from the structure of the algebra as a full matrix algebra, which is an established result of the corpus and not re-derived here. The dimension count does the work and the matrix-algebra input is cited.
 
-**No general element theory.** Everything stated about states is stated on the Hermitian slice: $Q_t$ real, $\vec r$ real, unit trace. A general element has complex coefficients, its norm is complex, and the identity $S^{2}=S-N$ has no interpretation as a departure from purity. The entry restricts the reading and marks the restriction.
+**No general element theory.** Everything stated about states is stated on the Hermitian slice: $Q_t$ real, $\vec s_{\Psi}$ real, unit trace. A general element has complex coefficients, its norm is complex, and the identity $S^{2}=S-N$ has no interpretation as a departure from purity. The entry restricts the reading and marks the restriction.
 
 **No identification of the two values with the two ideals outside a frame.** The ideals are the eigenspaces of the chirality operator at the axis of the operator, which is exact and frame-independent as a statement about a family. Which member is called left requires a frame, and the entry declares the frame when it uses the name.
 
@@ -491,11 +491,11 @@ The carrier of spin one half is the plane $\Sigma(\vec u)=\mathbb{C}\tilde\Pi_+(
 
 The plane is invariant under the rotations about its own axis and under no others: a transverse axis sends the idempotent to $\tfrac12(\vec u_2-i\vec u_3)$, at distance $\sqrt2/2$ from the plane. The repair is the first closure, the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_+$ of real dimension four, spanned by $\tilde\Pi_+$ and $\vec u_2\tilde\Pi_+$, closed under the whole algebra, with no smaller invariant left subspace, and totally isotropic and maximal. The completion is the second closure, $\mathbb{B}=S_+\oplus S_-$, which as a set is the algebra and as a decomposition is the algebra with a Peirce pair.
 
-The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec r\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\lambda^{2}/4$ on the plane, $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
+The norm vanishes on the plane and on each ideal; on the state slice it is $\tfrac14(1-\lvert\vec s_{\Psi}\rvert^{2})$, which is the departure from purity, so the nullity of the carrier is the purity of its elements and $S^{2}=S-N e_t$ states it in one line. The spectrum separates instead: $B^{2}=-\lambda^{2}/4$ on the plane, $\operatorname{spec}(\lambda\tilde\Pi_+)=\{0,\lambda\}$, and every element of the plane is a rescaled projector. So the plane away from the origin is $\Sigma_{01}$ and it is the only carrier in that sector.
 
 Inside one ideal every element is null, $\operatorname{spec}(Y)=\{0,2Q_t(Y)\}$, and the degenerate elements are the square-zero ones: they form the real plane $\mathbb{C}(\vec u_2-i\vec u_3)$, the exceptional locus of the closure and the spinor of a null direction.
 
-The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_{\vec u}$, and the coefficient conjugation exchanges them and is an automorphism. On the bispinor space the norm becomes the pairing, $N(X_++X_-)=2B(X_+,X_-)$, nondegenerate: the invariant length of a spinor of one chirality is zero, and the mass is the pairing of the two. The carrier is one pure state and its amplitude; the family over all axes is the Bloch sphere; the Peirce pair is a complete exclusive two-outcome analyser; and the weight $\tfrac12(1\pm\vec u\cdot\vec r)$ is the pairing of the state with the analyser's own basis.
+The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_{\vec u}$, and the coefficient conjugation exchanges them and is an automorphism. On the bispinor space the norm becomes the pairing, $N(X_++X_-)=2B(X_+,X_-)$, nondegenerate: the invariant length of a spinor of one chirality is zero, and the mass is the pairing of the two. The carrier is one pure state and its amplitude; the family over all axes is the Bloch sphere; the Peirce pair is a complete exclusive two-outcome analyser; and the weight $\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$ is the pairing of the state with the analyser's own basis.
 
 ## Summary of Notation
 
@@ -511,13 +511,13 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 | $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$ | the first closure, $\dim_\mathbb{R}=4$ |
 | $S_+\oplus S_-=\mathbb{B}$ | the second closure, the bispinor space, $\dim_\mathbb{R}=8$ |
 | $L_X$, $R_X$ | left and right multiplication by $X$ |
-| $\varrho$ | the representation $X\mapsto L_X$ on the carrier |
+| $\rho_{\mathrm{rep}}$ | the representation $X\mapsto L_X$ on the carrier |
 | $N$, $B$ | the norm $Q_t^{2}+\lvert\vec Q\rvert^{2}$ and its polar form |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the square of the vector part, the spectral discriminant |
 | $\Sigma_{ij}$ | the sector of norm-regularity $i$ and spectral regularity $j$ |
 | $\gamma(\vec u)=-iR_{\vec u}$ | the chirality operator of the axis |
 | $\bar{\cdot}$, ${}^{*}$ | coefficient conjugation (automorphism) and Hermitian conjugation (antiautomorphism) |
-| $S_{\vec r}=\tfrac12(e_t+i\vec r)$ | a state of the informational sector, $\lvert\vec r\rvert\le1$ |
+| $S_{\vec s}=\tfrac12(e_t+i\vec s_{\Psi})$ | a state of the informational sector, $\lvert\vec s_{\Psi}\rvert\le1$ |
 | $k_m=mc/\hbar$ | the mass coefficient of the Dirac pair |
 | $\mathcal N$, $\mathcal S$ | the null cone and the spectral-degenerate cone |
 

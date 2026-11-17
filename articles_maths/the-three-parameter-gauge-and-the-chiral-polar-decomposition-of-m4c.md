@@ -6,7 +6,7 @@
 
 The article recalls the three-parameter gauge and its action on the mass block, proves the blockwise polar decomposition of a block-diagonal element and the antidiagonal case, states the general $U(4)$ polar factor, and compares the chiral polar decomposition with the single $\lambda$ of the biquaternion algebra.
 
-The frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential form is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*.
+The frame and the gauge are *The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$*; the mass block is *The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$*; the full polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential form is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*.
 
 ## The Three-Parameter Gauge
 
@@ -363,5 +363,5 @@ $$
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the torus and the cocycle.
 - [The Mass Block and the Chiral Polar Decomposition of $M_4(\mathbb{C})$](the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html), for the mass block and its polar decomposition.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the full $U(4)$ decomposition.
-- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the exponential form.
+- [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the exponential form.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge and its comparison with the biquaternion case.

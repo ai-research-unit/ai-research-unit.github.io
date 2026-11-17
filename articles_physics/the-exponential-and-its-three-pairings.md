@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This entry reads the exponential-polar-decomposition subsection of the mathematical category.** Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
+**This entry reads the polar-decomposition subsection of the mathematical category.** Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
 
 $$
 \boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad

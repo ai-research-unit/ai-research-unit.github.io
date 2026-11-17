@@ -10,7 +10,7 @@ where $a+b\nu$ lies in the plane $\mathbb{R}\oplus\mathbb{R}\nu$ that $\nu$ span
 
 The article proves the existence of the word for every element and every axis, identifies the pair $(a,b)$ with the normalised projection of the element onto the plane of the axis, and proves uniqueness under a single normalisation of the versor. The uniqueness fails exactly on the hyperplane $\nu^{\perp}$ orthogonal to the axis, and the real axis is the worst case of that failure: there the word is the same for every axis, so that no axis is recorded at all. The planes $\mathbb{R}\oplus\mathbb{R}\nu$ are the Cartan subalgebras of the algebra, and the pairing is the real case of the groupings of the biquaternion block, where the axis is a root of $-e_t$ and the word has four factors instead of two.
 
-The forms of the word that this one is compared with are the modulus-unit form of [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), the rational chart of [Rational-Chart Polar Decomposition of Quaternions](rational-chart-polar-decomposition-of-quaternions.html) and the exponential of [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html).
+The forms of the word that this one is compared with are the modulus-unit form of [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), the rational chart of [Rational-Chart Polar Decomposition of Quaternions](rational-chart-polar-decomposition-of-quaternions.html) and the exponential of [Polar Decomposition of Quaternions](polar-decomposition-of-quaternions.html).
 
 ## The Axis and Its Plane
 
@@ -150,7 +150,7 @@ The pairing is the real form of the Hamilton root pairing of the biquaternion bl
 
 ## Further Reading
 
-- [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), [Rational-Chart Polar Decomposition of Quaternions](rational-chart-polar-decomposition-of-quaternions.html) and [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html) for the three forms compared here.
+- [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), [Rational-Chart Polar Decomposition of Quaternions](rational-chart-polar-decomposition-of-quaternions.html) and [Polar Decomposition of Quaternions](polar-decomposition-of-quaternions.html) for the three forms compared here.
 - [Decompositions Along the Remarkable Subspaces of the Quaternions](decompositions-along-the-remarkable-subspaces-of-the-quaternions.html) for the axis decomposition of the algebra.
 - [Quaternion Automorphisms and Derivations](quaternion-automorphisms-and-derivations.html) for the centralisers and the Cartan subalgebras.
 - [The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-hamilton-root-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) for the complex counterpart of this pairing.

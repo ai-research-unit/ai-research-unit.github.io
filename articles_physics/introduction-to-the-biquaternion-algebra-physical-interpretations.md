@@ -103,7 +103,7 @@
 | --- | --- | --- |
 | III.1 | General Analysis, $10$ | The Derivative, the Field and the Transform |
 | III.2 | Harmonic Analysis, $8$ | The Harmonic Analysis: The Transform as a Change of Description; *Wave–Particle Duality and the Fourier Transform*, a companion |
-| III.3 | Exponential Polar Decomposition, $18$ | The Exponential and Its Three Pairings |
+| III.3 | Polar Decomposition, $18$ | The Exponential and Its Three Pairings |
 
 ### Part IV — The Geometry
 

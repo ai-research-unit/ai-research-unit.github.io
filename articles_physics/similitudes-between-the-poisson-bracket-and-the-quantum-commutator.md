@@ -296,7 +296,7 @@ The companion articles express quantum physics in the biquaternion algebra $\mat
 $$
 \tilde H_\Psi = h_t\,e_t + i\,\vec h_\Psi, \qquad h_t\in\mathbb{R}, \quad \vec h_\Psi=(h'_x,h'_y,h'_z)\in\mathbb{R}^3,
 $$
-of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. For two such elements $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$, their **commutator** is
+of the Hermitian subspace $\mathbb{B}_{\Psi}$, with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$. For two such elements $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2$, their **commutator** is
 $$
 \boxed{\;[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2\,(\vec r_{\Psi,1}\times\vec r_{\Psi,2})\;},
 $$

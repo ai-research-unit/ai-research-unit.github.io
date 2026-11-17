@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition of Quaternions__
+# __Worked Examples of Polar Decomposition of Quaternions__
 
 ## Introduction
 
-This article computes the exponential polar decomposition of eight quaternions, one after another. It is the computational companion of *Exponential Polar Decomposition of Quaternions*. The decomposition, its existence and uniqueness, the logarithm and the matrix picture are established there and in *Quaternion Special Functions*; the proofs are not repeated. The layout follows *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*: a method section, eight cases, a boundary family, and summary tables. The differences are forced by the algebra.
+This article computes the polar decomposition of eight quaternions, one after another. It is the computational companion of *Polar Decomposition of Quaternions*. The decomposition, its existence and uniqueness, the logarithm and the matrix picture are established there and in *Quaternion Special Functions*; the proofs are not repeated. The layout follows *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*: a method section, eight cases, a boundary family, and summary tables. The differences are forced by the algebra.
 
 Each case is read from the four real coordinates $q_t,q_x,q_y,q_z$. The modulus, the angle and the axis are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
@@ -30,7 +30,7 @@ $$
 =q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
 
-The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Exponential Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
+The modulus is $r=\sqrt{\langle\tilde q\rangle_{\natural}}>0$, the angle is $\theta=\arccos(q_t/r)\in[0,\pi]$, and the axis $\vec n$ is a unit pure quaternion. The angle $\theta$ is the **exponent angle**, the half-angle stored in the rotor; the rotation produced by the two-sided operator is $2\theta$. This is the convention of *Polar Decomposition of Quaternions*. The biquaternion article writes its rotor as $\exp(\frac{\theta_{\mathrm b}}{2}\vec u_{\mathrm r})$, where $\theta_{\mathrm b}$ is its rotation angle; here $\theta_{\mathrm b}=2\theta$, so its exponent angle is $\theta$. The entries of the two case tables can be set side by side, but the biquaternion table's $\theta$ is the rotation angle, while the $\theta$ here is the exponent angle, half of it.
 
 The quaternion case has no phase $\theta_{\mathrm{pha}}$, no rapidity $\theta_{\mathrm{rpd}}$ and no Hermitian factor: the modulus is a positive real and the unit factor is a single rotor. Errors are the largest modulus of a coefficient difference and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.
 
@@ -740,10 +740,10 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 
 ## Further Reading
 
-- [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the decomposition, the logarithm, the principal branch, the kernel and the matrix picture.
+- [Polar Decomposition of Quaternions](polar-decomposition-of-quaternions.html), for the decomposition, the logarithm, the principal branch, the kernel and the matrix picture.
 - [Quaternion Special Functions](quaternion-special-functions.html), for the exponential and the logarithm.
 - [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), for the modulus and the unit factor.
 - *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative four-dimensional companion with two axes.
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
-- [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional indefinite companion.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
+- [Worked Examples of Polar Decomposition of Split-Complex Numbers](worked-examples-of-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional indefinite companion.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

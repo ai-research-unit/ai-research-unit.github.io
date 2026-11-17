@@ -1085,6 +1085,6 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
-- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the commutative four-dimensional analogue.
+- [Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
+- [Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion](relations-between-polar-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the commutative four-dimensional analogue.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

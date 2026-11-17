@@ -17,10 +17,10 @@ $$
 and then each of the two is split:
 
 $$
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+\varrho\,e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
 $$
 
-The four factors are the **scale** $r>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
+The four factors are the **scale** $\varrho>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
 
 $$
 \boxed{\;\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
@@ -152,7 +152,7 @@ The two factors of the previous section are each the product of two.
 The modulus splits into the scale and the phase,
 
 $$
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad r>0,\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
+\varrho\,e^{i\theta_{\mathrm{pha}}},\qquad \varrho>0,\qquad \theta_{\mathrm{pha}}\in(-\pi/2,\pi/2] .
 $$
 
 The two are central and commute with every element. They carry the norm between them,
@@ -499,7 +499,7 @@ $$
 and with the seven data determined by $Q_t,Q_x,Q_y,Q_z$. Write $\vec Q=(Q_x,Q_y,Q_z)$.
 
 $$
-\boxed{\;r=\sqrt{|N|},\qquad \Rho=r e^{i\theta_{\mathrm{pha}}}\;}
+\boxed{\;\varrho=\sqrt{|N|}>0\;}
 $$
 
 $$

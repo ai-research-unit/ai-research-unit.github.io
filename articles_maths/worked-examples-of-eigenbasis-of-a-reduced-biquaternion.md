@@ -1,8 +1,8 @@
-# __Worked Examples of Eigenbasis a Reduced Biquaternion__
+# __Worked Examples of Eigenbasis of a Reduced Biquaternion__
 
 ## Introduction
 
-This article computes the eigenvalue decomposition and the eigenbasis of eight reduced biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition and the eigenbasis of eight reduced biquaternions, one after another. The eight elements are those of *Worked Examples of Polar Decomposition of Reduced Biquaternions*, so that the spectral data and the polar data can be read side by side. The decomposition, the eigenprojections and the eigenbasis are those of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*; no definition or proof is repeated.
 
 Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$ of $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$. The eigenvalues, the eigenprojections, the eigenbasis, the matrix of multiplication and its diagonal form are computed from them by the formulas of §*The Method*. The eigenbasis is checked by the two identities
 
@@ -838,8 +838,8 @@ and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spin
 
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the eigenvalue decomposition, the Peirce decomposition and the eigenbasis.
 - [$M_2(\mathbb{C})$ Reduced Representation](m2c-reduced-representation.html), for the matrix models, the spectral projectors and the change of basis.
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the same eight elements read through the polar word.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the same eight elements read through the polar word.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.
 - [Worked Examples of an Eigenbasis of a Biquaternion](worked-examples-of-an-eigenbasis-of-a-biquaternion.html), for the noncommutative companion with nilpotents.
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), for the ideals and the Peirce corners.

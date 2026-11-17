@@ -152,7 +152,7 @@ for a state of unit trace (the matrix normalisation; for the qubit this is $\lan
 
 ### Verification for the qubit
 
-Let $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ and let $r_\eta = \vec r\cdot\vec u_\eta$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_\eta)$. The contribution of basis $k$ to the sum is
+Let $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$ and let $r_\eta = \vec s_{\Psi}\cdot\vec u_\eta$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_\eta)$. The contribution of basis $k$ to the sum is
 
 $$
 p_+^{(k)}\tilde\Pi_1(\vec u_\eta) + p_-^{(k)}\tilde\Pi_2(\vec u_\eta)
@@ -163,8 +163,8 @@ as follows by expanding the two terms. Summing over the three bases gives
 
 $$
 \sum_{\eta=1}^{3}\tfrac12\bigl(e_t + i r_\eta\vec u_\eta\bigr)
-= \tfrac{3}{2}e_t + \tfrac12 i\vec r
-= e_t + \tfrac12\bigl(e_t + i\vec r\bigr)
+= \tfrac{3}{2}e_t + \tfrac12 i\vec s_{\Psi}
+= e_t + \tfrac12\bigl(e_t + i\vec s_{\Psi}\bigr)
 = e_t + \tilde{Ϛ}_{\Psi} ,
 $$
 

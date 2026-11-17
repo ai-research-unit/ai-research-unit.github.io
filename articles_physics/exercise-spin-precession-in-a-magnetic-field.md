@@ -175,10 +175,10 @@ The angle is $\theta_{\mathrm{evo}}=-\omega_L r'_t/c$. It is real because a real
 
 **3. The state evolves by rotor conjugation.** The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.
 
-**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec r(r'_t))$ with
+**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec s_{\Psi}(r'_t))$ with
 
 $$
-\boxed{\;\vec r(r'_t) = \cos(\omega_L r'_t/c)\,\vec e_x - \sin(\omega_L r'_t/c)\,\vec e_y\;}.
+\boxed{\;\vec s_{\Psi}(r'_t) = \cos(\omega_L r'_t/c)\,\vec e_x - \sin(\omega_L r'_t/c)\,\vec e_y\;}.
 $$
 
 This is a **unit vector rotating** in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.

@@ -44,7 +44,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Theorem.** The section of the cone by the hyperplane of trace one is a closed ball of radius one in the three-dimensional space of traceless Hermitian matrices, and its boundary is the sphere of rank-one matrices.
 
-**Proof.** A trace-one Hermitian matrix is $\tfrac12(I+\vec r\cdot\vec\sigma)$ with $\vec r$ in three-space, and the eigenvalues are $\tfrac12(1\pm|\vec r|)$; both are nonnegative exactly when $|\vec r|\le 1$. The boundary $|\vec r|=1$ is the set of matrices with one eigenvalue zero, which is the rank-one condition.
+**Proof.** A trace-one Hermitian matrix is $\tfrac12(I+\vec s\cdot\vec\sigma)$ with $\vec s$ in three-space, and the eigenvalues are $\tfrac12(1\pm|\vec s|)$; both are nonnegative exactly when $|\vec s|\le 1$. The boundary $|\vec s|=1$ is the set of matrices with one eigenvalue zero, which is the rank-one condition.
 
 **Corollary.** The extreme points of the ball are the rank-one matrices, and they correspond to the points of the two-sphere.
 
@@ -52,7 +52,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Corollary.** The centre of the ball is the maximally mixed matrix $\tfrac12 I$, whose two eigenvalues are equal.
 
-**Proof.** The centre has $\vec r=0$, and the matrix is one half of the identity.
+**Proof.** The centre has $\vec s=0$, and the matrix is one half of the identity.
 
 ## The Boundary
 
@@ -116,8 +116,8 @@ The boundary of the cone is the cone over the two-sphere of rank-one matrices, i
 |---|---|
 | $C$ | the positive semidefinite cone in $\operatorname{Herm}_2$ |
 | $vv^{*}$ | a rank-one positive semidefinite matrix |
-| $\tfrac12(I+\vec r\cdot\vec\sigma)$ | a trace-one Hermitian matrix |
-| $|\vec r|\le 1$ | the Bloch ball condition |
+| $\tfrac12(I+\vec s\cdot\vec\sigma)$ | a trace-one Hermitian matrix |
+| $|\vec s|\le 1$ | the Bloch ball condition |
 | $(1,3)$ | the inertia of the determinant on the half |
 
 ## Further Reading

@@ -229,7 +229,7 @@ $$
 \boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q\tilde Q^{*}}{2H(\tilde Q)}=\frac{\tilde Q_H^{2}}{2H(\tilde Q)}\;}
 $$
 
-**The image is Hermitian, positive semidefinite and of normalised.** $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}=2\,\mathrm{Sc}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.
+**The image is Hermitian, positive semidefinite and of normalised.** $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}=2\,\mathrm{Sc}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec s_{\Psi})$ with $\lvert\vec s_{\Psi}\rvert\le1$.
 
 **The map forgets the frame and the scale, in that order.** A right multiplication by a $*$-unitary leaves the image alone, because $\tilde V\tilde V^{*}=e_t$. A multiplication by a nonzero complex scalar leaves it alone, because the numerator and the denominator carry the same factor. A left multiplication by a $*$-unitary conjugates the image, because it conjugates the amplitude.
 
@@ -255,7 +255,7 @@ with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. T
 $$
 2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
 =\frac{1+\tanh^{2}\Xi}{2},\qquad
-\lvert\vec r\rvert=\tanh\Xi .
+\lvert\vec s_{\Psi}\rvert=\tanh\Xi .
 $$
 
 **The two ends of the range are the two degenerations of the frame.** At $\Xi=0$ the state is maximally mixed, purity $\tfrac12$, and the element is a central phase times a real quaternion: no boost, two equal singular values, a frame of full rank. As $\Xi\to\infty$ the state becomes pure, purity $1$, and the element approaches the cone: infinite boost, one singular value zero, a frame of rank one.
@@ -571,7 +571,7 @@ The three statements to carry away are these. The Hermitian norm is the only mea
 | $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | the weight, the positive definite form, $\tfrac12\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$ |
 | $\lvert N(\tilde Q)\rvert$ | the modulus of the interval, the invariant mass |
 | $\tilde{Ϛ}_{\Psi,Q}$ | the state, $\tilde Q\tilde Q^{*}/(2H)$, of trace one |
-| $\lvert\vec r\rvert=\tanh\Xi$ | the Bloch length of the state, the boost velocity |
+| $\lvert\vec s_{\Psi}\rvert=\tanh\Xi$ | the Bloch length of the state, the boost velocity |
 | $U(\mathbb{B})\cong U(2)$ | the $*$-unitary group, the group of H-isometries, real dimension four |
 | $2H=\lVert\rho\rVert_{\mathrm{HS}}^{2}$ | the matrix picture of the weight and the source of the constant two |
 

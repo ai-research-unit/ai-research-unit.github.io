@@ -22,7 +22,7 @@ $$
 
 The real Lie algebra $\mathfrak{gl}_3$ has dimension $18$; the group $GL_3(\mathbb{C})$ has real dimension $18$; the $*$-unitary subgroup $U(3)$ has dimension $9$ and its Lie algebra $\mathfrak{u}(3)$ consists of the anti-Hermitian matrices; the special linear group $SL_3$ and its Lie algebra $\mathfrak{sl}_3$ have complex dimension $8$, and $\mathfrak{su}(3)$ has real dimension $8$.
 
-The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the gauge in exponential coordinates, and works explicit matrices. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the combined exponential polar form is *The Exponential Polar Decomposition of $M_3(\mathbb{C})$*; the analysis of the map is *Analysis on $M_3(\mathbb{C})$*.
+The article defines the exponential, computes it on the Jordan forms, proves the determinant and eigenvalue formulas, proves surjectivity and the failure of injectivity, describes the one-parameter subgroups and the Lie algebra, computes the root and the gauge in exponential coordinates, and works explicit matrices. The polar decomposition is *The Polar Decomposition of $M_3(\mathbb{C})$*; the combined exponential form is *The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates*; the analysis of the map is *Analysis on $M_3(\mathbb{C})$*.
 
 ## Definition and Convergence
 
@@ -366,6 +366,6 @@ $$
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Jordan form and the matrix logarithm.
 - Walter Rossmann, *Lie Groups: An Introduction through Linear Groups* (Oxford, 2002), for one-parameter subgroups and the exponential of matrices.
 - [The Polar Decomposition of $M_3(\mathbb{C})$](the-polar-decomposition-of-m3c.html), for $U=e^{iK}$ and $P=e^{H}$.
-- [The Exponential Polar Decomposition of $M_3(\mathbb{C})$](the-exponential-polar-decomposition-of-m3c.html), for the combined form.
+- [The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m3c-in-exponential-coordinates.html), for the combined form.
 - [Spectral Theory and the Spectral Projectors of $M_3(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m3c.html), for the exponential by Lagrange interpolation.
 - [Analysis on $M_3(\mathbb{C})$](analysis-on-m3c.html), for the analytic properties of the exponential.

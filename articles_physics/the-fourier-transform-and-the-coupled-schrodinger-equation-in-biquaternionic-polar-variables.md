@@ -119,12 +119,12 @@ each twice. **The scalar potential translates the pair and the vector potential 
 **The expansion of the shift.** With a constant background the symbol's dependence on the connection is
 
 $$
-\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+\varrho\varphi-\frac{1}{m}\varrho\,\vec k\cdot\vec A-\frac{\varrho^{2}}{2m}\lvert\vec A\rvert^{2},
+\sigma_{\mathrm{gco}}=\sigma_{\mathrm{free}}+\rho_{\mathrm{chg}}\varphi-\frac{1}{m}\rho_{\mathrm{chg}}\,\vec k\cdot\vec A-\frac{\rho_{\mathrm{chg}}^{2}}{2m}\lvert\vec A\rvert^{2},
 $$
 
 so it is linear in $\varphi$, linear and quadratic in $\vec A$, and has no higher term. **The series terminates because the background is constant**, and not because a small parameter is small.
 
-**The "semiclassical" phase is the phase.** The phase accumulated over an interval is $-\mathcal E t'/\hbar$ with $\mathcal E=\hbar\omega+\varrho\varphi$, exactly. **There is no next order**, and calling the constant-background phase semiclassical is a habit that this article declines.
+**The "semiclassical" phase is the phase.** The phase accumulated over an interval is $-\mathcal E t'/\hbar$ with $\mathcal E=\hbar\omega+\rho_{\mathrm{chg}}\varphi$, exactly. **There is no next order**, and calling the constant-background phase semiclassical is a habit that this article declines.
 
 **No amplitude–potential cross term.** The symbol is the coefficient of a quadratic form in the mode, and the form is homogeneous of degree two in the mode's amplitude: over one hundred draws, multiplying the mode by a complex $\lambda$ multiplied the form by $\lvert\lambda\rvert^{2}$ to $4.5\times10^{-14}$. **So the symbol is independent of the amplitude**, and no term can couple the amplitude to the potential.
 

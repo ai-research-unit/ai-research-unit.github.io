@@ -1544,9 +1544,9 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
 - *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*, for the same eight elements read through the polar word.
-- *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
+- *Worked Examples of Polar Decomposition with Eigenbasis of Biquaternions*, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.
-- [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the four-dimensional commutative companion.
+- [Worked Examples of Eigenbasis of a Reduced Biquaternion](worked-examples-of-eigenbasis-of-a-reduced-biquaternion.html), for the four-dimensional commutative companion.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and the logarithm built on the decomposition.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the Jordan and nilpotent regimes.

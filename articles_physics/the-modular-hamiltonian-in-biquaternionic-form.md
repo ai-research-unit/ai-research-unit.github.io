@@ -168,25 +168,25 @@ which is the same conjugation as before. The amplitude is the operator whose log
 
 Write the faithful state in Bloch form,
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),
-\qquad |\vec r|<1,
+\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\cdot\mathbf e\big),
+\qquad |\vec s_{\Psi}|<1,
 \qquad
-\lambda_\pm=\tfrac12\big(1\pm|\vec r|\big)>0,
+\lambda_\pm=\tfrac12\big(1\pm|\vec s_{\Psi}|\big)>0,
 $$
-with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde{Ϛ}_{\Psi}$ and $\vec u_r=\vec r/|\vec r|$. Then
+with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde{Ϛ}_{\Psi}$ and $\vec u_s=\vec s_{\Psi}/|\vec s_{\Psi}|$. Then
 $$
 \boxed{\;\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}
 =a_0\,e_t+i\,\vec a\cdot\mathbf e,
 \qquad
-a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec r|^2\big)\Big),
+a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec s_{\Psi}|^2\big)\Big),
 \qquad
-\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r\;}.
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_s\;}.
 $$
-This is the explicit operator: a real scalar part fixed by the determinant of the state, and an imaginary vector part along the Bloch vector, with magnitude the logarithm of the eigenvalue ratio. Two limits are immediate. The tracial state $\vec r=0$ gives $\lambda_+=\lambda_-$, hence
+This is the explicit operator: a real scalar part fixed by the determinant of the state, and an imaginary vector part along the Bloch vector, with magnitude the logarithm of the eigenvalue ratio. Two limits are immediate. The tracial state $\vec s_{\Psi}=0$ gives $\lambda_+=\lambda_-$, hence
 $$
 \tilde H_{\Psi,\mathrm{modular}}=(\log 2)e_t,\qquad \mathcal{M}_{\mathrm{mod}}=1,\qquad \sigma_{r'_{t}}=\mathrm{id},
 $$
-the trivial modular flow the parent identifies. A pure state $|\vec r|\to1$ gives $\lambda_-\to0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\mathcal{M}_{\mathrm{mod}}$ acquires the eigenvalue $0$, and $-\log\mathcal{M}_{\mathrm{mod}}$ does not exist.
+the trivial modular flow the parent identifies. A pure state $|\vec s_{\Psi}|\to1$ gives $\lambda_-\to0$, so $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\mathcal{M}_{\mathrm{mod}}$ acquires the eigenvalue $0$, and $-\log\mathcal{M}_{\mathrm{mod}}$ does not exist.
 
 The eigenvalues of $\mathcal{M}_{\mathrm{mod}}$ on the algebra are the ratios of the eigenvalues of $\tilde{Ϛ}_{\Psi}$,
 $$
@@ -216,8 +216,8 @@ which is the generator identity of the definition. So the $\tilde H_{\Psi,\mathr
 
 The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
-\vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
-\qquad |\vec r|^2=\tfrac{29}{100},
+\vec s_{\Psi}=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
+\qquad |\vec s_{\Psi}|^2=\tfrac{29}{100},
 \qquad
 \lambda_\pm=\tfrac12\pm\frac{\sqrt{29}}{20},
 $$
@@ -227,7 +227,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 |---|---|
 | $\mathcal{M}_{\mathrm{mod}}$ eigenvalues $\lambda_+/\lambda_-$, $\lambda_-/\lambda_+$ | $3.333849$, $0.299954$, both $>0$ |
 | $\tilde H_{\Psi,\mathrm{modular}}$ Hermitian, components real | $a_0=0.864392$, $\vec a=(-0.335401,-0.447202,0.223601)$ |
-| $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
+| $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_s$ | agreement to $10^{-15}$ |
 | $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$ equals $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, 12 random $(\tilde Q_3,r'_t)$ | max error $0$ |
 | $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
@@ -373,7 +373,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 **Established (recomputed here).**
 
 - $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is defined by $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
-- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\mathcal{M}_{\mathrm{mod}}>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
+- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_s$; $\mathcal{M}_{\mathrm{mod}}>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
 - $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.
 - $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the reduction formula makes the Gibbs state a scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 - $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ for the bracket-normalised amplitude $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$, with a central additive constant for an unnormalised amplitude; checked on a generic rotated state.
@@ -411,7 +411,7 @@ $$
 \qquad
 a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural},
 \qquad
-\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_s,
 $$
 so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$, that $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the reduction formula $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 
@@ -436,9 +436,9 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$ | Bracket-normalised Cartan amplitude of the state, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_*=\tfrac12$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ | Modular Hamiltonian from the amplitude; $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_H+\log(2\langle\tilde Q_H,\tilde Q_H\rangle_*)e_t$ for an unnormalised $\tilde Q_H$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Modular Hamiltonian in the finite-dimensional model |
-| $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
+| $\lambda_\pm=\tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
 | $a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ | Scalar part of $\tilde H_{\Psi,\mathrm{modular}}$ |
-| $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | Vector part of $\tilde H_{\Psi,\mathrm{modular}}$ |
+| $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_s$ | Vector part of $\tilde H_{\Psi,\mathrm{modular}}$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$ | Gibbs-state modular Hamiltonian |
 | $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
 | $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\cosh\frac{\theta_{\mathrm{rpd}}}{2}+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec e_x$ | Boost rotor (Hermitian, unit norm) |

@@ -53,27 +53,27 @@ $$
 and division gives the state
 
 $$
-\tilde{Ϛ}_{\Psi,\beta}=\tfrac12\big(e_t+i\vec r\big),\qquad
-\vec r=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi.
+\tilde{Ϛ}_{\Psi,\beta}=\tfrac12\big(e_t+i\vec s_{\Psi}\big),\qquad
+\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi.
 $$
 
-Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself a statement about the scalar part. The state lies in the Bloch ball, with $|\vec r|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
+Its scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=\tfrac12$, so $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,\beta})=1$: normalization is itself a statement about the scalar part. The state lies in the Bloch ball, with $|\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)\le1$. It is mixed for every finite $\beta$ and approaches the pure ground state $\tilde{\Pi}(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$; as $\beta\to0$ it tends to the maximally mixed state $\tfrac12e_t$, the centre of the ball. The Gibbs state is thus a temperature-parametrised path in the Bloch ball from the centre toward the boundary, and thermodynamics is the study of the scalars along that path.
 
 ## Thermodynamic Quantities as Functionals of the State
 
 Every thermodynamic quantity of the canonical ensemble is a functional of the Gibbs state, and in the framework each is a scalar extracted by the Hermitian form:
 
-- internal energy: $E[\tilde{Ϛ}_{\Psi}]=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$; the star is inert on $\mathbb{B}_{\Psi}$, and the unstarred scalar part is real, and non-negative only when $\tilde H_\Psi\ge0$;
+- internal energy: $E[\tilde{Ϛ}_{\Psi}]=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec s_{\Psi}\cdot\vec h_\Psi$; the star is inert on $\mathbb{B}_{\Psi}$, and the unstarred scalar part is real, and non-negative only when $\tilde H_\Psi\ge0$;
 - entropy: $S[\tilde{Ϛ}_{\Psi}]=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$;
 - free energy: $F[\tilde{Ϛ}_{\Psi}]=E[\tilde{Ϛ}_{\Psi}]-\tfrac1\beta S[\tilde{Ϛ}_{\Psi}]$;
 - heat capacity: $C=\partial E/\partial T$.
 
 The entropy functional needs the logarithm, which exists on $\mathbb{B}$ but is multivalued. The companion exercise on entanglement entropy establishes that $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ is correct in the interior of the Bloch ball when the principal branch is used, and that the logarithm — hence the formula written this way — is undefined at the pure states, which are zero divisors; the value $S=0$ there is the continuous extension, not a value the logarithm takes. This edge is kept visible rather than smoothed over, and it returns in the variational section below.
 
-For the qubit the Hermitian form evaluates each functional explicitly. With $r_x=\beta|\vec h_\Psi|$ and $\vec r=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
+For the qubit the Hermitian form evaluates each functional explicitly. With $r_x=\beta|\vec h_\Psi|$ and $\vec s_{\Psi}=-\tanh r_x\,\vec u_\Psi$, the product $\tilde{Ϛ}_{\Psi}\tilde H_\Psi$ has scalar part
 
 $$
-\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\tfrac12\big(h_t+\vec r\cdot\vec h_\Psi\big)=\tfrac12\big(h_t-|\vec h_\Psi|\tanh r_x\big),
+\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\tfrac12\big(h_t+\vec s_{\Psi}\cdot\vec h_\Psi\big)=\tfrac12\big(h_t-|\vec h_\Psi|\tanh r_x\big),
 $$
 
 so
@@ -149,7 +149,7 @@ $$
 
 The same statement can be read as the **maximum-entropy principle**: at fixed internal energy $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=E$, the Gibbs state maximises $S[\tilde{Ϛ}_{\Psi}]$, and the two variational problems are Legendre transforms of one another. The derivation uses only the Hermitian form and the entropy functional, both of which are framework objects.
 
-One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tilde{Ϛ}_{\Psi}$ exists, that is, in the interior of the Bloch ball. The minimiser is interior for every finite $\beta$, since $|\vec r|=\tanh(\beta|\vec h_\Psi|)<1$, but as $\beta\to\infty$ it approaches the boundary, where the functional is undefined. The variational characterisation therefore describes the finite-$\beta$ states exactly and the zero-temperature state only as a limit — the same boundary already noted for the entropy.
+One caveat belongs here. The functional $\mathcal F$ is defined where $\log\tilde{Ϛ}_{\Psi}$ exists, that is, in the interior of the Bloch ball. The minimiser is interior for every finite $\beta$, since $|\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)<1$, but as $\beta\to\infty$ it approaches the boundary, where the functional is undefined. The variational characterisation therefore describes the finite-$\beta$ states exactly and the zero-temperature state only as a limit — the same boundary already noted for the entropy.
 
 ## Legendre Structure and Thermodynamic Identities
 
@@ -185,7 +185,7 @@ The limits test the signs and the normalizations of the preceding sections, and 
 **Low temperature, $\beta\to\infty$ ($T\to0$).** Since $\tanh x\to1$ and $\log\cosh x-x\tanh x\to-\log2$,
 
 $$
-\vec r\to-\vec u_\Psi,\qquad
+\vec s_{\Psi}\to-\vec u_\Psi,\qquad
 \tilde{Ϛ}_{\Psi}\to\tilde{\Pi}(-\vec u_\Psi)=\tfrac12\big(e_t-i\vec u_\Psi\big),
 $$
 
@@ -200,7 +200,7 @@ The internal energy tends to the lower eigenvalue $h_t-|\vec h_\Psi|$ and the fr
 **High temperature, $\beta\to0$ ($T\to\infty$).** Since $\tanh x\to0$ and $\log\cosh x\to0$,
 
 $$
-\vec r\to0,\qquad \tilde{Ϛ}_{\Psi}\to\tfrac12 e_t,
+\vec s_{\Psi}\to0,\qquad \tilde{Ϛ}_{\Psi}\to\tfrac12 e_t,
 $$
 
 the maximally mixed state, and
@@ -245,7 +245,7 @@ The framework adds an **interpretation** with three components.
 
 First, the computational spine is algebraic: the partition function, every thermal average, the entropy, and the heat capacity are obtained by extracting a scalar part from a product of $\mathbb{B}_{\Psi}$ elements, and the only factor that is not algebraic is the $2$ that counts the two levels. The variance form of the heat capacity, $C=k_B\beta^2[2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}))^2]$, shows the interpretation at work.
 
-Second, the state is geometric: the Gibbs state is the point $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
+Second, the state is geometric: the Gibbs state is the point $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ in the Bloch ball, and temperature traverses the ball from its centre toward its boundary.
 
 Third, the temperature is a direction: $\beta$ measures a displacement along the imaginary-time axis of the material sector $\mathbb{B}_{\Phi}$, while the modular Hamiltonian $H_{\mathrm{modular}}=\beta(\tilde H_\Psi-Fe_t)$, which carries the free energy, lies in $\mathbb{B}_{\Psi}$. The thermal structure is therefore a coupling of the two sectors of the kind the KMS article describes.
 
@@ -277,8 +277,8 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian (observable) |
 | $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Scalar part of a product (computational spine) |
 | $Z=2\,\mathrm{Sc}(\exp(-\beta H))$ | Partition function |
-| $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z=\tfrac12(e_t+i\vec r)$ | Gibbs state |
-| $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
+| $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z=\tfrac12(e_t+i\vec s_{\Psi})$ | Gibbs state |
+| $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
 | $r_x=\beta|\vec h_\Psi|$ | Thermal parameter |
 | $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x$ | Internal energy |
 | $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=\log2+\log\cosh x-x\tanh x$ | Entropy (units of $k_B$) |

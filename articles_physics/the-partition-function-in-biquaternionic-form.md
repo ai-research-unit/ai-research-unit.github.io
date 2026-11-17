@@ -62,7 +62,7 @@ It is a complex number for a general biquaternion and a **real** number when $\t
 On $\mathbb{B}_{\Psi}$ this extraction is the plain form used throughout the corpus, read as the plain pairing. Writing
 
 $$
-\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1},\qquad \tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2},\qquad c r_{t,1},c r_{t,2}\in\mathbb{R},\ \ \vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3,
+\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1,\qquad \tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2,\qquad c r_{t,1},c r_{t,2}\in\mathbb{R},\ \ \vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3,
 $$
 
 for two elements of $\mathbb{B}_{\Psi}$, the product has scalar part
@@ -120,16 +120,16 @@ $$
 The two expressions agree because the eigenvalues of $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ are $h_t\pm|\vec h_\Psi|$, in accordance with the matrix identification $\tilde H_\Psi\mapsto h_t\,I+\vec h_\Psi\cdot\boldsymbol\sigma$. The state is $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$, whose scalar part is $\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, so it has the Bloch form
 
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\big),\qquad \vec r=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi,\qquad |\vec r|=\tanh(\beta|\vec h_\Psi|)\le 1.
+\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\big),\qquad \vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\,\vec u_\Psi,\qquad |\vec s_{\Psi}|=\tanh(\beta|\vec h_\Psi|)\le 1.
 $$
 
 The thermal state is mixed for every finite $\beta$ and approaches the pure ground state $\tilde\Pi(-\vec u_\Psi)=\tfrac12(e_t-i\vec u_\Psi)$ only as $\beta\to\infty$. Its internal energy is
 
 $$
-E=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=h_t+\vec r\cdot\vec h_\Psi=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)
+E=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=h_t+\vec s_{\Psi}\cdot\vec h_\Psi=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)
 $$
 
-in agreement with $-\partial/\partial \beta\log Z=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)$, and its purity and entropy are the standard functions of $|\vec r|$.
+in agreement with $-\partial/\partial \beta\log Z=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)$, and its purity and entropy are the standard functions of $|\vec s_{\Psi}|$.
 
 As a check on a case chosen independently of the derivation, take $h_t=0.7$, $\vec h_\Psi=(0.3,-0.5,0.8)$, $\beta=1.2$, so that $|\vec h_\Psi|^2=0.98$ and $|\vec h_\Psi|=0.98995$. The formula gives $Z=2\exp(-0.84)\cosh(1.18794)=1.547753$, while summing the exponential of the eigenvalues $h_t\pm|\vec h_\Psi|$ gives $\exp(-2.02794)+\exp(0.34794)=1.547753$; the matrix exponential of the corresponding $2\times2$ matrix agrees with the biquaternion form to machine precision. The Bloch modulus is $\tanh(1.18794)=0.829939$, and $E=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)=-0.121597$ equals $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
 
@@ -143,7 +143,7 @@ $$
 
 and the scalar part keeps the first and annihilates the second. Three consequences are worth stating explicitly.
 
-**The discarded part is the coherence.** The imaginary vector part of $\exp(-\beta H)$ points along $-\vec u_\Psi$, and it is fixed by the same combination $\beta|\vec h_\Psi|$ that fixes the Bloch vector $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ of the thermal state. It encodes the **orientation** of the thermal polarization. The partition function is blind to that orientation. $Z$ depends on $h_t$ and $|\vec h_\Psi|$ but not on the direction $\vec u_\Psi$; equivalently, $Z$ is invariant under the conjugation $\tilde H_\Psi\mapsto\tilde Q\tilde H_\Psi\tilde Q^{*}$ by any $*$-unitary biquaternion, which rotates $\vec u_\Psi$ while preserving the spectrum. The whole dependence of the thermal state on the axis of the Hamiltonian is invisible to $Z$ and appears only in $\tilde{Ϛ}_{\Psi}$ and in expectation values.
+**The discarded part is the coherence.** The imaginary vector part of $\exp(-\beta H)$ points along $-\vec u_\Psi$, and it is fixed by the same combination $\beta|\vec h_\Psi|$ that fixes the Bloch vector $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ of the thermal state. It encodes the **orientation** of the thermal polarization. The partition function is blind to that orientation. $Z$ depends on $h_t$ and $|\vec h_\Psi|$ but not on the direction $\vec u_\Psi$; equivalently, $Z$ is invariant under the conjugation $\tilde H_\Psi\mapsto\tilde Q\tilde H_\Psi\tilde Q^{*}$ by any $*$-unitary biquaternion, which rotates $\vec u_\Psi$ while preserving the spectrum. The whole dependence of the thermal state on the axis of the Hamiltonian is invisible to $Z$ and appears only in $\tilde{Ϛ}_{\Psi}$ and in expectation values.
 
 **The discarded part is not lost.** The information the scalar part removes from $Z$ is retained by the **correlation functions**. The expectation value $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_{\Psi,3})$, real because the star is inert on $\mathbb{B}_{\Psi}$, and, in the thermal field-theoretic setting, the KMS correlation functions of the companion article are sensitive to the imaginary vector part. The partition function is thus the crudest $*$-unitary invariant of the thermal operator: it is the piece invariant under the full $*$-unitary group, and everything else is delegated to the correlators.
 
@@ -237,7 +237,7 @@ $$
 \boxed{\;Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)\;},
 $$
 
-the ordinary two-level partition function with energies $h_t\pm|\vec h_\Psi|$. The thermal state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$, and the internal energy $E=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)$ agrees with $-\partial/\partial \beta\log Z$.
+the ordinary two-level partition function with energies $h_t\pm|\vec h_\Psi|$. The thermal state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$, and the internal energy $E=h_t-|\vec h_\Psi|\tanh(\beta|\vec h_\Psi|)$ agrees with $-\partial/\partial \beta\log Z$.
 
 The scalar part of the thermal operator is kept by the doubling, and its imaginary vector part is discarded. That discarded part is the coherence — the orientation of the thermal polarization — and it is invisible to $Z$ but visible in expectation values and KMS correlation functions. It is not the material sector: for Hermitian $\tilde H_\Psi$ the thermal operator has no $\mathbb{B}_{\Phi}$ component. The material sector enters through imaginary time, since $Z=2\,\mathrm{Sc}\,\tilde Q(-i\beta)$ is the scalar part of the evolution operator continued along the $i r'_t$ direction, with the thermal circle of circumference $\beta$ lying along the $\mathbb{B}_{\Phi}$ time. The modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta\tilde H_\Psi+(\log Z)e_t$ lies in $\mathbb{B}_{\Psi}$, with the log-partition function as its real scalar part, in agreement with the KMS article.
 
@@ -259,7 +259,7 @@ The algebra does not force a modification. A genuine modification appears only i
 | $Z=2\,\mathrm{Sc}(\exp(-\beta H))$ | Partition function |
 | $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$ | Thermal state |
 | $\exp(-\beta H)=\exp(-\beta h_t)\big(\cosh(\beta|\vec h_\Psi|)e_t-i\sinh(\beta|\vec h_\Psi|)\vec u_\Psi\big)$ | Thermal operator |
-| $\vec r=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the thermal state |
+| $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the thermal state |
 | $F=-\beta^{-1}\log Z$, $E=-\partial/\partial \beta\log Z$ | Free energy, internal energy |
 | $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta\tilde H_\Psi+(\log Z)e_t$ | Modular Hamiltonian (in $\mathbb{B}_{\Psi}$) |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Biquaternion norm |

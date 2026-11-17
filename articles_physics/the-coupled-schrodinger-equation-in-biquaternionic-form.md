@@ -199,7 +199,7 @@ so the right side is the equation's residual contracted with the field and proje
 
 **Gauge invariance.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\eta\mapsto A_\eta-\partial_\eta\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\eta\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\nabla\Gamma$, and with the connection in place the shift is absorbed.
 
-**The charge current, and the source.** Multiplying by $ϙ$ gives the charge density $\varrho:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,
+**The charge current, and the source.** Multiplying by $ϙ$ gives the charge density $\rho_{\mathrm{chg}}:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,
 
 $$
 \tilde\nabla_\Phi\tilde F=-\mu\,\tilde J,
@@ -307,7 +307,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | The density; $\rho=2n$ is the free article's |
 | $j_\eta$, $j_t=n$ | The particle current and its temporal component |
-| $\varrho=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
+| $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
 | $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge factor; $\Gamma$ real |
 | $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\nabla\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ |
 

@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers__
+# __Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers__
 
 ## Introduction
 
-This article collects the eigenbasis, the idempotents and the two spinor spaces of the eight split-complex numbers of *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\Pi_+,\Pi_-)$, with $\Pi_\pm=\tfrac12(1\pm j)$.
+This article collects the eigenbasis, the idempotents and the two spinor spaces of the eight split-complex numbers of *Worked Examples of Polar Decomposition of Split-Complex Numbers*. The polar decomposition itself, with its coordinates, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\Pi_+,\Pi_-)$, with $\Pi_\pm=\tfrac12(1\pm j)$.
 
 The eight elements, in the order of the cases, are collected in the table.
 
@@ -177,5 +177,5 @@ the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second 
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the polar decomposition, its word and its check.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the relation between the two decompositions in the real two-dimensional case.
+- [Worked Examples of Polar Decomposition of Split-Complex Numbers](worked-examples-of-polar-decomposition-of-split-complex-numbers.html), for the polar decomposition, its word and its check.
+- [Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the relation between the two decompositions in the real two-dimensional case.

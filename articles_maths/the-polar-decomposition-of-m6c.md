@@ -223,7 +223,7 @@ is a diffeomorphism.
 
 **Proof.** For Hermitian $H$, $e^H$ is Hermitian positive definite (diagonalize $H$ unitarily: $H=U\operatorname{diag}(h_i)U^*$, $e^H=U\operatorname{diag}(e^{h_i})U^*$). The inverse is the logarithm $P\mapsto\log P$, defined by the spectral theorem; both maps are smooth.
 
-### The Exponential Polar Decomposition
+### The Polar Decomposition in Exponential Coordinates
 
 **Theorem.** Every invertible $A$ has a unique factorization
 

@@ -18,12 +18,12 @@ This article establishes:
 
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\,\hbar\langle  z|dz/dr'_t\rangle - \langle  z|\tilde H_\Psi|z\rangle)dr'_t$, and the measure.
 2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|dz/dr'_t\rangle\,dr'_t = -\theta_{\mathrm{sol}}{}_{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
-3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
+3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ} = 1$; the two forms are related by the change of variables $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec s_{\Psi})$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -164,11 +164,11 @@ $$
 which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
 
 $$
-\boxed{\;d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B
-= \frac{\omega_L}{c}\,\vec r\times\vec u_t\;},
+\boxed{\;d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B
+= \frac{\omega_L}{c}\,\vec s_{\Psi}\times\vec u_t\;},
 $$
 
-the Larmor/Bloch equation for the classical spin vector, with $|\vec r| = 1$. The classical spin vector is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
+the Larmor/Bloch equation for the classical spin vector, with $|\vec s_{\Psi}| = 1$. The classical spin vector is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
 
 ### The Classical Limit as a Phase-Space Problem
 
@@ -262,7 +262,7 @@ $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{\hbar\,\omega_{L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
+The saddle point of $S$ is the classical Larmor precession $d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B$, obtained from the symplectic form $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ and the classical Zeeman energy $\langle\tilde H_\Psi\rangle  = -\frac{\hbar\,\omega_{L}}{2}\vec u\cdot\vec u_t$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$, related to the coherent-state form by $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$.
 
 In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\vec u)$ with energy $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\,\pi\,\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
@@ -282,7 +282,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
 | $S_{WZ} =i\,\hbar\,\oint\langle  z|\partial/\partial r'_t|z\rangle  dr'_t = -\frac{\hbar\,\theta_{\mathrm{sol}}}{2}$ | Wess–Zumino term |
 | $\omega = -\frac{\hbar}{2}\sin\theta\,d\theta\wedge  d\theta_{\mathrm{azm}}$ | Symplectic form of the sphere |
-| $d\vec r/dr'_t = \frac{\gamma}{c}\,\vec r\times\vec B$ | Classical Larmor precession |
+| $d\vec s_{\Psi}/dr'_t = \frac{\gamma}{c}\,\vec s_{\Psi}\times\vec B$ | Classical Larmor precession |
 | $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x},\tilde{Ξ}$ | Grassmann spinor variables, $\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}=1$ |
 | $\left|\int_{S^2}\omega\right| =2\,\pi\,\hbar$ | Unit-charge flux; non-exactness of $\omega$ |
 

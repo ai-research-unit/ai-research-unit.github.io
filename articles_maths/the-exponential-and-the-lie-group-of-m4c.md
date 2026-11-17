@@ -6,7 +6,7 @@
 
 The article defines the exponential, proves its elementary properties and the determinant formula, describes the differential and the Baker–Campbell–Hausdorff formula, identifies the Lie algebras of the classical subgroups, and describes the global structure of $GL_4$.
 
-The polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the exponential polar decomposition is *The Exponential Polar Decomposition of $M_4(\mathbb{C})$*; the topology is *The Topology of $M_4(\mathbb{C})$*; the one-parameter subgroups of the compact group are in *The Exponential and the Lie Group of $M_4(\mathbb{C})$* of the biquaternion corpus.
+The polar decomposition is *The Polar Decomposition of $M_4(\mathbb{C})$*; the same decomposition in exponential coordinates is *The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates*; the topology is *The Topology of $M_4(\mathbb{C})$*; the one-parameter subgroups of the compact group are in *The Exponential and the Lie Group of $M_4(\mathbb{C})$* of the biquaternion corpus.
 
 ## The Exponential Map
 
@@ -332,7 +332,7 @@ $$
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the Cartan decomposition and the global structure of $GL_4$.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the matrix exponential, the logarithm and the Jordan form.
 - [The Polar Decomposition of $M_4(\mathbb{C})$](the-polar-decomposition-of-m4c.html), for the diffeomorphism $GL_4\cong U(4)\times P_+$.
-- [The Exponential Polar Decomposition of $M_4(\mathbb{C})$](the-exponential-polar-decomposition-of-m4c.html), for the ordering $e^He^{iK}$.
+- [The Polar Decomposition of $M_4(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m4c-in-exponential-coordinates.html), for the ordering $e^He^{iK}$.
 - [The Topology of $M_4(\mathbb{C})$](the-topology-of-m4c.html), for the fundamental group and the homotopy type.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_4(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-m4c.html), for the gauge torus and the nilpotents.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis of the biquaternion algebra $\mathbb{B}$ and the four left multiplications, a second description of the same $4\times4$ matrices.

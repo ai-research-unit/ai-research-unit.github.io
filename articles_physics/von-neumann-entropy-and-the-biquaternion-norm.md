@@ -4,16 +4,16 @@
 
 The von Neumann entropy of a state is the fundamental quantitative measure of the information a quantum state fails to hold: it vanishes on the pure states, is maximal on the maximally mixed state, and quantifies the compression achievable in the quantum source coding theorem. In the biquaternion framework the state space of a qubit is the normalised hyperplane of the positive cone of $\mathbb{B}_{\Psi}$, and the cone is defined by the algebra's biquaternion norm. The question this article answers is what the entropy is, in that geometry.
 
-The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the biquaternion norm alone. For a state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ one has
+The answer is a single clean statement: on the state space of the framework, the von Neumann entropy is a function of the biquaternion norm alone. For a state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ one has
 
 $$
-\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
+\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec s_{\Psi}|^2\bigr)e_t ,
 $$
 
-so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\vec r|)$. The entropy is therefore
+so the biquaternion norm carries exactly one real number, the Bloch radius squared; and the spectrum of the state depends on the state only through that number, $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$. The entropy is therefore
 
 $$
-\boxed{\;S(\tilde{Ϛ}_{\Psi}) = h\!\left(\frac{1+|\vec r|}{2}\right)
+\boxed{\;S(\tilde{Ϛ}_{\Psi}) = h\!\left(\frac{1+|\vec s_{\Psi}|}{2}\right)
 = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right),
 \qquad h(p) = -p\log p - (1-p)\log(1-p)\;},
 $$
@@ -37,24 +37,24 @@ The article proceeds as follows. The state, its purity, and the biquaternion nor
 A state of the informational sector is an element of the Hermitian subspace
 
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_\eta\in\mathbb{R},
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec s_{\Psi}\bigr), \qquad \vec s_{\Psi} = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_\eta\in\mathbb{R},
 $$
 
 normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$. Its matrix image is
 
 $$
-M(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}\bigl(I_2 + \vec r\cdot\boldsymbol{\sigma}\bigr),
+M(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}\bigl(I_2 + \vec s_{\Psi}\cdot\boldsymbol{\sigma}\bigr),
 $$
 
-whose eigenvalues are $\tfrac12(1\pm|\vec r|)$. Positivity, $M(\tilde{Ϛ}_{\Psi})\geq0$, is therefore equivalent to $|\vec r|\leq1$, and the states form the Bloch ball. The boundary $|\vec r|=1$ is the set of pure states; the centre $\vec r=0$ is the maximally mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$.
+whose eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$. Positivity, $M(\tilde{Ϛ}_{\Psi})\geq0$, is therefore equivalent to $|\vec s_{\Psi}|\leq1$, and the states form the Bloch ball. The boundary $|\vec s_{\Psi}|=1$ is the set of pure states; the centre $\vec s_{\Psi}=0$ is the maximally mixed state $\tilde{Ϛ}_{\Psi} = \tfrac12 e_t$.
 
 ### Purity and the deviation from idempotency
 
 Squaring the state gives, using $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t + \epsilon_{\mu\nu\lambda}\vec e_\lambda$ and the vanishing of the cross terms for the pure scalar part,
 
 $$
-\tilde{Ϛ}_{\Psi}^2 = \tfrac{1}{4}\bigl(e_t + i\vec r\bigr)^2
-= \tfrac{1}{4}\bigl((1+|\vec r|^2)e_t + 2i\vec r\bigr).
+\tilde{Ϛ}_{\Psi}^2 = \tfrac{1}{4}\bigl(e_t + i\vec s_{\Psi}\bigr)^2
+= \tfrac{1}{4}\bigl((1+|\vec s_{\Psi}|^2)e_t + 2i\vec s_{\Psi}\bigr).
 $$
 
 Hence the **purity** is
@@ -62,16 +62,16 @@ Hence the **purity** is
 $$
 P(\tilde{Ϛ}_{\Psi}) = 2\,\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*}
 = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}^2\bigr)
-= \tfrac{1}{2}\bigl(1 + |\vec r|^2\bigr),
+= \tfrac{1}{2}\bigl(1 + |\vec s_{\Psi}|^2\bigr),
 $$
 
 and the **deviation from idempotency** is a pure scalar multiple of the identity,
 
 $$
-\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}\bigl(|\vec r|^2 - 1\bigr)e_t .
+\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}\bigl(|\vec s_{\Psi}|^2 - 1\bigr)e_t .
 $$
 
-The state is pure, $\tilde{Ϛ}_{\Psi}^2 = \tilde{Ϛ}_{\Psi}$, exactly when $|\vec r|=1$; it is idempotent exactly when its purity is one. Everything that follows is a statement about the single real number $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}) = \tfrac14(|\vec r|^2-1)\leq0$.
+The state is pure, $\tilde{Ϛ}_{\Psi}^2 = \tilde{Ϛ}_{\Psi}$, exactly when $|\vec s_{\Psi}|=1$; it is idempotent exactly when its purity is one. Everything that follows is a statement about the single real number $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}) = \tfrac14(|\vec s_{\Psi}|^2-1)\leq0$.
 
 ### The biquaternion norm on $\mathbb{B}_{\Psi}$
 
@@ -92,7 +92,7 @@ which is why it is the natural scalar for the cone: a Hermitian element is posit
 For a state the biquaternion norm is
 
 $$
-\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_t ,
+\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1 - |\vec s_{\Psi}|^2\bigr)e_t ,
 $$
 
 a scalar element of the centre. Three interpretations of this single identity organize the rest of the article:
@@ -107,17 +107,17 @@ The biquaternion norm therefore measures the failure of a state to be a zero div
 
 ### The spectrum
 
-The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\vec u_r = \vec r/|\vec r|$ for $\vec r\neq0$,
+The state has a spectral decomposition into the two complementary idempotents along its Bloch direction. Writing $\vec u_s = \vec s_{\Psi}/|\vec s_{\Psi}|$ for $\vec s_{\Psi}\neq0$,
 
 $$
-\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_1(\vec u_r) + \lambda_-\,\tilde\Pi_2(\vec u_r),
+\tilde{Ϛ}_{\Psi} = \lambda_+\,\tilde\Pi_1(\vec u_s) + \lambda_-\,\tilde\Pi_2(\vec u_s),
 \qquad
-\tilde\Pi_{1,2}(\vec u_r) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_r\bigr),
+\tilde\Pi_{1,2}(\vec u_s) = \tfrac{1}{2}\bigl(e_t \pm i\vec u_s\bigr),
 \qquad
-\lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr).
+\lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec s_{\Psi}|\bigr).
 $$
 
-The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their normalisation is $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
+The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their normalisation is $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec s_{\Psi}|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -128,7 +128,7 @@ S(\tilde{Ϛ}_{\Psi}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-
 = h\!\left(\lambda_+\right).
 $$
 
-Since $|\vec r| = \sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}$ on the normalised hyperplane, this is a function of the biquaternion norm alone:
+Since $|\vec s_{\Psi}| = \sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}$ on the normalised hyperplane, this is a function of the biquaternion norm alone:
 
 $$
 \boxed{\;S(\tilde{Ϛ}_{\Psi}) = H\!\left(\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\right),
@@ -149,7 +149,7 @@ As $N\to0$ this derivative diverges to $+\infty$: the entropy leaves the pure st
 The standard formula can also be written algebraically. On the interior of the Bloch ball the state has full rank, so its real logarithm exists and lies in $\mathbb{B}_{\Psi}$:
 
 $$
-\log \tilde{Ϛ}_{\Psi} = \log\lambda_+\, \tilde\Pi_1(\vec u_r) + \log\lambda_-\, \tilde\Pi_2(\vec u_r) .
+\log \tilde{Ϛ}_{\Psi} = \log\lambda_+\, \tilde\Pi_1(\vec u_s) + \log\lambda_-\, \tilde\Pi_2(\vec u_s) .
 $$
 
 Multiplying by $\tilde{Ϛ}_{\Psi}$ and taking the scalar part,
@@ -189,7 +189,7 @@ with $S=0$ exactly on the pure states (the zero divisors of the biquaternion nor
 
 ### Monotonicity and the cone
 
-Define the "radial" coordinate $\rho_{\mathrm{B}} = |\vec r| = \sqrt{1-4N}$. Radial contraction of the state toward the centre — the operation $\vec r\mapsto(1-p)\vec r$ for $0\leq p\leq1$, which is depolarization — strictly increases $\langle\cdot\rangle_{\natural}$ and strictly increases $S$ for any state with $\vec r\neq0$. Radial expansion toward the boundary strictly decreases both. In the language of the cone, moving the state deeper into the positive cone (larger $\langle\cdot\rangle_{\natural}$) increases its entropy; approaching the zero-divisor cone ($N\to0$) decreases it to zero. Entropy is thus a monotone coordinate on the cone slice, and the pure states form its boundary.
+Define the "radial" coordinate $\rho_{\mathrm{B}} = |\vec s_{\Psi}| = \sqrt{1-4N}$. Radial contraction of the state toward the centre — the operation $\vec s_{\Psi}\mapsto(1-p)\vec s_{\Psi}$ for $0\leq p\leq1$, which is depolarization — strictly increases $\langle\cdot\rangle_{\natural}$ and strictly increases $S$ for any state with $\vec s_{\Psi}\neq0$. Radial expansion toward the boundary strictly decreases both. In the language of the cone, moving the state deeper into the positive cone (larger $\langle\cdot\rangle_{\natural}$) increases its entropy; approaching the zero-divisor cone ($N\to0$) decreases it to zero. Entropy is thus a monotone coordinate on the cone slice, and the pure states form its boundary.
 
 ### Concavity
 
@@ -207,7 +207,7 @@ Rotor conjugation by a matrix-unitary biquaternion, $\tilde{Ϛ}_{\Psi}\mapsto\ti
 
 ## Relation to the Standard Formula
 
-The standard von Neumann entropy of a density operator is $S = -\operatorname{tr}(\rho\log\rho)$, where $\rho$ is a matrix and the symbol is its matrix trace, with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\vec r$, the eigenvalues are $\tfrac12(1\pm|\vec r|)$ and the entropy is $h\!\left(\tfrac{1+|\vec r|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
+The standard von Neumann entropy of a density operator is $S = -\operatorname{tr}(\rho\log\rho)$, where $\rho$ is a matrix and the symbol is its matrix trace, with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\vec s_{\Psi}$, the eigenvalues are $\tfrac12(1\pm|\vec s_{\Psi}|)$ and the entropy is $h\!\left(\tfrac{1+|\vec s_{\Psi}|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
 
 What the biquaternion-norm interpretation adds is the *location* of the entropy's argument. In the matrix formulation the entropy is a function of the spectrum, and the spectrum is obtained by diagonalizing a matrix. In the biquaternion formulation the state carries a biquaternion norm, and on the normalised hyperplane the biquaternion norm is the deviation from idempotency; the entropy is a function of that scalar. The operative content is that:
 
@@ -251,7 +251,7 @@ The state space of the qubit is the normalised hyperplane of the positive cone o
 
 $$
 \langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi), \qquad
-\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec r|^2\bigr)e_t .
+\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec s_{\Psi}|^2\bigr)e_t .
 $$
 
 The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$, and the purity is affine in it, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
@@ -273,13 +273,13 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and observables) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\tilde\Pi_{1,2}(\vec u_r) = \tfrac12(e_t\pm i\vec u_r)$ | Spectral idempotents of the state |
-| $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues |
+| $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec s_{\Psi})$ | State with Bloch vector $\vec s_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
+| $\tilde\Pi_{1,2}(\vec u_s) = \tfrac12(e_t\pm i\vec u_s)$ | Spectral idempotents of the state |
+| $\lambda_\pm = \tfrac12(1\pm|\vec s_{\Psi}|)$ | Eigenvalues |
 | $2\,\mathrm{Sc}(\tilde{Q})$ | Twice the scalar part |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi)$ | Biquaternion norm of a Hermitian element |
-| $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
+| $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec s_{\Psi}|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$ | Deviation from idempotency |
 | $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ | Purity |
 | $h(p) = -p\log p-(1-p)\log(1-p)$ | Binary entropy |

@@ -185,7 +185,7 @@ with $x_t=-x'_t$ and $\vec x'_\Psi=\vec x_\Phi$. The switch is exact on all five
 puts it on the time coefficient, the sibling on the three space coefficients. That is the whole of the material and informational distinction at the
 level of one catalogue entry.
 
-The five rows are one switch applied to five objects, and each sibling is the glyph catalogued on its own. The observable is the one row written from the informational side: its material member $\tilde H_\Phi=-i\tilde H_\Psi$ carries the time coefficient $ih'_t$ with $h'_t=-h_t$, so the sign of the material time coefficient is the one the switch has already given it, and the four numbers of the row are the four of $\tilde H_\Psi$. The position is not one of the five. $\tilde R$ is the variable, and it splits by projection, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$, so its informational member is the informational part of one element and not the switch image of the material part (*Physics Units and Common Elements Conventions*, §*The Four-Vectors and the Currents*). The image $i\tilde R_\Phi=-r'_te_t+i\vec r_\Phi$ is a different Hermitian element, carrying the four material numbers in the informational slots.
+The five rows are one switch applied to five objects, and each sibling is the glyph catalogued on its own. The observable is the one row written from the informational side: its material member $\tilde H_\Phi=-i\tilde H_\Psi$ carries the time coefficient $ih'_t$ with $h'_t=-h_t$, so the sign of the material time coefficient is the one the switch has already given it, and the four numbers of the row are the four of $\tilde H_\Psi$. The position is not one of the five. $\tilde R$ is the variable, and it splits by projection, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$, so its informational member is the informational part of one element and not the switch image of the material part (*Physics Units and Common Elements Conventions*, §*The Four-Vectors and the Currents*). The image $i\tilde R_\Phi=-r'_te_t+i\vec s_{\Psi},\Phi$ is a different Hermitian element, carrying the four material numbers in the informational slots.
 
 The construction is real-linear in its source, $(1+i)(\lambda\tilde X_\Phi)=\lambda\tilde X_{\mathrm{mir}}$ for real $\lambda$, so a change of units and a change of $\hbar$ cost nothing: the wave number's mirror biquaternion is the four-momentum's divided by $\hbar$, and no new formula is needed. It is also insensitive to the object: the rows differ in their coefficients, not in their arithmetic, and a reader who has built one has built them all.
 
@@ -755,9 +755,9 @@ $$
 \ \xrightarrow{\ \text{switch}\ }\
 -r'_t\,e_t+i\vec r,
 \qquad\qquad
-\tilde X_\Phi=i r'_t\,e_t+\vec r
+\tilde X_\Phi=i r'_t\,e_t+\vec s_{\Psi}
 \ \xrightarrow{\ W\ }\
-r'_t\,e_t+\vec r .
+r'_t\,e_t+\vec s_{\Psi} .
 $$
 
 The first image carries one factor of $i$, now on the space slots, and its quadratic form is $h_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signs to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of inertia $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
@@ -815,7 +815,7 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 | $\tilde X_{\mathrm{mir}}$ | the **mirror biquaternion**, $(1+i)\tilde X_\Phi$, one element whose coefficients are $(i-1)x'_t$ on the temporal slot and $(1+i)x_\eta$ on the three spatial ones; its two projections are the pair |
 | $\tilde P_{\mathrm{mir}}$, $\tilde K_{\mathrm{mir}}$, $\tilde J_{\mathrm{mir}}$, $\tilde A_{\mathrm{mir}}$, $\tilde H_{\mathrm{mir}}$ | the mirror biquaternions of the catalogue, $(1+i)$ times the material glyph: temporal coefficient times $i-1$, each spatial coefficient times $1+i$; for the observable, $(1+i)\tilde H_\Phi=(1-i)\tilde H_\Psi$ |
 | $\mathbb{M}$ | the class of mirror biquaternions, a real four-dimensional subspace, $\tilde H_\Psi=i\tilde R_\Phi$ or $\tilde Q^{*}=i\tilde Q$ |
-| $\tilde H_\Psi=h_t\,e_t+i\vec r$ | the informational element, real time and imaginary space; the general Hermitian observable, which is the sector's glyph and not a switch image |
+| $\tilde H_\Psi=h_t\,e_t+i\vec s_{\Psi}$ | the informational element, real time and imaginary space; the general Hermitian observable, which is the sector's glyph and not a switch image |
 | $2\,\mathrm{Sc}\,\tilde Q$ | twice the scalar part, the reduced value of an element |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |

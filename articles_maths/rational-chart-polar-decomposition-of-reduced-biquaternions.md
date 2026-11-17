@@ -312,7 +312,7 @@ The chart has three properties, and they are the terms of an exchange.
 - **It is local.** It misses two circles of the torus, and therefore two walls of the group of invertibles. Four charts, or a compactification in each component, are needed to recover the torus.
 - **It is unbounded.** Near a missed circle the coordinate escapes to infinity, and the two sides of a wall carry opposite signs of the corresponding coordinate.
 
-The modulus–unit form is global and uses a square root. The exponential form, treated in *Exponential Polar Decomposition of Reduced Biquaternions*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.
+The modulus–unit form is global and uses a square root. The exponential form, treated in *Polar Decomposition of Reduced Biquaternions*, is global and uses a transcendental function. The present form is the one that stays rational, and locality is its price.
 
 ## The Matrix Picture
 
@@ -496,7 +496,7 @@ In the matrix picture the unit factor is orthogonally conjugate to the block dia
 ## Further Reading
 
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the transcendental coordinate on the torus.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the transcendental coordinate on the torus.
 - [Rational-Chart Polar Decomposition of Complex Numbers](rational-chart-polar-decomposition-of-complex-numbers.html), for the complex member of the family.
 - [Rational-Chart Polar Decomposition of Split-Complex Numbers](rational-chart-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic companion.
 - [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the torus.

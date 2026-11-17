@@ -103,7 +103,7 @@ exactly, with the other seven parameters fixed: the gauge transformation is the 
 **The charge is the momentum conjugate to the phase.** The action depends on $\theta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
 
 $$
-\varrho=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\theta_{\mathrm{pha}})}
+\rho_{\mathrm{chg}}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\theta_{\mathrm{pha}})}
 =\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},t}\tilde A\bigr),
 $$
 
@@ -168,7 +168,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
 | $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
-| $\varrho=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
+| $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 

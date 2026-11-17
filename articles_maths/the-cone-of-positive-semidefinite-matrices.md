@@ -193,7 +193,7 @@ which were recomputed at $n=2$. So the two-by-two base is the closed ball of the
 **The order of the two-by-two case is the order of the Bloch ball.** A state is positive exactly when it lies in the ball, so
 
 $$
-\rho=\tfrac12(\mathrm{I}+\vec r\cdot\vec\sigma)\ge0\iff\|\vec r\|\le1,
+\rho=\tfrac12(\mathrm{I}+\vec s\cdot\vec\sigma)\ge0\iff\|\vec s\|\le1,
 $$
 
 which was confirmed at $n=2$ on random vectors. So the positivity of the two-by-two case is a single Euclidean inequality, and the boundary of the cone is the sphere of the pure states.

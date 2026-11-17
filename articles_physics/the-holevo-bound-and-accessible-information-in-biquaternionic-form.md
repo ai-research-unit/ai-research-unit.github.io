@@ -33,24 +33,24 @@ An **ensemble** is a finite family of states with weights:
 $$
 \mathcal{E} = \bigl\{p_x,\ \tilde{Ϛ}_{\Psi,x}\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
+\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\vec s_{\Psi},x\bigr), \quad |\vec r_x|\leq1 .
 $$
 
 The **average state** is the convex combination
 
 $$
-\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\bar{\vec r}\bigr),
-\qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
+\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\,\tilde{Ϛ}_{\Psi,x} = \tfrac{1}{2}\bigl(e_t + i\bar{\vec s_{\Psi}}\bigr),
+\qquad \bar{\vec s_{\Psi}} = \sum_x p_x\,\vec r_x ,
 $$
 
-which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,
+which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec s}_{\Psi}|^2)e_t$, a function of the mean Bloch vector. Its entropy is, for a qubit,
 
 $$
-S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
+S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec s}_{\Psi}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$
 
-as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{Ϛ}_{\Psi,x}) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.
+as follows from the spectrum $\tfrac12(1\pm|\bar{\vec s}_{\Psi}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{Ϛ}_{\Psi,x}) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.
 
 ### Measurements as POVMs
 
@@ -93,7 +93,7 @@ $$
 which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{Ϛ}_{\Psi,x}) = 0$, and the Holevo quantity is simply the entropy of the average state,
 
 $$
-\boxed{\;\xi = S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
+\boxed{\;\xi = S(\tilde{Ϛ}_{\Psi}^{\natural}) = h\!\left(\frac{1+|\bar{\vec s}_{\Psi}|}{2}\right)
 = H\bigl(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural}\bigr)\;},
 $$
 
@@ -196,7 +196,7 @@ p_0 = p_1 = \tfrac12, \qquad
 \tilde{Ϛ}_{\Psi,0} = \tilde\Pi_1(\vec u_z), \qquad \tilde{Ϛ}_{\Psi,1} = \tilde\Pi_2(\vec u_z) .
 $$
 
-The average state is $\tilde{Ϛ}_{\Psi}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_t$, so
+The average state is $\tilde{Ϛ}_{\Psi}^{\natural} = \tfrac12 e_t$, with Bloch vector $\bar{\vec s_{\Psi}} = 0$ and biquaternion norm $\tfrac14 e_t$, so
 
 $$
 \xi = S(\tfrac12 e_t) = \log 2 .
@@ -302,15 +302,15 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states and effects) |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion units, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{Ϛ}_{\Psi,x} = \tfrac12(e_t + i\vec r_x)$ | Ensemble state |
+| $\tilde{Ϛ}_{\Psi,x} = \tfrac12(e_t + i\vec s_{\Psi},x)$ | Ensemble state |
 | $\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\tilde{Ϛ}_{\Psi,x}$ | Average state |
 | $\tilde{E}_{\Psi}_y \geq 0$, $\sum_y\tilde{E}_{\Psi}_y = e_t$ | POVM (effects) |
 | $p(y|x) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})$ | Outcome probability (Born rule) |
 | $I_{\mathrm{acc}} = \max_{\{\tilde{E}_{\Psi}_y\}} I(X:Y)$ | Accessible information |
 | $\xi = S(\tilde{Ϛ}_{\Psi}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_{\Psi,x})$ | Holevo quantity |
-| $S(\tilde{Ϛ}_{\Psi}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
+| $S(\tilde{Ϛ}_{\Psi}) = h\!\left(\tfrac{1+|\vec s_{\Psi}|}{2}\right)$ | Von Neumann entropy of a qubit state |
 | $H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$ | Entropy as a function of the biquaternion norm |
-| $\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec r}|^2)e_t$ | Biquaternion norm of the average state |
+| $\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural} = \tfrac14(1-|\bar{\vec s}_{\Psi}|^2)e_t$ | Biquaternion norm of the average state |
 | $\xi = H(\langle\tilde{Ϛ}_{\Psi}^{\natural}\rangle_{\natural})$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
 | $\rho_{XQ} = \sum_x p_x|x\rangle_{*}\langle x|\otimes\tilde{Ϛ}_{\Psi,x}$ | Classical-quantum state, $I(X:Q)=\xi$ |
 | $I(X:Y)\leq\xi\leq\log2$ | Holevo bound and qubit ceiling |

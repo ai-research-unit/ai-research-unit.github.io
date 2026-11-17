@@ -547,7 +547,7 @@ $$
 
 the two differing by $3.086161$ in the largest coefficient. The failure is a property of $\flat$ alone and of the sign with which it is defined, and it is the reason a statement that the exponential is preserved by the four conjugations must be narrowed to three, with the relation above in place of the fourth.
 
-## The Exponential Polar Form
+## The Exponential Form
 
 ### The Exponential of an Element
 
@@ -635,8 +635,8 @@ whose argument is the sum of the argument of the modulus, $\log\rho = \ln\lambda
 
 **Consequences.**
 
-- The exponential polar form of the earlier literature is not a second polar form of this algebra: it is the same decomposition with the modulus written as an exponential and each half of the rotor written as an exponential, and the two presentations differ only in the representative they choose for the argument of the modulus.
-- The domain of the exponential polar form is the invertible set and not the whole algebra, in contrast with the two-factor representation, whose domain is the whole algebra: the exponential is surjective onto the invertible elements and misses the zero divisors, which is the precise form of the failure recorded in the degenerate cases.
+- The exponential form of the earlier literature is not a second polar form of this algebra: it is the same decomposition with the modulus written as an exponential and each half of the rotor written as an exponential, and the two presentations differ only in the representative they choose for the argument of the modulus.
+- The domain of the exponential form is the invertible set and not the whole algebra, in contrast with the two-factor representation, whose domain is the whole algebra: the exponential is surjective onto the invertible elements and misses the zero divisors, which is the precise form of the failure recorded in the degenerate cases.
 - The count of polar forms for this algebra is a count of presentations and not of decompositions. The biquaternion partial forms arise from the three ways of splitting four factors into two pairs; two factors admit one splitting, so this algebra has no partial polar decompositions, and the two-factor grouping is available for every element of the algebra.
 
 ## Comparison with the Other Algebras of the Series

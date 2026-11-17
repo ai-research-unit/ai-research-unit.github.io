@@ -176,7 +176,7 @@ The same values as in the standard formulation.
 
 The reduced state $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2} e_t$ has three notable properties.
 
-**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{B}_{\Psi}$ has the form $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2} e_t$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
+**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{B}_{\Psi}$ has the form $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}| \leq 1$. The pure states are the ones with $|\vec s_{\Psi}| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec s_{\Psi} = 0$. The reduced state $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2} e_t$ corresponds to $\vec s_{\Psi} = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
 **2. It is invariant under all $*$-unitary transformations.** Under a rotor conjugation $\tilde{Ϛ}_{\Psi,1} \mapsto \tilde Q\tilde{Ϛ}_{\Psi,1}\tilde Q^{*}$ with $\tilde Q\tilde Q^{*} = e_t$, the reduced state is unchanged:
 
@@ -216,7 +216,7 @@ $$
 
 using $2\,\mathrm{Sc}(\tilde\Pi_1) = 1$ for a normalised idempotent.
 
-So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec r = \vec e_z$ and purity $1$. The purity and entropy are
+So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec s_{\Psi} = \vec e_z$ and purity $1$. The purity and entropy are
 
 $$
 2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi,\mathrm{prod},1})^2) = 1, \qquad S(\tilde{Ϛ}_{\Psi,\mathrm{prod},1}) = 0.
@@ -235,7 +235,7 @@ The contrast is the operational mark of entanglement: **product states have pure
 
 **1. The reduced state is obtained by a partial scalar part.** The map $\mathrm{Sc}_2$ is linear from $\mathbb{B}\otimes\mathbb{B}$ to $\mathbb{B}$, with $\mathrm{Sc}_2(a\otimes b) = a\,\mathrm{Sc}(b)$, and the reduction is $2\,\mathrm{Sc}_2$. The factor $2$ is the trace of the discarded factor, so nothing beyond $\mathrm{Sc}$ and a count of levels is used.
 
-**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive elements of unit weight. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
+**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive elements of unit weight. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec s_{\Psi} = 0$.
 
 **3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are scalar-free in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.
 

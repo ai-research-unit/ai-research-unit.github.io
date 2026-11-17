@@ -185,7 +185,7 @@ The rule has a price. The metric $\eta$ depends on the element, because the left
 A density matrix is the case in which the whole apparatus collapses. A state $\tilde{Ϛ}_{\Psi}$ is Hermitian, positive and of trace one; it is normal, its eigenprojections are Hermitian, and its eigenbasis is orthonormal. In the matrix model $\eta=I$, the coefficients are the ordinary projections, and the rule becomes the Born rule,
 
 $$
-\boxed{\;p_\pm=\operatorname{tr}\left(\varrho P_\pm\right)
+\boxed{\;p_\pm=\operatorname{tr}\left(\rho_{\mathrm{st}} P_\pm\right)
 =2\operatorname{Sc}\left(\tilde{Ϛ}_{\Psi}\tilde\Pi_\pm\right),
 \qquad
 \tilde\Pi_\pm=\tilde\Pi_\pm^{*}\;}.

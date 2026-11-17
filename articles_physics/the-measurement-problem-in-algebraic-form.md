@@ -31,7 +31,7 @@ These strands are not independent, but they are distinct, and a reformulation ca
 Recall from *Quantum Physics in Biquaternionic Form* that a state of the informational sector is an element
 
 $$
-\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r \in \mathbb{R}^3, \quad |\vec r| \leq 1,
+\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec s_{\Psi}\right), \qquad \vec s_{\Psi} \in \mathbb{R}^3, \quad |\vec s_{\Psi}| \leq 1,
 $$
 
 that a general observable is a Hermitian element
@@ -49,7 +49,7 @@ $$
 with $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$ (scalar part one half), $\tilde\Pi_1 + \tilde\Pi_2 = e_t$, and $\tilde\Pi_1\tilde\Pi_2 = 0$. The Born rule is the normalised Hermitian form $\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$; in the $2\times2$ image it is the pairing formula
 
 $$
-p_\pm = \frac{2\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec r\right),
+p_\pm = \frac{2\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{2\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{2\,\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \tfrac{1}{2}\left(1 \pm \vec u_\Psi\cdot\vec s_{\Psi}\right),
 $$
 
 where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ is the measurement direction. The star is inert on $\mathbb{B}_{\Psi}$, and the scalar part of the product is real and non-negative there, so $p_\pm\in[0,1]$.
@@ -119,7 +119,7 @@ Fix a state $\tilde{Ϛ}_{\Psi} \in \mathbb{B}_{\Psi}$ and an observable $\tilde 
 3. **Their statistical average**, the element
 
 $$
-\boxed{\;\tilde{Ϛ}_{\Psi,d} \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_t + i\,(\vec u_\Psi\cdot\vec r)\,\vec u_\Psi\right)\;}.
+\boxed{\;\tilde{Ϛ}_{\Psi,d} \;=\; p_+\,\tilde\Pi_1 + p_-\,\tilde\Pi_2 \;=\; \tfrac{1}{2}\left(e_t + i\,(\vec u_\Psi\cdot\vec s_{\Psi})\,\vec u_\Psi\right)\;}.
 $$
 
 The third object is the fully dephased state of *Decoherence as Idempotent Projection*, restricted to the measurement direction $\vec u_\Psi$; it is developed in the next section. It is the element obtained when the outcome is not retained.
@@ -131,7 +131,7 @@ The third object is the fully dephased state of *Decoherence as Idempotent Proje
 The last sentence is the selection strand of the problem in algebraic form, and it is worth making exact. The outcome-indexed candidate states are the two idempotents $\tilde\Pi_{1,2}$, with weights $p_\pm$. Among elements of $\mathbb{B}_{\Psi}$ that (i) are diagonal in the pointer basis of $\vec u_\Psi$ — that is, carry no coherence between the $\tilde\Pi_{1,2}$ — and (ii) reproduce the Born probabilities, there is exactly one:
 
 $$
-\tfrac{1}{2}\left(1 + \vec u_\Psi\cdot\vec r\right)\tilde\Pi_1 + \tfrac{1}{2}\left(1 - \vec u_\Psi\cdot\vec r\right)\tilde\Pi_2 = \tilde{Ϛ}_{\Psi,d} .
+\tfrac{1}{2}\left(1 + \vec u_\Psi\cdot\vec s_{\Psi}\right)\tilde\Pi_1 + \tfrac{1}{2}\left(1 - \vec u_\Psi\cdot\vec s_{\Psi}\right)\tilde\Pi_2 = \tilde{Ϛ}_{\Psi,d} .
 $$
 
 Condition (i) says the outcome has been decided in the pointer basis; condition (ii) says the decision has the correct statistics. The unique element satisfying both is the **mixture**, not either outcome. A single outcome is an endpoint of the pointer diameter; the statistics determine an interior point of it. Putting (i) and (ii) together determines the segment, never the endpoint, whenever $0 < p_\pm < 1$.
@@ -149,7 +149,7 @@ $$
 with Kraus operators $\tilde M_{\mathrm{kraus},0} = \sqrt{1-p}\,e_t$ and $\tilde M_{\mathrm{kraus},1,2} = \sqrt{p}\,\tilde\Pi_{1,2}(\vec u)$, acting on the Bloch vector by
 
 $$
-\vec r \;\longmapsto\; (1-p)\,\vec r + p\,(\vec u\cdot\vec r)\,\vec u .
+\vec s_{\Psi} \;\longmapsto\; (1-p)\,\vec s_{\Psi} + p\,(\vec u\cdot\vec s_{\Psi})\,\vec u .
 $$
 
 Two properties of its fully dephased limit ($p = 1$) matter here. In the measurement setting the pointer axis is the eigendirection of the measured observable, $\vec u = \vec u_\Psi$, so that the pointer idempotents $\tilde\Pi_{1,2}(\vec u)$ coincide with the spectral idempotents $\tilde\Pi_{1,2}$ of $\tilde H_\Psi$ and $p_\pm = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})$ are the Born probabilities.
@@ -179,7 +179,7 @@ since $\Lambda_\pm(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_{1,2}$ and $p_\pm = \langle\ti
 - **The selection channels do not preserve the Born statistics.** $\Lambda_+$ sends every state to $\tilde\Pi_1$, so it assigns probability $1$ to the outcome $+$ regardless of $\tilde{Ϛ}_{\Psi}$, whereas the Born probability is $p_+$. A selection channel is a legitimate operation, but it is not a statistics-preserving description of the ensemble.
 - **The dephasing channel is a conditional expectation; the selection channels are not.** $Ξ_{\mathrm{deph},1}$ is the conditional expectation that preserves the scalar part onto the commutative pointer subalgebra $A = \mathbb{C}\tilde\Pi_1(\vec u) \oplus \mathbb{C}\tilde\Pi_2(\vec u)$, hence an orthogonal projection with respect to the plain form. The reset channels $\Lambda_\pm$ are idempotent but fail the module property $\Lambda(\tilde{Q}_3\tilde{Q}\tilde{Q}_1) = \tilde{Q}_3\,\Lambda(\tilde{Q})\,\tilde{Q}_1$ for $\tilde{Q}_3, \tilde{Q}_1 \in A$; for example $\Lambda_+(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_2) = p_-\,\tilde\Pi_1$ while $\Lambda_+(\tilde{Ϛ}_{\Psi})\,\tilde\Pi_2 = 0$. So "idempotent channel" does not by itself identify the statistics-preserving operation, and the two operations that the problem contrasts — the average and the selection — are both present in the algebra as channels, with different properties.
 
-Geometrically the situation is exact and easy to see. Under $Ξ_{\mathrm{deph},p}$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\vec u\cdot\vec r)\,\vec u$. The two outcomes are the endpoints $\pm\vec u$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
+Geometrically the situation is exact and easy to see. Under $Ξ_{\mathrm{deph},p}$ the Bloch vector moves along a straight line toward the pointer axis; at $p = 1$ it lands on the pointer diameter at the interior point $(\vec u\cdot\vec s_{\Psi})\,\vec u$. The two outcomes are the endpoints $\pm\vec u$ of that diameter. So the passage from "the measurement has interacted with the environment" to "the measurement has an outcome" is the passage from the segment to an endpoint — a passage that the statistics-preserving channel does not make, and that the algebra does not otherwise perform. That is the sharpened algebraic statement of the "and/or" strand of the measurement problem.
 
 ## The Selection Step
 
@@ -211,7 +211,7 @@ The changes are changes in statement, not in physics, and they are worth setting
 
 1. **"Two incompatible dynamics" becomes "one operation form, two element types."** The standard problem is often stated as a clash between $*$-unitary evolution and projective collapse, two postulates of different character. In the framework both are $\Gamma_{\tilde{Q}_3}$ for $\tilde{Q}_3$ $*$-unitary or idempotent, and the dichotomy is a property of $\tilde{Q}_3$. This does not remove the dichotomy and does not fix the cut; it changes what is primitive in its statement. Whether it reduces a "postulate count" is a question about exposition, not about the world.
 
-2. **The mixedness of the decohered state is one scalar, and the residual gap is geometric.** $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(|\vec r|^2 - 1)e_t$ measures the loss of idempotency, and full dephasing is the conditional expectation that preserves the scalar part onto the pointer subalgebra. The gap between "mixture" and "outcome" is then exactly the gap between an interior point of the pointer diameter and its endpoints. This is a clean and exact way to state that strand; it is a picture, not a mechanism.
+2. **The mixedness of the decohered state is one scalar, and the residual gap is geometric.** $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(|\vec s_{\Psi}|^2 - 1)e_t$ measures the loss of idempotency, and full dephasing is the conditional expectation that preserves the scalar part onto the pointer subalgebra. The gap between "mixture" and "outcome" is then exactly the gap between an interior point of the pointer diameter and its endpoints. This is a clean and exact way to state that strand; it is a picture, not a mechanism.
 
 3. **The statistics-preserving and selection operations are separated exactly.** $Ξ_{\mathrm{deph},1}$ is the unique coherence-free, statistics-preserving element-assignment, and for a state $\tilde{Ϛ}_{\Psi}$ it is the convex average $p_+\Lambda_+ + p_-\Lambda_-$ of the two selection channels. The framework thus exhibits, as algebraic objects, both what decoherence gives and what it does not give, and the relation between them. This is a sharpening of the standard statement, not a change in its content.
 
@@ -251,7 +251,7 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State, $\|\vec r\| \leq 1$ (Bloch ball) |
+| $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ | State, $\|\vec s_{\Psi}\| \leq 1$ (Bloch ball) |
 | $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Hermitian observable |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, projective outcome) |
 | $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)$ | Born weight at normalisation |
@@ -266,8 +266,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u$ at strength $p$ |
 | $\Lambda_\pm(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})\tilde\Pi_{1,2}$ | Selection (reset) channels onto the outcomes |
 | $A = \mathbb{C}\tilde\Pi_1 \oplus \mathbb{C}\tilde\Pi_2$ | Pointer (commutative) subalgebra |
-| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\vec r\|^2)$ |
-| $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(\|\vec r\|^2 - 1)e_t$ | Deviation from idempotency (mixedness) |
+| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2)$ | Purity; $= \tfrac{1}{2}(1 + \|\vec s_{\Psi}\|^2)$ |
+| $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(\|\vec s_{\Psi}\|^2 - 1)e_t$ | Deviation from idempotency (mixedness) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

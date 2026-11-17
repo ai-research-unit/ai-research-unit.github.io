@@ -25,7 +25,7 @@ Three of the four collapse as in the complex category, and the reason is the sam
 
 **The absence of spin, precisely located.** The biquaternion category has a half angle, a double cover and a spinor action. This category has a full angle and no cover, and the reason is not the commutativity alone but the fact that the eigenvalues of the one-sided operator are the *idempotent coordinates*, which are linear in $Q$. A half angle would need a square root: the operator of a square root would be a square root of the operator, and the spectrum of $M_Q$ is $\{\lambda_+,\lambda_-\}$, so a square root exists if and only if both coordinates are non-negative. So the half angle exists, but only on a cone, and it is a real square root and not a lift of a rotation. This is stated in the section on the pair.
 
-**Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate, the norms and the subspaces are *$M_2(\mathbb{R})$ Hyperbolic Representation*. The polar decomposition of the algebra is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Exponential Polar Decomposition of Split-Complex Numbers*; the one-sided operators in the abstract setting are *One-Sided Operators on a Clifford Algebra* and *Operators Acting on Two Sides*, and the commutative complex companion of this article is *Operators on the Reduced Biquaternions*.
+**Boundaries.** The model, the frame, the trace, the determinant, the projectors, the adjugate, the norms and the subspaces are *$M_2(\mathbb{R})$ Hyperbolic Representation*. The polar decomposition of the algebra is *Modulus–Unit Polar Decomposition of Split-Complex Numbers* and *Polar Decomposition of Split-Complex Numbers*; the one-sided operators in the abstract setting are *One-Sided Operators on a Clifford Algebra* and *Operators Acting on Two Sides*, and the commutative complex companion of this article is *Operators on the Reduced Biquaternions*.
 
 **Conventions.** The carrier has the basis $(1,j)$; a column of two real numbers is read as $x+jx'$. The operator $M_Q$ is multiplication by $Q$, with matrix $\mathsf{M}_2(Q)=qI_2+q'J$, $J=\begin{pmatrix}0&1\\1&0\end{pmatrix}$; $M_Q=L_Q=R_Q$. The two-sided operator is $L_{Q}R_{P}(X)=QXP$ on the carrier and $K_{Q,P}$ on the ambient. The split form is $g=\operatorname{diag}(1,-1)$; the idempotents are $\Pi_\pm$; the coordinates are $\lambda_\pm=q\pm q'$.
 
@@ -364,7 +364,7 @@ The two ranks differ exactly on the invertibles, where the first is two and the 
 | $\ell$ | the length, in $\{0,1\}$ inside the span | this article |
 | $c(Q,P)$ | the coefficient array of the pair, of rank one | this article |
 | $\operatorname{Ann}(Q)$ | the annihilator, the kernel of $M_Q$ | *Ideals and Peirce Decomposition of the Split-Complex Algebra* |
-| $SO^{+}(1,1)$ | the boost group, the identity component of the invertibles | *Exponential Polar Decomposition of Split-Complex Numbers* |
+| $SO^{+}(1,1)$ | the boost group, the identity component of the invertibles | *Polar Decomposition of Split-Complex Numbers* |
 
 ## Further Reading
 

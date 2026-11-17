@@ -193,15 +193,15 @@ The identities $S_0=J\mathcal{M}_{\mathrm{mod}}^{1/2}$, $J^2=1$, $J\mathcal{M}_{
 
 Take the faithful state with Bloch vector
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf{e}\big),\qquad \vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec r|^2=\tfrac{29}{100}<1 .
+\tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec s_{\Psi}\cdot\mathbf{e}\big),\qquad \vec s_{\Psi}=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),\qquad |\vec s_{\Psi}|^2=\tfrac{29}{100}<1 .
 $$
 Its eigenvalues are $\lambda_\pm=\tfrac12\pm\tfrac{\sqrt{29}}{20}$, and
 $$
 \tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=a_0e_t+i\vec a\cdot\mathbf{e},\qquad
 a_0=-\tfrac12\log\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qquad
-\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_r,
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\vec u_s,
 $$
-with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec r$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $r'_t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(r'_t+i)$ agrees with $\omega(\sigma_{-r'_t}(B)A)$ and with $F_{BA}(-r'_t)$ to machine precision, and the flow identities hold to the same order.
+with $\vec a=(-0.335401,-0.447202,0.223601)$. The direction $\vec s_{\Psi}$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $r'_t$ with generic $\tilde{Q}_3,\tilde Q_1$: $F_{AB}(r'_t+i)$ agrees with $\omega(\sigma_{-r'_t}(B)A)$ and with $F_{BA}(-r'_t)$ to machine precision, and the flow identities hold to the same order.
 
 A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H_\Psi=\omega\tilde\Pi_-$ and $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(0.746494,0.253506)$ in the $\vec e_z$ basis (the occupied mode second, so that $\tilde\Pi_-\mapsto\mathrm{diag}(0,1)$), and
 $$
@@ -221,7 +221,7 @@ This is not a choice made to fit the theory; it is the involution that defines t
 
 **The state is not supplied.** $S_0$ as a map is state-independent — $\tilde{Q}_3\mapsto\tilde{Q}_3^{*}$ for every $\tilde{Ϛ}_{\Psi}$ — but the polar decomposition is not: $\mathcal{M}_{\mathrm{mod}}$ and $J$ depend on $\tilde{Ϛ}_{\Psi}$, through the inner product. And the framework's most distinguished state is the tracial one,
 $$
-\tilde{Ϛ}_{\Psi}=\tfrac12 e_t \qquad(\vec r=0),
+\tilde{Ϛ}_{\Psi}=\tfrac12 e_t \qquad(\vec s_{\Psi}=0),
 $$
 for which
 $$

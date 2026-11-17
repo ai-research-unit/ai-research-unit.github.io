@@ -1,4 +1,4 @@
-# __Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number__
+# __Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number__
 
 ## Introduction
 
@@ -12,7 +12,7 @@ Q=\lambda_+\Pi_++\lambda_-\Pi_-,
 \Pi_\pm=\tfrac12(1\pm j),
 $$
 
-with $\lambda_\pm$ the eigenvalues and $\Pi_\pm$ the fixed central idempotents. The **exponential polar decomposition** of *Exponential Polar Decomposition of Split-Complex Numbers* writes an invertible $Q$ as
+with $\lambda_\pm$ the eigenvalues and $\Pi_\pm$ the fixed central idempotents. The **polar decomposition** of *Polar Decomposition of Split-Complex Numbers* writes an invertible $Q$ as
 
 $$
 Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta_{\mathrm{hpa}} j),
@@ -90,7 +90,7 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Decomposition | $Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 
-### The Exponential Polar Decomposition
+### The Polar Decomposition
 
 Every unit $Q\in{\mathbb{C}_{\mathrm{spl}}}^\times=\{q^2-q'^2\neq0\}$ has a unique writing
 
@@ -100,7 +100,7 @@ Q=\epsilon\exp(Q_{\log})=r\,\epsilon\exp(\theta_{\mathrm{hpa}} j),
 Q_{\log}=\ln r+j\theta_{\mathrm{hpa}},
 $$
 
-with $r>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $r=\sqrt{\lvert q^2-q'^2\rvert}$ is the modulus, $\theta_{\mathrm{hpa}}$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\theta_{\mathrm{hpa}} j)=Q/r$, of modulus one. These are the statements of *Exponential Polar Decomposition of Split-Complex Numbers*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Four Components*.
+with $r>0$, $\theta_{\mathrm{hpa}}\in\mathbb{R}$ and $\epsilon\in\{\pm1,\pm j\}$. The factor $r=\sqrt{\lvert q^2-q'^2\rvert}$ is the modulus, $\theta_{\mathrm{hpa}}$ is the hyperbolic angle, and $\epsilon$ is the component sign; the unit factor is $u=\epsilon\exp(\theta_{\mathrm{hpa}} j)=Q/r$, of modulus one. These are the statements of *Polar Decomposition of Split-Complex Numbers*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Four Components*.
 
 | Polar item | Value |
 |---|---|
@@ -412,7 +412,7 @@ The matrix $\mathsf M_2(\epsilon)$ is $I$, $-I$, $K$ or $-K$ for $\epsilon=1,-1,
 
 The matrix picture shows that the polar decomposition is not a different decomposition of the matrix: it is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a sign matrix and a positive diagonal matrix. The sign matrix is discrete, and the positive diagonal is the exponential of the real diagonal $(\ln r+\theta_{\mathrm{hpa}},\ln r-\theta_{\mathrm{hpa}})$.
 
-The full case-by-case computation is in *Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers*; the examples here isolate the dictionary.
+The full case-by-case computation is in *Worked Examples of Polar Decomposition of Split-Complex Numbers*; the examples here isolate the dictionary.
 
 ### The Four Components of One Modulus and One Angle
 
@@ -463,7 +463,7 @@ The exponent is $Q_{\log}=\ln4+j\ln2$, with eigenvalues $\ln4\pm\ln2=\ln8$ and $
 
 ## Summary
 
-For a split-complex unit $Q=q+jq'$, the eigenvalue decomposition and the exponential polar decomposition are related by
+For a split-complex unit $Q=q+jq'$, the eigenvalue decomposition and the polar decomposition are related by
 
 $$
 Q=\lambda_+\Pi_++\lambda_-\Pi_-
@@ -534,13 +534,13 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the eight cases and the reconstruction tables.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Worked Examples of Polar Decomposition of Split-Complex Numbers](worked-examples-of-polar-decomposition-of-split-complex-numbers.html), for the eight cases and the reconstruction tables.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Split-Complex Numbers](worked-examples-of-polar-decomposition-with-eigenbasis-of-split-complex-numbers.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
 - [Split-Complex Elementary Functions](split-complex-elementary-functions.html), for the exponential, the logarithm and the branches.
-- [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the decomposition, the components, existence and uniqueness, and the matrix picture.
+- [Polar Decomposition of Split-Complex Numbers](polar-decomposition-of-split-complex-numbers.html), for the decomposition, the components, existence and uniqueness, and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Split-Complex Numbers](modulus-unit-polar-decomposition-of-split-complex-numbers.html), for the modulus and the unit factor.
 - [Split-Complex Exponential and Lie Group Structure](split-complex-exponential-and-lie-group-structure.html), for the group of invertibles and the exponential parametrisation.
-- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the reduced biquaternion analogue.
-- *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
+- [Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion](relations-between-polar-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the reduced biquaternion analogue.
+- *Relations between Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

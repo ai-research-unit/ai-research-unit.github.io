@@ -1,4 +1,4 @@
-# __Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion__
+# __Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion__
 
 ## Introduction
 
@@ -12,7 +12,7 @@ $$
 \Pi_\pm=\tfrac12(1\pm j),
 $$
 
-with $\lambda_\pm$ the complex eigenvalues and $\Pi_\pm$ the fixed central idempotents. The **exponential polar decomposition** of *Exponential Polar Decomposition of Reduced Biquaternions* writes an invertible element $\breve Q$ as
+with $\lambda_\pm$ the complex eigenvalues and $\Pi_\pm$ the fixed central idempotents. The **polar decomposition** of *Polar Decomposition of Reduced Biquaternions* writes an invertible element $\breve Q$ as
 
 $$
 \breve Q=\exp(\breve Q_{\log})
@@ -104,7 +104,7 @@ with $\Pi_\pm$ primitive, orthogonal, complete and central. These are the statem
 | Eigenprojections | $\Pi_\pm=\tfrac12(1\pm j)$ |
 | Decomposition | $\breve Q=\lambda_+\Pi_++\lambda_-\Pi_-$ |
 
-### The Exponential Polar Decomposition
+### The Polar Decomposition
 
 Every unit $\breve Q\in{\mathbb{B}_{\mathrm{red}}}^\times=\{Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\neq0\}$ has a unique writing
 
@@ -125,7 +125,7 @@ $$
 u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}),
 $$
 
-and $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ in the principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$ (boundary half-open). The factor $\breve r$ is the modulus, $u$ the unit factor, $\theta_{\mathrm{rpd}}$ the boost, and $\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ the two phases. These are the statements of *Exponential Polar Decomposition of Reduced Biquaternions*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Exponential Coordinates*.
+and $\rho>0$, $\theta_{\mathrm{rpd}}\in\mathbb{R}$, $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ in the principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$ (boundary half-open). The factor $\breve r$ is the modulus, $u$ the unit factor, $\theta_{\mathrm{rpd}}$ the boost, and $\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ the two phases. These are the statements of *Polar Decomposition of Reduced Biquaternions*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Exponential Coordinates*.
 
 | Polar item | Value |
 |---|---|
@@ -232,7 +232,7 @@ $$
 
 is a bijection from $\{\rho>0,\ \theta_{\mathrm{rpd}}\in\mathbb{R},\ \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi\}$, with the boundary half-open, onto the set of pairs of nonzero complex numbers. Its inverse is the formula above.
 
-*Proof.* The map is the coordinate change of *Exponential Polar Decomposition of Reduced Biquaternions*, §*The Four Real Coordinates*, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*.
+*Proof.* The map is the coordinate change of *Polar Decomposition of Reduced Biquaternions*, §*The Four Real Coordinates*, with $C_\pm=\lambda_\pm$; its inverse and its lattice ambiguity are established there. The only new point is the identification $C_\pm=\lambda_\pm$, which is the eigenvalue formula of *Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion*.
 
 The inverse formulas are collected in the table.
 
@@ -419,7 +419,7 @@ $$
 \exp^{-1}(\breve Q)=\operatorname{Log}\breve Q+\ker\exp\cong\mathbb{Z}^2.
 $$
 
-In the principal diamond exactly one point of the fibre lies, so the polar data $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are unique in the diamond and unique modulo $\Lambda$ in general. This is the spectral content of the uniqueness theorem of *Exponential Polar Decomposition of Reduced Biquaternions*: the ambiguity is one integer for each eigenvalue, and the diamond is a fundamental domain for the two integers.
+In the principal diamond exactly one point of the fibre lies, so the polar data $(\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are unique in the diamond and unique modulo $\Lambda$ in general. This is the spectral content of the uniqueness theorem of *Polar Decomposition of Reduced Biquaternions*: the ambiguity is one integer for each eigenvalue, and the diamond is a fundamental domain for the two integers.
 
 | Item | Value |
 |---|---|
@@ -469,7 +469,7 @@ The first has eigenvalues $\rho e^{\pm\theta_{\mathrm{rpd}}}=\rho_\pm$; the seco
 
 The matrix picture shows that the polar decomposition is the factorisation of the diagonal matrix $\operatorname{diag}(\lambda_+,\lambda_-)$ into a positive real diagonal factor $\operatorname{diag}(\rho e^{\theta_{\mathrm{rpd}}},\rho e^{-\theta_{\mathrm{rpd}}})$ and a $*$-unitary diagonal factor $\operatorname{diag}(e^{i\theta_+},e^{i\theta_-})$. The boost is the logarithm of the ratio of the two positive scales; the phases are the arguments.
 
-The full case-by-case computation is in *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*; the examples here isolate the dictionary.
+The full case-by-case computation is in *Worked Examples of Polar Decomposition of Reduced Biquaternions*; the examples here isolate the dictionary.
 
 ### A Generic Element
 
@@ -543,7 +543,7 @@ The scalar rows $1+i$, $i$ and $-1$ have $Q_{\blacktriangledown}=0$ and repeated
 
 ### The Hyperbolic Line and the Phases
 
-For $\breve Q=\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ the eigenvalues are $e^{\theta_{\mathrm{rpd}}}$ and $e^{-\theta_{\mathrm{rpd}}}$, both positive real; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{pha}}=\theta_{\mathrm{phb}}=0$. For $\breve Q=i$ the two eigenvalues are both $i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=0$. For $\breve Q=ij$ the eigenvalues are $i$ and $-i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{phb}}=\pi/2$. For $\breve Q=j$ the eigenvalues are $1$ and $-1$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=-\pi/2$, on the boundary of the principal diamond. These are the same four cases as in *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*, cases 3 to 6, read through the spectrum.
+For $\breve Q=\exp(j\theta_{\mathrm{rpd}})=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ the eigenvalues are $e^{\theta_{\mathrm{rpd}}}$ and $e^{-\theta_{\mathrm{rpd}}}$, both positive real; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{pha}}=\theta_{\mathrm{phb}}=0$. For $\breve Q=i$ the two eigenvalues are both $i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=0$. For $\breve Q=ij$ the eigenvalues are $i$ and $-i$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=0$, $\theta_{\mathrm{phb}}=\pi/2$. For $\breve Q=j$ the eigenvalues are $1$ and $-1$; the dictionary gives $\rho=1$, $\theta_{\mathrm{rpd}}=0$, $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=-\pi/2$, on the boundary of the principal diamond. These are the same four cases as in *Worked Examples of Polar Decomposition of Reduced Biquaternions*, cases 3 to 6, read through the spectrum.
 
 ### The Kernel and the Branch
 
@@ -557,7 +557,7 @@ with exponents $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})=(\pi,0),(-\pi,0),(
 
 ## Summary
 
-For a reduced biquaternion unit $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, the eigenvalue decomposition and the exponential polar decomposition are related by
+For a reduced biquaternion unit $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$, the eigenvalue decomposition and the polar decomposition are related by
 
 $$
 \breve Q=\lambda_+\Pi_++\lambda_-\Pi_-
@@ -648,12 +648,12 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the eight cases and the reconstruction tables.
-- [Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the eight cases and the reconstruction tables.
+- [Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions](worked-examples-of-polar-decomposition-with-eigenbasis-of-reduced-biquaternions.html), for the same eight cases read in the eigenbasis, with the idempotents and the spinors.
 - [Eigenvalue Decomposition and Eigenbasis of a Reduced Biquaternion](eigenvalue-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the spectrum, the characteristic polynomial, the idempotents and the degenerate regimes.
 - [Reduced Biquaternion Elementary Functions](reduced-biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal domain.
-- [Exponential Polar Decomposition of Reduced Biquaternions](exponential-polar-decomposition-of-reduced-biquaternions.html), for the decomposition, existence and uniqueness and the matrix picture.
+- [Polar Decomposition of Reduced Biquaternions](polar-decomposition-of-reduced-biquaternions.html), for the decomposition, existence and uniqueness and the matrix picture.
 - [Modulus–Unit Polar Decomposition of Reduced Biquaternions](modulus-unit-polar-decomposition-of-reduced-biquaternions.html), for the modulus, the torus and the uniqueness of the pair.
-- [Relations between Exponential Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
-- *Relations between Exponential Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
+- [Relations between Polar Decomposition and Eigenbasis of a Split-Complex Number](relations-between-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the real two-dimensional analogue.
+- *Relations between Polar Decomposition and Eigenbasis of a Biquaternion*, for the noncommutative analogue.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

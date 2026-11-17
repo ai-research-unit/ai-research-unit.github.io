@@ -38,7 +38,7 @@ $$
 
 because $E_{k,k+1}^2=0$. The gauge torus acts by conjugation and rescales the nilpotents.
 
-The article develops the exponential, its convergence, the group law for commuting matrices, the Lie algebra and the Lie bracket, the local diffeomorphism and the surjectivity, the standard subgroups and the exponential of the root and the nilpotents. It assumes the trace, the determinant, the Hermitian structure and the spectral theorem. The polar decomposition and the exponential-polar decomposition are the next articles.
+The article develops the exponential, its convergence, the group law for commuting matrices, the Lie algebra and the Lie bracket, the local diffeomorphism and the surjectivity, the standard subgroups and the exponential of the root and the nilpotents. It assumes the trace, the determinant, the Hermitian structure and the spectral theorem. The polar decomposition and the polar decomposition in exponential coordinates are the next articles.
 
 ## The Exponential Map
 
@@ -342,4 +342,4 @@ The Lie algebra $\mathfrak{gl}_5$ has the commutator bracket; the one-parameter 
 - [The Involution and the Hermitian Structure of $M_5(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m5c.html), for the $*$-unitary group and the compact real form.
 - [Spectral Theory and the Spectral Projectors of $M_5(\mathbb{C})$](spectral-theory-and-the-spectral-projectors-of-m5c.html), for the functional calculus and the exponential of a Hermitian matrix.
 - [The Polar Decomposition of $M_5(\mathbb{C})$](the-polar-decomposition-of-m5c.html), for the polar decomposition and the positive cone.
-- [The Exponential-Polar Decomposition of $M_5(\mathbb{C})$](the-exponential-polar-decomposition-of-m5c.html), for the combination of the exponential and the polar decomposition.
+- [The Polar Decomposition of $M_5(\mathbb{C})$ in Exponential Coordinates](the-polar-decomposition-of-m5c-in-exponential-coordinates.html), for the combination of the exponential and the polar decomposition.

@@ -22,7 +22,7 @@ The pair is not unique as it stands. The canonical pair is fixed by four conditi
 
 The article works in the algebra throughout. It gives the coordinate formula for $\tilde Q_H$, the quadratic identity of $\tilde Q_H$ and the three cases of the Moore–Penrose inverse that follow from it, the invariants carried by the positive factor, the continuity of $\tilde Q_H$ on the whole algebra, the discontinuity of $\tilde Q_0$ at the null cone and at the origin, and six worked elements.
 
-The article treats the general case, on the whole algebra. It does not treat the refinement of the two factors into a scale, a central phase, a Hermitian boost and a unit real quaternion; nor the exponential polar decomposition; nor the spectral decomposition. Those are separate articles. The two factors here are the general ones, and the finer words are separate objects, not a rewriting of this pair.
+The article treats the general case, on the whole algebra. It does not treat the refinement of the two factors into a scale, a central phase, a Hermitian boost and a unit real quaternion; nor the polar decomposition; nor the spectral decomposition. Those are separate articles. The two factors here are the general ones, and the finer words are separate objects, not a rewriting of this pair.
 
 Off the cone the pair is the Cartan pair of the group of invertibles: the Hermitian factor is positive definite, the isometry factor is $*$-unitary, and both projections are $e_t$. The refinement of that pair into four factors is *The Complete Polar Decomposition of an N-Regular Biquaternion*, and the closed forms on the two sectors of the cone are *The Polar Decomposition of an N-Degenerate Biquaternion*.
 

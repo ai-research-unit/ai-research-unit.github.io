@@ -1,4 +1,4 @@
-# __The Exponential Polar Decomposition of $M_3(\mathbb{C})$__
+# __The Polar Decomposition of $M_3(\mathbb{C})$ in Exponential Coordinates__
 
 ## Introduction
 
@@ -67,7 +67,7 @@ The left polar is the positive-$*$-unitary order $P'U'$; the right polar is the 
 
 **The Hermitian logarithms.** Every positive definite $P'$ has a unique Hermitian logarithm $P'=e^{H}$ with $H=H^{*}=\log P'$. Every $*$-unitary $U'$ has a Hermitian logarithm $U'=e^{iK}$ with $K=K^{*}$, defined modulo the eigenvalues of $K$ shifted by $2\pi$; the principal logarithm chooses the eigenvalues in $(-\pi,\pi]$.
 
-**Theorem (exponential polar decomposition).** Every invertible $A$ can be written as
+**Theorem (polar decomposition).** Every invertible $A$ can be written as
 
 $$
 A=e^{H}e^{iK},
@@ -99,7 +99,7 @@ The Hermitian factors commute, and the eigenvalues of $A$ are $e^{\lambda_k+i\th
 
 ## The Normal Case
 
-**Theorem.** For invertible $A$ with exponential polar decomposition $A=e^{H}e^{iK}$, the following are equivalent:
+**Theorem.** For invertible $A$ with polar decomposition $A=e^{H}e^{iK}$, the following are equivalent:
 
 1. $A$ is normal: $AA^{*}=A^{*}A$;
 2. $H$ and $K$ commute: $[H,K]=0$;
@@ -136,7 +136,7 @@ and the two matrices differ in the $(1,1)$, $(1,2)$, $(2,1)$ and $(2,2)$ entries
 
 ## The Cartan Decomposition
 
-**The group decomposition.** The exponential polar decomposition is the left Cartan decomposition
+**The group decomposition.** The polar decomposition is the left Cartan decomposition
 
 $$
 GL_3(\mathbb{C})=\exp(\operatorname{Herm}_3)\,U(3),
@@ -229,11 +229,11 @@ $$
 
 ## The Singular Case
 
-**No exponential polar for singular matrices.** If $A$ is singular, it has no factorisation $A=e^{H}e^{iK}$ with $H,K$ Hermitian, because $e^{H}$ is positive definite and $e^{iK}$ is $*$-unitary, so their product is invertible. The exponential polar decomposition exists exactly on $GL_3(\mathbb{C})$.
+**No exponential coordinates for singular matrices.** If $A$ is singular, it has no factorisation $A=e^{H}e^{iK}$ with $H,K$ Hermitian, because $e^{H}$ is positive definite and $e^{iK}$ is $*$-unitary, so their product is invertible. The polar decomposition exists exactly on $GL_3(\mathbb{C})$.
 
 **The polar decomposition survives.** The right polar decomposition $A=UP$ exists for every $A$, with $P$ positive semidefinite and $U$ a partial isometry; the left polar decomposition $A=P'U'$ exists with $P'=(AA^{*})^{1/2}$ positive semidefinite and $U'$ a partial isometry. The exponential form requires the invertibility of $P$ and $P'$.
 
-**The limit.** For a family $A(\epsilon)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(\epsilon)=\log P(\epsilon)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The exponential polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.
+**The limit.** For a family $A(\epsilon)$ of invertible matrices tending to a singular $A(0)$, the Hermitian factor $H(\epsilon)=\log P(\epsilon)$ tends to $-\infty$ in the direction of the kernel; the $*$-unitary factor may have a limit or not. The polar decomposition degenerates at the singular set, while the polar decomposition with the partial isometry continues.
 
 **Example.** The singular matrix
 
@@ -251,11 +251,11 @@ $$
 
 The Hermitian factor is $H_\epsilon=\operatorname{diag}(0,\log\epsilon,\log\epsilon)$, which tends to $-\infty$ on the second and third coordinates, and the $*$-unitary factor is $I$. The limit $A_0$ is singular and is not itself an exponential.
 
-**The singular values.** In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The exponential polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.
+**The singular values.** In the right exponential form $A=e^{iK'}e^{H'}$, the singular values of $A$ are $e^{h_k}$, where $h_k$ are the eigenvalues of $H'$. The polar decomposition writes the singular values as exponentials of the Hermitian eigenvalues; the $*$-unitary factor carries the phases. At a zero singular value the logarithm diverges, which is the analytic form of the degeneration.
 
 ## The Root, the Frame and the Gauge
 
-**The root.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the exponential polar decomposition is
+**The root.** A root $H$ with $H^{3}=I$ and simple spectrum is diagonalisable, with spectral projectors $P_k$ and eigenvalues $\omega_k$. It is $*$-unitary exactly when it is normal, equivalently when the projectors $P_k$ are Hermitian. For the standard root $H_0=\operatorname{diag}(1,\omega,\omega^{2})$ and the cyclic permutation root, which are $*$-unitary, the right polar decomposition is $H=H\cdot I$ and the polar decomposition is
 
 $$
 H=e^{iK},\qquad
@@ -264,7 +264,7 @@ $$
 
 where $P_k$ is the projector for $\omega_k$, with $\omega_1=1$. The Hermitian factor is $I$ and the Hermitian exponent is $0$. For a non-normal root the Hermitian factor is $P=(H^{*}H)^{1/2}\neq I$ and the phase factor is the $*$-unitary $(H^{*}H)^{-1/2}H$; the root is not $*$-unitary. The idempotents $P_k$ themselves are never $*$-unitary.
 
-**The frame.** For a frame $S\in GL_3$ the exponential polar decomposition separates the phases from the stretching:
+**The frame.** For a frame $S\in GL_3$ the polar decomposition separates the phases from the stretching:
 
 $$
 S=e^{H}e^{iK},\qquad
@@ -285,23 +285,23 @@ The Hermitian exponent of the frame is the real part of $t$ in the appropriate t
 
 ## Comparison with the Split Case
 
-**The complex case.** Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{>0}(3)$ is definite and convex, and every invertible matrix has the exponential polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.
+**The complex case.** Over $\mathbb{C}$ the exponential is surjective onto $GL_3(\mathbb{C})$, the positive cone $\operatorname{Herm}_{>0}(3)$ is definite and convex, and every invertible matrix has the polar decomposition $A=e^{H}e^{iK}$ with $H$ unique and $K$ modulo $2\pi$.
 
 **The split real cases.** In the real split algebras of the biquaternion series the exponential is not surjective onto the invertible group, and the polar decomposition carries an indefinite factor: the split-complex exponential misses the negative real axis, and the split-quaternion exponential misses matrices with a negative eigenvalue and a nontrivial Jordan block. The positive cone is replaced by an indefinite cone, and the polar factors can change sign.
 
-**The reason.** The difference is the spectrum. Over $\mathbb{C}$ every nonzero complex number has a logarithm, so every invertible Jordan block has a logarithm; over $\mathbb{R}$ a negative eigenvalue has no real logarithm, and the indefinite norm allows null directions that the definite Hermitian cone does not have. The complex algebra has no null cone in the trace form, and the exponential polar decomposition is global on $GL_3$.
+**The reason.** The difference is the spectrum. Over $\mathbb{C}$ every nonzero complex number has a logarithm, so every invertible Jordan block has a logarithm; over $\mathbb{R}$ a negative eigenvalue has no real logarithm, and the indefinite norm allows null directions that the definite Hermitian cone does not have. The complex algebra has no null cone in the trace form, and the polar decomposition is global on $GL_3$.
 
 **The biquaternion case.** At $n=2$ the theorem is the same: every invertible $A\in M_2(\mathbb{C})$ is $e^{H}e^{iK}$ with $H,K$ Hermitian $2\times2$ matrices. The biquaternion algebra is the $n=2$ case of the same complex matrix theorem; the split real forms are different real sections of the same complex group.
 
 ## Summary
 
-Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the exponential polar decomposition
+Every invertible $A\in M_3(\mathbb{C})$ has a unique left polar decomposition $A=P'U'$ with $P'=(AA^{*})^{1/2}$ positive definite and $U'=P'^{-1}A$ $*$-unitary. Writing $P'=e^{H}$ and $U'=e^{iK}$ gives the polar decomposition
 
 $$
 A=e^{H}e^{iK},
 $$
 
-with $H$ Hermitian unique and $K$ Hermitian modulo $2\pi$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^{*}$, $H'=U^{*}HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_3=\exp(\operatorname{Herm}_3)U(3)$, the other global form being $GL_3=U(3)\exp(\operatorname{Herm}_3)$; both are diffeomorphisms, with real dimensions $18=9+9$. The exponential polar decomposition exists exactly on $GL_3$; it degenerates at the singular set, where the Hermitian logarithm diverges. Over $\mathbb{C}$ the exponential is surjective and the positive cone is definite, in contrast with the split real cases.
+with $H$ Hermitian unique and $K$ Hermitian modulo $2\pi$. The right polar decomposition is $A=UP=e^{iK'}e^{H'}$, with $U'=U$, $P'=UPU^{*}$, $H'=U^{*}HU$, $K'=K$. The two orderings coincide exactly when $A$ is normal, equivalently when $[H,K]=0$; then $A$ is unitarily diagonalisable with eigenvalues $e^{\lambda_k+i\theta_k}$. The decomposition is the left Cartan decomposition $GL_3=\exp(\operatorname{Herm}_3)U(3)$, the other global form being $GL_3=U(3)\exp(\operatorname{Herm}_3)$; both are diffeomorphisms, with real dimensions $18=9+9$. The polar decomposition exists exactly on $GL_3$; it degenerates at the singular set, where the Hermitian logarithm diverges. Over $\mathbb{C}$ the exponential is surjective and the positive cone is definite, in contrast with the split real cases.
 
 $$
 \boxed{\ A=e^{H}e^{iK}=P'U',\quad P'=(AA^{*})^{1/2},\quad U'=P'^{-1}A,\quad H=H^{*},\quad K=K^{*},\quad [H,K]=0\iff A\text{ normal}.\ }
@@ -312,7 +312,7 @@ $$
 | Left polar | $A=P'U'$, $P'=(AA^{*})^{1/2}$ |
 | Right polar | $A=UP$, $P=(A^{*}A)^{1/2}$ |
 | Relation | $U'=U$, $P'=UPU^{*}$ |
-| Exponential polar | $A=e^{H}e^{iK}$ |
+| Exponential coordinates | $A=e^{H}e^{iK}$ |
 | Right exponential | $A=e^{iK'}e^{H'}$, $H'=U^{*}HU$ |
 | Normal case | $[H,K]=0$ |
 | Cartan decomposition | $GL_3=\exp(\operatorname{Herm}_3)U(3)$ |

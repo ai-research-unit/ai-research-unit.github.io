@@ -145,8 +145,7 @@ $$
 **The modulus splits into two real numbers and one of them is the mass.**
 
 $$
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad r=\lvert\Rho\rvert=\lvert N\rvert^{1/2}>0,\qquad
-e^{i\theta_{\mathrm{pha}}}=\Rho/r .
+\varrho\,e^{i\theta_{\mathrm{pha}}},\qquad \varrho=\lvert N\rvert^{1/2}>0 .
 $$
 
 **The scale is the modulus of the norm and the angle is its unimodular direction.** In coordinates, writing $N=\lvert N\rvert e^{i\psi}$ with $\psi\in(-\pi,\pi]$, the angle is $\psi/2$ and the modulus is $\lvert N\rvert^{1/2}$. The phase therefore lives in a half-circle, $\theta_{\mathrm{pha}}=\psi/2\in(-\pi/2,\pi/2]$, and the range is not the full circle: the branch has halved it.
@@ -246,9 +245,9 @@ and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ real unit three-vectors, the **boost
 **The four factors group into the two factors of the previous entry in one way, and into a second pair in another.**
 
 $$
-\tilde Q_H=r\,\tilde U_{\mathrm b},\qquad
+\tilde Q_H=\varrho\,\tilde U_{\mathrm b},\qquad
 \tilde Q_0=e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r},\qquad
-\Rho=r\,e^{i\theta_{\mathrm{pha}}},\qquad
+\varrho\,e^{i\theta_{\mathrm{pha}}},\qquad
 \tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}.
 $$
 

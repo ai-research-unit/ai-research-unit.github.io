@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition with Eigenbasis of Reduced Biquaternions__
+# __Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions__
 
 ## Introduction
 
-This article collects the eigenbasis, the idempotents and the two spinor spaces of the eight reduced biquaternions of *Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions*. The polar decomposition itself, with its two components, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\Pi_+,\Pi_-)$, with $\Pi_\pm=\tfrac12(1\pm j)$.
+This article collects the eigenbasis, the idempotents and the two spinor spaces of the eight reduced biquaternions of *Worked Examples of Polar Decomposition of Reduced Biquaternions*. The polar decomposition itself, with its two components, its word and its check, is in that article; here the same eight elements are read in the eigenbasis $(\Pi_+,\Pi_-)$, with $\Pi_\pm=\tfrac12(1\pm j)$.
 
 The eight elements, in the order of the cases, are collected in the table.
 
@@ -181,5 +181,5 @@ the first column $a_1\Pi_+$ is a spinor of the first Peirce copy and the second 
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the polar decomposition, its word and its check.
-- [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the relation between the two decompositions in the commutative four-dimensional case.
+- [Worked Examples of Polar Decomposition of Reduced Biquaternions](worked-examples-of-polar-decomposition-of-reduced-biquaternions.html), for the polar decomposition, its word and its check.
+- [Relations between Polar Decomposition and Eigenbasis of a Reduced Biquaternion](relations-between-polar-decomposition-and-eigenbasis-of-a-reduced-biquaternion.html), for the relation between the two decompositions in the commutative four-dimensional case.

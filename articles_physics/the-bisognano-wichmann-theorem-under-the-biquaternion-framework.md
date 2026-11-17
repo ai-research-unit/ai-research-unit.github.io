@@ -186,7 +186,7 @@ $$
 \vec r_1=\Big(\tfrac{12}{25},\tfrac{16}{25},\tfrac{12}{25}\Big),\qquad
 \vec r_2=\Big(\tfrac23,\tfrac29,\tfrac49\Big),
 $$
-both with $|\vec r|<1$ and neither along a basis axis. All four identities hold exactly for both.
+both with $|\vec s_{\Psi}|<1$ and neither along a basis axis. All four identities hold exactly for both.
 
 **The geometric realisation.** The theorem writes $J=\Theta\,U(R_W)$, with $\Theta$ the PCT operator and $U(R_W)$ the $*$-unitary representative of the rotation by $\pi$ that leaves the characteristic two-plane of the wedge invariant. The net geometric effect on Minkowski space is the **reflection through the edge of the wedge**,
 $$
