@@ -73,7 +73,7 @@
 <p><strong>Quantum teleportation</strong> is the transmission of an unknown quantum state from one party to another using a pre-shared entangled state and two bits of classical communication. Alice holds the unknown qubit; she and Bob share an entangled pair, one half each. Alice measures her unknown qubit jointly with her half of the pair, in the basis of the four maximally entangled two-qubit states. Each of the four outcomes leaves Bob's half of the pair in one of four <em>$*$-unitary images</em> of the unknown state. Alice announces the outcome — two classical bits — and Bob applies the matching $*$-unitary correction. He then holds the unknown state exactly, and no copy of it exists anywhere: Alice's measurement has destroyed the original.</p>
 <p>This article writes that protocol in the biquaternion language of the companion articles. The protocol is worth writing out because it is the one place in the framework where four of its constructions meet at once, and where the difference between them is forced into the open:</p>
 <ul>
-<li>the <strong>state</strong> is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the $2\times2$ image);</li>
+<li>the <strong>state</strong> is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight in the $2\times2$ image);</li>
 <li>the <strong>entangled resource</strong> is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but <em>not</em> $*$-unitary;</li>
 <li>the <strong>Bell measurement</strong> is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;</li>
 <li>the <strong>corrections</strong> are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are <em>not</em> idempotents.</li>
@@ -116,12 +116,12 @@ $$</p>
 <tr>
 <td>$\tilde{Ϛ}_{\Psi,\mathrm{sp}}$</td>
 <td>$\mathbb{B}$</td>
-<td>Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the image); $\mathbb{B}_{\Psi}$</td>
+<td>Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit weight in the image); $\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
 <td>$\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$</td>
 <td>$\mathbb{B}\otimes\mathbb{B}$</td>
-<td>Hermitian idempotent of unit scalar part; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$</td>
+<td>Hermitian idempotent of unit weight; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$</td>
 </tr>
 <tr>
 <td>$S_1,S_3$</td>
@@ -226,12 +226,12 @@ $$</p>
 =\tfrac14\,\tilde\Pi_\epsilon^{(12)}\otimes\left(\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*}\right)^{(3)}\;}.
 $$</p>
 <p>Two consequences follow immediately by contracting and reducing.</p>
-<p><strong>The probabilities are uniform.</strong> Contracting both sides, and using $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)=1$ and $2\,\mathrm{Sc}(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})=1$,</p>
+<p><strong>The probabilities are uniform.</strong> Contracting both sides, with $8\,\mathrm{Sc}$ the normalisation on the triple and $4\,\mathrm{Sc}$ the weight on the two-qubit factors,</p>
 <p>$$
 \boxed{\;p_\epsilon=8\,\mathrm{Sc}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}_{\Psi}^{(0)}\right]=\tfrac14\;},
 $$</p>
 <p>for each of the four outcomes. The outcome distribution is uniform and independent of $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$: the record alone carries no information about the state. The state is transferred to Bob's qubit by the projection itself, and the record's only role is to tell him which Pauli image he now holds and hence which correction to apply.</p>
-<p><strong>Bob's conditional state.</strong> Since $4\,\mathrm{Sc}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is</p>
+<p><strong>Bob's conditional state.</strong> Since $4\,\mathrm{Sc}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $4\,\mathrm{Sc}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is</p>
 <p>$$
 4\,\mathrm{Sc}_{12}\!\left[(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\,\tilde{Ϛ}_{\Psi}^{(0)}\,(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\right]
 =\tfrac14\,\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*} ,
