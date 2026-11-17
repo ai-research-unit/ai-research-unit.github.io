@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Complex Two-Component Element Representation — Biquaternion Universe</title>
+  <meta name="description" content="This article presents the two-component realization of the complex algebra: a complex number read off as its pair of real coordinates. It is the smallest…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -196,7 +197,7 @@ $$</p>
 <p>In two-component form the norm has <strong>both signs positive</strong>.</p>
 <p><strong>Proposition.</strong> For every $Q$, $Q\bar Q = (Q_0)^2 + (Q_1)^2$.</p>
 <p><strong>Proof.</strong> $(q+i q')(q-i q') = q^2 - (i q')^2 = q^2 + q'^2$.</p>
-<p>The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of signature $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.</p>
+<p>The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of inertia $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.</p>
 <h3 id="the-two-signs">The Two Signs</h3>
 <p>The phrase "the two signs" refers to the two restrictions of the norm to the two distinguished subspaces. On the real subspace, $Q = (q,0)$, the norm restricts to</p>
 <p>$$
@@ -206,7 +207,7 @@ $$</p>
 <p>$$
 \langle Q\rangle_{*} = q'^2.
 $$</p>
-<p>Both restrictions are <strong>positive definite</strong>, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two signatures agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.</p>
+<p>Both restrictions are <strong>positive definite</strong>, of inertia $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two inertias agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.</p>
 <h3 id="the-invertibility-criterion-in-coordinates">The Invertibility Criterion in Coordinates</h3>
 <p><strong>Theorem.</strong> A complex number $Q = (q,q')$ is invertible if and only if $(q,q') \neq (0,0)$, equivalently if and only if $\langle Q\rangle_{*} \neq 0$, and then</p>
 <p>$$ \boxed{\;Q^{-1} = \frac{\bar Q}{\langle Q\rangle_{*}}, \qquad (Q^{-1})_\mu = \left( \frac{Q_0}{\langle Q\rangle_{*}}, \, -\frac{Q_1}{\langle Q\rangle_{*}} \right), \qquad \langle Q\rangle_{*} = q^2+q'^2 \;}.
@@ -268,7 +269,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$</td>
-<td>the norm, signature $(2,0)$</td>
+<td>the norm, inertia $(2,0)$</td>
 </tr>
 <tr>
 <td>$Q^{-1} = (q,-q')/\langle Q\rangle_{*}$</td>
@@ -279,7 +280,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Carl Friedrich Gauss, <em>Theoria residuorum biquadraticorum, Commentatio secunda</em> (Göttingen, 1831), for the representation of a complex number by two real coordinates.</li>
-<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd edition (Cambridge University Press, 2001), for the quadratic forms and signatures attached to a real algebra in coordinates.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd edition (Cambridge University Press, 2001), for the quadratic forms and inertias attached to a real algebra in coordinates.</li>
 <li>Tristan Needham, <em>Visual Complex Analysis</em> (Oxford University Press, 1997), for the rotation-and-scaling reading of the component product.</li>
 </ul>
       </div>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation : Operators — Biquaternion Universe</title>
+  <meta name="description" content="Two sizes. The model of the previous article is a complex map; its carrier is the quaternion algebra, of real dimension four; the operators of the carrier…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -102,7 +103,7 @@ $$</p>
 \operatorname{tr}L_{\tilde q}=4q_t .
 $$</p>
 <p>The determinant is a square, and the trace sees only the scalar part. Both families are therefore inside $GL_4(\mathbb{R})$ once the element is non-zero, and the image of the algebra in each copy is a four-dimensional subspace of the sixteen-dimensional group.</p>
-<p><strong>The adjoints.</strong> With respect to the Frobenius form $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ of the carrier, the adjoint of $L_{\tilde q}$ is $L_{\tilde q^{*}}$ and the adjoint of $R_{\tilde q}$ is $R_{\tilde q^{*}}$: the transpose of a left multiplication is the left multiplication by the conjugate, which is the real form of the statement that the model is conformal normal. With respect to the trace form $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, whose restriction to the carrier has signature $(1,3)$, the two families are mutual adjoints:</p>
+<p><strong>The adjoints.</strong> With respect to the Frobenius form $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ of the carrier, the adjoint of $L_{\tilde q}$ is $L_{\tilde q^{*}}$ and the adjoint of $R_{\tilde q}$ is $R_{\tilde q^{*}}$: the transpose of a left multiplication is the left multiplication by the conjugate, which is the real form of the statement that the model is conformal normal. With respect to the trace form $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, whose restriction to the carrier has inertia $(1,3)$, the two families are mutual adjoints:</p>
 <p>$$
 \langle L_{\tilde q}X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(\tilde qXY)=\operatorname{tr}(X\,Y\tilde q)=\langle X,R_{\tilde q}Y\rangle_{\operatorname{tr}} .
 $$</p>
@@ -136,7 +137,7 @@ $$</p>
 <p>$$
 \mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3),
 $$</p>
-<p>of dimension three, acting on the pure part as the rotation group. In the split-quaternion category this group was $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$, of the same dimension but of a different signature: the Lorentz group of $2+1$ dimensions there, the rotation group of $3$ dimensions here. The change is exactly the change of sign of the determinant form.</p>
+<p>of dimension three, acting on the pure part as the rotation group. In the split-quaternion category this group was $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$, of the same dimension but of a different inertia: the Lorentz group of $2+1$ dimensions there, the rotation group of $3$ dimensions here. The change is exactly the change of sign of the determinant form.</p>
 <p><strong>The two-sided operator.</strong> The case $\tilde p=\tilde q$ gives $\tilde x\mapsto\tilde q\tilde x\tilde q$, which is not a conjugation, and its determinant is $N(\tilde q)^{4}$, a fourth power. So the para-hermitian and the hermitian readings of the two-sided operator differ, and only the first is a group action.</p>
 <h2 id="the-kronecker-display">The Kronecker Display</h2>
 <p><strong>The display does not transfer.</strong> In the split-quaternion category the carrier was itself a matrix algebra, $M_2(\mathbb{R})$, so the left multiplication was $M\otimes I_2$ and the right one $I_2\otimes M^{\mathsf T}$, and the two-sided operator was displayed as the Kronecker product $A\otimes B^{\mathsf T}$. Here the carrier is the division algebra $\mathbb{H}$, which is not a tensor product of two smaller real algebras, so no such factorisation exists: $L_{\tilde q}$ is a $4\times4$ matrix that does not split as a tensor product of two $2\times2$ real matrices.</p>
@@ -184,7 +185,7 @@ $$</p>
 <td>the two scalar parts</td>
 </tr>
 <tr>
-<td>determinant</td>
+<td>the determinant of the image</td>
 <td>$N(\tilde q)^{2}N(\tilde p)^{2}$</td>
 <td>the two norms</td>
 </tr>
@@ -326,7 +327,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\cdot,\cdot\rangle_{\operatorname{tr}}$</td>
-<td>the trace form $\operatorname{tr}(XY)$, of signature $(1,3)$</td>
+<td>the trace form $\operatorname{tr}(XY)$, of inertia $(1,3)$</td>
 <td><em>$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation</em></td>
 </tr>
 <tr>

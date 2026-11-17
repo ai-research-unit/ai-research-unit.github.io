@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Lie Structure of the Antisymmetric Plain Product of the Quaternions — Biquaternion Universe</title>
+  <meta name="description" content="The antisymmetrisation of the plain product is It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -74,7 +75,7 @@
 $$
 \tilde q_1\wedge\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr)=\vec q_1\times\vec q_2 .
 $$
-It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra: alternating, with the Jacobi identity, of dimension three on the derived part and one on the centre, isomorphic to $\mathfrak{so}(3)\oplus\mathbb{R}$. The Killing form is negative semidefinite of signature $(0,3)$, and its radical is the centre.</p>
+It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra: alternating, with the Jacobi identity, of dimension three on the derived part and one on the centre, isomorphic to $\mathfrak{so}(3)\oplus\mathbb{R}$. The Killing form is negative semidefinite of inertia $(0,3)$, and its radical is the centre.</p>
 <p>The article is the real mirror of <a href="the-lie-structure-of-the-antisymmetric-plain-product.html">The Lie Structure of the Antisymmetric Plain Product</a>. The biquaternion bracket of the same slot pairing is a Lie algebra over $\mathbb{C}$, of complex dimension three on the same cross product; the real bracket is the same object with the scalar line added as a centre, and the difference between the two is a difference of the ground field and of the scalar part, not of the bracket.</p>
 <p>The parent is <a href="the-general-plain-bilinear-product-of-the-quaternions.html">The General Plain Bilinear Product of the Quaternions</a>. The other half of the same parent is <a href="the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html">The Jordan Structure of the Symmetric Plain Product of the Quaternions</a>.</p>
 <h2 id="the-bracket">The Bracket</h2>
@@ -190,7 +191,7 @@ a direct sum, with $\mathbb{R}e_t$ central and $V$ simple.</p>
 $$
 \kappa(\tilde q_1,\tilde q_2)=-2(\vec q_1,\vec q_2),
 $$
-so that the matrix of $\kappa$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\mathrm{diag}(0,-2,-2,-2)$, of signature $(0,3)$ and rank three.</p>
+so that the matrix of $\kappa$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\mathrm{diag}(0,-2,-2,-2)$, of inertia $(0,3)$ and rank three.</p>
 <p><em>Proof.</em> $\mathrm{ad}_{e_t}=0$, so the first row and column vanish. On the vector subspace, $\mathrm{ad}_{\vec e_x}$ has the matrix with the single entries $+1$ at the place $(\vec e_z,\vec e_y)$ and $-1$ at $(\vec e_y,\vec e_z)$, and $\mathrm{ad}_{\vec e_x}^2$ has the eigenvalues $0,0,-1,-1$; the trace is $-2$. For orthogonal vector units the product of the two adjoint matrices has trace zero, computed entry by entry. Verified in the coefficient basis.</p>
 <p><strong>Corollary (the radical is the centre).</strong> The radical of $\kappa$ is $\mathbb{R}e_t$, and on the derived algebra the form is negative definite.</p>
 <p><em>Proof.</em> The radical of the displayed form is the orthogonal complement of $V$, which is the real line, and the restriction to $V$ is $-2$ times a positive definite form.</p>
@@ -215,7 +216,7 @@ is an automorphism of the Lie algebra, fixes $e_t$, and rotates $V$ by the angle
 <p><em>Proof.</em> The conjugation by a versor is an automorphism of the parent, hence of the bracket, and it fixes $e_t$ because $\tilde r$ and $e_t$ commute. On $V$ it is the rotation of the versor representation, whose angle is twice the angle of the versor: $\tilde r\vec v\tilde r^{-1}=\vec v\cos2\theta+(\vec u\times\vec v)\sin2\theta+\vec u(\vec u,\vec v)(1-\cos2\theta)$. Verified numerically on random versors and vectors, with a residual at the level of the arithmetic.</p>
 <p><strong>Remark (the double cover).</strong> The map $\tilde r\mapsto\mathrm{Ad}_{\tilde r}$ is a surjection of $S^3$ onto $SO(3)$ with kernel $\pm e_t$, so the group of the algebra is $S^3$ and the adjoint group is $SO(3)$. The exponential $\vec w\mapsto\exp(\vec w)=\cos\lvert\vec w\rvert+\vec w\sin\lvert\vec w\rvert/\lvert\vec w\rvert$ is a diffeomorphism of the open ball of radius $\pi$ onto $S^3$ minus the point $-e_t$, and it maps the ball of radius $\pi/2$ onto the versors of positive scalar part; the two-to-one character of the cover is the antipodal identification $\tilde r\sim-\tilde r$ of the sphere, not of the ball. The cover is read in <a href="the-pin-and-spin-groups-of-the-quaternion-algebra.html">The Pin and Spin Groups of the Quaternion Algebra</a> and in <a href="quaternion-exponential-and-lie-group-structure.html">The Exponential of a Quaternion and the Polar Decomposition</a>.</p>
 <h2 id="the-place-among-the-two">The Place among the Two</h2>
-<p><strong>Remark (the bracket that is a Lie algebra and the one that is not).</strong> Of the two antisymmetrisations, this is the one that is a Lie algebra, with defect zero, centre the real line, radical one-dimensional, and a Killing form of signature $(0,3)$ that is negative definite on the derived algebra. The other is not a Lie algebra at all, and its failure is a three-dimensional defect carried by the scalar parts. The comparison is the subject of the table of <a href="the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html">The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions</a>.</p>
+<p><strong>Remark (the bracket that is a Lie algebra and the one that is not).</strong> Of the two antisymmetrisations, this is the one that is a Lie algebra, with defect zero, centre the real line, radical one-dimensional, and a Killing form of inertia $(0,3)$ that is negative definite on the derived algebra. The other is not a Lie algebra at all, and its failure is a three-dimensional defect carried by the scalar parts. The comparison is the subject of the table of <a href="the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html">The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions</a>.</p>
 <p><strong>Remark (the verdict in one line).</strong> <strong>The plain bracket is the commutator of an associative algebra restricted to a subspace, and everything it has — the alternation, the Jacobi identity, the identification with $\mathfrak{so}(3)$, the negative definite Killing form — is inherited from that associativity.</strong> The bracket of the quaternionic product has no such parent and inherits nothing.</p>
 <h2 id="summary">Summary</h2>
 <p>The antisymmetric plain product is
@@ -225,7 +226,7 @@ $$
 alternating, purely vector valued, and half the commutator of the associative parent.</p>
 <p>The Jacobi identity holds with defect zero, proved from associativity by the cancellation of the twelve words; the derived algebra is the vector subspace, and $\mathbb{H}=\mathbb{R}e_t\oplus V\cong\mathbb{R}\oplus\mathfrak{so}(3)$ as Lie algebras.</p>
 <p>The centre and the radical are the real line, the ideals are $0$, the line and the algebra, and the bracket is semisimple exactly on the vector subspace.</p>
-<p>The Killing form is $-2$ times the vector inner product, of matrix $\mathrm{diag}(0,-2,-2,-2)$ and signature $(0,3)$, degenerate exactly on the centre. The trace form of the product vanishes, and the two forms must not be confused.</p>
+<p>The Killing form is $-2$ times the vector inner product, of matrix $\mathrm{diag}(0,-2,-2,-2)$ and inertia $(0,3)$, degenerate exactly on the centre. The trace form of the product vanishes, and the two forms must not be confused.</p>
 <p>The exponential of $t\vec u$ is the versor $\cos t+\vec u\sin t$, the adjoint action is the rotation, the conjugation by a versor is the automorphism, and the group is $S^3$ over $SO(3)$ with the two-to-one cover.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

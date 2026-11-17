@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quaternion Other Algebraic Element Representations — Biquaternion Universe</title>
+  <meta name="description" content="The quaternion algebra has several algebraic realizations that do not have an article of their own: the spinor representation on two-component complex…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -73,7 +74,7 @@
 <p>The quaternion algebra has several algebraic realizations that do not have an article of their own: the spinor representation on two-component complex vectors, the identification with a Clifford algebra and with the even part of a Clifford algebra, and the module structure of the algebra over itself and over its subalgebras. This article collects them, states the identifications precisely, and records the role of the choices involved. It is the quaternion member of the family's residual-representation articles, and it supplies the realizations that the dedicated articles on the four-vector, regular, $2\times2$ and operator representations leave aside.</p>
 <p>The article depends on <em>Quaternion Algebra</em> for the basis and the relations, on <em>Quaternion Norm and Invertibility</em> for the quaternion norm, and on <em>Quaternion 2x2 Matrix Element Representation</em> for the realization of the algebra. The Clifford identifications use the conventions of <em>Clifford Algebras in Finite Dimensions</em> for $\mathrm{Cl}(V,\tilde q)$ and $\mathrm{Cl}_{p,\tilde q}$, and the spinor realization is the representation theory of the group of invertibles $Sp(1)$ from <em>Quaternion Rotations and Reflections</em>. No physical vocabulary is used: in particular the spinors below are the vectors of a module for $Sp(1)$, not the spinors of a field.</p>
 <p>The corpus's default base is a commutative ring with identity; the Clifford identifications are stated over $\mathbb{R}$, and the module statements hold over any base in which the relevant subalgebra is defined.</p>
-<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.</p>
+<p>Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real inertia form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.</p>
 <h2 id="the-spinor-representation">The Spinor Representation</h2>
 <p><strong>Definition.</strong> The <strong>spinor representation</strong> of the quaternion algebra is the action of $\mathbb{H}$ on the two-component complex vectors $\mathbb{C}^2$ by the matrix realization $\operatorname{Mat}$ of <em>Quaternion 2x2 Matrix Element Representation</em>:</p>
 <p>$$
@@ -86,7 +87,7 @@ $$</p>
 <p><strong>Corollary.</strong> The spinor representation is complex and of complex dimension two, so it is not equivalent to any real representation of $\mathbb{H}$; the quaternionic multiplication by $\vec e_x,\vec e_y,\vec e_z$ supplies the three complex structures on $\mathbb{C}^2$ that make it a quaternionic line.</p>
 <p><em>Proof.</em> If the module were real of dimension two, the representation would be an injective homomorphism $\mathbb{H}\to M_2(\mathbb{R})$, which does not exist by <em>Quaternion 2x2 Matrix Element Representation</em>. The three images $\operatorname{Mat}(\vec e_k)$ satisfy $\operatorname{Mat}(\vec e_k)^2 = -I$ and pairwise anticommute, so they are three complex structures on $\mathbb{C}^2$.</p>
 <h2 id="the-clifford-algebra-identification">The Clifford Algebra Identification</h2>
-<p><strong>Definition.</strong> The <strong>Clifford algebra</strong> $\mathrm{Cl}(V,\tilde q)$ of a quadratic space is the quotient of the tensor algebra by the relations $v^2 = \tilde q(v)$; its real signature forms are written $\mathrm{Cl}_{p,\tilde q}$.</p>
+<p><strong>Definition.</strong> The <strong>Clifford algebra</strong> $\mathrm{Cl}(V,\tilde q)$ of a quadratic space is the quotient of the tensor algebra by the relations $v^2 = \tilde q(v)$; its real inertia forms are written $\mathrm{Cl}_{p,\tilde q}$.</p>
 <p><strong>Theorem.</strong> The quaternion algebra is the Clifford algebra of the negative definite real plane,</p>
 <p>$$ \boxed{\; \mathbb{H}\cong\mathrm{Cl}_{0,2} \;} ,$$</p>
 <p>and it is also the even part of the Clifford algebra of the negative definite real three-space,</p>
@@ -150,7 +151,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Cl}(V,\tilde q)$, $\mathrm{Cl}_{p,\tilde q}$, $\mathrm{Cl}^0$</td>
-<td>Clifford algebra, real signature form, even part</td>
+<td>Clifford algebra, real inertia form, even part</td>
 </tr>
 <tr>
 <td>$\mathbb{H}\cong\mathrm{Cl}_{0,2}\cong\mathrm{Cl}^0_{0,3}$</td>

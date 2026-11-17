@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian — Biquaternion Universe</title>
+  <meta name="description" content="Over the complex field the conjugate transpose cuts the algebra into the Hermitian matrices and the anti-Hermitian ones, and the cut is even: two real…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +72,7 @@
         <h1 id="the-two-halves-over-math0-hermitian-and-anti-hermitian"><strong>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Over the complex field the conjugate transpose cuts the algebra into the Hermitian matrices and the anti-Hermitian ones, and the cut is even: two real subspaces of the same real dimension $n^{2}$, unlike the unequal halves of the transpose over $\mathbb{R}$.</strong></p>
-<p>The article proves the direct sum, computes the dimensions, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(n)$ and with $i$ times the Hermitian half, and settles the orthogonality question: the two halves are orthogonal for the real part of the trace form and not for the form itself. It computes the signature of the trace bilinear form on each half, which is $(n^{2},0)$ and $(0,n^{2})$, and it reads the exponentials, which are the unitary group and the positive definite Hermitian matrices. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the real case and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the classification of the conjugate transpose among the involutions. It defers the spectral theorems to <em>The Spectral Theorem: the Hermitian Case</em> and <em>The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum</em>, and the polar decomposition to <em>The Polar Decomposition from the Two Halves</em>.</p>
+<p>The article proves the direct sum, computes the dimensions, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(n)$ and with $i$ times the Hermitian half, and settles the orthogonality question: the two halves are orthogonal for the real part of the trace form and not for the form itself. It computes the inertia of the trace bilinear form on each half, which is $(n^{2},0)$ and $(0,n^{2})$, and it reads the exponentials, which are the unitary group and the positive definite Hermitian matrices. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> for the real case and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the classification of the conjugate transpose among the involutions. It defers the spectral theorems to <em>The Spectral Theorem: the Hermitian Case</em> and <em>The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum</em>, and the polar decomposition to <em>The Polar Decomposition from the Two Halves</em>.</p>
 <h2 id="the-split">The Split</h2>
 <p><strong>Every complex matrix is Hermitian plus anti-Hermitian, uniquely.</strong> With $A^{*}=\bar A^{\mathsf T}$,</p>
 <p>$$
@@ -110,11 +111,11 @@ $$</p>
 \overline{\operatorname{tr}(H^{*}K)}=\operatorname{tr}(K^{*}H)=-\operatorname{tr}(KH)=-\operatorname{tr}(HK),
 $$</p>
 <p>so $\operatorname{tr}(HK)$ is purely imaginary. Its real part vanishes identically, which is all that orthogonality of two real subspaces needs for the Euclidean form, and its imaginary part generally does not, so the Hermitian form itself does not vanish on the pair. The computation at $n=2,3,4$ gives a real part of zero to machine precision and an imaginary part of order one.</p>
-<p><strong>The trace bilinear form has signature $(n^{2},n^{2})$, with opposite signs on the halves.</strong> For Hermitian $H$ and anti-Hermitian $K$,</p>
+<p><strong>The trace bilinear form has inertia $(n^{2},n^{2})$, with opposite signs on the halves.</strong> For Hermitian $H$ and anti-Hermitian $K$,</p>
 <p>$$
 \operatorname{tr}(H^{2})=\operatorname{tr}(H^{*}H)>0,\qquad \operatorname{tr}(K^{2})=-\operatorname{tr}(K^{*}K)<0 ,
 $$</p>
-<p>so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the Hermitian half of dimension $n^{2}$ and negative definite on the anti-Hermitian half of the same dimension. The total signature is $(n^{2},n^{2})$, a split form, against the Euclidean form $\operatorname{tr}(A^{*}B)$ which is positive definite on the whole algebra.</p>
+<p>so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the Hermitian half of dimension $n^{2}$ and negative definite on the anti-Hermitian half of the same dimension. The total inertia is $(n^{2},n^{2})$, a split form, against the Euclidean form $\operatorname{tr}(A^{*}B)$ which is positive definite on the whole algebra.</p>
 <p><strong>The two forms must not be confused.</strong> The form $\operatorname{tr}(A^{*}B)$ is the Hilbert–Schmidt form, positive definite and used for the metric; the form $\operatorname{tr}(AB)$ is the trace bilinear form, indefinite and used for the adjoints and for the Killing form. On the Hermitian half the first restricts to the second, and on the anti-Hermitian half the two differ by a sign. The article <em>The Hilbert–Schmidt Form</em> keeps the two apart.</p>
 <h2 id="the-exponential-of-each-half">The Exponential of Each Half</h2>
 <p><strong>The exponential of an anti-Hermitian matrix is unitary.</strong> If $K^{*}=-K$ then</p>
@@ -132,7 +133,7 @@ $$</p>
 <p><strong>At $n=2$ the split is $8=4+4$ in real dimensions.</strong> The Hermitian half is spanned over $\mathbb{R}$ by $\mathrm{I},\sigma_1,\sigma_2,\sigma_3$, and the anti-Hermitian half is $i$ times it, spanned by $i\mathrm{I},i\sigma_1,i\sigma_2,i\sigma_3$. This is the cleanest instance of the equal split, and it is the reason the biquaternion algebra is read through the Hermitian and anti-Hermitian halves rather than through the symmetric and antisymmetric ones.</p>
 <p><strong>The two halves are the two sectors of the biquaternion reading.</strong> A Hermitian element of $M_2(\mathbb{C})$ corresponds to a biquaternion whose four coordinates satisfy a reality condition, and an anti-Hermitian element to one with $i$ times that condition. The Peirce idempotents $\tilde\Pi_\pm$ are Hermitian, so they lie in the first half; the companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither Hermitian nor anti-Hermitian, since they satisfy $\vec\Upsilon_{-+}=\vec\Upsilon_{+-}^{*}$ and their squares vanish. The mixed corners of the Peirce decomposition therefore leave both halves, which is the algebraic reason the Peirce frame is not a Hermitian frame.</p>
 <h2 id="summary">Summary</h2>
-<p>The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the anti-Hermitian half, two real subspaces of dimension $n^{2}$ each, exchanged by multiplication by $i$. The Hermitian half is a real Jordan algebra with real spectrum and unitary diagonalisation; the anti-Hermitian half is $\mathfrak{u}(n)$, of dimension $n^{2}$ with traceless part $\mathfrak{su}(n)$ of dimension $n^{2}-1$, and its elements have purely imaginary spectrum. The halves are orthogonal for the real part of the trace form and not for the form, and the trace bilinear form has signature $(n^{2},0)$ on the first and $(0,n^{2})$ on the second, totalling the split signature $(n^{2},n^{2})$. The exponential of the anti-Hermitian half is the unitary group and the exponential of the Hermitian half is the positive cone.</p>
+<p>The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the anti-Hermitian half, two real subspaces of dimension $n^{2}$ each, exchanged by multiplication by $i$. The Hermitian half is a real Jordan algebra with real spectrum and unitary diagonalisation; the anti-Hermitian half is $\mathfrak{u}(n)$, of dimension $n^{2}$ with traceless part $\mathfrak{su}(n)$ of dimension $n^{2}-1$, and its elements have purely imaginary spectrum. The halves are orthogonal for the real part of the trace form and not for the form, and the trace bilinear form has inertia $(n^{2},0)$ on the first and $(0,n^{2})$ on the second, totalling the split inertia $(n^{2},n^{2})$. The exponential of the anti-Hermitian half is the unitary group and the exponential of the Hermitian half is the positive cone.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -168,7 +169,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\operatorname{tr}(AB)$</td>
-<td>the trace bilinear form, of signature $(n^{2},n^{2})$</td>
+<td>the trace bilinear form, of inertia $(n^{2},n^{2})$</td>
 </tr>
 <tr>
 <td>$\mathrm{I},\sigma_1,\sigma_2,\sigma_3$</td>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hilbert–Schmidt Form: Definite but Not Invariant — Biquaternion Universe</title>
+  <meta name="description" content="The form is an inner product on, and it is not invariant under the algebra: the ratio is not constant in unless is orthogonal.">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +72,7 @@
         <h1 id="the-hilbertschmidt-form-definite-but-not-invariant"><strong>The Hilbert–Schmidt Form: Definite but Not Invariant</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The form $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$ is an inner product on $M_n(\mathbb{R})$, and it is not invariant under the algebra: the ratio $\langle AX,AY\rangle_{\mathrm{HS}}/\langle X,Y\rangle_{\mathrm{HS}}$ is not constant in $X$ unless $A$ is orthogonal.</strong></p>
-<p>The article computes the adjoints of the multiplication operators, derives the exact adjoint of $\operatorname{ad}_A$, measures the defect of invariance on a hundred random pairs, proves that invariance holds for an element $A$ exactly when $A$ is orthogonal, and compares the two forms and their isometry groups. It assumes <em>The Trace Form and Its Indefinite Signature</em> for the competing form, and it defers the Killing form to <em>The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</em>.</p>
+<p>The article computes the adjoints of the multiplication operators, derives the exact adjoint of $\operatorname{ad}_A$, measures the defect of invariance on a hundred random pairs, proves that invariance holds for an element $A$ exactly when $A$ is orthogonal, and compares the two forms and their isometry groups. It assumes <em>The Trace Form and Its Indefinite Inertia</em> for the competing form, and it defers the Killing form to <em>The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</em>.</p>
 <h2 id="the-form">The Form</h2>
 <p><strong>Define $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$.</strong> In entries,</p>
 <p>$$
@@ -147,7 +148,7 @@ $$</p>
 \langle X,Y\rangle=\operatorname{tr}(SS')+\operatorname{tr}(KK'),\qquad \langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(SS')-\operatorname{tr}(KK').
 $$</p>
 <p>The second identity uses $K^{\mathsf T}=-K$. So the two forms agree on $\operatorname{Sym}_n$ and differ by a sign on $\operatorname{Skew}_n$.</p>
-<p><strong>The definite form is the difference of two positive forms on the halves.</strong> Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for antisymmetric $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The signature of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.</p>
+<p><strong>The definite form is the difference of two positive forms on the halves.</strong> Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for antisymmetric $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The inertia of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.</p>
 <h2 id="the-two-isometry-groups">The Two Isometry Groups</h2>
 <p><strong>The isometry group of the Hilbert–Schmidt form is $\mathrm{O}(n^{2})$.</strong> The form is the standard scalar product of the $n^{2}$ entries, so its isometries are the orthogonal matrices of order $n^{2}$. The dimension is $n^{2}(n^{2}-1)/2$, which is $6$ at $n=2$ and $36$ at $n=3$.</p>
 <p><strong>The isometry group of the trace form is not $\mathrm{O}(n^{2})$.</strong> It contains the conjugation by every invertible matrix, of dimension $n^{2}-1$, and it contains the transpose. It also contains the unbounded family $X\mapsto D_tXD_t^{-1}$ with $D_t=\operatorname{diag}(t,1,\dots,1)$ and $t\to\infty$, while $\mathrm{O}(n^{2})$ is compact. So the two groups differ.</p>
@@ -211,7 +212,7 @@ $$</p>
 <ul>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the Frobenius norm, the singular values and the orthogonal group.</li>
 <li>Rajendra Bhatia, <em>Matrix Analysis</em> (Springer, 1997), for the Rayleigh quotients and the comparison of norms on matrices.</li>
-<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>, for the invariant form and the signature $(n(n+1)/2,n(n-1)/2)$.</li>
+<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Inertia</a>, for the invariant form and the inertia $(n(n+1)/2,n(n-1)/2)$.</li>
 <li><a href="the-matrix-algebra-mnr.html">The Matrix Algebra $M_n(\mathbb{R})$</a>, for the algebra and its matrix units.</li>
 <li><a href="the-two-halves-over-r-symmetric-and-antisymmetric.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</a>, for the two halves on which the two forms agree and disagree.</li>
 <li><a href="the-killing-form-its-radical-and-the-centre-of-gl-n-r.html">The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</a>, for the third form on the same space.</li>

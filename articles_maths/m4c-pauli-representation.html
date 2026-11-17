@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$M_4(\mathbb{C})$ Pauli Representation — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The left and right regular matrices of a biquaternion, written in the Peirce frame that the root generates, and what that frame makes easy…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -736,7 +737,7 @@ $$
 $$
 the mixed trace sees the two scalar parts only.</p>
 <h2 id="the-determinant">The Determinant</h2>
-<p><strong>The determinant is the square of the central scalar.</strong> For every $\tilde Q$,
+<p><strong>The determinant of the matrix is the square of the central scalar.</strong> For every $\tilde Q$,
 $$
 \det L(\tilde Q)=\det R(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2
 =(Q_t^2+B^2)^2.
@@ -749,7 +750,7 @@ $$
 =\bigl((\lambda-Q_t)^2+B^2\bigr)^2 .
 $$
 The eigenvalues are $\lambda_\pm=Q_t\pm iB$, where $B$ is a square root of $B^2=Q_x^2+Q_y^2+Q_z^2$, each with algebraic multiplicity two. Their sum is $4Q_t$, their product is $\langle\tilde Q\rangle_{\natural}^2$, and the two facts are the trace and the determinant. The same polynomial is the characteristic polynomial of $R(\tilde Q)$, because the two matrices are related by the swap and transposition.</p>
-<p><strong>The determinant is multiplicative.</strong> For all $\tilde Q_1,\tilde Q_2$,
+<p><strong>The determinant of the matrix is multiplicative.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det L(\tilde Q_1\tilde Q_2)=\det L(\tilde Q_1)\det L(\tilde Q_2),
 $$
@@ -859,7 +860,7 @@ $$
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=\sum_{\mu}q_\mu^2=q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
-The image is the space of quaternion-shaped blocks, of real dimension $4$. The quadratic determinant is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra. The block display is the usual quaternion matrix $\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, written in the Peirce frame.</p>
+The image is the space of quaternion-shaped blocks, of real dimension $4$. The quadratic determinant of the matrix is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra. The block display is the usual quaternion matrix $\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, written in the Peirce frame.</p>
 <h3 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h3>
 <p><strong>The anti-quaternion-shaped matrices.</strong> For $\tilde Q=iq'_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z$,
 $$
@@ -872,7 +873,7 @@ $$
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-\sum_{\mu}(q'_\mu)^2 .
 $$
-The image is the space of anti-quaternion-shaped blocks, of real dimension $4$. The quadratic determinant is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two anti-quaternion-shaped blocks is quaternion-shaped.</p>
+The image is the space of anti-quaternion-shaped blocks, of real dimension $4$. The quadratic determinant of the matrix is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two anti-quaternion-shaped blocks is quaternion-shaped.</p>
 <h3 id="the-hermitian-subspace">The Hermitian Subspace</h3>
 <p><strong>The Hermitian matrices.</strong> For $\tilde Q=q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z$,
 $$
@@ -885,7 +886,7 @@ L(\tilde Q)=L(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The image is the space of Hermitian matrices of the regular form, of real dimension $4$. The condition is exact inside the image because $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$ and $L$ is injective. The quadratic determinant is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
+The image is the space of Hermitian matrices of the regular form, of real dimension $4$. The condition is exact inside the image because $L(\tilde Q)^{\dagger}=L(\tilde Q^{*})$ and $L$ is injective. The quadratic determinant of the matrix is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
 <h3 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h3>
 <p><strong>The anti-Hermitian matrices.</strong> For $\tilde Q=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$,
 $$
@@ -898,7 +899,7 @@ L(\tilde Q)=-L(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-(q'_t)^2+\lvert\vec q\rvert^2 .
 $$
-The image is the space of anti-Hermitian matrices of the regular form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.</p>
+The image is the space of anti-Hermitian matrices of the regular form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant of the matrix is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.</p>
 <h3 id="the-three-splits">The Three Splits</h3>
 <p><strong>The three decompositions.</strong> The six subspaces pair into the three decompositions
 $$

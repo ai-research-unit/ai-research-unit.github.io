@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Polar Decomposition from the Two Halves — Biquaternion Universe</title>
+  <meta name="description" content="Every invertible matrix is a stretch times a rotation, with positive definite and unitary, and the two factors are the two halves of the algebra read off…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -154,7 +155,7 @@ $$</p>
 P=\sigma_+\tilde\Pi_++\sigma_-\tilde\Pi_-,\qquad \sigma_\pm>0,
 $$</p>
 <p>and the rotation is a phase times the identity in each corner, so the polar decomposition of a biquaternion is the pair of its corner moduli and the pair of its corner phases. The computation confirms the decomposition at $n=2$, and it shows that the two singular values are the two corner moduli.</p>
-<p><strong>The indefinite signature changes the shape of the factors.</strong> Since the biquaternion norm is indefinite of signature $(2,2)$, the positive factor of the polar decomposition is positive for the Hermitian form and not for the indefinite one, so the two decompositions differ. The computation confirms the difference at $n=2$ on random elements, and it shows that the polar decomposition is a statement about the definite Hermitian structure, which is the one the complex Hilbert space carries.</p>
+<p><strong>The indefinite inertia changes the shape of the factors.</strong> Since the biquaternion norm is indefinite of inertia $(2,2)$, the positive factor of the polar decomposition is positive for the Hermitian form and not for the indefinite one, so the two decompositions differ. The computation confirms the difference at $n=2$ on random elements, and it shows that the polar decomposition is a statement about the definite Hermitian structure, which is the one the complex Hilbert space carries.</p>
 <p><strong>The double cover appears in the rotation factor.</strong> The rotation factor $U$ of a planar matrix is a phase, and its two square roots are the two signs of the rotor of <em>The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover</em>, so the polar decomposition of the two-by-two case already contains the two signs. The computation confirms the two roots at $n=2$, and it shows that the stretch has no sign ambiguity while the rotation factor does.</p>
 <h2 id="summary">Summary</h2>
 <p>Every invertible matrix is $A=PU$ with $P=(AA^{*})^{1/2}$ positive definite and $U=P^{-1}A$ unitary, and also $A=UQ$ with $Q=(A^{*}A)^{1/2}$, so the group is the product of the cone and the unitary group with smooth inverse; the two factors are unique, and they commute exactly when the matrix is normal. The eigenvalues of $P$ are the singular values, so the product of the singular values is $|\det A|$, the determinant of $U$ is the phase, and the condition number is the ratio of the extreme singular values, which equals one exactly for the scalar multiples of the unitary matrices. The polar factor is the closest unitary in the Hilbert–Schmidt norm, and the stretch is the exponential of a Hermitian matrix while the rotation is the exponential of an anti-Hermitian one, so the decomposition is the two halves exponentiated.</p>

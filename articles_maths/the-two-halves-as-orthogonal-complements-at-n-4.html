@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves as Orthogonal Complements at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The symmetric and the antisymmetric matrices are orthogonal for the trace pairing, and they are exact orthogonal complements of one another; what…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -72,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The symmetric and the antisymmetric matrices are orthogonal for the trace pairing, and they are exact orthogonal complements of one another; what separates them is not orthogonality but the sign of the form, positive on the ten symmetric directions and negative on the six antisymmetric ones over the reals.</strong></p>
 <p>The article proves $\operatorname{tr}(SK)=0$, shows that the direct sum is orthogonal for the trace pairing and for the Hilbert–Schmidt form alike, explains why "orthogonal" and "definite" are different statements and that the trace pairing is indefinite on each half over $\mathbb{C}$ even while nondegenerate, and records that neither half is an ideal or a subalgebra.</p>
-<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> for the definitions and the projections, and <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em> for the signature. The case $n=2$ is <em>The Two Halves as Orthogonal Complements at $n=2$</em>. The forms themselves are <em>The Hilbert–Schmidt Form at $n=4$</em>.</p>
+<p>It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$</em> for the definitions and the projections, and <em>The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</em> for the inertia. The case $n=2$ is <em>The Two Halves as Orthogonal Complements at $n=2$</em>. The forms themselves are <em>The Hilbert–Schmidt Form at $n=4$</em>.</p>
 <h2 id="the-orthogonality">The Orthogonality</h2>
 <p><strong>Theorem.</strong> For $S\in\operatorname{Sym}_4$ and $K\in\operatorname{Skew}_4$, $\operatorname{tr}(SK)=0$.</p>
 <p><strong>Proof.</strong> The transpose of a scalar is itself, so $\operatorname{tr}(SK)=\operatorname{tr}\bigl((SK)^{\mathsf T}\bigr)=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=\operatorname{tr}(-KS)=-\operatorname{tr}(SK)$. A number equal to its negative is zero.</p>
@@ -86,7 +87,7 @@
 <p><strong>The two forms.</strong> $\beta(X,Y)=\operatorname{tr}(XY)$ is symmetric and $\mathbb{C}$-bilinear; $\langle X,Y\rangle=\operatorname{tr}(X^{\ast}Y)$ is Hermitian and positive definite on the real $32$-dimensional space.</p>
 <p><strong>Proposition.</strong> On the symmetric half, $\beta(X,X)=\sum_{i,j}X_{ij}^{2}$; on the antisymmetric half, $\beta(K,K)=-2\sum_{i<j}K_{ij}^{2}$.</p>
 <p><strong>Proof.</strong> For symmetric $X$ one has $X_{ji}=X_{ij}$, so the diagonal of $X^{2}$ sums to $\sum_{i,j}X_{ij}^{2}$. For antisymmetric $K$ one has $K_{ji}=-K_{ij}$, so the same sum carries a minus sign and each unordered pair is counted twice.</p>
-<p><strong>Corollary.</strong> Over $\mathbb{R}$ the form $\beta$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$, hence of signature $(10,6)$ on $M_4(\mathbb{R})$.</p>
+<p><strong>Corollary.</strong> Over $\mathbb{R}$ the form $\beta$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$, hence of inertia $(10,6)$ on $M_4(\mathbb{R})$.</p>
 <p><strong>Proof.</strong> The two displays are sums of squares with a sign, and the halves are orthogonal.</p>
 <p><strong>Corollary (the indefinite reading over $\mathbb{C}$).</strong> Over $\mathbb{C}$ the form $\beta$ is nondegenerate on each half but definite on neither, and it has isotropic vectors.</p>
 <p><strong>Proof.</strong> Nondegeneracy: if $\beta(X,Y)=0$ for all symmetric $Y$ then taking $Y=E_{ii}$ and $Y=E_{ij}+E_{ji}$ kills every entry of $X$. Isotropy: the symmetric matrix $X=E_{11}+iE_{12}+iE_{21}-E_{22}$ has $\beta(X,X)=1+i^{2}+i^{2}+1=0$.</p>
@@ -112,7 +113,7 @@ $$</p>
 <p><strong>The same statement in coordinates.</strong> Writing $A=\sum c_{\mu\nu}T_{\mu\nu}$, orthogonality reads: the six coefficients $c_{tx},c_{ty},c_{tz},c_{xt},c_{yt},c_{zt}$ and the other ten never pair. This is the coordinate form of $\operatorname{tr}(SK)=0$, and it needs no transpose because the transpose is already built into the basis.</p>
 <h2 id="summary">Summary</h2>
 <p>For symmetric $S$ and antisymmetric $K$ the trace $\operatorname{tr}(SK)$ equals its own negative, so the two halves are orthogonal for the trace pairing and for the Hilbert–Schmidt form, and each is the other's orthogonal complement because the algebra is $10+6=16$ and the trace pairing is nondegenerate.</p>
-<p>On the symmetric half the trace form is the sum of the squares of the entries, on the antisymmetric half minus twice the sum over the upper triangle; over $\mathbb{R}$ that makes the form positive definite on one half and negative definite on the other, of signature $(10,6)$, and over $\mathbb{C}$ it makes the form nondegenerate but isotropic on each half. Orthogonality is field-independent; definiteness is not.</p>
+<p>On the symmetric half the trace form is the sum of the squares of the entries, on the antisymmetric half minus twice the sum over the upper triangle; over $\mathbb{R}$ that makes the form positive definite on one half and negative definite on the other, of inertia $(10,6)$, and over $\mathbb{C}$ it makes the form nondegenerate but isotropic on each half. Orthogonality is field-independent; definiteness is not.</p>
 <p>Neither half is an ideal and neither is closed under the product; the symmetric half is a Jordan algebra and the antisymmetric half a Lie algebra. In the axis-free basis the split is a split of coordinates with a sign of $4$ attached to each element, and the orthogonality is the vanishing of every cross pairing.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -152,7 +153,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for orthogonal projections and the trace inner product.</li>
-<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the signature computed in the axis-free basis.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</a>, for the inertia computed in the axis-free basis.</li>
 <li><a href="the-hilbert-schmidt-form-at-n-4.html">The Hilbert–Schmidt Form at $n=4$</a>, for the definite form and its two orthonormal bases.</li>
 <li><a href="the-jordan-algebra-sym-4.html">The Jordan Algebra $\operatorname{Sym}_4$</a>, for the product that the symmetric half does support.</li>
 <li><a href="the-two-halves-as-orthogonal-complements-at-n-2.html">The Two Halves as Orthogonal Complements at $n=2$</a>, for the same argument at order two.</li>

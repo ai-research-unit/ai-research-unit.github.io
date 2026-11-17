@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biquaternion Versors and the Orthogonal Group — Biquaternion Universe</title>
+  <meta name="description" content="The biquaternion algebra is the even part of the Clifford algebra of Lorentzian space, and that one fact decides which isometries of the norm the algebra…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -78,23 +79,23 @@
 $$
 \mathbb{B}_{\Psi}=\{\tilde{Q}:\tilde{Q}^{*}=\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
-of real dimension four. On it the biquaternion norm restricts to a quadratic form of signature $(1,3)$: for $\tilde{Q}=te_t+i\vec u$ with $t\in\mathbb{R}$ and $\vec u\in\mathbb{R}^3$ one has $\langle \tilde{Q}\rangle_{\natural}=t^2-\lvert\vec u\rvert^2$. The anti-Hermitian sector is the mirror,
+of real dimension four. On it the biquaternion norm restricts to a quadratic form of inertia $(1,3)$: for $\tilde{Q}=te_t+i\vec u$ with $t\in\mathbb{R}$ and $\vec u\in\mathbb{R}^3$ one has $\langle \tilde{Q}\rangle_{\natural}=t^2-\lvert\vec u\rvert^2$. The anti-Hermitian sector is the mirror,
 $$
 \mathbb{B}_{\Phi}=\{\tilde{Q}:\tilde{Q}^{*}=-\tilde{Q}\}=\mathrm{span}_{\mathbb{R}}\{ie_t,\vec e_x,\vec e_y,\vec e_z\},
 $$
-and the norm restricts to it with signature $(3,1)$.</p>
-<p><strong>Definition.</strong> Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$ — the abstract Lorentzian space, realised inside the algebra by the sector of the definition above — and let $O(q)=O(1,3)$ be its group of linear isometries. An isometry is <strong>proper</strong> when its determinant is $+1$ and <strong>orthochronous</strong> when it does not reverse the time orientation, that is when its $(0,0)$ entry is positive in a basis with the timelike coordinate first. The four combinations of the two signs are the four components of $O(1,3)$, and the identity component is the proper orthochronous group $SO^{+}(1,3)$.</p>
+and the norm restricts to it with inertia $(3,1)$.</p>
+<p><strong>Definition.</strong> Let $V$ be a real four-dimensional space with a quadratic form $q$ of inertia $(1,3)$ — the abstract Lorentzian space, realised inside the algebra by the sector of the definition above — and let $O(q)=O(1,3)$ be its group of linear isometries. An isometry is <strong>proper</strong> when its determinant is $+1$ and <strong>orthochronous</strong> when it does not reverse the time orientation, that is when its $(0,0)$ entry is positive in a basis with the timelike coordinate first. The four combinations of the two signs are the four components of $O(1,3)$, and the identity component is the proper orthochronous group $SO^{+}(1,3)$.</p>
 <p><strong>Remark.</strong> Replacing $q$ by $-q$ does not change $O(q)$, and it exchanges the two sectors; $\mathbb{B}_{\Psi}$ with $O(1,3)$ and $\mathbb{B}_{\Phi}$ with $O(3,1)$ are the same statement in the two sign conventions, and every statement below holds for both with the roles of the timelike and spacelike directions exchanged. The corpus writes the form of $\mathbb{B}_{\Psi}$ in the mostly-minus convention, and that is the one used here.</p>
 <h2 id="the-two-slots-of-the-envelope">The Two Slots of the Envelope</h2>
-<p><strong>Theorem (the envelope is two copies of the algebra).</strong> Let $V$ be a real four-dimensional space with a form of signature $(1,3)$, let $\mathrm{Cl}(V)$ be its Clifford algebra, of real dimension $16$, and let $\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ be its even and odd parts. Then
+<p><strong>Theorem (the envelope is two copies of the algebra).</strong> Let $V$ be a real four-dimensional space with a form of inertia $(1,3)$, let $\mathrm{Cl}(V)$ be its Clifford algebra, of real dimension $16$, and let $\mathrm{Cl}^{+},\mathrm{Cl}^{-}$ be its even and odd parts. Then
 $$
 \boxed{\;\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\zeta\;},
 $$
 for every non-isotropic $\zeta\in V$, and the odd slot $\mathbb{B}\zeta$ is a second copy of the algebra, of real dimension eight, containing the space $V$ itself.</p>
 <p><strong>Proof.</strong> The even part of the Clifford algebra of a four-dimensional space is eight-dimensional, and the identification $\mathrm{Cl}^{+}\cong\mathbb{B}$ is the Clifford structure of the algebra. For the splitting, fix $\zeta\in V$ with $q(\zeta)\neq0$. The element $\zeta$ is odd, so $\mathbb{B}\zeta\subseteq\mathrm{Cl}^{-}$; the map $Q\mapsto Q\zeta$ is injective, so $\mathbb{B}\zeta$ is eight-dimensional, and $\mathrm{Cl}^{-}$ is eight-dimensional as well, so $\mathbb{B}\zeta=\mathrm{Cl}^{-}$. The inverse of the map is $Q\mapsto Q\zeta^{-1}$, with $\zeta^{-1}=\zeta/q(\zeta)$. The subspace $V$ is contained in the odd part, and $\mathbb{B}\zeta$ is the odd part, so $V\subseteq\mathbb{B}\zeta$.</p>
 <p><strong>Remark (verified).</strong> The dimensions were recomputed on the matrix model of $\mathrm{Cl}_{1,3}$, with the standard matrix representatives of the mostly-minus generators: the even part has real dimension $8$ and is closed under multiplication, $\mathbb{B}\zeta$ has real dimension $8$ for an invertible element $\zeta$, the four generators lie in $\mathbb{B}\zeta$, and the two together span the $16$-dimensional envelope.</p>
-<p><strong>Remark (the Lorentzian space is odd, and its copy is inside the algebra).</strong> The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Lorentzian vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{B}_{\Psi}$, which carries the form of signature $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{B}_{\Psi}$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.</p>
-<p><strong>Remark (the labelling).</strong> The two labellings of the signature, $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$, give the same even part and different ambient algebras, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, as the matrix model of the envelope records. This article uses the mostly-minus labelling, which is the one in which the form on $\mathbb{B}_{\Psi}$ has signature $(1,3)$ and the orthogonal group is $O(1,3)$; under the other labelling the two families of bivectors are exchanged, the quaternion units becoming products of two generators of square $+1$ instead of two of square $-1$, and nothing else in the article changes.</p>
+<p><strong>Remark (the Lorentzian space is odd, and its copy is inside the algebra).</strong> The space on which the orthogonal group acts is $V$, and $V$ is odd: no element of the algebra is a Lorentzian vector. The algebra nevertheless contains a second copy of the same quadratic space, namely the Hermitian sector $\mathbb{B}_{\Psi}$, which carries the form of inertia $(1,3)$ by the definition above. The two copies are identified by the dictionary of the Clifford structure, and the identification is the reason a statement about a vector of $\mathbb{B}_{\Psi}$ and a statement about a vector of $V$ can be read off one another. The identification is not the identity and is not available inside the algebra alone.</p>
+<p><strong>Remark (the labelling).</strong> The two labellings of the inertia, $\mathrm{Cl}_{1,3}$ and $\mathrm{Cl}_{3,1}$, give the same even part and different ambient algebras, $\mathrm{Cl}_{1,3}\cong M_2(\mathbb{H})$ and $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$, as the matrix model of the envelope records. This article uses the mostly-minus labelling, which is the one in which the form on $\mathbb{B}_{\Psi}$ has inertia $(1,3)$ and the orthogonal group is $O(1,3)$; under the other labelling the two families of bivectors are exchanged, the quaternion units becoming products of two generators of square $+1$ instead of two of square $-1$, and nothing else in the article changes.</p>
 <h2 id="the-grading-of-the-versors">The Grading of the Versors</h2>
 <p><strong>Definition (cited from <em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>).</strong> A <strong>versor</strong> is a product $\tilde U=\eta_1\cdots\eta_k$ of non-isotropic vectors of $V$. The <strong>Clifford group</strong> $\Gamma$ is the set of invertible elements $\tilde U$ with $\mathrm{Ad}^{\alpha}_{\tilde U}(V)\subseteq V$, and the <strong>Clifford norm</strong> is $\langle\tilde U\rangle_{\natural}=\tilde U\tilde U^{\natural}$, the quaternion sign being the Clifford conjugation of the envelope, which on the even part is the quaternion conjugation of the algebra. The groups are
 $$
@@ -120,15 +121,15 @@ The only part of the Pin group that is an object of the biquaternion algebra is 
 $$
 \mathrm{H}_{\tilde{Q}}(\tilde{Q}_2)=\tilde{Q}\tilde{Q}_2\tilde{Q}^{*}
 $$
-be the bilinear two-sided operator of <em>Biquaternion Rotations and Lorentz Transformations</em>. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to $\mathbb{B}_{\Psi}$ is a linear isometry of signature $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a two-sided operator of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_t\}$.</p>
-<p><strong>Proof.</strong> Under $\mathsf{M}_2$ the two-sided operator is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of signature $(1,3)$. The condition $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the two-sided operator because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
+be the bilinear two-sided operator of <em>Biquaternion Rotations and Lorentz Transformations</em>. Then the restriction of $\mathrm{H}_{\tilde{Q}}$ to $\mathbb{B}_{\Psi}$ is a linear isometry of inertia $(1,3)$ of determinant $+1$ and of positive time orientation. Conversely every proper orthochronous Lorentz transformation is the restriction of a two-sided operator of this kind, and the map from the norm-one group $\mathbb{B}^{\times}_1$ to $SO^{+}(1,3)$ is two-to-one with kernel $\{\pm e_t\}$.</p>
+<p><strong>Proof.</strong> Under $\mathsf{M}_2$ the two-sided operator is $X\mapsto M X M^{\dagger}$ with $M=\mathsf{M}_2(\tilde{Q})$, which is the standard action of $SL(2,\mathbb{C})$ on the Hermitian matrices and is a linear isometry of inertia $(1,3)$. The condition $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is $\lvert\det M\rvert=1$, and an invertible $M$ with $\lvert\det M\rvert=1$ differs from an element of $SL(2,\mathbb{C})$ by a phase, $M=e^{i\theta}M_0$ with $\det M_0=1$; the phase cancels in the two-sided operator because $MM^{\dagger}=M_0M_0^{\dagger}$, so the map is that of $M_0$ and is proper orthochronous. The converse and the kernel are the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$ of <em>Biquaternion Rotations and Lorentz Transformations</em>.</p>
 <p><strong>Remark (the isometry condition is exactly the unit norm).</strong> The two-sided operator multiplies the norm by $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert^{2}$, since $\tilde{Q}^{*}$ has norm $(\langle \tilde{Q}\rangle_{\natural})^{\natural}$ and the norm is multiplicative; so $\lvert \langle \tilde{Q}\rangle_{\natural}\rvert=1$ is what makes it an isometry, and a zero divisor generates nothing, having no inverse. The corpus works on the norm-one slice $\langle\tilde Q\rangle_{\natural}=1$, which parametrises the same operators because $\langle i\tilde{Q}\rangle_{\natural}=-\langle \tilde{Q}\rangle_{\natural}$ and the operator is blind to the scalar imaginary.</p>
 <p><strong>Theorem (the four components, and the two discrete operations).</strong> On $\mathbb{B}_{\Psi}$ the following operations are isometries, and they fall in the four components of $O(1,3)$:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>operation on $\mathbb{B}_{\Psi}$</th>
-<th>determinant</th>
+<th>the determinant of the image</th>
 <th>time orientation</th>
 <th>component</th>
 </tr>
@@ -220,11 +221,11 @@ $$</p>
 <tbody>
 <tr>
 <td>$\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$</td>
-<td>Hermitian and anti-Hermitian sectors, of signatures $(1,3)$ and $(3,1)$; the Hermitian one is the copy of Lorentzian space inside the algebra</td>
+<td>Hermitian and anti-Hermitian sectors, of inertias $(1,3)$ and $(3,1)$; the Hermitian one is the copy of Lorentzian space inside the algebra</td>
 </tr>
 <tr>
 <td>$V$</td>
-<td>The four-dimensional space of signature $(1,3)$ whose Clifford algebra is the envelope; it is odd, and it lies in the odd slot</td>
+<td>The four-dimensional space of inertia $(1,3)$ whose Clifford algebra is the envelope; it is odd, and it lies in the odd slot</td>
 </tr>
 <tr>
 <td>$\mathrm{Cl}_{1,3},\mathrm{Cl}^{+},\mathrm{Cl}^{-}$</td>

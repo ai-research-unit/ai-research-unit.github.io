@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves as Orthogonal Complements — Biquaternion Universe</title>
+  <meta name="description" content="Whenever an involution preserves a form, its two eigenspaces are orthogonal for that form, and that single lemma produces the orthogonality of the two…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +72,7 @@
         <h1 id="the-two-halves-as-orthogonal-complements"><strong>The Two Halves as Orthogonal Complements</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Whenever an involution preserves a form, its two eigenspaces are orthogonal for that form, and that single lemma produces the orthogonality of the two halves in every case the category uses.</strong></p>
-<p>The article states and proves the lemma, applies it to the transpose with the trace bilinear form and to the conjugate transpose with the Hilbert–Schmidt form, and checks that in each case the two halves are not only orthogonal but complementary: the orthogonal complement of one half is the other. It then reads the two halves as the summands of an orthogonal direct sum, computes the restrictions of the form, notes that the matrix units are an orthonormal system for the Hilbert–Schmidt form while the two halves are not spanned by orthogonal lines of the coarse kind, and closes at $n=2$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em> for the two splits, and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the involutions. It defers the signatures of the restrictions to <em>The Trace Form and Its Signature on the Two Halves</em> and the Hilbert–Schmidt form itself to <em>The Hilbert–Schmidt Form</em>.</p>
+<p>The article states and proves the lemma, applies it to the transpose with the trace bilinear form and to the conjugate transpose with the Hilbert–Schmidt form, and checks that in each case the two halves are not only orthogonal but complementary: the orthogonal complement of one half is the other. It then reads the two halves as the summands of an orthogonal direct sum, computes the restrictions of the form, notes that the matrix units are an orthonormal system for the Hilbert–Schmidt form while the two halves are not spanned by orthogonal lines of the coarse kind, and closes at $n=2$. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric</em> and <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em> for the two splits, and <em>The Involutions over $\mathbb{R}$ and over $\mathbb{C}$</em> for the involutions. It defers the inertias of the restrictions to <em>The Trace Form and Its Inertia on the Two Halves</em> and the Hilbert–Schmidt form itself to <em>The Hilbert–Schmidt Form</em>.</p>
 <h2 id="the-complement-and-the-lemma">The Complement and the Lemma</h2>
 <p><strong>Two subspaces are orthogonal complements for a form when each is the annihilator of the other.</strong> Let $B$ be a bilinear or Hermitian form on a space $V$ and $U\subseteq V$. Put</p>
 <p>$$
@@ -97,7 +98,7 @@ $$</p>
 <p>$$
 M_n(\mathbb{R})=\operatorname{Sym}_n\perp\operatorname{Skew}_n .
 $$</p>
-<p><strong>The form is nondegenerate and its restriction to each half is definite.</strong> For real $A$, $B(A,A)=\operatorname{tr}(A^{\mathsf T}A)=\sum_{ij}A_{ij}^{2}\ge0$ with equality only at $A=0$, so the form is positive definite on the whole algebra. On the symmetric half it is positive definite, of signature $\big(\tfrac{n(n+1)}{2},0\big)$; on the antisymmetric half it is negative definite, since $\operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}$, of signature $\big(0,\tfrac{n(n-1)}{2}\big)$.</p>
+<p><strong>The form is nondegenerate and its restriction to each half is definite.</strong> For real $A$, $B(A,A)=\operatorname{tr}(A^{\mathsf T}A)=\sum_{ij}A_{ij}^{2}\ge0$ with equality only at $A=0$, so the form is positive definite on the whole algebra. On the symmetric half it is positive definite, of inertia $\big(\tfrac{n(n+1)}{2},0\big)$; on the antisymmetric half it is negative definite, since $\operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}$, of inertia $\big(0,\tfrac{n(n-1)}{2}\big)$.</p>
 <p><strong>The two projections are orthogonal projections for this form.</strong> The maps $A\mapsto\tfrac12(A+A^{\mathsf T})$ and $A\mapsto\tfrac12(A-A^{\mathsf T})$ are idempotent with orthogonal images, and they are self-adjoint for $B$:</p>
 <p>$$
 B\big(\tfrac12(A+A^{\mathsf T}),C\big)=B\big(A,\tfrac12(C+C^{\mathsf T})\big),
@@ -117,7 +118,7 @@ $$</p>
 M_n(\mathbb{C})=\operatorname{Herm}_n\perp\operatorname{SkewHerm}_n .
 $$</p>
 <p><strong>The Hermitian form itself does not vanish on the pair, and the lemma is applied to its real part.</strong> The number $\operatorname{tr}(H^{*}K)=\operatorname{tr}(HK)$ is purely imaginary, so its real part is zero and its imaginary part generally is not. The distinction is the one recorded in <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian</em>: the two halves are orthogonal for the Euclidean structure and not for the Hermitian one, and every statement about orthogonality in the category means the Euclidean statement.</p>
-<p><strong>The two forms give the same complement and different restrictions.</strong> For the Hermitian form $\langle A,C\rangle$ the two halves have restrictions of signature $(n^{2},0)$ and $(0,n^{2})$ in the real sense, so each restriction is definite and the direct sum is orthogonal for the real part. What fails is only the vanishing of the complex-valued form on the pair, and that failure is the source of the symplectic structure of the following articles.</p>
+<p><strong>The two forms give the same complement and different restrictions.</strong> For the Hermitian form $\langle A,C\rangle$ the two halves have restrictions of inertia $(n^{2},0)$ and $(0,n^{2})$ in the real sense, so each restriction is definite and the direct sum is orthogonal for the real part. What fails is only the vanishing of the complex-valued form on the pair, and that failure is the source of the symplectic structure of the following articles.</p>
 <h2 id="the-matrix-units-as-an-orthonormal-system">The Matrix Units as an Orthonormal System</h2>
 <p><strong>The matrix units are orthonormal for the Hilbert–Schmidt form.</strong> For all indices,</p>
 <p>$$
@@ -129,13 +130,13 @@ $$</p>
 <p>$$
 \operatorname{tr}(A^{*}C)=\sum_{i,j}\overline{A_{ij}}C_{ij},\qquad \operatorname{tr}(A^{\mathsf T}C)=\sum_{i,j}A_{ij}C_{ij}
 $$</p>
-<p>for real matrices, which are the two forms of the article written in the basis of units. The real part of the first is the Euclidean form of $\mathbb{R}^{2n^{2}}$, and the real part of the second is indefinite of signature $(n^{2},n^{2})$ on the complex algebra and of signature $(n(n+1)/2,\,n(n-1)/2)$ on the real matrices.</p>
+<p>for real matrices, which are the two forms of the article written in the basis of units. The real part of the first is the Euclidean form of $\mathbb{R}^{2n^{2}}$, and the real part of the second is indefinite of inertia $(n^{2},n^{2})$ on the complex algebra and of inertia $(n(n+1)/2,\,n(n-1)/2)$ on the real matrices.</p>
 <h2 id="what-the-complementarity-gives">What the Complementarity Gives</h2>
 <p><strong>An orthogonal direct sum splits every form into two forms and every quadratic form into two squares.</strong> Since $M_n=\operatorname{Sym}\perp\operatorname{Skew}$,</p>
 <p>$$
 \operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
 $$</p>
-<p>for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the antisymmetric half, and its signature is read from the two halves separately.</p>
+<p>for $A=S+K$ real, the cross term vanishing by orthogonality. The quadratic form $\operatorname{tr}(A^{2})$ is therefore the sum of a positive definite form on the symmetric half and a negative definite one on the antisymmetric half, and its inertia is read from the two halves separately.</p>
 <p><strong>The complementarity makes the projections computable and the adjoints visible.</strong> The orthogonal projection onto a half is $\tfrac12(\mathrm{I}\pm\sigma)$, and the adjoint of a map that preserves the split is computed half by half. The same mechanism is used for the operator space of <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>, where the two-sided operators carry their own split.</p>
 <p><strong>The complementarity does not survive every form.</strong> For a form that the involution does not preserve, the two halves are not orthogonal: the Killing form of $\mathfrak{so}(n)$ vanishes at $n=2$ while the trace form does not, and on a non-reductive algebra the radical is its own orthogonal complement. The condition of the lemma is a real hypothesis, and the article <em>The Killing Form, Its Radical and the Triangular Case</em> records what happens when it fails.</p>
 <h2 id="the-case-math75">The Case $n=2$</h2>
@@ -143,7 +144,7 @@ $$</p>
 <p>$$
 \operatorname{tr}(\mathrm{I}J)=\operatorname{tr}(\sigma_1J)=\operatorname{tr}(\sigma_3J)=0,
 $$</p>
-<p>so the single antisymmetric direction is orthogonal to the three symmetric ones. The form has signature $(3,1)$ on $M_2(\mathbb{R})$.</p>
+<p>so the single antisymmetric direction is orthogonal to the three symmetric ones. The form has inertia $(3,1)$ on $M_2(\mathbb{R})$.</p>
 <p><strong>At $n=2$ the complex split is $8=4\perp4$.</strong> The Hermitian half is spanned over $\mathbb{R}$ by the Pauli list and the anti-Hermitian half by $i$ times it, and the two four-dimensional real spaces are orthogonal for the Euclidean form. In the biquaternion reading this is the split into the two sectors, and the orthogonality is the statement that the sectors do not mix under the Hilbert–Schmidt form.</p>
 <p><strong>The complementarity is the statement the two halves are the annihilator of each other, and that is what makes them a split and not a choice.</strong> Any complement of $\operatorname{Skew}_n$ has dimension $n(n+1)/2$; only one of them is orthogonal to it and only one is the fixed half of the involution, and in the transpose case the two coincide. The triangular algebra $UT_n$ is a complement with the right dimension and neither property, which is the precise content of the next comparison.</p>
 <h2 id="summary">Summary</h2>
@@ -183,7 +184,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(3,1)$ and $(4,4)$</td>
-<td>the signatures at $n=2$ of the two forms</td>
+<td>the inertias at $n=2$ of the two forms</td>
 </tr>
 </tbody>
 </table></div>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Realification of $\mathbb{C}^2$ — Biquaternion Universe</title>
+  <meta name="description" content="The realification of is the real vector space obtained by forgetting the multiplication by and keeping only the multiplication by real scalars. As a set…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -156,7 +157,7 @@ where $\overline{Q}=(\overline{Q}_{\blacktriangle},\overline{Q}_{\blacktriangled
 <p><em>Proof.</em> The expression is real-linear for every pair $A,B$. Conversely, a real-linear map is determined by its values on $e_1,ie_1,e_2,ie_2$, and the four values are the columns of a real $4\times4$ matrix; the pair $(A,B)$ collects the images of $e_1,e_2$ and of $ie_1,ie_2$ in the complex basis, and the two collections determine the map. The conditions follow from $T(iQ)=iAQ-iB\overline{Q}$ compared with $iT(Q)=iAQ+iB\overline{Q}$ and with $-iT(Q)=-iAQ-iB\overline{Q}$.</p>
 <p><strong>Remark (the conjugate space).</strong> The conjugate vector space $\overline{V}$ has the same abelian group and the scalar multiplication $\lambda\cdot v=\overline{\lambda}v$. <strong>A conjugate-linear map $V\to V$ is the same thing as a complex-linear map $\overline{V}\to V$</strong>, and the identity map $V\to\overline{V}$ is conjugate-linear. The two summands of the splitting are $\operatorname{Hom}_{\mathbb{C}}(V,V)$ and $\operatorname{Hom}_{\mathbb{C}}(\overline{V},V)$, each of complex dimension $4$.</p>
 <h2 id="the-realification-of-the-three-forms">The Realification of the Three Forms</h2>
-<p><strong>Each complex form realifies to two real forms, its real and imaginary parts, and the pair is not arbitrary: the two parts are related by the complex structure, and their signatures are the real data that the complex form alone does not display.</strong></p>
+<p><strong>Each complex form realifies to two real forms, its real and imaginary parts, and the pair is not arbitrary: the two parts are related by the complex structure, and their inertias are the real data that the complex form alone does not display.</strong></p>
 <p><strong>Definition.</strong> Let $F$ be a $\mathbb{C}$-bilinear form on $V$. Its <strong>realification</strong> is the pair of real bilinear forms $\operatorname{Re}F$ and $\operatorname{Im}F$. For the Hermitian form $H$, the realification is the pair $\operatorname{Re}H$ and $\operatorname{Im}H$; the form is not $\mathbb{C}$-bilinear, and its real picture is read with the same formulas.</p>
 <p><strong>Proposition (the Cauchy–Riemann compatibility).</strong> For a $\mathbb{C}$-bilinear $F$,
 $$
@@ -164,14 +165,14 @@ $$
 $$
 and the same two identities hold with $J$ in the second slot.</p>
 <p><em>Proof.</em> $F(JQ_1,Q_2)=F(iQ_1,Q_2)=iF(Q_1,Q_2)$; taking real and imaginary parts gives the two identities. The second slot is the same computation with $F(Q_1,iQ_2)=iF(Q_1,Q_2)$.</p>
-<p><strong>Theorem (the signatures).</strong> On the real space $\mathbb{R}^4$:</p>
+<p><strong>Theorem (the inertias).</strong> On the real space $\mathbb{R}^4$:</p>
 <ul>
-<li>$\operatorname{Re}H$ is symmetric and positive definite, of signature $(4,0)$;</li>
+<li>$\operatorname{Re}H$ is symmetric and positive definite, of inertia $(4,0)$;</li>
 <li>$\operatorname{Im}H$ is alternating and nondegenerate, of rank $4$;</li>
-<li>$\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric and nondegenerate, each of signature $(2,2)$;</li>
+<li>$\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric and nondegenerate, each of inertia $(2,2)$;</li>
 <li>$\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are alternating and nondegenerate, each of rank $4$.</li>
 </ul>
-<p><em>Proof.</em> In the real basis $e_1,ie_1,e_2,ie_2$, the form $\operatorname{Re}H$ is $q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2$, the identity matrix. The form $\operatorname{Im}H$ is $-(dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown})$, whose matrix is block diagonal with two copies of $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, of total Pfaffian $1$. The form $\operatorname{Re}B$ is $q_{\blacktriangle}^2-{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2-{q'_{\blacktriangledown}}^2$, of signature $(2,2)$; the form $\operatorname{Im}B$ is $2q_{\blacktriangle}q'_{\blacktriangle}+2q_{\blacktriangledown}q'_{\blacktriangledown}$, whose matrix has the two eigenvalues $\pm1$ in each coordinate plane, again of signature $(2,2)$. The forms $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are computed in <em>The Three Canonical Forms on $\mathbb{C}^2$</em>, where their Pfaffians are $1$.</p>
+<p><em>Proof.</em> In the real basis $e_1,ie_1,e_2,ie_2$, the form $\operatorname{Re}H$ is $q_{\blacktriangle}^2+{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2+{q'_{\blacktriangledown}}^2$, the identity matrix. The form $\operatorname{Im}H$ is $-(dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown})$, whose matrix is block diagonal with two copies of $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, of total Pfaffian $1$. The form $\operatorname{Re}B$ is $q_{\blacktriangle}^2-{q'_{\blacktriangle}}^2+q_{\blacktriangledown}^2-{q'_{\blacktriangledown}}^2$, of inertia $(2,2)$; the form $\operatorname{Im}B$ is $2q_{\blacktriangle}q'_{\blacktriangle}+2q_{\blacktriangledown}q'_{\blacktriangledown}$, whose matrix has the two eigenvalues $\pm1$ in each coordinate plane, again of inertia $(2,2)$. The forms $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are computed in <em>The Three Canonical Forms on $\mathbb{C}^2$</em>, where their Pfaffians are $1$.</p>
 <p>The four real pictures are collected below. The notation $\Omega$ is the Kähler form,
 $$
 \Omega=-\operatorname{Im}H=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown},
@@ -189,14 +190,14 @@ chosen with the sign that makes it positive on the complex lines.</p>
 <tbody>
 <tr>
 <td>$H$</td>
-<td>$\operatorname{Re}H=g$, signature $(4,0)$</td>
+<td>$\operatorname{Re}H=g$, inertia $(4,0)$</td>
 <td>$\operatorname{Im}H=-\Omega$, symplectic</td>
 <td>Euclidean metric and Kähler form</td>
 </tr>
 <tr>
 <td>$B$</td>
-<td>$\operatorname{Re}B$, signature $(2,2)$</td>
-<td>$\operatorname{Im}B$, signature $(2,2)$</td>
+<td>$\operatorname{Re}B$, inertia $(2,2)$</td>
+<td>$\operatorname{Im}B$, inertia $(2,2)$</td>
 <td>two indefinite metrics, related by $J$</td>
 </tr>
 <tr>
@@ -305,7 +306,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The realification of $\mathbb{C}^2$ is the real vector space $\mathbb{R}^4$ obtained by restricting the scalars to $\mathbb{R}$; the complex basis $e_1,e_2$ becomes the real basis $e_1,ie_1,e_2,ie_2$, and the dimension doubles from $2$ to $4$. The information lost in the passage is the complex structure $J$, the real operator $JQ=iQ$ with $J^2=-I$; a real space of dimension $4$ becomes complex only when such an operator is chosen, and the complex structures on $\mathbb{R}^4$ form the homogeneous space $\mathrm{GL}_4(\mathbb{R})/\mathrm{GL}_2(\mathbb{C})$ of dimension $8$.</p>
 <p>A real-linear endomorphism is complex-linear exactly when $TJ=JT$ and conjugate-linear exactly when $TJ=-JT$; every one splits uniquely as $T=T_++T_-$ with $T_\pm=\tfrac12(T\mp JTJ)$, so $\operatorname{End}_{\mathbb{R}}=\operatorname{End}_{\mathbb{C}}\oplus\operatorname{Hom}_{\bar{\mathbb{C}}}$ with dimensions $16=8+8$. In a complex basis every real-linear map is $T(Q)=AQ+B\overline{Q}$, with $B=0$ for the complex-linear maps and $A=0$ for the conjugate-linear ones.</p>
-<p>Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H$ is the positive definite metric of signature $(4,0)$, $\operatorname{Im}H=-\Omega$ is the Kähler form, $\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric of signature $(2,2)$, and $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are symplectic. The Hermitian form is recovered by $H=g-i\Omega$ with $\Omega(Q_1,Q_2)=g(JQ_1,Q_2)$, and the real traces and determinants are $\operatorname{tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{tr}_{\mathbb{C}}$ and $\det_{\mathbb{R}}=\lvert\det_{\mathbb{C}}\rvert^2$. The dictionary between the complex and the real statements is mechanical, and the count of real dimensions records a loss of structure rather than a gain of freedom.</p>
+<p>Each complex form realifies to its real and imaginary parts: $\operatorname{Re}H$ is the positive definite metric of inertia $(4,0)$, $\operatorname{Im}H=-\Omega$ is the Kähler form, $\operatorname{Re}B$ and $\operatorname{Im}B$ are symmetric of inertia $(2,2)$, and $\operatorname{Re}\omega$ and $\operatorname{Im}\omega$ are symplectic. The Hermitian form is recovered by $H=g-i\Omega$ with $\Omega(Q_1,Q_2)=g(JQ_1,Q_2)$, and the real traces and determinants are $\operatorname{tr}_{\mathbb{R}}=2\operatorname{Re}\operatorname{tr}_{\mathbb{C}}$ and $\det_{\mathbb{R}}=\lvert\det_{\mathbb{C}}\rvert^2$. The dictionary between the complex and the real statements is mechanical, and the count of real dimensions records a loss of structure rather than a gain of freedom.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -341,7 +342,7 @@ $$</p>
 </tr>
 <tr>
 <td>$g=\operatorname{Re}H$</td>
-<td>the Euclidean metric, signature $(4,0)$</td>
+<td>the Euclidean metric, inertia $(4,0)$</td>
 </tr>
 <tr>
 <td>$\Omega=-\operatorname{Im}H$</td>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves as Orthogonal Complements at $n=2$ — Biquaternion Universe</title>
+  <meta name="description" content="The symmetric and the antisymmetric halves are exact orthogonal complements for the trace form, and the reason is that the transpose is self-adjoint for…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -72,12 +73,12 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The symmetric and the antisymmetric halves are exact orthogonal complements for the trace form, and the reason is that the transpose is self-adjoint for that form.</strong></p>
 <p>The article proves the orthogonality of the two halves over $\mathbb{R}$ and over $\mathbb{C}$, computes the Gram matrices of the trace form on each half with the eigenvalues $1,1,2$ and $-2$, states the general criterion by which the eigenspaces of an involution are orthogonal, and lists the orthogonal complements of the subspaces that recur in the series. It assumes <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>, <em>The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$</em> and <em>The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em>.</p>
-<p>It defers the definite form on the complex algebra to <em>The Hilbert–Schmidt Form at $n=2$</em>, the signature statements to <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em>, and the subspaces of the triangular kind to <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>.</p>
+<p>It defers the definite form on the complex algebra to <em>The Hilbert–Schmidt Form at $n=2$</em>, the inertia statements to <em>The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</em>, and the subspaces of the triangular kind to <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$</em>.</p>
 <h2 id="the-two-forms-on-the-real-matrices">The Two Forms on the Real Matrices</h2>
 <p><strong>Definition.</strong> On $M_2(\mathbb{R})$ the <strong>trace form</strong> is $\langle X,Y\rangle=\operatorname{tr}(XY)$ and the <strong>Hilbert–Schmidt form</strong> is $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$.</p>
 <p><strong>Proposition.</strong> On the real matrices the two forms agree.</p>
 <p><strong>Proof.</strong> On real matrices $\operatorname{tr}(X^{\mathsf T}Y)=\sum_{i,j}x_{ij}y_{ij}$ and $\operatorname{tr}(XY)=\sum_{i,j}x_{ij}y_{ji}$, and the second sum is the first after renaming the indices.</p>
-<p><strong>Both forms are nondegenerate.</strong> The trace pairing of two matrix units is $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$, so the four units form a basis dual to themselves and the form is nondegenerate; its signature on the four real dimensions is $(3,1)$, as <em>The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$</em> proves.</p>
+<p><strong>Both forms are nondegenerate.</strong> The trace pairing of two matrix units is $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$, so the four units form a basis dual to themselves and the form is nondegenerate; its inertia on the four real dimensions is $(3,1)$, as <em>The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$</em> proves.</p>
 <h2 id="orthogonality-of-the-two-halves">Orthogonality of the Two Halves</h2>
 <p><strong>Theorem.</strong> For symmetric $H$ and antisymmetric $K$ one has $\operatorname{tr}(HK)=0$, so the two halves are orthogonal for the trace form.</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(HK)=\operatorname{tr}((HK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}H^{\mathsf T})=\operatorname{tr}((-K)H)=-\operatorname{tr}(KH)=-\operatorname{tr}(HK)$, using cyclicity in the last step; a real number equal to its negative is zero.</p>
@@ -93,7 +94,7 @@ $$</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, the cross term $\operatorname{tr}(E_{11}E_{22})=0$, and $\operatorname{tr}((E_{12}+E_{21})^{2})=\operatorname{tr}(E_{12}E_{21}+E_{21}E_{12})=2$.</p>
 <p><strong>Proposition.</strong> On the antisymmetric line, spanned by $J$, the trace form is $-2$.</p>
 <p><strong>Proof.</strong> $J^{2}=-I$, so $\operatorname{tr}(J^{2})=-2$.</p>
-<p><strong>Corollary.</strong> The trace form is positive definite on the symmetric half and negative definite on the antisymmetric line, so its signature on $M_2(\mathbb{R})$ is $(3,1)$.</p>
+<p><strong>Corollary.</strong> The trace form is positive definite on the symmetric half and negative definite on the antisymmetric line, so its inertia on $M_2(\mathbb{R})$ is $(3,1)$.</p>
 <p><strong>Proof.</strong> The two halves are orthogonal and carry definite forms of ranks $3$ and $1$.</p>
 <p><strong>The antisymmetric direction is the timelike one.</strong> A matrix $H+kJ$ with $H$ symmetric has $\operatorname{tr}((H+kJ)^{2})=\operatorname{tr}(H^{2})-2k^{2}$, so the set $\{\operatorname{tr}(X^{2})=0\}$ is a genuine cone in four real dimensions, with the line $\mathbb{R}J$ inside it.</p>
 <h2 id="the-involution-criterion">The Involution Criterion</h2>
@@ -122,7 +123,7 @@ $$</p>
 <p><strong>Proof.</strong> $\operatorname{tr}(E_{kl}E_{mn})=\delta_{lm}\delta_{kn}$, so two matrix units pair nontrivially exactly when each is the transpose of the other.</p>
 <p><strong>The corner statement is the origin of the transpose pairing.</strong> The matrix units are paired by the trace exactly along the transpose, which is why the corner decomposition of <em>The Fine Decomposition against the Diagonal at $n=2$</em> and the trace form fit together.</p>
 <h2 id="summary">Summary</h2>
-<p>On the real matrices the trace form and the Hilbert–Schmidt form agree and are nondegenerate of signature $(3,1)$. The symmetric and the antisymmetric halves are orthogonal, because the transpose is self-adjoint for the trace form; the Gram matrix on the symmetric half is $\operatorname{diag}(1,1,2)$ and the form on the antisymmetric line is $-2$, so the symmetric half is positive definite and the antisymmetric line is negative definite and timelike.</p>
+<p>On the real matrices the trace form and the Hilbert–Schmidt form agree and are nondegenerate of inertia $(3,1)$. The symmetric and the antisymmetric halves are orthogonal, because the transpose is self-adjoint for the trace form; the Gram matrix on the symmetric half is $\operatorname{diag}(1,1,2)$ and the form on the antisymmetric line is $-2$, so the symmetric half is positive definite and the antisymmetric line is negative definite and timelike.</p>
 <p>The same argument with the conjugate transpose gives the orthogonality of $\operatorname{Herm}_2$ and $\mathfrak{u}(2)$ for the real part of the Hermitian form, while the complex bilinear form $\operatorname{tr}(XY)$ does not vanish on the pair $I,iI$ and therefore does not see the split. The complements of the recurring subspaces are $\mathfrak{sl}_2$ for the scalars, the off-diagonal span for the diagonal, and all units but the transpose for a corner.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -151,7 +152,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(3,1)$</td>
-<td>the signature of the trace form on $M_2(\mathbb{R})$</td>
+<td>the inertia of the trace form on $M_2(\mathbb{R})$</td>
 </tr>
 <tr>
 <td>$\operatorname{Herm}_2$, $\mathfrak{u}(2)$</td>

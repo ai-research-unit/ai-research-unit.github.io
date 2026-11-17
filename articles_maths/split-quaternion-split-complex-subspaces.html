@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Split-Quaternion Split-Complex Subspaces — Biquaternion Universe</title>
+  <meta name="description" content="The split-quaternion algebra contains two copies of the split-complex numbers, namely the planes and. Each is a commutative subalgebra isomorphic to, each…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -127,7 +128,7 @@ $$</p>
 \langle q_t + q_y \vec e_y\rangle_{\natural} = q_t^2 - q_y^2, \qquad \langle q_t + q_z \vec e_z\rangle_{\natural} = q_t^2 - q_z^2
 \;},
 $$</p>
-<p>of signature $(1,1)$. Each restriction is the hyperbolic or <strong>Minkowski</strong> form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.</p>
+<p>of inertia $(1,1)$. Each restriction is the hyperbolic or <strong>Minkowski</strong> form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.</p>
 <h3 id="invertibles-and-zero-divisors">Invertibles and Zero Divisors</h3>
 <p>In $\mathbb{C}_{\mathrm{spl},2}$, an element $q_t + q_y\vec e_y$ is invertible in the algebra exactly when $q_t^2 \neq q_y^2$, with inverse $(q_t - q_y\vec e_y)/(q_t^2-q_y^2)$; the invertibles form the two branches of the hyperbola $q_t^2 - q_y^2 \neq 0$. The non-invertibles are the two isotropic lines</p>
 <p>$$
@@ -135,7 +136,7 @@ $$</p>
 $$</p>
 <p>on which $q_t = \pm q_y$; every nonzero element of these lines is a zero divisor, and indeed $(1+\vec e_y)(1-\vec e_y) = 0$. The same statements hold in $\mathbb{C}_{\mathrm{spl},3}$ with the isotropic lines $\mathbb{R}(1\pm \vec e_z)$. The isotropic lines of the two planes, together with the scalar null direction, are the traces of the null cone of $\langle\cdot\rangle_{\natural}$ on the planes, and they are described in <em>Split-Quaternion Zero Divisors</em>.</p>
 <p><strong>Proposition.</strong> The zero divisors of $\mathbb{C}_{\mathrm{spl},2}$ are exactly the nonzero elements of the two isotropic lines $\mathbb{R}(1 \pm \vec e_y)$, and the zero divisors of $\mathbb{C}_{\mathrm{spl},3}$ are exactly the nonzero elements of $\mathbb{R}(1 \pm \vec e_z)$.</p>
-<p><strong>Proof.</strong> The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is invertible if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of <em>Split-Quaternion Norm and Invertibility</em>; hence the non-invertibles are exactly the nonzero null elements.</p>
+<p><strong>Proof.</strong> The split-quaternion norm of the plane has inertia $(1,1)$, so its null set is the union of the two lines indicated, and an element is invertible if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of <em>Split-Quaternion Norm and Invertibility</em>; hence the non-invertibles are exactly the nonzero null elements.</p>
 <h2 id="the-structure-of-the-planes">The Structure of the Planes</h2>
 <p>Each plane is the span of two orthogonal idempotents. In $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1, \vec e_y\}$ the element $\vec e_y$ is an involution, $\vec e_y^2 = +1$, with eigenvectors $1 \pm \vec e_y$ and eigenvalues $\pm 1$; in $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1, \vec e_z\}$ the element $\vec e_z$ is an involution with eigenvectors $1 \pm \vec e_z$. Hence each plane is the direct sum of the two idempotent lines,</p>
 <p>$$
@@ -191,7 +192,7 @@ $$</p>
 <p><strong>Example (the isotropic lines).</strong> For the first plane, $(1 + \vec e_y)(1 - \vec e_y) = 0$; for the second, $(1 + \vec e_z)(1 - \vec e_z) = 0$. The four lines $\mathbb{R}(1\pm \vec e_y)$, $\mathbb{R}(1\pm \vec e_z)$ are the split-complex traces of the null cone.</p>
 <h2 id="summary">Summary</h2>
 <p>The split-quaternion algebra contains two commutative subalgebras $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ and $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$, each isomorphic to the split-complex numbers $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. They meet the scalar line in $\mathbb{R}\cdot 1$, meet the vector subspace in $\mathbb{R} \vec e_y$ and $\mathbb{R} \vec e_z$, and span together the three-dimensional space $\operatorname{span}\{1,\vec e_y,\vec e_z\}$.</p>
-<p>The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of signature $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the <strong>twisted</strong> multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.</p>
+<p>The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of inertia $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the <strong>twisted</strong> multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -244,7 +245,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle q_t+q_y\vec e_y\rangle_{\natural} = q_t^2-q_y^2$</td>
-<td>the form restricted to a split-complex plane, signature $(1,1)$</td>
+<td>the form restricted to a split-complex plane, inertia $(1,1)$</td>
 <td>this article</td>
 </tr>
 <tr>

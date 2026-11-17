@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Split-Quaternion Spectral Theory — Biquaternion Universe</title>
+  <meta name="description" content="The split-quaternion algebra is unital and associative but neither commutative nor a division algebra, and both failures shape its spectral theory.…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -109,7 +110,7 @@ $$</p>
 </ul>
 <p>Moreover, $\tilde q$ is singular if and only if $\lambda = 0$ is a root, i.e. $q_t = 0$ and $\langle \vec v\rangle_{\natural} = 0$.</p>
 <p><strong>Proof.</strong> These are the three cases of the preceding formula, according to whether $-\langle \vec v\rangle_{\natural}$ is positive, negative or zero.</p>
-<p>The dichotomy is the signature in the spectrum of the indefiniteness of $\langle\cdot\rangle_{\natural}$: the timelike directions of the vector part ($\langle \vec v\rangle_{\natural}>0$) give oscillatory, conjugate-pair behaviour, while the spacelike directions ($\langle \vec v\rangle_{\natural}<0$) give real, exponential behaviour. The null directions sit at the transition, where the two eigenvalues coalesce.</p>
+<p>The dichotomy is the inertia in the spectrum of the indefiniteness of $\langle\cdot\rangle_{\natural}$: the timelike directions of the vector part ($\langle \vec v\rangle_{\natural}>0$) give oscillatory, conjugate-pair behaviour, while the spacelike directions ($\langle \vec v\rangle_{\natural}<0$) give real, exponential behaviour. The null directions sit at the transition, where the two eigenvalues coalesce.</p>
 <p><strong>Example.</strong> For $\tilde q = \vec e_x$ ($q_t=0$, $\langle \vec v\rangle_{\natural}=1>0$) the spectrum is $\{i, -i\}$, a conjugate pair; for $\tilde q = \vec e_y$ ($q_t=0$, $\langle \vec v\rangle_{\natural}=-1<0$) the spectrum is $\{1,-1\}$, real; for $\tilde q = \vec e_x+\vec e_z$ ($\langle \vec v\rangle_{\natural}=0$) the spectrum is $\{0\}$ and $\tilde q$ is a zero divisor.</p>
 <h2 id="cayleyhamilton-and-the-trace-and-determinant-functionals">Cayley–Hamilton and the Trace and Determinant Functionals</h2>
 <p><strong>Definition.</strong> The <strong>trace</strong> and <strong>determinant</strong> functionals of $\mathbb{H}_{\mathrm{spl}}$ are</p>
@@ -173,7 +174,7 @@ $$</p>
 <p><strong>Proof.</strong> The symmetric statement is immediate; normality follows from $\tilde q\tilde{q}^{\natural} = \langle\tilde q\rangle_{\natural}$ being central.</p>
 <p><strong>Remark.</strong> The involutions $\alpha$ and $\rho$ of <em>Split-Quaternion Subspaces and the Involutions</em> have larger fixed spaces, $\operatorname{span}\{1,\vec e_y,\vec e_z\}$ and $\operatorname{span}\{1,\vec e_x,\vec e_y\}$, and the indefinite form makes neither of them a positive-definite Hermitian structure; a genuine spectral theorem in the sense of Hilbert space theory requires a definite form, which $\mathbb{H}_{\mathrm{spl}}$ does not carry. What replaces it is the direct-sum (Peirce) decomposition of <em>Split-Quaternion Ideals and Peirce Decomposition</em>, which is a decomposition tailored to an idempotent rather than to a Hermitian element.</p>
 <h2 id="relation-to-the-biquaternion-case">Relation to the Biquaternion Case</h2>
-<p>The biquaternion article <em>The Biquaternion Eigenvalue Decomposition</em> takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, and eigenvalues</p>
+<p>The biquaternion article <em>The Biquaternion Eigenvalue Decomposition</em> takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$ of its $2\times2$ image, and eigenvalues</p>
 <p>$$
 \lambda_\pm = Q_t \pm iB, \qquad B = \sqrt{Q_x^2+Q_y^2+Q_z^2},
 $$</p>
@@ -243,7 +244,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle \vec v\rangle_{\natural} = q_x^2-q_y^2-q_z^2$</td>
-<td>the restricted norm, signature $(2,1)$</td>
+<td>the restricted norm, inertia $(2,1)$</td>
 <td><em>Split-Quaternion Scalar and Vector Subspaces</em></td>
 </tr>
 <tr>

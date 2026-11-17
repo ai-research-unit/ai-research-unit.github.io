@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$M_2(\mathbb{C})$ Pauli Representation : Products, Forms and Norms — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The matrix expression, at the element size, of every quantity of the algebra that involves two elements: the product, the symmetric and the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -363,7 +364,7 @@ $$
 \tfrac12\operatorname{Tr}(A^{\natural}A)=\tfrac12\operatorname{Tr}\bigl((\det A)\mathrm I_2\bigr)=\det A=N(\tilde Q),
 $$
 which is the statement that the quaternionic form on the diagonal is the determinant. The computation is one line, and it identifies the third of the four norms with the determinant of the block; the $4\times4$ article needs the square for the same identification, because there the block is repeated.</p>
-<p><strong>The determinant of a product.</strong> For all $\tilde Q_1,\tilde Q_2$,
+<p><strong>The determinant of a product of matrices.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det(A_1A_2)=\det A_1\det A_2,\qquad\text{that is}\qquad N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2).
 $$
@@ -382,7 +383,7 @@ $$
 P=\tfrac12\operatorname{Tr}(A^2),\qquad N=\tfrac12\operatorname{Tr}(A^{\natural}A)=\det A,\qquad
 H=\tfrac12\operatorname{Tr}(A^{\dagger}A),\qquad \mathrm{Kr}=\tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger}).
 $$
-The four letters, the four coordinate expressions and the four signatures are those of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. Each word is the half-trace of a product of the block with one of its three companions.</p>
+The four letters, the four coordinate expressions and the four inertias are those of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. Each word is the half-trace of a product of the block with one of its three companions.</p>
 <p><strong>The plain norm.</strong> From $A=Q_t\mathrm I_2-iW$ with $W^2=B^2\mathrm I_2$,
 $$
 A^2=(Q_t^2-B^2)\mathrm I_2-2iQ_tW,\qquad
@@ -400,12 +401,12 @@ so the quaternionic norm is at once the determinant, the eigenvalue of $A^{\natu
 $$
 H(\tilde Q)=\tfrac12\operatorname{Tr}(A^{\dagger}A)=\tfrac12\lVert A\rVert^2_{\mathrm{HS}}=\sum_\mu|Q_\mu|^2,
 $$
-the last equality because the four matrices $\mathrm I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$ are orthogonal for the Hilbert–Schmidt product and of square norm $2$ each. It is positive definite, of signature $(8,0)$ on the real algebra, and it is not multiplicative.</p>
+the last equality because the four matrices $\mathrm I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$ are orthogonal for the Hilbert–Schmidt product and of square norm $2$ each. It is positive definite, of inertia $(8,0)$ on the real algebra, and it is not multiplicative.</p>
 <p><strong>The Krein norm.</strong> The fourth word pairs the adjugate with the adjoint,
 $$
 \mathrm{Kr}(\tilde Q)=\tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger})=\sum_\mu\varepsilon_\mu|Q_\mu|^2,\qquad \varepsilon_t=1,\quad\varepsilon_x=\varepsilon_y=\varepsilon_z=-1,
 $$
-of signature $(2,6)$ on the real algebra. It is the Hermitian norm with the sign of the vector part reversed, and like the plain norm it is neither definite nor multiplicative.</p>
+of inertia $(2,6)$ on the real algebra. It is the Hermitian norm with the sign of the vector part reversed, and like the plain norm it is neither definite nor multiplicative.</p>
 <p><strong>The multiplicativity table.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -499,7 +500,7 @@ $$</p>
 <td>$1/2$</td>
 </tr>
 <tr>
-<td>determinant</td>
+<td>the determinant of the image</td>
 <td>$\det A$</td>
 <td>no factor</td>
 </tr>
@@ -532,7 +533,7 @@ $$</p>
 <td>$\tfrac12\operatorname{Tr}(A_1A_2)$</td>
 </tr>
 <tr>
-<td>determinant</td>
+<td>the determinant of the image</td>
 <td>$N^2$</td>
 <td>$N$</td>
 </tr>

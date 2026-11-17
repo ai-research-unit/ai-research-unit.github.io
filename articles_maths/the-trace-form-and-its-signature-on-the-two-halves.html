@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Trace Form and Its Signature on the Two Halves — Biquaternion Universe</title>
+  <title>The Trace Form and Its Inertia on the Two Halves — Biquaternion Universe</title>
+  <meta name="description" content="The form is symmetric, nondegenerate and invariant under conjugation, and its inertia on is, split exactly along the two halves: positive definite on and…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -68,10 +69,10 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-trace-form-and-its-signature-on-the-two-halves"><strong>The Trace Form and Its Signature on the Two Halves</strong></h1>
+        <h1 id="the-trace-form-and-its-inertia-on-the-two-halves"><strong>The Trace Form and Its Inertia on the Two Halves</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant under conjugation, and its signature on $M_n(\mathbb{R})$ is $(n(n+1)/2,\,n(n-1)/2)$, split exactly along the two halves: positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$.</strong></p>
-<p>The article proves the invariance, computes the Gram matrix in the matrix units and its eigenvalues, derives the signature of the whole algebra, of each half, of the traceless part and of the complex algebra read over $\mathbb{R}$, and identifies the form as the real part of the Hermitian form that becomes the Hilbert–Schmidt form. It assumes <em>The Two Halves as Orthogonal Complements</em> for the orthogonality of the split and <em>The Jordan Algebra $\operatorname{Sym}_n$</em> for the positive definiteness on the symmetric half. It defers the Hermitian form itself to <em>The Hilbert–Schmidt Form</em> and the Killing form to <em>The Killing Form, Its Radical and the Triangular Case</em>.</p>
+<p><strong>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant under conjugation, and its inertia on $M_n(\mathbb{R})$ is $(n(n+1)/2,\,n(n-1)/2)$, split exactly along the two halves: positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$.</strong></p>
+<p>The article proves the invariance, computes the Gram matrix in the matrix units and its eigenvalues, derives the inertia of the whole algebra, of each half, of the traceless part and of the complex algebra read over $\mathbb{R}$, and identifies the form as the real part of the Hermitian form that becomes the Hilbert–Schmidt form. It assumes <em>The Two Halves as Orthogonal Complements</em> for the orthogonality of the split and <em>The Jordan Algebra $\operatorname{Sym}_n$</em> for the positive definiteness on the symmetric half. It defers the Hermitian form itself to <em>The Hilbert–Schmidt Form</em> and the Killing form to <em>The Killing Form, Its Radical and the Triangular Case</em>.</p>
 <h2 id="the-form-and-its-invariance">The Form and Its Invariance</h2>
 <p><strong>The trace form is symmetric and nondegenerate.</strong> Put</p>
 <p>$$
@@ -83,9 +84,9 @@ $$</p>
 \langle PXP^{-1},PYP^{-1}\rangle=\operatorname{tr}(PXY P^{-1})=\operatorname{tr}(XY)=\langle X,Y\rangle .
 $$</p>
 <p>So $\mathrm{GL}_n(\mathbb{R})$ acts by isometries of the form, and the form is the invariant bilinear form of the algebra. The invariance is the reason the form is compatible with the derivation $\operatorname{ad}_A$, which is anti-self-adjoint for it by <em>The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</em>.</p>
-<p><strong>The invariance does not make the form definite, and that is the point of the indefinite signature.</strong> An invariant form on a non-compact group cannot be definite, and $\mathrm{GL}_n(\mathbb{R})$ is non-compact; the signature computed below is the exact measure of the failure. The form is positive on the symmetric half precisely because the symmetric half is not a Lie subalgebra but a space of stretches.</p>
+<p><strong>The invariance does not make the form definite, and that is the point of the indefinite inertia.</strong> An invariant form on a non-compact group cannot be definite, and $\mathrm{GL}_n(\mathbb{R})$ is non-compact; the inertia computed below is the exact measure of the failure. The form is positive on the symmetric half precisely because the symmetric half is not a Lie subalgebra but a space of stretches.</p>
 <p><strong>The form is the trace form of the algebra in the sense of the associative theory.</strong> It satisfies $\langle XY,Z\rangle=\langle X,YZ\rangle$, which was verified on random triples at $n=2,3,4$, and that associativity is what makes the projections onto the two halves self-adjoint for it.</p>
-<h2 id="the-signature-on-the-whole-algebra">The Signature on the Whole Algebra</h2>
+<h2 id="the-inertia-on-the-whole-algebra">The Inertia on the Whole Algebra</h2>
 <p><strong>In the matrix units the Gram matrix is the transposition permutation.</strong> Since</p>
 <p>$$
 \langle E_{ij},E_{kl}\rangle=\delta_{jk}\delta_{il},
@@ -94,7 +95,7 @@ $$</p>
 <p>$$
 n+\frac{n^{2}-n}{2}=\frac{n(n+1)}{2}
 $$</p>
-<p>and $-1$ with multiplicity $n(n-1)/2$. Hence the signature of the trace form on $M_n(\mathbb{R})$ is</p>
+<p>and $-1$ with multiplicity $n(n-1)/2$. Hence the inertia of the trace form on $M_n(\mathbb{R})$ is</p>
 <p>$$
 \big(\operatorname{sig}\big)=(n(n+1)/2,\ n(n-1)/2\big)= (3,1),\ (6,3),\ (10,6),\ (15,10)\quad(n=2,3,4,5),
 $$</p>
@@ -111,13 +112,13 @@ $$</p>
 <p>$$
 \langle X,X\rangle=\operatorname{tr}(X^{2})=\sum_{i,j}X_{ij}^{2}>0\qquad(X\neq0),
 $$</p>
-<p>so the form restricts to an inner product on the half, of rank $n(n+1)/2$. The positive part of the signature is therefore carried entirely by $\operatorname{Sym}_n$, and the computation of the Gram matrix on the basis $E_{ii}$, $\tfrac{1}{\sqrt2}(E_{ij}+E_{ji})$ gives the identity matrix of that size.</p>
+<p>so the form restricts to an inner product on the half, of rank $n(n+1)/2$. The positive part of the inertia is therefore carried entirely by $\operatorname{Sym}_n$, and the computation of the Gram matrix on the basis $E_{ii}$, $\tfrac{1}{\sqrt2}(E_{ij}+E_{ji})$ gives the identity matrix of that size.</p>
 <p><strong>The antisymmetric half is negative definite.</strong> For $K\in\operatorname{Skew}_n$,</p>
 <p>$$
 \langle K,K\rangle=\operatorname{tr}(K^{2})=-\operatorname{tr}(KK^{\mathsf T})=-\sum_{i,j}K_{ij}^{2}<0\qquad(K\neq0),
 $$</p>
-<p>so the form is negative definite there, of rank $n(n-1)/2$. The negative part of the signature is carried entirely by $\operatorname{Skew}_n$.</p>
-<p><strong>The two halves are orthogonal, so the signature is the sum of the two.</strong> For $S$ symmetric and $K$ antisymmetric,</p>
+<p>so the form is negative definite there, of rank $n(n-1)/2$. The negative part of the inertia is carried entirely by $\operatorname{Skew}_n$.</p>
+<p><strong>The two halves are orthogonal, so the inertia is the sum of the two.</strong> For $S$ symmetric and $K$ antisymmetric,</p>
 <p>$$
 \langle S,K\rangle=\operatorname{tr}(SK)=0,
 $$</p>
@@ -125,37 +126,37 @@ $$</p>
 <p>$$
 M_n(\mathbb{R})=\operatorname{Sym}_n\perp\operatorname{Skew}_n
 $$</p>
-<p>is a decomposition into a positive definite and a negative definite subspace, and the signature theorem for a direct orthogonal sum gives</p>
+<p>is a decomposition into a positive definite and a negative definite subspace, and the inertia theorem for a direct orthogonal sum gives</p>
 <p>$$
 \operatorname{sig}\big(M_n(\mathbb{R})\big)=\Big(\frac{n(n+1)}{2},0\Big)+\Big(0,\frac{n(n-1)}{2}\Big).
 $$</p>
 <p><strong>The form is therefore the model of an indefinite form split by an involution.</strong> Any involution $\theta$ preserving a form with $\theta^{2}=1$ splits the space into the fixed and the anti-fixed parts, and the form is definite on each; the trace form with the transpose is the matrix case, and the general statement is the lemma of <em>The Two Halves as Orthogonal Complements</em>.</p>
 <h2 id="the-traceless-part">The Traceless Part</h2>
-<p><strong>On the traceless subspace the signature loses one positive direction.</strong> The line $\mathbb{R}\mathrm{I}$ is positive and orthogonal to $\mathfrak{sl}_n(\mathbb{R})$, since $\langle \mathrm{I},X\rangle=\operatorname{tr}(X)=0$. Hence</p>
+<p><strong>On the traceless subspace the inertia loses one positive direction.</strong> The line $\mathbb{R}\mathrm{I}$ is positive and orthogonal to $\mathfrak{sl}_n(\mathbb{R})$, since $\langle \mathrm{I},X\rangle=\operatorname{tr}(X)=0$. Hence</p>
 <p>$$
 \operatorname{sig}\big(\mathfrak{sl}_n(\mathbb{R})\big)=\Big(\frac{n(n+1)}{2}-1,\ \frac{n(n-1)}{2}\Big)=(2,1),\ (5,3),\ (9,6)\quad(n=2,3,4),
 $$</p>
 <p>which was checked from the Gram matrix in the basis $E_{ij}-\tfrac1n\delta_{ij}\mathrm{I}$.</p>
 <p><strong>The traceless part splits as symmetric traceless plus antisymmetric.</strong> The traceless symmetric matrices have dimension $n(n+1)/2-1$ and the antisymmetric ones $n(n-1)/2$, and they add to $n^{2}-1$. So the same split occurs inside the traceless part, and the form is the direct sum of a positive definite inner product on the traceless symmetric matrices and a negative definite form on the antisymmetric ones.</p>
-<p><strong>The form is definite on each half of the traceless part and indefinite on the whole.</strong> The two statements are consistent because the split is orthogonal: indefiniteness on a sum of two definite pieces of opposite signs is automatic, and the signature counts the two signs separately.</p>
+<p><strong>The form is definite on each half of the traceless part and indefinite on the whole.</strong> The two statements are consistent because the split is orthogonal: indefiniteness on a sum of two definite pieces of opposite signs is automatic, and the inertia counts the two signs separately.</p>
 <h2 id="the-complex-case-and-the-hermitian-form">The Complex Case and the Hermitian Form</h2>
-<p><strong>Read over $\mathbb{R}$, the complex algebra has signature $(n^{2},n^{2})$.</strong> With $\operatorname{Re}\operatorname{tr}(XY)$ and the real basis $E_{ij},iE_{ij}$, the Gram matrix has eigenvalues</p>
+<p><strong>Read over $\mathbb{R}$, the complex algebra has inertia $(n^{2},n^{2})$.</strong> With $\operatorname{Re}\operatorname{tr}(XY)$ and the real basis $E_{ij},iE_{ij}$, the Gram matrix has eigenvalues</p>
 <p>$$
 +1,\ +1,\ -1,\ -1\ \text{per pair }(i,j),
 $$</p>
-<p>so the positive and negative multiplicities are equal, $n^{2}$ each, and the signature is $(n^{2},n^{2})=(4,4),(9,9)$ at $n=2,3$, which was checked from the Gram matrix.</p>
+<p>so the positive and negative multiplicities are equal, $n^{2}$ each, and the inertia is $(n^{2},n^{2})=(4,4),(9,9)$ at $n=2,3$, which was checked from the Gram matrix.</p>
 <p><strong>The isotropic directions are the complex structures.</strong> Every complex matrix $X$ gives an isotropic pair $X$ and $iX$, since $\operatorname{Re}\operatorname{tr}(X\cdot iX)=0$ and both are isotropic when $X$ is nilpotent in the appropriate sense. So the real form on the complex algebra has a large isotropic subspace, of dimension $n^{2}$, and the real structure of $\mathbb{C}$ is what produces it.</p>
 <p><strong>The Hermitian form is definite, and it is the form that the two halves split into Hermitian and anti-Hermitian.</strong> The positive definite form $\operatorname{tr}(X^{*}Y)$ has no negative direction, and the involution $X\mapsto X^{*}$ splits the complex algebra into the Hermitian and the anti-Hermitian parts, on which the form is respectively positive and negative. So the two pictures agree: the real case of the trace form is the real part of the Hermitian case, and the split by the involution is the same split in both.</p>
 <h2 id="the-case-math80">The Case $n=2$</h2>
-<p><strong>At $n=2$ the signature is $(3,1)$ and the form is the Lorentz form of the biquaternion algebra.</strong> In the basis $\mathrm{I},\sigma_1,\sigma_3,J$,</p>
+<p><strong>At $n=2$ the inertia is $(3,1)$ and the form is the Lorentz form of the biquaternion algebra.</strong> In the basis $\mathrm{I},\sigma_1,\sigma_3,J$,</p>
 <p>$$
 \langle\mathrm{I},\mathrm{I}\rangle=\langle\sigma_1,\sigma_1\rangle=\langle\sigma_3,\sigma_3\rangle=2,\qquad \langle J,J\rangle=-2,
 $$</p>
 <p>and all other pairings vanish, so the Gram matrix is $2$ times the Lorentz form $\operatorname{diag}(1,1,1,-1)$. The computation confirms the diagonal form and the value $-2$ on $J$.</p>
-<p><strong>The signature $(3,1)$ and the biquaternion norm are two readings of one form.</strong> The biquaternion norm $N$ is indefinite of signature $(2,2)$ over $\mathbb{R}$ on the four real coordinates of $\mathbb{B}$, and the trace form on the same four coordinates has signature $(3,1)$; the two differ by the choice of real structure, since the norm is the determinant and the trace form is the trace of the product. On the symmetric half the trace form is positive definite of signature $(3,0)$, and the negative direction is the whole of the antisymmetric half.</p>
+<p><strong>The inertia $(3,1)$ and the biquaternion norm are two readings of one form.</strong> The biquaternion norm $N$ is indefinite of inertia $(2,2)$ over $\mathbb{R}$ on the four real coordinates of $\mathbb{B}$, and the trace form on the same four coordinates has inertia $(3,1)$; the two differ by the choice of real structure, since the norm is the determinant and the trace form is the trace of the product. On the symmetric half the trace form is positive definite of inertia $(3,0)$, and the negative direction is the whole of the antisymmetric half.</p>
 <p><strong>The two halves at $n=2$ are a time direction and a space direction.</strong> The symmetric half is the three-dimensional positive space and the antisymmetric half the line of negative type, so the split is the split of Minkowski space into space and time. The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are positive vectors of norm $1$, since $2\,\mathrm{Sc}(\tilde\Pi_\pm^{2})=2\,\mathrm{Sc}(\tilde\Pi_\pm)=1$, and the rotation direction $J$ is the negative vector, which is the Lorentz picture of <em>Coda: $n=2$ and the Biquaternion Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant under conjugation, with $\langle E_{ij},E_{kl}\rangle=\delta_{jk}\delta_{il}$, so its Gram matrix is the transposition permutation. Its signature on $M_n(\mathbb{R})$ is $(n(n+1)/2,n(n-1)/2)$, positive definite on the symmetric half and negative definite on the antisymmetric half, with the two halves orthogonal. On the traceless part the signature is $(n(n+1)/2-1,n(n-1)/2)$, and on the complex algebra read over $\mathbb{R}$ it is $(n^{2},n^{2})$. At $n=2$ the form is the Lorentz form of signature $(3,1)$, which is the trace-form shadow of the indefinite biquaternion norm.</p>
+<p>The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant under conjugation, with $\langle E_{ij},E_{kl}\rangle=\delta_{jk}\delta_{il}$, so its Gram matrix is the transposition permutation. Its inertia on $M_n(\mathbb{R})$ is $(n(n+1)/2,n(n-1)/2)$, positive definite on the symmetric half and negative definite on the antisymmetric half, with the two halves orthogonal. On the traceless part the inertia is $(n(n+1)/2-1,n(n-1)/2)$, and on the complex algebra read over $\mathbb{R}$ it is $(n^{2},n^{2})$. At $n=2$ the form is the Lorentz form of inertia $(3,1)$, which is the trace-form shadow of the indefinite biquaternion norm.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -175,7 +176,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(n(n+1)/2,\,n(n-1)/2)$</td>
-<td>the signature on $M_n(\mathbb{R})$</td>
+<td>the inertia on $M_n(\mathbb{R})$</td>
 </tr>
 <tr>
 <td>$\operatorname{sig}(\operatorname{Sym}_n)=(n(n+1)/2,0)$</td>
@@ -187,7 +188,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(n^{2},n^{2})$</td>
-<td>the signature of $\operatorname{Re}\operatorname{tr}(XY)$ on $M_n(\mathbb{C})$ over $\mathbb{R}$</td>
+<td>the inertia of $\operatorname{Re}\operatorname{tr}(XY)$ on $M_n(\mathbb{C})$ over $\mathbb{R}$</td>
 </tr>
 <tr>
 <td>$\operatorname{diag}(1,1,1,-1)$</td>
@@ -198,9 +199,9 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the trace form, the matrix units and the inertia of a symmetric form.</li>
-<li>Werner Greub, <em>Linear Algebra</em> (Springer, 1975), for the signature of a symmetric bilinear form and orthogonal direct sums.</li>
+<li>Werner Greub, <em>Linear Algebra</em> (Springer, 1975), for the inertia of a symmetric bilinear form and orthogonal direct sums.</li>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the associative trace form and its nondegeneracy.</li>
-<li><a href="the-two-halves-as-orthogonal-complements.html">The Two Halves as Orthogonal Complements</a>, for the orthogonality of the split that the signature follows.</li>
+<li><a href="the-two-halves-as-orthogonal-complements.html">The Two Halves as Orthogonal Complements</a>, for the orthogonality of the split that the inertia follows.</li>
 <li><a href="the-jordan-algebra-sym-n.html">The Jordan Algebra $\operatorname{Sym}_n$</a>, for the positive definiteness on the symmetric half.</li>
 <li><a href="the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html">The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form</a>, for the invariance that makes every derivation anti-Hermitian.</li>
 </ul>

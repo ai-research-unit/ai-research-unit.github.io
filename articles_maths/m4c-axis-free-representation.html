@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>$M_4(\mathbb{C})$ Axis-Free Representation — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The two families of matrices of the biquaternion algebra in the coefficient basis, and the reason this basis alone gives the sixteen matrices…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -448,7 +449,7 @@ $$
 $$
 the mixed trace sees the two scalar parts only.</p>
 <h2 id="the-determinant">The Determinant</h2>
-<p><strong>The determinant is the square of the central scalar.</strong> For every $\tilde Q$,
+<p><strong>The determinant of the matrix is the square of the central scalar.</strong> For every $\tilde Q$,
 $$
 \det L_{\mathrm{axf}}(\tilde Q)=\det R_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2
 =(Q_t^2+B^2)^2.
@@ -461,7 +462,7 @@ $$
 =\bigl((\lambda-Q_t)^2+B^2\bigr)^2 .
 $$
 The eigenvalues are $\lambda_\pm=Q_t\pm iB$, where $B$ is a square root of $B^2=Q_x^2+Q_y^2+Q_z^2$, each with algebraic multiplicity two. Their sum is $4Q_t$, their product is $\langle\tilde Q\rangle_{\natural}^2$, and the two facts are the trace and the determinant. The same polynomial is the characteristic polynomial of $R_{\mathrm{axf}}(\tilde Q)$, because the two matrices are conjugate by $D$ and transposition.</p>
-<p><strong>The determinant is multiplicative.</strong> For all $\tilde Q_1,\tilde Q_2$,
+<p><strong>The determinant of the matrix is multiplicative.</strong> For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=\det L_{\mathrm{axf}}(\tilde Q_1)\det L_{\mathrm{axf}}(\tilde Q_2),
 $$
@@ -490,7 +491,7 @@ The determinant of a sum is not the sum of the determinants; a sum of two invert
 <td>double</td>
 </tr>
 <tr>
-<td>determinant</td>
+<td>the determinant of the image</td>
 <td>$\langle\tilde Q\rangle_{\natural}$</td>
 <td>$\langle\tilde Q\rangle_{\natural}^2$</td>
 <td>square</td>
@@ -606,7 +607,7 @@ It is a quarter of the square of the Hilbert–Schmidt norm of the $4\times4$ ma
 $$
 \operatorname{Tr}(M^{\mathsf T}M^{\dagger})=\operatorname{Tr}\bigl(M(\tilde Q^{\natural})M(\tilde Q^{*})\bigr)=4K,
 $$
-because the product of the two conjugates has scalar part $K$. The norm is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.</p>
+because the product of the two conjugates has scalar part $K$. The norm is positive on the centre and negative on the vector subspace, of inertia $(2,6)$ on the real algebra.</p>
 <p><strong>The basis again.</strong> The second and fourth rows use $M^{\mathsf T}=M^{\natural}$, which is a property of the axis-free basis and not of the algebra. In a frame where the transpose is another word, the two words must be written with the conjugation, and $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is then none of the four norms: the entries of the transposed matrix are not the coefficients of the conjugate element, and the quarter-trace is a different quadratic form.</p>
 <h2 id="the-six-subspaces">The Six Subspaces</h2>
 <p><strong>The table.</strong> The six remarkable subspaces are defined in <em>Subspaces and Decompositions of the Biquaternion Algebra</em>. On the image of the axis-free representation they become the conditions of the table. Write $\vec q=(q_x,q_y,q_z)$ and $\vec q'=(q'_x,q'_y,q'_z)$ for the split $Q_\mu=q_\mu+iq'_\mu$, and recall $B^2=Q_x^2+Q_y^2+Q_z^2$. In the third column, $\overline M$ is the entrywise complex conjugate of $M$ and $M^{\dagger}=\overline M^{\mathsf T}$; $\mathsf M_2(\tilde Q)$ is the $2\times2$ image of $\tilde Q$. The table gives the condition on $M=L_{\mathrm{axf}}(\tilde Q)$ inside the image $\mathbb{B}_L$, the real dimension of the subspace, the trace of $M$, and the determinant of the $2\times2$ image. In the first row, $\lambda=Q_t$.</p>
@@ -702,7 +703,7 @@ L_{\mathrm{axf}}(\tilde Q)=\overline{L_{\mathrm{axf}}(\tilde Q)},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=\sum_{\mu}q_\mu^2=q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
-The image is the space of real matrices of this form, of real dimension $4$. The quadratic determinant is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra.</p>
+The image is the space of real matrices of this form, of real dimension $4$. The quadratic determinant of the matrix is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra.</p>
 <h3 id="the-anti-quaternion-subspace">The Anti-Quaternion Subspace</h3>
 <p><strong>The purely imaginary matrices.</strong> For $\tilde Q=iq'_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z$,
 $$
@@ -710,7 +711,7 @@ L_{\mathrm{axf}}(\tilde Q)=-\overline{L_{\mathrm{axf}}(\tilde Q)},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-\sum_{\mu}(q'_\mu)^2 .
 $$
-The image is the space of purely imaginary matrices of this form, of real dimension $4$. The quadratic determinant is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two purely imaginary matrices is real.</p>
+The image is the space of purely imaginary matrices of this form, of real dimension $4$. The quadratic determinant of the matrix is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two purely imaginary matrices is real.</p>
 <h3 id="the-hermitian-subspace">The Hermitian Subspace</h3>
 <p><strong>The Hermitian matrices.</strong> For $\tilde Q=q_te_t+iq'_x\vec e_x+iq'_y\vec e_y+iq'_z\vec e_z$,
 $$
@@ -718,7 +719,7 @@ L_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
+The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant of the matrix is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.</p>
 <h3 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h3>
 <p><strong>The anti-Hermitian matrices.</strong> For $\tilde Q=iq'_te_t+q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$,
 $$
@@ -726,7 +727,7 @@ L_{\mathrm{axf}}(\tilde Q)=-L_{\mathrm{axf}}(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-(q'_t)^2+\lvert\vec q\rvert^2 .
 $$
-The image is the space of anti-Hermitian matrices of this form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.</p>
+The image is the space of anti-Hermitian matrices of this form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant of the matrix is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.</p>
 <h3 id="the-three-splits">The Three Splits</h3>
 <p><strong>The three decompositions.</strong> The six subspaces pair into the three decompositions
 $$

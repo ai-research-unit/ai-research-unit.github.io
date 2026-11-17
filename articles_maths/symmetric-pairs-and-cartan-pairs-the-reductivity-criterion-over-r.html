@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$ — Biquaternion Universe</title>
+  <meta name="description" content="An involution of a Lie algebra splits it into a fixed part and an anti-fixed part with the bracket rules, and, and the involution of gives the pair,.">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +72,7 @@
         <h1 id="symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-over-math0"><strong>Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>An involution of a Lie algebra splits it into a fixed part and an anti-fixed part with the bracket rules $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$ and $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$, and the involution $\theta(X)=-X^{\mathsf T}$ of $\mathfrak{gl}_n(\mathbb{R})$ gives the pair $\mathfrak{k}=\mathfrak{so}(n)$, $\mathfrak{p}=\operatorname{Sym}_n$.</strong></p>
-<p>The article proves the three bracket rules, works the two standard examples, states the reductivity criterion, computes the Killing forms of $\mathfrak{gl}_n(\mathbb{R})$, $\mathfrak{so}(n)$ and $\mathfrak{sl}_n(\mathbb{R})$ with their signatures, and closes with the Cartan pair of the first kind. It assumes <em>The Two Halves: Symmetric and Antisymmetric</em> and <em>The Two Halves as Orthogonal Complements for the Trace Form</em> for the two halves and the trace form, and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> for the bracket that fails the third rule.</p>
+<p>The article proves the three bracket rules, works the two standard examples, states the reductivity criterion, computes the Killing forms of $\mathfrak{gl}_n(\mathbb{R})$, $\mathfrak{so}(n)$ and $\mathfrak{sl}_n(\mathbb{R})$ with their inertias, and closes with the Cartan pair of the first kind. It assumes <em>The Two Halves: Symmetric and Antisymmetric</em> and <em>The Two Halves as Orthogonal Complements for the Trace Form</em> for the two halves and the trace form, and <em>The Triangular Decomposition $h\oplus n_+\oplus n_-$</em> for the bracket that fails the third rule.</p>
 <h2 id="the-involution-of-a-lie-algebra">The Involution of a Lie Algebra</h2>
 <p><strong>Definition.</strong> An involution of a Lie algebra $\mathfrak{g}$ is a linear map $\theta:\mathfrak{g}\to\mathfrak{g}$ with $\theta^{2}=\mathrm{id}$ and</p>
 <p>$$
@@ -135,7 +136,7 @@ $$</p>
 B(X,Y)=\operatorname{tr}(\operatorname{ad}X\circ\operatorname{ad}Y).
 $$</p>
 <p><strong>The form is symmetric, invariant and preserved by every automorphism.</strong> Symmetry comes from the trace, invariance from $\operatorname{ad}[X,Y]=[\operatorname{ad}X,\operatorname{ad}Y]$, and preservation from $\operatorname{ad}(\theta X)=\theta\operatorname{ad}(X)\theta^{-1}$.</p>
-<p><strong>Cartan's criterion.</strong> $\mathfrak{g}$ is semisimple if and only if $B$ is nondegenerate, and solvable if and only if $B(\mathfrak{g},[\mathfrak{g},\mathfrak{g}])=0$. The signature decides compactness.</p>
+<p><strong>Cartan's criterion.</strong> $\mathfrak{g}$ is semisimple if and only if $B$ is nondegenerate, and solvable if and only if $B(\mathfrak{g},[\mathfrak{g},\mathfrak{g}])=0$. The inertia decides compactness.</p>
 <p><strong>On $\mathfrak{gl}_n(\mathbb{R})$ the Killing form is</strong></p>
 <p>$$
 B(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y).
@@ -150,15 +151,15 @@ $$</p>
 <p><strong>Negative definiteness is compactness.</strong> A real Lie algebra whose Killing form is negative definite is the Lie algebra of a compact group, and here the group is $\mathrm{O}(n)$. Cartan's criterion then gives the semisimplicity of $\mathfrak{so}(n)$ for $n\ge3$.</p>
 <p><strong>The exception is $n=2$.</strong> $\mathfrak{so}(2)$ is one-dimensional and abelian, so its Killing form is zero and the proposition reduces to $0=0$.</p>
 <h2 id="the-killing-form-of-math151">The Killing Form of $\mathfrak{sl}_n(\mathbb{R})$</h2>
-<p><strong>Proposition.</strong> For $X,Y\in\mathfrak{sl}_n(\mathbb{R})$, $B(X,Y)=2n\operatorname{tr}(XY)$, and the signature is $(n^{2}-1-n(n-1)/2,\ n(n-1)/2)$.</p>
-<p><strong>Measured, the signatures are $(2,1)$, $(5,3)$, $(9,6)$ at $n=2,3,4$.</strong> Both counts grow like $n^{2}/2$, so the form is indefinite at every order and $\mathfrak{sl}_n(\mathbb{R})$ is semisimple and not compact.</p>
+<p><strong>Proposition.</strong> For $X,Y\in\mathfrak{sl}_n(\mathbb{R})$, $B(X,Y)=2n\operatorname{tr}(XY)$, and the inertia is $(n^{2}-1-n(n-1)/2,\ n(n-1)/2)$.</p>
+<p><strong>Measured, the inertias are $(2,1)$, $(5,3)$, $(9,6)$ at $n=2,3,4$.</strong> Both counts grow like $n^{2}/2$, so the form is indefinite at every order and $\mathfrak{sl}_n(\mathbb{R})$ is semisimple and not compact.</p>
 <p><strong>The negative directions are the antisymmetric part.</strong> On $\operatorname{Skew}_n$ the trace form is negative definite and the Killing form is a positive multiple of it, so the compact directions are exactly the antisymmetric ones.</p>
 <h2 id="the-cartan-pair-of-the-first-kind">The Cartan Pair of the First Kind</h2>
 <p><strong>The pair $(\mathfrak{gl}_n(\mathbb{R}),\mathfrak{so}(n))$ with $\mathfrak{p}=\operatorname{Sym}_n$ is a Cartan pair.</strong> The three bracket rules hold, $\mathfrak{k}$ is compact, and $\mathfrak{p}=\mathfrak{k}^{\perp}$ for both the trace form and the Killing form.</p>
 <p><strong>The symmetric space is the space of positive definite matrices.</strong> The quotient $\mathrm{GL}_n(\mathbb{R})/\mathrm{O}(n)$ has dimension $n(n+1)/2=\dim\mathfrak{p}$, and the exponential map $\exp:\operatorname{Sym}_n\to P_n$ is a bijection. Measured on $100$ random symmetric matrices at $n=2,3$, the exponential was positive definite in $100$ cases out of $100$.</p>
 <p><strong>The pair is of the first kind.</strong> $\mathfrak{gl}_n(\mathbb{R})$ carries no $\operatorname{ad}$-invariant complex structure: its centre is $\mathbb{R}\mathrm{I}$, of odd real dimension one. So the pair is not of the complex type.</p>
 <h2 id="summary">Summary</h2>
-<p>An involution $\theta$ of a Lie algebra with $\theta^{2}=\mathrm{id}$ splits it as $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$, and the three bracket rules $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ follow from applying $\theta$ to the bracket. For $\theta(X)=-X^{\mathsf T}$ on $\mathfrak{gl}_n(\mathbb{R})$ the parts are $\mathfrak{k}=\mathfrak{so}(n)=\operatorname{Skew}_n$ and $\mathfrak{p}=\operatorname{Sym}_n$, and the three rules held in $100$ of $100$ random tests. For $\theta=\mathrm{Ad}(\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q))$ the parts have dimensions $p^{2}+q^{2}$ and $2pq$, measured $13$ and $12$ at $p=2$, $q=3$. The reductivity criterion makes $\mathfrak{k}$ reductive and $\mathfrak{p}$ a completely reducible module, with $\mathfrak{p}=\mathfrak{k}^{\perp}$ for any invariant nondegenerate form. The Killing form is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$ on $\mathfrak{gl}_n(\mathbb{R})$, negative definite on $\mathfrak{so}(n)$ with eigenvalues $-2$ thrice at $n=3$ and $-4$ six times at $n=4$, and of signature $(2,1)$, $(5,3)$, $(9,6)$ on $\mathfrak{sl}_n(\mathbb{R})$ at $n=2,3,4$. The pair $(\mathfrak{gl}_n(\mathbb{R}),\mathfrak{so}(n))$ is a Cartan pair of the first kind, and its symmetric space is the space of positive definite matrices.</p>
+<p>An involution $\theta$ of a Lie algebra with $\theta^{2}=\mathrm{id}$ splits it as $\mathfrak{g}=\mathfrak{k}\oplus\mathfrak{p}$, and the three bracket rules $[\mathfrak{k},\mathfrak{k}]\subseteq\mathfrak{k}$, $[\mathfrak{k},\mathfrak{p}]\subseteq\mathfrak{p}$, $[\mathfrak{p},\mathfrak{p}]\subseteq\mathfrak{k}$ follow from applying $\theta$ to the bracket. For $\theta(X)=-X^{\mathsf T}$ on $\mathfrak{gl}_n(\mathbb{R})$ the parts are $\mathfrak{k}=\mathfrak{so}(n)=\operatorname{Skew}_n$ and $\mathfrak{p}=\operatorname{Sym}_n$, and the three rules held in $100$ of $100$ random tests. For $\theta=\mathrm{Ad}(\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q))$ the parts have dimensions $p^{2}+q^{2}$ and $2pq$, measured $13$ and $12$ at $p=2$, $q=3$. The reductivity criterion makes $\mathfrak{k}$ reductive and $\mathfrak{p}$ a completely reducible module, with $\mathfrak{p}=\mathfrak{k}^{\perp}$ for any invariant nondegenerate form. The Killing form is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$ on $\mathfrak{gl}_n(\mathbb{R})$, negative definite on $\mathfrak{so}(n)$ with eigenvalues $-2$ thrice at $n=3$ and $-4$ six times at $n=4$, and of inertia $(2,1)$, $(5,3)$, $(9,6)$ on $\mathfrak{sl}_n(\mathbb{R})$ at $n=2,3,4$. The pair $(\mathfrak{gl}_n(\mathbb{R}),\mathfrak{so}(n))$ is a Cartan pair of the first kind, and its symmetric space is the space of positive definite matrices.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -203,7 +204,7 @@ $$</p>
 <li>Sigurdur Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em> (AMS, 2001), for symmetric spaces and Cartan pairs.</li>
 <li>Anthony W. Knapp, <em>Lie Groups Beyond an Introduction</em> (Birkhäuser, 2002), for involutions, real forms and the Killing form.</li>
 <li><a href="the-two-halves-symmetric-and-antisymmetric-over-r.html">The Two Halves: Symmetric and Antisymmetric</a>, for the two halves and their products.</li>
-<li><a href="the-two-halves-as-orthogonal-complements-for-the-trace-form.html">The Two Halves as Orthogonal Complements for the Trace Form</a>, for the signature of the trace form.</li>
+<li><a href="the-two-halves-as-orthogonal-complements-for-the-trace-form.html">The Two Halves as Orthogonal Complements for the Trace Form</a>, for the inertia of the trace form.</li>
 <li><a href="the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html">The Triangular Decomposition $h\oplus n_+\oplus n_-$</a>, for the decomposition that fails the third rule.</li>
 </ul>
       </div>

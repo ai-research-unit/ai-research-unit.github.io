@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric — Biquaternion Universe</title>
+  <meta name="description" content="Over the real field the transpose cuts the algebra into the symmetric matrices and the antisymmetric ones, and the two halves carry the two products that…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -99,7 +100,7 @@ $$</p>
 <p>$$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}\ge0,
 $$</p>
-<p>with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of signature $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.</p>
+<p>with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of inertia $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.</p>
 <h2 id="the-antisymmetric-half">The Antisymmetric Half</h2>
 <p><strong>The antisymmetric half is the Lie algebra $\mathfrak{so}(n)$ under the commutator.</strong> For antisymmetric $K,L$ the commutator is antisymmetric, since</p>
 <p>$$
@@ -133,13 +134,13 @@ $$</p>
 <p>$$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}>0,\qquad \operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}<0 ,
 $$</p>
-<p>so the restriction to $\operatorname{Sym}_n$ has signature $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has signature $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of signature $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.</p>
+<p>so the restriction to $\operatorname{Sym}_n$ has inertia $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has inertia $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of inertia $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.</p>
 <p><strong>The Killing form of $\mathfrak{so}(n)$ is $(n-2)\operatorname{tr}(XY)$.</strong> A direct computation from the structure constants gives</p>
 <p>$$
 B(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)=(n-2)\operatorname{tr}(XY),
 $$</p>
 <p>and the identity was verified at $n=2,\dots,6$ by building the matrices of the adjoint action in the basis $E_{ij}-E_{ji}$ and comparing. The factor $n-2$ is the whole story: the form is negative definite for $n\ge3$ and vanishes identically at $n=2$, where $\mathfrak{so}(2)$ is one-dimensional and abelian. The consequences for the radical and for the triangular case are in <em>The Killing Form, Its Radical and the Triangular Case</em>.</p>
-<p><strong>The two forms are different objects.</strong> The trace form is a form on the algebra, defined without a Lie structure; the Killing form is built from the adjoint action. On $\mathfrak{so}(n)$ they differ by the scalar $n-2$, and at $n=2$ the Killing form degenerates while the trace form does not. A statement about one is not a statement about the other, and the article <em>The Trace Form and Its Signature on the Two Halves</em> keeps them apart.</p>
+<p><strong>The two forms are different objects.</strong> The trace form is a form on the algebra, defined without a Lie structure; the Killing form is built from the adjoint action. On $\mathfrak{so}(n)$ they differ by the scalar $n-2$, and at $n=2$ the Killing form degenerates while the trace form does not. A statement about one is not a statement about the other, and the article <em>The Trace Form and Its Inertia on the Two Halves</em> keeps them apart.</p>
 <h2 id="the-exponential-of-each-half">The Exponential of Each Half</h2>
 <p><strong>The exponential of an antisymmetric matrix is a rotation.</strong> If $K^{\mathsf T}=-K$ then</p>
 <p>$$

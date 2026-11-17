@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Six Generators and Their Commutators — Biquaternion Universe</title>
+  <meta name="description" content="The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -70,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-six-generators-and-their-commutators"><strong>The Six Generators and Their Commutators</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants, computes the invariant bilinear form and its signature, and defines the quadratic Casimir. It closes with the question a reader will ask on seeing the table for the third time: why does the same table appear in every display?</p>
+<p>The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants, computes the invariant bilinear form and its inertia, and defines the quadratic Casimir. It closes with the question a reader will ask on seeing the table for the third time: why does the same table appear in every display?</p>
 <p>The answer is that the table is a statement about the algebra and not about a representation. Every faithful representation reproduces it, and the differences between the displays are differences of basis, of dimension and of real form, never of bracket.</p>
 <p>The article assumes <em>The Isomorphisms and Their Dimensions</em> for the traceless part and its dimensions, <em>Algebra and Element Conventions</em> for the star, and <em>The Two Actions of One Group: Adjoint and Congruence</em> for the congruence that the four-vector display uses. It hands the two-triple rewriting to <em>The Two Commuting Complex Triples</em> and the Casimir eigenvalues to <em>The Two Casimirs of the Lorentz Algebra</em>.</p>
 <h2 id="the-generators-as-elements-of-the-algebra">The Generators as Elements of the Algebra</h2>
@@ -129,7 +130,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the signature of the invariant form.</p>
+<p>The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the inertia of the invariant form.</p>
 <h3 id="why-these-and-not-others">Why These and Not Others</h3>
 <p>The six are a basis of the traceless part: three complex directions $\vec e_\eta$ read as six real directions $\vec e_\eta$ and $i\vec e_\eta$. The factors $\tfrac12$ are conventions that make the exponential formula free of factors of two; they do not affect the bracket's shape, only its numerical entries.</p>
 <h2 id="the-commutator-table">The Commutator Table</h2>
@@ -213,7 +214,7 @@ $$</p>
 <ul>
 <li>$[\mathfrak{k},\mathfrak{k}]\subset\mathfrak{k}$: the rotations close. They form a subalgebra, and the corresponding subgroup is the compact $SU(2)$.</li>
 <li>$[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$: the boost directions transform as a vector under the rotations. This is the statement that a rotated boost is a boost in the rotated direction, and it is why the boost manifold is a symmetric space.</li>
-<li>$[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian signature; with a plus the algebra would be $\mathfrak{so}(4)$.</li>
+<li>$[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian sign pattern; with a plus the algebra would be $\mathfrak{so}(4)$.</li>
 </ul>
 <p>Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K$; <em>Why Boosts Are Not Additive: The Bracket Table</em> is the article that reads the third row physically.</p>
 <h3 id="the-structure-constants">The Structure Constants</h3>
@@ -235,8 +236,8 @@ $$</p>
 <p>The second and third blocks say that the boosts are a three-dimensional vector space on which the rotations act by the vector representation, and that the bracket of two boosts is a rotation. Those two statements, with the sign of the third block, are the definition of $\mathfrak{so}(1,3)$ as the algebra of the Lorentz group.</p>
 <h3 id="the-alternative-that-fails">The Alternative That Fails</h3>
 <p>Had the third block read $[K_i,K_j]=+J_k$, the table would be the table of $\mathfrak{so}(4)$, the Euclidean rotation algebra of four dimensions. Both tables are tables of <em>real forms of the same complex algebra</em>, and the sign is what decides which real form. A reader who "fixes" the sign to remove the minus gets a compact group and a positive-definite metric, and no light cone.</p>
-<h3 id="the-signature-check-done-independently">The Signature Check, Done Independently</h3>
-<p>The identification is confirmed by the invariant form rather than by the table's shape. The form's signature is $(3,3)$ for this table and $(6,0)$ for the version with the plus sign, and the two are distinguishable by a computation that does not use the identification at all.</p>
+<h3 id="the-inertia-check-done-independently">The Inertia Check, Done Independently</h3>
+<p>The identification is confirmed by the invariant form rather than by the table's shape. The form's inertia is $(3,3)$ for this table and $(6,0)$ for the version with the plus sign, and the two are distinguishable by a computation that does not use the identification at all.</p>
 <h2 id="the-invariant-bilinear-form">The Invariant Bilinear Form</h2>
 <h3 id="the-invariant-form">The Invariant Form</h3>
 <p>The simplest invariant form is read from the $2\times2$ image:</p>
@@ -249,7 +250,7 @@ $$</p>
 \langle J_i,K_j\rangle_{\mathrm{tr}}=0,\qquad
 \langle K_i,K_j\rangle_{\mathrm{tr}}=+\tfrac12\delta_{ij}.
 $$</p>
-<p>So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because twice the scalar part of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in <em>The Two Actions of One Group: Adjoint and Congruence</em>.</p>
+<p>So the form is diagonal in this basis with three negative and three positive entries: inertia $(3,3)$. It is invariant because twice the scalar part of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in <em>The Two Actions of One Group: Adjoint and Congruence</em>.</p>
 <h3 id="the-killing-form">The Killing Form</h3>
 <p>The Killing form is</p>
 <p>$$
@@ -263,10 +264,10 @@ $$</p>
 <p>$$
 (-4)^{3}(+4)^{3}=-4096,
 $$</p>
-<p>and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and its signature is $(3,3)$.</p>
-<h3 id="what-the-signature-means">What the Signature Means</h3>
-<p>A non-degenerate form of signature $(3,3)$ on a six-dimensional real Lie algebra is the signature of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.</p>
-<p>The physical statement is that the group's invariant form has a Lorentzian signature because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.</p>
+<p>and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and its inertia is $(3,3)$.</p>
+<h3 id="what-the-inertia-means">What the Inertia Means</h3>
+<p>A non-degenerate form of inertia $(3,3)$ on a six-dimensional real Lie algebra is the inertia of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.</p>
+<p>The physical statement is that the group's invariant form has a Lorentzian sign pattern because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.</p>
 <h2 id="the-quadratic-casimir">The Quadratic Casimir</h2>
 <h3 id="the-definition">The Definition</h3>
 <p>The quadratic Casimir of the algebra, in the anti-Hermitian convention of this block, is</p>
@@ -331,7 +332,7 @@ $$</p>
 <h3 id="the-corollary-for-this-block">The Corollary for This Block</h3>
 <p>A reader who meets the table in the four-vector display and again in the two-triple display and again in the Casimir computation is meeting one object three times. The differences between the articles are the differences between what each display is <em>for</em>, and the table is the one invariant that all of them share. That is why it is printed in full once, here, and cited afterwards.</p>
 <h2 id="summary">Summary</h2>
-<p>The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have signature $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.</p>
+<p>The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact, and $K_\eta=\tfrac12 i\vec e_\eta$, Hermitian and non-compact. Their brackets are $[J_i,J_j]=J_k$, $[J_i,K_j]=K_k$, $[K_i,K_j]=-J_k$ cyclically, with structure constants $\pm\epsilon_{ijk}$. The three blocks say that the rotations close, that the boosts transform as a vector, and that two boosts bracket to a rotation with the sign that makes the algebra Lorentzian rather than Euclidean. The trace form is $-\tfrac12$ on rotations and $+\tfrac12$ on boosts; the Killing form is $-4$ and $+4$; both have inertia $(3,3)$ and the Killing form has determinant $-4096$. The quadratic Casimir is $\tfrac12(\vec K^{2}-\vec J^{2})$ in the anti-Hermitian convention, equal to $\tfrac12(\mathcal{J}^{2}-\mathcal{K}^{2})$ in the Hermitian one, with value $\tfrac34$ on the defining representation. The table is the same in every display because every faithful representation is a Lie algebra homomorphism, and a homomorphism preserves brackets.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -377,7 +378,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — the Killing form, its signature, and the Cartan decomposition read from it.</li>
+<li>S. Helgason, <em>Differential Geometry, Lie Groups, and Symmetric Spaces</em>, Academic Press, 1978 — the Killing form, its inertia, and the Cartan decomposition read from it.</li>
 <li>B. C. Hall, <em>Lie Groups, Lie Algebras, and Representations</em>, 2nd ed., Springer, 2015 — structure constants, the Jacobi identity and the Casimir element of the universal enveloping algebra.</li>
 <li>S. Weinberg, <em>The Quantum Theory of Fields</em>, Vol. 1, Cambridge University Press, 1995, §2.4 — the Lorentz generators, the commutators in the physicist's Hermitian convention, and the dictionary of signs.</li>
 <li>W. Greiner and B. Müller, <em>Quantum Mechanics: Symmetries</em>, 2nd ed., Springer, 1994 — the same table derived in the rotation-plus-boost form with every sign displayed.</li>

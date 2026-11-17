@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coda: $M_n(\mathbb{R})$, the Split Form, and the Passage to $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="Three things exist over and nowhere over: two classes of involutions of the first kind with the same fixed-space dimension, a spectrum that leaves the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -78,9 +79,9 @@
 \dim\operatorname{Sym}_n=\frac{n(n+1)}{2}=\dim\{X:-JX^{\mathsf T}J^{-1}=X\},
 $$</p>
 <p>but one fixed space is a Jordan algebra and the other a Lie algebra. The fixed space of the transpose is closed under the anticommutator and not under the commutator; the fixed space of the symplectic involution is closed under the commutator and not under the anticommutator. Measured on $100$ random pairs, the symplectic fixed space is closed under the bracket on all $100$ and the symmetric space on none.</p>
-<p><strong>Over $\mathbb{C}$ the dichotomy survives and the signature does not.</strong> The sign in the product rule separates the two classes over every field, so the symplectic type is not conjugate to the transpose over $\mathbb{C}$ either. What complexification removes is the refinement inside the orthogonal class: over $\mathbb{C}$ every nondegenerate symmetric form is congruent to the identity, so all orthogonal involutions are conjugate, while over $\mathbb{R}$ Sylvester's law leaves one class per signature.</p>
+<p><strong>Over $\mathbb{C}$ the dichotomy survives and the inertia does not.</strong> The sign in the product rule separates the two classes over every field, so the symplectic type is not conjugate to the transpose over $\mathbb{C}$ either. What complexification removes is the refinement inside the orthogonal class: over $\mathbb{C}$ every nondegenerate symmetric form is congruent to the identity, so all orthogonal involutions are conjugate, while over $\mathbb{R}$ Sylvester's law leaves one class per inertia.</p>
 <p><strong>The second is the spectrum.</strong> The characteristic polynomial of a real matrix has real coefficients, so its roots are real or in complex conjugate pairs; the eigenvalues of an antisymmetric matrix are purely imaginary; the eigenvalues of a rotation come in planes with angles. None of this is visible over $\mathbb{C}$, where the fundamental theorem of algebra makes every polynomial split and every matrix triangularisable.</p>
-<p><strong>The third is the trace form.</strong> On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ has signature $(n(n+1)/2,\,n(n-1)/2)$, so it is indefinite for $n\ge2$. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is definite but is not invariant and does not see the algebra structure. No form on $M_n(\mathbb{R})$ is both definite and invariant.</p>
+<p><strong>The third is the trace form.</strong> On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ has inertia $(n(n+1)/2,\,n(n-1)/2)$, so it is indefinite for $n\ge2$. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is definite but is not invariant and does not see the algebra structure. No form on $M_n(\mathbb{R})$ is both definite and invariant.</p>
 <p><strong>Over $\mathbb{C}$ there is such a form.</strong> $\operatorname{tr}(A^{*}B)$ is positive definite and invariant under unitary conjugation, so the two properties that are incompatible over $\mathbb{R}$ are compatible over $\mathbb{C}$. This is the sharpest single statement of the difference between the categories.</p>
 <h2 id="the-split-real-form">The Split Real Form</h2>
 <p><strong>Definition.</strong> $M_n(\mathbb{R})$ is a real form of $M_n(\mathbb{C})$: a real subalgebra whose complexification is the complex algebra, $M_n(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_n(\mathbb{C})$.</p>
@@ -107,7 +108,7 @@ $$</p>
 </tr>
 <tr>
 <td>the involution</td>
-<td>two types, and one orthogonal class per signature</td>
+<td>two types, and one orthogonal class per inertia</td>
 <td>the same two types, one orthogonal class</td>
 </tr>
 <tr>
@@ -122,8 +123,8 @@ $$</p>
 </tr>
 <tr>
 <td>the trace form</td>
-<td>signature $(n(n+1)/2,\,n(n-1)/2)$</td>
-<td>the complex bilinear form, no signature</td>
+<td>inertia $(n(n+1)/2,\,n(n-1)/2)$</td>
+<td>the complex bilinear form, no inertia</td>
 </tr>
 <tr>
 <td>the invariant definite form</td>
@@ -165,10 +166,10 @@ $$</p>
 <p><strong>The split form is the one with the largest flats.</strong> Its symmetric space has maximal rank $n$, equal to the rank of the complex algebra, so its geometry sees the complex combinatorics most directly.</p>
 <p><strong>Consequence: the passage to $\mathbb{C}$ is a passage to the algebra of the combinatorics, and the passage back is a choice of positivity.</strong> That is the shape of the whole subject: the complex algebra carries the incidence, the real forms carry the metrics, and the three phenomena of the first section are the three places where a metric is chosen.</p>
 <h2 id="the-shape-of-the-series">The Shape of the Series</h2>
-<p><strong>The series added one structure at a time to the same space, and the three phenomena recurred at every stage.</strong> The two involution classes gave the two fixed spaces and the two decompositions; the spectrum gave the discriminant, the Jordan form and the two spectral theorems; the indefinite trace form gave the signature, the curvature and the absence of a definite invariant form.</p>
-<p><strong>The last statement of the series is the first.</strong> $M_n(\mathbb{R})$ is a simple real algebra of dimension $n^{2}$ with centre $\mathbb{R}\mathrm{I}$, its trace form has signature $(n(n+1)/2,\,n(n-1)/2)$, its group of invertibles has two components cut by the sign of the determinant, and the whole structure is the split real form of the complex algebra. Everything else is a consequence.</p>
+<p><strong>The series added one structure at a time to the same space, and the three phenomena recurred at every stage.</strong> The two involution classes gave the two fixed spaces and the two decompositions; the spectrum gave the discriminant, the Jordan form and the two spectral theorems; the indefinite trace form gave the inertia, the curvature and the absence of a definite invariant form.</p>
+<p><strong>The last statement of the series is the first.</strong> $M_n(\mathbb{R})$ is a simple real algebra of dimension $n^{2}$ with centre $\mathbb{R}\mathrm{I}$, its trace form has inertia $(n(n+1)/2,\,n(n-1)/2)$, its group of invertibles has two components cut by the sign of the determinant, and the whole structure is the split real form of the complex algebra. Everything else is a consequence.</p>
 <h2 id="summary">Summary</h2>
-<p>The real category differs from the complex one in exactly three ways: two conjugacy classes of involutions of the first kind with fixed spaces $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ of the same dimension $n(n+1)/2$, one a Jordan algebra and the other a Lie algebra; a spectrum that leaves the base field, giving conjugate pairs, a discriminant and rotation blocks in the Jordan form; and a trace form of signature $(n(n+1)/2,\,n(n-1)/2)$, indefinite, with no definite invariant form anywhere. $M_n(\mathbb{R})$ is the split real form of $M_n(\mathbb{C})$, with the diagonal matrices as a maximal commutative subalgebra of dimension $n$. The dictionary between the two fields loses the definiteness of the halves, the cone, the two components and the failure of the exponential, and keeps the algebra, the corners, the bracket and the combinatorics.</p>
+<p>The real category differs from the complex one in exactly three ways: two conjugacy classes of involutions of the first kind with fixed spaces $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ of the same dimension $n(n+1)/2$, one a Jordan algebra and the other a Lie algebra; a spectrum that leaves the base field, giving conjugate pairs, a discriminant and rotation blocks in the Jordan form; and a trace form of inertia $(n(n+1)/2,\,n(n-1)/2)$, indefinite, with no definite invariant form anywhere. $M_n(\mathbb{R})$ is the split real form of $M_n(\mathbb{C})$, with the diagonal matrices as a maximal commutative subalgebra of dimension $n$. The dictionary between the two fields loses the definiteness of the halves, the cone, the two components and the failure of the exponential, and keeps the algebra, the corners, the bracket and the combinatorics.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -192,7 +193,7 @@ $$</p>
 </tr>
 <tr>
 <td>$(p,q)$</td>
-<td>the signature $(n(n+1)/2,\,n(n-1)/2)$ of the trace form</td>
+<td>the inertia $(n(n+1)/2,\,n(n-1)/2)$ of the trace form</td>
 </tr>
 <tr>
 <td>the split form</td>
@@ -206,7 +207,7 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the real Jordan form, the discriminant and the spectral theorems.</li>
 <li><a href="the-split-real-form-mnr-inside-mnc.html">The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$</a>, for the complexification.</li>
 <li><a href="the-involutions-of-the-first-kind-transpose-and-symplectic.html">The Involutions of the First Kind: Transpose and Symplectic</a>, for the first phenomenon.</li>
-<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>, for the third phenomenon.</li>
+<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Inertia</a>, for the third phenomenon.</li>
 </ul>
       </div>
     </main>

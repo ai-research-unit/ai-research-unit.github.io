@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Four Forms and Their Algebraic Norms at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="An element of carries four quadratic invariants, each the quarter-trace of a word in the matrix: the plain, the quaternionic, the Hermitian and the Krein…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -72,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>An element of $M_4(\mathbb{C})$ carries four quadratic invariants, each the quarter-trace of a word in the matrix: the plain $P=Q_t^{2}-B^{2}=\tfrac14\operatorname{tr}(A^{2})$, the quaternionic $N=Q_t^{2}+B^{2}=\tfrac14\operatorname{tr}(A^{\mathsf T}A)$, the Hermitian $H=\sum_\mu|Q_\mu|^{2}=\tfrac14\operatorname{tr}(A^{\ast}A)$ and the Krein $K=|Q_t|^{2}-\sum_k|Q_k|^{2}=\tfrac14\operatorname{tr}(A^{\mathsf T}A^{\ast})$; the determinant is the square of $N$, and the trace is $4Q_t$.</strong></p>
 <p>The article writes the four forms, explains the factor of four, determines which are multiplicative, which are positive and which are invariant under which group, sets the matrix formulas against their biquaternion counterparts row by row, and states the two warnings that go with them: the transpose is the quaternion conjugation only in the axis-free frame, and the determinant is not a norm on the full algebra.</p>
-<p>It assumes <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em> and <em>The Hilbert–Schmidt Form at $n=4$</em>. The biquaternion original is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the axis-free computation is §<em>The Four Norms</em> of <em>The Axis-Free Representation of $M_4(\mathbb{C})$</em>.</p>
+<p>It assumes <em>The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</em> and <em>The Hilbert–Schmidt Form at $n=4$</em>. The biquaternion original is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the axis-free computation is §<em>The Four Norms</em> of <em>The Axis-Free Representation of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-four-quarter-traces">The Four Quarter-Traces</h2>
 <p><strong>Definition.</strong> For $A$ the matrix of $\tilde Q$ in the axis-free frame, with $Q_t$ the scalar part and $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$,</p>
 <p>$$
@@ -104,8 +105,8 @@ $$</p>
 <p><strong>The failure of $K$.</strong> For $A$ the matrix of $e_t+e_x$ one has $K(A)=|1|^{2}-|1|^{2}=0$ while $K(A^{2})=K(2e_x)=-4$.</p>
 <p><strong>Proof.</strong> $(e_t+e_x)^{2}=e_t^{2}+2e_x+e_x^{2}=2e_x$ because $e_x^{2}=-e_t$, so the coefficients of $A^{2}$ are $Q_t=0$, $Q_x=2$.</p>
 <h2 id="what-is-positive-and-what-is-not">What Is Positive and What Is Not</h2>
-<p><strong>Theorem.</strong> $H$ is positive definite on the complex algebra; $N$ and $P$ are indefinite over $\mathbb{C}$ and definite of opposite signs over $\mathbb{R}$ on the real and imaginary parts; $K$ has signature $(2,6)$ on the real algebra.</p>
-<p><strong>Proof.</strong> $H=\sum_\mu|Q_\mu|^{2}$ vanishes only at zero. $N=Q_t^{2}+B^{2}$ vanishes at $Q_t=i$, $Q_x=1$, all other coordinates zero, so it is indefinite over $\mathbb{C}$; over $\mathbb{R}$ it is positive definite. $P=Q_t^{2}-B^{2}$ is positive on the scalar line and negative on the vector space. $K$ is $+1$ on the two real directions of the scalar part and $-1$ on the six real directions of the vector part, so its signature is $(2,6)$.</p>
+<p><strong>Theorem.</strong> $H$ is positive definite on the complex algebra; $N$ and $P$ are indefinite over $\mathbb{C}$ and definite of opposite signs over $\mathbb{R}$ on the real and imaginary parts; $K$ has inertia $(2,6)$ on the real algebra.</p>
+<p><strong>Proof.</strong> $H=\sum_\mu|Q_\mu|^{2}$ vanishes only at zero. $N=Q_t^{2}+B^{2}$ vanishes at $Q_t=i$, $Q_x=1$, all other coordinates zero, so it is indefinite over $\mathbb{C}$; over $\mathbb{R}$ it is positive definite. $P=Q_t^{2}-B^{2}$ is positive on the scalar line and negative on the vector space. $K$ is $+1$ on the two real directions of the scalar part and $-1$ on the six real directions of the vector part, so its inertia is $(2,6)$.</p>
 <p><strong>Corollary.</strong> Exactly one of the four is an inner product on the complex algebra, and it is the Hilbert–Schmidt form divided by four.</p>
 <p><strong>Proof.</strong> Only $H$ is positive definite, and $H=\tfrac14\langle A,A\rangle$.</p>
 <p><strong>The null cones.</strong> $P$ vanishes on the cone $Q_t^{2}=B^{2}$, $N$ on the cone $Q_t^{2}=-B^{2}$, and those two complex cones are the zero sets of the plain and quaternionic norms; $H$ has no nonzero zero.</p>
@@ -165,7 +166,7 @@ $$</p>
 <td>$O(4)$</td>
 </tr>
 <tr>
-<td>determinant</td>
+<td>the determinant of the image</td>
 <td>$N^{2}$</td>
 <td>$\det A$</td>
 <td>not a form</td>
@@ -184,7 +185,7 @@ $$</p>
 <p><strong>Corollary.</strong> A statement of the form "the norm of a product is the product of the norms" is a statement about $N$ or $\det$ only.</p>
 <h2 id="summary">Summary</h2>
 <p>The element carries four quadratic invariants, each a quarter-trace: the plain $Q_t^{2}-B^{2}$, the quaternionic $Q_t^{2}+B^{2}$, the Hermitian $\sum|Q_\mu|^{2}$ and the Krein $|Q_t|^{2}-\sum_k|Q_k|^{2}$, with the trace $4Q_t$ linear and the determinant $N^{2}$ quartic. The quarter is the block factor, four being twice the repetition and twice the quadratic word.</p>
-<p>The quaternionic norm and the determinant are multiplicative; the plain, Hermitian and Krein forms are not. Only the Hermitian form is positive definite on the complex algebra; over the reals the plain form is positive on the scalar line and negative on the vector space, the quaternionic one is positive definite, and the Krein one has signature $(2,6)$.</p>
+<p>The quaternionic norm and the determinant are multiplicative; the plain, Hermitian and Krein forms are not. Only the Hermitian form is positive definite on the complex algebra; over the reals the plain form is positive on the scalar line and negative on the vector space, the quaternionic one is positive definite, and the Krein one has inertia $(2,6)$.</p>
 <p>The invariance groups are $\mathrm{GL}_4$ for the plain form, $O(4,\mathbb{C})$ for the quaternionic and Krein forms, and $U(4)$ for the Hermitian one. The transpose equals the quaternion conjugation only in the axis-free frame, and the determinant is the square of a norm and not a norm itself.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -209,7 +210,7 @@ $$</p>
 </tr>
 <tr>
 <td>$K=|c_t|^{2}-\sum_k|c_k|^{2}$</td>
-<td>the Krein form, signature $(2,6)$</td>
+<td>the Krein form, inertia $(2,6)$</td>
 </tr>
 <tr>
 <td>$B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>

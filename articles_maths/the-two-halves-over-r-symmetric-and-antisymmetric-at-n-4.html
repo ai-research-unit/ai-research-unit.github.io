@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The symmetric and the antisymmetric matrices are the two eigenspaces of the transpose, of complex dimensions and, and over the real numbers they are the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -72,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The symmetric and the antisymmetric matrices are the two eigenspaces of the transpose, of complex dimensions $10$ and $6$, and over the real numbers they are the positive and the negative halves of the trace form: on a real symmetric matrix $\operatorname{tr}(S^{2})$ is a sum of squares, and on a real antisymmetric matrix it is minus a sum of squares.</strong></p>
 <p>The article defines the two halves, proves the projections and the uniqueness of the split, shows that neither half is closed under the product while each is closed under the appropriate symmetrised product, and reads the split in the axis-free basis, where symmetry becomes an index pattern on the sixteen coordinates and the trace pairing has the sign of that pattern with no transpose taken.</p>
-<p>It assumes <em>The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em> for the transpose and its two eigenspaces, and <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> for the basis. The case $n=2$ is <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>. The signature of the trace form on the two halves is <em>The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</em>.</p>
+<p>It assumes <em>The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$</em> for the transpose and its two eigenspaces, and <em>$M_4(\mathbb{C})$ Axis-Free Representation</em> for the basis. The case $n=2$ is <em>The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</em>. The inertia of the trace form on the two halves is <em>The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</em>.</p>
 <h2 id="the-two-halves-and-the-projections">The Two Halves and the Projections</h2>
 <p><strong>Definition.</strong> $\operatorname{Sym}_4=\{A:A^{\mathsf T}=A\}$ and $\operatorname{Skew}_4=\{A:A^{\mathsf T}=-A\}$.</p>
 <p><strong>Proposition.</strong> $\operatorname{Sym}_4$ has complex dimension $10$ and $\operatorname{Skew}_4$ complex dimension $6$, and</p>
@@ -112,7 +113,7 @@ $$</p>
 <p><strong>Proof.</strong> Expand $S^{2}$ and $K^{2}$ entry by entry: the diagonal of $S^{2}$ is $\sum_j s_{ij}^{2}$ and the diagonal of $K^{2}$ is $-\sum_j k_{ij}^{2}$, and each off-diagonal pair occurs twice.</p>
 <p><strong>Corollary.</strong> On the real halves the trace form $\beta(X,Y)=\operatorname{tr}(XY)$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$.</p>
 <p><strong>Proof.</strong> A symmetric bilinear form with $\beta(X,X)>0$ for every $X\neq0$ is positive definite; the polarisation of $\operatorname{tr}(X^{2})$ is $\operatorname{tr}(XY)$.</p>
-<p><strong>Corollary.</strong> The signature of $\beta$ on $M_4(\mathbb{R})$ is $(10,6)$.</p>
+<p><strong>Corollary.</strong> The inertia of $\beta$ on $M_4(\mathbb{R})$ is $(10,6)$.</p>
 <p><strong>Proof.</strong> The two halves are orthogonal for $\beta$ and carry $10$ positive and $6$ negative directions.</p>
 <h2 id="the-axis-free-reading">The Axis-Free Reading</h2>
 <p><strong>Symmetry is an index pattern.</strong> In the basis $T_{\mu\nu}=L^{\mathrm{axf}}_{e_\mu}R^{\mathrm{axf}}_{e_\nu}$ the pairing is diagonal,</p>
@@ -138,7 +139,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The transpose is an involution of $M_4(\mathbb{C})$, so the algebra is the direct sum of its $+1$ and $-1$ eigenspaces, of complex dimensions $10$ and $6$ and real dimensions $10$ and $6$ on the real slice. The projections are $\tfrac12(A\pm A^{\mathsf T})$ and they are unique.</p>
 <p>Neither half is closed under the product. For two matrices of the same parity the anticommutator is symmetric and the commutator antisymmetric, for opposite parities the reverse, and every product splits accordingly; in particular a product of two antisymmetric matrices is not symmetric at order four. The trace vanishes on the antisymmetric half and on every mixed pairing.</p>
-<p>Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of signature $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.</p>
+<p>Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of inertia $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -183,7 +184,7 @@ $$</p>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge University Press, 2013), for symmetric and antisymmetric matrices and their eigenvalue structure.</li>
 <li><a href="the-involution-and-the-hermitian-structure-of-m4c.html">The Involution and the Hermitian Structure of $M_4(\mathbb{C})$</a>, for the dagger and the Hermitian half.</li>
 <li><a href="m4c-axis-free-representation.html">$M_4(\mathbb{C})$ Axis-Free Representation</a>, for the sixteen matrices and the coefficient basis.</li>
-<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$</a>, for the signature computed in full.</li>
+<li><a href="the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html">The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$</a>, for the inertia computed in full.</li>
 <li><a href="the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html">The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$</a>, for the same split at order two.</li>
 </ul>
       </div>

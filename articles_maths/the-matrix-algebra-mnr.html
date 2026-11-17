@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Matrix Algebra $M_n(\mathbb{R})$ — Biquaternion Universe</title>
+  <meta name="description" content="The matrix algebra is the algebra of real matrices, and it is the split real form of: same matrix units, same trace, same determinant, and a different…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -121,21 +122,21 @@ $$</p>
 <p>$$
 \sigma_J(A)=-JA^{\mathsf T}J^{-1}.
 $$</p>
-<p>Then $\sigma_J^{2}=\mathrm{id}$, and $\sigma_J$ is $\mathbb{R}$-linear and of the first kind. Its fixed space is $\mathfrak{sp}_n$, of dimension $n(n+1)/2$, the same dimension as $\operatorname{Sym}_n$. Over $\mathbb{C}$ the same two types exist, but the signature that separates the orthogonal ones over $\mathbb{R}$ collapses, so each type is a single class. Over $\mathbb{R}$ the two are distinct, and one fixed space is a Jordan algebra while the other is a Lie algebra. The comparison is <em>The Two Classes Compared</em>; the definition and the classification are <em>The Involutions of the First Kind: Transpose and Symplectic</em>.</p>
-<h2 id="the-trace-form-and-its-signature">The Trace Form and Its Signature</h2>
+<p>Then $\sigma_J^{2}=\mathrm{id}$, and $\sigma_J$ is $\mathbb{R}$-linear and of the first kind. Its fixed space is $\mathfrak{sp}_n$, of dimension $n(n+1)/2$, the same dimension as $\operatorname{Sym}_n$. Over $\mathbb{C}$ the same two types exist, but the inertia that separates the orthogonal ones over $\mathbb{R}$ collapses, so each type is a single class. Over $\mathbb{R}$ the two are distinct, and one fixed space is a Jordan algebra while the other is a Lie algebra. The comparison is <em>The Two Classes Compared</em>; the definition and the classification are <em>The Involutions of the First Kind: Transpose and Symplectic</em>.</p>
+<h2 id="the-trace-form-and-its-inertia">The Trace Form and Its Inertia</h2>
 <p><strong>The bilinear form $\langle A,B\rangle=\operatorname{tr}(AB)$ is symmetric, nondegenerate and indefinite.</strong> Symmetry is the identity $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, and nondegeneracy follows from $\langle E_{ij},E_{kl}\rangle=\delta_{il}\delta_{jk}$: a matrix unit pairs only with its transpose. The form is invariant,</p>
 <p>$$
 \langle AB,C\rangle=\operatorname{tr}(ABC)=\langle A,BC\rangle,
 $$</p>
 <p>so it is an associative form, the trace form of the algebra.</p>
-<p><strong>Its signature is $(n(n+1)/2,\,n(n-1)/2)$.</strong> The symmetric matrices are positive definite for the form and the antisymmetric ones negative definite:</p>
+<p><strong>Its inertia is $(n(n+1)/2,\,n(n-1)/2)$.</strong> The symmetric matrices are positive definite for the form and the antisymmetric ones negative definite:</p>
 <p>$$
 \langle S,S\rangle=\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}S_{ji}=\sum_{i,j}S_{ij}^{2}>0,\qquad
 \langle K,K\rangle=\operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}<0.
 $$</p>
-<p>The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$ forces $\operatorname{tr}(SK)=0$. So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the signature is the pair of their dimensions. Measured on the basis of matrix units it is $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$.</p>
+<p>The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$ forces $\operatorname{tr}(SK)=0$. So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the inertia is the pair of their dimensions. Measured on the basis of matrix units it is $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$.</p>
 <p><strong>The form is indefinite for every $n\ge2$, and the null cone is nontrivial.</strong> The antisymmetric half is nonempty as soon as $n\ge2$, so there are elements of negative square. Isotropic elements exist too: every nonzero nilpotent has $\operatorname{tr}(N^{2})=0$, and $E_{12}$ is one.</p>
-<p><strong>No form on $M_n(\mathbb{R})$ is both definite and invariant.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. <em>The Trace Form and Its Indefinite Signature</em> and <em>The Hilbert–Schmidt Form: Definite but Not Invariant</em> prove the two halves of the statement.</p>
+<p><strong>No form on $M_n(\mathbb{R})$ is both definite and invariant.</strong> The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. <em>The Trace Form and Its Indefinite Inertia</em> and <em>The Hilbert–Schmidt Form: Definite but Not Invariant</em> prove the two halves of the statement.</p>
 <h2 id="the-group-of-invertibles-and-the-two-components">The Group of Invertibles and the Two Components</h2>
 <p><strong>The group of invertibles is $\mathrm{GL}_n(\mathbb{R})$, of dimension $n^{2}$.</strong> It is the complement of $\Sigma$, open and dense, and a group under the product. The determinant is a surjective homomorphism</p>
 <p>$$
@@ -148,9 +149,9 @@ $$</p>
 <p><strong>As a real algebra $M_2(\mathbb{R})$ is not $\mathbb{C}$, and the two differ in dimension.</strong> $M_2(\mathbb{R})$ has real dimension $4$ and $\mathbb{C}$ has real dimension $2$. The relation between them is that $\mathbb{C}$ sits inside $M_2(\mathbb{R})$ as a subalgebra, and the whole algebra is the split-quaternion algebra.</p>
 <p><strong>The embedding.</strong> The map $a+bi\mapsto\begin{pmatrix}a&-b\\ b&a\end{pmatrix}$ is an injective homomorphism of real algebras $\mathbb{C}\to M_2(\mathbb{R})$, whose image is the set of matrices commuting with $J=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$, the image of $i$. So $\mathbb{C}$ sits in $M_2(\mathbb{R})$ as a subalgebra of dimension $2$, not as the whole algebra.</p>
 <p><strong>The whole algebra is the split quaternions.</strong> The matrices $\mathrm{I}$, $J$, $H=\operatorname{diag}(1,-1)$ and $P=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ are a basis of $M_2(\mathbb{R})$, with $J^{2}=-\mathrm{I}$, $H^{2}=P^{2}=\mathrm{I}$ and $HP=-JH$. The multiplication table is that of $\mathbb{H}_{\mathrm{spl}}$ in <em>Split-Quaternion Algebra</em>, so $M_2(\mathbb{R})\cong\mathbb{H}_{\mathrm{spl}}$. The division algebra $\mathbb{H}$ is not a real matrix algebra: $M_2(\mathbb{R})$ has zero divisors.</p>
-<p><strong>The trace form at $n=2$ has signature $(3,1)$.</strong> The symmetric part is three-dimensional and positive definite; the antisymmetric part is one-dimensional, spanned by $J$, with $\operatorname{tr}(J^{2})=-2$. This is the form of signature $(3,1)$ of <em>Split-Quaternion Algebra</em>.</p>
+<p><strong>The trace form at $n=2$ has inertia $(3,1)$.</strong> The symmetric part is three-dimensional and positive definite; the antisymmetric part is one-dimensional, spanned by $J$, with $\operatorname{tr}(J^{2})=-2$. This is the form of inertia $(3,1)$ of <em>Split-Quaternion Algebra</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.</p>
+<p>$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has inertia $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -190,7 +191,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle A,B\rangle=\operatorname{tr}(AB)$</td>
-<td>the trace form, of signature $(n(n+1)/2,n(n-1)/2)$</td>
+<td>the trace form, of inertia $(n(n+1)/2,n(n-1)/2)$</td>
 </tr>
 <tr>
 <td>$\mathrm{GL}_n(\mathbb{R})$, $\mathrm{SL}_n(\mathbb{R})$</td>

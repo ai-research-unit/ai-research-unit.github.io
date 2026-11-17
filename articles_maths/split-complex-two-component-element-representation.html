@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Split-Complex Two-Component Element Representation — Biquaternion Universe</title>
+  <meta name="description" content="The split-complex algebra is two-dimensional over, so a split-complex number is read off as its list of two real coefficients,. This article presents that…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -211,7 +212,7 @@ $$</p>
 <p>$$
 g(Q, B) = q b - q' b', \qquad Q = (q,q'), \; B = (b,b'),
 $$</p>
-<p>with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficient space is a <strong>Lorentzian plane</strong>: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.</p>
+<p>with matrix $\operatorname{diag}(1, -1)$ and inertia $(1,1)$. So the coefficient space is a <strong>Lorentzian plane</strong>: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -283,7 +284,7 @@ $$</p>
 <tr>
 <td>norm</td>
 <td>$q^2+q'^2$, positive definite</td>
-<td>$q^2-q'^2$, signature $(1,1)$</td>
+<td>$q^2-q'^2$, inertia $(1,1)$</td>
 </tr>
 <tr>
 <td>isotropic set</td>
@@ -310,7 +311,7 @@ $$</p>
 <p>The two realizations share their coefficient space, their column and row, their product's second component, and their conjugation; they differ in the sign of the first component's $q' b'$ term, and that single difference turns a field into a ring with zero divisors and a Euclidean plane into a Lorentzian one. The split-complex algebra is thus the <strong>indefinite two-component</strong> algebra, the systematic opposite of the complex field, and the comparison table is the complete statement of the difference at the level of coordinates.</p>
 <h2 id="summary">Summary</h2>
 <p>A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of <em>Split-Complex Regular Element Representation</em>.</p>
-<p>The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
+<p>The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -366,7 +367,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle Q\rangle_{*} = q^2-q'^2$</td>
-<td>Norm, signature $(1,1)$</td>
+<td>Norm, inertia $(1,1)$</td>
 </tr>
 <tr>
 <td>$g(Q,B) = q b-q' b'$</td>
@@ -382,7 +383,7 @@ $$</p>
 <ul>
 <li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the two-component and matrix readings of the split complex plane.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as $\mathrm{Cl}_{1,0}$ and their coordinate realization.</li>
-<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for signatures, isotropic vectors and the Lorentzian plane.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for inertias, isotropic vectors and the Lorentzian plane.</li>
 <li>Harvey Cohn, <em>A Classical Invitation to Algebraic Numbers and Class Fields</em> (Springer, Universitext, 1978), for the comparison of the two quadratic real algebras of dimension two.</li>
 </ul>
       </div>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Split-Quaternions and Hyperbolic Geometry — Biquaternion Universe</title>
+  <meta name="description" content="This article builds the model of the hyperbolic plane on the split-quaternion algebra. It presents the hyperboloid model on the timelike sheet of the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -91,7 +92,7 @@ $$</p>
 $$</p>
 <p>and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action. The geodesics are the intersections of $\mathbb{H}^{+}$ with the planes through the origin of $V$.</p>
 <p><strong>Proof.</strong> The induced metric and its curvature are (<em>Split-Quaternion Geometry</em>, §<em>The Unit Hyperboloids and Their Metrics</em>), where it is also shown that the induced form is definite on the sheet and that the geodesics are the central sections. The distance formula is the standard one for a hyperboloid model: for $v = w$ both sides are $1 = \cosh 0$, and for distinct points in the same sheet $\langle v,w\rangle \geq 1$ because the sheet lies in the closed half-space $q_x \geq 1$ and $\langle \vec e_x,w\rangle = w_x \geq 1$, with the general case following by transitivity. The group action is the double cover of <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Double Cover of $\mathrm{SO}^{+}(2,1)$</em>, and the identification of the quotient with the hyperbolic plane is <em>Hyperbolic Geometry</em>.</p>
-<p>The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of signature $(2,1)$; the points of the model are precisely the solutions of $\tilde\zeta^2 = -1$ in the sheet, by <em>Split-Quaternion Roots of Minus One</em>, §<em>The Equation and the Reduction to the Vector Subspace</em>.</p>
+<p>The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of inertia $(2,1)$; the points of the model are precisely the solutions of $\tilde\zeta^2 = -1$ in the sheet, by <em>Split-Quaternion Roots of Minus One</em>, §<em>The Equation and the Reduction to the Vector Subspace</em>.</p>
 <h2 id="the-unit-condition-and-the-two-sheeted-structure">The Unit Condition and the Two-Sheeted Structure</h2>
 <p><strong>Theorem (The Two Sheets).</strong> The level set $\{N = 1\}$ in $V$ has exactly two connected components, the timelike sheet $\mathbb{H}^{+}$ and its mirror $\mathbb{H}^{-} = \{q_x < 0\}$. The two sheets are exchanged by $v \mapsto -v$, by the conjugation $\bar{\cdot}$, and by the adjoint action of any unit of norm $-1$, such as $\vec e_y$. The identity component $\mathrm{SO}^{+}(2,1)$ preserves each sheet; the full isometry group $O(2,1)$ exchanges them.</p>
 <p><strong>Proof.</strong> The two sheets are the intersections with the half-spaces $q_x>0$ and $q_x<0$, each diffeomorphic to a plane by <em>Split-Quaternion Roots of Minus One</em>, §<em>The Equation and the Reduction to the Vector Subspace</em>. Both $v \mapsto -v$ and the conjugation reverse the sign of $q_x$; the conjugation reverses it because the fixed-point decomposition $v = \operatorname{Sc}(v) + \operatorname{Vec}(v)$ with $\bar{v} = -v$ for $v \in V$ by (<em>Split-Quaternion Algebra</em>, §<em>The Two Eigenspaces</em>). The adjoint action of $\vec e_y$ sends $\vec e_x$ to $-\vec e_x$ by the computation of <em>Split-Quaternion Rotations and the Lorentz Group</em>, §<em>The Adjoint Action on the Vector Subspace</em>, and has norm $-1$; the connected group $\mathrm{SO}^{+}(2,1)$ cannot exchange the two sheets because it cannot leave the connected component of the identity in the full isometry group, whose other components exchange the sheets.</p>
@@ -255,7 +256,7 @@ $$</p>
 <li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em> (Springer, 2006), for the hyperboloid, half-plane, disc and Klein models and the classification of the isometries.</li>
 <li>Alan F. Beardon, <em>The Geometry of Discrete Groups</em> (Springer, 1983), for the action of $\mathrm{SL}_2(\mathbb{R})$ by Möbius transformations and the trace classification.</li>
 <li>Joseph Lehner, <em>A Short Course in Automorphic Functions</em> (Holt, Rinehart and Winston, 1966), for the Cayley transform, the disc model and the boundary of the hyperbolic plane.</li>
-<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the hyperboloid model of the hyperbolic plane inside a Clifford algebra of signature $(2,1)$.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the hyperboloid model of the hyperbolic plane inside a Clifford algebra of inertia $(2,1)$.</li>
 </ul>
       </div>
     </main>

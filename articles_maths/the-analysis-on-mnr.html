@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Analysis on $M_n(\mathbb{R})$ — Biquaternion Universe</title>
+  <meta name="description" content="All norms on are equivalent, the algebra is complete and the product is continuous, so the algebra is a Banach algebra; the analysis on it is the analysis…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -131,7 +132,7 @@ $$</p>
 <h2 id="the-inverse-function-theorem-in-the-algebra">The Inverse Function Theorem in the Algebra</h2>
 <p><strong>The inverse function theorem applies to every analytic map between these spaces, and the algebra supplies examples.</strong> For instance the map $X\mapsto X^{2}$ has derivative $H\mapsto XH+HX$ at $X$, which is invertible exactly when no two eigenvalues of $X$ sum to zero. So the square root is locally analytic near every matrix whose spectrum avoids pairs summing to zero, and it is not near $\operatorname{diag}(1,-1)$.</p>
 <p><strong>The map $X\mapsto X^{\mathsf T}X$ has derivative $H\mapsto H^{\mathsf T}X+X^{\mathsf T}H$, and it is a local diffeomorphism between symmetric matrices and positive definite ones.</strong> This is the local form of the polar decomposition.</p>
-<p><strong>The map $X\mapsto\operatorname{tr}(X^{2})$ is a quadratic form of signature $(n(n+1)/2,n(n-1)/2)$, and its critical points are the isotropic cone.</strong> The gradient at $X$ is $2X$ with respect to the Hilbert–Schmidt form, so the only critical point is $0$, which is degenerate.</p>
+<p><strong>The map $X\mapsto\operatorname{tr}(X^{2})$ is a quadratic form of inertia $(n(n+1)/2,n(n-1)/2)$, and its critical points are the isotropic cone.</strong> The gradient at $X$ is $2X$ with respect to the Hilbert–Schmidt form, so the only critical point is $0$, which is degenerate.</p>
 <p><strong>A remark on rigour.</strong> Every statement here is a definition, a computation with a norm, or an application of the inverse function theorem; none needs a completion or a spectral measure.</p>
 <h2 id="summary">Summary</h2>
 <p>$M_n(\mathbb{R})$ is a finite-dimensional Banach algebra, with the Hilbert–Schmidt norm giving the Euclidean structure and the operator norm the submultiplicative one. The determinant is a polynomial, the inverse is analytic on the open dense group with derivative $-X^{-1}HX^{-1}$, and the characteristic polynomial is a polynomial map. The exponential converges everywhere, is a local diffeomorphism at $0$ with derivative the identity, and its inverse is the logarithm with radius of convergence one. The derivative of the exponential is given by the dexp series, and $\det e^{X}=e^{\operatorname{tr}X}$. The analytic functional calculus is a homomorphism on $\mathbb{R}[X]$, with real coefficients, and it explains when a real square root or logarithm exists locally.</p>

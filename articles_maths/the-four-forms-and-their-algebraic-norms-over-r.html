@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Four Forms and Their Algebraic Norms over $\mathbb{R}$ — Biquaternion Universe</title>
+  <meta name="description" content="Four canonical objects live on — the trace form, the Hilbert–Schmidt form, the Killing form and the determinant — and only the last is multiplicative…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,32 +72,32 @@
         <h1 id="the-four-forms-and-their-algebraic-norms-over-math0"><strong>The Four Forms and Their Algebraic Norms over $\mathbb{R}$</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>Four canonical objects live on $M_n(\mathbb{R})$ — the trace form, the Hilbert–Schmidt form, the Killing form and the determinant — and only the last is multiplicative, while only the first two are quadratic forms.</strong></p>
-<p>The article puts the four in one table with their invariances and their signatures, explains the algebraic norm of a central simple algebra and why $\det$ is that norm here, shows that the norm form is quadratic only at $n=2$, computes the derivative of $\log\det$ at the identity, and compares the four norms at $n=3$. It assumes <em>The Trace Form and Its Indefinite Signature</em>, <em>The Hilbert–Schmidt Form: Definite but Not Invariant</em> and <em>The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</em>, and it defers the two-dimensional case to <em>Split-Quaternion Algebra</em>.</p>
+<p>The article puts the four in one table with their invariances and their inertias, explains the algebraic norm of a central simple algebra and why $\det$ is that norm here, shows that the norm form is quadratic only at $n=2$, computes the derivative of $\log\det$ at the identity, and compares the four norms at $n=3$. It assumes <em>The Trace Form and Its Indefinite Inertia</em>, <em>The Hilbert–Schmidt Form: Definite but Not Invariant</em> and <em>The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</em>, and it defers the two-dimensional case to <em>Split-Quaternion Algebra</em>.</p>
 <h2 id="the-four-objects">The Four Objects</h2>
 <p><strong>The first form is the trace form.</strong> It is</p>
 <p>$$
 \langle X,Y\rangle=\operatorname{tr}(XY),
 $$</p>
-<p>symmetric, nondegenerate, of signature $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, positive on $\operatorname{Sym}_n$ and negative on $\operatorname{Skew}_n$.</p>
+<p>symmetric, nondegenerate, of inertia $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, positive on $\operatorname{Sym}_n$ and negative on $\operatorname{Skew}_n$.</p>
 <p><strong>The second form is the Hilbert–Schmidt form.</strong> It is</p>
 <p>$$
 \langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y),
 $$</p>
-<p>an inner product, of signature $(n^{2},0)$.</p>
+<p>an inner product, of inertia $(n^{2},0)$.</p>
 <p><strong>The third form is the Killing form.</strong> It is</p>
 <p>$$
 \operatorname{K}(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
 $$</p>
-<p>symmetric, invariant, with radical $\mathbb{R}\mathrm{I}$ and signature $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$ on the quotient.</p>
+<p>symmetric, invariant, with radical $\mathbb{R}\mathrm{I}$ and inertia $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$ on the quotient.</p>
 <p><strong>The fourth object is the determinant.</strong> It is a homogeneous polynomial of degree $n$ in the entries, written $\det X$. It is not a bilinear form for $n\ge3$. At $n=2$ it is a quadratic form, and it is the norm form of the split-quaternion algebra.</p>
 <h2 id="the-table">The Table</h2>
-<p><strong>The invariances separate the four immediately.</strong> The table records, for each object, what it is invariant under, and what its signature is.</p>
+<p><strong>The invariances separate the four immediately.</strong> The table records, for each object, what it is invariant under, and what its inertia is.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Object</th>
 <th>Invariance</th>
-<th>Signature</th>
+<th>Inertia</th>
 </tr>
 </thead>
 <tbody>
@@ -139,12 +140,12 @@ $$</p>
 <p>The first identity is the reason the determinant is called the norm of the algebra: it is a multiplicative function of degree $n$, and it vanishes exactly on the non-invertibles.</p>
 <p><strong>The norm form of the algebra is the determinant.</strong> In the language of quadratic forms, the norm form of a central simple algebra of degree $n$ is the reduced norm, a homogeneous polynomial of degree $n$. For $n=2$ it is a quadratic form; for $n\ge3$ it is a form of higher degree. The degree is the invariant that decides everything below.</p>
 <h2 id="the-norm-form-is-quadratic-only-at-math58">The Norm Form Is Quadratic Only at $n=2$</h2>
-<p><strong>At $n=2$ the determinant is a quadratic form of signature $(2,2)$.</strong> In the matrix-unit basis of $M_2(\mathbb{R})$,</p>
+<p><strong>At $n=2$ the determinant is a quadratic form of inertia $(2,2)$.</strong> In the matrix-unit basis of $M_2(\mathbb{R})$,</p>
 <p>$$
 \det\begin{pmatrix}a&b\\ c&d\end{pmatrix}=ad-bc.
 $$</p>
-<p>The polar form is $B(X,Y)=\tfrac14\bigl(\det(X+Y)-\det(X-Y)\bigr)$. Its matrix in the basis $E_{11},E_{12},E_{21},E_{22}$ has eigenvalues $\tfrac12,\tfrac12,-\tfrac12,-\tfrac12$, computed with numpy, so the signature is $(2,2)$. The form is split: a two-dimensional positive part and a two-dimensional negative part.</p>
-<p><strong>That form is the norm of the split-quaternion algebra.</strong> The algebra $M_2(\mathbb{R})$ is the split quaternions, and $\det$ is the norm. The norm form of a quaternion algebra is a quadratic form of dimension four; for the split algebra it is the form of signature $(2,2)$, and for the division algebra $\mathbb{H}$ it is the positive definite form of signature $(4,0)$. So the two real quaternion algebras are distinguished by the signature of the same norm form.</p>
+<p>The polar form is $B(X,Y)=\tfrac14\bigl(\det(X+Y)-\det(X-Y)\bigr)$. Its matrix in the basis $E_{11},E_{12},E_{21},E_{22}$ has eigenvalues $\tfrac12,\tfrac12,-\tfrac12,-\tfrac12$, computed with numpy, so the inertia is $(2,2)$. The form is split: a two-dimensional positive part and a two-dimensional negative part.</p>
+<p><strong>That form is the norm of the split-quaternion algebra.</strong> The algebra $M_2(\mathbb{R})$ is the split quaternions, and $\det$ is the norm. The norm form of a quaternion algebra is a quadratic form of dimension four; for the split algebra it is the form of inertia $(2,2)$, and for the division algebra $\mathbb{H}$ it is the positive definite form of inertia $(4,0)$. So the two real quaternion algebras are distinguished by the inertia of the same norm form.</p>
 <p><strong>At $n\ge3$ the determinant is not a quadratic form.</strong> Its degree is $n$, and a quadratic form has degree two. A homogeneous polynomial of degree $n$ is a quadratic form only when $n=2$.</p>
 <p><strong>The determinant is not a power of a quadratic form either.</strong> Suppose $\det=q^{n/2}$ with $q$ a quadratic form.</p>
 <p><strong>The two cases.</strong> For odd $n\ge3$ the exponent $n/2$ is not an integer, and a power of a quadratic form has even degree. For even $n\ge4$ the exponent is at least two, so $\det$ would be a product of two polynomials of positive degree, and the determinant is irreducible as a polynomial in the entries. Neither case allows such a $q$, and only at $n=2$, where the exponent is one, is $\det$ itself quadratic.</p>
@@ -226,7 +227,7 @@ $$</p>
 </table></div>
 <p><strong>The last two rows are the determinant bounds.</strong> The determinant is bounded by the product of the singular values, which is at most $\|X\|_{\mathrm{op}}^{n}$, and by the geometric mean bound $\bigl(\|X\|_{\mathrm{F}}/\sqrt{n}\bigr)^{n}$. The two bounds coincide for a scalar multiple of an orthogonal matrix. Also $\rho(X)^{3}=58.614503$ bounds $|\det X|=25$ from above, because the determinant is the product of the eigenvalues.</p>
 <h2 id="summary">Summary</h2>
-<p>Four objects live on $M_n(\mathbb{R})$. The trace form $\operatorname{tr}(XY)$ is invariant under conjugation by $\mathrm{GL}_n(\mathbb{R})$ and under the inner derivations, of signature $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is invariant only under $X\mapsto QXR^{\mathsf T}$ with $Q,R\in\mathrm{O}(n)$, and it is positive definite. The Killing form $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$ is invariant under all automorphisms, with a radical of dimension one and the signature of the trace form on the quotient. The determinant is multiplicative and invariant under conjugation, of degree $n$. The algebraic norm of the central simple algebra $M_n(\mathbb{R})$ is $\det$ and its algebraic trace is $\operatorname{tr}$, so the norm form of the algebra is the determinant. That norm form is a quadratic form only at $n=2$, where it has signature $(2,2)$ and is the norm of the split-quaternion algebra; at $n\ge3$ it has degree $n$ and is not a power of a quadratic form, by the irreducibility of the determinant and by degree. The derivative of $\log\det$ at the identity is the trace, which is the infinitesimal form of $\det(\exp H)=\exp(\operatorname{tr}H)$. The operator, Frobenius, trace-form and spectral quantities coincide on the symmetric part, coincide in absolute value on the antisymmetric part, and satisfy the chain $\rho\le\|\cdot\|_{\mathrm{op}}\le\|\cdot\|_{\mathrm{F}}\le\sqrt{n}\|\cdot\|_{\mathrm{op}}$ together with the two Cauchy–Schwarz bounds, all checked at $n=3$.</p>
+<p>Four objects live on $M_n(\mathbb{R})$. The trace form $\operatorname{tr}(XY)$ is invariant under conjugation by $\mathrm{GL}_n(\mathbb{R})$ and under the inner derivations, of inertia $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is invariant only under $X\mapsto QXR^{\mathsf T}$ with $Q,R\in\mathrm{O}(n)$, and it is positive definite. The Killing form $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$ is invariant under all automorphisms, with a radical of dimension one and the inertia of the trace form on the quotient. The determinant is multiplicative and invariant under conjugation, of degree $n$. The algebraic norm of the central simple algebra $M_n(\mathbb{R})$ is $\det$ and its algebraic trace is $\operatorname{tr}$, so the norm form of the algebra is the determinant. That norm form is a quadratic form only at $n=2$, where it has inertia $(2,2)$ and is the norm of the split-quaternion algebra; at $n\ge3$ it has degree $n$ and is not a power of a quadratic form, by the irreducibility of the determinant and by degree. The derivative of $\log\det$ at the identity is the trace, which is the infinitesimal form of $\det(\exp H)=\exp(\operatorname{tr}H)$. The operator, Frobenius, trace-form and spectral quantities coincide on the symmetric part, coincide in absolute value on the antisymmetric part, and satisfy the chain $\rho\le\|\cdot\|_{\mathrm{op}}\le\|\cdot\|_{\mathrm{F}}\le\sqrt{n}\|\cdot\|_{\mathrm{op}}$ together with the two Cauchy–Schwarz bounds, all checked at $n=3$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -238,7 +239,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\operatorname{tr}(XY)$</td>
-<td>the trace form, of signature $\bigl(n(n+1)/2,n(n-1)/2\bigr)$</td>
+<td>the trace form, of inertia $\bigl(n(n+1)/2,n(n-1)/2\bigr)$</td>
 </tr>
 <tr>
 <td>$\operatorname{tr}(X^{\mathsf T}Y)$</td>
@@ -281,12 +282,12 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982), for the reduced trace, the reduced norm and the norm form of a central simple algebra.</li>
-<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for norm forms, quaternion algebras and signatures.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for norm forms, quaternion algebras and inertias.</li>
 <li>Roger A. Horn and Charles R. Johnson, <em>Matrix Analysis</em> (Cambridge, 2013), for the operator norm, the Frobenius norm, the spectral radius and their inequalities.</li>
-<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>, for the first row of the table.</li>
+<li><a href="the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Inertia</a>, for the first row of the table.</li>
 <li><a href="the-hilbert-schmidt-form-definite-but-not-invariant.html">The Hilbert–Schmidt Form: Definite but Not Invariant</a>, for the second row.</li>
 <li><a href="the-killing-form-its-radical-and-the-centre-of-gl-n-r.html">The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$</a>, for the third row.</li>
-<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the case $n=2$ and the norm form of signature $(2,2)$.</li>
+<li><a href="split-quaternion-algebra.html">Split-Quaternion Algebra</a>, for the case $n=2$ and the norm form of inertia $(2,2)$.</li>
 </ul>
       </div>
     </main>

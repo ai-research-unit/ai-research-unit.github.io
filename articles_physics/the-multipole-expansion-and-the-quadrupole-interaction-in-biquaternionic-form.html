@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form — Biquaternion Universe</title>
+  <meta name="description" content="A bounded source — a charge distribution, a mass distribution, a deformed body — is described at distances large compared with its own size by an infinite…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -76,7 +77,7 @@
 <p>$$
 \mathbb{B}_{\Phi} = \{\tilde{Q}\in\mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
 $$</p>
-<p>with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has signature $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The biquaternionic gradient is</p>
+<p>with basis $ie_t, \vec e_x, \vec e_y, \vec e_z$, whose biquaternion norm has inertia $(3,1)$; it carries the four-vectors of physics. The informational sector is the Hermitian subspace $\mathbb{B}_{\Psi}$, with basis $e_t, i\vec e_x, i\vec e_y, i\vec e_z$. The two sectors satisfy $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$. The biquaternionic gradient is</p>
 <p>$$
 \tilde{\nabla} = e_t\,\partial/\partial R_t + \vec e_x\,\partial/\partial R_x + \vec e_y\,\partial/\partial R_y + \vec e_z\,\partial/\partial R_z,
 \qquad
@@ -232,7 +233,7 @@ $$</p>
 W = ϙ\,Ξ(0) - \vec p\cdot\vec E(0) - \tfrac16\,\mathcal{Q}_{ij}\,\partial/\partial R_i\,E_j(0) + \cdots .
 $$</p>
 <p>Separating off the trace term is what leaves the quadrupole entering the expansion through the traceless tensor $\mathcal{Q}_{ij}$ alone, and it is the same split that the representation-theoretic contraction below uses.</p>
-<p>The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_aΞ_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $Ξ_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the signature of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r_2^{\,2}d^3r_2$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.</p>
+<p>The identity was verified numerically on three point charges: with a quadratic external potential carrying a traceless Hessian, so that $\nabla\cdot\vec E = 0$, the direct energy $\sum_a ϙ_aΞ_{ext}(x_a\,\vec e_x+y_a\,\vec e_y+z_a\,\vec e_z)$ and the three-term expansion agree to machine precision at every source size $a$ (residual at the roundoff floor, a relative $10^{-16}$) — an exact test, since a quadratic potential terminates the expansion at the quadrupole. The coefficient $-\tfrac16$ was then checked against a genuinely higher-order case: adding a cubic term to $Ξ_{ext}$, the residual of the three-term expansion falls off as the cube of the source size, $4.3\times10^{-3}, 1.2\times10^{-4}, 4.3\times10^{-6}, 1.2\times10^{-7}, 4.3\times10^{-9}$ at source scales $1, 0.3, 0.1, 0.03, 0.01$ — a ratio of $27$ per factor of three, the mark of a first error at the octupole. A wrong coefficient in the quadrupole term would have left a residual falling only as the square. The trace term was verified on the same charges by varying the Hessian trace: the direct energy differs from the source-free expansion by exactly $-\tfrac16(\nabla\cdot\vec E)(0)\int\rho r_2^{\,2}d^3r_2$, to machine precision, at $\nabla\cdot\vec E = -0.3, +0.7, -1.5$, the difference changing sign with $\nabla\cdot\vec E$.</p>
 <p>Two features of the quadrupole term deserve emphasis, because they are what the algebra will and will not see.</p>
 <p><strong>Only the traceless part of the field gradient matters.</strong> Since $\mathcal{Q}_{ii} = 0$ and $\partial/\partial R_i\,E_j = -\partial^2/\partial R_i\partial R_j\,Ξ$ is symmetric in $i,j$, the contraction $\mathcal{Q}_{ij}\partial/\partial R_i\,E_j$ receives contributions only from the traceless symmetric part of the field-gradient matrix. Writing</p>
 <p>$$

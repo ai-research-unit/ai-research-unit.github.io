@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Split-Quaternion Polar Decomposition — Biquaternion Universe</title>
+  <meta name="description" content="This article is about the polar decomposition in the split-quaternion algebra, the second of the four algebras whose polar decompositions this series…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -82,7 +83,7 @@ $$</p>
 </ul>
 <p>The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.</p>
 <p>The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar decomposition above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.</p>
-<p>Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar decomposition; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's <em>Split-Quaternion Norm and Invertibility</em> is carried along.</p>
+<p>Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has inertia $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar decomposition; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's <em>Split-Quaternion Norm and Invertibility</em> is carried along.</p>
 <p>The conventions and the symbols are those of <em>Split-Quaternion Algebra</em> and of the corpus (<em>Algebra and Element Conventions</em>); the symbols this article uses are collected in §<em>Summary of Notation</em>.</p>
 <p>The identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the corpus's, and the element is <strong>timelike</strong> when $\langle\tilde q\rangle_{\natural} > 0$, <strong>spacelike</strong> when $\langle\tilde q\rangle_{\natural} < 0$ and <strong>lightlike</strong> when $\langle\tilde q\rangle_{\natural} = 0$.</p>
 <p>No physics is invoked.</p>
@@ -148,7 +149,7 @@ $$</p>
 <p><strong>The boost and the rotation do not commute, so the order is part of the word.</strong> The bracket is $[\sigma,\tfrac{\theta}{2}\vec e_x] = \theta(t_3\vec e_y-t_2\vec e_z)$, a real pure element in the plane of $\vec e_y$ and $\vec e_z$, non-zero as soon as $\sigma$ and $\theta$ are; the product of the two exponentials is therefore not the exponential of the sum. Over $60$ random boosts and rotations the largest coefficient of the bracket is $6.59$ and the largest coefficient of the failure $\exp(\sigma+\tfrac{\theta}{2}\vec e_x)-\exp(\sigma)\exp(\tfrac{\theta}{2}\vec e_x)$ of the sum rule is $2.09$. Two rewritings are therefore unavailable: the interchange of the boost and the rotation, and their fusion into a single exponential. The scale is central and passes through both, so the order that matters is the relative order of the boost and the orthogonal factor. The obstruction can be <strong>total</strong>, not merely large. At the rotation angle $\theta = 2\pi$ the rotation factor is $\exp(\pi \vec e_x) = -1$, so the element is $-b$, whose determinant is $\langle b\rangle_{\natural} = 1$ and whose trace is $-2\cosh d$; its two eigenvalues are $-\exp(d)$ and $-\exp(-d)$, both negative and distinct. A real matrix with two distinct negative eigenvalues has no real logarithm, so that element is the exponential of no element of the algebra at all, and the product of two exponentials is the only exponential description it has.</p>
 <h2 id="the-algebra-and-its-two-involutions">The Algebra and Its Two Involutions</h2>
 <h3 id="the-split-quaternion-norm-and-the-three-classes">The Split-Quaternion Norm and the Three Classes</h3>
-<p>The split-quaternion norm is the quadratic form $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ of signature $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.</p>
+<p>The split-quaternion norm is the quadratic form $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ of inertia $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.</p>
 <p>The form vanishes on a cone. The element $\tilde q = 1+\vec e_y$ is nonzero and satisfies</p>
 <p>$$
 (1+\vec e_y)(1-\vec e_y) = 1 - \vec e_y^2 = 0,
@@ -237,7 +238,7 @@ $$</p>
 <p>$$
 \langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{\det P} = \frac{\langle\tilde q\rangle_{\natural}}{|\langle\tilde q\rangle_{\natural}|} = \operatorname{sign} \langle\tilde q\rangle_{\natural} ,
 $$</p>
-<p>so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the determinant of $\tilde u_{\mathrm r}$.</p>
+<p>so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the sign of $\langle\tilde u_{\mathrm r}\rangle_{\natural}$.</p>
 <h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
 <p><strong>Theorem.</strong> Every split quaternion $\tilde q$ with $\langle\tilde q\rangle_{\natural}\neq0$ has exactly one polar decomposition.</p>
 <p><em>Existence.</em> For such $\tilde q$, the element $\Sigma = \tilde q\tilde q_{\tau}$ is symmetric positive definite, so it has a unique symmetric positive definite square root $P$, whose determinant is $|\langle\tilde q\rangle_{\natural}| > 0$. Setting $r = \sqrt{\det P}$, $b = P/r$ and $\tilde u_{\mathrm r} = P^{-1}\tilde q$ gives $r>0$, $\det b = 1$ with $b$ symmetric positive definite, and $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, while $rb\tilde u_{\mathrm r} = r(P/r)(P^{-1}\tilde q) = \tilde q$.</p>
@@ -283,7 +284,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The lightlike class is the null cone, the zero divisors of <em>Split-Quaternion Zero Divisors</em>; on it $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.</p>
+<p>The lightlike class is the null cone, the zero divisors of <em>Split-Quaternion Zero Divisors</em>; on it the matrix of $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.</p>
 <h2 id="the-exponential-form-of-the-boost">The Exponential Form of the Boost</h2>
 <h3 id="the-boost-subspace">The Boost Subspace</h3>
 <p>The boost lies in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$, the fixed space of $\tau$. Removing the scalar direction, which the normalisation $\langle b\rangle_{\natural} = 1$ separates, leaves the two-dimensional subspace</p>
@@ -356,7 +357,7 @@ $$</p>
 <p>$$
 \tilde u_{\mathrm r} = \vec e_y ,
 $$</p>
-<p>which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. The determinant of $\tilde u_{\mathrm r}$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.</p>
+<p>which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. $\langle\tilde u_{\mathrm r}\rangle_{\natural}$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.</p>
 <h3 id="a-lightlike-element">A Lightlike Element</h3>
 <p>Take $\tilde q = 1+\vec e_y$. Then $\langle\tilde q\rangle_{\natural} = 1-1 = 0$, and $\tilde q$ is a zero divisor, as the identity $(1+\vec e_y)(1-\vec e_y) = 0$ shows. The matrix $\tilde q\tilde q_{\tau}$ is $\begin{pmatrix} 2 & 2 \\ 2 & 2\end{pmatrix}$, of rank one and determinant zero, so its symmetric square root is positive semidefinite and not positive definite, the modulus $\sqrt{|\langle\tilde q\rangle_{\natural}|} = 0$ is not positive, and the boost $b = P/r$ is not defined. No polar decomposition exists, and none of the three factors survives.</p>
 <p>The failure is characteristic of the null cone and not of a particular element: every lightlike $\tilde q$ has $\det\mathsf{M}_2(\tilde q) = 0$, hence $\tilde q\tilde q_{\tau}$ of rank at most one, hence no positive definite square root.</p>
@@ -441,7 +442,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$</td>
-<td>the split-quaternion norm, of signature $(2,2)$</td>
+<td>the split-quaternion norm, of inertia $(2,2)$</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2$</td>

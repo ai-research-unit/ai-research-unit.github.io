@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Two Halves and Their Topology — Biquaternion Universe</title>
+  <meta name="description" content="Both halves of are contractible, so the topology of the algebra is not in the halves but in their strata. and are Euclidean spaces of dimensions and, and…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -104,7 +105,7 @@ $$</p>
 $$</p>
 <p>and the matrices of rank exactly $r$ are an open dense subset of those of rank at most $r$, so the two sets have the same dimension.</p>
 <p><strong>The two ends of the count.</strong> At $r=n$ the formula gives $n(n+1)/2$, the whole half; at $r=1$ it gives $n$, the rank-one cone $\pm aa^{\mathsf T}$. At $n=3$ the values are $3,5,6$; at $n=4$ they are $4,7,9,10$.</p>
-<p><strong>The strata are the orbits of the congruence action.</strong> $\mathrm{GL}_n(\mathbb{R})$ acts on $\operatorname{Sym}_n$ by $S\mapsto P^{\mathsf T}SP$, and the orbit of a matrix of rank $r$ is the set of matrices of rank $r$ with the same signature. The stratum of rank $r$ is a union of $r+1$ orbits, indexed by the signature $(p,q)$ with $p+q=r$, and each orbit has the dimension of the stratum. At $n=4$ the stratum of rank $2$ has dimension $7$ and three orbits, of signatures $(2,0)$, $(1,1)$ and $(0,2)$.</p>
+<p><strong>The strata are the orbits of the congruence action.</strong> $\mathrm{GL}_n(\mathbb{R})$ acts on $\operatorname{Sym}_n$ by $S\mapsto P^{\mathsf T}SP$, and the orbit of a matrix of rank $r$ is the set of matrices of rank $r$ with the same inertia. The stratum of rank $r$ is a union of $r+1$ orbits, indexed by the inertia $(p,q)$ with $p+q=r$, and each orbit has the dimension of the stratum. At $n=4$ the stratum of rank $2$ has dimension $7$ and three orbits, of inertias $(2,0)$, $(1,1)$ and $(0,2)$.</p>
 <h2 id="the-strata-of-the-antisymmetric-half">The Strata of the Antisymmetric Half</h2>
 <p><strong>Theorem.</strong> An antisymmetric matrix has even rank, and the antisymmetric matrices of rank exactly $2s$ form a manifold of dimension</p>
 <p>$$
@@ -115,12 +116,12 @@ $$</p>
 \frac{2s(2s-1)}{2}+2s(n-2s)=2s(n-s)-s .
 $$</p>
 <p><strong>The two ends of the count.</strong> At $s=0$ the dimension is $0$, the zero matrix. At $2s=n$, for even $n$, it is $n(n-1)/2$, the whole half. At $n=4$ the values are $0,5,6$ and at $n=5$ they are $0,7,10$. The stratum of rank $2$ at $n=4$ has codimension $1$, bounded by $\{\operatorname{pf}=0\}$.</p>
-<p><strong>The rank is the only invariant of a stratum.</strong> Two antisymmetric matrices of the same rank are congruent, since an alternating form has a normal form determined by its rank alone: $s$ hyperbolic planes and a radical. So each stratum is a single orbit, and the antisymmetric half has no signature, which is the difference between the two halves.</p>
+<p><strong>The rank is the only invariant of a stratum.</strong> Two antisymmetric matrices of the same rank are congruent, since an alternating form has a normal form determined by its rank alone: $s$ hyperbolic planes and a radical. So each stratum is a single orbit, and the antisymmetric half has no inertia, which is the difference between the two halves.</p>
 <h2 id="the-determinant-on-the-two-halves">The Determinant on the Two Halves</h2>
 <p><strong>Theorem.</strong> For odd $n$ the determinant vanishes identically on $\operatorname{Skew}_n$. For even $n$ it is the square of the Pfaffian, hence nonnegative.</p>
 <p><em>Proof.</em> $\det K=\det K^{\mathsf T}=\det(-K)=(-1)^{n}\det K$, so for odd $n$ the determinant equals its own negative. For even $n$, $\det K=\operatorname{pf}(K)^{2}$ with $\operatorname{pf}$ the Pfaffian, a polynomial of degree $n/2$.</p>
 <p><strong>Measured.</strong> With $300$ samples of unit-normal entries above the diagonal, the largest value of $|\det K|$ on $\operatorname{Skew}_n$ was $0$ at $n=3$ and $n=5$, and about $10$ at $n=2$ (measured $9.61$) and $40$ at $n=4$ (measured $42.4$ and $47.37$ on two samples). The zeros at odd $n$ are exact, and the nonzero values at even $n$ show the determinant is not identically zero there.</p>
-<p><strong>The determinant on the symmetric half is the discriminant of the form.</strong> $\det S$ vanishes exactly on the degenerate symmetric matrices, among them the boundary of the positive definite cone, and a symmetric matrix of signature $(p,q)$ has determinant of sign $(-1)^{q}$. So the symmetric half meets both components of the group of invertibles.</p>
+<p><strong>The determinant on the symmetric half is the discriminant of the form.</strong> $\det S$ vanishes exactly on the degenerate symmetric matrices, among them the boundary of the positive definite cone, and a symmetric matrix of inertia $(p,q)$ has determinant of sign $(-1)^{q}$. So the symmetric half meets both components of the group of invertibles.</p>
 <p><strong>The zero sets are hypersurfaces.</strong> On $\operatorname{Sym}_n$ the set $\{\det=0\}$ has dimension $n(n+1)/2-1$; on $\operatorname{Skew}_n$ with $n$ even the set $\{\operatorname{pf}=0\}$ has dimension $n(n-1)/2-1$; on $\operatorname{Skew}_n$ with $n$ odd it is the whole half.</p>
 <h2 id="the-symmetrisation-map">The Symmetrisation Map</h2>
 <p><strong>Definition.</strong> The <strong>symmetrisation</strong> is $\sigma(A)=\tfrac12(A+A^{\mathsf T})$, and the <strong>antisymmetrisation</strong> is $\alpha(A)=\tfrac12(A-A^{\mathsf T})$.</p>
@@ -129,12 +130,12 @@ $$</p>
 <p><strong>The two halves are the coimage and the kernel.</strong> $\operatorname{Sym}_n$ is the image of $\sigma$, that is the coimage, and $\operatorname{Skew}_n$ is its kernel, that is the fibre over $0$. The short exact sequence $0\to\operatorname{Skew}_n\to M_n\to\operatorname{Sym}_n\to0$ splits by the inclusion of $\operatorname{Sym}_n$, and the splitting is the direct sum. So the halves are the two ends of one linear map, the fibre of $0$ and the quotient.</p>
 <p><strong>The same map reads the transpose involution.</strong> $\sigma=\tfrac12(\mathrm{id}+\sigma_{\mathsf T})$ and $\alpha=\tfrac12(\mathrm{id}-\sigma_{\mathsf T})$, where $\sigma_{\mathsf T}(A)=A^{\mathsf T}$. So $\sigma$ and $\alpha$ are the spectral projections of the transpose, and the dimensions of the halves are the multiplicities of its two eigenvalues.</p>
 <h2 id="where-the-topology-lives">Where the Topology Lives</h2>
-<p><strong>The symmetric half meets the group of invertibles in $n+1$ components.</strong> By Sylvester's law of inertia the invertible symmetric matrices fall into $n+1$ classes, indexed by the signature $(p,q)$ with $p+q=n$. Each class is a single orbit of the congruence action, and since $-P$ acts by the same congruence as $P$, each class is an orbit of the connected group $\mathrm{GL}_n^{+}$, hence connected. At $n=2$ the three are the positive definite, the negative definite and the indefinite matrices.</p>
+<p><strong>The symmetric half meets the group of invertibles in $n+1$ components.</strong> By Sylvester's law of inertia the invertible symmetric matrices fall into $n+1$ classes, indexed by the inertia $(p,q)$ with $p+q=n$. Each class is a single orbit of the congruence action, and since $-P$ acts by the same congruence as $P$, each class is an orbit of the connected group $\mathrm{GL}_n^{+}$, hence connected. At $n=2$ the three are the positive definite, the negative definite and the indefinite matrices.</p>
 <p><strong>The antisymmetric half meets the group of invertibles only for even $n$.</strong> For odd $n$ every antisymmetric matrix is singular, since an odd-order alternating form is degenerate; for even $n$ the invertible ones form the stratum of rank $n$, an open subset of the half whose complement is $\{\operatorname{pf}=0\}$.</p>
 <p><strong>The topology is the topology of the strata.</strong> The symmetric half is contractible but its intersection with the group of invertibles has $n+1$ components, and the antisymmetric half is contractible but its rank strata have the dimensions of §<em>The Strata of the Antisymmetric Half</em>. So the invariants live in the stratification.</p>
 <p><strong>The two halves together add nothing.</strong> $M_n$ is the direct sum and is contractible, so no homotopy invariant distinguishes the halves. What distinguishes them is the algebra of the product: $\operatorname{Skew}_n$ is closed under the commutator and $\operatorname{Sym}_n$ is not, as in <em>The Matrix Algebra $M_n(\mathbb{R})$</em>.</p>
 <h2 id="summary">Summary</h2>
-<p>$\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are Euclidean spaces of dimensions $n(n+1)/2$ and $n(n-1)/2$, and both are contractible, so the algebra $M_n(\mathbb{R})$ carries no topology beyond that of a point. The positive definite cone is open, convex and a single congruence orbit, hence contractible, and its boundary is stratified by rank. The symmetric matrices of rank $r$ form a manifold of dimension $r(n-r)+r(r+1)/2$, and the antisymmetric matrices of rank $2s$ one of dimension $2s(n-s)-s$; the rank is even on the antisymmetric half, and that half has no signature. The determinant vanishes on $\operatorname{Skew}_n$ for odd $n$, is the square of the Pfaffian for even $n$, and on $\operatorname{Sym}_n$ has the sign of the negative index. The two halves are the kernel and the coimage of the symmetrisation map, and the topology of each is the topology of its stratification.</p>
+<p>$\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ are Euclidean spaces of dimensions $n(n+1)/2$ and $n(n-1)/2$, and both are contractible, so the algebra $M_n(\mathbb{R})$ carries no topology beyond that of a point. The positive definite cone is open, convex and a single congruence orbit, hence contractible, and its boundary is stratified by rank. The symmetric matrices of rank $r$ form a manifold of dimension $r(n-r)+r(r+1)/2$, and the antisymmetric matrices of rank $2s$ one of dimension $2s(n-s)-s$; the rank is even on the antisymmetric half, and that half has no inertia. The determinant vanishes on $\operatorname{Skew}_n$ for odd $n$, is the square of the Pfaffian for even $n$, and on $\operatorname{Sym}_n$ has the sign of the negative index. The two halves are the kernel and the coimage of the symmetrisation map, and the topology of each is the topology of its stratification.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -173,7 +174,7 @@ $$</p>
 <td>the antisymmetrisation, with kernel $\operatorname{Sym}_n$</td>
 </tr>
 <tr>
-<td>signature $(p,q)$</td>
+<td>inertia $(p,q)$</td>
 <td>the inertia of a symmetric matrix, an invariant of its congruence class</td>
 </tr>
 </tbody>

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interpretation of the Wick Rotation in the Biquaternion Universe — Biquaternion Universe</title>
+  <meta name="description" content="The Wick rotation is a computational procedure used throughout quantum field theory, statistical mechanics, and condensed-matter physics. It consists of…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -85,7 +86,7 @@ $$</p>
 <p>$$
 \langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2
 $$</p>
-<p>has signature $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.</p>
+<p>has inertia $(4, 0)$. The subspace is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, and it is a division algebra: every nonzero element is invertible, and there are no zero divisors.</p>
 <p><strong>The material sector $\mathbb{B}_{\Phi}$.</strong> An element has the form</p>
 <p>$$
 \tilde R_\Phi = i r'_t\, e_t + r_x\, \vec e_x + r_y\, \vec e_y + r_z\, \vec e_z, \qquad r'_t, r_x, r_y, r_z \in \mathbb{R}.
@@ -94,7 +95,7 @@ $$</p>
 <p>$$
 \langle\tilde R_\Phi\rangle_{\natural} = -c^2(r'_t)^2 + r_x^2 + r_y^2 + r_z^2
 $$</p>
-<p>has signature $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.</p>
+<p>has inertia $(3, 1)$. The subspace is not a subalgebra, and it contains a three-dimensional cone of zero divisors.</p>
 <p><strong>The informational sector $\mathbb{B}_{\Psi}$.</strong> An element has the form</p>
 <p>$$
 \tilde H_\Psi = h_t\, e_t + i h'_x\, \vec e_x + i h'_y\, \vec e_y + i h'_z\, \vec e_z, \qquad h_t, h'_x, h'_y, h'_z \in \mathbb{R}.
@@ -103,7 +104,7 @@ $$</p>
 <p>$$
 \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - (h'_x)^2 - (h'_y)^2 - (h'_z)^2
 $$</p>
-<p>has signature $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.</p>
+<p>has inertia $(1, 3)$, the mirror image of the signs on $\mathbb{B}_{\Phi}$.</p>
 <p>The three subspaces are distinct, and each has its own algebraic and analytic character. The specific form of the differential operators on each subspace — the gradient, the d'Alembertian, and the square of the gradient — has been developed in the companion articles on the biquaternion analysis.</p>
 <h2 id="the-standard-wick-rotation">The Standard Wick Rotation</h2>
 <p>In relativistic field theory, a point of the material sector is written</p>
@@ -128,7 +129,7 @@ $$</p>
 <p>$$
 W=\mathrm{diag}(-i,\,1,\,1,\,1),\qquad W(i r'_t,\ r_x,\ r_y,\ r_z)=(r'_t,\ r_x,\ r_y,\ r_z)=(c\tau,\ r_x,\ r_y,\ r_z),
 $$</p>
-<p>with $\tau=r'_t$ the parameter of the image. The map multiplies the time coefficient by $-i$ and fixes the three spatial ones. It is $\mathbb{C}$-linear and bijective, and it is not a ring map. It carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ coefficient by coefficient, and it is not an isometry: the quadratic form changes sign in the time–time component, and the signature changes from $(3, 1)$ to $(4, 0)$.</p>
+<p>with $\tau=r'_t$ the parameter of the image. The map multiplies the time coefficient by $-i$ and fixes the three spatial ones. It is $\mathbb{C}$-linear and bijective, and it is not a ring map. It carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ coefficient by coefficient, and it is not an isometry: the quadratic form changes sign in the time–time component, and the inertia changes from $(3, 1)$ to $(4, 0)$.</p>
 <p><strong>Two operations carry the name, and the algebra tells them apart.</strong> The substitution $r'_t\mapsto-i\tau$ is a rotation of the contour. It takes the material coordinate off the real axis, and at $\tau$ real the source point has $r'_t=-i\tau$ with time coefficient $c\tau$, which is real, so the source is not a point of $\mathbb{B}_{\Phi}$ at all. The relabelling $i r'_t\mapsto c\tau$ is a different operation: it multiplies the time coefficient by $-i$, produces the real coefficient $r'_t$, and has $\tau=r'_t$. That operation is the map $W$. It is a bijection of $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ and it is the one this article reads. The first is the device of the calculation; the second is the change of reality condition.</p>
 <p><strong>The two subspaces are two reality conditions on one algebra.</strong> Each is the fixed space of a conjugate-linear involution of $\mathbb{B}$:</p>
 <p>$$
@@ -159,7 +160,7 @@ $$</p>
 \boxed{\;\Box = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta\;}.
 $$</p>
 <p>The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the continued field. This is the standard procedure, expressed in the biquaternion framework as a change of the reality condition on one field.</p>
-<p>So the Wick rotation is a <strong>change of real slice</strong>: it is available where the deformation of the coefficient crosses no singularity, and it is unavailable where one is crossed. Its biquaternion content is that $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{H}$ are the two real structures of one algebra, related by $W^{2}=T$. The change is not an artefact of the calculation, and a medium can produce it: when $\epsilon\mu<0$ the scale $c^2=1/(\epsilon\mu)$ is negative, the interval takes the signature $(4,0)$, and the imaginary time direction becomes real (<em>The Effective Optical Metric of the Local Complex Structure</em>).</p>
+<p>So the Wick rotation is a <strong>change of real slice</strong>: it is available where the deformation of the coefficient crosses no singularity, and it is unavailable where one is crossed. Its biquaternion content is that $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{H}$ are the two real structures of one algebra, related by $W^{2}=T$. The change is not an artefact of the calculation, and a medium can produce it: when $\epsilon\mu<0$ the scale $c^2=1/(\epsilon\mu)$ is negative, the interval takes the inertia $(4,0)$, and the imaginary time direction becomes real (<em>The Effective Optical Metric of the Local Complex Structure</em>).</p>
 <h2 id="why-the-change-works-the-properties-of-math111">Why the Change Works: the Properties of $\mathbb{B}_{H}$</h2>
 <p>The reason the change is useful is that $\mathbb{B}_{H}$ is the compact real slice and $\mathbb{B}_{\Phi}$ is not. The first five rows of the table below are five names for that one fact.</p>
 <div class="table-scroll"><table>
@@ -172,7 +173,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>Signature of the quadratic form</td>
+<td>Inertia of the quadratic form</td>
 <td>$(4, 0)$ positive-definite</td>
 <td>$(3, 1)$ indefinite</td>
 </tr>
@@ -240,7 +241,7 @@ $$</p>
 <p>The interpretation of the Wick rotation as a change of real slice is an <strong>interpretation</strong>, not an established result. What is established is the following.</p>
 <ul>
 <li>The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{\Phi}$. Three of them — $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ — are involved in the Wick rotation.</li>
-<li>The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.</li>
+<li>The three subspaces have distinct inertias: $(4, 0)$, $(1, 3)$, $(3, 1)$.</li>
 <li>$\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$ are the fixed spaces of the conjugate-linear involutions $\bar{\cdot}$ and $\flat$, and $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$.</li>
 <li>The standard Wick rotation acts on a point of $\mathbb{B}_{\Phi}$ by the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i r'_t$ to the real $c\tau$ and leaves the spatial coefficients unchanged.</li>
 <li>The resulting point lies in $\mathbb{B}_{H}$.</li>
@@ -279,15 +280,15 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathbb{B}_{H}$</td>
-<td>Quaternion subspace: signature $(4, 0)$, elliptic</td>
+<td>Quaternion subspace: inertia $(4, 0)$, elliptic</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Psi}$</td>
-<td>Informational sector: signature $(1, 3)$, mirror hyperbolic</td>
+<td>Informational sector: inertia $(1, 3)$, mirror hyperbolic</td>
 </tr>
 <tr>
 <td>$\mathbb{B}_{\Phi}$</td>
-<td>Material sector: signature $(3, 1)$, hyperbolic</td>
+<td>Material sector: inertia $(3, 1)$, hyperbolic</td>
 </tr>
 <tr>
 <td>$q_t, q_x, q_y, q_z$</td>

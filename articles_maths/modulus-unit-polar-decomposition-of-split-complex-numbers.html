@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modulus–Unit Polar Decomposition of Split-Complex Numbers — Biquaternion Universe</title>
+  <meta name="description" content="This article treats the modulus–unit polar decomposition of a split-complex number: the writing">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -75,7 +76,7 @@
 Q = r\,u, \qquad r \in \mathbb{R}, \quad r > 0, \qquad u \in \mathbb{C}_{\mathrm{spl}}, \quad \lvert \langle u\rangle_{*}\rvert = 1,
 $$</p>
 <p>with $r$ the <strong>modulus</strong> and $u$ the <strong>unit factor</strong>. It is the algebraic member of the polar decompositions of $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of <em>Modulus–Unit Polar Decomposition of Complex Numbers</em>.</p>
-<p>The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.</p>
+<p>The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of inertia $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.</p>
 <p>The article defines the norm and the two regimes (§<em>The Two Factors</em>), proves existence and uniqueness (§<em>Existence and Uniqueness</em>), describes the group of invertibles and its maximal compact subgroup (§<em>The Group of Invertibles and the Unit Set</em>), records the two axes (§<em>The Two Axes</em>), gives the matrix picture (§<em>The Matrix Picture</em>), computes examples (§<em>Worked Examples</em>) and compares the family (§<em>The Other Algebras</em>).</p>
 <p>The conventions and the symbols are those of <em>Split-Complex Algebra</em>, <em>Norm and Invertibility in the General Split-Complex Algebra</em> and <em>Algebra and Element Conventions</em>; the notation is collected in §<em>Summary of Notation</em>. The rational and exponential coordinates are the subjects of <em>Rational-Chart Polar Decomposition of Split-Complex Numbers</em> and <em>Exponential Polar Decomposition of Split-Complex Numbers</em>. Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-two-factors">The Two Factors</h2>
@@ -84,7 +85,7 @@ $$</p>
 <p>$$
 \langle Q\rangle_{*} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
 $$</p>
-<p>It is a quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra,</p>
+<p>It is a quadratic form of inertia $(1,1)$, multiplicative under multiplication of the algebra,</p>
 <p>$$
 \langle QB\rangle_{*} = \langle Q\rangle_{*}\langle B\rangle_{*},
 $$</p>
@@ -232,7 +233,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The trigonometric row is empty: $\mathbb{C}_{\mathrm{spl}}$ has no square root of $-1$. The parabolic row is degenerate: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has four roots. The roots $\pm1$ generate the positive real scale $\exp(t)$, and the roots $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$ of the unit hyperbola; the past branch is reached by multiplying by $-1$. This is the exact exchange of the complex case, where $-1$ has the two roots $\pm i$ and $+1$ has the two roots $\pm1$; the split algebra moves the circle to the hyperbola and the compact generator to a non-compact one.</p>
-<h3 id="position-and-signature">Position and Signature</h3>
+<h3 id="position-and-inertia">Position and Inertia</h3>
 <p>The two independent dichotomies of the family, position with respect to conjugation and the sign of the square of the direction, place the split unit factor in a slot that no definite algebra occupies.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -248,17 +249,17 @@ $$</p>
 <td>$\mathbb{C}$</td>
 <td>$\nu = \pm1$, $\nu^2 = +1$: the scale</td>
 <td>$\nu = \pm i$, $\nu^2 = -1$</td>
-<td>anti-Hermitian, signature $-1$: the circle</td>
+<td>anti-Hermitian, sign $-1$: the circle</td>
 </tr>
 <tr>
 <td>$\mathbb{C}_{\mathrm{spl}}$</td>
 <td>$\nu = \pm1$, $\nu^2 = +1$: the scale</td>
 <td>$\nu = \pm j$, $\nu^2 = +1$</td>
-<td>anti-Hermitian, signature $+1$: the hyperbola</td>
+<td>anti-Hermitian, sign $+1$: the hyperbola</td>
 </tr>
 </tbody>
 </table></div>
-<p>In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every group of invertibles is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.</p>
+<p>In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic inertia. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every group of invertibles is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.</p>
 <h2 id="the-matrix-picture">The Matrix Picture</h2>
 <h3 id="multiplication-by-j">Multiplication by j</h3>
 <p>In the real basis $\{1,j\}$ a split-complex number is the pair $(q,q')$, and multiplication by $Q = q+jq'$ is the linear map</p>
@@ -550,7 +551,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$</td>
-<td>the norm, indefinite of signature $(1,1)$</td>
+<td>the norm, indefinite of inertia $(1,1)$</td>
 </tr>
 <tr>
 <td>$\Pi_\pm = \tfrac12(1\pm j)$</td>
@@ -615,7 +616,7 @@ $$</p>
 <li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the polar form of split-complex numbers and the hyperbola as the unit locus.</li>
 <li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra, its idempotents and its zero divisors.</li>
 <li>John Stillwell, <em>Naive Lie Theory</em> (Springer, 2008), for the orthogonal groups, the circle and the Lorentz group of the plane.</li>
-<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norms of arbitrary signature and the connected components of their isometry groups.</li>
+<li>F. Reese Harvey, <em>Spinors and Calibrations</em> (Academic Press, 1990), for norms of arbitrary inertia and the connected components of their isometry groups.</li>
 <li>John G. Ratcliffe, <em>Foundations of Hyperbolic Manifolds</em> (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for hyperbolic geometry, its isometry groups and the parametrisation by rapidity.</li>
 <li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (American Mathematical Society, 2005), for indefinite quadratic forms, their isotropic cones and their level sets.</li>
 </ul>
