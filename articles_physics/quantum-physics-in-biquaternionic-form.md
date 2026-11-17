@@ -463,7 +463,7 @@ which is the partial trace on the image, $\operatorname{Tr}_2(a\otimes b)=2a\,\m
 
 ## Compatibility with Relativity
 
-**Two halves, two physics.** The algebra is one eight-dimensional real space, cut in two. One half, $\mathbb{B}_{\Psi}$, is the space of quantum physics: its elements are the states and the observables of this whole article, a real weight and an imaginary direction. The other half, $\mathbb{B}_{\Phi}$, is the space of relativity: its elements are the four-vectors, one real time and three real directions, and its norm is the interval.
+**Two halves, two physics.** The algebra is one eight-dimensional real space, cut in two. One half, $\mathbb{B}_{\Psi}$, is the **space of quantum physics**: its elements are the states and the observables of this whole article, a real weight and an imaginary direction. The other half, $\mathbb{B}_{\Phi}$, is the **space of relativity**: its elements are the four-vectors, one real time and three real directions, and its norm is the interval.
 
 The cut is the cut of the star. $\mathbb{B}_{\Psi}$ is the part the star fixes and $\mathbb{B}_{\Phi}$ the part it reverses, so $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a direct sum, each half four real dimensional, the two meeting only at zero. Every element of the algebra is therefore one quantum part plus one relativistic part, and multiplication by the central $i$ carries one half onto the other. Because the two halves are complementary, the whole algebra is available to both readings at once, and neither reading has to be added from outside.
 
