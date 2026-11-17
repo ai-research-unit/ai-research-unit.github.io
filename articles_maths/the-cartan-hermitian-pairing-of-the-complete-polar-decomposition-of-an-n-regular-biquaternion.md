@@ -1,4 +1,4 @@
-# __The Cartan Hermitian Pairing of the Complete Polar Decomposition on the N-Regular Sector__
+# __The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion__
 
 ## Introduction
 
@@ -11,7 +11,7 @@ $$
 = r\,\exp(i\theta_{\mathrm{pha}})\,\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr) .
 $$
 
-The four factors are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*, and their exponential forms those of *The Complete Polar Decomposition on the N-Regular Sector*, §*The Decomposition*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
+The four factors, algebraic and exponential, are those of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors*: the scale $r>0$, the central phase $\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of rapidity $\theta_{\mathrm{rpd}}\ge0$ and the unit real rotor $\tilde u_{\mathrm r}$ of angle $\theta_{\mathrm{axr}}\in[0,2\pi]$. They are unique, so they can be grouped in pairs in exactly three ways. This article reads the grouping that puts the scale with the boost.
 
 **The Cartan Hermitian pairing** is the grouping that multiplies the scale into the boost and the phase into the rotor:
 
@@ -34,7 +34,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 | classical limit | the matrix polar decomposition |
 | position among the three | the only total pairing, and the only pairing whose two factors are of the two involutive kinds |
 
-The other two pairings are partial: *The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
+The other two pairings are partial: *The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
 
 The article assumes the algebra and the domain of the complete polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
 
@@ -45,7 +45,7 @@ The article takes the following results as established and does not prove them a
 | result | established in | used here for |
 |---|---|---|
 | the four factors, their ranges and their order | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
-| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition on the N-Regular Sector*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
+| existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\tilde Q_H\tilde Q_0$, its uniqueness and its domain |
 | the matrix model and the transport of ${}^{*}$ | *$M_4(\mathbb{C})$ Axis-Free Representation* and *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* | the equation $\tilde Q\tilde Q^{*}=\tilde Q_H^{2}$ |
 | the Hermitian and anti-Hermitian split | *Hermitian and Anti-Hermitian Elements*, §*The Two Halves* | the subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the two exponents |
 | the $*$-unitary group | *The Unitary Group of the Biquaternion Algebra*, §*The Structure of the $*$-Unitary Group* | $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)\cong\mathrm{U}(1)\cdot\mathrm{Sp}(1)$ |
@@ -394,7 +394,7 @@ $$
 
 with $\tilde H$ positive Hermitian of norm $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
 
-*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *The Complete Polar Decomposition on the N-Regular Sector*.
+*Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 The pairing groups the scale with the boost and the phase with the rotor. This is the opposite grouping to the Hamilton root pairing, which puts the scale and the phase in the modulus. The Cartan grouping is the one that makes both factors lie in groups: $\tilde H$ in the positive Hermitian space and $\tilde V$ in the $*$-unitary group.
 
@@ -624,9 +624,9 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues*, for the eigenvalues $\lambda_\pm=\Rho\exp(\pm i\Theta)$ and the pure unit element $\vec U=\vec Q/B$ of the Hamilton row.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm and the principal branch that fix the two exponents of the pairing.
-- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four exponentials and the existence and uniqueness of the word whose two halves the pairing regroups.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\Rho = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the exponential trichotomy and the domain.
-- [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html) and [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
+- [The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-hamilton-root-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) and [The Quaternion Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-quaternion-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the Hamilton and quaternion pairings, the two partial pairings whose moduli are constructed from the parts of the element.
 - [Hermitian and Anti-Hermitian Elements](hermitian-and-anti-hermitian-elements.html), for the involutive split $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and the two sectors.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong \mathrm{U}(2)$ and the structure of the $*$-unitary elements.
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.

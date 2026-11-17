@@ -303,15 +303,15 @@
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 
-#### The Complete Polar Decomposition on the N-Regular Sector
+#### The Complete Polar Decomposition of an N-Regular Biquaternion
 
-- [The Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-complete-polar-decomposition-on-the-n-regular-sector.html)
-- [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html)
-- [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html)
-- [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html)
-- [The Cartan Hermitian Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html)
-- [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](../articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html)
-- [Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector](../articles_maths/worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html)
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion](../articles_maths/worked-examples-of-exponential-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [The Quaternion Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html)
+- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](../articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html)
+- [Worked Examples of Exponential Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion](../articles_maths/worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-of-an-n-regular-biquaternion.html)
 - [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html)
 - [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html)
 

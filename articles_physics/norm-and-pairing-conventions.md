@@ -232,7 +232,7 @@ $$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t.
 $$
 
-The word *trace* is used for the image and for nothing else in the series: an element is read in $\mathrm{Sc}$, and *traceless* on an element is written *scalar-free*. The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
+The word *trace* is used for the matrix image and for nothing else in the series, and no element, operator, tensor or module is its carrier: an element is read in $\mathrm{Sc}$, an operator and a tensor in the matrix that represents them, a module in its pairing, and *traceless* on an element is written *scalar-free*. The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
 
 $$
 p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}},

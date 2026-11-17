@@ -258,7 +258,7 @@ $$
 \operatorname{tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
 \det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2},
 $$
-and the same values hold for $R$, since the stitch changes neither a trace nor a determinant. They are the values of the operator, not of the frame.
+and the same values hold for $R$, since the stitch changes neither a trace nor a determinant. They are the values of the matrix of the operator, not of the frame.
 
 ### The Sixteen Products in This Frame
 
@@ -478,7 +478,7 @@ L_{\mathrm{pau}}(\tilde Q_1\tilde Q_2)=L_{\mathrm{pau}}(\tilde Q_1)L_{\mathrm{pa
 R_{\mathrm{pau}}(\tilde Q_1\tilde Q_2)=R_{\mathrm{pau}}(\tilde Q_2)R_{\mathrm{pau}}(\tilde Q_1),\qquad
 L_{\mathrm{pau}}(\tilde Q_1)R_{\mathrm{pau}}(\tilde Q_2)=R_{\mathrm{pau}}(\tilde Q_2)L_{\mathrm{pau}}(\tilde Q_1),
 $$
-and the trace and determinant are the same numbers, $\operatorname{tr}L_{\mathrm{pau}}(\tilde Q)=4Q_t$ and $\det L_{\mathrm{pau}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the operator. The dagger is the star conjugate, $L_{\mathrm{pau}}(\tilde Q)^{\dagger}=L_{\mathrm{pau}}(\tilde Q^{*})$. Transposition is not the conjugation in this frame: with the exchange it gives the other family, $R_{\mathrm{pau}}(\tilde Q)=\mathsf S L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, and the conjugation reads $L_{\mathrm{pau}}(\tilde Q^{\natural})=2Q_t\mathrm I_4-L_{\mathrm{pau}}(\tilde Q)$, which is a linear expression in the element and no transpose at all. The transpose is the conjugation in the axis-free frame alone, §*The Stitch Between the Two Families*.
+and the trace and determinant are the same numbers, $\operatorname{tr}L_{\mathrm{pau}}(\tilde Q)=4Q_t$ and $\det L_{\mathrm{pau}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2$, because they are properties of the matrix of the operator. The dagger is the star conjugate, $L_{\mathrm{pau}}(\tilde Q)^{\dagger}=L_{\mathrm{pau}}(\tilde Q^{*})$. Transposition is not the conjugation in this frame: with the exchange it gives the other family, $R_{\mathrm{pau}}(\tilde Q)=\mathsf S L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf S^{-1}$, and the conjugation reads $L_{\mathrm{pau}}(\tilde Q^{\natural})=2Q_t\mathrm I_4-L_{\mathrm{pau}}(\tilde Q)$, which is a linear expression in the element and no transpose at all. The transpose is the conjugation in the axis-free frame alone, §*The Stitch Between the Two Families*.
 
 **The block form of the element.** Since $\mathsf{M}_2(\tilde Q)=\begin{pmatrix}a&b\ c&d\end{pmatrix}$ with
 $$

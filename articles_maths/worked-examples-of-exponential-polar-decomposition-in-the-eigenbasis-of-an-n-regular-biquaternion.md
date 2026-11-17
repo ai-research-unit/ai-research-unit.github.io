@@ -1,8 +1,8 @@
-# __Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector__
+# __Worked Examples of Exponential Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion__
 
 ## Introduction
 
-This article reads the sixteen numerical cases of *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector* through their spectral data. Off the wall the spectral data are an eigenbasis with two distinct eigenvalues. On the wall they are a single eigenvalue and a Jordan chain. The word, its coordinates and its checks are in that article; here the same elements are read the other way, and the two readings are compared case by case.
+This article reads the sixteen numerical cases of *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion* through their spectral data. Off the wall the spectral data are an eigenbasis with two distinct eigenvalues. On the wall they are a single eigenvalue and a Jordan chain. The word, its coordinates and its checks are in that article; here the same elements are read the other way, and the two readings are compared case by case.
 
 The numbering is the one of that article: cases $1$ to $8$ off the wall, cases $9$ to $16$ on it. Each case is given by its eigenvalues and its spectral basis, and the spectral values are compared with the polar ones.
 
@@ -176,7 +176,7 @@ The five cases have the same block, with different scalars and chains.
 | 15 | $-1$ | $\begin{pmatrix}0&2i\\0&0\end{pmatrix}$ | $v=(2i,0)$, $w=(0,1)$ | $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$ |
 | 16 | $2$ | $\begin{pmatrix}0&-4i\\0&0\end{pmatrix}$ | $v=(-4i,0)$, $w=(0,1)$ | $\begin{pmatrix}2&1\\0&2\end{pmatrix}$ |
 
-In every case the unit factor is $\varepsilon$ times the same unipotent block, with $\varepsilon=+1$ in cases $12$, $13$, $14$ and $16$, and $\varepsilon=-1$ in case $15$. The rapidity and the rotor angle are the ones of *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*; the scalar cases $9$ to $11$ are the only ones with no nilpotent part.
+In every case the unit factor is $\varepsilon$ times the same unipotent block, with $\varepsilon=+1$ in cases $12$, $13$, $14$ and $16$, and $\varepsilon=-1$ in case $15$. The rapidity and the rotor angle are the ones of *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*; the scalar cases $9$ to $11$ are the only ones with no nilpotent part.
 
 
 
@@ -305,8 +305,8 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 
 ## Further Reading
 
-- [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html), for the coordinates, the word and the checks of the sixteen cases.
-- [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general spectral reading and its collapse on the wall.
-- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs and the spectral reading.
+- [Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-biquaternion.html), for the coordinates, the word and the checks of the sixteen cases.
+- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the general spectral reading and its collapse on the wall.
+- [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the theorem, the proofs and the spectral reading.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalues and the eigenprojectors.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.

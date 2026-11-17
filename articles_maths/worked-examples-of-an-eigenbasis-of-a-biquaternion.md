@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the existence of the eigenbasis is proved in *The Spectrum*; its construction and the nilpotents are those of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Corners and the Nilpotents* and §*The Eigenbasis*; no definition or proof is repeated.
+This article computes the eigenvalue decomposition, the eigenbasis, the nilpotents and the spinors of eight biquaternions, one after another. The eight elements are those of *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*, so that the spectral data and the polar data can be read side by side. The decomposition and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors*; the existence of the eigenbasis is proved in *The Spectrum*; its construction and the nilpotents are those of *The Eigenbasis of a Spectrally Regular Biquaternion*, §*The Corners and the Nilpotents* and §*The Eigenbasis*; no definition or proof is repeated.
 
 Each case is read from the four complex coordinates $Q_t,Q_x,Q_y,Q_z$ of $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. Write
 
@@ -1543,7 +1543,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the generic sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the fixed model, the eigenbasis model, the diagonalising matrix and the $4\times4$ regular matrices.
-- *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*, for the same eight elements read through the polar word.
+- *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*, for the same eight elements read through the polar word.
 - *Worked Examples of Exponential Polar Decomposition with Eigenbasis of Biquaternions*, for the same eight cases read in the eigenbasis, with the nilpotents and the spinors.
 - [Worked Examples of Eigenbasis of a Split-Complex Number](worked-examples-of-eigenbasis-of-a-split-complex-number.html), for the two-dimensional commutative companion.
 - [Worked Examples of Eigenbasis a Reduced Biquaternion](worked-examples-of-eigenbasis-a-reduced-biquaternion.html), for the four-dimensional commutative companion.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article computes the exponential polar decomposition of eight quaternions, one after another. It is the computational companion of *Exponential Polar Decomposition of Quaternions*. The decomposition, its existence and uniqueness, the logarithm and the matrix picture are established there and in *Quaternion Special Functions*; the proofs are not repeated. The layout follows *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*: a method section, eight cases, a boundary family, and summary tables. The differences are forced by the algebra.
+This article computes the exponential polar decomposition of eight quaternions, one after another. It is the computational companion of *Exponential Polar Decomposition of Quaternions*. The decomposition, its existence and uniqueness, the logarithm and the matrix picture are established there and in *Quaternion Special Functions*; the proofs are not repeated. The layout follows *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*: a method section, eight cases, a boundary family, and summary tables. The differences are forced by the algebra.
 
 Each case is read from the four real coordinates $q_t,q_x,q_y,q_z$. The modulus, the angle and the axis are computed from them by the formulas of §*The Method*, and the word is checked against the reconstruction
 
@@ -743,7 +743,7 @@ The quaternion case is the definite compact companion of the biquaternion case: 
 - [Exponential Polar Decomposition of Quaternions](exponential-polar-decomposition-of-quaternions.html), for the decomposition, the logarithm, the principal branch, the kernel and the matrix picture.
 - [Quaternion Special Functions](quaternion-special-functions.html), for the exponential and the logarithm.
 - [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), for the modulus and the unit factor.
-- *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector*, for the noncommutative four-dimensional companion with two axes.
+- *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*, for the noncommutative four-dimensional companion with two axes.
 - [Worked Examples of Exponential Polar Decomposition of Reduced Biquaternions](worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html), for the commutative four-dimensional companion.
 - [Worked Examples of Exponential Polar Decomposition of Split-Complex Numbers](worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html), for the two-dimensional indefinite companion.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

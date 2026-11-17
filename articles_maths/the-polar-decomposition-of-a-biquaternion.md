@@ -489,7 +489,7 @@ The three statements to carry away are these. The formulas $\tilde Q_H=(\tilde Q
 - [Idempotents](idempotents.html), for the Hermitian idempotents $\tfrac12(e_t+i\vec u)$.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing that this article extends and its restriction off the cone.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the $*$-unitary factor off the cone.
-- *The Complete Polar Decomposition on the N-Regular Sector*, for the boundary limits of the four-factor word at the cone.
+- *The Complete Polar Decomposition of an N-Regular Biquaternion*, for the boundary limits of the four-factor word at the cone.
 - [The Polar Decomposition of an Operator of the Form](the-polar-decomposition-of-an-operator-of-the-form.html), for the operator polar decomposition that this article is not.
 - [The Group of Invertibles, the Cone and the Orders](../articles_physics/the-group-of-invertibles-the-cone-and-the-orders.html) and [Idempotents, Ideals and Observables](../articles_physics/idempotents-ideals-and-observables.html), for the physical reading of the cone as the massless boundary, which the rank-one case of this article supplies.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation of the corpus.

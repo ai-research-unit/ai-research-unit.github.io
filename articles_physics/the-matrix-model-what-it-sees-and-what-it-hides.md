@@ -113,7 +113,7 @@ $$
 \det\mathsf{M}_2(\tilde Q)=\Rho^{2},
 $$
 
-and the determinant of the matrix is the square of the modulus. This is the reason the model computes every norm in the series: the determinant is multiplicative, so the modulus of a product is the product of the moduli, and the whole polar machinery of *The Complete Polar Decomposition on the N-Regular Sector* runs on one determinant.
+and the determinant of the matrix is the square of the modulus. This is the reason the model computes every norm in the series: the determinant is multiplicative, so the modulus of a product is the product of the moduli, and the whole polar machinery of *The Complete Polar Decomposition of an N-Regular Biquaternion* runs on one determinant.
 
 ### The Singular Values as the Two Scales
 
