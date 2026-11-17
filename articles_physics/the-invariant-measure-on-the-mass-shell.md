@@ -123,7 +123,7 @@ $$
 \frac{d^{3}p}{2E}=\tfrac12\,p\,dE\,d\Omega ,
 $$
 
-where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE$, the second because $p^{2}=E^{2}-m^{2}c^{2}$.
+where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE/c^{2}$, the second because $\lvert\vec p\rvert^{2}=E^{2}/c^{2}-m^{2}c^{2}$.
 
 So the measure factorises into a *radial* part and an *angular* part, and the angular part is the round measure on the sky of *Aberration and the Sky: The Boost as a Möbius Flow*. That factorisation is why the sky's measure is the one an observer integrates over in the cosmic microwave background.
 

@@ -340,7 +340,7 @@
 <!-- the boost acting on the sphere of null directions; the two fixed points and the circles carried to circles; the aberration formula as that flow; the three kinds read on the sky; why the sky is the spinor projective line and the boost a fractional linear map on it; the cross-ratio check. -->
 
 <a href="articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>
-<!-- $d^{3}p/(2E)$ as the measure the group leaves alone; the proof from the Jacobian of a boost; the four-dimensional form $\delta(p^{2}-m^{2})\theta(p^{0})d^{4}p$; the phase space of one particle and its invariance; where the corpus assumes the measure and never states it. -->
+<!-- $d^{3}p/(2E)$ as the measure the group leaves alone; the proof from the Jacobian of a boost; the four-dimensional form $\delta(N+m^{2}c^{2})\theta(p^{0})d^{4}p$; the phase space of one particle and its invariance; where the corpus assumes the measure and never states it. -->
 
 ### The Rod, the Clock and the Signal
 

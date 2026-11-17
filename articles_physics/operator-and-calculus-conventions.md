@@ -626,15 +626,15 @@ $$
 
 that is $(\Box-k_m^{2})\tilde{Ξ}_{R}=0$ and $(\Box-k_m^{2})\tilde{Ξ}_{L}=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
 
-**The symbol.** On a plane wave the gradient acts as left multiplication by the momentum element, $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-(E/c)e_t+i\vec p$ with $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^{2}/c^{2}-\lvert\vec p\rvert^{2}=N$, the four-momentum being $p_0=E/c$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
+**The symbol.** On a plane wave the gradient acts as left multiplication by the wave element, $\tilde\nabla_\Phi\mapsto i\tilde K_{\Phi}$ with $\hbar\tilde K_{\Phi}=\tilde P_{\Phi}=i(E/c)e_t+\vec p$, so that $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^{2}/c^{2}-\lvert\vec p\rvert^{2}=-N$, the four-momentum being $p_0=E/c$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
 
 $$
-i\hbar\tilde K_{\Phi}\,w_R=k_m\,w_L,
+i\tilde K_{\Phi}\,w_R=k_m\,w_L,
 \qquad
--i\hbar\tilde K_{\Phi}^{\natural}\,w_L=k_m\,w_R,
+i\tilde K_{\Phi}^{\natural}\,w_L=k_m\,w_R,
 $$
 
-and the two lines share one condition. Composing them returns $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}w=k_m^{2}w$, so the symbol is singular exactly on $N=-m^{2}c^{2}$ and nowhere else.
+and the two lines share one condition. Composing them returns $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}w=k_m^{2}w$, that is $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$, so the symbol is singular exactly on $N=-m^{2}c^{2}$ and nowhere else.
 
 **The inverse is one scalar and two kernels.** With $G$ the Green's function of the d'Alembertian, $(\Box-k_m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels
 
