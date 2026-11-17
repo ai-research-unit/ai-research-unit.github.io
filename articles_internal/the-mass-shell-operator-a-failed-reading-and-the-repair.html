@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mass-Shell Operator: A Failed Reading and the Repair — Biquaternion Universe</title>
+  <meta name="description" content="This is a record of a failure. An assistant was asked whether the mass-shell operator">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-mass-shell-operator-a-failed-reading-and-the-repair"><strong>The Mass-Shell Operator: A Failed Reading and the Repair</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This is a record of a failure.</strong> An assistant was asked whether the mass-shell operator</p>
+<p>$$
+\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}c^{2}=N+m^{2}c^{2}
+$$</p>
+<p>is zero everywhere. The answer is no, and the record of how the answer was reached matters more than the answer, because the assistant gave six wrong replies before reaching it, and one of them was the objection itself. The purpose of this note is to fix the three collisions that produced those replies, so that the next reader does not repeat them.</p>
+<p><strong>The answer, stated once and defended below.</strong> $\mathcal{M}$ is a function of the four-momentum. It vanishes on a three-dimensional surface in four-dimensional momentum space, and it is nonzero everywhere else. That surface is the mass shell. The function is not identically zero, and the object that is identically zero is a different one, obtained by reading $m$ out of the momentum itself.</p>
+<p><strong>What the note is not.</strong> It is not a correction of the corpus. The articles are right. One of them states the mass definition in a way that invites the collapse, and that is a notation defect worth naming, but no equation in the corpus is wrong because of it.</p>
+<h2 id="the-question-and-the-six-wrong-replies">The Question and the Six Wrong Replies</h2>
+<p><strong>The question.</strong> The corpus writes, in <em>The LSZ Reduction Formula in Biquaternionic Form</em>, that $\mathcal{M}$ is "the object whose vanishing is the shell", and that the residue is $Z=\lim_{N\to-m^{2}c^{2}}(N+m^{2}c^{2})D_{F}(N)$. The reader asked whether $\mathcal{M}$ is therefore always zero.</p>
+<p><strong>The question is sharp and it has one answer.</strong> The assistant did not give it. The replies were, in order:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reply</th>
+<th>what was claimed</th>
+<th>what was wrong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the residue formula fails for a field with spin</td>
+<td>it does not fail; the LSZ article already says the residue is the rank-two action $\mathcal{A}_{p}+mc$, and a residue being an action is not a residue failing</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the extraction needs an $i\epsilon$ ordering, and fails when the step is comparable to $\epsilon$</td>
+<td>the article's model propagator is written without $\epsilon$; the hazard was invented and the paper's own numbers at $\delta=\pm10^{-6}$ are correct</td>
+</tr>
+<tr>
+<td>3</td>
+<td>nothing needs patching</td>
+<td>line 5 of the article carries a dimensional error that contradicts line 27 of the same article</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$m$ should be renamed $m_{\mathrm{rest}}$ and $k_m$ renamed $k_{\mathrm{rest}}$</td>
+<td>the scheme is designed: $k_{m_e}$ and $k_{m_p}$ extend $k_m$ by naming the input, and renaming breaks the article that explains it</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the operator should carry the pair invariant mass $M$, as $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-M^{2}c^{2}$</td>
+<td>true for a sum of momenta, false for one particle, whose shell is written with $m$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>"$\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$ on the shell, for the field's own momentum"</td>
+<td>this sentence <em>is</em> the collapse: it applies the shell condition to whatever momentum is in hand</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The shape of the failure.</strong> Replies 1 to 4 were about the articles and were harmless. Replies 5 and 6 were about the algebra, and each one replaced a distinction with a phrase. The reader's objection was right from the fourth message onward, and the assistant argued against it for four more.</p>
+<h2 id="the-three-collisions">The Three Collisions</h2>
+<p><strong>Collision one: one symbol for a free variable and for a point of a surface.</strong> The corpus writes $\tilde P_{\Phi}$ for a four-momentum with $E$ free, and also for a four-momentum with $E=E_{\vec p}=\sqrt{\vec p^{\,2}c^{2}+m^{2}c^{4}}$. These are different objects. The first ranges over $\mathbb{R}^{4}$ and is the argument of $\mathcal{M}$. The second is a point of a surface and is what the external legs of a reduction are put on. The same glyph carries both.</p>
+<p><strong>The consequence is the collapse.</strong> If $\tilde P_{\Phi}$ already means a point of the shell, then $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-m^{2}c^{2}$ holds for it, and $\mathcal{M}$ evaluated there is zero. A reader who takes the second reading everywhere concludes that the symbol is zero. The conclusion is correct about the object they built and wrong about the corpus's object.</p>
+<p><strong>Collision two: one letter for a parameter and for a label.</strong> The mass appears in two roles. As a parameter it is fixed, it enters the field equation as $(\Box-k_m^{2})\tilde{Ξ}=0$, and it is held constant while $\tilde P_{\Phi}$ varies. As a label it names a level set, $N(\tilde P_{\Phi})=-m^{2}c^{2}$, and it is defined only where that set is. The first role is a number in the equation. The second is a name for a surface.</p>
+<p><strong>The corpus states the second role and does not mark its domain.</strong> <em>Mass: The Definition, the Representatives and the Limits</em> boxes</p>
+<p>$$
+m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural},
+$$</p>
+<p>taken "on the material representative". The words "on the material representative" fix the sector, and they do not fix the shell. Read as an identity in $\tilde P_{\Phi}$, the box defines $m$ at every momentum, and then $\mathcal{M}$ is zero by substitution. Read as a label of a level set, it does neither, and $\mathcal{M}$ is a function with a zero set.</p>
+<p><strong>This is the notation defect, and it is the whole cause.</strong> The box needs a domain marker. Without one it is a formula for $m$ as a function of $\tilde P_{\Phi}$, which is exactly the operation that destroys the operator.</p>
+<p><strong>Collision three: a letter used for four objects.</strong> $\mathcal{M}$ is not exclusive to the mass shell. It is the wave operator in a medium in <em>Electromagnetism in Media — The Local Complex Structure at Work</em>, it is the inertia tensor and its components $\mathcal{M}_{zz}$ in <em>The Classical Origin of g = 2 in Biquaternionic Form</em>, and $\mathcal{M}_{\mathrm{mod}}$ is the Tomita modular operator, which is the only one of the four registered in a conventions article. The letter appears in thirty-four physics articles; the mass-shell form, written $\mathcal{M}(\tilde P_{\Phi})$, in nine. None of the nine is registered.</p>
+<h2 id="the-repair">The Repair</h2>
+<p><strong>The operator is a function, and the function has a domain.</strong> Write</p>
+<p>$$
+\mathcal{M}_{m}:\mathbb{B}_{\Phi}\longrightarrow\mathbb{C},\qquad
+\mathcal{M}_{m}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}c^{2},
+$$</p>
+<p>with $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ and $E$, $\vec p$ independent, and with $m$ a fixed real parameter of the field. Nothing in the display restricts $E$. The subscript $m$ records that the operator is built from that parameter.</p>
+<p><strong>Its zero set, solved.</strong> The product is central, so the equation is scalar:</p>
+<p>$$
+\mathcal{M}_{m}=0\iff-\frac{E^{2}}{c^{2}}+\vec p^{\,2}+m^{2}c^{2}=0\iff E=\pm\sqrt{\vec p^{\,2}c^{2}+m^{2}c^{4}}.
+$$</p>
+<p><strong>Two roots for each $\vec p$, and no others.</strong> That is a three-dimensional surface in $\mathbb{R}^{4}$: codimension one, separating the timelike side from the spacelike side. <em>Mass: The Definition</em> already argues that a mass label needs exactly a codimension-one set, and that on the whole algebra the level sets have codimension two and separate nothing. The operator inherits that argument: it is a label of a surface only because the surface separates.</p>
+<p><strong>The collapse, written as a comparison.</strong> Set</p>
+<p>$$
+m_{\mathrm{loc}}^{2}c^{2}:=-N(\tilde P_{\Phi})
+$$</p>
+<p>and substitute into the operator:</p>
+<p>$$
+\mathcal{M}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=0.
+$$</p>
+<p><strong>This is identically zero, and it is a different object.</strong> The substitution converts the fixed parameter into a function of the argument. $m_{\mathrm{loc}}$ is not a mass: it is real only where $N<0$, it is imaginary where $N>0$, and it is undefined where $N=0$. A quantity that turns imaginary on half of momentum space is a function of the momentum and not the field's mass.</p>
+<p><strong>So the object that is always zero is $\mathcal{M}$ with $m$ read off $\tilde P_{\Phi}$.</strong> The object that is not always zero is $\mathcal{M}$ with $m$ fixed. The two differ by the reading of one letter, and that is the whole of the failure.</p>
+<h2 id="the-three-checks">The Three Checks</h2>
+<p><strong>Every claim of this note was recomputed on one hundred elements, at $m=0.7$, $c=1$, with $\vec p$ drawn uniformly from $[-2,2]^{3}$ and $E$ from $[0,4]$.</strong></p>
+<p><strong>On the shell the operator is zero.</strong> Each momentum was placed on the shell by setting $E=\sqrt{\vec p^{\,2}c^{2}+m^{2}c^{4}}$. The largest $\lvert\mathcal{M}\rvert$ over the hundred was $2.5\times10^{-15}$, which is machine zero.</p>
+<p><strong>Off the shell the operator is not zero.</strong> Over the hundred random $(\vec p,E)$ with $E$ free, none gave $\mathcal{M}=0$, and the smallest $\lvert\mathcal{M}\rvert$ was $0.0533$. The zero set is a surface and the random points do not land on it.</p>
+<p><strong>The collapse is exact, and it is a different computation.</strong> For each of the hundred points, $m$ was defined by $m^{2}c^{2}:=-N(\tilde P_{\Phi})$ at that same point, and then substituted. The largest $\lvert\mathcal{M}\rvert$ was $0.0$ exactly, on all one hundred. The collapse is not an approximation and not a limit; it is an identity, and that is why it looks like a proof that the operator is empty.</p>
+<p><strong>One worked row, for the reader who wants a number.</strong> With $m=0.7$, $c=1$, $\vec p=(0.3,-0.9,1.1)$, so $\vec p^{\,2}=2.11$ and $m^{2}c^{2}=0.49$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$E$</th>
+<th>$N$</th>
+<th>$\mathcal{M}=N+m^{2}c^{2}$</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1.6124515497$</td>
+<td>$-0.4900$</td>
+<td>$0$</td>
+<td>on the shell; the momentum's own invariant mass is $m$</td>
+</tr>
+<tr>
+<td>$3.0000$</td>
+<td>$-6.8900$</td>
+<td>$-6.4000$</td>
+<td>timelike, off the shell</td>
+</tr>
+<tr>
+<td>$2.0000$</td>
+<td>$-1.8900$</td>
+<td>$-1.4000$</td>
+<td>timelike, off the shell</td>
+</tr>
+<tr>
+<td>$0.0000$</td>
+<td>$+2.1100$</td>
+<td>$+2.6000$</td>
+<td>spacelike</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The signs matter.</strong> The operator is positive on the spacelike side and negative on the timelike side away from the shell. It changes sign across the shell, which is what a simple pole in $1/\mathcal{M}$ requires.</p>
+<h2 id="why-the-object-is-needed-at-all">Why the Object Is Needed at All</h2>
+<p><strong>The objection is that an operator which vanishes on the shell is a restatement of the shell.</strong> The objection is right about the equation and wrong about the object. Four uses need the symbol as a factor, and none of them is the equation $\mathcal{M}=0$.</p>
+<p><strong>Amputation.</strong> A correlator's external leg is amputated by multiplying by the inverse propagator. That inverse is $\mathcal{M}$. The multiplication is meaningful off the shell, where $\mathcal{M}\neq0$, and it is that multiplication which removes the leg.</p>
+<p><strong>The residue.</strong> Wave-function renormalization is $Z=\lim_{\mathcal{M}\to0}\mathcal{M}D_{F}$. The limit needs a nonzero factor approaching zero, not a factor that is zero.</p>
+<p><strong>The prescription.</strong> The Feynman shift is a deformation of $\mathcal{M}$ itself, $\mathcal{M}-i\epsilon$. A named scalar is what the deformation deforms.</p>
+<p><strong>The sign of the pole.</strong> The propagator is $1/(\mathcal{M}-i\epsilon)$ and the wave operator's symbol is $-\mathcal{M}$. The relative sign per leg is a statement about this scalar and nothing else.</p>
+<p><strong>So the equation $\mathcal{M}=0$ is bookkeeping and the factor $\mathcal{M}$ is the instrument.</strong> A symbol that vanished identically could not perform any of the four.</p>
+<h2 id="what-was-and-was-not-changed">What Was and Was Not Changed</h2>
+<p><strong>Nothing in the corpus was edited for this note.</strong> The recommendations below are stated and not applied, because the decision is the author's.</p>
+<p><strong>The recommendation for the LSZ article.</strong> One paragraph after the definition of $\mathcal{M}$, saying that $m$ is a fixed parameter and that $\tilde P_{\Phi}$ ranges over all momenta. One repair to line 5, where $E=p_{0}$ and $E_{\vec p}=\sqrt{\vec p^{\,2}+m^{2}}$ contradict line 27 of the same article and carry the wrong dimensions.</p>
+<p><strong>The recommendation for the mass definition article.</strong> A domain marker on the box: the box is taken on a momentum that is already on the shell, and it labels that shell. Without the marker the box reads as a definition of $m$ at every momentum.</p>
+<p><strong>The recommendation for the letter $\mathcal{M}$.</strong> Register the mass-shell operator under the naming rule, which wants a calligraphic letter and a spelling subscript. Rename the medium operator and the inertia tensor, which are single-article objects. Do not rename $m$ or $k_m$: the scheme $k_{m_e}$, $k_{m_p}$ is documented and designed.</p>
+<h2 id="the-lesson">The Lesson</h2>
+<p><strong>A phrase is not a definition.</strong> "The object whose vanishing is the shell" is a figure of speech, and it can be read backwards. The literal statement is that the zero set of the operator is the shell. The figure invites the reading that the operator <em>is</em> nothing, and that reading is not defended anywhere.</p>
+<p><strong>One letter, two roles, is the defect.</strong> The mass is a parameter of the equation and a label of a level set. The letter is the same in both roles, and the corpus marks which role is meant only by context. Context is what a reader supplies last.</p>
+<p><strong>Three collisions, one symptom.</strong> A free variable that is also a surface point, a parameter that is also a label, and a letter that is also three other objects. The symptom in every case is the same: an equation that looks empty. It is not empty. It is an equation with a domain.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The operator is not zero everywhere.</strong> $\mathcal{M}_{m}(\tilde P_{\Phi})=N+m^{2}c^{2}$ vanishes exactly on $N=-m^{2}c^{2}$, a surface of codimension one, and is nonzero off it. Verified on one hundred momentum pairs: machine zero on the shell, no zero off it.</p>
+<p><strong>What is zero everywhere is a different object.</strong> With $m$ defined by $m^{2}c^{2}:=-N(\tilde P_{\Phi})$ at the momentum in hand, $\mathcal{M}$ is identically zero. Verified exact on one hundred points. This is the collapse, and it is the reading that produced six wrong replies.</p>
+<p><strong>The collapse is invited by two corpus habits.</strong> The symbol $\tilde P_{\Phi}$ serves a free momentum and a shell point. The mass definition $m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$ is boxed without a domain marker.</p>
+<p><strong>Neither habit is an error and both are correctable by one sentence each.</strong> A fixed parameter stated as fixed, and a domain stated with the box.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $E$ free</td>
+<td>the argument of the operator; a point of momentum space, not of the shell</td>
+</tr>
+<tr>
+<td>$E_{\vec p}=\sqrt{\vec p^{\,2}c^{2}+m^{2}c^{4}}$</td>
+<td>the on-shell value of the energy; the two roots $\pm E_{\vec p}$</td>
+</tr>
+<tr>
+<td>$N=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-E^{2}/c^{2}+\vec p^{\,2}$</td>
+<td>the quaternionic norm of the momentum, central and real on the material sector</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{m}(\tilde P_{\Phi})=N+m^{2}c^{2}$</td>
+<td>the mass-shell operator; a function with a codimension-one zero set</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>the field's mass; a fixed real parameter, the position of the pole</td>
+</tr>
+<tr>
+<td>$m_{\mathrm{loc}}^{2}c^{2}:=-N(\tilde P_{\Phi})$</td>
+<td>the mass read off the momentum itself; not the field's mass, and undefined or imaginary off the timelike region</td>
+</tr>
+<tr>
+<td>$Z=\lim_{\mathcal{M}\to0}\mathcal{M}D_{F}$</td>
+<td>the residue; the wave-function renormalization</td>
+</tr>
+<tr>
+<td>$\mathcal{A}_{p}+mc=\sum_r\tilde W_{\Psi}^{(r)}\bar{\tilde W}_{\Psi}^{(r)}$</td>
+<td>the residue for a field with spin; an action, not a scalar</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>, for the mass-shell operator, the amputation and the residue, and for the spin case whose residue is an action.</li>
+<li><a href="mass-definition-and-interpretations.html">Mass: The Definition, the Representatives and the Limits</a>, for the boxed mass definition, the six readings of mass, and the argument that a mass label needs a codimension-one level set.</li>
+<li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the norm, its level sets and the reading of mass as the modulus.</li>
+<li><a href="../articles_physics/the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a>, for the propagator whose inverse is the operator, and for the $i\epsilon$ as a deformation of it.</li>
+<li><a href="../articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>, for $\delta(N+m^{2}c^{2})$, the same zero set used as a distribution.</li>
+<li><a href="../articles_physics/the-three-wavenumbers-of-a-particle.html">The Three Wave Numbers of a Particle</a>, for the scheme $k_m$, $k_{m_e}$, $k_{m_p}$ and why the letter of the mass carries the species.</li>
+<li><a href="../articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.html">The Relativistic Two-Body Problem in Biquaternionic Form</a>, for the invariant mass of a sum of momenta, the $M$ that is not the single-particle $m$.</li>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the unit bookkeeping of $N+m^{2}c^{2}$ and the rows of the table.</li>
+<li><a href="../articles_physics/operator-and-calculus-conventions.html">Operator and Calculus Conventions</a>, for the naming rule that gives a named object a calligraphic letter and a spelling subscript.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
