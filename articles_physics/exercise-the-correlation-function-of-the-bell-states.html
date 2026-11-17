@@ -261,7 +261,7 @@ $$</p>
 <p>$$
 \tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y),
 $$</p>
-<p>where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product trace formula:</p>
+<p>where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product pairing formula:</p>
 <p>$$
 E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
 $$</p>
@@ -423,11 +423,11 @@ $$</p>
 </tr>
 <tr>
 <td>Rule used</td>
-<td>Trace formula</td>
-<td>Trace formula + rotor conjugation</td>
-<td>Product of trace formulas</td>
-<td>Tensor-product trace formula</td>
-<td>Partial trace + trace formula</td>
+<td>Pairing formula</td>
+<td>Pairing formula + rotor conjugation</td>
+<td>Product of pairing formulas</td>
+<td>Tensor-product pairing formula</td>
+<td>Partial trace + pairing formula</td>
 <td>Tensor-product trace reading of the Hermitian form</td>
 </tr>
 <tr>
@@ -444,8 +444,8 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a sixth exercise in quantum physics — the spin correlation function of the four Bell states — in two parallel presentations.</p>
 <p>In the <strong>standard formulation</strong>, the solution proceeds through the four Bell projectors, their expansions in the Pauli-string basis, and the trace-orthogonality of the Pauli strings, giving the four diagonal correlation matrices $T = \mathrm{diag}(\pm 1, \pm 1, \pm 1)$ and the correlation functions $E = \vec u_x^T T\vec u_y$.</p>
-<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the four Bell idempotents $\tilde\Pi_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product Hermitian form, read as the trace pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
-<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product Hermitian form between the state idempotent and the correlation observable, read as the trace pairing; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the four Bell idempotents $\tilde\Pi_\epsilon$ in $\mathbb{B}\otimes\mathbb{B}$, the correlation observable $(i\vec u_x)\otimes(i\vec u_y)$, and the tensor-product Hermitian form, read as the Hermitian pairing, giving the general formula $E = -\sum_j \epsilon_j a_j b_j$ for the sign pattern $\epsilon$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the Bell basis: the four Bell states are the four idempotents with the sign pattern $\epsilon_1\epsilon_2\epsilon_3 = +1$; the correlation function is the tensor-product Hermitian form between the state idempotent and the correlation observable, read as the Hermitian pairing; and the singlet is the unique Bell state with the rotationally invariant correlation $E = -\vec u_x\cdot\vec u_y$.</p>
 <p>The correlation function is the object measured in Bell-inequality experiments, and the four correlation matrices exhibited here are the full content of the two-qubit spin correlations in the Bell basis.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
