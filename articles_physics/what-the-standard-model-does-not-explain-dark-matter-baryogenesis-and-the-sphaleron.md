@@ -194,9 +194,9 @@ computed from $\lambda=0.22650$, $A=0.826$, $\bar\rho=0.1591$, $\bar\eta=0.3523$
 **The identity, which is exact and non-perturbative.**
 
 $$
-\partial_\mu j^\mu_B=\partial_\mu j^\mu_L=\frac{N_g g^2}{32\pi^2}F^a_{\mu\nu}\tilde F^{a\,\mu\nu} ,
+\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=\sum_\mu\varepsilon_\mu\partial_\mu j_{L,\mu}=\frac{N_g g^2}{32\pi^2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F^a_{\mu\nu}\tilde F^a_{\mu\nu} ,
 \qquad
-\partial_\mu\left(j^\mu_B-j^\mu_L\right)=0 .
+\sum_\mu\varepsilon_\mu\partial_\mu\left(j_{B,\mu}-j_{L,\mu}\right)=0 .
 $$
 
 **The three readings of it.**
@@ -331,7 +331,7 @@ and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in th
 
 **Supplied.**
 
-- **The anomaly identity.** The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\partial_\mu j^\mu_B\propto F\tilde F$.
+- **The anomaly identity.** The reason $B$ and $L$ are not conserved — [the anomalies](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) and [Fujikawa](the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.html) articles derive the non-invariance of the measure, which is the whole content of $\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}\propto F\tilde F$.
 - **The quantisation.** [The $\theta$-vacuum article](the-theta-vacuum-in-biquaternionic-form.html) supplies the integer winding number from the biquaternion index, which is what makes $\delta B=3$ discrete.
 - **The instanton gas.** [The semiclassical article](the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html) supplies the Euclidean sum over sectors, which gives the $\theta$ dependence of the vacuum energy.
 - **The Majorana condition**, which is the only $B-L$ violation available here, and therefore the only route to leptogenesis.
@@ -354,7 +354,7 @@ and the observed $\eta=6.1\times10^{-10}$ requires $L\sim1.7\times10^{-9}$ in th
 | $\eta=6.1\times10^{-10}$ | **Imported** |
 | $J=3.13\times10^{-5}$ | **Computed** here from $\lambda$, $A$, $\bar\rho$, $\bar\eta$, $\delta$ |
 | $\eta\sim10^{-20}$ from $J$, eleven orders short | **Imported** estimate; the gap computed here |
-| $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ | **Imported**; derived in the corpus's anomaly articles |
+| $\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=N_g g^2F\tilde F/32\pi^2$ | **Imported**; derived in the corpus's anomaly articles |
 | $\delta B=\delta L=3$, $\delta(B-L)=0$ | **Imported**; the integer from the $\theta$-vacuum article |
 | $E_{\mathrm{sph}}=9.0$ TeV, $B=1.90$ | **Imported** energy; $B$ recomputed here |
 | $\exp(-E_{\mathrm{sph}}/T)=10^{-39}$ at $100$ GeV | **Computed** here |
@@ -387,7 +387,7 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 | $\eta$ | Baryon-to-photon ratio, $6.1\times10^{-10}$ |
 | $N_\nu$ | Number of light neutrino species, $2.9963\pm0.0074$ |
 | $J$ | Jarlskog invariant, $3.13\times10^{-5}$ |
-| $j^\mu_B$, $j^\mu_L$ | Baryon and lepton number currents |
+| $j_{B,\mu}$, $j_{L,\mu}$ | Baryon and lepton number currents |
 | $F\tilde F$ | Topological charge density |
 | $E_{\mathrm{sph}}$ | Sphaleron energy, $9.0$ TeV |
 | $B(\lambda/g^2)$ | Sphaleron energy function, $1.90$ |

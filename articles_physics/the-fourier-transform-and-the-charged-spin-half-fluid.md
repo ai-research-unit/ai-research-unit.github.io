@@ -62,7 +62,7 @@ a translation of four numbers. **So the coupling's whole effect on a mode is a s
 **The companion's loop invariant is a Lorentz transformation times a phase, and the article asks which factor a mode supplies.**
 
 $$
-\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_\mu+\frac{iϙ}{\hbar}A_\mu\Bigr)\mathrm{d}x^\mu
+\mathcal H=\mathrm{P}\exp\oint\Bigl(\Gamma_\mu+\frac{iϙ}{\hbar}A_\mu\Bigr)\mathrm{d}x_\mu
 =\underbrace{\mathcal H_{SL(2,\mathbb{C})}}_{\text{the frame's}}\cdot
 \underbrace{\exp\Bigl(\frac{iϙ\Phi_B}{\hbar}\Bigr)}_{\text{the phase's}} .
 $$
@@ -92,7 +92,7 @@ $$
 \quad\text{with}\quad
 \tilde U_{\Psi,\mathrm b}\ \text{constant}
 \qquad\Longrightarrow\qquad
-a^\mu=u^\nu\partial_\nu u^\mu=0 .
+a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu=0 .
 $$
 
 **Therefore the Lorentz force vanishes at a mode identically, and the force is an inter-mode object.** The companion's momentum balance $\sum_\nu\partial_\nu T_{\mu\nu}=ϙ\sum_\nu F_{\mu\nu}J_\nu+$ the free spin term is an equation between quantities that a mode holds constant, so at a mode it reads $0=0$. **What it constrains is the off-diagonal part of the field**, and the article's claim is that the phrase "the force takes the charge and the spin does not" is, in the momentum space, the statement that the label is shifted and the rotor is not.

@@ -208,7 +208,7 @@ The identity $F_r = 1/(4\,\mathrm{Sc}\,\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural
 The relative entropy of two states of the sector is
 
 $$
-D\!\left(\tilde{Ϛ}_{\Psi,1}\,\|\,\tilde{Ϛ}_{\Psi,2}\right) = \mathrm{Tr}\!\left(\tilde{Ϛ}_{\Psi,1}\left(\log\tilde{Ϛ}_{\Psi,1} - \log\tilde{Ϛ}_{\Psi,2}\right)\right)
+D\!\left(\tilde{Ϛ}_{\Psi,1}\,\|\,\tilde{Ϛ}_{\Psi,2}\right) = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,1}\left(\log\tilde{Ϛ}_{\Psi,1} - \log\tilde{Ϛ}_{\Psi,2}\right)\right)
 = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,1}\left(\log\tilde{Ϛ}_{\Psi,1} - \log\tilde{Ϛ}_{\Psi,2}\right)\right),
 $$
 

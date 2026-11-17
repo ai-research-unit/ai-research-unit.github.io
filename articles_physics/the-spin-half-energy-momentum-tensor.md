@@ -29,7 +29,7 @@
 
 **The spatial block is recovered and not stored.** The pressure is the trace of the spatial block and it enters through the equation of state; the shear enters through the transport coefficients of a dissipative theory. Neither is a slot. That is the arrangement [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) states for the scalar case and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states as a limitation of the category.
 
-**The trace part of that block is not free, and it is the mass term.** The section *The Trace and the Pressure* computes it: $T^{\mu}{}_{\mu}=mc^{2}\Omega$, with $\Omega$ the scalar bilinear. So the equation of state has exactly one line, $p=\tfrac13(\epsilon-mc^{2}\Omega)$, and it fixes the pressure once the energy density is known; the deviatoric part stays free.
+**The trace part of that block is not free, and it is the mass term.** The section *The Trace and the Pressure* computes it: $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega$, with $\Omega$ the scalar bilinear. So the equation of state has exactly one line, $p=\tfrac13(\epsilon-mc^{2}\Omega)$, and it fixes the pressure once the energy density is known; the deviatoric part stays free.
 
 ### Why the Count Is Not a Defeat
 
@@ -69,13 +69,13 @@ with $S_{\lambda\mu\nu}$ antisymmetric in its last two indices and every index l
 
 ### The Trace Is the Mass Density
 
-**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With $(i\gamma^\mu\partial_\mu-k_m)\tilde\Xi=0$ the two terms inside the bracket of $\tfrac i2\bigl[\bar{\tilde\Xi}\gamma^\mu\partial_\mu\tilde\Xi-(\partial_\mu\bar{\tilde\Xi})\gamma^\mu\tilde\Xi\bigr]$ each gives $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\hbar c\,k_m=mc^{2}$,
+**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With the Dirac equation written in the weight form, $\bigl(-i\sum_\mu\varepsilon_\mu\gamma_\mu\partial_\mu-k_m\bigr)\tilde\Xi=0$, the two terms inside the bracket of $-\tfrac i2\bigl[\sum_\mu\varepsilon_\mu\bar{\tilde\Xi}\gamma_\mu\partial_\mu\tilde\Xi-\sum_\mu\varepsilon_\mu(\partial_\mu\bar{\tilde\Xi})\gamma_\mu\tilde\Xi\bigr]$ are $+ik_m\Omega$ and $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\hbar c\,k_m=mc^{2}$,
 
 $$
-T^{\mu}{}_{\mu}=mc^{2}\Omega .
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega .
 $$
 
-**The pressure follows from the energy density and the mass density together.** In the frame the flow defines, and in the interval inertia $(+,-,-,-)$ of the corpus, $T^{0}{}_{0}=\epsilon$ and $\sum_jT^{j}{}_{j}=3p$, so the trace is $\epsilon-3p$ and
+**The pressure follows from the energy density and the mass density together.** In the frame the flow defines, and in the interval inertia $(+,-,-,-)$ of the corpus, $T_{00}=\epsilon$ and $\sum_jT_{jj}=3p$, so the trace is $\epsilon-3p$ and
 
 $$
 p=\tfrac13\bigl(\epsilon-mc^{2}\Omega\bigr).
@@ -85,23 +85,23 @@ $$
 
 **Three consequences follow at once.** At $m=0$ the scalar bilinear vanishes identically and the trace is zero, so $\epsilon=3p$: the field is conformal at zero mass, and at $m\neq0$ the trace vanishes only where the interference cancels the scalar bilinear. The sign of the trace is the particle content, because $\Omega$ changes sign under charge conjugation while $\rho$ does not. And the magnitude is bounded by $mc^{2}\rho$, since $\lvert\Omega\rvert=\rho\lvert\cos\theta\rvert\le\rho$.
 
-*Check.* On the symmetrised canonical tensor, seven fields at three events each — three plane waves, one per spin and one at rest, two waves of one momentum with opposite spins, two positive-energy modes, a particle–antiparticle pair, and two negative-energy modes, twenty-one events in all — with $m=1$ and each spinor normalised to $\bar u\,u=2m$, the largest $\lvert T^{\mu}{}_{\mu}-\Omega\rvert$ is $2.7\times10^{-15}$ and the largest $\lvert\epsilon-3p-T^{\mu}{}_{\mu}\rvert$ is $4.7\times10^{-15}$. The two negative-energy modes have $\Omega<0$ and a trace of the same sign and the same value, so the sign statement is checked and not only asserted.
+*Check.* On the symmetrised canonical tensor, seven fields at three events each — three plane waves, one per spin and one at rest, two waves of one momentum with opposite spins, two positive-energy modes, a particle–antiparticle pair, and two negative-energy modes, twenty-one events in all — with $m=1$ and each spinor normalised to $\bar u\,u=2m$, the largest $\lvert\sum_\mu\varepsilon_\mu T_{\mu\mu}-\Omega\rvert$ is $2.7\times10^{-15}$ and the largest $\lvert\epsilon-3p-\sum_\mu\varepsilon_\mu T_{\mu\mu}\rvert$ is $4.7\times10^{-15}$. The two negative-energy modes have $\Omega<0$ and a trace of the same sign and the same value, so the sign statement is checked and not only asserted.
 
 ### One Mode Is a Dust
 
-**The symmetric part of a single plane wave is a pressureless dust.** For one mode the tensor is $\tfrac12(j^{\mu}P^{\nu}+j^{\nu}P^{\mu})$ with $j$ the current and $P$ the momentum. For $m\neq0$ the current lies along the momentum, $j^{\mu}=(\Omega/m)P^{\mu}$, so
+**The symmetric part of a single plane wave is a pressureless dust.** For one mode the tensor is $\tfrac12(j_\mu P_\nu+j_\nu P_\mu)$ with $j$ the current and $P$ the momentum. For $m\neq0$ the current lies along the momentum, $j_\mu=(\Omega/m)P_\mu$, so
 
 $$
-T^{\mu\nu}=mc^{2}\Omega\,u^{\mu}u^{\nu},\qquad u^{\mu}=\frac{P^{\mu}}{mc},
+T_{\mu\nu}=mc^{2}\Omega\,u_\mu u_\nu,\qquad u_\mu=\frac{P_\mu}{mc},
 $$
 
-with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T^{j}{}_{k}$ vanishes.
+with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T_{jk}$ vanishes.
 
 *Check.* Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at $m=1$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.
 
-**A massless mode is a null dust.** At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k^{\mu}k^{\nu}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
+**A massless mode is a null dust.** At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k_\mu k_\nu$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
 
-*Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $P^{\mu}P_{\mu}=2\times10^{-16}$, $T^{j}{}_{j}/\epsilon=1.000000$, the three eigenvalues of $T^{j}{}_{k}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
+*Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $\sum_\mu\varepsilon_\mu P_\mu P_\mu=2\times10^{-16}$, $T_{jj}/\epsilon=1.000000$, the three eigenvalues of $T_{jk}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
 
 **What the two results say together is that the pressure of a massive field is interference.** A massive single mode carries none, and a massless one carries a third of its energy density by tracelessness. So on the massive side every pressure is a property of the superposition and not of the particles, and none of it comes from the spin. That is the precise sense of the count's remark that the pressure enters through the equation of state: the equation is the trace identity, the identity is the mass term, and the mass term is the scalar bilinear.
 
@@ -210,7 +210,7 @@ The spin tensor's twenty-four components are cut to twelve by the Frenkel condit
 
 The pair of laws is the rotor's equation read twice: the energy–momentum law constrains the symmetric part's divergence, and the spin law equates the spin current's divergence to a torque built from the rotor connection and the spin. The torque vanishes exactly when the connection turns about the spin's own axis, which is the free rotor's conservation law.
 
-The trace of the symmetric part is the mass term, $T^{\mu}{}_{\mu}=mc^{2}\Omega$, so the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$: the equation of state is one line, it fixes the isotropic part, and it leaves the shear to the transport coefficients. A single massive mode is a pressureless dust and a massless one a null dust, so the part of the pressure that varies from event to event is interference and not spin.
+The trace of the symmetric part is the mass term, $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega$, so the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$: the equation of state is one line, it fixes the isotropic part, and it leaves the shear to the transport coefficients. A single massive mode is a pressureless dust and a massless one a null dust, so the part of the pressure that varies from event to event is interference and not spin.
 
 ## Summary of Notation
 
@@ -230,7 +230,7 @@ The trace of the symmetric part is the mass term, $T^{\mu}{}_{\mu}=mc^{2}\Omega$
 | $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ | Scalar bilinear, the mass density's number |
 | $\theta$ | Internal angle between mass density and particle density |
 | $\epsilon$, $p$ | Energy density ($w_{\mathrm{fl}}$ in the flow's frame) and pressure |
-| $P^{\mu}$, $u^{\mu}=P^{\mu}/(mc)$ | Momentum of a single mode and its unit flow |
+| $P_\mu$, $u_\mu=P_\mu/(mc)$ | Momentum of a single mode and its unit flow |
 
 ## Further Reading
 

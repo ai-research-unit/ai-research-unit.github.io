@@ -26,7 +26,7 @@ $$
 \qquad
 [\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c ,
 \qquad
-T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\sum_c\varepsilon_{abc}T_c ,\ \ \mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
+T_a=\tfrac12 \vec e_a ,\ \ [T_a,T_b]=\sum_c\varepsilon_{abc}T_c ,\ \ 2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
 with the connection $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, the coupling $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, the curvature $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, its adjoint law $F_{2,\mu\nu}=\tilde UF_{\mu\nu}\tilde U^{-1}$ for a unit real quaternion $\tilde U$, and the adjoint covariant derivative $D_\lambda \tilde{Q}=\partial/\partial R_\lambda \tilde{Q}+i\kappa[\mathcal{A}_\lambda,\tilde{Q}]$. The connection components are taken in the unnormalized basis $\vec e_a$, in which the structure constants are $f_{abc}=2\varepsilon_{abc}$; in the normalized basis $T_a=\tfrac12 \vec e_a$ the same algebra reads $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$, with $f_{abc}=\varepsilon_{abc}$, and in the Hermitian-generator realization $T_a=i\vec e_a\in\mathbb{B}_{\Psi}$ of the BRST companion it reads $[T_a,T_b]=2i\sum_c\varepsilon_{abc}T_c=i\sum_c f_{abc}T_c$, with $f_{abc}=2\varepsilon_{abc}$ in that realization. The two realizations are related by the central $i$, which exchanges the sectors, and the same structure constants $f_{abc}$ serve both. The matrix trace on the $\mathrm{SU}(2)$ factor is written $\mathrm{Tr}$ and is distinct from the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The constants are carried in every exponent, which reads $\frac{i}{\hbar}S$ with $\hbar$ the action quantum; no unit is set to one.
 
@@ -288,7 +288,7 @@ The algebra's contribution is therefore specific and limited: it supplies the co
 | $\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four $Q_\mu$; the material reading is $Q_t=i q'_t$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ | Compact gauge algebra |
-| $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
+| $[\vec e_a,\vec e_b]=2\sum_c\varepsilon_{abc}\vec e_c$, $T_a=\tfrac12 \vec e_a$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ | Generators and matrix trace |
 | $a,b,c$; $\mu,\nu$ | Internal colour and spacetime indices, both written low; every contraction over them is an explicit sum |
 | $f_{abc}=2\varepsilon_{abc}$ | Structure constants from the quaternion commutator, in the unnormalized basis $\vec e_a$ ($f_{abc}=\varepsilon_{abc}$ in the normalized basis $T_a=\tfrac12\vec e_a$) |
 | $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} \vec e_a\in\mathrm{SU}(2)$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |

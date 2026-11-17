@@ -192,7 +192,7 @@ the modified Bessel function reducing to its small-argument form $\mathrm{Ki}_{1
 
 The local statement of the dilation's breaking is the trace of the stress–energy tensor, and the bridge between the two is the dilation current
 $$
-D_\mu = \sum_\nuT_{\mu\nu}\,x_\nu ,
+D_\mu = \sum_\nu T_{\mu\nu}\,x_\nu ,
 \qquad
 \sum_\mu\partial/\partial R_\mu D_\mu = \sum_\mu T_{\mu\mu} + \sum_{\mu,\nu}x_\nu\,\partial/\partial R_\mu\,T_{\mu\nu} = \sum_\mu T_{\mu\mu} \ \text{ on shell} ,
 $$

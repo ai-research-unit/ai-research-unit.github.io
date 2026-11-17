@@ -6,13 +6,13 @@ The functional integral of the companion article *The Functional Integral in Biq
 
 The framework's contribution is specific. A lattice link variable is the parallel transporter along a link, and for the algebra's compact factor it is an element of the group, which in the biquaternion realization is a **unit quaternion** — the compact subset $\{Q\in\mathbb{B}:Q\bar Q=e_t\}$ of the algebra. The group is compact, so the Haar measure on it is finite and normalized, and the lattice path integral is a finite product of compact integrals. The trace that the action uses is the matrix trace of the link in its two-dimensional image, and it is twice the real scalar part,
 $$
-\mathrm{Tr}\,\mathsf M_2(\tilde U)=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
+2\,\mathrm{Sc}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
 $$
-for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$. Throughout this article $\mathrm{Tr}$ applied to a group element, a link or a link product is the trace of its $2\times2$ image, $\mathrm{Tr}\,\tilde X:=\operatorname{tr}\mathsf M_2(\tilde X)$; applied to a field strength it is the trace on the $\mathrm{SU}(2)$ colour factor. The action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
+for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$. Throughout this article a trace of a group element, a link or a link product is written as twice its scalar part, $2\,\mathrm{Sc}\,\tilde X$; a trace applied to a field strength is the trace on the $\mathrm{SU}(2)$ colour factor. The action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
 
 The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its gauge law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the **physical interpretation** rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.
 
-We use the conventions of the companion articles: the algebra, the invertibles, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact gauge algebra is taken in the Hermitian-generator realization, $T_a=\tfrac12ie_a\in\mathbb{B}_{\Psi}$, Hermitian and scalar-free, with the standard algebra and normalization $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, the coupling is $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{B}_{\Phi}$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in the Euclidean case the $i r'_t$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The lattice is introduced in the Euclidean case, where the weight is $\exp(-\frac{1}{\hbar}S_W)$ with $S_W$ real and positive; the rotation that relates the two cases is the one of the companion articles. $\hbar$ is carried in the exponent, and no unit is set to one.
+We use the conventions of the companion articles: the algebra, the invertibles, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact gauge algebra is taken in the Hermitian-generator realization, $T_a=\tfrac12ie_a\in\mathbb{B}_{\Psi}$, Hermitian and scalar-free, with the standard algebra and normalization $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$ and $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$, equivalently $e_a=-2iT_a$ with $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$; the connection is $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, the coupling is $\kappa=\frac{ϙ}{\hbar}$, the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$, and the curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$. The realization is not a free choice on the lattice. The link must be a group element, and $i\kappa\mathcal{A}_\mu$ is anti-Hermitian only for Hermitian $\mathcal{A}_\mu$; with the anti-Hermitian assignment $\mathcal{A}_\mu\in\mathbb{B}_{\Phi}$ of the classical companion articles, $i\kappa\mathcal{A}_\mu$ is Hermitian, so that $\exp(ia\kappa\mathcal{A}_\mu)$ is Hermitian positive definite rather than $*$-unitary and departs from unitarity already at first order in $a\kappa$. This is the reality-class question *Non-Abelian Gauge Fields in Biquaternionic Form* records as open. The lattice does not settle it in general, but in the Euclidean case the $i r'_t$ derivative that forces the Minkowski mixed assignment is absent, the Hermitian class is closed under the gauge transformation for all four directions, and it is the class the holonomy of *Wilson Loops in Biquaternionic Form* already uses. The lattice is introduced in the Euclidean case, where the weight is $\exp(-\frac{1}{\hbar}S_W)$ with $S_W$ real and positive; the rotation that relates the two cases is the one of the companion articles. $\hbar$ is carried in the exponent, and no unit is set to one.
 
 - Companion article *The Functional Integral in Biquaternionic Form*, for the measure, the Gaussian evaluation and the Euclidean rotation.
 - Companion article *The Gauge Field Path Integral in Biquaternionic Form*, for the abelian gauge orbit and the gauge-fixing determinant.
@@ -34,7 +34,7 @@ S_{\mathrm{YM}}=-\tfrac12\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{
 $$
 is not an integral in the sense of measure theory. The symbol $\mathcal{D}\mathcal{A}$ denotes a limit of products of finitely many ordinary integrals, and the limit is not known to exist without a regulator; the perturbative expansion assumes that a regulator has been chosen and that the counterterms remove its dependence. Three properties are needed of the regulator: it must make the measure finite, it must preserve the gauge invariance of the action, and it must admit a limit in which the regulator dependence is absorbed into the parameters of the theory.
 
-Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]/\hbar$ is real: the Yang--Mills action is $-\int d^4r\,\mathrm{Tr}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
+Throughout, $\theta_{\mathrm{ym}}:=S_{\mathrm{YM}}[\mathcal{A}]/\hbar$ is real: the Yang--Mills action is $-2\int d^4r\,\mathrm{Sc}\langle\tilde{\mathcal{F}},\tilde{\mathcal{F}}\rangle$, a real number for real potentials, so $\exp(i\theta_{\mathrm{ym}})$ is a phase of modulus one and the weight on each orbit is unitary.
 
 A spacetime lattice supplies all three. The lattice has finitely many sites in a finite box, so the field has finitely many components; the group-valued variable on each link is drawn from a compact group, so each integral is finite; the lattice action is built from closed loops and is therefore gauge invariant; and the limit in which the lattice spacing $a$ is taken to zero is controlled by the renormalization group, which absorbs the dependence into the coupling. The lattice regularization is the standard non-perturbative construction of a gauge theory, and it is used here because it is the construction that makes the biquaternion path integral well defined.
 
@@ -91,25 +91,25 @@ where $F_{\mu\nu}$ is the continuum curvature of the companion article. The iden
 
 ### The Wilson Action
 
-The Wilson action is the sum over plaquettes of the trace deficit,
+The Wilson action is the sum over plaquettes of the plaquette deficit,
 $$
-\boxed{\;S_W[\tilde U]=\beta\sum_{n}\sum_{\mu<\nu}\left(1-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}(n)\right)\;},
+\boxed{\;S_W[\tilde U]=\beta\sum_{n}\sum_{\mu<\nu}\left(1-\frac{2}{N}\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu}(n)\right)\;},
 \qquad
 N=2,
 \qquad
-\mathrm{Tr}\,\tilde U_{\mu\nu}=2\,\mathrm{Re}\,(\tilde U_{\mu\nu})_0 ,
+2\,\mathrm{Sc}\,\tilde U_{\mu\nu}=2\,\mathrm{Re}\,(\tilde U_{\mu\nu})_0 ,
 $$
-with $\beta$ the lattice coupling. It is gauge invariant because the trace of each plaquette is; it is real and bounded below because the trace lies in $[-2,2]$; and its small-$a$ limit is the Yang–Mills action. To fix $\beta$ one expands the trace. Using $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+\ldots)$ and the vanishing of the matrix trace of the curvature,
+with $\beta$ the lattice coupling. It is gauge invariant because the scalar part of each plaquette is; it is real and bounded below because twice that scalar part lies in $[-2,2]$; and its small-$a$ limit is the Yang–Mills action. To fix $\beta$ one expands the scalar part. Using $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+\ldots)$ and the vanishing of the matrix trace of the curvature,
 $$
-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}
+\frac{2}{N}\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu}
 =1-\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
 $$
 so that
 $$
-1-\frac{1}{N}\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}
+1-\frac{2}{N}\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu}
 =\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6).
 $$
-The numerical check of the previous paragraph confirmed the coefficient: for a constant non-abelian field the ratio of the measured trace deficit to $\frac{a^4\kappa^2}{2N}\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ was $1$ to better than one part in $10^{3}$ at $a=2\times10^{-3}$. Multiplying by $\beta$ and summing over $\mu<\nu$, the lattice action reproduces
+The numerical check of the previous paragraph confirmed the coefficient: for a constant non-abelian field the ratio of the measured plaquette deficit to $\frac{a^4\kappa^2}{2N}\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ was $1$ to better than one part in $10^{3}$ at $a=2\times10^{-3}$. Multiplying by $\beta$ and summing over $\mu<\nu$, the lattice action reproduces
 $$
 S_W\longrightarrow \frac{\beta\kappa^2}{4N}\int d^4r\,\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)
 $$
@@ -178,7 +178,7 @@ the last of which is the statement that only a link and its conjugate, paired be
 
 For a rectangular Wilson loop of dimensions $R\times T$ in lattice units, the leading strong-coupling contribution tiles the rectangle with plaquettes, each plaquette contributing a factor $\beta/(2N^2)$ for $N\ge3$ and $\beta/N^2$ for $N=2$, and each link in the interior being integrated against its neighbours. The result is the **area law**,
 $$
-\boxed{\;\langle W(C)\rangle=\left\langle\frac{1}{N}\mathrm{Tr}\prod_{l\in C}\tilde U_l\right\rangle
+\boxed{\;\langle W(C)\rangle=\left\langle\frac{2}{N}\mathrm{Sc}\prod_{l\in C}\tilde U_l\right\rangle
 \;\sim\;\exp\!\big(-\sigma\,A\big),
 \qquad
 A=R\,T\,a^2\;},
@@ -189,7 +189,7 @@ $$
 $$
 where $N=2$ for the framework's group and the $O(1)$ denotes the perimeter and tiling corrections. The special case $N=2$, in which the fundamental representation is real, replaces $2N^2$ by $N^2$ at leading order: the one-plaquette average is
 $$
-\frac{1}{2}\big\langle \mathrm{Tr}\,\tilde U_\Box\big\rangle
+\big\langle \mathrm{Sc}\,\tilde U_\Box\big\rangle
 =\frac{I_2(\beta)}{I_1(\beta)}
 =\frac{\beta}{4}+O(\beta^3),
 $$
@@ -246,9 +246,9 @@ $$
 \tilde U_{\mu\nu}(n)=\tilde U_\mu(n)\tilde U_\nu(n+\vec u_\mu)\tilde U_\mu(n+\vec u_\nu)^{-1}\tilde U_\nu(n)^{-1}
 =\exp\!\big(ia^2\kappa F_{\mu\nu}(n)+O(a^3)\big).
 $$
-The Wilson action $S_W=\beta\sum(1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu})$ has the small-$a$ expansion
+The Wilson action $S_W=\beta\sum(1-\frac2N\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu})$ has the small-$a$ expansion
 $$
-1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
+1-\frac2N\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
 $$
 so that with $\beta=2N/\kappa^2=4/\kappa^2$ it reduces to the Euclidean Yang–Mills density $\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$; both the plaquette identity and the normalization were checked numerically on a constant non-abelian field. The path integral is the finite product of normalized Haar measures on the unit quaternions,
 $$
@@ -272,7 +272,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^2=-e_t$, $\vec e_\mu \vec e_\nu=-\delta_{\mu\nu}e_t+\sum_\lambda\varepsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $T_a=\tfrac12 ie_a\in\mathbb{B}_{\Psi}$, $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |
+| $T_a=\tfrac12 ie_a\in\mathbb{B}_{\Psi}$, $[T_a,T_b]=i\sum_c\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$ | Compact gauge algebra (Hermitian-generator realization) |
 | $\mathcal{A}_\mu=\sum_a\mathcal{A}_{\mu a} T_a$, $\kappa=\frac{ϙ}{\hbar}$ | Connection and coupling |
 | $F_{\mu\nu}=\partial/\partial R_\mu\,\mathcal{A}_\nu-\partial/\partial R_\nu\,\mathcal{A}_\mu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$ | Non-abelian curvature |
 | $a$ | Lattice spacing |
@@ -281,15 +281,15 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $(D_\mu\xi)(n)=a^{-1}(\tilde U_\mu(n)\xi(n+\vec u_\mu)-\xi(n))$ | Discrete covariant difference |
 | $\tilde U_{\mu\nu}(n)$ | Plaquette; product of four links around an elementary square |
 | $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+O(a^3))$ | Plaquette expansion |
-| $\mathrm{Tr}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)$ | Trace of a group element |
-| $S_W=\beta\sum(1-\tfrac1N\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_{\mu\nu}))$, $N=2$ | Wilson action |
+| $2\,\mathrm{Sc}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)$ | Trace of a group element, as twice its scalar part |
+| $S_W=\beta\sum(1-\tfrac2N\mathrm{Re}\,\mathrm{Sc}\,\tilde U_{\mu\nu})$, $N=2$ | Wilson action |
 | $\beta=2N/\kappa^2=4/\kappa^2$ | Lattice coupling |
 | $Z=\int\prod_{n,\mu}dU_\mu(n)\exp(-\frac{1}{\hbar}S_W)$ | Lattice path integral |
 | $dU=\tfrac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega$ | Normalized Haar measure on the unit quaternions |
-| $W(C)=\tfrac1N\mathrm{Tr}\prod_{l\in C}\tilde U_l$ | Lattice Wilson loop |
+| $W(C)=\tfrac2N\mathrm{Sc}\prod_{l\in C}\tilde U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim \exp(-\sigma A)$ | Area law; $\sigma$ the string tension |
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
-| $\tfrac12\langle\mathrm{Tr}\,\mathsf M_2(\tilde U_\Box)\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
+| $\langle\mathrm{Sc}\,\tilde U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |

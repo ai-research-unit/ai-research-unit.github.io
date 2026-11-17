@@ -200,7 +200,7 @@ $$
 \int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)\;\ge\;\left|\int\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}\right)\right| = 16\pi^2\,|Ϙ| ,
 $$
 
-and therefore, with the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ of the non-abelian sector (Hermitian generators, $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$),
+and therefore, with the Euclidean action $S=\frac{1}{2g^2}\int\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ of the non-abelian sector (Hermitian generators, $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$),
 
 $$
 \boxed{\;S\;\ge\;\frac{8\pi^2}{g^2}\,|Ϙ|\;},
@@ -254,7 +254,7 @@ Work on the Euclidean slice with the $\mathrm{SU}(2)$ basis $T_a=\tfrac12 \vec e
 $$
 [T_a,T_b]=\epsilon_{abc}T_c,
 \qquad
-\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab},
+2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab},
 $$
 
 the second following from $\vec e_a=-i\sigma_a$ and $\mathrm{Tr}(\sigma_a\sigma_b)=2\delta_{ab}$. Write the connection and curvature as

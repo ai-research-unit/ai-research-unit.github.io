@@ -153,7 +153,7 @@ Three symmetries are available, and two of them are standard.
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\bigr],
 \qquad
-J^{\eta}=\mathrm{Re}\,\mathrm{Sc}\bigl[i\bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\bigr)\bigr],
+J_{\eta}=\mathrm{Re}\,\mathrm{Sc}\bigl[i\bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\bigr)\bigr],
 $$
 
 with conservation $\sum_\mu\partial_\mu J_\mu=0$ on solutions, by the standard argument: the variation of the action under a local angle is $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$ plus the equations of motion.
@@ -165,7 +165,7 @@ with conservation $\sum_\mu\partial_\mu J_\mu=0$ on solutions, by the standard a
 $$
 J^{t}=\rho\cosh\theta_{\mathrm{rpd}}=\rho\gamma,
 \qquad
-J^{\eta}=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta}=\rho\gamma\,\frac{v_\eta}{c},
+J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta}=\rho\gamma\,\frac{v_\eta}{c},
 $$
 
 which is the polar parent's current $\tilde J_\Phi=\rho\tilde V_\Phi$ divided by $ic$. The time component is an identity of the word: $\tilde U_{\Psi,\mathrm b}^{\natural}\tilde U_{\Psi,\mathrm b}=\cosh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\tfrac{\theta_{\mathrm{rpd}}}{2}=\cosh\theta_{\mathrm{rpd}}$, so $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=r^{2}\cosh\theta_{\mathrm{rpd}}=\rho\gamma$, and the same line gives the spatial component once the boost axis is identified with the direction of $\tilde V_\Phi$, which is the polar article's own identification.

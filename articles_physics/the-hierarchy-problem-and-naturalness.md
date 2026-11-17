@@ -133,7 +133,7 @@ So the statement is: **new physics should be within a factor of four of the weak
 | Field type | Mass term | Protected by | Shift |
 |---|---|---|---|
 | Fermion | $m\bar\psi\psi$ | Chiral symmetry | $\delta m\propto m\ln\Lambda$ — proportional to the mass |
-| Gauge boson | $\tfrac12m^2A_\mu A^\mu$ | Gauge symmetry | Forbidden while massless; protected after breaking |
+| Gauge boson | $\tfrac12m^2\sum_\mu\varepsilon_\mu A_\mu A_\mu$ | Gauge symmetry | Forbidden while massless; protected after breaking |
 | Scalar | $m^2\phi^{\dagger}\phi$ | Nothing | $\delta m^2\propto\Lambda^2$ |
 
 **The mechanism of protection, stated once.** A symmetry that forbids the mass term also forbids its radiative correction, because the correction must respect the symmetry of the Lagrangian. Chiral symmetry forbids $m\bar\psi\psi$ for a massless fermion, so the correction must be proportional to the mass — a fermion mass is *technically natural*: setting it to zero is stable under renormalisation. Gauge symmetry forbids $m^2A^2$, so a gauge boson mass is natural in the same sense.

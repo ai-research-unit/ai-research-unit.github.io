@@ -122,10 +122,10 @@ The coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}$ are by defi
 For the spin factors the two-factor space is the algebra $\mathbb{B}\otimes\mathbb{B}$ itself. Its trace is the product of the factor traces,
 
 $$
-\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad \mathrm{Tr}_\mathbb{B}(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0 ,
+\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\,\mathrm{Tr}_\mathbb{B}\mathsf M_2(y),\qquad \mathrm{Tr}_\mathbb{B}\mathsf M_2(e_t)=2,\quad \mathrm{Tr}_\mathbb{B}\mathsf M_2(\vec e_\eta)=0 ,
 $$
 
-so that $\mathrm{Tr}(e_t\otimes e_t)=4$. A product state is represented by the idempotent
+so that $\mathrm{Tr}\bigl(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t)\bigr)=4$. A product state is represented by the idempotent
 
 $$
 P_{\vec u_m}\otimes P_{\vec u}
@@ -451,7 +451,7 @@ The article established the following.
 | $\tilde S_{\Psi,\pm}=\frac{\hbar}{2}(i\vec e_x\mp \vec e_y)$ | Spin ladder operators, $\tilde S_{\Psi,\pm}^2=0$ |
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-factor algebra |
 | $\tilde S_{\Psi,1,\eta}=\tilde S_{\Psi,\eta}\otimes e_t,\ \tilde S_{\Psi,2,\eta}=e_t\otimes\tilde S_{\Psi,\eta}$ | Factor operators |
-| $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
+| $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$ | Trace on the tensor product |
 | $V_{s_{\mathrm{tot}}}$ | Rotation multiplet of spin $s_{\mathrm{tot}}$, highest weight $2s_{\mathrm{tot}}$, $\dim_{\mathbb{C}}V_{s_{\mathrm{tot}}}=2s_{\mathrm{tot}}+1$ |
 | $\langle s_1,s_{1z};s_2,s_{2z}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley phase) |
 | $\tilde\Pi_{\mathrm{sym}},\tilde\Pi_{\mathrm{asym}}$ | Coupled idempotents for $\tfrac12\otimes\tfrac12$ |

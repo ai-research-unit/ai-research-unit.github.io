@@ -94,7 +94,7 @@ $$
 \tilde\Pi^{2}-\tilde\Pi=-\frac{k_t'^{2}-k_\Phi^{2}}{4k_t'^{2}}\,e_t .
 $$
 
-The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi^{2}-\tilde\Pi\rvert$ came out at most $5.6\times10^{-17}$, $\lvert\mathrm{Tr}\,\tilde\Pi-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $k_t'=1$ and $k_\Phi=0.7$, gives a defect of $0.1275$.
+The computation is one line from the identity above, and the check covered five random null momenta: $\lvert\tilde\Pi^{2}-\tilde\Pi\rvert$ came out at most $5.6\times10^{-17}$, $\lvert2\,\mathrm{Sc}\,\tilde\Pi-1\rvert$ at most $1.1\times10^{-16}$, and the same defect formula held off the cone to $2.8\times10^{-17}$ at five further momenta. One off-cone instance, $k_t'=1$ and $k_\Phi=0.7$, gives a defect of $0.1275$.
 
 **A defect that is a central multiple of $e_t$ is the sharpest form the statement can take.** Off the cone the object is not a projector by an amount that is exactly the interval over four times the frequency squared. On the cone it is a projector of trace one, hence of rank one: a single surviving direction, and no more.
 

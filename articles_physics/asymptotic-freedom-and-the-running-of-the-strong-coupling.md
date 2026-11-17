@@ -225,13 +225,13 @@ so $\alpha_s(M_Z)=0.1239$ against the measured $0.1179$ — five per cent high.
 **Where the mass comes from.** For massless quarks the energy–momentum tensor has a nonzero trace, and the trace is the beta function:
 
 $$
-T^\mu_{\ \ \mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}=-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu} ,
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}=-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu} ,
 $$
 
 so that a scale-free classical theory acquires a mass scale in the quantum theory through the same coefficient that governs the running. The proton mass is the matrix element of that trace:
 
 $$
-m_p=\frac{1}{2m_p}\langle p|T^\mu_{\ \ \mu}|p\rangle .
+m_p=\frac{1}{2m_p}\langle p|\sum_\mu\varepsilon_\mu T_{\mu\mu}|p\rangle .
 $$
 
 **The number, and what it denies.** Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $938$ MeV — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the trace anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_p/\Lambda_3=938/142=6.6$ is a number the lattice computes rather than a coincidence.
@@ -258,7 +258,7 @@ $$
 | The solution of the running equation | **Derived here**, by separation of variables |
 | $\Lambda$ and dimensional transmutation | **Imported** in concept, **evaluated** here |
 | The measured $\alpha_s(M_Z)$ | **Imported.** A measurement, not a computation |
-| The sign rule $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$ | **Derived in the algebra**, in article 2; it affects no number here |
+| The sign rule $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ | **Derived in the algebra**, in article 2; it affects no number here |
 | A gauge-invariant regulator | **Not supplied.** The algebra's natural regulator breaks gauge invariance |
 | The value of $\Lambda$ | **Not supplied by anything.** The theory's one scale is an input |
 
@@ -299,7 +299,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
 | $m_p$ | Proton mass, $938$ MeV, the matrix element of the trace anomaly |
 | $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
-| $T^\mu_{\ \ \mu}$ | Trace of the energy–momentum tensor, proportional to $G^a_{\mu\nu}G^a_{\mu\nu}$ with coefficient $b_0$ |
+| $\sum_\mu\varepsilon_\mu T_{\mu\mu}$ | Trace of the energy–momentum tensor, proportional to $G^a_{\mu\nu}G^a_{\mu\nu}$ with coefficient $b_0$ |
 | $G^a_{\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the trace anomaly |
 | $\alpha$ | Fine-structure constant, $\alpha(0)=1/137.036$; used only in the QED contrast |
 | $\delta\alpha_s$, $\delta\Lambda$ | The uncertainties, and their propagation from $M_Z$ to $\Lambda$ |

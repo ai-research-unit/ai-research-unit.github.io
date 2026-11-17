@@ -295,7 +295,7 @@ Complexified, the statement is sharper, and the complexification is the algebra'
 
 ### A Constant Direction, and a Vacuum Wave
 
-With $h$ and $\ell_\mu$ constant, $T$ is a constant invertible map and $g$ is $\delta_{\mu\nu}$ in the chart $y^\alpha = T^\alpha{}_\mu Q^\mu$; the metric is flat. The remark is small, and it marks a limit of Route Two's flatness criterion: a frame that is pure rotor gauge is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
+With $h$ and $\ell_\mu$ constant, $T$ is a constant invertible map and $g$ is $\delta_{\mu\nu}$ in the chart $y_\alpha = T_\alpha{}_\mu Q_\mu$; the metric is flat. The remark is small, and it marks a limit of Route Two's flatness criterion: a frame that is pure rotor gauge is flat, but the converse fails. A constant shear is not a rotor, and it produces no curvature, because it is a change of chart rather than a change of frame. Flatness of the frame has at least these two independent sources, and the second is a diffeomorphism, the object the algebra does not have.
 
 With $\ell_\mu$ constant and $h$ varying, the same family is curved, and its member is the wave the neighbouring articles meet as a gravitational wave. Take $\ell_\mu$ with $k_t = -i$ and $k_3 = 1$, null since $k_t^2+k_3^2=-1+1=0$, and pass to the real null coordinates $u = r'_t+r_z$ and $v = r'_t-r_z$, in which $\ell_\mu\,dR_\mu = du$ and the metric reads
 

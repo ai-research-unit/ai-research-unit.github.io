@@ -10,7 +10,7 @@ The earlier exercises treated a single qubit (Exercises: Measuring Spin Along an
 
 The correlation function is the object measured in Bell-inequality experiments. It is also the natural bilinear pairing on the tensor-product algebra, and it reveals a clean structural fact: the four Bell states correspond to the four sign patterns $\epsilon_j = \pm 1$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$, and their correlation functions are $E(\vec u_x, \vec u_y) = -\sum_j \epsilon_j\,a_j b_j$.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. Twice the scalar part of an element of $\mathbb{B}_{\Psi}$ is the matrix trace of its image: $2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. Twice the scalar part of an element of $\mathbb{B}_{\Psi}$ is the matrix trace of its image: $2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$.
 
 ## The Exercise
 
@@ -227,12 +227,12 @@ $$
 where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product pairing formula:
 
 $$
-E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
+E(\vec u_x, \vec u_y) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
 $$
 
-### Step 3: Computing the trace for each Bell state
+### Step 3: Computing the pairing for each Bell state
 
-We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,
+We compute the pairing term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,
 
 $$
 \tilde\Pi_\epsilon\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
@@ -240,7 +240,7 @@ $$
 
 with $\epsilon_t \equiv 1$.
 
-**Term $m = t$.** The trace is $\mathrm{Tr}_\mathbb{B}(i\vec u_x)\cdot\mathrm{Tr}_\mathbb{B}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.
+**Term $m = t$.** The pairing is $4\,\mathrm{Sc}(i\vec u_x)\,\mathrm{Sc}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.
 
 **Terms $m \in \{x,y,z\}$.** We have
 
@@ -248,22 +248,16 @@ $$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$
 
-using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, so
+using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, and similarly $\mathrm{Sc}(e_m\cdot i\vec u_y) = -i b_m$. The product of the two scalar parts is
 
 $$
-\mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
+(-i a_m)(-i b_m) = i^2\, a_m b_m = -a_m b_m.
 $$
 
-and similarly $\mathrm{Tr}_\mathbb{B}(e_m\cdot i\vec u_y) = -2 i b_m$. The product of the two traces is
+**Assembly.** Substituting, the factor $\frac14$ carried by the product and the factor $4$ carried by the pairing cancel,
 
 $$
-(-2 i a_m)(-2 i b_m) = 4 i^2\, a_m b_m = -4\,a_m b_m.
-$$
-
-**Assembly.** Substituting,
-
-$$
-E(\vec u_x, \vec u_y) = \frac{1}{4}\sum_{m\in\{x,y,z\}}\epsilon_m\,(-4\,a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
+E(\vec u_x, \vec u_y) = \sum_{m\in\{x,y,z\}}\epsilon_m\,(-a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
 $$
 
 So the correlation function is
@@ -366,7 +360,7 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $\tilde{H}_{\Psi,ab} = (i\vec u_x)\otimes(i\vec u_y)$ | Correlation observable |
 | $E(\vec u_x, \vec u_y) = 4\,\mathrm{Sc}(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}^{*})$ | Correlation function, four times the scalar part |
 | $T_{j\eta} = \langle\tilde{Ξ}|\sigma_j\otimes\sigma_\eta|\tilde{Ξ}\rangle$ | Correlation matrix |
-| $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
+| $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$ | Trace on the tensor product |
 
 ## Further Reading
 

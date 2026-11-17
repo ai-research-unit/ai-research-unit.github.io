@@ -84,7 +84,7 @@ with $B^a$ the Nakanishi–Lautrup field. Eliminating $B^a$ by its own equation 
 
 ## Two Jobs in One Functional
 
-**The scalar kinetic term.** Expanding $\left|D_\mu\varphi\right|^2$ around the vacuum in the parametrisation of §*Why the Quadratic Form Is Degenerate* gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\,\partial^\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.
+**The scalar kinetic term.** Expanding $\left|D_\mu\varphi\right|^2$ around the vacuum in the parametrisation of §*Why the Quadratic Form Is Degenerate* gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.
 
 **What the functional contributes.** Squaring $G$ gives three pieces with the same shapes:
 
@@ -97,7 +97,7 @@ $$
 | Piece | from $\lvert D\varphi\rvert^2$ | from $\mathcal{L}_{\mathrm{gf}}$ | Sum |
 |---|---|---|---|
 | $A_\mu A_\mu$ | $+\frac{M^2}{2}A^2$ | $-\frac{1}{2\zeta}(\partial\cdot A)^2$ | the massive kernel |
-| $A_\mu\partial^\mu\xi$ | $-M\xi\,\partial\cdot A$ | $+M\xi\,\partial\cdot A$ | $0$ |
+| $\sum_\mu\varepsilon_\mu A_\mu\partial_\mu\xi$ | $-M\xi\,\partial\cdot A$ | $+M\xi\,\partial\cdot A$ | $0$ |
 | $\xi^2$ | $0$ | $-\frac{\zeta M^2}{2}\xi^2$ | $-\frac{\zeta M^2}{2}\xi^2$ |
 
 **Why the cross term has to cancel.** If it does not, the Goldstone propagator carries a numerator proportional to $p_\mu p_\nu$ that grows with energy, and the theory loses manifest power counting even though it remains formally gauge invariant. Cancelling it is what makes every field's propagator fall as $1/\Pi$, and that is the subject of §*Power Counting and the Renormalisability Argument*.
@@ -278,13 +278,13 @@ and the same with $Z_L$ and $\xi^0$. An amplitude with a longitudinal vector in 
 **Where it comes from, in one line.** The longitudinal polarisation vector of a vector of mass $M$ and momentum $p$ is
 
 $$
-\epsilon_L^\mu=\left(\frac{\lvert\vec p\rvert}{M},\ \frac{E}{M}\hat p\right),
+\epsilon_{L,\mu}=\left(\frac{\lvert\vec p\rvert}{M},\ \frac{E}{M}\hat p\right),
 $$
 
-and it satisfies $\sum_\mu p_\mu\epsilon_L^\mu=0$ and $\sum_\mu\epsilon_{L,\mu}\epsilon_L^\mu=-1$ exactly. Comparing it with $p^\mu/M$,
+and it satisfies $\sum_\mu\varepsilon_\mu p_\mu\epsilon_{L,\mu}=0$ and $\sum_\mu\varepsilon_\mu\epsilon_{L,\mu}\epsilon_{L,\mu}=-1$ exactly. Comparing it with $p_\mu/M$,
 
 $$
-\epsilon_L^\mu=\frac{p^\mu}{M}+\eta^\mu ,
+\epsilon_{L,\mu}=\frac{p_\mu}{M}+\eta_\mu ,
 \qquad
 \eta^0=-\frac{E-\lvert\vec p\rvert}{M} ,
 \qquad
@@ -303,7 +303,7 @@ $$
 | $100$ | $5.00\times10^{-5}$ | $5.00\times10^{-5}$ | $1.000$ |
 | $1000$ | $5.00\times10^{-7}$ | $5.00\times10^{-7}$ | $1.000$ |
 
-**Why $p^\mu/M$ is the Goldstone coupling.** The piece $\frac{1}{M}p^\mu$ contracted with a vertex is, by the Ward identity, the divergence of the corresponding current, and the divergence of the current is what the Goldstone field couples to. That is the content of the $R_\xi$ construction: the Goldstone's coupling is fixed by the same Ward identity that the gauge-fixing functional was chosen to make valid. So the theorem is not an independent fact about polarisations; it is the Ward identity read at high energy.
+**Why $p_\mu/M$ is the Goldstone coupling.** The piece $\frac{1}{M}p_\mu$ contracted with a vertex is, by the Ward identity, the divergence of the corresponding current, and the divergence of the current is what the Goldstone field couples to. That is the content of the $R_\xi$ construction: the Goldstone's coupling is fixed by the same Ward identity that the gauge-fixing functional was chosen to make valid. So the theorem is not an independent fact about polarisations; it is the Ward identity read at high energy.
 
 **The bound it gives.** Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $s/v^2$. The $J=0$ partial wave is $a_0=s/(16\pi v^2)$, and the unitarity bound $\lvert a_0\rvert\le\frac12$ is saturated at
 
@@ -367,7 +367,7 @@ One propagator formula covers the family, $D_{\mu\nu}=\frac{P_{\mu\nu}}{\Pi-M^2}
 
 The parameter changes nothing observable: the residue at the physical pole is $P_{\mu\nu}$ and carries no $\zeta$, and a conserved current is blind to the parameter, drifting by $4.5\times10^{-16}$ across five gauges while a non-conserved current drifts by $0.78$. Every $R_\xi$ propagator falls as $1/\Pi$, so the superficial degree of divergence is bounded by four independently of the number of loops; the unitary gauge loses that property, which is why renormalisability is proved in the family and not at its endpoint.
 
-The equivalence theorem follows from $\epsilon_L^\mu=p^\mu/M+O(M^2/E^2)$, since $p^\mu/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.
+The equivalence theorem follows from $\epsilon_{L,\mu}=p_\mu/M+O(M^2/E^2)$, since $p_\mu/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.
 
 The framework discharges the gauge-fixing row of the standard-model agenda at the level of the procedure — and not the electroweak agenda's stronger item, which asks for a section rather than a route — and transcribes the electroweak instantiation, which needs the group, the representation and the scalar that both agendas classify as unreached. The parameter $\zeta$ is a coordinate and is not derivable in principle.
 
@@ -398,7 +398,7 @@ The framework discharges the gauge-fixing row of the standard-model agenda at th
 | $c^a$, $\bar c^{\,a}$ | Ghost and antighost, ghost numbers $+1$ and $-1$ |
 | $\Lambda$ | The Grassmann envelope's odd part |
 | $s$ | The nilpotent odd derivation, $s^2=0$ |
-| $\epsilon_L^\mu$ | The longitudinal polarisation vector |
+| $\epsilon_{L,\mu}$ | The longitudinal polarisation vector |
 | $a_0$ | The $J=0$ partial wave, $s/(16\pi v^2)$ |
 
 ## Further Reading

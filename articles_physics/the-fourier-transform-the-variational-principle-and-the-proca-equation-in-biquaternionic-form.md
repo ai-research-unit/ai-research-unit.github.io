@@ -68,7 +68,7 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 ## The Longitudinal Coefficient Is the Mass Alone
 
-**Along the wave number the form is the mass and nothing else.** Put $A\parallel k^\mu$, so that $A=\lambda k^\mu$ and $[kA]=\lambda k^{2}$. Then
+**Along the wave number the form is the mass and nothing else.** Put $A\parallel k_\mu$, so that $A=\lambda k_\mu$ and $[kA]=\lambda k^{2}$. Then
 
 $$
 \mathcal{Q}\bigl(\lambda k\bigr)
@@ -91,7 +91,7 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **The transverse coefficient is the contrast, and it depends on both.** On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. **So the form is one constant direction and three moving ones**, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.
 
-**The identity explains why the constraint exists in the massive case only.** The variation along $k^\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
+**The identity explains why the constraint exists in the massive case only.** The variation along $k_\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
 
 ## The Constraint Is the Vanishing of a Coefficient
 
@@ -103,11 +103,11 @@ $$
 =k_m^{2}\,[kA] ,
 $$
 
-because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional derivative along $k^\mu$ is the mass times the Lorenz form**, and stationarity in every direction gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$ with $S$'s symbol in place.
+because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional derivative along $k_\mu$ is the mass times the Lorenz form**, and stationarity in every direction gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$ with $S$'s symbol in place.
 
 **The relation is therefore a statement about the form and not about a symmetry.** The parent derives the constraint by differentiating the equation; the article derives it by varying along one direction. **Both give one condition because the form has one direction in which its coefficient is the mass**, and neither needs the notion of a gauge transformation.
 
-**The massless case is the degenerate one and it is degenerate in a specific way.** At $k_m=0$ the form is $\tfrac12([kA]^{2}-k^{2}A\!\cdot\!A)$, whose longitudinal coefficient is zero identically, so the variation along $k^\mu$ produces no condition and the amplitude along $k^\mu$ is free. **That freedom is the gauge freedom**, and in the form's language it is the freedom of a null direction rather than the orbit of a group.
+**The massless case is the degenerate one and it is degenerate in a specific way.** At $k_m=0$ the form is $\tfrac12([kA]^{2}-k^{2}A\!\cdot\!A)$, whose longitudinal coefficient is zero identically, so the variation along $k_\mu$ produces no condition and the amplitude along $k_\mu$ is free. **That freedom is the gauge freedom**, and in the form's language it is the freedom of a null direction rather than the orbit of a group.
 
 **What the form cannot say is which representative to choose.** A gauge freedom is a freedom, and a quadratic form that has a null direction does not select one. **The parent's statement that in the massless theory $S=0$ can be reached from any potential by a gauge transformation is the statement that the null direction can be removed by a shift**, and the form's version is that the kernel of the Hessian contains the wave number. The two agree and neither is deeper.
 
@@ -173,7 +173,7 @@ At a wave number the Proca action is one quadratic form, $\mathcal{Q}=\tfrac12\{
 
 Along the four-wave-number the form is $\tfrac12k_m^{2}(A\!\cdot\!A)$ exactly, because the $k^{4}$ of the field term cancels against the $k^{4}$ inside the second term. **Measured on a unit-norm longitudinal amplitude, the coefficient is $0.245000000$ at $k_m=0.7$ and $0.045000000$ at $k_m=0.3$, at every frequency from $k_t'=0.5$ to $2.0$.** The longitudinal coefficient is a function of the mass alone.
 
-The constraint is that coefficient. Varying along $k^\mu$ gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$; at $k_m=0$ the coefficient vanishes identically and the direction is free. **Gauge freedom is a zero coefficient in the quadratic form**, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.
+The constraint is that coefficient. Varying along $k_\mu$ gives $k_m^{2}[kA]=0$, which is the parent's $k_m^{2}S=0$; at $k_m=0$ the coefficient vanishes identically and the direction is free. **Gauge freedom is a zero coefficient in the quadratic form**, and the massless theory's $S=0$ is a null direction of the Hessian rather than the orbit of a group.
 
 The coefficient of $A_0^{2}$ is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$, with no $\omega^{2}$: $0.315000000$ at all three frequencies, while the three spatial coefficients move from $-0.145$ to $+0.45$ to $+1.73$. **The absent power is the primary constraint**, and the coupling cannot add one because $F_{0\eta}$ contains no $\partial_0A_0$.
 

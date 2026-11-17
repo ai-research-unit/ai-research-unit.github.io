@@ -122,7 +122,7 @@ Nine rules follow.
 
 1. **Declare the frame before the first display.** A formula that does not name its frame is read in the article's declared default, and an article declares one default only.
 2. **One product, one coordinate.** A product is read in one frame's coordinate, and the coordinate fixes the interval. The metric is one, $\delta_{\mu\nu}=(1,1,1,1)$, and it is the same in both frames. The matrices carry no frame and are never relabelled.
-3. **The index is low, and it labels a direction.** The index names which of the four directions is read; it is not a tensor slot, and no label is raised on the array itself: raising is done with the weight, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$. The fifth is a product and not an image of a direction, so it is written $\gamma_5$ without a label.
+3. **The index is low, and it labels a direction.** The index names which of the four directions is read; it is not a tensor slot, and no label is raised on the array itself: a contravariant index is not allowed, and the weight stands where a raising would stand, $\gamma_\mu\gamma_\mu=\varepsilon_\mu I_4$ with no sum. The fifth is a product and not an image of a direction, so it is written $\gamma_5$ without a label.
 4. **Name the frame with its coordinate.** The coordinate frame carries its interval. A statement that names a frame names the coordinate it reads; an interval is never moved from one frame to another.
 5. **The $i$ is in the coordinate or in the signs, never in the metric.** The one metric has real coefficients.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.

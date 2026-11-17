@@ -288,7 +288,7 @@ The triple's dimension is read from the operator's spectrum, and the framework's
 $$
 \sigma\sigma^{\natural}=|\zeta|^2e_t,
 $$
-nonzero off $\zeta=0$, and the symbol is invertible there. Note that $\sigma^2$ is *not* a multiple of $e_t$ — its scalar part is $\zeta_t^2-|\vec\zeta|^2$ — so the ellipticity is read from the quaternionic norm, not from the square. It is the square that is scalar in the Euclidean frame, where the four actions anticommute: there $D=-i\sum_\mu E_\mu\partial/\partial R_\mu$ gives $D^2=-\sum_\mu\partial^2/\partial R_\mu^2$, of Laplace type, and the $r'_t^{-2}$ growth that gives $d=4$ is the symbol's and not an assumption. Equivalently the trace of the heat kernel grows as
+nonzero off $\zeta=0$, and the symbol is invertible there. Note that $\sigma^2$ is *not* a multiple of $e_t$ — its scalar part is $\zeta_t^2-|\vec\zeta|^2$ — so the ellipticity is read from the quaternionic norm, not from the square. It is the square that is scalar in the Euclidean frame, where the four actions anticommute: there $D=-i\sum_\mu E_\mu\partial/\partial R_\mu$ gives $D^2=-\sum_\mu\partial^2/\partial R_\mu^2$, of Laplace type, and the ${r'_t}^{-2}$ growth that gives $d=4$ is the symbol's and not an assumption. Equivalently the trace of the heat kernel grows as
 $$
 \boxed{\;\mathrm{Tr}\,\exp(-r'_t D^2)\;\sim\;{r'_{t}}^{-d/2}\quad(r'_t\to0^+)\;},
 $$

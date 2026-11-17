@@ -104,13 +104,13 @@ for $n_s$ real scalars, $n_f$ Dirac fermions, and $n_v$ vector fields: $a=\tfrac
 
 This is where the algebra enters, and it enters twice: through the trace of the operator and through the component count.
 
-**The trace of an element is not the trace of the anomaly.** The corpus fixes a trace of an element, $\operatorname{Tr}$, in *Norm and Pairing Conventions*. It is the state-and-observable pairing of the Hermitian sector $\mathbb{B}_{\Psi}$, it reads the scalar part of its argument, and it is not the trace of an operator on the field space. A determinant is not taken with it. Calling the two objects by one word is the category error that *Anomalies and Anomaly Cancellation in Biquaternionic Form* identifies.
+**The trace of the image is not the trace of the anomaly.** The corpus fixes a trace on the $2\times2$ image, $\operatorname{Tr}\mathsf M_2$, in *Norm and Pairing Conventions*. It is the state-and-observable pairing of the Hermitian sector $\mathbb{B}_{\Psi}$, it reads the scalar part of its argument, and it is not the trace of an operator on the field space. A determinant is not taken with it. Calling the two objects by one word is the category error that *Anomalies and Anomaly Cancellation in Biquaternionic Form* identifies.
 
-**The trace an anomaly uses.** The determinant of $S^{(2)}$ is taken over the field's components, and the trace that reads it is the internal trace, the trace of the operator in the algebra's four complex dimensions. The identity action has trace four, and the two-sided action has trace four times the product of the scalar parts of its two multipliers:
+**The trace an anomaly uses.** The determinant of $S^{(2)}$ is taken over the field's components, and the trace that reads it is the internal trace, the trace of the $4\times4$ matrix of the operator in the algebra's four complex dimensions. With $L_{\mathrm{axf}}(a)$ and $R_{\mathrm{axf}}(b)$ the $4\times4$ left and right regular matrices, the identity action has trace four, and the two-sided action has trace four times the product of the scalar parts of its two multipliers:
 $$
-\operatorname{tr}\bigl(\tilde Q\mapsto a\,\tilde Q\,b\bigr)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
+\operatorname{tr}\bigl(L_{\mathrm{axf}}(a)R_{\mathrm{axf}}(b)\bigr)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),
 \qquad
-\operatorname{tr}\bigl(\tilde Q\mapsto\tilde Q\bigr)=4 .
+\operatorname{tr}I_4=4 .
 $$
 This is a derived form of the regular trace of *Matrix Representations Conventions*, read from the multiplication of the units.
 
@@ -235,7 +235,7 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$ | One-loop effective action whose variation is the anomaly |
 | $a_{d/2}$ | Seeley–DeWitt coefficient controlling the anomalous trace |
 | $\zeta=(d-2)/(4(d-1))$ | Improvement coupling; $\zeta=1/6$ at $d=4$ |
-| $\operatorname{tr}(\tilde Q\mapsto a\tilde Q b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}(\tilde Q\mapsto\tilde Q)=4$ |
+| $\operatorname{tr}(L_{\mathrm{axf}}(a)R_{\mathrm{axf}}(b))=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)$ | Trace of the matrix of the two-sided action in the algebra's four complex dimensions; $\operatorname{tr}I_4=4$ |
 | $\tilde{Ξ}\mapsto k_m\,\tilde{Ξ}(i\vec e_x)$ | The mass term: a right multiplication that exchanges the two chirality values |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two chirality values: the $-1$ part and the $+1$ part of an element |
 | $a$, $c$ | Four-dimensional Euler and Weyl coefficients; the two-dimensional central charge is a different $c$ |

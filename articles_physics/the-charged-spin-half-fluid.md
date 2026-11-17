@@ -151,7 +151,7 @@ $$
 \oint\tilde V_\Phi\cdot\mathrm{d}\vec l
 =C\bigl[H_{\mathrm{loop}}\bigr],
 \qquad
-H_{\mathrm{loop}}=\mathcal{P}\exp\oint\Gamma_\mu\,\mathrm{d}x^\mu\in SL(2,\mathbb{C}),
+H_{\mathrm{loop}}=\mathcal{P}\exp\oint\sum_\mu\Gamma_\mu\,\mathrm{d}x_\mu\in SL(2,\mathbb{C}),
 $$
 
 with $\mathcal{P}$ the path ordering and $C$ the linear functional that reads the components of the algebra element. **The loop's datum is $H_{\mathrm{loop}}$, a Lorentz transformation, and the circulation is one number read off it**; the scalar fluid's loop datum is a phase and its circulation is the whole of it.
@@ -185,13 +185,13 @@ and the two factors commute because the second is central. **The object is an el
 $$
 J^t=\rho\cosh\theta_{\mathrm{rpd}},
 \qquad
-J^\eta=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
+J_\eta=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
 $$
 
 which is the density times the velocity and nothing else. The Gordon decomposition of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,
 
 $$
-J^\mu=J^\mu_{\mathrm{conv}}+J^\mu_{\mathrm{mag}},
+J_\mu=J_{\mathrm{conv},\mu}+J_{\mathrm{mag},\mu},
 \qquad
 J_{\mathrm{mag},\mu}=\sum_\nu\partial_\nu\bigl(\text{the spin bilinear}\bigr)_{\nu\mu},
 $$

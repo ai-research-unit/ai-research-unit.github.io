@@ -107,7 +107,7 @@ using the Poynting theorem for the last equality. The factor $i$ is now uniform,
 
 **Statement.** With $e_t, \vec e_x, \vec e_y, \vec e_z$ the four units, the same in every frame, and $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ a four-vector read on the material coordinate $Q_t=i q'_t$, $Q_\eta=q_\eta$, so that the $Q_\mu$ are its components, define the **ordered pair**
 $$
-\Pi_{\mu\nu} = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_\mu\,\tilde F^{*}\,e_\nu\right) = \frac{1}{4}\,\mathrm{Tr}\!\left(\tilde F\,e_\mu\,\tilde F^{*}\,e_\nu\right).
+\Pi_{\mu\nu} = \frac{1}{2}\,\mathrm{Sc}\!\left(\tilde F\,e_\mu\,\tilde F^{*}\,e_\nu\right).
 $$
 The first index is the unit inserted between the field and its conjugate — the **row** — and the second is the unit multiplied on the right — the **column**. A time slot carries one factor $i$ from $Q_t=i q'_t$, and two time slots carry $i^2=-1$; the components below are written with it. The pair is ordered, and $\Pi_{\nu\mu}\ne\Pi_{\mu\nu}$ in general. For a fixed column the whole content is the four components $\Pi_{\mu\nu}$. The symmetric tensor is the same object with its time column multiplied by $i^2$,
 $$

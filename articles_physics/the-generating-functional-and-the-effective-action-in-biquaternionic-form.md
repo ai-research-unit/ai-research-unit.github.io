@@ -170,7 +170,7 @@ The minimizer is the vacuum expectation value of the field, and the curvature at
 
 **Tree-level vacuum.** At tree level $V_{\mathrm{eff}}=V$, and for the biquaternion scalar
 $$
-V(\tilde{Ξ}_{\mathrm{cl}}) = \tfrac12 m^2\,\mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_{\mathrm{cl}}\tilde{Ξ}_{\mathrm{cl}}\big)
+V(\tilde{Ξ}_{\mathrm{cl}}) = m^2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_{\mathrm{cl}}\tilde{Ξ}_{\mathrm{cl}}\big)
 = \tfrac12 m^2\,\big\langle \tilde{Ξ}_{\mathrm{cl}},\tilde{Ξ}_{\mathrm{cl}}\big\rangle ,
 $$
 whose minimum is $\tilde{Ξ}_{\mathrm{cl}}=0$ for $m^2>0$, the symmetric vacuum. A one-mode truncation of this field is exactly the two-level structure of *The Biquaternion Vacuum as a Minimal Idempotent*: the constant mode's energy is quadratic in the norm, the number operator is multiplication by the idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, and the ground state is a minimal idempotent of $\mathbb{B}_{\Psi}$ selected by the sign of the quadratic term. The one-mode ground state is the field-theoretic statement of the vacuum-selection rule that the earlier article states algebraically.

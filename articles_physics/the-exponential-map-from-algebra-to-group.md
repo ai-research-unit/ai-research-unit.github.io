@@ -6,7 +6,7 @@ The exponential map carries the six-dimensional Lie algebra to the six-dimension
 
 $$
 \exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\,\tilde X,
-\qquad \Rho^{2}=\tfrac12\operatorname{tr}\bigl(\tilde X^{2}\bigr),
+\qquad \Rho^{2}=\mathrm{Sc}\bigl(\tilde X^{2}\bigr),
 $$
 
 with the limit $\Rho\to0$ understood as the identity plus $\tilde X$. One formula contains the rotation family and the boost family: when $\Rho$ is real the formula is a rotation, and when $\Rho$ is imaginary it is a boost.

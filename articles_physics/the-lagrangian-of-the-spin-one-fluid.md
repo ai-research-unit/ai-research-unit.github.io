@@ -57,16 +57,16 @@ because $F$ is antisymmetric. **The Lorenz condition is therefore a consequence 
 **In the fluid's variables the condition is continuity.** With $A_\mu=r\,u_\mu$,
 
 $$
-\partial_\mu A^\mu=0
+\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0
 \qquad\Longleftrightarrow\qquad
-\partial_\mu\bigl(r\,u^\mu\bigr)=0,
+\sum_\mu\varepsilon_\mu\partial_\mu\bigl(r\,u_\mu\bigr)=0,
 $$
 
-which is the continuity equation for a density $r$ and a velocity $u^\mu$. **The spin-one fluid therefore has a continuity equation that is not an equation of motion**: it is the integrability of the field equation, and it disappears with the mass.
+which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The spin-one fluid therefore has a continuity equation that is not an equation of motion**: it is the integrability of the field equation, and it disappears with the mass.
 
 **The block's phrase is exact and the action explains it.** [The Spin-One Fluid](the-spin-one-fluid.html) finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\sum_\mu\partial_\mu(ru_\mu)$ to vanish, and the identity $\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. **The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.**
 
-**And the flow's own expansion is not zero.** Differentiating $ru^\mu$ gives $\partial_\mu u^\mu=-u^\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
+**And the flow's own expansion is not zero.** Differentiating $ru_\mu$ gives $\sum_\mu\varepsilon_\mu\partial_\mu u_\mu=-\sum_\mu\varepsilon_\mu u_\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
 
 ## The Two Variations and the Multiplier
 
@@ -77,7 +77,7 @@ The $r$ variation gives $\sum_\mu\varepsilon_\mu u_\mu(\sum_\nu\partial_\nu F_{\
 **The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
 
 $$
-\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(u_\mu u^\mu+1\bigr),
+\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_\mu\varepsilon_\mu u_\mu u_\mu+1\bigr),
 $$
 
 and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. **It plays the part a pressure plays in an incompressible fluid**, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
@@ -98,7 +98,7 @@ and the multiplier enters the direction's equation as $\lambda u_\mu$, which is 
 
 **Adds.** The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
 
-**Does not add.** No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A^\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
+**Does not add.** No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A_\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.
 
 **The one thing the action says that the equations cannot.** The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. **That is the strongest case in the layer for writing the fluid's Lagrangian**: not a new result, but the location of four results in one coefficient.
 
@@ -128,14 +128,14 @@ and the multiplier enters the direction's equation as $\lambda u_\mu$, which is 
 |---|---|
 | $A_\mu=r\,u_\mu$ | The field in the fluid's variables; $r$ the density, $u$ the velocity |
 | $r>0$ | Density; the field's magnitude |
-| $u_\mu$, $u_\mu u^\mu=-1$ | Unit four-velocity; three functions and one constraint |
+| $u_\mu$, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ | Unit four-velocity; three functions and one constraint |
 | $\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu$ | The raw curl, whose contraction with $u$ is $-a_\mu$; its projection $\omega^{\perp}$ is the vorticity and is rank two |
 | $F_{\mu\nu}=r\omega_{\mu\nu}+\partial_\mu r\,u_\nu-\partial_\nu r\,u_\mu$ | The field strength; vorticity plus density gradient |
 | $k_m=mc/\hbar$ | Mass wave number; the only place $\hbar$ appears |
 | $\nabla_\mu=\sum_\nu\Delta_{\mu\nu}\partial_\nu$ | Transverse derivative; $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$ |
 | $\lambda$ | Multiplier of the unit condition; a pressure |
-| $E_\mu=F_{\mu\nu}u^\nu$ | The electric part along the flow |
-| $a_\mu=u^\nu\partial_\nu u_\mu$ | The flow's acceleration |
+| $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$ | The electric part along the flow |
+| $a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu$ | The flow's acceleration |
 | $\mathcal L$ | The Proca Lagrangian in the fluid variables |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 

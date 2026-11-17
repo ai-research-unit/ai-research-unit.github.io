@@ -207,10 +207,10 @@ On $(\tfrac12,0)$ the direct computation with the $2\times2$ images gives $\math
 The Poincaré algebra has two Casimirs as well,
 
 $$
-P^{2}=P_\mu P^{\mu},\qquad W^{2}=W_\mu W^{\mu},
+P^{2}=\sum_\mu\varepsilon_\mu P_\mu P_\mu,\qquad W^{2}=\sum_\mu\varepsilon_\mu W_\mu W_\mu,
 $$
 
-with $\tilde W_\mu=\tfrac12\epsilon_{\mu\nu\rho\sigma}\tilde P^{\nu}\tilde M^{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-\hbar^{2}m^{2}c^{2}s(s+1)$, so the pair is the mass and the spin.
+with $\tilde W_\mu=\tfrac12\sum_{\nu,\sigma}\varepsilon_\nu\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}\tilde P_\nu\tilde M_{\rho\sigma}$ the Pauli–Lubanski vector. On a massive one-particle space $\tilde P^{2}=m^{2}c^{2}$ and $\tilde W^{2}=-\hbar^{2}m^{2}c^{2}s(s+1)$, so the pair is the mass and the spin.
 
 ### Why They Are Different Objects
 

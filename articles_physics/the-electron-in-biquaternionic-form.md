@@ -296,7 +296,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 ## Summary
 

@@ -21,7 +21,7 @@
 **The polar action is quadratic in the bracket, and in the scalar case the bracket is the phase's and the amplitude's derivatives.** With $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi=\partial_\mu\ln r+i\partial_\mu\theta_{\mathrm{pha}}$,
 
 $$
-\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\,\mathcal A_\mu\mathcal A^{\mu*}\bigr)=\rho_{\mathrm{fr}}\bigl[(\partial_\mu\ln r)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
+\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\varepsilon_\mu\mathcal A_\mu\mathcal A_\mu^{*}\bigr)=\rho_{\mathrm{fr}}\bigl[(\partial_\mu\ln r)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
 $$
 
 with $\rho_{\mathrm{fr}}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=r^{2}\cosh\theta_{\mathrm{rpd}}=r^{2}$ the scalar part of the frame density, the frame's rapidity being trivial at this rung, so the frame density and $\rho_{\mathrm{num}}$ are the same number. The two squares are separate because the bracket's real and imaginary parts are of different types and do not mix under the scalar part. Substituting $\rho_{\mathrm{fr}}=\rho_{\mathrm{num}}$ and multiplying by $\hbar^{2}/2m$ to put the terms in the fluid's units,

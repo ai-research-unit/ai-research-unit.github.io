@@ -8,7 +8,7 @@ Every element of the group is a boost times a rotation. The same group sits insi
 
 ## The Lorentz Group
 
-**The interval.** Write an event as $x^\mu=(x^0,\mathbf{x})$ with $x^0=ct$, and let
+**The interval.** Write an event as $x_\mu=(x^0,\mathbf{x})$ with $x^0=ct$, and let
 
 $$
 \eta=\operatorname{diag}(1,-1,-1,-1),\qquad

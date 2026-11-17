@@ -7,7 +7,7 @@
 **The article's subject is what the transform says about that widening, and the answer is a two-term symbol.** In the coupled theory the operator's symbol is the free symbol at a shifted four-wave-number, plus one extra term that is the curvature:
 
 $$
-\sigma_{\mathrm{gco}}\bigl(\pi\bigr)=\underbrace{\bigl(-\pi^{2}\delta^\mu{}_\nu-\pi^\mu\pi_\nu\bigr)}_{\text{the free symbol at }\pi}
+\sigma_{\mathrm{gco}}\bigl(\pi\bigr)=\underbrace{\bigl(-\pi^{2}\delta_{\mu\nu}-\pi_\mu\pi_\nu\bigr)}_{\text{the free symbol at }\pi}
 \;+\;\underbrace{\frac{i\varkappa}{\hbar}\,F^{(\Phi)\mu}{}_{\nu}}_{\text{the obstruction}} ,
 \qquad
 \pi_\mu=\hbar k_\mu-q A_\mu .
@@ -125,8 +125,8 @@ the difference being $\frac{i\varkappa}{\hbar}(F^{(1)}-F^{(2)})$ and nothing els
 **The mass term is a multiple of the identity and the obstruction is traceless, so the two additions are independent.** The coupled equation's symbol in the four-component reading is
 
 $$
-\sigma_{\mathrm{gco}}=\bigl(-\pi^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu+\frac{i\varkappa}{\hbar}F^{(\Phi)\mu}{}_{\nu}
--\pi^\mu\pi_\nu ,
+\sigma_{\mathrm{gco}}=\bigl(-\pi^{2}-k_m^{2}\bigr)\delta_{\mu\nu}+\frac{i\varkappa}{\hbar}F^{(\Phi)\mu}{}_{\nu}
+-\pi_\mu\pi_\nu ,
 $$
 
 so the mass appears in one diagonal entry of the decomposition and the curvature in a different one. **Neither can be written in terms of the other**, and the check is that the obstruction's trace is zero at every $k_m$ and the mass's is $-4k_m^{2}$ at every $F$.

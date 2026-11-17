@@ -723,7 +723,7 @@ $$
 $$
 -iR_{\mathrm{pau},\vec e_z}=i\,(iR_{\mathrm{pau},\vec e_x})(iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}),
 $$
-with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product.
+with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered, and a contravariant index is not allowed: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product.
 
 **The sixteen products are the sixteen basis operators.** The five frame operators are five basis operators up to a factor $i$, and the sixteen products of the five are the sixteen basis operators:
 
@@ -841,7 +841,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## The $2\times2$ Pauli Representation
 
 **Read last, and not because it is small.** The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.

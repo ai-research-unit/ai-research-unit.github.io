@@ -504,7 +504,7 @@ $$
 \sum_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\delta\gamma_\mu .
 $$
 
-With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\alpha\gamma_\beta\gamma_\delta$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
+With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $2\gamma_\alpha\gamma_\beta\gamma_\delta$. Without the weight only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the other three are index-dependent and are computed, not transcribed.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

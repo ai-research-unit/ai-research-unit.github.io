@@ -20,7 +20,7 @@
 **The definition.** The charged-current interaction in the mass basis carries
 
 $$
-\mathcal{L}_{W}\supset\frac{g}{\sqrt2}W^-_\mu\,\bar e_{L}\gamma^\mu U_{\mathrm{PMNS}}\,\nu_{L}+\text{h.c.},
+\mathcal{L}_{W}\supset\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^-_\mu\,\bar e_{L}\gamma_\mu U_{\mathrm{PMNS}}\,\nu_{L}+\text{h.c.},
 \qquad
 U_{\mathrm{PMNS}}=U_e^{\dagger}U_\nu ,
 $$

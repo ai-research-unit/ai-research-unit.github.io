@@ -54,7 +54,7 @@ The vector part of the material sector closes under the commutator and is $\math
 
 $$
 [e_a,e_b] = 2\,\varepsilon_{abc}\,e_c, \qquad
-T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad \mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab},
+T_a = \tfrac12 e_a,\quad [T_a,T_b] = \varepsilon_{abc}T_c,\quad 2\,\mathrm{Sc}(T_aT_b) = -\tfrac12\delta_{ab},
 $$
 
 and the material sector decomposes as a direct sum of Lie algebras,

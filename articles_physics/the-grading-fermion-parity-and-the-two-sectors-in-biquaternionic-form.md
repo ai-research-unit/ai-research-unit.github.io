@@ -249,16 +249,16 @@ $$
 \mathrm{tr}(\gamma_\mu\gamma_\nu\gamma_\rho\gamma_\sigma)
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The four contraction sums, with the index $\mu$ summed over the frame and the summed index raised by $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, are, for $A$ a product of $n$ distinct generators,
+The four contraction sums, with the index $\mu$ summed over the frame and the weight $\varepsilon_\mu$ carried on the sum, are, for $A$ a product of $n$ distinct generators,
 
 $$
-\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A ,
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A ,
 $$
 
-The metric sits in the raised index and nowhere else: with every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
+The weight sits in the sum and nowhere else: with no weight the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spacelike sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

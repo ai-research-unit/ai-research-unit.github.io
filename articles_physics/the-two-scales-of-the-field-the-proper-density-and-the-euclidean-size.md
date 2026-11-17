@@ -252,7 +252,7 @@ $$
 N(\tilde A_\Phi)=-m^{2}c^{2},\qquad r=mc=\sqrt{-N(\tilde A_\Phi)},\qquad \langle\tilde A_\Phi\rangle_{*}=m^{2}c^{2}\cosh2\theta_{\mathrm{rpd}},
 $$
 
-so the modulus is the mass and the density is the mass, $r^{2}=m^{2}c^{2}$, while the Euclidean size is the energy squared over $c^{2}$ at that rapidity. **The sign in $\sqrt{-N(\tilde A_\Phi)}$ is what makes $r$ real and positive on the timelike branch**, where the norm is negative [The Spin-One Fluid](the-spin-one-fluid.html); writing $\sqrt{-A^{2}}$ with the corpus's shorthand $A^{2}=A_\mu A^\mu$ invites a collision with the area and is not used here. **Each middle column is an exact identity for its carrier; the difference between the rows is the action of the boost on that carrier, and not a hierarchy of accuracy.**
+so the modulus is the mass and the density is the mass, $r^{2}=m^{2}c^{2}$, while the Euclidean size is the energy squared over $c^{2}$ at that rapidity. **The sign in $\sqrt{-N(\tilde A_\Phi)}$ is what makes $r$ real and positive on the timelike branch**, where the norm is negative [The Spin-One Fluid](the-spin-one-fluid.html); writing $\sqrt{-A^{2}}$ with the corpus's shorthand $A^{2}=\sum_\mu\varepsilon_\mu A_\mu A_\mu$ invites a collision with the area and is not used here. **Each middle column is an exact identity for its carrier; the difference between the rows is the action of the boost on that carrier, and not a hierarchy of accuracy.**
 
 ### The Factor of Two, and the Two Carriers
 

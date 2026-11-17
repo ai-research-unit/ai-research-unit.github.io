@@ -280,7 +280,7 @@ $$
 
 A single product $L_{a}R_{b}$ is a pure tensor $a\otimes b$; the single products form a seven-dimensional cone, of rank at most one, and a general element of the algebra is a sum of at most four of them.
 
-The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}\right)\gamma^\mu\gamma_5\tilde{Ξ}$ of the torsion literature.
+The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}\right)\gamma_\mu\gamma_5\tilde{Ξ}$ of the torsion literature.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 
@@ -313,7 +313,7 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-The weight $\varepsilon_\mu$ in the contractions below is exactly what raises the index, $\gamma^\mu=\varepsilon_\mu\gamma_\mu$, so the Hehl–Datta sum $\sum_\mu\varepsilon_\mu A_\mu c^{(5)}_\mu$ is the sources' $A_\mu\gamma^\mu\gamma_5$ with the sum written out.
+The weight $\varepsilon_\mu$ in the contractions below stands in place of a raised index, so the Hehl–Datta sum $\sum_\mu\varepsilon_\mu A_\mu c^{(5)}_\mu$ is the sources' $A_\mu\gamma_\mu\gamma_5$ with the sum written out.
 
 $S_{cd}=\tfrac14[\gamma_c,\gamma_d]$ is the Lorentz generator in the $\gamma$ basis, and the $\sigma_{\mu\nu}$ of the tensor bilinear is the same generator rescaled, $\sigma_{\mu\nu}=\tfrac i2[\gamma_\mu,\gamma_\nu]=2iS_{\mu\nu}$; the factor $2i$ is the whole difference between the two, and it is a convention.
 
@@ -328,7 +328,7 @@ $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\gamma ,
 $$
 
-In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the weights become signs and the sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a statement about the signs and not an identity of four dimensions alone.
+In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With no weight only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a statement about the signs and not an identity of four dimensions alone.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

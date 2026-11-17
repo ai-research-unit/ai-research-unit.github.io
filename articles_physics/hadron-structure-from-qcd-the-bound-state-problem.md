@@ -52,7 +52,7 @@ is a genuine quark-mass effect. It is the difference of two competing contributi
 **The classical statement.** For massless quarks the classical QCD Lagrangian has no dimensionful parameter, and the energy–momentum tensor is traceless:
 
 $$
-T^\mu_{\ \ \mu}=0\quad\text{classically, for }m_q=0 .
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=0\quad\text{classically, for }m_q=0 .
 $$
 
 A traceless conserved $T_{\mu\nu}$ is the statement that the theory is invariant under dilatations. The invariance is exact classically and it is not a symmetry of the world: the proton has a mass, and a mass term breaks it.
@@ -60,7 +60,7 @@ A traceless conserved $T_{\mu\nu}$ is the statement that the theory is invariant
 **The quantum statement.** The regularised trace is not zero, and its value is fixed by the same coefficient that governs the running:
 
 $$
-T^\mu_{\ \ \mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^{a\,\mu\nu}
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}
 =-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^{a\,\mu\nu}
 +\sum_f m_f\,\bar q_f q_f ,
 $$
@@ -70,7 +70,7 @@ with $b_0=11-\tfrac23N_f$ from [the running article](asymptotic-freedom-and-the-
 **The mass as a matrix element.** In the standard relativistic normalisation,
 
 $$
-m_p=\frac{1}{2m_p}\langle p|T^\mu_{\ \ \mu}|p\rangle ,
+m_p=\frac{1}{2m_p}\langle p|\sum_\mu\varepsilon_\mu T_{\mu\mu}|p\rangle ,
 $$
 
 so the mass is not a parameter of the Lagrangian: it is the expectation value of the trace in the proton state. This is the sentence that resolves the counting problem. The proton's mass is a property of a *state*, not of a term in a Lagrangian, and that is why the Lagrangian's parameters do not add up to it.
@@ -290,8 +290,8 @@ against the predicted $0.184$. The difference of $0.008$ is the size of the high
 |---|---|
 | $2m_u+m_d=9.0$ MeV, $0.96\%$ of $m_p$ | **Imported** quark masses; arithmetic here |
 | The constituent mass and its factor $156$ | **Imported** model; the factor computed here |
-| $T^\mu_{\ \ \mu}=\frac{\beta}{2g}G^2+\sum m_f\bar q_fq_f$ | **Imported.** The anomaly's framework reading is in the trace-anomaly article |
-| $m_p=\langle p\vert T^\mu_{\ \ \mu}\vert p\rangle/(2m_p)$ | **Imported** |
+| $\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta}{2g}G^2+\sum m_f\bar q_fq_f$ | **Imported.** The anomaly's framework reading is in the trace-anomaly article |
+| $m_p=\langle p\vert\sum_\mu\varepsilon_\mu T_{\mu\mu}\vert p\rangle/(2m_p)$ | **Imported** |
 | $\sigma_{\pi N}\approx45$ MeV, $\sigma_s\approx40$ MeV | **Imported**; the shares computed here |
 | $\Lambda=\mu e^{-2\pi/(b_0\alpha_s)}$ | **Imported**; the three values and the singularity table computed here |
 | $m_\pi^2f_\pi^2=-(m_u+m_d)\langle\bar qq\rangle$ | **Imported**; the numerical check in the pion article |
@@ -326,7 +326,7 @@ The framework represents the proton, the condensate, the anomaly and the winding
 |---|---|
 | $m_p$, $m_n$ | Proton and neutron masses |
 | $m_u$, $m_d$, $m_s$ | Current quark masses, $\overline{\mathrm{MS}}$ at $2$ GeV |
-| $T_{\mu\nu}$, $T^\mu_{\ \ \mu}$ | Energy–momentum tensor and its trace |
+| $T_{\mu\nu}$, $\sum_\mu\varepsilon_\mu T_{\mu\mu}$ | Energy–momentum tensor and its trace |
 | $\beta_{g_s}$, $b_0$ | Beta function and its one-loop coefficient, $11-\tfrac23N_f$; $b_0=9$ at three flavours |
 | $\alpha_s(\mu)$ | Strong coupling, always quoted with its scale |
 | $c=2\pi/b_0$ | Exponent coefficient of dimensional transmutation, $0.698$ at three flavours |

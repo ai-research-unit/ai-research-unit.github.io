@@ -191,7 +191,7 @@ Then $\nabla\cdot\vec A=\vec r\cdot(\nabla\times\nabla\psi)-\nabla\psi\cdot(\nab
 ## Open Questions
 
 1. **The spin part of the angular momentum.** The improvement is now carried out — it is the total derivative dropped in the derivation above — but the split of the angular momentum into orbital and spin parts with the corpus's conventions is not. The check for a future article is that its spin current reproduces the $\Sigma_{\mu\nu\lambda}$ of the section above and that the total agrees with the Noether current here.
-2. **The interaction.** The coupling to an external current replaces the right side by a source, and the Lorenz condition then becomes $\partial_\mu j^\mu=0$ rather than $S=0$. Whether the algebra's reading of the coupled equation adds anything to the standard one is not attempted; the corpus's gauge articles treat the massless case.
+2. **The interaction.** The coupling to an external current replaces the right side by a source, and the Lorenz condition then becomes $\sum_\mu\varepsilon_\mu\partial_\mu j_\mu=0$ rather than $S=0$. Whether the algebra's reading of the coupled equation adds anything to the standard one is not attempted; the corpus's gauge articles treat the massless case.
 3. **The path integral.** The action is the input of a path integral over $\mathbb{B}_\Phi$-valued configurations, and the mass term is what makes the quadratic form invertible. That is the subject of the quantization article and of the QFT block, and it is not attempted here.
 
 ## Summary

@@ -15,7 +15,7 @@ The algebra and the sign conventions are those of the corpus's field-strength ar
 $$
 F=\tfrac12F_{\mu\nu}\,dR^{\mu}\wedge dR^{\nu},
 \qquad
-F_{\mu\nu}=\frac{\partial A_\nu}{\partial R^{\mu}}-\frac{\partial A_\mu}{\partial R^{\nu}},
+F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
 $$
 
 with the six independent components organised into the electric and magnetic three-vectors:
@@ -51,7 +51,7 @@ They are not a four-vector and not a pair of three-vectors glued together by han
 In four dimensions the Hodge dual of a two-form is a two-form:
 
 $$
-\star F_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F^{\rho\sigma},
+\star F_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma},
 $$
 
 and on the $(\vec E,\vec B)$ pair it acts as

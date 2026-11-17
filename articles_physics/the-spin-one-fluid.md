@@ -6,7 +6,7 @@
 
 **Three statements make the article, and each is short.**
 
-*The Lorenz condition is the continuity equation.* The four-potential is the density times the unit flow, $A_\mu=r\,u_\mu$, so the divergence the Lorenz condition sets to zero is $\partial_\mu(r u^\mu)$ and nothing else. The condition is not an analogue of continuity; it is continuity.
+*The Lorenz condition is the continuity equation.* The four-potential is the density times the unit flow, $A_\mu=r\,u_\mu$, so the divergence the Lorenz condition sets to zero is $\sum_\mu\varepsilon_\mu\partial_\mu(r u_\mu)$ and nothing else. The condition is not an analogue of continuity; it is continuity.
 
 *The Euler equation has two forces, and only one of them is new.* The acceleration is the transverse gradient of the density's logarithm plus the field strength along the flow, $a_\mu=-\nabla_\mu\ln r-E_\mu/r$. The first is the pressure force of a fluid with $\epsilon=p=\frac12m^2r^2$, which is stiff; the second is the field strength, which no scalar and no spinor fluid has in this form.
 
@@ -16,7 +16,7 @@
 
 **The article is a reading and not a derivation.** The word, its two branches, the logarithmic derivative, the two polar equations and the Lorenz display are the polar article's. What is added here is the fluid identification, the Euler equation, the decomposition of the field strength, the equation of state, and the comparison with the other two fluid articles of the block.
 
-**A note on units of measure.** The flow is normalised to $u^\mu u_\mu=-1$, so the corpus's four-velocity is $v^\mu_\Phi=c\,u^\mu$ and the acceleration displayed is $a^\mu=u^\nu\partial_\nu u^\mu$; the physical acceleration is $c^2a^\mu$. The subscript $\Phi$ of the material sector is dropped where no confusion arises.
+**A note on units of measure.** The flow is normalised to $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$, so the corpus's four-velocity is $v_{\Phi,\mu}=c\,u_\mu$ and the acceleration displayed is $a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu$; the physical acceleration is $c^2a_\mu$. The subscript $\Phi$ of the material sector is dropped where no confusion arises.
 
 ## The Word, Read as Fluid Data
 
@@ -37,21 +37,21 @@ and the lightlike set $\langle\tilde A_\Phi\rangle_\natural=0$ is outside both. 
 $$
 \boxed{\;A_\mu=r\,u_\mu\;},
 \qquad
-r=\sqrt{-A_\mu A^\mu}>0,
+r=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}>0,
 \qquad
-u_\mu u^\mu=-1 ,
+\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1 ,
 $$
 
 so that $r$ is read off the field's own norm and $u$ off its direction. In the scalar case the density is $r^{2}$ of a complex coefficient and the current is a separate bilinear; in the Dirac case the current is $\rho_{\mathrm{num}}\tilde V_\Phi$, a product of two factors and not an element of the field. Here the field is the current, and the Lorenz condition is therefore a statement about the current and not about a derived object.
 
-**The two normalisations agree, and the check is one line.** Take $A_\mu$ from the word on the timelike branch with $\varepsilon=1$ and compute its norm: $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$, so $r$ of the word and $r$ of the normalisation are the same number. The recovery was run on a field with $r=2+\sin r_x$, rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane: $A_\mu A^\mu+r^{2}$ came out at exactly zero and $u_\mu u^\mu+1$ at exactly zero.
+**The two normalisations agree, and the check is one line.** Take $A_\mu$ from the word on the timelike branch with $\varepsilon=1$ and compute its norm: $\langle\tilde A_\Phi\rangle_\natural=-r^{2}$, so $r$ of the word and $r$ of the normalisation are the same number. The recovery was run on a field with $r=2+\sin r_x$, rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane: $\sum_\mu\varepsilon_\mu A_\mu A_\mu+r^{2}$ came out at exactly zero and $\sum_\mu\varepsilon_\mu u_\mu u_\mu+1$ at exactly zero.
 
 **Three fluid data at each event, and the fourth parameter is the charge's sign.**
 
 | datum | range | symbol | what it is |
 | --- | --- | --- | --- |
 | scale | $r>0$ | $r=\sqrt{-A^{2}}$ | proper density of the current |
-| direction | $u_\mu u^\mu=-1$ | $u_\mu=A_\mu/r$ | four-velocity, three parameters |
+| direction | $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ | $u_\mu=A_\mu/r$ | four-velocity, three parameters |
 | branch | $\varepsilon=\pm1$ | $\varepsilon$ | sign of the scalar potential |
 
 **The sign $\varepsilon$ is a label here, and this is the opposite of the spinor case.** In the Dirac word $\varepsilon$ is a *derived* function of the eight parameters, complex off the orthogonal locus, and [The Sign ε and the Rigidity Constraint on Σ₁₀](the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.html) proves it cannot be a label. In the material sector the field is real, the norm is real, and the sign of the scalar potential is genuinely discrete and genuinely free. The antiparticle of the spin-1 field is therefore visible in the word at the level of a sign, and the antiparticle of the spinor is not.
@@ -61,14 +61,14 @@ so that $r$ is read off the field's own norm and $u$ off its direction. In the s
 **The condition the polar article displays as one divergence is the divergence of the four-potential, and the four-potential is the current.** With $S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^\natural\tilde A_\Phi\bigr)$ the scalar part of the conjugate gradient,
 
 $$
-S=\partial_\mu A^\mu=\partial_\mu\bigl(r\,u^\mu\bigr) .
+S=\sum_\mu\varepsilon_\mu\,\partial_\mu A_\mu=\sum_\mu\varepsilon_\mu\,\partial_\mu\bigl(r\,u_\mu\bigr) .
 $$
 
 **So the Lorenz condition is the continuity equation of the fluid, exactly and not by analogy.** It is one equation on four parameters, it removes one, and the three that remain are the three helicities of a massive spin-1 field — which is the count the polar article states and [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html) reads from the field side.
 
 **What the polar article denies is the pair and not the single equation.** Its sentence that the Lorenz condition "is not a continuity equation" is a statement about the Madelung *pair*: in the scalar case the phase equation is continuity and the modulus equation is a Hamilton–Jacobi equation with the quantum potential, and the two close because the field is one complex function. Here the divergence is continuity and there is no second equation of that kind to pair it with, so the pair does not exist even though the first member does. **The distinction matters for what the fluid can be asked to do**: a continuity equation with no Hamilton–Jacobi partner carries no guidance and no quantum potential, which is §*The Scale and the Rapidity*.
 
-**The conservation is the conservation of the field's own current, so the density is not a probability.** $J^\mu=A^\mu$ is conserved on the Lorenz surface and its time component is $\gamma\varepsilon r$, which changes sign with the branch. The fluid's proper density $r$ is positive by construction and the charge density is signed, and the two are different objects — the same split that the scalar fluid carries between $\rho_{\mathrm{num}}$ and $\rho_{\mathrm{chg}}$.
+**The conservation is the conservation of the field's own current, so the density is not a probability.** $J_\mu=A_\mu$ is conserved on the Lorenz surface and its time component is $\gamma\varepsilon r$, which changes sign with the branch. The fluid's proper density $r$ is positive by construction and the charge density is signed, and the two are different objects — the same split that the scalar fluid carries between $\rho_{\mathrm{num}}$ and $\rho_{\mathrm{chg}}$.
 
 ## The Euler Equation
 
@@ -77,19 +77,19 @@ $$
 *Proposition.* Let $A_\mu=r u_\mu$ with $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$, let $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, let $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$, and let $\nabla_\mu=\sum_\nu\Delta_{\mu\nu}\partial_\nu$ with $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$. **No index is raised**: every contraction names its summed index, and the interval's $\varepsilon_\mu$ carries the weight wherever the value is displayed. Then
 
 $$
-\boxed{\;a_\mu=u^\nu\partial_\nu u_\mu=-\nabla_\mu\ln r-\frac{1}{r}E_\mu\;}
+\boxed{\;a_\mu=\sum_\nu\varepsilon_\nu\,u_\nu\partial_\nu u_\mu=-\nabla_\mu\ln r-\frac{1}{r}E_\mu\;}
 $$
 
-*Proof.* Differentiate $A_\mu=r u_\mu$ and contract with $u^\nu$:
+*Proof.* Differentiate $A_\mu=r u_\mu$ and contract with $u_\nu$, the weight $\varepsilon_\nu$ carried in the sum:
 
 $$
-u^\nu F_{\mu\nu}=u^\nu\partial_\mu\bigl(ru_\nu\bigr)-u^\nu\partial_\nu\bigl(ru_\mu\bigr)
-=\partial_\mu r-\bigl(u^\nu\partial_\nu r\bigr)u_\mu-r\,a_\mu ,
+\sum_\nu\varepsilon_\nu u_\nu F_{\mu\nu}=\sum_\nu\varepsilon_\nu u_\nu\partial_\mu\bigl(ru_\nu\bigr)-\sum_\nu\varepsilon_\nu u_\nu\partial_\nu\bigl(ru_\mu\bigr)
+=\partial_\mu r-\bigl(\sum_\nu\varepsilon_\nu u_\nu\partial_\nu r\bigr)u_\mu-r\,a_\mu ,
 $$
 
-where $\partial_\mu(u^\nu u_\nu)=0$ removes the middle term. The last two terms are $-\nabla_\mu r-r a_\mu$, and dividing by $r$ gives the display.
+where $\partial_\mu\bigl(\sum_\nu\varepsilon_\nu u_\nu u_\nu\bigr)=0$ removes the middle term. The last two terms are $-\nabla_\mu r-r a_\mu$, and dividing by $r$ gives the display.
 
-**The residual was checked symbolically and it is zero in all four components.** The configuration was $r=2+\sin r_x$ with rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane, chosen so that the density gradient, the flow and the vorticity are all non-trivial and mutually antisymmetric; $a_\mu+(E_\mu+\nabla_\mu r)/r$ vanished identically in each slot. The acceleration is orthogonal to the flow, $a_\mu u^\mu=0$, as it must be for a unit timelike field.
+**The residual was checked symbolically and it is zero in all four components.** The configuration was $r=2+\sin r_x$ with rapidity $r_x+r'_t r_y$ and direction in the $r_xr_y$ plane, chosen so that the density gradient, the flow and the vorticity are all non-trivial and mutually antisymmetric; $a_\mu+(E_\mu+\nabla_\mu r)/r$ vanished identically in each slot. The acceleration is orthogonal to the flow, $\sum_\mu\varepsilon_\mu a_\mu u_\mu=0$, as it must be for a unit timelike field.
 
 **The first force is a pressure force, and the equation of state it implies is stiff.** The gradient term is $-\nabla_\mu\ln r$, which is the enthalpy gradient of a fluid with
 
@@ -105,7 +105,7 @@ The mass term of the stress gives $\epsilon+p_{\mathrm{th}}=m^{2}r^{2}$ (§*The 
 
 *The flow is geodesic exactly when the field strength balances the density gradient.* $a_\mu=0$ if and only if $E_\mu=-\nabla_\mu r$. The field strength is then the unique transverse field that a density gradient requires, and the flow falls freely.
 
-*An irrotational flow is geodesic.* If $u_\mu=\partial_\mu\phi$ then $a_\mu=u^\nu\partial_\mu\partial_\nu\phi=\tfrac12\partial_\mu(u^\nu u_\nu)=0$, because the norm is constant. Conversely an irrotational flow has $A_\mu=r\partial_\mu\phi$ and $E_\mu=-\nabla_\mu r$ by the identity above, so the two statements are the same statement. **No irrotational Proca flow accelerates**, and that is the sharpest difference from the scalar fluid, whose acceleration is the gradient of the quantum potential and need not vanish.
+*An irrotational flow is geodesic.* If $u_\mu=\partial_\mu\phi$ then $a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\mu\partial_\nu\phi=\tfrac12\partial_\mu\bigl(\sum_\nu\varepsilon_\nu u_\nu u_\nu\bigr)=0$, because the norm is constant. Conversely an irrotational flow has $A_\mu=r\partial_\mu\phi$ and $E_\mu=-\nabla_\mu r$ by the identity above, so the two statements are the same statement. **No irrotational Proca flow accelerates**, and that is the sharpest difference from the scalar fluid, whose acceleration is the gradient of the quantum potential and need not vanish.
 
 ## The Field Strength Is the Vorticity Plus a Baroclinic Term
 
@@ -165,7 +165,7 @@ $$
 
 verified in the polar article to $10^{-9}$ on a smooth configuration. **The rapidity's gradient flows with density $r^{2}$**, and this is the closest the case comes to a transport equation for the flow's parameter.
 
-**That current is not the number current, and the difference is the whole reason the case is not a Madelung fluid.** The number current is $r u^\mu$, whose divergence is the Lorenz condition; the rapidity current is $r^{2}\partial^\mu\theta_{\mathrm{rpd}}$, which is not parallel to $u^\mu$ and has no continuity equation to be paired with in the frame's other components. **A flow whose rapidity gradient is a pure gradient in time has a rapidity current with no spatial part**, so the two currents are genuinely different objects and neither is a rewriting of the other. What the pair of equations gives is a density and a rapidity that determine each other, and not a phase that guides a particle.
+**That current is not the number current, and the difference is the whole reason the case is not a Madelung fluid.** The number current has components $r u_\mu$, whose divergence is the Lorenz condition; the rapidity current has components $r^{2}\varepsilon_\mu\partial_\mu\theta_{\mathrm{rpd}}$, which is not parallel to $u_\mu$ and has no continuity equation to be paired with in the frame's other components. **A flow whose rapidity gradient is a pure gradient in time has a rapidity current with no spatial part**, so the two currents are genuinely different objects and neither is a rewriting of the other. What the pair of equations gives is a density and a rapidity that determine each other, and not a phase that guides a particle.
 
 ## The Stress, and What the Word Cannot See
 
@@ -179,7 +179,7 @@ $$
 the mass term alone is the perfect-fluid form. Projecting it, $\sum_{\mu,\nu}u_\mu T_{\mu\nu}u_\nu$ and $\sum_{\mu,\nu}\Delta_{\mu\nu}T_{\mu\nu}$, and using $\sum_\mu\varepsilon_\mu A_\mu u_\mu=-r$, $A^{2}=-r^{2}$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$,
 
 $$
-\epsilon_{\mathrm{mass}}=m^{2}\Bigl(\bigl(A_\mu u^\mu\bigr)^{2}-\tfrac12u^{2}A^{2}\Bigr)=\tfrac12m^{2}r^{2},
+\epsilon_{\mathrm{mass}}=m^{2}\Bigl(\bigl(\sum_\mu\varepsilon_\mu A_\mu u_\mu\bigr)^{2}-\tfrac12u^{2}A^{2}\Bigr)=\tfrac12m^{2}r^{2},
 \qquad
 p_{\mathrm{mass}}=\tfrac13m^{2}\Bigl(\sum_{\mu,\nu}A_\mu A_\nu\Delta_{\mu\nu}-\tfrac12\sum_{\mu,\nu}g_{\mu\nu}\Delta_{\mu\nu}A^{2}\Bigr)=\tfrac12m^{2}r^{2}.
 $$
@@ -301,7 +301,7 @@ $$
 
 **A plane wave shows the wall and the reading on each side of it.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\tilde A_0$ constant and timelike, the polar article's word is $r=\lvert\cos\theta_{\mathrm{pwp}}\rvert\sqrt{-\langle\tilde A_0\rangle_\natural}$, a constant frame, and $\varepsilon=\mathrm{sign}\cos\theta_{\mathrm{pwp}}$. So the flow is rigid, the density vanishes on the nodal hyperplanes, and the branch flips at each of them.
 
-**The rigid flow is geodesic, and the check closes the article's Euler equation against its own word.** A constant $u$ has $a_\mu=0$, so by the Euler equation $E_\mu=-\nabla_\mu r$. The field strength of the plane wave is $F_{\mu\nu}=u_\nu\partial_\mu r-u_\mu\partial_\nu r$ because the frame is constant, so $E_\mu=F_{\mu\nu}u^\nu=-(\partial_\mu r+u_\mu u\cdot\partial r)=-\nabla_\mu r$ identically. **The identity holds and the two routes agree**: the rigid flow is the one whose field strength is exactly the density gradient, which is §*The Euler Equation*'s geodesic condition read on a plane wave.
+**The rigid flow is geodesic, and the check closes the article's Euler equation against its own word.** A constant $u$ has $a_\mu=0$, so by the Euler equation $E_\mu=-\nabla_\mu r$. The field strength of the plane wave is $F_{\mu\nu}=u_\nu\partial_\mu r-u_\mu\partial_\nu r$ because the frame is constant, so $E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu=-(\partial_\mu r+u_\mu\,u\cdot\partial r)=-\nabla_\mu r$ identically. **The identity holds and the two routes agree**: the rigid flow is the one whose field strength is exactly the density gradient, which is §*The Euler Equation*'s geodesic condition read on a plane wave.
 
 **The flow does not accelerate and the medium is not stress-free, and the two facts together are the article's most counter-intuitive consequence.** A plane wave has $a_\mu=0$ identically, so its flow falls freely; its stress is not zero, and its equation of state is stiff, $\epsilon=p=\tfrac12m^{2}r^{2}$. What balances the pressure gradient is the field-strength force $E_\mu/r$, which for an irrotational flow is exactly $-\nabla_\mu\ln r$. So an irrotational spin-one fluid is a medium with a stiff pressure that nevertheless moves on geodesics, because the pressure it carries is not the pressure that pushes it: the two forces cancel term by term. The nearest classical picture is a force-free magnetic configuration, where the stress is nonzero and nothing accelerates, and the analogy is exact at the level of the Euler equation and not at the level of the constitutive law.
 
@@ -311,7 +311,7 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That on the timelike branch the four-potential is the density times the unit flow, $A_\mu=ru_\mu$ with $r=\sqrt{-A^{2}}$, checked to vanish identically on a non-trivial configuration. That the Lorenz condition is the divergence of that current and therefore the continuity equation. That the acceleration is $a_\mu=-\nabla_\mu\ln r-E_\mu/r$, checked symbolically to zero in all four components. That $a_\mu u^\mu=0$, and that an irrotational flow is geodesic, by the two-line argument from $u=\partial\phi$. That the field strength decomposes as $F=\mathrm{d}r\wedge u+r\omega$, checked to zero in all sixteen slots. That $\omega\wedge\omega=0$ for every invertible element timelike flow while $\det F\ne0$ generically, the numerical values being $0$ and $0.3176$ on the two configurations used. That the mass term of the stress is a perfect fluid with $\epsilon=p=\tfrac12m^{2}r^{2}$, by direct projection with $u\otimes u$ and $\Delta$.
+**Established.** That on the timelike branch the four-potential is the density times the unit flow, $A_\mu=ru_\mu$ with $r=\sqrt{-A^{2}}$, checked to vanish identically on a non-trivial configuration. That the Lorenz condition is the divergence of that current and therefore the continuity equation. That the acceleration is $a_\mu=-\nabla_\mu\ln r-E_\mu/r$, checked symbolically to zero in all four components. That $\sum_\mu\varepsilon_\mu a_\mu u_\mu=0$, and that an irrotational flow is geodesic, by the two-line argument from $u=\partial\phi$. That the field strength decomposes as $F=\mathrm{d}r\wedge u+r\omega$, checked to zero in all sixteen slots. That $\omega\wedge\omega=0$ for every invertible element timelike flow while $\det F\ne0$ generically, the numerical values being $0$ and $0.3176$ on the two configurations used. That the mass term of the stress is a perfect fluid with $\epsilon=p=\tfrac12m^{2}r^{2}$, by direct projection with $u\otimes u$ and $\Delta$.
 
 **Not claimed.** That the spin-one fluid is a Bohmian fluid; it is not, and its quantum content is a shear energy and not a guidance term. That the correspondence makes the fluid self-contained; it does not, since the force is its own field. That the spin-one fluid's equation of state is $p=\epsilon$ beyond the mass term; the field-strength part is not a fluid and the full stress is not perfect. That the transverse force $E_\mu/r$ has a thermodynamic reading; it is a force and not a pressure gradient. That the two polar equations have a fluid closure in the general frame; the fixed-axis reduction is the polar article's and the general case is open there. That the spacelike branch has a fluid reading; this article gives none and argues that none is available.
 
@@ -338,18 +338,18 @@ $$
 | $\tilde A_\Phi$ | the Proca potential, an element of $\mathbb{B}_\Phi$ |
 | $A_\mu$ | its four components in the frame |
 | $r=\sqrt{-A^{2}}$ | the proper density, positive on the timelike branch |
-| $u_\mu=A_\mu/r$ | the unit four-velocity, $u_\mu u^\mu=-1$ |
+| $u_\mu=A_\mu/r$ | the unit four-velocity, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ |
 | $\varepsilon=\pm1$ | the branch label, the sign of the scalar potential |
 | $\tilde U_{\Psi,\mathrm b}$ | the boost of the word |
 | $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$ | the frame's connection, the Maurer–Cartan form |
 | $\theta_{\mathrm{rpd}}$ | the rapidity, the flow's parameter on a fixed axis |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | the field strength |
-| $E_\mu=F_{\mu\nu}u^\nu$ | the field strength along the flow |
+| $\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$ | the field strength along the flow |
 | $\omega_{\mu\nu}=\partial_\mu u_\nu-\partial_\nu u_\mu$ | the vorticity two-form |
-| $a_\mu=u^\nu\partial_\nu u_\mu$ | the acceleration, orthogonal to the flow |
+| $a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu$ | the acceleration, orthogonal to the flow |
 | $\Delta_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$ | the projector onto the rest space |
 | $\nabla_\mu=\sum_\nu\Delta_{\mu\nu}\partial_\nu$ | the transverse gradient |
-| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^\natural\tilde A_\Phi)$ | the Lorenz scalar, equal to $\partial_\mu A^\mu$ |
+| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^\natural\tilde A_\Phi)$ | the Lorenz scalar, equal to $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$ |
 | $k_m=mc/\hbar$ | the mass wave number |
 | $\langle\tilde Q\rangle_\natural$ | the quaternionic norm |
 

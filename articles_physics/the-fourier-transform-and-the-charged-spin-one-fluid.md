@@ -65,7 +65,7 @@ $$
 \tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)=0\ \text{at each label}.
 $$
 
-**The free companion's finding is the same statement and this display is its sharpest form.** There the Lorenz condition of a mode is $k_\mu u^\mu=0$, the transversality of the polarisation, checked at $2.2\times10^{-16}$; here the same condition is read as a locality. **The free fluid's incompressibility is therefore not a physical property of a medium but a property of the constraint's symbol**: the divergence is a multiplier, a multiplier is diagonal in the label, and a diagonal condition is one condition per label.
+**The free companion's finding is the same statement and this display is its sharpest form.** There the Lorenz condition of a mode is $\sum_\mu\varepsilon_\mu k_\mu u_\mu=0$, the transversality of the polarisation, checked at $2.2\times10^{-16}$; here the same condition is read as a locality. **The free fluid's incompressibility is therefore not a physical property of a medium but a property of the constraint's symbol**: the divergence is a multiplier, a multiplier is diagonal in the label, and a diagonal condition is one condition per label.
 
 **With the coupling the symbol is no longer diagonal, and the fluid acquires the compressibility the parent names.** The parent says the free incompressibility was the mass's gift and is the $ϙ=0$ case. This article says what the gift is: **the mass is what makes the constraint's right-hand side vanish at $ϙ=0$, and a vanishing right-hand side is a diagonal condition.** A nonzero right-hand side is a product, and a product is a convolution.
 
@@ -91,7 +91,7 @@ $$
 | vector, free | the field's own norm | yes |
 | vector, charged | a chart coordinate | no |
 
-**The last row is the only "no" in the table, and it is the coupling's doing.** The free vector fluid's scale is $\sqrt{-A_\mu A^\mu}$, an invariant; the charged one's is an amplitude whose square is the modulus of a complex number times a phase. **The reality of the field was what made the scale an observable, and the phase that the coupling introduces is what stops it being one.**
+**The last row is the only "no" in the table, and it is the coupling's doing.** The free vector fluid's scale is $\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$, an invariant; the charged one's is an amplitude whose square is the modulus of a complex number times a phase. **The reality of the field was what made the scale an observable, and the phase that the coupling introduces is what stops it being one.**
 
 **What survives is the response and the direction.** The response $m^{2}\tilde A$ has the field's own support, and the direction $\tilde A/r$ is the field's up to the chart's normalisation. **So the mode basis sees the response and cannot see which current is conserved**, which is the previous section's statement in the language of the three currents, and the two sections are one.
 

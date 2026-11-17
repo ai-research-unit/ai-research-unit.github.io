@@ -308,7 +308,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Gauge algebra inside $\mathbb{B}_{\Phi}$ |
-| $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
+| $T_a=\tfrac12 \vec e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1}=\bar{\tilde U}=\tilde U^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} \vec e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |
 | $\kappa =\frac{ϙ}{\hbar}$ | Coupling |

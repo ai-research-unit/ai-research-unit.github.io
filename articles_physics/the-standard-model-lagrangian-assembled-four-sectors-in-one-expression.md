@@ -10,7 +10,7 @@
 
 **Two results, stated now.** The assembly yields two quantitative results that no single-sector article states.
 
-- **The sign rule.** The corpus's bookkeeping and the standard one differ by one identity, $\sum_\mu X_\mu Y_\mu = -X_\mu Y^\mu$, and with it every display below is the standard display. The scalar kinetic term carries a minus sign in the corpus and a plus sign in a standard text, and both are the same term.
+- **The sign rule.** The corpus's bookkeeping and the standard one differ by one identity, $\sum_\mu X_\mu Y_\mu = -X\cdot Y$, and with it every display below is the standard display. The dot is the text's contraction, written without an index placement; the series never prints it as a raised index. The scalar kinetic term carries a minus sign in the corpus and a plus sign in a standard text, and both are the same term.
 - **The redundancy.** Written out, the four sectors and the vacuum-angle term carry sixty real parameters. Physical content is nineteen. Forty-one parameters are removed by field redefinitions that change no physics, and the removal is graded: twenty-six in the quark sector, fifteen in the lepton sector.
 
 **The order.** The four sectors and why there are four, then the dictionary, then the sectors one at a time, then the sum, then the audit, then the count, then what the expression omits, then the corpus's own action beside the standard one.
@@ -37,19 +37,19 @@
 **The rule.** For two sets of four coefficients $X_\mu$, $Y_\mu$ written this way,
 
 $$
--\sum_\mu X_\mu Y_\mu = X_\mu Y^\mu ,
+-\sum_\mu X_\mu Y_\mu = X\cdot Y ,
 $$
 
 where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
 
-**The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the metric $(+,-,-,-)$ gives $X_kY^k=-X_kY_k$, so $X_\mu Y^\mu=X_0Y^0+\sum_\eta X_kY^k=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
+**The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
 
 **The two places it bites.** The rule fixes the sign of a kinetic term and nothing else in this article.
 
-- **The scalar.** A text in the standard metric writes $+\tfrac12\partial_\mu\xi\partial^\mu\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\nabla\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\nabla\xi)^2$.
-- **The gauge field.** A text writes $-\tfrac14F_{\mu\nu}F^{\mu\nu}$. The rule turns it into $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$, which is the corpus's display. Here the sign is unchanged, because the double sum over two indices cancels the single flip.
+- **The scalar.** A text in the standard metric writes $+\tfrac12\partial\xi\cdot\partial\xi$ for a real scalar. The rule turns it into $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$, which is exactly the corpus's scalar Lagrangian of [Stress–Energy Conservation Laws and the Field Action](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), whose expansion $-\tfrac12[-\left(\partial\xi/\partial r'_t\right)^2+(\nabla\xi)^2]$ is the standard $\tfrac12\dot\xi^2-\tfrac12(\nabla\xi)^2$.
+- **The gauge field.** A text writes $-\tfrac14F\cdot F$. The rule turns it into $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$, which is the corpus's display. Here the sign is unchanged, because the weight over the two indices cancels the flip.
 
-**The check that the two writings are one Lagrangian.** With $A_t=iA_0$ and $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$, the temporal components are $F_{t\eta}=iE_\eta$ and the spatial ones are $F_{\eta l}=\epsilon_{\eta lm}B_m$. Then $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2\sum_\eta F_{t\eta}F_{t\eta}+\sum_{\eta l}F_{\eta l}F_{\eta l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F_{\mu\nu}F^{\mu\nu}$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
+**The check that the two writings are one Lagrangian.** With $A_t=iA_0$ and $F_{\mu\nu}=\partial A_\nu/\partial R_\mu-\partial A_\mu/\partial R_\nu$, the temporal components are $F_{t\eta}=iE_\eta$ and the spatial ones are $F_{\eta l}=\epsilon_{\eta lm}B_m$. Then $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2\sum_\eta F_{t\eta}F_{t\eta}+\sum_{\eta l}F_{\eta l}F_{\eta l}=-2E^2+2B^2$, and $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$, which is the standard $-\tfrac14F\cdot F$ evaluated on the same fields. The energy comes out positive in both writings; the corpus's own stress–energy article fixes the sign on that requirement.
 
 **The derivative.** The corpus writes $\partial/\partial R_\mu$, and the time derivative of a material coordinate is $\partial/\partial r'_t=-i\,\partial/\partial R_t$. The two are never mixed in one display. A fermion bilinear's sign, which the rule does not fix because the bilinear carries the spin structure, is the subject of [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and is quoted there rather than restated here.
 
@@ -289,8 +289,8 @@ Each $3\times3$ complex matrix carries nine complex entries, that is eighteen re
 
 | Standard object | Corpus object | Identity |
 |---|---|---|
-| $-\tfrac14F_{\mu\nu}F^{\mu\nu}$ | $-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
-| $+\tfrac12\partial_\mu\xi\partial^\mu\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
+| $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
+| $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
 | $\lvert D_\mu\varphi\rvert^2$ | $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$ | the same |
 | the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\kappa\tilde\Xi$ | the Dirac article's pair |
 | $\varphi^\dagger\varphi$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
@@ -305,7 +305,7 @@ Each $3\times3$ complex matrix carries nine complex entries, that is eighteen re
 
 The Standard Model Lagrangian is the sum of four sectors plus the vacuum-angle term: the three gauge kinetic terms $-\tfrac14\sum G G$, $-\tfrac14\sum W W$, $-\tfrac14\sum BB$; one fermion kinetic term per Weyl field, fifteen per generation, each built on the covariant gradient carrying the connection in that field's representation; the scalar kinetic term and the potential $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)+\mu^2\varphi^\dagger\varphi-\lambda(\varphi^\dagger\varphi)^2$; and the three Yukawa matrices with the conjugate doublet $\tilde\varphi$ of hypercharge $-\tfrac12$ in the up-type term. The assembly is one notation and one sign rule.
 
-The sign rule is $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial_\mu\xi\partial^\mu\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F_{\mu\nu}F^{\mu\nu}$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
+The sign rule is $\sum_\mu X_\mu Y_\mu=-X\cdot Y$, proved in one line from $X_t=iX_0$ and the metric of the interval. It converts the corpus's $-\tfrac12\sum\partial\xi\partial\xi$ into the standard $+\tfrac12\partial\xi\cdot\partial\xi$, converts its $-\tfrac14\sum FF$ into the standard $-\tfrac14F\cdot F$ with no change of sign, and leaves the two writings one Lagrangian: the abelian check gives $\sum_{\mu\nu}F_{\mu\nu}F_{\mu\nu}=2(B^2-E^2)$ and hence $\tfrac12(E^2-B^2)$ on both sides.
 
 The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\varphi^\dagger\varphi$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
@@ -331,7 +331,7 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | $M_H=\sqrt{2\lambda}\,v$ | The scalar mass |
 | $\theta_{\mathrm{QCD}}$ | The vacuum angle |
 | $G^a_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G^a_{\rho\sigma}$ | The dual field strength |
-| $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$ | The sign rule of §*The Dictionary* |
+| $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ | The sign rule of §*The Dictionary* |
 | $\partial/\partial R_\mu$ | The corpus derivative, with $\partial/\partial r'_t=-i\partial/\partial R_t$ |
 
 ## Further Reading

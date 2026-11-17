@@ -6,9 +6,9 @@
 
 **The operator's symbol is a four-by-four matrix, and it is the first in the corpus whose rank moves.** The Klein–Gordon symbol is one scalar, the Schrödinger symbol is one affine scalar, and the Dirac symbol is a two-by-two matrix whose rank is two wherever it does not vanish. The Proca symbol has rank four off the mass shell and rank one on it. **Three numbers follow from that single fact** — four off, one on, three in the kernel — and they are the whole of the article's content.
 
-**The determinant is a product of two factors with different multiplicities, and the multiplicities are the physics.** In the four-component reading the symbol is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, whose determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$. The cubic factor is the three polarisations of the parent's count; the single factor $-k_m^{2}$ is the longitudinal direction, and it does not vanish on the shell. **The mass is what keeps one direction out of the kernel**, and it is why the count is three and not two.
+**The determinant is a product of two factors with different multiplicities, and the multiplicities are the physics.** In the four-component reading the symbol is $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$, whose determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$. The cubic factor is the three polarisations of the parent's count; the single factor $-k_m^{2}$ is the longitudinal direction, and it does not vanish on the shell. **The mass is what keeps one direction out of the kernel**, and it is why the count is three and not two.
 
-**The rank is the same for the massive and the massless field, and the difference is one membership.** On the mass shell the kernel is the Lorenz plane, three-dimensional, in both cases. The massless field's kernel contains one more direction than the Lorenz plane does — the wave number itself — and that direction is the gauge orbit. So the two fields have the same kernel dimension and different propagating counts, and the difference is whether $k^\mu$ is annihilated. **That is the frequency-space form of "the Lorenz condition is implied here and chosen there"**, and it is checked to machine precision.
+**The rank is the same for the massive and the massless field, and the difference is one membership.** On the mass shell the kernel is the Lorenz plane, three-dimensional, in both cases. The massless field's kernel contains one more direction than the Lorenz plane does — the wave number itself — and that direction is the gauge orbit. So the two fields have the same kernel dimension and different propagating counts, and the difference is whether $k_\mu$ is annihilated. **That is the frequency-space form of "the Lorenz condition is implied here and chosen there"**, and it is checked to machine precision.
 
 **The massless limit is a failure of invertibility and not a discontinuity of the spectrum.** As $k_m\to0$ the determinant does not merely acquire a new zero: it vanishes at every wave number, so the symbol is invertible nowhere in the limit. The parent's discontinuous degrees-of-freedom count and the Stueckelberg device are the position-space faces of this one fact.
 
@@ -67,9 +67,9 @@ so the symbol is $k^{2}-k_m^{2}$ less the rank-one piece $-i\tilde K_\Phi[kA]$, 
 **In components the same matrix is displayed once and used throughout.** With the four-vector amplitude $(a_t',\vec a)$ and the four-wave-number $(k_t',\vec k_\Phi)$,
 
 $$
-\sigma=\bigl(k^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu-k^\mu k_\nu ,
+\sigma=\bigl(k^{2}-k_m^{2}\bigr)\delta_{\mu\nu}-k_\mu k_\nu ,
 \qquad
-k^\mu=\bigl(k_t',-\kappa_x,-\kappa_y,-\kappa_z\bigr) ,
+k_\mu=\bigl(k_t',-\kappa_x,-\kappa_y,-\kappa_z\bigr) ,
 \qquad
 k_\nu=\bigl(k_t',\kappa_x,\kappa_y,\kappa_z\bigr) ,
 $$
@@ -109,7 +109,7 @@ The wave vector is $\vec k_\Phi=(0.3,0.2,0.1)$ throughout and $k_m=0.7$, so $k_m
 **On the shell the rank is one.** At $k_t'=\sqrt{0.63}$ the singular values are $\{0.77,0,0,0\}$, so the rank is one and the kernel is three-dimensional. **The one surviving direction is the wave number itself**, and the three annihilated directions span the Lorenz plane. The two statements are one computation:
 
 $$
-\sigma k^\mu=-k_m^{2}k^\mu ,
+\sigma k_\mu=-k_m^{2}k_\mu ,
 \qquad
 \sigma A=0\iff[kA]=0\ \text{and}\ k^{2}=k_m^{2},
 $$
@@ -132,7 +132,7 @@ each of unit length and each annihilated to $9\times10^{-17}$. **The kernel is t
 
 **The two derivations of the plane are independent and they coincide.** The parent differentiates the equation, takes the scalar part, and finds $k_m^{2}S=0$. The transform reads the symbol's kernel and finds the same plane. **One is a divergence and the other is a null space**, and their agreement is the reason the constraint is not an extra condition imposed on the amplitude: it is the set of directions the operator does not see.
 
-**The fourth direction is not annihilated, and its eigenvalue is the mass.** The wave number itself is an eigenvector with eigenvalue $-k_m^{2}$, verified to $1.1\times10^{-16}$. **So the amplitude along $k^\mu$ is not removed by the operator; it is multiplied by $-k_m^{2}$**, and the equation sets it to zero only through its coupling to the transverse part. That is what "the longitudinal mode is physical for a massive field" means in the symbol's language, and it is the exact counterpart of the massless case, where the same direction is annihilated outright.
+**The fourth direction is not annihilated, and its eigenvalue is the mass.** The wave number itself is an eigenvector with eigenvalue $-k_m^{2}$, verified to $1.1\times10^{-16}$. **So the amplitude along $k_\mu$ is not removed by the operator; it is multiplied by $-k_m^{2}$**, and the equation sets it to zero only through its coupling to the transverse part. That is what "the longitudinal mode is physical for a massive field" means in the symbol's language, and it is the exact counterpart of the massless case, where the same direction is annihilated outright.
 
 **The polarisation count is read off the kernel and not off the rank.** Three annihilated directions and one amplified direction, and the amplified one is the direction whose removal would leave two. **The count is the kernel's dimension**, and §*The Count, and the Two Ranks in the Corpus* shows that the same sentence gives two for the massless field once the gauge orbit is subtracted.
 
@@ -142,7 +142,7 @@ each of unit length and each annihilated to $9\times10^{-17}$. **The kernel is t
 
 | | dof-count article | this article |
 | --- | --- | --- |
-| map | left multiplication by $i\tilde K_\Phi$ | the Proca symbol $\sigma^\mu{}_\nu$ |
+| map | left multiplication by $i\tilde K_\Phi$ | the Proca symbol $\sigma_{\mu\nu}$ |
 | domain and codomain | vector part, $3\to4$ | four-vector, $4\to4$ |
 | off the shell / off the cone | rank $3$ | rank $4$ |
 | on the shell / on the cone | rank $2$ | rank $1$ |
@@ -152,7 +152,7 @@ each of unit length and each annihilated to $9\times10^{-17}$. **The kernel is t
 
 **The massless column is where the two computations separate visibly.** For $k_m=0$ the symbol has rank three off the cone and one on it, and the count follows from one formula applied four times:
 
-| field | surface | rank | $\dim\ker$ | $k^\mu$ in kernel | gauge orbit | count |
+| field | surface | rank | $\dim\ker$ | $k_\mu$ in kernel | gauge orbit | count |
 | --- | --- | --- | --- | --- | --- | --- |
 | Proca | $k^{2}=k_m^{2}$ | $1$ | $3$ | no | $0$ | $3$ |
 | Proca | $k^{2}\neq k_m^{2}$ | $4$ | $0$ | — | — | $0$ |
@@ -183,7 +183,7 @@ The wave number is fixed at $k_t'=1.5$ with $\vec k_\Phi=(0.3,0.2,0.1)$, so no e
 
 ## The Symbol Is Even
 
-**The Proca symbol is even in the four-wave-number, exactly.** $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$ to machine precision, $0.00\times10^{0}$ in the largest entry difference, because both terms are quadratic: $k^{2}$ is a square and $k^\mu k_\nu$ is a product of two. **The Klein–Gordon scalar is even for the same reason, the Dirac symbol is odd, and the Schrödinger symbol is neither.**
+**The Proca symbol is even in the four-wave-number, exactly.** $\sigma(-\tilde K_\Phi)=\sigma(\tilde K_\Phi)$ to machine precision, $0.00\times10^{0}$ in the largest entry difference, because both terms are quadratic: $k^{2}$ is a square and $k_\mu k_\nu$ is a product of two. **The Klein–Gordon scalar is even for the same reason, the Dirac symbol is odd, and the Schrödinger symbol is neither.**
 
 **The parity is a slot and not a coincidence.** The gradient's symbol is $i\tilde K_\Phi$ and the Proca operator is second order, so its symbol is quadratic in that symbol; an operator of even order in a first-order symbol is even. **The evenness is therefore the statement that the Proca operator is second order**, and it is the property the polar companion turns into the absence of a central bracket and the variational companion turns into a two-valued inversion.
 
@@ -211,11 +211,11 @@ The wave number is fixed at $k_t'=1.5$ with $\vec k_\Phi=(0.3,0.2,0.1)$, so no e
 
 ## Summary
 
-The Proca operator's symbol, in the four-component reading, is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$ with $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ and $k_t'=\omega/c$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$ and its determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$, verified against direct evaluation at $k_t'=0.5$, $\sqrt{0.63}$ and $1.6$ with $k_m=0.7$.
+The Proca operator's symbol, in the four-component reading, is $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$ with $k^{2}=k_t'^{2}-\vec k_\Phi^{2}$ and $k_t'=\omega/c$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$ and its determinant is $-k_m^{2}(k^{2}-k_m^{2})^{3}$, verified against direct evaluation at $k_t'=0.5$, $\sqrt{0.63}$ and $1.6$ with $k_m=0.7$.
 
 Off the mass shell the rank is four, the kernel is empty, and the symbol is invertible with smallest singular value $0.191$. On the shell the rank is one, the kernel is three-dimensional, and it is the Lorenz plane: the three null vectors satisfy $[kA]=0$ to $3\times10^{-17}$. The wave number itself is an eigenvector with eigenvalue $-k_m^{2}$, verified to $1.1\times10^{-16}$, so the longitudinal amplitude is multiplied rather than annihilated. **That is why the massive field has three polarisations and not two.**
 
-The count is the kernel's dimension minus the gauge orbit's dimension inside it: $3-0=3$ for the Proca field on the shell and $3-1=2$ for the Maxwell field on the cone. **The two fields have the same rank and the same kernel dimension and differ in one membership** — whether $k^\mu$ is annihilated. That single fact is the frequency-space form of "the Lorenz condition is implied here and chosen there".
+The count is the kernel's dimension minus the gauge orbit's dimension inside it: $3-0=3$ for the Proca field on the shell and $3-1=2$ for the Maxwell field on the cone. **The two fields have the same rank and the same kernel dimension and differ in one membership** — whether $k_\mu$ is annihilated. That single fact is the frequency-space form of "the Lorenz condition is implied here and chosen there".
 
 The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls from $2.083$ to $2.9\times10^{-15}$ as $k_m$ goes from $0.7$ to $0$ at a wave number four per cent from its own shell, which is the linear factor's vanishing and nothing else. The symbol is even in the wave number to machine precision, and that evenness is the second order of the operator — read by the polar companion as an absent bracket and by the variational companion as a two-valued inversion.
 
@@ -228,7 +228,7 @@ The massless limit is a failure of invertibility: $\lvert\det\sigma\rvert$ falls
 | $k_m=mc/\hbar$ | The mass wave number; $k_m^{2}=0.49$ at $k_m=0.7$ |
 | $\tilde A_\Phi=i\,a_t'e_t+\vec A$ | The potential; $(a_t',\vec a)$ its four-vector amplitude |
 | $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$ | The Lorenz form of the amplitude; symbol of $S$ up to $-i$ |
-| $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$ | The Proca symbol |
+| $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$ | The Proca symbol |
 | $\{m^{2},m^{2},m^{2},-k_m^{2}\}$, $m^{2}=k^{2}-k_m^{2}$ | The eigenvalues; three transverse, one longitudinal |
 | $\det\sigma=-k_m^{2}(k^{2}-k_m^{2})^{3}$ | The determinant; multiplicities $1$ and $3$ |
 | rank $4$ / rank $1$ | Off the shell / on the shell |

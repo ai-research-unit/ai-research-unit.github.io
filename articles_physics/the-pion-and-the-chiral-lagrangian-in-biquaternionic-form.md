@@ -20,7 +20,7 @@ and the chiral Lagrangian is the sum of the Hermitian norms of its four derivati
 
 The findings are the following.
 
-- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$; from them the generators $T_\eta = \tfrac{i}{2}\vec e_\eta$ satisfy $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, and $[T_j,T_\eta] = i\sum_l\epsilon_{j\eta l}T_l$. Expanding the biquaternion chiral Lagrangian,
+- **Established, and recomputed below.** The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$; from them the generators $T_\eta = \tfrac{i}{2}\vec e_\eta$ satisfy $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, equivalently $2\,\mathrm{Sc}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, and $[T_j,T_\eta] = i\sum_l\epsilon_{j\eta l}T_l$. Expanding the biquaternion chiral Lagrangian,
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right),
 $$
@@ -120,7 +120,7 @@ $$
 \left[T_j,T_\eta\right] = i\sum_l\epsilon_{j\eta l}T_l .
 $$
 
-The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ and $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$. The factor $i$ in $T_\eta$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_\eta^{*} = -\vec e_\eta$.
+The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}\mathsf M_2(T_jT_\eta) = \tfrac12\delta_{j\eta}$ and $\mathrm{Tr}\mathsf M_2(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$. The factor $i$ in $T_\eta$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_\eta^{*} = -\vec e_\eta$.
 
 ## The Chiral Lagrangian
 
@@ -375,7 +375,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector,
@@ -403,7 +403,7 @@ $$
 = \frac12\left[\sum_\eta\left(\frac{\partial\pi_\eta}{\partial r'_t}\right)^2-\sum_\eta\sum_j\left(\frac{\partial\pi_\eta}{\partial R_j}\right)^2\right] + O(\pi^4)\;},
 $$
 
-with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$ for $T_\eta = \tfrac{i}{2}\vec e_\eta$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ with $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.
+with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$ for $T_\eta = \tfrac{i}{2}\vec e_\eta$, equivalently $\mathrm{Tr}\mathsf M_2(T_jT_\eta) = \tfrac12\delta_{j\eta}$ with $\mathrm{Tr}\mathsf M_2(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.
 
 The quark mass element adds the symmetry-breaking term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives the degenerate $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.
 
@@ -423,7 +423,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\vec\pi = \sum_\eta\pi_\eta\vec e_\eta\in\mathfrak{su}(2)\subset\mathbb{B}_{\Phi}$ | Pion triplet; isovector adjoint |
 | $[\vec e_j,\vec e_\eta] = 2\sum_l\epsilon_{j\eta l}\vec e_l$ | Compact algebra of the framework |
 | $T_\eta = \tfrac{i}{2}\vec e_\eta$ | Hermitian generators of the triplet |
-| $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$ | The identities fixing the normalisation |
+| $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, $2\,\mathrm{Sc}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$ | The identities fixing the normalisation |
 | $\tilde U = \exp(\vec\pi/f_\pi)$, $\langle\tilde U\rangle_\natural = e_t$ | Chiral field (unit real quaternion) |
 | $\tilde u = \exp(\vec\alpha/2)$ | Adjoint rotation element (isospin rotor) |
 | $\tilde U\mapsto g_L\tilde U g_R^{*}$ | Chiral transformation; diagonal $SU(2)_V$ unbroken |
@@ -441,7 +441,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5\eta}\rangle_{\natural} = f_\pi m_\pi^2\pi_\eta$ | PCAC |
 | $g_Am_N = f_\pi g_{\pi NN}$ | Goldberger–Treiman relation (spin-$\tfrac12$ companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, used for index contractions; the $\gamma$ identities of *The Legacy Pauli Gamma Formulation* use the weight with the opposite sign, $-\varepsilon_\mu\delta_{\mu\nu}$ |
-| $\mathrm{Tr}$ | The trace of the algebra, used in $\mathrm{Tr}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§*Norm and Pairing Conventions*) |
+| $\mathrm{Tr}$ | The trace of the algebra, used in $2\,\mathrm{Sc}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§*Norm and Pairing Conventions*) |
 | $j,k,l$ | Triplet indices, written low; every contraction over them is an explicit sum |
 
 ## Further Reading

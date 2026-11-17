@@ -49,7 +49,7 @@ with $r\ge0$ the scale, $\varepsilon=\pm1$ the branch label, $\theta_{\mathrm{rp
 
 **The invariant is the only one the field carries.** $\langle\tilde A_\Phi\rangle_\natural=-(a_t')^{2}+\vec A^{2}$, real and indefinite, and the two branches are its two signs. On a mode the same number is $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$, an indefinite quadratic form on the amplitude. **Everything the article says about the branch is a statement about that form.**
 
-**The symbol, quoted from the form companion.** The Proca operator's symbol in the four-component reading is $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$, acting on the amplitude by $(\sigma A)_\mu=(k^{2}-k_m^{2})A_\mu-k_\mu[kA]$ with $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$. **The chart reading is a decomposition of this matrix into the four types, and the decomposition is the section that follows.**
+**The symbol, quoted from the form companion.** The Proca operator's symbol in the four-component reading is $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$, acting on the amplitude by $(\sigma A)_\mu=(k^{2}-k_m^{2})A_\mu-k_\mu[kA]$ with $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$. Its eigenvalues are $\{k^{2}-k_m^{2},k^{2}-k_m^{2},k^{2}-k_m^{2},-k_m^{2}\}$. **The chart reading is a decomposition of this matrix into the four types, and the decomposition is the section that follows.**
 
 **The denial of the Legendre reading, once.** The parent's chart is a chart of the field, and the transform's variable is not one of its parameters. The corpus has a second conjugacy — the polar variational parent's canonical momenta, four of which vanish — and it is a Legendre conjugacy, not a Fourier one. **§*Limits* records the distinction and the article uses it nowhere else.**
 
@@ -58,8 +58,8 @@ with $r\ge0$ the scale, $\varepsilon=\pm1$ the branch label, $\theta_{\mathrm{rp
 **The chart's bracket slots and the symbol's parts are the same slots, and the symbol fills two of the four.** A general element of $\mathbb{B}$ splits into a real central part, an imaginary central part, a Hermitian vector part and an anti-Hermitian vector part, and the polar word's four brackets are the gradients of the four parameters that generate those parts. The Proca symbol splits the same way, and only two of the four parts are non-zero:
 
 $$
-\sigma=\underbrace{\bigl(k^{2}-k_m^{2}\bigr)\delta^\mu{}_\nu}_{\text{scalar part: the scale slot}}
-\;-\;\underbrace{k^\mu k_\nu}_{\text{rank-one part: the frame slot}} ,
+\sigma=\underbrace{\bigl(k^{2}-k_m^{2}\bigr)\delta_{\mu\nu}}_{\text{scalar part: the scale slot}}
+\;-\;\underbrace{k_\mu k_\nu}_{\text{rank-one part: the frame slot}} ,
 \qquad
 \text{imaginary central part}=0 ,
 \qquad
@@ -70,7 +70,7 @@ $$
 
 **On the material sector the imaginary central slot is empty, and that is the parent's whole point.** The material potential is $\tilde A_\Phi=i\,a_t'e_t+\vec A$ with real coefficients, and the polar word's parameter count is four: the scale, the rapidity, the boost axis and the spacelike direction. **Four parameters, four components, and no angle among them** — which is the parent's "the same eight parameters would be four redundant", read as a statement about which slots the carrier can fill.
 
-**In frequency space the empty slot is not an absence of a coefficient but a symmetry of the matrix.** The symbol has no imaginary central part for a free Proca field, because $k^{2}-k_m^{2}$ and $k^\mu k_\nu$ are both real. **The matrix is real, so it commutes with complex conjugation, and a real matrix cannot generate a phase** — which is the algebraic form of the parent's sentence that the material sector "loses the phase".
+**In frequency space the empty slot is not an absence of a coefficient but a symmetry of the matrix.** The symbol has no imaginary central part for a free Proca field, because $k^{2}-k_m^{2}$ and $k_\mu k_\nu$ are both real. **The matrix is real, so it commutes with complex conjugation, and a real matrix cannot generate a phase** — which is the algebraic form of the parent's sentence that the material sector "loses the phase".
 
 **What replaces the phase is the frame, and the symbol carries it in its vector part.** The parent's third and fourth rows — the rapidity's Hermitian vector and the axis's real vector — are the two vector types of the symbol. **So the chart's positive content is the symbol's vector part and its negative content is the symbol's missing central slot**, and the next section makes the negative content a measurement.
 
@@ -80,7 +80,7 @@ $$
 
 | theory | object | parity | measured |
 | --- | --- | --- | --- |
-| Proca | $\sigma^\mu{}_\nu$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
+| Proca | $\sigma_{\mu\nu}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Klein–Gordon | $k^{2}-k_m^{2}$ | even | $\lvert\sigma(-K)-\sigma(K)\rvert=0.00\times10^{0}$ |
 | Dirac | $i\tilde K_\Phi-k_m$ | odd | $\lvert\sigma(-K)+\sigma(K)\rvert=2k_m=1.400000$ |
 | Schrödinger | $-\hbar\omega-h_t$ | neither | $\lvert\sigma(-\omega)+\sigma(\omega)\rvert=2h_t=1.000000$ |
@@ -201,7 +201,7 @@ What the transform does with the piecewiseness is relocate it. A Fourier mode is
 | $r,\ \varepsilon,\ \theta_{\mathrm{rpd}},\ \hat u_{\mathrm b},\ \hat u$ | Scale, branch label, rapidity, boost axis, spacelike direction |
 | $\langle A\rangle_\natural=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ | The invariant; an indefinite quadratic form on the amplitudes |
 | $[kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a$ | The Lorenz form of a mode; the parent's $S$ up to $-i$ |
-| $\sigma^\mu{}_\nu=(k^{2}-k_m^{2})\delta^\mu{}_\nu-k^\mu k_\nu$ | The Proca symbol, quoted from the form companion |
+| $\sigma_{\mu\nu}=(k^{2}-k_m^{2})\delta_{\mu\nu}-k_\mu k_\nu$ | The Proca symbol, quoted from the form companion |
 | $0.00\times10^{0}$ / $1.400000$ | The measured parity residuals for the even and the odd symbol |
 
 ## Further Reading

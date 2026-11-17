@@ -5,7 +5,7 @@
 Linearized gravity is general relativity's weak-field limit. The metric is the flat interval plus a small perturbation,
 
 $$
-g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}r_x^2+\mathrm{d}r_y^2+\mathrm{d}r_z^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu,\qquad |h_{\mu\nu}| \ll 1,
+\sum_{\mu,\nu}g_{\mu\nu}\,\mathrm{d}r_\mu\,\mathrm{d}r_\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}r_x^2+\mathrm{d}r_y^2+\mathrm{d}r_z^2+\sum_{\mu,\nu}h_{\mu\nu}\,\mathrm{d}r_\mu\,\mathrm{d}r_\nu,\qquad |h_{\mu\nu}| \ll 1,
 $$
 
 and the field equations are expanded to first order in $h$. What results is a linear theory of a symmetric rank-two field $h_{\mu\nu}$ that has the shape of a gauge theory: a gauge freedom, a gauge-invariant field strength (the linearized Riemann tensor), a trace-reversal, a harmonic gauge in which the vacuum equations reduce to a wave equation, and two propagating polarizations. It is the gravitational analogue of Maxwell's theory, and it is the setting in which gravitational waves are computed.
@@ -472,19 +472,19 @@ $$
 
 The sign change is the one convention change in the translation: the time basis operator has $\gamma_0^2=+I_4$, while the material time basis vector has $\langle\varepsilon_0,\varepsilon_0\rangle_{\natural}=-1$.
 
-The contraction sums depend only on the squares of the basis operators, not on the representation, and they are fixed once the summed index is raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$:
+The contraction sums depend only on the squares of the basis operators, not on the representation, and they are fixed once the weight sits on the summed index:
 
 $$
-\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,
 $$
 
 $$
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
-\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha.
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha.
 $$
 
-For a product of $n$ distinct generators they are one rule, $\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the rest are index-dependent and are computed, not transcribed: $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$ and $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$ for $\eta=1,2,3$.
+For a product of $n$ distinct generators they are one rule, $\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$; the rest are index-dependent and are computed, not transcribed: $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$ and $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$ for $\eta=1,2,3$.
 
 **The two Dirac equations.** Two equations carry the name in this corpus: the one-sided chirality pair and Kravchenko's two-sided equation. They share the $\gamma$ frame and are related by the dictionary, but they are not the same equation and must not be read as one. The one-sided pair, which is the flat form of the equation meant in the body above, is
 
@@ -535,7 +535,7 @@ What the algebra supplies is the kinematic fibre of linearized gravity and the f
 | $x_\mu = (r'_{t},r_x,r_y,r_z)$, $\partial/\partial x_\mu$ | Real coordinates and their derivatives; the framework's imaginary time is $i x_0$ |
 | $\partial/\partial R_t = -i\partial/\partial x_0$ | Relation of the framework's imaginary time derivative to $\partial/\partial x_0$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_\mu\partial^2/\partial R_\mu^2$ | Biquaternionic gradient, conjugate, d'Alembertian |
-| $g_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}\vec r^2+h_{\mu\nu}\,\mathrm{d}r_x^\mu\mathrm{d}r_x^\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
+| $\sum_{\mu,\nu}g_{\mu\nu}\,\mathrm{d}r_\mu\,\mathrm{d}r_\nu = -c^2\mathrm{d}r_t^{\prime 2}+\mathrm{d}\vec r^2+\sum_{\mu,\nu}h_{\mu\nu}\,\mathrm{d}r_\mu\,\mathrm{d}r_\nu$ | Linearized metric: the flat interval plus the perturbation $h_{\mu\nu}$ |
 | $\tilde{E}_{\Phi}_\mu = \varepsilon_\mu + \delta\tilde{E}_{\Phi}_\mu$ | Frame field and frame perturbation, $\delta\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$ |
 | $h_{\mu\nu} = \langle\varepsilon_\mu,\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural} + \langle\delta\tilde{E}_{\Phi}_\mu,\varepsilon_\nu\rangle_{\natural}$ | Metric perturbation carried by the frame perturbation |
 | $h = -h_{00}+h_{11}+h_{22}+h_{33} = 2\sum_\nu\langle\varepsilon_{\mathrm{du},\nu},\delta\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | Trace of the metric perturbation |

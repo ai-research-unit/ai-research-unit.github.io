@@ -25,7 +25,7 @@ and the source article's ledger is that the eight real parameters are the eight 
 
 *First, the carrier doubles and the free branches are the real slice.* The free word was a scale, a direction and a discrete sign; the coupled word is a scale, a continuous phase, a boost and a rotor. **The discrete sign of the free fluid is the real slice of the continuous phase**, and the rotor is a parameter the free word had no room for.
 
-*Second, the density decouples from the field's norm.* The free article could write $r=\sqrt{-A_\mu A^\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **The scale is a coordinate of the chart and not a property of the field**, and the density the fluid carries is a choice of the chart's normalisation.
+*Second, the density decouples from the field's norm.* The free article could write $r=\sqrt{-\sum_\mu\varepsilon_\mu A_\mu A_\mu}$ because the field was real; here the invariant $\tilde A\tilde A^{\natural}$ is the complex number $r^{2}e^{2i\vartheta_{\mathrm{pha}}}$, and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial. **The scale is a coordinate of the chart and not a property of the field**, and the density the fluid carries is a choice of the chart's normalisation.
 
 *Third, the constraint and the divergence are two different statements.* The scalar part of the coupled equation forces the covariant Lorenz condition, exactly and blindly to the frame; the *ordinary* divergence is then not zero, and its value is the field's own amplitude.
 
@@ -107,7 +107,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 **The check that the identification must fail.** On the free word the charge current vanishes identically, because the field is real and its conjugate is itself; on the coupled word it does not. **A quantity that is zero on the free slice cannot become the density under a coupling that does not change the word's meaning**, and the free article's "the field is the current" is therefore not a statement that survives as an approximation — it is a statement about the real slice.
 
-**What survives.** The velocity's normalisation survives in a modified form: the free article's $u_\mu u^\mu=-1$ becomes the statement that $\tilde A/r$ is invertible *element* of the algebra, and its four-vector reading is the boost's. **The free velocity's unit character is the boost's and not the field's**, which the coupled word makes visible because the boost is a separate factor.
+**What survives.** The velocity's normalisation survives in a modified form: the free article's $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$ becomes the statement that $\tilde A/r$ is invertible *element* of the algebra, and its four-vector reading is the boost's. **The free velocity's unit character is the boost's and not the field's**, which the coupled word makes visible because the boost is a separate factor.
 
 ## Three Currents
 
@@ -125,7 +125,7 @@ and nothing else. The phase, the rapidity, the axis and the rotor are angles and
 
 ## The Lorenz Condition Is No Longer the Continuity Equation
 
-**The free article's identification was exact: the Lorenz condition and the divergence of the current were the same equation.** With $A_\mu=ru_\mu$, the condition $\partial_\mu A^\mu=0$ is $\partial_\mu(ru^\mu)=0$, and the article's sentence is that the condition "is not an analogue of continuity; it is continuity". **The coupled case separates them**, and the separation is exact and computable.
+**The free article's identification was exact: the Lorenz condition and the divergence of the current were the same equation.** With $A_\mu=ru_\mu$, the condition $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0$ is $\sum_\mu\varepsilon_\mu\partial_\mu(r u_\mu)=0$, and the article's sentence is that the condition "is not an analogue of continuity; it is continuity". **The coupled case separates them**, and the separation is exact and computable.
 
 **The identity.** The natural divergence of the covariant derivative differs from the ordinary one by the sum of the squares of the coefficients:
 

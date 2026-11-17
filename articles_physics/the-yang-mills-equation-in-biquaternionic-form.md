@@ -375,7 +375,7 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
-| $T_a = \tfrac12 e_a$, $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
+| $T_a = \tfrac12 e_a$, $2\,\mathrm{Sc}(T_aT_b) = -\tfrac12\delta_{ab}$ | Normalized generators; matrix trace |
 | $\tilde U(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde U^{-1} = \bar{\tilde U} = \tilde U^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$, $\mathcal{A} = \sum_\mu\mathcal{A}_\mu e_\mu$ | Non-abelian connection |
 | $\kappa =\frac{ϙ}{\hbar}$ | Coupling |

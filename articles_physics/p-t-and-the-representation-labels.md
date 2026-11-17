@@ -27,9 +27,9 @@ The translations commute, so the algebra is not simple, and its Casimirs are not
 Two independent Casimir operators exist:
 
 $$
-C_1=\tilde P^{2}=\tilde P_\mu\tilde P^{\mu},
+C_1=\tilde P^{2}=\sum_\mu\varepsilon_\mu\tilde P_\mu\tilde P_\mu,
 \qquad
-C_2=\tilde W^{2}=-\tilde W_\mu\tilde W^{\mu},
+C_2=\tilde W^{2}=-\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde W_\mu,
 $$
 
 with $\tilde W_\mu$ the Pauli–Lubanski vector defined below. "Casimir" means commuting with all ten generators, so their eigenvalues are constant on an irreducible module.
@@ -70,22 +70,22 @@ $C_1=m^{2}c^{2}$ defines the mass shell: a three-dimensional hyperboloid in mome
 ### The Definition
 
 $$
-\tilde W_\mu=\tfrac12\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}\tilde M^{\nu\rho}\tilde P^{\sigma}.
+\tilde W_\mu=\tfrac12\sum_{\nu,\rho,\sigma}\varepsilon_\nu\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}\tilde M_{\nu\rho}\tilde P_\sigma.
 $$
 
 It is the contraction of the Lorentz generators with the momentum, weighted by the alternating symbol; equivalently, it is the spin part of the angular momentum projected onto the momentum.
 
 ### The Three Properties
 
-- $\tilde W_\mu\tilde P^{\mu}=0$: the vector is orthogonal to the momentum, identically, because the alternating symbol is antisymmetric in a pair and $P^{\sigma}P^{\mu}$ is symmetric.
+- $\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde P_\mu=0$: the vector is orthogonal to the momentum, identically, because the alternating symbol is antisymmetric in a pair and $P_\sigma P_\mu$ is symmetric.
 - $[\tilde W_\mu,\tilde P_\nu]=0$: the Pauli–Lubanski vector is translation invariant, since it is built from $P$ bilinearly after the contraction.
-- $[\tilde W_\mu,\tilde W_\nu]$ is proportional to $\epsilon_{\mu\nu\rho\sigma}\tilde W^{\rho}\tilde P^{\sigma}$, so the $\tilde W$'s close among themselves only on a fixed momentum shell.
+- $[\tilde W_\mu,\tilde W_\nu]$ is proportional to $\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}\tilde W_\rho\tilde P_\sigma$, so the $\tilde W$'s close among themselves only on a fixed momentum shell.
 
 The second property is what makes $C_2$ a Casimir: a quantity built from $P$ and $M$ that commutes with $P$ and whose square commutes with $M$ is central.
 
 ### The Scalar
 
-$C_2=-\sum_\mu\tilde W_\mu\tilde W^{\mu}$ is the invariant content of the vector. On the rest frame of a massive particle,
+$C_2=-\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde W_\mu$ is the invariant content of the vector. On the rest frame of a massive particle,
 
 $$
 W_0=0,\qquad \vec W=\pm mc\vec S,
@@ -135,13 +135,13 @@ and the spin's one parameter is discrete. The rest of the representation is the 
 
 ### The Proportionality
 
-On the cone, $\tilde W_\mu\tilde P^{\mu}=0$ and $\tilde W$ is orthogonal to a null vector, so $\tilde W$ is either proportional to $\tilde P$ or spacelike. The physical (finite-dimensional) case is the proportional one:
+On the cone, $\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde P_\mu=0$ and $\tilde W$ is orthogonal to a null vector, so $\tilde W$ is either proportional to $\tilde P$ or spacelike. The physical (finite-dimensional) case is the proportional one:
 
 $$
 \tilde W_\mu=h\,\tilde P_\mu ,
 $$
 
-with $h$ a constant on the module. Then $C_2=-\sum\tilde W_\mu\tilde W^{\mu}=h^{2}\cdot 0=0$, so the second Casimir *vanishes* on the massless orbit and the label $h$ is not read from it.
+with $h$ a constant on the module. Then $C_2=-\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde W_\mu=h^{2}\cdot 0=0$, so the second Casimir *vanishes* on the massless orbit and the label $h$ is not read from it.
 
 ### The Helicity
 
@@ -215,14 +215,14 @@ The two readings are used in different articles of the block for different purpo
 
 ## Summary
 
-The Poincaré algebra has two Casimirs, $C_1=p^{2}$ and $C_2=-\sum_\mu W_\mu W^{\mu}$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
+The Poincaré algebra has two Casimirs, $C_1=p^{2}$ and $C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $C_1=\tilde P^{2}$ | the momentum Casimir |
-| $C_2=-\sum_\mu\tilde W_\mu\tilde W^{\mu}$ | the Pauli–Lubanski Casimir |
+| $C_2=-\sum_\mu\varepsilon_\mu\tilde W_\mu\tilde W_\mu$ | the Pauli–Lubanski Casimir |
 | $\mathcal{C}_{1,2}$ | the Casimirs of the Lorentz algebra, a different pair |
 | $\tilde W_\mu$ | the Pauli–Lubanski vector |
 | $(m,j)$ | the massive labels |

@@ -14,7 +14,7 @@ The earlier exercises treated a single qubit, an entangled pair in the singlet s
 The exercise is built directly on the parent articles. The two-qubit arena — the tensor-product algebra $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, its trace, and the partial traces — is fixed by *Entangled Subsystems in the Biquaternion Framework*. The four Bell idempotents $\tilde\Pi_\epsilon$ and their classification by the sign pattern $\epsilon_1\epsilon_2\epsilon_3=+1$ are fixed by *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*. The correlation function
 
 $$
-E(\vec a_1, \vec b_1) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\,\bigl((i\vec a_1)\otimes(i\vec b_1)\bigr)\right) = -\sum_{j\in\{x,y,z\}}\epsilon_j\,a_{1j} b_{1j}
+E(\vec a_1, \vec b_1) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_\epsilon\,\bigl((i\vec a_1)\otimes(i\vec b_1)\bigr)\right) = -\sum_{j\in\{x,y,z\}}\epsilon_j\,a_{1j} b_{1j}
 $$
 
 is the result of *Exercise: The Correlation Function of the Bell States*, and it is the input to every quantum computation below. No Bell idempotent is re-derived; the exercise applies the parent results.
@@ -25,7 +25,7 @@ First, **the framework reproduces both bounds; it does not explain why nature st
 
 Second, the sharp bound is obtained **after** the identification $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, by the spectral norm of that matrix algebra. The framework's own positive-definite quadratic form, the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, is (up to the trace normalisation) the Frobenius norm of the matrix image, and it yields only the trivial bound $4$. This is a genuine gap in the framework's internal resources, and it is labelled as such in the biquaternion solution: the framework does not contain, by itself, the norm that gives Tsirelson's bound. What it contains is the algebra whose matrix representation carries that norm.
 
-The conventions are those of the companion articles: the algebra, the invertibles, the sectors and the trace are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. On the tensor product the trace factorises, $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ with $\mathrm{Tr}_\mathbb{B}(e_t)=2$ and $\mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0$. The isomorphism $\mathsf{M}_2$ is the one fixed by *Quantum Physics in Biquaternionic Form* (*Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*), whose image of $i\vec e_\eta$ is $\sigma_\eta$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
+The conventions are those of the companion articles: the algebra, the invertibles, the sectors and the trace are those of *Algebra and Element Conventions* and *Norm and Pairing Conventions*, and none is restated here. On the tensor product the scalar part factorises, $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, with $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\eta)=0$; the trace of the $4\times4$ image, where it is used, is $4\,\mathrm{Sc}$. The isomorphism $\mathsf{M}_2$ is the one fixed by *Quantum Physics in Biquaternionic Form* (*Matrix Representations Conventions*, §*The $2\times2$ Pauli Representation*), whose image of $i\vec e_\eta$ is $\sigma_\eta$; the three Pauli matrices are written $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$.
 
 ## The Exercise
 
@@ -259,7 +259,7 @@ $$
 a single Hermitian element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$. The glyph carries no tilde: the tilde marks an element of $\mathbb{B}$ read as a four-vector, with its scalar part beside its vector part, and $\mathcal{S}$ is an element of the tensor square, with no $e_t\otimes e_t$ term. Because the isomorphism $\vec e_\eta\mapsto-i\sigma_\eta$ carries $i\vec a_1$ to $\vec a_1\cdot\boldsymbol{\sigma}$ and respects the tensor product, it carries $\mathcal{S}$ to the Bell operator $S$ of the standard formulation. The CHSH combination is therefore the Born pairing of the state with one element of the algebra,
 
 $$
-S = \mathrm{Tr}\bigl(\tilde\Pi_\epsilon\,\mathcal{S}\bigr),
+S = 4\,\mathrm{Sc}\bigl(\tilde\Pi_\epsilon\,\mathcal{S}\bigr),
 $$
 
 and every statement about $S$ is a statement about $\mathcal{S}$.
@@ -285,7 +285,7 @@ It is worth recording the same content in the language of **joint probabilities*
 
 $$
 p_\epsilon(\pm,\pm\mid\vec a_1,\vec b_1)
-= \mathrm{Tr}\Bigl(\tilde\Pi_\epsilon\,\bigl(\tilde\Pi(\pm\vec a_1)\otimes \tilde\Pi(\pm\vec b_1)\bigr)\Bigr).
+= 4\,\mathrm{Sc}\Bigl(\tilde\Pi_\epsilon\,\bigl(\tilde\Pi(\pm\vec a_1)\otimes \tilde\Pi(\pm\vec b_1)\bigr)\Bigr).
 $$
 
 Expanding the product of idempotents gives $p(+,+)=p(-,-)=\tfrac14\bigl(1+E(\vec a_1,\vec b_1)\bigr)$ and $p(+,-)=p(-,+)=\tfrac14\bigl(1-E(\vec a_1,\vec b_1)\bigr)$ — the cross terms vanish because the single-particle expectations $\langle\sigma_j\otimes I\rangle$ and $\langle I\otimes\sigma_\eta\rangle$ are zero in every Bell state — and the CHSH combination is the corresponding combination of joint probabilities,
@@ -360,15 +360,15 @@ $$
 u=\vec a_1\times\vec a_2,\;\; v=\vec b_1\times\vec b_2 .
 $$
 
-The image of $\mathcal{S}^2$ is therefore $4\bigl[I\otimes I-(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})\bigr]$, with eigenvalues $4(1\mp|u||v|)$; the eigenvalues of the image of $\mathcal{S}$ are $\pm2\sqrt{1\mp|u||v|}$, and the largest of these is $2\sqrt{1+|u||v|}\le2\sqrt{2}$ because $|u||v|=|\sin\theta_{a_1a_2}||\sin\theta_{b_1b_2}|\le1$. Hence the trace of the product with the $4\times4$ image obeys $|\mathrm{Tr}(\tilde\Pi_\epsilon\,\mathcal{S})|\le2\sqrt{2}$ for every Bell state, and — the operator-norm argument being state-independent — for every state of the two-qubit algebra, pure or mixed. Tsirelson's bound is recovered.
+The image of $\mathcal{S}^2$ is therefore $4\bigl[I\otimes I-(u\cdot\boldsymbol{\sigma})\otimes(v\cdot\boldsymbol{\sigma})\bigr]$, with eigenvalues $4(1\mp|u||v|)$; the eigenvalues of the image of $\mathcal{S}$ are $\pm2\sqrt{1\mp|u||v|}$, and the largest of these is $2\sqrt{1+|u||v|}\le2\sqrt{2}$ because $|u||v|=|\sin\theta_{a_1a_2}||\sin\theta_{b_1b_2}|\le1$. Hence the Born pairing obeys $|4\,\mathrm{Sc}(\tilde\Pi_\epsilon\,\mathcal{S})|\le2\sqrt{2}$ for every Bell state, and — the operator-norm argument being state-independent — for every state of the two-qubit algebra, pure or mixed. Tsirelson's bound is recovered.
 
-It is at this point that the gap flagged in the introduction becomes concrete. The bound above is a statement about **eigenvalues of the matrix image**, i.e. about the spectral norm of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The framework's own positive-definite norm — the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, which corresponds to the Frobenius norm of the matrix image — is not strong enough to give it. Indeed, taking the trace of the boxed identity,
+It is at this point that the gap flagged in the introduction becomes concrete. The bound above is a statement about **eigenvalues of the matrix image**, i.e. about the spectral norm of $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$. The framework's own positive-definite norm — the Euclidean form $\mathrm{Sc}(x x^{*})$ of the companion articles, which corresponds to the Frobenius norm of the matrix image — is not strong enough to give it. Indeed, applying $4\,\mathrm{Sc}$ to the boxed identity,
 
 $$
-\mathrm{Tr}\bigl(\mathcal{S}^2\bigr) = 4\,\mathrm{Tr}(e_t\otimes e_t) + 4\,\mathrm{Tr}\bigl((\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\bigr) = 16 + 0 = 16,
+4\,\mathrm{Sc}\bigl(\mathcal{S}^2\bigr) = 16\,\mathrm{Sc}(e_t\otimes e_t) + 16\,\mathrm{Sc}\bigl((\vec a_1\times\vec a_2)\otimes(\vec b_1\times\vec b_2)\bigr) = 16 + 0 = 16,
 $$
 
-because the cross-product factor is traceless in each tensor factor. The Frobenius norm of $\mathcal{S}$ is accordingly $4$ for every configuration, and the Cauchy–Schwarz bound on the Born pairing with a state of unit Frobenius norm is $|S|\le4$ — the trivial no-signaling bound, not $2\sqrt{2}$. The Euclidean form does not distinguish the singlet's alignment of the four settings from a generic one. The sharp bound requires the spectral norm, and that norm is carried by the matrix representation, not by the algebra's own quadratic form. We leave this as a labelled gap rather than presenting the algebra as if it contained the bound on its own.
+because the cross-product factor has zero scalar part in each tensor factor. The Frobenius norm of $\mathcal{S}$ is accordingly $4$ for every configuration, and the Cauchy–Schwarz bound on the Born pairing with a state of unit Frobenius norm is $|S|\le4$ — the trivial no-signaling bound, not $2\sqrt{2}$. The Euclidean form does not distinguish the singlet's alignment of the four settings from a generic one. The sharp bound requires the spectral norm, and that norm is carried by the matrix representation, not by the algebra's own quadratic form. We leave this as a labelled gap rather than presenting the algebra as if it contained the bound on its own.
 
 ## The Three Bounds
 
@@ -454,8 +454,8 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (states, observables) |
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, cyclic products |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\mathrm{Tr}_\mathbb{B}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace on a single factor |
-| $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
+| $2\,\mathrm{Sc}(\tilde H_\Psi)$ | Trace of the $2\times2$ image of one element |
+| $4\,\mathrm{Sc}(x\otimes y)=4\,\mathrm{Sc}(x)\mathrm{Sc}(y)$ | Trace of the $4\times4$ image on the tensor product |
 | $e_t\mapsto I_2,\ \vec e_\eta\mapsto-i\sigma_\eta$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$; image of $i\vec e_\eta$ is $\sigma_\eta$ |
 | $\vec a_1,\vec a_2,\vec b_1,\vec b_2$ | Alice's and Bob's measurement directions |
 | $A_1=\vec a_1\cdot\boldsymbol{\sigma},\ A_2=\vec a_2\cdot\boldsymbol{\sigma},\ B_1=\vec b_1\cdot\boldsymbol{\sigma},\ B_2=\vec b_2\cdot\boldsymbol{\sigma}$ | Single-qubit observables, spectrum $\{\pm1\}$ |

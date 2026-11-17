@@ -127,12 +127,12 @@ The local phase is a symmetry of the coupled action, so it has a Noether current
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\Bigr],
 \qquad
-J^{\eta}=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\Bigr)\Bigr],
+J_{\eta}=\mathrm{Re}\,\mathrm{Sc}\Bigl[i\Bigl(\tilde\Xi_R^{*}\vec e_\eta\tilde\Xi_R-\tilde\Xi_L^{*}\vec e_\eta\tilde\Xi_L\Bigr)\Bigr],
 $$
 
 with $\sum_\mu\partial_\mu J_\mu=0$ on solutions. **The time component is a sum over the parts and the spatial component is a difference.** The difference is not an error and it is not a convention: the two parts carry conjugate spatial derivatives, and a current built from them inherits the relative sign.
 
-**The three writings are one object.** The display above, the polar reading $J^{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J^{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
+**The three writings are one object.** The display above, the polar reading $J_{t}=\rho\cosh\theta_{\mathrm{rpd}}$, $J_{\eta}=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, and the Gordon pairing
 
 $$
 j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr),
@@ -257,7 +257,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | $\lambda=e^{iϙ\Gamma/\hbar}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |
 | $\mathcal{L}$ | The Lagrangian density: the integrand of $S$ |
-| $J^{t},J^{\eta}$ | Noether current of the local phase; sum over parts, difference over parts |
+| $J^{t},J_\eta$ | Noether current of the local phase; sum over parts, difference over parts |
 | $j_\mu$ | The same current as a pairing with two frame units |
 | $\tilde J_{\Phi,\mathrm{sp}}=i\tilde\Xi\tilde\Xi^{*}$ | The naive bilinear: gauge invariant, density sign, **not conserved** |
 | $T_{\mu\nu}$ | Stress tensor; covariant gradient in the current |

@@ -99,7 +99,7 @@ which is $\partial_{r'_{t}}(\rho_{\mathrm{num}}\partial_{r'_{t}}S)-\vec\nabla_\P
 
 **It is identical on the full action, because the deleted block has no $\theta_{\mathrm{pha}}$.** Both derivatives of the Lagrangian with respect to the phase are the same expression before and after the deletion, so no rearrangement is needed. **The transport equation is not an order of an expansion**; it is invariant under a deletion that removes a whole block.
 
-**The current follows from the same variation.** Differentiating $r^{2}(\partial\theta)^{2}$ with respect to $\partial_\mu\theta$ returns $2r^{2}\partial^{\mu}\theta$, so the current is $\rho_{\mathrm{num}}\partial^{\mu}S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. **The truncated action already knows the current**, and the transport equation is its conservation.
+**The current follows from the same variation.** Differentiating $r^{2}(\partial\theta)^{2}$ with respect to $\partial_\mu\theta$ returns $2r^{2}\partial_\mu\theta$, so the current is $\rho_{\mathrm{num}}\partial_\mu S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. **The truncated action already knows the current**, and the transport equation is its conservation.
 
 **The pair the limit produces, in the parent's words.** Relativistic irrotational dust: a pressureless flow along the phase gradient, with the density carried by the flow and the four-velocity normalised to $mc$. The parent states that with the quantum term the fluid is not dust, and that without it the pair is dust. **This article supplies the action of the dust and nothing more.**
 

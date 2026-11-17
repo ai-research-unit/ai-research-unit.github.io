@@ -155,7 +155,7 @@ $$
 satisfy the same relations, because conjugation preserves anticommutators and the identity. The frames are therefore not unique: they form a homogeneous space under $GL_4$, and the subgroup that preserves the *span* of the generators is the **Clifford group**
 
 $$
-\Gamma=\{S:S\,C\,S^{-1}=\Lambda_{\mu}{}^{\nu}C'\ \text{for some }\Lambda\in O(1,3)\},
+\Gamma=\{S:S\,C_\mu\,S^{-1}=\Lambda_{\mu\nu}C'_\nu\ \text{for some }\Lambda\in O(1,3)\},
 \qquad (\text{generator-by-generator, with }C,C'\text{ the corresponding basis operators}),
 $$
 
@@ -231,7 +231,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. The weight stands where a raising would stand, $\gamma_\mu\gamma_\mu=\varepsilon_\mu I_4$ with no sum, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $M_2(\mathbb{H})$, with even part $\mathrm{Cl}^{+}(1,3)\cong M_2(\mathbb{C})=\mathbb{B}$. Its complexification is $\mathrm{Cl}(4,\mathbb{C})\cong M_4(\mathbb{C})$. The five frame operators are the four generators $iL_{e_\mu}R_{\vec e_{\nu(\mu)}}$ and the product $-iL_{e_t}R_{\vec e_z}$; the four obey the anticommutation relation with the signs $\varepsilon=(1,-1,-1,-1)$, the fifth squares to $I$ and anticommutes with the four, and the sixteen graded products form a basis of $M_4(\mathbb{C})$, with the trace orthogonality and the expansion formula. The five basis operators are five elements of the sixteen two-sided operators in a chosen coefficient frame, not a canonical subset. The frames form a homogeneous space under $GL_4$; the Clifford group is the stabiliser of the span of the generators, and its even part is the scalars times the spin group. The biquaternion algebra is the even slot over $\mathbb{R}$ and the left factor over $\mathbb{C}$; the ambient algebra is the endomorphism algebra of $\mathbb{B}$, not $\mathbb{B}$.

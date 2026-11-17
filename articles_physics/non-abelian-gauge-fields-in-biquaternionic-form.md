@@ -39,7 +39,7 @@ $$
 [e_a, e_b] = 2\,\varepsilon_{abc}\,e_c, \qquad a,b,c = 1,2,3,
 $$
 
-with every generator scalar-free and anti-Hermitian, $e_a^\dagger = -e_a$, $e_a \in \mathbb{B}_{\Phi}$. This is $\mathrm{SU}(2)$ in a non-standard normalization; the conventionally normalized generators are $T_a = \tfrac12 e_a$, in terms of which $[T_a,T_b] = \varepsilon_{abc}T_c$ and $\mathrm{Tr}(T_aT_b) = -\tfrac12\delta_{ab}$. The sign of the trace is fixed by $\vec e_\mu^2 = -e_t$; the positive-definite form $h_{ab} = -2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$ is the Killing form of this copy of $\mathrm{SU}(2)$.
+with every generator scalar-free and anti-Hermitian, $e_a^\dagger = -e_a$, $e_a \in \mathbb{B}_{\Phi}$. This is $\mathrm{SU}(2)$ in a non-standard normalization; the conventionally normalized generators are $T_a = \tfrac12 e_a$, in terms of which $[T_a,T_b] = \varepsilon_{abc}T_c$ and $2\,\mathrm{Sc}(T_aT_b) = -\tfrac12\delta_{ab}$. The sign of the scalar part is fixed by $\vec e_\mu^2 = -e_t$; the positive-definite form $h_{ab} = -4\,\mathrm{Sc}(T_aT_b) = \delta_{ab}$ is the Killing form of this copy of $\mathrm{SU}(2)$.
 
 **3. The material sector splits as a Lie algebra.** Combining the two, and using that the vector part of $\mathbb{B}_{\Phi}$ is exactly $\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$ and the scalar part is $\mathrm{span}_\mathbb{R}\{ie_t\}$,
 
@@ -213,7 +213,7 @@ $$
 
 is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
 
-The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-2\,\mathrm{Tr}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
+The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-4\,\mathrm{Sc}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
 
 ## The Abelian Parent's Curvature Formula Does Not Survive
 
@@ -354,7 +354,7 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ | Lie-algebra decomposition of the material sector |
-| $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $\mathrm{Tr}(T_aT_b)=-\tfrac12\delta_{ab}$ |
+| $T_a = \tfrac12 e_a$ | Normalized generators, $[T_a,T_b]=\varepsilon_{abc}T_c$, $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ |
 | $a,b,c$ | colour indices of the gauge algebra, written low |
 | $\tilde Q(\tilde{Q}) \in SU(2)$ | Unit real quaternion, $\tilde Q^{-1}=\bar{\tilde Q}=\tilde Q^\dagger$ |
 | $\mathcal{A}_\mu = \sum_a\mathcal{A}_{\mu a} e_a \in \mathrm{SU}(2)$ | Non-abelian connection, $\mathcal{A}=\sum_\mu\mathcal{A}_\mu e_\mu$ |

@@ -138,7 +138,7 @@ $$
 l=k+q .
 $$
 
-**The three lines.** Contract with $q^\mu$, and use $k^2=l^2=0$ together with $l=k+q$:
+**The three lines.** Contract with $q_\mu$, and use $k^2=l^2=0$ together with $l=k+q$:
 
 $$
 q\cdot k=\frac{l^2-k^2-q^2}{2}=\frac{Q^2}{2} ,
@@ -151,7 +151,7 @@ $$
 so that
 
 $$
-q^\mu W^{(0)}_{\mu\nu}\propto 4\left[\frac{Q^2}{2}l_\nu-\frac{Q^2}{2}k_\nu-\frac{Q^2}{2}q_\nu\right]=\frac{4Q^2}{2}\left[l_\nu-k_\nu-q_\nu\right]=0 .
+\sum_\mu\varepsilon_\mu q_\mu W^{(0)}_{\mu\nu}\propto 4\left[\frac{Q^2}{2}l_\nu-\frac{Q^2}{2}k_\nu-\frac{Q^2}{2}q_\nu\right]=\frac{4Q^2}{2}\left[l_\nu-k_\nu-q_\nu\right]=0 .
 $$
 
 **What the vanishing means.** The partonic tensor is transverse to $q$, so it contains no longitudinal structure, so the coefficient of the $q$-longitudinal projector vanishes, so the longitudinal structure function vanishes, $F_L=0$ — which is
@@ -383,7 +383,7 @@ a convolution of a hard coefficient, computable in perturbation theory, with a d
 
 Deep inelastic scattering measures two functions of two variables, and the parton model is the statement that at large $Q^2$ they collapse to functions of one: $F_2(x)=\sum_fe_f^2x(q_f+\bar q_f)$. The collapse is dimensional analysis plus the elastic condition $2xp\cdot q=Q^2$, and the variable $x$ is the fraction of null momentum, invariant under the collinear boost because the denominator $2p\cdot q$ is.
 
-The two structure functions are related by the Dirac trace. Contracting the massless spin-$\tfrac12$ partonic tensor with $q^\mu$ gives zero, using $q\cdot k=Q^2/2$, $q\cdot l=-Q^2/2$ and $k\cdot l=Q^2/2$, so the tensor is purely transverse and $F_2=2xF_1$. For a scalar constituent the tensor has no transverse part at all and $F_1=0$, so the ratio is a spin measurement. The measured $R\approx0.18$ says the spin-$\tfrac12$ picture is right, with one $\alpha_s$ source of violation and one power correction behind the residual.
+The two structure functions are related by the Dirac trace. Contracting the massless spin-$\tfrac12$ partonic tensor with $q_\mu$ gives zero, using $q\cdot k=Q^2/2$, $q\cdot l=-Q^2/2$ and $k\cdot l=Q^2/2$, so the tensor is purely transverse and $F_2=2xF_1$. For a scalar constituent the tensor has no transverse part at all and $F_1=0$, so the ratio is a spin measurement. The measured $R\approx0.18$ says the spin-$\tfrac12$ picture is right, with one $\alpha_s$ source of violation and one power correction behind the residual.
 
 The densities are functions, not numbers: this is the one place in the series where the corpus imports something it cannot even in principle compute. Three sum rules constrain them, and only two of the three are tests. Momentum is imposed rather than tested, and baryon number holds. Gottfried fails: $0.235\pm0.026$ against $\tfrac13$, which measures an excess of $\bar d$ over $\bar u$ of $0.147\pm0.039$.
 

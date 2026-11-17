@@ -12,7 +12,7 @@ The article assumes *$P$, $T$ and the Representation Labels* for the Casimirs' d
 
 ### Momentum Space
 
-Momentum space is the dual of the translation space: four real components $p_\mu$, with the invariant form $p^{2}=p_\mu p^{\mu}$. The Poincaré group acts by
+Momentum space is the dual of the translation space: four real components $p_\mu$, with the invariant form $p^{2}=\sum_\mu\varepsilon_\mu p_\mu p_\mu$. The Poincaré group acts by
 
 $$
 p\longmapsto\Lambda p,
@@ -78,7 +78,7 @@ $C_1=p^{2}$ takes the same value everywhere on an orbit, and it takes different 
 
 ### The Second Casimir Is Not an Orbit Invariant
 
-$C_2=-\sum_\mu W_\mu W^{\mu}$ is also constant on an orbit, because it is a Casimir. But it does not distinguish orbits from one another: it is constant on the orbit *and* on the fibre, and its value depends on which little-group representation sits over the orbit. So the correct statement is:
+$C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ is also constant on an orbit, because it is a Casimir. But it does not distinguish orbits from one another: it is constant on the orbit *and* on the fibre, and its value depends on which little-group representation sits over the orbit. So the correct statement is:
 
 $$
 C_1\ \text{labels the orbit};\qquad C_2\ \text{labels the fibre};\qquad (C_1,C_2)\ \text{labels the representation}.

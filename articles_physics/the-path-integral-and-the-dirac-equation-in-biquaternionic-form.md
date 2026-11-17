@@ -444,26 +444,26 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 
 The basis operator is $-R_{\mathrm{pau},\vec e_z}=-L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, the same operator written in the two displays, and the product $\gamma_0\gamma_1\gamma_2\gamma_3=-i\gamma_5$ is the display's way of returning it from the four arrays.
 
 **The four contraction sums** are the sums in which one gamma is contracted against a fixed string of $n$ gammas,
 
 $$
-\sum_\mu\gamma^\mu\gamma_\mu,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu ,
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu ,
 $$
 
 and one rule produces all four: for a string of distinct indices,
 
 $$
-\sum_\mu\gamma^\mu\gamma_{\alpha_1}\cdots\gamma_{\alpha_n}\gamma_\mu = (-1)^{n+1}(4-2n)\,\gamma_{\alpha_1}\cdots\gamma_{\alpha_n},
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_{\alpha_1}\cdots\gamma_{\alpha_n}\gamma_\mu = -(-1)^{n+1}(4-2n)\,\gamma_{\alpha_1}\cdots\gamma_{\alpha_n},
 $$
 
-so that the four values are $-4I_4$, $+2\gamma_\alpha$, $0$ and $-2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the four are $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$: the two-gamma entry is diagonal and carries the weight, $+4I_4$ on the time direction and $-4I_4$ on the three spatial ones, and the last is the rule with the three indices reversed. With every index low the rule changes, because then the square of a generator carries the weight: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+\varepsilon_\alpha)\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum is uniform in the index when the index is raised and weight-dependent when it is low.
+so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $2\gamma_\alpha\gamma_\beta\gamma_\gamma$. The two-gamma entry with distinct indices is the one that vanishes, and it is where the dimension enters: the two contracted gammas are moved past the $n$ fixed ones, which gives the $(-1)^n$, and what is left is the contraction of the string with itself, which counts $4-2n$. The two-gamma entry is diagonal and carries the weight, $-4I_4$ on the time direction and $+4I_4$ on the three spatial ones, and the last is the rule with the three indices reversed. With no weight the rule changes, because then the square of a generator is not uniform: $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$ and $\sum_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=2(1+\varepsilon_\alpha)\gamma_\alpha$, which is $4\gamma_0$ for the time direction and vanishes for the three spatial ones. The one-gamma sum is uniform in the index only when the weight is carried.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the body and of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 

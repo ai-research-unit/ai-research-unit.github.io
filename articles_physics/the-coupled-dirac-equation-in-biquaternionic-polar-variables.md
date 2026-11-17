@@ -223,7 +223,7 @@ The rotor is the spin and the coupling does not turn it.
 
 - No new solution. The field is the element form's and the word is a re-coordinatisation of it.
 - No new prediction. The equation is the coupled equation of the element form, written in eight real coordinates.
-- No derivation of the current beyond the element form's: the chart's current is $J^t=\rho\cosh\theta_{\mathrm{rpd}}$, $J^\eta=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, which is the same object in the chart's letters.
+- No derivation of the current beyond the element form's: the chart's current is $J_t=\rho\cosh\theta_{\mathrm{rpd}}$, $J_\eta=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, which is the same object in the chart's letters.
 - No spin dynamics in a background, as §*The Spin Transport* states.
 - No closure of the general case: the four brackets are coupled and the chart does not close them.
 

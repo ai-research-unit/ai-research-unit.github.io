@@ -116,7 +116,7 @@ $$
 \;=\; 2\,T(R)\,Ϙ\;},
 $$
 
-where $T(R)$ is the Dynkin index of the representation, normalised so that the defining representation of $\mathrm{SU}(2)$ has $T=\tfrac12$, equivalently $\mathrm{Tr}(T_aT_b)=\tfrac12\delta_{ab}$ there, and $Ϙ$ is the integer topological charge of the companion article, defined with the trace in the defining representation. The two statements to read from this formula are that the index is proportional to the topological charge, and that its constant of proportionality is a representation-theoretic number.
+where $T(R)$ is the Dynkin index of the representation, normalised so that the defining representation of $\mathrm{SU}(2)$ has $T=\tfrac12$, equivalently $2\,\mathrm{Sc}(T_aT_b)=\tfrac12\delta_{ab}$ there, and $Ϙ$ is the integer topological charge of the companion article, defined with the trace in the defining representation. The two statements to read from this formula are that the index is proportional to the topological charge, and that its constant of proportionality is a representation-theoretic number.
 
 **The Dynkin index.** For $\mathrm{SU}(2)$ the two representations that occur inside the framework are the defining module of dimension two and the adjoint representation of dimension three, and their indices are fixed by the Casimir relation $T(R)=\dim R\,C_2(R)/\dim G$, with $C_2(\text{defining})=\tfrac34$, $C_2(\text{adjoint})=2$ and $\dim G=3$:
 

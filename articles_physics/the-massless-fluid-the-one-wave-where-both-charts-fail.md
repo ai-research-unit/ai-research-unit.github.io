@@ -167,7 +167,7 @@ $$
 **What survives is three data and none of them is a density**: a unit direction $\vec u$, an intensity $\lvert\varkappa\rvert^{2}$, and the sign of the energy. That is the data of a current,
 
 $$
-j^{\mu}=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
+j_\mu=\frac{c}{2}\lvert\varkappa\rvert^{2}\bigl(1,\vec u\bigr),
 $$
 
 **so the object at the corner is a null current, and the word "fluid" is a shorthand that stops being true at $m=0$.** A current has a direction and a flux and no state; a fluid has a state, a stress and a quantum potential, and none of those exists here.
@@ -375,7 +375,7 @@ so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itsel
 | $\vec u$ | the unit direction of the null momentum, $-\vec u_p$; the only spatial axis used, named so that every statement rotates |
 | $\vec u_p=\vec k_\Phi/\lvert\vec k_\Phi\rvert$ | the direction of the momentum |
 | $\gamma=E/(mc^{2})$ | the time-dilation factor; finite at $m>0$, absent at the cone |
-| $j^{\mu}$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
+| $j_\mu$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
 | $\rho_{\mathrm{num}}=\lvert N\rvert$ | the proper density, the invariant length over $c$ |
 | $j^{0}=c\langle\tilde\Xi\rangle_{*}$ | the current's time component |
 

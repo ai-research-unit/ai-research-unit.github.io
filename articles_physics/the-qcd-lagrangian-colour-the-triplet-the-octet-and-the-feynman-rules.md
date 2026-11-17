@@ -7,7 +7,7 @@
 **The claim.** Quantum chromodynamics is one Lagrangian with four pieces and four vertices.
 
 $$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(i\gamma^\mu D_\mu-m_f\right)\psi_f+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu D_\mu-m_f\right)\psi_f+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
 $$
 
 The quark $\psi_f$ is a colour triplet, one per flavour $f$; the gluon $G^a_\mu$ is a colour octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.
@@ -127,10 +127,10 @@ which is checked below to machine precision and which is the reason the symmetri
 
 ## The Lagrangian
 
-**The four pieces, in the corpus's coordinates.** With $\partial/\partial R_\mu$ the derivative of [the assembled Lagrangian](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html) and the sign rule $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$ applying to every display,
+**The four pieces, in the corpus's coordinates.** With $\partial/\partial R_\mu$ the derivative of [the assembled Lagrangian](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html) and the sign rule $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ applying to every display,
 
 $$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(i\gamma^\mu D_\mu-m_f\right)\psi_f-\frac{1}{2\zeta}\sum_{a,\mu}\left(\frac{\partial G^a_\mu}{\partial R_\mu}\right)^2+\sum_{a}\bar c^a\left(-\frac{\partial^2}{\partial R_\mu\partial R_\mu}\right)c^a+\mathcal{L}_{cG} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu D_\mu-m_f\right)\psi_f-\frac{1}{2\zeta}\sum_{a,\mu}\left(\frac{\partial G^a_\mu}{\partial R_\mu}\right)^2+\sum_{a}\bar c^a\left(-\frac{\partial^2}{\partial R_\mu\partial R_\mu}\right)c^a+\mathcal{L}_{cG} .
 $$
 
 **The pieces, named.** The first is the gauge kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the gauge-fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,
@@ -200,17 +200,17 @@ with the ghost $c^a$ in the adjoint representation: eight of them, one per gener
 | Line | Factor |
 |---|---|
 | Gluon $ab$, $\mu\nu$ | $\dfrac{-i\delta^{ab}}{k^2+i\epsilon}\left[\delta_{\mu\nu}-(1-\zeta)\dfrac{k_\mu k_\nu}{k^2}\right]$ |
-| Quark $ij$ | $\dfrac{i\left(\gamma^\mu k_\mu+m\right)_{ij}}{k^2-m^2+i\epsilon}$ |
+| Quark $ij$ | $\dfrac{i\left(m-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu\right)_{ij}}{k^2-m^2+i\epsilon}$ |
 | Ghost $ab$ | $\dfrac{i\delta^{ab}}{k^2+i\epsilon}$ |
 
 **Vertices.**
 
 | Vertex | Colour factor | Lorentz structure |
 |---|---|---|
-| Quark–gluon | $T^a_{ij}$ | $ig_s\gamma^\mu$ |
+| Quark–gluon | $T^a_{ij}$ | $-ig_s\varepsilon_\mu\gamma_\mu$ |
 | Three-gluon | $g_sf^{abc}$ | $(p_1-p_2)_\rho\delta_{\mu\nu}+(p_2-p_3)_\mu\delta_{\nu\rho}+(p_3-p_1)_\nu\delta_{\rho\mu}$ |
 | Four-gluon | $-ig_s^2$ times the group combination of the display below | $\delta_{\mu\rho}\delta_{\nu\sigma}-\delta_{\mu\sigma}\delta_{\nu\rho}$ with the two permutations |
-| Ghost–gluon | $-g_sf^{abc}$ | $p^\mu$, with $p$ the momentum of the incoming antighost |
+| Ghost–gluon | $-g_sf^{abc}$ | $p_\mu$, with $p$ the momentum of the incoming antighost |
 
 **The four-gluon vertex in full.** With legs $(a,\mu)$, $(b,\nu)$, $(c,\rho)$, $(d,\sigma)$,
 
@@ -225,10 +225,10 @@ $$
 **The quark–gluon vertex, in one line.** The interaction term in the quark piece is
 
 $$
-+g_s\sum_{a,\mu}\bar\psi\gamma^\mu T^aG^a_\mu\psi ,
+-g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
 $$
 
-with the sign from $i\gamma^\mu\left(-ig_sT^aG^a_\mu\right)=+g_s\gamma^\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $ig_s\gamma^\mu T^a_{ij}$.
+with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $-ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.
 
 **The three-gluon vertex, in three lines.** Expanding $-\frac14\sum GG$ and keeping the terms with one field strength linear in the field and two powers of the field,
 
@@ -336,7 +336,7 @@ is what makes colour summing mechanical: a gluon exchanged between two quark lin
 | The Feynman rules and their signs | **Derived from the Lagrangian above**, in this article |
 | The colour factors $4/3$, $3$, $1/2$ | **Derived** from $N_c=3$ and the trace normalisation, once those are granted |
 | The Ward identity of the three-gluon vertex | **Imported** (it is the tree-level shadow of the Slavnov–Taylor identity), and verified |
-| The sign rule $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$ | **Derived in the algebra**, in article 2 |
+| The sign rule $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ | **Derived in the algebra**, in article 2 |
 | Transversality of the gluon propagator | **Derived in the algebra**, from article 7's projector |
 
 **What the algebra can host, stated precisely.** The projector structure of the propagator, the sign rule and the reality conditions are biquaternionic objects; the octet is not. The route the corpus takes is the one [the gluon article](the-gluon-an-octet-outside-the-biquaternion-algebra.html) sets out: the octet is not in $\mathbb{B}$, but it is in $M_2(\mathbb{B})\cong M_4(\mathbb{C})$, where a $3\times3$ scalar-free block can be written and the $\mathrm{SU}(3)$ elements have explicit biquaternion closed forms. That enlargement is a carrier, not a derivation: it hosts the octet at the price of a larger module, and it does not produce the triplet or the number three.
@@ -376,7 +376,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $R$ | $\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ |
 | $\Pi_{\mu\nu}(k)$ | $k_\mu k_\nu-k^2\delta_{\mu\nu}$, the tree inverse propagator |
 | $p_1,p_2,p_3$ | Incoming momenta of the three gluon legs, $p_1+p_2+p_3=0$ |
-| $\gamma^\mu$ | Dirac matrices; the quark propagator is $i(\gamma^\mu k_\mu+m_f)/(k^2-m_f^2+i\epsilon)$ |
+| $\gamma_\mu$ | Dirac matrices, written low; the quark propagator is $i(m_f-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu)/(k^2-m_f^2+i\epsilon)$ |
 | $m_f$ | Mass of quark flavour $f$, a parameter imported from the Yukawa sector |
 | $Q_f$ | Electric charge of flavour $f$, in units of $e$ |
 | $b_0$ | One-loop coefficient of the beta function, $b_0=\frac{11}{3}C_A-\frac43T_RN_f$ |

@@ -320,17 +320,17 @@ $$
 =4\bigl(\varepsilon_\mu\delta_{\mu\nu}\varepsilon_\rho\delta_{\rho\sigma}-\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}+\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
 
-**The four contraction sums.** With the index $\mu$ summed over the frame and the summed index raised by $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, they are, for $A$ a product of $n$ distinct generators,
+**The four contraction sums.** With the index $\mu$ summed over the frame and the weight $\varepsilon_\mu$ carried on the sum, they are, for $A$ a product of $n$ distinct generators,
 
 $$
-\sum_\mu\gamma^\mu\gamma_\mu=-4I_4,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha,\qquad
-\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha,\qquad
+\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4,
 \qquad
-\sum_\mu\gamma^\mu A\gamma_\mu=(-1)^{n+1}(4-2n)A .
+\sum_\mu\varepsilon_\mu\gamma_\mu A\gamma_\mu=-(-1)^{n+1}(4-2n)A .
 $$
 
-The metric sits in the raised index and nowhere else. With every index low the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spatial sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
+The weight sits in the sum and nowhere else. With no weight the same sums read $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, $\sum_\mu\gamma_\mu\gamma_0\gamma_\mu=+4\gamma_0$, and the spatial sums vanish, $\sum_\mu\gamma_\mu\gamma_\eta\gamma_\mu=0$.
 
 **Closure.** The sixteen products — $I_4$, the four $\gamma_\mu$, the six $\gamma_\mu\gamma_\nu$ with $\mu<\nu$, the four $\gamma_5\gamma_\mu$ and $\gamma_5$ — are a basis of $M_4(\mathbb{C})=\mathrm{Cl}_{1,3}(\mathbb{C})$, so no product of gammas leaves the algebra and the dictionary closes. The real algebras are smaller. The sixteen basis operators $L_aR_b$, whose product is again a basis operator, span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$ over $\mathbb{R}$; the products of the gammas alone span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$. Both are sixteen-dimensional, and both complexify to $M_4(\mathbb{C})$. The chirality basis operator is not among the products with real coefficients:
 

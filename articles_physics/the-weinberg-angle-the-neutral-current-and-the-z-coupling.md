@@ -5,7 +5,7 @@
 **The claim.** The angle $\theta_W$ is not a third coupling. It is the one angle by which the two neutral gauge fields must be rotated to make the photon couple as pure electric charge, and once it is so defined the $Z$ coupling follows with no further freedom:
 
 $$
-\mathcal{L}_Z=\frac{g}{\cos\theta_W}Z_\mu\sum_f\bar f\gamma^\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
+\mathcal{L}_Z=\frac{g}{\cos\theta_W}\sum_{f,\mu}\varepsilon_\mu Z_\mu\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_W\,P_R\Big]f .
 $$
 
 The appearance of $\sin^2\theta_W$ in that bracket is therefore not a second convention. It is the residue of the rotation, and §*The Rotation, and Why the Angle Appears Squared* proves it in three lines.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A massive spin-1 field can acquire its mass in more than one way. The **Proca** mass is second order and scalar: a term $\mu^2 A_\mu A^\mu$ in the Lagrangian and a Klein–Gordon factor in the propagator. A **topological** mass is first order: a term with one derivative, one power of the mass, and a Levi-Civita symbol, which in $2+1$ dimensions is the Chern–Simons term of Deser, Jackiw and Templeton.
+A massive spin-1 field can acquire its mass in more than one way. The **Proca** mass is second order and scalar: a term $\mu^2\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the Lagrangian and a Klein–Gordon factor in the propagator. A **topological** mass is first order: a term with one derivative, one power of the mass, and a Levi-Civita symbol, which in $2+1$ dimensions is the Chern–Simons term of Deser, Jackiw and Templeton.
 
 Liu Yu-Fen's claim is a duality of the second kind. The **Dirac** Lagrangian in the vector representation is first order in the derivative and carries its mass as a term that couples the field to its conjugate. A first-order **parent action** in the same variables has two reductions: eliminating the auxiliary potential gives back the Dirac Lagrangian, and eliminating the Dirac field gives a second-order Lagrangian whose mass term is first order, one derivative and one power of $m$. In four dimensions that mass term is the cubic form; on the three-dimensional spin manifold, once the embedding vector $j$ is used to slice the space, it is exactly the Maxwell plus Chern–Simons Lagrangian of the topologically massive gauge field. The two reductions describe the same propagating modes, at least classically.
 
@@ -18,7 +18,7 @@ Every contraction carries the plain weight, $V\cdot W=\sum_\mu\epsilon_\mu V_\mu
 $$
 p^+_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}+j_\mu j_\nu,\qquad p^-_{\mu\nu}=-j_\mu j_\nu,\qquad p^+_{\mu\nu}+p^-_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu},
 $$
-with no sum on $\mu$, the two projecting onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdot j=-1$. Any four-vector splits as $G_\mu=G^\mu-j_\mu\xi$, with three-dimensional part $G^\mu=p^+_{\mu\nu}G_\nu$ and complex scalar $\xi=G_\mu j^\mu$. The superscript on $G^\mu$ is a **label for the transverse part**, not a raised index: every index in this article is a lower index, and a sum over it carries its $\epsilon$.
+with no sum on $\mu$, the two projecting onto the slice orthogonal to $j$ and onto $j$ itself, since $j\cdot j=-1$. Any four-vector splits as $G_\mu=G_{\mathrm{tr},\mu}-j_\mu\xi$, with three-dimensional part $G_{\mathrm{tr},\mu}=\sum_\nu\varepsilon_\nu p^+_{\mu\nu}G_\nu$ and complex scalar $\xi=\sum_\mu\varepsilon_\mu G_\mu j_\mu$. The label $\mathrm{tr}$ on $G_{\mathrm{tr},\mu}$ marks the **transverse part**, and is not an index at all: every index in this article is a lower index, and a sum over it carries its $\epsilon$.
 
 **The generators.** Every operator below is a map of the algebra to itself, and each is written as an action with its side in the display. The generator of index $\mu$ is the map
 $$
@@ -66,7 +66,7 @@ $$
 $$
 because $r'_t$ is symmetric under the exchange of the first and third slots while $\varepsilon$ is antisymmetric. The two readings must not be mixed, and the exchange isolates precisely the antisymmetric part of the structure constants — the part that survives against the field strength in §*Why the Mass Is Topological*. The Dirac Lagrangian quoted below keeps the source's own order, $\check c_{\nu\mu\lambda}$ with the starred derivative in the first slot, which is also the order of the companion's Lagrangian.
 
-$H_\mu$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_\mu$ in the axial gauge $B_\mu j^\mu=0$, and the complex scalar $\xi$ is a spectator carried through both reductions unchanged.
+$H_\mu$ is the dual potential: a complex four-vector, the auxiliary field of the four-dimensional parent action. In the three-dimensional version the auxiliary field is the complex potential $B_\mu$ in the axial gauge $\sum_\mu\varepsilon_\mu B_\mu j_\mu=0$, and the complex scalar $\xi$ is a spectator carried through both reductions unchanged.
 
 $A_\mu$ is the electromagnetic potential, and it enters only through the covariant derivative
 $$
@@ -116,7 +116,7 @@ so the mass term has one derivative and one power of $m$ — the hallmark of a t
 
 ### The Three-Dimensional Parent Action and the Topological Mass
 
-The three-dimensional version separates the scalar first. The duality is taken between the pairs $(G^\mu;\xi)$ and $(B^\mu;\xi)$ with the *same* $\xi$, and the parent action is
+The three-dimensional version separates the scalar first. The duality is taken between the pairs $(G_\mu;\xi)$ and $(B_\mu;\xi)$ with the *same* $\xi$, and the parent action is
 $$
 S_{G\xi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\mu\lambda}F_{\mu\lambda}+\tfrac{i}{2}\sum_\mu\epsilon_\mu\Bigl(G_\mu\frac{\partial\xi^*}{\partial x_\mu}-\xi^*\frac{\partial G_\mu}{\partial x_\mu}\Bigr)+\tfrac{m-a}{2}G\cdot G+\tfrac{i}{2}\xi^*j\cdot\tilde\nabla^{-a}\xi+\text{c.c.}+\partial Z_1^\mu/\partial x_\mu\Bigr].
 $$
@@ -124,7 +124,7 @@ Varying $B_\mu$ gives
 $$
 \sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\bigl(\tilde\nabla^{a}_\nu G_\lambda-\tilde\nabla^{a}_\lambda G_\nu\bigr)=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}F_{\nu\lambda},
 $$
-and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G^\mu-j_\mu\xi$. Varying $G_\nu$ gives
+and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G_{\mathrm{tr},\mu}-j_\mu\xi$. Varying $G_\nu$ gives
 $$
 (m-a)G_\mu=\tfrac{i}{2}\sum_\nu F_{\lambda\nu}\check c^{*}_{\nu\lambda\mu}-i\sum_\nu p_{+,\mu\nu}\,\partial\xi^*/\partial x_\nu ,
 $$
@@ -330,8 +330,8 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $G^{\mathrm R}_\mu$, $G^{\mathrm L}_\mu$ | The two chiral parts of the s-vector, of value plus one and minus one: elements, not a right and a left multiplication |
 | $G_\mu$ | s-Vector (complex four-vector), the Dirac field in the vector representation |
 | $H_\mu$ | Dual (potential) field of the four-dimensional parent action, complex four-vector |
-| $B_\mu$ | Complex potential of the three-dimensional version, axial gauge $B_\mu j^\mu=0$ |
-| $\xi$ | Complex scalar, $\xi=G_\mu j^\mu$; $G_\mu=G^\mu-j_\mu\xi$ with $G^\mu=p^+_{\mu\nu}G_\nu$ |
+| $B_\mu$ | Complex potential of the three-dimensional version, axial gauge $\sum_\mu\varepsilon_\mu B_\mu j_\mu=0$ |
+| $\xi$ | Complex scalar, $\xi=\sum_\mu\varepsilon_\mu G_\mu j_\mu$; $G_\mu=G_{\mathrm{tr},\mu}-j_\mu\xi$ with $G_{\mathrm{tr},\mu}=\sum_\nu\varepsilon_\nu p^+_{\mu\nu}G_\nu$ |
 | $p^\pm_{\mu\nu}$ | Projectors; $p^+_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}+j_\mu j_\nu$, $p^-_{\mu\nu}=-j_\mu j_\nu$, $p^+_{\mu\nu}+p^-_{\mu\nu}=\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |
 | $A_\mu$ | Electromagnetic four-potential; it enters only the covariant derivative |
 | $B_\mu, N_\mu$ | Real and imaginary four-vectors of the field, $G=B+iN$ |

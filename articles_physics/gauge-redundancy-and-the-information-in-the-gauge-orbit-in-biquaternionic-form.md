@@ -217,7 +217,7 @@ $$
 \boxed{\;\tilde U(C) = \mathcal{P}\exp\!\left(\frac{i\,ϙ}{\hbar}\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right)\;},
 $$
 
-and its trace is the Wilson loop, $W(C) = \mathrm{Tr}\,\tilde U(C)$. The coupling $\frac{ϙ}{\hbar}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
+and twice its scalar part is the Wilson loop, $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$. The coupling $\frac{ϙ}{\hbar}$ is the one of the covariant derivative above, so the exponent is a pure number; it is invariant under the gradient shift because the loop integral of a total derivative vanishes. In the biquaternion framework the connection being integrated is a material-sector object, $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, and the group element it exponentiates into is an element of the informational realization of the gauge group, so the Wilson loop is a two-sector bilinear. This is the construction of the companion article on Wilson loops, and it is not re-derived here.
 
 **The holonomy is the orbit's global invariant.** The orbit of a connection is its gauge group; the holonomy is a functional of the connection that is constant on the orbit and is not a local function of the curvature. It is therefore exactly the part of the orbit's information that survives the local triviality. The framework's ordering of the object is clean:
 
@@ -328,7 +328,7 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | Abelian curvature components |
 | $\tilde U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy; global obstruction |
-| $W(C) = \mathrm{Tr}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
+| $W(C) = 2\,\mathrm{Sc}\,\tilde U(C)$ | Wilson loop; two-sector bilinear |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $S(\tilde{Ϛ}_{\Psi,\tilde{A}_{\Phi}}\|\tilde{Ϛ}_{\Psi,\tilde{Q}_1})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

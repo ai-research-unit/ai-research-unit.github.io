@@ -56,7 +56,7 @@ $$
 
 *Proof.* The identity expresses two facts at once: the square of the vector $J$ equals the sum of the squares of the two scalars, and the square of the axial vector is non-positive (or zero) exactly when the square of the vector is non-negative, the two squares being opposite.
 
-**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}S^{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$, every index low, so that no metric enters. Then
+**Theorem (the tensor FPK identity).** Write $\tilde S$ for the Hodge dual of $S$, $\tilde S_{\mu\nu}=\tfrac12\sum_{\rho,\sigma}\varepsilon_\rho\varepsilon_\sigma\,\epsilon_{\mu\nu\rho\sigma}S_{\rho\sigma}$, with the orientation $\epsilon_{0123}=+1$, every index low, so that no metric enters. Then
 
 $$
 \boxed{\; J_\mu K_\nu-J_\nu K_\mu=\omega\,S_{\mu\nu}+\sigma\,\tilde S_{\mu\nu} \;}.
@@ -76,13 +76,13 @@ $$
 Z=4\,\psi\psi^{\dagger}\,iR_{\vec e_x},\qquad\text{that is}\qquad Z\eta=4\,\psi\,(\psi^{\dagger}\,iR_{\vec e_x}\eta)\quad\text{for every }\eta\in\mathbb B .
 $$
 
-Expanded in the sixteen basis operators, with the raised basis operators $\mathsf C^0=iR_{\vec e_x}$ and $\mathsf C^k=iL_{\vec e_k}R_{\vec e_y}$ and no sum on $\mu$, it reads
+Expanded in the sixteen basis operators, with the basis operators $\mathsf C_0=iR_{\vec e_x}$ and $\mathsf C_k=iL_{\vec e_k}R_{\vec e_y}$, every index written low and no sum on $\mu$, it reads
 
 $$
-Z = \sigma\,\mathbb 1 + J_\mu\mathsf C^\mu + iS_{\mu\nu}\mathsf C^\mu\mathsf C^\nu + K_\mu\,(-iR_{\vec e_z})\mathsf C^\mu - i\omega\,(-iR_{\vec e_z}),
+Z = \sigma\,\mathbb 1 + J_\mu\mathsf C_\mu + iS_{\mu\nu}\mathsf C_\mu\mathsf C_\nu + K_\mu\,(-iR_{\vec e_z})\mathsf C_\mu - i\omega\,(-iR_{\vec e_z}),
 $$
 
-the sums running over $\mu$ and over $\mu<\nu$; the metric factors are the index placements that the literature absorbs into its bivectors.
+the sums running over $\mu$ and over $\mu<\nu$. The heights are not indices: a basis operator is labelled low, and the raised labels of the literature carry no metric factor that this corpus would have to supply.
 
 **Statement (the aggregate form of the FPK identities).** The aggregate satisfies
 
@@ -199,7 +199,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## Summary
 
 A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor — which are not independent but satisfy the **Fierz–Kofink identities**. The scalar part of the system is $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$; the tensor part is $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, and both are displayed here in the corpus's own conventions. The identities are equivalently expressed through the **Fierz aggregate** $Z=4\psi\psi^{\dagger}\,iR_{\vec e_x}$, the rank-one operator whose sixteen basis operator coefficients are the covariants; it satisfies $Z^2=4\sigma Z$ and its companions and returns the spinor as $\psi=Z\zeta/(4\psi^{\dagger}\,iR_{\vec e_x}\zeta)$ — Lounesto's **boomerang**. The identities force the covariants into exactly **six classes**, three regular ($\sigma$ or $\omega$ nonzero) and three singular ($\sigma=\omega=0$, with the possible vanishings of $K$ and $S$): Dirac, the two other regular types, the **flag-dipole**, the flagpole and the dipole. All six classes were verified to be non-empty by explicit representatives. The flag-dipole is the type the usual list of Dirac, real and chiral spinors does not exhaust and the one the classification was introduced to expose. This article supplies the four-dimensional completion of the corpus's internal Fierz identity, which the bilinear article records as missing, and it states the classification in the corpus's signs, with every formula displayed here checked in those signs. It is pure Clifford-algebra mathematics, with no framework speculation, and it is the ambient companion of the two-dimensional Fierz identity the corpus already carries.

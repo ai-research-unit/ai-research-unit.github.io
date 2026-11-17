@@ -749,7 +749,7 @@ $$
 $$
 -iR_{\mathrm{pau},\vec e_z}=i\,(iR_{\mathrm{pau},\vec e_x})(iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y})(iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}),
 $$
-with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
+with $\varepsilon=(1,-1,-1,-1)$ the plain weight. No index is raised or lowered, and a contravariant index is not allowed: the metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, which is the identity, and the sign is carried by the weight inside the product. The relations are unchanged by the conjugation, so the same six lines hold with the label $\mathrm{axf}$ throughout, and that is the spelling the physics articles print.
 
 **The sixteen products are the sixteen basis operators.** The five frame basis operators are five basis operators up to a factor $i$, and the sixteen products of the five are the sixteen basis operators:
 
@@ -809,15 +809,15 @@ The spacelike generators are the half quaternion units and the boosts the half i
 
 **Reversal, conjugation and the two traces.** Clifford reversal, reading an ordered product of frame basis operators backwards, is quaternion conjugation under the reading: reversing the image of $\tilde Q$ gives the image of $\tilde Q^{\natural}$, checked on the eight real units, where both sides carry $+$ on $e_t$ and $i$ and $-$ on the six vector units. Hence the biquaternion norm is the Clifford norm built with the reversal: the image of $\tilde Q\tilde Q^{\natural}$ is the product of the image of $\tilde Q$ with its reversal.
 
-Two traces must not be confused. The trace of the corpus formula is the $2\times2$ one, $\operatorname{Tr}$, and it equals twice the scalar part. The $4\times4$ trace of the image is $4\,\mathrm{Sc}(\tilde Q)$, complex in general, and its real part is twice the real part of the $2\times2$ trace,
+Two traces must not be confused. The trace of the corpus formula is taken on the $2\times2$ image, $\operatorname{Tr}\mathsf M_2(\tilde Q)$, and it equals twice the scalar part. The $4\times4$ trace of the image is $4\,\mathrm{Sc}(\tilde Q)$, complex in general, and its real part is twice the real part of the $2\times2$ trace,
 $$
-2\,\mathrm{Re}\operatorname{Tr}(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
+2\,\mathrm{Re}\operatorname{Tr}\mathsf M_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
 $$
-The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the reduction formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
+The identity uses $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the reduction formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
 
 **A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P}_{\Phi}$* in *Operators Acting on Two Sides*. No statement of the corpus depends on the basis written.
 
-**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the $i r'_t$ metric are part of the data. The frame is internal: it is a set of basis operators, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
+**The presentation is the stronger one for the corpus's purpose.** Four things are carried by the algebra and not by a chosen matrix frame. The state is an element of $\mathbb{B}$, and the left regular module is the Dirac spinor space, so no column and no minimal left ideal has to be chosen. The pairing $\operatorname{Tr}\mathsf M_2(\tilde Q_1\tilde Q_2^{*})$ and the three involutions are fixed by the algebra, whereas the Dirac adjoint needs a chosen time generator. The two real sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ and the $i r'_t$ metric are part of the data. The frame is internal: it is a set of basis operators, not an array of matrices carried from outside. The Clifford algebra is recovered from these data; the data are not recovered from the algebra.
 
 **Remark (the two coordinate frames, $\mathbb{B}$ and $\mathbb{B}_{\Phi}$).** The series has exactly two coordinate frames, and they are not to be mixed. Both are fixed, with their coordinate and their interval, in *Frame and Metric Conventions*, and neither is a matrix frame. There is one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, the same in both.
 
@@ -962,7 +962,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
 ## The $2\times2$ Pauli Representation
 
 **Read last, and not because it is small.** The $2\times2$ display is the algebra itself, not an operator on it. It is placed last because it is best read after both $4\times4$ displays have shown what a matrix of an operator is, and because its matrices are the block of the Pauli display: the object it displays is the one the other two displays act on.
@@ -999,13 +999,13 @@ which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli d
 
 **No frame is needed.** The isomorphism is a map of algebras and does not depend on a frame of $\mathbb{B}$. The four matrices above are the images of the units, not the entries of a matrix read in a basis, and no Peirce family enters. The frame enters only in the two $4\times4$ displays, which read operators on the algebra.
 
-**The trace is the trace of this image.** The Hermitian form is defined on the algebra and needs no matrix. The trace is defined only here, on the image, and it is a reading of the Hermitian form in this presentation, not a second pairing. The matrix articles abbreviate
+**The trace is the trace of this image.** The Hermitian form is defined on the algebra and needs no matrix. The trace is defined only here, on the image, and it is a reading of the Hermitian form in this presentation, not a second pairing. The symbol is written on a matrix and never on an element: an element of $\mathbb{B}$ has no trace, and the trace of its image is written out,
 $$
-\operatorname{Tr}(\tilde Q):=\operatorname{Tr}\mathsf{M}_2(\tilde Q),
+\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t .
 $$
-and the abbreviation is local to them; outside the matrix category the same number is written $2\,\mathrm{Sc}\tilde Q$, because there the element has no trace and only a scalar part.
+There is no abbreviation that puts an element under $\operatorname{Tr}$. Outside the matrix category the same number is written $2\,\mathrm{Sc}\tilde Q$, because there the element has only a scalar part.
 $$
-2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*}),\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q),
+2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\operatorname{Tr}\mathsf M_2(\tilde Q_1\tilde Q_2^{*}),\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}\mathsf M_2(\tilde Q),
 $$
 
 **The determinant is the norm.** The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of invertibles and the unit-norm group are read from it; the derivations are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*.
@@ -1018,12 +1018,12 @@ $$
 $$
 \mathsf{M}_2\otimes\mathsf{M}_2:\ \mathbb{B}\otimes\mathbb{B}\longrightarrow M_2(\mathbb{C})\otimes M_2(\mathbb{C})\cong M_4(\mathbb{C}),
 $$
-and the trace factorises over the two factors,
+and the trace factorises over the two factors, each trace taken on an image,
 $$
-\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\,\operatorname{Tr}(y),\qquad
-\operatorname{Tr}(e_t)=2,\qquad \operatorname{Tr}(\vec e_\eta)=0 .
+\operatorname{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr)=\operatorname{Tr}\mathsf M_2(x)\;\operatorname{Tr}\mathsf M_2(y),\qquad
+\operatorname{Tr}\mathsf M_2(e_t)=2,\qquad \operatorname{Tr}\mathsf M_2(\vec e_\eta)=0 .
 $$
-A subscript names the factor it traces, $\operatorname{Tr}_\mathbb{B}(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}(\vec e_\eta)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(e_t\otimes e_t)=4$ and $\operatorname{Tr}(\vec e_j\otimes\vec e_\eta)=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
+A subscript names the factor whose image is traced, $\operatorname{Tr}_\mathbb{B}\mathsf M_2(e_t)=2$ and $\operatorname{Tr}_\mathbb{B}\mathsf M_2(\vec e_\eta)=0$, and an unsubscripted $\operatorname{Tr}$ on $\mathbb{B}\otimes\mathbb{B}$ is the trace of the $4\times4$ image: on the units $\operatorname{Tr}(\mathsf M_2(e_t)\otimes\mathsf M_2(e_t))=4$ and $\operatorname{Tr}(\mathsf M_2(\vec e_j)\otimes\mathsf M_2(\vec e_\eta))=0$. The two-qubit arena of the exercises is this algebra and is read with this trace; it needs no second trace convention.
 
 **A bare $\mathsf{M}_2$ means this isomorphism and nothing else.** A plain $\mathsf{M}_2$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\iota$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{Ξ}=\iota\,e_t$ is the central scalar field of the Higgs articles, and $Ξ_{\tilde U}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\mathsf{M}_2$ is not any of them.
 
@@ -1067,11 +1067,11 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 
 **The switch comes between them, and belongs to both.** It is $C_{\Pi}$ and its inverse, of determinant $-\tfrac14$ and normalisation $C_{\Pi}^{\dagger}C_{\Pi}=\tfrac12I_4$, with $L_{\mathrm{axf}}=C_{\Pi}L_{\mathrm{pau}}C_{\Pi}^{-1}$ and $R_{\mathrm{axf}}=C_{\Pi}R_{\mathrm{pau}}C_{\Pi}^{-1}$. It is two $2\times2$ blocks, it carries the eight unit matrices and the sixteen basis operators, and it leaves the trace $4Q_t$ and the determinant $\langle\tilde Q\rangle_{\natural}^2$ alone. What it does not carry is a single entry: the transpose dictionary, the reality of the sixteen arrays and the disappearance of the cross blocks are properties of the axis-free frame, the block form and the monomial five are properties of the Peirce frame.
 
-**The Clifford structure is the algebra of the two-sided operators.** $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame basis operators are $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, and a change of frame is a change of basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the axis-free frame $e_\mu\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$ and $i\mapsto L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed basis operator: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\nu(\nu)}}$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace has real part $2\,\mathrm{Re}\operatorname{Tr}=4\,\mathrm{Re}\,\mathrm{Sc}$, twice the real part of the $2\times2$ trace.
+**The Clifford structure is the algebra of the two-sided operators.** $e_\mu\otimes e_{\mathrm{opp},\nu}\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ is an isomorphism onto $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the sixteen products of the five frame basis operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the sixteen basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})$. The five frame basis operators are $iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}$, $iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, $iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ and $-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$, and a change of frame is a change of basis. The Clifford reading is the $\mathbb{R}$-linear comparison with the even subalgebra; in the axis-free frame $e_\mu\mapsto L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_t}$ and $i\mapsto L_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z}$. On the eight real units it sends the three vector units to the spacelike bivectors and the three imaginary units to the timelike ones, and the odd part is reached by the fixed basis operator: $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Psi}$ is the vector space, and $iR_{\mathrm{axf},\vec e_x}$ times the image of $\mathbb{B}_{\Phi}$ the trivector space. The Lorentz generators are half the corresponding bivectors, $\sigma_{\mu\nu}=\tfrac12\,iL_{\mathrm{axf},e_\mu}R_{\mathrm{axf},\vec e_{\nu(\mu)}}\,iL_{\mathrm{axf},e_\nu}R_{\mathrm{axf},\vec e_{\nu(\nu)}}$ for $\mu\neq\nu$, Clifford reversal is quaternion conjugation, and the $4\times4$ trace has real part $2\,\mathrm{Re}\operatorname{Tr}\mathsf M_2(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q)$, twice the real part of the $2\times2$ trace.
 
 **No five of the sixteen products are singled out in the axis-free display**, so the gamma map is a display and not a structure of the algebra; §*The Switch Between the Two Frames* pairs each of the sixteen with its Peirce array through $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}=C_{\Pi}^{-1}L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}C_{\Pi}$.
 
-**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
+**The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image. Conjugating entries on its own is not an involution of the algebra, a bare $\mathsf{M}_2$ names this isomorphism and nothing else, and the realisation is fixed up to a star-unitary change of basis and a central scalar.
 
 **The coordinate frames are two, and neither is a matrix frame.** The $\mathbb{B}$ frame reads $Q_\mu$ with $Q_t=i q'_t$; the $\mathbb{B}_{\Phi}$ frame reads $x_0=r'_{t}$ and carries the printed gammas. The metric is one, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, in both. A contraction stays in one frame, and the d'Alembertian is one operator in both.
 
@@ -1082,7 +1082,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | Symbol | Meaning |
 |---|---|
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ |
-| $\operatorname{Tr}(\tilde Q)=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
+| $\operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t$ | The trace of the image, twice the scalar part |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 | $\rho_L,\rho_R$ | Left and right multiplication as linear maps, $\rho_L(\tilde Q_1)(\tilde Q_2)=\tilde Q_1\tilde Q_2$, $\rho_R(\tilde Q_1)(\tilde Q_2)=\tilde Q_2\tilde Q_1$ |
 | $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}$ | The left copy, $\rho_L(\mathbb{B})$; $\mathbb{B}_R$ is its commutant |

@@ -27,13 +27,13 @@ The companion articles supply the pieces:
 
 ### The joint state and the reduced state
 
-The state space of two qubits is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$ as a complex algebra, with the tensor trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$. A pure two-qubit state is a rank-one idempotent,
+The state space of two qubits is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$ as a complex algebra, with the tensor trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$. A pure two-qubit state is a rank-one idempotent,
 $$
 \tilde\Pi = |\tilde{Ξ}\rangle\langle\tilde{Ξ}| \quad\text{with}\quad |\tilde{Ξ}\rangle\in S\otimes S,
 $$
 and the reduced state of the first qubit is the **partial trace**
 $$
-\mathrm{Tr}_2:\ \mathbb{B}\otimes\mathbb{B}\to\mathbb{B}, \qquad \mathrm{Tr}_2(\tilde{Q}_2\otimes\tilde{Q}_1) = \tilde{Q}_2\,\mathrm{Tr}_\mathbb{B}(\tilde{Q}_1),
+\mathrm{Tr}_2:\ \mathbb{B}\otimes\mathbb{B}\to\mathbb{B}, \qquad \mathrm{Tr}_2(\tilde{Q}_2\otimes\tilde{Q}_1) = \tilde{Q}_2\,\mathrm{Tr}_\mathbb{B}\mathsf M_2(\tilde{Q}_1),
 $$
 extended linearly. On the singlet,
 $$
