@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mass: The Definition, the Representatives and the Limits — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The corpus has one definition of mass, and it is a value of the quaternionic norm taken on the material representative of the four-momentum:">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mass-the-definition-the-representatives-and-the-limits"><strong>Mass: The Definition, the Representatives and the Limits</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The corpus has one definition of mass, and it is a value of the quaternionic norm taken on the material representative of the four-momentum:</p>
+<p>$$
+\boxed{\;m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}=-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;}\ ,
+$$</p>
+<p>with $\tilde P_{\Phi}=i(E/c)e_t+\vec p_{\Phi}$. On an element off both sectors the norm is complex, its level sets have codimension two, and no real $m$ can be read. Everything else the corpus says about mass is a reading of that one value, and each reading names the representative it uses.</p>
+<p><strong>Why the question is live.</strong> Several articles write that the mass is Hermitian, or that it lies in $\mathbb{B}_{\Psi}$. Others put the mass shell on $\mathbb{B}_{\Phi}$ and write $\delta(N+m^{2}c^{2})$. Read as two definitions, the two families contradict. Read as a value and a geometry, they agree, and this article shows the separation.</p>
+<p><strong>What this article decides.</strong> It fixes the canonical definition, shows why there is no whole-algebra version rather than a discarded rival, separates the value from the geometry, and tabulates the six readings the corpus gives of mass with the domain each one needs.</p>
+<p><strong>What was recomputed.</strong> The determinant identity $\det\mathsf M_2(\tilde Q)=N(\tilde Q)$ and the multiplicativity $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$ on one hundred random biquaternions, worst errors $3.7\times10^{-15}$ and $4.3\times10^{-14}$; the two on-shell values $N(\tilde P_{\Phi})=-m^{2}c^{2}$ and $N(\tilde P_{\Psi})=+m^{2}c^{2}$; the spectra of both representatives; the failure of mass to compose on a pair of timelike material momenta; the multiplicativity of the modulus on the same pair; the connectivity of the complement of the zero-divisor set on one hundred pairs of invertible matrices; and the crossing of $N=0$ on a segment between a timelike and a spacelike material element.</p>
+<h2 id="the-norm-and-the-three-domains">The Norm, and the Three Domains</h2>
+<p><strong>The norm is a complex number on the algebra.</strong> For $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu\in\mathbb{C}$,</p>
+<p>$$
+\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+\qquad
+\mathsf M_2\bigl(\tilde Q\tilde Q^{\natural}\bigr)=N(\tilde Q)\,I_2 ,
+$$</p>
+<p>and $N(\tilde Q)$ is the determinant of the $2\times2$ image. The product $\tilde Q\tilde Q^{\natural}$ is always central, so the norm is the central coefficient of that product and not an element of a sector.</p>
+<p><strong>On a sector the norm is real, and the two sectors give opposite signs.</strong> The material coefficient is imaginary in the time slot and real in the three spatial slots; the informational one is the other way round. The unit metric $\delta_{\mu\nu}=(1,1,1,1)$ holds throughout, and the single arithmetic $i^{2}=-1$ is applied once, to the time coefficient. The minus in the norm is the square of that $i$ and not a metric sign.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>domain</th>
+<th>coefficients</th>
+<th>$N$</th>
+<th>inertia</th>
+<th>zero set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all of $\mathbb{B}$</td>
+<td>$Q_\mu$ complex</td>
+<td>complex in general</td>
+<td>not defined</td>
+<td>the singular set, real dimension $6$, codimension $2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$Q_t$ imaginary, $Q_\eta$ real</td>
+<td>real</td>
+<td>$(3,1)$</td>
+<td>the light cone, real dimension $3$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$Q_t$ real, $Q_\eta$ imaginary</td>
+<td>real</td>
+<td>$(1,3)$</td>
+<td>the cone $Q_t^{2}=\lvert\vec Q\rvert^{2}$, real dimension $3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is why the fourth column matters.</strong> On the whole algebra the norm is one complex quadratic form, so $N=0$ is one complex equation, of real codimension two. The set is the singular set of the matrix model, of real dimension six. The two sector cones are three-dimensional slices of it.</p>
+<h2 id="the-canonical-definition">The Canonical Definition</h2>
+<p><strong>The definition is the boxed line, and it holds on the material representative.</strong> <em>The Null Four-Momentum</em> states it in that form: mass is the negative of the norm of the four-momentum, up to the constant $c^{2}$. With $\tilde P_{\Phi}=i(E/c)e_t+p_x\vec e_x+p_y\vec e_y+p_z\vec e_z$,</p>
+<p>$$
+\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{E^{2}}{c^{2}}+\lvert\vec p_{\Phi}\rvert^{2}=-m^{2}c^{2}
+\quad\Longleftrightarrow\quad
+\frac{E^{2}}{c^{2}}-\lvert\vec p_{\Phi}\rvert^{2}=m^{2}c^{2}.
+$$</p>
+<p><strong>The value is central and real, and the mass is the square root of it divided by $c$.</strong> The on-shell value is a multiple of $e_t$, hence central, hence Hermitian. A norm carries the unit of momentum squared, so the value is not yet a mass:</p>
+<p>$$
+m=\frac{1}{c}\sqrt{-\langle\tilde P_{\Phi}\rangle_{\natural}}\ \ge 0 ,
+$$</p>
+<p>with the positive root taken by convention. The division by $c$ is not cosmetic. A corpus that carries $\hbar$ and $c$ everywhere cannot identify a momentum with a mass, and the two differ by $\mathrm{L}\,\mathrm{T}^{-1}$.</p>
+<p><strong>The mirror representative gives the same mass with the opposite sign.</strong> Multiplication by the central imaginary exchanges the sectors, $\tilde P_{\Psi}=i\tilde P_{\Phi}$, and $N(i\tilde Q)=-N(\tilde Q)$, so</p>
+<p>$$
+\langle\tilde P_{\Psi}\rangle_{\natural}=+\frac{E^{2}}{c^{2}}-\lvert\vec p_{\Phi}\rvert^{2}=+m^{2}c^{2}.
+$$</p>
+<p>This is the row $\tilde P_{\Psi}$ of <em>Physics Units and Common Elements Conventions</em>: one element read in two sectors, the generator $\tilde P_{\Phi}$ and the observable $\tilde P_{\Psi}$. The number $m$ is one number in both.</p>
+<p><strong>The check.</strong> The numbers are a scaling check with $c$ carried explicitly: $c=10\ \mathrm{m\,s^{-1}}$, $m=2\ \mathrm{kg}$, $\vec p_{\Phi}=(1,2,3)\ \mathrm{kg\,m\,s^{-1}}$. The time coefficient on shell is $E/c=\sqrt{\lvert\vec p_{\Phi}\rvert^{2}+m^{2}c^{2}}$, and the computation gives $N(\tilde P_{\Phi})=-400=-m^{2}c^{2}$ and $N(\tilde P_{\Psi})=+400=+m^{2}c^{2}$, in $(\mathrm{kg\,m\,s^{-1}})^{2}$.</p>
+<h2 id="why-there-is-no-definition-on-the-whole-algebra">Why There Is No Definition on the Whole Algebra</h2>
+<p><strong>The question is why the sector appears in the definition of the mass.</strong> The answer is a dimension count on the level sets of $N$.</p>
+<p><strong>A shell is a boundary, and a boundary in $n$ dimensions has $n-1$.</strong> Mass is the label of a shell, so the definition is available exactly when the level sets of the norm are hypersurfaces that separate momentum space into an on-shell side and an off-shell side. Whether they do is a fact about the level sets and not a choice of wording.</p>
+<p><strong>On $\mathbb{B}$ the level sets have codimension two.</strong> The coefficients are complex, so the real space is eight dimensional, and $N=\lambda$ is one complex equation, that is two real equations. The set $\{N=0\}$ is six dimensional. Its complement is the set of invertible elements, and that set is connected: any two invertible matrices are joined by a path on which $\lvert\det\rvert$ stays away from zero, verified on one hundred pairs with the smallest $\lvert\det\rvert$ along the paths $0.4095$.</p>
+<p><strong>A codimension-two set separates nothing.</strong> The complement of the zero-divisor set is one connected piece, so there is no inside and no outside of a mass shell in $\mathbb{B}$, and no region that a value of $N$ could label. The massless condition on $\mathbb{B}$ is not a wall but an obstacle that can be walked around.</p>
+<p><strong>Inside a sector the level sets have codimension one.</strong> There the four coefficients are real and $N$ is real, so $\{N=-m^{2}c^{2}\}$ is one real equation in four real variables, a three-dimensional surface. It separates: a straight line from the timelike element with $N=-24$ to the spacelike one with $N=+15$ crosses $N=0$. That is a shell, and a shell can carry a label.</p>
+<p><strong>So the sector is what makes $m$ a number.</strong> A real $m$ labels a surface, and the surface must separate. Inside a sector it does; on the complex level sets it does not.</p>
+<p><strong>The six failures are six faces of the same count.</strong> Each is one way the mass stops being a number when $N$ is complex.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the phrase would require</th>
+<th>what happens</th>
+<th>why there is no referent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a real $m^{2}$</td>
+<td>$N=(1+i)^{2}=2i$ on $(1+i)e_t$, so $m^{2}=-2i/c^{2}$</td>
+<td>a complex mass has no order and no root</td>
+</tr>
+<tr>
+<td>a positive $m^{2}$ on $\mathbb{B}_{\Psi}$</td>
+<td>$N>0$ there, so $m^{2}=-N/c^{2}<0$</td>
+<td>the mirror of a particle would carry an imaginary mass</td>
+</tr>
+<tr>
+<td>masslessness as a wall</td>
+<td>$\{N=0\}$ has codimension two and does not separate</td>
+<td>no light cone on $\mathbb{B}$, two cones inside the sectors</td>
+</tr>
+<tr>
+<td>composition</td>
+<td>$N=-8$ and $N=-12$ multiply to $N=+96$</td>
+<td>the sign flips, so the composite leaves the sector</td>
+</tr>
+<tr>
+<td>a shell measure</td>
+<td>$\delta(N+m^{2}c^{2})$ needs a real argument and a real zero</td>
+<td>a delta on a complex argument is undefined</td>
+</tr>
+<tr>
+<td>a spectrum to read</td>
+<td>the eigenvalues of $\tilde P_{\Phi}$ are $i(E/c\pm\lvert\vec p_{\Phi}\rvert)$</td>
+<td>purely imaginary; the real spectrum is on $\tilde P_{\Psi}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>An element off both sectors has no mass, and not a complex one.</strong> Its norm is complex, and $N=\lambda$ cuts a surface of real dimension six that bounds nothing. Mass labels a boundary, so there is nothing to label.</p>
+<h2 id="the-value-is-not-a-sector-element">The Value Is Not a Sector Element</h2>
+<p><strong>The centre is two real dimensional, and its two halves are the two sectors.</strong> From <em>The Centre of the Biquaternion Algebra as the Classical Sector</em>,</p>
+<p>$$
+Z(\mathbb{B})=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\},
+\qquad
+Z(\mathbb{B})\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t,
+\qquad
+Z(\mathbb{B})\cap\mathbb{B}_{\Phi}=\mathbb{R}\,ie_t .
+$$</p>
+<p>A real scalar is central and Hermitian, so it lies in $\mathbb{B}_{\Psi}$. An imaginary scalar is central and anti-Hermitian, so it lies in $\mathbb{B}_{\Phi}$. Both statements are forced by the arithmetic, and neither is a choice.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>written form</th>
+<th>central</th>
+<th>Hermitian</th>
+<th>sector</th>
+<th>norm on shell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$mc\,e_t$</td>
+<td>yes</td>
+<td>yes</td>
+<td>$\mathbb{B}_{\Psi}$</td>
+<td>$+m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>$imc\,e_t$</td>
+<td>yes</td>
+<td>no</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td>$-m^{2}c^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>This is the whole content of "the mass is Hermitian".</strong> The sentence says that $m$ is real, because a real multiple of $e_t$ is fixed by the involution. Every real number is in $\mathbb{B}_{\Psi}$ under that rule: $2$, $\pi$ and a coupling constant as well. The sentence is true and carries no information about mass in particular.</p>
+<p><strong>So "the mass lies in $\mathbb{B}_{\Phi}$" is false as written.</strong> What lies in $\mathbb{B}_{\Phi}$ is $imc\,e_t$, the mass term of the material equation, and the $i$ is what puts it there. The corpus's own sentence is exact on this point: the framework's external parameters — $\hbar$, $c$, a mass $m$, a coupling constant — enter the equations as real multiples of $e_t$, hence as central elements. Central and real, therefore Hermitian, therefore on the $\Psi$ side of the centre.</p>
+<p><strong>The consequence for wording.</strong> "Mass is defined on $\mathbb{B}_{\Psi}$" should not be written as a definition. It reports that the number is real. The definition is the boxed line, taken on $\tilde P_{\Phi}$; and the reason the definition is not circular is that the norm there is real and its value is a number.</p>
+<h2 id="the-six-readings-and-the-domain-each-needs">The Six Readings and the Domain Each Needs</h2>
+<p><strong>The corpus reads mass in six ways, and they are one value seen from six places.</strong> Each row names the object and the domain the reading requires.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>display</th>
+<th>domain</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>shell value</td>
+<td>$m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$</td>
+<td>$\mathbb{B}_{\Phi}$, $N$ real</td>
+<td><em>The Null Four-Momentum</em></td>
+</tr>
+<tr>
+<td>mirror value</td>
+<td>$\langle\tilde P_{\Psi}\rangle_{\natural}=+m^{2}c^{2}$</td>
+<td>$\mathbb{B}_{\Psi}$, $N$ real</td>
+<td><em>Physics Units and Common Elements Conventions</em></td>
+</tr>
+<tr>
+<td>mass operator</td>
+<td>$\tilde E_{\Psi}$, masses $=$ eigenvalues of $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$</td>
+<td>$\mathbb{B}_{\Psi}$, real spectrum</td>
+<td><em>The Petiau System</em></td>
+</tr>
+<tr>
+<td>modulus</td>
+<td>$r=\lvert N\rvert^{1/2}$</td>
+<td>any element; the only reading that survives on $\mathbb{B}$</td>
+<td><em>The N Norm</em></td>
+</tr>
+<tr>
+<td>density</td>
+<td>$\rho_{\mathrm{mass}}=m\,\rho_{\mathrm{num}}$</td>
+<td>a continuum field, real central coefficient</td>
+<td><em>The Euler and Continuity Equations</em></td>
+</tr>
+<tr>
+<td>massless limit</td>
+<td>$N=0$ on $\mathbb{B}_{\Phi}$, the light cone</td>
+<td>$\mathbb{B}_{\Phi}$</td>
+<td><em>The Null Cone</em>, <em>Conformal Invariance</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mass operator is the only reading where mass is an element rather than a number.</strong> In <em>The Petiau System</em> the scalar mass is promoted to a biquaternion $\tilde E_{\Psi}$ acting on the field from the right, and the two masses of a doublet are the eigenvalues of $\tilde E_{\Psi}\tilde E_{\Psi}^{*}$. Its first case is $\tilde E_{\Psi}=s\,e_t$: then $\tilde E_{\Psi}\tilde E_{\Psi}^{*}=s^{2}e_t$ is central and both eigenvalues equal $s^{2}$. A single mass is therefore the degenerate mass operator, and the operator reading contains the value reading as its central case.</p>
+<p><strong>The modulus is the only reading that needs no sector.</strong> It is defined on the whole algebra because a modulus is a non-negative real number whatever the phase of $N$ is. It is also the only reading that composes, as the fourth consequence above shows. The corpus pays for that universality with a loss: the modulus forgets the sign, so it cannot distinguish a timelike from a spacelike element.</p>
+<p><strong>The density is a coefficient and not an element.</strong> In the hydrodynamics the mass density is $\rho_{\mathrm{mass}}=m\rho_{\mathrm{num}}$, a real central scalar multiplying a material current. It is not in $\mathbb{B}_{\Phi}$ for the same reason $m$ is not: it is real, hence Hermitian, hence on the $\Psi$ side of the centre. What carries the material character is the current it multiplies.</p>
+<p><strong>The massless limit is the boundary of the shell and not a limiting value.</strong> On $\mathbb{B}_{\Phi}$ the condition $N=0$ is $E=c\lvert\vec p_{\Phi}\rvert$, the light cone. Two other uses of the same limit are consistent with this reading: the conformal dilation sends $k_m$ to $k_m/\lambda$, so no finite dilation returns a massive equation, and the Proca field's massless limit is the point where the two constraints become first class and the count of polarizations drops from three to two. Both are statements about the shell at $N=0$, not about a value of $-N/c^{2}$.</p>
+<h2 id="the-strongest-objection">The Strongest Objection</h2>
+<p><strong>The objection is that the definition is asymmetric.</strong> Why should the minus belong to the material representative and the plus to the informational one, if mass is one number?</p>
+<p><strong>The answer is that the minus is arithmetic and not a choice.</strong> The two representatives differ by the central $i$, and $i^{2}=-1$ is applied once, to the time coefficient. Move the $i$ from the time slot to the three spatial slots and the sign of the norm follows. There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, with four coefficients $+1$, and there is one arithmetic. No second metric and no second arithmetic enter, and no convention of the corpus is available to reverse the sign.</p>
+<p><strong>A second objection is that the corpus then has two masses.</strong> The shell sits on $\mathbb{B}_{\Phi}$ and the observable on $\mathbb{B}_{\Psi}$, so it seems to have a geometric mass and an observable mass.</p>
+<p><strong>The answer is that a level set is not a value.</strong> The shell is a surface, and a surface has no sector until a representative is chosen; the mass is the number that labels the surface. $\tilde P_{\Phi}$ and $\tilde P_{\Psi}$ are one element, so the surface and the spectrum are two descriptions of that one element. The number that labels both is $m$, and it is one number because $\tilde P_{\Psi}=i\tilde P_{\Phi}$ is a multiplication by a unit.</p>
+<p><strong>A third objection is that the boxed definition still mentions $c$.</strong> If mass were an algebraic invariant, it would not need a constant.</p>
+<p><strong>The answer is that the constant is a unit conversion and the invariant is the norm.</strong> The algebraic invariant is $\langle\tilde P_{\Phi}\rangle_{\natural}$, of dimension momentum squared; $c^{2}$ carries it to mass squared. Writing $m^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$ would identify a mass squared with a momentum squared inside a definition, and the two carry different units.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>One definition.</strong> Mass is the value $m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$, taken on the material representative, with $m$ the non-negative root divided by $c$.</p>
+<p><strong>One element, two representatives.</strong> The mirror gives $\langle\tilde P_{\Psi}\rangle_{\natural}=+m^{2}c^{2}$, and the difference of sign is the square of the central $i$ moved from the time coefficient to the spatial ones.</p>
+<p><strong>No whole-algebra version, and none is missing.</strong> A shell is a boundary, and on $\mathbb{B}$ the level sets of $N$ have codimension two and separate nothing; inside a sector they have codimension one and separate. An element off both sectors has no shell, hence no mass, which is not the same as a complex mass.</p>
+<p><strong>The centre is not a sector assignment.</strong> A real scalar is central and Hermitian, hence on the $\Psi$ side; an imaginary scalar is central and anti-Hermitian, hence on the $\Phi$ side. "The mass is Hermitian" says the number is real. It does not define the mass, and "mass is defined on $\mathbb{B}_{\Psi}$" is a misstatement of it.</p>
+<p><strong>Six readings, one value.</strong> Shell value, mirror value, mass operator, modulus, density and massless limit. The operator reading contains the value as its central case; the modulus is the only reading that needs no sector and the only one that composes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the quaternionic norm; complex on $\mathbb{B}$, real on each sector; written $N$</td>
+</tr>
+<tr>
+<td>$\det\mathsf M_2(\tilde Q)=N(\tilde Q)$</td>
+<td>the norm as the determinant of the $2\times2$ image</td>
+</tr>
+<tr>
+<td>$\tilde P_{\Phi}=i(E/c)e_t+\vec p_{\Phi}$</td>
+<td>the material four-momentum; $N=-m^{2}c^{2}$ on shell</td>
+</tr>
+<tr>
+<td>$\tilde P_{\Psi}=i\tilde P_{\Phi}$</td>
+<td>its informational mirror, $-p_te_t+i\vec p_{\Phi}$ with $p_t=E/c$; $N=+m^{2}c^{2}$ on shell</td>
+</tr>
+<tr>
+<td>$m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$</td>
+<td>the canonical definition of the mass</td>
+</tr>
+<tr>
+<td>$m=\frac{1}{c}\sqrt{-\langle\tilde P_{\Phi}\rangle_{\natural}}$</td>
+<td>the mass as a number, positive root, unit of mass</td>
+</tr>
+<tr>
+<td>$r=\lvert N\rvert^{1/2}$</td>
+<td>the modulus reading; defined on all of $\mathbb{B}$ and multiplicative</td>
+</tr>
+<tr>
+<td>$\delta(N+m^{2}c^{2})$</td>
+<td>the shell measure; needs $N$ real, hence a sector</td>
+</tr>
+<tr>
+<td>$Z(\mathbb{B})=\mathbb{R}e_t\oplus\mathbb{R}ie_t$</td>
+<td>the centre; real part on $\Psi$, imaginary part on $\Phi$</td>
+</tr>
+<tr>
+<td>$\tilde E_{\Psi}$</td>
+<td>the mass operator; a single mass is its central case $s\,e_t$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{mass}}=m\rho_{\mathrm{num}}$</td>
+<td>the mass density; a real central coefficient of a material current</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-it-does-not.html">The Null Four-Momentum: What the Cone Derives and What It Does Not</a>, for the boxed definition $m^{2}c^{2}=-\langle\tilde P_{\Phi}\rangle_{\natural}$ and the massless shell as the material part of the zero-divisor set.</li>
+<li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the mass as the modulus and the level sets as shells.</li>
+<li><a href="../articles_physics/the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a>, for the statement that the mass is the value of the spectral product on the sector.</li>
+<li><a href="../articles_physics/the-null-cone-the-massless-boundary.html">The Null Cone: The Massless Boundary</a>, for the two representative values and the sentence that the sign is the representative's.</li>
+<li><a href="../articles_physics/four-vectors-and-the-interval.html">Four-Vectors and the Interval</a>, for the imaginary spectrum on $\mathbb{B}_{\Phi}$ and the Hermitian projectors on $\mathbb{B}_{\Psi}$.</li>
+<li><a href="../articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html">The Petiau System and the Quantisation of Mass in Biquaternionic Form</a>, for the mass as an operator and the degenerate single-mass case.</li>
+<li><a href="../articles_physics/the-centre-of-the-biquaternion-algebra-as-the-classical-sector.html">The Centre of the Biquaternion Algebra as the Classical Sector</a>, for $Z(\mathbb{B})=\mathbb{R}e_t\oplus\mathbb{R}ie_t$ and the parameters as real multiples of $e_t$.</li>
+<li><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a>, for the one metric and the sign carried by the coordinate.</li>
+<li><a href="../articles_physics/the-invariant-measure-on-the-mass-shell.html">The Invariant Measure on the Mass Shell</a>, for $\delta(N+m^{2}c^{2})$.</li>
+<li><a href="../articles_physics/conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html">Conformal Invariance and the Massless Limit in Biquaternionic Form</a>, for the dilation that rescales the mass.</li>
+<li><a href="../articles_physics/canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a>, for the massless limit as the return of the gauge symmetry.</li>
+<li><a href="../articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.html">The Euler and Continuity Equations in Biquaternionic Form</a>, for the mass density as a coefficient.</li>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the $\tilde P_{\Phi}$ and $\tilde P_{\Psi}$ rows.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
