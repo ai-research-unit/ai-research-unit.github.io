@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signature Migration: One Metric and the Word That Names No Second One — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="signature-migration-one-metric-and-the-word-that-names-no-second-one"><strong>Signature Migration: One Metric and the Word That Names No Second One</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The corpus has one metric and one arithmetic. The metric is $\delta_{\mu\nu}=(1,1,1,1)$. The arithmetic is $i^2=-1$, applied once, on the time coefficient. No metric therefore carries a sign to declare, and a phrase that gives the metric a signature asserts an object the corpus does not have.</p>
+<p><strong>The word stands $4\,618$ times, in $704$ files.</strong> It carries four senses, and two of them stay. One sense is the metric's attribute, and it goes. One sense is Sylvester's inertia of a quadratic form, and it survives the first pass but not the second. One sense is the topological invariant of Hirzebruch, and one is the ordinary English of an empirical test; both stay. The census is taken before this article, and excludes it.</p>
+<p><strong>The scale of the retirement.</strong> The metric sense stands $261$ times: $159$ in the physics articles, $71$ in the mathematics articles, $18$ in the internal ones, and $13$ in the menus. The physics sites occupy $68$ files, and the heaviest carries $16$.</p>
+<p><strong>This article is a path and not a record.</strong> No article has been edited for it, and the corpus is unchanged. It gives the census, the decision rule, the substitution table, the sites where a substitution produces a false sentence, the per-file inventory, the ordered passes, the verification, and the residue. Each pass is a separate decision by the author.</p>
+<p><strong>The question it answers first.</strong> <em>There is one metric and one $i^2=-1$; why speak of signatures at all?</em> The answer has three parts, and the article is organised around them. Of the metric, never: the metric has no sign to state. Of the interval, not while the interval is written: $N$ is one expression and it carries its own minus. Of a quadratic form, yes, because Sylvester's law of inertia is a theorem about that form and its statement is a pair of counts. The defect is not the word in itself. It is the word in the first two positions.</p>
+<p><strong>What the article does not claim.</strong> It does not claim that the mathematics changes, that any number is wrong, or that the articles carrying the word are mistaken about their subject. It does not claim that the word should vanish from the corpus: the topological sense has a theorem and an operator named after it. It claims that one position of the word contradicts the corpus's own stated rule, that the corpus already polices that rule in five places, and that the retirement is a deletion with a short list of exceptions.</p>
+<h2 id="the-object-one-metric-one-arithmetic">The Object: One Metric, One Arithmetic</h2>
+<h3 id="the-metric-is-a-theorem-not-a-choice">The Metric Is a Theorem, Not a Choice</h3>
+<p><strong>The metric is the Gram matrix of the norm on the four units.</strong> It has four entries $+1$ on the diagonal, from $\langle e_\mu\rangle_\natural=+1$, and six zeros off it, from the orthogonality of the units. Ten entries, ten fixed by the multiplication.</p>
+<p><strong>The corpus states the consequence in the article that owns the object.</strong> <em>The Unit Metric in the Biquaternion Universe</em> writes: <em>There is no signature to pick, no scale to fix and no convention to declare.</em> The sentence is the whole warrant of this migration, and it is already in the corpus.</p>
+<p><strong>The one minus is arithmetic.</strong> On the material sector the time coefficient is $Q_t=iE/c$. Its square is $-E^2/c^2$, because $i^2=-1$. So</p>
+<p>$$
+N(\tilde P_\Phi)=Q_t^2+\lvert\vec p\rvert^2=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}=-p^{2},
+$$</p>
+<p>and on the mass shell $N=-m^{2}c^{2}$.</p>
+<p><strong>The arithmetic is checkable by a reader who does not trust the author.</strong> Square $i r'_t$ and read $-{r'_{t}}^2$. A sign carried in an array can only be checked against the author's declaration. This is the argument of <em>The Unit Metric in the Biquaternion Universe</em>, §<em>What the Choice Buys</em>, and the migration inherits it.</p>
+<p><strong>Recomputed.</strong> The identity $N=-p^{2}$ and the shell value $N=-m^{2}c^{2}$ were checked on one hundred random momenta, together with $N(\tilde V_\Phi)=-c^{2}$ at five rapidities. Every case agreed to machine precision. The sign of $N$ is negative on the timelike branch, zero on the cone, positive on the spacelike branch, and the physics is the ordinary relativity of the mostly-minus interval.</p>
+<h3 id="the-two-positions-the-word-may-not-take-and-the-third-that-it-may">The Two Positions the Word May Not Take, and the Third That It May</h3>
+<p><strong>Position one: the metric.</strong> A sentence that gives a sign to $\delta_{\mu\nu}$ asserts a second metric. The corpus has one, and the article that owns it says so.</p>
+<p><strong>Position two: the interval.</strong> A sentence that calls the interval <em>of signature</em> something adds a label to an expression that already displays its signs. The interval is $N$. The reader who wants the signs reads them from the displayed expression and from $i^2=-1$.</p>
+<p><strong>Position three, and it is a different object: a form.</strong> A quadratic form on a subspace, an algebra or a lattice has $p$ positive and $q$ negative directions in some basis, and Sylvester's law says the pair does not depend on the basis. That pair is a theorem's content, and it needs a name. The corpus's name for it is <em>inertia</em>, written $355$ times before this article, and <em>Sylvester's law of inertia</em> is written $53$ times.</p>
+<h2 id="the-three-senses">The Three Senses</h2>
+<p><strong>The census, by corpus and by sense.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sense</th>
+<th>mathematics</th>
+<th>physics</th>
+<th>internal</th>
+<th>menus</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A, the metric's attribute</td>
+<td>$71$</td>
+<td>$159$</td>
+<td>$18$</td>
+<td>$13$</td>
+<td>$261$</td>
+</tr>
+<tr>
+<td>B, the inertia of a form</td>
+<td>$2\,883$</td>
+<td>$608$</td>
+<td>$93$</td>
+<td>$185$</td>
+<td>$3\,769$</td>
+</tr>
+<tr>
+<td>C, the topological invariant</td>
+<td>$512$</td>
+<td>$11$</td>
+<td>$0$</td>
+<td>$27$</td>
+<td>$550$</td>
+</tr>
+<tr>
+<td>D, the empirical signature</td>
+<td>$0$</td>
+<td>$36$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$38$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$3\,466$</td>
+<td>$814$</td>
+<td>$111$</td>
+<td>$227$</td>
+<td>$4\,618$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three senses are read from the object the word modifies, and from nothing else.</strong> That is the whole decision procedure, and it needs no dictionary.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sense</th>
+<th>the object</th>
+<th>the shape</th>
+<th>the decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>$\delta_{\mu\nu}$, the metric</td>
+<td><em>metric signature</em>, <em>the signature of the metric</em>, <em>signature convention</em></td>
+<td>retire</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>the case, Euclidean against Lorentzian</td>
+<td><em>in Euclidean signature</em>, <em>Minkowski signature</em></td>
+<td>retire</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>the interval of the material sector</td>
+<td><em>the interval of signature $(3,1)$</em></td>
+<td>retire</td>
+</tr>
+<tr>
+<td>B</td>
+<td>a form on a subspace, an algebra, a lattice</td>
+<td><em>the trace form, of signature $(3,1)$</em></td>
+<td>second wave: <em>inertia</em></td>
+</tr>
+<tr>
+<td>C</td>
+<td>a closed oriented manifold</td>
+<td><em>the signature of $M$</em>, <em>the signature operator</em></td>
+<td>keep</td>
+</tr>
+<tr>
+<td>D</td>
+<td>the empirical content of a theory</td>
+<td><em>an empirical signature of the framework</em></td>
+<td>keep</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A1 is small and it is the worst.</strong> Fourteen physics sites give the metric a signature, a choice of a convention, or a sign to pick. Every one of them contradicts <em>The Unit Metric in the Biquaternion Universe</em> in one sentence.</p>
+<p><strong>A2 is the largest of the three and it is a case label.</strong> Ninety-six physics sites read <em>in Euclidean signature</em> or <em>in Minkowski signature</em> where the sentence means <em>in the Euclidean case</em> or <em>in the Lorentzian case</em>. The Hodge star is the usual host: it squares to $+1$ in the Euclidean case and to $-1$ in the Lorentzian one, because the metric inverse that enters it changes sign on the time slot.</p>
+<p><strong>A3 attaches the pair to the interval.</strong> Forty-nine physics sites write the pair on the material interval, where the interval is already written on the same line in most cases.</p>
+<p><strong>The census is a floor and not a total.</strong> The mechanical rule marks $159$ physics sites in $68$ files. Widening its neighbourhood from <em>interval</em> to <em>interval or norm</em> marks $212$ in $79$ files, because the norm on a sector is the interval in the corpus's own words: <em>the interval is the norm</em>. Widening the window again marks $235$. The extra sites are pairs whose object stands further from the word than one phrase, and every one of them is a site to read rather than a site already decided. A pass that plans its effort from $159$ will find more work; a pass that plans from $235$ will read some sites twice. The number that no reading can dispute is $159$.</p>
+<p><strong>B is not a defect of the same kind.</strong> A trace form on $\mathfrak{sl}_2$, a Killing form, a Hermitian form, the N-norm read on the eight real parameters: each has an inertia, and the pair is what the theorems about it are indexed by. The word carries information there. What it does not carry is the corpus's own word, <em>inertia</em>.</p>
+<p><strong>C is a theorem and an operator.</strong> The signature of a closed oriented manifold of dimension $4k$ is the difference of the positive and the negative counts of the intersection form on its middle cohomology. It is a single integer, it is a topological invariant, and it is the index of the signature operator. Six mathematics articles carry the word in their title. Calling that integer an inertia would be wrong: the inertia is the pair, and the signature is its difference.</p>
+<p><strong>D is ordinary English.</strong> <em>An empirical signature of the framework</em> means what a test would look like. It names no object of the algebra.</p>
+<h2 id="why-the-metric-sense-goes">Why the Metric Sense Goes</h2>
+<p><strong>First, it names a metric that does not exist.</strong> The corpus has one metric, it is the identity, and an identity has no inertia to state. A reader who meets <em>Minkowski signature</em> concludes that a second metric has been chosen, with a minus in it, and the corpus spends whole sections undoing that conclusion.</p>
+<p><strong>Second, it implies a convention where there is none.</strong> A convention is a choice between alternatives that a reader cannot derive. The minus of the interval is not a choice: it is $i^2=-1$ on one slot, and any reader who squares the coordinate finds it. The corpus writes the point in <em>Four-Vectors and the Interval</em>: <em>The Lorentzian signature is the arithmetic of $i^2=-1$ placed on the temporal coefficient.</em> A sentence that calls the same thing a convention deletes the arithmetic and keeps the choice.</p>
+<p><strong>Third, it hides the arithmetic at the site where the arithmetic is the content.</strong> <em>The interval of signature $(3,1)$</em> is shorter than <em>the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$</em>, and it is longer than <em>$N$</em>. It buys nothing and it costs the one check the reader can perform.</p>
+<p><strong>Fourth, it invites the absorbed metric.</strong> A corpus that says <em>signature</em> at ease will sooner or later write $\mathrm{diag}(1,-1,-1,-1)$ and call the minus an entry. The pattern is in the corpus already, in articles that import a source's mostly-minus array and then say <em>the one this signature gives</em>. The unit metric exists to prevent exactly that, in its own words: <em>Confusing the two is the mistake the unit metric exists to prevent.</em></p>
+<p><strong>Fifth, the corpus already polices the word, and it polices it with the word.</strong> Five passages state the rule, and four of them state it as a denial:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>the denial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Algebra and Element Conventions</em></td>
+<td><em>The minus of the material sector is not a metric: it is the square of the $i$ in $Q_t=i q'_t$.</em></td>
+</tr>
+<tr>
+<td><em>Frame and Metric Conventions</em></td>
+<td><em>The tuple is a coefficient tuple, not a real signature.</em></td>
+</tr>
+<tr>
+<td><em>Frame and Metric Conventions</em></td>
+<td><em>The minus is not a signature: it is the square of the $i$.</em></td>
+</tr>
+<tr>
+<td><em>Canonical Quantization of the Biquaternion Graviton Field</em></td>
+<td><em>whose one minus on the time term is the square of the $i$, not a signature.</em></td>
+</tr>
+<tr>
+<td><em>Product and Form Conventions</em></td>
+<td><em>The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signature to state.</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A word that a corpus spends five sentences denying is a word it has already decided against.</strong> The migration finishes the decision. After it, no sentence needs the denial, because no sentence makes the claim the denial answers.</p>
+<h2 id="the-objection">The Objection</h2>
+<p><strong>The objection.</strong> <em>Signature</em> is not a synonym for <em>convention</em>. It is Sylvester's invariant of a quadratic form, and the corpus states it correctly and repeatedly: the material interval has three positive and one negative direction, the Hermitian form has four or eight and none, the twistor form is $(2,2)$, the Killing form of the Lorentz algebra is $(3,3)$. Those are theorems. A purge that removes the word removes the theorems' vocabulary, and the corpus then has to invent one.</p>
+<p><strong>The answer is that the objection is right about a different position.</strong> It is right about a form, and the first pass does not touch a form. It is wrong about the metric, which has no inertia, and about the interval, which is written. The rule is positional, and it is the rule the corpus already states in <em>Product and Form Conventions</em>: <em>A signature here belongs to a form.</em> The migration is the enforcement of that sentence at the two positions it excludes.</p>
+<p><strong>A second objection: information is lost.</strong> A sentence that says <em>the interval of signature $(3,1)$</em> tells the reader the sign pattern in four characters. The answer is that the pattern is not lost, it is relocated. Where the pair is the content of a theorem, it becomes <em>inertia $(3,1)$</em>. Where the interval is the content, the interval is written and the pattern is read from it. No site loses a number.</p>
+<p><strong>A third objection: the case label is compact.</strong> <em>In Euclidean signature</em> is one word longer than <em>in the Euclidean case</em>, and shorter than <em>with a positive-definite spatial block</em>. The answer is that compactness is not the difficulty; the difficulty is that the label names the metric as the thing that changes, when what changes is the sign of the squared coordinate. <em>In the Euclidean case</em> names the case and leaves the metric alone, which is the true statement and the same length.</p>
+<p><strong>A fourth objection: the articles on the external programmes must reproduce the source's words.</strong> The answer is that the corpus already has a form for this, and it is attribution rather than usage: <em>the external arena, whose signature $(+,-,-,-)$ is that source's own and is stated where it is used.</em> Quotation stays quotation. The migration changes the corpus's own voice.</p>
+<h2 id="the-substitution-table">The Substitution Table</h2>
+<p><strong>Nine shapes, seven replacements, two survivals.</strong> The table gives the shape, the replacement, and one worked example.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the shape</th>
+<th>the replacement</th>
+<th>the example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>the metric has signature $(p,q)$</em></td>
+<td>delete; state the arithmetic</td>
+<td><em>the metric is $\delta_{\mu\nu}=(1,1,1,1)$, and the time square is negative because $Q_t=iE/c$</em></td>
+</tr>
+<tr>
+<td><em>metric signature</em>, <em>signature of the metric</em></td>
+<td><em>the metric</em>, or the arithmetic</td>
+<td><em>not from a postulated metric of either sign</em></td>
+</tr>
+<tr>
+<td><em>signature convention</em>, <em>the signature convention</em></td>
+<td>delete the phrase</td>
+<td><em>for the proof and the signs of the four forms</em></td>
+</tr>
+<tr>
+<td><em>in Euclidean signature</em>, <em>in Minkowski signature</em></td>
+<td><em>in the Euclidean case</em>, <em>in the Lorentzian case</em></td>
+<td><em>$\star^2=+1$ in the Euclidean case and $-1$ in the Lorentzian one</em></td>
+</tr>
+<tr>
+<td><em>the interval of signature $(3,1)$</em></td>
+<td>write the interval, or <em>inertia $(3,1)$</em></td>
+<td><em>the interval $-{r'_{t}}^2+\lvert\vec r\rvert^2$</em></td>
+</tr>
+<tr>
+<td><em>the signature weight</em> $\varepsilon$</td>
+<td><em>the sign weight</em> $\varepsilon$</td>
+<td><em>neither $w$ nor $p$ takes the sign weight $\varepsilon$</em></td>
+</tr>
+<tr>
+<td><em>of signature $(p,q)$</em>, of a form</td>
+<td><em>of inertia $(p,q)$</em></td>
+<td><em>the trace form, of inertia $(3,1)$</em></td>
+</tr>
+<tr>
+<td><em>the signature of $M$</em>, <em>the signature operator</em></td>
+<td>keep</td>
+<td><em>Hirzebruch's signature theorem</em></td>
+</tr>
+<tr>
+<td><em>an empirical signature</em></td>
+<td>keep</td>
+<td><em>what would count as an empirical signature</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first six rows retire the word.</strong> In each, the word either gives a sign to the metric, or offers a convention, or labels an expression that is written, and none of them needs a decision beyond the object test.</p>
+<p><strong>The seventh row is the second wave, and it is a rename rather than a deletion.</strong> The word there is correct about its object and wrong only in its name. It survives as <em>inertia</em>, the corpus's own term, and the theorem keeps its content. The wave touches $3\,769$ sites, and it is a separate pass because it is a different object and because it changes article titles.</p>
+<p><strong>The last two rows do not move.</strong> The topological signature is a single integer with a theorem and an operator, and the empirical signature is English.</p>
+<h2 id="the-sites-that-need-a-sentence">The Sites That Need a Sentence</h2>
+<p><strong>Seven sites where a substitution produces a false sentence.</strong> Each is quoted, and each takes a rewrite rather than a replacement.</p>
+<p><strong>The first is the rule itself.</strong> <em>Product and Form Conventions</em> states the convention the migration enforces: <em>Throughout the series a signature is written $(n,m)$ with the positive directions counted first, so that a form with four negative directions is $(0,4)$. A signature here belongs to a form. The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and being the identity it has no signature to state.</em> Replacing the noun by <em>inertia</em> gives: <em>Throughout the series an inertia is written $(n,m)$ ... An inertia here belongs to a form. The series has one metric ... and being the identity it has no inertia to state.</em></p>
+<p><strong>The second is the heading that argues the point.</strong> <em>The Unit Metric in the Biquaternion Universe</em> carries the heading <strong>What the signature still is</strong>, and the paragraph under it draws the distinction the migration rests on: the pair belongs to the form read on a sector, not to the metric. The heading becomes <strong>What the interval still is</strong>, and the paragraph then reads <em>the interval on $\mathbb{B}_{\Phi}$ has inertia $(3,1)$ and this is a real statement.</em> The argument is unchanged; the subject is named.</p>
+<p><strong>The third is the same article's strongest sentence.</strong> <em>There is no signature to pick, no scale to fix and no convention to declare</em> becomes <em>there is no sign to pick, no scale to fix and no convention to declare.</em> A literal deletion leaves the list with two members and a comma.</p>
+<p><strong>The fourth is a heading in <em>Four-Vectors and the Interval</em>.</strong> The entry is titled <strong>The Signature Is the Placement of the Imaginary Unit</strong>, and its content is the migration's own thesis: the pair is produced by where the $i$ sits. The title becomes <strong>The Interval Is the Placement of the Imaginary Unit</strong>, and no word of the body changes.</p>
+<p><strong>The fifth is the defence in <em>Frame and Metric Conventions</em>.</strong> <em>The tuple is a coefficient tuple, not a real signature; a signature appears only when a sector is imposed</em> becomes <em>the tuple is a coefficient tuple, not a real form; a real form appears only when a sector is imposed.</em> The contrast is coefficient against form, and it is sharper without the retired word.</p>
+<p><strong>The sixth is the case label attached to the Hodge star.</strong> <em>On two-forms the Hodge star satisfies $\star^2=+1$ in Euclidean signature, so $\Lambda^2$ splits into two real three-dimensional eigenspaces</em> becomes <em>in the Euclidean case</em>. The eigenvalues quoted in the same paragraph, $\{+1,+1,+1,-1,-1,-1\}$ against $\{+i,+i,+i,-i,-i,-i\}$, are the check, and they stay.</p>
+<p><strong>The seventh is the denial that names the error.</strong> <em>Canonical Quantization of the Biquaternion Graviton Field</em> writes <em>the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a signature.</em> The denial becomes <em>not a sign of the metric</em>, and the sentence loses its last dependency on the word.</p>
+<p><strong>A word on the fifth and the seventh together.</strong> Both sentences exist only to deny the retired reading. After the pass they deny a claim no article makes. The corpus may keep them, and this article recommends keeping them in a shortened form, because the imported metric is the error a new reader is most likely to make.</p>
+<h2 id="the-inventory">The Inventory</h2>
+<h3 id="physics">Physics</h3>
+<p><strong>Sixty-eight files, one hundred and fifty-nine sites.</strong> The table gives every physics article that carries the metric sense, with its count and its total count of the word. The two numbers differ in most rows: the difference is the inertia sense, which the first pass leaves.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the article</th>
+<th>the metric sense</th>
+<th>the word, all senses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html">the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate</a></td>
+<td>$16$</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td><a href="instantons-and-solitons-in-biquaternionic-form.html">instantons-and-solitons-in-biquaternionic-form</a></td>
+<td>$9$</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td><a href="why-complexify-spacetime.html">why-complexify-spacetime</a></td>
+<td>$7$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td><a href="introduction-to-the-biquaternion-universe.html">introduction-to-the-biquaternion-universe</a></td>
+<td>$6$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td><a href="the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.html">the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry</a></td>
+<td>$6$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td><a href="the-lorentz-group-as-biquaternion-norm-automorphisms.html">the-lorentz-group-as-biquaternion-norm-automorphisms</a></td>
+<td>$6$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td><a href="four-vectors-and-the-interval.html">four-vectors-and-the-interval</a></td>
+<td>$5$</td>
+<td>$22$</td>
+</tr>
+<tr>
+<td><a href="the-four-forms-and-the-four-norms.html">the-four-forms-and-the-four-norms</a></td>
+<td>$4$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td><a href="the-local-complex-structure-and-the-speed-of-light.html">the-local-complex-structure-and-the-speed-of-light</a></td>
+<td>$4$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td><a href="the-unit-metric-in-the-biquaternion-universe.html">the-unit-metric-in-the-biquaternion-universe</a></td>
+<td>$4$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td><a href="ai-physics-review.html">ai-physics-review</a></td>
+<td>$3$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td><a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">lattice-gauge-theory-and-the-biquaternion-path-integral</a></td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="mirror-biquaternions-and-the-phy-psy-switch.html">mirror-biquaternions-and-the-phy-psy-switch</a></td>
+<td>$3$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><a href="the-effective-optical-metric-of-the-local-complex-structure.html">the-effective-optical-metric-of-the-local-complex-structure</a></td>
+<td>$3$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><a href="the-quantum-relativity-tension-and-the-biquaternion-framework.html">the-quantum-relativity-tension-and-the-biquaternion-framework</a></td>
+<td>$3$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td><a href="the-spectral-triple-of-the-biquaternion-algebra.html">the-spectral-triple-of-the-biquaternion-algebra</a></td>
+<td>$3$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td><a href="the-two-commuting-complex-triples.html">the-two-commuting-complex-triples</a></td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="frame-and-metric-conventions.html">frame-and-metric-conventions</a></td>
+<td>$2$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td><a href="interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">interpretation-of-the-wick-rotation-in-the-biquaternion-universe</a></td>
+<td>$2$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td><a href="maxwells-equations-in-the-biquaternionic-formulation.html">maxwells-equations-in-the-biquaternionic-formulation</a></td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="product-and-form-conventions.html">product-and-form-conventions</a></td>
+<td>$2$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td><a href="relativistic-mechanics-in-biquaternionic-form.html">relativistic-mechanics-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">the-biquaternion-basis-of-a-unified-field-fibre-bundle</a></td>
+<td>$2$</td>
+<td>$33$</td>
+</tr>
+<tr>
+<td><a href="the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html">the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="the-derivative-the-field-and-the-transform.html">the-derivative-the-field-and-the-transform</a></td>
+<td>$2$</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td><a href="the-element-the-six-subspaces-and-the-two-ledgers.html">the-element-the-six-subspaces-and-the-two-ledgers</a></td>
+<td>$2$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><a href="the-fermionic-path-integral-in-biquaternionic-form.html">the-fermionic-path-integral-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-four-products-composition-probability-causality-and-gauge.html">the-four-products-composition-probability-causality-and-gauge</a></td>
+<td>$2$</td>
+<td>$13$</td>
+</tr>
+<tr>
+<td><a href="the-lorentz-transformation-as-a-biquaternionic-rotation.html">the-lorentz-transformation-as-a-biquaternionic-rotation</a></td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-n-norm-mass-angle-and-the-cone.html">the-n-norm-mass-angle-and-the-cone</a></td>
+<td>$2$</td>
+<td>$11$</td>
+</tr>
+<tr>
+<td><a href="the-newman-penrose-formalism-in-biquaternionic-form.html">the-newman-penrose-formalism-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><a href="the-reflection-and-the-rotation-in-biquaternionic-form.html">the-reflection-and-the-rotation-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="the-renormalization-group-in-biquaternionic-form.html">the-renormalization-group-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="the-six-generators-and-their-commutators.html">the-six-generators-and-their-commutators</a></td>
+<td>$2$</td>
+<td>$13$</td>
+</tr>
+<tr>
+<td><a href="the-spin-one-anti-hermitian-subspace.html">the-spin-one-anti-hermitian-subspace</a></td>
+<td>$2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td><a href="the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">the-temporal-dimension-why-the-temporal-unit-is-the-identity</a></td>
+<td>$2$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td><a href="wilson-loops-in-biquaternionic-form.html">wilson-loops-in-biquaternionic-form</a></td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="a-brief-history-of-biquaternions-in-physics.html">a-brief-history-of-biquaternions-in-physics</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="black-hole-thermodynamics-in-biquaternionic-form.html">black-hole-thermodynamics-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html">confinement-and-the-loss-of-partonic-information-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td><a href="cosmology-under-the-biquaternion-framework-a-research-agenda.html">cosmology-under-the-biquaternion-framework-a-research-agenda</a></td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><a href="curved-spacetime-and-the-biquaternion-framework.html">curved-spacetime-and-the-biquaternion-framework</a></td>
+<td>$1$</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td><a href="hamiltonian-field-theory-in-biquaternionic-form.html">hamiltonian-field-theory-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="quantum-physics-in-biquaternionic-form.html">quantum-physics-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><a href="the-cartan-subalgebra-the-roots-and-the-three-real-forms.html">the-cartan-subalgebra-the-roots-and-the-three-real-forms</a></td>
+<td>$1$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><a href="the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html">the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">the-classical-free-particle-and-inertial-frames-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-conformal-group-in-biquaternionic-form.html">the-conformal-group-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><a href="the-dirac-equation-in-biquaternionic-form.html">the-dirac-equation-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td><a href="the-field-strength-as-the-sum-of-two-self-dual-halves.html">the-field-strength-as-the-sum-of-two-self-dual-halves</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-finite-dimensional-representations-and-their-unitarity-defect.html">the-finite-dimensional-representations-and-their-unitarity-defect</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-functional-integral-in-biquaternionic-form.html">the-functional-integral-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-gauge-field-path-integral-in-biquaternionic-form.html">the-gauge-field-path-integral-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-gauge-principle-in-biquaternionic-form.html">the-gauge-principle-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-group-of-unit-norm-biquaternions.html">the-group-of-unit-norm-biquaternions</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html">the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-isomorphisms-and-their-dimensions.html">the-isomorphisms-and-their-dimensions</a></td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><a href="the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-null-cone-the-massless-boundary.html">the-null-cone-the-massless-boundary</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-form.html">the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-path-integral-and-the-proca-equation-in-biquaternionic-form.html">the-path-integral-and-the-proca-equation-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-quadratic-map-and-the-singular-sets.html">the-quadratic-map-and-the-singular-sets</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-theta-vacuum-in-biquaternionic-form.html">the-theta-vacuum-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><a href="the-trace-anomaly-in-biquaternionic-form.html">the-trace-anomaly-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="the-unruh-effect-in-biquaternionic-form.html">the-unruh-effect-in-biquaternionic-form</a></td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><a href="what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions</a></td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td><a href="what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html">what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron</a></td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The distribution.</strong> The table gives the count of files by the number of metric-sense sites.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sites in the file</th>
+<th>files</th>
+<th>sites</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$31$</td>
+<td>$31$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$20$</td>
+<td>$40$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$7$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$3$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$3$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$1$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>$1$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$16$</td>
+<td>$1$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$68$</td>
+<td>$159$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Forty-five per cent of the sites are in files that carry one or two.</strong> The median file carries two. No physics file needs a rewrite; the heaviest needs a paragraph.</p>
+<h3 id="mathematics">Mathematics</h3>
+<p><strong>Forty-five files, seventy-one sites.</strong> The mathematics retirement is small, because the mathematics corpus uses the word mostly for inertia and for topology. The four heaviest files are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the article</th>
+<th>the metric sense</th>
+<th>the word, all senses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="fueter-theory-for-split-quaternions.html">fueter-theory-for-split-quaternions</a></td>
+<td>$6$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td><a href="split-quaternion-other-algebraic-element-representations.html">split-quaternion-other-algebraic-element-representations</a></td>
+<td>$5$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td><a href="geometric-calculus-and-the-vector-derivative.html">geometric-calculus-and-the-vector-derivative</a></td>
+<td>$4$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td><a href="pseudo-riemannian-and-lorentzian-geometry.html">pseudo-riemannian-and-lorentzian-geometry</a></td>
+<td>$3$</td>
+<td>$39$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The remaining forty-one files carry fifty-three sites, one or two each.</strong> No mathematics article needs a rewrite.</p>
+<p><strong>One caution belongs here.</strong> <em>Pseudo-Riemannian and Lorentzian Geometry</em> carries the word $39$ times and only three of them are the metric sense. In that article the word is the subject matter of the standard theory it reviews, and its own voice can keep it. A pass that replaces the word file-wide would destroy the article.</p>
+<h3 id="the-menus">The Menus</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the menu</th>
+<th>the metric sense</th>
+<th>the word, all senses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>maths.md</code></td>
+<td>$3$</td>
+<td>$188$</td>
+</tr>
+<tr>
+<td><code>physics.md</code></td>
+<td>$9$</td>
+<td>$31$</td>
+</tr>
+<tr>
+<td><code>index.md</code></td>
+<td>$1$</td>
+<td>$8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The physics menu already states the arithmetic.</strong> It writes <em>the signature from $i^2=-1$</em> twice, which is the replacement formula, and it uses the retired word to introduce it. The substitution there is the deletion of the noun and the retention of the formula: <em>the sign from $i^2=-1$</em>, or better, <em>the interval from $i^2=-1$</em>.</p>
+<p><strong>The menus are generated from the article summaries, so a menu site is a copy of a site in an article.</strong> Their counts move with the articles, and the pass that edits an article edits its menu line in the same motion.</p>
+<h2 id="the-strategy">The Strategy</h2>
+<p><strong>Seven passes, from the rule outward.</strong> Each pass is small, self-contained and verifiable on its own.</p>
+<p><strong>Pass one: the conventions.</strong> <em>Algebra and Element Conventions</em>, <em>Conceptual Conventions</em>, <em>Frame and Metric Conventions</em>, <em>Product and Form Conventions</em>, <em>Physics Units and Common Elements Conventions</em>, <em>Norm and Pairing Conventions</em>. Four files, six sites, all in the two copies of <em>Frame and Metric Conventions</em> and in <em>Product and Form Conventions</em> of the physics collection. These are the articles a reader consults before reading anything else, and they must state the rule without the word.</p>
+<p><strong>Pass two: the anchors.</strong> <em>The Unit Metric in the Biquaternion Universe</em>, <em>Four-Vectors and the Interval</em>, <em>Introduction to the Biquaternion Universe</em>, <em>The N Norm: Mass, Angle and the Cone</em>. Four files, seventeen sites, two headings. These are the articles the rule lives in.</p>
+<p><strong>Pass three: the case label.</strong> The $96$ sites of the shape <em>in Euclidean signature</em>. They are mechanical, they are one word each, and they are the bulk of the count. <em>The SO(4) Route</em> alone carries $16$.</p>
+<p><strong>Pass four: the pairs on the interval.</strong> The $49$ sites of the shape <em>of signature $(p,q)$</em> attached to the interval. Each needs the sentence read, because the pair may be the interval's or a form's on the same line.</p>
+<p><strong>Pass five: the tables and headings.</strong> The column headings named <em>signature</em> in the per-article notation tables, and the two headings named in §<em>The Sites That Need a Sentence</em>. A column heading changes in the header and in the menu summary of the article.</p>
+<p><strong>Pass six: the menus and the front page.</strong> Thirteen sites, and each one is a copy of an article sentence.</p>
+<p><strong>Pass seven: the record.</strong> This article's §<em>The Applied State</em>, written when the passes are done, in the form the conjugation migration uses.</p>
+<p><strong>The unit of the search is the neighbourhood, never the phrase.</strong> The conjugation migration learned it twice: a phrase count reaches the phrase and misses the bare label, the table cell and the pronoun. Here the phrase is shorter than anywhere else in the corpus, three syllables, and it takes nine shapes. A search for <em>signature</em> alone would also return $4\,357$ sites of the inertia and topological senses. The rule for each hit is the object test of §<em>The Three Senses</em>, applied by reading the sentence.</p>
+<p><strong>Two mechanical aids, and their limits.</strong> A search for the five adjectives returns the case-label sites with few false hits. A search for <em>signature</em> within one line of <em>metric</em> returns the A1 sites. Neither is sufficient: the pair attached to the interval is found by no pattern, because the interval is named by the sentence and not by a keyword.</p>
+<p><strong>The order matters at three places.</strong> Pass one before pass two, because the anchors quote the conventions. Pass five after pass four, because a column heading is named after the sites it heads. Pass six last but one, because the menus are copies.</p>
+<h2 id="the-cost">The Cost</h2>
+<p><strong>Two hundred and sixty-one sites in one hundred and twenty-three files.</strong> The mathematics is $71$ in $45$ files, the physics $159$ in $68$, the internal $18$ in $7$, the menus $13$ in $3$. No file belongs to two collections.</p>
+<p><strong>The work is uneven.</strong> The case label is a word. The pair on the interval is a clause. The seven sites of §<em>The Sites That Need a Sentence</em> are a paragraph each, and two of them are headings that the menu repeats.</p>
+<p><strong>The second wave is larger and it is a rename of the word, not of the file.</strong> $3\,769$ sites for <em>inertia</em>, and seven article titles that carry the word. The titles are cheap to change and the files are not: the title is read from the first heading, while the address comes from the file name. A heading is rewritten in place, the stem stays, no link moves, and the menu follows the heading. The corpus already lives with the mismatch at $398$ files, whose heading differs from their stem. The wave is separate because it is a different object, not because it is expensive.</p>
+<p><strong>A file rename would cost a page.</strong> The build prunes every deployed page without a source, so a rename does not leave a stale copy behind: it leaves a dead address behind, and any bookmark to it breaks. The recommendation for the seven is therefore to retitle and never to rename.</p>
+<h2 id="the-verification">The Verification</h2>
+<p><strong>Five checks, in the form the conjugation migration uses.</strong></p>
+<p><strong>The first is the count.</strong> After pass six, the metric sense returns zero. The check is a search for the five adjectives, a search for <em>signature</em> within one line of <em>metric</em>, and a search for <em>signature</em> within one line of <em>interval</em>. The second and third must return only the attributed sites, where an external source's own convention is quoted.</p>
+<p><strong>The second is the arithmetic.</strong> The identity $N=-p^{2}$ and the shell value $N=-m^{2}c^{2}$ are recomputed on one hundred random momenta, with $N(\tilde V_\Phi)=-c^{2}$ at five rapidities. This article has run the check, and it passes on all one hundred.</p>
+<p><strong>The third is the invariants of the edited files.</strong> Line count, heading count, table-row count and the count of display delimiters are unchanged in every edited file. One file loses a bold marker where a heading was renamed, by design.</p>
+<p><strong>The fourth is the inertia count.</strong> It rises by the number of the second wave's substitutions and by nothing else, and the rise is counted per file.</p>
+<p><strong>The fifth is two files read end to end.</strong> The recommendation is <em>The Unit Metric in the Biquaternion Universe</em> and <em>Four-Vectors and the Interval</em>, because they carry the rule, the arithmetic and the two headings that the pass rewrites.</p>
+<p><strong>A sixth check is available and this article recommends it.</strong> A sample of one hundred sites was drawn at random from the physics corpus and read by hand. The object test agreed with the automatic assignment on every site whose object stood in the same clause. It disagreed on the sites whose object stood further away, and the disagreement ran in one direction: the automatic rule marked as inertia a pair that the sentence attaches to the norm on a sector, which is the interval. The lesson is that the automatic count is a census and not a decision: the $159$ is the number of sites to read, not the number to replace.</p>
+<h2 id="the-residue">The Residue</h2>
+<p><strong>What stays after the first pass.</strong> The inertia sense, $3\,769$ sites, and the topological and empirical senses, $588$ sites. The word still stands $4\,357$ times, and every one of them names a form, a manifold invariant, or a test.</p>
+<p><strong>What stays after the second pass.</strong> The topological sense, $550$ sites, of which $512$ are in the mathematics corpus in $63$ files and six articles carry the word in their title. Their subject is the Hirzebruch signature, the signature operator and the equivariant signature. These are not the corpus's own coinage and they are not the metric.</p>
+<p><strong>What a reader then meets.</strong> The word <em>signature</em> only where a single integer is meant, and the word <em>inertia</em> wherever a pair of counts is meant. The word never meets the metric, and it never meets the interval. That is the end state, and it is the state the corpus's conventions already describe.</p>
+<p><strong>The word that remains is the word that has a theorem.</strong> The corpus cannot retire a word that names the index of an elliptic operator without retiring the operator. The migration's scope is the object test, and the object test stops at the manifold.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus has one metric, $\delta_{\mu\nu}=(1,1,1,1)$, and one arithmetic, $i^2=-1$ on the time coefficient.</strong> The interval is $N=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}$, the mass shell is $N=-m^{2}c^{2}$, and no metric has a sign to declare.</p>
+<p><strong>The word stands $4\,618$ times in $704$ files.</strong> Its metric sense stands $261$ times: $159$ in the physics articles, $71$ in the mathematics, $18$ in the internal ones, $13$ in the menus.</p>
+<p><strong>The physics sites occupy $68$ files, and $51$ of them carry one or two.</strong> The heaviest carries $16$, in <em>The SO(4) Route</em>. The median carries two. No file needs a rewrite.</p>
+<p><strong>The three senses are told apart by the object the word modifies.</strong> The metric and the interval take the retirement; a quadratic form takes <em>inertia</em> in a second wave; a closed oriented manifold keeps the word.</p>
+<p><strong>Seven sites take a sentence rather than a word.</strong> They are the rule in <em>Product and Form Conventions</em>, two headings, one definition sentence, two denials, and the case label on the Hodge star.</p>
+<p><strong>The corpus already polices the rule with the word, five times, four of them as a denial.</strong> The migration is the end of the denial, because it is the end of the claim the denial answers.</p>
+<p><strong>The pass is seven steps, from the rule outward.</strong> The conventions, the anchors, the case label, the pairs on the interval, the tables and headings, the menus, the record.</p>
+<p><strong>The verification is five checks.</strong> The count to zero, the arithmetic on one hundred momenta, the invariants of the edited files, the inertia count, and two files read end to end.</p>
+<p><strong>The residue is the theorem.</strong> After both waves the word names one object: the signature of a manifold and its operator.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>the unit metric; the identity; it has no inertia to state</td>
+</tr>
+<tr>
+<td>$i^2=-1$</td>
+<td>the arithmetic that produces the one minus, on the time coefficient $Q_t=iE/c$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the biquaternion norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$; on the material sector $-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}$</td>
+</tr>
+<tr>
+<td>$-p^{2}$</td>
+<td>$N$ on the material sector; the mass shell is $N=-m^{2}c^{2}$</td>
+</tr>
+<tr>
+<td>the metric sense</td>
+<td>the retired sense: the word applied to $\delta_{\mu\nu}$, to a convention, to a case, or to the interval</td>
+</tr>
+<tr>
+<td>the inertia sense</td>
+<td>the count of positive and negative directions of a quadratic form; Sylvester's invariant</td>
+</tr>
+<tr>
+<td>$\mathrm{inertia}\ (p,q)$</td>
+<td>the replacement for <em>signature $(p,q)$</em> on a form; positive directions counted first</td>
+</tr>
+<tr>
+<td>the topological sense</td>
+<td>the signature of a closed oriented manifold of dimension $4k$; an integer; kept</td>
+</tr>
+<tr>
+<td>the signature operator</td>
+<td>the elliptic operator whose index is that integer; kept</td>
+</tr>
+<tr>
+<td>the empirical signature</td>
+<td>an observable consequence of a theory; kept</td>
+</tr>
+<tr>
+<td><em>in Euclidean case</em></td>
+<td>the replacement for <em>in Euclidean signature</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a>, for the metric as a theorem of the multiplication table, the sentence <em>no signature to pick</em>, and the section <em>What the interval still is</em>.</li>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the one meaning of the word <em>metric</em> and the denial that the minus is a metric.</li>
+<li><a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a>, for the two frames, the coefficient tuple, and the denial that the minus is a signature.</li>
+<li><a href="../articles_physics/product-and-form-conventions.html">Product and Form Conventions</a>, for the four forms, the convention that a signature belongs to a form, and the inertia table.</li>
+<li><a href="../articles_physics/four-vectors-and-the-interval.html">Four-Vectors and the Interval</a>, for the arithmetic of the placement of $i$ and the heading the pass renames.</li>
+<li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the norm as a level set, its signatures read on the four subspaces, and the mass as a level set rather than a value of the algebra.</li>
+<li><a href="../articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html">The SO(4) Route to the Euclidean Frame</a>, for the heaviest single file, the Hodge star in the two cases, and the Euclidean programme.</li>
+<li><a href="conjugation-migration.html">Conjugation Migration</a>, internal, for the pattern of this kind of article: the census, the objection, the substitution table, the inventory, the passes, the verification, the residue.</li>
+<li><a href="operator-migration.html">Operator Migration</a>, internal, for a second companion and its shorter form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
