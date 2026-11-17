@@ -36,13 +36,13 @@ $$
 N=\det\mathsf{M}_2(\tilde Q)=q_t^{2}-(q_x^{2}+q_y^{2}+q_z^{2}),
 $$
 
-the interval of inertia $(1,3)$. This is the **informational** representative of a four-vector. The **material** representative is $\tilde P_\Phi=i\tilde P_\Psi$, and the multiplication by $i$ flips the sign of the norm:
+the interval of inertia $(1,3)$. This is the **informational** form of a four-vector: Hermitian, with a real time coefficient. Multiplying by $i$ gives the **material** form $\tilde P_\Phi=i\tilde P$, anti-Hermitian, and the multiplication flips the sign of the norm:
 
 $$
-N(\tilde P_\Phi)=-N(\tilde P_\Psi)=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},
+N(i\tilde P)=-N(\tilde P)=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},
 $$
 
-the same sum of four squares with the time coefficient imaginary, which is the corpus's four-momentum. The two representatives have the same zero set, so the real light cone below is common to both: three-dimensional, and with the vertex removed it has two components, the future and the past cones.
+the same sum of four squares with the time coefficient imaginary, which is the corpus's four-momentum. The two forms have the same zero set, so the real light cone below is common to both: three-dimensional, and with the vertex removed it has two components, the future and the past cones.
 
 ### Why the Two Descriptions Differ
 

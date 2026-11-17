@@ -291,7 +291,7 @@ $$
 | $\mathbb{B}_{++}$ | the part that is $\tilde\Pi_+$ on both sides | the upper-left entry |
 | $\mathbb{B}_{--}$ | the part that is $\tilde\Pi_-$ on both sides | the lower-right entry |
 | $\mathbb{B}_{+-}$ | the part that is $\tilde\Pi_+$ on the left and $\tilde\Pi_-$ on the right | the upper-right entry |
-| $\mathbb{B}_{-+}$ | the mirror of the previous one | the lower-left entry |
+| $\mathbb{B}_{-+}$ | the part that is $\tilde\Pi_-$ on the left and $\tilde\Pi_+$ on the right | the lower-left entry |
 
 **The two indices are the two answers.** The left index says which side the element is on when it acts; the right index says which side it is on when it is acted upon. An element of a diagonal corner has the same answer twice; an element of a mixed corner has two different answers.
 

@@ -384,7 +384,7 @@ The interior of the ball carries the standard Bures metric, whose boundary restr
 
 ## Further Reading
 
-**The state space.** [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) states the results that this article derives — the forms on the sector, the ball as the unit slice, the Fubini–Study metric as a quarter of the sphere, the commutator as the complex structure — and carries the Born weight and the preparation dictionary around them.
+**The state space.** [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) states the results that this article derives — the forms on the sector, the ball as the unit slice, the Fubini–Study metric as a quarter of the sphere, the commutator as the complex structure — and carries the Born weight around them.
 
 **The module.** [The Modules: What the Algebra Acts On](the-modules-what-the-algebra-acts-on.html) constructs the state module $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$ in which the spinor computation is carried out, with its two ideals, its ladder and its gauge.
 

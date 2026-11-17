@@ -289,7 +289,13 @@ $$
 \tilde{Ϛ}_{\Psi,\mathrm{out}} = \frac{\tilde\Pi_1(\vec u_\Psi)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_1(\vec u_\Psi)}{2\,\mathrm{Sc}(\tilde\Pi_1(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}.
 $$
 
-Since $\tilde\Pi_1$ is idempotent, the two-sided operator $\tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1$ is Hermitian, has its range in the line of $\tilde\Pi_1$, and vanishes on the kernel of $\tilde\Pi_1$; it is therefore a real multiple of $\tilde\Pi_1$:
+Since $\tilde\Pi_1$ is idempotent, the two-sided operator $\tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1$ is Hermitian, has its range in the line of $\tilde\Pi_1$, and vanishes on the kernel of $\tilde\Pi_1$; it is therefore a real multiple of $\tilde\Pi_1$. The multiple is computed from the matrix image, where the statement is the rank-one identity. In $M_2(\mathbb{C})$ the idempotent is $P=|\phi\rangle\langle\phi|$ with $\langle\phi|\phi\rangle=1$, so for any state $R$
+
+$$
+P\,R\,P=|\phi\rangle\langle\phi|R|\phi\rangle\langle\phi|=\bigl(\operatorname{Tr}PR\bigr)P,
+$$
+
+because the rank-one projection absorbs the trace into the single surviving matrix element. Reading back with $\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\tilde Q$ gives $\operatorname{Tr}PR=2\,\mathrm{Sc}(\tilde\Pi_1\tilde{Ϛ}_{\Psi})=p_+$, and hence
 
 $$
 \tilde\Pi_1\tilde{Ϛ}_{\Psi}\tilde\Pi_1 = p_+ \tilde\Pi_1,
@@ -305,7 +311,13 @@ So the state collapses to the idempotent associated with the outcome. This is th
 
 ### Normalisation and the Scalar Part
 
-The normalisation is a statement about the scalar part: $\mathrm{Sc}(e_t)=1$, so a normalised state has
+**Why the unit weight is $\tfrac12$ and not $1$.** The factor is forced by idempotency and is not a choice of bookkeeping. Write a rank-one projection as $\tilde\Pi=\alpha(e_t+i\vec u)$ with $\vec u$ a unit pure real quaternion. Since $e_t$ is central and $\vec u^2=-e_t$,
+
+$$
+\tilde\Pi^2=\alpha^2\left(e_t^2+2i\vec u+(i\vec u)^2\right)=\alpha^2\left(2e_t+2i\vec u\right)=2\alpha^2\,\tilde\Pi,
+$$
+
+so $\tilde\Pi^2=\tilde\Pi$ forces $2\alpha^2=\alpha$, that is $\alpha=\tfrac12$. The alternative $\alpha=1$ gives $\tilde\Pi^2=2\tilde\Pi$, twice a projection and not a projection, and its matrix image has trace $2$. The half is therefore the coefficient that makes the element a projection, and the unit weight follows from it: the normalisation is a statement about the scalar part, $\mathrm{Sc}(e_t)=1$, so a normalised state has
 
 $$
 \mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12,
@@ -346,7 +358,7 @@ $$
 
 where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ (for $\vec h_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.
 
-The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
+The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar\,c)$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$, so that the central scalar in the display is $\exp(-i\theta_{\mathrm{evo}})=\exp(-ih_t\,r'_t/(\hbar\,c))$. The generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
 The element $\tilde Q(r'_t)$ is **$*$-unitary**: $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. It is not Hermitian in general: writing $\theta = |\vec h_\Psi|\frac{r'_{t}}{\hbar\,c}$, $\tilde Q(r'_t)$ is Hermitian exactly when $\tilde Q(r'_t)^2 = e_t$, which requires either $\sin\theta = 0$ together with $\frac{h_t\,r'_{t}}{\hbar\,c}\in\pi\,\mathbb{Z}$, or $\cos\theta = 0$ together with $\frac{2\,h_t\,r'_{t}}{\hbar\,c}\in\pi + \pi\mathbb{Z}$. For $h_t = 0$ only the first case survives, at the isolated times $r'_t =\pi\,\hbar\,n|\vec h_\Psi|$. For $h_t \neq 0$ and $\vec h_\Psi \neq 0$, apart from $r'_t=0$, the first case gives Hermitian times exactly when $h_t/|\vec h_\Psi|$ is rational, and the second contributes in addition only when that ratio, in lowest terms, is a ratio of odd integers. It is an element of the $*$-unitary group $\mathrm{U}(2) \subset \mathbb{B}$.
 
@@ -421,7 +433,7 @@ $$
 \tilde{Ϛ}_{\Psi} \;\longmapsto\; \sum_i \tilde M_{\mathrm{kraus},i}\,\tilde{Ϛ}_{\Psi}\,\tilde M_{\mathrm{kraus},i}^{*},
 $$
 
-and the probability of outcome $i$ is $p_i=\mathrm{Sc}(\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}\tilde{Ϛ}_{\Psi})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
+and the probability of outcome $i$ is $p_i=\mathrm{Sc}(\tilde M_{\mathrm{kraus},i}^{*}\tilde M_{\mathrm{kraus},i}\tilde{Ϛ}_{\Psi})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$. The numerator is the weight the updated element would carry: the scalar part is invariant under cyclic permutation, $\mathrm{Sc}(\tilde A\tilde B)=\mathrm{Sc}(\tilde B\tilde A)$, so $\mathrm{Sc}(\tilde M^{*}\tilde M\tilde{Ϛ}_{\Psi})=\mathrm{Sc}(\tilde M\tilde{Ϛ}_{\Psi}\tilde M^{*})$, which is the scalar part of the $i$-th term of the sum. The probability of an outcome and the weight of the state it leaves are therefore the same number, and the ratio divides out the normalisation of the incoming state. The Kraus operators are elements of $\mathbb{B}$, and the framework inherits the full POVM formalism in biquaternion language.
 
 **A structural point.** The **reversible–irreversible distinction** is algebraic in the biquaternion framework. $*$-Unitary elements $\tilde Q$ preserve the biquaternion norm of $\mathbb{B}$ and generate reversible evolution. Idempotent elements $\tilde\Pi$ do not preserve the biquaternion norm (they satisfy $\tilde\Pi^2 = \tilde\Pi$ but $\langle\tilde\Pi\rangle_{\natural} = \tilde\Pi\tilde\Pi^{\natural} = 0$) and generate irreversible projection. The two kinds of process are distinguished by a property of the acting element, not by a separate postulate.
 
@@ -525,11 +537,17 @@ The companion article listed ten structural requirements for a comprehensive qua
 
 **5. Measurement rule.** Projective measurement and state update are expressed as algebraic operations: probability from the normalised Hermitian form, state update from the two-sided operation. The reversible–irreversible distinction is algebraic ($*$-unitary vs. idempotent).
 
-**6. Composition rule.** The tensor product of two qubits corresponds to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B} \cong M_4(\mathbb{C})$ (tensor product over $\mathbb{C}$, treating $\mathbb{B}$ as a $\mathbb{C}$-algebra), and the reduction over one factor is $2\,\mathrm{Sc}_2$, fixed by $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$. The factor two is the dimension of the collapsed factor and is kept, since the reduced element must carry the normalisation of a single-qubit state. That the Hermitian elements of $\mathbb{B}\otimes\mathbb{B}$ exhaust those of $M_4(\mathbb{C})$ is not assumed here; it is question 1 below.
+**6. Composition rule.** The tensor product of two qubits corresponds to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B} \cong M_4(\mathbb{C})$ (tensor product over $\mathbb{C}$, treating $\mathbb{B}$ as a $\mathbb{C}$-algebra), and the reduction over one factor is the partial scalar part, fixed by $\mathrm{Sc}_2(a\otimes b)=a\,\mathrm{Sc}(b)$:
+
+$$
+\tilde{Ϛ}_{\Psi,A} = 2\,\mathrm{Sc}_2\bigl(\tilde{Ϛ}_{\Psi,AB}\bigr),
+$$
+
+that is, the scalar part taken in the second factor alone and doubled. The factor two is the dimension of the collapsed factor, and it is what makes the reduction a partial trace, $\operatorname{Tr}_2(a\otimes b)=a\operatorname{Tr}b=2a\,\mathrm{Sc}(b)$ on the image, so the reduced element carries the unit weight of a single-qubit state. The operation is a map from $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ onto $\mathbb{B}$, linear over $\mathbb{C}$ and idempotent up to the factor; it is the algebraic form of tracing out one qubit. That the Hermitian elements of $\mathbb{B}\otimes\mathbb{B}$ exhaust those of $M_4(\mathbb{C})$ is not assumed here; it is question 1 below.
 
 **7. Symmetry group.** The $*$-unitary group $\mathrm{U}(2)$ acts on $\mathbb{B}_{\Psi}$ by conjugation, with $SU(2)$ generating the spin rotations and $SO(3)$ acting on the Bloch sphere.
 
-**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{B}_{\Phi}$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in *The Dirac Equation in Biquaternionic Form*, and its quantization in *Canonical Quantization of the Biquaternion Dirac Field*.
+**8. Relativistic extension.** The biquaternion algebra contains the proper orthochronous Lorentz group through its double cover $SL(2,\mathbb{C})$, realized as the group of biquaternions of unit norm, and the material sector $\mathbb{B}_{\Phi}$ carries the four-vectors. The space carries the structures the relativistic side reads — the bilinear ones and the spinor module — and the Lorentz group sits in the invertible elements. The quantum formalism presented here and the relativistic structure share the same biquaternion space, which makes the framework naturally suited to a relativistic quantum theory of spinor fields. The formalism of this article is the non-relativistic restriction: its state space is a fixed Bloch ball, and a boost moves a state off it, as §*What the compatibility does and does not provide* states. The classical precursor of such a theory — the biquaternion Dirac equation — is treated in *The Dirac Equation in Biquaternionic Form*, and its quantization in *Canonical Quantization of the Biquaternion Dirac Field*.
 
 **9. Classical limit.** The classical limit of the qubit formalism is the classical spin vector, obtained when the state is in a coherent state (a pure state) and the dynamics is a classical precession. The general classical limit of quantum physics requires the machinery of decoherence and the correspondence principle, which are not developed in this article; they are the subject of *Decoherence as Idempotent Projection* and of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*.
 
@@ -603,7 +621,7 @@ $$
 
 separates a $*$-unitary factor $\tilde{W}_{\Psi}$ — the **Thomas–Wigner rotation** — from a positive-definite Hermitian boost factor $\tilde U_{\Psi,\mathrm b}$, both of unit norm. The composition of two relativistic transformations therefore produces a genuine quantum operation, a spin rotation: the relativistic group generates an element of the quantum group. This is where the two structures meet, and it is the algebraic origin of the non-commutativity of the boosts, treated in *The Material Sector: Four-Vectors, Interval and Lorentz Action* and in *The Lorentz Group in Biquaternionic Form — Structure and Representations*.
 
-**The shared imaginary unit.** The $i$ of the Schrödinger equation $i\,\hbar\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian sign pattern of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector. The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
+**The shared imaginary unit.** The $i$ of the Schrödinger equation $i\,\hbar\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$, the $i$ of the phase $\exp(-i\theta_{\mathrm{evo}})$, and the $i$ of the material coordinate $i r'_t$ are one and the same element of $\mathbb{B}$: the scalar imaginary. The generator of the quantum phase and the origin of the Lorentzian sign pattern of the interval are not independent conventions, but two consequences of the complex structure that defines the material sector, and the algebra makes the link explicit: the series carries one metric, $\delta_{\mu\nu}=(1,1,1,1)$, and the minus of the material interval is the square of this same $i$ in the coordinate $Q_t=i\,r'_t$, $i^2=-1$ on the time slot (*Frame and Metric Conventions*, *The Unit Metric in the Biquaternion Universe*). The quantum dynamics of this article runs on the same complex time as the relativistic kinematics of $\mathbb{B}_{\Phi}$.
 
 **What the compatibility does and does not provide.** The framework supplies a common biquaternion space: the relativistic and quantum objects are made from the same elements, their transformation groups are subgroups of the same invertible elements acting by one conjugation formula, their intersection is the rotation group, and the Wigner rotation has an algebraic locus. It does not supply, by itself, a relativistic quantum dynamics. A Lorentz-covariant state space, microcausality, and the many-particle structure are not contained in the single-qubit formalism above, which is the non-relativistic restriction: the state space is a fixed Bloch ball, and a boost moves a state off it. Those questions belong to the biquaternion Dirac equation and its canonical quantization, treated in the companion articles, where the state space, and not only the transformation group, becomes relativistic.
 

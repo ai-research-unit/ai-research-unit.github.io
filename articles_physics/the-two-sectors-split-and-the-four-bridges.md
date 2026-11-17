@@ -110,8 +110,6 @@ is a map $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ with image the real scalar line
 
 **Boundary.** The map is not an evolution, and the bare product of two material elements does not share its property: unless the spatial parts are parallel, the product carries both a Hermitian part and a material rotation part. The norm square is the coupling; the product is not. The same formula applied to an informational element returns $h_t^2-\lvert\vec h_\Psi\rvert^2$, which is the determinant of the matrix of the state and not a probability. The map lands in the informational sector because its value is a scalar, not because every value is a weight.
 
-**Remark (preparation).** The same map run backwards prepares a state. For a material element $\tilde R=\tilde R_\Phi$, the element $\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ is Hermitian, with $2\,\mathrm{Sc}\tilde H_\Psi=r'_{t}$ and $\langle\tilde H_\Psi\rangle_{\natural}=-\tfrac14\langle\tilde R_\Phi\rangle_{\natural}$. On the normalised slice of the future cone it is a state of the Bloch ball. The map is a dictionary of preparation, not a dynamics, and it is a second instance of the map kind rather than a fifth kind.
-
 ### A Bijection: the Central Imaginary
 
 The central scalar is anti-Hermitian, $i^{*}=-i$. For every $\tilde Q$,

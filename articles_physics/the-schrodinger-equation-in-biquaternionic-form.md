@@ -22,11 +22,11 @@ $$
 \tilde H_\Phi = -i\,\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
 
-Dividing by $i\hbar\,c$ is always possible, because $i\hbar\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $\tilde H_\Phi=-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ is the switch, which moves the observable to the other sector and costs no scale; $1/(\hbar\,c)$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{i}{\hbar\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
+Dividing by $i\hbar\,c$ is always possible, because $i\hbar\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $\tilde H_\Phi=-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ moves the observable to the other sector and costs no scale; $1/(\hbar\,c)$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{i}{\hbar\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
 
 The two writings are one equation, and they say different things about it. The first names the observable: it states the dynamics as left multiplication by the Hermitian $\tilde H_\Psi$, and it is the writing in which $\tilde H_\Psi$ is read as an energy. The second names the generator: it states the dynamics as left multiplication by an anti-Hermitian element, and it places that element in the same four-dimensional real space that carries the four-vectors. The generator is written $\tilde H_\Phi/\hbar\,c$: the same letter in the other sector, over one real scale, so the second writing keeps the name of the object it came from. The central $i$ is the canonical isomorphism between the two sectors. Among the roots of $-e_t$ no other supplies one, up to sign. A real multiple $\lambda\,i$ supplies the same isomorphism in another time unit, since $\lambda\,i\hbar\,c\,\partial/\partial r'_t$ is $i\hbar\,c\,\partial/\partial(\lambda^{-1}r'_t)$; and the division by $\hbar\,c$ is not part of the isomorphism at all, which is why it is written beside it and not inside the glyph.
 
-The pair $\tilde H_\Psi$, $\tilde H_\Phi$ is the Phy–Psy switch applied to the one object this article
+The pair $\tilde H_\Psi$, $\tilde H_\Phi$ is one element and its multiple by $i$, taken from the one object this article
 carries. This article uses the pair and does not rebuild it; what it adds is the equation in which the two members stand.
 
 Three things in and around $\mathbb{B}$ play the role of $i$, and only one of them is the $i$ of the two writings above. Confusing them produces equations that look like the Schrödinger equation and do not preserve the trace. The first section separates them by role and decides which one the writings use.
@@ -102,7 +102,7 @@ So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde 
 the mirror convention fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
 $(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.
 
-**This computation is the second writing.** The generator of the second writing is $\tilde H_\Phi/\hbar\,c$, and the computation above is the one that supplies $\tilde H_\Phi$: anti-Hermitian by the switch, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by its switch image $\tilde H_\Phi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.
+**This computation is the second writing.** The generator of the second writing is $\tilde H_\Phi/\hbar\,c$, and the computation above is the one that supplies $\tilde H_\Phi$: anti-Hermitian because $i$ is central and $i^{*}=-i$, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by $\tilde H_\Phi=-i\tilde H_\Psi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.
 
 ## The Field Is One Element of the Algebra
 
@@ -232,7 +232,7 @@ $$
 $$
 
 The generator is anti-Hermitian, and that is the general reason the exponential is $*$-unitary. The letter is not a second letter: it is the
-observable's own letter with the subscript moved, and the single multiplication that produces it is the switch, $\tilde H_\Phi=-i\tilde H_\Psi$.
+observable's own letter with the subscript moved, and the single multiplication that produces it is by $i$, $\tilde H_\Phi=-i\tilde H_\Psi$.
 The division by $\hbar\,c$ stays outside the glyph, as a real scale written beside it, because it is a change of unit and not a change of sector.
 
 **The material-sector interpretation.** The generator lies in $\mathbb{B}_{\Phi}$, the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector, and multiplying it by $i\hbar\,c$ returns the Hermitian observable $\tilde H_\Psi$. The two writings are then one statement about one space and its image under the central $i$: the observable is what the generator reads as when the intertwiner is undone.
@@ -344,8 +344,8 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators, the material sector): the generator is $\tilde H_\Phi/\hbar\,c\in\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Hermitian element; the Hamiltonian, and the observable named by the first writing |
-| $\tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t+\vec h_\Psi$ | The switch image of the Hamiltonian: anti-Hermitian, in $\mathbb{B}_{\Phi}$, the same four numbers with the $i$ moved onto the time slot |
-| $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ | The generator named by the second writing: the switch image over one real scale, anti-Hermitian, in $\mathbb{B}_{\Phi}$ |
+| $\tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t+\vec h_\Psi$ | The anti-Hermitian generator: $i$ times the observable, in $\mathbb{B}_{\Phi}$, the same four numbers with the $i$ on the time slot |
+| $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ | The generator named by the second writing: $-i\tilde H_\Psi$ over one real scale, anti-Hermitian, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{Ξ}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
 | $L_{\tilde H_\Psi}$, $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Left multiplication by $\tilde H_\Psi$; its $4\times4$ axis-free array in the coefficient basis |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |

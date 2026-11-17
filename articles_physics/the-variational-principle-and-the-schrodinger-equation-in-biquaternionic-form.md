@@ -291,7 +291,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | $r'_t=c\,t'$ | Material time; the variable of the element form |
 | $\tilde\Xi\in\mathbb{B}$ | The field: one general element, eight real components |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian; the observable |
-| $\tilde H_\Phi=-i\tilde H_\Psi$ | The switch image; the generator, up to the real scale $\hbar\,c$ |
+| $\tilde H_\Phi=-i\tilde H_\Psi$ | $i$ times the observable; the generator, up to the real scale $\hbar\,c$ |
 | $S$ | The action; $L$ its Lagrangian density |
 | $\partial_{r'_t}$ | Derivative with respect to the material time |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Phase Noether charge; $\rho=2N$ |
