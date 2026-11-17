@@ -35,7 +35,7 @@ $$
 \langle\tilde U\tilde V\rangle_{\natural}=\langle\tilde U\rangle_{\natural}\langle\tilde V\rangle_{\natural}=e_t,
 $$
 
-so $\tilde U\tilde V\in G$. The multiplicativity is not an accident of this norm: it is the multiplicativity of the determinant under the isomorphism, and it is the single algebraic fact on which the group structure rests.
+so $\tilde U\tilde V\in G$. The multiplicativity is not an accident of this norm: it is the multiplicativity of the determinant of the image under the isomorphism, and it is the single algebraic fact on which the group structure rests.
 
 ### The Inverse
 

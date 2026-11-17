@@ -193,7 +193,7 @@ $$
 and the last expression is the identity, because $(\tilde q\tilde q_{\tau})^{-1} = (\tilde q_{\tau})^{-1}\tilde q^{-1}$ and the middle factors cancel. Its determinant is
 
 $$
-\det \tilde u_{\mathrm r} = \frac{\det \tilde q}{\det P} = \frac{\langle\tilde q\rangle_{\natural}}{|\langle\tilde q\rangle_{\natural}|} = \operatorname{sign} \langle\tilde q\rangle_{\natural} ,
+\langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{\det P} = \frac{\langle\tilde q\rangle_{\natural}}{|\langle\tilde q\rangle_{\natural}|} = \operatorname{sign} \langle\tilde q\rangle_{\natural} ,
 $$
 
 so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the determinant of $\tilde u_{\mathrm r}$.
@@ -214,8 +214,8 @@ The decomposition behaves differently on the two invertible classes, and the dif
 
 | class of $\tilde q$ | $\langle\tilde q\rangle_{\natural}$ | $r$ | $b$ | $\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}$ is |
 |---|---|---|---|---|---|
-| timelike | $>0$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | unit boost | $\det \tilde u_{\mathrm r} = +1$ | a rotation, $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x$ |
-| spacelike | $<0$ | $\sqrt{-\langle\tilde q\rangle_{\natural}}$ | unit boost | $\det \tilde u_{\mathrm r} = -1$ | a reflection times a rotation, $\tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\vec e_y$ |
+| timelike | $>0$ | $\sqrt{\langle\tilde q\rangle_{\natural}}$ | unit boost | $\langle\tilde u_{\mathrm r}\rangle_{\natural} = +1$ | a rotation, $\tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x$ |
+| spacelike | $<0$ | $\sqrt{-\langle\tilde q\rangle_{\natural}}$ | unit boost | $\langle\tilde u_{\mathrm r}\rangle_{\natural} = -1$ | a reflection times a rotation, $\tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\vec e_y$ |
 | lightlike | $=0$ | not defined | not defined | not defined | no decomposition |
 
 The lightlike class is the null cone, the zero divisors of *Split-Quaternion Zero Divisors*; on it $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.
@@ -264,7 +264,7 @@ This is the structural difference from the biquaternion case of the companion ar
 
 ### The Rotation Component
 
-Suppose first that $\tilde q$ is timelike, so $\det \tilde u_{\mathrm r} = +1$ and $\tilde u_{\mathrm r} \in SO(2)$. In the algebra the rotation component is
+Suppose first that $\tilde q$ is timelike, so $\langle\tilde u_{\mathrm r}\rangle_{\natural} = +1$ and $\tilde u_{\mathrm r} \in SO(2)$. In the algebra the rotation component is
 
 $$
 \boxed{\;
@@ -276,7 +276,7 @@ with $\theta$ the rotation angle and the exponent $\theta/2$ read modulo $2\pi$;
 
 ### The Reflection Component
 
-Suppose now that $\tilde q$ is spacelike, so $\det \tilde u_{\mathrm r} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{spl}}$ with $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$ and $\det \tilde u_{\mathrm r} = -1$ is
+Suppose now that $\tilde q$ is spacelike, so $\langle\tilde u_{\mathrm r}\rangle_{\natural} = -1$. Every matrix of $O(2)$ with determinant $-1$ is a reflection, and every reflection is a rotation times the fixed reflection $\mathsf{M}_2(\vec e_y)$; correspondingly every element of $\mathbb{H}_{\mathrm{spl}}$ with $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$ and $\langle\tilde u_{\mathrm r}\rangle_{\natural} = -1$ is
 
 $$
 \tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\,\vec e_y ,
@@ -320,7 +320,7 @@ $$
 \tilde u_{\mathrm r} = 0.948683298 + 0.316227766\,\vec e_x , \qquad \theta = 2\operatorname{atan2}(0.316227766, 0.948683298) = 0.643501108\ \text{rad} \approx 36.870^\circ ,
 $$
 
-with $\det \tilde u_{\mathrm r} = +1$, as the timelike class requires. The reconstruction $rb\tilde u_{\mathrm r} = \tilde q$ and the identity $b = \exp\sigma$ were both checked in double precision, to $6.4\times10^{-13}$ and $1.2\times10^{-14}$ respectively in the coefficients.
+with $\langle\tilde u_{\mathrm r}\rangle_{\natural} = +1$, as the timelike class requires. The reconstruction $rb\tilde u_{\mathrm r} = \tilde q$ and the identity $b = \exp\sigma$ were both checked in double precision, to $6.4\times10^{-13}$ and $1.2\times10^{-14}$ respectively in the coefficients.
 
 ### A Spacelike Element
 
@@ -388,7 +388,7 @@ in which $b$ is the unique symmetric positive definite element with $b_{\tau} = 
 | $r = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |
 | $b = P/r$ | the unit boost, $b_{\tau} = b$, $\langle b\rangle_{\natural} = 1$ |
 | $\mathrm{P} = \operatorname{span}\{\vec e_y,\vec e_z\}$ | the boost subspace, symmetric traceless images |
-| $\tilde u_{\mathrm r} = P^{-1}\tilde q$ | the orthogonal factor, $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, $\det \tilde u_{\mathrm r} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$ |
+| $\tilde u_{\mathrm r} = P^{-1}\tilde q$ | the orthogonal factor, $\tilde u_{\mathrm r,\tau}\tilde u_{\mathrm r} = 1$, $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \operatorname{sign}\langle\tilde q\rangle_{\natural}$ |
 | timelike, spacelike, lightlike | $N > 0$, $N < 0$, $N = 0$ |
 
 ## Further Reading

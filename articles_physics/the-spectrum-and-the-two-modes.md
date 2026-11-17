@@ -264,10 +264,10 @@ $$
 \mathcal S^{\mathrm{s}}=\{\vec Q=0\},\qquad \mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\,Q_t=0\},\qquad \mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\,Q_t\neq0\} .
 $$
 
-**On the cone the determinant is the square of the scalar part, so the cone contains units.**
+**On the cone the quaternionic norm is the square of the scalar part, so the cone contains units.**
 
 $$
-\det\tilde Q=Q_t^2,\qquad \tilde Q^{-1}=Q_t^{-1}\Bigl(e_t-\frac{\vec Q}{Q_t}\Bigr)\ (Q_t\neq0) .
+\langle\tilde Q\rangle_{\natural}=Q_t^2,\qquad \tilde Q^{-1}=Q_t^{-1}\Bigl(e_t-\frac{\vec Q}{Q_t}\Bigr)\ (Q_t\neq0) .
 $$
 
 **The isotropic line admits no canonical complement; it flags the space instead.**
@@ -507,12 +507,12 @@ $$
 **Read:** on the cone the determinant is $Q_t^2$, so the cone contains units and the scalar part cuts it in two.
 
 $$
-\mathcal S=\Sigma_{10}\sqcup\Sigma_{00},\qquad \Sigma_{10}=\{Q_t\neq0\},\qquad \Sigma_{00}=\{Q_t=0\},\qquad \det\tilde Q=Q_t^2\ \text{on}\ \mathcal S .
+\mathcal S=\Sigma_{10}\sqcup\Sigma_{00},\qquad \Sigma_{10}=\{Q_t\neq0\},\qquad \Sigma_{00}=\{Q_t=0\},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^2\ \text{on}\ \mathcal S .
 $$
 
 **The four sectors of the two conditions make the independence explicit.**
 
-| sector | $\det$ | $B^2$ | description |
+| sector | $\langle\cdot\rangle_{\natural}$ | $B^2$ | description |
 | --- | --- | --- | --- |
 | $\Sigma_{11}$ | $\neq0$ | $\neq0$ | the generic unit, distinct non-zero eigenvalues |
 | $\Sigma_{10}$ | $\neq0$ | $=0$ | the unit of the cone: scalar line and unipotents |
@@ -605,7 +605,7 @@ so a linear perturbation of the parameter produces a square-root response, becau
 | $\mathcal{J}(\tilde Q)$ | the Jordan basis $(\vec\Upsilon_-,\tilde\Pi_-,\tilde\Pi_+,\vec\Upsilon_+)$ |
 | $\mathcal S=\{B^2=0\}$ | the spectral-degenerate cone |
 | $\mathcal S^{\mathrm{s}},\mathcal S^{\mathrm{n}},\mathcal S^{\mathrm{u}}$ | the scalar, nilpotent and unipotent strata |
-| $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$ | the four sectors of $(\det,B^2)$ |
+| $\Sigma_{11},\Sigma_{10},\Sigma_{01},\Sigma_{00}$ | the four sectors of $(\langle\cdot\rangle_{\natural},B^2)$ |
 | $C(\tilde Q)$ | the centraliser |
 | $\tilde Q_s$, $\vec\Upsilon$ | the semisimple and nilpotent parts |
 | $J_2(Q_t)$ | the Jordan block $\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}$ |

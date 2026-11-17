@@ -12,7 +12,7 @@ $$
 r'_t,r_x,r_y,r_z\in\mathbb{R}.
 $$
 
-**The first claim is that the interval is the norm, and that its signature is produced by one symbol.** On the sector the quaternionic norm is real and of signature $(3,1)$, because the temporal coordinate is multiplied by the central imaginary and the spatial ones are not. Nothing is added to obtain the Lorentzian signature. The minus sign on the time term is the square of $i$, and the placement of the imaginary unit on the two blocks is what distributes the signs: with $i$ on the temporal block the form is $(3,1)$ and with $i$ on the spatial block it is $(1,3)$, so the two Lorentzian placements are the two Hermitian halves.
+**The first claim is that the interval is the norm, and that its signs are produced by one symbol.** On the sector the quaternionic norm is real, with three positive directions and one negative, because the temporal coordinate is multiplied by the central imaginary and the spatial ones are not. Nothing is added to obtain the Lorentzian sign pattern. The minus sign on the time term is the square of $i$, and the placement of the imaginary unit on the two blocks is what distributes the signs: with $i$ on the temporal block the form is $(3,1)$ and with $i$ on the spatial block it is $(1,3)$, so the two Lorentzian placements are the two Hermitian halves.
 
 **The second claim is that the sector is a Lie algebra and not an algebra.** The bracket of two material elements is twice the cross product of their space parts and has no temporal component, so the temporal direction is central and the bracket is $\mathfrak{su}(2)$ on a line. The product of two material elements, by contrast, leaves the sector: it is Hermitian exactly when the two commute, and the anticommutator is Hermitian always. A four-vector therefore generates rotations and is never itself a product of two four-vectors.
 
@@ -28,7 +28,7 @@ $$
 
 **The strongest objection is that this is the standard four-vector formalism with new letters.** The algebra does supply a dictionary, and a dictionary is not a derivation. The answer is that three statements here are theorems and not translations. The coincidence of the light cone with the zero-divisor cone is one. The split of the Lorentz algebra into one part inside the sector and one part outside it is the second. The presence of the eigenprojectors in the other sector is the third. Each of the three is a fact about this algebra that a general four-vector formalism does not state.
 
-**A second objection is that the interval has been placed in the algebra by hand, through the factor $i$ on the time coordinate.** The factor is not free: the sector is defined as the fixed space of the reversal, and on that fixed space the coefficient of $e_t$ is imaginary by definition. The alternative convention, the Hermitian sector, gives the negative of the same form and the same geometry. What is not available is a real four-plane on which the norm is real and positive definite *and* indefinite somewhere else; the signatures are distributed by the involution, not chosen per element.
+**A second objection is that the interval has been placed in the algebra by hand, through the factor $i$ on the time coordinate.** The factor is not free: the sector is defined as the fixed space of the reversal, and on that fixed space the coefficient of $e_t$ is imaginary by definition. The alternative convention, the Hermitian sector, gives the negative of the same form and the same geometry. What is not available is a real four-plane on which the norm is real and positive definite *and* indefinite somewhere else; the signs are distributed by the involution, not chosen per element.
 
 **The interpretation labels continue the category's sequence.** *The H Norm: Amplitude and Frame* carries I.8.a to I.8.k, *The N Norm: Mass, Angle and the Cone* carries I.9.a to I.9.l, the five entries from *The Partition: Two Invariants and Four Regimes* to *The Vacuum and the Nilpotent Ladder* carry I.10.a to I.10.bd, and *The K Norm and the Indefinite Structure* carries I.11.a to I.11.l. The first entry of this section, *The Two Sectors: Split and the Four Bridges*, is a catalogue and carries no labels. This entry carries I.12.a to I.12.l.
 
@@ -39,7 +39,7 @@ $$
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | the sector, its basis, its coordinate blocks and its position among the six subspaces | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| the norm, its signature, the inverse formula, the invertibles and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
+| the norm, its signs, the inverse formula, the invertibles and the zero-divisor cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | the four forms, their Gram matrices and their inertia on the sector | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the products, the symmetric and antisymmetric decomposition and the cross-product formula | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | the bracket, the anticommutator and the Lie algebra of the sector | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
@@ -58,17 +58,17 @@ $$
 
 | operation | temporal block $\mathbb{R}(ie_t)$ | spatial block $k$ | whole sector |
 | --- | --- | --- | --- |
-| quaternionic norm $N$ | $-r_t'^{2}$ | $+\lvert\vec r\rvert^{2}$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$, signature $(3,1)$ |
+| quaternionic norm $N$ | $-r_t'^{2}$ | $+\lvert\vec r\rvert^{2}$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$, three positives and one negative |
 | Hermitian norm $H$ | $+r_t'^{2}$ | $+\lvert\vec r\rvert^{2}$ | positive definite, $(4,0)$ |
 | plain norm $P$ | $-r_t'^{2}$ | $-\lvert\vec r\rvert^{2}$ | negative definite, $(0,4)$ |
-| K norm $\mathrm{Kr}$ | $+r_t'^{2}$ | $-\lvert\vec r\rvert^{2}$ | $r_t'^{2}-\lvert\vec r\rvert^{2}$, signature $(1,3)$ |
+| K norm $\mathrm{Kr}$ | $+r_t'^{2}$ | $-\lvert\vec r\rvert^{2}$ | $r_t'^{2}-\lvert\vec r\rvert^{2}$, one positive and three negatives |
 | bracket $[\cdot,\cdot]$ | $0$ | $2\vec r_1\times\vec r_2$ | stays in the sector |
 | anticommutator $\{\cdot,\cdot\}$ | — | — | leaves the sector |
 | product | — | — | leaves the sector unless the factors commute |
 | action $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ | preserved | preserved | preserved |
 | central imaginary $i\cdot$ | leaves the sector | leaves the sector | $\mathbb{B}_{\Phi}\to\mathbb{B}_{\Psi}$ |
 
-**The four norms are the four ways of reading the same four coordinates.** On the sector the four forms are all real, because the star is minus the identity there. They are therefore four real quadratic forms on one real four-space, and their signatures are $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$. Only two of them are indefinite, and the two indefinite ones are negatives of each other:
+**The four norms are the four ways of reading the same four coordinates.** On the sector the four forms are all real, because the star is minus the identity there. They are therefore four real quadratic forms on one real four-space, and their counts of positive and negative directions are $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$. Only two of them are indefinite, and the two indefinite ones are negatives of each other:
 
 $$
 N=-\mathrm{Kr},
@@ -110,7 +110,7 @@ $$
 
 so the fixed space of $-{}^{*}$ is the set of vectors with $Q_t$ purely imaginary and $Q_x,Q_y,Q_z$ real. That is the four real parameters $r'_t,r_x,r_y,r_z$ of the display in the introduction. The prime on the temporal coordinate marks the convention that the temporal component carries the imaginary unit explicitly, and it is the same prime that *The Material Sector: Four-Vectors, Interval and Lorentz Action* uses.
 
-**The temporal block and the spatial block are different objects.** The first is $\mathbb{R}(ie_t)$, a line, and the second is $k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-space. Every table in this entry separates them, because every claim about the sector either holds for both blocks or distinguishes them, and the distinction is never the one that a reader expects. The norm is negative on the first block and positive on the second. The bracket vanishes on the first block and is the cross product on the second. The K norm has the opposite signs. The central imaginary exchanges the two signatures.
+**The temporal block and the spatial block are different objects.** The first is $\mathbb{R}(ie_t)$, a line, and the second is $k=\operatorname{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, a three-space. Every table in this entry separates them, because every claim about the sector either holds for both blocks or distinguishes them, and the distinction is never the one that a reader expects. The norm is negative on the first block and positive on the second. The bracket vanishes on the first block and is the cross product on the second. The K norm has the opposite signs. The central imaginary exchanges the signs of the two blocks.
 
 **The sector is not an algebra and the failure is structural.** The star is an anti-automorphism, so for two anti-Hermitian elements
 
@@ -169,9 +169,9 @@ $$
 N(\tilde R_{\Phi})=\tilde R_{\Phi}\tilde R_{\Phi}^{\natural}=-r_t'^{2}+r_x^{2}+r_y^{2}+r_z^{2},
 $$
 
-and the right-hand side is a real quadratic form of signature $(3,1)$: one negative direction, the temporal one, and three positive ones, the spatial ones.
+and the right-hand side is a real quadratic form with one negative direction, the temporal one, and three positive ones, the spatial ones.
 
-**The signature is produced by the square of the central imaginary.** The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'^{2}$. With a real temporal coefficient the form would be $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian signature is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.
+**The signs are produced by the square of the central imaginary.** The temporal coordinate enters the display as $ir'_t$, and $(ir'_t)^{2}=-r_t'^{2}$. With a real temporal coefficient the form would be $r_t'^{2}+\lvert\vec r\rvert^{2}$, positive definite, with no null set and no cone. The Lorentzian sign pattern is therefore a consequence of the placement of $i$ in the definition of the sector, and the placement is a consequence of the involution that defines the sector. Nothing is added.
 
 **The inverse formula fails exactly on the cone.** For a unit-norm element the inverse is $\tilde R_{\Phi}^{-1}=\tilde R_{\Phi}^{\natural}/N(\tilde R_{\Phi})$, and for zero norm there is no inverse. The zero set of the norm is therefore the boundary of the set of invertibles, and on it the element is a zero divisor:
 
@@ -183,9 +183,9 @@ $$
 
 **The origin is the one null point that is not a zero divisor.** It is null and it annihilates nothing that is not already zero. The distinction matters because the light cone is usually drawn with its apex included, and the apex is the single point where the algebraic and the geometric descriptions differ: the cone without its apex is a smooth three-manifold, the apex is the singularity that closes it.
 
-**The four forms on the sector are all real, and their signatures are the four combinations.** The plain form is the bilinear partner of the quaternionic one, the Hermitian form is the sesquilinear one, and the K form is the fourth. On the sector the star is minus the identity, so the sesquilinear forms differ from the bilinear ones only by a sign, and the four read
+**The four forms on the sector are all real, and their signs are the four combinations.** The plain form is the bilinear partner of the quaternionic one, the Hermitian form is the sesquilinear one, and the K form is the fourth. On the sector the star is minus the identity, so the sesquilinear forms differ from the bilinear ones only by a sign, and the four read
 
-| form | expression on $\tilde R_{\Phi}$ | signature | on the sector |
+| form | expression on $\tilde R_{\Phi}$ | signs | on the sector |
 | --- | --- | --- | --- |
 | $\langle\tilde R,\tilde R\rangle$ | $-r_t'^{2}-\lvert\vec r\rvert^{2}$ | $(0,4)$ | negative definite |
 | $\langle\tilde R,\tilde R\rangle_{\natural}$ | $-r_t'^{2}+\lvert\vec r\rvert^{2}$ | $(3,1)$ | the interval |
@@ -196,7 +196,7 @@ $$
 
 **The consequences of $N=-\mathrm{Kr}$ are the whole of the coincidence of the two null sets.** A material element is null for one if and only if it is null for the other, so a lightlike four-vector is a zero divisor and a zero-divisor four-vector is lightlike. That is *The K Norm and the Indefinite Structure*, §*The Six Restrictions*, and the entry records it here because it is the reason a four-vector's null set has one name rather than two.
 
-**The interval is multiplicative, and that is not true of the other three forms.** For any two elements of the algebra, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, because the norm is a determinant. The K form is not multiplicative, the Hermitian form is not multiplicative, and the plain form is multiplicative only on the quaternionic layer. On the sector the multiplicativity of $N$ has a consequence that the other forms do not have: the sign of the interval of a product is the product of the signs of the factors.
+**The interval is multiplicative, and that is not true of the other three forms.** For any two elements of the algebra, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, because the norm is the determinant of the $2\times2$ image. The K form is not multiplicative, the Hermitian form is not multiplicative, and the plain form is multiplicative only on the quaternionic layer. On the sector the multiplicativity of $N$ has a consequence that the other forms do not have: the sign of the interval of a product is the product of the signs of the factors.
 
 **That consequence is the algebra's version of a composition law for causal character.** The product of two timelike elements is spacelike in this convention, since two negative factors give a positive product; the product of a timelike and a spacelike element is timelike; a null factor makes the product null. The statement is algebraic and its physical reading is the composition of causal characters along a chain of transformations, which is what a worldline is.
 
@@ -451,21 +451,21 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 **The element $ir'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ is an event.** Its four coordinates are the coordinates of a point of flat spacetime, and its norm is the squared interval, negative for timelike, zero for null, positive for spacelike. The three cases are the three regions of the null set, and the null set is the boundary between them.
 
-**The interval is the norm itself and not the square of a separate norm.** There is no additional quadratic form to introduce and no metric matrix to write down: the form is $N$, and the fact that $N$ has signature $(3,1)$ is the fact that the sector has one imaginary coordinate. The Lorentzian signature is the arithmetic of $i^{2}=-1$ placed on the temporal coefficient.
+**The interval is the norm itself and not the square of a separate norm.** There is no additional quadratic form to introduce and no metric matrix to write down: the form is $N$, and the fact that $N$ has one negative direction is the fact that the sector has one imaginary coordinate. The Lorentzian sign pattern is the arithmetic of $i^{2}=-1$ placed on the temporal coefficient.
 
 **The proper time is the square root of minus the norm along a timelike path.** A worldline is a path in the sector on which the norm is negative, its proper time is the integral of $\sqrt{-N(d\tilde R)}$, and the path is a light ray where the integrand vanishes. The definitions are the standard ones, and their content here is that they are read off the norm rather than assumed.
 
 **Boundary.** The sector is a kinematic space. It carries events, intervals, directions and the transformations among them; it does not carry a metric field, a connection, curvature or a field equation. The identification with the spacetime of a physical theory is the corpus's reading, and the anti-Hermitian convention is a convention: the Hermitian sector gives the same geometry with the opposite sign.
 
-### I.12.b — The Signature Is the Placement of the Imaginary Unit
+### I.12.b — The Signs Are the Placement of the Imaginary Unit
 
-**Read:** the coordinate form of the involution and the four signatures of §*The Interval*.
+**Read:** the coordinate form of the involution and the four sign readings of §*The Interval*.
 
 **The temporal coordinate is $ir'_t$ because the sector is the fixed space of the reversal.** On that fixed space the coefficient of $e_t$ is imaginary and the other three are real. The minus sign of the Minkowski form is $(ir'_t)^{2}$, and it is the only place in the entry where a sign is produced rather than counted.
 
 **The two Hermitian halves are the two placements that give a Lorentzian form.** On the quaternion layer the norm is positive definite. On the material half the temporal block is imaginary and the spatial block real, which gives $(3,1)$; on the informational half the roles are reversed, and there $N=a_0^{2}-\lvert\vec a\rvert^{2}$, which gives $(1,3)$. The two halves are exchanged by the central imaginary, and that exchange is also the exchange of the interval with minus itself. A mixed placement, imaginary on the temporal block and on one spatial coordinate, gives $(2,2)$ and is not a Lorentzian plane: the Lorentzian possibility is located rather than chosen, and there are exactly two placements that realise it.
 
-**The four signatures over one sector are four readings of one placement.** Reverse the sign of the temporal block and the interval becomes the negative interval; take absolute values and the Hermitian norm appears; take the difference in the other order and the K norm appears. Every one of them is a real form on the same four coordinates.
+**The four sign readings over one sector are four readings of one placement.** Reverse the sign of the temporal block and the interval becomes the negative interval; take absolute values and the Hermitian norm appears; take the difference in the other order and the K norm appears. Every one of them is a real form on the same four coordinates.
 
 **Boundary.** The assignment is a property of the involution and not of the element. Which elements are timelike is a property of the element and the sector together, so a statement about the sign of the interval is always a statement about a pair.
 
@@ -591,7 +591,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 ## The Limits
 
-**The object is a real four-plane and the readings are readings of its quadratic form.** The mathematical content is one real vector space of dimension four, two involutions that fix it and negate it, one real quadratic form of signature $(3,1)$, one bracket, and one group action. Everything the entry names — event, worldline, momentum, mass, frame — is a name for what those objects mean when a chart supplies a physical vocabulary.
+**The object is a real four-plane and the readings are readings of its quadratic form.** The mathematical content is one real vector space of dimension four, two involutions that fix it and negate it, one real quadratic form with one negative direction, one bracket, and one group action. Everything the entry names — event, worldline, momentum, mass, frame — is a name for what those objects mean when a chart supplies a physical vocabulary.
 
 **No dynamics is supplied.** The interval is a constant on the sector and says nothing about how a four-vector changes. A law that keeps a worldline inside the cone, one that crosses it, and one that does neither are all compatible with the interval. Conservation of the norm along a path is a constraint that a theory may impose; it is not implied here.
 
@@ -599,7 +599,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 **No statistics is supplied.** The spectral pair is a pair of complex numbers and not a pair of occupation numbers. Nothing here says whether the two modes are distinguishable, and no Fock space, no commutation relation and no spin-statistics connection is constructed.
 
-**No curved metric is supplied.** The form is constant on the sector: the same four coordinates, the same signature at every point. A metric field would be a map from a base into the sector, and the entry has no base. The statement that the speed of light is local is a statement about a medium, and the entry says so where it makes it.
+**No curved metric is supplied.** The form is constant on the sector: the same four coordinates, the same signs at every point. A metric field would be a map from a base into the sector, and the entry has no base. The statement that the speed of light is local is a statement about a medium, and the entry says so where it makes it.
 
 **No particle content is supplied.** The seven four-vectors are seven invariants of one algebra, and the entry does not say which of them are realised in nature. The dictionary is a dictionary: it says what an element would be if it were a four-momentum, not that some element is one.
 
@@ -615,7 +615,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 | --- | --- |
 | the sector | $\mathbb{B}_{\Phi}=\{\tilde Q^{*}=-\tilde Q\}$, basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$, real dimension four |
 | the blocks | $\mathbb{R}(ie_t)$ of dimension one, central; $k=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ of dimension three |
-| the interval | $N=-r_t'^{2}+\lvert\vec r\rvert^{2}$, real, signature $(3,1)$ |
+| the interval | $N=-r_t'^{2}+\lvert\vec r\rvert^{2}$, real, three positives and one negative |
 | the companions | $H=r_t'^{2}+\lvert\vec r\rvert^{2}$ positive definite; $P=-H$; $\mathrm{Kr}=-N$ |
 | the inverse | $\tilde R^{-1}=\tilde R^{\natural}/N(\tilde R)$, defined off the cone |
 | the closure | bracket in the sector, anticommutator in $\mathbb{B}_{\Psi}$, product in the sector only when the factors commute |

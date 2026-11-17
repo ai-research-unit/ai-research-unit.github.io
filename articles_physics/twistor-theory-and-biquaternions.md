@@ -317,7 +317,7 @@ The word carries a third sense, and that one is the classical object. In Kassand
 | $\mathbb{B}_{H}$ | Real-quaternion subspace, fixed points of complex conjugation |
 | $\mathbb{B}_{C}$ | Complex subspace, fixed points of quaternion conjugation |
 | $[\vec Q, \vec R]=\vec Q\times\vec R$ | Complex bilinear cross-product bracket of vector parts (corpus convention; the source's printed $[\cdot,\cdot]$ reverses it in its travelling formula) |
-| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (determinant) |
+| $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
 | $S=\mathbb{C}^2$ | Spinor module, unique simple module of $\mathbb{B}$ |
 | $(\tfrac12,0)=S$, $(0,\tfrac12)=\bar{S}$ | Left- and right-handed Weyl modules |

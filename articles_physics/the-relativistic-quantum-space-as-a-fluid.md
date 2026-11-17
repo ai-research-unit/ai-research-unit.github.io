@@ -122,7 +122,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 
 ## The Domain: N-Regularity
 
-**The word is a parametrisation of the invertibles of the algebra, so it exists exactly on the invertibles.** The quaternionic norm is the determinant, and the invertibles are the elements of nonzero norm,
+**The word is a parametrisation of the invertibles of the algebra, so it exists exactly on the invertibles.** The quaternionic norm is the determinant of the $2\times2$ image, and the invertibles are the elements of nonzero norm,
 
 $$
 \boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular}.\;}
@@ -205,7 +205,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $i$ | Central scalar imaginary |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde\Xi$ | The field, one element of $\mathbb{B}$ |
-| $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm, the determinant |
+| $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm |
 | $r$ | Scale of the word; $r>0$ |
 | $\rho_{\mathrm{num}}=r^{2}$ | Proper density |
 | $\theta_{\mathrm{pha}}$ | Angle of the word; the action is $S=\hbar\theta_{\mathrm{pha}}$ |

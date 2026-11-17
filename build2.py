@@ -87,6 +87,9 @@ def main():
 
     build.prune_orphans()
     build.prune_legacy()
+    # Sitemaps are rewritten every run: the URL set is cheap to recompute and a
+    # new article must never be missing from them.
+    build.write_sitemaps()
     build.run_convention_check()
     build.write_state(started)
 

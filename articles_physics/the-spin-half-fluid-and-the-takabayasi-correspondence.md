@@ -310,7 +310,7 @@ No experiment separates the two formulations. What separates them is the origin 
 | $u^{\mu}$, $q^{\mu}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
 | $T^{\mu}{}_{\mu}=mc^{2}\rho\cos\theta$ | Trace of the stress; the mass term |
 | $p$, $\pi^{j}{}_{k}$ | Pressure and the traceless part of the spatial block |
-| $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm, the determinant |
+| $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm |
 | $c$ | Speed of light in the medium |
 
 ## Further Reading

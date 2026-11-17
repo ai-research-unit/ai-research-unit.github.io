@@ -336,7 +336,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian |
 | $h_t,\ \vec h_\Psi$ | Its scalar part and its vector part |
 | $\vec u_\Psi=\vec h_\Psi/\lvert\vec h_\Psi\rvert$ | Its axis, when $\vec h_\Psi\neq0$ |
-| $N(\tilde\Xi)$ | Determinant; the word exists iff $N\neq0$ |
+| $N(\tilde\Xi)$ | Quaternionic norm; the word exists iff $N\neq0$ |
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
 | $\natural,\ *$ | Quaternion conjugation, Hermitian conjugation |
 | $\mathrm{Sc}$ | Scalar part |

@@ -323,7 +323,7 @@ So the identity of the algebra is the sum of two null idempotents, and neither s
 | quantity | value on $\tilde\Pi$ | what it measures |
 | --- | --- | --- |
 | $\operatorname{Sc}\tilde\Pi$ | $\tfrac12$ | the weight, half the trace in the matrix model |
-| $N(\tilde\Pi)$ | $0$ | the determinant, the multiplicative invariant |
+| $N(\tilde\Pi)$ | $0$ | the multiplicative invariant |
 | $B^{2}(\tilde\Pi)$ | $-\tfrac14$ | the discriminant, the separation of the modes |
 | $\operatorname{rank}\tilde\Pi$ | $1$ | the primitivity, in the matrix model |
 

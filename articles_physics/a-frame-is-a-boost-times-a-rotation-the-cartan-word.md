@@ -194,7 +194,7 @@ $\pm e_t$ both have $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}\in\{0,2
 
 ### The Wall Elements
 
-An element of the group is never null, since its norm is $1$. What can be null is the *generator*: a scalar-free $\tilde X$ with $\det\tilde X=0$ is nilpotent, and its exponential is a unipotent element $e_t+\tilde X$. The word handles such an element without degenerating: it has ordinary polar factors, and its scalar part is only $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$. The null generator is the exceptional case of the exponential chart, not of the word.
+An element of the group is never null, since its norm is $1$. What can be null is the *generator*: a scalar-free $\tilde X$ with $\langle\tilde X\rangle_{\natural}=0$ is nilpotent, and its exponential is a unipotent element $e_t+\tilde X$. The word handles such an element without degenerating: it has ordinary polar factors, and its scalar part is only $\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}$. The null generator is the exceptional case of the exponential chart, not of the word.
 
 ### The Rotation at $\pi$
 

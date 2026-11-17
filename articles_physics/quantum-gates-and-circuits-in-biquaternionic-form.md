@@ -99,7 +99,7 @@ $$
 \tilde Q = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r}, \qquad \theta_{\mathrm{pha}}\in\mathbb{R}, \quad \tilde u_{\mathrm r}\in\mathbb{B}_{H}, \quad \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = e_t .
 $$
 
-Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\det \tilde u_{\mathrm r} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\theta_{\mathrm{pha}})$ lies in the centre $\mathbb{B}_{C}$, and $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ for the anti-Hermitian generators.
+Under the isomorphism, the unit real quaternions are exactly the image of $SU(2) \subset M_2(\mathbb{C})$, since $\langle\tilde u_{\mathrm r}\rangle_{\natural} = \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1$. The phase $\exp(i\theta_{\mathrm{pha}})$ lies in the centre $\mathbb{B}_{C}$, and $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ for the anti-Hermitian generators.
 
 The phase is **not observable in the action**. Conjugation by a central element is trivial:
 

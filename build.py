@@ -6,6 +6,7 @@ import sys
 import markdown
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 
 SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
 DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
@@ -257,6 +258,45 @@ def copy_static(since=None):
             print(f"Copied {name}")
 
 
+def sitemap_urls():
+    """Every public page of the site, as (deploy path, source file) pairs.
+
+    The internal collection stays out: no menu links it, and it holds drafts.
+    Physics comes before maths, as in ordered_collections().
+    """
+    urls = [(out_name, SRC / md_name) for md_name, out_name, _ in ROOT_PAGES]
+    for coll in ordered_collections():
+        if coll["name"] == "internal":
+            continue
+        for f in coll["articles"]:
+            rel = f.relative_to(coll["src"]).with_suffix(".html").as_posix()
+            urls.append((f"{coll['src'].name}/{rel}", f))
+    return urls
+
+
+def write_sitemaps():
+    """Write one sitemap per mirror.
+
+    A sitemap is only valid for the host that serves it, so the three mirrors
+    cannot share one file. All three land in the same deploy folder and each
+    host serves the whole set; a crawler reads the one whose <loc> entries
+    match the host it came from and ignores the other two.
+    """
+    urls = sitemap_urls()
+    for name, host in SITEMAPS:
+        lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+        for path, src in urls:
+            lastmod = datetime.fromtimestamp(src.stat().st_mtime).strftime("%Y-%m-%d")
+            lines.append("  <url>")
+            lines.append(f"    <loc>{host}/{quote(path)}</loc>")
+            lines.append(f"    <lastmod>{lastmod}</lastmod>")
+            lines.append("  </url>")
+        lines.append("</urlset>")
+        (DEPLOY / name).write_text("\n".join(lines) + "\n", encoding="utf-8")
+        print(f"Wrote {name} ({len(urls)} urls)")
+
+
 def build_root_page(md_path, out_name, articles, is_menu=False):
     if md_path.exists():
         raw = md_path.read_text()
@@ -313,6 +353,14 @@ ROOT_PAGES = [
     ("physics.md",    "physics.html",    True),
     ("disclaimer.md", "disclaimer.html", False),
     ("contact.md",    "contact.html",    False),
+]
+
+# The three public mirrors. Each gets its own sitemap file, named so the file's
+# host is obvious in the deploy folder.
+SITEMAPS = [
+    ("sitemap_github.xml",   "https://ai-research-unit.github.io"),
+    ("sitemap_gitlab.xml",   "https://a-i-research-unit.gitlab.io"),
+    ("sitemap_codeberg.xml", "https://ai-research-unit.codeberg.page"),
 ]
 
 
@@ -394,6 +442,7 @@ def main():
 
     prune_orphans()
     prune_legacy()
+    write_sitemaps()
     run_convention_check()
     write_state(started)
 

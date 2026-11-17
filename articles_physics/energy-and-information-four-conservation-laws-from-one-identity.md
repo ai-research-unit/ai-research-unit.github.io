@@ -136,10 +136,10 @@ Let $\tilde U$ be $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and let $\tilde X$ be
 $$
 2\,\mathrm{Sc}\bigl(\tilde U\tilde X\tilde U^{*}\bigr)=2\,\mathrm{Sc}\tilde X,
 \qquad
-\det\bigl(\tilde U\tilde X\tilde U^{*}\bigr)=\det\tilde X .
+\langle\tilde U\tilde X\tilde U^{*}\rangle_\natural=\langle\tilde X\rangle_\natural .
 $$
 
-The first identity is cyclicity of the scalar part, $2\,\mathrm{Sc}(AB)=2\,\mathrm{Sc}(BA)$ with $A=\tilde U$ and $B=\tilde X\tilde U^{*}$. The second is multiplicativity of the determinant, $\det(AB)=\det A\,\det B$, together with $\lvert\det\tilde U\rvert^{2}=1$, which follows from $\tilde U\tilde U^{*}=e_t$. Both were checked on a hundred random pairs to $2.7\times10^{-15}$ and $7.1\times10^{-15}$.
+The first identity is cyclicity of the scalar part, $2\,\mathrm{Sc}(AB)=2\,\mathrm{Sc}(BA)$ with $A=\tilde U$ and $B=\tilde X\tilde U^{*}$. The second is multiplicativity of the quaternionic norm, $\langle AB\rangle_\natural=\langle A\rangle_\natural\langle B\rangle_\natural$, together with $\lvert\langle\tilde U\rangle_\natural\rvert^{2}=1$, which follows from $\tilde U\tilde U^{*}=e_t$. Both were checked on a hundred random pairs to $2.7\times10^{-15}$ and $7.1\times10^{-15}$.
 
 The statement is about a conjugation, so it applies to every element of the algebra and needs no sector, no physical object and no dynamics. Everything the article says about conservation is an instance of it.
 
@@ -174,16 +174,16 @@ The four rows are the whole thesis. The material pair and the informational pair
 
 The fourth column differs from row to row, and the difference separates conservation from invariance. **Conservation** means fixed by the dynamics, which is a $*$-unitary conjugation. **Invariance** means fixed by the change of frame, which is a unit-norm congruence. The two groups differ: *Norm and Pairing Conventions* keeps them apart, a boost being a unit element and not a $*$-unitary one.
 
-A boost therefore fixes the determinant and moves the doubled scalar part. Applied to a four-momentum at rest, it gives the numbers below.
+A boost therefore fixes the quaternionic norm and moves the doubled scalar part. Applied to a four-momentum at rest, it gives the numbers below.
 
-| $\theta_{\mathrm{rpd}}$ | $E/(mc^{2})$ | $\det/(-m^{2}c^{2})$ | $\lvert BB^{*}-e_t\rvert$ |
+| $\theta_{\mathrm{rpd}}$ | $E/(mc^{2})$ | $\langle\tilde P_{\Phi}\rangle_\natural/(-m^{2}c^{2})$ | $\lvert BB^{*}-e_t\rvert$ |
 | --- | --- | --- | --- |
 | $0$ | $1.000000$ | $1.000000$ | $0$ |
 | $0.5$ | $1.127626$ | $1.000000$ | $0.649$ |
 | $1.0$ | $1.543081$ | $1.000000$ | $1.718$ |
 | $2.0$ | $3.762196$ | $1.000000$ | $6.389$ |
 
-The determinant residual is $0$ at every rapidity. Energy is conserved and frame-dependent; mass is conserved and frame-independent. The two words are not synonyms, and one identity gives one of each. The determinant is fixed by the larger group, so mass is invariant. The doubled scalar part is fixed only by the smaller group, so energy is conserved without being invariant.
+The residual in the quaternionic norm is $0$ at every rapidity. Energy is conserved and frame-dependent; mass is conserved and frame-independent. The two words are not synonyms, and one identity gives one of each. The norm is fixed by the larger group, so mass is invariant. The doubled scalar part is fixed only by the smaller group, so energy is conserved without being invariant.
 
 The same distinction settles the informational side. A coarse-graining preserves the doubled scalar part and is not reversible, so normalisation survives it and the norm does not. Information is conserved in the reversible regime and in no other, and the article states the conservation with that qualification rather than without it.
 
@@ -234,7 +234,7 @@ $$
 =\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t,
 $$
 
-so the exponential is $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and conjugation by a $*$-unitary element preserves the doubled scalar part and both norms. It is a $*$-unitary element and not a unit element: *Norm and Pairing Conventions* keeps the two apart, and the exponential of an anti-Hermitian element has $\lvert\det\tilde U\rvert=1$ with $\det\tilde U$ a general phase. The anti-Hermitian elements are the Lie algebra $\mathfrak{u}(2)$ of the unitary group; they generate the $*$-unitary transformations, and that is all they do. A sentence that calls them lossy has mistaken a rotation for a shrinkage.
+so the exponential is $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and conjugation by a $*$-unitary element preserves the doubled scalar part and both norms. It is a $*$-unitary element and not a unit element: *Norm and Pairing Conventions* keeps the two apart, and the exponential of an anti-Hermitian element has $\lvert\langle\tilde U\rangle_{\natural}\rvert=1$ with $\langle\tilde U\rangle_{\natural}$ a general phase. The anti-Hermitian elements are the Lie algebra $\mathfrak{u}(2)$ of the unitary group; they generate the $*$-unitary transformations, and that is all they do. A sentence that calls them lossy has mistaken a rotation for a shrinkage.
 
 *Relations between the Biquaternion Exponential and the Fourier Kernel* gives the general law, and it is the sharpest statement available. For $\tilde Q=Q_te_t+\vec Q$, $B^2=(\vec Q,\vec Q)$ and $\rho=\vec Q/B$,
 
@@ -471,13 +471,13 @@ The invariance is a separate statement from the conservation. The norm is preser
 
 $$
 \langle\tilde U\tilde P_{\Phi}\tilde U^*\rangle_\natural
-=\det\tilde U\,\det\tilde P_{\Phi}\,\det\tilde U^*
+=\langle\tilde U\rangle_\natural\,\langle\tilde P_{\Phi}\rangle_\natural\,\langle\tilde U^*\rangle_\natural
 =\langle\tilde P_{\Phi}\rangle_\natural
 \qquad\text{when}\qquad
 \langle\tilde U\rangle_\natural=1,
 $$
 
-because a unit-norm element has determinant one and its star has determinant one. The doubled scalar part is not preserved by the same action: a boost changes $E$ and leaves $m$ fixed. The duality section below turns that remark into the two ledgers.
+because a unit-norm element has norm one and its star has norm one. The doubled scalar part is not preserved by the same action: a boost changes $E$ and leaves $m$ fixed. The duality section below turns that remark into the two ledgers.
 
 | statement | object | operation | result |
 | --- | --- | --- | --- |
@@ -564,7 +564,7 @@ $$
 \langle\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\rangle_\natural=\langle\tilde{Ϛ}_{\Psi}\rangle_\natural .
 $$
 
-The first follows from cyclicity of the scalar part and from $\tilde U^*\tilde U=e_t$. The second follows from multiplicativity of the determinant and from $\lvert\det\tilde U\rvert^{2}=1$. Both were checked on a hundred random $*$-unitary elements. Since the entropy is a function of the quaternionic norm, it is invariant:
+The first follows from cyclicity of the scalar part and from $\tilde U^*\tilde U=e_t$. The second follows from multiplicativity of the quaternionic norm and from $\lvert\langle\tilde U\rangle_\natural\rvert^{2}=1$. Both were checked on a hundred random $*$-unitary elements. Since the entropy is a function of the quaternionic norm, it is invariant:
 
 $$
 S\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=S(\tilde{Ϛ}_{\Psi}).
@@ -765,9 +765,9 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | energy is twice the scalar part of the four-momentum | established | $2\,\mathrm{Sc}\tilde P_{\Phi}=2iE/c$; checked |
 | mass is the modulus, $\Rho=imc$ | established | $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; checked |
 | $E=mc^2\cosh\theta_{\mathrm{rpd}}$ | established | the Hamilton pairing; checked |
-| the norm is preserved by unit-norm congruence | established | determinant multiplicativity; checked |
+| the norm is preserved by unit-norm congruence | established | multiplicativity of the quaternionic norm; checked |
 | the doubled scalar part is preserved by $*$-unitary conjugation | established | cyclicity and $\tilde U^*\tilde U=e_t$; checked |
-| the norm is preserved by $*$-unitary conjugation | established | $\lvert\det\tilde U\rvert^2=1$; checked |
+| the norm is preserved by $*$-unitary conjugation | established | $\lvert\langle\tilde U\rangle_\natural\rvert^2=1$; checked |
 | an anti-Hermitian element generates a $*$-unitary flow | established | $\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t$; checked |
 | no element of either sector has a decay rate in the corpus convention, which carries the $-i$ | established | $\operatorname{Re}Q_t=0$ on $\mathbb{B}_{\Phi}$; the $-i$ moves $Q_t$ to the frequency slot on $\mathbb{B}_{\Psi}$; both norms identically $1$, checked to $10^{-14}$ |
 | the norm of the exponential is fixed by three numbers | established | the law of *Relations between the Biquaternion Exponential and the Fourier Kernel*; checked to $1.4\times10^{-15}$ |
@@ -801,7 +801,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 
 ## Summary
 
-- Conjugation by a $*$-unitary element fixes the doubled scalar part and the determinant of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
+- Conjugation by a $*$-unitary element fixes the doubled scalar part and the quaternionic norm of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
 - The algebra attaches two numbers to an element: the doubled scalar part, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
 - On $\mathbb{B}_{\Phi}$ twice the scalar part is energy, $E=-ic\,\mathrm{Sc}\,\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
 - The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde H_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
@@ -809,7 +809,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 - Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
 - On $\mathbb{B}_{\Psi}$ twice the scalar part is the normalisation, $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
 - Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the doubled scalar part and the norm, and hence the entropy. Coarse-graining preserves that number, increases the norm and increases the entropy.
-- Conservation is not invariance. The doubled scalar part is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the determinant is fixed by both, so mass is conserved and frame-independent.
+- Conservation is not invariance. The doubled scalar part is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the norm is fixed by both, so mass is conserved and frame-independent.
 - The duality is the thesis: the norm is fixed and the doubled scalar part free on the material side, that number fixed and the norm free on the informational side.
 - The two freedoms are of different kinds. On $\mathbb{B}_{\Phi}$ the free number is a frame label, and the Lorentz group moves it. On $\mathbb{B}_{\Psi}$ the reversible group fixes both numbers, and the norm moves only under a loss of information.
 - The doubled scalar part identifies nothing on either side. An electron and a proton at $1$ GeV share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.
@@ -824,7 +824,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian material sector, Hermitian informational sector |
 | $\tilde{Ξ}$ | the biquaternion-valued field, the evolving element of the state-vector equation |
 | $2\,\mathrm{Sc}\tilde Q=2Q_t$ | twice the scalar part, the sum of the spectrum |
-| $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$ | the quaternionic norm, the determinant, the interval |
+| $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$ | the quaternionic norm, the interval |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_\natural=\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$ | the quaternionic form |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_*=\mathrm{Sc}(\tilde Q_1\tilde Q_2^*)$ | the Hermitian form |
 | $\tilde P_{\Phi}=i(E/c)e_t+\vec p$ | the four-momentum |

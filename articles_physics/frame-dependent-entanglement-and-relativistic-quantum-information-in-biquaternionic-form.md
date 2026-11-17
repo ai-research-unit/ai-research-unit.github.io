@@ -179,10 +179,10 @@ because every Wigner rotor is $*$-unitary. The maximally mixed spin state is the
 
 ### The invariant spinor concurrence and where the invariance goes
 
-The spinor description makes the invariant and the non-invariant parts of the concurrence visible. On the spinor module, a pure two-qubit state is a four-component object $\tilde{Ξ}\in S\otimes S$, and the Lorentz group acts by $\tilde U_{\mathrm{lor}}\otimes\tilde U_{\mathrm{lor}}$ with $\det\tilde U_{\mathrm{lor}} = 1$. With the symplectic form
+The spinor description makes the invariant and the non-invariant parts of the concurrence visible. On the spinor module, a pure two-qubit state is a four-component object $\tilde{Ξ}\in S\otimes S$, and the Lorentz group acts by $\tilde U_{\mathrm{lor}}\otimes\tilde U_{\mathrm{lor}}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$. With the symplectic form
 $$
 \epsilon = \begin{pmatrix}0 & 1\ -1 & 0\end{pmatrix}, \qquad
-\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\,\tilde U_{\mathrm{lor}} = \det(\tilde U_{\mathrm{lor}})\,\epsilon = \epsilon ,
+\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\,\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\epsilon = \epsilon ,
 $$
 the **symplectic concurrence**
 $$
@@ -191,7 +191,7 @@ $$
 satisfies
 $$
 \boxed{\;\mathcal{C}\bigl((\tilde U_{\mathrm{lor}}\otimes\tilde U_{\mathrm{lor}})\tilde{Ξ}\bigr)
-= \bigl|\det\tilde U_{\mathrm{lor}}\bigr|^2\,\mathcal{C}(\tilde{Ξ}) = \mathcal{C}(\tilde{Ξ})\;}.
+= \bigl|\langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\bigr|^2\,\mathcal{C}(\tilde{Ξ}) = \mathcal{C}(\tilde{Ξ})\;}.
 $$
 The unnormalized concurrence is therefore exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant. What is not invariant is the **normalized** concurrence $\mathcal{C}(\tilde{Ξ})/\langle\tilde{Ξ}|\tilde{Ξ}\rangle$, because the spinor norm is not preserved by a boost: $\langle\tilde U_{\mathrm{lor}}\tilde{Ξ}|\tilde U_{\mathrm{lor}}\tilde{Ξ}\rangle = \langle\tilde{Ξ}|\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}|\tilde{Ξ}\rangle \neq\langle\tilde{Ξ}|\tilde{Ξ}\rangle$ for a single boosted factor. This is the sharpest way to state the origin of the frame dependence in the framework. The invariant is a bilinear pairing of spinors, and a boost preserves it as a bilinear form; but the physically normalized state divides by a norm that the boost changes, and the ratio is frame-dependent. For a sharp momentum the normalization is common to both branches and cancels; for a momentum superposition the branch norms differ and the ratio does not.
 
@@ -253,7 +253,7 @@ $$
 $$
 The channel is $*$-unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\theta_{\mathrm{wgn}}$; the single-particle entropy produced is $h((1+r_{\mathrm{red}})/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\theta_{\mathrm{wgn}}$ for the symmetric configuration. For a state with $|\xi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\theta_{\mathrm{rpd}} = 0$ to $0.98127650$ at $\theta_{\mathrm{rpd}} = 1$ and $0.92765115$ at $\theta_{\mathrm{rpd}} = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.
 
-The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\tilde{Ξ}) = |\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \det(\tilde U_{\mathrm{lor}})\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.
+The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\tilde{Ξ}) = |\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.
 
 ## Summary of Notation
 
@@ -272,7 +272,7 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 | $\theta_{\mathrm{wgn}}$ | Wigner angle of a branch |
 | $\vec u_{\mathrm r}$ | Wigner rotation axis |
 | $h(p) = -p\log_2 p-(1-p)\log_2(1-p)$ | Binary entropy |
-| $\epsilon = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | Symplectic form, $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \det(\tilde U_{\mathrm{lor}})\epsilon$ |
+| $\epsilon = \begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | Symplectic form, $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\epsilon$ |
 | $\mathcal{C}(\tilde{Ξ}) = \|\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}\|$ | Symplectic (unnormalized) concurrence |
 
 ## Further Reading

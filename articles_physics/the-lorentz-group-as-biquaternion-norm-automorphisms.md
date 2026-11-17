@@ -20,7 +20,7 @@ for all biquaternions $\tilde{Q},\tilde Q_1$. A multiplicative quadratic form on
 
 Four statements organize the article. The first three are the levels at which the identification by the **form** can be read; the fourth is the level supplied by the **product**.
 
-- **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
+- **At the complex level**, $\langle\cdot\rangle_{\natural}$ is a nondegenerate symmetric form on $\mathbb{B}\cong\mathbb{C}^4$, and the automorphism group is the complex orthogonal group $O(4,\mathbb{C})$. Via the determinant realization $N=\det\mathsf M_2$, the connected component is $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\{\pm(e_t,e_t)\}$, acting by $\tilde{Q}\mapsto A\tilde{Q}B^{*}$.
 - **At the real level**, the restricted form on the anti-Hermitian slice is the Minkowski interval $\langle\tilde Q\rangle_\natural$ with $Q_t=i q'_t$, and the automorphisms preserving the slice are the real orthogonal maps of signature $(3,1)$, with identity component the restricted Lorentz group $SO^+(1,3)$.
 - **At the rotor level**, the identity component is exactly the group of Hermitian pairs $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ with the Lorentz rotor $\tilde U_{\mathrm{lor}}$, a unit-norm biquaternion, and the correspondence is two-to-one.
 - **At the algebra level**, the automorphisms that preserve the **product** and not only the form are the inner ones, and they form the subfamily $AB^{*}=I$, the group $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$. As a real group this is again the restricted Lorentz group, and it acts as the Lorentz group on a real coordinate system that is *bilinear* in the coordinates of a complex 3-space, with the causal structure following from an identity rather than from a postulate. That route is the source's, and the section *The Algebra Automorphisms: the Diagonal, and an Induced Causality* treats it as the middle case between the norm and the slice.
@@ -120,7 +120,7 @@ It is invertible and $\mathbb{C}$-linear, and its effect on the form is
 
 $$
 \langle L_{A}R_{B}\tilde{Q}\rangle_{\natural} = \det\!\left(A\tilde{Q}B^{*}\right)
-= \det A\,\overline{\det B}\,\det\tilde{Q}
+= \det A\,\overline{\det B}\,\langle\tilde{Q}\rangle_{\natural}
 = \det A\,\overline{\det B}\,\langle\tilde{Q}\rangle_{\natural}.
 $$
 
@@ -293,13 +293,13 @@ $$
 
 Two consequences are worth separating. The algebra automorphisms are exactly the norm automorphisms whose **two chiral factors are adjoint-inverse** — the ones that preserve the multiplication and not merely the quadratic form. And it is this subfamily, not an arbitrary pair, that is real-isomorphic to the Lorentz group: $SO(3,\mathbb{C})$ and $SO^+(1,3)$ are both $PSL(2,\mathbb{C})$, connected of real dimension six, hence the same real group. The group recovered from the **algebra** is thus the restricted Lorentz group, whereas the group recovered from the **form** alone is the larger $SO(4,\mathbb{C})$; the source reads this as evidence that the algebra, not the form, is the primitive object.
 
-**What it acts on, and what it preserves.** The inner automorphism fixes $2\,\mathrm{Sc}\,\tilde{Q}$ and therefore the scalar coordinate $z_0$, and it acts on the scalar-free part $\tilde Q_{\mathrm{v}}=\tilde{Q}-\mathrm{Sc}(\tilde{Q})e_t$ by the same subfamily, $\tilde Q_{\mathrm{v}}\mapsto A\tilde Q_{\mathrm{v}} B^{*}$ with $AB^{*}=I$, preserving $\det\tilde Q_{\mathrm{v}}$. The scalar-free part is three-dimensional over $\mathbb{C}$, and on it the action is the **complex-orthogonal** one: with $x=(z_1,z_2,z_3)$,
+**What it acts on, and what it preserves.** The inner automorphism fixes $2\,\mathrm{Sc}\,\tilde{Q}$ and therefore the scalar coordinate $z_0$, and it acts on the scalar-free part $\tilde Q_{\mathrm{v}}=\tilde{Q}-\mathrm{Sc}(\tilde{Q})e_t$ by the same subfamily, $\tilde Q_{\mathrm{v}}\mapsto A\tilde Q_{\mathrm{v}} B^{*}$ with $AB^{*}=I$, preserving $\langle\tilde Q_{\mathrm{v}}\rangle_{\natural}$. The scalar-free part is three-dimensional over $\mathbb{C}$, and on it the action is the **complex-orthogonal** one: with $x=(z_1,z_2,z_3)$,
 
 $$
 x \longmapsto Rx , \qquad R^TR = I_3 , \qquad \det R = 1 ,
 $$
 
-preserving the complex quadratic form $\sigma = z_1^2+z_2^2+z_3^2 = -\det\tilde Q_{\mathrm{v}}$. This $\sigma$ is the source's "3D complex metric". Stronger invariants come from the trace: $\det\tilde{Q}$ is preserved by the inner action, so $z_0$ and $\sigma = z_0^2-\det\tilde{Q}$ are invariants of the algebra automorphisms, which is why the whole construction is built from $z_0$ and $\sigma$.
+preserving the complex quadratic form $\sigma = z_1^2+z_2^2+z_3^2 = -\langle\tilde Q_{\mathrm{v}}\rangle_{\natural}$. This $\sigma$ is the source's "3D complex metric". Stronger invariants come from the trace: $\langle\tilde{Q}\rangle_{\natural}$ is preserved by the inner action, so $z_0$ and $\sigma = z_0^2-\langle\tilde{Q}\rangle_{\natural}$ are invariants of the algebra automorphisms, which is why the whole construction is built from $z_0$ and $\sigma$.
 
 The source's matrix realization differs from the $\mathsf{M}_2$ of the conventions above. It is the assignment
 

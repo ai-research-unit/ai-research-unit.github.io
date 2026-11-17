@@ -13,7 +13,7 @@ The treatment is mathematically honest: every claim is either proved or stated a
 **Theorem (the spectrum is the coordinate pair).** The characteristic polynomial of $L_{\breve Q}$ is
 $$
 \boxed{\;
-\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}L_{\breve Q}\,\lambda+\det(\breve Q)
+\chi_{\breve Q}(\lambda)=\det(\lambda L_{1}-L_{\breve Q})=(\lambda-Q_{+})(\lambda-Q_{-})=\lambda^{2}-\operatorname{tr}L_{\breve Q}\,\lambda+\det L_{\breve Q}
 \;},
 $$
 so
@@ -24,7 +24,7 @@ $$
 $$
 with the two values counted with multiplicity, where
 $$
-\operatorname{tr}L_{\breve Q}=Q_{+}+Q_{-}=2Q_{\blacktriangle},\qquad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}
+\operatorname{tr}L_{\breve Q}=Q_{+}+Q_{-}=2Q_{\blacktriangle},\qquad \det L_{\breve Q}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}
 $$
 are the **reduced trace** and the **reduced determinant**. The element is singular exactly when $0\in\sigma(\breve Q)$, that is when $Q_{+}=0$ or $Q_{-}=0$, which is the zero-divisor condition $\langle \breve Q\rangle_{\mathrm{ts}}=0$.
 
@@ -53,16 +53,16 @@ so the spectrum is read directly on the two coordinates and no triangular or Jor
 **Theorem (the reduced Cayley–Hamilton identity).** Every element satisfies
 $$
 \boxed{\;
-\breve Q^{2}-\operatorname{tr}L_{\breve Q}\,\breve Q+\det(\breve Q)\,1=0,\qquad \operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle},\quad \det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}
+\breve Q^{2}-\operatorname{tr}L_{\breve Q}\,\breve Q+\det L_{\breve Q}\,1=0,\qquad \operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle},\quad \det L_{\breve Q}=\langle \breve Q\rangle_{\mathrm{ts}}
 \;},
 $$
 and the same identity holds for the operator, $L_{\breve Q}^{2}-2Q_{\blacktriangle}\,L_{\breve Q}+\langle \breve Q\rangle_{\mathrm{ts}}\,L_{1}=0$.
 
 *Proof.* In the idempotent coordinates the left side is $Q_{+}^{2}-(Q_{+}+Q_{-})Q_{+}+Q_{+}Q_{-}$ in the first component and $Q_{-}^{2}-(Q_{+}+Q_{-})Q_{-}+Q_{+}Q_{-}$ in the second, both zero; the operator statement follows by applying the identity to the regular module.
 
-**Theorem (additivity and multiplicativity).** The reduced trace is $\mathbb{C}$-linear and additive, $\operatorname{tr}L_{\breve Q_{1}+\breve Q_{2}}=\operatorname{tr}L_{\breve Q_{1}}+\operatorname{tr}L_{\breve Q_{2}}$; the reduced determinant is multiplicative, $\det(\breve Q_{1}\breve Q_{2})=\det(\breve Q_{1})\det(\breve Q_{2})$; and $\det(\breve Q)$ vanishes exactly on the zero-divisor set.
+**Theorem (additivity and multiplicativity).** The reduced trace is $\mathbb{C}$-linear and additive, $\operatorname{tr}L_{\breve Q_{1}+\breve Q_{2}}=\operatorname{tr}L_{\breve Q_{1}}+\operatorname{tr}L_{\breve Q_{2}}$; the reduced determinant is multiplicative, $\det L_{\breve Q_{1}\breve Q_{2}}=\det L_{\breve Q_{1}}\det L_{\breve Q_{2}}$; and $\det L_{\breve Q}$ vanishes exactly on the zero-divisor set.
 
-*Proof.* $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}$ is linear in the complex coordinate $Q_{\blacktriangle}$; $\det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative, the coordinates multiplying componentwise; and the vanishing of the product is the unit criterion.
+*Proof.* $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}$ is linear in the complex coordinate $Q_{\blacktriangle}$; $\det L_{\breve Q}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative, the coordinates multiplying componentwise; and the vanishing of the product is the unit criterion.
 
 **Corollary (the inverse).** On the complement of the zero-divisor set,
 $$
@@ -108,7 +108,7 @@ it is analytic in $\lambda$ on the complement of the two points $Q_{+},Q_{-}$, a
 
 **Corollary (the resolvent at infinity).** For large $\lambda$ one has $R(\lambda,\breve Q)=\lambda^{-1}1+\lambda^{-2}\breve Q+\lambda^{-3}\breve Q^{2}+\cdots$, the Neumann series of the algebra, convergent for $|\lambda|>\rho(\breve Q)$.
 
-*Proof.* Expanding $(\lambda-\breve Q)^{-1}=\lambda^{-1}(1-\breve Q/\lambda)^{-1}$ and summing the geometric series in the finite-dimensional commutative algebra gives the displayed series, which converges for $|\lambda|>\rho(\breve Q)$ and sums to the closed form $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$; the terms satisfy the recurrence $\breve Q^{n+1}=\operatorname{tr}L_{\breve Q}\breve Q^{n}-\det(\breve Q)\breve Q^{n-1}$ read from Cayley–Hamilton, so the series is that of the two geometric series in the coordinates.
+*Proof.* Expanding $(\lambda-\breve Q)^{-1}=\lambda^{-1}(1-\breve Q/\lambda)^{-1}$ and summing the geometric series in the finite-dimensional commutative algebra gives the displayed series, which converges for $|\lambda|>\rho(\breve Q)$ and sums to the closed form $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$; the terms satisfy the recurrence $\breve Q^{n+1}=\operatorname{tr}L_{\breve Q}\breve Q^{n}-\det L_{\breve Q}\breve Q^{n-1}$ read from Cayley–Hamilton, so the series is that of the two geometric series in the coordinates.
 
 ## The Spectral Radius
 
@@ -121,7 +121,7 @@ $$
 
 *Proof.* The operator is diagonal with entries $Q_{+},Q_{-}$, so its norm and its spectral radius are both the maximum of the two moduli; the vanishing of the maximum forces both coordinates to zero, hence $\breve Q=0$, the algebra having no non-zero nilpotent. The left inequality compares the maximum with twice the mean and the right compares it with the sum of squares, and $\lvert Q_{+}\rvert^{2}+\lvert Q_{-}\rvert^{2}=2K(\breve Q)$.
 
-**Corollary (the Gelfand formula is finite).** Because the powers are $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$ and obey the two-term recurrence $\breve Q^{n+2}=\operatorname{tr}L_{\breve Q}\,\breve Q^{n+1}-\det(\breve Q)\,\breve Q^{n}$ of Cayley–Hamilton, the Gelfand limit is the maximum of the two moduli,
+**Corollary (the Gelfand formula is finite).** Because the powers are $\breve Q^{n}=Q_{+}^{n}\Pi_++Q_{-}^{n}\Pi_-$ and obey the two-term recurrence $\breve Q^{n+2}=\operatorname{tr}L_{\breve Q}\,\breve Q^{n+1}-\det L_{\breve Q}\,\breve Q^{n}$ of Cayley–Hamilton, the Gelfand limit is the maximum of the two moduli,
 $$
 \rho(\breve Q)=\lim_{n}\lVert \breve Q^{n}\rVert^{1/n}=\max\bigl(\lvert Q_{+}\rvert,\lvert Q_{-}\rvert\bigr),
 $$
@@ -135,7 +135,7 @@ computed from the two coordinates alone, and there is no nilpotent block.
 $$
 \exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-,
 $$
-it maps the algebra into the group of invertibles, and the reduced determinant is $\det(\exp \breve Q)=e^{Q_{+}+Q_{-}}=e^{\operatorname{tr}L_{\breve Q}}$. The exponential is never zero, so every element of the image is invertible; it is not injective, its kernel being the elements with $Q_{+},Q_{-}\in2\pi i\mathbb{Z}$.
+it maps the algebra into the group of invertibles, and the reduced determinant is $\det L_{\exp \breve Q}=e^{Q_{+}+Q_{-}}=e^{\operatorname{tr}L_{\breve Q}}$. The exponential is never zero, so every element of the image is invertible; it is not injective, its kernel being the elements with $Q_{+},Q_{-}\in2\pi i\mathbb{Z}$.
 
 *Proof.* The exponential of a diagonal operator is diagonal with the exponentials of the entries, and the coordinates are the characters, so $\exp(\breve Q)$ has coordinates $e^{Q_{+}},e^{Q_{-}}$; the determinant is the product, $e^{Q_{+}}e^{Q_{-}}=e^{Q_{+}+Q_{-}}$; the kernel is the preimage of $1$, that is $e^{Q_{+}}=e^{Q_{-}}=1$.
 
@@ -153,7 +153,7 @@ The biquaternion algebra $\mathbb{B}=M_{2}(\mathbb{C})$ is simple, with a single
 
 ## Summary
 
-The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\{Q_{+},Q_{-}\}$, the pair of its idempotent coordinates, which are the eigenvalues of left multiplication in the basis $1,j$ with matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$. Left and right eigenvalues coincide, because the algebra is commutative, and the intrinsic spectrum over $\mathbb{C}$ is the operator spectrum; there is no quaternionic or S-spectrum. The reduced trace $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}=Q_{+}+Q_{-}$ is additive and the reduced determinant $\det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative and vanishes exactly on the zero-divisor set, and Cayley–Hamilton reads $\breve Q^{2}-\operatorname{tr}L_{\breve Q}\breve Q+\det(\breve Q)1=0$, the minimal polynomial having degree at most two. Similarity changes neither coordinate, so the classes are the ordered pairs $(Q_{+},Q_{-})$; the eigenspaces are the two idempotent lines when $Q_{+}\neq Q_{-}$ and the whole algebra when $\breve Q$ is a scalar; the resolvent is $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$, analytic off the two points and satisfying the resolvent identity; and the spectral radius is $\max(|Q_{+}|,|Q_{-}|)$, equal to the operator norm of left multiplication and vanishing only at $0$, there being no non-zero nilpotent. The exponential is $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$, its determinant is $e^{\operatorname{tr}L_{\breve Q}}$, and the logarithm exists exactly on the invertibles for a branch choice in each coordinate. Against the biquaternion and split biquaternion theories the finite complex spectrum, the field-valued trace and determinant and the diagonal model replace the S-spectrum, the quaternionic trace and norm functionals and the conjugate-class structure, the whole theory being the pair of the complex one-variable spectral theories of the two coordinates.
+The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\{Q_{+},Q_{-}\}$, the pair of its idempotent coordinates, which are the eigenvalues of left multiplication in the basis $1,j$ with matrix $\begin{smallmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\ Q_{\blacktriangledown}&Q_{\blacktriangle}\end{smallmatrix}$. Left and right eigenvalues coincide, because the algebra is commutative, and the intrinsic spectrum over $\mathbb{C}$ is the operator spectrum; there is no quaternionic or S-spectrum. The reduced trace $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}=Q_{+}+Q_{-}$ is additive and the reduced determinant $\det L_{\breve Q}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}$ is multiplicative and vanishes exactly on the zero-divisor set, and Cayley–Hamilton reads $\breve Q^{2}-\operatorname{tr}L_{\breve Q}\breve Q+\det L_{\breve Q}1=0$, the minimal polynomial having degree at most two. Similarity changes neither coordinate, so the classes are the ordered pairs $(Q_{+},Q_{-})$; the eigenspaces are the two idempotent lines when $Q_{+}\neq Q_{-}$ and the whole algebra when $\breve Q$ is a scalar; the resolvent is $(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$, analytic off the two points and satisfying the resolvent identity; and the spectral radius is $\max(|Q_{+}|,|Q_{-}|)$, equal to the operator norm of left multiplication and vanishing only at $0$, there being no non-zero nilpotent. The exponential is $e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$, its determinant is $e^{\operatorname{tr}L_{\breve Q}}$, and the logarithm exists exactly on the invertibles for a branch choice in each coordinate. Against the biquaternion and split biquaternion theories the finite complex spectrum, the field-valued trace and determinant and the diagonal model replace the S-spectrum, the quaternionic trace and norm functionals and the conjugate-class structure, the whole theory being the pair of the complex one-variable spectral theories of the two coordinates.
 
 ## Summary of Notation
 
@@ -163,8 +163,8 @@ The reduced biquaternion element $\breve Q$ has the spectrum $\sigma(\breve Q)=\
 | $Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown}$, $Q_{-}=Q_{\blacktriangle}-Q_{\blacktriangledown}$ | Idempotent coordinates, the eigenvalues |
 | $\sigma(\breve Q)=\{Q_{+},Q_{-}\}$ | Spectrum |
 | $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}=Q_{+}+Q_{-}$ | Reduced trace |
-| $\det(\breve Q)=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | Reduced determinant |
-| $\chi_{\breve Q}(\lambda)=\lambda^{2}-\operatorname{tr}L_{\breve Q}\lambda+\det(\breve Q)$ | Characteristic polynomial |
+| $\det L_{\breve Q}=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{+}Q_{-}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | Reduced determinant |
+| $\chi_{\breve Q}(\lambda)=\lambda^{2}-\operatorname{tr}L_{\breve Q}\lambda+\det L_{\breve Q}$ | Characteristic polynomial |
 | $R(\lambda,\breve Q)=(\lambda-Q_{+})^{-1}\Pi_++(\lambda-Q_{-})^{-1}\Pi_-$ | Resolvent |
 | $\rho(\breve Q)=\max(\lvert Q_{+}\rvert,\lvert Q_{-}\rvert)$ | Spectral radius |
 | $\exp \breve Q=e^{Q_{+}}\Pi_++e^{Q_{-}}\Pi_-$ | Exponential |

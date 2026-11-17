@@ -675,7 +675,7 @@ $$
 | the element | $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | four complex coefficients |
 | the K norm | $\mathrm{Kr}(\tilde Q)$ | $\lvert Q_t\rvert^{2}-\lVert\vec Q\rVert^{2}$, real |
 | the plain norm | $P(\tilde Q)$ | $Q_t^{2}-B^{2}$, complex |
-| the quaternionic norm | $N(\tilde Q)$ | $Q_t^{2}+B^{2}$, complex, multiplicative, the determinant |
+| the quaternionic norm | $N(\tilde Q)$ | $Q_t^{2}+B^{2}$, complex, multiplicative |
 | the Hermitian norm | $H(\tilde Q)$ | $\lvert Q_t\rvert^{2}+\lVert\vec Q\rVert^{2}$, positive |
 | the vector square | $B^{2}$ | $Q_x^{2}+Q_y^{2}+Q_z^{2}$ |
 | the vector norm | $\lVert\vec Q\rVert^{2}$ | $\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}$ |

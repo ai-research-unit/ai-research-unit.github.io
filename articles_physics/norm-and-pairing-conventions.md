@@ -126,7 +126,7 @@ of real dimension four, written upright because it is a group. Its elements are 
 - the Hermitian level set $\{H=1\}$ contains $\mathrm{U}(2)$ strictly, since it is the unit sphere of $\mathbb{R}^{8}$ of dimension seven and $\mathrm{U}(2)$ has dimension four;
 - the $N$-norm-one set $\mathbb{B}^{\times}_{1}$ does not contain $\mathrm{U}(2)$, because $\mathrm{U}(2)\not\subset\mathrm{SL}(2,\mathbb{C})$.
 
-A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is $N$-norm one and $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\neq e_t$. A $*$-unitary element whose determinant is not one is $*$-unitary and is not invertible element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
+A boost is a unit element and is not $*$-unitary: $\tilde U_{\Psi,\mathrm b}$ is $N$-norm one and $\tilde U_{\Psi,\mathrm b}^{*}\tilde U_{\Psi,\mathrm b}\neq e_t$. A $*$-unitary element whose norm is not one is $*$-unitary and is not an invertible element. The glyph asserts the first and never the second; an article that needs a $*$-unitary element states $\tilde Q^{*}\tilde Q=e_t$ on it.
 
 **The norm and the group condition exist only where their involution does**: the bar alone over $\mathbb{C}$ and the split-complex numbers, the quaternion sign alone over $\mathbb{H}$ and the split-quaternions, all four marks over $\mathbb{B}$ and the split-biquaternions.
 
@@ -238,6 +238,14 @@ p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\P
 $$
 
 A normalised state therefore has matrix trace one; the factor $2$ belongs in the definition of the trace and cancels in the probability. Dropping it from the trace or inserting it in the ratio are the two opposite mistakes.
+
+**The determinant and the norm.** The companion rule holds here. The determinant is the determinant of the $2\times2$ image, and its value on an element is the quaternionic norm with no factor,
+
+$$
+\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
+$$
+
+so an element is read in $\langle\cdot\rangle_{\natural}$ and not in $\det$, exactly as it is read in $\mathrm{Sc}$ and not in $\operatorname{Tr}$. The factor that the trace carries is absent here, because a product of eigenvalues needs no dimension count. The word *determinant* is used for an array: the metric, a Jacobian, a symbol matrix, a transfer matrix, a mass matrix, a fluctuation operator, and the functional determinant of a path integral. The condition $\langle\tilde Q\rangle_{\natural}=0$ is the zero-divisor cone, and the corpus names it as a norm condition.
 
 **The pairing formula.** The ratio is called the *pairing formula* in the exercises and in the summaries: two elements in, one normalised number out, with the star on the second slot. It is the Born weight written as a pairing, and it carries no trace word, because neither slot is a matrix. Where a table says *pairing formula*, this ratio is meant.
 

@@ -286,7 +286,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The reciprocal of a symbol is its adjugate over its norm.** For every $\tilde{Q}$, $\tilde{Q}\bar{\tilde{Q}}=\bar{\tilde{Q}}\tilde{Q}=N(\tilde{Q})e_t$ with $N$ central and complex-valued, so off the zero set $\Sigma^{-1}=\bar\Sigma/N(\Sigma)$. In the regular representation the same identity reads $L_\Sigma^{-1}=N(\Sigma)^{-1}L_{\bar\Sigma}$, and $\det L_\Sigma=\lvert N(\Sigma)\rvert^{4}$.
 
-**The identity is the reason the degenerate set is a set and not an accident.** The determinant vanishes exactly where the norm does, which is a complex quadric, and the rank falls by at least two at a simple null point. An element at rank two is a zero divisor; the projector $\tilde\Pi_+$ is the model, and every null element is conjugate to a projector or is nilpotent.
+**The identity is the reason the degenerate set is a set and not an accident.** The determinant of the left multiplication vanishes exactly where the norm of the element does, which is a complex quadric, and the rank falls by at least two at a simple null point. An element at rank two is a zero divisor; the projector $\tilde\Pi_+$ is the model, and every null element is conjugate to a projector or is nilpotent.
 
 ### Two Generalised Inverses
 

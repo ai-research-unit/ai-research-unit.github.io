@@ -36,7 +36,7 @@ with ${}^{*}$ the corpus's star, the anti-involution that fixes the Hermitian se
 |---|---|---|
 | preserves the product | yes | no |
 | preserves the two Hermitian sectors | no | yes |
-| preserves the indefinite form | yes, because it preserves the norm | yes, because $\det(\tilde U\tilde Q\tilde U^{*})=\lvert\det\tilde U\rvert^{2}N(\tilde Q)$ |
+| preserves the indefinite form | yes, because it preserves the norm | yes, because $\langle\tilde U\tilde Q\tilde U^{*}\rangle_{\natural}=\lvert\langle\tilde U\rangle_{\natural}\rvert^{2}N(\tilde Q)$ |
 | preserves the trace | yes | only for $*$-unitary $\tilde U$ |
 | defined on the group of invertibles | yes | yes |
 | defined on all elements | no | yes |

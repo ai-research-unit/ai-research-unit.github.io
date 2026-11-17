@@ -31,7 +31,7 @@ $$
 \mathsf{M}_2(\vec e_z)=-i\sigma_3.
 $$
 
-The reading of an element is twice its scalar part, $2\operatorname{Sc}\tilde Q=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q)$, and the text writes $2\operatorname{Sc}\tilde Q$; the matrix trace is named only beside the matrix $\mathsf{M}_2$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and we write $\det\tilde Q$ for it. The **norm-one group** is
+The reading of an element is twice its scalar part, $2\operatorname{Sc}\tilde Q=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q)$, and the text writes $2\operatorname{Sc}\tilde Q$; the matrix trace is named only beside the matrix $\mathsf{M}_2$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the corpus writes $N(\tilde Q)$ for it. The **norm-one group** is
 
 $$
 \mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}\cong SL_2(\mathbb{C}).
@@ -72,7 +72,7 @@ The two signs are exchanged by the central element $-e_t$, which multiplies the 
 
 (i) $T=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2$;
 
-(ii) $2\operatorname{Sc}T=2+t$ and $\det T=1$;
+(ii) $2\operatorname{Sc}T=2+t$ and $\det\mathsf{M}_2(T)=1$;
 
 (iii) the characteristic polynomial is
 
@@ -94,12 +94,12 @@ $$
 B^2(T)=s(2-s).
 $$
 
-*Proof.* The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det U_i=N(U_i)=1$. Hence
+*Proof.* The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det\mathsf{M}_2(U_i)=N(U_i)=1$. Hence
 
 $$
 2\operatorname{Sc}T=2\operatorname{Sc}(e_t)+2\operatorname{Sc}(\vec\Upsilon_1)+2\operatorname{Sc}(\vec\Upsilon_2)+2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=2+t,
 \qquad
-\det T=\det U_1\det U_2=1.
+\det\mathsf{M}_2(T)=\det\mathsf{M}_2(U_1)\det\mathsf{M}_2(U_2)=1.
 $$
 
 The characteristic polynomial of the $2\times2$ image is $\lambda^2-2\operatorname{Sc}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.

@@ -292,12 +292,10 @@ The mirror is a second element, and the numbers attached to it say so. For any e
 $$
 \boxed{\;\mathrm{Sc}(i\tilde Q)=i\,\mathrm{Sc}\tilde Q,
 \qquad
-\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
-\qquad
-\det(i\tilde Q)=-\det\tilde Q\;},
+\langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural}\;},
 $$
 
-since the determinant of the $2\times2$ image is the quaternionic norm and the image is multiplied by the scalar $i$. The spectrum turns a quarter turn in the complex plane,
+since the image is multiplied by the scalar $i$ and the norm is quadratic in the image. The spectrum turns a quarter turn in the complex plane,
 
 $$
 \boxed{\;\sigma(i\tilde Q)=i\,\sigma(\tilde Q)\;}.
@@ -819,7 +817,7 @@ The Wick rotation is the neighbouring map and it is not this one. It multiplies 
 | $\mathbb{M}$ | the class of mirror biquaternions, a real four-dimensional subspace, $\tilde H_\Psi=i\tilde R_\Phi$ or $\tilde Q^{*}=i\tilde Q$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec r$ | the informational element, real time and imaginary space; the general Hermitian observable, which is the sector's glyph and not a switch image |
 | $2\,\mathrm{Sc}\,\tilde Q$ | twice the scalar part, the reduced value of an element |
-| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the determinant, the interval |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, the interval |
 | $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
 | $\lambda_{\pm}$ | the eigenvalue pair, imaginary on $\mathbb{B}_{\Phi}$ and real on $\mathbb{B}_{\Psi}$ |
 | $\tilde H_\Phi/\hbar c$ | the generator of the Schrödinger equation: the mirror of the observable over one real scale, $i\tilde H_\Phi=\tilde H_\Psi$ |

@@ -138,7 +138,7 @@ $$
 
 The state space is therefore the intersection of the eight-dimensional unit ball with the region $\det\rho\ge0$, whose boundary is the cubic hypersurface $\det\rho=0$. A numerical scan confirms the structure: along the $\lambda_8$ axis the boundary is at $|\vec b|=\tfrac12$ exactly, and the states with $|\vec b|>1$ are excluded everywhere.
 
-The cubic is not cosmetic. For the qubit the determinant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
+The cubic is not cosmetic. For the qubit the invariant was a quadratic form, $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}=\lambda_+\lambda_-$, and positivity was the single inequality of a Lorentzian cone. For the qutrit the determinant is a cubic and positivity is the conjunction of a quadratic and a cubic inequality; no single quadratic form has the state space as its positivity region. This is the precise sense in which the cone picture does not generalise.
 
 ### The spin directions and the quadrupole directions
 

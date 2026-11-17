@@ -30,28 +30,28 @@ convergent for every $\tilde X$ because the algebra is finite-dimensional and th
 In the $2\times2$ image the Jacobi identity is the trace of the image,
 
 $$
-\det\exp(\tilde X)=e^{2\,\mathrm{Sc}\tilde X}.
+\det\mathsf M_2(\exp\tilde X)=e^{2\,\mathrm{Sc}\tilde X}.
 $$
 
-For a scalar-free $\tilde X$ this reads $\det\exp(\tilde X)=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.
+For a scalar-free $\tilde X$ this reads $\langle\exp\tilde X\rangle_{\natural}=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.
 
 ### Cayley–Hamilton in Two Dimensions
 
 Every $2\times2$ matrix satisfies its characteristic polynomial. For scalar-free $\tilde X$,
 
 $$
-\tilde X^{2}=-\det(\tilde X)\,e_t,
+\tilde X^{2}=-\langle\tilde X\rangle_{\natural}\,e_t,
 $$
 
 so every power of $\tilde X$ is a multiple of $e_t$ or of $\tilde X$. Summing the series term by term,
 
 $$
-\exp(\tilde X)=\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\det^{k}\tilde X}{(2k)!}\Bigr)e_t
-+\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\det^{k}\tilde X}{(2k+1)!}\Bigr)\tilde X
+\exp(\tilde X)=\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\langle\tilde X\rangle_{\natural}^{k}}{(2k)!}\Bigr)e_t
++\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\langle\tilde X\rangle_{\natural}^{k}}{(2k+1)!}\Bigr)\tilde X
 =\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X,
 $$
 
-with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.
+with $\Rho^{2}=-\langle\tilde X\rangle_{\natural}$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\langle\tilde X\rangle_{\natural}=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.
 
 ### The Verification
 
@@ -93,7 +93,7 @@ The statements of the two subsections are the statement of the single formula, r
 | $\Rho=i\vartheta$ | $i\vartheta\vec u_{\mathrm b}$, $\vec u_{\mathrm b}^{2}=-e_t$ | $\cosh\vartheta+\sinh\vartheta\,\vec u_{\mathrm b}$ | boost by $2\vartheta$ |
 | $\Rho=0$ | nilpotent | $e_t+\tilde X$ | a wall element |
 
-The third row is the degenerate case: a nonzero scalar-free nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\det\tilde X=0$.
+The third row is the degenerate case: a nonzero scalar-free nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\langle\tilde X\rangle_{\natural}=0$.
 
 ### The Half-Angle Convention
 
@@ -132,7 +132,7 @@ $$
 \tilde A=-e_t+\tilde N,\qquad \tilde N\neq0,\qquad \tilde N^{2}=0,
 $$
 
-the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.
+the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\langle\tilde A\rangle_{\natural}=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.
 
 - If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.
 - So $\tilde X$ has equal eigenvalues; being scalar-free, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.
@@ -192,7 +192,7 @@ The principal branch is the one whose eigenvalues' imaginary parts lie in $(-\pi
 The trace of the logarithm is fixed only modulo $2\pi i$:
 
 $$
-\operatorname{tr}\log\tilde Q=\log\det\tilde Q+2\pi i k .
+\operatorname{tr}\log\mathsf M_2(\tilde Q)=\log\langle\tilde Q\rangle_{\natural}+2\pi i k .
 $$
 
 That freedom is precisely what allows the full algebra's exponential to be onto while the scalar-free one is not: a logarithm with any trace can be shifted to trace zero only if the shift does not change the exponential, and the shift by $2\pi i\,\mathrm{diag}(1,0)$ changes it. The obstruction is at once a trace statement and a conjugation statement, and they are the same statement.
@@ -267,7 +267,7 @@ The exponential of a scalar-free biquaternion has the closed form $\exp(\tilde X
 | symbol | meaning |
 |---|---|
 | $\tilde X$ | a scalar-free element of the algebra |
-| $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\det\tilde X$ | the complex modulus of the generator |
+| $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\langle\tilde X\rangle_{\natural}$ | the complex modulus of the generator |
 | $\hat{\tilde X}$ | an invertible element generator, $\hat X^{2}=\pm e_t$ |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | rapidity and rotation angle, twice the arguments |
 | $\mathfrak{k}$, $\mathfrak{p}$ | rotations and boosts |
