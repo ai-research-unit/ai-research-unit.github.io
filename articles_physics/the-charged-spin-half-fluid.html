@@ -92,7 +92,7 @@ $$</p>
 <p><strong>The logarithmic derivative of the coupled word has four brackets, and the connection's whole contribution is one central element per slot.</strong> Dividing the covariant derivative of the word by the word,</p>
 <p>$$
 \tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi_{\mathrm D}
-=\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\frac{iϙ}{\hbar}A_\mu
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
@@ -116,7 +116,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12\partial_\mu\ln\rho$</td>
+<td>$\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$</td>
 <td>real central scalar</td>
 <td>none</td>
 <td>the density: nothing</td>
@@ -257,9 +257,9 @@ $$</p>
 <h2 id="the-gordon-split">The Gordon Split</h2>
 <p><strong>The chart's current is the convection part, and the magnetisation part is built from the rotor alone.</strong> The parent's current is</p>
 <p>$$
-J^t=\rho\cosh\theta_{\mathrm{rpd}},
+J^t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}},
 \qquad
-J_\eta=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
+J_\eta=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
 $$</p>
 <p>which is the density times the velocity and nothing else. The Gordon decomposition of <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a> splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,</p>
 <p>$$
@@ -270,7 +270,7 @@ $$</p>
 <p>and the second is conserved by antisymmetry alone and carries no total charge.</p>
 <p><strong>The magnetisation current has no explicit dependence on the connection.</strong> Its bilinear is built from the rotor, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and from the frame. A central multiplication cannot produce a rotor, so no term in the magnetisation current can carry $ϙ$ explicitly: <strong>the bound current is charge-blind</strong>. Its value changes when the field changes the frame through the equation, and the change is entirely indirect.</p>
 <p><strong>Why that is worth stating as a result and not as a triviality.</strong> One might expect the coupling to screen the magnetisation current, or to add to it a term proportional to the field, in the way that a polarisable medium's bound current responds to the applied field. <strong>The chart says no: there is no such term, and the only way the field reaches the magnetisation is by moving the frame.</strong> The corpus's own decomposition makes the same statement in the element form, where the spin bilinear contains no connection; the chart's version is sharper because it exhibits the rotor as the invariant the connection cannot reach.</p>
-<p><strong>What the split does to the charge conservation.</strong> The conservation of the total current splits into the conservation of the convection part and the vanishing of the divergence of the magnetisation part, the second being an identity. So <strong>the charge the fluid transports is the convection current's, and the spin's bound current adds nothing to it</strong>: the charge density is $\rho\cosh\theta_{\mathrm{rpd}}$ and no bound contribution enters it, whatever the field.</p>
+<p><strong>What the split does to the charge conservation.</strong> The conservation of the total current splits into the conservation of the convection part and the vanishing of the divergence of the magnetisation part, the second being an identity. So <strong>the charge the fluid transports is the convection current's, and the spin's bound current adds nothing to it</strong>: the charge density is $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and no bound contribution enters it, whatever the field.</p>
 <h2 id="the-force-and-not-the-torque">The Force, and Not the Torque</h2>
 <p><strong>The coupling adds a force and no torque, and the two statements have different reasons.</strong> The momentum balance of the free article is that the divergence of the stress is the divergence of the spin's antisymmetric part. With the coupling it is</p>
 <p>$$
@@ -322,7 +322,7 @@ $$</p>
 <tr>
 <td>the density</td>
 <td>$\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$</td>
-<td>$\rho$, read from the word</td>
+<td>$\rho_{\mathrm{num}}$, read from the word</td>
 <td>the scale, which is not a norm</td>
 </tr>
 <tr>

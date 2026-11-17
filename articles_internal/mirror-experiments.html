@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mirror Experiments: One Multiplication and the Object It Promised — Biquaternion Universe</title>
+  <meta name="description" content="The verdict. The corpus carried, for a time, a second object beside the element: the mirror biquaternion, built from a sector element by one…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mirror-experiments-one-multiplication-and-the-object-it-promised"><strong>Mirror Experiments: One Multiplication and the Object It Promised</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The corpus carried, for a time, a second object beside the element: the <em>mirror biquaternion</em>, built from a sector element by one multiplication, $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi$. The algebra behind it is correct and every identity of it was checked. The object answered no question the corpus asks. It is removed, with the two articles that carried it and the sites that cited them. A second pass removed what the object had brought with it: the name <em>Phy–Psy switch</em>, the catalogue rows that existed only as images of other rows, and the map that read a position as a state. What stays is the operation alone, multiplication by the central $i$, stated as a multiplication and not given a noun.</p>
+<p><strong>This note is internal and is the record of the experiment.</strong> It states the question the construction was meant to answer, the construction itself, the checks that confirmed it, the checks that undid it, the reason it was a mistake, the order in which it spread through the corpus, and the inventory of the purge. It is a working paper and not the corpus's voice.</p>
+<p><strong>The distinction the note turns on.</strong> Four things were introduced, and none of them survives. The <strong>packing</strong> is the element $(1+i)\tilde X_\Phi$; it is used nowhere except in its own construction. The <strong>naming layer</strong> — <em>mirror</em>, <em>mirror pair</em>, <em>sibling</em>, the label $\mathrm{mir}$, the class letter $\mathbb{M}$ — existed to serve the object. The <strong>name of the switch</strong> is <em>Phy–Psy switch</em>, together with the rule that a glyph carrying a sector letter takes a second row for its image; that rule is the object's premise written without the packing, and it went in the second pass. The <strong>preparation dictionary</strong> $\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ went in the same pass, because it states in the algebra's own letters that a four-position and a state are one thing written twice. What stays is the sector split, the two readings as names of the two sectors, and the multiplication itself.</p>
+<p><strong>The scope.</strong> Two articles rested on the construction: <em>Mirror Biquaternions of the Biquaternion Algebra</em>, 672 lines, and <em>Mirror Biquaternions and the Phy–Psy Switch</em>, 864 lines. Outside them the construction stood in the two conventions articles, the element entry, the introduction of the physics category, sixteen Fourier articles, the Schrödinger article and its variational companion, the tension article, the states article and <em>Why Biquaternions</em>, on $5$ lines in the two menus, and on $11$ lines in five internal notes. The count is given file by file in §<em>The Census Before the Purge</em>, the edits in §<em>The Purge, Site by Site</em>, and the second pass in §<em>The Second Pass: the Name and Its Rows</em>.</p>
+<h2 id="the-question-the-experiment-asked">The Question the Experiment Asked</h2>
+<p><strong>The algebra splits, and the split is used everywhere.</strong> $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, Hermitian part plus anti-Hermitian part, and the physical vocabulary is carried by the two parts: the informational sector holds the observables and the states, the material sector holds the positions, the momenta and the generators.</p>
+<p><strong>A physical statement usually needs both at once.</strong> The Schrödinger equation is the plain case. Its first writing names an observable, an energy in the informational sector; its second names a generator, an anti-Hermitian element of the material sector; and the two are one element up to the central $i$,</p>
+<p>$$
+\tilde H_{\Phi}=-i\tilde H_{\Psi}.
+$$</p>
+<p><strong>So the question was: is that pair one object?</strong> One equation exhibits two elements, and an element is written with one glyph. A reader who wants one glyph for the pair has to build an object that carries both halves and returns them on projection. That object was the mirror biquaternion.</p>
+<p><strong>Why it looked promising, in four points.</strong> The multiplication is by a central unit, so it can be applied to an equation without touching its coefficients. It has order four, so the orbit is finite and short. It is real-linear and invertible, so nothing is lost and no information is invented. And the corpus already used the multiplication everywhere, so the object looked like the bookkeeping of an operation that was already there.</p>
+<h2 id="the-construction">The Construction</h2>
+<h3 id="the-switch">The Switch</h3>
+<p><strong>Multiplication by the central $i$ is a real-linear bijection that exchanges the sectors.</strong> Since $i$ is central and $i^{*}=-i$,</p>
+<p>$$
+(i\tilde Q)^{*}=-i\,\tilde Q^{*},
+\qquad
+i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi},
+\qquad
+i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}.
+$$</p>
+<p><strong>It has order four and is not an involution.</strong> Two applications are minus the identity, because $i^{2}=-1$, and four are the identity. The orbit of a sector element is</p>
+<p>$$
+\tilde Q_\Phi\ \xrightarrow{\ i\ }\ i\tilde Q_\Phi\ \xrightarrow{\ i\ }\ -\tilde Q_\Phi\ \xrightarrow{\ i\ }\ -i\tilde Q_\Phi\ \xrightarrow{\ i\ }\ \tilde Q_\Phi .
+$$</p>
+<p><strong>In coordinates the multiplication moves the $i$ between the slots.</strong> A material element is written $\tilde Q_\Phi=ia+\vec u$ with $a$ real and $\vec u=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ real, and the switch gives</p>
+<p>$$
+i\tilde Q_\Phi=-a\,e_t+i\,\vec u ,
+$$</p>
+<p>so the imaginary unit leaves the time slot and appears on the three space slots, and the time coefficient changes sign. That is the whole of the operation; the corpus calls it the <strong>Phy–Psy switch</strong> and reads its two results as the material reading and the informational reading.</p>
+<h3 id="the-packing">The Packing</h3>
+<p><strong>The packing is one complex scalar, applied after the switch.</strong> The element was defined as</p>
+<p>$$
+\tilde X_{\mathrm{mir}}=(1+i)\,\tilde X_\Phi ,
+\qquad
+\tilde X_\Phi\in\mathbb{B}_{\Phi},
+$$</p>
+<p>whose coefficients are $(i-1)x'_t$ on the temporal slot and $(1+i)x_\eta$ on the three spatial ones, for a material element $i x'_t e_t+\sum_\eta x_\eta\vec e_\eta$ with real coefficients.</p>
+<p><strong>Two projections return the pair.</strong> Since $(1+i)^{-1}=\tfrac{1-i}{2}$,</p>
+<p>$$
+\tfrac{1-i}{2}\,\tilde X_{\mathrm{mir}}=\tilde X_\Phi ,
+\qquad
+\tfrac{1+i}{2}\,\tilde X_{\mathrm{mir}}=i\tilde X_\Phi=\tilde X_\Psi .
+$$</p>
+<p>The second identity is the reason the object was attractive: the pair $(\tilde X_\Phi,\tilde X_\Psi)$ of the physics is the pair of projections of one element, and the projections are built from the element and not the other way round.</p>
+<p><strong>The map is injective.</strong> $(1+i)\tilde X=0$ forces $\tilde X=0$, because the factor is a unit of $\mathbb{C}$. So the four real numbers of a material element are the four real numbers of a mirror biquaternion, and no degree of freedom is added or lost.</p>
+<h3 id="the-class-and-the-partner">The Class and the Partner</h3>
+<p><strong>The image was given a test and a name.</strong> The mirror biquaternions were defined as the elements whose Hermitian conjugate is the switch of the element,</p>
+<p>$$
+\mathbb{B}_{\mathrm{mir}}=\{\tilde Q\in\mathbb{B}\ :\ \tilde Q^{*}=i\tilde Q\},
+$$</p>
+<p>equivalently $\tilde Q_{\Psi}=i\tilde Q_{\Phi}$, equivalently $\mathbb{B}_{\mathrm{mir}}=(1+i)\mathbb{B}_{\Phi}$. The class is a real four-dimensional subspace, since the test is four real linear conditions on eight real coordinates.</p>
+<p><strong>The complement was named too.</strong> The partner class is</p>
+<p>$$
+\mathbb{B}'_{\mathrm{mir}}=\{\tilde Q\ :\ \tilde Q^{*}=-i\tilde Q\}=(1+i)\mathbb{B}_{\Psi},
+$$</p>
+<p>and the two together give a second splitting of the algebra, $\mathbb{B}=\mathbb{B}_{\mathrm{mir}}\oplus\mathbb{B}'_{\mathrm{mir}}$. In coordinates a member of the class is written</p>
+<p>$$
+\tilde Q=a(1+i)\,e_t+(1+i)\,\vec u ,
+\qquad a\in\mathbb{R},\ \ \vec u \text{ real},
+$$</p>
+<p>and a member of the partner class takes the primed coefficients $(i-1)$ on the time slot and $(1-i)$ on the space slots.</p>
+<h3 id="the-closed-forms">The Closed Forms</h3>
+<p><strong>The invariants of the class take fixed factors.</strong> For $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi$ the trace, the quaternionic norm, the Hermitian form and the spectrum all take a factor fixed by the packing:</p>
+<p>$$
+2\,\mathrm{Sc}\,\tilde X_{\mathrm{mir}}=(1+i)\,2\,\mathrm{Sc}\,\tilde X_\Phi ,
+\qquad
+\langle \tilde X_{\mathrm{mir}}\rangle_{\natural}=2i\,\langle \tilde X_\Phi\rangle_{\natural},
+$$</p>
+<p>$$
+\langle \tilde X_{\mathrm{mir}}\rangle_{*}=2\,\langle \tilde X_\Phi\rangle_{*},
+\qquad
+\mathrm{spec}\,\tilde X_{\mathrm{mir}}=(1+i)\,\mathrm{spec}\,\tilde X_\Phi .
+$$</p>
+<p>The Hermitian form is the real $2(a^{2}+\lvert\vec u\rvert^{2})$, so the class is definite on that form, and the quaternionic norm vanishes on $\lvert\vec u\rvert=\lvert a\rvert$, so the class meets the cone.</p>
+<p><strong>The product was written in closed form.</strong> For two members, $\tilde X\tilde Y=(1+i)^{2}\tilde X_\Phi\tilde Y_\Phi=2i\,\tilde X_\Phi\tilde Y_\Phi$, and a product is a member exactly when the two material factors twisted-commute,</p>
+<p>$$
+\tilde X_\Phi\tilde Y_\Phi=i\,\tilde Y_\Phi\tilde X_\Phi .
+$$</p>
+<p><strong>The decomposition was the strongest result.</strong> Every element is one member plus $i$ times a member,</p>
+<p>$$
+\tilde Q=\tilde Q_{\mathrm{mir}}+i\tilde Q'_{\mathrm{mir}},
+\qquad
+\tilde Q_{\mathrm{mir}}=\tfrac{1+i}{2}\bigl(\tilde Q_\Phi-i\tilde Q_\Psi\bigr),
+\qquad
+\tilde Q'_{\mathrm{mir}}=-\tfrac{1+i}{2}\bigl(\tilde Q_\Phi+i\tilde Q_\Psi\bigr),
+$$</p>
+<p>and the pair is unique. Both pieces pass the membership test, and this is the only place in the corpus where two mirror objects are used at once.</p>
+<h2 id="what-the-checks-confirmed">What the Checks Confirmed</h2>
+<p><strong>Seven checks, on random elements, in exact complex arithmetic.</strong> The script was three pages and is not kept; the numbers are.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>what it tests</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the three membership tests</td>
+<td>$\tilde Q^{*}=i\tilde Q$, $\tilde Q_\Psi=i\tilde Q_\Phi$, and the coefficient test $\mathrm{Re}\,Q_t=-\mathrm{Im}\,Q_t$, $\mathrm{Re}\,Q_\eta=\mathrm{Im}\,Q_\eta$</td>
+<td>agree on $100$ of $100$ elements</td>
+</tr>
+<tr>
+<td>real-linearity</td>
+<td>sums and real multiples of members are members</td>
+<td>$20$ of $20$</td>
+</tr>
+<tr>
+<td>the product formula</td>
+<td>$\tilde X\tilde Y=2i\tilde X_\Phi\tilde Y_\Phi$</td>
+<td>$100$ of $100$ pairs</td>
+</tr>
+<tr>
+<td>the product criterion</td>
+<td>membership of a product equivalent to twisted commutation</td>
+<td>$100$ of $100$ pairs</td>
+</tr>
+<tr>
+<td>products in the class</td>
+<td>no nonzero product of two members is a member</td>
+<td>$0$ members in $100$ products</td>
+</tr>
+<tr>
+<td>the decomposition</td>
+<td>both pieces in the class and the sum exact</td>
+<td>$50$ of $50$ elements</td>
+</tr>
+<tr>
+<td>the invariants</td>
+<td>trace, norm, form and spectrum take the factors $1+i$, $2i$, $2$, $1+i$</td>
+<td>$20$ of $20$ sector elements</td>
+</tr>
+<tr>
+<td>injectivity</td>
+<td>$(1+i)\tilde X=0$ only for $\tilde X=0$</td>
+<td>$20$ of $20$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The witness was recomputed.</strong> $((1+i)\vec e_x)((1+i)\vec e_y)=2i\,\vec e_z$, which is pure imaginary and fails the membership test, so the class is not closed under multiplication.</p>
+<p><strong>One trap was found in the checking and it is worth recording.</strong> A first version of the real-linearity check multiplied the material part by $i$ alone and scored $0$ of $20$. The reason is that $i\tilde Q_\Phi$ is Hermitian, and a Hermitian element is in the <em>other</em> sector and not in the class. The class is $(1+i)\mathbb{B}_\Phi$, not $i\mathbb{B}_\Phi$. The error is a one-word one and it is the shape of the whole experiment: the packing factor is not the switch, and the two look alike in every formula.</p>
+<h2 id="what-the-checks-refuted">What the Checks Refuted</h2>
+<p><strong>The class is not a subalgebra, and it is not a real form.</strong> A product of two members is a member only when it vanishes, so the class is closed under no multiplication the algebra has. It is not a real form either: a real form is a real subalgebra whose complexification is the algebra, and the class is not closed under the product at all. Its commutator is not zero but $4i\,\vec e_z$ on the witness above, so it is not even a Lie subalgebra. Only the quaternionic conjugation ${}^{\natural}$ preserves the class; $\bar{\cdot}$ and ${}^{*}$ do not.</p>
+<p><strong>The switch does not preserve the class.</strong> Multiplication by $i$ carries a member to a member of the partner class, so the orbit of a member under the switch alternates between the class and its partner and returns after four steps. The class is therefore not stable under the operation that defines it.</p>
+<p><strong>The norm vanishes inside the class.</strong> On $\lvert\vec u\rvert=\lvert a\rvert$ the quaternionic norm of a member is zero while the element is nonzero, so the class carries zero divisors in a family and the norm cannot serve as a mass there. The Hermitian form stays positive, so the class is definite only on that form.</p>
+<h2 id="why-it-was-a-mistake">Why It Was a Mistake</h2>
+<p><strong>First, nothing needs it.</strong> The audit asked the only question that decides the fate of a construction: where is it used? The corpus uses the switch in hundreds of lines and uses the mirror biquaternion in one: its own decomposition. A construction whose single use is the statement that it exists is not carrying any weight.</p>
+<p><strong>Second, the packing is a basis change and not an object.</strong> The splitting $\mathbb{B}=\mathbb{B}_{\mathrm{mir}}\oplus\mathbb{B}'_{\mathrm{mir}}$ is the sector splitting written in another real basis,</p>
+<p>$$
+\mathbb{B}_{\mathrm{mir}}=(1+i)\mathbb{B}_{\Phi},
+\qquad
+\mathbb{B}'_{\mathrm{mir}}=(1-i)\mathbb{B}_{\Phi},
+$$</p>
+<p>because $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$. The two-member decomposition of an element is therefore the two-sector decomposition of the same element, with the factor $(1+i)$ on each piece and no new content. The class is the material sector conjugately rescaled.</p>
+<p><strong>Third, the factor is complex and the corpus reads real.</strong> $(1+i)$ has modulus $\sqrt2$ and argument $\pi/4$. Every invariant of a member carries the modulus or the phase, so a reader who wants the physics divides it out again. The corpus's own rule is that the real reading is the reading of an element of a sector, and the packing inserts a complex scalar between the element and its reading for no statement that the sector split does not already make.</p>
+<p><strong>Fourth, it cost a naming layer.</strong> Four names were added for one operation: <em>mirror</em> for the image $i\tilde X_\Phi$, <em>mirror pair</em> for the two rows of the catalogue, <em>sibling</em> for the partner, and the label $\mathrm{mir}$ with the class letter $\mathbb{M}$. Each name had to be policed in the conventions, taught in the element entry and cited in fourteen Fourier articles. The corpus already had the vocabulary: the switch, the material reading, the informational reading, and the sector letter of a glyph. The experiment added a fifth name for the fourth thing.</p>
+<p><strong>Fifth, the object promised a unity the physics does not have.</strong> The pair $(\tilde H_\Psi,\tilde H_\Phi)$ is one element read two ways, and that is already the content of the sector split. Packing it into one glyph suggests that the physics carries one object where it carries one object and two readings, and the suggestion is what the removal restores.</p>
+<h2 id="the-process-in-order">The Process, in Order</h2>
+<p><strong>The mathematics came first.</strong> <em>Mirror Biquaternions of the Biquaternion Algebra</em> was written as a mathematics article, 672 lines, with the construction, the class, the product criterion, the preserves-and-fails table, the invariants on four forms, a proof that the decomposition is unique, and a worked example on a momentum. In style it was an ordinary mathematics article of the corpus: statement, proof, example, boundary.</p>
+<p><strong>The physics followed and grew larger than the mathematics.</strong> <em>Mirror Biquaternions and the Phy–Psy Switch</em> was written as a companion entry of the physics category, 864 lines, with the mirror pair of every catalogued glyph, the class and its test, the Wick comparison, the list of what the class is not, and the instances of the switch in the equations of the series. It was longer than the article it companioned.</p>
+<p><strong>The propagation was the ordinary one.</strong> The physics conventions gained the $\mathrm{mir}$ label and the mirror rows; the element entry gained a subsection in the results and a reading, I.1.h; the sixteen Fourier articles gained a citation <em>for the sector bookkeeping</em>; the menus gained two entries; the introductions gained a paragraph each describing the companion. The construction was cited where the sector split was used, and the sector split is used everywhere, so the citation count grew faster than the object's content.</p>
+<p><strong>The audit came last and asked one question.</strong> Where does the corpus use two mirror objects at once? The answer is one site, the unique decomposition in the mathematics article, and the decomposition itself adds nothing to the sector split. The construction had no other load-bearing use in $2\,460$ mathematics articles and $609$ physics articles.</p>
+<p><strong>The decision followed the audit.</strong> The object, its class, its partner class, its label and its naming layer are removed; the switch and its name stay. The two articles are deleted, the citations are redirected to the article that owns the switch, and the catalogue rows that existed only to be mirrors are described as the informational readings of their glyphs.</p>
+<h2 id="the-census-before-the-purge">The Census Before the Purge</h2>
+<p><strong>The construct sites, counted by line, before any edit.</strong> A construct site is a line carrying the class, the packing, the label, the pair vocabulary or a citation of either article. Ordinary English uses of the word <em>mirror</em> are not counted and are listed in §<em>The Residue</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>lines</th>
+<th>what it carried</th>
+<th>action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.md</code></td>
+<td>$33$</td>
+<td>the construction, the class, the decomposition</td>
+<td>deleted</td>
+</tr>
+<tr>
+<td><code>articles_physics/mirror-biquaternions-and-the-phy-psy-switch.md</code></td>
+<td>$63$</td>
+<td>the switch, the pair, the catalogue, the Wick comparison</td>
+<td>deleted</td>
+</tr>
+<tr>
+<td><code>articles_physics/algebra-and-element-conventions.md</code></td>
+<td>$4$</td>
+<td>the pointer to the companion</td>
+<td>one sentence rewritten</td>
+</tr>
+<tr>
+<td><code>articles_physics/physics-units-and-common-elements-conventions.md</code></td>
+<td>$4$</td>
+<td>the mirror rows, the $\mathrm{mir}$ label, the citation</td>
+<td>two paragraphs rewritten, one deleted, one bullet deleted</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-element-the-six-subspaces-and-the-two-ledgers.md</code></td>
+<td>$7$</td>
+<td>the source row, the subsection, the reading I.1.h, the notation row</td>
+<td>six edits</td>
+</tr>
+<tr>
+<td><code>articles_physics/introduction-to-the-biquaternion-algebra-physical-interpretations.md</code></td>
+<td>$3$</td>
+<td>the companion in the table, the corpus list, the archive paragraph</td>
+<td>three edits</td>
+</tr>
+<tr>
+<td>sixteen Fourier articles</td>
+<td>$1$ or $2$ each</td>
+<td>the citation <em>for the sector bookkeeping</em></td>
+<td>citation dropped</td>
+</tr>
+<tr>
+<td><code>articles_physics/why-biquaternions.md</code></td>
+<td>$2$</td>
+<td>the mirror pair and a bullet</td>
+<td>two edits</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-schrodinger-equation-in-biquaternionic-form.md</code></td>
+<td>$1$</td>
+<td>the pair attributed to the companion</td>
+<td>one edit</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-variational-principle-and-the-schrodinger-equation-in-biquaternionic-form.md</code></td>
+<td>$1$</td>
+<td>a bullet</td>
+<td>deleted</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-quantum-relativity-tension-and-the-biquaternion-framework.md</code></td>
+<td>$1$</td>
+<td>a dangling citation of a third title</td>
+<td>one edit</td>
+</tr>
+<tr>
+<td><code>articles_physics/states-observables-and-the-born-weight.md</code></td>
+<td>$3$</td>
+<td>the mirror map as a name for the preparation dictionary</td>
+<td>heading and two sentences</td>
+</tr>
+<tr>
+<td><code>maths.md</code>, <code>physics.md</code></td>
+<td>$2$, $3$</td>
+<td>the entries, their comments, one heading</td>
+<td>deleted, heading renamed</td>
+</tr>
+<tr>
+<td>five internal notes</td>
+<td>$11$</td>
+<td>rows of past censuses</td>
+<td>rows removed or unlinked</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-purge-site-by-site">The Purge, Site by Site</h2>
+<p><strong>The two articles are deleted.</strong> Nothing in the corpus references them after the edits below.</p>
+<p><strong>The menus lose their entries and their comments.</strong> The mathematics menu loses the anchor and the comment line that described the construction; the physics menu loses the anchor and its comment, and the section heading <em>The Element, the Mirror and the Matrix Images</em> becomes <em>The Element, the Two Ledgers and the Matrix Images</em>, because the heading named the object.</p>
+<p><strong>The citations are dropped, not redirected to a stub.</strong> Sixteen Fourier articles cited the companion <em>for the sector bookkeeping</em>. The sector split is stated in <em>Algebra and Element Conventions</em>, which those articles already cite in the same sentence, so the clause is removed and no new citation is added. The same rule applies to the Schrödinger article and to the tension article, whose citation named a third title that never existed.</p>
+<p><strong>The naming layer is removed and not replaced by an equivalent.</strong> The paragraph that defined a <em>mirror</em> as the switch of a glyph first became a paragraph that catalogued each glyph's image in the other sector; that second version was the same claim in other words, and the second pass removed it. The catalogue now writes each glyph once: a sector letter names the sector of its element, and no row is the image of another row. The rows $\tilde P_\Psi$, $\tilde K_\Psi$, $\tilde J_\Psi$, $\tilde A_\Psi$ and $\tilde\Xi_\Psi$ are deleted. The paragraph that defined the label $\mathrm{mir}$ is deleted, and no glyph in the corpus carries that label.</p>
+<p><strong>The element entry loses the construction and keeps the switch.</strong> The source-table row for the mathematics article is deleted, so the entry reads seven mathematics articles and its introduction says seven. The subsection <em>The Mirror</em>, with the orbit and the class, is deleted: the orbit is stated in <em>Algebra and Element Conventions</em> and the class no longer exists. The reading I.1.h is deleted and the readings after it are renumbered, I.1.i to I.1.m becoming I.1.h to I.1.l. The notation row $\tilde Q^{*}=i\tilde Q$ is deleted, the summary bullet lists seven objects instead of eight, and the further-reading paragraph that named the companion as the source of the mirror and the switch names the conventions article instead.</p>
+<p><strong>The introduction of the physics category loses the companion from its counts of named objects.</strong> Three companions sit beside an entry instead of four, five entries depart from the four-part form instead of six, three articles are taken whole instead of four, and the table row for I.1 names the entry alone. The aggregate counts of that article — the one hundred and fifty mathematics articles, the thirty-three physics articles, the eight articles of the algebra section — were already stale before the purge, since the mathematics menu lists one hundred and sixty links in the category and ten in its algebra section, and they are left as they stand rather than replaced by new numbers that no one has recomputed.</p>
+<p><strong>The preparation dictionary survived the first pass and not the second.</strong> It was renamed once, from the mirror map to the switch of the material sector. It is now deleted: the map $\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ read a four-position as a state, which is the mirror biquaternion's claim without a new letter, and its factor two and its sign were conventions of that claim. The section of the states article is now <em>The State of a Particle of Definite Velocity</em>, and it states what is true without the map: the state element is $\tfrac12(e_t+i\vec s_\Psi)$, the Bloch vector of a particle of velocity $\vec v$ is $\vec s_\Psi=-\vec v/c$, and the velocity is read back from the state as $\tilde V_\Phi/c=i\,e_t-\vec s_\Psi$.</p>
+<p><strong>The internal records lose their links.</strong> <em>Signature Migration</em> carried a row for the physics article in a table of a past census, and the two copies of <em>The Physics Category Derived from the Mathematics Menu</em> carried the maths article in their lists of sources. The rows are removed, since a dead link in a record of a past census is worse than a missing row.</p>
+<h2 id="the-second-pass-the-name-and-its-rows">The Second Pass: the Name and Its Rows</h2>
+<p><strong>The name went after the object, because the name was the object's grammar.</strong> <em>Phy–Psy switch</em> named a multiplication that one display states, $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$. The name added an etymology and a doctrine, and the doctrine was that a glyph with a sector letter exists twice, once per sector, the second copy being the first multiplied by $\pm i$. That is the mirror biquaternion's premise. The name is removed from the corpus, and the multiplication is stated as a multiplication.</p>
+<p><strong>Six files carried the name.</strong> <em>Algebra and Element Conventions</em> named it in its section heading, in its etymology sentence, in the paragraph on the direction of the multiplication, in its summary and in its notation table. <em>Physics Units and Common Elements Conventions</em> used it in the paragraph that required a second row. <em>The Schrödinger Equation in Biquaternionic Form</em> used it for the factor $-i$ and for the pair $\tilde H_\Psi$, $\tilde H_\Phi$. <em>The Quantum Relativity Tension</em> used it in its cross-reference. The two copies of <em>The Physics Category Derived from the Mathematics Menu</em> used it in a list of sources. Every site is rewritten or deleted.</p>
+<p><strong>The catalogue rows of the informational sector are gone.</strong> The conventions article listed $\tilde P_\Psi$, $\tilde K_\Psi$, $\tilde J_\Psi$, $\tilde A_\Psi$ and $\tilde\Xi_\Psi$ as the images of five material rows. The five rows are deleted, together with the summary row that collected the four of them, and the sentence that introduced the rule <em>an image is a second row</em> is replaced by a rule about writing: <strong>a glyph is written once</strong>. The field $\tilde\Xi$ keeps one row, for its anti-Hermitian part; its Hermitian part is written as the projection $\tfrac12(\tilde\Xi+\tilde\Xi^{*})$ and takes no glyph. The row for $\tilde H_\Phi$ is rewritten: its role is the generator of the Schrödinger equation, $-i\tilde H_\Psi$, and it is no longer described as the image of the observable.</p>
+<p><strong>The identity between a position and a state is gone with the rows.</strong> The inverse dictionary $\tilde R_\Phi=2i\tilde H_\Psi$ and the forward form $\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$ are deleted from the states article, from the tension article, from <em>The Two Sectors Split and the Four Bridges</em> and from the physics menu's comment. What replaces them is the statement of the velocity alone: a particle of velocity $\vec v$ has the state of Bloch vector $-\vec v/c$, the radius of the ball is $\beta$, and the linear entropy is $\tfrac12\gamma^{-2}$. The claims list of the states article, the boundary paragraph, the reading I.12.y and the notation table are rewritten to match.</p>
+<p><strong>Two smaller sites lost the same vocabulary.</strong> <em>The Null Cone</em> called the Hermitian four-vector the <em>informational representative</em> and the anti-Hermitian one the <em>material representative</em>; the two are now the two forms of one element, differing by the multiplication by $i$. The Peirce table of <em>Idempotents, Ideals and Observables</em> called the corner $\mathbb{B}_{-+}$ <em>the mirror of the previous one</em>, which is now stated as the corner's own indices.</p>
+<h2 id="what-survives-and-why">What Survives, and Why</h2>
+<p><strong>The operation survives without its name.</strong> Multiplication by $i$ is a real-linear bijection that exchanges the sectors, $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, of order four, and the identity $\tilde H_\Phi=-i\tilde H_\Psi$ is used by every equation of the series that passes between an observable and a generator. It is stated in <em>Algebra and Element Conventions</em>, §<em>Multiplication by the central $i$ exchanges the sectors</em>. It needs no noun, and after the second pass it has none.</p>
+<p><strong>The sector split survives, and every element is written once.</strong> A glyph carries a sector subscript when its element lies in a sector, and the same four real numbers are not catalogued a second time under the other letter. The material reading is the reading of an element of $\mathbb{B}_\Phi$ and the informational reading the reading of an element of $\mathbb{B}_\Psi$: the two names describe one element and the sector it lies in, and they no longer come with a second row, a factor or a map.</p>
+<p><strong>The state of a definite velocity survives as a statement about one element.</strong> The state element is $\tfrac12(e_t+i\vec s_\Psi)$ with $\vec s_\Psi=-\vec v/c$, its radius is $\beta$, and its linear entropy is $\tfrac12\gamma^{-2}$. No four-position enters it, and no factor carries one element into the other.</p>
+<p><strong>The Wick comparison survives in its own article.</strong> The switch was compared with the Wick coefficient map $W$, and the comparison is a statement about two maps, not about the class. It is in <em>Interpretation of the Wick Rotation in the Biquaternion Universe</em>, and it does not need the packing.</p>
+<p><strong>What does not survive is the claim that a pair of sector elements is one element.</strong> The pair is one element and two readings; a packing that adds a complex scalar and calls the result an object adds a name and no statement.</p>
+<h2 id="the-residue">The Residue</h2>
+<p><strong>The word <em>mirror</em> stays in the corpus in five senses that have nothing to do with the experiment</strong>, and they are listed here so that a later reader does not mistake them for what the purge missed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sense</th>
+<th>where it lives</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the reflection of a vector subspace</td>
+<td><em>The Rotations, the Boosts and the Groups</em></td>
+<td>the mirror $\rho_v=-v\tilde Xv^{\natural}$</td>
+</tr>
+<tr>
+<td>the conjugate partner of a pole, or of a sheet</td>
+<td><em>The Unstable State and the Complex Energy Pole</em></td>
+<td>the advanced mirror, the mirror sheet</td>
+</tr>
+<tr>
+<td>the idempotent of the opposite chirality</td>
+<td><em>The Massless Fluid: the One Wave Where Both Charts Fail</em></td>
+<td>the mirror projector $\tilde\Pi_{-}$</td>
+</tr>
+<tr>
+<td>a counterpart entry or a counterpart statement</td>
+<td><em>States, Observables and the Born Weight</em>, others</td>
+<td>the mirror of the previous entry</td>
+</tr>
+<tr>
+<td>mirror symmetry, mirror pairs of manifolds</td>
+<td>the mathematics corpus</td>
+<td>mirror pairs in <em>Calabi–Yau Manifolds</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One residue is deliberate and the rest is ordinary English.</strong> The reflections of <em>The Rotations, the Boosts and the Groups</em> use <em>mirror</em> for the map $\rho_v$, which is a different object with a different letter and a different section; it stays. The word <em>sibling</em> stays in thirty-four physics articles, where it names a companion article and never the partner class; the two uses that meant the partner class were in the deleted article and in the physics conventions, and both are gone.</p>
+<h2 id="the-lesson">The Lesson</h2>
+<p><strong>A construction earns its place by its census, and the census is cheap.</strong> One search over the corpus answers the question that a page of identities does not: where is the object load-bearing? The mirror biquaternion answered one site, and the site was its own existence. The search took minutes and should have preceded the first article.</p>
+<p><strong>Correctness is not warrant.</strong> Every identity of the class was true. The trace factor, the norm factor, the product criterion, the unique decomposition: all true, all checked, all useless. An object can be a theorem and still be a mistake.</p>
+<p><strong>A new name for an old operation is a debt.</strong> The experiment added <em>mirror</em>, <em>mirror pair</em>, <em>sibling</em> and $\mathrm{mir}$ to a corpus that already said <em>switch</em>, <em>material reading</em>, <em>informational reading</em> and <em>sector letter</em>. Every later reader pays the debt, and the operation did not change.</p>
+<p><strong>When a construction needs a complex scalar to exist, ask what the sector split already says.</strong> The factor $(1+i)$ is what made the object look like more than a sector: it put the $i$ inside the element instead of between the element and its reading. The sector split already carries that $i$, as the switch, and it carries it once.</p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>The experiment introduced the mirror biquaternion, $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi$, the class $\mathbb{B}_{\mathrm{mir}}=\{\tilde Q:\tilde Q^{*}=i\tilde Q\}$ and the partner class $\mathbb{B}'_{\mathrm{mir}}=(1+i)\mathbb{B}_\Psi$.</li>
+<li>The construction is correct: the class is a real four-dimensional subspace, the projections return the pair, the invariants take the factors $1+i$, $2i$, $2$ and $1+i$, and every element is one member plus $i$ times a member, uniquely.</li>
+<li>The construction is idle: the unique decomposition is its only use in the whole corpus, and that decomposition is the sector split in the real basis $(1+i)\mathbb{B}_\Phi\oplus(1-i)\mathbb{B}_\Phi$.</li>
+<li>The class is not a subalgebra, not a Lie subalgebra, not a real form, and not stable under the switch; the norm vanishes on $\lvert\vec u\rvert=\lvert a\rvert$ inside it.</li>
+<li>Four things were introduced, and none is kept: the packing, the naming layer, the name of the switch with its second-row rule, and the preparation dictionary.</li>
+<li>Two articles, the physics articles listed in the census table, $5$ menu lines and $11$ internal lines carried the construction; all are removed or rewritten.</li>
+<li>What remains is the sector split, the multiplication by $i$ stated without a name, the two readings as names of the two sectors, and the statement of the state of a definite velocity.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde Q_\Phi$, $\tilde Q_\Psi$</td>
+<td>the material and informational parts, anti-Hermitian and Hermitian</td>
+</tr>
+<tr>
+<td>$i\,\cdot$</td>
+<td>multiplication by the central $i$, $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, of order four; kept, without a name</td>
+</tr>
+<tr>
+<td>$(1+i)\tilde X_\Phi$</td>
+<td>the packing that defined a mirror biquaternion; removed</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{mir}}=\{\tilde Q:\tilde Q^{*}=i\tilde Q\}$</td>
+<td>the class of mirror biquaternions, $(1+i)\mathbb{B}_\Phi$; removed</td>
+</tr>
+<tr>
+<td>$\mathbb{B}'_{\mathrm{mir}}=(1+i)\mathbb{B}_\Psi$</td>
+<td>the partner class, $\{\tilde Q:\tilde Q^{*}=-i\tilde Q\}$; removed</td>
+</tr>
+<tr>
+<td>$\mathrm{mir}$</td>
+<td>the label of the packed element; removed from the catalogue</td>
+</tr>
+<tr>
+<td><em>mirror pair</em>, <em>sibling</em></td>
+<td>the vocabulary of the pair; removed</td>
+</tr>
+<tr>
+<td>$\tilde P_\Psi$, $\tilde K_\Psi$, $\tilde J_\Psi$, $\tilde A_\Psi$, $\tilde\Xi_\Psi$</td>
+<td>the catalogue rows that existed as the images of material rows; removed</td>
+</tr>
+<tr>
+<td>$\tilde H_\Psi=-\tfrac{i}{2}\tilde R_\Phi$</td>
+<td>the preparation dictionary, a four-position read as a state; removed</td>
+</tr>
+<tr>
+<td><em>Phy–Psy switch</em></td>
+<td>the name of the multiplication; removed</td>
+</tr>
+<tr>
+<td><em>the two readings</em></td>
+<td>the surviving vocabulary: the material reading of $\mathbb{B}_\Phi$ and the informational reading of $\mathbb{B}_\Psi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the multiplication by $i$, the two readings and the sector letter of a glyph: the text that survives the purge.</li>
+<li><a href="../articles_physics/the-element-the-six-subspaces-and-the-two-ledgers.html">The Element, the Six Subspaces and the Two Ledgers</a>, for the split, the six subspaces and the reading on the generator now numbered I.1.g.</li>
+<li><a href="../articles_physics/physics-units-and-common-elements-conventions.html">Physics Units and Common Elements Conventions</a>, for the catalogue in which each glyph is written once.</li>
+<li><a href="../articles_physics/states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for the state of a particle of definite velocity, which replaced the preparation dictionary.</li>
+<li><a href="../articles_physics/interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html">Interpretation of the Wick Rotation in the Biquaternion Universe</a>, for the comparison of the switch with the Wick coefficient map, which never needed the packing.</li>
+<li><a href="signature-migration.html">Signature Migration</a>, internal, for the pattern of an internal note that records a retirement: the census, the objection, the inventory, the passes, the residue.</li>
+<li><a href="conjugation-migration.html">Conjugation Migration</a>, internal, for a second note of the same kind.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -292,7 +292,7 @@ $$</p>
 <p><strong>The invariance characterises the norm up to a scale.</strong> The algebra is an irreducible module for the action of $U(\mathbb{B})\times U(\mathbb{B})$ by left and right multiplication, so any positive definite form invariant under that action is a scalar multiple of the trace form. This is Schur's lemma applied to a compact group, and it is the reason the entry can say <em>the</em> amplitude rather than <em>an</em> amplitude.</p>
 <p><strong>The matrix picture makes the same statement in one line.</strong> In $M_2(\mathbb{C})$ the Hermitian norm is half the squared Hilbert–Schmidt norm,</p>
 <p>$$
-2H(\tilde Q)=\operatorname{Tr}\bigl(\rho(\tilde Q)\rho(\tilde Q)^{*}\bigr)=\bigl\lVert\rho(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
+2H(\tilde Q)=\operatorname{Tr}\bigl(\Delta_{\mathrm{rep}}(\tilde Q)\Delta_{\mathrm{rep}}(\tilde Q)^{*}\bigr)=\bigl\lVert\Delta_{\mathrm{rep}}(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
 $$</p>
 <p>and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the reduction convention, $2\,\mathrm{Sc}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.</p>
 <p><strong>The invariance is what makes the decomposition canonical, and the two facts are the same fact.</strong> A pair $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ in the cone and $\tilde Q_0$ unitary is a decomposition of the double coset $U(\mathbb{B})\backslash\mathbb{B}/U(\mathbb{B})$ into a positive representative and a group element. The amplitude is the positive representative and the frame is the group element. Changing the frame on the right moves the group element; changing the frame on the left conjugates the representative.</p>
@@ -475,7 +475,7 @@ $$</p>
 \quad\Longrightarrow\quad
 H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)\;}
 $$</p>
-<p><strong>The proof is the Hilbert–Schmidt inequality and the factor $2$ of the trace convention.</strong> In the matrix picture $2H=\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$, so submultiplicativity of the Hilbert–Schmidt norm gives $2H(\tilde Q_1\tilde Q_2)\le4H(\tilde Q_1)H(\tilde Q_2)$.</p>
+<p><strong>The proof is the Hilbert–Schmidt inequality and the factor $2$ of the trace convention.</strong> In the matrix picture $2H=\lVert\Delta_{\mathrm{rep}}(\tilde Q)\rVert_{\mathrm{HS}}^{2}$, so submultiplicativity of the Hilbert–Schmidt norm gives $2H(\tilde Q_1\tilde Q_2)\le4H(\tilde Q_1)H(\tilde Q_2)$.</p>
 <p><strong>The constant is attained, and the witness is short.</strong> Take</p>
 <p>$$
 \tilde Q_1=(-1+i)\vec e_x+(-1-i)\vec e_y,\qquad
@@ -708,7 +708,7 @@ $$</p>
 </tr>
 <tr>
 <td>$H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$</td>
-<td>the weight, the positive definite form, $\tfrac12\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$</td>
+<td>the weight, the positive definite form, $\tfrac12\lVert\Delta_{\mathrm{rep}}(\tilde Q)\rVert_{\mathrm{HS}}^{2}$</td>
 </tr>
 <tr>
 <td>$\lvert N(\tilde Q)\rvert$</td>
@@ -727,7 +727,7 @@ $$</p>
 <td>the $*$-unitary group, the group of H-isometries, real dimension four</td>
 </tr>
 <tr>
-<td>$2H=\lVert\rho\rVert_{\mathrm{HS}}^{2}$</td>
+<td>$2H=\lVert\Delta_{\mathrm{rep}}\rVert_{\mathrm{HS}}^{2}$</td>
 <td>the matrix picture of the weight and the source of the constant two</td>
 </tr>
 </tbody>

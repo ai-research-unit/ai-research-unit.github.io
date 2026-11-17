@@ -91,7 +91,7 @@ $$</p>
 <p><strong>The constant setting throughout.</strong> As in the polar parent, the Hamiltonian is a constant element, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers, so that the equation is an ordinary differential equation in $t'$ and its solution is the closed form $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})$. The operator setting appears only in the central case, where the action is Madelung's and the operator is the Laplacian; it is stated there and not re-derived. No result is transferred between the two settings.</p>
 <p>The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamiltonian times the interval over $\hbar$. The exponent $-i\tilde H_\Psi t'/\hbar$ is anti-Hermitian, not the Hamiltonian, and that is what makes it unitary: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.</p>
 <p>The formalism is that of <em>Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</em>, and the action principle is that of <em>The Action Principle and the Non-Quantum Limit in Biquaternionic Form</em>; this article applies the principle to the Schrödinger equation in its polar form.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.</p>
 <p><strong>Two notational choices, made once.</strong> First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by</p>
 <p>$$
 \partial_{t'}\tilde u_{\mathrm r}\,\tilde u_{\mathrm r}^{-1}=\tfrac12\vec\Omega,
@@ -127,10 +127,10 @@ $$</p>
 <li>$\varrho^{2}\,\mathrm{Sc}(\tilde U\partial_{t'}\tilde U)$. With $\tilde U=c+is\vec u_{\mathrm b}$, $c=\cosh(\theta_{\mathrm{rpd}}/2)$ and $s=\sinh(\theta_{\mathrm{rpd}}/2)$, the product $\tilde U\partial_{t'}\tilde U$ has scalar part $\dot\theta_{\mathrm{rpd}}\,cs=\tfrac12\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}$. The term is real.</li>
 <li>$\varrho^{2}\,\mathrm{Sc}(\tilde U^{2}\partial_{t'}\tilde u\,\tilde u^{-1})$. The last factor is a real pure quaternion, $\tfrac12\vec\Omega$. Of the two pieces of $\tilde U^{2}$, the central $\cosh\theta_{\mathrm{rpd}}$ has no scalar part against a real pure quaternion, and the Hermitian $i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ contributes $i\sinh\theta_{\mathrm{rpd}}\,\mathrm{Sc}(\vec u_{\mathrm b}\tfrac12\vec\Omega)=-\tfrac{i}{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$. The term is imaginary.</li>
 </ol>
-<p>Adding, and using $\dot\rho=4\bigl(\varrho\dot \varrho\cosh\theta_{\mathrm{rpd}}+\tfrac12 \varrho^{2}\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}\bigr)$ for the density $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$,</p>
+<p>Adding, and using $\dot\rho_{\mathrm{num}}=4\bigl(\varrho\dot \varrho\cosh\theta_{\mathrm{rpd}}+\tfrac12 \varrho^{2}\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}\bigr)$ for the density $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$,</p>
 <p>$$
 \mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi\bigr)
-=\tfrac14\dot\rho
+=\tfrac14\dot\rho_{\mathrm{num}}
 +i\,\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\tfrac12\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})\Bigr).
 $$</p>
 <p>The real part is a total derivative, exactly as in the element form, and the imaginary part is the whole of the kinetic Lagrangian. The antisymmetrised kinetic term of the action is $-\hbar$ times the imaginary part, that is,</p>
@@ -414,7 +414,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde H_\Phi=-i\tilde H_\Psi$</td>
-<td>The switch image; the generator, over $\hbar$</td>
+<td>$i$ times the observable; the generator, over $\hbar$</td>
 </tr>
 <tr>
 <td>$\varrho>0$</td>
@@ -469,7 +469,7 @@ $$</p>
 <td>The polar Lagrangian</td>
 </tr>
 <tr>
-<td>$\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+<td>$\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$</td>
 <td>The density, $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$</td>
 </tr>
 <tr>

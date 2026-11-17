@@ -74,7 +74,7 @@
 <p>This article computes the polar decomposition of eight reduced biquaternions, one after another. It is the computational companion of <em>Polar Decomposition of Reduced Biquaternions</em>. The decomposition, its existence and uniqueness in the principal diamond, and the two factors are established there and in <em>Reduced Biquaternion Elementary Functions</em>; the proofs are not repeated.</p>
 <p>Each case is read from the two complex coordinates $Q_{\blacktriangle}$ and $Q_{\blacktriangledown}$. The modulus, the boost and the two phases are computed from them by the formulas of §<em>The Method</em>, and the word is checked against the reconstruction</p>
 <p>$$
-\breve Q=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}).
+\breve Q=\varrho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}).
 $$</p>
 <p>The eight cases cover the generic element, the complex scalar, the two pure phases, the boundary of the principal diamond, the hyperbolic line, the central discrete element and the zero divisor.</p>
 <div class="table-scroll"><table>
@@ -133,7 +133,7 @@ C_+=Q_{\blacktriangle}+Q_{\blacktriangledown},
 \qquad
 C_-=Q_{\blacktriangle}-Q_{\blacktriangledown}.
 $$</p>
-<p>Their product $C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is written in full throughout. The modulus is $\rho>0$, the boost is $\theta_{\mathrm{rpd}}\in\mathbb{R}$, and the phases $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are taken in the half-open principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$, with the boundary half-open. Errors are Euclidean in the four real coefficients and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
+<p>Their product $C_+C_-=Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2$ is written in full throughout. The modulus is $\varrho>0$, the boost is $\theta_{\mathrm{rpd}}\in\mathbb{R}$, and the phases $(\theta_{\mathrm{pha}},\theta_{\mathrm{phb}})$ are taken in the half-open principal diamond $\lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert\le\pi$, with the boundary half-open. Errors are Euclidean in the four real coefficients and are computed in double precision; a displayed zero is exact in that precision, and displayed decimals are rounded.</p>
 <p><strong>The plan.</strong> The method is stated once (§<em>The Method</em>). The eight cases follow (§<em>The Eight Cases</em>), each with its components, its polar data, its two factors and its check. The summary collects the results in two tables and reads the patterns across the cases (§<em>Summary</em>). The eigenbasis, the idempotents and the spinors of the same eight cases are collected in <em>Worked Examples of Polar Decomposition with Eigenbasis of Reduced Biquaternions</em>.</p>
 <h2 id="the-method">The Method</h2>
 <h3 id="the-two-complex-components">The Two Complex Components</h3>
@@ -145,7 +145,7 @@ C_-=Q_{\blacktriangle}-Q_{\blacktriangledown}.
 $$</p>
 <p>The modulus and the boost are</p>
 <p>$$
-\rho=\sqrt{\lvert C_+C_-\rvert}
+\varrho=\sqrt{\lvert C_+C_-\rvert}
 =\sqrt{\lvert Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2\rvert},
 \qquad
 \theta_{\mathrm{rpd}}=\tfrac12\ln\left\lvert\frac{C_+}{C_-}\right\rvert,
@@ -158,14 +158,14 @@ $$</p>
 $$</p>
 <p>with $\operatorname{Arg}$ the principal argument in $(-\pi,\pi]$. The last two formulas give the representative in the principal diamond. The two scales are</p>
 <p>$$
-\lvert C_+\rvert=\rho e^{\theta_{\mathrm{rpd}}},
+\lvert C_+\rvert=\varrho e^{\theta_{\mathrm{rpd}}},
 \qquad
-\lvert C_-\rvert=\rho e^{-\theta_{\mathrm{rpd}}},
+\lvert C_-\rvert=\varrho e^{-\theta_{\mathrm{rpd}}},
 $$</p>
 <p>and the product and ratio read</p>
 <p>$$
-C_+C_-=\rho^2e^{2i\theta_{\mathrm{pha}}}
-=\bigl(\rho e^{\theta_{\mathrm{rpd}}}\bigr)\bigl(\rho e^{-\theta_{\mathrm{rpd}}}\bigr)e^{2i\theta_{\mathrm{pha}}},
+C_+C_-=\varrho^2e^{2i\theta_{\mathrm{pha}}}
+=\bigl(\varrho e^{\theta_{\mathrm{rpd}}}\bigr)\bigl(\varrho e^{-\theta_{\mathrm{rpd}}}\bigr)e^{2i\theta_{\mathrm{pha}}},
 \qquad
 \frac{C_+}{C_-}=e^{2\theta_{\mathrm{rpd}}}e^{2i\theta_{\mathrm{phb}}}.
 $$</p>
@@ -173,24 +173,24 @@ $$</p>
 <h3 id="the-reconstruction">The Reconstruction</h3>
 <p>The polar word separates the element into a real-hyperbolic factor and a torus factor,</p>
 <p>$$
-\breve Q=\breve \varrho\,u,
+\breve Q=\breve M_{\mathrm{mod}}\,u,
 \qquad
-\breve \varrho=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
+\breve M_{\mathrm{mod}}=\varrho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr),
 \qquad
 u=\exp(i\theta_{\mathrm{pha}})\exp(ij\theta_{\mathrm{phb}}).
 $$</p>
-<p>The four real numbers $\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are the exponent</p>
+<p>The four real numbers $\varrho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are the exponent</p>
 <p>$$
-\operatorname{Log}\breve Q=\ln\rho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}
-=\bigl(\ln\rho+i\theta_{\mathrm{pha}}\bigr)+j\bigl(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}\bigr).
+\operatorname{Log}\breve Q=\ln\varrho+j\theta_{\mathrm{rpd}}+i\theta_{\mathrm{pha}}+ij\theta_{\mathrm{phb}}
+=\bigl(\ln\varrho+i\theta_{\mathrm{pha}}\bigr)+j\bigl(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}}\bigr).
 $$</p>
-<p>The factor $\breve \varrho$ carries the two real scales $\rho e^{\pm\theta_{\mathrm{rpd}}}$ in the two complex components, and $u$ carries the two phases $\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$.</p>
+<p>The factor $\breve M_{\mathrm{mod}}$ carries the two real scales $\varrho e^{\pm\theta_{\mathrm{rpd}}}$ in the two complex components, and $u$ carries the two phases $\theta_{\mathrm{pha}}\pm\theta_{\mathrm{phb}}$.</p>
 <h3 id="the-matrix-picture">The Matrix Picture</h3>
 <p>The matrix of the regular representation,</p>
 <p>$$
 \mathsf M(\breve Q)=\begin{pmatrix}Q_{\blacktriangle}&Q_{\blacktriangledown}\\Q_{\blacktriangledown}&Q_{\blacktriangle}\end{pmatrix},
 $$</p>
-<p>has determinant $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=C_+C_-$. The two scales $\lvert C_+\rvert=\rho e^{\theta_{\mathrm{rpd}}}$ and $\lvert C_-\rvert=\rho e^{-\theta_{\mathrm{rpd}}}$ govern its action, each repeated.</p>
+<p>has determinant $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=C_+C_-$. The two scales $\lvert C_+\rvert=\varrho e^{\theta_{\mathrm{rpd}}}$ and $\lvert C_-\rvert=\varrho e^{-\theta_{\mathrm{rpd}}}$ govern its action, each repeated.</p>
 <h3 id="the-null-cone">The Null Cone</h3>
 <p>A zero divisor is an element with $C_+C_-=0$, that is $Q_{\blacktriangle}^2-Q_{\blacktriangledown}^2=0$. One of the two complex components vanishes, the element has the form $\breve Q=Q_{\blacktriangle}(1\pm j)$ with $Q_{\blacktriangle}\neq0$, and no logarithm exists: the modulus vanishes and the boost diverges. The matrix has rank one and determinant zero. Case 8 treats the boundary explicitly.</p>
 <h2 id="the-eight-cases">The Eight Cases</h2>
@@ -210,9 +210,9 @@ $$</p>
 <p>Both components are nonzero, with $\lvert C_+\rvert=5$ and $\lvert C_-\rvert=\sqrt{29}$.</p>
 <p><strong>Polar data.</strong> The modulus, the boost and the two phases are</p>
 <p>$$
-\rho=\sqrt{5\sqrt{29}}=5.189009928268833,
+\varrho=\sqrt{5\sqrt{29}}=5.189009928268833,
 \qquad
-\ln\rho=1.6465429137136687,
+\ln\varrho=1.6465429137136687,
 $$</p>
 <p>$$
 \theta_{\mathrm{rpd}}=\tfrac12\ln\frac{5}{\sqrt{29}}=-0.03710500127956826,
@@ -227,7 +227,7 @@ $$</p>
 <p><strong>The two factors.</strong> The real-hyperbolic factor is</p>
 <p>$$
 \boxed{\;
-\breve \varrho=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})
+\breve M_{\mathrm{mod}}=\varrho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})
 =\frac{5+\sqrt{29}}{2}+j\,\frac{5-\sqrt{29}}{2}
 =5.1925824036-0.1925824036\,j
 \;},
@@ -245,7 +245,7 @@ $$</p>
 $$</p>
 <p>The product of the two factors is</p>
 <p>$$
-\breve \varrho\,u=3+4i+j(1-i),
+\breve M_{\mathrm{mod}}\,u=3+4i+j(1-i),
 $$</p>
 <p>with error $1.3\times10^{-15}$, and $\exp(\operatorname{Log}\breve Q)$ reproduces the element with the same error. The matrix has determinant $-7+26i$ and the two scales $5$ and $\sqrt{29}$.</p>
 <h3 id="case-2-a-complex-scalar">Case 2: A Complex Scalar</h3>
@@ -262,7 +262,7 @@ $$</p>
 <p>The two components coincide, with $\lvert C_\pm\rvert=\sqrt2$.</p>
 <p><strong>Polar data.</strong> The moduli are equal, so</p>
 <p>$$
-\rho=\sqrt{\lvert 2i\rvert}=\sqrt2,
+\varrho=\sqrt{\lvert 2i\rvert}=\sqrt2,
 \qquad
 \theta_{\mathrm{rpd}}=0,
 \qquad
@@ -270,7 +270,7 @@ $$</p>
 \qquad
 \theta_{\mathrm{phb}}=0.
 $$</p>
-<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve \varrho=\sqrt2$, and the torus factor is</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve M_{\mathrm{mod}}=\sqrt2$, and the torus factor is</p>
 <p>$$
 u=e^{i\pi/4}=\frac{1+i}{\sqrt2}.
 $$</p>
@@ -280,7 +280,7 @@ $$</p>
 $$</p>
 <p>and</p>
 <p>$$
-\breve \varrho\,u=\sqrt2\cdot\frac{1+i}{\sqrt2}=1+i,
+\breve M_{\mathrm{mod}}\,u=\sqrt2\cdot\frac{1+i}{\sqrt2}=1+i,
 $$</p>
 <p>with error $2.2\times10^{-16}$. The matrix has determinant $2i$ and the two scales $\sqrt2$ and $\sqrt2$.</p>
 <h3 id="case-3-the-central-phase">Case 3: The Central Phase</h3>
@@ -301,12 +301,12 @@ $$</p>
 \qquad
 \theta_{\mathrm{phb}}=0.
 $$</p>
-<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=i$.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve M_{\mathrm{mod}}=1$, and the torus factor is $u=i$.</p>
 <p><strong>The word and the check.</strong> The exponent is</p>
 <p>$$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}i,
 $$</p>
-<p>and $\breve \varrho\,u=i$, with error $6.1\times10^{-17}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
+<p>and $\breve M_{\mathrm{mod}}\,u=i$, with error $6.1\times10^{-17}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
 <h3 id="case-4-the-split-phase">Case 4: The Split Phase</h3>
 <p><strong>Components.</strong> For $\breve Q=ij$,</p>
 <p>$$
@@ -323,7 +323,7 @@ $$</p>
 <p>The two components are opposite, with $\lvert C_\pm\rvert=1$.</p>
 <p><strong>Polar data.</strong> The two moduli are one, so</p>
 <p>$$
-\rho=1,
+\varrho=1,
 \qquad
 \theta_{\mathrm{rpd}}=0,
 \qquad
@@ -331,12 +331,12 @@ $$</p>
 \qquad
 \theta_{\mathrm{phb}}=\tfrac{\pi}{2}.
 $$</p>
-<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=ij$.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve M_{\mathrm{mod}}=1$, and the torus factor is $u=ij$.</p>
 <p><strong>The word and the check.</strong> The exponent is</p>
 <p>$$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}ij,
 $$</p>
-<p>and $\breve \varrho\,u=ij$, with error $6.1\times10^{-17}$. The matrix has determinant $1$ and the two scales $1$ and $1$.</p>
+<p>and $\breve M_{\mathrm{mod}}\,u=ij$, with error $6.1\times10^{-17}$. The matrix has determinant $1$ and the two scales $1$ and $1$.</p>
 <h3 id="case-5-the-boundary-of-the-diamond">Case 5: The Boundary of the Diamond</h3>
 <p><strong>Components.</strong> For $\breve Q=j$,</p>
 <p>$$
@@ -360,12 +360,12 @@ $$</p>
 \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert=\pi.
 $$</p>
 <p>The point lies on the boundary of the principal diamond, where the two phases saturate it.</p>
-<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=j$.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve M_{\mathrm{mod}}=1$, and the torus factor is $u=j$.</p>
 <p><strong>The word and the check.</strong> The exponent is</p>
 <p>$$
 \operatorname{Log}\breve Q=\tfrac{\pi}{2}i-\tfrac{\pi}{2}ij,
 $$</p>
-<p>and $\breve \varrho\,u=j$, with error $1.2\times10^{-16}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
+<p>and $\breve M_{\mathrm{mod}}\,u=j$, with error $1.2\times10^{-16}$. The matrix has determinant $-1$ and the two scales $1$ and $1$.</p>
 <h3 id="case-6-the-hyperbolic-line">Case 6: The Hyperbolic Line</h3>
 <p><strong>Components.</strong> For</p>
 <p>$$
@@ -385,7 +385,7 @@ C_+C_-=1.
 $$</p>
 <p><strong>Polar data.</strong> The two components are positive and real, so</p>
 <p>$$
-\rho=\sqrt{2\cdot\tfrac12}=1,
+\varrho=\sqrt{2\cdot\tfrac12}=1,
 \qquad
 \theta_{\mathrm{rpd}}=\tfrac12\ln4=\ln2,
 \qquad
@@ -394,7 +394,7 @@ $$</p>
 <p><strong>The two factors.</strong> The real-hyperbolic factor is</p>
 <p>$$
 \boxed{\;
-\breve \varrho=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j
+\breve M_{\mathrm{mod}}=1\cdot(\cosh(\ln2)+j\sinh(\ln2))=\tfrac54+\tfrac34j
 \;},
 $$</p>
 <p>and the torus factor is $u=1$.</p>
@@ -402,7 +402,7 @@ $$</p>
 <p>$$
 \operatorname{Log}\breve Q=j\ln2,
 $$</p>
-<p>and $\breve \varrho\,u=\tfrac54+\tfrac34j$, with error $0$. The matrix has determinant $1$ and the two scales $2$ and $\tfrac12$. The element is a pure boost: the two phases vanish and the two scales are positive.</p>
+<p>and $\breve M_{\mathrm{mod}}\,u=\tfrac54+\tfrac34j$, with error $0$. The matrix has determinant $1$ and the two scales $2$ and $\tfrac12$. The element is a pure boost: the two phases vanish and the two scales are positive.</p>
 <h3 id="case-7-the-central-discrete-element">Case 7: The Central Discrete Element</h3>
 <p><strong>Components.</strong> For $\breve Q=-1$,</p>
 <p>$$
@@ -424,12 +424,12 @@ $$</p>
 \lvert\theta_{\mathrm{pha}}\rvert+\lvert\theta_{\mathrm{phb}}\rvert=\pi.
 $$</p>
 <p>The point is the corner $(\pi,0)$ of the diamond.</p>
-<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve \varrho=1$, and the torus factor is $u=-1$.</p>
+<p><strong>The two factors.</strong> The real-hyperbolic factor is $\breve M_{\mathrm{mod}}=1$, and the torus factor is $u=-1$.</p>
 <p><strong>The word and the check.</strong> The exponent is</p>
 <p>$$
 \operatorname{Log}\breve Q=\pi i,
 $$</p>
-<p>and $\breve \varrho\,u=-1$, with error $1.2\times10^{-16}$. The matrix has determinant $1$ and the two scales $1$ and $1$. The four logarithms of $-1$ and their kernel differences belong to the polar article and to the relation article; the principal one is the one above.</p>
+<p>and $\breve M_{\mathrm{mod}}\,u=-1$, with error $1.2\times10^{-16}$. The matrix has determinant $1$ and the two scales $1$ and $1$. The four logarithms of $-1$ and their kernel differences belong to the polar article and to the relation article; the principal one is the one above.</p>
 <h3 id="case-8-the-zero-divisor">Case 8: The Zero Divisor</h3>
 <p><strong>Components.</strong> For $\breve Q=1+j$,</p>
 <p>$$
@@ -459,7 +459,7 @@ $$</p>
 $$</p>
 <p>Its components give</p>
 <p>$$
-\rho=\sqrt{\delta(2+\delta)},
+\varrho=\sqrt{\delta(2+\delta)},
 \qquad
 \theta_{\mathrm{rpd}}=\tfrac12\ln\frac{2+\delta}{\delta},
 \qquad
@@ -467,17 +467,17 @@ $$</p>
 $$</p>
 <p>and the factor is</p>
 <p>$$
-\breve r_\delta=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})=(1+\delta)+j=\breve Q_\delta.
+\breve L_{\delta}=\varrho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})=(1+\delta)+j=\breve Q_\delta.
 $$</p>
-<p>The two scales are $\rho e^{\theta_{\mathrm{rpd}}}=2+\delta$ and $\rho e^{-\theta_{\mathrm{rpd}}}=\delta$. The table gives the approach.</p>
+<p>The two scales are $\varrho e^{\theta_{\mathrm{rpd}}}=2+\delta$ and $\varrho e^{-\theta_{\mathrm{rpd}}}=\delta$. The table gives the approach.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\delta$</th>
-<th>$\rho$</th>
+<th>$\varrho$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
-<th>$\rho e^{\theta_{\mathrm{rpd}}}$</th>
-<th>$\rho e^{-\theta_{\mathrm{rpd}}}$</th>
+<th>$\varrho e^{\theta_{\mathrm{rpd}}}$</th>
+<th>$\varrho e^{-\theta_{\mathrm{rpd}}}$</th>
 </tr>
 </thead>
 <tbody>
@@ -515,7 +515,7 @@ $$</p>
 <th>$Q_{\blacktriangle}$</th>
 <th>$Q_{\blacktriangledown}$</th>
 <th>$C_+C_-$</th>
-<th>$\rho$</th>
+<th>$\varrho$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
 <th>$\theta_{\mathrm{pha}}$</th>
 <th>$\theta_{\mathrm{phb}}$</th>
@@ -618,9 +618,9 @@ $$</p>
 <tr>
 <th>Case</th>
 <th>$\breve Q$</th>
-<th>$\breve \varrho$</th>
+<th>$\breve M_{\mathrm{mod}}$</th>
 <th>$u$</th>
-<th>$\breve \varrho\,u$</th>
+<th>$\breve M_{\mathrm{mod}}\,u$</th>
 <th>Error</th>
 </tr>
 </thead>
@@ -693,12 +693,12 @@ $$</p>
 </table></div>
 <h3 id="what-the-cases-show">What the Cases Show</h3>
 <ul>
-<li>The two complex components determine the polar data. In every invertible the four numbers $\rho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are read from $C_+$ and $C_-$ by the formulas of §<em>The Two Complex Components</em>, and $\lvert C_+\rvert$ and $\lvert C_-\rvert$ are the two scales.</li>
+<li>The two complex components determine the polar data. In every invertible the four numbers $\varrho,\theta_{\mathrm{rpd}},\theta_{\mathrm{pha}},\theta_{\mathrm{phb}}$ are read from $C_+$ and $C_-$ by the formulas of §<em>The Two Complex Components</em>, and $\lvert C_+\rvert$ and $\lvert C_-\rvert$ are the two scales.</li>
 <li>The central rows have $Q_{\blacktriangledown}=0$, hence $C_+=C_-$. The elements $1+i$, $i$ and $-1$ have $\theta_{\mathrm{rpd}}=0$ and lie on the torus; the two components coincide and the phases add.</li>
-<li>The elements $i$ and $ij$ are the two pure phases, with $\theta_{\mathrm{pha}}=\pi/2$ and $\theta_{\mathrm{phb}}=\pi/2$ respectively. Both have $\rho=1$ and $\theta_{\mathrm{rpd}}=0$; the difference is the phase, not the modulus.</li>
+<li>The elements $i$ and $ij$ are the two pure phases, with $\theta_{\mathrm{pha}}=\pi/2$ and $\theta_{\mathrm{phb}}=\pi/2$ respectively. Both have $\varrho=1$ and $\theta_{\mathrm{rpd}}=0$; the difference is the phase, not the modulus.</li>
 <li>The elements $j$ and $-1$ lie on the boundary of the principal diamond. The first has $\theta_{\mathrm{pha}}=\pi/2$, $\theta_{\mathrm{phb}}=-\pi/2$; the second is the corner $(\pi,0)$. The polar data are still unique there, because the boundary is taken half-open.</li>
 <li>The hyperbolic line $\exp(j\ln2)$ has both phases zero and the boost $\ln2$. Its two scales are $2$ and $\tfrac12$, the two values of $\lvert C_\pm\rvert$.</li>
-<li>The zero divisor $1+j$ has $C_-=0$, but no polar word. The family shows the rate $\rho\to0$, $\theta_{\mathrm{rpd}}\to\infty$ with $\rho e^{\theta_{\mathrm{rpd}}}\to2$.</li>
+<li>The zero divisor $1+j$ has $C_-=0$, but no polar word. The family shows the rate $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$ with $\varrho e^{\theta_{\mathrm{rpd}}}\to2$.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -730,7 +730,7 @@ $$</p>
 <td>the product of the components</td>
 </tr>
 <tr>
-<td>$\rho=\sqrt{\lvert C_+C_-\rvert}$</td>
+<td>$\varrho=\sqrt{\lvert C_+C_-\rvert}$</td>
 <td>the modulus</td>
 </tr>
 <tr>
@@ -742,7 +742,7 @@ $$</p>
 <td>the two phases, in the principal diamond</td>
 </tr>
 <tr>
-<td>$\breve \varrho=\rho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$</td>
+<td>$\breve M_{\mathrm{mod}}=\varrho(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}})$</td>
 <td>the real-hyperbolic factor</td>
 </tr>
 <tr>
@@ -750,7 +750,7 @@ $$</p>
 <td>the torus factor</td>
 </tr>
 <tr>
-<td>$\operatorname{Log}\breve Q=(\ln\rho+i\theta_{\mathrm{pha}})+j(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})$</td>
+<td>$\operatorname{Log}\breve Q=(\ln\varrho+i\theta_{\mathrm{pha}})+j(\theta_{\mathrm{rpd}}+i\theta_{\mathrm{phb}})$</td>
 <td>the principal logarithm</td>
 </tr>
 <tr>

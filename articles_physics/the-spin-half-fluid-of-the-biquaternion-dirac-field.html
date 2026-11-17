@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-spin-half-fluid-of-the-biquaternion-dirac-field"><strong>The Spin-Half Fluid of the Biquaternion Dirac Field</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust.</strong> The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. <strong>Two labels, one class and one member.</strong> The class is the <em>spin fluid</em>, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the <em>spin-half</em> one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase <em>spin fluid</em> is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.</p>
+<p><strong>The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust.</strong> The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. <strong>Two labels, one class and one member.</strong> The class is the <em>spin fluid</em>, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the <em>spin-half</em> one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi}=\varrho\tfrac{\hbar}{2}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase <em>spin fluid</em> is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.</p>
 <p>The article assembles two results that already exist and derives neither. The polar form of the Dirac equation, with its four factors, its velocity and its spin, is <a href="the-dirac-equation-in-biquaternionic-polar-variables.html">The Dirac Equation in Biquaternionic Polar Variables</a>. The split of the current into a convection part and a spin part is <a href="the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html">The Gordon Decomposition of the Dirac Current in Biquaternionic Form</a>. Both are cited at the point of use, and the displays below that repeat their formulas are quotations, marked as such.</p>
 <p><strong>What the three data are is the previous article's result, and this article takes it as given.</strong> <a href="the-spin-half-fluid-and-the-takabayasi-correspondence.html">The Spin-Half Fluid and the Takabayasi
 Correspondence</a> matches the density, the frame element and the spin direction against Takabayasi's tensor
@@ -87,15 +87,13 @@ kinematical question that non-closure leaves open.</p>
 <p>Two cautions are stated once and used throughout. The first is that <em>closure</em> and <em>rigidity</em> are different conditions: closure is the vanishing of the antisymmetric part of the velocity's gradient, rigidity the vanishing of the symmetric part. This article is about closure. <a href="covariant-local-equilibrium-and-tolman-temperature.html">Covariant Local Equilibrium and Tolman Temperature</a> is about rigidity, and a reader who conflates them will read the two articles as contradicting each other. The second is that <em>rotor</em> in this article's title names the frame element $\tilde U$ of the word, which the polar article splits into a boost and a spatial rotor. Where the split matters, the two factors are named separately and the frame element is not called a rotor.</p>
 <p>The word of the field is</p>
 <p>$$
-\tilde\Xi=\rho\,\tilde U,
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U,
 \qquad
-\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}},
+\varrho=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert^{1/2}>0,
 \qquad
-\varrho=\lvert\rho\rvert>0,
-\qquad
-\tilde U=\frac{\tilde\Xi}{\rho},
+\tilde U=\frac{\tilde\Xi}{\varrho\,e^{i\theta_{\mathrm{pha}}}},
 $$</p>
-<p>with $\varrho$ the scale, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}$. <strong>The polar article writes that density as $\rho$ and its root as $\varrho$, so the two letters are interchanged between the two articles</strong>: this article's $\rho$ is the polar article's $\varrho$, and this article's $\rho_{\mathrm{num}}$ is the polar article's $\rho$. The reason for the interchange is that the density of this category is never a bare letter, while the complete polar decomposition's scale is one, and the two cannot both take $\rho$. Every statement below is about a direction or a ratio, so the difference never enters a conclusion. That is the notational translation this article makes once and does not repeat.</p>
+<p>with $\varrho$ the scale, $e^{i\theta_{\mathrm{pha}}}$ the central phase, $\tilde U$ a unit element, and the four parameters of the word the scale, the central angle, the rapidity and the spatial rotor's angle. The proper density of this category is $\rho_{\mathrm{num}}=\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}$. <strong>The three letters are the corpus's and they are not interchanged.</strong> The scale is $\varrho$, a real number greater than zero; the complex modulus is $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and is never a bare letter; the density is $\rho_{\mathrm{num}}=\varrho^{2}$. This article, the polar article and the fluid articles all use these three names in this wayeat.</p>
 <h2 id="the-polar-data-of-the-fluid">The Polar Data of the Fluid</h2>
 <h3 id="the-frame-element-is-the-velocitys-square-root">The frame element is the velocity's square root</h3>
 <p><strong>The four-velocity is the inverse square of the frame element, and that is the fact the whole article turns on.</strong> The polar article proves</p>
@@ -113,7 +111,7 @@ $$</p>
 <h3 id="the-spin-is-the-rotors-image-of-the-axis">The spin is the rotor's image of the axis</h3>
 <p><strong>The spin element is the density times $\hbar/2$ times the rotor's image of the declared axis.</strong> The polar article proves</p>
 <p>$$
-\tilde S_{\Psi}=\rho\,\frac{\hbar}{2}\,i\,\vec s,
+\tilde S_{\Psi}=\varrho\,\frac{\hbar}{2}\,i\,\vec s,
 \qquad
 \vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -254,7 +252,7 @@ $$</p>
 <li><strong>It carries three data at each event: a density, a frame element and a spin direction.</strong> That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.</li>
 <li><strong>The velocity is the frame's inverse square</strong>, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is invertible wherever the field is non-zero — stronger than the scalar case, where the velocity is invertible only where $Q_{\mathrm{qnt}}$ vanishes.</li>
 <li><strong>The current reads four of the eight parameters</strong> — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.</li>
-<li><strong>The spin is the rotor's image of a declared axis</strong>, $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.</li>
+<li><strong>The spin is the rotor's image of a declared axis</strong>, $\tilde S_{\Psi}=\varrho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.</li>
 <li><strong>The current splits by Gordon into convection and bound magnetisation.</strong> The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.</li>
 <li><strong>The flow is not a gradient.</strong> The velocity has three functions of the four coordinates where a gradient supplies one, and the gap of two is exactly what the phrase <em>spin fluid</em> names.</li>
 <li><strong>The word carries the spin, and this is the only one of the three that does.</strong> The scalar and Proca words have no orientation slot; the rotor is the Dirac word's fourth factor.</li>
@@ -442,16 +440,12 @@ $$</p>
 <td>The one metric, all coefficients $+1$; indices stay low</td>
 </tr>
 <tr>
-<td>$\tilde\Xi=\rho\tilde U$</td>
-<td>The Dirac field as scale times frame element</td>
+<td>$\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U$</td>
+<td>The Dirac field as complex modulus times frame element</td>
 </tr>
 <tr>
-<td>$\rho=\sqrt{\langle\tilde\Xi\rangle_{\natural}}$</td>
-<td>The scale; the polar article calls it $\varrho$</td>
-</tr>
-<tr>
-<td>$\varrho=\lvert\rho\rvert$</td>
-<td>Its modulus</td>
+<td>$\varrho=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert^{1/2}$</td>
+<td>The scale</td>
 </tr>
 <tr>
 <td>$\tilde U$</td>
