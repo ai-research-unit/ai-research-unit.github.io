@@ -100,7 +100,7 @@ $$</p>
 +\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\det^{k}\tilde X}{(2k+1)!}\Bigr)\tilde X
 =\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X,
 $$</p>
-<p>with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\tfrac12\operatorname{tr}(\tilde X^{2})$ follows from the same characteristic polynomial.</p>
+<p>with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.</p>
 <h3 id="the-verification">The Verification</h3>
 <p>The closed form is checked against the series on random traceless complex matrices to machine precision, and it is checked to reduce to the rotation and the boost formulas below. The check is exact in the special cases $\Rho=i\pi k$, where the coefficient $\frac{\sin\Rho}{\Rho}$ vanishes and the exponential is the scalar $(-1)^{k}e_t$; this is the exceptional case of §<em>What Is True and What Is Not</em>.</p>
 <h2 id="the-two-closed-forms">The Two Closed Forms</h2>
@@ -175,7 +175,7 @@ $\Rho$ (two real parameters, since it is complex) and the direction of $\hat X$ 
 <p>$$
 \tilde A=-e_t+\tilde N,\qquad \tilde N\neq0,\qquad \tilde N^{2}=0,
 $$</p>
-<p>the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\operatorname{tr}\tilde X=0$.</p>
+<p>the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.</p>
 <ul>
 <li>If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.</li>
 <li>So $\tilde X$ has equal eigenvalues; being traceless, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.</li>
@@ -313,7 +313,7 @@ $$</p>
 <h3 id="what-the-coordinates-are-not">What the Coordinates Are Not</h3>
 <p>Cartan coordinates are not exponential coordinates: the product of two exponentials is not the exponential of the sum, because $[\mathfrak{k},\mathfrak{p}]\neq0$. They are a <em>global</em> product decomposition of the group, and that is a different theorem from the local invertibility of the exponential.</p>
 <h2 id="summary">Summary</h2>
-<p>The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{\operatorname{tr}\tilde X}$, so it lands in the unit-norm group. It is <strong>not</strong> onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra <em>is</em> onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.</p>
+<p>The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{2\,\mathrm{Sc}\tilde X}$, so it lands in the unit-norm group. It is <strong>not</strong> onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra <em>is</em> onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -328,7 +328,7 @@ $$</p>
 <td>a traceless element of the algebra</td>
 </tr>
 <tr>
-<td>$\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})=-\det\tilde X$</td>
+<td>$\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\det\tilde X$</td>
 <td>the complex modulus of the generator</td>
 </tr>
 <tr>
