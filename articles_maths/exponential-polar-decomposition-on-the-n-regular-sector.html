@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exponential Polar Decomposition on the N-Regular Sector — Biquaternion Universe</title>
-  <meta name="description" content="This article computes the exponential polar decomposition of a biquaternion of the N-regular sector, the set. The word is the four-factor product">
+  <meta name="description" content="This article computes the exponential polar decomposition of a biquaternion of the N-regular sector, the set. The word is the complete polar…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="exponential-polar-decomposition-on-the-n-regular-sector"><strong>Exponential Polar Decomposition on the N-Regular Sector</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article computes the exponential polar decomposition of a biquaternion of the <strong>N-regular sector</strong>, the set $N=\langle\tilde Q\rangle_{\natural}\neq0$. The word is the four-factor product</p>
+<p>This article computes the exponential polar decomposition of a biquaternion of the <strong>N-regular sector</strong>, the set $N=\langle\tilde Q\rangle_{\natural}\neq0$. The word is the complete polar decomposition, the four-factor product</p>
 <p>$$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 \qquad
@@ -81,7 +81,7 @@
 $$</p>
 <p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\frac{\pi}{2},\frac{\pi}{2}]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and two real unit axes. Every element of the sector has one, and it is unique up to the usual degeneracies of the axes. The article proves this from the Cartan decomposition, computes the closed forms, and reads the word against the spectral decomposition.</p>
 <p>The existence of the word is a property of the group of invertibles alone. The second invariant, the vector form $B^2=Q_x^2+Q_y^2+Q_z^2$, decides only its shape. Off the wall $B^2\neq0$ the element has two distinct eigenvalues $\lambda_\pm=Q_t\pm iB$ and an eigenbasis, and the polar factors are diagonal in it exactly when the element is normal. On the wall the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent: it is $\varepsilon(e_t+\vec\Upsilon)$ with $\vec\Upsilon^2=0$, its minimal polynomial is a square, and its two angles are locked by $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon$. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.</p>
-<p>The article assumes <em>The Polar Decomposition of an N-Regular Biquaternion</em> for the modulus–unit theorem, <em>Biquaternion Elementary Functions</em> for the exponential and the logarithm, and <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector. The numerical cases are in <em>Worked Examples of Exponential Polar Decomposition on the N-Regular Sector</em>.</p>
+<p>The article assumes <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em> for the modulus–unit theorem, <em>Biquaternion Elementary Functions</em> for the exponential and the logarithm, and <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> for the eigenbasis. It does not treat the Peirce decomposition, the spinors or the spectral algebra of the sector. The numerical cases are in <em>Worked Examples of Exponential Polar Decomposition on the N-Regular Sector</em>.</p>
 <p><strong>The plan.</strong> The word, its two unit factors and the seven data are boxed and proved in §<em>The Result in Terms of the Coordinates</em>, which also gives the boxes in the coordinates of the wall. The domain is fixed in §<em>The Domain</em>, with the normal form that the wall imposes. The word and its component form are stated in §<em>The Decomposition</em>. The spectral reading occupies §<em>The Spectral Reading</em>, with the eigenbasis, the normal case and the non-normal case. §<em>The Unipotent Unit Factor</em> and §<em>The Two Strata</em> prove the rigidity on the wall: the scalar constraint, the orthogonal frame and the closed form. Existence and uniqueness are proved in §<em>Existence and Uniqueness</em>. The logarithm, the group law, the matrix picture, the exponential coordinates and the two walls follow. The summary collects the formulas of both cases in one table.</p>
 <h2 id="the-result-in-terms-of-the-coordinates">The Result in Terms of the Coordinates</h2>
 <p><strong>Setting.</strong> Let $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coordinates, and put</p>
@@ -1035,7 +1035,7 @@ $$</p>
 <p>$$
 \mathsf M(\tilde Q)=Q_tI-iQ_x\sigma_x-iQ_y\sigma_y-iQ_z\sigma_z.
 $$</p>
-<p>It is a $\mathbb{C}$-algebra homomorphism, so $\mathsf M(\exp\tilde X)=\exp(\mathsf M(\tilde X))$, and the polar word becomes the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$,</p>
+<p>It is a $\mathbb{C}$-algebra homomorphism, so $\mathsf M(\exp\tilde X)=\exp(\mathsf M(\tilde X))$, and the complete polar decomposition becomes the polar decomposition of $\mathrm{GL}_2(\mathbb{C})$,</p>
 <p>$$
 \mathsf M(\tilde Q)=r e^{i\theta_{\mathrm{pha}}}\,\mathsf M(\tilde U_{\mathrm b})\,\mathsf M(\tilde u_{\mathrm r}),
 $$</p>
@@ -1567,7 +1567,7 @@ $$</p>
 <ul>
 <li><a href="relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html">Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector</a>, for the dictionary between the word and the eigenvalue data, and its limit on the Jordan part.</li>
 <li><a href="worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html">Worked Examples of Exponential Polar Decomposition on the N-Regular Sector</a>, for the numerical cases off the wall and on it, the normal and non-normal comparison, and the defect tables.</li>
-<li><a href="the-polar-decomposition-of-an-n-regular-biquaternion.html">The Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus–unit theorem and the group of invertibles.</li>
+<li><a href="the-complete-polar-decomposition-of-an-n-regular-biquaternion.html">The Complete Polar Decomposition of an N-Regular Biquaternion</a>, for the modulus–unit theorem and the group of invertibles.</li>
 <li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the eigenbasis, the Peirce corners and the spinors.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the normal forms and the two strata of the wall.</li>
 <li><a href="the-spectrum.html">The Spectrum</a>, for the four sectors and the discriminants.</li>
