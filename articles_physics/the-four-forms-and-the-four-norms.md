@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**A product of two biquaternions returns a biquaternion, and its scalar part returns a complex number.** Each of the four general products of the previous entry therefore carries one function of two elements, and the four functions are the four forms. Read at their two equal arguments the four forms give four functions of one element, and those are the four algebraic norms. One letter serves the two arities.
+**A product of two biquaternions returns a biquaternion, and its scalar part returns a complex number.** Each of the four general products of the previous entry therefore carries one function of two elements, and the four functions are the four forms. Read at their two equal arguments the four forms give four functions of one element, and those are the four algebraic norms. The two arities are the two bracket shapes, $\langle\tilde Q_1,\tilde Q_2\rangle$ for the form and $\langle\tilde Q\rangle$ for the norm.
 
 **Every proof here is written on the coordinates.** The four forms are evaluated on the coordinates, and their signatures are those of real quadratic forms in the eight real coordinates. The multiplicativity of the quaternionic norm comes from Lagrange's identity on the cross product, and the criterion of invertibility from an explicit inverse. Neither argument leaves the algebra.
 
@@ -40,17 +40,15 @@ $$
 
 The bracket is not the modulus and it is not Hermitian: $(\vec Q,\vec Q)$ is a complex number and may vanish off the origin.
 
-**The four brackets and the four letters.** The four forms are $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$. Their letters are $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $\mathrm{Kr}$ for the Krein. The rule is one line, read at two arities: a form is a product read on its scalar part with one conjugation per slot, $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$ with $K_1$ the identity or ${}^{\natural}$ and $K_2$ the identity or ${}^{*}$, and the algebraic norm is that same function at two equal arguments, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$. The four choices of the pair $(K_1,K_2)$ are the four forms.
+**The four brackets and the four letters.** The four forms are $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural*}$. Their letters are $P$ for the plain, $N$ for the quaternionic, $H$ for the Hermitian and $\mathrm{Kr}$ for the Krein. The rule is one line, read at two arities: a form is a product read on its scalar part with one conjugation per slot, $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$ with $K_1$ the identity or ${}^{\natural}$ and $K_2$ the identity or ${}^{*}$, and the algebraic norm is that same expression at two equal arguments, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$. The four choices of the pair $(K_1,K_2)$ are the four forms.
 
 **Bilinear and sesquilinear.** A form is $\mathbb{C}$-**bilinear** when a scalar pulls out of its second slot, and **sesquilinear** when the scalar pulls out conjugated. The distinction is decided by the star in the second slot and by nothing else. The Euclidean norm is $\lVert\tilde Q\rVert=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of the algebraic norm of $\langle\cdot,\cdot\rangle_{*}$.
 
-**The entry carries no trace and no determinant.** Every statement about the four forms is a statement about their values on the coordinates, and every statement about a group is a statement about what the group preserves. Neither the trace nor the determinant is formed anywhere, and no argument below needs one.
-
 ## The Form of an Operation
 
-**Definition (the form of an operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar part $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$. The **form of the operation $f$** is $\varphi$. It is bilinear when the second slot of $f$ is read without the star, and sesquilinear when it is read with the star.
+**Definition (the form of an operation).** Let $f$ be an operation on $\mathbb{B}$. Its **scalar part** is the function that sends a pair to $\mathrm{Sc}\,f(\tilde Q_1,\tilde Q_2)$, and that function is the **form of the operation $f$**. It is bilinear when the second slot of $f$ is read without the star, and sesquilinear when it is read with the star.
 
-**The value lies in $\mathbb{C}$ in both cases, and the second slot decides whether it is real.** A sesquilinear form is conjugate-symmetric, $\varphi(\tilde Q_1,\tilde Q_2)=\overline{\varphi(\tilde Q_2,\tilde Q_1)}$, so its algebraic norm is real. A bilinear form is symmetric, $\varphi(\tilde Q_1,\tilde Q_2)=\varphi(\tilde Q_2,\tilde Q_1)$, because the commutator of two elements is purely vector, $[\tilde Q_1,\tilde Q_2]=2\vec Q_1\times\vec Q_2$, and the scalar part kills it.
+**The value lies in $\mathbb{C}$ in both cases, and the second slot decides whether it is real.** A sesquilinear form is conjugate-symmetric, its value at the reversed pair being the complex conjugate, so its algebraic norm is real. A bilinear form is symmetric, the two orders agreeing, because the commutator of two elements is purely vector, $[\tilde Q_1,\tilde Q_2]=2\vec Q_1\times\vec Q_2$, and the scalar part kills it.
 
 **A form that vanishes identically is the zero form.** It is not counted as a fifth form. The four antisymmetric operations below carry it.
 
@@ -139,7 +137,7 @@ The four forms are the scalar parts of the four general products, and the eight 
 
 ## The Isometry Groups of the Four Forms
 
-**Definition (isometry group).** A $\mathbb{C}$-linear operator $T$ **preserves** a form $\varphi$ when $\varphi(T\tilde Q_1,T\tilde Q_2)=\varphi(\tilde Q_1,\tilde Q_2)$ for every pair. The preserving operators form a group, the **isometry group** $\mathrm{Isom}(\varphi)$.
+**Definition (isometry group).** A $\mathbb{C}$-linear operator $T$ **preserves** a form when the value at the transformed pair equals the value at the pair, for every pair. The preserving operators form a group, the **isometry group** of the form.
 
 **Theorem (the four isometry groups).** The four isometry groups are the complex orthogonal group, twice, the unitary group of the definite Hermitian form, and the indefinite unitary group of inertia $(1,3)$:
 
@@ -181,71 +179,44 @@ of real dimensions $12$, $12$, $16$ and $16$.
 
 ## The Algebraic Norm of an Operation
 
-**Definition (algebraic norm).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde Q_1,\tilde Q_2)$. The **algebraic norm of the operation $f$** is the function
+**Definition (algebraic norm).** The **algebraic norm** of a form is that form read at its two equal arguments, a function of one element. The four forms give four algebraic norms, written $P$, $N$, $H$ and $\mathrm{Kr}$.
 
-$$
-\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q).
-$$
+**The value lies in the ring of the form.** It is complex for the two bilinear forms and real for the two sesquilinear ones. A form that vanishes identically gives the zero function, and that is the case of the four antisymmetric operations.
 
-**It is a function of one element and of degree two in the coordinates.** Its value lies in $\mathbb{C}$ when $f$ is bilinear and in $\mathbb{R}$ when $f$ is Hermitian, and it is the quadratic form of the form, $\varphi(\tilde Q)=\mathfrak{Q}(\tilde Q)$, in the sense of *The Norm Defined by a Form*. It records the size of an element only in the sense of the ring. It is not a distance, and it becomes one only when it is selected to take positive real values.
-
-**An operation whose form vanishes identically has the zero algebraic norm.** That is the case of the four antisymmetric operations.
-
-## From the Four Forms to the Four Norms
-
-**Proposition (the twelve operations carry four algebraic norms).** The twelve operations have exactly four distinct non-zero algebraic norms, each attained by two operations, and four operations have the zero algebraic norm.
-
-*Proof.* The algebraic norm is the form at two equal arguments, so the count of the four is the count of the four forms, which is the proposition of the section above. The symmetrisation of a family therefore carries the same algebraic norm as its general product, and the antisymmetrisation carries the zero one. Hence the algebraic norms of the twelve are those of the four general products, each on the two operations $\mathrm G$ and $\mathrm S$ of its family, and $0$ on the four operations $\wedge$.
-
-**The four are distinct as functions of one element.** On $\vec e_x$ and on $ie_t$ their value pairs are
-
-$$
-(-1,-1),\qquad(1,-1),\qquad(1,1),\qquad(-1,1),
-$$
-
-four different pairs, in the order $P$, $N$, $H$, $\mathrm{Kr}$.
-
-**Remark (a vanishing form carries no algebraic norm).** The four antisymmetric operations have zero scalar part, so their values lie in the vector subspace and their algebraic norm is identically zero. A vanishing quadratic form is not a norm of the algebra, and its vanishing set is the whole space.
+**The twelve operations carry these four and no more.** Symmetrisation keeps the scalar part of a product and antisymmetrisation kills it, so each family hands its form to two of its three operations and nothing to the third. The four are distinct as functions of one element: on $\vec e_x$ and on $ie_t$ their value pairs are $(-1,-1)$, $(1,-1)$, $(1,1)$ and $(-1,1)$, in the order $P$, $N$, $H$, $\mathrm{Kr}$.
 
 ## The Four Norms
 
-Each algebraic norm is the diagonal of its form:
-
-$$
-\boxed{\;
-P(\tilde Q)=\langle\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
-N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
-H(\tilde Q)=\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
-\mathrm{Kr}(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}
-\;}.
-$$
-
-Each is written on the coordinates of one element, with its ring of values, its values on the basis and its signature.
+The four norms are the four forms read at their two equal arguments. Each is written on the coordinates of one element, with its values on the basis and the signature of its realification.
 
 ### The Plain Norm
 
 **The plain norm, written $P$.**
 
 $$
-P(\tilde Q)=\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2}.
+P(\tilde Q)=\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle=\mathrm{Sc}(\tilde Q^{2})=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_t^{2}-Q_x^{2}-Q_y^{2}-Q_z^{2},
 $$
 
-It is complex-valued and $\mathbb{C}$-quadratic, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone, of real dimension six. It is not multiplicative. It is the algebraic norm that the plain product carries, and it carries no job of its own: the square, its idempotents, its Peirce decomposition, its roots and its cone are properties of the product, and the product comes before the form.
+the plain form read at two equal arguments. It is complex-valued and $\mathbb{C}$-quadratic, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(4,4)$.
+
+Its null set is the complex cone, of real dimension six. It is not multiplicative, and it decides no invertibility: the unit $e_t+\vec e_x$ has norm zero and the zero divisor $e_t+i\vec e_x$ has norm $2$. The square, its idempotents, its Peirce decomposition, its roots and its cone are properties of the product, which comes before the form.
 
 ### The Quaternionic Norm
 
 **The quaternionic norm, written $N$.**
 
 $$
-\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}.
+N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=\langle\tilde Q,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)=\sum_\mu Q_\mu^{2}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
 
-It is complex-valued, its values on the basis are all $+1$, and its realification is of signature $(4,4)$. Its vanishing set is the zero-divisor cone $\mathcal N$, of real dimension six, and the norm is the reason the algebra has zero divisors at all.
+the quaternionic form read at two equal arguments. It is complex-valued, its values on the basis are all $+1$, and its realification is of signature $(4,4)$.
+
+Its null set is the zero-divisor cone $\mathcal N$, of real dimension six, and the norm is the reason the algebra has zero divisors at all.
 
 **Proposition (multiplicativity).** The quaternionic norm is multiplicative:
 
 $$
-\boxed{\;\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}\;}
+\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\,\langle\tilde Q_2\rangle_{\natural}.
 $$
 
 *Proof.* Write $\tilde Q_1=c_1+v_1$ and $\tilde Q_2=c_2+v_2$. The product is
@@ -289,45 +260,45 @@ $$
 **The Hermitian norm, written $H$.**
 
 $$
-H(\tilde Q)=\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2}.
+H(\tilde Q)=\langle\tilde Q\rangle_{*}=\langle\tilde Q,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}+\lvert Q_x\rvert^{2}+\lvert Q_y\rvert^{2}+\lvert Q_z\rvert^{2},
 $$
 
-It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the Euclidean norm, $H(\tilde Q)=\lVert\tilde Q\rVert^{2}$.
+the Hermitian form read at two equal arguments. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its values on the basis are all $+1$, and its realification is of signature $(8,0)$.
 
-**It is the one norm of the four whose square root is the topological norm.** That root gives the distance, the balls, the convergence, the bounded operators and the completion of the space. It is not multiplicative, and the section after next proves that no definite function on this algebra is.
+Its null set is the origin alone, so it has no cone. It is the one norm of the four whose square root is the topological norm, and that root gives the distance, the balls, the convergence, the bounded operators and the completion of the space. It is not multiplicative, and the section after next proves that no definite function on this algebra is.
 
 ### The Krein Norm
 
 **The Krein norm, written $\mathrm{Kr}$.**
 
 $$
-\mathrm{Kr}(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2}.
+\mathrm{Kr}(\tilde Q)=\langle\tilde Q\rangle_{\natural*}=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_t\rvert^{2}-\lvert Q_x\rvert^{2}-\lvert Q_y\rvert^{2}-\lvert Q_z\rvert^{2},
 $$
 
-It is real-valued and indefinite, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(2,6)$. It is the difference of the two contents of the centre–vector split, $\mathrm{Kr}(\tilde Q)=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2}$, so its vanishing set is the real cone $\mathcal K$, of real dimension seven. It is not multiplicative.
+the Krein form read at two equal arguments. It is real-valued and indefinite, its values on the basis are the signs $\mathrm E$, and its realification is of signature $(2,6)$.
 
-**Its two value-one sets have different topologies.** On $\{\mathrm{Kr}=1\}$ the scalar coordinate has modulus squared $1+\lvert\vec Q\rvert^{2}$ and the vector part is free, so the set is $S^{1}\times\mathbb{R}^{6}$. On $\{\mathrm{Kr}=-1\}$ the vector part has modulus squared $1+\lvert Q_t\rvert^{2}$ and the scalar part is free, so the set is $\mathbb{R}^{2}\times S^{5}$. The two sets are not homeomorphic, and no level set of the norm is a sphere.
+It is the difference of the two contents of the centre–vector split, so its null set is the real cone $\mathcal K$, of real dimension seven. It is not multiplicative. Its two value-one sets have different topologies: on $\{\mathrm{Kr}=1\}$ the vector part is free and the set is $S^{1}\times\mathbb{R}^{6}$, while on $\{\mathrm{Kr}=-1\}$ the scalar part is free and the set is $\mathbb{R}^{2}\times S^{5}$, so no level set of the norm is a sphere.
 
 ## The Table of the Four Norms
 
-| norm | coordinates | letter | values in | multiplicative | definite | vanishing set | job |
-|---|---|---|---|---|---|---|---|
-| the plain norm | $\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | $P$ | $\mathbb{C}$ | no | no | the complex cone, dim $6$ | the pairing read on the diagonal |
-| the quaternionic norm | $\sum_\mu Q_\mu^{2}$ | $N$ | $\mathbb{C}$ | **yes** | no | $\mathcal N$, dim $6$ | invertibility, the interval |
-| the Hermitian norm | $\sum_\mu\lvert Q_\mu\rvert^{2}$ | $H$ | $\mathbb{R}$ | no | **yes** | $\{0\}$ | topology, $\lVert\tilde Q\rVert^{2}$, the weight |
-| the Krein norm | $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm{Kr}$ | $\mathbb{R}$ | no | no | $\mathcal K$, dim $7$ | the signed content |
+| Full norm name | Reduced name | Letter | Norm | Expression with $\mathrm{Sc}$ | Coordinates | On the basis | Signature over $\mathbb{R}$ | Null set | Values land in |
+|---|---|---|---|---|---|---|---|---|---|
+| The general plain bilinear algebraic norm | **Plain Norm** | $P$ | $\langle\cdot\rangle$ | $\mathrm{Sc}(\tilde Q^{2})$ | $\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | $\mathrm E$ | $(4,4)$ | the complex cone | $\mathbb{C}$ |
+| The general quaternionic bilinear algebraic norm | **Quaternionic Norm** | $N$ | $\langle\cdot\rangle_{\natural}$ | $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q)$ | $\sum_\mu Q_\mu^{2}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero-divisor cone | $\mathbb{C}$ |
+| The general plain sesquilinear algebraic norm | **Hermitian Norm** | $H$ | $\langle\cdot\rangle_{*}$ | $\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | $\sum_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | $\mathbb{R}$ |
+| The general quaternionic sesquilinear algebraic norm | **Krein Norm** | $\mathrm{Kr}$ | $\langle\cdot\rangle_{\natural*}$ | $\mathrm{Sc}(\tilde Q^{\natural}\tilde Q^{*})$ | $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$, the Krein cone | $\mathbb{R}$ |
 
-**The table separates the four by their coordinates, their letter, their ring of values, their vanishing set and the two properties that single out one norm each.** Multiplicativity singles out the quaternionic norm, and definiteness singles out the Hermitian one. Two of the four are the working norms: the quaternionic one answers *when is the element invertible*, and the Hermitian one answers *what is the distance*. The plain and the Krein norms are the two indefinite remainders, one complex and one real, and each is the sign-flipped twin of a working norm.
+**The table separates the four by their letter, the product under $\mathrm{Sc}$, their coordinates, their values on the basis, the signature of the realification and the null set.** Multiplicativity singles out the quaternionic norm and definiteness singles out the Hermitian one, so the quaternionic norm answers *when is the element invertible* and the Hermitian one answers *what is the distance*. The plain and the Krein norms are the two indefinite remainders, one complex and one real, and each is the sign-flipped twin of a working norm: the plain is the quaternionic with the sign of the vector part reversed, the Krein is the Hermitian with the same reversal. The four words of the category attach to the letters: the plain norm is the *pairing* read on the diagonal, the quaternionic the *interval*, the Hermitian the *weight* and the Krein the *volume*.
 
 ## What the Four Norms Separate
 
-**Proposition (no function is both definite and multiplicative).** No function $\varphi$ on $\mathbb{B}$ with $\varphi(0)=0$ is both definite, real-valued and non-zero off the origin, and multiplicative.
+**Proposition (no function is both definite and multiplicative).** No function $g$ on $\mathbb{B}$ with $g(0)=0$ is both definite, real-valued and non-zero off the origin, and multiplicative.
 
-*Proof.* Let $z_\pm=e_t\pm i\vec e_x$. Then $(i\vec e_x)^{2}=\vec e_x^{2}$ and $z_+z_-=e_t^{2}-(i\vec e_x)^{2}=e_t+e_t=0$, with $z_\pm\neq0$. A multiplicative function with $\varphi(0)=0$ gives $\varphi(z_+)\varphi(z_-)=0$, so one of the two values is zero on a non-zero element. A definite function is non-zero there. No function is both.
+*Proof.* Let $z_\pm=e_t\pm i\vec e_x$. Then $(i\vec e_x)^{2}=\vec e_x^{2}$ and $z_+z_-=e_t^{2}-(i\vec e_x)^{2}=e_t+e_t=0$, with $z_\pm\neq0$. A multiplicative function $g$ with $g(0)=0$ gives $g(z_+)g(z_-)=0$, so one of the two values is zero on a non-zero element. A definite function is non-zero there. No function is both.
 
 **Corollary.** The Hermitian norm is definite and not multiplicative. The quaternionic norm is multiplicative and not definite, being complex-valued and vanishing on the whole zero-divisor cone. No third norm of the four repairs the split.
 
-**Proposition (only the quaternionic norm is multiplicative).** Of the four norms, $\langle\cdot\rangle_{\natural}$ alone satisfies $\varphi(\tilde Q_1\tilde Q_2)=\varphi(\tilde Q_1)\varphi(\tilde Q_2)$.
+**Proposition (only the quaternionic norm is multiplicative).** Of the four norms, $\langle\cdot\rangle_{\natural}$ alone satisfies $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$.
 
 *Proof.* The quaternionic norm is multiplicative by the proposition of its section. The other three are refuted by one substitution each. For $P$: $\vec e_x\vec e_y=\vec e_z$, so $P(\vec e_x\vec e_y)=-1$ while $P(\vec e_x)P(\vec e_y)=(-1)(-1)=1$. For $H$: $H(\vec e_x+i\vec e_y)=2$ while $(\vec e_x+i\vec e_y)^{2}=\vec e_x^{2}+(i\vec e_y)^{2}=-e_t+e_t=0$ and $H(0)=0$. For $\mathrm{Kr}$: $\mathrm{Kr}(e_t+\vec e_x)=0$ while $(e_t+\vec e_x)^{2}=2\vec e_x$ and $\mathrm{Kr}(2\vec e_x)=-4$.
 
@@ -337,19 +308,19 @@ It is real-valued and indefinite, its values on the basis are the signs $\mathrm
 
 ## Multiplicativity, Definiteness and the Zero Divisors
 
-**The precise claim.** The proposition above is the organising fact of the four-norm table, and it is often paraphrased as the statement that no form on $\mathbb{B}$ can be both commutative and definite. The paraphrase misplaces the word. Commutativity is a property of a product; a form is symmetric or conjugate-symmetric, and all four forms here have that property by construction. What the proposition separates is **multiplicativity**, $\varphi(\tilde Q_1\tilde Q_2)=\varphi(\tilde Q_1)\varphi(\tilde Q_2)$, and **definiteness**, real values, $\varphi(0)=0$ and $\varphi(\tilde Q)\neq0$ off the origin. The normalisation $\varphi(0)=0$ belongs to the definition: without it the constant function $1$ is multiplicative and non-zero off the origin.
+**The precise claim.** The proposition above is the organising fact of the four-norm table, and it is often paraphrased as the statement that no form on $\mathbb{B}$ can be both commutative and definite. The paraphrase misplaces the word. Commutativity is a property of a product; a form is symmetric or conjugate-symmetric, and all four forms here have that property by construction. What the proposition separates is **multiplicativity**, the value of the norm of a product being the product of the two values, and **definiteness**, real values, zero at the origin and non-zero off it. The normalisation to zero at the origin belongs to the definition: without it the constant function $1$ is multiplicative and non-zero off the origin.
 
 **Symmetry is not the failing property.** The scalar part of a product is symmetric because the commutator is purely vector, and this is why the four forms are symmetric or conjugate-symmetric. The algebra itself is not commutative: $\vec e_x\vec e_y=\vec e_z$ while $\vec e_y\vec e_x=-\vec e_z$. The symmetry of the four forms therefore survives the non-commutativity of the product, and it cannot fail in the passage from one form to another.
 
-**The mechanism is the zero divisors.** Let $\varphi$ be multiplicative and definite. The pair $z_\pm=e_t\pm i\vec e_x$ has $z_+z_-=0$ with $z_\pm\neq0$, so
+**The mechanism is the zero divisors.** Let $g$ be multiplicative and definite. The pair $z_\pm=e_t\pm i\vec e_x$ has $z_+z_-=0$ with $z_\pm\neq0$, so
 
 $$
-\varphi(z_+)\varphi(z_-)=\varphi(0)=0,
+g(z_+)g(z_-)=g(0)=0,
 $$
 
 both values are non-zero by definiteness, and their product cannot be zero. No commutativity is used in the argument.
 
-**The obstruction is not the failure of commutativity, and the examples say so.** The quaternions are not commutative, and $q\mapsto q\bar q$ is definite and multiplicative, because they have no zero divisors. The dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ are commutative, and they admit no definite multiplicative function, since $\varphi(\varepsilon)^{2}=\varphi(\varepsilon^{2})=\varphi(0)=0$ forces $\varphi(\varepsilon)=0$ on a non-zero element. The obstruction is the zero divisor.
+**The obstruction is not the failure of commutativity, and the examples say so.** The quaternions are not commutative, and $q\mapsto q\bar q$ is definite and multiplicative, because they have no zero divisors. The dual numbers $\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ are commutative, and they admit no definite multiplicative function, since $g(\varepsilon)^{2}=g(\varepsilon^{2})=g(0)=0$ forces $g(\varepsilon)=0$ on a non-zero element. The obstruction is the zero divisor.
 
 **The four sectors.** The quaternionic norm is multiplicative and not definite: it is complex-valued and vanishes on the whole zero-divisor cone. The Hermitian norm is definite and not multiplicative. The plain norm is neither: it is complex-valued, indefinite, and $P(\vec e_x\vec e_y)=-1$ while $P(\vec e_x)P(\vec e_y)=1$. The Krein norm is neither: it is real and indefinite, and $\mathrm{Kr}(e_t+\vec e_x)=0$ while $(e_t+\vec e_x)^{2}=2\vec e_x$ has value $-4$. The two-by-two table is therefore
 
@@ -420,7 +391,7 @@ P=-H,\qquad \mathrm{Kr}=-N\quad\text{on }\mathbb{B}_\Phi;\qquad
 P=H,\qquad \mathrm{Kr}=N\quad\text{on }\mathbb{B}_\Psi.
 $$
 
-*Proof.* On $\mathbb{B}_\Phi$ the coefficients satisfy $\overline{Q_\mu}=-\varepsilon_\mu Q_\mu$, so $\lvert Q_\mu\rvert^{2}=-Q_\mu^{2}$ and each sesquilinear coordinate term is the negative of the bilinear one; on $\mathbb{B}_\Psi$ the relation is $\overline{Q_\mu}=\varepsilon_\mu Q_\mu$, and the two agree. The identities are read term by term in the boxed formulas of the four norms.
+*Proof.* On $\mathbb{B}_\Phi$ the coefficients satisfy $\overline{Q_\mu}=-\varepsilon_\mu Q_\mu$, so $\lvert Q_\mu\rvert^{2}=-Q_\mu^{2}$ and each sesquilinear coordinate term is the negative of the bilinear one; on $\mathbb{B}_\Psi$ the relation is $\overline{Q_\mu}=\varepsilon_\mu Q_\mu$, and the two agree. The identities are read term by term in the formulas of the four norms above.
 
 **The identities are statements about forms.** They do not say that the four products agree on a sector; the products are the subject of the previous entry, and they do not.
 
@@ -597,9 +568,9 @@ and the signed measure is the weight with the quaternion conjugate inserted in t
 
 ### I.7.h — No Function Is Both a Mass and a Probability
 
-**Read:** no function on the algebra with $\varphi(0)=0$ is both definite and multiplicative.
+**Read:** no function on the algebra that vanishes at the origin is both definite and multiplicative.
 
-**The proof is one line and it is the whole reading.** The element $z_+=e_t+i\vec e_x$ and its partner $z_-=e_t-i\vec e_x$ are non-zero, and their product is zero. So a multiplicative $\varphi$ with $\varphi(0)=0$ gives $\varphi(z_+)\varphi(z_-)=0$. One factor vanishes on a non-zero element, and a definite function cannot vanish there.
+**The proof is one line and it is the whole reading.** The element $z_+=e_t+i\vec e_x$ and its partner $z_-=e_t-i\vec e_x$ are non-zero, and their product is zero. So a multiplicative function $g$ vanishing at the origin gives $g(z_+)g(z_-)=0$. One factor vanishes on a non-zero element, and a definite function cannot vanish there.
 
 **A theory of one algebra therefore needs two different norms.** The interval is the measure that survives composition, and it vanishes on the null cone. The weight is the measure that never vanishes, and it is destroyed by composition. A formalism that wants both a causal structure and a probability has to carry both, and it cannot identify them.
 
@@ -705,7 +676,7 @@ $$
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$, $N$ | the quaternionic form, the interval, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, signature $(4,4)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$, $H$ | the Hermitian form, the weight, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, signature $(8,0)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, $\mathrm{Kr}$ | the Krein form, the volume, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$, signature $(2,6)$ |
-| $\varphi(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$ | one function, two arities: two arguments give the form, one gives the algebraic norm; $K_1$ is the identity or ${}^{\natural}$, $K_2$ the identity or ${}^{*}$ |
+| $\langle\tilde Q_1,\tilde Q_2\rangle=\mathrm{Sc}\bigl(K_1(\tilde Q_1)K_2(\tilde Q_2)\bigr)$, $\langle\tilde Q\rangle=\langle\tilde Q,\tilde Q\rangle$ | one expression, two arities: two arguments give the form, one gives the algebraic norm; $K_1$ is the identity or ${}^{\natural}$, $K_2$ the identity or ${}^{*}$ |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector of the quaternion conjugation, which the first slot applies |
 | $\mathrm E$, $\mathrm I_4$ | the two sets of values on a basis; $\mathrm E$ carries the signs, $\mathrm I_4$ the plus signs |
 | $P(\tilde Q)$, $N(\tilde Q)$, $H(\tilde Q)$, $\mathrm{Kr}(\tilde Q)$ | the four norms, with values in $\mathbb{C}$, $\mathbb{C}$, $\mathbb{R}$, $\mathbb{R}$ |

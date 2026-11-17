@@ -8,7 +8,7 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 Earlier exercises treated a single qubit: a single measurement (Exercise: Measuring Spin Along an Arbitrary Direction), time evolution (Exercise: Spin Precession in a Magnetic Field), and successive measurements (Exercise: Successive Measurements of Spin). This exercise treats a **two-qubit system**, and introduces the first genuinely quantum-mechanical correlation: **entanglement**.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The trace on $\mathbb{B}\otimes\mathbb{B}$ is the tensor product of the traces on each factor: $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The reading of an element of $\mathbb{B}_{\Psi}$ is its scalar part: a contraction of one biquaternion carries $2$, and a contraction of two factors carries $4$. For the two-qubit system, the state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, which is isomorphic to $M_4(\mathbb{C})$. The scalar part on $\mathbb{B}\otimes\mathbb{B}$ is the product of the scalar parts on each factor, $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$, so a contraction of both factors carries $4$ and a contraction of one carries $2$.
 
 ## The Exercise
 
@@ -123,7 +123,7 @@ $$
 \tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{\mathrm{singlet}} = \frac{1}{16}\cdot 4\left(e_t\otimes e_t + \vec e_x\otimes \vec e_x + \vec e_y\otimes \vec e_y + \vec e_z\otimes \vec e_z\right) = \tilde\Pi_{\mathrm{singlet}}.
 $$
 
-*Trace.* The trace is $\mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}(e_\mu)^2$. Each $\mathrm{Tr}_\mathbb{B}(e_\mu) = 2$ for $\mu = t$ (since $\mathrm{Tr}_\mathbb{B}(e_t) = 2$) and $0$ for $\mu\in\{x,y,z\}$ (since the trace of a pure quaternion vanishes). So the sum is $4$, and $\mathrm{Tr}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
+*Contraction.* The contraction is $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\bigl(2\,\mathrm{Sc}(e_\mu)\bigr)^2$. Each $2\,\mathrm{Sc}(e_\mu)$ is $2$ for $\mu = t$ (since $\mathrm{Sc}(e_t) = 1$) and $0$ for $\mu\in\{x,y,z\}$ (since the scalar part of a pure quaternion vanishes). So the sum is $4$, and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{singlet}}) = \frac{1}{4}\cdot 4 = 1$.
 
 ### Step 2: The measurement operators
 
@@ -135,10 +135,10 @@ $$
 
 ### Step 3: The probability
 
-The joint probability is the trace formula on $\mathbb{B}\otimes\mathbb{B}$:
+The joint probability is the contraction formula on $\mathbb{B}\otimes\mathbb{B}$:
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right).
+p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right).
 $$
 
 Computing the product,
@@ -147,15 +147,15 @@ $$
 \tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++} = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\left[e_\mu(e_t + i\vec u_a)\right]\otimes\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
-Applying the tensor-product trace,
+Applying the tensor-product scalar part,
 
 $$
-p(+,+) = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}\mathrm{Tr}_\mathbb{B}\!\left[e_\mu(e_t + i\vec u_a)\right]\cdot\mathrm{Tr}_\mathbb{B}\!\left[e_\mu(e_t + i\vec u_b)\right].
+p(+,+) = \frac{1}{16}\sum_{\mu\in\{t,x,y,z\}}2\,\mathrm{Sc}\!\left[e_\mu(e_t + i\vec u_a)\right]\cdot 2\,\mathrm{Sc}\!\left[e_\mu(e_t + i\vec u_b)\right].
 $$
 
-**Term $\mu = t$.** $\mathrm{Tr}_\mathbb{B}(e_t + i\vec u_a) = 2$, and similarly for $\vec u_b$. Contribution: $2\cdot 2 = 4$.
+**Term $\mu = t$.** $2\,\mathrm{Sc}(e_t + i\vec u_a) = 2$, and similarly for $\vec u_b$. Contribution: $2\cdot 2 = 4$.
 
-**Terms $\mu\in\{x,y,z\}$.** We have $e_\mu(e_t + i\vec u_a) = e_\mu + ie_\mu\vec u_a$. The scalar part of $e_\mu\vec u_a$ is $-\vec {u_a}_\mu e_t$, so $\mathrm{Tr}_\mathbb{B}(e_\mu\vec u_a) = -2\vec {u_a}_\mu$ and $\mathrm{Tr}_\mathbb{B}(e_\mu + ie_\mu\vec u_a) = -2i\vec {u_a}_\mu$. Similarly $\mathrm{Tr}_\mathbb{B}(e_\mu + ie_\mu\vec u_b) = -2i\vec {u_b}_\mu$. Contribution of term $j$: $(-2i\vec {u_a}_\mu)(-2i\vec {u_b}_\mu) = -4\vec {u_a}_\mu\vec {u_b}_\mu$.
+**Terms $\mu\in\{x,y,z\}$.** We have $e_\mu(e_t + i\vec u_a) = e_\mu + ie_\mu\vec u_a$. The scalar part of $e_\mu\vec u_a$ is $-\vec {u_a}_\mu e_t$, so $2\,\mathrm{Sc}(e_\mu\vec u_a) = -2\vec {u_a}_\mu$ and $2\,\mathrm{Sc}(e_\mu + ie_\mu\vec u_a) = -2i\vec {u_a}_\mu$. Similarly $2\,\mathrm{Sc}(e_\mu + ie_\mu\vec u_b) = -2i\vec {u_b}_\mu$. Contribution of term $j$: $(-2i\vec {u_a}_\mu)(-2i\vec {u_b}_\mu) = -4\vec {u_a}_\mu\vec {u_b}_\mu$.
 
 Summing over $\mu\in\{x,y,z\}$: $-4\,\vec u_a\cdot\vec u_b$.
 
@@ -207,19 +207,19 @@ These agree with the physical expectation: the singlet state is perfectly anti-c
 
 **1. Entanglement as a non-product state.** The singlet state $\tilde\Pi_{\mathrm{singlet}}$ is an element of $\mathbb{B}\otimes\mathbb{B}$ that is **not** of the form $\tilde\Pi_1\otimes\tilde\Pi_2$ for any single-qubit idempotents $\tilde\Pi_1, \tilde\Pi_2$. This is the algebraic content of entanglement: the joint state is not a product of the two subsystems' states.
 
-**2. The trace formula generalizes to two qubits.** The joint probability is
+**2. The contraction formula generalizes to two qubits.** The joint probability is
 
 $$
-p(+,+) = \mathrm{Tr}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right),
+p(+,+) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{singlet}}\circ \tilde\Pi_{++}(\vec u_a,\vec u_b)\right),
 $$
 
-the natural pairing between the joint state and the joint measurement operator. The trace is the tensor product of the single-qubit traces, $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.
+the natural pairing between the joint state and the joint measurement operator. The contraction factorises over the two factors, $4\,\mathrm{Sc}(x\otimes y) = 2\,\mathrm{Sc}(x)\cdot 2\,\mathrm{Sc}(y)$.
 
 **3. The correlations arise from the tensor-product structure.** The single-qubit idempotents $\tilde\Pi(\vec u_a)$ and $\tilde\Pi(\vec u_b)$ are independent, but the joint state $\tilde\Pi_{\mathrm{singlet}}$ is entangled. The correlation $\vec u_a\cdot\vec u_b$ enters through the cross terms $\sum_\eta \vec e_\eta\otimes \vec e_\eta$ in the singlet idempotent, which couple the two qubits.
 
-**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the trace formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
+**4. The geometry enters through the algebra.** The angle $\theta$ enters through the scalar product $\vec u_a\cdot\vec u_b$, which appears in the contraction formula through the products $\vec e_\nu\vec u_a$ and $\vec e_\nu\vec u_b$. The Bloch sphere geometry of each qubit is thus combined into the joint probability through the algebra of $\mathbb{B}\otimes\mathbb{B}$.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\tilde{Ξ}^-\rangle\langle\tilde{Ξ}^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, with the Born rule given by the tensor-product trace.**
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B}\otimes\mathbb{B} \cong M_4(\mathbb{C})$, and the singlet idempotent corresponds exactly to the rank-one projector $|\tilde{Ξ}^-\rangle\langle\tilde{Ξ}^-|$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the kinematics of two qubits is contained in the tensor product $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, with the Born rule given by the tensor-product contraction.**
 
 ## Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin
 
@@ -228,7 +228,7 @@ the natural pairing between the joint state and the joint measurement operator. 
 | System | One qubit | One qubit | One qubit | Two qubits |
 | Physical process | Single measurement | Time evolution | Successive measurements | Entangled measurement |
 | Structural object | Idempotent + idempotent | Idempotent + $*$-unitary | Sequence of idempotents | Idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
-| Rule used | Trace formula | Trace formula + rotor conjugation | Product of trace formulas | Tensor-product trace formula |
+| Rule used | Contraction formula | Contraction formula + rotor conjugation | Product of contractions | Tensor-product contraction |
 | Result | $\cos^2(\theta/2)$ | $(\frac{\hbar}{2})\cos(\omega_L r'_t/c)$ | $\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$ | $(1/4)(1 - \vec u_a\cdot\vec u_b)$ |
 
 These exercises illustrate four fundamental operations of the quantum formalism: **measurement** (Exercise: Measuring Spin Along an Arbitrary Direction), **evolution** (Exercise: Spin Precession in a Magnetic Field), **sequential measurement** (Exercise: Successive Measurements of Spin), and **entangled measurement** (Exercise: Two Spins in the Singlet State). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$ (and, in Exercise: Two Spins in the Singlet State, their tensor products).
@@ -239,7 +239,7 @@ We have solved a fourth exercise in quantum physics — the joint spin measureme
 
 In the **standard formulation**, the solution proceeds through the two-qubit state, the tensor-product projector, and the Born rule, giving $p(+,+) = (1/4)(1 - \vec u_a\cdot\vec u_b)$.
 
-In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the tensor-product idempotent, and the trace formula, giving the same result.
+In the **biquaternion formulation**, the solution proceeds through the singlet idempotent in $\mathbb{B}\otimes\mathbb{B}$, the tensor-product idempotent, and the contraction formula, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of entanglement: the joint state is a **non-product idempotent** of the tensor-product algebra, and the correlations arise from the tensor-product terms in the state.
 
@@ -257,7 +257,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac{1}{4}(e_t\otimes e_t + \sum_\eta \vec e_\eta\otimes \vec e_\eta)$ | Singlet idempotent |
 | $\tilde\Pi(\vec u_a) = \tfrac{1}{2}(e_t + i\vec u_a)$ | Single-qubit idempotent |
 | $\tilde\Pi_{++}(\vec u_a,\vec u_b) = \tilde\Pi(\vec u_a)\otimes \tilde\Pi(\vec u_b)$ | Joint idempotent |
-| $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
+| $\mathrm{Sc}(x\otimes y) = \mathrm{Sc}(x)\cdot\mathrm{Sc}(y)$ | Scalar part on the tensor product; a contraction carries $4$ |
 
 ## Further Reading
 

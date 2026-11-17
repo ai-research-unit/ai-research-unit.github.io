@@ -6,7 +6,7 @@
 
 This article writes that protocol in the biquaternion language of the companion articles. The protocol is worth writing out because it is the one place in the framework where four of its constructions meet at once, and where the difference between them is forced into the open:
 
-- the **state** is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image);
+- the **state** is a positive element $\tilde{Ϛ}_{\Psi}$ of the Hermitian subspace $\mathbb{B}_{\Psi}\subset\mathbb{B}$, normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the $2\times2$ image);
 - the **entangled resource** is a Bell idempotent $\tilde\Pi_{\epsilon}$ of the tensor square $\mathbb{B}\otimes\mathbb{B}$ — idempotent and Hermitian, but *not* $*$-unitary;
 - the **Bell measurement** is the four-outcome projective measurement whose projectors correspond to those same idempotents on the pair;
 - the **corrections** are $*$-unitary elements of $\mathbb{B}$ — gates, in the sense of the companion article on gates and circuits — and they are *not* idempotents.
@@ -28,7 +28,7 @@ Three qubits are involved, and it matters which is which:
 - the Bell measurement acts on qubits $1$ and $2$;
 - the correction acts on qubit $3$ alone.
 
-The arena is therefore $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, with the trace the product of the factor traces, $\mathrm{Tr}(x\otimes y\otimes z)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)\mathrm{Tr}_\mathbb{B}(z)$. The unknown state is written
+The arena is therefore $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, with the scalar part a product of factor scalar parts, $\mathrm{Sc}(x\otimes y\otimes z)=\mathrm{Sc}(x)\mathrm{Sc}(y)\mathrm{Sc}(z)$, so that a full contraction of the three factors carries $2^3=8$ and a contraction of two of them carries $4$. The unknown state is written
 
 $$
 \tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12\left(e_t+i\vec r\right),
@@ -41,7 +41,7 @@ with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maxim
 $$
 \tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} ,
 \qquad
-\mathrm{Tr}\left(\tilde{Ϛ}_{\Psi}^{(0)}\right)=1\cdot 1=1 ,
+8\,\mathrm{Sc}\left(\tilde{Ϛ}_{\Psi}^{(0)}\right)=1\cdot 1=1 ,
 $$
 
 where the superscripts record which factor each element occupies.
@@ -50,14 +50,14 @@ It is worth stating explicitly which algebra each object belongs to, because the
 
 | Object | Algebra | Algebraic type |
 |---|---|---|
-| $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the image); $\mathbb{B}_{\Psi}$ |
-| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of trace one; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
+| $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ | $\mathbb{B}$ | Hermitian, positive, $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (unit scalar part in the image); $\mathbb{B}_{\Psi}$ |
+| $\tilde\Pi_{Ξ^+}$, $\tilde\Pi_\epsilon$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian idempotent of unit scalar part; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $S_1,S_3$ | $\mathbb{B}\otimes\mathbb{B}$ | Hermitian involutions; $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ |
 | $\tilde\Pi_\epsilon\otimes e_t$ | $\mathbb{B}^{\otimes3}$ | Hermitian idempotent on factors $(1,2)$ |
 | $\tilde Q_\epsilon$ | $\mathbb{B}$ | $*$-Unitary (Hermitian Pauli); a gate |
 | the classical record | — | two bits, not an element of any of the above |
 
-Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{Ξ^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not $*$-unitary**: $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they are trace-one, not unimodular. Second, the corrections $\tilde Q_\epsilon$ are **$*$-unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
+Two distinctions in the table do the work of the whole article. First, the resource $\tilde\Pi_{Ξ^+}$ and the idempotents of the measurement $\tilde\Pi_\epsilon\otimes e_t$ are **idempotent** and **not $*$-unitary**: $\tilde\Pi_\epsilon^{*}\tilde\Pi_\epsilon=\tilde\Pi_\epsilon\neq e_t\otimes e_t$ on the pair (and $\tilde\Pi_\epsilon^{(12)}\neq e_t\otimes e_t\otimes e_t$ on three factors). They are the objects that resolve a measurement, and they carry unit contraction, not unit norm. Second, the corrections $\tilde Q_\epsilon$ are **$*$-unitary** and **not idempotent** (except for the identity): they are gates, and their conjugation action is reversible. The tensor square $\mathbb{B}\otimes\mathbb{B}$ is a matrix algebra, not a division algebra; it contains idempotents and zero divisors, and an element of $\mathbb{B}\otimes\mathbb{B}$ is not a state of a single qubit. The protocol is written below so that each line says which of these types is being used.
 
 ## The Resource and the Bell Measurement
 
@@ -68,7 +68,7 @@ $$
 \qquad \epsilon=(-1,+1,-1),
 $$
 
-an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ with $\tilde\Pi_{Ξ^+}^2=\tilde\Pi_{Ξ^+}$, $\tilde\Pi_{Ξ^+}^{*}=\tilde\Pi_{Ξ^+}$ and $\mathrm{Tr}(\tilde\Pi_{Ξ^+})=1$. Its defining property for the protocol is that both its partial traces are maximally mixed, $\mathrm{Tr}_1(\tilde\Pi_{Ξ^+})=\mathrm{Tr}_2(\tilde\Pi_{Ξ^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
+an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ with $\tilde\Pi_{Ξ^+}^2=\tilde\Pi_{Ξ^+}$, $\tilde\Pi_{Ξ^+}^{*}=\tilde\Pi_{Ξ^+}$ and $4\,\mathrm{Sc}(\tilde\Pi_{Ξ^+})=1$. Its defining property for the protocol is that both of its reductions are maximally mixed, $2\,\mathrm{Sc}_1(\tilde\Pi_{Ξ^+})=2\,\mathrm{Sc}_2(\tilde\Pi_{Ξ^+})=\tfrac12 e_t$: neither party, holding one half, has any local information about the pair. This is the same idempotent that the companion article on the Bell basis singles out as a member of the Bell idempotent basis, and the same one that the companion article on gates and circuits produces from $|00\rangle$ by a Hadamard and a CNOT.
 
 **The measurement.** Alice measures the pair $(1,2)$ in the Bell basis, that is, she measures the four projectors
 
@@ -170,26 +170,26 @@ $$
 =\tfrac14\,\tilde\Pi_\epsilon^{(12)}\otimes\left(\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*}\right)^{(3)}\;}.
 $$
 
-Two consequences follow immediately by taking traces and partial traces.
+Two consequences follow immediately by contracting and reducing.
 
-**The probabilities are uniform.** Taking the trace of both sides, and using $\mathrm{Tr}(\tilde\Pi_\epsilon)=1$ and $\mathrm{Tr}(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})=1$,
+**The probabilities are uniform.** Contracting both sides, and using $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)=1$ and $2\,\mathrm{Sc}(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})=1$,
 
 $$
-\boxed{\;p_\epsilon=\mathrm{Tr}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}_{\Psi}^{(0)}\right]=\tfrac14\;},
+\boxed{\;p_\epsilon=8\,\mathrm{Sc}\!\left[\left(\tilde\Pi_\epsilon^{(12)}\otimes e_t\right)\tilde{Ϛ}_{\Psi}^{(0)}\right]=\tfrac14\;},
 $$
 
 for each of the four outcomes. The outcome distribution is uniform and independent of $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$: the record alone carries no information about the state. The state is transferred to Bob's qubit by the projection itself, and the record's only role is to tell him which Pauli image he now holds and hence which correction to apply.
 
-**Bob's conditional state.** Since $\mathrm{Tr}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $\mathrm{Tr}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is
+**Bob's conditional state.** Since $4\,\mathrm{Sc}_{12}$ sends $\tilde\Pi_\epsilon\otimes X$ to $2\,\mathrm{Sc}(\tilde\Pi_\epsilon)X=X$, the post-measurement reduced state of qubit $3$ is
 
 $$
-\mathrm{Tr}_{12}\!\left[(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\,\tilde{Ϛ}_{\Psi}^{(0)}\,(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\right]
+4\,\mathrm{Sc}_{12}\!\left[(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\,\tilde{Ϛ}_{\Psi}^{(0)}\,(\tilde\Pi_\epsilon^{(12)}\otimes e_t)\right]
 =\tfrac14\,\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*} ,
 \qquad
-\frac{1}{p_\epsilon}\mathrm{Tr}_{12}(\cdots)=\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*} .
+\frac{1}{p_\epsilon}4\,\mathrm{Sc}_{12}(\cdots)=\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*} .
 $$
 
-So each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, with the $*$-unitary determined by the outcome. The normalisation is the standard conditional-state normalisation; the unnormalised branch has trace $\tfrac14$, the probability of that outcome.
+So each outcome leaves Bob's qubit in a $*$-unitary image of the unknown state, with the $*$-unitary determined by the outcome. The normalisation is the standard conditional-state normalisation; the unnormalised branch has contraction $\tfrac14$, the probability of that outcome.
 
 The four identities of the proposition are four distinct statements, one per outcome; each was recomputed directly in $\mathbb{B}^{\otimes3}$, on two pure and one mixed input state, not merely on the $Ξ^{+}$ outcome that organises the labelling.
 
@@ -224,10 +224,10 @@ Two remarks about the table. First, the fourth row is the one where the naive co
 
 ## No-Signalling, and Why There Is No Copy
 
-Before the classical record reaches Bob, his qubit carries no information about $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$. Write $\text{post}_\epsilon=\tilde\Pi_\epsilon^{(12)}\otimes(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})^{(3)}$ for the normalised post-measurement state on the branch $\epsilon$, so that $\mathrm{Tr}_{12}[\text{post}_\epsilon]=\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$. Averaging these over the outcomes, with their probabilities $p_\epsilon=\tfrac14$ and *without* any correction,
+Before the classical record reaches Bob, his qubit carries no information about $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$. Write $\text{post}_\epsilon=\tilde\Pi_\epsilon^{(12)}\otimes(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})^{(3)}$ for the normalised post-measurement state on the branch $\epsilon$, so that $4\,\mathrm{Sc}_{12}[\text{post}_\epsilon]=\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$. Averaging these over the outcomes, with their probabilities $p_\epsilon=\tfrac14$ and *without* any correction,
 
 $$
-\sum_\epsilon p_\epsilon\,\mathrm{Tr}_{12}\!\left[\text{post}_\epsilon\right]
+\sum_\epsilon p_\epsilon\,4\,\mathrm{Sc}_{12}\!\left[\text{post}_\epsilon\right]
 =\tfrac14\sum_\epsilon \tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*} .
 $$
 The sum over the four Pauli gates is the elementary Pauli twirl, and it is computed directly on the Bloch vector. Conjugation by $i\vec e_x$ is a rotation by $\pi$ about $\vec e_x$, which fixes $r_1$ and reverses $r_2,r_3$; conjugation by $i\vec e_y$ reverses $r_1,r_3$; conjugation by $i\vec e_z$ reverses $r_1,r_2$; and $e_t$ changes nothing. Adding the four,
@@ -249,12 +249,12 @@ Bob's unconditional state is the maximally mixed state, independent of $\tilde{�
 The same computation explains why the protocol does not clone. Alice's own qubit is left, after the measurement, in the state
 
 $$
-\mathrm{Tr}_{23}\!\left[\text{post}_\epsilon\right]
-=\mathrm{Tr}_2(\tilde\Pi_\epsilon)\,\mathrm{Tr}_\mathbb{B}\!\left(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}\right)
+4\,\mathrm{Sc}_{23}\!\left[\text{post}_\epsilon\right]
+=2\,\mathrm{Sc}_2(\tilde\Pi_\epsilon)\,2\,\mathrm{Sc}\!\left(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}\right)
 =\tfrac12 e_t ,
 $$
 
-since $\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$. Her qubit is maximally mixed for every outcome: the state is destroyed locally, not copied, and the single surviving copy is the one reconstructed at Bob's qubit. The two classical bits carry exactly the information that the measured qubit no longer does.
+since $2\,\mathrm{Sc}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$. Her qubit is maximally mixed for every outcome: the state is destroyed locally, not copied, and the single surviving copy is the one reconstructed at Bob's qubit. The two classical bits carry exactly the information that the measured qubit no longer does.
 
 ## The Protocol as a Channel
 
@@ -292,8 +292,8 @@ The three interpretations are not in conflict; they are the instrument, its bran
 
 - A single algebraic home for every object of the protocol: the unknown state in $\mathbb{B}_{\Psi}$, the resource as a Bell idempotent of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the measurement idempotents as $\tilde\Pi_\epsilon\otimes e_t$, and the corrections as $*$-unitary Pauli elements of $\mathbb{B}$.
 - The teleportation identity as an algebraic identity per outcome, $(\tilde\Pi_\epsilon\otimes e_t)\tilde{Ϛ}_{\Psi}^{(0)}(\tilde\Pi_\epsilon\otimes e_t)=\tfrac14 \tilde\Pi_\epsilon\otimes(\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*})$, with the four outcomes and the four Pauli corrections displayed in one table and the record expressed as stabiliser eigenvalues.
-- The uniform probability $\tfrac14$ for every outcome and the conditional state $\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$ as direct traces and partial traces of that identity.
-- No-signalling and the absence of a copy as two partial-trace computations, and the channel interpretation of the protocol as the rank-four instrument, its rank-one branches, and its rank-one completion.
+- The uniform probability $\tfrac14$ for every outcome and the conditional state $\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$ as direct contractions and reductions of that identity.
+- No-signalling and the absence of a copy as two reduction computations, and the channel interpretation of the protocol as the rank-four instrument, its rank-one branches, and its rank-one completion.
 
 **It does not claim:**
 
@@ -323,7 +323,7 @@ A source in the literature (Obojska, *Journal of Physics Communications* **4** (
 
 Quantum teleportation in the biquaternion framework is the following chain of algebraic statements.
 
-The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, whose partial traces are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec r)\in\mathbb{B}_{\Psi}$, and the initial state is $\tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.
+The resource is the Bell idempotent $\tilde\Pi_{Ξ^+}=\tfrac14(e_t\otimes e_t-\vec e_x\otimes \vec e_x+\vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$ of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, whose reductions are both $\tfrac12 e_t$. The unknown single-qubit state is $\tilde{Ϛ}_{\Psi,\mathrm{sp}}=\tfrac12(e_t+i\vec r)\in\mathbb{B}_{\Psi}$, and the initial state is $\tilde{Ϛ}_{\Psi}^{(0)}=\tilde{Ϛ}_{\Psi,\mathrm{sp}}^{(1)}\otimes \tilde\Pi_{Ξ^+}^{(23)}$.
 
 Alice measures the pair $(1,2)$ with the four Bell idempotents $\tilde\Pi_\epsilon^{(12)}=\tilde\Pi_\epsilon\otimes e_t$, equivalently with the commuting stabiliser observables $S_1=-\vec e_x\otimes \vec e_x$ and $S_3=-\vec e_z\otimes \vec e_z$, whose outcome pair is $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$. The teleportation identity
 
@@ -332,7 +332,7 @@ $$
 =\tfrac14\,\tilde\Pi_\epsilon^{(12)}\otimes\left(\tilde Q_\epsilon\,\tilde{Ϛ}_{\Psi,\mathrm{sp}}\,\tilde Q_\epsilon^{*}\right)^{(3)}
 $$
 
-holds for each of the four outcomes, with the Hermitian Pauli representatives $\tilde U_{Ξ^+}=e_t$, $\tilde U_{Ξ^-}=\tilde Q_z=i\vec e_z$, $\tilde U_{\mathrm{sp}^+}=\tilde Q_x=i\vec e_x$, $\tilde U_{\mathrm{sp}^-}=\tilde Q_y=i\vec e_y$. Its trace gives $p_\epsilon=\tfrac14$ for every outcome, and its partial trace gives Bob's conditional state $\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$. Bob applies the correction $\tilde Q_\epsilon^{*}=\tilde Q_\epsilon$ and recovers $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ exactly.
+holds for each of the four outcomes, with the Hermitian Pauli representatives $\tilde U_{Ξ^+}=e_t$, $\tilde U_{Ξ^-}=\tilde Q_z=i\vec e_z$, $\tilde U_{\mathrm{sp}^+}=\tilde Q_x=i\vec e_x$, $\tilde U_{\mathrm{sp}^-}=\tilde Q_y=i\vec e_y$. Its contraction gives $p_\epsilon=\tfrac14$ for every outcome, and its reduction gives Bob's conditional state $\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$. Bob applies the correction $\tilde Q_\epsilon^{*}=\tilde Q_\epsilon$ and recovers $\tilde{Ϛ}_{\Psi,\mathrm{sp}}$ exactly.
 
 The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsilon\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}=\tfrac12 e_t$, so no information reaches Bob before the record does — no-signalling in the protocol's own form — and Alice's qubit is left maximally mixed, so no copy is made. In the language of channels, the protocol without the record is a rank-four irreversible channel, each branch with the record is a rank-one gate, and the completed protocol with the record and the correction is the identity channel, a rank-one gate. Teleportation is thus the identity gate realised through a measurement of Kraus rank four, the resource and the record being its cost.
 
@@ -355,7 +355,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $i\vec e_x,\ i\vec e_y,\ i\vec e_z$ | Pauli-gate representatives |
 | $p_\epsilon=\tfrac14$ | Outcome probability |
 | $\tilde Q_\epsilon\tilde{Ϛ}_{\Psi,\mathrm{sp}}\tilde Q_\epsilon^{*}$ | Bob's conditional state |
-| $\mathrm{Tr}_2(\tilde\Pi_\epsilon)=\mathrm{Tr}_1(\tilde\Pi_\epsilon)=\tfrac12 e_t$ | Maximally mixed partial trace |
+| $2\,\mathrm{Sc}_2(\tilde\Pi_\epsilon)=2\,\mathrm{Sc}_1(\tilde\Pi_\epsilon)=\tfrac12 e_t$ | Maximally mixed reduction |
 | $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | The Born weight, as a scalar part |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

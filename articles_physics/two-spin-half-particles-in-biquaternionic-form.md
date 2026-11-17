@@ -4,11 +4,11 @@
 
 Two spin-$\tfrac12$ particles form the simplest composite quantum system, and in the biquaternion framework it is also the only composite system that is built without leaving the algebra. Each particle is a fundamental module of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the pair lives in the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$; and the spin operators of the pair are the sums of the one-particle operators, which are elements of $\mathbb{B}\otimes\mathbb{B}$. Everything the two-particle system does — the triplet and the singlet, the exchange splitting, the Heisenberg coupling, the reduced states — is a statement about elements of that algebra.
 
-This article works out that system. It is the first application of the coupling machinery: the total spin operators, the four coupled states as idempotents of $\mathbb{B}\otimes\mathbb{B}$, the projectors onto the symmetric and antisymmetric subspaces, the exchange operator, the Heisenberg Hamiltonian as an algebra element with its spectrum, and the partial traces of the coupled states. The companion article *Exercise: Two Spins in the Singlet State* computes the singlet alone; the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* studies the four Bell idempotents; the companion article *Entangled Subsystems in the Biquaternion Framework* fixes the tensor-product arena and the partial traces. This article presents the whole two-spin structure in one place and treats the coupled basis and the Bell basis as two idempotent bases of the same algebra, related by a change of basis.
+This article works out that system. It is the first application of the coupling machinery: the total spin operators, the four coupled states as idempotents of $\mathbb{B}\otimes\mathbb{B}$, the projectors onto the symmetric and antisymmetric subspaces, the exchange operator, the Heisenberg Hamiltonian as an algebra element with its spectrum, and the reductions of the coupled states. The companion article *Exercise: Two Spins in the Singlet State* computes the singlet alone; the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$* studies the four Bell idempotents; the companion article *Entangled Subsystems in the Biquaternion Framework* fixes the tensor-product arena and the reductions. This article presents the whole two-spin structure in one place and treats the coupled basis and the Bell basis as two idempotent bases of the same algebra, related by a change of basis.
 
 The division between what is algebraic and what is imported is the same as in the addition of angular momenta. The tensor-product arena, the total operators, the coupled idempotents, the exchange operator, and the coupling term are elements of the algebra and follow from the quaternion product rule. The assumption that two particles are described by the tensor product of their state spaces is an assumption, not a theorem of the framework; it is the assumption that makes the rest possible, and it is stated as such. The identifications of the algebra with the standard Pauli-string description of two qubits are consequences of the isomorphism $\mathsf{M}_2$.
 
-The article is organised as follows. The next section fixes the two-qubit algebra, its trace, and its partial traces. Then the total spin operators and their Casimir are constructed, and the coupling term is evaluated in closed form. The four coupled states are exhibited as idempotents, with the projectors onto the symmetric and antisymmetric subspaces. The exchange operator is introduced, its commutation with the total spin proved, and the Heisenberg coupling solved. The partial traces of the coupled states are then computed, and the coupled basis is related to the Bell basis. A closing section states what the composition assumption costs.
+The article is organised as follows. The next section fixes the two-qubit algebra, its scalar part, and its reductions. Then the total spin operators and their Casimir are constructed, and the coupling term is evaluated in closed form. The four coupled states are exhibited as idempotents, with the projectors onto the symmetric and antisymmetric subspaces. The exchange operator is introduced, its commutation with the total spin proved, and the Heisenberg coupling solved. The reductions of the coupled states are then computed, and the coupled basis is related to the Bell basis. A closing section states what the composition assumption costs.
 
 ## The Two-Qubit Algebra
 
@@ -18,14 +18,14 @@ $$
 \mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C}),
 $$
 
-with the bilinear product $(x\otimes y)(x_2\otimes y_2)=x\,x_2\otimes y\,y_2$ and the trace
+with the bilinear product $(x\otimes y)(x_2\otimes y_2)=x\,x_2\otimes y\,y_2$ and the scalar part
 
 $$
-\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\,\mathrm{Tr}_\mathbb{B}(y),\qquad
-\mathrm{Tr}_\mathbb{B}(e_t)=2,\qquad \mathrm{Tr}_\mathbb{B}(\vec e_\eta)=0 ,
+\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\,\mathrm{Sc}(y),\qquad
+\mathrm{Sc}(e_t)=1,\qquad \mathrm{Sc}(\vec e_\eta)=0 ,
 $$
 
-so that $\mathrm{Tr}(e_t\otimes e_t)=4$. Two elements act on different slots,
+so that $4\,\mathrm{Sc}(e_t\otimes e_t)=4$. Two elements act on different slots,
 
 $$
 \tilde S_{\Psi,\eta}^{(1)}=\tilde S_{\Psi,\eta}\otimes e_t,\qquad \tilde S_{\Psi,\eta}^{(2)}=e_t\otimes\tilde S_{\Psi,\eta} ,
@@ -39,20 +39,20 @@ $$
 
 The isomorphism used throughout sends $e_\mu\otimes e_\nu$ to $\mathsf{M}_2(e_\mu)\otimes\mathsf{M}_2(e_\nu)$ with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$; under it $\tilde S_{\Psi,\eta}^{(a)}$ maps to $\frac{\hbar}{2}\sigma_\eta$ acting on the $a$-th factor, and the algebra $\mathbb{B}\otimes\mathbb{B}$ maps onto all of $M_4(\mathbb{C})$.
 
-A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (trace one in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
+A state of the pair is a Hermitian, positive element of $\mathbb{B}\otimes\mathbb{B}$ with $\mathrm{Sc}=2^{-2}$ (unit scalar part, $4\,\mathrm{Sc}=1$ in the $4\times4$ image), and an observable is a Hermitian element. The pure product states are the idempotents
 
 $$
 \tilde\Pi(\vec u_m)\otimes \tilde\Pi(\vec u)=\tfrac{1}{4}\left(e_t\otimes e_t+i\vec u_{m,\eta}\vec e_\eta\otimes e_t+i e_t\otimes\vec u_le_l-\vec u_{m,\eta}\vec u_l\,\vec e_\eta\otimes e_l\right),
 $$
 
-where $\tilde\Pi(\vec u_m)=\tfrac12(e_t+i\vec u_{m,\eta}\vec e_\eta)$ is a one-particle idempotent. The **partial traces** are
+where $\tilde\Pi(\vec u_m)=\tfrac12(e_t+i\vec u_{m,\eta}\vec e_\eta)$ is a one-particle idempotent. The **partial scalar parts** are
 
 $$
-\mathrm{Tr}_2(x\otimes y)=x\,\mathrm{Tr}_\mathbb{B}(y),\qquad
-\mathrm{Tr}_1(x\otimes y)=y\,\mathrm{Tr}_\mathbb{B}(x),
+\mathrm{Sc}_2(x\otimes y)=x\,\mathrm{Sc}(y),\qquad
+\mathrm{Sc}_1(x\otimes y)=y\,\mathrm{Sc}(x),
 $$
 
-extended linearly, and they give the reduced states of the two particles.
+extended linearly; the reductions $2\,\mathrm{Sc}_2$ and $2\,\mathrm{Sc}_1$ give the reduced states of the two particles.
 
 One structural remark belongs here. The tensor product is the composition rule the framework assumes, not one it derives; the companion articles on biquaternionic quantum physics record it among their open questions, and the companion article *Entangled Subsystems in the Biquaternion Framework* uses it directly. Everything below is a statement about $\mathbb{B}\otimes\mathbb{B}$ once that algebra is granted, and the closing section returns to the question.
 
@@ -118,10 +118,10 @@ $$
 The exchange operator is therefore the algebraic carrier of the interaction. Its properties are immediate:
 
 $$
-F^2=e_t\otimes e_t,\qquad F^{*}=F,\qquad \mathrm{Tr}(F)=2,\qquad F\ne \pm e_t\otimes e_t .
+F^2=e_t\otimes e_t,\qquad F^{*}=F,\qquad 4\,\mathrm{Sc}(F)=2,\qquad F\ne \pm e_t\otimes e_t .
 $$
 
-The first follows from $(\vec e_\eta\otimes \vec e_\eta)^2=\vec e_\eta^2\otimes \vec e_\eta^2=e_t\otimes e_t$ and the orthogonality of the contributions for distinct $k$; the second from $\vec e_\eta^{*}=-\vec e_\eta$; the third from $\mathrm{Tr}(\vec e_\eta\otimes \vec e_\eta)=0$. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_\eta\sigma_\eta\otimes\sigma_\eta\right)$, the standard two-qubit swap.
+The first follows from $(\vec e_\eta\otimes \vec e_\eta)^2=\vec e_\eta^2\otimes \vec e_\eta^2=e_t\otimes e_t$ and the orthogonality of the contributions for distinct $k$; the second from $\vec e_\eta^{*}=-\vec e_\eta$; the third from $\mathrm{Sc}(\vec e_\eta\otimes \vec e_\eta)=0$. Under $\mathsf{M}_2\otimes\mathsf{M}_2$ the exchange operator becomes $\tfrac12\left(I\otimes I+\sum_\eta\sigma_\eta\otimes\sigma_\eta\right)$, the standard two-qubit swap.
 
 ### The coupled idempotents
 
@@ -142,7 +142,7 @@ $$
 \tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}}=0,\quad \tilde\Pi_{\mathrm{sym}}+\tilde\Pi_{\mathrm{asym}}=e_t\otimes e_t ,
 $$
 
-with traces $3$ and $1$ and trace-orthonormality $\mathrm{Tr}(\tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}})=0$. They are the projectors onto the symmetric and antisymmetric parts of the tensor square of the fundamental module, that is, onto the $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$ coupled subspaces. The antisymmetric idempotent is the singlet idempotent of the companion article *Exercise: Two Spins in the Singlet State*, written there as $\tilde\Pi_{\mathrm{singlet}}$.
+with $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sym}})=3$, $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{asym}})=1$ and $4\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sym}}\tilde\Pi_{\mathrm{asym}})=0$. They are the projectors onto the symmetric and antisymmetric parts of the tensor square of the fundamental module, that is, onto the $s_{\mathrm{tot}}=1$ and $s_{\mathrm{tot}}=0$ coupled subspaces. The antisymmetric idempotent is the singlet idempotent of the companion article *Exercise: Two Spins in the Singlet State*, written there as $\tilde\Pi_{\mathrm{singlet}}$.
 
 The total Casimir now follows in closed form. Substituting the coupling term,
 
@@ -176,7 +176,7 @@ $$
 \tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}} .
 $$
 
-Each is a Hermitian idempotent of trace one, they are mutually orthogonal, and they resolve the identity:
+Each is a Hermitian idempotent of unit scalar part, they are mutually orthogonal, and they resolve the identity:
 
 $$
 \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}}\tilde\Pi_{s'_{\mathrm{tot}},s'_{\mathrm{tot},r_z}}=\delta_{s_{\mathrm{tot}}s'_{\mathrm{tot}}}\delta_{s_{\mathrm{tot},r_z}s'_{\mathrm{tot},r_z}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},r_z}},\qquad
@@ -304,26 +304,26 @@ $$
 
 gives $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\tfrac12\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$, so that $\tilde H_\Psi=-\tfrac{J_{\mathrm{ex}}}{2}\left(\tilde S_{\Psi,\mathrm{tot}}^2-\frac{3\,\hbar^{2}}{2}e_t\otimes e_t\right)$ and the eigenvalues are $-\tfrac{J_{\mathrm{ex}}}{2}\left(2\,\hbar^{2}-\frac{3\,\hbar^{2}}{2}\right)=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $-\tfrac{J_{\mathrm{ex}}}{2}\left(0-\frac{3\,\hbar^{2}}{2}\right)=+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet. The two routes agree.
 
-## Partial Traces and the Reduced States
+## The Reductions and the Reduced States
 
-The coupled states are not all of the same kind, and the partial trace makes the distinction algebraic. For the two outer triplet members, which are product idempotents,
+The coupled states are not all of the same kind, and the reduction makes the distinction algebraic. For the two outer triplet members, which are product idempotents,
 
 $$
-\mathrm{Tr}_2\!\left(\tilde\Pi_{1,1}\right)=\mathrm{Tr}_2\!\left(\tilde\Pi_+\otimes \tilde\Pi_+\right)=\tilde\Pi_+\mathrm{Tr}_\mathbb{B}(\tilde\Pi_+)=\tilde\Pi_+ ,
+2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{1,1}\right)=2\,\mathrm{Sc}_2\!\left(\tilde\Pi_+\otimes \tilde\Pi_+\right)=\tilde\Pi_+\,2\,\mathrm{Sc}(\tilde\Pi_+)=\tilde\Pi_+ ,
 $$
 
-since $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_\pm)=\tfrac{1}{2}\mathrm{Tr}_\mathbb{B}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{1,1}$ is the pure state $\tilde\Pi_+$; the same holds for $\tilde\Pi_{1,-1}$ with $\tilde\Pi_-$.
+since $2\,\mathrm{Sc}(\tilde\Pi_\pm)=\tfrac{1}{2}\,2\,\mathrm{Sc}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{1,1}$ is the pure state $\tilde\Pi_+$; the same holds for $\tilde\Pi_{1,-1}$ with $\tilde\Pi_-$.
 
 For the two diagonal-form idempotents the computation is a single line. Because $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ are sums of diagonal tensor terms,
 
 $$
-\mathrm{Tr}_2\!\left(\tilde\Pi_{1,0}\right)=\tfrac{1}{4}\left(\mathrm{Tr}_\mathbb{B}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_\eta\,\mathrm{Tr}_\mathbb{B}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
+2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{1,0}\right)=\tfrac{1}{4}\left(2\,\mathrm{Sc}(e_t)e_t+\sum_{\eta=1}^{3}\epsilon_\eta\,2\,\mathrm{Sc}(\vec e_\eta)\vec e_\eta\right)=\tfrac{1}{4}\cdot 2\,e_t=\tfrac{1}{2}\,e_t ,
 $$
 
-and likewise $\mathrm{Tr}_2(\tilde\Pi_{0,0})=\mathrm{Tr}_1(\tilde\Pi_{0,0})=\tfrac12 e_t$ and $\mathrm{Tr}_1(\tilde\Pi_{1,0})=\tfrac12 e_t$. The reduced state of both $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ is the **maximally mixed** state of the one-particle system, the centre of the Bloch ball, of purity
+and likewise $2\,\mathrm{Sc}_2(\tilde\Pi_{0,0})=2\,\mathrm{Sc}_1(\tilde\Pi_{0,0})=\tfrac12 e_t$ and $2\,\mathrm{Sc}_1(\tilde\Pi_{1,0})=\tfrac12 e_t$. The reduced state of both $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ is the **maximally mixed** state of the one-particle system, the centre of the Bloch ball, of purity
 
 $$
-\mathrm{Tr}\!\left(\tfrac{1}{2}e_t\cdot\tfrac{1}{2}e_t\right)=\tfrac{1}{4}\mathrm{Tr}_\mathbb{B}(e_t)=\tfrac12 .
+2\,\mathrm{Sc}\!\left(\tfrac{1}{2}e_t\cdot\tfrac{1}{2}e_t\right)=\tfrac{1}{4}\,2\,\mathrm{Sc}(e_t)=\tfrac12 .
 $$
 
 The three triplet members therefore fall into two classes: $\tilde\Pi_{1,\pm1}$ are product states with pure reduced states, while $\tilde\Pi_{1,0}$ is a correlated state with maximally mixed reduced states, exactly like the singlet $\tilde\Pi_{0,0}$. The middle triplet state and the singlet share the same reduced data and differ only in their correlations; this is the algebraic content of the statement that the reduced density matrix does not determine the state of a composite. The informational interpretation of these correlations — their entropy, their discord, their use as a resource — belongs to the informational subcategory and is not taken up here.
@@ -344,7 +344,7 @@ whose four eigenvalue pairs $(s_1,s_3)\in\{\pm1\}^2$ label the four Bell states:
 
 ## The Assumption of Composition
 
-Everything above rests on one assumption that the framework does not derive: that two spin-$\tfrac12$ particles are described by the tensor product $\mathbb{B}\otimes\mathbb{B}$ of their algebras. The algebra is available; the state space $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with its trace is well defined; the partial traces are natural. But whether the composition of two fundamental systems is *forced* by the structure of $\mathbb{B}$, or is a further postulate, is one of the open questions recorded by the companion articles on biquaternionic quantum physics. Nothing in this article depends on the answer, and every statement is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once granted.
+Everything above rests on one assumption that the framework does not derive: that two spin-$\tfrac12$ particles are described by the tensor product $\mathbb{B}\otimes\mathbb{B}$ of their algebras. The algebra is available; the state space $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ with its scalar part is well defined; the reductions are natural. But whether the composition of two fundamental systems is *forced* by the structure of $\mathbb{B}$, or is a further postulate, is one of the open questions recorded by the companion articles on biquaternionic quantum physics. Nothing in this article depends on the answer, and every statement is a statement about the algebra $\mathbb{B}\otimes\mathbb{B}$ once granted.
 
 Two consequences of the assumption are worth naming because they are structural rather than dynamical. First, the composition rule doubles the module dimension: two fundamental modules give a four-dimensional space, and $n$ of them give $2^n$. The framework therefore composes into powers of two and into nothing else; a three-level system cannot be built from fundamental modules, which is the algebraic ceiling examined in the companion problem of the third level. Second, the local operations — the elements $\tilde U_1\otimes\tilde U_2$ — form a proper subgroup of the unitaries of the composite algebra, so the composite carries a notion of locality that the algebra alone does not supply. Both facts are consequences of the tensor-product assumption as much as of the algebra.
 
@@ -360,7 +360,7 @@ as one particle of a singlet, reading the pair $\{Q,Q^*\}$ as one singlet and $\
 
 ## Summary
 
-Two spin-$\tfrac12$ particles in the biquaternion framework are described by the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, with total spin operators $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ and partial traces $\mathrm{Tr}_1,\mathrm{Tr}_2$.
+Two spin-$\tfrac12$ particles in the biquaternion framework are described by the tensor-product algebra $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$, with total spin operators $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ and the reductions $2\,\mathrm{Sc}_1,2\,\mathrm{Sc}_2$.
 
 The article established the following.
 
@@ -368,11 +368,11 @@ The article established the following.
   $$\tilde S_{\Psi,\mathrm{tot}}^2=\hbar^{2}\left(e_t\otimes e_t+F\right)=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}},$$
   where $F=\tfrac12(e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ is the exchange operator.
 - **The coupling term.** $\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}=\frac{\hbar^{2}}{2}F-\frac{\hbar^{2}}{4}e_t\otimes e_t$, so the interaction between the two spins is carried by the exchange operator; equivalently $[F,\tilde S_{\Psi,\mathrm{tot},\eta}]=0$, whence $F$ is central in the coupled rotation algebra.
-- **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of trace $3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of trace $1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}}$.
-- **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of trace one resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
+- **The coupled idempotents.** $\tilde\Pi_{\mathrm{sym}}=\tfrac14(3e_t\otimes e_t-\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=3$ and $\tilde\Pi_{\mathrm{asym}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$ of $4\,\mathrm{Sc}=1$, Hermitian, orthogonal, complete; they are the $\pm1$ spectral projectors of $F$ and the spectral projectors of $\tilde S_{\Psi,\mathrm{tot}}^2$, with $\tilde S_{\Psi,\mathrm{tot}}^2=2\,\hbar^{2}\,\tilde{\Pi}_{\mathrm{sym}}$.
+- **The four coupled idempotents.** $\tilde\Pi_{1,\pm1}=\tilde\Pi_\pm\otimes \tilde\Pi_\pm$, $\tilde\Pi_{1,0}=\tilde\Pi_{\mathrm{sym}}-\tilde\Pi_{1,1}-\tilde\Pi_{1,-1}$, $\tilde\Pi_{0,0}=\tilde\Pi_{\mathrm{asym}}$; they are minimal Hermitian idempotents of unit scalar part resolving the identity, and the total spin acts on them by $\tilde S_{\Psi,\mathrm{tot},3}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\,s_{\mathrm{tot},z}\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot}}^2\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)\,\tilde{\Pi}_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$, $\tilde S_{\Psi,\mathrm{tot},\pm} \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\,|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle\langle  s_{\mathrm{tot}},s_{\mathrm{tot},z}|$.
 - **Exchange symmetry.** $F \tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}=(-1)^{1-s_{\mathrm{tot}}}\tilde\Pi_{s_{\mathrm{tot}},s_{\mathrm{tot},z}}$: the singlet is antisymmetric, the triplet symmetric; the singlet is annihilated by the total ladder operators and is a zero divisor of the two-qubit algebra.
 - **The Heisenberg coupling.** For $\tilde H_\Psi=-J_{\mathrm{ex}}\sum_\eta\tilde S_{\Psi,\eta}^{(1)}\tilde S_{\Psi,\eta}^{(2)}$, the eigenvalues are $-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the triplet and $+\frac{3\,\hbar^{2}\,J_{\mathrm{ex}}}{4}$ on the singlet, with splitting $\hbar^{2}\,J_{\mathrm{ex}}$; the Hamiltonian is the algebra element $\tilde H_\Psi=-\frac{\hbar^{2}\,J_{\mathrm{ex}}}{2}F+\frac{\hbar^{2}\,J_{\mathrm{ex}}}{4}e_t\otimes e_t$.
-- **Reduced states.** $\mathrm{Tr}_2(\tilde\Pi_{1,\pm1})=\tilde\Pi_\pm$ are pure; $\mathrm{Tr}_2(\tilde\Pi_{1,0})=\mathrm{Tr}_2(\tilde\Pi_{0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
+- **Reduced states.** $2\,\mathrm{Sc}_2(\tilde\Pi_{1,\pm1})=\tilde\Pi_\pm$ are pure; $2\,\mathrm{Sc}_2(\tilde\Pi_{1,0})=2\,\mathrm{Sc}_2(\tilde\Pi_{0,0})=\tfrac12 e_t$ are maximally mixed. The middle triplet member and the singlet are indistinguishable by their reduced states.
 - **Two idempotent bases.** The coupled basis and the Bell basis are two orthogonal families of minimal idempotents of the same algebra, sharing the singlet and related by a Hadamard rotation.
 
 All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes the tensor-product composition rule, which the framework assumes rather than derives.
@@ -382,8 +382,8 @@ All of this is a statement about $\mathbb{B}\otimes\mathbb{B}$; it presupposes t
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ | Two-qubit algebra |
-| $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
-| $\mathrm{Tr}_1,\mathrm{Tr}_2$ | Partial traces |
+| $\mathrm{Sc}(x\otimes y)=\mathrm{Sc}(x)\mathrm{Sc}(y)$ | Scalar part on the tensor product; a full contraction pays $4$ |
+| $\mathrm{Sc}_1,\mathrm{Sc}_2$ | Partial scalar parts; the reductions are $2\,\mathrm{Sc}_1$ and $2\,\mathrm{Sc}_2$ |
 | $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | One-particle spin operators |
 | $\tilde S_{\Psi,\eta}^{(1)}=\tilde S_{\Psi,\eta}\otimes e_t,\ \tilde S_{\Psi,\eta}^{(2)}=e_t\otimes\tilde S_{\Psi,\eta}$ | Factor spin operators |
 | $\tilde S_{\Psi,\mathrm{tot},\eta}=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ | Total spin |

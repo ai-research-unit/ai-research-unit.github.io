@@ -380,7 +380,7 @@ This article has treated the localised finite-energy solutions of the biquaterni
 | $T_a=\tfrac12 \vec e_a$ | $\mathrm{SU}(2)$ generators, $[T_a,T_b]=\sum_c\epsilon_{abc}T_c$ |
 | $D_\mu$ | Gauge-covariant derivative |
 | $\mathrm{Tr}$ | Matrix trace on the gauge factor |
-| $\mathrm{Sc},\ \mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part and the inherited trace formula |
+| $\mathrm{Sc}$ | Scalar part of an element; the reading of a biquaternion product |
 | $ϙ=\tfrac14\epsilon_{\mu\nu\rho\sigma}\mathrm{Tr}(F_{\mu\nu}F_{\rho\sigma})$ | Topological density |
 | $J_{\mathrm{CS},\mu}=\sum_{\nu,\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma}$ | Abelian Chern–Simons current |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form, $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |

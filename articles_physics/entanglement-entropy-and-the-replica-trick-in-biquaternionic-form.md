@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Entanglement entropy** is the von Neumann entropy of the reduced state of a subsystem, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\,\rho_{AB}$. It is not a quantity one computes directly in a field theory: the reduced density matrix of a region does not exist as a density matrix, the local algebra being type III, and $S_A$ is ultraviolet divergent. The **replica trick** is the standard method for computing it anyway. One computes the moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n$ for positive integers $n$ — which are well defined, and in a field theory are partition functions on an $n$-sheeted cover — and then continues analytically to $n\to1$, where
+**Entanglement entropy** is the von Neumann entropy of the reduced state of a subsystem, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=2\,\mathrm{Sc}_B\,\rho_{AB}$, the scalar part in the second factor doubled. It is not a quantity one computes directly in a field theory: the reduced density matrix of a region does not exist as a density matrix, the local algebra being type III, and $S_A$ is ultraviolet divergent. The **replica trick** is the standard method for computing it anyway. One computes the moments $Z_n=2\,\mathrm{Sc}\,\rho_A^n$ for positive integers $n$ — which are well defined, and in a field theory are partition functions on an $n$-sheeted cover — and then continues analytically to $n\to1$, where
 $$
 S_A=-\frac{d}{dn}\log Z_n\Big|_{n=1}.
 $$
@@ -24,9 +24,9 @@ The article proceeds as follows. Entanglement entropy and the Rényi entropies a
 
 Let $\rho_{AB}$ be a state of a bipartite system with Hilbert space $\mathcal H_A\otimes\mathcal H_B$, and let
 $$
-\rho_A=\mathrm{Tr}_B\,\rho_{AB}
+\rho_A=2\,\mathrm{Sc}_B\,\rho_{AB}
 $$
-be the reduced state of $A$. The **entanglement entropy** of the bipartition is the von Neumann entropy of the reduced state,
+be the reduced state of $A$, where $\mathrm{Sc}_B$ is the scalar part in the second factor, $\mathrm{Sc}_B(a\otimes b)=a\,\mathrm{Sc}(b)$. The **entanglement entropy** of the bipartition is the von Neumann entropy of the reduced state,
 $$
 S_A=-2\,\mathrm{Sc}\big(\rho_A\log\rho_A\big)=S(\rho_A).
 $$
@@ -97,16 +97,16 @@ $$
 $$
 and the replica moment is the expectation of the shift,
 $$
-\boxed{\;Z_n=\mathrm{Tr}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big]\;}.
+\boxed{\;Z_n=2^n\,\mathrm{Sc}\Big[\big(\rho_{AB}\big)^{\otimes n}\,\mathsf{C}_n\Big]\;}.
 $$
 This is the finite-dimensional image of the $n$-sheeted cover: the sheets are the replicas, the branch locus is the $A$ factor, and the cyclic joining of the sheets is the cyclic permutation. The state is the $n$-fold product, so the expectation is a product-state matrix element, which is why the computation is elementary.
 
 ### The Swap Operator and the Purity
 
-The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the **swap** $\mathbb F_{AA_{\mathrm r}}$ on the two copies of $A$, and
+The case $n=2$ is the one used most, and it exhibits the mechanism. The shift is the **swap** $\mathbb F_{AA_{\mathrm r}}$ on the two copies of $A$, the factor $4$ is $2^2$ from the two tensor factors, and
 $$
 Z_2=2\,\mathrm{Sc}\big(\rho_A^2\big)
-=\mathrm{Tr}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
+=4\,\mathrm{Sc}\Big[\big(\rho_{AB}\otimes\rho_{A_{\mathrm r}B_{\mathrm r}}\big)\,\mathbb F_{AA_{\mathrm r}}\Big],
 $$
 where the factors carrying the replica subscript are the second replica. The identity was checked on the two-qubit state of the next section: with $\rho_{AB}=|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|$ and $\theta=0.4$, both sides equal $0.7427001194$, agreeing with $\cos^4\theta+\sin^4\theta$ to twelve digits. The purity is thus a swap expectation, and the Rényi entropy of order two is $S_2=-\log Z_2$.
 
@@ -137,7 +137,7 @@ $$
 \qquad
 \rho_{AB}=|\tilde{Ξ}_{\theta}\rangle\langle\tilde{Ξ}_{\theta}|.
 $$
-Tracing out $B$ in the biquaternion tensor product — equivalently, using the partial trace of the strong-subadditivity companion article — gives the reduced state
+Tracing out $B$ in the biquaternion tensor product — equivalently, using the partial scalar part of the strong-subadditivity companion article — gives the reduced state
 $$
 \rho_A=\cos^2\theta\,|0\rangle\langle0|+\sin^2\theta\,|1\rangle\langle1|
 =\frac{1}{2}\Big(e_t+i\cos(2\theta)\,\vec e_z\Big),
@@ -182,7 +182,7 @@ The table displays the three regimes: near the product state ($\theta=0.2$, $r_A
 
 ### The Replica Shift at Higher $n$
 
-For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $2\,\mathrm{Sc}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
+For $n\ge3$ the moment is the expectation of the cyclic shift on the $n$-fold tensor power, and for the state above the reduced spectrum is $\cos^2\theta,\sin^2\theta$, so the shift's expectation reduces to the power sum $\cos^{2n}\theta+\sin^{2n}\theta$. The general finite-dimensional statement is that $Z_n=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ holds for every $n$ with the cyclic shift $\mathsf{C}_n$; the two-qubit case of the previous subsection is the $n=2$ instance, verified by the swap computation. The identity was checked further against $2\,\mathrm{Sc}(\rho_A^n)$ on a generic two-qubit pure state at $n=2,3,4$, where the two sides agree to machine precision. The finite framework's replica geometry is thus the tensor power with its cyclic permutation, and the analytic continuation is the continuation of the power sum.
 
 ### A Second Example: the W State
 
@@ -204,7 +204,7 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 **Established (theorem, imported).** The definition of entanglement entropy and the Rényi entropies; their ordering and limits; the identification $S_A=\lim_{n\to1}S_n=-\frac{d}{dn}\log Z_n|_{1}$; the field-theoretic replica trick as a partition function on an $n$-sheeted cover, including the quotient by $Z_1^n$; the area-law output of the method. All standard.
 
-**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\lambda_i^n$; the replica formula $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
+**Established (recomputed here).** The finite-dimensional replica moments $Z_n=\sum_i\lambda_i^n$; the replica formula $Z_n=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ with the $n=2$ swap identity and its $n=2,3,4$ instances, verified on the explicit state and on a generic two-qubit state; the reduced state of the two-qubit family as a biquaternion Bloch state with $r_A=|\cos2\theta|$; the agreement of the biquaternion entropy closed form with the binary entropy; and the Rényi table with its $n\to1$ convergence.
 
 **Interpretation.** That the tensor power and its cyclic shift are read as the framework's replica geometry, and that the entanglement entropy of a bipartition is read as the entropy of a reduced biquaternion state.
 
@@ -224,9 +224,9 @@ and the entropies are $S_1=h(1/3)=0.636514$, $S_2=0.587787$, $S_3=0.549306$, $S_
 
 ## Summary
 
-Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=\mathrm{Tr}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=2\,\mathrm{Sc}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
+Entanglement entropy is the von Neumann entropy of a reduced state, $S_A=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ with $\rho_A=2\,\mathrm{Sc}_B\rho_{AB}$, and the replica trick computes it from the moments $Z_n=2\,\mathrm{Sc}\rho_A^n$ by continuation to $n\to1$: $S_A=-d\log Z_n/dn|_1$. In quantum field theory the moments are partition functions on $n$-sheeted covers; in finite dimension they are power sums of the reduced state's eigenvalues.
 
-In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=\mathrm{Tr}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
+In the biquaternion framework the replicas are the factors of the tensor power $\mathbb{B}^{\otimes n}$, the replica geometry is the cyclic permutation $\mathsf{C}_n$ of the factors, and the moment is the shift expectation $Z_n=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$. The case $n=2$ is the swap expectation that computes the purity, verified on the explicit two-qubit state. For the pure family $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|00\rangle+\sin\theta|11\rangle$, the reduced state is a biquaternion Bloch state with $r_A=|\cos2\theta|$, the moments are $Z_n=\cos^{2n}\theta+\sin^{2n}\theta$, and the Rényi entropies $S_n=\frac{1}{1-n}\log Z_n$ interpolate between the product state and the maximally entangled state. The biquaternion entropy closed form agrees with the binary entropy at every angle, and the $n\to1$ limit was checked to bracket $S_1$ at two angles.
 
 The framework thus reproduces the replica method exactly in finite dimension, with the entanglement entropy of a bipartition equal to the entropy of a reduced biquaternion state. What it cannot reproduce is the field-theoretic content: the branched cover, the ultraviolet divergence, and the geometric scaling that the area-law companion article treats.
 
@@ -240,9 +240,9 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar part of a product; $\mathrm{Sc}(e_t)=1$ |
 | $\mathbb{B}^{\otimes n}\cong M_{2^n}(\mathbb{C})$ | Tensor power; $n$ replicas |
-| $\rho_A=\mathrm{Tr}_B\rho_{AB}$ | Reduced state |
+| $\rho_A=2\,\mathrm{Sc}_B\rho_{AB}$ | Reduced state; $\mathrm{Sc}_B$ is the scalar part in the second factor |
 | $S_A=S(\rho_A)=-2\,\mathrm{Sc}(\rho_A\log\rho_A)$ | Entanglement entropy |
-| $Z_n=2\,\mathrm{Sc}(\rho_A^n)$ | Replica moment |
+| $Z_n=2\,\mathrm{Sc}(\rho_A^n)=2^n\,\mathrm{Sc}[\rho_{AB}^{\otimes n}\mathsf{C}_n]$ | Replica moment, two forms |
 | $S_n=\frac{1}{1-n}\log Z_n$ | Rényi entropy of order $n$ |
 | $S_A=-\frac{d}{dn}\log Z_n\big|_{n=1}$ | Replica-trick representation of $S_A$ |
 | $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |
@@ -261,7 +261,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 - E. Witten, "Notes on some entanglement properties of quantum field theory," *Reviews of Modern Physics* **90** (2018) 045003, for the replica geometry, the divergent terms, and the area law.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the moment/entropy relations and the limiting cases.
 - S. Ryu and T. Takayanagi, "Holographic derivation of entanglement entropy from the anti-de Sitter space/conformal field theory correspondence," *Physical Review Letters* **96** (2006) 181602, for the holographic evaluation of the same moments.
-- Companion article [Strong Subadditivity in the Biquaternion Framework](strong-subadditivity-in-the-biquaternion-framework.html), for the reduced states, the partial trace, and the tensor powers.
+- Companion article [Strong Subadditivity in the Biquaternion Framework](strong-subadditivity-in-the-biquaternion-framework.html), for the reduced states, the partial scalar part, and the tensor powers.
 - Companion article [Relative Entropy and the Biquaternion Framework](relative-entropy-and-the-biquaternion-framework.html), for the entropy closed form of a biquaternion state.
 - Companion article [The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form](the-modular-hamiltonian-and-the-first-law-of-entanglement-in-biquaternionic-form.html), for the modular Hamiltonian of a reduced state.
 - Companion article [The Area Law of Entanglement Entropy in Biquaternionic Form](the-area-law-of-entanglement-entropy-in-biquaternionic-form.html), for what the replica moments give in the field.
